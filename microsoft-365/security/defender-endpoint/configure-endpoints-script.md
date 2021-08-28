@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: bc709de74135dfbee58b98dd0133b1e43c3c14ad
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: e1a681fb7d521c26327bec3d22bff233926a279f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533113"
+ms.locfileid: "58569383"
 ---
 # <a name="onboard-the-windows-10-devices-using-a-local-script"></a>ローカル スクリプトをWindows 10デバイスにオンボードする
 
@@ -40,7 +40,7 @@ ms.locfileid: "58533113"
 
 ## <a name="onboard-devices"></a>デバイスのオンボード
 
-[![さまざまな展開パスを示す PDF のイメージ](images/onboard-script.png)](images/onboard-script.png#lightbox)
+[![さまざまな展開パスを示す PDF のイメージ。](images/onboard-script.png)](images/onboard-script.png#lightbox)
 
 [[](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)エンドポイント用 Defender [Visio展開](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx)] のさまざまなパスを確認するには、PDF またはドキュメントを参照してください。
 
@@ -56,11 +56,11 @@ ms.locfileid: "58533113"
    1. **[スタート]** をクリックし、「**cmd**」と入力します。
    2. **[コマンド プロンプト]** を右クリックして **[管理者として実行]** を選択します。
 
-     ![[管理者スタート メニュー実行] をポイントするウィンドウ のウィンドウ](images/run-as-admin.png)
+    ![[管理者スタート メニュー実行] をポイントするウィンドウ のウィンドウ です。](images/run-as-admin.png)
 
-4. スクリプト ファイルの場所を入力します。 ファイルをデスクトップにコピーした場合は *、「%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd」と入力します。*
+4.  スクリプト ファイルの場所を入力します。 ファイルをデスクトップにコピーした場合は *、「%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd」と入力します。*
 
-5. Enter キーを **押** するか **、[OK] をクリックします**。
+5.  Enter キーを **押** するか **、[OK] をクリックします**。
 
 デバイスが準拠し、センサー データが正しく報告されていることを手動で検証する方法については、「Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング」 [を参照してください](troubleshoot-onboarding.md)。
 
@@ -111,7 +111,7 @@ Name 型は D-WORD です。 使用可能な値は次のいずれかです。
    1. **[スタート]** をクリックし、「**cmd**」と入力します。
    2. **[コマンド プロンプト]** を右クリックして **[管理者として実行]** を選択します。
 
-      ![[管理者スタート メニュー実行] をポイントするウィンドウ のウィンドウ](images/run-as-admin.png)
+        ![[管理者スタート メニュー実行] をポイントするウィンドウ のウィンドウ です。](images/run-as-admin.png)
 
 4. スクリプト ファイルの場所を入力します。 ファイルをデスクトップにコピーした場合は *、「%userprofile%\Desktop\WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd」と入力します。*
 

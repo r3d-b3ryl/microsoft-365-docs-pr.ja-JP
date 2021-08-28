@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 recommendations: false
 description: グループ メンバーがグループとして電子メールを送信したり、Microsoft 365グループに代わって電子メールを送信Microsoft 365する方法についてMicrosoft 365します。
-ms.openlocfilehash: 9e214614ea8ab1cba7809251219546410c9778f35f231a6e5cf48540251ff8e7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f2147e49c66e4ad8b4504c00cbd7902dd482cdfc
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53883651"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568026"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>グループの代理として送信または送信するメンバーを許可する
 
@@ -47,17 +47,17 @@ Send **as** または send onhalf permissions が付与されているMicrosoft 
   
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理センター</a> で、[**受信者**]、[**グループ**] の順に移動します。
     
-2. ユーザー **に送信** を許可するグループの [グループの編集] アイコン ![ ](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) を選択します。   
+2. [グループ **の編集]** ![ アイコンを選択します。  ](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) ユーザーに送信を許可するグループに対して指定します。 
     
 3. [ **グループ委任**] を選びます。
     
 4. [Send **As] セクション** で、サインを選択して、送信 **+** するユーザーをグループとして追加します。 
     
-    ![[送信のスクリーンショット] ダイアログ ボックス](../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
+    ![ダイアログ ボックスとして送信のスクリーンショット。](../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
   
 5. ユーザーを入力して検索するか、一覧からユーザーを選択します。 **[OK] と [** 保存]**を選択します**。
     
-    ![リストからユーザーを検索または選択する入力](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
+    ![ユーザーを入力して検索するか、一覧からユーザーを選択します。](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
   
 ## <a name="allow-members-to-send-email-on-behalf-of-a-group"></a>メンバーがグループに代わって電子メールを送信するを許可する
 
@@ -65,17 +65,17 @@ Send **as** または send onhalf permissions が付与されているMicrosoft 
   
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理センター</a> で、[**受信者**]、[**グループ**] の順に移動します。
     
-2. ユーザー **に送信** を許可するグループの [グループの編集] アイコン ![ ](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) を選択します。 
+2. [グループ **の編集]** ![ アイコンを選択します。](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) ユーザーに送信を許可するグループに対して指定します。 
     
 3. [ **グループ委任**] を選びます。
     
 4. [代理で送信] セクションで、署名を選択して、グループとして送信する **+** ユーザーを追加します。 
     
-    ![ダイアログの代わりに送信のスクリーンショット](../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
+    ![ダイアログの代わりに送信のスクリーンショット。](../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
   
 5. ユーザーを入力して検索するか、一覧からユーザーを選択します。 **[OK] と [** 保存]**を選択します**。
     
-    ![リストからユーザーを検索または選択する入力](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
+    ![ユーザーを入力して検索するか、一覧からユーザーを選択します。](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
 
 ## <a name="related-articles"></a>関連記事
 

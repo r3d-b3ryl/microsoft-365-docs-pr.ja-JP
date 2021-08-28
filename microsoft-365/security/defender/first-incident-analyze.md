@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: da145578dd8dedcd5358d9bb9ef850c17ea282729dc16503cddcd7fc75b07414
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 33022fa1ad57b7adf13139272bcdca09a1d9487b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53828776"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568830"
 ---
 # <a name="step-1-triage-and-analyze-your-first-incident"></a>手順 1. 最初のインシデントをトリアージして分析する
 
@@ -69,15 +69,15 @@ Microsoft 365 Defender複数の Microsoft セキュリティ プラットフォ�
 
 1. インシデント ページに [移動してトリ](incidents-overview.md) アージを開始します。 ここでは、組織に影響を与えるインシデントの一覧を確認できます。 既定では、最新のインシデントから最も古いインシデントに配置されます。 ここから、インシデントごとに異なる列が表示され、重大度、カテゴリ、アクティブなアラートの数、影響を受けたエンティティなどが表示されます。 列のセットをカスタマイズし、列名を選択して、これらの列によってインシデント キューを並べ替えできます。 必要に応じてインシデント キューをフィルター処理することもできます。 使用可能なフィルターの完全な一覧については、「インシデントの優先順位 [付け」を参照してください](incident-queue.md#available-filters)。
 
-   :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-queue.png" alt-text="インシデント キューの例":::
+   :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-queue.png" alt-text="インシデント キューの例。":::
 
     この一連のインシデントに対してトリアージを実行する方法の 1 つの例は、より多くのユーザーとデバイスに影響を与えたインシデントに優先順位を付ける方法です。 この例では、7 台のデバイス、6 人のユーザー、および 2 つのメールボックスという最大のエンティティ数に影響を与えたため、インシデント ID 6769 の優先順位を付ける場合があります。 さらに、このインシデントには、ID ベースのアラートと資格情報の盗難の可能性を示す Microsoft Defender for Identity からのアラートが含まれていると思います。
 
-   :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-high-impact.png" alt-text="影響の大きなインシデントの例":::
+   :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-high-impact.png" alt-text="影響の大きなインシデントの例。":::
 
 2. インシデント名の横にある円を選択して詳細を確認します。 右側にサイド ウィンドウが表示されます。このウィンドウには、トリアージをさらに支援する追加情報が含まれる。
 
-   :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-incident-flyout.png" alt-text="インシデント側ウィンドウの例":::
+   :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-incident-flyout.png" alt-text="インシデント側ウィンドウの例。":::
 
    たとえば、攻撃者がインシデントのカテゴリに基づいて使用した [MITRE ATT&CK](https://attack.mitre.org/) の戦術を見て、攻撃者が盗まれた資格情報を使用し、コマンドと制御を確立し、横方向の動きを実行し、一部のデータを削除したため、このインシデントの優先順位を付けることができます。 これは、攻撃者が既にネットワークに深く入り込み、機密情報を盗まれた可能性を示唆しています。
 
@@ -85,13 +85,13 @@ Microsoft 365 Defender複数の Microsoft セキュリティ プラットフォ�
 
    サイド ウィンドウを下にスクロールすると、影響を受け取る特定のエンティティ (ユーザー、デバイス、メールボックスなど) が表示されます。 各デバイスの露出レベルと、影響を受けるメールボックスの所有者を確認できます。
 
-   :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-incident-flyout-details.png" alt-text="インシデント側ウィンドウの詳細の例":::
+   :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-incident-flyout-details.png" alt-text="インシデント側ウィンドウの詳細の例。":::
 
 3. サイド ウィンドウをさらに下に移動すると、関連付けられたアラートを確認できます。 Microsoft 365 Defenderアラートの相関関係を 1 つのインシデントに既に実行し、攻撃の修復に費やした時間とリソースを節約できます。 アラートは疑わしいため、ネットワーク上に攻撃者が存在する可能性のある悪意のあるシステム イベントが発生する可能性があります。
 
    この例では、87 個の個別のアラートが 1 つのセキュリティ インシデントの一部と判断されました。 すべてのアラートを表示して、攻撃の実行方法を簡単に確認できます。
 
-   :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-incident-flyout-alerts.png" alt-text="インシデント側ウィンドウのアラートの例":::
+   :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-incident-flyout-alerts.png" alt-text="インシデント側ウィンドウのアラートの例。":::
 
 ## <a name="analyze-your-first-incident"></a>最初のインシデントを分析する
 
@@ -99,37 +99,37 @@ Microsoft 365 Defender複数の Microsoft セキュリティ プラットフォ�
 
 データの読み取りおよび分析には、Microsoft 365 Defender方法が複数ありますが、アナリストの最後の目標は、インシデントに可能な限り迅速に対応することです。 このMicrosoft 365 Defender業界をリードする自動調査と対応機能を通じて、平均修復時間[(MTTR)](https://www.microsoft.com/security/blog/2020/05/04/lessons-learned-microsoft-soc-part-3c/)を大幅に短縮することができますが、手動分析が必要な場合は常に存在します。 [](m365d-autoir.md)
 
-次に例を示します。
+次に例を示します:
 
 1. トリアージの優先度が決定された後、アナリストはインシデント名を選択して詳細な分析を開始します。 このページには、 **分析を支援** するタブにデータが表示されるインシデントの概要が表示されます。 [アラート] **タブ** の下に、アラートの種類が表示されます。 アナリストは、各アラートをクリックして、それぞれの検出ソースをドリルダウンできます。
 
-    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-summary-tab.png" alt-text="インシデントの [概要] タブの例":::
+    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-summary-tab.png" alt-text="インシデントの [概要] タブの例。":::
 
     各検出ソースがカバーするドメインに関するクイック ガイドについては、この記事の [「Detect」](#detection-by-microsoft-365-defender) セクションを参照してください。
 
 2. [アラート **] タブ** から、アナリストは検出ソースにピボットして、より詳細な調査と分析を実行できます。 たとえば、検出ソースとして [マルウェア検出] Microsoft Cloud App Securityを選択すると、アナリストは対応するアラート ページに移動します。
 
-    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-select-alert.png" alt-text="インシデントのアラートを選択する例":::
+    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-select-alert.png" alt-text="インシデントのアラートを選択する例。":::
 
-    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-link-to-mcas.png" alt-text="ページ内の対応するページのMicrosoft Cloud App Security":::
+    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-link-to-mcas.png" alt-text="ページ内の対応するページのMicrosoft Cloud App Security。":::
 
 3. この例をさらに調査するには、ページの下部までスクロールして、影響を受ける **ユーザーを表示します**。 マルウェア検出を取り巻くアクティビティとコンテキストを確認するには、Annette Hill のユーザー ページを選択します。
 
-    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-user-page.png" alt-text="ユーザー ページの例":::
+    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-user-page.png" alt-text="ユーザー ページの例。":::
 
 4. ユーザー ページには *、TOR* ネットワーク IP アドレスアラートからの危険なサインインから始まるイベントの時系列リストがあります。 アクティビティの疑いは、組織がビジネスを行う方法の性質によって異なりますが、ほとんどの場合、ユーザーが匿名で Web を閲覧できるネットワークである Onion Router (TOR) を企業環境で使用すると、通常のオンライン操作では非常に可能性が低く、不要と見なされる可能性があります。
 
-    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-user-event-list.png" alt-text="ユーザーのイベントの時系列リストの例":::
+    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-user-event-list.png" alt-text="ユーザーのイベントの時系列リストの例。":::
 
 5. 各アラートを選択して、アクティビティの詳細を取得できます。 たとえば、[Tor **IP アドレス** ] アラートから [アクティビティ] を選択すると、そのアラートの独自のページに移動します。 Annette は、Office 365管理者であり、特権が昇格され、ソース インシデントが機密情報へのアクセスにつながった可能性があります。
 
-    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-mcas-alert.png" alt-text="通知の詳細の例Microsoft Cloud App Security":::
+    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-mcas-alert.png" alt-text="ユーザーの通知の詳細のMicrosoft Cloud App Security。":::
 
 6. 他のアラートを選択すると、アナリストは攻撃の完全な画像を取得できます。
 
 ## <a name="next-step"></a>次の手順
 
-[![手順 2: インシデントを修復する方法について学習する](../../media/first-incident-overview/first-incident-path-step2.png)](first-incident-remediate.md)
+[![手順 2: インシデントを修復する方法について学習します。](../../media/first-incident-overview/first-incident-path-step2.png)](first-incident-remediate.md)
 
 インシデントを [修復する方法について学習します](first-incident-remediate.md)。
 

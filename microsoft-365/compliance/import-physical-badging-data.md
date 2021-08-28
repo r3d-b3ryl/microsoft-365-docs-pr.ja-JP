@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 管理者は、データ コネクタをセットアップして、組織の物理的なバッド システムからデータをインポートして、Microsoft 365。 これにより、内部リスク管理ポリシーでこのデータを使用して、組織に対する内部脅威の可能性を示す可能性のある特定のユーザーによる物理的な建物へのアクセスを検出できます。
-ms.openlocfilehash: 800614ef38e065027238d32bf877a059e2022378a1a86b2f33c6f11f3827de2a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ae513d01917c0fe4148d265865a77775a5ff2555
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53895442"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567930"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>物理的な不良データをインポートするコネクタをセットアップする (プレビュー)
 
@@ -219,7 +219,7 @@ JSON ファイルは、コネクタで必要なスキーマ定義に準拠して
 
 2. [コネクタ **] タブをクリック** し、物理的な不良コネクタを選択して、フライアウト ページを表示します。 このページには、コネクタに関するプロパティと情報が含まれる。
 
-   ![物理バッド コネクタの状態のフライアウト ページ](..\media\PhysicalBadgingStatusFlyout.png)
+   ![物理的な不良コネクタの状態のフライアウト ページ。](..\media\PhysicalBadgingStatusFlyout.png)
 
 3. [ **最後のインポート]** で、[ログのダウンロード] リンク **を** クリックして、コネクタの状態ログを開く (または保存) します。 このログには、スクリプトが実行され、CSV ファイルから Microsoft クラウドにデータをアップロードする度に関する情報が含まれます。
 
@@ -259,7 +259,7 @@ JSON ファイルは、コネクタで必要なスキーマ定義に準拠して
 
 7. [操作] **タブを** 選択し、[ **新規**] をクリックし、次の操作を行います。
 
-   ![物理的な不良コネクタ スクリプトの新しいスケジュールされたタスクを作成するアクション設定](..\media\SchedulePhysicalBadgingScript1.png)
+   ![物理的な不良コネクタ スクリプトの新しいスケジュールされたタスクを作成するアクション設定。](..\media\SchedulePhysicalBadgingScript1.png)
 
    1. [アクション **] ドロップダウン** リストで、[プログラムの開始 **] が選択されている** 必要があります。
 
@@ -275,7 +275,7 @@ JSON ファイルは、コネクタで必要なスキーマ定義に準拠して
 
    新しいタスクがタスク スケジューラ ライブラリに表示されます。
 
-   ![新しいタスクがタスク スケジューラ ライブラリに表示される](..\media\SchedulePhysicalBadgingScript2.png)
+   ![新しいタスクがタスク スケジューラ ライブラリに表示されます。](..\media\SchedulePhysicalBadgingScript2.png)
 
 スクリプトが最後に実行された時刻と、次回の実行がスケジュールされている時間が表示されます。 タスクをダブルクリックして編集できます。
 

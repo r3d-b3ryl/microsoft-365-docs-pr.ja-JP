@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: c7edb02a-fdab-4f91-9a20-cba01dad28ef
 description: Renditions とスプライトを使用して、オンライン の従来の発行サイトでの画像SharePoint向上させる方法について学習します。
-ms.openlocfilehash: d3bc078bd462e6695afd74d36712757d291215a7b9bbdb6158c1862c034f8158
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1400b3f3bd78f6c3fda4b587b6974e3aaef18199
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864727"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568374"
 ---
 # <a name="image-optimization-for-sharepoint-online-classic-publishing-sites"></a>オンラインクラシック発行サイトSharePointの画像の最適化
 
@@ -35,7 +35,7 @@ Web ページの読み込み速度は、画像、HTML、JavaScript、CSS など�
   
 ## <a name="using-sprites-to-speed-up-image-loading"></a>スプライトを使用して画像の読み込みを高速化する
 
-![spcommon のスクリーンショット](../media/cc5cdee1-8e54-4537-9a8a-8854f4ee849f.png)
+![spcommon のスクリーンショット。](../media/cc5cdee1-8e54-4537-9a8a-8854f4ee849f.png)
 
 イメージ スプライトには、小さい画像が多数含まれています。 CSS を使用して、ページの特定の部分に表示する合成イメージの一部を絶対位置付けで選択します。 基本的には、複数のイメージを読み込む代わりに、ページの周りに 1 つのイメージを移動し、そのイメージの小さな部分を、スプライト イメージの必要な部分がエンド ユーザーに表示される小さなウィンドウから表示します。 SharePointOnline では、スプライトを使用して、スプライト ファイル内のさまざまなアイコンspcommon.pngします。
 
@@ -75,17 +75,17 @@ Web ページの読み込み速度は、画像、HTML、JavaScript、CSS など�
 
     ボックスの表示を使用するか、[ **イメージ** 表示] を選択して新しい表示を作成できます。
 
-    ![Image Rendition のスクリーンショット](../media/eaae0d53-657d-47ef-b687-65c5167eae4d.PNG)
+    ![Image Rendition のスクリーンショット。](../media/eaae0d53-657d-47ef-b687-65c5167eae4d.PNG)
   
 5. **[イメージ表示]** ページで **[新しいアイテムの追加]** を選択します。
 
-    ![[新しい項目の追加] のスクリーンショット](../media/8cede22e-52bf-4d9d-99cb-162f2f6ce92b.PNG)
+    ![[新しいアイテムの追加] のスクリーンショット。](../media/8cede22e-52bf-4d9d-99cb-162f2f6ce92b.PNG)
   
 6. [ **新しいイメージ表示**] ページの [ **名前**] ボックスに、表示の名前を入力します。
 
 7. [ **幅**] ボックスおよび [ **高さ**] ボックスに、ピクセル単位で表示の幅と高さを入力して、[ **保存**] を選択します。
 
-    ![イメージ表示名のスクリーンショット](../media/5a6119ed-c163-40df-a4db-ec629d15607d.PNG)
+    ![Image Rendition Name のスクリーンショット。](../media/5a6119ed-c163-40df-a4db-ec629d15607d.PNG)
   
 ## <a name="custom-cropping-with-image-renditions"></a>イメージ表示を使用したカスタム トリミング
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b72291e1c5b63cea65b6990a82e9de24cfc8fd5ea2ae75e31b82bc4033a0bc5f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0fb08635f50eedbf5fd96b8abc64ef9dfae60cbf
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53800119"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569695"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>ライブ応答を使用してデバイス上のエンティティを調査する
 
@@ -32,7 +32,7 @@ ms.locfileid: "53800119"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 ライブ応答により、セキュリティ運用チームはリモート シェル接続を使用してデバイス (コンピューターとも呼ばれます) に瞬時にアクセスできます。 これにより、詳細な調査作業を行い、迅速に特定された脅威をリアルタイムに含める即時対応アクションを実行できます。
 
@@ -85,7 +85,7 @@ ms.locfileid: "53800119"
 
   次のエラーが表示されます。
 
-  ![エラー メッセージのイメージ](images/live-response-error.png)
+  ![エラー メッセージのイメージ。](images/live-response-error.png)
 
 - **ライブ応答の署名されていないスクリプトの実行を有効** にする (オプション)。
 
@@ -308,7 +308,7 @@ processes > output.txt
 
 - ID
 - コマンド ライン
-- 期間
+- Duration
 - 状態と入力または出力のサイド バー
 
 ## <a name="limitations"></a>制限事項

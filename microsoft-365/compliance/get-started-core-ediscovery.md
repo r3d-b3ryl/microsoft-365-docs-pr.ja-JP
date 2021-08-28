@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コア電子情報開示の使用を開始する方法についてMicrosoft 365。 電子情報開示のアクセス許可を割り当て、ケースを作成したら、メンバーの追加、電子情報開示ホールドの作成、調査に関連するコンテンツの検索とエクスポートを行います。
-ms.openlocfilehash: 9662045a77b1af69de68729697972821a7a7a589
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: d1a9e68bedc77f3b74b13f438e73dcbcb83b4c8c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508036"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569587"
 ---
 # <a name="get-started-with-core-ediscovery-in-microsoft-365"></a>コア電子情報開示の使用をMicrosoft 365
 
@@ -130,7 +130,7 @@ Core 電子情報開示にアクセスしたり、コア電子情報開示ケー
 
 コア電子情報開示の使用を開始するには、関心のあるユーザー向け電子情報開示ホールドを作成し、調査に関連するコンテンツを検索し、そのデータをエクスポートして詳細を確認する簡単なワークフローを次に示します。 これらの各手順では、探索できるいくつかの拡張コア電子情報開示機能も強調表示します。
 
-![コア電子情報開示ワークフロー](../media/CoreEdiscoveryWorkflow.png)
+![コア電子情報開示ワークフロー。](../media/CoreEdiscoveryWorkflow.png)
 
 1. **[電子情報開示ホールドを作成します](create-ediscovery-holds.md)**。 ケースを作成した後の最初の手順は、調査に関心のあるユーザーのコンテンツの場所に保留 (電子情報開示 *ホールドとも呼* ばれる) を配置します。 コンテンツの場所には、Exchange、SharePoint サイト、OneDrive アカウント、および Microsoft Teams および Office 365 グループに関連付けられたメールボックスとサイトが含まれます。 この手順は省略可能ですが、電子情報開示ホールドを作成すると、調査中にケースに関連する可能性のあるコンテンツが保持されます。 電子情報開示ホールドを作成する場合は、特定のコンテンツの場所のすべてのコンテンツを保持するか、クエリ ベースの保持を作成して、保留クエリに一致するコンテンツのみを保持できます。 コンテンツの保持に加えて、電子情報開示ホールドを作成するもう 1 つの適切な理由は、次の手順で検索を作成して実行するときに、(検索する各場所を選択する必要がある代わりに) 保留のコンテンツの場所をすばやく検索する方法です。 調査が完了したら、作成した保留を解除できます。
 

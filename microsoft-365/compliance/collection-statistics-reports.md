@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: レビュー セットにコミットされた下書きコレクションとコレクションの統計とレポートにアクセスして使用する方法についてAdvanced eDiscovery。
-ms.openlocfilehash: 050c2f026e0d821befde5aa4437a1e1c5ecfcfd2c0ad4c267995f7d2eefb0fac
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d5c1fa3ccb8d9657570b7d0bf3640ac1834248d9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53866580"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569107"
 ---
 # <a name="collection-statistics-and-reports-in-advanced-ediscovery"></a>コレクションの統計情報とレポート (Advanced eDiscovery
 
@@ -37,7 +37,7 @@ ms.locfileid: "53866580"
 
 このセクションでは、コレクションによって返される推定アイテムの概要をグラフィカルに表示します。 これは、コレクションの検索条件に一致するアイテムの数を示します。 この情報は、コレクションによって返されるアイテムの推定数に関するアイデアを提供します。
 
-![下書きコレクションのコレクションの見積もり](../media/AeDCollectionEstimates.png)
+![下書きコレクションのコレクションの見積もり。](../media/AeDCollectionEstimates.png)
 
 - **場所別の推定アイテム**: コレクションによって返される推定アイテムの総数。 メールボックスとサイト内にあるアイテムの特定の数も表示されます。
 
@@ -79,7 +79,7 @@ ms.locfileid: "53866580"
 
 コレクションをレビュー セットにコミットすると、コミットされた接続のフライアウト ページに次のタブが表示されます。 これらの各タブには、コレクションに関するさまざまな種類の情報が含まれています。
 
-![コミットされたコレクションのフライアウト ページのタブ](../media/CommittedCollectionFlyoutPage.png)
+![コミットされたコレクションのフライアウト ページのタブ。](../media/CommittedCollectionFlyoutPage.png)
 
 ### <a name="collection-contents"></a>コレクションの内容
 

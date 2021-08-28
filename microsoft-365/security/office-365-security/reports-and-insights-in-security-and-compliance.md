@@ -19,12 +19,12 @@ description: セキュリティ & コンプライアンス センターで利用
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 360151fa68309d53f788c18637aa95d61374b62be4815669dc22a6325caa1283
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ef92717dc43e5af7a6c98d497405160fec45b7cd
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56807502"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569287"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターのスマート レポートと分析情報
 
@@ -41,7 +41,7 @@ ms.locfileid: "56807502"
 
 セキュリティ & コンプライアンス センターで使用できる監視機能には、コンプライアンスとセキュリティ管理者がセキュリティ攻撃や疑わしいアクティビティの増加など、優先度の高い問題に集中できるスマート レポートと分析情報が含まれます。 ダッシュボードでは、スマート レポートと分析情報は次の図のようになります。
 
-![セキュリティ コンプライアンス センターの [レポート] &ダッシュボード](../../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
+![コンプライアンス センターのセキュリティ &ダッシュボード。](../../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
 
 問題の領域の強調表示に加えて、スマート リポートおよび分析情報にはおすすめ候補が含まれ、データの表示および検索にリンクしてクイック アクションも実行します。 たとえば、組織で突然多数の電子メール メッセージがエンド ユーザーによってスパムとしてマークされている場合は、適切なレベルの保護が行われたか確認するために、スパム対策ポリシーを再検討する必要があります。
 

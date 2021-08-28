@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 - MOE150
 description: ビジネス ファイルを共有する方法の概要。
-ms.openlocfilehash: a377735f077df81556621a06e2367929d966aaf45f36e9f4425309f5dabaae0e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d762620cf07cd9f1201bf173e6e6aa0c16e050eb
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53867185"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569671"
 ---
 # <a name="overview-of-sharing-business-files"></a>ビジネス ファイルの共有の概要
 
 ビジネスのクライアント、顧客、パートナー、サプライヤー、その他のユーザーとファイルを共有する必要があります。 すべてのユーザーがファイルを検索、開き、編集できるよう、ファイルを共有する方法を説明します。
 
-|![安全に共有する](../media/securely-share-file.png)<br/>[会社外のユーザーとファイルを共有する](#share-a-file-with-someone-outside-of-your-company)|![クライアントとの共同作業](../media/share-and-collab-with-partner.png) <br/>[クライアントまたはビジネス パートナーとの共有と共同作業](#share-and-collaborate-with-a-client-or-business-partner) | ![組織内で共有する](../media/share-inside-your-org.png) <br/>[ビジネス内で共有する](#share-inside-your-business) |
+|![安全に共有します。](../media/securely-share-file.png)<br/>[会社外のユーザーとファイルを共有する](#share-a-file-with-someone-outside-of-your-company)|![クライアントとの共同作業](../media/share-and-collab-with-partner.png) <br/>[クライアントまたはビジネス パートナーとの共有と共同作業](#share-and-collaborate-with-a-client-or-business-partner) | ![組織内で共有する](../media/share-inside-your-org.png) <br/>[ビジネス内で共有する](#share-inside-your-business) |
 |--|--|--|
 
 インフォグラフィックをダウンロードして、ビジネス ファイルを共有する方法の概要を簡単に確認できます。 

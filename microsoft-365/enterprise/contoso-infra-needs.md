@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso のオンプレミス IT インフラストラクチャの基本的な構造と、企業のビジネス ニーズが企業向けサービスによってどのように満たされるかMicrosoft 365理解します。
-ms.openlocfilehash: abed7e47ab0654c44c047ef09a9a75a46d2a0e17
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 36fec158926bfa4530c0dfa6a862e877204be0cd
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354345"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569503"
 ---
 # <a name="contoso-it-infrastructure-and-business-needs"></a>Contoso IT インフラストラクチャとビジネス ニーズ
 
@@ -31,7 +31,7 @@ Contoso 社では、ほとんど集中管理されたオンプレミスの IT �
 
 アプリケーション データセンター、DMZ、およびインターネットを備え、本社のオフィスを次に示します。
 
-![既存の Contoso IT インフラストラクチャ](../media/contoso-infra-needs/contoso-infra-needs-fig1.png)
+![既存の Contoso IT インフラストラクチャ。](../media/contoso-infra-needs/contoso-infra-needs-fig1.png)
 
 オンプレミス アプリケーション データセンターのホストは次のとおりです: 
 

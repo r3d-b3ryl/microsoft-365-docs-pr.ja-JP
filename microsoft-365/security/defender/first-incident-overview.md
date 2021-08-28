@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: bec4ca87c3827c8b24fa7017c01b40a60fce80eecb636d6d91adf0ceb9b8ecf1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4176b718105643b59f23024c1a70cd8fe220eea9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53897780"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568818"
 ---
 # <a name="introduction-to-responding-to-your-first-incident"></a>最初のインシデントへの対応の概要
 
@@ -52,7 +52,7 @@ ms.locfileid: "53897780"
 
 ## <a name="next-step"></a>次の手順
 
-[![組織とテナントをMicrosoft 365する](../../media/first-incident-overview/first-incident-path.png)](first-incident-prepare.md)
+[![組織とテナントをMicrosoft 365します。](../../media/first-incident-overview/first-incident-path.png)](first-incident-prepare.md)
 
 組織と組織のテナントMicrosoft 365インシデント[処理の準備ができているか確認します](first-incident-prepare.md)。
 

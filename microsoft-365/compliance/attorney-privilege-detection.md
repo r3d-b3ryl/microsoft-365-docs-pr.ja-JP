@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 弁護士クライアントの特権検出モデルを使用して、機械学習ベースの特権コンテンツの検出を使用して、ユーザーのケースでコンテンツをAdvanced eDiscoveryします。
-ms.openlocfilehash: 814caf417de58a51b43d5c4b8ef2b99c11263986
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: babf0088b7880e614234c0eea0432b0a7fa22db0
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58503109"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569131"
 ---
 # <a name="set-up-attorney-client-privilege-detection-in-advanced-ediscovery"></a>アプリケーションで弁護士とクライアントの特権の検出をAdvanced eDiscovery
 
@@ -45,7 +45,7 @@ ms.locfileid: "58503109"
 
 これらのプロパティ (および対応する値) は、次のスクリーンショットに示すように、レビュー セット内のドキュメントのファイル メタデータに追加されます。
 
-![ファイル メタデータに表示される弁護士とクライアントの特権プロパティ](../media/AeDAttorneyClientPrivilegeMetadata.png)
+![ファイル メタデータに表示される弁護士クライアント特権プロパティ。](../media/AeDAttorneyClientPrivilegeMetadata.png)
 
 これら 3 つのプロパティは、レビュー セット内でも検索できます。 詳細については、「レビュー セット [のデータをクエリする」を参照してください](review-set-search.md)。
 
@@ -61,7 +61,7 @@ ms.locfileid: "58503109"
 
 2. [ホーム **Advanced eDiscovery]** タイルで、[グローバル分析 **設定** 構成 **] をクリックします**。
 
-   ![[実験的な機能の構成] を選択します。](../media/AeDExperimentalFeatures.png)
+   ![[実験的な機能を構成する]を選択します。](../media/AeDExperimentalFeatures.png)
 
 3. [分析の **設定] タブで** 、[弁護士とクライアント **の特権設定の管理] を選択します**。
 
@@ -79,7 +79,7 @@ ms.locfileid: "58503109"
 
    [ **弁護士とクライアントの特権]** ページが表示され、[ **弁護士クライアント** 特権の検出] トグルがオンにされます。
 
-   ![弁護士-クライアント特権のフライアウト ページ](../media/AeDUploadAttorneyList.png)
+   ![弁護士クライアント特権のフライアウト ページ。](../media/AeDUploadAttorneyList.png)
 
 3. [ **参照]** を選択し、手順 1 で.csvファイルを検索して選択します。
 
@@ -97,13 +97,13 @@ ms.locfileid: "58503109"
  
 2. [ **タグ] で**、[グループの追加] の横にあるプルダウン **を選択し** 、[スマート タグ グループの **追加] を選択します**。
 
-   ![[スマート タグ グループの追加] を選択します。](../media/AeDCreateSmartTag.png)
+   ![[スマート タグ グループの追加]を選択します。](../media/AeDCreateSmartTag.png)
 
 3. [スマート タグ **のモデルの選択]** ページで、[弁護士クライアント特権] の横にある **[****選択] を選択します**。
 
    Attorney-client 特権 **という名前のタグ グループが** 表示されます。 このタグには、モデルによって生成される可能性がある結果に対応する **、正** と負という名前の 2 つの子タグが含まれます。
 
-   ![弁護士-クライアント特権スマート タグ グループ](../media/AeDAttorneyClientSmartTagGroup.png)
+   ![弁護士-クライアント特権スマート タグ グループ。](../media/AeDAttorneyClientSmartTagGroup.png)
 
 3. レビューに応じてタグ グループとタグの名前を変更します。 たとえば、正の名前を **[** 特権] に、[負] の **名前** を **[特権** ではありません **] に変更できます**。
 
@@ -125,8 +125,8 @@ ms.locfileid: "58503109"
 
 たとえば、次のスクリーンショットは 2 つのドキュメントを示しています。 最初のコンテンツには、自然の中で合法的なコンテンツが含まれているので、参加者は弁護士のリストに含まれている。 2 つ目はどちらも含まれているため、ラベルは表示されません。
 
-![弁護士と法的コンテンツ ラベルを含むドキュメント](../media/AeDTaggingPanelLegalContentAttorney.png)
+![弁護士と法的コンテンツ ラベルを含むドキュメント。](../media/AeDTaggingPanelLegalContentAttorney.png)
 
-![ラベルのないドキュメント](../media/AeDTaggingPanelNegative.png)
+![ラベルのないドキュメント。](../media/AeDTaggingPanelNegative.png)
 
 ドキュメントを確認して、特権コンテンツが含まれているか確認した後、適切なタグでドキュメントにタグを付けできます。

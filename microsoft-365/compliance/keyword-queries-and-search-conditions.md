@@ -22,12 +22,12 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: 電子情報開示検索ツールを使用して検索できる電子メールとドキュメントのプロパティについてMicrosoft 365。
-ms.openlocfilehash: b465b0dedac35b8008627fcb9a2ecd2f9b9d27dddcfb26a16c290d7176447ce8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f0b6fac4610bbca8904f3dfe19abdc558a4f2818
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53860180"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570103"
 ---
 # <a name="keyword-queries-and-search-conditions-for-ediscovery"></a>電子情報開示のキーワード クエリと検索条件
 
@@ -338,7 +338,7 @@ SharePoint と OneDrive for Business sites サイトでドキュメントを検�
 
 - 前に説明したように、一部の条件プロパティでは、複数の値を入力できます (セミコロンで区切ります)。 各値は OR 演算子によって **論理的に接続** され、クエリが実行されます `(filetype=docx) OR (filetype=pptx) OR (filetype=xlsx)` 。 次の図は、複数の値を持つ条件の例を示しています。
 
-    ![複数の値を持つ 1 つの条件](../media/SearchConditions1.png)
+    ![複数の値を持つ 1 つの条件。](../media/SearchConditions1.png)
 
   > [!NOTE]
   > 複数の条件を追加できない (同じプロパティの [条件の **追加]** をクリックします)。 代わりに、前の例に示すように、条件に複数の値を指定する必要があります (セミコロンで区切ります)。
@@ -353,7 +353,7 @@ SharePoint と OneDrive for Business sites サイトでドキュメントを検�
 
 **GUI**:
 
-![検索条件の最初の例](../media/SearchConditions2.png)
+![検索条件の最初の例。](../media/SearchConditions2.png)
 
 **検索クエリの構文**:
 
@@ -371,7 +371,7 @@ SharePoint と OneDrive for Business sites サイトでドキュメントを検�
 
 **GUI**:
 
-![検索条件の 2 番目の例](../media/SearchConditions3.png)
+![検索条件の 2 番目の例。](../media/SearchConditions3.png)
 
 **検索クエリの構文**:
 
@@ -387,7 +387,7 @@ SharePoint と OneDrive for Business sites サイトでドキュメントを検�
 
 **GUI**:
 
-![検索条件の 3 番目の例](../media/SearchConditions4.png)
+![検索条件の 3 番目の例。](../media/SearchConditions4.png)
 
 **検索クエリの構文**:
 
@@ -440,7 +440,7 @@ SharePoint と OneDrive for Business sites サイトでドキュメントを検�
 
 `SharedWithUsersOWSUser` プロパティを使用した検索結果にドキュメントが返されるには、そのドキュメントが指定したユーザーと明示的に共有されている必要があります。 たとえば、ユーザーが OneDrive アカウントでドキュメントを共有している場合は、ドキュメントを任意のユーザー (組織外または組織内) と共有する、組織内のユーザーとのみ共有する、または特定のユーザーと共有するためのオプションがあります。 3 つの共有オプションを表示している OneDrive の [**共有**] ウィンドウのスクリーン ショットを次に示します。
 
-![SharedWithUsersOWSUser プロパティを使用する検索クエリによって、特定のユーザーと共有するファイルのみが返されます](../media/469a4b61-68bd-4ab0-b612-ab6302973886.png)
+![SharedWithUsersOWSUser プロパティを使用する検索クエリによって、特定のユーザーと共有されているファイルだけが返されます。](../media/469a4b61-68bd-4ab0-b612-ab6302973886.png)
 
 `SharedWithUsersOWSUser` プロパティを使用する検索クエリで返されるドキュメントは、3 番目のオプション ([**特定のユーザー**] と共有) を使用して共有されているドキュメントのみです。 
 

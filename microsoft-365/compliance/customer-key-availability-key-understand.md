@@ -10,12 +10,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 紛失した顧客キーの回復に使用される可用性キーについて学習します。
-ms.openlocfilehash: 4de9df3fd60a8afe8608615f90d51486d42b6a20
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.openlocfilehash: 76137438231e69f5d93673322ab6825146ee6e2e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349922"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570127"
 ---
 # <a name="learn-about-the-availability-key-for-customer-key"></a>カスタマー キーの可用性キーの詳細
 
@@ -172,11 +172,11 @@ Microsoft 365自動システムは、システムを流れるすべてのデー�
 
 ログ レコードには、日付、時刻、アクティビティ、組織 ID、データ暗号化ポリシー ID などの属性が含まれます。 このレコードは統合監査ログの一部として使用できます。[コンプライアンス センター監査ログの検索] タブの [セキュリティ &からアクセスできます。
 
-![可用性キー イベントの監査ログ検索](../media/customerkeyauditlogsearchavailabilitykeyloggingimage.png)
+![可用性キー イベントの監査ログ検索。](../media/customerkeyauditlogsearchavailabilitykeyloggingimage.png)
 
 Exchange OnlineおよびSkype for Business可用性キー レコードは、Office 365 管理アクティビティ共通スキーマを使用し、[](/office/office-365-management-api/office-365-management-activity-api-schema#common-schema)カスタム パラメーター (ポリシー ID、スコープ キーバージョン ID、要求 ID) を追加します。
 
-![可用性キーのカスタム パラメーター](../media/customerkeyauditlogsearchavailabilitykeyloggingcustomparam.png)
+![可用性キーのカスタム パラメーター。](../media/customerkeyauditlogsearchavailabilitykeyloggingcustomparam.png)
 
 ### <a name="sharepoint-online-onedrive-for-business-and-teams-files-availability-key-logging"></a>SharePointオンライン、OneDrive for Business、およびTeamsファイル可用性キーログ
 
@@ -192,11 +192,11 @@ Microsoft 365可用性キーを使用して、顧客キー サービスの暗号
 
 ### <a name="encryption-ciphers-used-to-encrypt-keys-for-exchange-online-and-skype-for-business"></a>暗号化と暗号化のキーを暗号化するためにExchange Online暗号化Skype for Business
 
-![顧客キーの暗号化Exchange Online暗号化](../media/customerkeyencryptionhierarchiesexchangeskype.png)
+![顧客キーの暗号化Exchange Online暗号化。](../media/customerkeyencryptionhierarchiesexchangeskype.png)
 
 ### <a name="encryption-ciphers-used-to-encrypt-keys-for-sharepoint-online-and-onedrive-for-business"></a>オンラインと暗号化のキーを暗号化するためにSharePoint暗号化OneDrive for Business
 
-![オンライン顧客キー SharePoint暗号化暗号](../media/customerkeyencryptionhierarchiessharepointonedriveteamsfiles.png)
+![オンライン顧客キー SharePoint暗号化暗号。](../media/customerkeyencryptionhierarchiessharepointonedriveteamsfiles.png)
 
 ## <a name="related-articles"></a>関連記事
 

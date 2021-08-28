@@ -14,12 +14,12 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
 description: このテスト ラボ ガイドを使用して、デバイスをテスト環境に登録Microsoft 365リモートで管理します。
-ms.openlocfilehash: ee7933a5e111b33ac7d3b17c0de2ef14483f9714
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 5e27f2eecc9edda0a0fe7225d4ed47c7431eee77
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356746"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568386"
 ---
 # <a name="enroll-ios-and-android-devices-in-your-microsoft-365-for-enterprise-test-environment"></a>エンタープライズ テスト環境用に iOS Microsoft 365 Android デバイスを登録する
 
@@ -32,7 +32,7 @@ ms.locfileid: "58356746"
 - [フェーズ 2: iOS/iPadOS および Android デバイスを登録する](#phase-2-enroll-your-ios-and-android-devices)
 - [フェーズ 3: iOS/iPadOS デバイスと Android デバイスをリモートで管理する](#phase-3-manage-your-ios-and-android-devices-remotely)
 
-![Microsoft クラウドのテスト ラボ ガイド](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Microsoft クラウドのテスト ラボ ガイド。](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
 > [!TIP]
 > エンタープライズ テスト ラボ ガイド スタックの Microsoft 365 内のすべての記事への視覚的なマップについては、「Microsoft 365 テスト ラボ ガイド スタック」[を参照してください](../downloads/Microsoft365EnterpriseTLGStack.pdf)。

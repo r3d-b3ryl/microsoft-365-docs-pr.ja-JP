@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b81a01ed239ec58dd736be51074117de1dae9e97386431e89a6343e9c01a1142
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8c296ab7f5f01c62b7342d2027ab90a894e1e55c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53894627"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569719"
 ---
 # <a name="get-devices-onboarded-to-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint にオンボードされているデバイスを取得する
 
@@ -44,7 +44,7 @@ ms.locfileid: "53894627"
 
 オンボーディング カードは、実際に Defender for Endpoint にオンボードされた Windows 10 デバイスの数と Intune で管理された Windows 10 デバイスの総数を比較することで、オンボーディング レートの概要を提供します。
 
-![デバイス構成管理オンボード カード](images/secconmgmt_onboarding_card.png)
+![デバイス構成管理オンボード カード。](images/secconmgmt_onboarding_card.png)
 
 *オンボード デバイスと Intune で管理されているデバイスの合計数と比較Windows 10カード*
 
@@ -57,7 +57,7 @@ Defender for Endpoint には、デバイスをオンボーディングするた�
 
 [オンボード] **カードで、[** その他のデバイス **の** オンボード] を選択して、Intune でプロファイルを作成して割り当てる。 このリンクを使用すると、Intune のデバイス コンプライアンス ページに移動し、オンボーディング状態の同様の概要を示します。
 
-![Intune デバイス管理の Microsoft Defender for Endpoint デバイスコンプライアンス ページ](images/secconmgmt_onboarding_1deviceconfprofile.png)
+![Intune デバイス管理の Microsoft Defender for Endpoint デバイスコンプライアンス ページ。](images/secconmgmt_onboarding_1deviceconfprofile.png)
 
 *Intune デバイス管理の Microsoft Defender for Endpoint デバイスコンプライアンス ページ*
 
@@ -76,7 +76,7 @@ Defender for Endpoint には、デバイスをオンボーディングするた�
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [デバイスが正しく構成されていることを確認する](configure-machines.md)
 - [Defender for Endpoint セキュリティ ベースラインへのコンプライアンスを強化する](configure-machines-security-baseline.md)

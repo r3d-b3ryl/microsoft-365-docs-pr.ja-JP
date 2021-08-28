@@ -19,12 +19,12 @@ ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.date: 01/28/2021
 ms.technology: mde
-ms.openlocfilehash: 7ab3a0a533c9e2f74087a3c43e0678e99297e16a
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.openlocfilehash: 37a0ff60f9f12bd2738d6d587d5cad5e6d55af55
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58509511"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568158"
 ---
 # <a name="visit-the-action-center-to-see-remediation-actions"></a>アクション センターにアクセスして修復アクションを確認する
 
@@ -40,15 +40,15 @@ ms.locfileid: "58509511"
 
 新しい統合アクション センター ( )を発表します [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) 。
 
-:::image type="content" source="images/mde-action-center-unified.png" alt-text="セキュリティ センター Microsoft 365センター":::
+:::image type="content" source="images/mde-action-center-unified.png" alt-text="セキュリティ センターのMicrosoft 365センター。":::
 
 次の表は、新しい統合アクション センターと前のアクション センターを比較します。
 
-|統合された新しいアクション センター|前のアクション センター|
-|---|---|
-|デバイスと電子メールの保留中のアクションと完了したアクションを 1 つの場所に一覧表示する <br/>([Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) plus Microsoft Defender for [Office 365](/microsoft-365/security/office-365-security/office-365-atp))|デバイスの保留中のアクションと完了したアクションの一覧 <br> ([Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) のみ)|
-|場所は次の場所です。<br/><https://security.microsoft.com/action-center>|場所は次の場所です。<br/><https://securitycenter.windows.com/action-center>|
-|[セキュリティ センター Microsoft 365] で、[アクション センター]**を選択します**。 <p>:::image type="content" source="images/action-center-nav-new.png" alt-text="セキュリティ センターのアクション センター Microsoft 365移動する":::|[自動調査Microsoft Defender セキュリティ センター] で、[**自動調査] アクション** センター \> **を選択します**。 <p>:::image type="content" source="images/action-center-nav-old.png" alt-text="[アクション] ウィンドウからアクション センターに移動Microsoft Defender セキュリティ センター":::|
+|統合された新しいアクション センター  |前のアクション センター  |
+|---------|---------|
+|デバイスと電子メールの保留中のアクションと完了したアクションを 1 つの場所に一覧表示する <br/>([Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) plus Microsoft Defender for [Office 365](/microsoft-365/security/office-365-security/office-365-atp))|デバイスの保留中のアクションと完了したアクションの一覧 <br/> ([Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) のみ)   |
+|場所は次の場所です。<br/>[https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)         |場所は次の場所です。<br/>[https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)     |
+| [セキュリティ センター Microsoft 365] で、[アクション センター]**を選択します**。 <p>:::image type="content" source="images/action-center-nav-new.png" alt-text="セキュリティ センターのアクション センター Microsoft 365移動します。"::: | [自動調査Microsoft Defender セキュリティ センター] で、[**自動調査] アクション** センター  >  **を選択します**。 <p>:::image type="content" source="images/action-center-nav-old.png" alt-text="[アクション] ウィンドウからアクション センターに移動Microsoft Defender セキュリティ センター。":::  |
 
 統合アクション センターでは、エンドポイント用の Defender と Defender の修復アクションが統合され、Office 365。 すべての修復アクションの共通言語を定義し、統合された調査エクスペリエンスを提供します。
 
@@ -77,7 +77,7 @@ ms.locfileid: "58509511"
 
 アクション センターでデータをカスタマイズ、並べ替え、フィルター処理、およびエクスポートできます。
 
-:::image type="content" source="images/new-action-center-columnsfilters.png" alt-text="アクション センターの列とフィルター":::
+:::image type="content" source="images/new-action-center-columnsfilters.png" alt-text="アクション センターの列とフィルター。":::
 
 - 列見出しを選択して、アイテムを昇順または降順に並べ替えます。
 - 期間フィルターを使用して、過去の日、週、30 日、または 6 か月のデータを表示します。

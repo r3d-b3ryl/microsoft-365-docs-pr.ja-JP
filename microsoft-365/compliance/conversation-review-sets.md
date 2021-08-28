@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Advanced eDiscovery グループでのチャット会話の再構築、レビュー、エクスポートを行う Advanced eDiscovery での会話の再構築機能についてMicrosoft TeamsおよびYammerします。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 2c1790646587d46f39a13b153a8cd152fb21468f
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 62ebfc054db260fd5e41fec3809ba1efdf46b44b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256461"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569623"
 ---
 # <a name="conversation-threading-in-advanced-ediscovery"></a>スレッド内のスレッドAdvanced eDiscovery
 
@@ -48,7 +48,7 @@ ms.locfileid: "58256461"
 
 - **会話:** 1 つ以上のメッセージのグループ化を表します。 異なるアプリケーション間で、会話はさまざまな方法で表される場合があります。 一部のアプリケーションでは、既存のメッセージに返信する明示的なアクションがあります。 会話は、このユーザー操作の結果として明示的に形成されます。 たとえば、次に、チャネル会話のスクリーンショットを示Microsoft Teams。
 
-   ![Microsoft Teamsチャネルの会話](../media/threadedchat.png)
+   ![Microsoft Teamsチャネルの会話。](../media/threadedchat.png)
 
    他のアプリ (Teams のグループ チャット メッセージなど) では、正式な返信チェーンが用意されていないので、メッセージは 1 つのスレッド内に "平らなメッセージの川" として表示されます。 これらの種類のアプリでは、会話は、特定の時間内に発生するメッセージのグループから推測されます。 このメッセージの "ソフト グループ化" は、(返信チェーンではなく) 特定のトピックに関する "前後" の会話を表します。
 
@@ -62,7 +62,7 @@ ms.locfileid: "58256461"
 
 会話からレビュー セットにアイテムを追加する場合は、スレッド会話オプションを使用して、コレクションの検索条件に一致するアイテムを含む会話からコンテキスト メッセージを収集できます。 スレッドの会話オプションを選択すると、次のことが発生する可能性があります。
 
-  ![会話の取得](../media/messagesandconversations.png)
+  ![会話の取得。](../media/messagesandconversations.png)
 
 1. キーワードと日付範囲のクエリを使用して、検索でメッセージ 3 のヒット *が返されました*。 このメッセージは *、CRC1* によって示される、より大きな会話の一部でした。
 
@@ -76,7 +76,7 @@ ms.locfileid: "58256461"
 
 コンテンツが処理され、レビュー セットに追加された後、レビュー セットのデータの確認を開始できます。 個々のメッセージはスレッド化され、会話として表示されます。 これにより、コンテキスト会話を確認およびエクスポートできます。
 
-  ![会話レビュー セット](../media/ConversationRSOptions.PNG)
+  ![会話レビュー セット。](../media/ConversationRSOptions.PNG)
 
 次のセクションでは、会話の確認とエクスポートについて説明します。
 
@@ -106,7 +106,7 @@ ms.locfileid: "58256461"
 
 具体的には、1 つの PDF ファイルでチャット会話全体をエクスポートするか、会話内の各チャット メッセージを個別のファイルとしてエクスポートできます。
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 ケース データを確認する方法の詳細については、Advanced eDiscovery記事を参照してください。
 

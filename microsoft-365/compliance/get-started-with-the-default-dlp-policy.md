@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: レポートを使用して組織の既定のデータ損失防止 (DLP) ポリシーを絞り込む方法について学習します。
-ms.openlocfilehash: d2b140c6cd55896739c2500c7bc5a9196dfdf7e2e5971c4a45ef312acdcd75ca
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 95c4ebae431bea1db033826459ca1595614ab5cb
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53814001"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569575"
 ---
 # <a name="get-started-with-the-default-dlp-policy"></a>既定の DLP ポリシーの使用を開始する
 
@@ -32,7 +32,7 @@ ms.locfileid: "53814001"
   
 このウィジェットを使用すると、機密情報が共有された時間と量をすばやく表示し、クリックまたは 2 回で既定の DLP ポリシーを絞り込めます。 既定の DLP ポリシーは完全にカスタマイズ可能なので、いつでも編集できます。 最初に推奨事項が表示しない場合は、[おすすめ] セクションの下部にある **[+More]** **をクリック** してください。 
   
-![[共有コンテンツをさらに保護する] という名前のウィジェット](../media/2bae6dbc-cc92-4f35-b54c-c36e60226b5b.png)
+![[共有コンテンツをさらに保護する] という名前のウィジェット。](../media/2bae6dbc-cc92-4f35-b54c-c36e60226b5b.png)
   
 ## <a name="view-the-report-and-refine-the-default-dlp-policy"></a>レポートを表示し、既定の DLP ポリシーを絞り込む
 
@@ -60,7 +60,7 @@ ms.locfileid: "53814001"
   
 これらのオプションを後で変更する場合は、既定の DLP ポリシーをいつでも編集できます。次のセクションを参照してください。
   
-![設定共有コンテンツをさらに保護するという名前のウィジェットの場合](../media/dad30a84-2715-4c0a-a5c5-44d85492363e.png)
+![設定共有コンテンツをさらに保護するという名前のウィジェットの場合。](../media/dad30a84-2715-4c0a-a5c5-44d85492363e.png)
   
 ## <a name="edit-the-default-dlp-policy"></a>既定の DLP ポリシーを編集する
 
@@ -68,7 +68,7 @@ ms.locfileid: "53814001"
   
 このポリシーは完全にカスタマイズ可能で、最初から自分で作成した DLP ポリシーと同じです。 また、ポリシーをオフまたは削除して、ユーザーがポリシー ヒントや電子メール通知を受け取らなくなりました。
   
-![既定の DLP ポリシーという名前の DLP ポリシー](../media/260731e8-4d57-4c98-abec-07b052ec48d5.png)
+![既定の DLP ポリシーという名前の DLP ポリシー。](../media/260731e8-4d57-4c98-abec-07b052ec48d5.png)
   
 ## <a name="when-the-widget-does-and-does-not-appear"></a>ウィジェットが表示され、表示されない場合
 

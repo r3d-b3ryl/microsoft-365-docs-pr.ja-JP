@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 従来のファイルを組織Office 365 Message Encryption (OME) に移行する方法について説明します。
-ms.openlocfilehash: 6f2b2719a66449f01b3810c8bb65020c49568248de253a7e35b84c8ae283f220
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 324447fe09280cef52c607613f5db8fb61b4a0b2
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53859838"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569791"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Office 365 Message Encryption の古い情報
 
@@ -51,7 +51,7 @@ Office 365 Message Encryptionは、Microsoft Azure Rights Management (Azure RMS)
   
 下の図は、暗号化と復号化のプロセスにおける電子メール メッセージの流れをまとめたものです。
   
-![暗号化された電子メールのパスを示す図](../media/O365-Office365MessageEncryption-Concept.png)
+![暗号化された電子メールのパスを示す図。](../media/O365-Office365MessageEncryption-Concept.png)
   
 詳細については、「新しい OME 機能のリリース前Office 365 Message Encryptionレガシ サービスのサービス情報」[を参照してください](legacy-information-for-message-encryption.md#LegacyServiceInfo)。
   
@@ -71,7 +71,7 @@ Office 365 Message Encryptionは、Microsoft Azure Rights Management (Azure RMS)
 
 3. Microsoft 365 管理センター で、**[管理センター]** \> **[Exchange]** の順に選択します。
 
-4. EAC で、[メールフロー ルール] に移動し、[新しい新しい] アイコン [ \>  ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **新しいルールの作成] を選択します**。 EAC の使用の詳細については、「Exchange[管理センター」を参照](/exchange/exchange-admin-center)Exchange Online。
+4. EAC で、[メール フロールール] に移動 **し** \> **、[** 新しい新しい] **アイコンを** ![ 選択します。](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>**新しいルールを作成します**。 EAC の使用の詳細については、「Exchange[管理センター」を参照](/exchange/exchange-admin-center)Exchange Online。
 
 5. [ **名前]** に、ルールの名前を入力します (たとえば、メールの暗号化 DrToniRamos@hotmail.com。
 
@@ -127,7 +127,7 @@ Office 365 Message Encryptionは、Microsoft Azure Rights Management (Azure RMS)
 
 3. Microsoft 365 管理センター で、**[管理センター]** \> **[Exchange]** の順に選択します。
 
-4. EAC で、[メールフロー ルール] に移動し、[新しい新しい] アイコン [ \>  ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **新しいルールの作成] を選択します**。 EAC の使用の詳細については、「Exchange[管理センター」を参照](/exchange/exchange-admin-center)Exchange Online。
+4. EAC で、[メール フロールール] に移動 **し** \> **、[** 新しい新しい] **アイコンを** ![ 選択します。](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>**新しいルールを作成します**。 EAC の使用の詳細については、「Exchange[管理センター」を参照](/exchange/exchange-admin-center)Exchange Online。
 
 5. [ **名前]** に、受信メールから暗号化を削除するなどのルールの名前を入力します。
 
@@ -181,7 +181,7 @@ Office 365 Message Encryptionは、Microsoft Azure Rights Management (Azure RMS)
 以下の例は、電子メールの添付ファイルに表示される ContosoPharma のカスタム ロゴです。
 
 > [!div class="mx-imgBorder"]
-> ![暗号化メッセージ ページの表示例](../media/TA-OME-3attachment2.jpg)
+> ![ビューの暗号化されたメッセージ ページのサンプル。](../media/TA-OME-3attachment2.jpg)
   
 **組織のブランドで暗号化メール メッセージと暗号化ポータルをカスタマイズするには**
   
@@ -218,7 +218,7 @@ Office 365 Message Encryptionは、Microsoft Azure Rights Management (Azure RMS)
 
 次の表に、新しい OME 機能のリリース前Office 365 Message Encryptionサービスの技術的な詳細を示します。
   
-| サービスの詳細情報 | Description |
+| サービスの詳細情報 | 説明 |
 |:-----|:-----|
 |クライアント デバイスの要件  <br/> |暗号化されたメッセージは、Form Post をサポートする最新のブラウザーで HTML 添付ファイルを開くことができれば、任意のクライアント デバイスで表示できます。  <br/> |
 |暗号化アルゴリズムと連邦情報処理規格 (FIPS) への準拠  <br/> |Office 365 Message Encryption は、Windows Azure Information Rights Management (IRM) と同じ暗号化キーを使用し、暗号化モード 2 をサポートします (RSA システム用の 2K キーと SHA-1 システム用の 256 ビット キー)。 基になる IRM 暗号化モードの詳細については、「RMS 暗号化モードAD [を参照してください](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/hh867439(v=ws.10))。  <br/> |
@@ -305,7 +305,7 @@ EHE のすべてのお客様は、Office 365 Message Encryption にアップグ�
   
  **Q. 特定の受信者に送信されたメッセージを取り消すことは可能ですか。**
   
-いいえ。 送信後に特定のユーザーにメッセージを取り消す事はできない。
+その必要はありません。 送信後に特定のユーザーにメッセージを取り消す事はできない。
   
  **Q. 受信されて既読になった暗号化メッセージのレポートを表示することはできますか。**
   

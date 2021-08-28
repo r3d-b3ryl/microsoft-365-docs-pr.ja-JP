@@ -20,16 +20,16 @@ search.appverid:
 - MET150
 description: 詳細については、Advanced eDiscoveryのソリューションMicrosoft 365。 この記事では、内部および外部Advanced eDiscovery Microsoft 365を管理するためのツールである、Microsoft 365の概要を説明します。 また、法的調査を管理するために、Advanced eDiscoveryを使用するビジネス上の理由も枠に入ります。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 611748b00df53f4988d37e92a93e63ef8348d9937f8092209c6b2320939c3af0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 59052e862e84b5cf9eabdf2cdce58e8e743887ee
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53895501"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569767"
 ---
 # <a name="overview-of-microsoft-365-advanced-ediscovery"></a>概要 Microsoft 365 Advanced eDiscovery
 
-このAdvanced eDiscoveryソリューションMicrosoft 365既存の Microsoft 電子情報開示と分析機能に基付けされています。 Advanced eDiscoveryは、組織の内部および外部調査に対応するコンテンツを保存、収集、分析、レビュー、エクスポートするためのエンドツーエンドのワークフローを提供します。 また、法務チームが法的ホールド通知ワークフロー全体を管理して、ケースに関係する保管担当者と通信できます。
+このAdvanced eDiscoveryソリューションMicrosoft 365既存の Microsoft 電子情報開示と分析機能に基付けされています。 Advanced eDiscoveryは、組織の内部および外部調査に対応するコンテンツを保存、収集、分析、レビュー、エクスポートするためのエンドツーエンドのワークフローを提供します。 また、訴訟チームが法的情報保留通知ワークフロー全体を管理して、ケースに関係するカストディアンとコミュニケーションを取ることができます。
 
 ## <a name="advanced-ediscovery-capabilities"></a>Advanced eDiscovery機能
 
@@ -37,7 +37,7 @@ Advanced eDiscoveryデータを検出することで、組織が法的な問題�
 
 以下のセクションでは、これらの機能が組織Advanced eDiscovery役立つ方法について説明します。
 
-![Advanced eDiscovery機能](../media/advanced-ediscovery-capabilities.png)
+![Advanced eDiscovery機能。](../media/advanced-ediscovery-capabilities.png)
 
 ### <a name="discover-and-collect-data-in-place"></a>データを一インプレイスで検出して収集する
 
@@ -71,25 +71,25 @@ Advanced eDiscoveryは、信頼する必要がある電子情報開示ソリュ�
 
 電子情報開示リファレンス モデル (EDRM) Advanced eDiscovery Microsoft 365電子情報開示プロセスと一致する、Advanced eDiscoveryの組み込みワークフロー。
 
-![電子探索参照モデル (EDRM)](../media/EDRMv1.png)
+![電子探索参照モデル (EDRM)。](../media/EDRMv1.png)
 
 (画像ソース提供:edrm.net。 ソース イメージは、クリエイティブ コモンズ アトリビューション 3.0 [報告されていないライセンス] で利用できます。
 
-高レベルでは、EDRM ワークフローをサポートAdvanced eDiscovery方法を次に示します。
+Advanced eDiscovery が、いかに高いレベルで EDRM ワークフローをサポートするかについて説明します。
 
-- **ID。** 調査に関心のある潜在的な人物を特定した後、Advanced eDiscovery ケースにカストディアン (データ 保管担当者とも呼ばれる) として追加できます。 ユーザーが保管担当者として追加された後、保管担当者のドキュメントを保存、収集、および確認するのは簡単です。
+- **ID。** 調査に関心のある潜在的な人物を特定したら、Advanced eDiscovery ケースにカストディアン (調査に関連する情報を保持している可能性があるため *データ カストディアン* とも呼ばれます) として追加できます。 ユーザーをカストディアンとして追加すると、カストディアン ドキュメントを簡単に保持、収集、および確認できます。
 
-- **保持。** 調査に関連するデータを保持および保護するために、Advanced eDiscovery を使用すると、ケース内の保管担当者に関連付けられたデータ ソースを法的に保持できます。 保管以外のデータを保留に設定できます。 Advanced eDiscoveryには通信ワークフローも組み込みなので、法的保留通知を保管担当者に送信し、確認応答を追跡できます。
+- **保持。** Advanced eDiscovery を使用すると、調査に関連するデータを保持および保護するために、ケースでカストディアンに関連付けられているデータ ソースに訴訟ホールドを配置することができます。 非カストディアン データを保留にすることもできます。 Advanced eDiscovery には組み込みの通信ワークフローもあり、カストディアンに訴訟ホールド通知を送信し、その受信確認を追跡できます。
 
-- **コレクション。** 調査に関連するデータ ソースを特定 (および保存) した後、Advanced eDiscovery で組み込みの検索ツールを使用して、ケースに関連する可能性のある保管データ ソース (および該当する場合は保管されていないデータ ソース) からライブ データを検索して収集できます。
+- **コレクション。** 調査に関連するデータ ソースを特定 (および保持) したら、Advanced eDiscovery 検索の組み込み検索ツールを使用して、ケースに関連する可能性があるカストディアン データ ソース (および該当する場合は非カストディアン データ ソース) からライブ データを収集できます。
 
-- **処理。** ケースに関連するすべてのデータを収集した後、次の手順でケースを処理して、詳細なレビューと分析を行います。 このAdvanced eDiscovery、コレクション フェーズで特定したインプレイス データが Azure Storage の場所 (レビュー セットと呼ばれる) にコピーされ、ケース データの静的ビューが提供されます。 
+- **処理。** ケースに関連するすべてのデータを収集したら、次の手順は、詳細確認と分析用のプロセスです。 Advanced eDiscovery では、コレクションフェーズで識別したインプレースデータは、Azure Storage (*レビュー セット* と呼ばれる) にコピーされます。これによってケース データを静的に表示できます。 
 
-- **確認します。** データをレビュー セットに追加した後、特定のドキュメントを表示し、追加のクエリを実行して、データをケースに最も関連のあるものに減らします。 また、特定のドキュメントに注釈を付け、タグ付けできます。
+- **確認します。** データをレビュー セットに追加した後、特定のドキュメントを表示し、追加のクエリを実行して、データをケースに最も関連のあるものに減らします。 また、特定のドキュメントに注釈を付けたり、タグを付けたりすることもできます。
 
-- **分析。** Advanced eDiscovery統合分析ツールを使用すると、調査に関連していないと判断したレビュー セットからデータをさらに作成できます。 関連するデータの量を減らすだけでなく、Advance eDiscovery を使用すると、コンテンツを整理してレビュー プロセスをより簡単かつ効率的に行って、法的レビューコストを節約できます。
+- **分析。** Advanced eDiscovery には、調査に関連していないと判断したレビュー セットのデータをさらに選別するのに役立つ統合分析ツールが用意されています。 Advanced eDiscovery では、関連するデータの量を減らすだけでなく、レビュー プロセスを簡易化して効率化するようにコンテンツを整理できるため、法的レビュー コストを節約するのにも役立ちます。
 
-- **実稼働** と **プレゼンテーション。** 準備ができたら、法的レビュー用のレビュー セットからドキュメントをエクスポートできます。 ドキュメントをネイティブ形式または EDRM で指定した形式でエクスポートして、サードパーティのレビュー アプリケーションにインポートできます。
+- **実稼働** と **プレゼンテーション。** 準備ができたら、法的レビュー用のレビュー セットからドキュメントをエクスポートできます。 ドキュメントをネイティブ形式または EDRM で指定された形式でエクスポートして、サード パーティ製のレビュー アプリケーションにインポートできます。
 
 ## <a name="subscriptions-and-licensing"></a>サブスクリプションとライセンス
 
@@ -122,9 +122,9 @@ Advanced eDiscoveryは、信頼する必要がある電子情報開示ソリュ�
 
 この手順を開始するには、2 つの迅速かつ簡単なAdvanced eDiscovery。
 
-![ワークフローの開始Advanced eDiscovery](../media/get-started-AeD.png)
+![ワークフローの開始とAdvanced eDiscovery。](../media/get-started-AeD.png)
 
-|手順  |Description  |
+|手順  |説明  |
 |:---------|:---------|
 |[Advanced eDiscovery を設定する](get-started-with-advanced-ediscovery.md)| サブスクリプションとライセンス要件を確認した後で、アクセス許可を割り当て、組織全体の設定を構成して、サブスクリプションの使用を開始Advanced eDiscovery。|
 |[ケースの作成と管理](create-and-manage-advanced-ediscoveryv2-case.md) | 組織内のすべての法的および他のAdvanced eDiscoveryのワークフローを管理するケースを作成します。|
@@ -134,7 +134,7 @@ Advanced eDiscoveryは、信頼する必要がある電子情報開示ソリュ�
 
 単一地域環境と複数地域環境でのエンドツーエンドのワークフローと[、EDRM](#advanced-ediscovery-alignment-with-the-electronic-discovery-reference-model)に合わせて配置されたエンドツーエンドのデータ フローを示す Advanced eDiscovery アーキテクチャ図を次に示します。
 
-[![モデル ポスター: Advanced eDiscovery アーキテクチャ Microsoft 365](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
+[![モデルポスター: Advanced eDiscovery のアーキテクチャMicrosoft 365。](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
 
 [画像として表示する](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
 

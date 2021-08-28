@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_TLGs
 description: このテスト ラボ ガイドを使用して、エンタープライズ テスト環境に対する権限Microsoft 365アクセス管理を有効にしてください。
-ms.openlocfilehash: 9599048ae7ed4f4b3627da15d22d00e795bf28fc
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: d4d3658ad8c7533e2540dde6c390b4f2b4691cb8
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58250786"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569407"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-for-enterprise-test-environment"></a>エンタープライズ テスト環境向けMicrosoft 365アクセス管理
 
@@ -34,7 +34,7 @@ ms.locfileid: "58250786"
 - [フェーズ 2: 特権アクセス管理を構成する](#phase-2-configure-privileged-access-management)
 - [フェーズ 3: 昇格されたタスクと特権タスクに承認が必要な場合の確認](#phase-3-verify-that-approval-is-required-for-elevated-and-privileged-tasks)
 
-![Microsoft クラウドのテスト ラボ ガイド](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Microsoft クラウドのテスト ラボ ガイド。](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
 > エンタープライズ テスト ラボ ガイド スタックの Microsoft 365 内のすべての記事への視覚的なマップについては、「Microsoft 365 テスト ラボ ガイド スタック」[を参照してください](../downloads/Microsoft365EnterpriseTLGStack.pdf)。

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 処理確認を利用する場合や、レコードとしてマークされたアイテムが構成した設定に従って自動的に削除される場合、コンテンツの処理を監視および管理します。
-ms.openlocfilehash: 8a223a49e0fe648dee3bb8c47449538b8f0bfa5614066f4bfecc76e622e1ae65
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b949b712721acc7921d3c6ac25a07c14338d7609
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53895893"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567942"
 ---
 # <a name="disposition-of-content"></a>コンテンツの処理
 
@@ -106,18 +106,18 @@ Enable-ComplianceTagStorage -RecordsManagementSecurityGroupEmail dispositionrevi
 
 管理者は、[**概要**] タブですべての保留中の処理を表示できます。確認担当者には、処理保留中の項目だけが表示されます。 次に例を示します。
 
-![レコード管理の概要で保留中の処理](../media/dispositions-overview.png)
+![レコード管理の概要で保留中の処理。](../media/dispositions-overview.png)
 
 [**すべての保留中の処理を表示**] を選択すると、[**処理**] ページが表示されます。 以下に例を示します。
 
-![Microsoft365 コンプライアンス センターの [処理] ページ](../media/disposition-tab.png)
+![Microsoft 365 コンプライアンス センターの [処理] ページ。](../media/disposition-tab.png)
 
 
 ### <a name="workflow-for-a-disposition-review"></a>処理確認の流れ
 
 次の図は、保持ラベルが公開され、ユーザーが手動で適用した場合の処理確認の基本的な流れを示しています。 または、処理確認用に構成された保持ラベルをコンテンツに自動適用することもできます。
   
-![処理の流れを示すグラフ](../media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
+![処理の流れを示すグラフ。](../media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
 
 ### <a name="how-to-configure-a-retention-label-for-disposition-review"></a>処理レビュー用に保持ラベルを構成する方法
 
@@ -125,11 +125,11 @@ Enable-ComplianceTagStorage -RecordsManagementSecurityGroupEmail dispositionrevi
 
 保持ラベルの [**保持設定の定義**] ページから:
 
-![ラベルの [保持] 設定ページ](../media/disposition-review-option.png)
+![ラベルの保持設定。](../media/disposition-review-option.png)
  
 この [**処理確認を開始する**] オプションを選択した後、ウィザードの次のページで、必要な連続する処理ステージ数と、各ステージの処理確認担当者を指定します。
 
-![処理確認担当者の指定](../media/disposition-reviewers.png) 
+![処理確認担当者の指定。](../media/disposition-reviewers.png) 
 
 [**ステージの追加**] を選択し、識別用にステージに名前を付けます。 次に、そのステージのレビュー担当者を指定します。
 
@@ -144,7 +144,7 @@ Enable-ComplianceTagStorage -RecordsManagementSecurityGroupEmail dispositionrevi
 
 構成フェーズで指定した各ステージについて、名前の変更、並べ替え、削除を行うことができます。その場合は、[ステージアクション] オプション (**...**) を選択します。 
 
-![処理確認のステージ操作](../media/stage-actions-disposition-review.png)
+![処理確認のステージ操作。](../media/stage-actions-disposition-review.png)
 
 ただし、保持ラベルを作成した後で、ステージの並べ替えや削除を行することはできません。
 
@@ -154,13 +154,13 @@ Enable-ComplianceTagStorage -RecordsManagementSecurityGroupEmail dispositionrevi
 
 確認担当者に送られる既定のメール通知の例。
 
-![処理確認の準備ができた場合の既定のテキストによるメール通知例](../media/disposition-review-email.png)
+![処理確認の準備ができた場合の既定のテキストによるメール通知例。](../media/disposition-review-email.png)
 
 また、プレビューで、最初の通知とその後のリマインダーのために処理確認者に送るメールをカスタマイズすることができます。
 
 コンプライアンス センターの[処理]ページから、[**レコード管理の設定**] を選びます。  
 
-![レコード管理の設定](../media/record-management-settings.png)
+![レコード管理の設定。](../media/record-management-settings.png)
 
 次に、[**処理通知**] タブを選択し、既定のメール メッセージを使用するか、既定のメッセージに独自のテキストを追加するかどうかを指定します。 ユーザー設定のテキストは、メールの指示の、保持ラベルに関する情報の後、および次の手順の指示の前に追加されます。
 
@@ -178,11 +178,11 @@ If you need additional information, visit the helpdesk website (https://support.
 
 確認担当者は、コンテンツを確認する準備ができたことをメールで通知されると、メールのリンクをクリックして、Microsoft365 コンプライアンス センターの **レコード管理** から [**処理**] に直接アクセスすることができます。 そこで、確認担当者は、**Type** で **保留中の処理** を表示して、保持ラベルごとに処理待ちのアイテムの数を表示することができます。 そこで、保持ラベルを選択し、[**新しいウィンドウで開く**] を選んで、そのラベルのコンテンツをすべて表示します。
 
-![処理確認用の新しいウィンドウで開く](../media/open-in-new-window.png)
+![処理確認用の新しいウィンドウで開きます。](../media/open-in-new-window.png)
 
 [**保留中の処理**] を選ぶと、そのラベルに関して保留中の処理がすべて表示されます。 1 つ以上のアイテムを選択すると、ミニ プレビュー ウィンドウおよび [**ソース**]、 [**詳細**]、および [**履歴**] タブを使用して、操作を実行する前にコンテンツを検査できます。
 
-![処理オプション](../media/retention-disposition-options.png)
+![処理オプション。](../media/retention-disposition-options.png)
 
 水平スクロール バーを使用するか、ミニ レビュー ウィンドウを閉じると、有効期限と処理確認ステージの名前を含む列が他に表示されます。
 
@@ -214,7 +214,7 @@ If you need additional information, visit the helpdesk website (https://support.
 
 これらのアイテムは、**種類** 列に **処分されたレコード** を表示します。 以下に例を示します。
 
-![処理確認なしで処理されたアイテム](../media/records-disposed2.png)
+![処理確認なしで処理されたアイテム。](../media/records-disposed2.png)
 
 > [!NOTE]
 > この機能は、[統合監査ログ](search-the-audit-log-in-security-and-compliance.md)からの情報を使用して、対応するイベントがキャプチャされるように、監査を[有効にして検索可能](turn-audit-log-search-on-or-off.md)にする必要があります。

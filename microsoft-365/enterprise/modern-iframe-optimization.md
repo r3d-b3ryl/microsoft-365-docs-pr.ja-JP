@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: SharePoint Online 最新版と従来版の発行サイト ページで iFrame のパフォーマンスを最適化する方法について説明します。
-ms.openlocfilehash: cd7d6a09581e716b0b1179bb251d24d927b0c03e06552d381d809f54887238b5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7f50b6582a0a65cd29a91f450642e5d38b346d77
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53848870"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569419"
 ---
 # <a name="optimize-iframes-in-sharepoint-online-modern-and-classic-publishing-site-pages"></a>SharePoint Online 最新版と従来版の発行サイト ページで iFrame を最適化する
 
@@ -50,7 +50,7 @@ SharePoint のサイト ページを SharePoint 用ページ診断ツールを�
 
 [**iFrame を使用する Web パーツが検出されました**] の結果が、結果の [**改善の余地あり**] セクションまたは [**要注意**] セクションのいずれかに表示されている場合は、結果をクリックして iframe が含まれる Web パーツを表示できます。
 
-![ページ診断ツールの結果](../media/modern-portal-optimization/pagediag-iframe-yellow.png)
+![ページ診断ツールの結果。](../media/modern-portal-optimization/pagediag-iframe-yellow.png)
 
 ## <a name="remediate-iframe-performance-issues"></a>iFrame のパフォーマンスの問題を修復する
 
@@ -69,12 +69,12 @@ iFrame は本来、javascript、CSS、framework の要素など、関連付け�
 
 ページの変更を行ってパフォーマンスの問題を修復する前に、分析結果のページの読み込み時間をメモします。 修正後にツールをもう一度実行して新しい結果がベースライン基準内にあるかどうかを確認し、新しいページ読み込み時間をチェックして改善されたかどうかを確認します。
 
-![ページ読み込み時間の結果](../media/modern-portal-optimization/pagediag-page-load-time.png)
+![ページ読み込み時間の結果。](../media/modern-portal-optimization/pagediag-page-load-time.png)
 
 >[!NOTE]
 >ページ読み込み時間は、ネットワーク負荷、時間帯、その他の一時的な状態など、さまざまな要素によって異なります。 結果を平均化するために、変更の前後に数回に渡ってページ読み込み時間をテストする必要があります。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [SharePoint Online のパフォーマンスをチューニングする](tune-sharepoint-online-performance.md)
 

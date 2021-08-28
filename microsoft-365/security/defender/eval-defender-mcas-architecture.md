@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: f79372a210a256720654c92e5ce580d772ef4527
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 591a98e07f47717f0475c88584a161c93198c084
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58249668"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569311"
 ---
 # <a name="review-architecture-requirements-and-key-concepts-for-microsoft-cloud-app-security"></a>アーキテクチャの要件と主要な概念を確認Microsoft Cloud App Security
 
@@ -45,7 +45,7 @@ Microsoft Cloud App Securityは、クラウド アクセス セキュリティ �
 
 このCloud App Security、組織で使用されているクラウド アプリは、図のように管理および保護されません。
 
-![アーキテクチャのMicrosoft Cloud App Security](../../media/defender/m365-defender-mcas-architecture-a.png)
+![アーキテクチャのMicrosoft Cloud App Security。](../../media/defender/m365-defender-mcas-architecture-a.png)
 
 この図について:
 - 組織によるクラウド アプリの使用は、管理され保護されません。 
@@ -55,7 +55,7 @@ Microsoft Cloud App Securityは、クラウド アクセス セキュリティ �
 
 クラウド アプリの使用を管理する最初の手順は、組織で使用されているクラウド アプリを検出する方法です。 次の図は、クラウド検出とクラウド検出の動作をCloud App Security。
 
-![アーキテクチャ Microsoft Cloud App Security - クラウド検出](../../media/defender/m365-defender-mcas-architecture-b.png)
+![クラウド検出Microsoft Cloud App Securityアーキテクチャ。](../../media/defender/m365-defender-mcas-architecture-b.png)
 
 この図では、ネットワーク トラフィックを監視し、組織で使用されているクラウド アプリを検出するために使用できる 2 つの方法があります。
 - A. クラウド アプリの検出は、Microsoft Defender for Endpoint とネイティブに統合されます。 Defender for Endpoint は、IT 管理デバイスからアクセスされるクラウド アプリとサービスWindows 10します。 
@@ -65,7 +65,7 @@ Microsoft Cloud App Securityは、クラウド アクセス セキュリティ �
 
 クラウド アプリを検出し、組織でどのように使用されるのかについて分析した後、選択したクラウド アプリの管理を開始できます。 
 
-![クラウド アプリMicrosoft Cloud App Securityアーキテクチャ - クラウド アプリの管理](../../media/defender/m365-defender-mcas-architecture-c.png)
+![クラウド アプリMicrosoft Cloud App Securityアーキテクチャ - クラウド アプリの管理。](../../media/defender/m365-defender-mcas-architecture-c.png)
 
 この図では、次の例を示します。
 - 一部のアプリは使用が許可されています。 これは、アプリの管理を開始する簡単な方法です。
@@ -76,7 +76,7 @@ Microsoft Cloud App Securityは、クラウド アクセス セキュリティ �
 
 Microsoft Cloud App Securityリバース プロキシとして機能し、認可されたクラウド アプリへのプロキシ アクセスを提供します。 これにより、Cloud App Securityセッション コントロールを適用できます。 
 
-![アプリケーションのアーキテクチャMicrosoft Cloud App Security - プロキシ アクセス セッション制御](../../media/defender/m365-defender-mcas-architecture-d.png)
+![アプリケーションのアーキテクチャMicrosoft Cloud App Security - プロキシ アクセス セッション制御。](../../media/defender/m365-defender-mcas-architecture-d.png)
 
 この図では、次の例を示します。
 - 組織内のユーザーとデバイスから認可されたクラウド アプリへのアクセスは、ユーザーがCloud App Security。
@@ -89,7 +89,7 @@ Microsoft Cloud App Securityリバース プロキシとして機能し、認可
 
 多要素認証や他の条件付きアクセス ポリシーを適用するために、Azure AD テナントに SaaS アプリが既に追加されている可能性があります。 Microsoft Cloud App Security Azure とネイティブに統合AD。 Azure AD で条件付きアクセス アプリ制御を使用するようにポリシーを構成Cloud App Security。 これにより、これらの管理 SaaS アプリのネットワーク トラフィックが Cloud App Security プロキシとしてルーティングされ、Cloud App Securityを監視し、セッションコントロールを適用できます。 
 
-![アーキテクチャ Microsoft Cloud App Security - SaaS アプリ](../../media/defender/m365-defender-mcas-architecture-e.png)
+![アーキテクチャ - Microsoft Cloud App Security SaaS アプリ。](../../media/defender/m365-defender-mcas-architecture-e.png)
 
 この図では、次の例を示します。
 - SaaS アプリは、Azure サービス テナントADされます。 これにより、Azure AD多要素認証を含む条件付きアクセス ポリシーを適用できます。
@@ -104,7 +104,7 @@ Cloud App Security独自の強力な保護を提供します。 ただし、Micr
 
 この図は、概要からこの評価とパイロット ガイドMicrosoft 365 Defender繰り返す価値があります。 
 
-![一Microsoft 365 Defenderを停止する方法](../../media/defender/m365-defender-eval-threat-chain.png)
+![脅威Microsoft 365 Defenderチェーンを停止する方法。](../../media/defender/m365-defender-eval-threat-chain.png)
 
 Microsoft Cloud App Security は、この図の右側に焦点を当て、移動不可能、資格情報アクセス、異常なダウンロード、ファイル共有、メール転送アクティビティのような異常な動作に気付き、セキュリティ チームに報告します。 その結果、Cloud App Securityによる横方向の移動や機密データの侵入を防ぐのに役立ちます。 Microsoft 356 Defender は、すべてのコンポーネントからの信号を関連付け、完全な攻撃ストーリーを提供します。
 

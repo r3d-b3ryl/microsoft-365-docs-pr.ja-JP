@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 011e816a7a01c0065f46113962d2b4fab356639b
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 0a8d6ea1805d4783a9326ebd0eeed269ff5fef72
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255920"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568866"
 ---
 # <a name="web-content-filtering"></a>Web コンテンツ フィルタリング
 
@@ -119,7 +119,7 @@ Web コンテンツ フィルターでブロックされたカテゴリを上書
 
 Web サイトのカテゴリを確認するには、ポータル ([エンドポイント検索] の下にある ) でMicrosoft 365 Defender URL 検索 https://security.microsoft.com) **機能を使用**  >  **できます**。 URL 検索結果では、[URL/ドメインの詳細] の下に Web コンテンツ フィルター **カテゴリが表示されます**。 管理者は、次の図に示すように、このページからドメインのカテゴリに直接異議を申し立てすることもできます。 カテゴリの結果が表示されない場合、URL は現在、既存の Web コンテンツ フィルター カテゴリに割り当てられていない。
 
-![Web コンテンツ フィルター カテゴリの参照結果の画像](../../media/web-content-filtering-category-lookup.png)
+![Web コンテンツ フィルター カテゴリの参照結果のイメージ。](../../media/web-content-filtering-category-lookup.png)
 
 ## <a name="web-content-filtering-cards-and-details"></a>Web コンテンツ フィルター カードと詳細
 
@@ -131,25 +131,25 @@ Web サイトのカテゴリを確認するには、ポータル ([エンドポ�
 
 この機能を使用した最初の 30 日間で、組織にはこの情報を表示するのに十分なデータが含めなかった可能性があります。
 
-![カテゴリ カード別の Web アクティビティのイメージ](images/web-activity-by-category600.png)
+![カテゴリ カード別の Web アクティビティのイメージ。](images/web-activity-by-category600.png)
 
 ### <a name="web-content-filtering--summary-card"></a>Web コンテンツ フィルターの概要カード
 
 このカードは、異なる親 Web コンテンツ カテゴリに対するブロックされたアクセス試行の分布を表示します。 色付きバーのいずれかを選択して、特定の親 Web カテゴリに関する詳細を表示します。
 
-![Web コンテンツ フィルターの概要カードのイメージ](images/web-content-filtering-summary.png)
+![Web コンテンツ フィルターの概要カードのイメージ。](images/web-content-filtering-summary.png)
 
 ### <a name="web-activity-summary-card"></a>Web アクティビティの概要カード
 
 このカードには、すべての URL の Web コンテンツに対する要求の総数が表示されます。
 
-![Web アクティビティの概要カードの画像](images/web-activity-summary.png)
+![Web アクティビティの概要カードのイメージ。](images/web-activity-summary.png)
 
 ### <a name="view-card-details"></a>カードの詳細を表示する
 
 カード内のグラフ **からテーブル** 行または色付きバーを選択すると、各カードのレポートの詳細にアクセスできます。 各カードのレポートの詳細ページには、Web コンテンツ カテゴリ、Web サイト ドメイン、デバイス グループに関する広範な統計データが含まれています。
 
-![Web 保護レポートの詳細の画像](images/web-protection-report-details.png)
+![Web 保護レポートの詳細のイメージ。](images/web-protection-report-details.png)
 
 - **Web カテゴリ**: 組織内でアクセス試行を行った Web コンテンツ カテゴリを一覧表示します。 特定のカテゴリを選択してサマリー フライアウトを開きます。
 

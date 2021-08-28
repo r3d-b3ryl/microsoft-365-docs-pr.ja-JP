@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: ネットワークを実装するためのロードマップMicrosoft 365です。
-ms.openlocfilehash: 7c8c67305ef67e9e7a20b2d341f339b8bdbab4090426861e37b5b5277bb249e7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3fb9c99bd0381730a41bd65012efe5488b85509d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53800983"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570055"
 ---
 # <a name="networking-roadmap-for-microsoft-365"></a>ネットワークのロードマップ (Microsoft 365
 
@@ -30,7 +30,7 @@ Microsoft 365には、コラボレーションと生産性のクラウド サー
 
 以下の記事を活用して主な違いを理解し、エッジ デバイス、クライアント コンピューター、オンプレミス ネットワークを変更して、オンプレミス ユーザーの最高のパフォーマンスを引き出します。
 
-## <a name="plan"></a>計画
+## <a name="plan"></a>プラン
 
 ネットワーク実装の計画フェーズでは、次の処理を行います。
 
@@ -66,7 +66,7 @@ Microsoft 365には、コラボレーションと生産性のクラウド サー
 
 架空ではあるものの代表的な多国籍企業である Contoso Corporation が Microsoft 365 クラウド サービス用に[ネットワーク デバイスおよびインターネット接続を最適化](contoso-networking.md)した方法をご覧ください。
 
-![Contoso 社](../media/contoso-overview/contoso-icon.png)
+![Contoso Corporation](../media/contoso-overview/contoso-icon.png)
 
 ## <a name="next-step"></a>次の手順
 

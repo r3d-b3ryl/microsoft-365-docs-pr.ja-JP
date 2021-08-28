@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
 description: 特定のメールボックスまたはサイト フォルダー内Microsoft 365 コンプライアンス センターを検索する対象となるコレクションを実行するには、フォルダー内のコンテンツ検索を使用します。
-ms.openlocfilehash: fb7b6e9f1115aae64a2e0e2a3776acf535d71509
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: e5da234d78d2f26af70f3e69ff6a1917f9d99b34
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508144"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569551"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>対象のコレクションにコンテンツ検索を使用する
 
@@ -202,7 +202,7 @@ Microsoft 365 コンプライアンス センター のコンテンツ検索ツ�
 
 メールボックス フォルダーのスクリプトによって返される出力の例を次に示します。
 
-![スクリプトによって返されるメールボックス フォルダーとフォルダーの一覧の例](../media/cd739207-eb84-4ebf-a03d-703f3d3a797d.png)
+![スクリプトによって返されるメールボックス フォルダーとフォルダーの一覧の例。](../media/cd739207-eb84-4ebf-a03d-703f3d3a797d.png)
 
 手順 2 の例は、ユーザーの回復可能なアイテム フォルダー内の Purges サブフォルダーの検索に使用されるクエリを示しています。
 
@@ -212,7 +212,7 @@ SharePoint または OneDrive for Business サイトから **documentlink** プ�
 
 サイト フォルダーのスクリプトによって返される出力の例を次に示します。
 
-![スクリプトによって返されるサイト フォルダーのドキュメントリンク名の一覧の例](../media/519e8347-7365-4067-af78-96c465dc3d15.png)
+![スクリプトによって返されるサイト フォルダーのドキュメントリンク名の一覧の例。](../media/519e8347-7365-4067-af78-96c465dc3d15.png)
 
 ## <a name="step-2-use-a-folder-id-or-documentlink-to-perform-a-targeted-collection"></a>手順 2: フォルダー ID またはドキュメントリンクを使用して、対象のコレクションを実行する
 
@@ -226,7 +226,7 @@ SharePoint または OneDrive for Business サイトから **documentlink** プ�
 
     たとえば、次のスクリーンショットのクエリでは、ユーザーの回復可能なアイテム フォルダーの Purges サブフォルダー内のアイテムを検索します (Purges サブフォルダーのプロパティの値は、手順 1 のスクリーンショットに `folderid` 示されています)。
 
-    ![folderid または documentlink を検索クエリのキーワード ボックスに貼り付ける](../media/FolderIDSearchQuery.png)
+    ![folderid または documentlink を検索クエリのキーワード ボックスに貼り付けます。](../media/FolderIDSearchQuery.png)
     > [!IMPORTANT]
     > documentlink 検索では、末尾を使用する必要があります  `asterisk '/*'` 。  
 
@@ -270,7 +270,7 @@ SharePoint または OneDrive for Business サイトから **documentlink** プ�
   documentlink:"<path>/*" AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
   ```
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 この記事のスクリプトを使用して対象となるコレクションを実行する場合は、次のことを念頭に置いておきます。
 

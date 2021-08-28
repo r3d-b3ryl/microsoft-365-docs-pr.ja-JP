@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2f9e100cf6ebb4ec09caba7d6a14f93344cafedfad1ab012baea68f61a94dab5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 05747374e2a28331ec0742fe11ca2dbc660771c5
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857346"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570019"
 ---
 # <a name="schedule-an-update-of-the-microsoft-defender-for-endpoint-linux"></a>Microsoft Defender for Endpoint (Linux) の更新をスケジュールする
 
@@ -118,7 +118,7 @@ CRON_TZ=America/Los_Angeles
 
 cron ジョブを表示するには、 `sudo crontab -l`
 
-:::image type="content" source="images/update-MDE-linux-4634577.jpg" alt-text="Linux 上のエンドポイントの Defender を更新する":::
+:::image type="content" source="images/update-MDE-linux-4634577.jpg" alt-text="Linux 上のエンドポイントの Defender を更新します。":::
 
 cron ジョブの実行を検査するには、次のコマンドを実行します。
 
@@ -162,7 +162,7 @@ Puppet による自動化: Cron ジョブとスケジュールされたタスク
 
 詳細については、「<https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/>」を参照してください。
 
-## <a name="additional-information"></a>追加情報
+## <a name="additional-information"></a>ページの先頭へ
 
 ### <a name="to-get-help-with-crontab"></a>crontab のヘルプを表示するには
 

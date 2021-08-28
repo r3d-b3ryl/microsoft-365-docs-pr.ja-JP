@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: e74ca9a12938028d3e9710e46de8b2f82bca00a3c01f241c74b344f9e211d082
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fbf7b2328a453f1fb20d77553548a71a0e1ca8ab
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53890161"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569983"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング
 
@@ -35,7 +35,7 @@ ms.locfileid: "53890161"
 - Windows Server 2016
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 問題が発生した場合は、Microsoft Defender for Endpoint オンボーディング プロセスのトラブルシューティングが必要になる場合があります。
 このページでは、展開ツールのいずれかを使用して展開するときに発生する可能性のあるオンボーディングの問題と、デバイスで発生する可能性のある一般的なエラーをトラブルシューティングするための詳細な手順を示します。
@@ -163,7 +163,7 @@ ID | 緊急度 | イベントの説明 | トラブルシューティングの手
 
 5. [フィルター **] タブの**[イベント レベル] **で、[重大**] 、[警告] **、および**[**エラー**] を選択し **、[OK] をクリックします**。
 
-   ![イベント ビューアー ログ フィルターのイメージ](images/filter-log.png)
+   ![イベント ビューアー ログ フィルターのイメージ。](images/filter-log.png)
 
 6. [操作] ウィンドウに問題を示すイベント **が表示** されます。 次の表のソリューションに基づいて、トラブルシューティングを試みできます。
 
@@ -217,7 +217,7 @@ ID | 緊急度 | イベントの説明 | トラブルシューティングの手
 
    サービスが有効になっている場合、結果は次のスクリーンショットのようになります。
 
-   ![diagtrack の sc クエリ コマンドの結果](images/windefatp-sc-qc-diagtrack.png)
+   ![diagtrack の sc クエリ コマンドの結果。](images/windefatp-sc-qc-diagtrack.png)
 
    に設定されていない場合は、自動的に開始するサービス `START_TYPE` `AUTO_START` を設定する必要があります。
 
@@ -289,7 +289,7 @@ WinHTTP は、インターネット閲覧プロキシ設定や他のユーザー
 
 - 以前のレジストリ キーの値を確認して、レジストリ キーを開いてポリシーが無効になっているか確認することもできます `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender` 。
 
-    ![ユーザーのレジストリ キーのMicrosoft Defender ウイルス対策](images/atp-disableantispyware-regkey.png)
+    ![ユーザーのレジストリ キーのMicrosoft Defender ウイルス対策。](images/atp-disableantispyware-regkey.png)
 
    > [!NOTE]
    > すべての Windows Defender (wdboot、wdfilter、wdnisdrv、wdnissvc、および windefend) は、既定の状態である必要があります。 これらのサービスの起動を変更する機能はサポートされていないため、システムのイメージを再作成する必要があります。
@@ -312,17 +312,17 @@ WinHTTP は、インターネット閲覧プロキシ設定や他のユーザー
 
 - タスク マネージャーの [プロセス] タブで Microsoft Defender for Endpoint Service が **実行されている****のを確認します**。 次に例を示します。
 
-    ![Microsoft Defender for Endpoint Service が実行されているプロセス ビューのイメージ](images/atp-task-manager.png)
+    ![Microsoft Defender for Endpoint Service が実行されているプロセス ビューのイメージ。](images/atp-task-manager.png)
 
 - イベント **ビューアー アプリケーション**  >  **とサービス ログ操作** マネージャー  >  **をチェックして**、エラーが発生した場合を確認します。
 
 - [**サービス]** で、**サーバー** Microsoft Monitoring Agent実行しているサーバーを確認します。 例えば、
 
-    ![サービスのイメージ](images/atp-services.png)
+    ![サービスのイメージ。](images/atp-services.png)
 
 - [Microsoft Monitoring Agent   >  **Azure Log Analytics (OMS) で**、ワークスペースを確認し、状態が実行されているのを確認します。
 
-    ![プロパティのMicrosoft Monitoring Agent画像](images/atp-mma-properties.png)
+    ![[プロパティ] Microsoft Monitoring Agentイメージ。](images/atp-mma-properties.png)
 
 - デバイスがポータルの [デバイス] リスト **に反映されているのを** 確認します。
 
@@ -346,122 +346,122 @@ WinHTTP は、インターネット閲覧プロキシ設定や他のユーザー
 
 1. アプリケーションを作成Microsoft Endpoint Configuration Manager。
 
-    ![構成 1 Microsoft Endpoint Configuration Managerイメージ](images/mecm-1.png)
+    ![構成 1 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-1.png)
 
 2. [アプリケーション **情報を手動で指定する] を選択します**。
 
-    ![構成 2 Microsoft Endpoint Configuration Managerイメージ](images/mecm-2.png)
+    ![構成 2 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-2.png)
 
 3. アプリケーションに関する情報を指定し、[次へ] を **選択します**。
 
-    ![構成 3 Microsoft Endpoint Configuration Managerのイメージ](images/mecm-3.png)
+    ![構成 3 Microsoft Endpoint Configuration Managerのイメージ。](images/mecm-3.png)
 
 4. ソフトウェア センターに関する情報を指定し、[次へ] を **選択します**。
 
-    ![configuration4 Microsoft Endpoint Configuration Managerイメージ](images/mecm-4.png)
+    ![構成 4 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-4.png)
 
 5. [展開 **の種類] で、[** 追加] **を選択します**。
 
-    ![構成のMicrosoft Endpoint Configuration Manager 5](images/mecm-5.png)
+    ![構成 5 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-5.png)
 
 6. [展開 **の種類情報を手動で指定する] を選択し**、[次へ] を **選択します**。
 
-    ![構成 6 Microsoft Endpoint Configuration Managerイメージ](images/mecm-6.png)
+    ![構成 6 Microsoft Endpoint Configuration Managerのイメージ。](images/mecm-6.png)
 
 7. 展開の種類に関する情報を指定し、[次へ] を **選択します**。
 
-    ![構成 7 Microsoft Endpoint Configuration Managerイメージ](images/mecm-7.png)
+    ![構成 7 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-7.png)
 
 8. [**コンテンツ インストール**  >  **プログラム] で、** 次のコマンドを指定します `net start sense` 。
 
-    ![configuration8 Microsoft Endpoint Configuration Managerイメージ](images/mecm-8.png)
+    ![configuration8 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-8.png)
 
 9. [ **検出方法] で**、[ **ルールを構成してこの** 展開の種類の存在を検出する] を選択し、[句の追加] **を選択します**。
 
-    ![構成 9 Microsoft Endpoint Configuration Managerのイメージ](images/mecm-9.png)
+    ![configuration9 のMicrosoft Endpoint Configuration Managerイメージ。](images/mecm-9.png)
 
 10. 次の検出ルールの詳細を指定し **、[OK] を選択します**。
 
-    ![configuration10 Microsoft Endpoint Configuration Managerイメージ](images/mecm-10.png)
+    ![構成 10 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-10.png)
 
 11. [検出 **方法] で、[次** へ] **を選択します**。
 
-    ![configuration11 Microsoft Endpoint Configuration Managerイメージ](images/mecm-11.png)
+    ![構成 11 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-11.png)
 
 12. [ **ユーザー エクスペリエンス] で**、次の情報を指定し、[次へ] を **選択します**。
 
-    ![構成 12 Microsoft Endpoint Configuration Managerイメージ](images/mecm-12.png)
+    ![configuration12 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-12.png)
 
 13. [要件 **] で、[** 次へ] を **選択します**。
 
-    ![configuration13 Microsoft Endpoint Configuration Managerイメージ](images/mecm-13.png)
+    ![構成 13 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-13.png)
 
 14. [ **依存関係] で、[** 次へ] を **選択します**。
 
-    ![構成 14 Microsoft Endpoint Configuration Managerイメージ](images/mecm-14.png)
+    ![configuration14 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-14.png)
 
 15. [概要 **] で、[** 次へ] を **選択します**。
 
-    ![configuration15 Microsoft Endpoint Configuration Managerイメージ](images/mecm-15.png)
+    ![構成 15 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-15.png)
 
 16. [ **完了] で**、[閉じる] **を選択します**。
 
-    ![configuration16 Microsoft Endpoint Configuration Managerイメージ](images/mecm-16.png)
+    ![構成 16 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-16.png)
 
 17. [展開 **の種類] で**、[次へ] を **選択します**。
 
-    ![configuration17 Microsoft Endpoint Configuration Managerイメージ](images/mecm-17.png)
+    ![構成 17 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-17.png)
 
 18. [概要 **] で、[** 次へ] を **選択します**。
 
-    ![configuration18 Microsoft Endpoint Configuration Managerイメージ](images/mecm-18.png)
+    ![構成 18 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-18.png)
 
-    次に、状態が表示されます ![ 。configuration19 Microsoft Endpoint Configuration Managerイメージ](images/mecm-19.png)
+    その後、状態が表示されます ![ 。configuration19 のイメージMicrosoft Endpoint Configuration Manager表示されます。](images/mecm-19.png)
 
 19. [ **完了] で**、[閉じる] **を選択します**。
 
-    ![configuration20 Microsoft Endpoint Configuration Managerイメージ](images/mecm-20.png)
+    ![configuration20 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-20.png)
 
 20. これで、アプリを右クリックして [展開] を選択して、アプリケーションを **展開できます**。
 
-    ![configuration21 Microsoft Endpoint Configuration Managerイメージ](images/mecm-21.png)
+    ![configuration21 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-21.png)
 
 21. [全般 **] で** 、[ **依存関係のコンテンツを自動的に配布する] と [参照]** を **選択します**。
 
-    ![configuration22 Microsoft Endpoint Configuration Managerイメージ](images/mecm-22.png)
+    ![configuration22 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-22.png)
 
 22. [コンテンツ **] で [次** へ] **を選択します**。
 
-    ![configuration23 Microsoft Endpoint Configuration Managerイメージ](images/mecm-23.png)
+    ![configuration23 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-23.png)
 
 23. [展開 **の設定] で**、[次へ] を **選択します**。
 
-    ![configuration24 Microsoft Endpoint Configuration Managerイメージ](images/mecm-24.png)
+    ![configuration24 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-24.png)
 
 24. [**スケジュール] で****、利用可能な時間の後にできるだけ早く** 選択し、[次へ] を **選択します**。
 
-    ![configuration25 Microsoft Endpoint Configuration Managerイメージ](images/mecm-25.png)
+    ![configuration25 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-25.png)
 
 25. [ **ユーザー エクスペリエンス] で**、[期限内またはメンテナンス 期間中に変更をコミットする **] (** 再起動が必要) を選択し、[次へ] を **選択します**。
 
-    ![configuration26 Microsoft Endpoint Configuration Managerイメージ](images/mecm-26.png)
+    ![configuration26 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-26.png)
 
 26. [アラート **] で [** 次へ] **を選択します**。
 
-    ![configuration27 Microsoft Endpoint Configuration Managerイメージ](images/mecm-27.png)
+    ![configuration27 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-27.png)
 
 27. [概要 **] で、[** 次へ] を **選択します**。
 
-    ![configuration28 Microsoft Endpoint Configuration Managerイメージ](images/mecm-28.png)
+    ![configuration28 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-28.png)
 
-    その後、状態が ![ 表示されます Configuration29 Microsoft Endpoint Configuration Managerイメージ](images/mecm-29.png)
+    その後、状態は ![ configuration29 のイメージMicrosoft Endpoint Configuration Managerされます。](images/mecm-29.png)
 
 28. [ **完了] で**、[閉じる] **を選択します**。
 
-    ![configuration30 Microsoft Endpoint Configuration Managerイメージ](images/mecm-30.png)
+    ![configuration30 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-30.png)
 
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [Microsoft Defender for Endpoint のトラブルシューティング](troubleshoot-mdatp.md)
 - [デバイスのオンボード](onboard-configure.md)

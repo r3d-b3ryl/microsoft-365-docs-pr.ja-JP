@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: dcf7ecede8eb870edbeb015d0c7a5005ed006ab2
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 7fa72bc6e96199fb7773e4df385e3527ac14938e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533569"
+ms.locfileid: "58568626"
 ---
 # <a name="data-collection-for-advanced-troubleshooting-on-windows"></a>Windows で高度なトラブルシューティングを行うためのデータ収集
 
@@ -36,7 +36,7 @@ Microsoft サポート 担当者と共同作業する場合は、クライアン
 
 Run '**MDEClientAnalyzer.cmd /?**' をクリックして、使用可能なパラメーターとその説明の一覧を表示します。
 
-![コマンド ラインのクライアント アナライザー パラメーターのイメージ](images/d89a1c04cf8441e4df72005879871bd0.png)
+![コマンド ラインのクライアント アナライザー パラメーターのイメージ。](images/d89a1c04cf8441e4df72005879871bd0.png)
 
 > [!NOTE]
 > 高度なトラブルシューティング パラメーターを使用すると、アナライザーは関連するサポート ログ[MpCmdRun.exe収集Microsoft Defender ウイルス対策](/windows/security/threat-protection/microsoft-defender-antivirus/collect-diagnostic-data-update-compliance)呼び出します。
@@ -72,13 +72,13 @@ Run '**MDEClientAnalyzer.cmd /?**' をクリックして、使用可能なパラ
 
 アナライザーと上記のすべてのシナリオ フラグは、"RemoteMDEClientAnalyzer.cmd' を実行することでリモートから開始できます。これはアナライザー ツールセットにもバンドルされています。
 
-![アナライザー情報を含むコマンド ラインのイメージ](images/57cab9d82d08f672a92bf9e748ac9572.png)
+![アナライザー情報を含むコマンド ラインのイメージ。](images/57cab9d82d08f672a92bf9e748ac9572.png)
 
 > [!NOTE]
 >
 > - RemoteMDEClientAnalyzer.cmd を使用する場合は、psexec を呼び出して、構成されたファイル共有からツールをダウンロードし、そのツールをローカルで PsExec.exe。
     CMD スクリプトは '-r' フラグを使用して、SYSTEM コンテキスト内でリモートで実行するように指定します。そのため、ユーザーに対するプロンプトは表示されません。
-> - この同じフラグを MDEClientAnalyzer.cmd と一緒に使用すると、データ収集の分数の指定を要求するユーザーに対するプロンプトを回避できます。 例として以下のようなものがあります。
+> - この同じフラグを MDEClientAnalyzer.cmd と一緒に使用すると、データ収集の分数の指定を要求するユーザーに対するプロンプトを回避できます。 次に例を示します。
 >
 >    **MDEClientAnalyzer.cmd -r -i -m 5**
 >

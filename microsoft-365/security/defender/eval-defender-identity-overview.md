@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 50415962698802fc263ffb8766a4db3651ff6c9e
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: a87b890191861677db604050814dd89fb39a93fc
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247968"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568842"
 ---
 # <a name="evaluate-microsoft-defender-for-identity-overview"></a>Microsoft Defender for Identity の概要を評価する
 
@@ -39,7 +39,7 @@ ms.locfileid: "58247968"
 
 次の手順を使用して、Microsoft Defender for Identity を有効にしてパイロットします。
 
-![Defender 評価環境に Microsoft Defender for Identity を追加する手順](../../media/defender/m365-defender-identity-eval-steps.png)
+![Microsoft Defender for Identity を Defender 評価環境に追加する手順。](../../media/defender/m365-defender-identity-eval-steps.png)
 
 次の表に、図の手順を示します。
 

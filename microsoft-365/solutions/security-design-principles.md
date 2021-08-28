@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: d0d4fe867664d090359b1a9f7ab13d3ad46497ce8673a9d1615a112bfe8d78ff
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3ce1715baaf9b23fe53d900d67fc378d8fa624bb
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827688"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568206"
 ---
 # <a name="security-hurdles-you-can-sail-overone-architects-viewpoint"></a>セキュリティ上のハードル :1 人の建築家の視点
 
@@ -27,7 +27,7 @@ ms.locfileid: "53827688"
 
 ## <a name="about-the-author"></a>筆者について
 
-![Kozeta Garrett 写真](../media/solutions-architecture-center/kozeta-garrett-security.jpg)
+![Kozeta Garrett 写真。](../media/solutions-architecture-center/kozeta-garrett-security.jpg)
 
 クラウド セキュリティ アーキテクトとしての私の役割では、複数の組織と協力して、Microsoft 365 および Azure に移行する顧客向けセキュリティ アーキテクチャの設計と実装、エンタープライズ セキュリティ ソリューションの開発、ビジネスの回復のためのセキュリティ アーキテクチャと文化の変革に焦点を当てた戦略的および技術的なガイダンスを提供しました。 私の経験には、インシデントの検出と対応、マルウェア分析、侵入テスト、IT セキュリティと防御態勢の改善の推奨が含まれます。 最新化の取り組みを含め、ビジネスのイナバーとしてセキュリティにつながる主要な変革に非常に熱心です。
 

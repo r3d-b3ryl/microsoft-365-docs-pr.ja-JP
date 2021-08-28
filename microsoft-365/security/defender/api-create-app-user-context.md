@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4c2b33a319b98215241f13f80adc8e2e1cc849a02c6044b939465adead69e683
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6f80c0edeeb0d05287dc43aa9e3dea906504ac4e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53888990"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568122"
 ---
 # <a name="create-an-app-to-access-microsoft-365-defender-apis-on-behalf-of-a-user"></a>ユーザーに代わって API にMicrosoft 365 Defenderするアプリを作成する
 
@@ -68,11 +68,11 @@ Microsoft 365 Defender一連のプログラム API を使用して、そのデ�
 
 2. [アプリの **登録Azure Active Directory**  >  **新しい登録]**  >  **に移動します**。
 
-   ![アプリケーション登録Microsoft Azureナビゲーションのイメージ](../../media/atp-azure-new-app2.png)
+   ![アプリケーションの登録Microsoft Azureナビゲーションのイメージ。](../../media/atp-azure-new-app2.png)
 
 3. フォームで、アプリケーションの名前を選択し、リダイレクト URI の次の情報を入力し、[登録] を **選択します**。
 
-   ![[アプリケーションの作成] ウィンドウのイメージ](../../media/nativeapp-create2.PNG)
+   ![[アプリケーションの作成] ウィンドウのイメージ。](../../media/nativeapp-create2.PNG)
 
    - **アプリケーションの種類:** パブリック クライアント
    - **リダイレクト URI:**https://portal.azure.com
@@ -82,11 +82,11 @@ Microsoft 365 Defender一連のプログラム API を使用して、そのデ�
    > [!TIP]
    > *Microsoft Threat Protection* は、元のMicrosoft 365 Defenderの名前であり、元のリストには表示されません。 テキスト ボックスに名前を書き込み始め、表示を確認する必要があります。
 
-   ![API アクセス許可の選択のイメージ](../../media/apis-in-my-org-tab.PNG)
+   ![API アクセス許可の選択のイメージ。](../../media/apis-in-my-org-tab.PNG)
 
    - [ **委任されたアクセス許可] を選択します**。 シナリオに関連するアクセス許可 (インシデント **.読** み取りなど) を選択し、[アクセス許可の追加 **] を選択します**。
 
-   ![API アクセスと API の選択のイメージ](../../media/request-api-permissions-delegated.PNG)
+   ![API アクセスと API の選択のイメージ。](../../media/request-api-permissions-delegated.PNG)
 
     > [!NOTE]
     > シナリオに関連するアクセス許可を選択する必要があります。 *すべてのインシデントの読み取り* は、単なる例です。 必要なアクセス許可を決定するには、呼び出す API の **[** アクセス許可] セクションを参照してください。
@@ -95,11 +95,11 @@ Microsoft 365 Defender一連のプログラム API を使用して、そのデ�
 
 5. [管理者 **の同意を付与する] を選択します**。 アクセス許可を追加する度に、[管理者の同意 **を付与** する] を選択して有効に設定する必要があります。
 
-   ![アクセス許可の付与のイメージ](../../media/grant-consent-delegated.PNG)
+   ![アクセス許可の付与のイメージ。](../../media/grant-consent-delegated.PNG)
 
 6. アプリケーション ID とテナント ID を安全な場所に記録します。 アプリケーション ページの [概要] **に** 一覧表示されます。
 
-   ![作成されたアプリ ID のイメージ](../../media/app-and-tenant-ids.png)
+   ![作成されたアプリ ID のイメージ。](../../media/app-and-tenant-ids.png)
 
 ## <a name="get-an-access-token"></a>アクセス トークンを取得する
 
@@ -130,7 +130,7 @@ $response.AccessToken
 
 次の図では、アプリから取得したデコードトークンと、アクセス許可 ```Incidents.Read.All``` ```Incidents.ReadWrite.All``` を ```AdvancedHunting.Read.All``` 表示できます。
 
-![トークン検証のイメージ](../../media/webapp-decoded-token.png)
+![トークン検証のイメージ。](../../media/webapp-decoded-token.png)
 
 ## <a name="use-the-token-to-access-the-microsoft-365-defender-api"></a>トークンを使用して API にアクセスMicrosoft 365 Defenderする
 

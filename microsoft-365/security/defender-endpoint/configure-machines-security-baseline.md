@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d0f2d14a6005ff067e0c46d7bc582199ec7d2e4fbf7112705e7acebd4891dbf5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 907925669176135944f2327c39ac86ed823a9fd9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53894519"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568650"
 ---
 # <a name="increase-compliance-to-the-microsoft-defender-for-endpoint-security-baseline"></a>Microsoft Defender for Endpoint セキュリティ ベースラインへのコンプライアンスを強化する
 
@@ -31,7 +31,7 @@ ms.locfileid: "53894519"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
 セキュリティ ベースラインは、セキュリティ専門家とシステム管理者の専門家の両方からのガイダンスに従ってセキュリティ機能がWindowsします。 展開すると、Defender for Endpoint セキュリティ ベースラインは、最適な保護を提供するために Defender for Endpoint セキュリティ コントロールを設定します。
 
@@ -58,7 +58,7 @@ Windows Intune のセキュリティ ベースラインには、ブラウザー�
 
 デバイス **構成管理の** セキュリティ [](configure-machines.md)基準カードは、Defender for Endpoint セキュリティ ベースラインが割り当てられているWindows 10デバイス全体のコンプライアンスの概要を示します。
 
-![セキュリティ ベースライン カード](images/secconmgmt_baseline_card.png)
+![セキュリティ ベースライン カード。](images/secconmgmt_baseline_card.png)
 
 *Defender for Endpoint セキュリティ ベースラインへの準拠を示すカード*
 
@@ -85,22 +85,22 @@ Windows Intune のセキュリティ ベースラインには、ブラウザー�
 
 2. 新しいプロファイルを作成します。
 
-   ![Intune の Microsoft Defender for Endpoint セキュリティ ベースラインの概要](images/secconmgmt_baseline_intuneprofile1.png)<br>
+   ![Intune の Microsoft Defender for Endpoint セキュリティ ベースラインの概要。](images/secconmgmt_baseline_intuneprofile1.png)<br>
    *Intune の Microsoft Defender for Endpoint セキュリティ ベースラインの概要*
 
 3. プロファイルの作成中に、基準計画の特定の設定を確認および調整できます。
 
-   ![Intune でのプロファイル作成時のセキュリティ基準オプション](images/secconmgmt_baseline_intuneprofile2.png)<br>
+   ![Intune でのプロファイル作成時のセキュリティ 基準のオプション。](images/secconmgmt_baseline_intuneprofile2.png)<br>
    *Intune でのプロファイル作成時のセキュリティ基準オプション*
 
 4. プロファイルを適切なデバイス グループに割り当てる。
 
-   ![Intune のセキュリティ ベースライン プロファイル](images/secconmgmt_baseline_intuneprofile3.png)<br>
+   ![Intune のセキュリティ ベースライン プロファイル。](images/secconmgmt_baseline_intuneprofile3.png)<br>
    *Intune でのセキュリティ 基準プロファイルの割り当て*
 
 5. プロファイルを作成して保存し、割り当てられたデバイス グループに展開します。
 
-   ![Intune でのセキュリティ 基準の割り当て](images/secconmgmt_baseline_intuneprofile4.png)<br>
+   ![Intune でセキュリティ 基準を割り当てる。](images/secconmgmt_baseline_intuneprofile4.png)<br>
    *Intune でのセキュリティ ベースライン プロファイルの作成*
 
 > [!TIP]
@@ -108,7 +108,7 @@ Windows Intune のセキュリティ ベースラインには、ブラウザー�
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [デバイスが正しく構成されていることを確認する](configure-machines.md)
 - [Microsoft Defender for Endpoint にオンボードされているデバイスを取得する](configure-machines-onboarding.md)

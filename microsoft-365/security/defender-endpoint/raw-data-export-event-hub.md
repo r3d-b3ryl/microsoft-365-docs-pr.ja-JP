@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 613ed8427f5068ab9a2709b68e5a6bf5586676a9f9fb36383b772458f16f3332
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d0e872390fbcc80a7427c28b2a7cdf5382ac839c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53845048"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570007"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-azure-event-hubs"></a>Azure イベント ハブに高度なハンティング イベントをストリーミングするように Microsoft Defender for Endpoint を構成する
 
@@ -33,7 +33,7 @@ ms.locfileid: "53845048"
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configuresiem-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configuresiem-abovefoldlink)
 
 ## <a name="before-you-begin"></a>はじめに
 
@@ -57,7 +57,7 @@ ms.locfileid: "53845048"
 
    Event Hubs リソース ID を取得するには、Azure の [プロパティ] タブの [[Azure](https://ms.portal.azure.com/) Event **Hubs** 名前空間] ページ>[リソース ID] の下のテキストを \> **コピーします**。
 
-   ![イベント ハブ リソース Id1 のイメージ](images/event-hub-resource-id.png)
+   ![イベント ハブ リソース Id1 のイメージ。](images/event-hub-resource-id.png)
 
 7. ストリーミングするイベントを選択し、[保存] を **クリックします**。
 
@@ -101,9 +101,9 @@ ms.locfileid: "53845048"
 
 - デバイス情報イベントの例を次に示します。
 
-  ![イベント ハブ リソース Id2 のイメージ](images/machine-info-datatype-example.png)
+  ![イベント ハブ リソース Id2 のイメージ。](images/machine-info-datatype-example.png)
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [高度なハンティングの概要](advanced-hunting-overview.md)
 - [エンドポイント ストリーミング API 用 Microsoft Defender](raw-data-export.md)

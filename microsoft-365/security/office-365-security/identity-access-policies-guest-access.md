@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: cfcbe9f330940f32ffff605bf4c2aa17689611e8af26e8f41b8ce10915c6a8d8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 719b754e8e3486c281b23f4c38c7e33f548b118c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53805286"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569863"
 ---
 # <a name="policies-for-allowing-guest-access-and-b2b-external-user-access"></a>ゲスト アクセスと B2B 外部ユーザー アクセスを許可するポリシー
 
@@ -38,11 +38,11 @@ B2B アカウントが Azure ADテナントで認証するためのパスを提�
 
 次の図は、B2B ゲスト および外部ユーザー アクセスの共通 ID およびデバイス アクセス ポリシー間で追加または更新するポリシーを示しています。
 
-[![ゲスト アクセスを保護するためのポリシー更新プログラムの概要](../../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png)
+[![ゲスト アクセスを保護するためのポリシー更新プログラムの概要。](../../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png)
 
 次の表に、作成および更新する必要があるポリシーを示します。 共通ポリシーは、「共通 ID とデバイス アクセス ポリシー」の記事に関連付けられた構成 [手順にリンク](identity-access-policies.md) します。
 
-|保護レベル|ポリシー|詳細|
+|保護レベル|ポリシー|詳細情報|
 |---|---|---|
 |**Baseline**|[ゲストと外部ユーザーに対して常に MFA を要求する](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|この新しいポリシーを作成し、次の構成を行います。 <ul><li>[**割り>ユーザー** とグループ>含める] で、[ユーザーとグループの選択] を選択し、[すべてのゲストユーザーと外部ユーザー **] を選択します**。</li><li>[ **割り>条件**>サインイン] で、多要素認証 (MFA) を常に適用するには、すべてのオプションをオフのままにします。</li></ul>|
 ||[サインイン リスクが中程度または高の場合に MFA *を* 要求 *する*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|ゲストと外部ユーザーを除外するには、このポリシーを変更します。|
@@ -50,9 +50,9 @@ B2B アカウントが Azure ADテナントで認証するためのパスを提�
 
 条件付きアクセス ポリシーにゲストと外部ユーザーを含めるか除外するには、[割り当て] > [ユーザーとグループ] > [含める] または **[** 除外] で、[すべてのゲストユーザーと外部ユーザー] をチェック **します**。
 
-![ゲストと外部ユーザーを除外するコントロールの画面キャプチャ](../../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png)
+![ゲストと外部ユーザーを除外するコントロールの画面キャプチャ。](../../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png)
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 ### <a name="guests-and-external-user-access-with-microsoft-teams"></a>ゲストと外部ユーザー アクセス (Microsoft Teams
 
@@ -82,7 +82,7 @@ Teams の ID およびデバイス アクセス ポリシーのセキュリテ�
 
 ## <a name="next-step"></a>次の手順
 
-![手順 4: クラウド アプリMicrosoft 365ポリシー Microsoft Cloud App Security](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+![手順 4: クラウド アプリとMicrosoft 365のポリシー Microsoft Cloud App Security。](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 
 次の条件付きアクセス ポリシーを構成します。
 

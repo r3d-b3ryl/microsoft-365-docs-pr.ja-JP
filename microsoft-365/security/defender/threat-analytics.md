@@ -21,12 +21,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: da726aeaf82f13cef862b105e951f28c9fdf80e3
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 43b15b8fb43a06fa56e18c735868058fcfd6d24f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533053"
+ms.locfileid: "58568554"
 ---
 # <a name="track-and-respond-to-emerging-threats-with-threat-analytics-in-microsoft-365-defender"></a>脅威分析を使用して、新たな脅威を追跡し、Microsoft 365 Defender 
 
@@ -54,7 +54,7 @@ ms.locfileid: "58533053"
 
 脅威分析には、Microsoft 365 セキュリティ ポータルのナビゲーション バーの左上から、または組織の上位脅威を示す専用のダッシュボード カードからアクセスできます。アクティブなキャンペーンや進行中のキャンペーンを可視化し、脅威分析を通じて何を行うのかを知ることにより、セキュリティ運用チームに情報に基づいた意思決定を行う際に役立ちます。 
 
-![脅威分析ダッシュボードのイメージ](../../media/threat-analytics/ta_inlandingpage_mtp.png)
+![脅威分析ダッシュボードのイメージ。](../../media/threat-analytics/ta_inlandingpage_mtp.png)
 
 _脅威分析にアクセスする場所_
 
@@ -78,7 +78,7 @@ _脅威分析にアクセスする場所_
 
 ダッシュボードから脅威を選択して、その脅威のレポートを表示します。
 
-![脅威分析ダッシュボードのスクリーンショット](../../media/threat-analytics/ta_dashboard_mtp.png)
+![脅威分析ダッシュボードのスクリーンショット。](../../media/threat-analytics/ta_dashboard_mtp.png)
 
 _脅威分析ダッシュボード。検索アイコンをクリックして、読み取る脅威分析レポートに関連するキーワードをキー設定することもできます。_ 
 
@@ -97,7 +97,7 @@ _脅威分析ダッシュボード。検索アイコンをクリックして、�
 
 [ **概要]** セクションには、詳細なアナリスト レポートのプレビューが表示されます。 また、組織に対する脅威の影響と、構成が正しく設定されていないデバイスや未パッチのデバイスによる露出を強調するグラフも提供されます。
 
-![脅威分析レポートの概要セクションのイメージ](../../media/threat-analytics/ta_overview_mtp.png)
+![脅威分析レポートの概要セクションのイメージ。](../../media/threat-analytics/ta_overview_mtp.png)
 
 _脅威分析レポートの概要セクション_
 
@@ -138,15 +138,15 @@ Microsoft Threat Intelligence チームは、各脅威レポートに脅威タ�
   - アクティビティ グループ
 - 脅威タグは、脅威分析ページの上部に表示され、各タグの下で使用可能なレポート数のカウンターが表示されます。
 
-  ![脅威タグ](../../media/threat-analytics/ta-threattags-mtp.png)
+  ![脅威タグ。](../../media/threat-analytics/ta-threattags-mtp.png)
 
 - リストは、脅威タグで並べ替えすることもできます。
 
-  ![lists](../../media/threat-analytics//ta-taglist-mtp.png)
+  ![リスト。](../../media/threat-analytics//ta-taglist-mtp.png)
 
 - フィルターは、脅威タグとレポートの種類ごとに使用できます。
 
-  ![フィルター](../../media/threat-analytics/ta-threattag-filters-mtp.png)
+  ![フィルター。](../../media/threat-analytics/ta-threattag-filters-mtp.png)
 
 ### <a name="analyst-report-get-expert-insight-from-microsoft-security-researchers"></a>アナリスト レポート: Microsoft セキュリティ研究者から専門家の分析情報を取得する
 
@@ -159,7 +159,7 @@ Microsoft Threat Intelligence チームは、各脅威レポートに脅威タ�
 [ **関連インシデント] タブ** には、追跡された脅威に関連するすべてのインシデントの一覧が表示されます。 インシデントを割り当てるか、各インシデントにリンクされたアラートを管理できます。 
 
 
-![脅威分析レポートの関連インシデント セクションのイメージ](../../media/threat-analytics/ta_related_incidents_mtp.png)
+![脅威分析レポートの関連インシデント セクションのイメージ。](../../media/threat-analytics/ta_related_incidents_mtp.png)
 
 _脅威分析レポートの関連インシデント セクション_
 
@@ -170,7 +170,7 @@ _脅威分析レポートの関連インシデント セクション_
 - **影響を受け**、Microsoft Defender for Endpoint アラートが未解決のエンドポイント。 これらのアラートは、通常、既知の脅威インジケーターとアクティビティの目撃情報に対して発生します。
 - **影響を受けたメールボックス**—Microsoft Defender が警告を受け取った電子メール メッセージを受信したメールボックスOffice 365します。 通常、アラートをトリガーするほとんどのメッセージはブロックされますが、ユーザーレベルまたは組織レベルのポリシーはフィルターを上書きできます。
 
-![脅威分析レポートの影響を受け取ったアセット セクションのイメージ](../../media/threat-analytics/ta_impacted_assets_mtp.png)
+![脅威分析レポートの影響を受け取ったアセット セクションのイメージ。](../../media/threat-analytics/ta_impacted_assets_mtp.png)
 
 _脅威分析レポートの影響を受け取ったアセット セクション_
 
@@ -180,7 +180,7 @@ Microsoft Defender for Office 365、悪意のあるリンクや添付ファイ�
 
 [**メールの試行を** 防止する] タブには、配信前にブロックされたメール、または Microsoft Defender によって迷惑メール フォルダーに送信されたメールOffice 365。 
 
-![脅威分析レポートの [電子メール試行の防止] セクションのイメージ](../../media/threat-analytics/ta_prevented_email_attempts_mtp.png)
+![脅威分析レポートの [電子メール試行の防止] セクションのイメージ。](../../media/threat-analytics/ta_prevented_email_attempts_mtp.png)
 
 _脅威分析レポートの [メールの試行の防止] セクション_
 
@@ -196,9 +196,9 @@ _脅威分析レポートの [メールの試行の防止] セクション_
 
 このセクションの軽減情報には、脅威と脆弱性の管理からの[](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)データが組み込まれており、レポート内のさまざまなリンクからの詳細なドリルダウン情報も提供します。
 
-![セキュリティで保護された構成の詳細を示す脅威分析レポートの軽減セクションのイメージ](../../media/threat-analytics/ta_mitigations_mtp.png)
+![セキュリティで保護された構成の詳細を示す脅威分析レポートの軽減セクションのイメージ。](../../media/threat-analytics/ta_mitigations_mtp.png)
 
-![脆弱性の詳細を示す脅威分析レポートの軽減セクションの画像](../../media/threat-analytics/ta_mitigations_mtp2.png)
+![脆弱性の詳細を示す脅威分析レポートの軽減セクションのイメージ。](../../media/threat-analytics/ta_mitigations_mtp2.png)
 
 _脅威分析レポートの [軽減策] セクション_
 

@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 0de5817d4eb741885be6e43133b0886e90488bd4af04699a8c9dd970fbae8491
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a247aac370ba65e4ede48b0232ded1d93f6e8b99
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53793336"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568890"
 ---
 # <a name="microsoft-defender-antivirus-in-the-windows-security-app"></a>Microsoft Defender ウイルス対策アプリでWindows セキュリティする
 
@@ -45,7 +45,7 @@ ms.locfileid: "53793336"
 
 ## <a name="review-virus-and-threat-protection-settings-in-the-windows-security-app"></a>アプリでウイルスと脅威保護の設定をWindows セキュリティする
 
-:::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="アプリのウイルスと脅威のWindows セキュリティ設定":::
+:::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="アプリ内のウイルスおよび脅威Windows セキュリティ設定。":::
 
 1. タスク バーのWindows セキュリティをクリックするか、Defender のスタート メニューを検索して、アプリを開 **きます**。
 
@@ -66,7 +66,7 @@ ms.locfileid: "53793336"
 
 ## <a name="review-the-security-intelligence-update-version-and-download-the-latest-updates-in-the-windows-security-app"></a>セキュリティ インテリジェンス更新プログラムのバージョンを確認し、最新の更新プログラムをアプリでWindows セキュリティする
 
-:::image type="content" source="../../media/wdav-wdsc-defs.png" alt-text="セキュリティ インテリジェンスのバージョン番号":::
+:::image type="content" source="../../media/wdav-wdsc-defs.png" alt-text="セキュリティ インテリジェンスのバージョン番号。":::
 
 1. [セキュリティ] Windows セキュリティスタート メニューを検索し、[セキュリティ]を選択して、アプリを開 **Windows セキュリティ。**
 
@@ -106,8 +106,8 @@ ms.locfileid: "53793336"
 
 |除外の種類  |によって定義される  |動作  |
 |---------|---------|---------|
-|**ファイル** |場所 <br/>例: `c:\sample\sample.test` |特定のファイルは、特定のファイルによってMicrosoft Defender ウイルス対策。 |
-|**Folder**    |場所 <br/>例: `c:\test\sample`       |指定したフォルダー内のすべてのアイテムは、指定されたフォルダー Microsoft Defender ウイルス対策。         |
+|**ファイル** |Location <br/>例: `c:\sample\sample.test` |特定のファイルは、特定のファイルによってMicrosoft Defender ウイルス対策。 |
+|**Folder**    |Location <br/>例: `c:\test\sample`       |指定したフォルダー内のすべてのアイテムは、指定されたフォルダー Microsoft Defender ウイルス対策。         |
 |**ファイルの種類**   |ファイル拡張子 <br/>例: `.test` |デバイス上の任意 `.test` の場所に拡張子を持つすべてのファイルは、Microsoft Defender ウイルス対策。         |
 |**プロセス**     |実行可能ファイルのパス <br>例: `c:\test\process.exe`         |特定のプロセスと、そのプロセスによって開くファイルは、そのプロセスによってスキップMicrosoft Defender ウイルス対策。         |
 

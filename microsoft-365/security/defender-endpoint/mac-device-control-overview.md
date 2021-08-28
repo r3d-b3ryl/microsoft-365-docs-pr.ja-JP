@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 40f783e8a99ef5bcbd3db516f65ff43812e83091fe93ace49562f5b45926afd1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6f24a610e82388cead88b68e33b76c6404d68ec9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53868428"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570031"
 ---
 # <a name="device-control-for-macos"></a>macOS のデバイスコントロール
 
@@ -35,7 +35,7 @@ ms.locfileid: "53868428"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要件
 
 macOS のデバイスコントロールには、次の前提条件があります。
 
@@ -55,7 +55,7 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 |Section|値|
 |:---|:---|
 | **ドメイン** | `com.microsoft.wdav` |
-| **キー** | deviceControl |
+| **Key** | deviceControl |
 | **データ型** | 辞書 (入れ子になった基本設定) |
 | **コメント** | 辞書の内容の説明については、以下のセクションを参照してください。 |
 
@@ -68,14 +68,14 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 
 配置したデバイスコントロール ポリシーがデバイスに適用されている場合 (リムーバブル メディア デバイスへのアクセスが制限されているなど)、ユーザーに通知が表示されます。
 
-![デバイス制御通知](images/mac-device-control-notification.png)
+![デバイス制御の通知。](images/mac-device-control-notification.png)
 
 エンド ユーザーがこの通知をクリックすると、既定のブラウザーで Web ページが開きます。 エンド ユーザーが通知をクリックするときに開く URL を構成できます。
 
 |Section|値|
 |:---|:---|
 | **ドメイン** | `com.microsoft.wdav` |
-| **キー** | navigationTarget |
+| **Key** | navigationTarget |
 | **データ型** | String |
 | **コメント** | 定義されていない場合、製品は、製品が実行したアクションを説明する汎用ページを指す既定の URL を使用します。 |
 
@@ -89,7 +89,7 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 |Section|値|
 |:---|:---|
 | **ドメイン** | `com.microsoft.wdav` |
-| **キー** | removableMediaPolicy |
+| **Key** | removableMediaPolicy |
 | **データ型** | 辞書 (入れ子になった基本設定) |
 | **コメント** | 辞書の内容の説明については、以下のセクションを参照してください。 |
 
@@ -125,7 +125,7 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 |Section|値|
 |:---|:---|
 | **ドメイン** | `com.microsoft.wdav` |
-| **キー** | enforcementLevel |
+| **Key** | enforcementLevel |
 | **データ型** | String |
 | **指定可能な値** | 監査 (既定) <br/> block |
 
@@ -150,7 +150,7 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 |Section|値|
 |:---|:---|
 | **ドメイン** | `com.microsoft.wdav` |
-| **キー** | アクセス許可 |
+| **Key** | アクセス許可 |
 | **データ型** | 文字列の配列 |
 | **指定可能な値** | none <br/> read <br/> write <br/> execute |
 
@@ -165,7 +165,7 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 |Section|値|
 |:---|:---|
 | **ドメイン** | `com.microsoft.wdav` |
-| **キー** | ベンダー |
+| **Key** | ベンダー |
 | **データ型** | 辞書 (入れ子になった基本設定) |
 
 ベンダーごとに、そのベンダーのデバイスに必要なアクセス許可レベルを指定できます。
@@ -173,7 +173,7 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 |Section|値|
 |:---|:---|
 | **ドメイン** | `com.microsoft.wdav` |
-| **キー** | アクセス許可 |
+| **Key** | アクセス許可 |
 | **データ型** | 文字列の配列 |
 | **指定可能な値** | 既定のアクセス [許可レベルと同じ](#default-permission-level) |
 
@@ -182,7 +182,7 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 |Section|値|
 |:---|:---|
 | **ドメイン** | `com.microsoft.wdav` |
-| **キー** | 製品 |
+| **Key** | 製品 |
 | **データ型** | 辞書 (入れ子になった基本設定) |
 
 製品ごとに、その製品の目的のアクセス許可レベルを指定できます。
@@ -190,7 +190,7 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 |Section|値|
 |:---|:---|
 | **ドメイン** | `com.microsoft.wdav` |
-| **キー** | アクセス許可 |
+| **Key** | アクセス許可 |
 | **データ型** | 文字列の配列 |
 | **指定可能な値** | 既定のアクセス [許可レベルと同じ](#default-permission-level) |
 
@@ -201,7 +201,7 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 |Section|値|
 |:---|:---|
 | **ドメイン** | `com.microsoft.wdav` |
-| **キー** | serialNumbers |
+| **Key** | serialNumbers |
 | **データ型** | 辞書 (入れ子になった基本設定) |
 
 シリアル番号ごとに、目的のアクセス許可レベルを指定できます。
@@ -209,7 +209,7 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 |Section|値|
 |:---|:---|
 | **ドメイン** | `com.microsoft.wdav` |
-| **キー** | アクセス許可 |
+| **Key** | アクセス許可 |
 | **データ型** | 文字列の配列 |
 | **指定可能な値** | 既定のアクセス [許可レベルと同じ](#default-permission-level) |
 
@@ -287,19 +287,19 @@ USB デバイスのベンダー ID、製品 ID、シリアル番号を確認す�
 1. 識別子を参照する USB デバイスを接続します。
 1. macOS のトップ レベル メニューで、[この Mac について **] を選択します**。
 
-    ![この Mac について](images/mac-device-control-lookup-1.png)
+    ![この Mac について。](images/mac-device-control-lookup-1.png)
 
 1. [システム **レポート] を選択します**。
 
-    ![システム レポート](images/mac-device-control-lookup-2.png)
+    ![システム レポート。](images/mac-device-control-lookup-2.png)
 
 1. 左側の列から **[USB] を選択します**。
 
-    ![すべての USB デバイスの表示](images/mac-device-control-lookup-3.png)
+    ![すべての USB デバイスの表示。](images/mac-device-control-lookup-3.png)
 
 1. [USB **デバイス ツリー]** で、接続した USB デバイスに移動します。
 
-    ![USB デバイスの詳細](images/mac-device-control-lookup-4.png)
+    ![USB デバイスの詳細。](images/mac-device-control-lookup-4.png)
 
 1. ベンダー ID、製品 ID、シリアル番号が表示されます。 ベンダー ID と製品 ID をリムーバブル メディア ポリシーに追加する場合は、後にパーツを追加する必要があります `0x` 。 たとえば、次の図では、ベンダー ID は、 `1000` 製品 ID は `090c` です。
 
@@ -348,7 +348,7 @@ mdatp device-control removable-media devices list
 
 上記の例では、デバイスに配信されたデバイス制御ポリシーに従って、接続されているリムーバブル メディア デバイスが 1 つしか接続され、アクセス許可が `read` `execute` 付与されています。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [Intune のデバイス制御ポリシーの例](mac-device-control-intune.md)
 - [JAMF のデバイス制御ポリシーの例](mac-device-control-jamf.md)

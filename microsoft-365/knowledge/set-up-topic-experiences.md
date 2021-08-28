@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: ユーザー設定のMicrosoft Viva トピック
-ms.openlocfilehash: fedf5efd6021dc425dcd7c26666edb66b1b780d6
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: fc5647b65a62afdff55c22b8a8b5526a7ddfa14a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502773"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568698"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>設定Microsoft Viva トピック
 
@@ -53,7 +53,7 @@ ms.locfileid: "58502773"
 4. [**アプリ]** で、[コネクタGraphインデックス付き検索 **(Viva Topics)** と **Viva Topics** の両方が選択されている必要があります。
 
    > [!div class="mx-imgBorder"]
-   > ![Microsoft Viva トピックのライセンスのMicrosoft 365 管理センター](../media/topic-experiences-licenses.png)
+   > ![Microsoft Viva トピックのライセンスをMicrosoft 365 管理センター。](../media/topic-experiences-licenses.png)
 
 5. **[変更の保存]** をクリックします。
 
@@ -68,11 +68,11 @@ ms.locfileid: "58502773"
 1. [ファイル] [Microsoft 365 管理センター[](https://admin.microsoft.com)**セットアップ**] を選択し、[ファイルとコンテンツ]**セクションを表示** します。
 2. [ファイルと **コンテンツ] セクションで**、[ユーザーに **Connect] をクリックします**。
 
-    ![Connectを知る](../media/admin-org-knowledge-options.png) 
+    ![Connect人に知識を提供します。](../media/admin-org-knowledge-options.png) 
 
 3. [ユーザー **をConnect] ページで**、[スタート]**を** クリックしてセットアップ プロセスを説明します。
 
-    ![作業の開始](../media/k-get-started.png) 
+    ![開始します。](../media/k-get-started.png) 
 
 4. [ビバ **トピックの検索方法の選択] ページ** で、トピックの検出を構成します。 [トピック **ソースSharePoint選択**] セクションで、検出時にトピックSharePointとしてクロールするサイトを選択します。 次から選択します。
     - **すべてのサイト**: 組織内のすべての SharePoint サイト。 これには、現在と今後のサイトが含まれます。
@@ -80,13 +80,13 @@ ms.locfileid: "58502773"
     - **選択したサイトのみ**: 含めるサイトの名前を入力します。 サイトのリストをアップロードできます。 今後作成されるサイトは、トピック検出のソースとして含められません。
     - **サイトなし**: SharePoint サイトを含めない。
 
-    ![トピックの検索方法を選択する](../media/ksetup1.png) 
+    ![トピックの検索方法を選択します。](../media/ksetup1.png) 
    
 5. [名前 **でトピックを除外する** ] セクションで、トピックの検出から除外するトピックの名前を追加できます。 機密情報がトピックとして含まれるのを防ぐには、この設定を使用します。 以下のオプションがあります:
     - **トピックを除外しない** 
     - **トピックを名前で除外する**
 
-    ![トピックを除外する](../media/topics-excluded-by-name.png) 
+    ![トピックを除外します。](../media/topics-excluded-by-name.png) 
 
     (ナレッジ マネージャーは、検出後にトピック センターのトピックを除外できます)。
 
@@ -94,7 +94,7 @@ ms.locfileid: "58502773"
 
     トピックを除外する必要がある場合は、[名前でトピックを除外する] を選択した後、.csv テンプレートをダウンロードし、検出結果から除外するトピックの一覧で更新します。
 
-    ![CSV テンプレートのトピックを除外する](../media/exclude-topics-csv.png) 
+    ![CSV テンプレートのトピックを除外します。](../media/exclude-topics-csv.png) 
 
     CSV テンプレートで、除外するトピックに関する次の情報を入力します。
 
@@ -113,7 +113,7 @@ ms.locfileid: "58502773"
     - **選択したユーザーまたはセキュリティ グループのみ**
     - **だれも**
 
-    ![Whoトピックを表示する](../media/ksetup2.png)  
+    ![Whoトピックを表示できます。](../media/ksetup2.png)  
 
     > [!Note] 
     > この設定では組織内の任意のユーザーを選択することができますが、トピック エクスペリエンス ライセンスが割り当てられているユーザーだけがトピックを表示できます。
@@ -123,13 +123,13 @@ ms.locfileid: "58502773"
     - **選択したユーザーまたはセキュリティ グループのみ**
     - **だれも**
 
-    ![トピック管理のアクセス許可(トピックを作成および編集できるユーザー)](../media/ksetup3.png) 
+    ![トピックを作成および編集できるトピック管理のアクセス許可。](../media/ksetup3.png) 
 
 8. [トピックWho **管理する] セクションで**、次の項目を選択できます。
     - **組織内のすべてのユーザー**
     - **選択したユーザーまたはセキュリティ グループのみ**
 
-    ![トピック管理のアクセス許可](../media/km-setup-create-edit-topics.png) 
+    ![トピック管理のアクセス許可。](../media/km-setup-create-edit-topics.png) 
 
     **[次へ]** を選択します。
 
@@ -140,7 +140,7 @@ ms.locfileid: "58502773"
 
    **[次へ]** を選択します。
 
-   ![ナレッジ センターの作成](../media/ksetup4.png)  
+   ![ナレッジ センターを作成します。](../media/ksetup4.png)  
 
 10. [ **確認と完了**] ページで、選択した設定を確認して、変更を行うことができます。 選択内容に問題がない場合は、[**ライセンス認証**]を行います。
 
@@ -148,7 +148,7 @@ ms.locfileid: "58502773"
 
 12. ユーザーからナレッジ ページにConnect **返** されます。 このページでは、[ **管理** ] を選択して、構成設定に変更を加えることができます。 
 
-    ![設定適用](../media/ksetup7.png)    
+    ![設定適用されます。](../media/ksetup7.png)    
 
 ## <a name="manage-topic-experiences"></a>トピック エクスペリエンスの管理
 

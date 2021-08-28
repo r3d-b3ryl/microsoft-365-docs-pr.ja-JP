@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 150ae09184298cf57887cfb7e9b7efe96a600445ea1a246944e5085b48d9ec0d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3de298100e5a66e53bd34e110c35749e15e58044
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817344"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568602"
 ---
 # <a name="the-analyst-report-in-threat-analytics"></a>脅威分析のアナリスト レポート
 
@@ -36,7 +36,7 @@ ms.locfileid: "53817344"
 
 各 [脅威分析レポートには、](threat-analytics.md) 動的セクションと、アナリスト レポートと呼ばれる包括的な記述セクション _が含まれます_。 このセクションにアクセスするには、追跡された脅威に関するレポートを開き、[アナリスト レポート] タブ **を選択** します。
 
-![脅威分析レポートのアナリスト レポート セクションのイメージ](images/ta-analyst-report-small.png)
+![脅威分析レポートのアナリスト レポート セクションのイメージ。](images/ta-analyst-report-small.png)
 
 _脅威分析レポートのアナリスト レポート セクション_
 
@@ -98,7 +98,7 @@ EDRは、Microsoft Defender for Endpoint にオンボードされている[デ�
 
 アナリスト レポートの高度な検索クエリは、Microsoft アナリストによって確認され、高度な検索クエリ エディターで実行 [する準備が整いました](https://securitycenter.windows.com/advanced-hunting)。 クエリを使用して、将来の一致に関するアラート [をトリガー](custom-detection-rules.md) するカスタム検出ルールを作成することもできます。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [脅威の分析の概要](threat-analytics.md)
 - [高度な検索で脅威を事前に検出する](advanced-hunting-overview.md)

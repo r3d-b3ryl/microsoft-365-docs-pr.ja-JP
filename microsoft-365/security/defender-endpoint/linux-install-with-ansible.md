@@ -2,7 +2,7 @@
 title: Ansible を使用した Linux での Microsoft Defender for Endpoint の展開
 ms.reviewer: ''
 description: Ansible を使用して Microsoft Defender for Endpoint を Linux に展開する方法について説明します。
-keywords: microsoft、 defender、 Microsoft Defender for Endpoint, Linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
+keywords: Microsoft、Defender、Microsoft Defender for Endpoint、Linux、インストール、展開、アンインストール、puppet、ansible、linux、redhat、ubuntu、debian、sles、suse、centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 452a8238499f4c083b24c6ab01a95696334e6081
-ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
+ms.openlocfilehash: 9e06ad5e7ea1db33b50ea3cc4d3fdb2d657f3503
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58372714"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568914"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Ansible を使用した Linux での Microsoft Defender for Endpoint の展開
 
@@ -34,9 +34,9 @@ ms.locfileid: "58372714"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-この記事では、Ansible を使用して Defender for Endpoint を Linux に展開する方法について説明します。 展開が成功するには、次のすべてのタスクを完了する必要があります。
+この記事では、Ansible を使用して Defender for Endpoint を Linux に展開する方法について説明します。 展開を成功させるには、次のすべてのタスクを完了する必要があります。
 
 - [オンボーディング パッケージをダウンロードする](#download-the-onboarding-package)
 - [Ansible YAML ファイルの作成](#create-ansible-yaml-files)
@@ -71,15 +71,15 @@ ms.locfileid: "58372714"
 
 ## <a name="download-the-onboarding-package"></a>オンボーディング パッケージをダウンロードする
 
-オンボーディング パッケージを次のポータルからMicrosoft 365 Defenderします。
+Microsoft 365 Defender ポータルからオンボーディング パッケージをダウンロードします。
 
 1. [Microsoft 365 Defender] ポータルで、[デバイス管理設定 >オンボーディング>**エンドポイント>移動します**。
-2. 最初のドロップダウン メニューで、オペレーティング システム **として [Linux Server]** を選択します。 2 番目のドロップダウン メニューで、展開 **方法として [優先する Linux 構成管理ツール** ] を選択します。
-3. [オンボード **パッケージのダウンロード] を選択します**。 ファイルを [ファイル名] WindowsDefenderATPOnboardingPackage.zip。
+2. 最初のドロップダウン メニューで、オペレーティング システムとして **[Linux サーバー]** を選択します。 2 番目のドロップダウン メニューで、展開 **方法として [優先する Linux 構成管理ツール** ] を選択します。
+3. **[オンボーディング パッケージをダウンロードする]** を選択します。 ファイルを WindowsDefenderATPOnboardingPackage.zip として保存します。
 
-    ![Microsoft 365 Defenderポータルのスクリーンショット](images/portal-onboarding-linux-2.png)
+    ![Microsoft 365 Defenderのスクリーンショットを参照してください。](images/portal-onboarding-linux-2.png)
 
-4. コマンド プロンプトから、ファイルが存在するように確認します。 アーカイブの内容を抽出します。
+4. コマンド プロンプトから、ファイルがあることを確認します。 アーカイブの内容を抽出します。
 
     ```bash
     ls -l
@@ -129,21 +129,21 @@ ms.locfileid: "58372714"
 
 - Defender for Endpoint リポジトリとキーを追加します `add_apt_repo.yml` 。
 
-    Defender for Endpoint on Linux は、以下のいずれかのチャネル *([channel]* と示す) から展開できます。insiders-fast *、insiders-slow、**または prod* です。 これらの各チャネルは、Linux ソフトウェア リポジトリに対応します。
+    Linux 用 Defender for Endpoint は、次のチャネル (以下、*[チャネル]* と表記) のいずれかから展開できます: *insiders-fast*、*insiders-slow*、または *prod*。これらの各チャネルは、Linux ソフトウェア リポジトリに対応しています。
 
-    チャネルの選択によって、デバイスに提供される更新プログラムの種類と頻度が決されます。 *insiders-fast* のデバイスは、更新プログラムと新機能を受け取る最初のデバイスで、後で *insiders-slow* と最後に *prod が続きます*。
+    チャネルの選択により、デバイスに提供される更新プログラムの種類と頻度が決まります。 *insiders-fast* のデバイスが最初に更新プログラムと新機能を受け取り、その後に *insiders-slow*、最後に *prod* が続きます。
 
-    新機能をプレビューし、早期のフィードバックを提供するために、インサイダー高速またはインサイダー低速のいずれかを使用するために、企業の一部のデバイスを構成をお *勧めします*。
+    新機能をプレビューし、早期のフィードバックを提供するために、企業内の一部のデバイスを *insiders-fast* または *insiders-slow* のいずれかを使用するように構成することをお勧めします。
 
     > [!WARNING]
-    > 最初のインストール後にチャネルを切り替える場合は、製品を再インストールする必要があります。 製品チャネルを切り替える: 既存のパッケージをアンインストールし、新しいチャネルを使用するデバイスを再構成し、このドキュメントの手順に従って新しい場所からパッケージをインストールします。
+    > 初期インストール後にチャネルを切り替えるには、製品を再インストールする必要があります。 製品チャネルを切り替えるには: 既存のパッケージをアンインストールし、新しいチャネルを使用するようにデバイスを再構成し、このドキュメントの手順に従って新しい場所からパッケージをインストールします。
 
     配布とバージョンをメモし、その下の最も近いエントリを識別します `https://packages.microsoft.com/config/[distro]/` 。
 
     次のコマンドで *、[distro]* と *[version]* を、特定した情報に置き換える必要があります。
 
     > [!NOTE]
-    > Oracle Linux の場合 *、[distro] を "rhel"* に置き換える。
+    > Oracle Linux の場合、*[ディストリビューション]* を "rhel" に置き換えます。
 
   ```bash
   - name: Add Microsoft APT key
@@ -248,7 +248,7 @@ ms.locfileid: "58372714"
     ```
 
 > [!IMPORTANT]
-> 製品が初めて起動すると、最新のマルウェア対策定義がダウンロードされます。 インターネット接続によっては、数分かかる場合があります。
+> 製品が初めて起動すると、最新のウイルス対策定義がダウンロードされます。 インターネット接続によっては、これには数分かかる場合があります。
 
 - 検証/構成:
 
@@ -265,13 +265,13 @@ ms.locfileid: "58372714"
     ansible-playbook /etc/ansible/playbooks/uninstall_mdatp.yml -i /etc/ansible/hosts
     ```
 
-## <a name="log-installation-issues"></a>ログ インストールの問題
+## <a name="log-installation-issues"></a>インストールの問題をログする
 
-エラー [が発生した場合](linux-resources.md#log-installation-issues) にインストーラーによって作成される自動的に生成されたログを検索する方法の詳細については、「Log installation issues」を参照してください。
+エラーが発生したときにインストーラーによって作成される自動生成されたログを見つける方法の詳細については、「[インストールの問題をログする](linux-resources.md#log-installation-issues)」を参照してください。
 
 ## <a name="operating-system-upgrades"></a>オペレーティング システムのアップグレード
 
-オペレーティング システムを新しいメジャー バージョンにアップグレードする場合は、まず、Linux 上の Defender for Endpoint をアンインストールし、アップグレードをインストールし、最後にデバイス上で Defender for Endpoint on Linux を再構成する必要があります。
+オペレーティング システムを新しいメジャー バージョンにアップグレードするときは、最初に Linux 用 Defender for Endpoint をアンインストールし、アップグレードをインストールしてから、最後にデバイスの Linux 用 Defender for Endpoint を再構成する必要があります。
 
 ## <a name="references"></a>関連情報
 

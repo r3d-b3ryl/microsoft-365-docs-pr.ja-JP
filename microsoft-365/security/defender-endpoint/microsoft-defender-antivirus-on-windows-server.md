@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.date: 08/05/2021
-ms.openlocfilehash: 85e3eea9eb2b19bde7516c91409e73e0747a0523
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: fe4f3dbd85ca71aabfca87cecc6478acdb21ecae
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257582"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568134"
 ---
 # <a name="microsoft-defender-antivirus-on-windows-server"></a>Windows Server 上の Microsoft Defender ウイルス対策
 
@@ -67,7 +67,7 @@ GUI がサーバーにインストールされておらず、インストール�
 
    Windows Server 2016 では、**役割と機能の追加ウィザード** は次のように表示されます。
 
-   ![役割と機能の追加ウィザードで Windows Defender 用 GUI オプションが表示されています](images/server-add-gui.png)
+   ![[ユーザー設定] オプションの GUI を示す役割とWindows Defender追加します。](images/server-add-gui.png)
 
    Windows Server 2019 でも、**役割と機能の追加ウィザード** は同じようになります。
 

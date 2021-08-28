@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configuration Manager を使用してデバイスに構成パッケージを展開し、サービスにオンボードします。
-ms.openlocfilehash: febe5148d6f4a341cd29d3950bc319d36bcfa0a6f0d4a4afe2c4ebb9038613b0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 309f6b7ee396baba0fcec0061d48f062510d7350
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53886344"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569803"
 ---
 # <a name="onboard-windows-10-devices-using-configuration-manager"></a>Configuration Manager を使用した Windows 10 デバイスのオンボード
 
@@ -182,7 +182,7 @@ Value: 0 or 1
 
     失敗した展開 (エラー、要件が満たされていないデバイス、または失敗した状態) がある場合は、デバイスのトラブルシューティングが必要な場合があります。  詳細については、「Microsoft Defender Advanced Threat Protection オンボーディングの問題のトラブルシューティング [」を参照してください](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)。
 
-    ![エラーがない展開が正常に実行されたことを示す Configuration Manager](../media/sccm-deployment.png)
+    ![エラーがない展開が成功した構成マネージャー。](../media/sccm-deployment.png)
 
 ### <a name="check-that-the-devices-are-compliant-with-the-microsoft-365-endpoint-data-loss-prevention-service"></a>デバイスがエンドポイント データ損失防止サービスMicrosoft 365準拠しているを確認する
 
@@ -201,7 +201,7 @@ Value: “1”
 ```
 詳細については[、「2012 R2](/previous-versions/system-center/system-center-2012-R2/gg682139(v=technet.10))Configuration Manager のコンプライアンスSystem Center概要」を参照してください。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [グループ ポリシー Windows 10デバイスのオンボード](dlp-configure-endpoints-gp.md)
 - [モバイル デバイス管理ツールを使用した Windows 10 デバイスのオンボード](dlp-configure-endpoints-mdm.md)
 - [ローカル スクリプトを使用した Windows 10 デバイスのオンボード](dlp-configure-endpoints-script.md)

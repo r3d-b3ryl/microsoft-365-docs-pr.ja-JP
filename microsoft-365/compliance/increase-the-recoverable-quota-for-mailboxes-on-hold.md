@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: アーカイブ メールボックスを有効にし、自動拡張アーカイブを有効にして、メールボックスの回復可能なアイテム フォルダーのサイズを増やMicrosoft 365。
-ms.openlocfilehash: 69e230bae16956e2fc55a2d838cba1ecb85345fe
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: e46575fcf4335b7429db2370012e44957fb07db3
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508012"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567918"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>保留中のメールボックスの回復可能なアイテムのクォータを拡大する
 
@@ -100,11 +100,11 @@ EAC または PowerShell を使用Exchange Online保持ポリシーを作成で�
 
 2. **[新しい保持ポリシー]** ページの **[名前]** に、アイテム保持ポリシーの目的を説明する名前 (例: **MRM Policy for Mailboxes on Hold**) を入力します。 
 
-3. [保持 **タグ] で、[** 追加アイコン **]** ![ をクリックします ](../media/ITPro-EAC-AddIcon.gif) 。
+3. [保持 **タグ] で、[** 追加 **アイコン]** ![ をクリックします ](../media/ITPro-EAC-AddIcon.gif) 。
 
 4. 保持タグの一覧で、手順 1 で作成した回復可能なアイテムの RPT を選択し、**[追加]** をクリックします。
 
-    ![カスタムの [回復可能なアイテム] 保持タグを選択する](../media/eb49866b-bdef-4fcd-a6d9-01607c01249b.png)
+    ![カスタムの回復可能なアイテム保持タグを選択します。](../media/eb49866b-bdef-4fcd-a6d9-01607c01249b.png)
 
 5. アイテム保持ポリシーに追加する保持タグを選択します。たとえば、Default MRM Policy に含まれているのと同じタグを追加します。
 
@@ -114,7 +114,7 @@ EAC または PowerShell を使用Exchange Online保持ポリシーを作成で�
 
     アイテム保持ポリシーにリンクされている保持タグが詳細ウィンドウに表示されることに注目してください。
 
-    ![アイテム保持ポリシーにリンクした保持タグが詳細ウィンドウに表示される](../media/dad1c8f4-9928-4d6d-991a-6f6c5194eceb.png)
+    ![アイテム保持ポリシーにリンクされた保持タグが詳細ウィンドウに表示されます。](../media/dad1c8f4-9928-4d6d-991a-6f6c5194eceb.png)
 
 ### <a name="use-exchange-online-powershell-to-create-a-retention-policy"></a>PowerShell Exchange Online使用してアイテム保持ポリシーを作成する
 

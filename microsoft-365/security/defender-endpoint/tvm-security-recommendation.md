@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: dde4eef3382c3a1c5e22a78b1965c30b46c9749dcb847c707ea418898aa7a3e5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: de94125566985447b10997cd354c7c9aed01630d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863561"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569947"
 ---
 # <a name="security-recommendations---threat-and-vulnerability-management"></a>セキュリティに関する推奨事項 - 脅威と脆弱性の管理
 
@@ -91,9 +91,9 @@ ms.locfileid: "53863561"
 
 役に立つアイコンは、次の点に注意を迅速に呼び出します。
 
-- ![ターゲットに当たる矢印](images/tvm_alert_icon.png) 有効なアラートの可能性
-- ![赤いバグ](images/tvm_bug_icon.png) 関連するパブリックエクスプロイト
-- ![電球](images/tvm_insight_icon.png) 推奨事項の分析情報
+- ![ターゲットに当たる矢印をクリックします。](images/tvm_alert_icon.png) 有効なアラートの可能性
+- ![赤いバグ。](images/tvm_bug_icon.png) 関連するパブリックエクスプロイト
+- ![電球。](images/tvm_insight_icon.png) 推奨事項の分析情報
 
 ### <a name="explore-security-recommendation-options"></a>セキュリティに関する推奨事項のオプションを確認する
 

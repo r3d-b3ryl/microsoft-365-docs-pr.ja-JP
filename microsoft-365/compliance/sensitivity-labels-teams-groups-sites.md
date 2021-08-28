@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを使用して、SharePoint サイト、Microsoft Teams サイト、Microsoft 365 グループのコンテンツを保護します。
-ms.openlocfilehash: 8c78cf0f8ff49d2b81533e064a16089d8fe75d15
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: edd6aea4aade2378a195aa471ba0aa329afb7582
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400405"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569035"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>秘密度ラベルを使用して、Microsoft Teams、Microsoft 365 グループ、SharePoint サイトのコンテンツを保護する
 
@@ -50,11 +50,11 @@ ms.locfileid: "58400405"
 
 コンテナーの秘密度ラベルを有効化し、新しい設定の秘密度ラベルを構成する前に、ユーザーはアプリで秘密度ラベルを表示および適用できます。たとえば、Word では次のようなことができます。
 
-![Word デスクトップ アプリに表示される機密ラベル](../media/sensitivity-label-word.png)
+![Word デスクトップ アプリに表示される機密ラベル。](../media/sensitivity-label-word.png)
 
 コンテナーの秘密度ラベルを有効にして構成すると、ユーザーは追加で秘密度ラベルを表示し、Microsoft チーム サイト、Microsoft 365 グループ、および SharePoint サイトに適用することができます。たとえば、SharePoint から新しいチーム サイトを作成する場合:
 
-![SharePoint でチーム サイトを作成するときの機密ラベル](../media/sensitivity-labels-new-team-site.png)
+![SharePoint でチーム サイトを作成するときの機密ラベル。](../media/sensitivity-labels-new-team-site.png)
 
 ## <a name="how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels"></a>コンテナーの秘密度ラベルを有効化してラベルを同期する方法
 
@@ -78,7 +78,7 @@ ms.locfileid: "58400405"
 
 1. 一般的な手順に従って、[秘密度レベルを作成または編集](create-sensitivity-labels.md#create-and-configure-sensitivity-labels)し、ラベルのスコープとして **[グループとサイト]** を選択していることを確認します。 
     
-    ![ファイルとメールの秘密度レベル スコープ オプション](../media/groupsandsites-scope-options-sensitivity-label.png)
+    ![ファイルとメールの秘密度ラベルの範囲オプション。](../media/groupsandsites-scope-options-sensitivity-label.png)
     
     ラベルにこのスコープのみが選択されている場合、秘密度レベルをサポートする Office アプリにはラベルが表示されず、ファイルやメールに適用できません。 このようにラベルを分離すると、ユーザーと管理者の両方に役立ちますが、ラベルの展開が複雑になる可能性もあります。
     
@@ -241,11 +241,11 @@ SharePoint 設定はラベル構成とは別に構成できるため、秘密度
 
 [Teams の機密ラベルの詳細について](/microsoftteams/sensitivity-labels)
 
-![新しいチームを作成する際のプライバシー設定](../media/privacy-setting-new-team.png)
+![新しいチームを作成する際のプライバシー設定。](../media/privacy-setting-new-team.png)
 
 チームを作成すると、すべてのチャネルの右上隅に機密ラベルが表示されます。
 
-![チームに表示される機密ラベル](../media/privacy-setting-teams.png)
+![チームに表示される機密ラベル。](../media/privacy-setting-teams.png)
 
 このサービスは、Microsoft 365 グループおよび接続された SharePoint チーム サイトに対して同じ秘密度ラベルを自動的に適用します。
 
@@ -253,19 +253,19 @@ SharePoint 設定はラベル構成とは別に構成できるため、秘密度
 
 Outlook on the web では、新しいグループを作成するときに、公開されたラベルの [**機密**] オプションを選択または変更できます。
 
-![グループを作成し、[機密] 下でオプションを選択する](../media/sensitivity-label-new-group.png)
+![グループを作成し、[機密] 下でオプションを選択する。](../media/sensitivity-label-new-group.png)
 
 ### <a name="apply-a-sensitivity-label-to-a-new-site"></a>新しいサイトに機密ラベルを適用する
 
 管理者およびエンド ユーザーは、[最新のチーム サイトやコミュニケーション サイトを作成する](/sharepoint/create-site-collection)際に秘密度ラベルを選択し、以下のような **詳細設定** を行うことができます。
 
-![サイトを作成し、[秘密度] 下でオプションを選択する](../media/sensitivity-label-new-communication-site.png)
+![サイトを作成し、[機密] 下でオプションを選択する。](../media/sensitivity-label-new-communication-site.png)
 
 ドロップダウン ボックスには選択したラベル名が表示され、ヘルプ アイコンにはすべてのラベル名とヒントが表示されます。これにより、ユーザーは適用するラベルを正しく選ぶことができます。
 
 ラベルが適用され、ユーザーがサイトを参照すると、ラベルの名前および適用されているポリシーが表示されます。 たとえば、以下のサイトでは、**秘密** のラベル付けがされており、プライバシー設定は **プライベート** になっています。
 
-![機密ラベルが適用されているサイト](../media/sensitivity-label-site.png)
+![機密ラベルが適用されているサイト。](../media/sensitivity-label-site.png)
 
 ### <a name="use-powershell-to-apply-a-sensitivity-label-to-multiple-sites"></a>PowerShell を使用して、複数のサイトに秘密度ラベルを適用する
 
@@ -305,7 +305,7 @@ SharePoint Online 管理シェルのバージョン16.0.19418.12000 以降があ
 
 適用された秘密度ラベルを表示、並べ替え、および検索するには、新しい SharePoint 管理センターの [**アクティブなサイト**] ページを使用します。 最初に、[**機密**] 列を追加する必要がある場合があります。
 
-![[アクティブなサイト] ページの [機密] 列](../media/manage-site-sensitivity-labels.png)
+![[アクティブなサイト] ページの [機密] 列。](../media/manage-site-sensitivity-labels.png)
 
 列を追加する方法など、[アクティブなサイト] ページからサイトを管理する方法の詳細については、「[新しい SharePoint 管理センターでサイトを管理する](/sharepoint/manage-sites-in-new-admin-center)」 を参照してください。
 

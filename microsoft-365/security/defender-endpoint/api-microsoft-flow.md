@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1f61fa2e2d5231d6e9c6a879a0827144282f1285
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: bd3e933d759d40f41ef585f0b5bcf68229386ba1
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533257"
+ms.locfileid: "58568674"
 ---
 # <a name="microsoft-power-automate-formerly-microsoft-flow-and-azure-functions"></a>Microsoft Power Automate (以前はMicrosoft Flow)、Azure Functions
 
@@ -39,7 +39,7 @@ ms.locfileid: "58533257"
 
 Microsoft Defender API には、多くの機能Power Automate公式のコネクタがあります。
 
-![編集資格情報のイメージ1](images/api-flow-0.png)
+![編集資格情報 1 のイメージ。](images/api-flow-0.png)
 
 > [!NOTE]
 > プレミアム コネクタライセンスの前提条件の詳細については、「Premium [Connectors のライセンス」を参照してください](/power-automate/triggers-introduction#licensing-for-premium-connectors)。
@@ -53,15 +53,15 @@ Microsoft Defender API には、多くの機能Power Automate公式のコネク�
 
 2. [マイ フロー **] [** \> **新しい** \> **自動入力から] 空白に移動します**。
 
-    ![編集資格情報のイメージ2](images/api-flow-1.png)
+    ![編集資格情報 2 のイメージ。](images/api-flow-1.png)
 
 3. ユーザーの名前を選択しFlow"Microsoft Defender ATP Triggers" をトリガーとして検索し、新しいアラート トリガーを選択します。
 
-    ![編集資格情報のイメージ3](images/api-flow-2.png)
+    ![編集資格情報 3 のイメージ。](images/api-flow-2.png)
 
 これで、新Flow発生するごとにトリガーされるメッセージが表示されます。
 
-![編集資格情報のイメージ4](images/api-flow-3.png)
+![編集資格情報 4 のイメージ。](images/api-flow-3.png)
 
 ここで行う必要があるのは、次の手順を選択する必要があります。
 たとえば、アラートの重大度が高い場合にデバイスを分離し、そのデバイスに関する電子メールを送信できます。
@@ -75,7 +75,7 @@ Microsoft Defender API には、多くの機能Power Automate公式のコネク�
 
 3. 最後の **手順の [アラート ID]** を [入力] に **設定します**。
 
-    ![編集資格情報のイメージ5](images/api-flow-4.png)
+    ![資格情報の編集のイメージ 5.](images/api-flow-4.png)
 
 ### <a name="isolate-the-device-if-the-alerts-severity-is-high"></a>アラートの重大度が [高] の場合はデバイスを分離する
 
@@ -85,7 +85,7 @@ Microsoft Defender API には、多くの機能Power Automate公式のコネク�
 
    [はい] の場合は **、[コンピューター ID]** とコメントを含む Microsoft Defender ATP - [コンピューターの分離] アクションを追加します。
 
-    ![資格情報の編集のイメージ6](images/api-flow-5.png)
+    ![編集資格情報 6 のイメージ。](images/api-flow-5.png)
 
 3. アラートと分離に関する電子メールを送信する新しい手順を追加します。 メール コネクタや Gmail など、非常に使いやすいOutlookがあります。
 

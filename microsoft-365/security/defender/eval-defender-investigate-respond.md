@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 1ee83045c03c3663981e3c3b54384405d03e8ab8
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: fca3a6ff838006b070a902dd37ff1cf32110a7b0
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247170"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569899"
 ---
 # <a name="investigate-and-respond-using-microsoft-365-defender-in-a-pilot-environment"></a>パイロット環境で、Microsoft 365 Defenderを使用して調査と対応を行う
 
@@ -37,7 +37,7 @@ ms.locfileid: "58247170"
 
 次の手順を使用します。
 
-![評価環境でシミュレートされたインシデント応答を実行Microsoft 365 Defender手順](../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-steps.png)
+![評価環境でシミュレートされたインシデント応答を実行Microsoft 365 Defender手順。](../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-steps.png)
 
 次の表に、図の手順を示します。
 

@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、Reuters のデータを Veritas から他のユーザーにインポートしてアーカイブするコネクタをMicrosoft 365。 このコネクタを使用すると、サードパーティのデータ ソースからデータをアーカイブできます。Microsoft 365。 このデータをアーカイブした後、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、サードパーティのデータを管理できます。
-ms.openlocfilehash: 247ad42731df49887255c2e3b094fd2f6ec4b643542b097f09b6b68bfae300c0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a3c83d478e95cca1852409a98c44624ecf2c56c2
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53796651"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569647"
 ---
 # <a name="set-up-a-connector-to-archive-reuters-dealing-data"></a>ロイターの取引データをアーカイブするコネクタをセットアップする
 
@@ -29,7 +29,7 @@ Reuters Dealing プラットフォームからデータをインポートおよ�
 
 次の概要では、コネクタを使用してロイターの取引データをアーカイブするプロセスについて説明Microsoft 365。
 
-![ロイターのデータを扱うアーカイブ ワークフロー](../media/ReuetersDealingConnectorWorkflow.png)
+![ロイターのデータを扱うアーカイブ ワークフロー。](../media/ReuetersDealingConnectorWorkflow.png)
 
 1. 組織はロイターの取引と一緒にロイター取引サイトを設定および構成します。
 

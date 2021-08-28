@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 202b76ff-74a6-4486-ada1-a9bf099dab8f
 description: 高可用性フェデレーション認証用の FS ADを作成および構成する方法について、Microsoft 365をMicrosoft Azure。
-ms.openlocfilehash: 83e8dd5f97017f19e709dd5a65a89275e7be12b3
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 7f6e7801c8185cebc66e653a39930ee9af120946
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354478"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569431"
 ---
 # <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a>高可用性フェデレーション認証のフェーズ 3: AD FS サーバーを構成する
 
@@ -148,7 +148,7 @@ Restart-Computer
   
 **フェーズ 3:Azure での高可用性フェデレーション認証インフラストラクチャ用の AD FS サーバーと内部ロード バランサー**
 
-![Azure のフェデレーション認証インフラストラクチャMicrosoft 365 FS サーバーとの高可用性ADフェーズ 3](../media/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
+![Azure のフェデレーション認証インフラストラクチャMicrosoft 365 FS サーバーとの高可用性のフェーズ 3 ADします。](../media/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
   
 ## <a name="next-step"></a>次の手順
 

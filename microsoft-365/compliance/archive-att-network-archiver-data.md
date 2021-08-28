@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、テレメッセージ コネクタをセットアップして、SMS および MMS データを AT モバイル ネットワークからインポートおよびアーカイブ&できます。 これにより、Microsoft 365 のサード パーティデータ ソースからデータをアーカイブし、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティ データを管理できます。
-ms.openlocfilehash: ec3b134dd5d26848e3a3b00d4aa66f81abc64363268ce91b329dfc7d79fba7f9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e17f5d369eefd5a2d7b2d9b8e55df0d1a4c9714b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53820707"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567954"
 ---
 # <a name="set-up-a-connector-to-archive-att-smsmms-data"></a>T SMS/MMS データを使用して AT&をアーカイブするコネクタをセットアップする
 
@@ -29,7 +29,7 @@ SMS および MMS メッセージがユーザー メールボックスに保存�
 
 次の概要では、コネクタを使用して、コネクタを使用して、T Network&をアーカイブするプロセスMicrosoft 365。
 
-![ATT ネットワークのアーカイブ ワークフロー](../media/ATTNetworkConnectorWorkflow.png)
+![ATT ネットワークのアーカイブ ワークフロー。](../media/ATTNetworkConnectorWorkflow.png)
 
 1. 組織は TeleMessage を使用して、T ネットワーク コネクタの AT&設定します。 詳細については [、「AT&T ネットワーク アーカイブ」を参照してください](https://www.telemessage.com/office365-activation-for-atnt-network-archiver/)。
 

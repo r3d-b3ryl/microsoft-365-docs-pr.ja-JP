@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 18044d469e90137ea14fa2dde9a6afe75e5dd0998d67e015e71d20b049ad30fb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b135c6dd691607dd128bfd83e0d2b484bb3a97ae
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853232"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568062"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>チャット、グループ、ファイルTeamsセキュリティ保護に関するポリシーの推奨事項
 
@@ -49,7 +49,7 @@ ms.locfileid: "53853232"
 
 チャット、グループ、およびコンテンツを保護するために、Teamsの ID ポリシーとデバイス アクセス ポリシーから更新するポリシーを次の図に示します。 更新するポリシーごとに、クラウド アプリの割りTeamsサービスと依存サービスが含まれているか確認します。
 
-[![サービスとその依存サービスへのアクセスを保護するためのTeamsの概要](../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)
+[![サービスとその依存サービスへのアクセスを保護するためのTeamsの概要。](../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)
 
 これらのサービスは、クラウド アプリの割り当てに含める依存サービスTeams。
 
@@ -79,7 +79,7 @@ ms.locfileid: "53853232"
 
 参考までに、次の図は、ユーザーがTeamsを示しています。 詳細と図については、「it アーキテクト向けMicrosoft Teamsの生産性サービス[と関連Microsoft 365を参照してください](../../solutions/productivity-illustrations.md)。
 
-[![ユーザー、Teams、およびSharePointのOneDrive for Businessを示す図Exchange](../../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)
+[![ユーザー、Teams、およびSharePoint、OneDrive for Businessの依存関係Exchange。](../../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)
 
 [このイメージのより大きなバージョンを表示する](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)
 
@@ -144,7 +144,7 @@ Teamsチャネルや個人用チャットなど、さまざまな場所でアプ
 
 ## <a name="next-steps"></a>次の手順
 
-![手順 4: クラウド アプリMicrosoft 365ポリシー](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+![手順 4: クラウド アプリMicrosoft 365ポリシー。](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 
 次の条件付きアクセス ポリシーを構成します。
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 完全なデータ一致に基づく分類で、カスタムの機密情報の種類を作成する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 03843707ebffc6798b3d73526a2e95b884047b13
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: c785941529823048b55ab3590c91f365ea17a1ba
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58594024"
+ms.locfileid: "58570139"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Exact Data Match に基づく分類で、カスタムの機密情報の種類を作成する
 
@@ -73,7 +73,7 @@ EDM ベースの分類を使用すると、機密情報のデータベース内�
 
 |ポータル|世界中の GCC|GCC-High|DOD|
 |---|---|---|---|
-|Office SCC|compliance.microsoft.com|scc.office365.us|scc.protection.apps.mil|
+|Office SCC|protection.office.com|scc.office365.us|scc.protection.apps.mil|
 |Microsoft 365 セキュリティ センター|security.microsoft.com|security.microsoft.us|security.apps.mil|
 |Microsoft 365 コンプライアンス センター|compliance.microsoft.com|compliance.microsoft.us|compliance.apps.mil|
 

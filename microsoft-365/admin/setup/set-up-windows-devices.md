@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: ユーザーにWindowsデバイスWindows 10 ProをMicrosoft 365 Business Premium、一元的な管理とセキュリティ制御を有効にします。
-ms.openlocfilehash: 8c1b8c4c670e5314a5fc524459cbe13c5a3b1db8
-ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
+ms.openlocfilehash: 4b390b1217cd3af7b5f2cc49dc2fb3507a7fe04c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58377777"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570175"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>ユーザーのWindowsデバイスをMicrosoft 365 Business Premiumする
 
@@ -63,7 +63,7 @@ Windows 10 Pro Creators Update が実行されている新しいデバイス、�
   
 1. [ **設定方法**] ページが表示されるまで Windows 10 デバイスのセットアップを行います。 
     
-    ![On the How would you like to set up page, choose Set up for an organization](../../media/1b0b2dba-00bb-4a99-a729-441479220cb7.png)
+    ![[設定方法] ページで、[組織のセットアップ] を選択します。](../../media/1b0b2dba-00bb-4a99-a729-441479220cb7.png)
   
 2. ここでは、[組織 **のセットアップ] を選択し**、組織のユーザー名とパスワードを入力Microsoft 365 Business Premium。 
     
@@ -77,25 +77,25 @@ Windows 10 Pro Creators Update が実行されている新しいデバイス、�
   
 1. Windows 10 Pro バージョン 1703 (Creators Update) を実行しているユーザーの Windows PC で ([前提条件](../security-and-compliance/pre-requisites-for-data-protection.md)を参照)、Windows ロゴ、[設定] アイコンの順にクリックします。
   
-   ![In the Start menu, click Windows Settings icon](../../media/74e1ce9a-1554-4761-beb9-330b176e9b9d.png)
+   ![[次のスタート メニュー] アイコンWindows 設定クリックします。](../../media/74e1ce9a-1554-4761-beb9-330b176e9b9d.png)
   
-2. [ **設定**] で [ **アカウント**] に移動します。
+2. [**設定**] で、[**アカウント**] に移動します。
   
-   ![In Windows Settings, go to Accounts](../../media/472fd688-d111-4788-9fbb-56a00fbdc24d.png)
+   ![[アカウントWindows 設定アカウント] に移動します。](../../media/472fd688-d111-4788-9fbb-56a00fbdc24d.png)
   
 3. On **Your info** page, click **Access work or school** \> **Connect**.
   
-   ![Choose Connect under Access work or school](../../media/af3a4e3f-f9b9-4969-b3e2-4ef99308090c.png)
+   ![[仕事Connect学校にアクセスする] の下にある [アカウント] を選択します。](../../media/af3a4e3f-f9b9-4969-b3e2-4ef99308090c.png)
   
 4. [ **職場または学校アカウントの設定**] ダイアログの [ **別の操作**] の下で、[ **このデバイスを Azure Active Directory に参加させる**] を選びます。
   
-   ![Click Join this device to Azure Active Directory](../../media/fb709a1b-05a9-4750-9cb9-e097f4412cba.png)
+   ![[このデバイスに参加する] をクリックしてAzure Active Directory。](../../media/fb709a1b-05a9-4750-9cb9-e097f4412cba.png)
   
 5. On the **Let's get you signed in** page, enter your work or school account \> **Next**.
   
    On the **Enter password** page, enter your password \> **Sign in**.
   
-   ![Enter your work or school email on the Let's get you signed in page](../../media/f70eb148-b1d2-4ba3-be38-7317eaf0321a.png)
+   ![[サインインして取得する] ページに、仕事用または学校用のメールを入力します。](../../media/f70eb148-b1d2-4ba3-be38-7317eaf0321a.png)
   
 6. [組織 **の確認] ページで** 、情報が正しいか確認し、[参加] を **選択します**。
   
@@ -111,9 +111,9 @@ Windows 10 Pro Creators Update が実行されている新しいデバイス、�
   
 [同期の **状態] ページで** 、[同期] **を** 選択して、最新のモバイル デバイス管理ポリシーを PC に取得します。
   
-Microsoft 365 Business Premium アカウントの使用を開始するには、[スタートWindows] ボタンに移動し、現在のアカウントの画像を右クリックし、[アカウントの切り替え]**をクリックします**。 自分の組織のメール アドレスとパスワードを使用してサインインします。
+Microsoft 365 Business Premium アカウントの使用を開始するには、[スタートWindows] ボタンに移動し、現在のアカウントの画像を右クリックし、[アカウントの切り替え]**をクリックします**。 組織のメール アドレスとパスワードを使用してサインインします。
   
-![Click Info button to view synchronization status](../../media/818f7043-adbf-402a-844a-59d50034911d.png)
+![[情報] ボタンをクリックして、同期の状態を表示します。](../../media/818f7043-adbf-402a-844a-59d50034911d.png)
   
 ## <a name="verify-the-pc-is-upgraded-to-windows-10-business"></a>PC がデバイスにアップグレードWindows 10 Business
 

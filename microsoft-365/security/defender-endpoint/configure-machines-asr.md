@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1563d44aded4c018a659b70d16800decf4bcd46f
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: a1f51fcf497db0ca36a06fdcb5554e5cdc2861d7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533401"
+ms.locfileid: "58569731"
 ---
 # <a name="optimize-asr-rule-deployment-and-detections"></a>ASR ルールの展開と検出を最適化する
 
@@ -36,7 +36,7 @@ ms.locfileid: "58533401"
 [攻撃表面の縮小 (ASR) ルールは、一](./attack-surface-reduction.md) 般的なマルウェアの悪用を特定して防止します。 悪意のあるコードを実行できる可能性のある時間と方法を制御します。 たとえば、JavaScript または VBScript がダウンロードした実行可能ファイルを起動したり、Office マクロからの Win32 API 呼び出しをブロックしたり、USB ドライブから実行されるプロセスをブロックしたりすることができます。
 
 
-:::image type="content" source="../../media/attack-surface-mgmt.png" alt-text="攻撃表面管理カード":::
+:::image type="content" source="../../media/attack-surface-mgmt.png" alt-text="攻撃表面管理カード。":::
 <br>
 *攻撃表面管理カード*
 
@@ -48,7 +48,7 @@ ms.locfileid: "58533401"
 
 [Go **to attack surface management Reports** \> **Attack** surface reduction \> **rules Add** \> **exclusions] を選択します**。 そこから、セキュリティ センターの他のセクションMicrosoft 365移動できます。
 
-![セキュリティ センターの [攻撃表面の縮小ルール] ページの [除外Microsoft 365追加する](images/secconmgmt_asr_m365exlusions.png)<br>
+![セキュリティ センターの [攻撃表面縮小ルール] ページの [除外Microsoft 365追加します。](images/secconmgmt_asr_m365exlusions.png)<br>
 セキュリティ ***センターの [** 攻撃表面縮小ルール] ページの [除外のMicrosoft 365]*
 
 > [!NOTE]

@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: テナントのデータ収集を開始する方法については、Microsoft 365 Usage Analytics テンプレート アプリを使用Power BI。
-ms.openlocfilehash: 4d569c40283eb7f88c734de91821e1fe7a7793ab
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: 6c2dfef0d925df92316d407e5a425a7ddfa03952
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394638"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569683"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Microsoft 365 利用状況分析を有効にする
 
@@ -84,7 +84,7 @@ Microsoft 365 Microsoft 365 US Government Community Cloud (GCC) テナントで 
 
 7. 次の画面で、[認証]**メソッドとして [OAuth2]** **を選択します** \> 。 他の認証方法を選択すると、テンプレート アプリへの接続が失敗します。
 
-    ![認証方法として Microsoft アカウントを選択する](../../media/ab6f0463-c3f7-4088-a605-67c699fa86adnew.png)
+    ![認証方法として [Microsoft アカウント] を選択します。](../../media/ab6f0463-c3f7-4088-a605-67c699fa86adnew.png)
 
 8. テンプレート アプリがインスタンス化されると、Microsoft 365分析ダッシュボードが web 上Power BIで利用できます。 ダッシュボードの初期読み込みには 2 ~ 30 分かかります。
 

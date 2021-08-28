@@ -19,16 +19,16 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 5cf4bff66898f9f671ebb7a406cb59e6cdc0583a741b721fb910fd04502a6cbe
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b384d83c219c342b8ca729aef7b90d66cd07b4f3
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53896049"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569815"
 ---
 # <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>ケース スタディ - Contoso 社は、コミュニケーションをサポートする言語ポリシーを迅速にMicrosoft Teams、Exchange、Yammerします。
 
-組織内の不適切Microsoft 365検出、キャプチャ、および操作を支援することで、コミュニケーション リスクを最小限に抑えるのに役立ちます。 定義済みポリシーとカスタム ポリシーを使用すると、ポリシー一致の内部および外部通信をスキャンして、指定されたレビュー担当者が確認できます。 レビュー担当者は、組織内のスキャンされた電子メール、Microsoft Teams、Yammer、またはサードパーティの通信を調査し、組織のメッセージ標準に準拠しているか確認するために適切な修復アクションを実行できます。
+組織内の不適切Microsoft 365検出、キャプチャ、および操作を支援することで、コミュニケーション リスクを最小限に抑えるのに役立ちます。 事前に定義されたカスタムポリシーを使用すると、指定されたレビュー担当者が調査できるように、ポリシーの一致の確認のために内部および外部の通信をスキャンできます。 レビュー担当者は、組織内のスキャンされた電子メール、Microsoft Teams、Yammer、またはサードパーティの通信を調査し、組織のメッセージ標準に準拠しているか確認するために適切な修復アクションを実行できます。
 
 Contoso Corporation は、不快な言語を監視するポリシーをすばやく構成する必要がある、架空の組織です。 ユーザーは電子メール、Microsoft 365、Yammer Microsoft Teamsサポートを主に使用していますが、職場での嫌がらせに関する会社のポリシーを適用する新しい要件があります。 Contoso IT 管理者とコンプライアンス スペシャリストは、Microsoft 365 を操作する基本知識を持ち、コミュニケーション コンプライアンスを迅速に開始する方法に関するエンドツーエンドのガイダンスを探しています。
 
@@ -75,7 +75,7 @@ Contoso IT 管理者は、Contoso のライセンス サポートを確認する
 
 2. ここでは、通信コンプライアンスのサポートを含む[](communication-compliance-configure.md#subscriptions-and-licensing)ライセンス オプションの 1 つが使用されているのを確認します。
 
-![通信コンプライアンス のライセンス](../media/communication-compliance-case-licenses.png)
+![通信コンプライアンス のライセンス。](../media/communication-compliance-case-licenses.png)
 
 ### <a name="permissions-for-communication-compliance"></a>通信コンプライアンスのアクセス許可
 
@@ -91,8 +91,8 @@ Contoso 社は、コミュニケーション *コンプライアンス役割グ�
 | **コミュニケーション コンプライアンス調査担当者** | このグループを使用して、コミュニケーション コンプライアンス調査担当者として機能するユーザーにアクセス許可を割り当てます。 このロール グループに割り当てられているユーザーは、メッセージのメタデータとコンテンツの表示、追加のレビュー担当者へのエスカレーション、Advanced eDiscovery ケースへのエスカレーション、ユーザーへの通知の送信、アラートの解決を行うことができます。 |
 | **コミュニケーション コンプライアンス閲覧者** | このグループを使用して、コミュニケーション レポートを管理するユーザーにアクセス許可を割り当てます。 このロール グループに割り当てられたユーザーは、コミュニケーション コンプライアンス ホーム ページのすべてのレポート ウィジェットにアクセスでき、すべてのコミュニケーション コンプライアンス レポートを表示できます。 |
 
-1. Contoso IT 管理者は **、Office 365 セキュリティ &** コンプライアンス センターのアクセス許可ページにサインインします [( https://compliance.microsoft.com/permissions)](https://compliance.microsoft.com/permissions)グローバル管理者アカウントの資格情報を使用して、Microsoft 365 の役割を表示および管理するためのリンクを選択します。
-2. セキュリティ コンプライアンス **センター&アクセス** 許可に移動し、アクセス許可の役割を表示および管理するリンクをOffice 365。
+1. Contoso IT 管理者は、グローバル管理者アカウント[の](https://compliance.microsoft.com/permissions)資格情報を使用して Microsoft 365 コンプライアンス センター アクセス許可ページにサインインし、管理者アカウントの役割を表示および管理するためのリンクをMicrosoft 365。
+2. [アクセス許可 **Microsoft 365 コンプライアンス センター** アクセス許可] に移動し、アクセス許可の役割を表示および管理するリンクをOffice 365。
 3. 管理者が [通信コンプライアンス] 役割 *グループを* 選択し、[役割グループの編集 **] を選択します**。
 4. 管理者は、左側の **ナビゲーション ウィンドウから [メンバー** の選択] を選択し、[編集] を **選択します**。
 5. [追加] **を選択** し、通信コンプライアンスの管理、調査、およびアラートの確認を行うすべての Contoso ユーザーのチェック ボックスをオンにします。
@@ -112,37 +112,37 @@ Contoso 社は、コミュニケーション *コンプライアンス役割グ�
 
 ソリューションにアクセスする最も簡単な方法は、コミュニケーション コンプライアンス ( ) ソリューションに **直接** <https://compliance.microsoft.com/supervisoryreview> サインインする方法です。 このリンクを使用すると、Contoso IT 管理者とコンプライアンス スペシャリストがコミュニケーション コンプライアンスの概要ダッシュボードに移動し、アラートの状態をすばやく確認し、定義済みのテンプレートから新しいポリシーを作成できます。
 
-![情報コンプライアンスの概要](../media/communication-compliance-case-overview.png)
+![コミュニケーション コンプライアンスの概要。](../media/communication-compliance-case-overview.png)
 
 ### <a name="starting-from-the-microsoft-365-compliance-center"></a>最初のMicrosoft 365 コンプライアンス センター
 
 Contoso IT 管理者とコンプライアンス スペシャリストが通信コンプライアンス ソリューションにアクセスするためのもう 1 つの簡単な方法は、Microsoft 365 コンプライアンス センター ( に **直接サインインする**[方法です https://compliance.microsoft.com)](https://compliance.microsoft.com)。 サインイン後にすべてのコンプライアンス ソリューションを表示し、開始するには、**すべてを表示** を選択して、**通信コンプライアンス** ソリューションを選択すれば開始します。
 
-![コンプライアンス センター](../media/communication-compliance-case-center.png)
+![コンプライアンス センター。](../media/communication-compliance-case-center.png)
 
 ### <a name="starting-from-the-microsoft-365-solution-catalog"></a>ソリューション カタログMicrosoft 365開始
 
 Contoso の IT 管理者とコンプライアンス スペシャリストは、ソリューション カタログを選択して、通信コンプライアンス ソリューションMicrosoft 365選択できます。 左側のナビゲーション **の [****ソリューション]** セクションで [カタログ] を選択すると、Microsoft 365 コンプライアンス センターコンプライアンス ソリューションのすべての一覧が表示Microsoft 365開きます。 [Insider リスク管理] セクション **までスクロール** ダウンすると、Contoso IT 管理者は [通信コンプライアンス] を選択して開始できます。 Contoso IT 管理者は、ナビゲーションコントロールで [表示] を使用して、通信コンプライアンス ソリューションを左側のナビゲーション ウィンドウにピン留めして、今後サインインするときにすばやくアクセスできます。
 
-![ソリューション カタログ](../media/communication-compliance-case-solution.png)
+![ソリューション カタログ。](../media/communication-compliance-case-solution.png)
 
 ### <a name="starting-from-the-microsoft-365-admin-center"></a>最初のMicrosoft 365 管理センター
 
 Microsoft 365 管理センター から開始するときに通信コンプライアンスにアクセスするには、Contoso IT 管理者とコンプライアンス スペシャリストが Microsoft 365 管理センター [に https://admin.microsoft.com)](https://admin.microsoft.com)サインインし、Microsoft 365 管理センター コンプライアンス に **移動**  >  **します**。
 
-![コミュニケーション コンプライアンス リンク](../media/communication-compliance-case-compliance-link.png)
+![通信コンプライアンス リンク。](../media/communication-compliance-case-compliance-link.png)
 
 このアクションでは、Office 365 **セキュリティ** とコンプライアンス センターが開き、ページの上部にあるバナーにMicrosoft 365 コンプライアンス センターリンクを選択する必要があります。
 
-![Office 365コンプライアンス センター](../media/communication-compliance-case-scc.png)
+![Office 365コンプライアンス センター。](../media/communication-compliance-case-scc.png)
 
 Contoso IT **管理者は**、Microsoft 365 コンプライアンス センターソリューションの完全な一覧を表示するには、[すべて表示] を選択します。
 
-![コミュニケーション コンプライアンス メニュー](../media/communication-compliance-case-show-all.png)
+![通信コンプライアンス メニュー。](../media/communication-compliance-case-show-all.png)
 
 [すべて表示 **] を選択** すると、Contoso IT 管理者は通信コンプライアンス ソリューションにアクセスできます。
 
-![情報コンプライアンスの概要](../media/communication-compliance-case-overview.png)
+![コミュニケーション コンプライアンスの概要。](../media/communication-compliance-case-overview.png)
 
 ## <a name="step-3-configuring-prerequisites-and-creating-a-communication-compliance-policy"></a>手順 3: 前提条件の構成と通信コンプライアンス ポリシーの作成
 
@@ -173,7 +173,7 @@ Contoso コンプライアンス スペシャリストは、不快な言語を�
 
 3. 新しいグループの作成後、Contoso ユーザー全員を新しいグループに追加する必要があります。 管理者センターを開 **Exchangeし**[、 https://outlook.office365.com/ecp)](https://outlook.office365.com/ecp)管理センター **の受信者グループExchange**  >  **に移動**  >  **します**。 Contoso IT 管理者は、[メンバーシップ] 領域と、作成した新しい [すべての従業員] グループを選択し、[編集] コントロールを選択して、ウィザードの新しいグループにすべての Contoso ユーザーを追加します。
 
-    ![Exchange 管理センター](../media/communication-compliance-case-eac.png)
+    ![Exchange管理センター。](../media/communication-compliance-case-eac.png)
 
 ### <a name="creating-the-policy-to-monitor-for-offensive-language"></a>不快な言語を監視するポリシーの作成
 
@@ -181,12 +181,12 @@ Contoso コンプライアンス スペシャリストは、不快な言語を�
 
 1. Contoso IT 管理者およびコンプライアンス スペシャリストが **Microsoft 365 コンプライアンスセンター** にサインインし、左側のナビゲーション ウィンドウから **通信コンプライアンス** を選択します。 この操作により、通信コンプライアンス ポリシー テンプレートのクイック リンクを含む **概要** ダッシュボードが開きます。 **不快な言語のモニター** を選ぶには、テンプレートの **作業の開始** を選択します。
 
-    ![通信コンプライアンスの不快な言語テンプレート](../media/communication-compliance-case-template.png)
+    ![通信コンプライアンスの不快な言語テンプレート。](../media/communication-compliance-case-template.png)
 
 2. ポリシー テンプレート ウィザードでは、Contoso IT 管理者およびコンプライアンス スペシャリストが協働して、 **ポリシー名**、**ユーザーまたは監督対象のグループ** および **レビュー担当者** の3つの必要なフィールドを完了します。
 3. ポリシーウィザードには、既にポリシーの名前が提案されているので、IT 管理者およびコンプライアンス スペシャリストが、提案された名前を保持し、残りのフィールドにフォーカスします。 [監視する *ユーザー* またはグループ]フィールドの [すべてのユーザー] グループを選択し、[レビュー担当者] フィールドのポリシー通知を調査して修復するコンプライアンス スペシャリスト **を選択** します。 ポリシーを構成し、アラート情報の収集を開始する最後の手順は、[ポリシーの作成] **を選択します**。
 
-    ![通信コンプライアンスの不快な言語ウィザード](../media/communication-compliance-case-wizard.png)
+    ![通信コンプライアンスの不快な言語ウィザード。](../media/communication-compliance-case-wizard.png)
 
 ## <a name="step-4-investigate-and-remediate-alerts"></a>手順 4: アラートの調査と修復
 

@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9039b02e34b57e2a594b0db1c4b16e59a962e1d3
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 8f8bdfed9075f2ebc8d189874c6854c4d4a0e50a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58603231"
+ms.locfileid: "58568254"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Microsoft Defender の自動調査と応答 (AIR) Office 365
 
@@ -116,8 +116,8 @@ Microsoft 365には、管理者のアクセス許可の悪用、マルウェア�
 
 |タスク|必要な役割|
 |---|---|
-|AIR 機能のセットアップ|次のいずれかの役割。 <ul><li>グローバル管理者</li><li>セキュリティ管理者</li></ul> <p> これらの役割は、[ポータルまたはAzure Active Directory](/azure/active-directory/roles/permissions-reference)ポータル[で割りMicrosoft 365 Defenderできます](permissions-microsoft-365-security-center.md)。|
-|自動調査の開始 <p> --- または --- <p> 推奨されるアクションを承認または拒否する|次のいずれかの役割 (このロールは[、Azure Active Directoryまたはポータル](/azure/active-directory/roles/permissions-reference)[Microsoft 365 Defender割り当てられます](permissions-microsoft-365-security-center.md)。 <ul><li>グローバル管理者</li><li>セキュリティ管理者</li><li>セキュリティ オペレーター</li><li>セキュリティ閲覧者 <br> --- さらに --- </li><li>検索と削除 (この役割は、ポータルのMicrosoft 365 Defender[されます](permissions-microsoft-365-security-center.md)。 新しい電子メール グループを作成して、&グループに検索役割と削除役割を追加する必要があります。</li></ul>|
+|AIR 機能のセットアップ|次のいずれかの役割。 <ul><li>グローバル管理者</li><li>セキュリティ管理者</li></ul> <p> これらの役割は、[ポータルまたはAzure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)ポータル[で割りMicrosoft 365 Defenderできます](permissions-microsoft-365-security-center.md)。|
+|自動調査の開始 <p> --- または --- <p> 推奨されるアクションを承認または拒否する|次のいずれかの役割 (このロールは[、Azure Active Directoryまたはポータル](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)[Microsoft 365 Defender割り当てられます](permissions-microsoft-365-security-center.md)。 <ul><li>グローバル管理者</li><li>セキュリティ管理者</li><li>セキュリティ オペレーター</li><li>セキュリティ閲覧者 <br> --- さらに --- </li><li>検索と削除 (この役割は、ポータルのMicrosoft 365 Defender[されます](permissions-microsoft-365-security-center.md)。 新しい電子メール グループを作成して、&グループに検索役割と削除役割を追加する必要があります。</li></ul>|
 
 ## <a name="required-licenses"></a>必須のライセンス
 

@@ -19,12 +19,12 @@ ms.assetid: ''
 description: 電子情報開示の一般的な問題を解決するために実行できる基本的なトラブルシューティング手順Office 365説明します。
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7b4c5389ec650be18c9f65e7fc85f4166a8eef14
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: b562e3d22557133630fa8c7c7d343432736b9f4f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394590"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569611"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>一般的な電子情報開示の問題を調査、トラブルシューティング、解決する
 
@@ -60,7 +60,7 @@ ms.locfileid: "58394590"
 
 電子情報開示またはコンテンツ検索では、次のエラーが発生する可能性があります。 `This search completed with (#) errors.  Would you like to retry the search on the failed locations?`
 
-![検索固有の場所でエラー のスクリーンショットが失敗する](../media/edisc-tshoot-specific-location-search-fails.png)
+![検索固有の場所でエラー のスクリーンショットが失敗します。](../media/edisc-tshoot-specific-location-search-fails.png)
 
 ### <a name="resolution"></a>解決方法
 
@@ -159,7 +159,7 @@ SPO の場所を開き、このファイルが実際に開いていないか確�
 
 電子情報開示検索を実行する場合、"内部サーバー エラー (500) が発生しました"のようなエラーで検索が継続的に失敗する場合は、特定のメールボックスの場所でのみ検索を再実行する必要があります。
 
-![内部サーバー エラー 500 スクリーンショット](../media/edisc-tshoot-error-500.png)
+![内部サーバー エラー 500 スクリーンショット。](../media/edisc-tshoot-error-500.png)
 
 ### <a name="resolution"></a>解決方法
 

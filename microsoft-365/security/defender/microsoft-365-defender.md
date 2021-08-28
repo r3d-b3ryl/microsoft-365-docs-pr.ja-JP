@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 5fb3ee5abfb2f6d8f86832967ed6f88386421c9e
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 1e8b5745e67741535f0c521fc6c6dc1f83868b3c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58607103"
+ms.locfileid: "58568794"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -85,7 +85,7 @@ Microsoft 365 Defender固有のクロスプロダクト レイヤーは、個々
 
 
 Microsoft 365 Defender機能には、次のものが含まれます。 
-- **ガラスの** 製品間単一ウィンドウ - 1 つのキューと security.microsoft.com の 1 つのウィンドウで、検出、影響を受けるアセット、自動操作、および関連する証拠に関するすべての情報を中央表示 [します](https://security.microsoft.com)。 
+- **ガラスの** 製品間単一ウィンドウ - 中央には、security.microsoft.com の 1 つのキューと 1 つのウィンドウで、検出、影響を受けるアセット、自動アクション、および関連する証拠に関 [するすべての情報が表示されます](https://security.microsoft.com)。 
 - **複合インシデント** キュー - セキュリティ専門家が攻撃範囲全体を確保することで重要な作業に集中するために、影響を受けたアセットと自動修復アクションがグループ化され、適切な時期に表示されます。 
 - **脅威への自動対応**- 重大な脅威情報は、攻撃の進行を停止するために、Microsoft 365 Defender製品間でリアルタイムで共有されます。 たとえば、Microsoft Defender for Endpoint で保護されたエンドポイントで悪意のあるファイルが検出された場合、すべての電子メール メッセージからファイルをスキャンして削除するように defender に Office 365 に指示します。 このファイルは、セキュリティ スイート全体によってMicrosoft 365されます。
 - **侵害されたデバイス**、ユーザー ID、メールボックスの自己修復 - Microsoft 365 Defender は、AI による自動アクションとプレイブックを使用して、影響を受け取ったアセットを安全な状態に戻します。 Microsoft 365 Defenderスイート製品の自動修復機能を活用して、インシデントに関連する影響を受けたすべての資産を可能な限り自動的に修復します。

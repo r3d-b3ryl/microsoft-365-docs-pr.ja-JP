@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ケースまたは調査に関連Advanced eDiscoveryコンテンツを検索および収集するには、ドキュメント内のコレクションを使用します。
-ms.openlocfilehash: e808db2829c8742fe34faa56965bacb79283b14b67a6ffbfccd8c43c88f12bac
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: dabc321f432996d888686b16e05d8ad6cb6cfc3f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53866482"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568422"
 ---
 # <a name="learn-about-collections-in-advanced-ediscovery"></a>コレクションの詳細については、Advanced eDiscovery
 
@@ -44,7 +44,7 @@ ms.locfileid: "53866482"
 
 コレクションの使用を開始Advanced eDiscovery、プロセスの各手順の基本的なワークフローと説明を次に示します。
 
-![コレクション ワークフロー (Advanced eDiscovery](../media/CollectionsWorkflow.png)
+![コレクション のワークフローをAdvanced eDiscovery。](../media/CollectionsWorkflow.png)
 
 1. **下書きコレクションを作成して実行します**。 最初の手順は、下書きコレクションを作成し、検索する保管データ ソースと非保管データ ソースを定義することです。 ケースに追加されていない他のデータ ソースを検索できます。 データ ソースを追加した後、ケースに関連するコンテンツのデータ ソースを検索する検索クエリを構成します。 キーワード、プロパティ、および条件を使用して、ケースに最も関連性の高いコンテンツを返す検索クエリを作成できます。 詳細については、「下書き [コレクションを作成する」を参照してください](create-draft-collection.md)。
 

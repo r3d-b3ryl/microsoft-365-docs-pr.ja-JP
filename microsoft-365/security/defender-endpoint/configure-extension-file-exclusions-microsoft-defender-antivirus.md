@@ -14,12 +14,12 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: f8d274443e67ab89952508870aa118d7e13378e0
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 3138d1c0a4b4d2b5726b87e6e86897091d237854
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533425"
+ms.locfileid: "58568642"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>ファイル拡張子とフォルダーの場所に基づいて除外を構成および検証する
 
@@ -344,7 +344,7 @@ Get-MpPreference
 
 次の例では、リストに含まれるアイテム `ExclusionExtension` が強調表示されます。
 
-:::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="Get-MpPreference の PowerShell 出力":::
+:::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="Get-MpPreference の PowerShell 出力。":::
 
 詳細については、「[PowerShell コマンドレットを使用して Microsoft Defender ウイルス対策を構成および実行する](use-powershell-cmdlets-microsoft-defender-antivirus.md)」および「[Defender コマンドレット](/powershell/module/defender/)」を参照してください。
 
@@ -360,7 +360,7 @@ $WDAVprefs.ExclusionPath
 
 次の例では、コマンドレットを使用するごとに、リストが新しい行に分割 `Add-MpPreference` されます。
 
-:::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="除外リスト内のエントリのみを表示する PowerShell 出力":::
+:::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="除外リスト内のエントリのみを表示する PowerShell 出力。":::
 
 詳細については、「[PowerShell コマンドレットを使用して Microsoft Defender ウイルス対策を構成および実行する](use-powershell-cmdlets-microsoft-defender-antivirus.md)」および「[Defender コマンドレット](/powershell/module/defender/)」を参照してください。
 

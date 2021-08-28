@@ -19,18 +19,18 @@ search.appverid:
 - MOE150
 - MET150
 description: この記事では、ユーザー アカウントが侵害された場合に法医学調査を実行したり、他のセキュリティ関連のインシデントを調査したりするために高度な監査を設定する方法について説明します。
-ms.openlocfilehash: e23f5c9ce4212e4974de97977bb2e0785bad69ed
-ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
+ms.openlocfilehash: 0df68516795c094aa33d048e77b5ca2d1b396ed7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58386962"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569755"
 ---
 # <a name="set-up-advanced-audit-in-microsoft-365"></a>[高度な監査] を [Microsoft 365
 
 組織に高度な監査をサポートするサブスクリプションとエンド ユーザー ライセンスがある場合は、次の手順を実行して、Advanced Audit の追加機能を設定して使用します。
 
-![高度な監査を設定するためのワークフロー](../media/AdvancedAuditWorkflow.png)
+![高度な監査を設定するワークフロー。](../media/AdvancedAuditWorkflow.png)
 
 ## <a name="step-1-set-up-advanced-audit-for-users"></a>手順 1: ユーザーの高度な監査を設定する
 

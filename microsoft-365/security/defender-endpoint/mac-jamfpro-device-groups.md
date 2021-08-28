@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8d7994ac207f6f066b5cfe69de75ddfb608ddd40fa53105492a5076aced01de5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6a9c3a567bed4ac337e804e53807570c53304027
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833714"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568146"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-on-macos-device-groups-in-jamf-pro"></a>Jamf デバイス グループの macOS デバイス グループで Microsoft Defender for Endpoint をセットアップPro
 
@@ -33,7 +33,7 @@ ms.locfileid: "53833714"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 グループ ポリシーの組織単位 (OUs)、Microsoft Endpoint Configuration Managerコレクション、Intune のデバイス グループに似たデバイス グループを設定します。
 
@@ -41,15 +41,15 @@ ms.locfileid: "53833714"
 
 2. [**新規**]を選択します。 
 
-    ![Jamf Pro1 のイメージ](images/jamf-pro-static-group.png)
+    ![Jamf Pro1 のイメージ。](images/jamf-pro-static-group.png)
 
 3. 表示名を指定し、[保存] を **選択します**。
 
-    ![Jamf Pro2 の画像](images/jamfpro-machine-group.png)
+    ![Jamf Pro2 のイメージ。](images/jamfpro-machine-group.png)
 
 4. これで、[静的コンピューター グループ] の **下に Contoso のコンピューター** **グループが表示されます**。
 
-    ![Jamf Pro3 の画像](images/contoso-machine-group.png)
+    ![Jamf Pro3 の画像。](images/contoso-machine-group.png)
 
 ## <a name="next-step"></a>次の手順
 - [Jamf の macOS ポリシーで Microsoft Defender for Endpoint をセットアップPro](mac-jamfpro-policies.md)

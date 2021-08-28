@@ -16,12 +16,12 @@ ms.collection:
 description: 管理者は、セキュリティ ポータルのテナント許可/ブロック一覧で許可とブロックを管理する方法について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6223720f6977d3c4399ad36e1ad29894feabe63d
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 4ff987128047522a5f8cb20a76c81bd950c1b7cf
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533689"
+ms.locfileid: "58568734"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>テナントの許可/禁止リストを管理する
 
@@ -149,7 +149,7 @@ Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Pro
    - **ファイル**: アクションで結果をグループ **化できます**。
    - **スプーフィン** グ : アクションまたはスプーフィングの種類 **で結果** を **グループ化できます**。
 
-   [ **検索]** をクリックし、値のすべてまたは一部を入力し、Enter キーを押して特定の値を検索します。 完了したら、[検索のクリア] アイコン [検索のクリア] ![ ](../../media/m365-cc-sc-close-icon.png) **をクリックします**。
+   [ **検索]** をクリックし、値のすべてまたは一部を入力し、Enter キーを押して特定の値を検索します。 完了したら、[検索アイコンのクリア ![ ] をクリックします。](../../media/m365-cc-sc-close-icon.png) **検索をクリアします**。
 
    [フィルター **] をクリック** して結果をフィルター処理します。 表示されるフィルター フライアウト **で** 使用できる値は、選択したタブによって異なる。
 

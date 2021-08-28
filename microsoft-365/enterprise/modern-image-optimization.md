@@ -21,12 +21,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: SharePoint Online に含まれるツールを使用して、SharePointモダン サイト ページの画像を最適化する方法について学習します。
-ms.openlocfilehash: 68e309974cca8af2280dddfc76e744234a1e17ae8b5deac465c1bbadcf4722fa
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0bc9132a890c25804fa262bd494452db702d2a06
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53870494"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570067"
 ---
 # <a name="optimize-images-in-sharepoint-online-modern-site-pages"></a>SharePoint Online のモダン サイト ページで画像を最適化する
 
@@ -53,7 +53,7 @@ SharePoint のモダン サイトを SharePoint 用ページ診断ツールを�
 
 結果の [**注意が必要です**] セクションに [**大きな画像が検出されました**] という結果が表示された場合は、結果をクリックすると追加の詳細が表示されます。
 
-![ページ診断ツールの結果](../media/modern-portal-optimization/pagediag-large-images.png)
+![ページ診断ツールの結果。](../media/modern-portal-optimization/pagediag-large-images.png)
 
 ## <a name="remediate-large-image-issues"></a>大きな画像に関する問題を修復する
 
@@ -61,12 +61,12 @@ SharePoint のモダン サイトを SharePoint 用ページ診断ツールを�
 
 パフォーマンスの問題を修復するためにページを修正する前に、分析結果のページ読み込み時間をメモしてください。 修正後にツールをもう一度実行して新しい結果がベースライン基準内にあるかどうかを確認し、新しいページ読み込み時間をチェックして改善されたかどうかを確認します。
 
-![ページ読み込み時間の結果](../media/modern-portal-optimization/pagediag-page-load-time.png)
+![ページ読み込み時間の結果。](../media/modern-portal-optimization/pagediag-page-load-time.png)
 
 >[!NOTE]
 >ページ読み込み時間は、ネットワーク負荷、時間帯、その他の一時的な状態など、さまざまな要素によって異なります。 結果を平均化するために、変更の前後に数回に渡ってページ読み込み時間をテストする必要があります。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [SharePoint Online のパフォーマンスをチューニングする](tune-sharepoint-online-performance.md)
 

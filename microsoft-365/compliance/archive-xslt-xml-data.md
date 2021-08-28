@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、Veritas から XSLT/XML データをインポートおよびアーカイブするコネクタを、Microsoft 365。 このコネクタを使用すると、Microsoft 365 のサード パーティデータ ソースからデータをアーカイブし、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティ データを管理できます。
-ms.openlocfilehash: 76b7ebf77806812e69c5ed31edc82c7c9f0fbe0cd8983ee78500f991e18bc192
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f2cd501334718f7b2e056d96d5b07392459b441e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53880904"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570151"
 ---
 # <a name="set-up-a-connector-to-archive-xsltxml-data"></a>XSLT/XML データをアーカイブするコネクタをセットアップする
 
@@ -29,7 +29,7 @@ XSLT/XML データがユーザー メールボックスに格納された後、�
 
 次の概要では、コネクタを使用して XSLT/XML ソース データをアーカイブするプロセスについて説明Microsoft 365。
 
-![XSLT/XML データのアーカイブ ワークフロー](../media/XSLT-XMLConnectorWorkflow.png)
+![XSLT/XML データのアーカイブ ワークフロー。](../media/XSLT-XMLConnectorWorkflow.png)
 
 1. 組織は XSLT/XML ソースを使用して XSLT/XML サイトを設定および構成します。
 

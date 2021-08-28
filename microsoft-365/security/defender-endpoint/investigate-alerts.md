@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 7f8ecf697049f5e4fe6f4c1ee153dc621b66a1c9433e1e13dff2717d0adec74f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 45bf3204a092bac6597c4e43f4ca29dbc06cd631
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53793601"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569347"
 ---
 # <a name="investigate-alerts-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint のアラートを調査する
 
@@ -34,7 +34,7 @@ ms.locfileid: "53793601"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigatealerts-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigatealerts-abovefoldlink)
 
 ネットワークに影響を与えるアラートを調査し、その意味と解決方法を理解します。
 
@@ -53,7 +53,7 @@ ms.locfileid: "53793601"
 > [!NOTE]
 > [アラート ストーリー] セクションには複数のアラートが含まれている場合があります。選択したアラートの前または後に、同じ実行ツリーに関連する追加のアラートが表示されます。
 
-![アラートにフォーカスがあるアラート ストーリーと、展開されたカードの例](images/alert-story-tree.png)
+![アラートにフォーカスがあるアラート ストーリーと、展開されたカードの例です。](images/alert-story-tree.png)
 
 ## <a name="take-action-from-the-details-pane"></a>詳細ウィンドウからアクションを実行する
 
@@ -63,17 +63,17 @@ ms.locfileid: "53793601"
 
 真のアラートとして分類する場合は、下の図に示すように、決定を選択できます。
 
-![解決済みアラートと判定ドロップダウンが展開された詳細ウィンドウのスニペット](images/alert-details-resolved-true.png)
+![解決済みアラートと判定ドロップダウンが展開された詳細ウィンドウのスニペット。](images/alert-details-resolved-true.png)
 
 業務用アプリケーションで誤ったアラートが発生している場合は、この種類のアラートを今後回避するために抑制ルールを作成します。
 
-![抑制ルールが強調表示された詳細ウィンドウのアクションと分類](images/alert-false-suppression-rule.png)
+![抑制ルールが強調表示された詳細ウィンドウのアクションと分類。](images/alert-false-suppression-rule.png)
 
 > [!TIP]
 > 上記に記載されていない問題が発生した場合は、ボタンを使用してフィードバックを提供するか、サポート 🙂 チケットを開きます。
 
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [Microsoft Defender for Endpoint アラート キューを表示して整理する](alerts-queue.md)
 - [エンドポイント通知の Microsoft Defender の管理](manage-alerts.md)
 - [Defender for Endpoint アラートに関連付けられたファイルを調査する](investigate-files.md)

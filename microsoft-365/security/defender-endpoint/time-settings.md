@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1e2ba8b02bc6be4001e7083677fc69824c98ec7a2bc0ca61a6beadcd1199c9de
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 65ed76f115b9e9f39e18d69a50e736c561d18c7c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817233"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569971"
 ---
 # <a name="microsoft-365-defender-time-zone-settings"></a>Microsoft 365 Defenderの設定
 
@@ -33,7 +33,7 @@ ms.locfileid: "53817233"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-settings-abovefoldlink)
 
-[タイム ゾーン **] メニュー** の [タイム ゾーン設定] アイコン 1 を使用して、タイム ゾーンを構成し、ライセンス ![ ](images/atp-time-zone.png) 情報を表示します。
+[タイム ゾーン **] メニューの** ![ [タイム ゾーン設定] アイコン 1 を使用します。](images/atp-time-zone.png) をクリックして、タイム ゾーンを構成し、ライセンス情報を表示します。
 
 ## <a name="time-zone-settings"></a>タイム ゾーンの設定
 
@@ -45,7 +45,7 @@ Microsoft Defender for Endpoint では、協定世界時 (UTC) または現地�
 
 現在のタイム ゾーン設定は、[エンドポイント用 Microsoft Defender] メニューに表示されます。 表示されるタイム ゾーンは、[タイム ゾーン] メニュー **で変更** できます。
 
-![タイム ゾーン設定アイコン2](images/atp-time-zone-menu.png).
+![タイム ゾーン設定アイコン 2。](images/atp-time-zone-menu.png).
 
 ### <a name="utc-time-zone"></a>UTC タイム ゾーン
 

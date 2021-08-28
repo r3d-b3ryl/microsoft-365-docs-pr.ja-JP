@@ -20,12 +20,12 @@ ms.custom:
 description: 管理者は、Microsoft 365 E5 または Microsoft Defender for Office 365 プラン 2 組織の攻撃シミュレーションとトレーニングに関する展開に関する考慮事項とよく寄せられる質問について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 12d00fee09ca21245812917fb00cff89c322e4112df970b25f853032344f6faf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a47f953b0c87e3ab88df45f150bd2e6d71611664
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53873407"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568098"
 ---
 # <a name="attack-simulation-training-deployment-considerations-and-faq"></a>攻撃シミュレーション トレーニングの展開に関する考慮事項と FAQ
 
@@ -41,7 +41,7 @@ ms.locfileid: "53873407"
 
 URL レピュテーション サービスは、攻撃シミュレーション トレーニングで使用される 1 つ以上の URL を安全でないと識別する場合があります。 Google セーフ Chrome での閲覧は、詐欺サイトの先行メッセージを使用して、シミュレートされたフィッシング URL の一部 **をブロック** します。 多くの URL レピュテーション ベンダーと一緒にシミュレーション URL を常に許可しますが、必ずしも完全にカバーできるとは限らない。
 
-![Google Chrome でのサイト先行警告の欺瞞](../../media/attack-sim-chrome-deceptive-site-message.png)
+![Google Chrome のサイト先行警告を欺く。](../../media/attack-sim-chrome-deceptive-site-message.png)
 
 この問題は、この問題に影響Microsoft Edge。
 
@@ -69,7 +69,7 @@ URL レピュテーション サービスは、攻撃シミュレーション �
 シミュレーション電子メール メッセージを実際に受信するユーザーの数が、シミュレーションの対象となったユーザーの数よりも少ない可能性があります。 次の種類のユーザーは、ターゲットの検証の一部として除外されます。
 
 - 受信者の電子メール アドレスが無効です。
-- ゲストユーザー
+- ゲスト ユーザー。
 - 現在アクティブでなくなったユーザー (Azure Azure Active Directory) AD。
 
 有効なメールボックスを持つゲスト以外のユーザーだけがシミュレーションに含まれます。 配布グループまたはメールが有効なセキュリティ グループを使用してユーザーを対象とする場合は[、Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)の[Get-DistributionGroupMember](/powershell/module/exchange/get-distributiongroupmember)コマンドレットを使用して配布グループメンバーを表示および検証できます。
@@ -98,11 +98,11 @@ URL レピュテーション サービスは、攻撃シミュレーション �
 
 シミュレーションがスケジュールされた状態 **の間** 、シミュレーション レポートはほとんどの場合空になります。 この段階では、シミュレーション エンジンはターゲット ユーザーの電子メール アドレスを解決し、配布グループを展開し、リストからゲスト ユーザーを削除します。
 
-![スケジュールされた状態でのレポート](../../media/attack-sim-empty-reporting.png)
+![スケジュールされた状態でのレポート。](../../media/attack-sim-empty-reporting.png)
 
 シミュレーションが進行中のステージ **に入** った後、レポートにトリクルを開始する情報が表示されます。
 
-![進行中の状態でのレポート](../../media/attack-sim-in-progress.png)
+![進行中の状態でのレポート。](../../media/attack-sim-in-progress.png)
 
 個々のシミュレーション レポートが進行中の状態に移行した後に更新するには、最大 30 分 **かかる場合** があります。 シミュレーションが完了状態に達するまで、レポート データは引き続 **き作成** されます。 レポートの更新は、次の間隔で行われます。
 
@@ -168,7 +168,7 @@ A: ユーザー アカウントMicrosoft 365またはOffice 365、言語の構�
 
 A: はい、可能です。 ウィザードの最後 **の [シミュレーションの** 確認] ページで、新しいシミュレーションを作成するには、テストを送信 **するオプションがあります**。 このオプションは、現在ログインしているユーザーにフィッシング シミュレーション メッセージのサンプルを送信します。 受信トレイでフィッシング メッセージを検証した後、シミュレーションを送信できます。
 
-![[シミュレーションの確認] ページの [テスト] ボタンを送信する](../../media/attack-sim-review-simulation-page.png)
+![[シミュレーションの確認] ページの [テスト] ボタンを送信します。](../../media/attack-sim-review-simulation-page.png)
 
 ### <a name="q-can-i-target-users-that-belong-to-a-different-tenant-as-part-of-the-same-simulation-campaign"></a>Q: 同じシミュレーション キャンペーンの一環として、別のテナントに属するユーザーをターゲットにできますか?
 

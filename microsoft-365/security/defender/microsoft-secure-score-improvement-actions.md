@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 6b1d684687c271150fa7e297c0a243ba61bd1b39
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: d67d92029ccb4da6711010b291dc2ad71bcaff70
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247932"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569887"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Microsoft Secure Score を使用してセキュリティの態勢を評価する
 
@@ -44,7 +44,7 @@ Microsoft セキュア スコアは組織のセキュリティ体制を測定す
 
 Microsoft Secure Score の概要ページで、これらのグループ間でのポイントの分割方法と使用可能なポイントを確認します。 また、合計スコアの全体表示、ベンチマーク比較によるセキュリティで保護されたスコアの履歴傾向、スコアを向上させるために実行できる優先順位付けされた改善アクションを取得できます。
 
-![Secure Score のホームページ](../../media/secure-score/secure-score-home-page.png)
+![Secure Score のホームページ。](../../media/secure-score/secure-score-home-page.png)
 
 ## <a name="check-your-current-score"></a>現在のスコアを確認する
 
@@ -60,7 +60,7 @@ Microsoft Secure Score の概要ページで、これらのグループ間での
 
 このビューは、すべての可能なスコア ビューを含めた場合の外観です。
 
-![計画スコア、現在のライセンス スコア、達成可能なスコアを含む安全なスコア](../../media/secure-score/secure-score-achievable.png)
+![計画スコア、現在のライセンス スコア、達成可能なスコアを含む、セキュリティで保護されたスコア。](../../media/secure-score/secure-score-achievable.png)
 
 ## <a name="take-action-to-improve-your-score"></a>スコアを上げるための対策
 
@@ -74,7 +74,7 @@ Microsoft Secure Score の概要ページで、これらのグループ間での
 
 特定の改善アクションを選択すると、ページ全体の飛び出しが表示されます。  
 
-![改善アクションの飛び出しの例](../../media/secure-score/secure-score-improvement-action-details.png)
+![改善アクションのフライアウトの例。](../../media/secure-score/secure-score-improvement-action-details.png)
 
 この操作を完了するには、いくつかの選択肢があります。
 

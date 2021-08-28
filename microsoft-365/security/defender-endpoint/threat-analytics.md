@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 211d8071d0b8fcf8c650acb15f2fa29ac9bed456b0c8eed8829a0c4502817d8d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a69a90db168bd58266c65c8573a233e1932e025c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817306"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568902"
 ---
 # <a name="track-and-respond-to-emerging-threats-through-threat-analytics"></a>脅威分析による新たな脅威の追跡と対応
 
@@ -66,7 +66,7 @@ ms.locfileid: "53817306"
 
 ダッシュボードから脅威を選択して、その脅威のレポートを表示します。
 
-![脅威分析ダッシュボードのイメージ](images/ta_dashboard.png)
+![脅威分析ダッシュボードのイメージ。](images/ta_dashboard.png)
 
 ## <a name="view-a-threat-analytics-report"></a>脅威分析レポートの表示
 
@@ -76,8 +76,8 @@ ms.locfileid: "53817306"
 
 [ **概要]** セクションには、詳細なアナリスト レポートのプレビューが表示されます。 また、組織に対する脅威の影響と、構成が正しく設定されていないデバイスや未パッチのデバイスによる露出を強調するグラフも提供されます。
 
-![脅威分析レポートの脅威分析レポートの概要セクションの ](images/ta-overview.png)
- _概要セクションのイメージ_
+![脅威分析レポートの概要セクションのイメージ。 ](images/ta-overview.png)
+_脅威分析レポートの概要セクション_
 
 #### <a name="assess-the-impact-to-your-organization"></a>組織への影響を評価する
 
@@ -112,7 +112,7 @@ ms.locfileid: "53817306"
 
 このセクションの軽減情報には、脅威と脆弱性の管理からの[](next-gen-threat-and-vuln-mgt.md)データが組み込まれており、レポート内のさまざまなリンクからの詳細なドリルダウン情報も提供します。
 
-![脅威分析レポートの [軽減策] セクションのイメージ](images/ta-mitigations.png)
+![脅威分析レポートの [軽減策] セクションのイメージ。](images/ta-mitigations.png)
 
 _脅威分析レポートの [軽減策] セクション_
 
@@ -126,7 +126,7 @@ _脅威分析レポートの [軽減策] セクション_
 - デバイスは、サービスにデータを送信していない場合は、"使用不可" としてカウントされます。
 - ウイルス対策関連の統計情報は、ユーザー設定Microsoft Defender ウイルス対策されます。 サードパーティのウイルス対策ソリューションを使用するデバイスは、"公開" として表示されます。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [高度な検索で脅威を事前に検出する](advanced-hunting-overview.md)
 - [[アナリスト レポート] セクションについて](threat-analytics-analyst-reports.md)

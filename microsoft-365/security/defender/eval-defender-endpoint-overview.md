@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 8f5ddd873d5303748bab5ba391cfbf1d4f2b0066
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: b630c1b10722056c3d201eb300aba8f68a38bbca
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256518"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568854"
 ---
 # <a name="evaluate-microsoft-defender-for-endpoint-overview"></a>エンドポイントの Microsoft Defender の概要を評価する
 
@@ -40,7 +40,7 @@ ms.locfileid: "58256518"
 
 次の手順を使用して、Microsoft Defender for Endpoint を有効にしてパイロットします。
 
-![Defender 評価環境に Microsoft Defender for Endpoint を追加する手順](../../media/defender/m365-defender-endpoint-eval-steps.png)
+![Microsoft Defender for Endpoint を Defender 評価環境に追加する手順。](../../media/defender/m365-defender-endpoint-eval-steps.png)
 
 
 次の表に、図の手順を示します。

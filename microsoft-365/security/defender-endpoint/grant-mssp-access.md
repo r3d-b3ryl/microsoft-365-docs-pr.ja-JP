@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e14188a797a99b506e3714ab3f0974e5d9f0c4578c495ae1c620db96180807f8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4b86df7e4b5ef5a0717e3f646726e9ef3ac4993f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53890530"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570043"
 ---
 # <a name="grant-managed-security-service-provider-mssp-access-preview"></a>管理セキュリティ サービス プロバイダー (MSSP) アクセス権の付与 (プレビュー)
 
@@ -32,7 +32,7 @@ ms.locfileid: "53890530"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-mssp-support-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-mssp-support-abovefoldlink)
 
 > [!IMPORTANT]
 > 一部の情報は、市販される前に大幅に変更される可能性があるプレリリース製品に関するものです。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
@@ -59,7 +59,7 @@ ms.locfileid: "53890530"
 
     カスタマー Microsoft Defender セキュリティ センター で RBAC を有効にするには、グローバル管理者またはセキュリティ管理者の権限を持つユーザー アカウントから 設定 > アクセス許可 **>** ロールと "ロールを有効にする" にアクセスします。
 
-    ![MSSP アクセスのイメージ](images/mssp-access.png)
+    ![MSSP アクセスのイメージ。](images/mssp-access.png)
 
     次に、MSSP SOC Tier のニーズを満たす RBAC ロールを作成します。 [割り当てられたユーザー グループ] を使用して、作成されたユーザー グループにこれらの役割をリンクします。
 
@@ -89,7 +89,7 @@ ms.locfileid: "53890530"
 
     これを行うには、テナントの顧客AD、Identity Governance: Catalogs にアクセスし、新しいカタログ **を追加します**。 この例では **、MSSP Accesses を呼び出します**。
 
-    ![新しいカタログのイメージ](images/goverance-catalog.png)
+    ![新しいカタログのイメージ。](images/goverance-catalog.png)
 
     詳細については、「リソースのカタログ [を作成する」を参照してください](/azure/active-directory/governance/entitlement-management-catalog-create)。
 
@@ -105,7 +105,7 @@ ms.locfileid: "53890530"
     - 365 日後に自動アクセスが期限切れになる
 
     > [!div class="mx-imgBorder"]
-    > ![新しいアクセス パッケージのイメージ](images/new-access-package.png)
+    > ![新しいアクセス パッケージのイメージ。](images/new-access-package.png)
 
     詳細については、「新しいアクセス [パッケージを作成する」を参照してください](/azure/active-directory/governance/entitlement-management-access-package-create)。
 
@@ -114,7 +114,7 @@ ms.locfileid: "53890530"
     [マイ アクセス ポータル] リンクは、MSSP SOC アナリストが作成したアクセス パッケージを介してアクセスを要求するために使用されます。 リンクは永続的です。つまり、同じリンクが新しいアナリストのために時間の間に使用される可能性があります。 アナリスト要求は、MSSP アナリスト承認者による承認のためにキュー **に入ります**。
 
     > [!div class="mx-imgBorder"]
-    > ![アクセス プロパティのイメージ](images/access-properties.png)
+    > ![アクセス プロパティのイメージ。](images/access-properties.png)
 
     リンクは、各アクセス パッケージの概要ページに表示されます。
 
@@ -132,7 +132,7 @@ ms.locfileid: "53890530"
 
     この時点で、アナリスト アクセスが準備され、各アナリストが顧客のサービスにアクセスMicrosoft Defender セキュリティ センター。`https://securitycenter.Microsoft.com/?tid=<CustomerTenantId>`
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [MSSP カスタマー ポータルにアクセスする](access-mssp-portal.md)
 - [アラート通知を構成する](configure-mssp-notifications.md)

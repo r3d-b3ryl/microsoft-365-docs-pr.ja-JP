@@ -2,8 +2,8 @@
 title: 可視性と分析情報の使用を開始する
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 可視性と分析情報の使用を開始します。
-ms.openlocfilehash: 04c8403302996bf8c26a6cb5352c5d92ec51f9ff
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 30871804c9e8cf4e548698ecb326917baef36c37
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541177"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569659"
 ---
 # <a name="get-started-with-visibility-and-insights"></a>可視性と分析情報の使用を開始する
 
@@ -27,17 +27,19 @@ ms.locfileid: "53541177"
 
 開始する最初の場所は、[https://aka.ms/appgovernance](https://aka.ms/appgovernance) のアプリ ガバナンス ダッシュボードです。 アプリ ガバナンス データを表示するには、サインイン アカウントに[これらのアプリ ガバナンス管理者の役割](app-governance-get-started.md#administrator-roles)のいずれかが必要であることに注意してください。
 
-![Microsoft 365 コンプライアンス センターの [アプリ ガバナンス概要] ページ](..\media\manage-app-protection-governance\mapg-cc-overview.png)
+![Microsoft 365 コンプライアンス センターの [アプリ ガバナンス概要] ページ。](..\media\manage-app-protection-governance\mapg-cc-overview.png)
 
-**[Office 365 管理センター] > [Microsoft 365 コンプライアンス センター] > [アプリ ガバナンス] > [概要ページ]** からアプリ ガバナンス ダッシュボードにアクセスすることもできます。
+**[Office 365] > [Microsoft 365 コンプライアンス センター] > [アプリ ガバナンス] > [概要ページ]** からアプリ ガバナンス ダッシュボードにアクセスすることもできます。
 
 ## <a name="whats-available-on-the-dashboard"></a>ダッシュボードで使用できる機能
 
 ダッシュボードには、テナント内の Microsoft 365 アプリ エコシステムのコンポーネントの概要が含まれています。
 
 - **テナントの概要**: 主要なアプリとアラートのカテゴリの数。
-- **検出およびポリシー アラート**: テナント内の最新のアクティブなアラート
-- **データとリソースへのアクセス**: アプリケーション API アクセスと、テナント内の上位リソースの全体的な使用状況を集約します。 グラフの各月の列にマウスでポイントすると、対応する値が表示されます。
+- **上位のアラート**: テナント内の最新のアクティブなアラート 10 件
+- **データとリソースへのアクセス**: グラフの各月の列にマウスでポイントすると、対応する値が表示されます。
+    - **過去 4 か月間のデータ アクセス**: 過去 4 か月間に Graph API を通じてテナント内のすべてのアプリがアクセスした合計データを追跡します。現在、メールとファイルのアップロード/ダウンロードの使用状況のみが含まれています。
+    - **過去 4 か月間の上位リソース のデータ アクセス**: 過去 4 か月間のデータ使用状況、リソースの種類別に分類されます。現在、メールとファイルのアップロード/ダウンロードの使用状況のみが含まれています
 - **アプリの保護とガバナンスの改善**: アプリの使用法やアクセス許可ポリシーの作成など、推奨されるアクション。
 - **カテゴリ別の上位アプリ**: 次のカテゴリ別に並べ替えられた上位アプリ:
   

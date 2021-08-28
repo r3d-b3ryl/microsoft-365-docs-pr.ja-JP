@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 複数地域および移動場所のオプションMicrosoft 365単一または複数のテナントを展開および管理します。
-ms.openlocfilehash: 6cf7ca2a754077172aa5d90752109ea6773378f7a6b7457ac158cc599ad06ba9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5dee78835de1e3e64f52f653f52ea4f32dcf6547
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53888409"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568446"
 ---
 # <a name="step-1-your-microsoft-365-for-enterprise-tenants"></a>手順 1. エンタープライズ Microsoft 365のユーザー 情報
 
@@ -34,7 +34,7 @@ ms.locfileid: "53888409"
 
 次に、テナントの既定の場所と Azure ADテナントをMicrosoft 365します。
 
-![Azure Microsoft 365テナントを持つ単一のADテナント](../media/tenant-management-overview/tenant-management-example-tenant.png)
+![Azure Microsoft 365テナントを持つ単一のADテナント。](../media/tenant-management-overview/tenant-management-example-tenant.png)
 
 ## <a name="multiple-tenants"></a>複数のテナント
 
@@ -49,7 +49,7 @@ ms.locfileid: "53888409"
 
 同じ既定のデータセンター geo に 2 つのテナント (テナント A とテナント B) がある組織の例を次に示します。 各テナントは、個別の Azure ADテナントとして使用されます。
 
-![Azure Microsoft 365テナントを持つ複数のADテナント](../media/tenant-management-overview/tenant-management-example-multi-tenant.png)
+![独自Microsoft 365 Azure テナントを持つ複数のADテナント。](../media/tenant-management-overview/tenant-management-example-multi-tenant.png)
 
 複数のテナントがある場合は、それらを管理し、ユーザーにサービスを提供する際に、制限と追加の考慮事項があります。
 
@@ -65,13 +65,13 @@ ms.locfileid: "53888409"
 
 クロステナント メールボックス移行前の 2 つのテナントとそのメールボックスの例を次に示します。
 
-![複数Microsoft 365テナントとそのメールボックス](../media/tenant-management-overview/tenant-management-cross-tenant-mailbox-before.png)
+![複数Microsoft 365テナントとそのメールボックス。](../media/tenant-management-overview/tenant-management-cross-tenant-mailbox-before.png)
 
 この図では、2 つの独立したテナントに独自のドメインと一連のメールボックスExchangeがあります。
 
 クロステナント メールボックスの移行後のターゲット テナント (テナント A) を次に示します。
 
-![テナント間メールボックスの移行後のターゲット テナント](../media/tenant-management-overview/tenant-management-cross-tenant-mailbox-after.png)
+![テナント間メールボックスの移行後のターゲット テナント。](../media/tenant-management-overview/tenant-management-cross-tenant-mailbox-after.png)
 
 この図では、1 つのテナントにドメインとメールボックスの両方のセットExchangeしています。
 
@@ -91,7 +91,7 @@ Microsoft 365 Multi-Geo を使用すると、データ常駐要件を満たす�
 
 ヨーロッパに既定の場所を持ち、北アメリカのサテライトの場所を持つ組織の例を次に示します。 どちらの場所も、単一のテナントAD同じグローバル Azure Microsoft 365共有します。
 
-![複数地域のテナントのMicrosoft 365例](../media/tenant-management-overview/tenant-management-example-multi-geo.png)
+![複数地域のテナントのMicrosoft 365します。](../media/tenant-management-overview/tenant-management-example-multi-geo.png)
 
 詳細については、「[Microsoft 365 Multi-Geo](../enterprise/microsoft-365-multi-geo.md)」を参照してください。
 
@@ -103,7 +103,7 @@ Microsoft は、引き続き新しいデータセンター geos を開き、Micr
 
 次に示すのは、Microsoft 365テナントが欧州連合 (EU) データセンター geo から英国 (英国) に移動された例です。
 
-![データセンター geo 間でMicrosoft 365テナントを移動する例](../media/tenant-management-overview/tenant-management-example-tenant-move.png)
+![データセンター geo 間でMicrosoft 365テナントを移動する例。](../media/tenant-management-overview/tenant-management-example-tenant-move.png)
 
 詳細については、「コア データを新しいデータセンター geos[にMicrosoft 365する」を参照してください](../enterprise/moving-data-to-new-datacenter-geos.md)。
 
@@ -130,7 +130,7 @@ Microsoft は、引き続き新しいデータセンター geos を開き、Micr
 
 新しいテナントの例を次に示します。
 
-![新しいテナントの例](../media/tenant-management-overview/tenant-management-tenant-build-step1.png)
+![新しいテナントの例。](../media/tenant-management-overview/tenant-management-tenant-build-step1.png)
 
 この図では、テナントには次の機能があります。
 
@@ -154,6 +154,6 @@ Microsoft は、引き続き新しいデータセンター geos を開き、Micr
 
 ## <a name="next-step"></a>次の手順
 
-[![手順 2.アクセス用にネットワーク用にテナントを最適化する](../media/tenant-management-overview/tenant-management-step-grid-networking.png)](tenant-management-networking.md)
+[![手順 2.アクセスのためにネットワーク用にテナントを最適化します。](../media/tenant-management-overview/tenant-management-step-grid-networking.png)](tenant-management-networking.md)
 
 ネットワークを[続行して、](tenant-management-networking.md)ワーカーからクラウド サービスへの最適なネットワークMicrosoft 365提供します。

@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: a403cfa7e4e2348827a9ff7f127a815c5ec4fdca0a239716dfc8453e16d116d8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5a38f1347c959cd52e0ae393fa60b4e9c371eb2a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53793048"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569995"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-storage-account"></a>Microsoft Defender for Endpoint を構成して、高度なハンティング イベントを自分のアカウントStorageする
 
@@ -32,7 +32,7 @@ ms.locfileid: "53793048"
 **適用対象:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configuresiem-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configuresiem-abovefoldlink)
 
 ## <a name="before-you-begin"></a>はじめに
 
@@ -54,7 +54,7 @@ ms.locfileid: "53793048"
 
 6. アカウント リソース **ID Storage入力します**。 Storage アカウント リソース **ID を** 取得するには [、Azure portal](https://ms.portal.azure.com/) > プロパティ タブの Storage アカウント ページに移動し、> アカウント リソース ID の下のStorage **をコピーします**。
 
-   ![イベント ハブ リソース ID1 のイメージ](images/storage-account-resource-id.png)
+   ![イベント ハブ リソース ID1 のイメージ。](images/storage-account-resource-id.png)
 
 7. ストリーミングするイベントを選択し、[保存] を **クリックします**。
 
@@ -62,7 +62,7 @@ ms.locfileid: "53793048"
 
 - BLOB コンテナーは、イベントの種類ごとに作成されます。 
 
-  ![イベント ハブ リソース ID2 のイメージ](images/storage-account-event-schema.png)
+  ![イベント ハブ リソース ID2 のイメージ。](images/storage-account-event-schema.png)
 
 - BLOB 内の各行のスキーマは、次の JSON です。 
 
@@ -99,9 +99,9 @@ ms.locfileid: "53793048"
 
 - デバイス情報イベントの例を次に示します。 
 
-  ![イベント ハブ リソース ID3 のイメージ](images/machine-info-datatype-example.png)
+  ![イベント ハブ リソース ID3 のイメージ。](images/machine-info-datatype-example.png)
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [高度なハンティングの概要](advanced-hunting-overview.md)
 - [エンドポイント ストリーミング API 用 Microsoft Defender](raw-data-export.md)
 - [Microsoft Defender for Endpoint イベントを Azure ストレージ アカウントにストリーミングする](raw-data-export-storage.md)

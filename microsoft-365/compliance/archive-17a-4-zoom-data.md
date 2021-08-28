@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 17a-4 Zoom DataParser コネクタをセットアップして使用して、ズーム データをインポートおよびアーカイブする方法についてMicrosoft 365。
-ms.openlocfilehash: f62861214ca8265961d09f84560f347fe007e3e85788e0ee8af2bd30fbedb00c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2412969e2cbe5e6f601b9cf789585d931a4e7a3a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53796711"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569167"
 ---
 # <a name="set-up-a-connector-to-archive-zoom-data"></a>ズーム データをアーカイブするコネクタをセットアップする
 
@@ -29,7 +29,7 @@ ms.locfileid: "53796711"
 
 次の概要では、データ コネクタを使用してズーム データをアーカイブするプロセスについて説明Microsoft 365。
 
-![17a-4 のズーム データのアーカイブ ワークフロー](../media/ZoomDataParserConnectorWorkflow.png)
+![17a-4 のズーム データのアーカイブ ワークフロー。](../media/ZoomDataParserConnectorWorkflow.png)
 
 1. 組織は 17a-4 を使用して Zoom DataParser を設定および構成します。
 

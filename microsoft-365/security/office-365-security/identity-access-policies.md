@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 564747e31f7ab412d14790e42e6c8e901e382de4e08834b9a5b2f7c775454c74
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7b3e5e5f404d2758597b81a11d204baa629bff31
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53816997"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568758"
 ---
 # <a name="common-identity-and-device-access-policies"></a>共通 ID とデバイスのアクセス ポリシー
 
@@ -42,11 +42,11 @@ ms.locfileid: "53816997"
 
 次の図は、推奨されるポリシーのセットを示しています。 各ポリシーが適用する保護の層、およびポリシーが PC、電話、タブレット、またはデバイスの両方のカテゴリに適用されるかどうかを示します。 また、これらのポリシーを構成する場所も示します。
 
-[![ID とデバイス アクセスを構成するための一般的なポリシー](../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)
+[![ID とデバイス アクセスを構成するための一般的なポリシー。](../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)
 
 個々のポリシーへのリンクを含む 1 ページの PDF サマリーを次に示します。
 
-[![手引き資料の ID とデバイス保護用の親指Microsoft 365イメージ](../../media/microsoft-365-policies-configurations/MSFT-cloud-architecture-identity-device-protection-handout.png)](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br> [PDF として表示する](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) \|[PDF としてダウンロードする](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)
+[![手引き資料の ID とデバイス保護Microsoft 365イメージ。](../../media/microsoft-365-policies-configurations/MSFT-cloud-architecture-identity-device-protection-handout.png)](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br> [PDF として表示する](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) \|[PDF としてダウンロードする](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)
 
 この記事の残りの部分では、これらのポリシーを構成する方法について説明します。
 
@@ -55,7 +55,7 @@ ms.locfileid: "53816997"
 
 これらのタスクを実行する時間を与えるために、次の表に示す順序でベースライン ポリシーを実装することをお勧めします。 ただし、機密性の高い高度に規制されたレベルの保護に関する MFA ポリシーは、いつでも実装できます。
 
-|保護レベル|ポリシー|詳細|ライセンス|
+|保護レベル|ポリシー|詳細情報|ライセンス|
 |---|---|---|---|
 |**Baseline**|[サインイン リスクが中程度または高の場合に MFA *を* 要求 *する*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5またはMicrosoft 365 E3 E5 セキュリティ アドオンを使用する|
 ||[先進認証をサポートしないクライアントはブロックする](#block-clients-that-dont-support-multi-factor)|最新の認証を使用しないクライアントは条件付きアクセス ポリシーをバイパスできます。そのため、これらをブロックすることが重要です。|Microsoft 365 E3 または E5|
@@ -77,7 +77,7 @@ ms.locfileid: "53816997"
 
 MFA を要求するグループの割り当てと除外の例を次に示します。
 
-![MFA ポリシーのグループ割り当てと除外の例](../../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png)
+![MFA ポリシーのグループ割り当てと除外の例。](../../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png)
 
 結果は次のとおりです。
 
@@ -95,7 +95,7 @@ MFA を要求するグループの割り当てと除外の例を次に示しま�
 
 これらの推奨事項のAD作成された Azure のすべてのグループは、そのグループとしてMicrosoft 365があります。 これは、ドキュメントをセキュリティで保護する際に、Microsoft Teamsラベルを展開SharePoint。
 
-![グループを作成するMicrosoft 365例](../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png)
+![グループを作成するMicrosoft 365します。](../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png)
 
 ## <a name="require-mfa-based-on-sign-in-risk"></a>サインイン リスクに基づいて MFA を要求する
 
@@ -112,7 +112,7 @@ MFA を要求するグループの割り当てと除外の例を次に示しま�
 
 [割り **当て] セクションで、次の設定を** 行います。
 
-|Setting|[プロパティ]|値|注|
+|設定|[プロパティ]|値|注|
 |---|---|---|---|
 |ユーザーとグループ|含める|**[ユーザーとグループ] >グループ** を選択する: 対象のユーザー アカウントを含む特定のグループを選択します。|パイロット ユーザー アカウントを含むグループから開始します。|
 ||除外|**ユーザーとグループ**: 条件付きアクセス例外グループを選択します。サービス アカウント (アプリ ID)。|メンバーシップは、必要に応じて一時的に変更する必要があります。|
@@ -125,7 +125,7 @@ MFA を要求するグループの割り当てと除外の例を次に示しま�
 
 対象とする保護レベルに基づいてリスク レベルの設定を適用します。
 
-|保護のレベル|必要なリスク レベルの値|アクション|
+|保護のレベル|必要なリスク レベルの値|Action|
 |---|---|---|
 |基準|高、中|両方を確認します。|
 |機密|高、中、低|3 つすべてがチェックされます。|
@@ -134,7 +134,7 @@ MFA を要求するグループの割り当てと除外の例を次に示しま�
 
 [アクセス制御 **] セクションで、次の操作を** 行います。
 
-|Setting|[プロパティ]|値|アクション|
+|設定|[プロパティ]|値|Action|
 |---|---|---|---|
 |許可|**Grant access**||選択|
 |||**多要素認証を要求する**|小切手|
@@ -155,7 +155,7 @@ MFA を要求するグループの割り当てと除外の例を次に示しま�
 
 [割り **当て] セクションで、次の設定を** 行います。
 
-|Setting|[プロパティ]|値|注|
+|設定|[プロパティ]|値|注|
 |---|---|---|---|
 |ユーザーとグループ|含める|**[ユーザーとグループ] >グループ** を選択する: 対象のユーザー アカウントを含む特定のグループを選択します。|パイロット ユーザー アカウントを含むグループから開始します。|
 ||除外|**ユーザーとグループ**: 条件付きアクセス例外グループを選択します。サービス アカウント (アプリ ID)。|メンバーシップは、必要に応じて一時的に変更する必要があります。|
@@ -165,7 +165,7 @@ MFA を要求するグループの割り当てと除外の例を次に示しま�
 
 [アクセス制御 **] セクションで、次の操作を** 行います。
 
-|Setting|[プロパティ]|値|アクション|
+|設定|[プロパティ]|値|Action|
 |---|---|---|---|
 |許可|**アクセスをブロックする**||選択|
 ||**選択したコントロールすべてが必要**||選択|
@@ -187,7 +187,7 @@ What if ツール [を使用して](/azure/active-directory/active-directory-con
 
 [割り **当て] セクションで、次の設定を** 行います。
 
-|型|[プロパティ]|値|アクション|
+|型|[プロパティ]|値|Action|
 |---|---|---|---|
 |Users|含める|**すべてのユーザー**|選択|
 |ユーザーのリスク|**High**||選択|
@@ -195,7 +195,7 @@ What if ツール [を使用して](/azure/active-directory/active-directory-con
 
 2 番目の **[割り当て] セクションで、次の設定を** 行います。
 
-|型|[プロパティ]|値|アクション|
+|型|[プロパティ]|値|Action|
 |---|---|---|---|
 |Access|**SSL 経由でのみ**||選択|
 |||**パスワードの変更を必須とする**|小切手|
@@ -223,7 +223,7 @@ APP データ保護フレームワークは、3 つの異なる構成レベル�
 
 「Identity and device [access configurations」](microsoft-365-policies-configurations.md)で概説されている原則を使用して、ベースラインおよび機密保護層は、レベル 2 エンタープライズ拡張データ保護設定と密接にマップされます。 高度に規制された保護層は、レベル 3 エンタープライズの高データ保護設定に密接にマップされます。
 
-|保護レベル|アプリ保護ポリシー|詳細|
+|保護レベル|アプリ保護ポリシー|詳細情報|
 |---|---|---|
 |基準|[レベル 2 の拡張データ保護](/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|レベル 2 で適用されるポリシー設定には、レベル 1 に推奨されるポリシー設定すべてが含まれています。以下のポリシー設定に追加または更新して、レベル 1 よりも多くのコントロールとより高度な構成を実装します。|
 |機密|[レベル 2 の拡張データ保護](/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|レベル 2 で適用されるポリシー設定には、レベル 1 に推奨されるポリシー設定すべてが含まれています。以下のポリシー設定に追加または更新して、レベル 1 よりも多くのコントロールとより高度な構成を実装します。|
@@ -311,7 +311,7 @@ iOS/iPadOS セキュリティ構成フレームワークは、いくつかの異
 
 「Identity and device [access configurations」](microsoft-365-policies-configurations.md)で説明されている原則を使用して、基準計画と機密性の高い保護層は、レベル 2 の強化されたセキュリティ設定と密接にマップされます。 高度に規制された保護層は、レベル 3 の高セキュリティ設定に密接にマップされます。
 
-|保護レベル  |デバイス ポリシー |詳細  |
+|保護レベル  |デバイス ポリシー |詳細情報  |
 |---------|---------|---------|
 |基準     |セキュリティの強化 (レベル 2)         |レベル 2 で適用されるポリシー設定には、レベル 1 に推奨されるポリシー設定すべてが含まれています。以下のポリシー設定に追加または更新して、レベル 1 よりも多くのコントロールとより高度な構成を実装します。         |
 |機密     |セキュリティの強化 (レベル 2)         |レベル 2 で適用されるポリシー設定には、レベル 1 に推奨されるポリシー設定すべてが含まれています。以下のポリシー設定に追加または更新して、レベル 1 よりも多くのコントロールとより高度な構成を実装します。         |
@@ -343,7 +343,7 @@ Android の場合Enterprise完全に管理されたデバイスの場合:
 
 Android Enterpriseプロファイル デバイスの場合:
 
-|保護レベル  |デバイス ポリシー |詳細  |
+|保護レベル  |デバイス ポリシー |詳細情報  |
 |---------|---------|---------|
 |基準     |作業プロファイル: 基本セキュリティ (レベル 1)      |該当なし         |
 |機密     |作業プロファイル: 基本セキュリティ (レベル 1)         |該当なし         |
@@ -359,7 +359,7 @@ Android Enterpriseプロファイル デバイスの場合:
 
 [**デバイスの正常性> Windows正常性構成証明サービスの評価ルール** については、次の表を参照してください。
 
-|プロパティ|値|アクション|
+|プロパティ|値|Action|
 |---|---|---|
 |BitLocker を要求する|必須|選択|
 |デバイスでセキュア ブートを有効にする必要がある|必須|選択|
@@ -372,15 +372,15 @@ Android Enterpriseプロファイル デバイスの場合:
 
 システム **セキュリティについては、** 次の表を参照してください。
 
-|型|[プロパティ]|値|アクション|
+|型|[プロパティ]|値|Action|
 |---|---|---|---|
 |パスワード|モバイル デバイスのロックを解除するためにパスワードを要求する|必須|選択|
 ||単純なパスワード|ブロック|選択|
 ||パスワードの種類|デバイスの既定値|選択|
 ||パスワードの最小文字数|6 |種類|
-||パスワードが必要になる前の最大非アクティブ時間 (分)|15|種類 <p> この設定は、Android バージョン 4.0 以上または KNOX 4.0 以上でサポートされています。 iOS デバイスの場合、iOS 8.0 以上でサポートされています。|
+||パスワードが必要になる前の最大非アクティブ時間 (分)|15 |型 <p> この設定は、Android バージョン 4.0 以上または KNOX 4.0 以上でサポートされています。 iOS デバイスの場合、iOS 8.0 以上でサポートされています。|
 ||パスワードの有効期限 (日)|41|種類|
-||再利用を防止する以前のパスワードの数|5 |種類|
+||再利用を防止する以前のパスワードの数|5 |型|
 ||デバイスがアイドル状態から戻る際にパスワードを要求する (Mobile および Holographic)|必須|Windows 10以降に使用可能|
 |暗号化|デバイス上のデータ ストレージの暗号化|必須|選択|
 |デバイス セキュリティ|ファイアウォール|必須|選択|
@@ -394,7 +394,7 @@ Android Enterpriseプロファイル デバイスの場合:
 
 #### <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint
 
-|型|[プロパティ]|値|アクション|
+|型|[プロパティ]|値|Action|
 |---|---|---|---|
 |Microsoft Defender for Endpoint rules in the Microsoft エンドポイント マネージャー センター|[デバイスがコンピューター リスク スコアの下にあるか、または下にある必要がある](/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)|中|選択|
 |
@@ -453,6 +453,6 @@ Android Enterpriseプロファイル デバイスの場合:
 
 ## <a name="next-step"></a>次の手順
 
-[![手順 3: ゲストユーザーと外部ユーザーのポリシー](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png)](identity-access-policies-guest-access.md)
+[![手順 3: ゲストユーザーと外部ユーザーのポリシー。](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png)](identity-access-policies-guest-access.md)
 
 [ゲストユーザーと外部ユーザーのポリシー推奨事項の詳細](identity-access-policies-guest-access.md)

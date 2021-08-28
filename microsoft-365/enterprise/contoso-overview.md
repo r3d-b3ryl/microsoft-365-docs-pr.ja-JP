@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: ビジネスとしての Contoso Corporation について、さらに同社の世界規模のオフィスの階層構造について説明します。
-ms.openlocfilehash: 0690f942a72dedbd1247fcff9d6705ec638e189e
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 87508d47e5124f55a0302ca305b0dbd9de07e841
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356854"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569467"
 ---
 # <a name="overview-of-contoso-corporation"></a>Contoso Corporation の概要
 
@@ -29,7 +29,7 @@ Contoso Corporation は、パリに本社を置く多国籍企業です。 会�
 
 図 1 は、パリの本社オフィスと、さまざまな大陸の地域ハブオフィスとサテライト オフィスを示しています。
 
-![世界中の Contoso のオフィス](../media/contoso-overview/contoso-overview-fig1.png)
+![世界中の Contoso オフィス。](../media/contoso-overview/contoso-overview-fig1.png)
 
 **図 1: 世界中の Contoso オフィス**
  

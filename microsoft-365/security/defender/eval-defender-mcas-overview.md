@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 386a7efcc5cb47df835e8465c323e5cdfdf486c7
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 43792367d4ec1cd31c2122badd74a32bc7ae8a19
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247579"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569299"
 ---
 # <a name="evaluate-microsoft-cloud-app-security"></a>評価Microsoft Cloud App Security
 
@@ -39,7 +39,7 @@ ms.locfileid: "58247579"
 
 Microsoft クラウド アプリのセキュリティを有効にしてパイロットするには、次の手順を使用します。
 
-![Defender 評価環境に Microsoft Defender Office追加する手順](../../media/defender/m365-defender-office-eval-steps.png)
+![Defender 評価環境に Microsoft Defender を追加Office手順を実行します。](../../media/defender/m365-defender-office-eval-steps.png)
 
 
 

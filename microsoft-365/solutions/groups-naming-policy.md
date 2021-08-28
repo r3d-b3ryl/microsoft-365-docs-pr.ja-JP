@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 recommendations: false
 description: ユーザー グループの名前付けポリシーを作成するMicrosoft 365します。
-ms.openlocfilehash: 20d993ed4a799c68b33c9187c8b4b2021731e9415c6dc39726543343bec4517a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8c13e946644d25fc76745dc2c9f286bf204f6ba1
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853086"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568230"
 ---
 # <a name="microsoft-365-groups-naming-policy"></a>Microsoft 365グループの名前付けポリシー
 
@@ -128,9 +128,9 @@ Microsoft 365 グループに Azure AD 名前付けポリシーを使用する�
 5. 行ごとに **[属性]** **と [文字列** ] の間を選択し、属性または文字列を指定します。
 6. 必要なプレフィックスとサフィックスを追加した場合は、[保存] を **クリックします**。
 
-![グループの名前付けポリシー設定のスクリーンショット (Azure Active Directory](../media/groups-naming-policy-azure.png)
+![グループの名前付けポリシー設定のスクリーンショットをAzure Active Directory。](../media/groups-naming-policy-azure.png)
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [コラボレーション ガバナンス計画のステップ バイ ステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 

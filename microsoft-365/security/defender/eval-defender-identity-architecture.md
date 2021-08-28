@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 778ff1aebf7ea0a559d2ec5fb036de7218865df9
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: d7474a3cb2f04627c5da16f84dbde6d195021551
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256884"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569923"
 ---
 # <a name="review-architecture-requirements-and-key-concepts-for-microsoft-defender-for-identity"></a>Microsoft Defender for Identity のアーキテクチャ要件と主な概念を確認する
 
@@ -46,7 +46,7 @@ Defender for Identity は、オンプレミスの Active Directory ユーザー�
 
 次の図は、Defender for Identity のベースライン アーキテクチャを示しています。 
 
-![Microsoft Defender for Identity のアーキテクチャ](../../media/defender/m365-defender-identity-architecture.png)
+![Microsoft Defender for Identity のアーキテクチャ。](../../media/defender/m365-defender-identity-architecture.png)
 
 この図では、次の例を示します。
 - ドメイン コントローラーにインストールADは、ログとネットワーク トラフィックを解析し、分析とレポートのために Microsoft Defender for Identity に送信します。

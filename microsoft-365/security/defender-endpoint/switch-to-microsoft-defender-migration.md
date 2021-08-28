@@ -24,18 +24,18 @@ ms.custom: migrationguides
 ms.date: 08/16/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: 27f1dff34e8e403afb3a8e45263d30a587952da5
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.openlocfilehash: 6fa205147dc3fa042d9bdb3a1d03c67f2b2efecb
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58364483"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568878"
 ---
 # <a name="make-the-switch-from-non-microsoft-endpoint-protection-to-microsoft-defender-for-endpoint"></a>Microsoft 以外のエンドポイント保護から Microsoft Defender for Endpoint への切り替え
 
 Microsoft 以外のエンドポイント保護ソリューションから [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) (Defender for Endpoint) への切り替えについて考えている場合は、適切な場所にいます。 この記事をガイドとして使用します。
 
-:::image type="content" source="images/nonms-mde-migration.png" alt-text="エンドポイント保護ソリューションを Defender for Endpoint に切り替える":::
+:::image type="content" source="images/nonms-mde-migration.png" alt-text="エンドポイント保護ソリューションを Defender for Endpoint に切り替えます。":::
 
 Defender for Endpoint に切り替える場合は、アクティブ モードで Microsoft 以外のウイルス対策/マルウェア対策保護から始まります。 次に、パッシブ モードMicrosoft Defender ウイルス対策を構成し、デバイスを Defender for Endpoint にオンボードします。 次に、エンドポイント保護機能を構成し、Microsoft Defender ウイルス対策モードに設定し、すべてが正しく動作するように確認します。 最後に、Microsoft 以外のソリューションを削除します。
 
@@ -43,7 +43,7 @@ Defender for Endpoint に切り替える場合は、アクティブ モードで
 
 Defender for Endpoint への移行プロセスは、次の表に示す 3 つのフェーズに分けて実行できます。
 
-![MDE 移行プロセス](images/phase-diagrams/migration-phases.png)
+![MDE 移行プロセス。](images/phase-diagrams/migration-phases.png)
 
 |段階 |説明 |
 |--|--|

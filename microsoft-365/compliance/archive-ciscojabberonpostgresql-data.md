@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: PostgreSQL の Cisco Jabber からデータをインポートおよびアーカイブするために、Microsoft 365 コンプライアンス センター でコネクタをセットアップして使用する方法について説明Microsoft 365。
-ms.openlocfilehash: fc73fe178c59a50da81dd6e17ccf63e2e8b655419e24d0f17adcfffabc9449a4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b7372c61e70ca23108c6bb6d5aa98549738f553a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53861058"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569839"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-jabber-on-postgresql-data"></a>PostgreSQL データで Cisco Jabber をアーカイブするコネクタをセットアップする
 
@@ -32,7 +32,7 @@ PostgreSQL データの Cisco Jabber がユーザー メールボックスに格
 
 次の概要では、コネクタを使用して、Cisco Jabber on PostgreSQL データをアーカイブするプロセスMicrosoft 365。
 
-![PostgreSQL データの Cisco Jabber のアーカイブ ワークフロー](../media/CiscoJabberonPostgreSQLConnectorWorkflow.png)
+![PostgreSQL データの Cisco Jabber のアーカイブ ワークフロー。](../media/CiscoJabberonPostgreSQLConnectorWorkflow.png)
 
 1. 組織は、PostgreSQL の Cisco Jabber を使用して、PostgreSQL サイトで Cisco Jabber をセットアップおよび構成します。
 

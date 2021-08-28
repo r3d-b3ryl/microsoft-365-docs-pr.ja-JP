@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: ea4ce5d4883f3e3263a8885f1c347cf9f6fb8fb0c1d4062c1c2a843387d9aea3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 714cea98e5dd876a5a9e2568a6c8488f595f2f39
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53888070"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568710"
 ---
 # <a name="memory-regression-analysis"></a>メモリ回帰分析
 
@@ -39,12 +39,12 @@ M365 のテスト ベース ダッシュボードは、新しいリリース済�
 
 メモリ回帰によって発生する障害信号は、[メモリ使用率] の [テスト結果] ページの [M365 のテスト ベース] ダッシュボードに表示されます。
 
-![メモリ使用率の結果](Media/01_memory-utilization-results.png)
+![メモリ使用率の結果。](Media/01_memory-utilization-results.png)
 
 
 メモリ消費量が多いアプリケーションのエラーは、[テストの概要] ページ ```Fail``` にも表示されます。
 
-![テストの概要の結果](Media/02_test-summary.png)
+![概要の結果をテストします。](Media/02_test-summary.png)
 
 これらの障害信号を前もって提供することで、アプリケーションのエンド ユーザー エクスペリエンスを中断し、影響を与える可能性のある問題に明確にフラグを設定します。 
 
@@ -52,7 +52,7 @@ M365 のテスト ベース ダッシュボードは、新しいリリース済�
 
 メモリ信号は、すべてのテスト実行の M365 サービスのテスト ベースの [メモリ使用率] タブにキャプチャされます。 次の例は、2020 年 8 月のプレリリースセキュリティ更新プログラムに対するオンボード アプリケーション "Smoke Test Memory Stress" を使用した最近のテスト実行を示しています。 (このアプリケーションは、メモリ回帰を説明するためにチームによって作成されています)。
 
-![メモリ回帰の結果](Media/03_memory-regression%20comparison.png)
+![メモリ回帰の結果。](Media/03_memory-regression%20comparison.png)
 
 この例では、お気に入りのプロセス "USLTestMemoryStress.exe" プロセスは、リリース前の 8 月の更新プログラムで、リリース済みの 7 月の更新プログラムと比較して平均約 100 MB を消費するため、M365 のテスト ベースで回帰が特定されました。 
 
@@ -66,7 +66,7 @@ M365 のテスト ベース ダッシュボードは、新しいリリース済�
 
 これらの zip ファイルには、ETL ファイルに含まれるスクリプトの結果、メモリ、CPU パフォーマンス データなど、テスト実行の結果が含まれます。
 
-![メモリ回帰テスト ファイル](Media/04_memory-regression-test-files.png)
+![メモリ回帰テスト ファイル。](Media/04_memory-regression-test-files.png)
 
 2 つのテスト実行のログをダウンロードして解凍し、各フォルダー内の ETL ファイルを見つけて、それらを target.etl (プレリリース更新プログラムのテスト実行の場合) と baseline.etl (前回リリースされた更新プログラムのテスト実行用) に名前を変更して、探索とナビゲーションを簡略化できます。
  

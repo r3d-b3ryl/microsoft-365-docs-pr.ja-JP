@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: ケースが閉じたり削除された場合に、調査または法的ケースがサポートAdvanced eDiscoveryどうなるかを確認します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: f67fbbbc57af2802da8aa73803c3ba106b1a9fc55d608a1468feec327bc99fec
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1096223c3bc6d0648aa45207595c816e26e70da8
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53900132"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569635"
 ---
 # <a name="close-or-delete-an-advanced-ediscovery-case"></a>ケースを閉じるAdvanced eDiscovery削除する
 
@@ -46,7 +46,7 @@ ms.locfileid: "53900132"
 
 2. [**設定**] タブの [**ケース情報**] で、[**選択**] をクリックします。
 
-   ![ケースのケース情報のフライアウト ページにアクセスAdvanced eDiscoveryする](..\media\AeDSelectCaseInformation.png) 
+   ![ケースのケース情報のフライアウト ページにアクセスAdvanced eDiscoveryします。](..\media\AeDSelectCaseInformation.png) 
 
 3. [ケース情報] フライアウト ページ **の** 下部にある[アクション] をクリックし、[ケースを閉じる]**をクリックします**。
 

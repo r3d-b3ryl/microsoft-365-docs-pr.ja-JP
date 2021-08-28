@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: abadce38582408ec7105bdfcec7181210a775e85af2354be08bb33aca3b5764e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: dfc770e22f0fb4fc6dbb7e7d24bc1a8690d44032
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853770"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569959"
 ---
 # <a name="dashboard-insights---threat-and-vulnerability-management"></a>ダッシュボードの分析情報 - 脅威と脆弱性の管理
 
@@ -35,7 +35,7 @@ ms.locfileid: "53853770"
 - [脅威と脆弱性の管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 脅威と脆弱性の管理は Defender for Endpoint のコンポーネントであり、セキュリティ管理者とセキュリティ運用チームの両方に、次の固有の値を提供します。
 
@@ -59,9 +59,9 @@ ms.locfileid: "53853770"
 
 ## <a name="threat-and-vulnerability-management-dashboard"></a>脅威と脆弱性の管理ダッシュボード
 
-:::image type="content" source="../../media/tvmdashboard.png" lightbox="../../media/tvmdashboard.png" alt-text="デバイスの脅威と脆弱性管理ダッシュボード":::
+:::image type="content" source="../../media/tvmdashboard.png" lightbox="../../media/tvmdashboard.png" alt-text="デバイスの脅威と脆弱性管理ダッシュボード。":::
 
-分野|Description
+分野|説明
 :---|:---
 **選択したデバイス グループ (#/#)**|ダッシュボードに脅威と脆弱性の管理するデータをフィルター処理し、デバイス グループ別にカードをフィルター処理します。 フィルターで選択した項目は、ページ全体に脅威と脆弱性の管理されます。
 [**暴露スコア**](tvm-exposure-score.md)|組織のデバイスが脅威や脆弱性にさらされている現在の状態を確認します。 デバイスで検出された弱点、デバイスが侵害される可能性、組織に対するデバイスの価値、デバイスで検出された関連アラートなど、組織の露出スコアに影響を与える要因がいくつかあります。 目標は、組織の露出スコアを下げ、より安全に行う方法です。 スコアを減らすには、セキュリティに関する推奨事項に記載されている関連するセキュリティ構成の問題を修復する必要があります。
@@ -74,7 +74,7 @@ ms.locfileid: "53853770"
 
 ポータル全体で使用されるアイコンの詳細については [、「Microsoft Defender for Endpoint アイコン」を参照してください](portal-overview.md#microsoft-defender-for-endpoint-icons)。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [暴露スコア](tvm-exposure-score.md)

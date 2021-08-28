@@ -19,12 +19,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: 7fee84e9be504427bb4320599310c3872ea311d6e2c640d87d83b938a27131ad
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8c808bd8c742666c407a59cc6a3bc654d96257b3
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53828407"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569911"
 ---
 # <a name="microsoft-defender-for-endpoint-in-microsoft-365-defender"></a>Microsoft Defender for Endpoint in <DICT__Microsoft⚐365⚐Defender>Microsoft 365 Defender</DICT__Microsoft⚐365⚐Defender>
 
@@ -40,7 +40,7 @@ ms.locfileid: "53828407"
 次の図と表に、ナビゲーションの変更点を示Microsoft Defender セキュリティ センターとMicrosoft 365 Defender。
 
 > [!div class="mx-imgBorder"]
-> ![移動先のイメージ](../../media/mde-m3d-security-center.png)
+> ![どこに移動したのかの画像。](../../media/mde-m3d-security-center.png)
 
 | Microsoft Defender セキュリティ センター | Microsoft 365 Defender |
 |---------|---------|
@@ -55,7 +55,7 @@ ms.locfileid: "53828407"
 | 脅威&の管理 | 脆弱性管理 |
 | 評価とチュートリアル | 評価&チュートリアル |
 | 構成管理環境 | 構成管理環境 |
-| Settings | Settings | 
+| 設定 | 設定 | 
 
 強化[されたMicrosoft 365 Defender機能](overview-security-center.md)は、電子メール、コラボレーション、ID、デバイスの脅威を保護、検出、調査、および対応するセキュリティ機能 [https://security.microsoft.com](https://security.microsoft.com) を組み合わせた機能です。 これにより、既存の Microsoft セキュリティ ポータルの機能が統合され、Microsoft Defender セキュリティ センターコンプライアンス センター Office 365セキュリティ &されます。
 
@@ -116,7 +116,7 @@ Microsoft Defender for Endpoint in Microsoft 365 Defender では[、Microsoft De
 |---------|---------|
 | レポート  | 脅威の保護、デバイスの正常性とコンプライアンス、脆弱な&など、エンドポイントと電子メール のコラボレーションに関するレポートを参照してください。 |
 | 正常性  |  現在、ページの [サービス正常性] ページに[リンク](https://admin.microsoft.com/)Microsoft 365 管理センター。 |
-| Settings |  グループ、エンドポイント、メール Microsoft 365 Defender、ID、デバイス&の設定を管理します。   |
+| 設定 |  グループ、エンドポイント、メール Microsoft 365 Defender、ID、デバイス&の設定を管理します。   |
 
 ## <a name="microsoft-365-security-navigation-and-capabilities"></a>Microsoft 365のナビゲーションと機能
 
@@ -129,7 +129,7 @@ Microsoft Defender for Endpoint in Microsoft 365 Defender では[、Microsoft De
 - [インシデントの詳細](incidents-overview.md)
 - [通知の管理に関するその他の情報](investigate-alerts.md)
 
-![通知とアクションのクイック起動バー](../../media/converge-1-alerts-and-actions.png)
+![[アラートとアクション] クイック起動バー。](../../media/converge-1-alerts-and-actions.png)
 
 ### <a name="hunting"></a>検索
 
@@ -160,13 +160,13 @@ Microsoft Defender for Endpoint in Microsoft 365 Defender では[、Microsoft De
 
 組織のエンドポイントのセキュリティを表示および管理します。 このファイルを使用したMicrosoft Defender セキュリティ センター見慣れたものに見えます。
 
-![Endpoints のクイック 起動バー](../../media/converge-2-endpoints.png)
+![[エンドポイント] クイック起動バー。](../../media/converge-2-endpoints.png)
 
 ### <a name="access-and-reports"></a>アクセスとレポート
 
 レポートの表示、設定の変更、およびユーザーの役割変更を行います。
 
-![[アクセスとレポート] クイック起動バー](../../media/converge-4-access-and-reporting-new.png)
+![[アクセスとレポート] クイック起動バー。](../../media/converge-4-access-and-reporting-new.png)
 
 ### <a name="siem-api-connections"></a>SIEM API 接続
 

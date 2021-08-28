@@ -15,12 +15,12 @@ ms.topic: article
 ms.date: 07/29/2021
 manager: dansimp
 ms.custom: nextgen
-ms.openlocfilehash: 63fcaf72f487f162c93f89723ba9e87b5881f509
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 93a22ef86be7067c8bda955fdfd085f7ef6cbd64
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532585"
+ms.locfileid: "58568326"
 ---
 # <a name="enable-and-configure-microsoft-defender-antivirus-always-on-protection-in-group-policy"></a>グループ ポリシーで Microsoft Defender ウイルス対策を常時保護を有効にして構成する
 
@@ -44,8 +44,8 @@ ms.locfileid: "58532585"
     1. [タスク バー Windows 10] ボックスに **「gpedit」と入力します**。
 
     2. [最適 **な一致]** で、[グループ ポリシー **の編集] を選択して** ローカル **グループ ポリシー エディターを起動します**。
-
-       ![GPEdit タスク バーの検索結果](images/gpedit-search.png)
+    
+       ![GPEdit タスク バーの検索結果。](images/gpedit-search.png)
 
 2. ローカル グループ ポリシー エディターの **左側のウィンドウ** で、ツリーを [コンピューター構成] [管理用テンプレート] Windows \>  \> **展開** \> Microsoft Defender ウイルス対策。
 
@@ -79,7 +79,9 @@ ms.locfileid: "58532585"
 
 5. 次のようにMicrosoft Defender ウイルス対策スキャン ポリシー設定を構成します。
 
-   1. 左側のウィンドウ **Microsoft Defender ウイルス対策** から、[スキャン] を **選択します**。
+    1. 左側のウィンドウ **Microsoft Defender ウイルス対策** から、[スキャン] を **選択します**。
+    
+       ![Microsoft Defender ウイルス対策スキャン オプション。](images/gpedit-windows-defender-antivirus-scan.png)
 
       ![Microsoft Defender ウイルス対策スキャン オプション](images/gpedit-windows-defender-antivirus-scan.png)
 
@@ -139,12 +141,12 @@ ms.locfileid: "58532585"
 
 3. 右側の **[リアルタイム保護の詳細]** ウィンドウで、[リアルタイム保護をオフ **にする] をダブルクリックします**。
 
-   ![リアルタイム保護をオフにする](images/gpedit-turn-off-real-time-protection.png)
+   ![リアルタイム保護をオフにします。](images/gpedit-turn-off-real-time-protection.png)
 
 4. [リアルタイム **保護をオフにする] 設定** ウィンドウで、オプションを [有効] に **設定します**。
 
-   ![リアルタイム保護を有効にする](images/gpedit-turn-off-real-time-protection-enabled.png)
-
+   ![[リアルタイム保護を有効にする] をオフにします。](images/gpedit-turn-off-real-time-protection-enabled.png)
+   
 5. **[OK] を選択します**。
 
 6. [ローカル **グループ ポリシー エディターを閉じる] をクリックします**。

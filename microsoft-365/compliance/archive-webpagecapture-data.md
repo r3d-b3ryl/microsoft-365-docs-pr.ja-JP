@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、Web ページ キャプチャ データをインポートおよびアーカイブするコネクタを Veritas からインポートおよびアーカイブMicrosoft 365。 このコネクタを使用すると、Microsoft 365 のサード パーティデータ ソースからデータをアーカイブし、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティ データを管理できます。
-ms.openlocfilehash: 333c97661267b662fe9743649a54cd8725f4d2511805eba36064a2d030c8e592
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9d35f23371bfdf0f3f3c9d29d059d862f9cd93ac
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53820560"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570163"
 ---
 # <a name="set-up-a-connector-to-archive-webpage-data"></a>Web ページ データをアーカイブするコネクタをセットアップする
 
@@ -29,7 +29,7 @@ Web ページのコンテンツをユーザー メールボックスに保存し
 
 次の概要では、コネクタを使用して Web ページ のコンテンツをアーカイブするプロセスについて説明Microsoft 365。
 
-![Web ページ データのアーカイブ ワークフロー](../media/WebPageCaptureConnectorWorkflow.png)
+![Web ページ データのアーカイブ ワークフロー。](../media/WebPageCaptureConnectorWorkflow.png)
 
 1. 組織は Web ページ ソースと一緒に Web ページ キャプチャ サイトを設定および構成します。
 

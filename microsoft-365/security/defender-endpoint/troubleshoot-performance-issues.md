@@ -16,12 +16,12 @@ ms.date: 04/14/2021
 audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: d760a122527c3d5c9578188043ec2fdc56c5840b457a2f177263bfb9fcc4ad93
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 29b174af6755718ef8c2fd446cf84aeb0f390310
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53889480"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568590"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>リアルタイム保護に関連するパフォーマンスの問題のトラブルシューティング
 
@@ -58,7 +58,7 @@ Microsoft Defender for Endpoint のリアルタイム保護サービスに関連
 
 `Per-process counts:ProcessImageName: smsswd.exe, TotalTime: 6597, Count: 1406, MaxTime: 609, MaxTimeFile: \Device\HarddiskVolume3\_SMSTaskSequence\Packages\WQ1008E9\Files\FramePkg.exe, EstimatedImpact: 65%`
 
-|フィールド名|Description|
+|フィールド名|説明|
 |---|---|
 |ProcessImageName|プロセス イメージ名|
 |TotalTime|このプロセスによってアクセスされたファイルのスキャンに費やされた累積時間 (ミリ秒単位)|
@@ -83,7 +83,7 @@ Microsoft Defender for Endpoint のリアルタイム保護サービスに関連
     1. [ブロック解除] の横 **にあるチェック ボックスをオンにします**。
     1. **[適用]** を選択します。
 
-    ![MOTW を削除する](images/procmon-motw.png)
+    ![MOTW を削除します。](images/procmon-motw.png)
 
 3. フォルダー のパスがに `C:\temp` なじむファイルを解凍します `C:\temp\ProcessMonitor` 。
 
@@ -96,21 +96,21 @@ Microsoft Defender for Endpoint のリアルタイム保護サービスに関連
 
         ログが自動的に開始されますので、虫眼鏡アイコンを選択して現在のキャプチャを停止するか、キーボード ショートカット **Ctrl + E を使用します**。
 
-        ![虫眼鏡アイコン](images/procmon-magglass.png)
+        ![虫眼鏡アイコン。](images/procmon-magglass.png)
 
         キャプチャが停止したと確認するには、虫眼鏡アイコンが赤い X で表示されるのを確認します。
 
-        ![赤いスラッシュ](images/procmon-magglass-stop.png)
+        ![赤いスラッシュ。](images/procmon-magglass-stop.png)
 
         次に、前のキャプチャをクリアするには、消しゴムアイコンを選択します。
 
-        ![クリア アイコン](images/procmon-eraser-clear.png)
+        ![クリア アイコン。](images/procmon-eraser-clear.png)
 
         または、キーボード ショートカット **Ctrl + X を使用します**。
 
     2. 2 つ目の方法は、コマンド **ラインを管理者** として実行し、次にプロセス モニター パスから実行します。
 
-        ![cmd procmon](images/cmd-procmon.png)
+        ![cmd procmon.](images/cmd-procmon.png)
 
         ```console
         Procmon.exe /AcceptEula /Noconnect /Profiling
@@ -119,11 +119,11 @@ Microsoft Defender for Endpoint のリアルタイム保護サービスに関連
         > [!TIP]
         > データをキャプチャする場合は、ProcMon ウィンドウを可能な限り小さくして、トレースを簡単に開始および停止できます。
         >
-        > ![Procmon の最小化](images/procmon-minimize.png)
+        > ![Procmon を最小化します。](images/procmon-minimize.png)
 
-7. 手順 6 の手順の 1 つを実行すると、次にフィルターを設定するオプションが表示されます。 **[OK]** をクリックします。 キャプチャが完了したら、いつでも結果をフィルター処理できます。
+7. 手順 6 の手順の 1 つを実行すると、次にフィルターを設定するオプションが表示されます。 **[OK]** を選択します。 キャプチャが完了したら、いつでも結果をフィルター処理できます。
 
-    ![[フィルター処理名] は [システム除外]](images/procmon-filter-options.png)
+    ![[フィルター処理名] は [システム除外] です。](images/procmon-filter-options.png)
 
 8. キャプチャを開始するには、虫眼鏡アイコンを再度選択します。
 
@@ -136,7 +136,7 @@ Microsoft Defender for Endpoint のリアルタイム保護サービスに関連
 
 11. 一意の名前と .pml 形式でキャプチャを保存するには、[ファイル] を選択し、[**保存**]**を選択します**。ラジオ ボタンすべてのイベントとネイティブプロセス モニター形式 **(PML)** を選択してください。
 
-    ![設定の保存](images/procmon-savesettings1.png)
+    ![設定を保存します。](images/procmon-savesettings1.png)
 
 12. 追跡を向上するには、既定のパスを次の場所 `C:\temp\ProcessMonitor\LogFile.PML` に変更 `C:\temp\ProcessMonitor\%ComputerName%_LogFile_MMDDYEAR_Repro_of_issue.PML` します。
     - `%ComputerName%` はデバイス名です
@@ -167,25 +167,25 @@ WPR ユーザー インターフェイスを使用するには、「WPR UI を�
 
 2. *[Windows] で*、[パフォーマンス レコーダー] Windows **を右クリックします**。
 
-    ![[スタート] メニュー](images/wpr-01.png)
+    ![スタート メニュー。](images/wpr-01.png)
 
     [詳細 **] を選択します**。 [管理者 **として実行] を選択します**。
 
 3. [ユーザー アカウント制御] ダイアログ ボックスが表示されたら、[はい] を **選択します**。
 
-    ![UAC](images/wpt-yes.png)
+    ![UAC。](images/wpt-yes.png)
 
 4. 次に [、Microsoft Defender for Endpoint 分析プロファイルをダウンロード](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp) し、次のような `MDAV.wprp` フォルダーに保存します `C:\temp` 。
 
 5. [WPR] ダイアログ ボックスで、[その他のオプション] **を選択します**。
 
-    ![その他のオプションを選択する](images/wpr-03.png)
+    ![その他のオプションを選択します。](images/wpr-03.png)
 
 6. [ **プロファイルの追加...] を選択し** 、ファイルのパスを参照 `MDAV.wprp` します。
 
 7. その後、その下に Microsoft Defender  *for Endpoint* Analysis という名前のカスタム測定値の下に新しいプロファイル セットが表示されます。
 
-    ![in-file](images/wpr-infile.png)
+    ![in-file。](images/wpr-infile.png)
 
     >[!WARNING]
     >サーバーにWindows RAM が 64 GB 以上の場合は、代わりにカスタム測定値 `Microsoft Defender for Endpoint analysis for large servers` を使用します `Microsoft Defender for Endpoint analysis` 。 それ以外の場合、システムが大量の非ページ プール メモリまたはバッファーを消費し、システムが不安定な場合があります。 [リソース分析] を展開して、追加するプロファイル **を選択できます**。
@@ -204,14 +204,14 @@ WPR ユーザー インターフェイスを使用するには、「WPR UI を�
 
 9. これで、データを収集する準備ができました。 パフォーマンスの問題の再現に関係ないすべてのアプリケーションを終了します。 [オプションを **非表示にする] を** 選択すると、WPR ウィンドウの領域を小さくすることができます。
 
-    ![オプションを非表示にする](images/wpr-08.png)
+    ![オプションを非表示にします。](images/wpr-08.png)
 
     > [!TIP]
     > トレースを 1 秒で開始してみてください。 たとえば、01:30:00 です。 これにより、データの分析が容易になります。 また、問題が再現された正確なタイムスタンプを追跡してみてください。
 
 10. [**スタート**] を選択します。
 
-    ![トレースの開始を選択する](images/wpr-09.png)
+    ![[トレースの開始] を選択します。](images/wpr-09.png)
 
 11. 問題を再現します。
 
@@ -220,26 +220,26 @@ WPR ユーザー インターフェイスを使用するには、「WPR UI を�
 
 12. **[保存]** を選択します。
 
-    ![[保存] を選択する](images/wpr-10.png)
+    ![[保存] を選択します。](images/wpr-10.png)
 
 13. 問題の **詳細な説明で** Type を入力します。問題に関する情報と、問題の再現方法について説明します。
 
-    ![詳細を入力する](images/wpr-12.png)
+    ![詳細を入力します。](images/wpr-12.png)
 
     1. [ **ファイル名:]** を選択して、トレース ファイルの保存場所を決定します。 既定では、1.is に保存されます `%user%\Documents\WPR Files\` 。
     1. **[保存]** を選択します。
 
 14. トレースが結合されている間待ちます。
 
-    ![WPR 収集の一般的なトレース](images/wpr-13.png)
+    ![一般的なトレースを収集する WPR。](images/wpr-13.png)
 
 15. トレースを保存したら、[フォルダーを開く] **を選択します**。
 
-    ![保存された WPR トレース](images/wpr-14.png)
+    ![WPR トレースが保存されました。](images/wpr-14.png)
 
     ファイルとフォルダーの両方を Microsoft サポートへの申請に含める。
 
-    ![ファイルとフォルダー](images/wpr-15.png)
+    ![ファイルとフォルダー。](images/wpr-15.png)
 
 ### <a name="capture-performance-logs-using-the-wpr-cli"></a>WPR CLI を使用してパフォーマンス ログをキャプチャする
 

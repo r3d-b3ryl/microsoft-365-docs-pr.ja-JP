@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社が Microsoft Endpoint Configuration Manager を使用して Windows 10 Enterprise の一括アップグレードを展開した方法について説明します。
-ms.openlocfilehash: 1550940afb105c569800767b2e383c6e3322c5b6
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 9315e57fb08f0adda39f1a08107d8d96e1c2bc24
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354814"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569455"
 ---
 # <a name="windows-10-enterprise-deployment-for-contoso"></a>Contoso 社の Windows 10 Enterprise 展開
 
@@ -70,7 +70,7 @@ Contoso 社は、Windows 10 Enterprise の一括アップグレードの展開�
 
 次に一括アップグレード、および進行中の更新プログラムの展開アーキテクチャを示します。
 
-![Contoso 社の Windows 10 Enterprise の展開インフラストラクチャ](../media/contoso-win10/contoso-win10-fig1.png)
+![Contoso 社のWindows 10 Enterpriseインフラストラクチャ。](../media/contoso-win10/contoso-win10-fig1.png)
 
 このインフラストラクチャは以下で構成されます。
 

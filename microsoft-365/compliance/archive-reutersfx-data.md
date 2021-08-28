@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、Reuters FX データを Veritas からユーザーにインポートおよびアーカイブするコネクタをMicrosoft 365。 このコネクタを使用すると、サードパーティのデータ ソースからデータをアーカイブできます。Microsoft 365。 このデータをアーカイブした後、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、サードパーティのデータを管理できます。
-ms.openlocfilehash: 8063839c9857a62bdb75714cf5871e18c812ed3d82b1f94bae7d0937c1a5155e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1252fd1c2f54e08a29c12b19c1cc07791b89a027
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53796603"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569143"
 ---
 # <a name="set-up-a-connector-to-archive-reuters-fx-data"></a>ロイター FX データをアーカイブするコネクタをセットアップする
 
@@ -29,7 +29,7 @@ Reuters FX プラットフォームからデータをインポートMicrosoft 36
 
 次の概要では、コネクタを使用してロイター FX データをアーカイブするプロセスについて説明Microsoft 365。
 
-![ロイター FX データのアーカイブ ワークフロー](../media/ReutersFXConnectorWorkflow.png)
+![ロイター FX データのアーカイブ ワークフロー。](../media/ReutersFXConnectorWorkflow.png)
 
 1. 組織はロイター FX と一緒にロイター FX サイトを設定および構成します。
 

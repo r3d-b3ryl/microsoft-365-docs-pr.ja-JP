@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: a7e4342a-a0a1-4b43-b166-3d7eecf5d2fd
 description: セキュリティ & コンプライアンス センターの DLP とメール フロー ルール (トランスポート ルール) が管理センターでどのように動作Exchangeします。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 897c7a758778f8f31c94d989fdb7c05519aba90c5c153a407a77b27c132113b1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 37d1c4a5900fb9a6d42934246cbed6666e0609eb
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53813888"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570115"
 ---
 # <a name="how-dlp-works-between-the-microsoft-365-compliance-center-and-exchange-admin-center"></a>コンプライアンス センターと管理センターの間Microsoft 365 DLP の動作Exchange方法
 
@@ -35,7 +35,7 @@ ms.locfileid: "53813888"
     
 これらの管理センターで作成された DLP ポリシーは、サイド バイ サイドで機能します。このトピックでは、方法について説明します。
   
-![セキュリティとコンプライアンス センターと管理センターの DLP Exchangeページ](../media/d3eaa7e7-3b16-457b-bd9c-26707f7b584f.png)
+![[セキュリティとコンプライアンス センター] および [管理センター Exchange DLP ページ。](../media/d3eaa7e7-3b16-457b-bd9c-26707f7b584f.png)
   
 ## <a name="how-dlp-in-the-security--compliance-center-works-with-dlp-and-mail-flow-rules-in-the-exchange-admin-center"></a>セキュリティ コンプライアンス センターの DLP &管理センターの DLP およびメール フロー ルールExchangeする方法
 

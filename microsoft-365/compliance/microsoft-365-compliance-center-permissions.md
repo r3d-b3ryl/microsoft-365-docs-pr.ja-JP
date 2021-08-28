@@ -11,12 +11,12 @@ ms.topic: article
 localization_priority: Normal
 description: アクセス許可を管理する方法については、Microsoft 365 コンプライアンス センター。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 8787deb94cbe8a0f2f5b3a17b220c933df48e7b21fb023f5bbc78f154e7008d5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 717b8cd312aad805107536b174b3a9cd58e72a55
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53871773"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570091"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center"></a>Microsoft 365 コンプライアンス センターでのアクセス許可
 
@@ -24,7 +24,7 @@ ms.locfileid: "53871773"
 
 Microsoft 365 コンプライアンス センター の[アクセス許可] タブを表示するには、ユーザーがグローバル管理者である必要があります。または役割管理役割を割り当てる必要があります (役割は組織の管理役割グループにのみ割 *り当てられます*)。 役割 *の管理役割* を使用すると、ユーザーは役割グループを表示、作成、および変更できます。
 
-![[アクセス許可] ページ (Microsoft 365 コンプライアンス センター](../media/m365-compliance-center-permissions.png)
+![[アクセス許可] ページ (Microsoft 365 コンプライアンス センター)。](../media/m365-compliance-center-permissions.png)
 
 アクセス許可は、Microsoft 365 コンプライアンス センターベースのアクセス制御 (RBAC) アクセス許可モデルに基づいて行います。 RBAC は、ほとんどの Microsoft 365 サービスで使用されるのと同じアクセス許可モデルなので、これらのサービスのアクセス許可構造に精通している場合は、Microsoft 365 コンプライアンス センター でアクセス許可を付与する方法が分かっています。 Microsoft 365 コンプライアンス センターで管理されるアクセス許可は、個々のサービスで必要なすべてのアクセス許可の管理をカバーしているのではありません。 特定のサービスの管理センターで特定のサービス固有のアクセス許可を管理する必要があります。 たとえば、アーカイブ、監査、および MRM 保持ポリシーのアクセス許可を割り当てる必要がある場合は、Exchange 管理センターでこれらのアクセス許可を管理する必要があります。
 
@@ -34,7 +34,7 @@ Microsoft 365 コンプライアンス センター の[アクセス許可] タ�
 
 役割グループは、ユーザーがコンプライアンス ソリューション全体で仕事を行う役割のセットMicrosoft 365 コンプライアンス センター。 たとえば *、Insider Risk Management* 役割グループにユーザーを追加すると、指定された管理者、アナリスト、調査員、監査人が、1 つのグループで必要なインサイダー リスク管理のアクセス許可を構成します。 このMicrosoft 365 コンプライアンス センターには、ユーザーを割り当てる必要がある各コンプライアンス ソリューションのタスクと機能の既定の役割グループが含まれます。 通常、必要に応じて、個々のユーザーをメンバーとして既定のコンプライアンス 役割グループに追加することをお勧めします。
 
-![役割グループと、ロールおよびメンバーとの関係を示す図](../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
+![役割グループと役割とメンバーの関係を示す図。](../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
 
 ## <a name="permissions-needed-to-use-features-in-the-microsoft-365-compliance-center"></a>アプリケーションで機能を使用するために必要なアクセス許可Microsoft 365 コンプライアンス センター
 

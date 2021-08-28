@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 98cd67154d1fb4ac7d0be741e1adee4fe71ab1ff
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 303b32499d73b14751ece094dfd6f900386cbba0
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58589710"
+ms.locfileid: "58568302"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Jamf の macOS ポリシーで Microsoft Defender for Endpoint をセットアップPro
 
@@ -39,15 +39,25 @@ ms.locfileid: "58589710"
 次の手順を実行する必要があります。
 
 1. [Microsoft Defender for Endpoint オンボーディング パッケージの取得](#step-1-get-the-microsoft-defender-for-endpoint-onboarding-package)
+
 2. [オンボード パッケージを使用して Jamf Pro構成プロファイルを作成する](#step-2-create-a-configuration-profile-in-jamf-pro-using-the-onboarding-package)
+
 3. [エンドポイントの Microsoft Defender の設定を構成する](#step-3-configure-microsoft-defender-for-endpoint-settings)
+
 4. [Microsoft Defender for Endpoint 通知の設定を構成する](#step-4-configure-notifications-settings)
+
 5. [Microsoft AutoUpdate (MAU) の構成](#step-5-configure-microsoft-autoupdate-mau)
+
 6. [Microsoft Defender for Endpoint へのフル ディスク アクセスを許可する](#step-6-grant-full-disk-access-to-microsoft-defender-for-endpoint)
+
 7. [Microsoft Defender for Endpoint のカーネル拡張機能を承認する](#step-7-approve-kernel-extension-for-microsoft-defender-for-endpoint)
+
 8. [エンドポイント用 Microsoft Defender のシステム拡張機能を承認する](#step-8-approve-system-extensions-for-microsoft-defender-for-endpoint)
+
 9. [ネットワーク拡張機能の構成](#step-9-configure-network-extension)
+
 10. [macOS で Microsoft Defender for Endpoint でスキャンをスケジュールする](/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)
+
 11. [macOS での Microsoft Defender for Endpoint の展開](#step-11-deploy-microsoft-defender-for-endpoint-on-macos)
 
 ## <a name="step-1-get-the-microsoft-defender-for-endpoint-onboarding-package"></a>手順 1: Microsoft Defender for Endpoint オンボーディング パッケージを取得する
@@ -62,7 +72,8 @@ ms.locfileid: "58589710"
 
 4. 抽出 `WindowsDefenderATPOnboardingPackage.zip` .
 
-5. ファイルを好みの場所にコピーします。 たとえば、`C:\Users\JaneDoe_or_JohnDoe.contoso\Downloads\WindowsDefenderATPOnboardingPackage_macOS_MDM_contoso\jamf\WindowsDefenderATPOnboarding.plist` などです。
+5. ファイルを好みの場所にコピーします。 例: `C:\Users\JaneDoe_or_JohnDoe.contoso\Downloads\WindowsDefenderATPOnboardingPackage_macOS_MDM_contoso\jamf\WindowsDefenderATPOnboarding.plist`。
+
 
 ## <a name="step-2-create-a-configuration-profile-in-jamf-pro-using-the-onboarding-package"></a>手順 2: オンボード パッケージを使用して Jamf Pro構成プロファイルを作成する
 
@@ -76,8 +87,7 @@ ms.locfileid: "58589710"
 
 3. 次の詳細を入力します。
 
-   **全般**:
-
+   **全般**
    - 名前: macOS の MDATP オンボーディング
    - 説明: mDATP EDR macOS のオンボーディング
    - カテゴリ: なし
@@ -360,9 +370,8 @@ Microsoft Defender は、時間の間に新しい設定を追加します。 こ
 
     ![構成設定アップロードイメージのイメージ。](images/f624de59b3cc86e3e2d32ae5de093e02.png)
 
-    > [!NOTE]
-    > Intune ファイルをアップロードすると、次のようなエラー メッセージが表示されます。
-    >
+    >[!NOTE]
+    >Intune ファイルをアップロードすると、次のようなエラー メッセージが表示されます。<br>
     >![構成設定 intune ファイルのアップロードのイメージ。](images/8e69f867664668796a3b2904896f0436.png)
 
 11. **[保存]** を選択します。
@@ -440,7 +449,6 @@ Microsoft Defender は、時間の間に新しい設定を追加します。 こ
     ![構成設定のイメージは、保存を追加します。](images/4d2d1d4ee13d3f840f425924c3df0d51.png)
 
 6. **[完了]** を選択します。 新しい構成プロファイルが **表示されます**。
-
     ![img を実行した構成設定のイメージ。](images/633ad26b8bf24ec683c98b2feb884bdf.png)
 
 ## <a name="step-5-configure-microsoft-autoupdate-mau"></a>手順 5: Microsoft AutoUpdate (MAU) を構成する
@@ -544,6 +552,7 @@ Microsoft Defender は、時間の間に新しい設定を追加します。 こ
     - 配布方法: 自動的にインストールする
     - レベル: コンピューター レベル
 
+
     ![構成設定全般のイメージ。](images/ba3d40399e1a6d09214ecbb2b341923f.png)
 
 4. [ **プライバシー設定の構成] ポリシーコントロールで、[構成** ] を **選択します**。
@@ -555,6 +564,7 @@ Microsoft Defender は、時間の間に新しい設定を追加します。 こ
     - 識別子: `com.microsoft.wdav`
     - 識別子の種類: バンドル ID
     - コード要件: `identifier "com.microsoft.wdav" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`
+
 
     ![構成設定のプライバシー設定ポリシー制御の詳細のイメージ。](images/22cb439de958101c0a12f3038f905b27.png)
 
@@ -817,9 +827,9 @@ macOS の Microsoft Defender for Endpoint でスキャンをスケジュール [
 
     **マニフェスト ファイル** は必須ではありません。 Microsoft Defender for Endpoint はマニフェスト ファイルなしで動作します。
 
-    **[オプション] タブ**: 既定値を保持します。
+    **オプション タブ**<br> 既定値を保持します。
 
-    **[制限] タブ**: 既定値を保持します。
+    **[制限] タブ**<br> 既定値を保持します。
 
      ![[構成設定の制限] タブのイメージ。](images/56dac54634d13b2d3948ab50e8d3ef21.png)
 

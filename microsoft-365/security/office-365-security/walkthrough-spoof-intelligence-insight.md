@@ -20,12 +20,12 @@ ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0ea429fb9817f7daa9cbae62b4a56837a1592d34
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: d23e6ab170b200626b422163daaafdbdd11e5fca
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58254838"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568038"
 ---
 # <a name="manage-spoofed-senders-using-the-spoof-intelligence-policy-and-spoof-intelligence-insight-in-eop"></a>EOP でスプーフィング インテリジェンス ポリシーとスプーフィング インテリジェンスインサイトを使用してスプーフィングされた送信者を管理する
 
@@ -60,7 +60,7 @@ Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Pro
   **注**:
 
   - Microsoft 365 管理センターで、対応する Azure Active Directory の役割にユーザーを追加すると、ユーザーには、必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
-  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
+  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
 
 - スプーフィング インテリジェンスのオプションについては、「フィッシング対策ポリシー [のスプーフィング設定」を参照してください](set-up-anti-phishing-policies.md#spoof-settings)。
 
@@ -83,11 +83,11 @@ Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Pro
 > [!IMPORTANT]
 > この記事では、置き換えられる以前のスプーフィングされた送信者管理エクスペリエンス(スパム対策ポリシー ページのスプーフィング インテリジェンス ポリシー) について **説明** します。 新しいエクスペリエンス ([テナントの許可/ブロック] リストの [スプーフィング] タブ) の詳細については、「EOP のスプーフィング インテリジェンス[インサイト」を参照してください](learn-about-spoof-intelligence.md)。
 
-1. [ポリシー] Microsoft 365 Defenderで、[ポリシー]セクション&ルール&スパム対策ポリシーにメールを送信 \>  \>  \> する」**に移動** します。
+1. Microsoft 365 Defender ポータルで、**[ポリシー]** セクションの **[メールと共同作業]** \>**[ポリシーとルール]** \> **[脅威ポリシー]** \> **[スパム対策]** に移動します。
 
 2. [スパム **対策ポリシー] ページで** 、名前をクリックして **[** スプーフィング インテリジェンス ポリシー] を選択します。
 
-   ![スプーフィング インテリジェンス ポリシーの選択](../../media/anti-spam-settings-spoof-intelligence-policy.png)
+   ![スプーフィング インテリジェンス ポリシーを選択します。](../../media/anti-spam-settings-spoof-intelligence-policy.png)
 
 3. 表示される **スプーフィング インテリジェンス ポリシー** のフライアウトで、次のいずれかの選択を行います。
    - **既に確認した送信者を表示する**
@@ -97,11 +97,11 @@ Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Pro
    - **[ドメイン]:** 内部ドメイン内のユーザーをスプーフィングする送信者。
    - **外部ドメイン**: 外部ドメイン内のユーザーをスプーフィングする送信者。
 
-5. [ ![ スプーフィングを許可する] 列の [展開] アイコンをクリック ](../../media/scc-expand-icon.png) し、次のいずれかの選択を行います。 
+5. [展開 ![ ] アイコンをクリックします。](../../media/scc-expand-icon.png) をクリック **し** 、次のいずれかの選択を行います。
    - **は** い : スプーフィングされた送信者を許可します。
    - **いいえ**: メッセージをスプーフィングとしてマークします。 このアクションは、既定のフィッシング対策ポリシーまたはカスタムのフィッシング対策ポリシーによって制御されます。 詳細については、「[フィッシング詐欺対策ポリシーでのなりすまし設定](set-up-anti-phishing-policies.md#spoof-settings)」を参照してください。
 
-   ![スプーフィングされた送信者の飛び出し、送信者がスプーフィングを許可されているかどうかを示すスクリーンショット](../../media/spoof-allow-block-flyout.png)
+   ![スプーフィングされた送信者の飛び出しと、送信者がスプーフィングを許可されているかどうかを示すスクリーンショット。](../../media/spoof-allow-block-flyout.png)
 
    表示される列と値については、次の一覧で説明します。
 
@@ -196,7 +196,7 @@ Get-PhishFilterPolicy -AllowedToSpoof Yes -Detailed -SpoofType Internal
 
 3. ダッシュボードの分析情報には、次のような情報が表示されます。
 
-   ![スプーフィング インテリジェンスの分析情報のスクリーンショット](../../media/28aeabac-c1a1-4d16-9fbe-14996f742a9a.png)
+   ![スプーフィング インテリジェンスの分析情報のスクリーンショット。](../../media/28aeabac-c1a1-4d16-9fbe-14996f742a9a.png)
 
    この分析情報には、次の 2 つのモードがあります。
 
@@ -232,7 +232,7 @@ Get-PhishFilterPolicy -AllowedToSpoof Yes -Detailed -SpoofType Internal
 
    ここから、[送信者のスプーフィングを許可する] 一覧からドメイン/送信インフラストラクチャのペアを追加または削除できます。 単にトグルを設定します。
 
-   ![スプーフィング インテリジェンスインサイト詳細ウィンドウのドメインのスクリーンショット](../../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png)
+   ![[スプーフィング インテリジェンスの分析情報の詳細] ウィンドウのドメインのスクリーンショット。](../../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png)
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>正常な動作を確認する方法
 

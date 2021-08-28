@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 64643873c9032af92d7093d5d75535cf3af118bc
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.openlocfilehash: 7d2c18c080f6f8fc313f17a5e2820b8a8b8a69fa
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58509547"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568350"
 ---
 # <a name="check-sensor-health-state-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint のセンサーの正常性状態を確認する
 
@@ -43,7 +43,7 @@ ms.locfileid: "58509547"
 
 グループをクリックすると、[デバイス] リストが表示 **され、選択** に従ってフィルター処理されます。
 
-![センサーの問題があるデバイスタイルのスクリーンショット](images/atp-devices-with-sensor-issues-tile.png)
+![センサーの問題があるデバイスタイルのスクリーンショット。](images/atp-devices-with-sensor-issues-tile.png)
 
 [ **デバイス] リスト** で、正常性状態リストを次の状態でフィルター処理できます。
 
@@ -58,7 +58,7 @@ ms.locfileid: "58509547"
 > [!NOTE]
 > リストを CSV 形式でエクスポートして、フィルター処理されていないデータを表示します。 CSV ファイルには、ビュー自体に適用されるフィルター処理に関係なく、組織内のすべてのデバイスが含まれます。組織の規模によっては、ダウンロードにかなりの時間がかかる場合があります。
 
-![[デバイス] リスト ページのスクリーンショット](images/atp-devices-list-page.png)
+![[デバイス] リスト ページのスクリーンショット。](images/atp-devices-list-page.png)
 
 構成が正しく設定されていないデバイスまたは非アクティブなデバイスをクリックすると、デバイスの詳細を表示できます。
 

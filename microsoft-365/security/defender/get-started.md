@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 8d479a5cacc5db8961084135eb2b155c4b3af509cc06adecc9b3c2c42688f7d8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3b111fe66e35bcd87898eefa2d336b8031651098
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53828528"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568806"
 ---
 # <a name="get-started-with-microsoft-365-for-defender"></a>Defender のMicrosoft 365を開始する
 
@@ -37,7 +37,7 @@ Microsoft 365 Defenderは、企業全体のセキュリティを監視および�
 
 Microsoft スイートのセキュリティ製品を初めて使用する場合でも、個々のワークフローに精通している場合でも、このトピックでは、Microsoft 365 Defender の使用を開始するために必要な簡単な手順について説明します。
 
-![手順の開始イメージMicrosoft 365 Defender](../../media/mtp/get-started-m365d.png)
+![手順の開始のイメージMicrosoft 365 Defenderします。](../../media/mtp/get-started-m365d.png)
 
 一般に、開始するには、次の手順を実行する必要があります。
 

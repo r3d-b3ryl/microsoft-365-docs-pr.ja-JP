@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 組織が現在直面している最も一般的な脅威と攻撃のシナリオは、Microsoft 365、これらのリスクを軽減するための推奨されるアクションです。
-ms.openlocfilehash: dabd4e094962c15ade360db317fa197698733e2da4cedc752d602337df090a37
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8f5c6e75097814841f8478cd8240c80b4eebc51a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53839984"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568182"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>Microsoft 365ビジネス意思決定者向けセキュリティ (BDM)
 
@@ -27,7 +27,7 @@ ms.locfileid: "53839984"
 
 この記事は、テナント、電子メール、および SharePoint など、最も重要なサービスと資産の管理に使用されるアカウントの保護を始め、作業の優先順位によって整理されています。 これは、セキュリティに近づく方法を提供し、次のスプレッドシートと一緒に動作し、組織内の関係者やチームとの進捗状況を追跡することができます[。BDMs](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-BDM-security-recommendations-spreadsheet.xlsx)スプレッドシートの Microsoft 365 セキュリティ。 
 
-[![サム イメージMicrosoft 365 BDM セキュリティ推奨事項スプレッドシート](../downloads/microsoft-365-bdm-security-recommendations-spreadsheet-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-BDM-security-recommendations-spreadsheet.xlsx)
+[![サム イメージMicrosoft 365 BDM セキュリティ推奨事項のスプレッドシートです。](../downloads/microsoft-365-bdm-security-recommendations-spreadsheet-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-BDM-security-recommendations-spreadsheet.xlsx)
 
 Microsoft は、テナント内の Secure Score ツールを提供し、通常のアクティビティに基づいてセキュリティの態勢を自動的に分析し、スコアを割り当て、セキュリティ改善の推奨事項を提供します。 この記事で推奨されるアクションを実行する前に、現在のスコアと推奨事項に注意してください。 この記事で推奨されるアクションは、スコアを増やします。 目標は、最大スコアを達成するのではなく、ユーザーの生産性に悪影響を及ぼさない方法で環境を保護する機会を認識する方法です。 「Microsoft [Secure Score」を参照してください](defender/microsoft-secure-score.md)。
 
@@ -41,13 +41,13 @@ Microsoft は、テナント内の Secure Score ツールを提供し、通常�
 
 |推奨事項  |E3 |E5  |
 |---------|---------|---------|
-|すべての管理アカウントに多要素認証 (MFA) を適用します。|![緑のチェック マーク](../media/green-check-mark.png)|![緑のチェック マーク](../media/green-check-mark.png)| 
-|Azure Azure Active Directory (Azure AD) Privileged Identity Management (PIM) を実装して、Azure ADリソースと Azure リソースに just-in-time 特権アクセスを適用します。 また、アクセス権を持つユーザーを検出し、特権アクセスを確認できます。|         | ![緑のチェック マーク](../media/green-check-mark.png)|
-|特権アクセス管理を実装して、特権管理タスクに対する詳細なアクセス制御を管理Office 365。 |         | ![緑のチェック マーク](../media/green-check-mark.png)|
-|サービスを管理するには、特権アクセス ワークステーション (PAW) を構成して使用します。 インターネットを閲覧し、管理アカウントに関連しない電子メールを確認する場合は、同じワークステーションを使用しない。|  ![緑のチェック マーク](../media/green-check-mark.png)|![緑のチェック マーク](../media/green-check-mark.png) | 
+|すべての管理アカウントに多要素認証 (MFA) を適用します。|![緑色のチェック マーク。](../media/green-check-mark.png)|![緑色のチェック マーク。](../media/green-check-mark.png)| 
+|Azure Azure Active Directory (Azure AD) Privileged Identity Management (PIM) を実装して、Azure ADリソースと Azure リソースに just-in-time 特権アクセスを適用します。 また、アクセス権を持つユーザーを検出し、特権アクセスを確認できます。|         | ![緑色のチェック マーク。](../media/green-check-mark.png)|
+|特権アクセス管理を実装して、特権管理タスクに対する詳細なアクセス制御を管理Office 365。 |         | ![緑色のチェック マーク。](../media/green-check-mark.png)|
+|サービスを管理するには、特権アクセス ワークステーション (PAW) を構成して使用します。 インターネットを閲覧し、管理アカウントに関連しない電子メールを確認する場合は、同じワークステーションを使用しない。|  ![緑色のチェック マーク。](../media/green-check-mark.png)|![緑色のチェック マーク。](../media/green-check-mark.png) | 
 
 次の図は、これらの機能を示しています。
-![特権アカウントを保護するための推奨機能](../media/m365-security-bdm-illustrations-privileged-accounts.png)
+![特権アカウントを保護するための推奨機能。](../media/m365-security-bdm-illustrations-privileged-accounts.png)
 
 追加の推奨事項:
 - オンプレミスから同期されるアカウントに、クラウド サービスの管理者ロールが割り当てられていないか確認します。 これにより、攻撃者がオンプレミス アカウントを適用してクラウド サービスへの管理アクセスを取得するのを防ぐのに役立ちます。 
@@ -70,15 +70,15 @@ Microsoft は、テナント内の Secure Score ツールを提供し、通常�
 
 |推奨事項  |E3  |E5  |
 |---------|---------|---------|
-|**多要素認証をセットアップし、サインイン リスク ポリシーを** 含む推奨条件付きアクセス ポリシーを使用します。 Microsoft では、すべてのクラウド アプリを保護するために一緒に動作する一連のポリシーを推奨し、テストしました。Office 365およびMicrosoft 365しています。 「Identity [and device access configurations」を参照してください](./office-365-security/microsoft-365-policies-configurations.md)。 | |![緑のチェック マーク](../media/green-check-mark.png)|
-|**すべてのユーザーに多要素認証が必要です**。 推奨される条件付きアクセス ポリシーを実装するために必要なライセンスが必要ない場合は、少なくともすべてのユーザーに多要素認証が必要です。|![緑のチェック マーク](../media/green-check-mark.png)|![緑のチェック マーク](../media/green-check-mark.png)|
-|**メール内のマルウェアに対する保護のレベルを上げる**。 ユーザー Office 365またはMicrosoft 365にはマルウェアに対する保護が含まれますが、マルウェアに一般的に使用されるファイルの種類を含む添付ファイルをブロックすることで、この保護を強化できます。|![緑のチェック マーク](../media/green-check-mark.png)|![緑のチェック マーク](../media/green-check-mark.png)|
-|**標的型フィッシング攻撃からメールを保護します**。 1 つ以上のカスタム ドメインを Office 365または Microsoft 365環境に構成した場合は、ターゲットフィッシング対策保護を構成できます。 Office 365 の Defender の一部であるフィッシング対策保護は、悪意のある偽装ベースのフィッシング攻撃や他のフィッシング攻撃から組織を保護するのに役立ちます。 カスタム ドメインを構成していない場合は、これを行う必要があります。| |![緑のチェック マーク](../media/green-check-mark.png)|
-|**電子メールでのランサムウェア攻撃から保護します**。 ランサムウェアは、ファイルを暗号化したり、コンピューターの画面をロックしたりして、データへのアクセスを取り去る。 その後、データへのアクセスを返すのと引き換えに、通常はBitcoinのような暗号化の形で「身代金」を求め、被害者から金銭を強要しようとする。 1 つ以上のメール フロー ルールを作成して、ランサムウェアに一般的に使用されるファイル拡張子をブロックしたり、電子メールでこれらの添付ファイルを受け取るユーザーに警告したりすることで、ランサムウェアからの防御を支援できます。|![緑のチェック マーク](../media/green-check-mark.png)|![緑のチェック マーク](../media/green-check-mark.png)|
-|**ビジネスを行う国からの接続をブロックします**。 Azure AD条件付きアクセス ポリシーを作成して、これらの国からの接続をブロックし、テナントの周囲に地理的ファイアウォールを効果的に作成します。| |![緑のチェック マーク](../media/green-check-mark.png)|
+|**多要素認証をセットアップし、サインイン リスク ポリシーを** 含む推奨条件付きアクセス ポリシーを使用します。 Microsoft では、すべてのクラウド アプリを保護するために一緒に動作する一連のポリシーを推奨し、テストしました。Office 365およびMicrosoft 365しています。 「Identity [and device access configurations」を参照してください](./office-365-security/microsoft-365-policies-configurations.md)。 | |![緑色のチェック マーク。](../media/green-check-mark.png)|
+|**すべてのユーザーに多要素認証が必要です**。 推奨される条件付きアクセス ポリシーを実装するために必要なライセンスが必要ない場合は、少なくともすべてのユーザーに多要素認証が必要です。|![緑色のチェック マーク。](../media/green-check-mark.png)|![緑色のチェック マーク。](../media/green-check-mark.png)|
+|**メール内のマルウェアに対する保護のレベルを上げる**。 ユーザー Office 365またはMicrosoft 365にはマルウェアに対する保護が含まれますが、マルウェアに一般的に使用されるファイルの種類を含む添付ファイルをブロックすることで、この保護を強化できます。|![緑色のチェック マーク。](../media/green-check-mark.png)|![緑色のチェック マーク。](../media/green-check-mark.png)|
+|**標的型フィッシング攻撃からメールを保護します**。 1 つ以上のカスタム ドメインを Office 365または Microsoft 365環境に構成した場合は、ターゲットフィッシング対策保護を構成できます。 Office 365 の Defender の一部であるフィッシング対策保護は、悪意のある偽装ベースのフィッシング攻撃や他のフィッシング攻撃から組織を保護するのに役立ちます。 カスタム ドメインを構成していない場合は、これを行う必要があります。| |![緑色のチェック マーク。](../media/green-check-mark.png)|
+|**電子メールでのランサムウェア攻撃から保護します**。 ランサムウェアは、ファイルを暗号化したり、コンピューターの画面をロックしたりして、データへのアクセスを取り去る。 その後、データへのアクセスを返すのと引き換えに、通常はBitcoinのような暗号化の形で「身代金」を求め、被害者から金銭を強要しようとする。 1 つ以上のメール フロー ルールを作成して、ランサムウェアに一般的に使用されるファイル拡張子をブロックしたり、電子メールでこれらの添付ファイルを受け取るユーザーに警告したりすることで、ランサムウェアからの防御を支援できます。|![緑色のチェック マーク。](../media/green-check-mark.png)|![緑色のチェック マーク。](../media/green-check-mark.png)|
+|**ビジネスを行う国からの接続をブロックします**。 Azure AD条件付きアクセス ポリシーを作成して、これらの国からの接続をブロックし、テナントの周囲に地理的ファイアウォールを効果的に作成します。| |![緑色のチェック マーク。](../media/green-check-mark.png)|
 
 次の図は、これらの機能を示しています。
-![既知の脅威から保護するための推奨機能](../media/m365-security-bdm-illustrations-known-threats.png)
+![既知の脅威から保護するための推奨機能。](../media/m365-security-bdm-illustrations-known-threats.png)
 
 ## <a name="protect-against-unknown-threats"></a>未知の脅威から保護する
 
@@ -87,12 +87,12 @@ Microsoft は、テナント内の Secure Score ツールを提供し、通常�
 
 |推奨事項  |E3  |E5  |
 |---------|---------|---------|
-|**Microsoft Defender for Office 365:**<br>* セーフ添付ファイル<br>* セーフリンク<br>* Microsoft Defender for Endpoint for SharePoint、OneDrive、Microsoft Teams<br>* セキュリティ保護のための Defender Office 365フィッシング対策|         |![緑のチェック マーク](../media/green-check-mark.png) |
-|**Microsoft Defender for Endpoint の機能を構成します**。<br>* Windows Defender ウイルス対策 <br>* エクスプロイト保護 <br> * 攻撃表面の縮小 <br> * ハードウェア ベースの分離 <br>* フォルダー アクセスの制御     |         |![緑のチェック マーク](../media/green-check-mark.png) |
-|**このMicrosoft Cloud App Security** を使用して SaaS アプリを検出し、動作分析と異常検出の使用を開始します。 |         |![緑のチェック マーク](../media/green-check-mark.png) |
+|**Microsoft Defender for Office 365:**<br>* セーフ添付ファイル<br>* セーフリンク<br>* Microsoft Defender for Endpoint for SharePoint、OneDrive、Microsoft Teams<br>* セキュリティ保護のための Defender Office 365フィッシング対策|         |![緑色のチェック マーク。](../media/green-check-mark.png) |
+|**Microsoft Defender for Endpoint の機能を構成します**。<br>* Windows Defender ウイルス対策 <br>* エクスプロイト保護 <br> * 攻撃表面の縮小 <br> * ハードウェア ベースの分離 <br>* フォルダー アクセスの制御     |         |![緑色のチェック マーク。](../media/green-check-mark.png) |
+|**このMicrosoft Cloud App Security** を使用して SaaS アプリを検出し、動作分析と異常検出の使用を開始します。 |         |![緑色のチェック マーク。](../media/green-check-mark.png) |
 
 次の図は、これらの機能を示しています。
-![不明な脅威から保護するための推奨機能](../media/m365-security-bdm-illustrations-unknown-threats.png)
+![不明な脅威から保護するための推奨機能。](../media/m365-security-bdm-illustrations-unknown-threats.png)
 
 追加の推奨事項:
 - TLS を使用したメールのようなパートナー チャネル通信をセキュリティで保護します。
@@ -116,17 +116,17 @@ Microsoft 365保護機能を使用すると、どのような情報が保存さ�
 
 |推奨事項 |E3|E5 |
 |---------|---------|---------|
-|**条件付きアクセスと関連するポリシー** を確認して最適化し、ゼロトラスト ネットワークの目標に合わせて調整します。 既知の脅威からの保護には、一連の推奨ポリシー [の実装が含まれます](./office-365-security/microsoft-365-policies-configurations.md)。 これらのポリシーの実装を確認して、ネットワークにアクセスしたハッカーからアプリとデータを保護します。 セキュリティ情報保護 (WIP) を有効Windows 10推奨Windows Intune アプリ保護ポリシー。 WIP は、電子メール、ソーシャル メディア、パブリック クラウドなど、アプリやサービスを通じて組織データが偶発的に漏洩しないように保護します。 |         |![緑のチェック マーク](../media/green-check-mark.png)|
-|**外部メール転送を無効にします**。 ユーザーのメールボックスにアクセスするハッカーは、メールを自動的に転送するメールボックスを設定することで、メールを盗む可能性があります。 これは、ユーザーの認識がなくても発生する可能性があります。 メール フロー ルールを構成することで、この問題を回避できます。|![緑のチェック マーク](../media/green-check-mark.png) |![緑のチェック マーク](../media/green-check-mark.png)|
-|**匿名の外部予定表の共有を無効にします**。 既定では、外部の匿名予定表の共有が許可されます。 [予定表の共有を無効](/exchange/sharing/sharing-policies/modify-a-sharing-policy) にして、機密情報の潜在的なリークを減らします。|![緑のチェック マーク](../media/green-check-mark.png) |![緑のチェック マーク](../media/green-check-mark.png)|
-|**機密データのデータ損失防止ポリシーを構成します**。 セキュリティ コンプライアンス センターでデータ損失防止ポリシーを作成し、クレジット カード番号、社会保障番号、銀行口座番号などの機密データを検出して &amp; 保護します。 Microsoft 365には、データ損失防止ポリシーで使用できる多くの定義済みの機密情報の種類が含まれています。 また、環境に合った機密データ用に独自の機密情報の種類を作成することもできます。 |![緑のチェック マーク](../media/green-check-mark.png)|![緑のチェック マーク](../media/green-check-mark.png)|
-|**データ分類と情報保護ポリシーを実装します**。 機密ラベルを実装し、これらを使用して機密データを分類して保護を適用します。 これらのラベルは、データ損失防止ポリシーでも使用できます。 Azure Information Protection ラベルを使用している場合は、他の管理センターで新しいラベルを作成しないようにすることをお勧めします。|         |![緑のチェック マーク](../media/green-check-mark.png)|
-|**サードパーティのアプリとサービスのデータを保護するには、次の** Cloud App Security。 Salesforce、box、Cloud App Securityなど、サード パーティ製のクラウド アプリ全体で機密情報を保護するためのセキュリティ ポリシーを構成Dropbox。 機密情報の種類と、ポリシーで作成した機密ラベルをCloud App Security SaaS アプリ全体に適用できます。 <br><br>Microsoft Cloud App Securityプロセスを幅広く適用できます。 ポリシーは、継続的なコンプライアンス スキャン、法的な電子情報開示タスク、公開で共有される機密性の高いコンテンツの DLP を提供するために設定できます。 Cloud App Securityは、20 を超えるメタデータ フィルター (アクセス レベル、ファイルの種類など) に基づいて任意のファイルの種類を監視できます。 |         |![緑のチェック マーク](../media/green-check-mark.png)|
-|**[Microsoft Defender for Endpoint を使用して](/windows/security/threat-protection/microsoft-defender-atp/information-protection-in-windows-overview)、ユーザー** が自分のデバイスに機密情報を保存Windowsします。 |         |![緑のチェック マーク](../media/green-check-mark.png)|
-|**[AIP スキャナーを使用して](/azure/information-protection/deploy-aip-scanner) 、サーバーとファイル共有間の情報を識別および分類します**。 AIP レポート ツールを使用して結果を表示し、適切なアクションを実行します。|         |![緑のチェック マーク](../media/green-check-mark.png)|
+|**条件付きアクセスと関連するポリシー** を確認して最適化し、ゼロトラスト ネットワークの目標に合わせて調整します。 既知の脅威からの保護には、一連の推奨ポリシー [の実装が含まれます](./office-365-security/microsoft-365-policies-configurations.md)。 これらのポリシーの実装を確認して、ネットワークにアクセスしたハッカーからアプリとデータを保護します。 セキュリティ情報保護 (WIP) を有効Windows 10推奨Windows Intune アプリ保護ポリシー。 WIP は、電子メール、ソーシャル メディア、パブリック クラウドなど、アプリやサービスを通じて組織データが偶発的に漏洩しないように保護します。 |         |![緑色のチェック マーク。](../media/green-check-mark.png)|
+|**外部メール転送を無効にします**。 ユーザーのメールボックスにアクセスするハッカーは、メールを自動的に転送するメールボックスを設定することで、メールを盗む可能性があります。 これは、ユーザーの認識がなくても発生する可能性があります。 メール フロー ルールを構成することで、この問題を回避できます。|![緑色のチェック マーク。](../media/green-check-mark.png) |![緑色のチェック マーク。](../media/green-check-mark.png)|
+|**匿名の外部予定表の共有を無効にします**。 既定では、外部の匿名予定表の共有が許可されます。 [予定表の共有を無効](/exchange/sharing/sharing-policies/modify-a-sharing-policy) にして、機密情報の潜在的なリークを減らします。|![緑色のチェック マーク。](../media/green-check-mark.png) |![緑色のチェック マーク。](../media/green-check-mark.png)|
+|**機密データのデータ損失防止ポリシーを構成します**。 セキュリティ コンプライアンス センターでデータ損失防止ポリシーを作成し、クレジット カード番号、社会保障番号、銀行口座番号などの機密データを検出して &amp; 保護します。 Microsoft 365には、データ損失防止ポリシーで使用できる多くの定義済みの機密情報の種類が含まれています。 また、環境に合った機密データ用に独自の機密情報の種類を作成することもできます。 |![緑色のチェック マーク。](../media/green-check-mark.png)|![緑色のチェック マーク。](../media/green-check-mark.png)|
+|**データ分類と情報保護ポリシーを実装します**。 機密ラベルを実装し、これらを使用して機密データを分類して保護を適用します。 これらのラベルは、データ損失防止ポリシーでも使用できます。 Azure Information Protection ラベルを使用している場合は、他の管理センターで新しいラベルを作成しないようにすることをお勧めします。|         |![緑色のチェック マーク。](../media/green-check-mark.png)|
+|**サードパーティのアプリとサービスのデータを保護するには、次の** Cloud App Security。 Salesforce、box、Cloud App Securityなど、サード パーティ製のクラウド アプリ全体で機密情報を保護するためのセキュリティ ポリシーを構成Dropbox。 機密情報の種類と、ポリシーで作成した機密ラベルをCloud App Security SaaS アプリ全体に適用できます。 <br><br>Microsoft Cloud App Securityプロセスを幅広く適用できます。 ポリシーは、継続的なコンプライアンス スキャン、法的な電子情報開示タスク、公開で共有される機密性の高いコンテンツの DLP を提供するために設定できます。 Cloud App Securityは、20 を超えるメタデータ フィルター (アクセス レベル、ファイルの種類など) に基づいて任意のファイルの種類を監視できます。 |         |![緑色のチェック マーク。](../media/green-check-mark.png)|
+|**[Microsoft Defender for Endpoint を使用して](/windows/security/threat-protection/microsoft-defender-atp/information-protection-in-windows-overview)、ユーザー** が自分のデバイスに機密情報を保存Windowsします。 |         |![緑色のチェック マーク。](../media/green-check-mark.png)|
+|**[AIP スキャナーを使用して](/azure/information-protection/deploy-aip-scanner) 、サーバーとファイル共有間の情報を識別および分類します**。 AIP レポート ツールを使用して結果を表示し、適切なアクションを実行します。|         |![緑色のチェック マーク。](../media/green-check-mark.png)|
 
 次の図は、これらの機能を示しています。
-![侵害から保護するための推奨機能](../media/m365-security-bdm-illustrations-assume-breach.png)
+![侵害から保護するための推奨機能。](../media/m365-security-bdm-illustrations-assume-breach.png)
 
 ## <a name="continuous-monitoring-and-auditing"></a>継続的な監視と監査
 
@@ -135,17 +135,17 @@ Microsoft 365保護機能を使用すると、どのような情報が保存さ�
 
 |推奨事項 |E3 |E5 |
 |---------|---------|---------|
-|監査ログ **が有効** になっていることを確認します。|![緑のチェック マーク](../media/green-check-mark.png)|![緑のチェック マーク](../media/green-check-mark.png)|
-|**週に 1** 回セキュリティで保護されたスコアを確認する - セキュリティスコアは、会社のセキュリティ状態にアクセスし、セキュリティスコアの推奨事項に基づいてアクションを実行するための中心的な場所です。 このチェックは毎週実行する必要があります。|![緑のチェック マーク](../media/green-check-mark.png)|![緑のチェック マーク](../media/green-check-mark.png)|
-|Microsoft **Defender を使用して、次のOffice 365** 使用します。<br>* 脅威の調査と対応機能<br> * 自動調査と対応 |         |![緑のチェック マーク](../media/green-check-mark.png)|
-|エンドポイント **に Microsoft Defender を使用する**:<br> *    [エンドポイントの検出と応答](/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) <br> * 自動調査と修復 セキュア スコア <br>*    [高度な検索](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) <br>|         |![緑のチェック マーク](../media/green-check-mark.png)|
-|クラウド **Microsoft Cloud App Security** で異常な動作を検出し、ランサムウェア、侵害されたユーザー、または不正なアプリケーションを特定し、リスクの高い使用状況を分析し、組織のリスクを制限するために自動的に修復します。|         |![緑のチェック マーク](../media/green-check-mark.png)|
+|監査ログ **が有効** になっていることを確認します。|![緑色のチェック マーク。](../media/green-check-mark.png)|![緑色のチェック マーク。](../media/green-check-mark.png)|
+|**週に 1** 回セキュリティで保護されたスコアを確認する - セキュリティスコアは、会社のセキュリティ状態にアクセスし、セキュリティスコアの推奨事項に基づいてアクションを実行するための中心的な場所です。 このチェックは毎週実行する必要があります。|![緑色のチェック マーク。](../media/green-check-mark.png)|![緑色のチェック マーク。](../media/green-check-mark.png)|
+|Microsoft **Defender を使用して、次のOffice 365** 使用します。<br>* 脅威の調査と対応機能<br> * 自動調査と対応 |         |![緑色のチェック マーク。](../media/green-check-mark.png)|
+|エンドポイント **に Microsoft Defender を使用する**:<br> *    [エンドポイントの検出と応答](/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) <br> * 自動調査と修復 セキュア スコア <br>*    [高度な検索](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) <br>|         |![緑色のチェック マーク。](../media/green-check-mark.png)|
+|クラウド **Microsoft Cloud App Security** で異常な動作を検出し、ランサムウェア、侵害されたユーザー、または不正なアプリケーションを特定し、リスクの高い使用状況を分析し、組織のリスクを制限するために自動的に修復します。|         |![緑色のチェック マーク。](../media/green-check-mark.png)|
 |**Sentinel Microsoft Azure現在** の SIEM ツールを使用して、環境全体の脅威を監視します。 |         |![緑のチェック マーク](../media/green-check-mark.png)|
 |**[Microsoft Defender for Identity を展開](/azure-advanced-threat-protection/what-is-atp)** して、オンプレミスの Active Directory 環境を対象とした脅威を監視および保護します。   |         |![緑のチェック マーク](../media/green-check-mark.png) |
 |Azure Defender _ **を使用** して、ハイブリッドワークロードとクラウド ワークロード全体の脅威を監視します。 Azure Defender_には、リソース時間またはトランザクションに基づいて支払われる無料の機能層と標準レベルの機能が含まれます。|         |         |
 
 次の図は、これらの機能を示しています。
-![継続的な監視と監査に推奨される機能](../media/m365-security-bdm-illustrations-monitoring-auditing.png)
+![継続的な監視と監査に推奨される機能。](../media/m365-security-bdm-illustrations-monitoring-auditing.png)
 
 推奨される監視アクションの上位:
 - **Microsoft Secure Score を毎週確認** する - Secure score は、テナントのセキュリティ状態にアクセスし、トップ推奨事項に基づいてアクションを実行するための中心的な場所です。 このチェックは毎週実行する必要があります。 セキュリティで保護されたスコアには、Azure AD、Intune、Cloud App Security、Microsoft Defender for Endpoint、および Microsoft Defender Office 365。 
