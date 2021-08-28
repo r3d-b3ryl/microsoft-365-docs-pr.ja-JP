@@ -20,12 +20,12 @@ ms.custom:
 description: Microsoft Defender for Office 365 で昇格された特権タスクを実行し、データのリスクを減らすため、Just-In-Time の時間制限付きアクセスをユーザーに付与するために PIM を統合する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a894f1c4652dbea4a0c5ab9a7df9027f4d42c75c
-ms.sourcegitcommit: b05b107774e8bca36c9ee19fdc4719d17e302f11
+ms.openlocfilehash: 4d1333963f841a9d9263f44263ad43d20ec75057
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58483954"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58615042"
 ---
 # <a name="privileged-identity-management-pim-and-why-to-use-it-with-microsoft-defender-for-office-365"></a>Privileged Identity Management (PIM) と Microsoft Defender for Office 365 で使用する理由
 
@@ -62,7 +62,7 @@ Privileged Identity Management (PIM) は、設定が完了すると、ユーザ�
 
 ***手順 2***。 追加のタスクに必要な 2 番目の (昇格された) アクセス許可グループを作成し、適格性を割り当てます。
 
-[特権アクセス グループ])https://docs.microsoft.com/ja-JP/azure/active-directory/privileged-identity-management/groups-features) を使用して、独自のカスタム グループを作成し、権限を組み合わせたり、組織のプラクティスやニーズを満たすために必要な粒度を上げたりすることができます。
+[[特権アクセス グループ]](/azure/active-directory/privileged-identity-management/groups-features) を使用して、独自のカスタム グループを作成し、権限を組み合わせたり、組織のプラクティスやニーズを満たすために必要な粒度を上げたりすることができます。
 
 ### <a name="create-a-role-group-requiring-the-permissions-we-need"></a>必要なアクセス許可を必要とする役割 グループを作成します。
 

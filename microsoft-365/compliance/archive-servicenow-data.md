@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、ServiceNow データを Veritas からユーザーにインポートおよびアーカイブするコネクタをMicrosoft 365。 このコネクタを使用すると、サードパーティのデータ ソースからデータをアーカイブできます。Microsoft 365。 このデータをアーカイブした後、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、サードパーティのデータを管理できます。
-ms.openlocfilehash: dfbb7daf97e0cfae12978c51e2d8998f35f015d7ae4b47012d758b9b33e0eb44
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ed86c9a7dd7bd7922af3576313720a71400207a6
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53796627"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573657"
 ---
 # <a name="set-up-a-connector-to-archive-servicenow-data"></a>ServiceNow データをアーカイブするコネクタをセットアップする
 
@@ -29,7 +29,7 @@ ServiceNow データをユーザー メールボックスに保存した後、�
 
 次の概要では、コネクタを使用して ServiceNow データをアーカイブするプロセスについて説明Microsoft 365。
 
-![ServiceNow データのアーカイブ ワークフロー](../media/ServiceNowConnectorWorkflow.png)
+![ServiceNow データのアーカイブ ワークフロー。](../media/ServiceNowConnectorWorkflow.png)
 
 1. 組織は ServiceNow と一緒に ServiceNow サイトをセットアップおよび構成します。
 

@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: ドキュメント理解モデルの使用状況分析を検索して使用する方法について説明します。
-ms.openlocfilehash: 9ea408485a7cf1ff935192775eab2325e0e268aad927a72dedf237f0e81a3e0f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d39b2417a90716200d33831bfef7e9cb2ff1d523
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53871145"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574041"
 ---
 # <a name="document-understanding-model-usage-analytics-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex での文書理解のモデル使用状況分析
 
@@ -35,7 +35,7 @@ Microsoft SharePoint Syntex コンテンツ センターは、モデル使用分
 - ライブラリ別の分類
 - モデルの利用状況 
 
- ![モデル分析](../media/content-understanding/model-analytics.png) </br>
+ ![モデル分析。](../media/content-understanding/model-analytics.png) </br>
 
 ### <a name="roll-up-of-model-usage-data-in-the-default-content-center"></a>既定のコンテンツ センターでのモデル利用状況データのロールアップ
 
@@ -49,7 +49,7 @@ SharePoint Syntex では、セットアップ時に既定のコンテンツ セ�
 
 ## <a name="classification-by-model"></a>モデル別の分類
 
-   ![合計モデル パーセンテージ](../media/content-understanding/total-model-percentage.png) </br>
+   ![合計モデル パーセンテージ。](../media/content-understanding/total-model-percentage.png) </br>
 
 **[モデル別の分類]** の円グラフには、最も多くのファイルを分類したモデルが表示されます。 これは、コンテンツ センターですべての公開モデルによって処理された合計ファイルのパーセンテージとして、公開された各モデルを表示します。
 
@@ -57,7 +57,7 @@ SharePoint Syntex では、セットアップ時に既定のコンテンツ セ�
 
 ## <a name="classification-by-library"></a>ライブラリ別の分類
 
-   ![処理されたファイル](../media/content-understanding/files-processed-over-time.png) </br>
+   ![処理されたファイル。](../media/content-understanding/files-processed-over-time.png) </br>
 
 **[ライブラリ別の分類]** の横棒グラフは、組織におけるコンテンツ理解の有効性を判断するのに役立ちます。  これには、各モデルの時間の経過とともに処理されたファイルの数だけでなく、グラフの列を選択することで、モデルが適用されたドキュメン トライブラリも表示されます。
 

@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: a98f3a4d1bda182331f81de0c0c5cf232940819c864b638fb738ae192ff9cc4f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2f1318b2c062e3db848b60edbb9ad60e1b38723f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854502"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573573"
 ---
 # <a name="windows-10-location-service"></a>Windows 10 の位置情報サービス
 
@@ -45,7 +45,7 @@ ms.locfileid: "53854502"
 
 Microsoft マネージド デスクトップ **デバイスの場所** へのアクセスを許可するWindows **設定** で [場所のプライバシー]**設定を有効にします**。 ユーザー インターフェイスは次のように表示されます。
 
- :::image type="content" source="../../media/MMD-location-services-UI.png" alt-text="[場所の設定] Windows設定":::
+ :::image type="content" source="../../media/MMD-location-services-UI.png" alt-text="[場所の設定] Windows設定します。":::
 
 > [!NOTE]
 > 位置情報サービスの使用をオプトインする場合、これはオペレーティング システム自体Windows適用されます。 アプリは位置情報サービスを使用することはできません。 各ユーザーは、アプリが自分の場所にアクセスできるかどうかを選択できます。

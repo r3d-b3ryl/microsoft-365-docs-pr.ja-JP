@@ -19,18 +19,18 @@ description: Azure AzCopy のエラーのトラブルシューティングを行
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: f8f8ea4cfcd38aa3680fc1aeef3317a6a16a90b909530061beb6c03a95a45f89
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 87f4e62f05e29147213d70b28e1778ea9e3ea683
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53885432"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573189"
 ---
 # <a name="troubleshoot-azcopy-in-advanced-ediscovery"></a>AzCopy のトラブルシューティング (Advanced eDiscovery
 
 Advanced eDiscovery でエラー修復のために Microsoft 365 以外のデータまたはドキュメントを読み込む場合、ユーザー インターフェイスは、アップロードするファイルの保存場所とファイルのアップロード先の Azure ストレージの場所を含むパラメーターを含む Azure AzCopy コマンドを提供します。 ドキュメントをアップロードするには、このコマンドをコピーし、ローカル コンピューターのコマンド プロンプトで実行します。  次のスクリーンショットは、AzCopy コマンドの例を示しています。
 
-![アップロードファイル以外Microsoft 365ファイル](../media/46ba68f6-af11-4e70-bb91-5fc7973516e3.png)
+![アップロードファイル以外Microsoft 365します。](../media/46ba68f6-af11-4e70-bb91-5fc7973516e3.png)
 
 通常、指定されたコマンドは、実行時に機能します。 ただし、表示されるコマンドが正常に実行されない場合があります。 考えられる理由を次に示します。
 

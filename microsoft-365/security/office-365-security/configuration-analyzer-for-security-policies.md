@@ -18,12 +18,12 @@ ms.collection:
 description: 管理者は、構成アナライザーを使用して、事前設定されたセキュリティ ポリシーの標準保護と厳密な保護の設定の下にあるセキュリティ ポリシーを見つけて修正する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ae0655b2f05962418e736242200d65be34a20d58
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 2b732922cf0a7d9f1d44a24d3b7b6f025f3c2a27
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58254913"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573429"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP および Microsoft Defender の保護ポリシー用の構成Office 365
 
@@ -68,7 +68,7 @@ Microsoft 365 Defender ポータルの構成アナライザーは、設定が事
   > [!NOTE]
   >
   > - ユーザーを対応する Azure Active Directory ロールに追加すると、ユーザーは Microsoft 365 Defender ポータルで必要なアクセス許可と、Microsoft 365 の他の機能に対するアクセス許可を与Microsoft 365。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
-  > - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
+  > - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
 
 ## <a name="use-the-configuration-analyzer-in-the-microsoft-365-defender-portal"></a>ポータルで構成アナライザーをMicrosoft 365 Defenderする
 
@@ -84,7 +84,7 @@ Microsoft 365 Defender ポータルの構成アナライザーは、設定が事
 
 既定では、[標準の推奨事項] タブで **構成アナライザーが開** きます。[厳密な推奨事項] **タブに切り替** えます。設定、レイアウト、およびアクションは、両方のタブで同じです。
 
-![設定アナライザーの [推奨事項] ビューの設定と推奨事項](../../media/configuration-analyzer-settings-and-recommendations-view.png)
+![設定アナライザーの [推奨事項] ビューを使用します。](../../media/configuration-analyzer-settings-and-recommendations-view.png)
 
 タブの最初のセクションには、Standard または Strict Protection と比較して、改善が必要なポリシーの種類ごとに設定の数が表示されます。 ポリシーの種類は次のとおりです。
 
@@ -141,10 +141,10 @@ Microsoft 365 Defender ポータルの構成アナライザーは、設定が事
 - **開始時刻****と終了時刻**(日付): 今日から 90 日間まで戻って行く場合があります。
 - **標準保護または****厳密な保護**
 
-完了したら、[適用] を **クリックします**。
+完了したら、**[適用]** をクリックします。
 
 結果をファイルにエクスポートするには、[エクスポート] .csvクリック **します**。
 
 特定の [変更者] **、[** 名前の設定]、または **[種類**] の値で結果をフィルター処理するには、[検索] ボックス **を使用** します。 
 
-![Configuration Analyzer の構成ドリフト分析と履歴ビュー](../../media/configuration-analyzer-configuration-drift-analysis-view.png)
+![構成アナライザーの構成ドリフト分析と履歴ビュー。](../../media/configuration-analyzer-configuration-drift-analysis-view.png)

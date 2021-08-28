@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: サンプル モデルを使用したドキュメント理解モデルについて説明します。
-ms.openlocfilehash: 52b66a30bb9b28dabde0a9af092e942522db58150acaacc48a23bc105fcb1dce
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e89c0723b978b4d5a206119e10b5a712668b406a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795412"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573741"
 ---
 # <a name="learn-about-document-understanding-models-through-a-sample-model"></a>サンプル モデルを通じてドキュメント理解モデルについて学ぶ
 
@@ -31,11 +31,11 @@ Microsoft SharePoint Syntex は、調査に使用できるサンプル モデル
 1. コンテンツ センターから[**モデル**]を選択して、モデルリストを表示します。</br>
 2. [**モデル**]ページで、[**サンプルモデルのインポート**]を選択します。</br>
 
-    ![サンプル モデルのインポート](../media/content-understanding/import-sample-model.png) </br>
+    ![サンプル モデルのインポート。](../media/content-understanding/import-sample-model.png) </br>
 
 3. インポートが完了すると、**BenefitsChangeNotice** モデルのホーム ページが開きます。 今後サンプル モデルを開く必要がある場合は、コンテンツ センターのモデル リストから開くことができます。 </br>
 
-     ![サンプル ホーム ページ](../media/content-understanding/sample-home-page.png)</br>
+     ![サンプル ホーム ページ。](../media/content-understanding/sample-home-page.png)</br>
 
 サンプル モデルを分析してモデルがどのように構築されているかをよりよく理解するだけでなく、作業モデルとしてさらに進んで、次のようなことを行うことができます。
 

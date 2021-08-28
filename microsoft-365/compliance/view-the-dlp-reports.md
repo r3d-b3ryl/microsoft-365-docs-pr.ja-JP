@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: Office 365 の DLP レポートを使用して、DLP ポリシーの一致、上書き、または誤検知の数を表示し、時間の流れによって上昇または下向きかどうかを確認します。
-ms.openlocfilehash: 936c8aaba7d50cbb775c98babe751b357738e617d55ea8a8517a86c4f7cdb188
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 12ee109a348657aa8ca04c55e496047a82772e22
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795497"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574065"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>データ損失防止のレポートの表示
 
@@ -60,19 +60,19 @@ ms.locfileid: "53795497"
   
 これらのレポートは、セキュリティ コンプライアンス センター レポート &amp; ダッシュボードで \> **確認** \> **できます**。
   
-![DLP ポリシーがレポートと一致する](../media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
+![DLP ポリシーはレポートと一致します。](../media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
   
 ## <a name="view-the-justification-submitted-by-a-user-for-an-override"></a>ユーザーがオーバーライドのために送信した位置合わせを表示する
 
 DLP ポリシーでユーザーがそれを上書きすることを許可している場合は、誤検知および上書きレポートを使用して、ポリシーのヒントでユーザーが送信したテキストを表示できます。
   
-![DLP 誤検知レポートおよび上書きレポートの詳細の位置合わせフィールド](../media/e11e3126-026d-4e77-a16d-74a0686d1fa3.png)
+![DLP 誤検知レポートと上書きレポートの詳細の位置合わせフィールド。](../media/e11e3126-026d-4e77-a16d-74a0686d1fa3.png)
   
 ## <a name="take-action-on-insights-and-recommendations"></a>インサイトと推奨事項に対してアクションを実行する
 
 レポートには分析情報と推奨事項が表示され、赤い警告アイコンをクリックすると、潜在的な問題に関する詳細を確認し、修復可能なアクションを実行できます。
   
-![インサイト アイコンをクリックして、実行する詳細とアクションを表示する](../media/51782036-7299-4960-8175-75c2b1637159.png)
+![インサイト アイコンをクリックすると、実行する詳細とアクションが表示されます。](../media/51782036-7299-4960-8175-75c2b1637159.png)
   
 ## <a name="permissions-for-dlp-reports"></a>DLP レポートのアクセス許可
 

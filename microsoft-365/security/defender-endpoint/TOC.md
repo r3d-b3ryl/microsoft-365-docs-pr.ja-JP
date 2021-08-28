@@ -377,6 +377,7 @@
 ##### [インシデントの調査](investigate-incidents.md)
 
 #### [アラート キュー]()
+##### [Microsoft 365 Defender のアラート キュー](alerts-queue-endpoint-detection-response.md)
 ##### [アラート キューを表示および整理する](alerts-queue.md)
 ##### [アラートの確認](review-alerts.md)
 ##### [アラートの管理](manage-alerts.md)
@@ -485,7 +486,7 @@
 ####### [アラート関連の IP 情報を取得する](get-alert-related-ip-info.md)
 ####### [アラート関連のデバイス情報を取得する](get-alert-related-machine-info.md)
 ####### [アラート関連のユーザー情報を取得する](get-alert-related-user-info.md)
-####### [Microsoft 365 Defender のアラート キュー](alerts-queue-endpoint-detection-response.md)
+
 
 ###### [脆弱性と安全な構成の評価]()
 ####### [評価方法とプロパティのエクスポート](get-assessment-methods-properties.md)

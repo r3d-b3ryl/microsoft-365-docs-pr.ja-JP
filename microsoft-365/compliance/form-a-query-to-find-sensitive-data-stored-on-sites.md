@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: オンラインでデータ損失防止 (DLP) をSharePoint、テナント全体に機密データを含むドキュメントを検出します。
-ms.openlocfilehash: cd92fafe5a04de0339c0afb5f5b7cc2b4cc1772fc46dabe6477dd23aa981af23
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e2ecaa6b4b230db09095a9f9e5008dfdf0698043
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53905580"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573225"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>サイトに保存された機密データを検索するクエリの形成
 
@@ -35,7 +35,7 @@ ms.locfileid: "53905580"
 
 基本的な DLP クエリは、SensitiveType、count range、および confidence range の 3 つの部分で構成されています。 次の図に示す場合 **、SensitiveType:" \<type\> は** 必須であり、両方 **|\<count range\>** とも **|\<confidence range\>** 省略可能です。
 
-![必須とオプションに分割されるクエリの例](../media/DLP-query-example-text.png)
+![必須と省略可能に分割されたクエリの例。](../media/DLP-query-example-text.png)
 
 ### <a name="sensitive-type---required"></a>機密情報の種類: 必須
 
@@ -68,7 +68,7 @@ DLP 固有のプロパティを使用してクエリを作成することもで�
 
 ****
 
-|Query|説明|
+|クエリ|説明|
 |---|---|
 |`SensitiveType:"International Banking Account Number (IBAN)"`|名前は長いので奇妙に見えるかもしれませんが、その機密性の高い型の正しい名前です。 機密情報の種類のインベントリから正確な名前 [を使用してください](/Exchange/what-the-sensitive-information-types-in-exchange-look-for-exchange-2013-help)。 また、組織用に [作成したカスタム](create-a-custom-sensitive-information-type.md) 機密情報の種類の名前を使用することもできます。|
 |`SensitiveType:"Credit Card Number|1..4294967295|1..100"`|これにより、機密性の高い種類の "クレジット カード番号" に少なくとも 1 つ一致するドキュメントが返されます。 各範囲の値は、それぞれの最小値と最大値です。 このクエリを記述するより簡単な方法  `SensitiveType:"Credit Card Number"` は、ですが、その中で楽しいのはどこですか?|

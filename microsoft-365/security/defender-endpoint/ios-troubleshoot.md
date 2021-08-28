@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 713abbf65edcf36c1e9015093c4f4933732a5fec
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 9a77662d1473a56031a30e44a1d39df8e3964541
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257601"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573561"
 ---
 # <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>iOS 上の Microsoft Defender for Endpoint で問題のトラブルシューティングを行い、FAQ に対する回答を見つける
 
@@ -32,7 +32,7 @@ ms.locfileid: "58257601"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 このトピックでは、iOS で Microsoft Defender for Endpoint を使用する際に発生する可能性のある問題に対処するためのトラブルシューティング情報を提供します。
 
@@ -53,7 +53,7 @@ ms.locfileid: "58257601"
 1. VPN を無効 **にするにはConnectをオフ** にします。
 
     > [!div class="mx-imgBorder"]
-    > ![VPN 構成はオンデマンドで接続します](images/ios-vpn-config.png)
+    > ![VPN 構成はオンデマンドで接続します。](images/ios-vpn-config.png)
 
 > [!NOTE]
 > VPN が無効になっている場合、Web 保護は使用できません。 Web Protection を再び有効にするには、デバイスで Microsoft Defender for Endpoint アプリを開き、[VPN の開始] をクリックまたは **タップします**。
@@ -91,7 +91,7 @@ Microsoft Defender for Endpoint は、フィッシングなどの Web ベース�
 さらに、iOS デバイスに通知が表示されます。 通知をタップすると、ユーザーが詳細を確認する次の画面が開きます。
 
 > [!div class="mx-imgBorder"]
-> ![安全でない通知として報告されたサイトの画像](images/ios-phish-alert.png)
+> ![安全でない通知として報告されたサイトの画像。](images/ios-phish-alert.png)
 
 ## <a name="device-not-seen-on-the-defender-for-endpoint-console-after-onboarding"></a>オンボード後に Defender for Endpoint コンソールにデバイスが表示されない。
 

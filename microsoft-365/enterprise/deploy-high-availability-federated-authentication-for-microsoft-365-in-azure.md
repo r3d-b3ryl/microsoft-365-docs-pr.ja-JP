@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 34b1ab9c-814c-434d-8fd0-e5a82cd9bff6
 description: '概要: ユーザーサブスクリプションの高可用性フェデレーション認証を構成Microsoft 365でMicrosoft Azure。'
-ms.openlocfilehash: 2bbd802a3ed3e7cc553d95e346d6b793b59f3533
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 22715f55a733b963a9b9f9c26c910adba1012ed7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356818"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574029"
 ---
 # <a name="deploy-high-availability-federated-authentication-for-microsoft-365-in-azure"></a>Azure に Microsoft 365 の高可用性フェデレーション認証を展開する
 
@@ -42,7 +42,7 @@ ms.locfileid: "58356818"
   
 **Azure のインフラストラクチャの高可用性フェデレーションMicrosoft 365認証**
 
-![Azure のフェデレーション認証インフラストラクチャMicrosoft 365の最終的な構成](../media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
+![Azure のフェデレーション認証インフラストラクチャMicrosoft 365の最終的な構成。](../media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
   
 すべての仮想マシンが単一のクロスプレミス Azure 仮想ネットワーク (VNet) に入っています。 
   

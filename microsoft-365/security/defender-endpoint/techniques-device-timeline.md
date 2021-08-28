@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5e5222214d4a5f98b140bbfc1f094de4733ceebe88ce298b434de0ed01c057dc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6ab81054cf2c2f4d6394730651a891c7d47b1794
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817485"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573501"
 ---
 # <a name="techniques-in-the-device-timeline"></a>デバイスタイムラインのテクニック
 
@@ -43,7 +43,7 @@ Microsoft Defender for Endpoint では **、Techniques は** イベント タイ
 
 パブリック プレビューの場合、テクニックは既定で使用できます。デバイスのタイムラインを表示するときにイベントと共に表示されます。 
 
-![デバイス タイムラインのスクリーンショットのテクニック](images/device-timeline-2.png)
+![デバイスタイムラインのスクリーンショットのテクニック。](images/device-timeline-2.png)
 
 テクニックは太字で強調表示され、左側に青いアイコンが表示されます。 対応する MITRE ATT&CK ID とテクニック名は、[追加情報] の下にタグとして表示されます。 
 
@@ -57,18 +57,18 @@ Microsoft Defender for Endpoint では **、Techniques は** イベント タイ
 
 右側に青いアイコンが表示されている場合は、エンティティの詳細をコピーできます。 たとえば、関連ファイルの SHA1 をコピーするには、青いページ アイコンを選択します。
 
-![エンティティの詳細のコピー](images/techniques-side-pane-clickable.png)
+![エンティティの詳細をコピーします。](images/techniques-side-pane-clickable.png)
 
 コマンド ラインでも同じ操作を実行できます。
 
-![コマンド ラインのコピー](images/techniques-side-pane-command.png)
+![コマンド ラインをコピーします。](images/techniques-side-pane-command.png)
 
 
 ## <a name="investigate-related-events"></a>関連イベントの調査
 
 高度な [検索を使用して](advanced-hunting-overview.md) 、選択したテクニックに関連するイベントを検索するには、[関連イベントのハント **] を選択します**。 これにより、テクニックに関連するイベントを検索するクエリを含む高度な検索ページが表示されます。
 
-![関連イベントのハント](images/techniques-hunt-for-related-events.png)
+![関連するイベントを検索します。](images/techniques-hunt-for-related-events.png)
 
 >[!NOTE]
 >[テクニック] **サイド** ウィンドウから [関連イベントのハント] ボタンを使用してクエリを実行すると、特定された手法に関連するイベントはすべて表示されますが、クエリ結果にはテクニック自体は含めされません。
@@ -83,7 +83,7 @@ Microsoft Defender for Endpoint では **、Techniques は** イベント タイ
 ### <a name="choose-columns-to-expose"></a>公開する列を選択する
 [列の選択] ボタンを選択すると、タイムラインで公開する列 **を選択** できます。
 
-![列のカスタマイズ](images/filter-customize-columns.png)
+![列をカスタマイズします。](images/filter-customize-columns.png)
 
 そこから、含める情報セットを選択できます。
 
@@ -91,7 +91,7 @@ Microsoft Defender for Endpoint では **、Techniques は** イベント タイ
 
 イベントまたは手法のみを表示するには、デバイスタイムラインから [ **フィルター** ] を選択し、表示するデータ型を選択します。
 
-![フィルターのスクリーンショット](images/device-timeline-filters.png)
+![フィルターのスクリーンショット。](images/device-timeline-filters.png)
 
 
 

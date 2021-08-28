@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b19b3c23716e7a9b1f78b82b3663271310603df8
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: ecfc8281c642e7240832a7c057f37f9df4caad68
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508312"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573465"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-azure-event-hub"></a>高度Microsoft 365 Defenderイベントを Azure イベント ハブにストリーミングするように構成する
 
@@ -33,7 +33,7 @@ ms.locfileid: "58508312"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 1. テナントに [イベント ハブ](/azure/event-hubs/) を作成します。
 
@@ -69,7 +69,7 @@ Event Hub 名前空間が作成されると、次の処理が必要になりま�
 
    Event Hub リソース **ID を取得するには**、[Azure プロパティ] タブの [[Azure](https://ms.portal.azure.com/)Event Hub 名前空間] ページに移動し> [リソース ID] の下のテキストを  >  **コピーします**。
 
-   ![イベント ハブ リソース Id1 のイメージ](../defender-endpoint/images/event-hub-resource-id.png)
+   ![イベント ハブ リソース Id1 のイメージ。](../defender-endpoint/images/event-hub-resource-id.png)
 
 8. ストリーミングするイベントを選択し、[保存] を **クリックします**。
 
@@ -113,7 +113,7 @@ Event Hub 名前空間が作成されると、次の処理が必要になりま�
 
 - デバイス情報イベントの例を次に示します。
 
-  ![イベント ハブ リソース Id2 のイメージ](../defender-endpoint/images/machine-info-datatype-example.png)
+  ![イベント ハブ リソース Id2 のイメージ。](../defender-endpoint/images/machine-info-datatype-example.png)
 
 ## <a name="related-topics"></a>関連項目
 

@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、ICE チャット ツールからデータをインポートおよびアーカイブするコネクタをセットアップして、Microsoft 365。 これにより、Microsoft 365 のサード パーティデータ ソースからデータをアーカイブし、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティ データを管理できます。
-ms.openlocfilehash: 0e2029f638611844fa2dba54241e11d9b743f802521615d7d4ea6f5865e2181d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c9d0cf8da71818b091c73002766be3beb5d516e9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53802635"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573309"
 ---
 # <a name="set-up-a-connector-to-archive-ice-chat-data"></a>ICE Chat データをアーカイブするコネクタをセットアップする
 
@@ -29,7 +29,7 @@ ICE チャット データをユーザー メールボックスに格納した�
 
 次の概要では、コネクタを使用して ICE チャット データをアーカイブするプロセスについて説明Microsoft 365。
 
-![ICE チャットのアーカイブ ワークフロー](../media/ICEChatConnectorWorkflow.png)
+![ICE チャットのアーカイブ ワークフロー。](../media/ICEChatConnectorWorkflow.png)
 
 1. 組織は ICE チャットを使用して ICE チャット SFTP サイトをセットアップします。 また、ICE チャットを使用して、ICE Chat SFTP サイトにチャット メッセージをコピーする ICE チャットを構成します。
 
@@ -75,11 +75,11 @@ ICE Chat データをアーカイブするために必要な実装手順の一�
 
 5. [コンテンツ **ソースの資格情報の追加]** ページで、[Microsoft が提供する PGP および SSH 公開キーを使用 **する] をクリックします**。
 
-   ![公開キーを使用するオプションを選択する](../media/ICEChatPublicKeysOption.png)
+   ![公開キーを使用するオプションを選択します。](../media/ICEChatPublicKeysOption.png)
 
 6. 手順 1 で **、[SSH** キーのダウンロード] **、[PGP** キーのダウンロード] 、および **[IP** アドレスのダウンロード] リンクをクリックして、各ファイルのコピーをローカル コンピューターに保存します。
 
-   ![公開キーと IP アドレスをダウンロードするリンク](../media/ICEChatPublicKeyDownloadLinks.png)
+   ![公開キーと IP アドレスをダウンロードするリンク。](../media/ICEChatPublicKeyDownloadLinks.png)
 
    これらのファイルには、手順 2 で ICE Chat SFTP サイトを構成するために使用される次のアイテムが含まれています。
 
@@ -150,11 +150,11 @@ IP アドレスを取得するには、次の方法を実行します。
 
 5. [コンテンツ **ソースの資格情報の追加] ページで** 、[PGP と SSH のプライベート キーを使用 **する] をクリックします**。
 
-   ![プライベート キーを使用するオプションを選択する](../media/ICEChatPrivateKeysOption.png)
+   ![プライベート キーを使用するオプションを選択します。](../media/ICEChatPrivateKeysOption.png)
 
 6. 手順 1 で **、[IP** アドレスのダウンロード] をクリックして、IP アドレス ファイルのコピーをローカル コンピューターに保存します。
 
-   ![IP アドレスをダウンロードする](../media/ICEChatConnectorIPAddress.png)
+   ![IP アドレスをダウンロードします。](../media/ICEChatConnectorIPAddress.png)
 
 7. [キャンセル **] を** クリックしてウィザードを閉じます。 手順 2 でこのウィザードに戻り、コネクタを作成します。
 

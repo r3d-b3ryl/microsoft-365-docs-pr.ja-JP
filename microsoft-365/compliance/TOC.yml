@@ -259,6 +259,8 @@
           items:
             - name: データ損失防止ポリシーのサポート
               href: dlp-overview-plan-for-dlp.md
+            - name: データ損失防止ポリシー リファレンス
+              href: dlp-policy-reference.md
         - name: DLP の使用を開始する
           items:
             - name: 既定の DLP ポリシーの使用を開始する

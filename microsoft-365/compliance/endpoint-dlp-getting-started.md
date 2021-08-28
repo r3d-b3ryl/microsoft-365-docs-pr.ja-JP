@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 365 エンドポイントのデータ損失防止を設定して、ファイルアクティビティを監視し、それらのファイルの保護アクションをエンドポイントに実装します。
-ms.openlocfilehash: 85880fd9f64df1bd3807bc36d12c4bd7a5c2e4754ad1ac07ffe3e68f7f07a99d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 53054e32803bb3722674c043a84eb7f410a77d06
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53865956"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573633"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>エンドポイント データ損失防止を開始する
 
@@ -127,7 +127,7 @@ Endpoint DLP からのデータは、[Activity エクスプローラー](data-cl
 2. コンプライアンスセンターの設定ページを開き、[**オンボードデバイス**]を選択します。
 
    > [!div class="mx-imgBorder"]
-   > ![デバイス管理を有効にする](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
+   > ![デバイス管理を有効にする。](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
 
    > [!NOTE]
    > 通常、デバイスのオンボーディングが有効になるまで約60秒かかりますが、Microsoft サポートに連絡するまでに最大 30 分かかります。
@@ -139,7 +139,7 @@ Endpoint DLP からのデータは、[Activity エクスプローラー](data-cl
 5. これらの追加デバイスに導入する方法を[**導入方法**]リストから選択し、**パッケージをダウンロード** します。
 
    > [!div class="mx-imgBorder"]
-   > ![導入方法](../media/endpoint-dlp-getting-started-3-deployment-method.png)
+   > ![導入方法。](../media/endpoint-dlp-getting-started-3-deployment-method.png)
 
 6. 「[Windows 10 マシンのオンボーディングツールと方法](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)」の適切な手順に従います。 このリンクをクリックすると、手順 5 で選択した導入パッケージと一致する Microsoft Defender for Endpoint の手順にアクセスできるランディング ページが表示されます。
 
@@ -165,7 +165,7 @@ Endpoint DLP からのデータは、[Activity エクスプローラー](data-cl
 3. [**デバイス管理**]を選択して、[**デバイス**]リストを開きます。 既に Microsoft Defender for Endpoint にレポートしているデバイスのリストが表示されます。
 
    > [!div class="mx-imgBorder"]
-   > ![デバイス管理](../media/endpoint-dlp-getting-started-2-device-management.png)
+   > ![デバイス管理。](../media/endpoint-dlp-getting-started-2-device-management.png)
 
 4. 追加のデバイスをオンボードする必要がある場合は、[**オンボーディング**]を選択します。
 
@@ -196,7 +196,7 @@ Endpoint DLP からのデータは、[Activity エクスプローラー](data-cl
 2. エンドポイントデバイスのすべてのデータにアクセスしてフィルタリングするには、「[Activity エクスプローラースタートガイド](data-classification-activity-explorer.md)」の手順に従ってください。
 
    > [!div class="mx-imgBorder"]
-   > ![エンドポイント デバイスのアクティビティ エクスプローラー フィルター](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
+   > ![エンドポイント デバイスのアクティビティ エクスプローラー フィルター。](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
 
 ## <a name="next-steps"></a>次の手順
 

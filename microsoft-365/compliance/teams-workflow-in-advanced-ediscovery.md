@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: コンテンツを保存、収集、レビュー、エクスポートする方法については、Microsoft TeamsのAdvanced eDiscovery。
-ms.openlocfilehash: e5e899b3ee6268c0214dbcfe6b53566072fc75ed045e728a0f7845f25354e552
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 462442d2319c2c199d39795b77b67c6dcefdb758
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53841345"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573237"
 ---
 # <a name="advanced-ediscovery-workflow-for-content-in-microsoft-teams-using-large-cases-preview"></a>Advanced eDiscoveryケースを使用して、Microsoft Teamsのワークフローを確認する (プレビュー)
 
@@ -69,7 +69,7 @@ Teams Advanced eDiscovery でコンテンツを管理する最初の手順は、
 
    [ **新しい電子情報開示ケース]** フライアウト ページが表示されます。 [ **ケース形式]** セクションでは、大きなケースを作成するオプションを提供します。
 
-   ![[新しい電子情報開示ケース] ページの大きなケース オプション](..\media\AeDLargeCases1.png)
+   ![[新しい電子情報開示ケース] ページの大きなケース オプション。](..\media\AeDLargeCases1.png)
 
 4. 大文字と小文字の名前を付けて[大きな大文字と小文字を区別 **する** ] オプションを選択し、[ **保存** ] をクリックして大きな大文字と小文字を作成します。
 
@@ -87,7 +87,7 @@ Teams Advanced eDiscovery でコンテンツを管理する最初の手順は、
 
 4. 各保管担当者を展開して、保管担当者に自動的に関連付けられたプライマリ データ ソースを表示し、保管担当者に関連付ける他の場所を選択します。
 
-   ![カストディアン データ ソース](..\media\TeamsCustodialDataLocations1.png)
+   ![カストディアン データ ソース。](..\media\TeamsCustodialDataLocations1.png)
 
 5. これらのガイドラインに従って、コンテンツの保管データ ソースTeamsします。 [編集 **] を** クリックしてデータの場所を追加します。
 
@@ -156,11 +156,11 @@ Teams Advanced eDiscovery でコンテンツを管理する最初の手順は、
 
    Teams チャット会話の最も包括的なコレクション (1:1、グループ、チャネル、プライベート チャットを含む) を確認するには、[種類]条件を使用し、[インスタント メッセージ] オプションを選択します。 また、コレクションの範囲を調査に関連する項目に絞り込むには、日付範囲または複数のキーワードを含めてお勧めします。 Type オプションと Date オプションを使用したサンプル クエリの **スクリーンショット** を **次に示** します。
 
-   ![コンテンツを収集Teamsクエリ](..\media\TeamsConditionsQueryType.png)
+   ![クエリを実行して、Teams収集します。](..\media\TeamsConditionsQueryType.png)
 
 9. [下書 **きまたは収集** ウィザードの保存] ページで、下書きコレクションを作成するか、コレクションをレビュー セットにコミットするかに応じて、次のいずれかを実行します。
 
-   ![下書きコレクションまたはコミット コレクションの保存](..\media\TeamsDraftCommitCollection.png)
+   ![下書きコレクションまたはコミット コレクションを保存します。](..\media\TeamsDraftCommitCollection.png)
 
    1. **コレクションを下書きとして保存します**。 下書きコレクションを作成するには、このオプションを選択します。 前に説明したように、下書きコレクションはコレクションの結果をレビュー セットに追加しない。 コレクション スコープ内のデータ ソースの検索クエリに一致する検索結果の推定値を返します。 これにより、[コレクション統計とレポート[(コレクション統計-reports.md)] を表示し、下書きコレクションを編集して再実行できます。 下書きコレクションの結果に満足したら、レビュー セットにコミットできます。 詳細については、「下書き [コレクションを作成する」を参照してください](create-draft-collection.md)。
 
@@ -198,7 +198,7 @@ Teams Advanced eDiscovery でコンテンツを管理する最初の手順は、
 
 レビュー セット **のコマンド** バーの [グループ] コントロールを使用して、Teamsグループ化されたコンテンツを表示します。
 
-![コマンド バーのグループ コントロール](..\media\TeamsGroupControl.png)
+![コマンド バーのグループ コントロール。](..\media\TeamsGroupControl.png)
 
 - [**グループ ファミリの添付ファイル]** を選択して、Teamsグループ化されたコンテンツを表示します。 各トランスクリプト ファイルは、レビュー セットアイテムの一覧の行に表示されます。 添付ファイルはアイテムの下に入れ子にされます。
 
@@ -215,11 +215,11 @@ Teams Advanced eDiscovery でコンテンツを管理する最初の手順は、
 
 ##### <a name="conversation-in-teams-client"></a>クライアントTeams会話
 
-![レビュー セットのトランスクリプト ファイルに表示される会話](..\media\TeamsClient1.png)
+![レビュー セットのトランスクリプト ファイルに表示される会話。](..\media\TeamsClient1.png)
 
 ##### <a name="conversation-in-transcript-file"></a>トランスクリプト ファイルでの会話
 
-![クライアントに表示される同Teams会話](..\media\TeamsTranscript1.png)
+![同じ会話をクライアントTeamsします。](..\media\TeamsTranscript1.png)
 
 ### <a name="transcript-conversation-threading"></a>トランスクリプト会話スレッド
 
@@ -261,7 +261,7 @@ Advanced eDiscovery で使用されるロジックは、Teams コンテンツの
 
 次の表に、コンテンツのメタデータ プロパティTeams示します。
 
-|Metadata プロパティ  |Description  |
+|Metadata プロパティ  |説明  |
 |:---------|:---------|
 |ContainsEditedMessage      | トランスクリプト ファイルに編集されたメッセージが含まれているかどうかを示します。 トランスクリプト ファイルを表示すると、編集されたメッセージが識別されます。|
 |ConversationId|アイテムが関連付けられている会話を識別する GUID。 同じ会話のトランスクリプト ファイルと添付ファイルは、このプロパティの値が同じです。|
@@ -289,7 +289,7 @@ Advanced eDiscovery で使用されるロジックは、Teams コンテンツの
 
 - コマンド バー **の [列の** カスタマイズ] コントロールを使用して、列を追加および整理して、コンテンツのレビュー Teamsします。
 
-  ![[列の編集] フライアウト ページを使用して列を追加、削除、整理する](..\media\EditReviewSetColumns.png)
+  ![[列の編集] フライアウト ページを使用して、列を追加、削除、整理します。](..\media\EditReviewSetColumns.png)
 
    コンテンツの作成に役立つ列を追加Teamsできます。 列の順序は、[列の編集] フライアウト ページでドラッグ アンド ドロップ **して** 並び替えすることもできます。 また、列を並べ替え、並べ替Teams同様の値を持つコンテンツをグループ化することもできます。
 

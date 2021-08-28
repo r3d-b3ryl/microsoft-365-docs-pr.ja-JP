@@ -14,12 +14,12 @@ ms.collection:
 ms.service: ''
 localization_priority: Normal
 description: 既存のトピックを編集する方法については、Microsoft Viva トピック。
-ms.openlocfilehash: 748b626dcdf6d118794872d5865a06678293d90da95d7e74057f019df749a1c6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4fb3089d0ce701477542fec7710db5de17638469
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53840408"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573609"
 ---
 # <a name="edit-an-existing-topic-in-microsoft-viva-topics"></a>既存のトピックを編集Microsoft Viva トピック 
 
@@ -34,7 +34,7 @@ Viva Topics では、既存のトピックを編集できます。 既存のト�
 > [!Note] 
 > AI によって収集されるトピックの情報はセキュリティによってトリミング[](topic-experiences-security-trimming.md)されます。既存のトピックを編集するときに手動で追加するトピックの説明とユーザー情報は、トピックを表示する権限を持つすべてのユーザーに表示されます。 
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要件
 
 既存のトピックを編集するには、次の必要があります。
 - Viva トピック ライセンスを持っている。
@@ -103,7 +103,7 @@ Who を持つユーザーは *、* トピックの強調表示からトピック
 
 8. [ **推奨サイト] セクション** には、AI がトピックに関連付けられていることを提案するサイトが表示されます。 
 
-   ![[推奨サイト] セクションのスクリーンショット](../media/knowledge-management/suggested-sites-section.png)  
+   ![[推奨サイト] セクションのスクリーンショット。](../media/knowledge-management/suggested-sites-section.png)  
 
     ピン留めされたアイコンを選択すると、候補サイトをピン留めされたサイトに変更できます。
 

@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: ユーザーのテナントの計画、展開、および継続的なMicrosoft 365概要。
-ms.openlocfilehash: 18a4f4f39b2c3fd530aecb9202032a2b571a9c7f4cf38fec489dfa88a81a2a98
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5d98f715b9233a29c8710966099667075eae0020
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53883225"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573381"
 ---
 # <a name="tenant-management-for-microsoft-365-for-enterprise"></a>エンタープライズ向けMicrosoft 365テナント管理
 
@@ -47,7 +47,7 @@ Microsoft 365テナントは、ヨーロッパや北アメリカなどの特定�
 
 次に例を示します：
 
-![Azure Microsoft 365テナントを使用してテナントをAD例](../media/tenant-management-overview/tenant-management-example-tenant.png)
+![Azure Microsoft 365テナントを使用してテナントAD例を示します。](../media/tenant-management-overview/tenant-management-example-tenant.png)
 
 *テナント管理* は、テナントの計画、展開、および継続的なMicrosoft 365です。
 
@@ -77,7 +77,7 @@ Microsoft 365テナントは、ヨーロッパや北アメリカなどの特定�
 
 これらすべての要素が配置されたMicrosoft 365テナントの例を次に示します。
 
-![テナントのMicrosoft 365例](../media/tenant-management-overview/tenant-management-tenant-config.png)
+![テナントのMicrosoft 365例。](../media/tenant-management-overview/tenant-management-tenant-config.png)
 
 この図では、次のMicrosoft 365を示します。
 
@@ -90,7 +90,7 @@ Microsoft 365テナントは、ヨーロッパや北アメリカなどの特定�
 
 次のセクションと表は、このソリューションの手順の主な機能とライセンスの一覧です。
 
-### <a name="tenant"></a>Tenant
+### <a name="tenant"></a>テナント
 
 |機能|説明|ライセンス|
 |---|---|---|
@@ -146,7 +146,7 @@ Microsoft 365テナントは、ヨーロッパや北アメリカなどの特定�
 4. [オンプレミスのサーバーとデータOffice移行する](tenant-management-migration.md)
 5. [デバイスとアプリの管理を展開する](tenant-management-device-management.md)
 
-[![テナントを展開して管理するMicrosoft 365手順](../media/tenant-management-overview/tenant-management-step-grid.png)](tenant-management-tenants.md)
+[![テナントを展開および管理する手順Microsoft 365します。](../media/tenant-management-overview/tenant-management-step-grid.png)](tenant-management-tenants.md)
 
 各手順では、展開オプション、結果、および継続的なメンテナンス タスクについて説明します。
 

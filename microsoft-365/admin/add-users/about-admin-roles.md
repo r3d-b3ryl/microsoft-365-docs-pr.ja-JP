@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: サービス管理者などの管理者ロールはビジネス機能にマップされ、管理センターで特定のタスクを実行するための権限を付与します。
-ms.openlocfilehash: 3678a6221fc62a895bc7d2fbd97befe5a5aa6cb2
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: 42c28d230cef36f7f6e0421cc46f64a53222eca8
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58393354"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58585610"
 ---
 # <a name="about-admin-roles"></a>管理者ロールについて
 
@@ -39,7 +39,7 @@ Microsoft 365 または Office 365 のサブスクリプションには、<a hre
 
 ## <a name="before-you-begin"></a>はじめに
 
-<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>で管理できる Azure AD 役割の詳細な説明の完全なリストをお探しですか? 「Azure Active Directory での管理者役割のアクセス許可」を確認してください。 [Azure Active Directory での管理者役割のアクセス許可](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)。
+<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>で管理できる Azure AD 役割の詳細な説明の完全なリストをお探しですか? 「Azure Active Directory での管理者役割のアクセス許可」を確認してください。 [Azure AD ロール](/azure/active-directory/roles/permissions-reference)。
 
 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>で管理できる Intune 役割の詳細な説明の完全なリストをお探しですか?  「[Microsoft Intune の役割ベースのアクセス制御 (RBAC)](/mem/intune/fundamentals/role-based-access-control)」を確認してください。
 
@@ -65,7 +65,7 @@ Microsoft 365 または Office 365 のサブスクリプションには、<a hre
 
 Microsoft 365 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=2097861" target="_blank">**役割**</a>] に移動し、任意の役割を選択して詳細ウィンドウを開きます。 [**アクセス許可**] タブを選択して、実行する許可を持った役割を割り当てられた管理者についての詳細な一覧を表示します。 役割にユーザーを追加するには、**[割り当てられた]** または **[割り当てられた管理者]** タブを選択します。
 
-おそらく、組織内で次の役割を割り当てる必要があるだけです。 既定では、最初にほとんどの組織が使用する役割が表示されます。 役割が見つからない場合は、一覧の一番下に移動し、[**すべてをカテゴリ別に表示**] を選択します。 (役割に関連付けられたコマンドレットなどの詳細については、「[Azure Active Directory での管理者ロールのアクセス許可](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)」を参照してください。)
+おそらく、組織内で次の役割を割り当てる必要があるだけです。 既定では、最初にほとんどの組織が使用する役割が表示されます。 役割が見つからない場合は、一覧の一番下に移動し、[**すべてをカテゴリ別に表示**] を選択します。 (役割に関連付けられたコマンドレットなどの詳細については、「[Azure AD での組み込みの役割](/azure/active-directory/roles/permissions-reference)」を参照してください。)
 
 |管理者ロール     |誰にこの役割を割り当てるか  |
 |---------|---------|

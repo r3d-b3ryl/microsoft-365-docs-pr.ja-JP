@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6d64b3998aabf7ff6435ea9cf32518eb4f827dd833fd05a650339ec3a96d25ef
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: dd299db1f8894851cb6d26d82756014b942c8240
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53868334"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573529"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>macOS で Microsoft Defender for Endpoint の更新プログラムを展開する
 
@@ -42,7 +42,7 @@ Microsoft は、パフォーマンス、セキュリティ、および新機能�
 
 macOS のエンドポイント用 Microsoft Defender を更新するには、Microsoft AutoUpdate (MAU) という名前のプログラムが使用されます。 既定では、MAU は更新プログラムを毎日自動的にチェックしますが、毎週、月次、または手動に変更できます。
 
-![MAU のスクリーンショット](images/MDATP-34-MAU.png)
+![MAU のスクリーンショット。](images/MDATP-34-MAU.png)
 
 ソフトウェア配布ツールを使用して更新プログラムを展開する場合は、ソフトウェア更新プログラムを手動で確認する MAU を構成する必要があります。 組織の Mac の更新プログラムを MAU がチェックする方法と時間を構成する基本設定を展開できます。
 
@@ -79,9 +79,9 @@ MAU では、macOS 上のエンドポイント用 Microsoft Defender のアプ�
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.autoupdate2`|
-|**キー**|ChannelName|
+|**Key**|ChannelName|
 |**データ型**|String|
-|**指定可能な値**|ベータ版 <p> プレビュー <p> Current|
+|**指定可能な値**|ベータ版 <p> Preview <p> Current|
 |||
 
 >[!WARNING]
@@ -98,7 +98,7 @@ MAU が更新プログラムを検索する頻度を変更します。
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.autoupdate2`|
-|**キー**|UpdateCheckFrequency|
+|**Key**|UpdateCheckFrequency|
 |**データ型**|整数|
 |**既定値**|720 (分)|
 |**コメント**|この値は分で設定されます。|
@@ -110,7 +110,7 @@ MAU が更新プログラムを検索する方法を変更します。
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.autoupdate2`|
-|**キー**|HowToCheck|
+|**Key**|HowToCheck|
 |**データ型**|String|
 |**指定可能な値**|Manual <p> AutomaticCheck <p> AutomaticDownload|
 |**コメント**|AutomaticDownload はダウンロードを実行し、可能であればサイレント インストールします。|
@@ -122,9 +122,9 @@ MAU が更新プログラムを検索する方法を変更します。
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.autoupdate2`|
-|**キー**|EnableCheckForUpdatesButton|
+|**Key**|EnableCheckForUpdatesButton|
 |**データ型**|Boolean|
-|**指定可能な値**|True (既定) <p> False|
+|**指定可能な値**|True (既定) <p> 不正解|
 
 ### <a name="disable-insider-checkbox"></a>Insider チェック ボックスを無効にする
 
@@ -133,9 +133,9 @@ true に設定すると、"Insider Program.Office参加" になります。チ�
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.autoupdate2`|
-|**キー**|DisableInsiderCheckbox|
+|**Key**|DisableInsiderCheckbox|
 |**データ型**|Boolean|
-|**指定可能な値**|False (既定) <p> True|
+|**指定可能な値**|False (既定) <p> 正解|
 
 ### <a name="limit-the-telemetry-that-is-sent-from-mau"></a>MAU から送信されるテレメトリを制限する
 
@@ -144,9 +144,9 @@ true に設定すると、"Insider Program.Office参加" になります。チ�
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.autoupdate2`|
-|**キー**|SendAllTelemetryEnabled|
+|**Key**|SendAllTelemetryEnabled|
 |**データ型**|Boolean|
-|**指定可能な値**|True (既定) <p> False|
+|**指定可能な値**|True (既定) <p> 不正解|
 
 ## <a name="example-configuration-profile"></a>構成プロファイルの例
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: SharePoint と OneDrive の保持のしくみについて説明します。
-ms.openlocfilehash: 8643ebf742cff0597e02b19e0db93f88b871ac0abc47a7b71e383dd644f4a687
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 77d7d3eebaa4678e6d90897aab8a41554530e858
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53807716"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573777"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>SharePoint と OneDrive の保持の詳細
 
@@ -83,7 +83,7 @@ SharePoint と OneDrive では、保持する必要のあるコンテンツを�
 
 保持設定が保持および削除の場合
 
-![SharePoint および OneDrive のコンテンツ ライフサイクルの図](../media/Retention_Diagram_of_retention_flow_in_sites.png)
+![SharePoint および OneDrive のコンテンツ ライフサイクルの図。](../media/Retention_Diagram_of_retention_flow_in_sites.png)
   
 1. 保存期間中に **コンテンツが変更または削除された場合**、アイテム保持設定が割り当てられたときに存在していた元のコンテンツのコピーが [アイテム保管ライブラリ] に作成されます。 そこで、タイマー ジョブは保持期間が終了したアイテムを識別します。 これらのアイテムは、第 2 段階のごみ箱に移動され、93 日が経過すると完全に削除されます。 第 2 段階のごみ箱はエンド ユーザーには表示されません (第 1 段階のごみ箱のみが表示されます) が、サイト コレクション管理者はそこからコンテンツを表示および復元できます。
 

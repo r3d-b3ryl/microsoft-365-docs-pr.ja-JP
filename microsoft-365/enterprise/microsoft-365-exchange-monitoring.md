@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Exchange Online の監視を使用して、Microsoft 365 でのメールのインシデントや勧告の情報について確認します。
-ms.openlocfilehash: a06640ee6114dac4ee5a9a899ba1dd8e2e744d78
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: e7e0a39f00b4d23ed870d501a3aefbabaf362e13
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575614"
+ms.locfileid: "58603008"
 ---
 # <a name="exchange-online-monitoring-for-microsoft-365"></a>Microsoft 365 の Exchange Online の監視
 
@@ -36,17 +36,13 @@ Microsoft 365 管理センターで Exchange Online の監視を使用して、�
 
 **[組織の問題]** は、組織レベルの監視によって識別され、使用されます。
 
-:::image type="content" source="../media/microsoft-365-exchange-monitoring/service-health-dashboard-example.png" alt-text="Microsoft 365 管理センターの [サービス正常性] ページ":::
-
 **[組織の問題]** の **[正常性]** の列の値は、組織のインフラストラクチャまたはサードパーティ製のソフトウェアが、組織のユーザーの Exchange Online におけるサービス正常性のエクスペリエンスに影響を与えるかどうかを示します。 勧告やインシデントを解決するには、*ユーザー* のアクションが必要です。
 
 **[Microsoft サービス正常性]** の **[正常性]** 列の値は、サービスが正常な状態にあるか、Microsoft が維持するクラウド サービスに基づいて勧告やインシデントがあるかどうかを示します。
 
-![Microsoft 365 管理センターの Exchange Online の監視ページ。](../media/microsoft-365-exchange-monitoring/exchange-monitoring-example.png)
-
 以下は、Microsoft 365 管理センターの Exchange Online の監視ページで、組織レベルのシナリオにおいて正常性の一例を示しています。これは、**[正常性] > [サービス正常性] > [Exchange Online]** から利用できます。
 
-:::image type="content" source="../media/microsoft-365-exchange-monitoring/exchange-monitoring-example.png" alt-text="Microsoft 365 管理センターの Exchange Online の監視ページ":::
+![Microsoft 365 管理センターの Exchange Online の監視ページ。](../media/microsoft-365-exchange-monitoring/exchange-monitoring-example.png)
 
 **Exchange Online** の監視ページで、Exchange Online サービスが正常な状態かどうか、関連するインシデントや勧告がないかどうかを確認できます。 Exchange Online の監視で、特定のメールのシナリオにおけるサービス正常性を確認し、リアルタイムに近い信号を表示して組織レベルのシナリオごとに影響を特定できます。
 
@@ -98,7 +94,7 @@ Exchange Online の監視は次のシナリオをサポートしています。
 
 - 特定のインシデントや勧告の場合、**[この投稿は役に立ちましたか?]** のリンクを使用してフィードバックを送信します。
 
-![特定のインシデントや勧告の場合に使用する 特定のインシデントまたは勧告へのリンク。](../media/microsoft-365-exchange-monitoring/exchange-monitoring-example-incident-feedback.png)
+  ![特定のインシデントや勧告の場合に使用する 特定のインシデントまたは勧告へのリンク。](../media/microsoft-365-exchange-monitoring/exchange-monitoring-example-incident-feedback.png)
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 

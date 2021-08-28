@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - Ent_Architecture
 description: テスト ラボ ガイドを使用して、開発Microsoft 365環境のソリューションとシナリオを作成します。
-ms.openlocfilehash: 2e7544c7d1b39e8cba198b0fce6bbf2814e7332d0af00bdeca748b4b660f8a1a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d380c77d9a94b5c08fe97b9874d15e0272711653
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53816633"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573357"
 ---
 # <a name="test-lab-guides-for-solutions-and-scenarios"></a>ソリューションとシナリオのテスト ラボ ガイド
 
@@ -32,7 +32,7 @@ TLG はモジュラーとして機能するように設計されています。T
 
 また、TLG を使用すると、アプリケーションの開発およびテスト用の典型的な環境を作成することもできます。これは、開発/テスト環境とも呼ばれます。
   
-![Microsoft クラウドのテスト ラボ ガイド](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Microsoft クラウドのテスト ラボ ガイド。](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 セキュリティ [分離を使用してチーム](team-security-isolation-dev-test.md) をセットアップするには、このテスト ラボ ガイドを試してください。
 

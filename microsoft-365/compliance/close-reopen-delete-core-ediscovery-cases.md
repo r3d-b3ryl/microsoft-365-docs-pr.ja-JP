@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: この記事では、コア電子情報開示ケースを管理する方法について説明します。 これには、ケースの終了、閉じたケースの再オープン、ケースの削除が含まれます。
-ms.openlocfilehash: 407956540e8881f34244e920fe9e49e6fe48ca7f417d084dcbd1845a2c53c4f6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 67961d2404f54ca3fbb33dabc71508ba65bfa205
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53906150"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573297"
 ---
 # <a name="close-reopen-and-delete-a-core-ediscovery-case"></a>Core 電子情報開示ケースを閉じる、再度開く、削除する
 
@@ -46,7 +46,7 @@ ms.locfileid: "53906150"
 
 2. 閉じるケースの名前をクリックします。
 
-   ![ケースのホーム ページでケースを閉じる](../media/eDiscoveryCaseHomePage.png)
+   ![ケースのホーム ページでケースを閉じます。](../media/eDiscoveryCaseHomePage.png)
 
 3. ホーム ページの [状態] **で、[ケース** を閉じる] **をクリックします**。
 
@@ -68,7 +68,7 @@ ms.locfileid: "53906150"
 
 2. 再度開くケースの名前をクリックします。
 
-   ![閉じたケースを再度開く](../media/eDiscoveryCaseHomePageReopen.png)
+   ![閉じたケースを再度開きます。](../media/eDiscoveryCaseHomePageReopen.png)
 
 3. ホーム ページの [状態] **で、[ケース** を再度開く] **をクリックします**。
 
@@ -98,7 +98,7 @@ ms.locfileid: "53906150"
 
 3. [フライアウト] ページで、[削除] を **クリックします**。
 
-      ![電子情報開示ホールドの削除](../media/DeleteeDiscoveryHold.png)
+      ![電子情報開示ホールドを削除します。](../media/DeleteeDiscoveryHold.png)
 
 ケースを削除する方法は、次のとおりです。
 
@@ -108,6 +108,6 @@ ms.locfileid: "53906150"
 
 3. ケース ホーム ページの [状態] **で、[ケース** の削除] **をクリックします**。
 
-      ![ケースの削除](../media/eDiscoveryCaseHomePageDelete.png)
+      ![ケースを削除します。](../media/eDiscoveryCaseHomePageDelete.png)
 
 削除しようとしているケースに電子情報開示ホールドがまだ含まれている場合は、エラー メッセージが表示されます。 ケースに関連付けられているすべての保留リストを削除してから、もう一度ケースを削除する必要があります。

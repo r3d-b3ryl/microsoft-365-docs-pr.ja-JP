@@ -19,12 +19,12 @@ ms.custom:
 description: 管理者は、電子メール (EOP) 内のメッセージに適用されるスパム信頼度 (SCL) Exchange Online Protectionできます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0d93f0ba26e164209aa36dac8d8849bc0cb8be7ecf1c7b4faf624d4b1acab6f8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3d45de527400088a180f5de8f8a836f5e4596395
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56883111"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573417"
 ---
 # <a name="spam-confidence-level-scl-in-eop"></a>EOP のスパム信頼レベル (SCL)
 
@@ -57,4 +57,4 @@ SCL と同様に、バルク 苦情レベル (BCL) は、不良バルク メー�
 
 ****
 
-![LinkedIn の短いアイコン ラーニング ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **新しいファイルをMicrosoft 365?** LinkedIn Microsoft 365によって提供される、管理者および **IT** プロ向け無料のビデオ コースラーニング。
+LinkedIn ラーニングのショート アイコンです。Office 365 を初めてお使いの場合は         、LinkedIn ラーニングによって提供された Office 365 管理者および IT プロフェッショナル向けの無料のビデオコースをご覧ください。 **新しいMicrosoft 365?** LinkedIn Microsoft 365によって提供される、管理者および **IT** プロ向け無料のビデオ コースラーニング。

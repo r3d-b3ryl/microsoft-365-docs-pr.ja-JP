@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: CellTrust SL2 データ コネクタをセットアップして使用して、モバイル通信データをインポートおよびアーカイブする方法について学習します。
-ms.openlocfilehash: 802d5e08354d5fbdc179c01a7c72145a5d0c7ac3f12907b06632cd5db758ee0f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 65f887e067b84414fe09f2ff39b3f1c0d7012f5b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53861085"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573321"
 ---
 # <a name="archive-data-from-celltrust-sl2-to-microsoft-365"></a>CellTrust SL2 からデータをアーカイブMicrosoft 365
 
@@ -29,7 +29,7 @@ Microsoft 365 のユーザー メールボックスにデータをインポー�
 
 CellTrust の SL2 プラットフォームは、複数のソースからの通信データをキャプチャします。 SL2 データ ソースは、ユーザー間 (P2P) またはアプリケーション間 (A2P) のいずれかです。 この記事で説明するプロセスは、P2P データ ソースにのみ関係します。 すべての P2P データ ソースの場合、コラボレーションの少なくとも 1 つのパーティは、SL2 サービスをサブスクライブしている SL2 ユーザーです。 次の概要では、セルトラスト SL2 データ コネクタを使用するプロセスについて説明Microsoft 365。
 
-![CellTrust SL2 サービスのアーカイブ ワークフロー](../media/CellTrustSL2ConnectorWorkflow.png)
+![CellTrust SL2 サービスのアーカイブ ワークフロー。](../media/CellTrustSL2ConnectorWorkflow.png)
 
 1. SL2 ユーザーは、SL2 サービス間でデータを送受信Microsoft Azure。
 
@@ -55,7 +55,7 @@ CellTrust の SL2 プラットフォームは、複数のソースからの通�
 
 2. [概要] **タブで** 、[フィルター] を **クリック** し **、[CellTrust** で] を選択し、フィルターを適用します。
 
-   ![CellTrust コネクタを表示するフィルターを構成する](../media/DataConnectorsFilter.png)
+   ![CellTrust コネクタを表示するフィルターを構成します。](../media/DataConnectorsFilter.png)
 
 3. **[CellTrust SL2] (プレビュー) をクリックします**。
 
@@ -81,7 +81,7 @@ CellTrust の SL2 プラットフォームは、複数のソースからの通�
 
 3. アーカイブするビジネス ユニットを有効にする。 ドメインを選択すると、自動的に OUs が選択されません。 アーカイブするには、各 OU を個別に有効にする必要があります。
 
-   ![アーカイブする OUs を有効にする](../media/EnableCellTrustOUs.png)
+   ![アーカイブする OUs を有効にする。](../media/EnableCellTrustOUs.png)
 
 4. 選択が完了したら、ブラウザー ウィンドウを閉じて、ブラウザー ウィンドウのウィザード ページに戻Microsoft 365 コンプライアンス センター。 数秒後、ウィザードは自動的にユーザーのマッピングの次の手順に進みます。
 
@@ -99,7 +99,7 @@ CellTrust の SL2 プラットフォームは、複数のソースからの通�
 
 [CellTrust SL2 データ](https://www.celltrust.com/contact-us/#support)コネクタのセットアップに関するヘルプについては、CellTrust への問い合わせの詳細については、CellTrust カスタマー サポート ページを参照してください。
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 - ドメイン管理者は、そのドメインまたはそのドメイン内の任意の OUs のコネクタを設定できます。 OU 管理者アカウントを使用する場合は、その特定の OU のコネクタのみを設定できます。
 

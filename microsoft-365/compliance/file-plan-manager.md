@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: ファイルプランでは、アイテム保持ラベルに高度な管理機能が提供されます。
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 81400dd6cad1caa83bb5dcfa3fc530f6db38796bd0ed4e28d908c3041b87a902
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5c270e3b03c8c8373cc3fcb204f5f5a654eeb001
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53820078"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573273"
 ---
 # <a name="use-file-plan-to-manage-retention-labels"></a>ファイルプランを使用して保持ラベルを管理する
 
@@ -54,7 +54,7 @@ Microsoft 365 コンプライアンスセンターで、**ソリューション*
 
 **[レコード管理]** がナビゲーション ウィンドウに表示されない場合は、下にスクロールして **[すべて表示]** を選択します。
 
-![[ファイル計画] ページ](../media/compliance-file-plan.png)
+![[ファイル計画] ページ。](../media/compliance-file-plan.png)
 
 ## <a name="navigating-your-file-plan"></a>ファイル計画を移動中
 
@@ -107,11 +107,11 @@ Microsoft 365 コンプライアンスセンターで、もしも既に **情報
 
 保持ラベルを作成または編集する場合のファイルプラン記述子の例:
 
-![保持ラベルを作成または編集する場合のファイル計画記述子](../media/file-plan-descriptors.png)
+![保持ラベルを作成または編集する場合のファイル計画記述子。](../media/file-plan-descriptors.png)
 
 これらのオプションの記述子ごとに **[選択]** を選択すると、すぐに使用できる値の 1 つを選択するか、独自の値を作成して選択することができます。 次に例を示します。 
 
-![プロビジョニング/引用用の新しいファイル プラン記述子を作成する](../media/file-plan-descriptors-create.png)
+![プロビジョニング/引用用の新しいファイル プラン記述子を作成する。](../media/file-plan-descriptors-create.png)
 
 ## <a name="export-all-retention-labels-to-analyze-or-enable-offline-reviews"></a>すべての保持ラベルをエクスポートして、オフラインレビューを分析または有効にする
 
@@ -119,11 +119,11 @@ Microsoft 365 コンプライアンスセンターで、もしも既に **情報
 
 すべての保持ラベルをエクスポートするには: [**ファイル計画**] ページで [**エクスポート**] をクリックします。
 
-![ファイル計画をエクスポートするオプション](../media/compliance-file-plan-export-labels.png)
+![ファイル計画をエクスポートするオプション。](../media/compliance-file-plan-export-labels.png)
 
 A *.csv ファイルは既存の全ての保持ラベルを開く、を含みます。次に例を示します。
 
-![すべての保持ラベルが表示された CSV ファイル](../media/file-plan-csv-file.png)
+![すべての保持ラベルが表示された CSV ファイル。](../media/file-plan-csv-file.png)
 
 ## <a name="import-retention-labels-into-your-file-plan"></a>ファイル計画に保持ラベルをインポートする
 
@@ -131,13 +131,13 @@ A *.csv ファイルは既存の全ての保持ラベルを開く、を含みま
 
 1. **ファイル計画** ページで、[**インポート** をクリックし、**ファイル計画の記入とインポート** ページを使用します。
 
-   ![ファイル計画のインポートのオプション](../media/compliance-file-plan-import-labels.png)
+   ![ファイル計画のインポートのオプション。](../media/compliance-file-plan-import-labels.png)
 
-   ![空白のファイル計画テンプレートをダウンロードするオプション](../media/file-plan-blank-template-option.png)
+   ![空白のファイル計画テンプレートをダウンロードするオプション。](../media/file-plan-blank-template-option.png)
 
 2. 以下の手順に従って、空白のテンプレートをダウンロードします。
 
-   ![Excel での開かれた空白のファイル計画テンプレート](../media/file-plan-blank-template.png)
+   ![Excel での開かれた空白のファイル計画テンプレート。](../media/file-plan-blank-template.png)
 
 3. プロパティと各プロパティへの有効な値を説明する次の情報を使用して、テンプレートに入力します。インポートの場合、一部の値には最大文字数があります。
     
@@ -170,13 +170,13 @@ A *.csv ファイルは既存の全ての保持ラベルを開く、を含みま
 
    保持ラベルに関する情報を含むテンプレートの例を次に示します。
 
-   ![情報が入力されたファイル計画テンプレート](../media/file-plan-filled-out-template.png)
+   ![情報が入力されたファイル計画テンプレート。](../media/file-plan-filled-out-template.png)
 
 4. **ファイル計画を入力しインポートする** ページの手順 3 で、**ファイルの参照** をクリックし、入力済みのテンプレートをアップロードして、**[次へ]** を選択します。
 
    ファイル計画では、ファイルをアップロードし、エントリを検証して、インポートの統計情報を表示します。
 
-   ![ファイル計画のインポートの統計情報](../media/file-plan-import-statistics.png)
+   ![ファイル計画のインポートの統計情報。](../media/file-plan-import-statistics.png)
 
 5. 検証結果に応じて、以下の操作を行います。
     

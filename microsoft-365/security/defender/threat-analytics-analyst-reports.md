@@ -21,12 +21,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a939bd03f983904f438aaa2efe8e3be18c6831cd
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 5e8f6d2c79a0eeac6db20ff5791a25264d1b6767
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533557"
+ms.locfileid: "58573453"
 ---
 # <a name="understand-the-analyst-report-in-threat-analytics-in-microsoft-365-defender"></a>脅威分析のアナリスト レポートについてMicrosoft 365 Defender
 
@@ -42,7 +42,7 @@ ms.locfileid: "58533557"
 
 各 [脅威分析レポートには、](threat-analytics.md) 動的セクションと、アナリスト レポートと呼ばれる包括的な記述セクション _が含まれます_。 このセクションにアクセスするには、追跡された脅威に関するレポートを開き、[アナリスト レポート] タブ **を選択** します。
 
-![脅威分析レポートのアナリスト レポート セクションのイメージ](../../media/threat-analytics/ta_analystreport_mtp.png)
+![脅威分析レポートのアナリスト レポート セクションのイメージ。](../../media/threat-analytics/ta_analystreport_mtp.png)
 
 _脅威分析レポートのアナリスト レポート セクション_
 

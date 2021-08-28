@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: データ損失防止の計画プロセスの概要
-ms.openlocfilehash: 2f1c37cee6b3fee9d317314b67736d627e4f7e4306be7f063383656e54fe374d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 130675ad15a872ed14041289fb24aeec471014ff
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53814535"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573261"
 ---
 # <a name="plan-for-data-loss-prevention-dlp"></a>データ損失防止 (DLP) の計画
 
@@ -69,10 +69,10 @@ ms.locfileid: "53814535"
 
 その後、関係者は、保護する機密情報のカテゴリと、その中で使用されるビジネス プロセスについて説明します。 たとえば、次のMicrosoft 365 DLP によって定義されます。
 
-- 財務 
+- 財務的 
 - 医療と健康に関する情報
 - プライバシー
-- Custom
+- カスタム
 
 関係者は機密情報を「データ 処理者なので、データ主体情報と財務情報に対するプライバシー保護を実装する必要がある」と識別する場合があります。
 
@@ -113,7 +113,7 @@ start small and always in test mode. Note that DLP policies can feed into inside
 
 組織の開始状態から目的の終了状態への取得方法を文書化することが、関係者とのコミュニケーションとプロジェクトスコープの設定に不可欠です。 DLP の展開に一般的に使用される一連の手順を次に示します。 これよりも詳細な情報が必要になりますが、これを使用して DLP 導入パスをフレーム化できます。
 
-![DLP を展開する一般的な順序を示す図](../media/dlp-deployment-planning.png)
+![DLP を展開する一般的な順序を示す図。](../media/dlp-deployment-planning.png)
 
 #### <a name="sensitive-item-discovery"></a>機密性の高いアイテムの検出
 
@@ -161,7 +161,7 @@ DLP の導入を開始すると、これらの質問を使用して、ポリシ�
 DLP の場所を監視する前に、満たす必要がある前提条件があります。 「開始 **する前に」のセクション** を参照してください。
 
 - [データ損失防止のオンプレミス スキャナー (プレビュー) を開始する](dlp-on-premises-scanner-get-started.md#before-you-begin)
-- [エンドポイント データ損失防止の使用を開始する](endpoint-dlp-getting-started.md#before-you-begin)
+- [エンドポイント データ損失防止を開始する](endpoint-dlp-getting-started.md#before-you-begin)
 - [Microsoft コンプライアンス拡張機能の使用を開始する (プレビュー)](dlp-chrome-get-started.md#before-you-begin)
 - [Microsoft 以外のクラウド アプリでデータ損失防止ポリシーを使用する (プレビュー)](dlp-use-policies-non-microsoft-cloud-apps.md#before-you-begin)
 
@@ -177,15 +177,15 @@ DLP ポリシーを作成するときは、完全に適用する前に、影響�
     
 3. **ポリシーの完全な適用を開始** し、ルールのアクションが適用され、コンテンツが保護されるようにします。 DLP レポートやインシデント レポート、通知を引き続き監視して、結果が計画どおりであることを確認します。 
 
-    ![テスト モードを使用しポリシーで有効化するオプション](../media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
+    ![テスト モードを使用してポリシーを有効にするオプション。](../media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
 
     いつでも DLP ポリシーを無効にできます。ポリシーのすべてのルールに反映されます。 ただし、ルール エディターで状態を切り替えることで、各ルールを個別に無効にできます。
 
-    ![ポリシー内のルールを無効にするオプション](../media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
+    ![ポリシーでルールをオフにするオプション。](../media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
 
     ポリシー内の複数のルールの優先順位を変更することもできます。 変更するには、編集のためのポリシーを開きます。 ルールの行では、省略記号 (**...**) を選択し、[**下へ移動**] または [**最後へ移動**] などのオプションを選択します。
 
-    ![ルールの優先順位を設定する](../media/dlp-set-rule-priority.png)
+    ![ルールの優先度を設定します。](../media/dlp-set-rule-priority.png)
 
 #### <a name="end-user-training"></a>エンド ユーザー トレーニング
 

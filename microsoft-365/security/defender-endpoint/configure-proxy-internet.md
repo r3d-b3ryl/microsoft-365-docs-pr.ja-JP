@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 493273f9827680205714cd53ef12ea327b15ddf993c2ba8e58d31bbca83f1cdd
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7665fbd52e45636988b375e4b811e3f93d8f3981
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53890708"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574005"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>デバイス プロキシとインターネット接続の設定を構成する
 
@@ -32,7 +32,7 @@ ms.locfileid: "53890708"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
 Defender for Endpoint センサーでは、センサー データWindowsレポートし、Defender for Endpoint サービスと通信するために Microsoft Windows HTTP (WinHTTP) が必要です。
 
@@ -75,13 +75,13 @@ WinHTTP 構成設定は、Windows インターネット (WinINet) インター�
 
   [有効] に **設定し、[認証** された **プロキシの使用を無効にする] を選択します**。
 
-  ![グループ ポリシー設定 1 のイメージ](images/atp-gpo-proxy1.png)
+  ![グループ ポリシー設定 1 のイメージ。](images/atp-gpo-proxy1.png)
 
 - **管理用テンプレート > Windows コンポーネント**>およびプレビュー ビルド > 接続されたユーザー エクスペリエンスとテレメトリを構成する:
 
   プロキシを構成する
 
-  ![グループ ポリシー設定 2 のイメージ](images/atp-gpo-proxy2.png)
+  ![グループ ポリシー設定 2 のイメージ。](images/atp-gpo-proxy2.png)
 
   ポリシーは、レジストリ キーの下に、REG_SZとREG_DWORDの 2 つのレジストリ値 `TelemetryProxyServer` `DisableEnterpriseAuthProxy` を設定します `HKLM\Software\Policies\Microsoft\Windows\DataCollection` 。
 
@@ -133,9 +133,9 @@ netsh winhttp reset proxy
 <br>
 
 **** 
-|ドメインリストのスプレッドシート|Description|
+|ドメインリストのスプレッドシート|説明|
 |---|---|
-|![Microsoft Defender for Endpoint URL スプレッドシートのサム イメージ](images/mdatp-urls.png)|サービスの場所、地理的な場所、および OS の特定の DNS レコードのスプレッドシート。 <p> [ここにスプレッドシートをダウンロードします。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
+|![Microsoft Defender for Endpoint URL スプレッドシートのサム イメージ。](images/mdatp-urls.png)|サービスの場所、地理的な場所、および OS の特定の DNS レコードのスプレッドシート。 <p> [ここにスプレッドシートをダウンロードします。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
 |
 
 プロキシまたはファイアウォールで HTTPS スキャン (SSL 検査) が有効になっている場合は、上記の表に示されているドメインを HTTPS スキャンから除外します。
@@ -180,7 +180,7 @@ Defender for Endpoint センサーがシステム コンテキストから接続
 
 4. Microsoft Defender for Endpoint URL リストで、地域の要件の完全な一覧を確認します (「サービス URL スプレッドシート」を参照 [してください](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx))。
 
-    ![管理者のWindows PowerShell](images/admin-powershell.png)
+    ![ユーザーの管理者のWindows PowerShell。](images/admin-powershell.png)
 
 .ods.opinsights.azure.com、.oms.opinsights.azure.com、および .agentsvc.azure-automation.net URL エンドポイントで使用されるワイルドカード ( ) は、特定の \* \* Workspace ID \* \* に置き換えます。 ワークスペース ID は環境とワークスペースに固有の ID で、テナントの [オンボーディング] セクションで、Microsoft 365 Defenderできます。
 
@@ -237,7 +237,7 @@ Defender for Endpoint センサーがシステム コンテキストから接続
 >
 > TelemetryProxyServer がレジストリまたはグループ ポリシーを介して設定されている場合、Defender for Endpoint は、定義されたプロキシにアクセスできない場合、直接に戻されます。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [Windows 10 デバイスのオンボード](configure-endpoints.md)
 - [Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング](troubleshoot-onboarding.md)

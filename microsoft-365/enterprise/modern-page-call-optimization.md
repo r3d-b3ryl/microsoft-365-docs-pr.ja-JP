@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: SharePoint Online サービス エンドポイントへの呼び出し数を制限することにより、SharePoint Onlineで最新および従来の発行サイト ページを最適化する方法を学びます。
-ms.openlocfilehash: f06ec4027737f03d44c6a95a7faa74ff48d94548
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: 7c3872e0860b089f52d9597a06bced71ea6eb523
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394674"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573597"
 ---
 # <a name="optimize-page-calls-in-sharepoint-online-modern-and-classic-publishing-site-pages"></a>SharePoint Online の最新および従来の発行サイト ページでページ呼び出しを最適化する
 
@@ -54,7 +54,7 @@ SharePoint のサイト ページを SharePoint 用ページ診断ツールを�
 
 [**SharePoint へのリクエスト**] の結果が [**要注意**] セクションに表示されている場合は、結果をクリックして、ページ上の呼び出しの総数や URL のリストなどの詳細を確認できます。
 
-![SharePoint 結果への要求](../media/modern-portal-optimization/pagediag-requests.png)
+![結果のSharePoint要求。](../media/modern-portal-optimization/pagediag-requests.png)
 
 ## <a name="remediate-performance-issues-related-to-too-many-calls-on-a-page"></a>ページ上の呼び出しが多すぎることに関連するパフォーマンスの問題を修復する
 
@@ -66,7 +66,7 @@ SharePoint のサイト ページを SharePoint 用ページ診断ツールを�
 
 パフォーマンスの問題を修復するためにページを修正する前に、分析結果のページ読み込み時間をメモしてください。 修正後にツールをもう一度実行して新しい結果がベースライン基準内にあるかどうかを確認し、新しいページ読み込み時間をチェックして改善されたかどうかを確認します。
 
-![ページ読み込み時間の結果](../media/modern-portal-optimization/pagediag-page-load-time.png)
+![ページ読み込み時間の結果。](../media/modern-portal-optimization/pagediag-page-load-time.png)
 
 >[!NOTE]
 >ページ読み込み時間は、ネットワーク負荷、時間帯、その他の一時的な状態など、さまざまな要素によって異なります。 結果を平均化するために、変更の前後に数回に渡ってページ読み込み時間をテストする必要があります。

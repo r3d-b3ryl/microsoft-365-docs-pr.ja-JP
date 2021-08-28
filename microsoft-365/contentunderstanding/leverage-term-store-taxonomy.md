@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Microsoft SharePoint Syntex のドキュメント理解モデルで抽出子を作成するときに、用語ストアの分類法を使用します。
-ms.openlocfilehash: 56286014a1d5067e5d2c365eaf0470711e78e27dc86177e0596af116d361b819
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 97ceace09ed4c8b1a8ea8daf6d562d8013533cea
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53871233"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573729"
 ---
 # <a name="leverage-term-store-taxonomy-when-creating-an-extractor-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex の抽出子を作成するときに、用語ストアの分類法を活用します。
 
@@ -32,23 +32,23 @@ SharePoint Syntex を使用してドキュメント理解モデルで抽出子�
 
 例として、モデルは、ドキュメント ライブラリにアップロードされているすべての **契約** ドキュメントを識別して分類します。  さらに、モデルは各契約から **契約サービス** 値も抽出し、ライブラリ ビューの列に表示します。 契約内のさまざまな契約サービス値の中には、会社が使用しなくなって名前が変更された古い値がいくつかあります。 たとえば、契約サービスでの *Design*、*Graphics*、*Topography* という用語への参照はすべて、*Creative* と呼ばれる必要があります。 モデルが契約ドキュメントから過去の条件の 1 つを抽出するときは必ず、ライブラリ ビューに現在の条件 (Creative) を表示する必要があります。 以下の例では、モデルのトレーニング中に、1 つのサンプル ドキュメントに古い用語である *Design* が含まれていることがわかります。
 
-   ![用語ストア](../media/content-understanding/design.png)</br>
+   ![用語ストア。](../media/content-understanding/design.png)</br>
 
 ## <a name="use-a-managed-metadata-column-in-your-extractor"></a>抽出子で管理されたメタデータ列を使用する
 
 用語セットは、SharePoint 管理センターの 管理されたメタデータ サービス (MMS) 用語ストアで構成されます。 以下の例では、*契約サービス* の [用語セット](/sharepoint/managed-metadata#term-set)は、*Creative* などを含む複数の用語を含むように構成されています。  詳細は、この用語に 3 つの同義語 (*Design*、*Graphics*、*Topography*) があり、これらの同義語を *Creative* に翻訳する必要があることを示しています。 
 
-   ![用語セット](../media/content-understanding/term-store.png)</br>
+   ![用語セット。](../media/content-understanding/term-store.png)</br>
 
 用語セットで同義語を使用する理由は多く考えられます。 たとえば、古い用語、名前が変更された用語、または名前付けに関する組織部門間のバリエーションがある可能性があります。
 
 モデルで抽出子を作成するときに管理メタデータ フィールドを選択できるようにするには、[それを管理メタデータ サイト列として追加する](https://support.microsoft.com/office/8fad9e35-a618-4400-b3c7-46f02785d27f)必要があります。 サイト列を追加すると、モデルの抽出子を作成するときに選択できるようになります。
 
-   ![契約サービス](../media/content-understanding/contract-services.png)</br>
+   ![契約サービス。](../media/content-understanding/contract-services.png)</br>
 
 モデルをドキュメント ライブラリに適用した後、ドキュメントがライブラリにアップロードされると、抽出子が同義語の値 (*Design*、*Graphics*、*Topography*) のいずれかを検出すると、*Creative Services* 列に優先用語 (*Creative*) が表示されます。
 
-   ![契約サービス列](../media/content-understanding/creative.png)</br>
+   ![契約サービス列。](../media/content-understanding/creative.png)</br>
 
 
 ## <a name="see-also"></a>関連項目

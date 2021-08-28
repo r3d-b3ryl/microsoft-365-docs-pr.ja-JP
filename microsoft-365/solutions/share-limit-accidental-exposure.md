@@ -17,12 +17,12 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: 組織外のユーザーとファイルを共有する場合、情報が偶発的に公開されることを防止する方法を説明します。
-ms.openlocfilehash: be5dfaa0549d96c93befc5c59947651391acf6e9f0b029d4745f717d87c7cccb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c3769239951b409afe7596b6f4fecf83c87a9131
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53804687"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573393"
 ---
 # <a name="limit-accidental-exposure-to-files-when-sharing-with-people-outside-your-organization"></a>組織外のユーザーと共有する場合、ファイルが偶発的に公開されることを制限する
 
@@ -46,7 +46,7 @@ SharePoint、グループ、または Teams のコンテンツにアクセスす
 1. SharePoint 管理センターの左側のナビゲーションで、[**共有**] をクリックします。
 2. SharePoint 外部共有設定を [**新規および既存のゲスト**] に設定します。
 
-   ![組織レベルの SharePoint サイトの外部共有設定のスクリーンショット](../media/sharepoint-organization-external-sharing-controls-new-users.png)
+   ![組織レベルの SharePoint サイトの外部共有設定のスクリーンショット。](../media/sharepoint-organization-external-sharing-controls-new-users.png)
 
 3. [**保存**] をクリックします。
 
@@ -56,7 +56,7 @@ SharePoint、グループ、または Teams のコンテンツにアクセスす
 3. リボンで [**共有**] をクリックします。
 4. 共有が [**新規および既存のゲスト**] に設定されていることを確認します。
 
-   ![サイト レベルの SharePoint サイトの外部共有設定のスクリーンショット](../media/sharepoint-site-external-sharing-settings.png)
+   ![サイト レベルの SharePoint サイトの外部共有設定のスクリーンショット。](../media/sharepoint-site-external-sharing-settings.png)
 
 5. 変更を加えた場合は、[**保存**] をクリックします。
 
@@ -76,7 +76,7 @@ SharePoint、グループ、または Teams のコンテンツにアクセスす
 3. [**ドメインを追加**] をクリックします。
 4. ドメインをブロックするかどうかを選択し、ドメインを入力して、[**OK**] をクリックします。
 
-   ![ドメイン設定による SharePoint 制限外部共有のスクリーンショット](../media/sharepoint-sharing-block-domain.png)
+   ![ドメイン設定による SharePoint 制限外部共有のスクリーンショット。](../media/sharepoint-sharing-block-domain.png)
 
 5. [**保存**] をクリックします。
 
@@ -92,7 +92,7 @@ SharePoint および OneDrive よりも高いレベルでドメインによる�
 
 3. **[特定のセキュリティ グループ内のユーザーにのみ、外部との共有を許可する]** を選択し、**[セキュリティ グループを管理する]** を選択します。
 
-    ![[セキュリティグループを管理する] パネルのスクリーンショット](/sharepoint/sharepointonline/media/manage-security-groups.png)
+    ![[セキュリティグループを管理する] パネルのスクリーンショット。](/sharepoint/sharepointonline/media/manage-security-groups.png)
 
 4. **[セキュリティ グループを追加する]** ボックスに、セキュリティ グループの名前を入力します。 [セキュリティ グループ] ボックスが表示されます。
 

@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社で、IDaaS (Identity as a Service) を活用して、従業員向けのクラウド ベース認証や、パートナーと顧客向けのフェデレーション認証を提供している方法を説明します。
-ms.openlocfilehash: 9138e0743e5194e98213ab2d2c2bfe457500b0de
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: b8943f0af678ed3d86d1428fe44cd6ab67554470
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58353794"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574053"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Contoso 社の ID
 
@@ -31,7 +31,7 @@ Contoso は、7 つのサブドメインを持つ contoso com の単一の Activ
 
 地域ハブを含む世界の各地域の地域ドメインを持つ Contoso フォレストを次に示します。
 
-![Contoso 社の世界中のフォレストとドメイン](../media/contoso-identity/contoso-identity-fig1.png)
+![Contoso 社のフォレストと世界中のドメイン。](../media/contoso-identity/contoso-identity-fig1.png)
  
 Contoso 社は、contoso com フォレスト内のアカウントとグループを、そのワークロードとサービスの認証と承認Microsoft 365 \. 決定しました。
 
@@ -44,7 +44,7 @@ Contoso 社では次のことが可能です。
 
 パブリック Web サイト、パートナー エクストラネット、および Active Directory フェデレーション サービス (FS) サーバーのセットを含む Contoso DMZ をADします。 DMZ は、顧客、パートナー、およびインターネット サービスを含むインターネットに接続されています。
 
-![顧客とパートナーのフェデレーション認証に対する Contoso のサポート](../media/contoso-identity/contoso-identity-fig2.png)
+![Contoso は、顧客とパートナーのフェデレーション認証をサポートしています。](../media/contoso-identity/contoso-identity-fig2.png)
  
 AD FS サーバーを使用すると、パブリック Web サイトにアクセスするための ID プロバイダーによる顧客資格情報の認証と、パートナーエクストラネットへのアクセスのためのパートナー資格情報の認証が容易になります。
 
@@ -60,7 +60,7 @@ PHS は、オンプレミスの AD DS フォレストを、エンタープライ
 
 Azure を実行しているサーバー AD Connect Contoso AD DS フォレストをポーリングし、それらの変更を Azure AD テナントと同期します。
 
-![Contoso PHS ディレクトリ同期インフラストラクチャ](../media/contoso-identity/contoso-identity-fig4.png)
+![Contoso PHS ディレクトリ同期インフラストラクチャ。](../media/contoso-identity/contoso-identity-fig4.png)
  
 ## <a name="conditional-access-policies-for-identity-and-device-access"></a>ID およびデバイス アクセスの条件付きアクセス ポリシー
 
@@ -72,7 +72,7 @@ Contosoは、3 つの保護レベルに対して Azure AD と Intune の[条件�
 
 Contoso ID ポリシーとデバイス条件付きアクセス ポリシーのセットを次に示します。
 
-![Contoso 社の ID およびデバイスの条件付きアクセス ポリシー](../media/contoso-identity/contoso-identity-fig5.png)
+![Contoso の ID とデバイスの条件付きアクセス ポリシー。](../media/contoso-identity/contoso-identity-fig5.png)
  
 ## <a name="next-step"></a>次の手順
 

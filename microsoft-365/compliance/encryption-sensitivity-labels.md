@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: アクセスと使用を制限してデータを保護する暗号化のための秘密度ラベルを構成します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 21864ec94b4b7cd9ef19d23bb5c141d6458d63544361c52b023b6eaeafee6444
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7853a7b0439ee42cbe4b653f0572b055b19c3a2b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53886193"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573645"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する
 
@@ -57,11 +57,11 @@ ms.locfileid: "53886193"
 
 1. 一般的な手順に従って、[機密度ラベルを作成または編集](create-sensitivity-labels.md#create-and-configure-sensitivity-labels)し、ラベルのスコープとして **[ファイルとメール]** が選択されていることを確認します。 
     
-    ![ファイルとメールの機密度ラベルス コープ オプション](../media/filesandemails-scope-options-sensitivity-label.png)
+    ![ファイルとメールの機密度ラベルス コープ オプション。](../media/filesandemails-scope-options-sensitivity-label.png)
 
 2. 次に、**[ファイルとメールの保護設定の選択]** ページで、**[ファイルとメールの暗号化]** を選択していることを確認します。
     
-    ![ファイルとメールの機密度ラベル保護オプション](../media/protection-options-sensitivity-label.png)
+    ![ファイルとメールの機密度ラベル保護オプション。](../media/protection-options-sensitivity-label.png)
 
 4.  ウィザードの **[暗号化]** ページで、次のいずれかのオプションを選択します。
     
@@ -71,7 +71,7 @@ ms.locfileid: "53886193"
     
     - **暗号化設定の構成**: 暗号化をオンにして、暗号化設定を表示します。
         
-        ![暗号化用の秘密度ラベルのオプション](../media/encrytion-options-sensitivity-label.png)
+        ![暗号化用の秘密度ラベルのオプション。](../media/encrytion-options-sensitivity-label.png)
         
         これらの設定の手順は、次の「[暗号化設定の構成](#configure-encryption-settings)」セクションにあります。
 
@@ -125,7 +125,7 @@ ms.locfileid: "53886193"
 
 [Choosing whether to assign permissions now] (アクセス許可を今すぐ割り当てる) または [Let users assign permissions] (アクセス許可の割り当てをユーザーに許可する) の選択:
 
-![ユーザーまたは管理者が定義したアクセス許可を追加するオプション](../media/sensitivity-label-user-or-admin-defined-permissions.png)
+![ユーザーまたは管理者が定義したアクセス許可を追加するオプション。](../media/sensitivity-label-user-or-admin-defined-permissions.png)
 
 ## <a name="assign-permissions-now"></a>アクセス許可を今すぐ割り当てる
 
@@ -137,7 +137,7 @@ ms.locfileid: "53886193"
 
 暗号化されたコンテンツに対するアクセス制御の設定:
 
-![管理者が定義したアクセス許可の設定](../media/sensitivity-encryption-settings-for-admin-defined-permissions.png)
+![管理者が定義したアクセス許可の設定。](../media/sensitivity-encryption-settings-for-admin-defined-permissions.png)
 
 ### <a name="rights-management-use-license-for-offline-access"></a>オフライン アクセスのための Rights Management 使用ライセンス
 
@@ -159,7 +159,7 @@ ms.locfileid: "53886193"
 
 アクセス許可の割り当て:
 
-![ユーザーにアクセス許可を割り当てる際のオプション](../media/Sensitivity-Assign-permissions-settings.png)
+![ユーザーにアクセス許可を割り当てる際のオプション。](../media/Sensitivity-Assign-permissions-settings.png)
 
 #### <a name="add-users-or-groups"></a>ユーザーまたはグループの追加
 
@@ -202,13 +202,13 @@ ms.locfileid: "53886193"
 
 適切な許可の選択に役立つ詳細については、「[使用権限と説明](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)」を参照してください。  
 
-![既定またはカスタムのアクセス許可を選択する際のオプション](../media/Sensitivity-Choose-permissions-settings.png)
+![既定またはカスタムのアクセス許可を選択する際のオプション。](../media/Sensitivity-Choose-permissions-settings.png)
 
 同じラベルで異なるユーザーに異なるアクセス許可を付与できます。たとえば、次のスクリーンショットに示すように、単一のラベルで一部のユーザーを「レビュー担当者」として割り当てて、別のユーザーを「共同作成者」として割り当てることができます。
 
 これを行うには、ユーザーまたはグループを追加してアクセス許可を割り当て、その設定を保存します。その後で、この手順 (ユーザーの追加とアクセス許可の割り当て) を繰り返して、そのたびに保存します。この構成は、異なるユーザーに異なるアクセス許可を定義することが必要になるたびに実行できます。
 
-![異なるアクセス許可を持つ異なるユーザー](../media/Sensitivity-Multiple-users-permissions.png)
+![異なるアクセス許可を持つ異なるユーザー。](../media/Sensitivity-Multiple-users-permissions.png)
 
 #### <a name="rights-management-issuer-user-applying-the-sensitivity-label-always-has-full-control"></a>常にフル コントロールを持つ Rights Management 発行者 (機密ラベルを適用するユーザー)
 
@@ -263,13 +263,13 @@ Rights Management 発行者には、ドキュメントまたはメールに対�
 
 ユーザーが割り当てるアクセス許可の構成:
 
-![ユーザー定義のアクセス許可の暗号化設定](../media/sensitivity-encryption-settings-for-user-defined-permissions.png)
+![ユーザー定義のアクセス許可の暗号化設定。](../media/sensitivity-encryption-settings-for-user-defined-permissions.png)
 
 ### <a name="outlook-restrictions"></a>Outlook の制限
 
 Outlook では、ユーザーがメッセージにアクセス許可を割り当てることができる機密度ラベルを適用する場合、 **[転送不可]** または **[暗号化のみ]** オプションを選択できます。 メッセージの上部にラベル名と説明が表示されます。これは、コンテンツが保護されていることを示します。 Word、PowerPoint、Excel ([次のセクション](#word-powerpoint-and-excel-permissions)参照) とは異なり、ユーザーは特定のアクセス許可を選択するよう求められません。
 
-![Outlook のメッセージに適用される機密度ラベル](../media/sensitivity-label-outlook-protection-applied.png)
+![Outlook のメッセージに適用される機密度ラベル。](../media/sensitivity-label-outlook-protection-applied.png)
 
 これらのオプションのいずれかがメールに適用される場合、電子メールは暗号化され、受信者は認証を受ける必要があります。受信者には自動的に使用権限が制限されます。
 
@@ -293,7 +293,7 @@ Word、PowerPoint、および Excel では、ドキュメントにアクセス�
 - ユーザー、グループ、または組織を選択します。 これには、組織内外のユーザーが含まれます。
 - 選択したユーザがコンテンツにアクセスできなくなる有効期限を設定します。 詳細については、上記のセクション「[オフライン アクセスのための Rights Management 使用ライセンス](#rights-management-use-license-for-offline-access)」を参照してください。
 
-![ユーザーがカスタムのアクセス許可で保護するためのオプション](../media/sensitivity-aip-custom-permissions-dialog.png)
+![ユーザーがカスタムのアクセス許可で保護するためのオプション。](../media/sensitivity-aip-custom-permissions-dialog.png)
 
 組み込みのラベルの場合、ユーザーが次のオプションを選択すると同様のダイアログ ボックスが表示されます。
 
@@ -305,7 +305,7 @@ Word、PowerPoint、および Excel では、ドキュメントにアクセス�
 
 以下の各例では、「**機密度ラベルを作成または編集する]** が選択されているときに、ウィザードの **[暗号化]** ページから構成を行います。
 
-![機密ラベル ウィザードで暗号化オプションを適用する](../media/apply-encryption-option.png)
+![機密ラベル ウィザードで暗号化オプションを適用する。](../media/apply-encryption-option.png)
 
 ### <a name="example-1-label-that-applies-do-not-forward-to-send-an-encrypted-email-to-a-gmail-account"></a>例 1: 暗号化されたメールを Gmail アカウントに送信するために [転送不可] を適用するラベル
 

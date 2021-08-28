@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: この記事では、特定のケースを作成および管理するAdvanced eDiscovery説明します。 最初の手順は、ケースを作成し、新しい機能Advanced eDiscovery使用を開始します。
-ms.openlocfilehash: 31b19f48ba6deabe3d4150544ce16c3669d18efe1607652d8224a2ebb1f81bb2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 69d2f22a3792f2217ea8ef58ae9771dd4a10f32d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53886464"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573249"
 ---
 # <a name="create-and-manage-an-advanced-ediscovery-case"></a>ケースの作成と管理Advanced eDiscoveryする
 
@@ -64,7 +64,7 @@ ms.locfileid: "53886464"
 
 電子情報開示の使用をAdvanced eDiscovery、電子情報開示の一般的なプラクティスに合った基本的な[ワークフローを次に示します](advanced-ediscovery-edrm.md)。 これらの各手順では、探索できるいくつかの拡張Advanced eDiscovery機能も強調表示します。
 
-![Advanced eDiscoveryワークフロー](../media/AeDWorkflow.png)
+![Advanced eDiscoveryワークフロー。](../media/AeDWorkflow.png)
 
 1. **[保管担当者と非](add-custodians-to-case.md)[保管データ](non-custodial-data-sources.md)** ソースをケースに追加します。 ケースを作成した後の最初の手順は、保管担当者を追加します。 保管 *担当者とは* 、ケースに関連する可能性のあるドキュメントまたは電子ファイルの管理制御を持つ人物です。 さらに、特定のユーザーに関連付けられているのではなく、ケースに関連する可能性があるデータ ソースを追加できます。
 
@@ -110,7 +110,7 @@ ms.locfileid: "53886464"
 
 単一地域環境と複数地域環境での Advanced eDiscovery エンド to エンド のワークフローと、電子探索参照モデルに合わせて配置されたエンドツーエンドのデータ フローを示すアーキテクチャ図を[次に示](overview-ediscovery-20.md#advanced-ediscovery-alignment-with-the-electronic-discovery-reference-model)します。
 
-[![モデル ポスター: Advanced eDiscovery アーキテクチャ Microsoft 365](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
+[![モデルポスター: Advanced eDiscovery のアーキテクチャMicrosoft 365。](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
 
 [画像として表示する](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
 
