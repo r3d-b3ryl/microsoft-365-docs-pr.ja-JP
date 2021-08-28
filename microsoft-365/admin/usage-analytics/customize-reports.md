@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9b76065f-29b9-4b89-8059-c5f9db9ddbf6
 description: ブラウザーとブラウザーでレポートをカスタマイズする方法についてPower BI Desktop。
-ms.openlocfilehash: 0b9b9f7c107b6c59bbbc07c0e956457e354926a23b97fbcd5de63c10b5e185d8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5dcdee05fbb413c7f1925f5e81c7e6596da111e5
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53862036"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58556494"
 ---
 # <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>使用状況分析でレポートMicrosoft 365カスタマイズする
 
@@ -43,19 +43,19 @@ Microsoft 365利用状況分析は、ユーザーがデータをPower BIして�
 
 1. [ライセンス認証 **/ライセンス] レポートで** 、[ライセンス認証] タブ **を選択** します。
 
-2. 上部の [編集] ボタンをクリックして、編集モードを入力します。[編集] ボタンの [その他] ![ Power BI ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) します。
+2. 上部の [編集] ボタンをクリックして、編集モードを入力します。[ページの詳細] ボタンを ![ Power BI。](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) ボタンをクリックします。
 
-    ![Click Edit report on the top right navigation](../../media/e2c16663-1fbd-4d7f-887c-0cbb891d3b3d.png)
+    ![上部のナビゲーションで [レポートの編集] をクリックします。](../../media/e2c16663-1fbd-4d7f-887c-0cbb891d3b3d.png)
 
 3. 上部の [このページの複製] **を選択します**。
 
-    ![Choose Duplicate this page](../../media/b2d18dcd-6b82-4ce7-ab79-1b24e3721309.png)
+    ![[このページの複製] を選択します。](../../media/b2d18dcd-6b82-4ce7-ab79-1b24e3721309.png)
 
 4. 右下で、Android、iOS、Mac などの OS に基づいてアクティブ化するユーザーの数を示す棒グラフを選択します。
 
 5. 右側の **[視覚化]** 領域で、ビジュアルから **Mac Count** を削除するには、その横にある **[X]** を選択します。
 
-    ![Mac カウントの削除](../../media/ce3d8358-df57-4f64-bd25-ac5be7fc8713.png)
+    ![Mac Count を削除します。](../../media/ce3d8358-df57-4f64-bd25-ac5be7fc8713.png)
 
 ### <a name="create-a-new-visual"></a>新しいビジュアルを作成する
 
@@ -63,13 +63,13 @@ Microsoft 365利用状況分析は、ユーザーがデータをPower BIして�
 
 1. 左側のナビゲーションを **使用して [** 製品の使用状況] レポートに移動し、[製品の使用状況]**タブYammer** します。
 
-2. [編集] と [編集] の [その他のページ] ボタンを ![ 選択してPower BI ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) モードに **切り替えます**。
+2. [その他のページ] ボタンを選択して編集モード ![ に切りPower BI。](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) および **編集 .**
 
-3. ページの下部で、 ![[ページの追加] ボタンをクリックPower BI](../../media/d3b8c117-17d4-4f53-b078-8fefc2155b24.png) をクリックして、新しいページを作成します。
+3. ページの下部で、 ![[ページの追加] ボタンをクリックPower BI。](../../media/d3b8c117-17d4-4f53-b078-8fefc2155b24.png) をクリックして、新しいページを作成します。
 
 4. 右側の **[視覚化]** 領域で、[積 **み上** げ棒グラフ] (左上から最初の行) を選択します。
 
-    ![棒グラフの選択](../../media/214c3fed-6eae-43e6-83fb-708a2d74406e.png)
+    ![[棒グラフ] を選択します。](../../media/214c3fed-6eae-43e6-83fb-708a2d74406e.png)
 
 5. その視覚エフェクトの右下を選択し、ドラッグして大きくします。
 
@@ -77,7 +77,7 @@ Microsoft 365利用状況分析は、ユーザーがデータをPower BIして�
 
 7. [ **MonthName**] を [フィールド] 領域までドラッグします。[ **視覚エフェクト**] 領域の [ **軸**] 見出しのすぐ下にあります。
 
-    ![[月名のドラッグ]](../../media/bff99987-8c4b-4618-89fd-47df557b0ed7.png)
+    ![[月名] をドラッグします。](../../media/bff99987-8c4b-4618-89fd-47df557b0ed7.png)
 
 8. 右にある [ **フィールド**] 領域の [ **TenantProductUsage**] テーブルを展開します。
 
@@ -87,7 +87,7 @@ Microsoft 365利用状況分析は、ユーザーがデータをPower BIして�
 
 11. [ **フィルターの種類**] 領域が表示されたら、[ **Yammer**] チェック ボックスを選択します。
 
-    ![[選択Yammer] チェック ボックス](../../media/82e99730-0de9-42da-928a-76aab0c3e609.png)
+    ![[選択Yammer] チェック ボックスをオンにします。](../../media/82e99730-0de9-42da-928a-76aab0c3e609.png)
 
 12. 視覚化の一覧の下で、[Visualizaions] の [書式] アイコンPower BI ![ 選択します ](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png) 。
 
@@ -113,7 +113,7 @@ Microsoft 365利用状況分析は、ユーザーがデータをPower BIして�
 
     **注:** レポート API はプレビュー中で、本番環境に入るまで変更される可能性があります。
 
-    ![OData feed URL for Power BI desktop](../../media/c0ef967e-a454-4eba-bc8e-61e113170053.png)
+    ![デスクトップの OData フィード URL Power BIします。](../../media/c0ef967e-a454-4eba-bc8e-61e113170053.png)
 
 3. プロンプトが表示Microsoft 365に認証する管理者資格情報 (組織または学校) Microsoft 365入力します。
 
@@ -125,7 +125,7 @@ Microsoft 365利用状況分析は、ユーザーがデータをPower BIして�
 
     これで Power BI デスクトップにデータがダウンロードされます。このファイルを保存すれば、必要なレポートの作成を開始できます。
 
-    ![レポート API で使用できる ODATA 値](../../media/545b4d17-dbbd-4cfc-b75a-a8b27283d438.png)
+    ![レポート API で使用できる ODATA 値。](../../media/545b4d17-dbbd-4cfc-b75a-a8b27283d438.png)
 
 ### <a name="use-the-microsoft-365-usage-analytics-template"></a>使用状況分析テンプレートMicrosoft 365使用する
 
@@ -137,7 +137,7 @@ Microsoft ダウンロード センターからPower BIテンプレート ファ
 
 2. ダイアログにテナント ID 値を入力します。
 
-    ![Enter your tenant ID to open the pbit file](../../media/071ed0bf-8b9d-49c6-81fc-fd4c6cc85bd3.png)
+    ![テナント ID を入力して pbit ファイルを開きます。](../../media/071ed0bf-8b9d-49c6-81fc-fd4c6cc85bd3.png)
 
 3. プロンプトが表示されたら、管理者資格情報を入力してMicrosoft 365認証します。
 

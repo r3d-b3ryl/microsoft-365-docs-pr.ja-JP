@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 94af3e22-aca6-4e91-8b91-1cd5a02a9ea8
 description: Microsoft Bookings で言語とタイム ゾーンの設定を変更します。 予約が間違った時刻に作成された場合、間違ったタイム ゾーンに対して予約が設定されている可能性があります。
-ms.openlocfilehash: 7c1ae42f327291062fb6bc4512ef3b1b85709b45814a816222958405327e054c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2ccea0446d168476961294ba5800ad3899bd24eb
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53843621"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58556446"
 ---
 # <a name="set-language-and-time-zones-in-microsoft-bookings"></a>Microsoft Bookings で言語とタイム ゾーンを設定する
 
@@ -30,13 +30,13 @@ Bookings には、2 つの言語とタイム ゾーンの設定があります�
 
 1. [Microsoft 365 Outlook] にMicrosoft 365し、ランディング ページ (下のスクリーンショットに示すように) または Microsoft 365 App 起動ツール で[Microsoft 365] タイルを選択起動ツール。
 
-   ![ランディング ページOutlookタイルMicrosoft 365イメージ](../media/bookings-outlook-tile.png)
+   ![ランディング ページOutlookタイルMicrosoft 365イメージ。](../media/bookings-outlook-tile.png)
 
 1. [Outlook] が開いたら、画面の右上隅にある歯車アイコンを選択して個人設定とアカウント設定を開き、設定 パネルの検索ボックスで "タイム ゾーン"**を** 検索します。 このアカウントの現在の個人の言語とタイム ゾーンの設定が表示されます。 前に説明したように、この設定は、予約予定表の言語とタイム ゾーンも制御します。
 
 1. [言語] ボックスまたは [現在のタイム ゾーン] ボックスでドロップダウン矢印を選択し、目的の設定を選択して、言語またはタイム ゾーンを変更します。
 
-1. [**保存**] をクリックします。 [設定] パネルが閉じOutlook on the web再起動し、新しい言語とタイム ゾーンの設定が適用されます。
+1. **[保存]** をクリックします。 [設定] パネルが閉じOutlook on the web再起動し、新しい言語とタイム ゾーンの設定が適用されます。
 
 ## <a name="setting-the-language-and-time-zone-for-the-booking-page"></a>予約ページの言語とタイム ゾーンの設定
 
@@ -44,8 +44,8 @@ Bookings には、2 つの言語とタイム ゾーンの設定があります�
 
 1. ナビゲーション ウィンドウで、[予約] ページ **を選択し** 、[言語とタイム ゾーンの設定を **変更する] を選択します**。
 
-   ![スクリーンショット: [言語とタイム ゾーンの設定の変更] リンク](../media/bookings-region-language-timezone-settings.png)
+   ![スクリーンショット: [言語とタイム ゾーンの設定] リンクを変更します。](../media/bookings-region-language-timezone-settings.png)
 
 1. 言語と現在のタイム ゾーンを選択し、[OK] を選択します。
 
-   ![スクリーンショット: 言語とタイム ゾーンの設定](../media/bookings-region-timezone-settings.png)
+   ![スクリーンショット: 言語とタイム ゾーンの設定。](../media/bookings-region-timezone-settings.png)

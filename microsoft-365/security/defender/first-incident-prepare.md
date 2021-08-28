@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 89c185472f9e570374a3c0ea0ee70a62a4970b89
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 79a8c8f20b2db4f1b3604c5e652c98a6c9898868
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256530"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58558952"
 ---
 # <a name="prepare-your-security-posture-for-your-first-incident"></a>最初のインシデントのセキュリティ態勢を準備する
 
@@ -45,7 +45,7 @@ Microsoft 365 Defender、インシデント防止のいくつかの側面に対�
 - 脅威と脆弱性管理の脆弱性評価による [脅威の防止](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)
 - 最新のセキュリティ脅威を理解して、セキュリティ脅威に備える
 
-## <a name="step-1-implement-zero-trust"></a>手順 1。 ゼロ信頼の実装
+## <a name="step-1-implement-zero-trust"></a>手順 1. ゼロ信頼の実装
 
 [ゼロトラスト](/security/zero-trust/) は、モバイルワークフォース、ユーザー、デバイス、アプリケーション、データなど、モダンな環境の複雑な性質を考慮した統合セキュリティ哲学とエンドツーエンド戦略です。 Microsoft 365 Defender では、すべての検出を一貫した方法で管理するための単一のウィンドウを提供することで、セキュリティ運用チームがゼロトラストの指針を簡単に[](/security/zero-trust/#guiding-principles-of-zero-trust)実装できます。 
 
@@ -59,7 +59,7 @@ Microsoft 365 Defender のコンポーネントは、デバイス コンプラ�
 
 次に、組織は Microsoft [Secure Score](microsoft-secure-score.md)を使用して、Microsoft 365 Defenderを決定し、その改善方法に関する推奨事項を検討できます。 スコアが高いほど、組織によってセキュリティに関する推奨事項と改善のアクションが多くなります。 セキュリティで保護されたスコアの推奨事項は、さまざまな製品間で取り上げ、組織がスコアを上げるのをさらに高くすることができます。 
 
-:::image type="content" source="../../media/first-incident-prepare/first-incident-secure-score.png" alt-text="Microsoft セキュリティ センターの Microsoft Secure Score の例":::
+:::image type="content" source="../../media/first-incident-prepare/first-incident-secure-score.png" alt-text="Microsoft セキュリティ センターの Microsoft Secure Score の例。":::
  
 ## <a name="step-3-assess-your-organizations-vulnerability-exposure"></a>手順 3. 組織の脆弱性の暴露を評価する
 
@@ -67,7 +67,7 @@ Microsoft 365 Defender のコンポーネントは、デバイス コンプラ�
 
 ソフトウェアの修正プログラムの進行状況を確認するには、Defender for Endpoint の [脅威と脆弱性の管理] ページにアクセスし、Microsoft 365 Defender [その他のリソース] タブから **アクセス** できます。 [](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)
 
-:::image type="content" source="../../media/first-incident-prepare/first-incident-vulnerability.png" alt-text="Microsoft セキュリティ センターの [脅威と脆弱性] ページの例"::: 
+:::image type="content" source="../../media/first-incident-prepare/first-incident-vulnerability.png" alt-text="Microsoft セキュリティ センターの [脅威と脆弱性] ページの例。"::: 
  
 ## <a name="4-understand-emerging-threats"></a>4. 新たな脅威を理解する
 
@@ -87,7 +87,7 @@ Microsoft 365 Defender[ポータル](threat-analytics.md)で脅威分析を使�
 
 ## <a name="next-step"></a>次の手順
 
-[![手順 1: インシデントをトリアージして分析する方法について学習する](../../media/first-incident-overview/first-incident-path-step1.png)](first-incident-analyze.md)
+[![手順 1: インシデントをトリアージして分析する方法について学習します。](../../media/first-incident-overview/first-incident-path-step1.png)](first-incident-analyze.md)
 
 インシデントをトリアー [ジして分析する方法について学習します](first-incident-analyze.md)。
 

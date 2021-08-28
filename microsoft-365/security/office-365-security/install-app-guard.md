@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 description: ハードウェア ベースの分離の最新情報を取得します。 悪用や悪意のあるリンクのような現在および新しい攻撃が従業員の生産性と企業のセキュリティを妨げるのを防ぐ。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6eabad2b52dc83c65b6a36ea4bb057573ce83e5d4dfc18b298ba1e287a8a696d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f734a4ee22984bdc716a9897624f21396c8b7c1d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53828268"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58558868"
 ---
 # <a name="application-guard-for-office-for-admins"></a>管理者向け Application Guard for Office
 
@@ -58,7 +58,7 @@ Microsoft Defender Application Guard Office (Application Guard for Office) は�
 
 2. [機能 **Microsoft Defender Application Guard] Windows** 選択し **、[OK] を選択します**。 Application Guard 機能を有効にすると、システムの再起動が促されます。 今すぐ再起動するか、手順 3 の後に再起動することを選択できます。
 
-   ![WindowsAG を示す [機能] ダイアログ ボックス](../../media/ag03-deploy.png)
+   ![WindowsAG を示す [機能] ダイアログ ボックス。](../../media/ag03-deploy.png)
 
    この機能は、管理者として次の PowerShell コマンドを実行して有効にすることもできます。
 
@@ -68,7 +68,7 @@ Microsoft Defender Application Guard Office (Application Guard for Office) は�
 
 3. 管理モード **でMicrosoft Defender Application Guardを検索** し、グループ ポリシーを [コンピューター構成管理用テンプレート] Windows **\\ \\ でMicrosoft Defender Application Guard。 \\** [オプション] の値を **2** または **3** に設定し **、[OK]** または [適用] を選択して、このポリシーを有効 **にします**。
 
-   ![管理モードで AG を有効にする](../../media/ag04-deploy.png)
+   ![管理モードで AG を有効にします。](../../media/ag04-deploy.png)
 
    代わりに、対応する CSP ポリシーを設定できます。
 
@@ -85,15 +85,15 @@ Microsoft Defender Application Guard Office (Application Guard for Office) は�
 
 1. **[設定** から開スタート メニュー。
 
-   ![[スタート] メニュー](../../media/ag05-diagnostic.png)
+   ![スタート メニュー。](../../media/ag05-diagnostic.png)
 
 2. [プライバシー **Windows 設定]** を **選択します**。
 
-   ![Windows 設定メニュー](../../media/ag06-diagnostic.png)
+   ![Windows 設定メニュー。](../../media/ag06-diagnostic.png)
 
 3. [プライバシー] の下で、[診断 **&フィードバック] を選択し、[** オプションの **診断データ] を選択します**。
 
-   ![[診断とフィードバック] メニュー](../../media/ag07a-diagnostic.png)
+   ![[診断とフィードバック] メニュー。](../../media/ag07a-diagnostic.png)
 
 診断設定の構成Windows詳細については、「組織での診断[Windowsの構成」を参照してください](/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enterprise-management)。
 
@@ -105,17 +105,17 @@ Application Guard for Officeが有効Office、Word、Excel、または PowerPoin
 
 信頼されていないファイルを初めて開いた場合、次のOfficeのようなスプラッシュ画面が表示される場合があります。 アプリケーション のアプリケーション ガードがアクティブ化され、Office開いている間、しばらくの間表示される場合があります。 それ以降の信頼されていないファイルの開き方が速くなります。
 
-![Office アプリスプラッシュ画面](../../media/ag08-confirm.png)
+![Office アプリスプラッシュ画面。](../../media/ag08-confirm.png)
 
 開いていると、ファイルが Application Guard 内で開いて次のような視覚的なインジケーターが表示Office。
 
 * リボンの吹き出し
 
-  ![小さな App Guard メモを示す Doc ファイル](../../media/ag09-confirm.png)
+  ![小さな App Guard メモを示す Doc ファイル。](../../media/ag09-confirm.png)
 
 * タスク バーにシールドが付くアプリケーション アイコン
 
-  ![タスク バーのアイコン](../../media/ag12-limitations.png)
+  ![タスク バーのアイコン。](../../media/ag12-limitations.png)
 
 ## <a name="configure-application-guard-for-office"></a>アプリケーション用の Application Guard を構成Office
 
@@ -198,7 +198,7 @@ Microsoft Defender for Endpoint は、エンタープライズ ネットワー�
 
 * Application Guard for Office は、信頼されていないドキュメントを分離して、信頼できる企業リソース、イントラネット、ユーザーの ID、およびコンピューター上の任意のファイルにアクセスできない保護モードです。 その結果、ユーザーがそのようなアクセスに依存する機能 (たとえば、ディスク上のローカル ファイルから画像を挿入する) にアクセスしようとすると、アクセスは失敗し、次の例のようなプロンプトが表示されます。 信頼されていないドキュメントが信頼できるリソースにアクセスするには、ドキュメントから Application Guard 保護を削除する必要があります。
 
-  ![[安全を保つために、この機能は使用できません] というダイアログ ボックス](../../media/ag10-limitations.png)
+  ![[安全を保つために、この機能は使用できません。](../../media/ag10-limitations.png)
 
   > [!NOTE]
   > ユーザーに対して、ファイルとそのソースを信頼している場合、または保護元を信頼している場合にのみ、保護を削除する必要があります。

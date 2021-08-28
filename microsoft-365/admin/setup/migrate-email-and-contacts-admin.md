@@ -29,12 +29,12 @@ search.appverid:
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
 description: Gmail や他のメール プロバイダーから連絡先、予定表、メールをインポートし、Microsoft 365 に移行する方法について説明します。
-ms.openlocfilehash: 7ae14ffa8445a54d888216e7014d21e31752e1c17c9c496cf6d7e4c546cfa716
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: adf36aea78019a98f8b5b49e316eeb64b3f05cbc
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53821771"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58556470"
 ---
 # <a name="migrate-email-and-contacts-to-microsoft-365"></a>Microsoft 365 へのメールと連絡先の移行
 
@@ -74,7 +74,7 @@ Microsoft 365 を使用してメール、連絡先、予定表を Outlook から
     
 To start the process, open Outlook and choose **File** \> **Open &amp; Export** \> **Import/Export**.
   
-![Outlook 2016 の [ファイル] メニュー](../../media/2f1c39a5-177e-4052-9dd8-90c0d140be2c.png)![Outlook 2016 の [開く、&amp;エクスポート] コマンド](../../media/eecab6df-c372-45b1-8a8a-2f6d7af0dd68.png)![Outlook 2016 の [インポート/エクスポート] ボタン](../../media/ed90ae47-20db-4be1-b0c0-826008432c6e.png)
+![[ファイル] メニュー Outlook 2016。](../../media/2f1c39a5-177e-4052-9dd8-90c0d140be2c.png)![Outlook 2016 の [開く、&amp;エクスポート] コマンド](../../media/eecab6df-c372-45b1-8a8a-2f6d7af0dd68.png)![Outlook 2016 の [インポート/エクスポート] ボタン](../../media/ed90ae47-20db-4be1-b0c0-826008432c6e.png)
   
 ## <a name="see-other-email-accounts-in-outlook"></a>Outlook で他のメール アカウントを表示する
 

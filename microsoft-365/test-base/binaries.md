@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 72300374c90e0142bdbf713ffee1dba40869fff3293014e1b9884d5e148fed8e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 38c21f69680d6e9d6a3231c8bf2dc44f15e057f6
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827580"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58556506"
 ---
 # <a name="step-3-upload-your-binaries-dependencies-and-scripts"></a>手順 3: アップロード、依存関係、およびスクリプトを削除する
 
@@ -27,7 +27,7 @@ ms.locfileid: "53827580"
 
 ## <a name="upload-package-zip-file"></a>アップロード zip ファイル
 
-![アップロードバイナリの作成](Media/AddBinaries.png)
+![アップロードバイナリを作成します。](Media/AddBinaries.png)
 
   - アップロードされた依存関係には、テスト フレームワーク、スクリプト エンジン、またはアプリケーションまたはテスト ケースを実行するためにアクセスされるデータが含まれます。 たとえば、ブラウザー ベースのテストの実行に役立つ Selenium インストーラーと Webdriver インストーラーをアップロードできます。
   - スクリプトアクティビティがモジュール形式で保持されるのがベスト プラクティスです。 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d0cb507f0d221916e73bfa7261df59d33529639f8197f70fdf88c87b708131f2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6a134dced8eb749bebdf7e486c6d06c9cc19048b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884503"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58558964"
 ---
 # <a name="monitor-web-browsing-security"></a>Web 閲覧のセキュリティを監視する
 
@@ -37,11 +37,11 @@ Web 保護を使用すると、組織の Web 閲覧のセキュリティを監�
 
 - **Web 脅威保護の** 検出時間の推移 - この傾向カードには、選択した期間中に種類別に検出された Web 脅威の数が表示されます (過去 30 日間、過去 3 か月、過去 6 か月)
 
-  :::image type="content" alt-text="Web 脅威の保護検出を時間の間に示すカードの画像" source="images/wtp-blocks-over-time.png" lightbox="images/wtp-blocks-over-time.png":::
+  :::image type="content" alt-text="時間の間に Web 脅威の保護検出を示すカードの画像。" source="images/wtp-blocks-over-time.png" lightbox="images/wtp-blocks-over-time.png":::
 
 - **Web 脅威保護の** 概要 - このカードには、過去 30 日間の Web 脅威検出の合計が表示され、さまざまな種類の Web 脅威に対する配布が表示されます。 スライスを選択すると、悪意のある Web サイトや望ましくない Web サイトで見つかったドメインの一覧が開きます。
 
-  :::image type="content" alt-text="Web 脅威保護の概要を示すカードの画像" source="images/wtp-summary.png" lightbox="images/wtp-summary.png":::
+  :::image type="content" alt-text="Web 脅威保護の概要を示すカードのイメージ。" source="images/wtp-summary.png" lightbox="images/wtp-summary.png":::
 
 > [!NOTE]
 > ブロックがカードまたはドメイン リストに反映されるまで最大 12 時間かかる場合があります。
@@ -66,7 +66,7 @@ Web 脅威保護の概要カードで特定の Web 脅威カテゴリを **選�
 
 ドメインを選択して、そのドメイン内の URL にアクセスしようとしたデバイスの一覧と URL の一覧を表示します。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [Web 保護の概要](web-protection-overview.md)
 - [Web コンテンツ フィルタリング](web-content-filtering.md)

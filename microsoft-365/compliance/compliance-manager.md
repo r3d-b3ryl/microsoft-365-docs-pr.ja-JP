@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager は、組織がリスク評価を簡素化および自動化するのに役立ち、リスクに対処するために推奨されるアクションを提案します。
-ms.openlocfilehash: b763560d48f4e07a01fdd3baaf7286327c78cca508984c65f88aff1c73ee47b6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e0e8d4595f883f33dc7714cd41c8cb49002321a1
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53895749"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58556398"
 ---
 # <a name="microsoft-compliance-manager"></a>Microsoft コンプライアンス マネージャー
 
@@ -41,7 +41,7 @@ ms.locfileid: "53895749"
 
 - 一般的な業界および地域の標準および規制に対する事前構築された評価、または独自のコンプライアンスニーズを満たすカスタム評価 (利用可能な評価は、ライセンス契約によって異なる。 [詳細については、「詳細」を参照してください](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance))。
 
-- 1 つのツールを使用してリスク評価を効率的に完了するのに役立つワークフロー機能。
+- 単一のツールを使用してリスク評価を効率的に完了させるためのワークフロー。
 
 - 組織に最も関連性の高い標準と規制を遵守するための推奨される改善措置に関する詳細なステップ バイ ステップ ガイダンス。 Microsoft によって管理されるアクションについては、実装の詳細と監査結果が表示されます。
 
@@ -49,7 +49,7 @@ ms.locfileid: "53895749"
 
 コンプライアンス マネージャー ダッシュボードには、現在のコンプライアンス スコアが表示され、注意が必要な情報が表示され、重要な改善アクションが示されます。 コンプライアンス マネージャー ダッシュボードの外観の例を次に示します。
 
-![コンプライアンス マネージャー - ダッシュ ボード](../media/compliance-manager-dashboard.png "コンプライアンス マネージャーのダッシュ ボード")
+![コンプライアンス マネージャー - ダッシュボード。](../media/compliance-manager-dashboard.png "コンプライアンス マネージャーのダッシュ ボード")
 
 ## <a name="understanding-your-compliance-score"></a>コンプライアンス スコアについて
 

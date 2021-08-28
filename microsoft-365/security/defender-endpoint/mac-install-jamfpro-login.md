@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b439976ea0d3b0d79f98cba1a719d1210c7eb2f165d989983661aad878f978b8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1179259934dc77b29e68a8adcf49323d93bc93da
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53889710"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58559060"
 ---
 # <a name="log-in-to-jamf-pro"></a>Jamf にログインPro
 
@@ -33,19 +33,19 @@ ms.locfileid: "53889710"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 1. 資格情報を入力します。
 
-    ![Jamf ダッシュボードのPro 1](images/jamf-pro-portal1.png)
+    ![ダッシュボード 1 の Jamf Proイメージ。](images/jamf-pro-portal1.png)
 
 2. [コンピューター **] を選択します**。
 
-    ![Jamf ダッシュボードのPro 2](images/jamf-pro-dashboard.png)
+    ![ダッシュボード 2 の Jamf Proイメージ。](images/jamf-pro-dashboard.png)
 
 3. 使用可能な設定が表示されます。
 
-     ![ダッシュボード 3 の Jamf Proイメージ](images/jamfpro-settings.png)
+     ![ダッシュボード 3 の Jamf Proイメージ。](images/jamfpro-settings.png)
 
 
 ## <a name="next-step"></a>次の手順

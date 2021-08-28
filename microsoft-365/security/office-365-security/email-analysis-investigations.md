@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fc30c59df53341d26ab07799a88084d1e3ddde3c81b21503441607a520d218e2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 598f8713103a49dad01eb9bb6cf74257128e25f9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56807514"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58558880"
 ---
 # <a name="email-analysis-in-investigations-for-microsoft-defender-for-office-365"></a>Microsoft Defender for microsoft Defender for Office 365
 
@@ -74,7 +74,7 @@ ms.locfileid: "56807514"
 
 インシデントの [証拠と応答] タブの電子メールベースの証拠に、次の情報が表示されます。
 
-:::image type="content" source="../../media/email-analysis-investigations/email-analysis-evidence-example.png" alt-text="エビデンスと応答の電子メール分析情報の例" lightbox="../../media/email-analysis-investigations/email-analysis-evidence-example.png":::
+:::image type="content" source="../../media/email-analysis-investigations/email-analysis-evidence-example.png" alt-text="Evidence and Response の電子メール分析情報の例。" lightbox="../../media/email-analysis-investigations/email-analysis-evidence-example.png":::
 
 図の番号付き吹き出しから、
 
@@ -91,7 +91,7 @@ ms.locfileid: "56807514"
 
 インシデントの [エンティティ]タブの電子メールクラスターまたは電子メール クラスターの場合、このアイテム (メールまたはクラスター) のメールボックスに悪意のある電子メールが存在しなかったという意味です。 次に例を示します。
 
-:::image type="content" source="../../media/email-analysis-investigations/email-analysis-evidence-example-prevented.png" alt-text="電子メールの防止の例" lightbox="../../media/email-analysis-investigations/email-analysis-evidence-example-prevented.png":::
+:::image type="content" source="../../media/email-analysis-investigations/email-analysis-evidence-example-prevented.png" alt-text="電子メールの防止の例。" lightbox="../../media/email-analysis-investigations/email-analysis-evidence-example-prevented.png":::
 
 この例では、電子メールは悪意がありますが、メールボックスには含めではありません。
 
