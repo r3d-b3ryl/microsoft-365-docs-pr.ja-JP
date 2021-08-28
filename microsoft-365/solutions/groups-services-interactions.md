@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: グループ サービスのやり取り
-ms.openlocfilehash: 3cf68b0abcf15515ebe724fe795b9b31c5ebd2b6f8b3dd6c9ca76b7b706c8508
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 54d8cd0ff31bad9af4269b3a4d8af23ccb618e16
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853069"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563708"
 ---
 # <a name="groups-services-interactions"></a>グループ サービスのやり取り
 
@@ -109,7 +109,7 @@ SharePointサイトは、所有者、メンバー、および訪問者のセキ�
 
 さまざまな種類のグループMicrosoft 365作成および管理する方法、およびいくつかのガバナンスに関する推奨事項については、「グループ」ポスターを参照してください。
 
-[![グループ インフォグラフィックのサムネイル](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf)
+[![グループインフォグラフィックのサム イメージ。](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf)
 
 [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx)
 
@@ -119,13 +119,13 @@ SharePointサイトは、所有者、メンバー、および訪問者のセキ�
 |---|---|---|---|---|
 |Azure AD|メンバーシップ、グループ コントロール、ゲスト|はい|はい|はい|
 |Exchange|予定表、メールボックス|はい|はい|はい|
-|フォーム|フォーム|はい|いいえ|いいえ|
+|Forms|フォーム|はい|いいえ|いいえ|
 |OneNote|Notebook|はい|いいえ|いいえ|
 |Planner|タスク ボード|いいえ|はい|はい|
 |Power Appsアプリ|アプリ|はい|いいえ|いいえ|
 |Power Automate|ワークフロー|はい|いいえ|いいえ|
-|Power BI (クラシック)|Workspace|いいえ|はい|はい|
-|Power BI (新しい)|Workspace|はい|いいえ|はい|
+|Power BI (クラシック)|ワークスペース|いいえ|はい|はい|
+|Power BI (新しい)|ワークスペース|はい|いいえ|はい|
 |Project for the web|Project plan|はい|はい|いいえ|
 |ロードマップ|ロードマップ|はい|はい|いいえ|
 |SharePoint|Site|はい|はい|はい|
@@ -241,7 +241,7 @@ Exchange Online、予定表、連絡先、および関連する機能を提供�
 
 はい、グループ内のメールボックスExchange、グループに関連付けられたサービスとコンテンツが削除されます。
 
-## <a name="forms"></a>フォーム
+## <a name="forms"></a>Forms
 
 フォームは、Web ベースのアンケートとクイズを提供します。
 
@@ -340,7 +340,7 @@ Planner は、軽量なグループ タスク管理サービスです。
 
 はい、プランを削除すると、グループとグループに関連付けられたサービスとコンテンツが削除されます。
 
-## <a name="power-apps"></a>Power Apps
+## <a name="power-apps"></a>Power アプリ
 
 Power Appsコードなしでアプリ開発用のキャンバスを提供します。
 
@@ -544,7 +544,7 @@ SharePointは、Web ベースのコンテンツ管理プラットフォームで
 
 **グループに提供される主な機能**
 
-- ドキュメントライブラリ
+- ドキュメント ライブラリ
 - ノートブックのストレージ用OneNoteライブラリ
 - Storage wiki ファイルTeamsの一覧
 
@@ -646,7 +646,7 @@ Yammer プラットフォームが Microsoft 365 グループに接続されて�
 
 はい、グループを削除すると、Yammer関連する Microsoft グループとグループ関連のサービスとコンテンツが削除されます。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [コラボレーション ガバナンス計画のステップ バイ ステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: bd56ab7daef91fb06aca8bc9d60213877b9696b8
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: f9fbeb7d0fbaee05e86c89749ffc62695e8ff9e9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507760"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563596"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Defender for Endpoint で高度な機能を構成する
 
@@ -107,8 +107,8 @@ Windows 10 Version 1809 以降に作成されたテナントの場合、自動�
 1. ナビゲーション ウィンドウで、[エンドポイントの全般 **詳細設定設定** ファイルを許可またはブロック \>  \>  \>  \> **する] を選択します**。
 
 1. [オン] と [オフ]**の間で設定を****切り替えます**。
-
-    :::image type="content" source="../../media/alloworblockfile.png" alt-text="ブロック ファイル機能の詳細設定のイメージ":::
+ 
+    :::image type="content" source="../../media/alloworblockfile.png" alt-text="ブロック ファイル機能の詳細設定のイメージ。":::
 
 1. ページ **の下部にある [基本** 設定の保存] を選択します。
 
