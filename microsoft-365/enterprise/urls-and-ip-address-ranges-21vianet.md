@@ -21,12 +21,12 @@ f1.keywords:
 - NOCSH
 description: この記事では、中国で 21Vianet がOffice 365の URL と IP アドレスの範囲を示します。
 hideEdit: true
-ms.openlocfilehash: 07cc0f00ef2922d448cc3bc99767deb0f670576ed3244c4bb705c9ca8bb5ab99
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 726069ef6dddc7d46ab2c5c36f9b6eaf0edf702d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53894884"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564000"
 ---
 # <a name="urls-and-ip-address-ranges-for-office-365-operated-by-21vianet"></a>21Vianet が運営する Office 365の URL と IP アドレス範囲
 
@@ -36,7 +36,7 @@ ms.locfileid: "53894884"
   
  **Office 365 エンドポイント:** [(GCC を含む) 世界](urls-and-ip-address-ranges.md)  | *21Vianet が運営する Office 365* | [Office 365 ドイツ](microsoft-365-germany-endpoints.md) |  [Office 365 米国政府機関向け DoD](microsoft-365-u-s-government-dod-endpoints.md) | [Office 365 米国政府 GCC 高](microsoft-365-u-s-government-gcc-high-endpoints.md) |
   
-**最終更新日:** 03/29/2021 - ![ RSS Change Log ](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [サブスクリプション](https://endpoints.office.com/version/China?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)
+**最終更新日:** 03/29/2021 - ![ RSS。](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [ログ サブスクリプションの変更](https://endpoints.office.com/version/China?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)
 
 **ダウンロード:** 1 つの [JSON 形式](https://endpoints.office.com/endpoints/China?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)リスト内のすべての必須およびオプションの宛先。
 

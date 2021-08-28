@@ -14,12 +14,12 @@ search.appverid:
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: M365-security-compliance
 description: 2021 年 3 月 10 日Advanced eDiscoveryの関連性モジュールは廃止されます。 この記事では、関連性が廃止される前の操作について説明します。 具体的には、バッチ計算を実行して未完成のモデルを終了し、モデルからメタデータを保持できます。
-ms.openlocfilehash: c64a0e1f42fc1904c91c4ac30a74cecb975b1b18c0a3426e63bd5ca2aac45feb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1005c7a1c065adba039f6f07197dbca758d20ea4
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53871460"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565406"
 ---
 # <a name="retirement-of-the-relevance-module-in-advanced-ediscovery"></a>[関連] モジュールを使用Advanced eDiscovery
 
@@ -37,7 +37,7 @@ ms.locfileid: "53871460"
 
    次のスクリーンショットは、バッチ計算の準備ができているモジュールを示しています。 評価とトレーニングが完了し、次にバッチ計算を実行します。
 
-   ![バッチ計算の準備ができているモデルのスクリーンショット](../media/ReadyForBatchCalculation.png)
+   ![バッチ計算の準備ができているモデルのスクリーンショット。](../media/ReadyForBatchCalculation.png)
 
 2. バッチ計算を実行します。 「 [バッチ計算の実行」を参照してください](track-relevance-analysis-in-advanced-ediscovery.md#performing-batch-calculation)。
 

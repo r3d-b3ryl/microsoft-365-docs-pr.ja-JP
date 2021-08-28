@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 の高度な監査では、組織におけるフォレンシックおよびコンプライアンスの調査に役立つ新しい監査機能を提供します。
-ms.openlocfilehash: 7671bcc99a0f1ab205312fe0aa6930255ae6cfa1
-ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
+ms.openlocfilehash: 5892932bc3fe35cfc6739c266db9f6379d08ee6b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58386998"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565508"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 の高度な監査
 
@@ -90,7 +90,7 @@ MailItemsAccessed アクティビティの監査レコードの詳細につい�
 
 MailItemsAccessed 監査レコードを検索するには、Microsoft 365 コンプライアンス センター内の [監査ログ検索ツール](search-the-audit-log-in-security-and-compliance.md)の **Exchange メールボックス アクティビティ** ドロップダウン リストで **メールボックス アイテムへのアクセス** アクティビティを検索できます。
 
-![監査ログ検索ツールで MailItemsAccessed アクションを検索する](../media/AdvAudit_MailItemsAccessed.png)
+![監査ログ検索ツールで MailItemsAccessed アクションを検索する。](../media/AdvAudit_MailItemsAccessed.png)
 
 Exchange Online PowerShell で [Search-UnifiedAuditLog -Operations MailItemsAccessed](/powershell/module/exchange/search-unifiedauditlog) または [Search-MailboxAuditLog -Operations MailItemsAccessed](/powershell/module/exchange/search-mailboxauditlog) コマンドを実行することもできます。
 
@@ -108,7 +108,7 @@ Send イベントもメールボックス監査アクションであり、ユー
 
 Send 監査レコードを検索するには、Microsoft 365 コンプライアンス センター内の [監査ログ検索ツール](search-the-audit-log-in-security-and-compliance.md)の **Exchange メールボックス アクティビティ** ドロップダウン リストで **送信済みメッセージ** アクティビティを検索できます。
 
-![監査ログ検索ツールでの送信済みメッセージ アクションの検索](../media/AdvAudit_SentMessage.png)
+![監査ログ検索ツールでの送信済みメッセージ アクションの検索。](../media/AdvAudit_SentMessage.png)
 
 Exchange Online PowerShell で [Search-UnifiedAuditLog -Operations Send](/powershell/module/exchange/search-unifiedauditlog) または [Search-MailboxAuditLog -Operations Send](/powershell/module/exchange/search-mailboxauditlog) コマンドを実行することもできます。
 
@@ -130,7 +130,7 @@ SearchQueryInitiatedExchange イベントは、ユーザーが Outlook を使用
 
 SearchQueryInitiatedExchange 監査レコードを検索するには、コンプライアンス センター内の [監査ログ検索ツール](search-the-audit-log-in-security-and-compliance.md)の **検索アクティビティ** ドロップダウン リストで **実行されたメール検索** アクティビティを検索できます。
 
-![監査ログ検索ツールでの実行されたメール検索アクションの検索](../media/AdvAudit_SearchExchange.png)
+![監査ログ検索ツールでの実行されたメール検索アクションの検索。](../media/AdvAudit_SearchExchange.png)
 
 また、Exchange Online PowerShell で [Search-UnifiedAuditLog -Operations SearchQueryInitiatedExchange](/powershell/module/exchange/search-unifiedauditlog) を実行することもできます。
 
@@ -153,7 +153,7 @@ SearchQueryInitiatedExchange 監査レコードを検索するには、コンプ
 
 SearchQueryInitiatedSharePoint 監査レコードを検索するには、コンプライアンス センター内の [監査ログ検索ツール](search-the-audit-log-in-security-and-compliance.md)の **検索アクティビティ** ドロップダウン リストで **実行された SharePoint 検索** アクティビティを検索できます。
 
-![監査ログ検索ツールでの実行された SharePoint 検索アクションの検索](../media/AdvAudit_SearchSharePoint.png)
+![監査ログ検索ツールでの実行された SharePoint 検索アクションの検索。](../media/AdvAudit_SearchSharePoint.png)
 
 また、Exchange Online PowerShell で [Search-UnifiedAuditLog -Operations SearchQueryInitiatedSharePoint](/powershell/module/exchange/search-unifiedauditlog) を実行することもできます。
 

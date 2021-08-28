@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: セットアップ ウィザードと [セットアップ] ページの違いについて説明します。
-ms.openlocfilehash: 18dd1e6cd2aae0c1222bc0a63025c413946dbd8619231c307ec5a938c97a1bef
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a4936dded4e13b6cf748a1b4d33513480bf382a9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53821702"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565592"
 ---
 # <a name="difference-between-the-setup-wizard-and-the-setup-page"></a>セットアップ ウィザードと [セットアップ] ページの違い
 
@@ -40,7 +40,7 @@ Microsoft 365には、次の 2 つのセットアップ エクスペリエンス
 
 アカウントを設定するには、管理センターに移動 [](https://go.microsoft.com/fwlink/p/?linkid=2024339)し、左側のナビゲーション ウィンドウで [セットアップ] を選択し、[セットアップ] ページで [ガイド付きセットアップ]**を選択** します。
 
-![セットアップ ウィザードMicrosoft 365 Apps for business開始する](../../media/o365b-guided-setup.png)
+![セットアップ ウィザードMicrosoft 365 Apps for business開始します。](../../media/o365b-guided-setup.png)
 
 セットアップ ウィザードでは、次の手順を実行します。
 
@@ -58,7 +58,7 @@ Microsoft 365には、次の 2 つのセットアップ エクスペリエンス
 
 セットアップ ウィザードで完了したタスクを含む、論理的なカテゴリに配置されたセットアップ タスクの完全な一覧が表示されます。
 
-![Microsoft 365のセットアップ ページ](../../media/o365b-setup-page.png)
+![Microsoft 365のセットアップ ページを参照してください。](../../media/o365b-setup-page.png)
 
 [ **表示]** を選択すると、タスクの説明、ユーザーへの影響、前提条件、実装への労力、セキュリティと導入の統計などの一目でわかる情報を取得し、処理を進む前に結果と影響を理解するのに役立ちます。
 
@@ -68,4 +68,4 @@ Microsoft 365には、次の 2 つのセットアップ エクスペリエンス
 
 タスクを完了する準備ができたら、[開始] を **選択して構成** プロセスを実行します。 タスクを完了すると、[開始]**ボタンが**[管理] ボタンに変わります。必要に応じてタスクを管理できます。
 
-![一目でわかる情報を表示するタスク ビュー](../../media/o365b-at-a-glance.png)
+![一目でわかる情報を示すタスク ビュー。](../../media/o365b-at-a-glance.png)

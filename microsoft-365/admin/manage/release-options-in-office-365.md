@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: 新しい製品と機能の更新プログラムのリリース オプションを設定する方法については、Microsoft 365 管理センター。
-ms.openlocfilehash: c9a3478c15ad5505bae73b6821fc8ed9511f9b3e
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.openlocfilehash: df64bbac95f9d902ed83080e639544feb384fd72
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58346786"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566248"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>標準リリースオプションまたはターゲット リリース オプションを設定する
 
@@ -42,7 +42,7 @@ ms.locfileid: "58346786"
 
 すべての新しいリリースは、最初に機能チームによってテストされ、検証され、次に、Microsoft 365機能チーム全体が、その後に Microsoft のすべてによって検証されます。 内部テストと検証が終わったら、次の手順は参加しているお客様に向けた **対象指定リリース** (以前は先行リリースと呼ばれていました) です。 各リリース リングで、Microsoft はフィードバックを収集し、主要な利用状況メトリックを監視することでさらに品質を検証します。 この革新的な一連の検証は、全世界のリリースの信頼性を最大限に高めるためにあります。 各リリースを、次の図で示します。 
   
-![ユーザーの検証リングを解放Microsoft 365](../../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
+![ユーザーの検証リングをMicrosoft 365。](../../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
   
 重要な更新プログラムの場合、お客様は最初はロードマップによって[Microsoft 365されます](https://products.office.com/business/office-365-roadmap)。 更新プログラムが展開に近づくにつれて、メッセージ センターからMicrosoft 365[されます](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)。
 

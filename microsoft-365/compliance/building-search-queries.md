@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-mar2020
 description: キーワードと条件を使用して、データを検索する際に検索範囲を絞り込むには、Advanced eDiscoveryをMicrosoft 365。
-ms.openlocfilehash: cbb96e6ba58a5e7af6a3f8472ccfd10986cc698e510869b466784f24bb66e580
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 00a5ab1c009f0c006aba251c770c87c1f7569fc1
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53814797"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564196"
 ---
 # <a name="build-search-queries-for-collections-in-advanced-ediscovery"></a>データベース内のコレクションの検索クエリをAdvanced eDiscovery
 
 Advanced eDiscovery ケースでコレクションを作成するときに検索[](collections-overview.md)クエリを構成する場合、キーワードを使用して特定のコンテンツと条件を検索し、検索範囲を絞り込み、法的調査に最も関連のあるアイテムを返します。
 
-![キーワードと条件を使用して検索の結果を絞り込む](../media/SearchQueryBox.png)
+![検索の結果を絞り込むには、キーワードと条件を使用します。](../media/SearchQueryBox.png)
 
 ## <a name="keyword-searches"></a>キーワード検索
 
@@ -37,7 +37,7 @@ Advanced eDiscovery ケースでコレクションを作成するときに検索
 
 または、[キーワード 一 **覧を表示** する] チェック ボックスをオンにして、各行にキーワードまたはキーワード 語句を入力することもできます。 各行のキーワードは、作成された検索クエリの **OR** 演算子と同様の機能を持つ論理演算子 (検索クエリ構文では *c:s* として表されます) によって接続されます。 つまり、任意の行にキーワードを含むアイテムが検索結果に表示されます。 検索クエリでは、キーワード リストに最大 180 行Advanced eDiscoveryできます。
 
-![キーワード リストを使用して、クエリ内の各キーワードの統計情報を取得する](../media/KeywordListSearch.png)
+![キーワード リストを使用して、クエリ内の各キーワードの統計情報を取得します。](../media/KeywordListSearch.png)
 
 キーワード リストを使用する理由 キーワード リスト内の各キーワードに一致するアイテムの数を示す統計情報を取得できます。 これにより、最も効果的な (および最も少ない) キーワードをすばやく特定できます。 キーワード リストの行にキーワード 語句 (かっこで囲む) を使用できます。 検索統計の詳細については、「検索統計」 [を参照してください](search-statistics-in-advanced-ediscovery.md)。
 

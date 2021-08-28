@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: MailItemsAccessed メールボックス監査アクションを使用して、侵害されたユーザー アカウントのフォレンシック調査を実行します。
-ms.openlocfilehash: b168cc25afc1a21044d00eb2dece1cee4da5f9cb6b7c70ecea05874ad6fcefd4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b0fac6e4ac5d6cc4bb20b6853cb67cf301c6295a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53830787"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565998"
 ---
 # <a name="use-advanced-audit-to-investigate-compromised-accounts"></a>高度な監査を使用して、侵害されたアカウントを調査する
 
@@ -194,7 +194,7 @@ Search-MailboxAuditLog -Identity <user> -StartDate 01/06/2020 -EndDate 01/20/202
 
 たとえば、次のスクリーンショットに示されている監査レコードでは、EWSEditor と OWA から同時にメールにアクセスしていますが、アクセス アクティビティは、アクセスが発生したコンテキストに応じて異なる監査レコードで照合されます。この場合、コンテキストは ClientInfoString プロパティの異なる値によって定義されます。
 
-![コンテキストに基づいた異なる監査レコード](../media/MailItemsAccessed4.png)
+![コンテキストに基づいた異なる監査レコード。](../media/MailItemsAccessed4.png)
 
 前のスクリーンショットで示したコマンドの構文は、次の通りです。
 

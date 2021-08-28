@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 6b0957984d7391ac8a9303b1f412b89196b6345ae88db39206dc555e91507fef
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a031e60cbad91f71c55e678f03480b5d56c24efe
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53810212"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565638"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>SharePoint サイトおよびファイルをセキュリティで保護するためのポリシーの推奨事項
 
@@ -44,7 +44,7 @@ ms.locfileid: "53810212"
 
 次の図は、SharePointおよび OneDriveのファイルを保護するために、共通の ID およびデバイス アクセス ポリシーから更新するポリシーを示しています。
 
-[![サービスとその依存サービスへのアクセスを保護するためのTeamsの概要](../../media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png)
+[![サービスとその依存サービスへのアクセスを保護するためのTeamsの概要。](../../media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png)
 
 共通ポリシーをSharePointに追加した場合は、新しいポリシーのみを作成する必要があります。 条件付きアクセス ポリシーの場合、SharePointがOneDrive。
 
@@ -52,7 +52,7 @@ ms.locfileid: "53810212"
 
 次の表に、新しいポリシーを確認および更新または作成する必要があるポリシーを示SharePoint。 共通ポリシーは、「共通 ID とデバイス アクセス ポリシー」の記事に関連付けられた構成 [手順にリンク](identity-access-policies.md) します。
 
-|保護レベル|ポリシー|詳細|
+|保護レベル|ポリシー|詳細情報|
 |---|---|---|
 |**Baseline**|[サインイン リスクが中程度または高の場合に MFA *を* 要求 *する*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|クラウド SharePoint割り当てにアプリを含める。|
 ||[先進認証をサポートしないクライアントはブロックする](identity-access-policies.md#block-clients-that-dont-support-multi-factor)|クラウド SharePoint割り当てにアプリを含める。|
@@ -87,7 +87,7 @@ Microsoft では、デバイス アクセス制御を使用してSharePoint規�
 
 次の図は、デバイス アクセス ポリシーを使用SharePointサイトへのアクセスを保護する方法の例を示しています。
 
-[![デバイス アクセス ポリシー SharePoint保護する方法の例](../../media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png)
+[![デバイス アクセス ポリシー SharePoint保護する方法の例。](../../media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png)
 
 [このイメージのより大きなバージョンを表示する](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png)
 
@@ -99,7 +99,7 @@ James には基準となる条件付きアクセス ポリシーが割り当て�
 
 ## <a name="next-step"></a>次の手順
 
-![手順 4: クラウド アプリMicrosoft 365ポリシー](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+![手順 4: クラウド アプリMicrosoft 365ポリシー。](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 
 次の条件付きアクセス ポリシーを構成します。
 

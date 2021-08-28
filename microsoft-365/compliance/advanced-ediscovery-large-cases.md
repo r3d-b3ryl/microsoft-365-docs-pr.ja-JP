@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 大規模なケースを使用Advanced eDiscovery、アイテムを追加してセットを確認し、その他の制限を増やします。
-ms.openlocfilehash: 592b9d60a1275be0e12ddce238621d5ef02ab06e
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 43211dbeed7621de64d696e21fa647d5023350bb
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255863"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565486"
 ---
 # <a name="use-large-cases-in-advanced-ediscovery-preview"></a>大規模なケースを使用してAdvanced eDiscovery (プレビュー)
 
@@ -39,7 +39,7 @@ ms.locfileid: "58255863"
 
    [ **新しい電子情報開示ケース]** フライアウト ページが表示されます。 [ **ケース形式]** セクションでは、大きなケースを作成するオプションを提供します。 短時間で大量のコンテンツを収集する必要がある場合は、このケースの種類を選択します。
 
-   ![[新しい電子情報開示ケース] ページの大きなケース オプション](..\media\AeDLargeCases1.png)
+   ![[新しい電子情報開示ケース] ページの大きなケース オプション。](..\media\AeDLargeCases1.png)
 
 4. 大文字と小文字の名前を付けて[大きな大文字と小文字を区別 **する** ] オプションを選択し、[ **保存** ] をクリックして大きな大文字と小文字を作成します。
 
@@ -59,7 +59,7 @@ ms.locfileid: "58255863"
 
 さらに、新しい大きなケース形式には、ケース内の各レビュー セットの合計サイズを表示する更新されたユーザー インターフェイスが含まれています。 レビュー セットのサイズは、[レビュー セット] タブの列と、ケース内のすべてのタブを保持するフライアウト ウィンドウに表示されます。
 
-![ユーザー インターフェイスでの大Advanced eDiscovery統計](..\media\LargeCaseUI.png)
+![ユーザー インターフェイスでの大Advanced eDiscovery統計。](..\media\LargeCaseUI.png)
 
 ## <a name="known-issues"></a>既知の問題
 

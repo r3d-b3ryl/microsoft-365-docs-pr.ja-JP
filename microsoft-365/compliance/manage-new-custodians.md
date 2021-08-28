@@ -17,18 +17,18 @@ search.appverid:
 ms.assetid: ''
 description: 詳細を表示し、編集し、一括編集する方法については、Advanced eDiscoveryしてください。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: daf74c2e51d9a01fad97534a4e49068528e820054b147c09baf8d3b3a8099d45
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e542a76e55e0ed9d75a1756026ff9a4f8c1d59ac
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53879319"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567714"
 ---
 # <a name="manage-custodians-in-an-advanced-ediscovery-case"></a>管理ケースで保管担当者をAdvanced eDiscoveryする
 
 ケース内の [ソース]タブAdvanced eDiscoveryには、ケースに追加されたすべての保管担当者の一覧が表示されます。 カストディアンをケースに追加すると、各保管担当者に関する詳細が Azure Active Directory から自動的に収集され、Advanced eDiscovery。
 
-![保管担当者の管理](../media/CustodianDetails.PNG)
+![保管担当者を管理する。](../media/CustodianDetails.PNG)
 
 ## <a name="view-custodian-details"></a>保管担当者の詳細を表示する
 
@@ -83,7 +83,7 @@ ms.locfileid: "53879319"
   
 3. [カ **ストディアン] ページで** 、リストからカストディアンを選択し、フライアウト ページの **[編集** ] をクリックします。
 
-    ![データ ソースの編集](../media/EditCustodianDataSource.PNG)
+    ![データ ソースの編集。](../media/EditCustodianDataSource.PNG)
   
 4. [**データ ソースの選択**] タブをクリックして、保管担当者のメールボックスとアカウントのExchangeを変更OneDrive、[データ ソースの選択] を **クリックします**。
   
@@ -113,7 +113,7 @@ ms.locfileid: "53879319"
 
 保管担当者データの再インデックスは、長時間実行されるプロセスです。作成された対応するジョブの名前は、保管 **担当者データの再インデックス化です**。 [ジョブ] タブまたは[カストディアン]タブで進行状況を追跡するには、[インデックスジョブの状態] 列の状態 **を監視** します。
 
-詳細については、以下を参照してください。
+詳しくは、次のトピックを参照してください。
 
 - [処理中のエラーの操作](processing-data-for-case.md)
 
@@ -148,4 +148,4 @@ ms.locfileid: "53879319"
 
 一括エディターを使用して、複数の保管担当者を同時に編集できます。 これを行うには、[保管担当者] タブで 2つ以上のカストディアンを選択して、一括エディターを表示し、タスクの 1 つをクリックします。
 
-![複数の保管担当者の設定を編集するフライアウト ページ](../media/AeDBulkEditCustodians.png)
+![複数の保管担当者の設定を編集するフライアウト ページ。](../media/AeDBulkEditCustodians.png)

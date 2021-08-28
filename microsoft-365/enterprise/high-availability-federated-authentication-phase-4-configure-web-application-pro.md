@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
 description: '概要: 高可用性フェデレーション認証用に Web アプリケーション プロキシ サーバーを構成し、Microsoft 365をMicrosoft Azure。'
-ms.openlocfilehash: 9c67aa4b2c3583fe4e370fdc750a49d7088e0db2
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 17efeb414208afac9ce9dcb0b7136a4c962a0268
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354466"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565222"
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>高可用性フェデレーション認証のフェーズ 4: Web アプリケーション プロキシを構成する
 
@@ -156,7 +156,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
   
 **フェーズ 4:Azure での高可用性フェデレーション認証インフラストラクチャ用のインターネット接続ロード バランサーと Web アプリケーション プロキシ サーバー**
 
-![Azure のフェデレーション認証インフラストラクチャMicrosoft 365 Web アプリケーション プロキシ サーバーとの高可用性インフラストラクチャのフェーズ 4](../media/7e03183f-3b3b-4cbe-9028-89cc3f195a63.png)
+![Azure のフェデレーション認証インフラストラクチャMicrosoft 365 Web アプリケーション プロキシ サーバーとの高可用性のフェーズ 4。](../media/7e03183f-3b3b-4cbe-9028-89cc3f195a63.png)
   
 ## <a name="next-step"></a>次の手順
 

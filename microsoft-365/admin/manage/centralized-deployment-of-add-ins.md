@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: テナントとユーザーが要件を満たしていることを確認し、集中展開を使用してアドインを展開Officeします。
-ms.openlocfilehash: 98496ce57c57cbce10178cc2be99079d8733a0ca
-ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
+ms.openlocfilehash: 79acef4454428daba68d42b0161d060b7e28ee56
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58372510"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564395"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>組織でアドインの集中展開が機能するかどうかを判断する
 
@@ -136,18 +136,18 @@ Microsoft Exchangeは、組織のテナント内にアドイン マニフェス�
 
 次の例では、Sandra、Sheila、「営業部門」のグループがアドインに割り当てられています。「西海岸営業部門」は入れ子のグループのため、Bert と Fred はアドインに割り当てられていません。
 
-![営業部門の図](../../media/683094bb-1160-4cce-810d-26ef7264c592.png)
+![営業部門の図。](../../media/683094bb-1160-4cce-810d-26ef7264c592.png)
 
 
 ### <a name="find-out-if-a-group-contains-nested-groups"></a>グループにネストされたグループが含まれているかどうかを調べる
 
 グループにネストされたグループが含まれているかどうかを調べる最も簡単な方法は、Outlook 内のグループの連絡先カードを確認することです。 電子メールの **[To]** フィールドにグループ名を入力し、解決時にグループ名を選択すると、グループ名にユーザーまたは入れ子になったグループが含まれているかが表示されます。 次の例では、「テスト グループ」での Outlook 情報先カードの [ **メンバー**] タブには、ユーザーはなく、2 つのサブ グループのみが表示されています。
 
-![連絡先カードの [Outlook] タブ](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
+![連絡先カードの [Outlook] タブ。](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
 
 反対のクエリを実行できます。グループを解決して、任意のグループのユーザーがいないかどうかを表示します。次の例では、「サブ グループ 1」が「テスト グループ」のメンバーである Outlook 情報先カードの [ **メンバーシップ**] タブの下に表示されます。
 
-![連絡先カードの [Outlook] タブ](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
+![連絡先カードの [Outlook] タブ。](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
 
 または、Azure Active Directory Graph API でクエリを実行して、グループ内でのグループ一覧を見つけます。詳細については、「[Operations on groups | Graph API reference (グループに対する操作 | Graph API リファレンス)](/previous-versions/azure/ad/graph/api/groups-operations)」を参照してください。
 

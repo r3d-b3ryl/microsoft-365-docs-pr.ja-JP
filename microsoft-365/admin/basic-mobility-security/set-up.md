@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: デバイスをリモートでワイプするなどのアクションを実行して、ユーザーのモバイル デバイスをセキュリティで保護および管理するための基本モビリティとセキュリティを設定します。
-ms.openlocfilehash: 9068594bdc4049336e87e3ed87ede9c4277f83fb0921d84b0b66099701aad91e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 47f2f393c3d7147bb1444e8cad32d2d6a0d31133
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826788"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564431"
 ---
 # <a name="set-up-basic-mobility-and-security"></a>基本的なモビリティとセキュリティの設定
 
@@ -107,7 +107,7 @@ MFA を設定した後、セキュリティ & コンプライアンス センタ
 
 3. [デバイス ポリシー **] に移動します**。
 
-   :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="基本的なセキュリティポリシーとモビリティ ポリシー設定":::
+   :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="基本的なセキュリティポリシーとモビリティ ポリシー設定。":::
 
 4. 「Basic Mobility and Security でのデバイス セキュリティ ポリシーの作成」の手順に従って、組織に適したデバイス セキュリティ ポリシーを作成して [展開します](create-device-security-policies.md)。
 

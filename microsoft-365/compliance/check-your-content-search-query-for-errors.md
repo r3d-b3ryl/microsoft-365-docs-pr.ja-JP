@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
 ms.custom: seo-marvel-apr2020
 description: 検索を実行する前に、電子情報開示検索のキーワード クエリでエラーと入力ミスを検出する方法について説明します。
-ms.openlocfilehash: 0f1e319c9ae3e332e58645d9ff1703062975a714278ab3322cdb156b6c62badf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b99f7c3df052cf41543ab57c92eb6326c6d814d8
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53886885"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564184"
 ---
 # <a name="check-your-search-query-for-errors"></a>検索クエリでエラーを確認する
   
@@ -41,7 +41,7 @@ ms.locfileid: "53886885"
 
 前のスクリーンショットで検索クエリの入力ミスのクエリを確認するをクリックした後に表示される警告メッセージの例を次に示します。 元のクエリでスマート引用符と小文字のブール演算子を使用した点に注意してください。
   
-![クエリの修正候補と一緒に警告メッセージが表示される](../media/23214b30-8e52-412c-bd80-63fb1b3ed52d.png)
+![警告メッセージが表示され、クエリの修正候補が表示されます。](../media/23214b30-8e52-412c-bd80-63fb1b3ed52d.png)
   
 ## <a name="how-to-prevent-unsupported-characters-in-your-search-queries"></a>検索クエリでサポートされていない文字を防ぐ方法
 

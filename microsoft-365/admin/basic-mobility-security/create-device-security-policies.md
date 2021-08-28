@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Basic Mobility and Security を使用して、組織情報を保護するデバイス ポリシーを作成します。
-ms.openlocfilehash: 8c6731b6f206b8c30f0d2abfa0d61d251658c3401ab37042a1b6ba31f0df00c4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9792a936f2f209eabb4da9ce725e611ef3766526
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827004"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564516"
 ---
 # <a name="create-device-security-policies-in-basic-mobility-and-security"></a>Basic Mobility and Security でデバイス セキュリティ ポリシーを作成する
 
@@ -51,7 +51,7 @@ Basic Mobility and Security を使用すると、承認されていないアク�
 
 2. [**ポリシーの作成**] を選択します。
 
-   :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="モビリティとセキュリティの基本ポリシー設定":::
+   :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="モビリティポリシーとセキュリティポリシーの基本設定。":::
 
 3. [ポリシー **設定] ページ** で、組織内のモバイル デバイスに適用する要件を指定します。
 
@@ -94,7 +94,7 @@ Basic Mobility and Security を使用すると、承認されていないアク�
 2. [組織 **全体のデバイス アクセス設定の管理] を選択します**。
 3. サポートされていないデバイスをブロックするには、[デバイスが Basic Mobility and Security for Microsoft 365でサポートされていない場合] で [ブロック] を **選択し、[** 保存] を **選択します**。
 
-   :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="Basic Mobility and Security block access option":::
+   :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="Basic Mobility and Security block access option.":::
 
 ## <a name="step-5-choose-security-groups-to-be-excluded-from-conditional-access-checks"></a>手順 5: 条件付きアクセスチェックから除外するセキュリティ グループを選択する
 
@@ -104,7 +104,7 @@ Basic Mobility and Security を使用すると、承認されていないアク�
 
 2. [組織 **全体のデバイス アクセス設定の管理] を選択します**。
 
-   :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Basic Mobility and Security create a policy option":::
+   :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Basic Mobility and Security は、ポリシー オプションを作成します。":::
 
 3. [**追加]** を選択して、アクセスをブロックするユーザーを含むセキュリティ グループを追加Microsoft 365。 ユーザーがこのリストに追加された場合、サポートされていないデバイスを使用Microsoft 365メールにアクセスできます。
 
@@ -114,7 +114,7 @@ Basic Mobility and Security を使用すると、承認されていないアク�
 
 6. [組織全体 **のデバイス アクセス設定] パネルで、[** 保存] を **選択します**。
 
-   :::image type="content" source="../../media/basic-mobility-security/bms-8-allow-access.png" alt-text="Basic Mobility and Security allow access option":::
+   :::image type="content" source="../../media/basic-mobility-security/bms-8-allow-access.png" alt-text="Basic Mobility and Security allow access option.":::
 
 ## <a name="what-is-the-impact-of-security-policies-on-different-device-types"></a>セキュリティ ポリシーが異なるデバイスの種類に与える影響は何ですか?
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 47a7471aa5f42ca548b994a5f979dd526219e89e45b6ad522896c6c856b66a20
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a7ee836cc40c7960c7963867484056b5a506241b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884311"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566700"
 ---
 # <a name="respond-to-web-threats"></a>Web の脅威への対応
 
@@ -49,7 +49,7 @@ Microsoft Defender for Endpoint は、悪意のある Web アクティビティ�
 - カスタム インジケーター リスト内の悪意のある URL または URL
 - レスポンダーに推奨されるアクション
 
-![Web 脅威保護に関連するアラートのイメージ](images/wtp-alert.png)
+![Web 脅威保護に関連するアラートのイメージ。](images/wtp-alert.png)
 
 > [!NOTE]
 > Microsoft Defender for Endpoint は、アラートの量を減らすために、同じデバイス上の同じドメインの Web 脅威検出を毎日 1 つのアラートに統合します。 1 つのアラートだけが生成され [、Web 保護レポートにカウントされます](web-protection-monitoring.md)。
@@ -62,7 +62,7 @@ Microsoft Defender for Endpoint は、悪意のある Web アクティビティ�
 - Web サイトに関連するインシデントとアラート
 - 組織のイベントで Web サイトが表示された頻度
 
-    ![ドメインまたは URL エンティティの詳細ページのイメージ](images/wtp-website-details.png)
+    ![ドメインまたは URL エンティティの詳細ページのイメージ。](images/wtp-website-details.png)
 
 [URL またはドメイン エンティティ ページの詳細](investigate-domain.md)
 
@@ -76,13 +76,13 @@ Microsoft Defender for Endpoint は、悪意のある Web アクティビティ�
 
 Microsoft Defender for Endpoint の Web 保護を使用すると、エンド ユーザーが悪意のある Web サイトや望ましくない web サイトにアクセスする場合、Microsoft Edgeブラウザーを使用してアクセスできません。 ブロックはネットワーク保護によって実行されます [の](network-protection.md)で、Web ブラウザーから一般的なエラーが表示されます。 また、ユーザーからの通知も表示Windows。
 
-![403 Microsoft Edgeを示すエラーの画像と、Windowsでブロックされた通知 Web の脅威 ](images/wtp-browser-blocking-page.png)
- *Microsoft Edge*
+![403 エラー Microsoft Edge通知を示す画像Windowsです。 ](images/wtp-browser-blocking-page.png)
+*Web の脅威がブロックMicrosoft Edge*
 
-![Chrome でセキュリティで保護された接続の警告とブロックされた通知 Web Windowsを示す ](images/wtp-chrome-browser-blocking-page.png)
- *Chrome Web ブラウザーの画像*
+![セキュリティで保護された接続の警告とセキュリティで保護された通知を示す Chrome Windows画像。 ](images/wtp-chrome-browser-blocking-page.png)
+*Chrome でブロックされた Web の脅威*
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [Web 保護の概要](web-protection-overview.md)
 - [Web コンテンツ フィルタリング](web-content-filtering.md)

@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Windows PowerShell を使用して、組織内の基本的なモビリティおよびセキュリティ デバイスの詳細を取得します。
-ms.openlocfilehash: 1d34f1b1dbb96227affffd31d794b7d0244298e25e3080ea08dcd3380399db4d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 231eeb87d3f72ca4107c0ee6bef5bd60c713bb3f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826812"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564467"
 ---
 # <a name="get-details-about-basic-mobility-and-security-managed-devices"></a>基本的なモビリティとセキュリティの管理対象デバイスに関する詳細を取得する
 
@@ -36,7 +36,7 @@ ms.locfileid: "53826812"
 |デバイスは基本的なモビリティとセキュリティに登録されています。 詳細については、「[基本的なモビリティとセキュリティを使用してモバイル デバイスを登録する](enroll-your-mobile-device.md)」を参照してください。| *isManaged*  パラメーターの値: <br/>**True** = デバイスは登録されています。<br/>**False** = デバイスは登録されていません。 |
 |デバイスはデバイス セキュリティ ポリシーに準拠しているかどうか 詳細については、「[デバイス セキュリティ ポリシーの作成](create-device-security-policies.md)」を参照してください。| *isCompliant*  パラメーターの値: <br/>**True**  = デバイスはポリシーに準拠しています。<br/>**False**  = デバイスはポリシーに準拠していません。|
 
-:::image type="content" source="../../media/basic-mobility-security/bms-7-powershell-parameters.png" alt-text="基本的なモビリティとセキュリティの PowerShell パラメーター":::
+:::image type="content" source="../../media/basic-mobility-security/bms-7-powershell-parameters.png" alt-text="基本的なモビリティとセキュリティの PowerShell パラメーター。":::
 
 > [!NOTE]
 > この記事のコマンドとスクリプトでは、 [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune) で管理されるデバイスに関する詳細情報も返されます。

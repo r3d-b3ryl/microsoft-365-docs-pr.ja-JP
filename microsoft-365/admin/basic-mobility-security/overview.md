@@ -19,18 +19,18 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本モビリティとセキュリティを使用して、デバイス のセキュリティ ポリシーとアクセス ルールを設定します。
-ms.openlocfilehash: 6ae42b9d7515e027e826fe7735a63b23ffd0eff04cb37995d28c60c9dddfada1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a5fe6c4d6350871a2c7013d1de3df8b2911ceca1
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826848"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565626"
 ---
 # <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>基本モビリティとセキュリティの概要 (Microsoft 365
 
 モバイル デバイスが組織に接続されている場合は、Basic Mobility and Security をMicrosoft 365して、モバイル デバイスを管理および保護できます。 スマートフォンやタブレットなどのモバイル デバイスを使用して仕事の電子メール、予定表、連絡先、ドキュメントにアクセスすることは、社員が自分たちの仕事をいつでも、どこからでも確実に行ううえで大きな役割を果たします。 そのため、ユーザーがデバイスを使用するときに組織の情報を保護する際に役立つ必要があります。 Basic Mobility and Security を使用すると、デバイスのセキュリティ ポリシーとアクセス ルールを設定したり、モバイル デバイスが紛失したり盗まれたりした場合にモバイル デバイスをワイプできます。
 
-:::image type="content" source="../../media/basic-mobility-security/bms-3-setup.png" alt-text="基本的なモビリティとセキュリティのセットアップ":::
+:::image type="content" source="../../media/basic-mobility-security/bms-3-setup.png" alt-text="基本的なモビリティとセキュリティのセットアップ。":::
 
 ## <a name="what-types-of-devices-can-you-manage"></a>管理できるデバイスの種類
 
@@ -50,7 +50,7 @@ Basic Mobility and Security を使用すると、さまざまな種類のモバ�
 
 **手順 3:** デバイス ポリシーを作成し、ユーザーのグループに適用します。 この操作を行う場合、ユーザーは自分のデバイスで登録メッセージを受け取り、登録が完了すると、デバイスは設定したポリシーによって制限されます。 詳細については、「Basic [Mobility and Security を使用してモバイル デバイスを登録する」を参照してください](enroll-your-mobile-device.md)。 
 
-:::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="基本的なセキュリティポリシーとモビリティ ポリシー設定":::
+:::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="基本的なセキュリティポリシーとモビリティ ポリシー設定。":::
 
 ## <a name="device-management-tasks"></a>デバイス管理タスク
 

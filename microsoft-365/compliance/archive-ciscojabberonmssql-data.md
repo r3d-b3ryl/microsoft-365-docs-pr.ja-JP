@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、Ms 上の Cisco Jabber をインポートおよびアーカイブするコネクタをセットアップし、SQL で Veritas からデータをMicrosoft 365。 このコネクタを使用すると、サードパーティのデータ ソースからデータをアーカイブできます。Microsoft 365。 このデータをアーカイブした後、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、サードパーティのデータを管理できます。
-ms.openlocfilehash: efe624c7c3d8ac7d4d066f3a1cc055bd60550ed0ce740d5eb62a3fccaf39b5a3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a34bf267373e09f94c28bba243fb39d2ba932baf
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53861178"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565454"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-jabber-on-ms-sql-data"></a>MS データで Cisco Jabber をアーカイブするコネクタをSQLする
 
@@ -29,7 +29,7 @@ Cisco Jabber データをユーザー メールボックスに格納した後、
 
 次の概要では、コネクタを使用して、Ms 上の Cisco Jabber をアーカイブし、SQLデータをアーカイブMicrosoft 365。
 
-![Cisco Jabber データのアーカイブ ワークフロー](../media/CiscoJabberonMSSQLConnectorWorkflow.png)
+![Cisco Jabber データのアーカイブ ワークフロー。](../media/CiscoJabberonMSSQLConnectorWorkflow.png)
 
 1. 組織は、Cisco と一緒に MS サーバーで Cisco Jabber をセットアップおよび構成SQL Database。
 

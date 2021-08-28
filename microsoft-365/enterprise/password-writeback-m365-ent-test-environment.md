@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: '概要: Microsoft 365 テスト環境用のパスワードの書き戻しを構成する。'
-ms.openlocfilehash: 7ad01942b0da7858895d58ecd3bf5c83207e88b9
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 5bb1307888948e46a07068a2493591ff9b4dc96f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356218"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565858"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Microsoft 365 テスト環境のパスワードの書き戻し
 
@@ -37,7 +37,7 @@ ms.locfileid: "58356218"
 - [フェーズ 1: Microsoft 365 テスト環境のパスワード ハッシュ同期を構成する](#phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment)
 - [フェーズ 2: TESTLAB AD DS ドメイン へのパスワードの書き戻しを有効にする。](#phase-2-enable-password-writeback-for-the-testlab-ad-ds-domain)
   
-![Microsoft クラウドのテスト ラボ ガイド](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Microsoft クラウドのテスト ラボ ガイド。](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > エンタープライズ テスト ラボ ガイド スタックの Microsoft 365 内のすべての記事への視覚的なマップについては、「Microsoft 365 テスト ラボ ガイド スタック」[を参照してください](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
@@ -46,7 +46,7 @@ ms.locfileid: "58356218"
 
 最初に、パスワード ハッシュ同期の手順 [に従います](password-hash-sync-m365-ent-test-environment.md)。 結果の構成は次のように表示されます。
   
-![パスワード ハッシュ同期を実装するシミュレーション エンタープライズ テスト環境](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
+![パスワード ハッシュ同期テスト環境を持つシミュレートされたエンタープライズ。](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
   
 この構成は、次の内容で成立します。
   
@@ -123,7 +123,7 @@ ms.locfileid: "58356218"
 
 結果の構成は次のように表示されます。
 
-![パススルー認証を実装するシミュレーション エンタープライズ テスト環境](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
+![パススルー認証テスト環境を持つシミュレートされたエンタープライズ。](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
 
 この構成は、次の内容で成立します。
 

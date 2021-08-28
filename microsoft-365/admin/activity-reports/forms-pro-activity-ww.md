@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Dynamics 365 Customer Voice アクティビティ レポートを取得する方法については、Microsoft 365 の [レポート] ダッシュボードを使用Microsoft 365 管理センター。
-ms.openlocfilehash: 3b7e326a8661523865235880b0d0affd98c8836f531908943670caab0ad4fec4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6c66b4fcee0d2f04e3178ede8360b87ad1abe597
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53797974"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565038"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---dynamics-365-customer-voice-activity"></a>Microsoft 365管理センターのレポート - Dynamics 365 Customer Voice アクティビティ
 
@@ -45,7 +45,7 @@ Microsoft 365 の [**レポート**] ダッシュボードには、組織内で�
 
 [アクティビティ] タブを選択すると、Dynamics 365 Customer Voice レポートでアクティビティを **表示** できます。<br/>![Microsoft 365レポート - Microsoft Dynamics 365 Customer Voice アクティビティ レポート。](../../media/a7e57d18-1ac8-4d4b-bd70-83361505dc3e.png)
 
-[列 **の選択]** を選択して、レポートの列を追加または削除します。  <br/> ![Dynamics 365 Customer Voice アクティビティ レポート - 列の選択](../../media/5ab66f4b-32eb-4c9b-9683-1157ae9e2c0a.png)
+[列 **の選択]** を選択して、レポートの列を追加または削除します。  <br/> ![Dynamics 365 Customer Voice アクティビティ レポート - 列を選択します。](../../media/5ab66f4b-32eb-4c9b-9683-1157ae9e2c0a.png)
 
 また、[**エクスポート**] リンクを選択して、レポート データを Excel の .csv ファイルにエクスポートすることもできます。 これにより、すべてのユーザーのデータがエクスポートされ、単純な並べ替えとフィルター処理を行ってさらに分析することができます。 ユーザー数が 2000 未満である場合は、レポート自体のテーブル内で並べ替えとフィルター処理を行うことができます。 ユーザー数が 2000 を超える場合は、フィルター処理と並べ替えを行うために、データをエクスポートする必要があります。 
   

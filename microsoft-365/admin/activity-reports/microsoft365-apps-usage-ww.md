@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: '[レポート] ダッシュボードの [Microsoft 365 Apps] ダッシュボードを使用して使用状況レポートMicrosoft 365を取得する方法についてMicrosoft 365 管理センター。'
-ms.openlocfilehash: 58fe420f13bcd41bceaea9605d9ced2c539c8857e56335ebfff8fcef672fd222
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5e604ba21e7653cbef9e4fa7eccedc24f775128b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53797667"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564944"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-apps-usage"></a>Microsoft 365管理センターのレポート - Microsoft 365 Apps使用状況
 
@@ -45,7 +45,7 @@ Microsoft 365 の [**レポート**] ダッシュボードには、組織内で�
 ユーザーとプラットフォームのグラフを見Microsoft 365 Apps、ユーザーのアクティビティ **を****確認** できます。
 
 > [!div class="mx-imgBorder"]
-> ![Microsoft 365 Apps使用状況レポート](../../media/0bcf67e6-a6e4-4109-a215-369f9f20ad84.png)
+> ![Microsoft 365 Appsレポート。](../../media/0bcf67e6-a6e4-4109-a215-369f9f20ad84.png)
 
 |アイテム|説明|
  |:-----|:-----|

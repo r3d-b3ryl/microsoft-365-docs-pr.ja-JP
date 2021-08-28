@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: この記事では、ポータル起動スケジューラを使用してポータルを起動する方法について説明します。
-ms.openlocfilehash: 5dde70565cd9a5ca7812f84d0c62c39c9844ba42
-ms.sourcegitcommit: fac7b4b0095254c87b2a341fa2d53a42193f8957
+ms.openlocfilehash: 4bdc9a1d60423a7541c2f5c26cc544df59a271e5
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "58417989"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565256"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>ポータル起動スケジューラを使用してSharePointを起動する
 
@@ -75,15 +75,15 @@ ms.locfileid: "58417989"
 
    **オプション 1:** ホーム ページへの変更を編集して再発行する最初の数回 (またはホーム ページ バージョン 3.0 まで) は、ポータル起動スケジューラ ツールの使用を求めるメッセージが表示されます。 [起動 **のスケジュール] を** 選択して、スケジュールを進め続けろ。 または、[ **再公開] を選択** して、起動をスケジュールせずにページの編集内容を再発行します。
 
-   ![ホーム ページの再発行時にポータル起動スケジューラを使用するプロンプトのイメージ](../media/portal-launch-republish-2.png)
+   ![ホーム ページを再発行するときにポータル起動スケジューラを使用するプロンプトのイメージ。](../media/portal-launch-republish-2.png)
 
    **オプション 2:** いつでも、SharePoint コミュニケーション サイトのホーム ページに移動し **、[設定]** を選択し、[サイトの起動をスケジュールしてポータルの起動をスケジュールする] を選択できます。
 
-   ![[サイトの起動を設定する] ウィンドウのイメージが強調表示されている](../media/portal-launch-settings-2.png)
+   ![[サイトの起動設定スケジュールする] が強調表示された [ページ] ウィンドウのイメージ。](../media/portal-launch-settings-2.png)
 
 3. 次に、ポータルが正常なスコアを受け取るまで [、SharePoint](https://aka.ms/perftool)ツールのページ診断ツールを使用して、ポータルの正常性スコアを確認し、必要に応じてポータルを **改善** します。 さらに **[次へ]** を選択します。
 
-   ![ポータル起動スケジューラ ツールのイメージ](../media/portal-launch-panel-2.png)
+   ![ポータル起動スケジューラ ツールのイメージ。](../media/portal-launch-panel-2.png)
 
    > [!NOTE]
    > サイト名と説明をポータル起動スケジューラから編集することはできません。代わりに、ホーム ページから [設定] を選択し、[サイト情報] を選択して変更できます。
@@ -166,7 +166,7 @@ ms.locfileid: "58417989"
 
 2. 次に、[ **削除] を選択** し、下にメッセージが表示された場合は、[削除] を再度 **選択** します。
 
-   ![スケジュールされた起動を削除または保持する必要がある場合に表示されるプロンプトの画像](../media/portal-launch-delete-2.png)
+   ![スケジュールされた起動を削除または保持する必要がある場合に表示されるプロンプトの画像。](../media/portal-launch-delete-2.png)
 
 ## <a name="use-the-powershell-portal-launch-scheduler"></a>PowerShell Portal 起動スケジューラを使用する
 

@@ -20,12 +20,12 @@ ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 ms.custom:
 - seo-marvel-apr2020
 description: 削除されたメールボックスの内容を保持するには、削除されたメールボックスの非アクティブなメールボックス機能を使用Microsoft 365。
-ms.openlocfilehash: 6f533cf213f28d42dee1bb470cefaa2ced186778
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: f0e95d5853580116db6f7c48396e601058e303e3
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58503169"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567774"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>非アクティブなメールボックスを作成および管理する
 
@@ -84,9 +84,9 @@ Microsoft 365 では、削除済みメールボックスのコンテンツを保
 
 4. 非アクティブなメールボックスを選択して、非アクティブなメールボックスに関する情報を含むフライアウト ページを表示します。
 
-   ![[フライアウト] ページには、非アクティブなメールボックスに関する詳細が表示されます。](../media/MCCInactiveMailboxes2.png)  
+   ![フライアウト ページには、非アクティブなメールボックスに関する詳細が表示されます。](../media/MCCInactiveMailboxes2.png)  
 
-![[検索結果のエクスポート] アイコン](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png)、**[エクスポート]** の順にクリックして、組織の非アクティブなメールボックスに関する追加の情報を含む、CSV ファイルを表示またはダウンロードできます。 
+[検索結果のエクスポート ![ ] アイコンをクリックできます。](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **エクスポート** して、組織内の非アクティブなメールボックスに関する追加情報を含む CSV ファイルを表示またはダウンロードします。
 
 または、Exchange Online PowerShell で次のコマンドを実行して、非アクティブなメールボックスの一覧を表示します。
 

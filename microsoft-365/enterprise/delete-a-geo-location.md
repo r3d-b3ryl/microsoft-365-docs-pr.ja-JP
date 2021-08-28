@@ -13,12 +13,12 @@ ms.custom: seo-marvel-mar2020
 ms.collection: Strat_SP_gtc
 localization_priority: Normal
 description: Office 365 Multi-Geo でサテライトの場所を削除する方法を説明します。 サテライトの場所を削除すると、すべてのユーザー データも完全に削除されます。
-ms.openlocfilehash: 8cd15ec7b0165bcedbfc995542a00f4e230ee5f204b0ce1748b2a91a28664419
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 749b48528b113a836be6b4e5ee59895bc3816992
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864790"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565936"
 ---
 # <a name="delete-a-satellite-location-in-microsoft-365-multi-geo"></a>Office 365 Multi-Geo でサテライトの場所を削除する
 
@@ -29,7 +29,7 @@ ms.locfileid: "53864790"
 
 サテライトの場所はグローバル管理者のみが削除できます。
 
-![地理的位置の削除の UI を表示する Multi-Geo 管理センターのスクリーンショット](../media/multi-geo-delete-satellite-location.png)
+![削除地域の場所 UI を示す複数地域管理センターのスクリーンショット。](../media/multi-geo-delete-satellite-location.png)
 
 サテライトの場所を削除するには
 

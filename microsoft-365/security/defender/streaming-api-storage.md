@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0817778d5b006cb0c08cda4a4b63063f06644ef6ffdb68547848d038197c853d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2a336a571c33820d289eed9d4d6cd20e56cdfa20
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53792766"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563804"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-storage-account"></a>高度Microsoft 365 Defenderイベントを自分のアカウントにストリーミングするStorage構成する
 
@@ -52,7 +52,7 @@ ms.locfileid: "53792766"
    2. [イベント **を転送する] をAzure Storage** します。
    3. 表示される **[Storage リソース ID]** ボックスに、アカウント リソース ID Storage **入力します**。 アカウント リソース ID をStorageするには、Azure portal を開き、[Storage アカウント] をクリックして、[プロパティ] タブに移動し、[アカウント リソース **ID]** の下Storage <https://portal.azure.com>  \> \> **コピーします**。
 
-      ![イベント ハブ リソース ID1 のイメージ](../defender-endpoint/images/storage-account-resource-id.png)
+      ![イベント ハブ リソース ID1 のイメージ。](../defender-endpoint/images/storage-account-resource-id.png)
 
    4. [新しい **ストリーミング API 設定の追加] フライアウトに** 戻り、ストリーミング **するイベント** の種類を選択します。
 
@@ -62,7 +62,7 @@ ms.locfileid: "53792766"
 
 - BLOB コンテナーは、イベントの種類ごとに作成されます。
 
-  ![イベント ハブ リソース ID2 のイメージ](../defender-endpoint/images/storage-account-event-schema.png)
+  ![イベント ハブ リソース ID2 のイメージ。](../defender-endpoint/images/storage-account-event-schema.png)
 
 - BLOB 内の各行のスキーマは、次の JSON です。
 
@@ -97,9 +97,9 @@ ms.locfileid: "53792766"
 
 - デバイス情報イベントの例を次に示します。
 
-  ![イベント ハブ リソース ID3 のイメージ](../defender-endpoint/images/machine-info-datatype-example.png)
+  ![イベント ハブ リソース ID3 のイメージ。](../defender-endpoint/images/machine-info-datatype-example.png)
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [高度なハンティングの概要](../defender/advanced-hunting-overview.md)
 - [Microsoft 365 Defenderストリーミング API](streaming-api.md)

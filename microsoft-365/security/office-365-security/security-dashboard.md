@@ -19,12 +19,12 @@ ms.custom:
 description: 新しいセキュリティ ダッシュボードを使用して、脅威Office 365状態を確認し、セキュリティアラートを表示して処理します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 95f0a804491e8f2fe4963379efd68873336966f164fda9692ca289d4bc60253b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3f945a75f8b15b55c999da95410a6078a48c540e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56881951"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563732"
 ---
 # <a name="security-dashboard-in-the-security--compliance-center"></a>セキュリティ 管理コンプライアンス センター&ダッシュボード
 
@@ -50,7 +50,7 @@ ms.locfileid: "56881951"
 
 脅威管理の概要ウィジェットは、組織が過去 7 日間の脅威から保護された方法を一目で示します。
 
-![セキュリティ ダッシュボード - 脅威管理の概要ウィジェット](../../media/SecDash-ThreatMgmtSummary.png)
+![セキュリティ ダッシュボード - 脅威管理の概要ウィジェット。](../../media/SecDash-ThreatMgmtSummary.png)
 
 脅威管理の概要に表示される情報は、サブスクリプションに含まれる内容によって異なります。 次の表に、ユーザーおよびユーザーに含まれる情報Office 365 E3示Office 365 E5。
 
@@ -69,7 +69,7 @@ ms.locfileid: "56881951"
 
 脅威保護の状態ウィジェットは、フィッシングとマルウェアの傾向と詳細なビューで脅威保護の有効性を示します。
 
-![脅威保護状態ウィジェット](../../media/tpswidget.png)
+![脅威保護状態ウィジェット。](../../media/tpswidget.png)
 
 詳細は、Microsoft Defender のMicrosoft 365のMicrosoft 365 [](exchange-online-protection-overview.md) (EOP) Exchange Online Protectionが含まれるかどうか[によって異Office 365。](defender-for-office-365.md)
 
@@ -89,7 +89,7 @@ ms.locfileid: "56881951"
 
 グローバル週間脅威検出ウィジェットは、過去 7 日間に電子メール メッセージで検出された脅威の数を示します。
 
-![グローバル週間脅威検出ウィジェット](../../media/globalweeklythreatdetections.png)
+![グローバル週間脅威検出ウィジェット。](../../media/globalweeklythreatdetections.png)
 
 メトリックは、次の表で説明するように計算されます。
 
@@ -109,13 +109,13 @@ ms.locfileid: "56881951"
 
 マルウェア ウィジェットには、過去 7 日間のマルウェアの傾向とマルウェア ファミリの種類に関する詳細が表示されます。
 
-![マルウェアの傾向とファミリの種類](../../media/malwarewidgetatpe5.png)
+![マルウェアの傾向とファミリの種類。](../../media/malwarewidgetatpe5.png)
 
-## <a name="insights"></a>分析情報
+## <a name="insights"></a>インサイト
 
 インサイト重要な問題だけでなく、検討すべき推奨事項やアクションも含まれます。
 
-![スマートな分析情報](../../media/smartinsights.png)
+![スマートな分析情報。](../../media/smartinsights.png)
 
 たとえば、一部のユーザーが迷惑メール オプションを無効にしたため、フィッシングメール メッセージが配信されている場合があります。 分析情報の動作の詳細については、「Security &コンプライアンス センター」 [を参照してください](reports-and-insights-in-security-and-compliance.md)。
 
@@ -129,7 +129,7 @@ ms.locfileid: "56881951"
 
 セキュリティ ダッシュボードの下部に [傾向] セクションがあります。組織のメール フローの傾向を要約します。 レポートは、スパム、マルウェア、フィッシング詐欺、および優れたメールとして分類された電子メールに関する情報を提供します。 タイルをクリックすると、レポートの詳細情報が表示されます。
 
-![[傾向] セクションでは、組織の電子メール フローの傾向を要約します。](../../media/trends.png)
+![[傾向] セクションでは、組織のメール フローの傾向を要約します。](../../media/trends.png)
 
 また、組織のサブスクリプションに defender [for Office 365 Plan 2](office-365-ti.md)が含まれる場合は、セキュリティ チームが優先度の高いセキュリティ アラートを表示してアクションを実行できる[最近の脅威管理アラート] レポートもこのセクションに表示されます。
 

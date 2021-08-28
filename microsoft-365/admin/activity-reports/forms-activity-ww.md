@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: '[レポート] ダッシュボードの [レポート] ダッシュボードを使用して Microsoft Forms アクティビティ Microsoft 365を取得する方法Microsoft 365 管理センター。'
-ms.openlocfilehash: 312a1abe940d75a04760c757ed787f4e6d1a6e2fad6668753fc76d89d8247a09
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 59c7233a1622d0bf3ceaebd9adafb5c243d7008d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53798112"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565050"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>Microsoft 365管理センターのレポート - フォーム アクティビティ
 
@@ -45,7 +45,7 @@ Microsoft 365 の [**レポート**] ダッシュボードには、組織内で�
 
 [アクティビティ] タブを選択すると、フォーム レポートでアクティビティ **を表示** できます。<br/>![Microsoft 365レポート - Microsoft Forms アクティビティ レポート。](../../media/275fb0a1-b9d9-4233-8aaf-e7df73cc705f.png)
 
-[列 **の選択]** を選択して、レポートの列を追加または削除します。  <br/> ![フォーム アクティビティ レポート - 列の選択](../../media/0c9b0b69-5dc7-43ea-8e2c-54407b6ce2ab.png)
+[列 **の選択]** を選択して、レポートの列を追加または削除します。  <br/> ![フォーム アクティビティ レポート - 列を選択します。](../../media/0c9b0b69-5dc7-43ea-8e2c-54407b6ce2ab.png)
 
 また、[**エクスポート**] リンクを選択して、レポート データを Excel の .csv ファイルにエクスポートすることもできます。 これにより、すべてのユーザーのデータがエクスポートされ、単純な並べ替えとフィルター処理を行ってさらに分析することができます。 ユーザー数が 2000 未満である場合は、レポート自体のテーブル内で並べ替えとフィルター処理を行うことができます。 ユーザー数が 2000 を超える場合は、フィルター処理と並べ替えを行うために、データをエクスポートする必要があります。 
   

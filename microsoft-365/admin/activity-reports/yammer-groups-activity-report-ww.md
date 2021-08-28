@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 組織でYammer使用されているグループの数と、そのアクティビティYammerグループアクティビティ レポートを取得します。
-ms.openlocfilehash: ee547e6da465cd36d62f62043c9364350352bc5a6b19da631a9e56071ef9d679
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 18ed4519a0f7859d8084f2144a58f4a726db530a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53816163"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564748"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-groups-activity-report"></a>Microsoft 365管理センターのレポート - Yammerアクティビティ レポート
 
@@ -44,7 +44,7 @@ Microsoft 365 の [**レポート**] ダッシュボードには、組織内で�
 
 [グループ アクティビティ] タブを選択すると、Yammerレポートでグループ アクティビティ **を表示** できます。<br/>![Microsoft 365レポート - Microsoft Yammerアクティビティ レポート。](../../media/3afdafe5-9269-402e-8264-c7695ceb227d.png)
 
-[列 **の選択]** を選択して、レポートの列を追加または削除します。  <br/> ![Yammerアクティビティ レポート - 列の選択](../../media/54744932-34fe-48c3-9779-1d10c3f05be1.png)
+[列 **の選択]** を選択して、レポートの列を追加または削除します。  <br/> ![Yammerアクティビティ レポート - 列を選択します。](../../media/54744932-34fe-48c3-9779-1d10c3f05be1.png)
 
 また、[**エクスポート**] リンクを選択して、レポート データを Excel の .csv ファイルにエクスポートすることもできます。 これにより、すべてのユーザーのデータがエクスポートされ、単純な並べ替えとフィルター処理を行ってさらに分析することができます。 ユーザー数が 2000 未満である場合は、レポート自体のテーブル内で並べ替えとフィルター処理を行うことができます。 ユーザー数が 2000 を超える場合は、フィルター処理と並べ替えを行うために、データをエクスポートする必要があります。 
   
@@ -59,7 +59,7 @@ Microsoft 365 の [**レポート**] ダッシュボードには、組織内で�
 |最終アクティビティ日 (UTC)  <br/> | メッセージがグループによって読み取り、投稿、または気に入った最新の日付。  <br/> |
 |メンバー  <br/> | グループ内のメンバーの数。  <br/> |
 |投稿  <br/> |レポート期間中に、Yammerグループに投稿されたメッセージの数。 <br/>|
-|Read  <br/> |レポート期間中にグループで読み取Yammer会話の数。  <br/> |
+|読み取り  <br/> |レポート期間中にグループで読み取Yammer会話の数。  <br/> |
 |いいね!  <br/> |レポート期間中に、Yammerグループで気に入ったメッセージの数。 <br/>|
 |ネットワーク名  <br/> |グループが属するネットワークの完全な名前。 |
 |||

@@ -26,12 +26,12 @@ search.appverid:
 - MET150
 - MOE150
 description: この記事の手順に従って、別の従業員に元従業員のデータとOneDriveアクセスOutlookします。
-ms.openlocfilehash: c9d9858d030e54884a4defc9b06afe67e8951fca37e36f10d0e9979e5d282920
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e0904c6aeca919dd3f93044ce177a34761cb141b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827492"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564724"
 ---
 # <a name="step-4---give-another-employee-access-to-onedrive-and-outlook-data"></a>手順 4 - 別の従業員にデータとOneDriveアクセスOutlookする
 
@@ -115,11 +115,11 @@ ms.locfileid: "53827492"
   
 3. [**開く&amp;エクスポート**]\>[**インポート/エクスポート**] の順に選択します。
 
-    ![Backstage ビューの [インポート/エクスポート]](../../media/6013919e-d8ce-4902-b7b4-78ff4260a2f8.jpg)
+    ![Import/Exportバックステージ ビューでコマンドを実行します。](../../media/6013919e-d8ce-4902-b7b4-78ff4260a2f8.jpg)
   
 4. [**ファイルのエクスポート]** を選んで、[**次へ**] をクリックします。
 
-    ![インポート/エクスポート ウィンドウの [ファイルのエクスポート] オプション](../../media/458466a0-366b-4fbf-a2db-1919412c6527.jpg)
+    ![インポートおよびエクスポート ウィザードの [ファイルにエクスポート] オプションを使用します。](../../media/458466a0-366b-4fbf-a2db-1919412c6527.jpg)
   
 5. [**Outlook データ ファイル (.pst)**] を選択して、[**次へ**] を選択します。
 
@@ -128,7 +128,7 @@ ms.locfileid: "53827492"
     > [!NOTE]
     > 一度にエクスポートできるアカウントは 1 つだけです。複数のアカウントをエクスポートする場合は、アカウントがエクスポートされるたびに、上の手順を繰り返します。
   
-    ![一番上のフォルダーが選択され、[サブフォルダーを含む] がオンになっている [Outlook データ ファイルのエクスポート] ダイアログ ボックス](../../media/ce36616f-d76d-4ce2-b517-8ac4874e0971.jpg)
+    ![[Outlook] を選択し、[サブフォルダーを含める] がオンの状態で [データ ファイル] ダイアログ ボックスをエクスポートします。](../../media/ce36616f-d76d-4ce2-b517-8ac4874e0971.jpg)
   
 7. [**次へ**] を選択します。
 
@@ -165,7 +165,7 @@ Outlook 2010で「[メール、連絡先、予定表を Outlook の .pst ファ�
 
 2. [**他のプログラムまたはファイルからのインポート**] を選択し、[**次へ**] を選択します。
 
-    ![インポート/エクスポート ウィザード](../../media/15cdd674-cd7b-492c-8e93-992cfa890f26.jpg)
+    ![インポートおよびエクスポート ウィザード。](../../media/15cdd674-cd7b-492c-8e93-992cfa890f26.jpg)
   
 3. [**Outlook データ ファイル (.pst)**] を選んで、[**次へ**] をクリックします。
 

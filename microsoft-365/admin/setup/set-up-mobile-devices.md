@@ -26,12 +26,12 @@ search.appverid:
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
 description: アプリOffice Android iPhoneにインストールし、Office アプリ内の作業ファイルはビジネス向けMicrosoft 365保護されます。
-ms.openlocfilehash: 41b87d5625a1f4adca8e75833873942d263eb6e8
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.openlocfilehash: 86bc749c30d5e3dfd731193d5ef1b56f1e33e443
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360467"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567630"
 ---
 # <a name="set-up-mobile-devices-for-microsoft-365-for-business-users"></a>ビジネス ユーザー向けモバイル Microsoft 365を設定する
 
@@ -51,27 +51,27 @@ ms.locfileid: "58360467"
 
 **App Store** に移動し、検索フィールドに「 Microsoft Outlook」と入力します。
   
-![Go to the iPhone App Store](../../media/886913de-76e5-4883-8ed0-4eb3ec06188f.png)
+![[アプリ ストア] iPhone移動します。](../../media/886913de-76e5-4883-8ed0-4eb3ec06188f.png)
   
 クラウドのアイコンをタップして Outlook をインストールします。
   
-![Tap the cloud icon to install Outlook](../../media/665e1620-948a-4ab8-b914-dca49530142c.png)
+![クラウドのアイコンをタップして Outlook をインストールします。](../../media/665e1620-948a-4ab8-b914-dca49530142c.png)
   
 インストールが完了したら、[ **開く**] ボタンをタップして、Outlook を開き、[ **はじめに**] をタップします。
   
-![Screenshot of Outlook with Get Started button](../../media/005bedec-ae50-4d75-b3bb-e7cef9e2561c.png)
+![[Outlook] ボタンはじめにスクリーンショット。](../../media/005bedec-ae50-4d75-b3bb-e7cef9e2561c.png)
   
 [メール アカウントの追加]画面で仕事用のメール アドレスを入力し、[アカウントの追加] をクリックし、[ビジネス資格情報 \> Microsoft 365を入力 \> **します**。
   
-![Sign in to your work account](../../media/3cef1fb5-7bec-4d3d-8542-872b731ce19f.png)
+![仕事用アカウントにサインインします。](../../media/3cef1fb5-7bec-4d3d-8542-872b731ce19f.png)
   
 組織がアプリ内のファイルを保護している場合は、組織がアプリ内のデータを保護中であることを示すダイアログが表示され、アプリを再起動して引き続き使用する必要があります。 [ **OK**] をタップして Outlook を終了します。 
   
-![組織がアプリの保護を行っているOutlookスクリーンショット](../../media/fb4c1c84-b1e9-42e1-8070-c13dcf79fb09.png)
+![組織がアプリの保護を行っているOutlookスクリーンショット。](../../media/fb4c1c84-b1e9-42e1-8070-c13dcf79fb09.png)
   
 iPhone で Outlook を見つけて、再起動します。 メッセージが表示されたら、PIN を入力して確認します。 これで iPhone で Outlook を使用できるようになりました。
   
-![Set a PIN to access your organization's data](../../media/64f2630b-3164-47a4-9dd6-ca0c29ed5fb3.png)
+![組織のデータにアクセスする PIN を設定します。](../../media/64f2630b-3164-47a4-9dd6-ca0c29ed5fb3.png)
   
 ## <a name="android"></a>[Android](#tab/Android)
   
@@ -83,27 +83,27 @@ Android デバイスへのアプリのインストールOutlookとOfficeビデ�
 
 Android スマートフォンでセットアップを開始するには、Play ストアに移動します。
   
-![On the Android home screen, tap Play Store](../../media/93df88e7-c778-40e1-b35e-868ca6e97f6c.png)
+![Android のホーム画面で、[ストアの再生] をタップします。](../../media/93df88e7-c778-40e1-b35e-868ca6e97f6c.png)
   
 [Google Play] Outlookに Microsoft アプリを入力し、[インストール] を **タップします**。 インストールOutlookしたら、[開く] を **タップします**。
   
-![Tap Open to open Outlook app](../../media/8b4c5937-8875-4b5a-a5b6-b8c6c9cd6240.png)
+![[開く] をタップしてアプリOutlook開きます。](../../media/8b4c5937-8875-4b5a-a5b6-b8c6c9cd6240.png)
   
 [Outlook] アプリで、[はじめに]をタップし、Microsoft 365ビジネス メール アカウントの [続行] を追加し、組織の資格情報で \> サインインします。
   
-![Sign in to your organizational account in Outlook](../../media/18f67c66-4bab-4b99-94bd-080839312e29.png)
+![組織アカウントにサインインするには、Outlook。](../../media/18f67c66-4bab-4b99-94bd-080839312e29.png)
   
 Intune ポータル サイト アプリをインストールする必要があること示すダイアログで、[ **ストアに移動**] をタップします。
   
-![Tap on Go to store to get Intune Company Portal app](../../media/a702d712-5622-45dd-a511-b1adaee63071.png)
+![[ストアに移動] をタップして、アプリIntune ポータル サイトします。](../../media/a702d712-5622-45dd-a511-b1adaee63071.png)
   
 Play ストアで、アプリをインストールIntune ポータル サイト。
   
-![Screenshot that shows the install button for Intune Company Portal in Google Play Store](../../media/5e0408f2-3f37-44dd-80ed-13ca2ac6df0c.png)
+![Google Play ストアのユーザーのインストール Intune ポータル サイトを示すスクリーンショット。](../../media/5e0408f2-3f37-44dd-80ed-13ca2ac6df0c.png)
   
 Outlook をもう一度開き、PIN を入力して確認します。これで Outlook アプリが使用できるようになりました。
   
-![Set  PIN for Outlook app in Android](../../media/edb91afb-f1ed-451a-bc6b-8ccba664e055.png)
+![Android でアプリOutlook PIN を設定します。](../../media/edb91afb-f1ed-451a-bc6b-8ccba664e055.png)
 
 ## <a name="related-content"></a>関連コンテンツ
 

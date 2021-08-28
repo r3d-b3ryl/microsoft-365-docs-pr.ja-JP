@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: この記事では、Azure を使用してオンプレミスのファームに障害復旧環境を作成するSharePoint説明します。
-ms.openlocfilehash: bb048b9b0cf297ba5e5cd61e09f9f3164464a41a37fecfe2d27d0ef7be82f37b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 87bbbf143fe831537ddbc08e6d43b4013fe1e379
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53878261"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567642"
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Microsoft Azure での SharePoint Server 2013 の障害復旧
 
@@ -36,7 +36,7 @@ ms.locfileid: "53878261"
   
 この記事では、ソリューション モデル「 **Microsoft Azure における SharePoint 障害復旧** 」を使用します。
   
-[![Azure への SharePoint 障害回復プロセス](../media/SP-DR-Azure.png)](https://go.microsoft.com/fwlink/p/?LinkId=392555)
+[![SharePoint復旧プロセスを Azure に追加します。](../media/SP-DR-Azure.png)](https://go.microsoft.com/fwlink/p/?LinkId=392555)
   
  [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555) |  [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)
   
@@ -82,7 +82,7 @@ Azure インフラストラクチャ サービス を使用する利点には、
   
 **図: Azure におけるウォーム スタンバイ ソリューションの要素**
 
-![Azure の SharePoint ウォーム スタンバイ ソリューションの要素](../media/AZarch-AZWarmStndby.png)
+![Azure のウォーム スタンバイ SharePointの要素。](../media/AZarch-AZWarmStndby.png)
   
 分散ファイル システム レプリケーション (DFSR) を使用した SQL Server ログ配布により、データベース バックアップとトランザクション ログを Azure 内の復旧ファームにコピーします。 
   
@@ -114,7 +114,7 @@ Azure インフラストラクチャ サービス を使用する利点には、
   
 **表: ソリューションによる復旧対象**
 
-|**アイテム**|**Description**|
+|**項目**|**説明**|
 |:-----|:-----|
 |サイトおよびコンテンツ  <br/> |復旧環境で、サイトとコンテンツを利用できます。  <br/> |
 |検索の新しいインスタンス  <br/> |このウォーム スタンバイ ソリューションの場合、検索は検索データベースから復元されません。復旧ファームにある検索コンポーネントは、可能な限り運用ファームと同様に構成されます。サイトとコンテンツが復元された後、フル クロールが開始され、検索インデックスが再作成されます。クロールが完了するまで待たなくても、サイトとコンテンツは利用できます。  <br/> |
@@ -124,7 +124,7 @@ Azure インフラストラクチャ サービス を使用する利点には、
   
 **表: MCS またはパートナーが対応できるその他のアイテム**
 
-|**アイテム**|**Description**|
+|**項目**|**説明**|
 |:-----|:-----|
 |カスタム ファーム ソリューションの同期  <br/> |復旧ファーム構成と運用ファームが同じであることが理想的です。コンサルタントやパートナーと共に作業し、カスタム ファーム ソリューションのレプリケートを行うかどうか、2 つの環境を同期された状態に保つためのプロセスが適切かどうかを評価できます。  <br/> |
 |オンプレミスのデータ ソースへの接続  <br/> |バックアップ ドメイン コントローラー (BDC) 接続などのバックエンド データ システムへの接続のレプリケート、およびコンテンツ ソースの検索は実際的ではない場合があります。  <br/> |
@@ -156,7 +156,7 @@ Azure の環境は、運用ファームよりも小規模にできます。フ�
   
 **図: 運用ファームとウォーム スタンバイ復旧ファームのトポロジと主な要素**
 
-![SharePoint ファームとウォーム スタンバイ復旧ファームのトポロジ](../media/AZarch-AZWarmStndby.png)
+![サーバー ファームとウォーム SharePoint回復ファームのトポロジ。](../media/AZarch-AZWarmStndby.png)
   
 この図では次のようになっています。
   
@@ -186,7 +186,7 @@ Azure の環境は、運用ファームよりも小規模にできます。フ�
   
 **図: 稼働中の仮想マシンが含まれるコールド スタンバイ復旧ファーム**
 
-![Azure の SharePoint コールド スタンバイ ソリューションの要素](../media/AZarch-AZColdStndby.png)
+![Azure のコールド スタンバイ SharePointの要素。](../media/AZarch-AZColdStndby.png)
   
 コールド スタンバイ環境にフェールオーバーした後、すべての仮想マシンが始動されます。SQL Server AlwaysOn 可用性グループなど、データベース サーバーの高可用性を実現するための方式が構成されていなければなりません。
   
@@ -273,7 +273,7 @@ Windows PowerShell の他にも、SQL Server、SharePoint Server、Azure 用の 
   
 **図: Active Directory ドメインのハイブリッド構成**
 
-![Azure 仮想ネットワークに展開された 2 つの仮想マシンとファーム SharePointは、レプリカ ドメイン コントローラーと DNS サーバーです。](../media/AZarch-HyADdomainConfig.png)
+![Azure 仮想ネットワークに展開された 2 つの仮想マシンとファーム SharePointレプリカ ドメイン コントローラーと DNS サーバーです。](../media/AZarch-HyADdomainConfig.png)
   
 この図には、同じサブネットに対して 2 つの仮想マシンが展開されています。これらの仮想マシンは、Active Directory と DNS という 2 つのロールをそれぞれホストしています。
   

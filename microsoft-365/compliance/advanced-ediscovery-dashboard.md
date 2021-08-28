@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: レビュー セットAdvanced eDiscoveryダッシュボードを使用して、コーパスをすばやく分析し、レビュー戦略の策定に役立つ傾向や主要な統計を特定します。
-ms.openlocfilehash: 14baa47a73ac3cc4917d6e2f04614a80960ef085
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: 6466e33964969d6cd75addba7092ee95e0c321ef
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502977"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565520"
 ---
 # <a name="advanced-ediscovery-dashboard-for-review-sets"></a>Advanced eDiscoveryのダッシュボード
 
@@ -37,15 +37,15 @@ ms.locfileid: "58502977"
   
 4. **[個々の結果]** ドロップダウン リストで、**[検索プロファイルの表示]** をクリックします。 
 
-   ![DashbordPivot](../media/dashboardpivot.png)
+   ![DashbordPivot。](../media/dashboardpivot.png)
 
    [ **プロファイル ビューの検索]** ページが表示されます。このページを初めて表示すると、3 つの既定のウィジェットが表示されます。
 
-   ![ダッシュボード](../media/dashboardonly.png)
+   ![ダッシュボード。](../media/dashboardonly.png)
   
 5. [新しい **ウィジェット] を** クリックし、次のいずれかの項目を選択します。
 
-   ![新しいウィジェットのドロップダウン リスト](../media/NewWidgetDropdownBox.png)
+   ![新しいウィジェットのドロップダウン リスト。](../media/NewWidgetDropdownBox.png)
 
    - **ライブラリから選択します。** ウィジェットの既定のライブラリを表示します。 ウィジェットをクリックし、[追加] **をクリック** して、[検索プロファイル ビュー] ページのウィジェット **にウィジェットを追加** します。
   
@@ -53,7 +53,7 @@ ms.locfileid: "58502977"
 
 6. カスタム ウィジェットを作成するには、[ウィジェットの追加] フライアウト ページ **で次の操作** を行います。
 
-   ![ウィジェットの作成](../media/addwidget.png)
+   ![ウィジェットの作成。](../media/addwidget.png)
 
     a. ウィジェットのタイトル バーに表示されるウィジェットの名前を入力します。 ウィジェットに名前を付ける必要がありますが、ウィジェット データを識別すると便利です。
 
@@ -67,17 +67,17 @@ ms.locfileid: "58502977"
 
 1. ウィジェット **のタイトル バーで [...]** をクリックし、[条件の適用] **をクリックします**。
 
-   ![ダッシュボード](../media/searchprofilehome.png)
+   ![ダッシュボード。](../media/searchprofilehome.png)
 
 2. [フライアウト] ページで、ウィジェット キーまたはウィジェット グラフの要素をクリックして、フィルターを作成します。
 
-   ![CreateFilter](../media/applyconditionfilter.png)
+   ![CreateFilter。](../media/applyconditionfilter.png)
 
 3. 他のウィジェットの複数のウィジェットに対して手順 1 ~ 2 を繰り返します。 
 
 4. 完了したら、[クエリとして保存]をクリックして、条件をレビュー セットの新しい検索クエリとして保存します。
 
-   ![クエリ](../media/savequery.png)
+   ![クエリ。](../media/savequery.png)
 
 5. [検索] **プロファイル ビューを閉** じて、検索結果ビューに戻します。
 

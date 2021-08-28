@@ -21,12 +21,12 @@ search.appverid:
 - SPO160
 ms.assetid: e8ce6b72-745b-464a-85c7-cbf6eb53391b
 description: コンテンツ クエリ Web パーツを SharePoint Server 2013 および SharePoint Online のコンテンツ検索 Web パーツに置き換えてパフォーマンスを向上させる方法について説明します。
-ms.openlocfilehash: 1fbddb662d87f135d90dfb1303ba75097da4650eefdf57dfe2f9ca50fcf186a4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 270019b59666c3f52d67648a88c453278149fccd
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53840794"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566746"
 ---
 # <a name="using-content-search-web-part-instead-of-content-query-web-part-to-improve-performance-in-sharepoint-online"></a>コンテンツ クエリ Web パーツの代わりにコンテンツ検索 Web パーツを使用してオンラインでのパフォーマンスSharePointする
 
@@ -52,15 +52,15 @@ SharePoint Server 2013 および SharePoint の最も強力な新機能の 1 つ
     
 コンテンツ クエリ Web パーツの結果のスクリーン ショットを次に示します。
   
-![Web パーツのクエリ結果を示すグラフィック](../media/b3d41f20-dfe5-46ed-9c0a-31057e82de33.png)
+![Web パーツのコンテンツ クエリを示すグラフィック。](../media/b3d41f20-dfe5-46ed-9c0a-31057e82de33.png)
   
 このInternet Explorer、F12開発者ツールの [ネットワーク] タブを使用して、応答ヘッダーの詳細を確認します。 次のスクリーン ショットでは、このページ読み込み時の **SPRequestDuration** の値は 924 ミリ秒です。 
   
-![924 の要求時間が表示されているスクリーンショット](../media/343571f2-a249-4de2-bc11-2cee93498aea.png)
+![924 の要求期間を示すスクリーンショット。](../media/343571f2-a249-4de2-bc11-2cee93498aea.png)
   
  **SPRequestDuration は** 、ページを準備するためにサーバーで実行される作業量を示します。 クエリによってコンテンツを切りWeb パーツ検索でコンテンツを切りWeb パーツ、ページのレンダリングにかかる時間が大幅に短縮されます。 対照的に、同等のコンテンツ検索 Web パーツを持つページで、同じ数の結果を返す場合、このスクリーン ショットに示すように **SPRequestDuration** 値は 106 ミリ秒です。 
   
-![106 の要求時間が表示されているスクリーンショット](../media/b46387ac-660d-4e5e-a11c-cc430e912962.png)
+![要求期間 106 を示すスクリーン ショット。](../media/b46387ac-660d-4e5e-a11c-cc430e912962.png)
   
 ## <a name="adding-a-content-search-web-part-in-sharepoint-online"></a>オンラインでのコンテンツ検索 Web パーツSharePointする
 

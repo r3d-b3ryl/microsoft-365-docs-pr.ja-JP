@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 6a4d548edb660838be9ea3d1a69749f23d3ac6c8
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 0b21a95930138972ac3f7fe3c1474b0434a68e4c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58607219"
+ms.locfileid: "58567846"
 ---
 # <a name="view-attack-surface-reduction-events"></a>攻撃面の減少イベントを表示する
 
@@ -57,7 +57,7 @@ E5 サブスクリプションを持っている場合は、Windows セキュリ
 
 2. [**イベント ビューアー] と** 入力し、[スタート メニュー ビューアー]**を開きます**。
 
-3. [アクション **の** \> **インポート] [カスタム ビュー...] を選択します。**
+3. [アクション **の**  >  **インポート] [カスタム ビュー...] を選択します。**
 
    > [!div class="mx-imgBorder"]
    > ![[Even ビューアー] ウィンドウの左側にあるカスタム ビューのインポートを強調表示するアニメーション。](images/events-import.gif)

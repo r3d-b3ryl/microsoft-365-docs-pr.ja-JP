@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: ビジネス向けアプリで使用できるMicrosoft 365デバイスをセキュリティで保護するWindows 10します。
-ms.openlocfilehash: 1d3f3f3516431e08b00f83bf2b8beb4bebecb0f5
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.openlocfilehash: 29fb5c18f016bd2832c25ff66db258671b95bd6f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360602"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566396"
 ---
 # <a name="edit-or-create-device-protection-settings-for-windows-10-pcs"></a>PC のデバイス保護設定を編集またはWindows 10する
 
@@ -50,7 +50,7 @@ ms.locfileid: "58360602"
     
     [ **既定の設定に戻す**] リンクを使用すれば、既定の設定にいつでも戻すことができます。 
     
-    ![Add policy pane with Windows 10 Device configuration selected](../../media/fa9e2dc2-7eae-4c96-af34-765a1f641ecf.png)
+    ![[デバイス構成] が選択Windows 10ポリシー ウィンドウを追加します。](../../media/fa9e2dc2-7eae-4c96-af34-765a1f641ecf.png)
   
 6. Next decide **Who will get these settings?** If you don't want to use the default **All users** security group, Choose **Change**, search for the security group who will get these settings \> **Select**.
 7. 最後に、[ **完了**] を選択してポリシーを保存し、それをデバイスに割り当てます。 

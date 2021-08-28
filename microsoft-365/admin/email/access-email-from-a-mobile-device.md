@@ -17,12 +17,12 @@ search.appverid: MET150
 ms.assetid: ba780859-0297-4114-a258-2b2809bab9e6
 ROBOTS: NOINDEX, NOFOLLOW
 description: モバイル デバイスからメールにアクセスする方法について学習します。
-ms.openlocfilehash: a2a4df56a6f17a8e4d5a1c7b9165b58971c46170fdfa08b808b1cc7ca2563d66
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c003b90e704a51adcaca6d3887d1fc7286f40168
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53832840"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566372"
 ---
 # <a name="options-for-accessing-email-from-your-mobile-device"></a>モバイル デバイスからメールにアクセスするためのオプション
 
@@ -36,7 +36,7 @@ Android Outlookおよび iOS Outlookアプリ用のアプリは、仕事や学�
 
 組織では、会社の電子メール、予定表、Outlook連絡先にアクセスOutlook、iOS モバイル アプリの Android または Outlookを使用する必要があります。 Android 用または iOS 用にアプリをダウンロードOutlookインストールすると、データOutlook同期が開始されます。
 
-![メールの同期に使用Outlookメールの例](../../media/798d942a-4181-4dcb-8039-cd9f2edd9723.png)
+![電子メールの同期にOutlookメールの例。](../../media/798d942a-4181-4dcb-8039-cd9f2edd9723.png)
 
 詳細については[、「iOS Outlook Android](https://support.microsoft.com/office/de075b19-b73c-4d8a-841b-459982c7e890)スマートフォンのモバイル アプリを最適化する」をOutlookしてください。 問題が発生[Outlook場合は、iOS](https://support.microsoft.com/office/cd84214e-a5ac-4e95-9ea3-e07f78d0cde6)および Android ヘルプ センターの [アプリ] に移動します。
 

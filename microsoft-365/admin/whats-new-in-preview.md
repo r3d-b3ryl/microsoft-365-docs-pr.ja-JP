@@ -22,12 +22,12 @@ ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
 - admindeeplinkMAC
-ms.openlocfilehash: d9a5d6543c1a3e26a6809d8ea7826beb338757bc
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: f8adf1fe5141d11d4f57eb3c7348b3961815a38d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394794"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567822"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>新しい機能Microsoft 365 管理センター
 
@@ -176,7 +176,7 @@ Microsoft Ignite へようこそ - 最初のオンライン専用 Ignite。 Micr
 - Office 365 E3またはMicrosoft 365 E3、またはOffice 365 E5またはMicrosoft 365 E5。
 - 少なくとも 10,000 ライセンスと 50 以上の月次アクティブユーザー Exchange Onlineします。
 
-![機能のセットアップ ページ: 最も重要なアカウントを監視する](../media/MAC-WN-PriorityAccounts.png)
+![機能のセットアップ ページ: 最も重要なアカウントを監視します。](../media/MAC-WN-PriorityAccounts.png)
 
 開始するには、次の 2 つの方法があります。
 
@@ -252,7 +252,7 @@ Microsoft Ignite へようこそ - 最初のオンライン専用 Ignite。 Micr
 
 ![「リモート ワーカーに権限を与Microsoft 365ソリューションドキュメント」の新しいランディング ページ。](../media/MAC-WN-M365Docspage.png)
 
-## <a name="july-2020"></a>2020 年7 月
+## <a name="july-2020"></a>2020 年 7 月
 
 ### <a name="getting-ready-for-ignite-2020"></a>Ignite 2020 の準備
 
@@ -274,7 +274,7 @@ Microsoft で Ignite シーズンに移行する中で、セッション中に�
 
 ドメイン管理は複雑になる可能性があります。また、それを容易にするために新しい機能をリリースしました。 [ドメイン設定 >] に移動し、ドメインを選択して、ドメインとドメインの正常性に関する詳細を取得します。
 
-:::image type="content" source="../media/MAC-WN-DomainDNS.PNG" alt-text="ドメインの詳細ページ (contoso.com":::
+:::image type="content" source="../media/MAC-WN-DomainDNS.PNG" alt-text="[ドメインの詳細] ページで、contoso.com。":::
 
 ### <a name="docs-training-and-videos-july-2020"></a>ドキュメント、トレーニング、ビデオ (2020 年 7 月)
 
@@ -339,7 +339,7 @@ Monthly Enterprise チャネルのリリースに合わせて、既存の更新�
 
 さて、私たちはそれをやった! 統合された役割エクスペリエンスに向けて 2 番目のステップを踏み、Intune の役割を管理<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター。</a> ロールを検索し、役割のアクセス許可を表示する機能などの機能を活用することもできます。 つまり、ユーザーと Intune の役割を管理するための 2 つの個別Microsoft 365必要ない。 [ロール] ページに<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>サインインすると、[ロール] ページに 2 つのピボットが表示され、1 つは Azure AD、もう 1 つは Intune 用です。
 
-![Intune ピボットが選択されている [役割] ページ](../media/MAC-WN-IntuneRoles.png)
+![Intune ピボットが選択されている [役割] ページ。](../media/MAC-WN-IntuneRoles.png)
 
 ### <a name="sync-message-center-posts-to-planner"></a>メッセージ センターの投稿を Planner に同期する
 
@@ -416,7 +416,7 @@ Monthly Enterprise チャネルのリリースに合わせて、既存の更新�
 
 一部の組織では、Teamsの使用率が上がると、ピン留めされたダッシュボード カードが表示され、Teams有効になります。 また、このカードには、組織がリモート作業に移行するのに役立つトレーニングやドキュメントへのリンクがあります。 ホーム ページに移動 **して** 、新しいカードを表示します。
 
-![Microsoft Teamsホーム ページ カード](../media/MAC-WN-TeamsCard.PNG)
+![Microsoft Teamsホーム ページ カードを選択します。](../media/MAC-WN-TeamsCard.PNG)
 
 ### <a name="customize-your-organizations-sharepoint-mobile-app-theme"></a>組織のモバイル アプリテーマSharePointカスタマイズする
 
@@ -460,7 +460,7 @@ Monthly Enterprise チャネルのリリースに合わせて、既存の更新�
 ![画面キャプチャ: 切り替えアイコンを含む組織プロファイル名を示すホーム ページの上部。](../media/MAC-Organization-switcher.png)
 
 2. 組織の切り替えプログラムで、管理する組織を選択します。
-![画面キャプチャ: 統合された Messenger テナントが強調表示された組織のテナント 切り替え機能](../media/MAC-OrgSwitcherSelected.png)
+![画面キャプチャ: 統合された Messenger テナントが強調表示された組織のテナント 切り替え機能。](../media/MAC-OrgSwitcherSelected.png)
 
 これは文字通りです!!!
 

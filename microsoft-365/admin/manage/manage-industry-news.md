@@ -17,12 +17,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 業界と組織の情報に関する最新のニュース見出しをユーザーに提供し、ニュース サービスを使用して組織のカスタマイズされたニュース フィードを有効にします。
-ms.openlocfilehash: 42a65543ef37d2433d84432a7436dabaaa9ce345
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: 9577081bcf8d8c2b7b47bc820529f2e66cc86924
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394230"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566260"
 ---
 # <a name="manage-industry-news"></a>業界ニュースの管理
 
@@ -34,13 +34,13 @@ ms.locfileid: "58394230"
  
 サインインしているユーザーは、組織Bing情報の下に業界のニュース フィードを表示します。 
  
-:::image type="content" source="../../media/manage-industry-news-2.jpg" alt-text="Web からの業界ニュースを含む画像カルーセルのスクリーンショット":::
+:::image type="content" source="../../media/manage-industry-news-2.jpg" alt-text="Web からの業界ニュースを含む画像カルーセルのスクリーンショット。":::
 
-:::image type="content" source="../../media/industry-updates-new.png" alt-text="日付と見出しを含む [業界の更新] ページ":::
+:::image type="content" source="../../media/industry-updates-new.png" alt-text="日付と見出しを含む業界の更新ページ。":::
 
 また、新しいタブ ページで、会社、業界、社内のニュースや個人Microsoft Edge情報を確認できます。 
 
-:::image type="content" source="../../media/manage-industry-news-3.png" alt-text="Microsoft in news ホームページ":::
+:::image type="content" source="../../media/manage-industry-news-3.png" alt-text="ニュース ホームページの Microsoft。":::
 
 ## <a name="news-settings"></a>ニュース設定
 

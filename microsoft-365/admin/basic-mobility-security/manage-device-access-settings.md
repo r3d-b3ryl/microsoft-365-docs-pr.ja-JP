@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本的なモビリティとセキュリティは、モバイル デバイスのセキュリティ保護と管理に役立ちます。
-ms.openlocfilehash: 3691968803c615356570be5584ce869fddff81effdc304caa42bc1071b5f579b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ede065b2ad8125b7c487ce801ffc743e817af8dc
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826872"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564455"
 ---
 # <a name="manage-device-access-settings-in-basic-mobility-and-security"></a>Basic Mobility and Security のデバイス アクセス設定を管理する
 
@@ -42,7 +42,7 @@ Basic Mobility and Security を使用している場合は、Basic Mobility and 
 
 4. [ブロック **] を選択します**。
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="[Basic Mobility and Security block access] チェック ボックス":::
+    :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="[Basic Mobility and Security block access] チェック ボックス。":::
 
 5. [保存 **] を選択します**。
 

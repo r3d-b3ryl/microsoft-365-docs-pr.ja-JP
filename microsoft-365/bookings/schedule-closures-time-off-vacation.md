@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: e3c0a4ee-e3d8-4fbe-bd8f-16d1c712d1f4
 description: 指定された時間に従業員が予約に使用できないとマークされるように、予約カレンダーからオフィスの休業日と従業員の休み時間をスケジュールします。
-ms.openlocfilehash: 3d8c7b370331f0e4651864f961d6eceffc9d24cddef07810d765bfbc5db6e96b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bdd00d2bc97de1e981b2de7f5f21325de6967aa7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53906985"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567594"
 ---
 # <a name="schedule-business-closures-time-off-and-vacation-time"></a>休業、休暇、休暇期間のスケジュール
 
@@ -30,7 +30,7 @@ ms.locfileid: "53906985"
 
 1. In the navigation pane, select **Calendar** \> **Time off**.
 
-   ![[予約] カレンダー ビューと [タイム オフ] ボタンのイメージ](../media/bookings-calendar-timeoff.png)
+   ![[予約] カレンダー ビューと [タイム オフ] ボタンのイメージ。](../media/bookings-calendar-timeoff.png)
 
 1. タイトル、開始日時と終了日時、場所、その他のメモなど、詳細情報を入力します。
 
@@ -42,17 +42,17 @@ ms.locfileid: "53906985"
 
 休業日に顧客がサービスを予約しようとすると、予約ページにメッセージが表示されます。
 
-   ![お客様が休み中に予約しようとするときに表示されるメッセージの例のイメージ](../media/bookings-timeoff-message.png)
+   ![お客様が休み中に予約しようとするときに表示されるメッセージの例のイメージ。](../media/bookings-timeoff-message.png)
 
 ## <a name="schedule-employee-time-off"></a>従業員の休暇のスケジュール
 
 1. [Microsoft 365] でアプリ 起動ツールを選択し、[予約]**を選択します**。
 
-   ![アプリ 起動ツールのイメージ](../media/bookings-applauncher.png)
+   ![アプリ起動ツールのイメージ。](../media/bookings-applauncher.png)
 
 1. In the navigation pane, select **Calendar** \> **Time off**.
 
-   ![[予約] カレンダー ビューと [タイム オフ] ボタンのイメージ](../media/bookings-calendar-timeoff.png)
+   ![[予約] カレンダー ビューと [タイム オフ] ボタンのイメージ。](../media/bookings-calendar-timeoff.png)
 
 1. タイトル、開始日時と終了日時、場所、その他のメモなど、詳細情報を入力します。従業員が丸 1 日、または数日間休暇を取る場合、[ **終日イベント**] を選びます。
 

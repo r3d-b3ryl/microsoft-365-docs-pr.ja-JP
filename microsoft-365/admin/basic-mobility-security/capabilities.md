@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本的なモビリティとセキュリティは、モバイル デバイスのセキュリティ保護と管理に役立ちます。
-ms.openlocfilehash: cfd29178bfa6ea235bc26cf8ca1efa3b80e39915
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.openlocfilehash: bd400f81b3d125b6d6100ecf2ed06f536106d1f0
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58346954"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564528"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>基本的なモビリティとセキュリティの機能
 
@@ -74,7 +74,7 @@ Basic Mobility and Security を使用すると、次のデバイスをセキュ�
 
 次の図は、新しいデバイスを持つユーザーが、Basic Mobility and Security によるアクセス制御をサポートするアプリにサインインした場合の処理を示しています。 ユーザーは、デバイスを登録するまでMicrosoft 365リソースへのアクセスをブロックされます。
 
-:::image type="content" source="../../media/basic-mobility-security/bms-1-access-control.png" alt-text="基本的なモビリティとセキュリティ アクセス制御":::
+:::image type="content" source="../../media/basic-mobility-security/bms-1-access-control.png" alt-text="基本的なモビリティとセキュリティ のアクセス制御。":::
 
 > [!NOTE]
 > Microsoft 365 Business Standard の Basic Mobility and Security で作成されたポリシーとアクセス ルールは、Exchange ActiveSync 管理センターで作成された Exchange ActiveSync Exchange モバイル デバイス メールボックス ポリシーとデバイス アクセス ルールを上書きします。 デバイスが Basic Mobility and Security for Microsoft 365 Business Standard に登録されると、Exchange ActiveSync に適用されたモバイル デバイス メールボックス ポリシーまたはデバイス アクセス ルールは無視されます。 詳細については、「Exchange ActiveSync」の [Exchange ActiveSyncをExchange Online。](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync)
@@ -95,7 +95,7 @@ Basic Mobility and Security を使用すると、次のデバイスをセキュ�
 
 例として次の図は、登録済みデバイスを使用しているユーザーが、そのデバイスに適用されるモバイル デバイス管理ポリシーのセキュリティ設定を満たしていない場合の動作を示しています。 ユーザーは、Basic Mobility and Security を使用してアクセス制御をサポートするアプリにサインインします。 デバイスがセキュリティ設定に準拠するまでMicrosoft 365リソースへのアクセスがブロックされます。
 
-:::image type="content" source="../../media/basic-mobility-security/bms-2-device-not-compliant.png" alt-text="Basic Mobility and Security compliance message":::
+:::image type="content" source="../../media/basic-mobility-security/bms-2-device-not-compliant.png" alt-text="基本的なモビリティとセキュリティのコンプライアンス メッセージ。":::
 
 以下のセクションでは、組織のリソースに接続するモバイル デバイスのセキュリティ保護と管理に使用できるポリシー Microsoft 365示します。
 

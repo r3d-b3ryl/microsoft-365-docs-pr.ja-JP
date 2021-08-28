@@ -12,16 +12,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、RingCentral データを Veritas からユーザーにインポートおよびアーカイブするコネクタをMicrosoft 365。 このコネクタを使用すると、サードパーティのデータ ソースからデータをアーカイブできます。Microsoft 365。 このデータをアーカイブした後、法的保持、電子情報開示、保持ポリシーなどのコンプライアンス機能を使用して、サードパーティのデータを管理できます。
-ms.openlocfilehash: 6c5e6bee86a4d333931d93350b2f8875850cdc5c
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 67dd74e9eb4effbeb938d16585f1e465d835e56e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257418"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567534"
 ---
 # <a name="set-up-a-connector-to-archive-ringcentral-data"></a>RingCentral データをアーカイブするコネクタをセットアップする
 
-サーバーの Veritas コネクタを使用Microsoft 365 コンプライアンス センター、RingCentral プラットフォームから組織のユーザー メールボックスにデータをインポートおよびアーカイブMicrosoft 365します。 Veritas には、サードパーティのデータ ソースからアイテムをキャプチャし、それらのアイテムをデータ ソースにインポートするように構成された RingCentral コネクタMicrosoft 365。 コネクタは、チャット、添付ファイル、タスク、メモ、投稿などのコンテンツを RingCentral から電子メール メッセージ形式に変換し、それらのアイテムを Microsoft 365 のユーザー メールボックスにインポートします。
+サーバーの Veritas コネクタを使用Microsoft 365 コンプライアンス センター、RingCentral プラットフォームから組織のユーザー メールボックスにデータをインポートおよびアーカイブMicrosoft 365します。 Veritas には、サードパーティのデータ ソースからアイテムをキャプチャし、それらのアイテムをデータ ソースにインポートするように構成された[RingCentral](https://www.veritas.com/insights/merge1/ringcentral)コネクタMicrosoft 365。 コネクタは、チャット、添付ファイル、タスク、メモ、投稿などのコンテンツを RingCentral から電子メール メッセージ形式に変換し、それらのアイテムを Microsoft 365 のユーザー メールボックスにインポートします。
 
 RingCentral データをユーザー のメールボックスに格納した後、訴訟ホールド、電子情報開示、保持ポリシー、保持ラベルMicrosoft 365コンプライアンス機能を適用できます。 RingCentral コネクタを使用してデータをインポートおよびアーカイブMicrosoft 365、組織が政府および規制ポリシーに準拠しつ付けるのに役立ちます。
 
@@ -29,7 +29,7 @@ RingCentral データをユーザー のメールボックスに格納した後�
 
 次の概要では、コネクタを使用して、アプリケーション内の RingCentral データをアーカイブするMicrosoft 365。
 
-![RingCentral データのアーカイブ ワークフロー](../media/RingCentralConnectorWorkflow.png)
+![RingCentral データのアーカイブ ワークフロー。](../media/RingCentralConnectorWorkflow.png)
 
 1. 組織は RingCentral を使用して、RingCentral サイトをセットアップおよび構成します。
 

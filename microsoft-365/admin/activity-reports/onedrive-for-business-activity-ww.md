@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 組織のOneDriveレポートを取得し、すべてのユーザーのアクティビティ、共有OneDriveファイルの数、およびストレージ使用率を確認します。
-ms.openlocfilehash: 3f651732a6684389aa3be5214600385797d4b202b79491379f53712dc61f8ac2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 145bf6cc4f079e4916730b949ed0c4a798242860
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53816345"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564830"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-activity"></a>Microsoft 365管理センターのレポート - OneDrive for Businessアクティビティ
 
@@ -45,7 +45,7 @@ Microsoft 365 の [**レポート**] ダッシュボードには、組織内で�
 
 [アクティビティ] タブを選択すると、OneDriveレポートでアクティビティ **を表示** できます。<br/>![Microsoft 365レポート - Microsoft OneDriveアクティビティ レポート。](../../media/c89df0b0-2611-4acf-9ef7-17cedf7977be.png)
 
-[列 **の選択]** を選択して、レポートの列を追加または削除します。  <br/> ![OneDriveアクティビティ レポート - 列の選択](../../media/252f311f-ffde-4e5a-9158-2b822bf86964.png)
+[列 **の選択]** を選択して、レポートの列を追加または削除します。  <br/> ![OneDriveアクティビティ レポート - 列を選択します。](../../media/252f311f-ffde-4e5a-9158-2b822bf86964.png)
 
 また、[**エクスポート**] リンクを選択して、レポート データを Excel の .csv ファイルにエクスポートすることもできます。 これにより、すべてのユーザーのデータがエクスポートされ、単純な並べ替えとフィルター処理を行ってさらに分析することができます。 ユーザー数が 2000 未満である場合は、レポート自体のテーブル内で並べ替えとフィルター処理を行うことができます。 ユーザー数が 2000 を超える場合は、フィルター処理と並べ替えを行うために、データをエクスポートする必要があります。 
   

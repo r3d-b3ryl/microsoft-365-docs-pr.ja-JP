@@ -23,12 +23,12 @@ search.appverid:
 ROBOTS: NO INDEX, NO FOLLOW
 ms.assetid: ed34fff3-2881-4ed4-9906-1ba6bb8dd804
 description: 32 ビット アプリをコンピューターに自動的Officeし、Windows 10する方法について学習します。
-ms.openlocfilehash: 2e5d9cc711c0b5c9c8cc8dbfbeb1d8519856c674
-ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
+ms.openlocfilehash: ea131e37fa7f82a0ab03aa52b71569e3c96a2c7f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58378193"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566110"
 ---
 # <a name="prepare-for-office-client-deployment-by-microsoft-365-for-business"></a>ビジネス向けOfficeクライアントの展開Microsoft 365準備する
 
@@ -48,7 +48,7 @@ ms.locfileid: "58378193"
     
 To determine if you have the Click-to-Run version of Office, in any Office app go to **File** \> **Account** ( **Office Account** in Outlook). 次の図に **Office更新** プログラムが表示される場合は、インストールは次の手順で実行クイック実行。 
   
-![Screenshot of Office updates in Office app Account](../../media/e3439380-fa43-4ed6-ae5d-64851c297df5.png)
+![アカウントのOffice更新プログラムOffice アプリスクリーンショット。](../../media/e3439380-fa43-4ed6-ae5d-64851c297df5.png)
   
  **Who機能を持つことの利点**
   

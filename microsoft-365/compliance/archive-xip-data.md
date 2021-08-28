@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、XIP ソース データを Veritas から他のユーザーにインポートおよびアーカイブするコネクタをMicrosoft 365。 このコネクタを使用すると、サードパーティのデータ ソースからデータをアーカイブできます。Microsoft 365。 このデータをアーカイブした後、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、サードパーティのデータを管理できます。
-ms.openlocfilehash: a0c1758f2ee305becaf8ce0e2bf301b723144f56
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 7782685694ccf26939a1bae44428374c20169736
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533329"
+ms.locfileid: "58565442"
 ---
 # <a name="set-up-a-connector-to-archive-xip-source-data"></a>XIP ソース データをアーカイブするコネクタをセットアップする
 
@@ -29,7 +29,7 @@ XIP ソース データをユーザー メールボックスに格納した後�
 
 次の概要では、コネクタを使用して XIP ソース データをアーカイブするプロセスについて説明Microsoft 365。
 
-![XIP ソース データのアーカイブ ワークフロー](../media/XIPConnectorWorkflow.png)
+![XIP ソース データのアーカイブ ワークフロー。](../media/XIPConnectorWorkflow.png)
 
 1. 組織は XIP ソースと一緒に XIP サイトを設定および構成します。
 

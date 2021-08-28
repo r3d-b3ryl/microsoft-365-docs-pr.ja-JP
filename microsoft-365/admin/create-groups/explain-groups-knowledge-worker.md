@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: ユーザーにグループをMicrosoft 365する方法について説明します。
-ms.openlocfilehash: 7f7b5bbe59f739c591aeb69687edc0c34d97e37286eb6fd72c1bde02cc1b6ea3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 828dffbed42b0b2bb2023a17f499802f7b2c2db1
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826560"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565604"
 ---
 # <a name="explaining-microsoft-365-groups-to-your-users"></a>ユーザー Microsoft 365グループの説明
 
@@ -35,12 +35,12 @@ Microsoft 365グループを使用すると、共有メールボックスと予�
 - 組織が多くのSharePointを使用している場合、または SharePoint オンプレミスから移行する場合は、ユーザーに共同作業用にSharePointチーム サイトを作成するように指示します。
 - 組織がグループを展開Teams、共同作業スペースが必要なときにチームを作成するようにユーザーに指示します。
 
-[![イメージ desc ](../../media/03.png)](../../media/03.png#lightbox)
+[![image desc. ](../../media/03.png)](../../media/03.png#lightbox)
 
 ユーザーが他のユーザーと共同作業するためのスペースが必要なときに、作業方法に最も合ったグループ作成方法を常に使用するトレーニングを行う場合は、リソースの混乱や重複を避けることができます。 ユーザーの経験が高くなると、グループに関連するサービスのコレクションが向上し、異なる作成方法が同じ結果につながることを理解できます。
 
 ビジネス ユーザー向け[Microsoft 365グループ -](https://www.microsoft.com/download/details.aspx?id=102396) PowerPointテンプレートを、ユーザーのトレーニング プレゼンテーションの開始点として使用できます。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [グループの詳細Microsoft 365する](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)

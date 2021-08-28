@@ -18,16 +18,16 @@ search.appverid:
 - PJU120
 - PJW120
 description: Project Server 2010 のサポートは 2021 年 4 月 13 日に終了します。 この記事をガイドとして使用して、Project Onlineまたは新しいバージョンの Projectサーバーにアップグレードします。
-ms.openlocfilehash: ec8046589fb1691ca0feb4791d174587b33eb8c9cb2c51f720292fb2e3561f12
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1c5b942e50a137c1ecc32f08c481811ef4edf779
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53904752"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567858"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Project Server 2010 のサポート終了のロードマップ
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 Projectサーバー 2010 は **、2021** 年 4 月 13 日にサポートの終了に達します。 この日付は、2020 年 10 月 13 日の以前のサポート終了日から延長されました。 現在、サーバー 2010 Projectを使用している場合、これらの関連製品のサポート終了日は次のとおりです。
 
@@ -62,7 +62,7 @@ Projectサーバー 2010 は **、2021** 年 4 月 13 日にサポートの終�
 
 サーバー 2010 のサポートが終了しないようにするために使用できる 2 Projectを示します。
 
-![ProjectServer 2010 のアップグレード パス](../media/project-server-2010-end-of-support/project-server-2010-end-of-support-timeline.png)
+![Projectサーバー 2010 のアップグレード パス。](../media/project-server-2010-end-of-support/project-server-2010-end-of-support-timeline.png)
 
 |サーバー 2019 への移行Projectする理由|移行先に移行する理由Project Online。|
 |---|---|
@@ -227,13 +227,13 @@ Project Server 2016 から Project Server 2019 へのアップグレードに必
 
 Office 2010 サーバー/クライアント、および Windows 7のアップグレード、移行、およびクラウドへの移行オプションを視覚的にまとめた概要は、[サポート終了ポスター](../downloads/Office2010Windows7EndOfSupport.pdf) をご覧ください。
 
-[![2010 年のクライアントOfficeサーバーと 7 ポスターのWindows終了](../media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
+[![2010 年のクライアントOfficeサーバーと 7 ポスターのWindows終了します。](../media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
 
 このポスターは、Office 2010 クライアントおよびサーバー製品と Windows 7 のサポートが終了しないようにするために使用できるさまざまなパスを示しています。Microsoft 365 Enterprise での優先パスとオプションのサポートが強調表示されています。
 
 また、この [ポスター](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf) をダウンロードして、レター、リーガル、またはタブロイド (11 x 17) 形式で印刷することもできます。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [SharePoint 2010 からのアップグレード](upgrade-from-sharepoint-2010.md)
 

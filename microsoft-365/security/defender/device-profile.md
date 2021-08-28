@@ -13,12 +13,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: b9f73150d858efc8eecf7a027035011d88098e9359ab87c9ce5c2f992cd8857e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f33b16cb08f7573a579f46327f126071ed726e42
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53805696"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563940"
 ---
 # <a name="device-profile-page"></a>[デバイス プロファイル] ページ
 
@@ -36,7 +36,7 @@ ms.locfileid: "53805696"
 
 プロファイル ページは、いくつかの広範なセクションに分割されます。
 
-![(1) タブ領域 (2) サイドバーと (3) アクションが赤色で強調表示されたデバイス プロファイル ページのイメージ](../../media/mtp-device-profile/hybrid-device-overall.png)
+![(1) タブ領域 (2) サイドバーと (3) アクションが赤色で強調表示されたデバイス プロファイル ページのイメージ。](../../media/mtp-device-profile/hybrid-device-overall.png)
 
 サイドバー (1) には、デバイスに関する基本的な詳細が一覧表示されます。
 
@@ -48,7 +48,7 @@ ms.locfileid: "53805696"
 
 デバイス プロファイル ページのメイン コンテンツ領域の横にサイドバーがあります。
 
-![デバイス プロファイルのサイドバー タブのイメージ](../../media/mtp-device-profile/azure-atp-only-device-sidebar.png)
+![デバイス プロファイルのサイドバー タブのイメージ。](../../media/mtp-device-profile/azure-atp-only-device-sidebar.png)
 
 サイドバーには、デバイスの完全な名前と露出レベルが一覧表示されます。 また、次のような、開くまたは閉じ切り替えできる小さなサブセクションの重要な基本情報も提供します。
 
@@ -66,7 +66,7 @@ ms.locfileid: "53805696"
 
 応答アクションは、脅威に対する防御と分析を迅速に行う方法を提供します。
 
-![デバイス プロファイルのアクション バーのイメージ](../../media/mtp-device-profile/hybrid-device-long-action-bar.png)
+![デバイス プロファイルのアクション バーのイメージ。](../../media/mtp-device-profile/hybrid-device-long-action-bar.png)
 
 > [!IMPORTANT]
 > * [応答アクション](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts) は、デバイスが Microsoft Defender for Endpoint に登録されている場合にのみ使用できます。
@@ -94,7 +94,7 @@ Microsoft Defender for Endpoint に登録されているデバイスには、タ
 
 既定のタブは [概要] **です**。 デバイスに関する最も重要なセキュリティの事実を簡単に確認できます。
 
-![デバイス プロファイルの [概要] タブのイメージ](../../media/mtp-device-profile/hybrid-device-tab-overview.png)
+![デバイス プロファイルの [概要] タブのイメージ。](../../media/mtp-device-profile/hybrid-device-tab-overview.png)
 
 ここでは、デバイスのアクティブなアラートと、現在ログオンしているユーザーを簡単に確認できます。
 
@@ -104,7 +104,7 @@ Microsoft Defender for Endpoint に登録されているデバイスには、タ
 
 [ **アラート]** タブには、Microsoft Defender for Identity と Microsoft Defender for Endpoint の両方から、デバイスで発生したアラートの一覧が表示されます。
 
-![デバイス プロファイルの [アラート] タブのイメージ](../../media/mtp-device-profile/hybrid-device-tab-alerts.png)
+![デバイス プロファイルの [アラート] タブのイメージ。](../../media/mtp-device-profile/hybrid-device-tab-alerts.png)
 
 表示されるアイテムの数と、各アイテムに対して表示される列をカスタマイズできます。 既定の動作では、ページごとに 30 アイテムを一覧表示します。
 
@@ -122,7 +122,7 @@ Microsoft Defender for Endpoint に登録されているデバイスには、タ
 
 グラフの下には、選択した日付範囲のイベントの一覧があります。
 
-![デバイス プロファイルの [タイムライン] タブの画像](../../media/mtp-device-profile/hybrid-device-tab-timeline.png)
+![デバイス プロファイルの [タイムライン] タブのイメージ。](../../media/mtp-device-profile/hybrid-device-tab-timeline.png)
 
 表示されるアイテムの数とリストの列の両方をカスタマイズできます。 既定の列には、イベント時間、アクティブ ユーザー、アクションの種類、エンティティ (プロセス)、およびイベントに関する追加情報が一覧表示されます。
 
@@ -136,7 +136,7 @@ Microsoft Defender for Endpoint に登録されているデバイスには、タ
 
 [ **セキュリティの推奨事項] タブ** には、デバイスを保護するために実行できるアクションが一覧表示されます。 このリストでアイテムを選択すると、提案の適用方法に関する手順を取得できるフライアウトが開きます。
 
-![デバイス プロファイルの [セキュリティの推奨事項] タブのイメージ](../../media/mtp-device-profile/hybrid-device-tab-security-recs.png)
+![デバイス プロファイルの [セキュリティの推奨事項] タブのイメージ。](../../media/mtp-device-profile/hybrid-device-tab-security-recs.png)
 
 前のタブと同様に、ページごとに表示されるアイテムの数と表示される列をカスタマイズできます。
 
@@ -146,7 +146,7 @@ Microsoft Defender for Endpoint に登録されているデバイスには、タ
 
 [ **ソフトウェア インベントリ] タブ** には、デバイスにインストールされているソフトウェアが一覧表示されます。
 
-![デバイス プロファイルの [ソフトウェア インベントリ] タブのイメージ](../../media/mtp-device-profile/hybrid-device-tab-software-inventory.png)
+![デバイス プロファイルの [ソフトウェア インベントリ] タブのイメージ。](../../media/mtp-device-profile/hybrid-device-tab-software-inventory.png)
 
 既定のビューには、ソフトウェア ベンダー、インストールされているバージョン番号、既知のソフトウェアの弱点の数、脅威の分析情報、製品コード、およびタグが表示されます。 表示されるアイテムの数と表示される列の両方をカスタマイズできます。
 
@@ -158,7 +158,7 @@ Microsoft Defender for Endpoint に登録されているデバイスには、タ
 
 [ **検出された脆弱性] タブ** には、デバイスに影響を与える可能性のある一般的な脆弱性と悪用 (CVEs) が一覧表示されます。
 
-![デバイス プロファイルの [検出された脆弱性] タブの画像](../../media/mtp-device-profile/hybrid-device-tab-discovered-vulnerabilities.png)
+![デバイス プロファイルの [検出された脆弱性] タブのイメージ。](../../media/mtp-device-profile/hybrid-device-tab-discovered-vulnerabilities.png)
 
 既定のビューには、CVE の重大度、共通の脆弱性スコア (CVS)、CVE に関連するソフトウェア、CVE が公開された場合、CVE が最後に更新された場合、および CVE に関連する脅威が一覧表示されます。
 
@@ -170,7 +170,7 @@ Microsoft Defender for Endpoint に登録されているデバイスには、タ
 
 [ **不足している KB]** タブには、デバイスにまだ適用されていない Microsoft 更新プログラムが一覧表示されます。 問題の "KB" は、これらの [更新プログラムについて説明](https://support.microsoft.com/help/242450/how-to-query-the-microsoft-knowledge-base-by-using-keywords-and-query) するサポート技術情報の記事です。たとえば [、KB4551762](https://support.microsoft.com/help/4551762/windows-10-update-kb4551762).
 
-![デバイス プロファイルの不足している kbs タブのイメージ](../../media/mtp-device-profile/hybrid-device-tab-missing-kbs.PNG)
+![デバイス プロファイルの不足している kbs タブのイメージ。](../../media/mtp-device-profile/hybrid-device-tab-missing-kbs.PNG)
 
 既定のビューには、更新プログラム、OS バージョン、影響を受ける製品、アドレス指定された CVEs、KB 番号、およびタグが含まれるセキュリティ情報が一覧表示されます。
 
@@ -178,7 +178,7 @@ Microsoft Defender for Endpoint に登録されているデバイスには、タ
 
 アイテムを選択すると、更新プログラムにリンクするフライアウトが開きます。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 * [Microsoft 365 Defender概要](microsoft-365-defender.md)
 * [Microsoft 365 Defender を有効にする](m365d-enable.md)

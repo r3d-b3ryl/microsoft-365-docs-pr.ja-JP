@@ -16,12 +16,12 @@ ms.collection:
 description: 管理者は、セキュリティ ポータルのテナント許可/ブロック一覧で許可を構成する方法について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9a9b682307c9891aab8e73496916205368734b369ecea2f6e43d73f2c2640fbf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 977cd2d099d9c5be7fc0db9ef61f31f28afdc9fe
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56884531"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563768"
 ---
 # <a name="add-allows-in-the-tenant-allowblock-list"></a>テナントの許可/禁止リストの許可リストを追加する
 
@@ -40,7 +40,7 @@ ms.locfileid: "56884531"
 
 1. [ポータル] Microsoft 365 Defender[メール]**に移動し、[&]** \> **に移動します**。
 
-2. [申請 **] ページで**、[分析用に送信済み] タブが選択されているのを確認し、[分析のために Microsoft に送信する] の [広告] アイコン ![ ](../../media/m365-cc-sc-create-icon.png) **をクリックします**。
+2. [申請 **] ページで** 、[分析用に **送信済み** ] タブが選択されているのを確認し、[広告] アイコン ![ をクリックします。](../../media/m365-cc-sc-create-icon.png) **分析のために Microsoft に送信します**。
 
 3. 送信者、 **ファイル、または** URL を誤検知としてマークするには、[Microsoft に送信] を使用してレビュー フライアウトを行います。 
 
@@ -53,7 +53,7 @@ ms.locfileid: "56884531"
 7. 完了したら、[送信] ボタン **をクリック** します。
 
 > [!div class="mx-imgBorder"]
-> ![誤検知申請の例](../../media/admin-submission-allow-messages.png)
+> ![誤検知申請の例。](../../media/admin-submission-allow-messages.png)
 
 ## <a name="create-spoofed-sender-allow-entries-using-microsoft-365-defender"></a>スプーフィングされた送信者許可エントリを作成するには、Microsoft 365 Defender
 
@@ -66,7 +66,7 @@ ms.locfileid: "56884531"
 
 1. このポータルMicrosoft 365 Defender、[ポリシー] & **[** 脅威ポリシー ルール] セクションの [テナントの許可/ブロックリスト \>  \>  \> **] に移動します**。
 
-2. [テナントの **許可/ブロックリスト] ページで** 、[スプーフィング] タブ **を選択** し、[ブロック] アイコン ![ [追加] を ](../../media/m365-cc-sc-create-icon.png) **クリックします**。
+2. [テナントの **許可/ブロック一覧** ] ページで、[スプーフィング] タブ **を選択** し、[ブロック] アイコン ![ をクリックします。](../../media/m365-cc-sc-create-icon.png) **[追加]** 。
 
 3. 表示される **[新しいドメイン ペアの追加** ] フライアウトで、次の設定を構成します。
    - **ワイルドカードを使用して新しいドメイン ペア** を追加する: 1 行に 1 つのドメイン ペアを入力し、最大 20 まで入力します。 スプーフィングされた送信者エントリの構文の詳細については [、「Manage the Tenant Allow/Block List」を参照してください](tenant-allow-block-list.md)。

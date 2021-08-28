@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 電子メール アカウントの一般的なMicrosoft 365のトラブルシューティングに役立つ監査ログ検索ツールを使用する方法について説明します。
-ms.openlocfilehash: b24306b65a6f5eab59865f09c996892ef24660a0
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: 4f90d618fd72c41a3c1d3d6ff1600f3d6d10bbfc
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502725"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564208"
 ---
 # <a name="search-the-audit-log-to-investigate-common-support-issues"></a>監査ログを検索して、一般的なサポートの問題を調査する
 
@@ -110,11 +110,11 @@ ms.locfileid: "58502725"
 
 検索を実行した後、検索結果ページ **で [結果の** フィルター] を選択します。 [アクティビティ] 列ヘッダー **の下** のボックスに **「Set-Mailbox」** と入力し **、Set-Mailbox** コマンドレットに関連する監査レコードだけが表示されます。
 
-![監査ログの検索結果をフィルター処理する](../media/emailforwarding1.png)
+![監査ログ検索の結果をフィルター処理します。](../media/emailforwarding1.png)
 
 この時点で、各監査レコードの詳細を確認して、アクティビティがメール転送に関連しているかどうかを判断する必要があります。 監査レコードを選択して [ **詳細]** フライアウト ページを表示し、[詳細情報] **を選択します**。 次のスクリーンショットと説明では、メールボックスで電子メール転送が設定されたと示す情報が強調表示されます。
 
-![監査レコードから得られる詳細情報](../media/emailforwarding2.png)
+![監査レコードの詳細情報。](../media/emailforwarding2.png)
 
 a. [**ObjectId**] フィールドに、電子メール転送が設定されたメールボックスのエイリアスが表示されます。また、このメールボックスは検索結果ページの [**項目**] 列にも表示されます。
 
@@ -156,11 +156,11 @@ Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null
 
 **ソフト削除された項目の AffectedItems フィールドの例**
 
-![ソフト削除された項目の監査レコード](../media/softdeleteditem.png)
+![ソフト削除されたアイテムの監査レコード。](../media/softdeleteditem.png)
 
 **ハード削除された項目の AffectedItems フィールドの例**
 
-![ハード削除されたメール項目の監査レコード](../media/harddeleteditem.png)
+![ハード削除された電子メール アイテムの監査レコード。](../media/harddeleteditem.png)
 
 ### <a name="recover-deleted-email-items"></a>削除されたメール アイテムを復元する
 
@@ -190,7 +190,7 @@ Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null
 
 検索を実行すると、このアクティビティのすべての監査レコードが検索結果に表示されます。 監査レコードを選択して [ **詳細]** フライアウト ページを表示し、[詳細情報] **を選択します**。 受信トレイのルール設定に関する情報は、**[パラメーター]** フィールドに表示されます。 次のスクリーンショットと説明では、受信トレイ ルールに関する情報を強調表示します。
 
-![新しい受信トレイ ルールに関する監査レコード](../media/NewInboxRuleRecord.png)
+![新しい受信トレイ ルールの監査レコード。](../media/NewInboxRuleRecord.png)
 
 a. [**ObjectId**] フィールドに受信トレイ ルールの完全な名前が表示されます。この名前には、ユーザーのメールボックスのエイリアス (たとえば SaraD) と受信トレイ ルールの名前 (たとえば「管理者からのメッセージを移動」) が含まれます。
 
@@ -211,7 +211,7 @@ d.  UserId **フィールドは、ObjectId** フィールドで指定された�
 
 パススルー認証の結果であるユーザーログインの監査レコード内の関連プロパティの例と説明を次に示します。 監査レコードを選択して [ **詳細]** フライアウト ページを表示し、[詳細情報] **を選択します**。
 
-![成功したパススルー認証の監査レコードの例](../media/PassThroughAuth1.png)
+![成功したパススルー認証の監査レコードの例。](../media/PassThroughAuth1.png)
 
    a. このフィールドは、組織内のリソースにアクセスしようとしたユーザーが組織の Azure リソースに見つからなかったAD。
 
@@ -235,7 +235,7 @@ UserLoggedIn 監査レコードに表示されるその他のプロパティの�
 
 - 監査レコードにログインしているユーザーで識別された外部ユーザーによって実行されるアクティビティの監査 **ログを** 検索します。 [ユーザー] ボックスに外部ユーザーのUPN を入力し、シナリオに関連する場合は日付範囲を使用します。 たとえば、次の検索条件を使用して検索を作成できます。
 
-   ![外部ユーザーが実行したすべてのアクティビティを検索する](../media/PassThroughAuth2.png)
+   ![外部ユーザーが実行したすべてのアクティビティを検索します。](../media/PassThroughAuth2.png)
 
     ユーザーがログインしたアクティビティに加えて、組織内のユーザーが外部ユーザーとリソースを共有し、外部ユーザーが共有されたドキュメントにアクセス、変更、またはダウンロードしたかどうかを示す、他の監査レコードが返される場合があります。
 

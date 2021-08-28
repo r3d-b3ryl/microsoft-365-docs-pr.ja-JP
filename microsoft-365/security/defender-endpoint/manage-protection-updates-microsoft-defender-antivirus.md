@@ -15,12 +15,12 @@ ms.reviewer: pahuijbr
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: cb90623629be58122b985088ddce0ec26e24dc53c0772a7f3a6f09bfa2467731
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 412b42fd7ac67326552f23c4d6cc0909daa60aa6
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833596"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565846"
 ---
 # <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>Microsoft Defender ウイルス対策更新プログラムのソースを管理する
 
@@ -73,7 +73,7 @@ Microsoft Update では、最高レベルの保護を確保するために、迅
 
 各ソースには、次の表で説明するように、更新プログラムを発行する頻度に加えて、ネットワークの構成方法に依存する一般的なシナリオがあります。
 
-|場所|シナリオ例|
+|Location|シナリオ例|
 |---|---|
 |Windowsサーバー更新サービス|サーバー更新サービスWindows使用して、ネットワークの更新プログラムを管理しています。|
 |Microsoft Update|エンドポイントを Microsoft Update に直接接続する必要があります。 これは、エンタープライズ ネットワークに不定期に接続するエンドポイントや、Windows サーバー更新サービスを使用して更新プログラムを管理しない場合に役立ちます。|
@@ -102,9 +102,9 @@ Microsoft Update では、最高レベルの保護を確保するために、迅
 
    2. 次のスクリーンショットに示すように、1 つのパイプで区切られたソースの順序 `InternalDefinitionUpdateServer|MicrosoftUpdateServer|MMPC` を入力します。たとえば、次のようにします。
 
-      :::image type="content" source="../../media/wdav-order-update-sources.png" alt-text="ソースの順序を示すグループ ポリシー設定":::
+      :::image type="content" source="../../media/wdav-order-update-sources.png" alt-text="ソースの順序を示すグループ ポリシー設定。":::
 
-   3. **[OK]** をクリックします。 これにより、保護更新プログラムのソースの順序が設定されます。
+   3. **[OK]** を選択します。 これにより、保護更新プログラムのソースの順序が設定されます。
 
    4. [セキュリティ インテリジェンス更新プログラムをダウンロード **するための** ファイル共有の定義] 設定をダブルクリックし、オプションを [有効] に **設定します**。
 

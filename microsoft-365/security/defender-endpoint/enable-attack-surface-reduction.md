@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.date: 08/17/2021
-ms.openlocfilehash: 4f1ec369913054e8fe119cebf3d647b42c133d34
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 7682192c3afd181667845fc2202120c481968356
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58595670"
+ms.locfileid: "58567618"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>攻撃面の減少ルールを有効にする
 
@@ -97,7 +97,7 @@ ASR ルールを有効にする次の手順には、ファイルとフォルダ�
 
 ## <a name="intune"></a>Intune
 
-1. [デバイス **構成プロファイル** \> **] を選択します**。 既存のエンドポイント保護プロファイルを選択するか、新しいエンドポイント保護プロファイルを作成します。 新しいプロファイルを作成するには、[プロファイルの作成] **を選択し** 、このプロファイルの情報を入力します。 [プロファイル **の種類] で**、[ **エンドポイント保護] を選択します**。 既存のプロファイルを選択した場合は、[プロパティ] を選択 **し、[プロパティ**] を選択 **設定。**
+1. [デバイス **構成プロファイル**  >  **] を選択します**。 既存のエンドポイント保護プロファイルを選択するか、新しいエンドポイント保護プロファイルを作成します。 新しいプロファイルを作成するには、[プロファイルの作成] **を選択し** 、このプロファイルの情報を入力します。 [プロファイル **の種類] で**、[ **エンドポイント保護] を選択します**。 既存のプロファイルを選択した場合は、[プロパティ] を選択 **し、[プロパティ**] を選択 **設定。**
 
 2. [エンドポイント保護 **] ウィンドウで**、[Exploit **Guard] をWindows Defenderし**、[攻撃表面の縮小 **] を選択します**。 各 ASR ルールの目的の設定を選択します。
 
@@ -180,7 +180,7 @@ ASR ルールを有効にする次の手順には、ファイルとフォルダ�
     > [!NOTE]
     > ルールはアクティブで、数分以内に有効です。
 
-> [!NOTE]
+>[!NOTE]
 > 競合の処理:
 >
 > デバイスに 2 つの異なる ASR ポリシーを割り当てると、競合の処理方法は、異なる状態が割り当てられたルールであり、競合管理が行われるので、結果はエラーになります。
@@ -217,9 +217,9 @@ ASR ルールを有効にする次の手順には、ファイルとフォルダ�
 
 ## <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 
-1. この **Microsoft Endpoint Configuration Manager、Exploit** Guard の [アセットと \> **コンプライアンス] Endpoint Protection Windows Defender** \> **移動します**。
+1. この **Microsoft Endpoint Configuration Manager、Exploit** Guard の [アセットと  >  **コンプライアンス] Endpoint Protection Windows Defender**  >  **移動します**。
 
-2. [ホーム **エクスプ** \> **ロイト ガード ポリシーの作成] を選択します**。
+2. [ホーム **エクスプ**  >  **ロイト ガード ポリシーの作成] を選択します**。
 
 3. 名前と説明を入力し、[攻撃表面の縮小] を **選択** し、[次へ] を **選択します**。
 
@@ -238,7 +238,7 @@ ASR ルールを有効にする次の手順には、ファイルとフォルダ�
 
 2. **[グループ ポリシー管理エディター]** で、**[コンピューターの構成]** に移動し、**[管理用テンプレート]** を選択します。
 
-3. ツリーを展開して **、攻撃Windows縮小** \> **Microsoft Defender ウイルス対策Microsoft Defender Exploit Guard** \>  \> **コンポーネントを表示します**。
+3. ツリーを展開して **、攻撃Windows縮小**  >  **Microsoft Defender ウイルス対策Microsoft Defender Exploit Guard**  >    >  **コンポーネントを表示します**。
 
 4. [攻撃 **表面縮小ルールの構成] を選択し、[** 有効] を **選択します**。 その後、[オプション] セクションで各ルールの個別の状態を設定できます。
 
@@ -322,5 +322,7 @@ ASR ルールを有効にする次の手順には、ファイルとフォルダ�
 ## <a name="related-articles"></a>関連記事
 
 - [攻撃面の減少ルール](attack-surface-reduction-rules.md)
+
 - [攻撃表面の縮小を評価する](evaluate-attack-surface-reduction.md)
+
 - [攻撃面の減少の FAQ](attack-surface-reduction.md)

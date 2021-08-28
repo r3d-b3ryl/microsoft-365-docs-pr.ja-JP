@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: Microsoft 365 のグループ レポートで、グループとそのアクティビティについて確認します。
-ms.openlocfilehash: f899b742cb4d7098c1b8bcf7b51563e009dcd0217c74fb71f6bc98944650c681
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8c96d0bdbc42e4cebec47bde532afd6288d29613
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53816381"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564932"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>管理センターでの Microsoft 365 レポート - Microsoft 365 グループ
 
@@ -49,7 +49,7 @@ Microsoft 365 の [**レポート**] ダッシュボードには、組織内で�
 
 [列 **の選択]** を選択して、レポートの列を追加または削除します。
 
-:::image type="content" alt-text="Office 365アクティビティ レポート - 列の選択" source="../../media/1600556a-f5f1-47d9-b325-cd77c78f4004.png":::
+:::image type="content" alt-text="Office 365グループアクティビティ レポート - 列を選択します。" source="../../media/1600556a-f5f1-47d9-b325-cd77c78f4004.png":::
 
 また、[**エクスポート**] リンクを選択して、レポート データを Excel の .csv ファイルにエクスポートすることもできます。 これにより、すべてのユーザーのデータがエクスポートされ、単純な並べ替えとフィルター処理を行ってさらに分析することができます。 ユーザー数が 2000 未満である場合は、レポート自体のテーブル内で並べ替えとフィルター処理を行うことができます。 ユーザー数が 2000 を超える場合は、フィルター処理と並べ替えを行うために、データをエクスポートする必要があります。 
 

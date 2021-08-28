@@ -20,12 +20,12 @@ ms.custom:
 description: この記事では、リストから削除するポータルを使用して、受信拒否リストから自分を削除Microsoft 365について学習します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7beee058a85d7ab44a6a4a94b362fa669537f573754de8558d713332d897843f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f1c4c09af11829d2b4d902211baff9fb8e6cfb11
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56886161"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566504"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>無効化ポータルを使って、受信拒否リストから自分自身を削除する
 
@@ -56,7 +56,7 @@ Microsoft は、受信拒否リストを使って、スパム、スプーフィ�
 
 3. [ **保存**] をクリックします。
 
-    ポータルは、指定したメール アドレスにメールを送信します。 電子メールは次のようになります。削除ポータルから要求を送信するときに受信した電子メールの ![ スクリーンショット](../../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)
+    ポータルは、指定したメール アドレスにメールを送信します。 電子メールは、削除ポータルを通じて要求を送信するときに受信した電子メールのスクリーンショットのようになります ![ 。](../../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)
 
 4. リストから除外のポータルから受信したメールの中にある確認のリンクをクリックします。
 

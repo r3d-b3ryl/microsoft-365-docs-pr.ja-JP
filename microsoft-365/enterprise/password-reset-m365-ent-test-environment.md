@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: '概要: Microsoft 365 テスト環境のパスワードのリセットを構成してテストします。'
-ms.openlocfilehash: 999709558a468d53bc809662dbcc270fa8a9945b
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: aa332b2778aefa84948a9bc57d20d28f117a4df3
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356506"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565880"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>Microsoft 365 テスト環境のパスワードのリセット
 
@@ -38,7 +38,7 @@ SSPR のセットアップには、次の 3 つのフェーズがあります。
 - [フェーズ 2: パスワード ライトバックの有効化](#phase-2-enable-password-writeback)
 - [フェーズ 3: パスワードのリセットを構成してテストする](#phase-3-configure-and-test-password-reset)
     
-![Microsoft クラウドのテスト ラボ ガイド](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Microsoft クラウドのテスト ラボ ガイド。](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > エンタープライズ テスト ラボ ガイド スタックの Microsoft 365 内のすべての記事への視覚的なマップについては、「Microsoft 365 テスト ラボ ガイド スタック」[を参照してください](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
@@ -49,7 +49,7 @@ SSPR のセットアップには、次の 3 つのフェーズがあります。
 
 結果の構成は次のように表示されます。
   
-![パスワード ハッシュ同期を実装するシミュレーション エンタープライズ テスト環境](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
+![パスワード ハッシュ同期テスト環境を持つシミュレートされたエンタープライズ。](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
   
 この構成は、次の内容で成立します。
   

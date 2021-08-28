@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 01b79cb0-e206-4a3a-aaef-b10941770f87
 description: Bookings モバイル アプリはまだ世界中で利用できません。 この記事では、アプリが現在利用可能な地域の一覧を示します。
-ms.openlocfilehash: 551ce6efb3c310d7864b24d29190d662445e6b226babf3870a56a1643c3d067b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2ac3338423cb2c9f472e28bba2be748bed2d7fd0
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53815092"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566086"
 ---
 # <a name="get-the-microsoft-bookings-app-for-ios-and-android"></a>iOS と Android 用の Microsoft Bookings アプリを取得する
 
@@ -24,7 +24,7 @@ Microsoft の予約 アプリをダウンロードしていただきありがと
 
 1. お探しのアプリが見つかりませんか? アプリ 起動ツールから [すべてのアプリ] を選択すると、利用可能なアプリのアルファベットMicrosoft 365一覧が表示されます。 そこから、特定のアプリを検索できます
 
-   ![アプリ 起動ツールのイメージ](../media/bookings-all-apps-launcher.png)
+   ![アプリ起動ツールのイメージ。](../media/bookings-all-apps-launcher.png)
 
 2. ホーム ページ [のOfficeし、](https://office.com)アプリ起動ツールから [予約]**を選択します**。
 

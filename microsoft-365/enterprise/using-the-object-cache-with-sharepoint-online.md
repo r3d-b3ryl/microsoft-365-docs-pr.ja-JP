@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 38bc9c14-3826-449c-beb6-b1003bcbeaaf
 description: この記事では、オンプレミスのサーバー 2013 および SharePoint Online でオブジェクト キャッシュを使用するSharePoint説明します。
-ms.openlocfilehash: 669a68e949c5e83be794644e0d4b9ae117c69e6282f2d0ea15f96a0ad3e90461
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 40863ccf375620cf4b38d231fa0a86336c4826cc
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53894855"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566724"
 ---
 # <a name="using-the-object-cache-with-sharepoint-online"></a>Online でオブジェクト キャッシュをSharePointする
 
@@ -36,7 +36,7 @@ ms.locfileid: "53894855"
 
 サーバー 2013 SharePointオンプレミスでホストされている場合、顧客はオブジェクト キャッシュをホストするプライベート フロントエンド Web サーバーを持っています。 つまり、キャッシュは 1 人の顧客専用であり、使用可能なメモリ量とオブジェクト キャッシュへの割り当て量によってのみ制限されます。 オンプレミスのシナリオでは、1 人の顧客だけがサービスを受け取るので、フロントエンド Web サーバーは通常、同じサイトに対して要求を行うユーザーを持っています。 つまり、キャッシュはすばやく完全に取得され、リスト クエリの結果と、ユーザーが定期的に要求しているSharePointオブジェクトの完全な状態を維持します。
   
-![オンプレミスのフロントエンド Web サーバーへのトラフィックと負荷を示しています](../media/a0d38b36-4909-4abb-8d4e-4930814bb3de.png)
+![オンプレミスのフロントエンド Web サーバーへのトラフィックと負荷を表示します。](../media/a0d38b36-4909-4abb-8d4e-4930814bb3de.png)
   
 その結果、ユーザーが 2 回目にページにアクセスすると、ページの読み込み時間が向上します。 同じページを少なくとも 4 回読み込むと、すべてのフロントエンド Web サーバーにページがキャッシュされます。
   
@@ -44,7 +44,7 @@ ms.locfileid: "53894855"
   
 次の図では、各ドットは、ユーザーが要求しているページと、そのページがキャッシュされた場所を表しています。 色が異なると、SaaS インフラストラクチャを共有して利用する顧客が異なります。
   
-![SharePoint Online におけるオブジェクト キャッシュの結果を示します](../media/25d04011-ef83-4cb7-9e04-a6ed490f63c3.png)
+![[オンライン] のオブジェクト キャッシュの結果SharePointします。](../media/25d04011-ef83-4cb7-9e04-a6ed490f63c3.png)
   
 図から分かっている通り、キャッシュされたバージョンのページでサーバーにアクセスする可能性は薄いです。 また、スループットが大きく、サーバーが多くのサイト間で共有されているという事実により、キャッシュに使用できる領域が非常に多いので、キャッシュは長持ちしません。
   

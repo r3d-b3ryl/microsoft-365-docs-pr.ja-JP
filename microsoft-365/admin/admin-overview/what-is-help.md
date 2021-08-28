@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ROBOTS: NOINDEX
 description: このツールを使用してヘルプを取得できるすべての方法についてMicrosoft 365 管理センター。
-ms.openlocfilehash: c011b68e07843956a558d26e42d0c0cd9a328451
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: 873f8fb6d016a7ac7a5468154d2c79285ea064ec
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394350"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564540"
 ---
 <!-- The following is just placeholder text from Madhura's mail. We need to add images/examples of each -->
 
@@ -46,7 +46,7 @@ ms.locfileid: "58394350"
 
 ヘルプは管理センター全体に <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">統合</a>され、必要なときにすぐそこに表示されます。 多くのページの上部には、タスクの概要を説明するインライン ヘルプ テキストと、より詳細な学習のための公式ドキュメントをすばやく見つけ出す記事へのリンクがあります。
 
-![インライン ヘルプと記事へのリンクを示すグループ ページ](../../media/integrated-help.png)
+![インライン ヘルプと記事へのリンクを示すグループ ページ。](../../media/integrated-help.png)
 
 ## <a name="modern-self-help-powered-by-ai"></a>AI によるモダンなセルフヘルプ
 
@@ -54,7 +54,7 @@ ms.locfileid: "58394350"
 
 または、特定の状況で何かを行う方法が分からない場合は、サポート アシスタントを使用します。 現在、このエクスペリエンスは英語でのみ利用できます。 サポート アシスタントを有効にする場合は、[ヘルプが必要] ウィンドウの上部にあるトグル **を使用** します。 サポート アシスタントは、ユーザーを支援する会話型インターフェイスを提供します。 クエリを入力すると、チャットボットは質問を明確にし、特定の状況に対する正しい答えを得る。 ソリューションを発見し、タスクを完了するための仮想ヘルパーと考えて下さい。
 
-![モダンセルフヘルプ](../../media/help-options.png)
+![モダンなセルフ ヘルプ。](../../media/help-options.png)
 
 もちろん、人間が質問に最も答える場合があります。 最新のセルフ ヘルプに回答が得てない場合は、常にサポート エージェントに問い合わせできます。
 

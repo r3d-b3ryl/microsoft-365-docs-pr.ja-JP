@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: ba256583-03ca-429e-be4d-a92d9c221ad6
 description: 従業員、パートナー、Microsoft 365などのユーザーまたは連絡先をメール配布グループに追加する方法について学習します。
-ms.openlocfilehash: a5cce43d37eb67b40f284b732aa8cb997c14bc30e9c7f359247170195073e9cb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: af7581a7541835185a7cc8df12dcc58b779243ca
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53832792"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566330"
 ---
 # <a name="add-a-user-or-contact-to-a-distribution-group"></a>配布グループにユーザーまたは連絡先を追加する
 
@@ -43,7 +43,7 @@ ms.locfileid: "53832792"
 
 4. [メンバー **の表示] ページ** で、[ **メンバーの追加**] を選択し、配布グループに追加するユーザーまたは連絡先を選択します。 
     
-    ![配布グループにメンバーを追加する](../../media/f79f59f8-1606-43fe-bae6-df74f5b6259d.png)
+    ![配布グループにメンバーを追加します。](../../media/f79f59f8-1606-43fe-bae6-df74f5b6259d.png)
   
 5. [保存 **] を選択** し、[閉じる] **を選択します**。
 

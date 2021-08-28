@@ -18,12 +18,12 @@ ms.collection:
 description: 新しい注目に値するトラッカーを含む脅威トラッカーについて学び、組織がセキュリティ上の懸念事項を引き受けるのに役立ちます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8beeceec6c98af093d2fff30e4553a36cdcce28634fadc03cc37c22b96fc4848
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6ab8cf03b7ceb1ec01e6b30d3b0c11bbb7223b6f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56877741"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566526"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>脅威トラッカー - 新機能とNoteworthy 機能 
 
@@ -42,11 +42,11 @@ ms.locfileid: "56877741"
 
 脅威トラッカーは、企業に影響を与える可能性のあるさまざまなサイバーセキュリティの問題に関するインテリジェンスを提供する有益なウィジェットとビューです。 たとえば、脅威トラッカーを使用して、マルウェア キャンペーンの傾向に関する情報を表示できます。
 
-![マルウェア キャンペーンを表示する脅威トラッカーの例](../../media/a883b5ac-8e2b-469a-90e0-f8ad39bb63b7.png)
+![マルウェア キャンペーンを表示する脅威トラッカーの例。](../../media/a883b5ac-8e2b-469a-90e0-f8ad39bb63b7.png)
 
 ほとんどのトラッカー ページには、定期的に更新される傾向の数値、最も大きい問題や最も大きくなった問題を理解するためのウィジェット、エクスプローラーに移動する [アクション] 列のクイック リンクが含まれています。詳細な情報を表示できます。
 
-![エクスプローラーのキャンペーン情報の例](../../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png)
+![エクスプローラーのキャンペーン情報の例。](../../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png)
 
 トラッカーは、計画 2 の Microsoft Defender で取得する多くの素晴[Office 365ほんの一部です](office-365-ti.md)。 脅威トラッカーには[、Noteworth トラッカー](#noteworthy-trackers) [、Trending trackers、Tracked](#trending-trackers)[クエリ](#tracked-queries)、および[保存されたクエリが含まれます](#saved-queries)。
 
@@ -65,7 +65,7 @@ ms.locfileid: "56877741"
 
 傾向トラッカー (以前はキャンペーンと呼ばばれ) は、過去 1 週間に組織のメールで受け取った新しい脅威を強調表示します。
 
-![マルウェア キャンペーン の傾向ウィジェットの例](../../media/d2ccc1a0-2a1d-4e36-99b5-6766c207772f.png)
+![マルウェア キャンペーン ウィジェットの傾向の例。](../../media/d2ccc1a0-2a1d-4e36-99b5-6766c207772f.png)
 
 トレンド トラッカーを使用すると、より広範な企業環境が攻撃に対して準備されるのを確認するために確認する必要がある新しい脅威のアイデアを提供します。
 
@@ -73,13 +73,13 @@ ms.locfileid: "56877741"
 
 追跡されたクエリは、保存されたクエリを利用して、組織のMicrosoft 365を定期的に評価します。 これにより、イベントの傾向が示されます。その他の情報は、次の数か月で提供されます。 追跡されたクエリは自動的に実行され、クエリを再実行する必要なく、最新の情報が提供されます。
 
-![1 つを選択した追跡クエリの例](../../media/0c556174-06eb-4ae5-b32a-5ff76b9e4f13.png)
+![1 つを選択した追跡クエリの例。](../../media/0c556174-06eb-4ae5-b32a-5ff76b9e4f13.png)
 
 ### <a name="saved-queries"></a>保存されたクエリ
 
 保存されたクエリは、[トラッカー] セクションにも表示されます。 保存済みクエリを使用すると、検索を毎回作成し戻さずに、より迅速かつ繰り返し取得する一般的なエクスプローラー検索を格納できます。
 
-![1 つが選択された保存済みクエリの例](../../media/188cf3ff-58f1-41ea-81aa-76158d8f40c3.png)
+![1 つを選択して保存されたクエリの例。](../../media/188cf3ff-58f1-41ea-81aa-76158d8f40c3.png)
 
 [エクスプローラー] ページの上部にある [クエリの保存] ボタンを使用して、注目に値するトラッカー クエリまたは独自のエクスプローラー クエリをいつでも保存できます。 そこに保存されたクエリは、[トラッカー] ページ **の [保存済** みクエリ] リストに表示されます。
 
@@ -89,13 +89,13 @@ ms.locfileid: "56877741"
 
 また、右下隅にある [フィードバック] ボタンをクリックすると、Microsoft 365または他のセキュリティ機能に関するフィードバックをいつでも提供できます。
 
-![Microsoft 365 Defender ポータル](../../media/microsoft-365-defender-portal.png)
+![Microsoft 365 Defenderポータル。](../../media/microsoft-365-defender-portal.png)
 
 ## <a name="trackers-and-microsoft-defender-for-office-365"></a>トラッカーと Microsoft Defender for Office 365
 
 初の注目に値する脅威では、添付ファイルによって検出された高度なマルウェアの脅威[セーフ強調表示しています](safe-attachments.md)。 E5 のお客様Office 365 Enterprise Microsoft Defender を[Office 365](defender-for-office-365.md)に使用していない場合は、サブスクリプションに含まれている必要があります。 Defender for Office 365は、メール フローをフィルター処理する他のセキュリティ ツールがある場合でも、Office 365します。 ただし、スパム対策とメール セーフ[リンク](safe-links.md)機能は、メインの電子メール セキュリティ ソリューションが電子メール セキュリティ ソリューションを使用している場合にOffice 365。
 
-![Microsoft Defender for Office 365ポータルMicrosoft 365 Defender](../../media/policies.png)
+![Microsoft Defender for Office 365ポータルMicrosoft 365 Defenderします。](../../media/policies.png)
 
 今日の脅威が多い世界では、従来のマルウェア対策スキャンのみを実行すると、攻撃から十分に保護されていないという意味です。 今日のより高度な攻撃者は、一般的に利用可能なツールを使用して、従来の署名ベースのマルウェア対策エンジンでは認識されない新しい、難読化された、または遅延攻撃を作成します。 [セーフ添付ファイル] 機能は、電子メールの添付ファイルを受け取り、仮想環境で電子メールの添付ファイルを削除して、安全か悪意かを判断します。 このデトレーション プロセスは、仮想コンピューター環境内の各ファイルを開き、ファイルを開いた後に何が起こるかを監視します。 PDF、圧縮ファイル、または Office ドキュメントの場合、悪意のあるコードはファイル内で非表示にされ、被害者がコンピューターで開くとアクティブ化されます。 電子メール フロー内のファイルを削除して分析することにより、Defender for Office 365 の機能は、動作、ファイル評価、および多くのヒューリスティック ルールに基づいてこれらの脅威を検出します。
 

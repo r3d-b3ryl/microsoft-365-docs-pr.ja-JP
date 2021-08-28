@@ -20,16 +20,16 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
-ms.openlocfilehash: 02cc7298afe202ae004a1fff84ea6961535c5b2e2972d08da6527946d7253fae
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e66f9133959ce7f09915361e7583ae809e33647e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53900019"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567678"
 ---
 # <a name="learn-about-privileged-access-management"></a>特権アクセス管理の詳細
 
-特権アクセスの管理では、Office 365 の特権的管理タスクを細かくアクセス制限できます。 これは、機密データや重要な構成設定への継続的なアクセス権を持つ既存の特権管理アカウントが使用される違反から組織を保護するために役立ちます。 特権アクセス管理では、ユーザーは、高度にスコープが設定された時間にバインドされた承認ワークフローを通じて、管理者特権と特権のあるタスクを完了するために、Just-in-time アクセスを要求する必要があります。 この構成では、機密性の高いデータや重要な構成の設定を危険にさらすことなくタスクが行えるように、ユーザーに十分なアクセス権が与えられます。 特権アクセス管理を Microsoft 365有効にすると、組織はゼロの特権で動作し、永続的な管理アクセスの脆弱性に対する防御層を提供できます。
+特権アクセスの管理では、Office 365 の特権的管理タスクを細かくアクセス制限できます。 これは、機密データや重要な構成設定への継続的なアクセス権を持つ既存の特権管理アカウントが使用される違反から組織を保護するために役立ちます。 特権アクセス管理では、ユーザーが Just-In-Time のアクセスを要求し、広範囲で時間に制約がある承認ワークフローを介して、昇格した特権タスクを完了する必要があります。 この構成では、機密性の高いデータや重要な構成の設定を危険にさらすことなくタスクが行えるように、ユーザーに十分なアクセス権が与えられます。 特権アクセス管理を Microsoft 365有効にすると、組織はゼロの特権で動作し、永続的な管理アクセスの脆弱性に対する防御層を提供できます。
 
 統合された Customer Lockbox と特権アクセス管理ワークフローの概要については、このカスタマー ロックボックスと特権アクセス管理ビデオ [を参照してください](https://go.microsoft.com/fwlink/?linkid=2066800)。
 
@@ -37,7 +37,7 @@ ms.locfileid: "53900019"
 
 特権アクセス管理は、Microsoft 365 セキュリティ アーキテクチャ内の他のデータおよびアクセス機能保護を補完します。 セキュリティへの統合および階層化アプローチの一部として特権アクセス管理を含めると、機密情報と Microsoft 365 の構成設定の保護を最大化するセキュリティ モデルが実現されます。 図に示すように、特権アクセス管理は、Microsoft 365 データのネイティブ暗号化と Microsoft 365 サービスの役割ベースのアクセス制御セキュリティ モデルで提供される保護に基づいて構築されています。 Azure AD Privileged Identity Management[と](/azure/active-directory/active-directory-privileged-identity-management-configure)一緒に使用する場合、これらの 2 つの機能は、さまざまなスコープで Just-in-time アクセスを使用してアクセス制御を提供します。
 
-![ユーザーのレイヤー Microsoft 365](../media/pam-layered-protection.png)
+![Microsoft 365 のレイヤー Microsoft 365。](../media/pam-layered-protection.png)
 
 特権アクセス管理はタスク レベルで定義およびスコープ設定され、Azure AD Privileged Identity Management は複数のタスクを実行する機能を持つロール レベルで保護を適用します。 Azure AD Privileged Identity Management では、主に AD の役割および役割グループへのアクセスを管理できます。また、Microsoft 365 の特権アクセス管理はタスク レベルにのみ適用されます。
 
@@ -53,25 +53,25 @@ ms.locfileid: "53900019"
 
 Microsoft 365 管理センター または[Exchange](https://admin.microsoft.com) Management PowerShell を使用して特権アクセス ポリシーを構成する場合は、ポリシーと特権アクセス機能プロセスとポリシー属性を Microsoft 365 基板に定義します。 アクティビティはセキュリティ コンプライアンス センターに &amp; 記録されます。 ポリシーが有効になり、承認の受信要求を処理する準備が整いました。
 
-![手順 1: ポリシーの作成](../media/pam-step1-policy-creation.jpg)
+![手順 1: ポリシーの作成。](../media/pam-step1-policy-creation.jpg)
 
 ### <a name="step-2-access-request"></a>手順 2: アクセス要求
 
 管理者または[Microsoft 365 管理センター](https://admin.microsoft.com)管理 PowerShell で、ユーザーは管理者特権Exchangeタスクへのアクセスを要求できます。 特権アクセス機能は、構成された特権アクセス ポリシーに対して処理Microsoft 365要求を送信し、セキュリティ コンプライアンス センター ログにアクティビティを &amp; 記録します。
 
-![手順 2: アクセス要求](../media/pam-step2-access-request.jpg)
+![手順 2: アクセス要求。](../media/pam-step2-access-request.jpg)
 
 ### <a name="step-3-access-approval"></a>手順 3: アクセスの承認
 
 承認要求が生成され、保留中の要求通知が承認者にメールで送信されます。 承認された場合、特権アクセス要求は承認として処理され、タスクを完了する準備が整います。 拒否された場合、タスクはブロックされ、要求者へのアクセスは許可されません。 アクセスの要求者にはメール メッセージで要求の承認または拒否が通知されます。
 
-![手順 3: アクセスの承認](../media/pam-step3-access-approval.jpg)
+![手順 3: 承認にアクセスします。](../media/pam-step3-access-approval.jpg)
 
 ### <a name="step-4-access-processing"></a>手順 4: アクセスの処理
 
 承認された要求の場合、タスクは Exchange 管理実行空間によって処理されます。 承認は、特権アクセス ポリシーに対してチェックされ、Microsoft 365 サブストレートによって処理されます。 タスクのすべてのアクティビティがセキュリティ コンプライアンス センターに &amp; 記録されます。
 
-![手順 4: アクセスの処理](../media/pam-step4-access-processing.jpg)
+![手順 4: アクセス処理。](../media/pam-step4-access-processing.jpg)
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 

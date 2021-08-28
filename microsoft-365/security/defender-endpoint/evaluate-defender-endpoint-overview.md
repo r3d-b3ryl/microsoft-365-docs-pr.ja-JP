@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 9b497770086537beaf0e20bd4fc5773257ace5e2f40aae3fe7695c99f009d38b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2c9e5d06b13cb2fa64ed9d51977ee13af19c92f8
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53890613"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567606"
 ---
 # <a name="evaluate-microsoft-365-defender-for-endpoint-overview"></a>エンドポイントMicrosoft 365 Defenderの概要を評価する
 
@@ -34,7 +34,7 @@ ms.locfileid: "53890613"
 
 - Microsoft 365 Defender
 
-![Microsoft 365 Defender評価およびパイロット プロセス](../../media/defender/m365-defender-eval-process.png)
+![Microsoft 365 Defender評価およびパイロット プロセス。](../../media/defender/m365-defender-eval-process.png)
 
 包括的なセキュリティ製品評価は複雑なプロセスであり、エンドツーエンドの攻撃シミュレーションを実際に行う前に、面倒な環境とデバイス構成が必要になります。 複雑さを加えるのは、シミュレーション アクティビティ、アラート、および結果が評価中に反映される場所を追跡する際の課題です。
 

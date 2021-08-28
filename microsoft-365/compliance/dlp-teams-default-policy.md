@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: このページの既定のデータ損失防止ポリシーについてMicrosoft Teams
-ms.openlocfilehash: 6358ec692142aa5f2c47007133cb99ec080621f8452234f1260a65e5cd7f9c21
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8f021031bd1dc3672a7aa7123ce01d4c6536fe77
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53814248"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567738"
 ---
 # <a name="learn-about-the-default-data-loss-prevention-policy-in-microsoft-teams-preview"></a>Microsoft Teams の既定のデータ損失防止ポリシーについて学ぶ (プレビュー)
 
@@ -47,7 +47,7 @@ ms.locfileid: "53814248"
 
 
 > [!div class="mx-imgBorder"]
-> ![既定Teams DLP ポリシー](../media/default-teams-dlp-policy.png)
+> ![DLP ポリシー Teams既定の値を使用します。](../media/default-teams-dlp-policy.png)
 
 ## <a name="edit-or-delete-the-default-policy"></a>既定のポリシーを編集または削除する
 

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 予測スコア フィルターを使用して、予測コーディング モデルが関連性がある、または関連性が低いと予測されるアイテムを表示します。
-ms.openlocfilehash: 99cc9aee90c57f6f48053a6ef7e5a622a15295aa16089416081913ac6e5d3473
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 34a9b4da55443cae6c2334952f60b94953b0d9d4
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53865837"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567702"
 ---
 # <a name="apply-a-prediction-score-filter-to-a-review-set-preview"></a>予測スコア フィルターをレビュー セットに適用する (プレビュー)
 
@@ -41,7 +41,7 @@ Advanced eDiscovery で予測コーディング モデルを作成し、それ�
 
 1. [ファイル] Microsoft 365 コンプライアンス センターケースを開Advanced eDiscovery、[レビュー セット] タブを選択し、レビュー セットを開きます。
 
-   ![[フィルター] をクリックして [フィルター] フライアウト ページを表示します。](..\media\PredictionScoreFilter0.png)   
+   ![[フィルター] をクリックして 、[フィルター] フライアウト ページを表示します。](..\media\PredictionScoreFilter0.png)   
 
    事前に読み込まれた既定のフィルターは、レビュー セット ページの上部に表示されます。 これらの設定は Any のままに **できます**。
 
@@ -49,7 +49,7 @@ Advanced eDiscovery で予測コーディング モデルを作成し、それ�
 
 3. **[Analytics &予測コーディング] セクションを展開** して、一連のフィルターを表示します。
 
-      ![[Analytics &コーディング] セクションの予測スコア フィルター](..\media\PredictionScoreFilter1.png)
+      ![[Analytics] セクションの [予測&フィルター] をクリックします。](..\media\PredictionScoreFilter1.png)
 
    予測スコア フィルターの名前付け規則は、 **予測スコア (モデル名) です**。 たとえば、モデル **A** という名前のモデルの予測スコア フィルター名は **、予測スコア (モデル A) です**。
 
@@ -57,7 +57,7 @@ Advanced eDiscovery で予測コーディング モデルを作成し、それ�
 
 5. [レビュー セット] ページで、予測スコア フィルターのドロップダウンをクリックし、予測スコア範囲の最小値と最大値を入力します。 たとえば、次のスクリーンショットは、.5 ~ **1.0** の予測スコア **範囲を示しています**。
 
-   ![予測スコア フィルターの最小値と最大値](..\media\PredictionScoreFilter2.png)
+   ![予測スコア フィルターの最小値と最大値。](..\media\PredictionScoreFilter2.png)
 
 6. フィルターの外側をクリックすると、自動的にレビュー セットにフィルターが適用されます。
 
@@ -66,6 +66,6 @@ Advanced eDiscovery で予測コーディング モデルを作成し、それ�
   > [!TIP]
   > ドキュメントに割り当てる実際の予測スコアを表示するには、閲覧ウィンドウの **[メタデータ** ] タブをクリックします。 レビュー セット内のすべてのモデルの予測スコアは **、RelevanceScores メタデータ** プロパティに表示されます。
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 - フィルターの使用の詳細については、「レビュー セットの [コンテンツのクエリとフィルター」を参照してください](review-set-search.md)。

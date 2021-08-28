@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: '概要: Microsoft 365 テスト環境のパスワード ハッシュ同期とサインインを構成して実例を示します。'
-ms.openlocfilehash: a71c7046967d796d59d3ba9ae5ff42d1e0d6bcf9
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: dbf4b2ca694ee9dc81a5b02ebd0f7cf3820d0f1d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58355942"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565892"
 ---
 # <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Microsoft 365 テスト環境のパスワード ハッシュ同期
 
@@ -34,7 +34,7 @@ ms.locfileid: "58355942"
 
 この記事では、テスト環境にパスワード ハッシュ同期を追加する方法Microsoft 365説明します。この構成になります。
   
-![パスワード ハッシュ同期を実装するシミュレーション エンタープライズ テスト環境](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
+![パスワード ハッシュ同期テスト環境を持つシミュレートされたエンタープライズ。](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
   
 このテスト環境のセットアップには、次の 3 つのフェーズがあります。
 - [フェーズ 1: Microsoft 365 のシミュレートされたエンタープライズ テスト環境を作成する](#phase-1-create-the-microsoft-365-simulated-enterprise-test-environment)
@@ -48,7 +48,7 @@ ms.locfileid: "58355942"
 
 シミュレーションされたエンタープライズ ベース構成[の手順に](simulated-ent-base-configuration-microsoft-365-enterprise.md)従って、Microsoft 365。 結果の構成は次のように表示されます。
   
-![シミュレートされたエンタープライズ基本構成](../media/password-hash-sync-m365-ent-test-environment/Phase1.png)
+![シミュレートされたエンタープライズ ベース構成。](../media/password-hash-sync-m365-ent-test-environment/Phase1.png)
   
 この構成は、次の内容で成立します。
   
@@ -65,7 +65,7 @@ ms.locfileid: "58355942"
 
 結果の構成は次のように表示されます。
   
-![testlab ドメイン名の登録](../media/password-hash-sync-m365-ent-test-environment/Phase2.png)
+![testlab ドメイン名の登録。](../media/password-hash-sync-m365-ent-test-environment/Phase2.png)
   
 この構成は、次の内容で成立します。
 
@@ -132,7 +132,7 @@ User1 は、TESTLAB AD DS ドメインのドメイン管理者のアクセス許
 
 結果の構成は次のように表示されます。
 
-![パスワード ハッシュ同期を実装するシミュレーション エンタープライズ テスト環境](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
+![パスワード ハッシュ同期テスト環境を持つシミュレートされたエンタープライズ。](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
 
 この構成は、次の内容で成立します。 
   

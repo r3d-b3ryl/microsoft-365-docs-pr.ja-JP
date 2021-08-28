@@ -16,12 +16,12 @@ ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
 ms.technology: m365d
-ms.openlocfilehash: c9ede5f9e21dcf2c2e7081286a2cf5df55e7f850f3398534a59c8e1ee87c349a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 84107a54c47c3bfe68cd7740e1e06ff40b11957a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53792631"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563928"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>自動調査と応答機能を構成する方法は、Microsoft 365 Defender
 
@@ -90,7 +90,7 @@ Microsoft は、特定のリスク [を特定するのに](../../compliance/aler
 
 ## <a name="make-sure-microsoft-365-defender-is-turned-on"></a>有効になっているMicrosoft 365 Defender確認する
 
-:::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="MTP on":::
+:::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="MTP on。":::
 
 1. ポータル () にサインインMicrosoft 365 Defenderします [https://security.microsoft.com](https://security.microsoft.com) 。
 

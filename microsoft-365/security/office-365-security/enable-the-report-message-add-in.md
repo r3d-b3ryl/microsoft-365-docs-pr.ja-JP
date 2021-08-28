@@ -17,12 +17,12 @@ ms.collection:
 description: レポート メッセージまたはレポート フィッシング アドインを Outlook および Outlook on the web、個々のユーザーまたは組織全体に対して有効にする方法について学習します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 35d84f9b960f466c76adf1f278d8d3a40a725f38
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: f7c077521700a8bd4c7d1997bb87bab0f214337d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258586"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563792"
 ---
 # <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>レポート メッセージまたはレポートフィッシング アドインを有効にする
 
@@ -83,7 +83,7 @@ Microsoft では、これらの申請を使用して、電子メール保護テ�
 
 2. [今 **すぐ取得] をクリックします**。
 
-   ![レポート メッセージ - 今すぐ取得する](../../media/ReportMessageGETITNOW.png)
+   ![レポート メッセージ - 今すぐ取得します。](../../media/ReportMessageGETITNOW.png)
 
 3. 表示されるダイアログで、使用条件とプライバシー ポリシーを確認し、[続行] を **クリックします**。
 
@@ -94,12 +94,12 @@ Microsoft では、これらの申請を使用して、電子メール保護テ�
 - このOutlookアイコンは次のように表示されます。
 
   > [!div class="mx-imgBorder"]
-  > ![レポート メッセージ アドインのアイコン (Outlook](../../media/OutlookReportMessageIcon.png)
+  > ![[レポート メッセージ] アドインのアイコン (Outlook)。](../../media/OutlookReportMessageIcon.png)
 
 - このOutlook on the webアイコンは次のように表示されます。
 
   > [!div class="mx-imgBorder"]
-  > ![Outlook on the web[レポート メッセージ] アドイン アイコン](../../media/owa-report-message-icon.png)
+  > ![Outlook on the web[レポート メッセージ] アドイン アイコン。](../../media/owa-report-message-icon.png)
 
 ### <a name="get-the-report-message-add-in-for-your-organization"></a>組織のレポート メッセージ アドインを取得する
 
@@ -110,17 +110,17 @@ Microsoft では、これらの申請を使用して、電子メール保護テ�
 
 2. ページ **の上部にある [アドインの** 展開] を選択し、[次へ] を **選択します**。
 
-   ![[サービスとアドイン] ページ (Microsoft 365 管理センター](../../media/ServicesAddInsPageNewM365AdminCenter.png)
+   ![[サービスとアドイン] ページは、Microsoft 365 管理センター。](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
 3. 表示される **[新しいアドインの展開]** フライアウトで、情報を確認し、[次へ] を **クリックします**。
 
 4. 次のページで、[ストアから **選択] をクリックします**。
 
-   ![新しいアドイン ページの展開](../../media/NewAddInScreen2.png)
+   ![新しいアドイン ページを展開します。](../../media/NewAddInScreen2.png)
 
-5. 表示される **[アドインの選択] ページ** で、[検索]ボックスをクリックし、[レポート メッセージ] と入力し、[検索検索] アイコン **を** ![ クリックします ](../../media/search-icon.png) 。 結果の一覧で、[レポート メッセージ] **を探し、[** 追加] を **クリックします**。
+5. 表示される **[アドインの選択**] ページで、[検索]ボックスをクリックし、[レポート メッセージ] と入力し、[検索検索] アイコン **を** ![ クリックします ](../../media/search-icon.png) 。 結果の一覧で、[レポート メッセージ] **を探し、[** 追加] を **クリックします**。
 
-   ![アドインの検索結果を選択する](../../media/NewAddInScreen3.png)
+   ![[アドインの検索結果] を選択します。](../../media/NewAddInScreen3.png)
 
 6. 表示されるダイアログで、ライセンスとプライバシー情報を確認し、[続行] を **クリックします**。
 
@@ -136,29 +136,29 @@ Microsoft では、これらの申請を使用して、電子メール保護テ�
      - **利用可能**: ユーザーは、ホーム アドイン \> **の取得** 管理でアドイン \> **をインストールできます**。
      - **オプション**: アドインは指定したユーザーに自動的に展開されますが、削除を選択できます。
 
-   ![[アドインの構成] ページ](../../media/configure-add-in.png)
+   ![アドイン ページを構成します。](../../media/configure-add-in.png)
 
    完了したら、[展開] を **クリックします**。
 
 8. 表示される **[レポート メッセージの展開** ] ページに、進行状況レポートが表示され、その後にアドインが展開されたという確認が表示されます。 情報を読んだら、[次へ] を **クリックします**。
 
-   ![[レポート メッセージの展開] ページ](../../media/deploy-report-message-page.png)
+   ![[レポート メッセージの展開] ページ。](../../media/deploy-report-message-page.png)
 
 9. 表示される **[アドインのアナウンス] ページ** で、情報を確認し、[閉じる] を **クリックします**。
 
-   ![[アドインのアナウンス] ページ](../../media/announce-add-in-page.png)
+   ![[アドインのアナウンス] ページ。](../../media/announce-add-in-page.png)
 
 ## <a name="review-or-edit-settings-for-the-report-message-add-in"></a>レポート メッセージ アドインの設定を確認または編集する
 
 1. [Microsoft 365 管理センター] で、[アドイン] ページの \> **[設定] に移動** します <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> 。 アドイン ページが表示しない場合は、[統合アプリ] ページの上部にある [設定 統合アプリ アドイン] リンク \>  \> **に移動** します。
 
-   ![新しい Add-Ins センターの [サービスとMicrosoft 365 管理] ページ](../../media/ServicesAddInsPageNewM365AdminCenter.png)
+   ![新しいAdd-Insセンターの [サービスとMicrosoft 365 管理] ページ。](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
 2. レポート メッセージ アドインを **検索して** 選択します。
 
 3. 表示される **[レポート メッセージの編集** ] フライアウトで、組織に合った設定を確認および編集します。 完了したら、**[保存]** をクリックします。
 
-   ![設定 メッセージ アドインの詳細](../../media/EditReportMessageAddIn.png)
+   ![設定レポート メッセージ アドインの詳細を確認します。](../../media/EditReportMessageAddIn.png)
 
 ## <a name="get-the-report-phishing-add-in"></a>レポートフィッシング アドインを取得する
 
@@ -176,12 +176,12 @@ Microsoft では、これらの申請を使用して、電子メール保護テ�
 
 - このOutlookアイコンは次のように表示されます。
 
-  ![アプリの [フィッシング アドインのレポート] Outlook](../../media/Outlook-ReportPhishing.png)
+  ![[フィッシング アドインのレポート] アイコン (Outlook)。](../../media/Outlook-ReportPhishing.png)
 
 - このOutlook on the webアイコンは次のように表示されます。
 
   > [!div class="mx-imgBorder"]
-  > ![Outlook on the web[フィッシング アドインのレポート] アイコン](../../media/OWA-ReportPhishing.png)
+  > ![Outlook on the web[フィッシング アドインのレポート] アイコン。](../../media/OWA-ReportPhishing.png)
 
 ### <a name="get-the-report-phishing-add-in-for-your-organization"></a>組織のレポート フィッシング アドインを取得する
 
@@ -192,13 +192,13 @@ Microsoft では、これらの申請を使用して、電子メール保護テ�
 
 2. ページ **の上部にある [アドインの** 展開] を選択し、[次へ] を **選択します**。
 
-   ![[サービスとアドイン] ページ (Microsoft 365 管理センター](../../media/ServicesAddInsPageNewM365AdminCenter.png)
+   ![[サービスとアドイン] ページは、Microsoft 365 管理センター。](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
 3. 表示される **[新しいアドインの展開]** フライアウトで、情報を確認し、[次へ] を **クリックします**。
 
 4. 次のページで、[ストアから **選択] をクリックします**。
 
-   ![新しいアドイン ページの展開](../../media/NewAddInScreen2.png)
+   ![新しいアドイン ページを展開します。](../../media/NewAddInScreen2.png)
 
 5. 表示される **[アドインの選択**] ページで、[検索]ボックスをクリックし、[レポートフィッシング] と入力し、[検索検索] アイコン **を** ![ クリックします ](../../media/search-icon.png) 。 結果の一覧で[レポートフィッシング] **を探し、[** 追加] を **クリックします**。
 

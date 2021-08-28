@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f504ac86dcef68bf4427819babea119b2418512bee59e169ffd72e51a6dd92dd
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5436494d8d94097e15f67e3b568727fe510113ef
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53873465"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565716"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>グループ内のインシデントに優先順位をMicrosoft 365 Defender
 
@@ -42,7 +42,7 @@ Microsoft 365 Defender関連するアラートと、さまざまな製品から�
 
 インシデント ポータル (security.microsoft.com)の&でインシデント>アラートからインシデント キューに[Microsoft 365 Defender取得します](https://security.microsoft.com)。 次に例を示します。
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="インシデント キューの例":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="インシデント キューの例。":::
 
 [ **最新のインシデントと** 通知] セクションには、過去 24 時間に受信したアラートとインシデントが作成された数のグラフが表示されます。
 
@@ -63,14 +63,14 @@ Microsoft 365 Defender関連するアラートと、さまざまな製品から�
 
 既定のインシデント キューから [フィルター] を **選択して** [フィルター] ウィンドウを表示し、そこからフィルター処理されたインシデントのセットを表示できます。 次に例を示します。
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="インシデント キューのフィルター ウィンドウの例":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="インシデント キューのフィルター ウィンドウの例。":::
 
 次の表に、使用可能なフィルター名を示します。
 
-| フィルター名 | Description |
+| フィルター名 | 説明 |
 |:-------|:-----|
 | 割り当て先 | 自分に割り当てられているアラート、または自動化によって処理されたアラートを表示できます。 |
-| カテゴリ | カテゴリを選択して、見られる特定の戦術、テクニック、または攻撃コンポーネントに焦点を当てる。 |
+| Categories | カテゴリを選択して、見られる特定の戦術、テクニック、または攻撃コンポーネントに焦点を当てる。 |
 | 分類 | 関連するアラートの一連の分類に基づいてインシデントをフィルター処理します。 値には、true アラート、false アラート、または設定されていないが含まれます。 |
 | データの機密性 | 一部の攻撃では、機密データや貴重なデータを排除することを目的としています。 機密データがインシデントに関与しているかどうかを確認するためにフィルター処理を適用することにより、機密情報が侵害されている可能性があるかどうかを迅速に判断し、それらのインシデントへの対処に優先順位を付けることができます。 <br><br> Microsoft Information Protection が有効になっている場合にのみ適用されます。|
 | デバイス グループ | 定義済みのデバイス グループでフィルター処理します。 |

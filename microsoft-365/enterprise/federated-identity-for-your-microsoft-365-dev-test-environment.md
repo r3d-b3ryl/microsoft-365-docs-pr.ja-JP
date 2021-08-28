@@ -20,12 +20,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: '概要: Microsoft 365 テスト環境用にフェデレーション認証を構成します。'
-ms.openlocfilehash: dea2c5fe85ffb30f6195e4f76765422fb22f20b4
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 1cca1b0b5f7b345d7d9ed5f5cd23f9b742542529
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356758"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567414"
 ---
 # <a name="federated-identity-for-your-microsoft-365-test-environment"></a>Microsoft 365 テスト環境のフェデレーション ID
 
@@ -35,9 +35,9 @@ Microsoft 365 は、フェデレーション ID をサポートします。つ�
   
 この記事では、テスト環境に対してフェデレーション認証を構成するMicrosoft 365、次の結果について説明します。
 
-![Microsoft 365 テスト環境のフェデレーション認証](../media/federated-identity-for-your-microsoft-365-dev-test-environment/federated-tlg-phase3.png)
+![テスト環境のフェデレーションMicrosoft 365認証。](../media/federated-identity-for-your-microsoft-365-dev-test-environment/federated-tlg-phase3.png)
   
-この構成は、次の内容で構成されます:
+この構成は、次の内容で成立します。
   
 - 試用版Microsoft 365 E5のサブスクリプション。
     
@@ -57,7 +57,7 @@ Microsoft 365 は、フェデレーション ID をサポートします。つ�
 
 パスワード ハッシュ同期の手順[に従](password-hash-sync-m365-ent-test-environment.md)って、Microsoft 365。 結果の構成は次のように表示されます。
   
-![パスワード ハッシュ同期を実装するシミュレーション エンタープライズ テスト環境](../media/federated-identity-for-your-microsoft-365-dev-test-environment/federated-tlg-phase1.png)
+![パスワード ハッシュ同期テスト環境を持つシミュレートされたエンタープライズ。](../media/federated-identity-for-your-microsoft-365-dev-test-environment/federated-tlg-phase1.png)
   
 この構成は、次の内容で成立します。
   
@@ -106,7 +106,7 @@ Restart-Computer
 
 結果の構成は次のように表示されます。
   
-![Microsoft 365 テスト環境の DirSync に追加された AD FS サーバー](../media/federated-identity-for-your-microsoft-365-dev-test-environment/federated-tlg-phase2.png)
+![テストAD用に DirSync に追加された FS Microsoft 365します。](../media/federated-identity-for-your-microsoft-365-dev-test-environment/federated-tlg-phase2.png)
   
 ## <a name="phase-3-create-the-web-proxy-server"></a>フェーズ 3：Web プロキシ サーバーを作成する
 
@@ -173,7 +173,7 @@ Add-DnsServerResourceRecordA -Name "fs" -ZoneName corp.contoso.com -AllowUpdateA
   
 結果の構成は次のように表示されます。
   
-![Microsoft 365 テスト環境の DirSync に追加された Web アプリケーション プロキシ サーバー](../media/federated-identity-for-your-microsoft-365-dev-test-environment/federated-tlg-phase3.png)
+![テスト環境用に DirSync に追加された web アプリケーション Microsoft 365サーバー。](../media/federated-identity-for-your-microsoft-365-dev-test-environment/federated-tlg-phase3.png)
   
 ## <a name="phase-4-create-a-self-signed-certificate-and-configure-adfs1-and-proxy1"></a>フェーズ 4:自己署名証明書を作成し、ADFS1 と PROXY1 を構成する
 
@@ -253,7 +253,7 @@ Install-WindowsFeature ADFS-Federation -IncludeManagementTools
     
   - [ **フェデレーション サービスの表示名]** に、架空の組織の名前を入力します。
     
-  - [**次へ**] を選択します。
+  - **[次へ]** を選択します。
     
 7. [サービス アカウント **の指定] ページで** 、[アカウント **名の選択]** **を選択します**。
     
@@ -335,7 +335,7 @@ Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
     
   - [パスワード **] ボックス** に、User1 アカウントのパスワードを入力します。
     
-  - [**次へ**] を選択します。
+  - **[次へ]** を選択します。
     
 6. [FS **プロキシAD]** ページで、下矢印を選択し、フェデレーション サービス FQDN の証明書を選択し、[次へ] を選択 **します**。
     

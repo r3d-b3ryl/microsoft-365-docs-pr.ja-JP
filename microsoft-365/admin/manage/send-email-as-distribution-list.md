@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: a7c98273-067e-4162-b3a1-4ba081796012
 description: メールを配布リストとして送信Microsoft 365、メンバーがメッセージに返信すると、そのメールは配布リストから送信されたと思われる。
-ms.openlocfilehash: 83a94055386763b5908c872ce9b3b9971c4578e965ccd14b2f67558e4983c335
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 021f44591805385f0575d6fa2ca550289a72c82d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53824638"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566164"
 ---
 # <a name="send-email-as-a-distribution-list"></a>配布リストとして電子メールを送信する
 
@@ -49,9 +49,9 @@ ms.locfileid: "53824638"
     
 4. メッセージの下部で、[より多くの表示] **を** \> **選択します**。<br/> ![[詳細] を選択し、[Show From] を選択します。](../../media/534f13b7-9f15-48ea-8835-ea2ed1863ece.png)
   
-5. From アドレス (など) を右クリックし、[ `Ina@weewalter.me` 削除] を **選択します**。<br/> ![FROM エイリアスを削除する](../../media/9b8d8e8f-dc46-499c-89bd-0a480603bf1f.png)
+5. From アドレス (など) を右クリックし、[ `Ina@weewalter.me` 削除] を **選択します**。<br/> ![Remove the FROM alias.](../../media/9b8d8e8f-dc46-499c-89bd-0a480603bf1f.png)
   
-6. 次に、support@contoso.com などの配布リストを入力して、メッセージを送信します。 次に配布リストから返信すると、そのアドレスが [From] リストにオプションとして **表示** されます。<br/>![共有メールボックスのエイリアスが表示される](../../media/f7632a9a-9cab-446c-9e37-23ef50c5b975.png)
+6. 次に、support@contoso.com などの配布リストを入力して、メッセージを送信します。 次に配布リストから返信すると、そのアドレスが [From] リストにオプションとして **表示** されます。<br/>![共有メールボックスのエイリアスが表示されます。](../../media/f7632a9a-9cab-446c-9e37-23ef50c5b975.png)
 
 ## <a name="outlook"></a>Outlook
 

@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 2d9914dec5abcf87885404adbc5092605402a045
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 6629672ec43b157c2ce1c70d383d6772e5671260
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58599169"
+ms.locfileid: "58564024"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>インサイダーリスク管理設定の使用を開始する
 
@@ -408,6 +408,8 @@ Microsoft 365 で物理不良データ コネクタを有効にして、物理�
 
 > [!IMPORTANT]
 > 組織内の他のユーザーがフローにアクセスする必要がある場合は、フローを共有する必要があります。
+
+![Insider リスク管理のパワーは、フローを自動化します。](../media/insider-risk-settings-power-automate-flows.png)
 
 ### <a name="create-a-custom-power-automate-flow-for-insider-risk-management"></a>インサイダー リスク管理Power Automateカスタム の管理フローを作成する
 

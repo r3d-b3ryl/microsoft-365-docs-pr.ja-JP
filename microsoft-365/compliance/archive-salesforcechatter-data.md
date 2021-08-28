@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、Salesforce Chatter データを Veritas からユーザーにインポートおよびアーカイブするためのコネクタをMicrosoft 365。 このコネクタを使用すると、サードパーティのデータ ソースからデータをアーカイブできます。Microsoft 365。 このデータをアーカイブした後、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、サードパーティのデータを管理できます。
-ms.openlocfilehash: 0d4a547f7f0caffabfa978c71b0be010da084db07a929629be733621b613b702
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 258c5bd11f1b60cc2390d863a8765accc167735d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53866554"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566064"
 ---
 # <a name="set-up-a-connector-to-archive-salesforce-chatter-data"></a>Salesforce Chatter データをアーカイブするためのコネクタのセットアップ
 
@@ -29,7 +29,7 @@ Salesforce Chatter データをユーザーメールボックスに保存した�
 
 次の概要では、コネクタを使用して Salesforce Chatter データをアーカイブするプロセスについて説明Microsoft 365。
 
-![Salesforce Chatter データのアーカイブ ワークフロー](../media/SalesforceChatterConnectorWorkflow.png)
+![Salesforce Chatter データのアーカイブ ワークフロー。](../media/SalesforceChatterConnectorWorkflow.png)
 
 1. 組織は Salesforce Chatter と一緒に Salesforce Chatter サイトを設定および構成します。
 

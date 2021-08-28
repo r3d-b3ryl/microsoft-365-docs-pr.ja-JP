@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: アプリ管理ポリシーを作成、編集、または削除し、Android デバイスまたは iOS デバイス上の作業ファイルを保護する方法について説明します。
-ms.openlocfilehash: b3dc925d907c08708ce56c5f6b7a1d1a7d32096c
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.openlocfilehash: 1ab7c57e1a9da1a68c07535c2550f0762f7c8141
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360637"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564407"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>Android または iOS デバイスのアプリ保護設定を設定する
 
@@ -50,7 +50,7 @@ ms.locfileid: "58360637"
     
     [ **既定の設定に戻す**] リンクを使用すれば、既定の設定にいつでも戻すことができます。 
     
-    ![Screenshot of Create a policy with Application management for Android selected](../../media/eabbe06d-ac0a-4f3a-8630-68c808b1e662.png)
+    ![スクリーンショット: [Android 用アプリケーション管理を使用してポリシーを作成する] が選択されています。](../../media/eabbe06d-ac0a-4f3a-8630-68c808b1e662.png)
   
 6. Next decide **Who will get these settings?** 既定の [すべてのユーザー] セキュリティグループを使用しない場合は、[変更] を選択し、これらの設定を取得するセキュリティ グループを選択 \> **します**。
     

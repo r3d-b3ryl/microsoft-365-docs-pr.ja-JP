@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 815b962d56ca75dbd864579d7f26e24a587b74df
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: a253d1224f1c7a0e0be0b5478efcc78204cb4a27
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256542"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565750"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>高度な捜索のクエリ言語について学習する
 
@@ -117,7 +117,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 
 [クエリ **の実行] を** 選択して結果を表示します。 クエリ エディターの右上にある展開アイコンを使用して、検索クエリと結果に注目します。 
 
-![高度な検索クエリ エディターの Expand コントロールのイメージ](../../media/advanced-hunting-expand.png)
+![高度な検索クエリ エディターの Expand コントロールのイメージ。](../../media/advanced-hunting-expand.png)
 
 >[!TIP]
 >クエリ結果をグラフとして表示し、フィルターをすばやく調整できます。 ガイダンスについては、「 [クエリ結果の操作」を参照してください。](advanced-hunting-query-results.md)
@@ -167,13 +167,13 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 - 各クエリを空の行で分離します。
 - クエリを実行する前に、クエリの任意の部分にカーソルを置き、そのクエリを選択します。 これにより、選択したクエリだけが実行されます。 別のクエリを実行するには、カーソルを適切に移動し、[クエリの実行] **を選択します**。
 
-![複数のクエリを含むクエリ エディターのイメージ](../../media/mtp-ah/ah-multi-query.png)
+![複数のクエリを含むクエリ エディターのイメージ。](../../media/mtp-ah/ah-multi-query.png)
 
 ## <a name="use-sample-queries"></a>サンプル クエリを使用する
 
 [**はじめに**] セクションでは、一般的に使用されている演算子を使用した簡単なクエリーをいくつか提供します。 これらのクエリを実行して、少し変更してみてください。
 
-![高度な捜索ウィンドウの画像](../../media/advanced-hunting-get-started.png)
+![高度な狩猟ウィンドウのイメージ。](../../media/advanced-hunting-get-started.png)
 
 >[!NOTE]
 >基本的なクエリ サンプルとは別に、特定の脅威の捜索シナリオの[共有クエリ](advanced-hunting-shared-queries.md)にアクセスすることもできます。 ページの左側またはクエリ リポジトリの共有クエリ[をGitHubします](https://aka.ms/hunting-queries)。

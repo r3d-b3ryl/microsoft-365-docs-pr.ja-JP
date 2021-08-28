@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: '組織全体OneDrive for Businessのファイルと記憶域の総数を確認するには、使用状況レポートを参照してください。 '
-ms.openlocfilehash: 5b668880d03c2b14ee09361a68757ce5f6efb694f38e71e765d11a000fb04b61
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1dd5e595e1e7766bb3f4a4a3e67af02605bb7768
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53816309"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564818"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-usage"></a>Microsoft 365管理センターのレポート - OneDrive for Business使用状況
 
@@ -47,7 +47,7 @@ Microsoft 365 の [**レポート**] ダッシュボードには、組織内で�
 
 [使用状況] タブを選択すると、OneDriveレポートで使用状況を **表示** できます。<br/>![Microsoft 365レポート - Microsoft OneDrive利用状況レポート。](../../media/3cdaf2fb-1817-479b-a0e1-2afa228690cf.png)
 
-[列 **の選択]** を選択して、レポートの列を追加または削除します。  <br/> ![OneDriveレポート - 列を選択する](../../media/9ee80f25-cfe3-411d-8e31-08f1507d18c1.png)
+[列 **の選択]** を選択して、レポートの列を追加または削除します。  <br/> ![OneDriveレポート - 列を選択します。](../../media/9ee80f25-cfe3-411d-8e31-08f1507d18c1.png)
 
 また、[**エクスポート**] リンクを選択して、レポート データを Excel の .csv ファイルにエクスポートすることもできます。 これにより、すべてのユーザーのデータがエクスポートされ、単純な並べ替えとフィルター処理を行ってさらに分析することができます。 ユーザー数が 2000 未満である場合は、レポート自体のテーブル内で並べ替えとフィルター処理を行うことができます。 ユーザー数が 2000 を超える場合は、フィルター処理と並べ替えを行うために、データをエクスポートする必要があります。 
   

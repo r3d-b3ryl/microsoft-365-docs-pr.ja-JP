@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 87c24ae2-82e0-4d1e-be01-c3bcc3f18c60
 description: ライセンス認証レポートを取得して、Officeサブスクリプションをアクティブ化したユーザーを知り、追加のOffice必要なユーザーを特定する方法について学習します。
-ms.openlocfilehash: ee803dece4e66ede794677b99b3d27de29b53aed11ab590486b1a7bcd1a6c78b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: de5ca46cd8ecabb88e250c5fb754b9943a01d4e5
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53797890"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565014"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-office-activations"></a>Microsoft 365管理センターのレポート - Microsoft Officeアクティブ化
 
@@ -44,7 +44,7 @@ Microsoft 365 の [**レポート**] ダッシュボードには、組織内で�
   
 [ライセンス認証] タブを選択すると、Office 365レポートでライセンス認証 **を表示** できます。<br/>![Microsoft 365レポート - ライセンス認証Microsoft Office 365します。](../../media/e1df82a2-3336-4b38-b66c-b286c44b82ee.png)
 
-[列 **の選択]** を選択して、レポートの列を追加または削除します。  <br/> ![Office 365アクティブ化レポート - 列を選択する](../../media/d11a0efa-a067-4440-a4f3-71b618a90301.png)
+[列 **の選択]** を選択して、レポートの列を追加または削除します。  <br/> ![Office 365アクティブ化レポート - 列を選択します。](../../media/d11a0efa-a067-4440-a4f3-71b618a90301.png)
 
 また、[**エクスポート**] リンクを選択して、レポート データを Excel の .csv ファイルにエクスポートすることもできます。 これにより、すべてのユーザーのデータがエクスポートされ、単純な並べ替えとフィルター処理を行ってさらに分析することができます。 ユーザー数が 2000 未満である場合は、レポート自体のテーブル内で並べ替えとフィルター処理を行うことができます。 ユーザー数が 2000 を超える場合は、フィルター処理と並べ替えを行うために、データをエクスポートする必要があります。 
 

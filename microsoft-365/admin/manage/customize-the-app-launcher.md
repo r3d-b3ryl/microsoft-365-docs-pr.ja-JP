@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
 description: カスタム タイルをアプリ 起動ツールに追加して、メール、ドキュメント、アプリ、SharePointサイト、外部サイト、その他のリソースへのクイック リンクを作成します。
-ms.openlocfilehash: c7b1b36ce38c1d1abc2197b78d3fd70396484b7229db6ba1356dc67003420e6f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d13be7d4bb89a8d1cebd2d59026f58bdc62c4a15
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53825483"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566284"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>カスタム タイルをアプリ起動ツールに追加する
 
@@ -37,7 +37,7 @@ ms.locfileid: "53825483"
   
 SharePoint サイト、外部サイト、レガシー アプリなどをポイントするカスタム タイルをアプリ起動ツールに追加できます。カスタム タイルは、アプリ起動ツールの [ **すべて**] のアプリの下に表示されますが、[ **ホーム**] アプリにピン留めしたり、同じ操作を行うようにユーザーに指示したりできます。この操作により、関連サイト、アプリ、仕事に必要なリソースへのアクセスが容易になります。以下の例では、"Contoso Portal" と呼ばれるカスタム タイルを使って、組織の SharePoint イントラネット サイトにアクセスします。 
   
-![アプリ起動ツール](../../media/7acc06cc-ac7a-4c6e-8ea7-81570a5bdbab.png)
+![アプリ起動ツール。](../../media/7acc06cc-ac7a-4c6e-8ea7-81570a5bdbab.png)
   
 ## <a name="add-a-custom-tile-to-the-app-launcher"></a>カスタム タイルをアプリ起動ツールに追加する
 

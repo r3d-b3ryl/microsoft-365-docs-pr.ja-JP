@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a0daf8c36a4b216cd79d43e6832816350f554b8d9e7a307649552a6bf9c97e23
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: be60d8f4c8adae02a1a5e388a5b75e717dd5eb51
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853578"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565824"
 ---
 # <a name="exposure-score---threat-and-vulnerability-management"></a>露出スコア - 脅威と脆弱性の管理
 
@@ -45,7 +45,7 @@ ms.locfileid: "53853578"
 
 このカードは、時間の流れによる露出スコアの傾向を高レベルで表示します。 グラフ内のスパイクは、サイバーセキュリティの脅威に対する高い暴露を視覚的に示し、さらに調査することができます。
 
-![露出スコア カード](images/tvm_exp_score.png)
+![露出スコア カード。](images/tvm_exp_score.png)
 
 ## <a name="how-it-works"></a>メカニズム
 
@@ -61,7 +61,7 @@ ms.locfileid: "53853578"
 
 セキュリティに関する推奨事項を修正することで、脅威と脆弱性の暴露 [を削減します](tvm-security-recommendation.md)。 最も重要なセキュリティ推奨事項を修復して、露出スコアに最も大きな影響を与えます。これは、脅威と脆弱性の管理[ダッシュボードで確認できます](tvm-dashboard-insights.md)。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [デバイス向けの Microsoft セキュア スコア](tvm-microsoft-secure-score-devices.md)

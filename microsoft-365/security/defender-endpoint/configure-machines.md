@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 13e89f64a0b86249d69e3c36e52dc445b2d4c70438d3f16f62bc8758fa6b5b4a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b9d00ec13a08751882e7c699a4e029083dc08bc6
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53894471"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567870"
 ---
 # <a name="ensure-your-devices-are-configured-properly"></a>デバイスが正しく構成されていることを確認する
 
@@ -31,7 +31,7 @@ ms.locfileid: "53894471"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
 適切に構成されたデバイスを使用すると、脅威に対する全体的な回復力を高め、攻撃を検出して対応する機能を強化できます。 セキュリティ構成管理は、デバイスが次の条件を確実に実行するのに役立ちます。
 
@@ -41,7 +41,7 @@ ms.locfileid: "53894471"
 
 ナビゲーション **メニューから [構成の** 管理] をクリックして、[デバイス構成管理] ページを開きます。
 
-![[セキュリティ構成管理] ページ](images/secconmgmt_main.png)
+![[セキュリティ構成管理] ページ。](images/secconmgmt_main.png)
 
 *デバイス構成管理ページ*
 
@@ -77,7 +77,7 @@ Microsoft Intune および Microsoft 365 セキュリティ センターのデ�
 - デバイス コンプライアンス ポリシーへの読み取りアクセス許可
 - 組織へのアクセス許可の読み取り
 
-![Intune で必要なアクセス許可](images/secconmgmt_intune_permissions.png)
+![Intune で必要なアクセス許可。](images/secconmgmt_intune_permissions.png)
 
 *Intune のデバイス構成のアクセス許可*
 
@@ -92,4 +92,4 @@ Microsoft Intune および Microsoft 365 セキュリティ センターのデ�
 [Defender for Endpoint セキュリティ ベースラインへのコンプライアンスを強化する](configure-machines-security-baseline.md)|ベースラインのコンプライアンスと非準拠を追跡します。 セキュリティ ベースラインを Intune で管理されるその他のデバイスに展開します。
 [ASR ルールの展開と検出を最適化する](configure-machines-asr.md)|ルールの展開を確認し、セキュリティ センターで影響分析ツールを使用Microsoft 365調整します。
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-belowfoldlink)

@@ -25,12 +25,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: 多要素認証 (MFA) は、強力なパスワードと追加の検証方法の両方を使用します。
-ms.openlocfilehash: 56a72a7232abc5f0eb7a46beb27984425648a6db
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: d0f88043ecaa4d2dd990f74661e904351db97524
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394626"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566098"
 ---
 # <a name="multifactor-authentication-for-microsoft-365"></a>ユーザーの多要素認証Microsoft 365
 
@@ -97,7 +97,7 @@ Azure ポータル内の Azure AD の **プロパティ** ウィンドウで、�
 
 Azure ポータル内の Azure AD の **セキュリティ** ウィンドウで、条件付きアクセス ポリシーを構成します。
 
-![条件付きアクセスのメニュー オプションの画像](../../media/multi-factor-authentication-microsoft-365/conditional-access-mfa.png)
+![条件付きアクセスのメニュー オプションの図。](../../media/multi-factor-authentication-microsoft-365/conditional-access-mfa.png)
 
 条件付きアクセス ポリシーは、次のプランで使用できます。
 
@@ -144,7 +144,7 @@ Azure AD Identity Protection とリスク ベースの条件付きアクセス �
 
 ユーザー アカウントごとに MFA を有効にするには、ユーザー アカウント <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**の [**</a>アクティブなユーザー] ウィンドウMicrosoft 365 管理センター。
 
-![[アクティブ ユーザー] ページの [多要素認証オプションの画像]](../../media/multi-factor-authentication-microsoft-365/per-user-mfa.png)
+![[アクティブ ユーザー] ページの [多要素認証の画像] オプション。](../../media/multi-factor-authentication-microsoft-365/per-user-mfa.png)
 
 有効にすると、ユーザーが次回サインインしたときに、MFA に登録し、追加の確認方法を選択してテストするように求められます。
 

@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f709d0929b12d6f19121c6ca6c653f6484bab6c2ba2d3df52fda446b675deca5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8bdc8451d3f3885cb9704a954cae8f439cad1abf
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53806177"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565812"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-incidents-queue"></a>Microsoft Defender for Endpoint インシデント キューを表示して整理する
 
@@ -32,7 +32,7 @@ ms.locfileid: "53806177"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 インシデント **キューには、** ネットワーク内のデバイスからフラグが設定されたインシデントのコレクションが表示されます。 これにより、インシデントを分類して優先順位を付け、情報に基づいたサイバーセキュリティ対応の決定を作成できます。
 
@@ -48,7 +48,7 @@ ms.locfileid: "53806177"
 - ページ間の移動
 - フィルターの適用
 
-![インシデント キューの画像](images/atp-incident-queue.png)
+![インシデント キューのイメージ。](images/atp-incident-queue.png)
 
 ## <a name="sort-and-filter-the-incidents-queue"></a>インシデント キューの並べ替えとフィルター処理
 次のフィルターを適用して、インシデントの一覧を制限し、より集中したビューを取得できます。
@@ -59,7 +59,7 @@ ms.locfileid: "53806177"
 :---|:---
 高 </br>(赤) | 多くの場合、高度な永続的な脅威 (APT) に関連付けられている脅威。 これらのインシデントは、デバイスに与える損害の重大度が高いリスクを示しています。
 中 </br>(オレンジ) | 異常なレジストリ変更、疑わしいファイルの実行、攻撃段階の一般的な動作など、組織でまれに観察される脅威。
-低 </br>(黄色) | 組織を標的とする高度な脅威を必ずしも示すわけではない、一般的なマルウェアやハッキング ツールに関連する脅威。
+低い </br>(黄色) | 組織を標的とする高度な脅威を必ずしも示すわけではない、一般的なマルウェアやハッキング ツールに関連する脅威。
 情報 </br>(灰色) | 情報インシデントはネットワークに悪影響を及ぼすとは見なされませんが、追跡しておいた方が良い場合があります。
 
 ## <a name="assigned-to"></a>割り当て先

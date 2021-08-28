@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft Teamsチャネルは、データ損失防止 (DLP) ポリシーをサポートします。
-ms.openlocfilehash: a2ad3cdb3666550f5205eb3e1b7d1a7f6c6b3a66
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: 8dbc7ce992840101c464f64bd981c65e7703f8bd
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502965"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567762"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>データ損失防止と Microsoft Teams
 
@@ -72,18 +72,18 @@ DLP 保護は、エンティティに対してTeamsされます。
 
 [Exchange、Outlook、Outlook on the web、SharePoint](data-loss-prevention-policies.md#policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web) [Online、OneDrive for Business](data-loss-prevention-policies.md#policy-evaluation-in-onedrive-for-business-and-sharepoint-online-sites)サイト、および Office デスクトップ クライアントでの DLP の動作と同様に、アクションが DLP ポリシーでトリガーされるとポリシー ヒント[が](data-loss-prevention-policies.md#policy-evaluation-in-the-office-desktop-programs)表示されます。 ポリシー ヒントの例を次に示します。
 
-![[ブロックされたメッセージの通知] Teams](../media/dlp-teams-blockedmessage-notification.png)
+![[ブロックされたメッセージ通知] Teams。](../media/dlp-teams-blockedmessage-notification.png)
 
 ここでは、送信者がソーシャル セキュリティ番号を別のチャネルで共有Microsoft Teamsしました。 [ **実行できる操作] リンクは** 、送信者が問題を解決するためのオプションを提供するダイアログ ボックスを開きます。 送信者はポリシーを上書きするか、管理者に確認と解決を通知することができます。
 
-![ブロックされたメッセージを解決するためのオプション](../media/dlp-teams-blockedmessage-possibleactions.png)
+![ブロックされたメッセージを解決するためのオプション。](../media/dlp-teams-blockedmessage-possibleactions.png)
 
 組織では、ユーザーに DLP ポリシーの上書きを許可できます。 DLP ポリシーを構成する場合は、既定のポリシー ヒントを使用するか、組織の [ポリシー ヒント](#to-customize-policy-tips) をカスタマイズできます。
 
 この例に戻り、送信者がユーザー チャネルで社会保障番号を共有Teams、受信者が見た情報を次に示します。
 
 > [!div class="mx-imgBorder"]
-> ![ブロックされたメッセージ](../media/dlp-teams-blockedmessage-notification-to-user.png)
+> ![メッセージがブロックされました。](../media/dlp-teams-blockedmessage-notification-to-user.png)
 
 ### <a name="to-customize-policy-tips"></a>ポリシーのヒントをカスタマイズするには
 
@@ -98,12 +98,12 @@ DLP 保護は、エンティティに対してTeamsされます。
 4. 新しいルールを作成するか、ポリシーの既存のルールを編集します。
 
     > [!div class="mx-imgBorder"]
-    > ![ポリシーのルールの編集](../media/dlp-teams-editrule.png)
+    > ![ポリシーのルールを編集する。](../media/dlp-teams-editrule.png)
 
 5. [ユーザー通知 **] タブで** 、[メール テキストの **カスタマイズ** ] または [ポリシー ヒントのテキスト **オプションのカスタマイズ] を選択** します。
 
     > [!div class="mx-imgBorder"]
-    > ![ユーザー通知とポリシーヒントをカスタマイズする](../media/dlp-teams-editrule-usernotifications.png)<br/>  
+    > ![ユーザー通知とポリシーヒントをカスタマイズします。](../media/dlp-teams-editrule-usernotifications.png)<br/>  
 
 6. 電子メール通知やポリシー ヒントに使用するテキストを指定し、[保存] を **選択します**。
 
@@ -123,12 +123,12 @@ DLP 保護は、エンティティに対してTeamsされます。
 3. ポリシーを選択し、[場所] の下の値 **を確認します**。 チャットメッセージと **Teamsメッセージが表示される** 場合は、すべて設定されています。 編集しない場合は、[編集] を **クリックします**。
 
     > [!div class="mx-imgBorder"]
-    > ![既存のポリシーの場所](../media/dlp-teams-editexistingpolicy.png)
+    > ![既存のポリシーの場所。](../media/dlp-teams-editexistingpolicy.png)
 
 4. [状態 **] 列** で、チャットメッセージとチャネル メッセージのTeams **をオンにします**。
 
     > [!div class="mx-imgBorder"]
-    > ![チャットとチャネルTeams DLP](../media/dlp-teams-addteamschatschannels.png)
+    > ![チャットとチャネルTeams DLP。](../media/dlp-teams-addteamschatschannels.png)
 
 5. [場所 **の選択] タブ** で、すべてのアカウントの既定の設定を維持するか、[特定の場所を選択する] **を選択します**。 次の情報を指定できます。
 
@@ -156,7 +156,7 @@ DLP 保護は、エンティティに対してTeamsされます。
     この例では、米国の個人を特定できる情報データ テンプレートを選択しました。
 
     > [!div class="mx-imgBorder"]
-    > ![DLP ポリシーのプライバシー テンプレート](../media/dlp-teams-createnewpolicy-template.png)<br/>
+    > ![DLP ポリシーのプライバシー テンプレート。](../media/dlp-teams-createnewpolicy-template.png)<br/>
 
 4. [ポリシー **に名前を付け** ] タブで、ポリシーの名前と説明を指定し、[次へ] を **選択します**。
 
@@ -166,7 +166,7 @@ DLP 保護は、エンティティに対してTeamsされます。
     1. 配布リストとセキュリティ グループを含めるか除外します。 **これはパブリック プレビュー機能です。**
     <!-- 1. the shared mailbox of a shared channel. **This is a public preview feature.**-->  
 
-    ![DLP ポリシーの場所](../media/dlp-teams-selectlocationsnewpolicy.png)
+    ![DLP ポリシーの場所。](../media/dlp-teams-selectlocationsnewpolicy.png)
 
     > [!NOTE]
     > 機密情報を含むドキュメントが Teams で不適切に共有されない場合は **、SharePoint** サイトと **OneDrive** アカウントが Teams チャットメッセージとチャネル メッセージと共にオン **になっていることを** 確認します。
@@ -176,14 +176,14 @@ DLP 保護は、エンティティに対してTeamsされます。
 7.  [ポリシー **設定] タブ** の **[機密情報** が検出された場合の操作] で、設定を確認します。 ここでは、既定のポリシー ヒントと電子メール[](use-notifications-and-policy-tips.md)通知を保持するか、カスタマイズすることもできます。
 
     > [!div class="mx-imgBorder"]
-    > ![ヒントと通知を含む DLP ポリシー設定](../media/dlp-teams-policysettings-tipsemails.png)
+    > ![ヒントと通知を含む DLP ポリシー設定。](../media/dlp-teams-policysettings-tipsemails.png)
 
     設定の確認または編集が完了したら、[次へ] を **選択します**。
 
 8. [ポリシーの **設定**] タブの [ポリシーを有効にするか、最初にテストするのかを選択しますか **?]** で、ポリシーを有効 [](dlp-overview-plan-for-dlp.md#policy-deployment)にするか、最初にテストするか、今のところオフにしておき、[次へ] を選択します。
 
     > [!div class="mx-imgBorder"]
-    > ![ポリシーを有効にするかどうかを指定する](../media/dlp-teams-policysettings-turnonnow.png)
+    > ![ポリシーを有効にするかどうかを指定します。](../media/dlp-teams-policysettings-turnonnow.png)
 
 9. [設定 **の確認] タブ** で、新しいポリシーの設定を確認します。 [編集 **] を** 選択して変更を加えます。 完了したら、[作成] を **選択します**。
 
@@ -203,7 +203,7 @@ DLP 保護は、エンティティに対してTeamsされます。
         - 組織外のユーザー Microsoft 365からコンテンツを共有する
         
           > [!div class="mx-imgBorder"]
-          > ![機密性の高いコンテンツの外部共有を検出する DLP 条件](../media/dlp-teams-external-sharing/external-condition.png)
+          > ![機密性の高いコンテンツの外部共有を検出する DLP 条件。](../media/dlp-teams-external-sharing/external-condition.png)
 
     - **Actions**
         - 外部ユーザーのコンテンツへのアクセスを制限する
@@ -213,18 +213,18 @@ DLP 保護は、エンティティに対してTeamsされます。
         - インシデント レポートを管理者に送信する
         
         > [!div class="mx-imgBorder"]
-        > ![機密性の高いコンテンツの外部共有をブロックする DLP アクション](../media/dlp-teams-external-sharing/external-action.png)
+        > ![機密性の高いコンテンツの外部共有をブロックする DLP アクション。](../media/dlp-teams-external-sharing/external-action.png)
 
 機密情報を含むドキュメントを外部ゲストと共有SharePoint DLP ポリシーが動作します。
 
 > [!div class="mx-imgBorder"]
-> ![外部共有がブロックされている](../media/dlp-teams-external-sharing/external-sharing-blocked.png)
+> ![外部共有がブロックされました。](../media/dlp-teams-external-sharing/external-sharing-blocked.png)
 
 
 ゲストが外部ブロックを使用してドキュメントを開Teams DLP ポリシーが有効です。
 
 > [!div class="mx-imgBorder"]
-> ![外部アクセスがブロックされている](../media/dlp-teams-external-sharing/external-access-blocked.png)
+> ![外部アクセスがブロックされました。](../media/dlp-teams-external-sharing/external-access-blocked.png)
 
 ## <a name="related-articles"></a>関連記事
 

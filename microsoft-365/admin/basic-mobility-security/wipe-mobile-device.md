@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 組み込みの Basic Mobility and Security を使用して、登録済みデバイスから情報を削除します。
-ms.openlocfilehash: d9c31a037dfce1ad2a13cce8b384ebdbcc5164b9
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: b687b3d13f95cb05d9261064d385d35ef6d7f7bf
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394314"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564419"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>Basic Mobility and Security でモバイル デバイスをワイプする
 
@@ -50,7 +50,7 @@ Microsoft 365 の組み込みの Basic Mobility and Security を使用して、�
 
 2. [モバイル デバイスの管理] を検索フィールドに入力し、結果の一覧から [モバイル デバイス **の管理** ] を選択します。
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="基本モビリティと Secruity モバイル デバイス管理オプション":::
+    :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="基本モビリティと Secruity モバイル デバイス管理オプション。":::
 
 3. [デバイス **の管理] を選択します**。
 
@@ -84,8 +84,8 @@ Microsoft 365 の組み込みの Basic Mobility and Security を使用して、�
 
 |**コンテンツへの影響**|**iOS 10 以降**|**Android 5 以降**|
 |:-----|:-----|:-----|
-|Microsoft 365 Intune アプリ保護ポリシーでデバイスが保護されている場合、アプリ データはワイプされます。 アプリは削除されません。 モバイル アプリケーション管理 (MAM) ポリシーで保護されていないデバイスの場合、OutlookとOneDriveデータは削除されません。<br/>**メモ** Intune アプリ保護ポリシーを適用するには、Intune ライセンスが必要です。|はい|必要|
-|Basic Mobility と Security によってデバイスに適用されるポリシー設定は適用されなくなりました。ユーザーは設定を変更できます。|はい|必要|
+|Microsoft 365 Intune アプリ保護ポリシーでデバイスが保護されている場合、アプリ データはワイプされます。 アプリは削除されません。 モバイル アプリケーション管理 (MAM) ポリシーで保護されていないデバイスの場合、OutlookとOneDriveデータは削除されません。<br/>**メモ** Intune アプリ保護ポリシーを適用するには、Intune ライセンスが必要です。|はい|はい|
+|Basic Mobility と Security によってデバイスに適用されるポリシー設定は適用されなくなりました。ユーザーは設定を変更できます。|はい|はい|
 |Basic Mobility and Security によって作成されたメール プロファイルが削除され、デバイス上のキャッシュされたメールが削除されます。|はい|該当なし|
 
 > [!NOTE]

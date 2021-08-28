@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: テキスト、注釈、変換、ネイティブ Advanced eDiscoveryなど、コンテンツの表示方法を選択します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 0cbb720ee935b9c6046eb2d7b78b1bcf8a06e9284bc01133145eb6c8ed0820ad
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1aab4f5e2f5674392fd5577afdb12865b9405380
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53865400"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565280"
 ---
 # <a name="view-documents-in-a-review-set-in-advanced-ediscovery"></a>[ドキュメント] でレビュー セット内のドキュメントを表示Advanced eDiscovery
 
@@ -53,9 +53,9 @@ Advanced eDiscovery では、それぞれ異なる目的を持つ複数のビュ
 - 文書内の用語とスクロール バーを強調表示する検索ヒットの強調表示
 - 差分ビューは、近くの重複ドキュメントを表示するときにテキストの違いを強調表示する比較ビューを提供します。
 
-![テキスト ビュー](../media/Reviewimage4.png)
+![テキスト ビュー。](../media/Reviewimage4.png)
 
-![差分ビュー](../media/Reviewimage5.png)
+![差分ビュー。](../media/Reviewimage5.png)
 
 ## <a name="annotate-view"></a>注釈ビュー
 
@@ -72,7 +72,7 @@ Advanced eDiscovery では、それぞれ異なる目的を持つ複数のビュ
 - 回転 – ユーザーはドキュメントを時計回りに回転できます
 - 検索 - ユーザーはドキュメント内で検索し、ドキュメント内のさまざまなヒットに移動できます
 
-  ![注釈ビュー](../media/Reviewimage1.png)
+  ![ビューに注釈を付ける。](../media/Reviewimage1.png)
 
 ## <a name="dashboard-view"></a>ダッシュボード ビュー
 

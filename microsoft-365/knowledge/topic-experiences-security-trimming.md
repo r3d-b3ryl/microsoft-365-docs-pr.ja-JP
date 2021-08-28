@@ -12,12 +12,12 @@ search.appverid: ''
 ms.collection: enabler-strategic
 localization_priority: None
 description: セキュリティを使用してトピックを表示する方法については、「Viva Topics」を参照してください。
-ms.openlocfilehash: 3dd6e25fffe0a395bf41814309574c67507d280b29ee3848e676c66cadfb2463
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 25acd5ea96cb07a5974e10ec9763d1f20351d021
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864012"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563976"
 ---
 # <a name="security-trimming-in-microsoft-viva-topics"></a>セキュリティ トリミング (Microsoft Viva トピック
 
@@ -29,11 +29,11 @@ AI やマニュアル キュレーションでトピックが作成されると�
   
 たとえば、ユーザー 1 が「Neptune」のトピック ページを閲覧すると、このような表示になる場合があります。
 
-![ユーザー 1 の Neptune トピック](../media/knowledge-management/user2-topic-view.png) </br> 
+![ユーザー 1 の Neptune トピック。](../media/knowledge-management/user2-topic-view.png) </br> 
 
 ただし、ユーザー 2 が同じ Neptune トピック ページを見た場合、そのビューはユーザー 1 とは異なります。  ユーザー 2 は、トピック ページの [ピン留めされたファイルとページ] セクションに *DG-2000* 製品概要ファイルを表示できます。これはユーザー 1 には表示されません。 
 
-![ユーザー 2 の Neptune トピック](../media/knowledge-management/user1-topic-view.png) </br> 
+![ユーザー 2 の Neptune トピック。](../media/knowledge-management/user1-topic-view.png) </br> 
 
 ユーザーが同じトピックで表示できる内容の違いは、ユーザーが関連するサイトまたはファイルを表示するためのOffice 365アクセス許可を持たないのでです。  Viva Topics は、トピック内のアイテムに設定されているアクセス許可を尊重し、アクセス権を変更することはできません。 この例では、ユーザー 1 にはファイルを表示するための Office 365 アクセス許可が付与されていないので、ユーザー 1 は Neptune のトピック ページで *DG-2000* 製品概要ファイルを表示することはできません。
 

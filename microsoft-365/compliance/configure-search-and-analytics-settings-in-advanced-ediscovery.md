@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ms.custom: seo-marvel-mar2020
 description: ケースAdvanced eDiscoveryすべてのレビュー セットに適用されるユーザー設定を構成します。 これには、分析と光学式文字認識の設定が含まれます。
-ms.openlocfilehash: fd1d71a7f617ad836b5c8d2cdcc2beea4b37fdc5aeb14031c80984ca2676db5b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4d46ca4dfb5897c7b262858ab7c955221016e3c7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53892369"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565418"
 ---
 # <a name="configure-search-and-analytics-settings-in-advanced-ediscovery"></a>[検索と分析] の設定を構成Advanced eDiscovery
 
@@ -46,7 +46,7 @@ ms.locfileid: "53892369"
 
    ケース設定ページが表示されます。 これらの設定は、ケース内のすべてのレビュー セットに適用されます。
 
-   ![分析と検索の設定を構成して、Advanced eDiscoveryする](../media/AeDCaseSettings.png)
+   ![分析と検索の設定を構成して、Advanced eDiscoveryします。](../media/AeDCaseSettings.png)
 
 ## <a name="near-duplicates-and-email-threading"></a>準重複と電子メールスレッド
 
@@ -74,7 +74,7 @@ ms.locfileid: "53892369"
 
 [分析後に **保存済** み検索を自動的に作成する] チェック ボックスをオンにした場合は、[Advanced eDiscoveryレビュー] という名前のレビュー セット クエリを **自動生成します。** 
 
-![For Review の自動生成クエリ](../media/AeDForReviewQuery.png)
+![For Review の自動生成クエリ。](../media/AeDForReviewQuery.png)
 
 このクエリは基本的に、レビュー セットから重複するアイテムをフィルター処理します。 これにより、レビュー セット内の一意のアイテムを確認できます。 このクエリは、ケースのレビューセットの分析を実行したときにのみ作成されます。 詳細については、「Review set querys」を参照[してください。](review-set-search.md)
 
@@ -90,7 +90,7 @@ ms.locfileid: "53892369"
 
 - 他のデータ ソース (保管担当者に関連付けされていないコンテンツで、保管されていないデータ ソースのケースに追加されたコンテンツ) がレビュー セットに追加される場合。
 
-データをレビュー セットに追加すると、画像テキストを確認、検索、タグ付け、分析できます。 抽出されたテキストは、レビュー セットで選択したイメージ ファイルのテキスト ビューアーで表示できます。 詳細については、以下を参照してください。
+データをレビュー セットに追加すると、画像テキストを確認、検索、タグ付け、分析できます。 抽出されたテキストは、レビュー セットで選択したイメージ ファイルのテキスト ビューアーで表示できます。 詳しくは、次のトピックを参照してください。
 
 - [カストディアン データの詳細なインデックス処理](indexing-custodian-data.md)
 

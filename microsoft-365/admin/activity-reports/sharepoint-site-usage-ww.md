@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ユーザーが SharePoint SharePoint サイトに保存するファイルの数、アクティブに使用されるファイルの数、および使用されたストレージの合計を確認するには、SharePoint サイト使用状況レポートを取得します。
-ms.openlocfilehash: 2280630999ee3fa95d37b27cc57ec36140dd1d953dec0f2cafea8367baf2391e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a55f76fe1ca53129af27647b42ca44ce267a626c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53816237"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564794"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a>Microsoft 365管理センターのレポート - SharePoint使用状況
 
@@ -46,7 +46,7 @@ Microsoft 365管理センターのレポートは、High テナントと DoD テ
 
 [サイトの使用状況] タブを選択すると、SharePointレポートでサイトの使用状況 **を表示** できます。<br/>![Microsoft 365レポート - Microsoft SharePoint利用状況レポート。](../../media/d1cb6200-e81c-460b-9d05-53f4bd7cf5ee.png)
 
-[列 **の選択]** を選択して、レポートの列を追加または削除します。  <br/> ![SharePoint利用状況レポート - 列を選択する](../../media/71ac3195-c494-40c1-9346-a858125ef6df.png)
+[列 **の選択]** を選択して、レポートの列を追加または削除します。  <br/> ![SharePoint利用状況レポート - 列を選択します。](../../media/71ac3195-c494-40c1-9346-a858125ef6df.png)
 
 また、[**エクスポート**] リンクを選択して、レポート データを Excel の .csv ファイルにエクスポートすることもできます。 これにより、すべてのユーザーのデータがエクスポートされ、単純な並べ替えとフィルター処理を行ってさらに分析することができます。 ユーザー数が 2000 未満である場合は、レポート自体のテーブル内で並べ替えとフィルター処理を行うことができます。 ユーザー数が 2000 を超える場合は、フィルター処理と並べ替えを行うために、データをエクスポートする必要があります。 
   

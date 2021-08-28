@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 組み込みのカストディアン管理ツールを使用して、Advanced eDiscoveryを調整し、関連するデータ ソースを特定する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3fc08eb6602331ef12cba45ed5106cf692272a8f80537a2cd73fc6bd357efd2f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3c5adf4b51cbb9898b0b4f7bc806c1392453c526
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53837230"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564244"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-case"></a>管理者をケースに追加Advanced eDiscoveryする
 
@@ -38,7 +38,7 @@ Advanced eDiscovery の組み込みのカストディアン管理ツールを使
 
 4. 保管担当者を確認し、プロセスを完了します。
 
-   [![[ソース] タブ (Advanced eDiscoveryケース) ](../media/AeD-Sources-Tab.png)](../media/AeD-Sources-Tab.png#lightbox)
+   [![[ソース] タブ (Advanced eDiscovery) ](../media/AeD-Sources-Tab.png)](../media/AeD-Sources-Tab.png#lightbox)
 
 ## <a name="make-sure-you-have-the-necessary-permissions"></a>必要なアクセス許可を持っている必要があります。
 
@@ -68,7 +68,7 @@ Advanced eDiscovery の組み込みのカストディアン管理ツールを使
 
 2. [**メールボックスまたはメールボックス**]**の横** にある **[OneDrive]** を選択して、保管担当者のメールボックスまたは OneDrive アカウントをこの保管担当者のデータの場所として関連付けから削除します。
 
-   ![保管担当者に関連付ける場所を構成する](../media/ConfigureCustodianLocations.png)
+   ![保管担当者に関連付ける場所を構成します。](../media/ConfigureCustodianLocations.png)
 
 他のメールボックス、サイト、Teams、Yammerを特定の保管担当者に関連付けるには、次の手順を実行します。
 
@@ -114,4 +114,4 @@ Advanced eDiscovery の組み込みのカストディアン管理ツールを使
 
    新しい保管担当者がケースに追加され、[データ ソース] **タブに表示** されます。
 
-   [![[データ ソース] タブに表示される保管担当者 ](../media/DataSourcesTab.png)](../media/DataSourcesTab.png#lightbox)
+   [![[データ ソース] タブに表示される保管担当者。 ](../media/DataSourcesTab.png)](../media/DataSourcesTab.png#lightbox)

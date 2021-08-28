@@ -14,12 +14,12 @@ ms.custom:
 description: 管理者は、セキュリティ & コンプライアンス センターのメール フロー ダッシュボードで[メール ループの修正] インサイトを使用して、組織内のメール ループを特定して修正する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c391dee66461dd2535de5f05ef6ebd0f00b8dde0b7c973df8fa638199885dd22
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0c866dbec4a406c47bec072225dbe038510d71de
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56806839"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563744"
 ---
 # <a name="fix-possible-mail-loop-insight-in-the-security--compliance-center"></a>セキュリティ コンプライアンス センターで考えられるメール ループ&修正する
 
@@ -40,7 +40,7 @@ ms.locfileid: "56806839"
 
 この分析情報は、条件が検出された後にのみ表示されます (メール ループが発生しない場合は、分析情報は表示されません)。
 
-![メール フロー ダッシュボードの [おすすめ] 領域でメール フロー ルールの低速分析情報を修正する](../../media/mfi-fix-possible-mail-loop.png)
+![メール フロー ダッシュボードの [推奨されるユーザー] 領域で、メール フロー ルールの低速分析情報を修正します。](../../media/mfi-fix-possible-mail-loop.png)
 
 ウィジェットの [ **詳細の表示]** をクリックすると、詳細情報が表示されるフライアウトが表示されます。
 
@@ -50,7 +50,7 @@ ms.locfileid: "56806839"
 - **MX レコード**:**ドメインの** MXレコードのホスト (メール サーバー) と優先度の値。
 - **ループの理由****と修正方法**: 最も一般的なメール ループシナリオを特定し、ループを修正するための推奨アクションを提供します。
 
-![[可能なメール ループの分析情報を修正する] の [詳細を表示する] をクリックした後に表示される詳細フライアウト](../../media/mfi-fix-possible-mail-loop-details.png)
+![[可能なメール ループの分析情報を修正する] で [詳細の表示] をクリックした後に表示される詳細フライアウト。](../../media/mfi-fix-possible-mail-loop-details.png)
 
 ## <a name="see-also"></a>関連項目
 

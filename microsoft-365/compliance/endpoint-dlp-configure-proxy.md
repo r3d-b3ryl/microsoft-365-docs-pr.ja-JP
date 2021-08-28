@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: エンドポイント DLP のデバイス プロキシとインターネット接続の構成方法について説明します。
-ms.openlocfilehash: a05afb4ac8d5c66e1bbcbba0e8cd8e13b3d8a6d46c73899ea40e5205898036e4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e0de08bd27f2222589343fe66715198645fbeb29
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53886039"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567462"
 ---
 # <a name="configure-device-proxy-and-internet-connection-settings-for-endpoint-dlp"></a>エンドポイント DLP のデバイス プロキシとインターネット接続の構成
 
@@ -55,13 +55,13 @@ WinHTTP の構成設定は、Windows Internet （WinINet） のインターネ�
 
 2. **[有効]** に設定し、**[認証済みプロキシの使用を無効にする]** を選択します。
 
-   ![グループ ポリシー設定の画像 1](../media/atp-gpo-proxy1.png)
+   ![グループ ポリシー設定の画像 1。](../media/atp-gpo-proxy1.png)
 
 3. **[管理用テンプレート]、[Windows コンポーネント]、[データの収集とプレビュー ビルド]、[接続ユーザーのエクスペリエンスと利用統計情報を構成する]** の順に開きます
 
    プロキシを構成する
 
-   ![グループ ポリシー設定の画像 2](../media/atp-gpo-proxy2.png)
+   ![グループ ポリシー設定の画像 2。](../media/atp-gpo-proxy2.png)
 
    このポリシーは、レジストリ キー `HKLM\Software\Policies\Microsoft\Windows\DataCollection` の下に 2 つのレジストリ値 `TelemetryProxyServer` を REG_SZ として、`DisableEnterpriseAuthProxy` を REG_DWORD として設定します。
 

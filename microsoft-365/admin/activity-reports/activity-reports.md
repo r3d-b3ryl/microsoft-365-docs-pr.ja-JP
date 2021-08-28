@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 組織内のユーザーがどのように Microsoft 365 サービスを使用しているかの定期的レポートを取得して、各チャートをドリルダウンして詳しい分析情報を得ます。
-ms.openlocfilehash: 91800483b5a40e028eb71a03d190fd262f4ce3c1cd71d262ca31dcbd8867d833
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2c3323466d79137251be1f8d9ee764b42b643bb1
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53798256"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565198"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>管理センターの Microsoft 365 レポート
 
@@ -59,7 +59,7 @@ ms.locfileid: "53798256"
 
 ::: moniker-end
 
-2. レポートの詳細ページを表示するには、サービス (メール、OneDrive など) の概要アクティビティ カードから [**その他を表示**] ボタンをクリックします。 サービスに関するさまざまなレポートがタブに表示されます。 <br/>![利用状況ダッシュボード](../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png) 
+2. レポートの詳細ページを表示するには、サービス (メール、OneDrive など) の概要アクティビティ カードから [**その他を表示**] ボタンをクリックします。 サービスに関するさまざまなレポートがタブに表示されます。 <br/>![利用状況ダッシュボード。](../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png) 
 
 ## <a name="who-can-see-reports"></a>レポートを閲覧できるユーザー
 
@@ -159,7 +159,7 @@ ms.locfileid: "53798256"
   
 ユーザー リストは次のように表示されます。
   
-![レポート - 匿名ユーザー リスト](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
+![レポート - 匿名ユーザー リスト。](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
   
 レポート ダッシュボードのレポートで変更が有効になるまで数分かかります。この設定は、レポートの API にも適用されます。
   

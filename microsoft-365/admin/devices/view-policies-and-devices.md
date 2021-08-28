@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 6b70fa27-d171-4593-8ecf-f78bb4ed2e99
 description: グローバル管理者資格情報を使用してビジネス向け Microsoft 365にサインインして、デバイス ポリシーとアクションを表示します。
-ms.openlocfilehash: 060a2bf099fdf0347517be55b56846cbcb98cca4
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.openlocfilehash: a4494b7125576f927a0cd7f715311ae616c6497c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360531"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566384"
 ---
 # <a name="view-and-manage-policies-and-devices"></a>ポリシーとデバイスの表示と管理
 
@@ -41,7 +41,7 @@ ms.locfileid: "58360531"
 
     このページでは、ターゲット グループを作成、編集、変更、またはポリシーを削除できます。
 
-    ![Screenshot of the Policies page](../../media/devicepolicies.png)
+    ![[ポリシー] ページのスクリーンショット。](../../media/devicepolicies.png)
   
 ## <a name="view-and-manage-devices"></a>デバイスの表示と管理
 
@@ -49,5 +49,5 @@ ms.locfileid: "58360531"
     
     このページでは、1 つ以上のデバイスを選択し、会社のデータを削除できます。 デバイスの保護設定を設定した Windows 10 デバイスの場合、デバイスを出荷時の設定にリセットすることもできます。
   
-   ![[デバイスの管理] ページ](../../media/devicesmanage.png)
+   ![[デバイスの管理] ページ。](../../media/devicesmanage.png)
 

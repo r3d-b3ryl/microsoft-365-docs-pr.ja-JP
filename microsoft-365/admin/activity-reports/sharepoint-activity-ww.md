@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: すべてのユーザー SharePointのアクティビティ、共有されているファイルの数、およびストレージ使用率について知SharePointアクティビティ使用状況レポートを取得します。
-ms.openlocfilehash: 4121cce33c530e422dcf3b3d05e9a47f1a86c381eff549187f5904c961c57470
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5b4fb458c96202993a30a64800aac3c443983d04
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53816273"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564806"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-activity"></a>Microsoft 365管理センターのレポート - SharePointアクティビティ
 
@@ -45,7 +45,7 @@ ms.locfileid: "53816273"
 
 [アクティビティ] タブを選択すると、SharePointレポートでアクティビティ **を表示** できます。<br/>![Microsoft 365レポート - Microsoft SharePointアクティビティ レポート。](../../media/5a0a96f-0e4f-4fb9-8baa-3262275b3d1f.png)
 
-[列 **の選択]** を選択して、レポートの列を追加または削除します。  <br/> ![SharePointアクティビティ レポート - 列の選択](../../media/3c396cd1-9701-4712-8eaa-eb7bba702aa8.png)
+[列 **の選択]** を選択して、レポートの列を追加または削除します。  <br/> ![SharePointアクティビティ レポート - 列を選択します。](../../media/3c396cd1-9701-4712-8eaa-eb7bba702aa8.png)
 
 また、[**エクスポート**] リンクを選択して、レポート データを Excel の .csv ファイルにエクスポートすることもできます。 これにより、すべてのユーザーのデータがエクスポートされ、単純な並べ替えとフィルター処理を行ってさらに分析することができます。 ユーザー数が 2000 未満である場合は、レポート自体のテーブル内で並べ替えとフィルター処理を行うことができます。 ユーザー数が 2000 を超える場合は、フィルター処理と並べ替えを行うために、データをエクスポートする必要があります。 
   

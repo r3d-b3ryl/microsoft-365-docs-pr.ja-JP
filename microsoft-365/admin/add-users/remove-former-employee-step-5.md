@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 次の手順に従って、元従業員のモバイル デバイス アクセスをブロックします。
-ms.openlocfilehash: 8613e5a08cae43ebb5bbb9dbb0d7f99c734d47303a9a9349f402b512dd18905e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8c5b279bc85d6c99fd8722d1f9fd4d4b3757e793
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827436"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564712"
 ---
 # <a name="step-5---wipe-and-block-a-former-employees-mobile-device"></a>手順 5 - 元従業員のモバイル デバイスをワイプしてブロックする
 

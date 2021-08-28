@@ -17,12 +17,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 81c4be5f-327e-435d-a568-526d68cffef0
 description: この記事では、オンラインで最高のパフォーマンスを得るページを設計する際に考慮する必要がある具体的なSharePoint説明します。
-ms.openlocfilehash: 248600582fe7fea550fc401bdbd25c68ba5c97e2c76321aaf835cbdb7e6c5d50
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d2653e1ee07309d2f31a24df2715bf7810beb65b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53849064"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567882"
 ---
 # <a name="introduction-to-performance-tuning-for-sharepoint-online"></a>SharePoint Online のパフォーマンス チューニングの概要
 
@@ -92,11 +92,11 @@ ms.locfileid: "53849064"
   
 オンプレミスの SharePoint Server
   
-![オンプレミスのサーバーのスクリーンショット](../media/a8e9b646-cdff-4131-976a-b5f891da44ac.png)
+![オンプレミスのサーバーのスクリーンショット。](../media/a8e9b646-cdff-4131-976a-b5f891da44ac.png)
   
 SharePoint Online
   
-![オンラインのサーバーのスクリーンショット](../media/46b27ded-d8a4-4287-b3e0-2603a764b8f8.png)
+![オンラインのサーバーのスクリーンショット。](../media/46b27ded-d8a4-4287-b3e0-2603a764b8f8.png)
   
 オンラインSharePoint、特定のページ要求が実際に複数のサーバーを呼び出す可能性があります。 個々の要求に対するサーバー間の要求のマトリックスで終わる可能性があります。 これらの操作は、ページ読み込みの観点からコストがかかるので、動作が遅くなります。
   

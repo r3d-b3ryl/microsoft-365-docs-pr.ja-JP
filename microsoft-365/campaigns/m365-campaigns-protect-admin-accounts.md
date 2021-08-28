@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 管理者アカウントを設定して保護する方法について学習します。
-ms.openlocfilehash: d66ce47886a1743ea39be23df4c9b5d4977bb675e1c835c421bcb61205c1f4fc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 44b5f9bb07736e06f7e427e521b5c85364091020
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53803040"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564256"
 ---
 # <a name="protect-your-administrator-accounts"></a>管理者アカウントを保護する
 
@@ -55,11 +55,11 @@ ms.locfileid: "53803040"
 
     [代替メール アドレス] テキスト ボックス **に別のメールを** 入力します。 ロックアウトされた場合は、このアドレスを使用してパスワード情報を回復できます。グローバル管理者の場合、請求明細書もこのアドレスに送信されます。
 
-    ![管理者の役割を選択する](../media/adminroles.png)
+    ![管理者の役割を選択します。](../media/adminroles.png)
 
  4. [製品 **ライセンス] セクション** で、[ビジネス] のセレクター Microsoft 365  [オフ] に、[製品ライセンスのないユーザー **を** 作成する] を [オン **]** に **移動します**。
 
-    ![製品ライセンスの選択](../media/productlicense.png)
+    ![製品ライセンスを選択します。](../media/productlicense.png)
 
 ## <a name="create-an-emergency-admin-account"></a>緊急管理者アカウントを作成する
 

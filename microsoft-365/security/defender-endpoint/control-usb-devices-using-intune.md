@@ -14,12 +14,12 @@ audience: ITPro
 ms.topic: conceptual
 ms.technology: mde
 ROBOTS: NOINDEX
-ms.openlocfilehash: b8e44aa81c0985b296d0f19b8ead2e6251b53c1c
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 6ad51065ca4e919fe51cc4a2d5f4b0d53bc474b1
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533341"
+ms.locfileid: "58566712"
 ---
 # <a name="how-to-control-usb-devices-and-other-removable-media-using-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint を使用して USB デバイスや他のリムーバブル メディアを制御する方法
 
@@ -85,7 +85,7 @@ Defender for Endpoint Advanced Hunting クエリの例については[、「Micr
 
 上記のすべてのコントロールは、Intune 管理用テンプレートを [使用して設定できます](/intune/administrative-templates-windows)。 関連するポリシーは、Intune 管理者テンプレートに含められます。
 
-![管理テンプレートの一覧のスクリーンショット](images/admintemplates.png)
+![管理者テンプレートの一覧のスクリーンショット。](images/admintemplates.png)
 
 > [!NOTE]
 > Intune を使用すると、デバイス構成ポリシーを Azure ADまたはデバイス グループに適用できます。
@@ -108,17 +108,17 @@ USB ドライブや他の周辺機器のインストールと使用を許可す�
 
 デバイスのインストール許可ポリシーを構成する場合は、すべての親属性も許可する必要があります。 デバイスの親を表示するには、[デバイス マネージャー] を開き、接続別に表示します。
 
-![接続によるデバイス](images/devicesbyconnection.png)
+![接続によるデバイス。](images/devicesbyconnection.png)
 
 この例では、HID、キーボード、および {36fc9e60-c465-11cf-8056-44455354000}のクラスを追加する必要がありました。 詳細 [については、「Microsoft が提供する USB ドライバー](/windows-hardware/drivers/usbcon/supported-usb-classes) 」を参照してください。
 
-![デバイス ホスト コントローラー](images/devicehostcontroller.jpg)
+![デバイス ホスト コントローラー。](images/devicehostcontroller.jpg)
 
 特定のデバイスに制限する場合は、制限する周辺機器のデバイス セットアップ クラスを削除します。 次に、追加するデバイス ID を追加します。 デバイス ID は、デバイスのベンダー ID と製品 ID の値に基づいて設定されます。 デバイス ID 形式の詳細については、「Standard [USB Identifiers」を参照してください](/windows-hardware/drivers/install/standard-usb-identifiers)。
 
 デバイス ID を検索するには、「デバイス [ID を検索する」を参照してください](#look-up-device-id)。
 
-例として以下のようなものがあります。
+次に例を示します。
 
 1. これらのデバイスのセットアップに一致するドライバーを使用してデバイスのインストールを許可するからクラス USBDevice **を削除します**。
 2. [これらのデバイス ID に一致するデバイスのインストールを許可する] で、許可するデバイス **ID を追加します**。
@@ -139,11 +139,11 @@ USB ドライブや他の周辺機器のインストールと使用を許可す�
 
 1. [インストールを防止](#look-up-device-id)するために必要なデバイスWindowsデバイス ID を参照します。
 
-   ![ベンダーまたは製品 ID を参照する](images/lookup-vendor-product-id.png)
+   ![ベンダーまたは製品 ID を参照します。](images/lookup-vendor-product-id.png)
 
 2. [ **これらのデバイスの ID に一** 致するデバイスのインストールを防止する] を有効にして、ベンダーまたは製品の ID を一覧に追加します。
 
-    ![ベンダー ID を追加してリストを防止する](images/add-vendor-id-to-prevent-list.png)
+    ![ベンダー ID を追加してリストを防止します。](images/add-vendor-id-to-prevent-list.png)
 
 #### <a name="look-up-device-id"></a>デバイス ID の参照
 
@@ -175,7 +175,7 @@ Get-WMIObject -Class Win32_DiskDrive | Select-Object -Property *
 2. [ **これらのデバイス セットアップ クラスに一致する** ドライバーを使用してデバイスをインストールしない] を有効にし、クラス GUID をリストに追加します。
 
     > [!div class="mx-imgBorder"]
-    > ![リストを防止するデバイス セットアップ クラスの追加](images/Add-device-setup-class-to-prevent-list.png)
+    > ![リストを防止するデバイス セットアップ クラスを追加します。](images/Add-device-setup-class-to-prevent-list.png)
 
 ### <a name="block-installation-and-usage-of-removable-storage"></a>リムーバブル 記憶域のインストールと使用をブロックする
 
@@ -184,7 +184,7 @@ Get-WMIObject -Class Win32_DiskDrive | Select-Object -Property *
 2. [デバイス **構成** \> **プロファイル] [プロファイル** \> **の作成] をクリックします**。
 
     > [!div class="mx-imgBorder"]
-    > ![デバイス構成プロファイルの作成](images/create-device-configuration-profile.png)
+    > ![デバイス構成プロファイルを作成します。](images/create-device-configuration-profile.png)
 
 3. 次に示す設定を使用します。
    - 名前: プロファイルの名前を入力します。
@@ -193,13 +193,13 @@ Get-WMIObject -Class Win32_DiskDrive | Select-Object -Property *
    - プロファイルの種類: デバイスの制限
 
    > [!div class="mx-imgBorder"]
-   > ![プロファイルの作成](images/create-profile.png)
+   > ![プロファイルを作成します。](images/create-profile.png)
 
 4. [全般 **の構成]** \> **をクリックします**。
 
 5. リムーバブル **ストレージと** USB 接続 **(モバイルのみ)** の場合は、[ブロック] を **選択します**。 **リムーバブル ストレージ** には USB ドライブが含まれますが **、USB** 接続 (モバイルのみ) では USB 充電は除外されますが、モバイル デバイス上の他の USB 接続だけが含まれます。
 
-   ![全般設定](images/general-settings.png)
+   ![一般的な設定。](images/general-settings.png)
 
 6. **[OK] を** クリックして [**全般設定]** と [**デバイスの制限] を閉じます**。
 
@@ -236,7 +236,7 @@ Microsoft Defender for Endpoint は、次のいずれかのオプションを使
 Intune を使用すると、"許可されたサービス" を使用して、Bluetoothを[使用Bluetoothを制限できます](/windows/client-management/mdm/policy-csp-bluetooth#servicesallowedlist-usage-guide)。 "許可されているサービス" Bluetoothの既定の状態は、すべてが許可されているという意味です。  サービスが追加されたとすぐに、それが許可リストになります。 ユーザーがキーボードとマウスの値を追加し、ファイル転送 GUID を追加しない場合は、ファイル転送をブロックする必要があります。
 
 > [!div class="mx-imgBorder"]
-> ![[設定] ページBluetoothスクリーンショット](images/bluetooth.png)
+> ![[設定] ページBluetoothスクリーンショットを参照してください。](images/bluetooth.png)
 
 ## <a name="prevent-threats-from-removable-storage"></a>リムーバブル 記憶域からの脅威を防止する
 
@@ -296,20 +296,20 @@ USB デバイスの制御の詳細については [、「Microsoft Defender for 
 
 2. [デバイス **] Windows** \>  \> **構成ポリシー プロファイル** \> **の作成] をクリックします**。
 
-    ![デバイス構成プロファイルの作成](images/create-device-configuration-profile.png)
+    ![デバイス構成プロファイルを作成します。](images/create-device-configuration-profile.png)
 
 3. 次に示す設定を使用します。
    - プラットフォーム: Windows 10以降
    - プロファイルの種類: デバイスの制限
 
    > [!div class="mx-imgBorder"]
-   > ![エンドポイント保護プロファイルの作成](images/create-endpoint-protection-profile.png)
+   > ![エンドポイント保護プロファイルを作成します。](images/create-endpoint-protection-profile.png)
 
 4. **[作成]** をクリックします。
 
 5. USB **から実行される署名されていないプロセスと信頼** されていないプロセスの場合は、[ブロック] を **選択します**。
 
-   ![信頼されていないプロセスをブロックする](images/block-untrusted-processes.png)
+   ![信頼されていないプロセスをブロックします。](images/block-untrusted-processes.png)
 
 6. **[OK] を** クリックして設定とデバイス **の制限を閉じます**。
 

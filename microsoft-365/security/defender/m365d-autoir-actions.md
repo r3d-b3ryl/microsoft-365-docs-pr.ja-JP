@@ -21,12 +21,12 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 0ecc3f7a91b79651b0a970553576a3c8d93320b25c258dd3f793552a4acf31a8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: daedba79bb2fd9ac452cbef08d74d4d876122478
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53888777"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565662"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>アクション センターでのアクションの表示と管理
 
@@ -55,7 +55,7 @@ ms.locfileid: "53888777"
 
 3. アクション センターの [保留中] タブ **で** 、リスト内のアイテムを選択します。 そのフライアウト ウィンドウが開きます。 次に例を示します。
 
-   ![アクションを承認または拒否する](../../media/air-actioncenter-itemselected.png)
+   ![アクションを承認または拒否します。](../../media/air-actioncenter-itemselected.png)
 
 4. フライアウト ウィンドウで情報を確認し、次のいずれかの手順を実行します。
    - [ **調査ページを開く]** を選択して、調査の詳細を表示します。

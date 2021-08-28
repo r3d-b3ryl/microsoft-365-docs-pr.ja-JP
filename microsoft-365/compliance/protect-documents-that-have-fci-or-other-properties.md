@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: データ損失防止 (DLP) ポリシーを使用して、プロパティを持つドキュメントをサード パーティ製システムから保護する方法について学習します。
-ms.openlocfilehash: a3dc0cd9d73382c1c0c1df47b346dd13c9563b66088a9eef592069e46a751596
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: be0ca4901b8f32aca4c50daa45c059388561832f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53801671"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567666"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>FCI または他のプロパティを使用したドキュメントを保護する DLP ポリシーを作成する
 
@@ -34,7 +34,7 @@ Microsoft 365データ損失防止 (DLP) ポリシーでは、分類プロパテ
 - SharePointのプロパティ
 - サード パーティ製のシステム ドキュメントのプロパティ
 
-![Office 365 と外部の分類システムを示す図](../media/59ad0ac1-4146-4919-abd1-c74d8508d25e.png)
+![外部分類システムOffice 365を示す図。](../media/59ad0ac1-4146-4919-abd1-c74d8508d25e.png)
 
 たとえば、組織は Windows Server FCI を使用して社会保障番号などの個人データを持つアイテムを識別し、ドキュメント内で見つかった個人データの種類と発生数に基づいて、個人を特定できる情報プロパティを High、Moderate、Low、Public、または Not **PII** に設定してドキュメントを分類できます。   
 
@@ -69,11 +69,11 @@ DLP は検索クローラーを使用してサイトの機密情報を識別お�
 
 3. 左側のナビゲーションで、[検索管理] **ページ** \> の [ **検索スキーマの** 管理 \> **] で [検索] を選択します**。
 
-   ![SharePoint 管理センターの検索管理ページ](../media/6bcd3aec-d11a-4f8c-9987-8f35da14d80b.png)
+   ![管理センターのSharePointページを開きます。](../media/6bcd3aec-d11a-4f8c-9987-8f35da14d80b.png)
 
 4. [管理プロパティ **] ページの** [ \> **新しい管理プロパティ] をクリックします**。
 
-   ![[新しい管理プロパティ] ボタンが強調表示されている[プロパティ管理] ページ](../media/b161c764-414c-4037-83ed-503a49fb4410.png)
+   ![[新しい管理プロパティ] ボタンが強調表示された [管理プロパティ] ページ。](../media/b161c764-414c-4037-83ed-503a49fb4410.png)
 
 5. プロパティの名前と説明を入力します。この名前が、DLP ポリシーに表示されます。
 
@@ -85,7 +85,7 @@ DLP は検索クローラーを使用してサイトの機密情報を識別お�
 
 9. [クロール **されたプロパティの** 選択] ダイアログ ボックスで、DLP ポリシーで使用する Windows Server FCI プロパティまたは他のプロパティに対応するクロールされたプロパティを検索して \> 選択 \> **します。**
 
-   ![[クロールされたプロパティの選択] ダイアログ ボックス](../media/aeda1dce-1342-48bf-9594-a8e4f230e8aa.png)
+   ![クロールされたプロパティの選択ダイアログ ボックス。](../media/aeda1dce-1342-48bf-9594-a8e4f230e8aa.png)
 
 10. ページの下部で \> **[OK] をクリックします**。
 
@@ -131,7 +131,7 @@ Document プロパティ **にこれらの** 値が含まれている条件は�
 
 1 つのルールは、[**個人情報**] プロパティが [**高**] または [**中**] の場合にコンテンツへのアクセスをブロックします。 2 番目のルールは、[**個人情報**] プロパティが [**低**] の場合にコンテンツについて通知を送信します。
 
-![2 つのルールが作成されたことを示す[新しい DLP ポリシー] ダイアログ ボックス](../media/5c56c13b-62a5-4f25-8eb7-ce83a844bb12.png)
+![2 つのルールが作成され、新しい DLP ポリシー ダイアログが表示されます。](../media/5c56c13b-62a5-4f25-8eb7-ce83a844bb12.png)
 
 ## <a name="after-you-create-the-dlp-policy"></a>DLP ポリシーを作成した後に
 

@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: ローカル スクリプトを使用してデバイスに構成パッケージを展開し、サービスにオンボードします。
-ms.openlocfilehash: 9b5df749d71ac3c7b6004f2c44e5d0015595a935a749061eb74b581ae44951cc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 18e1230285df0c462000454f2b13ac5bb2245e92
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53892132"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566052"
 ---
 # <a name="onboard-windows-10-devices-using-a-local-script"></a>ローカル スクリプトを使用した Windows 10 デバイスのオンボード
 
@@ -52,7 +52,7 @@ ms.locfileid: "53892132"
 
 8.  **[コマンド プロンプト]** を右クリックして **[管理者として実行]** を選択します。
 
-    ![[管理者スタート メニュー実行] をポイントするウィンドウ のウィンドウ](../media/dlp-run-as-admin.png)
+    ![[管理者スタート メニュー実行] をポイントするウィンドウ のウィンドウ です。](../media/dlp-run-as-admin.png)
 
 9.  スクリプト ファイルの場所を入力します。 ファイルをデスクトップにコピーした場合は *、「%userprofile%\Desktop\WindowsDefenderATPOnboardingScript.cmd」と入力します。*
 
@@ -82,7 +82,7 @@ ms.locfileid: "53892132"
 
 8.  **[コマンド プロンプト]** を右クリックして **[管理者として実行]** を選択します。
 
-    ![[管理者スタート メニュー実行] をポイントするウィンドウ のウィンドウ](../media/dlp-run-as-admin.png)
+    ![[管理者スタート メニュー実行] をポイントするウィンドウ のウィンドウ です。](../media/dlp-run-as-admin.png)
 
 9.  スクリプト ファイルの場所を入力します。 ファイルをデスクトップにコピーした場合は *、「%userprofile%\Desktop\WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd」と入力します。*
 
@@ -105,7 +105,7 @@ ms.locfileid: "53892132"
 3. デバイスが表示されているのを確認します。
 
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [グループ ポリシー Windows 10デバイスのオンボード](dlp-configure-endpoints-gp.md)
 - [デバイスをWindows 10デバイスをオンボードMicrosoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md)
 - [モバイル デバイス管理ツールを使用した Windows 10 デバイスのオンボード](dlp-configure-endpoints-mdm.md)

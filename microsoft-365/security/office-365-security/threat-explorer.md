@@ -19,12 +19,12 @@ description: 脅威を効率的に調査して対応するには、Microsoft 365
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 35044963b34d9120eb1490e64b8c9831ba6840aad7d7aa6b3b2776e70602d6fb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 94a7fb847eca7f46f543399d8de1b2d3d12e1908
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53806018"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566560"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>脅威エクスプローラーとリアルタイム検出
 
@@ -40,7 +40,7 @@ ms.locfileid: "53806018"
 
 |Microsoft Defender for Office 365プラン 2 では、次の情報が表示されます。|Microsoft Defender for Office 365プラン 1 では、次の情報が表示されます。|
 |---|---|
-|![脅威エクスプローラー](../../media/threatmgmt-explorer.png)|![リアルタイムの検出](../../media/threatmgmt-realtimedetections.png)|
+|![脅威エクスプローラー。](../../media/threatmgmt-explorer.png)|![リアルタイムの検出](../../media/threatmgmt-realtimedetections.png)|
 |
 
 エクスプローラーまたはリアルタイム検出は、セキュリティ運用チームが脅威を効率的に調査して対応するのに役立ちます。 レポートは次の図のようになります。
@@ -65,10 +65,10 @@ ms.locfileid: "53806018"
 アラート ID は、個々のアラートを表示するときに URL 内で使用できます。の例を示します `https://protection.office.com/viewalerts?id=372c9b5b-a6c3-5847-fa00-08d8abb04ef1` 。
 
 > [!div class="mx-imgBorder"]
-> ![アラート ID のフィルター処理](../../media/AlertID-Filter.png)
+> ![アラート ID のフィルター処理。](../../media/AlertID-Filter.png)
 
 > [!div class="mx-imgBorder"]
-> ![詳細フライアウトのアラート ID](../../media/AlertID-DetailsFlyout.png)
+> ![詳細フライアウトのアラート ID。](../../media/AlertID-DetailsFlyout.png)
 
 ### <a name="extending-the-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants-from-7-to-30-days"></a>試用版テナントのエクスプローラー (およびリアルタイム検出) のデータ保持と検索の制限を 7 日から 30 日間に延長する
 
@@ -93,16 +93,16 @@ Threat Explorer では、次のエクスペリエンスでユーザー タグに
 メール **グリッドの** [タグ] 列には、送信者または受信者のメールボックスに適用されたタグすべてが含まれます。 既定では、優先アカウントのようなシステム タグが最初に表示されます。
 
 > [!div class="mx-imgBorder"]
-> ![メール グリッド ビューでタグをフィルター処理する](../../media/tags-grid.png)
+> ![メール グリッド ビューでタグをフィルター処理します。](../../media/tags-grid.png)
 
 #### <a name="filtering"></a>フィルター処理
 
 タグはフィルターとして使用できます。 優先度の高いアカウントまたは特定のユーザー タグのシナリオ間でハントします。 特定のタグを持つ結果を除外することもできます。 この機能を他のフィルターと組み合わせて、調査範囲を絞り込む。
 
-[![フィルター タグ](../../media/tags-filter-normal.png)](../../media/tags-filter-normal.png#lightbox)
+[![フィルター タグ。](../../media/tags-filter-normal.png)](../../media/tags-filter-normal.png#lightbox)
 
 > [!div class="mx-imgBorder"]
-> ![タグをフィルター処理しない](../../media/tags-filter-not.png)
+> ![タグをフィルター処理しない。](../../media/tags-filter-not.png)
 
 #### <a name="email-detail-flyout"></a>電子メールの詳細の飛び出し
 
@@ -110,14 +110,14 @@ Threat Explorer では、次のエクスペリエンスでユーザー タグに
 送信者と受信者の個々のタグに関する情報は、エクスポートされた CSV データにも拡張され、これらの詳細は 2 つの個別の列で確認できます。
 
 > [!div class="mx-imgBorder"]
-> ![メールの詳細タグ](../../media/tags-flyout.png)
+> ![メールの詳細タグ。](../../media/tags-flyout.png)
 
 タグ情報は、URL クリック のフライアウトにも表示されます。 表示するには、[フィッシング] または [すべてのメール] ビューに移動し **、[URL]** または [URL クリック] **タブに移動** します。個々の URL フライアウトを選択して、その URL のクリックに関する詳細 (そのクリックに関連付けられたタグを含む) を表示します。
 
 ### <a name="updated-timeline-view"></a>更新されたタイムライン ビュー
 
 > [!div class="mx-imgBorder"]
-> ![URL タグ](../../media/tags-urls.png)
+> ![URL タグ。](../../media/tags-urls.png)
 >
 [このビデオ](https://www.youtube.com/watch?v=UoVzN0lYbfY&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=4)を見て詳細をご確認ください。
 
@@ -141,12 +141,12 @@ Threat Explorer では、次のエクスペリエンスでユーザー タグに
 [メール の飛び出しの詳細] タブで、URL の特定の脅威を **確認** できます。脅威には、マルウェア *、フィッシング*、*スパム、* または *なしがあります*。 
 
 > [!div class="mx-imgBorder"]
-> ![URL の脅威](../../media/URL_Threats.png)
+> ![URL の脅威。](../../media/URL_Threats.png)
 
 ### <a name="updated-timeline-view-upcoming"></a>更新されたタイムライン ビュー (今後)
 
 > [!div class="mx-imgBorder"]
-> ![更新されたタイムライン ビュー](../../media/Email_Timeline.png)
+> ![タイムライン ビューを更新しました。](../../media/Email_Timeline.png)
 
 タイムライン ビューは、すべての配信イベントと配信後イベントを識別します。 この情報には、これらのイベントのサブセットについて、その時点で特定された脅威に関する情報が含まれます。 タイムライン ビューでは、追加のアクション (ZAP や手動修復など) に関する情報も、そのアクションの結果と共に提供されます。 タイムライン ビューの情報には、次の情報が含まれます。
 
@@ -163,7 +163,7 @@ Threat Explorer では、次のエクスペリエンスでユーザー タグに
 **元の配信場所** では、メールが最初に配信された場所に関する詳細が表示されます。 **最新の配信場所** には *、ZAP* や削除済みアイテムへの移動のような管理アクションなど、システムアクションの後にメールが届 *いた場所が表示されます*。 最新の配信場所は、メッセージの配信後の最後の既知の場所、またはシステム/管理者のアクションを管理者に伝える目的です。 電子メールにはエンド ユーザーのアクションは含めかねない。 たとえば、ユーザーがメッセージを削除した場合、またはメッセージをアーカイブ/pst に移動した場合、メッセージ "配信" の場所は更新されません。 ただし、システム アクションによって場所が更新された場合 (たとえば、ZAP が検疫に移動する電子メールなど)、最新の配信場所は "検疫" として表示されます。
 
 > [!div class="mx-imgBorder"]
-> ![更新された配信場所](../../media/Updated_Delivery_Location.png)
+> ![配信場所を更新しました。](../../media/Updated_Delivery_Location.png)
 
 > [!NOTE]
 > 配信場所と配信アクションが"不明"と表示される場合があります。
@@ -173,7 +173,7 @@ Threat Explorer では、次のエクスペリエンスでユーザー タグに
 > - **管理者/システム** アクション (ZAP など) が試行されたが、メッセージが見つからなかった場合、最新の配信場所が不明になる可能性があります。 通常、アクションは、ユーザーがメッセージを移動または削除した後に実行されます。 このような場合は、タイムライン ビューの **[結果/詳細]** 列を確認します。 "ユーザーが移動または削除したメッセージ" というステートメントを探します。
 
 > [!div class="mx-imgBorder"]
-> ![タイムラインの配信場所](../../media/Updated_Timeline_Delivery_Location.png)
+> ![タイムラインの配信場所。](../../media/Updated_Timeline_Delivery_Location.png)
 
 ### <a name="additional-actions"></a>その他のアクション
 
@@ -183,7 +183,7 @@ Threat Explorer では、次のエクスペリエンスでユーザー タグに
 > 保留中の変更の一環として、[配信アクション] フィルターに現在表示されている "削除済み" の値は削除されます。 追加アクションを通じて ZAP の試行ですべてのメールを **検索する方法があります**。
 
 > [!div class="mx-imgBorder"]
-> ![エクスプローラーのその他のアクション](../../media/Additional_Actions.png)
+> ![エクスプローラーのその他のアクション。](../../media/Additional_Actions.png)
 
 ### <a name="system-overrides"></a>システムオーバーライド
 
@@ -199,10 +199,10 @@ Threat Explorer では、次のエクスペリエンスでユーザー タグに
 
 - 組織ポリシーによってブロックされるファイル拡張子: 組織のセキュリティ チームは、マルウェア対策ポリシー設定を通じてファイル名の拡張子をブロックします。 これらの値は、調査に役立つメールの詳細に表示されます。 Secops チームは、リッチ フィルター機能を使用して、ブロックされたファイル拡張子をフィルター処理することもできます。
 
-[![エクスプローラーのシステムオーバーライド](../../media/System_Overrides.png)](../../media/System_Overrides.png#lightbox)
+[![エクスプローラーのシステムオーバーライド。](../../media/System_Overrides.png)](../../media/System_Overrides.png#lightbox)
 
 > [!div class="mx-imgBorder"]
-> ![エクスプローラーの System Overrides Grid](../../media/System_Overrides_Grid.png)
+> ![System Overrides Grid in Explorer.](../../media/System_Overrides_Grid.png)
 
 ### <a name="improvements-for-the-url-and-clicks-experience"></a>URL とクリックエクスペリエンスの改善
 
@@ -219,7 +219,7 @@ Threat Explorer では、次のエクスペリエンスでユーザー タグに
 
 フィッシングの信頼度は、電子メールが "フィッシング" として分類された信頼度を識別するのに役立ちます。 2 つの可能な値は *、High と Normal* *です*。 最初の段階では、このフィルターは、脅威エクスプローラーの [フィッシング] ビューでのみ使用できます。
 
-[![エクスプローラーのフィッシングの信頼レベル](../../media/Phish_Confidence_Level.png)](../../media/Phish_Confidence_Level.png#lightbox)
+[![エクスプローラーのフィッシングの信頼レベル。](../../media/Phish_Confidence_Level.png)](../../media/Phish_Confidence_Level.png#lightbox)
 
 ### <a name="zap-url-signal"></a>ZAP URL シグナル
 
@@ -240,14 +240,14 @@ ZAP URL シグナルは、通常、メールがフィッシングとして識別
 > ユーザー タグによるフィルター処理と並べ替えは、現在パブリック プレビューに表示されています。 この機能は、商用リリース前に大幅に変更される可能性があります。 Microsoft は、明示または黙示を問わず、その情報に関して一切の保証を行いません。
 
 > [!div class="mx-imgBorder"]
-> ![エクスプローラーの [タグ] 列](../../media/threat-explorer-tags.png)
+> ![エクスプローラーの [タグ] 列。](../../media/threat-explorer-tags.png)
 
 ### <a name="timezone-improvements"></a>タイムゾーンの改善
 
 ポータルの電子メール レコードのタイム ゾーンとエクスポートされたデータが表示されます。 メール グリッド、詳細フライアウト、メール タイムライン、類似メールなど、エクスペリエンス全体で表示されます。結果セットのタイム ゾーンは明確です。
 
 > [!div class="mx-imgBorder"]
-> ![エクスプローラーでタイム ゾーンを表示する](../../media/TimezoneImprovements.png)
+> ![エクスプローラーでタイム ゾーンを表示します。](../../media/TimezoneImprovements.png)
 
 ### <a name="update-in-the-refresh-process"></a>更新プロセスでの更新
 
@@ -256,21 +256,21 @@ ZAP URL シグナルは、通常、メールがフィッシングとして識別
 ユーザーは、エクスペリエンスの観点から、(フィルター セットと日付から) さまざまな範囲のフィルターを適用および削除し、クエリを定義した後に結果をフィルター処理する更新ボタンを選択できます。 更新ボタンも画面で強調されます。 関連するツールヒントと製品内ドキュメントも更新しました。
 
 > [!div class="mx-imgBorder"]
-> ![[更新] を選択して結果をフィルター処理する](../../media/ManualRefresh.png)
+> ![[更新] を選択して結果をフィルター処理します。](../../media/ManualRefresh.png)
 
 ### <a name="chart-drilldown-to-add-to-filters"></a>フィルターに追加するグラフのドリルダウン
 
 凡例の値をグラフに追加して、フィルターとして追加できます。 [更新] **ボタンを** 選択して結果をフィルター処理します。
 
 > [!div class="mx-imgBorder"]
-> ![グラフをドリルダウンしてフィルターに移動する](../../media/ChartDrilldown.png)
+> ![グラフをドリルダウンして [フィルター] に移動します。](../../media/ChartDrilldown.png)
 
 ### <a name="in-product-information-updates"></a>製品内情報の更新
 
 グリッド内の検索結果の総数など、製品内で追加の詳細が利用可能になります (以下を参照)。 フィルター、検索エクスペリエンス、および結果セットに関する詳細を提供するために、ラベル、エラー メッセージ、およびツールヒントが改善されました。
 
 > [!div class="mx-imgBorder"]
-> ![製品内情報の表示](../../media/ProductInfo.png)
+> ![製品内情報を表示します。](../../media/ProductInfo.png)
 
 ## <a name="extended-capabilities-in-threat-explorer"></a>Threat Explorer の拡張機能
 
@@ -281,7 +281,7 @@ ZAP URL シグナルは、通常、メールがフィッシングとして識別
 対象ユーザーのリストを最大 3,000 人までエクスポートし、各電子メール ビューのオフライン分析の試行回数をエクスポートできます。 さらに、試行回数 (下の図では 13 回など) を選択すると、Threat Explorer でフィルター処理されたビューが開き、そのユーザーのメールや脅威の詳細を確認できます。
 
 > [!div class="mx-imgBorder"]
-> ![上位の対象ユーザー](../../media/Top_Targeted_Users.png)
+> ![上位の対象ユーザー。](../../media/Top_Targeted_Users.png)
 
 ### <a name="exchange-transport-rules"></a>Exchangeトランスポート ルール
 
@@ -302,7 +302,7 @@ GUID と、メッセージに適用されたトランスポート ルールの�
 > 電子メール グリッド、詳細フライアウト、およびエクスポート CSV 内で、ETRs には、次に示すように名前/GUID が表示されます。
 >
 > > [!div class="mx-imgBorder"]
-> > ![Exchangeトランスポート ルール](../../media/ETR_Details.png)
+> > ![Exchangeトランスポート ルール。](../../media/ETR_Details.png)
 
 ### <a name="inbound-connectors"></a>受信コネクタ
 
@@ -311,7 +311,7 @@ GUID と、メッセージに適用されたトランスポート ルールの�
 コネクタの検索は、実際には "contains" で、部分的なキーワード検索も機能する必要があります。 メイン グリッド ビュー、詳細フライアウト、およびエクスポート CSV 内で、コネクタは次のように Name/GUID 形式で表示されます。
 
 > [!div class="mx-imgBorder"]
-> ![コネクタの詳細](../../media/Connector_Details.png)
+> ![コネクタの詳細。](../../media/Connector_Details.png)
 
 ## <a name="new-features-in-threat-explorer-and-real-time-detections"></a>脅威エクスプローラーとリアルタイム検出の新機能
 
@@ -340,7 +340,7 @@ GUID と、メッセージに適用されたトランスポート ルールの�
 
 4. [メール] タブの [メール] タブの [件名] >を選択すると、[偽装ドメイン] や [検出された場所] など、その他の偽装情報が表示されます。
 
-    **OR**
+    **または**
 
     [ **偽装ユーザー] を** 選択し、保護されたユーザーの電子メール アドレスをテキスト ボックスに入力します。
 
@@ -420,7 +420,7 @@ URL クリックのレポートを Microsoft Excelにエクスポートして、
 > ネットワーク メッセージ ID は、エクスプローラーまたは関連するサード パーティ製ツールを使用して ID を検索すると、クリックを特定のメールにマップします。 このような検索では、クリック結果に関連付けられた電子メールが識別されます。 関連付けされたネットワーク メッセージ ID を使用すると、より迅速かつ強力な分析が可能になります。
 
 > [!div class="mx-imgBorder"]
-> ![エクスプローラーの [クリック] タブ](../../media/tp_ExportClickResultAndNetworkID.png)
+> ![エクスプローラーの [クリック] タブ。](../../media/tp_ExportClickResultAndNetworkID.png)
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>テクノロジによって電子メールで検出されたマルウェアを確認する
 
@@ -431,19 +431,19 @@ URL クリックのレポートを Microsoft Excelにエクスポートして、
 2. [表示] **メニューの** [メール マルウェア] **を** \> **選択します**。
 
    > [!div class="mx-imgBorder"]
-   > ![エクスプローラーの [表示] メニュー](../../media/ExplorerViewEmailMalwareMenu.png)
+   > ![エクスプローラーの [表示] メニュー。](../../media/ExplorerViewEmailMalwareMenu.png)
 
 3. [送信者 **] を** クリックし、[基本検出 **テクノロジ]** \> **を選択します**。
 
    検出テクノロジは、レポートのフィルターとして利用できます。
 
    > [!div class="mx-imgBorder"]
-   > ![マルウェア検出テクノロジ](../../media/ExplorerEmailMalwareDetectionTech.png)
+   > ![マルウェア検出テクノロジ。](../../media/ExplorerEmailMalwareDetectionTech.png)
 
 4. オプションを選択します。 次に、[更新] **ボタンを** 選択して、そのフィルターを適用します。
 
    > [!div class="mx-imgBorder"]
-   > ![選択された検出テクノロジ](../../media/ExplorerEmailMalwareDetectionTechATP.png)
+   > ![選択した検出テクノロジ。](../../media/ExplorerEmailMalwareDetectionTechATP.png)
 
 レポートが更新され、選択したテクノロジ オプションを使用して、電子メールでマルウェアが検出された結果が表示されます。 ここから、さらに分析を実行できます。
 
@@ -458,14 +458,14 @@ URL クリックのレポートを Microsoft Excelにエクスポートして、
 2. [表示] **メニューの** [メール フィッシング] **を** \> **選択します**。
 
    > [!div class="mx-imgBorder"]
-   > ![フィッシング コンテキストでのエクスプローラーの [表示] メニュー](../../media/ExplorerViewEmailPhishMenu.png)
+   > ![フィッシング コンテキストでエクスプローラーの [表示] メニューを表示します。](../../media/ExplorerViewEmailPhishMenu.png)
 
 3. [送信者 **] を** クリックし **、[URL]** \> **[評決のクリック] を選択します**。
 
 4. [ブロック] や [上書きブロック]などの 1 つ以上のオプションを選択し、そのフィルターを適用するオプションと同じ行の [更新] ボタンを選択します。  (ブラウザー ウィンドウを更新しない)。
 
    > [!div class="mx-imgBorder"]
-   > ![URL とクリックの評決](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)
+   > ![URL をクリックし、[評決] をクリックします。](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)
 
    レポートが更新され、レポートの下の [URL] タブに 2 つの異なる URL テーブルが表示されます。
 
@@ -476,7 +476,7 @@ URL クリックのレポートを Microsoft Excelにエクスポートして、
    2 つの URL テーブルには、配信アクションと場所別のフィッシングメール メッセージの上位 URL が表示されます。 この表には、警告にもかかわらずブロックまたはアクセスされた URL クリックが表示されます。そのため、ユーザーに表示された潜在的な不良リンクと、ユーザーがクリックした可能性のあるリンクを確認できます。 ここから、さらに分析を実行できます。 たとえば、グラフの下には、組織の環境でブロックされた電子メール メッセージの上位 URL が表示されます。
 
    > [!div class="mx-imgBorder"]
-   > ![ブロックされたエクスプローラー URL](../../media/ExplorerPhishClickVerdictURLs.png)
+   > ![ブロックされたエクスプローラー URL。](../../media/ExplorerPhishClickVerdictURLs.png)
 
    URL を選択して、詳細な情報を表示します。
 
@@ -505,14 +505,14 @@ URL クリックのレポートを Microsoft Excelにエクスポートして、
 2. [表示] **メニューの** [メールの提出 **]** \> **を選択します**。
 
    > [!div class="mx-imgBorder"]
-   > ![電子メールのエクスプローラーの [表示] メニュー](../../media/explorer-view-menu-email-user-reported.png)
+   > ![電子メールのエクスプローラーの [表示] メニュー。](../../media/explorer-view-menu-email-user-reported.png)
 
 3. [送信者 **] を** クリックし、[基本レポート **の種類]** \> **を選択します**。
 
 4. フィッシングなどのオプションを選択 **し**、[更新] ボタン **を選択** します。
 
    > [!div class="mx-imgBorder"]
-   > ![ユーザーが報告したフィッシング](../../media/EmailUserReportedReportType.png)
+   > ![ユーザーが報告したフィッシング。](../../media/EmailUserReportedReportType.png)
 
 レポートが更新され、組織内のユーザーがフィッシング詐欺の試みとして報告した電子メール メッセージに関するデータが表示されます。 この情報を使用して、詳細な分析を行い、必要に応じて[Microsoft Defender](configure-mdo-anti-phishing-policies.md)でフィッシング対策ポリシーを調整Office 365。
 

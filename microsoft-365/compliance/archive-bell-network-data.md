@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、ベル ネットワークから SMS および MMS データをインポートおよびアーカイブする TeleMessage コネクタをセットアップできます。 これにより、Microsoft 365 のサード パーティデータ ソースからデータをアーカイブし、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティ データを管理できます。
-ms.openlocfilehash: e2de8bdbeb5acb5b4bca4876d8d1fd3d639e666021016fa0281e9de7f136e4e6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 24c5848d1e942338d9b3a55031572443b9553657
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53886956"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564220"
 ---
 # <a name="set-up-a-connector-to-archive-bell-network-data"></a>ベル ネットワーク データをアーカイブするコネクタをセットアップする
 
@@ -29,7 +29,7 @@ SMS および MMS メッセージがユーザー メールボックスに保存�
 
 次の概要では、コネクタを使用してベル ネットワーク のデータをアーカイブするプロセスについて説明Microsoft 365。
 
-![ベル ネットワークのアーカイブ ワークフロー](../media/BellNetworkConnectorWorkflow.png)
+![ベル ネットワークのアーカイブ ワークフロー。](../media/BellNetworkConnectorWorkflow.png)
 
 1. 組織は、TeleMessage と Bell を使用してベル ネットワーク コネクタをセットアップします。 詳細については [、「Bell Network Archiver」を参照してください](https://www.telemessage.com/office365-activation-for-bell-network-archiver)。
 

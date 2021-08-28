@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cf043741e2d066c8eaa7c4919b194a6ffd6d857d
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.openlocfilehash: 8683631adeb0f7e6090dafae36c075edacd7cc14
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58684030"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563952"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>iOS での Microsoft Defender for Endpoint の展開
 
@@ -37,7 +37,7 @@ ms.locfileid: "58684030"
 
 このトピックでは、登録されているデバイス上の iOS での Defender for Endpoint の展開Intune ポータル サイト説明します。 Intune デバイスの登録の詳細については、「Intune に [iOS/iPadOS デバイスを登録する」を参照してください](/mem/intune/enrollment/ios-enroll)。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 - Microsoft Endpoint Manager 管理センター [へのアクセス権を持っている必要があります](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
@@ -122,7 +122,7 @@ Intune を使用すると、アプリ構成ポリシーを使用して Defender 
    > [!NOTE]
    > 監視対象デバイスのこのアプリ構成ポリシーは、管理対象デバイスにのみ適用され、ベスト プラクティスとしてすべての管理対象 iOS デバイスを対象とする必要があります。
 
-1. 管理センターにサインインし [Microsoft エンドポイント マネージャーアプリ](https://go.microsoft.com/fwlink/?linkid=2109431)の構成ポリシー **[** 追加] \> **に** \> **移動します**。 [管理対象デバイス **] をクリックします**。
+1. 管理センターにサインインし [Microsoft エンドポイント マネージャーアプリ](https://go.microsoft.com/fwlink/?linkid=2109431)の構成ポリシー **[** 追加]  >  **に**  >  **移動します**。 [管理対象デバイス **] をクリックします**。
 
     > [!div class="mx-imgBorder"]
     > ![管理センター 4 Microsoft エンドポイント マネージャーのイメージ。](images/ios-deploy-4.png)
@@ -139,7 +139,7 @@ Intune を使用すると、アプリ構成ポリシーを使用して Defender 
     - 構成キー: issupervised
     - 値の型:String
     - 構成値: {{issupervised}}
-
+    
     > [!div class="mx-imgBorder"]
     > ![管理センター 6 Microsoft エンドポイント マネージャーのイメージ。](images/ios-deploy-6.png)
 

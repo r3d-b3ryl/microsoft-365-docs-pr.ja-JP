@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: この新しい予測コーディング モジュールAdvanced eDiscovery機械学習を使用して、レビュー セット内のアイテムを分析し、ケースまたは調査に関連するアイテムを予測します。
-ms.openlocfilehash: 5588f65af5d987eb5094a605331d9efd46f8fe999b5983e5a546f19564b09f26
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0b453713d986572dae8d80efe6dcd60b0616d789
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53891904"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567690"
 ---
 # <a name="learn-about-predictive-coding-in-advanced-ediscovery-preview"></a>予測コーディングについて詳しくは、Advanced eDiscovery (プレビュー)
 
@@ -31,7 +31,7 @@ ms.locfileid: "53891904"
 
 各ステップの予測コーディング ワークフローの概要と説明を次に示します。 予測コーディング プロセスの概念と用語の詳細については、「予測コーディングリファレンス」 [を参照してください](predictive-coding-reference.md)。
 
-![予測コーディングのワークフロー](..\media\PredictiveCodingWorkflow.png)
+![予測コーディング ワークフロー。](..\media\PredictiveCodingWorkflow.png)
 
 1. **レビュー セットに新しい予測コーディング モデルを作成します**。 最初の手順は、レビュー セットに新しい予測コーディング モデルを作成します。 モデルを作成するには、レビュー セットに 2,000 以上のアイテムが必要です。 モデルを作成した後、システムはコントロール セットとして使用するアイテムの数を *決定します*。 コントロール セットは、トレーニング プロセス中に使用して、トレーニング ラウンド中に実行するラベル付けを使用して、モデルがアイテムに割り当てる予測スコアを評価します。 コントロール セットのサイズは、レビュー セット内のアイテム数と、モデルの作成時に設定されるエラー値の信頼度と余白に基づいて設定されます。 コントロール セット内のアイテムは変更され、ユーザーに対して識別できません。
 

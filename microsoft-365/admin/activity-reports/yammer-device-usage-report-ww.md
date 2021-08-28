@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ユーザーがYammerを使用しているデバイスを確認するには、デバイス使用状況レポートをYammerします。
-ms.openlocfilehash: 6130da9e6cb7c982489ea50fe80aa661bc2a512967284237ef63e7dc9cafc429
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b9c05f54b1cc8f2483b3b167743bf0158c6dbc35
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53816201"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564760"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-device-usage-report"></a>Microsoft 365管理センターのレポート - デバイスYammerレポート
 
@@ -45,7 +45,7 @@ Yammer デバイスの使用状況レポートでは、ユーザーが Yammer �
 
 [デバイスの使用状況] タブを選択OneDriveレポートで使用状況 **を表示** できます。<br/>![Microsoft 365レポート - Microsoft Yammerデバイス使用状況レポート。](../../media/e21af4c0-0ad2-4485-8ab1-2f82d7dfa90e.png)
 
-[列 **の選択]** を選択して、レポートの列を追加または削除します。  <br/> ![Yammer使用状況レポート - 列を選択する](../../media/fc1fc8db-e197-4878-85c7-7ba0d67b9379.png)
+[列 **の選択]** を選択して、レポートの列を追加または削除します。  <br/> ![Yammer使用状況レポート - 列を選択します。](../../media/fc1fc8db-e197-4878-85c7-7ba0d67b9379.png)
 
 また、[**エクスポート**] リンクを選択して、レポート データを Excel の .csv ファイルにエクスポートすることもできます。 これにより、すべてのユーザーのデータがエクスポートされ、単純な並べ替えとフィルター処理を行ってさらに分析することができます。 ユーザー数が 2000 未満である場合は、レポート自体のテーブル内で並べ替えとフィルター処理を行うことができます。 ユーザー数が 2000 を超える場合は、フィルター処理と並べ替えを行うために、データをエクスポートする必要があります。 
   
