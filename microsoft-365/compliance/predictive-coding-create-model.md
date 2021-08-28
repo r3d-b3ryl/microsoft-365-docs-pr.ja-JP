@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 予測コーディング モデルを作成する方法については、Advanced eDiscovery。 これは、レビュー セット内の関連性の高い、関連性のAdvanced eDiscoveryなコンテンツを特定するのに役立つ、Advanced eDiscoveryの機械学習機能を使用する最初の手順です。
-ms.openlocfilehash: 37ff12ea723127b322e7a2b2a1e049b66b72bb92a7625c97efdff4dcdb64b976
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ed5092f2730ade5e349cec77e5c264e67d957927
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53891993"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58555690"
 ---
 # <a name="create-a-predictive-coding-model-preview"></a>予測コーディング モデルの作成 (プレビュー)
 
