@@ -21,12 +21,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: オンライン アセットの配信をOffice 365 Content Delivery Network (CDN) を使用する方法SharePointします。
-ms.openlocfilehash: f2e23217e18c51bb865dd46a692db50bf3fa81ade1a09e833305cdb9a5fbadc9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 494f0574707693f7d36fa2e1c61ee942e4c088a6
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53885110"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574269"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>SharePoint Online での Office 365 コンテンツ配信ネットワーク (CDN) の使用
 
@@ -37,7 +37,7 @@ ms.locfileid: "53885110"
 
 Office 365 CDN は静的資産を複数の場所 _(元の場所)_ でホストできる複数の CDN で構成されているため、静的資産をグローバルな高速ネットワークから提供することができます。 Office 365 CDN でホストするコンテンツの種類に応じて、**公開**、**非公開**、またはその両方の元の場所を追加できます。 パブリック [オリジンとプライベートオリジン](use-microsoft-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate) の違いの詳細については、「各オリジンをパブリックまたはプライベートにするかどうかを選択する」を参照してください。
 
-![Office 365 CDN の概念図](../media/O365-CDN/o365-cdn-flow-transparent.png "Office 365 CDN の概念図")
+![Office 365 CDN概念図を参照してください。](../media/O365-CDN/o365-cdn-flow-transparent.png "Office 365 CDN の概念図")
 
 既に CDN の動作方法に精通している場合は、テナントに対してユーザー設定を有効にするには、いくつかの手順Office 365 CDN必要があります。 このトピックでは、方法について説明します。 静的アセットのホスティングを開始する方法の詳細については、次の記事を参照してください。
 
@@ -921,7 +921,7 @@ SharePoint 発行機能によって自動的に書き換えられるのは次の
 
 次の図は、公開元SharePointを含むページの要求を受け取るワークフローを示しています。
 
-![ワークフロー図: 公開元Office 365 CDNアセットを取得する](../media/O365-CDN/o365-cdn-public-steps-transparent.png "ワークフロー: パブリック Office 365 CDNアセットの取得")
+![ワークフロー図: 公開元Office 365 CDNアセットを取得します。](../media/O365-CDN/o365-cdn-public-steps-transparent.png "ワークフロー: パブリック Office 365 CDNアセットの取得")
 
 > [!TIP]
 > ページ上の特定の URL の自動書き換えを無効にする場合は、ページをチェックアウトしてクエリ文字列パラメーターを **追加できます。無効にする各リンクの末尾に NoAutoReWrites=true** を指定します。
@@ -957,7 +957,7 @@ https://publiccdn.sharepointonline.com/contoso.sharepoint.com/sites/site/library
 
 次の図は、プライベートオリジンSharePointを含むページの要求を受け取るワークフローを示しています。
 
-![ワークフロー図: プライベート Office 365 CDNからアセットを取得する](../media/O365-CDN/o365-cdn-private-steps-transparent.png "ワークフロー: プライベート Office 365 CDNからアセットを取得する")
+![ワークフロー図: プライベートオリジンOffice 365 CDNアセットを取得します。](../media/O365-CDN/o365-cdn-private-steps-transparent.png "ワークフロー: プライベート Office 365 CDNからアセットを取得する")
 
 #### <a name="token-based-authorization-in-private-origins"></a>プライベートオリジンでのトークンベースの承認
 
@@ -976,7 +976,7 @@ https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/libra
 
 重要な点は、SharePoint Online がプライベートオリジンのアセットに対するアイテム レベルのアクセス許可をサポートしていない点に注意してください。 たとえば、場所にあるファイルの場合、ユーザーは次の条件に従って `https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg` ファイルに効果的にアクセスできます。
 
-|User  |Permissions  |有効なアクセス  |
+|ユーザー  |アクセス許可  |有効なアクセス  |
 |---------|---------|---------|
 |ユーザー 1     |フォルダー 1 へのアクセス権を持つ         |サーバーからimage1.jpgアクセスCDN         |
 |ユーザー 2     |folder1 にアクセスできない         |サーバーからimage1.jpgにアクセスCDN         |

@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_Architecture
 description: '概要: Contoso 社は、トップシークレット プロジェクトのセキュリティ分離を持つチームを使用して、新しい製品とサービスのスイートを開発する方法について説明します。'
-ms.openlocfilehash: 86c2b0cbf53df07ac956138e096ad53a67f0bd7226b8583214d0e666ddbafe9e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3a14a5c7ba844e31b8e96d209eb21a9daac45e00
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53883584"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575422"
 ---
 # <a name="isolated-team-for-a-top-secret-project-of-the-contoso-corporation"></a>Contoso Corporation のトップシークレット プロジェクトの分離チーム
 
@@ -77,7 +77,7 @@ Contoso 管理者は 2X という名前の新しい **Projectを作成** しま�
 
 セキュリティを分離した 2X チームProject構成を次に示します。
 
-![2X チームの結果Project構成](../media/contoso-team-for-top-secret-project.png)
+![2X チームの結果Project構成。](../media/contoso-team-for-top-secret-project.png)
 
  ## <a name="step-4-trained-project-2x-team-members"></a>手順 4: トレーニングProject 2X チーム メンバー
 
@@ -92,7 +92,7 @@ Contoso のセキュリティ スタッフは、Project 2X チーム メンバ�
 
 次に、基になる 2X サイトに保存されているファイルのProject 2X のProjectを示します。
 
-![基になる 2X サイトに格納されているProject例](../media/contoso-team-for-top-secret-project-example.png)
+![基になる 2X サイトに格納されているファイルProject例です。](../media/contoso-team-for-top-secret-project-example.png)
 
 いくつかのインスタンスでは、Project 2X チーム メンバーは、Project 2X ラベルで保護されたファイルをローカル ドライブにダウンロードしてオフライン作業を行いました。 
 

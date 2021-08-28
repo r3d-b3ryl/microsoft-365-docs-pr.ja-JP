@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: トピック センターのトピックを管理する方法については、Microsoft Viva トピック。
-ms.openlocfilehash: 33d706a0801d8a91d22767b5b03461ba79cf8ff7
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 87e944c232d552f5a0808765a1303750eb840387
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255620"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570955"
 ---
 # <a name="manage-topics-in-the-topic-center-in-microsoft-viva-topics"></a>トピック センターのトピックを管理Microsoft Viva トピック
 
@@ -118,7 +118,7 @@ ms.locfileid: "58255620"
 
 [トピック **の管理]** ページで、指定したソースの場所でSharePointされたトピックが [発行済み] タブに **表示** されます。公開されたトピックは編集され、特定の情報がページに遭遇したユーザーに常に表示されます。 手動で作成したトピックもこちらに一覧表示されます。
 
-   ![トピックの管理](../media/knowledge-management/manage-topics-new.png)
+   ![トピックの管理。](../media/knowledge-management/manage-topics-new.png)
 
 ## <a name="removed-topics"></a>削除されたトピック
 

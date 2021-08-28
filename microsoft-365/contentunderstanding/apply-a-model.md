@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Normal
 description: 公開されたモデルをドキュメント ライブラリに適用するSharePointします。
-ms.openlocfilehash: 9eed1fe6c209a4d89ea3c4114856c994fa283e340880332ecaa84a9a33bdb8ab
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d277b959fc05318380363e1eaba14343c84af126
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53841478"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575146"
 ---
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntexのドキュメント理解モデルを適用する
 
@@ -40,37 +40,37 @@ ms.locfileid: "53841478"
 
 1. モデルのホームページの [**ライブラリにモデルを適用する** ]タイルの [**モデルの発行**]を選びます。 または、[**このモデルのあるライブラリ**]セクション の [**+ ライブラリの追加**] を選択します。 </br>
 
-    ![ライブラリにモデルを追加する](../media/content-understanding/apply-to-library.png)</br>
+    ![モデルをライブラリに追加します。](../media/content-understanding/apply-to-library.png)</br>
 
 2. モデルを適用するドキュメントライブラリが含まれている SharePoint サイトを選択できます。 リストにサイトが表示されない場合は、検索ボックスを使用して検索します。</br>
 
-    ![サイトの選択](../media/content-understanding/site-search.png)</br>
+    ![サイトを選択します。](../media/content-understanding/site-search.png)</br>
 
     > [!NOTE]
     > モデルを適用しようとしているドキュメントライブラリへの *リスト管理* 許可を持っているかまたは、*編集* 権限を持っていなければなりません。</br>
 
 3. サイトを選択した後、モデルを適用するドキュメントライブラリを選択します。 このサンプルでは、*Contoso ケーストラッキング* サイトから *ドキュメント* ドキュメントライブラリ を選びます。</br>
 
-    ![ドキュメントライブラリを選択する](../media/content-understanding/select-doc-library.png)</br>
+    ![ドキュメントライブラリを選択します。](../media/content-understanding/select-doc-library.png)</br>
 
 4. モデルは、コンテンツタイプに関連付けられているため、ライブラリに適用すると、コンテンツタイプと、列として表示されている抽出したラベルのビューが追加されます。 このビューは既定ではライブラリの既定のビューですが、必要に応じて、[**詳細 設定**] を選択し、[**既定のビューとして設定**] 選択解除して、既定のビューから外すことができます。</br>
 
-    ![ライブラリビュー](../media/content-understanding/library-view.png)</br>
+    ![ライブラリ ビュー。](../media/content-understanding/library-view.png)</br>
 
 5. モデルをライブラリに適用するには、[ **追加** ] を選択します。 
 6. モデルのホームページの [**このモデルのある の ライブラリ**] セクションに、表示されている SharePoint サイトの URL を確認します。</br>
 
-    ![選択したライブラリ](../media/content-understanding/selected-library.png)</br>
+    ![選択したライブラリ。](../media/content-understanding/selected-library.png)</br>
 
 7. ドキュメントライブラリに移動し、モデルのドキュメントライブラリビューに移動していることを確認します。 ドキュメント ライブラリ名の横にある [情報] ボタンを選択すると、ドキュメント ライブラリにモデルが適用されていることを示すメッセージが表示されます。
 
-    ![情報表示](../media/content-understanding/info-du.png)</br> 
+    ![情報ビュー。](../media/content-understanding/info-du.png)</br> 
 
     [**アクティブなモデルの表示**] を選択すると、ドキュメント ライブラリに適用されているモデルに関する詳細を表示できます。
 
 8. [**アクティブなモデル**] ウィンドウで、ドキュメント ライブラリに適用されているモデルを確認できます。 モデルを選択すると、モデルの説明、モデルの発行者、およびモデルが分類するファイルに保持ラベルを適用するかどうかなど、モデルに関する詳細が表示されます。
 
-    ![[アクティブなモデル] ウィンドウ](../media/content-understanding/active-models.png)</br> 
+    ![[アクティブ なモデル] ウィンドウ。](../media/content-understanding/active-models.png)</br> 
 
 モデルをドキュメントライブラリに適用したら、サイトにドキュメントをアップロードし、結果を確認できます。
 
@@ -84,7 +84,7 @@ ms.locfileid: "53841478"
 2. ファイルを選択すると、 [ドキュメントライブラリ] リボンに **分類および抽出** が表示されます。 **分類および抽出** を選択します。
 3. 選択したファイルが処理されるキューに追加されます。
 
-      ![分類と抽出](../media/content-understanding/extract-classify.png)</br> 
+      ![分類と抽出。](../media/content-understanding/extract-classify.png)</br> 
 
 > [!NOTE]
 > 個々のファイルをライブラリにコピーしてモデルに適用することはできますが、フォルダーに適用することはできません。
@@ -93,11 +93,11 @@ ms.locfileid: "53841478"
 
 SharePoint Syntex 文書理解モデルまたはフォーム処理モデルをドキュメント ライブラリに適用すると、ライブラリ スキーマに <b> 分類日 </b> フィールドが含まれます。 既定では、このフィールドは空ですが、ドキュメントがモデルによって処理され分類されると、完了日時のタイム スタンプでこのフィールドが更新されます。 
 
-   ![[分類日] 列](../media/content-understanding/class-date-column.png)</br> 
+   ![[分類日] 列。](../media/content-understanding/class-date-column.png)</br> 
 
 [分類日] フィールドは、Syntex のコンテンツの解釈モデルがファイルの処理を完了し、[分類日] フィールドを更新したあとで、[<b>ファイルがコンテンツの解釈モデルで分類されたとき</b>トリガー](/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model) が Power Automate フローを実行するのに使用されます。
 
-   ![フロー トリガー](../media/content-understanding/trigger.png)</br>
+   ![Flowトリガー。](../media/content-understanding/trigger.png)</br>
 
 <b>ファイルがコンテンツの解釈モデルで分類されたとき</b>トリガーはさらに、ファイルから抽出された情報を使用して、別のワークフローを開始するためにも使用できます。
 

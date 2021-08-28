@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アプリを表示します。
-ms.openlocfilehash: 9e67f5115e715f804cf91d95c24760a25fdf869c
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: 8e9ac5fda62e015bc1e2a5df11b618afa508a4a4
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394530"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574414"
 ---
 # <a name="view-your-apps"></a>アプリを表示する
 
@@ -34,7 +34,7 @@ Microsoft アプリ ガバナンスを使用すると、テナント内の Micro
 
 テナント内のアプリの概要については、**[Microsoft 365 コンプライアンス センター] > [アプリ ガバナンス] > [アプリ]** にアクセスします。
 
-![Microsoft 365 コンプライアンス センターの MAPG アプリの概要ページ](..\media\manage-app-protection-governance\mapg-cc-apps.png)
+![Microsoft 365 コンプライアンス センターの MAPG アプリの概要ページ。](..\media\manage-app-protection-governance\mapg-cc-apps.png)
 
 >[!Note]
 > アプリ ガバナンス データを表示するには、サインイン アカウントに[これらのロール](app-governance-get-started.md#administrator-roles)のいずれかが必要です。
@@ -67,7 +67,7 @@ Microsoft アプリ ガバナンスを使用すると、テナント内の Micro
 
 テナント内の特定のアプリの詳細については、** [Microsoft 365 コンプライアンス センター] > [アプリ ガバナンス] > [アプリ ページ] > *アプリ名*** にアクセスします。
 
-![Microsoft 365 コンプライアンス センターの [アプリ ガバナンス アプリの詳細] ウィンドウ](..\media\manage-app-protection-governance\mapg-cc-apps-app.png)
+![Microsoft 365 コンプライアンス センターの [アプリ ガバナンス アプリの詳細] ウィンドウ。](..\media\manage-app-protection-governance\mapg-cc-apps-app.png)
 
 アプリの詳細ウィンドウには、次のタブに関する追加情報が表示されます。
 

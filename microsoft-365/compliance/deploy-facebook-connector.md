@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理者は、Facebook Business ページをインポートおよびアーカイブするネイティブ コネクタを設定して、そのページMicrosoft 365。 このデータを Microsoft 365 にインポートした後、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織の Facebook データのガバナンスを管理できます。
-ms.openlocfilehash: 14793931ec6e58571dd870bd48b2150d2d00fa09
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 9b2e7293bdd5be4eaf0b478263645663395e522d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58248068"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574978"
 ---
 # <a name="deploy-a-connector-to-archive-facebook-business-pages-data"></a>コネクタを展開して Facebook Business ページのデータをアーカイブする
 
@@ -30,27 +30,27 @@ ms.locfileid: "58248068"
 
 1. グローバル管理者 <https://portal.azure.com> アカウントの資格情報を使用して、アクセスしてサインインします。
 
-    ![AAD でアプリを作成する](../media/FBCimage1.png)
+    ![AAD でアプリを作成します。](../media/FBCimage1.png)
 
 2. 左側のナビゲーション ウィンドウで **[Azure Active Directory]** をクリックします。
 
-    ![[次Azure Active Directory](../media/FBCimage2.png)
+    ![[Azure Active Directory] をクリックします。](../media/FBCimage2.png)
 
 3. 左側のナビゲーション ウィンドウで、[アプリの登録 ] **(プレビュー) をクリックし** 、[新しい登録] **をクリックします**。
 
-    ![[**アプリの登録 (プレビュー)**] をクリックし、[**新しい登録** ] をクリックします。](../media/FBCimage3.png)
+    ![[**アプリの登録 (プレビュー)**] をクリックし、[**新しい登録**] をクリックします。](../media/FBCimage3.png)
 
 4. アプリケーションを登録します。 [リダイレクト URI] で、[アプリケーションの種類] ドロップダウン リストで [Web] を選択し <https://portal.azure.com> 、URI のボックスに入力します。
 
-   ![アプリケーションの登録](../media/FBCimage4.png)
+   ![アプリケーションを登録します。](../media/FBCimage4.png)
 
 5. アプリケーション **(クライアント) ID とディレクトリ** **(テナント) ID** をコピーし、テキスト ファイルまたは他の安全な場所に保存します。 これらの ID は、後の手順で使用します。
 
-   ![アプリケーション ID とディレクトリ ID をコピーして保存する](../media/FBCimage5.png)
+   ![アプリケーション ID とディレクトリ ID をコピーして保存します。](../media/FBCimage5.png)
 
 6. 新しい **アプリの&に移動します。**
 
-   ![新しいアプリの証明書&シークレットに移動します。](../media/FBCimage6.png)
+   ![新しいアプリの&に移動します。](../media/FBCimage6.png)
 
 7. [新 **しいクライアント シークレット] をクリックします。**
 
@@ -58,17 +58,17 @@ ms.locfileid: "58248068"
 
 8. 新しいシークレットを作成します。 [説明] ボックスにシークレットを入力し、有効期限を選択します。
 
-    ![シークレットを入力し、有効期限を選択する](../media/FBCimage8.png)
+    ![シークレットを入力し、有効期限を選択します。](../media/FBCimage8.png)
 
 9. シークレットの値をコピーし、テキスト ファイルまたは他の保存場所に保存します。 これは、後の手順で使用する AAD アプリケーション シークレットです。
 
-   ![シークレットの値をコピーして保存する](../media/FBCimage9.png)
+   ![シークレットの値をコピーして保存します。](../media/FBCimage9.png)
 
 ## <a name="step-2-deploy-the-connector-web-service-from-github-to-your-azure-account"></a>手順 2: コネクタ Web サービスを Azure アカウントGitHubから展開する
 
 1. このサイトに [移動しGitHub Azure](https://github.com/microsoft/m365-sample-connector-csharp-aspnet) **に展開をクリックします**。
 
-    ![[Azure に展開する] をクリックします。](../media/FBCGithubApp.png)
+    ![[Azure に展開] をクリックします。](../media/FBCGithubApp.png)
 
 2. [Azure に **展開] をクリック** すると、カスタム テンプレート ページを使用して Azure ポータルにリダイレクトされます。 [基本] と **[詳細****設定入力** し、[購入] を **クリックします**。
 
@@ -88,17 +88,17 @@ ms.locfileid: "58248068"
 
 3. 展開が成功すると、ページは次のスクリーンショットのようになります。
 
-   ![[アカウントStorage] をクリックし、[アカウント] Storageクリックします。](../media/FBCimage13.png)
+   ![[アカウントStorage] をクリックし、[アカウントのStorageクリックします。](../media/FBCimage13.png)
 
 ## <a name="step-3-register-the-facebook-app"></a>手順 3: Facebook アプリを登録する
 
 1. に移動し、組織の Facebook Business ページのアカウントの資格情報を使用してログインし、[新しいアプリの追加 <https://developers.facebook.com> ] **をクリックします**。
 
-   ![Facebook ビジネス ページ用の新しいアプリを追加する](../media/FBCimage25.png)
+   ![Facebook ビジネス ページ用の新しいアプリを追加します。](../media/FBCimage25.png)
 
 2. 新しいアプリ ID を作成します。
 
-   ![新しいアプリ ID を作成する](../media/FBCimage26.png)
+   ![新しいアプリ ID を作成します。](../media/FBCimage26.png)
 
 3. 左側のナビゲーション ウィンドウで、[製品の追加] **を** クリックし、[Facebook **ログイン** ] タイルの [セットアップ] **をクリック** します。
 
@@ -110,15 +110,15 @@ ms.locfileid: "58248068"
 
 5. Azure アプリ サービスの URL を追加します。たとえば `https://fbconnector.azurewebsites.net` .
 
-   ![Azure アプリ サービスの URL を追加する](../media/FBCimage29.png)
+   ![Azure アプリ サービスの URL を追加します。](../media/FBCimage29.png)
 
 6. Facebook ログインのセットアップの [クイック スタート] セクションを完了します。
 
-   ![[クイック スタート] セクションを完了する](../media/FBCimage30.png)
+   ![[クイック スタート] セクションを完了します。](../media/FBCimage30.png)
 
 7. [Facebook ログイン]の下の左側のナビゲーション ウィンドウで、[設定]**をクリック** し、[有効な OAuth リダイレクト URI] ボックスに OAuth リダイレクト **URI を追加** します。 **\<connectorserviceuri> /Views/FacebookOAuth** という形式を使用します。connectorserviceuri の値は組織の Azure アプリ サービス URL です。たとえば `https://fbconnector.azurewebsites.net` 、 。
 
-   ![[有効な OAuth リダイレクト URI] ボックスに OAuth リダイレクト URI を追加する](../media/FBCimage31.png)
+   ![[有効な OAuth リダイレクト URI] ボックスに OAuth リダイレクト URI を追加します。](../media/FBCimage31.png)
 
 8. 左側のナビゲーション ウィンドウで、[製品の追加]**をクリックし****、[Webhooks] をクリックします。** [ページ **] プルダウン メニュー** で、[ページ] を **クリックします**。
 
@@ -128,49 +128,49 @@ ms.locfileid: "58248068"
 
    確認トークンは強力なパスワードと似ている必要があります。 確認トークンをテキスト ファイルまたは他の保存場所にコピーします。
 
-   ![検証トークンの追加](../media/FBCimage33.png)
+   ![検証トークンを追加します。](../media/FBCimage33.png)
 
 10. フィードのエンドポイントをテストしてサブスクライブします。
 
-    ![エンドポイントのテストとサブスクライブ](../media/FBCimage34.png)
+    ![エンドポイントをテストしてサブスクライブします。](../media/FBCimage34.png)
 
 11. プライバシー URL、アプリ アイコン、およびビジネス使用を追加します。 また、アプリ ID とアプリ シークレットをテキスト ファイルまたは他の保存場所にコピーします。
 
-    ![プライバシー URL、アプリ アイコン、およびビジネスの使用を追加する](../media/FBCimage35.png)
+    ![プライバシー URL、アプリ アイコン、およびビジネス使用を追加します。](../media/FBCimage35.png)
 
 12. アプリを公開します。
 
-    ![アプリを公開する](../media/FBCimage36.png)
+    ![アプリを公開します。](../media/FBCimage36.png)
 
 13. 管理者またはテスターの役割にユーザーを追加します。
 
-    ![管理者またはテスターの役割にユーザーを追加する](../media/FBCimage37.png)
+    ![管理者またはテスターの役割にユーザーを追加します。](../media/FBCimage37.png)
 
 14. [ページパブリック **コンテンツ アクセス] アクセス許可を追加** します。
 
-    ![dd the Page Public Content Access permission](../media/FBCimage38.png)
+    ![dd the Page Public Content Access permission.](../media/FBCimage38.png)
 
 15. [ページの管理] アクセス許可を追加します。
 
-    ![[ページの管理] アクセス許可の追加](../media/FBCimage39.png)
+    ![[ページの管理] アクセス許可を追加します。](../media/FBCimage39.png)
 
 16. Facebook によってレビューされたアプリケーションを取得します。
 
-    ![Facebook でレビューされたアプリケーションを取得する](../media/FBCimage40.png)
+    ![Facebook によってレビューされたアプリケーションを取得します。](../media/FBCimage40.png)
 
 ## <a name="step-4-configure-the-connector-web-app"></a>手順 4: コネクタ Web アプリを構成する
 
 1. に移動 `https://<AzureAppResourceName>.azurewebsites.net` します (AzureAppResourceName は、手順 4 で指定した Azure アプリ リソースの名前です)。 たとえば、名前が **fbconnector** の場合は、 に移動します `https://fbconnector.azurewebsites.net` 。 アプリのホーム ページは、次のスクリーンショットのようになります。
 
-   ![コネクタ Web アプリに移動する](../media/FBCimage41.png)
+   ![コネクタ Web アプリに移動します。](../media/FBCimage41.png)
 
 2. [構成 **] を** クリックしてサインイン ページを表示します。
 
-   ![[構成] をクリックしてサインイン ページを表示する](../media/FBCimage42.png)
+   ![[構成] をクリックしてサインイン ページを表示します。](../media/FBCimage42.png)
 
 3. [テナント ID] ボックスに、テナント ID (手順 2 で取得した) を入力または貼り付けます。 パスワード ボックスに、APISecretKey (手順 2 で取得した) を入力または貼り付け、[構成の設定] 設定 をクリックして構成の詳細ページを表示します。
 
-    ![テナント ID とパスワードを使用してサインインし、[構成の詳細] ページに移動します。](../media/FBCimage43.png)
+    ![テナント ID とパスワードを使用してサインインし、構成の詳細ページに移動します。](../media/FBCimage43.png)
 
 4. 次の構成設定を入力します。
 
@@ -198,7 +198,7 @@ ms.locfileid: "58248068"
 
 5. [コネクタ **アプリの資格情報の追加]** ページで、次の情報を入力し、[接続の検証] **をクリックします**。
 
-   ![コネクタ アプリの資格情報を入力する](../media/TCimage38.png)
+   ![コネクタ アプリの資格情報を入力します。](../media/TCimage38.png)
 
    - [名前 **] ボックス** に、Facebook ニュース ページなどのコネクタの **名前を入力します**。
 
@@ -214,11 +214,11 @@ ms.locfileid: "58248068"
 
 8. [Facebook **コネクタ アプリの構成** ] ページで **、[Facebook** でログイン] をクリックし、組織の Facebook Business ページのアカウントの資格情報を使用してログインします。 ログインした Facebook アカウントに、組織の Facebook Business ページの管理者ロールが割り当てられているか確認します。
 
-   ![Facebook でログインする](../media/FBCimage50.png)
+   ![Facebook でログインします。](../media/FBCimage50.png)
 
 9. ログインした Facebook アカウントによって管理されているビジネス ページの一覧が表示されます。 アーカイブするページを選択し、[次へ] を **クリックします**。
 
-   ![アーカイブする組織のビジネス ページを選択する](../media/FBCimage52.png)
+   ![アーカイブする組織のビジネス ページを選択します。](../media/FBCimage52.png)
 
 10. [ **続行] を** クリックして、コネクタ サービス アプリのセットアップを終了します。
 

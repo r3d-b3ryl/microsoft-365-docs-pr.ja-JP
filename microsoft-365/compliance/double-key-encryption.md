@@ -12,12 +12,12 @@ ms.reviewer: esaggese
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 3e6fcb5f91a90bc062e12a38cf58d5666ec868ab35aa448250d2da8eb3b1b6a1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1489671754f26d37abbc9bfbc84f59be26099c9b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53820362"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570895"
 ---
 # <a name="double-key-encryption-for-microsoft-365"></a>ユーザーのダブル キー暗号化Microsoft 365
 
@@ -142,12 +142,12 @@ Microsoft は、DKE ソース ファイルを新しいリポジトリGitHubし�
     次に例を示します。
 
    > [!div class="mx-imgBorder"]
-   > ![ダブル キー暗号化サービス リポジトリをサーバーから複製GitHub](../media/dke-clone.png)
+   > ![2 つのキー暗号化サービス リポジトリの複製を、GitHub。](../media/dke-clone.png)
 
 3. [コマンド Visual Studio Code] で、[**コマンド パレットの表示]** \> **を選択** し **、[Git: Clone] を選択します**。 リスト内のオプションに移動するには、入力を開始してエントリをフィルター処理し、ドロップダウン `git: clone` から選択します。 次に例を示します。
 
    > [!div class="mx-imgBorder"]
-   > ![Visual Studio CodeGIT:Clone オプション](../media/dke-vscode-clone.png)
+   > ![Visual Studio CodeGIT:Clone オプション。](../media/dke-vscode-clone.png)
 
 4. テキスト ボックスに、Git からコピーした URL を貼り付け、Git から [複製]**をGitHub。**
 
@@ -155,7 +155,7 @@ Microsoft は、DKE ソース ファイルを新しいリポジトリGitHubし�
 
     リポジトリが左側Visual Studio Code開き、左下に現在の Git ブランチが表示されます。 たとえば、ブランチは main である **必要があります**。 次に例を示します。
 
-   ![メイン ブランチを表示するVisual Studio Code DKE repo のスクリーンショット](../media/dke-vscode-main-branch.jpg)
+   ![メイン ブランチを表示するVisual Studio Code DKE repo のスクリーンショット。](../media/dke-vscode-main-branch.jpg)
 
 6. メイン ブランチにいない場合は、そのブランチを選択する必要があります。 [Visual Studio Code] で、ブランチを選択し、**表示されるブランチ** の一覧から main を選択します。
 
@@ -203,7 +203,7 @@ DKE サービスを展開するには、次の種類のアプリケーション�
 
 次の図は、電子 **メールappsettings.js形式** のファイルに関する情報を示しています。
 
-   ![メールappsettings.js方法を示すファイルに関する情報](../media/dke-email-accesssetting.png)
+   ![電子メールappsettings.jsを示すファイルに関する情報が表示されます。](../media/dke-email-accesssetting.png)
 
 ##### <a name="to-set-key-access-settings-for-dke-using-role-authorization"></a>役割の承認を使用して DKE のキー アクセス設定を設定するには
 
@@ -225,7 +225,7 @@ DKE サービスを展開するには、次の種類のアプリケーション�
 
 次の図は、役割の **appsettings.js形式** のファイルに関する情報を示しています。
 
-   ![appsettings.js承認方法を示すファイルに関する情報](../media/dke-role-accesssetting.png)
+   ![appsettings.jsの承認方法を示すファイルを選択します。](../media/dke-role-accesssetting.png)
 
 #### <a name="tenant-and-key-settings"></a>テナントとキーの設定
 
@@ -315,7 +315,7 @@ DKE テナントとキー設定は、ファイルのappsettings.js **に表示**
 
     最後の結果は、次のようになります。
 
-    ![パブリック プレビュー用の startup.cs ファイル](../media/dke-startupcs-usetestkeys.png)
+    ![パブリック プレビュー用の startup.cs ファイル。](../media/dke-startupcs-usetestkeys.png)
 
 これで、DKE プロジェクト [をビルドする準備ができました](#build-the-project)。
 
@@ -329,15 +329,15 @@ DKE プロジェクトをローカルでビルドするには、次の手順を�
 
    ビルド タスクが見つからない場合は、[ビルド タスクの構成] を **選択し、** 次のように .NET コア用に作成します。
 
-   ![.NET の不足しているビルド タスクを構成する](../media/dke-configurebuildtask.png)
+   ![.NET の不足しているビルド タスクを構成します。](../media/dke-configurebuildtask.png)
 
    1. [テンプレート **からtasks.jsを作成する] を選択します**。
 
-      ![DKE tasks.jsからファイルにファイルを作成する](../media/dke-createtasksjsonfromtemplate.png)
+      ![DKE 用tasks.jsファイルに対してファイルを作成します。](../media/dke-createtasksjsonfromtemplate.png)
 
    2. テンプレートの種類の一覧から **、[.NET Core] を選択します**。
 
-      ![DKE に適切なテンプレートを選択する](../media/dke-tasksjsontemplate.png)
+      ![DKE の適切なテンプレートを選択します。](../media/dke-tasksjsontemplate.png)
 
    3. ビルド セクションで **、customerkeystore.csproj ファイルへのパスを見** つけます。 表示されていない場合は、次の行を追加します。
 
@@ -386,7 +386,7 @@ DKE プロジェクトをローカルでビルドするには、次の手順を�
    次に例を示します。
 
    > [!div class="mx-imgBorder"]
-   > ![App Service の追加](../media/dke-azure-add-app-service.png)
+   > ![App Service を追加します。](../media/dke-azure-add-app-service.png)
 
 3. ページの下部で、[レビューと作成] を **選択** し、[追加] を **選択します**。
 
@@ -426,7 +426,7 @@ DKE が展開され、作成したテスト キーを参照できます。 [次�
 
    次に例を示します。
 
-   ![FTP ダッシュボードから接続文字列をコピーする](../media/dke-ftp-dashboard.png)
+   ![FTP ダッシュボードから接続文字列をコピーします。](../media/dke-ftp-dashboard.png)
 
 3. キー ストレージのコードベースで **、customer-key-store\src\customer-key-store ディレクトリに移動します**。
 
@@ -448,7 +448,7 @@ DKE が展開され、作成したテスト キーを参照できます。 次�
 
 上記のいずれかの方法を使用して DKE を展開した後、展開とキー ストアの設定を検証します。
 
-次のコマンドを実行します。
+次を実行します: 
 
 ```powershell
 src\customer-key-store\scripts\key_store_tester.ps1 dkeserviceurl/mykey
@@ -481,7 +481,7 @@ DKE サービスを登録するには、次の方法を実行します。
    次に例を示します。
 
    > [!div class="mx-imgBorder"]
-   > ![新しいアプリ登録](../media/dke-app-registration.png)
+   > ![新しいアプリ登録。](../media/dke-app-registration.png)
 
 4. ページの下部にある [登録] **を選択** して、新しいアプリ登録を作成します。
 
@@ -542,7 +542,7 @@ DKE サービスを登録するには、次の方法を実行します。
 次に例を示します。
 
 > [!div class="mx-imgBorder"]
-> ![[ダブル キーの暗号化を使用する] を選択Microsoft 365 コンプライアンス センター](../media/dke-use-dke.png)
+> ![[キーの二重暗号化を使用する] を選択Microsoft 365 コンプライアンス センター。](../media/dke-use-dke.png)
 
 追加した DKE ラベルは、最新バージョンのユーザーに対して表示Microsoft 365 Apps for enterprise。
 

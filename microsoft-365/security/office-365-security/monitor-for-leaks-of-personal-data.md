@@ -19,12 +19,12 @@ search.appverid:
 description: 個人データの漏えいの監視に使用できる 3 つのツールについて説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1711ce8154afb976ce89ac7760f5bec9afca7292
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 9c40078626948e51c0e43f06dd567967f3cff516
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532573"
+ms.locfileid: "58565650"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>個人情報の漏えいを監視する
 
@@ -33,7 +33,7 @@ ms.locfileid: "58532573"
 
 個人データの使用と転送を監視するために使用できるツールは数多くあります。このトピックでは、効果的な 3 つのツールについて説明します。
 
-![個人データの使用と転送を監視するためのツール](../../media/Monitor-for-leaks-of-personal-data-image1.png)
+![個人データの使用と転送を監視するためのツール。](../../media/Monitor-for-leaks-of-personal-data-image1.png)
 
 この図について:
 
@@ -62,7 +62,7 @@ DLP レポートは、Microsoft 365 コンプライアンス センターにあ�
 
 詳細については、「[データ損失防止のレポートの表示](../../compliance/view-the-dlp-reports.md)」を参照してください。
 
-![DLP ポリシーと一致することを示すレポート](../../media/Monitor-for-leaks-of-personal-data-image2.png)
+![DLP ポリシーと一致することを示すレポート。](../../media/Monitor-for-leaks-of-personal-data-image2.png)
 
 ## <a name="audit-log-and-alert-policies"></a>監査ログおよびアラートのポリシー
 
@@ -98,7 +98,7 @@ Microsoft Cloud App Security は、クラウド アプリのための詳細な�
 
 たとえば、次の図は GDPR に役立つ 2 つのクラウド アプリケーション セキュリティ ポリシーを示しています。
 
-![クラウド アプリケーション セキュリティ ポリシーの例](../../media/Monitor-for-leaks-of-personal-data-image3.png)
+![クラウド アプリケーション セキュリティ ポリシーの例。](../../media/Monitor-for-leaks-of-personal-data-image3.png)
 
 1 番目のポリシーは、選択した事前定義の PII 属性またはカスタム式を持つファイルが、選択した SaaS アプリから組織外で共有されると警告します。
 
@@ -116,7 +116,7 @@ Microsoft Cloud App Security は、クラウド アプリのための詳細な�
 > [!NOTE]
 > Cloud App Security の使用を開始するときやラベルを割り当てる前に、[一般設定] の [Azure Information Protection 分類ラベルについてファイルを自動的にスキャンする] を有効にしてください。設定後は、Cloud App Security は、変更されるまで既存ファイルを再スキャンしません。
 
-![アラートに関する情報を表示するダッシュボード](../../media/Monitor-for-leaks-of-personal-data-image4.png)
+![アラートに関する情報を表示するダッシュボード。](../../media/Monitor-for-leaks-of-personal-data-image4.png)
 
 詳しくは、以下の資料を参照してください。
 

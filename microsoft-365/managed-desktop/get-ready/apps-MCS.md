@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 4470ce4bc2ee671a24c319b817162b10cb89dbb4917feda51010147bb46fd814
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: db48122ea5551fe3e9f8cd676785bbd3eef81d0b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854550"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570931"
 ---
 # <a name="working-with-microsoft-consulting-services"></a>Microsoft コンサルティング サービスを使用する
 
@@ -41,7 +41,7 @@ MCS アプリパッケージを使用するには、 **次の要素を指定す�
 
 アプリ情報をポータルにアップロードして、パッケージ化プロセスMicrosoft マネージド デスクトップします。 パッケージ チームは、毎週木曜日に新しい申請を確認します。 確認とパッケージ化の後、パッケージ化されたアプリは次の金曜日に配信されます。 週に最大 5 つのアプリをパッケージ化して開始できますが、サービスはニーズに合わせて拡張できます。
 
-![木曜日 (この例では 21 日) のアプリの流入、次の日のメディア検証、次の月曜日 (25 日) のパッケージ化、および後続の金曜日 (29 日) のアプリ配信を示すカレンダー](../../media/MCS-cal.png)
+![木曜日 (この例では 21 日) のアプリの流入、次の日のメディア検証、次の月曜日 (25 日) のパッケージ化、および後続の金曜日 (29 日) のアプリ配信を示すカレンダー。](../../media/MCS-cal.png)
 
 アプリが配信された後に通知されます。 この時点で、受け入れテストを実行し、ポータルで作業を承認するには 21 Microsoft マネージド デスクトップがあります。 受け入れテスト中にアプリに関する問題を発見した場合は、Microsoft マネージド デスクトップ ポータルでアプリを拒否し、問題を理解して解決するために MCS パッケージーと電子メールで接続されます。
 

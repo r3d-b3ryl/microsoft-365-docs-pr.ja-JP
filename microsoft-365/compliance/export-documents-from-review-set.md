@@ -1,5 +1,5 @@
 ---
-title: レビューセットからドキュメントをエクスポートする
+title: レビュー セットからドキュメントをエクスポートする
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: プレゼンテーションまたは外部レビューのレビュー セットAdvanced eDiscoveryコンテンツを選択してエクスポートする方法について説明します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 4ec92c432d693a46151cd92e9d65e5b6fc9c2734
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 5021428dc1ee82b5fb0aeed58d4e055710dec2ef
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58246586"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570859"
 ---
 # <a name="export-documents-from-a-review-set-in-advanced-ediscovery"></a>[ドキュメント] のレビュー セットからドキュメントをエクスポートAdvanced eDiscovery
 
@@ -36,7 +36,7 @@ ms.locfileid: "58246586"
 
    [エクスポート] ツールは、エクスポートを構成する設定を含むフライアウト ページを表示します。 一部のオプションは既定で選択されますが、これらを変更できます。 構成できるエクスポート オプションの説明については、次のセクションを参照してください。
 
-   ![レビュー セットからアイテムをエクスポートするための構成オプション](../media/bcfc72c7-4a01-4697-9e16-2965b7f04fdb.png)
+   ![レビュー セットからアイテムをエクスポートするための構成オプション。](../media/bcfc72c7-4a01-4697-9e16-2965b7f04fdb.png)
 
 3. エクスポートを構成した後、[エクスポート] **をクリックして** エクスポート プロセスを開始します。 [出力オプション] セクションで選択したオプションに応じて、直接ダウンロードするか、組織のアカウントでエクスポート ファイルにAzure Storageできます。
 

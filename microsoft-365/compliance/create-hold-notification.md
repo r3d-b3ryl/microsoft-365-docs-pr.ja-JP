@@ -17,18 +17,18 @@ search.appverid:
 ms.assetid: ''
 description: 法的保留通知の送信、収集、および追跡Advanced eDiscovery場合は、通信ツールを使用します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b5bf8d070e5e1bf8fc44e16a6550a6e376e2716f
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: cc9e8c424550c2be12711d7ef098c95230b0b1a4
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502701"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574366"
 ---
 # <a name="create-a-legal-hold-notice"></a>法的保留通知を作成する
 
 管理Advanced eDiscoveryを使用して、組織は保管担当者との通信に関するワークフローを管理できます。 コミュニケーション ツールを通じて、法務チームは法的ホールド通知を体系的に送信、収集、追跡できます。 柔軟な作成プロセスにより、チームは保留通知ワークフローと、保管担当者に送信される通知のコンテンツをカスタマイズできます。
 
-![コミュニケーション ページ](../media/CommunicationPage.PNG)
+![コミュニケーション ページ。](../media/CommunicationPage.PNG)
 
 この記事では、保留通知ワークフローの手順の概要を説明します。
 
@@ -36,7 +36,7 @@ ms.locfileid: "58502701"
 
 最初の手順は、法的保留通知または他の保管担当者の通信に関する適切な詳細を指定します。
 
-![[名前の通信] ページ](../media/NameCommunication.PNG)
+![[通信の名前] ページ。](../media/NameCommunication.PNG)
 
 1. [詳細] Microsoft 365 コンプライアンス センター[電子情報開示] >**に** 移動して、組織のケースの一覧を表示します。
 
@@ -58,7 +58,7 @@ ms.locfileid: "58502701"
 
 次に、保留通知のコンテンツを作成して追加できます。 [通信 **の作成] ウィザードの** [ポータル コンテンツの定義] **ページで、** 保留通知の内容を指定します。 このコンテンツは、発行、再発行、アラーム、エスカレーション通知に自動的に追加されます。 さらに、このコンテンツは保管担当者のコンプライアンス ポータルに表示されます。
 
-![ポータル コンテンツ ページ](../media/PortalContent.PNG)
+![ポータル コンテンツ ページ。](../media/PortalContent.PNG)
 
 ポータル コンテンツを作成するには、次の方法を実行します。
 
@@ -132,7 +132,7 @@ ms.locfileid: "58502701"
 
 必要に応じて、自動アラーム通知とエスカレーション通知を作成およびスケジュールすることで、応答しない保管担当者をサポートするためのワークフローを簡略化できます。
 
-![アラーム/エスカレーション ページ](../media/ReminderEscalations.PNG)
+![アラーム/エスカレーション ページ。](../media/ReminderEscalations.PNG)
 
 ### <a name="reminders"></a>リマインダー
 
@@ -178,7 +178,7 @@ ms.locfileid: "58502701"
 
 通知のコンテンツを確定したら、通知を送信するカストディアンを選択します。
 
-![[保管担当者の選択] ページ](../media/SelectCustodians.PNG)
+![[保管担当者] ページを選択します。](../media/SelectCustodians.PNG)
 
 保管担当者を追加するには、次の方法を使用します。
 

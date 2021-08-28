@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: d2676c827cc6771d4a8b9a140c06365321695f9f12674c7a41a846b76f210044
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f7f1f1c4a6655142401f121def17999d4f07d9f9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835792"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570559"
 ---
 # <a name="insider-risk-management-in-microsoft-365"></a>インサイダーリスクMicrosoft 365
 
@@ -44,7 +44,7 @@ Microsoft 365の Insider リスク管理は、サービスとサードパーテ�
 
 組織のインサイダー リスク管理を構成するには、次の手順を使用します。
 
-![Insider リスク ソリューションのインサイダー リスク管理手順](../media/ir-solution-ir-steps.png)
+![Insider リスク ソリューションのインサイダー リスク管理手順。](../media/ir-solution-ir-steps.png)
 
 1. インサイダー[リスク管理の詳細については](insider-risk-management.md)、Microsoft 365
 2. インサイ [ダー リスク管理を計画し、ライセンスを確認する](insider-risk-management-plan.md)

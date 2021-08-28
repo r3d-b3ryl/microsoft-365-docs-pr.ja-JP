@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 監査ログの保持ポリシーは、Microsoft 365 の新しい高度な監査機能の一部です。 監査ログの保持ポリシーでは、組織の監査ログを保持する期間を指定できます。
-ms.openlocfilehash: aa5112eeedcfd0c46bba1d96a43e49051eb3ed9e
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: 5427bbfc63381ab2763c0bf74adda978f4fc6af3
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58503085"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574870"
 ---
 # <a name="manage-audit-log-retention-policies"></a>監査ログの保持ポリシーを管理する
 
@@ -59,7 +59,7 @@ Microsoft 365 の高度な監査には、すべての組織の既定の監査ロ
 
 4. [**監査保持ポリシーの作成**] をクリックし、ポップアップ ページの次のフィールドに入力します。
 
-   ![新しい監査保持ポリシーのポップアップ ページ](../media/CreateAuditLogRetentionPolicy.png)
+   ![新しい監査保持ポリシーのポップアップ ページ。](../media/CreateAuditLogRetentionPolicy.png)
 
    1. **ポリシー名:** 監査ログの保持ポリシーの名前です。 この名前は組織内で一意である必要があり、ポリシーの作成後に変更することはできません。
 
@@ -87,7 +87,7 @@ Microsoft 365 の高度な監査には、すべての組織の既定の監査ロ
 
 監査ログの保持ポリシーはダッシュボードに一覧表示されます。 ダッシュボードにポリシーを表示する利点の 1 つは、**[優先度]** 列をクリックして、ポリシーが適用されている優先度のポリシーを一覧表示できることです。 前に説明したように、値が低いほど、高い優先度を示します。
 
-![監査保持ポリシー ダッシュボードの [優先度] 列](../media/AuditLogRetentionDashboardPriority.png)
+![監査保持ポリシー ダッシュボードの [優先度] 列。](../media/AuditLogRetentionDashboardPriority.png)
 
 また、ポリシーを選択して、その設定をポップアップ ページに表示することもできます。
 
@@ -106,7 +106,7 @@ Microsoft 365 の高度な監査には、すべての組織の既定の監査ロ
 
 ### <a name="delete-policies-in-the-dashboard"></a>ダッシュボードでポリシーを削除する
 
-ポリシーを削除するには、**[削除]** ![[削除] アイコン](../media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg) アイコンをクリックし、その後ポリシーの削除を確定します。 ポリシーはダッシュボードから削除されますが、ポリシーが組織から削除されるまでに最大 30 分かかる場合があります。
+ポリシーを削除するには、**[削除]** ![[削除アイコン]](../media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg) を クリックします。 その後ポリシーの削除を確定します。 ポリシーはダッシュボードから削除されますが、ポリシーが組織から削除されるまでに最大 30 分かかる場合があります。
 
 ## <a name="create-and-manage-audit-log-retention-policies-in-powershell"></a>PowerShell で監査ログの保持ポリシーを作成して管理する
 

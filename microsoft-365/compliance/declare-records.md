@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ラベルを使用してレコードを宣言する。
-ms.openlocfilehash: 0d2614709c22347c3a2a9f2bedf952cd5d70508f54fd8e6edcdae0dec3e7791b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 53db42de769600de3a6190ee4b7f0de2d9e5505e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842372"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574245"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>保持ラベルを使用してレコードを宣言する
 
@@ -59,7 +59,7 @@ Microsoft 365 コンプライアンス センターの **レコード管理** �
 
 例:
 
-![保持ラベルを構成して、コンテンツをレコードまたは規制レコードとしてマークする](../media/recordversioning6.png)
+![保持ラベルを構成して、コンテンツをレコードまたは規制レコードとしてマークする。](../media/recordversioning6.png)
 
 この保持ラベルを使用することで、ラベルを必要に応じて SharePoint や OneDrive のドキュメントまたは Exchange のメールに適用できるようになりました。
 
@@ -79,7 +79,7 @@ Microsoft 365 コンプライアンス センターの **レコード管理** �
 
 保持ラベルを使用してレコードとしてマークされたドキュメントの例は、以下のとおりです。
 
-![レコードとしてタグ付けされたドキュメントの詳細ウィンドウ](../media/recordversioning7.png)
+![レコードとしてタグ付けされたドキュメントの詳細ウィンドウ。](../media/recordversioning7.png)
 
 ## <a name="searching-the-audit-log-for-labeled-items-that-were-declared-records"></a>レコードとして宣言されたラベル付きアイテムの監査ログを検索する
 

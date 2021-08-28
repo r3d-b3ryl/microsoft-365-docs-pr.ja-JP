@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、Veritas からユーザーに CellTrust データをインポートおよびアーカイブするコネクタをMicrosoft 365。 このコネクタを使用すると、サードパーティのデータ ソースからデータをアーカイブできます。Microsoft 365。 このデータをアーカイブした後、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、サードパーティのデータを管理できます。
-ms.openlocfilehash: 88d443cb9c840d41727c3804450484bf15f0adc7ba2c0cfcb25e488e4b21ea39
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e7d2a7bd1129fcd24388782458ecd8503b45b64e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53861202"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575002"
 ---
 # <a name="set-up-a-connector-to-archive-celltrust-data"></a>CellTrust データをアーカイブするコネクタをセットアップする
 
@@ -29,7 +29,7 @@ CellTrust データをユーザー メールボックスに格納した後、訴
 
 次の概要では、コネクタを使用してセルトラスト データをアーカイブするプロセスについて説明Microsoft 365。
 
-![CellTrust データのアーカイブ ワークフロー](../media/CellTrustConnectorWorkflow.png)
+![CellTrust データのアーカイブ ワークフロー。](../media/CellTrustConnectorWorkflow.png)
 
 1. 組織は CellTrust を使用して、CellTrust サイトをセットアップおよび構成します。
 

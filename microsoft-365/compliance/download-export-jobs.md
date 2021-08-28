@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-mar2020
 description: レビュー セット内のドキュメントを Azure Storage アカウントにエクスポートし、Azure Storage Explorerを使用してローカル コンピューターにダウンロードします。
-ms.openlocfilehash: e4dee3eb6da53b58e79993f39e4540e0c2d1951f41be13c370fb3631138f5208
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 352bce7134f92a7f6759673f28d388aac4957d1c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53906044"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570871"
 ---
 # <a name="export-documents-in-a-review-set-to-an-azure-storage-account"></a>レビュー セット内のドキュメントをアカウントにAzure Storageする
 
@@ -53,7 +53,7 @@ Advanced eDiscovery ケースのレビュー セットからドキュメント�
 
 6. 対応するフィールドにストレージ アカウントのコンテナー URL と SAS トークンを貼り付けます。
 
-   ![接続 URL と SAS トークンを対応するフィールドに貼り付ける](../media/AzureStorageOutputOptions.png)
+   ![接続 URL と SAS トークンを対応するフィールドに貼り付けます。](../media/AzureStorageOutputOptions.png)
 
 7. [エクスポート **] を** クリックしてエクスポート ジョブを作成します。
 
@@ -67,7 +67,7 @@ Advanced eDiscovery ケースのレビュー セットからドキュメント�
 
 3. [フライアウト] ページの [場所] **で**、表示される SAS URL をコピーします。 必要に応じて、テキスト ファイルに保存して、手順 3 でアクセスできます。
 
-   ![[場所] の下に表示される SAS URL をコピーする](../media/eDiscoExportJob.png)
+   ![[場所] の下に表示される SAS URL をコピーします。](../media/eDiscoExportJob.png)
 
    > [!TIP]
    > エクスポート ジョブに表示される SAS URL は、コンテナー URL と、ユーザーアカウントの SAS トークンAzure Storageです。 エクスポート ジョブからコピーするか、URL と SAS トークンを組み合わせて作成できます。
@@ -88,7 +88,7 @@ Advanced eDiscovery ケースのレビュー セットからドキュメント�
 
 5. [接続 **情報の入力]** ページで、[BLOB コンテナーの SAS URL] ボックスに SAS URL (手順 2 のエクスポート ジョブで取得した) **を貼り付** けます。
 
-    ![[URI] ボックスに SAS URL を貼り付ける](../media/AzureStorageConnect3.png)
+    ![[URI] ボックスに SAS URL を貼り付けます。](../media/AzureStorageConnect3.png)
 
     コンテナー名が [表示名] ボックス **に表示されます** 。 この名前は編集できます。
 
@@ -96,7 +96,7 @@ Advanced eDiscovery ケースのレビュー セットからドキュメント�
 
     Blob **コンテナー ノード**([アカウント] の **Storage**  >  **(接続されたコンテナー)** \> が開きます。
 
-    ![Blobs コンテナー ノードのジョブのエクスポート](../media/AzureStorageConnect5.png)
+    ![Blobs コンテナー ノードのジョブをエクスポートします。](../media/AzureStorageConnect5.png)
 
     手順 5 の表示名を持つコンテナーが含まれる。 このコンテナーには、エクスポート アカウントのコンテナーにダウンロードしたエクスポート ジョブごとにフォルダー Azure Storageされます。 これらのフォルダーの名前は、エクスポート ジョブの ID に対応する ID です。 これらのエクスポートの ID (およびエクスポートの名前) は、Advanced eDiscovery ケースの [ジョブ] タブに一覧表示されているエクスポート ジョブの各準備データのフライアウト ページの [サポート情報] にあります。 
 
@@ -104,7 +104,7 @@ Advanced eDiscovery ケースのレビュー セットからドキュメント�
 
    フォルダーとエクスポート レポートの一覧が表示されます。
 
-    ![エクスポート フォルダーには、エクスポートされたファイルとエクスポート レポートが含まれる](../media/AzureStorageConnect6.png)
+    ![エクスポート フォルダーには、エクスポートされたファイルとエクスポート レポートが含まれる。](../media/AzureStorageConnect6.png)
 
 8. エクスポート ジョブからすべてのコンテンツをエクスポートするには、上矢印をクリックしてエクスポート ジョブ フォルダーに戻り、[ダウンロード] を **クリックします**。
 
@@ -115,7 +115,7 @@ Advanced eDiscovery ケースのレビュー セットからドキュメント�
 > [!NOTE]
 > エクスポート ジョブ全体をダウンロードする代わりにAzure Storage Explorerダウンロードして表示する特定のアイテムを選択できます。
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 - エクスポート ジョブ フォルダーには、次の項目が含まれます。 エクスポート フォルダー内の実際のアイテムは、エクスポート ジョブの作成時に構成されたエクスポート オプションによって決まります。 これらのオプションの詳細については、「レビュー セットからドキュメントをエクスポート [する」を参照してください](export-documents-from-review-set.md)。
 

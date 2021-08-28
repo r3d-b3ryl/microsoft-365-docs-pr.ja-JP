@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、Veritas の Webex からデータをインポートおよびアーカイブするコネクタをセットアップし、TeamsのコネクタMicrosoft 365。 このコネクタを使用すると、Microsoft 365 のサード パーティデータ ソースからデータをアーカイブし、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティ データを管理できます。
-ms.openlocfilehash: 7041fcb5b9c284969047f9db9719560be49a7993952da44128ba5bfbdd8d5aca
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 499bf32093d4451d9e9aea45f9b36c1beb591733
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53820620"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570919"
 ---
 # <a name="set-up-a-connector-to-archive-webex-teams-data"></a>Webex データをアーカイブするコネクタをTeamsする
 
@@ -29,7 +29,7 @@ Webex Teamsデータがユーザー メールボックスに保存された後�
 
 次の概要では、コネクタを使用して Webex データをアーカイブするプロセスTeams説明Microsoft 365。
 
-![Webex データのアーカイブ ワークフロー Teamsする](../media/WebexTeamsConnectorWorkflow.png)
+![Webex データのアーカイブ ワークフロー Teamsします。](../media/WebexTeamsConnectorWorkflow.png)
 
 1. 組織は Webex Teamsを使用して Webex サイトをTeamsします。
 

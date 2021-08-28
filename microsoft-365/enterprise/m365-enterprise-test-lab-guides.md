@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 以下のテスト ラボ ガイドを使用して、Microsoft 365 Enterprise 向けのデモ、概念実証、または開発/テスト環境を設定します。
-ms.openlocfilehash: 19b8a41674d26bf6e02da4be7be1e16739003044
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: cb1588a1f4740839fd08949a4f2a79fcc95e32ff
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356362"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575266"
 ---
 # <a name="microsoft-365-for-enterprise-test-lab-guides"></a>Microsoft 365 Enterprise のテスト ラボ ガイド
 
@@ -35,11 +35,11 @@ TLG はモジュール式に設計されています。 これらの構成は、
 
 また、TLG を使用して代表的な環境を作成して、開発/テスト環境とも呼ばれるアプリケーションを開発およびテストすることもできます。
   
-![Microsoft クラウドのテスト ラボ ガイド](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Microsoft クラウドのテスト ラボ ガイド。](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 Microsoft 365 for enterprise Test Lab Guide スタック内のすべての記事を視覚的にマップするには、次の図を展開するか、エンタープライズ テスト ラボ ガイド スタックの Microsoft 365 に[移動します](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
 
-[![The Microsoft 365 Enterprise のテスト ラボ ガイド スタック](../media/m365-enterprise-test-lab-guides/microsoft-365-enterprise-tlg-stack.png)](../downloads/Microsoft365EnterpriseTLGStack.pdf)
+[![エンタープライズ テスト Microsoft 365ガイド スタックの一覧です。](../media/m365-enterprise-test-lab-guides/microsoft-365-enterprise-tlg-stack.png)](../downloads/Microsoft365EnterpriseTLGStack.pdf)
 
 ## <a name="base-configuration"></a>基本構成
 

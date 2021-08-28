@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アプリの脅威を修復する。
-ms.openlocfilehash: 3b84594aa990516b6ecb340d6b8ffbd8d6d1a544c9c1e3dddeb691044e221424
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 103616c9bee47455b75e0750194d876fc7a13600
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53836455"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564232"
 ---
 # <a name="remediate-app-threats"></a>アプリの脅威を修復する
 
@@ -27,11 +27,11 @@ ms.locfileid: "53836455"
 
 Microsoft 365 コンプライアンス センターの [Microsoft アプリ ガバナンス] セクションの [**アラート**] ページを使用して、Microsoft 365 テナントに対するアプリの脅威を修復します。
 
-![Microsoft 365 コンプライアンス センターの [アプリ ガバナンス アラートの概要] ページ](..\media\manage-app-protection-governance\mapg-cc-alerts.png)
+![Microsoft 365 コンプライアンス センターの [アプリ ガバナンス アラートの概要] ページ。](..\media\manage-app-protection-governance\mapg-cc-alerts.png)
 
 [**アラート**] ページには、既定で、アプリ ガバナンスによって生成された新しい脅威アラートと、アクティブなアプリ ポリシーによって生成されたポリシー ベースのアラートが一覧表示されます。 特定のアラートの詳細を表示するには、特定のアラートを選択します。これにより、追加のアラート情報と状態を変更する機能を含むアラート ウィンドウが開きます。
 
-![Microsoft 365 コンプライアンス センターの [アプリ ガバナンス アラートの詳細] ページ](..\media\manage-app-protection-governance\mapg-cc-alerts-alert.png)
+![Microsoft 365 コンプライアンス センターの [アプリ ガバナンス アラートの詳細] ページ。](..\media\manage-app-protection-governance\mapg-cc-alerts-alert.png)
 
 このウィンドウから、次の追加情報を取得できます:
 

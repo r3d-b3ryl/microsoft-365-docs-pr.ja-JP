@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: 0f4ccadd48759f3aa3de959df3ef8104df21520e2dcd59b65567891be31d314a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a0f806da62378ca21c1693fd96105bb89eaf5708
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53871836"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570835"
 ---
 # <a name="information-barriers-in-microsoft-365"></a>データの情報Microsoft 365
 
@@ -38,7 +38,7 @@ Microsoft 365グループや組織間のコミュニケーションとコラボ�
 
 組織の情報バリアを構成するには、次の手順を使用します。
 
-![Insider リスク ソリューション情報の障壁の手順](../media/ir-solution-ib-steps.png)
+![Insider リスク ソリューション情報の障壁の手順。](../media/ir-solution-ib-steps.png)
 
 1. 情報バリアについて[詳しくは](information-barriers.md)、Microsoft 365
 2. 前提条件 [とアクセス許可を構成する](information-barriers-policies.md#prerequisites)

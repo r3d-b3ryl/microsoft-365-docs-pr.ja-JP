@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: f259f7379d0b3f723880d8734488b2004581ff6f
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: 6ab911fa9ad4e39a59b7acc58cae7686dd330ed4
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502053"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574474"
 ---
 # <a name="networking-up-to-the-cloudone-architects-viewpoint"></a>ネットワークアップ (クラウドまで) - 1 人のアーキテクトの視点
 
@@ -26,7 +26,7 @@ ms.locfileid: "58502053"
 
 ## <a name="about-the-author"></a>筆者について
 
-![Ed Fisher の写真](../media/solutions-architecture-center/ed-fisher-networking.jpg) 
+![Ed Fisher の写真。](../media/solutions-architecture-center/ed-fisher-networking.jpg) 
 
 現在は、リテールおよび消費財チームのプリンシパル テクニカル スペシャリストであり、セキュリティ とコンプライアンス&しています。 私は過去 10 年間、Office 365顧客と一緒に仕事をしてきました。 私は、数百万人のユーザーが世界中に分散している政府機関や企業、その間に他の多くの顧客にいくつかの場所を持つ小規模なショップと協力し、その間に多数のユーザー、世界中のさまざまな場所に複数の場所を持ち、より高いセキュリティの必要性、多数のコンプライアンス要件を満たしています。 何百もの企業と何百万人ものユーザーが安全かつ安全にクラウドに移行するのに役立っています。
 

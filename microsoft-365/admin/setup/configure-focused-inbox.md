@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
 description: すべてのユーザー用のメール設定の構築を担当している場合は、この記事でユーザー用の優先受信トレイの設定方法が確認できます。
-ms.openlocfilehash: 3e296bbfd45955cf7ba97a90e565be3ec6d4412f
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: 6bc33211af5ee0cd064b63f95e720f19cee196e5
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394542"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567810"
 ---
 # <a name="configure-focused-inbox-for-everyone-in-your-organization"></a>組織内のすべてのユーザー用に優先受信トレイを構成する
 
@@ -123,13 +123,13 @@ ms.locfileid: "58394542"
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理センター</a>に移動します。
 
-2. [**メール フロー**] \> [**ルール**] に移動します。 ![EAC 追加アイコン](../../media/795e5bdd-48bb-433f-8e07-3c7a19f8eca2.gif)を選択し、[**新しいルールを作成する...**] を選択します。 
+2. [**メール フロー**] \> [**ルール**] に移動します。 ![EAC の [追加] アイコン](../../media/795e5bdd-48bb-433f-8e07-3c7a19f8eca2.gif)を選択します。 **[新しいルールを作成する...]** を選択します。 
 
 3. 新しいルールの作成後、[**保存**] を選択してルールを開始します。
 
     次の図は、"Payroll Department"(給与課) からのすべてのメッセージを優先受信トレイに配信する例を示しています。
 
-    ![優先受信トレイ、給与](../../media/focusedinbox-transport-rule.PNG)
+    ![優先受信トレイ、給与。](../../media/focusedinbox-transport-rule.PNG)
 
     > [!NOTE]
     > この例のメッセージ ヘッダー値のテキストは、**X-MS-Exchange-Organization-BypassFocusedInbox** です。

@@ -11,18 +11,18 @@ ms.prod: microsoft-365-enterprise
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 591b83823aac1679209ed6cdd0069d559e9fe3e7adfbf7a3f24f0730f37ce912
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2c1c8f46c3d569b6b43a87a6481d93b76729e48d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53834710"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570943"
 ---
 # <a name="get-started-driving-adoption-of-microsoft-viva-topics"></a>ユーザーの導入を促進するMicrosoft Viva トピック
 
 導入を開始する前に、ナレッジ管理とビバ トピックに関する概念を理解する必要があります。 次の図は、トピックの検出とキュレーション中に何が起こるかを示しています。
 
-![Viva Topics アーキテクチャ](../media/knowledge-management/topic-management-architecture.png)
+![Viva Topics アーキテクチャ。](../media/knowledge-management/topic-management-architecture.png)
 
 - **検出**: ユーザーはトピック カードを使用して、毎日使用しているアプリのナレッジを発見できます。また、Microsoft Search でトピックを検索することもできます。
 - **キュレーション**: 対象分野の専門家 (SME) はトピック ページを通じてトピックを絞り込み、その入力情報から AI が学習します。 トピック センターには、ユーザーが探索できるトピック ページと、専門家が管理できるトピック ページが含まれています。
@@ -56,7 +56,7 @@ Viva トピックを最大限に活用するため、この前提条件のリス
 
 ビバ トピックの導入を計画するには、次の必要があります。
 
-![導入を計画する手順](../media/knowledge-management/km-adoption-plan-adoption.png)
+![導入を計画する手順。](../media/knowledge-management/km-adoption-plan-adoption.png)
 
 1. アプローチとターゲットシナリオを計画します。
     - シナリオの定義と優先順位付けについて考 [えます](#target-scenarios)。
@@ -121,7 +121,7 @@ Viva トピックを最大限に活用するため、この前提条件のリス
 
 優先順位を付ける 1 つの方法は、シナリオをグリッドにプロットして、影響に対する実装の容易さを示すことです。 影響が大きく、実装が容易で、それらのシナリオを最優先事項にするシナリオを探します。 影響が小さく、実装が困難なシナリオの優先順位は最も低くします。 影響が大きく、実装が容易なシナリオですばやく成果を上げると、ユーザーは盛り上がり、そのトピックを使用してみたいと考えるようになります。
 
-![影響が大きく、実装しやすいシナリオは優先度が高い](../media/knowledge-management/topics-prioritize-scenarios.png)
+![影響が大きく、実装が容易なシナリオは優先度が高くなります。](../media/knowledge-management/topics-prioritize-scenarios.png)
 
 最初に、最も重要なシナリオを 2 つ選んで焦点をしぼり、早期導入者と協力してフィードバックを得てから、段階的にロールアウトします。 これにより、反復処理、改善、フィードバックを得て、時間のと一度に導入を拡大できます。
 

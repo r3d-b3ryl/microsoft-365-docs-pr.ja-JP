@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 Business Premium で、管理者のヘルプ、オンライン サポート、または電話でのサポートを受けるためには、ビジネス サブスクリプションの管理者であることが必要です。
-ms.openlocfilehash: 56aae6fc6ad966aeefb7d1fede4b86e1300babd393f51f5c28839f3220d985e3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f38e07cb7db25cbc6d6fa3e813d8f7c5863e4055
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53882541"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570655"
 ---
 # <a name="get-support"></a>サポートを受ける
 
@@ -220,7 +220,7 @@ Office 365 では、複数の異なる役割を持つ複数のタイプの管理
 
 この QR コードをスキャンして WeChat でフォローし、21Vianet が運用している Office 365 の最新の更新プログラムを取得します。
 
-![21Vianet が運用している Office 365 の更新プログラムの QR コード](../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
+![21Vianet が運用している Office 365 の更新プログラムの QR コード。](../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
 
 ::: moniker-end
 

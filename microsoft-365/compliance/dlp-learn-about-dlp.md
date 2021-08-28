@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: データ損失防止ポリシーとツールを使用Microsoft 365機密情報を保護し、DLP ライフサイクルを通じてツアーを行う方法について説明します。
-ms.openlocfilehash: 3f2b8ff6bd099164e288a244e45a2aa646e5bf391c7a192450a02b3689038101
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b1a310a5ea9eea37930dbbc7ea84a8a48577af7e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835816"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574233"
 ---
 # <a name="learn-about-data-loss-prevention"></a>データ損失防止について
 
@@ -184,12 +184,12 @@ DLP は、監視、ポリシーの一致Microsoft 365アクション、および
 DLP が機密性の高いアイテムに対してアクションを実行すると、構成可能なアラートを介してそのアクションの通知を受け取る可能性があります。 コンプライアンス センターでは、これらのアラートをメールボックスに重ね合せするのではなく [、DLP アラート](dlp-configure-view-alerts-policies.md)管理ダッシュボードで利用できます。 DLP アラート ダッシュボードを使用して、アラートの構成、確認、トリアージ、DLP アラートの解決の追跡を行います。 ポリシーの一致と、デバイスからのアクティビティによって生成されるアラートのWindows 10します。
 
 > [!div class="mx-imgBorder"]
-> ![警告情報](../media/Alert-info-1.png)
+> ![アラート情報。](../media/Alert-info-1.png)
 
 同じダッシュボードで、リッチ メタデータに関連付けられたイベントの詳細を表示することもできます
 
 > [!div class="mx-imgBorder"]
-> ![イベント情報](../media/Event-info-1.png)
+> ![イベント情報。](../media/Event-info-1.png)
 
 ### <a name="reports"></a>レポート
 
@@ -203,7 +203,7 @@ DLP が機密性の高いアイテムに対してアクションを実行する�
 
 DLP ページの [アクティビティ エクスプローラー]タブには *、DLPRuleMatch に対するアクティビティ フィルターのプリセットがあります*。 このツールを使用して、機密情報を含むコンテンツやラベルが適用されているコンテンツに関連するアクティビティ (ラベルの変更、ファイルの変更、ルールの一致など) を確認します。
 
-![DLPRuleMatch スコープアクティビティ エクスプローラーのスクリーンショット](../media/dlp-activity-explorer.png)
+![DLPRuleMatch スコープアクティビティ エクスプローラーのスクリーンショット。](../media/dlp-activity-explorer.png)
 
 詳細については、「アクティビティ エクスプローラーの [使用を開始する」を参照してください。](data-classification-activity-explorer.md)
 

@@ -23,12 +23,12 @@ ms.custom:
 search.appverid: MET150
 description: サブスクリプションにファイル ストレージをMicrosoft 365します。 追加のファイル ストレージを使用すると、オンラインおよびサーバーにSharePointコンテンツをOneDrive。
 ms.date: 04/02/2021
-ms.openlocfilehash: 381a11fe6c2a320b2864561975f516f9684acb11c4c9757ad4d125e6d31acba9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5c08b105271f3b5297c1ca7258f7b723164e1fe0
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53872941"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574990"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>サブスクリプションに容量を追加する
 
@@ -47,7 +47,7 @@ SharePoint Online サイト コレクションの容量が不足し始めた場�
 
 2. ページの右上に、すべてのサイトで使用されている記憶域の容量とサブスクリプションの記憶域の合計が表示されます。 組織で複数地域を構成している場合Office 365バーには、すべての地域の場所で使用される記憶域の量も表示されます。
 
-   ![[アクティブなサイト] ページの記憶域バー](/sharepoint/sharepointonline/media/active-sites-storage-bar.png)
+   ![Storageページの [アクティブなサイト] バーをクリックします。](/sharepoint/sharepointonline/media/active-sites-storage-bar.png)
 
    > [!NOTE]
    > 記憶域の使用量には、過去 24 から 48 時間以内に行われた変更は含まれません。

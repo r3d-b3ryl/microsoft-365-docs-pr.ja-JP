@@ -20,12 +20,12 @@ ms.custom:
 description: ユーザーは、ユーザーに配信されるべきであった検疫済みメッセージを Exchange Online Protection (EOP) で表示して管理する方法を学ぶことができます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: efd82e5fc321b9a9c7a586b75e2b96ae44cc38c1
-ms.sourcegitcommit: d792743bc21eec87693ebca51d7307a506d0bc43
+ms.openlocfilehash: d8aab84cd406366182650e6fbf6c39aee9810ce3
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "58450202"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58548704"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>EOP のユーザーとして検疫済みメッセージを検索して解放する
 
@@ -46,9 +46,9 @@ Exchange Online のメールボックスを使用している Microsoft 365 組�
 
 |検疫の理由|表示|リリース|削除|
 |---|:---:|:---:|:---:|
-|バルク|![チェック マーク](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|
-|スパム|![チェック マーク](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|
-|フィッシング (高精度フィッシングではない)|![チェック マーク](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|
+|バルク|![チェック マーク。](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|
+|スパム|![チェック マーク。](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|
+|フィッシング (高精度フィッシングではない)|![チェック マーク。](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|
 |
 
 検疫されたメッセージは、Microsoft 365 Defender ポータルで、または (管理者が設定している場合は) [エンドユーザーのスパム通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)で表示および管理します。
@@ -113,7 +113,7 @@ Exchange Online のメールボックスを使用している Microsoft 365 組�
      - **フィッシング対策ポリシー**
      - **迷惑メール対策ポリシー**
 
-   完了したら、**[適用]** をクリックします。 フィルターをクリアするには、![[フィルター クリア] アイコン](../../media/m365-cc-sc-clear-filters-icon.png)**[フィルターのクリア]** をクリックします。
+   完了したら、**[適用]** をクリックします。 フィルターをクリアするには、![[フィルターのクリア] アイコン](../../media/m365-cc-sc-clear-filters-icon.png)をクリックします。 **フィルターをクリアします**。
 
 4. **検索** ボックスと対応する値を使用して、特定のメッセージを検索します。 ワイルドカードはサポートされていません。 次の値に基づいて検索できます。
    - メッセージ ID
@@ -130,7 +130,7 @@ Exchange Online のメールボックスを使用している Microsoft 365 組�
 
 一覧から検疫済みメッセージを選択すると、表示される詳細ポップアップに次の情報が表示されます。
 
-![検疫済みメッセージの詳細ポップアップ](../../media/quarantine-user-message-details.png)
+![検疫済みメッセージの詳細ポップアップ。](../../media/quarantine-user-message-details.png)
 
 一覧でメール メッセージを選択すると、**[詳細]** ポップアップ ウィンドウにメッセージに関する次の詳細が表示されます。
 
@@ -149,31 +149,31 @@ Exchange Online のメールボックスを使用している Microsoft 365 組�
 > [!NOTE]
 > 詳細ポップアップに留まり、表示される検疫済みメッセージを変更するには、ポップアップの上部にある上下の矢印を使用します。
 >
-> ![検疫済みメッセージの詳細ポップアップの上矢印と下矢印](../../media/quarantine-message-details-flyout-up-down-arrows.png)
+> ![検疫済みメッセージの詳細ポップアップの上矢印と下矢印。](../../media/quarantine-message-details-flyout-up-down-arrows.png)
 
 ### <a name="take-action-on-quarantined-email"></a>検疫済みメールを処理する
 
 一覧から検疫済みメッセージを選択すると、詳細ポップアップで次のアクションを使用できます。
 
-![検疫済みメッセージの詳細ポップアップで使用可能なアクション](../../media/quarantine-user-message-details-flyout-actions.png)
+![検疫済みメッセージの詳細ポップアップで使用可能なアクション。](../../media/quarantine-user-message-details-flyout-actions.png)
 
-- ![メールのリリース アイコン](../../media/m365-cc-sc-check-mark-icon.png)**メールのリリース**<sup>\*</sup>: 受信トレイにメッセージを配信します。
+- ![[メールのリリース] アイコン。](../../media/m365-cc-sc-check-mark-icon.png) **メールのリリース**<sup>\*</sup>: 受信トレイにメッセージを配信します。
 
-- ![[メッセージ ヘッダー アイコンを表示]](../../media/m365-cc-sc-eye-icon.png):**[メッセージ ヘッダーの表示]**: このリンクをクリックすると、メッセージ ヘッダー テキストが表示されます。 **メッセージ ヘッダー** ポップアップは、次のリンクと共に表示されます。
+- ![[メッセージ ヘッダーを表示] アイコン。](../../media/m365-cc-sc-eye-icon.png) **メッセージ ヘッダーを表示**: このリンクをクリックすると、メッセージ ヘッダー テキストが表示されます。 **メッセージ ヘッダー** ポップアップは、次のリンクと共に表示されます。
 - **メッセージ ヘッダーのコピー**: メッセージ ヘッダー (すべてのヘッダー フィールド) をクリップボードにコピーするには、このリンクをクリックします。
 - **Microsoft Message Header Analyzer**: ヘッダー フィールドと値を詳細に分析するには、このリンクをクリックしてメッセージ ヘッダー アナライザーに移動します。 [**分析するメッセージ ヘッダーを挿入**] セクションにメッセージ ヘッダーを貼り付けて、 (Ctrl + V キーを押すか、右クリックして [**貼り付け**] を選択します)、それから **[ヘッダーの分析]** をクリックします。
 
-[その他![アクション] アイコン](../../media/m365-cc-sc-more-actions-icon.png)**[その他のアクション]** をクリックすると、次の操作を実行できます。
+![[その他のアクション] アイコン](../../media/m365-cc-sc-more-actions-icon.png)をクリックすると、次の操作を実行できます。**その他のアクション**:
 
-- ![[メッセージのプレビュー] アイコン](../../media/m365-cc-sc-eye-icon.png)**[メッセージのプレビュー]**:: 表示されるポップアップ ウィンドウで、次のいずれかのタブを選択します。
+- ![[メッセージのプレビュー] アイコン。](../../media/m365-cc-sc-eye-icon.png) **メッセージのプレビュー**: 表示されるポップアップ ウィンドウで、次のいずれかのタブを選択します。
   - **[ソース]**: すべてのリンクが無効になったメッセージ本文の HTML バージョンを表示します。
   - **[プレーン テキスト]**: プレーン テキストでメッセージ本文を表示します。
 
-- ![[検疫アイコンからの削除]](../../media/m365-cc-sc-delete-icon.png)**[検疫から削除]**: 表示される警告で **[はい]** をクリックすると、メッセージは直ちに削除され、元の受信者には送信されません。
+- ![[検疫から削除] アイコン。](../../media/m365-cc-sc-delete-icon.png) **検疫から削除**: 表示される警告で **[はい]** をクリックすると、メッセージは直ちに削除され、元の受信者には送信されません。
 
-- ![[メッセージをダウンロード] アイコン](../../media/m365-cc-sc-download-icon.png)**[メールをダウンロード]**: 表示されるポップアップ ウィンドウで、 **[このメッセージをダウンロードするリスクを理解しています]** を選択して、**[ダウンロード]** をクリックして、メッセージのローカル コピーを .eml 形式で保存します。
+- ![[メッセージをダウンロード] アイコン。](../../media/m365-cc-sc-download-icon.png) **メールをダウンロード**: 表示されるポップアップ ウィンドウで、 **[このメッセージをダウンロードするリスクを理解しています]** を選択し、**[ダウンロード]** をクリックして、メッセージのローカル コピーを .eml 形式で保存します。
 
-- ![送信者のブロック](../../media/m365-cc-sc-block-sender-icon.png)**送信者のブロック**:: **お使いの** メールボックスの [ブロックされた送信者] リストに送信者を追加します。 詳細については、「[メール送信者をブロックする](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)」を参照してください。
+- ![[送信者ブロック] アイコン。](../../media/m365-cc-sc-block-sender-icon.png) **送信者のブロック**: **メールボックス** の [ブロックされた送信者] リストに送信者を追加します。 詳細については、「[メール送信者をブロックする](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)」を参照してください。
 
 <sup>\*</sup> このオプションは、既に解放されているメッセージでは使用できません (**[リリース済み] 状態** の値は **[リリース済み]**)。
 
@@ -182,23 +182,23 @@ Exchange Online のメールボックスを使用している Microsoft 365 組�
 > [!NOTE]
 > モバイル デバイスでは、説明テキストはアクション アイコン用に使用できません。
 >
-> ![使用可能なアクションが強調表示された検疫済みメッセージの詳細](../../media/quarantine-user-message-details-flyout-mobile-actions.png)
+> ![使用可能なアクションが強調表示された検疫済みメッセージの詳細。](../../media/quarantine-user-message-details-flyout-mobile-actions.png)
 >
 > アイコンの順序と対応する説明を次の表にまとめます。
 >
 > |アイコン|説明|
 > |---:|---|
-> |![メールのリリース アイコン](../../media/m365-cc-sc-check-mark-icon.png)|**メールを解放する**|
-> |![メッセージ ヘッダーを表示する](../../media/m365-cc-sc-eye-icon.png)|**メッセージ ヘッダーを表示する**|
-> |![プレビュー メッセージ アイコン](../../media/m365-cc-sc-eye-icon.png)|**メッセージのプレビュー**|
-> |![検疫アイコンから削除](../../media/m365-cc-sc-delete-icon.png)|**検疫から削除**|
-> |![[送信者ブロック] アイコン](../../media/m365-cc-sc-block-sender-icon.png)|**差出人をブロックする**|
+> |![[メールを解放する] アイコン。](../../media/m365-cc-sc-check-mark-icon.png)|**メールを解放する**|
+> |![[メッセージ ヘッダーを表示する] アイコン。](../../media/m365-cc-sc-eye-icon.png)|**メッセージ ヘッダーを表示する**|
+> |![[メッセージのプレビュー] アイコン。](../../media/m365-cc-sc-eye-icon.png)|**メッセージのプレビュー**|
+> |![[検疫から削除] アイコン。](../../media/m365-cc-sc-delete-icon.png)|**検疫から削除**|
+> |![[差出人をブロックする] アイコン。](../../media/m365-cc-sc-block-sender-icon.png)|**差出人をブロックする**|
 
 #### <a name="take-action-on-multiple-quarantined-email-messages"></a>複数の検疫済みメール メッセージを処理する
 
 最初の列の左側にある空白の領域をクリックして、一覧で複数の検疫済みメッセージ (最大 100) を選択すると、次の操作を実行できる **[一括操作]** ドロップダウン リストが表示されます。
 
-![検疫内のメッセージの [一括アクション] ドロップダウン リスト](../../media/quarantine-user-message-bulk-actions.png)
+![検疫内のメッセージの [一括アクション] ドロップダウン リスト。](../../media/quarantine-user-message-bulk-actions.png)
 
-- ![ [リリースメール] アイコン](../../media/m365-cc-sc-check-mark-icon.png) **[メールのリリース]**: 受信トレイにメッセージを配信します。
-- ![ [検疫アイコンから削除する] ](../../media/m365-cc-sc-delete-icon.png) **[メッセージの削除]**: 表示される警告で **[はい]** をクリックすると、メッセージは元の受信者に送信されずに検疫から直ちに削除されます。
+- ![[メールを解放する] アイコン。](../../media/m365-cc-sc-check-mark-icon.png) **メールを解放する**: 受信トレイにメッセージを配信します。
+- ![[検疫から削除] アイコン。](../../media/m365-cc-sc-delete-icon.png) **メッセージの削除**: 表示される警告で **[はい]** をクリックすると、メッセージは元の受信者に送信されずに検疫から直ちに削除されます。

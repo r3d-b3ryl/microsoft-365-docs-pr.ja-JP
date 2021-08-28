@@ -22,16 +22,16 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: Office 365 の展開を計画するときに使用する外部ドメインネームシステムレコードの参照リスト。
-ms.openlocfilehash: 2cbbbcb6105feccdaed1f7b6ce05a84b374024c0
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
-ms.translationtype: MT
+ms.openlocfilehash: e54a25aef956784fd74ad65dc54357ea3db0f57c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926265"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568927"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Office 365 の外部ドメイン ネーム システムのレコード
 
-![ドメイン](../media/e05b1c78-1df0-4200-ba40-6e26b7ead68f.png)
+![ドメイン。](../media/e05b1c78-1df0-4200-ba40-6e26b7ead68f.png)
 
 **Office 365 組織のカスタマイズされた DNS レコードのリストを表示するには** Office 365 のドメイン用に [Office 365 DNS レコードを作成するために必要な情報を見つける](https://support.office.microsoft.com/article/Gather-the-information-you-need-to-create-Office-365-DNS-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67)ことができます。
 
@@ -52,7 +52,7 @@ SPF と MX レコードは、見つけ出すのが最も困難です。この記
   
 |**DNS レコード** <br/> |**用途** <br/> |**使用する値** <br/> |
 |----------|-----------|------------|
-|**CNAME** <br/> **(スイート)** <br/> |正しい ID プラットフォームへの認証を指示するために Office 365 で使用されます。[詳細情報](../admin/services-in-china/purpose-of-cname.md?viewFallbackFrom=o365-worldwide) <br/> **注:** この CNAME は、21Vianet が運営する Office 365 にのみ適用されます。 [詳細情報](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)  |**エイリアス:** msoid  <br/> **対象:** clientconfig.partner.microsoftonline-p.net.cn  <br/> |
+|**CNAME** <br/> **(スイート)** <br/> |正しい ID プラットフォームへの認証を指示するために Office 365 で使用されます。[詳細情報](../admin/services-in-china/purpose-of-cname.md?viewFallbackFrom=o365-worldwide) <br/> **注:** この CNAME は、21Vianet が運営する Office 365 にのみ適用されます。[詳細情報](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)  |**エイリアス:** msoid  <br/> **対象:** clientconfig.partner.microsoftonline-p.net.cn  <br/> |
 |**TXT** <br/> **(ドメインの確認)** <br/> |このレコードは、ドメインを所有していることを確認するためだけに Office 365 で使用されます。他のものには影響しません。  <br/> |**ホスト:** @ (または、一部の DNS ホスティング プロバイダーでは自分のドメイン名)  <br/> **TXT 値:** Office 365 "_から提供されるテキスト文字列_"  <br/> このレコードを作成するために使用する値は、Office 365 の **ドメイン セットアップ ウィザード** で指定されます。  <br/> |
 
 
@@ -66,7 +66,7 @@ Office 365 でのメールには、複数の異なるレコードが必要です
 - **MX レコード** は、ドメインのメールを送信する場所を他のメールシステムに知らせます。**注:** ドメインの MX レコードを更新してメールを Office 365 に変更すると、そのドメインに送信されたすべてのメールが Office 365 に届くようになります。  
 一部のメール アドレスのみを Office 365 に切り替える場合 [カスタム ドメインの少数のメール アドレスで Office 365 を試験運用する](https://support.office.com/article/39cee536-6a03-40cf-b9c1-f301bb6001d7) ことができます。
 
-- **SPF の TXT レコード** は、ユーザーのメールを送信するサーバーが承認されていることを検証するために受信者のメール システムで使用されます。 これにより、メールのスプーフィングやフィッシングを防ぎます。 レコードに含める内容については、この記事の [SPF に必要な外部 DNS レコード](external-domain-name-system-records.md#BKMK_SPFrecords) を確認してください。
+- **SPF の TXT レコード** は、ユーザーのメールを送信するサーバーが承認されていることを検証するために受信者のメール システムで使用されます。これはメールのスプーフィングやフィッシングを防ぐために役立ちます。レコードに含める必要があるものについて詳しくは、この記事の「[SPF に必要な外部 DNS レコード](external-domain-name-system-records.md#BKMK_SPFrecords)」をご覧ください。
 
 Exchange フェデレーションを使用しているメールのお客様は、表の一番下に一覧表示されている追加の CNAME および TXT レコードも必要です。
   
@@ -134,8 +134,8 @@ Office 365 に対して Exchange Online メールだけを使用するのでは�
 |1  <br/> |すべてのメール システム (必須)  <br/> |この値で始まるすべての SPF レコード  <br/> |v=spf1  <br/> |
 |2  <br/> |Exchange Online (一般的)  <br/> |Exchange Online だけで使用します  <br/> |include:spf.protection.outlook.com  <br/> |
 |3  <br/> |サード パーティのメール システム (あまり一般的でない)  <br/> ||\<email system like mail.contoso.com\> の内容を含める  <br/> |
-|4   <br/> |オンプレミスのメール システム (あまり一般的でない)  <br/> |Exchange Online Protection または Exchange Online と別のメール システムを使用している場合に使用します  <br/> |ip4:\<0.0.0.0\>  <br/> ip6:\< : : \>  <br/> \<mail.contoso.com\> の内容を含めます。  <br/> 山かっこ (\<\>) 内の値は、自分のドメインにメールを送信する他のメール システムにする必要があります。  <br/> |
-|5   <br/> |すべてのメール システム (必須)  <br/> ||-all  <br/> |
+|4  <br/> |オンプレミスのメール システム (あまり一般的でない)  <br/> |Exchange Online Protection または Exchange Online と別のメール システムを使用している場合に使用します  <br/> |ip4:\<0.0.0.0\>  <br/> ip6:\< : : \>  <br/> \<mail.contoso.com\> の内容を含めます。  <br/> 山かっこ (\<\>) 内の値は、自分のドメインにメールを送信する他のメール システムにする必要があります。  <br/> |
+|5  <br/> |すべてのメール システム (必須)  <br/> ||-all  <br/> |
 
 ### <a name="example-adding-to-an-existing-spf-record"></a>例: 既存の SPF レコードへの追加
 <a name="bkmk_addtospf"> </a>

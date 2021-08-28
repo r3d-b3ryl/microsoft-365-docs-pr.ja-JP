@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: コンテンツ検索の実際の結果をエクスポートする代わりに、Microsoft 365 コンプライアンス センターレポートをエクスポートできます。 レポートには、検索結果の概要と、エクスポートされる各アイテムに関する詳細情報を含むドキュメントが含まれる。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b5307bab55f838697e63559834653b54f06c86e7
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: 56a61bb1cd0fa9952f85d75ae50f42754c583ce7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58503097"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570247"
 ---
 # <a name="export-a-content-search-report"></a>コンテンツ検索のレポートをエクスポートする
 
@@ -73,13 +73,13 @@ Microsoft 365 コンプライアンス センターのコンテンツ検索 (ま
   
 2. 検索フライ **アウト ページの** 下部にある [アクション] メニューで、[レポートのエクスポート] **をクリックします**。
 
-   ![[操作] メニューの [レポートのエクスポート] オプション](../media/ActionMenuExportReport.png)
+   ![[操作] メニューの [レポートのエクスポート] オプション。](../media/ActionMenuExportReport.png)
 
    [ **レポートのエクスポート]** フライアウト ページが表示されます。 検索に関する情報をエクスポートするために使用できるエクスポート レポート オプションは、検索結果がメールボックスまたはサイトにあるか、両方の組み合わせかによって異なっています。
   
 3. [ **出力オプション] で**、次のいずれかのオプションを選択します。
   
-   ![出力オプションのエクスポート](../media/ExportOutputOptions.png)
+   ![出力オプションをエクスポートします。](../media/ExportOutputOptions.png)
 
     - **認識できない形式の** アイテムを除くすべてのアイテムが暗号化される、または他の理由でインデックスが作成されていない。 このオプションは、インデックス付きアイテムに関する情報のみをエクスポートします。
   
@@ -122,7 +122,7 @@ Microsoft 365 コンプライアンス センターのコンテンツ検索 (ま
 
 6. 電子情報開示 **エクスポート ツールで、** 次の操作を行います。
 
-   ![電子情報開示エクスポート ツール](../media/eDiscoveryExportTool.png)
+   ![電子情報開示エクスポート ツール。](../media/eDiscoveryExportTool.png)
 
    1. 手順 3 でコピーしたエクスポート キーを適切なボックスに貼り付けます。
   

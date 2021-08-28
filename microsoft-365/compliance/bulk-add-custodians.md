@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: インポート ツール d を使用して、複数の保管担当者と関連付けられたデータ ソースをすばやくケースに追加Advanced eDiscovery。
-ms.openlocfilehash: ccce04b5821eaff2d2ba65c846d58f3f474fb7277931da1d986f7b7ebe8beccb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ccb180766df47de39e3deb61faab60396c74bb9e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53906108"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570307"
 ---
 # <a name="import-custodians-to-an-advanced-ediscovery-case"></a>保管担当者をケースにAdvanced eDiscoveryする
 
@@ -34,7 +34,7 @@ ms.locfileid: "53906108"
 
 3. [保管 **担当者のインポート] フライアウト** ページで、[空のテンプレートをダウンロードする] をクリックして、カストディアン テンプレートの CSV ファイルをダウンロードします。
 
-   ![[保管担当者のインポート] フライアウト ページから CSV テンプレートをダウンロードする](../media/ImportCustodians1.png)
+   ![[保管担当者のインポート] フライアウト ページから CSV テンプレートをダウンロードします。](../media/ImportCustodians1.png)
 
 4. 保管情報を CSV ファイルに追加し、ローカル コンピューターに保存します。 CSV ファイルで [必要なプロパティの詳細については、「Custodian CSV](#custodian-csv-file) ファイル」セクションを参照してください。
 
@@ -48,7 +48,7 @@ ms.locfileid: "53906108"
 
 CSV カストディアン テンプレートをダウンロードした後、各行に保管担当者とそのデータ ソースを追加できます。 ヘッダー行の列名は必ず変更してください。 ワークロードの種類とワークロードの場所の列を使用して、他のデータ ソースを保管担当者に関連付ける。
 
-| 列名|Description|
+| 列名|説明|
 |:------- |:------------------------------------------------------------|
 |**Custodian contactEmail**     |保管担当者の UPN メール アドレス。 たとえば、sarad@contoso.onmicrosoft.com。           |
 |**Exchange有効** | 保管担当者のメールボックスを含めるか含めない場合の TRUE/FALSE 値。      |

@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft 365 コンプライアンス センターのコンテンツ検索またはコア電子情報開示検索によって返される結果サンプルをプレビューします。
-ms.openlocfilehash: fa9d69672f86cb58ef362b4b3fbaec5ba00bd50ac48778a96a0358910a35f311
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ac9929ee8639c4d653f8e9dfe680a5df5c6c3a7d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53891743"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570799"
 ---
 # <a name="preview-ediscovery-search-results"></a>電子情報開示検索結果をプレビューする
 
@@ -39,13 +39,13 @@ ms.locfileid: "53891743"
 
 3. ポップアップ ページの下部で、**[サンプルのレビュー]** をクリックします。
 
-   ![ポップアップ ページで [サンプルのレビュー] をクリックして結果をプレビューする](../media/PreviewSearchResults1.png)
+   ![ポップアップ ページで [サンプルのレビュー] をクリックして結果をプレビューする。](../media/PreviewSearchResults1.png)
 
    検索結果のサンプルを含むページが表示されます。
 
 4. 閲覧ウィンドウでアイテムを選んで内容を表示します。
 
-   ![閲覧ウィンドウでアイテムをプレビュー](../media/PreviewSearchResults2.png)
+   ![閲覧ウィンドウでアイテムをプレビュー。](../media/PreviewSearchResults2.png)
 
    前述のスクリーンショットでは、アイテムをプレビューする場合に、検索クエリのキーワードが強調表示されていることがわかります。
 

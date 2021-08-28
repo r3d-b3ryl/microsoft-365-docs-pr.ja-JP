@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: c97d7751d56bb42a4a120deb52563a0668138ca5
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 5e2588361cfc416b8d7aa8b51b8e12ded8a7ceca
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247387"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570463"
 ---
 # <a name="pilot-microsoft-defender-for-office-365"></a>パイロット Microsoft Defender for Office 365
 **適用対象:**
@@ -36,7 +36,7 @@ ms.locfileid: "58247387"
 
 次の手順を使用して、Microsoft Defender のパイロットをセットアップして構成Office 365。
 
-![Microsoft Defender for microsoft Defender のパイロットを作成する手順Office 365](../../media/defender/m365-defender-office-pilot.png)
+![Microsoft Defender のパイロットを作成する手順をOffice 365。](../../media/defender/m365-defender-office-pilot.png)
 
 - [手順 1: パイロット グループを作成する](#step-1-create-pilot-groups)
 - [手順 2: 保護の構成](#step-2-configure-protection)
@@ -95,7 +95,7 @@ MDO を評価する際に推奨されるベースライン ポリシーから始
 
 3. [ポリシー の設定] &ダッシュボードで、[脅威 *ポリシー] をクリックします*。
 
-:::image type="content" source="../../media/mdo-eval/6-mdo-eval-pilot-threat-policies.png" alt-text="a":::
+:::image type="content" source="../../media/mdo-eval/6-mdo-eval-pilot-threat-policies.png" alt-text="a.":::
 
 4. このポータルMicrosoft 365 Defenderナビゲーション メニューから [脅威の管理] を展開し、サブメニューから [ポリシー] を選択します。
 5. [ポリシー] ダッシュボードで、[セキュリティ ポリシーの *事前設定] をクリックします*。

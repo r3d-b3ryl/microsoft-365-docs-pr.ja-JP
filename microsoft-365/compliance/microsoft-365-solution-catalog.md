@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: ソリューション カタログMicrosoft 365含まれるもの、取得する方法、および次の手順について説明します。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 7ca34e9bb091d98af999b0c7e019421bbd2b023961c2b9c348c38fdd65dd6e51
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7b7c7f299201a25518b187eed1bd78e7f67d678b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53807822"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574954"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Microsoft 365 ソリューション カタログ
 
@@ -30,17 +30,17 @@ ms.locfileid: "53807822"
 
 ソリューション カタログは、サブスクリプションで使用できる各コンプライアンス ソリューションの情報カードを含むセクションMicrosoft 365されます。 各セクションには、コンプライアンス領域別にグループ化されたソリューションのカードが含まれる。
 
-![Microsoft 365 カタログのホーム ページ](../media/m365-solution-catalog-home.png)
+![Microsoft 365カタログのホーム ページを開きます。](../media/m365-solution-catalog-home.png)
 
 ソリューション カードの **[表示** ] を選択すると、コンプライアンス ソリューションと開始方法に関する詳細情報が表示されます。 この情報には、概要、構成前の要件、学習リソース、ナビゲーション ウィンドウにカードをピン留めできるコントロール、およびリンク、電子メール、または Microsoft Teams メッセージとしてソリューションを共有するオプションが含まれます。
 
-![Microsoft 365コンプライアンス ソリューション](../media/m365-solution-catalog-communication-compliance.png)
+![Microsoft 365コンプライアンス ソリューション。](../media/m365-solution-catalog-communication-compliance.png)
 
 ## <a name="information-protection--governance-section"></a>[情報保護&ガバナンス] セクション
 
 [**情報保護&ガバナンス**] セクションでは、コンプライアンス ソリューションを使用して組織Microsoft 365データを保護および管理する方法を一目で確認できます。
 
-![Microsoft 365カタログの情報保護とガバナンスセクション](../media/m365-solution-catalog-information-protection-governance.png)
+![Microsoft 365カタログの情報保護とガバナンスセクションを参照してください。](../media/m365-solution-catalog-information-protection-governance.png)
 
 ここから、次のソリューションのカードが表示されます。
 
@@ -53,7 +53,7 @@ ms.locfileid: "53807822"
 
 ホーム **ページの Insider リスク管理** セクションでは、組織が内部リスクを識別、分析、および対処する方法を一目で確認してから、危害を加える方法を示します。
 
-![Microsoft 365 カタログインサイダーリスク管理セクション](../media/m365-solution-catalog-insider-risk-management.png)
+![Microsoft 365インサイダーリスク管理セクションを参照してください。](../media/m365-solution-catalog-insider-risk-management.png)
 
 ここから、次のソリューションのカードが表示されます。
 
@@ -64,7 +64,7 @@ ms.locfileid: "53807822"
 
 ホーム **ページ& [** 検出と応答] セクションには、組織が関連するデータに関するコンプライアンスの問題をすばやく見つけて調査し、対応する方法が一目でわかります。
 
-![Microsoft 365 カタログの検出と応答のセクション](../media/m365-solution-catalog-discovery-response.png)
+![Microsoft 365カタログの検出と応答のセクションを参照してください。](../media/m365-solution-catalog-discovery-response.png)
 
 ここから、次のソリューションのカードが表示されます。
 

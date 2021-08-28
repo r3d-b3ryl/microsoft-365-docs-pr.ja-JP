@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、データ コネクタをセットアップして、ブルームバーグ メッセージ電子メール ツールからデータをインポートおよびアーカイブMicrosoft 365。 これにより、Microsoft 365 のサード パーティデータ ソースからデータをアーカイブし、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織のサード パーティデータを管理できます。
-ms.openlocfilehash: 6fe3f50576ef01868c335823f09970f9a3bf88ccdbe06eef73cc1e04ea8d7e61
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2fabe34f7172c67442474359c8eefe4078c4bdd6
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53861248"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575026"
 ---
 # <a name="set-up-a-connector-to-archive-bloomberg-message-data"></a>ブルームバーグ メッセージ データをアーカイブするコネクタをセットアップする
 
@@ -29,7 +29,7 @@ ms.locfileid: "53861248"
 
 次の概要では、コネクタを使用してブルームバーグ メッセージ データをアーカイブするプロセスについて説明Microsoft 365。
 
-![Bloomberg メッセージのインポートおよびアーカイブ プロセス](../media/BloombergMessageArchiving.png)
+![Bloomberg メッセージのインポートおよびアーカイブ プロセス。](../media/BloombergMessageArchiving.png)
 
 1. 組織はブルームバーグと一緒にブルームバーグ SFTP サイトをセットアップします。 また、ブルームバーグと一緒に、ブルームバーグ SFTP サイトに電子メール メッセージをコピーするブルームバーグ メッセージを構成します。
 
@@ -91,11 +91,11 @@ ms.locfileid: "53861248"
 
 5. [コンテンツ **ソースの資格情報の追加]** ページで、[Microsoft が提供する PGP および SSH 公開キーを使用 **する] をクリックします**。
 
-   ![公開キーを使用するオプションを選択する](../media/BloombergMessagePublicKeysOption.png)
+   ![公開キーを使用するオプションを選択します。](../media/BloombergMessagePublicKeysOption.png)
 
 6. 手順 1 で **、[SSH** キーのダウンロード] **、[PGP** キーのダウンロード] 、および **[IP** アドレスのダウンロード] リンクをクリックして、各ファイルのコピーをローカル コンピューターに保存します。
 
-   ![公開キーと IP アドレスをダウンロードするリンク](../media/BloombergMessagePublicKeyDownloadLinks.png)
+   ![公開キーと IP アドレスをダウンロードするリンク。](../media/BloombergMessagePublicKeyDownloadLinks.png)
 
    これらのファイルには、手順 2 でブルームバーグ SFTP サイトを構成するために使用される次の項目が含まれています。
 
@@ -179,7 +179,7 @@ IP アドレスを取得するには、次の方法を実行します。
 
 6. 手順 1 で **、[IP** アドレスのダウンロード] をクリックして、IP アドレス ファイルのコピーをローカル コンピューターに保存します。
 
-   ![IP アドレスをダウンロードする](../media/BloombergMessageConnectorIPAddress.png)
+   ![IP アドレスをダウンロードします。](../media/BloombergMessageConnectorIPAddress.png)
 
 7. [キャンセル **] を** クリックしてウィザードを閉じます。 手順 2 でこのウィザードに戻り、コネクタを作成します。
 
@@ -199,7 +199,7 @@ IP アドレスを取得するには、次の方法を実行します。
 
 5. [コンテンツ **ソースの資格情報の追加] ページで** 、[PGP と SSH のプライベート キーを使用 **する] をクリックします**。
 
-   ![プライベート キーを使用するオプションを選択する](../media/BloombergMessagePrivateKeysOption.png)
+   ![プライベート キーを使用するオプションを選択します。](../media/BloombergMessagePrivateKeysOption.png)
 
 6. [手順 3] で、次のボックスに必要な情報を入力し、[接続の検証] **をクリックします**。
 

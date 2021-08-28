@@ -17,18 +17,18 @@ ms.custom:
 - seo-marvel-jun2020
 f1.keywords: NOCSH
 description: 組織に適切な音声ソリューションを選択Teams展開する方法について学習します。
-ms.openlocfilehash: bfcad56d54eb29fdf9d2b48b74d7811dee5dc2df1be9fdf2ddcd5373a1b1be48
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 359242ea66fc1be9af18ff10cb7e33fe26ddd83e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53883368"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575374"
 ---
 # <a name="plan-and-deploy-a-teams-voice-solution"></a>Teams 音声ソリューションを計画し展開する
 
 音声Teamsを使用すると、組織内のユーザーが組織内外の両方で通話を行える。 完全な音声ソリューションは、Teams、Microsoft 電話、および公衆交換電話網 (PSTN) に接続するためのオプションの選択で構成されます。
 
-![Teams音声ソリューションの概要](..\media\solutions-architecture-center\voice-concepts.png)
+![Teamsソリューションの概要について説明します。](..\media\solutions-architecture-center\voice-concepts.png)
 
 電話システム組織に完全なプライベート ブランチ Exchange (PBX) 機能を提供します。 組織内のユーザー間の呼び出し (地理的な場所に関係なく) は、電話システム 内で内部的に処理され、これらの内部通話の長距離コストが削減されます。  
 
@@ -41,7 +41,7 @@ ms.locfileid: "53883368"
 
 音声ソリューションを選択、計画、および構成するには、次の手順に従います。
 
-![音声ソリューションを選択する](..\media\solutions-architecture-center\voice-solutions-overview-1.png)
+![音声ソリューションを選択します。](..\media\solutions-architecture-center\voice-solutions-overview-1.png)
 
 1. [音声ソリューションを選択する](/MicrosoftTeams/cloud-voice-landing-page?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json)
 

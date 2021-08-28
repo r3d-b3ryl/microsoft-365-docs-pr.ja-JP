@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: 推定検索結果と実際の検索結果が、電子情報開示ツールを使用して実行される検索で異なる理由をOffice 365。
-ms.openlocfilehash: 70a2f22250010204298bb4e9ea5e4f3833013d04027bbdb4bcb0d25653ca47d4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ae6e8d21ceb448f2402b14a02d5e08a3bf331548
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53808092"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570583"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results"></a>推定電子情報開示検索結果と実際の電子情報開示検索結果の違い
 
@@ -35,21 +35,21 @@ ms.locfileid: "53808092"
 
 電子情報開示検索を実行すると、使用しているツールは、検索条件に一致するアイテム数 (および合計サイズ) の推定値を返します。 たとえば、検索結果で検索を実行Microsoft 365 コンプライアンス センター、選択した検索のフライアウト ページに推定検索結果が表示されます。
   
-![検索フライアウト ページに表示される結果の推定値](../media/EstimatedSearchResults1.png)
+![検索の飛び出しページに表示される結果の推定値。](../media/EstimatedSearchResults1.png)
   
 これは、検索結果をローカル コンピューターにエクスポートする場合と、検索結果と一緒にダウンロードされる [概要のエクスポート] レポートで、電子情報開示エクスポート ツールに表示されるアイテムの合計サイズと数と同じ推定値です。
   
 **電子情報開示エクスポート ツールの推定結果**
 
-![電子情報開示エクスポート ツールの推定結果](../media/d34312a5-0ee6-49aa-9460-7ea0015a6e66.png)
+![電子情報開示エクスポート ツールの推定結果。](../media/d34312a5-0ee6-49aa-9460-7ea0015a6e66.png)
   
 **[エクスポートの概要] レポートの推定結果**
 
-![推定された検索結果は、エクスポートの概要レポートに含まれています。](../media/44b579da-86c2-4f33-81b5-84d604003eda.png)
+![推定検索結果は、[エクスポートの概要] レポートに含まれます。](../media/44b579da-86c2-4f33-81b5-84d604003eda.png)
   
 ただし、エクスポートの概要レポートの前のスクリーンショットで確認すると、ダウンロードされる実際の検索結果のサイズと数は、推定検索結果のサイズと数とは異なります。
   
-![推定とダウンロードされた検索結果の違い](../media/84aef318-230f-430d-9d9e-02f21342d364.png)
+![推定検索結果とダウンロードされた検索結果の違い。](../media/84aef318-230f-430d-9d9e-02f21342d364.png)
   
 これらの違いの理由は次のとおりです。
   

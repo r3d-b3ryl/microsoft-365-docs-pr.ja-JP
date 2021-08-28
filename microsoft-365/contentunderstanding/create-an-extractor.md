@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Microsoft SharePoint Syntex でエクストラクターを作成する方法について説明します。
-ms.openlocfilehash: c2eb18d6cce471dda73cefee65dfd024b81a815988e015ccc42fd891841b37b9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 645ecafc1ebad3031dc7ca3b70f5ceb95e72af39
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53865344"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569743"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex でエクストラクターを作成する
 
@@ -54,7 +54,7 @@ ms.locfileid: "53865344"
 2. [ **次の ファイル**] を選択して、viewer の一覧で次のファイルを自動的に保存して開きます。 または、[**保存**] を選択し [ **ラベルが付いた サンプル** ] の一覧から別のファイルを選択します。
 3. このビューアーで、手順1と2を繰り返し、5つのファイルすべてにラベルを保存します。
 
-    ![詳細設定](../media/content-understanding/select-service-start-date.png) 
+    ![詳細設定。](../media/content-understanding/select-service-start-date.png) 
 
  
 5個のファイルにラベルを付けたら、トレーニングに移動するように通知バナーが表示されます。 ドキュメントのラベルを追加するか、トレーニングに進めるか、選択することができます。 

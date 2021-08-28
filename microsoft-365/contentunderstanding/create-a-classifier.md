@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Microsoft SharePoint Syntex で分類子を作成する方法について説明します。
-ms.openlocfilehash: 7694337e28a1d18ddf1eed3bddc0d4d8c9e2ebaee4f5c575cb057b1d4ef58af7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e9c8a08fe3583f4692edcc4649854a26950eb717
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53850406"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565268"
 ---
 # <a name="create-a-classifier-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntexで分類子を作成する
 
@@ -31,13 +31,13 @@ ms.locfileid: "53850406"
 
 分類子は、ドキュメントの種類の識別および分類を自動化するために使用できるモデルの種類です。 たとえば、次の図に示すように、ドキュメントライブラリに追加されたすべての *契約更新* ドキュメントを特定することも可能です。
 
-![契約更新ドキュメント](../media/content-understanding/contract-renewal.png)
+![契約更新ドキュメント。](../media/content-understanding/contract-renewal.png)
 
 分類子を作成すると、モデルに関連付けられる新しい [SharePoint コンテンツの種類](/sharepoint/governance/content-type-and-workflow-planning#content-type-overview)を作成できます。
 
 分類子を作成するときに、モデルを定義するために *説明* を作成する必要があります。 これにより、このドキュメントの種類に一貫して見つける共通のデータがあることが分かります。 
 
-コンテンツタイプが同じファイルを特定できるように、モデルに "トレーニング&quot; するには、ドキュメントの種類 (&quot;ファイルの例") の例を使用します。
+コンテンツタイプが同じファイルを特定できるように、モデルに "トレーニング" するには、ドキュメントの種類 ("ファイルの例") の例を使用します。
 
 分類子を作成するには、次の操作を行う必要があります。
 1. モデルに名前をつけます。
@@ -143,7 +143,7 @@ ms.locfileid: "53850406"
 1. [モデルのホーム] ページで、[**テスト**] タブを選択します。 ラベルなしのサンプルファイル上でモデルが実行されます。
 2. [ **テストファイル** ] の一覧では、サンプルファイルが表示され、モデルがポジティブかネガティブであるかを予測します。 この情報を使用して、ドキュメントを特定するときの分類子の有効性を判断します。
 
-    ![ラベルなしファイルのテスト](../media/content-understanding/test-on-files.png) 
+    ![ラベルなしファイルのテスト。](../media/content-understanding/test-on-files.png) 
 
 ## <a name="see-also"></a>関連項目
 [エクストラクターを作成する](create-an-extractor.md)

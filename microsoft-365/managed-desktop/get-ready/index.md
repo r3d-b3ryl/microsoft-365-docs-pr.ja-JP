@@ -9,18 +9,18 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 8e65dd554a07158d3df3b11323e158c1ea8afd20
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.openlocfilehash: 4af99d0fa87d8d11d3dfcc21d37e332e890c8f7f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58364574"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575050"
 ---
 # <a name="get-ready-for-enrollment-in-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップへの登録準備
 
 これらのトピックでは、環境が主要な前提条件を満たしていることの確認、ネットワークの構成、証明書の設定、アプリをサービスに含める準備を行うことなど、登録準備のために組織内で行う必要がある手順について説明します。 準備状況の評価ツールを実行すると、他の手順を任意の順序で、または並行して完了することができます。 環境によっては、一部の手順が適切でない場合があります。
 
-![この記事に記載されている、登録の準備をするために推奨される一連の手順](../../media/mmd-getready-sequence.png)
+![この記事に記載されている、登録の準備をするために推奨される一連の手順。](../../media/mmd-getready-sequence.png)
 
 1. [Microsoft マネージド デスクトップの前提条件](prerequisites.md)を確認します。
 2. [準備状況の評価ツール](readiness-assessment-tool.md)を実行します。

@@ -20,16 +20,16 @@ search.appverid:
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: ExpressRoute for Office 365を実装する方法について説明します。これは、インターネットに接続している多数のサービスへの代替ルーティング パスOffice 365します。
-ms.openlocfilehash: f0f429d2fce1c83109e19191f1f3c60190046176c1ce03a31c159aa3591e21b4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 66ff6157c8f2fb28b1a57af42295a6ba0ed93dad
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53801127"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575338"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>Office 365 向け ExpressRoute の実装
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 ExpressRoute for Office 365は、インターネットに接続している多数のサービスへの代替ルーティング Office 365します。 Office 365 の ExpressRoute のアーキテクチャは、インターネット上で既にアクセス可能な Office 365 サービスのパブリック IP プレフィックスを、その後ネットワークに再配布するために、プロビジョニング済みの ExpressRoute 回線に基づいて行います。 ExpressRoute を使用すると、インターネット経由と ExpressRoute 経由で、さまざまなルーティング パスを有効にし、多くのサービスOffice 365できます。 ネットワーク上のルーティングのこの状態は、内部ネットワーク トポロジの設計方法に大きな変化を与える可能性があります。
   
@@ -159,7 +159,7 @@ Office 365の記事 [「Route with ExpressRoute for Office 365」](https://suppo
 
 次の図は、ユーザーがユーザーが使用する各場所と、Office 365への受信および送信ルーティング の提供情報をOffice 365。
   
-![ExpressRoute 地域の地理的な meet-me](../media/d866b36b-49bf-416b-af1b-d054e24989d2.png)
+![ExpressRoute 地域の地理的な meet-me。](../media/d866b36b-49bf-416b-af1b-d054e24989d2.png)
   
 送信トラフィックの場合、ユーザーは次Office 365方法のいずれかを使用してアクセスします。
   
@@ -169,7 +169,7 @@ Office 365の記事 [「Route with ExpressRoute for Office 365」](https://suppo
 
 3. バングラデシュのインターネット経由で、ユーザーが少なく、ExpressRoute 回線がプロビジョニングされません。
 
-![地域図の送信接続](../media/8319943d-08f0-4781-9ef3-d23de2ad4671.png)
+![地域図の送信接続。](../media/8319943d-08f0-4781-9ef3-d23de2ad4671.png)
   
 同様に、次の 3 つの方法Office 365受信ネットワーク トラフィックが返されます。
   
@@ -179,7 +179,7 @@ Office 365の記事 [「Route with ExpressRoute for Office 365」](https://suppo
 
 3. バングラデシュのインターネット経由で、ユーザーが少なく、ExpressRoute 回線がプロビジョニングされません。
 
-![地域図の受信接続](../media/d6d6160d-bf28-4de3-a787-186c7432b306.png)
+![地域図の受信接続。](../media/d6d6160d-bf28-4de3-a787-186c7432b306.png)
   
 ### <a name="determine-the-appropriate-meet-me-location"></a>適切な meet-me の場所を決定する
 
@@ -191,11 +191,11 @@ ExpressRoute 回線がネットワークを Microsoft ネットワークに接�
 
 **カリフォルニアとニューヨークの ExpressRoute meet-me の計画場所**
 
-|場所  <br/> |人数  <br/> |インターネット出力を通して Microsoft ネットワークに予想される待機時間  <br/> |ExpressRoute を使用した Microsoft ネットワークへの予期される待機時間  <br/> |
+|Location  <br/> |人数  <br/> |インターネット出力を通して Microsoft ネットワークに予想される待機時間  <br/> |ExpressRoute を使用した Microsoft ネットワークへの予期される待機時間  <br/> |
 |----------|-----------|----------|-----------|
 |Los Angeles  <br/> |10,000  <br/> |~15ms  <br/> |~10ms (シリコン バレー経由)  <br/> |
 |ワシントン DC  <br/> |15,000  <br/> |~20ms  <br/> |~10ms (ニューヨーク経由)  <br/> |
-|ダラス  <br/> |5,000 人  <br/> |~15ms  <br/> |~40ms (ニューヨーク経由)  <br/> |
+|ダラス  <br/> |5,000  <br/> |~15ms  <br/> |~40ms (ニューヨーク経由)  <br/> |
 
 Office 365 地域、ExpressRoute ネットワーク サービス プロバイダーの meet-me 場所、および場所別のユーザー数を示すグローバル ネットワーク アーキテクチャが開発された後は、最適化を行う必要がある場合に使用できます。 また、ミートミーの場所を取得するために、トラフィックが遠くの場所にルーティングされるグローバル ヘアピン ネットワーク接続が表示される場合があります。 グローバル ネットワーク上のヘアピンが検出された場合は、続行する前に修復する必要があります。 別の meet-me の場所を見つけるか、または選択的なインターネット ブレイクアウト出力ポイントを使用してヘアピンを回避します。
   
@@ -205,13 +205,13 @@ Office 365 地域、ExpressRoute ネットワーク サービス プロバイダ
 
 2. ホストされている Microsoft データセンターに最も近Office 365です。
 
-![ExpressRoute US 地理的な meet-me](../media/5ec38274-b317-4ec1-91c8-90c2a7fd32ca.png)
+![ExpressRoute 米国の地理的な meet-me。](../media/5ec38274-b317-4ec1-91c8-90c2a7fd32ca.png)
   
 この概念をさらに少し広げ、2 番目の図は、類似の情報と意思決定に直面している多国籍顧客の例を示しています。 この顧客はバングラデシュに小規模なオフィスを持ち、この地域でのフットプリントの拡大に集中する 10 人の小さなチームのみです。 チェンナイにはミートミーの場所と、チェンナイでホストされている microsoft データセンター Office 365、ミートミーの場所が理にかなっています。ただし、10 人の場合、追加回線の費用は負担になります。 ネットワークを見ていると、ネットワーク全体のネットワーク トラフィックの送信に関係する待機時間が、別の ExpressRoute 回線を取得するために資本を費やすよりも効果的かどうかを判断する必要があります。
   
 また、バングラデシュの 10 人のユーザーは、インターネットを通して Microsoft ネットワークに送信されるネットワーク トラフィックのパフォーマンスが、導入図で示し、以下に再現された内部ネットワーク上でルーティングするよりも優れたパフォーマンスを得る場合があります。
   
-![地域図の送信接続](../media/8319943d-08f0-4781-9ef3-d23de2ad4671.png)
+![地域図の送信接続。](../media/8319943d-08f0-4781-9ef3-d23de2ad4671.png)
   
 ## <a name="create-your-expressroute-for-office-365-implementation-plan"></a>実装計画に合Office 365 ExpressRoute を作成する
 <a name="implementation"> </a>
@@ -329,7 +329,7 @@ ExpressRoute 接続を使用して一部の受信フローを送信する場合�
 
 2. ニュージャージー 州のデータ センターのサーバーは、インターネット ルートと ExpressRoute ルートの両方を表示できます。
 
-![ExpressRoute 接続の概要](../media/8f074af6-ef38-44e8-bc5a-8b4d981fbb20.png)
+![ExpressRoute 接続の概要。](../media/8f074af6-ef38-44e8-bc5a-8b4d981fbb20.png)
   
 また、修正方法に関する提案も行っています。
   
@@ -345,7 +345,7 @@ ExpressRoute 接続を使用して一部の受信フローを送信する場合�
 
   - 結果は、そのフローが接続を確立する非対称パスOffice 365接続が壊れています。
 
-![ExpressRoute Asymetric ルーティングの問題 1](../media/9c210c2a-e0ea-4180-8ede-1bf41746ce7a.png)
+![ExpressRoute Asymetric ルーティングの問題 1.](../media/9c210c2a-e0ea-4180-8ede-1bf41746ce7a.png)
   
 ##### <a name="solution-1a-source-nat"></a>ソリューション 1a: ソース NAT
   
@@ -355,7 +355,7 @@ ExpressRoute 接続を使用して一部の受信フローを送信する場合�
 
 2. サーバーからの応答は、元の IP アドレスではなく、送信元 NAT に関連付けられた IP に戻り、応答が同じネットワーク パスに沿って返されます。
 
-![ExpressRoute Asymetric ルーティング ソリューション 1](../media/0e87a155-f8de-48ed-92ac-27367b727a82.png)
+![ExpressRoute Asymetric ルーティング ソリューション 1。](../media/0e87a155-f8de-48ed-92ac-27367b727a82.png)
   
 ##### <a name="solution-1b-route-scoping"></a>ソリューション 1b: ルート スコープ
   
@@ -365,7 +365,7 @@ ExpressRoute 接続を使用して一部の受信フローを送信する場合�
 
 2. サーバーからの応答は、使用可能な唯一のルートを通じて元の IP アドレスに関連付けられた IP に戻り、応答が同じネットワーク パスに沿って返されます。
 
-![ExpressRoute Asymetric ルーティング ソリューション 2](../media/9cb4b2bf-7aa6-487a-bc02-e02af8a979f6.png)
+![ExpressRoute Asymetric ルーティング ソリューション 2.](../media/9cb4b2bf-7aa6-487a-bc02-e02af8a979f6.png)
   
 #### <a name="problem-2-cloud-to-on-premises-connection-over-expressroute"></a>問題 2: ExpressRoute を使用したクラウドからオンプレミスへの接続
   
@@ -379,7 +379,7 @@ ExpressRoute 接続を使用して一部の受信フローを送信する場合�
 
   - 結果は、非対称接続を使用してOffice 365。
 
-![ExpressRoute Asymetric ルーティングの問題 2](../media/f6fd155b-bbb7-472a-846e-039a99f09913.png)
+![ExpressRoute Asymetric ルーティングの問題 2.](../media/f6fd155b-bbb7-472a-846e-039a99f09913.png)
   
 ##### <a name="solution-2-source-nat"></a>ソリューション 2: ソース NAT
   
@@ -389,7 +389,7 @@ ExpressRoute 接続を使用して一部の受信フローを送信する場合�
 
 2. サーバーからの応答は、元の IP アドレスではなく、送信元 NAT に関連付けられた IP に戻り、応答が同じネットワーク パスに沿って返されます。
 
-![ExpressRoute Asymetric ルーティング ソリューション 3](../media/a5d2b90d-a3ec-4047-afbf-6e6e99f376a7.png)
+![ExpressRoute Asymetric ルーティング ソリューション 3.](../media/a5d2b90d-a3ec-4047-afbf-6e6e99f376a7.png)
   
 ### <a name="paper-verify-that-the-network-design-has-path-symmetry"></a>ネットワーク設計にパス対称性があるというペーパー検証
 
@@ -402,7 +402,7 @@ ExpressRoute 接続を使用して一部の受信フローを送信する場合�
 ### <a name="design-client-connectivity-configuration"></a>クライアント接続の構成を設計する
 <a name="asymmetric"> </a>
 
-![ExpressRoute での PAC ファイルの使用](../media/7cfa6482-dbae-416a-ae6f-a45e5f4de23b.png)
+![ExpressRoute で PAC ファイルを使用する。](../media/7cfa6482-dbae-416a-ae6f-a45e5f4de23b.png)
   
 インターネット にバインドされたトラフィックにプロキシ サーバーを使用している場合は、PAC またはクライアント構成ファイルを調整して、ネットワーク上のクライアント コンピューターがプロキシ サーバーを通過せずに Office 365 に送信する ExpressRoute トラフィックを正しく構成し、一部の Office 365 トラフィックを含む残りのトラフィックが関連するプロキシに送信されるようにする必要があります。 PAC ファイルなどのエンドポイント[Office 365管理に関する](./managing-office-365-endpoints.md)ガイドを参照してください。
   
@@ -599,6 +599,6 @@ ExpressRoute 接続を使用して Office 365 を展開する場合は、Express
   
 [Office 365 のパフォーマンスに関するトラブルシューティングの計画](performance-troubleshooting-plan.md)
   
-[Office 365 URL および IP アドレス範囲](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[Office 365 の URL と IP アドレスの範囲](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
 [Office 365 のネットワークとパフォーマンスのチューニング](network-planning-and-performance.md)

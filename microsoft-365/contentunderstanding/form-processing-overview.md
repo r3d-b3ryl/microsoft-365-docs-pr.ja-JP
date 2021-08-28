@@ -13,16 +13,16 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Microsoft SharePoint Syntex でのフォーム処理について説明します。
-ms.openlocfilehash: 6914cf4a8427f505bf39e2b157beb0dbfee0336d
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: 7a411a4150f09d62ae539ca35dee05df201e707c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58399721"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561172"
 ---
 # <a name="form-processing-overview-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex でのフォーム処理の概要
 
- ![AI ビルダー](../media/content-understanding/ai-builder.png)</br>
+ ![AI ビルダー。](../media/content-understanding/ai-builder.png)</br>
 
 Microsoft SharePoint Syntex は、Microsoft PowerApps [AI Builder](/ai-builder/overview) フォーム処理を使用して、SharePoint ドキュメント ライブラリ内にモデルを作成します。
 
@@ -35,7 +35,7 @@ AI Builder フォーム処理を使用して、機械学習テクノロジを使
 
 たとえば、ドキュメント ライブラリにアップロードされたすべての発注書ドキュメントを識別するフォーム処理モデルを作成できます。 次に、各発注書から、*PO番号*、*日付*、*総コスト* など、重要な特定のデータを抽出して表示できます。
 
-![ドキュメント ライブラリ ビュー](../media/content-understanding/doc-lib-done.png)</br>  
+![ドキュメント ライブラリ ビュー。](../media/content-understanding/doc-lib-done.png)</br>  
 
 サンプルファイルを使用してモデルをトレーニングし、フォームから抽出する情報を定義します。 文書のレイアウトは、モデルをトレーニングすることで学習されます。 開始するのに必要なフォーム ドキュメントは5つだけです。 AI Builderは、サンプル ファイルを分析してキーと値のペアを探します。また、検出されなかった可能性のあるファイルを手動で特定することもできます。  AI ビルダーを使用すると、サンプルファイルでモデルの精度をテストできます。
 

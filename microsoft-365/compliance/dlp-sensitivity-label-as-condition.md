@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 秘密度ラベルを DLP ポリシーの条件として使用できるサービスやアイテムの種類について説明します。
-ms.openlocfilehash: 288eb91c383e1ecd8e6e332438004b3ed8c4a2729829286ab4be8a2803657ec1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: aa9b936f7c40227245d0ffd9fbbc951e51c49321
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53892109"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567750"
 ---
 # <a name="use-sensitivity-labels-as-conditions-in-dlp-policies"></a>DLP ポリシーで秘密度ラベルを条件として使用する
 
@@ -39,7 +39,7 @@ ms.locfileid: "53892109"
 秘密度ラベルは、**コンテンツに含まれている** 一覧にオプションとして表示されます。
 
 > [!div class="mx-imgBorder"]
-> ![条件としての秘密度ラベル](../media/dlp-sensitivity-label-as-a-condition.png)
+> ![条件としての秘密度ラベル。](../media/dlp-sensitivity-label-as-a-condition.png)
 
 > [!IMPORTANT]
 > DLP ポリシーを適用する場所として **Teams チャットとチャネル メッセージ** を選択している場合、条件としての **秘密度ラベル** は使用できません。

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 75b47d9d7c95bd2e1f0c2654e59c3d24e7e838fc6a4d1d543976829e9c96c149
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4c1d24119ee8f403b168d6b2f2d97b9842f89d9b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53834134"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575194"
 ---
 # <a name="device-discovery-overview"></a>デバイス検出の概要
 
@@ -90,7 +90,7 @@ Microsoft Defender for Endpoint によって検出されたが、まだオンボ
 - サポートされていません: エンドポイントはネットワークで検出されましたが、Microsoft Defender for Endpoint ではサポートされていません。
 - 不十分な情報: システムは、デバイスのサポート可能性を判断する必要があります。 ネットワーク内のより多くのデバイスで標準検出を有効にすると、検出された属性を強化できます。
 
-![デバイス インベントリ ダッシュボードのイメージ](images/2b62255cd3a9dd42f3219e437b956fb9.png)
+![デバイス インベントリ ダッシュボードのイメージ。](images/2b62255cd3a9dd42f3219e437b956fb9.png)
 
 > [!TIP]
 > フィルターをいつでも適用して、デバイス インベントリ リストから管理されていないデバイスを除外できます。 また、API クエリのオンボーディング状態列を使用して、管理されていないデバイスをフィルター処理することもできます。
@@ -100,14 +100,14 @@ Microsoft Defender for Endpoint によって検出されたが、まだオンボ
 デバイスの脆弱性とリスク、およびネットワーク内で検出された他の管理されていないデバイスは、"セキュリティ推奨事項" の下にある現在の TVM フローの一部であり、ポータル全体のエンティティ ページに表示されます。
 "SSH" 関連のセキュリティ推奨事項を検索して、管理されていないデバイスと管理対象デバイスに関連する SSH の脆弱性を検索します。
 
-![セキュリティ推奨事項ダッシュボードのイメージ](images/1156c82ffadd356ce329d1cf551e806c.png)
+![セキュリティ推奨事項ダッシュボードのイメージ。](images/1156c82ffadd356ce329d1cf551e806c.png)
 
 ## <a name="use-advanced-hunting-on-discovered-devices"></a>検出されたデバイスで高度なハンティングを使用する
 
 高度な検索クエリを使用すると、検出されたデバイスを表示できます。
 検出されたエンドポイントの詳細については、DeviceInfo テーブル、または DeviceNetworkInfo テーブルのこれらのデバイスに関するネットワーク関連の情報を参照してください。
 
-![高度なハンティングの使用イメージ](images/f48ba1779eddee9872f167453c24e5c9.png)
+![高度な狩猟の使用のイメージ。](images/f48ba1779eddee9872f167453c24e5c9.png)
 
 デバイス検出では、Microsoft Defender for Endpoint オンボード デバイスをネットワーク データ ソースとして活用して、オンボードされていないデバイスにアクティビティを属性付けします。 つまり、Microsoft Defender for Endpoint オンボード デバイスがオンボードされていないデバイスと通信した場合、オンボードされていないデバイス上のアクティビティは、タイムライン上および高度なハンティング DeviceNetworkEvents テーブルで確認できます。
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: グループのMicrosoft 365ポリシーについて説明します。
-ms.openlocfilehash: 831253a64ad30cf37370ec9e93e3f1d8172befc94705758e77367c3697c41686
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4617124801ed0400481bd81a453c6520a0c8d73a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53816660"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574486"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365有効期限ポリシー
 
@@ -54,7 +54,7 @@ ms.locfileid: "53816660"
 |役割|実行できる操作|
 |---------|---------|
 |Office 365管理者 (Azure、会社管理者)、ユーザー管理者|有効期限ポリシー設定を作成、読み取り、更新Microsoft 365削除します。|
-|User|自分が[所有するMicrosoft 365](/azure/active-directory/users-groups-roles/groups-restore-deleted)グループを更新または復元する|
+|ユーザー|自分が[所有するMicrosoft 365](/azure/active-directory/users-groups-roles/groups-restore-deleted)グループを更新または復元する|
 
 ## <a name="how-to-set-the-expiration-policy"></a>有効期限ポリシーを設定する方法
 
@@ -66,7 +66,7 @@ ms.locfileid: "53816660"
 
 すべてのグループにポリシーを設定するか、選択したグループ (最大 500) のみを設定するか、[なし] を選択して完全にオフ **にできます**。 現時点では、グループごとに異なるポリシーを設定することはできません。
 
-![グループの有効期限設定のスクリーンショット (Azure Active Directory](../media/azure-groups-expiration-settings.png)
+![[グループの有効期限の設定] のスクリーンショットをAzure Active Directory。](../media/azure-groups-expiration-settings.png)
 
 ## <a name="how-expiry-works-with-the-retention-policy"></a>保持ポリシーでの有効期限の動作
 
@@ -84,7 +84,7 @@ ms.locfileid: "53816660"
 
 使用する予定がないグループがあるが、そのコンテンツを保持する場合は、「アーカイブ グループ、チーム、[および Yammer」](end-life-cycle-groups-teams-sites-yammer.md)を参照して、さまざまなグループ サービスから情報をエクスポートする方法について確認してください。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [コラボレーション ガバナンス計画のステップ バイ ステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 985ce31ae9c88e6124e559ef200cfbecfc7ab8de63b63244f399b7c0c96c30f2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 94bbcac31a3dd533ee589496989e60b739ca3b3f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53866012"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575014"
 ---
 # <a name="create-tag-groups"></a>タグ グループの作成
 
@@ -41,7 +41,7 @@ ms.locfileid: "53866012"
 
 1.  [追加 **] セクションをクリックします**。
 
-    ![タグ グループの追加](../media/ED-addtagsection.png)
+    ![タグ グループの追加。](../media/ED-addtagsection.png)
 
     保存するとプレビュー画面が更新され、タグ管理画面を閉じて作業セットに戻らなくてもタグ パネルをプレビューできます。
 
@@ -49,7 +49,7 @@ ms.locfileid: "53866012"
 
 3. そのグループ内にタグを作成するには、新しいタグ グループの省略記号をクリックして、その新しいセクションにタグを作成します。
     
-    ![タグ グループでのタグの作成](../media/ED-createtag.png)
+    ![タグ グループにタグを作成する。](../media/ED-createtag.png)
 
    - **オプション タグを** 使用すると、ユーザーはタグのグループから 1 つのタグを選択できます。
    
@@ -59,5 +59,5 @@ ms.locfileid: "53866012"
 
 タグをネストするには、タグの横にある省略記号をクリックし、追加する新しいタグを選択します。
 
-![タグの入れ子](../media/ED-tagnesting.png)
+![タグの入れ子。](../media/ED-tagnesting.png)
 

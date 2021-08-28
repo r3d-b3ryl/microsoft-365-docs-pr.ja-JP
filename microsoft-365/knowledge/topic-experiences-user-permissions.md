@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: トピックのアクセス許可を管理する方法については、Microsoft Viva トピック。
-ms.openlocfilehash: 2d7720f3e3c3272ba8ec3088fbd417d4977a2f4b7494ce4dfc9e2934f017f2b0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9a391d3a51d5ed7a8b4e17f4f310600284c87f54
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863965"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570739"
 ---
 # <a name="manage-topic-permissions-in-microsoft-viva-topics"></a>トピックのアクセス許可を管理Microsoft Viva トピック
 
@@ -31,11 +31,11 @@ ms.locfileid: "53863965"
 1. [組織] Microsoft 365 管理センター、[組織の **設定]****の順にクリックします**。
 2. [サービス] **タブで** 、[トピック エクスペリエンス] **をクリックします**。
 
-    ![Connectを知る](../media/admin-org-knowledge-options-completed.png) 
+    ![Connect人に知識を提供します。](../media/admin-org-knowledge-options-completed.png) 
 
 3. [トピックの **アクセス許可] タブを選択** します。各設定の詳細については、以下のセクションを参照してください。
 
-    ![ナレッジ ネットワーク設定](../media/knowledge-network-settings-topic-permissions.png) 
+    ![ナレッジ ネットワーク設定。](../media/knowledge-network-settings-topic-permissions.png) 
 
 ## <a name="change-who-has-permissions-to-update-topic-details"></a>トピックの詳細を更新するアクセス許可を持つユーザーを変更する
 
@@ -47,7 +47,7 @@ ms.locfileid: "53863965"
     - **選択したユーザーまたはセキュリティ グループのみ**
     - **だれも**
 
-    ![トピックの作成と編集を行う](../media/k-manage-who-can-create-and-edit.png)  
+    ![トピックを作成および編集します。](../media/k-manage-who-can-create-and-edit.png)  
 
 3. **[保存]** を選択します。
 
@@ -58,7 +58,7 @@ ms.locfileid: "53863965"
     - **組織内のすべてのユーザー**
     - **選択したユーザーまたはセキュリティ グループ**
 
-    ![トピックを管理する](../media/k-manage-who-can-manage-topics.png)  
+    ![トピックを管理します。](../media/k-manage-who-can-manage-topics.png)  
 
 3. **[保存]** を選択します。
 

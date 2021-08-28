@@ -7,12 +7,12 @@ author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 manager: raynew
-ms.openlocfilehash: 45cc01103a578f84d49bb293ff8801aae3b4c216
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.openlocfilehash: 7da746ade0e4ec684b97a61524abd5ab1e83c114
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360695"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570475"
 ---
 # <a name="microsoft-defender-for-identity-directory-services-account-in-microsoft-365-defender"></a>Microsoft Defender for Identity Directory Services アカウント (Microsoft 365 Defender
 
@@ -36,15 +36,15 @@ ms.locfileid: "58360695"
 
 1. [ **ディレクトリ サービス アカウント] を選択します**。 どのドメインに関連付けられているアカウントが表示されます。
 
-    ![ディレクトリ サービス アカウント](../../media/defender-identity/directory-service-accounts.png)
+    ![ディレクトリ サービス アカウント。](../../media/defender-identity/directory-service-accounts.png)
 
 1. アカウントを選択すると、そのアカウントの設定でウィンドウが開きます。
 
-    ![アカウント設定](../../media/defender-identity/account-settings.png)
+    ![アカウント設定。](../../media/defender-identity/account-settings.png)
 
 1. 新しい Directory Services アカウントを追加するには、[新しいアカウントの作成]**を選択し**、[アカウント名] 、[ドメイン]、および [**パスワード**] を **入力します**。 グループ管理サービス アカウント (gMSA) の場合と、単一ラベル ドメインに属している場合も **選択できます**。
 
-    ![新しいディレクトリ サービス アカウント](../../media/defender-identity/new-directory-service-account.png)
+    ![新しいディレクトリ サービス アカウント。](../../media/defender-identity/new-directory-service-account.png)
 
 1. **[保存]** を選択します。
 

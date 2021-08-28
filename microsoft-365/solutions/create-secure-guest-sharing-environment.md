@@ -18,12 +18,12 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: セキュリティで保護されたゲスト共有環境を Microsoft 365 で作成するための使用可能なオプションについては、こちらを参照してください。ゲスト アクセスによって共同作業を改善します。
-ms.openlocfilehash: 37db4eaaf6c6cd8c6c173d52f68c23c16cfb1f3c7cccfc1eb35e610f679dff9d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1986140e2aa809e81415a8e581ce626c5100809d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53777833"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575434"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>セキュリティで保護されたゲスト共有環境を作成する
 
@@ -81,7 +81,7 @@ Azure AD の利用規約を作成するには
 2. [[利用規約]](https://aka.ms/catou) に移動します。
 3. **[新しい利用規約]** をクリックします。
 
-   ![Azure AD の新しい利用規約設定のスクリーンショット](../media/azure-ad-guest-terms-of-use.png)
+   ![Azure AD の新しい利用規約設定のスクリーンショット。](../media/azure-ad-guest-terms-of-use.png)
 
 4. **名前** と **表示名** を入力します。
 6. **[利用規約のドキュメント]** には、作成した PDF ファイルを参照して選択します。
@@ -132,11 +132,11 @@ Azure AD のアクセス レビューを使用すると、さまざまなチー�
 9. 開始日と期間を選択します。
 10. **[終了]** で、**[しない]** を選択し、**[次へ: 設定]** をクリックします。
 
-    ![Azure AD のアクセス レビュー タブのスクリーンショット](../media/azure-ad-create-access-review.png)
+    ![Azure AD のアクセス レビュー タブのスクリーンショット。](../media/azure-ad-create-access-review.png)
 
 11. **[設定]** タブで、ビジネス ルールに準拠しているかどうかの設定を確認します。
 
-    ![Azure AD のアクセス レビュー設定タブのスクリーンショット](../media/azure-ad-create-access-review-settings.png)
+    ![Azure AD のアクセス レビュー設定タブのスクリーンショット。](../media/azure-ad-create-access-review-settings.png)
 
 12. **[次へ: 確認 + 作成]** をクリックします。
 13. **レビュー名** を入力し、設定を確認します。
@@ -170,7 +170,7 @@ Microsoft 365 グループとTeamsの場合は、Azure AD の条件付きアク�
 10. **[条件]** ブレードで、**[クライアント アプリ]** をクリックします。
 11. **[クライアント アプリ]** ブレードで、**[構成する]** の **[はい]** をクリックし、**[モバイル アプリとデスクトップ クライアント]** と **[Exchange ActiveSyncクライアント]**、および **その他のクライアント** 設定を選択します。 **ブラウザー** チェックボックスをオフにします。
 
-    ![Azure AD の条件付きアクセス クライアント アプリ設定のスクリーンショット](../media/azure-ad-conditional-access-client-mobile.png)
+    ![Azure AD の条件付きアクセス クライアント アプリ設定のスクリーンショット。](../media/azure-ad-conditional-access-client-mobile.png)
 
 12. **[完了]** をクリックします。
 13. **[アクセス制御]** で、**[許可]** をクリックします。
@@ -276,7 +276,7 @@ DLP ルールを作成するには
 10. [ **アクション** ] で、[ **アクションの追加**] をクリックし [ **アクセスを制限する、またはMicrosoft 365のロケーションでコンテンツを暗号化する**] を選択します。
 11. **Microsoft 365 の保存場所でのコンテンツのアクセスを制限する、またはコンテンツを暗号化する** チェックボックスをオンにしてから、[ **組織外のユーザーにのみ**] オプションを選びます。
 
-      ![DLP ルールのアクションオプションのスクリーンショット](../media/dlp-remove-guest-access-sensitive-files.png)
+      ![DLP ルールのアクションオプションのスクリーンショット。](../media/dlp-remove-guest-access-sensitive-files.png)
 
 12. **[保存]** をクリックし、**[次へ]** をクリックします。
 13. テスト オプションを選択し、**[次へ]** をクリックします。

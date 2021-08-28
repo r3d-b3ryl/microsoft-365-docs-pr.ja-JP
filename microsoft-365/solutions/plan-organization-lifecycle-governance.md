@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: グループ内のコラボレーション ツールのライフサイクル ガバナンス オプションに関するMicrosoft 365
-ms.openlocfilehash: d49fb6cfe9f181a7e79c9984aa54deb0cf2f3a8e4008512132c980ce1623ea59
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5421f12109fb40e4e5cc6f68568a3b5f1873c7ce
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827712"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574462"
 ---
 # <a name="plan-organization-and-lifecycle-governance-for-microsoft-365-groups-and-microsoft-teams"></a>グループとグループの組織とライフサイクルのガバナンスMicrosoft 365計画Microsoft Teams
 
@@ -33,7 +33,7 @@ Microsoft 365グループには、組織が必要とするガバナンス機能�
 
 グループは、エンド ユーザーが複数のエンド ポイント (Outlook、SharePoint、Teamsなど) から作成できます。
 
-![画像の説明](../media/04.png)
+![image desc.](../media/04.png)
 
 グループの所有者に権限を与え、ユーザーが作業を簡単に行えるのを助けるために、セルフサービスを強くお勧めします。 グループとチームの作成を制限すると、サービスが機能するために多Microsoft 365グループを作成する必要が生じ、ユーザーの生産性が低下する可能性があります。
 
@@ -76,7 +76,7 @@ Microsoft 365グループには、組織が必要とするガバナンス機能�
 
 有効期限ポリシーは、使用されなくなったグループを確実に削除することで、グループのスプロールを制限する優れた方法です。 グループ有効期限ポリシーを作成する場合は、「グループ有効期限ポリシー Microsoft 365[を参照してください](microsoft-365-groups-expiration-policy.md)。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [コラボレーション ガバナンス計画のステップ バイ ステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 

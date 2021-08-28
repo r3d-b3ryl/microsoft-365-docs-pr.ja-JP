@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 64f2339f6e533237a3aca77fda1a8da439ff6f59
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: bb0633145ab1a1ac97e77b7b319e8defeb06e309
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257226"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570439"
 ---
 # <a name="evaluate-and-pilot-microsoft-365-defender"></a>評価とパイロットMicrosoft 365 Defender
 
@@ -47,7 +47,7 @@ Microsoft 365 Defenderは、クラウドベースの統合型、侵害前およ�
 
 この図では、攻撃が進行中です。 フィッシングメールは、組織内の従業員の受信トレイに届き、知らず知らずのうちにメールの添付ファイルを開きます。 これによりマルウェアがインストールされ、機密データの盗難で終わる可能性のある一部のイベントが発生します。 ただし、この場合、Defender for Office 365操作中です。
 
-![一Microsoft 365 Defenderを停止する方法](../../media/defender/m365-defender-eval-threat-chain.png)
+![脅威Microsoft 365 Defenderチェーンを停止する方法。](../../media/defender/m365-defender-eval-threat-chain.png)
 
 この図について:
 
@@ -75,7 +75,7 @@ Microsoft 365 Defenderは、これらのセキュリティ テクノロジで構
 
 次の図は、主要なコンポーネントと統合Microsoft 365 Defenderアーキテクチャを示しています。 *各 Defender* コンポーネントの詳細なアーキテクチャ、および使用例のシナリオについては、この一連の記事で説明します。
 
-![Microsoft 365 Defenderのアーキテクチャ](../../media/defender/m365-defender-eval-architecture.png)
+![Microsoft 365 Defenderアーキテクチャを使用します。](../../media/defender/m365-defender-eval-architecture.png)
 
 この図では、次の例を示します。
 
@@ -94,7 +94,7 @@ Microsoft 365 Defenderは、これらのセキュリティ テクノロジで構
 
 次に示す順序で、Microsoft 365コンポーネントを有効にしてください。
 
-![Microsoft 365 Defender評価プロセスの説明](../../media/defender/m365-defender-eval-process.png)
+![Microsoft 365 Defender評価プロセスを提供します。](../../media/defender/m365-defender-eval-process.png)
 
 次の表に、この図を示します。
 

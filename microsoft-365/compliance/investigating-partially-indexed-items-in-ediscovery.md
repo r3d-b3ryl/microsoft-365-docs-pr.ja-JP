@@ -18,12 +18,12 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: 部分的にインデックスが作成されたアイテム (インデックスのないアイテムとも呼ばれる) を、Exchange、SharePoint、OneDrive for Businessから管理する方法について学習します。
-ms.openlocfilehash: 173ff913e9e355e9032e83d5c197a4ced9865257
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: f578b5ba4b89338c5d6ef861b20d42c4aebbb3b2
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507270"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574173"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>電子情報開示で部分的にインデックス付きアイテムを調査する
 
@@ -51,7 +51,7 @@ ms.locfileid: "58507270"
 
 部分的にインデックスが作成されたアイテムに対する組織の露出を理解するために、(空白のキーワード クエリを使用して) すべてのメールボックス内のすべてのコンテンツの検索を実行できます。 次の例では、1,629,904 (146.46 GB) の完全インデックス付きアイテムと 10,025 (10.27 GB) の部分的なインデックス付きアイテムがあります。
   
-![部分的にインデックス付きアイテムを表示する検索統計の例](../media/PartiallyIndexedItemsTest.png)
+![部分的にインデックス付きアイテムを表示する検索統計の例。](../media/PartiallyIndexedItemsTest.png)
   
 次の計算を使用して、部分的にインデックス付けされたアイテムの割合を決定できます。
   
@@ -75,7 +75,7 @@ ms.locfileid: "58507270"
 
 部分的にアイテムを調べて、関連する情報が含まれているのを検証する必要がある場合は、部分的に[](export-a-content-search-report.md)インデックス付けされたアイテムに関する情報を含むコンテンツ検索レポートをエクスポートできます。 コンテンツ検索レポートをエクスポートする場合は、部分的にインデックス付けされたアイテムを含むエクスポート オプションのいずれかを選択してください。
   
-![2 番目または 3 番目のオプションを選択して、部分的にインデックス付きアイテムをエクスポートする](../media/PartiallyIndexedItemsExportOptions.png)
+![2 番目または 3 番目のオプションを選択して、部分的にインデックス付きアイテムをエクスポートします。](../media/PartiallyIndexedItemsExportOptions.png)
   
 これらのオプションのいずれかを使用して電子情報開示検索結果または検索レポートをエクスポートする場合、エクスポートには Unindexed という名前のレポートが含Items.csv。 このレポートには、ファイルファイルと同じ情報のほとんどがResultsLog.csvされます。ただし、Unindexed Items.csv ファイルには、部分的にインデックス付けされたアイテムに関連する 2 つのフィールド ( **エラー** タグとエラー プロパティ) も **含まれています**。 これらのフィールドには、部分的にインデックスが作成された各アイテムのインデックスエラーに関する情報が含まれています。 これら 2 つのフィールドの情報を使用すると、特定のインデックスエラーが調査に影響を与えるかどうかを判断するのに役立ちます。 その場合は、対象の検索を実行し、特定の電子メール メッセージと SharePoint または OneDrive ドキュメントを取得およびエクスポートして、調査に関連するかどうかを確認できます。 詳細な手順については、「ターゲット検索用に[CSV](csv-file-for-an-id-list-content-search.md)ファイルを準備する」を参照Office 365。
 
@@ -164,7 +164,7 @@ ms.locfileid: "58507270"
      }
    ```
 
-2. [セキュリティ/コンプライアンス センターの PowerShell に接続する](/powershell/exchange/exchange-online-powershell)。
+2. [セキュリティ/コンプライアンス センター PowerShell に接続します](/powershell/exchange/exchange-online-powershell)。
 
 3. [セキュリティ & コンプライアンス センター PowerShell] で、手順 1 でスクリプトを保存したフォルダーに移動し、スクリプトを実行します。例えば：
 
@@ -174,7 +174,7 @@ ms.locfileid: "58507270"
 
 スクリプトから返される出力の例を次に示します。
   
-![部分的にインデックスが作成された電子メール アイテムへの組織の露出に関するレポートを生成するスクリプトからの出力の例](../media/aeab5943-c15d-431a-bdb2-82f135abc2f3.png)
+![部分的にインデックスが作成された電子メール アイテムに対する組織の露出に関するレポートを生成するスクリプトからの出力の例。](../media/aeab5943-c15d-431a-bdb2-82f135abc2f3.png)
 
 > [!NOTE]
 > 以下の点に注意してください。

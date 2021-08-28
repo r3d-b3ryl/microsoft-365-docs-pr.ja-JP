@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーを使用して、ユーザーがメール、ドキュメント、および会話で生成するコンテンツを効率的に制御します。 必要なものを保持し、不要なものを取り除きます。
-ms.openlocfilehash: 3053740119c09b56b6fa01434d79fe9cd31d826e
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 5ada5a4e4c7bd65ef0be6f273548bebba6e342ea
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256706"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574329"
 ---
 # <a name="create-and-configure-retention-policies"></a>アイテム保持ポリシーを作成して構成する
 
@@ -232,7 +232,7 @@ Microsoft 365 グループ (以前の Office 365 グループ) のコンテン�
 
 他の場所とは異なり、Skype の場所の状態を切り替えて、すべてのユーザーを自動的に含めることはできません。 代わりに、その場所を有効にするときは、**[編集]** オプションを選択して、会話を保持したいユーザーを手動で選択する必要があります。
 
-![アイテム保持ポリシーの Skype の場所を編集する](../media/skype-location-retention-policies.png)
+![アイテム保持ポリシーの Skype の場所を編集する。](../media/skype-location-retention-policies.png)
 
 この **[編集]** オプションを選択した後、**[Skype for Business]** ウィンドウで、**[名前]** 列の前にある非表示のボックスを選択することで、すべてのユーザーをすばやく含めることができます。 ただし、各ユーザーはポリシーの特定のインクルージョンとしてカウントされることを理解することが重要です。 したがって、このボックスを選択して 1,000 人のユーザーを含める場合、含める 1,000 人のユーザーを手動で選択した場合と同じです。これは、Skype for Business でサポートされる最大数です。
 
@@ -270,7 +270,7 @@ Microsoft 365 グループ (以前の Office 365 グループ) のコンテン�
 
 保持期間の終了時にコンテンツを完全に削除するかどうかを選択します。
 
-![[アイテム保持設定] ページ](../media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
+![[アイテム保持設定] ページ。](../media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
 
 ### <a name="deleting-content-thats-older-than-a-specific-age"></a>特定の経過時間を超えた古いコンテンツを削除する
 

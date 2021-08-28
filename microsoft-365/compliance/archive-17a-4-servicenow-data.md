@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 17a-4 ServiceNow DataParser コネクタをセットアップして使用して、ServiceNow データをインポートおよびアーカイブする方法についてMicrosoft 365。
-ms.openlocfilehash: c642c434d3a0c3897ffd450cfbd1d8cb11d300b77bd325e5f76cfbb9b5702e6d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e2727a0146d5519310a9707e0d59a7560984305f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53808781"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574402"
 ---
 # <a name="set-up-a-connector-to-archive-data-from-servicenow"></a>ServiceNow からデータをアーカイブするコネクタをセットアップする
 
@@ -29,7 +29,7 @@ ServiceNow データをユーザー メールボックスに格納した後、�
 
 次の概要では、データ コネクタを使用して ServiceNow データをアーカイブするプロセスについて説明Microsoft 365。
 
-![17a-4 からの ServiceNow データのアーカイブ ワークフロー](../media/ServiceNowDataParserConnectorWorkflow.png)
+![17a-4 の ServiceNow データのアーカイブ ワークフロー。](../media/ServiceNowDataParserConnectorWorkflow.png)
 
 1. 組織は 17a-4 を使用して ServiceNow DataParser をセットアップおよび構成します。
 

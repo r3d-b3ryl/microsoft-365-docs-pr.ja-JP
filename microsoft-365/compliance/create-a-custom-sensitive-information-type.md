@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: セキュリティ コンプライアンス センターで DLP のカスタム機密情報の種類を作成、変更、削除、およびテストする&説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9b0a1a081f0eaad8be9b3afefc65f10c79eb5264cf5ce300dd454ccad6cf37fc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f1fcb52d99f939d686ac423c80caa0fe00cec24c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53900167"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574822"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>カスタムの機密情報の種類を使用する前に
 
@@ -143,7 +143,7 @@ Sum = digit 1 * Weight 1 + digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * w
 > [!NOTE]
 > チェック桁がチェックサム計算の一部ではない場合は、チェック桁の重みとして 0 を使用します。 たとえば、上記の場合、チェック桁を使用してチェック桁を計算しない場合、重み 8 は 0 に等しくなります。  Modulo_operation)。
 
-![構成済みのチェックサム検証ツールのスクリーンショット](../media/checksum-validator.png)
+![構成済みのチェックサム検証ツールのスクリーンショット。](../media/checksum-validator.png)
 
 ### <a name="date-validator"></a>日付検証
 
@@ -158,7 +158,7 @@ Sum = digit 1 * Weight 1 + digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * w
 2. 次に、日付検証機能を追加します。
 3. 日付形式と開始オフセットを選択します。 日付文字列は最初の 6 桁の数字で、オフセットは `0` .
 
-![構成済みの日付検証ツールのスクリーンショット](../media/date-validator.png)
+![構成済みの日付検証ツールのスクリーンショット。](../media/date-validator.png)
 
 ### <a name="functional-processors-as-validators"></a>バリデーターとしての機能プロセッサ
 

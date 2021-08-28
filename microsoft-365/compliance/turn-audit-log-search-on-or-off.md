@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 ms.custom: seo-marvel-apr2020
 description: 管理者が監査ログを検索する機能を有効または無効にするには、Microsoft 365 コンプライアンス センターの監査ログ検索機能を有効または無効にする方法を示します。
-ms.openlocfilehash: d0d6937a8a4f8f6fd6a8a6e6e3873f2ad8f51b56431268d3108d7808dba8467b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 793c76d45f2cd7aed43a959dfcb94edeb9869310
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53841243"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575326"
 ---
 # <a name="turn-auditing-on-or-off"></a>監査のオンとオフを切り替える
 
@@ -67,7 +67,7 @@ Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
 
    組織の監査が有効ではない場合は、ユーザーと管理アクティビティの記録を開始するように求めるバナーが表示されます。
 
-   ![[監査] ページのバナー](../media/AuditingBanner.png)
+   ![[監査] ページのバナー。](../media/AuditingBanner.png)
 
 3. [ユーザーと **管理アクティビティの記録を開始する] バナーをクリック** します。
 

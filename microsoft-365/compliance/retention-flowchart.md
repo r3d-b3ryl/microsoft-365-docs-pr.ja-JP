@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: フローチャートを使用して、アイテムに複数のアイテム保持ポリシーがある場合、または保持ラベルとアイテム保持ポリシーがある場合の結果を判断する
-ms.openlocfilehash: d41f213c003da1b6a1fdacd464d052446e63845e
-ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
+ms.openlocfilehash: 45d67b3df71dc3be17bd545be77ce99afdff56b3
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58372666"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567654"
 ---
 # <a name="flowchart-to-determine-when-an-item-will-be-retained-or-permanently-deleted"></a>アイテムが保持または完全に削除されるタイミングを決定するフローチャート
 
@@ -40,7 +40,7 @@ ms.locfileid: "58372666"
 このフローチャートで使用される用語の一部が不明な場合は、「[アイテム保持ポリシーと保持ラベルの詳細](retention.md)」を参照してください。
 
 
-   ![アイテムが保持または完全に削除されるタイミングを決定するフローチャート](../media/retention-flowchart.svg)
+   ![アイテムが保持または完全に削除されるタイミングを決定するフローチャート。](../media/retention-flowchart.svg)
 
 > [!NOTE]
 > アイテムの最長保持期間と、アイテム保持ポリシーまたは保持ラベルで指定された最長の期間を区別することが重要です。 アイテムの最短の有効期限とアイテム保持ポリシーで指定した最短の期間についても同様です。

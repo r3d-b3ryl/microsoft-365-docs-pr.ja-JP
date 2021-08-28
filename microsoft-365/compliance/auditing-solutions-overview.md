@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Microsoft 365 組織内のユーザーや管理者のアクティビティを監査する方法をご紹介します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6a099ab2241e1e2a4705fd54760a48cb3f95b421
-ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
+ms.openlocfilehash: f89303e22432f2e3297bec01912710daf21d7379
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58387010"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570595"
 ---
 # <a name="auditing-solutions-in-microsoft-365"></a>Microsoft 365 での監査ソリューション
 
@@ -34,7 +34,7 @@ Microsoft 365 監査ソリューションは、セキュリティ イベント�
 
 Microsoft 365 には、基本的な監査と高度な監査の 2 つの監査ソリューションが用意されています。
 
-![基本的な監査と高度な監査の主な機能](..\media\AuditingSolutionsComparison.png)
+![基本的な監査と高度な監査の主な機能。](..\media\AuditingSolutionsComparison.png)
 
 ### <a name="basic-audit"></a>基本的な監査
 
@@ -44,7 +44,7 @@ Microsoft 365 には、基本的な監査と高度な監査の 2 つの監査ソ
 - **検索可能な数千件の監査イベント**。 組織内のほとんどの Microsoft 365 のサービスで発生する、幅広く監査されるアクティビティを検索することができます。 検索可能なアクティビティの一部のリストについては、「[監査されるアクティビティ](search-the-audit-log-in-security-and-compliance.md#audited-activities)」を参照してください。 監査活動をサポートするサービスや機能のリストについては、「[監査ログ記録タイプ](/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype)」を参照してください。
 - **Microsoft 365 コンプライアンス センターの監査ログ検索ツール**。 Microsoft 365 コンプライアンス センターで監査ログ検索ツールを使用して監査記録を検索します。 特定のアクティビティ、特定のユーザーが行ったアクティビティ、日付の範囲内で発生したアクティビティを検索できます。 こちらは、コンプライアンス センターの監査検索ツールのスクリーンショットです。
 
-   ![Microsoft 365 コンプライアンス センターの監査ログ検索ツール](../media/AuditLogSearchToolMCC.png)
+   ![Microsoft 365 コンプライアンス センターの監査ログ検索ツール。](../media/AuditLogSearchToolMCC.png)
 
 - **Search-UnifiedAuditLog コマンドレット**。 Exchange Online PowerShell の **Search-UnifiedAuditLog** コマンドレット (検索ツールの基礎となるコマンドレット) を使用して、監査イベントを検索したり、スクリプトで使用したりすることができます。 詳細については、以下を参照してください。
 
@@ -77,14 +77,14 @@ Microsoft 365 には、基本的な監査と高度な監査の 2 つの監査ソ
 
 |機能|基本的な監査|高度な監査|
 |:------|:-------------|:-------------|
-|既定で有効|![サポート](../media/check-mark.png)|![サポート](../media/check-mark.png)|
-|検索可能な数千件の監査イベント|![サポート](../media/check-mark.png)|![サポート](../media/check-mark.png)|
-|Microsoft 365 コンプライアンス センターの監査検索ツール|![サポート](../media/check-mark.png)|![サポート](../media/check-mark.png)|
-|Search-UnifiedAuditLog コマンドレット|![サポート](../media/check-mark.png)|![サポート](../media/check-mark.png)|
-|監査記録を CSV ファイルにエクスポートします|![サポート](../media/check-mark.png)|![サポート](../media/check-mark.png)|
-|Office 365 マネージメント アクティビティ API <sup>1</sup> を介した監査ログにアクセスする|![サポート](../media/check-mark.png)|![サポート対象](../media/check-mark.png)</sup>|
-|90 日間の監査ログの保持|![サポート](../media/check-mark.png)|![サポート](../media/check-mark.png)|
-|1 年間の監査ログの保持||![サポート](../media/check-mark.png)|
+|既定で有効|![サポートされています。](../media/check-mark.png)|![サポートされています。](../media/check-mark.png)|
+|検索可能な数千件の監査イベント|![サポートされています。](../media/check-mark.png)|![サポートされています。](../media/check-mark.png)|
+|Microsoft 365 コンプライアンス センターの監査検索ツール|![サポートされています。](../media/check-mark.png)|![サポートされています。](../media/check-mark.png)|
+|Search-UnifiedAuditLog コマンドレット|![サポートされています。](../media/check-mark.png)|![サポートされています。](../media/check-mark.png)|
+|監査記録を CSV ファイルにエクスポートします|![サポートされています。](../media/check-mark.png)|![サポートされています。](../media/check-mark.png)|
+|Office 365 マネージメント アクティビティ API <sup>1</sup> を介した監査ログにアクセスする|![サポート対象です。](../media/check-mark.png)|![サポート対象です。](../media/check-mark.png)</sup>|
+|90 日間の監査ログの保持|![サポートされています。](../media/check-mark.png)|![サポートされています。](../media/check-mark.png)|
+|1 年間の監査ログの保持||![サポート対象です。](../media/check-mark.png)|
 |10 年間の監査ログの保持 <sup>2</sup>||![サポート](../media/check-mark.png)|
 |監査ログの保持ポリシー||![サポート](../media/check-mark.png)|
 |価値の高い、重要なイベント||![サポート](../media/check-mark.png)|
@@ -131,7 +131,7 @@ Microsoft 365 の監査ソリューションの使用を開始するには、以
 
 最初の手順は、基本的な監査を設定し、監査ログ検索を開始します。
 
-![高度な監査を設定するためのワークフロー](../media/BasicAuditingWorkflow.png)
+![高度な監査を設定するためのワークフロー。](../media/BasicAuditingWorkflow.png)
 
 1. 基本的な監査をサポートするサブスクリプションと、必要に応じて高度な監査をサポートするサブスクリプションが組織にあることを確認します。
 
@@ -145,7 +145,7 @@ Microsoft 365 の監査ソリューションの使用を開始するには、以
 
 高度な監査をサポートするサブスクリプションがある場合は、以下の手順で高度な監査の追加機能を設定し、使用することができます。
 
-![高度な監査を設定するためのワークフロー](../media/AdvancedAuditWorkflow.png)
+![高度な監査を設定するためのワークフロー。](../media/AdvancedAuditWorkflow.png)
 
 1. ユーザーの高度な監査を設定します。 この手順は、次のタスクで構成されています。
 

@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: この記事には、Microsoft 365 コンプライアンス センターのコンテンツ検索電子情報開示ツールに関する参照情報が含まれており、コンテンツ検索に関する多くの詳細情報を知ることができます。
-ms.openlocfilehash: e3c764dd1fb79906061b9b9b4c1408d83c8dbe0c
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: f6c720973f91ae9a202b232d821c33c7f487b76a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502077"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574450"
 ---
 # <a name="feature-reference-for-content-search"></a>コンテンツ検索の機能のリファレンス
 
@@ -55,11 +55,11 @@ ms.locfileid: "58502077"
 
 - キーワード リストを使用してクエリを作成したら、検索クエリが意図したものであることを確認することをお勧めします。詳細ウィンドウの **[クエリ]** の下に表示される検索クエリでは、キーワードは **(c:s)** というテキストで区切られます。これは、キーワードが **OR** 演算子と機能的に同様の論理演算子で接続されていることを示します。同様に、検索クエリに条件が含まれている場合、キーワードと条件は **(c:c)** というテキストで区切られます。これは、キーワードが **AND** 演算子と機能的に同様の論理演算子で条件に接続されていることを示します。キーワード リストと条件を使用した場合の結果として (詳細ウィンドウに) 表示される検索クエリの例を以下に示します。
 
-    ![キーワード リストと条件を使用して作成するクエリの例](../media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
+    ![キーワード リストと条件を使用するときに作成されるクエリの例。](../media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
 
 - コンテンツ検索を実行すると、Microsoft 365 はサポートされていない文字と、大文字にできないブール演算子を検索クエリで自動的にチェックします。 サポートされていない文字は非表示になっていることがよくあり、通常、検索エラーを発生させたり、意図しない結果を返したりする原因になります。 確認されているサポートされていない文字の詳細については、「[[コンテンツ検索] クエリでエラーを確認する](check-your-content-search-query-for-errors.md)」を参照してください。
 
-- 英語以外の文字 (中国語の文字など) のキーワードを含む検索クエリがある場合は、[**クエリ言語-国/地域**] ![コンテンツ検索のクエリ言語-国/地域アイコン](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png)をクリックし、言語-国の文化コード値を選択して検索できます。 デフォルトの言語/地域はニュートラルです。 コンテンツ検索の言語設定を変更する必要があるかどうかをどのように確認できますか。 特定のコンテンツの場所に検索対象の英語以外の文字が含まれているにも関わらず検索で結果が返されない場合は、言語設定が原因である可能性があります。
+- 英語以外の文字 (中国語文字など) のキーワードを含む検索クエリがある場合は、**[コンテンツ検索] で [クエリ言語-国/地域]** ![[クエリ言語-国/地域] アイコンをクリックします。](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) そして、検索の言語と国のカルチャ コードの値を選択します。 デフォルトの言語/地域はニュートラルです。 コンテンツ検索の言語設定を変更する必要があるかどうかをどのように確認できますか。 特定のコンテンツの場所に検索対象の英語以外の文字が含まれているにも関わらず検索で結果が返されない場合は、言語設定が原因である可能性があります。
 
 ## <a name="partially-indexed-items"></a>部分的にインデックスが作成されたアイテム
 
@@ -133,7 +133,7 @@ Microsoft Teams と Microsoft 365 グループのコンテンツを検索する�
 
   検索結果では、会議の概要は "**種類**" フィールドで [**会議**] として識別されます。通話の概要は [**通話**] として識別されます。 また、Teams チャネルと 1xN チャットに含まれる会話は、"**種類**" フィールドで [**IM**] として識別されます。
 
-  ![Teams の会議、通話および 1xN チャットは "種類" フィールドで識別されます。](../media/O365-ContentSearch-Teams-MessageKind.png)
+  ![Teams の会議、通話および 1 対 N チャットは "種類" フィールドで識別されます。](../media/O365-ContentSearch-Teams-MessageKind.png)
 
    詳細については、[Microsoft Teams が開始した通話と会議の電子情報開示](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-teams-launches-ediscovery-for-calling-and-meetings/ba-p/210947)を参照してください。
 
@@ -160,7 +160,7 @@ Microsoft Teams と Microsoft 365 グループのコンテンツを検索する�
 
   - キーワード検索クエリの一部として **Kind** プロパティを使用するには、検索クエリの **[キーワード]** ボックスに `kind:microsoftteams` と入力します。
 
-    ![[キーワード] ボックスで kind:microsoftteams を使用する](../media/O365-ContentSearch-Teams-Keywords.png)
+    ![[キーワード] ボックスで kind:microsoftteams を使用します。](../media/O365-ContentSearch-Teams-Keywords.png)
 
   - 検索条件を使用するには、**[メッセージの種類]** 条件を追加し、値 `microsoftteams` を使用します。
 
@@ -181,15 +181,15 @@ Microsoft Teams と Microsoft 365 グループのコンテンツを検索する�
 
     たとえば、次の検索クエリを使用して、Yammer のメッセージと Yammer の称賛アイテムを取得できます。
 
-    ![ItemClass プロパティを使用して、Yammer アイテムを検索する](../media/YammerContentSearch1.png)
+    ![ItemClass プロパティを使用して、Yammer アイテムを検索します。](../media/YammerContentSearch1.png)
 
   - または、**[タイプ]** メール条件を使用し、**[Yammer メッセージ]** を選択して、Yammer アイテムを返すこともできます。 たとえば、次の検索クエリでは、"社外秘" キーワードを含むすべての Yammer の会話アイテムが返されます。
 
-    ![[タイプ] 条件カードを使用して Yammer の会話アイテムを検索する](../media/YammerContentSearch2.png)
+    ![[タイプ] 条件カードを使用して Yammer の会話アイテムを検索します。](../media/YammerContentSearch2.png)
 
 ## <a name="searching-inactive-mailboxes"></a>非アクティブなメールボックスの検索
 
-コンテンツ検索で非アクティブなメールボックスを検索できます。 組織内の非アクティブなメールボックスのリストを取得するには、Exchange Online PowerShell でコマンド `Get-Mailbox -InactiveMailboxOnly` を実行します。 または、Microsoft 365 コンプライアンス センターの [**情報ガバナンス**] \> [**保持**] に移動して、[**詳細**] ![ナビゲーション バーの省略記号](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> [**非アクティブなメールボックス**] をクリックすることもできます。
+コンテンツ検索で非アクティブなメールボックスを検索できます。 組織内の非アクティブなメールボックスのリストを取得するには、Exchange Online PowerShell でコマンド `Get-Mailbox -InactiveMailboxOnly` を実行します。 または、セキュリティ/コンプライアンス センターの **[情報ガバナンス]** \> **[保持]** に移動して、**[詳細]** ![[ナビゲーション バーの省略記号]](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) をクリックします。 \> **非アクティブなメールボックス**
 
 非アクティブなメールボックスを検索するときの留意点を以下に示します。
 

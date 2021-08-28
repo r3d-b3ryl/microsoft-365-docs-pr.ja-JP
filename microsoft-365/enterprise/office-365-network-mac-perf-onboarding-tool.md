@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365接続テスト ツール
-ms.openlocfilehash: f143cf8f9cd838bafa8e21ac258d0fcc09f3221d738f14013ee81e09e9dbdc1c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 60817f54586fd23270edc4e67be8b41a994bf50c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53840991"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570967"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool"></a>Microsoft 365接続テスト ツール
 
@@ -29,7 +29,7 @@ ms.locfileid: "53840991"
 > すべてのテスト レポートが管理者と共有され、サインイン中にテナントにアップロードされる場合は、Microsoft 365 テナントにサインインすることが重要です。
 
 > [!div class="mx-imgBorder"]
-> ![接続テスト ツール](../media/m365-mac-perf/m365-mac-perf-test-tool-page.png)
+> ![接続テスト ツール。](../media/m365-mac-perf/m365-mac-perf-test-tool-page.png)
 
 >[!NOTE]
 >ネットワーク接続テスト ツールは、WW Commercial および Germany のテナントをサポートしますが、モデレート、GCC、GCC、中国ではサポートされません。
@@ -60,7 +60,7 @@ Microsoft 365 管理 センターのネットワーク分析情報は、Microsof
 Web ブラウザーのテストが完了した後、Web サイトから高度なクライアント テスト アプリケーションをダウンロードするように求めるメッセージが表示されます。 プロンプトが表示されたら、ファイルを開いて実行します。
 
 > [!div class="mx-imgBorder"]
-> ![高度なテスト クライアント アプリケーション](../media/m365-mac-perf/m365-mac-perf-open-run-file.png)
+> ![高度なテスト クライアント アプリケーション。](../media/m365-mac-perf/m365-mac-perf-open-run-file.png)
 
 ### <a name="start-the-advanced-tests-client-application"></a>高度なテスト クライアント アプリケーションを開始する
 
@@ -87,26 +87,26 @@ Web ブラウザーのテストが完了した後、Web サイトから高度な
 レポートを共有するユーザーを選択できます。 選択できる状態は既定で有効になっていますが、管理者が無効にできます。
 
 > [!div class="mx-imgBorder"]
-> ![テスト結果へのリンクをユーザーと共有する](../media/m365-mac-perf/m365-mac-perf-share-to-user.png)
+> ![テスト結果へのリンクをユーザーと共有する。](../media/m365-mac-perf/m365-mac-perf-share-to-user.png)
 
 ### <a name="sharing-with-anyone-using-a-reportid-link"></a>ReportID リンクを使用しているユーザーとの共有
 
 ReportID リンクへのアクセスを提供することで、テスト レポートを誰とでも共有できます。 このリンクは、サインインせずにテスト レポートを表示できるよう、誰かに送信できる URL を生成します。 この共有は既定で無効になっているので、管理者が有効にする必要があります。
 
 > [!div class="mx-imgBorder"]
-> ![テスト結果へのリンクを共有する](../media/m365-mac-perf/m365-mac-perf-share-link.png)
+> ![テスト結果へのリンクを共有する。](../media/m365-mac-perf/m365-mac-perf-share-link.png)
 
 ## <a name="network-connectivity-test-results"></a>ネットワーク接続テストの結果
 
 結果は、[概要] タブ **と [詳細] タブ****に表示** されます。 [概要] タブには、検出されたネットワーク境界のマップと、近くの他のユーザーとのネットワーク評価Office 365表示されます。 また、テスト レポートの共有も可能です。 概要結果ビューの外観を次に示します。
 
 > [!div class="mx-imgBorder"]
-> ![ネットワーク接続テスト ツールの概要結果](../media/m365-mac-perf/m365-mac-perf-summary-page.png)
+> ![ネットワーク接続テスト ツールの概要結果。](../media/m365-mac-perf/m365-mac-perf-summary-page.png)
 
 ツールに表示される詳細タブ出力の例を次に示します。 [詳細] タブに、結果がしきい値と良好に比較された場合、緑色の円のチェック マークが表示されます。 結果がネットワークインサイトを示すしきい値を超えた場合、赤い三角形の感嘆符が表示されます。 次のセクションでは、各詳細タブの結果行について説明し、ネットワークインサイトに使用されるしきい値について説明します。
 
 > [!div class="mx-imgBorder"]
-> ![ネットワーク接続テスト ツールのテスト結果の例](../media/m365-mac-perf/m365-mac-perf-all-details.png)
+> ![ネットワーク接続テスト ツールのテスト結果の例。](../media/m365-mac-perf/m365-mac-perf-all-details.png)
 
 ### <a name="your-location-information"></a>位置情報
 
@@ -241,14 +241,14 @@ Microsoft によって提供されていない SSL 証明書が見つかった�
 サインインすると、実行した以前のレポートを確認できます。 共有したり、リストから削除したりできます。
 
 > [!div class="mx-imgBorder"]
-> ![レポート](../media/m365-mac-perf/m365-mac-perf-reports-list.png)
+> ![レポート。](../media/m365-mac-perf/m365-mac-perf-reports-list.png)
 
 ## <a name="network-health-status"></a>ネットワーク正常性の状態
 
 これは、Microsoft のグローバル ネットワークに関する重大な正常性の問題を示し、お客様のMicrosoft 365可能性があります。
 
 > [!div class="mx-imgBorder"]
-> ![ネットワーク正常性の状態](../media/m365-mac-perf/m365-mac-perf-status-page.png)
+> ![ネットワークの正常性状態。](../media/m365-mac-perf/m365-mac-perf-status-page.png)
 
 ## <a name="faq"></a>よくあるご質問 (FAQ)
 
@@ -277,7 +277,7 @@ Microsoft 365サービス フロント ドアは、Microsoft のグローバル 
 
 インターネット出力場所は、ネットワーク トラフィックがエンタープライズ ネットワークから出てインターネットに接続する場所です。 これは、ネットワーク アドレス変換 (NAT) デバイスを持ち、通常はインターネット サービス プロバイダー (ISP) に接続する場所として識別されます。 場所とインターネットの出力場所との距離が長い場合は、WAN バックホールが重要な場合があります。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [Microsoft 365 管理 センターのネットワーク接続 (プレビュー)](office-365-network-mac-perf-overview.md)
 

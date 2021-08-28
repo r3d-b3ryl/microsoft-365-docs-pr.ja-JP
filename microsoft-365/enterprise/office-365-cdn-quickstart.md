@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - SPO160
 description: Office 365 Content Delivery Network (CDN) クイック スタート
-ms.openlocfilehash: b005c670bce80d84e7d1762eb2d8b2fc57bc7b55d0f5da9e7de13ec144742169
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 30c5d301af6e4ca20646c46cc63cde38f2b28aed
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53870304"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570535"
 ---
 # <a name="office-365-content-delivery-network-cdn-quickstart"></a>Office 365 Content Delivery Network (CDN) クイック スタート
 
@@ -43,7 +43,7 @@ SharePoint ツール ブラウザー拡張機能の **ページ** 診断を使�
 
 SharePoint Online ページで [SharePoint のページ診断] ツールを実行すると、[診断テスト] タブをクリックして、CDN でホストされていないアセットの一覧を表示できます。 これらのアセットは、下のスクリーンショットに示すようにContent Delivery Network **(CDN)** チェックの下に表示されます。
 
-![ページ診断](../media/page-diagnostics-for-spo/pagediag-results-general.PNG)
+![ページ診断。](../media/page-diagnostics-for-spo/pagediag-results-general.PNG)
 
 >[!NOTE]
 >ページ診断ツールは SharePoint Online でのみ機能し、SharePoint システム ページでは使用できません。
@@ -78,7 +78,7 @@ Set-SPOTenantCdnEnabled -CdnType Both -Enable $true
 
 これらのコマンドレットの出力は、次のようになります。
 
-![データの出力Set-SPOTenantCdnEnabled](../media/O365-CDN/o365-cdn-enable-output.png)
+![Set-SPOTenantCdnEnabled の出力。](../media/O365-CDN/o365-cdn-enable-output.png)
 
 ## <a name="see-also"></a>関連項目
 

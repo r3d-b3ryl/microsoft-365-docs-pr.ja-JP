@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、Veritas Zoom Meetings からデータをインポートおよびアーカイブするコネクタを設定して、Microsoft 365。 これにより、Microsoft 365 のサード パーティデータ ソースからデータをアーカイブし、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティ データを管理できます。
-ms.openlocfilehash: b3c420c3dc117c8b0c8502ec0c9b7943ce8492a825f928cc49c33080c7af7438
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1ee2ede9005f502523a3b298248b0bf1fb1716d6
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53852002"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570883"
 ---
 # <a name="set-up-a-connector-to-archive-zoom-meetings-data"></a>ズーム 会議データをアーカイブするコネクタをセットアップする
 
@@ -29,7 +29,7 @@ Zoom Meetings データをユーザー メールボックスに格納した後�
 
 次の概要では、コネクタを使用してズーム 会議のデータをアーカイブするプロセスについて説明Microsoft 365。
 
-![会議のアーカイブ ワークフローのズーム](../media/ZoomMeetingsConnectorWorkflow.png)
+![会議のアーカイブ ワークフローをズームします。](../media/ZoomMeetingsConnectorWorkflow.png)
 
 1. 組織は、ズーム会議を使用して、ズーム会議サイトを設定および構成します。
 

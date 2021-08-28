@@ -16,12 +16,12 @@ search.appverid: MET150
 f1.keywords:
 - NOCSH
 description: この記事では、グローバル テナントの中国ユーザー向けにネットワーク パフォーマンスを最適化Microsoft 365します。
-ms.openlocfilehash: 36ae5bf08cfb529c7c6a23b5b3c1a8e17c73f412a0de196296b14226d5ec88a8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 06be7db700114db6111ff7f3c4a8d70e0c3f2243
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864324"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570199"
 ---
 # <a name="microsoft-365-global-tenant-performance-optimization-for-china-users"></a>Microsoft 365ユーザー向けグローバル テナントパフォーマンスの最適化
 
@@ -32,7 +32,7 @@ ms.locfileid: "53864324"
 
 中国の ISP は、国境を越えたネットワークの混雑が高レベルになりやすい境界デバイスを経由するグローバルパブリック インターネットへのオフショア接続を規制しています。 この輻輳により、中国に入り出るすべてのインターネット トラフィックに対してパケット損失と遅延が発生します。
 
-![Microsoft 365トラフィック - 最適化されていない](../media/O365-networking/China-O365-unoptimized.png)
+![Microsoft 365トラフィック - 最適化されていない。](../media/O365-networking/China-O365-unoptimized.png)
 
 パケット損失と待機時間は、ネットワーク サービスのパフォーマンス、特に大規模なデータ交換が必要なサービス (大きなファイル転送など) や、ほぼリアルタイムのパフォーマンス (オーディオおよびビデオ アプリケーション) を必要とするサービスに有害です。
 
@@ -54,7 +54,7 @@ ms.locfileid: "53864324"
 
 トラフィックを選択的にルーティングする方法については、「Microsoft 365エンドポイントの管理[」Office 365 を参照してください](managing-office-365-endpoints.md)。 すべての世界規模の URL と IP Office 365の一覧については、「Office 365 IP アドレスの範囲」[を参照してください](urls-and-ip-address-ranges.md)。
 
-![Microsoft 365トラフィック - 最適化](../media/O365-networking/China-O365-optimized.png)
+![Microsoft 365トラフィック - 最適化されています。](../media/O365-networking/China-O365-optimized.png)
 
 ## <a name="user-best-practices"></a>ユーザーのベスト プラクティス
 
@@ -102,7 +102,7 @@ ms.locfileid: "53864324"
 
 Microsoft は、ネットワーク アーキテクチャと特性のMicrosoft 365可能な範囲を超えるクライアントのユーザー エクスペリエンスとパフォーマンスの向上に継続的に取り組み続け中です。 [ネットワーク[Office 365] Communityに](https://techcommunity.microsoft.com/t5/office-365-networking/bd-p/Office365Networking)アクセスして、会話を開始または参加し、リソースを検索し、機能の要求と提案を送信します。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [Microsoft 365 のネットワーク計画とパフォーマンス チューニング](./network-planning-and-performance.md)
 

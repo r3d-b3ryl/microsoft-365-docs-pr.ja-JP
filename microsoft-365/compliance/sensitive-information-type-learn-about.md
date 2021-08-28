@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: この記事では、機密情報の種類の概要と、機密情報 (社会保障、クレジット カード、銀行口座番号など) を検出して機密情報を識別する方法について説明します。
-ms.openlocfilehash: ac293eea8b81125b124265d2546d562393a81f8f
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.openlocfilehash: 6c2f54900c3e08531a57501ff6eda8b2ccc14911
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58684006"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574774"
 ---
 # <a name="learn-about-sensitive-information-types"></a>機密情報の種類に関する詳細情報
 
@@ -65,7 +65,7 @@ ms.locfileid: "58684006"
 ### <a name="example-sensitive-information-type"></a>機密情報の種類の例
 
 
-#### <a name="argentina-national-identity-dni-number"></a>アルゼンチンの国民 ID (DNI) 番号
+## <a name="argentina-national-identity-dni-number"></a>アルゼンチンの国民 ID (DNI) 番号
 
 ### <a name="format"></a>フォーマット
 

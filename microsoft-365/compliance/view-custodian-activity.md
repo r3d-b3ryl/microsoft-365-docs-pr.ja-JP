@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: ケース内Advanced eDiscovery管理ツールを使用して、アクティビティに簡単にアクセスして検索します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 43ec73c87efaad51711879e0574d03f571675523
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 4069b4ee61f15cfbe8f0f7f74cb42e9790f0106a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507832"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570775"
 ---
 # <a name="view-custodian-audit-activity"></a>カストディアンの監査アクティビティを表示する
 
@@ -45,19 +45,19 @@ ms.locfileid: "58507832"
 
     [保管担当者のアクティビティ] 検索ページが表示されます。 前の手順で選択したカストディアンが [カストディアン] ドロップダウン **ボックスに表示** されます。 ドロップダウン ボックスで別の保管担当者を選択できますが、一度に検索できるアクティビティは 1 人の保管担当者のみです。
 
-    ![カストディアンアクティビティの検索ページ](../media/AeDCustodianActivities1.png)
+    ![カストディアン アクティビティの検索ページ。](../media/AeDCustodianActivities1.png)
    
 4. 次の検索条件を設定します。
       
    1. **[アクティビティ** ] - ドロップダウン リストをクリックして、検索できるアクティビティを表示します。 検索の実行後、選択したアクティビティの監査ログ エントリのみが表示されます。 [すべてのアクティビティ **の結果を表示する** ] を選択すると、他の検索条件に一致する保管担当者が実行したすべてのアクティビティの結果が表示されます。
 
-      ![アクティビティの一覧](../media/CustodianActivityAudit.PNG)
+      ![アクティビティの一覧。](../media/CustodianActivityAudit.PNG)
       
    1. **開始日と終了日** - 日付と時刻の範囲を選択して、その期間に発生したイベントを表示します。 既定では、最後の 7 日間が選択されています。 日付と時間は、協定世界時 (UTC) 形式で指定します。 指定できる最大日付範囲は 1 年です。
       
    1. **カストディアン** - このボックスをクリックし、検索結果を表示する特定の保管担当者を選択します。 このボックスで選択したユーザーが実行した選択したアクティビティの監査レコードが、結果の一覧に表示されます。
       
-5. 上 ![[検索] ボタン](../media/SearchButton.PNG)  をクリックして、検索条件を使用して検索を実行します。 検索結果が読み込まれ、しばらくすると、[保管者のアクティビティ] 検索ページの [結果] に表示されます。 
+5. 上 ![[検索] ボタン。](../media/SearchButton.PNG)  をクリックして、検索条件を使用して検索を実行します。 検索結果が読み込まれ、しばらくすると、[保管者のアクティビティ] 検索ページの [結果] に表示されます。 
 
 ## <a name="step-2-view-the-audit-log-search-results"></a>手順 2: 監査ログの検索結果を表示する
 

@@ -13,15 +13,15 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Priority
 description: エネルギー業界がデータとシステムをセキュリティで保護し、規制を遵守しつつ、最新のコラボレーション プラットフォームに移行する際に Microsoft 365 がお役に立ちます。
 ms.custom: seo-marvel-jun2020
-ms.openlocfilehash: 3bf38814593a08de7889ab2e870ca5fecc9165e6be75ce2175358151df38ff5e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a9e104516b203d81ef69058b2d31d4b4c97df39e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53798703"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570379"
 ---
 # <a name="key-compliance-and-security-considerations-for-the-energy-industry"></a>エネルギー業界のための、コンプライアンスとセキュリティの重要な検討事項
-![クラウドを使用するさまざまな業界のグローバル ビューの描写](../media/solution-arch-center/MSC17_global_016.png)
+![クラウドを使用するさまざまな業界のグローバル ビューの描写。](../media/solution-arch-center/MSC17_global_016.png)
 ## <a name="introduction"></a>はじめに
 エネルギー業界は、人々が日々依存している燃料と重要なインフラストラクチャを社会に提供しています。 基幹系統に関連するインフラストラクチャの信頼性を確保するために、規制当局はエネルギー業界組織に厳格な基準を課しています。 これらの規制基準は、電力の生成と伝送だけでなく、エネルギー企業の日常業務に不可欠なデータと通信にも関連しています。 
 

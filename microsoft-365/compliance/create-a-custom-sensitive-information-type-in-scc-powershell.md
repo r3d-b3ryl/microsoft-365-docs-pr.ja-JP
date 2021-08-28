@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コンプライアンス センターでポリシーのカスタムの機密情報の種類を作成してインポートする方法について説明します。
-ms.openlocfilehash: 043b3b25fb311de162e3e3299413d21036e7090d1c8bf60df1229952df53bb35
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 41f36354fa94da9cae8e7794dca778c1bfe8ac2e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53851684"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570295"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>PowerShell を使用してカスタムの機密情報の種類を作成する
 
@@ -139,7 +139,7 @@ ms.locfileid: "53851684"
 
 ここでは、最もシンプルなシナリオについて説明します。この例では、組織の従業員 ID を含むコンテンツを特定するポリシーが必要です。ID の書式は 9 桁の数値です。この場合のパターンは、9 桁の数値を識別するルールに含まれる正規表現を示します。9 桁の数値を含むすべてのコンテンツはこのパターンを満たします。
   
-![パターンが 1 つのエンティティの図](../media/4cc82dcf-068f-43ff-99b2-bac3892e9819.png)
+![1 つのパターンを持つエンティティの図。](../media/4cc82dcf-068f-43ff-99b2-bac3892e9819.png)
   
 このパターンはシンプルですが、従業員 ID ではない可能性がある 9 桁の数値を含むコンテンツと一致するため、誤検知が多数特定される可能性があります。
   
@@ -149,7 +149,7 @@ ms.locfileid: "53851684"
   
 たとえば、従業員 ID を含むコンテンツを特定する可能性を高めるために、9 桁の数値に加え、雇用日も特定する別のパターンを定義することができます。雇用日とキーワード ("従業員 ID" など) の両方を特定する別のパターンを定義することもできます。
   
-![パターンが複数あるエンティティの図](../media/c8dc2c9d-00c6-4ebc-889a-53b41a90024a.png)
+![複数のパターンを持つエンティティの図。](../media/c8dc2c9d-00c6-4ebc-889a-53b41a90024a.png)
   
 この構造の重要な側面について一部を説明します。
   
@@ -167,7 +167,7 @@ ms.locfileid: "53851684"
 2. カスタムのエンティティ名 (この例では従業員 ID) を含むコメントを追加します。後で、ローカライズされた文字列セクションにこのエンティティ名を追加します。この名前は、ポリシーを作成するときに UI に表示されます。
 3. エンティティの GUID を生成します。 GUID を生成する方法は複数ありますが、PowerShell で「**[guid]::NewGuid()**」と入力して簡単に作成できます。 また、後でローカライズされた文字列セクションにこのエンティティ GUID を追加します。
   
-![Rules および Entity 要素を示す XML マークアップ](../media/c46c0209-0947-44e0-ac3a-8fd5209a81aa.png)
+![ルールと Entity 要素を示す XML マークアップ。](../media/c46c0209-0947-44e0-ac3a-8fd5209a81aa.png)
   
 ## <a name="what-pattern-do-you-want-to-match-pattern-element-idmatch-element-regex-element"></a>マッチングするパターン [Pattern 要素、IdMatch 要素、Regex 要素]
 
@@ -175,11 +175,11 @@ ms.locfileid: "53851684"
   
 以下のすべてのパターンで共通している点は、すべてが同じ正規表現を参照していることです。この正規表現では、空白 (\s) … (\s) で囲まれた 9 桁の数値 (\d{9}) を検索しています。この正規表現は IdMatch 要素から参照されます。また、この正規表現は従業員 ID エンティティを検索するすべてのパターンに共通する要件です。IdMatch は、パターンがマッチングしようとしている識別子 (従業員 ID、クレジット カード番号、社会保障番号など) です。1 つの Pattern 要素には、1 つの IdMatch 要素のみがあります。
   
-![単一の Regex 要素を参照する複数の Pattern 要素を示す XML マークアップ](../media/8f3f497b-3b8b-4bad-9c6a-d9abf0520854.png)
+![単一の Regex 要素を参照する複数の Pattern 要素を示す XML マークアップ。](../media/8f3f497b-3b8b-4bad-9c6a-d9abf0520854.png)
   
 パターンを満たす場合は、数と信頼度が返され、ポリシーの条件に使用できます。機密情報の種類を検出する条件をポリシーに追加する場合、次のように数と信頼度を編集できます。信頼度 (一致精度とも呼ばれます) については、このトピックで後述します。
   
-![インスタンス数と一致精度オプション](../media/sit-confidence-level.png)
+![インスタンス数と一致精度のオプション。](../media/sit-confidence-level.png)
   
 正規表現を作成するときは、潜在的な問題があることに注意してください。たとえば、特定されるコンテンツ数が多すぎる正規表現を作成し、アップロードすると、パフォーマンスに影響する可能性があります。このような潜在的な問題の詳細については、後述の「[注意する必要がある潜在的な検証の問題](#potential-validation-issues-to-be-aware-of)」を参照してください。
   
@@ -191,7 +191,7 @@ ms.locfileid: "53851684"
   
 省略可能な minCount 属性を使用して、各 Match 要素で検出する必要のある一致のインスタンス数を指定できます。たとえば、キーワード一覧の少なくとも 2 つのキーワードが検出された場合にのみ、パターンを満たすものと指定することができます。
   
-![minOccurs 属性を持つ Match 要素を示す XML マークアップ](../media/607f6b5e-2c7d-43a5-a131-a649f122e15a.png)
+![minOccurs 属性を持つ Match 要素を示す XML マークアップ。](../media/607f6b5e-2c7d-43a5-a131-a649f122e15a.png)
   
 ### <a name="keywords-keyword-group-and-term-elements-matchstyle-and-casesensitive-attributes"></a>キーワード [Keyword 要素、Group 要素、Term 要素、matchStyle 属性、caseSensitive 属性]
 
@@ -205,7 +205,7 @@ ms.locfileid: "53851684"
     
 最後に、Term 要素の caseSensitive 属性を使用して、大文字と小文字を含め、コンテンツがキーワードと完全に一致する必要があることを指定できます。
   
-![キーワードを参照する Match 要素を示す XML マークアップ](../media/e729ba27-dec6-46f4-9242-584c6c12fd85.png)
+![キーワードを参照する Match 要素を示す XML マークアップ。](../media/e729ba27-dec6-46f4-9242-584c6c12fd85.png)
   
 ### <a name="regular-expressions-regex-element"></a>正規表現 [Regex 要素]
 
@@ -219,7 +219,7 @@ ms.locfileid: "53851684"
   
 詳細は、「[DLP 関数で探索する内容](what-the-dlp-functions-look-for.md)」を参照してください。
   
-![組み込み関数を参照する Match 要素を示す XML マークアップ](../media/dac6eae3-9c52-4537-b984-f9f127cc9c33.png)
+![組み込み関数を参照する Match 要素を示す XML マークアップ。](../media/dac6eae3-9c52-4537-b984-f9f127cc9c33.png)
   
 ## <a name="different-combinations-of-evidence-any-element-minmatches-and-maxmatches-attributes"></a>証拠のさまざまな組み合わせ [Any 要素、minMatches 属性、maxMatches 属性]
 
@@ -281,15 +281,15 @@ Any 要素には省略可能な minMatches 属性と maxMatches 属性があり�
 
 機密情報の種類で従業員 ID を表すパターンを検索していて、そのパターンの一部として、"ID" などのキーワードのような補強証拠も検索する場合があります。この証拠が互いに近くにあるほど、パターンが実際の従業員 ID になる可能性が高くなります。パターン内の他の証拠とエンティティの近接度を判断するには、Entity 要素の必須の patternsProximity 属性を使用します。
   
-![patternsProximity 属性を示す XML マークアップ](../media/e97eb7dc-b897-4e11-9325-91c742d9839b.png)
+![patternsProximity 属性を示す XML マークアップ。](../media/e97eb7dc-b897-4e11-9325-91c742d9839b.png)
   
 エンティティ内の各パターンに対し、そのパターンに対して指定されたすべての他の一致について、patternsProximity 属性値で IdMatch の場所からの距離 (Unicode 文字) を定義します。近接ウィンドウは、IdMatch の場所によってアンカーされ、IdMatch の左側と右側にウィンドウが展開されます。
   
-![近接ウィンドウの図](../media/b593dfd1-5eef-4d79-8726-a28923f7c31e.png)
+![近接ウィンドウの図。](../media/b593dfd1-5eef-4d79-8726-a28923f7c31e.png)
   
 以下の例は、従業員 ID のカスタム エンティティの IdMatch 要素で、キーワードまたは日付の少なくとも 1 つの補完的な一致を必要とするパターン マッチングに対して、近接ウィンドウがどのように影響するかを示しています。ID2 と ID3 の場合、近接ウィンドウ内に補強証拠がまったくないか、部分的にしかないため、ID1 のみが一致します。
   
-![補強証拠と近接ウィンドウの図](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
+![腐食証拠と近接ウィンドウの図。](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
   
 メールの場合、メッセージ本文と各添付ファイルは、別のアイテムとして扱われる点に注意してください。つまり、近接ウィンドウは、これらの各アイテムの終端を超えて延長されないということです。各アイテム (添付ファイルまたは本文) に、idMatch と補強証拠の両方が存在している必要があります。
   
@@ -299,7 +299,7 @@ Any 要素には省略可能な minMatches 属性と maxMatches 属性があり�
   
 Pattern 要素には必須の confidenceLevel 属性があります。confidenceLevel の値 (1 から 100 の整数) は、エンティティに含まれる各パターンの一意の ID と考えることができます。エンティティのパターンには、異なる信頼度を割り当てる必要があります。この整数を細かく指定することにあまり大きな意味はありません。社内のコンプライアンス チームにとって意味のある数値を選択してください。カスタムの機密情報の種類をアップロードし、ポリシーを作成したら、作成するルールの条件でその信頼度を参照できます。
   
-![confidenceLevel 属性にさまざまな値を持つ Pattern 要素を示す XML マークアップ](../media/sit-xml-markedup-2.png)
+![confidenceLevel 属性の異なる値を持つ Pattern 要素を示す XML マークアップ。](../media/sit-xml-markedup-2.png)
   
 Entity には各パターン の confidenceLevel に加え、 recommendedConfidence 属性があります。 recommendedConfidence 属性は、ルールの既定の信頼度と考えることができます。 ポリシーでルールを作成するときに、使用するルールの信頼度を指定しない場合、そのエンティティの推奨される信頼度に基づいてルールのマッチングが行われます。 ルールパッケージ内で各エンティティ ID に recommendedConfidence 属性が必須であることに注意してください。存在しない場合、機密情報の種類を使用するポリシーを保存できません。 
   
@@ -307,11 +307,11 @@ Entity には各パターン の confidenceLevel に加え、 recommendedConfide
 
 コンプライアンス チームが Microsoft 365 コンプライアンス センターを使用して異なるロケールと異なる言語でポリシーを作成する場合、カスタムの機密情報の種類の名前と説明について、ローカライズされたバージョンを提供することができます。コンプライアンス チームがサポートしている言語で Microsoft 365 を使用すると、ローカライズされた名前が UI に表示されます。
   
-![インスタンス数と一致精度オプション](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
+![インスタンス数と一致精度のオプション。](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
   
 Rules 要素には、LocalizedStrings 要素を含める必要があります。LocalizedStrings 要素には、カスタム エンティティの GUID を参照する Resource 要素が含まれています。また、各 Resource 要素には、1 つまたは複数の Name 要素と Description 要素が含まれており、それぞれが langcode 属性を使用して特定の言語のローカライズされた文字列を提供します。
   
-![LocalizedStrings 要素の内容を示す XML マークアップ](../media/a96fc34a-b93d-498f-8b92-285b16a7bbe6.png)
+![LocalizedStrings 要素の内容を示す XML マークアップ。](../media/a96fc34a-b93d-498f-8b92-285b16a7bbe6.png)
   
 ローカライズされた文字列は、カスタムの機密情報の種類がコンプライアンス センターの UI でどのように表示されるかを指定するためにのみ使用できることに注意してください。ローカライズされた文字列を使用して、キーワード リストまたは正規表現の異なるローカライズ バージョンを提供することはできません。
   
@@ -347,7 +347,7 @@ Version 要素も重要です。ルール パッケージを初めてアップ�
 
 完了すると、RulePack 要素は次のようになります。
   
-![RulePack 要素を示す XML マークアップ](../media/fd0f31a7-c3ee-43cd-a71b-6a3813b21155.png)
+![RulePack 要素を示す XML マークアップ。](../media/fd0f31a7-c3ee-43cd-a71b-6a3813b21155.png)
 
 ## <a name="validators"></a>検証ツール
 

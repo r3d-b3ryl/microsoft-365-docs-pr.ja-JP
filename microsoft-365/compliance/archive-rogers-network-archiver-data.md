@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、TeleMessage コネクタをセットアップして、ロジャース ネットワーク のデータをインポートおよびアーカイブMicrosoft 365。 これにより、Microsoft 365 のサード パーティデータ ソースからデータをアーカイブし、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティ データを管理できます。
-ms.openlocfilehash: 686b348d7d19c43ae8bb8938201d697da6222664
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: 19f92d5d8d241818588ef32ad7560b8e9a7e9239
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400165"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570643"
 ---
 # <a name="set-up-a-connector-to-archive-rogers-network-data"></a>ロジャース ネットワーク データをアーカイブするコネクタをセットアップする
 
@@ -29,7 +29,7 @@ ms.locfileid: "58400165"
 
 次の概要では、コネクタを使用して、ロジャースの SMS データと MMS データをアーカイブするプロセスMicrosoft 365。
 
-![ロジャーズ ネットワークのアーカイブ ワークフロー](../media/RogersNetworkConnectorWorkflow.png)
+![ロジャーズ ネットワークのアーカイブ ワークフロー。](../media/RogersNetworkConnectorWorkflow.png)
 
 1. 組織は TeleMessage と一緒にロジャーズ ネットワーク アーカイブ コネクタをセットアップします。 詳細については[、「TeleMessage Rogers Network Archiver for the TeleMessage Rogers Network Archiver](https://www.telemessage.com/microsoft-365-activation-for-the-rogers-network-archiver/)for Microsoft 365」 を参照してください。
 

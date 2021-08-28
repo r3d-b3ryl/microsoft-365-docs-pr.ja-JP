@@ -12,12 +12,12 @@ ms.assetid: ''
 description: 管理者は、セキュリティ & コンプライアンス センターのメール フロー ダッシュボードで、転送される新しいドメインを使用して、転送されたことがない外部ドメインにメッセージを転送するユーザーを調査する方法について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 98705d1f865886db91c8073188beaa0b3bc6b6da711839c0e43f6c81b1a7eae4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 87af41d4c6fe1964510944f0ad06554056ce4f37
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57002694"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570403"
 ---
 # <a name="new-domains-being-forwarded-email-insight-in-the-security--compliance-center"></a>セキュリティ コンプライアンス センターで電子メールの分析情報を転送&ドメイン
 
@@ -36,11 +36,11 @@ ms.locfileid: "57002694"
 
 この分析情報は、問題が検出された場合にのみ表示され、[転送レポート] ページ [に表示](view-mail-flow-reports.md#forwarding-report) されます。
 
-![新しいドメインにメールが転送されていますのインサイト](../../media/mfi-new-domains-being-forwarded.png)
+![電子メールの分析情報を転送する新しいドメイン。](../../media/mfi-new-domains-being-forwarded.png)
 
 ウィジェットをクリックすると、転送されたメッセージの詳細 (転送レポートへのリンクなど) を確認できるフライアウトが [表示されます](view-mail-flow-reports.md#forwarding-report)。
 
-![[転送される新しいドメイン] をクリックした後に表示される詳細フライアウト](../../media/mfi-new-domains-being-forwarded-details.png)
+![[転送中の新しいドメイン] をクリックした後に表示される詳細フライアウトメールの分析情報。](../../media/mfi-new-domains-being-forwarded-details.png)
 
 [レポート ダッシュボード] または [ おすすめ] 領域の[トップ インサイト] 領域で [すべて表示] をクリックした後で&を選択すると、**この詳細** ページに \> **アクセス** することもできます <https://protection.office.com/insightdashboard> 。
 

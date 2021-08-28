@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: このテスト ラボ ガイドを使用して、エンタープライズ向けシミュレーションエンタープライズ テストMicrosoft 365作成します。
-ms.openlocfilehash: c392e24b9bf3ef7c8c949ef00a6b661000156117
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: e3576c5d7e1a00069dd5dd46d1b1e6063da217bf
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354418"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575254"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>シミュレートされたエンタープライズ基本構成
 
@@ -34,7 +34,7 @@ ms.locfileid: "58354418"
 - Microsoft 365 E5 の試用版または有料サブスクリプション。
 - Azure 仮想ネットワーク上の 3 つの仮想マシン (DC1、APP1、および CLIENT1) で構成される、インターネットに接続された簡略化された組織イントラネット。
  
-![シミュレートされたエンタープライズ基本構成](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
+![シミュレートされたエンタープライズ ベース構成。](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
 
 簡略化されたテスト環境の作成には、次の 2 つのフェーズがあります。
 - [フェーズ 1: シミュレートされたイントラネットを作成する](#phase-1-create-a-simulated-intranet)
@@ -42,7 +42,7 @@ ms.locfileid: "58354418"
 
 結果の環境を使用して、追加のテスト ラボ ガイド[を](https://www.microsoft.com/microsoft-365/enterprise)使用して、Microsoft 365の機能を[](m365-enterprise-test-lab-guides.md)テストできます。
 
-![Microsoft クラウドのテスト ラボ ガイド](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Microsoft クラウドのテスト ラボ ガイド。](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
 > エンタープライズ テスト ラボ ガイド スタックの Microsoft 365 内のすべての記事への視覚的なマップについては、「Microsoft 365 テスト ラボ ガイド スタック」[を参照してください](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
@@ -69,7 +69,7 @@ ms.locfileid: "58354418"
 
 テンプレートが完了すると、構成は次のように表示されます。
 
-![Azure インフラストラクチャ サービスでのシミュレートされたイントラネット](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
+![Azure インフラストラクチャ サービスのシミュレートされたイントラネット。](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
 
 ### <a name="method-2-build-your-simulated-intranet-with-azure-powershell"></a>方法 2: Azure PowerShell を使用してシミュレートされたイントラネットを構築する
 
@@ -236,7 +236,7 @@ Set-NetFirewallRule -DisplayName "File and Printer Sharing (Echo Request - ICMPv
 
 現在の構成は次のように表示されます。
   
-![シミュレートされたエンタープライズ基本構成のステップ 1](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase1.png)
+![シミュレートされたエンタープライズ ベース構成の手順 1。](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase1.png)
   
 #### <a name="step-2-configure-app1"></a>ステップ 2: APP1 を構成する
 
@@ -291,7 +291,7 @@ New-SmbShare -name files -path c:\files -changeaccess TESTLAB\User1
 
 現在の構成は次のように表示されます。
   
-![シミュレートされたエンタープライズ基本構成のステップ 2](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase2.png)
+![シミュレートされたエンタープライズ ベース構成の手順 2。](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase2.png)
   
 #### <a name="step-3-configure-client1"></a>ステップ 3: CLIENT1 を構成する
 
@@ -355,7 +355,7 @@ CLIENT1 の再起動後に、TESTLAB\\User1 のアカウント名とパスワー
     
 現在の構成は次のように表示されます。
   
-![シミュレートされたエンタープライズ基本構成のステップ 3](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
+![シミュレートされたエンタープライズ ベース構成の手順 3。](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
 
 ## <a name="phase-2-create-your-microsoft-365-e5-subscription"></a>フェーズ 2: Microsoft 365 E5 サブスクリプションを作成する
 
@@ -398,7 +398,7 @@ Azure portal から、CORP\User1 アカウントを使用して CLIENT1 に接�
     
 最終的な構成は次のように表示されます。
   
-![シミュレートされたエンタープライズ基本構成のフェーズ 2](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
+![シミュレートされたエンタープライズ ベース構成のフェーズ 2。](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
   
 これで、エンタープライズ向けアプリケーションの追加機能をMicrosoft 365[準備ができました](https://www.microsoft.com/microsoft-365/enterprise)。
   

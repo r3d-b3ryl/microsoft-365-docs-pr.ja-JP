@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: キャンバスMicrosoft Teamsクラスを統合する
-ms.openlocfilehash: 09c0033f6deca5d941dee5003391b1a0b171a0ee
-ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
+ms.openlocfilehash: 44ba24e5c8bd7107f9cba199ce290c10b31e0806
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58387022"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575074"
 ---
 # <a name="use-microsoft-teams-classes-with-canvas"></a>Canvas でMicrosoft Teamsクラスを使用する
 
@@ -44,7 +44,7 @@ Instructure Canvas 内で Microsoft Teams 統合を管理する前に、Canvas �
 
 4. トグルMicrosoft Teamsして同期を有効にします。
    
-   ![Canvas Teams同期 更新された png](https://user-images.githubusercontent.com/87142492/128225881-abdfc52d-dc9e-48ad-aec5-f6617c6436f3.png)
+   ![Canvas Teams更新された png を同期します。](https://user-images.githubusercontent.com/87142492/128225881-abdfc52d-dc9e-48ad-aec5-f6617c6436f3.png)
 
 5. Microsoft テナント名、login 属性、ドメイン サフィックス、および AAD 参照属性を入力します。
 
@@ -57,7 +57,7 @@ Instructure Canvas 内で Microsoft Teams 統合を管理する前に、Canvas �
 
 7. Canvas の **Microsoft-Teams-Sync-for-Canvas** Azure アプリへのアクセスを承認するには、[テナント アクセスを **許可する] リンクを選択** します。 Microsoft Identity Platform Admin Consent Endpoint にリダイレクトされます。
 
-   ![アクセス許可](media/permissions.png)
+   ![アクセス許可。](media/permissions.png)
 
 8. **[同意する]** を選択します。
 
@@ -73,11 +73,11 @@ Canvas 管理者として、環境内に LTI Microsoft Teamsクラスを追加�
 
 2. [+**アプリ] を** 選択して、LTI Teamsを追加します。
 
-   ![外部アプリ](media/external-apps.png)
+   ![外部アプリ。](media/external-apps.png)
 
 3. 構成 **の種類として [クライアント ID 別** ] を選択します。
 
-   ![アプリの追加](media/add-app.png)
+   ![アプリを追加します。](media/add-app.png)
 
 4. 指定されたクライアント ID を入力し、[送信] を **選択します**。
 

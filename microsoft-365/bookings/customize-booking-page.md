@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 116d7a84-a7a0-4911-a1e9-debb2cca7c43
 description: Microsoft Bookings アプリで予約ページの色のテーマを変更します。
-ms.openlocfilehash: e1d5eeea44194ea0ad152c51fbf506f1c4e3cbd1e41f59621c76bd955f49dd6b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d1cd08d33d90424fa091f6dcce3a9878bb662dfe
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53896731"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570355"
 ---
 # <a name="customize-and-publish-your-booking-page"></a>予約ページをカスタマイズして公開する
 
@@ -32,7 +32,7 @@ ms.locfileid: "53896731"
 
     内部の予約ページは次のように表示されます。
 
-    :::image type="content" source="media/bookings-Self-Service_2.jpg" alt-text="予約ページ":::
+    :::image type="content" source="media/bookings-Self-Service_2.jpg" alt-text="[予約] ページ。":::
 
 - **予約ページのアクセス制御: 自分のMicrosoft 365アカウントを予約する必要がある** このオプションを選択すると、組織内のユーザーだけがページを表示したり、サービスを予約したりできます。 ページへのアクセスは、訪問者がテナント内のアカウントに属しているという資格情報のチェックによって承認されます。
 
@@ -50,7 +50,7 @@ ms.locfileid: "53896731"
 
 予約ページを発行すると、予約ページが表示されます。 予約ページに直面している顧客は次のように表示されます。
 
-:::image type="content" source="media/bookings-self-service.jpg" alt-text="顧客向け予約ページ":::
+:::image type="content" source="media/bookings-self-service.jpg" alt-text="顧客向け予約ページ。":::
 
 ## <a name="publish-the-booking-page"></a>予約ページを公開する
 

@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: ''
 description: ユーザーが多要素認証（MFA）およびその他の機能を使用して安全にサインインすることを要求します。
-ms.openlocfilehash: 2d8f2ba519bbeaaebf6ba8d0c7c91e7933b65457
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: f2ee7d21c5dee96e2cbd6beccdd816da26b6ea46
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58355978"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570991"
 ---
 # <a name="secure-user-sign-ins-to-your-microsoft-365-tenant"></a>Microsoft 365 テナントへのユーザー サインインの保護
 
@@ -50,7 +50,7 @@ Azure AD パスワード保護は、既知の脆弱なパスワードとその�
 
 MFA では、ユーザーのサインインは、ユーザー アカウントのパスワード以外に追加の検証を受ける必要があります。 悪意のあるユーザーがユーザー アカウントのパスワードを決定した場合でも、アクセスが許可される前にスマートフォンに送信されるテキスト メッセージなど、追加の検証に応答できる必要があります。
 
-![正しいパスワードと追加認証によりサインインが成功する](../media/empower-people-to-work-remotely/remote-workers-mfa.png)
+![正しいパスワードと追加認証によりサインインが成功します。](../media/empower-people-to-work-remotely/remote-workers-mfa.png)
 
 MFA を使用するための最初の手順は、***すべての管理者アカウント（特権アカウント）に MFA を要求する*** ことです。
 
@@ -126,7 +126,7 @@ ID とデバイスのアクセス ポリシーは、3つの層で使用するよ
 
 ## <a name="azure-ad-identity-protection"></a>Azure AD Identity Protection
 
-このセクションでは、資格情報が侵害されないように保護するポリシーを構成する方法を学習します。攻撃者は組織のクラウド サービスとデータにアクセスするため、ユーザーのアカウント名とパスワードを突き止めて、資格情報を侵害しようとします。 Azure AD Identity Protection は、攻撃者によるユーザー アカウントの資格情報の侵害を防ぐさまざまな方法を提供します。
+このセクションでは、資格情報を侵害から保護するポリシーを構成する方法を説明します。資格情報の侵害では、攻撃者がユーザーのアカウント名とパスワードを把握し、組織のクラウド サービスとデータにアクセスします。Azure AD Identity Protection には、攻撃者によるユーザー アカウントの侵害を防ぐための様々な方法が用意されています。
 
 Azure AD Identity Protection では次の作業を実行できます。
 

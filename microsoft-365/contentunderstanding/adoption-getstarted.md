@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: aec8eeeacb520c8ac035a099639e8f788c4cf1c96f8d42588cda8d992fb9d2f3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: edebf145a754d58e4650492eefa6d67276127afb
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795385"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574750"
 ---
 # <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Microsoft SharePoint Syntex導入: 使い始める
 
@@ -118,7 +118,7 @@ ms.locfileid: "53795385"
 
 アプリケーションを実装する準備をSharePoint Syntex、次の必要があります。
 
-![コンテンツ理解の準備](../media/content-understanding/cu-adoption-readinesschecklist.png)
+![コンテンツ理解の準備。](../media/content-understanding/cu-adoption-readinesschecklist.png)
 
 1. 終了状態を計画する
     - ドキュメント理解モデルは、最後ではなく手段です。

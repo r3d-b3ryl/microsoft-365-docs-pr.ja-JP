@@ -12,12 +12,12 @@ ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: 管理者は、セキュリティ コンプライアンス センターのメール フロー ダッシュボードで自動転送&できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e0c03321b1bdada7145a19d0d2147594eb039c716b61feebbf26c4becab286f3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 94700aa4fc08d0c462aa186a0f0847d73151a82a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56808218"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574570"
 ---
 # <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>セキュリティ コンプライアンス センターでのメッセージの自動転送&分析
 
@@ -30,7 +30,7 @@ ms.locfileid: "56808218"
 
 セキュリティ **&** コンプライアンス センターのメール [](mail-flow-insights-v2.md)フロー ダッシュボードの [](https://protection.office.com)自動転送メッセージインサイトには、組織から外部ドメインの受信者に自動的に転送されるメッセージに関する情報が表示されます。
 
-![セキュリティ コンプライアンス センターの自動転送&ウィジェット](../../media/mfi-auto-forwarded-messages.png)
+![セキュリティ コンプライアンス センターの自動転送&ウィジェット。](../../media/mfi-auto-forwarded-messages.png)
 
 ## <a name="auto-forwarded-messages-details"></a>自動転送されたメッセージの詳細
 
@@ -51,9 +51,9 @@ ms.locfileid: "56808218"
   - **新しいユーザー (先週)**
   - 詳細については、 [転送変更レポート](mfi-new-users-forwarding-email.md#forwarding-modifications-report) へのリンク。
 
-![セキュリティ コンプライアンス センターの自動転送メッセージ レポートの詳細&飛び出し](../../media/mfi-auto-forwarded-messages-details.png)
+![[セキュリティ] コンプライアンス センターの [自動転送されたメッセージ] レポートの詳細&表示されます。](../../media/mfi-auto-forwarded-messages-details.png)
 
-## <a name="insights"></a>分析情報
+## <a name="insights"></a>インサイト
 
 レポート データに基づいて 2 つの分析情報が生成されます。
 

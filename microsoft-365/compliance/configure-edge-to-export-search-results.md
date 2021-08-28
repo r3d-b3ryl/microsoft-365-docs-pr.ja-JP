@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: セキュリティとコンプライアンス センター ClickOnceコンテンツ検索と電子情報開示から検索結果をダウンロードするには、Microsoft Edge の最新バージョンを使用するサポートを有効にする必要があります。
-ms.openlocfilehash: ec241d36bc24d72e4c0ea3e30e622e42eb9546bfb4b548220e98a0d9ea1c0334
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bd42ebffce326e4abe4943ff4187fc2bd960ff65
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53830949"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574846"
 ---
 # <a name="use-the-ediscovery-export-tool-in-microsoft-edge"></a>[電子情報開示のエクスポート ツール] を使用Microsoft Edge
 
@@ -38,21 +38,21 @@ ms.locfileid: "53830949"
 
 **注:** 組織では、グループ ポリシーを使用して、サポートClickOnce無効にできます。 サポートに関する組織ポリシーがClickOnce、次の **edge://policy。** 次のスクリーンショットは、組織ClickOnceで有効になっているデータを示しています。 このポリシー値が false に **設定されている** 場合は、組織内の管理者に連絡する必要があります。
 
-![エッジ組織ポリシーの一覧](../media/ClickOnceimage3.png)
+![エッジ組織ポリシーの一覧。](../media/ClickOnceimage3.png)
 
 ## <a name="install-and-run-the-ediscovery-export-tool"></a>電子情報開示エクスポート ツールのインストールと実行
 
 1. コンテンツ **検索または電子** 情報開示ケースのエクスポートのフライアウト ページで、[結果のダウンロード] をクリックします。
 
-   ![[フライアウト] ページの [結果のダウンロード] をクリックして検索結果をダウンロードする](../media/ClickOnceExport1.png)
+   ![[検索結果のダウンロード] をクリックして検索結果をダウンロードします。](../media/ClickOnceExport1.png)
 
 2. ツールを起動する確認メッセージが表示されます。[開く] を **クリックします**。
 
-   ![[開く] をクリックして電子情報開示エクスポート ツールを起動する](../media/ClickOnceimage4.png)
+   ![[開く] をクリックして電子情報開示エクスポート ツールを起動します。](../media/ClickOnceimage4.png)
 
    電子情報開示エクスポート ツールがインストールされていない場合は、セキュリティ警告が表示されます。 
 
-   ![[インストール] をクリックして電子情報開示エクスポート ツールをインストールする](../media/ClickOnceimage5.png)
+   ![[インストール] をクリックして電子情報開示エクスポート ツールをインストールします。](../media/ClickOnceimage5.png)
 
 3. **[インストール]** をクリックします。 インストール後、エクスポート ツールが自動的に起動します。
 

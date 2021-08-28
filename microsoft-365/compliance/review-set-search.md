@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: レビュー セットでクエリを作成して実行し、コンテンツを整理して、より効率的なレビューを行う方法についてAdvanced eDiscoveryします。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 40a7c7ecaa222f2c2974352446cb2f71bc8c13b27663a28f4d792127f848f768
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4e4d2603cc9f26925b65ebeb654ad366d245e8e8
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53850658"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570787"
 ---
 # <a name="query-and-filter-content-in-a-review-set"></a>レビュー セット内のコンテンツのクエリとフィルター
 
@@ -38,17 +38,17 @@ ms.locfileid: "53850658"
 - 件名/タイトル
 - タグ
 
-![既定のフィルターの種類](../media/DefaultFilterTypes.png)
+![既定のフィルターの種類。](../media/DefaultFilterTypes.png)
 
 各フィルターをクリックして展開し、値を割り当てる。 フィルターの外側をクリックすると、自動的にレビュー セットにフィルターが適用されます。 次のスクリーンショットは、日付範囲内のドキュメントを表示するように構成された日付フィルターを示しています。
 
-![既定のフィルターが展開されました](../media/ExpandedFilter.png)
+![既定のフィルターが展開されました。](../media/ExpandedFilter.png)
 
 ## <a name="add-or-remove-filters"></a>フィルターの追加または削除
 
 レビュー セットに表示されるフィルターを追加または削除するには、[フィルター  ] を選択して、フライアウト ページに表示されるフィルター パネルを開きます。 
 
-![[フィルター] パネル](../media/FilterPanel.png)
+![[フィルター] パネル。](../media/FilterPanel.png)
 
 使用可能なフィルターは、次の 4 つのセクションで構成されます。
 
@@ -62,7 +62,7 @@ ms.locfileid: "53850658"
 
 各セクションを展開し、フィルターを選択または選択解除して、フィルター セットでフィルターを追加または削除します。 フィルターを追加すると、フィルター セットに表示されます。 
 
-![フィルター パネルのフィルター セクションとプロパティの一覧](../media/FilterPanel2.png)
+![フィルター パネルのフィルター セクションとプロパティの一覧。](../media/FilterPanel2.png)
 
 > [!NOTE]
 > フィルター パネルでセクションを展開すると、既定のフィルターの種類が選択されています。 これらを選択したままにするか、選択を解除し、フィルター セットから削除できます。 
@@ -85,7 +85,7 @@ ms.locfileid: "53850658"
 
 特定のフィルターの include リレーションシップと exclude リレーションシップを変更するオプションがあります。 たとえば、タグ フィルターで、ドロップダウン フィルターで [等しくない] を選択すると、特定のタグでタグ付けされたアイテムを除外できます。 
 
-![タグ フィルターを除外する](../media/TagFilterExclude.png)
+![タグ フィルターを除外します。](../media/TagFilterExclude.png)
 
 ## <a name="save-filters-as-queries"></a>フィルターをクエリとして保存する
 
@@ -93,11 +93,11 @@ ms.locfileid: "53850658"
 
 フィルターを保存するには、[クエリの **保存] を選択し** 、名前を付けて指定します。 ユーザーまたは他のレビュー担当者は、[保存済みフィルター クエリ] ドロップダウンを選択し、設定されたドキュメントを確認するために適用するフィルター クエリを選択することで、以前に保存したフィルター クエリを実行できます。 
 
-![フィルター クエリを保存する](../media/SaveFilterQuery.png)
+![フィルター クエリを保存します。](../media/SaveFilterQuery.png)
 
 フィルター クエリを削除するには、フィルター パネルを開き、クエリの横にあるゴミ箱アイコンを選択します。
 
-![フィルター クエリを削除する](../media/DeleteFilterQuery.png)
+![フィルター クエリを削除します。](../media/DeleteFilterQuery.png)
 
 ## <a name="query-language"></a>クエリ言語
 
@@ -109,10 +109,10 @@ ms.locfileid: "53850658"
 
 1. フィルター パネルを開き、[フィルター] **を選択** し、[検索] セクション **を展開** します。
 
-  ![KQL フィルターの追加](../media/AddKQLFilter.png)
+  ![KQL フィルターを追加します。](../media/AddKQLFilter.png)
 
 2. **KQL フィルターを選択し、[** クエリ ビルダーを **開く] をクリックします**。
 
    このパネルでは、クエリ ビルダーを使用して複雑な KQL クエリを作成できます。 AND または OR リレーションシップによって論理的に接続されている複数の条件で構成される条件グループを追加したり、**条件グループ****を** 追加することができます。
 
-   ![クエリ ビルダーを使用して複雑なフィルター クエリを構成する](../media/ComplexQuery.png)
+   ![クエリ ビルダーを使用して、複雑なフィルター クエリを構成します。](../media/ComplexQuery.png)

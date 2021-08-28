@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、TeleMessage および Number Archiver から SMS および MMS データをインポートおよびアーカイブするコネクタEnterpriseできます。 これにより、Microsoft 365 のサード パーティデータ ソースからデータをアーカイブし、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティ データを管理できます。
-ms.openlocfilehash: 1fb13b5c35aa71d3ed2d83a28dbcedcb764a10506e38381032052f39b2970cf0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d164f2087e0e172cd948549090b750cfefe947b2
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53814824"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570343"
 ---
 # <a name="set-up-a-connector-to-archive-enterprise-number-data"></a>Number データをアーカイブするコネクタEnterprise設定する
 
@@ -29,7 +29,7 @@ TeleMessage Enterprise Number Archiver コネクタ データをユーザー メ
 
 次の概要では、コネクタを使用してネットワーク データをアーカイブするプロセスEnterprise説明Microsoft 365。
 
-![Enterprise数値アーカイブ ワークフロー](../media/EnterpriseNumberConnectorWorkflow.png)
+![Enterprise数値アーカイブ ワークフロー。](../media/EnterpriseNumberConnectorWorkflow.png)
 
 1. 組織は TeleMessage を使用して、番号アーカイブ Enterpriseを設定します。 詳細については、こちらを参照 [してください](https://www.telemessage.com/office365-activation-for-enterprise-number-archiver/)。
 

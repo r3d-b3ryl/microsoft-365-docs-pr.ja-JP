@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 0a465458026c7da21ff60d62c7566d01e77d3e584ba487adf842074578066662
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0a1b91c888e1ee91d03d5a2d315e4d4fc38b2d10
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53801581"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570823"
 ---
 # <a name="insider-risk-management-cases"></a>Insider リスク管理ケース
 
@@ -50,7 +50,7 @@ ms.locfileid: "53801581"
 - **最後に更新された** ケース : ケースの状態にケース ノートまたは変更が追加された後に経過した時刻。
 - **最終更新日 :** ケースを最後に更新したインサイダー リスク管理アナリストまたは調査官の名前。
 
-![Insider リスク管理 ケース ダッシュボード](../media/insider-risk-cases-dashboard.png)
+![Insider リスク管理 ケース ダッシュボード。](../media/insider-risk-cases-dashboard.png)
 
 検索コントロール **を使用** して、特定のテキストのケース名を検索し、ケース フィルターを使用して、次の属性でケースを並べ替える。
 
@@ -91,7 +91,7 @@ ms.locfileid: "53801581"
 - **重大度**: アラートの重大度。
 - **検出された時間**: アラートが生成された後に経過した時間。
 
-![Insider リスク管理ケースの詳細](../media/insider-risk-case-details.png)
+![Insider リスク管理ケースの詳細。](../media/insider-risk-case-details.png)
 
 ### <a name="alerts"></a>アラート
 
@@ -120,7 +120,7 @@ ms.locfileid: "53801581"
 
 [**ユーザーアクティビティ**] タブは、内部リスク分析とケースの調査を対象にした、最も強力なインサイダーリスク管理ツールの1つです。 このタブは、すべてのアラートの履歴タイムライン、アラートの詳細、ケース内のユーザーの現在のリスク スコア、一連のリスク イベント、およびケースのリスクを含む効果的なアクションを実行するコントロールなど、ケースの迅速なレビューを可能にするための構造です。
 
-![Insider リスク管理のユーザー アクティビティ](../media/insider-risk-user-activities.png)
+![Insider リスク管理のユーザー アクティビティ。](../media/insider-risk-user-activities.png)
 
 1. **時間フィルター**: 既定では、ケースで確認された過去 6 か月間のアラートがユーザー アクティビティ グラフに表示されます。 バブル グラフの [6 か月 *]、[3* か月]、または *[1**か月]* タブを選択すると、グラフ ビューを簡単にフィルター処理できます。
 2. **リスク警告アクティビティと詳細**: リスク アクティビティは、ユーザー アクティビティ グラフに色付きバブルとして視覚的に表示されます。 バブルはリスクの異なるカテゴリに対して作成され、バブル サイズはカテゴリのリスク アクティビティの数に比例します。 バブルを選択すると、各リスク アクティビティの詳細が表示されます。 詳細は次のとおりです。
@@ -155,7 +155,7 @@ ms.locfileid: "53801581"
 
 コンテンツ エクスプローラーは、基本的で高度な検索機能とフィルター機能を備え、強力なツールです。 コンテンツ エクスプローラーの使用の詳細については [、「Insider リスク管理コンテンツ エクスプローラー」を参照してください](insider-risk-management-content-explorer.md)。
 
-![Insider リスク管理ケース コンテンツ エクスプローラー](../media/insider-risk-content-explorer.png)
+![Insider リスク管理ケース コンテンツ エクスプローラー。](../media/insider-risk-content-explorer.png)
 
 ### <a name="case-notes"></a>ケース ノート
 
@@ -206,9 +206,9 @@ ms.locfileid: "53801581"
 4. 通知フィールドを確認し、必要に応じて更新します。 ここで入力した値は、テンプレートの値より優先されます。
 5. [**送信]** を選択して通知をユーザーに送信するか、[キャンセル] を選択して通知をユーザーに送信せずにダイアログを閉じます。 送信された通知はすべて、ケース ノート ダッシュボードのケース ノート キュー **に追加** されます。
 
-### <a name="escalate-for-investigation"></a>調査を拡大する
+### <a name="escalate-for-investigation"></a>調査のためにエスカレートする
 
-ユーザーのリスク アクティビティに追加の法的レビューが必要な状況で、ユーザー調査のケースをエスカレートします。 この拡大により、Microsoft 365 組織の新しい Advanced eDiscovery ケースが開きます。 Advanced eDiscovery は、組織の内部および外部の法的調査に対応するコンテンツを保持、収集、確認、分析、エクスポートするためのエンド ツー エンドのワークフローを提供します。 また、訴訟チームが法的情報保留通知ワークフロー全体を管理して、ケースに関係するカストディアンとコミュニケーションを取ることができます。 インサイダーリスク管理ケースから作成された Advanced eDiscovery ケースのカストディアンとしてレビュー担当者を割り当てると、訴訟チームは適切な措置を講じ、コンテンツの保持を管理することができます。 Advanced eDiscovery の詳細については、「[Advanced eDiscovery in Microsoft 365の概要](overview-ediscovery-20.md)」を参照してください。
+ユーザーのリスク アクティビティに追加の法的レビューが必要な状況で、ユーザー調査のケースをエスカレートします。 このエスカレーションにより、Microsoft 365 組織の新しい Advanced eDiscovery ケースが開きます。 Advanced eDiscovery は、組織の内部および外部の法的調査に対応するコンテンツを保持、収集、確認、分析、エクスポートするためのエンド ツー エンドのワークフローを提供します。 また、訴訟チームが法的情報保留通知ワークフロー全体を管理して、ケースに関係するカストディアンとコミュニケーションを取ることができます。 インサイダーリスク管理ケースから作成された Advanced eDiscovery ケースのカストディアンとしてレビュー担当者を割り当てると、訴訟チームは適切な措置を講じ、コンテンツの保持を管理することができます。 Advanced eDiscovery の詳細については、「[Microsoft 365 の Advanced eDiscovery の概要](overview-ediscovery-20.md)」を参照してください。
 
 ケースをユーザー調査にエスカレートするには、次の方法を実行します。
 

@@ -17,12 +17,12 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) と Microsoft Defender で使用できるフィッシング対策ポリシーについてOffice 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9d74bba395854f582a609fec6bbd0b9d504c90eebb8c1328389fefe7c5a3da15
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b0b7e93c59484bb3f7b1e34d33dd3ee7a19f7634
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56880152"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574522"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>アプリ内のフィッシング対策Microsoft 365
 
@@ -48,13 +48,13 @@ EOP のフィッシング対策ポリシーと Defender for Office 365 のフィ
 
 ****
 
-|機能|EOP のフィッシング対策ポリシー|Defender for Office 365|
+|特徴|EOP のフィッシング対策ポリシー|Defender for Office 365|
 |---|:---:|:---:|
-|既定のポリシーを自動的に作成する|![チェック マーク](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|
-|カスタム ポリシーの作成|![チェック マーク](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|
-|一般的なポリシー設定<sup>\*</sup>|![チェック マーク](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|
-|スプーフィング設定|![チェック マーク](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|
-|最初の連絡先安全性のヒント|![チェック マーク](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|
+|既定のポリシーを自動的に作成する|![チェック マークを付します。](../../media/checkmark.png)|![チェック マークを付します。](../../media/checkmark.png)|
+|カスタム ポリシーの作成|![チェック マークを付します。](../../media/checkmark.png)|![チェック マークを付します。](../../media/checkmark.png)|
+|一般的なポリシー設定<sup>\*</sup>|![チェック マークを付します。](../../media/checkmark.png)|![チェック マークを付します。](../../media/checkmark.png)|
+|スプーフィング設定|![チェック マークを付します。](../../media/checkmark.png)|![チェック マークを付します。](../../media/checkmark.png)|
+|最初の連絡先安全性のヒント|![チェック マークを付します。](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|
 |偽装設定||![チェック マーク](../../media/checkmark.png)|
 |高度なフィッシングのしきい値||![チェック マーク](../../media/checkmark.png)|
 |
@@ -86,7 +86,7 @@ EOP のフィッシング対策ポリシーと Defender for Office 365 のフィ
 
   - **これらのユーザー、グループ、およびドメインを除外する**: ポリシーの例外。 設定と動作は、次の条件とまったく同じになります。
     - **Users**
-    - **Groups**
+    - **グループ**
     - **ドメイン**
 
   > [!NOTE]

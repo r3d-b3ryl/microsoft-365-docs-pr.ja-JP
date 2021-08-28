@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Office 365 Message Encryption (OME)、S/MIME、Information Rights Management (IRM) など、Microsoft 365 暗号化のオプションを比較し、トランスポート層セキュリティ (TLS) について紹介します。
-ms.openlocfilehash: cb34318c4f22375a1eadd4266bc781cfe3c691bf
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: a882a0bb9597fdb1eb0bf5dcf520b8ced834af5e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583330"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569599"
 ---
 # <a name="email-encryption"></a>メールの暗号化
 
@@ -58,7 +58,7 @@ Microsoft 365 内の組織間、または Microsoft 365 と Microsoft 365 外部
     
 ## <a name="comparing-email-encryption-options-available-in-office-365"></a>Office 365 で使用可能な電子メール暗号化オプションの比較
 
-|メール暗号化技術|![OME を説明する概念アートワーク](../media/2bf27b5e-bbb3-46d1-95bf-884dc27a746c.png)|![IRM を説明する概念アートワーク](../media/9c0cc444-9448-40c6-b244-8fcc593a64e0.png)|![SMIME を説明する概念アートワーク](../media/ae4613a8-c17e-47e1-8e13-12e891e43744.png)|
+|メール暗号化技術|![OME を説明する概念アートワーク。](../media/2bf27b5e-bbb3-46d1-95bf-884dc27a746c.png)|![IRM を説明する概念アートワーク](../media/9c0cc444-9448-40c6-b244-8fcc593a64e0.png)|![SMIME を説明する概念アートワーク](../media/ae4613a8-c17e-47e1-8e13-12e891e43744.png)|
 |:-----|:-----|:-----|:-----|
 |暗号化オプションの説明|Office 365 Message Encryption (OME) は、Azure Rights Management (Azure RMS) で構築され、宛先のメール アドレス (Gmail、Yahoo! Mail、Outlook.com など) に関係なく、暗号化された電子メールを組織内外の宛先に送信できるようにするサービスです。 <br/> 管理者は、暗号化の条件を定義するトランスポート ルールを設定できます。ユーザーがルールに一致するメッセージを送信する場合、自動的に暗号化が適用されます。 <br/> 暗号化メッセージを表示するために、受信者は 1 回限りのパスコードを取得するか、Microsoft アカウントでサインインするか、Office 365 に関連付けられている職場または学校のアカウントでサインインできます。 受信者は暗号化された返事を送信することもできます。 暗号化されたメッセージを表示したり、暗号化された返信を送信するのに、受信者は Microsoft 365 サブスクリプションを必要としません。|IRM は、電子メール メッセージに使用制限の適用も行える暗号化ソリューションです。機密情報が権限のないユーザーによって印刷、転送、またはコピーされるのを防止します。 <br/> Microsoft 365 の IRM 機能には Azure Rights Management (Azure RMS) が使用されます。|S/MIME は、メッセージを暗号化およびデジタル署名するための証明書ベースの暗号化ソリューションです。メッセージの暗号化により、指定された受信者だけがメッセージを開き読むことができます。デジタル署名により、受信者は送信者の身元を確認できます。 <br/> デジタル署名と暗号化メッセージのいずれも、独自のデジタル証明書の利用により可能となります。この証明書には、デジタル署名を検証し、メッセージを暗号化し、復号化するための鍵が含まれています。 <br/> S/MIME を使用するには、各受信者のファイルに公開キーが必要です。受信者は独自の秘密キーを管理、保護する必要があります。受信者の秘密キーが危険にさらされた場合、受信者は新しい秘密キーを取得し、すべての潜在的な送信者に公開キーを再配布する必要があります。|
 |この機能について|OME: <br/> 内部または外部の受信者に送信されたメッセージを暗号化します。 <br/>  ユーザーは Outlook.com、Yahoo! Mail、および Gmail を含むすべての電子メール アドレスに暗号化されたメッセージを送信できます。 <br/>  管理者であれば、組織のブランドを反映するように電子メール表示ポータルをカスタマイズできます。 <br/> Microsoft がキーを安全に管理および格納するため、ユーザーがそうする必要はありません。 <br/> 暗号化されたメッセージ (HTML 添付ファイルとして送信済み) をブラウザーで開くことができる場合は、クライアント側の特別なソフトウェアは必要ありません。|IRM: <br/> 暗号化と使用制限を利用し、電子メールのメッセージと添付ファイルをオンラインとオフラインで保護します。 <br/> 管理者には、自動的に IRM を適用してメッセージを選択するためのトランスポート ルールまたは Outlook 保護ルールを設定する権限が付与されます。 <br/> ユーザーは Outlook または Outlook on the web (旧称: Outlook Web App) で手動でテンプレートを適用できます。|S/MIME は、デジタル署名による送信者の認証および暗号化によるメッセージの機密性を処理します。|

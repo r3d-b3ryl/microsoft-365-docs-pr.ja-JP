@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーと保持ラベル ポリシーとともに保管ロックを使用して、規制要件を満たし、不正な管理者から保護します。
-ms.openlocfilehash: e1d0077567fdfd529e4c81f6c2ecf4c00f847f0cc5a10e2c74d80aa5d320c813
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: eb842a3d5add719338773f088b07dcf4c32ede53
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53830507"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574161"
 ---
 # <a name="use-preservation-lock-to-restrict-changes-to-retention-policies-and-retention-label-policies"></a>保管ロックを使用して、アイテム保持ポリシーと保持ラベル ポリシーへの変更を制限する
 
@@ -60,7 +60,7 @@ ms.locfileid: "53830507"
 
 2. [Get-RetentionCompliancePolicy](/powershell/module/exchange/get-retentioncompliancepolicy) を実行してロックするポリシーの名前を検索します。 以下に例を示します。
     
-   ![PowerShell のアイテム保持ポリシーの一覧](../media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
+   ![PowerShell のアイテム保持ポリシーの一覧。](../media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
 
 3. ポリシーに保管ロックを設定するには、ポリシーの名前を指定して [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) コマンドレットを実行し、*RestrictiveRetention* パラメーターを true に設定します。
     
@@ -70,11 +70,11 @@ ms.locfileid: "53830507"
     
     例:
     
-    ![PowerShell の RestrictiveRetention パラメーター](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
+    ![PowerShell の RestrictiveRetention パラメーター。](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
     
      メッセージが表示されたら、この構成に含まれる制限事項を読んで確認し、**Y** を選びます。
     
-   ![PowerShell でアイテム保持ポリシーをロックすることを確認するプロンプト](../media/retention-policy-preservation-lock-confirmation-prompt.PNG)
+   ![PowerShell でアイテム保持ポリシーをロックすることを確認するプロンプト。](../media/retention-policy-preservation-lock-confirmation-prompt.PNG)
 
 アイテム保持ポリシーに保管ロックが設定されました。 確認するには、`Get-RetentionCompliancePolicy` をもう一度実行しますが、ポリシーの名前を指定してポリシー パラメーターを表示します。
 
@@ -84,7 +84,7 @@ Get-RetentionCompliancePolicy -Identity "<Name of Policy>" |Fl
 
 **RestrictiveRetention** が **True** に設定されていることを確認する必要があります。 例:
 
-![PowerShell に表示されるすべてのパラメーターを含むロックされたポリシー](../media/retention-policy-preservation-lock-locked-policy.PNG)
+![PowerShell に表示されるすべてのパラメーターを含むロックされたポリシー。](../media/retention-policy-preservation-lock-locked-policy.PNG)
 
 ## <a name="see-also"></a>関連項目
 

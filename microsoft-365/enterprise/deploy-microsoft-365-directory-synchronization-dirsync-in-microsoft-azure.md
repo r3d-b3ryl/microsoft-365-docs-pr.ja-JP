@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
 description: Azure の仮想マシンに Azure AD Connectを展開して、オンプレミス ディレクトリと Azure サーバー テナントの間でアカウントを同期するADします。
-ms.openlocfilehash: c7a3c8a3800f7dc866895606277ca7dc5bd9ddd6
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: df41c88330eb71c67505d8a75e8268ae2acb9b01
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356806"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575290"
 ---
 # <a name="deploy-microsoft-365-directory-synchronization-in-microsoft-azure"></a>ディレクトリMicrosoft 365を展開するMicrosoft Azure
 
@@ -46,7 +46,7 @@ Azure AD Connect はオンプレミス サーバーにインストールでき�
 
 次の図は、Azure AD Connect (ディレクトリ同期サーバー) の仮想マシン上で実行されている Azure AD DS フォレストを Microsoft 365 サブスクリプションに同期する方法を示しています。
   
-![Azure AD Connectクラウド サブスクリプションの Azure AD テナントに同期する Azure の仮想マシン上の Azure Microsoft 365 ツール](../media/CP-DirSyncOverview.png)
+![Azure AD Connectの Azure AD テナントとトラフィック フローを同期する Azure の仮想マシン上の Azure Microsoft 365 ツール。](../media/CP-DirSyncOverview.png)
   
 この図には、サイト間 VPN または ExpressRoute 接続で接続されている 2 つのネットワークがあります。具体的には、AD DS ドメイン コントローラーが配置されているオンプレミス ネットワークと、ディレクトリ同期サーバーとして [Azure AD Connect](https://www.microsoft.com/download/details.aspx?id=47594) を実行している仮想マシンが含まれる Azure 仮想ネットワークの 2 つです。ディレクトリ同期サーバーを発信元とする主要なトラフィック フローは 2 つあります。
   
@@ -128,7 +128,7 @@ Azure 仮想ネットワークを作成および構成するには、「[オン�
   
 以下が最終的な構成です。
   
-![Azure でホストされているディレクトリ同期サーバー Microsoft 365フェーズ 1](../media/aab6a9a4-eb78-4d85-9b96-711e6de420d7.png)
+![Azure でホストされているディレクトリ同期サーバー Microsoft 365フェーズ 1。](../media/aab6a9a4-eb78-4d85-9b96-711e6de420d7.png)
   
 この図は、サイト間 VPN や ExpressRoute 接続を介してAzure 仮想ネットワークに接続しているオンプレミスネットワークを示しています。
   
@@ -150,7 +150,7 @@ Azure AD Connect がインターネット リソースにアクセスできる�
   
 以下が最終的な構成です。
   
-![Azure でホストされているディレクトリ同期サーバー Microsoft 365フェーズ 2](../media/9d8c9349-a207-4828-9b2b-826fe9c06af3.png)
+![Azure でホストされているディレクトリ同期サーバー Microsoft 365フェーズ 2。](../media/9d8c9349-a207-4828-9b2b-826fe9c06af3.png)
   
 この図に、クロスプレミス Azure 仮想ネットワーク内のディレクトリ同期サーバーとしての仮想マシンを示します。
   
@@ -167,7 +167,7 @@ Azure AD Connect がインターネット リソースにアクセスできる�
   
 以下が最終的な構成です。
   
-![Azure でホストされているディレクトリ同期サーバー Microsoft 365フェーズ 3](../media/3f692b62-b77c-4877-abee-83c7edffa922.png)
+![Azure でホストされているディレクトリ同期サーバー Microsoft 365フェーズ 3。](../media/3f692b62-b77c-4877-abee-83c7edffa922.png)
   
 この図に、クロスプレミス Azure 仮想ネットワーク内の Azure AD Connect を使ったディレクトリ同期サーバーを示します。
   

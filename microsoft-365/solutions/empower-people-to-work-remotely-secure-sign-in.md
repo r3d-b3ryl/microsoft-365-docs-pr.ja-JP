@@ -1,5 +1,5 @@
 ---
-title: 手順 1. MFA を使用してハイブリッド ワーカーのサインイン セキュリティを強化する
+title: ステップ 1. MFA を使用してハイブリッド ワーカーのサインイン セキュリティを強化する
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -17,18 +17,18 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: ハイブリッド ワーカーが多要素認証 (MFA) でサインインすることを要求します。
-ms.openlocfilehash: 105c2f7170b4bea648427b0fda57ad081cb99a86
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: d59f990cd7acf576247d75e6544ad045179e3c81
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788964"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575350"
 ---
-# <a name="step-1-increase-sign-in-security-for-hybrid-workers-with-mfa"></a>手順 1. MFA を使用してハイブリッド ワーカーのサインイン セキュリティを強化する
+# <a name="step-1-increase-sign-in-security-for-hybrid-workers-with-mfa"></a>ステップ 1. MFA を使用してハイブリッド ワーカーのサインイン セキュリティを強化する
 
 ハイブリッド ワーカーのサインインのセキュリティを強化するには、多要素認証 (MFA) を使用します。 MFA では、ユーザーのサインインは、ユーザー アカウントのパスワード以外に追加の検証を受ける必要があります。 悪意のあるユーザーがユーザー アカウントのパスワードを決定した場合でも、アクセスが許可される前にスマートフォンに送信されるテキスト メッセージなど、追加の検証に応答できる必要があります。
 
-![正しいパスワードと追加認証によりサインインが成功する](../media/empower-people-to-work-remotely/remote-workers-mfa.png)
+![正しいパスワードと追加認証によりサインインが成功します。](../media/empower-people-to-work-remotely/remote-workers-mfa.png)
 
 ハイブリッド ワーカー、特に管理者を含むすべてのユーザーに対して、Microsoft は MFA を強くお勧めします。
 
@@ -119,6 +119,6 @@ MFA の展開後、ユーザーは次のことを行います。
 
 ## <a name="next-step"></a>次のステップ
 
-[![手順 2: オンプレミスのアプリとサービスへのリモート アクセスを提供する](../media/empower-people-to-work-remotely/remote-workers-step-grid-2.png)](empower-people-to-work-remotely-remote-access.md)
+[![手順 2: オンプレミスのアプリとサービスへのリモート アクセスを提供する。](../media/empower-people-to-work-remotely/remote-workers-step-grid-2.png)](empower-people-to-work-remotely-remote-access.md)
 
 [手順 2](empower-people-to-work-remotely-remote-access.md) に進み、オンプレミスのアプリとサービスへのリモート アクセスを提供します。

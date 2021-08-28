@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: キャンバスMicrosoft Teams会議を統合する
-ms.openlocfilehash: 3883459d6d8fce9d8e150c9de82faf5dad75e7a5
-ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
+ms.openlocfilehash: dfa9bf10400900f879c806d6ea44bdb9b4b67a9c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58387154"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574654"
 ---
 # <a name="use-microsoft-teams-meetings-with-canvas"></a>Canvas でMicrosoft Teams会議を使用する
 
@@ -42,7 +42,7 @@ Instructure Canvas 内の Microsoft Teams 統合を管理する前に、Canvas �
 
 3. 管理ナビゲーションで、[リンク]**リンクを** 設定、[統合]**タブを選択** します。
 
-![Canvas Teams同期 更新された png](https://user-images.githubusercontent.com/87142492/128552407-78cb28e9-47cf-4026-954d-12dc3553af6f.png)
+![Canvas Teams更新された png を同期します。](https://user-images.githubusercontent.com/87142492/128552407-78cb28e9-47cf-4026-954d-12dc3553af6f.png)
 
 4. Microsoft テナント名、login 属性、ドメイン サフィックス、および AAD 参照属性を入力します。 これらのフィールドは、キャンバス内のユーザーとユーザーの照合に使用Microsoft Azure Active Directory。 
    * Login Attribute は、照合に使用される Canvas ユーザー属性です。
@@ -53,7 +53,7 @@ Instructure Canvas 内の Microsoft Teams 統合を管理する前に、Canvas �
 
 6. Canvas の **Microsoft-Teams-Sync-for-Canvas** Azure アプリへのアクセスを承認するには、[テナント アクセスを **許可する] リンクを選択** します。 Microsoft Identity Platform Admin Consent Endpoint にリダイレクトされます。
 
-   ![アクセス許可](media/permissions.png)
+   ![アクセス許可。](media/permissions.png)
 
 7. **[同意する]** を選択します。 
 
@@ -62,7 +62,7 @@ Instructure Canvas 内の Microsoft Teams 統合を管理する前に、Canvas �
 
 8. トグルをオンにしてMicrosoft Teams同期を有効にします。
 
-   ![teams-sync](media/teams-sync.png)
+   ![teams-sync。](media/teams-sync.png)
 
 ## <a name="canvas-admin"></a>Canvas Admin
 
@@ -76,11 +76,11 @@ Canvas Admin として、環境内に会議 LTI Microsoft Teamsを追加する�
 
 2. [+**アプリ] を** 選択して、LTI Teamsを追加します。
 
-   ![外部アプリ](media/external-apps.png)
+   ![外部アプリ。](media/external-apps.png)
 
 3. 構成 **の種類として [クライアント ID 別** ] を選択します。
 
-   ![アプリの追加](media/add-app.png)
+   ![アプリを追加します。](media/add-app.png)
 
 4. 指定されたクライアント ID を入力し、[送信] を **選択します**。
 

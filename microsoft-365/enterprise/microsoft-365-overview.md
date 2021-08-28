@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Microsoft 365 for Enterprise のコンポーネント、計画、および展開パスの概要を説明します。
-ms.openlocfilehash: 428211e890bcff816209b003566fc76072749bda
-ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
+ms.openlocfilehash: 404670e42f46b249b748d0a54f882c631c6f91ee
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58378003"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570079"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 for Enterprise の概要
 
@@ -68,7 +68,7 @@ Microsoft 365 E3の ユーザーは、これらのアドオンを使用して、
 - Microsoft 365 for Enterprise が可能にするモダン ワークプレイスの主要コンポーネント
 - [Microsoft 365 生産性ライブラリ](https://www.microsoft.com/microsoft-365/success/)およびいくつかの一般的な組織部門の代表的なシナリオ
 
-[![Microsoft 365 Enterprise ポスター用の画像](../media/microsoft-365-overview/m365e-poster.png)](../downloads/Microsoft365Enterprise.pdf)
+[![Microsoft 365 Enterprise ポスター用の画像。](../media/microsoft-365-overview/m365e-poster.png)](../downloads/Microsoft365Enterprise.pdf)
 
 [ポスターのコピーをダウンロード](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft365Enterprise.pdf)できます。
 
@@ -77,7 +77,7 @@ Microsoft 365 E3の ユーザーは、これらのアドオンを使用して、
 
 組織全体を Microsoft 365 for Enterprise の製品とサービスに移行する方法をより良く理解するためには、[移行のポスター](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)をご覧ください。
 
-[![「Microsoft 365への移行」ポスターの画像](../media/microsoft-365-overview/transition-org-to-m365.png)](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)
+[![「Microsoft 365への移行」ポスターの画像。](../media/microsoft-365-overview/transition-org-to-m365.png)](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)
 
 この2ページのポスターをご覧になると、既存のインフラストラクチャを簡単にインベントリできます。 これを見ると、ガイダンスが見つかり、Microsoft 365 for enterprise の対応する製品またはサービスに移行するのに役立ちます。 Windows と Office の製品、その他のインフラストラクチャ、それから、デバイス管理、ID、情報および脅威保護などのセキュリティ要素が含まれます。
 
@@ -94,7 +94,7 @@ Microsoft 365 E3の ユーザーは、これらのアドオンを使用して、
 
 これらの製品のアップグレード、移行、およびクラウドへの移行オプションを視覚的にまとめたものとしては、[サポート終了ポスター](../downloads/Office2010Windows7EndOfSupport.pdf)をご覧ください。
 
-[![Office 2010 サーバー/クライアント サポート終了についての画像、 Windows 7 のポスター](../media/microsoft-365-overview/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
+[![Office 2010 サーバー/クライアント サポート終了についての画像、 Windows 7 のポスター。](../media/microsoft-365-overview/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
 
 この 1 ページのポスターで、Windows 7 と Office 2010 のクライアントおよびサーバー製品がサポート終了に達してしまうことを防ぐさまざまな手段をすばやく理解できます。ここには、特に推奨される手段と、Microsoft 365 for Enterprise のサポートが含まれます。
 
@@ -143,16 +143,16 @@ Microsoft 365 for Enterprise、Microsoft Surface デバイス、および Micros
 
 これは、企業組織の例です。
 
-![Microsoft 365、Surface デバイス、および Edge ブラウザーを備えた企業組織](../media/microsoft-365-overview/best-together-with-surface-and-edge.png)
+![Microsoft 365、Surface デバイス、および Edge ブラウザーを備えた企業組織。](../media/microsoft-365-overview/best-together-with-surface-and-edge.png)
 
 中小企業および教育機関の詳細情報と構成例については、[Best together ポスター](https://download.microsoft.com/download/2/8/d/28db0cf9-2f5a-4f63-91e2-46ff5c4d3baf/microsoft-best-together-poster.pdf)をダウンロードしてください。
 
-[![Surface および Edge ブラウザーの Best together ポスターの画像](../media/microsoft-365-overview/best-together-poster-thumbnail.png)](https://download.microsoft.com/download/2/8/d/28db0cf9-2f5a-4f63-91e2-46ff5c4d3baf/microsoft-best-together-poster.pdf)
+[![Surface および Edge ブラウザーの Best together ポスターの画像。](../media/microsoft-365-overview/best-together-poster-thumbnail.png)](https://download.microsoft.com/download/2/8/d/28db0cf9-2f5a-4f63-91e2-46ff5c4d3baf/microsoft-best-together-poster.pdf)
 
 
 ## <a name="microsoft-365-training"></a>Microsoft 365 のトレーニング
 
-![Microsoft 365 の基礎トレーニング](../media/microsoft-365-overview/m365-fundamentals.svg)
+![Microsoft 365 の基礎トレーニング。](../media/microsoft-365-overview/m365-fundamentals.svg)
 
 Microsoft 365 と、Microsoft 365の認定の詳細について学ぶには: [認定済Microsoft 365: 基本](/learn/paths/m365-fundamentals/)から始めることができます。
 

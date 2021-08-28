@@ -20,12 +20,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: この記事では、低速のネットワークで使用する場合に採用できるベスト プラクティスOffice 365ガイドします。
-ms.openlocfilehash: b09fe2a38cd98a09e7d6375abccb0486b59c34c092f60c78144ebc695453f7c6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 928e2156a6d559fab4b838118d972a4ae730e328
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53819600"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575134"
 ---
 # <a name="best-practices-for-using-office-365-on-a-slow-network"></a>低速のネットワークでOffice 365のベスト プラクティス
 
@@ -40,7 +40,7 @@ ms.locfileid: "53819600"
 
 ### <a name="major-factors-that-affect-network-performance"></a>ネットワークパフォーマンスに影響を与える主な要因
 
-![ネットワークパフォーマンスの要因](../media/62a94322-3f1a-4d2d-bbdc-2aa0722d2d96.png)
+![ネットワークパフォーマンス要因。](../media/62a94322-3f1a-4d2d-bbdc-2aa0722d2d96.png)
 
  **帯域幅と待機時間**: ネットワークパフォーマンスの最も重要な 2 つの手段は、帯域幅と待機時間です。
 

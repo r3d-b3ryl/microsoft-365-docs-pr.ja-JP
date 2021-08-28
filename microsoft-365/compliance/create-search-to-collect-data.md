@@ -17,18 +17,18 @@ search.appverid:
 ms.assetid: ''
 description: ケース内の検索の保管担当者と保管場所を作成、定義、および選択するAdvanced eDiscoveryします。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: f5eadf89d0f4eae3c206c82609f7b7d33fbe1ad15953808acab52880f00da274
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3050e176f495bd2fc23ac6237f1dac28b04088ec
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53886439"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574305"
 ---
 # <a name="create-a-search"></a>検索を作成する
 
 ケースの **[検索]** タブで、[新しい検索] をクリックし、ウィザードに従って **新しい検索** を作成できます。
 
-![検索ケースの検索ウィザードAdvanced eDiscoveryする](../media/AeDSearch1.png)
+![ケース内の検索ウィザードAdvanced eDiscoveryします。](../media/AeDSearch1.png)
 
 ## <a name="name-the-search-and-give-it-a-description"></a>検索に名前を付け、説明を付け
 

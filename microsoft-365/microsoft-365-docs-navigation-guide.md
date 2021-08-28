@@ -10,12 +10,12 @@ ms.topic: conceptual
 author: samanro
 ms.author: samanro
 manager: pamgreen
-ms.openlocfilehash: 289c9ed0dc0291ed44c1c10f0d33a362ce30723c0ddaf1bf1e27552edec1bd6b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 23d8750b05781df858328b581056a9502b4f685e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53847793"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575218"
 ---
 # <a name="microsoft-365-docs-navigation-guide"></a>Microsoft 365ドキュメントのナビゲーション ガイド
 
@@ -27,7 +27,7 @@ ms.locfileid: "53847793"
 
 技術ドキュメント セット内のすべてのページの上部にあるヘッダー  Microsoft 365を選択すると、常にこのページMicrosoft 365移動できます。
 
-![Microsoft 365ヘッダーの設定](media/m365-header-cursor.png)
+![Microsoft 365ヘッダーに表示されます。](media/m365-header-cursor.png)
 
 ## <a name="offline-documentation"></a>オフラインドキュメント
 
@@ -35,37 +35,37 @@ ms.locfileid: "53847793"
 
 PDF を作成する場合は、すべての目次の下部にある **[PDF** のダウンロード] リンクを選択します。
 
-![PDF をダウンロードする](media/m365-download-pdf-cursor.png)
+![PDF をダウンロードします。](media/m365-download-pdf-cursor.png)
 
 ## <a name="toc-search"></a>TOC 検索 
 この docs.microsoft.com 上部にあるフィルター検索ボックスを使用して、目次内のコンテンツを検索できます。
 
-![[フィルター ボックスを使用する]](media/m365-filter-by-title.png)
+![[フィルター] ボックスを使用します。](media/m365-filter-by-title.png)
 
 ## <a name="version-filter"></a>バージョン フィルター
 このMicrosoft 365技術ドキュメントには、21 Vianet (中国) がOffice 365、Office 365を含む追加製品のコンテンツが提供されています。 機能は、これらのバージョンによって異なる場合があります。そのため、コンテンツ自体が異なる場合があります。
 
 バージョン フィルターを使用して、適切なバージョンのコンテンツが表示Microsoft 365。
 
-![Microsoft 365 バージョン フィルター](media/m365-version-filter.png)
+![Microsoft 365フィルター。](media/m365-version-filter.png)
 
 ## <a name="breadcrumbs"></a>Breadcrumbs
 
 Breadcrumbs は、ヘッダーの下と目次の上にあり、現在の記事が目次のどこに存在するのか示します。  これにより、コンテキストを読み取るコンテンツの種類に設定できるだけでなく、目次ツリーを移動できます。
 
-![Microsoft 365リンク](media/m365-breadcrumb.png)
+![Microsoft 365リンク。](media/m365-breadcrumb.png)
 
 ## <a name="article-section-navigation"></a>記事セクションのナビゲーション
 
 右側のナビゲーション ウィンドウを使用すると、記事内のセクションにすばやく移動し、記事内の場所を特定できます。  
 
-![右ナビゲーション](media/m365-article-sections.png)
+![右のナビゲーション。](media/m365-article-sections.png)
 
 ## <a name="submit-docs-feedback"></a>ドキュメントのフィードバックを送信する
 
 記事内で問題が見つけた場合は、ページの下部までスクロールして [コンテンツ フィードバック] を選択して、その記事の SQL コンテンツ チームにフィードバックを **送信できます**。
 
-![Git Issue コンテンツ フィードバック](media/m365-article-feedback.png)
+![Git Issue コンテンツフィードバック。](media/m365-article-feedback.png)
 
 ## <a name="contribute-to-microsoft-365-documentation"></a>ドキュメントにMicrosoft 365する
 

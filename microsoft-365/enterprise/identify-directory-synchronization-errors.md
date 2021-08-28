@@ -23,12 +23,12 @@ search.appverid:
 - GPA150
 ms.assetid: b4fc07a5-97ea-4ca6-9692-108acab74067
 description: ディレクトリ同期エラーと考えられる修正プログラムを表示する方法については、Microsoft 365 管理センター。
-ms.openlocfilehash: d48b67f31241777368cd27cf0385d34757495eef
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 0bdacf95e0f8534cb721496dc4edb1b49bba131f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58353758"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570211"
 ---
 # <a name="view-directory-synchronization-errors-in-microsoft-365"></a>ディレクトリ同期エラーの Microsoft 365表示
 
@@ -42,14 +42,14 @@ ms.locfileid: "58353758"
     
 2. [ホーム **] ページ** に[ユーザー管理] **カードが表示** されます。 
     
-    ![[ユーザー管理] カードのMicrosoft 365 管理センター](../media/060006e9-de61-49d5-8979-e77cda198e71.png)
+    ![[ユーザー管理] カードのMicrosoft 365 管理センター。](../media/060006e9-de61-49d5-8979-e77cda198e71.png)
   
 3. カードで **、[Azure** **の同期** エラー] を選択しAD Connect[ディレクトリ同期エラー **] ページにエラーを表示** します。   
     
-    ![ディレクトリ同期エラー ページの例](../media/882094a3-80d3-4aae-b90b-78b27047974c.png)
+    ![[ディレクトリ同期エラー] ページの例。](../media/882094a3-80d3-4aae-b90b-78b27047974c.png)
 
 4. エラーを選択して、エラーに関する情報と修正方法に関するヒントを含む詳細ウィンドウを表示します。
 
-   ![ディレクトリ同期エラーの詳細の例](../media/a6e302d4-6be7-4e3a-b4b5-81c5a2c02952.png)
+   ![ディレクトリ同期エラーの詳細の例。](../media/a6e302d4-6be7-4e3a-b4b5-81c5a2c02952.png)
   
 表示後、「ディレクトリ同期に関する問題を修正する[」を参照Microsoft 365](fix-problems-with-directory-synchronization.md)特定された問題を修正する必要があります。

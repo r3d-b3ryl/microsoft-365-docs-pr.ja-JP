@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 description: エンタープライズ テスト環境でスマートフォンに送信されるテキスト メッセージを使用して多要素Microsoft 365構成します。
-ms.openlocfilehash: 772fc5d5a05ca08f2fcb851f1e5399c1dd77828f
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 92c60819c2e32661b4af9cfba76553c59b784519
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356230"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570727"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-for-enterprise-test-environment"></a>エンタープライズ テスト環境向けMicrosoft 365要素認証
 
@@ -38,7 +38,7 @@ Microsoft 365 またはサブスクリプションに Azure AD テナントを�
 - [フェーズ 2:User 2 アカウントに対して、多要素認証を有効にしてテストする](#phase-2-enable-and-test-multi-factor-authentication-for-the-user-2-account)
 - [フェーズ 3: 条件付きアクセス ポリシーを使用して多要素認証を有効にしてテストする](#phase-3-enable-and-test-multi-factor-authentication-with-a-conditional-access-policy)
 
-![Microsoft クラウドのテスト ラボ ガイド](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Microsoft クラウドのテスト ラボ ガイド。](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > エンタープライズ テスト ラボ ガイド スタックの Microsoft 365 内のすべての記事への視覚的なマップについては、「Microsoft 365 テスト ラボ ガイド スタック」[を参照してください](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
@@ -80,7 +80,7 @@ Microsoft 365 またはサブスクリプションに Azure AD テナントを�
     
 2. [[ユーザー]](https://admin.microsoft.com) Microsoft 365 管理センターに移動し、User 2 アカウント名とパスワードを使用してサインインします。
     
-3. サインイン後、詳細については、アカウントのセットアップを求めるメッセージが表示されます。 [**次へ**] を選択します。
+3. サインイン後、詳細については、アカウントのセットアップを求めるメッセージが表示されます。 **[次へ]** を選択します。
     
 4. **[追加のセキュリティ確認]** ページで、次の手順を実行します。 
     
@@ -90,7 +90,7 @@ Microsoft 365 またはサブスクリプションに Azure AD テナントを�
     
    - [ **メソッド] で**、[ **テキスト メッセージでコードを送信する] を選択します**。
     
-5. [**次へ**] を選択します。
+5. **[次へ]** を選択します。
     
 6. スマートフォンで受信したテキスト メッセージから確認コードを入力し、[確認] を **選択します**。
     

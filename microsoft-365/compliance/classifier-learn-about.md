@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: トレーニングMicrosoft 365分類子は、ラボリングやポリシー アプリケーション用にさまざまな種類のコンテンツを認識するために、正のサンプルと負のサンプルを見てトレーニングできるツールです。
-ms.openlocfilehash: 25bbec395b1bb229f62122caf23845c18f5305e324a37cd0a6856e81286d1ee5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6b54ab2f905d77ae59ba94e15768c7664007baaa
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53872101"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574858"
 ---
 # <a name="learn-about-trainable-classifiers"></a>トレーニング可能な分類子の詳細
 
@@ -109,7 +109,7 @@ Microsoft 365には、5 つの事前トレーニング済み分類子が付属�
 
 これらは、[データ分類] **Microsoft 365 コンプライアンス センター** の状態の [トレーニング可能な分類子]  >    >  ビューに表示されます `Ready to use` 。
 
-![分類子-事前トレーニング済み分類子](../media/classifiers-ready-to-use-classifiers.png)
+![分類子-事前トレーニング済み分類子。](../media/classifiers-ready-to-use-classifiers.png)
 
 > [!IMPORTANT]
 > 不快な言語、嫌がらせ、冒とく、差別、脅威分類子は検索可能なテキストでのみ機能し、これらの分野の用語や言語の完全なリストではありません。 さらに、言語と文化の基準は絶えず変化し、これらの現実に照らして、Microsoft は独自の裁量でこれらの分類子を更新する権利を留保します。 分類子は組織がこれらの領域を検出する場合に役立ちますが、分類子は、そのような言語の使用を検出または対処する組織の唯一の手段を提供することを目的としていない。 Microsoft または子会社ではなく、組織は、事前トレーニング済みの分類者によって識別されたコンテンツの監視、スキャン、ブロック、削除、保持に関連するすべての決定 (地域のプライバシーや他の適用される法律の遵守を含む) に対して引き続き責任を負います。 Microsoft では、展開と使用の前に法律顧問とのコンサルティングを推奨しています。
@@ -130,13 +130,13 @@ Microsoft 365には、5 つの事前トレーニング済み分類子が付属�
 
 保持ポリシーや通信監督など、コンプライアンス ソリューションで使用する分類子の作成と発行は、このフローに従います。 カスタムトレーニング可能な分類子の作成の詳細については、「カスタム分類子の作成 [」を参照してください](classifier-get-started-with.md)。
 
-![プロセス フローのカスタム分類子](../media/classifier-trainable-classifier-flow.png)
+![プロセス フローのカスタム分類子。](../media/classifier-trainable-classifier-flow.png)
 
 ### <a name="retraining-classifiers"></a>分類子の再トレーニング
 
 すべてのカスタム分類子と一部の事前トレーニング済み分類子の精度を向上させるために、ユーザーが実行する分類の精度に関するフィードバックを提供できます。 これを再トレーニングと呼び、このワークフローに従います。
 
-![分類子の再トレーニング ワークフロー](../media/classifier-retraining-workflow.png)
+![分類子の再トレーニング ワークフロー。](../media/classifier-retraining-workflow.png)
 
 ## <a name="see-also"></a>関連項目
 

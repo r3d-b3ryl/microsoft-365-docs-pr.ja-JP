@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Blackboard learn ultra Microsoft Teamsクラスを使用する
-ms.openlocfilehash: 2ec017c331c722e199c1347b2c65b4ca04d71a4d0778695c0c9504560b3c29f5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 30ab28c4a9c2431a63db976df13748de6b843fdc
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53819345"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575086"
 ---
 # <a name="use-microsoft-teams-classes-with-blackboard-learn-ultra"></a>Blackboard learn ultra Microsoft Teamsクラスを使用する
 
@@ -60,7 +60,7 @@ ms.locfileid: "53819345"
 
 - 超基本ナビゲーションを有効にした Blackboard Learn Ultra Learn SaaS を使用する
 
-  ![コースで機能が有効になっている例](media/feature-availability.png)
+  ![機能の例は、コースで有効になっています。](media/feature-availability.png)
 
 - コースで使用する LTI を有効にする。
 
@@ -161,7 +161,7 @@ LTI 統合を構成する前に Blackboard Learn Ultra Teams Classes Azure ア�
 
 Blackboard Learn Ultra にアクセスするためのアクセス許可を付与する権限を説明するアクセス許可ウィンドウが表示Microsoft Teams。
 
-![Microsoft と Blackboard のアクセス許可ウィンドウ](media/permissions1.png)
+![Microsoft と Blackboard のアクセス許可ウィンドウを開きます。](media/permissions1.png)
 
 ### <a name="after-configuring-the-lti-applications"></a>LTI アプリケーションの構成後
 

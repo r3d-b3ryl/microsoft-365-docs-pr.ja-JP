@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: この記事では、SharePoint Publishing が有効化されている SharePoint Online サイトのナビゲーション オプションについて説明します。
-ms.openlocfilehash: 38e72811eca6487a862beb8b1d197186783d3c48
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: 7c890f61beae9ae98045861bbb08e3f6752d0037
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394662"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574738"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>SharePoint Online のナビゲーション オプション
 
@@ -75,15 +75,15 @@ ms.locfileid: "58394662"
 
 [**サイト 設定** 外観ナビゲーション] で、グローバル ナビゲーションまたは現在のナビゲーションに対して構造ナビゲーションが選択されている  >    >  場合に検証できます。 [ページの **表示] を選択** すると、パフォーマンスに悪影響を及ぼす可能性があります。
 
-![[サブサイトを表示する] が選択されている構造ナビゲーション](../media/SPONavOptionsStructuredShowSubsites.png)
+![[サブサイトの表示] を選択した構造ナビゲーション。](../media/SPONavOptionsStructuredShowSubsites.png)
 
 キャッシュは、サイト コレクション レベルとサイト レベルで有効または無効にできます。既定では両方とも有効になっています。 サイト コレクション レベルで有効にするには、[サイト コレクション管理サイト コレクション 設定] の [サイト コレクションのナビゲーション] で、[キャッシュを有効にする] のチェック ボックス  >    >  **をオンにします**。
 
-![サイト レベルでキャッシュを有効にする](../media/structural-nav/structural-nav-caching-site-coll.png)
+![サイト レベルでキャッシュを有効にする。](../media/structural-nav/structural-nav-caching-site-coll.png)
 
 サイト レベルで有効にするには、[サイトのナビゲーション設定] で、[キャッシュを有効にする] チェック  >  **ボックスをオンにします**。
 
-![サイト レベルでキャッシュを有効にする](../media/structural-nav/structural-nav-caching-site.png)
+![サイト レベルでキャッシュを有効にする。](../media/structural-nav/structural-nav-caching-site.png)
 
 ## <a name="using-managed-navigation-and-metadata-in-sharepoint-online"></a>SharePoint Online で管理ナビゲーションおよび管理されたメタデータを使用する
 
@@ -103,7 +103,7 @@ ms.locfileid: "58394662"
 
 管理ナビゲーションを実装するには、サイトのナビゲーション構造に対応する URL を含む用語を設定します。 管理ナビゲーションは多くの場合、手動で監督することにより構造ナビゲーションと置き換えられます。 次に例を示します。
 
-![SharePoint Online サイトの構造](../media/SPONavOptionsListOfSites.png))
+![SharePointオンライン サイト構造。](../media/SPONavOptionsListOfSites.png))
 
 ## <a name="using-search-driven-client-side-scripting"></a>検索型のクライアント側スクリプトを使用する
 
@@ -128,7 +128,7 @@ ms.locfileid: "58394662"
 1. [サイト設定] ページに移動します。
 2. [**マスター ページ**] をクリックして、マスター ページ ギャラリーを開きます。
 3. ここから、ライブラリ内を移動してファイル `seattle.master` をダウンロードできます。
-4. テキスト エディターでコードを編集し、次のスクリーン ショットにあるコード ブロックを削除します。<br/>![示されたコードブロックを削除する](../media/SPONavOptionsDeleteCodeBlock.png)<br/>
+4. テキスト エディターでコードを編集し、次のスクリーン ショットにあるコード ブロックを削除します。<br/>![表示されているコード ブロックを削除します。](../media/SPONavOptionsDeleteCodeBlock.png)<br/>
 5. タグ `<SharePoint:AjaxDelta id="DeltaTopNavigation">` と `<\SharePoint:AjaxDelta>` の間のコードを削除し、次のスニペットに置き換えます。<br/>
 
 ```javascript

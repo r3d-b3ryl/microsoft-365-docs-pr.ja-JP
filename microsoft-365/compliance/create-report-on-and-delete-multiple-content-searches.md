@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: セキュリティ センター PowerShell を使用して検索の作成やレポートの実行など、コンテンツ検索&する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c49cc0da930d6502df2ae88652c3b9fb23c36d3f
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: fff69aac3ab30e0fe1ea60f9d097602a5390ba87
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508096"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574341"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>複数のコンテンツ検索の作成、報告、削除
 
@@ -180,7 +180,7 @@ ms.locfileid: "58508096"
 
    スクリプトには、検索の作成と実行の進行状況が表示されます。 スクリプトが完了すると、プロンプトに戻されます。
 
-   ![複数のコンプライアンス検索を作成するスクリプトを実行した場合の出力例](../media/37d59b0d-5f89-4dbc-9e2d-0e88e2ed7b4c.png)
+   ![スクリプトを実行して複数のコンプライアンス検索を作成するサンプル出力。](../media/37d59b0d-5f89-4dbc-9e2d-0e88e2ed7b4c.png)
 
 ## <a name="step-4-run-the-script-to-report-the-search-estimates"></a>手順 4: スクリプトを実行して検索の見積もりを報告する
 
@@ -255,7 +255,7 @@ ms.locfileid: "58508096"
 
    スクリプトには、検索の作成と実行の進行状況が表示されます。 スクリプトが完了すると、レポートが表示されます。
 
-   ![検索レポートを実行して検索グループの推定値を表示する](../media/3b5f2595-71d5-4a14-9214-fad156c981f8.png)
+   ![検索レポートを実行して、検索グループの見積もりを表示します。](../media/3b5f2595-71d5-4a14-9214-fad156c981f8.png)
 
 > [!NOTE]
 > 検索グループ内の複数の検索で同じメールボックスまたはサイトがコンテンツの場所として指定されている場合、レポート内の合計結果の推定値 (アイテム数と合計サイズの両方) には、同じアイテムの結果が含まれる場合があります。 これは、検索グループ内の異なる検索に対するクエリと一致する場合、同じ電子メール メッセージまたはドキュメントが複数カウントされるためです。
@@ -290,4 +290,4 @@ ms.locfileid: "58508096"
 
    スクリプトには、削除された各検索の名前が表示されます。
 
-   ![検索グループ内の検索を削除するスクリプトを実行する](../media/9d97b9d6-a539-4d9b-a4e4-e99989144ec7.png)
+   ![スクリプトを実行して、検索グループ内の検索を削除します。](../media/9d97b9d6-a539-4d9b-a4e4-e99989144ec7.png)

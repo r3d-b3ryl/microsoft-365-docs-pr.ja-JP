@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、Reuters Eikon データを Veritas からインポートおよびアーカイブするコネクタを、Microsoft 365。 このコネクタを使用すると、サードパーティのデータ ソースからデータをアーカイブできます。Microsoft 365。 このデータをアーカイブした後、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、サードパーティのデータを管理できます。
-ms.openlocfilehash: 3f91556691245a29864a9b5fd06e0f18be53a095ec04bd31dd565c8fe0e65192
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 30d826b81c836c49575c00a82ad6e1386ddd1d3f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53866614"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570319"
 ---
 # <a name="set-up-a-connector-to-archive-reuters-eikon-data"></a>ロイター Eikon データをアーカイブするコネクタをセットアップする
 
@@ -29,7 +29,7 @@ Reuters Eikon プラットフォームからデータをインポートおよび
 
 次の概要では、コネクタを使用してロイター Eikon データをアーカイブするプロセスについて説明Microsoft 365。
 
-![ロイター Eikon データのアーカイブ ワークフロー](../media/ReutersEikonConnectorWorkflow.png)
+![ロイター Eikon データのアーカイブ ワークフロー。](../media/ReutersEikonConnectorWorkflow.png)
 
 1. 組織はロイター Eikon と共同で、ロイター Eikon サイトを設定および構成します。
 

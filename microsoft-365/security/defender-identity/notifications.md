@@ -7,12 +7,12 @@ author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 manager: raynew
-ms.openlocfilehash: ef5bc9561f79bf1629522a610632d5eb349ab892347843e73701a2efa2ef65c6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b4c499392bf9c48d704b1a0a960d9d92d097bd05
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53810920"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570451"
 ---
 # <a name="defender-for-identity-notifications-in-microsoft-365-defender"></a>Defender for Identity notifications in Microsoft 365 Defender
 
@@ -38,11 +38,11 @@ ms.locfileid: "53810920"
 
 1. 受信者のメール アドレスを入力します。 **[追加]** を選択します。
 
-    ![正常性の問題のメール アドレスを入力する](../../media/defender-identity/health-email-recipient.png)
+    ![正常性の問題のメール アドレスを入力します。](../../media/defender-identity/health-email-recipient.png)
 
 1. Defender for Identity が正常性の問題を検出すると、受信者は詳細を記載した電子メール通知を受信します。
 
-    ![正常性の問題の電子メールの例](../../media/defender-identity/health-email.png)
+    ![正常性の問題の電子メールの例。](../../media/defender-identity/health-email.png)
 
     > [!NOTE]
     > このメールには、問題に関する詳細を示す 2 つのリンクが記載されています。 MDI Health **Center** または **M365D の新しい正常性センターに移動できます**。
@@ -59,7 +59,7 @@ ms.locfileid: "53810920"
 
 1. 受信者のメール アドレスを入力します。 **[追加]** を選択します。
 
-    ![検出されたアラートの電子メール アドレスを入力する](../../media/defender-identity/alert-email-recipient.png)
+    ![検出されたアラートのメール アドレスを入力します。](../../media/defender-identity/alert-email-recipient.png)
 
 ## <a name="syslog-notifications"></a>Syslog 通知
 
@@ -73,11 +73,11 @@ Defender for Identity は、指名されたセンサーを介して Syslog サ�
 
 1. syslog 通知を有効にするには、Syslog サービスの **トグルを** オンの位置に **設定** します。
 
-    ![syslog サービスを有効にする](../../media/defender-identity/syslog-service.png)
+    ![syslog サービスを有効にする。](../../media/defender-identity/syslog-service.png)
 
 1. [サービス **の構成] を選択します**。 ウィンドウが開き、syslog サービスの詳細を入力できます。
 
-    ![syslog サービスの詳細を入力する](../../media/defender-identity/syslog-sensor.png)
+    ![syslog サービスの詳細を入力します。](../../media/defender-identity/syslog-sensor.png)
 
 1. 次の詳細を入力します。
 
@@ -92,7 +92,7 @@ Defender for Identity は、指名されたセンサーを介して Syslog サ�
 
 1. Syslog サービスを構成したら **、Syslog** サーバーに送信する通知の種類 (アラートまたは正常性の問題) を選択できます。
 
-    ![Syslog サービスの構成](../../media/defender-identity/syslog-configured.png)
+    ![Syslog サービスが構成されています。](../../media/defender-identity/syslog-configured.png)
 
 ## <a name="see-also"></a>関連項目
 

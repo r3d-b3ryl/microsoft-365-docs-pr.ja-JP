@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6b0655f0a4e6a0d00ab93409367b4e98e57b059e
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.openlocfilehash: 793ca89925e98bfc622357e126e4f0c44893c3cd
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58683970"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574642"
 ---
 # <a name="create-indicators-for-files"></a>ファイルのインジケーターを作成 
 
@@ -44,7 +44,7 @@ ms.locfileid: "58683970"
 - ファイルの詳細ページからインジケーターの追加ボタンを使用してコンテキスト インジケーターを作成する
 - インジケーター API を使用してインジケーター [を作成する](ti-indicator.md)
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 ファイルのインジケーターを作成する前に、次の前提条件を理解することが重要です。
 
@@ -98,12 +98,15 @@ ms.locfileid: "58683970"
 
 > [!IMPORTANT]
 >
-> - 通常、ファイル ブロックは数分以内に適用および削除されますが、30 分以上かかる場合があります。
-> - 同じ適用の種類とターゲットを持つファイル IoC ポリシーが競合している場合は、より安全なハッシュのポリシーが適用されます。 SHA-256 ファイル ハッシュ IoC ポリシーは SHA-1 ファイル ハッシュ IoC ポリシーに勝ちます。ハッシュの種類が同じファイルを定義している場合、MD5 ファイル ハッシュ IoC ポリシーに勝ちます。 これは、デバイス グループに関係なく常に true です。
-> - それ以外のすべての場合、同じ適用ターゲットを持つ競合するファイル IoC ポリシーがすべてのデバイスとデバイスのグループに適用されると、デバイスの場合、デバイス グループ内のポリシーが勝ちます。
-> - EnableFileHashComputation グループ ポリシーを無効にすると、ファイル IoC のブロック精度が低下します。 ただし、有効にすると、 `EnableFileHashComputation` デバイスのパフォーマンスに影響を与える可能性があります。 たとえば、ネットワーク共有からローカル デバイス (特に VPN 接続を使用して) に大きなファイルをコピーすると、デバイスのパフォーマンスに影響を与える可能性があります。
+>- 通常、ファイル ブロックは数分以内に適用および削除されますが、30 分以上かかる場合があります。
 >
-> EnableFileHashComputation グループ ポリシーの詳細については [、「Defender CSP」を参照してください](/windows/client-management/mdm/defender-csp)。
+>- 同じ適用の種類とターゲットを持つファイル IoC ポリシーが競合している場合は、より安全なハッシュのポリシーが適用されます。 SHA-256 ファイル ハッシュ IoC ポリシーは SHA-1 ファイル ハッシュ IoC ポリシーに勝ちます。ハッシュの種類が同じファイルを定義している場合、MD5 ファイル ハッシュ IoC ポリシーに勝ちます。 これは、デバイス グループに関係なく常に true です。
+>
+>- それ以外のすべての場合、同じ適用ターゲットを持つ競合するファイル IoC ポリシーがすべてのデバイスとデバイスのグループに適用されると、デバイスの場合、デバイス グループ内のポリシーが勝ちます。
+>
+>- EnableFileHashComputation グループ ポリシーを無効にすると、ファイル IoC のブロック精度が低下します。 ただし、有効にすると、 `EnableFileHashComputation` デバイスのパフォーマンスに影響を与える可能性があります。 たとえば、ネットワーク共有からローカル デバイス (特に VPN 接続を使用して) に大きなファイルをコピーすると、デバイスのパフォーマンスに影響を与える可能性があります。
+>
+>   EnableFileHashComputation グループ ポリシーの詳細については [、「Defender CSP」を参照してください](/windows/client-management/mdm/defender-csp)。
 
 ## <a name="private-preview-advanced-hunting-capabilities"></a>プライベート プレビュー: 高度なハンティング機能
 
@@ -129,7 +132,7 @@ Timestamp > ago(30d)
 
 証明書:
 
-- EUS:Win32/CustomCertEnterpriseBlock!cl
+- EUS:Win32/CustomCertEnterpriseBlock!cl  
 
 応答アクションアクティビティは、デバイスのタイムラインでも表示できます。
 
@@ -153,18 +156,13 @@ Cert および File IoC ポリシー処理の競合は、次の順序に従い�
 
 ### <a name="examples"></a>例
 
-<br>
-
-****
-
-|コンポーネント|コンポーネントの適用|ファイル インジケーター アクション|結果|
+|コンポーネント|コンポーネントの適用|ファイル インジケーター アクション|結果
 |---|---|---|---|
-|攻撃表面の縮小ファイル パスの除外|許可|ブロック|ブロック|
-|攻撃表面の縮小ルール|ブロック|許可|許可|
-|Windows Defender Application Control|許可|ブロック|許可|
-|Windows Defender Application Control|ブロック|許可|ブロック|
-|Microsoft Defender ウイルス対策除外|許可|ブロック|許可|
-|
+|攻撃表面の縮小ファイル パスの除外|許可|ブロック|ブロック
+|攻撃表面の縮小ルール|ブロック|許可|許可
+|Windows Defender Application Control|許可|ブロック|許可
+|Windows Defender Application Control|ブロック|許可|ブロック
+|Microsoft Defender ウイルス対策除外|許可|ブロック|許可
 
 ## <a name="see-also"></a>関連項目
 

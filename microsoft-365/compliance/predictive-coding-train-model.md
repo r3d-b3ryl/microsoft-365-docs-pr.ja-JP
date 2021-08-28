@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: ''
-ms.openlocfilehash: d628922d5c6933acc386abf14cf6436a3e595419741a4f816fc374b0570b4a73
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 94351858da196edfd719d7b07ab6f125abf9d658
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53865222"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570235"
 ---
 # <a name="train-a-predictive-coding-model-preview"></a>予測コーディング モデルのトレーニング (プレビュー)
 
@@ -45,7 +45,7 @@ Advanced eDiscovery で予測コーディング モデルを作成した後、�
 
 5. 各ドキュメントを確認し、閲覧 **ウィンドウ** の下部にある [関連する] または [関連しない] ボタンを選択してラベルを付きます。
 
-   ![各ドキュメントに関連性の高いラベルを付け、関連性の高いラベルを付けない](..\media\TrainModel1.png)
+   ![各ドキュメントに関連するラベルを付け、関連性の高いラベルを付け、関連付けは行います。](..\media\TrainModel1.png)
 
 6. 50 アイテムのラベルを付け終わったら、[完了] を **クリックします**。
 
@@ -71,7 +71,7 @@ Advanced eDiscovery で予測コーディング モデルを作成した後、�
 
   ****
 
-  |ラベル|モデルは、アイテムが関連すると予測します|モデルはアイテムが関連しないと予測します|
+  |Label|モデルは、アイテムが関連すると予測します|モデルはアイテムが関連しないと予測します|
   |---|---|---|
   |**レビューアーのラベルアイテムを関連付け**|正の正の値|誤検知|
   |**レビューアーがアイテムに関連性の高いラベルを付け**|False 負|True 負|

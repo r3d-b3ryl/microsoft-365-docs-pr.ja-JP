@@ -14,19 +14,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft アプリ ガバナンス機能を実装し、アプリを管理します。
-ms.openlocfilehash: 2b11893b17c93bb92301bc07fda3422ad4c36228
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: a105ba8d1e0a0127cccb772ad60bb7bd0c6c8b4c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256841"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567558"
 ---
 # <a name="app-governance-add-on-to-microsoft-cloud-app-security-in-preview"></a>Microsoft Cloud App Security へのアプリ ガバナンス アドオン (プレビュー版)
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
 
 > [!NOTE]
-> アプリ ガバナンスにサインアップするには、「[アプリ ガバナンスの開始 (プレビュー)](app-governance-get-started.md#sign-up-for-free-trial-of-app-governance)」を参照してください。
+> アプリ ガバナンスにサインアップするには、「[アプリ ガバナンスの開始 (プレビュー)](app-governance-get-started.md)」を参照してください。
 
 サイバー攻撃は、オンプレミスやクラウドのインフラに展開しているアプリケーションを悪用する方法がますます巧妙になっており、特権の昇格、横方向の移動、データの流出の開始点となっています。 潜在的なリスクを理解し、この種の攻撃を阻止するためには、組織のアプリ コンプライアンス姿勢を明確に可視化し、アプリが異常な動作を示した場合には迅速に特定し、これらの動作が環境、データ、ユーザーにリスクとなる場合には対応する必要があります。
 
@@ -77,7 +77,7 @@ App ガバナンス、Azure AD、Microsoft Cloud App Security は、以下のよ
 
 統合の概要は次のとおりです。
 
-![Azure AD と Microsoft Cloud App Security を使用したアプリ ガバナンスの統合](..\media\manage-app-protection-governance\mapg-integration.png)
+![Azure AD と Microsoft Cloud App Security を使用したアプリ ガバナンスの統合。](..\media\manage-app-protection-governance\mapg-integration.png)
 
 また、アプリ ガバナンスはそのアラートをシグナルとして Microsoft Cloud App Security と Microsoft 365 Defender に送信し、アプリ ガバナンスは Microsoft Cloud App Security からのアラートを受信することで、アプリベースのセキュリティ インシデントをより詳細に分析することができます。
 

@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 0968717e-b61f-4b06-987c-6c1464541782
 description: Microsoft Bookings で従業員の勤務時間と空き時間を設定します。
-ms.openlocfilehash: 04e6d3e079fec1c75536f3ac30dbab12026dabe2207f985b87410af77a7b832f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9fffee6addd5f2d816fc7639661f2e03f53a96de
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53803789"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575038"
 ---
 # <a name="employee-working-hours-in-microsoft-bookings"></a>Microsoft Bookings の従業員の勤務時間
 
@@ -34,13 +34,13 @@ ms.locfileid: "53803789"
 
 1. ナビゲーション ウィンドウで [ **スタッフ**] を選び、時間を設定するスタッフ メンバーを選びます。
 
-   ![名前が強調表示された予約スタッフ画面のイメージ](../media/bookings-staff-name-highlight.png)
+   ![名前が強調表示された [予約] スタッフ画面のイメージ。](../media/bookings-staff-name-highlight.png)
 
 1. [稼働時間] で、[ **勤務時間を使用**] チェック ボックスをオフにします。
 
 1. ドロップダウンで各日付の開始時間と終了時間を選びます。時間は 15 分単位で指定できます。
 
-   ![[予約スタッフの勤務時間] 画面のイメージ](../media/bookings-staff-hours.png)
+   ![[予約スタッフの勤務時間] 画面のイメージ。](../media/bookings-staff-hours.png)
 
 1. クリック **+** して、開始時刻セレクターと終了時刻セレクターを追加します。
 
@@ -52,7 +52,7 @@ ms.locfileid: "53803789"
 
 1. [勤務時間] 画面で、従業員がオフにする日の横にある **x** を選択します。
 
-   ![x ボタンの上にマウスを移動した [予約スタッフの勤務時間] 画面のイメージ](../media/bookings-staff-time-off.png)
+   ![x ボタンの上にマウスを移動した [予約スタッフの勤務時間] 画面のイメージ。](../media/bookings-staff-time-off.png)
 
 1. 以前に休みとしてマークされた日をスケジュールする場合は、スケジュールする日の横にある記号 **+** を選択します。
 

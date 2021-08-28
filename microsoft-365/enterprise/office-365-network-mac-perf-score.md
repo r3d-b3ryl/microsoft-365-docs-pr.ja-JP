@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365ネットワーク評価
-ms.openlocfilehash: c9533cb4189709ad4e32194371fb0863b4b5fa3f38eb035f7f0bdc505152b731
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 00ce0bb2f0f6b93df9f0eeb8e8bd63629edae9d7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854732"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574702"
 ---
 # <a name="microsoft-365-network-assessment"></a>Microsoft 365ネットワーク評価
 
@@ -28,7 +28,7 @@ Microsoft 365 管理センターのネットワーク接続では、ネットワ
 ネットワーク評価ポイントの値は 0 ~ 100 で、TCP 待機時間、ダウンロード速度、UDP 接続品質メトリックの平均です。 これらの指標は、1 日 1 回コンパイルされます。 Microsoft 所有のネットワークのパフォーマンス 指標は、評価結果が明確で企業ネットワークに固有の結果を得る場合に、これらの測定値から除外されます。
 
 > [!div class="mx-imgBorder"]
-> ![ネットワーク評価の値](../media/m365-mac-perf/m365-mac-perf-overview-score-top.png)
+> ![ネットワーク評価の値。](../media/m365-mac-perf/m365-mac-perf-overview-score-top.png)
 
 ネットワーク評価の値が非常に低い場合、Microsoft 365クライアントがテナントに接続したり、応答性の高いユーザー エクスペリエンスを維持したりすると、大きな問題が発生します。 高い値は、継続的なパフォーマンスの問題が少ない適切に構成されたネットワークを示します。 80% の値は、正常なベースラインを表し、ネットワークパフォーマンスによる Microsoft 365 接続や応答性に関する定期的なユーザーからの苦情を受け取る必要があります。 ネットワーク接続の反復的な改善が行われたので、この値はユーザー エクスペリエンスと共に増加します。
 
@@ -49,7 +49,7 @@ Microsoft 365 管理センターのネットワーク接続では、ネットワ
 テナントまたは特定のオフィスの場所を対象にした各ネットワーク評価には、評価に関する詳細を示すパネルが表示されます。 このパネルには、評価の棒グラフがパーセンテージとして、および測定データが受信されたワークロードのみを含む各コンポーネントワークロードの合計ポイントとして表示されます。 また、オフィスの場所ネットワーク評価では、同じ都市のデータをオフィスの場所と同じ都市で報告した 5 つの 5 つの 5 つの 5 つのカテゴリの Microsoft 365 顧客の割合との比較も示します。
 
 > [!div class="mx-imgBorder"]
-> ![ネットワーク評価の値の例](../media/m365-mac-perf/m365-mac-perf-overview-score.png)
+> ![ネットワーク評価の値の例。](../media/m365-mac-perf/m365-mac-perf-overview-score.png)
 
 パネル **の [評価** の内訳] には、各コンポーネント ワークロードの評価が表示されます。
 
@@ -97,7 +97,7 @@ Microsoft 365 管理センターのネットワーク接続では、ネットワ
 
 これらの UDP 測定値から 1 ~ 5 のスケールの平均オピニオン スコアを計算します。 次に、ネットワーク評価の 0 ~ 100 ポイントスケールMicrosoft Teamsマップします。  全体的な良い点は 87.5 ポイントを超え、全体的に悪い点は 50 ポイントを下回っています。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [Microsoft 365 管理 センターのネットワーク接続 (プレビュー)](office-365-network-mac-perf-overview.md)
 

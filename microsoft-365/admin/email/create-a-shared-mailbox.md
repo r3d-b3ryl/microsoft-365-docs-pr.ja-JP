@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: 共有メールボックスを作成すると、社内の複数のユーザーが 1 つのメール アドレスに送付されたメールを閲覧したり、回答したりできます。
-ms.openlocfilehash: 05bb73269d78c08de3345ab001d12892960e30bf35c7ef43772212fc200ff435
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b6aaf63f61919c520c77a09bf3607174757d4c2b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826326"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566318"
 ---
 # <a name="create-a-shared-mailbox"></a>共有メールボックスを作成する 
 
@@ -73,11 +73,11 @@ ms.locfileid: "53826326"
 
 5. **[次のステップ]** で、**[このメールボックスにメンバーを追加する]** を選択します。 メンバーは、この共有メールボックスへの受信メールと送信した返信を表示できるようになります。
 
-   ![[メンバーの追加] を選択する](../../media/a2a72e3d-6170-40fe-a94f-0af8fbef8ab2.png)
+   ![[メンバーの追加] を選択します。](../../media/a2a72e3d-6170-40fe-a94f-0af8fbef8ab2.png)
 
 6. **[+ メンバーの追加]** ボタンを選択します。 この共有メールボックスの使用を許可するユーザーをクリックしてチェック マークを付け、**[保存]** を選択します。
 
-   ![共有メールボックスにメンバーを割り当てる](../../media/e6c58953-f6d7-4f0b-97ba-308516bf2a94.png)
+   ![共有メールボックスにメンバーを割り当てます。](../../media/e6c58953-f6d7-4f0b-97ba-308516bf2a94.png)
 
 7. **[閉じる]** を選択します。
 

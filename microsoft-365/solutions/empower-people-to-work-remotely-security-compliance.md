@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Microsoft 365 のセキュリティ センターとコンプライアンスのサービスを使用して、ハイブリッド ワーカー向けにご使用のアプリケーション、データ、およびデバイスを保護します。
-ms.openlocfilehash: 7c3d57dbe1783ff487ec40fa5deea29899c54f696d6cb653f2f2320a41916aba
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: aa43b2b30395def36d1c1210ef07edd379996b15
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53805130"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575314"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-hybrid-workers"></a>手順 3: ハイブリッド ワーカーのためのセキュリティとコンプライアンスの展開
 
@@ -41,7 +41,7 @@ ms.locfileid: "53805130"
 
 ハイブリッド ワーカーにセキュリティとコンプライアンス サービスを提供する Microsoft 365 の機能は次のとおりです。
 
-![これらの Microsoft 365 サービスを使用して、セキュリティによる保護とコンプライアンスを維持します](../media/empower-people-to-work-remotely/remote-workers-security-compliance-grid.png)
+![これらの Microsoft 365 サービスを使用して、セキュリティによる保護とコンプライアンスを維持します。](../media/empower-people-to-work-remotely/remote-workers-security-compliance-grid.png)
 
 ## <a name="security"></a>セキュリティ
 
@@ -95,6 +95,6 @@ Microsoft 365 のこれらのコンプライアンス機能を使用して、内
 
 ## <a name="next-step"></a>次の手順
 
-[![手順 4: デバイス、PC、その他のエンドポイントを管理する](../media/empower-people-to-work-remotely/remote-workers-step-grid-4.png)](empower-people-to-work-remotely-manage-endpoints.md)
+[![手順 4: デバイス、PC、その他のエンドポイントを管理する。](../media/empower-people-to-work-remotely/remote-workers-step-grid-4.png)](empower-people-to-work-remotely-manage-endpoints.md)
 
 [手順 4](empower-people-to-work-remotely-manage-endpoints.md) に進み、デバイス、PC、その他のエンドポイントを管理します。

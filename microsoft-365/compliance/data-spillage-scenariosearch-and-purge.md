@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: 電子情報開示と検索ツールを使用して、組織内のデータ流出インシデントを管理して対応します。
-ms.openlocfilehash: 96cb6362149fe056249e7ffe2d6858785335a00c
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 340bf10dc57737c024d1ffcb3a441ba53bc917d6
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508192"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570271"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>電子情報開示ソリューション シリーズ: データ流出シナリオ - 検索と削除
 
@@ -37,7 +37,7 @@ Contoso のリード情報セキュリティ担当者です。 従業員が知�
 
 データ流出インシデントを管理する方法を次に示します。
 
-![データ流出インシデントを管理するための 8 段階のワークフロー](../media/O365-eDiscoverySolutions-DataSpillage-workflow.png)
+![データ流出インシデントを管理するための 8 段階のワークフロー。](../media/O365-eDiscoverySolutions-DataSpillage-workflow.png)
   
 [(省略可能)手順 1: ケースにアクセスできるユーザーを管理し、コンプライアンスの境界を設定する](#optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries)<br/>
 [手順 2: 電子情報開示ケースを作成する](#step-2-create-an-ediscovery-case)<br/>
@@ -143,7 +143,7 @@ Contoso のリード情報セキュリティ担当者です。 従業員が知�
     
 4. [種類] **ドロップダウン リスト** で、[上位の **場所] をクリックします**。
     
-    ![[検索の統計情報] の [上位の場所] ページで検索結果を含むメールボックスの一覧を取得する](../media/O365-eDiscoverySolutions-DataSpillage-TopLocations.png)
+    ![[検索の統計情報] の [上位の場所] ページで、検索結果を含むメールボックスの一覧を取得します。](../media/O365-eDiscoverySolutions-DataSpillage-TopLocations.png)
 
     検索結果を含むメールボックスの一覧が表示されます。 検索クエリに一致する各メールボックス内のアイテムの数も表示されます。
     
@@ -205,7 +205,7 @@ Contoso のリード情報セキュリティ担当者です。 従業員が知�
 
 ### <a name="auditing-the-data-spillage-investigation-process"></a>データ流出調査プロセスの監査
 
-監査ログで、調査中に実行された電子情報開示アクティビティを検索できます。 監査ログを検索して、手順 7 で実行した **New-ComplianceSearchAction -Purge** コマンドの監査レコードを返して、こぼれたデータを削除することもできます。 詳細については、以下を参照してください。
+監査ログで、調査中に実行された電子情報開示アクティビティを検索できます。 監査ログを検索して、手順 7 で実行した **New-ComplianceSearchAction -Purge** コマンドの監査レコードを返して、こぼれたデータを削除することもできます。 詳しくは、次のトピックを参照してください。
 
 - [監査ログを検索する](search-the-audit-log-in-security-and-compliance.md)
 

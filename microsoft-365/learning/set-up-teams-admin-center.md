@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-viva-learning
 localization_priority: None
 description: 管理センターでMicrosoft Viva ラーニング (プレビュー) を構成Teamsします。
-ms.openlocfilehash: 0db999306cc9cf7153d649e7ca49aca709425d6f
-ms.sourcegitcommit: b05b107774e8bca36c9ee19fdc4719d17e302f11
+ms.openlocfilehash: f8e5ac5695fd5d68da22883974ccafc8c6bf0f85
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58483393"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570715"
 ---
 # <a name="set-up-microsoft-viva-learning-preview-in-the-teams-admin-center"></a>管理センター Microsoft Viva ラーニング (プレビュー) のTeams設定する
 
@@ -58,11 +58,11 @@ ms.locfileid: "58483393"
 
 1. ユーザーは、[パブリック プレビューについて]でプロファイル >  >  **を選択する必要があります**。
 
-    ![ユーザーのプロファイルをTeamsアプリケーションの上部ナビゲーション](../media/learning/learning-app-select-profile-teams.png)
+    ![ユーザーのプロファイルをTeamsアプリケーションの上部ナビゲーション。](../media/learning/learning-app-select-profile-teams.png)
 
 2. ユーザーはパブリック プレビューの使用条件に同意する必要があります。
 
-    ![パブリック プレビュー ビルドに切り替える](../media/learning/learning-app-switch-to-public-preview.png)
+    ![パブリック プレビュー ビルドに切り替えます。](../media/learning/learning-app-switch-to-public-preview.png)
 
 3. これで、ユーザーはアプリ ストアラーニングでビバ Teams ラーニング (プレビュー) を見つけて使用を開始できます。
 
@@ -101,11 +101,11 @@ The Teams admin installs Viva Learning (Preview) and applies permission policies
 
     1. Users must select their profile image > **About** > **Public Preview**.
    
-        ![Upper navigation in the Teams application showing user's profile](../media/learning/learning-app-select-profile-teams.png)
+        ![Upper navigation in the Teams application showing user's profile.](../media/learning/learning-app-select-profile-teams.png)
     
     2. Users must accept the **Public preview** terms and conditions.
 
-        ![Switch to public preview build](../media/learning/learning-app-switch-to-public-preview.png)
+        ![Switch to public preview build.](../media/learning/learning-app-switch-to-public-preview.png)
  
 3. For organizations that have restrictive policies and need to enable Viva Learning (Preview), follow the process in the next section.
 

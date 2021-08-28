@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e335503c9182176b957b5b15e664a4e629f42a17a585c3fbd53ea5508b730cbd
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 35ecf8639255d21266df4403b4d4b824a5982f97
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53869152"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570523"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>MacOS での Microsoft Defender for Endpoint の Intune ベースの展開
 
@@ -69,9 +69,9 @@ ms.locfileid: "53869152"
 
 2. オペレーティング システムを **macOS** に設定し、展開方法を [Mobile Device Management / Microsoft Intune]**に設定します**。
 
-    ![オンボーディング設定のスクリーンショット](images/macos-install-with-intune.png)
+    ![オンボーディング設定のスクリーンショット。](images/macos-install-with-intune.png)
 
-3. [オンボード **パッケージのダウンロード] を選択します**。 同 _じディレクトリWindowsDefenderATPOnboardingPackage.zip_ として保存します。
+3. **[オンボーディング パッケージをダウンロードする]** を選択します。 同 _じディレクトリWindowsDefenderATPOnboardingPackage.zip_ として保存します。
 
 4. ファイルの内容を.zipします。
 
@@ -99,30 +99,30 @@ ms.locfileid: "53869152"
 1. [**プラットフォーム** = **macOS]**[**プロファイルの種類** = **テンプレート] を選択します**。 **テンプレート名** =**カスタム**. **[作成]** をクリックします。
 
     > [!div class="mx-imgBorder"]
-    > ![カスタム構成プロファイルの作成](images/mdatp-6-systemconfigurationprofiles-1.png)
+    > ![カスタム構成プロファイルの作成。](images/mdatp-6-systemconfigurationprofiles-1.png)
 
-1. プロファイルの名前を選択します。たとえば、「Defender または Endpoint onboarding for macOS」。 **[次へ]** をクリックします。
+1. プロファイルの名前を選択します。たとえば、「Defender または Endpoint onboarding for macOS」。 [**次へ**] をクリックします。
 
     > [!div class="mx-imgBorder"]
-    > ![カスタム構成プロファイル - 名前](images/mdatp-6-systemconfigurationprofiles-2.png)
+    > ![カスタム構成プロファイル - 名前。](images/mdatp-6-systemconfigurationprofiles-2.png)
 
 1. 構成プロファイル名の名前 (たとえば、「Defender for Endpoint onboarding for macOS」) を選択します。
 1. 構成プロファイル ファイルとしてWindowsDefenderATPOnboarding.xmlオンボーディング パッケージから抽出した intune/WindowsDefenderATPOnboarding.xmlを選択します。
 
     > [!div class="mx-imgBorder"]
-    > ![カスタム構成プロファイルのファイルから構成をインポートする](images/mdatp-6-systemconfigurationprofiles.png)
+    > ![カスタム構成プロファイルのファイルから構成をインポートします。](images/mdatp-6-systemconfigurationprofiles.png)
 
-1. **[次へ]** をクリックします。
+1. [**次へ**] をクリックします。
 1. [割り当て] タブでデバイス **を割り当** てる。[次へ] を **クリックします**。
 
     > [!div class="mx-imgBorder"]
-    > ![カスタム構成プロファイル - 割り当て](images/mdatp-6-systemconfigurationprofiles-2.png)
+    > ![カスタム構成プロファイル - 割り当て。](images/mdatp-6-systemconfigurationprofiles-2.png)
 
 1. レビューと **作成**.
 1. [**デバイス**  >  **構成プロファイル] を開** きます。作成したプロファイルを確認できます。
 
     > [!div class="mx-imgBorder"]
-    > ![カスタム構成プロファイル - 完了](images/mdatp-6-systemconfigurationprofiles-3.png)
+    > ![カスタム構成プロファイル - 完了。](images/mdatp-6-systemconfigurationprofiles-3.png)
 
 ### <a name="approve-system-extensions"></a>システム拡張機能の承認
 
@@ -139,7 +139,7 @@ ms.locfileid: "53869152"
     com.microsoft.wdav.netext | UBF8T346G9
 
     > [!div class="mx-imgBorder"]
-    > ![システム拡張機能の設定](images/mac-system-extension-intune2.png)
+    > ![システム拡張機能の設定。](images/mac-system-extension-intune2.png)
 
 1. [割り **当て] タブ** で、このプロファイルを [すべてのユーザー] または **[すべての&に割り当てる] をクリックします**。
 1. この構成プロファイルを確認して作成します。
@@ -158,7 +158,7 @@ ms.locfileid: "53869152"
 1. チーム **識別子を** **UBF8T346G9** に設定し、[次へ] を **クリックします**。
 
     > [!div class="mx-imgBorder"]
-    > ![カーネル拡張機能の設定](images/mac-kernel-extension-intune2.png)
+    > ![カーネル拡張機能の設定。](images/mac-kernel-extension-intune2.png)
 
 1. [割り **当て] タブ** で、このプロファイルを [すべてのユーザー] または **[すべての&に割り当てる] をクリックします**。
 1. この構成プロファイルを確認して作成します。
@@ -195,7 +195,7 @@ ms.locfileid: "53869152"
 Intune の変更が登録済みデバイスに反映された後は、[デバイスの状態の監視]の下に表示  >  **されます**。
 
 > [!div class="mx-imgBorder"]
-> ![モニターでのデバイスの状態の表示](images/mdatp-7-devicestatusblade.png)
+> ![モニターでのデバイスの状態の表示。](images/mdatp-7-devicestatusblade.png)
 
 ## <a name="publish-application"></a>アプリケーションの発行
 
@@ -204,29 +204,29 @@ Intune の変更が登録済みデバイスに反映された後は、[デバイ
 1. 管理センター [でMicrosoft エンドポイント マネージャーを](https://endpoint.microsoft.com/)開 **きます**。
 
     > [!div class="mx-imgBorder"]
-    > ![アプリケーションを作成する準備ができました](images/mdatp-8-app-before.png)
+    > ![アプリケーションを作成する準備ができました。](images/mdatp-8-app-before.png)
 
 1. [プラットフォーム別] を> macOS >追加します。
 1. [アプリ **の種類** = **] macOS を選択し、[** 選択]**をクリックします**。
 
     > [!div class="mx-imgBorder"]
-    > ![アプリケーションの種類を指定する](images/mdatp-9-app-type.png)
+    > ![アプリケーションの種類を指定します。](images/mdatp-9-app-type.png)
 
 1. 既定値を保持し、[次へ] を **クリックします**。
 
     > [!div class="mx-imgBorder"]
-    > ![アプリケーションのプロパティ](images/mdatp-10-properties.png)
+    > ![アプリケーションのプロパティ。](images/mdatp-10-properties.png)
 
 1. 割り当てを追加し、[次へ] を **クリックします**。
 
     > [!div class="mx-imgBorder"]
-    > ![Intune の割り当て情報のスクリーンショット](images/mdatp-11-assignments.png)
+    > ![Intune の割り当て情報のスクリーンショット。](images/mdatp-11-assignments.png)
 
 1. レビューと **作成**.
 1. App By   >  platform macOS **に**  >  **アクセスして**、すべてのアプリケーションの一覧に表示できます。
 
     > [!div class="mx-imgBorder"]
-    > ![アプリケーションの一覧](images/mdatp-12-applications.png)
+    > ![アプリケーションの一覧。](images/mdatp-12-applications.png)
 
 (詳細については、Intune の Defender 展開用ページ [をご覧ください](/mem/intune/apps/apps-advanced-threat-protection-macos)。)
 
@@ -240,11 +240,11 @@ Intune の変更が登録済みデバイスに反映された後は、[デバイ
 1. デバイスの管理を確認します。
 
     > [!div class="mx-imgBorder"]
-    > ![デバイス管理のスクリーンショットを確認する](images/mdatp-3-confirmdevicemgmt.png)
+    > ![デバイス管理のスクリーンショットを確認します。](images/mdatp-3-confirmdevicemgmt.png)
 
     [ **システム環境設定を開く]** を選択し、一 **覧で [管理プロファイル** ] を探し、[ **承認...] を選択します**。管理プロファイルが [確認済み] **と表示されます**。
 
-    ![管理プロファイルのスクリーンショット](images/mdatp-4-managementprofile.png)
+    ![管理プロファイルのスクリーンショット。](images/mdatp-4-managementprofile.png)
 
 2. [続行 **] を** 選択し、登録を完了します。
 
@@ -253,25 +253,25 @@ Intune の変更が登録済みデバイスに反映された後は、[デバイ
 3. Intune で、[デバイスの管理 **] [**  >  **すべての**  >  **デバイス] を開きます**。 ここにリストされているデバイスの中からデバイスを確認できます。
 
    > [!div class="mx-imgBorder"]
-   > ![デバイスの追加スクリーンショット](images/mdatp-5-alldevices.png)
+   > ![デバイスのスクリーンショットを追加します。](images/mdatp-5-alldevices.png)
 
 ## <a name="verify-client-device-state"></a>クライアント デバイスの状態を確認する
 
 1. 構成プロファイルをデバイスに展開した後、Mac デバイス **で [System Preferences**  >  **Profiles]** を開きます。
 
     > [!div class="mx-imgBorder"]
-    > ![System Preferences のスクリーンショット](images/mdatp-13-systempreferences.png)
+    > ![System Preferences のスクリーンショット。](images/mdatp-13-systempreferences.png)
 
-    ![System Preferences Profiles スクリーンショット](images/mdatp-14-systempreferencesprofiles.png)
+    ![System Preferences Profiles スクリーンショット。](images/mdatp-14-systempreferencesprofiles.png)
 
 2. 次の構成プロファイルが存在し、インストールされていることを確認します。 管理 **プロファイルは** Intune システム プロファイルである必要があります。 _Wdav-config_ と _wdav-kext_ は、Intune で追加されたシステム構成プロファイルです。
 
-    ![プロファイルのスクリーンショット](images/mdatp-15-managementprofileconfig.png)
+    ![プロファイルのスクリーンショット。](images/mdatp-15-managementprofileconfig.png)
 
 3. 右上隅には、Microsoft Defender for Endpoint アイコンも表示されます。
 
     > [!div class="mx-imgBorder"]
-    > ![ステータス バーのスクリーンショットの Microsoft Defender for Endpoint アイコン](images/mdatp-icon-bar.png)
+    > ![ステータス バーのスクリーンショットの Microsoft Defender for Endpoint アイコン。](images/mdatp-icon-bar.png)
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 

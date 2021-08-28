@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、TeleMessage コネクタをセットアップして、テレグラム通信データをインポートおよびアーカイブMicrosoft 365。 これにより、Microsoft 365 のサード パーティデータ ソースからデータをアーカイブし、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティ データを管理できます。
-ms.openlocfilehash: a4f1e5232883602cd8102793b4fbfaa6439b60bb
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 20732bedee07369a05bd26deca6154f08981ef34
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257525"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570631"
 ---
 # <a name="set-up-a-connector-to-archive-telegram-communications-data"></a>テレグラム通信データをアーカイブするコネクタをセットアップする
 
@@ -29,7 +29,7 @@ Telegram Archiver コネクタ データをユーザー メールボックスに
 
 次の概要では、コネクタを使用してテレグラム通信データをアーカイブするプロセスについて説明Microsoft 365。
 
-![テレグラム通信アーカイブ ワークフロー](../media/TelegramConnectorWorkflow.png)
+![テレグラム通信アーカイブ ワークフロー。](../media/TelegramConnectorWorkflow.png)
 
 1. 組織は TeleMessage と一緒にテレグラム アーカイブ コネクタをセットアップします。 詳細については[、「TeleMessage Telegram Archiver for the TeleMessage Archiver](https://www.telemessage.com/microsoft-365-activation-for-telegram-archiver/)for Microsoft 365」 を参照してください。
 

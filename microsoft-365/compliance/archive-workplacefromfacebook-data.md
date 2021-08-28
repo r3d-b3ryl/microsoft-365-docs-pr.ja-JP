@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、Veritas の Merge1 サイトにアーカイブされている Facebook から Workplace からデータをインポートおよびアーカイブするコネクタをMicrosoft 365。 コネクタをセットアップするには、Veritas を操作する必要があります このコネクタを使用すると、Microsoft 365 のサード パーティデータ ソースからデータをアーカイブし、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティ データを管理できます。
-ms.openlocfilehash: c62424aaa87927828fc87a8e4bdf22f2e824a5e7659acb601668a67756166f28
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 97a2664a92b4383d08becb610640e7e8553e90da
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842562"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570907"
 ---
 # <a name="set-up-a-connector-to-archive-workplace-from-facebook-data"></a>Facebook データから Workplace をアーカイブするコネクタをセットアップする
 
@@ -29,7 +29,7 @@ Workplace データをユーザー メールボックスに格納した後、訴
 
 次の概要では、コネクタを使用してワークプレース データをアーカイブするプロセスについてMicrosoft 365。
 
-![Facebook データからの Workplace のアーカイブ ワークフロー](../media/WorkplaceConnectorWorkflow.png)
+![Facebook データからの Workplace のアーカイブ ワークフロー。](../media/WorkplaceConnectorWorkflow.png)
 
 1. 組織は、Facebook の Workplace を使用して Workplace サイトを設定および構成します。
 

@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.date: 07/29/2021
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 20918b3412a5534675c873fdfd9d2fb94a73ab75
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.openlocfilehash: f38bb019d3f04b4e0be19cf93062ac75005495cb
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58509943"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570679"
 ---
 # <a name="turn-on-block-at-first-sight"></a>事前ブロックを有効にする
 
@@ -49,7 +49,7 @@ Microsoft Defender ウイルス対策 は、疑わしいが検出されていな
 
 Microsoft Defender ウイルス対策は、複数の検出および防止テクノロジを使用して、正確でインテリジェントなリアルタイムの保護を提供します。
 
-![Microsoft Defender AV エンジンのリスト](images/microsoft-defender-atp-next-generation-protection-engines.png)
+![Microsoft Defender AV エンジンのリスト。](images/microsoft-defender-atp-next-generation-protection-engines.png)  
 
 > [!TIP]
 > 詳細については、ブログ記事「[Microsoft Defender for Endpoint の次世代保護の中核となる高度なテクノロジについて」](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)を参照してください。
@@ -82,7 +82,7 @@ Microsoft Defender ウイルス対策は、複数の検出および防止テク�
    - **クラウドによるファイル スキャンの時間延長**: 50
    - **サンプルを送信する前にユーザーに確認メッセージを表示する**: 確認メッセージを表示せずにすべてのデータを送信する
 
-   :::image type="content" source="../../media/intune-block-at-first-sight.png" alt-text="Intune 構成ブロックを一目で確認する":::
+   :::image type="content" source="../../media/intune-block-at-first-sight.png" alt-text="Intune 構成ブロックを一目で確認する。":::
 
 4. 設定内容を保存します。
 
@@ -107,7 +107,7 @@ Microsoft Defender ウイルス対策は、複数の検出および防止テク�
    - **クラウドによる保護レベル**: 高
    - **Defender クラウドの延長タイムアウト (秒単位)**: 50
 
-   :::image type="content" source="images/endpointmgr-antivirus-cloudprotection.png" alt-text="EndpointManagerでの事前ブロックの設定":::
+   :::image type="content" source="images/endpointmgr-antivirus-cloudprotection.png" alt-text="EndpointManagerでの事前ブロックの設定。":::
 
 4. Microsoft Defender ウイルス対策のプロファイルを、**[すべてのユーザー]**、**[すべてのデバイス]**、または **[すべてのユーザーとデバイス]** などのグループに適用します。
 

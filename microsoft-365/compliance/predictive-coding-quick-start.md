@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 予測コーディング モジュールの使用を開始する方法については、Advanced eDiscovery。 この記事では、予測コーディングを使用して、調査に最も関連性の高いレビュー セット内のコンテンツを識別するエンドツーエンドのプロセスについて説明します。
-ms.openlocfilehash: fe0e19c61f441f7ae01ba1c8245301ab8c6e00a3c3b1c8ddf601476bcd1f4301
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0ca9e4ff8b42ced962b68fff9073e892d8ea5d4e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53866700"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574834"
 ---
 # <a name="quick-start-predictive-coding-in-advanced-ediscovery-preview"></a>クイック スタート: クイック スタートでの予測Advanced eDiscovery (プレビュー)
 
@@ -27,7 +27,7 @@ ms.locfileid: "53866700"
 
 予測コーディング プロセスの概要を以下に示します。
 
-![予測コーディングのクイック スタート プロセス](..\media\PredictiveCodingQuickStartProcess.png)
+![予測コーディングのクイック スタート プロセス。](..\media\PredictiveCodingQuickStartProcess.png)
 
 開始するには、モデルを作成し、関連性の高いアイテムまたは関連性の高いアイテムを 50 アイテムまでラベル付けします。 次に、システムはこのトレーニングを使用して、レビュー セット内のすべてのアイテムに予測スコアを適用します。 これにより、予測スコアに基づいてアイテムをフィルター処理できます。これにより、最も関連性の高い (または関連性の低い) アイテムを最初に確認できます。 より高い読み上げ率とリコール率を持つモデルをトレーニングする場合は、モデルが安定するまで、後続のトレーニング ラウンドでアイテムのラベル付けを続行できます。 モデルが安定化したら、最終的な予測フィルターを適用して、確認する項目の優先順位を設定できます。
 
@@ -67,7 +67,7 @@ ms.locfileid: "53866700"
 
 4. 各ドキュメントを確認し、閲覧 **ウィンドウ** の下部にある [関連する] または [関連しない] ボタンを選択してラベルを付きます。
 
-   ![各ドキュメントに関連性の高いラベルを付け、関連性の高いラベルを付けない](..\media\TrainModel1.png)
+   ![各ドキュメントに関連するラベルを付け、関連性の高いラベルを付け、関連付けは行います。](..\media\TrainModel1.png)
 
 5. 50 アイテムのラベルを付け終わったら、[完了] を **クリックします**。
 
@@ -81,7 +81,7 @@ ms.locfileid: "53866700"
 
 1. レビュー セットを開きます。
 
-   ![[フィルター] をクリックして [フィルター] フライアウト ページを表示します。](..\media\PredictionScoreFilter0.png)
+   ![[フィルター] をクリックして 、[フィルター] フライアウト ページを表示します。](..\media\PredictionScoreFilter0.png)
 
    事前に読み込まれた既定のフィルターは、レビュー セット ページの上部に表示されます。 これらの設定は Any のままに **できます**。
 
@@ -89,7 +89,7 @@ ms.locfileid: "53866700"
 
 3. **[Analytics &予測コーディング] セクションを展開** して、一連のフィルターを表示します。
 
-      ![[Analytics &コーディング] セクションの予測スコア フィルター](..\media\PredictionScoreFilter1.png)
+      ![[Analytics] セクションの [予測&フィルター] をクリックします。](..\media\PredictionScoreFilter1.png)
 
    予測スコア フィルターの名前付け規則は、 **予測スコア (モデル名) です**。 たとえば、モデル **A** という名前のモデルの予測スコア フィルター名は **、予測スコア (モデル A) です**。
 
@@ -97,7 +97,7 @@ ms.locfileid: "53866700"
 
 5. [レビュー セット] ページで、予測スコア フィルターのドロップダウンをクリックし、予測スコア範囲の最小値と最大値を入力します。 たとえば、次のスクリーンショットは、.5 ~ **1.0** の予測スコア **範囲を示しています**。
 
-   ![予測スコア フィルターの最小値と最大値](..\media\PredictionScoreFilter2.png)
+   ![予測スコア フィルターの最小値と最大値。](..\media\PredictionScoreFilter2.png)
 
 6. フィルターの外側をクリックすると、自動的にレビュー セットにフィルターが適用されます。
 

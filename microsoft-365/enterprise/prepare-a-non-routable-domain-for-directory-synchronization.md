@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: オンプレミスのユーザー アカウントに非ルーティング ドメインが関連付けられている場合、Microsoft 365 テナントとの同期前に実行する手順について説明します。
-ms.openlocfilehash: cecaee814d19f78b973ebd2f06c8d2c665d905de
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
-ms.translationtype: HT
+ms.openlocfilehash: dd93cfd85aa6f6f5788b6ae5562c2a2def3ffaa0
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356914"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574293"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>ディレクトリ同期のために非ルーティング ドメインの準備を整える
 
@@ -63,11 +63,11 @@ Microsoft 365 で確認したドメイン (複数の場合あり) と一致す�
   
 2. **[Active Directory ドメインと信頼関係]** ウィンドウで、**[Active Directory ドメインと信頼関係]** を右クリックして **[プロパティ]** を選択します。
     
-    ![[Active Directory ドメインと信頼関係] を右クリックして [プロパティ] を選択します](../media/39d20812-ffb5-4ba9-8d7b-477377ac360d.png)
+    ![[Active Directory ドメインと信頼] を右クリックし、[プロパティ] を選択します。](../media/39d20812-ffb5-4ba9-8d7b-477377ac360d.png)
   
 3. **[UPN サフィックス]** タブの **[代替の UPN サフィックス]** ボックスに、新しいサフィックスを入力して **[追加]** \> **[適用]** を選択します。
     
-    ![新しい UPN サフィックスを追加します](../media/a4aaf919-7adf-469a-b93f-83ef284c0915.PNG)
+    ![新しい UPN サフィックスを追加します。](../media/a4aaf919-7adf-469a-b93f-83ef284c0915.PNG)
   
     サフィックスの追加が完了したら、**[OK]** を選択します。 
     
@@ -83,7 +83,7 @@ Microsoft 365 で確認したドメイン (複数の場合あり) と一致す�
     
 3. **[アカウント]** タブの UPN サフィックス ドロップダウン リストで、新しい UPN サフィックスを選択してから **[OK]** をクリックします。
     
-    ![ユーザーの新しい UPN サフィックスを追加する](../media/54876751-49f0-48cc-b864-2623c4835563.png)
+    ![ユーザーの新しい UPN サフィックスを追加します。](../media/54876751-49f0-48cc-b864-2623c4835563.png)
   
 4. すべてのユーザに対して、ここまでの手順を実行します。
     

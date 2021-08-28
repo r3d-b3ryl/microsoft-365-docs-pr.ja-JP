@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365ネットワーク インサイト
-ms.openlocfilehash: ef844598d505e42f4fb99cb52321fc9709dbd4a2411884f7b8b4fff51c3a62d2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e5b46b4a19a52807a0690722e9a5f5f46727c7ae
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854787"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570511"
 ---
 # <a name="microsoft-365-network-insights"></a>Microsoft 365ネットワーク インサイト
 
@@ -52,9 +52,9 @@ ms.locfileid: "53854787"
 この分析情報は、一部の概要ビュー Egress"」と省略されます。
 
 > [!div class="mx-imgBorder"]
-> ![バックホールされたネットワーク出力](../media/m365-mac-perf/m365-mac-perf-insights-detail-backhauled.png)
+> ![バックホールされたネットワーク出力。](../media/m365-mac-perf/m365-mac-perf-insights-detail-backhauled.png)
 
-### <a name="what-does-this-mean"></a>これはどういう意味ですか?
+### <a name="what-does-this-mean"></a>これはどういうことですか?
 
 これは、オフィスの場所とネットワーク出力の間の距離が 500 マイル (800 キロメートル) を超える場合を識別します。 Office の場所は難読化されたクライアント コンピューターの場所によって識別され、ネットワーク出力の場所は、場所データベースへの逆 IP アドレスを使用して識別されます。 コンピューターで Location Services が無効になっている場合Windowsオフィスの場所が不正確になる可能性があります。 逆 IP アドレス データベース情報が不正確な場合、ネットワーク出力場所が不正確になる可能性があります。
 
@@ -72,7 +72,7 @@ ms.locfileid: "53854787"
 
 Exchange、SharePoint、Teams の重要な Office 365 ネットワーク エンドポイントがネットワーク仲介デバイスによって傍受および復号化された場合の SSL ブレークとインスペクションが示されているネットワーク仲介の分析情報の 1 つです。
 
-### <a name="what-does-this-mean"></a>これはどういう意味ですか?
+### <a name="what-does-this-mean"></a>これはどういうことですか?
 
 プロキシ サーバー、VPN、データ損失防止デバイスなどのネットワーク仲介デバイスは、トラフィックが中間的な Microsoft 365 クライアントのパフォーマンスと安定性に影響を与える可能性があります。
 
@@ -87,9 +87,9 @@ Exchange、SharePoint、Teams の重要な Office 365 ネットワーク エン�
 この分析情報は、一部の概要ビューで "Peers" と省略されます。
 
 > [!div class="mx-imgBorder"]
-> ![相対ネットワークパフォーマンス](../media/m365-mac-perf/m365-mac-perf-insights-detail-cust-near-you.png)
+> ![相対的なネットワークパフォーマンス。](../media/m365-mac-perf/m365-mac-perf-insights-detail-cust-near-you.png)
 
-### <a name="what-does-this-mean"></a>これはどういう意味ですか?
+### <a name="what-does-this-mean"></a>これはどういうことですか?
 
 この分析情報は、このオフィスの場所と同Microsoft 365顧客の集計パフォーマンスを調べる。 この分析情報は、ユーザーの平均待機時間が隣接テナントの平均待機時間より 10% 大きい場合に表示されます。
 
@@ -104,9 +104,9 @@ Exchange、SharePoint、Teams の重要な Office 365 ネットワーク エン�
 この分析情報は、一部の概要ビューでは "ルーティング" と省略されます。
 
 > [!div class="mx-imgBorder"]
-> ![最適ではない EXO フロント ドア](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-exo.png)
+> ![最適ではない EXO フロント ドア。](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-exo.png)
 
-### <a name="what-does-this-mean"></a>これはどういう意味ですか?
+### <a name="what-does-this-mean"></a>これはどういうことですか?
 
 優れたパフォーマンスExchange Onlineオフィスの場所から使用に適したサービス フロント ドアの一覧を示します。 現在のテストで、このリストに含Exchange Onlineサービス フロント ドアの使用が示されている場合は、この推奨事項を呼び出します。
 
@@ -121,9 +121,9 @@ Exchange、SharePoint、Teams の重要な Office 365 ネットワーク エン�
 この分析情報は、一部の概要ビューで "Afd" と省略されます。
 
 > [!div class="mx-imgBorder"]
-> ![最適でない SPO フロント ドア](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-spo.png)
+> ![最適でない SPO フロント ドア。](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-spo.png)
 
-### <a name="what-does-this-mean"></a>これはどういう意味ですか?
+### <a name="what-does-this-mean"></a>これはどういうことですか?
 
 テスト クライアントがSharePointしているオンライン サービスのフロント ドアを特定します。 次に、オフィスの場所の都市について、その都市のSharePointオンライン サービスのフロント ドアと比較します。 一致しない場合は、この推奨事項を作成します。
 
@@ -137,7 +137,7 @@ Exchange、SharePoint、Teams の重要な Office 365 ネットワーク エン�
 
 この分析情報は、一部の概要ビューで "スループット" と省略されます。
 
-### <a name="what-does-this-mean"></a>これはどういう意味ですか?
+### <a name="what-does-this-mean"></a>これはどういうことですか?
 
 ユーザーがオンラインおよび SharePoint および OneDrive for Business から取得できるダウンロード速度は、1 秒あたりのメガバイト (MBps) 単位で測定されます。 この値が 1 MBps 未満の場合は、この分析情報を提供します。
 
@@ -149,7 +149,7 @@ Exchange、SharePoint、Teams の重要な Office 365 ネットワーク エン�
 
 この分析情報は、中国のユーザーが他の地理的な場所Microsoft 365に接続している場合に表示されます。 
 
-### <a name="what-does-this-mean"></a>これはどういう意味ですか?
+### <a name="what-does-this-mean"></a>これはどういうことですか?
 
 組織にプライベート WAN 接続がある場合は、次の場所でインターネットへのネットワーク出力を持つ中国のオフィスの場所からネットワーク WAN 回線を構成することをお勧めします。
 
@@ -170,7 +170,7 @@ Exchange、SharePoint、Teams の重要な Office 365 ネットワーク エン�
 
 この分析情報は、サンプリングされた接続の 50% 以上が影響を受け取る場合に表示されます。 影響は、サンプルごとに 60% 未満Exchange評価によって定義されます。
 
-### <a name="what-does-this-mean"></a>これはどういう意味ですか?
+### <a name="what-does-this-mean"></a>これはどういうことですか?
 
 これは、ユーザーの大半が、ユーザーに接続するユーザーエクスペリエンスの問題が発生している可能性が高Outlook示Exchange Online。 サンプルの割合は、60 ポイントを下回るユーザーの割合を表している可能性があります。  
 
@@ -182,7 +182,7 @@ Exchange、SharePoint、Teams の重要な Office 365 ネットワーク エン�
 
 この分析情報は、サンプリングされた接続の 50% 以上が影響を受け取る場合に表示されます。 影響は、各サンプルSharePoint 40% 未満の評価によって定義されます。
 
-### <a name="what-does-this-mean"></a>これはどういう意味ですか?
+### <a name="what-does-this-mean"></a>これはどういうことですか?
 
 これは、ユーザーの大半が、ユーザーエクスペリエンスの問題が発生している可能性が高SharePoint示OneDrive。 サンプルの割合は、40 ポイントを下回るユーザーの割合を表している可能性があります。  
 
@@ -190,7 +190,7 @@ Exchange、SharePoint、Teams の重要な Office 365 ネットワーク エン�
 
 オフィスの場所ネットワーク接続の可視性を有効にする (まだ有効にしていない場合)。 SharePoint に影響を与えるネットワーク接続の不十分な影響を受け、ユーザーを Microsoft のネットワークに接続する各オフィスでネットワーク境界を改善する方法を見つける必要があります。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [Microsoft 365 管理 センターのネットワーク接続 (プレビュー)](office-365-network-mac-perf-overview.md)
 
