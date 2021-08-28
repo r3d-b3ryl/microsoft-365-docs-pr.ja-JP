@@ -19,12 +19,12 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: cc09593c7a8ceef04d0a61cc9bd7d5624943b28f
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: d8e83cfd877266bac6247246c078dbdc811368e5
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247116"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563512"
 ---
 # <a name="investigate-users-in-microsoft-365-defender"></a>ユーザーを調査Microsoft 365 Defender
 
@@ -36,7 +36,7 @@ ms.locfileid: "58247116"
 
 インシデント調査の一部には、ユーザー アカウントを含めできます。 [インシデント]**からインシデント** の [ユーザー] タブから開始し、&**ユーザー** >*通知>***します**。 
 
-:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="インシデントの [ユーザー] ページの例":::
+:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="インシデントの [ユーザー] ページの例。":::
 
 インシデントのユーザー アカウントの概要を簡単に取得するには、ユーザー アカウント名の横にあるチェック マークを選択します。 次に例を示します。
 

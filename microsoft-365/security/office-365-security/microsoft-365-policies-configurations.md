@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-overview
 ms.technology: mdo
-ms.openlocfilehash: 50898cf6062719b81b75de07ffab6b9a8c58cd8759d92c7cccc330a1389feb5c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9a44e4fcaff4ff774e0884fb78ec7399049d6d11
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53828163"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563500"
 ---
 # <a name="identity-and-device-access-configurations"></a>ID とデバイスのアクセス構成
 
@@ -85,7 +85,7 @@ ID とデバイス アクセスの設定とポリシーは、高度に規制さ�
 - **機密性の** 高い保護: 一部の顧客は、より高いレベルで保護する必要があるデータのサブセットを持つか、すべてのデータを高いレベルで保護する必要があります。 環境内のすべてのデータ セットまたは特定のデータ セットに対して保護を強化Microsoft 365できます。 機密データにアクセスする ID とデバイスはそれに相応しいレベルのセキュリティで保護することを推奨します。
 - **高度な規制**: 一部の組織では、高度に分類されたデータ、営業秘密を構成するデータ、または規制されたデータが少ない場合があります。 Microsoft は、ID とデバイスの保護を追加するなど、組織がそのような要件を満たすための機能を提供しています。
 
-![セキュリティ コーン - すべての顧客が特定の>一>にアクセスします。 特定のアプリケーションへの広範なアプリケーション](../../media/microsoft-365-policies-configurations/M365-idquality-threetiers.png)
+![セキュリティ コーン - すべての顧客が特定の>一>にアクセスします。 特定のアプリケーションへの幅広いアプリケーション。](../../media/microsoft-365-policies-configurations/M365-idquality-threetiers.png)
 
 このガイダンスでは、これらの保護層ごとに ID とデバイスの保護を実装する方法を示します。 このガイダンスは、組織の開始点として使用し、組織の特定の要件を満たすためにポリシーを調整します。
 
@@ -93,7 +93,7 @@ ID とデバイス アクセスの設定とポリシーは、高度に規制さ�
 
 この **アーキテクチャ モデルの ID とデバイスMicrosoft 365** は、どの機能が同等か示します。
 
-[![Id とデバイス保護の親指画像 (ポスター Microsoft 365)](../../media/microsoft-365-policies-configurations/o365-identity-device-protection-thumb.png)](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br> [PDF として表示する](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[PDF としてダウンロードする](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[アプリとしてダウンロードVisio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)  
+[![ポスターの ID とデバイス保護の親指Microsoft 365します。](../../media/microsoft-365-policies-configurations/o365-identity-device-protection-thumb.png)](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br> [PDF として表示する](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[PDF としてダウンロードする](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[アプリとしてダウンロードVisio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)  
 
 さらに、「データプライバシー規制に関する情報保護を展開する」ソリューションを[参照](../../solutions/information-protection-deploy.md)して、データ に格納されている情報を保護Microsoft 365。
 
@@ -131,7 +131,7 @@ Azure ADは、ID 管理機能の完全なスイートを提供します。 こ�
 
 Intune と Azure の各オブジェクト、設定、およびサブサービスを含む、id とデバイス ADコンポーネントを次に示します。
 
-![ID とデバイス アクセスのコンポーネント](../../media/microsoft-365-policies-configurations/identity-device-access-components.png)
+![ID とデバイス アクセスのコンポーネント。](../../media/microsoft-365-policies-configurations/identity-device-access-components.png)
 
 ### <a name="microsoft-intune"></a>Microsoft Intune
 

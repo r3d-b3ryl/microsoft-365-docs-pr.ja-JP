@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 3c364f9e-b9f6-4da4-a792-c8e8c8cd2e86
 description: この記事では、開発者ツールを使用してオンライン サイトで一般的なSharePointを診断Internet Explorer示します。
-ms.openlocfilehash: ff552963923fd6b3fe8d482a5892e8e4ad2779a41c08c0c554a65b98be5a408f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 44e60a2144b1a9a8ecc9ef5572e5cfd988c4b8af
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53891491"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561100"
 ---
 # <a name="diagnosing-performance-issues-with-sharepoint-online"></a>SharePoint Online のパフォーマンスの問題の診断
 
@@ -51,7 +51,7 @@ ms.locfileid: "53891491"
 
 開発者ツールを表示するには **、F12** キーを押し、次のアイコンWi-Fiクリックします。
   
-![F12 開発者ツールの Wi-Fi アイコンのスクリーンショット](../media/27acacbb-5688-459a-aa2f-5c8c5f17b76e.png)
+![F12 開発者ツールの Wifi アイコンのスクリーンショット。](../media/27acacbb-5688-459a-aa2f-5c8c5f17b76e.png)
   
 [ネットワーク **] タブ** で、緑色の再生ボタンを押してページを読み込む。 このツールは、要求したページを取得するためにブラウザーが要求するファイルをすべて返します。 次のスクリーン ショットは、そのようなリストを 1 つ示しています。
   
@@ -59,7 +59,7 @@ ms.locfileid: "53891491"
   
 また、このスクリーン ショットに示すように、右側にファイルのダウンロード時間を確認することもできます。
   
-![SharePoint から要求されたページを読み込むのにかかる時間を示す図](../media/d71ad1fa-9018-4fae-82eb-c1838e7db0ff.png)
+![要求されたページを読み込むのに要する時間を示すSharePoint。](../media/d71ad1fa-9018-4fae-82eb-c1838e7db0ff.png)
   
 これにより、ファイルの読み込み時間が視覚的に表示されます。 緑の線は、ページをブラウザーでレンダリングする準備が整った状態を表します。 これにより、サイトのページ読み込み速度が遅くなる可能性があるさまざまなファイルを簡単に確認できます。
   
@@ -81,11 +81,11 @@ ms.locfileid: "53891491"
 
 3. ツールによって返される .aspx ファイルのいずれかをクリックし、[詳細] を **クリックします**。
 
-    ![応答ヘッダーの詳細を示しています](../media/1f8a044a-caf8-4613-be2b-7e064141ac8a.png)
+    ![応答ヘッダーの詳細を表示します。](../media/1f8a044a-caf8-4613-be2b-7e064141ac8a.png)
   
 4. [**応答ヘッダー**] をクリックします。
 
-    ![応答ヘッダーの URL を示す図](../media/efc7076e-447e-447e-882a-ae3aa721e2c3.png)
+    ![応答ヘッダーの URL を示す図。](../media/efc7076e-447e-447e-882a-ae3aa721e2c3.png)
   
 ## <a name="whats-causing-performance-issues-in-sharepoint-online"></a>オンラインでのパフォーマンスの問題の原因SharePoint?
 <a name="F12ToolInfo"> </a>

@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: トピックの表示を管理する方法については、Microsoft Viva トピック。
-ms.openlocfilehash: 6ac247ba758929f367c99b963a19b0619ab588c077687c8027c2807d98732211
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b1ea14ccd1872825cd9ce7edb35ddc8c0a7f176e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864120"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561064"
 ---
 # <a name="manage-topic-visibility-in-microsoft-viva-topics"></a>トピックの表示を管理Microsoft Viva トピック
 
@@ -26,11 +26,11 @@ ms.locfileid: "53864120"
 1. [組織] Microsoft 365 管理センター、[組織の **設定]****の順にクリックします**。
 2. [サービス] **タブで** 、[トピック エクスペリエンス] **をクリックします**。
 
-    ![Connectを知る](../media/admin-org-knowledge-options-completed.png) 
+    ![Connect人に知識を提供します。](../media/admin-org-knowledge-options-completed.png) 
 
 3. [トピックの **表示] タブを選択** します。各設定の詳細については、以下のセクションを参照してください。
 
-    ![ナレッジ ネットワーク設定](../media/knowledge-network-settings-topic-visibility.png) 
+    ![ナレッジ ネットワーク設定。](../media/knowledge-network-settings-topic-visibility.png) 
 
 ##  <a name="change-who-can-see-topics-in-your-organization"></a>組織内のトピックを表示できるユーザーを変更する
 
@@ -42,7 +42,7 @@ ms.locfileid: "53864120"
     - **選択したユーザーまたはセキュリティ グループのみ**
     - **だれも**
 
-    ![Whoトピックを表示する](../media/k-manage-who-can-see-topics.png) 
+    ![Whoトピックを表示できます。](../media/k-manage-who-can-see-topics.png) 
 
 3. **[保存]** を選択します。  
  

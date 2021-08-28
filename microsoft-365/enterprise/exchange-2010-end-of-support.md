@@ -12,16 +12,16 @@ ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
 description: Exchange 2010 はサポートの終了に達しました。 この計画ロードマップを使用して、Exchange Onlineまたは新しいバージョンのExchange Server準備します。
-ms.openlocfilehash: dc7a9355be8232daefb158ca143fac377949480e714de77a644b5f8b1bdc3c6a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 14875c793380c509c578d86d2d835596fa57cc73
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53904956"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561076"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Exchange 2010 のサポート終了のロードマップ
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 Exchange Server 2010 年 10 月 **13** 日にサポートが終了しました。 Exchange 2010 から Microsoft 365、Office 365、または Exchange 2016 への移行をまだ開始していない場合は、計画を開始します。
 
@@ -40,7 +40,7 @@ Exchange Server 2010 年 10 月 **13** 日にサポートが終了しました�
 
 ## <a name="what-are-my-options"></a>使用できるオプション
 
-オプションを確認し、移行計画を準備する最適な時期です。 次の操作を行うことができます:
+オプションを確認し、移行計画を準備する最適な時期です。 次の操作を実行できます。
 
 - 完全に移行してMicrosoft 365。 カットオーバー、最小限のハイブリッド、または完全なハイブリッド移行を使用してメールボックスを移行します。 次に、オンプレミスのサーバー Exchange Active Directory を削除します。
 - オンプレミス サーバー Exchange 2010 Exchange 2016 に移行します。
@@ -56,7 +56,7 @@ Exchange Server 2010 年 10 月 **13** 日にサポートが終了しました�
 
 2010 年のサポート終了を回避するために使用できる 3 つのExchange Serverします。
 
-![Exchange Server 2010 アップグレード パス](../media/exchange-2010-end-of-support/exchange-2010-end-of-support-options.png)
+![Exchange Server 2010 アップグレード パス。](../media/exchange-2010-end-of-support/exchange-2010-end-of-support-options.png)
 
 以下のセクションでは、各オプションについて詳しく説明します。
 
@@ -92,7 +92,7 @@ Microsoft 365機能とエクスペリエンスを最初に取得し、組織が�
 
 ****
 
-|移行オプション|組織のサイズ|期間|
+|移行オプション|組織のサイズ|Duration|
 |---|---|---|
 |カットオーバー移行|シート数が 150 未満|1 週間以下|
 |最小限のハイブリッド移行|シート数が 150 未満|数週間以下|
@@ -199,7 +199,7 @@ Exchange 2016 には、以前のリリースのすべての機能が含Exchange�
 
 ****
 
-|考慮事項|詳細|
+|考慮事項|詳細情報|
 |---|---|
 |サポート終了日|2010 Exchangeと同様に、各バージョンExchangeサポート終了日が設定されています。 <p> Exchange 2013 - 2023 年 4 月 <p> Exchange 2016 - 2025 年 10 月 <p> サポート終了日より早く、別の移行を実行する必要があります。 2023 年 4 月は、思ったよりずっと近いです。|
 |2013 Exchange 2016 への移行パス|2010 Exchange から新しいバージョンへの移行パスは、2013 年または 2016 年Exchange選択Exchangeです。 <p> 2013 Exchange 2016 を既存の 2010 組織Exchangeインストールします。 <p> サービスおよび他のインフラストラクチャを 2013 または 2016 Exchangeに移動します。 <p> メールボックスとパブリック フォルダーを 2013 または 2016 Exchange 2010 サーバーの残りの使用停止Exchange移動します。|
@@ -221,7 +221,7 @@ Exchange 2016 には、以前のリリースのすべての機能が含Exchange�
 
 Office 2010 サーバー/クライアント、および Windows 7のアップグレード、移行、およびクラウドへの移行オプションを視覚的にまとめた概要は、[サポート終了ポスター](../downloads/Office2010Windows7EndOfSupport.pdf) をご覧ください。
 
-[![2010 年のクライアントOfficeサーバーと 7 ポスターのWindows終了](../media/microsoft-365-overview/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
+[![2010 年のクライアントOfficeサーバーと 7 ポスターのWindows終了します。](../media/microsoft-365-overview/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
 
 この 1 ページのポスターは、Office 2010 クライアントおよびサーバー製品、および Windows 7 のサポート終了に対応するために使用できるさまざまなパスを示し、Microsoft 365 Enterprise での優先パスとオプションのサポートが強調表示されています。
 
@@ -229,7 +229,7 @@ Office 2010 サーバー/クライアント、および Windows 7のアップグ
 
 ## <a name="what-if-i-need-help"></a>ヘルプが必要な場合は、
 
-ユーザーが Microsoft FastTrack サービスMicrosoft 365移行する場合は、Microsoft FastTrack サービスを使用できる可能性があります。 FastTrack には、ベスト プラクティス、ツール、およびリソースが提供され、可能な限りシームレスMicrosoft 365移行できます。 何より、サポート エンジニアが計画と設計から最後のメールボックスの移行までを説明します。 FastTrack の詳細については [、「Microsoft FastTrack」を参照してください](https://fasttrack.microsoft.com/)。
+移行する場合は、microsoft Microsoft 365 サービスを使用する資格FastTrackがあります。 FastTrack、ベスト プラクティス、ツール、およびリソースを提供して、移行を可能な限りシームレスMicrosoft 365作成します。 何より、サポート エンジニアが計画と設計から最後のメールボックスの移行までを説明します。 詳細については、「Microsoft FastTrack」[を参照FastTrack。](https://fasttrack.microsoft.com/)
 
 Microsoft 365 への移行中に問題が発生し、FastTrack を使用していない場合、または新しいバージョンの Exchange Server に移行する場合は、次のリソースを使用できます。
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 23f6b23d958a51bd84498c08ef95672ec62ff6e5
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 6c3adb8b07de50ca655c27a2d70f7868efd32332
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532765"
+ms.locfileid: "58561040"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Microsoft Defender Windowsエンドポイント サービスへのオンボード サーバー
 
@@ -175,7 +175,7 @@ R2 と Windows Server 2012バージョン 2002 以降Windows Server 2016使用Mi
 
     1. パッシブ モード イベントを含む最近のイベントが見つかったこと確認します。
 
-       ![パッシブ モード検証結果のイメージ](images/atp-verify-passive-mode.png)
+       ![パッシブ モード検証結果のイメージ。](images/atp-verify-passive-mode.png)
 
 3. 次のコマンドを実行して、Microsoft Defender AV がインストールされていることを確認します。
 
@@ -260,7 +260,7 @@ Windows クライアント デバイスで使用できるのと同じ方法で�
 
 2. [Defender for Endpoint] ワークスペースを選択し、[削除] を **クリックします**。
 
-    ![プロパティのMicrosoft Monitoring Agent画像](images/atp-mma.png)
+    ![[プロパティ] Microsoft Monitoring Agentイメージ。](images/atp-mma.png)
 
 #### <a name="run-a-powershell-command-to-remove-the-configuration"></a>PowerShell コマンドを実行して構成を削除する
 
@@ -270,7 +270,7 @@ Windows クライアント デバイスで使用できるのと同じ方法で�
 
    1. オペレーティング **システムWindows Server 2008 R2 SP1、2012 R2、2016** を選択し、ワークスペース ID を取得します。
 
-      ![サーバーオンボーディングWindowsイメージ](images/atp-server-offboarding-workspaceid.png)
+      ![サーバーオンボーディングWindowsイメージ。](images/atp-server-offboarding-workspaceid.png)
 
 2. 管理者特権の PowerShell を開き、次のコマンドを実行します。 取得して置き換えたワークスペース ID を使用します `WorkspaceID` 。
 
@@ -325,28 +325,28 @@ OPINSIGHTS_WORKSPACE_KEY=<your workspace key>== AcceptEndUserLicenseAgreement=1"
 
 - "c:\windows\MMA" という名前のグループ ポリシー フォルダーを作成する
 
-     :::image type="content" source="images/grppolicyconfig1.png" alt-text="フォルダー":::
+     :::image type="content" source="images/grppolicyconfig1.png" alt-text="フォルダー。":::
 
     **これにより、GPO が適用され、MMA と呼ばれるすべてのサーバーに新しいフォルダーが追加され、c:\windows に格納されます。これには、MMA、前提条件、およびインストール スクリプトのインストール ファイルが含まれる。**
 
 - Net ログオンに格納されている各ファイルのグループ ポリシー ファイルの基本設定を作成します。
 
-     :::image type="content" source="images/grppolicyconfig2.png" alt-text="グループ ポリシーイメージ1":::
+     :::image type="content" source="images/grppolicyconfig2.png" alt-text="グループ ポリシー イメージ 1。":::
 
 DOMAIN\NETLOGON\MMA\filename から C:\windows\MMA\filename にファイルをコピー **します。**
 
-:::image type="content" source="images/deploymma.png" alt-text="mma cmd を展開する":::
+:::image type="content" source="images/deploymma.png" alt-text="mma cmd を展開します。":::
 
 2 つの KB (1 つは Windows Server 2008R2/Windows 7、もう 1 つは Windows Server 2012 R2) の場合は、このプロセスを繰り返しますが、[COMMON] タブでアイテム レベルのターゲット設定を作成します。そのため、ファイルはスコープ内の適切なプラットフォーム/オペレーティング システム バージョンにのみコピーされます。
 
-:::image type="content" source="images/targeteditor.png" alt-text="ターゲット エディター":::
+:::image type="content" source="images/targeteditor.png" alt-text="ターゲット エディター。":::
 
 - サーバー 2008 R2 Windows Windows6.1-BJ3080149-x64.msu が必要です (コピーダウンのみ)
 - たとえばWindows Server 2012 R2 Windows8.1-BJ3080149-x64.msu が必要です (コピーダウンのみ)。
 
 これが完了したら、起動スクリプト ポリシーを作成する必要があります。
 
-:::image type="content" source="images/startupprops.png" alt-text="プロパティの起動":::
+:::image type="content" source="images/startupprops.png" alt-text="プロパティを起動します。":::
 
 ここで実行するファイルの名前は c:\windows\MMA\DeployMMA.cmd です。
 サーバーが起動プロセスの一部として再起動すると、カスタマー エクスペリエンスと診断テレメトリ KB の更新プログラムがインストールされ、MMA エージェントがインストールされ、ワークスペース ID とキーが設定され、サーバーがオンボードされます。
@@ -356,13 +356,13 @@ DOMAIN\NETLOGON\MMA\filename から C:\windows\MMA\filename にファイルを�
 
 スクリプトは exit メソッドを持ち、MMA がインストールされている場合は再び実行されませんので、毎日スケジュールされたタスクを使用して同じ結果を得る場合も可能です。 Configuration Manager コンプライアンス ポリシーと同様に、MMA が存在しているのを確認するために毎日チェックされます。
 
-:::image type="content" source="images/schtask.png" alt-text="スケジュール タスク":::
+:::image type="content" source="images/schtask.png" alt-text="タスクのスケジュールを設定します。":::
 
-:::image type="content" source="images/newtaskprops.png" alt-text="新しいタスクのプロパティ":::
+:::image type="content" source="images/newtaskprops.png" alt-text="新しいタスクのプロパティ。":::
 
-:::image type="content" source="images/deploymmadowmload.png" alt-text="mma ダウンロード の小道具を展開する":::
+:::image type="content" source="images/deploymmadowmload.png" alt-text="mma ダウンロード の小道具を展開します。":::
 
-:::image type="content" source="images/tasksch.png" alt-text="タスク スケジューラ":::
+:::image type="content" source="images/tasksch.png" alt-text="タスク スケジューラ。":::
 
 Server 2008 R2 のオンボーディングに関するドキュメントで特に説明したように、以下を参照してください。
 

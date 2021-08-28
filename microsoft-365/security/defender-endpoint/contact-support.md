@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 07d810f1588de01e4ee53294b39cc6b09b372046
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 12a796765e21e674ef46334dbd03478e843ef663
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58594530"
+ms.locfileid: "58563572"
 ---
 # <a name="contact-microsoft-defender-for-endpoint-support"></a>Microsoft Defender for Endpoint サポートに連絡する
 
@@ -47,7 +47,7 @@ Defender for Endpoint は最近、サポート プロセスをアップグレー
 
 少なくとも、サービス サポート管理者またはヘルプ **デスク管理者の** 役割が必要です。
 
-アクセス許可を持つ役割の詳細については、「 [セキュリティ管理者のアクセス許可」を参照してください](/azure/active-directory/roles/permissions-reference#security-administrator)。 アクションを含むロールは `microsoft.office365.supportTickets/allEntities/allTasks` 、ケースを送信できます。
+アクセス許可を持つ役割の詳細については、「 [セキュリティ管理者のアクセス許可」を参照してください](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator-permissions)。 アクションを含むロールは `microsoft.office365.supportTickets/allEntities/allTasks` 、ケースを送信できます。
 
 管理者ロールの一般的な情報については、「管理者ロール [について」を参照してください](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true)。
 

@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: 最新リリースを導入している組織での、Windows 10 アプリ、 Microsoft 365 アプリのチャネルの使用方法。
-ms.openlocfilehash: 71fd3e752cf4ab48c3a8ece49b8263fd5f3d01d2
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 025f6976fd578af4bf0c9a0c268f046f72ef6901
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356794"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561088"
 ---
 # <a name="example-of-broad-deployment-for-the-latest-releases"></a>最新リリースの幅広い展開例
 
@@ -103,7 +103,7 @@ Microsoft 365 アプリの展開方法と戦略の詳細については、[Micro
 
 この組織例で使用されている製品、チャネル、展開グループを次に示します。 
 
-![最新リリースの幅広い展開のための展開グループ](../media/deploy-update-channels-examples-rapid-deploy/group-summary.png)
+![最新リリースの広範な展開のための展開グループ。](../media/deploy-update-channels-examples-rapid-deploy/group-summary.png)
 
 ## <a name="see-also"></a>関連項目
 

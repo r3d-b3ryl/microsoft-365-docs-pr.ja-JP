@@ -1,6 +1,6 @@
 ---
-title: Defender で高度な検索クエリ結果をMicrosoft 365する
-description: Defender の高度な検索によって返されるクエリ結果をMicrosoft 365する
+title: 高度な検索クエリの結果を処理する (Microsoft 365 Defender
+description: 高度な検索によって返されるクエリ結果を、高度な情報でMicrosoft 365 Defender
 keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、カスタム検出、スキーマ、kusto、視覚化、グラフ、フィルター、ドリルダウン
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: eccf93b019baa240a46260a28f3f0bc109345dd4
-ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
+ms.openlocfilehash: 713a2c8b824b5c8fbffb1dcb35465d8f19f727d0
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51952598"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563524"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>高度な検索クエリの結果を処理する
 
@@ -50,7 +50,7 @@ ms.locfileid: "51952598"
 
 | ビューの種類 | 説明 |
 | -- | -- |
-| **表** | クエリ結果を表形式で表示する |
+| **Table** | クエリ結果を表形式で表示する |
 | **縦棒グラフ** | X 軸上の一連の一意の項目を、高さが別のフィールドの数値を表す垂直バーとしてレンダリングされます。 |
 | **積み上げ列グラフ** | x 軸上の一連の一意のアイテムを、高さが 1 つ以上の他のフィールドの数値を表す積み上げ縦棒としてレンダリングされます。 |
 | **円グラフ** | 一意のアイテムを表す断面円グラフをレンダリングします。 各円グラフのサイズは、別のフィールドの数値を表します。 |
@@ -71,8 +71,8 @@ AlertInfo
 ```
 結果をレンダリングすると、各重大度値が個別の列として列グラフに表示されます。
 
-![列グラフとして表示される高度な検索クエリ結果の画像 重要度別のアラートのクエリ結果を列グラフ ](../../media/advanced-hunting-column-chart.jpg)
- *として表示する*
+![列グラフとして表示される高度な検索クエリ結果のイメージ。 ](../../media/advanced-hunting-column-chart.jpg)
+*列グラフとして表示される重大度別のアラートのクエリ結果*
 
 #### <a name="alert-severity-by-operating-system"></a>オペレーティング システムによるアラートの重大度
 演算子を使用して、 `summarize` 複数のフィールドの値をグラフ化する結果を準備することもできます。 たとえば、アラートの重大度がオペレーティング システム (OS) 全体に分散される方法を理解できます。 
@@ -87,8 +87,8 @@ AlertInfo
 ```
 これらの結果は、積み上げ列グラフを使用して最適に視覚化されます。
 
-![積み上げグラフとして表示される高度な検索クエリ結果のイメージ OS によるアラートのクエリ結果と、積み上げグラフとして ](../../media/advanced-hunting-stacked-chart.jpg)
- *表示* される重大度
+![積み上げグラフとして表示される高度な検索クエリ結果のイメージ。 ](../../media/advanced-hunting-stacked-chart.jpg)
+*積み上げグラフとして表示される OS と重大度によるアラートのクエリ結果*
 
 #### <a name="phishing-emails-across-top-ten-sender-domains"></a>上位 10 個の送信者ドメインのフィッシングメール
 有限ではない値のリストを扱う場合は、演算子を使用して、最も多くのインスタンスを持つ値のみを `Top` グラフ化できます。 たとえば、フィッシングメールが最も多い上位 10 個の送信者ドメインを取得するには、次のクエリを使用します。
@@ -101,8 +101,8 @@ EmailEvents
 ```
 円グラフ ビューを使用して、上位ドメイン全体の分布を効果的に表示します。
 
-![上位の送信者ドメイン間でのフィッシングメールの配布を示す円グラフとして表示される高度な検索クエリ結果 ](../../media/advanced-hunting-pie-chart.jpg)
- *の画像*
+![円グラフとして表示される高度な検索クエリ結果のイメージ。 ](../../media/advanced-hunting-pie-chart.jpg)
+*上位の送信者ドメイン間でのフィッシングメールの配布を示す円グラフ*
 
 #### <a name="file-activities-over-time"></a>時間の間のファイル アクティビティ
 演算子を `summarize` 関数と一緒に使用すると、時間のとともに特定のインジケーター `bin()` に関連するイベントを確認できます。 以下のクエリは、ファイルに関連するイベントを 30 分間隔でカウントして、そのファイルに関連するアクティビティの `invoice.doc` スパイクを表示します。
@@ -115,8 +115,8 @@ AppFileEvents
 ```
 以下の線グラフは、以下を含むより多くのアクティビティを含む期間を明確に強調表示します `invoice.doc` 。 
 
-![ファイルに関連するイベントの時間の数を示す線グラフとして表示される高度な検索クエリ ](../../media/advanced-hunting-line-chart.jpg)
- *結果のイメージ*
+![線グラフとして表示される高度な検索クエリ結果のイメージ。 ](../../media/advanced-hunting-line-chart.jpg)
+*ファイルに関連するイベントの時間の数を示す線グラフ*
 
 
 ## <a name="export-tables-and-charts"></a>表とグラフのエクスポート
@@ -132,7 +132,7 @@ AppFileEvents
 - **プロセス ツリー** - プロセス情報を含むレコードに対して生成され、利用可能なコンテキスト情報を使用して強化されます。一般に、より多くの列を返すクエリを実行すると、より豊富なプロセス ツリーが生成される可能性があります。
 - **すべての詳細** - レコード内の列のすべての値  
 
-![選択したレコードの画像(レコードを検査するパネル付き)](../../media/mtp-ah/inspect-record.png)
+![選択したレコードのイメージと、レコードを検査するパネル。](../../media/mtp-ah/inspect-record.png)
 
 コンピューター、ファイル、ユーザー、IP アドレス、URL など、クエリ結果内の特定のエンティティに関する詳細情報を表示するには、エンティティ識別子を選択して、そのエンティティの詳細なプロファイル ページを開きます。
 
@@ -143,19 +143,19 @@ AppFileEvents
 - 選択した値をクエリ (`!=`) から除外する 
 - クエリに値を追加するためのより高度な演算子 `contains`、`starts with`、および `ends with` を取得する 
 
-![高度な検索結果セットのイメージ](../../media/advanced-hunting-results-filter.png)
+![高度な検索結果セットのイメージ。](../../media/advanced-hunting-results-filter.png)
 
 ## <a name="filter-the-query-results"></a>クエリ結果をフィルター処理する
 右に表示されるフィルターは、結果セットの要約を提供します。 各列には、その列で見つかった個別の値とインスタンスの数を一覧表示する独自のセクションがあります。
 
 クエリを絞り込むには、含める値または除外する値のボタンを選択し、[クエリの実行 `+` `-` ] **を選択します**。
 
-![高度な捜索フィルターの画像](../../media/advanced-hunting-filter.png)
+![高度なハンティング フィルターのイメージ。](../../media/advanced-hunting-filter.png)
 
 フィルターを適用してクエリを変更し、クエリを実行すると、結果がそれに応じて更新されます。
 
 >[!NOTE]
->この記事の一部のテーブルは、Microsoft Defender for Endpoint では使用できない場合があります。 [Defender を有効Microsoft 365、](m365d-enable.md)より多くのデータ ソースを使用して脅威を探します。 「Advanced Hunting queries from Microsoft Defender for Endpoint 」 の手順に従って、高度なハンティング ワークフローを Microsoft Defender for Endpoint から Microsoft 365 Defender に[移動できます](advanced-hunting-migrate-from-mde.md)。
+>この記事の一部のテーブルは、Microsoft Defender for Endpoint では使用できない場合があります。 [複数のデータ Microsoft 365 Defender](m365d-enable.md)を使用して脅威を検出するには、このオプションをオンにしてください。 高度なハンティング ワークフローを Microsoft Defender for Endpoint から Microsoft 365 Defenderに移動するには、「Advanced Hunting [queries](advanced-hunting-migrate-from-mde.md)を Microsoft Defender for Endpoint から移行する」の手順に従います。
 
 ## <a name="related-topics"></a>関連項目
 - [高度な追求の概要](advanced-hunting-overview.md)

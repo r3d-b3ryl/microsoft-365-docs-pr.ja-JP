@@ -16,12 +16,12 @@ ms.collection:
 description: 詳細については、「セーフドキュメント」または「Microsoft 365 E5」をMicrosoft 365 E5 Security。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dd9928034c8043f7852df0eeecdae870c9393c66
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: b1009e3c8e75497b32222b61b95810d7a50b33d2
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58254929"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563332"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Microsoft 365 E5 の安全なドキュメント
 
@@ -52,7 +52,7 @@ ms.locfileid: "58254929"
   >
   > - Microsoft 365 管理センターで、対応する Azure Active Directory の役割にユーザーを追加すると、ユーザーには、必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
   >
-  > - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
+  > - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
 
 ### <a name="how-does-microsoft-handle-your-data"></a>Microsoft はデータを処理する方法を説明します。
 
@@ -67,8 +67,8 @@ ms.locfileid: "58254929"
 2. [添付ファイル **セーフ] ページで**、[グローバル設定]**をクリックします**。
 
 3. [グローバル **設定] が** 表示されたら、次の設定を構成します。
-   - **[クライアントセーフドキュメントOfficeオン** にする: トグルを右に移動して機能を有効にします。トグルを ![ オンにします ](../../media/scc-toggle-on.png) 。
-   - **セーフ ドキュメント** がファイルを悪意のあるファイルと特定した場合でも、保護されたビューをクリックすることを許可する: このオプションはオフのままにすることをお勧めします (トグルは左に切り替えます。 ![ ](../../media/scc-toggle-off.png)
+   - **[クライアントセーフドキュメントOffice有効** にする: トグルを右に移動して、機能を有効にします。[オンに切り替 ![ え] をオンにします ](../../media/scc-toggle-on.png) 。
+   - **セーフ** ドキュメントがファイルを悪意のあるファイルと特定した場合でも、保護されたビューをクリックすることを許可する: このオプションをオフのままにすることをお勧めします (トグルは左に切り替えます。 ![ ](../../media/scc-toggle-off.png)
 
    完了したら、**[保存]** をクリックします。
 

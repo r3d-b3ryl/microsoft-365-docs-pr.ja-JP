@@ -17,12 +17,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: 関連する機能を管理する方法については、Microsoft 365、Teams、SharePoint、およびYammer。
-ms.openlocfilehash: 5c18dec0f2394273482366dcf230489b13b1b2e90e4d8459a006bc31fabbc6a0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fefda518d9864984d7fb8ee6f82e57ad14ff7b6e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53883720"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563320"
 ---
 # <a name="what-is-collaboration-governance"></a>共同作業のガバナンスとは?
 
@@ -34,7 +34,7 @@ ms.locfileid: "53883720"
 
 グループ、Microsoft 365、Teams、Yammerなどのサービスは、共同作業に必要なツールを提供することで、ユーザーを支援し、シャドウ IT のリスクを軽減します。 Microsoft 365に必要なガバナンス機能を実装するための豊富なツールセットがあります。 
 
-![グループ内のコラボレーション ガバナンス オプションを示すMicrosoft 365](../media/collaboration-governance-overview.png)
+![グループ内のコラボレーション ガバナンス オプションを示Microsoft 365。](../media/collaboration-governance-overview.png)
 
 この一連の記事は、グループ、チーム、および SharePoint 設定の相互作用、使用可能なガバナンス機能、および Microsoft 365 でのコラボレーション機能のガバナンス 計画を作成および実装する方法を理解するのに役立ちます。
 
@@ -52,7 +52,7 @@ Microsoft 365グループを使用すると、共同作業を行うユーザー�
 
 Microsoft 365グループには、ユーザーが通信と共同作業に使用できる一組のリンクされたリソースが含まれます。 グループには常に、SharePoint、Planner、Power BIワークスペース、メールボックスと予定表、およびストリームが含まれます。 グループの作成方法に応じて、オプションで他のサービス (Teams、Yammer、Project。
 
-![グループとMicrosoft 365サービスを示す図](../media/microsoft-365-groups-hub-spoke.png)
+![グループとMicrosoft 365サービスを示す図。](../media/microsoft-365-groups-hub-spoke.png)
 
 |関連情報|説明|
 |:------|:----------|
@@ -79,7 +79,7 @@ Microsoft 365グループには、組織内のグループの管理に役立つ�
 - Microsoft Teams: 特定のサブグループ別に編成された、さまざまなトピックに関する非公式でリアルタイムの会話を行える常設チャット ベースのワークスペース
 - Yammer: 共同作業のためのエンタープライズ ソーシャル エクスペリエンス
 
-![ユーザー、ユーザー、Teams、Yammerを使用するOutlook](../media/inner-loop-outer-loop.png)
+![ユーザー、ユーザー、Teams、Yammerを使用するOutlook。](../media/inner-loop-outer-loop.png)
 
 - Teams: チャット ベースのワークスペース (高速なコミュケーション) – 内部ループ
   - ユーザーが毎日作業するユーザーとの共同作業のために構築されています
@@ -164,7 +164,7 @@ Microsoft 365 でコラボレーション機能を使用する方法を決定す
 5. 通信の管理を計画する - コラボレーション シナリオで使用可能 [な通信ガバナンス オプションを確認します](groups-teams-communication-governance.md)。
 6. 組織とライフサイクルのガバナンスを計画する - グループとチームの作成、名前付け、有効期限、アーカイブに使用するポリシー [を選択します](plan-organization-lifecycle-governance.md)。 また、グループ、[チーム、](end-life-cycle-groups-teams-sites-yammer.md)およびグループのライフサイクルの終了オプションYammer
 
-![推奨されるガバナンス手順の図](../media/collaboration-governance-steps.png)
+![推奨されるガバナンス手順の図。](../media/collaboration-governance-steps.png)
 
 ## <a name="training-for-administrators"></a>管理者向けトレーニング
 
@@ -174,7 +174,7 @@ Microsoft Learn のトレーニング モジュールを使用すると、Micros
 
 |トレーニング:|情報保護とガバナンスを管理する|
 |:---|:---|
-|![情報保護トレーニング アイコン](../media/information-protection-governance.svg)|今日、生成されるデータ量はかつてないほど急速に増加し、従業員はあらゆる場所で仕事をしたいと考えており、規制の状況は常に変化しています。 情報保護とガバナンスに関するMicrosoft のソリューションで、企業はデータの保護と従業員の生産性との適切なバランスの実現を保つことができます。 このラーニングパスはMicrosoft 365 認定: セキュリティ管理者  と Microsoft 365 認定: エンタープライズ管理エキスパート  の認定のための準備を行うことが出来ます。<br><br>5 時間 13 分 - ラーニング パス - 7 モジュール|
+|![情報保護トレーニング アイコン。](../media/information-protection-governance.svg)|今日、生成されるデータ量はかつてないほど急速に増加し、従業員はあらゆる場所で仕事をしたいと考えており、規制の状況は常に変化しています。 情報保護とガバナンスに関するMicrosoft のソリューションで、企業はデータの保護と従業員の生産性との適切なバランスの実現を保つことができます。 このラーニングパスはMicrosoft 365 認定: セキュリティ管理者  と Microsoft 365 認定: エンタープライズ管理エキスパート  の認定のための準備を行うことが出来ます。<br><br>5 時間 13 分 - ラーニング パス - 7 モジュール|
 
 > [!div class="nextstepaction"]
 > [スタート>](/learn/modules/m365-compliance-information-governance/introduction/)
@@ -183,7 +183,7 @@ Microsoft Learn のトレーニング モジュールを使用すると、Micros
 
 |トレーニング:|Microsoft 365 で企業情報を保護する|
 |:---|:---|
-|![Teamsトレーニング アイコン](../media/protect-enterprise-information-microsoft-365.svg)|組織の情報を保護することは、かつてないほど困難になっています。 「Microsoft 365 で社内の情報を保護する」のラーニング パスでは、機密情報を不用意な共有や誤用から保護する方法、データを検出して分類する方法、秘密度ラベルを使用して保護する方法、損失から保護するために機密情報を監視および分析する方法について説明します。 この学習パスは、セキュリティ管理者の認定:セキュリティ管理者アソシエMicrosoft 365 Microsoft 365認定: Enterpriseエキスパート認定の準備に役立ちます。<br><br>1 時間 - ラーニング パス - 5 モジュール|
+|![Teamsのアイコンをクリックします。](../media/protect-enterprise-information-microsoft-365.svg)|組織の情報を保護することは、かつてないほど困難になっています。 「Microsoft 365 で社内の情報を保護する」のラーニング パスでは、機密情報を不用意な共有や誤用から保護する方法、データを検出して分類する方法、秘密度ラベルを使用して保護する方法、損失から保護するために機密情報を監視および分析する方法について説明します。 この学習パスは、セキュリティ管理者の認定:セキュリティ管理者アソシエMicrosoft 365 Microsoft 365認定: Enterpriseエキスパート認定の準備に役立ちます。<br><br>1 時間 - ラーニング パス - 5 モジュール|
 
 > [!div class="nextstepaction"]
 > [スタート>](/learn/modules/m365-security-info-overview/introduction/)
@@ -192,7 +192,7 @@ Microsoft Learn のトレーニング モジュールを使用すると、Micros
 
 |トレーニング:|Microsoft 365 のセキュリティおよびコンプライアンス機能の基本的な知識を示します|
 |:---|:---|
-|![セキュリティとコンプライアンスのトレーニング アイコン](../media/microsoft-365-security-and-compliance-capabilities.svg)|エンタープライズをセキュリティで保護し、規制要件に対応できるようにするために、365 Microsoft のセキュリティおよびコンプライアンス ソリューション エリアに関する情報を参照します。 基本的なクラウド コンピューティングの概念に慣れていない場合は、クラウド 概念 - クラウド コンピューティングの原則を [使用することをお勧めします](/learn/modules/principles-cloud-computing/index)。<br><br>3 時間 11 分 - ラーニング パス - 8 モジュール|
+|![セキュリティとコンプライアンスのトレーニング アイコン。](../media/microsoft-365-security-and-compliance-capabilities.svg)|エンタープライズをセキュリティで保護し、規制要件に対応できるようにするために、365 Microsoft のセキュリティおよびコンプライアンス ソリューション エリアに関する情報を参照します。 基本的なクラウド コンピューティングの概念に慣れていない場合は、クラウド 概念 - クラウド コンピューティングの原則を [使用することをお勧めします](/learn/modules/principles-cloud-computing/index)。<br><br>3 時間 11 分 - ラーニング パス - 8 モジュール|
 
 > [!div class="nextstepaction"]
 > [スタート>](/learn/modules/what-is-m365/1-introduction/)
@@ -206,14 +206,14 @@ IT アーキテクトが Microsoft 365 のグループについて知ってお�
 
 |**アイテム**|**説明**|
 |:-----|:-----|
-|[![グループ インフォグラフィックのサムネイル](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> 更新日: 2019 年 6 月|これらの図は、さまざまな種類のグループがどのように作成および管理されているか、そしていくつかのガバナンスの推奨事項を詳述しています。|
+|[![グループインフォグラフィックのサム イメージ。](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> 更新日: 2019 年 6 月|これらの図は、さまざまな種類のグループがどのように作成および管理されているか、そしていくつかのガバナンスの推奨事項を詳述しています。|
 
 ### <a name="microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects"></a>IT アーキテクト向け Microsoft 365 の Microsoft Teams と関連生産性サービス
 Microsoft Teamsをリードする Microsoft 365 での生産性サービスの論理的なアーキテクチャ。
 
 |**アイテム**|**説明**|
 |:-----|:-----|
-|[![Teams の論理的なアーキテクチャ ポスターのサムネイル](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>更新日: 2019 年 4 月   |マイクロソフトは、連携してデータ ガバナンス、セキュリティ、およびコンプライアンス機能を備えたコラボレーション エクスペリエンスを提供する、一連の生産性サービスを提供しています。 <br/> <br/>この一連の図は、Microsoft Teams をはじめとする、エンタープライ ズアーキテクト向けの生産性サービスの論理アーキテクチャを概説したものです。|
+|[![論理アーキテクチャポスター Teams親指画像。](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>更新日: 2019 年 4 月   |マイクロソフトは、連携してデータ ガバナンス、セキュリティ、およびコンプライアンス機能を備えたコラボレーション エクスペリエンスを提供する、一連の生産性サービスを提供しています。 <br/> <br/>この一連の図は、Microsoft Teams をはじめとする、エンタープライ ズアーキテクト向けの生産性サービスの論理アーキテクチャを概説したものです。|
 
 ### <a name="microsoft-365-information-protection-and-compliance-capabilities"></a>Microsoft 365保護とコンプライアンス機能
 
@@ -224,7 +224,7 @@ Microsoft 365情報保護とコンプライアンス機能の幅広いセット�
 
 | アイテム | 説明 |
 |:-----|:-----|
-|[![モデル ポスター: Microsoft 365 の情報保護とコンプライアンスの機能](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> 英語: [PDF としてダウンロードする](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [Visio としてダウンロードする](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> 日本語: [PDF としてダウンロードする](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)  \| [Visio としてダウンロードする](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx) <br/> 更新日: 2020 年 11 月|含まれる内容: <ul><li>  Microsoft の情報保護およびデータ損失防止</li><li>アイテム保持ポリシーと保持ラベル </li><li>情報バリア</li><li>コミュニケーション コンプライアンス</li><li>インサイダー リスク</li><li>サードパーティのデータの取り込み</li>|
+|[![モデルポスター: Microsoft 365とコンプライアンス機能を提供します。](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> 英語: [PDF としてダウンロードする](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [Visio としてダウンロードする](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> 日本語: [PDF としてダウンロードする](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)  \| [Visio としてダウンロードする](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx) <br/> 更新日: 2020 年 11 月|含まれる内容: <ul><li>  Microsoft の情報保護およびデータ損失防止</li><li>アイテム保持ポリシーと保持ラベル </li><li>情報バリア</li><li>コミュニケーション コンプライアンス</li><li>インサイダー リスク</li><li>サードパーティのデータの取り込み</li>|
 
 ## <a name="conference-sessions"></a>会議セッション
 

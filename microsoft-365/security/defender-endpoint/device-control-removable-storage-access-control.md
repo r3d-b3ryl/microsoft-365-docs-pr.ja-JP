@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 73d863584a1712f5619bd045a51e651edb4ff636
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 8220fee635fde5551c76e9b6b8a88301bb8b41ec
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507988"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563548"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender for Endpoint Device Control リムーバブル Storage アクセス制御
 
@@ -54,7 +54,7 @@ Microsoft Defender for Endpoint Device Control リムーバブル Storageアク�
 - **4.18.2105** 以降 : HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId のワイルドカード サポートの追加、特定のコンピューター上の特定のユーザーの組み合わせ、削除可能な SSD (SanDisk Extreme SSD)/USB Attached SCSI (UAS) のサポート
 - **4.18.2107** 以降: ポータブル デバイス (WPD) Windows (タブレットなどのモバイル デバイス) のサポートを追加します。高度な検索に AccountName [を追加する](device-control-removable-storage-access-control.md#view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint)
 
-:::image type="content" source="images/powershell.png" alt-text="PowerShell インターフェイス":::
+:::image type="content" source="images/powershell.png" alt-text="PowerShell インターフェイス。":::
 
 > [!NOTE]
 > リムーバブル アクセスWindows セキュリティ状態とは別にリムーバブル アクセス制御を実行Storage、すべてのコンポーネントをアクティブWindows セキュリティ必要があります。
@@ -88,7 +88,7 @@ Microsoft Defender for Endpoint Device Control リムーバブル Storageアク�
 |IncludedIdList|ポリシーが適用されるグループ。 複数のグループが追加されている場合、ポリシーは、すべてのグループ内の任意のメディアに適用されます。|このインスタンスでは、グループ ID/GUID を使用する必要があります。 <p> 次の例は、GroupID の使用法を示しています。 <p> `<IncludedIdList> <GroupId> {EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>`|
 |ExcludedIDList|ポリシーが適用されないグループ。|このインスタンスでは、グループ ID/GUID を使用する必要があります。|
 |エントリ ID|1 つの PolicyRule には複数のエントリを指定できます。一意の GUID を持つ各エントリは、デバイスコントロールに 1 つの制限を指示します。||
-|型|IncludedIDList のリムーバブル 記憶域グループのアクションを定義します。 <ul><li>適用: 許可または拒否</li><li>監査: AuditAllowed または AuditDenied</ul></li>|<ul><li>許可</li><li>拒否</li><li>AuditAllowed: アクセスが許可されている場合の通知とイベントを定義します。</li><li>AuditDenied: アクセスが拒否された場合の通知とイベントを定義します。は、Deny エントリと共 **に動作する必要** があります。</li></ul> <p> 同じメディアに対して競合の種類がある場合、システムはポリシーの最初のメディアを適用します。 競合の種類の例として、[許可] と **[拒否]** **があります**。|
+|種類|IncludedIDList のリムーバブル 記憶域グループのアクションを定義します。 <ul><li>適用: 許可または拒否</li><li>監査: AuditAllowed または AuditDenied</ul></li>|<ul><li>許可</li><li>拒否</li><li>AuditAllowed: アクセスが許可されている場合の通知とイベントを定義します。</li><li>AuditDenied: アクセスが拒否された場合の通知とイベントを定義します。は、Deny エントリと共 **に動作する必要** があります。</li></ul> <p> 同じメディアに対して競合の種類がある場合、システムはポリシーの最初のメディアを適用します。 競合の種類の例として、[許可] と **[拒否]** **があります**。|
 |Sid|ローカル コンピューター Sid または AD オブジェクトの Sid は、このポリシーを特定のユーザー またはユーザー グループに適用するかどうかを定義します。1 つのエントリには最大 1 つの Sid を含め、Sid を使用しないエントリは、コンピューター上にポリシーを適用する方法を意味します。||
 |ComputerSid|ローカル コンピューター Sid または AD オブジェクトの Sid は、このポリシーを特定のコンピューターまたはコンピューター グループに適用するかどうかを定義します。1 つのエントリには最大 1 つの ComputerSid を指定し、ComputerSid を使用しないエントリはコンピューター上にポリシーを適用します。 特定のユーザーと特定のコンピューターにエントリを適用する場合は、Sid と ComputerSid の両方を同じエントリに追加します。||
 |オプション|通知を表示するかどうかを定義します。|**0-4**: [許可] または [拒否] の種類が選択されている場合。 <ul><li>0: 何も</li><li>4: この **エントリに対して AuditAllowed** と **AuditDenied を** 無効にします。 ブロックが **発生** し、AuditDenied が構成されている場合でも、システムは通知を表示されません。</li></ul> <p> Type **AuditAllowed または** **AuditDenied が** 選択されている場合: <ul><li>0: 何も</li><li>1: 通知を表示する</li><li>2: 送信イベント</li><li>3: 通知を表示し、イベントを送信する</li></ul>|
@@ -139,7 +139,7 @@ Microsoft Defender for Endpoint Removable Storageアクセス制御について�
 
     次の図は、シナリオ 1: 書き込みおよび実行アクセスを許可するが、特定の承認済み USB を許可するの例 [を示しています](#scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs)。
 
-    :::image type="content" source="images/prevent-write-access-allow-usb.png" alt-text="デバイスで特定の承認済み USB を許可する構成設定を表示する画面":::
+    :::image type="content" source="images/prevent-write-access-allow-usb.png" alt-text="デバイス上の特定の承認済み USB を許可する構成設定を表示する画面。":::
 
 2. すべてのルールを 1 つの `<PolicyRules>` `</PolicyRules>` xml ファイルに結合します。
 
@@ -147,7 +147,7 @@ Microsoft Defender for Endpoint Removable Storageアクセス制御について�
 
     次の図は、SID プロパティの使用法を示しています。シナリオ [1:](#scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs)書き込みおよび実行のアクセスをすべて防ぐが、特定の承認済み USB を許可する例を示します。
 
-    :::image type="content" source="images/usage-sid-property.png" alt-text="SID プロパティ属性の使用法を示すコードを表示する画面":::
+    :::image type="content" source="images/usage-sid-property.png" alt-text="SID プロパティ属性の使用法を示すコードを表示する画面。":::
 
 3. ルールとグループ XML ファイルの両方をネットワーク共有フォルダーに保存し、ネットワーク共有フォルダー パスを [グループ ポリシー] 設定に格納します。[コンピューター構成管理テンプレート] Windows \>  \> **Components** \> **Microsoft Defender ウイルス対策** \> Device Control : 'デバイス制御ポリシー グループの定義' と [デバイス制御ポリシー ルールの定義] です。
 
@@ -155,7 +155,7 @@ Microsoft Defender for Endpoint Removable Storageアクセス制御について�
 
    - ポリシーを持つには、ターゲット コンピューターがネットワーク共有にアクセスできる必要があります。 ただし、ポリシーを読み取った後は、コンピューターの再起動後も、ネットワーク共有接続は不要になります。
 
-    :::image type="content" source="images/device-control.png" alt-text="[デバイス制御] 画面":::
+    :::image type="content" source="images/device-control.png" alt-text="[デバイスの制御] 画面。":::
 
 ## <a name="deploying-and-managing-policy-via-intune-oma-uri"></a>Intune OMA-URI によるポリシーの展開と管理
 
@@ -188,7 +188,7 @@ Microsoft エンドポイント マネージャー センター ( ) デバイス
 
     - データ型: 文字列 (XML ファイル)
 
-      :::image type="content" source="images/xml-data-type-string.png" alt-text="STRING データ型の xml ファイル":::
+      :::image type="content" source="images/xml-data-type-string.png" alt-text="STRING データ型の xml ファイル。":::
 
 2. ポリシーごとに、OMA-URI も作成します。
     - OMA-URI: 
@@ -232,7 +232,7 @@ DeviceEvents
 | order by Timestamp desc
 ```
 
-:::image type="content" source="images/block-removable-storage.png" alt-text="リムーバブル 記憶域のブロックを示す画面":::
+:::image type="content" source="images/block-removable-storage.png" alt-text="リムーバブル 記憶域のブロックを示す画面。":::
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 

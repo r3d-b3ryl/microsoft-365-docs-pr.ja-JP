@@ -18,12 +18,12 @@ localization_priority: Normal
 f1.keywords: NOCSH
 recommendations: false
 description: この記事では、ドキュメントのゲストと共同作業を行う方法について、SharePointおよびOneDrive。
-ms.openlocfilehash: 725e500990697a54b1892c428353790f2aaf9091d2789e0d20f648eb7af87266
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: db7e619e674a270745b783e85bca803b85ee54ff
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53810136"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563308"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>ゲストと共同でドキュメントの作業をする
 
@@ -41,7 +41,7 @@ Microsoft 365 での共有は、[Azure Active Directory における B2B 外部�
 
 B2B 外部コラボレーション設定を確認して、ゲストとの共有がブロックされないか確認します。
 
-![Azure Active Directory における組織関係の設定ページのスクリーンショット](../media/azure-ad-organizational-relationships-settings.png)
+![[組織Azure Active Directory] ページ設定スクリーンショット。](../media/azure-ad-organizational-relationships-settings.png)
 
 外部コラボレーションを設定するには
 
@@ -66,7 +66,7 @@ B2B 外部コラボレーション設定を確認して、ゲストとの共有�
 
 たとえばSharePoint、組織内の任意のサイトで必要になる最も制限の多い設定を選択します。
 
-![SharePoint 組織レベルの共有設定のスクリーンショット](../media/sharepoint-organization-external-sharing-controls.png)
+![組織レベルSharePoint設定のスクリーンショット。](../media/sharepoint-organization-external-sharing-controls.png)
 
 
 SharePoint 組織レベルの共有設定を設定するには
@@ -88,7 +88,7 @@ SharePoint 組織レベルの共有設定を設定するには
 - **組織内のユーザーのみ** - ほとんどのファイルとフォルダーの共有が組織内のユーザーと行われることが予想される場合は、このオプションを選択します。
 - **特定のユーザー** - ゲストと多くのファイルやフォルダーを共有することが予想される場合は、このオプションを検討してください。 この種類のリンクはゲストと連携し、ゲストに認証を要求します。
  
-![SharePoint 組織レベルのファイルとフォルダーの共有設定のスクリーンショット](../media/sharepoint-organization-files-folders-sharing-settings.png)
+![組織レベルSharePoint共有設定のスクリーンショット。](../media/sharepoint-organization-files-folders-sharing-settings.png)
 
 
 組織レベルの既定SharePointのOneDriveのリンク設定を設定するには
@@ -118,7 +118,7 @@ SharePoint 組織レベルの共有設定を設定するには
 
 SharePoint サイト内のファイルとフォルダーを共有する場合は、そのサイトのサイト レベルの共有設定も確認する必要があります。
 
-![SharePoint サイトの外部共有設定のスクリーンショット](../media/sharepoint-site-external-sharing-settings.png)
+![サイトの外部SharePoint設定のスクリーンショット。](../media/sharepoint-site-external-sharing-settings.png)
 
 サイトレベルの共有設定を設定するには
 

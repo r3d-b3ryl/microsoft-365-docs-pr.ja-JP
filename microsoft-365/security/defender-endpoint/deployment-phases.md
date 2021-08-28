@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e1188f1310ce06c2d3e695294f2212df1f5a9c60
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: b5d7f7384d60a5353ce4c0363e07d3451e146598
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532825"
+ms.locfileid: "58563560"
 ---
 # <a name="deployment-phases"></a>展開フェーズ
 
@@ -41,9 +41,10 @@ Microsoft Defender for Endpoint を展開して、企業が予防保護、侵害
 
 各セクションは、このソリューションの個別の記事に対応します。
 
-![表の詳細を含む展開フェーズのイメージ](images/deployment-guide-phases.png)
+![表の詳細を含む展開フェーズのイメージ。](images/deployment-guide-phases.png)
 
-![展開フェーズの概要: 準備、セットアップ、オンボード](images/phase-diagrams/deployment-phases.png)
+
+![展開フェーズの概要: 準備、セットアップ、オンボード。](images/phase-diagrams/deployment-phases.png)
 
 <br>
 

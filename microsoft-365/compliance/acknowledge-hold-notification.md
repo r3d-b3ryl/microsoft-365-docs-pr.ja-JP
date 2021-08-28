@@ -18,12 +18,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: 電子メールを介してAdvanced eDiscoveryホールド通知を送信およびフォローアップする方法、および義務の状態を監視する方法について学習します。
-ms.openlocfilehash: 1826d6376dffc6717909accc7d4c3844cdf6b8a1206cdfad1dc655d7dee5b508
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 43c2474bdc485a87c30d1fa2a31c3d008d2a383e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53837196"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563286"
 ---
 # <a name="acknowledge-a-hold-notification"></a>保留通知を確認する
 
@@ -54,4 +54,4 @@ ms.locfileid: "53837196"
 
 電子メール通知に加えて、各保管担当者は一意のコンプライアンス ポータルにアクセスできます。 ポータルを通じて、各保管担当者はアクティブな保留通知を表示、アクセス、および確認できます。
 
-![保管担当者のコンプライアンス ポータル](../media/CustodianPortal.jpg)
+![保管担当者のコンプライアンス ポータル。](../media/CustodianPortal.jpg)

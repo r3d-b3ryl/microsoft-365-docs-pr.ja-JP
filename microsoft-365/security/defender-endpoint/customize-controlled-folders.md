@@ -15,12 +15,12 @@ manager: dansimp
 ms.date: 05/10/2021
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 24e144b6134c4d32b15220ed3b3608b3b4a1c1df
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: e104a8180ad9099e795a014060921387de642668
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533089"
+ms.locfileid: "58560908"
 ---
 # <a name="customize-controlled-folder-access"></a>制御されたフォルダー アクセスをカスタマイズする
 
@@ -90,7 +90,7 @@ ms.locfileid: "58533089"
     ```
 3. 保護するフォルダーごとに手順 2 を繰り返します。 保護されているフォルダーは、アプリ内にWindows セキュリティされます。
 
-   :::image type="content" source="images/cfa-allow-folder-ps.png" alt-text="コマンドレットが表示された PowerShell ウィンドウ":::
+   :::image type="content" source="images/cfa-allow-folder-ps.png" alt-text="コマンドレットが表示された PowerShell ウィンドウ。":::
 
 > [!IMPORTANT]
 > リスト `Add-MpPreference` にアプリを追加または追加する場合に使用します `Set-MpPreference` 。 コマンドレットを `Set-MpPreference` 使用すると、既存のリストが上書きされます。
@@ -120,7 +120,7 @@ ms.locfileid: "58533089"
 
 4. [ **許可されたアプリを追加する] を選択** し、プロンプトに従ってアプリを追加します。
 
-   :::image type="content" source="images/cfa-allow-app.png" alt-text="許可されたアプリ ボタンを追加する":::
+   :::image type="content" source="images/cfa-allow-app.png" alt-text="許可されたアプリ ボタンを追加します。":::
 
 ### <a name="use-group-policy-to-allow-specific-apps"></a>グループ ポリシーを使用して特定のアプリを許可する
 
@@ -149,7 +149,7 @@ ms.locfileid: "58533089"
 
    引き続き使用 `Add-MpPreference -ControlledFolderAccessAllowedApplications` して、リストにアプリを追加します。 このコマンドレットを使用して追加されたアプリは、アプリのWindows セキュリティされます。
 
-   :::image type="content" source="images/cfa-allow-app-ps.png" alt-text="アプリを許可する PowerShell コマンドレット":::
+   :::image type="content" source="images/cfa-allow-app-ps.png" alt-text="アプリを許可する PowerShell コマンドレット。":::
 
 > [!IMPORTANT]
 > リスト `Add-MpPreference` にアプリを追加または追加する場合に使用します。 コマンドレットを `Set-MpPreference` 使用すると、既存のリストが上書きされます。

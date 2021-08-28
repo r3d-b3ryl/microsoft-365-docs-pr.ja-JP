@@ -13,12 +13,12 @@ ms.collection:
 description: レポート メッセージ機能を使用して、誤検知と誤Outlookを報告する方法について学習します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a0e69b16167ff796b68a2eea492a4dea180a4fb7
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: 34afd8d8e15bc301f42850763d39e1846a66e6d4
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400369"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563488"
 ---
 # <a name="report-false-positives-and-false-negatives-in-outlook"></a>Outlook の誤検出と検出漏れを報告する
 
@@ -34,7 +34,7 @@ ms.locfileid: "58400369"
 
 ハイブリッドモダン認証を使用して Exchange Online Microsoft 365 またはオンプレミスのメールボックスにメールボックスを持つ Microsoft 365 組織では、誤検知 (ブロックまたは迷惑メール フォルダーに送信された良いメール) と誤検知 (受信トレイに配信された不要な電子メールまたはフィッシング) を Exchange Online Protection (EOP) に送信できます。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
 - 最適なユーザー申請エクスペリエンスを得る場合は、レポート メッセージ アドインまたはレポート フィッシング アドインを使用します。
 
@@ -59,9 +59,9 @@ ms.locfileid: "58400369"
 
 1. 選択した **メッセージの右上隅** にある [その他の操作] 楕円を選択し、ドロップダウン メニューから [メッセージの報告] を選択し、[迷惑メール] または [フィッシング]**を選択します**。
 
-   ![レポート メッセージ - その他のアクション](../../media/report-message-more-actions.png)
+   ![レポート メッセージ - その他のアクション。](../../media/report-message-more-actions.png)
 
-   ![レポート メッセージ - 迷惑メールとフィッシング](../../media/report-message-junk-phishing.png)
+   ![レポート メッセージ - 迷惑メールとフィッシング。](../../media/report-message-junk-phishing.png)
 
 2. 選択したメッセージは、分析のために Microsoft に送信されます。
    - 迷惑メールとして報告された場合は、迷惑メール フォルダーに移動しました。
@@ -71,9 +71,9 @@ ms.locfileid: "58400369"
 
 1. 選択した **メッセージの右上隅** にある [その他のアクションの省略記号] を選択し、ドロップダウン メニューから [メッセージの報告] を選択し、[迷惑メールではない] を **選択します**。
 
-   ![レポート メッセージ - その他のアクション](../../media/report-message-more-actions.png)
+   ![レポート メッセージ - その他のアクション。](../../media/report-message-more-actions.png)
 
-   ![レポート メッセージ - 迷惑メールではない](../../media/report-message-not-junk.png)
+   ![レポート メッセージ - 迷惑メールではありません。](../../media/report-message-not-junk.png)
 
 2. 選択したメッセージは分析のために Microsoft に送信され、受信トレイまたは指定したその他のフォルダーに移動されます。
 
