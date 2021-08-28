@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Exchange Online の監視を使用して、Microsoft 365 でのメールのインシデントや勧告の情報について確認します。
-ms.openlocfilehash: 4de4104f3112126b20d51fb6fcf0616cd413b884
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: a06640ee6114dac4ee5a9a899ba1dd8e2e744d78
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58506444"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575614"
 ---
 # <a name="exchange-online-monitoring-for-microsoft-365"></a>Microsoft 365 の Exchange Online の監視
 
@@ -32,6 +32,8 @@ Microsoft 365 管理センターで Exchange Online の監視を使用して、�
 
 以下は、組織のシナリオにおける Microsoft 365 管理センターの **[サービス正常性]** ページの例です。これは、**[正常性] > [サービス正常性]** から利用できます。
 
+![Microsoft 365 管理センターの [サービス正常性] ページ。](../media/microsoft-365-exchange-monitoring/service-health-dashboard-example.png)
+
 **[組織の問題]** は、組織レベルの監視によって識別され、使用されます。
 
 :::image type="content" source="../media/microsoft-365-exchange-monitoring/service-health-dashboard-example.png" alt-text="Microsoft 365 管理センターの [サービス正常性] ページ":::
@@ -39,6 +41,8 @@ Microsoft 365 管理センターで Exchange Online の監視を使用して、�
 **[組織の問題]** の **[正常性]** の列の値は、組織のインフラストラクチャまたはサードパーティ製のソフトウェアが、組織のユーザーの Exchange Online におけるサービス正常性のエクスペリエンスに影響を与えるかどうかを示します。 勧告やインシデントを解決するには、*ユーザー* のアクションが必要です。
 
 **[Microsoft サービス正常性]** の **[正常性]** 列の値は、サービスが正常な状態にあるか、Microsoft が維持するクラウド サービスに基づいて勧告やインシデントがあるかどうかを示します。
+
+![Microsoft 365 管理センターの Exchange Online の監視ページ。](../media/microsoft-365-exchange-monitoring/exchange-monitoring-example.png)
 
 以下は、Microsoft 365 管理センターの Exchange Online の監視ページで、組織レベルのシナリオにおいて正常性の一例を示しています。これは、**[正常性] > [サービス正常性] > [Exchange Online]** から利用できます。
 
@@ -82,7 +86,7 @@ Exchange Online の監視は次のシナリオをサポートしています。
 
 - **メール フロー**: メッセージが Microsoft 365 ネットワークに到達後、遅延なくメールボックスに正常に配信されたメッセージの数。
 
-  ![メール配信における Exchange の正常性を監視する例](../media/microsoft-365-exchange-monitoring/exchange-monitoring-scenario-example.png)
+  ![メール配信における Exchange の正常性を監視する例。](../media/microsoft-365-exchange-monitoring/exchange-monitoring-scenario-example.png)
 
 これらのシナリオでは、主要な数値はメイン ダッシュボードの過去 30 分間です。 これらの各シナリオの詳細表示には、前の週と比較した 30 分の集計で、7 日間のほぼリアルタイムの傾向が示されます。
 
@@ -94,7 +98,7 @@ Exchange Online の監視は次のシナリオをサポートしています。
 
 - 特定のインシデントや勧告の場合、**[この投稿は役に立ちましたか?]** のリンクを使用してフィードバックを送信します。
 
-![特定のインシデントや勧告の場合に使用する [この投稿は役に立ちましたか?] リンク](../media/microsoft-365-exchange-monitoring/exchange-monitoring-example-incident-feedback.png)
+![特定のインシデントや勧告の場合に使用する 特定のインシデントまたは勧告へのリンク。](../media/microsoft-365-exchange-monitoring/exchange-monitoring-example-incident-feedback.png)
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
@@ -126,7 +130,7 @@ Microsoft は、Exchange Online の監視を Microsoft 365 管理センターの
 
 #### <a name="5-is-this-a-free-included-or-paid-extra-feature"></a>5. この機能は無料 (ライセンス付属) と有料 (追加コンテンツ) のどちらですか? 
 
-これはプレビュー段階にある無料の機能で、質問 1 での要件を満たしたユーザーのみが利用できます。 このコンテンツを利用するための有料オプションはありません。
+これはプレビュー段階にある無料の機能で、質問 1 での要件を満たしたユーザーのみが利用できます。このコンテンツを受け取るための有料オプションはありません。
 
 #### <a name="6-how-do-i-provide-feedback"></a>6. フィードバックを送信するにはどうすればいいですか?
 

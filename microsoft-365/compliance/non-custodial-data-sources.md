@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 保管されていないデータ ソースをケースにAdvanced eDiscoveryし、データ ソースに保留を設定できます。 保管されていないデータ ソースはインデックスが再作成され、部分的にインデックスとしてマークされたコンテンツは再処理され、完全かつ迅速に検索できます。
-ms.openlocfilehash: bb43c7fe6a57a45e8eea9ff87601c13e018bff5707e474206e97fe05c6c3a6e7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: afa28ce8be5f7a051c84111c65d6b993b97b6c04
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53855933"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571027"
 ---
 # <a name="add-non-custodial-data-sources-to-an-advanced-ediscovery-case"></a>非保管データ ソースをサポートケースにAdvanced eDiscoveryする
 
@@ -36,7 +36,7 @@ ms.locfileid: "53855933"
 
 3. [保管 **されていないデータの場所の新** しい場所] フライアウト ページで、ケースに追加するデータ ソースを選択します。 複数のメールボックスとサイトを追加するには、[フォルダー] セクションまたは [SharePoint] セクションExchange [編集] をクリック **します**。  
 
-   ![管理SharePointおよびメールボックスExchange非保管データ ソースとして追加する](../media/NonCustodialDataSources1.png)
+   ![管理SharePoint、Exchangeメールボックスを非保管データ ソースとして追加します。](../media/NonCustodialDataSources1.png)
 
    - **SharePoint** - [編集]**をクリックして** サイトを追加します。 リストでサイトを選択するか、検索バーにサイトの URL を入力してサイトを検索できます。 非保管データ ソースとして追加するサイトを選択し、[追加] を **クリックします**。
 
@@ -51,7 +51,7 @@ ms.locfileid: "53855933"
 
    追加した保管されていない各データ ソースは、[データ ソース] **ページに一覧表示** されます。 保管されていないデータ ソースは、[ソースの種類] 列の **[データの** 場所] の値 **によって識別** されます。
 
-   ![[データ ソース] タブの非保管データ ソース](../media/NonCustodialDataSources2.png)
+   ![[データ ソース] タブの非保管データ ソース。](../media/NonCustodialDataSources2.png)
 
 ケースに非保管データ ソースを追加すると、保管されていないデータのインデックスを再作成するという名前のジョブが作成され、ケースの [**ジョブ**] タブに表示されます。 ジョブが作成されると、開始された高度なインデックス処理とデータ ソースのインデックスが再作成されます。
 
@@ -65,7 +65,7 @@ ms.locfileid: "53855933"
 
    フライアウト ページには、保留の非保管データ ソースに関する情報と統計情報が表示されます。
 
-   ![非保管データ ソースのフライアウト ページには、統計情報が表示されます](../media/NonCustodialDataSourcesHoldFlyout.png)
+   ![非保管データ ソースのフライアウト ページには、統計情報が表示されます。](../media/NonCustodialDataSourcesHoldFlyout.png)
 
 3. [ **保持の編集]** をクリックして保留にされている非保管データ ソースを表示し、次の管理タスクを実行します。
 

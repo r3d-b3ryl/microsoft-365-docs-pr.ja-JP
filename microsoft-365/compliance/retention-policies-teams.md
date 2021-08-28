@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Teams に適用されるアイテム保持ポリシーについて説明します。
-ms.openlocfilehash: 646a391d469470b780010e4293d1433153419b23
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 99081712f3c762f6818df1f6e390b50ae450a7a8
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58248052"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574149"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Microsoft Teams の保持の詳細
 
@@ -81,7 +81,7 @@ Teams のチャットとチャネル メッセージからのこのデータは�
 
 アイテム保持ポリシーが保持されてから削除される場合
 
-![Teams チャットとチャネル メッセージの保持フローの図](../media/teamsretentionlifecycle.png)
+![Teams チャットとチャネル メッセージの保持フローの図。](../media/teamsretentionlifecycle.png)
 
 図内の 2 つのパスの場合:
 

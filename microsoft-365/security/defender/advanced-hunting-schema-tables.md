@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 50a221a65c8264d816de958ec74fa99e9e6db762
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 4dcbb7051325483a220c39fdebaae53aba9c37f4
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53225994"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575974"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>高度な捜索スキーマの概要
 
@@ -50,7 +50,7 @@ ms.locfileid: "53225994"
 ### <a name="access-the-schema-reference"></a>スキーマ参照へのアクセス
 スキーマ参照にすばやくアクセスするには、スキーマ表現のテーブル名の横にある [参照の表示] アクションを選択します。 [スキーマ参照] **を選択して** テーブルを検索することもできます。
 
-![ポータル内スキーマ参照にアクセスする方法を示すイメージ](../../media/mtp-ah/ah-reference.png)
+![ポータル内スキーマ参照にアクセスする方法を示す画像。](../../media/mtp-ah/ah-reference.png)
 
 ## <a name="learn-the-schema-tables"></a>スキーマ テーブルの詳細
 次の参照は、スキーマ内のすべてのテーブルを一覧表示します。 各テーブル名は、そのテーブルの列名を説明するページにリンクします。 テーブル名と列名は、高度な検索画面のスキーマ表現の一部としてセキュリティ センターにも表示されます。

@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 40301b0fd16b7d0b29b6a89ec009fc07c85b33ba587833866dd2e2b49741f85d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e91f0947f9622c81fb9340c09ea52c85ea567af6
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56809034"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572457"
 ---
 # <a name="how-automated-investigation-and-response-works-in-microsoft-defender-for-office-365"></a>Microsoft Defender での自動調査と対応の仕組みOffice 365
 
@@ -81,11 +81,11 @@ AIR を使用すると、セキュリティ運用チームは、より効率的�
 
 たとえば、エクスプローラーでマルウェア ビューを **使用すると** します。 グラフの下のタブを使用して、[メール] タブ **を選択** します。リストで 1 つ以上のアイテムを選択すると **、[+ アクション] ボタンが** アクティブ化されます。
 
-![選択したメッセージを含むエクスプローラー](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
+![選択したメッセージを含むエクスプローラー。](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
 
 [アクション] **メニューを** 使用して、[調査のトリガー **] を選択できます**。
 
-![選択したメッセージの [操作] メニュー](../../media/explorer-malwareview-selectedemails-actions.jpg)
+![選択したメッセージの [アクション] メニュー。](../../media/explorer-malwareview-selectedemails-actions.jpg)
 
 アラートによってトリガーされるプレイブックと同様、エクスプローラーのビューからトリガーされる自動調査には、ルート調査、脅威を特定して相関関連を特定するための手順、これらの脅威を軽減するための推奨処置が含まれます。
 

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 0f2d0888c9dbe7550f4967f85691d4e56e4320c2d0220812fc095aa2c1cd96dc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 710e2adef0d04d9a7c45506f8b1bd4ec00d1d044
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53862772"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58576142"
 ---
 # <a name="step-5-develop-and-test-use-cases"></a>手順 5.  使用例の開発とテスト
 
@@ -46,7 +46,7 @@ SOC は、SOC Oversight チームによって規制される、使用例を開�
 
 使用例の開発に関連する SOC 監視アクティビティには、次のものが含まれます。 
 
-- Requirements
+- 要件
 - スタッフまたはトレーニングのニーズ
 - ソフトウェア ライセンス
 - ベンダー契約
@@ -56,7 +56,7 @@ SOC は、SOC Oversight チームによって規制される、使用例を開�
 
 Runbook とプレイブックの作成プロセスを容易にするために、使用例の決定ツリーを作成します。 次の図は、例を示しています。
 
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/use-case-decision-process.png" alt-text="使用例の決定プロセス":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/use-case-decision-process.png" alt-text="使用例の決定プロセス。":::
 
 高レベルの使用例の標準が定義され、承認されると、次に実際の使用例を作成してテストします。 次のセクションでは、フィッシング対策と脅威と脆弱性スキャンのシナリオを例として使用します。
 
@@ -64,13 +64,13 @@ Runbook とプレイブックの作成プロセスを容易にするために、
 
 使用例を作成する最初の手順は、ストーリー ボードを使用してワークフローの概要を説明します。 脅威インテリジェンス チームへの新しいフィッシング攻撃通知のハイレベル ストーリー ボードの例を次に示します。
  
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-phishing.png" alt-text="フィッシング対策キャンペーンの使用例のワークフロー":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-phishing.png" alt-text="フィッシング対策キャンペーンの使用例ワークフロー。":::
 
 ### <a name="invoke-the-use-case-workflow-for-example-1"></a>使用例のワークフロー (例 1) を呼び出す
 
 ストーリー ボードが承認されると、次に、使用例ワークフローを呼び出します。 フィッシング対策キャンペーンのプロセス例を次に示します。 
  
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-phishing.png" alt-text="フィッシング対策キャンペーンの詳細な使用例のワークフローの例":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-phishing.png" alt-text="フィッシング対策キャンペーンの詳細な使用例のワークフローの例。":::
 
 ## <a name="use-case-example-2-threat-and-vulnerability-scanning"></a>使用例 2: 脅威と脆弱性のスキャン
 
@@ -78,13 +78,13 @@ Runbook とプレイブックの作成プロセスを容易にするために、
 
 アセットの種類に関する概要ストーリーボード脅威と脆弱性の管理次に示します。
  
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-tvm.png" alt-text="ユーザーの使用例のワークフロー脅威と脆弱性の管理":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-tvm.png" alt-text="ユーザーの使用例のワークフロー脅威と脆弱性の管理。":::
 
 ### <a name="invoke-the-use-case-workflow-for-example-2"></a>使用例のワークフロー (例 2) を呼び出す
 
 脅威と脆弱性のスキャンのプロセスの例を次に示します。
  
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-tvm.png" alt-text="ユーザーの詳細な使用例のワークフローの脅威と脆弱性の管理":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-tvm.png" alt-text="ユーザーの詳細な使用例のワークフローの脅威と脆弱性の管理。":::
  
 ### <a name="analyze-the-use-case-output-and-lessons-learned"></a>使用例の出力と学習した教訓を分析する
 
@@ -95,8 +95,8 @@ Runbook とプレイブックの作成プロセスを容易にするために、
 
 | SOC チーム | 要件 | 要件を満たすユーザー | 要件を満たすプロセス | 関連するテクノロジ | 識別されるギャップ | 使用例の変更ログ | 除外 (Y/N) |
 |:-------|:-----|:-------|:-------|:-------|:-----|:-------|:-------|
-| 脅威インテリジェンスと分析チーム | データ ソースが脅威インテリジェンス エンジンに適切に供給されています。 | 脅威インテリジェンス アナリスト/エンジニア | データ フィードの要件が確立され、承認済みソースからの脅威インテリジェンス トリガー | Microsoft Defender for Identity, Microsoft Defender for Endpoint | 脅威インテリジェンス チームは、オートメーション スクリプトを使用して API Microsoft 365 Defenderインテル エンジンにリンクしなかった | 脅威Microsoft 365 Defenderにデータ ソースとして追加する <BR> <BR> 使用例の実行ブックを更新する | N |
-| 監視チーム | データ ソースが監視ダッシュボードに適切にフィードされている | Tier 1,2 SOC Analyst-Monitoring &アラート | コンプライアンス センターのセキュリティ スコア&レポートのワークフロー | [セキュリティ コンプライアンス センター&アラート](/microsoft-365/security/office-365-security/alerts)  <br><br> セキュリティで保護されたスコアの監視  | SOC アナリストが新しいフィッシング バリアント検出の成功を報告してセキュリティで保護されたスコアを向上させるメカニズムはありません <br><br> [セキュリティ コンプライアンス センター&レポート](/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance)| レポート ワークフローにセキュリティスコアの改善を追跡するためのプロセスを追加する | N | 
+| 脅威インテリジェンスと分析チーム | データ ソースが脅威インテリジェンス エンジンに適切に供給されています。 | 脅威インテリジェンス アナリスト/エンジニア | データ フィードの要件が確立され、承認済みソースからの脅威インテリジェンス トリガー | Microsoft Defender for Identity, Microsoft Defender for Endpoint | 脅威インテリジェンス チームは、オートメーション スクリプトを使用して API Microsoft 365 Defenderインテル エンジンにリンクしなかった | 脅威Microsoft 365 Defenderにデータ ソースとして追加する <BR> <BR> 使用例の実行ブックを更新する | × |
+| 監視チーム | データ ソースが監視ダッシュボードに適切にフィードされている | Tier 1,2 SOC Analyst-Monitoring &アラート | コンプライアンス センターのセキュリティ スコア&レポートのワークフロー | [セキュリティ コンプライアンス センター&アラート](/microsoft-365/security/office-365-security/alerts)  <br><br> セキュリティで保護されたスコアの監視  | SOC アナリストが新しいフィッシング バリアント検出の成功を報告してセキュリティで保護されたスコアを向上させるメカニズムはありません <br><br> [セキュリティ コンプライアンス センター&レポート](/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance)| レポート ワークフローにセキュリティスコアの改善を追跡するためのプロセスを追加する | × | 
 | エンジニアリングチームと SecOps チーム | 変更コントロールの更新は、SOC チームの runbook で行います。 | Tier 2 SOC エンジニア | SOC チームの Runbook のコントロール通知手順を変更する | セキュリティ デバイスに対する承認済みの変更 | SOC セキュリティ テクノロジMicrosoft 365 Defenderの変更には承認が必要です | SOC runbook にMicrosoft Cloud App Security、Defender for Identity、Defender for Endpoint、Security & コンプライアンス センターを追加する | Y |
 |||||||||
 
@@ -104,9 +104,9 @@ Runbook とプレイブックの作成プロセスを容易にするために、
 
 | SOC チーム | 要件 | 要件を満たすユーザー | 要件を満たすプロセス | 関連するテクノロジ | 識別されるギャップ | 使用例の変更ログ | 除外 (Y/N) |
 |:-------|:-----|:-------|:-------|:-------|:-----|:-------|:-------|
-| SOC の監視 | 承認済みネットワークに接続されているすべてのアセットが識別され、分類されます。 | SOC 監視、BU 所有者、アプリケーション所有者、IT 資産所有者など | リスクに基づいて資産カテゴリと属性を検出および一覧表示する一元的な資産管理システム。 | ServiceNow または他のアセット。 <br><br>[Microsoft 365デバイス インベントリ](/security/defender-endpoint/device-discovery) | 資産の 70% だけが検出されました。 Microsoft 365 Defender既知の資産にのみ有効な修復追跡 | 資産ライフサイクル管理サービスを成熟し、Microsoft 365 Defender 100% のカバレッジを確保する | N |
-| エンジニアリング & SecOps Teams | アセットの影響が大きく、重大な脆弱性はポリシーに従って修復されます | SecOps のエンジニア、SOC アナリスト: コンプライアンス&セキュリティ エンジニアリングの脆弱性 | 高リスクと重大な脆弱性を分類する定義されたプロセス | [脅威と脆弱性の管理ダッシュボード](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) | Defender for Endpoint は、Microsoft 推奨アクティビティの修復計画や実装を行う必要がない、影響が大きく、アラートの高いデバイスを特定しました | ポリシーごとに 30 日以内に修復アクティビティが必要な場合にアセット所有者に通知するためのワークフローを追加します。資産所有者に修復手順を通知するチケット システムを実装します。 | N |
-| 監視Teams | 脅威と脆弱性の状態は、会社のイントラネット ポータルを介して報告されます | Tier 2 SOC アナリスト | アセットの修復の進行状況をMicrosoft 365 Defenderから自動生成されたレポート | [セキュリティ コンプライアンス センター&アラート](/microsoft-365/security/office-365-security/alerts) <br><br> セキュリティで保護されたスコアの監視 | アセットの脅威と脆弱性の状態に関するビューまたはダッシュボード レポートがアセット所有者に伝達されません。 | 自動化スクリプトを作成して、リスクの高い重要な資産脆弱性の修復の状態を組織に設定します。 | N |
+| SOC の監視 | 承認済みネットワークに接続されているすべてのアセットが識別され、分類されます。 | SOC 監視、BU 所有者、アプリケーション所有者、IT 資産所有者など | リスクに基づいて資産カテゴリと属性を検出および一覧表示する一元的な資産管理システム。 | ServiceNow または他のアセット。 <br><br>[Microsoft 365デバイス インベントリ](/security/defender-endpoint/device-discovery) | 資産の 70% だけが検出されました。 Microsoft 365 Defender既知の資産にのみ有効な修復追跡 | 資産ライフサイクル管理サービスを成熟し、Microsoft 365 Defender 100% のカバレッジを確保する | × |
+| エンジニアリング & SecOps Teams | アセットの影響が大きく、重大な脆弱性はポリシーに従って修復されます | SecOps のエンジニア、SOC アナリスト: コンプライアンス&セキュリティ エンジニアリングの脆弱性 | 高リスクと重大な脆弱性を分類する定義されたプロセス | [脅威と脆弱性の管理ダッシュボード](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) | Defender for Endpoint は、Microsoft 推奨アクティビティの修復計画や実装を行う必要がない、影響が大きく、アラートの高いデバイスを特定しました | ポリシーごとに 30 日以内に修復アクティビティが必要な場合にアセット所有者に通知するためのワークフローを追加します。資産所有者に修復手順を通知するチケット システムを実装します。 | × |
+| 監視Teams | 脅威と脆弱性の状態は、会社のイントラネット ポータルを介して報告されます | Tier 2 SOC アナリスト | アセットの修復の進行状況をMicrosoft 365 Defenderから自動生成されたレポート | [セキュリティ コンプライアンス センター&アラート](/microsoft-365/security/office-365-security/alerts) <br><br> セキュリティで保護されたスコアの監視 | アセットの脅威と脆弱性の状態に関するビューまたはダッシュボード レポートがアセット所有者に伝達されません。 | 自動化スクリプトを作成して、リスクの高い重要な資産脆弱性の修復の状態を組織に設定します。 | × |
 |||||||||
 
 次の使用例では、テストでは、各チームの責任の基準として確立された SOC チームの要件にいくつかのギャップが見えました。 使用例のチェックリストは、SOC チームが新しい SOC 要件または既存の SOC 要件との統合Microsoft 365 Defenderに備えた包括的なチェックリストです。 これは反復的なプロセスなので、使用例の開発プロセスと使用例の出力コンテンツは、学習したレッスンで SOC の runbook を更新および成熟する際に自然に役立つでしょう。

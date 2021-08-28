@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 682b7729bbfe49a0889065b9cabcae980e031881
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: a8efc37b3ae5177540242bca5fdbeab5f4e613ba
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247368"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58576178"
 ---
 # <a name="pilot-microsoft-defender-for-endpoint"></a>エンドポイント向け Microsoft Defender のパイロット
 
@@ -34,7 +34,7 @@ ms.locfileid: "58247368"
 
 次の手順を使用して、Microsoft Defender for Endpoint のパイロットをセットアップおよび構成します。 
 
-![Defender 評価環境に Microsoft Defender for Identity を追加する手順](../../media/defender/m365-defender-endpoint-pilot-steps.png)
+![Microsoft Defender for Identity を Defender 評価環境に追加する手順。](../../media/defender/m365-defender-endpoint-pilot-steps.png)
 
 - 手順 1. パイロット グループの確認
 - 手順 2。 機能を試す
@@ -43,7 +43,7 @@ Microsoft Defender for Endpoint をパイロットする場合は、組織全体
 
 その後、攻撃シミュレーションの実行、Defender for Endpoint による悪意のあるアクティビティの表面化、効率的な応答の実行など、利用可能な機能を試し直します。 
 
-## <a name="step-1-verify-pilot-group"></a>手順 1。 パイロット グループの確認
+## <a name="step-1-verify-pilot-group"></a>手順 1. パイロット グループの確認
 [評価を有効にする] セクションで説明されている[](eval-defender-endpoint-enable-eval.md)オンボーディング手順を完了すると、デバイスインベントリリストにデバイスが約 1 時間後に表示されます。 
 
 オンボードデバイスが表示された場合は、機能の試しに進みます。 

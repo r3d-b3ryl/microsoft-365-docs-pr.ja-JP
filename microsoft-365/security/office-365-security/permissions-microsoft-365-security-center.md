@@ -19,12 +19,12 @@ description: 管理者は、セキュリティに関連するすべてのタス�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9f417bbb784a328970c32602d52a76f5c855016f325b316af53ed0a4ff137db1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e3eb4f424ba8b9fd73f5cad62c2a136da8fd8249
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56807830"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58576070"
 ---
 # <a name="permissions-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルのアクセス許可
 
@@ -54,7 +54,7 @@ Microsoft 365 Defender ポータルのアクセス許可は、役割ベースの
 
 Microsoft 365 Defender ポータルには、割り当てる必要がある最も一般的なタスクと機能に対する既定の役割グループが含まれます。 通常、個々のユーザーを既定の役割グループの **メンバー** として追加することをお勧めします。
 
-![役割グループと、ロールおよびメンバーとの関係を示す図](../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
+![役割グループと、ロールおよびメンバーとの関係を示す図。](../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
 
 ## <a name="roles-and-role-groups-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルの役割と役割グループ
 
@@ -64,7 +64,7 @@ Microsoft 365 Defender ポータルの **[アクセス許可と役割]** では�
 
 - **メールと共同作業の役割**: セキュリティ/コンプライアンス センターで使用できるのと同じ役割グループですが、Microsoft 365 Defender ポータルから直接管理できます。 ここで割り当てるアクセス許可は Microsoft 365 Defender ポータル、Microsoft 365 コンプライアンス センター、およびセキュリティ/コンプライアンス センターに固有のものであり、他の Microsoft 365 ワークロードで必要なすべてのアクセス許可をカバーするものではありません。
 
-![Microsoft 365 Defender ポータルのアクセス許可と役割のページ](../../media/m365-sc-permissions-and-roles-page.png)
+![Microsoft 365 Defender ポータルのアクセス許可と役割のページ。](../../media/m365-sc-permissions-and-roles-page.png)
 
 ### <a name="azure-ad-roles-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルの Azure AD ロール
 
@@ -72,7 +72,7 @@ Microsoft 365 Defender ポータルの **[アクセス許可と役割]** では�
 
 役割を選択すると、役割の説明とユーザーの割り当てを含む詳細ポップアップが表示されます。 ただし、それらの割り当てを管理するには、詳細ポップアップで **[Azure AD でメンバーを管理する]** をクリックする必要があります。
 
-![Azure Active Directory のアクセス許可管理へのリンク](../../media/permissions-manage-in-azure-ad-link.png)
+![Azure Active Directory のアクセス許可管理へのリンク。](../../media/permissions-manage-in-azure-ad-link.png)
 
 詳細については、「[Azure Active Directory で管理者ロールを表示して割り当てる](/azure/active-directory/users-groups-roles/directory-manage-roles-portal)」を参照してください。
 
@@ -103,7 +103,7 @@ Microsoft 365 Defender ポータルの **[アクセス許可と役割]** では�
 
 1. Microsoft 365 Defender ポータルで、**[メールと共同作業の役割]** \> **[アクセス許可と役割]** \> **[メールと共同作業の役割]** \> **[役割]** に移動します。
 
-2. **[アクセス許可]** ページが開いたら、変更する役割グループをリストから選択します。 **[名前]** の列見出しをクリックしてリストを名前で並べ替えることができます。または、**[検索]** ![[検索] アイコン](../../media/m365-cc-sc-search-icon.png) をクリックして役割グループを探すこともできます。
+2. **[アクセス許可]** ページが開いたら、変更する役割グループをリストから選択します。 **[名前]** 列ヘッダーをクリックしてリストを名前で並べ替えるか、**[検索]** ![[検索アイコン]](../../media/m365-cc-sc-search-icon.png) をクリックします。 これで役割グループを検索できます。
 
 3. 役割グループの詳細ポップアップが表示されたら、**[メンバー]** セクションで **[編集]** をクリックします。
 
@@ -113,11 +113,11 @@ Microsoft 365 Defender ポータルの **[アクセス許可と役割]** では�
 
 5. **[メンバーの選択]** ポップアップが表示されたら、次のいずれかの手順を実行します。
 
-   - **[追加]** をクリックします。 ユーザーの一覧が表示されたら、1 人以上のユーザーを選択します。 または、**[検索]** ![[検索] アイコン](../../media/m365-cc-sc-search-icon.png) をクリックして、ユーザーを探して選択します。
+   - **[追加]** をクリックします。 ユーザーの一覧が表示されたら、1 人以上のユーザーを選択します。 または、**[検索]** ![[検索アイコン]](../../media/m365-cc-sc-search-icon.png) をクリックします。 ユーザーを探して選択するためです。
 
      追加するユーザーを選択したら、**[追加]** をクリックします。
 
-   - **[削除]** をクリックします。 存在するメンバーを 1 人以上選択します。 または、**[検索]** ![[検索] アイコン](../../media/m365-cc-sc-search-icon.png) をクリックして、メンバーを見つけて選択します。
+   - **[削除]** をクリックします。 存在するメンバーを 1 人以上選択します。 または、**[検索]** ![[検索アイコン]](../../media/m365-cc-sc-search-icon.png) をクリックします。 メンバーを見つけて選択するためです。
 
      削除するユーザーを選択したら、**[削除]** をクリックします。
 

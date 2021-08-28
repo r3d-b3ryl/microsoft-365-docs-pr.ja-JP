@@ -16,18 +16,18 @@ ms.collection:
 - remotework
 ms.custom: ''
 description: 従業員がいつでもどこからでもリモートで作業できるようにするセキュリティとインフラストラクチャを構成します。
-ms.openlocfilehash: 5b2c47dff19b07a5ca2a207785891ebfb6777459ea9c5254680079f4458e8f84
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 38dc7110c44b3b9acf20283a4156b3eccc0f2165
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53804653"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572781"
 ---
 # <a name="configure-a-team-with-security-isolation-in-a-devtest-environment"></a>開発/テスト環境でセキュリティの分離を使用してチームを構成する
 
 この記事では、開発/テスト環境で[セキュリティを分離したチーム](secure-teams-security-isolation.md)を作るための詳細な手順について説明します。
 
-![会社戦略の分離チームの構成](../media/team-security-isolation-dev-test/team-security-isolation-dev-test-config.png)
+![会社戦略の分離チームの構成。](../media/team-security-isolation-dev-test/team-security-isolation-dev-test-config.png)
 
 こうしたチームを運用環境に展開する前に、この開発/テスト環境を使用して、特定のニーズに合わせて設定を検証し、微調整します。
 
@@ -155,7 +155,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 10. **[サイトとグループの設定]** ページで、**[サイトとグループの設定]** を **[オン]** に設定します。
 11. **[Office 365 グループに接続されているチーム サイトのプライバシー]** ドロップダウンで、**[非公開 - メンバーのみがサイトにアクセス可能]** を選びます。
 12. **[非管理対象デバイス]** で、**[アクセスをブロックする]** を選びます。
-13. **[次へ]** をクリックします。
+13. [**次へ**] をクリックします。
 14. **[Office アプリの自動ラベル付け]** ページで、**[次へ]** をクリックします。
 15. **[送信]** をクリックしてから、**[完了]** をクリックします。
 
@@ -169,7 +169,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 6. [**ユーザーとグループに発行**] ページで、[**ユーザーとグループの選択**] をクリックします。
 7. [**追加**] をクリックし、**会社戦略** を選択します。
 8. **[追加]** をクリックし、**[完了]** をクリックします。
-9. **[次へ]** をクリックします。
+9. [**次へ**] をクリックします。
 10. [ポリシーの設定] ページで、**[ユーザーはラベルを削除するか、分類ラベルを下げるために正当な理由を提供する必要がある]** チェック ボックスをオンにし、**[次へ]** をクリックします。
 11. ポリシー名として **会社戦略** と入力し、[**次へ**] をクリックします。
 12. **[送信]** をクリックしてから、**[完了]** をクリックします。
@@ -202,7 +202,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 
 会社戦略チームの最終的な構成をここに示します。
 
-![会社戦略の分離チームの構成](../media/team-security-isolation-dev-test/team-security-isolation-dev-test-config.png)
+![会社戦略の分離チームの構成。](../media/team-security-isolation-dev-test/team-security-isolation-dev-test-config.png)
 
 ## <a name="next-step"></a>次のステップ
 

@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 52e7a3098f157e52ecf32802a9f69328b28e2e52
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.openlocfilehash: 6328d9879bf816e69c44007e7e85a30cfee086bc
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58684162"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572601"
 ---
 # <a name="investigate-a-file-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Microsoft Defender for Endpoint アラートに関連付けられたファイルを調査する
 
@@ -72,9 +72,9 @@ ms.locfileid: "58684162"
 
 ファイルの MD5、ウイルスの合計検出率、使用可能な場合は Microsoft Defender AV 検出、ファイルの普及率などの詳細が表示されます。
 
-ファイルの有病率カードは、組織内および世界中のデバイスでファイルが見られた場所を示します。
+ファイルの有病率カードは、組織内および世界中のデバイスでファイルが見られた場所を示します。 
 
-> [!NOTE]
+> [!NOTE] 
 > 異なるユーザーは、ファイル普及カードの組織セクションのデバイスに異なる値を表示する場合があります。 これは、ユーザーが持つ RBAC スコープに基づいて情報がカードに表示されるためです。 つまり、ユーザーが特定のデバイス セットで表示を許可されている場合、それらのデバイスに対するファイル組織の普及率だけが表示されます。
 
 ![ファイル情報のイメージ。](images/atp-file-information.png)
@@ -89,8 +89,8 @@ ms.locfileid: "58684162"
 
 [ **組織で観察]** タブを使用すると、日付範囲を指定して、ファイルで観察されたデバイスを確認できます。
 
-> [!NOTE]
-> このタブには、最大 100 台のデバイスが表示されます。 ファイルを _含む_ すべてのデバイスを表示するには、タブの列ヘッダーの上にあるアクションメニューから [エクスポート] を選択して、タブを CSV ファイルにエクスポートします。
+>[!NOTE]
+>このタブには、最大 100 台のデバイスが表示されます。 ファイルを _含む_ すべてのデバイスを表示するには、タブの列ヘッダーの上にあるアクションメニューから [エクスポート] を選択して、タブを CSV ファイルにエクスポートします。
 
 ![ファイルを含む最新の観測デバイスのイメージ。](images/atp-observed-machines.png)
 

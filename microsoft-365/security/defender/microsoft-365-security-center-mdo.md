@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: a3895b2d3e5ee435f0aeb1bb9b2becf23b6da71ecd387bbbc06fac3f1941a8d7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e65d7e869011cbbc6a55828f693782a6b7e0dfd6
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838821"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575938"
 ---
 # <a name="microsoft-defender-for-office-365-in-microsoft-365-defender"></a>Microsoft Defender for Office 365 Microsoft 365 Defender
 
@@ -48,11 +48,11 @@ ms.locfileid: "53838821"
 |レコード管理||詳細[については、「Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/homepage)||
 |情報ガバナンス||詳細[については、「Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/homepage)||
 |脅威の管理|[メール &コラボレーション](https://security.microsoft.com/homepage)|||
-|Permissions|[ロール&アクセス許可](https://security.microsoft.com/emailandcollabpermissions)|詳細[については、「Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/homepage)||
+|アクセス許可|[ロール&アクセス許可](https://security.microsoft.com/emailandcollabpermissions)|詳細[については、「Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/homepage)||
 |メール フロー|||「[管理Exchange」を参照してください。](https://admin.exchange.microsoft.com/#/)|
 |データのプライバシー||詳細[については、「Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/homepage)||
 |検索|[Audit](https://security.microsoft.com/auditlogsearch?viewid=Async%20Search)|検索 (コンテンツ検索)||
-|レポート|[レポート](https://security.microsoft.com/emailandcollabreport)|||
+|レポート|[Report](https://security.microsoft.com/emailandcollabreport)|||
 |サービス アシュアランス||詳細[については、「Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/homepage)||
 |監督||詳細[については、「Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/homepage)||
 |電子情報開示||詳細[については、「Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/homepage)||
@@ -72,11 +72,11 @@ ms.locfileid: "53838821"
 
 統合された Microsoft 365 Defender ソリューションを使用すると、脅威シグナルを一緒に縫い合わせ、脅威の範囲と影響の全範囲と影響、および組織に現在影響を与えている方法を特定できます。
 
-:::image type="content" source="../../media/M365-defender-converge-experience.png" alt-text="コンバージMicrosoft 365 Defenderエクスペリエンスのイメージ":::
+:::image type="content" source="../../media/M365-defender-converge-experience.png" alt-text="コンバージMicrosoft 365 Defenderエクスペリエンスのイメージ。":::
 
 Defender for Office 365メール メッセージ、リンク (URL)、およびコラボレーション ツールによって組織が悪意のある脅威から保護します。
 
-:::image type="content" source="../../media/Defender-for-O365.png" alt-text="Defender for Office 365":::
+:::image type="content" source="../../media/Defender-for-O365.png" alt-text="Defender for Office 365.":::
 
 ### <a name="incidents-and-alerts"></a>インシデントと警告
 
@@ -85,7 +85,7 @@ Defender for Office 365メール メッセージ、リンク (URL)、および�
 - [調査の詳細](incidents-overview.md)
 - [通知の管理に関するその他の情報](/windows/security/threat-protection/microsoft-defender-atp/review-alerts)
 
-![通知とアクションのクイック起動バー](../../media/converge-1-alerts-and-actions.png)
+![[アラートとアクション] クイック起動バー。](../../media/converge-1-alerts-and-actions.png)
 
 ### <a name="hunting"></a>検索
 

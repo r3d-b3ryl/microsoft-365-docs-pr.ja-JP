@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: デスクトップ アプリで共同編集と自動保存を有効にする設定をオンにして、SharePoint、OneDrive でドキュメントのラベル付けと暗号化が行えます。
-ms.openlocfilehash: aab434d782446aad32a48d13f1ea87f4b144ef9f
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: f4399635be64343b4858dbf0b507284afc1f6573
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247512"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574762"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>機密度ラベルを使用して暗号化されたファイルの共同編集を有効にする
 
@@ -127,6 +127,8 @@ Office デスクトップ アプリの共同編集をサポートする設定を
 
 - Office for the web で 300 MB 以上の Word ファイル、Excel ファイル、PowerPoint ファイルにラベルを適用できない。 これらのファイルでは、Office デスクトップ アプリを使用してラベルを適用できますが、ファイルを開いているのが自分だけである必要があります。
 
+- 現在ロールアウト中: [秘密度レベルを条件として使用する DLP ポリシーの使用](dlp-sensitivity-label-as-condition.md)と、メールの暗号化されていない添付ファイルのサポート。
+
 - 一部のドキュメントは、[パスワード保護](https://support.microsoft.com/office/require-a-password-to-open-or-modify-a-workbook-10579f0e-b2d9-4c05-b9f8-4109a6bce643)、[共有ブック](https://support.microsoft.com/office/about-the-shared-workbook-feature-49b833c0-873b-48d8-8bf2-c1c59a628534)、または ActiveX コントロールを含むコンテンツなどの機能のため、秘密度ラベルと互換性がありません。 その他の理由は、「[Office の共同編集のトラブルシューティング](https://support.microsoft.com/office/troubleshoot-co-authoring-in-office-bd481512-3f3a-4b6d-b7eb-ebf9d3626ae7)」に記載されています。 これらのドキュメントには、「**アップロードに失敗しました**」というメッセージが表示され、**[変更を破棄する]** オプションを選択する必要があります。 この問題が解決されるまで、この失敗メッセージで識別されるこれらのドキュメントにラベルを付けないでください。
 
 - iOS 用 Office アプリと Android 用 Office アプリがサポートされていない。
@@ -144,7 +146,7 @@ Office デスクトップ アプリの共同編集をサポートする設定を
     
     **機密度ラベルを使用したファイルの共同編集を有効にする** を選んでから **適用** を選びます。
     
-    ![機密度ラベルを使用したファイルの共同編集をオンにできるオプション](../media/co-authoring-tenant-option-for-sensitivity-labels.png)
+    ![機密度ラベルを使用したファイルの共同編集をオンにできるオプション。](../media/co-authoring-tenant-option-for-sensitivity-labels.png)
 
 3. この設定が環境全体に複製されるのを 24 時間待ってから、この共同編集用の新機能を使用します。
 
@@ -155,7 +157,7 @@ Office デスクトップ アプリの共同編集をサポートする設定を
 
 テナントに対して機密度ラベルを使用したファイルの共同編集を有効にすると、自身ではこの設定を無効にすることはできません。 そのため、この前提条件、結果、制限事項を確認して理解した上でこの設定を有効にすることが重要です。
 
-![共同編集で機密度ラベルが有効になっていることを表示させるオプション](../media/co-authoring-tenant-option-set-for-sensitivity-labels.png)
+![共同編集で機密度ラベルが有効になっていることを表示させるオプション。](../media/co-authoring-tenant-option-set-for-sensitivity-labels.png)
 
 スクリーンショットからでもわかるように、この設定がオンになっている場合は [Microsoft サポート](../business-video/get-help-support.md) に問い合わせてこの設定を無効にするようにリクエストできます。 このリクエストには数日かかる場合があり、テナントのグローバル管理者であることを証明する必要があります。 通常のサポート料金が適用されることをご了承ください。 
 

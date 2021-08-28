@@ -18,12 +18,12 @@ ms.collection:
 localization_priority: Normal
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: OneDrive Online の複数地域機能を使用して、複数の地域に Microsoft 365 のプレゼンスを展開します。
-ms.openlocfilehash: 3a47fb6e36806b7bdbde1a1ba2b92186c6e193a003c3e7dcdcdce6a8de6fd733
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 544ca44308b8a51bae19df6b54a522469ae0de3c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53904925"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572649"
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online"></a>OneDrive および SharePoint Online の複数地域機能
 
@@ -49,7 +49,7 @@ Microsoft 365、Exchange、OneDrive、SharePoint、Teams以外のサービスは
 
 複数地域環境の設定と管理は、SharePoint 管理センターで行います。 
 
-![SharePoint 管理センターの [地域の場所] ページのスクリーン ショット](../media/sharepoint-multi-geo-admin-center.png)
+![管理センターの [地域の場所] ページSharePointスクリーンショット。](../media/sharepoint-multi-geo-admin-center.png)
 
 (SharePoint サイトや OneDrive サイトを移動するなど、一部の操作では Microsoft PowerShell が必要です。)
 

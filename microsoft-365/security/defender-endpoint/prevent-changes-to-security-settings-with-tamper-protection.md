@@ -17,12 +17,12 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.technology: mde
 ms.date: 07/27/2021
-ms.openlocfilehash: 5b8abf4f07c1e0a136c456cf5b83adf64e974d7c67ae512c0edb991935afb423
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e8388721d11d25d17bc8b8bbbe505e968d243c9f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53873924"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575794"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>改ざん防止機能を使用してセキュリティ設定を保護する
 
@@ -115,7 +115,7 @@ ms.locfileid: "53873924"
 
 ### <a name="turn-tamper-protection-on-or-off-in-the-microsoft-365-defender-portal"></a>タンパープロテクションをオンまたはオフにする (または無効にする) Microsoft 365 Defenderポータル
 
-:::image type="content" source="../../media/mde-turn-tamperprotectionon.png" alt-text="ポータルで改ざん防止を有効Microsoft 365 Defenderする":::
+:::image type="content" source="../../media/mde-turn-tamperprotectionon.png" alt-text="ポータルで改ざん防止を有効Microsoft 365 Defenderします。":::
 
 1. ポータル ( ) にMicrosoft 365 Defenderサインイン [https://security.microsoft.com](https://security.microsoft.com) します。
 
@@ -141,7 +141,7 @@ ms.locfileid: "53873924"
 
 ### <a name="turn-tamper-protection-on-or-off-in-intune"></a>Intune でタンパープロテクションをオン (またはオフ) にする
 
-![Intune で改ざん防止を有効にする](images/turnontamperprotect-MEM.png)
+![Intune で改ざん防止を有効にする。](images/turnontamperprotect-MEM.png)
 
 1. 管理センターの[Microsoft エンドポイント マネージャーに移動し](https://endpoint.microsoft.com)、サインインします。
 
@@ -206,7 +206,7 @@ Configuration Manager のバージョン [2006](/mem/configmgr/core/plan-design/
 
 アプリに表示されるWindows セキュリティします。
 
-![タンパープロテクションがオンWindows 10 Home](images/tamperprotectionturnedon.png)
+![タンパープロテクションは、Windows 10 Home。](images/tamperprotectionturnedon.png)
 
 1. [スタート **] を選択** し、[セキュリティ] の入力 *を開始します*。 検索結果で、[検索] を **Windows セキュリティ** します。
 
@@ -220,7 +220,7 @@ Configuration Manager のバージョン [2006](/mem/configmgr/core/plan-design/
 
 改ざんの試行が検出されると、ポータル () でアラート[Microsoft 365 Defenderされます](/microsoft-365/security/defender-endpoint/portal-overview) [https://security.microsoft.com](https://security.microsoft.com) 。
 
-![Microsoft 365 Defender](images/tamperattemptalert.png)
+![Microsoft 365 Defender。](images/tamperattemptalert.png)
 
 Microsoft [](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) Defender for [](/microsoft-365/security/defender-endpoint/advanced-hunting-overview) Endpoint のエンドポイント検出および応答機能と高度なハンティング機能を使用して、セキュリティ運用チームはそのような試みを調査し、対処できます。
 
@@ -228,7 +228,7 @@ Microsoft [](/microsoft-365/security/defender-endpoint/overview-endpoint-detecti
 
 タンパープロテクションは [、脅威&管理機能と](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) 統合されます。 [セキュリティに関する推奨事項には](/microsoft-365/security/defender-endpoint/tvm-security-recommendation) 、改ざん防止が有効になっていることを確認する方法が含まれます。 たとえば、改ざん時に検索 *できます*。 結果では、[タンパープロテクションを **有効** にする] を選択して詳細を確認し、有効にできます。
 
-![改ざん防止を有効にする](images/tamperprotectsecurityrecos.png)
+![改ざん防止を有効にする。](images/tamperprotectsecurityrecos.png)
 
 脅威の脆弱性管理の詳細&、「脅威の脆弱性管理」を&を[参照Microsoft 365 Defender。](/microsoft-365/security/defender-endpoint/tvm-dashboard-insights#threat--vulnerability-management-in-microsoft-defender-security-center)
 
@@ -242,7 +242,7 @@ Configuration Manager バージョン 2006 をテナント接続で使用して�
 
 ### <a name="will-tamper-protection-affect-non-microsoft-antivirus-registration-in-the-windows-security-app"></a>改ざん防止は、Microsoft 以外のウイルス対策アプリの登録Windows セキュリティしますか?
 
-いいえ。 Microsoft 以外のウイルス対策製品は、引き続きアプリケーションにWindows セキュリティされます。
+その必要はありません。 Microsoft 以外のウイルス対策製品は、引き続きアプリケーションにWindows セキュリティされます。
 
 ### <a name="what-happens-if-microsoft-defender-antivirus-is-not-active-on-a-device"></a>デバイスでMicrosoft Defender ウイルス対策がアクティブではない場合は、どうなるでしょうか。
 
@@ -282,7 +282,7 @@ Intune でタンパープロテクションを構成する柔軟性がありま�
 
 ### <a name="im-an-enterprise-customer-can-local-admins-change-tamper-protection-on-their-devices"></a>エンタープライズ顧客です。 ローカル管理者は、デバイスの改ざん防止を変更できますか?
 
-いいえ。 ローカル管理者は、改ざん防止の設定を変更または変更できません。
+その必要はありません。 ローカル管理者は、改ざん防止の設定を変更または変更できません。
 
 ### <a name="what-happens-if-my-device-is-onboarded-with-microsoft-defender-for-endpoint-and-then-goes-into-an-off-boarded-state"></a>デバイスが Microsoft Defender for Endpoint にオンボードされ、オフボード状態に入った場合は、どうなるでしょうか。
 

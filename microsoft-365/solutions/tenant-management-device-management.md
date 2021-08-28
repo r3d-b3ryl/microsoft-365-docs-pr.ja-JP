@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: デバイスとアプリの管理に適切なオプションを展開し、Microsoft 365します。
-ms.openlocfilehash: eb15f5805308c6f575beb9eebd8f7825ebdd13173037870a3770fd306bb090bb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1d96042f2733a69919fd0dbaa9f30be6835d6469
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53804615"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571195"
 ---
 # <a name="step-5-device-and-app-management-for-your-microsoft-365-for-enterprise-tenants"></a>手順 5.  エンタープライズ テナント用のデバイスMicrosoft 365管理
 
@@ -29,7 +29,7 @@ Microsoft 365には、モバイル デバイス管理 (MDM) とモバイル ア�
 
 ユーザー、デバイスの検証と管理、およびローカルおよびクラウドの生産性アプリの使用例を次に示Microsoft Teams。
 
-![ユーザー、デバイス、アプリの検証と管理](../media/tenant-management-overview/tenant-management-device-app-mgmt.png)
+![ユーザー、デバイス、アプリの検証と管理。](../media/tenant-management-overview/tenant-management-device-app-mgmt.png)
 
 組織のリソースの保護と保護を支援するために、Microsoft 365デバイスとアプリへのアクセスを管理するための機能が含まれています。 デバイス管理には、次の 2 つのオプションがあります。
 
@@ -57,7 +57,7 @@ Microsoft は、安全で生産性の高い従業員を確保するために [�
 
 ユーザー、デバイス、およびローカルおよびクラウドの生産性アプリ (Microsoft Teams など) の使用を検証および制限するこれらの設定とポリシーのアプリケーションの例を次に示します。
 
-![ユーザー、デバイス、およびアプリの使用に関する要件と制限に関する ID とデバイス アクセスの構成](../media/tenant-management-overview/tenant-management-device-app-mgmt-golden-config.png)
+![ユーザー、デバイス、およびアプリの使用に関する要件と制限に関する ID とデバイス アクセスの構成。](../media/tenant-management-overview/tenant-management-device-app-mgmt-golden-config.png)
 
 デバイス アクセスとアプリ管理の場合は、次の記事の構成を使用します。
 
@@ -70,7 +70,7 @@ Microsoft 365 テナントのデバイスとアプリの管理では、Intune �
 
 新しい要素が強調表示された Intune デバイスとアプリ管理を備えたテナントの例を次に示します。
 
-![Intune デバイスとアプリ管理を使用するテナントの例](../media/tenant-management-overview/tenant-management-tenant-build-step5.png)
+![Intune デバイスとアプリ管理を使用するテナントの例。](../media/tenant-management-overview/tenant-management-tenant-build-step5.png)
 
 この図では、テナントには次の機能があります。
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a82b88683eaf1e7033115ce98773abf810602264dda8e48f5004d4ee5bf1cdc6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 327217a9682e8a50c41c2696292d1a453fbd8cf9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817272"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575986"
 ---
 # <a name="threat-protection-report-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の脅威に対する保護のレポート
 
@@ -33,18 +33,18 @@ ms.locfileid: "53817272"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 脅威保護レポートは、組織で生成されたアラートに関する高レベルの情報を提供します。 このレポートには、検出元、カテゴリ、重大度、状態、分類、および時間の間のアラートの決定を示す傾向情報が含まれています。
 
 ダッシュボードは、次の 2 つのセクションに構成されます。
 
-![脅威保護レポートの画像](images/threat-protection-reports.png)
+![脅威保護レポートのイメージ。](images/threat-protection-reports.png)
 
 Section | 説明 
 :---|:---
 1 | アラートの傾向
-2 | アラートの概要
+2  | アラートの概要
 
 ## <a name="alert-trends"></a>アラートの傾向
 既定では、アラートの傾向には、最新の 1 日で終了する 30 日間の期間のアラート情報が表示されます。 組織で発生している傾向についてより良い視点を得るために、表示される期間を調整してレポート期間を微調整できます。 期間を調整するには、ドロップダウン オプションから時間範囲を選択します。
@@ -52,7 +52,7 @@ Section | 説明
 - 30 日間
 - 3 か月
 - 6 か月
-- Custom
+- カスタム
 
 >[!NOTE]
 >これらのフィルターは、[アラートの傾向] セクションにのみ適用されます。 アラートの概要セクションには影響を与えかねない。

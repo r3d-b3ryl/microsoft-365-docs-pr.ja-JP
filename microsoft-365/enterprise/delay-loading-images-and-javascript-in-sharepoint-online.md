@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
 description: JavaScript を使用してイメージの読み込みと重要でない JavaScript の読み込みを遅らせSharePointオンライン ページの読み込み時間を削減する方法について説明します。
-ms.openlocfilehash: 0b0129f691018caf414ebd249e905a97d5560145dc648a073d8000402d11217d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7be256db8bce115b130322d1dd34131d845ef165
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53813296"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573141"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>SharePoint Online での画像の読み込み遅延と JavaScript
 
@@ -109,11 +109,11 @@ $('#s4-workspace').on("scroll", function () {
   
 これを機能するには、マスター ページで jQuery も参照する必要があります。 次の例では、最初のページの読み込みで、読み込まれるイメージは 1 つのみですが、ページにはさらに複数のイメージが読み込まれているのを確認できます。
   
-![ページ上に読み込まれる 1 つのイメージが表示されたスクリーンショット](../media/3d177ddb-67e5-43a7-b327-c9f9566ca937.png)
+![ページに読み込まれた 1 つの画像を示すスクリーンショット。](../media/3d177ddb-67e5-43a7-b327-c9f9566ca937.png)
   
 次のスクリーンショットは、スクロールして表示した後にダウンロードされる残りのイメージを示しています。
   
-![ページ上に読み込まれる複数のイメージが表示されたスクリーンショット](../media/95eb2b14-f6a1-4eac-a5cb-96097e49514c.png)
+![ページに読み込まれた複数の画像を示すスクリーンショット。](../media/95eb2b14-f6a1-4eac-a5cb-96097e49514c.png)
   
 JavaScript を使用してイメージの読み込みを遅延させるのは、パフォーマンスを向上させる効果的な手法です。ただし、この手法がパブリック Web サイトに適用されている場合、検索エンジンは、定期的に形成されたイメージをクロールするのと同じ方法でイメージをクロールできます。 これは、ページが読み込まれるまで画像自体のメタデータが実際にはそこにないので、検索エンジンのランク付けに影響を与える可能性があります。 検索エンジン のクローラは HTML のみを読み取り、ページに画像をコンテンツとして表示しない。 画像は、検索結果のページのランク付けに使用される要素の 1 つです。 これを回避する 1 つの方法は、画像に入門テキストを使用する方法です。
   

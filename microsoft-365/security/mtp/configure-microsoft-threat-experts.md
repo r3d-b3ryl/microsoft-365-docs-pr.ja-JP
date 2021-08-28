@@ -14,12 +14,12 @@ localization_priority: normal
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.openlocfilehash: db98e147ef4453f62d4d17431286aaa99959712d
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.openlocfilehash: 1137ef50c5e3fb72b6bc0532b021de05c7eff1ce
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58357470"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58576130"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities-through-microsoft-365-defender"></a>管理を通じてMicrosoft 脅威エキスパート機能を構成Microsoft 365 Defender
 
@@ -49,15 +49,15 @@ Microsoft Defender for Endpoint および Microsoft 365 Defenderを既に持っ�
 
 2. **[適用]** を選択します。
 
-    ![ユーザー設定Microsoft 脅威エキスパートイメージ](../../media/mte/mte-collaboratewithmte.png)
+    ![ユーザー設定Microsoft 脅威エキスパートイメージ。](../../media/mte/mte-collaboratewithmte.png)
 
 3. Microsoft がアプリケーションについて連絡できるよう、名前とメール アドレスを入力します。
 
-    ![アプリケーションのMicrosoft 脅威エキスパート画像](../../media/mte/mte-apply.png)
+    ![アプリケーションのMicrosoft 脅威エキスパートイメージ。](../../media/mte/mte-apply.png)
 
 4. プライバシーに [関する声明を読み](https://privacy.microsoft.com/en-us/privacystatement)、完了 **したら [送信** ] を選択します。 アプリケーションが承認されると、ウェルカム メールが届きます。
 
-    ![アプリケーションのMicrosoft 脅威エキスパートのイメージ](../../media/mte/mte-applicationconfirmation.png)
+    ![アプリケーション確認Microsoft 脅威エキスパートのイメージ。](../../media/mte/mte-applicationconfirmation.png)
 
 5. ウェルカム メールを受信すると、ターゲット攻撃通知の受信が自動的に開始されます。
 
@@ -102,13 +102,13 @@ Microsoft Defender for Endpoint のお客様が既に存在する場合は、Mic
 
 2. トップ メニューから **[?脅威の専門家に相談してください**。
 
-    ![メニューからMicrosoft 脅威エキスパートエキスパートオンデマンドのイメージ](../../media/mte/incidents-action-mte-highlighted.png)
+    ![メニューからMicrosoft 脅威エキスパートエキスパートオンデマンドのイメージ。](../../media/mte/incidents-action-mte-highlighted.png)
 
     フライアウト画面が開きます。
 
     このヘッダーは、試用版サブスクリプションを使用しているか、完全なサブスクリプションを使用Microsoft 脅威エキスパートエキスパート オンデマンド サブスクリプションを示します。
 
-    ![オンデマンド試用版Microsoft 脅威エキスパートのエキスパートの画像](../../media/mte/mte-trial.png)
+    ![ユーザーのMicrosoft 脅威エキスパートのサブスクリプション画面のイメージ。](../../media/mte/mte-trial.png)
 
     [ **調査] トピック** フィールドには、要求の関連ページへのリンクが既に入力されています。
 

@@ -18,12 +18,12 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: この記事では、認証されていないユーザーとファイルおよびフォルダーを共有するためのベスト プラクティスを説明します。
-ms.openlocfilehash: 6aba41705f519e973447653b2a4c9b32b97e43bc44864374b142955c45c17d11
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 19791a532b6ea9a7167ac85dfe1eb1b58b9f8f1b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857157"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575674"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>認証されていないユーザーとファイルおよびフォルダーを共有するためのベスト プラクティス
 
@@ -45,7 +45,7 @@ ms.locfileid: "53857157"
 1. [SharePoint 管理センター](https://admin.microsoft.com/sharepoint)を開きます。
 2. 左側のナビゲーションで、**[ポリシー]** を展開し、**[共有]** をクリックします。
 3. **[[すべてのユーザー] リンクの有効期限とアクセス許可のオプションを選択する]** で、**[これらのリンクは、次の日数以内に期限切れにする必要があります]** チェック ボックスをオンにします。</br>
-   ![SharePoint における組織レベルの [すべてのユーザー] リンクの有効期限設定のスクリーンショット](../media/sharepoint-organization-anyone-link-expiration.png)
+   ![SharePoint における組織レベルの [すべてのユーザー] リンクの有効期限設定のスクリーンショット。](../media/sharepoint-organization-anyone-link-expiration.png)
 4. このボックスに日数を入力し、**[保存]** をクリックします。
 
 特定のサイトで [すべてのユーザー] リンクの有効期限を設定するには
@@ -54,7 +54,7 @@ ms.locfileid: "53857157"
 2. 左側のナビゲーションで、**[サイト]** を展開し、**[アクティブなサイト]** をクリックします。
 3. 変更するサイトを選択し、**[共有]** をクリックします。
 4. **[[すべてのユーザー] リンクの詳細設定]** で、**[Expiration of Anyone links]** ([すべてのユーザー] リンクの有効期限) にある **[組織レベルの設定と同じ]** チェック ボックスをオフにします。</br>
-   ![SharePoint におけるサイトレベルの [すべてのユーザー] リンクの有効期限設定のスクリーンショット](../media/sharepoint-organization-anyone-link-expiration-site.png)
+   ![SharePoint におけるサイトレベルの [すべてのユーザー] リンクの有効期限設定のスクリーンショット。](../media/sharepoint-organization-anyone-link-expiration-site.png)
 5. **[これらのリンクは、次の日数以内に期限切れにする必要があります]** オプションを選択し、ボックスに日数を入力します。
 6. **[保存]** をクリックします。
 
@@ -73,7 +73,7 @@ ms.locfileid: "53857157"
 1. [SharePoint 管理センター](https://admin.microsoft.com/sharepoint)を開きます。
 2. 左側のナビゲーションで **[共有]** をクリックします。
 3. **[[すべてのユーザー] リンクの詳細設定]** で、使用するファイルとフォルダーのアクセス許可を選択します。</br>
-   ![SharePoint における組織レベルの [すべてのユーザー] リンクのアクセス許可設定のスクリーンショット](../media/sharepoint-organization-anyone-link-permissions.png)
+   ![SharePoint における組織レベルの [すべてのユーザー] リンクのアクセス許可設定のスクリーンショット。](../media/sharepoint-organization-anyone-link-permissions.png)
 
 *[すべてのユーザー]* リンクが **[表示]** に設定されていても、*[特定のユーザー]* リンクを使用することにより、ユーザーはファイルやフォルダーをゲストと共有して、ゲストに編集するアクセス許可を付与できます。 [特定のユーザー] リンクでは組織外のユーザーにゲストとしての認証が要求されるため、これらのリンクを使用して共有されているファイルやフォルダーに対するゲストのアクティビティを追跡および監査できます。
 
@@ -88,7 +88,7 @@ ms.locfileid: "53857157"
 2. 左側のナビゲーションで **[共有]** をクリックします。
 3. **[ファイルとフォルダーのリンク]** で、**[自分の組織内のユーザーのみ]** を選択します。
 
-   ![SharePoint の既定のリンクの種類設定のスクリーンショット](../media/sharepoint-default-sharing-link-company-link.png)
+   ![SharePoint の既定のリンクの種類設定のスクリーンショット。](../media/sharepoint-default-sharing-link-company-link.png)
 
 4. **[保存]** をクリックします
 
@@ -98,7 +98,7 @@ ms.locfileid: "53857157"
 3. 変更するサイトを選択し、**[共有]** をクリックします。
 4. **[既定の共有リンクの種類]** で、**[組織レベルの設定と同じ]** チェック ボックスをオフにします。
 
-   ![SharePoint のサイトレベルの既定のリンクの種類設定のスクリーンショット](../media/sharepoint-organization-anyone-link-permissions-site.png)
+   ![SharePoint のサイトレベルの既定のリンクの種類設定のスクリーンショット。](../media/sharepoint-organization-anyone-link-permissions-site.png)
 
 5. **[組織内のユーザーのみ]** オプションを選択し、**[保存]** をクリックします。
 
@@ -122,7 +122,7 @@ DLP ルールを作成するには
 10. [ **アクション** ] で、[ **アクションの追加**] をクリックし [ **アクセスを制限する、またはMicrosoft 365のロケーションでコンテンツを暗号化する**] を選択します。
 11. **[アクセスを制限する、または Microsoft 365 のロケーションでコンテンツを暗号化する]** チェック ボックスをオンにし、**[Only people who were given access to the content through the "Anyone withe the link" options]** ([リンクを知っているすべてのユーザー] オプションを通してコンテンツへのアクセス権を付与されたユーザーのみ) オプションを選択します。
 
-      ![DLP ルールのアクションオプションのスクリーンショット](../media/limit-accidental-exposure-dlp-anyone-links.png)
+      ![DLP ルールのアクションオプションのスクリーンショット。](../media/limit-accidental-exposure-dlp-anyone-links.png)
 
 12. **[保存]** をクリックし、**[次へ]** をクリックします。
 13. テスト オプションを選択し、**[次へ]** をクリックします。
@@ -137,7 +137,7 @@ DLP ルールを作成するには
 2. **[グローバル設定]** をクリックします。
 3. SharePoint、OneDrive、Microsoft Teams 用の ATP を有効にします。
 
-   ![セキュリティ/コンプライアンス センターの安全な添付ファイル設定のスクリーンショット](../media/safe-attachments-setting.png)
+   ![セキュリティ/コンプライアンス センターの安全な添付ファイル設定のスクリーンショット。](../media/safe-attachments-setting.png)
 
 4. 必要に応じて安全なドキュメントもオンにし、**[保存]** をクリックします。
 
@@ -155,7 +155,7 @@ Microsoft 365 コンプライアンス管理センターで秘密度ラベルを
 4. **[次へ]** をクリックして **[コンテンツのマーキング]** タブに移動し、コンテンツのマーキングを **オン** にします。
 5. 追加するテキストの種類のチェック ボックスをオンにして、**[テキストをカスタマイズする]** をクリックします。
 6. ドキュメントに追加するテキストを入力し、目的のテキスト オプションを選択して、**[保存]** をクリックします。</br>
-   ![秘密度ラベルのコンテンツのマーキング設定のスクリーンショット](../media/content-marking-for-anonymous-sharing.png)
+   ![秘密度ラベルのコンテンツのマーキング設定のスクリーンショット。](../media/content-marking-for-anonymous-sharing.png)
 7. **[次へ]** をクリックしてウィザードの最後に移動し、**[Save label]** (ラベルの保存) をクリックします。
 
 コンテンツのマーキングがラベルに対して有効になっている状態で、そのラベルをユーザーが適用すると、Office ドキュメントに指定したテキストが追加されます。

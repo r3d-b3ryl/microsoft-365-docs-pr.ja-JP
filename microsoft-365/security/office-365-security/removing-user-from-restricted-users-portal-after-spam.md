@@ -20,12 +20,12 @@ description: Microsoft 365 Defender ポータルの制限されたユーザー �
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b06cf477ab8d713e0684c0d62567199c6c57cb32
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 774f47c65f98a2e93ee6e50406afe897a315de12
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258483"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572397"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-microsoft-365"></a>Microsoft 365 の制限されたユーザー ポータルから、ブロックされたユーザーを削除する
 
@@ -100,7 +100,7 @@ Microsoft 365 Defender ポータルの **制限されたユーザー** ページ
    - **状態**: ![[オンに切り替え]](../../media/scc-toggle-on.png) で、アラートがオンになっていることを確認します。
    - **メール受信者**: **[編集]** をクリックし、表示される **[受信者の編集]** ポップアップで、次の設定を確認または構成します。
      - **メール通知の送信**: これが選択済み (**オン**) になっていることを確認します。
-     - **メール受信者**: 既定値は **TenantAdmins** (つまり、**グローバル管理者** のメンバー) です。 受信者を追加するには、ボックスの空白の領域をクリックします。 受信者の一覧が表示されますので、名前を入力して、フィルター処理で受信者を選択します。 名前の横にある![削除アイコン](../../media/m365-cc-sc-remove-selection-icon.png)をクリックすると、既存の受信者をボックスから削除することができます。
+     - **メール受信者**: 既定値は **TenantAdmins** (つまり、**グローバル管理者** のメンバー) です。 受信者を追加するには、ボックスの空白の領域をクリックします。 受信者の一覧が表示されますので、名前を入力して、フィルター処理で受信者を選択します。 ![[削除]](../../media/m365-cc-sc-remove-selection-icon.png) アイコンをクリックすると、ボックスから既存の受信者を削除できます。 名前の横に表示されます。
      - **1 日の通知の上限**: 既定値は **制限なし** ですが、1 日あたりの通知数の上限を選択することができます。
 
      完了したら、**[保存]** をクリックします。

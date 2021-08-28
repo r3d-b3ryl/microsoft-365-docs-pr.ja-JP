@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 4a1c391e-524f-48e0-bef8-185df3a9634b
 description: サービス名、説明、場所、期間、価格などのサービス提供情報を入力する手順。 また、サービスを提供する資格がある従業員にタグを付けることもできます。
-ms.openlocfilehash: 8a287e08a64fd2f7ca94e83f7b99c277f9e0124673697b202eda9ad86b0ff9e4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: acf7f7be1a5c5d70215406ec0a3f375eb0dfa89d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53804028"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572361"
 ---
 # <a name="define-your-service-offerings-in-bookings"></a>Bookings でサービス提供を定義する
 
@@ -39,7 +39,7 @@ Microsoft Bookings でサービス提供を定義する場合は、サービス�
         - 予約に固有の Teams または Skype 会議へのリンクが、スタッフと顧客の予定表の両方の予定表イベントにダイヤルイン情報と共に追加されます。
         - 会議に参加するリンクは、次の例に示すように、すべての確認メールとリマインダー メールに追加されます。
 
-        :::image type="content" source="media/bookings-teams-meeting-link.jpg" alt-text="Bookings で会議に参加Teamsリンクの例":::
+        :::image type="content" source="media/bookings-teams-meeting-link.jpg" alt-text="Bookings で会議に参加Teamsリンクの例。":::
 
         > [!NOTE]
         > Teams会議は、Teams モバイル アプリ、Teams デスクトップ アプリ、Web ブラウザー、または電話ダイヤルインを介して参加できます。 仮想予定の予約をTeams最適なエクスペリエンスを得る上で、テナントの既定のオンライン会議サービスとして会議を有効にすることを強く推奨します。
@@ -62,7 +62,7 @@ Microsoft Bookings でサービス提供を定義する場合は、サービス�
         - **予約のキャンセル** これにより、予約が取り消され、スタッフの予定表から削除されます。
         - **新しい予約** このオプションを使用すると、新しいSelf-Serviceスケジュールを設定するために、すべてのサービスとスタッフが一覧表示されたページにユーザーが移動します。
 
-        :::image type="content" source="media/bookings-manage-booking-button.jpg" alt-text="Bookings の [予約の管理] ボタン":::
+        :::image type="content" source="media/bookings-manage-booking-button.jpg" alt-text="[予約] の [予約の管理] ボタン。":::
 
         この設定は、ユーザーがページにアクセスする場合にのみ有効にSelf-Service勧めします。
 
@@ -74,7 +74,7 @@ Microsoft Bookings でサービス提供を定義する場合は、サービス�
 
 9. **イベントごとの最大出席者数** この設定では、複数のユーザーが同じ予定時間と同じスタッフ (フィットネス クラスなど) を予約する機能を必要とするサービスを作成できます。 選択したサービス、スタッフ、および時間の予定タイム スロットは、ユーザーが指定した出席者の最大数に達するまで予約できます。 現在の予定の容量と出席者は、Bookings Web アプリの [予定表] タブで表示できます。
 
-    :::image type="content" source="media/bookings-maximum-attendees.jpg" alt-text="Bookings で最大出席者数を設定する例":::
+    :::image type="content" source="media/bookings-maximum-attendees.jpg" alt-text="Bookings で最大出席者数を設定する例。":::
 
 10. **既定の価格**  これは、ページに表示される価格Self-Serviceです。 [ **価格が設定されていない** ] が選択されている場合、価格またはコストまたは価格への参照は表示されません。
 
@@ -92,21 +92,21 @@ Microsoft Bookings でサービス提供を定義する場合は、サービス�
 
     - 既定の確認メールとアラーム メールには、顧客/クライアント名、スタッフ メンバーの名前、予約されたサービスまたは予定、予定の時刻など、予定に関する基本情報が含まれます。 オンライン会議の場合は、参加するリンクも含まれます。 この設定が有効になっている場合 (手順 8 で前述したように) 予約を管理する機能も含めできます。
 
-        :::image type="content" source="media/bookings-remind-confirm.jpg" alt-text="Bookings からの確認メール":::
+        :::image type="content" source="media/bookings-remind-confirm.jpg" alt-text="Bookings からの確認メール。":::
 
     - 必要に応じて、再スケジュールに関する情報や、顧客が予定に持ち込む必要があるものなど、ここに必要な追加のテキストを含めできます。 [電子メールの確認の追加情報] フィールドに表示される、元の確認メールに追加されたカスタマイズされたテキスト **の例を次に示** します。
 
-        :::image type="content" source="media/bookings-additional-info.jpg" alt-text="Bookings メールの追加情報":::
+        :::image type="content" source="media/bookings-additional-info.jpg" alt-text="Bookings メールの追加情報。":::
 
 14. **顧客のテキスト メッセージ通知を有効にする** 選択されている場合、SMS メッセージは顧客に送信されますが、ユーザーがオプトインした場合にのみ送信されます。
 
     - 手動の予約とページの [オプトイン] ボックスSelf-Serviceします。
 
-        :::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="Bookings のオプトイン ボックス":::
+        :::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="Bookings のオプトイン ボックス。":::
 
     - テキスト メッセージ通知は次のようになります (現在、SMS 通知は北米でのみ利用可能です)。
 
-        :::image type="content" source="media/bookings-text-notifications.jpg" alt-text="Bookings からのテキスト通知":::
+        :::image type="content" source="media/bookings-text-notifications.jpg" alt-text="Bookings からのテキスト通知。":::
 
 15. **発行オプション** このサービスを Self-Service ページで予約可能にするか、Bookings Web アプリの [予定表] タブでのみ予約可能にするかどうかを選択します。
 

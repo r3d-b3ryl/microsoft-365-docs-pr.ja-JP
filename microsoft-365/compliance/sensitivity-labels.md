@@ -22,12 +22,12 @@ description: Microsoft 情報保護 (MIP) の秘密度ラベルを使用して�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 5604a6021150a7de4b287d91064c60f55be92500
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.openlocfilehash: ff26c2f6f219db066b4be00e6d97e8d4e4e4babc
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360097"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568987"
 ---
 # <a name="learn-about-sensitivity-labels"></a>秘密度ラベルの詳細
 
@@ -44,7 +44,7 @@ Microsoft Information Protection ソリューションの秘密度ラベルを�
 
 リボンの **[ホーム]** タブから、Excel で利用可能な秘密度ラベルを表示する例。 この例では、適用されたラベルがステータス バーに表示されます。
 
-![Excel のリボンおよびステータス バーに示された秘密度ラベル](../media/Sensitivity-label-in-Excel.png)
+![Excel のリボンおよびステータス バーに示された秘密度ラベル。](../media/Sensitivity-label-in-Excel.png)
 
 秘密度ラベルを適用するには、ユーザーは Microsoft 365 の職場または学校のアカウントを使用して、サインインする必要があります。
 
@@ -90,7 +90,7 @@ Microsoft Information Protection ソリューションの秘密度ラベルを�
 秘密度ラベルをサポートする各アイテムには、単一の秘密度ラベルを適用できます。 ドキュメントとメールには、秘密度ラベルと[保持ラベル](retention.md#retention-labels)の両方を適用できます。
 
 > [!div class="mx-imgBorder"]
-> ![電子メールに適用された秘密度ラベル](../media/Sensitivity-label-on-email.png)
+> ![電子メールに適用された秘密度ラベル。](../media/Sensitivity-label-on-email.png)
 
 ## <a name="what-sensitivity-labels-can-do"></a>機密ラベルでできること
 
@@ -102,7 +102,7 @@ Microsoft Information Protection ソリューションの秘密度ラベルを�
 
 - ラベルが適用されているメールやドキュメントに対して透かし、ヘッダー、またはフッターを追加することで、Office アプリを使用するときに **コンテンツにマークを付ける**。 透かしはドキュメントには適用できますが、メールには適用できません。 ヘッダーと透かしの例:
     
-    ![ドキュメントに適用されたヘッダーと透かし](../media/Sensitivity-label-watermark-header.png)
+    ![ドキュメントに適用されたヘッダーと透かし。](../media/Sensitivity-label-watermark-header.png)
     
     コンテンツ マーキングがいつ適用されるかを確認する必要がありますか？ 「[Office アプリがコンテンツ マーキングと暗号化を適用した場合](sensitivity-labels-office-apps.md#when-office-apps-apply-content-marking-and-encryption)」を参照してください。
     
@@ -116,7 +116,7 @@ Microsoft Information Protection ソリューションの秘密度ラベルを�
 
 - **ファイルやメールでラベルを自動的に適用するか、ラベルを推奨します。** ラベルを付ける機密情報を識別する方法を選択すると、ラベルを自動的に適用するか、ユーザーに推奨するラベルを適用するように求めることができます。 ラベルを推奨すると、選択したテキストがプロンプトに表示されます。 次に例を示します。
     
-    ![必要なラベルを割り当てるかを確認するダイアログ](../media/Sensitivity-label-Prompt-for-required-label.png)
+    ![必要なラベルを割り当てるかを確認するダイアログ。](../media/Sensitivity-label-Prompt-for-required-label.png)
     
     機密ラベルを作成または編集するときの **ファイルと電子メールの自動ラベル設定** の詳細については、「[Office アプリのコンテンツに機密ラベルを自動的に適用する](apply-sensitivity-label-automatically.md)」および「[Azure Purview でデータに自動的にラベルを付ける](/azure/purview/create-sensitivity-label)」を参照してください。
 
@@ -128,7 +128,7 @@ Microsoft Information Protection ソリューションの秘密度ラベルを�
 
 このスコープ構成により、ドキュメントとメール専用で、コンテナー用に選択できない秘密度ラベルを作成できます。 同様に、コンテナー専用で、ドキュメントやメールには選択できない秘密度ラベル。 現在プレビュー中の新機能ですが、Azure Purview assets の範囲を選択することもできます。
 
-![機密度ラベルの範囲オプション](../media/sensitivity-labels-scopes.png)
+![秘密度ラベルの範囲オプション。](../media/sensitivity-labels-scopes.png)
 
 既定では、**ファイルとメール** の範囲が常に選択されています。 その他の範囲は、テナントに対して機能が有効になると、既定で選択されます。
 
@@ -138,7 +138,7 @@ Microsoft Information Protection ソリューションの秘密度ラベルを�
 
 すべての範囲が選択されないように既定値を変更すると、選択していない範囲の構成設定の最初のページが表示されますが、設定を構成することはできません。 たとえば、ファイルとメールのスコープが選択されていない場合、次のページでオプションを選択することはできません。
 
-![機密度ラベルの使用できないオプション](../media/sensitivity-labels-unavailable-settings.png)
+![秘密度ラベルの使用できないオプション。](../media/sensitivity-labels-unavailable-settings.png)
 
 利用できないオプションがあるこれらのページについては、**次へ** を選択して続行します。 または、**[戻る]** を選択して、ラベルのスコープを変更します。
 
@@ -150,7 +150,7 @@ Microsoft Information Protection ソリューションの秘密度ラベルを�
 
 サブラベルの順序は、[自動ラベル付け](apply-sensitivity-label-automatically.md)で使用されます。 ラベルが自動的に適用されるように構成した場合、またはラベルが推奨されるように構成した場合、複数のラベルにまたがる複数の一致が検出される可能性があります。 適用または推奨されるラベルの特定にはラベルの順序が使用されます。最後尾の秘密度ラベルが選択されます。該当する場合は、最後尾のサブラベルが選択されます。
 
-![サブラベルを作成するためのオプション](../media/Sensitivity-label-sublabel-options.png)
+![サブラベルを作成するためのオプション。](../media/Sensitivity-label-sublabel-options.png)
 
 ### <a name="sublabels-grouping-labels"></a>サブラベル (ラベルのグループ化)
 
@@ -162,7 +162,7 @@ Microsoft Information Protection ソリューションの秘密度ラベルを�
 
 サブラベルの表示方法の例:
 
-![リボンでグループ化されたサブラベル](../media/Sensitivity-label-grouped-labels2.png)
+![リボンでグループ化されたサブラベル。](../media/Sensitivity-label-grouped-labels2.png)
 
 ### <a name="editing-or-deleting-a-sensitivity-label"></a>機密ラベルの編集または削除
 
@@ -189,13 +189,13 @@ Microsoft Information Protection ソリューションの秘密度ラベルを�
 
 - **ラベル変更の正当な理由を要求する。** ユーザーがラベルを削除しようとした場合、またはラベルを低い順序番号のラベルに置き換えようとした場合は、ユーザーにこの操作の実行についての正当な理由を要求することができます。 たとえば、ユーザーは「社外秘」というラベルの付いたドキュメント (順序番号 3) を開き、そのラベルを「公開」というラベル (順序番号 1) に置き換えます。 Office アプリの場合、この正当化プロンプトは、組み込みのラベル付けを使用する場合はアプリ セッションごとに、Azure Information Protection 統合ラベル付けクライアントを使用する場合はファイルごとに 1 回トリガーされます。 管理者は、[アクティビティ エクスプローラー](data-classification-activity-explorer.md)でラベルの変更とともに正当化の理由を読み取ることができます。
 
-    ![ユーザーに正当性を入力するように求めるダイアログ](../media/Sensitivity-label-justification-required.png)
+    ![ユーザーに正当性を入力するように求めるダイアログ。](../media/Sensitivity-label-justification-required.png)
 
 - ドキュメントとメール、文書のみ、コンテナー、および Power BI コンテンツに **ラベルを適用することをユーザーに要求** します。 必須のラベル付けとも呼ばれるこれらのオプションにより、ユーザーがドキュメントを保存してメールを送信したり、新しいグループやサイトを作成したり、Power BI でラベルのないコンテンツを使用したりする前に、ラベルを適用する必要があります。
     
     ドキュメントやメールの場合、ラベルはユーザーが手動で割り当てることも、構成した条件に従って自動的に適用することも、既定 (前述の既定のラベルのオプション) で適用することもできます。ユーザーがラベルを割り当てる必要がある場合のプロンプトの例:
 
-    ![要求されるラベルを適用することをユーザーに求める Outlook のダイアログ](../media/sensitivity-labels-mandatory-prompt-outlook.png)
+    ![要求されるラベルを適用することをユーザーに求める Outlook のダイアログ。](../media/sensitivity-labels-mandatory-prompt-outlook.png)
     
     ドキュメントとメールの必須のラベル付けの詳細については、「[ユーザーがメールとドキュメントにラベルを適用することを必須にする](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents)」を参照してください。
     
@@ -207,7 +207,7 @@ Microsoft Information Protection ソリューションの秘密度ラベルを�
 
 - **カスタムのヘルプ ページへのヘルプ リンクを提示します。** ユーザーが機密ラベルの意味や使用方法について明確に理解できない場合に、Office アプリの **[機密ラベル]** メニューの末尾に表示される詳細な説明の URL を提供できます。
 
-    ![リボンの [機密] ボタンに示された詳細な説明のリンク](../media/Sensitivity-label-learn-more.png)
+    ![リボンの [機密] ボタンに示された詳細な説明のリンク。](../media/Sensitivity-label-learn-more.png)
 
 ユーザーとグループに新しい秘密度ラベルを割り当てるラベル ポリシーを作成した後、ユーザーは Office アプリでラベルの確認を開始します。 最新の変更内容が組織全体に複製されるまでに、最大で 24 時間かかります。
 
@@ -227,7 +227,7 @@ Microsoft Information Protection ソリューションの秘密度ラベルを�
 
 ユーザーまたはグループに表示されることが想定されるラベルまたはラベル ポリシーの設定の動作が表示されない場合は、秘密度ラベル ポリシーの順序を確認します。 ポリシーを下に移動する必要がある場合があります。 ラベル ポリシーを並べ替えるには、[秘密度ラベル ポリシー] を選択し、右側にある省略記号を選択して **[下へ移動]** または **[上へ移動]** を選択します。
 
-![機密ラベル ポリシーのページ上の移動オプション](../media/sensitivity-label-policy-priority.png)
+![秘密度ラベル ポリシーのページ上の移動オプション。](../media/sensitivity-label-policy-priority.png)
 
 > [!NOTE]
 > 注意: 複数のポリシーが割り当てられているユーザーの設定に矛盾がある場合は、優先度が最も高い (位置が最も低い) ポリシーの設定が適用されます。

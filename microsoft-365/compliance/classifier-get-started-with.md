@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 分類Microsoft 365は、さまざまな種類のコンテンツを認識するトレーニングを行うツールです。 この記事では、カスタム分類子を作成してトレーニングする方法と、それらを再トレーニングして精度を高める方法について説明します。
-ms.openlocfilehash: 25052b461aee3a9ba823c203ebb2f8bddebd3196312e9697574fcd2efba2af50
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f8401193274f90ae90d773c6bb9a2a5a6a995169
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53872190"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571111"
 ---
 # <a name="get-started-with-trainable-classifiers"></a>トレーニング可能な分類子の使用を開始する
 
@@ -46,7 +46,7 @@ ms.locfileid: "53872190"
 
 分類子は、Microsoft 365 E5 E5 コンプライアンス機能です。 それらを使用するには、これらのサブスクリプションのいずれかが必要です。
 
-### <a name="permissions"></a>Permissions
+### <a name="permissions"></a>アクセス許可
 
 UI で分類子にアクセスするには、次の操作を行います。 
 
@@ -70,7 +70,7 @@ UI で分類子にアクセスするには、次の操作を行います。
 
 このタイムラインは、トレーニング可能な分類子の展開例を反映しています。
 
-![トレーニング可能な分類子-タイムライン](../media/trainable-classifier-deployment-timeline_border.png)
+![トレーニング可能な分類子-タイムライン。](../media/trainable-classifier-deployment-timeline_border.png)
 
 > [!TIP]
 > トレーニング可能な分類子には、オプトインが初めて必要です。 組織のコンテンツのベースラインMicrosoft 365評価を完了するには、12 日かかります。 オプトイン プロセスを開始するには、グローバル管理者に問い合わせてください。
@@ -125,7 +125,7 @@ UI で分類子にアクセスするには、次の操作を行います。
 10. 分類子を選択して詳細ページを表示できます。
 
     > [!div class="mx-imgBorder"]
-    > ![テストの準備ができているトレーニング可能な分類子](../media/classifier-trainable-ready-to-test-detail.png)
+    > ![テストの準備ができているトレーニング可能な分類子。](../media/classifier-trainable-ready-to-test-detail.png)
 
 11. 最適な結果を得る場合は、少なくとも 200 のテスト コンテンツ アイテム (最大 10,000) を収集します。 これらは、強い肯定的なアイテム、強い否定的なアイテム、およびそれらの性質で少し明白ではないアイテムの組み合わせである必要があります。 サポートされている[ファイルの種類については](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)、「既定のクロールされたファイル名の拡張子と解析されたファイルSharePointサーバー」を参照してください。
 
@@ -146,19 +146,19 @@ UI で分類子にアクセスするには、次の操作を行います。
 16. トレーニング可能な分類子がテスト ファイルの処理を完了すると、詳細ページの状態がに変わります `Ready to review` 。 テスト サンプルのサイズを大きくする必要がある場合は、トレーニング可能な分類子が追加のアイテムを処理するを `Add items to test` 選択して許可します。
 
     > [!div class="mx-imgBorder"]
-    > ![スクリーンショットを確認する準備ができました](../media/classifier-trainable-ready-to-review-detail.png)
+    > ![スクリーンショットを確認する準備ができました。](../media/classifier-trainable-ready-to-review-detail.png)
 
 17. タブを `Tested items to review` 選択してアイテムを確認します。
 
 18. Microsoft 365一度に 30 アイテムが表示されます。 それらを確認し、ボックス `We predict this item is "Relevant". Do you agree?` でどちらかまたは `Yes` を `No` 選択します `Not sure, skip to next item` 。 モデルの精度は、30 アイテムごとに自動的に更新されます。
 
     > [!div class="mx-imgBorder"]
-    > ![[アイテムの確認] ボックス](../media/classifier-trainable-review-detail.png)
+    > ![[アイテムの確認] ボックスをクリックします。](../media/classifier-trainable-review-detail.png)
 
 19. 少 *なくとも* 200 アイテムを確認します。 精度スコアが安定すると **、発行オプション** が使用可能になり、分類子の状態が表示されます `Ready to use` 。
 
     > [!div class="mx-imgBorder"]
-    > ![精度スコアと公開準備完了](../media/classifier-trainable-review-ready-to-publish.png)
+    > ![精度スコアと公開の準備が整いました。](../media/classifier-trainable-review-ready-to-publish.png)
 
 20. 分類子を発行します。
 

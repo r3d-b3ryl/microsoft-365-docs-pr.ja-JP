@@ -17,12 +17,12 @@ localization_priority: Normal
 f1.keywords: NOCSH
 recommendations: false
 description: パートナー組織の管理ゲストと B2B エクストラネット サイトまたはチームを作成する方法について説明します。
-ms.openlocfilehash: ab88ba8b12c6eb53bc3c0b3c4b22cb09919ce38256b68fa65256e64d7ff81bdd
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7e3ddf12473095b0a7ac91ded01256e77c299ddf
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53883797"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572385"
 ---
 # <a name="create-a-b2b-extranet-with-managed-guests"></a>管理されたゲストで B2B エクストラネットを作成する
 
@@ -62,7 +62,7 @@ Azure Germany や Azure China 21Vianet などの特殊なクラウドは、現�
 10. **[次へ: 確認 + 作成]** をクリックします。
 11. 選択した設定を確認し、[作成] を **クリックします**。
 
-    ![[組織の接続] ページのスクリーンショット (Azure Active Directory](../media/identity-governance-connected-organizations.png)
+    ![[組織の接続] ページのスクリーンショットをAzure Active Directory。](../media/identity-governance-connected-organizations.png)
 
 ## <a name="choose-the-resources-to-share"></a>共有するリソースを選択する
 
@@ -75,7 +75,7 @@ Azure Germany や Azure China 21Vianet などの特殊なクラウドは、現�
 4. カタログの名前と説明を入力し、外部ユーザーに対して **有効** と有効の両方が [はい]**に設定されています**。
 5. **[作成]** をクリックします。
 
-   ![ID ガバナンスのカタログ ページAzure Active Directoryスクリーンショット](../media/identity-governance-catalogs.png)
+   ![ID ガバナンスのカタログ ページAzure Active Directoryスクリーンショット。](../media/identity-governance-catalogs.png)
 
 カタログを作成したら、パートナー組織とSharePointするサイトまたはチームを追加します。
 
@@ -84,7 +84,7 @@ Azure Germany や Azure China 21Vianet などの特殊なクラウドは、現�
 2. [リソース **] をクリック** し、[リソースの **追加] をクリックします**。
 3. エクストラネットに含SharePointチームまたはサイトを選択し、[追加] を **クリックします**。
 
-   ![ID ガバナンスのカタログ リソース ページAzure Active Directoryスクリーンショット](../media/identity-governance-catalog-resource.png)
+   ![ID ガバナンスのカタログ リソース ページAzure Active Directoryスクリーンショット。](../media/identity-governance-catalog-resource.png)
 
 共有するリソースを定義したら、次に、パートナー ユーザーに付与されるアクセスの種類と、アクセスを要求する新しいパートナー ユーザーの承認プロセスを定義するアクセス パッケージを作成します。
 
@@ -106,7 +106,7 @@ Azure Germany や Azure China 21Vianet などの特殊なクラウドは、現�
 15. 使用する有効期限とアクセスレビュー設定を選択し、[次へ: レビュー+ 作成] **をクリックします**。
 16. 設定を確認し、[作成] を **クリックします**。
 
-    ![Id ガバナンスの [アクセス パッケージ] 画面Azure Active Directoryスクリーンショット](../media/identity-governance-access-packages.png)
+    ![[ID ガバナンス] の [アクセス パッケージ] 画面Azure Active Directoryスクリーンショット。](../media/identity-governance-access-packages.png)
 
 大規模な組織と提携している場合は、アクセス パッケージを非表示にできます。 パッケージが非表示の場合、パートナー組織のユーザーは自分のマイ アクセス ポータルにパッケージ *を表示* されません。 代わりに、パッケージにサインアップするために直接リンクを送信する必要があります。 アクセス パッケージを非表示にすると、不適切なアクセス要求の数が減り、パートナー組織のポータルで利用可能なアクセス パッケージを整理し続けるのに役立ちます。
 
@@ -115,7 +115,7 @@ Azure Germany や Azure China 21Vianet などの特殊なクラウドは、現�
 2. [概要] **ページで** 、[編集] を **クリックします**。
 3. [プロパティ **] で**、[非表示] で **[は** い] **を** 選択し、[保存] を **クリックします**。
 
-   ![[アクセス パッケージのプロパティの編集] 画面のスクリーンショット](../media/identity-governance-access-package-hidden.png)
+   ![[アクセス パッケージのプロパティの編集] 画面のスクリーンショット。](../media/identity-governance-access-package-hidden.png)
 
 ## <a name="invite-partner-users"></a>パートナー ユーザーの招待
 
@@ -125,7 +125,7 @@ Azure Germany や Azure China 21Vianet などの特殊なクラウドは、現�
 1. Azure AD ID ガバナンスで、[Access パッケージ] を **クリック** し、アクセス パッケージをクリックします。
 2. [概要] **ページで** 、[ **マイ** アクセス ポータル] リンクの [クリップボードにコピー] **リンクをクリックします**。
 
-   ![アクセス ポータル リンクを使用したアクセス パッケージのプロパティのスクリーンショット](../media/identity-governance-access-portal-link.png)
+   ![アクセス ポータル リンクを使用したアクセス パッケージのプロパティのスクリーンショット。](../media/identity-governance-access-portal-link.png)
 
 リンクをコピーしたら、パートナー組織の連絡先と共有し、そのリンクをコラボレーション チームのユーザーに送信できます。
 

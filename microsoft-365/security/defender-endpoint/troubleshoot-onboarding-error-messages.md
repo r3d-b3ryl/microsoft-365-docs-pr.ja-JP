@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: b14501463233ef98d49023c4afde85b02714857b05efc73a6eafcff867387e23
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 24d6873df2432adf5e56b62f01e784f65df4e980
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53839271"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58576190"
 ---
 # <a name="troubleshoot-subscription-and-portal-access-issues"></a>サブスクリプションとポータル アクセスの問題のトラブルシューティング
 
@@ -49,7 +49,7 @@ Microsoft 365 Defender にアクセス中にサブスクリプションが見つ
 
 どちらの場合も、Microsoft Defender for [Endpoint Support](https://support.microsoft.com/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636419533611396913) または Volume ライセンス のサポートで Microsoft サポートに問い [合わせるべきです](https://www.microsoft.com/licensing/servicecenter/Help/Contact.aspx)。
 
-![サブスクリプションが見つからないイメージ](images/atp-no-subscriptions-found.png)
+![サブスクリプションが見つかりません。](images/atp-no-subscriptions-found.png)
 
 ## <a name="your-subscription-has-expired"></a>サブスクリプションの有効期限が切れています
 
@@ -60,19 +60,19 @@ Microsoft 365 Defender にアクセス中にサブスクリプションが見つ
 > [!NOTE]
 > セキュリティ上の理由から、Offboard デバイスに使用されるパッケージは、ダウンロード日から 30 日後に期限切れになります。 デバイスに送信された期限切れのオフボード パッケージは拒否されます。 オフボード パッケージをダウンロードすると、パッケージの有効期限が通知され、パッケージ名にも含まれます。
 
-![サブスクリプションの有効期限が切れているイメージ](images/atp-subscription-expired.png)
+![サブスクリプションの有効期限が切れたイメージ。](images/atp-subscription-expired.png)
 
 ## <a name="you-are-not-authorized-to-access-the-portal"></a>ポータルへのアクセスが承認されていない
 
 ポータルへのアクセスが承認されていない場合、Microsoft Defender for Endpoint はセキュリティ監視、インシデント調査、応答製品であり、アクセスはユーザーによって制限および制御されます。
 詳細については、「ユーザー アクセスをポータルに [**割り当てる」を参照してください**](/windows/threat-protection/windows-defender-atp/assign-portal-access-windows-defender-advanced-threat-protection)。
 
-![ポータルへのアクセスが承認されていないイメージ](images/atp-not-authorized-to-access-portal.png)
+![ポータルへのアクセスが承認されていないイメージ。](images/atp-not-authorized-to-access-portal.png)
 
 ## <a name="data-currently-isnt-available-on-some-sections-of-the-portal"></a>現在、ポータルの一部のセクションでデータを使用できない
 ポータル ダッシュボードや他のセクションに「現在データが使用できない」などのエラー メッセージが表示される場合は、次の手順を実行します。
 
-![現在使用できないデータの画像](images/atp-data-not-available.png)
+![現在、データの画像は使用できません。](images/atp-data-not-available.png)
 
 その下のすべてのサブドメインを許可 `security.windows.com` する必要があります。 たとえば、`*.security.windows.com` などです。
 

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: cddf687c4d269772b264711b7359bc338958164c
-ms.sourcegitcommit: 008200dad00701b6d457c1af48a33448235ce1c8
+ms.openlocfilehash: 125e622b39b6ec868cb6dffaf30eb8d64a346759
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58392105"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571437"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>通信コンプライアンスのアラートを調査して修復する
 
@@ -61,7 +61,7 @@ ms.locfileid: "58392105"
 
 8. 選択したフィルターをフィルター クエリとして保存する場合は、少なくとも 1 つのフィルター値を構成した後、[クエリ コントロールの保存] を選択します。  フィルター クエリの名前を入力し、[保存] を **選択します**。 このフィルターは、このポリシーでのみ使用できます。フィルターの詳細ページの[保存済みフィルター クエリ] セクション **に** 一覧表示されます。
 
-    ![通信コンプライアンス フィルターの詳細コントロール](../media/communication-compliance-filter-detail-controls.png)
+    ![通信コンプライアンス フィルターの詳細コントロール。](../media/communication-compliance-filter-detail-controls.png)
 
 ### <a name="using-near-and-exact-duplicate-analysis"></a>準重複分析と完全重複分析の使用
 
@@ -85,7 +85,7 @@ ms.locfileid: "58392105"
 
 8. メッセージ **の修復アクション** を完了した後、[閉じる] を選択します。
 
-    ![通信コンプライアンスの正確な重複コントロール](../media/communication-compliance-duplicates-controls.png)
+    ![通信コンプライアンスは、コントロールを完全に重複します。](../media/communication-compliance-duplicates-controls.png)
 
 ## <a name="remediate-alerts"></a>アラートの修復
 
@@ -95,7 +95,7 @@ ms.locfileid: "58392105"
 
  メッセージを直ちに修復できるのは、ソースまたは件名から明らかな場合があります。 メッセージがポリシーにスプリアスまたは誤って一致し、誤って分類されたメッセージとして解決される可能性があります。 [誤分類 **としてレポート** ] コントロールを選択して、誤分類されたコンテンツを Microsoft と共有し、直ちにアラートを解決し、保留中のアラート キューから削除します。 ソースまたは送信者の情報から、このような状況でのメッセージのルーティング方法や処理方法が既にわかる場合があります。 **タグ** を使用するか **エスカレート** コントロールの使用を検討して、該当するメッセージにタグを割り当てか、指定した校閲者にメッセージを送信します。
 
-![通信コンプライアンスの修復制御](../media/communication-compliance-remediation-controls.png)
+![通信コンプライアンスの修復制御。](../media/communication-compliance-remediation-controls.png)
 
 ### <a name="step-2-examine-the-message-details"></a>手順 2: メッセージの詳細を確認する
 
@@ -123,7 +123,7 @@ ms.locfileid: "58392105"
 - **調査のエスカレート**:**エス** カレートを調査コントロールに使用すると、1 つ以上 [の](overview-ediscovery-20.md)メッセージAdvanced eDiscoveryケースを作成できます。 新しいケースの名前とメモを指定し、ポリシーに一致するメッセージを送信したユーザーがケース 保管担当者として自動的に割り当てられます。 ケースを管理するための追加のアクセス許可は必要ない。 ケースを作成しても、メッセージの新しいタグは解決または作成されません。 修復プロセス中にケースを作成するときに、合計 100 Advanced eDiscoveryを選択できます。 通信コンプライアンスによって監視されるすべての通信チャネルのメッセージがサポートされています。 たとえば、ユーザーの新しい Advanced eDiscovery ケースを開く際に、50 Microsoft Teams チャット、25 Exchange Online 電子メール メッセージ、および 25 Yammer メッセージを選択できます。
 - **Teams で** メッセージを削除する: Teams コントロールの [メッセージの削除] を使用すると **、Microsoft Teams** チャネルおよび 1:1 およびグループ チャットからのアラートで識別された不適切なメッセージとコンテンツをブロックできます。 削除されたメッセージとコンテンツは、ブロックされ、ビューからの削除に適用されるポリシーを説明するポリシー ヒントに置き換わります。 受信者には、該当するポリシーとレビュー プロセスの詳細を確認するリンクがポリシー ヒントに表示されます。 送信者は、ブロックされたメッセージとコンテンツのポリシー ヒントを受け取りますが、ブロックされたメッセージとコンテンツの詳細を確認して、削除に関するコンテキストを確認できます。
 
-    ![メッセージを削除Microsoft Teams](../media/communication-compliance-remove-teams-message.png)
+    ![メッセージを削除Microsoft Teams。](../media/communication-compliance-remove-teams-message.png)
 
 ### <a name="step-4-determine-if-message-details-should-be-archived-outside-of-communication-compliance"></a>手順 4: メッセージの詳細を通信コンプライアンス外にアーカイブする必要かどうかを判断する
 

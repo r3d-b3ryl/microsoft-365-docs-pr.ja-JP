@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 17e75cd8e12cf83a3581118dbe453314e659760b10c5960f6529d40c38deb303
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b91773a5cfa411c762aba939ba53d8f35be16f7a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53902820"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573045"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-alerts"></a>エンドポイント通知の Microsoft Defender の管理
 
@@ -32,7 +32,7 @@ ms.locfileid: "53902820"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-managealerts-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-managealerts-abovefoldlink)
 
 Defender for Endpoint は、悪意のあるイベント、属性、コンテキスト情報の可能性を通知します。 新しいアラートの概要がセキュリティ操作ダッシュボードに表示され、アラート キュー内のすべてのアラートに **アクセスできます**。
 
@@ -40,7 +40,7 @@ Defender for Endpoint は、悪意のあるイベント、属性、コンテキ�
 
 いずれかの場所でアラートを選択すると、[アラート管理] **ウィンドウが表示されます**。
 
-![アラート管理ウィンドウとアラート キューのイメージ](images/atp-alerts-selected.png)
+![アラート管理ウィンドウとアラート キューのイメージ。](images/atp-alerts-selected.png)
 
 ## <a name="link-to-another-incident"></a>別のインシデントへのリンク
 アラートまたは既存のインシデントへのリンクから新しいインシデントを作成できます。 
@@ -65,7 +65,7 @@ Defender for Endpoint は、悪意のあるイベント、属性、コンテキ�
 
 次の表の例を使用して、抑制ルールのコンテキストを選択できます。
 
-| **Context**                           | **定義**                                                                                                                                              | **シナリオの例**                                                                                                                                                                                                  |
+| **Context**                           | **定義**                                                                                                                                              | **シナリオ例**                                                                                                                                                                                                  |
 |:--------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **このデバイスのアラートを抑制する**    | 同じアラート タイトルを持つアラートと、その特定のデバイス上のアラートだけが表示されません。 <br /><br />そのデバイス上の他のすべてのアラートは抑制されません。 | <ul><li>セキュリティ研究者が、組織内の他のデバイスを攻撃するために使用された悪意のあるスクリプトを調査しています。</li><li>開発者は、チームの PowerShell スクリプトを定期的に作成します。</li></ul> |
 | **組織内のアラートを抑制する** | どのデバイスでも同じアラート タイトルを持つアラートは表示されません。                                                                                         | <ul><li>良性の管理ツールは、組織内のすべてのユーザーが使用します。</li></ul>                                                                                                                               |
@@ -94,7 +94,7 @@ Defender for Endpoint は、悪意のあるイベント、属性、コンテキ�
 
 5. ルール名とコメントを入力します。
 
-6. [**保存**] をクリックします。
+6. **[保存]** をクリックします。
 
 #### <a name="view-the-list-of-suppression-rules"></a>抑制ルールの一覧を表示する
 
@@ -125,7 +125,7 @@ Defender for Endpoint は、悪意のあるイベント、属性、コンテキ�
 追加されたコメントは直ちにウィンドウに表示されます。
 
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [抑制ルールの管理](manage-suppression-rules.md)
 - [Microsoft Defender for Endpoint アラート キューを表示して整理する](alerts-queue.md)
 - [Microsoft Defender for Endpoint アラートの調査](investigate-alerts.md)

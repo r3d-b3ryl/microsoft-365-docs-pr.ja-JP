@@ -22,12 +22,12 @@ ms.custom:
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 recommendations: false
 description: セキュリティと共同作業の簡便さのバランスを取りながら、3 つの階層の保護を使用して、ファイル共有セキュリティを強化するために、Teams を構成する方法について説明します。
-ms.openlocfilehash: 06ee7cd8d82f65e0108595eaa9873b198dae90531d2a547849a85e765292cd57
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f0c7bbe1043116eb678df77ffe95bdc8654839f7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53816681"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575458"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>3 層の保護を使ってチームを構成する
 
@@ -122,7 +122,7 @@ Teams には読み取り専用のアクセス許可オプションはありま�
 
 秘密度ラベルにある管理対象ではないデバイス設定は、SharePoint アクセスだけに影響します。 管理対象ではないデバイスの制御を SharePoint 以外で拡張する場合は、代わりに[組織にあるすべてのアプリとサービスに Azure Active Directory 条件付きアクセス ポリシーを作成](/azure/active-directory/conditional-access/howto-conditional-access-policy-compliant-device) することができます。 [Microsoft 365 サービス](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#office-365)専用にこのポリシーを構成するには、**クラウド アプリまたは操作** で **Office 365** クラウド アプリを選択します。
 
-![Azure Active Directory 条件付きアクセス ポリシーにある Office 365 クラウド アプリのスクリーンショット](/sharepoint/sharepointonline/media/azure-ca-office365-policy.png)
+![Azure Active Directory 条件付きアクセス ポリシーにある Office 365 クラウド アプリのスクリーンショット。](/sharepoint/sharepointonline/media/azure-ca-office365-policy.png)
 
 すべての Microsoft 365 サービスに関連するポリシーを使用すれば、セキュリティが向上し、ユーザー環境を改善することができるようになります。 たとえば、SharePoint だけで管理対象ではないデバイスへのアクセスをブロックすると、ユーザーは管理対象ではないデバイスを使用してチーム内のチャットにアクセスできますが、**[ファイル]** タブにアクセスしようとするとアクセスできなくなります。Office 365 クラウド アプリを使用すると、[サービスの依存関係](/azure/active-directory/conditional-access/service-dependencies) に関する問題を回避できます。
 

@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection:
 - M365solutions
 f1.keywords: NOCSH
-ms.openlocfilehash: cc1c61979387806321f452dad666da60dd558a6bc9915bd7201f6d5a011cfc2d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 94191ebf12609eafb45f6f4fb19de2a6b072aa23
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53810058"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575878"
 ---
 # <a name="microsoft-365-infographics-for-your-users"></a>Microsoft 365のインフォグラフィック
 
@@ -32,7 +32,7 @@ ms.locfileid: "53810058"
 
 | アイテム | 説明 |
 |:-----|:-----|
-|[![キャンペーン情報のグラフィックを保護する](../media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](../campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pdf) <br/> [PDF としてダウンロードする](../campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)  \ [アプリとしてダウンロードPowerPoint](../campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pptx)| 組織の情報をセキュリティで保護するためのベスト プラクティスを共有します。 このインフォグラフィックは、高度なハッカーを対象とするために、政治キャンペーンのスタッフをサポートするために作成されました。 このインフォグラフィックをカスタマイズするには、PowerPointを使用してください。 関連記事:[ユーザーに対するセキュリティMicrosoft 365影響](../campaigns/m365-campaigns-users.md)|
+|[![キャンペーン情報グラフィックの保護に役立ちます。](../media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](../campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pdf) <br/> [PDF としてダウンロードする](../campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)  \ [アプリとしてダウンロードPowerPoint](../campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pptx)| 組織の情報をセキュリティで保護するためのベスト プラクティスを共有します。 このインフォグラフィックは、高度なハッカーを対象とするために、政治キャンペーンのスタッフをサポートするために作成されました。 このインフォグラフィックをカスタマイズするには、PowerPointを使用してください。 関連記事:[ユーザーに対するセキュリティMicrosoft 365影響](../campaigns/m365-campaigns-users.md)|
 
 <a name="sharefiles"></a>
 ## <a name="share-your-business-files"></a>ビジネス ファイルを共有する
@@ -41,7 +41,7 @@ ms.locfileid: "53810058"
   
 | アイテム | 説明 |
 |:-----|:-----|
-|[![ビジネス ファイルを共有するインフォグラフィックのサム イメージ](../media/solutions-architecture-center/m365-smbscenarios-shareyourfiles-square.png)](https://go.microsoft.com/fwlink/?linkid=2079435) <br/> [PDF としてダウンロードする](https://go.microsoft.com/fwlink/?linkid=2079435)  \ [アプリとしてダウンロードPowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438) | ビジネス ファイルを共有して共同作業する場合は、これらのベスト プラクティスを使用して、情報を安全かつ保護することができます。 関連記事: [ビジネス ファイルの共有の概要](../business-video/overview-file-sharing.md)|
+|[![[ビジネス ファイルを共有する] インフォグラフィックのサム イメージ。](../media/solutions-architecture-center/m365-smbscenarios-shareyourfiles-square.png)](https://go.microsoft.com/fwlink/?linkid=2079435) <br/> [PDF としてダウンロードする](https://go.microsoft.com/fwlink/?linkid=2079435)  \ [アプリとしてダウンロードPowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438) | ビジネス ファイルを共有して共同作業する場合は、これらのベスト プラクティスを使用して、情報を安全かつ保護することができます。 関連記事: [ビジネス ファイルの共有の概要](../business-video/overview-file-sharing.md)|
 
 <a name="onlinemeeting"></a>
 ## <a name="host-online-meetings"></a>オンライン会議の開催
@@ -50,7 +50,7 @@ ms.locfileid: "53810058"
 
 | アイテム | 説明 |
 |:-----|:-----|
-|[![ホスト オンライン会議のインフォグラフィックのサム イメージ](../media/solutions-architecture-center/m365-smbscenarios-hostteammeetings-square.png)](https://go.microsoft.com/fwlink/?linkid=2078712) <br/> [PDF としてダウンロードする](https://go.microsoft.com/fwlink/?linkid=2078712)  \ [アプリとしてダウンロードPowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515) | オンライン会議をホストまたは参加する方法の概要を簡単にMicrosoft Teams。 関連記事: [ビジネス向けオンライン会議を開催する](../business-video/overview-online-meetings.md)|
+|[![ホスト オンライン会議のインフォグラフィックのサム イメージ。](../media/solutions-architecture-center/m365-smbscenarios-hostteammeetings-square.png)](https://go.microsoft.com/fwlink/?linkid=2078712) <br/> [PDF としてダウンロードする](https://go.microsoft.com/fwlink/?linkid=2078712)  \ [アプリとしてダウンロードPowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515) | オンライン会議をホストまたは参加する方法の概要を簡単にMicrosoft Teams。 関連記事: [ビジネス向けオンライン会議を開催する](../business-video/overview-online-meetings.md)|
 
 <a name="workfromanywhere"></a>
 ## <a name="work-from-anywhere"></a>どこからでも作業できる
@@ -59,7 +59,7 @@ ms.locfileid: "53810058"
 
 | アイテム | 説明 |
 |:-----|:-----|
-|[![任意の場所のインフォグラフィックからの作業のサム イメージ](../media/solutions-architecture-center/m365-smbscenarios-workfromanywhere-square.png)](https://go.microsoft.com/fwlink/?linkid=2079451) <br/> [PDF としてダウンロードする](https://go.microsoft.com/fwlink/?linkid=2079451)  \ [アプリとしてダウンロードPowerPoint](https://go.microsoft.com/fwlink/?linkid=2079455) | どこからでも作業を行えるモバイル デバイスをセットアップする方法については、ヒントを参照してください。 関連記事: [どこからでも作業する](../business-video/work-from-anywhere.md)|
+|[![任意の場所のインフォグラフィックからの作業のサム イメージ。](../media/solutions-architecture-center/m365-smbscenarios-workfromanywhere-square.png)](https://go.microsoft.com/fwlink/?linkid=2079451) <br/> [PDF としてダウンロードする](https://go.microsoft.com/fwlink/?linkid=2079451)  \ [アプリとしてダウンロードPowerPoint](https://go.microsoft.com/fwlink/?linkid=2079455) | どこからでも作業を行えるモバイル デバイスをセットアップする方法については、ヒントを参照してください。 関連記事: [どこからでも作業する](../business-video/work-from-anywhere.md)|
 
 <a name="surveywithforms"></a>
 ## <a name="survey-customers-with-forms"></a>フォームを使用して顧客を調査する
@@ -68,4 +68,4 @@ Microsoft Forms を使用して顧客 (内部または外部) を調査する方
 
 | アイテム | 説明 |
 |:-----|:-----|
-|[![フォームインフォグラフィックを使用したアンケートのお客様の親指画像](../media/solutions-architecture-center/m365-smbscenarios-surveywithforms-square.png)](https://go.microsoft.com/fwlink/?linkid=2079526) <br/> [PDF としてダウンロードする](https://go.microsoft.com/fwlink/?linkid=2079526)  \ [アプリとしてダウンロードPowerPoint](https://go.microsoft.com/fwlink/?linkid=2079446) | Microsoft フォームを使用して、お客様の考え方を確認します。 関連記事: [Microsoft フォームで情報を収集する](https://support.microsoft.com/topic/collect-information-with-microsoft-forms-a55d6e0d-04f6-45b8-b05f-b141b8ecb4d5)|
+|[![フォームインフォグラフィックを使用したアンケートのお客様の親指画像。](../media/solutions-architecture-center/m365-smbscenarios-surveywithforms-square.png)](https://go.microsoft.com/fwlink/?linkid=2079526) <br/> [PDF としてダウンロードする](https://go.microsoft.com/fwlink/?linkid=2079526)  \ [アプリとしてダウンロードPowerPoint](https://go.microsoft.com/fwlink/?linkid=2079446) | Microsoft フォームを使用して、お客様の考え方を確認します。 関連記事: [Microsoft フォームで情報を収集する](https://support.microsoft.com/topic/collect-information-with-microsoft-forms-a55d6e0d-04f6-45b8-b05f-b141b8ecb4d5)|

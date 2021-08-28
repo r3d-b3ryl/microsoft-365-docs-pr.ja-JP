@@ -20,12 +20,12 @@ ms.collection:
 description: 管理者は、セキュリティ設定を昇格し、組織の優先度アカウントに関するレポート、アラート、および調査をMicrosoft 365できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1cf813706a5fc0180ed36943c6bc7ae54e35ae346aba3d2b0251489e05cc715b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e2fc9c95389bd72ebea11dcfe808101a6ca5ab40
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53844108"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58576046"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>優先アカウントのセキュリティMicrosoft 365
 
@@ -35,7 +35,7 @@ ms.locfileid: "53844108"
 
 Microsoft 365 Microsoft Defender for Office 365には、優先度アカウントに追加のセキュリティ層を提供するいくつかの主要な機能が含まれている必要があります。 この記事では、これらの機能とそれらを使用する方法について説明します。
 
-![アイコン フォームのセキュリティ推奨事項の概要](../../media/security-recommendations-for-priority-users.png)
+![アイコン 形式のセキュリティ推奨事項の概要。](../../media/security-recommendations-for-priority-users.png)
 
 <br>
 
@@ -43,11 +43,11 @@ Microsoft 365 Microsoft Defender for Office 365には、優先度アカウント
 
 |タスク|すべてのOffice 365 Enterpriseプラン|Microsoft 365 E3|Microsoft 365 E5|
 |---|:---:|:---:|:---:|
-|[優先アカウントのサインイン セキュリティを強化する](#increase-sign-in-security-for-priority-accounts)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|[優先度アカウントに厳密な事前設定されたセキュリティ ポリシーを使用する](#use-strict-preset-security-policies-for-priority-accounts)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|[優先アカウントのサインイン セキュリティを強化する](#increase-sign-in-security-for-priority-accounts)|![含まれています。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![含まれています。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![含まれています。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|[優先度アカウントに厳密な事前設定されたセキュリティ ポリシーを使用する](#use-strict-preset-security-policies-for-priority-accounts)|![含まれています。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![含まれています。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![含まれています。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |[ユーザー タグを優先度アカウントに適用する](#apply-user-tags-to-priority-accounts)|||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |[アラート、レポート、検出の優先度アカウントを監視する](#monitor-priority-accounts-in-alerts-reports-and-detections)|||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|[ユーザーのトレーニング](#train-users)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|[ユーザーのトレーニング](#train-users)|![含まれています。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |
 
 > [!NOTE]
@@ -118,7 +118,7 @@ Microsoft 365、組織内のユーザーに通知するための次のリソー�
 
 ****
 
-|概念|リソース|Description|
+|概念|リソース|説明|
 |---|---|---|
 |Microsoft 365|[カスタマイズ可能な学習経路](/office365/customlearning/)|これらのリソースは、組織内のユーザーのトレーニングをまとめる上で役立ちます。|
 |Microsoft 365 セキュリティ|[ラーニングモジュール: 組み込みのインテリジェント なセキュリティで組織をセキュリティで保護Microsoft 365](/learn/modules/security-with-microsoft-365)|このモジュールを使用すると、セキュリティ機能Microsoft 365機能を説明し、これらのセキュリティ機能の利点を明確にできます。|

@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 のエンドポイントのデータ損失防止は、ファイル アクティビティの監視と、それらのファイルに対する保護アクションをエンドポイントに拡張します。 Microsoft 365 のコンプライアンスソリューションでファイルが表示されます '
-ms.openlocfilehash: 68fa947467948a788b5902ef50b7b9d574101a3a
-ms.sourcegitcommit: fac7b4b0095254c87b2a341fa2d53a42193f8957
+ms.openlocfilehash: ce6de37a792c81e9d43b3d7c716629e386fca7b3
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "58417977"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566020"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Microsoft 365 のエンドポイントのデータ損失防止について説明する
 
@@ -86,7 +86,7 @@ Microsoft エンドポイント DLP を使用すると、Windows 10 デバイス
 デバイス管理は、デバイスからテレメトリを収集できる機能です。これは、エンドポイント DLP や [インサイダー リスク管理](insider-risk-management.md)などの 365 Microsoft のコンプライアンスソリューションに導入する機能です。 DLP ポリシーの場所として使用するすべてのデバイスをオンボードする必要があります。
 
 > [!div class="mx-imgBorder"]
-> ![デバイス管理を有効にする](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
+> ![デバイス管理を有効にする。](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
 
 オンボードとオフボードは、デバイス管理センターからダウンロードするスクリプトを通して処理されます。 センターには、次の展開方法ごとにカスタムスクリプトがあります：
 
@@ -97,31 +97,31 @@ Microsoft エンドポイント DLP を使用すると、Windows 10 デバイス
 - 非永続的マシン用の VDI のオンボードスクリプト
 
 > [!div class="mx-imgBorder"]
-> ![デバイス オンボード ページ](../media/endpoint-dlp-learn-about-3-device-onboarding-page.png)
+> ![デバイス オンボード ページ。](../media/endpoint-dlp-learn-about-3-device-onboarding-page.png)
 
  デバイスをオンボードにするには、[Microsoft 365 エンドポイント DLPの使用を開始する](endpoint-dlp-getting-started.md)の手順を使用します。
 
 [Microsoft Defender for Endpoint](/windows/security/threat-protection/) を介してデバイスをオンボードした場合、それらのデバイスは自動的にデバイスの一覧に表示されます。
 
 > [!div class="mx-imgBorder"]
-> ![管理対象デバイスの一覧](../media/endpoint-dlp-learn-about-2-device-list.png)
+> ![管理対象デバイスの一覧。](../media/endpoint-dlp-learn-about-2-device-list.png)
 
 ### <a name="viewing-endpoint-dlp-data"></a>エンドポイント DLP データの表示
 
 [DLP 警告管理ダッシュボード](dlp-configure-view-alerts-policies.md)に移動すると、エンドポイント デバイスに適用されている DLP ポリシーに関連する警告を表示できます。
 
 > [!div class="mx-imgBorder"]
-> ![警告情報](../media/Alert-info-1.png)
+> ![警告情報。](../media/Alert-info-1.png)
 
 同じダッシュボードで、リッチ メタデータに関連付けられたイベントの詳細を表示することもできます
 
 > [!div class="mx-imgBorder"]
-> ![イベント情報](../media/Event-info-1.png)
+> ![イベント情報。](../media/Event-info-1.png)
 
 デバイスがオンボードされると、場所としてデバイスを使用する DLP ポリシーを構成し、展開する前でも、監査されたアクティビティに関する情報がアクティビティエクスプローラーに流れます。
 
 > [!div class="mx-imgBorder"]
-> ![アクティビティ エクスプローラーでのエンドポイント DLP イベント](../media/endpoint-dlp-learn-about-4-activity-explorer.png)
+> ![アクティビティ エクスプローラーでのエンドポイント DLP イベント。](../media/endpoint-dlp-learn-about-4-activity-explorer.png)
 
 エンドポイント DLP は、監査済みアクティビティに関する広範囲にわたる情報を収集します。
 
@@ -153,7 +153,7 @@ Microsoft エンドポイント DLP を使用すると、Windows 10 デバイス
 - リムーバブルメディアデバイスのシリアル番号
 
 > [!div class="mx-imgBorder"]
-> ![USB アクティビティ属性へのコピー](../media/endpoint-dlp-learn-about-5-activity-attributes.png)
+> ![USB アクティビティ属性へのコピー。](../media/endpoint-dlp-learn-about-5-activity-attributes.png)
 
 ## <a name="next-steps"></a>次の手順
 

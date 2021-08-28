@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Microsoft 365 コンプライアンス センターを使用して統合監査ログを検索し、組織内のユーザーと管理者のアクティビティを確認します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 34d3f7fa8c12d1509b864bc45e97717dbf01f534
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 9aff58f4175cd7615ad2de2a9659bec71f3f1cb8
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533281"
+ms.locfileid: "58574113"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>コンプライアンス センターで監査ログを検索する
 
@@ -105,25 +105,25 @@ ms.locfileid: "58533281"
 
   |Microsoft 365 サービスまたは機能|30 分|24 時間|
   |---|:---:|:---:|
-  |Defender for Office 365 および脅威インテリジェンス|![チェック マーク](../media/checkmark.png)||
-  |Azure Active Directory (ユーザー ログイン イベント)||![チェック マーク](../media/checkmark.png)|
-  |Azure Active Directory (管理イベント)||![チェック マーク](../media/checkmark.png)|
-  |データ損失防止|![チェック マーク](../media/checkmark.png)||
-  |Dynamics 365 CRM||![チェック マーク](../media/checkmark.png)|
-  |電子情報開示|![チェック マーク](../media/checkmark.png)||
-  |Exchange Online|![チェック マーク](../media/checkmark.png)||
-  |Microsoft Power Automate||![チェック マーク](../media/checkmark.png)|
-  |Microsoft Project|![チェック マーク](../media/checkmark.png)||
-  |Microsoft Stream|![チェック マーク](../media/checkmark.png)||
-  |Microsoft Teams|![チェック マーク](../media/checkmark.png)||
-  |Power アプリ||![チェック マーク](../media/checkmark.png)|
-  |Power BI|![チェック マーク](../media/checkmark.png)||
-  |Microsoft 365 コンプライアンス センター|![チェック マーク](../media/checkmark.png)||
-  |機密ラベル||![チェック マーク](../media/checkmark.png)|
-  |SharePoint Online と OneDrive for Business|![チェック マーク](../media/checkmark.png)||
-  |Workplace Analytics|![チェック マーク](../media/checkmark.png)||
-  |Yammer||![チェック マーク](../media/checkmark.png)|
-  |Microsoft Forms|![チェック マーク](../media/checkmark.png)||
+  |Defender for Office 365 および脅威インテリジェンス|![チェック マーク。](../media/checkmark.png)||
+  |Azure Active Directory (ユーザー ログイン イベント)||![チェック マーク。](../media/checkmark.png)|
+  |Azure Active Directory (管理イベント)||![チェック マーク。](../media/checkmark.png)|
+  |データ損失防止|![チェック マーク。](../media/checkmark.png)||
+  |Dynamics 365 CRM||![チェック マーク。](../media/checkmark.png)|
+  |電子情報開示|![チェック マーク。](../media/checkmark.png)||
+  |Exchange Online|![チェック マーク。](../media/checkmark.png)||
+  |Microsoft Power Automate||![チェック マーク。](../media/checkmark.png)|
+  |Microsoft Project|![チェック マーク。](../media/checkmark.png)||
+  |Microsoft Stream|![チェック マーク。](../media/checkmark.png)||
+  |Microsoft Teams|![チェック マーク。](../media/checkmark.png)||
+  |Power アプリ||![チェック マーク。](../media/checkmark.png)|
+  |Power BI|![チェック マーク。](../media/checkmark.png)||
+  |Microsoft 365 コンプライアンス センター|![チェック マーク。](../media/checkmark.png)||
+  |機密ラベル||![チェック マーク。](../media/checkmark.png)|
+  |Sharepoint Online と OneDrive for Business|![チェック マーク。](../media/checkmark.png)||
+  |Workplace Analytics|![チェック マーク。](../media/checkmark.png)||
+  |Yammer||![チェック マーク。](../media/checkmark.png)|
+  |Microsoft Forms|![チェック マーク。](../media/checkmark.png)||
   |
 
 - Azure Active Directory (Azure AD) は、Office 365 のディレクトリ サービスです。 統合監査ログには、Microsoft 365 管理センターまたは Azure 管理ポータルで実行されたユーザー、グループ、アプリケーション、ドメイン、およびディレクトリのアクティビティが記録されます。 Azure AD のイベントの全リストについては、「[Azure Active Directory 監査レポートのイベント](/azure/active-directory/reports-monitoring/concept-audit-logs)」を参照してください。
@@ -151,7 +151,7 @@ ms.locfileid: "58533281"
 
     [**監査**] ページが表示されます。
 
-    ![検索条件を設定し、[検索] をクリックしてレポートを実行する](../media/AuditLogSearchPage1.png)
+    ![検索条件を設定し、[検索] をクリックしてレポートを実行する。](../media/AuditLogSearchPage1.png)
 
     > [!NOTE]
     > [**ユーザーと管理者のアクティビティの記録を開始する**] リンクが表示される場合は、クリックして監査を有効にします。 このリンクが表示されない場合、組織の監査機能は有効です。
@@ -179,13 +179,13 @@ ms.locfileid: "58533281"
 
    検索結果が読み込まれ、しばらくすると、それらが新しいページに表示されます。検索が完了すると、見つかった検索結果の件数が表示されます。最大 5,000 件のイベントが 150 件ずつ表示されます。検索条件に一致するイベントが 5,000 件を超える場合は、最新の 5,000 件のイベントが表示されます。
 
-   ![検索が完了すると、検索結果の件数が表示される](../media/986216f1-ca2f-4747-9480-e232b5bf094c.png)
+   ![検索が完了すると、検索結果の件数が表示されます。](../media/986216f1-ca2f-4747-9480-e232b5bf094c.png)
 
 #### <a name="tips-for-searching-the-audit-log"></a>監査ログを検索するためのヒント
 
 - 検索する特定のアクティビティを選択するには、アクティビティ名をクリックします。 またはグループ名をクリックして、グループ内のすべてのアクティビティ ([**ファイルとフォルダーのアクティビティ**] など) を検索できます。 アクティビティが選択されている場合は、そのアクティビティをクリックして、選択を取り消すことができます。 また、検索ボックスを使用して、入力したキーワードを含むアクティビティを表示することもできます。
 
-  ![アクティビティ グループの名前をクリックしてすべてのアクティビティを選択する](../media/3cde97cb-6f35-47c0-8612-ecd9c6ac36a3.png)
+  ![アクティビティ グループの名前をクリックしてすべてのアクティビティを選択する。](../media/3cde97cb-6f35-47c0-8612-ecd9c6ac36a3.png)
 
 - Exchange 管理者監査ログのイベントを表示するには、[**アクティビティ**] リストの [**すべてのアクティビティの結果を表示**] を選択する必要があります。 この監査ログのイベントには、結果の [**アクティビティ**] 列にコマンドレット名 (**Set-Mailbox** など) が表示されます。 詳細については、 このトピックの [**監査されるアクティビティ**] タブをクリックし、[**Exchange 管理者アクティビティ**] をクリックします。
 
@@ -798,7 +798,7 @@ Workplace Analytics は、グループが組織全体でどのように共同作
 
 組織で Microsoft Teams の [患者用アプリケーション](/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-app-overview) を使用している場合は、患者アプリの使用に関連するアクティビティの監査ログを検索できます。 患者アプリをサポートするように使用環境が構成されている場合、これらのアクティビティの追加アクティビティグループは、**アクティビティ** 選択リストに表示されます。
 
-![アクティビティ選択リスト内の Microsoft Teams 医療活動 アクティビティ](../media/TeamsHealthcareAuditActivities.png)
+![アクティビティ選択リスト内の Microsoft Teams 医療活動 アクティビティ。](../media/TeamsHealthcareAuditActivities.png)
 
 患者アプリのアクティビティの説明については、[患者アプリの監査ログ](/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-audit)をご覧ください。
 
@@ -1021,7 +1021,7 @@ Office 365 監査ログに記録される情報バリアのアクティビティ
 
 - Exchange 管理者監査ログのイベントを表示するには、検索結果をフィルター処理し、[**アクティビティ**] フィルター ボックスに「**-**」(ダッシュ) を入力します。 これにより、Exchange 管理者イベントの [**アクティビティ**] 列にコマンドレット名が表示されます。 次に、コマンドレット名をアルファベット順に並べ替えることができます。
 
-  ![[アクティビティ] ボックスにダッシュを入力して Exchange 管理イベントをフィルター処理する](../media/7628e7aa-6263-474a-a28b-2dcf5694bb27.png)
+  ![[アクティビティ] ボックスにダッシュを入力して Exchange 管理イベントをフィルター処理する。](../media/7628e7aa-6263-474a-a28b-2dcf5694bb27.png)
 
 - 実行されたコマンドレット、使用されたパラメーターおよびパラメーター値、影響を受けたオブジェクトに関する情報を取得するには、[**すべての結果をダウンロードする**] オプションを選択することで検索結果をエクスポートできます。 詳細については、「[監査ログ レコードをエクスポート、構成、表示する](export-view-audit-log-records.md)」を参照してください。
 

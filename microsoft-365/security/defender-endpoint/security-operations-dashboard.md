@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1a011d3cf8879b9f4b82d055693edfea98dbeb83a829c153b20e579b015fc80e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2612fc618c8bd3dd8362d86413bad386856a3063
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53897945"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572553"
 ---
 # <a name="microsoft-defender-security-center-security-operations-dashboard"></a>Microsoft Defender セキュリティ センターセキュリティ操作ダッシュボード
 
@@ -47,7 +47,7 @@ ms.locfileid: "53897945"
 - リスクにさらされているユーザー
 - 疑わしいアクティビティ
 
-![セキュリティ操作ダッシュボードのイメージ](images/atp-sec-ops-dashboard.png)
+![セキュリティ操作ダッシュボードのイメージ。](images/atp-sec-ops-dashboard.png)
 
 アラートとデバイスを調査して調査し、ネットワーク内で疑わしいアクティビティが発生したかどうかを迅速に判断し、それが表示されたコンテキストを理解するのに役立ちます。
 
@@ -59,7 +59,7 @@ ms.locfileid: "53897945"
 
 ネットワーク内の過去 30 日間のアクティブなアラートの全体数をタイルから表示できます。 アラートは、[新規] と **[進行中] に****グループ化されます**。
 
-![各スライスまたは重大度をクリックして、過去 30 日間のアラートの一覧を表示する](images/active-alerts-tile.png)
+![各スライスまたは重大度をクリックすると、過去 30 日間のアラートの一覧が表示されます。](images/active-alerts-tile.png)
 
 各グループは、対応するアラートの重大度レベルにさらにサブ分類されます。 各アラート リング内のアラートの数をクリックすると、そのカテゴリのキュー (**新規** または進行中) の並べ替えビュー **が表示されます**。
 
@@ -81,7 +81,7 @@ ms.locfileid: "53897945"
 
 [ **センサーの問題があるデバイス]** タイルは、Microsoft Defender for Endpoint サービスにセンサー データを提供する個々のデバイスの機能に関する情報を提供します。 注意が必要なデバイスの数を報告し、問題のあるデバイスを特定するのに役立ちます。
 
-![センサーの問題のタイルを持つデバイス](images/atp-tile-sensor-health.png)
+![センサーの問題が発生したデバイスタイル。](images/atp-tile-sensor-health.png)
 
 サービスに適切に報告されていないデバイスの数に関する情報を提供する 2 つの状態インジケーターがあります。
 
@@ -102,19 +102,19 @@ ms.locfileid: "53897945"
 
 [ **日次デバイスのレポート** ] タイルには、過去 30 日間の毎日のデバイスレポートの数を表す棒グラフが表示されます。 グラフ上の個々のバーにカーソルを合わせると、1 日にレポートするデバイスの正確な数が表示されます。
 
-![毎日のデバイスレポート タイルのイメージ](images/atp-daily-devices-reporting.png)
+![毎日のデバイスレポート タイルのイメージ。](images/atp-daily-devices-reporting.png)
 
 ## <a name="active-automated-investigations"></a>アクティブな自動調査
 
 [アクティブな自動調査] タイルから、ネットワーク内の過去 30 日間の自動調査の全体数 **を表示** できます。 調査は、保留中のアクション **、** デバイスの待機、および実行中 **に** グループ **化されます**。
 
-![アクティブな自動調査のインマゲ](images/atp-active-investigations-tile.png)
+![アクティブな自動調査のインマゲ。](images/atp-active-investigations-tile.png)
 
 ## <a name="automated-investigations-statistics"></a>自動調査の統計
 
 このタイルには、過去 7 日間の自動調査に関連する統計が表示されます。 完了した調査の数、正常に修復された調査の数、調査の開始に要する平均保留中の時間、アラートの修復にかかる平均時間、調査したアラートの数、および一般的な手動調査から保存された自動化の時間数を示します。 
 
-![自動調査統計のイメージ](images/atp-automated-investigations-statistics.png)
+![自動調査統計のイメージ。](images/atp-automated-investigations-statistics.png)
 
 [自動調査]、[修復された調査]、および [調査されたアラート] をクリックして、[調査] ページに移動し、適切なカテゴリでフィルター処理できます。   これにより、状況に合った調査の詳細な内訳を確認できます。
 
@@ -128,7 +128,7 @@ ms.locfileid: "53897945"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-secopsdashboard-belowfoldlink)
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [Microsoft Defender for Endpoint ポータルについて](use.md)
 - [ポータルの概要](portal-overview.md)

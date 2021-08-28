@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Teams、Exchange、SharePoint、その他の Microsoft 365 サービスを利用することで、ユーザーの生産性を向上できます。
-ms.openlocfilehash: 7a26d89e04d9739434208c4b3c4a536be5c5c5075a00dabdc06b8c4abd318838
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 034f0c3d4127ed75db8ba9a7cbe628a2502d192c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53777773"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566480"
 ---
 # <a name="step-5-deploy-hybrid-worker-productivity-apps-and-services"></a>手順 5. ハイブリッド ワーカー生産性向上アプリとサービスを展開する
 
@@ -36,7 +36,7 @@ ms.locfileid: "53777773"
 | デスクトップおよびモバイル デバイスの Office アプリケーション | Microsoft 365 Apps | ローカル コンピューターにインストールされ、継続的な機能とセキュリティの更新を受け取るバージョンの Word、PowerPoint、Excel、および Outlook を使用して、新しいコンテンツの作成や、既存のコンテンツに対しての共同作業を行います。 |
 ||||
 
-![Teams、Outlook、SharePoint、OneDrive、Microsoft 365 アプリを使用して生産性を維持する](../media/empower-people-to-work-remotely/remote-workers-productivity-grid.png)
+![Teams、Outlook、SharePoint、OneDrive、Microsoft 365 Apps を使用して生産性を維持します。](../media/empower-people-to-work-remotely/remote-workers-productivity-grid.png)
 
 ## <a name="keep-people-connected-with-microsoft-teams"></a>Microsoft Teams を使用して密接な連携を維持する
 
@@ -105,6 +105,6 @@ Microsoft 365 アプリは、従業員がいつでもどこからでもシーム
 
 ## <a name="next-step"></a>次の手順
 
-[![手順 6: ユーザーを訓練し、その成功を監視する](../media/empower-people-to-work-remotely/remote-workers-step-grid-6.png)](empower-people-to-work-remotely-train-monitor-usage.md)
+[![手順 6: ユーザーを訓練し、その成功を監視します。](../media/empower-people-to-work-remotely/remote-workers-step-grid-6.png)](empower-people-to-work-remotely-train-monitor-usage.md)
 
 [手順 6](empower-people-to-work-remotely-train-monitor-usage.md) に進んで、ユーザーをトレーニングし、その成功を監視します。

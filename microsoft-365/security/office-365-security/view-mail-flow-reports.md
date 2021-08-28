@@ -19,12 +19,12 @@ description: 管理者は、セキュリティ コンプライアンス セン�
 ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 087b9fea8b22a9d1f99f2bc3a74217a0b21aa264d7e26764e6abfe71f5d84075
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5c1993668b94ca8c71ccbf13e5fe59059c610cca
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56808555"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572409"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>セキュリティ コンプライアンス センターの [レポート] ダッシュボードでメール フロー レポート&表示する
 
@@ -42,7 +42,7 @@ ms.locfileid: "56808555"
 
 必要なアクセス許可 [がある](#what-permissions-are-needed-to-view-these-reports)場合は、[レポート ダッシュボード] に移動して、セキュリティ & [コンプライアンス](https://protection.office.com) センターでこれらのレポート **を表示** \> **できます**。 レポート ダッシュボードに直接移動するには、を開きます <https://protection.office.com/insightdashboard> 。
 
-![セキュリティ 管理コンプライアンス センター&ダッシュボード](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
+![セキュリティ コンプライアンス センターのダッシュボード&レポートします。](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
 ## <a name="connector-report"></a>コネクタ レポート
 
@@ -50,7 +50,7 @@ ms.locfileid: "56808555"
 
 レポートを表示するには、コンプライアンス センターのセキュリティ &[開き、[](https://protection.office.com)レポート **ダッシュボード]** に移動し、[コネクタ \> レポート]**を選択します**。 レポートに直接移動するには、を開きます <https://protection.office.com/reportv2?id=ConnectorReport> 。
 
-![レポート ダッシュボードのコネクタ レポート ウィジェット](../../media/connector-report-widget.png)
+![レポート ダッシュボードのコネクタ レポート ウィジェット。](../../media/connector-report-widget.png)
 
 ### <a name="report-view-for-the-connector-report"></a>コネクタ レポートのレポート ビュー
 
@@ -65,7 +65,7 @@ ms.locfileid: "56808555"
 
   グラフ内のデータを分離するには、[データの表示] コントロールを使用して、これらのオプションのいずれかを選択するか、[すべてのメール フロー **] を選択します**。
 
-  ![コネクタ レポートでメール フロー別にデータを表示する](../../media/connector-report-view-data-by-mail-flow.png)
+  ![コネクタ レポートでメール フロー別にデータを表示します。](../../media/connector-report-view-data-by-mail-flow.png)
 
 - **データの表示方法: TLS の使用状況**: このグラフは、メール フローのトランスポート層セキュリティ (TLS) バージョンの使用状況の割合を示しています。
 
@@ -76,7 +76,7 @@ ms.locfileid: "56808555"
   - **コネクタのないインターネットへ**
   - 構成した特定のコネクタ。
 
-  ![コネクタ レポートで TLS 使用状況別にデータを表示する](../../media/connector-report-view-data-by-tls-usage.png)
+  ![コネクタ レポートで TLS 使用状況別にデータを表示します。](../../media/connector-report-view-data-by-tls-usage.png)
 
 レポート ビューで **[フィルター]** をクリックすると、[開始日] と [終了日] で日付 **範囲****を指定できます**。
 
@@ -84,7 +84,7 @@ ms.locfileid: "56808555"
 
 レポート ビューで **[詳細テーブルの表示** ] をクリックすると、次の情報が表示されます。
 
-- **Date**
+- **日付**
 - **コネクタの方向と名前**
 - **コネクタの種類**
 - **強制 TLS?**: True **または** False の **値を指定します**。
@@ -104,7 +104,7 @@ ms.locfileid: "56808555"
 
 レポートを表示するには、セキュリティ コンプライアンス センター&[開](https://protection.office.com)き、[レポートダッシュボード] に移動し、[トランスポート ルールExchange \> **選択します**。 レポートに直接移動するには、を開きます <https://protection.office.com/reportv2?id=ETRRuleReport> 。
 
-![Exchangeダッシュボードでトランスポート ルール ウィジェットを作成する](../../media/transport-rule-report-widget.png)
+![Exchangeダッシュボードでトランスポート ルール ウィジェットを作成します。](../../media/transport-rule-report-widget.png)
 
 ### <a name="report-view-for-the-exchange-transport-rule-report"></a>トランスポート ルール レポートのExchangeビュー
 
@@ -132,7 +132,7 @@ ms.locfileid: "56808555"
 - 方向の値
 - 重大度の値
 
-![トランスポート ルール レポートのレポート Exchangeビュー](../../media/transport-rule-report-report-view.png)
+![トランスポート ルール レポートのExchangeビュー。](../../media/transport-rule-report-report-view.png)
 
 ### <a name="details-table-view-for-the-exchange-transport-rule-report"></a>トランスポート ルール レポートのExchangeテーブル ビュー
 
@@ -140,22 +140,22 @@ ms.locfileid: "56808555"
 
 - **データの表示方法: Exchange トランスポート ルール**:
 
-  - **Date**
+  - **日付**
   - **トランスポート ルール**
-  - **Subject**
+  - **件名**
   - **[送信者のアドレス]**
-  - **受信者のアドレス**
+  - **受信者の住所**
   - **重大度**
   - **Direction**
 
 - **データの表示方法: DLP Exchangeルール**:
 
-  - **Date**
+  - **日付**
   - **DLP ポリシー**
   - **トランスポート ルール**
-  - **Subject**
+  - **件名**
   - **[送信者のアドレス]**
-  - **受信者のアドレス**
+  - **受信者の住所**
   - **重大度**
   - **Direction**
 
@@ -173,7 +173,7 @@ ms.locfileid: "56808555"
 
 レポートを表示するには、コンプライアンス センターのセキュリティ &[開](https://protection.office.com)き、[レポート **ダッシュボード]** に移動し、[レポートの転送] \> **を選択します**。 レポートに直接移動するには、を開きます <https://protection.office.com/reportv2?id=MailFlowForwarding> 。
 
-![レポート ダッシュボードのレポート ウィジェットの転送](../../media/forwarding-report-widget.png)
+![レポート ダッシュボードのレポート ウィジェットの転送。](../../media/forwarding-report-widget.png)
 
 ### <a name="report-view-for-the-forwarding-report"></a>転送レポートのレポート ビュー
 
@@ -184,18 +184,18 @@ ms.locfileid: "56808555"
   - **トランスポート ルール**: メール フロー ルール [とも呼ばれる](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)。
   - **メールボックス ルール**: 受信トレイ ルール [とも呼ばれる](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59)。
 
-  ![転送レポートの [転送方法] ビュー](../../media/forwarding-report-forwarding-methods.png)
+  ![転送レポートの [転送方法] ビュー。](../../media/forwarding-report-forwarding-methods.png)
 
 - **[データの表示: 転送ドメイン**] : このビューには、転送先である受信者ドメインが表示されます。
 
-  ![転送レポートの [転送ドメイン] ビュー](../../media/forwarding-report-forwarding-domains.png)
+  ![転送レポートの [転送ドメイン] ビュー。](../../media/forwarding-report-forwarding-domains.png)
 
 - **データを表示する: Forwarders**: 次の転送者が表示されます。
 
   - **トランスポート ルール**
   - 転送受信トレイ ルールを含むメールボックス。
 
-  ![転送レポートのフォワーダー ビュー](../../media/forwarding-report-forwarders.png)
+  ![フォワーダーは、フォワーディング レポートに表示されます。](../../media/forwarding-report-forwarders.png)
 
 レポート ビューで **[フィルター]** をクリックすると、[開始日] と [終了日] で日付 **範囲****を指定できます**。
 
@@ -220,7 +220,7 @@ ms.locfileid: "56808555"
 Mailflow **状態レポートは**、送信済 [](#sent-and-received-email-report)みおよび受信済みメール レポートに似ています。エッジで許可またはブロックされた電子メールに関する追加情報を含む。 これは、エッジ保護情報を含む唯一のレポートであり、EOP (EOP) による評価のためにサービスに許可される前にブロックされる電子メールの量を示Exchange Online Protectionです。 メッセージが 5 人の受信者に送信された場合、メッセージは 1 つのメッセージではなく 5 つの異なるメッセージとしてカウントされます。
 レポートを表示するには、コンプライアンス センターでセキュリティ &[を](https://protection.office.com)開き、[レポート **ダッシュボード]** に移動し、[メールフローの状態レポート \> ]**を選択します**。 メール フローの状態レポートに **直接移動するには、** 開きます <https://protection.office.com/mailflowStatusReport> 。
 
-![レポート ダッシュボードのメールフロー状態レポート ウィジェット](../../media/mail-flow-status-report-widget.png)
+![レポート ダッシュボードのメールフロー状態レポート ウィジェット。](../../media/mail-flow-status-report-widget.png)
 
 ### <a name="type-view-for-the-mailflow-status-report"></a>メールフロー状態レポートの種類ビュー
 
@@ -237,7 +237,7 @@ Mailflow **状態レポートは**、送信済 [](#sent-and-received-email-repor
 
   - **良いメール**
   - **マルウェア**
-  - **スパム**
+  - **[スパム]**
   - **エッジ保護**
   - **ルール メッセージ**
   - **フィッシング詐欺メール**
@@ -249,7 +249,7 @@ Mailflow **状態レポートは**、送信済 [](#sent-and-received-email-repor
 データ テーブルには、次の情報が含まれます。
 
 - **Direction**
-- **型**
+- **Type**
 - **24 時間**
 - **3 日間**
 - **7 日間**
@@ -269,7 +269,7 @@ Mailflow **状態レポートは**、送信済 [](#sent-and-received-email-repor
 
 エクスポートされたファイル.csv、150,000 行に制限されます。 その日のデータに 150,000 行を超える行が含まれている場合は、複数.csvファイルが作成されます。
 
-![メールフローの状態レポートにビューを入力する](../../media/mail-flow-status-report-type-view.png)
+![[メールフローの状態] レポートにビューを入力します。](../../media/mail-flow-status-report-type-view.png)
 
 ### <a name="direction-view-for-the-mailflow-status-report"></a>メールフロー状態レポートの方向ビュー
 
@@ -289,7 +289,7 @@ Mailflow **状態レポートは**、送信済 [](#sent-and-received-email-repor
 
 エクスポートされたファイル.csv、150,000 行に制限されます。 その日のデータに 150,000 行を超える行が含まれている場合は、複数.csvファイルが作成されます。
 
-![メールフロー状態レポートの方向ビュー](../../media/mail-flow-status-report-direction-view.png)
+![メールフロー状態レポートの方向ビュー。](../../media/mail-flow-status-report-direction-view.png)
 
 ### <a name="funnel-view-for-the-mailflow-status-report"></a>メールフロー状態レポートのファネル ビュー
 
@@ -326,7 +326,7 @@ EOP または Defender でフィルター処理されたメールを個別Office
 
 データ テーブルには、降順に表示される次の情報が含まれます。
 
-- **Date**
+- **日付**
 - **メールの総数**
 - **エッジ保護**
 - **マルウェア対策、ファイル評価、ファイルの種類ブロック**:
@@ -359,7 +359,7 @@ EOP または Defender でフィルター処理されたメールを個別Office
 
 エクスポートされたファイル.csv、150,000 行に制限されます。 データに 150,000 行を超える行が含まれている場合は、複数.csvファイルが作成されます。
 
- ![メールフロー状態レポートのファネル ビュー](../../media/mail-flow-status-report-funnel-view.png)
+ ![[メールフローの状態] レポートの [ファネル] ビュー。](../../media/mail-flow-status-report-funnel-view.png)
 
 ### <a name="tech-view-for-the-mailflow-status-report"></a>メールフローの状態レポートの技術ビュー
 
@@ -395,7 +395,7 @@ Tech **ビューは、** ファネル **ビューに** 似ています。構成�
 
 データ テーブルには、降順に表示される次の情報が含まれます。
 
-- **Date**
+- **日付**
 - **メールの総数**
 - **フィルター処理されたエッジ**
 - **マルウェア対策エンジン、セーフ添付ファイル、フィルター処理されたルール**:
@@ -420,7 +420,7 @@ Tech **ビューは、** ファネル **ビューに** 似ています。構成�
 
 エクスポートされたファイル.csv、150,000 行に制限されます。 データに 150,000 行を超える行が含まれている場合は、複数.csvファイルが作成されます。
 
- ![メールフロー状態レポートの技術ビュー](../../media/mail-flow-status-report-Tech-view.png)
+ ![メールフロー状態レポートの技術ビュー。](../../media/mail-flow-status-report-Tech-view.png)
 
 ## <a name="sent-and-received-email-report"></a>送信および受信した電子メール レポート
 
@@ -432,7 +432,7 @@ Tech **ビューは、** ファネル **ビューに** 似ています。構成�
 
 レポートを表示するには、セキュリティ & コンプライアンス センターを [開](https://protection.office.com)き、[レポートダッシュボード] に移動し、[送信メールと受信メール \> **] を選択します**。 レポートに直接移動するには、を開きます <https://protection.office.com/reportv2?id=SentAndReceivedMailATP> 。
 
-![レポート ダッシュボードの送信および受信メール ウィジェット](../../media/sent-and-received-email-report-widget.png)
+![レポート ダッシュボードで送信および受信した電子メール ウィジェット。](../../media/sent-and-received-email-report-widget.png)
 
 ### <a name="report-view-for-the-sent-and-received-email-report"></a>送信および受信電子メール レポートのレポート ビュー
 
@@ -449,11 +449,11 @@ Tech **ビューは、** ファネル **ビューに** 似ています。構成�
 
   グラフで 1 日 (データ ポイント) にカーソルを合わせると、その日の詳細を確認できます。
 
-  ![送信および受信電子メール レポートにビューを入力する](../../media/sent-and-received-email-report-type-view.png)
+  ![送信および受信した電子メール レポートにビューを入力します。](../../media/sent-and-received-email-report-type-view.png)
 
 - **[ブレークダウン]: [方向]**: グラフには、 **合計** データ、 **受信** データ、および **送信データが表示** されます。 グラフで 1 日 (データ ポイント) にカーソルを合わせると、その日の詳細を確認できます。
 
-  ![送信および受信電子メール レポートの方向ビュー](../../media/sent-and-received-email-report-direction-view.png)
+  ![送信および受信電子メール レポートの方向ビュー。](../../media/sent-and-received-email-report-direction-view.png)
 
 - **ドリルダウン** \>**マルウェア (マルウェア対策)**: この選択により、マルウェア検出 [レポートが表示されます](view-email-security-reports.md#malware-detections-report)。
 
@@ -472,7 +472,7 @@ Tech **ビューは、** ファネル **ビューに** 似ています。構成�
 [別の **方向] または [** 方向] の [方向 **]** ビューで [詳細テーブルの表示] をクリック **すると** 、次の情報が表示されます。
 
 - **日付 (UTC)**
-- **型**
+- **Type**
 - **Direction**
 - **メッセージ数**
 
@@ -490,7 +490,7 @@ Tech **ビューは、** ファネル **ビューに** 似ています。構成�
 
 レポートを表示するには、セキュリティ & コンプライアンス センターを [開き、[](https://protection.office.com)レポートダッシュボード] に移動し、[上位の送信者と受信者] \> **を選択します**。 レポートに直接移動するには、を開きます <https://protection.office.com/reportv2?id=TopSenderRecipientsATP> 。
 
-![レポート ダッシュボードの上位の送信者と受信者ウィジェット](../../media/top-senders-and-recipients-widget.png)
+![レポート ダッシュボードの上位の送信者と受信者ウィジェット。](../../media/top-senders-and-recipients-widget.png)
 
 ### <a name="report-view-for-the-top-senders-and-recipient-report"></a>上位の送信者と受信者レポートのレポート ビュー
 
@@ -508,7 +508,7 @@ Tech **ビューは、** ファネル **ビューに** 似ています。構成�
 
 レポート ビューで **[フィルター]** をクリックすると、[開始日] と [終了日] で日付 **範囲****を指定できます**。
 
-![上位の送信者と受信者レポートのレポート ビューの円グラフ](../../media/top-senders-and-recipients-report-view.png)
+![[上位の送信者と受信者] レポートの [レポート] ビューの円グラフ。](../../media/top-senders-and-recipients-report-view.png)
 
 ### <a name="details-table-view-for-the-top-senders-and-recipient-report"></a>上位の送信者と受信者レポートの詳細テーブル ビュー
 
@@ -549,7 +549,7 @@ Tech **ビューは、** ファネル **ビューに** 似ています。構成�
 
 - **組織の管理**
 - **セキュリティ管理者**
-- **セキュリティ リーダー**
+- **セキュリティ閲覧者**
 - **グローバル閲覧者**
 
 詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: d9c244b048685824abfece8302c2528fa51a5802
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.openlocfilehash: c9a9cfa6e790cd179c0f9a13ce4fd312c0819411
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349994"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575534"
 ---
 # <a name="incidents-in-microsoft-365-defender"></a>インシデントのMicrosoft 365 Defender
 
@@ -46,7 +46,7 @@ Microsoft 365やアプリは、疑わしいイベントや悪意のあるイベ�
 
 個々のアラートを組み合わせて攻撃に関する洞察を得る場合は、困難で時間がかかる場合があります。Microsoft 365 Defender は自動的にアラートと関連情報をインシデントに集約します。
 
-:::image type="content" source="../../media/incidents-overview/incidents.png" alt-text="エンティティMicrosoft 365 Defenderイベントをインシデントに関連付ける方法":::
+:::image type="content" source="../../media/incidents-overview/incidents.png" alt-text="エンティティMicrosoft 365 Defenderイベントをインシデントに関連付ける方法。":::
 
 この短いインシデントの概要については、Microsoft 365 Defender (4 分) をご覧ください。
 
@@ -68,7 +68,7 @@ Microsoft 365やアプリは、疑わしいイベントや悪意のあるイベ�
 
 インシデント ポータル **(&)** の&で>インシデントからのインシデントを [security.microsoft.com 管理](https://security.microsoft.com)Microsoft 365 Defenderします。 次に例を示します。
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="[インシデント] ページ (Microsoft 365 Defender ポータル)":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="ポータルの [インシデント] ページMicrosoft 365 Defenderします。":::
 
 インシデント名を選択すると、インシデントの概要が表示され、追加情報を含むタブにアクセスできます。
 
@@ -102,13 +102,13 @@ Microsoft 365やアプリは、疑わしいイベントや悪意のあるイベ�
 
 インシデントとデータの関係と、インシデントポータルのインシデントのタブMicrosoft 365 Defenderします。
 
-:::image type="content" source="../../media/incidents-overview/incidents-security-center.png" alt-text="インシデントとそのデータと、ポータル内のインシデントのタブMicrosoft 365 Defender関係":::
+:::image type="content" source="../../media/incidents-overview/incidents-security-center.png" alt-text="インシデントとそのデータと、ポータル内のインシデントのタブとのMicrosoft 365 Defenderします。":::
 
 ## <a name="example-incident-response-workflow-for-microsoft-365-defender"></a>インシデント対応ワークフローの例Microsoft 365 Defender
 
 次に、ポータルでインシデントに対応するワークフロー Microsoft 365例Microsoft 365 Defender示します。
 
-:::image type="content" source="../../media/incidents-overview/incidents-example-workflow.png" alt-text="インシデント対応ワークフローの例Microsoft 365":::
+:::image type="content" source="../../media/incidents-overview/incidents-example-workflow.png" alt-text="インシデント対応ワークフローの例Microsoft 365。":::
 
 継続的に、インシデント キューの分析と解決に最も優先度の高いインシデントを特定し、対応の準備を整えます。 これは、次の組み合わせです。
 
@@ -146,7 +146,7 @@ Microsoft 製品全体のインシデント対応の詳細については、こ�
 
 次に、セキュリティ操作 (SecOps) の例を示Microsoft 365 Defender。
 
-:::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="ユーザーのセキュリティ操作のMicrosoft 365 Defender":::
+:::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="ユーザーのセキュリティ操作のMicrosoft 365 Defender。":::
 
 毎日のタスクには、次のものが含まれます。
 

@@ -22,12 +22,12 @@ localization_priority: Priority
 description: 管理者は、Exchange Online Protection (EOP) で利用できるスプーフィング対策機能について学ぶことができます。この機能を使用すると、なりすましの送信者とドメインからのフィッシング攻撃を軽減できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 61735abbce8445d4c3293085c320c9d253c745dcef66ace90fbfb8ba73ebe89b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1d9980240f0c45eb708a668dfea028ce5259fcab
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56886211"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58576106"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>EOP のスプーフィング対策保護
 
@@ -48,7 +48,7 @@ EOP では、次のスプーフィング対策テクノロジを使用できま�
 
   EOP は、標準のメール認証方法と送信者評価手法の組み合わせによって認証されないメッセージを分析してブロックします。
 
-  ![EOP のスプーフィング対策チェック](../../media/eop-anti-spoofing-protection.png)
+  ![EOP のスプーフィング対策チェック。](../../media/eop-anti-spoofing-protection.png)
 
 - **スプーフィング インテリジェンス分析**: 7 日間で内部および外部ドメインの送信者からのスプーフィングされたメッセージを確認し、その送信者を許可またはブロックします。 詳細については、「[EOP でのスプーフィング インテリジェンス分析](learn-about-spoof-intelligence.md)」を参照してください。
 
@@ -75,13 +75,13 @@ EOP では、次のスプーフィング対策テクノロジを使用できま�
 
   次のメッセージは、なりすましの送信者 msoutlook94@service.outlook.com を使用するフィッシングの例です。
 
-  ![service.outlook.com を偽装しているフィッシング メッセージ](../../media/1a441f21-8ef7-41c7-90c0-847272dc5350.jpg)
+  ![service.outlook.com を偽装しているフィッシング メッセージ。](../../media/1a441f21-8ef7-41c7-90c0-847272dc5350.jpg)
 
   このメッセージは service.outlook.com から送信されていまでしたが、攻撃者は **From** ヘッダー フィールドをスプーフィングして、そこから送信されたように見せかけていました。 これは、受信者をだまして、**パスワードを変更する** リンクをクリックさせたり、認証情報を提供させたりしようとする試みでした。
 
   次のメッセージは、スプーフィングされたメールドメイン contoso.com を使用する BEC の例です。
 
-  ![フィッシング メッセージ - ビジネス メール詐欺](../../media/da15adaa-708b-4e73-8165-482fc9182090.jpg)
+  ![フィッシング メッセージ - ビジネス メール詐欺。](../../media/da15adaa-708b-4e73-8165-482fc9182090.jpg)
 
   メッセージは正当なものに見えますが、送信者はスプーフィングされています。
 
@@ -89,7 +89,7 @@ EOP では、次のスプーフィング対策テクノロジを使用できま�
 
   次のメッセージは、Microsoft Security アカウントからの実際のパスワード リセット メッセージの例です。
 
-  ![Microsoft の正当なパスワード リセット](../../media/58a3154f-e83d-4f86-bcfe-ae9e8c87bd37.jpg)
+  ![Microsoft の正当なパスワード リセット。](../../media/58a3154f-e83d-4f86-bcfe-ae9e8c87bd37.jpg)
 
   このメッセージは Microsoft から本当に送信されたものですが、ユーザーには疑う習慣がついています。本物と偽物のパスワード リセット メッセージを見分けることが難しいため、ユーザーは、メッセージを無視したり、スパムとして報告したり、フィッシング詐欺として Microsoft に不要な報告を返したりしてしまう可能性があります。
 

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アプリ ガバナンス ポリシーを管理します。
-ms.openlocfilehash: 7da710675ab76a9bdbbf81b0186e4364ce77b84b4c6d2d6ae910ba33ea26a8a5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 270315e15a79b97b55aa729d4b7e9b39930ee82c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53820728"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571147"
 ---
 # <a name="manage-app-policies"></a>アプリ ポリシーを管理する
 
@@ -43,7 +43,7 @@ ms.locfileid: "53820728"
 1. 予期しない動作が発生する場合は、手順 1 に戻ります。
 1. 想定どおりの動作であれば、ポリシーを編集して、状態を [アクティブ] に変更します (必要な場合)。
 
-![アプリ ポリシー ワークフローの管理](../media/manage-app-protection-governance/mapg-manage-policy-process.png)
+![アプリ ポリシー ワークフローの管理。](../media/manage-app-protection-governance/mapg-manage-policy-process.png)
 
 ## <a name="editing-an-app-policy-configuration"></a>アプリ ポリシー構成の編集
 

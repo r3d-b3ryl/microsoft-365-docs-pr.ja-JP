@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アプリの脅威の検出と修復を開始する。
-ms.openlocfilehash: 085c6f7404555494a18645ab9680f44a6ba93557aff1d1fcd953cfec3256a2b1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a57d888d2494fdcdc52e69b3738edba198b6363f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842682"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571123"
 ---
 # <a name="get-started-with-app-threat-detection-and-remediation"></a>アプリの脅威の検出と修復を開始する
 
@@ -29,7 +29,7 @@ Microsoft アプリ ガバナンスは、悪意のあるアプリに基づいて
 
 アプリのアラートを表示する最初の場所は、[https://aka.ms/appgovernance](https://aka.ms/appgovernance) のアプリ ガバナンス ダッシュボードです。
 
-![Microsoft 365 コンプライアンス センターの [検出とポリシーアラート] セクションが強調表示されている [アプリ ガバナンスの概要] ページ](..\media\manage-app-protection-governance\mapg-cc-overview-alerts.png)
+![Microsoft 365 コンプライアンス センターの [検出とポリシーアラート] セクションが強調表示されている [アプリ ガバナンスの概要] ページ。](..\media\manage-app-protection-governance\mapg-cc-overview-alerts.png)
 
 この概要ページの [**検出とポリシーのアラート**] セクションに、最新のアラートが一覧表示されます。 これを使用すると、テナントの現在のアプリ アラート アクティビティをすばやく表示できます。
 
@@ -39,7 +39,7 @@ Microsoft アプリ ガバナンスは、悪意のあるアプリに基づいて
 
 [**アラート**] ページには、テナントのすべてのアプリ ガバナンス ベースのアラートが一覧表示されます。
 
-![Microsoft 365 コンプライアンス センターの [アプリ ガバナンス アラートの概要] ページ](..\media\manage-app-protection-governance\mapg-cc-alerts.png)
+![Microsoft 365 コンプライアンス センターの [アプリ ガバナンス アラートの概要] ページ。](..\media\manage-app-protection-governance\mapg-cc-alerts.png)
 
 リストされたそれぞれのアラートには、次の情報が含まれています:
 

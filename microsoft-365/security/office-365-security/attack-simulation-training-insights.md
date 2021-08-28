@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: 管理者は、Microsoft 365 Defender ポータルでの攻撃シミュレーション トレーニングが従業員にどのように影響するかを学習し、シミュレーションとトレーニングの結果から分析情報を得る方法について説明します。
 ms.technology: mdo
-ms.openlocfilehash: 7df504bb5f94a5c14792e278c03776ff45df7e8cdf788720c717e83b28baeb96
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 725b5c0310d4412f0901526a8111c686f69898a2
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53862538"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58576094"
 ---
 # <a name="gain-insights-through-attack-simulation-training"></a>攻撃シミュレーション トレーニングを通して洞察を得る
 
@@ -39,7 +39,7 @@ ms.locfileid: "53862538"
 さらに、攻撃によって侵害された従業員の実際の数と予想される妥協率の `<number> less susceptible to phishing` 違いを反映しています。 この数の従業員は、将来同様の攻撃によって侵害される可能性は低く、従業員が予想される妥協率とは対照的に全体的にどのように行ったか `<percent%> better than predicted rate` 示しています。
 
 > [!div class="mx-imgBorder"]
-> ![攻撃シミュレーション トレーニングの概要に対する動作の影響カード](../../media/attack-sim-preview-behavior-impact-card.png)
+> ![攻撃シミュレーション トレーニングの概要に対する動作の影響カード。](../../media/attack-sim-preview-behavior-impact-card.png)
 
 より詳細なレポートを表示するには、[シミュレーションとトレーニングの有効性レポートの **表示] をクリックします**。 このレポートは、シミュレーション自体からの追加のコンテキスト (シミュレーション手法や対象ユーザーの総数など) と同じ情報を提供します。
 
@@ -50,7 +50,7 @@ ms.locfileid: "53862538"
 推奨されるアクション セクションでは、Microsoft Secure Score で使用可能な推奨事項 [の詳細を示します](../defender/microsoft-secure-score.md)。 これらの推奨事項は、シミュレーションで使用されるペイロードに基づいており、従業員と環境の保護に役立ちます。 各改善アクションをクリックすると、その詳細が表示されます。
 
 > [!div class="mx-imgBorder"]
-> ![攻撃シミュレーション トレーニングの推奨事項のアクション セクション](../../media/attack-sim-preview-recommended-actions.png)
+> ![攻撃シミュレーション のトレーニングに関する推奨事項のアクション セクション。](../../media/attack-sim-preview-recommended-actions.png)
 
 ## <a name="related-links"></a>関連リンク
 

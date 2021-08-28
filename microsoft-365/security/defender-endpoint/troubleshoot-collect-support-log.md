@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 518194e3cbf185da415104991e1d7186f5912953
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 83f6853217112741168876d92b9440869e29a5c1
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58250571"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575506"
 ---
 # <a name="collect-support-logs-in-microsoft-defender-for-endpoint-using-live-response"></a>ライブ応答を使用して Microsoft Defender for Endpoint のサポート ログを収集する
 
@@ -30,7 +30,7 @@ ms.locfileid: "58250571"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 
 サポートに連絡する場合は、Microsoft Defender for Endpoint Client Analyzer ツールの出力パッケージを提供する必要があります。
@@ -47,15 +47,15 @@ ms.locfileid: "58250571"
 
 3. [ライブラリ **アップロードファイルを選択します**。
 
-    ![アップロード ファイルのイメージ](images/upload-file.png)
+    ![アップロード ファイルのイメージ。](images/upload-file.png)
 
 4. [ファイル **の選択] を選択します**。
 
-    ![ファイルの選択ボタン 1 のイメージ](images/choose-file.png)
+    ![[ファイルの選択] ボタン 1 のイメージ。](images/choose-file.png)
 
 5. [ファイル] という名前のダウンロードしたMDELiveAnalyzer.ps1を選択し、[確認] を **クリックします。**
 
-   ![ファイルの選択ボタン 2 のイメージ](images/analyzer-file.png)
+   ![ファイルの選択ボタン 2 のイメージ。](images/analyzer-file.png)
 
 6. LiveResponse セッション中は、次のコマンドを使用してアナライザーを実行し、結果ファイルを収集します。
 
@@ -64,7 +64,7 @@ ms.locfileid: "58250571"
     GetFile "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\MDEClientAnalyzerResult.zip"
     ```
 
-    [![コマンドのイメージ](images/analyzer-commands.png)](images/analyzer-commands.png#lightbox)
+    [![コマンドのイメージ。](images/analyzer-commands.png)](images/analyzer-commands.png#lightbox)
 
 > [!NOTE]
 >
@@ -85,9 +85,9 @@ ms.locfileid: "58250571"
 
 ## <a name="see-also"></a>関連項目
 - [クライアント アナライザーの概要](overview-client-analyzer.md)
-- [クライアント アナライザーをダウンロードして実行する](download-client-analyzer.md)
-- [クライアント アナライザーをコンピューターで実行Windows](run-analyzer-windows.md)
-- [macOS または Linux でクライアント アナライザーを実行する](run-analyzer-macos-linux.md)
-- [詳細なトラブルシューティングを行うデータのWindows](data-collection-analyzer.md)
-- [アナライザー HTML レポートについて](analyzer-report.md)
+- [クライアント アナライザーのダウンロードと実行](download-client-analyzer.md)
+- [Windows でのクライアント アナライザーの実行](run-analyzer-windows.md)
+- [macOS または Linux でのクライアント アナライザーの実行](run-analyzer-macos-linux.md)
+- [Windows で高度なトラブルシューティングを行うためのデータ収集](data-collection-analyzer.md)
+- [アナライザー HTML レポートの理解](analyzer-report.md)
 

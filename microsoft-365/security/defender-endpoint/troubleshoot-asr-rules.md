@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 38e62021346f3802070f40176955d02656bf563e0fc4318c3df96bad1cad610f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8395a9c5dd2389fe25761dcbe76a13051baaa1b4
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53828910"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573021"
 ---
 # <a name="report-and-troubleshoot-microsoft-defender-for-atp-asr-rules"></a>ATP ASR ルールの Microsoft Defender のレポートとトラブルシューティング
 
@@ -37,7 +37,7 @@ ms.locfileid: "53828910"
 セキュリティ Microsoft 365では、現在の ASR ルールの構成と、資産内のイベントを完全に確認できます。 これらのレポートを設定するには、デバイスを Microsoft Defender for Endpoint サービスにオンボードする必要があります。
 セキュリティ センターのスクリーンショットを次に示Microsoft 365レポート デバイス攻撃表面の縮小] \>  \> **の下に示します**。 デバイス レベルで、[攻撃表面 **縮小ルール]** ウィンドウ **から [構成] を選択** します。 次の画面が表示され、特定のデバイスを選択し、個々の ASR ルール構成を確認できます。
 
-:::image type="content" source="images/asrrulesnew.png" lightbox="images/asrrulesnew.png" alt-text="ASR ルール画面":::
+:::image type="content" source="images/asrrulesnew.png" lightbox="images/asrrulesnew.png" alt-text="ASR ルール画面。":::
 
 ## <a name="microsoft-defender-for-endpoint---advanced-hunting"></a>エンドポイント向け Microsoft Defender - 高度な検索
 
@@ -49,9 +49,9 @@ Microsoft Defender for Endpoint の最も強力な機能の 1 つは、高度な
 
 ASR ルール イベントは、デバイス の詳細な検索セクションの DeviceEvents テーブルからクエリを実行Microsoft 365 Defender。 たとえば、次のような単純なクエリは、過去 30 日間、ASR ルールをデータ ソースとして持つすべてのイベントをレポートし、アクションタイプカウントで集計します。この場合は ASR ルールの実際のコード名になります。
 
-:::image type="content" source="images/adv-hunt-querynew.png" alt-text="高度な検索クエリ":::
+:::image type="content" source="images/adv-hunt-querynew.png" alt-text="高度な検索クエリ。":::
 
-:::image type="content" source="images/adv-hunt-sc-2new.png" lightbox="images/adv-hunt-sc-2new.png" alt-text="高度なハンティング画面":::
+:::image type="content" source="images/adv-hunt-sc-2new.png" lightbox="images/adv-hunt-sc-2new.png" alt-text="高度なハンティング画面。":::
 
 高度な検索を使用すると、個別のコンピューターで何かを特定するか、環境全体から分析情報を抽出するかに関係なく、何が起こっているかを確認するために、好みでクエリを形成できます。
 
@@ -61,7 +61,7 @@ ASR ルール イベントは、デバイス の詳細な検索セクション�
 
 次の図は、特定のエンドポイントでこれらのイベントのタイムライン ビューのスクリーンショットです。  このビューから、右側のウィンドウに沿ったイベント グループに基づいてイベント リストをフィルター処理できます。 アラートを表示したり、履歴タイムラインをスクロールしたりしながら、フラグ付きイベントと詳細イベントを有効または無効にすることもできます。
 
-:::image type="content" source="images/mic-sec-def-timelinenew.png" lightbox="images/mic-sec-def-timelinenew.png" alt-text="Microsoft 365 Defenderタイムライン":::
+:::image type="content" source="images/mic-sec-def-timelinenew.png" lightbox="images/mic-sec-def-timelinenew.png" alt-text="Microsoft 365 Defenderタイムライン。":::
 
 ## <a name="how-to-troubleshoot-asr-rules"></a>ASR ルールのトラブルシューティング方法
 
@@ -73,9 +73,9 @@ ASR ルールの影響と運用をトラブルシューティングするため�
 
 ASR ルールが既に有効になっているかどうかを判断する最も簡単な方法の 1 つは、PowerShell コマンドレット Get-MpPreference です。
 
-次に例を示します。
+次に例を示します:
 
-:::image type="content" source="images/getmpreferencescriptnew.png" lightbox="images/getmpreferencescriptnew.png" alt-text="mppreference スクリプトを取得する":::
+:::image type="content" source="images/getmpreferencescriptnew.png" lightbox="images/getmpreferencescriptnew.png" alt-text="mppreference スクリプトを取得します。":::
 
 複数の ASR ルールがアクティブで、構成されたアクションが異なります。
 
@@ -87,7 +87,7 @@ ASR ルールに関する上記の情報を展開するには、ASR ルールの
 Get-MPPreference | Select-Object -ExpandProperty**AttackSurfaceReductionRules_Ids
 ```
 
-:::image type="content" source="images/getmpref-examplenew.png" alt-text="mpreference の例を取得する":::
+:::image type="content" source="images/getmpref-examplenew.png" alt-text="mpreference の例を取得します。":::
 
 上記は、0 (Not Configured) とは異なる設定を持つ ASR ルールのすべての ID を示しています。
 
@@ -97,7 +97,7 @@ Get-MPPreference | Select-Object -ExpandProperty**AttackSurfaceReductionRules_Id
 Get-MPPreference | Select-Object -ExpandProperty**AttackSurfaceReductionRules_Actions
 ```
 
-:::image type="content" source="images/getmpref-example2new.png" alt-text="mppreference の例 2 を取得する":::
+:::image type="content" source="images/getmpref-example2new.png" alt-text="mppreference の例 2 を取得します。":::
 
 ### <a name="querying-blocking-and-auditing-events"></a>ブロックイベントと監査イベントのクエリ
 
@@ -105,7 +105,7 @@ ASR ルール イベントは、ログ内でWindows Defenderできます。
 
 アクセスするには、イベント ビューアー Windows開き、[アプリケーションとサービスログ] Microsoft Windows Windows Defender  >    >    >    >  **を参照します**。
 
-:::image type="content" source="images/eventviewerscrnew.png" lightbox="images/eventviewerscrnew.png" alt-text="イベント ビューアー scr":::
+:::image type="content" source="images/eventviewerscrnew.png" lightbox="images/eventviewerscrnew.png" alt-text="イベント ビューアー scr。":::
 
 ## <a name="microsoft-defender-malware-protection-logs"></a>Microsoft Defender マルウェア保護ログ
 
@@ -115,7 +115,7 @@ ASR ルール イベントは、ログ内でWindows Defenderできます。
 
 サポート情報を生成するには *、-getfilesMpCmdRun.exeを入力します*。 しばらくすると、いくつかのログがアーカイブ (MpSupportFiles.cab) にパッケージ化され *、C:\ProgramData\Microsoft\Windows Defender\Support で使用できます*。
 
-:::image type="content" source="images/malware-prot-logsnew.png" alt-text="マルウェア保護ログ":::
+:::image type="content" source="images/malware-prot-logsnew.png" alt-text="マルウェア保護ログ。":::
 
 そのアーカイブを抽出すると、トラブルシューティングの目的で多くのファイルを利用できます。
 

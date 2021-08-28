@@ -17,12 +17,12 @@ ms.custom: ''
 description: 管理者は、Exchange Online Protection (EOP) の高度な配信ポリシーを使用して、サポートされている特定のシナリオ (サード パーティのフィッシング シミュレーションとセキュリティ操作 (SecOps) メールボックスに配信されるメッセージ) でフィルター処理すべきではないメッセージを識別する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 14e952aacf20350fb264fecd72f626b0f3a30729
-ms.sourcegitcommit: b05b107774e8bca36c9ee19fdc4719d17e302f11
+ms.openlocfilehash: 028735c7d340d63d2f952eabf683e512d261a913
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58483357"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58576082"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>サードパーティのフィッシング シミュレーションをユーザーに配信し、フィルター処理されていないメッセージを SecOps メールボックスに配信する構成
 
@@ -78,7 +78,7 @@ ms.locfileid: "58483357"
 1. [ルール] Microsoft 365 Defenderで、[ルール]セクションの&ルールの脅威&詳細な配信を電子メールで送信する] \>  \>  \> **に移動** します。
 
 2. [高度 **な配信] ページ** で **、[SecOps** メールボックス] タブが選択されていることを確認し、次のいずれかの手順を実行します。
-   - [編集 ![ ] アイコン [ ](../../media/m365-cc-sc-edit-icon.png) **編集] をクリックします**。
+   - [編集 ![ ] アイコンをクリックします。](../../media/m365-cc-sc-edit-icon.png) **編集**。
    - フィッシング シミュレーションが構成されていない場合は、[追加] を **クリックします**。
 
 3. 開く **[SecOps** メールボックスの編集] フライアウトで、次のいずれかの手順を実行して、SecOps メールボックスとして指定する既存の Exchange Online メールボックスを入力します。
@@ -87,18 +87,18 @@ ms.locfileid: "58483357"
 
      必要な回数だけこの手順を繰り返します。 配布グループは許可されません。
 
-     既存の値を削除するには、削除をクリックします ![[削除] アイコン](../../media/m365-cc-sc-remove-selection-icon.png) 値の隣。
+     既存の値を削除するには、削除をクリックします ![[削除] アイコン。](../../media/m365-cc-sc-remove-selection-icon.png) 値の隣。
 
 4. 完了したら、**[保存]** をクリックします。
 
-構成した SecOps メールボックス エントリは **、[SecOps** メールボックス] タブに表示されます。変更するには、タブの ![ [編集] ](../../media/m365-cc-sc-edit-icon.png) **アイコン [編集]** をクリックします。
+構成した SecOps メールボックス エントリは **、[SecOps** メールボックス] タブに表示されます。変更するには、[編集] アイコン ![ をクリックします。](../../media/m365-cc-sc-edit-icon.png) **タブ** の [編集] をクリックします。
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>高度な配信Microsoft 365 Defenderでサード パーティのフィッシング シミュレーションを構成するには、Microsoft 365 Defender ポータルを使用します。
 
 1. [ルール] Microsoft 365 Defenderで、[ルール]セクションの&ルールの脅威&詳細な配信を電子メールで送信する] \>  \>  \> **に移動** します。
 
 2. [高度 **な配信] ページ** で、[フィッシング シミュレーション] **タブを選択** し、次のいずれかの手順を実行します。
-   - [編集 ![ ] アイコン [ ](../../media/m365-cc-sc-edit-icon.png) **編集] をクリックします**。
+   - [編集 ![ ] アイコンをクリックします。](../../media/m365-cc-sc-edit-icon.png) **編集**。
    - フィッシング シミュレーションが構成されていない場合は、[追加] を **クリックします**。
 
 3. 開く **[サード パーティ製フィッシング シミュレーションの編集] フライ** アウトで、次の設定を構成します。
@@ -114,7 +114,7 @@ ms.locfileid: "58483357"
      - CIDR IP: たとえば、192.168.0.1/25。
    - **許可** するシミュレーション URL : この設定を展開し、必要に応じて、フィッシング シミュレーション キャンペーンの一部である特定の URL を入力します。この URL は、ボックス内をクリックして値を入力し、Enter キーを押したり、ボックスの下に表示される値を選択したりしてブロックまたは削除する必要があります。 最大 10 のエントリを追加できます。 URL 構文の形式については、「テナント許可/ブロック一覧」の URL 構文 [を参照してください](tenant-allow-block-list.md#url-syntax-for-the-tenant-allowblock-list)。
 
-   既存の値を削除するには、削除をクリックします ![[削除] アイコン](../../media/m365-cc-sc-remove-selection-icon.png) 値の隣。
+   既存の値を削除するには、削除をクリックします ![[削除] アイコン。](../../media/m365-cc-sc-remove-selection-icon.png) 値の隣。
 
    > [!NOTE]
    > Advanced Delivery でサードパーティのフィッシング シミュレーションを構成するには、少なくとも 1 つの送信ドメインと少なくとも 1 つの送信 **IP** を指定する必要があります。 必要に応じて、 **シミュレーション URL** を含め、シミュレーション メッセージに存在する URL がブロックされないのを確認できます。 各フィールドに最大 10 のエントリを指定できます。 少なくとも 1 つの送信ドメインと **1** つの送信 **IP** に一致する必要がありますが、値間の関連付けは維持されません。
@@ -123,7 +123,7 @@ ms.locfileid: "58483357"
    - **初回:**[追加] を **クリックし**、[閉じる] を **クリックします**。
    - **既存の編集 :**[保存] を **クリックし** 、[閉じる] を **クリックします**。
 
-構成したサード パーティのフィッシング シミュレーション エントリが [フィッシング シミュレーション] **タブに表示** されます。変更するには、タブの ![ [編集] ](../../media/m365-cc-sc-edit-icon.png) **アイコン [編集]** をクリックします。
+構成したサード パーティのフィッシング シミュレーション エントリが [フィッシング シミュレーション] **タブに表示** されます。変更するには、[編集] アイコン ![ をクリックします。](../../media/m365-cc-sc-edit-icon.png) **タブ** の [編集] をクリックします。
 
 ## <a name="additional-scenarios-that-require-filtering-bypass"></a>フィルター バイパスが必要なその他のシナリオ
 

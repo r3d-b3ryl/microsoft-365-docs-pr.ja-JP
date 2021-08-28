@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: ''
 description: ユーザーの ID に対するロードマップMicrosoft 365。
-ms.openlocfilehash: 520f80152bccfd9a01b812f08e7c75f6770a9bc4
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 27abe04da2fed0eaae09fa0ed42a83286fe74f5d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356710"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573117"
 ---
 # <a name="identity-roadmap-for-microsoft-365"></a>Microsoft 365 の ID ロードマップ
 
@@ -35,7 +35,7 @@ ms.locfileid: "58356710"
 
 エンタープライズ プランの各 Microsoft 365 の ID 機能、Azure Active Directory の役割、オンプレミスとクラウドベースの両方のコンポーネント、および最も一般的な認証構成については[、「Identity Infrastructure ポスター](../downloads/m365e-identity-infra.pdf)」を参照してください。
 
-[![ID インフラストラクチャ ポスター](../downloads/m365e-identity-infra.png)](../downloads/m365e-identity-infra.pdf)
+[![Id インフラストラクチャのポスター。](../downloads/m365e-identity-infra.png)](../downloads/m365e-identity-infra.pdf)
 
 この 2 ページのポスターを確認して、エンタープライズ向け ID の概念と構成をすばやくMicrosoft 365してください。
 
@@ -48,7 +48,7 @@ ID の実装を計画するには、次の方法を実行します。
 - [さまざまな ID モデルを理解する](about-microsoft-365-identity.md)
 - [ハイブリッド ID とディレクトリ同期を計画する](plan-for-directory-synchronization.md)
 
-## <a name="deploy"></a>展開する
+## <a name="deploy"></a>展開
 
 ID 実装を展開するには、次の方法を実行します。
 
@@ -72,7 +72,7 @@ ID の展開をMicrosoft 365するには、以下を参照してください。
 - [ユーザー アカウント](manage-microsoft-365-accounts.md)
 - [ライセンス](assign-licenses-to-user-accounts.md)
 - [パスワード](manage-microsoft-365-passwords.md)
-- [Groups](manage-microsoft-365-groups.md)
+- [グループ](manage-microsoft-365-groups.md)
 - [ガバナンス](manage-microsoft-365-identity-governance.md)
 - [ディレクトリ同期](view-directory-synchronization-status.md)
 

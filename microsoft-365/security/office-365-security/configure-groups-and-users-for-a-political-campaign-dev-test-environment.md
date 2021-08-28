@@ -19,12 +19,12 @@ description: '要約: 選挙運動の開発/テスト環境向けのユーザー
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d96d91d264911343bac32baee5eee7da08064f5546ac787730ad62a80c441cac
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f39a898a6926938790b7adb3d18ec66641224bd9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56809376"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575734"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>選挙運動の開発/テスト環境用にグループとユーザーを構成する
 
@@ -194,11 +194,11 @@ foreach ($element in $userNames){ New-AzureADUser -DisplayName $element -Passwor
 
 この開発/テスト環境で Office 365 と EMS の試用版サブスクリプションを使用するために、これらの値を記録します。
 
-- 試用版サブスクリプションの組織名 ![下線](../../media/Common-Images/TableLine.png)
+- 試用版サブスクリプションの組織名 ![下線を引く。](../../media/Common-Images/TableLine.png)
 
   たとえば、試用版サブスクリプションのドメイン名が contoso.onmicrosoft.com である場合、組織名は「contoso」です。
 
-- グローバル管理者名: ![下線](../../media/Common-Images/TableLine.png).onmicrosoft.com
+- グローバル管理者名: ![下線を引く。](../../media/Common-Images/TableLine.png).onmicrosoft.com
 
   このアカウントのパスワードや、その他のユーザー アカウントの共通のパスワードを安全な場所に記録します。
 

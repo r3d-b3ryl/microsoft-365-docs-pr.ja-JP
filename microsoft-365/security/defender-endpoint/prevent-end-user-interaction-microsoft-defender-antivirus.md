@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 66f9f571411c61bd8944ceb01a13f237ecd1d483
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 73a802f158b8804d7cf94708ecf3a6ac9355baae
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255784"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575782"
 ---
 # <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>ユーザーがユーザー インターフェイスを表示または操作Microsoft Defender ウイルス対策防止する
 
@@ -40,11 +40,11 @@ ms.locfileid: "58255784"
 
 設定を [有効] に **設定します**。
 
-:::image type="content" source="../../media/wdav-headless-mode-off-1703.png" alt-text="シールド アイコンWindows セキュリティウイルスと脅威の保護のセクションを含むファイルのスクリーンショット":::
+:::image type="content" source="../../media/wdav-headless-mode-off-1703.png" alt-text="シールド アイコンWindows セキュリティウイルスと脅威の保護のセクションを含めずに、ユーザーのスクリーンショットを参照してください。":::
 
 設定が [無効] または **[** 構成されていない] に設定されている場合:
 
-:::image type="content" source="../../media/wdav-headless-mode-1703.png" alt-text="シールド アイコンとWindows セキュリティ保護セクションを含むアプリのスクリーンショット":::
+:::image type="content" source="../../media/wdav-headless-mode-1703.png" alt-text="シールド アイコンとWindows セキュリティ保護セクションを含むアプリのスクリーンショット。":::
 
 >[!NOTE]
 >インターフェイスを非表示にすることで、Microsoft Defender ウイルス対策通知がエンドポイントに表示されるのを防ぐことも可能です。 Microsoft Defender for Endpoint 通知は引き続き表示されます。 エンドポイントに表示 [される通知を個別に構成することもできます](configure-notifications-microsoft-defender-antivirus.md)

@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 85fe3921aab67e9edb1c79c3c1e89caf945e3279d73e1287f7b7b7733ba40ace
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 028c099dc046d6402d187e5bde0a1536e44657a4
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53862572"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572985"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>自動調査の詳細と結果
 
@@ -37,7 +37,7 @@ ms.locfileid: "53862572"
 
 このMicrosoft 365 Defender、自動調査が実行されると[](m365d-autoir.md)、その調査に関する詳細は、自動調査プロセスの間と後の両方で利用できます。 [必要なアクセス許可](m365d-action-center.md#required-permissions-for-action-center-tasks)を持っている場合は、調査の詳細ビューでこれらの詳細を表示できます。 このビューでは、最新の状態と保留中のアクションを承認できます。 
 
-:::image type="content" source="../../media/mtp-air-investdetails.png" alt-text="調査の詳細":::
+:::image type="content" source="../../media/mtp-air-investdetails.png" alt-text="調査の詳細。":::
 
 ## <a name="new-unified-investigation-page"></a>(NEW!)統合された調査ページ
 
@@ -89,13 +89,13 @@ ms.locfileid: "53862572"
 
 次に例を示します。
 
-:::image type="content" source="../../media/mtp-incidentdetails-tabs.png" alt-text="インシデントの詳細":::
+:::image type="content" source="../../media/mtp-incidentdetails-tabs.png" alt-text="インシデントの詳細。":::
 
 ## <a name="investigation-details"></a>調査の詳細
 
 調査の詳細ビューを使用して、調査に関連する過去、現在、保留中のアクティビティを表示します。 次に例を示します。
 
-:::image type="content" source="../../media/mtp-air-investdetails.png" alt-text="調査の詳細":::
+:::image type="content" source="../../media/mtp-air-investdetails.png" alt-text="調査の詳細。":::
 
 調査の詳細ビューでは、次の表で説明する [**Investigation graph (調査のグラフ)**]、[**Alerts (警告)**]、[**Device (デバイス)**]、[**Identities (ID)**]、[**Key findings (主な検出事項)**]、[**Entities (エンティティ)**]、[**Log (ログ)**]、[**Pending actions (保留中のアクション)**] の各タブに情報が表示されます。
 
@@ -106,7 +106,7 @@ ms.locfileid: "53862572"
 |:--------|:--------|
 | **Investigation graph (調査グラフ)** | 調査を視覚的に表します。 エンティティと検出された脅威のほか、警告、承認を待っているアクションがあるかどうかが示されます。<br/>グラフ上のアイテムを選択すると、詳細を表示できます。 たとえば、[証拠]**アイコンを** 選択すると、[証拠]タブに移動し、検出されたエンティティとその評決を確認できます。 |
 | **Alerts** | 調査に関連する警告を一覧表示します。 アラートは、ユーザーのデバイス、アプリ、Office、その他のMicrosoft Cloud App Security機能Microsoft 365 Defender発生します。|
-| **デバイス** | 調査に含まれるデバイスとその修復レベルを一覧表示します。 (修復レベルは、 [デバイス グループのオートメーション レベルに対応します](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups)。) |
+| **Devices** | 調査に含まれるデバイスとその修復レベルを一覧表示します。 (修復レベルは、 [デバイス グループのオートメーション レベルに対応します](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups)。) |
 | **メールボックス** |検出された脅威の影響を受けたメールボックスを一覧表示します。  |
 | **Users**  | 検出された脅威の影響を受けたユーザー アカウントを一覧表示します。 |
 | **証拠** | アラートまたは調査によって発生した証拠の一部を一覧表示します。 評決 (悪意のある、*疑わしい*、*不明* な、または脅威が見 *つからない)* と修復の状態が含まれます。 |

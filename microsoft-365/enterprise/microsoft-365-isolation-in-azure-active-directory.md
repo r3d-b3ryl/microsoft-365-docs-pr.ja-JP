@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: この記事では、分離とアクセス制御が機能して、複数のテナントのデータを複数のテナント間で分離Azure Active Directory。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e48ffaee5927010aa9e2cea2d231a194a33008d1d0c0ca7ed260fe6adc3c834b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d9305bd6c58abd7d3fa5d9b7c6761b64eab279f9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864564"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571015"
 ---
 # <a name="microsoft-365-isolation-and-access-control-in-azure-active-directory"></a>Microsoft 365分離とアクセス制御 (Azure Active Directory
 
@@ -35,13 +35,13 @@ Azure Active Directory (Azure AD) は、論理的なデータ分離を通じて�
 
 事実上、Azure ADは、テナントが所有および管理するコンテナーに対するポリシーとアクセス許可を持つ、独自の保護されたコンテナー内で各テナントをホストします。
  
-![Azure コンテナー](../media/office-365-isolation-azure-container.png)
+![Azure コンテナー。](../media/office-365-isolation-azure-container.png)
 
 テナント コンテナーの概念は、ポータルから永続的な記憶域まで、すべてのレイヤーでディレクトリ サービスに深く根付きます。 複数の Azure AD テナント メタデータが同じ物理ディスクに格納されている場合でも、ディレクトリ サービスで定義されている内容以外のコンテナー間には関係が存在し、テナント管理者が指示します。 要求するアプリケーションまたはサービスから Azure ADストレージへの直接接続は、最初に承認層を介さずに行う必要があります。
 
 次の例では、Contoso と Fabrikam の両方に個別の専用コンテナーが用意されています。また、これらのコンテナーは、サーバーやストレージなど、同じ基になるインフラストラクチャの一部を共有している場合でも、互いに分離され、承認とアクセス制御の層によってゲートされます。
  
-![Azure 専用コンテナー](../media/office-365-isolation-azure-dedicated-containers.png)
+![Azure 専用コンテナー。](../media/office-365-isolation-azure-dedicated-containers.png)
 
 また、Azure AD 内から実行できるアプリケーション コンポーネントは存在しません。また、あるテナントが別のテナントの整合性を強制的に侵害したり、別のテナントの暗号化キーにアクセスしたり、サーバーから生データを読み取りしたりできません。
 

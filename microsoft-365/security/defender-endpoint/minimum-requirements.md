@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 30b8b78bafab66957927c3802eb3ec739ccd91c5
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 14eeb2051cf4b071139c5849583901d3cc3186c9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257035"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572589"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>エンドポイント用 Microsoft Defender の最小要件
 
@@ -166,7 +166,7 @@ Defender for Endpoint へのアクセスはブラウザーを介して行われ�
 
    サービスが有効になっている場合、結果は次のスクリーンショットのようになります。
 
-   ![diagtrack の sc クエリ コマンドの結果](images/windefatp-sc-qc-diagtrack.png)
+   ![diagtrack の sc クエリ コマンドの結果。](images/windefatp-sc-qc-diagtrack.png)
 
 
 サービスが自動的に開始に設定されている場合は、START_TYPEに設定する **必要AUTO_START。**

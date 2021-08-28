@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 989ec90af003d3b0a488e4ab32afa70e5640dd93cbfab4195d6b048105b80e80
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cfa07a795e99144e168b06b99e9f1feacd7fa9be
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53888139"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572769"
 ---
 # <a name="functional-testing"></a>機能テスト
 
@@ -47,7 +47,7 @@ ms.locfileid: "53888139"
 *既定では、アウトオブボックス (OOB) オプションが必要です。*
 
 
-![[機能テスト] タブを選択する](Media/functional_testing_tab1.png)
+![[機能テスト] タブを選択します。](Media/functional_testing_tab1.png)
 
 タブ 2 - アップロードテスト全体 (バイナリ、依存関係、スクリプトなど) を使用して zip ファイルをアップロードして、パッケージのコンポーネントを管理します。 
 
@@ -57,7 +57,7 @@ ms.locfileid: "53888139"
 
 現在、機能テスト用に 1 ~ 8 つのスクリプトをアップロードできます。 (より多くのスクリプトが必要な場合は、この投稿にコメントしてください!
 
-![アップロードテストを使用して最大 8 つのスクリプトを作成する](Media/functional_testing_tab3.png)
+![アップロードテストを使用して最大 8 つのスクリプトを作成できます。](Media/functional_testing_tab3.png)
 
 (省略可能)インストール後に再起動を構成します。 一部のアプリケーションでは、インストール後に再起動が必要です。 
 
@@ -65,7 +65,7 @@ ms.locfileid: "53888139"
 
 タブ 4 - 更新プログラムWindowsインストールする場合を選択します。Windows更新プログラムのアプリケーションは、任意のスクリプトの前に実行されます。 アプリケーションのインストール後に更新プログラムWindowsインストールして、実際のアプリケーションの使用シナリオを密接に模倣するようにお勧めします。
 
-![特定Windows後に更新プログラムをインストールできます](Media/functional_testing_tab4.png)
+![特定Windows後に更新プログラムをインストールできます。](Media/functional_testing_tab4.png)
 
 タブ 5 - パッケージを確認して作成します。 上記の手順を完了したら、アップロード プロセスを完了 ```Create``` します。
 

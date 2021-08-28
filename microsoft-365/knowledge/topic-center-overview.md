@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: トピック センターの詳細については、Microsoft Viva トピック。
-ms.openlocfilehash: 5373fbf35bd068228aed653535288ada4eb532c52122f01b12a317d3a98713a1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5456ef27b23ff36cd1919274424c179f8ec3d683
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53840205"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572637"
 ---
 # <a name="topic-center-overview-in-microsoft-viva-topics"></a>トピック センターの概要 (Microsoft Viva トピック
 
@@ -36,11 +36,11 @@ ms.locfileid: "53840205"
 1. [組織の設定Microsoft 365 管理センター] を選択 **設定、[** 組織の設定]**を選択します**。
 2. [サービス] **タブで** 、[トピック エクスペリエンス] **を選択します**。
 
-    ![Connectを知る](../media/admin-org-knowledge-options-completed.png)
+    ![Connect人に知識を提供します。](../media/admin-org-knowledge-options-completed.png)
 
 3. [トピック センター **] タブを選択** します。[ **サイト アドレス]** の下にトピック センターへのリンクがあります。
 
-    ![ナレッジ ネットワーク設定](../media/knowledge-network-settings-topic-center.png)
+    ![ナレッジ ネットワーク設定。](../media/knowledge-network-settings-topic-center.png)
 
 ## <a name="home-page"></a>ホーム ページ
 
@@ -54,11 +54,11 @@ ms.locfileid: "53840205"
 
 - 推奨される接続 - [これらのトピックに関して一覧表示しました] の下に **トピックが表示されます。正しいと思いましたか?** これらは、トピックへの接続が AI を介して提案されているトピックです。 たとえば、関連するファイルまたはサイトの作成者である可能性があります。 トピックの関連人物としてリストを表示する必要がある場合は、確認を求めるメッセージが表示されます。
 
-   ![推奨される接続](../media/knowledge-management/my-topics.png)
+   ![推奨される接続。](../media/knowledge-management/my-topics.png)
 
 - 確認済み接続 - トピック ページにピン留めされているトピック、またはトピックへの推奨される接続を確認したトピックです。 推奨される接続を確認すると、トピックが [推奨] セクションから [確認済み] セクションに移動します。
 
-   ![承認済みトピック](../media/knowledge-management/my-topics-confirmed.png)
+   ![確認済みトピック。](../media/knowledge-management/my-topics-confirmed.png)
 
 ユーザーがトピックへの接続を確認すると、ユーザーはトピック ページを編集して接続を管理できます。 たとえば、トピックへの接続に関する詳細を提供できます。
 

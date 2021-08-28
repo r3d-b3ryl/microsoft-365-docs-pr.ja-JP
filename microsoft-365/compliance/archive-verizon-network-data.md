@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、TeleMessage コネクタをセットアップして、Sms および MMS データを Verizon Network からインポートおよびアーカイブMicrosoft 365。 これにより、Microsoft 365 のサード パーティデータ ソースからデータをアーカイブし、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティ データを管理できます。
-ms.openlocfilehash: a484d8919c549bedf43bdf3895da5d0a7795f041f6514ac2720681894bfeabc4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d95b78267dc74fb78eb9db6fcf3df25c4a4ac59a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53820656"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571099"
 ---
 # <a name="set-up-a-connector-to-archive-verizon-network-data"></a>Verizon Network データをアーカイブするコネクタをセットアップする
 
@@ -29,7 +29,7 @@ Verizon Network コネクタ データをユーザー メールボックスに�
 
 次の概要では、コネクタを使用して Verizon Network データをアーカイブするプロセスについて説明Microsoft 365。
 
-![Verizon ネットワークのアーカイブ ワークフロー](../media/VerizonNetworkConnectorWorkflow.png)
+![Verizon Network アーカイブ ワークフロー。](../media/VerizonNetworkConnectorWorkflow.png)
 
 1. 組織は、TeleMessage と Verizon を使用して Verizon ネットワーク コネクタをセットアップします。 詳細については [、「Verizon Network Archiver」を参照してください](https://www.telemessage.com/office365-activation-for-verizon-network-archiver/)。
 

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 下書きコレクションは、コレクションの検索クエリに一致する検索見積もりを返す Advanced eDiscovery ケース内の保管データ ソースと非保管データ ソースの電子情報開示検索です。 検索結果をレビュー セットにコミットする前に、検索統計を確認し、アイテムのサンプリングをプレビューし、コレクションを修正して再実行できます。
-ms.openlocfilehash: 42497a8f5f8d5d8e5ecf58ff8f486bffa578e6f0ca9375ab1924d2f2100b5729
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0354f2a04dfff82f995fe74663633f42ed01e677
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53820438"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572721"
 ---
 # <a name="create-a-draft-collection-in-advanced-ediscovery"></a>下書きコレクションを作成Advanced eDiscovery
 
@@ -29,7 +29,7 @@ ms.locfileid: "53820438"
 
 ## <a name="before-you-create-a-draft-collection"></a>下書きコレクションを作成する前に
 
-- 下書きコレクションを作成する前に、保管担当者と非保管データ ソースをケースに追加します。 これは、下書きコレクションの作成時にデータ ソースを選択するために必要です。 詳細については、以下を参照してください。
+- 下書きコレクションを作成する前に、保管担当者と非保管データ ソースをケースに追加します。 これは、下書きコレクションの作成時にデータ ソースを選択するために必要です。 詳しくは、次のトピックを参照してください。
 
   - [ケースにカストディアンを追加する](add-custodians-to-case.md)
 
@@ -84,7 +84,7 @@ ms.locfileid: "53820438"
 
 下書きの収集プロセス中に、Advanced eDiscoveryで指定した検索条件とデータ ソースを使用して検索見積もりを実行します。 Advanced eDiscoveryプレビューできるアイテムのサンプリングも準備します。 コレクションが完了すると、[コレクション] ページの次の列と対応 **する** 値が更新されます。
 
-![下書きコレクションの状態](../media/DraftCollectionStatus.png)
+![下書きコレクションの状態。](../media/DraftCollectionStatus.png)
 
 - **Status**: コレクションの状態と種類を示します。 値 Estimated は **、** 下書きコレクションが完了したかどうかを示します。 この同じ値は、コレクションが下書きコレクションであり、レビュー セットに追加されていないことを示します。 [状態]**列の [コミット****済み]** の値は、コレクションがレビュー セットに追加されたかどうかを示します。
 
@@ -96,7 +96,7 @@ ms.locfileid: "53820438"
 
 下書きコレクションが正常に完了したら、さまざまなタスクを実行できます。 これらのタスクのほとんどを実行するには、[コレクション]タブに移動し、下書きコレクションの名前をクリックして、フライアウト ページを表示します。
 
-![下書きコレクションのフライアウト ページ](../media/DraftCollectionFlyoutPage.png)
+![下書きコレクションのフライアウト ページ。](../media/DraftCollectionFlyoutPage.png)
 
 コレクションのフライアウト ページから実行できる操作の一覧を次に示します。
 
@@ -114,7 +114,7 @@ ms.locfileid: "53820438"
 
 下書きコレクションのフライアウト ページの [ **アクション** ] メニューのオプションを使用して、さまざまな管理タスクを実行できます。
 
-![下書きコレクションの [アクション] メニューのオプション](../media/DraftCollectionActionsMenu.png)
+![下書きコレクションの [アクション] メニューのオプション。](../media/DraftCollectionActionsMenu.png)
 
 管理オプションの説明を次に示します。
 

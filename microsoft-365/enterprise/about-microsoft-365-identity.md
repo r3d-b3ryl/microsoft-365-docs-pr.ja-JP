@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: クラウド専用またはハイブリッド ID モデルをADを使用して、Microsoft 365ユーザー ID サービスを管理する方法について説明します。
-ms.openlocfilehash: 65cfd736ca12c91094d841277c00c42a916c6cda
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 0e83d94c6c82df3f47989433cf20ebf402b265df
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354154"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572709"
 ---
 # <a name="microsoft-365-identity-models-and-azure-active-directory"></a>Microsoft 365 ID モデルと id モデルAzure Active Directory
 
@@ -64,7 +64,7 @@ ID の 2 種類と、最適なフィット感と利点を次に示します。
 
 クラウド専用 ID の基本的なコンポーネントを次に示します。
 
-![クラウド専用 ID の基本的なコンポーネント](../media/about-microsoft-365-identity/cloud-only-identity.png)
+![クラウド専用 ID の基本的なコンポーネント。](../media/about-microsoft-365-identity/cloud-only-identity.png)
 
 オンプレミスとリモート (オンライン) の両方のユーザーは、Azure ADアカウントとパスワードを使用して、クラウド Microsoft 365アクセスします。 Azure AD は、保存されたユーザー アカウントとパスワードに基づいて、ユーザー資格情報を認証します。
 
@@ -81,7 +81,7 @@ Azure AD Connectは、継続的なアカウント同期を提供します。 オ
 
 ハイブリッド ID のコンポーネントを次に示します。
 
-![ハイブリッド ID のコンポーネント](../media/about-microsoft-365-identity/hybrid-identity.png)
+![ハイブリッド ID のコンポーネント。](../media/about-microsoft-365-identity/hybrid-identity.png)
 
 Azure ADテナントには、DS アカウントのADがあります。 この構成では、クラウド サービスにアクセスするオンプレミスユーザーとリモート ユーザーの両方Microsoft 365 Azure サービスに対して認証AD。
 

@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 0aedcdc310b10218afbfd6253dc1c02117f3428eafc5ffd668f35489d9bc2e14
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 90e1c310952a1ef3fd19410f9d74b10591f0a18f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53898121"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575518"
 ---
 # <a name="run-and-review-the-results-of-a-microsoft-defender-offline-scan"></a>Microsoft Defender オフライン スキャンの結果を実行してレビューする
 
@@ -69,7 +69,7 @@ Microsoft Defender オフラインエンドポイントで利用可能な最新�
 
 このプロンプトは、次のような通知を介して実行できます。
 
-:::image type="content" source="../../media/notification.png" alt-text="実行する通知Microsoft Defender オフライン":::
+:::image type="content" source="../../media/notification.png" alt-text="実行する通知Microsoft Defender オフライン。":::
 
 ユーザーには、クライアント内で通知Windows Defenderされます。
 
@@ -77,7 +77,7 @@ Configuration Manager で、エンドポイントの状態を識別するには�
 
 Microsoft Defender オフラインは[マルウェアの修復状態 **] で [** オフライン スキャンが必要]**と表示されます**。
 
-:::image type="content" source="../../media/sccm-wdo.png" alt-text="Microsoft Defender オフラインスキャンが必要です":::
+:::image type="content" source="../../media/sccm-wdo.png" alt-text="Microsoft Defender オフラインが必要です。":::
 
 ## <a name="configure-notifications"></a>通知の構成
 

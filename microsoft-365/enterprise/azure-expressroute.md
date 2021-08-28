@@ -22,16 +22,16 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Azure ExpressRoute を使用してネットワークOffice 365展開する場合は、ネットワーク実装プロジェクトを計画する方法について説明します。
-ms.openlocfilehash: 742beb28db325b61c837d205b9463be3fcc551087628d39e3c1ce3839a1fd3d5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 599b1b6a40e8b74f7ca4e3ad90723f201b74592d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53830403"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573165"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Office 365 向け Azure ExpressRoute
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 azure ExpressRoute を Office 365 で使用する方法と、Azure ExpressRoute を Office 365 で使用するために展開する場合に必要となるネットワーク実装プロジェクトを計画する方法について説明します。 Azure で実行されるインフラストラクチャサービスとプラットフォーム サービスは、多くの場合、ネットワーク アーキテクチャとパフォーマンスに関する考慮事項に対処することでメリットがあります。 このような場合は、ExpressRoute for Azure をお勧めします。 ソフトウェア as a Service offerings Office 365 Dynamics 365 は、インターネットを介して安全かつ確実にアクセスするために構築されています。 インターネットのパフォーマンスとセキュリティについて、また Azure ExpressRoute のセキュリティに関する記事Office 365「ネットワーク接続の評価」Office 365[参照してください](assessing-network-connectivity.md)。
 
@@ -49,11 +49,11 @@ azure ExpressRoute を Office 365 で使用する方法と、Azure ExpressRoute 
 
 Office 365、Windows Update、TechNet などのすべての Microsoft アプリケーションにアクセスするために、インターネットを通して Microsoft のデータセンターに接続する一般的な Office 365 顧客を示す、次の高レベルネットワーク図を検討してください。 顧客は、オンプレミス ネットワークから接続しているか、独立したインターネット接続から接続しているかに関係なく、同様のネットワーク パスを使用します。
 
-![Office 365接続](../media/9d8bc622-4a38-4a3b-a0f3-68657712d460.png)
+![Office 365接続。](../media/9d8bc622-4a38-4a3b-a0f3-68657712d460.png)
 
 次に、インターネットと ExpressRoute の両方を使用してユーザーに接続Office 365顧客を示す更新された図をOffice 365。 パブリック DNS やネットワーク ノードなどの一部の接続Content Delivery Networkパブリック インターネット接続が必要な場合があります。 また、ExpressRoute 接続ビル内に位置していないお客様のユーザーがインターネットを通じて接続している場合にも注意してください。
 
-![Office 365 ExpressRoute との接続](../media/251788c4-0937-4584-9b2c-df08e11611fc.png)
+![Office 365 ExpressRoute との接続を確立します。](../media/251788c4-0937-4584-9b2c-df08e11611fc.png)
 
 さらに詳しい情報が必要ですか? Azure [ExpressRoute を使用して](https://support.office.com/article/e1da26c6-2d39-4379-af6f-4da213218408)ネットワーク トラフィックを管理する方法Office 365、Azure ExpressRoute for Office 365 を[構成する方法について説明します](/azure/expressroute/expressroute-faqs)。 また、チャネル 9 で 10 部の[Azure ExpressRoute](https://channel9.msdn.com/series/aer) for Office 365トレーニング シリーズを記録し、概念の詳細な説明を行いました。
 
@@ -123,7 +123,7 @@ ExpressRoute for Office 365 に[サインアップする準備ができました
 
 [Office 365 のパフォーマンスに関するトラブルシューティングの計画](performance-troubleshooting-plan.md)
 
-[Office 365 URL および IP アドレス範囲](urls-and-ip-address-ranges.md)
+[Office 365 の URL と IP アドレスの範囲](urls-and-ip-address-ranges.md)
 
 [Office 365 のネットワークとパフォーマンスのチューニング](network-planning-and-performance.md)
 

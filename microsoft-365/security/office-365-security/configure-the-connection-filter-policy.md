@@ -19,12 +19,12 @@ ms.custom:
 description: 管理者は、電子メール サーバーからの電子メールを許可またはブロックExchange Online Protection (EOP) で接続フィルターを構成する方法について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8aa760990eff4bff8e8c4dd26efa74042f4a9208
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 6edcbbe885f8271b073afdff248106ce0d209960
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258496"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572445"
 ---
 # <a name="configure-connection-filtering"></a>接続フィルターを構成する
 
@@ -64,7 +64,7 @@ Exchange Online 内のメールボックスまたは Exchange Online メール�
   **注**:
 
   - Microsoft 365 管理センターで、対応する Azure Active Directory の役割にユーザーを追加すると、ユーザーには、必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
-  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
+  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
 
 - 許可またはブロックする電子メール サーバー (送信者) の送信元 IP アドレスを検索するには、メッセージ ヘッダーの接続 IP (**CIP**) ヘッダー フィールドを確認します。 さまざまな電子メール クライアントでメッセージ ヘッダーを表示するには、「インターネット メッセージ ヘッダーを表示する」を参照[Outlook。](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c)
 
@@ -74,7 +74,7 @@ Exchange Online 内のメールボックスまたは Exchange Online メール�
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-the-default-connection-filter-policy"></a>既定の接続Microsoft 365 Defenderポリシーを変更するには、このポータルを使用します。
 
-1. [ポリシー] Microsoft 365 Defenderで、[ポリシー]セクション&ルール&スパム対策ポリシーにメールを送信 \>  \>  \> する」**に移動** します。
+1. Microsoft 365 Defender ポータルで、**[ポリシー]** セクションの **[メールと共同作業]** \>**[ポリシーとルール]** \> **[脅威ポリシー]** \> **[スパム対策]** に移動します。
 
 2. [スパム **対策ポリシー]** ページで、ポリシーの名前をクリックして、一覧から [接続フィルター ポリシー **(既定)]** を選択します。
 
@@ -91,9 +91,9 @@ Exchange Online 内のメールボックスまたは Exchange Online メール�
        - IP 範囲: たとえば、192.168.0.1-192.168.0.254 です。
        - CIDR IP: たとえば、192.168.0.1/25。 有効なサブネット マスク値は 、/24 ~ /32 です。 /1 ~ /23 のスパム フィルター処理をスキップするには、この記事の後半の「利用可能な範囲外の [CIDR IP](#skip-spam-filtering-for-a-cidr-ip-outside-of-the-available-range) のスパム フィルターをスキップする」セクションを参照してください。
 
-       必要な回数だけこの手順を繰り返します。 既存の値を削除するには、削除をクリックします ![[削除] アイコン](../../media/m365-cc-sc-remove-selection-icon.png) 値の隣。
+       必要な回数だけこの手順を繰り返します。 既存の値を削除するには、削除をクリックします ![[削除] アイコン。](../../media/m365-cc-sc-remove-selection-icon.png) 値の隣。
 
-     IP アドレスまたはアドレス範囲を追加するには、ボックスをクリックして、itclick Add **Icon をクリックします** ![ ](../../media/ITPro-EAC-AddIcon.png) 。 エントリを削除するには、[許可された IP アドレス] でエントリを選択 **し、[** 削除] **をクリック** ![ します ](../../media/scc-remove-icon.png) 。 完了したら、**[保存]** をクリックします。
+     IP アドレスまたはアドレス範囲を追加するには、ボックス内をクリックして「追加アイコンの追加」と ![ 入力します ](../../media/ITPro-EAC-AddIcon.png) 。 エントリを削除するには、[許可された IP アドレス] でエントリを選択 **し、[** 削除] **をクリック** ![ します ](../../media/scc-remove-icon.png) 。 完了したら、**[保存]** をクリックします。
 
    - **次の IP アドレスまたはアドレス範囲からの** メッセージを常にブロックする: これは IP ブロック リストです。 [次の IP アドレスまたはアドレス範囲からのメッセージを常に許可する] 設定で説明したように、ボックスに単一の IP、IP 範囲、または **CIDR IP を入力** します。
 
@@ -105,7 +105,7 @@ Exchange Online 内のメールボックスまたは Exchange Online メール�
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-the-default-connection-filter-policy"></a>既定の接続Microsoft 365 Defenderポリシーを表示するには、次のポータルを使用します。
 
-1. [ポリシー] Microsoft 365 Defenderで、[ポリシー]セクション&ルール&スパム対策ポリシーにメールを送信 \>  \>  \> する」**に移動** します。
+1. Microsoft 365 Defender ポータルで、**[ポリシー]** セクションの **[メールと共同作業]** \>**[ポリシーとルール]** \> **[脅威ポリシー]** \> **[スパム対策]** に移動します。
 
 2. [スパム **対策ポリシー] ページで** 、ポリシーの一覧に次のプロパティが表示されます。
 
@@ -207,4 +207,4 @@ IP 許可一覧内の電子メール サーバーからのメッセージは、�
 
 ****
 
-![LinkedIn の短いアイコン ラーニング ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **新しいファイルをMicrosoft 365?** LinkedIn Microsoft 365によって提供される、管理者および **IT** プロ向け無料のビデオ コースラーニング。
+LinkedIn ラーニングのショート アイコンです。Office 365 を初めてお使いの場合は         、LinkedIn ラーニングによって提供された Office 365 管理者および IT プロフェッショナル向けの無料のビデオコースをご覧ください。 **新しいMicrosoft 365?** LinkedIn Microsoft 365によって提供される、管理者および **IT** プロ向け無料のビデオ コースラーニング。

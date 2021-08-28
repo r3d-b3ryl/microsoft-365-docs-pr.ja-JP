@@ -18,12 +18,12 @@ localization_priority: Normal
 f1.keywords: NOCSH
 recommendations: false
 description: ゲストとのコラボレーションMicrosoft 365サイトをセットアップするために必要なSharePoint構成手順について説明します。
-ms.openlocfilehash: 054de924b2cf5041694ca12dcf2fb4137242d16fb53060421aedb51aed9668a9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5cb1b34832c8a7b4c5152efd5ab151218de1cd36
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53810170"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572805"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>サイトでゲストと共同で作業する
 
@@ -43,7 +43,7 @@ Microsoft 365 での共有は、[Azure Active Directory における B2B 外部�
 
 B2B 外部コラボレーション設定を確認して、ゲストとの共有がブロックされないか確認します。
 
-![[外部Azure Active Directory] ページ設定スクリーンショット](../media/azure-ad-organizational-relationships-settings.png)
+![[外部Azure Active Directory] ページ設定スクリーンショット。](../media/azure-ad-organizational-relationships-settings.png)
 
 外部コラボレーションを設定するには
 
@@ -62,7 +62,7 @@ B2B 外部コラボレーション設定を確認して、ゲストとの共有�
 
 モダン SharePointサイトでは、Microsoft 365グループを使用してサイト アクセスを制御します。 [Microsoft 365 グループ] のゲスト設定を有効にし、サイト内のゲスト アクセスを機能SharePointする必要があります。
 
-![Microsoft 365 管理センターにおける Microsoft 365 グループのゲスト設定のスクリーンショット](../media/office-365-groups-guest-settings.png)
+![[グループ] Microsoft 365のゲスト設定のスクリーンショットをMicrosoft 365 管理センター。](../media/office-365-groups-guest-settings.png)
 
 Microsoft 365 グループのゲスト設定を行うには
 
@@ -80,7 +80,7 @@ Microsoft 365 グループのゲスト設定を行うには
 
 認証されていないファイルとフォルダーの共有を許可する場合は、[すべてのユーザー] を **選択します**。 組織外のすべてのユーザーが認証する必要がある場合は、[新規ゲストと既存のゲスト] **を選択します**。 組織内の任意のサイトで必要となる最も制限が少ない設定を選択します。
 
-![SharePoint 組織レベルの共有設定のスクリーンショット](../media/sharepoint-organization-external-sharing-controls.png)
+![組織レベルSharePoint設定のスクリーンショット。](../media/sharepoint-organization-external-sharing-controls.png)
 
 
 SharePoint 組織レベルの共有設定を設定するには
@@ -113,7 +113,7 @@ SharePoint 組織レベルの共有設定を設定するには
 
 また、感度ラベル[を使用して、サイトの外部共有設定をSharePointすることもできます](../compliance/sensitivity-labels-teams-groups-sites.md)。
 
-![SharePoint サイトの外部共有設定のスクリーンショット](../media/sharepoint-site-external-sharing-settings.png)
+![サイトの外部SharePoint設定のスクリーンショット。](../media/sharepoint-site-external-sharing-settings.png)
 
 サイトレベルの共有設定を設定するには
 1. SharePoint 管理センターの左側のナビゲーションで、[**サイト**] を展開して [**アクティブなサイト**] をクリックします。

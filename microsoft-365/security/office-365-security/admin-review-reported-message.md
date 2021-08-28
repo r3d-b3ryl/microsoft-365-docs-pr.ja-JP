@@ -13,12 +13,12 @@ ms.collection:
 description: 報告されたメッセージを確認し、ユーザーにフィードバックを与える方法について学習します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a8f278d94235f4fc36e2c05c1cfe8724843f9ff3
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: fb023d68e81c5592078bdd89e4826537790e7d53
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258566"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572469"
 ---
 # <a name="admin-review-for-reported-messages"></a>報告されたメッセージの管理者によるレビュー
 
@@ -58,7 +58,7 @@ Microsoft 365メールボックスExchange Online Microsoft Defender for Office 
 3. [マークを **付け、通知** する] ドロップダウンを選択し、[脅威が見 **つかりません]、[** フィッシング]、または [ **迷惑メール]** を **選択します**。
 
    > [!div class="mx-imgBorder"]
-   > ![ポータルからメッセージを送信する](../../media/admin-review-send-message-from-portal.png)
+   > ![ポータルからメッセージを送信します。](../../media/admin-review-send-message-from-portal.png)
 
 報告されたメッセージは誤検知または偽陰性としてマークされ、メッセージを報告したユーザーに通知するメールがポータル内から自動的に送信されます。
 
@@ -72,10 +72,10 @@ Microsoft 365メールボックスExchange Online Microsoft Defender for Office 
 
     - フィッシング詐欺
     - 迷惑メール
-    - 脅威は検出されませんでした
+    - 脅威なし
     - フッター
 
     > [!div class="mx-imgBorder"]
-    > ![ユーザーに送信するメッセージをカスタマイズする](../../media/admin-review-customize-message.png)
+    > ![ユーザーに送信するメッセージをカスタマイズします。](../../media/admin-review-customize-message.png)
 
 4. 完了したら、**[保存]** をクリックします。 これらの値をクリアするには、[ユーザー申請] **ページ** で [破棄] をクリックします。

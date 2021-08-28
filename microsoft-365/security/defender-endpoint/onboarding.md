@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7863cc2f6ee11f5736fca8077d766a9c1b5ba39819623a3a91bb853bfe09257d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 173135d9cc1ecf45ad5c0485b2bab4bb39b88a5e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863609"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575998"
 ---
 # <a name="onboard-to-the-microsoft-defender-for-endpoint-service"></a>Microsoft Defender for Endpoint サービスへのオンボード
 
@@ -39,7 +39,7 @@ Microsoft Defender for Endpoint の展開のさまざまなフェーズと、ソ
 
 Defender for Endpoint の展開は、次の 3 フェーズプロセスです。
 
-|[![展開フェーズ - 準備](images/phase-diagrams/prepare.png)](prepare-deployment.md) <br> [フェーズ 1: 準備](prepare-deployment.md)|[![展開フェーズ - セットアップ](images/phase-diagrams/setup.png)](production-deployment.md) <br> [フェーズ 2: セットアップ](production-deployment.md)|![展開フェーズ - オンボード](images/phase-diagrams/onboard.png) <br> フェーズ 3: オンボード|
+|[![展開フェーズ - 準備します。](images/phase-diagrams/prepare.png)](prepare-deployment.md) <br> [フェーズ 1: 準備](prepare-deployment.md)|[![展開フェーズ - セットアップ](images/phase-diagrams/setup.png)](production-deployment.md) <br> [フェーズ 2: セットアップ](production-deployment.md)|![展開フェーズ - オンボード](images/phase-diagrams/onboard.png) <br> フェーズ 3: オンボード|
 |---|---|---|
 |||*お前はここにいる!*|
 
@@ -92,7 +92,7 @@ Defender for Endpoint を展開するために必要な手順は次のとおり�
 - 次世代の保護構成
 - 攻撃表面の縮小構成
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [Microsoft Endpoint Configuration Manager を使用したオンボーディング](onboarding-endpoint-configuration-manager.md)
 - [Microsoft エンドポイント マネージャーを使用したオンボーディング](onboarding-endpoint-manager.md)

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なコンテンツを保持し不要なコンテンツを削除するのに役立つ、アイテム保持ポリシーと保持ラベルについて説明します。
-ms.openlocfilehash: 2adc733247ddfe9570b02c197e18b02bcf500921
-ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
+ms.openlocfilehash: 9415b7aa8e258264095de41a7f820751d3794a13
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58387046"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571989"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの詳細
 
@@ -166,7 +166,7 @@ ms.locfileid: "58387046"
   
 たとえば、アクションを含まない "後で確認" という名前の保持ラベルを作成して適用し、後からそのコンテンツを見つけるためにそのラベルを使用できます。
   
-![分類専用のラベル設定](../media/retention-label-retentionoff.png)
+![分類専用のラベル設定。](../media/retention-label-retentionoff.png)
 
 #### <a name="using-a-retention-label-as-a-condition-in-a-dlp-policy"></a>DLP ポリシーで保持ラベルを条件として使用する
 
@@ -182,7 +182,7 @@ SharePoint のドキュメントのデータ損失防止 (DLP) ポリシーの�
 
 2. 保持ラベル ポリシーは保持ラベルを発行する場所を指定します。 同一の場所を複数の保持ラベル ポリシーに含めることができます。
 
-![場所を指定する保持ラベル ポリシーに保持ラベルを追加する方法](../media/retention-labels-and-policies.png)
+![場所を指定する保持ラベル ポリシーに保持ラベルを追加する方法。](../media/retention-labels-and-policies.png)
 
 また、1 つ以上の **自動適用ポリシー** を作成して、それぞれに保持ラベルを 1 つ指定することもできます。 このポリシーを使うと、ポリシーで指定した条件が満たされた場合に、保持ラベルが自動的に適用されます。
 
@@ -238,7 +238,7 @@ Microsoft 365 コンプライアンス センターから、[**データ分類**
 
 コンテンツ検索を作成するとき、**保持 ラベル** の条件を選択し、完全な保持ラベル名を入力するか、ラベル名の一部を入力してワイルドカードを使用します。 詳細については、「[コンテンツ検索のキーワード クエリと検索条件](keyword-queries-and-search-conditions.md)」を参照してください。
   
-![保持ラベルの条件](../media/retention-label-condition.png)
+![保持ラベルの条件。](../media/retention-label-condition.png)
 
 
 ## <a name="compare-capabilities-for-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの機能比較
@@ -248,7 +248,7 @@ Microsoft 365 コンプライアンス センターから、[**データ分類**
 |機能|アイテム保持ポリシー |保持ラベル|
 |:-----|:-----|:-----|:-----|
 |保持してから削除、保持のみ、削除のみを指定できる保持設定 |はい |はい |
-|サポートされるワークロード: <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 グループ <br />- Skype for Business <br />- Teams<br />- Yammer|<br /> はい <br /> はい <br /> はい <br /> はい <br /> はい <br /> はい <br /> はい | <br /> はい (パブリック フォルダーを除く) <br /> はい <br /> はい <br /> 必要 <br /> いいえ <br /> いいえ <br /> いいえ |
+|サポートされるワークロード: <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 グループ <br />- Skype for Business <br />- Teams<br />- Yammer|<br /> はい <br /> はい <br /> はい <br /> はい <br /> はい <br /> はい <br /> はい | <br /> はい (パブリック フォルダーを除く) <br /> はい <br /> はい <br /> はい <br /> いいえ <br /> いいえ <br /> いいえ |
 |保持の自動適用 | はい | はい |
 |条件に基づいて適用される保持 <br /> - 機密情報の種類、KQL クエリとキーワード、トレーニング可能な分類子| いいえ | はい |
 |保持の手動適用 | いいえ | はい |
@@ -295,7 +295,7 @@ Microsoft 365 コンプライアンス センターから、[**データ分類**
 > [!IMPORTANT]
 > 保持ラベルを使用している場合: 原則を適用して同じアイテムの複数の保持設定の結果を判断する前に、[どの保持ラベルが適用されているか](#only-one-retention-label-at-a-time)を確認してください。
 
-![保持の原則の図](../media/principles-of-retention.png)
+![保持の原則の図。](../media/principles-of-retention.png)
 
 各原則を詳しく説明する前に、アイテムの保持期間と、アイテム保持ポリシーまたは保持ラベルで指定された保持期間の違いを理解することが重要です。 その理由として、規定の構成では、アイテムが作成された場合に保持期間を開始し、保持期間の終了がアイテムに固定されるようになっていますが、ファイルでは、ファイルが最後に変更されたときから保持期間を開始する構成もサポートされているためです。 この代替の構成を使用して、ファイルが変更されるたびに保持期間の開始日がリセットされ、アイテムの保持期間の終了日が延長されます。 保持ラベルは、ラベル付けされた時点およびイベントの開始時に保持期間を開始することもサポートしています。
 

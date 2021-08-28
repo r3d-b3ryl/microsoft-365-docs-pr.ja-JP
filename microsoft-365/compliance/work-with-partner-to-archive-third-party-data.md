@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
 description: カスタム コネクタをセットアップして、Salesforce Chatter、Yahoo Messenger、またはデータ ソースなどのデータ ソースからサードパーティのデータをインポートするYammer。
-ms.openlocfilehash: e388ab360ccd82b6391272e01a36b78fca99971d0f43ab20b447e33113eef282
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8a18f84cce226ce4255c47772e2f858eaa6f1bb4
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53807590"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573177"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data"></a>パートナーと共同作業して、サード パーティのデータをアーカイブする
 
@@ -46,7 +46,7 @@ Microsoft パートナーと一緒にサード パーティのデータをイン
 
 次の図と説明では、パートナーを操作するときにサード パーティのデータ インポート プロセスがどのように機能しているかについて説明します。
 
-![サードパーティのデータのインポート プロセスが実行される方法](../media/5d4cf8e9-b4cc-4547-90c8-d12d04a9f0e7.png)
+![サード パーティ製のデータインポート プロセスのしくみ。](../media/5d4cf8e9-b4cc-4547-90c8-d12d04a9f0e7.png)
 
 1. お客様は、選択したパートナーと一緒に、サードパーティのデータ ソースからアイテムを抽出し、そのアイテムを外部にインポートするコネクタを構成Microsoft 365。
 
@@ -542,7 +542,7 @@ Microsoft 365 でサード パーティのデータをアーカイブするた�
 
    次のダイアログ ボックスが表示されます。 キャレットを展開して、コネクタに割り当てられるアクセス許可を確認できます。
 
-   ![アクセス許可要求ダイアログが表示されます](../media/O365-ThirdPartyDataConnector-OptIn1.png)
+   ![[アクセス許可の要求] ダイアログが表示されます。](../media/O365-ThirdPartyDataConnector-OptIn1.png)
 
 2. [**Accept**] をクリックします。
 
@@ -557,7 +557,7 @@ Microsoft 365 でサード パーティのデータをアーカイブするた�
 
 サード パーティのデータ コネクタの同意を取り消す場合は、Azure portal の **Enterprise** アプリケーション ブレードを使用するか、Microsoft 365 PowerShell の [Remove-MsolServicePrincipal](/powershell/module/msonline/remove-msolserviceprincipal)を使用して、Azure Active Directory から (対応するサービス プリンシパルを削除して) アプリケーションを削除できます。 また、PowerShell で[Remove-AzureADServicePrincipal](/powershell/module/azuread/remove-azureadserviceprincipal)コマンドレットAzure Active Directoryできます。
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 - 前述のように、サード パーティのデータ ソースのアイテムは、メール メッセージとして Exchange メールボックスにインポートされます。 パートナー コネクタは、API で必要なスキーマを使用してアイテムMicrosoft 365します。 次の表では、メール メッセージとして Exchange メールボックスにインポートされた後の、サード パーティのデータ ソースのアイテムのメッセージのプロパティについて説明します。 この表では、メッセージのプロパティが必須かどうかも示します。 必須プロパティは設定されている必要があります。 アイテムに必須プロパティが存在しない場合、アイテムは必須プロパティにインポートMicrosoft 365。 インポート プロセスは、アイテムがインポートされていない理由と、不足しているプロパティを説明するエラー メッセージを返します。<br/><br/>
 

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 365 エンドポイント データ損失防止 (EPDLP) の場所を使用するようにデータ損失防止 (DLP) ポリシーを構成する方法を説明します。
-ms.openlocfilehash: c33677d483eadca4526d2c7f977ad91de6c7340c
-ms.sourcegitcommit: d792743bc21eec87693ebca51d7307a506d0bc43
+ms.openlocfilehash: 26f5723d604cb9f57000f13eb799cd0afba593e7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "58450130"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58556302"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>エンドポイント データ損失防止の使用
 
@@ -41,7 +41,7 @@ ms.locfileid: "58450130"
 - 監視対象外のファイル パスを除外する場合
 
   > [!div class="mx-imgBorder"]
-  > ![DLP の設定](../media/endpoint-dlp-1-using-dlp-settings.png)
+  > ![DLP の設定。](../media/endpoint-dlp-1-using-dlp-settings.png)
 
 ### <a name="file-path-exclusions"></a>ファイルパスの除外
 
@@ -191,7 +191,7 @@ DLP ポリシー ヒントの通知で、ユーザーによる業務上の正当
 5. **インシデントリポート** セクションまでスクロールして、**ルールが一致する場合、管理者に通知を送信** を **オン** に設定します。 メールの通知は、管理者と、受信者のリストに追加する他のユーザーに自動的に送信されます。 
 
    > [!div class="mx-imgBorder"]
-   > ![turn-on-incident-reports](../media/endpoint-dlp-2-using-dlp-incident-reports.png)
+   > ![turn-on-incident-reports。](../media/endpoint-dlp-2-using-dlp-incident-reports.png)
    
 6. このシナリオの目的で、**アクティビティーがこのルールに一致する度に通知を送信** を選択します。
 
@@ -216,7 +216,7 @@ DLP ポリシー ヒントの通知で、ユーザーによる業務上の正当
 5. **Windows デバイスでアクティビティを監査または制限** セクションまでスクロールして、アクティビティごと対応するアクションに **上書きをブロック** を設定します。
 
    > [!div class="mx-imgBorder"]
-   > ![上書きアクションのブロックを設定](../media/endpoint-dlp-6-using-dlp-set-blocked-with-override.png)
+   > ![上書きアクションのブロックを設定。](../media/endpoint-dlp-6-using-dlp-set-blocked-with-override.png)
    
 6. **[保存]** を選択します。
 
@@ -229,7 +229,7 @@ DLP ポリシー ヒントの通知で、ユーザーによる業務上の正当
    クライアントデバイスに次のようなポップアップが表示されます。
 
    > [!div class="mx-imgBorder"]
-   > ![エンドポイント DLP クライアントが上書き通知をブロックしました](../media/endpoint-dlp-3-using-dlp-client-blocked-override-notification.png)
+   > ![エンドポイント DLP クライアントが上書き通知をブロックしました。](../media/endpoint-dlp-3-using-dlp-client-blocked-override-notification.png)
 
 10. イベントのアクティビティエクスプローラーを確認します。
 
@@ -263,7 +263,7 @@ DLP ポリシー ヒントの通知で、ユーザーによる業務上の正当
 
 6. **[許可されていないアプリへの自動検疫]** を有効にします。
 
-7. オリジナルの機密ファイルを移動させるローカル マシン上のフォルダーへのパスを入力します。 次に例を示します。
+7. オリジナルの機密ファイルを移動させるローカル マシン上のフォルダーへのパスを入力します。次に例を示します。
    
 ユーザー名 *Isaiah langer* 向けの **'%homedrive%%homepath%\Microsoft DLP\Quarantine'** は、移動済みアイテムを配置します 
 
@@ -318,7 +318,7 @@ DLP ポリシー ヒントの通知で、ユーザーによる業務上の正当
 
 1. 「[秘密度ラベルが「非常に機密性の高い社外秘」であるファイルの OneDrive 同期をブロックするポリシーを構成します](#configure-a-policy-to-block-onedrive-synchronization-of-files-with-the-sensitivity-label-highly-confidential)」の手順 5 で指定したユーザー アカウントを使用して Windows 10 コンピューターにログインします。
 
-2. 内容が OneDrive に同期されないフォルダーを作成します。 次に例を示します。
+2. 内容が OneDrive に同期されないフォルダーを作成します。次に例を示します。
 
     *C:\auto-quarantine ソース フォルダー*
 
@@ -326,7 +326,7 @@ DLP ポリシー ヒントの通知で、ユーザーによる業務上の正当
 
 4. 作成したばかりのファイルを、OneDrive 同期フォルダーにコピーします。 アクションが許可されておらず、ファイルが検疫される予定であることを伝えるユーザー通知トーストが表示されます。 たとえば、ユーザー名「*Isaiah Langer*」、タイトル「*auto-quarantine doc 1.docx*」のドキュメントの場合、次のようなメッセージが表示されます。
 
-![指定されたファイルに OneDrive 同期アクションが許可されておらず、ファイルが検疫されることを示すデータ損失防止ユーザー通知ポップアップ](../media/auto-quarantine-user-notification-toast.png)
+![指定されたファイルに OneDrive 同期アクションが許可されておらず、ファイルが検疫されることを示すデータ損失防止ユーザー通知ポップアップ。](../media/auto-quarantine-user-notification-toast.png)
 
 メッセージは以下のとおりです。
 

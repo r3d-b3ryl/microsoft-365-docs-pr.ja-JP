@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 8c3a913c-2247-4519-894d-b6263eeb9920
 description: '[予約] Microsoft 365 管理センターまたはWindows PowerShellを使用して、予約カレンダーを削除します。'
-ms.openlocfilehash: 5dd04033cc5a7485d606503f5cd2c72c5fabbe83d10102e118b0ef1451ec136e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fc5975e25fa3b1f2d2aab991cc7aac8038181f3f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53882732"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572757"
 ---
 # <a name="delete-a-booking-calendar-in-bookings"></a>Bookings で予約カレンダーを削除する
 
@@ -38,11 +38,11 @@ ms.locfileid: "53882732"
 
 1. 管理センターで、[ **ユーザー** ] を選択します。
 
-   ![[ユーザーの UI のイメージ] Microsoft 365 管理センター](../media/bookings-admin-center-users.png)
+   ![[ユーザーの UI のイメージ] Microsoft 365 管理センター。](../media/bookings-admin-center-users.png)
 
 1. [ **アクティブ ユーザー**] ページで、削除するユーザー名を選択して、[ **ユーザーの削除**] を選択します。
 
-   ![[ユーザーの削除] UI のMicrosoft 365 管理センター](../media/bookings-delete-user.png)
+   ![[ユーザー UI の削除] Microsoft 365 管理センター。](../media/bookings-delete-user.png)
 
 ## <a name="delete-a-booking-calendar-using-exchange-online-powershell"></a>PowerShell を使用して予約カレンダー Exchange Onlineする
 

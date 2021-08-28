@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: 管理者がデータ コネクタをセットアップして使用して、インスタント ブルームバーグ チャット ツールからデータをインポートおよびアーカイブする方法についてMicrosoft 365。
-ms.openlocfilehash: f1851c23f8011e0caa98c52861cd686f12832a112c62353f18076d35671a8cf3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 98c9cd9077a8c2e11f8d51db983cbfbd0620c6f3
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53808770"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572733"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>コネクタをセットアップしてインスタント ブルームバーグ データをアーカイブする
 
@@ -32,7 +32,7 @@ ms.locfileid: "53808770"
 
 次の概要では、コネクタを使用してインスタント ブルームバーグ チャット データをアーカイブするプロセスについて説明Microsoft 365。 
 
-![インスタント ブルームバーグのインポートおよびアーカイブ プロセス](../media/InstantBloombergDataArchiving.png)
+![インスタント ブルームバーグのインポートおよびアーカイブ プロセス。](../media/InstantBloombergDataArchiving.png)
 
 1. 組織はブルームバーグと一緒にブルームバーグ SFTP サイトをセットアップします。 また、ブルームバーグと一緒に、チャット メッセージをブルームバーグ SFTP サイトにコピーするインスタント ブルームバーグを構成します。
 
@@ -92,11 +92,11 @@ ms.locfileid: "53808770"
 
 5. [コンテンツ **ソースの資格情報の追加]** ページで、[Microsoft が提供する PGP および SSH 公開キーを使用 **する] をクリックします**。
 
-   ![公開キーを使用するオプションを選択する](../media/InstantBloombergPublicKeysOption.png)
+   ![公開キーを使用するオプションを選択します。](../media/InstantBloombergPublicKeysOption.png)
 
 6. 手順 1 で **、[SSH** キーのダウンロード] **、[PGP** キーのダウンロード] 、および **[IP** アドレスのダウンロード] リンクをクリックして、各ファイルのコピーをローカル コンピューターに保存します。
 
-   ![公開キーと IP アドレスをダウンロードするリンク](../media/InstantBloombergPublicKeyDownloadLinks.png)
+   ![公開キーと IP アドレスをダウンロードするリンク。](../media/InstantBloombergPublicKeyDownloadLinks.png)
 
    これらのファイルには、手順 2 でブルームバーグ SFTP サイトを構成するために使用される次の項目が含まれています。
 
@@ -171,7 +171,7 @@ IP アドレスを取得するには、次の方法を実行します。
 
 6. 手順 1 で **、[IP** アドレスのダウンロード] をクリックして、IP アドレス ファイルのコピーをローカル コンピューターに保存します。
 
-   ![IP アドレスをダウンロードする](../media/InstantBloombergConnectorIPAddress.png)
+   ![IP アドレスをダウンロードします。](../media/InstantBloombergConnectorIPAddress.png)
 
 7. [キャンセル **] を** クリックしてウィザードを閉じます。 手順 2 でこのウィザードに戻り、コネクタを作成します。
 
@@ -191,7 +191,7 @@ IP アドレスを取得するには、次の方法を実行します。
 
 5. [コンテンツ **ソースの資格情報の追加] ページで** 、[PGP と SSH のプライベート キーを使用 **する] をクリックします**。
 
-   ![プライベート キーを使用するオプションを選択する](../media/InstantBloombergPrivateKeysOption.png)
+   ![プライベート キーを使用するオプションを選択します。](../media/InstantBloombergPrivateKeysOption.png)
 
 6. [手順 3] で、次のボックスに必要な情報を入力し、[接続の検証] **をクリックします**。
 

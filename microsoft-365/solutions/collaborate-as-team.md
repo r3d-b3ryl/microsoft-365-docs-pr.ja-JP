@@ -18,12 +18,12 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: Teams のゲストとのタスク、会話、ドキュメントの共同作業を行うためチームをセットアップするのに必要な Microsoft 365 の構成手順について説明します。
-ms.openlocfilehash: 7e0d914f4a0541a8b43959447d6fafdcaf8d3210
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.openlocfilehash: e43a43c6b409379f9ca18c46f91e078ced46b7ef
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58347194"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572829"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>チームでゲストと共同作業する
 
@@ -43,7 +43,7 @@ Microsoft 365 での共有は、[Azure Active Directory における B2B 外部�
 
 B2B 外部コラボレーションの設定をチェックして、ゲストとの共有がブロックされていないことを確認します。
 
-![Azure Active Directory における組織関係の設定ページのスクリーンショット](../media/azure-ad-organizational-relationships-settings.png)
+![Azure Active Directory における組織関係の設定ページのスクリーンショット。](../media/azure-ad-organizational-relationships-settings.png)
 
 外部コラボレーションを設定するには
 
@@ -64,7 +64,7 @@ Teams には、ゲスト アクセス用のマスター オン/オフ スイッ�
 
 Teams でゲスト アクセスが有効になっていることを確認し、ビジネス ニーズに応じてゲスト設定を調整します。これらの設定はすべてのチームに影響することに注意してください。
 
-![Teams ゲスト アクセスのトグルのスクリーンショット](../media/teams-guest-access-toggle-on.png)
+![Teams ゲスト アクセスのトグルのスクリーンショット。](../media/teams-guest-access-toggle-on.png)
 
 Teams ゲスト アクセスの設定を行うには
 
@@ -84,7 +84,7 @@ Teams のゲスト アクセスがオンになっている場合、機密度ラ�
 
 Teams は、チームのメンバーシップに Microsoft 365 グループを使用します。Teams でゲスト アクセスを機能させるには、Microsoft 365 グループのゲスト設定をオンにする必要があります。
 
-![Microsoft 365 管理センターにおける Microsoft 365 グループのゲスト設定のスクリーンショット](../media/office-365-groups-guest-settings.png)
+![Microsoft 365 管理センターにおける Microsoft 365 グループのゲスト設定のスクリーンショット。](../media/office-365-groups-guest-settings.png)
 
 Microsoft 365 グループのゲスト設定を行うには
 
@@ -103,7 +103,7 @@ Microsoft 365 グループのゲスト設定を行うには
 
 認証されていないユーザーとのファイルとフォルダーの共有を許可する場合は、**[全員]** を選択します。 すべてのゲストが認証する必要があることを確認する場合は、**[新規および既存のゲスト]** を選択します。 組織内の任意のサイトで必要となる最も制限が少ない設定を選択します。
 
-![SharePoint 組織レベルの共有設定のスクリーンショット](../media/sharepoint-organization-external-sharing-controls.png)
+![SharePoint 組織レベルの共有設定のスクリーンショット。](../media/sharepoint-organization-external-sharing-controls.png)
 
 
 SharePoint 組織レベルの共有設定を設定するには
@@ -126,7 +126,7 @@ SharePoint 組織レベルの共有設定を設定するには
 - **組織内のユーザーのみ** - ほとんどのファイルとフォルダーの共有が組織内のユーザーと行われることが予想される場合は、このオプションを選択します。
 - **特定のユーザー** - ゲストと多くのファイルやフォルダーを共有することが予想される場合は、このオプションを検討してください。 この種類のリンクはゲストと連携し、ゲストに認証を要求します。
  
-![SharePoint 組織レベルのファイルとフォルダーの共有設定のスクリーンショット](../media/sharepoint-organization-files-folders-sharing-settings.png)
+![SharePoint 組織レベルのファイルとフォルダーの共有設定のスクリーンショット。](../media/sharepoint-organization-files-folders-sharing-settings.png)
 
 
 SharePoint 組織レベルの既定のリンク設定を設定するには
@@ -153,7 +153,7 @@ SharePoint 組織レベルの既定のリンク設定を設定するには
 
 サイトレベルの共有設定をチェックして、このチームに必要な種類のアクセスが許可されていることを確認します。 たとえば、組織レベルの設定を **全員** に設定したが、すべてのゲストにこのチームの認証を許可する場合は、サイトレベルの共有設定が **新規および既存のゲスト** に設定されていることを確認してください。
 
-![SharePoint サイトの外部共有設定のスクリーンショット](../media/sharepoint-site-external-sharing-settings.png)
+![SharePoint サイトの外部共有設定のスクリーンショット。](../media/sharepoint-site-external-sharing-settings.png)
 
 サイトレベルの共有設定を設定するには
 1. SharePoint 管理センターの左側のナビゲーション ウィンドウで、[**サイト**] を展開して [**アクティブなサイト**] をクリックします。

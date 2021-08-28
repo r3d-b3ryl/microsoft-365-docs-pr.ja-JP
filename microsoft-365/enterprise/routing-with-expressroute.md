@@ -22,16 +22,16 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: この記事では、Azure ExpressRoute ルーティング要件、回線、およびルーティング ドメインについて説明します。Office 365。
-ms.openlocfilehash: e36730f457f17ca6e789bd0ba06998824a6c590a45c53f9050f497c762f5985b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d157515f60a68a46b033571a0fd39e6a5711b884
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53904495"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575830"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Office 365 向け ExpressRoute でのルーティング
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 Azure ExpressRoute を使用して Office 365 へのルーティング トラフィックを適切に理解するには、ExpressRoute ルーティングのコア要件と[ExpressRoute](/azure/expressroute/expressroute-routing)回線とルーティング ドメインをしっかりと把握する[必要があります](/azure/expressroute/expressroute-circuit-peerings)。 これらは、お客様が信頼する ExpressRoute を使用Office 365を示しています。
   
@@ -146,7 +146,7 @@ Trey Research は、Office 365 用に Azure ExpressRoute を使用すること�
   
 オンライン、オンライン、Exchange Online、SharePointの最もSkype for Businessの FQDN は次のとおりです。
   
-![ExpressRoute カスタマー エッジ ネットワーク](../media/dab8cc42-b1d6-46d6-b2f6-d70f9e16d5ea.png)
+![ExpressRoute カスタマー エッジ ネットワーク。](../media/dab8cc42-b1d6-46d6-b2f6-d70f9e16d5ea.png)
   
 - outlook.office365.com,outlook.office.com
 
@@ -199,7 +199,7 @@ Humongous Insurance の状況では、ExpressRoute で使用するアプリケ�
   
 Humongous Insurance を使用しない場合や、Skype for Business Online を使用する予定がない場合は、Office 365 宛てのネットワーク トラフィックを ExpressRoute 接続で大陸にルーティングし戻す可能性があります。しかし、不必要な遅延や TCP 輻輳を引き起こす可能性があります。 どちらの場合も、インターネット宛てのトラフィックをローカル サイトでインターネットにルーティングして、ユーザーが依存するコンテンツ配信ネットワークOffice 365勧めします。
   
-![ExpressRoute の複数地域](../media/98fdd883-2c5a-4df7-844b-bd28cd0b9f50.png)
+![ExpressRoute の複数地域。](../media/98fdd883-2c5a-4df7-844b-bd28cd0b9f50.png)
   
 Humongous Insurance が複数地域戦略を計画している場合、回線のサイズ、回線数、フェールオーバーなどについて考慮すべき点が多数存在します。
   
@@ -251,6 +251,6 @@ ExpressRoute を使用した選択的ルーティングは、テスト、ユー�
   
 [Office 365 のパフォーマンスに関するトラブルシューティングの計画](performance-troubleshooting-plan.md)
   
-[Office 365 URL および IP アドレス範囲](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[Office 365 の URL と IP アドレスの範囲](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
 [Office 365 のネットワークとパフォーマンスのチューニング](network-planning-and-performance.md)

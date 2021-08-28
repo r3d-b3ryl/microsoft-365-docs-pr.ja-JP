@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: a64f217b88c41ca256d1ee343629741fd2ad880b
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: f00daf82a2b6090f6934aba12eb9227efdfa1422
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533149"
+ms.locfileid: "58576154"
 ---
 # <a name="enable-the-evaluation-environment"></a>評価環境を有効にする
 
@@ -37,7 +37,7 @@ ms.locfileid: "58533149"
 
 次の手順を使用して、Microsoft Defender の評価を有効にOffice 365。
 
-![Microsoft Defender 評価環境で Microsoft Defender Office 365を有効にする手順](../../media/defender/m365-defender-office-eval-enable-steps.png)
+![Microsoft Defender 評価環境で Microsoft Defender Office 365を有効にする手順。](../../media/defender/m365-defender-office-eval-enable-steps.png)
 
 - [手順 1: 試用版ライセンスをアクティブ化する](#step-1-activate-trial-licenses)
 - [手順 2: パブリック MX レコードの監査と確認](#step-2-audit-and-verify-the-public-mx-record)

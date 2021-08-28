@@ -13,12 +13,12 @@ ms.collection: Strat_SP_gtc
 localization_priority: Normal
 description: 複数地域環境で指定された優先Microsoft 365場所を持つグループを作成する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1a3f878e17a6d3956458be8705b43cb8e4b8fc4b843499c4ebab5998fb57eede
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0a035856344cf49e3a7221a00b98c175b95f9a72
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53812975"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575842"
 ---
 # <a name="create-a-microsoft-365-group-with-a-specific-preferred-data-location"></a>特定の優先Microsoft 365グループを作成する
 
@@ -47,7 +47,7 @@ Exchange Online PowerShell に接続して、パラメーター *-MailBoxRegion*
 New-UnifiedGroup -DisplayName MultiGeoEUR -Alias "MultiGeoEUR" -AccessType Public -MailboxRegion EUR 
 ```
 
-![構文を使用した New-UnifiedGroup PowerShell コマンドレットのスクリーンショット](../media/multi-geo-new-group-with-pdl-powershell.png)
+![構文を使用New-UnifiedGroup PowerShell コマンドレットのスクリーンショット。](../media/multi-geo-new-group-with-pdl-powershell.png)
 
 SharePoint グループのサイト プロビジョニングがオンデマンドであることに注意してください。 サイトは、グループの所有者またはメンバーが初めてアクセスを試みたときにプロビジョニングされます。
 
@@ -55,6 +55,6 @@ SharePoint グループのサイト プロビジョニングがオンデマン�
 
 [!INCLUDE [Microsoft 365 Multi-Geo locations](../includes/microsoft-365-multi-geo-locations.md)]
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [Exchange Online PowerShell への接続](/powershell/exchange/connect-to-exchange-online-powershell)

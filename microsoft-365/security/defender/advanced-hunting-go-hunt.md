@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 71ebd47fc6edd9f7b64a78af39a5484d1015efb74c242938bb7d0f0818f1736b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: dba2bacc170163f37e8bf7e8dbb2c4b9b6474d93
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53867797"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572529"
 ---
 # <a name="quickly-hunt-for-entity-or-event-information-with-go-hunt"></a>go hunt を使用してエンティティまたはイベント情報をすばやく検索する
 
@@ -42,16 +42,16 @@ go *hunt アクション* は、イベントまたはエンティティの詳細
 
 - インシデント ページ [では、](investigate-incidents.md#summary)インシデントに関連付けられているユーザー、デバイス、その他多くのエンティティに関する詳細を確認できます。 エンティティを選択すると、追加の情報と、そのエンティティに対して実行できるさまざまなアクションが表示されます。 次の例では、メールボックスが選択され、メールボックスに関する詳細と、メールボックスの詳細を検索するオプションが表示されます。
 
-    ![移動ハント オプションを使用してメールボックスの詳細を示す画像](../../media/mtp-ah/go-hunt-email.png)
+    ![移動ハント オプションを使用してメールボックスの詳細を示す画像。](../../media/mtp-ah/go-hunt-email.png)
 
 - インシデント ページでは、[証拠] タブの下のエンティティの一覧にアクセスすることもできます。これらのエンティティのいずれかを選択すると、そのエンティティに関する情報をすばやく検索できます。
 
-    ![[証拠] タブの [移動ハント] オプションを使用して選択したファイルを示す画像](../../media/mtp-ah/go-hunt-evidence-file.png)
+    ![[証拠] タブの [移動ハント] オプションを使用して選択したファイルを示す画像。](../../media/mtp-ah/go-hunt-evidence-file.png)
 
 
 - デバイスのタイムラインを表示する場合は、タイムラインでイベントを選択して、そのイベントに関する追加情報を表示できます。 イベントを選択すると、高度な検索で他の関連イベントを探すオプションが表示されます。
 
-    ![Go hunt オプションを使用してイベントの詳細を示す画像](../../media/mtp-ah/go-hunt-event.png)
+    ![Go ハント オプションを使用してイベントの詳細を示す画像。](../../media/mtp-ah/go-hunt-event.png)
 
 関連イベント **に対して** [Go hunt] または **[ハント** ] を選択すると、エンティティまたはイベントを選択したかどうかに応じて、さまざまなクエリが渡されます。
 
@@ -111,7 +111,7 @@ Timestamp between ((selectedTimestamp - 1h) .. (selectedTimestamp + 1h))
 >[!NOTE]
 >この記事の一部のテーブルは、Microsoft Defender for Endpoint では使用できない場合があります。 [複数のデータ Microsoft 365 Defender](m365d-enable.md)を使用して脅威を検出するには、このオプションをオンにしてください。 高度なハンティング ワークフローを Microsoft Defender for Endpoint から Microsoft 365 Defenderに移動するには、「Advanced Hunting [queries](advanced-hunting-migrate-from-mde.md)を Microsoft Defender for Endpoint から移行する」の手順に従います。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [クエリ結果を操作する](advanced-hunting-query-results.md)

@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Microsoft SharePoint Syntex のフレーズ リスト、正規表現、および類似性の説明の種類についてご覧ください。
-ms.openlocfilehash: 45b5e472623d8122dad47be5b28df5f89766936b9dc444c35b90ed4cc00c521a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 405080575f48f439e7d978a8fc7ca00ecf956be0
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53865655"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568398"
 ---
 # <a name="explanation-types-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex の説明の種類
 
@@ -42,17 +42,17 @@ ms.locfileid: "53865655"
 
 ラベルを特定する際に大文字と小文字が区別される必要がある場合は、語句リストの種類を使用して、[**文字の 大文字のみ を選択する**] チェックボックスをオンにして、テキストの種類を指定します。
 
-![大文字と小文字の区別](../media/content-understanding/case-sensitivity.png)
+![大文字と小文字の区別。](../media/content-understanding/case-sensitivity.png)
 
 語句の種類は、日付、電話番号、クレジットカード番号など、さまざまな形式の情報を特定して抽出する説明を作成する場合に特に有効です。 たとえば、日付をさまざまな形式で表示できます (1/1/2020、1-1-2020、01/01/20、01/01/2020、Jan 1、2020 など)。 語句一覧を定義すると、指定して抽出するデータのバリエーションをキャプチャして、説明をより効率的にすることができます。
 
 *電話番号* の例では、モデルが識別するすべての医療紹介文書から、委託する各医師の電話番号を抽出します。 説明を作成する場合は、電話番号が表示されるさまざまな形式を文書に入力し、可能なバリエーションをキャプチャできるようにします。
 
-![電話番号の語句パターン](../media/content-understanding/pattern-list.png)
+![電話番号の語句パターン。](../media/content-understanding/pattern-list.png)
 
 この例では、**詳細設定** で **[0〜9 の任意の数字]** チェックボックスを選択して、語句一覧で使用されている各 "0" の値が 0〜9 の任意の数字であることを認識します。
 
-![0〜9 の任意の数字](../media/content-understanding/digit-identity.png)
+![0 - 9 の任意の数字。](../media/content-understanding/digit-identity.png)
 
 同様に、テキスト文字を含む語句一覧を作成する場合は、**[a-zから任意の文字]** チェックボックスを選択して、語句一覧で使用される各 "a" 文字が "a" から "z" までの任意の文字であることを認識します。
 
@@ -61,14 +61,14 @@ ms.locfileid: "53865655"
 - *aaa 0, 0000* *aaa 00, 0000* を語句一覧に追加します。
 - **a-z の の任意の文字** が選択されていることを確認します。
 
-![A ~ z の任意の文字](../media/content-understanding/any-letter.png)
+![a - z の任意の文字。](../media/content-understanding/any-letter.png)
 
 語句一覧に大文字と小文字の区別をする要件がある場合は、[**大文字のみを区別する**] チェックボックスをオンにできます。 日付の例では、月の最初の文字を大文字にする必要がある場合、次の操作を行う必要があります。
 
 - *Aaa 0, 0000* および *Aaa 00, 0000* を語句一覧に追加します。
 - **すべて大文字のみ** が選択されていることを確認してください。
 
-![確実に大文字のみ](../media/content-understanding/exact-caps.png)
+![確実に大文字のみ。](../media/content-understanding/exact-caps.png)
 
 > [!NOTE]
 > 語句一覧の説明を手動で作成する代わりに、[説明ライブラリ](explanation-types-overview.md#use-explanation-templates)を使用して、共通語句一覧に語句一覧テンプレート (*日付*、 *電話番号*、*クレジット カード番号* など) を使用します。
@@ -137,7 +137,7 @@ Redmond, WA 98034<br>
 
 [類似性の説明を使用して、ドキュメント中の住所の番地をうまく特定するには、電話番号の説明はあまりに類似性が低いことを定義します。
 
-![類似性の説明](../media/content-understanding/proximity.png)
+![類似性の説明。](../media/content-understanding/proximity.png)
 
 #### <a name="what-are-tokens"></a>トークンとは?
 
@@ -173,7 +173,7 @@ Redmond, WA 98034<br>
 
 0から3までの範囲を設定するには、[類似性] 設定を構成します。
 
-![類似性の例](../media/content-understanding/proximity-example.png)
+![類似性の例。](../media/content-understanding/proximity-example.png)
 
 ## <a name="configure-where-phrases-occur-in-the-document"></a>ドキュメント内の語句の位置を構成する
 
@@ -181,7 +181,7 @@ Redmond, WA 98034<br>
 
 医療紹介文書の例を参照すると、*委託医師* は常にドキュメントの第 1 段落に記載されています。 この例では、**[これらの語句が表示される場所]** の設定を使用して、このラベルをドキュメントの先頭部分、またはラベルが表示される可能性のあるその他の場所だけで検索するように説明を構成できます。
 
-![[これらの語句が表示される場所] の設定](../media/content-understanding/phrase-location.png)
+![[これらの語句が表示される場所] の設定。](../media/content-understanding/phrase-location.png)
 
 この設定では、次のオプションを選択できます。
 
@@ -189,23 +189,23 @@ Redmond, WA 98034<br>
 
 - ファイルの先頭: ドキュメントの先頭から語句の場所まで検索されます。
 
-   ![ファイルの先頭](../media/content-understanding/beginning-of-file.png)
+   ![ファイルの先頭。](../media/content-understanding/beginning-of-file.png)
 
     ビューアでは、フェーズが表示される場所を含めるように選択ボックスを手動で調整できます。 **[終了位置]** の値が更新され、選択した領域に含まれるトークンの数が表示されます。 **[終了位置]** の値を更新して、選択した領域を調整することもできます。
 
-   ![ファイルの先頭の位置ボックス](../media/content-understanding/beginning-box.png)
+   ![ファイルの先頭の位置ボックス。](../media/content-understanding/beginning-box.png)
 
 - ファイルの末尾: ドキュメントの末尾から語句の場所まで検索されます。
 
-   ![ファイルの末尾](../media/content-understanding/end-of-file.png)
+   ![ファイルの末尾。](../media/content-understanding/end-of-file.png)
 
     ビューアでは、フェーズが表示される場所を含めるように選択ボックスを手動で調整できます。 **[開始位置]** の値が更新され、選択した領域に含まれるトークンの数が表示されます。 [開始位置] の値を更新して、選択した領域を調整することもできます。
 
-   ![ファイルの末尾の終了ボックス](../media/content-understanding/end-box.png)
+   ![ファイルの末尾の終了ボックス。](../media/content-understanding/end-box.png)
 
 - ユーザー設定の範囲: ドキュメントは指定された範囲内で、語句の場所が検索されます。
 
-   ![ユーザー設定の範囲](../media/content-understanding/custom-file.png)
+   ![ユーザー設定の範囲。](../media/content-understanding/custom-file.png)
 
     ビューアでは、フェーズが表示される場所を含めるように選択ボックスを手動で調整できます。 この設定では、**[開始]** と **[終了]** の位置を選択する必要があります。 これらの値は、ドキュメントの先頭のトークンの数を表します。 これらの値は手動で入力できますが、ビューアーの選択ボックスを手動で調整する方が簡単です。
 
@@ -215,7 +215,7 @@ Redmond, WA 98034<br>
 
 たとえば、*日付* のすべてのバリエーションを手動で追加する代わりに、*日付* のフレーズ リスト テンプレートを使用できます。これには、すでに多くのフレーズ リスト値が含まれているためです。
 
-![説明ライブラリ](../media/content-understanding/explanation-template.png)
+![説明ライブラリ。](../media/content-understanding/explanation-template.png)
 
 説明ライブラリには、次のような一般的に使用される *フレーズ リスト* の説明が含まれています。
 
@@ -254,28 +254,28 @@ Redmond, WA 98034<br>
 
 自動テンプレートの動作例を示すために、次のサンプル ファイルでは、[ラベルの前] の説明テンプレートを使用して、モデルにより多くの情報を提供し、より正確な一致を取得します。
 
-![サンプル ファイル](../media/content-understanding/before-label.png)
+![サンプル ファイル。](../media/content-understanding/before-label.png)
 
 [ラベルの前] 説明テンプレートを選択すると、サンプル ファイルのラベルの前に表示される最初の単語セットが検索されます。 この例では、最初のサンプル ファイルで識別される単語は「現在」です。
 
-![[ラベルの前] テンプレート](../media/content-understanding/before-label-explanation.png)
+![[ラベルの前] テンプレート。](../media/content-understanding/before-label-explanation.png)
 
 **[追加]** を選択して、テンプレートから説明を作成できます。  サンプル ファイルをさらに追加すると、追加の単語が識別され、フレーズ リストに追加されます。
 
-![ラベルを追加する](../media/content-understanding/before-label-add.png)
+![ラベルを追加します。](../media/content-understanding/before-label-add.png)
 
 #### <a name="to-use-a-template-from-the-explanation-library"></a>説明ライブラリのテンプレートを使用するには
 
 1. モデルの **トレーニング** ページの [**説明**] セクションで、[**新しい**] を選び、[**テンプレート から**]を選択します。
 
-   ![[ラベルの前] を追加する](../media/content-understanding/from-template.png)
+   ![[ラベルの前] を追加します。](../media/content-understanding/from-template.png)
 
 2.  **説明テンプレート** ページで、使用する説明を選び、[**追加**] を選択します。
 
-    ![テンプレートの選択](../media/content-understanding/phone-template.png)
+    ![テンプレートを選択します。](../media/content-understanding/phone-template.png)
 
 3. 選択したテンプレートの情報は、 **説明を作成する** ページに表示されます。 必要な場合は、説明の名前を編集して、フレーズ リストの項目を追加または削除します。
 
-    ![テンプレートを編集する](../media/content-understanding/phone-template-live.png)
+    ![テンプレートを編集します。](../media/content-understanding/phone-template-live.png)
 
 4. 完了したら、[**保存**] を選択します。

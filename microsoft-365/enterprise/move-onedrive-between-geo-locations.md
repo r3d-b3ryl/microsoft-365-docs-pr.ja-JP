@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: サイトの移動をスケジュールするOneDrive、ユーザーに期待を伝える方法など、さまざまな地域の場所にサイトを移動する方法に関する情報を確認します。
-ms.openlocfilehash: 1e571993a4d83d3e9a61f783fee9b1df5f9de4bb3d9184a9565c280677faf21c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 50c23555a91aecfbbaf6aa30bae2c3a741a18c45
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854862"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575662"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>別の地域の場所に OneDrive サイトを移動する 
 
@@ -64,7 +64,7 @@ geo move コマンドレットを使用する場合は、次の構文を使用�
 
 `Connect-SPOSservice -url https://contosoenergyeur-admin.sharepoint.com`
 
-![Connect-SPOService コマンドレットを示す PowerShell ウィンドウのスクリーン ショット](../media/move-onedrive-between-geo-locations-image1.png)
+![connect-sposervice コマンドレットを示す PowerShell ウィンドウのスクリーンショット。](../media/move-onedrive-between-geo-locations-image1.png)
 
 ## <a name="validating-the-environment"></a>環境の検証
 
@@ -98,7 +98,7 @@ OneDrive の移動が可能な状態になっている場合は Success が返�
 
 `Start-SPOUserAndContentMove -UserPrincipalName matt@contosoenergy.onmicrosoft.com -DestinationDataLocation AUS`
 
-![Start-SPOUserAndContentMove コマンドレットを示す PowerShell ウィンドウのスクリーン ショット](../media/move-onedrive-between-geo-locations-image2.png)
+![コマンドレットを示す PowerShell ウィンドウStart-SPOUserAndContentMoveします。](../media/move-onedrive-between-geo-locations-image2.png)
 
 将来の地域移動をスケジュールするには、次に示すパラメーターのいずれかを使用します。
 

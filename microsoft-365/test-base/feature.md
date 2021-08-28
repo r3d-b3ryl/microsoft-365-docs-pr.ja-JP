@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 91fcbdfeeec0a4127f0e1642049fd421a30df00ed4bd757a89d582015d477fc6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a0a60a061959a5aff038c3e74da7e1775f66e237
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53888330"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58576034"
 ---
 # <a name="windows-feature-update-validation"></a>Windows機能更新プログラムの検証
 
@@ -37,19 +37,19 @@ M365 のテスト ベースで始めるには、セルフサービス オンボ�
 
 1. OS **更新プログラムの種類として** [機能更新プログラム] を選択します。
 
-![機能更新プログラムの検証 OS の種類](Media/Feature-update-validation-01.png)
+![機能更新プログラムの検証 OS の種類。](Media/Feature-update-validation-01.png)
 
 2. アプリケーションをWindowsする Insider チャネルを選択します。  
 
-![機能更新プログラムの検証。 Insider ベータ チャネルの選択](Media/Feature-update-validation-02.png)
+![機能更新プログラムの検証。 Insider ベータ チャネルの選択。](Media/Feature-update-validation-02.png)
 
 3. テストのベースラインとして Windows 10 または Windows 11 の市場リリースを選択し (結果として得られる分析情報!)、パッケージの正常なオンボードに必要なその他の詳細を提供します。
 
-![11 のリリース済みバージョンの Windows 10とWindows検証](Media/Feature-update-validation-03.png)
+![リリースされたバージョンの 11 のバージョンのWindows 10更新Windows検証。](Media/Feature-update-validation-03.png)
 
 4. 事前にリリースされた機能更新プログラムに対するアプリケーションの検証の結果を表示するには、Windows 10を参照してください ```Feature Updates Test Results``` 。
 
-![機能更新プログラムの検証により、結果をすばやく確認できます](Media/Feature-update-validation-04.png)
+![機能更新プログラムの検証を使用すると、結果をすばやく確認できます。](Media/Feature-update-validation-04.png)
 
 
 ## <a name="next-steps"></a>次の手順

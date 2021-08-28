@@ -22,12 +22,12 @@ search.appverid:
 - MED150
 ms.assetid: 263faf8d-aa21-428b-aed3-2021837a4b65
 description: この記事では、既存のディレクトリ サービスMicrosoft 365オンプレミス環境と統合する方法について学習します。
-ms.openlocfilehash: 0f9f6d053affeae56fd9d26b93680e1f2d6eb139
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 87b456a0b44e4b38df6cec8e72713c6573917805
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58353722"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575590"
 ---
 # <a name="microsoft-365-integration-with-on-premises-environments"></a>Microsoft 365環境との統合
 
@@ -54,11 +54,11 @@ Microsoft 365 管理センター のカスタマイズされたセットアッ�
 
 AD DS に既存のユーザー アカウントがある場合は、Microsoft 365 のすべてのアカウントを再作成し、環境間の違いやエラーが発生するリスクはありません。 ディレクトリ同期は、オンプレミス環境とオンライン環境の間でこれらのアカウントをミラーリングするのに役立ちます。 ディレクトリ同期を使用すると、ユーザーは環境ごとに新しい情報を記憶する必要が生じ、アカウントを 2 回作成または更新する必要はありません。 ディレクトリ同期のために [オンプレミス ディレクトリを準備](prepare-for-directory-synchronization.md) する必要があります。
   
-![ディレクトリ同期を使用してオンプレミスとオンラインのユーザー アカウント情報を同期する](../media/microsoft-365-integration/directory-synchronization.png)
+![ディレクトリ同期を使用して、オンプレミスとオンラインのユーザー アカウント情報を同期します。](../media/microsoft-365-integration/directory-synchronization.png)
   
 ユーザーがオンプレミスの資格情報を使用してMicrosoft 365にログオンする場合は、SSO を構成できます。 SSO を使用Microsoft 365、ユーザー認証のためにオンプレミス環境を信頼するように構成されます。
   
-![シングル サインオンでは、オンプレミス環境とオンライン環境の両方で同じアカウントを利用できます。](../media/microsoft-365-integration/single-sign-on.png)
+![シングル サインオンでは、オンプレミス環境とオンライン環境の両方で同じアカウントを使用できます。](../media/microsoft-365-integration/single-sign-on.png)
 
 ### <a name="directory-synchronization-with-or-without-password-hash-synchronization-or-pass-through-authentication-pta"></a>パスワード ハッシュ同期またはパススルー認証 (PTA) の使用とディレクトリの同期
 

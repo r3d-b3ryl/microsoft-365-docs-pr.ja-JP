@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: cf685c61df92a2a5599e2ba8deb407edb5b6a5f1
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: f27049b518f13d0ddfd204b2aed16b60f07b8090
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255086"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573033"
 ---
 # <a name="take-response-actions-on-a-device"></a>デバイスの対応措置を講じる
 
@@ -30,7 +30,7 @@ ms.locfileid: "58255086"
 **適用対象:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-respondmachine-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-respondmachine-abovefoldlink)
 
 デバイスを分離するか、調査パッケージを収集することで、検出された攻撃に迅速に対応します。 デバイスでアクションを実行した後、アクション センターでアクティビティの詳細を確認できます。
 
@@ -46,7 +46,7 @@ ms.locfileid: "58255086"
 - 脅威のエキスパートに相談する
 - アクション センター
 
-[![応答アクションのイメージ](images/response-actions.png)](images/response-actions.png#lightbox)
+[![応答アクションのイメージ。](images/response-actions.png)](images/response-actions.png#lightbox)
 
  デバイス ページは、次のビューから検索できます。
 
@@ -99,11 +99,11 @@ ms.locfileid: "58255086"
 
 1. デバイス **ページの [** 応答アクション] セクションから [アクション センター] を選択します。
 
-    ![アクション センター ボタンのイメージ](images/action-center-package-collection.png)
+    ![アクション センター ボタンのイメージ。](images/action-center-package-collection.png)
 
 2. アクション センターのフライアウトで、[ **パッケージ コレクション** パッケージを選択して zip ファイルをダウンロードできます。
 
-    ![[パッケージのダウンロード] ボタンのイメージ](images/collect-package.png)
+    ![[パッケージのダウンロード] ボタンのイメージ。](images/collect-package.png)
 
 パッケージには、次のフォルダーが含まれています。
 
@@ -140,7 +140,7 @@ ms.locfileid: "58255086"
 
 [ウイルス対策スキャンの **実行**] を選択した 1 つは、実行するスキャンの種類 (クイックまたはフル) を選択し、コメントを追加してからスキャンを確認します。
 
-![クイック スキャンまたはフル スキャンを選択してコメントを追加する通知の画像](images/run-antivirus.png)
+![クイック スキャンまたはフル スキャンを選択してコメントを追加する通知の画像。](images/run-antivirus.png)
 
 アクション センターにスキャン情報が表示され、デバイスのタイムラインに新しいイベントが含まれます。スキャン アクションがデバイスに送信されたのを反映します。 Microsoft Defender AV アラートは、スキャン中に表示された検出を反映します。
 
@@ -168,13 +168,13 @@ ms.locfileid: "58255086"
 
 デバイス ページで [ **アプリの実行** を制限する] を選択したら、コメントを入力し、[確認] を **選択します**。 アクション センターにスキャン情報が表示され、デバイスのタイムラインに新しいイベントが含まれます。
 
-![アプリ制限通知の画像](images/restrict-app-execution.png)
+![アプリ制限通知の画像。](images/restrict-app-execution.png)
 
 ### <a name="notification-on-device-user"></a>デバイス ユーザーの通知
 
 アプリが制限されている場合は、アプリの実行が制限されているユーザーに通知する次の通知が表示されます。
 
-![アプリ制限のイメージ](images/atp-app-restriction.png)
+![アプリの制限のイメージ。](images/atp-app-restriction.png)
 
 ## <a name="isolate-devices-from-the-network&quot;></a>ネットワークからデバイスを分離する
 
@@ -195,7 +195,7 @@ ms.locfileid: "58255086"
 
 デバイス ページで [ **デバイスの分離** ] を選択したら、コメントを入力し、[確認] を **選択します**。 アクション センターにスキャン情報が表示され、デバイスのタイムラインに新しいイベントが含まれます。
 
-![分離デバイスのイメージ](images/isolate-device.png)
+![分離デバイスのイメージ。](images/isolate-device.png)
 
 > [!NOTE]
 > デバイスは、ネットワークから分離されている場合でも、Defender for Endpoint サービスに接続されたままです。 通信を有効にOutlookし、Skype for Businessを有効にした場合は、デバイスが分離されている間にユーザーと通信できます。
@@ -204,7 +204,7 @@ ms.locfileid: "58255086"
 
 デバイスが分離されている場合、次の通知が表示され、デバイスがネットワークから分離されているという通知がユーザーに通知されます。
 
-![ネットワーク接続なしのイメージ](images/atp-notification-isolate.png)
+![ネットワーク接続なしのイメージ。](images/atp-notification-isolate.png)
 
 ## <a name="consult-a-threat-expert"></a>脅威のエキスパートに相談する
 
@@ -223,7 +223,7 @@ Microsoft の脅威の専門家に相談して、潜在的に侵害されたデ�
 
 その他のすべての関連する詳細も表示されます 。たとえば、申請の日時、ユーザーの送信、アクションの成功または失敗の場合などです。
 
-![情報を含むアクション センターのイメージ](images/action-center-details.png)
+![情報を含むアクション センターのイメージ。](images/action-center-details.png)
 
 ## <a name="related-topic"></a>関連トピック
 

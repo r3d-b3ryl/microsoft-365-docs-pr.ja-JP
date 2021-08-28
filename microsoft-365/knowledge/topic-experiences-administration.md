@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: トピック センターの名前を変更する方法については、Microsoft Viva トピック。
-ms.openlocfilehash: ba172df38a42ac00267496e2126c9d01058bb45bc925bfa8f75b3e3e98111247
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 262ae46fadf8fc390a4ccf591aa97175ff63a68f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794681"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573069"
 ---
 # <a name="change-the-name-of-the-topic-center-in-microsoft-viva-topics"></a>トピック センターの名前を変更Microsoft Viva トピック
 
@@ -26,11 +26,11 @@ ms.locfileid: "53794681"
 1. [組織] Microsoft 365 管理センター、[組織の **設定]****の順にクリックします**。
 2. [サービス] **タブで** 、[トピック エクスペリエンス] **をクリックします**。
 
-    ![Connectを知る](../media/admin-org-knowledge-options-completed.png) 
+    ![Connect人に知識を提供します。](../media/admin-org-knowledge-options-completed.png) 
 
 3. [トピック センター **] タブを選択** します。各設定の詳細については、以下のセクションを参照してください。
 
-    ![ナレッジ ネットワーク設定](../media/knowledge-network-settings-topic-center.png) 
+    ![ナレッジ ネットワーク設定。](../media/knowledge-network-settings-topic-center.png) 
 
 ##  <a name="update-your-topic-center-name"></a>トピック センターの名前を更新する
 
@@ -40,7 +40,7 @@ ms.locfileid: "53794681"
 2. [トピック **センター名の編集]** ページの [トピック センター名] ボックスに、トピック センターの新しい名前を入力します。
 3. **[保存]** を選びます。
 
-    ![トピック センター名の編集](../media/manage-topic-center-name.png)  
+    ![トピック センター名を編集します。](../media/manage-topic-center-name.png)  
 
 ## <a name="see-also"></a>関連項目
 

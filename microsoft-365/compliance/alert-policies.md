@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 潜在的な脅威、データ損失、およびアクセス許可の問題Microsoft 365 コンプライアンス センター監視するために、Microsoft 365 コンプライアンス センターまたは Microsoft 365 Defender ポータルにアラート ポリシーを作成します。
-ms.openlocfilehash: ef822ef9b661677839c4d393ebff19071a16ca49
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: c6e233ec90c9143b07d32e71933c4c81b94f252b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256639"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572349"
 ---
 # <a name="alert-policies-in-microsoft-365"></a>Microsoft 365 のアラート ポリシー
 
@@ -38,7 +38,7 @@ Microsoft 365 コンプライアンス センター または Microsoft 365 Defe
 
 アラート ポリシーの動作の概要と、ユーザーまたは管理者のアクティビティがアラート ポリシーの条件と一致するときにトリガーされるアラートの概要を次に示します。
 
-![アラート ポリシーの動作の概要](../media/M365ComplianceDefender-AlertPolicies-Overview.png)
+![アラート ポリシーの動作の概要。](../media/M365ComplianceDefender-AlertPolicies-Overview.png)
 
 1. 組織の管理者は、Microsoft 365 コンプライアンス センター または Microsoft 365 Defender ポータルの [アラート ポリシー]ページを使用して、アラート ポリシーを作成、構成、およびMicrosoft 365 Defenderします。 また、コンプライアンス センター PowerShell の [セキュリティ] の [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert) コマンドレットを使用して&作成することもできます。
 
@@ -63,13 +63,13 @@ Microsoft 365 コンプライアンス センター または Microsoft 365 Defe
 
 [ポリシー] <https://compliance.microsoft.com> アラート アラート ポリシー **に** 移動  >    >  **し、[ポリシー] を選択します**。 または、直接に移動することもできます <https://compliance.microsoft.com/alertpolicies> 。
 
-![コンプライアンス センターで [ポリシー] を選択し、[アラート] で [アラート ポリシー] を選択して、アラート ポリシーを表示および作成します。](../media/LaunchAlertPoliciesMCC.png)
+![コンプライアンス センターで 、[ポリシー] を選択し、[アラート] で [アラート ポリシー] を選択して、アラート ポリシーを表示および作成します。](../media/LaunchAlertPoliciesMCC.png)
 
 ### <a name="microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータル
 
 [メールの <https://security.microsoft.com> 送信] グループの **[&ポリシー** ] を選択 **し、[&ポリシー**  >  **] の下に移動します**。 または、直接に移動することもできます <https://security.microsoft.com/alertpolicies> 。
 
-![Defender ポータルで、[電子メール &] の下の [&ポリシー] を選択し、[アラート ポリシー] を選択してアラート ポリシーを表示および作成します。](../media/LaunchAlertPoliciesDefenderPortal.png)
+![Defender ポータルで、[電子メール &] の下&ポリシー] を選択し、[アラート ポリシー] を選択してアラート ポリシーを表示および作成します。](../media/LaunchAlertPoliciesDefenderPortal.png)
 
 > [!NOTE]
 > コンプライアンス センターまたは Defender ポータルでView-Onlyポリシーを表示するには、[アラートの管理] 役割を割り当てる必要があります。 アラート ポリシーを作成および編集するには、[アラートの管理] 役割を割り当てる必要があります。 詳細については、「セキュリティとコンプライアンス [センターのアクセス許可」を参照してください](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)。
@@ -87,7 +87,7 @@ Microsoft 365 コンプライアンス センター または Microsoft 365 Defe
 
 - **アラートがトリガーされた場合**。 アラートがトリガーされる前にアクティビティが発生する頻度を定義する設定を構成できます。 これにより、アクティビティがポリシー条件に一致するたび、特定のしきい値を超えた場合、またはアラートが追跡しているアクティビティの発生が組織で異常になった場合に、アラートを生成するポリシーを設定できます。
 
-    ![アクティビティが発生した場合、しきい値、または組織の異常なアクティビティに基づいて、アラートのトリガー方法を構成する](../media/howalertsaretriggered.png)
+    ![アクティビティが発生した場合、しきい値、または組織の異常なアクティビティに基づいて、アラートのトリガー方法を構成します。](../media/howalertsaretriggered.png)
 
     異常なアクティビティに基づいて設定を選択すると、選択したアクティビティの通常の頻度を定義する基準値が設定されます。 この基準を確立するのに最大 7 日かかるので、アラートは生成されません。 ベースラインが確立されると、アラート ポリシーによって追跡されるアクティビティの頻度がベースライン値を大幅に超えると、アラートがトリガーされます。 監査関連のアクティビティ (ファイルアクティビティやフォルダー アクティビティなど) の場合は、1 人のユーザーに基づいて、または組織内のすべてのユーザーに基づいてベースラインを確立できます。マルウェア関連のアクティビティの場合は、単一のマルウェア ファミリ、単一の受信者、または組織内のすべてのメッセージに基づいてベースラインを確立できます。
 
@@ -125,7 +125,7 @@ Microsoft は、管理者のアクセス許可の悪用、マルウェアのExch
 
 また、この表は、Office 365 EnterpriseにOffice 365米国政府機関の計画を示しています。 E1/F1/G1 または E3/F3/G3 サブスクリプションに加えて、組織が適切なアドオン サブスクリプションを持つ場合、一部の既定のアラート ポリシーを使用できます。
 
-| 既定のアラート ポリシー | 説明 | Category | Enterpriseサブスクリプション |
+| 既定のアラート ポリシー | 説明 | カテゴリ | Enterpriseサブスクリプション |
 |:-----|:-----|:-----|:-----|
 |**悪意のある可能性がある URL のクリックが検出されました**|組織のリンクによって保護されたユーザーセーフ[が](../security/office-365-security/safe-links.md)悪意のあるリンクをクリックすると、警告が生成されます。 このイベントは、url の評決の変更が Microsoft Defender によって Office 365 用に識別された場合、またはユーザーが セーフ リンク ページ (組織の Microsoft 365 for business セーフ Links ポリシーに基づいて) を上書きするときにトリガーされます。 このアラート ポリシーには、重大度 **の高** い設定があります。 Defender for Office 365 P2、E5、G5 のお客様に対して、このアラートは自動的に自動調査と応答をトリガー [Office 365。](../security/office-365-security/office-365-air.md) このアラートをトリガーするイベントの詳細については[、「Set up セーフリンク ポリシー」を参照してください](../security/office-365-security/set-up-safe-links-policies.md)。|脅威の管理|E5/G5 または Defender for Office 365 P2 アドオン サブスクリプション|
 |**管理者の提出結果が完了しました**|管理者申請が送信されたエンティティ[](../security/office-365-security/admin-submission.md)の再スキャンを完了すると、アラートを生成します。 管理者申請から再スキャン結果が表示される度に、アラートがトリガーされます。 これらのアラートは、以前の申請の[](https://compliance.microsoft.com/reportsubmission)結果を確認し、ユーザーが報告したメッセージを送信して最新のポリシー チェックと再スキャンの評決を取得し、組織内のフィルター ポリシーが意図した影響を与えているかどうかを判断することを目的とします。 このポリシーには、[ **情報の重大度]** 設定があります。|脅威の管理|E1/F1、E3/F3、または E5|
@@ -177,13 +177,13 @@ Microsoft は、管理者のアクセス許可の悪用、マルウェアのExch
 
  に移動し <https://compliance.microsoft.com> 、[通知] を **選択します**。 または、直接に移動することもできます <https://compliance.microsoft.com/compliancealerts> 。
 
-![[通知] Microsoft 365 コンプライアンス センターを選択します。](../media/ViewAlertsMCC.png)
+![[通知] Microsoft 365 コンプライアンス センター[通知] を選択します。](../media/ViewAlertsMCC.png)
 
 ### <a name="microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータル
 
 [インシデント] <https://security.microsoft.com> に移動し、[**インシデント] &を**  >  **選択します**。 または、直接に移動することもできます <https://security.microsoft.com/alerts> 。
 
-![[ポータル] Microsoft 365 Defender[インシデント] を選択&し、[アラート] を選択します。](../media/ViewAlertsDefenderPortal.png)
+![[ポータル] Microsoft 365 Defender[インシデント] を選択&し、[通知] を選択します。](../media/ViewAlertsDefenderPortal.png)
 
 次のフィルターを使用して、[アラート] ページですべてのアラートのサブセットを **表示** できます。
 
@@ -224,7 +224,7 @@ Microsoft は、管理者のアクセス許可の悪用、マルウェアのExch
 
 次のスクリーンショットは、4 つの集計イベントを含むアラートを示しています。 アクティビティ リストには、アラートに関連する 4 つの電子メール メッセージに関する情報が含まれます。
 
-![アラート集約の例](../media/AggregatedAlertExample.png)
+![アラート集約の例。](../media/AggregatedAlertExample.png)
 
 アラート集約については、次のことを念頭に置いておきます。
 
@@ -248,33 +248,33 @@ Microsoft は、管理者のアクセス許可の悪用、マルウェアのExch
 
 既定のアラート ポリシーが割り当てられているカテゴリを確認するには、「既定のアラート ポリシー」 [の表を参照してください](#default-alert-policies)。
 
-|Role|情報ガバナンス|データ損失防止|メール フロー|アクセス許可|脅威の管理|Others|
+|役割|情報ガバナンス|データ損失防止|メール フロー|アクセス許可|脅威の管理|Others|
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |監査ログ|||||||
 |ケース管理|||||||
-|コンプライアンス管理者|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||![チェック マーク](../media/checkmark.png)||![チェック マーク](../media/checkmark.png)|
+|コンプライアンス管理者|![チェック マークを付します。](../media/checkmark.png)|![チェック マークを付します。](../media/checkmark.png)||![チェック マークを付します。](../media/checkmark.png)||![チェック マークを付します。](../media/checkmark.png)|
 |コンプライアンス検索|||||||
 |デバイスの管理|||||||
 |廃棄管理|||||||
-|DLP コンプライアンス管理||![チェック マーク](../media/checkmark.png)|||||
+|DLP コンプライアンス管理||![チェック マークを付します。](../media/checkmark.png)|||||
 |エクスポート|||||||
 |Hold|||||||
-|通知の管理||||||![チェック マーク](../media/checkmark.png)|
-|組織の構成||||||![チェック マーク](../media/checkmark.png)|
-|プレビュー|||||||
-|レコード管理|![チェック マーク](../media/checkmark.png)||||||
-|アイテム保持の管理|![チェック マーク](../media/checkmark.png)||||||
-|レビュー|||||||
+|通知の管理||||||![チェック マークを付します。](../media/checkmark.png)|
+|組織の構成||||||![チェック マークを付します。](../media/checkmark.png)|
+|Preview|||||||
+|レコード管理|![チェック マークを付します。](../media/checkmark.png)||||||
+|アイテム保持の管理|![チェック マークを付します。](../media/checkmark.png)||||||
+|確認|||||||
 |RMS の暗号化解除|||||||
-|役割の管理||||![チェック マーク](../media/checkmark.png)|||
+|役割の管理||||![チェック マークを付します。](../media/checkmark.png)|||
 |検索と消去|||||||
-|セキュリティ管理者||![チェック マーク](../media/checkmark.png)||![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|
-|セキュリティ閲覧者||![チェック マーク](../media/checkmark.png)||![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)
+|セキュリティ管理者||![チェック マークを付します。](../media/checkmark.png)||![チェック マークを付します。](../media/checkmark.png)|![チェック マークを付します。](../media/checkmark.png)|![チェック マークを付します。](../media/checkmark.png)|
+|セキュリティ閲覧者||![チェック マークを付します。](../media/checkmark.png)||![チェック マークを付します。](../media/checkmark.png)|![チェック マークを付します。](../media/checkmark.png)|![チェック マークを付します。](../media/checkmark.png)
 |サービス アシュアランス ビュー|||||||
 |監督レビュー管理者|||||||
 |表示専用の監査ログ|||||||
 |View-Onlyデバイスの管理|||||||
-|View-Only DLP コンプライアンス管理||![チェック マーク](../media/checkmark.png)|||||
+|View-Only DLP コンプライアンス管理||![チェック マークを付します。](../media/checkmark.png)|||||
 |View-Onlyアラートの管理||||||![チェック マーク](../media/checkmark.png)|
 |"View-Only Recipients/表示専用受信者"|||![チェック マーク](../media/checkmark.png)||||
 |View-Onlyレコードの管理|![チェック マーク](../media/checkmark.png)||||||
@@ -328,11 +328,11 @@ Enterprise Mobility + Security E5 サブスクリプションの一部として�
 
 コンプライアンス センターまたは defender Cloud App Security内の通知のみを表示するには、[ソース] フィルターを使用して [削除]**を** Cloud App Security。
 
-![ソース フィルターを使用して、ユーザーの通知Cloud App Securityする](../media/FilterCASAlerts.png)
+![[ソース] フィルターを使用して、警告Cloud App Security表示します。](../media/FilterCASAlerts.png)
 
 コンプライアンス センターのアラート ポリシーによってトリガーされるアラートと同様に、Cloud App Security アラートを選択して、アラートの詳細を示すフライアウト ページを表示できます。 アラートには、詳細を表示し、Cloud App Security ポータルでアラートを管理するためのリンクと、アラートをトリガーした対応する Cloud App Security ポリシーへのリンクが含まれます。 「アラート[を監視する」を参照Cloud App Security。](/cloud-app-security/monitor-alerts)
 
-![アラートの詳細には、ポータルへのリンクCloud App Security含まれる](../media/CASAlertDetail.png)
+![アラートの詳細には、ポータルへのリンクCloud App Security含まれる。](../media/CASAlertDetail.png)
 
 > [!IMPORTANT]
 > コンプライアンス センターで Cloud App Securityアラートの状態を変更しても、ポータル内の同じアラートの解決状態はCloud App Securityされません。 たとえば、コンプライアンス センターでアラートの状態を [解決済み] にマークした場合、Cloud App Securityポータルのアラートの状態は変更されません。 アラートを解決または却下するにはCloud App SecurityポータルでアラートをCloud App Securityします。

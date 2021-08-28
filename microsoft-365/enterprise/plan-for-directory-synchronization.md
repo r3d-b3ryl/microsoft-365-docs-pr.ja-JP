@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: ディレクトリの同期と Microsoft 365、Active Directory ドメイン サービスのクリーンアップ、およびネットワーク ツールAzure Active Directory Connectします。
-ms.openlocfilehash: 62c8246e6a825ff57583dbbccb1028cd9035f72e
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 5ad437e4f8abcf2a6d59d17ce41a2b1adeac0649
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354406"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575638"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-microsoft-365"></a>ハイブリッド ID とディレクトリ同期によるMicrosoft 365
 
@@ -65,7 +65,7 @@ ms.locfileid: "58354406"
 
 PHS を使用すると、DS ユーザー ADと同期し、Microsoft 365をオンプレミスで管理できます。 ユーザー パスワードのハッシュは、AD DS から Azure AD に同期され、ユーザーはオンプレミスとクラウドで同じパスワードを使用できます。 これは、Azure ADで DS ID の認証を有効にする最も簡単なAD。 
 
-![パスワード ハッシュ同期 (PHS)](../media/plan-for-directory-synchronization/phs-authentication.png)
+![パスワード ハッシュ同期 (PHS)。](../media/plan-for-directory-synchronization/phs-authentication.png)
 
 オンプレミスでパスワードを変更またはリセットすると、新しいパスワード ハッシュが Azure AD に同期され、ユーザーはクラウド リソースとオンプレミス リソースに対して常に同じパスワードを使用できます。 ユーザー のパスワードは、Azure サーバーに送信AD、クリア テキストで azure AD保存されません。 Id Protection など、Azure ADの一部のプレミアム機能では、どの認証方法が選択されているに関係なく PHS が必要です。
   
@@ -75,7 +75,7 @@ PHS を使用すると、DS ユーザー ADと同期し、Microsoft 365をオン
 
 PTA は、1 つ以上のオンプレミス サーバーで実行されているソフトウェア エージェントを使用して Azure AD 認証サービスの簡単なパスワード検証を提供し、AD DS を使用してユーザーを直接検証します。 PTA を使用すると、DS ADアカウントとMicrosoft 365を同期し、オンプレミスのユーザーを管理します。 
 
-![パススルー認証 (PTA)](../media/plan-for-directory-synchronization/pta-authentication.png)
+![パススルー認証 (PTA)。](../media/plan-for-directory-synchronization/pta-authentication.png)
 
 PTA を使用すると、ユーザーはオンプレミスのアカウントとパスワードを使用して、Microsoft 365とアプリケーションの両方にサインインできます。 この構成では、Azure サーバーにパスワード ハッシュを格納せずに、AD DS に対してユーザーのパスワードを直接検証AD。 
 

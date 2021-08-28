@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f45de173b8f316c93d8a65f1c20dbd523038c8855c2c0524770eed3334edee2d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 345088af66e08cb693d2b0a8a1e9bfbc51400aab
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884435"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571267"
 ---
 # <a name="web-protection"></a>Web 保護
 
@@ -40,7 +40,7 @@ ms.locfileid: "53884435"
 
 Microsoft Defender for Endpoint の Web 保護は [、Web](web-threat-protection.md)脅威保護 [、Web](web-content-filtering.md)コンテンツ フィルター、およびカスタム インジケーターで構成される [機能です](manage-indicators.md)。 Web 保護を使用すると、Web の脅威からデバイスを保護し、望ましくないコンテンツを規制できます。 Web 保護に関するレポートは、Microsoft 365 Defender Web 保護のレポートにアクセスして、>**できます**。
 
-:::image type="content" alt-text="すべての Web 保護カードのイメージ" source="images/web-protection.png" lightbox="images/web-protection.png":::
+:::image type="content" alt-text="すべての Web 保護カードのイメージ。" source="images/web-protection.png" lightbox="images/web-protection.png":::
 
 ### <a name="web-threat-protection"></a>Web の脅威に対する保護
 
@@ -177,17 +177,17 @@ DeviceEvents 
 ユーザーがマルウェア、フィッシング、その他の Web 脅威のリスクを引き起こす Web ページにアクセスした場合、Microsoft Edge は、脅威に関連する情報と共に「このサイトが安全でないと報告されている」というブロック ページをトリガーします。
 
 > [!div class="mx-imgBorder"]
-> ![ページがブロックMicrosoft Edge](../../media/web-protection-malicious-block.png)
+> ![ページがブロックMicrosoft Edge。](../../media/web-protection-malicious-block.png)
 
 WCF またはカスタム インジケーターによってブロックされている場合、このサイトが組織によってブロックMicrosoft Edgeにブロック ページが表示されます。
 
 > [!div class="mx-imgBorder"]
-> ![組織によってブロックされたページ](../../media/web-protection-indicator-blockpage.png)
+> ![組織によってブロックされたページ。](../../media/web-protection-indicator-blockpage.png)
 
 いずれにしても、サード パーティのブラウザーにブロック ページは表示されません。ユーザーにはトースト通知と共に 「Secure Connection Failed」ページが表示されます。 ブロックを担当するポリシーに応じて、ユーザーはトースト通知に別のメッセージを表示します。 たとえば、Web コンテンツ フィルターでは、「このコンテンツはブロックされています」というメッセージが表示されます。 
 
 > [!div class="mx-imgBorder"]
-> ![WCF によってブロックされたページ](../../media/web-protection-np-block.png)
+> ![WCF によってブロックされたページ。](../../media/web-protection-np-block.png)
 
 ## <a name="report-false-positives"></a>誤検知を報告する
 

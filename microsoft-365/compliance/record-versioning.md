@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 でのレコード管理ソリューションの実装に役立つレコードについて説明します。
-ms.openlocfilehash: be85632bb4b85231f3a95680c960846fa245d97a
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 5e77d38ed6e3b122ceb85a6cff901a09dbe782d1
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58506528"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574966"
 ---
 # <a name="use-record-versioning-to-update-records-stored-in-sharepoint-or-onedrive"></a>SharePoint または OneDrive に保存されているレコードを更新するためにレコードのバージョン管理を使用する
 
@@ -53,14 +53,14 @@ ms.locfileid: "58506528"
 ドキュメントのロックが解除されている間、標準の編集権限を持つすべてのユーザーがファイルを編集できます。 ただし、これはまだレコードであるため、ユーザーはファイルを削除することができません。 編集が完了すると、**レコードの状態** を **ロック解除** から **ロック済み** に切り替えることができ、この状態の間はそれ以上の編集ができなくなります。
 <br/><br/>
 
-![レコードとしてタグ付けされたドキュメントのレコード ステータス プロパティ](../media/recordversioning8.png)
+![レコードとしてタグ付けされたドキュメントのレコード ステータス プロパティ。](../media/recordversioning8.png)
 
 ## <a name="locking-and-unlocking-a-record"></a>レコードのロックおよびロック解除
 
 コンテンツをレコードとしてマークする保持ラベルがドキュメントに適用された後、投稿権限またはより狭い権限レベルを持つユーザーは、レコードをロック解除したり、ロック解除されたレコードをロックしたりできます。
 <br/><br/>
 
-![レコード ステータスは、レコード ドキュメントがロック解除されていることを示しています](../media/recordversioning9.png)
+![レコード ステータスは、レコード ドキュメントがロック解除されていることを示しています。](../media/recordversioning9.png)
 
 ユーザーがレコードのロックを解除すると、以下のアクションが発生します。
 
@@ -81,7 +81,7 @@ ms.locfileid: "58506528"
 ユーザーがレコードのロックを解除するたびに、最新バージョンがアイテム保管ライブラリにコピーされ、そのバージョンには **レコード** の値がバージョン履歴の **[コメント]** フィールドに含まれます。
 <br/><br/>
 
-![アイテム保管ライブラリに表示されるレコード](../media/recordversioning10.png)
+![アイテム保管ライブラリに表示されるレコード。](../media/recordversioning10.png)
 
 バージョン履歴を表示するには、ドキュメント ライブラリでドキュメントを選択し、[アイテム] メニューの [**バージョン履歴**] をクリックします。
 
@@ -90,11 +90,11 @@ ms.locfileid: "58506528"
 レコードは、サイト コレクションのトップレベル サイトにあるアイテム保管ライブラリの [レコード] フォルダーに保存されます。 トップレベル サイトの左側のナビゲーションで、[**サイト コンテンツ**] \> [**アイテム保管ライブラリ**] を選択します。
 <br/><br/>
 
-![アイテム保管ライブラリ](../media/recordversioning11.png)
+![アイテム保管ライブラリ。](../media/recordversioning11.png)
 
 <br/><br/>
 
-![アイテム保管ライブラリの [レコード] フォルダー](../media/recordversioning12.png)
+![アイテム保管ライブラリの [レコード] フォルダー。](../media/recordversioning12.png)
 
 アイテム保管ライブラリのしくみの詳細については、「[SharePoint と OneDrive の保持のしくみ](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive)」を参照してください。
 

@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 3cf1130e13b90c60334b8af76f31d232a084f37a
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: de8d0a0bc1609a3dfac9d177a51ef3903b477de4
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256865"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572949"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft セキュア スコア
 
@@ -44,7 +44,7 @@ Microsoft セキュア スコアは組織のセキュリティ体制を測定す
 
 指標と傾向の堅牢な視覚化、他の Microsoft 製品との統合、類似組織とのスコア比較などを、組織で利用することができます。 スコアは、サードパーティのソリューションが推奨アクションに対応した場合も反映されます。
 
-![Secure Score のホームページ](../../media/secure-score/secure-score-home-page.png)
+![Secure Score のホームページ。](../../media/secure-score/secure-score-home-page.png)
 
 ## <a name="how-it-works"></a>メカニズム
 

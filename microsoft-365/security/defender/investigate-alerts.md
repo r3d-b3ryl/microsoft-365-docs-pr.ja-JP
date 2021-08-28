@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: d27f8849efa9b1548fdb189ff6b1d97e1af5e424
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 92c74ae2f7e7236138f28cf30b3e835eb10b636d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58249148"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572505"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>[アラートの調査] Microsoft 365 Defender
 
@@ -42,7 +42,7 @@ ms.locfileid: "58249148"
 
 アラート **キューには、** 現在の一連のアラートが表示されます。 インシデント ポータル (&) の&>アラートからアラート キューにMicrosoft 365 Defender取得[security.microsoft.com)。](https://security.microsoft.com)
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="アラート キューの例":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="アラート キューの例。":::
 
 Microsoft Defender for Endpoint、Microsoft Defender for endpoint、Microsoft Defender for microsoft Defender など、さまざまな Microsoft セキュリティ Office 365、Microsoft 365 Defenderここに表示されます。
 
@@ -50,13 +50,13 @@ Microsoft Defender for Endpoint、Microsoft Defender for endpoint、Microsoft De
 
 既定のアラート キューから [フィルター] を選択 **すると、[** フィルター] ウィンドウが表示され、そこからアラートのサブセットを指定できます。 次に例を示します。
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="アラート キューのフィルター ウィンドウの例":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="アラート キューのフィルター ウィンドウの例。":::
 
 次の条件に従ってアラートをフィルター処理できます。
 
 - 緊急度
 - 状態
-- Category
+- カテゴリ
 - 検出ソース
 - タグ
 - ポリシー
@@ -115,7 +115,7 @@ Microsoft Cloud App Security |`ca{GUID}` <br> 例: `ca123a456b-c789-1d2e-12f1g33
 
 アラートを管理するには、その行のアラート キューでアラートを選択して、[警告の管理] **ウィンドウを表示** します。 次に例を示します。
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="アラートの概要ウィンドウの例":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="アラートの概要ウィンドウの例。":::
 
 [ **警告の管理]** ウィンドウでは、次の項目を指定できます。
 

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 3403e8282ae8d1cbcd46a7f8a09cb8d8a70488c08c3f44549694b2d695ddfd15
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 715e3eff39fc4575efdfc236876fdd7c8bc20245
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53844261"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575950"
 ---
 # <a name="create-an-app-to-access-microsoft-365-defender-without-a-user"></a>ユーザーなしでアプリを作成してMicrosoft 365 Defenderにアクセスする
 
@@ -62,7 +62,7 @@ Microsoft 365 Defender一連のプログラム API を使用して、そのデ�
 
 2. [アプリの **登録Azure Active Directory**  >  **新しい登録]**  >  **に移動します**。
 
-   ![アプリケーション登録Microsoft Azureナビゲーションのイメージ](../../media/atp-azure-new-app2.png)
+   ![アプリケーションの登録Microsoft Azureナビゲーションのイメージ。](../../media/atp-azure-new-app2.png)
 
 3. フォームで、アプリケーションの名前を選択し、[登録] を **選択します**。
 
@@ -71,11 +71,11 @@ Microsoft 365 Defender一連のプログラム API を使用して、そのデ�
    > [!TIP]
    > *Microsoft Threat Protection* は、元のMicrosoft 365 Defenderの名前であり、元のリストには表示されません。 テキスト ボックスに名前を書き込み始め、表示を確認する必要があります。
 
-   ![API アクセス許可の選択のイメージ](../../media/apis-in-my-org-tab.PNG)
+   ![API アクセス許可の選択のイメージ。](../../media/apis-in-my-org-tab.PNG)
 
 5. [アプリケーション **のアクセス許可] を選択します**。 シナリオに関連するアクセス許可 **(Incident.Read.All** など) を選択し、[アクセス許可の追加 **] を選択します**。
 
-   ![API アクセスと API の選択のイメージ](../../media/request-api-permissions.PNG)
+   ![API アクセスと API の選択のイメージ。](../../media/request-api-permissions.PNG)
 
     > [!NOTE]
     > シナリオに関連するアクセス許可を選択する必要があります。 *すべてのインシデントの読み取り* は、単なる例です。 必要なアクセス許可を決定するには、呼び出す API の **[** アクセス許可] セクションを参照してください。
@@ -84,18 +84,18 @@ Microsoft 365 Defender一連のプログラム API を使用して、そのデ�
 
 6. [管理者 **の同意を付与する] を選択します**。 アクセス許可を追加する度に、[管理者の同意 **を付与** する] を選択して有効に設定する必要があります。
 
-    ![アクセス許可の付与のイメージ](../../media/grant-consent.PNG)
+    ![アクセス許可の付与のイメージ。](../../media/grant-consent.PNG)
 
 7. アプリケーションにシークレットを追加するには、[証明書] &シークレットに説明を追加し、[追加] を **選択します**。
 
     > [!TIP]
     > [追加] を **選択した後**、生成 **されたシークレット値をコピーします**。 退出後にシークレット値を取得できない。
 
-    ![アプリ キーの作成のイメージ](../../media/webapp-create-key2.png)
+    ![アプリ キーの作成のイメージ。](../../media/webapp-create-key2.png)
 
 8. アプリケーション ID とテナント ID を安全な場所に記録します。 アプリケーション ページの [概要] **に** 一覧表示されます。
 
-   ![作成されたアプリ ID のイメージ](../../media/app-and-tenant-ids.png)
+   ![作成されたアプリ ID のイメージ。](../../media/app-and-tenant-ids.png)
 
 9. **Microsoft 365 Defender パートナー** のみ: Microsoft 365 Defender [](./api-partner-access.md) API を介したパートナー アクセスについては、次の手順に従って、アプリをマルチテナントに設定して、管理者の同意を受け取った後に、すべてのテナントで利用できます。 パートナー アクセスは **、** サード パーティ製アプリ (たとえば、複数の顧客のテナントで実行することを目的としたアプリを作成する場合) に必要です。 テナントでのみ **実行** するサービス (独自のデータのみを操作する独自の使用状況用のアプリケーションなど) を作成する場合は、必須ではありません。 アプリをマルチテナントに設定するには、次の方法を実行します。
 
@@ -243,7 +243,7 @@ aadToken = jsonResponse["access_token"]
 
    次の図では、アプリから取得したデコードトークンと、アクセス許可 `Incidents.Read.All` `Incidents.ReadWrite.All` を `AdvancedHunting.Read.All` 表示できます。
 
-   ![トークン検証のイメージ](../../media/webapp-decoded-token.png)
+   ![トークン検証のイメージ。](../../media/webapp-decoded-token.png)
 
 ## <a name="use-the-token-to-access-the-microsoft-365-defender-api"></a>トークンを使用して API にアクセスMicrosoft 365 Defenderする
 

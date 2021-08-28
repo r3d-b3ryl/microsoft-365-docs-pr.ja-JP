@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 description: この記事では、サテライトの場所を追加する方法と、Microsoft 365 Multi-Geoのテナントを構成する方法について説明します。
-ms.openlocfilehash: 76b6b16a0673495abfe5ce920c7f916d37a43f619eacd1c4a2765989e639295b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c60e590f7eddc7f9e03c4754867600a39879cc49
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794988"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58576022"
 ---
 # <a name="microsoft-365-multi-geo-tenant-configuration"></a>Microsoft 365 Multi-Geo テナントの構成
 
@@ -40,7 +40,7 @@ _Microsoft 365 の複数地域機能_ プランは、ユーザー レベルの�
 
 [!INCLUDE [Microsoft 365 Multi-Geo locations](../includes/microsoft-365-multi-geo-locations.md)]
 
-![SharePoint 管理センターの [地域の場所] ページのスクリーン ショット](../media/sharepoint-multi-geo-admin-center.png)
+![管理センターの [地域の場所] ページSharePointスクリーンショット。](../media/sharepoint-multi-geo-admin-center.png)
 
 サテライトの場所を追加する方法
 
@@ -101,7 +101,7 @@ Azure Active Directory (Azure AD) には、クラウドのみのユーザーと�
 
     `(Get-MsolUser -userprincipalName Robyn.Buckley@Contoso.com).PreferredDatalocation`
 
-![set-msoluser を示す PowerShell ウィンドウのスクリーン ショット](../media/multi-geo-tenant-configuration-image3.png)
+![set-msoluser を示す PowerShell ウィンドウのスクリーンショット。](../media/multi-geo-tenant-configuration-image3.png)
 
 標準のユーザー作成フローの一部として、ユーザーの優先されるデータの場所の設定を含めることをお勧めします。
 

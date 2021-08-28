@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アプリ ポリシーついて説明をします。
-ms.openlocfilehash: fae9afa65c4bef1d7288493e92c8b78c6fb9d08fa4426c1087622856b4cec921
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2f22e56195b94f07a6b8499bd69c60d65f37cce8
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53861310"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572241"
 ---
 # <a name="get-started-with-app-policies"></a>アプリ ポリシーの使用を開始する
 
@@ -29,7 +29,7 @@ Microsoft アプリ ガバナンスのアプリ ポリシーは、より積極�
 
 現在のアプリ ポリシーの一覧を表示するには、**[Microsoft 365 コンプライアンス センター] > [アプリ ガバナンス] > [ポリシー]** に移動します。
 
-![Microsoft 365 コンプライアンス センターの MAPG ポリシーの概要ページ](..\media\manage-app-protection-governance\mapg-cc-policies.png)
+![Microsoft 365 コンプライアンス センターの MAPG ポリシーの概要ページ。](..\media\manage-app-protection-governance\mapg-cc-policies.png)
 
 ## <a name="whats-available-on-the-app-policies-dashboard"></a>アプリ ポリシー ダッシュボードで使用できる機能
 

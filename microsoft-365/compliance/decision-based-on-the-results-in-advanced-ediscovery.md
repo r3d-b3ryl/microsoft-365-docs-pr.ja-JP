@@ -17,12 +17,12 @@ ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
 description: ケース ファイルのレビュー セットのAdvanced eDiscoveryを決定するのに役立つデータを提供する方法について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b1bab0cc7460e9260dd8f7bc6b5adb90d5a06a9b0e7832b28f7d3a2cb4e35f85
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: deb47c0c795a828804722085f8cfa3b002580307
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842346"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571364"
 ---
 # <a name="decisions-based-on-relevance-results-in-advanced-ediscovery"></a>関連性に基づく決定は、データのAdvanced eDiscovery
   
@@ -30,7 +30,7 @@ ms.locfileid: "53842346"
   
 ## <a name="using-the-decide-tab"></a>[決定] タブの使用
 
-![関連性の決定](../media/f32fed89-f3b5-404a-90c7-ea25d2eb58a9.png)
+![関連性の決定。](../media/f32fed89-f3b5-404a-90c7-ea25d2eb58a9.png)
   
 このタブには、次のコンポーネントが含まれます。
   

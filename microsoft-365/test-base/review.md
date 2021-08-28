@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 8763d07db48f86a1c4224fc6bde4d992ef6d3701
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: fa046aa0a488b11f172d9ac7182b67e705aad69b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507556"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571183"
 ---
 # <a name="step-6-review-your-selections-to-create-your-package"></a>手順 6: 選択内容を確認してパッケージを作成します。
 
@@ -33,7 +33,7 @@ ms.locfileid: "58507556"
 
 3. これにより、パッケージが Test Base 環境にオンボードされます。 パッケージが正常に作成されると、Azure でパッケージを正常に実行できるかどうかを確認する自動テストがトリガーされます。
 
-    ![成功した結果](Media/successful.png)
+    ![成功した結果。](Media/successful.png)
 
     > [!NOTE]
     > Azure portal から通知を受け取り、パッケージ検証の成功または失敗を通知します。

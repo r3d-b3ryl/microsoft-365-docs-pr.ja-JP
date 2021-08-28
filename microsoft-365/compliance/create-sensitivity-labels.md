@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'すべての Microsoft Information Protection ソリューションの要件: 組織のデータを分類し、保護するための秘密度ラベルを作成、構成、発行します。'
-ms.openlocfilehash: 4b37aeecabdeaef3afebb7144330a5c9df811729
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 2851fd356efe4405d4355547f364f4a147cb26d0
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508120"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571425"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>秘密度ラベルとそのポリシーを作成して構成する
 
@@ -54,14 +54,14 @@ ms.locfileid: "58508120"
 
     たとえば、Microsoft 365 コンプライアンス センターでは、次のようになります。
 
-    ![秘密度ラベルを作成する](../media/create-sensitivity-label-full.png)
+    ![秘密度ラベルを作成する。](../media/create-sensitivity-label-full.png)
 
     > [!NOTE]
     > 既定では、テナントにはラベルはありません。作成する必要があります。 こちらに例示した図のラベルには、[Azure Information Protection から移行](/azure/information-protection/configure-policy-migrate-labels) された既定のラベルが表示されます。
 
 3. **[このラベルのスコープを定義する]** ページで、選択したオプションによって、構成できる設定のラベルのスコープと、公開時に表示される場所が決まります。
 
-    ![機密度ラベルのスコープ](../media/sensitivity-labels-scopes.png)
+    ![機密度ラベルのスコープ。](../media/sensitivity-labels-scopes.png)
 
     - **[ファイルとメール]** が選択されている場合、このウィザードで、Office Word や Outlook などの機密度ラベルをサポートするアプリに適用される設定を構成できます。 このオプションが選択されていない場合、ウィザードはこれらの設定の最初のページを表示しますが、それらを構成することはできず、ユーザーがこれらのアプリでラベルを選択することはできません。
 
@@ -79,7 +79,7 @@ ms.locfileid: "58508120"
 
 既存のラベルを編集するには、目的のラベルを選択し、[**ラベルの編集**] ボタンを選択します。
 
-![[ラベルの編集] ボタンを押して、秘密度ラベルを編集する](../media/edit-sensitivity-label-full.png)
+![[ラベルの編集] ボタンを押して、秘密度ラベルを編集する。](../media/edit-sensitivity-label-full.png)
 
 このボタンを選択すると、[**秘密度ラベルの編集**] ウィザードが起動し、手順 4 のすべてのラベル設定を変更できます。
 
@@ -147,7 +147,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
     たとえば、Microsoft 365 コンプライアンス センターでは、次のようになります。
 
-    ![ラベルを発行](../media/publish-sensitivity-labels-full.png)
+    ![ラベルを発行。](../media/publish-sensitivity-labels-full.png)
 
     > [!NOTE]
     > 既定では、テナントにはラベル ポリシーはありません。作成する必要があります。 
@@ -175,7 +175,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 既存のラベル ポリシーを編集するには、目的のラベル ポリシーを選択し、[**ポリシーの編集**] ボタンを選択します。 
 
-![秘密度ラベルを編集する](../media/edit-sensitivity-label-policy-full.png)
+![秘密度ラベルを編集する。](../media/edit-sensitivity-label-policy-full.png)
 
 このボタンを選択すると、[**ポリシーの作成**] ウィザードが起動し、含めるラベルとラベルの設定を編集できます。 ウィザードを完了すると、選択したユーザーとサービスに変更が自動的にレプリケートされます。
 

@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 4b2775bfe94eb53851e108ed7b7d436f233beea267b3485385801534748ef16c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a372ae3b15b35c03449973fba2b1181a8ed68ac2
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53844064"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575578"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>脅威保護機能を全体にわたって構成Microsoft 365
 
@@ -33,12 +33,12 @@ ms.locfileid: "53844064"
 
 Microsoft は、すべての SaaS アプリケーションへのアクセスを保護するための条件付きアクセスと関連するポリシーの特定のセットをテストし、推奨Microsoft 365。 ポリシーは、ベースライン保護、機密性の高い保護、および高度に規制された保護に推奨されます。 まず、ベースライン保護のポリシーを実装します。
 
-[ ![ ID とデバイス アクセスを構成するための一般的な](../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)ポリシー 
- [このイメージのより大きなバージョンを見る](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)
+[ ![ ID とデバイス アクセスを構成するための一般的なポリシー。](../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png) 
+[このイメージのより大きなバージョンを表示する](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)
 
 ### <a name="to-implement-baseline-protection-for-microsoft-365"></a>ユーザーのベースライン保護を実装Microsoft 365
 
-![ベースライン保護を展開するプロセス](../media/deploy-threat-protection/deploy-threat-protection-identity-access-steps.png) 
+![ベースライン保護を展開するプロセス。](../media/deploy-threat-protection/deploy-threat-protection-identity-access-steps.png) 
 
 1. [Azure id Protection を含む前提条件AD構成します](../security/office-365-security/identity-access-prerequisites.md)。
 2. [ベースライン保護用に共通の ID および](../security/office-365-security/identity-access-policies.md) デバイス アクセス ポリシーを構成します。
@@ -62,7 +62,7 @@ Microsoft Defender for Identity を使用すると、ハイブリッド環境で
 
 ### <a name="to-set-up-microsoft-defender-for-identity"></a>Microsoft Defender for Identity をセットアップするには
 
-![Microsoft Defender for Identity を展開するプロセス](../media/deploy-threat-protection/deploy-azure-atp-steps.png) 
+![Microsoft Defender for Identity を展開するプロセス。](../media/deploy-threat-protection/deploy-azure-atp-steps.png) 
 
 1. [プライマリ環境を保護するために Microsoft Defender for Identity](/azure-advanced-threat-protection/install-atp-step1) をセットアップします。
 2. すべてのドメイン コントローラー[とフォレストを](/azure-advanced-threat-protection/atp-sensor-monitoring)[保護します](/azure-advanced-threat-protection/atp-multi-forest)。
@@ -82,7 +82,7 @@ Microsoft 365 Defenderは、アラート、インシデント、自動調査と�
 
 ### <a name="to-set-up-microsoft-365-defender"></a>ファイルを設定Microsoft 365 Defender
 
-![サーバーを展開するMicrosoft 365 Defender](../media/deploy-threat-protection/deploy-mtp-steps.png) 
+![サーバーを展開するMicrosoft 365 Defender。](../media/deploy-threat-protection/deploy-mtp-steps.png) 
 
 1. [前提条件を確認します](../security/defender/prerequisites.md)。
 2. [[設定] をオンMicrosoft 365 Defender。](../security/defender/m365d-enable.md)
@@ -110,7 +110,7 @@ Microsoft Defender for Office 365を使用すると、組織全体のユーザ�
 
 ### <a name="to-set-up-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
-![Microsoft Defender for Office 365](../media/deploy-threat-protection/deploy-office365-atp-steps.png) 
+![Microsoft Defender for Office 365。](../media/deploy-threat-protection/deploy-office365-atp-steps.png) 
 
 1. [Microsoft Defender のポリシーを設定および構成Office 365します](../security/office-365-security/protect-against-threats.md)。
 2. [Microsoft Defender を表示して使用して、レポートOffice 365します](../security/office-365-security/view-reports-for-mdo.md)。
@@ -127,7 +127,7 @@ Microsoft Defender for Office 365を使用すると、組織全体のユーザ�
 
 ### <a name="set-up-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint のセットアップ
 
-![Microsoft Defender for Endpoint を展開するプロセス](../media/deploy-threat-protection/deploy-mdatp-steps.png) 
+![Microsoft Defender for Endpoint を展開するプロセス。](../media/deploy-threat-protection/deploy-mdatp-steps.png) 
 
 1. [Microsoft Defender for Endpoint の環境を準備します](../security/defender-endpoint/deployment-phases.md)。
 2. [エンドポイント用 Microsoft Defender を展開します](../security/defender-endpoint/production-deployment.md)。
@@ -145,7 +145,7 @@ Microsoft Defender for Office 365を使用すると、組織全体のユーザ�
 
 ### <a name="set-up-microsoft-cloud-app-security"></a>設定Microsoft Cloud App Security
 
-![サーバーを展開するMicrosoft Cloud App Security](../media/deploy-threat-protection/deploy-mcas-steps.png) 
+![サーバーを展開するMicrosoft Cloud App Security。](../media/deploy-threat-protection/deploy-mcas-steps.png) 
 
 1. [ポータルと他の基本的な要件を設定します](/cloud-app-security/general-setup)。
 2. [クラウド検出をセットアップし、](/cloud-app-security/set-up-cloud-discovery) アプリ [を接続します](/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps)。
@@ -161,7 +161,7 @@ Microsoft Defender for Office 365を使用すると、組織全体のユーザ�
 
 脅威保護サービスと機能をセットアップして展開した後、次に、脅威検出を監視し、適切なアクションを実行します。 最適な開始点は、Microsoft 365 セキュリティ センター ( ) で、Microsoft ID、データ、デバイス、アプリ、インフラストラクチャ全体でセキュリティを監視および [https://security.microsoft.com](https://security.microsoft.com) 管理できます。
 
-![Microsoft 365 セキュリティ センター](../media/solutions-architecture-center/m365-security-center.png)
+![Microsoft 365セキュリティ センター。](../media/solutions-architecture-center/m365-security-center.png)
 
 セキュリティ Microsoft 365は、セキュリティ管理者とセキュリティ運用チームを対象とします。 セキュリティ センター Microsoft 365次の機能を使用できます。
 

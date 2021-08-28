@@ -23,12 +23,12 @@ ms.custom:
 description: Microsoft Defender for Office 365オンライン、SharePoint、OneDrive for Business、およびMicrosoft Teams。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d7a3333e228ffdb5b3bf38ed2b4ab119a1e973e9dd71c8db94e26f27d9cb44d2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f9ab3c10292aed5f6f39a8534680cb8e9c5d3551
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56885481"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572433"
 ---
 # <a name="safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>SPO、OneDrive、Teams 用の安全な添付ファイル機能
 
@@ -46,17 +46,17 @@ ms.locfileid: "56885481"
 
 SharePoint セーフ、OneDrive、Microsoft Teams の添付ファイルを有効にし、ファイルを悪意のあるファイルとして識別すると、ファイルストアとの直接統合を使用してファイルがロックされます。 次の画像は、ライブラリで検出された悪意のあるファイルの例を示しています。
 
-![悪意のあるファイルOneDrive for Business検出されたファイルを含むファイル](../../media/2bba71cc-7ad1-4799-8b9d-d56f923db3a7.png)
+![悪意のあるファイルOneDrive for Business検出されたファイルと一緒に保存されます。](../../media/2bba71cc-7ad1-4799-8b9d-d56f923db3a7.png)
 
 ブロックされたファイルは、ドキュメント ライブラリと Web、モバイル、またはデスクトップ アプリケーションに引き続き表示されますが、ユーザーはファイルを開く、コピー、移動、または共有できません。 ただし、ブロックされたファイルは削除できます。
 
 モバイル デバイスでブロックされたファイルの外観の例を次に示します。
 
-![ブロックされたファイルをモバイル アプリOneDrive for BusinessからOneDrive削除する](../../media/cb1c1705-fd0a-45b8-9a26-c22503011d54.png)
+![ブロックされたファイルをモバイル アプリOneDrive for BusinessからOneDrive削除します。](../../media/cb1c1705-fd0a-45b8-9a26-c22503011d54.png)
 
 既定では、ユーザーはブロックされたファイルをダウンロードできます。 ブロックされたファイルをモバイル デバイスでダウンロードする方法を次に示します。
 
-![ブロックされたファイルをダウンロードする方法OneDrive for Business](../../media/be288a82-bdd8-4371-93d8-1783db3b61bc.png)
+![ブロックされたファイルを OneDrive for Business。](../../media/be288a82-bdd8-4371-93d8-1783db3b61bc.png)
 
 SharePointオンライン管理者は、悪意のあるファイルをダウンロードするユーザーを防ぐ可能性があります。 手順については、「ユーザーが悪意のある[ファイルをダウンロードSharePointオンライン PowerShell を使用する」を参照してください](turn-on-mdo-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files)。
 

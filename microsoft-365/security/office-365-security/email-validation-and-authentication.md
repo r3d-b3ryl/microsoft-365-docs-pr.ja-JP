@@ -19,12 +19,12 @@ localization_priority: Priority
 description: 管理者は、Exchange Online Protection (EOP) がメール認証 (SPF、DKIM、および DMARC) を使用してスプーフィング、フィッシング、およびスパムを防ぐ方法を確認できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 38fccc89b7fa3717bd000a23a61b1cf6b69e10488756678d862598f290cf1832
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4662b036ebc92f69e4cba1c1a7b6c8d8231a4b2c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56806855"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575722"
 ---
 # <a name="email-authentication-in-eop"></a>EOP のメール認証
 
@@ -54,7 +54,7 @@ DMARC では、メッセージの **差出人** アドレスを調べること�
 
 2018 年 3 月の時点で、Fortune 500 の企業のうち強力なメール認証ポリシーを公開しているドメインは 9% のみです。 残りの 91% の企業は、攻撃者により、スプーフィングされている可能性があります。 他のメール フィルタリング メカニズムが組み込まれていない場合、これらのドメインの成りすましの装差出人からのメールがユーザーに配信される可能性があります。
 
-![Fortune 500 企業の DMARC ポリシー](../../media/84e77d34-2073-4a8e-9f39-f109b32d06df.jpg)
+![Fortune 500 企業の DMARC ポリシー。](../../media/84e77d34-2073-4a8e-9f39-f109b32d06df.jpg)
 
 中小規模の企業で強力なメール認証ポリシーを公開している割合はさらに少なくなり、北米と西ヨーロッパ以外のメール ドメインでは、その数はさらに少なくなります。
 

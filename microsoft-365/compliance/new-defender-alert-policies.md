@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: noindex,nofollow
 description: Microsoft Defender for Office 365 の新しいアラート ポリシーをリリースします。 また、新しいものに置き換えられた 2 つの既存のアラート ポリシーを廃止します。
-ms.openlocfilehash: 5c4edbb59d3328bb933825ab6a85ab561db93741
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 130bcb9c8511de1f18a8711561bbe6a15544f810
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255361"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564012"
 ---
 # <a name="new-alert-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の新しいアラート ポリシー
 
@@ -85,17 +85,17 @@ Microsoft Defender for Office 365 のゼロ時間自動パージ (ZAP) が受信
 
   - **配信後に削除されたマルウェアを含むメール メッセージ** および **配信後に削除された悪意のあるファイルを含むメール メッセージ**
 
-  ![新規および既存のアラートのアラート ペア](../media/DefenderAlerts.png)
+  ![新規および既存のアラートのアラート ペア。](../media/DefenderAlerts.png)
 
    これらのアラート ペアの管理の詳細については、「[これらの変更に備えるために必要なこと](#what-you-need-to-do-to-prepare-for-these-changes)」セクションを参照してください。
 
 - **AIR 調査**: アラートは単一のAIR調査に関連付けられ、アラートの 1 つは「トリガー」として分類され、もう1つは「繰り返し」として分類されます。
 
-  ![AIR 調査のアラート ペア](../media/AIRAlerts.png)
+  ![AIR 調査のアラート ペア。](../media/AIRAlerts.png)
 
 - **インシデント**: 両方のアラートが同じインシデントに関連付けられます
 
-  ![インシデントのアラート ペア](../media/IncidentsAlerts.png)
+  ![インシデントのアラート ペア。](../media/IncidentsAlerts.png)
 
 ## <a name="what-you-need-to-do-to-prepare-for-these-changes"></a>これらの変更に備えるために必要なこと
 

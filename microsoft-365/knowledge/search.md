@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 description: トピックを検索する方法については、Microsoft Viva トピック。
-ms.openlocfilehash: c73cfba29aaa95463e75e46b81bcfc464ae9a64782d5fb7a7fc76dd6c9144393
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 525ec03621d28c26ecdc717648b3e9d6dcf51024
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794635"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573081"
 ---
 # <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>[Microsoft Searchを使用して、トピックを検索Microsoft Viva トピック
 
@@ -33,7 +33,7 @@ SharePoint スタート ページ、Office.com、または組織のスコープ�
 - 推奨ユーザーまたはピン留めされたユーザー: AI によって提案されたユーザー、またはユーザーがトピックにピン留めしたユーザー
 - 推奨リソースまたはピン留めされたリソース: AI によって提案されたファイル、ページ、またはサイト、またはユーザーによってトピックにピン留めされたサイト。 
 
-   ![検索のトピック](../media/knowledge-management/search-topic-answer.png) 
+   ![検索のトピック。](../media/knowledge-management/search-topic-answer.png) 
 
 トピック の応答カードが表示されない場合でも、トピック ページを検索結果に表示できます。
 

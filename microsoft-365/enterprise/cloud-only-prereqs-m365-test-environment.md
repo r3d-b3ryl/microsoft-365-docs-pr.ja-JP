@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: クラウド専用の認証用の前提条件で ID とデバイスのアクセスをテストするための Microsoft 365 環境を作成します。
-ms.openlocfilehash: 242f17fc2f8241e5a17078286e6e23d4920ca99d
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 5fc29acce595cab33086ea868d927b93b9281167
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58357091"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573129"
 ---
 # <a name="identity-and-device-access-prerequisites-for-cloud-only-in-your-microsoft-365-test-environment"></a>Microsoft 365 テスト環境のクラウド専用の ID およびデバイス アクセスの前提条件
 
@@ -45,7 +45,7 @@ ms.locfileid: "58357091"
 「[軽量な基本構成](lightweight-base-configuration-microsoft-365-enterprise.md)」に説明されている手順に従います。
 最終的な構成は、次のようになります。
 
-![軽量な Microsoft 365 Enterprise テスト環境](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
+![軽量な Microsoft 3656 Enterprise環境です。](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
  
 ## <a name="phase-2-configure-named-locations"></a>フェーズ 2: 名前付きの場所を構成する
 

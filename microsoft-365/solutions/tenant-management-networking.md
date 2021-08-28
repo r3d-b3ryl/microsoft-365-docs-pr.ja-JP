@@ -16,14 +16,14 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: テナントへのネットワーク アクセスを最適化Microsoft 365します。
-ms.openlocfilehash: 6741c47fac4cadab8a6c5df7febc07250219072a4429abe15bf6ba97e41cbeeb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4bf988aca4145d52d8e5e1bb68c6e8cf134be534
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53804542"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575866"
 ---
-# <a name="step-2-optimal-networking-for-your-microsoft-365-for-enterprise-tenants"></a>手順 2. エンタープライズ テナント向けMicrosoft 365最適なネットワーク
+# <a name="step-2-optimal-networking-for-your-microsoft-365-for-enterprise-tenants"></a>手順 2。 エンタープライズ テナント向けMicrosoft 365最適なネットワーク
 
 Microsoft 365には、Teams や Exchange Online、Microsoft Intune などのクラウド生産性アプリと、Microsoft Azure の多くの ID およびセキュリティ サービスが含まれます。 これらのクラウドベースのサービスはすべて、オンプレミス ネットワークまたはインターネット上の任意の場所にあるクライアント デバイスからの接続のセキュリティ、パフォーマンス、および信頼性に依存します。 
 
@@ -43,7 +43,7 @@ Microsoft 365には、Teams や Exchange Online、Microsoft Intune などのク�
 
 従来のエンタープライズ ネットワークの例を次に示します。
 
-![インターネットへの集中アクセスを備え、従来のエンタープライズ ネットワーク](../media/tenant-management-overview/tenant-management-networking-traditional.png)
+![インターネットへの集中アクセスを備え、従来のエンタープライズ ネットワーク。](../media/tenant-management-overview/tenant-management-networking-traditional.png)
 
 この図では、ブランチ オフィスは、ワイド エリア ネットワーク (WAN) デバイスと WAN バックボーンを介して中央オフィスに接続します。 インターネット アクセスは、中央オフィスのネットワーク エッジとインターネット サービス プロバイダー (ISP) のセキュリティまたはプロキシ デバイスを介して行います。 インターネット上では、Microsoft Global Network は世界中の地域で一連のフロント ドアを持っています。 組織は、トラフィックの追加のパケット処理とセキュリティのために中間の場所を使用できます。 組織の組織のMicrosoft 365は、Microsoft グローバル ネットワーク内に位置します。
 
@@ -62,7 +62,7 @@ Microsoft 365には、Teams や Exchange Online、Microsoft Intune などのク�
 
 これらの原則を実装する場合は、エンタープライズ ネットワークの最適化を行い、Microsoft 365。
 
-![ユーザー向けに最適化されたエンタープライズ ネットワークMicrosoft 365](../media/tenant-management-overview/tenant-management-networking-optimized.png)
+![ユーザー向けに最適化されたエンタープライズ ネットワークMicrosoft 365。](../media/tenant-management-overview/tenant-management-networking-optimized.png)
 
 この図では、ブランチ オフィスはソフトウェア定義の WAN デバイス (SDWAN) デバイスを介して独自のインターネット接続を持ち、信頼できる Microsoft 365 トラフィックを地域で最も近いフロント ドアに送信します。 中央オフィスでは、信頼できるMicrosoft 365はセキュリティまたはプロキシ デバイスをバイパスし、中間デバイスは使用されなくなりました。
 
@@ -78,7 +78,7 @@ Microsoft 365には、Teams や Exchange Online、Microsoft Intune などのク�
 
 リモート ワーカーが従来の VPN クライアントを使用して組織ネットワークへのリモート アクセスを取得している場合は、VPN クライアントがスプリット トンネリング サポートを備えていることを確認してください。 スプリット トンネリングを使用しない場合、すべてのリモート作業トラフィックは VPN 接続を介して送信され、そこで組織のエッジ デバイスに転送されて処理され、インターネット上で送信される必要があります。 次に例を示します。
 
-![トンネリングのない VPN クライアントからのネットワーク トラフィック](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-before-tunneling.png)
+![トンネリングのない VPN クライアントからのネットワーク トラフィック。](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-before-tunneling.png)
 
 この図では、Microsoft 365トラフィックは組織を通じて間接的なルートを取る必要があります。これは、VPN クライアントの物理的な場所から遠く離れた Microsoft Global Network フロント ドアに転送される可能性があります。 この間接パスにより、ネットワーク トラフィックが遅延し、全体的なパフォーマンスを低下させます。 
 
@@ -88,7 +88,7 @@ Microsoft 365 クラウドリソースへのアクセスを最適化するには
 
 クラウド アプリへのトラフィックの大部分が VPN 接続をバイパスするスプリット トンネリングMicrosoft 365トラフィック フローを次に示します。
 
-![トンネリングのある VPN クライアントからのネットワーク トラフィック](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-after-tunneling.png)
+![トンネリングを使用した VPN クライアントからのネットワーク トラフィック。](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-after-tunneling.png)
 
 この図では、VPN クライアントは、インターネットを通Microsoft 365、Microsoft グローバル ネットワークに最も近いフロント ドアに対して、重要なクラウド サービス トラフィックを送信および受信します。
 
@@ -125,7 +125,7 @@ Office 365 CDN は静的資産を複数の場所 _(元の場所)_ でホスト�
 
 展開および構成すると、Office 365 CDNはパブリックおよびプライベートのオリジンからアセットをアップロードし、インターネット上にあるユーザーに高速にアクセスできます。
 
-![Office 365 CDN用に展開されている場合](../media/O365-CDN/o365-cdn-flow-transparent.svg "Office 365 CDN用に展開されている場合")
+![Office 365 CDN用に展開されます。](../media/O365-CDN/o365-cdn-flow-transparent.svg "Office 365 CDN用に展開されている場合")
 
 詳細については、「オンラインと一[緒にOffice 365 CDNをSharePointする」を参照してください](../enterprise/use-microsoft-365-cdn-with-spo.md)。
 
@@ -157,7 +157,7 @@ PowerShell、Python、または他の言語を使用して、時間の間にエ�
 
 最適なネットワークを持つエンタープライズ組織とそのテナントの例を次に示します。
 
-![最適なネットワークを持つテナントの例](../media/tenant-management-overview/tenant-management-tenant-build-step2.png)
+![最適なネットワークを持つテナントの例。](../media/tenant-management-overview/tenant-management-tenant-build-step2.png)
 
 [このイメージのより大きなバージョンを表示する](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-management-overview/tenant-management-tenant-build-step2.png)
 
@@ -177,6 +177,6 @@ PowerShell、Python、または他の言語を使用して、時間の間にエ�
 
 ## <a name="next-step"></a>次の手順
 
-[![手順 3.ID を同期し、セキュリティで保護されたサインインを適用する](../media/tenant-management-overview/tenant-management-step-grid-identity.png)](tenant-management-identity.md)
+[![手順 3.ID を同期し、セキュリティで保護されたサインインを適用します。](../media/tenant-management-overview/tenant-management-step-grid-identity.png)](tenant-management-identity.md)
 
 ID を [続行して](tenant-management-identity.md) 、オンプレミスのアカウントとグループを同期し、セキュリティで保護されたユーザー サインインを適用します。

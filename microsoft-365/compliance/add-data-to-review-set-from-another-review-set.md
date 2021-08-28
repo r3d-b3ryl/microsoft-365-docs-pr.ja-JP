@@ -19,12 +19,12 @@ description: 1 つのレビュー セットからドキュメントを選択し�
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: b307f538d40a0c1be1a3355f26fdfcae3dc061a29a242cfcedff51f4c7471ee3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 830f107a3935db23f771e2691fe6e83a5d8d2eff
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53837133"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571171"
 ---
 # <a name="add-data-to-a-review-set-from-another-review-set"></a>別のレビュー セットからレビュー セットにデータを追加
 
@@ -40,12 +40,12 @@ ms.locfileid: "53837133"
 
 ソース レビュー セットの特定のドキュメントを選択するか、レビュー セット クエリで返されたすべてのアイテムを選択し、レビュー セットから別のレビュー セットにコンテンツを追加できます。 選択したアイテムを追加する場合は、アイテムを選択し、[アクション] を選択し、[別のレビュー セットに追加]**を選択します**。
 
-![[アクション] メニューの別のレビュー セットに追加する](../media/64f2a4d4-eba3-4ab3-a3ba-d519feea3142.png)
+![[アクション] メニューの別のレビュー セットに追加します。](../media/64f2a4d4-eba3-4ab3-a3ba-d519feea3142.png)
 
 ## <a name="step-2-specify-options-for-adding-to-another-review-set"></a>手順 2: 別のレビュー セットに追加するためのオプションを指定する
 
 [別の **レビュー セット オプションに追加] フライ** アウト ページで、アイテムを追加するレビュー セットを選択します。 [すべての検索結果] または [ **選択されたアイテム]** **を追加するかどうかを選択します**。  追加情報には、アイテムのすべてのメタデータを含めるオプションと、ドキュメントが新しいレビュー セットに追加される際に、ソース レビュー セットからタグを含める ([ラベル] チェック ボックスをオンにして) 含めるオプションが提供されます。  
 
-![別のレビュー セットにデータを追加するためのオプション](../media/6440ee44-68fd-44d7-b43a-3a477345525c.png)
+![別のレビュー セットにデータを追加するためのオプション。](../media/6440ee44-68fd-44d7-b43a-3a477345525c.png)
 
 [OK] **をクリックすると**、新しいジョブ ([別のレビュー セットにデータを追加 **する]** という名前) が作成され、コンテンツが別のレビュー セットに追加されます。 [ジョブ] タブに **移動** して、このジョブの進行状況を監視できます。 詳細については、「ジョブの管理 [」を参照してください](managing-jobs-ediscovery20.md)。

@@ -12,12 +12,12 @@ ms.custom: seo-marvel-jun2020
 localization_priority: Priority
 description: 金融サービス機関が、Microsoft 365 と Teams を使用して、財務的なセキュリテとコンプライアンスを維持し、効果的に共同作業を行う方法について説明します。
 f1.keywords: NOCSH
-ms.openlocfilehash: 88aa46e08a450953e940d625e7f35cf9732d668d
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: 0e3fada6a74776e4edf2c8c41ef9026ce17871ad
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400273"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568002"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>米国の銀行業および資本市場のための、コンプライアンスとセキュリティの重要な検討事項
 
@@ -53,7 +53,7 @@ Microsoft のパートナーである Protiviti は、この記事のために�
 
 | アイテム | 説明 |
 |:-----|:-----|
-|[![モデル ポスター: Microsoft 365 の情報保護とコンプライアンスの機能](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/>英語: [PDF としてダウンロードする](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [Visio としてダウンロードする](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> 日本語: [PDF としてダウンロードする](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)  \| [Visio としてダウンロードする](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx)<br/> 更新日: 2020 年 11 月|含まれる内容: <ul><li>  Microsoft の情報保護およびデータ損失防止</li><li>アイテム保持ポリシーと保持ラベル </li><li>情報バリア</li><li>コミュニケーション コンプライアンス</li><li>インサイダー リスク</li><li>サードパーティのデータの取り込み</li>|
+|[![モデル ポスター: Microsoft 365 の情報保護とコンプライアンスの機能。](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/>英語: [PDF としてダウンロードする](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [Visio としてダウンロードする](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> 日本語: [PDF としてダウンロードする](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)  \| [Visio としてダウンロードする](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx)<br/> 更新日: 2020 年 11 月|含まれる内容: <ul><li>  Microsoft の情報保護およびデータ損失防止</li><li>アイテム保持ポリシーと保持ラベル </li><li>情報バリア</li><li>コミュニケーション コンプライアンス</li><li>インサイダー リスク</li><li>サードパーティのデータの取り込み</li>|
 
 
 ## <a name="empower-organizational-and-employee-productivity-by-using-microsoft-365-and-teams"></a>Microsoft 365 と Teams を使用して、組織および従業員の生産性を強化する
@@ -187,7 +187,7 @@ Identity Protection が生成して取り込まれるシグナルは、アクセ
 
 Identity Protection は、クラウド インテリジェンスを活用して ID 漏えいから組織を自動的に保護します。クラウド インテリジェンスは、Microsoft エコシステム全体におけるヒューリスティックなユーザーおよびエンティティ行動分析と機械学習に基づく高度な検出に支えられています。
 
-![多数のモニターの前にいるインフォメーション ワーカーの写真](../media/clo1718-portrait-006.jpg)
+![多数のモニターの前にいるインフォメーション ワーカーの写真。](../media/clo1718-portrait-006.jpg)
 
 ## <a name="defend-the-fortress"></a>要塞を防御する
 
@@ -328,7 +328,7 @@ Microsoft 365 のインサイダー リスク管理は、インサイダー リ�
 
 Microsoft 365 では、テナントの[制限](/azure/active-directory/manage-apps/tenant-restrictions)にこの課題に対処するための機能を加えています。 テナントの制限では、従業員による不正な ID (自社のディレクトリに含まれない ID) を使用した外部の Office 365 エンタープライズ テナントへのアクセスを制限するよう構成できます。 現時点で、テナントの制限はテナント全体に適用され、構成されたリストに含まれるテナントへのアクセスだけが許可されます。 Microsoft はこのソリューションの開発を続けており、今後より詳細な制御が可能になり、提供される保護が強化されていきます。
 
-![グラフィック](../media/clo1717-corporate-office-001.jpg)
+![グラフィック。](../media/clo1717-corporate-office-001.jpg)
  
 ## <a name="conclusion"></a>まとめ
 

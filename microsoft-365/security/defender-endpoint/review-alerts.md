@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.date: 5/1/2020
 ms.technology: mde
-ms.openlocfilehash: e379e50eb0b7762f42a7ae945a31ec8b82bd83a625fd171f007d541802fc12b1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 01b9fb5a3483d287f4d43db0a95af6add284b023
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833653"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571279"
 ---
 # <a name="review-alerts-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint のアラートを確認する
 
@@ -32,7 +32,7 @@ ms.locfileid: "53833653"
 **適用対象:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-managealerts-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-managealerts-abovefoldlink)
 
 Microsoft Defender for Endpoint のアラート ページは、選択したアラートに関連する攻撃信号とアラートを組み合わせて、詳細なアラート ストーリーを作成することで、アラートに対する完全なコンテキストを提供します。
 
@@ -53,19 +53,19 @@ Defender for Endpoint でアラートの名前を選択すると、アラート 
 
 - [防止] : 不審なアクションが回避されました。 たとえば、ファイルがディスクに書き込まれたり、実行された場合などです。
 
-  ![脅威を示すアラート ページが防止されました](images/detstat-prevented.png)
+  ![脅威を示すアラート ページが防止されました。](images/detstat-prevented.png)
 
 - ブロック: 疑わしい動作が実行され、ブロックされました。 たとえば、プロセスは実行されましたが、その後疑わしい動作が発生したため、プロセスは終了しました。
 
-  ![脅威がブロックされたという警告ページ](images/detstat-blocked.png)
+  ![脅威を示すアラート ページがブロックされました。](images/detstat-blocked.png)
 
 - 検出: 攻撃が検出され、現在もアクティブである可能性があります。
 
-  ![脅威を示すアラート ページが検出されました](images/detstat-detected.png)
+  ![脅威を示すアラート ページが検出されました。](images/detstat-detected.png)
 
 その後、アラートの詳細ウィンドウで自動調査の詳細を確認し、既に実行されたアクションを確認し、推奨されるアクションに関するアラートの説明を読み取ります。
 
-![警告の説明と自動調査セクションが強調表示された詳細ウィンドウのスニペット](images/alert-air-and-alert-description.png)
+![警告の説明と自動調査セクションが強調表示された詳細ウィンドウのスニペット。](images/alert-air-and-alert-description.png)
 
 アラートが開いた場合に詳細ウィンドウで使用できるその他の情報には、MITRE の手法、ソース、その他のコンテキストの詳細が含まれます。
 
@@ -75,13 +75,13 @@ Defender for Endpoint でアラートの名前を選択すると、アラート 
 
 - **デバイスの** 場合、詳細ウィンドウには、ドメイン、オペレーティング システム、IP など、デバイス自体に関する情報が表示されます。 アクティブな通知と、そのデバイス上のログオンしているユーザーも利用できます。 デバイスを分離したり、アプリの実行を制限したり、ウイルス対策スキャンを実行したりすることで、すぐにアクションを実行できます。 または、調査パッケージを収集したり、自動調査を開始したり、デバイス ページに移動してデバイスの観点から調査することもできます。
 
-   ![デバイスが選択されている場合の詳細ウィンドウのスニペット](images/device-page-details.png)
+   ![デバイスが選択されている場合の詳細ウィンドウのスニペット。](images/device-page-details.png)
 
 - **ユーザーの** 場合、詳細ウィンドウには、ユーザーの SAM 名や SID などの詳細なユーザー情報と、このユーザーが実行するログオンの種類、およびユーザーに関連するアラートとインシデントが表示されます。 [ユーザー ページを *開く]* を選択すると、そのユーザーの視点から調査を続行できます。
 
-   ![ユーザーが選択されている場合の詳細ウィンドウのスニペット](images/user-page-details.png)
+   ![ユーザーが選択されている場合の詳細ウィンドウのスニペット。](images/user-page-details.png)
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [インシデント キューの表示と整理](view-incidents-queue.md)
 - [インシデントの調査](investigate-incidents.md)

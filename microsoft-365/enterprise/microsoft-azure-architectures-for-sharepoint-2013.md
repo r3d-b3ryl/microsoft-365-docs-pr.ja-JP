@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
 description: 2013 SharePoint 2013 ソリューションの種類を、Microsoft Azure仮想マシンでホストできる方法、および Azure をホストするように設定する方法について説明します。
-ms.openlocfilehash: d7405909e25078086147e2bab7504375b6527ff07c14a1750c9b5971592a4858
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 937072dfec55618a4bfb8f9405bd525023ca3d44
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53858790"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571340"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>SharePoint 2013 用の Microsoft Azure アーキテクチャ
 
@@ -95,7 +95,7 @@ Azure インフラストラクチャ サービスは、SharePoint ソリュー�
   
 **図 2:オンプレミス環境と Azure 間でサイト間接続を提供するための Azure ゲートウェイとオンプレミス ゲートウェイ デバイスの使用**
 
-![オンプレミス環境はクロスプレミス接続 (サイト間 VPN 接続または ExpressRoute が可能) を介して Azure 仮想ネットワークに接続されています](../media/AZarch-VPNgtwyconnct.png)
+![クロスオンプレミス接続によって Azure 仮想ネットワークに接続されるオンプレミス環境 (サイト間 VPN 接続または ExpressRoute)。](../media/AZarch-VPNgtwyconnct.png)
   
 この図では次のようになっています。
   
@@ -113,7 +113,7 @@ Azure における障害復旧の場合、Windows Server AD と DNS をハイブ
   
 **図 3: Active Directory ドメインのハイブリッド構成**
 
-![Azure の仮想ネットワークと SharePoint ファームのサブネットに配置された 2 つの仮想マシンは、レプリカ ドメイン コントローラーおよび DNS サーバーです](../media/AZarch-HyADdomainConfig.png)
+![STwo 仮想マシンは Azure 仮想ネットワークに展開され、ファーム SharePointはレプリカ ドメイン コントローラーと DNS サーバーです。](../media/AZarch-HyADdomainConfig.png)
   
 この図は前の図に基づいて作成されていて、Windows Server AD と DNS のサブネットには 2 つの仮想マシンが追加されています。これらの仮想マシンは、レプリカのドメイン コントローラーと DNS サーバーです。これらは、オンプレミス Windows Server AD 環境の拡張となります。 
   
@@ -137,7 +137,7 @@ Azure における障害復旧の場合、Windows Server AD と DNS をハイブ
   
 **図 4: SharePoint 仮想マシンの配置**
 
-![SharePoint ファーム サブネット内の Azure 仮想ネットワークに追加された、データベース サーバーと SharePoint サーバーの役割](../media/AZarch-SPVMsinCloudSer.png)
+![データベース サーバーとSharePointファーム サブネット内の Azure 仮想ネットワークに追加されたサーバー SharePoint役割。](../media/AZarch-SPVMsinCloudSer.png)
   
 この図は前の図に基づいて作成されていて、それぞれの層で SharePoint ファーム サーバー ロールが追加されています。
   
@@ -153,7 +153,7 @@ SharePoint ファーム用に Azure アーキテクチャを設計する場合�
   
 **図 5: SharePoint ファーム層の高可用性を確保するための Azure 可用性セットの使用**
 
-![SharePoint 2013 ソリューションのための Azure インフラストラクチャ内の可用性セットの構成](../media/AZenv-WinAzureAvailSetsHA.png)
+![2013 年 2013 年の Azure インフラストラクチャでの可用性セットSharePoint構成します。](../media/AZenv-WinAzureAvailSetsHA.png)
   
 この図は、Azure インフラストラクチャ内の可用性セットの構成を示しています。次の各ロールが、それぞれの可用性セットで共有されています。
   
@@ -173,7 +173,7 @@ SharePoint ファームを Azure プラットフォームで調整しなけれ�
   
 **図 6: 3 層ファームにおけるキャパシティとパフォーマンスの目標に関する計画例**
 
-![特定の容量とパフォーマンスの目標を達成するコンポーネント割り当てを含む標準的な SharePoint 2013 のインターネット サイトのアーキテクチャ](../media/AZarch-CapPerfexmpArch.png)
+![2013 SharePoint 2013 年の標準アーキテクチャで、特定の容量とパフォーマンスの目標を満たすコンポーネント割り当て。](../media/AZarch-CapPerfexmpArch.png)
   
 この図では次のようになっています。
   
@@ -189,7 +189,7 @@ SharePoint ファームを Azure プラットフォームで調整しなけれ�
   
 **図 7: 調整前のアプリケーション サーバー層**
 
-![Microsoft Azure 可用性セットのために調整する前の SharePoint Server 2013 アプリケーション サーバー層の例](../media/AZarch-AppServtierBefore.png)
+![可用性セットSharePoint調整する前に、Server 2013 アプリケーション サーバー層Microsoft Azure例を示します。](../media/AZarch-AppServtierBefore.png)
   
 この図では次のようになっています。
   
@@ -205,7 +205,7 @@ SharePoint ファームを Azure プラットフォームで調整しなけれ�
   
 **図 8: 調整後のアプリケーション サーバー層**
 
-![Microsoft Azure 可用性セットのために調整した後の SharePoint Server 2013 アプリケーション サーバー層の例](../media/AZarch-AppServtierAfter.png)
+![可用性SharePointチューニング後の Server 2013 アプリケーション サーバー層Microsoft Azure例。](../media/AZarch-AppServtierAfter.png)
   
 この図は、同じ 4 つのコンポーネントを含み、同一に構成されている 3 つのアプリケーション サーバーすべてを示しています。
   
@@ -213,7 +213,7 @@ SharePoint ファームの各層に可用性セットを追加すると、実装
   
 **図 9:Azure インフラストラクチャ サービスに実装された SharePoint ファーム**
 
-![仮想ネットワーク、クロスプレミス接続、サブネット、VM、および可用性の設定を含む Azure インフラストラクチャ サービスの SharePoint 2013 ファームの例](../media/7256292f-bf11-485b-8917-41ba206153ee.png)
+![仮想SharePoint、クロスオンプレミス接続、サブネット、VM、可用性セットを使用した Azure インフラストラクチャ サービスの 2013 ファームの例を示します。](../media/7256292f-bf11-485b-8917-41ba206153ee.png)
   
 この図は、Azure インフラストラクチャ サービスに実装された、各層内のサーバー用の障害ドメインを提供する可用性セットを備えた SharePoint ファームを示しています。
   

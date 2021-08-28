@@ -20,12 +20,12 @@ ms.custom:
 description: Microsoft 365 で DomainKeys Identified Mail (DKIM) を使用して、カスタム ドメインから送信されたメッセージが送信先のメール システムから信頼されるようにする方法を説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d9f425f94843f2e37026a87a5eab2c8743acc494
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 25c83dedaa9f1606744e54459a0ebfb5627be752
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533269"
+ms.locfileid: "58575482"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>DKIM を使用して、カスタム ドメインから送信される送信電子メールを検証する
 
@@ -75,7 +75,7 @@ DKIM を使用すると、送信メールのメッセージ ヘッダー部に�
 
 SPF ではメッセージ エンベロープに情報を追加しますが、DKIM は実際にメッセージ ヘッダー内の署名を *暗号化* します。 メッセージを転送すると、そのメッセージのエンベロープの一部が転送サーバーによって取り除かれる可能性があります。 デジタル署名は、電子メール ヘッダーの一部であるため、電子メール メッセージと共に残ります。したがって、DKIM はメッセージが転送された場合にも機能します。次の例で説明します。
 
-![SPF チェックが失敗したときに DKIM 認証を通過した転送されたメッセージを示す図](../../media/28f93b4c-97e7-4309-acc4-fd0d2e0e3377.jpg)
+![SPF チェックが失敗したときに DKIM 認証を通過した転送されたメッセージを示す図。](../../media/28f93b4c-97e7-4309-acc4-fd0d2e0e3377.jpg)
 
 この例で、ドメインに対して SPF TXT レコードしか発行しなかったとしたら、受信者のメール サーバーによってメールがスパムとしてマークされ、誤検知の結果になる可能性があります。**このシナリオでは DKIM を追加することによって、*誤検知* のスパム報告が減少しています。** DKIM は、IP アドレスだけではなく、公開キー暗号化を使って認証を行うので、SPF よりもはるかに強力な認証形態といえます。展開をする時は DMARC だけでなく、SPF と DKIM の両方を使うことをお勧めします。
 
@@ -89,15 +89,15 @@ SPF ではメッセージ エンベロープに情報を追加しますが、DKI
 
 手順 1: DKIM ページで DKIM を構成するドメインをクリックします (https://security.microsoft.com/dkimv2 または https://protection.office.com/dkimv2)。
 
-![ドメインが選択された Microsoft 365 Defender ポータルの DKIM ページ](../../media/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png)
+![ドメインが選択された Microsoft 365 Defender ポータルの DKIM ページ。](../../media/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png)
 
 手順 2: [DKIM キーの作成] をクリックします。
 
-![[DKIM キーの作成] ボタンを使用したドメイン詳細ポップアップ](../../media/127001645-4ccf89e6-6310-4a91-85d6-aaedbfd501d3.png)
+![[DKIM キーの作成] ボタンを使用したドメイン詳細ポップアップ。](../../media/127001645-4ccf89e6-6310-4a91-85d6-aaedbfd501d3.png)
 
 手順 3: ポップアップ ウィンドウに表示される CNAME をコピーします
 
-![コピーする 2 つの CNAME レコードを含む [CNAME の公開] ポップアップ ウィンドウ](../../media/127001787-3cce2c29-e0e4-4712-af53-c51dcba33c46.png)
+![コピーする 2 つの CNAME レコードを含む [CNAME の公開] ポップアップ ウィンドウ。](../../media/127001787-3cce2c29-e0e4-4712-af53-c51dcba33c46.png)
 
 手順 4: コピーした CNAME レコードを DNS サービス プロバイダーに公開します。
 
@@ -112,7 +112,7 @@ TTL: 3600 (or your provider default)
 
 手順 5: DKIM ページに戻って DKIM を有効にします。
 
-![トグルを [有効] にスライドして、DKIM を有効にする](../../media/126995186-9b3fdefa-a3a9-4f5a-9304-1099a2ce7cef.png)
+![トグルを [有効] にスライドして、DKIM を有効にする。](../../media/126995186-9b3fdefa-a3a9-4f5a-9304-1099a2ce7cef.png)
 
 CNAME レコードが存在しないというエラーが表示された場合は、次が原因である可能性があります。
 
@@ -241,7 +241,7 @@ DNS に CNAME レコードを発行したら、Microsoft 365 で DKIM 署名を�
 
 3. **DKIM** ページで、名前をクリックしてドメインを選択します。
 
-4. 表示される詳細ポップアップで、[**DKIM 署名を使用してこのドメインのメッセージに署名する]** 設定を **[有効]** にします ([![](../../media/scc-toggle-on.png)で切り替える)] を選択します。
+4. 表示される詳細ポップアップで、[**DKIM 署名を使用してこのドメインのメッセージに署名する**] 設定を **[有効]** (![[オンにする]](../../media/scc-toggle-on.png)) にします。
 
    完了したら、[**DKIM キー の回転**] をクリックします。
 

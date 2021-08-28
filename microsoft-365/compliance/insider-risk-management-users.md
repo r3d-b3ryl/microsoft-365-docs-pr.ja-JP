@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 9b097336cadcc4c76c0a9d8026d9a73d079d3572f39dd53a3b98e52caa59cb65
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e50e9b0dfa9119cd3c3f6fe8b45158ca9f8c5cc3
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53879552"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571039"
 ---
 # <a name="insider-risk-management-users-dashboard"></a>Insider リスク管理 ユーザー ダッシュボード
 
@@ -69,7 +69,7 @@ Users **ダッシュボードには、** インサイダー リスク管理ワ�
 - **確認済み違反**: ユーザーのポリシー違反として解決された *ケース* の数。
 - **Case**: ユーザーの現在アクティブなケース。
 
-![Insider リスク管理ユーザー ダッシュボード](../media/insider-risk-users-dashboard.png)
+![Insider リスク管理ユーザー ダッシュボード。](../media/insider-risk-users-dashboard.png)
 
 > [!NOTE]
 > ユーザー ダッシュボードに表示されるユーザーの数は、アクティブなアラートと一致するポリシーの量に応じて、一部のインスタンスで制限される場合があります。 アクティブなアラートを持つユーザーは、アラートが生成されると Users ダッシュボードに表示され、表示されるユーザーの最大数に達するとまれなケースが発生する可能性があります。 この制限が発生した場合、アクティブなアラートが表示されていないユーザーは、既存のユーザー通知がトリアージされたユーザー ダッシュボードに追加されます。

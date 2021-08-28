@@ -14,12 +14,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: e1b1291d7c005f7cded635190ee67658250f3d0e
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 66fff530d67e6211183ea5f9489dcc8497d4fb07
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508000"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571051"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-microsoft-365-compliance-center"></a>従来の電子情報開示検索と保持を Microsoft 365 コンプライアンス センターに移行する
 
@@ -30,7 +30,7 @@ Microsoft 365 コンプライアンス センター では、電子情報開示�
 > [!NOTE]
 > さまざまなシナリオが考えられますので、この記事では、検索を移行し、電子情報開示の主要なケースに移行する一般的なガイダンスを提供Microsoft 365 コンプライアンス センター。 電子情報開示ケースの使用は必ずしも必要とは限らないが、組織内の電子情報開示ケースにアクセスできるユーザーを制御するためのアクセス許可を割り当て、セキュリティの層を追加します。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 - この記事で説明する PowerShell コマンドを実行するには、Microsoft 365 コンプライアンス センターの電子情報開示マネージャー役割グループのメンバーである必要があります。 また、管理センターの検出管理役割グループのメンバー Exchange必要があります。
 
@@ -60,7 +60,7 @@ Get-MailboxSearch
 
 コマンドレットの出力は、次のようになります。
 
-![PowerShell の例Get-MailboxSearch](../media/MigrateLegacyeDiscovery1.png)
+![PowerShell の例 Get-MailboxSearch。](../media/MigrateLegacyeDiscovery1.png)
 
 ## <a name="step-3-get-information-about-the-in-place-ediscovery-searches-and-in-place-holds-you-want-to-migrate"></a>手順 3: 移行する電子情報開示In-Placeと保持In-Place情報を取得する
 
@@ -76,7 +76,7 @@ $search | FL
 
 これら 2 つのコマンドの出力は、次のようになります。
 
-![個々の検索に使用する PowerShell Get-MailboxSearch出力の例](../media/MigrateLegacyeDiscovery2.png)
+![PowerShell 出力の例は、個々のGet-MailboxSearchを使用する場合の出力例です。](../media/MigrateLegacyeDiscovery2.png)
 
 > [!NOTE]
 > この例の保留In-Place期間は無期限です *(ItemHoldPeriod: Unlimited)。* これは、電子情報開示と法的調査のシナリオで一般的です。 保留期間の値が無期限とは異なる場合、保持が保持シナリオでコンテンツを保持するために使用されている可能性が高い理由です。 保持シナリオでセキュリティ & コンプライアンス センター PowerShell の電子情報開示コマンドレットを使用する代わりに [、New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy) と [New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule) を使用してコンテンツを保持することをお勧めします。 これらのコマンドレットを使用した結果は **、New-CaseHoldPolicy** と **New-CaseHoldRule** の使用と似ていますが、保持期間の有効期限が切れた後にコンテンツを削除するなどの保持期間と保持アクションを指定できます。 また、保持コマンドレットを使用しても、保持保持を電子情報開示ケースに関連付ける必要は一切ない。
@@ -88,7 +88,7 @@ $search | FL
 ```powershell
 $case = New-ComplianceCase -Name "[Case name of your choice]"
 ```
-![コマンドの実行New-ComplianceCase例](../media/MigrateLegacyeDiscovery3.png)
+![コマンドの実行例New-ComplianceCaseします。](../media/MigrateLegacyeDiscovery3.png)
 
 ## <a name="step-5-create-the-ediscovery-hold"></a>手順 5: 電子情報開示ホールドを作成する
 
@@ -104,7 +104,7 @@ $policy = New-CaseHoldPolicy -Name $search.Name -Case $case.Identity -ExchangeLo
 New-CaseHoldRule -Name $search.Name -Policy $policy.Identity
 ```
 
-![NewCaseHoldPolicy コマンドレットと NewCaseHoldRule コマンドレットの使用例](../media/MigrateLegacyeDiscovery4.png)
+![NewCaseHoldPolicy コマンドレットと NewCaseHoldRule コマンドレットの使用例。](../media/MigrateLegacyeDiscovery4.png)
 
 ## <a name="step-6-verify-the-ediscovery-hold"></a>手順 6: 電子情報開示の保持を確認する
 
@@ -118,7 +118,7 @@ Get-CaseHoldPolicy -Identity $policy.Identity | Select name, DistributionStatus
 
 *DistributionStatus* プロパティ **の** Success の値は、保留がコンテンツの場所に正常に配置されたことを示します。 配布がまだ完了していない場合は、値 **Pending が** 表示されます。
 
-![PowerShell のGet-CaseHoldPolicy例](../media/MigrateLegacyeDiscovery5.png)
+![PowerShell のGet-CaseHoldPolicy例です。](../media/MigrateLegacyeDiscovery5.png)
 
 ## <a name="step-7-create-the-search"></a>手順 7: 検索を作成する
 
@@ -128,25 +128,25 @@ Get-CaseHoldPolicy -Identity $policy.Identity | Select name, DistributionStatus
 New-ComplianceSearch -Name $search.Name -ExchangeLocation $search.SourceMailboxes -ContentMatchQuery $search.SearchQuery -Case $case.name
 ```
 
-![PowerShell のNew-ComplianceSearch例](../media/MigrateLegacyeDiscovery6.png)
+![PowerShell のNew-ComplianceSearch例です。](../media/MigrateLegacyeDiscovery6.png)
 
 ## <a name="step-8-verify-the-case-hold-and-search-in-the-microsoft-365-compliance-center"></a>手順 8: ケースを確認し、保持し、検索を行Microsoft 365 コンプライアンス センター
 
 すべてが正しく設定されていることを確認するには、[電子情報開示] の [Microsoft 365 コンプライアンス センター] に移動し、[電子情報開示] > [https://compliance.microsoft.com](https://compliance.microsoft.com) **クリックします**。
 
-![Microsoft 365コンプライアンス センターの電子情報開示](../media/MigrateLegacyeDiscovery7.png)
+![Microsoft 365コンプライアンス センターの電子情報開示。](../media/MigrateLegacyeDiscovery7.png)
 
 手順 3 で作成したケースは、[コア電子情報開示] ページ **に一覧表示** されます。 ケースを開き、[保持] タブの一覧にある手順 4 で作成した保留リストに **気付** きます。保留リストを選択すると、保持が適用されたメールボックスの数や配布状態など、フライアウト ページで詳細を表示できます。
 
-![電子情報開示は、電子情報開示のMicrosoft 365 コンプライアンス センター](../media/MigrateLegacyeDiscovery8.png)
+![電子情報開示は、電子情報開示のMicrosoft 365 コンプライアンス センター。](../media/MigrateLegacyeDiscovery8.png)
 
 手順 7 で作成した検索は、ケースの **[検索** ] タブに表示されます。
 
-![電子情報開示ケースの検索 (Microsoft 365 コンプライアンス センター](../media/MigrateLegacyeDiscovery9.png)
+![電子情報開示ケースの検索は、Microsoft 365 コンプライアンス センター。](../media/MigrateLegacyeDiscovery9.png)
 
 電子情報開示検索In-Place移行するが、電子情報開示ケースに関連付けなかった場合は、電子情報開示の [コンテンツ検索] ページに表示Microsoft 365 コンプライアンス センター。
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 - 管理センターの電子情報開示In-Place保持&詳細Exchangeを参照してください。
   

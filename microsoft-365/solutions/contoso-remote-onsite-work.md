@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso Corporation が COVID-19 パンデミックに対してどのように対応し、ハイブリッド作業用のソフトウェア のインストールと更新インフラストラクチャを設計したのかについて説明します。
-ms.openlocfilehash: e40e655801cb8a980dcde4e9be2167b81f12f74cccd2bd43878c66a5aeac5ca5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 06ce48969d35017da47be1e75ec3c374b9afb9a1
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53816705"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575446"
 ---
 # <a name="contosos-covid-19-response-and-support-for-hybrid-work"></a>Contoso 社の COVID-19 の応答とハイブリッド作業のサポート
 
@@ -35,7 +35,7 @@ Contoso 社は、スプリット トンネリング用のノート PC、タブ�
 
 パリ本社と各サテライト オフィスに VPN デバイスをインストールした結果の構成を次に示します。 
 
-![Contoso 社の VPN インフラストラクチャ](../media/contoso-remote-onsite-work/contoso-vpn-infrastructure.png)
+![Contoso の VPN インフラストラクチャ。](../media/contoso-remote-onsite-work/contoso-vpn-infrastructure.png)
 
 インストールされた VPN クライアントを持つリモート ワーカーは、DNS を使用して地域に最も近いオフィスを検索し、そこにインストールされている VPN デバイスに接続します。 スプリット トンネリングを使用すると、オプティマイズ エンドポイントMicrosoft 365へのトラフィックは、ネットワークの場所に最も近い地域にMicrosoft 365されます。 その他のすべてのトラフィックは、VPN 接続を通して VPN デバイスに送信されます。
 
@@ -67,7 +67,7 @@ Microsoft 365、セキュリティ、コンプライアンス機能は、ゼロ�
 
 結果のインフラストラクチャを次に示します。
 
-![Contoso 社のインストールと更新インフラストラクチャ](../media/contoso-remote-onsite-work/contoso-updates-infrastructure.png)
+![Contoso 社のインストールと更新インフラストラクチャ。](../media/contoso-remote-onsite-work/contoso-updates-infrastructure.png)
 
 インストールと更新の動作は、デバイスのコンピューター アカウントを次のいずれかのグループのメンバーにすることで決まります。
 

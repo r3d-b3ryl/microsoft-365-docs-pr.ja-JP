@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '概要: '
-ms.openlocfilehash: b7207a175a900b45e081e40e438495c0b0ed6874
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 003a643bd861d3937d9e0c62f487d36e950f14c9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356170"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575650"
 ---
 # <a name="how-to-opt-in-for-new-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツのデータセンター地域のOffice 365サービスへの新しい移行をオプトインする方法
 
@@ -41,15 +41,15 @@ Microsoft Cloud Germany (Microsoft Cloud Deutschland) でサービスがプロ�
 
 サービスを Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター地域の Office 365 サービスに移行する場合は、[オプトイン] をクリック **します**。
  
-![オプトインの概要](../media/ms-cloud-germany-migration-opt-in/tenant-migration.png)
+![オプトインの概要。](../media/ms-cloud-germany-migration-opt-in/tenant-migration.png)
 
 確認を受け入れる新しいセクションが画面の右側に表示されます。 [ **はい] を** 選択し、[保存] **をクリックします**。
  
-![オプトインの承認](../media/ms-cloud-germany-migration-opt-in/tenant-migration-new-regions.png)
+![オプトインの受け入れ。](../media/ms-cloud-germany-migration-opt-in/tenant-migration-new-regions.png)
 
 テナントに代わってオプトインすると、すべての管理者に[Microsoft **Cloud Germany (Microsoft Cloud Deutschland)** から Office 365 サービスへの移行] セクションの確認が表示されます(オプトインの日付を含む)。 管理者は、メッセージ センターのメッセージ センターで確認を受け取Microsoft 365 管理センター。 
  
-![オプトインの確認](../media/ms-cloud-germany-migration-opt-in/tenant-migration2.png)
+![オプトインの確認。](../media/ms-cloud-germany-migration-opt-in/tenant-migration2.png)
 
 ## <a name="what-happens-after-opting-in-for-migration"></a>移行をオプトインした後は何が起こりますか?
 

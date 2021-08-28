@@ -18,18 +18,18 @@ search.appverid:
 - MOE150
 - MET150
 description: コンテンツ エクスプローラーにより、ラベル付きアイテムをネイティブに表示することができます。
-ms.openlocfilehash: 5cebf4f53a331712df6a480a6d813da7232b5858
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: e1cae053c7b13ceec9c7f3274122cf004c7277e5
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502917"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571388"
 ---
 # <a name="get-started-with-content-explorer"></a>コンテンツ エクスプローラーの使用を開始する
 
 データ分類コンテンツ エクスプローラーにより、概要ページで要約されたアイテムをネイティブに表示することができます。
 
-![折りたたみ済みのコンテンツ エクスプローラーのスクリーンショット](../media/data-classification-content-explorer-1.png)
+![折りたたみ済みのコンテンツ エクスプローラーのスクリーンショット。](../media/data-classification-content-explorer-1.png)
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -111,14 +111,14 @@ SharePoint および OneDrive にあるファイルに対応するデータが�
 ### <a name="export"></a>エクスポート
 **エクスポート** コントロールは、**[すべての場所]** ウィンドウで表示される内容の一覧を含む .csv ファイルを作成します。
 
-![データ分類エクスポート コントロール](../media/data_classification_export_control.png)
+![データ分類エクスポート コントロール。](../media/data_classification_export_control.png)
 
 
 ### <a name="search"></a>検索
 
 Exchange フォルダー、SharePoint、OneDrive サイトなどの場所をドリルダウンするとき、**検索** ツールが表示されます。
 
-![コンテンツ エクスプローラー検索ツール](../media/data_classification_search_tool.png)
+![コンテンツ エクスプローラー検索ツール。](../media/data_classification_search_tool.png)
 
 
 検索ツールの範囲は、**[すべての場所 ]** ウィンドウに表示される内容です。また、検索できる対象は、選択した場所によって異なります。 

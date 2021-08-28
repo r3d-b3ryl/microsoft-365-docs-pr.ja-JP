@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c4d3d1d913dd08a48fb70419133c0c484b3248f8
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 087636fe340939321459be3b2085a363d2629c4f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58589424"
+ms.locfileid: "58575542"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 用 Microsoft Defender for Endpoint
 
@@ -51,8 +51,8 @@ ms.locfileid: "58589424"
 - デバイスの管理特権 (手動展開の場合)
 
 > [!NOTE]
-> Microsoft Defender for Endpoint on Linux エージェントは [OMS エージェントから独立しています](/azure/azure-monitor/agents/agents-overview#log-analytics-agent)。 Microsoft Defender for Endpoint は、独自の独立したテレメトリ パイプラインに依存しています。
->
+>  Microsoft Defender for Endpoint on Linux エージェントは [OMS エージェントから独立しています](/azure/azure-monitor/agents/agents-overview#log-analytics-agent)。 Microsoft Defender for Endpoint は、独自の独立したテレメトリ パイプラインに依存しています。
+> 
 > Microsoft Defender for Endpoint on Linux はまだ Azure Security Center に統合されていません。
 
 ### <a name="installation-instructions"></a>インストール手順
@@ -69,8 +69,10 @@ Linux での Microsoft Defender for Endpoint のインストールと構成に�
     - [Puppet 構成管理ツールを使用した展開](linux-install-with-puppet.md)
     - [Ansible 構成管理ツールを使用した展開](linux-install-with-ansible.md)
     - [Chef 構成管理ツールを使用した展開](linux-deploy-defender-for-endpoint-with-chef.md)
-
+    
 インストールエラーが発生した場合は、「Microsoft Defender for Endpoint on Linux でのインストールエラーのトラブルシューティング [」を参照してください](linux-support-install.md)。
+
+
 
 ### <a name="system-requirements"></a>システム要件
 
@@ -85,6 +87,7 @@ Linux での Microsoft Defender for Endpoint のインストールと構成に�
 
     > [!NOTE]
     > 明示的にリストされていない配布とバージョンはサポートされていません (正式にサポートされている配布から派生している場合でも)。
+
 
 - 最小カーネル バージョン 3.10.0-327
 
@@ -126,7 +129,6 @@ Linux での Microsoft Defender for Endpoint のインストールと構成に�
 サービスを有効にした後、ネットワークまたはファイアウォールを構成して、ネットワークとエンドポイント間の送信接続を許可する必要がある場合があります。
 
 - 監査フレームワーク ( `auditd` ) を有効にする必要があります。
-
   > [!NOTE]
   > 追加されたルールによってキャプチャされたシステム イベントは (s) に追加され、ホストの監査とアップストリーム コレクション `/etc/audit/rules.d/` `audit.log` に影響を与える可能性があります。 Microsoft Defender for Endpoint on Linux で追加されたイベントには、キーがタグ付け `mdatp` されます。
 
@@ -134,20 +136,14 @@ Linux での Microsoft Defender for Endpoint のインストールと構成に�
 
 次のダウンロード可能なスプレッドシートには、ネットワークが接続できる必要があるサービスと関連付けられている URL が一覧表示されます。 これらの URL へのアクセスを拒否するファイアウォールまたはネットワーク フィルタールールが存在しなかっている必要があります。 ある場合は、許可ルール *の作成が* 必要な場合があります。
 
-<br>
-
-****
-
-|ドメインリストのスプレッドシート|説明|
-|---|---|
-|![Microsoft Defender for Endpoint URL スプレッドシートのサム イメージ。](images/mdatp-urls.png)|サービスの場所、地理的な場所、および OS の特定の DNS レコードのスプレッドシート。 <p> ここにスプレッドシートを [ダウンロードします](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)。|
-|||
+| ドメインリストのスプレッドシート | 説明 |
+|:-----|:-----|
+|![Microsoft Defender for Endpoint URL スプレッドシートのサム イメージ。](images/mdatp-urls.png)<br/>  | サービスの場所、地理的な場所、および OS の特定の DNS レコードのスプレッドシート。 <br><br>[ここにスプレッドシートをダウンロードします。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
 
 > [!NOTE]
 > より具体的な URL リストについては [、「Configure proxy and internet connectivity settings」を参照してください](/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server)。
 
 Defender for Endpoint では、次の検出方法を使用してプロキシ サーバーを検出できます。
-
 - 透過プロキシ
 - 静的プロキシの手動構成
 

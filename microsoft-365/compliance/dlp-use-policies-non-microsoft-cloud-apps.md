@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft 以外のクラウド アプリで dlp ポリシーを使用する方法について説明します。
-ms.openlocfilehash: 10e5f8e78b57932c18acfe18631ae8b08d543dd5
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: 5817bad8e02e0aeee6aab88ca1a4cabe45822b51
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502821"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571376"
 ---
 # <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps"></a>Microsoft 以外のクラウド アプリでデータ損失防止ポリシーを使用する
 
@@ -75,17 +75,17 @@ DLP ポリシーの場所を選択する場合は、その場所 **Microsoft Clo
 - 特定のアプリまたはインスタンスを選択するには、[インスタンスの選択] **を選択します**。
 - インスタンスを選択しない場合、ポリシーは、テナント内のすべての接続アプリMicrosoft Cloud App Securityします。
 
-   ![ポリシーを適用する場所](../media/1-dlp-non-microsoft-cloud-app-choose-instance.png)
+   ![ポリシーを適用する場所。](../media/1-dlp-non-microsoft-cloud-app-choose-instance.png)
 
-   ![Box-US と Box-General](../media/2-dlp-non-microsoft-cloud-app-box.png)
+   ![Box-US と Box-General。](../media/2-dlp-non-microsoft-cloud-app-box.png)
 
 サポートされている Microsoft 以外のクラウド アプリごとにさまざまなアクションを選択できます。 アプリごとに異なるアクションがあります (クラウド アプリ API によって異なります)。
 
-![ルールを作成する](../media/3-dlp-non-microsoft-cloud-app-create-rule.png)
+![ルールを作成します。](../media/3-dlp-non-microsoft-cloud-app-create-rule.png)
 
 DLP ポリシーでルールを作成する場合は、Microsoft 以外のクラウド アプリのアクションを選択できます。 サード パーティ製アプリを制限するには、[サードパーティ 製アプリの **制限] を選択します**。
 
-![サード パーティ製アプリの制限](../media/4-dlp-non-microsoft-cloud-app-restrict-third-party-apps.png)
+![サード パーティ製アプリを制限する。](../media/4-dlp-non-microsoft-cloud-app-restrict-third-party-apps.png)
 
 > [!NOTE]
 > Microsoft 以外のアプリに適用される DLP ポリシーは、Microsoft Cloud App Security。 Microsoft 以外のアプリの DLP ポリシーが作成されると、同じポリシーが自動的に作成Microsoft Cloud App Security。

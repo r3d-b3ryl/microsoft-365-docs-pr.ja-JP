@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: テナントのライセンスの機能を計画、移行、および実装するためのステップバイステップのツールを取得します。 サービスまたは実行する必要があるアプリをセットアップするガイドを見つける。
-ms.openlocfilehash: 819a53d10f3793ec337828747ec7cf3bbae3aaea
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 47377a8b8e6733442dc08980c876f36a795fbfdf
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356458"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575626"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Microsoft 365 および Office 365 サービスのセットアップ ガイド
 
@@ -190,7 +190,7 @@ Connectを使用して組織全体をYammer。 この[Yammer展開](https://aka.
 
 Windows 7 と Windows 8.1 デバイスを最新バージョンの Windows 10 にアップグレードする場合は、[Configuration Manager を使用した一括アップグレードに関するガイド](https://aka.ms/win10upgradedemo)を使用します。 必要条件を確認して一括アップグレードを自動的に構成するために提供されるスクリプトを使用します。
 
-### <a name="deploy-office-to-your-users"></a>ユーザー Officeに展開する
+### <a name="deploy-office-to-your-users"></a>Office をユーザーに展開する
 
 Office 展開ツールを使用して、インストールをカスタマイズできる機能を備えた Office アプリをクラウドから展開します。 [[ユーザーにOffice](https://aka.ms/proplusodt)を展開する] ガイドでは、高度な設定を使用してカスタマイズOffice構成を作成したり、事前に構築された推奨構成を使用できます。 ユーザーがセルフ インストールを実行している場合でも、お客様がユーザーに個別または一括で展開している場合でも、この詳細設定ウィザードは、組織に合わせた Office インストールをユーザーに提供するための詳しい手順を提供します。
 
@@ -216,11 +216,11 @@ Intune [Configuration Manager](https://aka.ms/comanagementsetup)共同管理セ�
 
 2. トレーニング ガイド **カード&見** つける。
 
-   ![トレーニング &ガイド カードのMicrosoft 365 管理センター](../media/setup-guides-for-microsoft-365/adminportal-trainingandguides.png)
+   ![トレーニング&ガイド カードをMicrosoft 365 管理センター。](../media/setup-guides-for-microsoft-365/adminportal-trainingandguides.png)
 
 3. [ **ステップ バイ ステップ ガイド] を選択します**。
 
-   ![ページの [セットアップ ガイダンス] ページのスクリーンショットMicrosoft 365 管理センター](../media/setup-guides-for-microsoft-365/adminportal-setupguidance.png)
+   ![ページの [セットアップ ガイダンス] ページのスクリーンショットMicrosoft 365 管理センター。](../media/setup-guides-for-microsoft-365/adminportal-setupguidance.png)
 
 > [!NOTE]
 > テナント管理者のアクセス許可は、テナントにアクセスするためにMicrosoft 365 管理センター。
@@ -229,6 +229,6 @@ Intune [Configuration Manager](https://aka.ms/comanagementsetup)共同管理セ�
 
 各ガイドには、手順、リソース、記事、および必要に応じて構成変更に使用できるスクリプトが記載されています。 これらのガイドでは、小規模組織と大規模組織の両方の特定のニーズを反映した選択肢を提供します。 さらに、ガイダンスには、新しい管理者と経験豊富な管理者の両方のサポートが含まれています。
 
-![セットアップ ガイドの例](../media/setup-guides-for-microsoft-365/m365-setupguide-example.png)
+![セットアップ ガイドの例。](../media/setup-guides-for-microsoft-365/m365-setupguide-example.png)
 
 このガイドを使用して、計画フェーズ、展開およびロールアウト中に特定の Microsoft 365 および Office 365 機能の詳細を確認したり、展開を完了して設定を変更した後に再訪することができます。

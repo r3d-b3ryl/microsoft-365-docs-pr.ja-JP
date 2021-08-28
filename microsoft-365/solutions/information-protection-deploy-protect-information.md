@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: セキュリティMicrosoft 365コンプライアンス機能を展開し、個人情報を保護します。
-ms.openlocfilehash: 3cb4cefb0e7d93964eb10e97e44db9acee9331a795a5fd48defdceb843be1b60
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 084faec3b9c2d7bc9c7da17ee69f7821dd79a754
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857081"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575890"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>データプライバシー規制の対象となる情報を保護する
 
@@ -35,7 +35,7 @@ ms.locfileid: "53857081"
 - Office のメッセージの暗号化 (OME)
 - Teamsサイトのアクセス制御
 
-![データプライバシー規制の対象となる個人情報を保護するための主要なサービス](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-grid.png)
+![データプライバシー規制の対象となる個人情報を保護するための主要なサービス。](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-grid.png)
 
 > [!NOTE]
 > このソリューションでは、データプライバシー規制の対象となる情報を保護するためのセキュリティおよびコンプライアンス機能について説明します。 セキュリティ機能の詳細な一覧については[、「Microsoft 365」Microsoft 365を参照してください](../security/index.yml)。 コンプライアンス機能の詳細な一覧については、「コンプライアンスMicrosoft 365ドキュメント[Microsoft 365参照してください](../compliance/index.yml)。
@@ -84,12 +84,12 @@ Microsoft[の情報保護ソリューション](../compliance/information-protec
 - [Microsoft エンドポイント マネージャー](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)
 - [Windows 情報保護](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)
 
-## <a name="sensitivity-labels"></a>秘密度ラベル
+## <a name="sensitivity-labels"></a>機密ラベル
 
 Microsoft Information Protection フレームワークの感度ラベルを使用すると、ユーザーの生産性と共同作業能力を妨げることなく、組織のデータを分類および保護できます。
 
 > [!div class="mx-imgBorder"]
-> ![Microsoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-labels.png)
+> ![ラベルのMicrosoft 365。](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-labels.png)
 
 ### <a name="prerequisites-for-sensitivity-labels"></a>感度ラベルの前提条件
 
@@ -160,7 +160,7 @@ Microsoft Information Protection フレームワークの感度ラベルを使�
 
 Microsoft 365 コンプライアンス センター から感度ラベルを発行すると、Office アプリに表示され始め、[](../compliance/sensitivity-labels-office-apps.md)ユーザーはコンテンツの作成または編集時にコンテンツを分類および保護できます。
 
-![ラベルの展開フローのMicrosoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-label-flow.png)
+![ラベルの展開フローのMicrosoft 365。](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-label-flow.png)
 
 データのプライバシーを保護するには、暗号化などのルールを含む機密ラベルを、機密情報を含む電子メールまたはコンテンツに手動で適用します。
 
@@ -215,12 +215,12 @@ Microsoft 365 コンプライアンス センター の DLP ポリシーを使�
 また、ローカルにインストールされたバージョンの Excel、PowerPoint、および Word の機密アイテムを監視および保護することもできます。この中には、機密性の高いアイテムを識別し、DLP ポリシーを適用する機能が含まれます。 DLP は、ユーザーがこれらのアプリからコンテンツを共有するときにOfficeします。
 
 > [!div class="mx-imgBorder"]
-> ![DLP でサポートされているワークロード](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-supported-workloads.png)
+> ![DLP でサポートされているワークロード。](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-supported-workloads.png)
 
 次の図は、個人データを保護する DLP の例を示しています。
 
 > [!div class="mx-imgBorder"]
-> ![DLP を使用して個人データを保護する例](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-use.png)
+> ![DLP を使用して個人データを保護する例。](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-use.png)
 
 DLP は、正常性レコードを含むドキュメントまたは電子メールを識別し、そのドキュメントへのアクセスを自動的にブロックするか、電子メールの送信をブロックするために使用されます。 その後、DLP は受信者にポリシー ヒントを通知し、エンド ユーザーと管理者にアラートを送信します。
 
@@ -254,11 +254,11 @@ DLP ポリシーの計画は、次の場合に行います。
 DLP ポリシーは、Microsoft Compliance 管理センターで構成され、保護のレベル、ポリシーが探している機密情報の種類、およびターゲット ワークロードを指定します。 基本的なコンポーネントは、保護とデータの種類を識別することです。
 
 > [!div class="mx-imgBorder"]
-> ![DLP ポリシーの構成 (Microsoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-config.png)
+> ![DLP ポリシーの構成 (Microsoft 365)。](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-config.png)
 
 GDPR を認識する DLP ポリシーの例を次に示します。
 
-![GDPR を認識する DLP ポリシーの例](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-policy.png)
+![GDPR を認識する DLP ポリシーの例。](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-policy.png)
 
 DLP [ポリシーの作成](../compliance/create-test-tune-dlp-policy.md) と適用の詳細については、この記事を参照してください。
 
@@ -266,7 +266,7 @@ DLP [ポリシーの作成](../compliance/create-test-tune-dlp-policy.md) と適
 
 次の表に、DLP を使用して保護を強化する 3 つの構成を示します。
 
-![DLP によるデータプライバシーの保護レベル](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-protection-levels.png)
+![DLP を使用したデータプライバシーの保護レベル。](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-protection-levels.png)
 
 最初の構成である Awareness は、データプライバシー規制のコンプライアンスニーズに対応するために、開始点と最小レベルの保護として使用できます。
 
@@ -287,7 +287,7 @@ DLP [ポリシーの作成](../compliance/create-test-tune-dlp-policy.md) と適
 これらの要素が決定したら、機密情報の種類、分類の機密ラベル付け、および DLP ポリシーを一緒に使用できます。 次の図は、例を示しています。
 
 > [!div class="mx-imgBorder"]
-> ![DLP を操作する感度ラベルの例](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
+> ![DLP を操作する感度ラベルの例。](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
 
 [このイメージのより大きなバージョンを表示する](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
 

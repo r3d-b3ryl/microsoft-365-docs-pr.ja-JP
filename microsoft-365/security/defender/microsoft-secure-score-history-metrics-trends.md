@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: b5fbfae845c320e0d38293cff0d859165217a385
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 0bb4b57e3f212820852f23af2665f11f99e5be95
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255162"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575914"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>Microsoft Secure Score の履歴を追跡し、目標を達成する
 
@@ -40,13 +40,13 @@ ms.locfileid: "58255162"
 
 グラフの下には、選択した時間範囲で行ったすべてのアクションとその属性 (結果のポイントやカテゴリなど) の一覧が表示されます。 日付範囲をカスタマイズし、カテゴリ別にフィルター処理できます。
 
-![アクティビティ履歴](../../media/secure-score/secure-score-history-activity.png)
+![アクティビティの履歴。](../../media/secure-score/secure-score-history-activity.png)
 
 アクティビティに関連付けられた改善アクションを選択すると、完全な改善アクションのフライアウトが表示されます。
 
 特定の改善アクションのすべての履歴を表示するには、フライアウトで履歴リンクを選択します。
 
-![改善アクションの履歴](../../media/secure-score/secure-score-history-flyout.png)
+![改善アクションの履歴。](../../media/secure-score/secure-score-history-flyout.png)
 
 ## <a name="discover-trends-and-set-goals"></a>傾向を発見し、目標を設定する
 
@@ -66,7 +66,7 @@ ms.locfileid: "58255162"
 
 比較棒グラフは [概要] **タブ** です。グラフにカーソルを合わせると、スコアとスコアの機会が表示されます。 比較データは匿名化され、他のテナントが混在しているかどうかは正確にはわかりません。
 
-![類似する組織のスコアの棒グラフ](../../media/secure-score/secure-score-comparison-bar.png)
+![類似する組織のスコアの棒グラフ。](../../media/secure-score/secure-score-comparison-bar.png)
 
 - **お客様のような組織**: 他のテナントの平均スコア (比較するテナントが少なくとも 5 つ以上ある場合) は、次の条件を満たします。
     1. 同じ業界
@@ -89,7 +89,7 @@ ms.locfileid: "58255162"
 
 [指標 **と傾向&]** タブで、組織の Secure Score が他のユーザーの時間と比較する方法を確認します。
 
-![同様の組織の時間のスコアの線グラフ](../../media/secure-score/secure-score-comparison-trend.png)
+![同様の組織の時間のスコアの線グラフ。](../../media/secure-score/secure-score-comparison-trend.png)
 
 ## <a name="we-want-to-hear-from-you"></a>ご意見をお聞かせください。
 

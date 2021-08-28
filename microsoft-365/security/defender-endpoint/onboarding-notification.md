@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9c4fa624d6c0fb6ea299834fd4b57f37dd5f8f7c
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 9b00d971afa714b89a473ff75cf6022f8bba9ef8
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58531565"
+ms.locfileid: "58572565"
 ---
 # <a name="create-a-notification-rule-when-a-local-onboarding-or-offboarding-script-is-used"></a>ローカル オンボーディングスクリプトまたはオフボード スクリプトを使用する場合に通知ルールを作成する
 
@@ -54,18 +54,18 @@ ms.locfileid: "58531565"
 
 2. [スケジュール済 **み] の [>のフロー>から] に移動します**。
 
-    ![フローのイメージ](images/new-flow.png)
+    ![フローのイメージ。](images/new-flow.png)
 
 3. スケジュールされたフローを作成します。
    1. フロー名を入力します。
    2. 開始時刻を指定します。
    3. 頻度を指定します。 たとえば、5 分ごとに。
 
-    ![通知フローのイメージ](images/build-flow.png)
+    ![通知フローのイメージ。](images/build-flow.png)
 
 4. +ボタンを選択して新しいアクションを追加します。 新しいアクションは、Defender for Endpoint セキュリティ センター デバイス API への HTTP 要求です。 また、既定の "WDATP Connector&quot; (アクション: &quot;Machines - Get list of machines") に置き換えすることもできます。
 
-    ![繰り返しのイメージとアクションの追加](images/recurrence-add.png)
+    ![繰り返しのイメージとアクションの追加。](images/recurrence-add.png)
 
 5. 次の HTTP フィールドを入力します。
 
@@ -78,19 +78,19 @@ ms.locfileid: "58531565"
    - 資格情報の種類: [シークレット] を選択します。
    - シークレット: サインインして、アプリの登録Azure Active Directory >に移動し、テナント https://portal.azure.com ID の値を取得します。 
 
-    ![HTTP 条件のイメージ](images/http-conditions.png)
+    ![HTTP 条件のイメージ。](images/http-conditions.png)
 
 6. [新しいアクションの追加] を選択して新しい手順を追加 **し** 、[データ操作] を検索 **し** 、[JSON の解析] **を選択します**。
 
-    ![データ操作のイメージ](images/data-operations.png)
+    ![データ操作のイメージ。](images/data-operations.png)
 
 7. [コンテンツ] フィールドに **Body を追加** します。
 
-    ![解析 JSON のイメージ](images/parse-json.png)
+    ![解析 JSON のイメージ。](images/parse-json.png)
 
 8. [サンプル ペイロード **を使用してスキーマを生成する] リンクを選択** します。
 
-    ![ペイロードを使用した解析 json のイメージ](images/parse-json-schema.png)
+    ![ペイロードを含む解析 json のイメージ。](images/parse-json-schema.png)
 
 9. 次の JSON スニペットをコピーして貼り付けます。
 
@@ -179,22 +179,22 @@ ms.locfileid: "58531565"
     - はいの場合、通知はトリガーされません
     - いいえの場合は、新しいオンボード デバイスが [SharePoint] リストに登録され、Defender for Endpoint 管理者に通知が送信されます。
 
-    ![それぞれの適用イメージ](images/flow-apply.png)
+    ![それぞれの画像に適用されます。](images/flow-apply.png)
 
-    ![取得項目を持つ各項目に適用するイメージ](images/apply-to-each.png)
+    ![取得項目を持つ各項目に適用されるイメージ。](images/apply-to-each.png)
 
 11. [ **条件]** で、次の式を追加します。"length(body('Get_items')?'value']) をクリックし、条件を 0 に設定します。
 
-    ![各条件に適用される画像 ](images/apply-to-each-value.png)
-     ![ condition1 の画像 ](images/conditions-2.png)
-     ![ condition2 ](images/condition3.png)
-     ![ 送信メールの画像](images/send-email.png)
+    ![各条件に適用されるイメージ。 ](images/apply-to-each-value.png)
+     ![condition1 のイメージ。 ](images/conditions-2.png)
+     ![condition2 のイメージ。 ](images/condition3.png)
+     ![電子メールの送信イメージ。](images/send-email.png)
 
 ## <a name="alert-notification"></a>アラート通知
 
 次の図は、電子メール通知の例です。
 
-![電子メール通知の画像](images/alert-notification.png)
+![電子メール通知のイメージ。](images/alert-notification.png)
 
 ## <a name="tips"></a>ヒント
 

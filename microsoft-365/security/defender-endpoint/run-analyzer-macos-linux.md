@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 6fdf9509d6d951ed500462a6fc95e1db6c9e9cb8
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: cc642d06d6f2cb253140e902114f4c2840a58036
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507964"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573009"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>macOS または Linux でクライアント アナライザーを実行する
 
@@ -65,7 +65,7 @@ ms.locfileid: "58507964"
 
 例:
 
-![コマンド ラインの例のイメージ](images/4ca188f6c457e335abe3c9ad3eddda26.png)
+![コマンド ラインの例のイメージ。](images/4ca188f6c457e335abe3c9ad3eddda26.png)
 
 その他の構文ヘルプ:
 

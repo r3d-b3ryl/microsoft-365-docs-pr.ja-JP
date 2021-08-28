@@ -18,12 +18,12 @@ ms.assetid: 82c97bb4-2b64-4edc-804d-cedbda525d22
 ms.custom:
 - seo-marvel-apr2020
 description: 既存のコンテンツ検索の CSV ファイルを使用して、特定の電子メール アイテムを返す ID リスト検索を作成します。
-ms.openlocfilehash: db22ac702e71004d73728350acf4242c9a5ac25d59749584dc8a7948ff2d1065
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3fc43f410d6361ac655f7f839b6b4f8752483ef9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53871952"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571075"
 ---
 # <a name="prepare-a-csv-file-for-an-id-list-content-search"></a>ID リストコンテンツ検索用の CSV ファイルを準備する
 
@@ -35,7 +35,7 @@ ID リスト検索を作成するプロセスの簡単な概要を次に示し�
 
 1. 新しい検索を作成して実行するには、Microsoft 365 コンプライアンス センター。
 
-2. コンテンツ検索結果またはコンテンツ検索レポートをエクスポートします。 詳細については、以下を参照してください。
+2. コンテンツ検索結果またはコンテンツ検索レポートをエクスポートします。 詳しくは、次のトピックを参照してください。
 
     - [コンテンツ検索の結果をエクスポートする](export-search-results.md)
 
@@ -69,7 +69,7 @@ CSV ファイルは、サイトおよび SharePoint アカウントOneDrive含�
 
     ID リスト コンテンツ検索用に送信する準備が整った CSV ファイルの例を次に示します。
 
-    ![対象コンテンツ検索用の CSV ファイルの例](../media/SearchIDListCSVFile.png)
+    ![対象コンテンツ検索用の CSV ファイルの例。](../media/SearchIDListCSVFile.png)
 
 6. CSV ファイルを保存するか、[ **名前を付けて保存** ] を使用して、別のファイル名でファイルを保存します。 どちらの場合も、必ず CSV 形式でファイルを保存してください。
 
@@ -94,12 +94,12 @@ CSV ファイルは、サイトおよび SharePoint アカウントOneDrive含�
 
     生成されたクエリと推定検索結果数を示す ID リスト検索のフライアウト ページの例を次に示します。
 
-    ![ID リスト検索の検索クエリ](../media/SearchIDListFlyout.png)
+    ![ID リスト検索の検索クエリ。](../media/SearchIDListFlyout.png)
 
     ID 検索の統計情報に表示される推定アイテムの数は、CSV ファイルで選択したアイテムの数と一致する必要があります。
 
 6. ID リスト検索で返されるアイテムをプレビューまたはエクスポートします。
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 ID リスト検索の作成後にメールボックスを移動した場合、検索のクエリは指定されたアイテムを返します。 これは、メールボックスアイテムの **DocumentId** プロパティが、メールボックスを移動するときに変更されるためです。 まれに、ID リスト検索を作成した後にメールボックスを移動する場合は、新しいコンテンツ検索を作成し (または既存の検索の検索結果を更新する) し、検索結果またはレポートをエクスポートして、新しい ID リスト検索の作成に使用できる更新された CSV ファイルを生成する必要があります。

@@ -15,12 +15,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Azure AD Id Protection を構成し、エンタープライズ テスト環境用にMicrosoft 365アカウントを分析します。
-ms.openlocfilehash: 68b77803b4a2955efe58f742e27cb4fa6cfbb58c
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 446462215069c0bcc72e36c7c62260de0694f600
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356314"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572673"
 ---
 # <a name="azure-ad-identity-protection-for-your-microsoft-365-for-enterprise-test-environment"></a>エンタープライズ AD環境向け Azure Microsoft 365 ID 保護
 
@@ -33,7 +33,7 @@ Azure Active Directory (Azure AD) IDENTITY Protection を使用して、組織�
 - [フェーズ 1: エンタープライズ テスト環境Microsoft 365を構築する](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
 - [フェーズ 2: Azure AD ID 保護を使用する](#phase-2-use-azure-ad-identity-protection)
 
-![Microsoft クラウドのテスト ラボ ガイド](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Microsoft クラウドのテスト ラボ ガイド。](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > エンタープライズ テスト ラボ ガイド スタックの Microsoft 365 内のすべての記事への視覚的なマップについては、「Microsoft 365 テスト ラボ ガイド スタック」[を参照してください](../downloads/Microsoft365EnterpriseTLGStack.pdf)。

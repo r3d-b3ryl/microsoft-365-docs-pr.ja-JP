@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アプリの脅威の検出と修復について説明します。
-ms.openlocfilehash: 9d4a4b9f6ed7b10cb6e0626625f334063289a5905488325895be6e6ed6aa5a3f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0812615a8a0ed78f0649a59a0f884f1c37a9e368
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842658"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571545"
 ---
 # <a name="learn-about-app-threat-detection-and-remediation"></a>アプリの脅威の検出と修復に関する詳細情報
 
@@ -58,7 +58,7 @@ Microsoft アプリ ガバナンスを使用すると、次の情報を確認で
 
 統合の概要は次のとおりです。
 
-![Azure AD と Microsoft Cloud App Security を使用したアプリ ガバナンスの統合](..\media\manage-app-protection-governance\mapg-integration.png)
+![Azure AD と Microsoft Cloud App Security を使用したアプリ ガバナンスの統合。](..\media\manage-app-protection-governance\mapg-integration.png)
 
 また、アプリ ガバナンスはそのアラートをシグナルとして Microsoft Cloud App Security と Microsoft 365 Defender に送信し、アプリベースのセキュリティ インシデントをより詳細に分析することができます。
 

@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 - BCS160
 description: 'スプレッドシートまたは他の CSV 形式のファイルMicrosoft 365リストから複数のユーザーをビジネス用に追加する方法について説明します。 YouTube で、アカウントをユーザーに追加する方法を説明するビデオをMicrosoft 365。 このプロセスの最後に、アカウントを持つ各ユーザーにメールボックスがMicrosoft 365されます。 '
-ms.openlocfilehash: bb0ed6212cde61693024bcd2fdca9f1d6c3f42dbb063f67324be3d87219f46cf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5df43af8d01dce11c063b3d29fb2323b997580bf
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835417"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572697"
 ---
 # <a name="add-several-users-at-the-same-time-to-microsoft-365---admin-help"></a>複数のユーザーを同時にユーザーに追加する - Microsoft 365 ヘルプ
 
@@ -88,11 +88,11 @@ CSV ファイルは、コンマで区切られた値を含むファイルです�
   
 新しい名前でファイルを保存し、CSV 形式を指定します。
   
-![Excel でファイルを CSV 形式で保存する方法を示した画像](../media/35a86ebe-63ab-4b4d-9a92-e177de33ebae.png)
+![CSV 形式でファイルを保存する方法Excel画像です。](../media/35a86ebe-63ab-4b4d-9a92-e177de33ebae.png)
   
 ファイルを保存するときに、CSV 形式でファイルを保存すると、ブックの一部の機能が失われるというメッセージが表示されることがあります。 このメッセージは問題ありません。 [ **はい**] をクリックして続けます。
   
-![CSV 形式でファイルを保存するかどうかを確認する Excel メッセージの画像](../media/51032a81-690c-45ef-bfc5-09ea7f790e98.png)
+![ファイルを CSV 形式で本当に保存Excelを求めるプロンプトの画像です。](../media/51032a81-690c-45ef-bfc5-09ea7f790e98.png)
   
 ### <a name="tips-for-formatting-your-spreadsheet"></a>スプレッドシートの書式設定のヒント
 

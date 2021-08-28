@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なものを保持し、必要でないものを削除するためにラベルを自動的に適用できるように、保持ラベルと自動ラベル付けポリシーを作成します。
-ms.openlocfilehash: 55fa863dca2caf3a88c7127993c392c510953af8
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: cb693fb60277e5262578cc442df7e1c5ba3f3c16
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58506456"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572253"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>保持ラベルを自動的に適用してコンテンツを保持または削除する
 
@@ -48,7 +48,7 @@ ms.locfileid: "58506456"
 
 保持ラベルを自動的に適用するプロセスは、次の条件に基づいています。
 
-![自動適用ラベルの役割とタスクの図](../media/32f2f2fd-18a8-43fd-839d-72ad7a43e069.png)
+![自動適用ラベルの役割とタスクの図。](../media/32f2f2fd-18a8-43fd-839d-72ad7a43e069.png)
 
 次の手順を 2 つの管理手順に使用します。
 
@@ -154,7 +154,7 @@ ms.locfileid: "58506456"
 
 機密情報用に自動適用の保持ラベル ポリシーを作成するときに、データ損失防止 (DLP) ポリシーを作成するときと同じポリシー テンプレートの一覧が表示されます。 各テンプレートは、特定の種類の機密情報を見つけるように事前に設定されています。 以下の例では、機密情報の種類は、**[プライバシー]** カテゴリと **米国個人情報 (PII) データ** テンプレートのものです。
 
-![機密情報の種類によるポリシー テンプレート](../media/sensitive-info-configuration.png)
+![機密情報の種類によるポリシー テンプレート。](../media/sensitive-info-configuration.png)
 
 機密情報の種類の詳細については、「[機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)」を参照してください。 現在、このシナリオでは、[完全なデータ一致](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)と[ドキュメント フィンガープリンティング](document-fingerprinting.md)はサポートされていません。
 
@@ -174,7 +174,7 @@ ms.locfileid: "58506456"
 
 特定の単語、フレーズ、または検索可能なプロパティの値を含むクエリを使用して、コンテンツにラベルを自動で適用できます。AND、OR、NOT などの検索演算子を使用してクエリを絞り込むことができます。
 
-![クエリ エディター](../media/new-retention-query-editor.png)
+![クエリ エディター。](../media/new-retention-query-editor.png)
 
 キーワード クエリ言語 (KQL) 構文の詳細については、「[キーワード クエリ言語 (KQL) 構文のリファレンス](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)」をご覧ください。
 
@@ -259,7 +259,7 @@ ProgID:Media AND ProgID:Meeting
 
 トレーニング可能な分類子のオプションを選択すると、組み込み分類子またはカスタム分類子のいずれかを選択できます。 組み込み分類子には、**履歴書**、**ソース コード**、**個人を標的にしたハラスメント**、**冒とく**、および **脅威** が含まれます。
 
-![トレーニング可能な分類子の選択](../media/retention-label-classifers.png)
+![トレーニング可能な分類子の選択。](../media/retention-label-classifers.png)
 
 > [!CAUTION]
 > 組み込みの [**不快な言葉**] は、誤検知の数が多いため、廃止予定です。 この組み込み分類子を使用しないでください。現在使用している場合は、ビジネス プロセスを移動する必要があります。 代わりに、[**個人を標的にしたハラスメント**]、[**冒涜的表現**]、および [**脅威**] の組み込み分類子を使用することをお勧めします。
@@ -279,7 +279,7 @@ ProgID:Media AND ProgID:Meeting
 
 保持ラベルを自動適用する場合、条件に一致する既存のコンテンツすべてに保持ラベルが適用されるまでに最大 7 日間かかります。
   
-![自動適用ラベルが有効になるタイミングの図](../media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
+![自動適用ラベルが有効になるタイミングの図。](../media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
 
 予期されるラベルが 7 日経っても表示されない場合は、コンプライアンス センターの **[ラベル ポリシー]** ページから選択して、自動適用ポリシーの **状態** を確認します。 **オフ (エラー)** の状態が表示され、場所の詳細に、ポリシーの展開 (SharePoint の場合) またはポリシーの再展開 (OneDrive の場合) に予想よりも時間がかかっているというメッセージが表示される場合は、[Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell コマンドを実行して、ポリシーの配布を再試行してください:
 

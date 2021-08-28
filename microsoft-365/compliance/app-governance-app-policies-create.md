@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アプリ ポリシーを作成します。
-ms.openlocfilehash: 22836d5eff088d8bf76a418f6713a9ae84d0cb5e85d2065fcd64faec62131c26
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3b5f4bda7855f79e8a0e731cd6c26793ac9c6927
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842708"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572265"
 ---
 # <a name="create-app-policies"></a>アプリ ポリシーを作成する
 
@@ -169,7 +169,7 @@ Publish metadata-based policies
 
 アプリ ポリシーが作成されたら、**[ポリシー]** ページで監視し、テスト中に想定される数のアクティブなアラートと合計アラートが登録されていることを確認する必要があります。
 
-![強調表示されたポリシーを含む Microsoft 365 コンプライアンス センターの MAPG ポリシーの概要ページ](..\media\manage-app-protection-governance\mapg-cc-policies-policy.png)
+![強調表示されたポリシーを含む Microsoft 365 コンプライアンス センターの MAPG ポリシーの概要ページ。](..\media\manage-app-protection-governance\mapg-cc-policies-policy.png)
 
 アラートの数が想定外に少ない場合は、アプリ ポリシーの設定を編集して、状態を設定する前に正しく構成されていることを確認してください。
 
@@ -180,7 +180,7 @@ Publish metadata-based policies
 3. 想定外の動作の場合は、必要に応じてポリシー アプリ、条件、アクションの設定を編集し、手順 2 に戻ります。
 4. 想定どおりの動作であれば、ポリシーを編集して、状態を **[アクティブ]** に変更します。
 
-![アプリ ポリシー作成のワークフロー](../media/manage-app-protection-governance/mapg-create-new-policy-process.png)
+![アプリ ポリシー作成のワークフロー。](../media/manage-app-protection-governance/mapg-create-new-policy-process.png)
 
 ## <a name="next-step"></a>次の手順
 

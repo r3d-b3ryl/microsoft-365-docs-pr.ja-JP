@@ -12,18 +12,18 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: fad8d20e0c3e6e1d3e8a9587a211fb109d869d1ab849c8e6948b9f476e543820
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6fa7ab5b30a4cfad8ec4305c0ddf8fcda1c6f284
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53880178"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571352"
 ---
 # <a name="insider-risk-management-audit-log"></a>Insider リスク管理監査ログ
 
 インサイダー リスク管理監査ログを使用すると、インサイダー リスク管理機能で実行されたアクションについて情報を得られます。 このログを使用すると、1 つ以上のインサイダー リスク管理役割グループに割り当てられたユーザーが実行したアクションを個別に確認できます。 インサイダー リスク管理監査ログは組織で自動的に有効になり、無効にすることはできません。
 
-![Insider リスク管理監査ログ](../media/insider-risk-audit-log.png)
+![Insider リスク管理監査ログ。](../media/insider-risk-audit-log.png)
 
 監視対象のアクティビティが発生すると、監査ログは自動的に直ちに更新され、ログはアクティビティに関する情報を 180 日間 (約 6 か月間) 保持します。 180 日後、アクティビティのデータはログから完全に削除されます。
 

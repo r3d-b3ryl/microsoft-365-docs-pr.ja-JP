@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コンテンツ エクスプローラーでトレーニング可能な分類子にフィードバックを提供する方法について学習します。
-ms.openlocfilehash: fddb25bb1ebf702d19767c13f65df4f925fcfc78a7036eb769b96241b271471c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7c021a1fb7a79e335f53fd99b162c9062c4f43a0
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53796348"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571087"
 ---
 # <a name="how-to-retrain-a-classifier-in-content-explorer"></a>コンテンツ エクスプローラーで分類子を再トレーニングする方法
 
@@ -88,11 +88,11 @@ ms.locfileid: "53796348"
 9. トレーニング **可能な分類子を開きます**。
 10. コミュニケーション コンプライアンス ポリシーで使用された分類子は、[再トレーニング] 見出し **の下に表示** されます。
 
-![再トレーニング状態の分類子](../media/classifier-retraining.png)
+![再トレーニング状態の分類子。](../media/classifier-retraining.png)
 
 11. 再トレーニングが完了したら、分類子を選択して再トレーニングの概要を開きます。
 
-![分類子の再トレーニング結果の概要](../media/classifier-retraining-overview.png)
+![分類子の再トレーニング結果の概要。](../media/classifier-retraining-overview.png)
 
 12. 推奨されるアクションと、再トレーニング済みおよび現在公開されているバージョンの分類子の予測比較を確認します。
 13. 再トレーニングの結果に満足している場合は、[再発行] **を選択します**。
