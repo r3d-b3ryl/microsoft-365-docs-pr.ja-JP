@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: c153d664ca658c50789b7372de0bd20e3423199f5f82242f76470c375b3a530c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f3ccb47c2facffed0a259b4807f8155b4c87cb70
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53869879"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58684042"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>準備評価ツールで見つかった問題を修正する
 
@@ -231,13 +231,9 @@ Intune に移行する準備ができているアプリや調整が必要なア�
 
 Microsoft マネージド デスクトップビジネスWindows Hello有効にする必要があります。
 
-**使用不可能**
-
-Windows Helloは無効です。 ビジネス 向けビジネス ポリシーの作成の手順[に従ってWindows Helloを有効にする](/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy)
-
 **アドバイザリ**
 
-Windows Hello for Business は設定されていない。 [ビジネス向けビジネス ポリシーの作成] の手順[に従ってWindows Helloを有効にしてください](/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy)。
+Windows Helloは無効になっているか、セットアップされません。 [ビジネス向けビジネス ポリシーの作成] の手順[に従ってWindows Helloを有効にしてください](/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy)。
 
 
 ### <a name="windows-10-update-rings"></a>Windows 10リング
@@ -339,7 +335,7 @@ SSPR **Selected 設定** にユーザーが含Microsoft マネージド デス�
 
 Microsoft マネージド デスクトップユーザーは、登録後に自分のデバイスに対してローカルMicrosoft マネージド デスクトップ特権を持つ必要があります。
 
-## <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps for Enterprise
+## <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps for enterprise
 
 ### <a name="onedrive"></a>OneDrive
 

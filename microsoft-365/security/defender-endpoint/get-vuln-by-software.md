@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9f70cba0d749238b9602f88b27d96aec87a5139b
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: 98852db88f2b586d8e69a529a838e785dc22654c
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502845"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58683994"
 ---
 # <a name="list-vulnerabilities-by-software"></a>ソフトウェアによる脆弱性の一覧表示
 
@@ -37,10 +37,9 @@ ms.locfileid: "58502845"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-インストールされているソフトウェアの脆弱性の一覧を取得します。 
+インストールされているソフトウェアの脆弱性の一覧を取得します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -61,7 +60,7 @@ GET /api/Software/{Id}/vulnerabilities
 
 |名前|型|説明
 |---|---|---|
-|Authorization|String|ベアラー {token}。**必須**。
+|Authorization|文字列|ベアラー {token}。**必須**。
 
 ## <a name="request-body"></a>要求本文
 
@@ -69,7 +68,7 @@ Empty
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは 200 OK を返し、指定したソフトウェアによって公開される脆弱性の一覧を返します。 
+成功した場合、このメソッドは 200 OK を返し、指定したソフトウェアによって公開される脆弱性の一覧を返します。
 
 ## <a name="example"></a>例
 
@@ -78,7 +77,7 @@ Empty
 以下は、要求の例です。
 
 ```http
-GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge/vulnerabilities 
+GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge/vulnerabilities
 ```
 
 ### <a name="response-example"></a>応答の例

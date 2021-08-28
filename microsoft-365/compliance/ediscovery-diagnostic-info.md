@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft サポート ケースの電子情報開示診断情報を収集する方法について説明します。
-ms.openlocfilehash: 99edb19e61e3b403f283fcb3b73636308cf494ddbea199c01858007e8844d960
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e5dd4f9bd26121fd5879b2322549a801a3376be0
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53886325"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58589348"
 ---
 # <a name="collect-ediscovery-diagnostic-information"></a>電子情報開示の診断情報を収集する
 
@@ -77,13 +77,13 @@ Get-ComplianceCase "<Core eDiscovery case name>"| %{$_|fl;"`t==Searches==";Get-C
 
 ケース **設定** の [Advanced eDiscovery] タブを使用すると、ケースの診断情報をすばやくコピーできます。 診断情報はクリップボードに保存され、テキスト ファイルに貼り付け、Microsoft サポートに送信できます。
 
-1. [電子情報開示 [https://compliance.microsoft.com](https://compliance.microsoft.com/) の詳細] に移動し、[すべての> **を>] をクリックします**。
+1. [電子情報開示 [https://compliance.microsoft.com](https://compliance.microsoft.com/) ] に移動し、[詳細] > **クリックします**。
 
 2. ケースを選択し、[追加] タブ **設定** します。
 
 3. [ケース **情報] で、[** 選択] **をクリックします**。
 
-4. [フライアウト] ページで、[診断 **情報のコピー** ] をクリックして、情報をクリップボードにコピーします。
+4. [フライアウト] ページで、[**アクション**  >  **] [サポート情報の** コピー] をクリックして、情報をクリップボードにコピーします。
 
 5. テキスト ファイル (メモ帳) を開き、テキスト ファイルに情報を貼り付けます。
 

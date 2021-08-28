@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: この記事では、管理者ロールをユーザー アカウントに割り当てるMicrosoft 365 PowerShell を使用する方法について説明します。
-ms.openlocfilehash: ae68d2d8bb4373f3dc3cd94b8ebae5f1e4be05f4
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: dbb8586a381d66bea3a6b07ab5521da309c8681f
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356602"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58589314"
 ---
 # <a name="assign-admin-roles-to-microsoft-365-user-accounts-with-powershell"></a>PowerShell を使用して管理者の役割Microsoft 365ユーザー アカウントに割り当てる
 
@@ -45,7 +45,7 @@ PowerShell を使用してユーザー アカウントに役割を簡単に割�
   
 次に、役割に追加するユーザー アカウントのサインイン名を特定します (例: fredsm \@ contoso.com)。 これは、ユーザー プリンシパル名 (UPN) とも呼ばれています。
 
-次に、ロールの名前を決めます。 「[管理者ロールのアクセス許可」を参照Azure Active Directory。](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
+次に、ロールの名前を決めます。 「Azure [AD組み込みロール」を参照してください](/azure/active-directory/roles/permissions-reference)。
 
 >[!Note]
 >この記事のメモに注意してください。 一部の役割名は、Azure Active Directory (Azure AD) PowerShell で異なります。 たとえば、Azure *SharePoint PowerShell* の Microsoft 365 管理センター管理者SharePoint管理者ADします。
@@ -156,7 +156,7 @@ Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser -All | Where DisplayNam
   Get-MsolUser -All | Sort UserPrincipalName | Select UserPrincipalName | More
   ```
 
-    このコマンドは、ユーザー アカウントの UPN を UPN で並べ替え、一度に 1 つの画面で一覧表示します。 Where コマンドレットを使用 **して** リストをフィルター処理できます。 次に例を示します。
+    このコマンドは、ユーザー アカウントの UPN を UPN で並べ替え、一度に 1 つの画面で一覧表示します。 Where コマンドレットを使用 **して** リストをフィルター処理できます。 次に例を示します:
     
   ```powershell
   Get-MsolUser -All | Where DisplayName -like "John*" | Sort UserPrincipalName | Select UserPrincipalName | More

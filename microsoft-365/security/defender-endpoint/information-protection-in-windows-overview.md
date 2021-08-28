@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d7c3fac607f470018b4c6c5a025b3b2ac09464cc
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: b3fa8c7c919edc438bb63fe4baaeca6711a3a045
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58550228"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58683518"
 ---
 # <a name="information-protection-in-windows-overview"></a>Windows における情報保護の概要
 
@@ -34,12 +34,11 @@ ms.locfileid: "58550228"
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 情報保護は、Microsoft 365 Enterpriseの生産性を可能にしながら、機密データを安全に保つインテリジェントな保護を提供する、Microsoft 365 Enterpriseスイートの不可欠な部分です。
 
->[!TIP]
+> [!TIP]
 > Microsoft Defender for Endpoint と Microsoft Information Protectionデバイス上の機密データを検出、保護、監視する方法に関するブログ記事を[Windowsしてください](https://cloudblogs.microsoft.com/microsoftsecure/2019/01/17/windows-defender-atp-integrates-with-microsoft-information-protection-to-discover-protect-and-monitor-sensitive-data-on-windows-devices/)。
 
 Defender for Endpoint は、データの検出、分類、および保護に次のメソッドを適用します。

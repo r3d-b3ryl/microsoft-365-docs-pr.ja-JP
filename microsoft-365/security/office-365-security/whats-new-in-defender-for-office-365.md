@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ae01a929121488399ac3a016f0b33ae7b28ff96d
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: eab119de2f4058d853a85c6ec5ba3a99056b595e
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533617"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58684078"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の新機能
 
@@ -43,10 +43,6 @@ ms.locfileid: "58533617"
 > [!TIP]
 > Microsoft Defender for Office 365ありませんか? [試用版を開始するために販売に問い合わせ。](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)
 
-## <a name="august-2021"></a>2021 年 8 月
-
-- [報告されたメッセージの管理レビュー](admin-review-reported-message.md): 管理者は、報告されたメッセージを確認した後、テンプレートメッセージをエンド ユーザーに送り返す機能を持つ。 これは、組織に合わせてカスタマイズし、管理者の評決にも基づいてカスタマイズできます。 
-=======
 ## <a name="september-2021"></a>2021 年 9 月
 
 - [検疫ポリシー](quarantine-policies.md): 管理者は、検疫済みメッセージへの受信者アクセスの詳細な制御を構成し、エンドユーザーのスパム通知をカスタマイズできます。

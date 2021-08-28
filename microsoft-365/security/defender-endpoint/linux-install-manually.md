@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 24659a1e928143c79b3ab7324114d5c8b0fa1f43
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: aeafcec8c3ee3e557ac8ac429530a35cd8f7561e
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58550156"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58683578"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Linux 用 Microsoft Defender for Endpoint を手動で展開する
 
@@ -74,14 +74,20 @@ Linux 用 Defender for Endpoint は、次のチャネル (以下、*[チャネ�
     ```bash
     sudo yum install yum-utils
     ```
+
 - ディストリビューションとバージョンをメモし、`https://packages.microsoft.com/config/rhel/` の下でそれに最も近いエントリ (メジャー、マイナーの順に) を特定します。
 
-    次の表を使用して、パッケージを見つけるのに役立ててください。 
+    次の表を使用して、パッケージを見つけるのに役立ててください。
 
-    |     ディストリビューションとバージョン    |     パッケージ    |
+    <br>
+
+    ****
+
+    |ディストリビューションとバージョン|パッケージ|
     |---|---|
-    |     RHEL 8.0-8.5 の場合    |     https://packages.microsoft.com/config/rhel/8/prod/    |
-    |     RHEL 7.2-7.9 の場合    |     https://packages.microsoft.com/config/rhel/7/prod/    |
+    |RHEL 8.0-8.5 の場合|<https://packages.microsoft.com/config/rhel/8/prod/>|
+    |RHEL 7.2-7.9 の場合|<https://packages.microsoft.com/config/rhel/7/prod/>|
+    |
 
     次のコマンドで、*[バージョン]* と *[チャネル]* を特定した情報に置き換えます。
 

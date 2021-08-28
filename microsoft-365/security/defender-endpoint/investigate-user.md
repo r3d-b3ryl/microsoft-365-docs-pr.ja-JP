@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 202fe1c38b6846f52361f3e55baf9050cae36fb5
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 73c16691dc56ad478912b85cb1b712bc7b1b44a8
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58550168"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58684186"
 ---
 # <a name="investigate-a-user-account-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint のユーザー アカウントを調査する
 
@@ -62,8 +62,8 @@ ms.locfileid: "58550168"
 
 左側の **[** ユーザーの詳細] ウィンドウには、関連する開いているインシデント、アクティブなアラート、SAM 名、SID、Microsoft Defender for Identity アラート、ユーザーがログオンしているデバイスの数、ユーザーが最初と最後に表示された時間、役割、ログオンの種類など、ユーザーに関する情報が表示されます。 有効にした統合機能に応じて、その他の詳細が表示されます。 たとえば、ビジネス統合のSkype有効にした場合は、ポータルからユーザーに連絡できます。 **[Azure ATP アラート**] セクションには、Microsoft Defender for Identity 機能を有効にし、ユーザーに関連するアラートがある場合は、[Microsoft Defender for Identity] ページに移動するリンクが含まれている。 Microsoft Defender for Identity ページには、アラートに関する詳細が表示されます。
 
->[!NOTE]
->この機能を使用するには、Microsoft Defender for Identity と Defender for Endpoint の両方で統合を有効にする必要があります。 Defender for Endpoint では、高度な機能でこの機能を有効にできます。 高度な機能を有効にする方法の詳細については、「高度な機能を有効 [にする」を参照してください](advanced-features.md)。
+> [!NOTE]
+> この機能を使用するには、Microsoft Defender for Identity と Defender for Endpoint の両方で統合を有効にする必要があります。 Defender for Endpoint では、高度な機能でこの機能を有効にできます。 高度な機能を有効にする方法の詳細については、「高度な機能を有効 [にする」を参照してください](advanced-features.md)。
 
 組織の概要、アラート、および監視は、ユーザー アカウントに関するさまざまな属性を表示するさまざまなタブです。
 

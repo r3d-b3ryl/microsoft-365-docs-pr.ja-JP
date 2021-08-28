@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 10/07/2018
-ms.openlocfilehash: a5d050bfe61af9754b7cb1dd45c46a419314f5220a36630c8b1a528d694dc9c1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ca0c033a92f7607db2b1ad6e00f13cd33ad9c8f9
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53818709"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58589548"
 ---
 # <a name="get-kb-collection-api"></a>KB コレクション API の取得
 
@@ -36,10 +36,10 @@ ms.locfileid: "53818709"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 RBAC デバイス グループのコレクションを取得します。
 
 ## <a name="permissions"></a>アクセス許可
+
 ユーザーには読み取りアクセス許可が必要です。
 
 ## <a name="http-request"></a>HTTP 要求
@@ -50,7 +50,7 @@ GET /testwdatppreview/machinegroups
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-ヘッダー | 値 
+ヘッダー|値
 :---|:---
 Authorization | ベアラー {token}。 **必須**
 コンテンツ タイプ | application/json
@@ -77,9 +77,10 @@ Content-type: application/json
 ### <a name="response-example"></a>応答の例
 
 以下は、応答の例です。
-フィールド ID には、デバイス グループ **ID とデバイス** 情報の **フィールド rbacGroupId** が含まれる。 グループ **化されていないフィールドは** 、グループに割り当てられていないすべてのデバイスに対して 1 つのグループに対してだけ true です。 通常どおり、このグループの名前は "UnassignedGroup" です。
+フィールド ID には、デバイス グループ **ID とデバイス** 情報の **フィールド rbacGroupId** が含まれる。
+グループ **化されていないフィールドは** 、グループに割り当てられていないすべてのデバイスに対して 1 つのグループに対してだけ true です。 通常どおり、このグループの名前は "UnassignedGroup" です。
 
-```
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 {

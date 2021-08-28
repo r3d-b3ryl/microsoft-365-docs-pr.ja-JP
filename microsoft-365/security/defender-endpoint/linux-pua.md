@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 16a0222b1d72099cf1d6f9cba23f599ad722804fc1d0b04c9953e94aa3ab1d80
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8e3484d07263063c9fab04a056cd09ac9b5d67a5
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53811202"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58684054"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-on-linux"></a>Linux 上のエンドポイント用 Microsoft Defender を使用して、望ましくない可能性のあるアプリケーションを検出およびブロックする
 
@@ -33,7 +33,7 @@ ms.locfileid: "53811202"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Defender for Endpoint on Linux の望ましくない可能性のあるアプリケーション (PUA) 保護機能は、ネットワーク内のエンドポイント上の PUA ファイルを検出してブロックできます。
 
@@ -55,8 +55,8 @@ Defender for Endpoint on Linux の PUA 保護は、次のいずれかの方法�
 - **監査**: PUA ファイルは製品ログに報告されますが、このログMicrosoft 365 Defender。 感染の記録は脅威の履歴に保存され、製品によるアクションは実行されません。
 - **ブロック**: PUA ファイルは、製品ログおよびレポートにMicrosoft 365 Defender。 感染の記録は脅威の履歴に保存され、製品によってアクションが実行されます。
 
->[!WARNING]
->既定では、監査モードで PUA 保護 **が構成** されています。
+> [!WARNING]
+> 既定では、監査モードで PUA 保護 **が構成** されています。
 
 PUA ファイルの処理方法は、コマンド ラインまたは管理コンソールから構成できます。
 

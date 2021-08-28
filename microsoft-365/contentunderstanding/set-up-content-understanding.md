@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Priority
 description: SharePoint Syntex の設定
-ms.openlocfilehash: b856cafb7c2be292ed912fc94329ae6f3f23bb5f
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 3b03b36e58b9f5cbb97a967be941fc43285892fd
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257107"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58552890"
 ---
 # <a name="set-up-sharepoint-syntex"></a>SharePoint Syntex の設定
 
@@ -64,7 +64,7 @@ SharePoint Syntex を使用するには、組織に SharePoint Syntex のサブ�
 3. [ **自動化コンテンツ理解世帯** ]の ページで、[ **使用を開始する**] をクリックして、セットアッププロセスを確認します。 <br/>
 
     > [!div class="mx-imgBorder"]
-    > ![セットアップを開始する](../media/content-understanding/admin-content-understanding-get-started.png)</br>
+    > ![セットアップを開始します。](../media/content-understanding/admin-content-understanding-get-started.png)</br>
 
 4. [ **フォーム処理の構成**] ページで、特定の SharePoint ドキュメントライブラリにユーザーがフォーム処理モデルを作成できるようにするかどうかを選択できます。 ドキュメントライブラリのリボンには、メニューオプションが用意されています。これを有効にしている SharePoint ドキュメントライブラリで  **フォーム処理モデルを作成** します。
  
@@ -74,14 +74,14 @@ SharePoint Syntex を使用するには、組織に SharePoint Syntex のサブ�
       - **SharePointライブラリはなし** どのサイトも使用できるようにしたくない場合(セットアップ後に変更できます)。
 
    > [!div class="mx-imgBorder"]
-   > ![フォーム処理サイトのオプションを構成する](../media/content-understanding/admin-configforms.png)
+   > ![フォーム処理サイトのオプションを構成します。](../media/content-understanding/admin-configforms.png)
 
    > [!Note]
    > 含まれているサイトを削除しても、そのサイトのライブラリに適用されている既存のモデルには影響しません。また、ドキュメント理解モデルをライブラリに適用する機能もありません。 
     
     複数の Power Platform 環境を構成している場合は、フォームの処理に使用する環境を選択できます。 (お持ちの環境が 1 つのみである場合、このオプションは表示されません)。
 
-    ![フォーム処理の Power Platform オプションを構成する](../media/content-understanding/setup-power-platform-env.png)
+    ![フォーム処理の Power Platform オプションを構成します。](../media/content-understanding/setup-power-platform-env.png)
 
     **Power Platform 環境** には、以下を選択できます。
     - **既定の環境を使用** して、 Power Platform 環境を使用します。
@@ -96,7 +96,7 @@ SharePoint Syntex を使用するには、組織に SharePoint Syntex のサブ�
     1. [ **サイトアドレス** には、サイト名に選択した内容に基づいて、サイトの URL が表示されます。 変更する場合は、[ **編集**] をクリックします。
 
        > [!div class="mx-imgBorder"]
-       > ![コンテンツ センターを作成する](../media/content-understanding/admin-cu-create-cc.png)</br>
+       > ![コンテンツ センターを作成します。](../media/content-understanding/admin-cu-create-cc.png)</br>
 
        [**次へ**] を選択します。
 
@@ -121,7 +121,7 @@ SharePoint Syntex を構成したら、SharePoint Syntex機能を使用するユ
 4. **[SharePoint Syntex のアプリを表示する]** を選択します。 **[アプリ]** で、**Common Data Service for SharePoint Syntex**、**SharePoint Syntex**、**SharePoint Syntex - SPO type** がすべて選択されていることを確認します。
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft 365 管理センターの SharePoint Syntex ライセンス](../media/content-understanding/sharepoint-syntex-licenses.png)
+    > ![Microsoft 365 管理センターの SharePoint Syntex ライセンス。](../media/content-understanding/sharepoint-syntex-licenses.png)
 
 5. **[変更の保存]** をクリックします。
 

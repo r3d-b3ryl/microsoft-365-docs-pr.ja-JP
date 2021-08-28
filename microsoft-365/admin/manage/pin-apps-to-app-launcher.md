@@ -14,16 +14,16 @@ ms.service: o365-administration
 ms.custom: admindeeplinkMAC
 localization_priority: Normal
 description: グローバル管理者は、ユーザーのアプリ 起動ツールに最大 3 つのアプリをピン留めできます。
-ms.openlocfilehash: b26f77d819f41517add59be14f26931f14001c65
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: bbb41dfcb72849287bb9ce87ab2c9d250b1b4d99
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394470"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58589230"
 ---
 # <a name="pin-apps-to-your-users-app-launcher"></a>ユーザーのアプリ 起動ツールにアプリをピン留めする
 
-Azure Active Directory ポータルのコントロールを使用して、最大 3 つのアプリを Office.com に固定し、組織内のすべてのユーザーに対してアプリ 起動ツールをピン留めできます。 アプリケーションのグループを整理することもできます。 後で追加したアプリは、いつでもユーザーによって固定解除できます。 ユーザー用にアプリをピン留めするには、クラウド アプリケーション管理者か、Azure Active Directory のアプリケーション管理者、またはグローバル管理者である必要Office 365。 管理者ロールの詳細については、「[管理者ロール」](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)および「Azure Active Directoryの管理者ロール」[を参照](../add-users/about-admin-roles.md)Microsoft 365。 
+Azure Active Directory ポータルのコントロールを使用して、最大 3 つのアプリを Office.com に固定し、組織内のすべてのユーザーに対してアプリ 起動ツールをピン留めできます。 アプリケーションのグループを整理することもできます。 後で追加したアプリは、いつでもユーザーによって固定解除できます。 ユーザー用にアプリをピン留めするには、クラウド アプリケーション管理者か、Azure Active Directory のアプリケーション管理者、またはグローバル管理者である必要Office 365。 管理者の役割の詳細については[、「Azure AD組](/azure/active-directory/roles/permissions-reference)み込みの役割と管理者の役割」を[参照](../add-users/about-admin-roles.md)Microsoft 365。 
 
 アプリ 起動ツールと Office.com の詳細については、「アプリ[](https://support.microsoft.com/office/79f12104-6fed-442f-96a0-eb089a3f476a)起動ツールと office.com[](https://techcommunity.microsoft.com/t5/office-365-blog/updates-to-office-com-and-the-office-365-app-launcher/ba-p/1150503)および Office 365 ランチャーのブログ記事を参照してください。
 

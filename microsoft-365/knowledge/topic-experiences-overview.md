@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: 組織でビバ トピックを使用する方法について説明します。
-ms.openlocfilehash: d8e8de3cead0fc389212b2f3b028769d6b2850138b864c379b87bc9f00dfd8bd
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 902628d53f651073b1d08ce3f1915808da22b03f
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864099"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58684135"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Microsoft Viva トピックの概要 
 
@@ -134,7 +134,7 @@ Microsoft 365 環境で Viva・トピックを使用する場合、ユーザー�
 
 管理コントロールの詳細については、「[ユーザーアクセス許可](./plan-topic-experiences.md#user-permissions)の割り当[](./topic-experiences-knowledge-rules.md)て、トピックの表示の管理、トピックの検出[の管理」を参照してください](./topic-experiences-discovery.md)。
 
-## <a name="topic-curation--feedback"></a>トピックのキュレーションとフィードバック
+## <a name="topic-curation-and-suggestions"></a>トピックのキュレーションと提案
 
 AI は、お客様の環境の変化に合わせて、トピックを改善するための提案を継続的に行っていきます。 
 
@@ -143,6 +143,22 @@ AI は、お客様の環境の変化に合わせて、トピックを改善す�
 日常業務でトピックの閲覧を許可しているユーザーには、そのトピックが自分にとって有益か質問することがあります。 システムは、これらの回答を見て、トピックの強調表示を改善したり、トピックの概要やトピックの詳細に表示する内容を決定するのに使用します。
 
 詳細については、「トピックの検出 [とキュレーション」を参照してください](./topic-experiences-discovery-curation.md)。
+
+## <a name="provide-us-feedback"></a>フィードバックを提供する
+
+Microsoft では、お客様からのフィードバックを非常に真剣に受け止めています。 Viva Topics に提供するフィードバックは、トラブルシューティング、バグの修正、既存の機能の強化、および新しい機能の開発に使用されます。 
+
+トピック ページおよびトピックの管理ページと [マイ トピック]ページから、Microsoft に直接フィードバック **を送信** できます。 ページの右下隅にあるこのボタンを探します。
+
+   ![[フィードバック] ボタンを示すスクリーンショット。](../media/knowledge-management/feedback-icon.png)
+
+[フィードバックを **Microsoft に送信する** ] ページで、何か好きかどうか、気に入らない場合、または提案があればお知らせします。
+
+   ![[フィードバックを Microsoft に送信する] ページを示すスクリーンショット。](../media/knowledge-management/feedback-page.png)
+
+フィードバックを送信する際には、電話番号、住所、個人性の高いストーリーなどの機密情報を含めないでお願いします。 代わりに、Viva Topics で発生している特定の問題や、ビバ トピックに関するエクスペリエンス全般に関する情報を提供してください。 これにより、お客様からのフィードバックに基づいてレビューとアクションを実行する際に、プライバシーを保つのに役立ちます。
+
+お時間を頂き、ありがとうございます。 お客様の視点は、既存の機能を改善し、新しい機能を開発するのに役立ちます。
 
 ## <a name="see-also"></a>関連項目
 

@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Microsoft Viva トピックに関するリソースの検索方法について説明します。
-ms.openlocfilehash: ec078f1a3e1e4dd963111f0c60529173d2aedbcffcd2b61e3248a3021b5eea69
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e66252f93b3c32815e3a3a13217a59bb40fa17e6
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53840169"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58684222"
 ---
 # <a name="introduction-to-microsoft-viva-topics"></a>Microsoft Viva トピックの概要
 
@@ -46,10 +46,9 @@ Viva Topics は、組織がMicrosoft 365情報を知識に変換するのに役�
 |Microsoft 技術コミュニティ リソース センターのリソースを参照してください。|[Viva Topics Tech Community](https://resources.techcommunity.microsoft.com/viva-topics/)|
 
 
-
 ## <a name="adoption"></a>導入
 
-組織で Viva トピックを使用および実装して、ビジネス上の問題を解決する方法の詳細をご覧ください。 
+ビジネス上の問題を解決するために、組織でビバ トピックを使用および実装する方法について説明します。 
 
 | この情報を探している場合: | 参照先: |
 |:-----|:-----|
@@ -78,6 +77,12 @@ Viva Topics は、組織がMicrosoft 365情報を知識に変換するのに役�
 |トピックがユーザーごとに異なる理由を理解する|[セキュリティ トリミングの Viva トピック](topic-experiences-security-trimming.md)|
 |特定のトピックが特定されたり表示されたりするのを防ぐ方法について説明します。|[トピックへのアクセスを制限する](restrict-access-to-topics.md)|
 
+## <a name="provide-us-feedback"></a>フィードバックを提供する
 
+ビバ トピックスのエクスペリエンスに関するフィードバックを Microsoft に直接提供します。
+
+| この情報を探している場合: | 参照先: |
+|:-----|:-----|
+|ビバ トピックに関するフィードバックを提供する方法|[フィードバックを提供する](topic-experiences-overview.md#provide-us-feedback)|
 
 

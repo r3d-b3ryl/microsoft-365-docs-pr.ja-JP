@@ -16,14 +16,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: c8ef316dbd25436221a15777f992faf943c3dc6ee2783dd92afa270d4e72cfdf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1d5771be82c687144759fd321dfc44b8c6158d57
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863657"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58684198"
 ---
-# <a name="list-software-version-distribution"></a>ソフトウェア バージョンの配布を一覧表示する 
+# <a name="list-software-version-distribution"></a>ソフトウェア バージョンの配布を一覧表示する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -37,7 +37,7 @@ ms.locfileid: "53863657"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-組織のソフトウェア バージョン配布の一覧を取得します。 
+組織のソフトウェア バージョン配布の一覧を取得します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -56,7 +56,7 @@ GET /api/Software/{Id}/distributions
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-|名前|種類|説明
+|名前|型|説明
 |---|---|---|
 |Authorization|String|ベアラー {token}。**必須**。
 
@@ -66,7 +66,7 @@ Empty
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは 200 OK を返し、本文のソフトウェア配布データの一覧を返します。 
+成功した場合、このメソッドは 200 OK を返し、本文のソフトウェア配布データの一覧を返します。
 
 ## <a name="example"></a>例
 
@@ -102,7 +102,7 @@ GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge/distr
 }
 ```
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [リスクベースの脅威&の管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [脅威&ソフトウェア インベントリ](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

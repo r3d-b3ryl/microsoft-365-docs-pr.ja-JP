@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: この記事では、機密情報の種類の概要と、機密情報 (社会保障、クレジット カード、銀行口座番号など) を検出して機密情報を識別する方法について説明します。
-ms.openlocfilehash: 76812349bc6916483d1e8f56f9c3eaca381d373690a375a3ba1e34a98ee30afc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ac293eea8b81125b124265d2546d562393a81f8f
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842056"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58684006"
 ---
 # <a name="learn-about-sensitive-information-types"></a>機密情報の種類に関する詳細情報
 
@@ -38,7 +38,7 @@ ms.locfileid: "53842056"
 - [データ損失防止ポリシー](dlp-learn-about-dlp.md)
 - [機密ラベル](sensitivity-labels.md)
 - [保持ラベル](retention.md)
-- [インサイダー リスクの管理](insider-risk-management.md)
+- [Insider リスク管理](insider-risk-management.md)
 - [通信コンプライアンス](communication-compliance.md)
 - [自動ラベル付けポリシー](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 - [プライバシー管理 (プレビュー)](privacy-management.md)
@@ -55,7 +55,7 @@ ms.locfileid: "53842056"
     - 信頼度レベル - 信頼度レベル (高、中、低) は、主要素と共に検出された証拠の量を反映します。 アイテムに含まれる証拠が多いほど、一致するアイテムに探している機密情報が含まれているという信頼性が高くなります。
     - 近接 – プライマリ要素とサポート要素の間の文字数
 
-![補強証拠と近接ウィンドウの図](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
+![腐食証拠と近接ウィンドウの図。](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
 
 このビデオの信頼度の詳細
 
@@ -65,7 +65,7 @@ ms.locfileid: "53842056"
 ### <a name="example-sensitive-information-type"></a>機密情報の種類の例
 
 
-## <a name="argentina-national-identity-dni-number"></a>アルゼンチンの国民 ID (DNI) 番号
+#### <a name="argentina-national-identity-dni-number"></a>アルゼンチンの国民 ID (DNI) 番号
 
 ### <a name="format"></a>フォーマット
 

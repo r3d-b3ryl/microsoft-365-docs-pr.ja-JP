@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 445267eef56c50dfce4bb1349c8188b47c2bbc06
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: 4bc5b5b1ec612bc8f14c6ac67a2c00ce75ac4516
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502941"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58684066"
 ---
 # <a name="get-one-remediation-activity-by-id"></a>Id で 1 つの修復アクティビティを取得する
 
@@ -65,7 +65,7 @@ ms.locfileid: "58502941"
 :---|:---|:---|:---
 category|String|修復アクティビティのカテゴリ (ソフトウェア/セキュリティ構成)|ソフトウェア
 completerEmail|String|修復アクティビティが手動で誰かが完了した場合、この列には自分のメールが含まれる|null
-completerId|String|修復アクティビティが手動で誰かが完了した場合、この列にはオブジェクト ID が含まれる|null
+completerId|文字列|修復アクティビティが手動で誰かが完了した場合、この列にはオブジェクト ID が含まれる|null
 completionMethod|String|修復アクティビティは、"完了としてマーク" を選択したユーザーが "自動的に" (すべてのデバイスにパッチが適用されている場合) または "手動" で完了できます。|自動
 createdOn|DateTime
 |この修復アクティビティが作成された時刻|2021-01-12T18:54:11.5499478Z
@@ -74,8 +74,8 @@ dueOn|DateTime
 |この修復アクティビティの作成者セットの期限|2021-01-13T00:00:00Z
 fixedDevices||固定されているデバイスの数|2 
 id|String|この修復アクティビティの ID|097d9735-5479-4899-b1b7-77398899df92
-nameId|String|関連する製品名|Microsoft Silverlight
-priority|String|この修復アクティビティの作成者セットの優先度 (High\Medium\Low)|高い
+nameId|文字列|関連する製品名|Microsoft Silverlight
+priority|文字列|この修復アクティビティの作成者セットの優先度 (High\Medium\Low)|高
 productId|String|関連する製品 ID|microsoft-_-silverlight
 productivityImpactRemediationType|String|いくつかの構成変更は、ユーザーに影響がないデバイスに対してだけ要求できます。 この値は、「すべての公開デバイス」または「ユーザーに影響を与えないデバイスのみ」の選択を示します。|AllExposedAssets
 rbacGroupNames|String|関連するデバイス グループ名|[ "Windows サーバー", "Windows 10" ]
@@ -93,7 +93,7 @@ statusLastModifiedOn|DateTime
 targetDevices|Long|この修復が適用される公開デバイスの数|43
 title|String|この修復アクティビティのタイトル|Microsoft Silverlight
 type|String|修復の種類|Update
-vendorId|String|関連ベンダー名|Microsoft
+vendorId|文字列|関連ベンダー名|Microsoft
 
 ## <a name="example"></a>例
 
@@ -106,40 +106,40 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-ae
 ### <a name="response-example"></a>応答の例
 
 ```json
-{ 
-    "@odata.context": "https://wpatdadi-luna-stg.cloudapp.net/api/$metadata#RemediationTasks/$entity", 
-    "id": "03942ef5-aecb-4c6e-b555-d6a97013844c", 
-    "title": "Update Microsoft Silverlight", 
-    "createdOn": "2021-02-10T13:20:36.4718166Z", 
-    "requesterId": "65548a1d-efo0-4a7a-8d19-1b967b5c36f4", 
-    "requesterEmail": "user1@contoso.com", 
-    "status": "Active", 
-    "statusLastModifiedOn": "2021-02-10T13:20:36.4719698Z", 
-    "description": "Update Silverlight to a later version to mitigate 55 known vulnerabilities affecting your devices. Doing so can help lessen the security risk to your organization due to versions which have reached their end-of-support.  ", 
-    "relatedComponent": "Microsoft Silverlight", 
-    "targetDevices": 18511, 
-    "rbacGroupNames": [ 
-        "UnassignedGroup", 
-        "hhh" 
-    ], 
-    "fixedDevices": 2866, 
-    "requesterNotes": "test", 
-    "dueOn": "2021-02-11T00:00:00Z", 
-    "category": "Software", 
-    "productivityImpactRemediationType": null, 
-    "priority": "Medium", 
-    "completionMethod": null, 
-    "completerId": null, 
-    "completerEmail": null, 
-    "scid": null, 
-    "type": "Update", 
-    "productId": "microsoft-_-silverlight", 
-    "vendorId": "microsoft", 
-    "nameId": "silverlight", 
-    "recommendedVersion": null, 
-    "recommendedVendor": null, 
-    "recommendedProgram": null 
-} 
+{
+    "@odata.context": "https://wpatdadi-luna-stg.cloudapp.net/api/$metadata#RemediationTasks/$entity",
+    "id": "03942ef5-aecb-4c6e-b555-d6a97013844c",
+    "title": "Update Microsoft Silverlight",
+    "createdOn": "2021-02-10T13:20:36.4718166Z",
+    "requesterId": "65548a1d-efo0-4a7a-8d19-1b967b5c36f4",
+    "requesterEmail": "user1@contoso.com",
+    "status": "Active",
+    "statusLastModifiedOn": "2021-02-10T13:20:36.4719698Z",
+    "description": "Update Silverlight to a later version to mitigate 55 known vulnerabilities affecting your devices. Doing so can help lessen the security risk to your organization due to versions which have reached their end-of-support.",
+    "relatedComponent": "Microsoft Silverlight",
+    "targetDevices": 18511,
+    "rbacGroupNames": [
+        "UnassignedGroup",
+        "hhh"
+    ],
+    "fixedDevices": 2866,
+    "requesterNotes": "test",
+    "dueOn": "2021-02-11T00:00:00Z",
+    "category": "Software",
+    "productivityImpactRemediationType": null,
+    "priority": "Medium",
+    "completionMethod": null,
+    "completerId": null,
+    "completerEmail": null,
+    "scid": null,
+    "type": "Update",
+    "productId": "microsoft-_-silverlight",
+    "vendorId": "microsoft",
+    "nameId": "silverlight",
+    "recommendedVersion": null,
+    "recommendedVendor": null,
+    "recommendedProgram": null
+}
 ```
 
 ## <a name="see-also"></a>関連項目

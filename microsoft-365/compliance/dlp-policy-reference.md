@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: DLP ポリシー コンポーネントと構成リファレンス
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 9ee8db55a43f75fe31a64bced1adad6aecbfdb6c
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: daae280fa4c08a47f74cec6a71ec11ac9739ebd6
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58621490"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58684114"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>データ損失防止ポリシーリファレンス
 
@@ -549,3 +549,10 @@ DLP は、SharePoint Online や OneDrive for Business のアイテムとは異�
 #### <a name="additional-options"></a>追加オプション
 
 ポリシーに複数のルールがある場合は、[追加] オプションを使用して、編集中のルールに一致する場合の追加のルール処理を制御し、ルールの評価の優先度を設定できます。
+
+## <a name="see-also"></a>関連項目
+
+- [データ損失防止について](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)
+- [データ損失防止 (DLP) の計画](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp)
+- [テンプレートから DLP ポリシーを作成する](create-a-dlp-policy-from-a-template.md#create-a-dlp-policy-from-a-template)
+- [DLP ポリシーの作成、テスト、調整](create-test-tune-dlp-policy.md#create-test-and-tune-a-dlp-policy)

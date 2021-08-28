@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 28eb524645ecbc3867a342bea1fa34a717a3dde5
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.openlocfilehash: 68583eeb7daaf755f3e095ef80e0a221f54f0766
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349802"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58589370"
 ---
 # <a name="list-machineactions-api"></a>MachineActions API の一覧表示
 
@@ -43,15 +43,17 @@ Machine Actions のコレクション [を取得します](machineaction.md)。
 [OData V4 クエリをサポートします](https://www.odata.org/documentation/)。
 
 OData のクエリは、プロパティで `$filter` `id` `status` `machineId` `type` `requestor` サポート `creationDateTimeUtc` されています。
-<br>```$stop``` 最大値が 10,000 の場合
-<br>```$skip```
+
+`$stop` 最大値が 10,000 の場合
+
+`$skip`
 
 Microsoft Defender [for Endpoint を使用した OData クエリの例を参照してください。](exposed-apis-odata-samples.md)
 
 ## <a name="limitations"></a>制限事項
 
 1. 最大ページ サイズは 10,000 です。
-2. この API のレート制限は、1 分あたり 100 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。 
+2. この API のレート制限は、1 分あたり 100 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -67,7 +69,7 @@ Microsoft Defender [for Endpoint を使用した OData クエリの例を参照�
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
 >
-> - ユーザーは、少なくとも次の役割のアクセス許可を持っている必要があります。 'データの表示' (詳細については、「 [役割](user-roles.md) の作成と管理」を参照してください)
+> ユーザーは、少なくとも次の役割のアクセス許可を持っている必要があります。 'データの表示' (詳細については、「 [役割](user-roles.md) の作成と管理」を参照してください)
 
 ## <a name="http-request"></a>HTTP 要求
 

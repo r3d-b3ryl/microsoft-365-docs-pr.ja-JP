@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2f0475d6adc1f97255665e3a32fe05e7d88c41b5
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: 6b0655f0a4e6a0d00ab93409367b4e98e57b059e
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400181"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58683970"
 ---
 # <a name="create-indicators-for-files"></a>ファイルのインジケーターを作成 
 
@@ -34,7 +34,7 @@ ms.locfileid: "58400181"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
 悪意のある可能性のあるファイルやマルウェアの疑いを禁止することで、組織での攻撃の伝播をさらに防ぐ。 悪意のある可能性のあるポータブル実行可能ファイル (PE) ファイルが分かっている場合は、そのファイルをブロックできます。 この操作によって、組織内のデバイスで読み取り、書き込み、または実行されるのを防ぐ。
 
@@ -44,7 +44,7 @@ ms.locfileid: "58400181"
 - ファイルの詳細ページからインジケーターの追加ボタンを使用してコンテキスト インジケーターを作成する
 - インジケーター API を使用してインジケーター [を作成する](ti-indicator.md)
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 ファイルのインジケーターを作成する前に、次の前提条件を理解することが重要です。
 
@@ -94,19 +94,16 @@ ms.locfileid: "58400181"
 - 説明
 - 推奨処理
 
-![ファイル インジケーターのアラート設定](images/indicators-generate-alert.png)
+![ファイル インジケーターのアラート設定。](images/indicators-generate-alert.png)
 
 > [!IMPORTANT]
 >
->- 通常、ファイル ブロックは数分以内に適用および削除されますが、30 分以上かかる場合があります。
+> - 通常、ファイル ブロックは数分以内に適用および削除されますが、30 分以上かかる場合があります。
+> - 同じ適用の種類とターゲットを持つファイル IoC ポリシーが競合している場合は、より安全なハッシュのポリシーが適用されます。 SHA-256 ファイル ハッシュ IoC ポリシーは SHA-1 ファイル ハッシュ IoC ポリシーに勝ちます。ハッシュの種類が同じファイルを定義している場合、MD5 ファイル ハッシュ IoC ポリシーに勝ちます。 これは、デバイス グループに関係なく常に true です。
+> - それ以外のすべての場合、同じ適用ターゲットを持つ競合するファイル IoC ポリシーがすべてのデバイスとデバイスのグループに適用されると、デバイスの場合、デバイス グループ内のポリシーが勝ちます。
+> - EnableFileHashComputation グループ ポリシーを無効にすると、ファイル IoC のブロック精度が低下します。 ただし、有効にすると、 `EnableFileHashComputation` デバイスのパフォーマンスに影響を与える可能性があります。 たとえば、ネットワーク共有からローカル デバイス (特に VPN 接続を使用して) に大きなファイルをコピーすると、デバイスのパフォーマンスに影響を与える可能性があります。
 >
->- 同じ適用の種類とターゲットを持つファイル IoC ポリシーが競合している場合は、より安全なハッシュのポリシーが適用されます。 SHA-256 ファイル ハッシュ IoC ポリシーは SHA-1 ファイル ハッシュ IoC ポリシーに勝ちます。ハッシュの種類が同じファイルを定義している場合、MD5 ファイル ハッシュ IoC ポリシーに勝ちます。 これは、デバイス グループに関係なく常に true です。
->
->- それ以外のすべての場合、同じ適用ターゲットを持つ競合するファイル IoC ポリシーがすべてのデバイスとデバイスのグループに適用されると、デバイスの場合、デバイス グループ内のポリシーが勝ちます。
->
->- EnableFileHashComputation グループ ポリシーを無効にすると、ファイル IoC のブロック精度が低下します。 ただし、有効にすると、 `EnableFileHashComputation` デバイスのパフォーマンスに影響を与える可能性があります。 たとえば、ネットワーク共有からローカル デバイス (特に VPN 接続を使用して) に大きなファイルをコピーすると、デバイスのパフォーマンスに影響を与える可能性があります。
->
->   EnableFileHashComputation グループ ポリシーの詳細については [、「Defender CSP」を参照してください](/windows/client-management/mdm/defender-csp)。
+> EnableFileHashComputation グループ ポリシーの詳細については [、「Defender CSP」を参照してください](/windows/client-management/mdm/defender-csp)。
 
 ## <a name="private-preview-advanced-hunting-capabilities"></a>プライベート プレビュー: 高度なハンティング機能
 
@@ -132,7 +129,7 @@ Timestamp > ago(30d)
 
 証明書:
 
-- EUS:Win32/CustomCertEnterpriseBlock!cl  
+- EUS:Win32/CustomCertEnterpriseBlock!cl
 
 応答アクションアクティビティは、デバイスのタイムラインでも表示できます。
 
@@ -156,13 +153,18 @@ Cert および File IoC ポリシー処理の競合は、次の順序に従い�
 
 ### <a name="examples"></a>例
 
-|コンポーネント|コンポーネントの適用|ファイル インジケーター アクション|結果
+<br>
+
+****
+
+|コンポーネント|コンポーネントの適用|ファイル インジケーター アクション|結果|
 |---|---|---|---|
-|攻撃表面の縮小ファイル パスの除外|許可|ブロック|ブロック
-|攻撃表面の縮小ルール|ブロック|許可|許可
-|Windows Defender Application Control|許可|ブロック|許可
-|Windows Defender Application Control|ブロック|許可|ブロック
-|Microsoft Defender ウイルス対策除外|許可|ブロック|許可
+|攻撃表面の縮小ファイル パスの除外|許可|ブロック|ブロック|
+|攻撃表面の縮小ルール|ブロック|許可|許可|
+|Windows Defender Application Control|許可|ブロック|許可|
+|Windows Defender Application Control|ブロック|許可|ブロック|
+|Microsoft Defender ウイルス対策除外|許可|ブロック|許可|
+|
 
 ## <a name="see-also"></a>関連項目
 
