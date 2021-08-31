@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: a247aac370ba65e4ede48b0232ded1d93f6e8b99
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: d8bc077e12d52a5194b6e698a989704bdc273c52
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568890"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823770"
 ---
 # <a name="microsoft-defender-antivirus-in-the-windows-security-app"></a>Microsoft Defender ウイルス対策アプリでWindows セキュリティする
 
@@ -50,7 +50,7 @@ ms.locfileid: "58568890"
 1. タスク バーのWindows セキュリティをクリックするか、Defender のスタート メニューを検索して、アプリを開 **きます**。
 
 2. [ウイルス **対策] &タイル** (または左側のメニュー バーのシールド アイコン) を選択します。
-   
+
 次のセクションでは、Windows セキュリティ アプリで Microsoft Defender ウイルス対策 によって提供される脅威保護を確認または操作するときに、最も一般的なタスクの一部を実行する方法についてWindows セキュリティします。
 
 > [!NOTE]
@@ -72,7 +72,7 @@ ms.locfileid: "58568890"
 
 2. [ウイルス **対策] &タイル** (または左側のメニュー バーのシールド アイコン) を選択します。
 
-3. [ウイルス **対策&更新プログラム] を選択します**。 現在インストールされているバージョンが、ダウンロードされた時点に関する情報と共に表示されます。 手動でダウンロードできる最新バージョンに対して現在の状態を確認するか、そのバージョンの変更ログを確認できます。 「[セキュリティ インテリジェンスの更新プログラム」および「Microsoft Defender ウイルス対策 Microsoft マルウェア対策」を参照してください](https://www.microsoft.com/en-us/wdsi/defenderupdates)。
+3. [ウイルス **対策&更新プログラム] を選択します**。 現在インストールされているバージョンが、ダウンロードされた時点に関する情報と共に表示されます。 手動でダウンロードできる最新バージョンに対して現在の状態を確認するか、そのバージョンの変更ログを確認できます。 「[セキュリティ インテリジェンスの更新プログラム」および「Microsoft Defender ウイルス対策 Microsoft マルウェア対策」を参照してください](https://www.microsoft.com/wdsi/defenderupdates)。
 
 4. [更新 **プログラムの確認] を** 選択して、新しい保護更新プログラムをダウンロードします (ある場合)。
 
@@ -98,21 +98,26 @@ ms.locfileid: "58568890"
 
 3. [設定の **管理] で**、[ **ウイルス対策の脅威&設定] を選択します**。
 
-4. [除外 **] 設定で** 、[除外の追加と **削除] を選択します**。 
+4. [除外 **] 設定で** 、[除外の追加と **削除] を選択します**。
 
-5. プラス アイコン ( ) を **+** 選択して種類を選択し、除外ごとにオプションを設定します。 
+5. プラス アイコン ( ) を **+** 選択して種類を選択し、除外ごとにオプションを設定します。
 
 次の表に、除外の種類と実行内容の概要を示します。
 
-|除外の種類  |によって定義される  |動作  |
-|---------|---------|---------|
-|**ファイル** |Location <br/>例: `c:\sample\sample.test` |特定のファイルは、特定のファイルによってMicrosoft Defender ウイルス対策。 |
-|**Folder**    |Location <br/>例: `c:\test\sample`       |指定したフォルダー内のすべてのアイテムは、指定されたフォルダー Microsoft Defender ウイルス対策。         |
-|**ファイルの種類**   |ファイル拡張子 <br/>例: `.test` |デバイス上の任意 `.test` の場所に拡張子を持つすべてのファイルは、Microsoft Defender ウイルス対策。         |
-|**プロセス**     |実行可能ファイルのパス <br>例: `c:\test\process.exe`         |特定のプロセスと、そのプロセスによって開くファイルは、そのプロセスによってスキップMicrosoft Defender ウイルス対策。         |
+<br>
+
+****
+|除外の種類|によって定義される|動作|
+|---|---|---|
+|**ファイル**|場所 <br/>例: `c:\sample\sample.test`|特定のファイルは、特定のファイルによってMicrosoft Defender ウイルス対策。|
+|**Folder**|場所 <br/>例: `c:\test\sample`|指定したフォルダー内のすべてのアイテムは、指定されたフォルダー Microsoft Defender ウイルス対策。|
+|**ファイルの種類**|ファイル拡張子 <br/>例: `.test`|デバイス上の任意 `.test` の場所に拡張子を持つすべてのファイルは、Microsoft Defender ウイルス対策。|
+|**プロセス**|実行可能ファイルのパス <br>例: `c:\test\process.exe`|特定のプロセスと、そのプロセスによって開くファイルは、そのプロセスによってスキップMicrosoft Defender ウイルス対策。|
+|
 
 詳細については、次のリソースを参照してください。
-- [ファイル拡張子とフォルダーの場所に基づいて除外を構成および検証する](./configure-extension-file-exclusions-microsoft-defender-antivirus.md) 
+
+- [ファイル拡張子とフォルダーの場所に基づいて除外を構成および検証する](./configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [プロセスによって開いたファイルの除外を構成する](./configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
 ## <a name="review-threat-detection-history-in-the-windows-defender-security-center-app"></a>セキュリティ センター アプリで脅威検出Windows Defender確認する
@@ -136,4 +141,5 @@ ms.locfileid: "58568890"
 5. ランサムウェアの回復オプションを設定するには、[ランサムウェア のデータ復旧] で [セットアップ] を選択し、OneDrive アカウントをリンクまたはセットアップする手順に従って、ランサムウェア攻撃から簡単に回復できます。
 
 ## <a name="see-also"></a>関連項目
+
 - [Microsoft Defender ウイルス対策](microsoft-defender-antivirus-in-windows-10.md)

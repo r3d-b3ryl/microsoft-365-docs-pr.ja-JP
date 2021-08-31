@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 938c8b8764961930e80de562bdf9fc82f622da5d5b5793ca35c9e5a40a37ea09
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ac8b6255b46c20582d43680b3287f324f4f63c42
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53806309"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823976"
 ---
 # <a name="manage-suppression-rules"></a>抑制ルールの管理
 
@@ -40,7 +40,7 @@ ms.locfileid: "53806309"
 すべての抑制ルールの一覧を表示し、1 か所で管理できます。 アラート抑制ルールをオンまたはオフに切り替えできます。
 
 
-1. ナビゲーション ウィンドウで、[エンドポイント ルール]**設定**  >    >  **抑制]**  >  **を選択します**。 組織内のユーザーが作成した抑制ルールの一覧が表示されます。
+1. ナビゲーション ウィンドウで、[エンドポイント ルール]**設定** \>  \> **抑制]** \> **を選択します**。 組織内のユーザーが作成した抑制ルールの一覧が表示されます。
 
 2. ルール名の横にあるチェック ボックスをクリックして、ルールを選択します。
 
@@ -49,10 +49,10 @@ ms.locfileid: "53806309"
 
 ## <a name="view-details-of-a-suppression-rule"></a>抑制ルールの詳細を表示する
 
-1. ナビゲーション ウィンドウで、[エンドポイント ルール]**設定**  >    >  **抑制]**  >  **を選択します**。 組織内のユーザーが作成した抑制ルールの一覧が表示されます。
+1. ナビゲーション ウィンドウで、[エンドポイント ルール]**設定** \>  \> **抑制]** \> **を選択します**。 組織内のユーザーが作成した抑制ルールの一覧が表示されます。
 
 2. ルール名をクリックします。 ルールの詳細が表示されます。 ルールが作成された状態、スコープ、アクション、一致するアラートの数、作成日時などのルールの詳細が表示されます。 関連付けられたアラートとルールの条件を表示することもできます。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [アラートの管理](manage-alerts.md)

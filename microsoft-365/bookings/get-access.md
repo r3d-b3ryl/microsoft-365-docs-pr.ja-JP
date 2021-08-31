@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: 詳細については、「Bookings」機能にアクセスする方法についてMicrosoft 365。
-ms.openlocfilehash: f33ff7d3ca1977ada5dd7294278ee7ab65d1e50889b7ecf878f211ba923bfe43
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 151534c2ba2effc265c8d836240a81ce88a17403
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53896640"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823542"
 ---
 # <a name="get-access-to-microsoft-bookings"></a>Microsoft Bookings へのアクセス
 
@@ -27,8 +27,6 @@ IT 管理者が予約へのアクセスを許可している場合は、オン�
 予約を初めて [使用する場合](https://outlook.office.com/bookings/onboarding) は、予定表を作成し、ビジネスを設定します。
 
 1. [ **今すぐ取得] を** 選択し、[予約 **カレンダーの追加] を選択します**。 このページが初めてではない場合は、別の予約カレンダーを選択するか、別の予約カレンダーを検索できます。
-
-:::image type="content" source="media/bookings - get it now.png" alt-text="スクリーンショット: [今すぐ予約] ページを取得します。[今すぐ取得] を選択して、Bookings の使用を開始する":::
 
 2. ビジネス名とビジネス の種類を入力し、[続行] を **選択します**。
 

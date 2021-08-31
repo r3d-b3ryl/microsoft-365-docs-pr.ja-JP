@@ -15,12 +15,12 @@ ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: c3ec44716cd466b3bfe4440c6cdf63fe00376f75
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: d28b27dc13f57f70a6e7d13af760c553ede545b8
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255200"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58824000"
 ---
 # <a name="microsoft-defender-antivirus-in-windows"></a>Windows の Microsoft Defender ウイルス対策
 
@@ -28,7 +28,7 @@ ms.locfileid: "58255200"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-Microsoft Defender ウイルス対策は、Microsoft Defender for Endpoint の次世代保護の主要コンポーネントです。 この保護は、機械学習、ビッグデータ分析、脅威耐性に関する詳細な調査、Microsoft のクラウド インフラストラクチャを組み合わせて、組織内のデバイス (または、エンドポイント) を保護します。 Windows Defender ウイルス対策は Windows に組み込まれており、Microsoft Defender for Endpoint と連携して、デバイスとクラウドを保護します。 
+Microsoft Defender ウイルス対策は、Microsoft Defender for Endpoint の次世代保護の主要コンポーネントです。 この保護は、機械学習、ビッグデータ分析、脅威耐性に関する詳細な調査、Microsoft のクラウド インフラストラクチャを組み合わせて、組織内のデバイス (または、エンドポイント) を保護します。 Windows Defender ウイルス対策は Windows に組み込まれており、Microsoft Defender for Endpoint と連携して、デバイスとクラウドを保護します。
 
 ## <a name="compatibility-with-other-antivirus-products"></a>他のウイルス対策製品との互換性
 
@@ -38,11 +38,16 @@ Microsoft Defender ウイルス対策は、Microsoft Defender for Endpoint の�
 
 次の表は、Microsoft Defender ウイルス対策がアクティブ モード、パッシブ モード、または無効である場合に期待される内容を示しています。
 
-| モード  | 動作  |
-|---------|---------|
-| アクティブ モード | アクティブ モードでは、Microsoft Defender ウイルス対策はデバイス上の主要なウイルス対策アプリとして使用されます。 ファイルがスキャンされ、脅威が修正され、検出された脅威が組織のセキュリティ レポートと Windows セキュリティ アプリに一覧表示されます。 |
-| パッシブ モード | パッシブ モードでは、Microsoft Defender ウイルス対策はデバイス上の主要なウイルス対策アプリとして使用されません。 ファイルがスキャンされ、検出された脅威が報告されますが、脅威は Microsoft Defender ウイルス対策によって修正されません。 <br/><br/>**重要**: Microsoft Defender ウイルス対策は、Microsoft Defender for Endpoint にオンボードされているエンドポイントでのみパッシブ モードで実行できます。 「[Microsoft Defender ウイルス対策をパッシブ モードで実行するための要件](microsoft-defender-antivirus-compatibility.md#requirements-for-microsoft-defender-antivirus-to-run-in-passive-mode)」を参照してください。  |
-| 無効またはアンインストール済み  | 無効にするかアンインストールすると、Microsoft Defender ウイルス対策は使用されません。 ファイルのスキャン、脅威の修復は行われません。 一般に、Microsoft Defender ウイルス対策を無効にしたりアンインストールしたりすることはお勧めしません。  |
+<br>
+
+****
+
+|モード|動作|
+|---|---|
+|アクティブ モード|アクティブ モードでは、Microsoft Defender ウイルス対策はデバイス上の主要なウイルス対策アプリとして使用されます。 ファイルがスキャンされ、脅威が修正され、検出された脅威が組織のセキュリティ レポートと Windows セキュリティ アプリに一覧表示されます。|
+|パッシブ モード|パッシブ モードでは、Microsoft Defender ウイルス対策はデバイス上の主要なウイルス対策アプリとして使用されません。 ファイルがスキャンされ、検出された脅威が報告されますが、脅威は Microsoft Defender ウイルス対策によって修正されません。 <p> **重要**: Microsoft Defender ウイルス対策は、Microsoft Defender for Endpoint にオンボードされているエンドポイントでのみパッシブ モードで実行できます。 「[Microsoft Defender ウイルス対策をパッシブ モードで実行するための要件](microsoft-defender-antivirus-compatibility.md#requirements-for-microsoft-defender-antivirus-to-run-in-passive-mode)」を参照してください。|
+|無効またはアンインストール済み|無効にするかアンインストールすると、Microsoft Defender ウイルス対策は使用されません。 ファイルのスキャン、脅威の修復は行われません。 一般に、Microsoft Defender ウイルス対策を無効にしたりアンインストールしたりすることはお勧めしません。|
+|
 
 詳細については、「[Microsoft Defender ウイルス対策互換性](microsoft-defender-antivirus-compatibility.md)」を参照してください。
 
@@ -72,7 +77,7 @@ Microsoft Defender ウイルス対策は、Microsoft Defender for Endpoint の�
 
    - **パッシブ モード** は、Microsoft Defender ウイルス対策が実行されていることを意味しますが、デバイス上の主要なウイルス対策/マルウェア対策製品ではありません。 パッシブ モードは、Microsoft Defender for Endpoint にオンボードされており、特定の要件を満たすデバイスでのみ使用できます。 詳細については、「[Microsoft Defender ウイルス対策をパッシブ モードで実行するための要件](microsoft-defender-antivirus-compatibility.md#requirements-for-microsoft-defender-antivirus-to-run-in-passive-mode)」を参照してください。
 
-   - **EDR ブロック モード** は、Microsoft Defender ウイルス対策が実行されており、Microsoft Defender for Endpoint の機能である[ブロック モードでのエンドポイントの検知と応答 (EDR)](edr-in-block-mode.md) が有効になっていることを意味します。
+   - **EDR ブロック モード** は、Microsoft Defender ウイルス対策が実行されており、Microsoft Defender for Endpoint の機能である [ブロック モードでのエンドポイントの検知と応答 (EDR)](edr-in-block-mode.md) が有効になっていることを意味します。
 
    - **SxS パッシブ モード** とは、Microsoft Defender ウイルス対策が別のウイルス対策/マルウェア対策製品と一緒に実行されており、[定期的なスキャンが制限されている](limited-periodic-scanning-microsoft-defender-antivirus.md)ことを意味します。
 
@@ -81,7 +86,7 @@ Microsoft Defender ウイルス対策は、Microsoft Defender for Endpoint の�
 
 ## <a name="get-your-antivirusantimalware-platform-updates"></a>ウイルス対策/マルウェア対策プラットフォームの更新プログラムを取得する
 
-Microsoft Defender ウイルス対策、またはウイルス対策/マルウェア対策ソリューションを最新の状態に保つことが重要です。 Microsoft は定期的な更新プログラムをリリースして、デバイスが、新しいマルウェアや攻撃手法から保護する最新のテクノロジを備えていることを確認します。 詳細については、「[Microsoft Defender ウイルス対策の更新プログラムの管理とベースラインの適用](manage-updates-baselines-microsoft-defender-antivirus.md)」を参照してください。 
+Microsoft Defender ウイルス対策、またはウイルス対策/マルウェア対策ソリューションを最新の状態に保つことが重要です。 Microsoft は定期的な更新プログラムをリリースして、デバイスが、新しいマルウェアや攻撃手法から保護する最新のテクノロジを備えていることを確認します。 詳細については、「[Microsoft Defender ウイルス対策の更新プログラムの管理とベースラインの適用](manage-updates-baselines-microsoft-defender-antivirus.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

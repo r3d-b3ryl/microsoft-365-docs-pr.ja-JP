@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: conceptual
 ms.date: 01/26/2021
 ms.reviewer: chventou
-ms.openlocfilehash: 55211867e4ca020844f57b9e530d41330474227225dcee1cfaf0a4370218868d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2d34ec5ac2fe7578e610353a21f9230c699c6a3c
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53806822"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823964"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-post-migration"></a>Microsoft Defender for Endpoint の管理、移行後
 
@@ -45,13 +45,14 @@ ms.locfileid: "53806822"
 
 ****
 
-|ツール/メソッド|説明|
-|---------|---------|
+|ツール/メソッド|内容|
+|---|---|
 |**[脅威と脆弱性の管理ダッシュボードの分析情報](/windows/security/threat-protection/microsoft-defender-atp/tvm-dashboard-insights)** [(Microsoft 365 Defenderポータル](https://security.microsoft.com/))|ダッシュボード& 脆弱性の管理脅威は、セキュリティ運用チームが使用できるアクション可能な情報を提供して、露出を減らし、組織のセキュリティ体制を改善します。 <p> 「[脅威の& 脆弱性の管理」](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)および「[脅威の概要」をMicrosoft 365 Defender。](/microsoft-365/security/defender-endpoint/use)|
 |**[Microsoft Intune](/mem/intune/fundamentals/what-is-intune)** (推奨)|Microsoft Intune (Intune) は、Microsoft エンドポイント マネージャー[](/mem/endpoint-manager-overview)デバイス管理 (MDM) とモバイル アプリケーション管理 (MAM) に重点を当てました。 Intune では、携帯電話、タブレット、ラップトップなど、組織のデバイスの使用方法を制御できます。 特定のポリシーを構成して、アプリケーションを制御できます。 <p> [「Intune を使用した Microsoft Defender for Endpoint の管理」を参照してください](manage-atp-post-migration-intune.md)。|
 |**[Microsoft Endpoint Configuration Manager](/mem/configmgr/core/understand/introduction)**|Microsoft エンドポイント マネージャー (Configuration Manager) (以前は System Center Configuration Manager と呼ばれる) は、Microsoft エンドポイント マネージャー の[コンポーネントです](/mem/endpoint-manager-overview)。 Configuration Manager は、ユーザー、デバイス、ソフトウェアを管理するための強力なツールです。 <p> 「Manage [Microsoft Defender for Endpoint with Configuration Manager」を参照してください](manage-atp-post-migration-configuration-manager.md)。|
 |**[ドメイン サービスのグループ Azure Active Directory オブジェクト](/azure/active-directory-domain-services/manage-group-policy)**|[Azure Active Directoryドメイン サービスには、](/azure/active-directory-domain-services/overview)ユーザーとデバイス用の組み込みのグループ ポリシー オブジェクトが含まれています。 環境で必要に応じて組み込みのグループ ポリシー オブジェクトをカスタマイズし、カスタム グループ ポリシー オブジェクトと組織単位 (OUs) を作成できます。 <p> 「 [グループ ポリシー オブジェクトを使用した Microsoft Defender for Endpoint の管理」を参照してください](manage-atp-post-migration-group-policy-objects.md)。|
 |**[PowerShell、WMI、MPCmdRun.exe](manage-atp-post-migration-other-tools.md)**|*組織のデバイスMicrosoft エンドポイント マネージャー脅威保護機能を管理するには、Intune と Configuration Manager を含むセキュリティ ポリシー (Intune と Configuration Manager を含む) を使用することをお勧めします。ただし、PowerShell、WMI、または Microsoft Defender ウイルス対策 ツールを使用して、個々のデバイス (エンドポイント) の設定などの一部の設定MPCmdRun.exeできます。* <p> PowerShell を使用して、攻撃Microsoft Defender ウイルス対策、攻撃表面の縮小ルールを管理できます。 「Configure [Microsoft Defender for Endpoint with PowerShell」を参照してください](manage-atp-post-migration-other-tools.md#configure-microsoft-defender-for-endpoint-with-powershell)。 <p> 管理インストルメンWindows (WMI) を使用して、Microsoft Defender ウイルス対策除外を管理できます。 「Configure [Microsoft Defender for Endpoint with WMI」を参照してください](manage-atp-post-migration-other-tools.md#configure-microsoft-defender-for-endpoint-with-windows-management-instrumentation-wmi)。 <p> Microsoft Malware Protection Command-Line ユーティリティ (MPCmdRun.exe) を使用して、Microsoft Defender ウイルス対策 と除外を管理し、ネットワークとクラウド間の接続を検証できます。 「Configure [Microsoft Defender for Endpoint with MPCmdRun.exe」 を参照してください ](manage-atp-post-migration-other-tools.md#configure-microsoft-defender-for-endpoint-with-microsoft-malware-protection-command-line-utility-mpcmdrunexe)。|
+|
 
 ## <a name="see-also"></a>関連項目
 

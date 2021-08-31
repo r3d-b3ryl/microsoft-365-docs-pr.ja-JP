@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
 description: Bookings アクティビティの 4 か月ビューを表示する方法を確認する
-ms.openlocfilehash: 8fc8a41a982135550ae711e435905c9bd39460994b1f6757b633aea49a7a48a0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ceb318f0577d6bf1f4f46f809ecabe0d1bc5d804
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838213"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823855"
 ---
 # <a name="reporting-info-for-bookings"></a>Bookings のレポート情報
 
@@ -24,17 +24,17 @@ ms.locfileid: "53838213"
 
 ## <a name="see-four-months-of-booking-activity"></a>予約アクティビティの 4 か月を確認する
 
-1. [予約] カレンダー ダッシュボードで **、[TSV として他のデータをエクスポートする] を選択します**。
+1. [Microsoft 365] で[アプリ 起動ツール] を選択し、[予約]**を選択します**。
 
-:::image type="content" source="../media/bookings-activities.png" alt-text="スクリーンショット: 予約アクティビティの 4 か月":::
+1. [予約] ホーム ページで、[エクスポート] を **選択します**。
+
+1. [最近使用 **したデータのエクスポート] ページ** で、日付範囲を選択し、[エクスポート] を **選択します**。
 
 1. 新しい名前でファイルを保存し、.xls xlsx 形式を指定します。
 
 1. ファイルを開き、予約カレンダーの 4 か月ビューを表示します。
 
 1. レポートの日付を選択し、[エクスポート] を **選択します**。
-
-:::image type="content" source="../media/bookings-reporting-dates.png" alt-text="スクリーンショット: 時間範囲を選択し、データを TSV ファイルにエクスポートします。":::
 
 1. ダウンロードしたレポートには、既存のフィールドに加えて、新しい一連のフィールドが含まれています。
 
@@ -47,7 +47,7 @@ ms.locfileid: "53838213"
 - **顧客の住所**
 - **スタッフ**
 - **サービス**
-- **場所**
+- **Location**
 - **期間 (分)**
 - **イベントの種類**
 

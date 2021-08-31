@@ -9,16 +9,16 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 0968717e-b61f-4b06-987c-6c1464541782
 description: Microsoft Bookings で従業員の勤務時間と空き時間を設定します。
-ms.openlocfilehash: 9fffee6addd5f2d816fc7639661f2e03f53a96de
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 854110217f31b69d54783484aa1800332763af3e
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575038"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823650"
 ---
 # <a name="employee-working-hours-in-microsoft-bookings"></a>Microsoft Bookings の従業員の勤務時間
 
-従業員の勤務時間を設定すると、顧客が予約しようとするときに、その従業員の空き時間が正確に表示されます。 既定で、各従業員の稼働時間は、Microsoft の予約 アプリで設定した勤務時間と同じです (勤務時間を設定する)。 「ビジネス情報を入力する」の「営業時間を設定 [する」セクションを参照してください](enter-business-information.md#set-your-business-hours)。
+従業員の勤務時間を設定すると、顧客が予約しようとするときに、その従業員の空き時間が正確に表示されます。 既定で、各従業員の稼働時間は、Microsoft の予約 アプリで設定した勤務時間と同じです (勤務時間を設定する)。 「ビジネス情報を入力する」の「営業時間を設定 [する」セクションを参照してください](enter-business-information.md)。
 
 [スタッフ **] ページ** では、ビジネスと従業員のニーズに合わせて従業員の勤務時間をカスタマイズできます。
 

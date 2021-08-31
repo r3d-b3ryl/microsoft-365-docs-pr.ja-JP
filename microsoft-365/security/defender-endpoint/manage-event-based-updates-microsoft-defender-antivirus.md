@@ -16,12 +16,12 @@ ms.date: 09/17/2018
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 0fc7b51988f67c0f2e570e23bdb58e1aa32d35fe55347d1ace550de80f4d6fb6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 44c3b0a208c8c870343fc551728f105d4f380de4
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53806726"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823843"
 ---
 # <a name="manage-event-based-forced-updates"></a>イベントベースの強制更新プログラムを管理する
 
@@ -40,11 +40,11 @@ Microsoft Defender ウイルス対策を使用すると、起動時やクラウ�
 
 ### <a name="use-configuration-manager-to-check-for-protection-updates-before-running-a-scan"></a>Configuration Manager を使用して、スキャンを実行する前に保護更新プログラムを確認する
 
-1. Microsoft エンドポイント マネージャー コンソールで、変更するマルウェア対策ポリシーを開きます (左側のナビゲーションウィンドウで [アセットとコンプライアンス] をクリックし、ツリーを[概要] Endpoint Protection マルウェア対策ポリシー  >    >  ) に展開します。
+1. Microsoft エンドポイント マネージャー コンソールで、変更するマルウェア対策ポリシーを開きます (左側のナビゲーションウィンドウで [アセットとコンプライアンス] をクリックし、ツリーを[概要] Endpoint Protection マルウェア対策ポリシー \>  \> ) に展開します。
 
 2. [スケジュールされたスキャン **] セクションに移動** し、スキャンを実行する前に最新のセキュリティ インテリジェンス更新プログラムのチェックを [は **い** ] に **設定します**。
 
-3. **[OK]** をクリックします。
+3. [**OK**] をクリックします。
 
 4. [更新されたポリシーを通常どおり展開します](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers)。
 
@@ -56,11 +56,11 @@ Microsoft Defender ウイルス対策を使用すると、起動時やクラウ�
 
 3. [ポリシー **] をクリックし** 、[ **管理用テンプレート] をクリックします**。
 
-4. ツリーを展開して、[**スキャン] WindowsコンポーネントMicrosoft Defender ウイルス対策**  >    >  **展開します**。
+4. ツリーを展開して、[**スキャン] WindowsコンポーネントMicrosoft Defender ウイルス対策** \>  \> **展開します**。
 
 5. [スケジュールされたスキャン **を実行する** 前に最新のウイルスとスパイウェアの定義を確認する] をダブルクリックし、オプションを [有効] に **設定します**。
 
-6. **[OK]** をクリックします。
+6. [**OK**] をクリックします。
 
 ### <a name="use-powershell-cmdlets-to-check-for-protection-updates-before-running-a-scan"></a>PowerShell コマンドレットを使用して、スキャンを実行する前に保護更新プログラムを確認する
 
@@ -92,11 +92,11 @@ CheckForSignaturesBeforeRunningScan
 
 3. [ポリシー **] をクリックし** 、[ **管理用テンプレート] をクリックします**。
 
-4. ツリーを展開して、**セキュリティ Windows更新**  >  **Microsoft Defender ウイルス対策**  >  **コンポーネントを展開します**。
+4. ツリーを展開して、**セキュリティ Windows更新** \> **Microsoft Defender ウイルス対策** \> **コンポーネントを展開します**。
 
-5. [起動時に **最新のウイルス** とスパイウェアの定義を確認する] をダブルクリックし、オプションを [有効] に **設定します**。 
+5. [起動時に **最新のウイルス** とスパイウェアの定義を確認する] をダブルクリックし、オプションを [有効] に **設定します**。
 
-6. **[OK]** をクリックします。
+6. [**OK**] をクリックします。
 
 また、グループ ポリシー、PowerShell、または WMI を使用して、実行中Microsoft Defender ウイルス対策起動時に更新プログラムを確認するサーバーを構成できます。
 
@@ -108,11 +108,11 @@ CheckForSignaturesBeforeRunningScan
 
 3. [ポリシー **] をクリックし** 、[ **管理用テンプレート] をクリックします**。
 
-4. ツリーを展開して、**セキュリティ Windows更新**  >  **Microsoft Defender ウイルス対策**  >  **コンポーネントを展開します**。
+4. ツリーを展開して、**セキュリティ Windows更新** \> **Microsoft Defender ウイルス対策** \> **コンポーネントを展開します**。
 
 5. [起動時にセキュリティ **インテリジェンス更新プログラムを開始** する] をダブルクリックし、オプションを [有効] に **設定します**。
 
-6. **[OK]** をクリックします。
+6. [**OK**] をクリックします。
 
 ### <a name="use-powershell-cmdlets-to-download-updates-when-microsoft-defender-antivirus-is-not-present"></a>PowerShell コマンドレットを使用して、ユーザーが存在しないMicrosoft Defender ウイルス対策更新プログラムをダウンロードする
 
@@ -150,12 +150,12 @@ Microsoft Defender AV は、クラウドによる保護に基づいて保護を�
 
 3. [ポリシー **] をクリックし** 、[ **管理用テンプレート] をクリックします**。
 
-4. ツリーを展開して、**セキュリティ Windows更新**  >  **Microsoft Defender ウイルス対策**  >  **コンポーネントを展開します**。
+4. ツリーを展開して、**セキュリティ Windows更新** \> **Microsoft Defender ウイルス対策** \> **コンポーネントを展開します**。
 
 5. [Microsoft **MAPS へのレポートに基づいて** リアルタイムのセキュリティ インテリジェンス更新を許可する] をダブルクリックし、オプションを [有効] に **設定します**。 次に、[ **OK**] をクリックします。
 
 6. **Microsoft MAPS への定義ベースのレポートを** 無効にし、オプションを [有効] に設定する通知を **許可します**。 次に、[ **OK**] をクリックします。
-    
+
 > [!NOTE]
 > **定義ベースのレポートを無効にする通知を許可すると** 、Microsoft MAPS は誤検知レポートを引き起こすと知られている定義を無効にできます。 この関数を動作するには、Microsoft MAPS に参加するコンピューターを構成する必要があります。
 

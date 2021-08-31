@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: baff7ea6f32233cc05291dd3de124e964751192e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: ad24bc74eeaee8dd67009db6cfeb25e602c0c269
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571291"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823674"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender for Endpoint on Mac
 
@@ -48,7 +48,7 @@ ms.locfileid: "58571291"
 [Microsoft Defender for Endpoint on Mac の新機能](mac-whatsnew.md)
 
 > [!TIP]
-> 共有するフィードバックがある場合は、デバイスで Microsoft Defender for Endpoint on Mac を開き、[フィードバックの送信に役立つ] に移動して送信  >  **します**。
+> 共有するフィードバックがある場合は、デバイスで Microsoft Defender for Endpoint on Mac を開き、[フィードバックの送信に役立つ] に移動して送信 \> **します**。
 
 プレビュー機能 (Mac デバイスのエンドポイント検出や応答など) を含む最新の機能を取得するには、Microsoft Defender for Endpoint を実行している macOS デバイスを "Insider" デバイスに構成します。
 
@@ -87,7 +87,7 @@ macOS の最新の 3 つのメジャー リリースがサポートされてい�
 
 macOS のベータ版はサポートされていません。
 
-M1 プロセッサを搭載した macOS デバイスはサポートされていません。
+M1 チップ ベースのプロセッサを搭載した macOS デバイスのサポートは、現在プレビュー中です。
 
 サービスを有効にした後、ネットワークまたはファイアウォールを構成して、ネットワークとエンドポイント間の送信接続を許可する必要がある場合があります。
 
@@ -109,7 +109,7 @@ Microsoft Defender for Endpoint on Mac では、次のいずれかの Microsoft 
 
 次のダウンロード可能なスプレッドシートには、ネットワークが接続できる必要があるサービスと関連付けられている URL が一覧表示されます。 これらの URL へのアクセスを拒否するファイアウォールまたはネットワーク フィルター ルールが存在しないか、許可ルールを作成する必要があります。 
 
-|ドメインリストのスプレッドシート|説明|
+|ドメインリストのスプレッドシート|内容|
 |---|---|
 |![Microsoft Defender for Endpoint URL スプレッドシートのサム イメージ。](images/mdatp-urls.png)|サービスの場所、地理的な場所、および OS の特定の DNS レコードのスプレッドシート。 <p> スプレッドシートをダウンロードするには、 [ 次の ](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)mdatp-urls.xlsxします。
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6f38c052c6c1755c0717d8b64987dd69b1a5826d
-ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
+ms.openlocfilehash: 03855c101c3d89f809e6d1410fddb006650595f5
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58387142"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823903"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の新機能
 
@@ -32,9 +32,9 @@ ms.locfileid: "58387142"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
-Microsoft Defender for Endpoint の最新リリースでは、次の機能 (GA) と、Windows 10 および Windows Server のセキュリティ機能が提供されています。
+次の機能は、Microsoft Defender for Endpoint の最新リリースで一般に使用できる (GA) と、Windows 10 および Windows Server のセキュリティ機能です。
 
 プレビュー機能の詳細については、「プレビュー機能」 [を参照してください](preview.md)。
 
@@ -45,6 +45,12 @@ Microsoft Defender for Endpoint の最新リリースでは、次の機能 (GA) 
 > ```https
 > https://docs.microsoft.com/api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=
 > ```
+
+## <a name="august-2021"></a>2021 年 8 月
+
+- [Microsoft Defender for Endpoint Plan 1 (プレビュー)](defender-endpoint-plan-1.md) <br/>Defender for Endpoint Plan 1 (プレビュー) は、次世代の保護、攻撃表面の縮小、集中管理とレポート作成、API を含むエンドポイント保護ソリューションです。 Defender for Endpoint Plan 1 (プレビュー) は、エンドポイント保護機能を試して、Microsoft 365 E3 を持ち、まだ Microsoft 365 E5 を持っていないお客様向け新しいサービスです。 
+
+   詳細については [、「Microsoft Defender for Endpoint Plan 1 (プレビュー)」を参照してください](defender-endpoint-plan-1.md)。 既存の [Defender for Endpoint](microsoft-defender-endpoint.md) 機能は、Defender for Endpoint Plan 2 と呼ばれる予定です。 
 
 ## <a name="june-2021"></a>2021 年 6 月
 
@@ -89,7 +95,7 @@ Microsoft Defender for Endpoint の最新リリースでは、次の機能 (GA) 
 
 - [Android 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-android.md) <br> Microsoft Defender for Endpoint が Android のサポートを追加しました。 Android で Microsoft Defender for Endpoint をインストール、構成、および使用する方法について説明します。
 
-## <a name="july-2020"></a>2020 年7 月
+## <a name="july-2020"></a>2020 年 7 月
 
 - [証明書のインジケーターを作成 ](manage-indicators.md) <br> 証明書を許可またはブロックするインジケーターを作成します。
 
@@ -97,7 +103,7 @@ Microsoft Defender for Endpoint の最新リリースでは、次の機能 (GA) 
 
 - [Linux 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md) <br> Microsoft Defender for Endpoint が Linux のサポートを追加しました。 Linux で Microsoft Defender for Endpoint をインストール、構成、更新、および使用する方法について説明します。
 
-- [評価ラボの攻撃シミュレーター](evaluation-lab.md#threat-simulator-scenarios) <br> Microsoft Defender for Endpoint は、さまざまな脅威シミュレーション プラットフォームと提携し、ポータル内からプラットフォームの機能を簡単にテストできます。
+- [評価ラボの攻撃シミュレーター](evaluation-lab.md#threat-simulator-scenarios) <br> Microsoft Defender for Endpoint は、さまざまな脅威シミュレーション プラットフォームと提携し、ポータル内のプラットフォームの機能をテストする便利なアクセスを提供しています。
 
 ## <a name="april-2020"></a>2020 年 4 月
 
@@ -107,7 +113,7 @@ Microsoft Defender for Endpoint の最新リリースでは、次の機能 (GA) 
 
 - [macOS 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md) <BR> Microsoft Defender for Endpoint on macOS では、次世代の保護を Mac デバイスに提供します。 統合エンドポイント セキュリティ プラットフォームのコア コンポーネントは、エンドポイントの検出と応答を含む Mac デバイス [で使用できます](microsoft-defender-endpoint-mac.md)。
 
-- [脅威&脆弱性管理アプリケーションとアプリケーション バージョンの終末情報](tvm-security-recommendation.md) <BR>使用期限に達したアプリケーションとアプリケーションのバージョンはタグ付けまたはラベル付けされ、サポートされなくなったことを認識し、アンインストールまたは置換を行うアクションを実行できます。 これにより、パッチが適用されていないアプリケーションによるさまざまな脆弱性の暴露に関連するリスクが軽減されます。
+- [脅威&脆弱性管理アプリケーションとアプリケーション バージョンの終末情報](tvm-security-recommendation.md) <BR>使用期限に達したアプリケーションとアプリケーションのバージョンは、サポートされなくなったことを認識するために、タグ付けまたはラベル付けされます。 その後、そのようなアプリケーションをアンインストールまたは置換するアクションを実行できます。 これにより、パッチが適用されていないアプリケーションによるさまざまな脆弱性の暴露に関連するリスクが軽減されます。
 
 - [脅威&脆弱性管理高度なハンティング スキーマ](advanced-hunting-schema-reference.md) <BR>高度な&の脅威管理テーブルを使用して、ソフトウェア インベントリ、脆弱性ナレッジベース、セキュリティ構成評価、およびセキュリティ構成ナレッジベースに関するクエリを実行します。
 
@@ -123,11 +129,11 @@ Microsoft Defender for Endpoint の最新リリースでは、次の機能 (GA) 
 
 - [接続された Azure AD アプリケーション](connected-applications.md)<br> [接続されたアプリケーション] ページには、組織内の Microsoft Defender for Endpoint に接続AD Azure アプリケーションに関する情報が表示されます。
 
-- [API エクスプローラー](api-explorer.md)<br> API エクスプローラーを使用すると、API クエリの作成と実行、使用可能な Microsoft Defender for Endpoint API エンドポイントの要求のテストと送信が容易になります。
+- [API エクスプローラー](api-explorer.md)<br> API エクスプローラーを使用すると、使用可能な Microsoft Defender for Endpoint API エンドポイントに対する API クエリの作成と実行、テスト、および要求の送信が容易になります。
 
 ## <a name="september-2019"></a>2019 年 9 月
 
-- [Intune を使用したタンパープロテクションの設定](prevent-changes-to-security-settings-with-tamper-protection.md) <br/> デバイス管理ポータル (Intune) で、組織のタンパープロテクションをオン (またはオフ) Microsoft 365有効にできます。
+- [Intune を使用したタンパープロテクションの設定](prevent-changes-to-security-settings-with-tamper-protection.md) <br/> これで、デバイス管理ポータル (Intune) で組織のタンMicrosoft 365 (またはオフ) を有効にできます。
 
 - [ライブ応答](live-response.md) <BR> リモート シェル接続を使用してデバイスに瞬時にアクセスします。 詳細な調査作業を行い、迅速に特定された脅威 (リアルタイム) を含む即時対応アクションを実行します。
 
@@ -145,7 +151,7 @@ Microsoft Defender for Endpoint の最新リリースでは、次の機能 (GA) 
 
 - [脅威に対する保護のレポート](threat-protection-reports.md)<BR>脅威保護レポートは、組織で生成されたアラートに関する高レベルの情報を提供します。
 
-- [Microsoft 脅威エキスパート](microsoft-threat-experts.md)<BR> Microsoft 脅威エキスパートは、Microsoft Defender for Endpoint の新しい管理された脅威検出サービスで、予防的な狩猟、事前設定、追加のコンテキストと分析情報を提供し、セキュリティ 運用センター (SOC) が脅威を迅速かつ正確に特定して対応する権限をさらに強化します。 Microsoft のお客様がセキュリティ運用機能を強化するために利用できる専門知識と光学の層が追加Microsoft 365。
+- [Microsoft 脅威エキスパート](microsoft-threat-experts.md)<BR> Microsoft 脅威エキスパートは、Microsoft Defender for Endpoint の新しい管理された脅威検出サービスで、セキュリティ 運用センター (SOC) が脅威を迅速かつ正確に特定して対応するための、予防的な狩猟、事前設定、およびより多くのコンテキストと分析情報を提供します。 Microsoft のお客様がセキュリティ運用機能を強化するために利用できる専門知識と光学のもう 1 つの層が提供Microsoft 365。
 
 - [インジケーター](ti-indicator.md) <BR> インジケーターの API が一般提供されています。
 

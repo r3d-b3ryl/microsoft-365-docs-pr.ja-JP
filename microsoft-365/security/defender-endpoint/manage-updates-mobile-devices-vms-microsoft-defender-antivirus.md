@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: badf2f18f85b2f8776dec4b119e58ad3839c9074db17f24083ca648c8c24e730
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d00c4a541951ee1c241a52a19b8ec27301b793a1
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884549"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823795"
 ---
 # <a name="manage-updates-for-mobile-devices-and-virtual-machines-vms"></a>モバイル デバイスと仮想マシン (VM) の更新プログラムを管理する
 
@@ -45,7 +45,7 @@ ms.locfileid: "53884549"
 
 ## <a name="opt-in-to-microsoft-update-on-mobile-computers-without-a-wsus-connection"></a>WSUS 接続のないモバイル コンピューターで Microsoft Update にオプトインする
 
-Microsoft Update を使用すると、Microsoft Defender ウイルス対策 が企業ネットワークに接続されていない場合、または WSUS 接続がない場合に、モバイル デバイスのセキュリティ インテリジェンスを最新の状態に保つ必要があります。 
+Microsoft Update を使用すると、Microsoft Defender ウイルス対策 が企業ネットワークに接続されていない場合、または WSUS 接続がない場合に、モバイル デバイスのセキュリティ インテリジェンスを最新の状態に保つ必要があります。
 
 つまり、Microsoft Update を上書きする WSUS を設定している場合でも、保護更新プログラムを (Microsoft Update 経由で) デバイスに配信できます。
 
@@ -63,10 +63,9 @@ Microsoft Update を使用すると、Microsoft Defender ウイルス対策 が�
 
 3. [ポリシー **] を選択し** 、[ **管理用テンプレート] を選択します**。
 
-4. ツリーを展開して **、Windows更新Microsoft Defender ウイルス対策**  >    >  **コンポーネントを表示します**。
+4. ツリーを展開して **、Windows更新Microsoft Defender ウイルス対策** \>  \> **コンポーネントを表示します**。
 
 5. [Microsoft **Update からのセキュリティ インテリジェンス更新プログラムを許可** する] を **[有効] に設定** し  **、[OK] を選択します**。
-
 
 ### <a name="use-a-vbscript-to-opt-in-to-microsoft-update"></a>VBScript を使用して Microsoft Update にオプトインする
 
@@ -84,17 +83,17 @@ Microsoft Update を使用すると、Microsoft Defender ウイルス対策 が�
 
 ## <a name="prevent-security-intelligence-updates-when-running-on-battery-power"></a>バッテリーの電源で実行するときにセキュリティ インテリジェンスの更新を防止する
 
-PC が有線Microsoft Defender ウイルス対策接続されている場合にのみ保護更新プログラムをダウンロードする構成を構成できます。 
+PC が有線Microsoft Defender ウイルス対策接続されている場合にのみ保護更新プログラムをダウンロードする構成を構成できます。
 
 ### <a name="use-group-policy-to-prevent-security-intelligence-updates-on-battery-power"></a>グループ ポリシーを使用してバッテリーの電源に関するセキュリティ インテリジェンスの更新を防止する
 
-1.  グループ ポリシー管理マシンで、グループ ポリシー [管理](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))コンソールを開き、構成するグループ ポリシー オブジェクトを選択し、編集用に開きます。
+1. グループ ポリシー管理マシンで、グループ ポリシー [管理](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))コンソールを開き、構成するグループ ポリシー オブジェクトを選択し、編集用に開きます。
 
-2.  グループ ポリシー **管理エディターで、[コンピューター** の構成] **に移動します**。
+2. グループ ポリシー **管理エディターで、[コンピューター** の構成] **に移動します**。
 
-3.  [ポリシー **] を選択し** 、[ **管理用テンプレート] を選択します**。
+3. [ポリシー **] を選択し** 、[ **管理用テンプレート] を選択します**。
 
-4.  ツリーを展開して **、Windows** 更新Microsoft Defender ウイルス対策を実行し、[バッテリー電源で実行する場合にセキュリティ インテリジェンス更新プログラムを許可する] を [無効]  >    >  に **設定します**。  次に **[OK]** を選択します。 
+4. ツリーを展開して **、Windows** 更新Microsoft Defender ウイルス対策を実行し、[バッテリー電源で実行する場合にセキュリティ インテリジェンス更新プログラムを許可する] を [無効] \>  \> に **設定します**。  次に [**OK**] を選びます。
 
 この操作により、PC がバッテリ電源をオンにしている場合に保護更新プログラムがダウンロードされなかから保護されます。
 

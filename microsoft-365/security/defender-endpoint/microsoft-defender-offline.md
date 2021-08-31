@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 90e1c310952a1ef3fd19410f9d74b10591f0a18f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: a2479b79ce1a0b845c70148a9510681de37dbae5
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575518"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823662"
 ---
 # <a name="run-and-review-the-results-of-a-microsoft-defender-offline-scan"></a>Microsoft Defender オフライン スキャンの結果を実行してレビューする
 
@@ -39,7 +39,7 @@ Microsoft Defender オフラインは、信頼できる環境からスキャン�
 
 ## <a name="prerequisites-and-requirements"></a>前提条件と要件
 
-Microsoft Defender オフラインはWindows 10ハードウェア要件と同じWindows 10。 
+Microsoft Defender オフラインはWindows 10ハードウェア要件と同じWindows 10。
 
 要件の詳細についてはWindows 10トピックを参照してください。
 
@@ -51,10 +51,10 @@ Microsoft Defender オフラインはWindows 10ハードウェア要件と同じ
 > Microsoft Defender オフラインプロセッサを搭載したコンピューター、またはサーバーストックARMユニットではWindowsサポートされていません。
 
 エンドポイントからMicrosoft Defender オフラインするには、管理者特権でログインする必要があります。
- 
+
 ## <a name="microsoft-defender-offline-updates"></a>Microsoft Defender オフライン更新プログラム
 
-Microsoft Defender オフラインエンドポイントで利用可能な最新の保護更新プログラムを使用します。更新されるたびに更新Windows Defender ウイルス対策されます。 
+Microsoft Defender オフラインエンドポイントで利用可能な最新の保護更新プログラムを使用します。更新されるたびに更新Windows Defender ウイルス対策されます。
 
 > [!NOTE]
 > オフライン スキャンを実行する前に、Microsoft Defender AV 保護の更新を試みる必要があります。 グループ ポリシーを使用して更新を強制するか、通常はエンドポイントに更新プログラムを展開するか、最新の保護更新プログラムを手動でダウンロードしてインストール[Microsoft マルウェア プロテクション センター。](https://www.microsoft.com/security/portal/definitions/adl.aspx)
@@ -63,7 +63,7 @@ Microsoft Defender オフラインエンドポイントで利用可能な最新�
 
 ## <a name="usage-scenarios"></a>使用シナリオ
 
-バージョン 1607 Windows 10では、手動でオフライン スキャンを強制できます。 または、実行Windows Defender必要Microsoft Defender オフライン判断した場合は、エンドポイントでユーザーにメッセージを表示します。 
+バージョン 1607 Windows 10では、手動でオフライン スキャンを強制できます。 または、実行Windows Defender必要Microsoft Defender オフライン判断した場合は、エンドポイントでユーザーにメッセージを表示します。
 
 オフライン スキャンを実行する必要性は、エンドポイントの管理に使用している場合Microsoft エンドポイント マネージャーで表示されます。
 
@@ -73,7 +73,7 @@ Microsoft Defender オフラインエンドポイントで利用可能な最新�
 
 ユーザーには、クライアント内で通知Windows Defenderされます。
 
-Configuration Manager で、エンドポイントの状態を識別するには、[監視] > [セキュリティの概要] > [状態 **> Endpoint Protection]**> System Center Endpoint Protectionします。 
+Configuration Manager で、エンドポイントの状態を識別するには、[監視] > [セキュリティの概要] > [状態 **> Endpoint Protection]**> System Center Endpoint Protectionします。
 
 Microsoft Defender オフラインは[マルウェアの修復状態 **] で [** オフライン スキャンが必要]**と表示されます**。
 
@@ -85,7 +85,7 @@ Microsoft Defender オフラインは、他の Microsoft Defender AV 通知と�
 
 [エンドポイントに表示される通知Windows Defender構成する] トピック[を参照](configure-notifications-microsoft-defender-antivirus.md)してください。
 
-## <a name="run-a-scan"></a>スキャンを実行する 
+## <a name="run-a-scan"></a>スキャンを実行する
 
 > [!IMPORTANT]
 > このファイルを使用Microsoft Defender オフライン、ファイルを保存し、実行中のプログラムをシャットダウンしてください。 スキャンMicrosoft Defender オフライン実行に約 15 分かかります。 スキャンが完了すると、エンドポイントが再起動します。 スキャンは、通常のオペレーティング環境Windows外で実行されます。 ユーザー インターフェイスは、ユーザー インターフェイスによって実行される通常のスキャンとは異Windows Defender。 スキャンが完了すると、エンドポイントが再起動され、Windows読み込みされます。
@@ -115,29 +115,27 @@ PowerShell[コマンドレットを](use-powershell-cmdlets-microsoft-defender-a
 次の WMI スクリプト スニペットは直ちに Microsoft Defender オフライン スキャンを実行します。この結果、エンドポイントが再起動され、オフライン スキャンが実行され、再起動して Windows に起動されます。
 
 ```console
-wmic /namespace:\\root\Microsoft\Windows\Defender path MSFT_MpWDOScan call Start 
+wmic /namespace:\\root\Microsoft\Windows\Defender path MSFT_MpWDOScan call Start
 ```
 
 詳細については、以下を参照してください。
-- [Windows DefenderWMIv2 API](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
+- [Windows DefenderWMIv2 API](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 ### <a name="use-the-windows-defender-security-app-to-run-an-offline-scan"></a>Windows Defender セキュリティ アプリを使用してオフライン スキャンを実行する
 
 1. タスク バーのWindows セキュリティをクリックするか、Defender のスタート メニューを検索して、アプリを開 **きます**。
 
 2. [ウイルス **対策] &タイル** (または左側のメニュー バーのシールド アイコン) をクリックし、[高度なスキャン] **ラベルをクリック** します。
-    
+
 3. [スキャン **Microsoft Defender オフライン選択し、[** 今すぐスキャン]**をクリックします**。
 
     > [!NOTE]
-    > バージョン Windows 10 1607 では、オフライン スキャンは Windows 設定 Update   >  **&** セキュリティ &  >  **Windows Defender** または Windows Defender クライアントから実行できます。
-
+    > バージョン Windows 10 1607 では、オフライン スキャンは Windows 設定 Update  \> **&** セキュリティ & \> **Windows Defender** または Windows Defender クライアントから実行できます。
 
 ## <a name="review-scan-results"></a>スキャン結果の確認
 
-Microsoft Defender オフライン結果は、アプリの [スキャン履歴] セクションにWindows セキュリティ[されます](microsoft-defender-security-center-antivirus.md)。 
-
+Microsoft Defender オフライン結果は、アプリの [スキャン履歴] セクションにWindows セキュリティ[されます](microsoft-defender-security-center-antivirus.md)。
 
 ## <a name="related-articles"></a>関連記事
 

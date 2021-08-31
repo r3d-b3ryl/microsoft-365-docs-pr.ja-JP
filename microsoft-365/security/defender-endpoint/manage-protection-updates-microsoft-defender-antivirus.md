@@ -15,12 +15,12 @@ ms.reviewer: pahuijbr
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: 412b42fd7ac67326552f23c4d6cc0909daa60aa6
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 91b482aa189ff7e9d4ff69183718abf354d19d0f
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565846"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823831"
 ---
 # <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>Microsoft Defender ウイルス対策更新プログラムのソースを管理する
 
@@ -73,13 +73,18 @@ Microsoft Update では、最高レベルの保護を確保するために、迅
 
 各ソースには、次の表で説明するように、更新プログラムを発行する頻度に加えて、ネットワークの構成方法に依存する一般的なシナリオがあります。
 
-|Location|シナリオ例|
+<br>
+
+****
+
+|場所|シナリオ例|
 |---|---|
 |Windowsサーバー更新サービス|サーバー更新サービスWindows使用して、ネットワークの更新プログラムを管理しています。|
 |Microsoft Update|エンドポイントを Microsoft Update に直接接続する必要があります。 これは、エンタープライズ ネットワークに不定期に接続するエンドポイントや、Windows サーバー更新サービスを使用して更新プログラムを管理しない場合に役立ちます。|
 |ファイル共有|インターネットに接続されていないデバイス (VM など) があります。 インターネットに接続された VM ホストを使用して、更新プログラムをネットワーク共有にダウンロードし、そこから VM が更新プログラムを取得できます。 仮想デスクトップ [インフラストラクチャ (VDI)](deployment-vdi-microsoft-defender-antivirus.md) 環境でファイル共有を使用する方法については、VDI 展開ガイドを参照してください。|
 |Microsoft エンドポイント マネージャー|エンドポイントを更新Microsoft エンドポイント マネージャーを使用しています。|
 |セキュリティ インテリジェンスの更新プログラム (Microsoft Defender ウイルス対策 Microsoft マルウェア対策 (以前は MMPC と呼ばば)|[SHA-2 をサポートするためにデバイスが更新されていないことを確認します](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus)。 Microsoft Defender ウイルス対策セキュリティ インテリジェンス更新プログラムは Windows Update を通じて配信され、2019 年 10 月 21 日月曜日からセキュリティ インテリジェンス更新プログラムは SHA-2 専用に署名されます。 <br/>最近の感染による最新の保護更新プログラムをダウンロードするか、VDI 展開用の強力な基本イメージを準備 [するのに役立ちます](deployment-vdi-microsoft-defender-antivirus.md)。 このオプションは通常、プライマリ ソースではなく、最終的なフォールバック ソースとしてのみ使用する必要があります。 サーバー更新サービスまたは Microsoft Update から指定した日数更新プログラムWindowsダウンロードできない場合にのみ[使用されます](/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date)。|
+|
 
 グループ ポリシー、グループ ポリシー、PowerShell コマンドレット、および WMI で更新Microsoft Endpoint Configuration Manager使用する順序を管理できます。
 
@@ -96,7 +101,7 @@ Microsoft Update では、最高レベルの保護を確保するために、迅
 
 3. [ポリシー **] をクリックし** 、[ **管理用テンプレート] をクリックします**。
 
-4. ツリーを展開して **、Windows更新Windows Defender**  >    >  **を構成** し、次の設定を構成します。
+4. ツリーを展開して **、Windows更新Windows Defender** \>  \> **を構成** し、次の設定を構成します。
 
    1. [セキュリティ インテリジェンス **更新プログラム** をダウンロードするためのソースの順序を定義する] 設定をダブルクリックし、オプションを [有効] に **設定します**。
 
@@ -108,9 +113,9 @@ Microsoft Update では、最高レベルの保護を確保するために、迅
 
    4. [セキュリティ インテリジェンス更新プログラムをダウンロード **するための** ファイル共有の定義] 設定をダブルクリックし、オプションを [有効] に **設定します**。
 
-   5. ファイル共有ソースを指定します。 複数のソースがある場合は、使用する順序で各ソースを 1 つのパイプで区切って入力します。 パス [を示す標準の UNC](/openspecs/windows_protocols/ms-dtyp/62e862f4-2a51-452e-8eeb-dc4ff5ee33cc) 表記を使用します。たとえば、次のようになります `\\host-name1\share-name\object-name|\\host-name2\share-name\object-name` 。  パスを入力しない場合、VM が更新プログラムをダウンロードすると、このソースはスキップされます。
+   5. ファイル共有ソースを指定します。 複数のソースがある場合は、使用する順序で各ソースを 1 つのパイプで区切って入力します。 パス [を示す標準の UNC](/openspecs/windows_protocols/ms-dtyp/62e862f4-2a51-452e-8eeb-dc4ff5ee33cc) 表記を使用します。たとえば、次のようになります `\\host-name1\share-name\object-name|\\host-name2\share-name\object-name` 。 パスを入力しない場合、VM が更新プログラムをダウンロードすると、このソースはスキップされます。
 
-   6. **[OK]** をクリックします。 これにより、ソースが参照される場合のファイル共有の順序が [ソースの順序の定義 **... グループ** ポリシー設定で設定されます。
+   6. [**OK**] をクリックします。 これにより、ソースが参照される場合のファイル共有の順序が [ソースの順序の定義 **... グループ** ポリシー設定で設定されます。
 
 > [!NOTE]
 > Windows 10 バージョン 1703 から 1809 まで、ポリシー パスは Windows **Components > Microsoft Defender ウイルス対策 >** Signature Updates for Windows 10 バージョン 1903 の場合、ポリシー パスは Windows **コンポーネント > Microsoft Defender ウイルス対策 >** セキュリティ インテリジェンス更新プログラム

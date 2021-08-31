@@ -9,18 +9,21 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 47403d64-a067-4754-9ae9-00157244c27d
 description: Web ベースの予約カレンダーを含み、Outlook と統合してスタッフの予定表を最適化し、顧客に予定を柔軟に予約できる Microsoft Bookings アプリの概要を示します。
-ms.openlocfilehash: 339c8c2457b340dd863b5c9f8e0382b84ef43c08
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: c1bc36ea7724cdb29394b60fafa0178a08aab117
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256129"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823734"
 ---
 # <a name="microsoft-bookings"></a>Microsoft Bookings
 
-Microsoft Bookings を使用すると、予定のスケジュール設定と管理が簡単になります。 予約には、Web ベースの予約カレンダーが含まれています。Outlook と統合して、スタッフの予定表を最適化し、お客様に最適な時間を柔軟に予約できます。 自動通知メールは、ノーショーを減らし、顧客満足度を高め、組織は繰り返しスケジュールタスクを削減して時間を節約します。 柔軟性とカスタマイズ機能を備えた Bookings は、組織の多くの異なる部分の状況とニーズに合わせて設計できます。 Bookings 予定表は、ユーザーのメールボックスExchange Online。
+Microsoft Bookings を使用すると、予定のスケジュール設定と管理が簡単になります。 予約には、Web ベースの予約カレンダーが含まれています。Outlook と統合して、スタッフの予定表を最適化し、お客様に最適な時間を柔軟に予約できます。 電子メールと SMS のテキスト通知は、ノーショーを減らし、顧客満足度を向上させます 組織は、繰り返しスケジュールタスクを削減することで時間を節約します。 柔軟性とカスタマイズ機能を備えた Bookings は、組織の多くの異なる部分の状況とニーズに合わせて設計できます。
 
-Bookings を使用すると、組織の会議をオンライン会議で仮想的に行[Microsoft Teams、Skype for Business。](https://support.microsoft.com/office/overview-of-the-bookings-app-in-teams-7b8569e1-0c8a-444e-b712-d9968b05110b) オンライン会議として予約された各予定は、出席者に送信される一意の会議リンクを作成し、Web ブラウザー、電話ダイヤルイン、または Skype または Teams アプリを介して参加できます。 予約は Teams 内のアプリとして利用できます。これにより、予約カレンダーの作成、スタッフの割り当て、および新しい予定のスケジュール設定と既存の予定の管理の両方を、Teams から離れることなく実行できます。
+> [!NOTE]
+> Bookings 予定表は、ユーザーのメールボックスExchange Online。
+
+Bookings を使用して、組織の会議をオンライン会議で仮想的に行[Microsoft Teamsおよび](https://support.microsoft.com/office/overview-of-the-bookings-app-in-teams-7b8569e1-0c8a-444e-b712-d9968b05110b)Skype for Business。 オンライン会議として予約された各予定は、出席者に送信される一意の会議リンクを作成し、Web ブラウザー、電話ダイヤルイン、または Skype または Teams アプリを介して参加できます。 予約は Teams 内のアプリとして利用できます。これにより、予約カレンダーの作成、スタッフの割り当て、および新しい予定のスケジュール設定と既存の予定の管理の両方を、Teams から離れることなく実行できます。
 
 Bookings には、主に 3 つのコンポーネントがあります。
 
@@ -30,19 +33,13 @@ Bookings には、主に 3 つのコンポーネントがあります。
 
 - 会社用モバイル アプリを使用して、Bookings カレンダーの所有者や管理者は全予約の閲覧、顧客リストと連絡先情報へのアクセス、外出先での手動予約を行うことができます。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 Microsoft Bookings は、次のサブスクリプションで利用できます。
 
 - Office 365: A3、A5、E3、E5、F1、F3
-- Microsoft 365: A3、A5、E3、E5、F1、F3、Business プレミアム
+- Microsoft 365: A3、A5、E3、E5、F1、F3、Business Standard、Business プレミアム
 
 ## <a name="get-started-using-bookings"></a>Bookings の使用を開始する
-
-始める準備はいいですか。
-
-このビデオを見る、または以下の手順に従って予約を設定します。
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE26B1q]
 
 開始するには [、「Microsoft Bookings へのアクセス権を取得する」を参照してください](get-access.md)。 予約をオンまたはオフにする方法については、「 [組織の予約を有効またはオフにする」を参照してください](turn-bookings-on-or-off.md)。

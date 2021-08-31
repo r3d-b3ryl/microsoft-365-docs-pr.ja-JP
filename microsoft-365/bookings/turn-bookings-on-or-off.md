@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: Microsoft Bookings にアクセスする方法については、Microsoft 365。
-ms.openlocfilehash: bcd7581a456ec570bacae64ca5bd1b96c23eddf95b0aa110530f156d3db6e9a4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cc0352166bf7cd20cfa10542d57da9fbd5b160f7
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53861893"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823819"
 ---
 # <a name="turn-microsoft-bookings-on-or-off"></a>Microsoft Bookings を有効または無効にする
 
@@ -60,13 +60,9 @@ PowerShell コマンドレット[Set-OrganizationConfig](/powershell/module/exch
 
 この設定を有効にすると、予約カレンダーにスタッフとして追加された従業員は、受信した電子メール通知に [承認/拒否] リンクを見つける。
 
-この機能は、世界中の顧客に徐々にMicrosoft 365されています。 このオプションが [インストール] ページに表示Microsoft 365 管理センターすぐに確認してください。
-
 ## <a name="block-social-sharing-options"></a>ソーシャル共有オプションをブロックする
 
 管理者は、予約ページをソーシャル ネットワーク上で共有する方法を制御できます。 この設定は、[予約] の [Microsoft 365 管理センター] の \> **設定設定** \> **使用できます**。
-
-この機能は、世界中の顧客に徐々にMicrosoft 365されています。 このオプションが [インストール] ページに表示Microsoft 365 管理センターすぐに確認してください。
 
 ## <a name="allow-only-selected-users-to-create-bookings-calendars"></a>選択したユーザーにのみ予約カレンダーの作成を許可する
 

@@ -9,16 +9,16 @@ metadata:
   ms.service: bookings
   localization_priority: Normal
   description: Microsoft Bookings のよく寄せられる質問。
-  ms.openlocfilehash: c8e1548acb43e50d2dc457bed4aaa01c504f425f63a4a0872f033b70e5599891
-  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+  ms.openlocfilehash: ae2f6afcd350edba17d73801aec838f3980c46b4
+  ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 08/05/2021
-  ms.locfileid: "53900957"
+  ms.lasthandoff: 08/31/2021
+  ms.locfileid: "58823578"
 title: Microsoft Bookings に関するよく寄せられる質問
 summary: ''
 sections:
-- name: 一般
+- name: 全般
   questions:
   - question: >
       Microsoft Bookings とは
@@ -122,11 +122,7 @@ sections:
   questions:
   - question: >
       Microsoft Bookings の取得方法
-    answer: >
-      予約は、Office 365 A3、A5、E3、E5、Microsoft 365 Business Standard、Microsoft 365 Business Premium、A3、A5、E3、E5 をお持ちのお客様に利用できます。 iOS と Android コンパニオン アプリで予約を使用できます。 予約はスタンドアロン アプリとして利用できません。 Outlook Web AppまたはOutlook on the webにデータを格納する場合、Bookings を使用するには、有効にするOutlook。
-
-
-      Bookings ライセンスは、カレンダーの作成と管理など、製品に対して完全な機能を提供します。 また、管理者または閲覧者の役割でユーザーがスタッフとして追加された場合に、ユーザーが既存の予定表を表示および編集することもできます。
+    answer: "予約は、次のサブスクリプションで利用できます。 \n- Office 365: A3、A5、E3、E5、F1、F3\n- Microsoft 365: A3、A5、E3、E5、F1、F3、Business Standard、Business プレミアム。 iOS と Android コンパニオン アプリで予約を使用できます。 予約はスタンドアロン アプリとして利用できません。 Outlook Web AppまたはOutlook on the webにデータを格納する場合、Bookings を使用するには、有効にするOutlook。\n\nBookings ライセンスは、カレンダーの作成と管理など、製品に対して完全な機能を提供します。 また、管理者または閲覧者の役割でユーザーがスタッフとして追加された場合に、ユーザーが既存の予定表を表示および編集することもできます。\n"
   - question: >
       現在のプロバイダーからメール アカウントを現在のプロバイダーに移行するMicrosoft 365?
     answer: >
@@ -139,28 +135,6 @@ sections:
       同じアカウントの下に複数の Bookings カレンダーをMicrosoft 365し、その間を切り替えできますか?
     answer: >
       はい。 1 つのアカウントで複数の予約カレンダーを作成および管理できます。 Bookings Web アプリのビジネス名の横にあるキャレットを使用して、それらを切り替えます。
-  - question: >
-      組織に F1/F3、E1、E3/E5 との混在ライセンスがある場合は、どうしますか。
-    answer: >
-      多くの組織では、ライセンスの組み合Microsoft 365認識しています。 たとえば、顧客は本社の従業員に対して M365 E3 ライセンスを持ち、M365 E1 (または F1 または F3) のライセンスを店舗従業員に持つ場合があります。
-
-
-      この例では、M365 E3 ライセンスを持つ本社の従業員が Bookings にフル アクセスできます。つまり、新しい予定表の作成、設定の編集、スタッフの追加、予約ページの発行、予定表内の予定の作成と管理、レポートのプルが可能です。
-
-
-      E1/F1/F3 ライセンスを持つ従業員、またはライセンスがない従業員は、ゲスト ロールの予定表にスタッフとして追加し、予定のために予約を受け取り、予約時に確認メールを受け取ります。 [スタッフ] タブに表示されている利用可能時間またはスケジュールされた時間に予約できます。Bookings カレンダーの空き時間は、設定した時間とサービス時間によって予約可能な時間を制限します。
-
-
-      また、Bookings Web アプリを通じてその時点で予定が既にスケジュールされている場合、ストアの従業員は予約で利用できないと表示されます。 Bookings で予約された予定は、予約内のスタッフ メンバーの予定表にビジー状態として反映されます。 予約が有効でないライセンスを持つスタッフは、同じテナント内にある場合でも、個人用カレンダーが Bookings の可用性に影響を与える可能性があります。
-
-
-      ゲスト ロールのユーザーは、最初の予定の作成で顧客が提供した情報を表示できます。 たとえば、予定を予約したストア担当者が、予定の前に顧客に電話する必要がある場合、顧客はスケジュールプロセス中に顧客が提供する情報にアクセスできます。 予約されたスタッフメンバーは、確認メールに表示される情報、および .ics 予定表イベント (入力された場合は顧客の電話番号など) にアクセスできます。
-
-
-      ゲスト ロールのユーザーは、Bookings Web アプリにアクセスして設定を変更したり、予定を表示および管理したり (追加、キャンセル、再スケジュール) したりする機能を持つ必要があります。 ただし、顧客が予約を行うのと同じ方法で、[セルフサービス] ページを使用して顧客に代わって予定を作成できます。
-
-
-      ページと予定を設定および管理するには、各ストアのビジネス マネージャーまたは管理者に Bookings 適格ライセンスをライセンスすることをお勧めします。 その後、残りのスタッフは Bookings のライセンスを取得した従業員と一緒に作業し、予約のスケジュールを変更またはキャンセルします。
 - name: 製品の機能
   questions:
   - question: >
