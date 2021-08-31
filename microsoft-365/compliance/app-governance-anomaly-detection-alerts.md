@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 異常検出アラートを調査する。
-ms.openlocfilehash: aa0c7a285baf9fcc3505b9675d57dc37e300862570facdac7c9eb2fd9af61e5c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 57e32f0fc2d50e5e1f1d4d9fb9e6b1520f0f99e6
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53843073"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58747389"
 ---
 # <a name="investigate-anomaly-detection-alerts"></a>異常検出アラートを調査する
 
@@ -145,7 +145,7 @@ ms.locfileid: "53843073"
 
 このセクションでは、悪意のあるアクターが組織への足掛かりを維持しようとしている可能性があることを示すアラートについて説明します。
 
-### <a name="app-with-suspicious-oauth-scope-creates-inbox-rule"></a>疑わしい OAuth スコープを含むアプリが受信トレイ ルールを作成する  
+### <a name="app-with-suspicious-oauth-scope-made-graph-calls-to-read-email-and-created-inbox-rule"></a>疑わしい OAuth スコープを持つアプリは、メールの読み取りと受信トレイ ルールの作成のため、グラフ呼び出しを行いました  
 
 **重要度**: 中
 
@@ -270,3 +270,28 @@ ms.locfileid: "53843073"
 1. アプリによって付与されたスコープを確認します。
 1. アプリによって作成された任意の受信トレイ ルール アクションを確認します。
 1. アプリが実行する任意のメール検索アクティビティを確認します。
+
+### <a name="appmade-onedrive--sharepoint-search-activities-and-created-inbox-rule"></a>アプリが OneDrive/SharePoint 検索アクティビティを作成し、受信トレイ ルールを作成しました  
+
+**重要度**: 中
+
+**MITRE ID**: T1137、T1213
+
+この検出により、アプリが高い権限を持つスコープに同意していること、疑わしい受信トレイ ルールを作成していること、Graph API 経由で、通常と異なる SharePoint または OneDrive の検索アクティビティを実行したことが特定されます。 これは、攻撃者が Graph API 経由で組織から SharePoint または OneDrive の特定のデータを検索し、収集しようとするなど、組織への侵入を試みていることを示している可能性があります。  
+
+**TP または FP?**
+
+- **TP**: 高い権限を持つスコープを持つ OAuth アプリによって Graph API 経由で行われた SharePoint または OneDrive からの特定のデータの検索と収集行為が確認でき、そのアプリが未知のソースから配信されている場合。  
+
+  **推奨されるアクション**: アプリを無効にして削除し、パスワードをリセットして、受信トレイ ルールを削除します。  
+
+- **FP**: アプリが OAuth アプリによる Graph API 経由で SharePoint または OneDrive の特定のデータの検索と収集を実行し、正当な理由で新規または個人の外部メール アカウントへの受信トレイ ルールを作成したことが確認できる場合。  
+
+  **推奨されるアクション**: アラートを無視する  
+
+**攻撃対象を理解する**
+
+1. アプリによって実行されるすべてのアクティビティを確認します。  
+1. アプリによって付与されたスコープを確認します。  
+1. アプリによって作成された任意の受信トレイ ルール アクションを確認します。  
+1. アプリによって実行された SharePoint または OneDrive の検索アクティビティを確認します。
