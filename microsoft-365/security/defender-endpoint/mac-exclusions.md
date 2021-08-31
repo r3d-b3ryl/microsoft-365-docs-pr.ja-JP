@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9047c6e5b91ebd2d7e0a4e953ca907b31cb476f8
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 96f7693e83bf4c3f4a1f14f39d99de55f7ef1979
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573057"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745027"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上のエンドポイント用 Microsoft Defender の除外を構成および検証する
 
@@ -66,8 +66,8 @@ File|完全パスで識別される特定のファイル|`/var/log/test.log` <p>
 \*|none を含む任意の数の文字と一致します (パス内でこのワイルドカードを使用すると、1 つのフォルダーのみを置き換える点に注意してください)|`/var/*/*.log`|`/var/log/system.log`|`/var/log/nested/system.log`
 ?|任意の 1 文字に一致する|`file?.log`|`file1.log` <p> `file2.log`|`file123.log`
 
->[!NOTE]
->除外を評価するときに、製品は firmlinks の解決を試みる。 除外にワイルドカードが含まれているか、ターゲット ファイル (ボリューム上) が存在しない場合、Firmlink 解決 `Data` は機能しません。
+> [!NOTE]
+> 除外を評価するときに、製品は firmlinks の解決を試みる。 除外にワイルドカードが含まれているか、ターゲット ファイル (ボリューム上) が存在しない場合、Firmlink 解決 `Data` は機能しません。
 
 ## <a name="how-to-configure-the-list-of-exclusions"></a>除外の一覧を構成する方法
 
@@ -77,7 +77,7 @@ JAMF、Intune、または別の管理コンソールから除外を構成する�
 
 ### <a name="from-the-user-interface"></a>ユーザー インターフェイスから
 
-Defender for Endpoint アプリケーションを開き、次のスクリーンショットに示すように、[設定の追加と削除] の [除外の管理]  >  に移動します。
+Defender for Endpoint アプリケーションを開き、次のスクリーンショットに示すように、[設定の追加と削除] の [除外の管理] \> に移動します。
 
 ![除外のスクリーンショットを管理します。](images/mdatp-37-exclusions.png)
 

@@ -16,16 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 組織のプライバシー管理を設定し、役割とアクセス許可を設定し、重要な設定を構成する方法について説明します。
-ms.openlocfilehash: 8f45e779cc6ce8deaf20a5f49b597f4ad6139a08
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 229d4bec78424858cd7034c8953313f8593e90e3
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507700"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745967"
 ---
 # <a name="get-started-with-privacy-management-preview"></a>プライバシー管理の開始 (プレビュー)
 
-この記事では、組織のプライバシー管理へのアクセスを設定する方法、データの評価を開始する方法、および重要な設定を処理する方法について説明 **します**。
+プライバシー管理は現在、パブリック プレビューで利用できます。 組織のアクセスを設定し、データの評価を開始する方法について学習します。
 
 ## <a name="who-can-access-privacy-management"></a>Who管理にアクセスできる
 

@@ -16,16 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 description: プライバシー管理のグローバル設定オプションについて説明します。
-ms.openlocfilehash: b656070c5470ae651bb3b361cfc8481dd9b09212
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 071006c354d975cbed06834d60c2d647bbc5df60
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58254953"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58747067"
 ---
 # <a name="manage-privacy-management-settings-preview"></a>プライバシー管理設定の管理 (プレビュー)
-
-この記事では、プライバシー管理 **の設定** オプションについて説明します。
 
 プライバシー管理のグローバル設定オプションは、メイン ページの右上隅にある歯車アイコンの下にあります。 これらのオプションを使用すると、高レベルの基本設定を設定し、キー プロパティをカスタマイズできます。 このページでは、主要なカテゴリとカテゴリの設定します。
 

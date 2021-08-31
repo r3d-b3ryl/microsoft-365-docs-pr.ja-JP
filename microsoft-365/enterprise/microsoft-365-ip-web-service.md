@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Office 365 の IP アドレスと URL web サービスを使用して、Office 365 のネットワークトラフィックをより簡単に識別、差別化する方法について説明します。
-ms.openlocfilehash: 62e9b638b0f767aef3b7f52bb3d129310d2bcbd5
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 4de78934a76a7dba16f79cb9cc6f93a7c935a314
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533449"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419789"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>Office 365 IP アドレスと URL の Web サービス
 
@@ -71,15 +71,15 @@ Office 365 IP アドレスと URL の Web サービスは、Office 365 ネット
 
 ## <a name="version-web-method"></a>バージョン Web メソッド
 
-Microsoft は、Office 365 の IP アドレスと FQDN エントリを毎月初めに更新しています。 サポート インシデント、セキュリティ更新プログラム、またはその他の運用要件により、不定期の更新プログラムが公開されることがあります。
+Microsoft は、Office 365 の IP アドレスと FQDN エントリを毎月初めに更新します。 サポート インシデント、セキュリティ更新プログラム、またはその他の運用要件により、不定期の更新プログラムが公開されることがあります。
 
 公開済みの各インスタンスのデータには、バージョン番号が割り当てられます。バージョン Web メソッドを使用すると、Office 365 サービスの各インスタンスの最新のバージョンを確認できます。バージョンの確認を行うのは、1 時間に 1 回以下にすることをお勧めします。
 
 バージョン Web メソッドのパラメーターは次のとおりです。
 
-- **AllVersions=\<true \| false\>** — 初期設定では、返されるバージョンは最新のものです。 Web サービスの最初のリリース以降のすべての公開済みバージョンを要求するには、このパラメーターのオプションを含めます。
+- **AllVersions=\<true \| false\>** — 既定では、返されるバージョンは最新のものです。 Web サービスの最初のリリース以降のすべての公開済みバージョンを要求するには、この省略可能なパラメーターを含めます。
 - **Format=\<JSON \| CSV \| RSS\>** — JSON 形式と CSV 形式に加えて、このバージョン Web メソッドでは RSS もサポートされます。 このパラメーターのオプションは、_AllVersions=true_ パラメーターと共に使用でき、Outlook や その他の RSS リーダーで使用できる RSS フィードを要求できます。
-- **Instance=\<Worldwide \| China \| Germany \| USGovDoD \| USGovGCCHigh\>** — このパラメーターのオプションはバージョンを返すインスタンスを指定します。 省略する場合は、すべてのインスタンスが返されます。 有効なインスタンスは次の通りです。Worldwide、China、Germany、USGovDoD、USGovGCCHigh。
+- **Instance=\<Worldwide \| China \| Germany \| USGovDoD \| USGovGCCHigh\>** — この省略可能なパラメーターはバージョンを返すインスタンスを指定します。 省略する場合は、すべてのインスタンスが返されます。 有効なインスタンスは次の通りです。Worldwide、China、Germany、USGovDoD、USGovGCCHigh。
 
 バージョン Web メソッドはレート制限がなく、429 HTTP 応答コードも返しません。バージョン Web メソッドへの応答には、1 時間のデータのキャッシュを推奨する cache-control ヘッダーが含まれます。バージョン Web メソッドからの結果は、単一のレコードの場合も、レコードの配列の場合もあります。各レコードの要素は、次のとおりです。
 
@@ -132,7 +132,7 @@ Microsoft は、Office 365 の IP アドレスと FQDN エントリを毎月初�
 }
 ```
 
-例 3 要求 URI: <https://endpoints.office.com/version/Worldwide?Format=CSV&ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
+例 3 要求 URI: <https://endpoints.office.com/version/Worldwide?Format=CSV&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
 この URI は CSV 形式で出力を表示します。結果の例:
 
@@ -141,9 +141,9 @@ instance,latest
 Worldwide,2018063000
 ```
 
-例 4 要求 URI: <https://endpoints.office.com/version/Worldwide?AllVersions=true&ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
+例 4 要求 URI: <https://endpoints.office.com/version/Worldwide?AllVersions=true&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
-この URI は、Office 365 ワールドワイド サービス インスタンスに対して発行された以前のバージョンすべてを表示します。結果の例:
+この URI は、Office 365 ワールドワイド サービス インスタンスに対して発行された以前のすべてのバージョンを表示します。結果の例:
 
 ```json
 {
@@ -184,7 +184,7 @@ Worldwide,2018063000
 - **ServiceAreas=\<Common \| Exchange \| SharePoint \| Skype\>** — サービス エリアのコンマ区切りのリストです。 有効な項目は、_Common_、_Exchange_、_SharePoint_、および _Skype_ です。 _Common_ サービス エリア項目はその他のすべてのサービス エリアの前提条件であるため、Web サービスに常に含まれます。 このパラメーターを含めない場合は、すべてのサービス エリアが返されます。
 - **TenantName=\<tenant_name\>** — Office 365 のテナント名です。 この web サービスでは、指定した名前を テナント名を含む URL の一部に挿入します。 テナント名を指定しない場合、URL のそれらの部分にワイルドカード文字が使用されます (\*)。
 - **NoIPv6=\<true \| false\>** — お使いのネットワークで IPv6 を使用しない場合は、値を _true_ に設定して出力から IPv6 アドレスを除外します。
-- **Instance=\<Worldwide \| China \| Germany \| USGovDoD \| USGovGCCHigh\>** — このパラメーターはエンドポイントを返すインスタンスを指定します。 有効なインスタンスは、_Worldwide_、_China_、_Germany_、_USGovDoD_、_USGovGCCHigh_ です。
+- **Instance=\<Worldwide \| China \| Germany \| USGovDoD \| USGovGCCHigh\>** — この必須のパラメーターはエンドポイントを返すインスタンスを指定します。 有効なインスタンスは、_Worldwide_、_China_、_Germany_、_USGovDoD_、_USGovGCCHigh_ です。
 
 同じクライアント IP アドレスからのエンドポイント Web メソッドの呼び出し回数が多すぎる場合、 HTTP Response Code _429 (要求が多すぎます)_ の応答コードが返される場合があります。 この応答コードを受け取った場合、リクエストを再度行うまでに 1 時間待つか、リクエスト用に新しい GUID を生成します。 一般的なベスト プラクティスとして、バージョン Web メソッドで新しいバージョンのデータが使用可能だと示された場合にのみ、エンドポイント Web メソッドを呼び出すようにします。
 
@@ -201,7 +201,7 @@ Worldwide,2018063000
 - required - Office 365 のサポートを受けるためにこのエンドポイント セットの接続性が必要な場合は _True_。このエンドポイント セットが省略可能な場合は _False_。
 - notes — このテキストは、省略可能のエンドポイントについて、ネットワーク層でこのエンドポイント セットの IP アドレスまたは URL にアクセスできない場合に利用できなくなる Office 365 の機能について説明します。空白の場合は省略します。
 
-### <a name="endpoints-web-method-examples"></a>エンドポイント web メソッドの例
+### <a name="endpoints-web-method-examples"></a>エンドポイント Web メソッドの例
 
 例 1 要求 URI: <https://endpoints.office.com/endpoints/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
@@ -284,7 +284,7 @@ Worldwide,2018063000
 
 例 1 要求 URI: <https://endpoints.office.com/changes/worldwide/0000000000?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
-これにより、Office 365 ワールドワイド サービス インスタンスに対する以前の変更がすべて要求されます。結果の例:
+これにより、Office 365 ワールドワイド サービス インスタンスに対する以前のすべての変更が要求されます。結果の例:
 
 ```json
 [
@@ -351,7 +351,7 @@ Worldwide,2018063000
 ]
 ```
 
-## <a name="example-powershell-script"></a>PowerShell のサンプル スクリプト
+## <a name="example-powershell-script"></a>PowerShell スクリプトの例
 
 更新されたデータに対して行う必要があるアクションがあるかどうかを確認するには、この PowerShell スクリプトを実行します。 このスクリプトは、バージョンの更新を確認するために、スケジュールされたタスクとして実行できます。 Web サービスへ過剰な負荷を与えないために、スクリプトは 1 時間に 1 回以上実行しないようにします。
 
@@ -607,7 +607,7 @@ else:
 
 IP アドレスと URL の変更が Web サービスに発行された際にメール通知を受け取るには、いくつかの方法があります。
 
-- Power Automate ソリューションを使用する方法については、「[Power Automate を使用して Office 365 IP アドレスと URL への変更の通知メールを受け取る](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/m-p/240651)」を参照してください。
+- Microsoft Flow ソリューションを使用する方法については、「[Use Microsoft Flow to receive an email for changes to Office 365 IP Addresses and URLs (Microsoft Flow を使用して Office 365 IP アドレスと URL への変更の通知メールを受け取る)](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/m-p/240651)」を参照してください。
 - ARM テンプレートを使用して Azure Logic App を展開する場合は、「[Office 365 Update Notification (v1.1) (Office 365 更新通知 (v 1.1))](https://aka.ms/ipurlws-updates-template)」を参照してください。
 - PowerShell を使用して独自の通知スクリプトを作成するには、「[Send-MailMessage](/powershell/module/microsoft.powershell.utility/send-mailmessage)」 を参照してください。
 

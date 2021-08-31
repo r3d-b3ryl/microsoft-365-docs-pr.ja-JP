@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f4a5771cc78f1872d57fb8301cdfb1d7d47ae27c64a4aa6f1ab2e0333ba5548f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e85a3728213af4fdb47dbfb47e40af8894a0effc
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863597"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58747533"
 ---
 # <a name="examples-of-device-control-policies-for-jamf"></a>JAMF のデバイス制御ポリシーの例
 
@@ -42,23 +42,23 @@ ms.locfileid: "53863597"
 次の例では、すべてのリムーバブル メディアへのアクセスを制限します。 ポリシーのトップ レベルで適用されるアクセス許可に注意してください。つまり、すべてのファイル操作 `none` が禁止されます。
 
 ```xml
-<?xml version="1.0" encoding="UTF-8"?> 
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"> 
-<plist version="1.0"> 
-<dict> 
-    <key>deviceControl</key> 
-    <dict> 
-        <key>removableMediaPolicy</key> 
-        <dict> 
-            <key>enforcementLevel</key> 
-            <string>block</string> 
-            <key>permission</key> 
-            <array> 
-                <string>none</string> 
-            </array> 
-        </dict> 
-    </dict> 
-</dict> 
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>deviceControl</key>
+    <dict>
+        <key>removableMediaPolicy</key>
+        <dict>
+            <key>enforcementLevel</key>
+            <string>block</string>
+            <key>permission</key>
+            <array>
+                <string>none</string>
+            </array>
+        </dict>
+    </dict>
+</dict>
 </plist>
 ```
 
@@ -67,23 +67,23 @@ ms.locfileid: "53863597"
 次の例では、すべてのリムーバブル メディアを読み取り専用に構成します。 ポリシーのトップ レベルで適用されるアクセス許可に注意してください。つまり、すべての書き込みおよび実行操作は `read` 許可されません。
 
 ```xml
-<?xml version="1.0" encoding="UTF-8"?> 
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"> 
-<plist version="1.0"> 
-<dict> 
-    <key>deviceControl</key> 
-    <dict> 
-        <key>removableMediaPolicy</key> 
-        <dict> 
-            <key>enforcementLevel</key> 
-            <string>block</string> 
-            <key>permission</key> 
-            <array> 
-                <string>read</string> 
-            </array> 
-        </dict> 
-    </dict> 
-</dict> 
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>deviceControl</key>
+    <dict>
+        <key>removableMediaPolicy</key>
+        <dict>
+            <key>enforcementLevel</key>
+            <string>block</string>
+            <key>permission</key>
+            <array>
+                <string>read</string>
+            </array>
+        </dict>
+    </dict>
+</dict>
 </plist>
 ```
 
@@ -92,24 +92,24 @@ ms.locfileid: "53863597"
 次の例は、リムーバブル メディアからのプログラムの実行を禁止する方法を示しています。 ポリシーの `read` `write` トップ レベルで適用されるアクセス許可とアクセス許可に注意してください。
 
 ```xml
-<?xml version="1.0" encoding="UTF-8"?> 
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"> 
-<plist version="1.0"> 
-<dict> 
-    <key>deviceControl</key> 
-    <dict> 
-        <key>removableMediaPolicy</key> 
-        <dict> 
-            <key>enforcementLevel</key> 
-            <string>block</string> 
-            <key>permission</key> 
-            <array> 
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>deviceControl</key>
+    <dict>
+        <key>removableMediaPolicy</key>
+        <dict>
+            <key>enforcementLevel</key>
+            <string>block</string>
+            <key>permission</key>
+            <array>
                 <string>read</string>
-                <string>write</string> 
-            </array> 
-        </dict> 
-    </dict> 
-</dict> 
+                <string>write</string>
+            </array>
+        </dict>
+    </dict>
+</dict>
 </plist>
 ```
 
@@ -118,43 +118,43 @@ ms.locfileid: "53863597"
 次の使用例は、特定のベンダーからのすべてのデバイスを制限します (この場合は、and で識別 `fff0` されます `4525` )。 ポリシーのトップ レベルで定義されたアクセス許可には、すべての可能なアクセス許可 (読み取り、書き込み、実行) が一覧表示されますので、他のすべてのデバイスは制限されません。
 
 ```xml
-<?xml version="1.0" encoding="UTF-8"?> 
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"> 
-<plist version="1.0"> 
-<dict> 
-    <key>deviceControl</key> 
-    <dict> 
-        <key>removableMediaPolicy</key> 
-        <dict> 
-            <key>enforcementLevel</key> 
-            <string>block</string> 
-            <key>permission</key> 
-            <array> 
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>deviceControl</key>
+    <dict>
+        <key>removableMediaPolicy</key>
+        <dict>
+            <key>enforcementLevel</key>
+            <string>block</string>
+            <key>permission</key>
+            <array>
                 <string>read</string>
                 <string>write</string>
-                <string>execute</string> 
-            </array> 
-            <key>vendors</key> 
-            <dict> 
-                <key>fff0</key> 
-                <dict> 
-                    <key>permission</key> 
-                    <array> 
-                        <string>none</string> 
-                    </array> 
-                </dict> 
-                <key>4525</key> 
-                <dict> 
-                    <key>permission</key> 
-                    <array>                         
-                        <string>none</string> 
-                    </array> 
-                </dict> 
-            </dict> 
-        </dict> 
-    </dict> 
-</dict> 
-</plist> 
+                <string>execute</string>
+            </array>
+            <key>vendors</key>
+            <dict>
+                <key>fff0</key>
+                <dict>
+                    <key>permission</key>
+                    <array>
+                        <string>none</string>
+                    </array>
+                </dict>
+                <key>4525</key>
+                <dict>
+                    <key>permission</key>
+                    <array>
+                        <string>none</string>
+                    </array>
+                </dict>
+            </dict>
+        </dict>
+    </dict>
+</dict>
+</plist>
 ```
 
 ## <a name="restrict-specific-devices-identified-by-vendor-id-product-id-and-serial-number"></a>ベンダー ID、製品 ID、シリアル番号で識別される特定のデバイスを制限する
@@ -162,63 +162,63 @@ ms.locfileid: "53863597"
 次の例では、ベンダー ID、製品 ID、シリアル番号で識別される 2 つの特定の `fff0` `1000` デバイスを `04ZSSMHI2O7WBVOA` 制限します `04ZSSMHI2O7WBVOB` 。 ポリシーの他のすべてのレベルでは、アクセス許可には、すべての可能な値 (読み取り、書き込み、実行) が含まれます。つまり、他のすべてのデバイスは制限されません。
 
 ```xml
-<?xml version="1.0" encoding="UTF-8"?> 
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"> 
-<plist version="1.0"> 
-<dict> 
-    <key>deviceControl</key> 
-    <dict> 
-        <key>removableMediaPolicy</key> 
-        <dict> 
-            <key>enforcementLevel</key> 
-            <string>block</string> 
-            <key>permission</key> 
-            <array> 
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>deviceControl</key>
+    <dict>
+        <key>removableMediaPolicy</key>
+        <dict>
+            <key>enforcementLevel</key>
+            <string>block</string>
+            <key>permission</key>
+            <array>
                 <string>read</string>
                 <string>write</string>
                 <string>execute</string>
-            </array> 
-            <key>vendors</key> 
-            <dict> 
-                <key>fff0</key> 
-                <dict> 
-                    <key>permission</key> 
-                    <array> 
-                        <string>read</string> 
+            </array>
+            <key>vendors</key>
+            <dict>
+                <key>fff0</key>
+                <dict>
+                    <key>permission</key>
+                    <array>
+                        <string>read</string>
                         <string>write</string>
-                        <string>execute</string> 
-                    </array> 
-                    <key>products</key> 
-                    <dict> 
-                        <key>1000</key> 
-                        <dict> 
-                            <key>permission</key> 
-                            <array> 
-                                <string>read</string> 
+                        <string>execute</string>
+                    </array>
+                    <key>products</key>
+                    <dict>
+                        <key>1000</key>
+                        <dict>
+                            <key>permission</key>
+                            <array>
+                                <string>read</string>
                                 <string>write</string>
                                 <string>execute</string>
-                            </array> 
-                            <key>serialNumbers</key> 
-                            <dict> 
-                                <key>04ZSSMHI2O7WBVOA</key> 
-                                <array> 
-                                  <string>none</string> 
-                                </array> 
+                            </array>
+                            <key>serialNumbers</key>
+                            <dict>
+                                <key>04ZSSMHI2O7WBVOA</key>
+                                <array>
+                                  <string>none</string>
+                                </array>
                                 <key>04ZSSMHI2O7WBVOB</key>
-                                <array> 
-                                  <string>none</string> 
-                                </array> 
-                            </dict> 
-                        </dict> 
-                    </dict> 
+                                <array>
+                                  <string>none</string>
+                                </array>
+                            </dict>
+                        </dict>
+                    </dict>
                 </dict>
-            </dict> 
-        </dict> 
-    </dict> 
-</dict> 
-</plist> 
+            </dict>
+        </dict>
+    </dict>
+</dict>
+</plist>
 ```
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [macOS のデバイス制御の概要](mac-device-control-overview.md)

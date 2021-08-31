@@ -20,12 +20,12 @@ ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 ms.custom:
 - seo-marvel-apr2020
 description: 一元展開 PowerShell コマンドレットを使用して、組織のOfficeアドインを展開およびMicrosoft 365します。
-ms.openlocfilehash: 8f84c3222fa8a9eefcdda90fa6daf1c453dd73236fd6be61d2c57b63c7feceea
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 37a60ffe7d17f09ecbdb70c80c880b2c7bd51645
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53830157"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745843"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>集中展開 PowerShell コマンドレットを使用してアドインを管理する
 
@@ -49,7 +49,7 @@ ms.locfileid: "53830157"
   Connect-OrganizationAddInService
   ```
 
-3. [資格情報 **の入力] ページ** で、グローバル管理者Microsoft 365を入力します。 または、資格情報をコマンドレットに直接入力することもできます。 
+3. [資格情報 **の入力] ページ** で、ユーザー管理者Microsoft 365 **グローバル管理者** の資格情報 **を** 入力します。 または、資格情報をコマンドレットに直接入力することもできます。 
     
     会社の管理者資格情報を PSCredential オブジェクトとして指定する次のコマンドレットを実行します。
     

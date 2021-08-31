@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: edc1caef21714d76cf06dd065b4963bdc4a7ea7b
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 207c1334f91ecd22385ce281b3f10763afe57810
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573549"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58747377"
 ---
-# <a name="enroll-microsoft-defender-for-endpoint-on-macos-devices-into-jamf-pro"></a>MacOS デバイス上の Microsoft Defender for Endpoint を Jamf デバイスに登録Pro 
+# <a name="enroll-microsoft-defender-for-endpoint-on-macos-devices-into-jamf-pro"></a>MacOS デバイス上の Microsoft Defender for Endpoint を Jamf デバイスに登録Pro
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -46,7 +46,6 @@ JamF に登録するには、複数の方法があります。
 - [方法 2: 事前登録](#enrollment-method-2-prestage-enrollments)
 
 完全な一覧については、「コンピューターの登録 [について」を参照してください](https://docs.jamf.com/9.9/casper-suite/administrator-guide/About_Computer_Enrollment.html)。
-
 
 ## <a name="enrollment-method-1-enrollment-invitations"></a>登録方法 1: 登録の招待
 
@@ -92,7 +91,7 @@ JamF に登録するには、複数の方法があります。
 
     ![登録 1 の Jamf Proイメージ。](images/jamfpro-ca-certificate.png)
 
-2. CA 証明書がインストールされた後、ブラウザー ウィンドウに戻り、[続行] を **選択して** MDM プロファイルをインストールします。 
+2. CA 証明書がインストールされた後、ブラウザー ウィンドウに戻り、[続行] を **選択して** MDM プロファイルをインストールします。
 
     ![登録 2 の Jamf Proイメージ。](images/jamfpro-install-mdm-profile.png)
 
@@ -100,7 +99,7 @@ JamF に登録するには、複数の方法があります。
 
     ![登録 3 の Jamf Proイメージ。](images/jamfpro-download.png)
 
-4. [続行 **] を** 選択して MDM プロファイルのインストールを続行します。 
+4. [続行 **] を** 選択して MDM プロファイルのインストールを続行します。
 
     ![登録 4 の Jamf Proイメージ。](images/jamfpro-install-mdm.png)
 
@@ -108,6 +107,6 @@ JamF に登録するには、複数の方法があります。
 
     ![登録 5 の Jamf Proイメージ。](images/jamfpro-mdm-unverified.png)
 
-6. [続行 **] を**  選択して構成を完了します。 
+6. [続行 **] を**  選択して構成を完了します。
 
     ![登録 6 の Jamf Proイメージ。](images/jamfpro-mdm-profile.png)

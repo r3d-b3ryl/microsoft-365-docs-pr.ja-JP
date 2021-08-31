@@ -15,19 +15,15 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft プライバシー管理のサブジェクト権限要求ソリューションは、個人データを検索し、コンテンツのレビューとレポートの作成に関して共同作業を行う際に役立ちます。
-ms.openlocfilehash: d8f8a636d5322666b3a60ce7310c8cd66ac89538
-ms.sourcegitcommit: 43897ead6db2d3977f6ceb8abeedb8aaff9c020a
+description: Microsoft プライバシー管理のサブジェクト権限要求領域は、個人データを検索し、コンテンツのレビューとレポートの作成に関して共同作業を行う際に役立ちます。
+ms.openlocfilehash: 28059996d4969b23f856df3bb05584b4055ba3d2
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58380238"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745735"
 ---
 # <a name="manage-subject-rights-requests-in-privacy-management-preview"></a>プライバシー管理で件名の権利要求を管理する (プレビュー)
-
-この記事では、サブジェクト権限要求ソリューションを使用して、環境内の個人データを検索し、レビューで共同作業し、レポートを作成し、主要なタスク **を自動化する** 方法について説明します。 
-
-## <a name="purpose-of-subject-rights-requests"></a>件名の権利要求の目的
 
 プライバシー管理は、組織内の個人データの管理を求めるユーザーからの要求を処理するのに役立つ強力なサブジェクト権限要求機能を提供します。 これらの要求は、データ主体要求 (DSRs)、データ主体アクセス要求 (DSA)、またはコンシューマー権限要求とも呼ばれます。 プライバシー管理は、件名の権利要求を満たす責任者が、Exchange、SharePoint、OneDrive、および Teams の組織のデータ間でデータ主体を簡単に識別し、その個人情報を見つけ出す権限を与えます。
 
@@ -127,7 +123,7 @@ ms.locfileid: "58380238"
 
 検索クエリの編集が完了すると、以前の検索結果を置き換える新しい検索が実行されます。 これにより、[進行状況] セクションの状態が最初の手順である [データ推定] **にリセットされます**。 新しい検索の完了には最大 60 分かかる場合があります。 完了すると、要求の詳細ページに更新された結果が表示されます。
 
-### <a name="data-retention"></a>データ保存期間
+### <a name="data-retention"></a>データ保持
 
 このツールを使用して生成されたレポートと、Azure に保存された注釈付きファイルなどの関連データは、指定された期間保存されます。 この期間は、[データ保持期間] セクション **設定を通** じてグローバルレベルで定義され、30 日から 90 日間の間で選択できます。 詳細については、「プライバシー管理の [開始」を参照してください](privacy-management-setup.md)。
 

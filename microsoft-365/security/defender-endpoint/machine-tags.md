@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 02368ff4c8f122b3bca2deac22b3fa994e6bf82d38fce4e44ff40ba12c882730
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e23980133d2fb0c69ca79f6dfdde7656e1961097
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53874013"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745639"
 ---
 # <a name="create-and-manage-device-tags"></a>デバイス タグの作成と管理
 
@@ -41,7 +41,7 @@ ms.locfileid: "53874013"
 - レジストリ キー値を設定する
 
 > [!NOTE]
-> タグがデバイスに追加される時間と、デバイスリストとデバイス ページの可用性の間に、いくつかの待機時間が生じ得る場合があります。  
+> タグがデバイスに追加される時間と、デバイスリストとデバイス ページの可用性の間に、いくつかの待機時間が生じ得る場合があります。
 
 API を使用してデバイス タグを追加するには、「[デバイス タグ API の追加または削除](add-or-remove-machine-tags.md)」を参照してください。
 
@@ -66,8 +66,9 @@ API を使用してデバイス タグを追加するには、「[デバイス �
 
 タグはデバイス ビューに追加され、[デバイス] リスト ビュー **にも反映** されます。 次に、[タグ] フィルター **を使用** して、関連するデバイスの一覧を表示できます。
 
->[!NOTE]
-> かっこを含むタグ名では、フィルター処理が機能しない場合があります。<br>
+> [!NOTE]
+> かっこを含むタグ名では、フィルター処理が機能しない場合があります。
+>
 > 新しいタグを作成すると、既存のタグの一覧が表示されます。 一覧には、ポータルを通じて作成されたタグだけが表示されます。 クライアント デバイスから作成された既存のタグは表示されません。
 
 このビューからタグを削除することもできます。
@@ -76,17 +77,18 @@ API を使用してデバイス タグを追加するには、「[デバイス �
 
 ## <a name="add-device-tags-by-setting-a-registry-key-value"></a>レジストリ キーの値を設定してデバイス タグを追加する
 
->[!NOTE]
+> [!NOTE]
 > 次のデバイスにのみ適用されます。
->- Windows 10バージョン 1709 以降
->- Windowsサーバー、バージョン 1803 以降
->- Windows Server 2016
->- Windows Server 2012 R2
->- Windows Server 2008 R2 SP1
->- Windows 8.1
->- Windows 7 SP1
+>
+> - Windows 10バージョン 1709 以降
+> - Windowsサーバー、バージョン 1803 以降
+> - Windows Server 2016
+> - Windows Server 2012 R2
+> - Windows Server 2008 R2 SP1
+> - Windows 8.1
+> - Windows 7 SP1
 
-> [!NOTE] 
+> [!NOTE]
 > タグに設定できる最大文字数は 200 文字です。
 
 類似のタグを持つデバイスは、デバイスの特定のリストにコンテキスト アクションを適用する必要がある場合に便利です。
@@ -97,7 +99,7 @@ API を使用してデバイス タグを追加するには、「[デバイス �
 - レジストリ キーの値 (REG_SZ): `Group`
 - レジストリ キー のデータ: `Name of the tag you want to set`
 
->[!NOTE]
->デバイス タグは、1 日に 1 回生成されるデバイス情報レポートの一部です。 代わりに、新しいデバイス情報レポートを転送するエンドポイントを再起動することもできます。
-> 
+> [!NOTE]
+> デバイス タグは、1 日に 1 回生成されるデバイス情報レポートの一部です。 代わりに、新しいデバイス情報レポートを転送するエンドポイントを再起動することもできます。
+>
 > 上記のレジストリ キーを使用して追加されたタグを削除する必要がある場合は、'Group' キーを削除する代わりにレジストリ キー データの内容をクリアします。

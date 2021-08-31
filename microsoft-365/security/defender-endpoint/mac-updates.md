@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: dd299db1f8894851cb6d26d82756014b942c8240
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: ae8909f2533394e347a1885f2fb1354f6ce4cfae
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573529"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58747325"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>macOS で Microsoft Defender for Endpoint の更新プログラムを展開する
 
@@ -73,8 +73,12 @@ MAU では、macOS 上のエンドポイント用 Microsoft Defender のアプ�
 > - `Preview` という名前 `External` が付けられた (Insider Slow)
 > - `Current` という名前が付けられた `Production`
 
->[!TIP]
->新機能をプレビューし、早期のフィードバックを提供するには、企業内の一部のデバイスを構成するか、またはに構成をお `Beta` 勧めします `Preview` 。
+> [!TIP]
+> 新機能をプレビューし、早期のフィードバックを提供するには、企業内の一部のデバイスを構成するか、またはに構成をお `Beta` 勧めします `Preview` 。
+
+<br>
+
+****
 
 |Section|値|
 |---|---|
@@ -84,8 +88,8 @@ MAU では、macOS 上のエンドポイント用 Microsoft Defender のアプ�
 |**指定可能な値**|ベータ版 <p> Preview <p> Current|
 |||
 
->[!WARNING]
->この設定は、Microsoft AutoUpdate を通じて更新されるすべてのアプリケーションのチャネルを変更します。 macOS 上の Microsoft Defender for Endpoint のチャネルのみを変更するには、目的のチャネルに置き換えた後、次のコマンド `[channel-name]` を実行します。
+> [!WARNING]
+> この設定は、Microsoft AutoUpdate を通じて更新されるすべてのアプリケーションのチャネルを変更します。 macOS 上の Microsoft Defender for Endpoint のチャネルのみを変更するには、目的のチャネルに置き換えた後、次のコマンド `[channel-name]` を実行します。
 >
 > ```bash
 > defaults write com.microsoft.autoupdate2 Applications -dict-add "/Applications/Microsoft Defender ATP.app" " { 'Application ID' = 'WDAV00' ; 'App Domain' = 'com.microsoft.wdav' ; LCID = 1033 ; ChannelName = '[channel-name]' ; }"
@@ -95,6 +99,10 @@ MAU では、macOS 上のエンドポイント用 Microsoft Defender のアプ�
 
 MAU が更新プログラムを検索する頻度を変更します。
 
+<br>
+
+****
+
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.autoupdate2`|
@@ -102,10 +110,15 @@ MAU が更新プログラムを検索する頻度を変更します。
 |**データ型**|整数|
 |**既定値**|720 (分)|
 |**コメント**|この値は分で設定されます。|
+|||
 
 ### <a name="change-how-mau-interacts-with-updates"></a>MAU と更新プログラムのやり取り方法を変更する
 
 MAU が更新プログラムを検索する方法を変更します。
+
+<br>
+
+****
 
 |Section|値|
 |---|---|
@@ -114,39 +127,55 @@ MAU が更新プログラムを検索する方法を変更します。
 |**データ型**|String|
 |**指定可能な値**|Manual <p> AutomaticCheck <p> AutomaticDownload|
 |**コメント**|AutomaticDownload はダウンロードを実行し、可能であればサイレント インストールします。|
+|||
 
 ### <a name="change-whether-the-check-for-updates-button-is-enabled"></a>[更新プログラムの確認] ボタンが有効になっているかどうかを変更する
 
 ローカル ユーザーが Microsoft AutoUpdate ユーザー インターフェイスの [更新プログラムの確認] オプションをクリックできるかどうかを変更します。
 
+<br>
+
+****
+
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.autoupdate2`|
 |**Key**|EnableCheckForUpdatesButton|
-|**データ型**|Boolean|
+|**データ型**|ブール型|
 |**指定可能な値**|True (既定) <p> 不正解|
+|||
 
 ### <a name="disable-insider-checkbox"></a>Insider チェック ボックスを無効にする
 
 true に設定すると、"Insider Program.Office参加" になります。チェックボックスが使用できない/ユーザーにグレー表示されます。
 
+<br>
+
+****
+
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.autoupdate2`|
 |**Key**|DisableInsiderCheckbox|
-|**データ型**|Boolean|
+|**データ型**|ブール型|
 |**指定可能な値**|False (既定) <p> 正解|
+|||
 
 ### <a name="limit-the-telemetry-that-is-sent-from-mau"></a>MAU から送信されるテレメトリを制限する
 
 最小限のハートビート データ、アプリケーションの使用状況、および環境の詳細を送信するには、false に設定します。
 
+<br>
+
+****
+
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.autoupdate2`|
 |**Key**|SendAllTelemetryEnabled|
-|**データ型**|Boolean|
+|**データ型**|ブール型|
 |**指定可能な値**|True (既定) <p> 不正解|
+|||
 
 ## <a name="example-configuration-profile"></a>構成プロファイルの例
 

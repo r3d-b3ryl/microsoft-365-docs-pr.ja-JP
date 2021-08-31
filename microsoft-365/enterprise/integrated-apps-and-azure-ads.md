@@ -18,32 +18,32 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: cb2250e3-451e-416f-bf4e-363549652c2a
-description: Azure Office 365に統合されたアプリAD登録および管理する方法について説明します。グローバル管理者レベルでのアプリの承認を許可します。
-ms.openlocfilehash: f604260646aa4e6793540003346c9e83d7a6b269
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+description: Azure AD で統合アプリを登録および管理する **AD、Azure** AD DC 管理者、またはグローバル管理者レベルでアプリの承認を許可する方法について **説明** します。 Office 365
+ms.openlocfilehash: ccf1e16e7e0307499e515eb3691c865d49801412
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354226"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58747313"
 ---
 # <a name="integrated-apps-and-azure-ad-for-microsoft-365-administrators"></a>管理者向け統合AD Azure Microsoft 365
 
 統合アプリの管理には、アプリに対するユーザーの同意を管理 [する以外に多くの方法があります](../admin/misc/user-consent.md)。 Microsoft 365 REST API の登場により、ユーザーはアプリにメール、予定表、連絡先、ユーザー、グループ、ファイル、フォルダーなどの Microsoft 365 データへのアクセス権を付与できます。 既定では、ユーザーは各アプリに個別にアクセス許可を付与する必要があります。 
 
-ただし、グローバル管理者レベルでアプリを 1 回承認し、アプリ 起動ツールを通じて組織全体に展開する場合、これはうまく拡張できない。 これを行うには、アプリをアプリ (Azure Azure Active Directory) に登録AD。 Azure AD でアプリを登録する前に実行する必要があるいくつかの手順と、Microsoft 365 組織でアプリを管理するのに役立つ必要があるいくつかの背景情報があります。
+ただし **、Azure AD DC** 管理者、またはグローバル管理者レベルでアプリを 1 回承認し、アプリ起動ツールを通じて組織全体に展開する場合、これはうまく拡張できない。 これを行うには、アプリをアプリ (Azure Azure Active Directory) に登録AD。 Azure AD でアプリを登録する前に実行する必要があるいくつかの手順と、Microsoft 365 組織でアプリを管理するのに役立つ必要があるいくつかの背景情報があります。
   
 ## <a name="azure-ad-resources-for-microsoft-365-admins"></a>Azure AD管理者Microsoft 365リソース
 
 Azure アプリでアプリを管理するには、この 2 つのMicrosoft 365する必要AD。
   
-|前提条件|コメント|
+|前提条件|Comments|
 |:-----|:-----|
 |[無料の Azure サブスクリプションADする](../compliance/use-your-free-azure-ad-subscription-in-office-365.md) <br/> |すべての有料サブスクリプションには、Microsoft 365 Azure サービスへの無料サブスクリプションAD。 Azure ADを使用して、アプリを管理し、ユーザー アカウントとグループ アカウントを作成および管理できます。 Azure ADを使用するには、Azure portal に移動し、アカウントを使用してサインインMicrosoft 365 [https://portal.azure.com](https://portal.azure.com) します。  <br/> |
 |[アプリに対するユーザーの同意を管理する](../admin/misc/user-consent.md) <br/> |サードパーティアプリがユーザー情報にアクセスし、Azure Microsoft 365 にアプリを登録するには、アプリに対するユーザーの同意を管理する必要AD。 たとえば、サードパーティ アプリを使用している場合、そのアプリが予定表へのアクセスと OneDrive フォルダーにあるファイルの編集のために権限を与えるように求めてくることがあります。  <br/> |
    
 アプリをMicrosoft 365するには、Azure アプリのアプリに関する知識が必要AD。 これらの記事を使用して、必要な背景を提供します。
   
-|記事|コメント|
+|記事|Comments|
 |:-----|:-----|
 |[アプリ起動ツールMicrosoft 365する](https://support.microsoft.com/office/meet-the-microsoft-365-app-launcher-79f12104-6fed-442f-96a0-eb089a3f476a) <br/> |アプリ 起動ツールを使いこなす場合は、アプリランチャーとは何か、どのように使うのか疑問に思う場合があります。 アプリ 起動ツールは、アプリのどこからでもアプリにアクセスMicrosoft 365。  <br/> |
 |[Office 365管理 API の概要](/office/office-365-management-api/office-365-management-apis-overview) <br/> |Microsoft 365管理 API を使用すると、Microsoft 365 データ (メール、予定表、連絡先、ユーザーとグループ、ファイル、フォルダーなど) にアクセスできます。 <br/> |

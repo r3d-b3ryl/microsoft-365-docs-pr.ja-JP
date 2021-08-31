@@ -19,12 +19,12 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: d8e83cfd877266bac6247246c078dbdc811368e5
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: d7decb3e566f8bb0abf4a3aec12e2e3a43ae3511
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563512"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58746437"
 ---
 # <a name="investigate-users-in-microsoft-365-defender"></a>ユーザーを調査Microsoft 365 Defender
 
@@ -34,7 +34,7 @@ ms.locfileid: "58563512"
 
 - Microsoft 365 Defender
 
-インシデント調査の一部には、ユーザー アカウントを含めできます。 [インシデント]**からインシデント** の [ユーザー] タブから開始し、&**ユーザー** >*通知>***します**。 
+インシデント調査の一部には、ユーザー アカウントを含めできます。 インシデントからのインシデント **の [ユーザー** ]タブから開始し、& \> ***_ \> _* Users を通知します**。
 
 :::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="インシデントの [ユーザー] ページの例。":::
 
@@ -55,30 +55,47 @@ ms.locfileid: "58563512"
 
 [ユーザー] ページの一覧からユーザー アカウントの名前を選択すると、このページを **確認** することもできます。
 
-[Microsoft 365 Defender ポータル ユーザー ページは、Microsoft Defender for Endpoint、Microsoft Defender for Identity、および Microsoft Cloud App Security (ライセンスに応じて) を結合します。 
+[グループ] で番号を選択すると、ユーザーのグループ メンバーシップを **確認できます**。
+
+:::image type="content" source="../../media/investigate-users/user-group-membership.png" alt-text="ポータル内のユーザーのグループ メンバーシップMicrosoft 365 Defender例":::
+
+[マネージャー] の下 **のアイコンを** 選択すると、ユーザーが組織ツリー内の場所を確認できます。
+
+[Microsoft 365 Defender ポータル ユーザー ページは、Microsoft Defender for Endpoint、Microsoft Defender for Identity、および Microsoft Cloud App Security (ライセンスに応じて) を結合します。
 
 このページには、ユーザー アカウントのセキュリティ リスクに固有の情報が表示されます。 これには、ユーザーの全体的なリスクに寄与したリスクと最近のイベントやアラートを評価するのに役立つスコアが含まれます。
 
-このページでは、次の追加アクションを実行できます。 
+このページでは、次の追加アクションを実行できます。
 
 - ユーザー アカウントを侵害済みとしてマークする
 - ユーザーにもう一度サインインを要求する
 - ユーザー アカウントを中断する
 - ユーザー アカウントAzure Active Directory (Azure AD) の設定を参照してください。
 - ユーザー アカウントが所有するファイルを表示する
-- このユーザーと共有されているファイルを表示します。 
+- このユーザーと共有されているファイルを表示します。
 
 次に例を示します。
 
 :::image type="content" source="../../media/investigate-users/incidents-ss-user-details-actions.png" alt-text="ポータル内のインシデントに対するユーザー アカウントでのアクションMicrosoft 365 Defender例":::
-
 
 <!--
 You can access this page from multiple areas in the Microsoft 365 Defender portal. You can access this page from a specific incident in the **Users** tab. Some alerts might include users as a specific affected asset. You can also search for users.  
 
 Learn more about how to investigate users and potential risk [in this Cloud App Security tutorial](/cloud-app-security/tutorial-ueba#:~:text=To%20identify%20who%20your%20riskiest,user%20page%20to%20investigate%20them).
 
---> 
+-->
+
+## <a name="view-lateral-movement-paths"></a>横方向の移動パスを表示する
+
+[横方向の移動パス] タブを選択すると、ネットワークに侵入するために使用できる、このユーザーとの間の横方向の移動パスを視覚的に表現できる、完全に動的でクリック可能なマップを表示できます。
+
+このマップでは、機密アカウントを侵害するために攻撃者がこのユーザーとの間で必要となるコンピューターまたはユーザー間のホップ数の一覧を提供し、ユーザーが機密性の高いアカウントを持っている場合は、直接接続されているリソースとアカウントの数を確認できます。
+
+過去 2 日間にエンティティの潜在的な横方向の移動パスが検出されない場合、グラフは表示されません。 [別の日付を表示する] を使用して別の日付を選択して、このエンティティで検出された前の横方向の移動パスグラフを表示します。 横方向の移動パス レポートは、検出された潜在的な横方向の移動パスに関する情報を提供するために常に使用できます。また、時間によってカスタマイズできます。
+
+:::image type="content" source="../../media/investigate-users/lateral-movement-path.png" alt-text="ポータル内のユーザーの横方向の移動パスMicrosoft 365 Defender例":::
+
+詳細については、「横方向の移動 [パス」を参照してください](/defender-for-identity/use-case-lateral-movement-path)。
 
 ## <a name="next-steps"></a>次の手順
 

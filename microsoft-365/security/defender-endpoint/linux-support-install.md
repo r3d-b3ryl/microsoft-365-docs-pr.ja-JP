@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 05a2c4e29b56d973f0a0a924390fa5b4209f346a6cdf390fa480e88764860f2f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8787a6bd5818eda5f5302fe149fd7b56db296abd
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53793372"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745855"
 ---
 # <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender for Endpoint on Linux のインストールに関する問題のトラブルシューティング
 
@@ -34,14 +34,14 @@ ms.locfileid: "53793372"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 ## <a name="verify-if-installation-succeeded"></a>インストールが成功した場合の確認
 
 インストール時にエラーが発生した場合と、パッケージ マネージャーによる意味のあるエラー メッセージが表示されない場合があります。 インストールが成功した場合は、以下を使用してインストール ログを取得して確認します。
 
 ```bash
- sudo journalctl --no-pager | grep 'microsoft-mdatp' > installation.log
+ sudo journalctl --no-pager|grep 'microsoft-mdatp' > installation.log
 ```
 
 ```bash
@@ -60,13 +60,18 @@ ms.locfileid: "53793372"
 
 インストールするパッケージがホストの配布とバージョンと一致している場合に注意してください。
 
-| package                       | 配布                             |
-|-------------------------------|------------------------------------------|
-| mdatp-rhel8。Linux.x86_64.rpm  | Oracle、RHEL、CentOS 8.x              |
-| mdatp-sles12.Linux.x86_64.rpm | SuSE Linux Enterprise サーバー 12.x        |
-| mdatp-sles15.Linux.x86_64.rpm | SuSE Linux Enterprise サーバー 15.x        |
-| mdatp。Linux.x86_64.rpm        | Oracle、RHEL、CentOS 7.x              |
-| mdatp。Linux.x86_64.deb        | Debian と Ubuntu 16.04、18.04、20.04 |
+<br>
+
+****
+
+|package|配布|
+|---|---|
+|mdatp-rhel8。Linux.x86_64.rpm|Oracle、RHEL、CentOS 8.x|
+|mdatp-sles12.Linux.x86_64.rpm|SuSE Linux Enterprise サーバー 12.x|
+|mdatp-sles15.Linux.x86_64.rpm|SuSE Linux Enterprise サーバー 15.x|
+|mdatp。Linux.x86_64.rpm|Oracle、RHEL、CentOS 7.x|
+|mdatp。Linux.x86_64.deb|Debian と Ubuntu 16.04、18.04、20.04|
+|
 
 手動 [展開の場合](linux-install-manually.md)は、正しいディストリビューションとバージョンが選択されていることを確認します。
 

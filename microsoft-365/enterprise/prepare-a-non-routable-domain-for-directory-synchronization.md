@@ -24,7 +24,7 @@ ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: オンプレミスのユーザー アカウントに非ルーティング ドメインが関連付けられている場合、Microsoft 365 テナントとの同期前に実行する手順について説明します。
 ms.openlocfilehash: dd93cfd85aa6f6f5788b6ae5562c2a2def3ffaa0
 ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/26/2021
 ms.locfileid: "58574293"
@@ -39,7 +39,7 @@ Microsoft 365 とオンプレミス ディレクトリとの同期時には、Az
 
 AD DS を Microsoft 365 テナント の Azure AD テナントに同期するために、Azure AD Connect を使用します。 詳細については、[オンプレミスの ID と Azure AD の統合](/azure/architecture/reference-architectures/identity/azure-ad)に関する記事を参照してください。
   
-Azure AD Connect では、ユーザーがオンプレミスで使用している資格情報と同じものを使用してサインイン可能になるように、ユーザーの UPN とパスワードを同期します。ただし、Azure AD Connect によるユーザーの同期は、Microsoft 365 で確認済みのドメインのみを対象としています。Microsoft 365 の ID は Azure AD によって管理されるため、ドメインも Azure AD によって確認されていることになります。つまり、ドメインは有効なインターネット ドメイン (com、.org、.net、.us など) であることが必要になります。内部 AD DS がルーティング不能なドメイン (".local" など) のみを使用している場合、Microsoft 365 テナントに対して検証済みのドメインと一致しない可能性があります。この問題は、オンプレミスの AD DS のプライマリ ドメインを変更するか、1 つ以上の UPN サフィックスを追加することで解決できます。
+Azure AD Connect では、ユーザーがオンプレミスで使用している資格情報と同じものを使用してサインイン可能になるように、ユーザーの UPN とパスワードを同期します。ただし、Azure AD Connect によるユーザーの同期は、Microsoft 365 で確認済みのドメインのみを対象としています。Microsoft 365 の ID は Azure AD によって管理されるため、ドメインも Azure AD によって確認されていることになります。つまり、ドメインは有効なインターネット ドメイン (com、.org、.net、.us など) であることが必要になります。内部の AD DS が非ルーティング ドメイン (例: ".local") のみを使用している場合は、そのドメインが Microsoft 365 テナントの確認済みドメインと一致する可能性はありません。この問題は、オンプレミスの AD DS のプライマリ ドメインを変更するか、1 つ以上の UPN サフィックスを追加することで解決できます。
   
 ### <a name="change-your-primary-domain"></a>プライマリ ドメインを変更する
 
@@ -63,7 +63,7 @@ Microsoft 365 で確認したドメイン (複数の場合あり) と一致す�
   
 2. **[Active Directory ドメインと信頼関係]** ウィンドウで、**[Active Directory ドメインと信頼関係]** を右クリックして **[プロパティ]** を選択します。
     
-    ![[Active Directory ドメインと信頼] を右クリックし、[プロパティ] を選択します。](../media/39d20812-ffb5-4ba9-8d7b-477377ac360d.png)
+    ![[Active Directory ドメインと信頼関係] を右クリックして [プロパティ] を選択します。](../media/39d20812-ffb5-4ba9-8d7b-477377ac360d.png)
   
 3. **[UPN サフィックス]** タブの **[代替の UPN サフィックス]** ボックスに、新しいサフィックスを入力して **[追加]** \> **[適用]** を選択します。
     
@@ -83,14 +83,14 @@ Microsoft 365 で確認したドメイン (複数の場合あり) と一致す�
     
 3. **[アカウント]** タブの UPN サフィックス ドロップダウン リストで、新しい UPN サフィックスを選択してから **[OK]** をクリックします。
     
-    ![ユーザーの新しい UPN サフィックスを追加します。](../media/54876751-49f0-48cc-b864-2623c4835563.png)
+    ![ユーザーの新しい UPN サフィックスを追加する。](../media/54876751-49f0-48cc-b864-2623c4835563.png)
   
 4. すべてのユーザに対して、ここまでの手順を実行します。
     
    
 ### <a name="use-powershell-to-change-the-upn-suffix-for-all-of-your-users"></a>すべてのユーザーの UPN サフィックスを変更するために PowerShell を使用する
 
-更新するユーザー アカウントが多数ある場合は、PowerShell を使用する方が簡単です。 次の例では、[Get-ADUser](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee617241(v=technet.10)) コマンドレットと [Set-ADUser](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee617215(v=technet.10)) コマンドレットを使用して、AD DS のすべての contoso.local サフィックスを contoso.com に変更します。 
+更新するユーザー アカウントが大量になる場合は、Windows PowerShell を使用すると作業が簡単になります。次の例では、コマンドレット [Get-ADUser](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee617241(v=technet.10)) と [Set-ADUser](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee617215(v=technet.10)) を使用して、すべての contoso.local サフィックスを AD DS で contoso.com に変更します。 
 
 たとえば、次の PowerShell コマンドを実行すると、すべての contoso.local サフィックスが contoso.com に更新されます。
     

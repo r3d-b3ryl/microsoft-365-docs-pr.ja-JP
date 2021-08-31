@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: de6925bcfc70285516bf12c07540b9c74caec9ea8210850cc1a3cc44f6a1ed92
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7d09ce01bc8d9409d4537df8eaabb50915538aa6
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853873"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58747401"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上のエンドポイント用 Microsoft Defender のリソース
 
@@ -91,37 +91,37 @@ macOS で Microsoft Defender for Endpoint をアンインストールするに�
 
 ### <a name="from-the-command-line"></a>コマンド ラインから
 
-- ```sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'```
+- `sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'`
 
 ## <a name="configuring-from-the-command-line"></a>コマンド ラインからの構成
 
 製品設定の制御やオンデマンド スキャンのトリガーなどの重要なタスクは、コマンド ラインから実行できます。
 
-|Group        |シナリオ                                   |コマンド                                                                           |
-|-------------|-------------------------------------------|----------------------------------------------------------------------------------|
-|構成|リアルタイム保護のオン/オフ           |`mdatp config real-time-protection --value [enabled/disabled]`                    |
-|構成|クラウド保護のオン/オフ               |`mdatp config cloud --value [enabled/disabled]`                                   |
-|構成|製品診断のオン/オフ            |`mdatp config cloud-diagnostic --value [enabled/disabled]`                        |
-|構成|自動サンプル申請のオン/オフ    |`mdatp config cloud-automatic-sample-submission --value [enabled/disabled]`       |
-|構成|許可リストに脅威名を追加する      |`mdatp threat allowed add --name [threat-name]`                                   |
-|構成|許可リストから脅威名を削除する |`mdatp threat allowed remove --name [threat-name]`                                |
-|構成|許可されている脅威名の一覧を表示する              |`mdatp threat allowed list`                                                       |
-|構成|PUA 保護を有効にする                     |`mdatp threat policy set --type potentially_unwanted_application -- action block` |
-|構成|PUA 保護をオフにする                    |`mdatp threat policy set --type potentially_unwanted_application -- action off`   |
-|構成|PUA 保護の監査モードを有効にする      |`mdatp threat policy set --type potentially_unwanted_application -- action audit` |
-|構成|パッシブ モードのオン/オフ                    |`mdatp config passive-mode --value enabled [enabled/disabled]`                    |
-|診断  |ログ レベルの変更                       |`mdatp log level set --level [error/warning/info/verbose]`                        |
-|診断  |診断ログの生成                   |`mdatp diagnostic create --path [directory]`                                      |
-|正常性       |製品の正常性を確認する                 |`mdatp health`                                                                    |
-|正常性       |spefic 製品属性を確認する       |`mdatp health --field [attribute: healthy/licensed/engine_version...]`            |
-|保護   |パスをスキャンする                                |`mdatp scan custom --path [path] [--ignore-exclusions]`                           |
-|保護   |クイック スキャンを実行する                            |`mdatp scan quick`                                                                |
-|保護   |フル スキャンを実行する                             |`mdatp scan full`                                                                 |
-|保護   |進行中のオンデマンド スキャンをキャンセルする           |`mdatp scan cancel`                                                               |
-|保護   |セキュリティ インテリジェンス更新プログラムの要求     |`mdatp definitions update`                                                        |
-|EDR          |デバイスにグループ タグを追加します。 EDRタグは、デバイス グループの管理に使用されます。 詳細については、「/microsoft-365/security/defender-endpoint/machine-groups」を参照してください。 |`mdatp edr tag set --name GROUP --value [name]` |
-|EDR          |デバイスからグループ タグを削除する               |`mdatp edr tag remove --tag-name [name]`                                          |
-|EDR          |グループ ID の追加                               |`mdatp edr group-ids --group-id [group]`                                          |
+|グループ|シナリオ|コマンド|
+|---|---|---|
+|構成|リアルタイム保護のオン/オフ|`mdatp config real-time-protection --value [enabled/disabled]`|
+|構成|クラウド保護のオン/オフ|`mdatp config cloud --value [enabled/disabled]`|
+|構成|製品診断のオン/オフ|`mdatp config cloud-diagnostic --value [enabled/disabled]`|
+|構成|自動サンプル申請のオン/オフ|`mdatp config cloud-automatic-sample-submission --value [enabled/disabled]`|
+|構成|許可リストに脅威名を追加する|`mdatp threat allowed add --name [threat-name]`|
+|構成|許可リストから脅威名を削除する|`mdatp threat allowed remove --name [threat-name]`|
+|構成|許可されている脅威名の一覧を表示する|`mdatp threat allowed list`|
+|構成|PUA 保護を有効にする|`mdatp threat policy set --type potentially_unwanted_application -- action block`|
+|構成|PUA 保護をオフにする|`mdatp threat policy set --type potentially_unwanted_application -- action off`|
+|構成|PUA 保護の監査モードを有効にする|`mdatp threat policy set --type potentially_unwanted_application -- action audit`|
+|構成|パッシブ モードのオン/オフ|`mdatp config passive-mode --value enabled [enabled/disabled]`|
+|Diagnostics|ログ レベルの変更|`mdatp log level set --level [error/warning/info/verbose]`|
+|Diagnostics|診断ログの生成|`mdatp diagnostic create --path [directory]`|
+|正常性|製品の正常性を確認する|`mdatp health`|
+|正常性|spefic 製品属性を確認する|`mdatp health --field [attribute: healthy/licensed/engine_version...]`|
+|保護|パスをスキャンする|`mdatp scan custom --path [path] [--ignore-exclusions]`|
+|保護|クイック スキャンを実行する|`mdatp scan quick`|
+|保護|フル スキャンを実行する|`mdatp scan full`|
+|保護|進行中のオンデマンド スキャンをキャンセルする|`mdatp scan cancel`|
+|保護|セキュリティ インテリジェンス更新プログラムの要求|`mdatp definitions update`|
+|EDR|デバイスにグループ タグを追加します。 EDRタグは、デバイス グループの管理に使用されます。 詳細については、「/microsoft-365/security/defender-endpoint/machine-groups」を参照してください。|`mdatp edr tag set --name GROUP --value [name]`|
+|EDR|デバイスからグループ タグを削除する|`mdatp edr tag remove --tag-name [name]`|
+|EDR|グループ ID の追加|`mdatp edr group-ids --group-id [group]`|
 
 ### <a name="how-to-enable-autocompletion"></a>オートコンプリートを有効にする方法
 
@@ -149,8 +149,7 @@ zsh でオートコンプリートを有効にするには、次の方法を実�
 
    ```zsh
    sudo mkdir -p /usr/local/share/zsh/site-functions
-   ```
-   ```zsh
+
    sudo ln -svf "/Applications/Microsoft Defender ATP.app/Contents/Resources/Tools/mdatp_completion.zsh" /usr/local/share/zsh/site-functions/_mdatp
    ```
 

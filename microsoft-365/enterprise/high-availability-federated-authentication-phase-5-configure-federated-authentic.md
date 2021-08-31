@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
 description: '概要: Azure AD Connectサーバーの高可用性フェデレーション認証用にMicrosoft 365構成Microsoft Azure。'
-ms.openlocfilehash: 8d8636c10947562037093991fa3a3cee5a867af3
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: c179f45e061c1ff004f1c70e83ba0888c066f733
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58561412"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745807"
 ---
 # <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-microsoft-365"></a>高可用性フェデレーション認証 フェーズ 5: サーバーのフェデレーション認証を構成Microsoft 365
 
@@ -85,7 +85,7 @@ Azure AD Connect ツールは、FS AD、Web アプリケーション プロキ�
     
 7. **[ユーザー サインイン]** ページで、**[AD FS とのフェデレーション]** をクリックしてから、**[次へ]** をクリックします。
     
-8. [Azure **ConnectへのAD]** ページで、サブスクリプションのグローバル管理者アカウントの名前とパスワードをMicrosoft 365し、[次へ] をクリック **します**。
+8. **[Azure Connect AD]** ページで **、Azure AD DC** 管理者の名前とパスワード、または Microsoft 365 サブスクリプションのグローバル管理者アカウントを入力し、[次へ] をクリック **します**。
     
 9. [ディレクトリConnect] ページで、フォレストでオンプレミスの Active Directory ドメイン サービス (AD DS) フォレストが選択されていないことを確認し、ドメイン管理者アカウントの名前とパスワードを入力し、[ディレクトリの追加] をクリックし、[次へ] をクリックします。 
     

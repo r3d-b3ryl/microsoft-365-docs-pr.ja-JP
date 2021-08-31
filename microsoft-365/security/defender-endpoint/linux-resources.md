@@ -2,7 +2,7 @@
 title: Microsoft Defender for Endpoint on Linux リソース
 ms.reviewer: ''
 description: Microsoft Defender for Endpoint on Linux のリソース (アンインストール方法、診断ログの収集方法、CLI コマンド、製品に関する既知の問題など) について説明します。
-keywords: microsoft、 defender、 Microsoft Defender for Endpoint, Linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
+keywords: Microsoft、Defender、Microsoft Defender for Endpoint、Linux、インストール、展開、アンインストール、puppet、ansible、linux、redhat、ubuntu、debian、sles、suse、centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0ec48f75765dfafac81fa82f578b956180378fab1aa380c4f9750ec997105e2d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8596cf95c7aa4479d1900ba99c98bc10025ee738
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53811190"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58747665"
 ---
 # <a name="resources"></a>リソース
 
@@ -35,7 +35,7 @@ ms.locfileid: "53811190"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 ## <a name="collect-diagnostic-information"></a>診断情報の収集
 
@@ -75,7 +75,7 @@ ms.locfileid: "53811190"
    Log level configured successfully
    ```
 
-## <a name="log-installation-issues"></a>ログ インストールの問題
+## <a name="log-installation-issues"></a>インストールの問題をログする
 
 インストール中にエラーが発生した場合、インストーラーは一般的なエラーのみを報告します。
 
@@ -104,51 +104,56 @@ Linux で Defender for Endpoint をアンインストールするには、いく
 
 次の表に、最も一般的なシナリオの一部のコマンドを示します。 ターミナル `mdatp help` から実行して、サポートされているコマンドの完全な一覧を表示します。
 
-|Group                 |シナリオ                                                |コマンド                                                                |
-|----------------------|--------------------------------------------------------|-----------------------------------------------------------------------|
-|構成         |リアルタイム保護のオン/オフ                        |`mdatp config real-time-protection --value [enabled\|disabled]`        |
-|構成         |動作監視のオン/オフを切り替えます                         |`mdatp config behavior-monitoring --value [enabled\|disabled]`
-|構成         |クラウド保護のオン/オフ                            |`mdatp config cloud --value [enabled\|disabled]`                       |
-|構成         |製品診断のオン/オフ                         |`mdatp config cloud-diagnostic --value [enabled\|disabled]`            |
-|構成         |自動サンプル申請のオン/オフ                 |`mdatp config cloud-automatic-sample-submission [enabled\|disabled]`   |
-|構成         |AV パッシブ モードのオン/オフ                             |`mdatp config passive-mode --value [enabled\|disabled]`                |
-|構成         |ファイル拡張子のウイルス対策除外を追加/削除する  |`mdatp exclusion extension [add\|remove] --name [extension]`           |
-|構成         |ファイルのウイルス対策除外を追加/削除する            |`mdatp exclusion file [add\|remove] --path [path-to-file]`             |
-|構成         |ディレクトリのウイルス対策の除外を追加/削除する       |`mdatp exclusion folder [add\|remove] --path [path-to-directory]`      |
-|構成         |プロセスのウイルス対策除外を追加/削除する         |`mdatp exclusion process [add\|remove] --path [path-to-process]`<br/>`mdatp exclusion process [add\|remove] --name [process-name]` |
-|構成         |すべてのウイルス対策の除外を一覧表示する                           |`mdatp exclusion list`                                                 |
-|構成         |許可リストに脅威名を追加する                   |`mdatp threat allowed add --name [threat-name]`                        |
-|構成         |許可リストから脅威名を削除する              |`mdatp threat allowed remove --name [threat-name]`                     |
-|構成         |許可されている脅威名の一覧を表示する                           |`mdatp threat allowed list`                                            |
-|構成         |PUA 保護を有効にする                                  |`mdatp threat policy set --type potentially_unwanted_application --action block` |
-|構成         |PUA 保護をオフにする                                 |`mdatp threat policy set --type potentially_unwanted_application --action off` |
-|構成         |PUA 保護の監査モードを有効にする                   |`mdatp threat policy set --type potentially_unwanted_application --action audit` |
-|診断           |ログ レベルの変更                                    |`mdatp log level set --level verbose [error|warning|info|verbose]`     |
-|診断           |診断ログの生成                                |`mdatp diagnostic create --path [directory]`                           |
-|正常性                |製品の正常性を確認する                              |`mdatp health`                                                         |
-|保護            |パスをスキャンする                                             |`mdatp scan custom --path [path] [--ignore-exclusions]`                |
-|保護            |クイック スキャンを実行する                                         |`mdatp scan quick`                                                     |
-|保護            |フル スキャンを実行する                                          |`mdatp scan full`                                                      |
-|保護            |進行中のオンデマンド スキャンをキャンセルする                        |`mdatp scan cancel`                                                    |
-|保護            |セキュリティ インテリジェンス更新プログラムの要求                  |`mdatp definitions update`                                             |
-|保護履歴    |完全な保護履歴を印刷する                       |`mdatp threat list`                                                    |
-|保護履歴    |脅威の詳細を取得する                                      |`mdatp threat get --id [threat-id]`                                    |
-|検疫の管理 |検疫済みファイルの一覧表示                              |`mdatp threat quarantine list`                                         |
-|検疫の管理 |検疫からすべてのファイルを削除する                    |`mdatp threat quarantine remove-all`                                   |
-|検疫の管理 |脅威として検出されたファイルを検疫に追加する       |`mdatp threat quarantine add --id [threat-id]`                         |
-|検疫の管理 |脅威として検出されたファイルを検疫から削除する  |`mdatp threat quarantine remove --id [threat-id]`                      |
-|検疫の管理 |検疫からファイルを復元する                      |`mdatp threat quarantine restore --id [threat-id]`                     |
-|エンドポイントの検出と応答 |早期プレビューの設定 (未使用)                    |`mdatp edr early-preview [enable|disable]`                             |
-|エンドポイントの検出と応答 |group-id を設定する                                  |`mdatp edr group-ids --group-id [group-id]`                            |
-|エンドポイントの検出と応答 |タグの設定と削除、 `GROUP` サポートのみ        |`mdatp edr tag set --name GROUP --value [tag]`                         |
-|エンドポイントの検出と応答 |リストの除外 (ルート)                        |`mdatp edr exclusion list [processes|paths|extensions|all]`            |
+<br>
+
+****
+
+|グループ|シナリオ|コマンド|
+|---|---|---|
+|構成|リアルタイム保護のオン/オフ|`mdatp config real-time-protection --value [enabled\|disabled]`|
+|構成|動作監視のオン/オフを切り替えます|`mdatp config behavior-monitoring --value [enabled\|disabled]`
+|構成|クラウド保護のオン/オフ|`mdatp config cloud --value [enabled\|disabled]`|
+|構成|製品診断のオン/オフ|`mdatp config cloud-diagnostic --value [enabled\|disabled]`|
+|構成|自動サンプル申請のオン/オフ|`mdatp config cloud-automatic-sample-submission [enabled\|disabled]`|
+|構成|AV パッシブ モードのオン/オフ|`mdatp config passive-mode --value [enabled\|disabled]`|
+|構成|ファイル拡張子のウイルス対策除外を追加/削除する|`mdatp exclusion extension [add\|remove] --name [extension]`|
+|構成|ファイルのウイルス対策除外を追加/削除する|`mdatp exclusion file [add\|remove] --path [path-to-file]`|
+|構成|ディレクトリのウイルス対策の除外を追加/削除する|`mdatp exclusion folder [add\|remove] --path [path-to-directory]`|
+|構成|プロセスのウイルス対策除外を追加/削除する|`mdatp exclusion process [add\|remove] --path [path-to-process]` <p> `mdatp exclusion process [add\|remove] --name [process-name]`|
+|構成|すべてのウイルス対策の除外を一覧表示する|`mdatp exclusion list`|
+|構成|許可リストに脅威名を追加する|`mdatp threat allowed add --name [threat-name]`|
+|構成|許可リストから脅威名を削除する|`mdatp threat allowed remove --name [threat-name]`|
+|構成|許可されている脅威名の一覧を表示する|`mdatp threat allowed list`|
+|構成|PUA 保護を有効にする|`mdatp threat policy set --type potentially_unwanted_application --action block`|
+|構成|PUA 保護をオフにする|`mdatp threat policy set --type potentially_unwanted_application --action off`|
+|構成|PUA 保護の監査モードを有効にする|`mdatp threat policy set --type potentially_unwanted_application --action audit`|
+|Diagnostics|ログ レベルの変更|`mdatp log level set --level verbose [error|warning|info|verbose]`|
+|Diagnostics|診断ログの生成|`mdatp diagnostic create --path [directory]`|
+|正常性|製品の正常性を確認する|`mdatp health`|
+|保護|パスをスキャンする|`mdatp scan custom --path [path] [--ignore-exclusions]`|
+|保護|クイック スキャンを実行する|`mdatp scan quick`|
+|保護|フル スキャンを実行する|`mdatp scan full`|
+|保護|進行中のオンデマンド スキャンをキャンセルする|`mdatp scan cancel`|
+|保護|セキュリティ インテリジェンス更新プログラムの要求|`mdatp definitions update`|
+|保護履歴|完全な保護履歴を印刷する|`mdatp threat list`|
+|保護履歴|脅威の詳細を取得する|`mdatp threat get --id [threat-id]`|
+|検疫の管理|検疫済みファイルの一覧表示|`mdatp threat quarantine list`|
+|検疫の管理|検疫からすべてのファイルを削除する|`mdatp threat quarantine remove-all`|
+|検疫の管理|脅威として検出されたファイルを検疫に追加する|`mdatp threat quarantine add --id [threat-id]`|
+|検疫の管理|脅威として検出されたファイルを検疫から削除する|`mdatp threat quarantine remove --id [threat-id]`|
+|検疫の管理|検疫からファイルを復元する|`mdatp threat quarantine restore --id [threat-id]`|
+|エンドポイントの検出と応答|早期プレビューの設定 (未使用)|`mdatp edr early-preview [enable|disable]`|
+|エンドポイントの検出と応答|group-id を設定する|`mdatp edr group-ids --group-id [group-id]`|
+|エンドポイントの検出と応答|タグの設定と削除、 `GROUP` サポートのみ|`mdatp edr tag set --name GROUP --value [tag]`|
+|エンドポイントの検出と応答|リストの除外 (ルート)|`mdatp edr exclusion list [processes|paths|extensions|all]`|
+|
 
 ## <a name="microsoft-defender-for-endpoint-portal-information"></a>Microsoft Defender for Endpoint ポータル情報
 
 Defender for Endpoint ポータルには、次の 2 つのカテゴリの情報が表示されます。
 
 - 次のウイルス対策アラートを含む。
-  - 緊急度
+  - 重要度
   - スキャンの種類
   - デバイス情報 (ホスト名、デバイス識別子、テナント識別子、アプリのバージョン、OS の種類)
   - ファイル情報 (名前、パス、サイズ、ハッシュ)

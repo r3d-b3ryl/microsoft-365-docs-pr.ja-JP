@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社がエンタープライズ向けサービスのセキュリティMicrosoft 365使用する方法。
-ms.openlocfilehash: b88e1dfafe6669782096e851eef1935079aa4676
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 581314b34ab8f60533f1e2de99d4d1097086d1a0
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356410"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745675"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Contoso Corporation のMicrosoft 365セキュリティの概要
 
@@ -58,7 +58,7 @@ Contoso 社は、次の手順に従って、エンタープライズ向けサー
 
   Contoso 社は、グローバル管理者の役割を日常のユーザー アカウントに割り当てるのではなく、強力なパスワードを持つ 3 つの専用のグローバル管理者アカウントを作成しました。 アカウントは、Azure AD多要素認証 (MFA) と Azure Active Directory (Azure AD) Privileged Identity Management (PIM) によって保護されます。 *PIM は、Microsoft 365 E5 でのみ使用可能です。*
 
-  グローバル管理者アカウントでのサインインは、特定の管理タスクに対して行われます。 パスワードは、指定されたスタッフにのみ知られているので、Azure AD PIM で構成されている期間中にのみ使用できます。
+  Azure AD **DC 管理者またはグローバル管理者** アカウントでのサインインは、特定の管理タスクに対してのみ実行されます。 パスワードは、指定されたスタッフにのみ知られているので、Azure AD PIM で構成されている期間中にのみ使用できます。
 
   Contoso のセキュリティ管理者は、IT ワーカーのジョブ機能に適したアカウントに、より少ない管理者ロールを割り当てしました。
 
@@ -68,7 +68,7 @@ Contoso 社は、次の手順に従って、エンタープライズ向けサー
 
   MFA は、サインイン プロセスに追加の保護層を追加します。 ユーザーは、パスワードを正しく入力した後、スマートフォンで電話、テキスト メッセージ、アプリ通知を確認する必要があります。 MFA を使用すると、アカウントADパスワードが侵害された場合でも、Azure ユーザー アカウントは承認されていないサインインから保護されます。
 
-   - サブスクリプションの侵害から保護Microsoft 365 Contoso では、すべてのグローバル管理者アカウントで MFA が必要です。
+   - サブスクリプションの侵害から保護Microsoft 365 Contoso は、すべての Azure 管理者または DC 管理者、またはグローバル管理者アカウントAD **MFA****を必要** とします。
    - 組織内の信頼されている人の資格情報が漏えいし、攻撃者が悪意のある電子メールを送信するというフィッシング攻撃からの保護を目的として、Contoso 社ではマネージャーや経営幹部を含むすべてのユーザー アカウントで MFA を有効にしました。
 
 - 条件付きアクセス ポリシーを使用したデバイスとアプリケーションへの安全なアクセス

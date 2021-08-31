@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f7b1607a6e83db969807c0d0ce369b161cb88f1e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 259abe6753224e55c937962bd0af19d2f6ba0a9f
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573537"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745663"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>macOS での Microsoft Defender for Endpoint のパフォーマンスの問題のトラブルシューティング
 
@@ -61,16 +61,17 @@ ms.locfileid: "58573537"
       ```
 
       デバイスが組織によって管理されている場合は [、「MacOS](mac-preferences.md)で Microsoft Defender for Endpoint の基本設定を設定する」の手順に従って、管理者がリアルタイム保護を無効にすることができます。
-      
+
       リアルタイム保護がオフの間にパフォーマンスの問題が解決しない場合、問題の発生源はエンドポイント検出および応答コンポーネントである可能性があります。 この場合、詳細な手順と軽減策については、カスタマー サポートにお問い合わせください。
 
-2. Finder を開き、[アプリケーション ユーティリティ **]**  >  **に移動します**。 [ **アクティビティ モニター] を** 開き、システムでリソースを使用しているアプリケーションを分析します。 一般的な例としては、ソフトウェアアップデータとコンパイラが含まれます。
+2. Finder を開き、[アプリケーション ユーティリティ **]** \> **に移動します**。 [ **アクティビティ モニター] を** 開き、システムでリソースを使用しているアプリケーションを分析します。 一般的な例としては、ソフトウェアアップデータとコンパイラが含まれます。
 
-1. 最も多くのスキャンをトリガーしているアプリケーションを見つけるには、Defender for Endpoint on Mac によって収集されたリアルタイム統計を使用できます。
+3. 最も多くのスキャンをトリガーしているアプリケーションを見つけるには、Defender for Endpoint on Mac によって収集されたリアルタイム統計を使用できます。
 
       > [!NOTE]
       > この機能は、バージョン 100.90.70 以降で使用できます。
       この機能は **、Dogfood** チャネルと InsiderFast チャネルで既定 **で有効** になっています。 別の更新チャネルを使用している場合は、コマンド ラインからこの機能を有効にできます。
+
       ```bash
       mdatp config real-time-protection-statistics  --value enabled
       ```
@@ -101,7 +102,7 @@ ms.locfileid: "58573537"
       > **--output json** (ダブル ダッシュ) を使用すると、出力形式が解析の準備ができていることを確認できます。
       このコマンドの出力には、すべてのプロセスと関連するスキャン アクティビティが表示されます。
 
-1. Mac システムで、次のコマンドを使用して python パーサー high_cpu_parser.py のサンプルをダウンロードします。
+4. Mac システムで、次のコマンドを使用して python パーサー high_cpu_parser.py のサンプルをダウンロードします。
 
     ```bash
     curl -O https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/linux/diagnostic/high_cpu_parser.py
@@ -117,11 +118,11 @@ ms.locfileid: "58573537"
     HTTP request sent, awaiting response... 200 OK
     Length: 1020 [text/plain]
     Saving to: 'high_cpu_parser.py'
-    100%[===========================================>] 1,020    --.-K/s   in 
+    100%[===========================================>] 1,020    --.-K/s   in
     0s
     ```
 
-1. 次に、次のコマンドを入力します。
+5. 次に、次のコマンドを入力します。
 
       ```bash
         chmod +x high_cpu_parser.py
@@ -153,7 +154,7 @@ ms.locfileid: "58573537"
 
       > [!NOTE]
       > アプリケーションは、統計をメモリに格納し、ファイルのアクティビティが開始され、リアルタイム保護が有効にされた後にのみ追跡します。 リアルタイム保護がオフの前または期間中に起動されたプロセスはカウントされません。 さらに、トリガーされたスキャンがカウントされるイベントのみ。
-      > 
-1. パフォーマンスの問題に寄与するプロセスまたはディスクの場所を除外し、リアルタイム保護を再び有効にして、macOS 上の Microsoft Defender for Endpoint を構成します。
+      >
+6. パフォーマンスの問題に寄与するプロセスまたはディスクの場所を除外し、リアルタイム保護を再び有効にして、macOS 上の Microsoft Defender for Endpoint を構成します。
 
      詳細 [については、「MacOS](mac-exclusions.md) での Microsoft Defender for Endpoint の除外の構成と検証」を参照してください。

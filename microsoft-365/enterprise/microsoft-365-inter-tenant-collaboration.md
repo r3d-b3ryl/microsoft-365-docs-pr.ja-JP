@@ -19,12 +19,12 @@ f1.keywords:
 - NOCSH
 description: テナントと組織Microsoft 365コラボレーションがどのように機能し、さまざまな組織が安全に連携できるのかについて説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c2060ec93fdf80d4afc3f0aa8f693de6bb275454
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 05a1756d4707ba51d1175f0f5f5701f89fd7f5a4
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356638"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58747043"
 ---
 # <a name="microsoft-365-inter-tenant-collaboration"></a>Microsoft 365間のコラボレーション
 
@@ -58,7 +58,7 @@ Microsoft 365間のコラボレーション オプションには、ファイル
 
 | 共有の目的 | 管理操作 | 使い方に関する情報 |
 |:-----|:-----|:-----|
-|Azure AD B2B コラボレーション - 組織のディレクトリ内のグループに外部ユーザーを追加することによるコンテンツ共有 | ある Microsoft 365 テナントのグローバル管理者は、別の Microsoft 365 テナントのユーザーを招待してディレクトリに参加し、それらの外部ユーザーをグループに追加し、グループの SharePoint サイトやライブラリなどのコンテンツへのアクセスを許可できます。 |  <ul><li> [Azure AD B2B コラボレーション プレビューとは何か?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) </li><li> [Azure AD B2B: 新しい更新で企業間のコラボレーションが簡単に](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/01/azure-ad-b2b-new-updates-make-cross-business-collab-easy/) </li><li> [外部共有と B2B Azure Active Directoryの共有](/azure/active-directory/active-directory-b2b-o365-external-user) </li><li> [Azure Active Directory の B2B コラボレーションの API とカスタマイズ](/azure/active-directory/active-directory-b2b-api) </li><li> [Azure AD と ID の表示： Azure AD B2B コラボレーション (企業間)](https://channel9.msdn.com/Series/Azure-AD-Identity/AzureADB2B) </li></ul> |
+|Azure AD B2B コラボレーション - 組織のディレクトリ内のグループに外部ユーザーを追加することによるコンテンツ共有 | ある Microsoft 365 テナントの Azure  **AD DC** 管理者、セキュリティ管理者、ユーザー管理者、**クラウド** アプリケーション管理者、またはグローバル管理者は、別の Microsoft 365 テナントのユーザーを招待してディレクトリに参加し、それらの外部ユーザーをグループに追加し、グループの SharePoint サイトやライブラリなどのコンテンツへのアクセスを許可できます。  |  <ul><li> [Azure AD B2B コラボレーション プレビューとは何か?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) </li><li> [Azure AD B2B: 新しい更新で企業間のコラボレーションが簡単に](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/01/azure-ad-b2b-new-updates-make-cross-business-collab-easy/) </li><li> [外部共有と B2B Azure Active Directoryの共有](/azure/active-directory/active-directory-b2b-o365-external-user) </li><li> [Azure Active Directory の B2B コラボレーションの API とカスタマイズ](/azure/active-directory/active-directory-b2b-api) </li><li> [Azure AD と ID の表示： Azure AD B2B コラボレーション (企業間)](https://channel9.msdn.com/Series/Azure-AD-Identity/AzureADB2B) </li></ul> |
 
 ## <a name="microsoft-365-collaboration-options"></a>Microsoft 365のオプション
 
@@ -76,7 +76,7 @@ Microsoft 365間のコラボレーション オプションには、ファイル
 
 |共有の目的|管理操作|使い方に関する情報|
 |:-----|:-----|:-----|
-|組織外のユーザーと Teams でコラボレーションを行う | 招待するテナントのグローバル管理者は、Microsoft 365で外部コラボレーションを有効にするTeams。 グローバル管理者とチームの所有者は、Teams でコラボレーションを行うために、メール アドレスを持つすべてのユーザーを招待できるようになります。  <br/> 管理者は、既にテナント内にいるゲストを管理して編集することもできます。 |  <ul><li> [ゲスト アクセスを認証する](/microsoftteams/teams-dependencies) </li><li> [Teams でゲスト アクセスをオンまたはオフにする](/microsoftteams/set-up-guests) </li><li> [PowerShell を使用してゲスト アクセスを制御する](/microsoftteams/guest-access-powershell) </li><li> [ゲスト アクセスのチェックリスト](/microsoftteams/guest-access-checklist) </li><li> [ゲスト ユーザーを表示する](/microsoftteams/view-guests) </li><li> [ゲスト ユーザー情報を編集する](/microsoftteams/edit-guests-information) </li></ul> |
+|組織外のユーザーと Teams でコラボレーションを行う | テナント **を招待する** ユーザー **管理者** またはグローバル管理者は、Microsoft 365で外部コラボレーションを有効にするTeams。 グローバル管理者とチームの所有者は、Teams でコラボレーションを行うために、メール アドレスを持つすべてのユーザーを招待できるようになります。  <br/> 管理者は、既にテナント内にいるゲストを管理して編集することもできます。 |  <ul><li> [ゲスト アクセスを認証する](/microsoftteams/teams-dependencies) </li><li> [Teams でゲスト アクセスをオンまたはオフにする](/microsoftteams/set-up-guests) </li><li> [PowerShell を使用してゲスト アクセスを制御する](/microsoftteams/guest-access-powershell) </li><li> [ゲスト アクセスのチェックリスト](/microsoftteams/guest-access-checklist) </li><li> [ゲスト ユーザーを表示する](/microsoftteams/view-guests) </li><li> [ゲスト ユーザー情報を編集する](/microsoftteams/edit-guests-information) </li></ul> |
 |チームの所有者は、ゲストを招待し、ゲストがチーム内でコラボレーションを行う方法を管理することができる。  |チームの所有者は、自分のチーム内でゲストが実行できる操作をさらに制御することができます。 |  <ul><li> [ゲストを追加する](https://support.office.com/article/teams-and-channels-df38ae23-8f85-46d3-b071-cb11b9de5499?ui=en-US&amp;rs=en-US&amp;ad=US#bkmk_addingguests&amp;ID0EAABAAA=Add_guests) </li><li> [チームにゲストを追加する](/microsoftteams/add-guests) </li><li> [Teams でのゲスト アクセスを管理する](/microsoftteams/manage-guests) </li><li> [チームまたはチャネルにいるユーザーを確認する](https://support.office.com/article/see-who-s-on-a-team-or-in-a-channel-5c6be9be-9c45-4a0f-a1a0-f332b23cb6b7?ui=en-US&amp;rs=en-US&amp;ad=US) </li></ul> |
 |他のテナントからのゲストは、Teams 内のコンテンツを表示し、他のメンバーとコラボレーションすることができる | なし。 | [ゲストのエクスペリエンスについて](/microsoftteams/guest-experience)|
 

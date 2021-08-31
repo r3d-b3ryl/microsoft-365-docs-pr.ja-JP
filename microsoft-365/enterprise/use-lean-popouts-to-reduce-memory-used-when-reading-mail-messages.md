@@ -15,18 +15,18 @@ f1.keywords:
 - NOCSH
 description: この記事では、リーン ポップアウトを使用してメッセージダウンロードのパフォーマンスを向上させる方法についてOutlook on the web。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 612774478f5b649901d6eae9dccf332299fa53d38331c6ced847ea8d05be104e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5f2f30f4a725add062ff6d800a9cb3953dfeb078
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53840769"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745687"
 ---
 # <a name="use-lean-popouts-to-reduce-memory-used-when-reading-mail-messages"></a>無駄のないポップアウトを使用して、メール メッセージの読み取り時に使用されるメモリを削減する
 
 この記事では、メッセージダウンロードのパフォーマンスを向上させる方法についてOutlook on the web。 この記事は、プロジェクトのネットワーク[計画とパフォーマンスの調整Office 365](./network-planning-and-performance.md)です。
   
-Office 365 のグローバル管理者は、Outlook on the web または Microsoft Edge または Internet Explorerで特定の電子メール メッセージの小規模でメモリ負荷の少ないバージョンの無駄のないポップアウトを配信する Outlook on the web を構成できます。 リーン ポップアウトが Outlook on the web場合、パフォーマンスを最適化するサーバー側レンダリング コンポーネントが読み込まれます。
+Office 365 **アプリケーション** 管理者、グローバル管理者、またはユーザー管理者として、Outlook on the web を構成して、Microsoft Edge または Internet Explorerの特定の電子メール メッセージの小規模でメモリ消費の少ないバージョンを提供できます。  リーン ポップアウトが Outlook on the web場合、パフォーマンスを最適化するサーバー側レンダリング コンポーネントが読み込まれます。
   
 > [!NOTE]
 > 2018 年 3 月の現在、情報権利管理 (IRM) などの使用権限の制限を指定するメッセージでは、リーン ポップアウトを使用できません。

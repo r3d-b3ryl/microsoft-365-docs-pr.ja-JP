@@ -16,16 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 description: プライバシー管理のアクセス許可を設定し、ユーザーを役割グループに割り当てる方法について説明します。
-ms.openlocfilehash: ebdd5610253ecb5bd490eb9b8bb8beb45f8b6458
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 6caf786a99e08c2f5c6abfd4c2dbabc438151d06
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507712"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58747011"
 ---
 # <a name="set-user-permissions-and-assign-roles-in-privacy-management-preview"></a>プライバシー管理でユーザーのアクセス許可を設定し、役割を割り当てる (プレビュー)
-
-この記事では、アクセス許可を設定 **し、役割** グループと役割にユーザーを割り **当てる方法について** 学習 **します**。
 
 組織のメンバーにプライバシー管理を使用するアクセス許可を付与するには、グループ内の適切な役割グループに割り当Microsoft 365 コンプライアンス センター。 プライバシー管理に固有の役割は、このページにはAzure Active Directory。
 

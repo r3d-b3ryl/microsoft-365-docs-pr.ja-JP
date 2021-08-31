@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2f730f590b9ba604596dc9230fc22c451e99630e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 9ca412a54fb94fd9835b30d6b9b6092dc4e79015
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565210"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58744979"
 ---
 # <a name="troubleshoot-kernel-extension-issues-in-microsoft-defender-for-endpoint-on-macos"></a>macOS の Microsoft Defender for Endpoint でのカーネル拡張機能の問題のトラブルシューティング
 
@@ -69,7 +69,7 @@ real_time_protection_available              : true
 
 ## <a name="manual-deployment"></a>手動展開
 
-製品のインストールから 30 分未満経過した場合は **、[System Preferences** Security & Privacy] に移動し、開発者  >  "Microsoft Corporation" のシステム ソフトウェアを許可する必要があります。
+製品のインストールから 30 分未満経過した場合は **、[System Preferences** Security & Privacy] に移動し、開発者 \> "Microsoft Corporation" のシステム ソフトウェアを許可する必要があります。
 
 このプロンプトが表示されない場合は、30 分以上経過し、カーネル拡張機能がデバイスでの実行が承認されていないことを意味します。
 
@@ -82,14 +82,14 @@ real_time_protection_available              : true
     ```bash
     sudo kextutil /Library/Extensions/wdavkext.kext
     ```
-    
+
     ```Output
     Kext rejected due to system policy: <OSKext 0x7fc34d528390 [0x7fffa74aa8e0]> { URL = "file:///Library/StagedExtensions/Library/Extensions/wdavkext.kext/", ID = "com.microsoft.wdavkext" }
     Kext rejected due to system policy: <OSKext 0x7fc34d528390 [0x7fffa74aa8e0]> { URL = "file:///Library/StagedExtensions/Library/Extensions/wdavkext.kext/", ID = "com.microsoft.wdavkext" }
     Diagnostics for /Library/Extensions/wdavkext.kext:
     ```
 
-2. メニュー **から [System Preferences**  >  **Security &プライバシー]** を開きます。 (開いている場合は、最初に閉じます)。
+2. メニュー **から [System Preferences** \> **Security &プライバシー]** を開きます。 (開いている場合は、最初に閉じます)。
 
 3. **開発者** からのシステム ソフトウェアの許可 "Microsoft Corporation"
 

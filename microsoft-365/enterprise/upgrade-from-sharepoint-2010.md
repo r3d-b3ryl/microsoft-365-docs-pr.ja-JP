@@ -20,12 +20,12 @@ f1.keywords:
 - NOCSH
 description: 2010 年からサーバー 2010 および SharePointサーバー 2010 SharePointアップグレードする情報とリソースを検索します。 2021 年 4 月 13 日の両方のサポート。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8c57aa4d15ba6fbb95a59f28039db41303a536fd
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: da824abb7575a509cb988c474e667d0475e821c1
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575242"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745747"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>SharePoint 2010 からのアップグレード
 
@@ -112,7 +112,7 @@ SharePoint Server 2013 または SharePoint Server 2016 にアップグレード
 |SharePointオンラインの利点|SharePointオンライン上の欠点|
 |---|---|
 |Microsoft が SPO ハードウェアおよびすべてのハードウェアの管理を行う。|利用可能な機能は、オンプレミスのサーバー SharePoint SPO によって異なる場合があります。|
-|サブスクリプションのグローバル管理者であり、SPO サイトに管理者を割り当てできます。|SharePoint Server オンプレミスのファーム管理者が使用できる一部のアクションは、Microsoft 365 の SharePoint Administrator ロールに存在しない (または必要ありません)。 ただしSharePoint管理、サイト コレクション管理、およびサイト所有権は組織に対してローカルです。|
+|サブスクリプションの Sharepoint 管理者またはグローバル管理者であり、SPO サイトに管理者を割り当てできます。|SharePoint Server オンプレミスのファーム管理者が使用できる一部のアクションは、Microsoft 365 の SharePoint Administrator ロールに存在しない (または必要ありません)。 ただしSharePoint管理、サイト コレクション管理、およびサイト所有権は組織に対してローカルです。|
 |Microsoft は、オンラインで実行されるサーバーを含む、基になるハードウェアとSQL更新プログラム、修正プログラムSharePoint適用します。|サービス内の基になるファイル システムにアクセスしないので、カスタマイズは制限されます。|
 |Microsoft はサービス [レベル契約を発行し](/office365/servicedescriptions/office-365-platform-service-description/service-level-agreement) 、迅速にサービス レベルのインシデントを解決します。|バックアップと復元、その他の回復オプションは、オンラインのサービスによってSharePointされます。 使用しない場合、バックアップは上書きされます。|
 |セキュリティ テストとサーバーパフォーマンスの調整は、Microsoft によってサービス内で継続的に実行されます。|ユーザー インターフェイスとその他の SharePoint 機能の変更はサービスによってインストールされ、オン/オフの切り替えが必要な場合がある。|

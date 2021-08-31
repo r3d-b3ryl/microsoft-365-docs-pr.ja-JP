@@ -37,16 +37,16 @@ search.appverid:
 - OSU160
 ms.assetid: ba124775-d5c0-4d68-b88d-8458ad4c3717
 description: 2007 SharePointのサポートは 2017 年 10 月に終了しました。 この記事では、アップグレード、移行、およびサポート オプションについて説明します。
-ms.openlocfilehash: de7469e40ac377cd49384c5d67cf9ac26273f4ace74ab165c6aa38835afa8444
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b653bcec6992834bba9f469753d8a3d13277b239
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53885077"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58746999"
 ---
 # <a name="sharepoint-server-2007-end-of-support-roadmap"></a>SharePoint Server 2007 のサポート終了ロードマップ
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 **2017 年 10 月 10** 日、Microsoft Office SharePoint Server 2007 はサポートの終了に達しました。 SharePoint Server 2007 から Microsoft 365 または新しいバージョンの SharePoint Server オンプレミスに移行していない場合は、計画を開始します。 この記事では、データをオンラインに移行したり、SharePointサーバーをオンプレミスSharePointするのに役立つリソースを提供します。
   
@@ -71,7 +71,7 @@ Office 2007 サーバーとサポート終了の詳細については[、「2007
   
 ## <a name="what-are-my-options"></a>使用できるオプション
 
-最初の停止は製品ライフサイクル [サイトである必要があります](/lifecycle/products/?alpha=Microsoft+Office+SharePoint+Server+2007)。 古いオンプレミスの Microsoft 製品がある場合は、アップグレードまたは移行をスケジュールするために 1 年かそうである必要がある場合は、サポート終了日を確認してください。 次の手順を選択する場合は、どの製品機能が十分で、より良く、最適かを検討してください。 次に例を示します。 
+最初の停止は製品ライフサイクル [サイトである必要があります](/lifecycle/products/?alpha=Microsoft+Office+SharePoint+Server+2007)。 古いオンプレミスの Microsoft 製品がある場合は、アップグレードまたは移行をスケジュールするために 1 年かそうである必要がある場合は、サポート終了日を確認してください。 次の手順を選択する場合は、どの製品機能が十分で、より良く、最適かを検討してください。 次に例を示します: 
   
 |**標準**|**良い**|**最良**|
 |:-----|:-----|:-----|
@@ -119,7 +119,7 @@ Microsoft 365 に移行すると、データを整理してクラウドに何を
 |**オンライン pro**|**Online con**|
 |:-----|:-----|
 |Microsoft が SPO ハードウェアおよびすべてのハードウェアの管理を行う。  <br/> |利用可能な機能は、オンプレミスのサーバー SharePoint SPO によって異なる場合があります。  <br/> |
-|サブスクリプションのグローバル管理者であり、SPO サイトに管理者を割り当てできます。  <br/> |SharePoint Server オンプレミスのファーム管理者が使用できる一部のアクションは存在しないか、Microsoft 365 の SharePoint Administrator ロールに含まれている必要はありません。  <br/> |
+|サブスクリプションの Sharepoint 管理者またはグローバル管理者であり、SPO サイトに管理者を割り当てできます。  <br/> |SharePoint Server オンプレミスのファーム管理者が使用できる一部のアクションは存在しないか、Microsoft 365 の SharePoint Administrator ロールに含まれている必要はありません。  <br/> |
 |Microsoft は、基になるハードウェアとソフトウェアにパッチ、修正プログラム、および更新プログラムを適用します。 <br/> |サービス内の基になるファイル システムにアクセスしないので、カスタマイズは制限されます。  <br/> |
 |Microsoft はサービス [レベル契約を発行](/office365/servicedescriptions/office-365-platform-service-description/service-level-agreement) し、サービス レベルのインシデントを解決するために迅速に移動します。 <br/> |バックアップと復元、その他の回復オプションは、オンラインのサービスによってSharePointされます。 使用しない場合、バックアップは上書きされます。 <br/> |
 |セキュリティ テストとサーバーのパフォーマンス チューニングは、Microsoft によって、継続的なサービスとして実施される。 <br/> |ユーザー インターフェイスとその他の SharePoint 機能の変更はサービスによってインストールされ、オン/オフの切り替えが必要な場合がある。 <br/> |

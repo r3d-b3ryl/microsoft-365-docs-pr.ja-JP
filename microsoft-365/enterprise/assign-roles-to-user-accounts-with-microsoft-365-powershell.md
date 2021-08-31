@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: この記事では、管理者ロールをユーザー アカウントに割り当てるMicrosoft 365 PowerShell を使用する方法について説明します。
-ms.openlocfilehash: dbb8586a381d66bea3a6b07ab5521da309c8681f
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 4174877bed9accacc3a61de576fa6e54060678bf
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58589314"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745723"
 ---
 # <a name="assign-admin-roles-to-microsoft-365-user-accounts-with-powershell"></a>PowerShell を使用して管理者の役割Microsoft 365ユーザー アカウントに割り当てる
 
@@ -41,8 +41,10 @@ PowerShell を使用してユーザー アカウントに役割を簡単に割�
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph 用 Azure Active Directory PowerShell モジュールを使用する
 
-最初に、グローバル管理者アカウントを使用してテナント[にMicrosoft 365します](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
-  
+最初に **、Azure AD DC 管理者**、**クラウド** アプリケーション管理者、またはグローバル管理者アカウント [を使用](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)して、テナントMicrosoft 365します。
+ 
+詳細については、「[管理者の役割について](/microsoft-365/admin/add-users/about-admin-roles?)」を参照してください。
+
 次に、役割に追加するユーザー アカウントのサインイン名を特定します (例: fredsm \@ contoso.com)。 これは、ユーザー プリンシパル名 (UPN) とも呼ばれています。
 
 次に、ロールの名前を決めます。 「Azure [AD組み込みロール」を参照してください](/azure/active-directory/roles/permissions-reference)。

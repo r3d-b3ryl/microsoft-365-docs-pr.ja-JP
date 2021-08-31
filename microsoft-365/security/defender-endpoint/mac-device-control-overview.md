@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6f24a610e82388cead88b68e33b76c6404d68ec9
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 612c9a717ae10c97c91a183418e36fa87e2f7ba8
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570031"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58747521"
 ---
 # <a name="device-control-for-macos"></a>macOS のデバイスコントロール
 
@@ -39,7 +39,8 @@ ms.locfileid: "58570031"
 
 macOS のデバイスコントロールには、次の前提条件があります。
 
->[!div class="checklist"]
+> [!div class="checklist"]
+>
 > - Microsoft Defender for Endpoint の資格 (試用版の場合があります)
 > - 最小 OS バージョン: macOS 11 以上
 > - 最小製品バージョン: 101.34.20
@@ -52,12 +53,17 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 
 構成プロファイル内で、デバイス制御ポリシーは次のセクションで定義されます。
 
+<br>
+
+****
+
 |Section|値|
-|:---|:---|
-| **ドメイン** | `com.microsoft.wdav` |
-| **Key** | deviceControl |
-| **データ型** | 辞書 (入れ子になった基本設定) |
-| **コメント** | 辞書の内容の説明については、以下のセクションを参照してください。 |
+|---|---|
+|**ドメイン**|`com.microsoft.wdav`|
+|**Key**|deviceControl|
+|**データ型**|辞書 (入れ子になった基本設定)|
+|**コメント**|辞書の内容の説明については、以下のセクションを参照してください。|
+|
 
 デバイス制御ポリシーは、次の場合に使用できます。
 
@@ -72,38 +78,48 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 
 エンド ユーザーがこの通知をクリックすると、既定のブラウザーで Web ページが開きます。 エンド ユーザーが通知をクリックするときに開く URL を構成できます。
 
+<br>
+
+****
+
 |Section|値|
-|:---|:---|
-| **ドメイン** | `com.microsoft.wdav` |
-| **Key** | navigationTarget |
-| **データ型** | String |
-| **コメント** | 定義されていない場合、製品は、製品が実行したアクションを説明する汎用ページを指す既定の URL を使用します。 |
+|---|---|
+|**ドメイン**|`com.microsoft.wdav`|
+|**Key**|navigationTarget|
+|**データ型**|String|
+|**コメント**|定義されていない場合、製品は、製品が実行したアクションを説明する汎用ページを指す既定の URL を使用します。|
+|
 
 ### <a name="allow-or-block-removable-devices"></a>リムーバブル デバイスを許可またはブロックする
 
-デバイス制御ポリシーのリムーバブル メディア セクションは、リムーバブル メディアへのアクセスを制限するために使用されます。 
+デバイス制御ポリシーのリムーバブル メディア セクションは、リムーバブル メディアへのアクセスを制限するために使用されます。
 
 > [!NOTE]
 > 現在サポートされているリムーバブル メディアの種類は次のとおりです。ポリシーには USB ストレージ デバイスを含めできます。
 
+<br>
+
+****
+
 |Section|値|
-|:---|:---|
-| **ドメイン** | `com.microsoft.wdav` |
-| **Key** | removableMediaPolicy |
-| **データ型** | 辞書 (入れ子になった基本設定) |
-| **コメント** | 辞書の内容の説明については、以下のセクションを参照してください。 |
+|---|---|
+|**ドメイン**|`com.microsoft.wdav`|
+|**Key**|removableMediaPolicy|
+|**データ型**|辞書 (入れ子になった基本設定)|
+|**コメント**|辞書の内容の説明については、以下のセクションを参照してください。|
+|
 
 ポリシーのこのセクションは階層構造であり、柔軟性を最大限に高め、幅広い使用例をカバーします。 トップ レベルでは、ベンダー ID によって識別されるベンダーです。 ベンダーごとに、製品 ID で識別される製品があります。 最後に、製品ごとに、特定のデバイスを示すシリアル番号があります。
 
-```
-|-- policy top level 
-    |-- vendor 1 
-        |-- product 1 
-            |-- serial number 1 
+```text
+|-- policy top level
+    |-- vendor 1
+        |-- product 1
+            |-- serial number 1
             ...
-            |-- serial number N 
+            |-- serial number N
         ...
-        |-- product N 
+        |-- product N
     ...
     |-- vendor N
 ```
@@ -117,17 +133,22 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 [リムーバブル メディア] セクションの下には、適用レベルを設定するオプションがあります。このオプションでは、次のいずれかの値を使用できます。
 
 - `audit` - この適用レベルでは、デバイスへのアクセスが制限されている場合、ユーザーに通知が表示されます。ただし、デバイスは引き続き使用できます。 この適用レベルは、ポリシーの有効性を評価するために役立ちます。
-- `block` - この適用レベルでは、ユーザーがデバイスで実行できる操作は、ポリシーで定義されている操作に制限されます。 さらに、ユーザーに通知が発生します。 
+- `block` - この適用レベルでは、ユーザーがデバイスで実行できる操作は、ポリシーで定義されている操作に制限されます。 さらに、ユーザーに通知が発生します。
 
-> [!NOTE] 
-> 既定では、適用レベルは に設定されています `audit` 。 
+> [!NOTE]
+> 既定では、適用レベルは に設定されています `audit` 。
+
+<br>
+
+****
 
 |Section|値|
-|:---|:---|
-| **ドメイン** | `com.microsoft.wdav` |
-| **Key** | enforcementLevel |
-| **データ型** | String |
-| **指定可能な値** | 監査 (既定) <br/> block |
+|---|---|
+|**ドメイン**|`com.microsoft.wdav`|
+|**Key**|enforcementLevel|
+|**データ型**|String|
+|**指定可能な値**|監査 (既定) <p> block|
+|
 
 #### <a name="default-permission-level"></a>既定のアクセス許可レベル
 
@@ -137,141 +158,175 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 
 - `none` - デバイスで操作を実行できません
 - 次の値の組み合わせ。
-    - `read` - デバイスで読み取り操作が許可されている
-    - `write` - デバイスで書き込み操作が許可されている
-    - `execute` - デバイスで実行操作が許可されている
+  - `read` - デバイスで読み取り操作が許可されている
+  - `write` - デバイスで書き込み操作が許可されている
+  - `execute` - デバイスで実行操作が許可されている
 
 > [!NOTE]
 > アクセス `none` 許可レベルに存在する場合、他のアクセス許可 ( `read` 、 、 、 ) `write` `execute` は無視されます。
-
-> [!NOTE]
+>
 > この `execute` アクセス許可は、Mach-O バイナリの実行のみを参照します。 スクリプトの実行や他の種類のペイロードは含めではありません。
 
+<br>
+
+****
+
 |Section|値|
-|:---|:---|
-| **ドメイン** | `com.microsoft.wdav` |
-| **Key** | アクセス許可 |
-| **データ型** | 文字列の配列 |
-| **指定可能な値** | none <br/> read <br/> write <br/> execute |
+|---|---|
+|**ドメイン**|`com.microsoft.wdav`|
+|**Key**|permission|
+|**データ型**|文字列の配列|
+|**指定可能な値**|none <p> read <p> write <p> execute|
+|
 
 #### <a name="restrict-removable-media-by-vendor-product-and-serial-number"></a>ベンダー、製品、シリアル番号によってリムーバブル メディアを制限する
 
 「リムーバブル デバイス [を許可またはブロック](#allow-or-block-removable-devices)する」で説明したように、USB デバイスなどのリムーバブル メディアは、ベンダー ID、製品 ID、シリアル番号で識別できます。
 
-リムーバブル メディア ポリシーのトップ レベルでは、ベンダー レベルで詳細な制限を必要に応じて定義できます。 
+リムーバブル メディア ポリシーのトップ レベルでは、ベンダー レベルで詳細な制限を必要に応じて定義できます。
 
 ディクショナリ `vendors` には 1 つ以上のエントリが含まれるので、各エントリはベンダー ID で識別されます。
 
+<br>
+
+****
+
 |Section|値|
-|:---|:---|
-| **ドメイン** | `com.microsoft.wdav` |
-| **Key** | ベンダー |
-| **データ型** | 辞書 (入れ子になった基本設定) |
+|---|---|
+|**ドメイン**|`com.microsoft.wdav`|
+|**Key**|ベンダー|
+|**データ型**|辞書 (入れ子になった基本設定)|
+|
 
 ベンダーごとに、そのベンダーのデバイスに必要なアクセス許可レベルを指定できます。
 
-|Section|値|
-|:---|:---|
-| **ドメイン** | `com.microsoft.wdav` |
-| **Key** | アクセス許可 |
-| **データ型** | 文字列の配列 |
-| **指定可能な値** | 既定のアクセス [許可レベルと同じ](#default-permission-level) |
+<br>
 
-さらに、必要に応じて、より詳細なアクセス許可が定義されているベンダーに属する製品のセットを指定できます。 ディクショナリ `products` には 1 つ以上のエントリが含まれるので、各エントリは製品 ID で識別されます。 
+****
 
 |Section|値|
-|:---|:---|
-| **ドメイン** | `com.microsoft.wdav` |
-| **Key** | 製品 |
-| **データ型** | 辞書 (入れ子になった基本設定) |
+|---|---|
+|**ドメイン**|`com.microsoft.wdav`|
+|**Key**|permission|
+|**データ型**|文字列の配列|
+|**指定可能な値**|既定のアクセス [許可レベルと同じ](#default-permission-level)|
+|
+
+さらに、必要に応じて、より詳細なアクセス許可が定義されているベンダーに属する製品のセットを指定できます。 ディクショナリ `products` には 1 つ以上のエントリが含まれるので、各エントリは製品 ID で識別されます。
+
+<br>
+
+****
+
+|Section|値|
+|---|---|
+|**ドメイン**|`com.microsoft.wdav`|
+|**Key**|製品|
+|**データ型**|辞書 (入れ子になった基本設定)|
+|
 
 製品ごとに、その製品の目的のアクセス許可レベルを指定できます。
 
+<br>
+
+****
+
 |Section|値|
-|:---|:---|
-| **ドメイン** | `com.microsoft.wdav` |
-| **Key** | アクセス許可 |
-| **データ型** | 文字列の配列 |
-| **指定可能な値** | 既定のアクセス [許可レベルと同じ](#default-permission-level) |
+|---|---|
+|**ドメイン**|`com.microsoft.wdav`|
+|**Key**|permission|
+|**データ型**|文字列の配列|
+|**指定可能な値**|既定のアクセス [許可レベルと同じ](#default-permission-level)|
+|
 
 さらに、より詳細なアクセス許可が定義されているシリアル番号のオプション セットを指定できます。
 
 辞書 `serialNumbers` には 1 つ以上のエントリが含まれるので、各エントリはシリアル番号で識別されます。
 
+<br>
+
+****
+
 |Section|値|
-|:---|:---|
-| **ドメイン** | `com.microsoft.wdav` |
-| **Key** | serialNumbers |
-| **データ型** | 辞書 (入れ子になった基本設定) |
+|---|---|
+|**ドメイン**|`com.microsoft.wdav`|
+|**Key**|serialNumbers|
+|**データ型**|辞書 (入れ子になった基本設定)|
+|
 
 シリアル番号ごとに、目的のアクセス許可レベルを指定できます。
 
+<br>
+
+****
+
 |Section|値|
-|:---|:---|
-| **ドメイン** | `com.microsoft.wdav` |
-| **Key** | アクセス許可 |
-| **データ型** | 文字列の配列 |
-| **指定可能な値** | 既定のアクセス [許可レベルと同じ](#default-permission-level) |
+|---|---|
+|**ドメイン**|`com.microsoft.wdav`|
+|**Key**|permission|
+|**データ型**|文字列の配列|
+|**指定可能な値**|既定のアクセス [許可レベルと同じ](#default-permission-level)|
+|
 
 #### <a name="example-device-control-policy"></a>デバイス制御ポリシーの例
 
 次の例は、上記のすべての概念をデバイス制御ポリシーに組み合わせる方法を示しています。 次の例では、リムーバブル メディア ポリシーの階層的な性質に注意してください。
 
 ```xml
-<?xml version="1.0" encoding="UTF-8"?> 
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"> 
-<plist version="1.0"> 
-<dict> 
-    <key>deviceControl</key> 
-    <dict> 
-        <key>navigationTarget</key> 
-        <string>[custom URL for notifications]</string> 
-        <key>removableMediaPolicy</key> 
-        <dict> 
-            <key>enforcementLevel</key> 
-            <string>[enforcement level]</string> <!-- audit / block --> 
-            <key>permission</key> 
-            <array> 
-                <string>[permission]</string> <!-- none / read / write / execute --> 
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>deviceControl</key>
+    <dict>
+        <key>navigationTarget</key>
+        <string>[custom URL for notifications]</string>
+        <key>removableMediaPolicy</key>
+        <dict>
+            <key>enforcementLevel</key>
+            <string>[enforcement level]</string> <!-- audit / block -->
+            <key>permission</key>
+            <array>
+                <string>[permission]</string> <!-- none / read / write / execute -->
                 <!-- other permissions -->
-            </array> 
-            <key>vendors</key> 
-            <dict> 
-                <key>[vendor id]</key> 
+            </array>
+            <key>vendors</key>
+            <dict>
+                <key>[vendor id]</key>
                 <dict>
-                    <key>permission</key> 
-                    <array> 
-                        <string>[permission]</string> <!-- none / read / write / execute --> 
+                    <key>permission</key>
+                    <array>
+                        <string>[permission]</string> <!-- none / read / write / execute -->
                         <!-- other permissions -->
-                    </array> 
-                    <key>products</key> 
-                    <dict> 
-                        <key>[product id]</key> 
-                        <dict> 
-                            <key>permission</key> 
-                            <array> 
-                                <string>[permission]</string> <!-- none / read / write / execute --> 
+                    </array>
+                    <key>products</key>
+                    <dict>
+                        <key>[product id]</key>
+                        <dict>
+                            <key>permission</key>
+                            <array>
+                                <string>[permission]</string> <!-- none / read / write / execute -->
                                 <!-- other permissions -->
-                            </array> 
-                            <key>serialNumbers</key> 
-                            <dict> 
-                                <key>[serial-number]</key> 
-                                <array> 
-                                    <string>[permission]</string> <!-- none / read / write / execute --> 
+                            </array>
+                            <key>serialNumbers</key>
+                            <dict>
+                                <key>[serial-number]</key>
+                                <array>
+                                    <string>[permission]</string> <!-- none / read / write / execute -->
                                     <!-- other permissions -->
-                                </array> 
-                                <!-- other serial numbers --> 
-                            </dict> 
-                        </dict> 
-                        <!-- other products --> 
-                    </dict> 
-                </dict> 
-                <!-- other vendors --> 
-            </dict> 
-        </dict> 
-    </dict> 
-</dict> 
-</plist> 
+                                </array>
+                                <!-- other serial numbers -->
+                            </dict>
+                        </dict>
+                        <!-- other products -->
+                    </dict>
+                </dict>
+                <!-- other vendors -->
+            </dict>
+        </dict>
+    </dict>
+</dict>
+</plist>
 ```
 
 次のドキュメントには、デバイス制御ポリシーのその他の例が含まれています。
@@ -307,8 +362,8 @@ USB デバイスのベンダー ID、製品 ID、シリアル番号を確認す�
 
 Microsoft Defender for Endpoint Advanced Hunting で、USB デバイスから発生するマウント、マウント解除、およびボリューム変更イベントを表示できます。 これらのイベントは、疑わしい利用状況を特定したり、内部調査を実行したりするのに役立ちます。
 
-```
-DeviceEvents 
+```bash
+DeviceEvents
     | where ActionType == "UsbDriveMounted" or ActionType == "UsbDriveUnmounted" or ActionType == "UsbDriveDriveLetterChanged"
     | where DeviceId == "<device ID>"
 ```

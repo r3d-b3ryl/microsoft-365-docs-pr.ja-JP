@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 1ecf74b1fe53c20d72f472796c6a7eaf5ded9741
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.openlocfilehash: 145f757b0172179689509f173476b44e3db69d6e
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360121"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745831"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>デバイスの検出に関するよく寄せられる質問
 
@@ -43,7 +43,7 @@ ms.locfileid: "58360121"
 このモードでは、すべての Microsoft Defender for Endpoint オンボード デバイスがネットワーク データを収集し、隣接するデバイスを検出できます。 オンボードエンドポイントは、ネットワーク内のイベントをパッシブに収集し、そこからデバイス情報を抽出します。 ネットワーク トラフィックは開始されません。 オンボードエンドポイントは、オンボードされたデバイスで見られるすべてのネットワーク トラフィックからデータを抽出するだけで構成されます。 ネットワーク内の管理されていないデバイスを一覧表示するために使用されるこのデータ。
 
 ## <a name="can-i-disable-basic-discovery"></a>基本検出を無効にできますか?
-[高度な機能] ページでデバイスの検出を [無効にするオプション](advanced-features.md) があります。 ただし、ネットワーク内の管理されていないデバイスの表示が失われる可能性があります。 
+[高度な機能] ページでデバイスの検出を [無効にするオプション](advanced-features.md) があります。 ただし、ネットワーク内の管理されていないデバイスの表示が失われる可能性があります。 検出がSenseNDR.exeに関係なく、オンボード デバイス上で引き続き実行されます。 
 
 ## <a name="what-is-standard-discovery-mode"></a>標準検出モードとは
  このモードでは、Microsoft Defender for Endpoint にオンボードされたエンドポイントは、ネットワーク内の監視されたデバイスをアクティブにプローブして、収集されたデータを強化できます (ネットワーク トラフィックの量はごくわずかです)。 このモードは、信頼性の高い一貫性のあるデバイス インベントリを構築する場合に強くお勧めします。 このモードを無効にし、[基本検出モード] を選択すると、ネットワーク内の管理されていないエンドポイントの表示が制限される可能性があります。
@@ -56,10 +56,10 @@ ms.locfileid: "58360121"
 
 
 ## <a name="which-onboarded-devices-can-perform-discovery"></a>検出を実行できるオンボード デバイス
- バージョン 1809 以降Windows 10オンボーディングされたデバイスは、検出を実行できます。
+ バージョン 1809 以降Windows 10オンボーディングされたデバイスは、検出を実行できます。 サーバーは、この時点で検出を実行できません。
 
 ## <a name="what-happens-if-my-onboarded-devices-is-connected-to-my-home-network-or-to-public-access-point"></a>オンボード デバイスがホーム ネットワークまたはパブリック アクセス ポイントに接続されている場合は、どうなるでしょうか。
- 検出エンジンは、企業ネットワークで受信されるネットワーク イベントと企業ネットワーク外のネットワーク イベントを区別します。 すべてのテナントのクライアント間でネットワーク識別子を関連付け、プライベート ネットワークから受信したイベントと企業ネットワークの間でイベントが区別されます。 たとえば、ネットワーク内のデバイスの大部分が、同じ既定のゲートウェイと DHCP サーバー アドレスを持つ同じネットワーク名に接続されていることを報告する場合、このネットワークは企業ネットワークである可能性が高いとみなされます。 プライベート ネットワーク デバイスはインベントリに表示され、アクティブにプローブされません。
+ 検出エンジンは、企業ネットワークで受信されるネットワーク イベントと企業ネットワーク外のネットワーク イベントを区別します。 すべてのテナントのクライアント間でネットワーク識別子を関連付け、プライベート ネットワークから受信したイベントと企業ネットワークの間でイベントが区別されます。 たとえば、組織のデバイスの大部分が、同じ既定のゲートウェイと DHCP サーバー アドレスを持つ同じネットワーク名に接続されていることを報告する場合、このネットワークは企業ネットワークである可能性が高いとみなされます。 プライベート ネットワーク デバイスはインベントリに表示され、アクティブにプローブされません。
 
 ## <a name="what-protocols-are-you-capturing-and-analyzing"></a>キャプチャと分析を行うプロトコルは何ですか?
  既定では、Windows 10 バージョン 1809 以降で実行されているオンボード デバイスはすべて、ARP、CDP、DHCP、DHCPv6、IP (ヘッダー)、LLDP、LLMNR、mDNS、MNDP、NBNS、SSDP、TCP (ヘッダー)、UDP (ヘッダー)、WSD のプロトコルをキャプチャおよび分析しています。
@@ -77,7 +77,7 @@ ms.locfileid: "58360121"
  デバイスの特性の変化が観察された場合、デバイスはアクティブにプローブされ、既存の情報が最新の状態に更新されます (通常、デバイスは 3 週間に 1 回までプローブされます)
 
 ## <a name="my-security-tool-raised-alert-on-unicastscannerps1-or-port-scanning-activity-initiated-by-it-what-should-i-do"></a>セキュリティ ツールによって開始されたUnicastScanner.ps1スキャン アクティビティに関するアラートが発生しました。何を行う必要がありますか?
- アクティブなプロブ スクリプトは Microsoft によって署名され、安全です。 除外リストに次のパスを追加できます。 `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps`
+ アクティブなプロブ スクリプトは Microsoft によって署名され、安全です。 除外リストに次のパスを追加できます。 `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps1`
 
 
 ## <a name="what-is-the-amount-of-traffic-being-generated-by-the-standard-discovery-active-probe"></a>Standard Discovery アクティブ プローブによって生成されるトラフィックの量は何ですか?
@@ -102,7 +102,7 @@ Standard discovery を検討する場合は、プロブの影響、特にセキ�
 通常、侵害されたデバイスの数が少ないネットワーク全体をスキャンする悪意のあるアクティビティとは対照的に、Microsoft Defender for Endpoint の Standard Discovery probing は、オンボードのすべての Windows デバイスから開始され、アクティビティは無害で異常ではありません。 プロブは、ネットワークでサポートされているオンボード デバイス間の試みをバランスを取るクラウドから一中心に管理されます。  
 
 ### <a name="active-probing-generates-negligible-amount-of-extra-traffic"></a>アクティブなプロブは、余分なトラフィックのごくわずかの量を生成します
-非管理対象デバイスは通常、3 週間に 1 回までプローブを受け取り、50 KB 未満のトラフィックを生成します。 悪意のあるアクティビティには、通常、繰り返しの多い試み、場合によっては、ネットワーク監視ツールによって異常を特定できる大量のネットワーク トラフィックを生成するデータの侵入が含まれます。 
+非管理対象デバイスは通常、3 週間に 1 回までプローブを受け取り、50 KB 未満のトラフィックを生成します。 悪意のあるアクティビティには、通常、繰り返し実行される高い試みと、ネットワーク監視ツールによって異常と識別できる大量のネットワーク トラフィックを生成するデータの侵入が含まれます。 
 
 ### <a name="your-windows-device-already-runs-active-discovery"></a>デバイスWindowsアクティブな検出が既に実行されている
 アクティブな検出機能は、Windows オペレーティング システムに常に埋め込まれているので、近くのデバイス、エンドポイント、プリンターを検索して、ネットワーク内のエンドポイント間での "プラグ アンド プレイ" エクスペリエンスとファイル共有を容易にします。 同様の機能は、モバイル デバイス、ネットワーク機器、インベントリ アプリケーションにも実装されています。  

@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツのデータセンター地域の Office 365サービスに移行する場合のサービスに関するその他のデバイス情報。'
-ms.openlocfilehash: 79234b1398e26af5a2848002ea606d97137e3053
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: b38c279bbbb763c8f0859d6d45cd838c8652ec5e
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573093"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745699"
 ---
 # <a name="additional-device-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Microsoft Cloud Deutschland からの移行に関するその他のデバイス情報
 
@@ -35,7 +35,7 @@ Azure AD、Microsoft Cloud Deutschland に接続されている登録済みデ�
 [![Azure AD デバイス Re-Join Flow。 ](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png)](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
 
 
-ユーザーが Windows 10 デバイスの管理者である場合、ユーザーは Azure AD からデバイスの登録を解除し、3 つの手順で再度参加できます。
+ユーザーが Windows 10 デバイスの管理者である場合、ユーザーは Azure AD からデバイスの登録を解除し、3 つの手順で再度追加できます。
 
 ### <a name="step-1-determine-if-the-device-is-azure-id-joined"></a>手順 1: デバイスが Azure ID に参加しているかどうかを判断する
 
@@ -61,11 +61,13 @@ Azure AD、Microsoft Cloud Deutschland に接続されている登録済みデ�
 6. デバイスを再起動します。
 7. 仕事用アカウントのメール アドレスとパスワードでサインインします。
 
-ユーザーがデバイスの管理者ではない場合、Azure AD グローバル管理者は、この構成パスに従ってデバイスにローカル管理者アカウントを作成し、デバイスに接続を解除できます。
+ユーザーがデバイスの管理者ではない場合 **、Azure AD DC** 管理者 **、Cloud Application Admin、** または **グローバル** 管理者は、この構成パスに従ってデバイスにローカル管理者アカウントを作成し、デバイスへの接続を解除できます。
 
 *設定 > アカウント > アカウント >資格情報不明 > Microsoft-Account を使用せずにユーザーを追加する*
 
-再参加の場合、組織の任意の作業アカウントの資格情報をこの手順で使用できます。
+詳細については、「[管理者の役割について](/microsoft-365/admin/add-users/about-admin-roles?)」を参照してください。
+
+この手順では、組織の任意の作業アカウントの資格情報を使用して、再び登録できます。
 
 デバイスに参加するために使用される作業アカウントは、デバイスの管理者として自動的に昇格されます。
 組織の他の仕事用アカウントはデバイスにサインインできますが、管理者権限はありません。
@@ -107,7 +109,7 @@ Android の場合、ユーザーはデバイスの登録を解除して再登録
 
 - [デバイス] ポータル サイト[デバイス]**タブに** 移動し、デバイスを削除できます。 その後、デバイスを使用してデバイスを再登録ポータル サイト。
 
-- ユーザーは、アカウント設定ページからアカウントを削除してから、作業アカウントを再追加することで、登録を解除して再登録することもできます。
+- ユーザーは、アカウント設定ページからアカウントを削除し、作業アカウントを読み取って登録を解除して再登録することもできます。
 
 Android アプリを使用してデバイスの登録を解除して再登録するには、次Microsoft Authenticatorします。
 
@@ -167,7 +169,7 @@ iOS デバイスでは、ユーザーはキャッシュされたアカウント�
 
 デバイスがパブリック クラウドに登録されているかどうかを確認するには、Azure AD ポータルからデバイスのリストをエクスポートして、Excelする必要があります。 次に、組織が移行プロセスのフェーズ 9 を通過した日付の後に 、登録されているデバイスを _(registeredTime_ 列を使用して) [フィルター処理します](ms-cloud-germany-transition-phases.md#phase-9--10-azure-ad-finalization)。
 
-**「Microsoft の DNS レコードを作成する」に記載されている DNS 名を追加する必要がある場合は、Windows [ベースの DNS を使用しますか](/microsoft-365/admin/dns/create-dns-records-using-windows-based-dns?view=o365-worldwide#add-two-cname-records-for-mobile-device-management-mdm-for-microsoft)。**
+**「Microsoft の DNS レコードを作成する」に記載されている DNS 名を追加する必要がある場合は、Windows [ベースの DNS を使用しますか](/microsoft-365/admin/dns/create-dns-records-using-windows-based-dns?#add-two-cname-records-for-mobile-device-management-mdm-for-microsoft)。**
 
 この DNS エントリは、デバイスの再登録には不要です。 
 

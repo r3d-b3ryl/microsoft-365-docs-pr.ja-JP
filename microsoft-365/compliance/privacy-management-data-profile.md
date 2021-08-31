@@ -16,18 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 description: プライバシー管理の概要とデータ プロファイル、および組織の環境内の個人データに関する洞察を得るMicrosoft 365します。
-ms.openlocfilehash: 1be4d65d117d3fa8b05bb9db88745147aea6b5293c3c1f96d57eb5b7ba04c0d1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4007fa1c55857211c3cf188a089f8e6d246153ae
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53865205"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58744955"
 ---
 # <a name="find-and-visualize-personal-data-in-privacy-management-preview"></a>プライバシー管理で個人データを検索して視覚化する (プレビュー)
-
-この記事では、概要ページとデータ プロファイルページの機能と、データに関する分析情報を提供する方法について説明します。
-
-## <a name="purpose-of-the-overview-and-data-profile"></a>概要とデータ プロファイルの目的
 
 Microsoft 365管理により、環境内の個人データを見つけて視覚化する機能が提供されます。 このソリューションは、Exchange、SharePoint、OneDrive、Teams の個人データ資産の検出を自動化し、データに関する重要な分析情報を提供するダッシュボードを提供します。 プライバシー管理者は、これらのインサイトに基づいて、組織のプライバシーに対するアプローチを強化し、リスクを軽減できます。
 
