@@ -11,16 +11,16 @@ ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 06/11/2021
+ms.date: 08/31/2021
 ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: cbf1cae088af2606e8fea1e40e0cfe34c7a74832
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: a4d96832ecdddf4cd1567b5c8f646d2df6ac7921
+ms.sourcegitcommit: fd348579346522ead16a6bd8ce200a0b8ae8f7d4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533521"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58832028"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>仮想デスクトップ インフラストラクチャ (VDI) 環境での Microsoft Defender ウイルス対策の展開ガイド
 
@@ -30,7 +30,7 @@ ms.locfileid: "58533521"
 
 標準のオンプレミスまたはハードウェア構成に加えて、リモート デスクトップ (RDS) または仮想デスクトップ インフラストラクチャ (VDI) 環境でも Microsoft Defender ウイルス対策 を使用できます。
 
-サービス[Windows VDI サポート](/azure/virtual-desktop)の詳細については、「仮想デスクトップ のドキュメントMicrosoft リモート デスクトップ参照してください。
+サービス[と VDI のサポート](/azure/virtual-desktop)の詳細については、「Azure Virtual Desktop のドキュメントMicrosoft リモート デスクトップ参照してください。
 
 Azure ベースの仮想マシンについては[、「Install Endpoint Protection In Azure Defender」を参照してください](/azure/security-center/security-center-install-endpoint-protection)。
 
@@ -71,7 +71,7 @@ Windows 10 バージョン 1903 では、共有セキュリティ インテリ�
 
 6. Enter `\\<sharedlocation\>\wdav-update` (この値のヘルプについては、「ダウンロードとアンパック [」を参照してください](#download-and-unpackage-the-latest-updates))。
 
-7. **[OK]** をクリックします。
+7. [**OK**] をクリックします。
 
 8. テストする VM に GPO を展開します。
 
@@ -113,7 +113,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 2. 名前をセキュリティ インテリジェンス **アンパックとして入力します**。 [トリガー] タブ **に移動** します。[**新規]を選択します。** \>**[日**] を選択し **、[OK] を選択します**。
 
-3. [アクション] タブ **に移動** します。[ **新規]を選択します。** [ **プログラム/スクリプト]** フィールドに **「PowerShell」と入力** します。 [ `-ExecutionPolicy Bypass c:\wdav-update\vdmdlunpack.ps1` 引数の追加 **] フィールドに入力** します。 **[OK]** を選択します。
+3. [アクション] タブ **に移動** します。[ **新規]を選択します。** [ **プログラム/スクリプト]** フィールドに **「PowerShell」と入力** します。 [ `-ExecutionPolicy Bypass c:\wdav-update\vdmdlunpack.ps1` 引数の追加 **] フィールドに入力** します。 **[OK]** をクリックします。
 
 4. 必要に応じて、追加の設定を構成できます。
 
@@ -211,7 +211,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 3. ポリシーを [有効] に **設定します**。
 
-4. **[OK]** を選択します。
+4. **[OK]** をクリックします。
 
 5. 通常と同じ方法でグループ ポリシー オブジェクトを展開します。
 
@@ -225,7 +225,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 3. ポリシーを [有効] に **設定します**。
 
-4. **[OK]** をクリックします。
+4. [**OK**] をクリックします。
 
 5. 通常と同じ方法でグループ ポリシー オブジェクトを展開します。
 

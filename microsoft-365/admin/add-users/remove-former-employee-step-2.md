@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 元従業員のメールボックスのコンテンツを保存する方法について説明します。
-ms.openlocfilehash: 88a56b09b433ac99032c8df2cdd75b6f45d6c699894ac368a09a1359aa1f30d0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 24a1fbff978bdc266e778b7fca84c882f9677cfe
+ms.sourcegitcommit: fd348579346522ead16a6bd8ce200a0b8ae8f7d4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827553"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58831851"
 ---
 # <a name="step-2---save-the-contents-of-a-former-employees-mailbox"></a>手順 2 - 元従業員のメールボックスの内容を保存する
 
@@ -48,9 +48,9 @@ ms.locfileid: "53827553"
 
     メールボックスに保持を配置する方法については、「メールボックスで非アクティブなメールボックスを管理する」[を参照Exchange Online。](../../compliance/create-and-manage-inactive-mailboxes.md)
 
-    **OR**
+    **または**
 
-2. 以前の従業員の電子メール アドレスをデスクトップ上の Outlookのバージョンに追加し、データを .pst ファイルにエクスポートします。 必要に応じて、別のメール アカウントにデータをインポートすることができます。 チェックアウト 手順[6 - 別の従業員にデータとOneDriveアクセスOutlookします](remove-former-employee-step-6.md)。
+2. 以前の従業員の電子メール アドレスをデスクトップ上の Outlookのバージョンに追加し、データを .pst ファイルにエクスポートします。 必要に応じて、別のメール アカウントにデータをインポートすることができます。 チェックアウト 手順[4 - 別の従業員にデータとデータOneDriveアクセスOutlookします](remove-former-employee-step-4.md)。
 
 ## <a name="related-content"></a>関連コンテンツ
 

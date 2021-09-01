@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6b2441ef097cd2d219038364777b527a5c288c071ae67c79370a5b0f2df2379f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 016ee07b9f57117b313b65ea89773fb84a08e99d
+ms.sourcegitcommit: fd348579346522ead16a6bd8ce200a0b8ae8f7d4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817257"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58831899"
 ---
 # <a name="microsoft-defender-for-endpoint-and-other-microsoft-solutions"></a>エンドポイント向け Microsoft Defender および他の Microsoft ソリューション
 
@@ -51,7 +51,7 @@ Microsoft Defender for Endpoint コネクタを使用すると、Microsoft Defen
 Microsoft Defender for Endpoint の動的デバイス リスク スコアは条件付きアクセス評価に統合され、セキュリティで保護されたデバイスだけがリソースにアクセスできます。 
 
 ### <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
-Microsoft Cloud App Securityは、Microsoft Defender for Endpoint エンドポイント信号を活用して、すべての Microsoft Defender for Endpoint 監視対象デバイスからサポートされていないクラウド サービス (シャドウ IT) の使用を含む、クラウド アプリケーションの使用状況を直接可視化できます。
+Microsoft Cloud App Securityは、Microsoft Defender for Endpoint シグナルを活用して、サポートされていないクラウド サービス (シャドウ IT) をすべての Microsoft Defender for Endpoint 監視対象デバイスから使用するなど、クラウド アプリケーションの使用状況を直接可視化できます。
 
 ### <a name="microsoft-defender-for-identity"></a>Microsoft Defender for Identity
 疑わしいアクティビティは、ユーザー コンテキストで実行されているプロセスです。 Microsoft Defender for Endpoint と Microsoft Defender for Identity の統合により、アクティビティと ID 全体でサイバーセキュリティ調査を柔軟に実施できます。
@@ -71,7 +71,7 @@ Microsoft 365 Defender では、Microsoft Defender for Endpoint およびさま�
 [詳細については、Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)
 
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [統合などの高度な機能を構成する](advanced-features.md)
 - [Microsoft 365 Defender概要](/microsoft-365/security/defender/microsoft-threat-protection)
 - [Microsoft 365 Defender を有効にする](/microsoft-365/security/defender/mtp-enable)

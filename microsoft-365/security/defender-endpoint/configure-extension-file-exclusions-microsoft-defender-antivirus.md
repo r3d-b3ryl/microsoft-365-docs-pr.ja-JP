@@ -14,12 +14,13 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 3138d1c0a4b4d2b5726b87e6e86897091d237854
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.date: 08/27/2021
+ms.openlocfilehash: 822241ed8010338b21f61ef39e3df1d310ced2ce
+ms.sourcegitcommit: fd348579346522ead16a6bd8ce200a0b8ae8f7d4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568642"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58832016"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>ファイル拡張子とフォルダーの場所に基づいて除外を構成および検証する
 
@@ -62,7 +63,6 @@ ms.locfileid: "58568642"
 |特定のフォルダーの下のファイル|フォルダーの下のすべての `c:\test\sample` ファイル|ファイルとフォルダーの除外|
 |特定のフォルダー内の特定のファイル|ファイル `c:\sample\sample.test` のみ|ファイルとフォルダーの除外|
 |特定のプロセス|実行可能ファイル `c:\test\process.exe`|ファイルとフォルダーの除外|
-|
 
 ## <a name="characteristics-of-exclusion-lists"></a>除外リストの特性
 
@@ -140,26 +140,20 @@ PowerShell を使用して、拡張子、場所、またはファイル名に基
 
 <br>
 
-****
-
 |構成アクション|PowerShell コマンドレット|
 |:---|:---|
 |リストを作成または上書きする|`Set-MpPreference`|
 |リストに追加する|`Add-MpPreference`|
 |リストからアイテムを削除する|`Remove-MpPreference`|
-|
 
 次の表に、PowerShell コマンドレットの部分で使用できる `<exclusion list>` 値を示します。
 
 <br>
 
-****
-
 |除外の種類|PowerShell パラメーター|
 |---|---|
 |指定したファイル拡張子を持つすべてのファイル|`-ExclusionExtension`|
 |フォルダーの下のすべてのファイル (サブディレクトリ内のファイルを含む)、または特定のファイル|`-ExclusionPath`|
-|
 
 > [!IMPORTANT]
 > コマンドレットを使用するか、または使用してリストを作成した場合は、 `Set-MpPreference` `Add-MpPreference` `Set-MpPreference` 既存のリストが上書きされます。
@@ -205,19 +199,17 @@ ExclusionPath
 > - 環境変数の使用は、コンピューター変数と、NT AUTHORITY\SYSTEM アカウントとして実行されているプロセスに適用可能な変数に制限されます。
 > - ドライブ文字の代りでワイルドカードを使用することはできません。
 > - フォルダー除外 `*` のアスタリスクは、1 つのフォルダーに対して配置されます。 複数のインスタンスを使用して `\*\` 、名前が指定されていない複数の入れ子になったフォルダーを示します。
-
+> - 現在、Microsoft Endpoint Configuration Managerワイルドカード文字 (またはなど) は `*` サポートされていません `?` 。
+    
 次の表では、ワイルドカードの使用方法と例を示します。
 
 <br>
-
-****
 
 |ワイルドカード|例|
 |---|---|
 |`*` (アスタリスク) <p> ファイル **名とファイル拡張子** の組み込みでは、アスタリスクは任意の数の文字を置き換え、引数で定義された最後のフォルダー内のファイルにのみ適用されます。 <p> フォルダー **の除外では、** アスタリスクによって 1 つのフォルダーが置き換されます。 複数のフォルダー `*` スラッシュを使用して、 `\` 複数の入れ子になったフォルダーを示します。 ワイルドカード フォルダーと名前付きフォルダーの数を一致した後、すべてのサブフォルダーも含まれます。|`C:\MyData\*.txt` を含む `C:\MyData\notes.txt` <p> `C:\somepath\*\Data` に含まれるファイル `C:\somepath\Archives\Data` とそのサブフォルダー、およびサブ `C:\somepath\Authorized\Data` フォルダー <p> `C:\Serv\*\*\Backup` に含まれるファイル `C:\Serv\Primary\Denied\Backup` とそのサブフォルダー `C:\Serv\Secondary\Allowed\Backup` とそのサブフォルダー|
 |`?` (疑問符)  <p> ファイル **名とファイル拡張子** の包含では、疑問符は 1 文字を置き換え、引数で定義された最後のフォルダー内のファイルにのみ適用されます。 <p> フォルダー **の除外では、** 疑問符はフォルダー名の 1 文字を置き換えます。 ワイルドカード フォルダーと名前付きフォルダーの数を一致した後、すべてのサブフォルダーも含まれます。|`C:\MyData\my?.zip` を含む `C:\MyData\my1.zip` <p> `C:\somepath\?\Data` ファイルとそのサブフォルダー `C:\somepath\P\Data` を含む  <p> `C:\somepath\test0?\Data` ファイルとそのサブフォルダー `C:\somepath\test01\Data` が含まれる場合|
 |環境変数 <p> 定義された変数は、除外が評価される際にパスとして設定されます。|`%ALLUSERSPROFILE%\CustomLogFiles` を含む `C:\ProgramData\CustomLogFiles\Folder1\file1.txt`|
-|
 
 > [!IMPORTANT]
 > ファイル除外引数とフォルダー除外引数を混在すると、ルールは一致したフォルダーの file 引数一致で停止し、サブフォルダー内のファイル一致は検索されません。
@@ -233,9 +225,7 @@ ExclusionPath
 次の表に、システム アカウント環境変数の一覧と説明を示します。
 
 <br>
-
-****
-
+    
 |このシステム環境変数...|リダイレクト先|
 |---|---|
 |`%APPDATA%`|`C:\Users\UserName.DomainName\AppData\Roaming`|
@@ -298,7 +288,6 @@ ExclusionPath
 |`%USERPROFILE%\AppData\Local`|`C:\Windows\System32\config\systemprofile\AppData\Local`|
 |`%USERPROFILE%\AppData\LocalLow`|`C:\Windows\System32\config\systemprofile\AppData\LocalLow`|
 |`%USERPROFILE%\AppData\Roaming`|`C:\Windows\System32\config\systemprofile\AppData\Roaming`|
-|
 
 ## <a name="review-the-list-of-exclusions"></a>除外の一覧を確認する
 

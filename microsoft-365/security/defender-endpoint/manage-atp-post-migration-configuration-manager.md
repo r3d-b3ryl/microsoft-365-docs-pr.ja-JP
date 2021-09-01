@@ -20,16 +20,14 @@ ms.collection:
 ms.topic: article
 ms.date: 06/11/2021
 ms.reviewer: chventou
-ms.openlocfilehash: e1916b2b6701c3d291a439e0fa284858fdccf900
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.openlocfilehash: 2d474f4cc2c990ac8ebf3a964bbb532752741160
+ms.sourcegitcommit: fd348579346522ead16a6bd8ce200a0b8ae8f7d4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58822758"
+ms.locfileid: "58831863"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-configuration-manager"></a>Configuration Manager を使用して Microsoft Defender for Endpoint を管理する
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -45,9 +43,7 @@ Microsoft エンドポイント マネージャー (Intune) と Microsoft Intune
 
 ## <a name="configure-microsoft-defender-for-endpoint-with-configuration-manager"></a>Configuration Manager を使用して Microsoft Defender for Endpoint を構成する
 
-<br>
-
-****
+<br/><br/>
 
 |タスク|追加情報|
 |---|---|

@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 組織で 365 Business Windows購入する方法と、ユーザーがクラウド PC の使用を開始する方法について学習します。
-ms.openlocfilehash: f806991bfd00cbaf9b96b7750d0358409785b206
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 4c53aba7ae2d4bd47b5df2f32c50dcf6bb448201
+ms.sourcegitcommit: fd348579346522ead16a6bd8ce200a0b8ae8f7d4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569239"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58831887"
 ---
 # <a name="get-started-with-windows-365-business-and-cloud-pcs"></a>Windows 365 Business および Cloud PC の概要
 
@@ -87,7 +87,7 @@ Windows 365 製品サイトまたは Microsoft 365 管理センター を通じ�
 365 Business ライセンスの種類Windows、ユーザーのビジネス の必要性に基づいて、ユーザーに異なる種類のライセンスを割り当てできます。 ユーザー[に適Windowsするライセンスの種類については、「365 Business](windows-365-business-sizing.md)のサイズ変更オプション」を参照してください。
 
 > [!IMPORTANT]
-> Windows 365 ライセンスが初めてテナントに割り当てられると **、Windows 365 BPRT 常設** ユーザーというシステム アカウントが Azure Active Directory で自動的に作成されます。 このアカウントを削除したり、アカウントに変更を加え (名前や UPN の変更など) したりしない。 システム アカウントが削除された場合、セットアップが失敗する可能性があります。 このシステム アカウントは、スムーズなセットアップ プロセスを保証し、Windows 365 Business のスコープサービス機能を超えて、書き込み機能やテナントへのアクセス権を持ち合わせない。 このユーザーを削除する場合は、サポート セントラルを通じてチケットをファイルします。
+> Windows 365 ライセンスが初めてテナントに割り当てられると **、Windows 365 BPRT 常設** ユーザーというシステム アカウントが Azure Active Directory で自動的に作成されます。 このアカウントを削除したり、アカウントに変更を加え (名前や UPN の変更など) したりしない。 システム アカウントが削除された場合、セットアップが失敗する可能性があります。 このシステム アカウントは、スムーズなセットアップ プロセスを保証し、Windows 365 Business のスコープサービス機能を超えて、書き込み機能やテナントへのアクセス権を持ち合わせない。 このユーザーを削除する場合は、次のトラブルシューティング [手順に従います](/microsoft-365/admin/setup/troubleshoot-windows-365-business?#step-2-verify-that-the-windows-365-bprt-permanent-user-system-account-is-active)。
 
 ## <a name="get-your-users-started-with-cloud-pc"></a>ユーザーにクラウド PC の使用を開始する
 
@@ -164,7 +164,7 @@ Windows 365 製品サイトまたは Microsoft 365 管理センター を通じ�
 
 ## <a name="management-through-intune"></a>Intune による管理
 
-Windows 365 Business では、プロビジョニング プロセスの一環としてクラウド PC が[Intune](/mem/intune/fundamentals/what-is-intune)に登録されません。 組織とユーザーが適切にライセンスされている場合、Intune にコンピューターを登録する場合と同じ手順を使用して、クラウド PC[を Intune に](/mem/intune/user-help/enroll-windows-10-device)登録Windows 10できます。
+組織とユーザーが適切にライセンスされている場合、Intune にコンピューターを登録する場合と同じ手順を使用して、クラウド PC[を Intune に](/mem/intune/user-help/enroll-windows-10-device)登録Windows 10できます。
 
 ## <a name="sending-outbound-email-messages-using-port-25-is-not-supported"></a>ポート 25 を使用した送信電子メール メッセージの送信はサポートされていません
 
