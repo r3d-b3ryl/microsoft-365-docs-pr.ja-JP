@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - Ent_Architecture
 description: Microsoft のクラウドプランの組織、サブスクリプション、ライセンス、ユーザー アカウント、およびテナントの関係について理解する。
-ms.openlocfilehash: a7120404eafd51714ac19805c088921ad6625ae2
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 64ca4d69d0792dbe3751bffff95841409767aa4f
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354238"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58747413"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>マイクロソフトのクラウド プランのサブスクリプション、ライセンス、アカウント、およびテナント
 
@@ -140,7 +140,7 @@ Azure AD テナントは、アカウントおよびグループを収容する A
    
 Microsoft SaaS ベース サービスの場合は、管理センターを使用すると、組織にサブスクリプションを簡単に追加できます。
   
-1. 全体管理者アカウントを使用して、Microsoft 365 管理センター ([https://admin.microsoft.com](https://admin.microsoft.com)) にサインインします。
+1. **ユーザー管理者** または **グローバル管理者** アカウントを使用して、Microsoft 365 管理センター ([https://admin.microsoft.com](https://admin.microsoft.com)) にサインインします。
     
 2. **管理センター** のホームページ左側にあるナビゲーションで、**[課金]**、**[サービスを購入する]** の順にクリックします。
     
@@ -150,7 +150,7 @@ Microsoft SaaS ベース サービスの場合は、管理センターを使用�
   
 Microsoft 365 サブスクリプションと同じ組織および Azure AD テナントの Azure サブスクリプションを追加する方法
   
-1. Microsoft 365 全体管理者アカウントを使用して、Azureポータル ([https://portal.azure.com](https://portal.azure.com)) にサインインします。
+1. Microsoft 365 **Azure AD DC 管理者** または **グローバル管理者** アカウントを使用して、Azure ポータル ([https://portal.azure.com](https://portal.azure.com)) にサインインします。
     
 2. 左側のナビゲーションで、**[サブスクリプション]**、**[追加]** の順にクリックします。
     

@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: ''
 description: ユーザーが多要素認証（MFA）およびその他の機能を使用して安全にサインインすることを要求します。
-ms.openlocfilehash: f2ee7d21c5dee96e2cbd6beccdd816da26b6ea46
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: d00ca7a39b05e5364a49a6300ef9ee24c3dd0bd1
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570991"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58744943"
 ---
 # <a name="secure-user-sign-ins-to-your-microsoft-365-tenant"></a>Microsoft 365 テナントへのユーザー サインインの保護
 
@@ -79,7 +79,7 @@ Microsoft 365 プランに基づき管理者またはユーザーに MFA の使�
 
 条件付きアクセス ポリシーとは、サインインが評価され、アクセスが許可される条件を指定する一連のルールです。 たとえば、次のような条件付きアクセス ポリシーを作成できます。
 
-- ユーザー アカウント名が Exchange、ユーザー、パスワード、セキュリティ、SharePoint、またはグローバル管理者の役割を割り当てられたユーザーのグループのメンバーである場合、アクセスを許可する前に MFA が必要です。
+- ユーザー アカウント名が Exchange、ユーザー、パスワード、セキュリティ、SharePoint、**Exchange 管理者**、**SharePoint 管理者**、または **グローバル管理者** の役割を割り当てられたユーザーのグループのメンバーである場合、アクセスを許可する前に MFA が必要です。
 
 このポリシーを使用すると、これらの管理者の役割から割り当てられたり、または割り当てられなかったりした場合に、個別のユーザー アカウントを MFA 用に構成しようとするのではなく、グループ メンバーシップに基づいて MFA を要求することができるようになります。
 

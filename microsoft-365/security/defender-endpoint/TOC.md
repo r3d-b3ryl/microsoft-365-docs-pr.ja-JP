@@ -347,6 +347,7 @@
 ##### [制御されたフォルダー アクセスをカスタマイズする](customize-controlled-folders.md)
 
 #### [デバイス コントロール]()
+##### [デバイス コントロールのレポート](device-control-report.md)
 ##### [USB デバイスおよび他のリムーバブル メディアを制御する](control-usb-devices-using-intune.md)
 ##### [リムーバブル記憶域の保護](device-control-removable-storage-protection.md)
 ##### [リムーバブル記憶域のアクセス制御](device-control-removable-storage-access-control.md)
