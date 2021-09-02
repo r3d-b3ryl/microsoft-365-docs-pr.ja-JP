@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2a507f1fe1292fcd456891aa64f7974d2f722bbc
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: ff8534d0b668b6a18b219297131dbd90c366cc35
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247621"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823782"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint
 
@@ -36,18 +36,22 @@ ms.locfileid: "58247621"
 > Windows 10 Enterprise エディションの機能の詳細については、「[Windows 10 Enterprise エディション](https://www.microsoft.com/WindowsForBusiness/buy)」を参照してください。
 
 EndPoint 向け Microsoft Defender は、エンタープライズネットワークによる高度な脅威の防止、検出、調査、および応答を支援するために設計されたエンタープライズエンドポイントセキュリティプラットフォームです。
-<p></p>
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4wDob]
+> [!TIP]
+> まもなく、Microsoft Defender for Endpoint は 2 つのプランで利用できます。 この記事では、Microsoft Defender for Endpoint プラン 2 に含まれる機能について説明します。 [Microsoft Defender for Endpoint プラン 1 (プレビュー) とプラン 2 について説明します](defender-endpoint-plan-1-2.md)。
+> 
+
+<p><p>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4wDob]
 
 EndPoint 向け Defender は、Windows 10 と Microsoft の堅牢なクラウドサービスに組み込まれているテクノロジの次の組み合わせを使用します。
 
--   **エンドポイントの動作センサー**: Windows 10 に組み込まれており、これらのセンサーはオペレーティングシステムからの動作シグナルを収集して処理し、プライベートで分離された EndPoint 向け Microsoft Defender のクラウドインスタンスにこのセンサーデータを送信します。
+- **エンドポイントの動作センサー**: Windows 10 に組み込まれており、これらのセンサーはオペレーティングシステムからの動作シグナルを収集して処理し、プライベートで分離された EndPoint 向け Microsoft Defender のクラウドインスタンスにこのセンサーデータを送信します。
 
+- **クラウド セキュリティ分析**: ビッグデータ、機械学習、および Microsoft ならではの分析力を Windows のエコシステム、(Office 365 などの) エンタープライズ クラウド製品、およびオンライン アセット全体で活用し、動作シグナルを高度な脅威についての洞察、検出、推奨される対策に結びつけます。　　　　　
 
--   **クラウド セキュリティ分析**: ビッグデータ、機械学習、および Microsoft ならではの分析力を Windows のエコシステム、(Office 365 などの) エンタープライズ クラウド製品、およびオンライン アセット全体で活用し、動作シグナルを高度な脅威についての洞察、検出、推奨される対策に結びつけます。　　　　　
-
--   **脅威インテリジェンス**: Microsoft hunters、セキュリティチーム、パートナーによって提供される脅威インテリジェンスによって強化された脅威インテリジェンスでは、EndPoint 向け Defender が攻撃者のツール、手法、および手順を特定し、収集されたセンサーデータで通知されたときにアラートを生成できるようにします。
+- **脅威インテリジェンス**: Microsoft hunters、セキュリティチーム、パートナーによって提供される脅威インテリジェンスによって強化された脅威インテリジェンスでは、EndPoint 向け Defender が攻撃者のツール、手法、および手順を特定し、収集されたセンサーデータで通知されたときにアラートを生成できるようにします。
 
 <center><h2>Microsoft Defender for Endpoint</center></h2>
 <table>
@@ -71,61 +75,72 @@ EndPoint 向け Defender は、Windows 10 と Microsoft の堅牢なクラウド
 
 <p></p>
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vnC4?rel=0] 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vnC4?rel=0]
 
 > [!TIP]
+>
 > - EndPoint 向け Microsoft Defender の最新機能の詳細については、「[EndPoint 向け Microsoft Defender の新機能](whats-new-in-microsoft-defender-atp.md)」を参照してください。
 > - 最近の MITRE 評価で、EndPoint 向け Microsoft Defender の業界をリードする分析力と検出能力が認められました。 詳細については、「[MITRE ATT&CK ベース評価の分析](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/)」を参照してください。
 
 <a name="tvm"></a>
 
-**[脅威と脆弱性の管理](next-gen-threat-and-vuln-mgt.md)**<br>
-この組み込み機能は、画期的なリスクベースのアプローチを使用してエンドポイントの脆弱性や構成ミスの検出、優先順位付け、および修復を行います。 
+**[脅威と脆弱性の管理](next-gen-threat-and-vuln-mgt.md)**
+
+この組み込み機能は、画期的なリスクベースのアプローチを使用してエンドポイントの脆弱性や構成ミスの検出、優先順位付け、および修復を行います。
 
 <a name="asr"></a>
 
-**[攻撃面の減少](overview-attack-surface-reduction.md)**<br>
-攻撃面の縮小は、防御の第一線をスタック内で提供する機能のセットです。 構成が正しく設定されていることを確認して悪用に対する修復テクニックを適用することにより、機能は攻撃と悪用に対抗します。 この機能のセットには[ネットワーク保護](network-protection.md)および [Web 保護](web-protection-overview.md)も含まれ、これらの保護により、悪意のある IP アドレス、ドメイン、URL へのアクセスが制御されます。 
+**[攻撃面の減少](overview-attack-surface-reduction.md)**
+
+攻撃面の縮小は、防御の第一線をスタック内で提供する機能のセットです。 構成が正しく設定されていることを確認して悪用に対する修復テクニックを適用することにより、機能は攻撃と悪用に対抗します。 この機能のセットには[ネットワーク保護](network-protection.md)および [Web 保護](web-protection-overview.md)も含まれ、これらの保護により、悪意のある IP アドレス、ドメイン、URL へのアクセスが制御されます。
 
 <a name="ngp"></a>
 
-**[次世代の保護](next-generation-protection.md)**<br>
+**[次世代の保護](next-generation-protection.md)**
+
 ネットワークのセキュリティ境界をさらに強化するために、エンドポイント用の Microsoft Defender は、あらゆる種類の新しい脅威をキャッチするために設計された次世代の保護が使用されます。
 
 <a name="edr"></a>
 
-**[エンドポイントでの検出と対応](overview-endpoint-detection-response.md)**<br>
+**[エンドポイントでの検出と対応](overview-endpoint-detection-response.md)**
+
 エンドポイントの検出および応答機能は、最初の 2 つのセキュリティの防御を通過した可能性がある高度な脅威の検出、調査、対応を行えるように組み込まれています。 [高度な捜索](advanced-hunting-overview.md) ではクエリベースの脅威捜索ツールが提供され、これにより侵入を予防的に発見し、カスタム検出を作成することができます。
 
 <a name="ai"></a>
 
-**[調査と修復の自動化](automated-investigations.md)**<br>
-Microsoft Defender for Endpoint for Endpoint は、高度な攻撃にすぐに対応可能であると共に、スケールの分単位での通知の量を減らすのに役立つ自動調査と修復機能が提供されます。 
+**[調査と修復の自動化](automated-investigations.md)**
+
+Microsoft Defender for Endpoint for Endpoint は、高度な攻撃にすぐに対応可能であると共に、スケールの分単位での通知の量を減らすのに役立つ自動調査と修復機能が提供されます。
 
 <a name="ss"></a>
 
-**[デバイスの Microsoft セキュア スコア](tvm-microsoft-secure-score-devices.md)**<br>
+**[デバイスの Microsoft セキュア スコア](tvm-microsoft-secure-score-devices.md)**
 
 EndPoint 向け Microsoft Defender にはエンタープライズ ネットワークのセキュリティ状態を動的に評価し、保護されているシステムを特定し、推奨されたアクションを実行する上で役立つMicrosoft セキュアスコアが含まれているため、これを使用して組織の全体的なセキュリティを改善することができます。
 
 <a name="mte"></a>
 
-**[Microsoft 脅威エキスパート](microsoft-threat-experts.md)**<br>
+**[Microsoft 脅威エキスパート](microsoft-threat-experts.md)**
+
 EndPoint 向け Microsoft Defender のこの新しい管理対象脅威検出サービスでは、予防的な捜索、優先順位付け、および追加のコンテキストと分析が提供され、セキュリティ オペレーション センター (SOC) が脅威を素早く正確に特定し、それに対応できるよう、SOC の能力を強化します。
 
->[!IMPORTANT]
->予防的な標的型攻撃通知を受け取ったり、エキスパート オンデマンドとの連携を行ったりするには、EndPoint 向け Microsoft Defender のお客様は Microsoft 脅威エキスパート管理対象脅威捜索サービスに申し込む必要があります。 エキスパート オンデマンドは、アドオン サービスです。 標的型攻撃通知は、Microsoft 脅威エキスパート管理対象脅威捜索サービスへの参加が承認されるともれなく提供されます。<p>
-><p>登録がまだの場合でも、この特典を体験することを希望する場合は、<b>[設定]</b> > <b>[全般]</b> > <b>[高度な機能]</b> > <b>[Microsoft 脅威エキスパート]</b> に移動し、お申し込みください。 承認されると、標的型攻撃通知の特典と 90 日間無料のエキスパート オンデマンドの試用版が提供されます。 エキスパート オンデマンドの正規のサブスクリプションを入手するには、お客様の Microsoft 担当者にお問い合わせください。
+> [!IMPORTANT]
+> 予防的な標的型攻撃通知を受け取ったり、エキスパート オンデマンドとの連携を行ったりするには、EndPoint 向け Microsoft Defender のお客様は Microsoft 脅威エキスパート管理対象脅威捜索サービスに申し込む必要があります。 エキスパート オンデマンドは、アドオン サービスです。 標的型攻撃通知は、Microsoft 脅威エキスパート管理対象脅威捜索サービスへの参加が承認されるともれなく提供されます。
+>
+> 登録がまだの場合でも、この特典を体験することを希望する場合は、**[設定]** \> **[全般]** \> **[高度な機能]** \> **[Microsoft 脅威エキスパート]** に移動し、お申し込みください。 承認されると、標的型攻撃通知の特典と 90 日間無料のエキスパート オンデマンドの試用版が提供されます。 エキスパート オンデマンドの正規のサブスクリプションを入手するには、お客様の Microsoft 担当者にお問い合わせください。
 
 <a name="apis"></a>
 
-**[一元的な構成と管理、API](management-apis.md)**<br>
+**[一元的な構成と管理、API](management-apis.md)**
+
 Microsoft Defender for Endpoint を既存のワークフローに統合します。
 
 <a name="mtp"></a>
 
-**[Microsoft ソリューションとの統合](threat-protection-integration.md)** <br>
+**[Microsoft ソリューションとの統合](threat-protection-integration.md)**
+
 EndPoint 向け Microsoft Defender は、次のようなさまざまな Microsoft ソリューションと直接統合します。
+
 - Azure Defender
 - Azure Sentinel
 - Intune
@@ -134,7 +149,6 @@ EndPoint 向け Microsoft Defender は、次のようなさまざまな Microsof
 - Microsoft Defender for Office
 - Skype for Business
 
-**[Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection)**<br>
+**[Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection)**
+
 EndPoint 向け Microsoft Defender および各種の Microsoft セキュリティ ソリューションは、Microsoft 365 Defender とともに侵害前と侵害後の統合されたエンタープライズ防御スイートを形成し、高度な攻撃の検出、防止、調査、およびそれに対する自動対応を、エンドポイント、ID、メール、アプリケーション全体でネイティブに統合します。
-
-

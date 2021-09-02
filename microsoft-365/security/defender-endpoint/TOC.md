@@ -2,14 +2,21 @@
 
 ## [概要]()
 ### [Microsoft Defender for Endpoint とは](microsoft-defender-endpoint.md)
+### [Defender for Endpoint プラン 1 とプラン 2を比較する](defender-endpoint-plan-1-2.md)
 ### [最小要件](minimum-requirements.md)
 ### [Microsoft Defender for Endpoint の新機能](whats-new-in-microsoft-defender-atp.md)
 ### [プレビュー機能](preview.md)
 ### [データの保存とプライバシー](data-storage-privacy.md)
 ### [Microsoft Defender セキュリティ センターの概要](use.md)
 ### [ポータルの概要](portal-overview.md)
+### [Defender for Endpoint プラン 1]()
+#### [概要](defender-endpoint-plan-1.md)
+#### [セットアップと構成](mde-p1-setup-configuration.md)
+#### [使用を開始する](mde-plan1-getting-started.md)
+#### [メンテナンスと運用](mde-p1-maintenance-operations.md)
 ### [米国政府のお客様向けの Microsoft Defender for Endpoint](gov.md)
 ### [Windows 以外のプラットフォーム上の Microsoft Defender for Endpoint](non-windows.md)
+
 
 ## [機能を評価する](evaluation-lab.md)
 
@@ -27,18 +34,15 @@
 #### [サポート対象デバイスのオンボード](onboard-configure.md)
 
 ## [移行ガイド](migration-guides.md)
-### [Microsoft 以外のエンドポイント保護から Microsoft Defender for Endpoint に切り替える]()
-#### [移行の概要](switch-to-microsoft-defender-migration.md)
+### [Microsoft 以外のエンドポイント保護から Microsoft Defender for Endpoint に切り替える](switch-to-microsoft-defender-migration.md)
 #### [フェーズ 1: 準備](switch-to-microsoft-defender-prepare.md)
 #### [フェーズ 2: セットアップ](switch-to-microsoft-defender-setup.md)
 #### [フェーズ 3: オンボード](switch-to-microsoft-defender-onboard.md)
-### [移行後の Defender for Endpoint の管理]()
-#### [Defender for Endpoint の管理の概要](manage-atp-post-migration.md)
-#### [Intune (推奨)](manage-atp-post-migration-intune.md)
-#### [構成マネージャー](manage-atp-post-migration-configuration-manager.md)
-#### [グループ ポリシー オブジェクト](manage-atp-post-migration-group-policy-objects.md)
-#### [PowerShell、WMI、MPCmdRun.exe](manage-atp-post-migration-other-tools.md)
-
+### [移行後の Defender for Endpoint の管理](manage-atp-post-migration.md)
+#### [Intune (推奨) を使用する](manage-atp-post-migration-intune.md)
+#### [構成マネージャーを使用する](manage-atp-post-migration-configuration-manager.md)
+#### [グループ ポリシーを使用する](manage-atp-post-migration-group-policy-objects.md)
+#### [PowerShell、WMI、MPCmdRun.exe を使用する](manage-atp-post-migration-other-tools.md)
 
 ## [デバイスの構成とオンボード]()
 ### [Windows および Windows Server 上の Microsoft Defender for Endpoint]()

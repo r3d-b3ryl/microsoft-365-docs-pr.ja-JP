@@ -15,12 +15,12 @@ ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: 4d61e285166bafe2ddc52d76362e4b13e7aae8ea113bb3d7ec0acc93f4367bd2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9382df161e1601547addcd68fb33570854c10a82
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53889629"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823590"
 ---
 # <a name="next-generation-protection-overview"></a>次世代保護の概要
 
@@ -29,6 +29,9 @@ Microsoft Defender for Endpoint には、ネットワークのセキュリティ
 - [挙動ベースおよびヒューリスティックのリアルタイム ウイルス対策保護](configure-protection-features-microsoft-defender-antivirus.md)。これには、ファイルとプロセスの動作監視およびその他のヒューリスティックを使用した常時オンのスキャンが含まれています (「*リアルタイム保護*」とも呼ばれています)。 安全ではないと見なされているもののマルウェアとして検出されない可能性のあるアプリの検出とブロックも含まれています。
 - [クラウドによる保護](cloud-protection-microsoft-defender-antivirus.md)。これには、新たに出現する脅威のほぼ瞬時の検出とブロックが含まれています。
 - [専用の保護および製品の更新プログラム](manage-updates-baselines-microsoft-defender-antivirus.md)。これには、Microsoft Defender ウイルス対策を最新状態に維持することに関連する更新プログラムが含まれています。
+
+> [!TIP]
+> 次世代の保護は、Microsoft Defender for Endpoint プラン 1 (プレビュー) とプラン 2 の両方に含まれています。 [Defender for Endpoint プラン 1 (プレビュー) とプラン 2 について説明します](defender-endpoint-plan-1-2.md)。
 
 ## <a name="try-a-demo"></a>デモを試す
 
