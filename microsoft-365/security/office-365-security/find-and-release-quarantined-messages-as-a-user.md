@@ -20,12 +20,12 @@ ms.custom:
 description: ユーザーは、ユーザーに配信されるべきであった検疫済みメッセージを Exchange Online Protection (EOP) で表示して管理する方法を学ぶことができます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d8aab84cd406366182650e6fbf6c39aee9810ce3
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 04a3831ec923ec24846eb6d0e76273d1010862c6
+ms.sourcegitcommit: fd348579346522ead16a6bd8ce200a0b8ae8f7d4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58548704"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58831947"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>EOP のユーザーとして検疫済みメッセージを検索して解放する
 
@@ -38,7 +38,7 @@ ms.locfileid: "58548704"
 
 Exchange Online のメールボックスを使用している Microsoft 365 組織または Exchange Online のメールボックスを使用していないスタンドアロンの Exchange Online Protection (EOP) 組織では、危険な可能性があるメッセージまたは不要なメッセージは検疫済みメッセージとして保留されます。詳細については、「[EOP での検疫](quarantine-email-messages.md)」を参照してください。
 
-検疫されたメッセージの受信者が、管理者以外のユーザーとしてメッセージに対して実行できる操作を次の表に示します。
+検疫されたメッセージの受信者が、管理者以外の通常のユーザーとしてメッセージに対して実行できる操作を次の表に示します。
 
 <br>
 
@@ -46,9 +46,9 @@ Exchange Online のメールボックスを使用している Microsoft 365 組�
 
 |検疫の理由|表示|リリース|削除|
 |---|:---:|:---:|:---:|
-|バルク|![チェック マーク。](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|
-|スパム|![チェック マーク。](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|
-|フィッシング (高精度フィッシングではない)|![チェック マーク。](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|
+|バルク|![チェック マーク。](../../media/checkmark.png)|![チェック マーク。](../../media/checkmark.png)|![チェック マーク。](../../media/checkmark.png)|
+|スパム|![チェック マーク。](../../media/checkmark.png)|![チェック マーク。](../../media/checkmark.png)|![チェック マーク。](../../media/checkmark.png)|
+|フィッシング (高精度フィッシングではない)|![チェック マーク。](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|![チェック マーク。](../../media/checkmark.png)|
 |
 
 検疫されたメッセージは、Microsoft 365 Defender ポータルで、または (管理者が設定している場合は) [エンドユーザーのスパム通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)で表示および管理します。
