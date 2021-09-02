@@ -16,12 +16,12 @@ ms.collection:
 description: 詳細については、「セーフドキュメント」または「Microsoft 365 E5」をMicrosoft 365 E5 Security。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b1009e3c8e75497b32222b61b95810d7a50b33d2
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 0ccedf53b9978329935ceb28bb0ba0695f3da67c
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563332"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863823"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Microsoft 365 E5 の安全なドキュメント
 
@@ -30,11 +30,23 @@ ms.locfileid: "58563332"
 **適用対象**
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-セーフドキュメントは Microsoft 365 E5 または Microsoft 365 E5 Security の機能で[、Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)を使用して、保護ビューまたは Application Guard[](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653)で開いている[](https://support.microsoft.com/topic/9e0fb9c2-ffad-43bf-8ba3-78f785fdba46)ドキュメントとファイルをスキャンOffice。
+セーフドキュメントは[、Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)を使用して、保護されたビューまたは Application Guard[](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653)で開いているドキュメントとファイルをスキャンして、ドキュメントをスキャンするプレミアム[機能](https://support.microsoft.com/topic/9e0fb9c2-ffad-43bf-8ba3-78f785fdba46)Office。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- セーフドキュメントは、ライセンスまたはライセンスを持 *Microsoft 365 E5ユーザー* *Microsoft 365 E5 Security* 使用できます。 これらのライセンスは、Microsoft Defender のプランに含Office 365ではありません。
+- **Office 365 セーフ SafeDocs** (または **SAFEDOCS** または **bf6f5520-59e3-4f82-974b-7dbbc4fd27c7)** サービス (サービス プランとも呼ばれる) によって制御される セーフ ドキュメントの可用性。 このサービス プランは、次のライセンス プラン (ライセンス プラン、Microsoft 365製品とも呼ばれる) で利用できます。
+  - Microsoft 365 A5教員向け
+  - Microsoft 365 A5学生向け
+  - Microsoft 365 E5
+  - Microsoft 365 E5 Security
+
+  セーフドキュメントは、Microsoft Defender のライセンス プランOffice 365含まれていません。
+
+  詳細については、次のトピックをご覧ください。
+
+  - [PowerShell Microsoft 365ライセンスとサービスを表示する](/microsoft-365/enterprise/view-licenses-and-services-with-microsoft-365-powershell)
+  - [PowerShell Microsoft 365アカウント のライセンスとサービスの詳細を表示する](/microsoft-365/enterprise/view-account-license-and-service-details-with-microsoft-365-powershell)
+  - [ライセンスの製品名とサービス プラン識別子](/azure/active-directory/enterprise-users/licensing-service-plan-reference)
 
 - セーフドキュメントは、Microsoft 365 Apps for enterprise (以前は Office 365 ProPlus) バージョン 2004 以降でサポートされています。
 
@@ -52,7 +64,7 @@ ms.locfileid: "58563332"
   >
   > - Microsoft 365 管理センターで、対応する Azure Active Directory の役割にユーザーを追加すると、ユーザーには、必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
   >
-  > - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
+  > - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
 
 ### <a name="how-does-microsoft-handle-your-data"></a>Microsoft はデータを処理する方法を説明します。
 
@@ -60,7 +72,7 @@ ms.locfileid: "58563332"
 
 ドキュメントから送信セーフは、分析に必要な時間 (通常は 24 時間未満) を超えて Defender に保持されません。
 
-## <a name="use-the-microsoft-365-defender-to-configure-safe-documents"></a>ドキュメントを構成Microsoft 365 Defenderするには、セーフを使用します。
+## <a name="use-the-microsoft-365-defender-portal-to-configure-safe-documents"></a>[ドキュメント] Microsoft 365 Defenderを構成するには、セーフ ポータルを使用します。
 
 1. [ポリシー] Microsoft 365 Defenderを開き、[ポリシー] セクション&の [&脅威ポリシーと添付ファイルセーフメール] に \>  \>  \> **移動** します。
 
@@ -92,6 +104,21 @@ Set-AtpPolicyForO365 -EnableSafeDocs $true -AllowSafeDocsOpen $false
 ```
 
 構文とパラメーターの詳細については [、「Set-AtpPolicyForO365」を参照してください](/powershell/module/exchange/set-atppolicyforo365)。
+
+### <a name="configure-individual-access-to-safe-documents"></a>ドキュメントへの個別のアクセスセーフ構成する
+
+ドキュメント機能へのアクセスを選択的に許可またはブロックするセーフ、次の手順を実行します。
+
+1. この記事セーフ説明したように、Microsoft 365 Defenderまたは PowerShell Exchange Onlineドキュメントを有効にしてください。
+2. Azure AD PowerShell を使用して、「特定のライセンス プランに対して特定の Microsoft 365 サービスを無効にする」の説明に従って、特定のユーザーの セーフ ドキュメントを[無効にします](/microsoft-365/enterprise/disable-access-to-services-with-microsoft-365-powershell#disable-specific-microsoft-365-services-for-specific-users-for-a-specific-licensing-plan)。
+
+  PowerShell で無効にするサービス プランの名前は **SAFEDOCS です**。
+
+詳細については、次のトピックをご覧ください。
+
+- [PowerShell Microsoft 365ライセンスとサービスを表示する](/microsoft-365/enterprise/view-licenses-and-services-with-microsoft-365-powershell)
+- [PowerShell Microsoft 365アカウント のライセンスとサービスの詳細を表示する](/microsoft-365/enterprise/view-account-license-and-service-details-with-microsoft-365-powershell)
+- [ライセンスの製品名とサービス プラン識別子](/azure/active-directory/enterprise-users/licensing-service-plan-reference)
 
 ### <a name="onboard-to-the-microsoft-defender-for-endpoint-service-to-enable-auditing-capabilities"></a>Microsoft Defender for Endpoint Service にオンボードして監査機能を有効にする
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 完全なデータ一致に基づく分類で、カスタムの機密情報の種類を作成する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c785941529823048b55ab3590c91f365ea17a1ba
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 55ea055c1e69b3f7cecd334758d5343fadc408ee
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570139"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58862799"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Exact Data Match に基づく分類で、カスタムの機密情報の種類を作成する
 
@@ -73,7 +73,7 @@ EDM ベースの分類を使用すると、機密情報のデータベース内�
 
 |ポータル|世界中の GCC|GCC-High|DOD|
 |---|---|---|---|
-|Office SCC|protection.office.com|scc.office365.us|scc.protection.apps.mil|
+|Office SCC|compliance.microsoft.com|scc.office365.us|scc.protection.apps.mil|
 |Microsoft 365 セキュリティ センター|security.microsoft.com|security.microsoft.us|security.apps.mil|
 |Microsoft 365 コンプライアンス センター|compliance.microsoft.com|compliance.microsoft.us|compliance.apps.mil|
 
@@ -628,6 +628,7 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 - DLP for SharePoint (ファイル)
 - Microsoft Cloud App Security DLP ポリシー
 - サーバー側の自動ラベル付けポリシー - 商用クラウドのお客様および政府機関向けクラウドのお客様向け
+<!-- - Client side auto-labeling policies - available for government cloud customers -->  
 
 #### <a name="to-create-a-dlp-policy-with-edm"></a>EDM を使用して DLP ポリシーを作成する
 

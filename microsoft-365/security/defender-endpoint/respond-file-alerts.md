@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f582ff83a790d56b936c93f3e40aac76c7e5df1b
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.openlocfilehash: f1ea6f3b2dd9447ff9901518a80aafa4dec56a5e
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823710"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863847"
 ---
 # <a name="take-response-actions-on-a-file"></a>ファイルの対応措置を講じる
 
@@ -164,7 +164,7 @@ ms.locfileid: "58823710"
 
 #### <a name="backing-up-quarantined-files"></a>検疫済みファイルのバックアップ
 
-ユーザーは、サンプル申請の構成に応じて、検疫済みファイルをバックアップする前に明示的な同意 [を求めるメッセージが表示される場合があります](enable-cloud-protection-microsoft-defender-antivirus.md#use-group-policy-to-turn-on-cloud-delivered-protection)。
+ユーザーは、サンプル申請の構成に応じて、検疫済みファイルをバックアップする前に明示的な同意 [を求めるメッセージが表示される場合があります](enable-cloud-protection-microsoft-defender-antivirus.md#use-group-policy-to-turn-on-cloud-protection)。
 
 この機能は、サンプル申請がオフになっている場合は機能しません。 自動サンプル申請がユーザーからのアクセス許可を要求するために設定されている場合、ユーザーが送信に同意したサンプルだけが収集されます。
 

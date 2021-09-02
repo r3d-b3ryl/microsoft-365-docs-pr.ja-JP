@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender AV イベントの ID とエラー コード
+title: Microsoft Defender ウイルス対策イベントの ID とエラー コード
 description: イベントの原因と解決策を調Microsoft Defender ウイルス対策エラーの原因と解決策
 keywords: イベント、エラー コード、siem、ログ、トラブルシューティング、wef、Windows イベント転送
 search.product: eADQiWindows 10XVcnh
@@ -15,12 +15,12 @@ ms.date: 09/11/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 2c6532ca3d610d2cc0650ee8fee986b296cd54af90d62fdb71926938302635b1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 15180a2be197b39da78bf004b761db753cd02c94
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53867852"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58862823"
 ---
 # <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策ソフトウェアの問題をトラブルシューティングするため、イベント ログとエラー コードをレビューする
 
@@ -1468,7 +1468,7 @@ Microsoft Defender ウイルス対策更新中にエラーが発生しました�
 <ul>
 <li>検索</li>
 <li>ダウンロード</li>
-<li>インストール</li>
+<li>Install</li>
 </ul>
 </dt>ソース パス: ユニバーサル名前付け規則 (UNC) のファイル共有名、Windows Server Update Services 
 <dt>(WSUS)/Microsoft Update/ADL のサーバー名。</dt> 
@@ -1768,8 +1768,8 @@ Microsoft Defender ウイルス対策動的<i>署名サービスを使用して<
 <ul>
 <li>バージョン</li>
 <li>Timestamp</li>
-<li>制限なし</li>
-<li>期間</li>
+<li>無制限</li>
+<li>Duration</li>
 </ul>
 </dt>
 <dt>永続パス: &lt;Path &gt; </dt>
@@ -1779,7 +1779,7 @@ Microsoft Defender ウイルス対策動的<i>署名サービスを使用して<
 <ul>
 <li>VDM バージョン</li>
 <li>Timestamp</li>
-<li>制限なし</li>
+<li>無制限</li>
 </ul>
 </dt>
 <dt>永続性の制限: 高速パス署名の永続性の制限。</dt>
@@ -1824,8 +1824,8 @@ Microsoft Defender ウイルス対策使用<i>して、古い</i>署名を破棄
 <ul>
 <li>バージョン</li>
 <li>Timestamp</li>
-<li>制限なし</li>
-<li>期間</li>
+<li>無制限</li>
+<li>Duration</li>
 </ul>
 </dt>
 <dt>永続パス: &lt;Path &gt; </dt>
@@ -1836,7 +1836,7 @@ Microsoft Defender ウイルス対策使用<i>して、古い</i>署名を破棄
 <ul>
 <li>VDM バージョン</li>
 <li>Timestamp</li>
-<li>制限なし</li>
+<li>無制限</li>
 </ul>
 </dt>
 <dt>永続性の制限: 高速パス署名の永続性の制限。</dt>
@@ -1891,8 +1891,8 @@ Microsoft Defender ウイルス対策署名サービスを使用しようとし�
 <ul>
 <li>バージョン</li>
 <li>Timestamp</li>
-<li>制限なし</li>
-<li>期間</li>
+<li>無制限</li>
+<li>Duration</li>
 </ul>
 </dt>
 <dt>永続パス: &lt;Path &gt; </dt>
@@ -1902,7 +1902,7 @@ Microsoft Defender ウイルス対策署名サービスを使用しようとし�
 <ul>
 <li>VDM バージョン</li>
 <li>Timestamp</li>
-<li>制限なし</li>
+<li>無制限</li>
 </ul>
 </dt>
 <dt>永続性の制限: 高速パス署名の永続性の制限。</dt>
@@ -3113,7 +3113,7 @@ Microsoft Defender ウイルス対策内で検出された脅威を修復でき�
 </tr>
 </table>
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [保護に関するMicrosoft Defender ウイルス対策レポート](report-monitor-microsoft-defender-antivirus.md)
 - [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)

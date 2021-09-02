@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
-ms.topic: conceptual
+ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: f2b4c7fc980c0a5ad12e9a8570942c3c81044672
-ms.sourcegitcommit: 5566455f1872dba23cc571281609258740842e8e
+ms.openlocfilehash: 0bfbd44e0e097148800501c5bed3b1b3db2dbbc9
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58385921"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863727"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender for Endpoint on Mac の新機能
 
@@ -37,6 +37,11 @@ ms.locfileid: "58385921"
 
 > [!IMPORTANT]
 > macOS 11 (Big Sur) では、Microsoft Defender for Endpoint には追加の構成プロファイルが必要です。 以前のバージョンの macOS からアップグレードする既存の顧客の場合は、このページに記載されている追加の構成プロファイルを [必ず展開してください](mac-sysext-policies.md)。
+
+## <a name="1014084-20121071140840"></a>101.40.84 (20.121071.14084.0)
+
+- M1 チップネイティブサポート
+- バグ修正&パフォーマンスの向上
 
 ## <a name="1013797-20121062137970"></a>101.37.97 (20.121062.13797.0)
 
@@ -180,7 +185,7 @@ ms.locfileid: "58385921"
 ## <a name="1010154"></a>101.01.54
 
 - タイム マシンとの互換性に関する改善点
-- アクセシビリティの改善
+- アクセシビリティの改善点
 - バグ修正&パフォーマンスの向上
 
 ## <a name="1010031"></a>101.00.31

@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender AV で検疫済みファイルを復元する
-description: Microsoft Defender AV によって検疫されたファイルとフォルダーを復元できます。
+title: Microsoft Defender ウイルス対策で検疫済みファイルを復元する
+description: ユーザーが検疫したファイルとフォルダーを復元Microsoft Defender ウイルス対策。
 keywords: ''
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,14 +16,14 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: a07f43c11b1079bccb35a41c0ae913181be20d2d4f373a729e06ccf3b88a9045
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: dfca90f3c6c3a0ca52a92ff42aab351d5dfc8e08
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817701"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863667"
 ---
-# <a name="restore-quarantined-files-in-microsoft-defender-av"></a>Microsoft Defender AV で検疫済みファイルを復元する
+# <a name="restore-quarantined-files-in-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策で検疫済みファイルを復元する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

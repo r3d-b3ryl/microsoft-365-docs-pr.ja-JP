@@ -21,12 +21,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5e8f6d2c79a0eeac6db20ff5791a25264d1b6767
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 03973595f68c56ac57f22d8d68c9f37f04fb6bb8
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573453"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58862835"
 ---
 # <a name="understand-the-analyst-report-in-threat-analytics-in-microsoft-365-defender"></a>脅威分析のアナリスト レポートについてMicrosoft 365 Defender
 
@@ -73,7 +73,7 @@ _脅威分析レポートのアナリスト レポート セクション_
 [軽減策] タブ **を使用** して脅威に対するセキュリティの態勢を評価することもできますが、これらの推奨事項を使用すると、セキュリティ態勢の改善に向けて追加の手順を実行できます。 アナリスト レポートのすべての軽減ガイダンスを注意深く読み、可能な限り適用します。
 
 ## <a name="understand-how-each-threat-can-be-detected"></a>各脅威の検出方法を理解する
-アナリスト レポートには、Microsoft Defender for Endpoint ウイルス対策機能とエンドポイント検出および応答 (EDR) 機能も提供されます。
+また、アナリスト レポートには、Microsoft Defender ウイルス対策 _エンドポイント検出_ および応答 (EDR) 機能が提供されます。
 
 ### <a name="antivirus-detections"></a>ウイルス対策の検出
 これらの検出は、デバイスで有効になっているデバイス[Microsoft Defender ウイルス対策](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)使用できます。 これらの検出が Microsoft Defender for Endpoint にオンボードされているデバイスで発生すると、レポート内のグラフを点灯するアラートもトリガーされます。

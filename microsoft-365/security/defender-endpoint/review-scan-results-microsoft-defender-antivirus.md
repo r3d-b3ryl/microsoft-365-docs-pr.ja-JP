@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender AV スキャンの結果を確認する
+title: スキャンの結果をMicrosoft Defender ウイルス対策する
 description: アプリ、アプリ、またはアプリを使用Microsoft Endpoint Configuration Manager、Microsoft Intuneスキャンの結果Windows セキュリティする
 keywords: スキャン結果、修復、フル スキャン、クイック スキャン
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: d23d2c7f0d6fc12a3365d1c4f50d37384f5ca349
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: ec4505de586b042db48e579ee50d83315ee9b470
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58561268"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863871"
 ---
 # <a name="review-microsoft-defender-antivirus-scan-results"></a>スキャンMicrosoft Defender ウイルス対策確認する
 

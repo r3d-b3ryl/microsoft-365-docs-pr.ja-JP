@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: edebf145a754d58e4650492eefa6d67276127afb
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 91743eb7184e340deac15c10412833f2d8060866
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574750"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863631"
 ---
 # <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Microsoft SharePoint Syntex導入: 使い始める
 
@@ -73,7 +73,7 @@ ms.locfileid: "58574750"
 | SharePoint/知識管理者 | Power プラットフォーム管理者 | 知識マネージャー | モデル所有者 |
 |:-------|:-------|:-------|:-------|
 | AAD の役割| AAD の役割 | AAD の役割 | チャンピオン |
-| フォーム処理を構成する | フォーム処理用に共通データ サービス環境を構成する | 使用例の収集 | ビジネスの使用例を収集する |
+| フォーム処理を構成する | フォーム処理用に Dataverse 環境を構成する | 使用例の収集 | ビジネスの使用例を収集する |
 | コンテンツ センターとアクセス許可を管理する| AIB クレジットの購入と割り当て | ベスト プラクティスを確立し、モデル分析を確認する | モデルの作成と適用 |
 
 ナレッジ マネージャー、ビジネス プロセス所有者、およびコンテンツ モデル所有者は、組織でサンプル モデルとチャンピオン導入を作成します。
@@ -109,9 +109,9 @@ ms.locfileid: "58574750"
 | コンテンツ 管理者とモデル所有者| 使用例を収集し、モデルを作成して適用する | 任意の部署|
 | チャンピオン | 宣伝とクレーム処理の管理を支援する | 任意の部署 (スタッフ) |
 | テナント管理者 | テナント レベルの設定を構成する | IT 部門|
-| Power プラットフォーム管理者| 共通データ サービス環境を構成する | IT 部門|
+| Power プラットフォーム管理者| Dataverse 環境の構成 | IT 部門|
 
-> [!Note]
+> [!NOTE]
 > ロールアウトを通じてこれらの各役割を満たすことをお勧めしますが、特定のソリューションの開始に必要な役割は必要ない場合があります。
 
 ## <a name="readiness-checklist"></a>準備チェックリスト

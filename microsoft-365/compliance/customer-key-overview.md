@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
 description: この記事では、サービスの暗号化が顧客キーとどのように機能するのかについてMicrosoft 365。
-ms.openlocfilehash: 4798c3fb2193fbd3c513a16246e288fb8e9177c4
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 7f765d8a9c59ad8bdc5e7d2edba7f18af426cc76
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568410"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863931"
 ---
 # <a name="service-encryption-with-customer-key"></a>カスタマー キーによるサービスの暗号化
 
@@ -75,7 +75,7 @@ BitLocker と DKM を使用して、Microsoft 365サービスでデータは常�
 
 - Microsoft で管理されたキーを使用してメールボックスが既に暗号化されている場合、ユーザーまたはシステム操作がメールボックス データにアクセスする限り、サービスは新しいメールボックス DEP を使用してメールボックスを再ラップします。
 
-- 既定の暗号化を使用してメールボックスがまだ暗号化されていない場合、サービスはメールボックスに移動のマークを付けします。 暗号化は、移動が完了すると行います。 メールボックスの移動は、すべてのユーザーに設定された優先度に基づいてMicrosoft 365。 詳細については、「Move requests in [the Microsoft 365 サービス」を参照してください](/exchange/mailbox-migration/office-365-migration-best-practices#move-requests-in-the-office-365-service)。 指定した時間内にメールボックスが暗号化されていない場合は、Microsoft にお問い合わせください。
+- 既定の暗号化を使用してメールボックスがまだ暗号化されていない場合、サービスはメールボックスに移動のマークを付けします。 暗号化は、移動が完了すると行います。 メールボックスの移動は、すべてのユーザーに設定された優先度に基づいてMicrosoft 365。 詳細については、「Move requests in [the Microsoft 365 サービス」を参照してください](/exchange/mailbox-migration/office-365-migration-best-practices#move-requests-in-the-microsoft-365-or-office-365-service)。 指定した時間内にメールボックスが暗号化されていない場合は、Microsoft にお問い合わせください。
 
 後で、DEP を更新するか、別の DEP をメールボックスに割り当てる (「顧客キーの管理」の説明に従って[Office 365。](customer-key-manage.md) 各メールボックスには、DEP を割り当てる適切なライセンスが必要です。 ライセンスの詳細については、「顧客キーを設定 [する前に」を参照してください](customer-key-set-up.md#before-you-set-up-customer-key)。
 

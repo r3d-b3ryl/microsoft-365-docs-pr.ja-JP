@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3de298100e5a66e53bd34e110c35749e15e58044
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 75913a539db89bb5377386effb97c8e2a6b3beab
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568602"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863484"
 ---
 # <a name="the-analyst-report-in-threat-analytics"></a>脅威分析のアナリスト レポート
 
@@ -75,7 +75,7 @@ _脅威分析レポートのアナリスト レポート セクション_
 
 ## <a name="understand-how-each-threat-can-be-detected"></a>各脅威の検出方法を理解する
 
-アナリスト レポートには、Microsoft Defender for Endpoint ウイルス対策機能とエンドポイント検出および応答 (EDR) 機能も提供されます。
+また、アナリスト レポートには、Microsoft Defender ウイルス対策 _エンドポイント検出_ および応答 (EDR) 機能が提供されます。
 
 ### <a name="antivirus-detections"></a>ウイルス対策の検出
 

@@ -1,7 +1,7 @@
 ---
 title: パフォーマンスに関する問題のトラブルシューティング
 description: Microsoft Defender for Endpoint のリアルタイム保護サービスに関連する CPU 使用率の高いトラブルシューティングを行います。
-keywords: トラブルシューティング、パフォーマンス、CPU 使用率が高い、CPU 使用率が高い、エラー、修正、コンプライアンスの更新、oms、モニター、レポート、Microsoft Defender AV
+keywords: トラブルシューティング、パフォーマンス、CPU 使用率が高い、CPU 使用率が高い、エラー、修正、コンプライアンスの更新、oms、モニター、レポート、Microsoft Defender ウイルス対策
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ ms.date: 04/14/2021
 audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 29b174af6755718ef8c2fd446cf84aeb0f390310
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 6fa4ff040bb6c863fab88e25728c69bcf920a07b
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568590"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863643"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>リアルタイム保護に関連するパフォーマンスの問題のトラブルシューティング
 
@@ -121,7 +121,7 @@ Microsoft Defender for Endpoint のリアルタイム保護サービスに関連
         >
         > ![Procmon を最小化します。](images/procmon-minimize.png)
 
-7. 手順 6 の手順の 1 つを実行すると、次にフィルターを設定するオプションが表示されます。 **[OK]** を選択します。 キャプチャが完了したら、いつでも結果をフィルター処理できます。
+7. 手順 6 の手順の 1 つを実行すると、次にフィルターを設定するオプションが表示されます。 **[OK]** をクリックします。 キャプチャが完了したら、いつでも結果をフィルター処理できます。
 
     ![[フィルター処理名] は [システム除外] です。](images/procmon-filter-options.png)
 
@@ -209,7 +209,7 @@ WPR ユーザー インターフェイスを使用するには、「WPR UI を�
     > [!TIP]
     > トレースを 1 秒で開始してみてください。 たとえば、01:30:00 です。 これにより、データの分析が容易になります。 また、問題が再現された正確なタイムスタンプを追跡してみてください。
 
-10. [**スタート**] を選択します。
+10. [**開始**] を選択します。
 
     ![[トレースの開始] を選択します。](images/wpr-09.png)
 

@@ -14,12 +14,12 @@ ms.author: deniseb
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 15cd59e2d0291a713de142f303bb9934ec1c06d8
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: e0056f4f1517962bab3dbee4f993ce28c58dfcf9
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58550216"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863979"
 ---
 # <a name="turn-on-network-protection"></a>ネットワーク保護を有効にする
 
@@ -40,11 +40,11 @@ ms.locfileid: "58550216"
 
 レジストリ エディターを使用して、ローカル デバイスでネットワーク保護が有効になっているか確認します。
 
-1. タスク バーの **[スタート** ] ボタンを選択し **、「regedit」と入力して** レジストリ エディターを開きます。
+1. タスク バーの **[スタート** ] ボタンを選択し **、「regedit」と** 入力してレジストリ エディターを開きます。
 
-2. サイド **メニュー HKEY_LOCAL_MACHINE** を選択する
+2. サイド **メニュー HKEY_LOCAL_MACHINE** を選択します。
 
-3. 入れ子になったメニューから **ソフトウェア** ポリシーへの移動 Microsoft  >  **Windows Defender Windows Defender**  >    >    >  **Exploit Guard**  >  **ネットワーク保護**
+3. 入れ子になったメニューを [**ソフトウェア** ポリシー] に移動し \> 、Microsoft **Windows Defender Windows Defender** \>  \>  \> **保護に** \> **移動します**。
 
 4. デバイス上のネットワーク保護の現在の状態を表示するには **、[EnableNetworkProtection]** を選択します。
 
@@ -65,7 +65,7 @@ ms.locfileid: "58550216"
 
 ### <a name="powershell"></a>PowerShell
 
-1. **[powershell]** と入力スタート メニューを **右クリックし**、[管理者Windows PowerShell **実行] を選択します。**
+1. **[powershell]** と入力スタート メニュー **右クリックし**、[管理者Windows PowerShell **実行] を選択します**。
 2. 次のコマンドレットを入力します。
 
     ```PowerShell
@@ -86,11 +86,19 @@ ms.locfileid: "58550216"
 
 ### <a name="microsoft-endpoint-manager-formerly-intune"></a>Microsoft エンドポイント マネージャー (以前は Intune)
 
-1. 管理センターにサインインMicrosoft エンドポイント マネージャー (https://endpoint.microsoft.com)
+1. 管理センターにサインインMicrosoft エンドポイント マネージャー ( https://endpoint.microsoft.com) .
 
-2. エンドポイント保護構成プロファイル [の作成または編集](/mem/intune/protect/endpoint-protection-configure)
+2. [デバイス構成 **プロファイル**  >  **] [プロファイルの**  >  **作成] に移動します**。
 
-3. [**プロファイル フロー設定** 構成] で、[ネットワーク フィルターネットワークMicrosoft Defender Exploit Guard有効または監査のみ]  >    >    >  に **移動します。**
+3. [プロファイルの **作成] フライアウト** で、テンプレートの一覧から [ **エンドポイント** 保護] を選択し、[作成] を **選択します**。
+
+4. [エンドポイント保護 **の**  >  **基本] に移動** し、プロファイルの名前を指定し、[次へ] を **選択します**。
+
+5. [構成 **設定] セクション** で、[ネットワーク フィルターネットワークMicrosoft Defender Exploit Guard有効または監査]  >    >    >  **に****移動します**。 [**次へ**] を選択します。
+
+6. 組織の **必要に応じて**、適切なスコープタグ、割 **り** 当て、適用ルールを選択します。 管理者は、より多くの要件を設定できます。
+
+7. すべての情報を確認し、[作成] を **選択します**。
 
 ### <a name="group-policy"></a>グループ ポリシー
 
@@ -104,14 +112,14 @@ ms.locfileid: "58550216"
 
 2. **[グループ ポリシー管理エディター]** で、**[コンピューターの構成]** に移動し、**[管理用テンプレート]** を選択します。
 
-3. ツリーを展開して **、Exploit Guard ネットワークWindows保護**  >  **Microsoft Defender ウイルス対策Windows Defender**  >  **コンポーネント**  >  **を展開します**。
+3. ツリーを展開して **、Exploit Guard ネットワークWindows保護** \> **Microsoft Defender ウイルス対策Windows Defender** \> **コンポーネント** \> **を展開します**。
 
    > [!NOTE]
    > 以前のバージョンの Windowsでは、グループ ポリシー パスは "Windows Defender ウイルス対策" ではなく "Microsoft Defender ウイルス対策" と表示Microsoft Defender ウイルス対策。
 
 4. [ユーザーとアプリによる **危険** な Web サイトへのアクセスを防止する] 設定をダブルクリックし、オプションを [有効] に **設定します**。 [オプション] セクションで、次のいずれかのオプションを指定する必要があります。
-    - **ブロック** - ユーザーが悪意のある IP アドレスとドメインにアクセスできない
-    - **無効 (既定)** - ネットワーク保護機能が機能しません。 ユーザーが悪意のあるドメインにアクセスできない
+    - **ブロック** - ユーザーは悪意のある IP アドレスとドメインにアクセスできません。
+    - **無効 (既定)** - ネットワーク保護機能が機能しません。 ユーザーは悪意のあるドメインへのアクセスをブロックされません。
     - **監査モード**- ユーザーが悪意のある IP アドレスまたはドメインにアクセスした場合、イベントはイベント ログWindowsされます。 ただし、ユーザーはアドレスへのアクセスをブロックされません。
 
 > [!IMPORTANT]

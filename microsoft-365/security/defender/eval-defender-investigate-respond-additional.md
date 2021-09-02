@@ -22,12 +22,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 7338292b784cdad17548efc3dd148f3ea6a72b28
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 57106e33f244ad1e549fcfd7f361c82863f9e3a9
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568266"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58864040"
 ---
 # <a name="try-microsoft-365-defender-incident-response-capabilities-in-a-pilot-environment"></a>パイロットMicrosoft 365 Defenderインシデント対応機能を試す
 
@@ -68,7 +68,7 @@ ms.locfileid: "58568266"
 
 ## <a name="manage-incidents"></a>インシデントを管理する
 
-インシデントを管理するには、[インシデントの **管理] ウィンドウ** でインシデントを管理できます。 次に例を示します。
+インシデントを管理するには、インシデント用の[**インシデントの管理**] ウィンドウから行います。 次に例を示します。
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="インシデントの [インシデントの管理] ウィンドウの例。":::
 
@@ -81,7 +81,7 @@ ms.locfileid: "58568266"
 
 - インシデント名を編集する
 
-  セキュリティ チームのベスト プラクティスに基づいて、utomatically に割り当てられた名前を変更します。
+  セキュリティ チームのベスト プラクティスに基づいて、自動的に割り当てられた名前を変更します。
   
 - インシデント タグを追加する
 
@@ -95,7 +95,7 @@ ms.locfileid: "58568266"
 
   修復後にインシデントを閉じます。
   
-- 分類と決定を設定する
+- その分類と決定を設定する
 
   インシデントを解決するときに脅威の種類を分類して選択します。
   
@@ -153,9 +153,9 @@ ms.locfileid: "58568266"
 
     b. テスト デバイスをテスト ドメインに参加します。
 
-    c. [[オンにする] をWindows Defender ウイルス対策](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)します。 問題が発生した場合は、このトラブルシューティング Windows Defender ウイルス対策を[参照してください](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy)。
+    c. [[オンにする] をWindows Defender ウイルス対策](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)します。 問題が発生した場合は、このトラブルシューティング Windows Defender ウイルス対策を[参照してください](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)。
 
-    d.  [エンドポイント用 Microsoft Defender にオンボードします](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)。
+    d. [エンドポイント用 Microsoft Defender にオンボードします](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)。
 
 ### <a name="run-the-simulation"></a>シミュレーションを実行する
 
@@ -283,7 +283,7 @@ ms.locfileid: "58568266"
 
    このパイロットの場合は、このルールを実稼働環境のテスト デバイスのサブセットに制限できます。
 
-6. **[作成]** を選択します。 次に、ナビゲーション **パネルから [カスタム** 検出ルール] を選択します。
+6. [**作成**] を選択します。 次に、ナビゲーション **パネルから [カスタム** 検出ルール] を選択します。
 
    ![メニューの [カスタム検出ルール] オプションの例。](../../media/mtp/fig27a.png)
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: この記事では、レビュー セット内のドキュメントのメタデータ フィールドを、レビュー セット内の Advanced eDiscovery定義Microsoft 365。
-ms.openlocfilehash: 4e5a4e60a5788c93f9ba0407616c4417c47ed46bfe20880d067ffa04a5a42dd1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ed7652ecf720e32a7ddfaffbd0ff2db29b582b69
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842317"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863919"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Advanced eDiscovery のドキュメントメタデータフィールド
 
@@ -42,7 +42,7 @@ ms.locfileid: "53842317"
 
 ****
 
-|フィールド名と表示フィールド名|検索可能なフィールド名|エクスポートされたフィールド名|Description|
+|フィールド名と表示フィールド名|検索可能なフィールド名|エクスポートされたフィールド名|説明|
 |---|---|---|---|
 |添付ファイルのコンテンツ ID|AttachmentContentId||アイテムの添付ファイルコンテンツ ID。|
 |弁護士クライアント特権スコア|AttorneyClientPrivilegeScore||弁護士クライアント特権モデルのコンテンツ スコア。|
@@ -52,13 +52,13 @@ ms.locfileid: "53842317"
 |コンプライアンス ラベル|ComplianceLabels|Compliance_labels|[コンテンツに](retention.md)適用される保持ラベルは、Office 365。|
 |複合パス|CompoundPath|Compound_path|アイテムのソースを記述する人間が読み取り可能なパス。|
 |Content*|コンテンツ||アイテムの抽出されたテキスト。|
-|会話本文|会話本文||アイテムの会話本文。|
+|会話本文|ConversationBody||アイテムの会話本文。|
 |会話 ID|ConversationId|Conversation_ID|メッセージの会話 ID。 1:1 Teamsグループ チャットでは、同じ会話内のすべてのトランスクリプト ファイルとその家族アイテムが同じ会話 ID を共有します。 詳細については、「Advanced eDiscovery[のコンテンツのワークフロー」を参照Microsoft Teams。](teams-workflow-in-advanced-ediscovery.md)|
 |会話インデックス||Conversation_index|メッセージからの会話インデックス。|
 |会話の名前||ConversationName|チャネルの名前は、Teams。 名前の形式は、チャネルの種類によって異なります。 <br>Teamsチャットとプライベート チャネル チャット:\<Name of team, name of channel\> <br>Teams 1:1 およびグループ チャット: すべてのチャット参加者の表示名と電子メール アドレス<br>Yammer: Community名 + 投稿の最初の 120 文字<br>Yammerプライベート: 送信者名と電子メール アドレス + メッセージの最初の 120 文字|
 |会話の Pdf 時間|ConversationPdfTime||会話の PDF バージョンが作成された日付。|
 |会話のやり直しの書き込み時間|ConversationRedactionBurnTime||会話の PDF バージョンがチャット用に作成された日付。|
-|会話のトピック|会話のトピック||アイテムの会話のトピック。|
+|会話のトピック|ConversationTopic||アイテムの会話のトピック。|
 |会話の種類|ConversationType|ConversationType|チャットの会話の種類。 値は次のとおりです。 <br> Teams 1:1 とグループ チャット、およびすべてのYammer会話:**グループ**<br>Teamsチャネルとプライベート チャネル:**チャネル**|
 |編集されたメッセージを含む|ContainsEditedMessage|ContainsEditedMessage|チャットトランスクリプトにTeamsメッセージが含まれるかどうかを示します。
 |||Converted_file_path|変換されたエクスポート ファイルのパス。 内部 Microsoft の場合のみ使用します。|
@@ -100,7 +100,7 @@ ms.locfileid: "53842317"
 |ファイル システムの作成日||File_system_date_created|ファイル システムから作成された日付 (データ以外のデータにのみOffice 365されます)。|
 |ファイル システムの日付が変更されました||File_system_date_modified|ファイル システムからの変更日 (データ以外のデータにのみOffice 365されます)。|
 |ファイルの種類|FileType||ファイル拡張子に基づくアイテムのファイルの種類。|
-|グループ ID|グループ ID|Group_ID|メールとドキュメントのすべてのアイテムをグループ分けします。 電子メールの場合、これにはメッセージとすべての添付ファイルと抽出されたアイテムが含まれます。 ドキュメントの場合、これにはドキュメントと埋め込みアイテムが含まれます。|
+|グループ ID|GroupId|Group_ID|メールとドキュメントのすべてのアイテムをグループ分けします。 電子メールの場合、これにはメッセージとすべての添付ファイルと抽出されたアイテムが含まれます。 ドキュメントの場合、これにはドキュメントと埋め込みアイテムが含まれます。|
 |添付ファイルを持つ|EmailHasAttachment|Email_has_attachment|メッセージに添付ファイルが含されているかどうかを示します。|
 |弁護士を持つ|HasAttorney||**True** の場合は、少なくとも 1 人の参加者が弁護士リストに表示されます。それ以外の場合、値は **False です**。|
 |HasText*||Has_text|アイテムにテキストが含されているかどうかを示します。可能な値は **True と** **False です**。|
@@ -162,18 +162,18 @@ ms.locfileid: "53842317"
 |Sender|Sender|Email_sender|メッセージの種類の送信者 (差出人) フィールド。 形式は **DisplayName です \<SmtpAddress>**。|
 |送信者/作成者|SenderAuthor||アイテムの送信者または作成者で構成される計算フィールド。|
 |送信者ドメイン|SenderDomain|Email_sender_domain|送信者のドメイン。|
-|Sent|Sent|Email_date_sent|メッセージの送信日。<br>チャット: トランスクリプトの開始日|
+|送信日時|送信日時|Email_date_sent|メッセージの送信日。<br>チャット: トランスクリプトの開始日|
 |Set Order: Inclusive First|SetOrderInclusivesFirst|Set_order_inclusives_first|並べ替えフィールド - 電子メールと添付ファイル: カウンター時系列。ドキュメント: 最初にピボットし、類似度スコアを降順に指定します。|
 |ID の設定||Set_ID|同じメール スレッド (ND_set) 内の類似コンテンツ (ND_set) または電子メールのドキュメントは、同じEmail_set共有Set_ID。|
 |SimilarityPercent||Similarity_percent|近くの重複セットのピボットに対するドキュメントの類似点を示します。|
 |ネイティブ ファイル サイズ|Size|Native_size|ネイティブ アイテムのバイト数。|
-|Subject|Subject|Email_subject|メッセージの件名。|
+|件名|件名|Email_subject|メッセージの件名。|
 |件名/タイトル|SubjectTitle||アイテムの件名またはタイトルで構成される計算フィールド。|
 |タグ|タグ|タグ|レビュー セットに適用されるタグ。|
 |Teamsチャネル名|TeamsChannel|Channel_Name|チャネルの名前は、Microsoft Teams。|
 |テーマリスト|ThemesList|Themes_list|分析用に計算されたテーマの一覧。|
 |タイトル|タイトル|Doc_title|ドキュメント メタデータのタイトル。 ドキュメント メタデータのタイトル。 コンテンツTeamsおよびYammer、これは ConversationName プロパティの値です。|
-|宛先|宛先|Email_to|メッセージの種類をフィールドに指定します。 Format is **DisplayName \<SmtpAddress>**|
+|へ|へ|Email_to|メッセージの種類をフィールドに指定します。 Format is **DisplayName \<SmtpAddress>**|
 |メール セットで一意|UniqueInEmailSet||**メール** セットに添付ファイルが重複している場合は False。|
 |バージョン グループ ID||Version_Group_Id|同じドキュメントの異なるバージョンをグループ分けします。|
 |修復された|WasRemediated|Was_Remediated|**True** の場合は、アイテムが修復され、それ以外の場合は **False です**。|

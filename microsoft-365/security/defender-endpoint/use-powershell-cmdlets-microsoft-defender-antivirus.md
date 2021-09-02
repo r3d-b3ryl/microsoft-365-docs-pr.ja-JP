@@ -1,5 +1,5 @@
 ---
-title: PowerShell コマンドレットを使用して Microsoft Defender AV を構成および実行する
+title: PowerShell コマンドレットを使用して、サーバーの構成と実行をMicrosoft Defender ウイルス対策
 description: このWindows 10 PowerShell コマンドレットを使用して、スキャンの実行、セキュリティ インテリジェンスの更新、および設定の変更を行Microsoft Defender ウイルス対策。
 keywords: scan, コマンドライン, mpcmdrun, defender
 search.product: eADQiWindows 10XVcnh
@@ -17,12 +17,12 @@ manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: 820300be1a8c68dab4b000b61023819ce1b75cf800e7cc16915f2aa7a696dfd2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 41d36f93ad371842d4ffe81e02cb46adb9e12288
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884477"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863955"
 ---
 # <a name="use-powershell-cmdlets-to-configure-and-manage-microsoft-defender-antivirus"></a>PowerShell コマンドレットを使用して、サーバーの構成とMicrosoft Defender ウイルス対策
 
@@ -65,7 +65,7 @@ Get-Help <cmdlet> -Online
 
 ローカルに `-online` キャッシュされたヘルプを取得するには、パラメーターを省略します。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [管理および構成ツールのリファレンス トピック](configuration-management-reference-microsoft-defender-antivirus.md)
 - [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: bd3f9fa5c6595a9a73111bb86699271cd5b930aa
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.openlocfilehash: 9d0286ec03c6cde7aa8129d030b65271e9c78677
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823686"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863376"
 ---
 # <a name="take-response-actions-on-a-device"></a>デバイスの対応措置を講じる
 
@@ -40,7 +40,7 @@ ms.locfileid: "58823686"
 - 自動調査の開始
 - ライブ応答セッションの開始
 - 調査パッケージの収集
-- ウイルス対策スキャンを実行する
+- ウイルス対策スキャンの実行
 - アプリの実行を制限する
 - デバイスの分離
 - 脅威のエキスパートに相談する
@@ -57,7 +57,7 @@ ms.locfileid: "58823686"
 
 > [!IMPORTANT]
 >
-> - これらの応答アクションは、バージョン 1703 以降Windows 10デバイスでのみ使用できます。
+> - これらの応答アクションは、Windows 10 バージョン 1703 以降およびサーバー 2019 Windowsでのみ使用できます。
 > - 非デバイス プラットフォームWindows応答機能 (デバイスの分離など) は、サード パーティの機能に依存します。
 > - Microsoft ファースト パーティエージェントの場合、OS の最小要件については、各機能の下にある 「詳細」リンクを参照してください。
 
@@ -111,7 +111,7 @@ ms.locfileid: "58823686"
 
 ****
 
-|フォルダー|内容|
+|フォルダー|説明|
 |:---|:---------|
 |自動実行|デバイス上での攻撃者の永続性を識別するために、既知の自動開始エントリ ポイント (ASEP) のレジストリの内容を表す一連のファイルが格納されています。 <p> <div class="alert"><b>注:</b> レジストリ キーが見つからない場合、ファイルには次のメッセージが含まれます。"ERROR: システムは、指定されたレジストリ キーまたは値を見つかりませんでした。<div>|
 |インストールされているプログラム|この.CSVファイルには、デバイスに現在インストールされているプログラムを特定するのに役立つインストール済みプログラムの一覧が含まれている。 詳細については、「Win32_Product [クラス」を参照してください](https://go.microsoft.com/fwlink/?linkid=841509)。|
@@ -182,8 +182,8 @@ ms.locfileid: "58823686"
 
 > [!IMPORTANT]
 >
-> - 完全な分離は、バージョン 1703 Windows 10デバイスで使用できます。
-> - 選択的分離は、バージョン 1709 以降Windows 10デバイスで使用できます。
+> - 完全な分離は、サーバー 2019 Windows 10バージョン 1703 および Windowsデバイスで使用できます。
+> - 選択的な分離は、サーバー 2019 Windows 10バージョン 1709 以降のデバイスWindows使用できます。
 > - デバイスを分離する場合は、特定のプロセスと宛先だけが許可されます。 したがって、完全な VPN トンネルの背後にあるデバイスは、デバイスが分離された後、Microsoft Defender for Endpoint クラウド サービスに到達できません。 Microsoft Defender for Endpoint にスプリット トンネリング VPN を使用し、クラウド ベースMicrosoft Defender ウイルス対策トラフィックを使用することをお勧めします。
 
 このデバイス分離機能は、デバイスを監視し続ける Defender for Endpoint サービスへの接続を維持しながら、侵害されたデバイスをネットワークから切断します。

@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
-description: グループ メンバーのMicrosoft 365、電子メール アドレス、グループ名、または説明の編集、グループの動作のカスタマイズなど、さまざまなグループを管理する方法について説明します。
-ms.openlocfilehash: 7155bbbd6ff127525522b0a7ddf866b9d690db5a
-ms.sourcegitcommit: fd348579346522ead16a6bd8ce200a0b8ae8f7d4
+description: グループ メンバーのMicrosoft 365追加、電子メール アドレス、グループ名、または説明の編集、グループの動作のカスタマイズなど、グループグループの管理について説明します。
+ms.openlocfilehash: c7f38a6a0b2eb3f6c0466858b60ac0beb2143bc0
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58831839"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58862727"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>グループを管理するMicrosoft 365 管理センター
 
@@ -106,7 +106,7 @@ Remove-AzureADMSDeletedDirectoryObject -Id <objectId>
 
 [Microsoft 365 グループを作成する](create-groups.md)
 
-[Microsoft 365 グループへのゲスト アクセスの管理](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
+[グループへのゲスト アクセスMicrosoft 365する](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
 [グループの作成時に使用するドメインMicrosoft 365する](../../solutions/choose-domain-to-create-groups.md)
 

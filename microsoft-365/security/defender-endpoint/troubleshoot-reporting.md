@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender AV のレポート ツールに関する問題のトラブルシューティング
-description: Microsoft Defender AV 保護の状態を更新コンプライアンスで報告しようとするときに一般的な問題を特定して解決する
-keywords: トラブルシューティング、エラー、修正、更新コンプライアンス、oms、モニター、レポート、Microsoft Defender AV
+title: レポート ツールに関する問題のトラブルシューティングを行Microsoft Defender ウイルス対策
+description: 更新コンプライアンスで保護状態を報告しようとするときに、一般的なMicrosoft Defender ウイルス対策を特定して解決する
+keywords: トラブルシューティング、エラー、修正、更新コンプライアンス、oms、監視、レポート、Microsoft Defender ウイルス対策
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: c1620de251a0cd16ab61e0ecb41abb1b481535161d5db5b9d791501229e6fc13
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: afc383c158da353da35def39d5b21e2857b9e2ac
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53889365"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863967"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-reporting-in-update-compliance"></a>更新プログラムのコンプライアンスでの Microsoft Defender ウイルス対策レポートのトラブルシューティング
 
@@ -60,9 +60,9 @@ ms.locfileid: "53889365"
 デバイスが更新コンプライアンスに適切に表示するには、更新コンプライアンス サービスと更新プログラムの両方の前提条件を満たす必要Microsoft Defender ウイルス対策。
 
 >[!div class="checklist"]
->- エンドポイントは、Microsoft Defender ウイルス対策ウイルス対策保護アプリとして使用しています。 [他のウイルス対策アプリを使用すると、Microsoft Defender AV](microsoft-defender-antivirus-compatibility.md) はそれ自体を無効にし、エンドポイントは Update Compliance で報告されません。
+>- エンドポイントは、Microsoft Defender ウイルス対策ウイルス対策保護アプリとして使用しています。 [他のウイルス対策アプリを使用すると、Microsoft Defender ウイルス対策](microsoft-defender-antivirus-compatibility.md)が無効にされ、エンドポイントは更新コンプライアンスで報告されません。
 > - [クラウド配信の保護が有効になっています](enable-cloud-protection-microsoft-defender-antivirus.md)。
-> - エンドポイントは Microsoft Defender AV クラウド [に接続できます](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud)
+> - エンドポイントはクラウド[にMicrosoft Defender ウイルス対策できます](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud)
 > - エンドポイントがバージョン 1607 Windows 10前に実行されている場合、Windows 10データを拡張[レベルに設定する必要があります](/windows/configuration/configure-windows-diagnostic-data-in-your-organization#enhanced-level)。
 > - すべての要件が満たされたのは 3 日間です。
 
@@ -73,7 +73,7 @@ ms.locfileid: "53889365"
 > [!div class="nextstepaction"]
 > [更新コンプライアンスのトラブルシューティングの診断データを収集する](collect-diagnostic-data.md)  
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)
 - [展開Microsoft Defender ウイルス対策](deploy-manage-report-microsoft-defender-antivirus.md)

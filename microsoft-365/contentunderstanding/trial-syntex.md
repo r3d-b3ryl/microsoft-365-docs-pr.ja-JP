@@ -15,12 +15,12 @@ ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
 description: 組織のユーザー向け試用版パイロット プログラムを計画SharePoint Syntexする方法について学習します。
-ms.openlocfilehash: 490952d0bf1ba4d6fb61a7199a8c08170ff4476159a8c2665c4e39638ab5865e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 336a4c164f15035168d8842b05cdd4b5c566a97a
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53899633"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863679"
 ---
 # <a name="run-a-trial-of-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex の試用版を実行SharePoint Syntex
 
@@ -106,7 +106,7 @@ ms.locfileid: "53899633"
 - モデルを実行していたライブラリは、ファイルを自動的に分類したり、モデルを抽出したりしなくなりました。
 - 以前に分類されたファイルや抽出されたメタデータは影響を受け取らない。
 - コンテンツ センターとドキュメントを理解するモデルは自動的に削除されません。 今後ライセンスを購入する場合は、これらは引き続き使用できます。
-- フォーム処理モデルは、既定の Power Platform 環境の Common Data Services (CDS) インスタンスに格納されます。 これらは、将来のライセンスや power プラットフォームSharePoint Syntex AI ビルダー機能で使用できます。
+- フォーム処理モデルは、既定の Power Platform 環境の Dataverse (以前は Common Data Service [CDS]) インスタンスに格納されます。 これらは、将来のライセンスや power プラットフォームSharePoint Syntex AI ビルダー機能で使用できます。
 
 ## <a name="see-also"></a>関連項目
 

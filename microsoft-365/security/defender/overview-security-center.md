@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 7f4df3c6903194b00a4469f52fb0e15e2f8748ad
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 7f129f3ba1650403b23aa7e849a7b74f8220871f
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573873"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863787"
 ---
 # <a name="microsoft-365-defender-overview"></a>Microsoft 365 Defender概要
 
@@ -157,7 +157,7 @@ Microsoft 365 Defenderには、Microsoft セキュリティ ブログ、YouTube 
 > 製品フィルターに沿って、現在のトピック、リソースの種類 (ビデオからウェビナーまで)、セキュリティ領域に関する知識または経験のレベル、セキュリティの役割、および製品の機能が一覧表示されます。
 
 > [!TIP]
-> [Microsoft Learn](/e/learn/)には他にも多くの学習機会があります。 コース[MS-500T02-A: 脅威保護の実装など、認定Microsoft 365があります](/learn/certifications/courses/ms-500t02)。
+> [Microsoft Learn](/learn/)には他にも多くの学習機会があります。 コース[MS-500T02-A: 脅威保護の実装など、認定Microsoft 365があります](/learn/certifications/courses/ms-500t02)。
 
 ## <a name="send-us-your-feedback"></a>フィードバックの送信
 

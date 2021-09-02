@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 89a495d5832d1a16e062c7df8e31ea3a3333bf00
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: dd8293f05a5b88bbd17a3b6760c9a535737fd439
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58399709"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863883"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Microsoft マネージド デスクトップのテクノロジ
 
@@ -64,7 +64,7 @@ Microsoft Defender タンパープロテクション | Windowsタンパープロ
 Microsoft Defender ウイルス対策動作ベース、ヒューリスティック、リアルタイムのウイルス対策保護 | 常にファイルをスキャンし、マルウェアとして検出されない可能性のある脅威を処理します。 詳細については、「Microsoft Defender ウイルス対策、ヒューリスティック、リアルタイムのウイルス対策保護」[を参照してください](../../security/defender-endpoint/microsoft-defender-antivirus-in-windows-10.md)。
 Microsoft Defender ウイルス対策クラウド配信の保護 | 新しい脅威や新しい脅威に対する動的なほぼ瞬時の自動保護を提供します。 詳細については、「クラウド配信[Microsoft Defender ウイルス対策」を参照してください](/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)。
 Microsoft Defender "一目でブロックする" | 疑わしいファイルまたは不明なファイルを検出Windows新しいマルウェアの検出とブロックを提供します。 詳細については [、「Microsoft Defender Block at first sight」を参照してください](/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)。
-Microsoft Defender AV 潜在的に望ましくないアプリケーション | 望ましくない可能性のあるアプリケーションは、コンピューターの動作が遅くなる、予期しない広告を表示する、または最悪の場合は予期しない、または望ましくない可能性のある他のソフトウェアをインストールするアプリをブロックするために使用されます。 詳細については、「Microsoft Defender AV 潜在的に望ましくない [アプリケーション」を参照してください](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)。
+Microsoft Defender ウイルス対策望ましくない可能性のあるアプリケーション | 望ましくない可能性のあるアプリケーションは、コンピューターの動作が遅くなる、予期しない広告を表示する、または最悪の場合は予期しない、または望ましくない可能性のある他のソフトウェアをインストールするアプリをブロックするために使用されます。 詳細については、「潜在的に望[ましくないMicrosoft Defender ウイルス対策アプリケーション」を参照してください](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)。
 Windows Defender高度なセキュリティを備えファイアウォール | デバイスのホスト ベースの、2 方向ネットワーク トラフィック フィルタリング、Windows Defender ファイアウォールは、ローカル デバイスに対して、またはローカル デバイスから流れ出る未承認のネットワーク トラフィックをブロックします。 詳細については、「Advanced [Security Windows Defenderファイアウォール」を参照してください](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)。
 ユーザー アカウント制御 | タスクまたはアクションで管理者アカウントタイプのアクセスが必要な場合、ユーザー アカウント制御は Secure Desktop に切り替わります。 Microsoft マネージド デスクトップユーザーには、登録時に標準ユーザー アクセス権が割り当てられます。 詳細については、「User [Account Control」を参照してください](/windows/security/identity-protection/user-account-control/how-user-account-control-works)。
 

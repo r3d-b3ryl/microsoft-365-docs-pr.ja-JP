@@ -8,12 +8,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 4b0399adae82123bf4e0d6ca5aa462d1b48ac80e9143b6744e936a6b94554c68
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9f2e3b9d623f5f2b019296dc08c34c32ace2e9d6
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854413"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863775"
 ---
 # <a name="security-technologies-in-microsoft-managed-desktop"></a>セキュリティ テクノロジ (Microsoft マネージド デスクトップ
 
@@ -21,7 +21,7 @@ ms.locfileid: "53854413"
 
 Microsoft マネージド デスクトップは、いくつかの Microsoft テクノロジを使用して、管理対象デバイスとデータのセキュリティ保護に役立ちます。 さらに、セキュリティ 運用センター Microsoft マネージド デスクトップこれらのテクノロジと組み[合わせてさまざまな](security-operations.md)プロセスを使用します。
 
-具体的には次のとおりです。
+特に次のような場合です。
 
 - [デバイス のセキュリティ](#device-security)– デバイスのセキュリティとMicrosoft マネージド デスクトップ保護
 - [ID とアクセス管理](#identity-and-access-management)– ID サービスを通じてデバイスの安全な使用Azure Active Directory管理する
@@ -37,7 +37,7 @@ Microsoft マネージド デスクトップすべての管理対象デバイス
 
 サービス | 説明
 --- | ---
-ウイルス対策 | Microsoft Defender AV がインストールされ、構成されている<br>Microsoft Defender AV の定義は最新の情報です
+ウイルス対策 | Microsoft Defender ウイルス対策インストールおよび構成済み<br>Microsoft Defender ウイルス対策定義が最新の場合
 ボリューム全体の暗号化 | WindowsBitLocker は、デバイスのボリューム暗号化Microsoft マネージド デスクトップです。<br><br>組織がサービスにオンボードされた後、デバイスは、Windows BitLocker と組み込みの信頼プラットフォーム モジュール (TPM) を使用して暗号化され、デバイスがスリープ モードまたはオフのときにローカル データへの不正アクセスを防止します。
 監視 | Microsoft Defender for Endpoint は、すべてのデバイスでセキュリティ脅威の監視Microsoft マネージド デスクトップされます。 Defender for Endpoint を使用すると、企業のお客様は、企業ネットワーク内の高度な脅威を検出、調査、および対応できます。 詳細については [、「Microsoft Defender for Endpoint」を参照してください。](/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)
 オペレーティング システムの更新 | Microsoft マネージド デスクトップデバイスは、常に最新のセキュリティ更新プログラムでセキュリティ保護されます。

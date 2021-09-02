@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2ae3c72387b2617bc8fe88349272d27675af16a5
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.openlocfilehash: 77cbd23197b60c3a74c97cf2030f41c943741a1c
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349214"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863655"
 ---
 # <a name="run-antivirus-scan-api"></a>ウイルス対策スキャン API の実行
 
@@ -48,7 +48,7 @@ ms.locfileid: "58349214"
 > [!IMPORTANT]
 >
 > - このアクションは、バージョン 1709 以降Windows 10デバイスで使用できます。
-> - Microsoft Defender AV Microsoft Defender ウイルス対策(Microsoft Defender AV) スキャンは、アクティブなウイルス対策ソリューションかどうかに関して、他のウイルス対策ソリューションと一緒に実行できます。 Microsoft Defender AV はパッシブ モードにできます。 詳細については、「互換性」[をMicrosoft Defender ウイルス対策してください](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md)。
+> - ユーザー Microsoft Defender ウイルス対策 (Microsoft Defender AV) スキャンは、アクティブなウイルス対策ソリューションかどうかに関Microsoft Defender ウイルス対策他のウイルス対策ソリューションと一緒に実行できます。 Microsoft Defender ウイルス対策パッシブ モードにできます。 詳細については、「互換性」[をMicrosoft Defender ウイルス対策してください](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md)。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -57,7 +57,7 @@ ms.locfileid: "58349214"
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
 アプリケーション|Machine.Scan|'スキャン マシン'
-委任 (職場または学校のアカウント)|Machine.Scan|'スキャン マシン'
+委任 (職場または学校アカウント)|Machine.Scan|'スキャン マシン'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
@@ -73,7 +73,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/runAntiVirusScan
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**
 Content-Type|string|application/json
@@ -82,7 +82,7 @@ Content-Type|string|application/json
 
 要求本文で、JSON オブジェクトに次のパラメーターを指定します。
 
-パラメーター|種類|説明
+パラメーター|型|説明
 :---|:---|:---
 コメント|文字列|アクションに関連付けるコメント。 **必須**
 ScanType|String|スキャンの種類を定義します。 **必須**

@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 262c68e517bb088af7ca3fa814a788c9303adf22
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 8f98a9b942f65a1c60708c4d4bfa756ab7d8fc2a
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58548692"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863748"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>インシデントを調査Microsoft 365 Defender
 
@@ -71,7 +71,7 @@ Microsoft 365 Defender、デバイス、ユーザー、およびメールボッ�
 | Section | 説明 |
 |:-------|:-----|
 | アラートとカテゴリ | キル チェーンに対する攻撃の進行状況を視覚的および数値的に表示します。 他の Microsoft セキュリティ製品と同様に、Microsoft 365 Defender CK フレームワークの[MITRE ATT &trade;&配置](https://attack.mitre.org/)されます。 アラートのタイムラインには、アラートが発生した時系列の順序と、それぞれの状態と名前が表示されます。 |
-| スコープ |  影響を受けたデバイス、ユーザー、メールボックスの数を表示し、リスク レベルと調査の優先度の順にエンティティを一覧表示します。 |
+| 範囲 |  影響を受けたデバイス、ユーザー、メールボックスの数を表示し、リスク レベルと調査の優先度の順にエンティティを一覧表示します。 |
 | 証拠 | インシデントの影響を受けるエンティティの数を表示します。 |
 | インシデント情報 | タグ、状態、重大度などのインシデントのプロパティを表示します。 |
 |||
@@ -176,6 +176,26 @@ Microsoft 365 Defender、デバイス、ユーザー、およびメールボッ�
 Microsoft 365 Defenderアラート内のすべてのインシデントでサポートされているイベントと不審なエンティティを自動的に調査し、重要な電子メール、ファイル、プロセス、サービス、IP アドレスなどの情報を提供します。 これにより、インシデントの潜在的な脅威をすばやく検出してブロックできます。
 
 分析された各エンティティには、評決 (悪意のある、疑わしい、クリーン) と修復状態がマークされます。 これにより、インシデント全体の修復状態と、次に実行できる手順を理解できます。
+
+## <a name="graph-preview"></a>Graph (プレビュー)
+
+**[Graph]** タブには、攻撃の全範囲、攻撃がネットワーク経由で時間の間にどのように広がったか、開始した場所、攻撃者がどこまで攻撃を行ったかが表示されます。 攻撃の一部であるさまざまな不審なエンティティを、ユーザー、デバイス、メールボックスなどの関連資産と接続します。 
+
+[オプション] **Graph** から、次の方法を実行できます。
+
+1. 時間の間に発生したアラートとグラフ上のノードを再生して、攻撃の時系列を把握します。
+
+<!--
+   :::image type="content" source="../../media/investigate-incidents/incident-graph-play.png" alt-text="Example of playing the alerts and nodes on the Graph page":::
+--> 
+
+2. エンティティ ウィンドウを開き、エンティティの詳細を確認し、ファイルの削除やデバイスの分離などの修復アクションに対応できます。
+ 
+   :::image type="content" source="../../media/investigate-incidents/incident-graph-entity-pane.png" alt-text="[エンティティ] ページのエンティティ ウィンドウGraph例":::
+
+3. 関連するエンティティに基づいてアラートを強調表示します。
+ 
+   :::image type="content" source="../../media/investigate-incidents/incident-graph-alert.png" alt-text="[通知] ページの警告のGraph例":::
 
 ## <a name="next-steps"></a>次の手順
 

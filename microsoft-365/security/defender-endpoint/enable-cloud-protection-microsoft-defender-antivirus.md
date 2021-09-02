@@ -1,6 +1,6 @@
 ---
-title: クラウドで配信される保護をオン Microsoft Defender ウイルス対策にする
-description: クラウドによる保護を有効にし、高速かつ高度な保護機能を利用できます。
+title: クラウド保護をオンMicrosoft Defender ウイルス対策
+description: クラウド保護を有効にし、高速かつ高度な保護機能を利用できます。
 keywords: Microsoft Defender ウイルス対策マルウェア対策、セキュリティ、クラウド、一目でブロックする
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -10,48 +10,43 @@ localization_priority: normal
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
-ms.date: 06/17/2021
-ms.reviewer: ''
+ms.date: 08/31/2021
+ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: c7a7b3a09a8e8c7cc1a20beab8e2a895702eea27
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 82b773488fffb5b37390cc72043c1b011c5c6685
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58595340"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863943"
 ---
-# <a name="turn-on-cloud-delivered-protection"></a>クラウドによる保護を有効にする
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+# <a name="turn-on-cloud-protection-in-microsoft-defender-antivirus"></a>クラウド保護をオンMicrosoft Defender ウイルス対策
 
 **適用対象:**
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- Microsoft Defender ウイルス対策
 
-> [!NOTE]
-> クラウド Microsoft Defender ウイルス対策は、ネットワークとエンドポイントに更新された保護を提供するためのメカニズムです。 クラウド サービスと呼ばれるが、単にクラウドに保存されているファイルの保護ではありません。むしろ、分散リソースと機械学習を使用して、従来のセキュリティ インテリジェンス更新プログラムよりもはるかに高速な速度でエンドポイントに保護を提供します。
+[クラウド保護は、Microsoft Defender ウイルス対策、](cloud-protection-microsoft-defender-antivirus.md)リアルタイム、インテリジェントな保護を提供します。 クラウド保護は既定で有効にする必要があります。ただし、組織のニーズに合わせてクラウド保護を構成できます。
 
-Microsoft Defender ウイルス対策は、複数の検出および防止テクノロジを使用して、正確でリアルタイムでインテリジェントな保護を提供します。 Microsoft Defender for Endpoint 次世代保護の中核となる高度なテクノロジ[を知る](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)。
+## <a name="methods-to-configure-cloud-protection"></a>クラウド保護を構成する方法
 
-クラウドによる保護Microsoft Defender ウイルス対策オンまたはオフを切り替える方法は、次に示します。
+次のいずれかの方法Microsoft Defender ウイルス対策使用して、クラウド保護のオンとオフを切り替えます。
 
-- Microsoft Intune
-- Microsoft エンドポイント マネージャー
+- Microsoft エンドポイント マネージャー、構成マネージャー Microsoft Intune含む
 - グループ ポリシー
-- PowerShell コマンドレット。
+- PowerShell コマンドレット
 
- また、アプリを使用して個々のクライアントで有効またはWindows セキュリティすることもできます。
+また、アプリを使用して、個々のエンドポイントでクラウド保護を有効またはWindows セキュリティすることもできます。 
 
-クラウド[で配信される保護の](cloud-protection-microsoft-defender-antivirus.md)概要については、「Microsoft クラウドによる保護を使用するMicrosoft Defender ウイルス対策」を参照してください。
-
-エンドポイントがクラウド配信保護サービスに接続できるネットワーク接続要件の詳細については、「ネットワーク接続の構成と検証」を [参照してください](configure-network-connections-microsoft-defender-antivirus.md)。
+エンドポイントがクラウド保護サービスに接続できるよう、特定のネットワーク接続要件の詳細については、「ネットワーク接続の構成と検証」を [参照してください](configure-network-connections-microsoft-defender-antivirus.md)。
 
 > [!NOTE]
-> このWindows 10、このトピックで説明する **Basic** レポート オプションと **Advanced** レポート オプションの違いはありません。 これは従来の違いであり、どちらかの設定を選択すると、クラウドによる保護の同じレベルになります。 共有される情報の種類や量に違いはありません。 収集する情報の詳細については [、「Microsoft Privacy Statement」を参照してください](https://go.microsoft.com/fwlink/?linkid=521839)。
+> このWindows 10、このトピックで説明する **Basic** レポート オプションと **Advanced** レポート オプションの違いはありません。 これは従来の違いであり、どちらかの設定を選択すると、クラウド保護の同じレベルになります。 共有される情報の種類や量に違いはありません。 収集する情報の詳細については [、「Microsoft Privacy Statement」を参照してください](https://go.microsoft.com/fwlink/?linkid=521839)。
 
-## <a name="use-intune-to-turn-on-cloud-delivered-protection"></a>Intune を使用してクラウド配信の保護を有効にする
+## <a name="use-intune-to-turn-on-cloud-protection"></a>Intune を使用してクラウド保護を有効にする
 
 1. 管理センター ( ) Microsoft エンドポイント マネージャーに移動し [https://endpoint.microsoft.com](https://endpoint.microsoft.com) 、ログインします。
 
@@ -67,7 +62,7 @@ Microsoft Defender ウイルス対策は、複数の検出および防止テク�
 
 Intune デバイス プロファイルの作成および構成方法など、Intune デバイス プロファイルの詳細については、「デバイス プロファイルのMicrosoft Intune[参照してください。](/intune/device-profiles)
 
-## <a name="use-microsoft-endpoint-manager-to-turn-on-cloud-delivered-protection"></a>クラウドMicrosoft エンドポイント マネージャー保護を有効にする方法
+## <a name="use-microsoft-endpoint-manager-to-turn-on-cloud-protection"></a>クラウドMicrosoft エンドポイント マネージャーを有効にする
 
 1. 管理センター ( ) Microsoft エンドポイント マネージャーに移動し [https://endpoint.microsoft.com](https://endpoint.microsoft.com) 、ログインします。
 
@@ -86,7 +81,7 @@ Intune デバイス プロファイルの作成および構成方法など、Int
 
 マルウェア対策ポリシーの構成Microsoft Endpoint Configuration Manager詳細については、「マルウェア対策ポリシーを作成および展開する方法[: クラウド保護サービス」を参照してください](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)。
 
-## <a name="use-group-policy-to-turn-on-cloud-delivered-protection"></a>グループ ポリシーを使用してクラウド配信の保護を有効にする
+## <a name="use-group-policy-to-turn-on-cloud-protection"></a>グループ ポリシーを使用してクラウド保護を有効にする
 
 1. グループ ポリシー管理デバイスで、グループ ポリシー [管理](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))コンソールを開き、構成するグループ ポリシー オブジェクトを右クリックし、[編集] を選択 **します**。
 
@@ -94,24 +89,24 @@ Intune デバイス プロファイルの作成および構成方法など、Int
 
 3. [管理 **用テンプレート] を選択します**。
 
-4. ツリーを展開して **、MAPS Windowsコンポーネント> Microsoft Defender ウイルス対策 >します。**
+4. ツリーを展開して **、MAPS Windowsコンポーネント**  >  **Microsoft Defender ウイルス対策 >します。**
 
-5. [Microsoft **MAPS に参加する] をダブルクリックします**。 オプションがオンになっていることを確認し、[基本マップ] または **[高度なマップ** ] **に設定します**。 **[OK]** を選択します。
+5. [Microsoft **MAPS に参加する] をダブルクリックします**。 オプションがオンになっていることを確認し、[基本マップ] または **[高度なマップ** ] **に設定します**。 **[OK]** をクリックします。
 
 6. 詳細な分析が **必要な場合は、[ファイル サンプルの送信] をダブルクリックします**。 最初のオプションが [有効] に設定 **され** 、他のオプションが次のどちらかに設定されている必要があります。
-    1. **安全なサンプルの送信** (1)
-    2. **すべてのサンプルを送信** する (3)
 
-        > [!NOTE]
-        > [ **安全なサンプルを送信する** (1)] オプションは、ほとんどのサンプルが自動的に送信されるという意味です。 個人情報が含まれている可能性があるファイルは、引き続きプロンプトが表示され、追加の確認が必要です。
-        >
-        > オプションを Always **Prompt** (0) に設定すると、デバイスの保護状態が低下します。 [送信しない **]** (2) に設定 [](configure-block-at-first-sight-microsoft-defender-antivirus.md)すると、Microsoft Defender for Endpoint の一目でブロック機能が機能しません。
+   - **安全なサンプルの送信** (1)
+   - **すべてのサンプルを送信** する (3)
 
-7. **[OK]** を選択します。
+   >[!NOTE]
+   > [ **安全なサンプルを送信する** (1)] オプションは、ほとんどのサンプルが自動的に送信されるという意味です。 個人情報が含まれている可能性があるファイルは、引き続きプロンプトが表示され、追加の確認が必要です。
+   > オプションを Always **Prompt** (0) に設定すると、デバイスの保護状態が低下します。 [送信しない **]** (2) に設定 [](configure-block-at-first-sight-microsoft-defender-antivirus.md)すると、Microsoft Defender for Endpoint の一目でブロック機能が機能しません。
 
-## <a name="use-powershell-cmdlets-to-turn-on-cloud-delivered-protection"></a>PowerShell コマンドレットを使用してクラウド配信の保護を有効にする
+7. **[OK]** をクリックします。
 
-次のコマンドレットは、クラウド配信の保護を有効にできます。
+## <a name="use-powershell-cmdlets-to-turn-on-cloud-protection"></a>PowerShell コマンドレットを使用してクラウド保護を有効にする
+
+次のコマンドレットは、クラウド保護を有効にできます。
 
 ```PowerShell
 Set-MpPreference -MAPSReporting Advanced
@@ -126,7 +121,7 @@ PowerShell を Microsoft Defender ウイルス対策と一緒に使用する方�
 > [!WARNING]
 > **[-SubmitSamplesConsent] を** 設定するか、デバイス `NeverSend` `AlwaysPrompt` の保護レベルを下げる。 さらに、Microsoft Defender for Endpoint の一目でブロック機能が機能しない場合に `NeverSend` 設定します。 [](configure-block-at-first-sight-microsoft-defender-antivirus.md)
 
-## <a name="use-windows-management-instruction-wmi-to-turn-on-cloud-delivered-protection"></a>クラウドWindows保護を有効にする場合は、管理命令 (WMI) を使用します。
+## <a name="use-windows-management-instruction-wmi-to-turn-on-cloud-protection"></a>クラウドWindowsを有効にする場合は、管理命令 (WMI) を使用します。
 
 次の [**プロパティ** に対して **、MSFT_MpPreference**](/previous-versions/windows/desktop/defender/set-msft-mppreference) クラスの Set メソッドを使用します。
 
@@ -137,7 +132,7 @@ SubmitSamplesConsent
 
 許可されるパラメーターの詳細については[、「WMIv2 API のWindows Defender参照してください。](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
-## <a name="turn-on-cloud-delivered-protection-on-individual-clients-with-the-windows-security-app"></a>アプリを使用して個々のクライアントでクラウド配信の保護Windows セキュリティする
+## <a name="turn-on-cloud-protection-on-individual-clients-with-the-windows-security-app"></a>アプリを使用して個々のクライアントでクラウド保護Windows セキュリティする
 
 > [!NOTE]
 > [レポート用 **にローカル** 設定の上書きを構成する] 設定が[無効]に設定されている場合、Windows 設定 のクラウドベースの保護設定はグレー表示され、使用できなくなります。 グループ ポリシーを使った変更は、Windows の設定で設定を更新する前に、最初に個別のエンドポイントに展開する必要があります。
@@ -153,13 +148,10 @@ SubmitSamplesConsent
 > [!NOTE]
 > グループ ポリシーで自動サンプル送信が構成されている場合、設定は灰色表示され、使用できません。
 
-## <a name="related-articles"></a>関連記事
+## <a name="see-also"></a>関連項目
 
-- [クラウド ブロックのタイムアウト期間の構成](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md)
-- [ブロックを一目で構成する](configure-block-at-first-sight-microsoft-defender-antivirus.md)
-- [PowerShell コマンドレットを使った Microsoft Defender ウイルス対策の管理](use-powershell-cmdlets-microsoft-defender-antivirus.md)
-- [Pc のセキュリティWindowsセキュリティで保護Endpoint ProtectionをMicrosoft Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)]
-- [Defender コマンドレット](/powershell/module/defender/)
-- [Microsoft クラウドによる保護を使用する方法は、Microsoft Defender ウイルス対策](cloud-protection-microsoft-defender-antivirus.md)
+- [Microsoft クラウド保護を使用Microsoft Defender ウイルス対策](cloud-protection-microsoft-defender-antivirus.md)
+
 - [マルウェア対策ポリシーを作成して展開する方法: クラウド保護サービス](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)
-- [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)
+
+- [PowerShell コマンドレットを使った Microsoft Defender ウイルス対策の管理](use-powershell-cmdlets-microsoft-defender-antivirus.md)
