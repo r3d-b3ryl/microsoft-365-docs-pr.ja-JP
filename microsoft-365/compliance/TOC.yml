@@ -321,6 +321,8 @@
               href: dlp-use-policies-non-microsoft-cloud-apps.md
             - name: DLP ポリシーの条件と例外
               href: dlp-conditions-and-exceptions.md
+            - name: Exchange Online データ損失防止ポリシーをコンプライアンス センターに移行する (プレビュー)
+              href: dlp-migrate-exo-policy-to-unified-dlp.md
             - name: データ損失防止ポリシーヒントのリファレンス
               href: dlp-policy-tips-reference.md
 - name: 情報ガバナンスの管理
