@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: コンプライアンス センターに新しいソリューションを追加する場合、フィードバックに基づいて既存の機能を更新する場合、新しく更新されたドキュメントを展開する場合でも、Microsoft 365 を使用すると、変化し続けるコンプライアンス環境の上に立ち続けるのに役立ちます。 今月までの予定を確認します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b610c2bb3c3b30900a5316083864d1fc67b85442
-ms.sourcegitcommit: 8ef23d275d7209a705295e2b117d4382b20ad4f7
+ms.openlocfilehash: edcfbb7cbce64cc964d5c32d64c4a176424a0d49
+ms.sourcegitcommit: bdf506c47bfed0f7e639301a7edd94c4eb150150
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58866753"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "58869181"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 コンプライアンス センターの新機能
 
@@ -60,16 +60,11 @@ Microsoft 365 コンプライアンス センター に新しいソリューシ�
 - [アイテムが保持または完全](retention-flowchart.md) に削除される期間を決定するフローチャートで、保持の原則の概念と例を補足します。
 
 ### <a name="sensitivity-labels"></a>秘密度ラベル
-- [](apply-sensitivity-label-automatically.md#recent-enhancements-for-auto-labeling-policies)サポートされている番号の高いサイトとポリシー、すべての OneDrive サイトと SharePoint サイトのサポート、URL で各サイトを入力する代わりに使用可能な SharePoint サイトを選択する機能、およびシミュレーションの改善を含む自動ラベル付けポリシーの機能強化。
+- [](apply-sensitivity-label-automatically.md#recent-enhancements-for-auto-labeling-policies)サイトとポリシーでサポートされる番号の増加、すべての OneDrive サイトと SharePoint サイトのサポート、URL で各サイトを入力する代わりに使用可能な SharePoint サイトを選択する機能、およびシミュレーションの改善を含む自動ラベル付けポリシーの機能強化。
 - アプリの感度ラベル設定Officeラベル付けは、完全データ一致[(EDM) をサポートしています](apply-sensitivity-label-automatically.md#custom-sensitive-information-types-with-exact-data-match)。
 - 既定のラベルが (プレビューで) Power BI[に拡張されました](/power-bi/admin/service-security-sensitivity-label-default-label-policy)。
 - アクティビティ エクスプローラーのOutlook on the webの監査イベントが[](data-classification-activity-explorer-available-events.md)完全に展開され、すべてのプラットフォームのすべての Office アプリで組み込みラベルのユーザー アクティビティが利用できます。
 - サポート[](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)されている機能テーブルには、Windows 用の新しい脚注が追加され、最小バージョンが現在のチャネル用である点と、先行ゼロを省略する古いバージョンを新しいバージョンと比較するヒントが追加されています。
-
-### <a name="retention-and-records-management"></a>保持とレコードの管理
-
-- [アイテムが保持または完全に](retention-flowchart.md)削除される時間を決定するフローチャート。 保持の原則の詳細な視覚的表現を提供します。
-- [保持ラベルを自動的に適用してコンテンツを保持または削除する](apply-retention-labels-automatically.md)使用可能な各条件にExchange保持ラベルSharePoint適用できる状態を明確にするために、新しいテーブルが追加されました。
 
 ## <a name="july-2021"></a>2021 年 7 月
 
