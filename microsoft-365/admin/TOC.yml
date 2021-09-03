@@ -1,13 +1,33 @@
 - name: Microsoft 365 管理センターのヘルプ
   href: index.yml
   items:
-    - name: 概要
+    - name: 作業の開始
       href: setup/index.yml
       items:
         - name: サインアップ
           href: admin-overview/sign-up-for-office-365.md
         - name: Microsoft 365 の試用または購入
           href: ../commerce/try-or-buy-microsoft-365.md
+        - name: Microsoft 365 Business Premium にサインアップする
+          items:
+            - name: サインアップ
+              href: ../business/sign-up.md
+            - name: セットアップ ウィザードを使用して Microsoft 365 Business Premium をセットアップする
+              href: ../business/set-up.md
+        - name: Microsoft 365 Business Standard にサインアップする
+          items:
+            - name: Microsoft 365 Business Standard にサインアップする
+              href: ../admin/simplified-signup/signup-business-standard.md
+            - name: Microsoft 365 Business Standard のセットアップ
+              href: ../admin/simplified-signup/signup-business-standard.md
+            - name: Microsoft 365 Business Standard にユーザーを招待する
+              href: ../admin/simplified-signup/admin-invite-business-standard.md
+            - name: Microsoft 365 Business Standard への招待メールを承諾する
+              href: ../admin/simplified-signup/user-invite-business-standard.md
+            - name: Outlook、Yahoo、Gmail、またはその他のアカウントを使用して、Microsoft 365 Business Standard サブスクリプション組織への招待メールを承諾する
+              href: ../admin/simplified-signup/user-invite-msa-nodomain-join.md
+            - name: データを Microsoft 365 Business Standard サブスクリプションに移行する
+              href: ../admin/simplified-signup/migrate-data-business-standard.md
         - name: セットアップを計画する
           href: setup/plan-your-setup.md
         - name: Windows 365 Business の計画
@@ -25,7 +45,7 @@
             - name: Microsoft 365 Business Standard
               href: setup/setup-business-standard.md
             - name: Microsoft 365 Business Premium
-              href: setup/setup.md
+              href: setup/business-set-up.md
             - name: Microsoft 365 Apps for business
               href: setup/setup-apps-for-business.md
         - name: セットアップのページとウィザードについて

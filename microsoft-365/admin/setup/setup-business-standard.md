@@ -1,9 +1,9 @@
 ---
-title: Microsoft 365 Business Standard のセットアップ
+title: 新規ドメインまたは既存のドメインを使用して Microsoft 365 Business Standard を設定する
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -26,36 +26,42 @@ search.appverid:
 - MOE150
 - BEA160
 description: Microsoft 365 Business Standard を購入するときに、所有するドメインを使用するか、サインアップ時に購入するかを選択することができます。
-ms.openlocfilehash: e23d33bde473cd92ccf585db05593240cc48cea5
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: abb818b17ea5259b6e7015f73afb386e4515ac2f
+ms.sourcegitcommit: 8ef23d275d7209a705295e2b117d4382b20ad4f7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394758"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58866765"
 ---
-# <a name="set-up-microsoft-business-standard"></a>Microsoft Business Standard をセットアップする
+# <a name="set-up-microsoft-365-business-standard-with-a-new-or-existing-domain"></a>新規ドメインまたは既存のドメインを使用して Microsoft 365 Business Standard を設定する
 
+Microsoft 365 Business Standard を購入するときに、所有するドメインを追加するか、購入するかを選択することができます。 [Microsoft 365 Business Standard サブスクリプションのサインアップ](../simplified-signup/signup-business-standard.md)をチェックアウトします。
 
+この記事では、既に所有している既存のドメインを追加するか、または新しいドメインを購入する手順について説明します。 サインアップ時に新しいドメインを購入した場合、お客様のドメインはすべてセットアップされており、[[ユーザーを追加してライセンスを割り当てる](#add-users-and-assign-licenses)] に移動することができます。
 
-## <a name="add-your-domain-to-personalize-sign-in"></a>ドメインを追加してサインインをカスタマイズする
+## <a name="before-you-begin"></a>始める前に
 
-Microsoft 365 Business Standard を購入するときに、所有するドメインを使用するか、サインアップ時に購入するかを選択することができます。
+ドメインを追加、変更、または削除するには、グローバル管理者である必要があります。 詳細については、「[管理者の役割について](../add-users/about-admin-roles.md)」を参照してください。
 
-- サインアップ時に新しいドメインを購入した場合、お客様のドメインはすべてセットアップされており、[[ユーザーを追加してライセンスを割り当てる](#add-users-and-assign-licenses)] に移動することができます。
+> [!IMPORTANT]
+> Microsoft 365 for business にサインアップするユーザー (通常はビジネス所有者) は、自動的に組織の技術管理者になります。 Microsoft 365 のサービスを管理するサポートが必要な場合は、他のユーザーを管理者として追加することができます。 詳細については、「[管理者を追加する](../../business-video/add-admin.md)」をチェックアウトしてください。
 
-1. グローバル管理者の資格情報を使用して、[Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。 
+## <a name="watch-add-an-existing-domain-to-your-microsoft-365-business-standard-subscription"></a>注目: 既存のドメインを Microsoft 365 Business Standard サブスクリプションに追加します。
 
-2. [**セットアップに移動**] を選択して、ウィザードを開始します。
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxApu]
 
-3. [**Office アプリのインストール**] ページでは、オプションで自分のコンピューターにアプリをインストールすることができます。
-    
-4. **ドメインの追加** ステップで、使用するドメイン名 (Contoso.com など) を入力します。
+## <a name="steps-add-an-existing-domain-to-your-microsoft-365-business-standard-subscription"></a>手順: 既存のドメインを Microsoft 365 Business Standard サブスクリプションに追加します。
+
+1. Microsoft 365 Business Standard サインアップの **[サインインする方法]** ページで、**新しいビジネス メール アカウントを作成する (詳細設定)** を選択します。
+
+2. [**Office アプリのインストール**] ページでは、オプションで自分のコンピューターにアプリをインストールすることができます。
+
+3. **ドメインの追加** ステップで、使用するドメイン名 (Contoso.com など) を入力します。
 
     > [!IMPORTANT]
     > サインアップ時にドメインを購入した場合、ここでは **ドメインの追加** ステップは表示されません。[ユーザーの追加](#add-users-and-assign-licenses) に進んでください。
 
-    
-4. ウィザードの手順に従って[任意の DNS ホスティング プロバイダーで Office 365 用の DNS レコードを作成](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)し、ドメインの所有を確認します。 ドメイン ホストがわかっている場合は、「[Microsoft 365 にドメインを追加する](/microsoft-365/admin/setup/add-domain)」も参照してください。
+4. 手順に従って[任意の DNS ホスティング プロバイダーで Office 365 用の DNS レコードを作成](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)し、ドメインの所有を確認します。 ドメイン ホストがわかっている場合は、「[Microsoft 365 にドメインを追加する](/microsoft-365/admin/setup/add-domain)」も参照してください。
 
     ご利用のホスティング プロバイダーが GoDaddy または [Domain Connect](/office365/admin/get-help-with-domains/domain-connect) を有効にした別のホストである場合、プロセスは簡単です。サインインし、お客様に代わって Microsoft が認証するよう自動的に求められます。
 
@@ -63,24 +69,19 @@ Microsoft 365 Business Standard を購入するときに、所有するドメイ
 
 ## <a name="add-users-and-assign-licenses"></a>ユーザーを追加してライセンスを割り当てる
 
-ウィザードでユーザーを追加することもできますが、管理センターで[後からユーザーを追加](../add-users/add-users.md)することもできます。 さらに、ローカル ドメイン コントローラーを持っている場合には、[Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-install-express) を使用してユーザーを追加することもできます。
+ウィザードでユーザーを追加することもできますが、管理センターで[後からユーザーを追加](../add-users/add-users.md)することもできます。
 
-## <a name="add-users-in-the-wizard"></a>ウィザードでユーザーを追加する
+追加したユーザーには、Microsoft 365 Business Standard ライセンスが自動的に割り当てられます。
 
-ウィザードで追加したユーザーには、Microsoft 365 Business Standard ライセンスが自動的に割り当てられます。
-
-1. Microsoft 365 Business Basic のサブスクリプションに既存ユーザーがいる場合 (たとえば、Azure AD Connect を使用した場合)、すぐにこれらのユーザーにライセンスを割り当てるオプションが表示されます。続行して、これらのユーザーにもライセンスを追加します。
+1. Microsoft 365 Business Basic のサブスクリプションに既存ユーザーがいる場合、すぐにこれらのユーザーにライセンスを割り当てるオプションが表示されます。続行して、これらのユーザーにもライセンスを追加します。
 
 2. ユーザーを追加した後、資格証明書をそれらの新規ユーザーに共有するオプションが提供されます。それらをプリントアウトや電子メールで通知、またはダウンロードすることができます。
 
 ## <a name="connect-your-domain"></a>ドメインを接続する
-
-> [!NOTE]
-> .onmicrosoft ドメインの使用を選択した場合、またはユーザーの設定に Azure AD Connect を使用した場合、このステップは表示されません。
   
 サービスを設定するには、DNS ホストまたはドメイン レジストラーにあるレコードを更新する必要があります。
   
-1. セットアップ ウィザードでは通常、ユーザーのレジストラーが検出され、レジストラーの Web サイトで NS レコードを更新するための詳しい操作手順へのリンクが表示されます。 表示されない場合には、[任意のドメイン レジストラーで Office 365 をセットアップするためにネームサーバーを変更](../get-help-with-domains/change-nameservers-at-any-domain-registrar.md)します。 
+1. セットアップ ウィザードでは通常、ユーザーのレジストラーが検出され、レジストラーの Web サイトで NS レコードを更新するための詳しい操作手順へのリンクが表示されます。 表示されない場合には、[任意のドメイン レジストラーで Office 365 をセットアップするためにネームサーバーを変更](../get-help-with-domains/change-nameservers-at-any-domain-registrar.md)します。
 
     - 既存の DNS レコード (たとえば、既存の Web サイト) を持っているのに、DNS ホストが [Domain Connect](/office365/admin/get-help-with-domains/domain-connect) に対して有効になっている場合には、[**レコードを追加してもらう**] を選択します。 [**オンライン サービスの選択**] ページで、すべて規定値のまま [**次へ**] を選択し、DNS ホストのページで [**承認**] を選択します。
     - 他の DNS ホストとの間に既存の DNS レコードがある場合 (Domain Connect では有効になっていません)、既存のサービスが接続されたままになっていることを確認するために、自分の DNS レコードを管理したいと思うかもしれません。詳しくは [ドメインの基礎](/office365/admin/get-help-with-domains/dns-basics) を参照してください。
@@ -91,9 +92,21 @@ Microsoft 365 Business Standard を購入するときに、所有するドメイ
 
     セットアップ ウィザードおよび管理センターの **[セットアップ]** ページの詳細については、「[セットアップ ウィザードと [セットアップ] ページの違い](o365-setup-wizard-and-setup-page.md)」を参照してください。
 
+## <a name="watch-set-up-business-email-with-a-new-domain"></a>注目: 新しいドメインを使用してビジネス メールを設定する
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyVVA]
+
+## <a name="steps-set-up-business-email-with-a-new-domain"></a>手順: 新しいドメインを使用してビジネス メールを設定する
+
+1. Microsoft 365 Business Standard サインアップの **[サインインする方法]** ページで、**新しいビジネス メール アカウントを作成する (詳細設定)** を選択します。
+
+2. 手順に従って新しいドメインを購入し、使用するドメイン名 (contoso.com など) を入力します。 ドメインの購入が完了したら、[ユーザーとライセンスを追加](../add-users/add-users.md)すると、管理センターで Office アプリをインストールできます。
+
 ## <a name="finish-setting-up"></a>セットアップを完了する
 
-### <a name="set-up-outlook-for-email"></a>Outlook をメール用にセットアップする
+以下の手順に従って、Outlook、Teams、OneDrive、および Web サイトを設定します。
+
+### <a name="step-set-up-outlook-for-email"></a>手順: Outlook をメール用にセットアップする
 
 1. Windows の [スタート] メニューで、[Outlook] を検索し、選択します。
 
@@ -134,8 +147,14 @@ Microsoft 365 Business Standard を購入するときに、所有するドメイ
 詳細については、「[Outlook でメールをインポートする](https://support.microsoft.com/office/6a3771d4-4c1d-4a25-92a6-0b8e476335de)」を参照してください。
 
 また、Exchange 管理センターを使用して、すべてのユーザーのメールをインポートすることもできます。 詳細については、「[複数のメール アカウントを移行する](/Exchange/mailbox-migration/mailbox-migration)」を参照してください。
-  
-### <a name="use-a-public-website"></a>一般向け Web サイトを使用する
+
+## <a name="set-up-microsoft-teams-and-onedrive-for-business"></a>Microsoft Teams と OneDrive for business の設定
+
+タスク バーで OneDrive クラウド アイコンを選択し、手順に従ってファイルを新しい OneDrive for Business クラウド フォルダーに移動します。 **[次へ]** を選択して、Microsoft Teams を設定します。
+
+1. Microsoft Teams を開き、プロファイル アイコンを選択して、**[職場または学校アカウントを追加する]** を選択します。 手順に従って、新しいアカウントを Teams に追加します。
+
+## <a name="use-a-public-website"></a>一般向け Web サイトを使用する
 
 Microsoft 365 には、ビジネスに使用するための一般向け Web サイトは含まれていません。 Web サイトをセットアップする場合は、GoDaddy や WIX などの Microsoft パートナーの使用を検討してください。
   
@@ -149,5 +168,8 @@ Microsoft 365 には、ビジネスに使用するための一般向け Web サ�
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[Web サイトを作成](../../business-video/create-web-site.md) (ビデオ)\
-[一般法人向け Microsoft 365](../../business-video/index.yml) (リンク ページ)
+[データを Microsoft 365 Business Standard サブスクリプションに移行する](../simplified-signup/migrate-data-business-standard.md)
+
+[Microsoft 365 Business Standard サブスクリプションにサインアップする](../simplified-signup/signup-business-standard.md)
+
+[Microsoft 365 Business Standard サブスクリプションへの招待を承諾する (ユーザー)](../simplified-signup/user-invite-business-standard.md)
