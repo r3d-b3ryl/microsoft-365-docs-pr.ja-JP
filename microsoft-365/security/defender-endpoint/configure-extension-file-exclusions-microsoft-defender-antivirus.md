@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.date: 08/27/2021
-ms.openlocfilehash: 822241ed8010338b21f61ef39e3df1d310ced2ce
-ms.sourcegitcommit: fd348579346522ead16a6bd8ce200a0b8ae8f7d4
+ms.openlocfilehash: 76508ef21b60d4376512f08a07925eca109f68e2
+ms.sourcegitcommit: 8ef23d275d7209a705295e2b117d4382b20ad4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58832016"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58866657"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>ファイル拡張子とフォルダーの場所に基づいて除外を構成および検証する
 
@@ -224,7 +224,6 @@ ExclusionPath
 
 次の表に、システム アカウント環境変数の一覧と説明を示します。
 
-<br>
     
 |このシステム環境変数...|リダイレクト先|
 |---|---|
@@ -268,7 +267,7 @@ ExclusionPath
 |`%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\StartUp`|`C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp`|
 |`%ALLUSERSPROFILE%\Microsoft\Windows\Templates`|`C:\ProgramData\Microsoft\Windows\Templates`|
 |`%ALLUSERSPROFILE%\Start Menu`|`C:\ProgramData\Start Menu`|
-|`%ALLUSERSPROFILE%\Start Menu\Programs`|C:\ProgramData\Start Menu\Programs|
+|`%ALLUSERSPROFILE%\Start Menu\Programs`| `C:\ProgramData\Start Menu\Programs`|
 |`%ALLUSERSPROFILE%\Start Menu\Programs\Administrative Tools`|`C:\ProgramData\Start Menu\Programs\Administrative Tools`|
 |`%ALLUSERSPROFILE%\Templates`|`C:\ProgramData\Templates`|
 |`%LOCALAPPDATA%\Microsoft\Windows\ConnectedSearch\Templates`|`C:\Windows\System32\config\systemprofile\AppData\Local\Microsoft\Windows\ConnectedSearch\Templates`|

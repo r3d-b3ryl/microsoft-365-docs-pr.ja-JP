@@ -17,17 +17,17 @@ search.appverid:
 - MET150
 - MOE150
 - FRP150
-description: '[Microsoft 365 管理センター- 今月追加された機能について学習します。'
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
 - admindeeplinkMAC
-ms.openlocfilehash: f8adf1fe5141d11d4f57eb3c7348b3961815a38d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+description: '[Microsoft 365 管理センター- 今月追加された機能について学習します。'
+ms.openlocfilehash: aa94686b728eabd6da3577f0f44856039ab8288c
+ms.sourcegitcommit: 8ef23d275d7209a705295e2b117d4382b20ad4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567822"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58866681"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>新しい機能Microsoft 365 管理センター
 

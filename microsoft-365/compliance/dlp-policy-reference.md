@@ -19,18 +19,18 @@ ms.collection:
 recommendations: false
 description: DLP ポリシー コンポーネントと構成リファレンス
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: daae280fa4c08a47f74cec6a71ec11ac9739ebd6
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.openlocfilehash: 51eac7b05edeccece3cf45a8396493d84dc3e11f
+ms.sourcegitcommit: 8ef23d275d7209a705295e2b117d4382b20ad4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58684114"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58866669"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>データ損失防止ポリシーリファレンス
 
 データ損失防止 (DLP) ポリシーには、構成できる多くのコンポーネントがあります。 効果的なポリシーを作成するには、各コンポーネントの目的と構成によってポリシーの動作がどのように変化するのかを理解する必要があります。 この記事では、DLP ポリシーの詳細な構造について説明します。
 
-### <a name="policy-templates"></a>ポリシー テンプレート 
+## <a name="policy-templates"></a>ポリシー テンプレート 
 
 DLP ポリシー テンプレートは、次の 4 つのカテゴリに事前に並べ替えされています。
 
@@ -99,7 +99,7 @@ DLP ポリシー テンプレートは、次の 4 つのカテゴリに事前に
 
 
 
-### <a name="locations"></a>場所
+## <a name="locations"></a>場所
 
 <!--This section covers a mapping of data-at-rest, data-in-use, and data-in-motion to the locations/workloads. It introduces the idea that the options that are selected here have a direct impact on the UI that they will encounter further along in the policy creation/edit flow. It will also cover the dependencies between locations (eg. Teams chat and channel requires SharePoint and ODB). It will also include the impact of the different scope settings. eg. If you want the policy to be applied to DEF, but not HIJ, you should configure your include/exclude scopes like this......--> 
 
@@ -107,7 +107,7 @@ DLP ポリシー テンプレートは、次の 4 つのカテゴリに事前に
 DLP ポリシーは、複数の場所にわたって機密情報を含むアイテムを検索して保護できます。
 
 
-|Location  |範囲を含める/除外する  |データ状態  |追加の前提条件 |
+|場所  |範囲を含める/除外する  |データ状態  |追加の前提条件 |
 |---------|---------|---------|---------|
 |Exchangeメールをオンラインで送信する |配布グループ | data-in-motion| いいえ |
 |SharePointサイト   |sites       | data-at-rest </br> data-in-use | いいえ|
@@ -123,14 +123,14 @@ Exchange に特定の配布グループを含めるように選択した場合�
 
 特定の OneDrive アカウントまたはグループを含めるか、除外するかを選択した場合、DLP ポリシーに含めることができるのは、ユーザー アカウントなら 100 までで、グループなら 50 までです。
 
-#### <a name="location-support-for-how-content-can-be-defined"></a>コンテンツの定義方法に関する場所のサポート
+### <a name="location-support-for-how-content-can-be-defined"></a>コンテンツの定義方法に関する場所のサポート
 
 DLP ポリシーは、機密情報の種類 (SIT)、機密ラベル、または保持ラベルに一致して、機密アイテムを検出します。 各場所では、機密性の高いコンテンツを定義するさまざまな方法がサポートされています。 さらに、ポリシー内の場所を組み合わせると、コンテンツの定義方法が 1 つの場所で定義される方法と異なる場合があります。 
 
 > [!IMPORTANT]
 > ポリシーに複数の場所を選択すると、コンテンツ定義カテゴリの "no" 値が "yes" 値よりも優先されます。 たとえば、サイトのみを選択SharePointポリシーは、1 つ以上の SIT、機密ラベル、または保持ラベルによる機密アイテムの検出をサポートします。 ただし、サイトを選択 ***SharePointチャットTeams*** チャネル メッセージの場所を選択すると、ポリシーは SIT による機密性の高いアイテムの検出のみをサポートします。 
 
-|場所|  コンテンツは SIT で定義できます|  コンテンツは、感度ラベルを定義できます|   コンテンツは保持ラベルで定義できます|
+|location|  コンテンツは SIT で定義できます|  コンテンツは、感度ラベルを定義できます|   コンテンツは保持ラベルで定義できます|
 |---------|---------|---------|---------|
 |Exchangeメールをオンラインで送信する|はい| はい|    いいえ|
 |SharePointサイト|   はい|    はい|    はい|
@@ -145,7 +145,7 @@ DLP ポリシーは、機密情報の種類 (SIT)、機密ラベル、または�
 
 
 
-### <a name="rules"></a>ルール
+## <a name="rules"></a>ルール
 
 <!--This section introduces the classifications of content that, when detected, can be protected. Link out to [Learn about sensitive information types]() and [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md#sensitive-information-type-entity-definitions) as well as labels (cross referenced by supporting workload). It will touch on the purpose of multiple conditions, confidence levels (link out to [more on confidence levels](sensitive-information-type-learn-about.md#more-on-confidence-levels)) and confidence levels video. How to use the confidence level to change the behavior of a policy in conjunction with the instance count.  eg. if you want your policy to trigger when it encounters situation DEF, set your conditions like HIJ.-->
 <!--
@@ -167,7 +167,7 @@ DLP ポリシーは、機密情報の種類 (SIT)、機密ラベル、または�
 
  ポリシーには、1 つ以上のルールが含まれる。 ルールは、各ポリシー内の最も高位のルールから順に実行されます。
 
-#### <a name="the-priority-by-which-rules-are-processed"></a>処理するルールの優先度
+### <a name="the-priority-by-which-rules-are-processed"></a>処理するルールの優先度
 
 各ルールには、作成された順序で優先度が割り当てられます。つまり、最初に作成されたルールには第 1 優先順位、2 番目に作成されたルールには 2 番目の優先度が割り当てられます。 
   
@@ -188,14 +188,14 @@ DLP ポリシーは、機密情報の種類 (SIT)、機密ラベル、または�
   
 ![図は、DLP ポリシーに場所とルールが含まれていることを示しています。](../media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
 
-#### <a name="conditions"></a>条件
+### <a name="conditions"></a>条件
 
 条件は包括的であり、ルールで何を探すのか、およびそれらのアイテムが使用されているコンテキストを定義する場所です。 *ルール*&#8212; は、このようなアイテムを見つけ、&#8212; のように使用されている場合は一致し、ポリシー内の残りのアクションはルール &#8212; に対して実行する必要があります。 条件を使用して、さまざまな操作をリスクレベル別に割り当てることができます。 たとえば、組織内で共有されている機密コンテンツは、組織外のユーザーと共有されている機密コンテンツよりリスク レベルが低く、必要なアクションを少なくする、といったことができます。
 
 > [!NOTE]
 > ホストの組織の Active Directory または Azure Active Directory のテナントにゲスト以外のアカウントを持っているユーザーは、組織内のユーザーと見なされます。 
 
-##### <a name="content-contains"></a>コンテンツが含まれている
+#### <a name="content-contains"></a>コンテンツが含まれている
 
  コンテンツに含まれるすべての **場所に条件** が含まれているのがサポートされています。 各コンテンツ タイプの複数のインスタンスを選択し、次の **(論理** OR) 演算子またはすべての **(論理** AND) 演算子を使用して条件をさらに絞り込みできます。
 
@@ -209,11 +209,11 @@ SIT には事前に定義された信頼 [**度が設定されています**](ht
 
 ルールは、選択した感度ラベルと保持ラベル **の有無のみを** 探します。 
 
-##### <a name="condition-context"></a>条件コンテキスト
+#### <a name="condition-context"></a>条件コンテキスト
 
 使用可能なコンテキスト オプションは、選択した場所に応じて変わります。 複数の場所を選択すると、その場所に共通する条件だけが使用できます。
 
-###### <a name="conditions-exchange-supports"></a>条件Exchangeサポートされています。
+##### <a name="conditions-exchange-supports"></a>条件Exchangeサポートされています。
 
 - コンテンツが含まれている
 - コンテンツは、ユーザーから共有Microsoft 365
@@ -255,42 +255,42 @@ SIT には事前に定義された信頼 [**度が設定されています**](ht
 - メッセージの種類は次の値です。
 - メッセージの重要度は、
 
-###### <a name="conditions-sharepoint-supports"></a>サポートSharePoint条件
+##### <a name="conditions-sharepoint-supports"></a>サポートSharePoint条件
  
 - コンテンツが含まれている
 - コンテンツは、ユーザーから共有Microsoft 365
 - ファイル拡張子は
 - 文書のプロパティが
 
-###### <a name="conditions-onedrive-accounts-supports"></a>アカウントOneDriveサポートされる条件
+##### <a name="conditions-onedrive-accounts-supports"></a>アカウントOneDriveサポートされる条件
 
 - コンテンツが含まれている
 - コンテンツは、ユーザーから共有Microsoft 365
 - ファイル拡張子は
 - 文書のプロパティが
 
-###### <a name="conditions-teams-chat-and-channel-messages-support"></a>チャットTeamsチャネル メッセージのサポートに関する条件
+##### <a name="conditions-teams-chat-and-channel-messages-support"></a>チャットTeamsチャネル メッセージのサポートに関する条件
 
 - コンテンツが含まれている
 - コンテンツは、ユーザーから共有Microsoft 365
 
-###### <a name="conditions-devices-supports"></a>デバイスがサポートする条件
+##### <a name="conditions-devices-supports"></a>デバイスがサポートする条件
 
 - コンテンツが含まれる
 - 「監視 [およびアクションを実行できるエンドポイント アクティビティ」を参照してください。](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)
 
-###### <a name="conditions-microsoft-cloud-app-security-support"></a>サポートMicrosoft Cloud App Security条件
+##### <a name="conditions-microsoft-cloud-app-security-support"></a>サポートMicrosoft Cloud App Security条件
 
 - コンテンツが含まれている
 - コンテンツは、ユーザーから共有Microsoft 365
 
-###### <a name="on-premises-repositories"></a>オンプレミス リポジトリ
+##### <a name="on-premises-repositories"></a>オンプレミス リポジトリ
 
 - コンテンツが含まれている
 - ファイル拡張子は
 - 文書のプロパティが
 
-##### <a name="condition-groups"></a>条件グループ
+#### <a name="condition-groups"></a>条件グループ
 
 1 つの SIT で定義されている米国の社会保障番号を含むすべてのコンテンツなど、1 つのことを識別するためのルールが必要な場合があります。 ただし、特定しようとしているアイテムの種類が複雑で定義が困難な多くのシナリオでは、条件の定義に柔軟性が必要になります。
 
@@ -310,7 +310,7 @@ SIT には事前に定義された信頼 [**度が設定されています**](ht
 
 最初のグループには、個人を識別する T を含み、2 番目のグループには医療診断を識別する T を含む。
 
-#### <a name="exceptions"></a>例外
+### <a name="exceptions"></a>例外
 
 ルールでは、例外はポリシーからアイテムを除外するために使用される条件を定義します。 論理的には、包括的な条件とコンテキストの後に評価される排他的な条件。 ルール &#8212; は、このようなアイテムが見つから、それが一致し、ポリシー内の残りのアクションが ... を除いて実行される必要があるように使用されている場合に、ルール &#8212; に伝えます。&#8212; 
 
@@ -328,7 +328,7 @@ SIT には事前に定義された信頼 [**度が設定されています**](ht
 
 - **コンテンツが含** まれている場合を除く 
 
-#### <a name="actions"></a>Actions 
+### <a name="actions"></a>アクション 
 
 包括的な ***conditions** _ および排他例外 _**_ フィルターを介してそれを行 _**_ うアイテムには、ルールで定義されているアクションが適用されます。 アクションをサポートするために必要なオプションを構成する必要があります。 たとえば、[アクセスを制限する] Exchangeを使用して [アクセスを制限する] を選択するか、Microsoft 365 *場所のコンテンツ* を暗号化する * アクションを選択する場合は、次のオプションから選択する必要があります。
 
@@ -342,7 +342,7 @@ SIT には事前に定義された信頼 [**度が設定されています**](ht
 > [!IMPORTANT]
 > SharePoint Online および OneDrive for Business の場所のドキュメントは、ドキュメントが共有されるかどうかに関係なく、機密情報を検出した直後に、すべての外部ユーザーに対して積極的にブロックされ、内部ユーザーは引き続きドキュメントにアクセスできます。
 
-##### <a name="exchange-location-actions"></a>Exchange場所アクション:
+#### <a name="exchange-location-actions"></a>Exchange場所アクション:
 
 - アクセスを制限するか、または場所内のコンテンツMicrosoft 365する
 - ヘッダーの設定
@@ -358,19 +358,19 @@ SIT には事前に定義された信頼 [**度が設定されています**](ht
 - 電子メールの件名の先頭に追加する
 - HTML 免責事項の追加
 
-##### <a name="sharepoint-sites-location-actions"></a>SharePoint場所の操作:
+#### <a name="sharepoint-sites-location-actions"></a>SharePoint場所の操作:
 
 - アクセスを制限するか、または場所内のコンテンツMicrosoft 365する
 
-##### <a name="onedrive-account-locations"></a>OneDriveアカウントの場所:
+#### <a name="onedrive-account-locations"></a>OneDriveアカウントの場所:
 
 - アクセスを制限するか、または場所内のコンテンツMicrosoft 365する
 
-##### <a name="teams-chat-and-channel-messages"></a>Teamsチャットメッセージとチャネル メッセージ
+#### <a name="teams-chat-and-channel-messages"></a>Teamsチャットメッセージとチャネル メッセージ
 
 - アクセスを制限するか、または場所内のコンテンツMicrosoft 365する
 
-##### <a name="devices"></a>デバイス:
+#### <a name="devices"></a>デバイス:
 
 - デバイスのアクティビティを監査またはWindowsする
 
@@ -379,16 +379,16 @@ SIT には事前に定義された信頼 [**度が設定されています**](ht
 
 デバイスの場所には、多数のサブアクティビティ (条件) とアクションが提供されます。 詳細については、「監視およびアクションを実行できるエンドポイント [アクティビティ」を参照してください](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)。 
 
-##### <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security:
+#### <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security:
 
 - アクセスを制限するか、または場所内のコンテンツMicrosoft 365する
 - サード パーティ製アプリの制限
 
-##### <a name="on-premises-repositories"></a>オンプレミスリポジトリ:
+#### <a name="on-premises-repositories"></a>オンプレミスリポジトリ:
 
 - アクセスの制限またはオンプレミス ファイルの削除
 
-##### <a name="actions-available-when-you-combine-locations"></a>場所を結合するときに使用できるアクション
+#### <a name="actions-available-when-you-combine-locations"></a>場所を結合するときに使用できるアクション
 
 ポリシーを適用するExchangeその他の単一の場所を選択した場合は、
 
@@ -427,7 +427,7 @@ AND
 <!-- This section needs to explain that the actions available depend on the locations selected AND that the observed behavior of a policy is produced through an interaction of the configured actions AND the configured status (off, test, apply) of a policy. It will detail the purpose of each of the available actions and the location/desired outcome interaction and provide examples eg. how to use the Restrict Third Party apps in the context of a policy that is applied to endpoints so that users can't use a upload content to a third party site or the interaction of on-premises scanner with restrict access or remove on-premises files.  Also what happens when I select multiple locations? provide abundant examples for most common scenarios-->
 
 
-#### <a name="user-notifications-and-policy-tips"></a>ユーザー通知とポリシーヒント
+### <a name="user-notifications-and-policy-tips"></a>ユーザー通知とポリシーヒント
 
 <!--This section introduces the business need for user notifications, what they are, their benefit, how to use them, how to customize them, and links out to 
 
@@ -505,7 +505,7 @@ Here's what a policy tip looks like in a OneDrive for Business account.
 > The default behavior of a DLP policy, when there is no alert configured, is not to alert or trigger. This applies only to default information types. For custom information types, the system will alert even if there is no action defined in the policy.
 -->
 
-#### <a name="user-overrides"></a>ユーザーの上書き
+### <a name="user-overrides"></a>ユーザーの上書き
 
 ユーザーのオーバーライドの目的は、ユーザーが作業を続行できるよう、Exchange、SharePoint、OneDrive、Teams の機密性の高いアイテムに対する DLP ポリシーブロックアクションを正当化してバイパスする方法をユーザーに与える方法です。 ユーザーの上書きは **、Office 365** サービスのユーザーにポリシー ヒントを使用して通知が有効になっている場合にのみ有効になります。そのため、ユーザーの上書きは通知とポリシーのヒントと手をつないで行きます。 
 
@@ -526,7 +526,7 @@ Here's what a policy tip looks like in a OneDrive for Business account.
 
 - [ユーザーがオーバーライドのために送信した位置合わせを表示する](view-the-dlp-reports.md#view-the-justification-submitted-by-a-user-for-an-override)
 
-#### <a name="incident-reports"></a>インシデント レポート
+### <a name="incident-reports"></a>インシデント レポート
 
 <!--DLP interacts with other M365 information protection services, like IR. Link this to a process outline for triaging/managing/resolving DLP incidents
 
@@ -546,7 +546,7 @@ DLP は、インシデント情報を他Microsoft 365情報保護サービス (�
 
 DLP は、SharePoint Online や OneDrive for Business のアイテムとは異なる方法でメールをスキャンします。 SharePoint Online や OneDrive for Business では、DLP は新しいアイテムだけでなく既存のアイテムもスキャンして、一致が検出される場合は常にインシデント レポートを生成します。 Exchange Online では、DLP は新しいメール メッセージのみをスキャンして、ポリシーとの一致が検出されるとレポートを生成します。 DLP は、メールボックスやアーカイブに保存されている既存のメール アイテムについては、スキャンや一致検出を ***実行しません***。
 
-#### <a name="additional-options"></a>追加オプション
+### <a name="additional-options"></a>追加オプション
 
 ポリシーに複数のルールがある場合は、[追加] オプションを使用して、編集中のルールに一致する場合の追加のルール処理を制御し、ルールの評価の優先度を設定できます。
 

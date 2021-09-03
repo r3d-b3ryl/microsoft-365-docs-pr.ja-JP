@@ -1,5 +1,5 @@
 ---
-title: スコープ認定アプリケーションのインストールと構成ガイド
+title: Microsoft 365 ServiceNow 構成ガイドとの統合をサポートする
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -16,14 +16,14 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: ServiceNow のスコープ認定アプリケーションのインストールと構成ガイド。
-ms.openlocfilehash: f5c562122fafcbb05115519d7841800be3e71a73
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: f21353aa54cfee3b85a6e9d846aa4fce37cc13f5
+ms.sourcegitcommit: 8ef23d275d7209a705295e2b117d4382b20ad4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58531661"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58866723"
 ---
-# <a name="scoped-certified-application-installation-and-configuration-guide"></a>スコープ認定アプリケーションのインストールと構成ガイド
+# <a name="microsoft-365-support-integration-with-servicenow-configuration-guide"></a>Microsoft 365 ServiceNow 構成ガイドとの統合をサポートする
 
 [概要](#overview) 
 
@@ -89,7 +89,7 @@ Microsoft 365サポート統合を使用すると、ヘルプMicrosoft 365、サ
 
 **質問#2** 複数のテナントがある場合は、ServiceNow 環境と統合された 1 つのテナントを使用して、サポート統合Microsoft 365計画していますか?
 
-次の表は、これらの質問に対する回答と、サポート統合のセットアップ方法に関する特定の手順へのリンクに応じて、使用可能な機能Microsoft 365示します。 各機能の説明については、「サポート[統合Microsoft 365参照してください](https://store.servicenow.com/sn_appstore_store.do#!/store/application/6d05c93f1b7784507ddd4227cc4bcb9f)。
+上記の質問に対する回答に応じて、次の表に、使用可能な機能と、サポート統合の設定方法Microsoft 365示します。 各機能の説明については、「サポート[統合Microsoft 365参照してください](https://store.servicenow.com/sn_appstore_store.do#!/store/application/6d05c93f1b7784507ddd4227cc4bcb9f)。
 
 |質問#1回答|質問#2回答|利用できる機能は何ですか?|構成手順|
 |--- |--- |--- |--- |
@@ -110,11 +110,11 @@ Microsoft 365サポート統合を使用すると、ヘルプMicrosoft 365、サ
 
     1. [アプリの登録] ページに移動し、新しいアプリケーションを作成します。
 
-        [ **この組織ディレクトリ内のアカウントのみ] ({TenantName} のみ – シングル テナント ) を選択します**。
+        [ **この組織ディレクトリ内のアカウントのみ] を選択します ({microsoft-365-tenant-name} のみ – シングル テナント** です。
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image3.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、電子メールの説明が自動的に生成される":::
 
-    1. リダイレクト URL の追加: `https://&lt;your-servicenow-instance&gt;.service-now.com/oauth\_redirect.do` .
+    1. リダイレクト URL の追加: `https://{your-servicenow-instance}.service-now.com/oauth_redirect.do` .
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image4.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、電子メールの説明が自動的に生成される":::
 
@@ -122,13 +122,13 @@ Microsoft 365サポート統合を使用すると、ヘルプMicrosoft 365、サ
 
 2. \[ServiceNow 管理者であるユーザー ServiceNow で \] 送信 OAuth プロバイダーを設定します。
 
-    1. [System **OAuth アプリケーション**  >  **レジストリ] に移動します**。
-
     1. スコープがグローバルに設定されていない場合は、開発者設定を開き、グローバル  >    >  に **切り替えます**。
 
-     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image5.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、チャット、またはテキスト メッセージ説明が自動的に生成される":::
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image5.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、チャット、またはテキスト メッセージ説明が自動的に生成される":::
 
-    1. サード パーティの OAuth プロバイダーにアクセスする方法を選択して、Connect値を使用して新しい[アプリケーションを作成します](https://dev77417.service-now.com/wizard_view.do?sys_action=sysverb_wizard_ans&WIZARD:action=follow&wiz_referring_url=oauth_entity_list.do?sys_id=-1@99@sys_target=oauth_entity@99@sysparm_fixed_query=@99@sysparm_group_sort=@99@sysparm_parent=2c7cab53d7232100f20bc8170e61036b@99@sysparm_query=type%3dclient%5eORtype%3doauth_provider@99@sysparm_target=@99@sysparm_view=&wiz_collection_key=&wiz_collectionID=&wiz_collection=&wiz_collection_related_field=&wiz_view=&wiz_action=sysverb_new&sys_id=79ce2f53d7232100f20bc8170e610361&sysparm_query=type=client%5eORtype=oauth_provider&sysparm_target=&sys_target=oauth_entity)。
+    1. [System **OAuth アプリケーション**  >  **レジストリ] に移動します**。
+
+    1. サード パーティの OAuth プロバイダーにアクセスする方法を選択して、Connect値を使用して新しい **アプリケーションを作成します**。
 
     - クライアント ID: 手順 1 で作成したアプリケーションの \# クライアント ID
 
@@ -136,19 +136,19 @@ Microsoft 365サポート統合を使用すると、ヘルプMicrosoft 365、サ
 
     - 既定の付与の種類: クライアント資格情報
 
-    - トークン URL: `https://login.microsoftonline.com/{M365\_Tenant\_Name}/oauth2/token`
+    - トークン URL: `https://login.microsoftonline.com/{microsoft-365-tenant-name}/oauth2/token`
 
-    - リダイレクト URL:
+    - リダイレクト URL: https://{service-now-instance-name}.service-now.com/auth_redirect.do
 
-    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image6.png" alt-text="グラフィカル ユーザー インターフェイス、アプリケーションの説明が自動的に生成される":::
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image6.png" alt-text="グラフィカル ユーザー インターフェイス、アプリケーションの説明が自動的に生成される":::
 
 3. \[ServiceNow 管理者であるユーザー \] 受信 OAuth プロバイダーを設定します。
-
-    1. [System **OAuth アプリケーション**  >  **レジストリ] に移動します**。
 
     1. スコープがグローバルに設定されていない場合は、開発者設定を開き、グローバル  >    >  に **切り替えます**。
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image5.png" alt-text="グラフィカル ユーザー インターフェイス、アプリケーションの説明が自動的に生成される":::
+
+    1. [System **OAuth アプリケーション**  >  **レジストリ] に移動します**。
 
     1. [外部クライアント用に OAuth API エンドポイントを作成する] **を選択して、新しいアプリケーションを作成します**。 受信 OAuth プロバイダーに名前を付け、他のフィールドを既定値のままにします。
 
@@ -162,7 +162,7 @@ Microsoft 365サポート統合を使用すると、ヘルプMicrosoft 365、サ
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image8.png" alt-text="グラフィカル ユーザー インターフェイス、アプリケーションの説明が自動的に生成される":::
 
-### <a name="optional-allow-the-services-ips-of-microsoft-365-support-integration"></a>\[オプション \] サービスの Ips をサポート統合Microsoft 365許可する
+### <a name="optional-allow-the-services-ips-of-microsoft-365-support-integration"></a>\[オプション \] サービスの IPs をサポート統合Microsoft 365許可する
 
 会社が独自のポリシーでインターネット アクセスを制限している場合は、以下の IP アドレスを受信 API アクセスと送信 API アクセスの両方に許可することで、Microsoft 365 サポート統合のサービスに対するネットワーク アクセスを有効にしてください。
 
@@ -250,7 +250,7 @@ Microsoft 365サポート統合を使用すると、ヘルプMicrosoft 365、サ
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image17.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーションの説明が自動的に生成される":::
 
-    1. [組織プロファイルMicrosoft 365 [管理ポータル](https://admin.microsoft.com/)  >    >  **設定設定**  >  **に移動します**。
+    1. [組織の設定Microsoft 365 [管理ポータル](https://admin.microsoft.com/)  >  **設定**  >  **組織**  >  **のプロファイル] に移動します**。
 
     1. サポート統合設定を設定します。
 
@@ -288,14 +288,14 @@ Microsoft 365サポート統合を使用すると、ヘルプMicrosoft 365、サ
 
 Microsoft 365サポート統合が有効になっているのは、次のいずれかの役割を持つユーザーのみです。
 
-- [x \_ mioms \_ m365 \_ assis.insights \_ ユーザー](https://ven01306.service-now.com/sys_user_role.do?sys_id=802b2adfdb4cac507c80230bd3961911&sysparm_record_target=sys_user_role&sysparm_record_row=2&sysparm_record_rows=2&sysparm_record_list=nameSTARTSWITHx_mioms_m365%5EORDERBYname)
+- x \_ mioms \_ m365 \_ assis.insights \_ ユーザー
 
-- [x \_ mioms \_ m365 \_ assis.administrator](https://ven01306.service-now.com/sys_user_role.do?sys_id=4b25c9fb1b7784507ddd4227cc4bcb3a&sysparm_record_target=sys_user_role&sysparm_record_row=1&sysparm_record_rows=2&sysparm_record_list=nameSTARTSWITHx_mioms_m365%5EORDERBYname)
+- x \_ mioms \_ m365 \_ assis.administrator
 
 > [!NOTE]
 > 役割 x \_ mioms m365 assis.insights ユーザー ロールを持つユーザーは、 \_ \_ \_ サービス正常性インシデント、推奨されるソリューションを参照できます。 ロール x \_ mioms \_ m365 assis.administrator を持つユーザーは、サポートを受Microsoft 365 \_ できます。
 
-11. \[オプション ServiceNow 管理者リンクを持つ \] \[ \] ユーザー Microsoft 365 管理します。
+11. \[オプション \] \[ 役割を持つユーザー x_mioms_m365_assis.administrator \] リンク Microsoft 365 管理 アカウントです。
 
 ユーザーが役割 x \_ mioms \_ m365 assis.administrator を持ち、Microsoft 365 サポート ケースを管理するために異なる Microsoft 365 アカウントを使用している場合は、Microsoft 365 サポート \_ > リンク アカウントに移動して、Microsoft 365 管理者メールを設定する必要があります。
 
@@ -313,11 +313,11 @@ Microsoft 365サポート統合が有効になっているのは、次のいず�
 
     1. [アプリの登録 **] ページに移動し** 、新しいアプリケーションを作成します。
 
-        [ **この組織ディレクトリ内のアカウントのみ] ({TenantName} のみ – シングル テナント ) を選択します**。
+        [ **この組織ディレクトリ内のアカウントのみ] を選択します ({microsoft-365-tenant-name} のみ – シングル テナント** です。
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image3.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、電子メールの説明が自動的に生成される":::
 
-    1. リダイレクト URL の追加: `https://&lt;your-servicenow-instance&gt;.service-now.com/auth\_redirect.do`
+    1. リダイレクト URL の追加: `https://{your-servicenow-instance}.service-now.com/auth_redirect.do`
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image4.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、電子メールの説明が自動的に生成される":::
 
@@ -329,7 +329,7 @@ Microsoft 365サポート統合が有効になっているのは、次のいず�
 
     1. [アプリの **登録] に移動し** 、新しいアプリケーションを作成します。
 
-        [ **この組織ディレクトリ内のアカウントのみ] ({TenantName} のみ – シングル テナント ) を選択します**。
+        [ **この組織ディレクトリ内のアカウントのみ] を選択します ({microsoft-365-tenant-name} のみ – シングル テナント** です。
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image22.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、電子メールの説明が自動的に生成される":::
 
@@ -340,7 +340,8 @@ Microsoft 365サポート統合が有効になっているのは、次のいず�
     1. テナント資格情報を[使用して Azure Portal](https://portal.azure.com/) Microsoft 365ログオンします。
 
     1. [アプリの登録 **] ページに移動し** 、新しいアプリケーションを作成します。
-    1. [ **この組織ディレクトリ内のアカウントのみ] ({TenantName} のみ – シングル テナント ) を選択します**。
+        
+        [ **この組織ディレクトリ内のアカウントのみ] を選択します ({microsoft-365-tenant-name} のみ – シングル テナント** です。
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image23.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、電子メールの説明が自動的に生成される":::
 
@@ -348,13 +349,13 @@ Microsoft 365サポート統合が有効になっているのは、次のいず�
 
 4. \[ServiceNow 管理者であるユーザー ServiceNow で \] 送信 OAuth プロバイダーを設定します。
 
+    1. スコープがグローバルに設定されていない場合は、開発者設定を開き、グローバル  >    >  に **切り替えます**。
+
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image5.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、チャット、またはテキスト メッセージ説明が自動的に生成される":::
+
     1. [System **OAuth アプリケーション**  >  **レジストリ] に移動します**。
 
-    2. スコープがグローバルに設定されていない場合は、開発者設定を開き、グローバル  >    >  に **切り替えます**。
-
-    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image5.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、チャット、またはテキスト メッセージ説明が自動的に生成される":::
-
-    3. サードパーティの OAuth プロバイダーにアクセスする方法を選択してConnectを使用して、新しい[アプリケーションを作成します](https://dev77417.service-now.com/wizard_view.do?sys_action=sysverb_wizard_ans&WIZARD:action=follow&wiz_referring_url=oauth_entity_list.do?sys_id=-1@99@sys_target=oauth_entity@99@sysparm_fixed_query=@99@sysparm_group_sort=@99@sysparm_parent=2c7cab53d7232100f20bc8170e61036b@99@sysparm_query=type%3dclient%5eORtype%3doauth_provider@99@sysparm_target=@99@sysparm_view=&wiz_collection_key=&wiz_collectionID=&wiz_collection=&wiz_collection_related_field=&wiz_view=&wiz_action=sysverb_new&sys_id=79ce2f53d7232100f20bc8170e610361&sysparm_query=type=client%5eORtype=oauth_provider&sysparm_target=&sys_target=oauth_entity)。
+    1. サードパーティの OAuth プロバイダーにアクセスする方法を選択してConnectを使用して、新しい **アプリケーションを作成します**。
 
         - クライアント ID: 前提条件 [(AAD OAuth トークン)](#prerequisites-aad-oauth-token) の手順 1 で作成されたアプリケーションのクライアント \# ID。
 
@@ -362,19 +363,19 @@ Microsoft 365サポート統合が有効になっているのは、次のいず�
 
         - 既定の付与の種類: クライアント資格情報。
 
-        - トークン URL: `https://login.microsoftonline.com/{M365\_Tenan\_Name}/oauth2/token`
+        - トークン URL: `https://login.microsoftonline.com/{microsoft-365-tenant-name}/oauth2/token`
 
         - リダイレクト URL:
 
-        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image6.png" alt-text="グラフィカル ユーザー インターフェイス、アプリケーションの説明が自動的に生成される":::
+            :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image6.png" alt-text="グラフィカル ユーザー インターフェイス、アプリケーションの説明が自動的に生成される":::
 
-5. \[ServiceNow 管理者であるユーザー ServiceNow で OIDC プロバイダーを構成し、オンライン ドキュメントを参照し、それ以外の場合は手順 \] 7 に進みます。 [](https://docs.servicenow.com/bundle/quebec-platform-administration/page/administer/security/task/add-OIDC-entity.html)
-
-    1. [System **OAuth アプリケーション**  >  **レジストリ] に移動します**。
+5. \[ServiceNow 管理者であるユーザー ServiceNow で OIDC プロバイダーを構成 \] するには、オンライン ドキュメントを [参照してください](https://docs.servicenow.com/bundle/quebec-platform-administration/page/administer/security/task/add-OIDC-entity.html)。
 
     1. スコープがグローバルに設定されていない場合は、開発者設定を開き、グローバル  >    >  に **切り替えます**。
 
-    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image5.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、チャット、またはテキスト メッセージ説明が自動的に生成される":::
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image5.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、チャット、またはテキスト メッセージ説明が自動的に生成される":::
+
+    1. [System **OAuth アプリケーション**  >  **レジストリ] に移動します**。
 
     1. [**新しい**  >  **Open ID を作成する] を選択Connectプロバイダーです**。
 
@@ -382,7 +383,7 @@ Microsoft 365サポート統合が有効になっているのは、次のいず�
 
     - OIDC プロバイダー: Contoso Azure
 
-    - OIDC メタデータ URL: `https://login.microsoftonline.com/{tenant\_name}/.well-known/openid-configuration`
+    - OIDC メタデータ URL: `https://login.microsoftonline.com/{microsoft-365-tenant-name}/.well-known/openid-configuration`
 
     - UserClaim: **appId**
 
@@ -401,7 +402,7 @@ Microsoft 365サポート統合が有効になっているのは、次のいず�
     - OAuth OIDC プロバイダーの構成: 最後の手順で作成した OIDC プロバイダー。
 
     - リダイレクト URL:  
-        `https://{service\_now\_instance}.service-now.com/oauth\_redirect.do`
+        `https://{service-now-instance-name}.service-now.com/oauth_redirect.do`
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image25.png" alt-text="グラフィカル ユーザー インターフェイス、アプリケーションの説明が自動的に生成される":::
 
@@ -411,7 +412,7 @@ Microsoft 365サポート統合が有効になっているのは、次のいず�
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image26.png" alt-text="グラフィカル ユーザー インターフェイス、アプリケーションの説明が自動的に生成される":::
 
-### <a name="optional-allow-the-services-ips-of-microsoft-365-support-integration"></a>\[オプション \] サービスの Ips をサポート統合Microsoft 365許可する
+### <a name="optional-allow-the-services-ips-of-microsoft-365-support-integration"></a>\[オプション \] サービスの IPs をサポート統合Microsoft 365許可する
 
 会社が独自のポリシーを使用してインターネット アクセスを制限している場合は、次の IP アドレスを受信 API アクセスと送信 API アクセスの両方に許可することで、Microsoft 365 サポート統合のサービスのネットワーク アクセスを有効にしてください。
 
@@ -473,7 +474,7 @@ Microsoft 365サポート統合が有効になっているのは、次のいず�
 
     1. 前提条件 [(AAD OAuth トークン)](#prerequisites-aad-oauth-token) の手順 3 で作成されたアプリケーションのクライアント ID を入力し、[ \# 次へ] を **選択します**。
 
-    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image14.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、電子メールの説明が自動的に生成される":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image39.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、電子メールの説明が自動的に生成される":::
 
 7. \[ServiceNow 管理者であるユーザー \] リポジトリ ID を設定します。
 
@@ -493,19 +494,19 @@ Microsoft 365サポート統合が有効になっているのは、次のいず�
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image16.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーションの説明が自動的に生成される":::
 
-    1. **[次へ]** を選択します。
+    1. [**次へ**] を選択します。
 
 9. \[テナントのヘルプデスク管理者またはサービス要求管理者であるMicrosoft 365 \] 統合を完了します。
 
     1. 次の情報を確認して、正しいか確認してください。
 
-        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image17.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、電子メールの説明が自動的に生成される":::
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image40.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、電子メールの説明が自動的に生成される":::
 
-    1. [組織プロファイルMicrosoft 365 [管理ポータル](https://admin.microsoft.com)  >    >  **設定設定**  >  **に移動します**。
+    1. [組織の設定Microsoft 365 [管理ポータル](https://admin.microsoft.com)  >  **設定**  >  **組織**  >  **のプロファイル] に移動します**。
 
     1. サポート統合設定を設定します。
 
-        1. [基本情報] タブで、内部サポート ツールとして [今すぐサービス] を選択し、前提条件 [(AAD OAuth トークン)](#prerequisites-aad-oauth-token)の手順 1 で作成された [手順 - 6 完了] ページの [アプリケーション ID] の値として「送信アプリ **ID」** と入力します。 \#
+        1. [基本情報] タブで、内部サポート ツールとして [今すぐサービス] を選択し、[ステップ - 6 統合の完了] ページの [アプリケーション ID の値として送信アプリ **ID]** と入力します。これは、前提条件 [(AAD OAuth トークン)](#prerequisites-aad-oauth-token)の手順 1 で作成されました。 \#
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image18.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、電子メールの説明が自動的に生成される":::
 
@@ -529,20 +530,20 @@ Microsoft 365サポート統合が有効になっているのは、次のいず�
 
     1. [次 **へ] を** 選択して統合を完了します。
 
-    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image32.png" alt-text="グラフィカル ユーザー インターフェイス、アプリケーションの説明が自動的に生成される":::
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image32.png" alt-text="グラフィカル ユーザー インターフェイス、アプリケーションの説明が自動的に生成される":::
 
 10. \[ServiceNow 管理者であるユーザー 既存のユーザー Microsoft 365 \] サポート統合を有効にする。
 
 Microsoft 365の統合は、次の役割を持つユーザーにのみ有効になります。
 
-- [x \_ mioms \_ m365 \_ assis.insights \_ ユーザー](https://ven01306.service-now.com/sys_user_role.do?sys_id=802b2adfdb4cac507c80230bd3961911&sysparm_record_target=sys_user_role&sysparm_record_row=2&sysparm_record_rows=2&sysparm_record_list=nameSTARTSWITHx_mioms_m365%5EORDERBYname)
+- x \_ mioms \_ m365 \_ assis.insights \_ ユーザー
 
-- [x \_ mioms \_ m365 \_ assis.administrator](https://ven01306.service-now.com/sys_user_role.do?sys_id=4b25c9fb1b7784507ddd4227cc4bcb3a&sysparm_record_target=sys_user_role&sysparm_record_row=1&sysparm_record_rows=2&sysparm_record_list=nameSTARTSWITHx_mioms_m365%5EORDERBYname)
+- x \_ mioms \_ m365 \_ assis.administrator
 
 > [!NOTE]
 > 役割 x \_ mioms \_ m365 \_ assis.insights ユーザーは、 \_ サービス正常性インシデント、推奨されるソリューションを確認できます。 ロール x \_ mioms \_ m365 assis.administrator を持つユーザーは、サポートを受Microsoft 365 \_ できます。
 
-11. **\[オプション \] \[ ServiceNow 管理者リンクを持つ \] ユーザー Microsoft 365 管理アカウント**
+11. **\[オプション \] \[ 役割を持つユーザー x_mioms_m365_assis.administrator \] リンク Microsoft 365 管理 アカウント**
 
 ユーザーが "x \_ mioms \_ m365 assis.administrator" という役割を持ち、Microsoft サポート ケースを管理するために異なる Microsoft 365 アカウントを使用している場合は、Microsoft 365 サポート > リンク アカウントに移動して \_ 、Microsoft 365 管理者メールを設定する必要があります。
 
@@ -560,11 +561,11 @@ Microsoft 365の統合は、次の役割を持つユーザーにのみ有効に�
 
     1. [アプリの登録 **] ページに移動し** 、新しいアプリケーションを作成します。
 
-    1. [ **この組織ディレクトリ内のアカウントのみ] ({TenantName} のみ – シングル テナント ) を選択します**。
+        [ **この組織ディレクトリ内のアカウントのみ] を選択します ({microsoft-365-tenant-name} のみ – シングル テナント** です。
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image3.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、電子メールの説明が自動的に生成される":::
 
-    1. リダイレクト URL の追加: `https://&lt;your-servicenow-instance&gt;.service-now.com/auth\_redirect.do`
+    1. リダイレクト URL の追加: `https://{your-servicenow-instance}.service-now.com/auth_redirect.do`
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image4.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、電子メールの説明が自動的に生成される":::
 
@@ -572,13 +573,13 @@ Microsoft 365の統合は、次の役割を持つユーザーにのみ有効に�
 
 1. \[ServiceNow 管理者であるユーザー ServiceNow で \] 送信 OAuth プロバイダーを設定します。
 
-    1. [System **OAuth アプリケーション**  >  **レジストリ] に移動します**。
-
     1. スコープがグローバルに設定されていない場合は、開発者設定を開き、グローバル  >    >  に **切り替えます**。
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image5.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、チャット、またはテキスト メッセージ説明が自動的に生成される":::
 
-    1. サードパーティの OAuth プロバイダーにアクセスする方法を選択してConnectを使用して、新しい[アプリケーションを作成します](https://dev77417.service-now.com/wizard_view.do?sys_action=sysverb_wizard_ans&WIZARD:action=follow&wiz_referring_url=oauth_entity_list.do?sys_id=-1@99@sys_target=oauth_entity@99@sysparm_fixed_query=@99@sysparm_group_sort=@99@sysparm_parent=2c7cab53d7232100f20bc8170e61036b@99@sysparm_query=type%3dclient%5eORtype%3doauth_provider@99@sysparm_target=@99@sysparm_view=&wiz_collection_key=&wiz_collectionID=&wiz_collection=&wiz_collection_related_field=&wiz_view=&wiz_action=sysverb_new&sys_id=79ce2f53d7232100f20bc8170e610361&sysparm_query=type=client%5eORtype=oauth_provider&sysparm_target=&sys_target=oauth_entity)。
+    1. [System **OAuth アプリケーション**  >  **レジストリ] に移動します**。
+
+    1. サードパーティの OAuth プロバイダーにアクセスする方法を選択してConnectを使用して、新しい **アプリケーションを作成します**。
 
     - クライアント ID: 前提条件[(インサイトのみ) で作成されたアプリケーションの](#prerequisites-insights-only)クライアント ID  \# 1
 
@@ -586,9 +587,9 @@ Microsoft 365の統合は、次の役割を持つユーザーにのみ有効に�
 
     - 既定の付与の種類: クライアント資格情報
 
-    - トークン URL: `https://login.microsoftonline.com/{M365\_Tenan\_Name}/oauth2/token`
+    - トークン URL: `https://login.microsoftonline.com/{microsoft-365-tenant-name}/oauth2/token`
 
-    - リダイレクト URL: `https://{ServiceNow\_Istance\_Name}.service-now.com/oauth\_redirect.do`
+    - リダイレクト URL: `https://{servicenow-instance-name}.service-now.com/oauth_redirect.do`
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image6.png" alt-text="グラフィカル ユーザー インターフェイス、アプリケーションの説明が自動的に生成される":::
 
@@ -655,7 +656,7 @@ ServiceNow インスタンスと Microsoft サポートの間の統合をセッ�
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image35.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、電子メールの説明が自動的に生成される":::
 
-    1. [組織プロファイルMicrosoft 365 [管理ポータル](https://admin.microsoft.com)  >    >  **設定設定**  >  **に移動します**。
+    1. [組織の設定Microsoft 365 [管理ポータル](https://admin.microsoft.com)  >  **設定**  >  **組織**  >  **のプロファイル] に移動します**。
 
         1. セットアップ フローに表示される情報を使用して、サポート統合設定を設定します。
 
@@ -689,18 +690,12 @@ ServiceNow インスタンスと Microsoft サポートの間の統合をセッ�
 
 Microsoft 365の統合は、次のユーザー ロールでのみ有効になります。
 
-- [x \_ mioms \_ m365 \_ assis.insights \_ ユーザー](https://ven01306.service-now.com/sys_user_role.do?sys_id=802b2adfdb4cac507c80230bd3961911&sysparm_record_target=sys_user_role&sysparm_record_row=2&sysparm_record_rows=2&sysparm_record_list=nameSTARTSWITHx_mioms_m365%5EORDERBYname)
+- x \_ mioms \_ m365 \_ assis.insights \_ ユーザー
 
-- [x \_ mioms \_ m365 \_ assis.administrator](https://ven01306.service-now.com/sys_user_role.do?sys_id=4b25c9fb1b7784507ddd4227cc4bcb3a&sysparm_record_target=sys_user_role&sysparm_record_row=1&sysparm_record_rows=2&sysparm_record_list=nameSTARTSWITHx_mioms_m365%5EORDERBYname)
+- x \_ mioms \_ m365 \_ assis.administrator
 
 > [!NOTE] 
-> 役割 x \_ mioms \_ m365 \_ assis.insights ユーザーは、 \_ サービス正常性インシデント、推奨されるソリューションを確認できます。 ロール x \_ mioms \_ m365 assis.administrator を持つユーザーは、サポートを受Microsoft 365 \_ できます。
-
-11. \[オプション ServiceNow 管理者リンクを持つ \] \[ \] ユーザー Microsoft 365 管理します。
-
-ユーザーが "x \_ mioms \_ m365 assis.administrator" という役割を持ち、Microsoft サポート ケースを管理するために異なる Microsoft 365 アカウントを使用している場合は、Microsoft 365 サポート > リンク アカウントに移動して \_ 、Microsoft 365 管理者メールを設定する必要があります。
-
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image21.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーションの説明が自動的に生成される":::
+> ロール x_mioms_m365_assis.insights_user を持つユーザーは、[サービス正常性インシデント] [推奨されるソリューション] を表示できます。 ロール x_mioms_m365_assis.administrator を持つユーザーは、サポートを受Microsoft 365できます。 [インサイトのみ] を使用すると、管理者にロールを割りx_mioms_m365_assisする必要があります。
 
 ## <a name="testing-the-configuration"></a>構成のテスト
 
@@ -720,9 +715,9 @@ Microsoft 365の統合は、次のユーザー ロールでのみ有効になり
 
 |#|問題|診断アクション|
 |--- |--- |--- |
-|1 |[サポート]**タブMicrosoft 365表示** できない|現在のビューとシステム ログ **すべてフィルター**  >  **を使用** して確認x_mioms_m365_assit|
-|2 |[Microsoft **推奨ソリューション]** を選択しますが、「ServiceNow 管理者に問い合わせ、アプリのセットアップ手順を完了してください」というエラーが表示されます。|フォームの上部にあるエラー メッセージを確認し、**フィルター** を使用して  >  **システム** ログすべてx_mioms_m365_assit|
-|3 |[Microsoft **推奨ソリューション]** を選択しますが、「ServiceNow 管理者に問い合わせ、アプリの最終的なセットアップ 手順を完了してください」というエラーが表示されます。|フォームの上部にあるエラー メッセージを確認し、**フィルター** を使用して  >  **システム** ログすべてx_mioms_m365_assit|
+|1|[サポート]**タブMicrosoft 365表示** できない|現在のビューとシステム ログ **すべてフィルター**  >  **を使用** して確認x_mioms_m365_assit|
+|2|[Microsoft **推奨ソリューション]** を選択しますが、「ServiceNow 管理者に問い合わせ、アプリのセットアップ手順を完了してください」というエラーが表示されます。|フォームの上部にあるエラー メッセージを確認し、**フィルター** を使用して  >  **システム** ログすべてx_mioms_m365_assit|
+|3|[Microsoft **推奨ソリューション]** を選択しますが、「ServiceNow 管理者に問い合わせ、アプリの最終的なセットアップ 手順を完了してください」というエラーが表示されます。|フォームの上部にあるエラー メッセージを確認し、**フィルター** を使用して  >  **システム** ログすべてx_mioms_m365_assit|
 |4 |検索ボックスに問題を入力し **、[Microsoft** 推奨ソリューション] を選択しますが、「ServiceNow 管理者に問い合わせ、アプリのセットアップ手順を完了してください」というエラーが表示されます。|フォームの上部にあるエラー メッセージを確認し、**フィルター** を使用して  >  **システム** ログすべてx_mioms_m365_assit|
 |5 |検索ボックスに「問題」と入力し **、[Microsoft** 推奨ソリューション] を選択しますが、「ServiceNow 管理者に問い合わせ、アプリの最終的なセットアップ 手順を完了してください」というエラーが表示されます。|フォームの上部にあるエラー メッセージを確認し、**フィルター** を使用して  >  **システム** ログすべてx_mioms_m365_assit|
 |6 |[Microsoft **サポートに問** い合わせ] を選択しますが、「ServiceNow 管理者に問い合わせ、アプリのセットアップ手順を完了してください」というエラーが表示されます。|フォームの上部にあるエラー メッセージを確認し、**フィルター** を使用して  >  **システム** ログすべてx_mioms_m365_assit|
@@ -732,7 +727,7 @@ Microsoft 365の統合は、次のユーザー ロールでのみ有効になり
 |10 |[Microsoft **推奨ソリューション] を選択** しますが、「アプリのサポートに問い合わせください」というエラーが表示されます。|フォームの上部にあるエラー メッセージを確認し、**フィルター** を使用して  >  **システム** ログすべてx_mioms_m365_assit|
 |11 |検索ボックスに問題を入力し、[Microsoft 推奨ソリューション] **を選択します** が、何も表示されません|[ **システム ログの確認] - フィルターログとフィルター処理** を使用 login.microsoftonline.com HTTP ログ connector.rave.microsoft.com|
 |12 |検索ボックスに「問題」と入力し **、[Microsoft 推奨** ソリューション] を選択しますが、「アプリのサポートに問い合わせください」というエラーが表示されます。|フォームの上部にあるエラー メッセージを確認し、**フィルター** を使用して  >  **システム** ログすべてx_mioms_m365_assit|
-|13 |ユーザーが **[Microsoft サポートに問い合わせ] を** 選択しますが、何も起こりません|[ **システム ログの確認] - フィルターログとフィルター処理** を使用 login.microsoftonline.com HTTP ログ connector.rave.microsoft.com|
+|13|ユーザーが **[Microsoft サポートに問い合わせ] を** 選択しますが、何も起こりません|[ **システム ログの確認] - フィルターログとフィルター処理** を使用 login.microsoftonline.com HTTP ログ connector.rave.microsoft.com|
 |14 |インシデントを再度開いた後に Microsoft 推奨ソリューションを表示できない|[**システム ログ]**  >  **フィルター を使用して**[すべて] をx_mioms_m365_assit|
 |15 |Microsoft サポートに転送されたインシデントを再度開くと、Microsoft ケースが表示されません|[**システム ログ]**  >  **フィルター を使用して**[すべて] をx_mioms_m365_assit|
 |16 |チケットの詳細を保存できません。エラー "チケットの詳細を保存できません。 アプリのサポートにお問い合わせください。|フォームの上部にあるエラー メッセージを確認する|

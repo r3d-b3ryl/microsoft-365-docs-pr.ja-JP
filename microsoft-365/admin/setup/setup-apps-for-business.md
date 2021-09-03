@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Microsoft 365 Apps for business サブスクリプションのセットアップ方法について説明します。
-ms.openlocfilehash: 84018b0291b68a65216f1ac4d430cfdb270f8c65e7f35e245bcb695b758855a4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2010bc13f28d88d9589a53b3f84dd266549356c1
+ms.sourcegitcommit: 8ef23d275d7209a705295e2b117d4382b20ad4f7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53821509"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58866645"
 ---
 # <a name="set-up-microsoft-365-apps-for-business"></a>Microsoft 365 Apps for business をセットアップする
 
