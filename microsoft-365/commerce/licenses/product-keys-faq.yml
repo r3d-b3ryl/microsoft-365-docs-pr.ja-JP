@@ -12,12 +12,12 @@ metadata:
   ms.custom: commerce_vl
   localization_priority: Normal
   description: プロダクト キーに関するよく寄せられる質問
-  ms.openlocfilehash: ff8547935d82224d41b02131440679e0f63b32fb
-  ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+  ms.openlocfilehash: 9da77700bb949fb72467516f3f195d87152d91ea
+  ms.sourcegitcommit: 59bda7cfd92ef1b0e97858da51a776ec668bcfe0
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 08/31/2021
-  ms.locfileid: "58823614"
+  ms.lasthandoff: 09/03/2021
+  ms.locfileid: "58884638"
 title: プロダクト キーに関するよく寄せられる質問
 summary: ''
 sections:
@@ -39,7 +39,7 @@ sections:
   - question: >
       プロダクト キーをSQL Serverする方法
     answer: >
-      ライセンス SQLは、管理センターに表示されるのではなく、ソフトウェアのライセンス認証ウィザードに埋め込まれているので、インストール中に自動的に検出されます。 詳細については、「[SQL Server インストール ガイド] (/sql/database-engine/install-windows/install-sql-server)」を参照してください。
+      ライセンス SQLは、管理センターに表示されるのではなく、ソフトウェアのライセンス認証ウィザードに埋め込まれているので、インストール中に自動的に検出されます。 詳細については、「The [SQL Server インストール ガイド」を参照してください](/sql/database-engine/install-windows/install-sql-server)。
 
 
       また、管理センターから ISO ファイルSQLダウンロードして、キー>できます。\x64 フォルダー> DefaultSetup.iniします。 新しいエディションをインストールまたはアップグレードする前に、既存のバージョンをSQLしてください。 製品のインストールまたはオンライン サービスのライセンス認証中に技術的な問題のトラブルシューティングに関するヘルプが必要な場合は、テクニカル サポート要求を送信して Microsoft テクニカル サポートに [問い合わせください](https://support.microsoft.com/oas)。
@@ -65,7 +65,9 @@ sections:
       詳細については、「ライセンスの概要 [に関するよく寄せられる質問」を参照してください](/licensing/license-faq)。
 
 
-      **メモ** すべてのお客様は、再イメージングおよびダウングレードの目的でプロダクト キーを使用する権利を持っています。 [プラス]、Enterprise Agreement (EA)、および [顧客のトレーニングとバックアップの評価権限が制限されています] を選択します。 詳細については、「製品ライセンス [ブリーフ」を参照してください](/licensing/learn-more/volume-licensing-briefs)。
+      > [!NOTE]
+
+      > すべてのお客様は、再イメージングおよびダウングレードの目的でプロダクト キーを使用する権利を持っています。 [プラス]、Enterprise Agreement (EA)、および [顧客のトレーニングとバックアップの評価権限が制限されています] を選択します。 詳細については、「製品ライセンス [ブリーフ」を参照してください](/licensing/learn-more/volume-licensing-briefs)。
 - name: ボリューム ライセンス認証
   questions:
   - question: >
@@ -183,7 +185,9 @@ sections:
       はい。 再イメージング権限は、すべての Microsoft ボリューム ライセンスのお客様に付与されます。 これらの権利の下で、ボリューム ライセンス メディアから作成されたコピーが元のライセンス製品と同一である場合、お客様は契約に基いて提供されたメディアを使用して、元の機器メーカー (OEM) またはフル パッケージ製品 (FPP) ライセンス コピーを再イメージできます。 ボリューム ライセンスのお客様は、プロダクト キー ページでボリューム ライセンス キーを見つけるか、Microsoft ライセンス認証センターからキーを [要求できます](https://licensingapps.microsoft.com/product-activation)。
 
 
-      **メモ** Open License のお客様の場合は、製品メディアへのアクセスを取得してプロダクト キーを受け取るために、イメージを変更する製品のユニットを少なくとも 1 つ購入する必要があります。
+      > [!NOTE]
+
+      > Open License のお客様の場合は、製品メディアへのアクセスを取得してプロダクト キーを受け取るために、イメージを変更する製品のユニットを少なくとも 1 つ購入する必要があります。
 
 
       再イメージング権限の詳細については、「製品ライセンス ブリーフ [」を参照してください](/licensing/learn-more/volume-licensing-briefs)。

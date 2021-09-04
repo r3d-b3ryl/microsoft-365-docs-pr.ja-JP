@@ -17,12 +17,12 @@ ms.custom: ''
 description: 管理者は、Exchange Online Protection (EOP) の高度な配信ポリシーを使用して、サポートされている特定のシナリオ (サード パーティのフィッシング シミュレーションとセキュリティ操作 (SecOps) メールボックスに配信されるメッセージ) でフィルター処理すべきではないメッセージを識別する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 028735c7d340d63d2f952eabf683e512d261a913
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 8d10c4df273cfcff39bf93fa6532b57c4f8ef640
+ms.sourcegitcommit: 59bda7cfd92ef1b0e97858da51a776ec668bcfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58576082"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "58884674"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>サードパーティのフィッシング シミュレーションをユーザーに配信し、フィルター処理されていないメッセージを SecOps メールボックスに配信する構成
 
@@ -31,7 +31,7 @@ ms.locfileid: "58576082"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-既定で組織を[](secure-by-default.md)セキュリティで保護するために、Exchange Online Protection (EOP) では、マルウェアまたは高信頼フィッシングとして識別されるメッセージの安全なリストやフィルター バイパスは許可されません。 ただし、フィルター処理されていないメッセージの配信を必要とする特定のシナリオがあります。 次に例を示します。
+既定で組織を[](secure-by-default.md)セキュリティで保護するために、Exchange Online Protection (EOP) では、マルウェアまたは高信頼フィッシングとして識別されるメッセージの安全なリストやフィルター バイパスは許可されません。 ただし、フィルター処理されていないメッセージの配信を必要とする特定のシナリオがあります。 例:
 
 - **サード パーティのフィッシング シミュレーション**: シミュレートされた攻撃は、実際の攻撃が組織に影響を与える前に、脆弱なユーザーを特定するのに役立ちます。
 - **セキュリティ操作 (SecOps)** メールボックス: セキュリティ チームがフィルター処理されていないメッセージ (良いメッセージと悪いメッセージの両方) を収集および分析するために使用する専用のメールボックス。
@@ -71,7 +71,7 @@ ms.locfileid: "58576082"
   詳細については、「Microsoft 365 Defender[](permissions-microsoft-365-security-center.md)ポータルのアクセス許可」および「Exchange Online」[を参照してください](/exchange/permissions-exo/permissions-exo)。
 
   > [!NOTE]
-  > ユーザーを対応する Azure Active Directory ロールに追加すると、ユーザーは Microsoft 365 Defender ポータルで必要なアクセス許可と、Microsoft 365 の他の機能に対するアクセス許可を与Microsoft 365。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
+  > ユーザーを対応する Azure Active Directory ロールに追加すると、ユーザーは Microsoft 365 Defender ポータルで必要なアクセス許可と、Microsoft 365 の他の機能に対するアクセス許可を与Microsoft 365。 詳細については、[「管理者の役割について」](../../admin/add-users/about-admin-roles.md) を参照してください。
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy"></a>高度な配信Microsoft 365 Defender SecOps メールボックスを構成するには、次のポータルを使用します。
 
@@ -87,7 +87,7 @@ ms.locfileid: "58576082"
 
      必要な回数だけこの手順を繰り返します。 配布グループは許可されません。
 
-     既存の値を削除するには、削除をクリックします ![[削除] アイコン。](../../media/m365-cc-sc-remove-selection-icon.png) 値の隣。
+     既存の値を削除するには、削除をクリックします ![[削除] アイコン](../../media/m365-cc-sc-remove-selection-icon.png) 値の隣。
 
 4. 完了したら、**[保存]** をクリックします。
 
@@ -114,7 +114,7 @@ ms.locfileid: "58576082"
      - CIDR IP: たとえば、192.168.0.1/25。
    - **許可** するシミュレーション URL : この設定を展開し、必要に応じて、フィッシング シミュレーション キャンペーンの一部である特定の URL を入力します。この URL は、ボックス内をクリックして値を入力し、Enter キーを押したり、ボックスの下に表示される値を選択したりしてブロックまたは削除する必要があります。 最大 10 のエントリを追加できます。 URL 構文の形式については、「テナント許可/ブロック一覧」の URL 構文 [を参照してください](tenant-allow-block-list.md#url-syntax-for-the-tenant-allowblock-list)。
 
-   既存の値を削除するには、削除をクリックします ![[削除] アイコン。](../../media/m365-cc-sc-remove-selection-icon.png) 値の隣。
+   既存の値を削除するには、削除をクリックします ![[削除] アイコン](../../media/m365-cc-sc-remove-selection-icon.png) 値の隣。
 
    > [!NOTE]
    > Advanced Delivery でサードパーティのフィッシング シミュレーションを構成するには、少なくとも 1 つの送信ドメインと少なくとも 1 つの送信 **IP** を指定する必要があります。 必要に応じて、 **シミュレーション URL** を含め、シミュレーション メッセージに存在する URL がブロックされないのを確認できます。 各フィールドに最大 10 のエントリを指定できます。 少なくとも 1 つの送信ドメインと **1** つの送信 **IP** に一致する必要がありますが、値間の関連付けは維持されません。
@@ -161,7 +161,8 @@ SecOps オーバーライド ポリシーを作成するには、次の構文を
 New-SecOpsOverridePolicy -Name SecOpsOverridePolicy -SentTo <EmailAddress1>,<EmailAddress2>,...<EmailAddressN>
 ```
 
-**注**: 指定した Name 値に関係なく、ポリシー名は SecOpsOverridePolicy なので、その値を使用することもできます。
+> [!NOTE]
+> 指定した Name 値に関係なく、ポリシー名は _SecOpsOverridePolicy_ なので、その値を使用することもできます。
 
 次の使用例は、SecOps メールボックス ポリシーを作成します。
 
@@ -179,7 +180,8 @@ New-SecOpsOverridePolicy -Name SecOpsOverridePolicy -SentTo secops@contoso.com
 New-SecOpsOverrideRule -Name SecOpsOverrideRule -Policy SecOpsOverridePolicy
 ```
 
-**注**: 指定した Name 値に関係なく、ルール名は SecOpsOverrideRule になります。これは一意の GUID 値 \<GUID\> です \<GUID\> (たとえば、6fed4b63-3563-495d-a481-b24a311f8329 など)。
+> [!NOTE]
+> 指定した Name 値に関係なく、ルール名は _SecOpsOverrideRule_ になります。これは一意の GUID 値 \<GUID\> \<GUID\> です (たとえば、6fed4b63-3563-495d-a481-b24a311f8329 など)。
 
 構文とパラメーターの詳細については [、「New-SecOpsOverrideRule」を参照してください](/powershell/module/exchange/new-secopsoverriderule)。
 
@@ -211,7 +213,7 @@ Get-SecOpsOverrideRule | Format-Table Name,Mode
 
 無効なルールを特定した後、この記事で後述するように **Remove-SecOpsOverrideRule** コマンドレットを使用して削除 [できます](#use-powershell-to-remove-secops-override-rules)。
 
-構文とパラメーターの詳細については [、「Get-SecOpsOverrideRule」を参照してください。](/powershell/module/exchange/get-secopsoverriderule)
+構文とパラメーターの詳細については [、「Get-SecOpsOverrideRule」を参照してください](/powershell/module/exchange/get-secopsoverriderule)。
 
 ### <a name="use-powershell-to-modify-the-secops-override-policy"></a>PowerShell を使用して SecOps オーバーライド ポリシーを変更する
 
@@ -221,13 +223,14 @@ SecOps オーバーライド ポリシーを変更するには、次の構文を
 Set-SecOpsOverridePolicy -Identity SecOpsOverridePolicy [-AddSentTo <EmailAddress1>,<EmailAddress2>,...<EmailAddressN>] [-RemoveSentTo <EmailAddress1>,<EmailAddress2>,...<EmailAddressN>]
 ```
 
-次の使用例は、secops2@contoso.com ポリシーに追加します。
+次の使用例 `secops2@contoso.com` は、SecOps オーバーライド ポリシーに追加します。
 
 ```powershell
 Set-SecOpsOverridePolicy -Identity SecOpsOverridePolicy -AddSentTo secops2@contoso.com
 ```
 
-**注**: 関連付けられた有効な SecOps オーバーライド ルールが存在する場合、ルール内の電子メール アドレスも更新されます。
+> [!NOTE]
+> 関連付けられた有効な SecOps オーバーライド ルールが存在する場合、ルール内の電子メール アドレスも更新されます。
 
 構文とパラメーターの詳細については [、「Set-SecOpsOverridePolicy」を参照してください](/powershell/module/exchange/set-secopsoverridepolicy)。
 
@@ -296,7 +299,7 @@ PowerShell でサード パーティ製のフィッシング シミュレーシ�
 New-PhishSimOverridePolicy -Name PhishSimOverridePolicy
 ```
 
-**注**: 指定した Name 値に関係なく、ポリシー名は PhishSimOverridePolicy なので、その値を使用することもできます。
+**注**: 指定した Name 値に関係なく、ポリシー名は _PhishSimOverridePolicy_ なので、その値を使用することもできます。
 
 構文とパラメーターの詳細については [、「New-PhishSimOverridePolicy」を参照してください](/powershell/module/exchange/new-phishsimoverridepolicy)。
 
@@ -308,7 +311,7 @@ New-PhishSimOverridePolicy -Name PhishSimOverridePolicy
 New-PhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePolicy -SenderDomainIs <Domain1>,<Domain2>,...<DomainN> -SenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntryN>
 ```
 
-指定した Name 値に関係なく、ルール名は、一意の GUID 値である PhishSimOverrideRule \<GUID\> \<GUID\> になります (たとえば、a0eae53e-d755-4a42-9320-b9c6b55c5011 など)。
+指定した Name 値に関係なく、ルール名は、一意の GUID 値である _PhishSimOverrideRule_ \<GUID\> になります (たとえば \<GUID\> 、a0eae53e-d755-4a42-9320-b9c6b55c5011 など)。
 
 有効な IP アドレス エントリは、次のいずれかの値です。
 

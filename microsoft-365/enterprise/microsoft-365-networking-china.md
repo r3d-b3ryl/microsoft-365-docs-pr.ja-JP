@@ -16,12 +16,12 @@ search.appverid: MET150
 f1.keywords:
 - NOCSH
 description: この記事では、グローバル テナントの中国ユーザー向けにネットワーク パフォーマンスを最適化Microsoft 365します。
-ms.openlocfilehash: 06be7db700114db6111ff7f3c4a8d70e0c3f2243
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 9660270dbe73e9cbdff0b1e3796224b36319956b
+ms.sourcegitcommit: 59bda7cfd92ef1b0e97858da51a776ec668bcfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570199"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "58884722"
 ---
 # <a name="microsoft-365-global-tenant-performance-optimization-for-china-users"></a>Microsoft 365ユーザー向けグローバル テナントパフォーマンスの最適化
 
@@ -47,7 +47,7 @@ ms.locfileid: "58570199"
 
 最初のステップとして、ネットワークの計画とパフォーマンスチューニングのベンチマーク ネットワーク ガイダンスに従って作業を行[Microsoft 365。](./network-planning-and-performance.md) 主な目標は、可能であれば中国のインターネットMicrosoft 365グローバル サービスにアクセスしないようにすることです。
 
-- 既存のプライベート ネットワークを活用して、中国Microsoft 365外部のパブリック インターネットに送信する、中国のオフィス ネットワークとオフショアの場所間のネットワーク トラフィックを管理します。 中国以外のほぼすべての場所が明確な利点を提供します。 ネットワーク管理者は、Microsoft グローバル ネットワークとの低遅延相互接続領域で出力することで、さらに [最適化できます](/azure/networking/microsoft-global-network)。 香港、日本、韓国が例です。
+- 既存のプライベート ネットワークを活用して、中国Microsoft 365外部のパブリック インターネットに送信する、中国のオフィス ネットワークとオフショアの場所間のネットワーク トラフィックを管理します。 中国以外のほぼすべての場所が明確な利点を提供します。 ネットワーク管理者は、Microsoft グローバル ネットワークとの低遅延相互接続領域で出力することで、さらに [最適化できます](/azure/networking/microsoft-global-network)。 香港、シンガポール、日本、韓国が例です。
 - VPN 接続を使用して企業ネットワークにアクセスするユーザー デバイスを構成し、Microsoft 365のプライベート オフショア リンクを転送するトラフィックを許可します。 VPN クライアントがスプリット トンネリングを使用するように構成されていないか、またはユーザー デバイスがネットワーク トラフィックの分割トンネリングを無視するようにMicrosoft 365します。 メディア トラフィックとリアルタイム メディア トラフィックに対する VPN 接続Teamsの詳細については、このセクションを[参照してください](#optimizing-microsoft-teams-meetings-network-performance-for-users-in-china)。
 - プライベートのオフショア リンクを通Microsoft 365トラフィックをルーティングするネットワークを構成します。 プライベート リンク上のトラフィックの量を最小限に抑える必要がある場合は、[最適化] カテゴリのエンドポイントのみをルーティングし、[許可]および[既定のエンドポイント] への要求でインターネットを中継できます。  これにより、高遅延とパケット損失に最も敏感な重要なサービスに最適化されたトラフィックを制限することで、パフォーマンスを向上し、帯域幅の消費を最小限に抑えます。
 - 可能な場合は、TCP の代わりに UDP を使用して、ライブ メディア ストリーミング トラフィックを使用Teams。 UDP は、TCP よりも優れたライブ メディア ストリーミング パフォーマンスを提供します。

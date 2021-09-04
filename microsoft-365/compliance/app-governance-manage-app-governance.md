@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft アプリ ガバナンス機能を実装し、アプリを管理します。
-ms.openlocfilehash: f89214a71bc82ac7271ba3fd010258e63d39ef8a
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.openlocfilehash: 379da2e2ff894b2f6355c14db93b339518dfca02
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58744991"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58862775"
 ---
 # <a name="app-governance-add-on-to-microsoft-cloud-app-security-in-preview"></a>Microsoft Cloud App Security へのアプリ ガバナンス アドオン (プレビュー版)
 
@@ -80,8 +80,8 @@ App ガバナンス、Azure AD、Microsoft Cloud App Security は、以下のよ
 ![Azure AD と Microsoft Cloud App Security を使用したアプリ ガバナンスの統合。](..\media\manage-app-protection-governance\mapg-integration.png)
 
 アプリ ガバナンスはそのアラートを Microsoft Cloud App Security と Microsoft 365 Defender に送信し、Microsoft Cloud App Security からのアラートを受信することで、アプリベースのセキュリティ インシデントをより詳細に分析することができます。
-- アプリ ガバナンス アラートは、[検出ソース] フィールドが "MAPG" に設定されたアラートとして Microsoft 365 Defender アラート リストに表示されます
-- アプリ ガバナンス アラートは、[ポリシー] フィールドがいずれかに設定されたアラートとして MCAS アラート リストに表示されます
+- アプリ ガバナンス アラートは、検出ソース フィールドが "アプリ ガバナンス" に設定されたアラートとして Microsoft 365 Defender アラート リストに表示されます
+- アプリ ガバナンス アラートは、ポリシー フィールドが以下のいずれかに設定されたアラートとして MCAS アラート リストに表示されます:
   - Microsoft 365 OAuth アプリ ガバナンス
   - Microsoft 365 OAuth フィッシング検出
   - Microsoft 365 OAuth アプリの評価

@@ -19,12 +19,12 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: DLP ポリシーで使用できる機密情報の種類は 200 種類です。 この記事では、これらすべての機密情報の種類を一覧表示し、DLP ポリシーが各種類を検出するときに検索する情報漏えい対策ポリシーを示します。
-ms.openlocfilehash: 1a883c1ac31e61ef5aa24fbeca65f27f87fa3467
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 98e80f011329b80105de86816761baba7f8188a9
+ms.sourcegitcommit: 59bda7cfd92ef1b0e97858da51a776ec668bcfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532885"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "58884686"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>機密情報の種類のエンティティ定義
 
@@ -912,7 +912,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-該当しない
+該当なし
 
 ### <a name="definition"></a>定義
 
@@ -3386,7 +3386,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="pattern"></a>パターン
 
-Visa、MasterCard、Discover Card、JCB、American Express、ギフト カード、ダイナー カードなど、世界中のすべての主要ブランドのカードを検出します。
+Visa、MasterCard、Discover Card、JCB、American Express、ギフト カード、ダイナーのカード、Rupay、China UnionPay など、世界中のすべての主要ブランドのカードを検出します。
 
 ### <a name="checksum"></a>チェックサム
 
@@ -3649,6 +3649,11 @@ cód. segurança
 - 違います。 do cartão
 - no. do cartao
 
+- rupay
+- 労働組合の支払い
+- unionpay
+- diner's
+- ダイナー
 - クレジットカード番号
 - クレジットカードナンバー
 - クレジットカード＃
@@ -3678,6 +3683,9 @@ cód. segurança
 - カードの名義
 - デビット カード
 - デビットカード
+- 中国银联
+- 银联
+
 
 
 ## <a name="croatia-drivers-license-number"></a>クロアチアの運転免許証番号
@@ -7845,7 +7853,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-該当しない
+該当なし
 
 ### <a name="definition"></a>定義
 
@@ -8495,6 +8503,230 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - áfa szám
 
 
+## <a name="india-drivers-license-number"></a>インドの運転免許証番号
+
+### <a name="format"></a>フォーマット
+
+15 文字の英数字パターン
+
+### <a name="pattern"></a>パターン
+
+15 文字または数字:
+- 状態コードを示す 2 文字
+- オプションのスペースまたはダッシュ
+- 都市コードを示す 2 桁の数字
+- オプションのスペースまたはダッシュ
+- 発行年を示す 4 桁の数字
+- オプションのスペースまたはダッシュ
+- 7 桁
+
+### <a name="checksum"></a>チェックサム
+
+いいえ
+
+### <a name="definition"></a>定義
+
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- 正規表現は、 `Regex_india_driving_license` パターンに一致するコンテンツを検索します。
+- キーワードが `Keywords_eu_driver's_license_number_common` 見つかりました。
+
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- 正規表現は、 `Regex_india_driving_license` パターンに一致するコンテンツを検索します。
+
+
+```xml
+      <!-- India Driver's License Number -->
+        <Entity id="680788a3-53b6-455a-b891-c38cd76dc917" patternsProximity="300" recommendedConfidence="85" relaxProximity="true">
+          <Pattern confidenceLevel="85">
+            <IdMatch idRef="Regex_india_driving_license" />
+            <Match idRef="Keywords_eu_driver's_license_number_common" />
+          </Pattern>
+          <Pattern confidenceLevel="75">
+            <IdMatch idRef="Regex_india_driving_license" />
+            </Pattern>
+        </Entity>
+```
+
+### <a name="keywords"></a>キーワード
+
+#### <a name="keywords_eu_drivers_license_number_common"></a>Keywords_eu_driver's_license_number_common
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- ドライバー lic
+- ドライバー lics
+- driver license
+- driver licenses
+- ドライバー ライセンス
+- ドライバー ライセンス
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- ドライバー lic
+- ドライバー lics
+- drivers license
+- drivers licenses
+- drivers licence
+- ドライバー ライセンス
+- driver'lic
+- driver'lics
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- 運転免許証
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- 運転免許証
+- ドライバーのライセンス
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- ドライバーの lic
+- ドライバーの lics
+- driver's license
+- driver's licenses
+- driver's licence
+- 運転免許証
+- dl#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- driver'lic#
+- driver'lics#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- 運転免許証#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- ドライバーのライセンス#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- 運転免許証#
+- 運転免許証#
+- driving licence 
+- driving license
+- dlno#
+- driv lic
+- driv licen
+- driv ライセンス
+- driv ライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバー licen
+- ドライバー licen
+- ドライバーの licen
+- lic の駆動
+- licen の駆動
+- ライセンスの運転
+- driving licence
+- driving licences
+- 運転許可
+- dl no
+- dlno
+- dl 番号
+
+
+
+## <a name="india-gst-number"></a>インドの GST 番号
+
+### <a name="format"></a>フォーマット
+
+15 文字の英数字パターン
+
+### <a name="pattern"></a>パターン
+
+15 文字または数字:
+- 有効な状態コードを表す 2 桁の数字
+- オプションのスペースまたはダッシュ
+- 永続的なアカウント番号 (PAN) を表す 10 文字 
+- 1 文字または数字
+- オプションのスペースまたはダッシュ
+- 1 文字 'z' または 'Z'
+- オプションのスペースまたはダッシュ
+- 1 つのチェックディジット
+
+### <a name="checksum"></a>チェックサム
+
+はい
+
+### <a name="definition"></a>定義
+
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数 `Func_india_gst_number` は、パターンに一致するコンテンツを検索します。
+- キーワードが `Keyword_india_gst_number` 見つかりました。
+
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- この関数 `Func_india_gst_number` は、パターンに一致するコンテンツを検索します。
+
+
+```xml
+    <!-- India GST number  -->
+      <Entity id="9f5a721c-2fd2-446a-a27e-0c02fbe4630c" patternsProximity="300" recommendedConfidence="85" relaxProximity="true">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_india_gst_number" />
+          <Match idRef="Keyword_india_gst_number" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_india_gst_number" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>キーワード
+
+#### <a name="keyword_india_gst_number"></a>Keyword_india_gst_number
+
+- gst
+- gstin
+- 商品およびサービス税
+- 商品およびサービス税
+
+
 ## <a name="india-permanent-account-number-pan"></a>インドの永続的なアカウント番号 (PAN)
 
 ### <a name="format"></a>フォーマット
@@ -8572,7 +8804,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - この関数Func_india_aadhaar一致するコンテンツを検索します。
 - ユーザーのキーワードKeyword_india_aadhar見つかりました。
 - チェックサムが渡される。
--
+
 DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
 
 - この関数Func_india_aadhaar一致するコンテンツを検索します。
@@ -8599,6 +8831,60 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - uid
 - आधार
 - uidai
+
+
+## <a name="india-voter-id-card"></a>インドの投票者 ID カード
+
+### <a name="format"></a>フォーマット
+
+10 文字の英数字パターン
+
+### <a name="pattern"></a>パターン
+
+10 桁の文字または数字:
+- 3 文字
+- 7 桁
+
+### <a name="checksum"></a>チェックサム
+
+いいえ
+
+### <a name="definition"></a>定義
+
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- 正規表現は、 `Regex_india_voter_id_card` パターンに一致するコンテンツを検索します。
+- キーワードが `Keyword_india_voter_id_card` 見つかりました。
+
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという信頼性が低いです。
+- 正規表現は、 `Regex_india_voter_id_card` パターンに一致するコンテンツを検索します。
+
+
+```xml
+      <!-- India Voter Id Card  -->
+        <Entity id="646d643f-5228-4408-acc8-f2e81a6df897" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
+           <Pattern confidenceLevel="75">
+             <IdMatch idRef="Regex_india_voter_id_card" />
+             <Match idRef="Keyword_india_voter_id_card" />
+            </Pattern>
+           <Pattern confidenceLevel="65">
+              <IdMatch idRef="Regex_india_voter_id_card" />
+            </Pattern>
+        </Entity>
+```
+
+### <a name="keywords"></a>キーワード
+
+#### <a name="keyword_india_voter_id_card"></a>Keyword_india_voter_id_card
+
+- 投票者
+- voterid
+- votercard
+- voteridcard
+- 選挙用写真の ID カード
+- EPIC
+- ECI
+- 選挙のコンミション
+
 
 ## <a name="indonesia-identity-card-ktp-number"></a>インドネシアの ID カード (KTP) 番号
 
@@ -8893,7 +9179,102 @@ IPv6 の場合、DLP ポリシーは、次の 300 文字に近い場合に、こ
 - ip address
 - ip addresses
 - internet protocol
-- IP-כתובת -->
+- IP-כתובת ה
+
+
+## <a name="ip-address-v4"></a>IP アドレス v4
+
+### <a name="format"></a>フォーマット
+
+IPv4 アドレスの書式付き (ピリオド) バージョンと書式設定されていない (ピリオドなし) バージョンをアカウントする複雑なパターン
+
+### <a name="pattern"></a>パターン
+
+
+### <a name="checksum"></a>チェックサム
+
+いいえ
+
+### <a name="definition"></a>定義
+
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- 正規表現は、 `Regex_ipv4_address` パターンに一致するコンテンツを検索します。
+- キーワードが `Keyword_ipaddress` 見つかりました。
+
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- 正規表現は、 `Regex_ipv4_address` パターンに一致するコンテンツを検索します。
+
+
+```xml
+      <!-- IP Address v4--> 
+      <Entity id="a7dd5e5f-e7f9-4626-a2c6-86a8cb6830d2" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_ipv4_address" />
+          <Match idRef="Keyword_ipaddress" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_ipv4_address" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>キーワード
+
+#### <a name="keyword_ipaddress"></a>Keyword_ipaddress
+
+- IP (大文字と小文字の区別)
+- ip address
+- ip addresses
+- internet protocol
+- IP-כתובת ה
+
+
+## <a name="ip-address-v6"></a>IP アドレス v6
+
+### <a name="format"></a>フォーマット
+
+書式設定された IPv6 番号を表す複雑なパターン (コロンを含む)
+
+### <a name="pattern"></a>パターン
+
+
+### <a name="checksum"></a>チェックサム
+
+いいえ
+
+### <a name="definition"></a>定義
+
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- 正規表現は、 `Regex_ipv6_address` パターンに一致するコンテンツを検索します。
+- キーワードが `Keyword_ipaddress` 見つかりました。
+
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- 正規表現は、 `Regex_ipv6_address` パターンに一致するコンテンツを検索します。
+
+
+```xml
+      <!-- IP Address v6-->
+      <Entity id="3f691089-7413-4926-ab3b-3c5ea8a1c17e" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_ipv6_address" />
+          <Match idRef="Keyword_ipaddress" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_ipv6_address" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>キーワード
+
+#### <a name="keyword_ipaddress"></a>Keyword_ipaddress
+
+- IP (大文字と小文字の区別)
+- ip address
+- ip addresses
+- internet protocol
+- IP-כתובת ה
+
 
 ## <a name="ireland-drivers-license-number"></a>アイルランドの運転免許証番号
 
@@ -11627,7 +12008,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-該当しない
+該当なし
 
 ### <a name="definition"></a>定義
 
@@ -11767,7 +12148,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-該当しない
+該当なし
 
 ### <a name="definition"></a>定義
 
@@ -15413,7 +15794,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-該当しない
+該当なし
 
 ### <a name="definition"></a>定義
 
