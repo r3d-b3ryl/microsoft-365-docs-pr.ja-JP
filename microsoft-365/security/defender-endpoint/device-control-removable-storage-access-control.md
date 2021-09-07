@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b13f53d687e42105a6e6e4302a6adc23a43375f8
-ms.sourcegitcommit: fd348579346522ead16a6bd8ce200a0b8ae8f7d4
+ms.openlocfilehash: 115d8bf2d87067e49d9b00d6c568bea1d865e882
+ms.sourcegitcommit: 99f7bd19e9c6997f0dbff7f59cb29a9768044b54
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58832040"
+ms.lasthandoff: 09/04/2021
+ms.locfileid: "58896503"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender for Endpoint Device Control リムーバブル Storage アクセス制御
 
@@ -81,7 +81,7 @@ Microsoft Defender for Endpoint Device Control リムーバブル Storageアク�
 |IncludedIdList|ポリシーが適用されるグループ。 複数のグループが追加されている場合、ポリシーは、すべてのグループ内の任意のメディアに適用されます。|このインスタンスでは、グループ ID/GUID を使用する必要があります。 <p> 次の例は、GroupID の使用法を示しています。 <p> `<IncludedIdList> <GroupId> {EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>`|
 |ExcludedIDList|ポリシーが適用されないグループ。|このインスタンスでは、グループ ID/GUID を使用する必要があります。|
 |エントリ ID|1 つの PolicyRule には複数のエントリを指定できます。一意の GUID を持つ各エントリは、デバイスコントロールに 1 つの制限を指示します。||
-|種類|IncludedIDList のリムーバブル 記憶域グループのアクションを定義します。 <ul><li>適用: 許可または拒否 </li><li>監査: AuditAllowed または AuditDenied</ul></li> | <ul><li>許可</li><li>拒否 </li><li>AuditAllowed: アクセスが許可されている場合の通知とイベントを定義します。</li><li>AuditDenied: アクセスが拒否された場合の通知とイベントを定義します。は、Deny エントリと共 **に動作する必要** があります。</li></ul> <p> 同じメディアに対して競合の種類がある場合、システムはポリシーの最初のメディアを適用します。 競合の種類の例として、[許可] と **[拒否]** **があります**。 |
+|型|IncludedIDList のリムーバブル 記憶域グループのアクションを定義します。 <ul><li>適用: 許可または拒否 </li><li>監査: AuditAllowed または AuditDenied</ul></li> | <ul><li>許可</li><li>拒否 </li><li>AuditAllowed: アクセスが許可されている場合の通知とイベントを定義します。</li><li>AuditDenied: アクセスが拒否された場合の通知とイベントを定義します。は、Deny エントリと共 **に動作する必要** があります。</li></ul> <p> 同じメディアに対して競合の種類がある場合、システムはポリシーの最初のメディアを適用します。 競合の種類の例として、[許可] と **[拒否]** **があります**。 |
 |Sid|ローカル コンピューター Sid または AD オブジェクトの Sid は、このポリシーを特定のユーザー またはユーザー グループに適用するかどうかを定義します。1 つのエントリには最大 1 つの Sid を含め、Sid を使用しないエントリは、コンピューター上にポリシーを適用する方法を意味します。 ||
 |ComputerSid|ローカル コンピューター Sid または AD オブジェクトの Sid は、このポリシーを特定のコンピューターまたはコンピューター グループに適用するかどうかを定義します。1 つのエントリには最大 1 つの ComputerSid を指定し、ComputerSid を使用しないエントリはコンピューター上にポリシーを適用します。 特定のユーザーと特定のコンピューターにエントリを適用する場合は、Sid と ComputerSid の両方を同じエントリに追加します。 ||
 |オプション|通知を表示するかどうかを定義します。 |**0-4**: [許可] または [拒否] の種類が選択されている場合。 <ul><li>0: 何も</li><li>4: この **エントリに対して AuditAllowed** と **AuditDenied を** 無効にします。 ブロックが **発生** し、AuditDenied が構成されている場合でも、システムは通知を表示されません。 </li></ul> <p> Type **AuditAllowed または** **AuditDenied が** 選択されている場合: <ul><li>0: 何も</li><li>1: 通知を表示する</li><li>2: 送信イベント</li><li>3: 通知を表示し、イベントを送信する </li></ul>|
@@ -163,7 +163,7 @@ Intune でのポリシーの展開では、デバイス構成プロファイル�
 
 - ポリシーとプロファイル マネージャーの役割
 - デバイス構成プロファイルに対してレポートの作成/編集/更新/読み取り/削除/表示権限を有効にしたカスタム ロール
-- 全体管理者
+- グローバル管理者
 
 ### <a name="deploying-policy-via-oma-uri"></a>OMA-URI によるポリシーの展開
 
@@ -185,7 +185,7 @@ Microsoft エンドポイント マネージャー センター ( ) デバイス
 2. ポリシーごとに、OMA-URI も作成します。
     - OMA-URI: 
 
-      `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bFA6BE102-0784-4A2A-B010-A0BEBEBF68E1%7d/RuleData`
+      `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7b**PolicyRuleGUID**%7d/RuleData`
 
       たとえば、ブロック書き込みおよび実行アクセスの場合、サンプルで承認 **された USB** ルールを許可するには、次のリンクが必要です。
 

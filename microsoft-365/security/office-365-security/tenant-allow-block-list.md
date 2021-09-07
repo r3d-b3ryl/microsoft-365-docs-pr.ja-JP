@@ -16,12 +16,12 @@ ms.collection:
 description: 管理者は、セキュリティ ポータルのテナント許可/ブロック一覧で許可とブロックを管理する方法について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4ff987128047522a5f8cb20a76c81bd950c1b7cf
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: aca302aedfaa97b9e2661716d7bc7a6e846fa6fb
+ms.sourcegitcommit: 99f7bd19e9c6997f0dbff7f59cb29a9768044b54
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568734"
+ms.lasthandoff: 09/04/2021
+ms.locfileid: "58896491"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>テナントの許可/禁止リストを管理する
 
@@ -66,7 +66,7 @@ Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Pro
 
 - 使用可能な URL 値については、この記事の後半の「 [テナント許可/](#url-syntax-for-the-tenant-allowblock-list) ブロック一覧」セクションの URL 構文で説明します。
 
-- テナント許可/ブロック一覧では、送信者に対して最大 500 エントリ、URL に対して 500 エントリ、ファイル ハッシュのエントリを 500 エントリまで使用できます。
+- テナント許可/ブロック一覧では、送信者に対して最大 500 エントリ、URL のエントリ 500 エントリ、ファイル ハッシュのエントリ 500 エントリ、スプーフィング (スプーフィング送信者) 用の 1024 エントリを使用できます。
 
 - 各エントリの最大文字数は次の値です。
   - ファイル ハッシュ = 64
@@ -92,7 +92,7 @@ Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Pro
   >
   > - Microsoft 365 管理センターで、対応する Azure Active Directory の役割にユーザーを追加すると、ユーザーには、必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
   >
-  > - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
+  > - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
 
 ## <a name="configure-the-tenant-allowblock-list"></a>テナント許可/ブロック一覧の構成
 

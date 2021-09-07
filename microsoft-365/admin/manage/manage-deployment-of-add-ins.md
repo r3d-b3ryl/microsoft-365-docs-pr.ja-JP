@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 管理センターで集中展開を使用して、組織内のユーザーとグループにアドインを展開する方法について説明します。
-ms.openlocfilehash: 8de912ce6762037d905847dcabdcc20778d347e3
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: 522a1884752e0ada6b43ba68a853cb117c8dfd75
+ms.sourcegitcommit: 99f7bd19e9c6997f0dbff7f59cb29a9768044b54
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394242"
+ms.lasthandoff: 09/04/2021
+ms.locfileid: "58896479"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>管理センターでアドインを展開する
 
@@ -135,5 +135,6 @@ Office アドインの種類と機能の詳細については、「[Office ア�
 
 [管理センターでアドインを管理](manage-addins-in-the-admin-center.md) する (記事)\
 [最初の Word 作業ウィンドウ アドインをビルド](/office/dev/add-ins/quickstarts/word-quickstart?tabs=yeomangenerator) する (記事\
-[未成年者と](minors-and-acquiring-addins-from-the-store.md) ストアからアドインを取得する (記事)\集中展開 [PowerShell](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) コマンドレットを使用してアドインを管理する (記事)\  
+[未成年者とストアからアドインを取得](minors-and-acquiring-addins-from-the-store.md) する (記事)\
+[集中展開 PowerShell コマンドレットを使用してアドイン](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) を管理する (記事)\
 [トラブルシューティング: アドインが表示されないユーザー](/office365/troubleshoot/access-management/user-not-seeing-add-ins) (記事)

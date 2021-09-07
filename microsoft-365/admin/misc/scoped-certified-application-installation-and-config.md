@@ -16,12 +16,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: ServiceNow のスコープ認定アプリケーションのインストールと構成ガイド。
-ms.openlocfilehash: f21353aa54cfee3b85a6e9d846aa4fce37cc13f5
-ms.sourcegitcommit: 8ef23d275d7209a705295e2b117d4382b20ad4f7
+ms.openlocfilehash: a86525d9da1f36316ed0accacb2fde676831cc95
+ms.sourcegitcommit: 99f7bd19e9c6997f0dbff7f59cb29a9768044b54
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58866723"
+ms.lasthandoff: 09/04/2021
+ms.locfileid: "58896515"
 ---
 # <a name="microsoft-365-support-integration-with-servicenow-configuration-guide"></a>Microsoft 365 ServiceNow 構成ガイドとの統合をサポートする
 
@@ -210,39 +210,39 @@ Microsoft 365サポート統合を使用すると、ヘルプMicrosoft 365、サ
 
 5. \[ServiceNow 管理者であるユーザー \] 受信 OAuth プロバイダーを設定します。
 
-- [現在の **手順をスキップする] のチェックを外します**。
+    - [現在の **手順をスキップする] のチェックを外します**。
 
-- [外部 **OIDC 認証トークン] のチェックを外します**。
+    - [外部 **OIDC 認証トークン] のチェックを外します**。
 
-- 前提条件 (基本認証) 手順 3 で作成 [した OAuth クライアント](#prerequisites-basic-authentication) を選択し、[ \# 次へ] を **選択します**。
+    - 前提条件 (基本認証) 手順 3 で作成 [した OAuth クライアント](#prerequisites-basic-authentication) を選択し、[ \# 次へ] を **選択します**。
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image13.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、電子メールの説明が自動的に生成される":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image13.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、電子メールの説明が自動的に生成される":::
 
 6. \[ServiceNow 管理者であるユーザー \] 受信呼び出し統合ユーザーを設定します。
 
-- [現在の **手順をスキップする] のチェックを外します**。
+    - [現在の **手順をスキップする] のチェックを外します**。
 
-- 前提条件 (基本認証) 手順 4 で作成 [した](#prerequisites-basic-authentication) 統合ユーザーを選択し、[ \# 次へ] を **選択します**。
+    - 前提条件 (基本認証) 手順 4 で作成 [した](#prerequisites-basic-authentication) 統合ユーザーを選択し、[ \# 次へ] を **選択します**。
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image14.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーションの説明が自動的に生成される":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image14.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーションの説明が自動的に生成される":::
 
 7. \[ServiceNow 管理者であるユーザー リポジトリ \] ID を設定します。
 
-リポジトリ ID を指定し、[次へ] を **選択します**。
+    リポジトリ ID を指定し、[次へ] を **選択します**。
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image15.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーションの説明が自動的に生成される":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image15.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーションの説明が自動的に生成される":::
 
 8. \[ServiceNow 管理者であるユーザー アプリケーション \] の設定を設定します。
 
-次の設定を選択し、[次へ] を **選択します**。
+    次の設定を選択し、[次へ] を **選択します**。
 
-- SSO と Microsoft 365: ServiceNow インスタンスが SSO として設定されているかどうかを確認し、Microsoft 365チェックを外します。
+    - SSO と Microsoft 365: ServiceNow インスタンスが SSO として設定されているかどうかを確認し、Microsoft 365チェックを外します。
 
-- Microsoft 365メール: サポート ケースの作成時にMicrosoft 365された管理者ユーザー Microsoft 365メール。
+    - Microsoft 365メール: サポート ケースの作成時にMicrosoft 365された管理者ユーザー Microsoft 365メール。
 
-- テスト環境: このチェック ボックスをオンにして、Microsoft サポート エージェントが問題に対処するために連絡を取るのを避けるためのテスト フェーズを示します。 サポート統合を使用して正式に進む準備ができたらMicrosoft 365チェックを外します。
+    - テスト環境: このチェック ボックスをオンにして、Microsoft サポート エージェントが問題に対処するために連絡を取るのを避けるためのテスト フェーズを示します。 サポート統合を使用して正式に進む準備ができたらMicrosoft 365チェックを外します。
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image16.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーションの説明が自動的に生成される":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image16.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーションの説明が自動的に生成される":::
 
 9. \[テナントのヘルプデスク管理者またはサービス要求管理者であるMicrosoft 365 \] 統合を完了します。
 
@@ -260,21 +260,21 @@ Microsoft 365サポート統合を使用すると、ヘルプMicrosoft 365、サ
 
         1. [リポジトリ] **タブで**、[リポジトリの追加] **を選択** して、次の設定で新しいリポジトリを作成します。
 
-        - リポジトリ: ページ **ステップ -** 6 からのリポジトリ ID の値 統合を完了します。
+            - リポジトリ: ページ **ステップ -** 6 からのリポジトリ ID の値 統合を完了します。
 
-        - Endpoint: **Page Step** - 6 Complete the Endpoint value from page Step - 6 Complete the integration.
+            - Endpoint: **Page Step** - 6 Complete the Endpoint value from page Step - 6 Complete the integration.
 
-        - 認証の種類: [ **基本認証] を選択します**。
+            - 認証の種類: [ **基本認証] を選択します**。
 
-        - クライアント ID: ページ **ステップ -** 6 からのクライアント ID の値 統合を完了します。
+            - クライアント ID: ページ **ステップ -** 6 からのクライアント ID の値 統合を完了します。
 
-        - クライアント シークレット: 前提条件 (基本認証 [)](#prerequisites-basic-authentication) 手順 3 で作成された受信 OAuth プロバイダーの \# シークレット。
+            - クライアント シークレット: 前提条件 (基本認証 [)](#prerequisites-basic-authentication) 手順 3 で作成された受信 OAuth プロバイダーの \# シークレット。
 
-        - 更新トークンの有効期限: 864000
+            - 更新トークンの有効期限: 864000
 
-        - ユーザー名の残り: **[手順] -** [6] ページの [ユーザー名] の値統合を完了します。
+            - ユーザー名の残り: **[手順] -** [6] ページの [ユーザー名] の値統合を完了します。
 
-        - ユーザーの残りのパスワード: 前提条件 (基本認証 [)](#prerequisites-basic-authentication) 手順 4 で作成された統合ユーザー \# のパスワード。
+            - ユーザーの残りのパスワード: 前提条件 (基本認証 [)](#prerequisites-basic-authentication) 手順 4 で作成された統合ユーザー \# のパスワード。
 
             :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image19.png" alt-text="グラフィカル ユーザー インターフェイス、アプリケーションの説明が自動的に生成される":::
 
@@ -282,24 +282,24 @@ Microsoft 365サポート統合を使用すると、ヘルプMicrosoft 365、サ
 
     1. [次 **へ] を** 選択して統合を完了します。
 
-    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image20.png" alt-text="グラフィカル ユーザー インターフェイス、アプリケーション、Web サイトの説明が自動的に生成される":::
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image20.png" alt-text="グラフィカル ユーザー インターフェイス、アプリケーション、Web サイトの説明が自動的に生成される":::
 
 10. \[ServiceNow 管理者であるユーザー 既存のユーザー Microsoft 365 \] サポート統合を有効にする。
 
-Microsoft 365サポート統合が有効になっているのは、次のいずれかの役割を持つユーザーのみです。
+    Microsoft 365サポート統合が有効になっているのは、次のいずれかの役割を持つユーザーのみです。
 
-- x \_ mioms \_ m365 \_ assis.insights \_ ユーザー
+    - x \_ mioms \_ m365 \_ assis.insights \_ ユーザー
 
-- x \_ mioms \_ m365 \_ assis.administrator
+    - x \_ mioms \_ m365 \_ assis.administrator
 
-> [!NOTE]
-> 役割 x \_ mioms m365 assis.insights ユーザー ロールを持つユーザーは、 \_ \_ \_ サービス正常性インシデント、推奨されるソリューションを参照できます。 ロール x \_ mioms \_ m365 assis.administrator を持つユーザーは、サポートを受Microsoft 365 \_ できます。
+    > [!NOTE]
+    > 役割 x \_ mioms m365 assis.insights ユーザー ロールを持つユーザーは、 \_ \_ \_ サービス正常性インシデント、推奨されるソリューションを参照できます。 ロール x \_ mioms \_ m365 assis.administrator を持つユーザーは、サポートを受Microsoft 365 \_ できます。
 
 11. \[オプション \] \[ 役割を持つユーザー x_mioms_m365_assis.administrator \] リンク Microsoft 365 管理 アカウントです。
 
-ユーザーが役割 x \_ mioms \_ m365 assis.administrator を持ち、Microsoft 365 サポート ケースを管理するために異なる Microsoft 365 アカウントを使用している場合は、Microsoft 365 サポート \_ > リンク アカウントに移動して、Microsoft 365 管理者メールを設定する必要があります。
+    ユーザーが役割 x \_ mioms \_ m365 assis.administrator を持ち、Microsoft 365 サポート ケースを管理するために異なる Microsoft 365 アカウントを使用している場合は、Microsoft 365 サポート \_ > リンク アカウントに移動して、Microsoft 365 管理者メールを設定する必要があります。
 
- :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image21.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーションの説明が自動的に生成される":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image21.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーションの説明が自動的に生成される":::
 
 ## <a name="set-up-microsoft-365-support-integration-with-aad-oauth-token"></a>AAD OAuth トークンMicrosoft 365サポート統合のセットアップ
 
@@ -381,30 +381,30 @@ Microsoft 365サポート統合が有効になっているのは、次のいず�
 
     1. **[OAuth OIDC プロバイダーの** 構成] で、[検索] を選択し、[oidc プロバイダーの構成.list] の下で、次の値を使用して新しい OIDC プロバイダー構成 \_ \_ を作成します。
 
-    - OIDC プロバイダー: Contoso Azure
+        - OIDC プロバイダー: Contoso Azure
 
-    - OIDC メタデータ URL: `https://login.microsoftonline.com/{microsoft-365-tenant-name}/.well-known/openid-configuration`
+        - OIDC メタデータ URL: `https://login.microsoftonline.com/{microsoft-365-tenant-name}/.well-known/openid-configuration`
 
-    - UserClaim: **appId**
+        - UserClaim: **appId**
 
-    - ユーザー フィールド: **ユーザー ID**
+        - ユーザー フィールド: **ユーザー ID**
 
-    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image24.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーションの説明が自動的に生成される":::
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image24.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーションの説明が自動的に生成される":::
 
     1. [次の値で ID トークンを確認する **OIDC** プロバイダーを構成する] を選択して、新しいアプリケーションを作成します。
 
-    - 名前: contoso \_ アプリケーション \_ の受信 \_ API
+        - 名前: contoso \_ アプリケーション \_ の受信 \_ API
 
-    - クライアント ID: 前提条件 [(AAD OAuth トークン)](#prerequisites-aad-oauth-token) の手順 2 で作成されたアプリケーションのクライアント \# ID。
+        - クライアント ID: 前提条件 [(AAD OAuth トークン)](#prerequisites-aad-oauth-token) の手順 2 で作成されたアプリケーションのクライアント \# ID。
 
-    - クライアント シークレット: 前提条件 [(AAD OAuth トークン)](#prerequisites-aad-oauth-token) の手順 2 で作成されたアプリケーションのアプリ \# シークレット。
+        - クライアント シークレット: 前提条件 [(AAD OAuth トークン)](#prerequisites-aad-oauth-token) の手順 2 で作成されたアプリケーションのアプリ \# シークレット。
 
-    - OAuth OIDC プロバイダーの構成: 最後の手順で作成した OIDC プロバイダー。
+        - OAuth OIDC プロバイダーの構成: 最後の手順で作成した OIDC プロバイダー。
 
-    - リダイレクト URL:  
-        `https://{service-now-instance-name}.service-now.com/oauth_redirect.do`
+        - リダイレクト URL:  
+            `https://{service-now-instance-name}.service-now.com/oauth_redirect.do`
 
-    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image25.png" alt-text="グラフィカル ユーザー インターフェイス、アプリケーションの説明が自動的に生成される":::
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image25.png" alt-text="グラフィカル ユーザー インターフェイス、アプリケーションの説明が自動的に生成される":::
 
 6. \[ServiceNow 管理者であるユーザー統合 \] ユーザーの作成。
 
@@ -439,24 +439,24 @@ Microsoft 365サポート統合が有効になっているのは、次のいず�
 
 1. \[ServiceNow 管理者であるユーザー スコープをサポート統合 \] Microsoft 365切り替えます。
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image9.png" alt-text="グラフィカル ユーザー インターフェイス、テーブルの説明が自動的に生成される":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image9.png" alt-text="グラフィカル ユーザー インターフェイス、テーブルの説明が自動的に生成される":::
 
 2. \[ServiceNow 管理者であるユーザー 統合フローを開 \] Microsoft 365セットアップ>**サポート** に移動します。
 
-> [!NOTE]
-> "スコープ \_ 'x \_ mioms \_ m365 \_ assis' からの 'oauth エンティティに対する読み取り操作' というエラーがテーブルのクロススコープ アクセス ポリシーによって拒否された場合、テーブル アクセス ポリシーが原因で発生しました。 [読み取り可能なすべての **アプリケーション スコープ]**  >  **がテーブル** oauth エンティティに対してチェックされている必要 \_ があります。
+    > [!NOTE]
+    > "スコープ \_ 'x \_ mioms \_ m365 \_ assis' からの 'oauth エンティティに対する読み取り操作' というエラーがテーブルのクロススコープ アクセス ポリシーによって拒否された場合、テーブル アクセス ポリシーが原因で発生しました。 [読み取り可能なすべての **アプリケーション スコープ]**  >  **がテーブル** oauth エンティティに対してチェックされている必要 \_ があります。
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image27.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、電子メールの説明が自動的に生成される":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image27.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、電子メールの説明が自動的に生成される":::
 
 3. \[ServiceNow 管理者であるユーザーが同意 \] に **同意** する場合は、[同意する] を選択します。
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image11.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、電子メールの説明が自動的に生成される":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image11.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、電子メールの説明が自動的に生成される":::
 
 4. \[ServiceNow 管理者であるユーザー \] 送信 OAuth プロバイダーを設定します。
 
-前提条件 [(AAD OAuth トークン)](#prerequisites-aad-oauth-token) の手順 4 で作成された送信 OAuth プロバイダーの OAuth プロファイルを選択し、[次 \# へ] を **選択します**。
+    前提条件 [(AAD OAuth トークン)](#prerequisites-aad-oauth-token) の手順 4 で作成された送信 OAuth プロバイダーの OAuth プロファイルを選択し、[次 \# へ] を **選択します**。
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image12.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、電子メールの説明が自動的に生成される":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image12.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、電子メールの説明が自動的に生成される":::
 
 5. \[ServiceNow 管理者であるユーザー \] 受信 OAuth プロバイダーを設定します。
 
@@ -466,7 +466,7 @@ Microsoft 365サポート統合が有効になっているのは、次のいず�
 
     1. 前提条件 [(AAD OAuth トークン)](#prerequisites-aad-oauth-token) の手順 5 で作成した OAuth クライアントを選択し、[次へ] を **選択します**。
 
-    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image28.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーションの説明が自動的に生成される":::
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image28.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーションの説明が自動的に生成される":::
 
 6. \[ServiceNow 管理者であるユーザー 受信呼び出し統合 \] ユーザーを設定します。
 
@@ -474,7 +474,7 @@ Microsoft 365サポート統合が有効になっているのは、次のいず�
 
     1. 前提条件 [(AAD OAuth トークン)](#prerequisites-aad-oauth-token) の手順 3 で作成されたアプリケーションのクライアント ID を入力し、[ \# 次へ] を **選択します**。
 
-    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image39.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、電子メールの説明が自動的に生成される":::
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image39.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、電子メールの説明が自動的に生成される":::
 
 7. \[ServiceNow 管理者であるユーザー \] リポジトリ ID を設定します。
 
@@ -510,23 +510,23 @@ Microsoft 365サポート統合が有効になっているのは、次のいず�
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image18.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、電子メールの説明が自動的に生成される":::
 
-    1. [リポジトリ **] タブで** 、[リポジトリの **追加] を選択** して、次の情報を含む新しいリポジトリを作成します。
+        1. [リポジトリ **] タブで** 、[リポジトリの **追加] を選択** して、次の情報を含む新しいリポジトリを作成します。
 
-    - リポジトリ: [ステップ - 6 統合の完了] ページのリポジトリ **ID** 値を使用します。
+            - リポジトリ: [ステップ - 6 統合の完了] ページのリポジトリ **ID** 値を使用します。
 
-    - Endpoint: **Step** - 6 Complete the integration page の Endpoint 値。
+            - Endpoint: **Step** - 6 Complete the integration page の Endpoint 値。
 
-    - 認証の種類: **[AAD Auth] を選択します**。
+            - 認証の種類: **[AAD Auth] を選択します**。
 
-    - クライアント ID: ステップ - 6 [統合の完了] ページの [クライアント **ID]** の値 。これは、前提条件 [(AAD OAuth トークン)](#prerequisites-aad-oauth-token) ステップ 2 で作成されたアプリケーションのクライアント ID です \# 。
+            - クライアント ID: ステップ - 6 [統合の完了] ページの [クライアント **ID]** の値 。これは、前提条件 [(AAD OAuth トークン)](#prerequisites-aad-oauth-token) ステップ 2 で作成されたアプリケーションのクライアント ID です \# 。
 
-    - 残りのユーザー名: [ステップ - 6 統合の完了] ページの [ユーザー名] の値 (前提条件 [(AAD OAuth トークン)](#prerequisites-aad-oauth-token)ステップ 3 で作成されたアプリケーションのクライアント **ID** です \# 。
+            - 残りのユーザー名: [ステップ - 6 統合の完了] ページの [ユーザー名] の値 (前提条件 [(AAD OAuth トークン)](#prerequisites-aad-oauth-token)ステップ 3 で作成されたアプリケーションのクライアント **ID** です \# 。
 
-    - ユーザーパスワードの保存: 前提条件 [(AAD OAuth トークン)](#prerequisites-aad-oauth-token) の手順 3 で作成されたアプリケーションのアプリ シークレット \# 。
+            - ユーザーパスワードの保存: 前提条件 [(AAD OAuth トークン)](#prerequisites-aad-oauth-token) の手順 3 で作成されたアプリケーションのアプリ シークレット \# 。
 
-        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image31.png" alt-text="グラフィカル ユーザー インターフェイス、アプリケーションの説明が自動的に生成される":::
+                :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image31.png" alt-text="グラフィカル ユーザー インターフェイス、アプリケーションの説明が自動的に生成される":::
 
-    1. 戻って、統合を保存するボタンを選択します。
+        1. 戻って、統合を保存するボタンを選択します。
 
     1. [次 **へ] を** 選択して統合を完了します。
 
@@ -534,20 +534,20 @@ Microsoft 365サポート統合が有効になっているのは、次のいず�
 
 10. \[ServiceNow 管理者であるユーザー 既存のユーザー Microsoft 365 \] サポート統合を有効にする。
 
-Microsoft 365の統合は、次の役割を持つユーザーにのみ有効になります。
+    Microsoft 365の統合は、次の役割を持つユーザーにのみ有効になります。
 
-- x \_ mioms \_ m365 \_ assis.insights \_ ユーザー
+    - x \_ mioms \_ m365 \_ assis.insights \_ ユーザー
 
-- x \_ mioms \_ m365 \_ assis.administrator
+    - x \_ mioms \_ m365 \_ assis.administrator
 
-> [!NOTE]
-> 役割 x \_ mioms \_ m365 \_ assis.insights ユーザーは、 \_ サービス正常性インシデント、推奨されるソリューションを確認できます。 ロール x \_ mioms \_ m365 assis.administrator を持つユーザーは、サポートを受Microsoft 365 \_ できます。
+    > [!NOTE]
+    > 役割 x \_ mioms \_ m365 \_ assis.insights ユーザーは、 \_ サービス正常性インシデント、推奨されるソリューションを確認できます。 ロール x \_ mioms \_ m365 assis.administrator を持つユーザーは、サポートを受Microsoft 365 \_ できます。
 
 11. **\[オプション \] \[ 役割を持つユーザー x_mioms_m365_assis.administrator \] リンク Microsoft 365 管理 アカウント**
 
-ユーザーが "x \_ mioms \_ m365 assis.administrator" という役割を持ち、Microsoft サポート ケースを管理するために異なる Microsoft 365 アカウントを使用している場合は、Microsoft 365 サポート > リンク アカウントに移動して \_ 、Microsoft 365 管理者メールを設定する必要があります。
+    ユーザーが "x \_ mioms \_ m365 assis.administrator" という役割を持ち、Microsoft サポート ケースを管理するために異なる Microsoft 365 アカウントを使用している場合は、Microsoft 365 サポート > リンク アカウントに移動して \_ 、Microsoft 365 管理者メールを設定する必要があります。
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image21.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーションの説明が自動的に生成される":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image21.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーションの説明が自動的に生成される":::
 
 ## <a name="set-up-microsoft-365-support-integration-for-insights-only"></a>サポート統合Microsoft 365のセットアップのみインサイトする
 
@@ -581,17 +581,17 @@ Microsoft 365の統合は、次の役割を持つユーザーにのみ有効に�
 
     1. サードパーティの OAuth プロバイダーにアクセスする方法を選択してConnectを使用して、新しい **アプリケーションを作成します**。
 
-    - クライアント ID: 前提条件[(インサイトのみ) で作成されたアプリケーションの](#prerequisites-insights-only)クライアント ID  \# 1
+        - クライアント ID: 前提条件[(インサイトのみ) で作成されたアプリケーションの](#prerequisites-insights-only)クライアント ID  \# 1
 
-    - クライアント シークレット: 前提条件[(インサイトのみ) で作成されたアプリケーションの](#prerequisites-insights-only)アプリ シークレット \# 手順 1
+        - クライアント シークレット: 前提条件[(インサイトのみ) で作成されたアプリケーションの](#prerequisites-insights-only)アプリ シークレット \# 手順 1
 
-    - 既定の付与の種類: クライアント資格情報
+        - 既定の付与の種類: クライアント資格情報
 
-    - トークン URL: `https://login.microsoftonline.com/{microsoft-365-tenant-name}/oauth2/token`
+        - トークン URL: `https://login.microsoftonline.com/{microsoft-365-tenant-name}/oauth2/token`
 
-    - リダイレクト URL: `https://{servicenow-instance-name}.service-now.com/oauth_redirect.do`
+        - リダイレクト URL: `https://{servicenow-instance-name}.service-now.com/oauth_redirect.do`
 
-    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image6.png" alt-text="グラフィカル ユーザー インターフェイス、アプリケーションの説明が自動的に生成される":::
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image6.png" alt-text="グラフィカル ユーザー インターフェイス、アプリケーションの説明が自動的に生成される":::
 
 ### <a name="set-up-microsoft-365-support-integration"></a>サポート統合Microsoft 365設定する
 
@@ -601,24 +601,24 @@ ServiceNow インスタンスと Microsoft サポートの間の統合をセッ�
 
 1. \[ServiceNow 管理者であるユーザー スコープをサポート統合 \] Microsoft 365切り替えます。
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image9.png" alt-text="グラフィカル ユーザー インターフェイス、テーブルの説明が自動的に生成される":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image9.png" alt-text="グラフィカル ユーザー インターフェイス、テーブルの説明が自動的に生成される":::
 
 2. \[ServiceNow 管理者であるユーザー 統合フローを開 \] Microsoft 365セットアップ>**サポート** に移動します。
 
-> [!NOTE]
-> "スコープ \_ 'x \_ mioms \_ m365 \_ assis' からの 'oauth エンティティに対する読み取り操作' というエラーがテーブルのクロススコープ アクセス ポリシーによって拒否された場合、テーブル アクセス ポリシーが原因で発生しました。 [読み取り可能なすべての **アプリケーション スコープ]**  >  **がテーブル** oauth エンティティに対してチェックされている必要 \_ があります。
+    > [!NOTE]
+    > "スコープ \_ 'x \_ mioms \_ m365 \_ assis' からの 'oauth エンティティに対する読み取り操作' というエラーがテーブルのクロススコープ アクセス ポリシーによって拒否された場合、テーブル アクセス ポリシーが原因で発生しました。 [読み取り可能なすべての **アプリケーション スコープ]**  >  **がテーブル** oauth エンティティに対してチェックされている必要 \_ があります。
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image27.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、電子メールの説明が自動的に生成される":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image27.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、電子メールの説明が自動的に生成される":::
 
 3. \[ServiceNow 管理者であるユーザーが同意 \] に **同意** する場合は、[同意する] を選択します。
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image11.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、電子メールの説明が自動的に生成される":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image11.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、電子メールの説明が自動的に生成される":::
 
 4. \[ServiceNow 管理者であるユーザー \] 送信 OAuth プロバイダーを設定します。
 
-[送信 OAuth プロバイダー] で [OAuth プロファイル] を選択し、[次へ] を **選択します**。
+    [送信 OAuth プロバイダー] で [OAuth プロファイル] を選択し、[次へ] を **選択します**。
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image12.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、電子メールの説明が自動的に生成される":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image12.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、電子メールの説明が自動的に生成される":::
 
 5. \[ServiceNow 管理者であるユーザーは、 \] 受信 OAuth プロバイダーをスキップします。
 
@@ -634,9 +634,9 @@ ServiceNow インスタンスと Microsoft サポートの間の統合をセッ�
 
 7. \[ServiceNow 管理者であるユーザー リポジトリ \] ID を設定します。
 
-リポジトリ ID を指定し、[次へ] を **選択します**。
+    リポジトリ ID を指定し、[次へ] を **選択します**。
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image15.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーションの説明が自動的に生成される":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image15.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーションの説明が自動的に生成される":::
 
 8. \[ServiceNow 管理者であるユーザー [アプリケーションの設定 \] ] 設定。
 
@@ -666,19 +666,19 @@ ServiceNow インスタンスと Microsoft サポートの間の統合をセッ�
 
         1. [リポジトリ **] タブで** 、[リポジトリの **追加] を選択** して、次の情報を含む新しいリポジトリを作成します。
 
-        - リポジトリ: [ **ステップ -** 6 統合の完了] ページのリポジトリ ID 値。
+            - リポジトリ: [ **ステップ -** 6 統合の完了] ページのリポジトリ ID 値。
 
-        - Endpoint: **Step** - 6 Complete the integration page の Endpoint 値。
+            - Endpoint: **Step** - 6 Complete the integration page の Endpoint 値。
 
-        - 認証の種類: **[AAD Auth] を選択します**。
+            - 認証の種類: **[AAD Auth] を選択します**。
 
-        - クライアント ID: 無視などのランダムな **値** です。
+            - クライアント ID: 無視などのランダムな **値** です。
 
-        - 残りのユーザー名: 無視などのランダムな **値** です。
+            - 残りのユーザー名: 無視などのランダムな **値** です。
 
-        - ユーザー パスワードの保存: 無視などのランダムな **値** です。
+            - ユーザー パスワードの保存: 無視などのランダムな **値** です。
 
-            :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image36.png" alt-text="グラフィカル ユーザー インターフェイス、アプリケーションの説明が自動的に生成される":::
+                :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image36.png" alt-text="グラフィカル ユーザー インターフェイス、アプリケーションの説明が自動的に生成される":::
 
         1. 戻って、統合を保存するボタンを選択します。
 
@@ -688,14 +688,14 @@ ServiceNow インスタンスと Microsoft サポートの間の統合をセッ�
 
 10. \[ServiceNow 管理者であるユーザー 既存のユーザー Microsoft 365 \] サポート統合を有効にする。
 
-Microsoft 365の統合は、次のユーザー ロールでのみ有効になります。
+    Microsoft 365の統合は、次のユーザー ロールでのみ有効になります。
 
-- x \_ mioms \_ m365 \_ assis.insights \_ ユーザー
+    - x \_ mioms \_ m365 \_ assis.insights \_ ユーザー
 
-- x \_ mioms \_ m365 \_ assis.administrator
+    - x \_ mioms \_ m365 \_ assis.administrator
 
-> [!NOTE] 
-> ロール x_mioms_m365_assis.insights_user を持つユーザーは、[サービス正常性インシデント] [推奨されるソリューション] を表示できます。 ロール x_mioms_m365_assis.administrator を持つユーザーは、サポートを受Microsoft 365できます。 [インサイトのみ] を使用すると、管理者にロールを割りx_mioms_m365_assisする必要があります。
+    > [!NOTE] 
+    > ロール x_mioms_m365_assis.insights_user を持つユーザーは、[サービス正常性インシデント] [推奨されるソリューション] を表示できます。 ロール x_mioms_m365_assis.administrator を持つユーザーは、サポートを受Microsoft 365できます。 [インサイトのみ] を使用すると、管理者にロールを割りx_mioms_m365_assisする必要があります。
 
 ## <a name="testing-the-configuration"></a>構成のテスト
 
@@ -709,7 +709,7 @@ Microsoft 365の統合は、次のユーザー ロールでのみ有効になり
 
 3. [サポート] **Microsoft 365に集中** し、[サポート] タブMicrosoft 365 インサイトを選択して **、推奨** されるソリューションが正常に取得されたかどうかを判断します。
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image38.png" alt-text="グラフィカル ユーザー インターフェイス、アプリケーション、Web サイトの説明が自動的に生成される":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image38.png" alt-text="グラフィカル ユーザー インターフェイス、アプリケーション、Web サイトの説明が自動的に生成される":::
 
 ##  <a name="troubleshooting"></a>トラブルシューティング
 

@@ -15,17 +15,16 @@ ms.reviewer: pahuijbr
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: 91b482aa189ff7e9d4ff69183718abf354d19d0f
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.openlocfilehash: 04683635399c2cd1efbf6cceca95fa0cfe1b2775
+ms.sourcegitcommit: 99f7bd19e9c6997f0dbff7f59cb29a9768044b54
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823831"
+ms.lasthandoff: 09/04/2021
+ms.locfileid: "58896443"
 ---
 # <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>Microsoft Defender ウイルス対策更新プログラムのソースを管理する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **適用対象:**
 
@@ -45,6 +44,7 @@ ms.locfileid: "58823831"
 > Microsoft Defender ウイルス対策セキュリティ インテリジェンス更新プログラムは Windows Update を通じて配信され、2019 年 10 月 21 日月曜日から開始され、すべてのセキュリティ インテリジェンス更新プログラムは SHA-2 署名専用となります。 セキュリティ インテリジェンスを更新するには、SHA-2 をサポートするためにデバイスを更新する必要があります。 詳細については[、「2019 SHA-2 Code Signing Support requirement for Windows WSUS」を参照してください](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus)。
 
 <a id="fallback-order"></a>
+
 ## <a name="fallback-order"></a>フォールバック順序
 
 通常、プライマリ ソースから更新プログラムを個別にダウンロードし、その後、ネットワーク構成に基づいて優先度の高い順に他のソースをダウンロードするエンドポイントを構成します。 更新プログラムは、指定した順序でソースから取得されます。 ソースが使用できない場合は、リスト内の次のソースがすぐに使用されます。
@@ -59,7 +59,7 @@ ms.locfileid: "58823831"
 エンドポイントが更新プログラムを取得する場所を指定できる場所は 5 種類です。
 
 - [Microsoft Update](https://support.microsoft.com/help/12373/windows-update-faq)
-- [Windowsサーバー更新サービス](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus)
+- [Windows Server Update Service](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) (Intune Internal Definition Update Server - SCCM/SUP を使用して Microsoft Defender ウイルス対策 の定義更新プログラムを取得し、クライアント デバイスでブロックされている Windows Update にアクセスする必要がある場合は、共同管理に移行し、エンドポイント保護ワークロードを Intune にオフロードできます。 Intune で構成されたマルウェア対策ポリシーには、オンプレミスの WSUS を更新ソースとして使用するように構成できる '内部定義更新サーバー' のオプションがあります)
 - [Microsoft Endpoint Configuration Manager](/configmgr/core/servers/manage/updates)
 - [ネットワーク ファイル共有](#unc-share)
 - [Microsoft Defender ウイルス対策 および他の Microsoft](https://www.microsoft.com/wdsi/defenderupdates)マルウェア対策のセキュリティ インテリジェンス更新プログラム (ポリシーとレジストリには、Microsoft マルウェア プロテクション センター (MMPC) セキュリティ インテリジェンス (以前の名前) としてリストされている可能性があります)。
@@ -109,7 +109,7 @@ Microsoft Update では、最高レベルの保護を確保するために、迅
 
       :::image type="content" source="../../media/wdav-order-update-sources.png" alt-text="ソースの順序を示すグループ ポリシー設定。":::
 
-   3. **[OK]** を選択します。 これにより、保護更新プログラムのソースの順序が設定されます。
+   3. **[OK]** をクリックします。 これにより、保護更新プログラムのソースの順序が設定されます。
 
    4. [セキュリティ インテリジェンス更新プログラムをダウンロード **するための** ファイル共有の定義] 設定をダブルクリックし、オプションを [有効] に **設定します**。
 
@@ -167,20 +167,21 @@ MDM [の構成の詳細については、「Policy CSP - Defender/SignatureUpdat
 > Microsoft は、サード パーティ製のソリューションをテストして管理Microsoft Defender ウイルス対策。
 
 <a id="unc-share"></a>
+
 ## <a name="create-a-unc-share-for-security-intelligence-updates"></a>セキュリティ インテリジェンス更新プログラムの UNC 共有を作成する
 
 スケジュールされたタスクを使用して MMPC サイトからセキュリティ インテリジェンス更新プログラムをダウンロードするネットワーク ファイル共有 (UNC/マップドライブ) を設定します。
 
 1. 共有をプロビジョニングして更新プログラムをダウンロードするシステムで、スクリプトを保存するフォルダーを作成します。
 
-    ```DOS
+    ```console
     Start, CMD (Run as admin)
     MD C:\Tool\PS-Scripts\
     ```
 
 2. 署名の更新を保存するフォルダーを作成します。
 
-    ```DOS
+    ```console
     MD C:\Temp\TempSigs\x64
     MD C:\Temp\TempSigs\x86
     ```
@@ -197,12 +198,12 @@ MDM [の構成の詳細については、「Policy CSP - Defender/SignatureUpdat
 
 8. コマンド ラインを使用して、スケジュールされたタスクを設定します。
 
-    > [!NOTE]
-    > 更新プログラムには、完全とデルタの 2 種類があります。
+   > [!NOTE]
+   > 更新プログラムには、完全とデルタの 2 種類があります。
 
    - x64 デルタの場合:
 
-       ```DOS
+       ```powershell
        Powershell (Run as admin)
 
        C:\Tool\PS-Scripts\
@@ -212,7 +213,7 @@ MDM [の構成の詳細については、「Policy CSP - Defender/SignatureUpdat
 
    - x64 フルの場合:
 
-       ```DOS
+       ```powershell
        Powershell (Run as admin)
 
        C:\Tool\PS-Scripts\
@@ -222,7 +223,7 @@ MDM [の構成の詳細については、「Policy CSP - Defender/SignatureUpdat
 
    - x86 デルタの場合:
 
-       ```DOS
+       ```powershell
        Powershell (Run as admin)
 
        C:\Tool\PS-Scripts\
@@ -232,7 +233,7 @@ MDM [の構成の詳細については、「Policy CSP - Defender/SignatureUpdat
 
    - x86 フルの場合:
 
-       ```DOS
+       ```powershell
        Powershell (Run as admin)
 
        C:\Tool\PS-Scripts\
@@ -240,8 +241,9 @@ MDM [の構成の詳細については、「Policy CSP - Defender/SignatureUpdat
        ".\SignatureDownloadCustomTask.ps1 -action create -arch x86 -isDelta $false -destDir C:\Temp\TempSigs\x86 -scriptPath C:\Tool\PS-Scripts\SignatureDownloadCustomTask.ps1 -daysInterval 1"
        ```
 
-    > [!NOTE]
-    > スケジュールされたタスクが作成されると、[タスク スケジューラ] の [Microsoft\Windows\Windows Defender
+   > [!NOTE]
+   > スケジュールされたタスクが作成されると、[タスク スケジューラ] の [Microsoft\Windows\Windows Defender
+
 9. 各タスクを手動で実行し、次のフォルダーにデータ (mpam-d.exe、mpam-fe.exe、および nis_full.exe) が含まれています (別の場所を選択している可能性があります)。
 
    - C:\Temp\TempSigs\x86
@@ -249,7 +251,7 @@ MDM [の構成の詳細については、「Policy CSP - Defender/SignatureUpdat
 
    スケジュールされたタスクが失敗した場合は、次のコマンドを実行します。
 
-    ```DOS
+    ```console
     C:\windows\system32\windowspowershell\v1.0\powershell.exe -NoProfile -executionpolicy allsigned -command "&\"C:\Tool\PS-Scripts\SignatureDownloadCustomTask.ps1\" -action run -arch x64 -isDelta $False -destDir C:\Temp\TempSigs\x64"
 
     C:\windows\system32\windowspowershell\v1.0\powershell.exe -NoProfile -executionpolicy allsigned -command "&\"C:\Tool\PS-Scripts\SignatureDownloadCustomTask.ps1\" -action run -arch x64 -isDelta $True -destDir C:\Temp\TempSigs\x64"
@@ -262,7 +264,7 @@ MDM [の構成の詳細については、「Policy CSP - Defender/SignatureUpdat
     > [!NOTE]
     > 問題は、実行ポリシーが原因である可能性があります。
 
-10. C:\Temp\TempSigs をポイントする共有を作成します (例: \\ server\updates)。
+10. C:\Temp\TempSigs (server\updates など) をポイントする \\ 共有を作成します。
 
     > [!NOTE]
     > 少なくとも、認証されたユーザーには "読み取り" アクセス権が必要です。

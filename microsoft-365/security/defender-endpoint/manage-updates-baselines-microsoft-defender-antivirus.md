@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 08/27/2021
-ms.openlocfilehash: 2ae397e8c1da002c97392a7e96e5b1a89791e90b
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.date: 09/03/2021
+ms.openlocfilehash: 8b5cf1f9e48e6022d2269911606ad69b953d8ec2
+ms.sourcegitcommit: 99f7bd19e9c6997f0dbff7f59cb29a9768044b54
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823915"
+ms.lasthandoff: 09/04/2021
+ms.locfileid: "58896467"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>更新Microsoft Defender ウイルス対策を管理し、基準計画を適用する
 
@@ -409,6 +409,7 @@ Microsoft Defender ウイルス対策プラットフォーム更新 [プログ�
 
 
 ## <a name="microsoft-defender-antivirus-platform-support"></a>Microsoft Defender ウイルス対策サポート
+
 プラットフォームとエンジンの更新プログラムは、毎月提供されます。 完全にサポートするには、最新のプラットフォーム更新プログラムを最新の状態に保つ必要があります。 サポート構造は動的で、最新のプラットフォーム バージョンの可用性に応じて 2 つのフェーズに進化しています。
 
 - **セキュリティと重要な更新** プログラムのサービス フェーズ - 最新のプラットフォーム バージョンを実行すると、マルウェア対策プラットフォームに対するセキュリティ更新プログラムと重要な更新プログラムの両方を受け取る資格があります。
@@ -420,6 +421,7 @@ Microsoft Defender ウイルス対策プラットフォーム更新 [プログ�
 テクニカル サポート (のみ) フェーズでは、Microsoft Customer Service & サポートと Microsoft のマネージ サポートサービス (プレミア サポートなど) を通じて、商業的に合理的なサポート インシデントが提供されます。 サポート インシデントで、さらなるガイダンスのために開発へのエスカレーションが必要な場合、セキュリティ以外の更新プログラムが必要な場合、またはセキュリティ更新プログラムが必要な場合は、最新のプラットフォーム バージョンまたは中間更新プログラム (*)へのアップグレードを求める要求が表示されます。
 
 ### <a name="platform-version-included-with-windows-10-releases"></a>プラットフォームのバージョンは、Windows 10リリースに含まれています
+
 次の表に、最新Microsoft Defender ウイルス対策リリースに同梱されているプラットフォームとエンジンのWindows 10示します。
 
 |Windows 10リリース  |プラットフォームのバージョン  |エンジンのバージョン |サポート フェーズ |
@@ -442,6 +444,17 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 詳細については、「Microsoft Defender update for Windows オペレーティング システムのインストール[イメージ」を参照してください](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)。
 
 <details>
+<summary>1.1.2109.01</summary>
+
+&ensp;パッケージ バージョン: **1.1.2109.01** プラットフォーム バージョン &ensp; : **4.18.2107.4** エンジン バージョン &ensp; : **1.1.18400.5** &ensp; Signature バージョン: **1.347.891.0**
+
+### <a name="fixes"></a>修正プログラム
+- なし
+
+### <a name="additional-information"></a>ページの先頭へ
+- なし
+<br/>
+</details><details>
 <summary>1.1.2108.01</summary>
 
 &ensp;パッケージ バージョン: **1.1.2108.01** プラットフォーム バージョン &ensp; : **4.18.2107.4** エンジン バージョン &ensp; : **1.1.18300.4** &ensp; 署名バージョン: **1.343.2244.0**
