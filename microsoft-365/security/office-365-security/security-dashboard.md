@@ -19,12 +19,12 @@ ms.custom:
 description: 新しいセキュリティ ダッシュボードを使用して、脅威Office 365状態を確認し、セキュリティアラートを表示して処理します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3f945a75f8b15b55c999da95410a6078a48c540e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 18cde7063e8a25426b56ee184b71408016a6116d
+ms.sourcegitcommit: a4e6a5a92ea527461a7835ddc83e2b01986e566b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563732"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "58918353"
 ---
 # <a name="security-dashboard-in-the-security--compliance-center"></a>セキュリティ 管理コンプライアンス センター&ダッシュボード
 
@@ -102,7 +102,7 @@ ms.locfileid: "58563732"
 |スキャンされたメッセージ|スキャンされた電子メール メッセージの数に受信者の数を掛けた数|
 |脅威の停止|マルウェアが含まれていると識別された電子メール メッセージの数に受信者の数を掛けた数|
 |Defender によって[ブロックOffice 365](defender-for-office-365.md)|Defender によってブロックされた電子メール メッセージの数Office 365受信者の数を乗算します。|
-|配信後に削除|0 時間自動削除 [によって削除](zero-hour-auto-purge.md) されたメッセージの数に受信者の数を掛けた数|
+|配信後に削除|ゼロ時間自動削除 [(ZAP)](zero-hour-auto-purge.md) によって削除されたメッセージの数に受信者の数を掛けた数|
 |
 
 ## <a name="malware"></a>マルウェア

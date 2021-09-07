@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 115d8bf2d87067e49d9b00d6c568bea1d865e882
-ms.sourcegitcommit: 99f7bd19e9c6997f0dbff7f59cb29a9768044b54
+ms.openlocfilehash: adecf37f61d5f33023b3f768ad2a3686bc314710
+ms.sourcegitcommit: a4e6a5a92ea527461a7835ddc83e2b01986e566b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/04/2021
-ms.locfileid: "58896503"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "58918341"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender for Endpoint Device Control リムーバブル Storage アクセス制御
 
@@ -238,7 +238,7 @@ DeviceEvents
 
 もう 1 つの理由は、XML ファイルの "&" 文字に適切なマークダウン書式を使用しないなど、XML ファイルが正しく書式設定されていないか、テキスト エディターがファイルの先頭にバイト オーダー マーク (BOM) 0xEF 0xBB 0xBF を追加し、XML 解析が機能しないことです。 1 つの簡単な解決策は、サンプル ファイルを [ダウンロード](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) することです **([Raw]** を選択 **し、[名前** を付けて保存] を選択して) 更新します。
 
-グループ ポリシーを使用してポリシーを展開および管理する場合は、PolicyRule と呼ばれるパラント ノード内の 1 つの XML ファイルに、PolicyRule とすべてのグループをグループと呼ばれるパリアント ノード内の 1 つの XML ファイルに必ず組み合わせてください。Intune で管理する場合は、PolicyRule 1 つの XML ファイル、同じもの、1 つのグループ 1 XML ファイルを保持します。
+グループ ポリシーを使用してポリシーを展開および管理する場合は、PolicyRule と呼ばれる親ノード内の 1 つの XML ファイルに、PolicyRule とすべてのグループをグループと呼ばれる親ノード内の 1 つの XML ファイルに必ず組み合わせてください。Intune で管理する場合は、PolicyRule 1 つの XML ファイル、同じもの、1 つのグループ 1 XML ファイルを保持します。
 
 ### <a name="there-is-no-configuration-ux-for-define-device-control-policy-groups-and-define-device-control-policy-rules-on-my-group-policy"></a>グループ ポリシーに [デバイス制御ポリシー グループの定義] と [デバイス制御ポリシー ルールの定義] の構成 UX はありません。
 

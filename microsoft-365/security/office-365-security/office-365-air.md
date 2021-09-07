@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8f8bdfed9075f2ebc8d189874c6854c4d4a0e50a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 9cc1ddac10ddea4ea50ab1fc339db77a3240552b
+ms.sourcegitcommit: a4e6a5a92ea527461a7835ddc83e2b01986e566b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568254"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "58918305"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Microsoft Defender の自動調査と応答 (AIR) Office 365
 
@@ -93,12 +93,12 @@ Microsoft 365には、管理者のアクセス許可の悪用、マルウェア�
 
 ****
 
-|通知|緊急度|アラートの生成方法|
+|通知|重要度|アラートの生成方法|
 |---|---|---|
 |悪意のある可能性がある URL のクリックが検出されました|**High**|このアラートは、次の場合に生成されます。 <ul><li>組織のリンクで保護[セーフユーザー](safe-links.md)が悪意のあるリンクをクリックする</li><li>URL の評決の変更は、Microsoft Defender によって特定Office 365</li><li>ユーザーはセーフリンクの警告ページを上書きします (組織の [リンク][セーフに基づく](set-up-safe-links-policies.md))。</li></ul> <p> このアラートをトリガーするイベントの詳細については[、「Set up セーフリンク ポリシー」を参照してください](set-up-safe-links-policies.md)。|
 |電子メール メッセージがマルウェアまたはフィッシングとしてユーザーによって報告される|**情報**|このアラートは、組織のユーザーがレポート メッセージ アドインまたはレポートフィッシング[](enable-the-report-message-add-in.md)アドインを使用してフィッシングメールとしてメッセージを[報告するときに生成されます](enable-the-report-phish-add-in.md)。|
-|配信後にマルウェアを含む電子メール メッセージが削除される|**情報**|このアラートは、マルウェアを含む電子メール メッセージが組織内のメールボックスに配信されると生成されます。 このイベントが発生した場合、Microsoft はゼロ時間自動削除を使用して、Exchange Onlineメールボックスから感染したメッセージ[を削除します](zero-hour-auto-purge.md)。|
-|配信後にフィッシング URL を含む電子メール メッセージが削除される|**情報**|このアラートは、フィッシングを含むメッセージが組織内のメールボックスに配信されると生成されます。 このイベントが発生した場合、Microsoft はゼロ時間自動削除を使用して、Exchange Onlineメールボックスから感染したメッセージ[を削除します](zero-hour-auto-purge.md)。|
+|配信後にマルウェアを含む電子メール メッセージが削除される|**情報**|このアラートは、マルウェアを含む電子メール メッセージが組織内のメールボックスに配信されると生成されます。 このイベントが発生した場合、Microsoft はゼロ時間自動削除[(ZAP)](zero-hour-auto-purge.md)を使用して、Exchange Onlineメールボックスから感染したメッセージを削除します。|
+|配信後にフィッシング URL を含む電子メール メッセージが削除される|**情報**|このアラートは、フィッシングを含むメッセージが組織内のメールボックスに配信されると生成されます。 このイベントが発生した場合、Microsoft は ZAP を使用して、Exchange Onlineから感染したメッセージ[を削除します](zero-hour-auto-purge.md)。|
 |不審なメール送信パターンが検出される|**Medium**|このアラートは、組織内の誰かが不審なメールを送信し、電子メールの送信を制限される危険性がある場合に生成されます。 このアラートは、アカウントが侵害されたが、ユーザーを制限するのに十分な重大性を示す可能性がある動作に関する早期の警告です。 <p> まれですが、このポリシーによって生成されるアラートは異常である可能性があります。 ただし、ユーザー アカウントが侵害されているかどうかを確認する [方が良い方法です](responding-to-a-compromised-email-account.md)。|
 |ユーザーが電子メールの送信を制限されている|**High**|このアラートは、組織内のユーザーが送信メールの送信を制限されている場合に生成されます。 このアラートは、通常、電子メール アカウント [が侵害された場合に発生します](responding-to-a-compromised-email-account.md)。 <p> 制限付きユーザーの詳細については、「[制限](removing-user-from-restricted-users-portal-after-spam.md)付きユーザーポータルからブロックされたユーザーを削除する」を参照Microsoft 365。|
 |
@@ -116,8 +116,8 @@ Microsoft 365には、管理者のアクセス許可の悪用、マルウェア�
 
 |タスク|必要な役割|
 |---|---|
-|AIR 機能のセットアップ|次のいずれかの役割。 <ul><li>グローバル管理者</li><li>セキュリティ管理者</li></ul> <p> これらの役割は、[ポータルまたはAzure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)ポータル[で割りMicrosoft 365 Defenderできます](permissions-microsoft-365-security-center.md)。|
-|自動調査の開始 <p> --- または --- <p> 推奨されるアクションを承認または拒否する|次のいずれかの役割 (このロールは[、Azure Active Directoryまたはポータル](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)[Microsoft 365 Defender割り当てられます](permissions-microsoft-365-security-center.md)。 <ul><li>グローバル管理者</li><li>セキュリティ管理者</li><li>セキュリティ オペレーター</li><li>セキュリティ閲覧者 <br> --- さらに --- </li><li>検索と削除 (この役割は、ポータルのMicrosoft 365 Defender[されます](permissions-microsoft-365-security-center.md)。 新しい電子メール グループを作成して、&グループに検索役割と削除役割を追加する必要があります。</li></ul>|
+|AIR 機能のセットアップ|次のいずれかの役割。 <ul><li>グローバル管理者</li><li>セキュリティ管理者</li></ul> <p> これらの役割は、[ポータルまたはAzure Active Directory](/azure/active-directory/roles/permissions-reference)ポータル[で割りMicrosoft 365 Defenderできます](permissions-microsoft-365-security-center.md)。|
+|自動調査の開始 <p> --- または --- <p> 推奨されるアクションを承認または拒否する|次のいずれかの役割 (このロールは[、Azure Active Directoryまたはポータル](/azure/active-directory/roles/permissions-reference)[Microsoft 365 Defender割り当てられます](permissions-microsoft-365-security-center.md)。 <ul><li>グローバル管理者</li><li>セキュリティ管理者</li><li>セキュリティ オペレーター</li><li>セキュリティ閲覧者 <br> --- さらに --- </li><li>検索と削除 (この役割は、ポータルのMicrosoft 365 Defender[されます](permissions-microsoft-365-security-center.md)。 新しい電子メール グループを作成して、&グループに検索役割と削除役割を追加する必要があります。</li></ul>|
 
 ## <a name="required-licenses"></a>必須のライセンス
 
