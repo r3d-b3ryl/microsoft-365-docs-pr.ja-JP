@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: DLP ポリシー コンポーネントと構成リファレンス
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 51eac7b05edeccece3cf45a8396493d84dc3e11f
-ms.sourcegitcommit: 8ef23d275d7209a705295e2b117d4382b20ad4f7
+ms.openlocfilehash: 1227d95469d57921af9f0b97e7adc2a6a49e5573
+ms.sourcegitcommit: 2048c9399a654175438d47e0c3aa2574b949bdc0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58866669"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "58923944"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>データ損失防止ポリシーリファレンス
 
@@ -438,7 +438,7 @@ for where they are used/expected behavior-->
 
 <!--You can use notifications and overrides to educate your users about DLP policies and help them remain compliant without blocking their work. For example, if a user tries to share a document containing sensitive information, a DLP policy can both send them an email notification and show them a policy tip in the context of the document library that allows them to override the policy if they have a business justification.-->
 
-ユーザーがルールの条件と例外を満たすコンテキストで、機密性の高いアイテムに対してアクションを試みる場合は、ユーザー通知メールとコンテキスト ポリシー ヒントポップアップを使用して、その項目について知らせできます。 これらの通知は、意識を高め、組織の DLP ポリシーに関する人々の教育に役立つため便利です。 
+ユーザーがルールの条件と例外を満たすコンテキストで機密性の高いアイテムに対してアクションを試みる場合は、ユーザー通知メールとコンテキスト ポリシー ヒント ポップアップを使用して、そのアイテムについて知らせできます。 これらの通知は、意識を高め、組織の DLP ポリシーに関する人々の教育に役立つため便利です。 
 
 たとえば、個人を特定できる情報 (PII) Excel含み、外部ユーザーと共有される OneDrive for Business サイト上のブックのようなコンテンツ。
 
@@ -459,8 +459,9 @@ for where they are used/expected behavior-->
 
 
 さまざまな Microsoft アプリのユーザー通知を有効または無効にできます。「データ損失防止ポリシーのヒント [リファレンス」を参照してください。](dlp-policy-tips-reference.md#data-loss-prevention-policy-tips-reference)
-- ポリシー ヒントを使用して、サービス内の **notifying Office 365を有効または無効にできます。
-    - コンテンツを編集、共有、または最後に変更したユーザーへの電子メール通知
+
+- ポリシー ヒントを使用して、Office 365ユーザーに通知 **を** 有効または無効にできます。
+    - コンテンツを送信、共有、または最後に変更したユーザーへの電子メール通知 OR
     - 特定のユーザーに通知する
 
 メール テキスト、件名、ポリシー ヒント テキストをカスタマイズすることもできます。
@@ -471,6 +472,41 @@ for where they are used/expected behavior-->
 
 ![デバイスで使用できるユーザー通知とポリシー ヒントの構成オプション](../media/dlp-user-notification-devices.png)  
 
+これらのパラメーターを使用して、テキストのタイトルと本文をカスタマイズできます。 本文のテキストは、次の機能をサポートします。
+
+|共通名  |パラメーター  |例
+|---------|---------|---------|
+|ファイル名     |%%FileName%% | Contoso doc 1 |
+|プロセス名     |%%ProcessName%% | Word |
+|ポリシー名     |%%PolicyName%%| Contoso の機密性の高い |
+|action | %%AppliedActions%% | クリップボードから別のアプリにドキュメントコンテンツを貼り付ける |
+
+**%%AppliedActions%% は、次** の値をメッセージ本文に置き換える。
+
+
+|アクションの共通名 |%%AppliedActions%% パラメーターで置換された値 |
+|---------|---------|
+|削除可能な記憶域にコピーする    |*リムーバブル 記憶域への書き込み*         |
+|ネットワーク共有にコピーする     |*ネットワーク共有への書き込み*         |
+|print     |*印刷*         |
+|クリップボードから貼り付ける  |*クリップボードからの貼り付け*         |
+|bluetooth 経由でコピーする   |*を介して転送Bluetooth*         |
+|許可されていないアプリで開く     |*このアプリで開く*         |
+|リモート デスクトップ (RDP) へのコピー     |*リモート デスクトップへの転送*         |
+|許可されていない Web サイトへのアップロード     |*このサイトへのアップロード*         |
+|許可されていないブラウザーを介してアイテムにアクセスする     |*このブラウザーで開く*         |
+
+このカスタマイズされたテキストの使用
+
+*%%AppliedActions%% ファイル名 %%FileName%% via %%ProcessName%%は、組織では許可されません。ポリシー %%PolicyName%% をバイパスする場合は、[許可] をクリックします。* 
+
+カスタマイズされた通知で次のテキストを生成します。
+
+*クリップボードから貼り付けるファイル名: Contoso doc 1 を使用WINWORD.EXE組織では許可されません。Contoso の機密性の高いポリシーをバイパスする場合は、[許可] ボタンをクリックします。*
+ 
+
+
+
 > [!NOTE]
 > ユーザー通知とポリシー ヒントは、オンプレミスの場所では使用できません
 
@@ -479,9 +515,6 @@ for where they are used/expected behavior-->
 
 ユーザー通知とポリシー ヒントの構成と使用の詳細については、「通知とヒント テキストをカスタマイズする方法」を参照してください。 
 - [メール通知を送信して、DLP ポリシーのヒントを表示する](use-notifications-and-policy-tips.md#send-email-notifications-and-show-policy-tips-for-dlp-policies)
-- [データ損失防止ポリシーリファレンス](dlp-policy-reference.md#data-loss-prevention-policy-reference)
-
-
   
 <!--The email can notify the person who sent, shared, or last modified the content and, for site content, the primary site collection administrator and document owner. In addition, you can add or remove whomever you choose from the email notification.
   
