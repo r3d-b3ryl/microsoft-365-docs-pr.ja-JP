@@ -277,6 +277,7 @@
 ##### [PowerShell を使用してスキャンをスケジュールする](schedule-antivirus-scans-powershell.md)
 ##### [WMI を使用してスキャンをスケジュールする](schedule-antivirus-scans-wmi.md)
 #### [Microsoft Defender ウイルス対策で限定された定期的なスキャンを使用する](limited-periodic-scanning-microsoft-defender-antivirus.md)
+#### [Microsoft Defender ウイルス対策のパフォーマンスの調整](tune-performance-defender-antivirus.md)
 #### [他のセキュリティ製品との互換性](microsoft-defender-antivirus-compatibility.md)
 
 #### [ウイルス対策ソフトウェアとマルウェア対策の更新プログラムを取得する](manage-updates-baselines-microsoft-defender-antivirus.md)
