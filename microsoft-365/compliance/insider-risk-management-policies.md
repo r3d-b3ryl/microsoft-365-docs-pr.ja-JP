@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 37918c9078231b80f1b41ddf063df92f5cd2aace
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: f10099fcfe2c8b4701ed5aa0981a3bb84bf5c7c3
+ms.sourcegitcommit: 8db88004f4c015138b20c55095ada2c0c79e5910
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569059"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58928742"
 ---
 # <a name="insider-risk-management-policies"></a>インサイダー リスクの管理。
 
@@ -189,7 +189,7 @@ Insider リスク分析では、インサイダー リスク ポリシーを構�
 
 ユーザー アクティビティ管理についての詳細は、[「インサイダー リスク管理ケース: ユーザー アクティビティ」](insider-risk-management-cases.md#user-activity)をご覧ください。
 
-## <a name="policy-health-preview"></a>ポリシーの正常性 (プレビュー)
+## <a name="policy-health"></a>ポリシーの正常性
 
 ポリシーの正常性状態は、インサイダー リスク管理ポリシーで発生する可能性のある問題の分析情報が得られます。 [ポリシー] タブの [状態] 列では、ユーザー アクティビティの報告を妨げる可能性があるポリシーの問題や、アクティビティアラート数が異常である理由についてアラートします。 ポリシーの正常性の状態は、ポリシーが正常であり、注意や構成変更を必要としないということも確認できます。
 

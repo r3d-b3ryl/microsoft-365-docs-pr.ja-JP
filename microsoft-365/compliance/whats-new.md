@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: コンプライアンス センターに新しいソリューションを追加する場合、フィードバックに基づいて既存の機能を更新する場合、新しく更新されたドキュメントを展開する場合でも、Microsoft 365 を使用すると、変化し続けるコンプライアンス環境の上に立ち続けるのに役立ちます。 今月までの予定を確認します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: edcfbb7cbce64cc964d5c32d64c4a176424a0d49
-ms.sourcegitcommit: bdf506c47bfed0f7e639301a7edd94c4eb150150
+ms.openlocfilehash: f05350819c040f2b230bc9be9f963b9bcf057452
+ms.sourcegitcommit: 8db88004f4c015138b20c55095ada2c0c79e5910
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "58869181"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58928694"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 コンプライアンス センターの新機能
 
@@ -48,6 +48,23 @@ Microsoft 365 コンプライアンス センター に新しいソリューシ�
 
 ### <a name="communication-compliance"></a>コミュニケーション コンプライアンス
 - [通信コンプライアンス機能リファレンスでは](communication-compliance-feature-reference.md)、プライベート チャットやチャネルでの最新の添付ファイルのスキャンに関するTeams機能のサポートが追加されました。
+
+### <a name="compliance--service-assurance"></a>コンプライアンス&サービス アシュアランス
+
+- [サービスアシュア](https://docs.microsoft.com/en-us/compliance/) ランスは、認定および適用性に関する声明に関する四半期ごとにコンテンツ更新プログラムを確認して更新されました。
+  - アーキテクチャ
+  - 監査ログ
+  - 暗号化とキー管理
+  - ID およびアクセス管理
+  - Microsoft 365の管理
+  - ネットワーク セキュリティ
+  - プライバシー
+  - 回復性および継続性
+  - リスク管理
+  - セキュリティ開発と運用
+  - セキュリティ監視
+  - サプライヤー管理
+  - 脆弱性管理
 
 ### <a name="data-loss-prevention"></a>データ損失防止
 

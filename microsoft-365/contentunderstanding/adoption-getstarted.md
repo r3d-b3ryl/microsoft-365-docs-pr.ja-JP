@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 91743eb7184e340deac15c10412833f2d8060866
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.openlocfilehash: 0390163d1128bcb83fad0ad91c94c1a02d738a4e
+ms.sourcegitcommit: 8db88004f4c015138b20c55095ada2c0c79e5910
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58863631"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58928718"
 ---
 # <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Microsoft SharePoint Syntex導入: 使い始める
 
@@ -146,4 +146,5 @@ ms.locfileid: "58863631"
 
 ## <a name="see-also"></a>関連項目
 
-[SharePoint Syntex のシナリオとユース ケース](adoption-scenarios.md)
+[ユーザーのシナリオと使用SharePoint Syntex](adoption-scenarios.md) 
+[ソリューションを使用して契約Microsoft 365する](solution-manage-contracts-in-microsoft-365.md)

@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: ドキュメント理解モデルとフォーム処理モデルの主な違いについて説明します。
-ms.openlocfilehash: 4927f29eecc2ee0dfa0e2207531d8f5f5616a68e
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: e9f9c417d8603be0d933607ccf527c6d821bcc72
+ms.sourcegitcommit: 7883556c05ceef228dc329f715e8a6213b40d921
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400297"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58931256"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>ドキュメント理解とフォーム処理モデルの違い 
 
@@ -82,14 +82,13 @@ Microsoft SharePoint Syntex のコンテンツを理解すると、SharePoint �
 | 管理されたメタデータと統合する | いいえ | はい。設定された管理対象メタデータ フィールドを参照するエンティティ抽出子のトレーニングを行います。|
 | Microsoft Information Protection が有効になっている場合のコンプライアンス機能の統合 | 発行された保持ラベルを設定します。<br>秘密度ラベルを設定します。 | 発行された保持ラベルを設定します。<br>発行された秘密度ラベルを設定します。 |
 | サポートされる地域| フォーム処理は Power Platform に依存しています。 Power Platform と AI Builder のグローバルな可用性については、「[Power Platform の可用性](https://dynamics.microsoft.com/geographic-availability/)」を参照してください。 | すべての地域で利用可能です。|
-| トランザクション コスト | AI Builder クレジットを使用します。<br>クレジットは 1 M のバッチで購入できます。<br>300 以上の SharePoint Syntex ライセンスを購入すると、1 M のクレジットが含まれています。<br>1 M のクレジットで 2000 ファイル ページの処理が可能になります。<br>| 該当なし |
+| トランザクション コスト | AI Builder クレジットを使用します。<br>クレジットは 1 M のバッチで購入できます。<br>300 以上の SharePoint Syntex ライセンスを購入すると、1 M のクレジットが含まれています。<br>1 M のクレジットで 2,000 ファイル ページの処理が可能になります。<br>| 該当なし |
 | 容量 | 既定の Power Platform 環境を使用します (Dataverse データベースをサポートするカスタム環境)。 | 容量制限はありません。|
 | サポートされている言語| 英語 <br>2021 年後半公開予定: ラテン アルファベット言語 | モデルはすべてのラテン アルファベット言語で機能します。 英語に加えて: ドイツ語、スウェーデン語、フランス語、スペイン語、イタリア語、およびポルトガル語。|
 
 ## <a name="see-also"></a>関連項目
+
 [トレーニング: AI ビルダーを使用してビジネスの実績を高める](/learn/paths/improve-business-performance-ai-builder/?source=learn)
-
-
 
 [ドキュメントの理解の概要](document-understanding-overview.md)
 

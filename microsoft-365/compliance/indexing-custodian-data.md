@@ -16,22 +16,22 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 保管担当者を Advanced eDiscovery ケースに追加すると、部分的にインデックスが作成されたと見なされたコンテンツが再処理され、完全に検索可能になります。
-ms.openlocfilehash: a43ccc09fb3c0821ff04d5ec47bf9bfbb1782c1061e51b6b541abc3792e82738
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8a43b0cd9b7fcac1745b917dc5a1c198fa2a1e61
+ms.sourcegitcommit: 8db88004f4c015138b20c55095ada2c0c79e5910
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53905549"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58928706"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>カストディアン データの詳細なインデックス処理
 
-保管担当者が Advanced eDiscovery ケースに追加された場合、部分的にインデックスが作成されたと見なされたコンテンツ、またはインデックスエラーが発生したコンテンツは、インデックスを再作成して完全に検索可能になります。  このインデックスの再作成プロセスは、Advanced *indexing と呼ばれる。* コンテンツが部分的にインデックス付けされている、またはインデックスエラーが発生する理由は多数ある。 これには、イメージ ファイル、またはファイル内のイメージの存在、サポートされていないファイルの種類、またはファイル サイズのインデックスの制限が含まれます。 ファイルSharePoint高度なインデックス作成は、アイテムに対してのみ実行され、部分的にインデックスが付いているか、インデックスエラーが発生します。 このExchange、画像添付ファイルを持つ電子メール メッセージは、部分的にインデックス付けまたはインデックス作成エラーとしてマークされません。 つまり、これらのファイルは Advanced インデックス処理によってインデックスが再作成されません。
+保管担当者が Advanced eDiscovery ケースに追加された場合、部分的にインデックスが作成された、またはインデックスエラーが発生したと見なされたコンテンツは、インデックスを再作成して完全に検索可能になります。  このインデックスの再作成プロセスは、Advanced *indexing と呼ばれる。* コンテンツが部分的にインデックス付けされている、またはインデックスエラーが発生する理由は多数ある。 これには、イメージ ファイル、またはファイル内のイメージの存在、サポートされていないファイルの種類、またはファイル サイズのインデックスの制限が含まれます。 ファイルSharePoint高度なインデックス作成は、アイテムに対してのみ実行され、部分的にインデックスが付いているか、インデックスエラーが発生します。 このExchange、画像添付ファイルを持つ電子メール メッセージは、部分的にインデックス付けまたはインデックス作成エラーとしてマークされません。 つまり、これらのファイルは Advanced インデックス処理によってインデックスが再作成されません。
 
 サポートの処理と部分的にインデックス付きアイテムの詳細については、以下を参照してください。
 
 - [サポートされているファイルの種類 (Advanced eDiscovery](supported-filetypes-ediscovery20.md)
 
-- [Office 365 のコンテンツ検索で部分的にインデックスが作成されたアイテム](partially-indexed-items-in-content-search.md)
+- [電子情報開示の部分的にインデックス付きアイテム](partially-indexed-items-in-content-search.md)
 
 - [Exchange Search によってインデックス処理されるファイル形式](/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
 
@@ -41,7 +41,7 @@ ms.locfileid: "53905549"
 
 高度なインデックス作成プロセスが完了したら、再処理の有効性を理解できます。  ケースの [処理] タブの[高度なインデックス作成結果] ビューで、ハイブリッド インデックスに追加されたアイテムの数が *グラフに一覧表示されます*。  ハイブリッドインデックスは、Advanced eDiscovery が再処理されたコンテンツを保存する場所です。
 
-このビューには、修復が必要なアイテムの数と、ファイルの種類別のエラーの別のグラフも含まれます。 詳細については、以下を参照してください。
+このビューには、修復が必要なアイテムの数と、ファイルの種類別のエラーの別のグラフも含まれます。 詳しくは、次のトピックを参照してください。
 
 - [データ処理中のエラー修復](error-remediation-when-processing-data-in-advanced-ediscovery.md)
 

@@ -19,12 +19,12 @@ ms.assetid: ''
 description: 電子情報開示の一般的な問題を解決するために実行できる基本的なトラブルシューティング手順Office 365説明します。
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b562e3d22557133630fa8c7c7d343432736b9f4f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: d71091b4c3545880b103b8d4a4111b3c63d35506
+ms.sourcegitcommit: 8db88004f4c015138b20c55095ada2c0c79e5910
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569611"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58928754"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>一般的な電子情報開示の問題を調査、トラブルシューティング、解決する
 
@@ -52,7 +52,7 @@ ms.locfileid: "58569611"
    > |名前|RecipientType|
    > |---|---|
    > |エイリアス、ユーザー|MailUser|
-   > |エイリアス、ユーザー|ユーザー|
+   > |エイリアス、ユーザー|User|
 
 3. 複数のユーザーが返された場合は、競合するオブジェクトを見つけて修正します。
 
@@ -95,9 +95,9 @@ ms.locfileid: "58569611"
 オンラインと電子情報開示の場所を含む電子情報開示検索を実行SharePointエラー OneDrive for Businessがあります。 電子情報開示は、SPO インデックスを使用してファイルの場所を識別します。 ファイルが削除されたが、SPO インデックスがまだ更新されていない場合、このエラーが発生する可能性があります。
 
 ### <a name="resolution"></a>解決方法 
+
 SPO の場所を開き、このファイルが実際に開いていないか確認します。
 推奨される解決策は、サイトのインデックスを手動で再作成するか、サイトが自動的なバックグラウンド プロセスによってインデックスを再作成するまで待機することです。
-
 
 ## <a name="errorissue-this-search-result-was-not-downloaded-as-it-is-a-folder-or-other-artifact-that-cant-be-downloaded-by-itself-any-items-inside-the-folder-or-library-will-be-downloaded"></a>エラー/問題: この検索結果は、それ自体ではダウンロードできないフォルダーまたは他の成果物である場合はダウンロードされません。フォルダーまたはライブラリ内のアイテムはダウンロードされます。
 
@@ -119,6 +119,16 @@ SPO の場所を開き、このファイルが実際に開いていないか確�
 
 3. ユーザーの質問のメール ユーザー オブジェクトが必要です。 何も返されなかった場合は、ユーザー オブジェクトを調査します。 オブジェクトを同期できない場合は、Microsoft サポートにお問い合わせください。
 
+## <a name="issueerror-search-fails-with-error-cs007"></a>問題/エラー: エラー CS007 で検索が失敗する
+
+コンテンツ検索または Core 電子情報開示ケースに関連付けられた検索を実行すると、一時的なエラーが発生し、CS007 エラーで検索が失敗します。
+
+### <a name="resolution"></a>解決方法
+
+1. 検索を更新し、検索クエリの複雑さを軽減します。  たとえば、ワイルドカード検索では、システムが処理する結果が多すぎる場合、CS007 エラーが発生します。
+
+2. 更新された検索を再実行します。
+
 ## <a name="errorissue-exporting-search-results-is-slow"></a>エラー/問題: 検索結果のエクスポートが遅い
 
 コア電子情報開示検索またはコンテンツ検索から検索結果をエクスポートする場合、Microsoft 365 コンプライアンス センター予想より長い時間がかかります。  ダウンロードするデータの量を確認し、エクスポート速度を上げすることができます。
@@ -133,7 +143,7 @@ SPO の場所を開き、このファイルが実際に開いていないか確�
 
 2. SearchResults パラメーターと SearchStatistics パラメーターで、ダウンロードするデータの量を検索します。
 
-3. 次のコマンドを実行します。
+3. 次のコマンドを実行します:
 
    ```powershell
    Get-ComplianceSearchAction | FL

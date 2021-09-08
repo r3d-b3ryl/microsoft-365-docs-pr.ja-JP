@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 8f98a9b942f65a1c60708c4d4bfa756ab7d8fc2a
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.openlocfilehash: dd0b33ca6c2045a0f709e94e4c59f89b99b58bc7
+ms.sourcegitcommit: 8db88004f4c015138b20c55095ada2c0c79e5910
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58863748"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58928784"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>インシデントを調査Microsoft 365 Defender
 
@@ -185,9 +185,9 @@ Microsoft 365 Defenderアラート内のすべてのインシデントでサポ�
 
 1. 時間の間に発生したアラートとグラフ上のノードを再生して、攻撃の時系列を把握します。
 
-<!--
-   :::image type="content" source="../../media/investigate-incidents/incident-graph-play.png" alt-text="Example of playing the alerts and nodes on the Graph page":::
---> 
+
+   :::image type="content" source="../../media/investigate-incidents/incident-graph-play.gif" alt-text="[メッセージ] ページでアラートとノードを再生Graph例":::
+ 
 
 2. エンティティ ウィンドウを開き、エンティティの詳細を確認し、ファイルの削除やデバイスの分離などの修復アクションに対応できます。
  
