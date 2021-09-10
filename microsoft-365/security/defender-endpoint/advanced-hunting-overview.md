@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4d52fe03786e4fff94ca08fdc7e5c7951a0d6e33
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 6d051666e481bcf74038dc5000ebaadbd142d429
+ms.sourcegitcommit: 095e23ba4181c86a301a25d8c898d25d1befec97
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58506509"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "58962078"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting"></a>高度な狩猟で脅威を積極的に探す
 
@@ -32,7 +32,7 @@ ms.locfileid: "58506509"
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-advancedhunting-abovefoldlink)
 
-高度な捜索は、クエリ ベースの脅威の捜索ツールで、最大 30 日間のロー データを検索できます。 ネットワーク内のイベントを事前に検査して、脅威インジケーターとエンティティを特定できます。 データへの柔軟なアクセスにより、既知の脅威と潜在的な脅威の両方に対する拘束されていない検出が可能です。
+高度な捜索は、クエリ ベースの脅威の捜索ツールで、最大 30 日間のロー データを検索できます。 ネットワーク内のイベントを事前に検査して、脅威インジケーターとエンティティを見つけることができます。 データへの柔軟なアクセスにより、既知の脅威と潜在的な脅威の両方に対する拘束されていない検出が可能です。
 
 このビデオでは、高度な狩猟の簡単な概要と、迅速に始める短いチュートリアルをご覧ください。
 
@@ -70,10 +70,10 @@ ms.locfileid: "58506509"
 
 ## <a name="data-freshness-and-update-frequency"></a>データの鮮度と更新頻度
 
-高度な狩猟データは、それぞれ異なる方法で統合された 2 つの異なる種類に分類できます。
+高度な捜索データは、2 つの異なるタイプに分類され、それぞれが異なる形で集約されます。
 
 - **イベントまたはアクティビティ データ**: アラート、セキュリティ イベント、システム イベント、およびルーチン評価に関するテーブルを設定します。 高度な検出は、センサーを収集したセンサーが Defender for Endpoint に正常に送信した直後に、このデータを受信します。
-- **エンティティ データ**: ユーザーとデバイスに関する統合された情報を表に設定します。 このデータは、比較的静的なデータ ソースと、Active Directory エントリやイベント ログなどの動的ソースの両方から取得されます。 新しいデータを提供するために、テーブルは 15 分ごとに新しい情報で更新され、完全に入力されない可能性のある行が追加されます。 24 時間ごとにデータが統合され、各エンティティに関する最新の最も包括的なデータ セットを含むレコードが挿入されます。
+- **エンティティ データ**: ユーザーとデバイスに関する統合された情報を表に設定します。 このデータは、比較的静的なデータ ソースと、Active Directory エントリやイベント ログなどの動的なソースの両方から取得します。 新しいデータを提供するために、テーブルは 15 分ごとに新しい情報で更新され、完全に入力されない可能性のある行が追加されます。 24 時間ごとにデータが統合され、各エンティティに関する最新の最も包括的なデータ セットを含むレコードが挿入されます。
 
 ## <a name="time-zone"></a>タイム ゾーン
 
@@ -87,3 +87,5 @@ ms.locfileid: "58506509"
 - [スキーマを理解する](advanced-hunting-schema-reference.md)
 - [クエリのベスト プラクティスを適用する](advanced-hunting-best-practices.md)
 - [カスタム検出の概要](overview-custom-detections.md)
+- [Storageアカウントの概要](/azure/storage/common/storage-account-overview)
+- [Azure Event Hubs - ビッグ データ ストリーミング プラットフォームとイベント インジェスト サービス](/azure/event-hubs/event-hubs-about)

@@ -19,12 +19,12 @@ metadata:
   search.appverid: MET150
   description: このページに関するよく寄せられる質問 (FAQ) Microsoft 自宅使用プログラム。
   ms.date: 05/01/2021
-  ms.openlocfilehash: c4345ad61c8a97b953493dcaeffd399ce4cab02c8965934f6ac96ef35a514529
-  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+  ms.openlocfilehash: 114686efb77a88dfad8e729ae5db908f3e8bc629
+  ms.sourcegitcommit: 73a17ecbc06cd3e5452814637ab0484ddcdea17a
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 08/05/2021
-  ms.locfileid: "53831393"
+  ms.lasthandoff: 09/09/2021
+  ms.locfileid: "58942434"
 title: Microsoft 自宅使用プログラムよく寄せられる質問 (FAQ)
 summary: "ボリューム ライセンスのお客様は、Microsoft 自宅使用プログラム Web サイトで ビジネス向け Microsoft Store (HUP)[を使用します](https://go.microsoft.com/fwlink/?linkid=2139192)。\n\n他のすべてのユーザーは、次の手順を使用して HUP にアクセスします。\n\n- Microsoft 管理センターで、[製品の請求] ページに移動し、[特典] タブを選択し  >  [](https://go.microsoft.com/fwlink/p/?linkid=842054)**、[HUP] タブを選択** します。 \n"
 sections:
@@ -36,15 +36,7 @@ sections:
       このMicrosoft 自宅使用プログラム (HUP) を使用すると、対象となる企業の従業員は、Microsoft コンシューマー製品を割引価格で購入できます。 各製品提供の現在の割引を確認するには、[ホーム使用プログラム] 製品ページ [を参照してください](https://www.microsoft.com/home-use-program)。
   - question: >
       ホーム使用プログラムはどの市場で提供されますか?
-    answer: >
-      以下の例外Microsoft 365 Family、世界中の対象となる企業に対して、サブスクリプションおよび個人サブスクリプションの割引が提供されます。
-
-
-      - マカオ、ロシア、ベネズエラ: このオファーは、これらの市場では利用できません。
-
-      - 中国と香港: 1 年間のサブスクリプションは、これらの市場で利用できます。 中国の場合は、中国[のMicrosoft 365をご覧ください](https://www.microsoftstore.com.cn/home-use-program/invite)。 香港の場合は、割引[価格Microsoft 365を購入するをご覧ください](https://www.microsoftestore.com.hk/partner/hup?locale=en_HK)。
-
-      - 日本: Microsoft 365 Familyは使用できません。
+    answer: "以下の例外Microsoft 365 Family、世界中の対象となる企業に対して、サブスクリプションおよび個人サブスクリプションの割引が提供されます。\n\n- マカオ、ロシア、ベネズエラ: このオファーは、これらの市場では利用できません。\n- 中国と香港: 1 年間のサブスクリプションは、これらの市場で利用できます。 中国の場合は、中国[のMicrosoft 365をご覧ください](https://www.microsoftstore.com.cn/home-use-program/invite)。 香港の場合は、割引[価格Microsoft 365を購入するをご覧ください](https://www.microsoftestore.com.hk/partner/hup?locale=en_HK)。\n- 日本: Microsoft 365 Familyは使用できません。\n- 一部の Surface デバイスとアクセサリの割引は、一部の市場の対象となる企業に提供されます。 \n"
   - question: >
       組織は HUP 割引を受け取る資格を得る方法を示します。
     answer: >
@@ -61,7 +53,7 @@ sections:
   - question: >
       Home Use Program/Azure Active Directoryを使用するために、Azure Active Directory (AAD) アカウントを作成する必要があるビジネス向け Microsoft Store。
     answer: >
-      Home Use Program を、より広範なライセンスおよび製品の利点に更新して最新化するには、HUP を満たす方法を変更する必要がありました。 ビジネス向け Microsoft Storeは、適格性の検証および HUP 特典の割り当てに使用され、このために、VSLC からの情報を接続し、組織の従業員がオンの電子メール ドメインを検証するために AAD に依存しています。 詳細については、「ビジネス向け Azure ADアカウントにOffice 365[するには」を参照してください](/microsoft-store/sign-up-microsoft-store-for-business#o365-welcome)。
+      Home Use Program を、より広範なライセンスおよび製品の利点に更新して最新化するには、HUP を満たす方法を変更する必要がありました。 ビジネス向け Microsoft Storeは、適格性の検証および HUP 特典の割り当てに使用され、VLSC からの情報を接続し、組織の従業員がオンの電子メール ドメインを検証するために AAD に依存しています。 詳細については、「ビジネス向け Azure ADアカウントにOffice 365[するには」を参照してください](/microsoft-store/sign-up-microsoft-store-for-business#o365-welcome)。
   - question: >
       管理テナントの割り当てられた IT 管理者になる方法
     answer: >
@@ -73,9 +65,6 @@ sections:
       ホーム使用プログラムの特典を従業員に宣伝するために利用できるリソースは何ですか?
     answer: >
       ホーム使用プログラムのホーム ページ[](https://www.microsoft.com/home-use-program/resources)にあるリソースを使用して、プログラムを従業員に宣伝します。 デジタルチラシと印刷可能なチラシ、電子メールやニュースレターで使用するための動詞、ホーム使用プログラムを最適に宣伝する方法に関するガイダンスがあります。
-
-
-      オンボーディング 資料には、HUP Material [for Customers で複数の言語でアクセスできます](https://microsofteur.sharepoint.com/teams/HUPMaterial)。 ファイルのダウンロードを開始する言語を選択します。 このファイルには、プログラムに関する従業員の教育と社内での昇格に役立つアセットが含まれている。
   - question: >
       資格を持つ従業員が購入を行う手順Microsoft 自宅使用プログラムですか?
     answer: >
@@ -121,4 +110,14 @@ sections:
       - インストールOffice
 
       - ユーザーにサインインOffice
-additionalContent: "\n## <a name=\"related-content\"></a>関連コンテンツ\n  [Microsoft 365サブスクリプション](https://www.microsoft.com/home-use-program/). (リンク ページ)\\\n  [Microsoft ボリューム ライセンス サービス センター](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0) (リンク ページ)\\\n  [ビジネス向け Microsoft Storeサポート](/microsoft-store/)(リンク ページ)\\\n  [ビジネス向け Microsoft Store](https://go.microsoft.com/fwlink/?linkid=2139192) (リンク ページ)\\\n  [Home Use Program employee store](https://www.microsoft.com/home-use-program) (リンク ページ)\\\n  [Microsoft ライセンス: ホーム使用プログラムの概要](https://www.microsoft.com/licensing/licensing-programs/software-assurance-by-benefits?activetab=software-assurance-by-benefits-tab:primaryr4) (リンク ページ)"
+  - question: >
+      会社がホーム使用プログラムに参加する必要がある理由
+    answer: "ホーム使用プログラムは、会社が Microsoft への投資に対する収益を最大化するのに役立ちます。 プログラムに参加する利点は次のとおりです。 \n\n- IT トレーニングの必要性を減らす \n- ヘルプ デスクとトレーニングコストの削減 \n- 従業員が自宅で自分のMicrosoft 365を理解できるようにする \n- ソフトウェアの習熟度を上げ、生産性を向上させる \n"
+  - question: >
+      従業員にMicrosoft 自宅使用プログラムを提供する方法
+    answer: >
+      従業員は、Microsoft 365製品を大幅に割引価格で購入すると、オフィスで使用するソフトウェアと同じソフトウェアを自宅で使用できます。 これにより、生産性を高め、スキルを向上させ、仕事の満足度を高めることができます。
+  - question: >
+      従業員が会社を離れる場合は、何が起こりますか?
+    answer: "Microsoft 365 サブスクリプション オファーの資格を持ち、プログラムを通じて購入した従業員の場合、組織の雇用状態に関係なく、従業員のサブスクリプションがアクティブなままである限り、割引価格が適用されます。 ただし、彼らの商用使用権は、雇用が終了すると終了します。 2019 年 2019 年 Office ソフトウェア オファーの資格を持つ従業員については、従業員が会社を離れる後、ホーム使用プログラムを通じて購入した Office ソフトウェアをアンインストールする必要があります。 \n"
+additionalContent: "\n## <a name=\"related-content\"></a>関連コンテンツ\n  [Home Use Program FAQ](https://www.microsoft.com/home-use-program/frequently-asked-questions). (記事)\\\n  [Microsoft ボリューム ライセンス サービス センター](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0) (リンク ページ)\\\n  [ビジネス向け Microsoft Storeサポート](/microsoft-store/)(リンク ページ)\\\n  [ビジネス向け Microsoft Store](https://go.microsoft.com/fwlink/?linkid=2139192) (リンク ページ)\\\n  [Home Use Program employee store](https://www.microsoft.com/home-use-program) (リンク ページ)\\\n  [Microsoft ライセンス: ホーム使用プログラムの概要](https://www.microsoft.com/licensing/licensing-programs/software-assurance-by-benefits?activetab=software-assurance-by-benefits-tab:primaryr4) (リンク ページ)"

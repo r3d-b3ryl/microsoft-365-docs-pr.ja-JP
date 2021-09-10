@@ -16,11 +16,11 @@ ms.collection:
 localization_priority: None
 description: 学習コンテンツ ソースを構成する方法については、Microsoft Viva ラーニング (プレビュー) のページでMicrosoft 365 管理センター。
 ms.openlocfilehash: 977589a9b9500f062edbd962ada895436c9b2c96
-ms.sourcegitcommit: b05b107774e8bca36c9ee19fdc4719d17e302f11
+ms.sourcegitcommit: 73a17ecbc06cd3e5452814637ab0484ddcdea17a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58483381"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "58942605"
 ---
 # <a name="configure-learning-content-sources-for-microsoft-viva-learning-preview-in-the-microsoft-365-admin-center"></a>[コンテンツ] ウィンドウでMicrosoft Viva ラーニング (プレビュー) の学習コンテンツ ソースを構成Microsoft 365 管理センター
 

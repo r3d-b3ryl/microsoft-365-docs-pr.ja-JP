@@ -15,11 +15,11 @@ ms.collection:
 localization_priority: None
 description: '[プレビュー] (プレビュー) のリソースをMicrosoft Viva ラーニングする方法について学習します。'
 ms.openlocfilehash: f868c90e0dcb280bf3bd7ca592a950d9735143de
-ms.sourcegitcommit: b05b107774e8bca36c9ee19fdc4719d17e302f11
+ms.sourcegitcommit: 73a17ecbc06cd3e5452814637ab0484ddcdea17a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58483345"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "58942592"
 ---
 # <a name="introduction-to-microsoft-viva-learning-preview"></a>概要 (Microsoft Viva ラーニング)
 
@@ -30,7 +30,7 @@ Microsoft Viva ラーニング (プレビュー) を使用すると、組織内�
 
 このページのリソースは、組織でのビバ の概要と使用を開始ラーニング(プレビュー) を使用するように設計されています。
 
-## <a name="get-started"></a>開始する
+## <a name="get-started"></a>作業の開始
 
 このセクションのリソースは、Viva ラーニング (Preview) の概要と、組織に役立つ方法について説明します。
 

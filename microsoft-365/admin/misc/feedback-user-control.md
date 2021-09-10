@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ユーザーが Microsoft 製品について Microsoft に送信できるフィードバックについて説明します。
-ms.openlocfilehash: 86d126be8c645c857192ef3f111e80d538456b8e9aab7e5c8143aadfdae752fb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7b8798847559e84a6ea10079aab010a08d8eaa42
+ms.sourcegitcommit: 7883556c05ceef228dc329f715e8a6213b40d921
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53824060"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "58957157"
 ---
 # <a name="learn-about-microsoft-feedback-for-your-organization"></a>組織の Microsoft フィードバックの詳細
 

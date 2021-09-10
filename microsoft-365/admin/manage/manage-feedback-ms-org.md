@@ -22,11 +22,11 @@ search.appverid:
 - MOE150
 description: ユーザーが Microsoft 製品に関して Microsoft に送信できるフィードバックを管理します。
 ms.openlocfilehash: 7d6d607182a546e869a9f92e84adfa31f7e02a26
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: 7883556c05ceef228dc329f715e8a6213b40d921
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394482"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "58957162"
 ---
 # <a name="manage-microsoft-feedback-for-your-organization"></a>組織に対する Microsoft フィードバックを管理する
 
@@ -38,20 +38,20 @@ Microsoft 365 組織の管理者として、Microsoft 365 アプリケーショ�
 
 |**アプリ & サービス**|**製品内フィードバック** <br> |**製品内アンケート** <br> |**メタデータ コレクション** <br> |**顧客エンゲージメント** <br> |
 |:-----|:-----|:-----|:-----|:-----|
-|**Access**|はい|はい|はい|必要|
-|**Excel**|はい|はい|はい|必要|
+|**Access**|はい|はい|はい|はい|
+|**Excel**|はい|はい|はい|はい|
 |**Office.com**|近日公開|近日公開|近日公開|近日公開|
-|**OneNote**|はい|はい|はい|必要|
+|**OneNote**|はい|はい|はい|はい|
 |**OneDrive**|[他のコントロールによって現在管理されている設定の一部。](/onedrive/disable-contact-support-send-feedback)||||
 |**Outlook**|近日公開|近日公開|近日公開|近日公開|
-|**PowerPoint**|はい|はい|はい|必要|
+|**PowerPoint**|はい|はい|はい|はい|
 |**Project**|近日公開|近日公開|近日公開|近日公開|
-|**発行元**|はい|はい|はい|必要|
+|**発行元**|はい|はい|はい|はい|
 |**SharePoint**|[他のコントロールによって現在管理されている設定の一部。](/powershell/module/sharepoint-online/set-spotenant)||||
 |**Teams**|[他のコントロールによって現在管理されている設定の一部。](/microsoftteams/manage-feedback-policies-in-teams)||||
-|**Word**|はい|はい|はい|必要|
-|**Visio**|はい|はい|はい|必要|
-|**Yammer**|はい|はい|はい|必要|
+|**Word**|はい|はい|はい|はい|
+|**Visio**|はい|はい|はい|はい|
+|**Yammer**|はい|はい|はい|はい|
 
 [製品内のアンケートとフィードバックの例については、こちらを参照してください。](/microsoft-365/admin/misc/feedback-user-control#in-product-surveys)
 
@@ -63,7 +63,7 @@ Microsoft 365 組織の管理者として、Microsoft 365 アプリケーショ�
 
 :::image type="content" source="../../media/feedback-in-product-customer-engagement.png" alt-text="スクリーンショット: 製品内のお客様調査の質問例":::
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 これらのポリシーを使用するには、デバイスが最小ビルド番号に設定されている必要があります。 詳細については、次の表を参照してください。
 
@@ -82,9 +82,9 @@ Microsoft 365 組織の管理者として、Microsoft 365 アプリケーショ�
 |:-----|:-----|:-----|
 |ユーザーが Microsoft にフィードバックを送信するを許可する|オン|アプリケーション全体のフィードバック エントリ ポイントを制御する|
 |ユーザーが Microsoft から製品内アンケートを受け取り、対応できる|オン|製品内のアンケート プロンプトを制御する|
-|ユーザーが Microsoft にフィードバックを送信するときにスクリーンショットと添付ファイルを含める|Off|ユーザーがフィードバック/アンケートで送信を決定できるメタデータを決定します。|
-|ユーザーが送信したフィードバックのフォローアップを Microsoft に許可する|Off|ユーザーがフィードバック/アンケートと連絡先情報を共有できるかどうかを決定します。|
-|フィードバックが Microsoft に送信された場合、ユーザーにログ ファイルとコンテンツ サンプルを含め許可する|Off|ユーザーがフィードバック/アンケートで送信できるメタデータを決定します。|
+|ユーザーが Microsoft にフィードバックを送信するときにスクリーンショットと添付ファイルを含める|オフ|ユーザーがフィードバック/アンケートで送信を決定できるメタデータを決定します。|
+|ユーザーが送信したフィードバックのフォローアップを Microsoft に許可する|オフ|ユーザーがフィードバック/アンケートと連絡先情報を共有できるかどうかを決定します。|
+|フィードバックが Microsoft に送信された場合、ユーザーにログ ファイルとコンテンツ サンプルを含め許可する|オフ|ユーザーがフィードバック/アンケートで送信できるメタデータを決定します。|
 
 ## <a name="configure-policies"></a>ポリシーの構成
 
