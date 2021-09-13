@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: a9397eeaf9edd58903a50cf3f9194b995c56d216
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58614886"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164935"
 ---
 # <a name="event-timeline---threat-and-vulnerability-management"></a>イベントタイムライン - 脅威と脆弱性の管理
 
@@ -84,7 +84,7 @@ ms.locfileid: "58614886"
 
 ![イベント タイムライン ページ。](images/tvm-event-timeline-overview-mixed-type.png)
 
-### <a name="columns"></a>段組み
+### <a name="columns"></a>列
 
 - **日付**: 月、日、年
 - **イベント**: 影響を受けのあるイベント (コンポーネント、種類、影響を受け取ったデバイスの数を含む)

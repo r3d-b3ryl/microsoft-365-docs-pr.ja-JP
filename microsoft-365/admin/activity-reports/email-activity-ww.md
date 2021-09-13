@@ -20,11 +20,11 @@ search.appverid:
 ms.assetid: 1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44
 description: '[レポート] ダッシュボードの [レポート] ダッシュボードを使用してMicrosoft 365アクティビティ レポートを取得する方法についてMicrosoft 365 管理センター。'
 ms.openlocfilehash: 7189fb560b47c37e48485fdc15be4cd15d80819f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565174"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164534"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---email-activity"></a>Microsoft 365管理センターのレポート - メール アクティビティ
 

@@ -18,11 +18,11 @@ ms.assetid: ''
 description: 法的保留通知の送信、収集、および追跡Advanced eDiscovery場合は、通信ツールを使用します。
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: cc9e8c424550c2be12711d7ef098c95230b0b1a4
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574366"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163959"
 ---
 # <a name="create-a-legal-hold-notice"></a>法的保留通知を作成する
 

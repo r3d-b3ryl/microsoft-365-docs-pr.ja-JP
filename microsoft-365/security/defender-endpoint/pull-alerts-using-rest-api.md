@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2bf5d76b0f5f9638105870a872fdc4efa38157b6df4a694b1610ff3e21964257
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4a72c7d363ab57c8c108279c71a3e1424e88a577
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53845029"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164951"
 ---
 # <a name="pull-microsoft-defender-for-endpoint-detections-using-siem-rest-api"></a>SIEM REST API を使用したエンドポイント検出用の Microsoft Defender のプル
 
@@ -33,7 +33,7 @@ ms.locfileid: "53845029"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
@@ -64,7 +64,7 @@ Microsoft Defender for Endpoint API の次のメソッドを使用して、JSON 
 >[!NOTE]
 >Microsoft Defender セキュリティ センター同様のアラート検出を 1 つのアラートにマージします。 この API は、設定したクエリ パラメーターに基づいて生の形式でアラート検出をプルし、独自のグループ化とフィルター処理を適用できます。 
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 - 検出をプルするために Microsoft Defender for Endpoint エンドポイントを呼び出す前に、デバイス (AAD) で SIEM 統合アプリケーションAzure Active Directory必要があります。 詳細については [、「Enable SIEM integration in Microsoft Defender for Endpoint」を参照してください](enable-siem-integration.md)。
 
 - Azure アプリケーション登録の次の値をメモしてください。サービスまたはデーモンアプリ内に OAuth フローを構成するにはこれらの値が必要です。
@@ -107,12 +107,12 @@ Defender for Endpoint API への要求 *access_tokenフィールドの* 値を�
 アクセス トークンを使用すると、アプリは Microsoft Defender for Endpoint API に対して認証された要求を行います。 アプリで各要求の Authorization ヘッダーにアクセス トークンを追加する必要があります。
 
 ### <a name="request-syntax"></a>要求構文
-Method | 要求 URI
+メソッド | 要求 URI
 :---|:---|
 GET| 地域に適用可能な URI を使用します。 <br><br> **EU の場合**: `https://wdatp-alertexporter-eu.windows.com/api/alerts` </br> **米国の場合**: `https://wdatp-alertexporter-us.windows.com/api/alerts` <br> **英国の場合**: `https://wdatp-alertexporter-uk.windows.com/api/alerts` 
 
 ### <a name="request-header"></a>要求ヘッダー
-ヘッダー | 種類 | 説明|
+ヘッダー | 型 | 説明|
 :--|:--|:--
 Authorization | string | 必須です。 Azure ADベアラー トークンという形式の **アクセス トークンです** &lt;  &gt; 。 |
 
@@ -125,10 +125,10 @@ Authorization | string | 必須です。 Azure ADベアラー トークンとい
 sinceTimeUtc | DateTime | フィールドに基づいて、取得される下限時間のアラートを定義します。 <br> `LastProcessedTimeUtc` <br> 時間範囲は次の値です。sinceTimeUtc 時刻から現在の時刻までです。 <br><br> **注**: 指定しない場合、過去 2 時間に生成されたアラートはすべて取得されます。
 untilTimeUtc | DateTime | 取得される上限時間のアラートを定義します。 <br> 時間範囲は、次の場合に `sinceTimeUtc` 指定 `untilTimeUtc` します。 <br><br> **注**: 指定しない場合、既定値は現在の時刻になります。
 前 | string | 次の時間範囲のアラートを引き `(current_time - ago)` 出 `current_time` します。 <br><br> 値は ISO **8601 期間形式に従って** 設定する必要があります <br> 例: `ago=PT10M` 過去 10 分間に受信したアラートをプルします。
-limit | 整数 | 取得するアラートの数を定義します。 最新のアラートは、定義された番号に基づいて取得されます。<br><br> **注**: 指定しない場合、時間範囲内で使用可能なすべてのアラートが取得されます。
+limit | int | 取得するアラートの数を定義します。 最新のアラートは、定義された番号に基づいて取得されます。<br><br> **注**: 指定しない場合、時間範囲内で使用可能なすべてのアラートが取得されます。
 machinegroups | string | アラートをプルするデバイス グループを指定します。 <br><br> **注**: 指定しない場合、すべてのデバイス グループからのアラートが取得されます。 <br><br> 例: <br><br> ```https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts/?machinegroups=UKMachines&machinegroups=FranceMachines```
-DeviceCreatedMachineTags | string | レジストリからの単一のデバイス タグ。
-CloudCreatedMachineTags | string | このページで作成されたデバイス Microsoft Defender セキュリティ センター。
+DeviceCreatedMachineTags | 文字列 | レジストリからの単一のデバイス タグ。
+CloudCreatedMachineTags | 文字列 | このページで作成されたデバイス Microsoft Defender セキュリティ センター。
 
 ### <a name="request-example"></a>要求の例
 次の例は、組織内のすべての検出を取得する方法を示しています。
@@ -329,13 +329,13 @@ echo $apiResponse
 ## <a name="error-codes"></a>エラー コード
 Microsoft Defender for Endpoint REST API は、無効な要求によって引き起こされた次のエラー コードを返します。
 
-HTTP エラー コード | Description
+HTTP エラー コード | 説明
 :---|:---
 401 | 不正な形式の要求または無効なトークン。
 403 | 承認されていない例外 - テナント管理者によって管理されていないドメインまたはテナントの状態が削除されます。
 500 | サービスのエラー。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [エンドポイント向け Microsoft Defender で SIEM 統合を有効にする](enable-siem-integration.md)
 - [エンドポイント検出用の Microsoft Defender をプルする ArcSight の構成](configure-arcsight.md)
 - [SIEM ツールへの検出のプル](configure-siem.md)

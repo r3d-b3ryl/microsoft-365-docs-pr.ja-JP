@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: f1ea6f3b2dd9447ff9901518a80aafa4dec56a5e
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58863847"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164950"
 ---
 # <a name="take-response-actions-on-a-file"></a>ファイルの対応措置を講じる
 

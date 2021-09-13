@@ -19,11 +19,11 @@ description: 新しい注目に値するトラッカーを含む脅威トラッ�
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 6ab8cf03b7ceb1ec01e6b30d3b0c11bbb7223b6f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566526"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163444"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>脅威トラッカー - 新機能とNoteworthy 機能 
 

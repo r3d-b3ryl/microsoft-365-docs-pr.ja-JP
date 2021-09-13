@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1a15cdd443a712ef7eeef33eeaf30e1c1f374e530b7e4a8d28f145e7408a9ff9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 21b896565050edec92740e2d49d2d816431770aa
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53815637"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164462"
 ---
 # <a name="contact-support-for-french-polynesia"></a>フランス領ポリネシアのサポートに問い合わせ
 

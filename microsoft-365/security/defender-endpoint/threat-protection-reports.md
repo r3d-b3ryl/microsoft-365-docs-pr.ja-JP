@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 327217a9682e8a50c41c2696292d1a453fbd8cf9
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575986"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164902"
 ---
 # <a name="threat-protection-report-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の脅威に対する保護のレポート
 
@@ -44,7 +44,7 @@ ms.locfileid: "58575986"
 Section | 説明 
 :---|:---
 1 | アラートの傾向
-2  | アラートの概要
+2 | アラートの概要
 
 ## <a name="alert-trends"></a>アラートの傾向
 既定では、アラートの傾向には、最新の 1 日で終了する 30 日間の期間のアラート情報が表示されます。 組織で発生している傾向についてより良い視点を得るために、表示される期間を調整してレポート期間を微調整できます。 期間を調整するには、ドロップダウン オプションから時間範囲を選択します。
@@ -52,7 +52,7 @@ Section | 説明
 - 30 日間
 - 3 か月
 - 6 か月
-- カスタム
+- Custom
 
 >[!NOTE]
 >これらのフィルターは、[アラートの傾向] セクションにのみ適用されます。 アラートの概要セクションには影響を与えかねない。

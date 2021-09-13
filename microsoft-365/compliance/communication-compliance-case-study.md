@@ -8,6 +8,7 @@ author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
+ms.custom: admindeeplinkMAC
 f1_keywords:
 - ms.o365.cc.SupervisoryReview
 ms.service: O365-seccomp
@@ -19,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: b384d83c219c342b8ca729aef7b90d66cd07b4f3
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: f674e21ecc83a24f641ae7e21361245cb18cdd4c
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569815"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164038"
 ---
 # <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>ケース スタディ - Contoso 社は、コミュニケーションをサポートする言語ポリシーを迅速にMicrosoft Teams、Exchange、Yammerします。
 
@@ -71,7 +72,7 @@ Contoso IT 管理者とコンプライアンス スペシャリストは、Micro
 
 Contoso IT 管理者は、Contoso のライセンス サポートを確認するために次の手順を実行します。
 
-1. IT 管理者は、アカウントに **サインインしMicrosoft 365 管理センター** <https://admin.microsoft.com> 課金ライセンスにMicrosoft 365 管理センター  >    >  **移動します**。
+1. IT 管理者は、アカウントにサインイン <https://admin.microsoft.com> Microsoft 365 管理センター、[課金ライセンス] Microsoft 365 管理センター >  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">**に移動します**</a>。
 
 2. ここでは、通信コンプライアンスのサポートを含む[](communication-compliance-configure.md#subscriptions-and-licensing)ライセンス オプションの 1 つが使用されているのを確認します。
 
@@ -116,7 +117,7 @@ Contoso 社は、コミュニケーション *コンプライアンス役割グ�
 
 ### <a name="starting-from-the-microsoft-365-compliance-center"></a>最初のMicrosoft 365 コンプライアンス センター
 
-Contoso IT 管理者とコンプライアンス スペシャリストが通信コンプライアンス ソリューションにアクセスするためのもう 1 つの簡単な方法は、Microsoft 365 コンプライアンス センター ( に **直接サインインする**[方法です https://compliance.microsoft.com)](https://compliance.microsoft.com)。 サインイン後にすべてのコンプライアンス ソリューションを表示し、開始するには、**すべてを表示** を選択して、**通信コンプライアンス** ソリューションを選択すれば開始します。
+Contoso IT 管理者とコンプライアンス スペシャリストが通信コンプライアンス ソリューションにアクセスするためのもう 1 つの簡単な方法は、管理者に直接サインイン<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター。</a> サインイン後にすべてのコンプライアンス ソリューションを表示し、開始するには、**すべてを表示** を選択して、**通信コンプライアンス** ソリューションを選択すれば開始します。
 
 ![コンプライアンス センター。](../media/communication-compliance-case-center.png)
 
@@ -128,7 +129,7 @@ Contoso の IT 管理者とコンプライアンス スペシャリストは、�
 
 ### <a name="starting-from-the-microsoft-365-admin-center"></a>最初のMicrosoft 365 管理センター
 
-Microsoft 365 管理センター から開始するときに通信コンプライアンスにアクセスするには、Contoso IT 管理者とコンプライアンス スペシャリストが Microsoft 365 管理センター [に https://admin.microsoft.com)](https://admin.microsoft.com)サインインし、Microsoft 365 管理センター コンプライアンス に **移動**  >  **します**。
+Microsoft 365 管理センター から開始するときに通信コンプライアンスにアクセスするには、Contoso IT 管理者とコンプライアンス スペシャリストが Microsoft 365 管理センター にサインインします[( https://admin.microsoft.com) ](https://admin.microsoft.com)および[Microsoft 365 コンプライアンス センター]<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">に移動します</a>。
 
 ![通信コンプライアンス リンク。](../media/communication-compliance-case-compliance-link.png)
 
@@ -166,7 +167,7 @@ Contoso コンプライアンス スペシャリストは、不快な言語を�
 
 すべての Contoso ユーザーを含める新しいグループを作成する必要があります。そのため、次の手順を実行します。
 
-1. Contoso IT 管理者は、IT管理者が管理者にサインインMicrosoft 365 管理センター [グループグループに移動Microsoft 365 管理センター https://admin.microsoft.com)](https://admin.microsoft.com)  >    >  **移動します**。
+1. Contoso IT 管理者は、IT 管理者が管理者にサインインMicrosoft 365 管理センター [グループグループに移動 https://admin.microsoft.com) Microsoft 365 管理センター >](https://admin.microsoft.com)  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**移動します**</a>。
 2. [グループの **追加] を選択** し、ウィザードを完了して新しいグループまたは配布 *Microsoft 365を**作成します*。
 
     ![グループ](../media/communication-compliance-case-all-employees.png)

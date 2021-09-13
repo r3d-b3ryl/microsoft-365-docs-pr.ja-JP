@@ -20,11 +20,11 @@ ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 94a7fb847eca7f46f543399d8de1b2d3d12e1908
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566560"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164615"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>脅威エクスプローラーとリアルタイム検出
 
@@ -210,7 +210,7 @@ Threat Explorer では、次のエクスペリエンスでユーザー タグに
 
 - URL フライアウトの [クリック] セクションに、クリックされた完全な URL  (URL の一部であるクエリ パラメーターを含む) を表示します。 現在、URL ドメインとパスはタイトル バーに表示されます。 その情報を拡張して、完全な URL を表示します。
 
-- URL フィルター *(URL* とURL ドメインと URL ドメイン、パスの間の *修正):* 更新プログラムは、URL/クリックの評決を含むメッセージの検索に影響します。 プロトコルに依存しない検索のサポートが有効になっているので、使用せずに URL を検索できます `http` 。 既定では、別の値が明示的に指定されていない限り、URL 検索は http にマップされます。 次に例を示します。
+- URL フィルター *(URL* とURL ドメインと URL ドメイン、パスの間の *修正):* 更新プログラムは、URL/クリックの評決を含むメッセージの検索に影響します。 プロトコルに依存しない検索のサポートが有効になっているので、使用せずに URL を検索できます `http` 。 既定では、別の値が明示的に指定されていない限り、URL 検索は http にマップされます。 例:
   - URL、URL ドメイン、URL ドメイン、および URL の [ドメイン] および [パス] フィルター フィールドで、プレフィックスの付きまたは指定 `http://` **なしで** 検索します。   検索は同じ結果を表示する必要があります。
   - URL でプレフィックス `https://` を検索 **します**。 値を指定しない場合、プレフィックス `http://` が使用されます。
   - `/` URL パス **、URL** ドメイン **、URL** ドメイン、およびパス フィールドの先頭と末尾 **で無視** されます。 `/` URL フィールドの末尾 **は無視** されます。
@@ -531,7 +531,7 @@ URL クリックのレポートを Microsoft Excelにエクスポートして、
 - [オンライン、オンライン、SharePoint、およびOneDriveで検出された悪意のあるMicrosoft Teams](./mdo-for-spo-odb-and-teams.md)
 - [脅威エクスプローラー (およびリアルタイム検出) のビューの概要を取得する](threat-explorer-views.md)
 - [脅威保護の状態レポート](view-email-security-reports.md#threat-protection-status-report)
-- [データの自動調査とMicrosoft 365 Defender](../defender/m365d-autoir.md)
+- [Microsoft 365 Defender での自動調査と応答](../defender/m365d-autoir.md)
 
 ## <a name="required-licenses-and-permissions"></a>必要なライセンスとアクセス許可
 

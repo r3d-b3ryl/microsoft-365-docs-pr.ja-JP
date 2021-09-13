@@ -1,5 +1,5 @@
 ---
-title: DeviceFromIP() 関数は、Defender の高度なMicrosoft 365します。
+title: デバイスの高度な検索で DeviceFromIP() Microsoft 365 Defender
 description: DeviceFromIP() 関数を使用して、特定の IP アドレスが割り当てられているデバイスを取得する方法について説明します。
 keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、device、devicefromIP、function、enrichment
 search.product: eADQiWindows 10XVcnh
@@ -21,11 +21,11 @@ ms.collection:
 ms.topic: article
 ms.technology: m365d
 ms.openlocfilehash: 3ea951e35555721a989001b2a5235df5b89a8a55
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933183"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164774"
 ---
 # <a name="devicefromip"></a>DeviceFromIP()
 
@@ -43,10 +43,10 @@ ms.locfileid: "51933183"
 
 この関数は、次の列を持つテーブルを返します。
 
-| Column | データ型 | 説明 |
+| 列 | データ型 | 説明 |
 |------------|-------------|-------------|
 | `IP` | string | IP アドレス  |
-| `DeviceId` | string | サービス内のデバイスの一意の識別子 |
+| `DeviceId` | 文字列 | サービス内のデバイスの一意の識別子 |
 
 
 ## <a name="syntax"></a>構文

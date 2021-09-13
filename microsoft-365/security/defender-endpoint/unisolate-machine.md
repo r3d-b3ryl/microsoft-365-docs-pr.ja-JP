@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 848d422828a4c0a8c8e5c7aa63c31f0727ea12f4
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349934"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164790"
 ---
 # <a name="release-device-from-isolation-api"></a>分離 API からデバイスを解放する
 
@@ -60,7 +60,7 @@ ms.locfileid: "58349934"
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
 アプリケーション|Machine.Isolate|'分離マシン'
-委任 (職場または学校のアカウント)|Machine.Isolate|'分離マシン'
+委任 (職場または学校アカウント)|Machine.Isolate|'分離マシン'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
@@ -76,7 +76,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/unisolate
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**
 Content-Type|string|application/json. **必須**
@@ -85,7 +85,7 @@ Content-Type|string|application/json. **必須**
 
 要求本文で、JSON オブジェクトに次のパラメーターを指定します。
 
-パラメーター|種類|説明
+パラメーター|型|説明
 :---|:---|:---
 コメント|文字列|アクションに関連付けるコメント。 **必須**
 

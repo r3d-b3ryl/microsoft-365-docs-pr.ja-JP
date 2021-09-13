@@ -16,20 +16,21 @@ ms.custom:
 - O365ITProTrain
 - Ent_Office_Other
 - PowerShell
+- admindeeplinkMAC
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
 description: PowerShell を使用して、Microsoft 365テナント内の個々または複数のユーザー アカウントのプロパティMicrosoft 365します。
-ms.openlocfilehash: 23d89448eb9f34d67ada8711b8ca6463a0f6acd7
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: b638a3afafd3c1701cf11f5868d0413d3995eadd
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356626"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163863"
 ---
 # <a name="configure-microsoft-365-user-account-properties-with-powershell"></a>PowerShell Microsoft 365ユーザー アカウントのプロパティを構成する
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-このプロパティを使用Microsoft 365 管理センターテナントのユーザー アカウントのプロパティをMicrosoft 365できます。 PowerShell では、管理センターで実行できないその他の操作も実行できます。
+このプロパティを使用<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>テナントのユーザー アカウントのプロパティをMicrosoft 365できます。 PowerShell では、管理センターで実行できないその他の操作も実行できます。
   
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph 用 Azure Active Directory PowerShell モジュールを使用する
 

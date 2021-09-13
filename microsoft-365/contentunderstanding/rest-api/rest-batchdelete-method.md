@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: REST API を使用して、適用された文書理解モデルを 1 つ以上のライブラリから削除します。
-ms.openlocfilehash: 3865b0720364f9bf8c0fa2bdb6f2f95dee04915daaf4e153e411e6d4ad40bb1c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bbd3e496b50d3fddb31342fbc07d30984544e744
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53865049"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163926"
 ---
 # <a name="batchdelete"></a>BatchDelete
 
@@ -57,13 +57,13 @@ POST /_api/machinelearning/publications/batchdelete HTTP/1.1
 
 ## <a name="response"></a>応答
 
-| 名前   | 種類  | 説明|
+| 名前   | 型  | 説明|
 |--------|-------|------------|
 |200 OK||これは、複数ドキュメント ライブラリからのモデルの削除をサポートするためのカスタマイズされた API です。部分的に成功した場合でも 200 OK が返される可能性があり、呼び出し元は応答本文を調べて、モデルがドキュメント ライブラリから正常に削除されたかどうかを把握する必要があります。|
 
 ## <a name="response-body"></a>応答本文
 
-| 名前   | 種類  | 説明|
+| 名前   | 型  | 説明|
 |--------|-------|------------|
 |TotalSuccesses|整数|ドキュメント ライブラリから正常に削除されたモデルの総数。|
 |TotalFailures|整数|ドキュメント ライブラリからの削除に失敗したモデルの総数。|
@@ -71,7 +71,7 @@ POST /_api/machinelearning/publications/batchdelete HTTP/1.1
 
 ### <a name="machinelearningpublicationresult"></a>MachineLearningPublicationResult
 
-| 名前   | 種類  | 説明|
+| 名前   | 型  | 説明|
 |--------|-------|------------|
 |StatusCode|整数|HTTP 状態コード。|
 |ErrorMessage|文字列|モデルをドキュメント ライブラリに適用するときに何が問題になっているのかを示すエラー メッセージ。|
@@ -79,7 +79,7 @@ POST /_api/machinelearning/publications/batchdelete HTTP/1.1
 
 ### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
 
-| 名前 | 種類 | 説明 |
+| 名前 | 型 | 説明 |
 |--------|--------|------------|
 |ModelUniqueId|文字列|モデル ファイルの一意の ID。|
 |TargetSiteUrl|文字列|ターゲット ライブラリ サイトの完全な URL。|

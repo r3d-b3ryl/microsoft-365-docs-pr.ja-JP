@@ -12,11 +12,11 @@ manager: laurawi
 ms.topic: article
 audience: Admin
 ms.openlocfilehash: 1654998a69b364ebf399c2aabac185bc98fb9388
-ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58372834"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165183"
 ---
 # <a name="validate-new-devices"></a>新しいデバイスを検証する
 
@@ -29,7 +29,7 @@ Microsoft マネージド デスクトップ を初めて使用する場合で�
     - [ユーザー エクスペリエンスをローカライズ](localization.md)
     - [Autopilot と登録ステータス ページの初回実行時エクスペリエンス](esp-first-run.md)
     - [Windows 10 の位置情報サービス](device-location.md)
-    - [アプリ制御の使用を開始する](get-started-app-control.md)
+    - [アプリコントロールの使用を開始する](get-started-app-control.md)
     - [アプリをデバイスに展開する](deploy-apps.md)
 2. 次のエクスペリエンスがエラー、エラー、またはプロンプトなしで動作するように確認します。
     - ネットワークに参加してユーザーがサインインした後の自動パイロット エクスペリエンス

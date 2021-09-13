@@ -19,11 +19,11 @@ search.appverid:
 - MET150
 - MOE150
 ms.openlocfilehash: 568441bb2f9172bb382629dc5e5ad4704cc1b2f6
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58863436"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164007"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>通信コンプライアンスのアラートを調査して修復する
 

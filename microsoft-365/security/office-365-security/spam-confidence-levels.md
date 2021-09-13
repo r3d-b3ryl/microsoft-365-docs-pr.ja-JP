@@ -20,11 +20,11 @@ description: 管理者は、電子メール (EOP) 内のメッセージに適用
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 3d45de527400088a180f5de8f8a836f5e4596395
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573417"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164646"
 ---
 # <a name="spam-confidence-level-scl-in-eop"></a>EOP のスパム信頼レベル (SCL)
 

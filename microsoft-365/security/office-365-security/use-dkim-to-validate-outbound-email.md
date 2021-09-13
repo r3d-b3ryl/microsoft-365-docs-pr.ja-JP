@@ -21,11 +21,11 @@ description: Microsoft 365 で DomainKeys Identified Mail (DKIM) を使用して
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 25c83dedaa9f1606744e54459a0ebfb5627be752
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575482"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164607"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>DKIM を使用して、カスタム ドメインから送信される送信電子メールを検証する
 

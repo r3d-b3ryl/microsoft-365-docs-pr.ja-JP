@@ -17,13 +17,15 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: 電子情報開示関連のタスクを実行するために必要なアクセス許可を、Microsoft 365 コンプライアンス センター。
-ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 87fe1f6a6f02e00e6c4884ac8ddb439939ed8c74
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkMAC
+ms.openlocfilehash: 8fda81c4318525744eaa51c8904a465e87159675
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569119"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164215"
 ---
 # <a name="assign-ediscovery-permissions-in-the-microsoft-365-compliance-center"></a>電子情報開示のアクセス許可をユーザーに割り当Microsoft 365 コンプライアンス センター
 
@@ -54,9 +56,9 @@ ms.locfileid: "58569119"
   
 ## <a name="assign-ediscovery-permissions"></a>電子情報開示のアクセス許可を割り当てる
 
-1. アクセス許可 <https://compliance.microsoft.com> を割り当て可能なアカウントを使用して、アクセスしてサインインします。
+1. アクセス許可を<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>アカウントを使用してサインインします。
   
-2. ウィンドウの左側のウィンドウで、[アクセス許可Microsoft 365 コンプライアンス センターを **選択します**。
+2. 左側のウィンドウで、[アクセス許可] **を選択します**。
 
 3. [アクセス許可 **と役割&] ページの** [コンプライアンス センター] **で**、[役割] を **クリックします**。
 
@@ -77,16 +79,16 @@ Microsoft 365 コンプライアンス センターの [アクセス許可] ペ�
 
 次の表に、Microsoft 365 コンプライアンス センター の電子情報開示関連の RBAC ロールを示し、各役割が既定で割り当てられている組み込みの役割グループを示します。
   
-| 役割 | コンプライアンス管理者 | 電子情報開示マネージャー &管理者 | 組織管理 | レビュー担当者 |
+| Role | コンプライアンス管理者 | 電子情報開示マネージャー &管理者 | 組織管理 | レビュー担当者 |
 |:-----|:-----:|:-----:|:-----:|:-----:|
-|ケース管理 <br/> |![チェック マークを付します。](../media/checkmark.png) <br/> |![チェック マークを付します。](../media/checkmark.png) <br/> |![チェック マークを付します。](../media/checkmark.png) <br/> | <br/> |
-|コミュニケーション <br/> | <br/> |![チェック マークを付します。](../media/checkmark.png) <br/> | <br/> | <br/> |
-|コンプライアンス検索 <br/> |![チェック マークを付します。](../media/checkmark.png) <br/> |![チェック マークを付します。](../media/checkmark.png) <br/> |![チェック マークを付します。](../media/checkmark.png) <br/> | <br/> |
-|カストディアン <br/> | <br/> |![チェック マークを付します。](../media/checkmark.png) <br/> | <br/> | <br/> |
-|エクスポート <br/> | <br/> |![チェック マークを付します。](../media/checkmark.png) <br/> | <br/> | <br/> |
-|Hold <br/>  |![チェック マークを付します。](../media/checkmark.png) <br/> |![チェック マークを付します。](../media/checkmark.png) <br/> |![チェック マークを付します。](../media/checkmark.png) <br/> | <br/> |
-|Preview <br/>  | <br/> |![チェック マークを付します。](../media/checkmark.png) <br/> | <br/> | <br/> |
-|確認 <br/>  | <br/> |![チェック マークを付します。](../media/checkmark.png) <br/> | <br/> |![チェック マーク](../media/checkmark.png) <br/> |
+|ケース管理 <br/> |![チェック マーク。](../media/checkmark.png) <br/> |![チェック マーク。](../media/checkmark.png) <br/> |![チェック マーク。](../media/checkmark.png) <br/> | <br/> |
+|コミュニケーション <br/> | <br/> |![チェック マーク。](../media/checkmark.png) <br/> | <br/> | <br/> |
+|コンプライアンス検索 <br/> |![チェック マーク。](../media/checkmark.png) <br/> |![チェック マーク。](../media/checkmark.png) <br/> |![チェック マーク。](../media/checkmark.png) <br/> | <br/> |
+|カストディアン <br/> | <br/> |![チェック マーク。](../media/checkmark.png) <br/> | <br/> | <br/> |
+|Export <br/> | <br/> |![チェック マーク。](../media/checkmark.png) <br/> | <br/> | <br/> |
+|Hold <br/>  |![チェック マーク。](../media/checkmark.png) <br/> |![チェック マーク。](../media/checkmark.png) <br/> |![チェック マーク。](../media/checkmark.png) <br/> | <br/> |
+|Preview <br/>  | <br/> |![チェック マーク。](../media/checkmark.png) <br/> | <br/> | <br/> |
+|レビュー <br/>  | <br/> |![チェック マーク。](../media/checkmark.png) <br/> | <br/> |![チェック マーク](../media/checkmark.png) <br/> |
 |RMS の暗号化解除 <br/>  ||![チェック マーク](../media/checkmark.png) <br/> |||
 |検索と消去 <br/> | <br/> | <br/> |![チェック マーク](../media/checkmark.png)           <br/> | <br/> |
 ||||
@@ -145,7 +147,7 @@ Microsoft 365 コンプライアンス センターの [アクセス許可] ペ�
 
 この役割では、コンテンツ検索から返された項目の一覧を表示できます。 一覧から各項目を開いて表示し、項目の内容を確認することもできます。
 
-### <a name="review"></a>確認
+### <a name="review"></a>レビュー
 
 この役割を使用すると、ユーザーはユーザーがレビュー セットに[アクセスAdvanced eDiscovery。](overview-ediscovery-20.md) この役割が割り当てられているユーザーは、自分がメンバーである Microsoft 365 コンプライアンス センター の [電子情報開示 > **Advanced]** ページでケースの一覧を表示して開きます。 ユーザーがケースにアクセスしたAdvanced eDiscovery、ケース データにアクセスするために **[** セットの確認] を選択できます。 この役割では、ユーザーがケースに関連付けられているコレクション検索の結果をプレビューしたり、その他の検索またはケース管理タスクを実行したりできない。 この役割を持つユーザーは、レビュー セット内のデータにのみアクセスできます。
 
@@ -171,7 +173,7 @@ Microsoft 365 コンプライアンス センターの [アクセス許可] ペ�
   Add-RoleGroupMember "eDiscovery Manager" -Member <name of security group>
   ```
 
-    Exchange配布グループとMicrosoft 365グループはサポートされていません。 メールが有効なセキュリティ グループを使用する必要があります。このグループは、PowerShell で実行Exchange Online作成できます `New-DistributionGroup -Type Security` 。 また、Exchange 管理センターまたは Microsoft 365 管理センターで、メールが有効なセキュリティ グループを作成 (およびメンバーを追加) することもできます。 電子情報開示マネージャーの役割グループに新しいメールが有効なセキュリティを追加するには、作成後最大 60 分かかる場合があります。 
+    Exchange配布グループとMicrosoft 365グループはサポートされていません。 メールが有効なセキュリティ グループを使用する必要があります。このグループは、PowerShell で実行Exchange Online作成できます `New-DistributionGroup -Type Security` 。 メールが有効なセキュリティ グループを作成 (およびメンバーを追加する) は、Exchange管理センターまたは管理センターで[行Microsoft 365 管理センター。](https://go.microsoft.com/fwlink/p/?linkid=2024339) 電子情報開示マネージャーの役割グループに新しいメールが有効なセキュリティを追加するには、作成後最大 60 分かかる場合があります。 
 
     また、前述のとおり、セキュリティ/コンプライアンス センターの PowerShell で **Add-eDiscoveryCaseAdmin** コマンドレットを使用して、メールが有効なセキュリティ グループを電子情報開示管理者にすることはできません。 個別のユーザーは、電子情報開示管理者としてのみ追加できます。
 

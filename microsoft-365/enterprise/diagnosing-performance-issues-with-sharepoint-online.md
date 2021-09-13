@@ -20,11 +20,11 @@ search.appverid:
 ms.assetid: 3c364f9e-b9f6-4da4-a792-c8e8c8cd2e86
 description: この記事では、開発者ツールを使用してオンライン サイトで一般的なSharePointを診断Internet Explorer示します。
 ms.openlocfilehash: 44e60a2144b1a9a8ecc9ef5572e5cfd988c4b8af
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58561100"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165407"
 ---
 # <a name="diagnosing-performance-issues-with-sharepoint-online"></a>SharePoint Online のパフォーマンスの問題の診断
 

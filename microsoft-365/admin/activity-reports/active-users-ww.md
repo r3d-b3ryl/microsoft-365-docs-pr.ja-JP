@@ -23,11 +23,11 @@ search.appverid:
 ms.assetid: fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d
 description: '[アクティブ ユーザー] ダッシュボードの [Microsoft 365] ダッシュボードを使用してアクティブ ユーザー レポートを取得するMicrosoft 365 管理センター、使用されている製品ライセンスの数を確認します。'
 ms.openlocfilehash: 456d561246a1c2073b571fa5c48ed97cc9f71849
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58393450"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164551"
 ---
 # <a name="assess-the-microsoft-365-active-users-report"></a>[アクティブ ユーザーのMicrosoft 365評価] レポート
 

@@ -21,11 +21,11 @@ ms.custom:
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
 description: この記事では、PowerShell を使用してユーザーのサービスへのアクセスを無効にするMicrosoft 365説明します。
 ms.openlocfilehash: 7caab5fc6bc4522f210d788d0293c4594997f13d
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354298"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165390"
 ---
 # <a name="disable-access-to-microsoft-365-services-with-powershell"></a>PowerShell を使用してMicrosoft 365サービスへのアクセスを無効にする
 
@@ -148,7 +148,7 @@ $USSales | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName 
 
    この例では、テキスト ファイルは C: \\ My Documents \\Accounts.txt。
     
-2. 次のコマンドを実行します。
+2. 次のコマンドを実行します:
     
    ```powershell
    Get-Content "C:\My Documents\Accounts.txt" | foreach {Set-MsolUserLicense -UserPrincipalName $_ -LicenseOptions $LO}

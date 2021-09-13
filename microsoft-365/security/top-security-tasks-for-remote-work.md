@@ -16,11 +16,11 @@ ms.collection:
 - remotework
 description: ランサムウェア、フィッシング、悪意のある添付ファイルなどのサイバー脅威からビジネス メールとデータを保護します。
 ms.openlocfilehash: f0918f9cd6d23e5ebafb0a7aaf8208e1a06bfee5
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571231"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163457"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>自宅での作業をサポートするセキュリティ チームの上位 12 のタスク
 
@@ -42,9 +42,9 @@ Microsoft のエンタープライズ プランを使用しているお客様は
 
 |手順|タスク|すべてのOffice 365 Enterpriseプラン|Microsoft 365 E3|Microsoft 365 E5|
 |---|---|---|---|---|
-|1 |[Azure AD多要素認証 (MFA) を有効にする](#1-enable-azure-ad-multi-factor-authentication-mfa)|![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|2 |[脅威からの保護](#2-protect-against-threats)|![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|3 |[Microsoft Defender for Office 365](#3-configure-microsoft-defender-for-office-365)|||![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|1|[Azure AD多要素認証 (MFA) を有効にする](#1-enable-azure-ad-multi-factor-authentication-mfa)|![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|2|[脅威からの保護](#2-protect-against-threats)|![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|3|[Microsoft Defender for Office 365](#3-configure-microsoft-defender-for-office-365)|||![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |4 |[Id の Microsoft Defender を構成する](#4-configure-microsoft-defender-for-identity)|||![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |5 |[Microsoft 365 Defender を有効にする](#5-turn-on-microsoft-365-defender)|||![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |6 |[電話とタブレットの Intune モバイル アプリ保護を構成する](#6-configure-intune-mobile-app-protection-for-phones-and-tablets)||![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|
@@ -52,7 +52,7 @@ Microsoft のエンタープライズ プランを使用しているお客様は
 |8 |[デバイス管理に PC を登録し、準拠している PC を必要とする](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)||![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |9 |[クラウド接続のためにネットワークを最適化する](#9-optimize-your-network-for-cloud-connectivity)|![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |10 |[ユーザーのトレーニング](#10-train-users)|![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|11 |[Microsoft Cloud App Security の使用を開始する](#11-get-started-with-microsoft-cloud-app-security)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|11|[Microsoft Cloud App Security の使用を開始する](#11-get-started-with-microsoft-cloud-app-security)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |12 |[脅威を監視し、アクションを実行する](#12-monitor-for-threats-and-take-action)|![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |
 
@@ -70,7 +70,7 @@ Microsoft のエンタープライズ プランを使用しているお客様は
 
 ****
 
-|プラン|推奨事項|
+|計画|推奨事項|
 |---|---|
 |Microsoft 365プラン (Azure AD P1 または P2 なし)|[Azure AD でセキュリティの既定値を有効にします](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。 Azure AD のセキュリティの既定値には、ユーザーと管理者用の MFA が含まれています。|
 |Microsoft 365 E3 (Azure AD P1)|[一般的な条件付きアクセス ポリシー](/azure/active-directory/conditional-access/concept-conditional-access-policy-common)を使用して、次のポリシーを構成します。 <br/>- [管理者に MFA を要求する](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br/>- [すべてのユーザーに MFA を要求する](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br/> - [従来の認証をブロックする](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)|

@@ -17,11 +17,11 @@ ms.collection:
 ms.custom: ''
 description: ユーザーの ID に対するロードマップMicrosoft 365。
 ms.openlocfilehash: 27abe04da2fed0eaae09fa0ed42a83286fe74f5d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573117"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165326"
 ---
 # <a name="identity-roadmap-for-microsoft-365"></a>Microsoft 365 の ID ロードマップ
 
@@ -41,7 +41,7 @@ ms.locfileid: "58573117"
 
 また、この [ポスターをダウンロードして](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf) 、レター、リーガル、またはタブロイド (11 x 17) 形式で印刷することもできます。
 
-## <a name="plan"></a>プラン
+## <a name="plan"></a>計画
 
 ID の実装を計画するには、次の方法を実行します。
 

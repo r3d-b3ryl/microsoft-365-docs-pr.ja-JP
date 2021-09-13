@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 6400e34e50baef8122886027683e6f75277cf85caa2ca539b81a79412462491d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 99a07b1517058b0e5ab241aaae9c6899e2994432
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884225"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164751"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -47,12 +47,12 @@ ms.locfileid: "53884225"
 | `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
 | `DeviceId` | string | コンピューターの一意識別子 |
 | `DeviceName` | string | コンピューターの完全修飾ドメイン名 (FQDN) |
-| `ClientVersion` | string | コンピューターで実行されているエンドポイント エージェントまたはセンサーのバージョン |
+| `ClientVersion` | 文字列 | コンピューターで実行されているエンドポイント エージェントまたはセンサーのバージョン |
 | `PublicIP` | string | オンボード コンピューターが Microsoft Defender for Endpoint サービスに接続するために使用するパブリック IP アドレス。 これは、コンピューター自体の IP アドレス、NAT デバイス、またはプロキシである可能性があります。 |
 | `OSArchitecture` | string | コンピューターで実行されているオペレーティング システムのアーキテクチャです。 |
 | `OSPlatform` | string | コンピューターで実行されているオペレーティング システムのプラットフォームです。 これは、特定のオペレーティング システム (同じファミリ内のバリエーション (Windows 10および Windows 7 など) を示します。 |
 | `OSBuild` | string | コンピューターで実行されているオペレーティング システムのバージョンをビルドする |
-| `IsAzureADJoined` | ブール値 | コンピューターがコンピューターに参加しているかどうかを示すブールAzure Active Directory |
+| `IsAzureADJoined` | boolean | コンピューターがコンピューターに参加しているかどうかを示すブールAzure Active Directory |
 | `AadObjectId` | string | Azure のデバイスの一意の識別子AD |
 | `LoggedOnUsers` | string | JSON 配列形式のイベント時にコンピューターにログオンしているすべてのユーザーの一覧 |
 | `RegistryDeviceTag` | string | レジストリを介して追加されたコンピューター タグ |
@@ -67,7 +67,7 @@ ms.locfileid: "53884225"
 |`Model` | string | ベンダーまたは製造元の製品のモデル名または番号 |
 |`Vendor` | string | 製品ベンダーまたは製造元の名前 |
 |`OSDistribution` | string | Linux プラットフォーム用の Ubuntu や RedHat などの OS プラットフォームの配布 |
-|`OSVersionInfo` | string | OS バージョンに関する追加情報 (一般的な名前、コード名、バージョン番号など) |
+|`OSVersionInfo` | 文字列 | OS バージョンに関する追加情報 (一般的な名前、コード名、バージョン番号など) |
 |`MergedDeviceIds` | string | 同じデバイスに割り当てられている以前のデバイス ID |
 |`MergedToDeviceId` | string | デバイスに割り当てられた最新のデバイス ID |
 
@@ -82,7 +82,7 @@ DeviceInfo
 | summarize arg_max(Timestamp, *) by DeviceId 
 ```
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)

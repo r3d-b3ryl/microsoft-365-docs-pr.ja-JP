@@ -23,11 +23,11 @@ description: 管理者は、潜在的に危険なメッセージまたは望ま�
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: c68351b690ecab2f60990695dc0e550b5ff0aff7
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349946"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164647"
 ---
 # <a name="quarantined-email-messages-in-eop"></a>EOP で検疫された電子メール メッセージ
 

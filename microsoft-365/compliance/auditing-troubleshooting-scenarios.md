@@ -19,11 +19,11 @@ ms.custom:
 - seo-marvel-apr2020
 description: 電子メール アカウントの一般的なMicrosoft 365のトラブルシューティングに役立つ監査ログ検索ツールを使用する方法について説明します。
 ms.openlocfilehash: 4f90d618fd72c41a3c1d3d6ff1600f3d6d10bbfc
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564208"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164167"
 ---
 # <a name="search-the-audit-log-to-investigate-common-support-issues"></a>監査ログを検索して、一般的なサポートの問題を調査する
 

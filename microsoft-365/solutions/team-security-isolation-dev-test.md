@@ -17,11 +17,11 @@ ms.collection:
 ms.custom: ''
 description: 従業員がいつでもどこからでもリモートで作業できるようにするセキュリティとインフラストラクチャを構成します。
 ms.openlocfilehash: 38dc7110c44b3b9acf20283a4156b3eccc0f2165
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572781"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163425"
 ---
 # <a name="configure-a-team-with-security-isolation-in-a-devtest-environment"></a>開発/テスト環境でセキュリティの分離を使用してチームを構成する
 

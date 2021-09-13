@@ -12,6 +12,7 @@ f1.keywords:
 ms.custom:
 - Adm_O365
 - seo-marvel-apr2020
+- admindeeplinkMAC
 ms.collection:
 - Ent_O365
 - M365-identity-device-management
@@ -23,16 +24,16 @@ search.appverid:
 - GPA150
 ms.assetid: b4fc07a5-97ea-4ca6-9692-108acab74067
 description: ディレクトリ同期エラーと考えられる修正プログラムを表示する方法については、Microsoft 365 管理センター。
-ms.openlocfilehash: 0bdacf95e0f8534cb721496dc4edb1b49bba131f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 081bf3c0b531acbbe3fe81e8d200e1e03827dfd1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570211"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165335"
 ---
 # <a name="view-directory-synchronization-errors-in-microsoft-365"></a>ディレクトリ同期エラーの Microsoft 365表示
 
-ディレクトリ同期エラーは、ディレクトリの同期エラー Microsoft 365 管理センター。 User オブジェクトのエラーだけが表示されます。 PowerShell のエラーを表示するには [、「DirSyncProvisioningErrors](/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency)を使用してオブジェクトを識別する」を参照してください。
+ディレクトリ同期エラーは、ディレクトリの同期<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">エラー</a>Microsoft 365 管理センター。 User オブジェクトのエラーだけが表示されます。 PowerShell のエラーを表示するには [、「DirSyncProvisioningErrors](/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency)を使用してオブジェクトを識別する」を参照してください。
 
 ## <a name="view-directory-synchronization-errors-in-the-microsoft-365-admin-center"></a>ディレクトリ同期エラーを表示するMicrosoft 365 管理センター
 

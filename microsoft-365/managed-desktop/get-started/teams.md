@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: ITPro
-ms.openlocfilehash: 71fa0c380dd6e7d5d348cffb4f1113032b3ee27bdf8711191b3d12903e6b1789
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 01a3adc7829bbb94f36649f69ba6ef15dbe6b3c2
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53890937"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165190"
 ---
 # <a name="microsoft-teams"></a>Microsoft Teams
 

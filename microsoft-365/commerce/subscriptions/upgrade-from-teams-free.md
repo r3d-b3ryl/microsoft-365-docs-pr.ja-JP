@@ -21,19 +21,19 @@ search.appverid: MET150
 description: '[無料] からビジネス サブスクリプションMicrosoft Teams新しいMicrosoft 365アップグレードする方法について学習します。'
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 07/08/2020
-ms.openlocfilehash: 326c76c2939e6312eb6ef9865e1197b16e6d0c702af1594517913bc3ba7d52f2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ea80492344f76ead19aa5db1e504c2c52a9746c1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53892257"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59167553"
 ---
 # <a name="upgrade-from-microsoft-teams-free-to-microsoft-365-for-business"></a>ビジネス向けMicrosoft Teams無料Microsoft 365アップグレード
 
 > [!IMPORTANT]
 > この記事は、インドのMicrosoft Teams組織にのみ適用されます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 無料の組織をアップグレードするにはMicrosoft Teams無料の管理者Microsoft Teams必要があります。 無料の組織を作成した場合は、自動的に管理者Microsoft Teamsされます。
 
@@ -69,7 +69,7 @@ ms.locfileid: "53892257"
 
 ビジネス サブスクリプション用の新しいMicrosoft 365が作成されたので、無料の組織の既存のユーザーにライセンスMicrosoft Teamsできます。
 
-1. 管理センターで、**[ユーザー]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> の順に移動します。
+1. 管理センターで、[ユーザーのアクティブな **ユーザー]**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**に移動します**</a>。
 2. ビジネス ライセンスに割り当てるユーザーをMicrosoft 365、[製品ライセンスの管理]**を選択します**。
 3. [製品ライセンス **の管理] ウィンドウで** 、[既存のライセンス割り当 **てを置き換える] を選択します**。
 4. [既存の **製品を置き** 換える] ウィンドウで、購入Microsoft 365ビジネス製品の製品を検索し、トグルを [オン] に切り替 **えます**。

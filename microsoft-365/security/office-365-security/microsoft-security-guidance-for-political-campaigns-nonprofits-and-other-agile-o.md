@@ -23,11 +23,11 @@ description: '概要: 増大する脅威プロファイルを抱え、急速に�
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 8053714fe705735cff43b2aa85a726e8511f57b6
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575686"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164655"
 ---
 # <a name="microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations"></a>選挙運動、非営利組織、およびその他のアジャイル組織のための Microsoft Security ガイダンス
 

@@ -18,11 +18,11 @@ search.appverid:
 - MET150
 description: この記事では、コア電子情報開示ケースを管理する方法について説明します。 これには、ケースの終了、閉じたケースの再オープン、ケースの削除が含まれます。
 ms.openlocfilehash: 67961d2404f54ca3fbb33dabc71508ba65bfa205
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573297"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164055"
 ---
 # <a name="close-reopen-and-delete-a-core-ediscovery-case"></a>Core 電子情報開示ケースを閉じる、再度開く、削除する
 

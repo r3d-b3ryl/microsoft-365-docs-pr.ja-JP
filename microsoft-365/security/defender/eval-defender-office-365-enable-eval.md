@@ -22,11 +22,11 @@ ms.collection:
 ms.topic: how-to
 ms.technology: m365d
 ms.openlocfilehash: f00daf82a2b6090f6934aba12eb9227efdfa1422
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58576154"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163613"
 ---
 # <a name="enable-the-evaluation-environment"></a>評価環境を有効にする
 

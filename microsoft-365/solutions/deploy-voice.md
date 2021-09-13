@@ -18,11 +18,11 @@ ms.custom:
 f1.keywords: NOCSH
 description: 組織に適切な音声ソリューションを選択Teams展開する方法について学習します。
 ms.openlocfilehash: 359242ea66fc1be9af18ff10cb7e33fe26ddd83e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575374"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163441"
 ---
 # <a name="plan-and-deploy-a-teams-voice-solution"></a>Teams 音声ソリューションを計画し展開する
 

@@ -19,11 +19,11 @@ search.appverid:
 - MET150
 - MOE150
 ms.openlocfilehash: 0e0e6d2359b9dbec64263deede1776d2bd5889a8
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58863460"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164022"
 ---
 # <a name="communication-compliance-feature-reference"></a>通信コンプライアンス機能リファレンス
 

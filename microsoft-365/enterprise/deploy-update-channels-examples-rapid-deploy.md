@@ -16,11 +16,11 @@ ms.collection:
 ms.custom: ''
 description: 最新リリースを導入している組織での、Windows 10 アプリ、 Microsoft 365 アプリのチャネルの使用方法。
 ms.openlocfilehash: 025f6976fd578af4bf0c9a0c268f046f72ef6901
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58561088"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165422"
 ---
 # <a name="example-of-broad-deployment-for-the-latest-releases"></a>最新リリースの幅広い展開例
 
@@ -109,6 +109,6 @@ Microsoft 365 アプリの展開方法と戦略の詳細については、[Micro
 
 [展開および更新プログラム チャネルの構成例](deploy-update-channels-examples.md)
 
-[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
+[Microsoft 365 for Enterprise の概要](microsoft-365-overview.md)
 
 [テスト ラボ ガイド](m365-enterprise-test-lab-guides.md)

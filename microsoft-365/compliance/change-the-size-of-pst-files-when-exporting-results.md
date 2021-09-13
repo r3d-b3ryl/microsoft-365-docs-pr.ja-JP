@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: 04e9de2d-765b-457b-a98a-d0f60bfb13f2
 description: 電子情報開示検索結果をエクスポートするときに、コンピューターにダウンロードされる PST ファイルの既定のサイズを変更できます。
 ms.openlocfilehash: 7c77edc4e565a76be41b274aac597c56780395d4
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58501969"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164118"
 ---
 # <a name="change-the-size-of-pst-files-when-exporting-ediscovery-search-results"></a>電子情報開示検索結果をエクスポートするときに PST ファイルのサイズを変更する
 

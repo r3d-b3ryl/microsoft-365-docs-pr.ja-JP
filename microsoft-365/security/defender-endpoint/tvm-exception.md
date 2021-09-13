@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 457df54dd2e73e7c580059cb698a2345dca92a607e730b9d98b5f27bb4e02134
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: de458eed2b52b6043a4f5aaa5f8593b6136f9d37
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853668"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164838"
 ---
 # <a name="create-and-view-exceptions-for-security-recommendations---threat-and-vulnerability-management"></a>セキュリティ推奨事項の例外を作成して表示する - 脅威と脆弱性の管理
 
@@ -42,7 +42,7 @@ ms.locfileid: "53853668"
 
 推奨事項に対して例外が作成されると、例外期間が終了するまで、推奨事項はアクティブにされません。 推奨事項の状態が [完全な例外] **または [部分的な** 例外] (デバイス **グループ** 別) に変更されます。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>アクセス許可
 
 "例外処理" 権限を持つユーザーだけが例外を管理できます (作成またはキャンセルを含む)。 [RBAC の役割について詳しくは、次のページを参照してください](user-roles.md)。
 
@@ -138,7 +138,7 @@ ms.locfileid: "53853668"
 
 ![テーブル内の列を表示します。](images/tvm-after-exceptions-table.png)
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [脆弱性を修復する](tvm-remediation.md)

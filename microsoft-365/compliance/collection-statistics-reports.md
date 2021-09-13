@@ -17,11 +17,11 @@ search.appverid:
 - MET150
 description: レビュー セットにコミットされた下書きコレクションとコレクションの統計とレポートにアクセスして使用する方法についてAdvanced eDiscovery。
 ms.openlocfilehash: d5c1fa3ccb8d9657570b7d0bf3640ac1834248d9
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569107"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164047"
 ---
 # <a name="collection-statistics-and-reports-in-advanced-ediscovery"></a>コレクションの統計情報とレポート (Advanced eDiscovery
 

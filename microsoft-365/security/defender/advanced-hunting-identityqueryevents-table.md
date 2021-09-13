@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 49d420bcf938ab0180b3d6ddaf518d9d2f55c89b3d7bd0fc104a8e05a79c0686
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 89f6f83112bc6bea57a3b5f7703353adb9d87a30
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53799420"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163633"
 ---
 # <a name="identityqueryevents"></a>IdentityQueryEvents
 
@@ -45,14 +45,14 @@ ms.locfileid: "53799420"
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
-| `ActionType` | string | イベントをトリガーしたアクティビティの種類。 詳細については [、ポータル内スキーマリファレンス](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) を参照してください。 |
+| `ActionType` | 文字列 | イベントをトリガーしたアクティビティの種類。 詳細については [、ポータル内スキーマリファレンス](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) を参照してください。 |
 | `Application` | string | 記録されたアクションを実行したアプリケーション |
-| `QueryType` | string | QueryGroup、QueryUser、または EnumerateUsers などのクエリの種類 |
+| `QueryType` | 文字列 | QueryGroup、QueryUser、または EnumerateUsers などのクエリの種類 |
 | `QueryTarget` | string | クエリを実行するユーザー、グループ、デバイス、ドメイン、その他のエンティティ型の名前 |
 | `Query` | string | クエリの実行に使用される文字列 |
 | `Protocol` | string | 通信中に使用されるプロトコル |
 | `AccountName` | string | アカウントのユーザー名 |
-| `AccountDomain` | string | アカウントのドメイン |
+| `AccountDomain` | 文字列 | アカウントのドメイン |
 | `AccountUpn` | string | アカウントのユーザー プリンシパル名 (UPN) |
 | `AccountSid` | string | アカウントのセキュリティ識別子 (SID) |
 | `AccountObjectId` | string | Azure アカウントのアカウントの一意AD |
@@ -70,7 +70,7 @@ ms.locfileid: "53799420"
 | `ReportId` | long | イベントの一意識別子 |
 | `AdditionalFields` | string | エンティティまたはイベントに関する追加情報 |
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)

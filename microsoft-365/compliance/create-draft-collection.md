@@ -17,11 +17,11 @@ search.appverid:
 - MET150
 description: 下書きコレクションは、コレクションの検索クエリに一致する検索見積もりを返す Advanced eDiscovery ケース内の保管データ ソースと非保管データ ソースの電子情報開示検索です。 検索結果をレビュー セットにコミットする前に、検索統計を確認し、アイテムのサンプリングをプレビューし、コレクションを修正して再実行できます。
 ms.openlocfilehash: 0354f2a04dfff82f995fe74663633f42ed01e677
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572721"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163974"
 ---
 # <a name="create-a-draft-collection-in-advanced-ediscovery"></a>下書きコレクションを作成Advanced eDiscovery
 

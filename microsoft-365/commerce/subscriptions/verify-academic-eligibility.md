@@ -17,15 +17,16 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
+- admindeeplinkMAC
 search.appverid: MET150
 description: 教育機関向け価格に対する学校の適格性をMicrosoft 365 Educationする方法について学習します。
 ms.date: 07/21/2020
-ms.openlocfilehash: b861092b0168fa83a8bac423caa3e29621837bc1f08d5af95502cde94c97ff4a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 86bdb4338c316edf5b8bdb83a61a5a0fd2f411ee
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53808850"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59167541"
 ---
 # <a name="verify-academic-eligibility-for-microsoft-365-education-subscriptions"></a>サブスクリプションの学業Microsoft 365 Education確認する
 
@@ -33,7 +34,7 @@ ms.locfileid: "53808850"
 
 この記事では、学校の教育機関の資格を確認し、資格の状態を確認し、学校が承認された後に学術価格でサブスクリプションを購入する方法について説明します。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 試用版サブスクリプションが既Microsoft 365 Education必要です。 試用版サブスクリプションをお持ちでない場合は、この Web ページ [にアクセス](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) し、[無料で開始 **する] を選択します**。
 
@@ -60,7 +61,7 @@ ms.locfileid: "53808850"
 試験を受けたMicrosoft 365 Education、学校の学業資格の状況をいつでも確認できます。
 
 1. 
-            [Microsoft 365 管理センター](https://go.microsoft.com/fwlink/p/?linkid=2024339)に戻ります。
+            <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>に戻ります。
 2. ホーム ページで、[課金] カード **を** 探します。\
     課金 **カード** は、検証プロセスの状態を示します。 カードには、承認済み、保留中、拒否、またはドメインの追加のいずれかの状態が表示されます。
 

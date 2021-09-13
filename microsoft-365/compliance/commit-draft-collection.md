@@ -17,11 +17,11 @@ search.appverid:
 - MET150
 description: 下書きコレクションを作成して反復処理した後、そのコレクションをレビュー セットにコミットできます。 下書きコレクションをコミットすると、収集されたアイテムがケースのレビュー セットに追加されます。 収集したアイテムがレビュー セットに含められたら、それらを分析、確認、およびエクスポートできます。
 ms.openlocfilehash: 9b63117a90f6373e485f74e2edccfa0992ca2ded
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567510"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164031"
 ---
 # <a name="commit-a-draft-collection-to-a-review-set-in-advanced-ediscovery"></a>下書きコレクションをレビュー セットにコミットAdvanced eDiscovery
 

@@ -20,11 +20,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: 3b111fe66e35bcd87898eefa2d336b8031651098
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568806"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163593"
 ---
 # <a name="get-started-with-microsoft-365-for-defender"></a>Defender のMicrosoft 365を開始する
 

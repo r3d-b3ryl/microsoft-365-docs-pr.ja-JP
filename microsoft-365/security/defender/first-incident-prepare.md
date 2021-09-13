@@ -23,11 +23,11 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.openlocfilehash: 79a8c8f20b2db4f1b3604c5e652c98a6c9898868
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58558952"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163603"
 ---
 # <a name="prepare-your-security-posture-for-your-first-incident"></a>最初のインシデントのセキュリティ態勢を準備する
 
@@ -45,7 +45,7 @@ Microsoft 365 Defender、インシデント防止のいくつかの側面に対�
 - 脅威と脆弱性管理の脆弱性評価による [脅威の防止](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)
 - 最新のセキュリティ脅威を理解して、セキュリティ脅威に備える
 
-## <a name="step-1-implement-zero-trust"></a>手順 1. ゼロ信頼の実装
+## <a name="step-1-implement-zero-trust"></a>手順 1。 ゼロ信頼の実装
 
 [ゼロトラスト](/security/zero-trust/) は、モバイルワークフォース、ユーザー、デバイス、アプリケーション、データなど、モダンな環境の複雑な性質を考慮した統合セキュリティ哲学とエンドツーエンド戦略です。 Microsoft 365 Defender では、すべての検出を一貫した方法で管理するための単一のウィンドウを提供することで、セキュリティ運用チームがゼロトラストの指針を簡単に[](/security/zero-trust/#guiding-principles-of-zero-trust)実装できます。 
 

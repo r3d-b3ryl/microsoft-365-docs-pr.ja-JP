@@ -15,11 +15,11 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.openlocfilehash: 1137ef50c5e3fb72b6bc0532b021de05c7eff1ce
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58576130"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164702"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities-through-microsoft-365-defender"></a>管理を通じてMicrosoft 脅威エキスパート機能を構成Microsoft 365 Defender
 
@@ -32,7 +32,7 @@ ms.locfileid: "58576130"
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 > [!IMPORTANT]
 > 適用する前に、microsoft Technical Service プロバイダーとアカウント チームと一緒に、Microsoft 脅威エキスパート - ターゲット攻撃通知管理脅威検出サービスの適格性要件について説明してください。

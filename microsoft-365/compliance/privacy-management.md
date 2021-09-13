@@ -17,11 +17,11 @@ search.appverid:
 - MET150
 description: Microsoft のプライバシー管理は、組織が保管している個人データをMicrosoft 365、プライバシー リスクの特定と修復に役立つソリューションを提供します。
 ms.openlocfilehash: 1243e786dcfa936802b0e82eb217ec6fc4f45bbf
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394722"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163935"
 ---
 # <a name="microsoft-privacy-management-preview"></a>Microsoft プライバシー管理 (プレビュー)
 

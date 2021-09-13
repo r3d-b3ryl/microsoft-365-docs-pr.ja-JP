@@ -18,11 +18,11 @@ f1.keywords:
 - NOCSH
 description: SaaS サービスにとってネットワークの最適化が重要である理由、ネットワークのMicrosoft 365、SaaS が他のワークロードとは異なるネットワークを必要とする方法について説明します。
 ms.openlocfilehash: c5794f9312ba098d27beb65bfbb272701ac3927f
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58683958"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165287"
 ---
 # <a name="microsoft-365-network-connectivity-overview"></a>Microsoft 365接続の概要
 
@@ -78,7 +78,7 @@ Microsoft 365は、エンドポイント セキュリティと暗号化された
 
 クライアント トラフィックが地理的な場所に可能な限り近い位置に出力できるようにして、ネットワーク パスを Microsoft 365 エントリ ポイントに短縮すると、Microsoft 365 での接続パフォーマンスとエンド ユーザー エクスペリエンスが向上します。 また、ネットワーク アーキテクチャに対する将来の変更がパフォーマンスと信頼性に及ぼす影響をMicrosoft 365役立ちます。 最適な接続モデルは、企業ネットワークまたは自宅、ホテル、コーヒーショップ、空港などのリモートの場所に関係なく、常にユーザーの場所にネットワーク出力を提供します。 一般的なインターネット トラフィックと WAN ベースの企業ネットワーク トラフィックは個別にルーティングされ、ローカルの直接出力モデルは使用されません。 このローカルの直接の出口モデルを示したものが下の図です。
 
-![ローカル出力ネットワークアーキテクチャ。](../media/6bc636b0-1234-4ceb-a45a-aadd1044b39c.png)
+![ローカル出口ネットワーク アーキテクチャ。](../media/6bc636b0-1234-4ceb-a45a-aadd1044b39c.png)
 
 ローカル出口アーキテクチャには、従来のモデルよりも Microsoft 365 ネットワーク トラフィックに次のような利点があります。
   
@@ -91,7 +91,7 @@ Microsoft 365は、エンドポイント セキュリティと暗号化された
 
 ネットワーク接続の原則の理解と適用Microsoft 365については、「ネットワーク接続[Microsoft 365」を参照してください](microsoft-365-network-connectivity-principles.md)。
 
-## <a name="conclusion"></a>結論
+## <a name="conclusion"></a>まとめ
 
 ネットワークパフォーマンスMicrosoft 365最適化すると、不要な障害が取り除かされます。 ネットワーク接続Microsoft 365信頼できるトラフィックとして処理することで、パケット検査やプロキシ帯域幅の競合によって遅延が発生するのを防ぐことが可能です。 クライアント コンピューターとエンドポイント間のローカル接続Office 365、トラフィックを Microsoft グローバル ネットワーク経由で動的にルーティングできます。
 

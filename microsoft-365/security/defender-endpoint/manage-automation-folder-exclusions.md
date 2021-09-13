@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 6ecd6371a75ec4a9156f7d6bccf59045f0700490
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58822774"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164999"
 ---
 # <a name="manage-automation-folder-exclusions"></a>自動化フォルダーの除外を管理する
 
@@ -58,9 +58,9 @@ ms.locfileid: "58822774"
     - フォルダー
     - 拡張機能
     - ファイル名
-    - 内容
+    - 説明
 
-4. [**保存**] をクリックします。
+4. **[保存]** をクリックします。
 
 > [!NOTE]
 > 除外されたファイルを収集または調べる Live Response コマンドは、"ファイルが除外されました" というエラーで失敗します。 さらに、自動調査では除外されたアイテムは無視されます。

@@ -16,11 +16,11 @@ ms.collection:
 ms.custom: ''
 description: パートナー組織がチャネルを使用してどのように展開および更新するか。
 ms.openlocfilehash: 76c627e3a3278897c9075adf8af8a721c1021a99
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356386"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165415"
 ---
 # <a name="deployment-and-update-channel-example-configurations"></a>展開および更新プログラム チャネルの構成例
 
@@ -56,6 +56,6 @@ Windows 10 および Microsoft 365 Apps で使用する更新チャネルの選�
 
 ## <a name="see-also"></a>関連項目
 
-[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
+[Microsoft 365 for Enterprise の概要](microsoft-365-overview.md)
 
 [テスト ラボ ガイド](m365-enterprise-test-lab-guides.md)

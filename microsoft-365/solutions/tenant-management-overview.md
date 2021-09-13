@@ -17,11 +17,11 @@ ms.custom:
 - Ent_Solutions
 description: ユーザーのテナントの計画、展開、および継続的なMicrosoft 365概要。
 ms.openlocfilehash: 5d98f715b9233a29c8710966099667075eae0020
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573381"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163428"
 ---
 # <a name="tenant-management-for-microsoft-365-for-enterprise"></a>エンタープライズ向けMicrosoft 365テナント管理
 
@@ -90,7 +90,7 @@ Microsoft 365テナントは、ヨーロッパや北アメリカなどの特定�
 
 次のセクションと表は、このソリューションの手順の主な機能とライセンスの一覧です。
 
-### <a name="tenant"></a>テナント
+### <a name="tenant"></a>Tenant
 
 |機能|説明|ライセンス|
 |---|---|---|

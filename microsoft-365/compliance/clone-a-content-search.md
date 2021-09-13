@@ -19,11 +19,11 @@ ms.custom:
 - seo-marvel-apr2020
 description: この記事の PowerShell スクリプトを使用して、コンプライアンス センターの既存のコンテンツ検索をすばやく複製Office 365またはMicrosoft 365。
 ms.openlocfilehash: 80dd6911f387a7912d92bfbcfac3c94e6ee804eb
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58503205"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164078"
 ---
 # <a name="clone-a-content-search"></a>コンテンツ検索をコピーする
 

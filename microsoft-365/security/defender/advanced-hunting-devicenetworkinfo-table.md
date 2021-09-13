@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 478ea1b605c4aeda5b1a6b5aec26b6abb57723ff7f82e5684a42af742afee3d2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 11a6fd00524e3dd7ad456f68da6f493d74deee69
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863465"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164726"
 ---
 # <a name="devicenetworkinfo"></a>DeviceNetworkInfo
 
@@ -47,11 +47,11 @@ ms.locfileid: "53863465"
 | `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
 | `DeviceId` | string | コンピューターの一意識別子 |
 | `DeviceName` | string | コンピューターの完全修飾ドメイン名 (FQDN) |
-| `NetworkAdapterName` | string | ネットワーク アダプターの名前 |
+| `NetworkAdapterName` | 文字列 | ネットワーク アダプターの名前 |
 | `MacAddress` | string | ネットワーク アダプターの MAC アドレス |
-| `NetworkAdapterType` | string | ネットワーク アダプターの種類。 使用できる値については、この列挙 [を参照してください。](/dotnet/api/system.net.networkinformation.networkinterfacetype) |
+| `NetworkAdapterType` | 文字列 | ネットワーク アダプターの種類。 使用できる値については、この列挙 [を参照してください。](/dotnet/api/system.net.networkinformation.networkinterfacetype) |
 | `NetworkAdapterStatus` | string | ネットワーク アダプターの運用状態。 使用できる値については、この列挙 [を参照してください。](/dotnet/api/system.net.networkinformation.operationalstatus) |
-| `TunnelType` | string | トンネリング プロトコル (インターフェイスが 6to4、Teredo、ISATAP、PPTP、SSTP、SSH など) に使用されている場合 |
+| `TunnelType` | 文字列 | トンネリング プロトコル (インターフェイスが 6to4、Teredo、ISATAP、PPTP、SSTP、SSH など) に使用されている場合 |
 | `ConnectedNetworks` | string | アダプターが接続されているネットワーク。 各 JSON 配列には、ネットワーク名、カテゴリ (パブリック、プライベート、またはドメイン)、説明、およびインターネットにパブリックに接続されているかどうかを示すフラグが含まれる |
 | `DnsAddresses` | string | JSON 配列形式の DNS サーバー アドレス |
 | `IPv4Dhcp` | string | DHCP サーバーの IPv4 アドレス |
@@ -60,7 +60,7 @@ ms.locfileid: "53863465"
 | `IPAddresses` | string | アダプターに割り当てられているすべての IP アドレスと、それぞれのサブネット プレフィックスと IP アドレス空間 (パブリック、プライベート、リンク ローカルなど) を含む JSON 配列 |
 | `ReportId` | long | 繰り返しカウンターに基づくイベント識別子。 一意のイベントを識別するには、この列を DeviceName 列と Timestamp 列と組み合わせて使用する必要があります。 |
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)

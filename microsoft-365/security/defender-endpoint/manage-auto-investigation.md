@@ -20,11 +20,11 @@ ms.topic: how-to
 ms.date: 01/29/2021
 ms.technology: mde
 ms.openlocfilehash: 2abe290fc5956b5f8df1931b2142a35df8b53817
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58822794"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165007"
 ---
 # <a name="review-remediation-actions-following-an-automated-investigation"></a>自動調査後の修復アクションの確認
 
@@ -89,7 +89,7 @@ ms.locfileid: "58822794"
 
 |アクション ソース|サポートされているアクション|
 |---|---|
-|<ul><li>自動調査</li><li>Microsoft Defender ウイルス対策</li><li>手動応答アクション</li></ul>|<ul><li>デバイスの分離</li><li>コードの実行を制限する</li><li>ファイルの検疫</li><li>レジストリ キーを削除する</li><li>サービスを停止する</li><li>ドライバーを無効にする</li><li>スケジュールされたタスクを削除する</li></ul>|
+|<ul><li>自動調査</li><li>Microsoft Defender ウイルス対策</li><li>手動応答アクション</li></ul>|<ul><li>デバイスの分離</li><li>コードの実行制限</li><li>ファイルの検疫</li><li>レジストリ キーを削除する</li><li>サービスを停止する</li><li>ドライバーを無効にする</li><li>スケジュールされたタスクを削除する</li></ul>|
 |
 
 ### <a name="to-undo-multiple-actions-at-one-time"></a>複数のアクションを一度に元に戻すには

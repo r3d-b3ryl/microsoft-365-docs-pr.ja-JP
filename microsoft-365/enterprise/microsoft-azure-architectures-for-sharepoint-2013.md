@@ -17,11 +17,11 @@ ms.custom:
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
 description: 2013 SharePoint 2013 ソリューションの種類を、Microsoft Azure仮想マシンでホストできる方法、および Azure をホストするように設定する方法について説明します。
 ms.openlocfilehash: 937072dfec55618a4bfb8f9405bd525023ca3d44
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571340"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165215"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>SharePoint 2013 用の Microsoft Azure アーキテクチャ
 

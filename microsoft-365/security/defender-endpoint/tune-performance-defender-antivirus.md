@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d38fe9f7c3bb19c946f97d00720cd8bf60c18f4c
-ms.sourcegitcommit: a4e6a5a92ea527461a7835ddc83e2b01986e566b
+ms.openlocfilehash: 964447ee755d5587d03c6c3ee6cb56131013d34d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "58918379"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164886"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>パフォーマンス アナライザー (Microsoft Defender ウイルス対策
 
@@ -42,26 +42,31 @@ ms.locfileid: "58918379"
 
 1. パフォーマンス アナライザーを実行して、エンドポイント上のイベントMicrosoft Defender ウイルス対策記録を収集します。
 
-> [!NOTE]
-> **Microsoft-antimalware-Engine** Microsoft Defender ウイルス対策のイベントのパフォーマンスは、パフォーマンス アナライザーによって記録されます。
+   > [!NOTE]
+   > **Microsoft-antimalware-Engine** Microsoft Defender ウイルス対策のイベントのパフォーマンスは、パフォーマンス アナライザーによって記録されます。
 
 2. さまざまな記録レポートを使用してスキャン結果を分析します。
 
 ## <a name="using-performance-analyzer"></a>パフォーマンス アナライザーの使用
 
-システム イベントの記録を開始するには、管理モードで Powershell を開き、次の手順を実行します。
+システム イベントの記録を開始するには、管理モードで PowerShell を開き、次の手順を実行します。
 
 1. 次のコマンドを実行して、記録を開始します。
 
-`New-MpPerformanceRecording -RecordTo <recording.etl>`
+   `New-MpPerformanceRecording -RecordTo <recording.etl>`
  
- where `-RecordTo` パラメーターは、トレース ファイルが保存される完全なパスの場所を指定します。 コマンドレットの詳細については [、「Defender」を参照してください](/powershell/module/defender)。
+    where `-RecordTo` パラメーターは、トレース ファイルが保存される完全なパスの場所を指定します。 コマンドレットの詳細については [、「Defender」を参照してください](/powershell/module/defender)。
 
 2. パフォーマンスに影響を与えるプロセスまたはサービスがある場合は、関連するタスクを実行して状況を再現します。
+
 3. Enter **キーを押** して録音を停止して保存するか **、Ctrl + C キーを押して録音** をキャンセルします。
+
 4. パフォーマンス アナライザーのパラメーターを使用して結果を分析 `Get-MpPerformanceReport` します。 たとえば、コマンドを実行すると、パフォーマンスに影響を与える上位 3 つのファイルに対する上位 10 回のスキャンの一覧 `Get-MpPerformanceReport -Path <recording.etl> -TopFiles 3 -TopScansPerFile 10` がユーザーに提供されます。 
 
 コマンド ライン パラメーターとオプションの詳細については [、「New-MpPerformanceRecording」](#new-mpperformancerecording) および [「Get-MpPerformanceReport」を参照してください](#get-mpperformancereport)。
+
+> [!NOTE]
+> 記録を実行するときに、「Windows Performance Recorder が既に記録されているため、パフォーマンス記録を開始できません」というエラーが表示された場合は、次のコマンドを実行して、新しいコマンドを使用して既存のトレースを停止します **。wpr -cancel -instancename** MSFT_MpPerformanceRecording
 
 ### <a name="performance-tuning-data-and-information"></a>パフォーマンスチューニングのデータと情報
 
@@ -71,7 +76,7 @@ ms.locfileid: "58918379"
 
 ### <a name="additional-functionality-exporting-and-converting-to-csv-and-json"></a>その他の機能: CSV および JSON へのエクスポートと変換
 
-perfomance アナライザーの結果をエクスポートし、CSV または JSON ファイルに変換できます。
+パフォーマンス アナライザーの結果をエクスポートし、CSV または JSON ファイルに変換できます。
 サンプル コードによる "エクスポート" と "変換" のプロセスを説明する例については、以下を参照してください。
 
 #### <a name="for-csv"></a>CSV の場合

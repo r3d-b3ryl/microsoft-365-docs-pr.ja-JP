@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 98852db88f2b586d8e69a529a838e785dc22654c
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58683994"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165142"
 ---
 # <a name="list-vulnerabilities-by-software"></a>ソフトウェアによる脆弱性の一覧表示
 
@@ -48,7 +48,7 @@ ms.locfileid: "58683994"
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
 アプリケーション|Vulnerability.Read.All|'脅威と脆弱性管理ソフトウェア情報の読み取り'
-委任 (職場または学校のアカウント)|脆弱性。読み取り|'脅威と脆弱性管理ソフトウェア情報の読み取り'
+委任 (職場または学校アカウント)|脆弱性。読み取り|'脅威と脆弱性管理ソフトウェア情報の読み取り'
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -60,7 +60,7 @@ GET /api/Software/{Id}/vulnerabilities
 
 |名前|型|説明
 |---|---|---|
-|Authorization|文字列|ベアラー {token}。**必須**。
+|Authorization|String|ベアラー {token}。**必須**。
 
 ## <a name="request-body"></a>要求本文
 

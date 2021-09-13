@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: ''
 description: 弁護士クライアントの特権検出モデルを使用して、機械学習ベースの特権コンテンツの検出を使用して、ユーザーのケースでコンテンツをAdvanced eDiscoveryします。
 ms.openlocfilehash: babf0088b7880e614234c0eea0432b0a7fa22db0
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569131"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164190"
 ---
 # <a name="set-up-attorney-client-privilege-detection-in-advanced-ediscovery"></a>アプリケーションで弁護士とクライアントの特権の検出をAdvanced eDiscovery
 

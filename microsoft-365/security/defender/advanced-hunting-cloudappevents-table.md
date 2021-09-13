@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 32afec539e63c9ce411bb49c52a2facc7f99e9eae84bff3e0bf65f670f1b4dd0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 17f424d368c0df2f07cda41917f005e4163e5750
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857245"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163703"
 ---
 # <a name="cloudappevents"></a>CloudAppEvents
 
@@ -50,13 +50,13 @@ ms.locfileid: "53857245"
 | `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
 | `ActionType` | string | イベントをトリガーしたアクティビティの種類 |
 | `Application` | string | 記録されたアクションを実行したアプリケーション |
-| `ApplicationId` | string | アプリケーションの一意の識別子 |
+| `ApplicationId` | 文字列 | アプリケーションの一意の識別子 |
 | `AccountObjectId` | string | アカウントの一意の識別子は、Azure Active Directory |
 | `AccountDisplayName` | string | アドレス帳に表示されるアカウント ユーザーの名前。 通常、指定または名、ミドル イニシエーション、姓または姓の組み合わせ。 |
 | `IsAdminOperation` | string | アクティビティが管理者によって実行されたかどうかを示します。 |
 | `DeviceType` | string | 目的と機能に基づくデバイスの種類 ("ネットワーク デバイス"、"ワークステーション"、"Server"、"Mobile"、"Gaming console"、"Printer" など) | 
 | `OSPlatform` | string | デバイスで実行されているオペレーティング システムのプラットフォーム。 この列は、特定のオペレーティング システム (同じファミリ内のバリエーション (Windows 10 7 など) をWindowsします。 |
-| `IPAddress` | string | エンドポイントに割り当て、関連するネットワーク通信中に使用される IP アドレス |
+| `IPAddress` | 文字列 | エンドポイントに割り当て、関連するネットワーク通信中に使用される IP アドレス |
 | `IsAnonymousProxy` | string | IP アドレスが既知の匿名プロキシに属するかどうかを示します。 |
 | `CountryCode` | string | クライアント IP アドレスが地理的に位置付けされている国を示す 2 文字のコード |
 | `City` | string | クライアント IP アドレスが地理的に位置付けされている都市 |
@@ -64,12 +64,12 @@ ms.locfileid: "53857245"
 | `UserAgent` | string | Web ブラウザーまたは他のクライアント アプリケーションからのユーザー エージェント情報 |
 | `ActivityType` | string | イベントをトリガーしたアクティビティの種類 |
 | `ActivityObjects` | string | 記録されたアクティビティに含まれるファイルやフォルダーなどのオブジェクトの一覧 |
-| `ObjectName` | string | 記録されたアクションが適用されたオブジェクトの名前 |
+| `ObjectName` | 文字列 | 記録されたアクションが適用されたオブジェクトの名前 |
 | `ObjectType` | string | 記録されたアクションが適用されたオブジェクトの種類 (ファイルやフォルダーなど) |
 | `ObjectId` | string | 記録されたアクションが適用されたオブジェクトの一意の識別子 |
 | `ReportId` | string | イベントの一意識別子 |
 | `RawEventData` | string | JSON 形式のソース アプリケーションまたはサービスからの生のイベント情報 |
-| `AdditionalFields` | string | エンティティまたはイベントに関する追加情報 |
+| `AdditionalFields` | 文字列 | エンティティまたはイベントに関する追加情報 |
 
 ## <a name="apps-and-services-covered"></a>対象となるアプリとサービス
 
@@ -85,7 +85,7 @@ ms.locfileid: "53857245"
 - Office 365
 - Yammer 
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)

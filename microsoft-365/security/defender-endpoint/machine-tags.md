@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: e23980133d2fb0c69ca79f6dfdde7656e1961097
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58745639"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165031"
 ---
 # <a name="create-and-manage-device-tags"></a>デバイス タグの作成と管理
 

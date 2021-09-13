@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 158888fec2be8f310085836e1d34fbcbd8aa93df
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 3dc075caccc5724ed3ea76e5d3c06f3a5b6f7f2e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58585656"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164895"
 ---
 # <a name="indicator-resource-type"></a>インジケーター リソースの種類
 
@@ -58,7 +58,7 @@ indicatorType|列挙|インジケーターの種類。 指定できる値は、"
 action|列挙|インジケーターが組織内で検出される場合に実行されるアクション。 指定できる値は、"Warn"、"Block"、"Audit"、"Alert"、"AlertAndBlock"、"BlockAndRemediate"、"Allowed" です。
 |externalID|String|カスタム相関関係の要求で顧客が送信できる ID。|
 sourceType|列挙|"User" (ポータルからなど) ユーザーが作成したインジケーターの場合、API を介して自動アプリケーションを使用して送信された場合は "AadApp"。
-createdBySource|string|インジケーターを送信したユーザー/アプリケーションの名前。
+createdBySource|文字列|インジケーターを送信したユーザー/アプリケーションの名前。
 createdBy|String|インジケーターを送信したユーザー/アプリケーションの一意の ID。
 lastUpdatedBy|String|インジケーターを最後に更新したユーザー/アプリケーションの ID。
 creationTimeDateTimeUtc|DateTimeOffset|インジケーターが作成された日時。
@@ -77,15 +77,20 @@ rbacGroupIds|文字列の一覧|RBAC デバイス グループ ID は、イン�
 
 API でサポートされるインジケーター アクションの種類は次のとおりです。
 
-- AlertAndBlock
-- 許可
-- 監査
+- 可
 - 通知
+- AlertAndBlock
+- 監査
+- ブロック
+- BlockAndRemediate
 - 警告
-- BlockExecution
-- BlockRemdiation
 
-アクションの種類の API リストには、新しい応答アクションと、以前の応答アクション (AlertAndBlock、および Alert) が含まれる。
+アクションの種類の API リストには、新しい応答アクションと、以前の応答アクション (AlertAndBlock、および Alert) が含まれる。 応答アクションの種類の説明の詳細については、「Create indicators 」 [を参照してください](manage-indicators.md)。
+
+許可、警告、ブロック、および BlockAndRemediate の IoC 応答アクションはパブリック プレビューに表示されます。 パブリック プレビューの詳細については、「パブリック プレビュー: カスタム ファイル IoC 拡張機能と API スキーマ[更新プログラム - Microsoft Tech Community」 を参照してください](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/public-preview-custom-file-ioc-enhancements-and-api-schema/ba-p/2676997)。
+
+
+
 
 > [!Note]
 >

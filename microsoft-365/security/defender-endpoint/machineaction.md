@@ -16,11 +16,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: c5ac9de03cec817f469fe096689e4badf615bb4c
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58503265"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165023"
 ---
 # <a name="machineaction-resource-type"></a>MachineAction リソースの種類
 
@@ -68,7 +68,7 @@ ms.locfileid: "58503265"
 |scope|string|アクションのスコープ。 "Full" または "Selective" for Isolation, "Quick" or "Full" for Anti-Virus scan.|
 |requestor|String|アクションを実行したユーザーの ID。|
 |externalID|String|カスタム相関関係の要求で顧客が送信できる ID。|
-|requestSource|string|アクションを送信したユーザー/アプリケーションの名前。|
+|requestSource|文字列|アクションを送信したユーザー/アプリケーションの名前。|
 | コマンド|配列|実行するコマンド。 使用できる値は PutFile、RunScript、GetFile です。|
 |cancellationRequestor|String|アクションをキャンセルしたユーザーの ID。|
 |requestorComment|String|アクションを発行するときに書き込まれたコメント。|

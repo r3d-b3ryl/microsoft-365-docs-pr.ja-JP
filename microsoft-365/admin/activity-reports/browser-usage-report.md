@@ -19,11 +19,11 @@ search.appverid:
 - GEA150
 description: '[レポート] ダッシュボードの [レポート] ダッシュボードを使用して Microsoft Microsoft 365利用状況レポートを取得するMicrosoft 365 管理センター。'
 ms.openlocfilehash: 0e2d3b2ecc0ad196a64f15966fe034edb2601555
-ms.sourcegitcommit: 59bda7cfd92ef1b0e97858da51a776ec668bcfe0
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "58884208"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164542"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-browser-usage"></a>Microsoft 365管理センターのレポート - Microsoft ブラウザーの使用状況
 

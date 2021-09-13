@@ -17,11 +17,11 @@ search.appverid:
 - MET150
 description: ケースまたは調査に関連Advanced eDiscoveryコンテンツを検索および収集するには、ドキュメント内のコレクションを使用します。
 ms.openlocfilehash: dabc321f432996d888686b16e05d8ad6cb6cfc3f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568422"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164039"
 ---
 # <a name="learn-about-collections-in-advanced-ediscovery"></a>コレクションの詳細については、Advanced eDiscovery
 

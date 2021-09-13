@@ -16,11 +16,11 @@ search.appverid:
 - MET150
 description: コンテンツ エクスプローラーでトレーニング可能な分類子にフィードバックを提供する方法について学習します。
 ms.openlocfilehash: 7c021a1fb7a79e335f53fd99b162c9062c4f43a0
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571087"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164095"
 ---
 # <a name="how-to-retrain-a-classifier-in-content-explorer"></a>コンテンツ エクスプローラーで分類子を再トレーニングする方法
 

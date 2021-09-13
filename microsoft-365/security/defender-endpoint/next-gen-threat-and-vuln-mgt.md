@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: overview
 ms.technology: mde
-ms.openlocfilehash: c71a3e5169334adc5d6d6f2b901d82678e5aa27bee47bd20faf06e569a14b63c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 06fdea1c4d84ca4cd23aeb7e715c0087f65275b1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857305"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164982"
 ---
 # <a name="threat-and-vulnerability-management"></a>脅威と脆弱性の管理
 
@@ -32,7 +32,7 @@ ms.locfileid: "53857305"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 エンドポイントの弱点を効果的に特定、評価、修復するには、健全なセキュリティ プログラムを実行し、組織のリスクを軽減する上で極めて重要です。 脅威と脆弱性の管理は、組織の暴露を削減し、エンドポイントの役割を強化し、組織の回復性を向上させるためのインフラストラクチャとして機能します。
 
@@ -83,7 +83,7 @@ ms.locfileid: "53857305"
 
 ## <a name="navigation-pane"></a>ナビゲーション ウィンドウ 
 
-分野 | Description
+分野 | 説明
 :---|:---
 **ダッシュボード**   | 組織の露出スコア、Microsoft Secure Score for Devices、デバイスの露出分布、トップ セキュリティ推奨事項、脆弱なソフトウェアの上位、トップ修復アクティビティ、および公開されているデバイス データの上位レベルのビューを取得します。
 [**セキュリティに関する推奨事項**](tvm-security-recommendation.md) | セキュリティに関する推奨事項と関連する脅威情報の一覧を参照してください。 リストからアイテムを選択すると、フライアウト パネルが開き、脆弱性の詳細、ソフトウェア ページを開くリンク、修復と例外のオプションが表示されます。 デバイスがエンドポイント経由で参加し、Defender for Endpoint で Intune 接続を有効にしている場合Azure Active Directory Intune でチケットを開く方法もできます。

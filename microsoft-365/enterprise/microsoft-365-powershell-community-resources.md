@@ -17,11 +17,11 @@ ms.custom:
 ms.assetid: ebe0f5ff-fd17-487f-bbb6-271b5ea270bb
 description: この記事では、ピアに接続するためのコミュニティ リソースを提供し、PowerShell for Microsoft 365。
 ms.openlocfilehash: 1546ac553b9ae97c8ef6ccd93d11f996f90fdaf7
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356614"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165263"
 ---
 # <a name="microsoft-365-community-resources-for-powershell"></a>PowerShell の Microsoft 365 コミュニティリソース
 

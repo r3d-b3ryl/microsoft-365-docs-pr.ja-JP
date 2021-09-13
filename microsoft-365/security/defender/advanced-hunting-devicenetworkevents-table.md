@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 193fe333bdae96cbfd19af40389ce21c7a3755749e87a250555f195d27590885
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d2b2d1fab4b8cece0bd8fdce91310a7611bef3f5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53888957"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164742"
 ---
 # <a name="devicenetworkevents"></a>DeviceNetworkEvents
 
@@ -50,32 +50,32 @@ ms.locfileid: "53888957"
 | `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
 | `DeviceId` | string | コンピューターの一意識別子 |
 | `DeviceName` | string | コンピューターの完全修飾ドメイン名 (FQDN) |
-| `ActionType` | string | イベントをトリガーしたアクティビティの種類。 詳細については [、ポータル内スキーマリファレンス](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) を参照してください。 |
+| `ActionType` | 文字列 | イベントをトリガーしたアクティビティの種類。 詳細については [、ポータル内スキーマリファレンス](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) を参照してください。 |
 | `RemoteIP` | 文字列 | に接続されていた IP アドレス |
-| `RemotePort` | 整数 | 接続されているリモート デバイスの TCP ポート |
+| `RemotePort` | int | 接続されているリモート デバイスの TCP ポート |
 | `RemoteUrl` | 文字列 | に接続されていた URL または完全修飾ドメイン名 (FQDN) |
 | `LocalIP` | 文字列 | 通信中に使用されるローカル コンピューターに割り当てられた IP アドレス |
-| `LocalPort` | 整数 | 通信中に使用されるローカル コンピューター上の TCP ポート |
+| `LocalPort` | int | 通信中に使用されるローカル コンピューター上の TCP ポート |
 | `Protocol` | string | 通信中に使用されるプロトコル |
-| `LocalIPType` | string | IP アドレスの種類 (パブリック、プライベート、予約済み、ループバック、Teredo、FourToSixMapping、ブロードキャストなど) |
-| `RemoteIPType` | string | IP アドレスの種類 (パブリック、プライベート、予約済み、ループバック、Teredo、FourToSixMapping、ブロードキャストなど) |
+| `LocalIPType` | 文字列 | IP アドレスの種類 (パブリック、プライベート、予約済み、ループバック、Teredo、FourToSixMapping、ブロードキャストなど) |
+| `RemoteIPType` | 文字列 | IP アドレスの種類 (パブリック、プライベート、予約済み、ループバック、Teredo、FourToSixMapping、ブロードキャストなど) |
 | `InitiatingProcessSHA1` | string | イベントを開始したプロセス (イメージ ファイル) の SHA-1 |
 | `InitiatingProcessSHA256` | string | イベントを開始したプロセス (イメージ ファイル) の SHA-256。 このフィールドは通常は入力されません。使用可能な場合は、SHA1 列を使用します。 |
 | `InitiatingProcessMD5` | 文字列型 | イベントを開始したプロセス (イメージ ファイル) の MD5 ハッシュ |
-| `InitiatingProcessFileName` | string | イベントを開始したプロセスの名前 |
+| `InitiatingProcessFileName` | 文字列 | イベントを開始したプロセスの名前 |
 | `InitiatingProcessFileSize` | long | イベントの処理を実行したファイルのサイズ |
 | `InitiatingProcessVersionInfoCompanyName` | string | イベントを担当するプロセスのバージョン情報 (イメージ ファイル) からの会社名 |
 | `InitiatingProcessVersionInfoProductName` | string | イベントを担当するプロセス (イメージ ファイル) のバージョン情報からの製品名 |
-| `InitiatingProcessVersionInfoProductVersion` | string | イベントを担当するプロセスのバージョン情報 (イメージ ファイル) からの製品バージョン |
+| `InitiatingProcessVersionInfoProductVersion` | 文字列 | イベントを担当するプロセスのバージョン情報 (イメージ ファイル) からの製品バージョン |
 | `InitiatingProcessVersionInfoInternalFileName` | string | イベントを担当するプロセスのバージョン情報 (イメージ ファイル) からの内部ファイル名 |
 | `InitiatingProcessVersionInfoOriginalFileName` | string | イベントを担当するプロセスのバージョン情報 (イメージ ファイル) からの元のファイル名 |
-| `InitiatingProcessVersionInfoFileDescription` | string | イベントを担当するプロセス (イメージ ファイル) のバージョン情報の説明 |
-| `InitiatingProcessId` | 整数 | イベントを開始したプロセスのプロセス ID (PID) |
-| `InitiatingProcessCommandLine` | string | イベントを開始したプロセスの実行に使用されるコマンド ライン |
+| `InitiatingProcessVersionInfoFileDescription` | 文字列 | イベントを担当するプロセス (イメージ ファイル) のバージョン情報の説明 |
+| `InitiatingProcessId` | int | イベントを開始したプロセスのプロセス ID (PID) |
+| `InitiatingProcessCommandLine` | 文字列 | イベントを開始したプロセスの実行に使用されるコマンド ライン |
 | `InitiatingProcessCreationTime` | 日付型 | イベントを開始したプロセスが開始された日時 |
 | `InitiatingProcessFolderPath` | string | イベントを開始したプロセス (イメージ ファイル) を含むフォルダー |
 | `InitiatingProcessParentFileName` | string | イベントを担当するプロセスを生成した親プロセスの名前 |
-| `InitiatingProcessParentId` | 整数 | イベントを担当するプロセスを生成した親プロセスのプロセス ID (PID) |
+| `InitiatingProcessParentId` | int | イベントを担当するプロセスを生成した親プロセスのプロセス ID (PID) |
 | `InitiatingProcessParentCreationTime` | 日付型 | イベントを担当するプロセスの親が開始された日時 |
 | `InitiatingProcessAccountDomain` | string | イベントを担当するプロセスを実行したアカウントのドメイン |
 | `InitiatingProcessAccountName` | string | イベントを担当するプロセスを実行したアカウントのユーザー名 |
@@ -88,7 +88,7 @@ ms.locfileid: "53888957"
 | `AppGuardContainerId` | string | ブラウザーのアクティビティを分離するために Application Guard が使用する仮想化コンテナーの識別子 |
 | `AdditionalFields` | string | JSON 配列形式のイベントに関する追加情報 |
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)

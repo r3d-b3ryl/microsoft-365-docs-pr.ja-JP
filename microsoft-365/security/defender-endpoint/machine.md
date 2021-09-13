@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 8a7e1b9641a1c4688da86bb072ab8c33f23be11d
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58745627"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165030"
 ---
 # <a name="machine-resource-type"></a>コンピューター リソースの種類
 
@@ -68,7 +68,7 @@ ms.locfileid: "58745627"
 
 ****
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |---|---|---|
 |id|String|[マシン](machine.md) ID。|
 |computerDnsName|String|[コンピューター](machine.md) の完全修飾名。|
@@ -85,7 +85,7 @@ ms.locfileid: "58745627"
 |rbacGroupId|String|コンピューター グループ ID。|
 |riskScore|Null 許容列挙|Microsoft Defender for Endpoint によって評価されるリスク スコア。 指定できる値は、'None'、'Informational'、'Low'、'Medium'、および 'High' です。|
 |aadDeviceId|Null 許容表現 Guid|AAD デバイス ID ( [コンピューターが](machine.md) AAD 参加している場合)。|
-|machineTags|文字列コレクション|コンピューター タグ [の](machine.md) セット。|
+|machineTags|String collection|コンピューター タグ [の](machine.md) セット。|
 |exposureLevel|Null 許容列挙|Microsoft Defender for Endpoint によって評価される露出レベル。 指定できる値は、'None'、'Low'、'Medium'、および 'High' です。|
 |deviceValue|Null 許容列挙|デバイス [の値](tvm-assign-device-value.md)です。 指定できる値は、'Normal'、'Low'、および 'High' です。|
 |ipAddresses|IpAddress コレクション|***IpAddress オブジェクトの*** セット。 「Get [machines API」を参照してください](get-machines.md)。|

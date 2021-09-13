@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 5108e1b50b7544fcb11cef8bf573fd42cbfad2411f83e8628fecd59a895c1c55
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d7563a8299bbe7d543b065bb25eeb3bc90a854b9
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833233"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163623"
 ---
 # <a name="advanced-hunting-quotas-and-usage-parameters"></a>高度な検索クォータと使用状況パラメーター
 
@@ -39,17 +39,17 @@ ms.locfileid: "53833233"
 
 既存のクォータと使用状況パラメーターを理解するには、次の表を参照してください。
 
-| クォータまたはパラメーター | Size | 更新サイクル | Description |
+| クォータまたはパラメーター | Size | 更新サイクル | 説明 |
 |--|--|--|--|
 | データ範囲 | 30 日間 | すべてのクエリ | 各クエリは、過去 30 日間までのデータを検索できます。 |
-| 結果セット | 10,000 行 | すべてのクエリ | 各クエリは、最大 10,000 レコードを返します。 |
+| 結果セット | 10,000 行 | すべてのクエリ | 各クエリは、最大 10,000 レコードを返すことができます。 |
 | Timeout | 10 分 | すべてのクエリ | 各クエリは最大 10 分間実行できます。 10 分以内に完了しない場合、サービスはエラーを表示します。
-| CPU リソース | テナントのサイズに基づく | 15 分ごと | ポータル [は、クエリが実行](advanced-hunting-errors.md) され、テナントが割り当てられたリソースの 10% 以上を消費するたびにエラーを表示します。 テナントが次の 15 分のサイクルの後まで 100% に達した場合、クエリはブロックされます。 |
+| CPU リソース | テナントのサイズに基づく | 15 分ごと | ポータル [は、クエリが実行](advanced-hunting-errors.md) され、テナントが割り当てられたリソースの 10% 以上を消費するたびにエラーを表示します。 テナントが 100% に達した場合、次の 15 分のサイクル終了までクエリはブロックされます。 |
 
 >[!NOTE] 
 >API を介して実行される高度な検索クエリには、個別のクォータとパラメーターのセットが適用されます。 [高度な狩猟 API について読む](./api-advanced-hunting.md)
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [高度な狩猟のベスト プラクティス](advanced-hunting-best-practices.md)
 - [高度なハンティング エラーの処理](advanced-hunting-errors.md)

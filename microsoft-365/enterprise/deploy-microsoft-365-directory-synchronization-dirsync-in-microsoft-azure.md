@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
 description: Azure の仮想マシンに Azure AD Connectを展開して、オンプレミス ディレクトリと Azure サーバー テナントの間でアカウントを同期するADします。
-ms.openlocfilehash: df41c88330eb71c67505d8a75e8268ae2acb9b01
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: f3e296c7401cfc20a2f7165888825adf58528c68
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575290"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165431"
 ---
 # <a name="deploy-microsoft-365-directory-synchronization-in-microsoft-azure"></a>ディレクトリMicrosoft 365を展開するMicrosoft Azure
 
@@ -177,8 +177,7 @@ Azure AD Connect は、オンプレミスの AD DS から Microsoft 365 サブ�
   
 1. [管理者] の順に [Microsoft 365 管理センター](https://admin.microsoft.com)し、[管理者] を **クリックします**。
     
-2. 左側のナビゲーションで、 **[ユーザー] > [アクティブなユーザー]** をクリックします。
-    
+2. 左側のナビゲーションで、[ユーザーがアクティブな **ユーザー]**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**をクリックします**</a>。
 3. ユーザーアカウントのリストで、アクティブにするユーザー名の隣にあるチェック ボックスをオンにします。
     
 4. ユーザーのページで、**[製品ライセンス]** の **[編集]** をクリックします。
