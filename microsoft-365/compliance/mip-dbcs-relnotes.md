@@ -1,5 +1,5 @@
 ---
-title: 2 バイト文字セットのリリース ノート向け Microsoft 365 コンプライアンス サポート (プレビュー)
+title: 2 バイト文字セットのリリース ノート向け Microsoft 365 コンプライアンス サポート
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,23 +14,23 @@ search.appverid:
 - MOE150
 - MET150
 description: 2 バイト文字セットをサポートするためのリリース ノートです。
-ms.openlocfilehash: 1c2244c49a92aa2c00fad06caa8194cf7e32220e
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: cbcaec29de206344712749fee6bf9f358a04caa6
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681503"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210954"
 ---
-# <a name="support-for-double-byte-character-set-release-notes-preview"></a>2 バイト文字セットのリリース ノート向けサポート (プレビュー)
+# <a name="support-for-double-byte-character-set-release-notes"></a>2 バイト文字セットのリリース ノート向けサポート
 
- Microsoft 365 の情報保護は、次のような場合に 2 バイト文字セットの言語をプレビューでサポートしています。
+ Microsoft 365 Information Protection では、次の 2 バイト文字セットの言語がサポートされるようになりました:
 
 - 中国語 (簡体字)
 - 中国語 (繁体字)
 - 韓国語
 - 日本語
 
-このサポートは、機密情報の種類とキーワード ディクショナリで使用でき、データ損失防止、通信コンプライアンス、Exchange Online、SharePoint Online、OneDrive for Business、および Teams ソリューションに反映されます。
+このサポートは、機密情報の種類とキーワード ディクショナリで使用でき、データ損失防止 (Exchange Online、SharePoint Online、OneDrive for Business、および Teams)、 コミュニケーション コンプライアンス、Office アプリの自動ラベル付け、および Microsoft Cloud App Security に反映されます。
 
 ## <a name="known-issues"></a>既知の問題
 
@@ -47,3 +47,5 @@ ms.locfileid: "48681503"
   - 「添付ファイルに次のいずれかの単語が含まれている」
 
 代わりに、ユーザー設定の機密情報の種類 (SIT) を作成することをお勧めします。これは、メッセージと添付ファイル全体のパターンを検出し、通信コンプライアンス ポリシーの条件として使用します。
+
+
