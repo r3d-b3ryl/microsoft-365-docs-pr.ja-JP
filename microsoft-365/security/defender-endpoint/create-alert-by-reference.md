@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: ab53061a7880d5ba35c16203cffc7d6eb8e7b718
-ms.sourcegitcommit: 008200dad00701b6d457c1af48a33448235ce1c8
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58392112"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222884"
 ---
 # <a name="create-alert-api"></a>アラート API の作成
 
@@ -59,7 +59,7 @@ ms.locfileid: "58392112"
 アクセス許可の種類 | アクセス許可 | アクセス許可の表示名
 :---|:---|:---
 アプリケーション | Alert.ReadWrite.All | 'すべてのアラートの読み取りと書き込み'
-委任 (職場または学校のアカウント) | Alert.ReadWrite | 'アラートの読み取りと書き込み'
+委任 (職場または学校アカウント) | Alert.ReadWrite | 'アラートの読み取りと書き込み'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
@@ -88,12 +88,12 @@ Content-Type | 文字列 | application/json. **必須**
 :---|:---|:---
 eventTime | DateTime(UTC) | 高度な検索から取得したイベントの正確な時刻を文字列として指定します。 例: ```2018-08-03T16:45:21.7115183Z``` **必須です**。
 reportId | String | 高度な狩猟から取得したイベントの reportId。 **必須**
-machineId | String | イベントが識別されたデバイスの ID。 **必須**
+machineId | 文字列 | イベントが識別されたデバイスの ID。 **必須**
 severity | String | アラートの重大度。 プロパティの値は、'Low'、'Medium'、および 'High' です。 **必須**
 title | String | アラートのタイトル。 **必須**
-説明 | String | アラートの説明。 **必須**
-recommendedAction| String | アラートの分析時にセキュリティ担当者が実行するアクションを推奨します。 **必須**
-category| String | アラートのカテゴリ。 プロパティの値は、"General"、"CommandAndControl"、"Collection"、"CredentialAccess"、"DefenseEvasion"、"Discovery"、"エクスプロイト"、"Exploit"、"Execution"、"InitialAccess"、"LateralMovement"、"Malware"、"Persistence"、"PrivilegeEscalation"、"Ransomware"、"SuspiciousActivity" が必要です。
+description | String | アラートの説明。 **必須**
+recommendedAction| 文字列 | アラートの分析時にセキュリティ担当者が実行するアクションを推奨します。 **必須**
+category| 文字列 | アラートのカテゴリ。 プロパティの値は、"General"、"CommandAndControl"、"Collection"、"CredentialAccess"、"DefenseEvasion"、"Discovery"、"エクスプロイト"、"Exploit"、"Execution"、"InitialAccess"、"LateralMovement"、"Malware"、"Persistence"、"PrivilegeEscalation"、"Ransomware"、"SuspiciousActivity" が必要です。
 
 ## <a name="response"></a>応答
 

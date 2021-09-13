@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: e39a1833157210e3d5e4c6a5bcc77deede295f3c
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58501993"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210313"
 ---
 # <a name="list-exposure-score-by-device-group"></a>デバイス グループ別の露出スコアの一覧表示
 

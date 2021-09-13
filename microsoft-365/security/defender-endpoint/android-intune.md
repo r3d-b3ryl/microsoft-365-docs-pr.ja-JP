@@ -18,11 +18,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: 807582e0eec56c42d03329802d72b38ca93ba1ac
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58611088"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59223075"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-android-with-microsoft-intune"></a>Microsoft Intune を使用した Android 用 Microsoft Defender for Endpoint の展開
 
@@ -62,7 +62,7 @@ Android に Defender for Endpoint を展開する方法について、Intune ポ
    - **Publisher** Microsoft として設定します。
    - **アプリ ストア URL as** https://play.google.com/store/apps/details?id=com.microsoft.scmx (Defender for Endpoint app Google Play ストア URL)
 
-   その他のフィールドはオプションです。 **[次へ]** を選択します。
+   その他のフィールドはオプションです。 [**次へ**] を選択します。
 
    ![管理センターのMicrosoft エンドポイント マネージャーアプリ情報を追加します。](images/mda-addappinfo.png)
 
@@ -128,7 +128,7 @@ Intune でサポートされる登録オプションの詳細については、�
 
     ![Defender for Endpoint プレビュー アプリの承認のスクリーンショット。](images/206b3d954f06cc58b3466fb7a0bd9f74.png)
 
-5. [承認の設定] ページが表示されます。 このページでは、Android 上の Defender for Endpoint が要求する可能性がある新しいアプリのアクセス許可を処理する設定が確認されます。 選択肢を確認し、希望するオプションを選択します。 **[完了]** を選択します。
+5. [承認の設定] ページが表示されます。 このページでは、Android 上の Defender for Endpoint が要求する可能性がある新しいアプリのアクセス許可を処理する設定が確認されます。 選択肢を確認し、希望するオプションを選択します。 [**完了**] を選択します。
 
     既定では、[アプリが新しいアクセス許可を要求するときに承認済みの状態を維持する] を *選択します。*
 

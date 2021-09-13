@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 0b2305472f19ac0424861a30034c2fdd45bd753c
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58399733"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222138"
 ---
 # <a name="get-missing-kbs-by-device-id"></a>デバイス ID で不足している KB を取得する
 
@@ -54,7 +54,7 @@ GET /api/machines/{machineId}/getmissingkbs
 
 名前|型|説明
 :---|:---|:---
-Authorization | String | ベアラー {token}。 **必須**
+Authorization | 文字列 | ベアラー {token}。 **必須**
 
 ## <a name="request-body"></a>要求本文
 

@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e61d2bd88000f808b287546013d74d2294b05e550489293af50b734e7ce50c1a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cb1c6611a35683fe321c76a550db710be4fab0f4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53797496"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210213"
 ---
 # <a name="contact-support-for-greece"></a>ギリシャのサポートに問い合わせ
 

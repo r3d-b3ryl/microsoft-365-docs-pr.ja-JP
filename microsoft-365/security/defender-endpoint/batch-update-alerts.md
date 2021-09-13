@@ -16,13 +16,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 465aba55225aed74c838cb8ce09acf6d8b284491
-ms.sourcegitcommit: a839a63c2516678139796e31762916e0162b4181
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58408060"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222978"
 ---
-# <a name="batch-update-alerts"></a>バッチ更新の通知
+# <a name="batch-update-alerts"></a>アラートのバッチ更新
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -56,7 +56,7 @@ ms.locfileid: "58408060"
 アクセス許可の種類 | アクセス許可 | アクセス許可の表示名
 :---|:---|:---
 アプリケーション | Alert.ReadWrite.All | 'すべてのアラートの読み取りと書き込み'
-委任 (職場または学校のアカウント) | Alert.ReadWrite | 'アラートの読み取りと書き込み'
+委任 (職場または学校アカウント) | Alert.ReadWrite | 'アラートの読み取りと書き込み'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:

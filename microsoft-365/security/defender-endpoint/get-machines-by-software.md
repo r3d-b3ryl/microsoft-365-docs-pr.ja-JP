@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 84cb368d1b54e953932741b2610e435ddc8b7045868b8dd3de2f2cc7d46661bc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 93ffef0be7a8710fbaf115418e69c724bed17869
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53793786"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222685"
 ---
 # <a name="list-devices-by-software"></a>ソフトウェア別にデバイスを一覧表示する
 
@@ -46,7 +46,7 @@ ms.locfileid: "53793786"
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
 アプリケーション|Software.Read.All|'脅威と脆弱性管理ソフトウェア情報の読み取り'
-委任 (職場または学校のアカウント)|Software.Read|'脅威と脆弱性管理ソフトウェア情報の読み取り'
+委任 (職場または学校アカウント)|Software.Read|'脅威と脆弱性管理ソフトウェア情報の読み取り'
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -56,7 +56,7 @@ GET /api/Software/{Id}/machineReferences
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-|名前|種類|説明
+|名前|型|説明
 |---|---|---|
 |Authorization|String|ベアラー {token}。**必須**。
 
@@ -104,7 +104,7 @@ GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge/machi
 }
 ```
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [リスクベースの脅威&の管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [脅威&ソフトウェア インベントリ](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

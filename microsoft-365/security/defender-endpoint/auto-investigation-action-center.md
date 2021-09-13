@@ -20,11 +20,11 @@ ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.date: 01/28/2021
 ms.technology: mde
 ms.openlocfilehash: 37a0ff60f9f12bd2738d6d587d5cad5e6d55af55
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568158"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222029"
 ---
 # <a name="visit-the-action-center-to-see-remediation-actions"></a>アクション センターにアクセスして修復アクションを確認する
 
@@ -72,7 +72,7 @@ ms.locfileid: "58568158"
 
 |タブ|説明|
 |---|---|
-|**Pending**|注意が必要なアクションの一覧を表示します。 アクションを一度に 1 つ承認または拒否するか、同じ種類のアクション (検疫ファイルなど) がある場合は複数のアクション **を選択できます**。 <p> **ヒント**: 保留中のアクションをできるだけ早く確認し、承認 (または拒否 [)](manage-auto-investigation.md) して、自動調査が正時に完了するようにします。|
+|**保留中**|注意が必要なアクションの一覧を表示します。 アクションを一度に 1 つ承認または拒否するか、同じ種類のアクション (検疫ファイルなど) がある場合は複数のアクション **を選択できます**。 <p> **ヒント**: 保留中のアクションをできるだけ早く確認し、承認 (または拒否 [)](manage-auto-investigation.md) して、自動調査が正時に完了するようにします。|
 |**履歴**|次のようなアクションの監査ログとして機能します。 <ul><li>自動調査の結果として実行された修復アクション</li><li>セキュリティ運用チームによって承認された修復アクション</li><li>Live Response セッション中に適用された、実行されたコマンドと修復アクション</li><li>脅威保護機能によって実行された修復Microsoft Defender ウイルス対策</li></ul> <p> 特定のアクションを元に戻す方法を提供します (「完了した操作を元に戻[す」を参照)。](manage-auto-investigation.md#undo-completed-actions)|
 
 アクション センターでデータをカスタマイズ、並べ替え、フィルター処理、およびエクスポートできます。

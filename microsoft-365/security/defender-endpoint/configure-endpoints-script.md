@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: e1a681fb7d521c26327bec3d22bff233926a279f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569383"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221993"
 ---
 # <a name="onboard-the-windows-10-devices-using-a-local-script"></a>ローカル スクリプトをWindows 10デバイスにオンボードする
 
@@ -81,7 +81,7 @@ Name: "AllowSampleCollection"
 Value: 0 or 1
 ```
 
-Name 型は D-WORD です。 使用可能な値は次のいずれかです。
+Name 型は D-WORD です。 使用可能な値は次のとおりです。
 
 - 0 - このデバイスからのサンプル共有を許可しない
 - 1 - このデバイスからすべての種類のファイルを共有できます

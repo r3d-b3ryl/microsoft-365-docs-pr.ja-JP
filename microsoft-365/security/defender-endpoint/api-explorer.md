@@ -19,11 +19,11 @@ ms.topic: conceptual
 ms.technology: mde
 ms.custom: api
 ms.openlocfilehash: f57a186c49b44d007d93cba6610865b5a4e7f47f
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58506493"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222114"
 ---
 # <a name="api-explorer"></a>API エクスプローラー
 
@@ -63,7 +63,7 @@ API エクスプローラーは、Defender for Endpoint によって提供され
 
 一部のサンプルでは、URL にパラメーター ({machine- ID} など) を指定する必要があります。
 
-## <a name="faq"></a>FAQ
+## <a name="faq"></a>よくあるご質問 (FAQ)
 
 **API エクスプローラーを使用するには、API トークンが必要ですか?** <br>
 API にアクセスするための資格情報は必要とされません。 API エクスプローラーは、要求を行うたびに Defender for Endpoint 管理ポータル トークンを使用します。

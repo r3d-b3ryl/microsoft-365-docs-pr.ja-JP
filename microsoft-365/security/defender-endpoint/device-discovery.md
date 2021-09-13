@@ -21,11 +21,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: 4c1d24119ee8f403b168d6b2f2d97b9842f89d9b
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575194"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222795"
 ---
 # <a name="device-discovery-overview"></a>デバイス検出の概要
 

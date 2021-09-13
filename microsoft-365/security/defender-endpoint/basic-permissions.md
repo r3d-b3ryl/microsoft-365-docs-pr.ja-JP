@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: abdf9f72c4ae023cdc8bde76d96ce641b2e48b9a
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58509619"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222991"
 ---
 # <a name="use-basic-permissions-to-access-the-portal"></a>基本的なアクセス許可を使用してポータルにアクセスする
 
@@ -50,7 +50,7 @@ ms.locfileid: "58509619"
 - フル アクセス (読み取りおよび書き込み)
 - 読み取り専用アクセス
 
-### <a name="before-you-begin"></a>始める前に
+### <a name="before-you-begin"></a>開始する前に
 
 - Azure PowerShell をインストールします。 詳細については、「How to install and configure Azure PowerShell」[を参照してください](https://azure.microsoft.com/documentation/articles/powershell-install-configure/)。
 

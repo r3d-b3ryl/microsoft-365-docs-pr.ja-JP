@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 09b00bf5f2eb6cdf73f63770f623250f9b4afb97e0e4e7d185744783ff1b6e3e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fa5b0ac6a6fbeea3e88aac7973c866edbddb6c53
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53831973"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210044"
 ---
 # <a name="contact-support-for-netherlands"></a>オランダのサポートに問い合わせ
 

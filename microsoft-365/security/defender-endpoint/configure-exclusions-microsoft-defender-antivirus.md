@@ -16,11 +16,11 @@ ms.technology: mde
 ms.audience: ITPro
 ms.topic: how-to
 ms.openlocfilehash: a6df318ccf484d750ae8010f34b5c545b115cde0
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532981"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222943"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-antivirus-scans"></a>スキャンの除外を構成およびMicrosoft Defender ウイルス対策する
 

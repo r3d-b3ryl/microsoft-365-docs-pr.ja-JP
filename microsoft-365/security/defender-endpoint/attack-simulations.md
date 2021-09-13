@@ -18,11 +18,11 @@ ms.topic: article
 ms.date: 11/20/2018
 ms.technology: mde
 ms.openlocfilehash: 3ccb0bf5392bcfd8b520c1124d5daa568f1bc8be
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58509931"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222089"
 ---
 # <a name="experience-microsoft-defender-for-endpoint-through-simulated-attacks"></a>シミュレートされた攻撃を通じて Microsoft Defender for Endpoint を体験する 
 
@@ -42,7 +42,7 @@ ms.locfileid: "58509931"
 
 サービスに複数のデバイスをオンボードする前に、Defender for Endpoint を体験する必要がある場合があります。 これを行うには、いくつかのテスト デバイスで制御攻撃シミュレーションを実行できます。 シミュレートされた攻撃を実行した後、Defender for Endpoint が悪意のあるアクティビティを表面化する方法を確認し、効率的な対応を可能にする方法を確認できます。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>開始する前に
 
 提供されているシミュレーションのいずれかを実行するには、オンボードデバイスが少なくとも [1 つ必要です](onboard-configure.md)。
 

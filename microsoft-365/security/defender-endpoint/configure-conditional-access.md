@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 0a0be19a974f7a065333ff0a5045512a2eb98a85
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532921"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222979"
 ---
 # <a name="configure-conditional-access-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint で条件付きアクセスを構成する
 
@@ -35,7 +35,7 @@ ms.locfileid: "58532921"
 
 このセクションでは、条件付きアクセスを適切に実装するために必要なすべての手順について説明します。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 > [!WARNING]
 > このシナリオでは、登録されているデバイスAD Azure がサポートされていない点に注意することが重要です。</br>

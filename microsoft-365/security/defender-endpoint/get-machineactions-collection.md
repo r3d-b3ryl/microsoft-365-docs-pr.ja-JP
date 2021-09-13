@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 68583eeb7daaf755f3e095ef80e0a221f54f0766
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58589370"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210263"
 ---
 # <a name="list-machineactions-api"></a>MachineActions API の一覧表示
 

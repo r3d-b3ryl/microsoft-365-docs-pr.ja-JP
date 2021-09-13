@@ -15,11 +15,11 @@ ms.topic: conceptual
 ms.technology: mde
 ROBOTS: NOINDEX
 ms.openlocfilehash: 6ad51065ca4e919fe51cc4a2d5f4b0d53bc474b1
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566712"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222907"
 ---
 # <a name="how-to-control-usb-devices-and-other-removable-media-using-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint を使用して USB デバイスや他のリムーバブル メディアを制御する方法
 
@@ -118,7 +118,7 @@ USB ドライブや他の周辺機器のインストールと使用を許可す�
 
 デバイス ID を検索するには、「デバイス [ID を検索する」を参照してください](#look-up-device-id)。
 
-次に例を示します。
+以下に例を示します。
 
 1. これらのデバイスのセットアップに一致するドライバーを使用してデバイスのインストールを許可するからクラス USBDevice **を削除します**。
 2. [これらのデバイス ID に一致するデバイスのインストールを許可する] で、許可するデバイス **ID を追加します**。

@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 576c13f09cf4e215f0df0cfde6b745190b5aaaf930b662a8bb9b57363a26c546
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bc500ff4418787648ee213d6f0f28bdda194e2ca
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53831865"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59209974"
 ---
 # <a name="contact-support-for-nigeria"></a>ナイジェリアのサポートに問い合わせ
 

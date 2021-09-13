@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 8d68a7fc815227f267f79245c7861da8f8afde4d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: f9c61d870f15536ceadd000da5d9123e0dd918e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569515"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222694"
 ---
 # <a name="create-an-app-to-access-microsoft-defender-for-endpoint-without-a-user"></a>ユーザーなしで Microsoft Defender for Endpoint にアクセスするアプリを作成する
 
@@ -52,20 +52,20 @@ Microsoft Defender for Endpoint は、一連のプログラム API を通じて�
 
 1. グローバル管理者の [役割を](https://portal.azure.com) 持つユーザーを使用して **Azure にログオン** します。
 
-2. [アプリの **登録Azure Active Directory**  >  **新しい登録]**  >  **に移動します**。 
+2. [アプリの **登録Azure Active Directory** \> **新しい登録]** \> **に移動します**。 
 
    ![アプリケーションの登録Microsoft Azureナビゲーションのイメージ。](images/atp-azure-new-app2.png)
 
 3. 登録フォームで、アプリケーションの名前を選択し、[登録] を **選択します**。
 
-4. アプリが Defender for Endpoint にアクセスし、[すべてのアラートの読み取り **]** アクセス許可を割り当てるには、アプリケーション ページで **、[API** アクセス許可の追加] アクセス許可 API を選択して、組織で > を使用し  >    >  **、「WindowsDefenderATP」と入力し、[WindowsDefenderATP]** を選択します。
+4. アプリが Defender for Endpoint にアクセスし、[すべてのアラートの読み取り **]** アクセス許可を割り当てるには、アプリケーション ページで **、[API** アクセス許可の追加] アクセス許可 API を選択して、組織で > を使用し \>  \> **、「WindowsDefenderATP」と入力し、[WindowsDefenderATP]** を選択します。
 
    > [!NOTE]
    > *WindowsDefenderATP* は元のリストには表示されません。 テキスト ボックスに名前を書き始め、表示を確認します。
 
    ![アクセス許可を追加します。](images/add-permission.png)
 
-   - [**アプリケーションのアクセス許可**  >  **Alert.Read.All] を選択** し、[アクセス許可の **追加] を選択します**。
+   - [ **アプリケーションのアクセス許可** \> **Alert.Read.All] を選択** し、[アクセス許可の **追加] を選択します**。
 
    ![アプリのアクセス許可。](images/application-permissions.png)
 
@@ -181,7 +181,7 @@ $token = $authResponse.access_token
 1. コマンド プロンプトを開き、Azure CLIENT_ID ID に設定します。
 1. Azure CLIENT_SECRETシークレットに設定します。
 1. アプリTENANT_ID Defender for Endpoint にアクセスする顧客の Azure テナント ID に設定します。
-1. 次のコマンドを実行します。
+1. 次のコマンドを実行します:
 
 ```
 curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=https://securitycenter.onmicrosoft.com/windowsatpservice/.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID%/oauth2/v2.0/token" -k

@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: db0d4a2e0977caa9fbb34cb9cc67feeb78e2a8fd1309cefca3380b95e079a7b9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c5af218ecda44a2157b32571d8b37803c0a7e3ae
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53831961"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210034"
 ---
 # <a name="contact-support-for-new-caledonia"></a>ニューカレドニアのサポートに問い合わせ
 

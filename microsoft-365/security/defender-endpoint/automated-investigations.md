@@ -22,11 +22,11 @@ ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
 ms.openlocfilehash: 00cf587af9eaeb6199b8058ff231c5704ca19f78
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58510063"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222006"
 ---
 # <a name="overview-of-automated-investigations"></a>自動調査の概要
 
@@ -105,4 +105,4 @@ ms.locfileid: "58510063"
 
 - [PUA 保護](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
 - [Microsoft Defender での自動調査と対応が可能Office 365](/microsoft-365/security/office-365-security/office-365-air)
-- [データの自動調査とMicrosoft 365 Defender](/microsoft-365/security/defender/mtp-autoir)
+- [Microsoft 365 Defender での自動調査と応答](/microsoft-365/security/defender/mtp-autoir)

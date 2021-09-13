@@ -22,11 +22,11 @@ ms.topic: conceptual
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
 ms.openlocfilehash: 901f1bb39be58eacccbd024aa109e04c98ae5193
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58509559"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59223003"
 ---
 # <a name="automation-levels-in-automated-investigation-and-remediation-capabilities"></a>自動調査および修復機能の自動化レベル
 
