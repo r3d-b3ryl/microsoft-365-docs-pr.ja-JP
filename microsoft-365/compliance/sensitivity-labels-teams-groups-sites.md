@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを使用して、SharePoint サイト、Microsoft Teams サイト、Microsoft 365 グループのコンテンツを保護します。
-ms.openlocfilehash: edd6aea4aade2378a195aa471ba0aa329afb7582
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 5480a5b8336c03323c26785e884da811a5d00d97
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569035"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216473"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>秘密度ラベルを使用して、Microsoft Teams、Microsoft 365 グループ、SharePoint サイトのコンテンツを保護する
 
@@ -315,9 +315,11 @@ SharePoint Online 管理シェルのバージョン16.0.19418.12000 以降があ
 
 2. [**ポリシー**] タブを選択し、**秘密度** の設定で [**編集**] を選択します。
 
-3. [**秘密度の設定の編集**] ウィンドウで、サイトに適用する秘密度ラベルを選び、[**保存**] を選択します。
+3. **[感度設定の編集]** ウィンドウで、サイトに適用する感度ラベルを選択します。 特定のユーザーに対して感度ラベルを割り当てできるユーザー アプリとは異なり、管理センターにはテナントのすべての感度ラベルが表示されます。 ラベルを選択したら、**[保存]** を 選択します。
 
 ## <a name="support-for-sensitivity-labels"></a>秘密度ラベルのサポート
+
+感度ラベルをサポートする管理センターを使用すると、テナントのすべての感度ラベルが表示されます。 一方、公開ポリシーに従って感度ラベルをフィルター処理するユーザー アプリとサービスでは、これらのラベルのサブセットが表示される可能性があります。
 
 次のアプリとサービスで、サイトとグループの設定用に構成した秘密度ラベルをサポートしています。
 
@@ -326,7 +328,7 @@ SharePoint Online 管理シェルのバージョン16.0.19418.12000 以降があ
   - SharePoint 管理センター
   - Azure Active Directory ポータル
   - Microsoft 365 管理センター
-  - Microsoft 365 コンプライアンス センター、Microsoft 365 セキュリティ センター、セキュリティ/コンプライアンス センター
+  - Microsoft 365 コンプライアンス センター
 
 - ユーザーのアプリとサービス:
 
@@ -450,6 +452,6 @@ Set-SPOTenant -BlockSendLabelMismatchEmail $True
 
 [Microsoft Teams、O365 グループおよび SharePoint Online サイトでの秘密度ラベルの使用](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/using-sensitivity-labels-with-microsoft-teams-o365-groups-and/ba-p/1221885#M1380)については、ウェビナーのレコーディングと回答をご覧ください。
 
-Teams 接続済みサイトとチャネル サイトの管理の詳細については[[ Teams 接続済みサイトとチャネル サイトの管理]](/SharePoint/teams-connected-sites)を参照してください。
-
 このウェビナーは、当該機能がまだプレビューに含まれているときに記録されているので、UI にいくつかの矛盾が見つかる可能性があります。 ただし、このページに記載されている新しい機能があれば、この機能の情報は正確です。
+
+Teams 接続済みサイトとチャネル サイトの管理の詳細については[[ Teams 接続済みサイトとチャネル サイトの管理]](/SharePoint/teams-connected-sites)を参照してください。

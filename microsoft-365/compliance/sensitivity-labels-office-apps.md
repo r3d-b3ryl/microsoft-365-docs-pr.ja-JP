@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: デスクトップ、モバイル、および Web 用の Office アプリで秘密度ラベルを管理するための IT 管理者向けの情報。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 29e247987a26f7be3af099f36920ec580963c6a6
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 099bf74f1a3b85dd315c3581695ba30133f710ca
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256001"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216494"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office アプリで秘密度ラベルを管理する
 
@@ -46,7 +46,7 @@ Office アプリの新しいバージョンは、さまざまな更新チャネ�
 > [!NOTE]
 > Office アプリの更新プログラム チャネルの名前が 2020 年 5 月に変更されました。 たとえば、月次チャネルは最新チャネルになり、Office Insider はベータ チャネルになりました。 詳細については、「[Microsoft 365 Apps の更新プログラム チャネルの変更](/deployoffice/update-channels-changes)」を参照してください。
 
-Office for iOS および Office for Android: 秘密度ラベルは [Office アプリ](https://www.microsoft.com/ja-JP/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/)に組み込まれています。
+Office for iOS および Office for Android: 秘密度ラベルは [Office アプリ](https://www.microsoft.com/en-us/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/)に組み込まれています。
 
 Windows コンピューターでのみ実行される Azure Information Protection 統合ラベル付けクライアントをインストールすると、追加の機能を利用できます。 これらの詳細については、「[Windows コンピューターのラベル付けクライアントを比較する](/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers)」を参照してください。
 
@@ -61,12 +61,13 @@ Windows コンピューターでのみ実行される Azure Information Protecti
 
 |機能                                                                                                        |Windows<sup>\*</sup> |Mac |iOS    |Android      |Web                                                         |
 |------------------------------------------------------------------------------------------------------------------|----------------|------------|-------|-------------|------------------------------------------------------------|
-|[ラベルを手動で適用、変更、または削除する](https://support.microsoft.com/ja-JP/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910 以上          | 16.21 以上     | 2.21 以上 | 16.0.11231 以上 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[既定のラベルを適用する](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910 以上          | 16.21 以上     | 2.21 以上 | 16.0.11231 以上 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md)                                                        |
+|[ラベルを手動で適用、変更、または削除する](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910 以上          | 16.21 以上     | 2.21 以上 | 16.0.11231 以上 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
+|新しいドキュメントに[既定の ラベルを適用する](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910 以上          | 16.21 以上     | 2.21 以上 | 16.0.11231 以上 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md)                                                        |
+|既存のドキュメントに[既定のラベルを適用する](sensitivity-labels.md#what-label-policies-can-do) | プレビュー: [ベータ チャネル](https://office.com/insider)へのロールアウト           | プレビュー: [ベータ チャネル](https://office.com/insider)へのロールアウト | レビュー中 | レビュー中 | ロールアウト: [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[ラベル変更の正当な理由を要求する](sensitivity-labels.md#what-label-policies-can-do)                     | 1910 以上          | 16.21 以上     | 2.21 以上 | 16.0.11231 以上 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[カスタム ヘルプ ページへのリンクを提供する](sensitivity-labels.md#what-label-policies-can-do)                       | 1910 以上          | 16.21 以上     | 2.21 以上 | 16.0.11231 以上 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[コンテンツをマークする](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910 以上          | 16.21 以上     | 2.21 以上 | 16.0.11231 以上 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[変数を使用した動的マーキング](#dynamic-markings-with-variables)                                              | 2010 以上           | 16.42 以上     | 2.42 以上 | 16.0.13328 以上 | ロール アウト |
+|[変数を使用した動的マーキング](#dynamic-markings-with-variables)                                              | 2010 以上           | 16.42 以上     | 2.42 以上 | 16.0.13328 以上 | ロールアウト: [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[アクセス許可を今すぐ割り当てる](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910 以上          | 16.21 以上     | 2.21 以上 | 16.0.11231 以上 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[ユーザーに権限の割り当てをさせる: <br /> - ユーザーに求める](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004 以上 | 16.35 以上   | レビュー中   | レビュー中         | レビュー中                                                        |
 |[ラベル関連のユーザー アクティビティを監査する](data-classification-activity-explorer.md)                      | 2011 以上 | 16.43 以上 | 2.46 以上 | 16.0.13628 以上 | はい <sup>\*\*</sup>                                                        |
@@ -88,7 +89,7 @@ Windows コンピューターでのみ実行される Azure Information Protecti
 
 |機能                                                                                                        |Outlook for Windows<sup>\*</sup> |Outlook for Mac |Outlook on iOS |Outlook on Android |Outlook on the web |
 |------------------------------------------------------------------------------------------------------------------|---------------------------|------------------------|---------------|-------------------|-------------------|
-|[ラベルを手動で適用、変更、または削除する](https://support.microsoft.com/ja-JP/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910 以上                     | 16.21 以上                 | 4.7.1 以上         | 4.0.39 以上           | はい               |
+|[ラベルを手動で適用、変更、または削除する](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910 以上                     | 16.21 以上                 | 4.7.1 以上         | 4.0.39 以上           | はい               |
 |[既定のラベルを適用する](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910 以上                     | 16.21 以上                 | 4.7.1 以上         | 4.0.39 以上           | はい               |
 |[ラベル変更の正当な理由を要求する](sensitivity-labels.md#what-label-policies-can-do)                     | 1910 以上                     | 16.21 以上                 | 4.7.1 以上         | 4.0.39 以上           | はい               |
 |[カスタム ヘルプ ページへのリンクを提供する](sensitivity-labels.md#what-label-policies-can-do)                       | 1910 以上                     | 16.21 以上                 | 4.7.1 以上         | 4.0.39 以上           | はい               |
@@ -396,7 +397,9 @@ ${If.App.<application type>}<your visual markings text> ${If.End}
 > [!NOTE]
 > 必須のラベル付けに加えて、ドキュメントやメールに既定のラベル ポリシー設定を使用する場合: 
 >
-> 既定のラベルは、必須のラベル付けよりも常に優先されます。 ただし、ドキュメントの場合、Azure Information Protection 統合ラベル付けクライアントでは、既定のラベルがすべてのラベルなしドキュメントに適用されます。一方、組み込みのラベル付けでは、既定のラベルは新しいドキュメントには適用されますが、ラベルのない既存のドキュメントには適用されません。 この動作の違いにより、ユーザーが既定のラベル設定で必須のラベル付けを使用する場合、Azure Information Protection 統合ラベル付けクライアント使用時よりも、組み込みのラベル付け使用時のほうが、秘密度ラベルの適用を求めるメッセージがより頻繁に表示されることになります。
+> 既定のラベルは、必須のラベル付けよりも常に優先されます。 ただし、ドキュメントの場合、Azure Information Protection 統合ラベル付けクライアントでは、既定のラベルがすべてのラベルなしドキュメントに適用されます。一方、組み込みのラベル付けでは、既定のラベルは新しいドキュメントには適用されますが、ラベルのない既存のドキュメントには適用されません。 この動作の違いにより、ユーザーが既定のラベル設定で必須のラベル付けを使用する場合、Azure Information Protection の統合ラベル付けクライアント使用時よりも、組み込みのラベル付け使用時のほうが、秘密度ラベルの適用を求めるメッセージがより頻繁に表示されることになります。
+> 
+> 今すぐロールアウト: 組み込みラベル付けを使用し、既存のドキュメント用に既定のラベルをサポートする Office アプリ。 詳細については、Word、Excel、および PowerPoint の[機能表](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint)を参照してください。
 
 ## <a name="outlook-specific-options-for-default-label-and-mandatory-labeling"></a>既定ラベルと必須ラベルの Outlook 固有のオプション
 
@@ -421,8 +424,8 @@ Outlook アプリが必須のラベル付けをオフにすることをサポー
 
 ## <a name="end-user-documentation"></a>エンド ユーザー向けのドキュメント
 
-- [Office 内のファイルやメールに秘密度ラベルを適用する](https://support.microsoft.com/ja-JP/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
-    - [Office の秘密度ラベルに関する既知の問題](https://support.microsoft.com/ja-JP/office/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc)
+- [Office 内のファイルやメールに秘密度ラベルを適用する](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
+    - [Office の秘密度ラベルに関する既知の問題](https://support.microsoft.com/en-us/office/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc)
 
 - [Office のファイルとメールに秘密度ラベルを自動的に適用、または推奨する](https://support.office.com/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)
     - [機密度ラベルの自動適用または推奨に関する既知の問題](https://support.office.com/article/known-issues-with-automatically-applying-or-recommending-sensitivity-labels-451698ae-311b-4d28-83aa-a839a66f6efc)

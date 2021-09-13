@@ -12,25 +12,26 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
 description: Exchange Online の監視を使用して、Microsoft 365 でのメールのインシデントや勧告の情報について確認します。
-ms.openlocfilehash: e7e0a39f00b4d23ed870d501a3aefbabaf362e13
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 27f2cfb952359c2ef428b7bd425f611ca9458566
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58603008"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215893"
 ---
 # <a name="exchange-online-monitoring-for-microsoft-365"></a>Microsoft 365 の Exchange Online の監視
 
-Microsoft 365 管理センターで Exchange Online の監視を使用して、組織の Microsoft 365 サブスクリプションの Exchange サービスの正常性を監視できます。 Exchange Online の監視は、以下のカテゴリに収集されたインシデントと勧告についての情報を提供します。
+<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a> で Exchange Online の監視を使用して、組織の Microsoft 365 サブスクリプションの Exchange サービスの正常性を監視できます。 Exchange Online の監視は、以下のカテゴリに収集されたインシデントと勧告についての情報を提供します。
 
 - **インフラストラクチャ**: 定期的な更新を提供し、問題を解決するために Microsoft が所有する Microsoft 365 のインフラストラクチャで問題が検出されます。 たとえば、Exchange または他の Microsoft 365 のクラウド インフラストラクチャの問題のため、ユーザーが Exchange Online にアクセスできない場合などです。
 - **サードパーティのインフラストラクチャ**: 組織が依存関係にあるサードパーティのインフラストラクチャで問題が検出され、解決するには所属の組織によるアクションが必要です。 たとえば、ユーザー認証のトランザクションが、ユーザーが Exchange Online にアクセスできないようにするサードパーティのセキュリティ トークン サービス (STS) プロバイダーによって調整される場合などです。
 - **顧客のインフラストラクチャ**: 組織のインフラストラクチャで問題が検出され、解決するには所属の組織によるアクションが必要です。 たとえば、組織によってホストされている STS プロバイダーから承認トークンを取得できないため、ユーザーが Exchange Online にアクセスできない場合などです。
 
-以下は、組織のシナリオにおける Microsoft 365 管理センターの **[サービス正常性]** ページの例です。これは、**[正常性] > [サービス正常性]** から利用できます。
+組織のシナリオ向けに、**[正常性]**  > [ **サービス正常性]**](https://go.microsoft.com/fwlink/p/?linkid=842900) の正常性から利用できる、Microsoft 365 管理センターの **[サービス正常性]** ページの例を次に示します。
 
 ![Microsoft 365 管理センターの [サービス正常性] ページ。](../media/microsoft-365-exchange-monitoring/service-health-dashboard-example.png)
 
@@ -40,7 +41,7 @@ Microsoft 365 管理センターで Exchange Online の監視を使用して、�
 
 **[Microsoft サービス正常性]** の **[正常性]** 列の値は、サービスが正常な状態にあるか、Microsoft が維持するクラウド サービスに基づいて勧告やインシデントがあるかどうかを示します。
 
-以下は、Microsoft 365 管理センターの Exchange Online の監視ページで、組織レベルのシナリオにおいて正常性の一例を示しています。これは、**[正常性] > [サービス正常性] > [Exchange Online]** から利用できます。
+次に、**[正常性]** > [**[サービスの正常性]**](https://go.microsoft.com/fwlink/p/?linkid=842900) > **[Exchange Online]** から利用可能な組織レベルのシナリオの正常性を示す Microsoft 365 管理センター の [監視] ページの例を示します。
 
 ![Microsoft 365 管理センターの Exchange Online の監視ページ。](../media/microsoft-365-exchange-monitoring/exchange-monitoring-example.png)
 
@@ -48,13 +49,13 @@ Microsoft 365 管理センターで Exchange Online の監視を使用して、�
 
 ## <a name="requirements"></a>要件
 
-このプレビューは、次の要件を満たしているお客様に対して有効になっています。 
+このプレビューは、次の要件を満たしているお客様に対して有効になっています。
 
 - 組織には Office 365 E3、Microsoft 365 E3、Office 365 E5、Microsoft 365 E5 の製品のいずれか 1 つまたは組み合わせから 5,000 個以上のライセンス数が必要です。
 
   たとえば、組織は Office 365 E3 のライセンスを 3,000 個と Microsoft 365 E5 のライセンスを 2,500 個持つことで、条件を満たす製品から合計 5,500 個のライセンスを持つことができます。
 
-- 組織に月間 50 人以上のアクティブな Exchange Online ユーザーが必要です。
+- 組織には、Microsoft Teams、OneDrive for Business、SharePoint Online、Exchange Online、および Office アプリを含む 1 つ以上のコア Microsoft 365 サービスに対して、少なくとも 50 人の月間アクティブ ユーザーが必要です。
 
 - サービス正常性ダッシュボード レベルのアクセス許可のあるロールは、Exchange Online の監視にアクセスできます。 詳細については、「[Microsoft 365 サービス正常性を確認する方法](view-service-health.md)」を参照してください。
 
@@ -100,7 +101,7 @@ Exchange Online の監視は次のシナリオをサポートしています。
 
 #### <a name="1-why-dont-i-see-exchange-online-monitoring-under-health-in-the-microsoft-365-admin-center"></a>1. Microsoft 365 管理センターの [正常性] に [Exchange Online の監視] が表示されないのはなぜですか? 
 
-まず、Microsoft 365 管理センターの **[ホーム]** ページで新しい管理センターが有効になっていることを確認してください。
+まず、<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>の **[ホーム]** ページで新しい管理センターが有効になっていることを確認してください。
 
 次に、次の両方の要件を満たしていることを確認してください。 
 
@@ -112,7 +113,7 @@ Exchange Online の監視は次のシナリオをサポートしています。
 
 #### <a name="2-the-active-user-count-in-the-dashboard-for-each-client-appears-to-be-low-we-have-a-lot-of-active-licenses-assigned-to-users-what-does-this-mean"></a>2. 各クライアントのダッシュボードのアクティブ ユーザー数が少なく表示されます。 しかし、多くの有効なライセンスがユーザーにアサインされています。 これはどういうことですか?
 
-監視に表示されるアクティブ ユーザー数は、機能が呼び出したアクティビティをユーザーが実行した 30 分間のウィンドウに基づいています。 これを使用数と混同しないように注意してください。 使用数を表示するには、Microsoft 365 管理センターでアクティビティ レポートを使用してください (**[レポート] > [使用状況]**)。
+監視に表示されるアクティブ ユーザー数は、機能が呼び出したアクティビティをユーザーが実行した 30 分間のウィンドウに基づいています。 これを使用数と混同しないように注意してください。 使用状況の数値を表示するには、Microsoft 365 管理センターでアクティビティ レポートを使用します (**レポート** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">**使用状況**</a>)。
 
 #### <a name="3-will-there-be-other-monitoring-scenarios-for-other-services-such-as-teams-and-sharepoint"></a>3. Teams や SharePoint などの他のサービスに対する他の監視シナリオは追加されますか?
 
@@ -120,7 +121,7 @@ Microsoft は、このエクスペリエンスを Microsoft 365 管理センタ�
 
 #### <a name="4-what-is-the-plan-for-general-availability-of-this-experience"></a>4. このエクスペリエンスの一般提供予定について教えてください。
 
-Microsoft は、Exchange Online の監視を Microsoft 365 管理センターの **[サービス正常性]** ダッシュボードに直接統合しました。
+Microsoft は、Exchange Online の監視を Microsoft 365 管理センターの <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">**[サービス正常性]** ダッシュボード</a>に直接統合しました。
 
 新しくなった統合エクスペリエンスにより、Microsoft はユーザーからのフィードバックを収集し、一般提供の計画を定義する予定です。
 
