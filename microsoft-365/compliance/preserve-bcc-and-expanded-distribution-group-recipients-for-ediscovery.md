@@ -13,11 +13,11 @@ localization_priority: Normal
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
 description: In-Place保持、訴訟ホールド、Microsoft 365保持ポリシーを使用すると、規制遵守と電子情報開示の要件を満たすためにメールボックス のコンテンツを保持できます。
 ms.openlocfilehash: 4d72233a6026ac493de1cd551c0b4908d200815f
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508204"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177863"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>電子情報開示のために Bcc および展開された配布グループの受信者を保持する
   
@@ -58,7 +58,7 @@ Exchange Online および Exchange Server 2013 (累積的な更新プログラ�
    
 シナリオ 2: Bob は電子メールを John (宛先/CC) および Jack (BCC で直接に、または配布グループを介して間接に) に送信します。以下の表に、電子情報開示の検索結果を示します。
   
-| 検索する対象 | 検索するメッセージの送信先 | 結果にメッセージが含まれるかどうか | Notes |
+| 検索する対象 | 検索するメッセージの送信先 | 結果にメッセージが含まれるかどうか | メモ |
 |:-----|:-----|:-----|:-----|
 |Bob のメールボックス  <br/> |宛先/CC:John  <br/> |はい  <br/> |Jack が BCC で送信されたことが示されます  <br/> |
 |Bob のメールボックス  <br/> |BCC:Jack  <br/> |はい  <br/> |Jack が BCC で送信されたことが示されます  <br/> |

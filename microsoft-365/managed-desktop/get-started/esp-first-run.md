@@ -11,11 +11,11 @@ ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 ms.openlocfilehash: 3037225e2d628345b672bfae145bcba570cbbc23
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58364627"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179512"
 ---
 # <a name="first-run-experience-with-autopilot-and-the-enrollment-status-page"></a>Autopilot と登録ステータス ページの初回実行時エクスペリエンス
 
@@ -41,11 +41,11 @@ Microsoft マネージド デスクトップユーザーのデバイスに使用
 |言語 (地域)|ユーザーの選択|
 |キーボードを自動的に構成する|いいえ|
 |Microsoft ソフトウェア ライセンス条項|非表示|
-|プライバシー設定|非表示|
+|プライバシーの設定|非表示|
 |アカウントの変更オプションを非表示にする|Show|
 |ユーザー アカウントの種類|Standard|
-|Allow White Glove OOBE|必要|
-|デバイス名テンプレートの適用|必要|
+|Allow White Glove OOBE|はい|
+|デバイス名テンプレートの適用|はい|
 |名前を入力する|MMD-%RAND:11%|
 |
 
@@ -59,14 +59,14 @@ Microsoft マネージド デスクトップは、次の設定を [登録状態�
 
 |設定|値|
 |---|---|
-|アプリとプロファイルの構成の進行状況を表示する|必要|
+|アプリとプロファイルの構成の進行状況を表示する|はい|
 |インストール時間が指定した分数より長い場合にエラーを表示する|60|
 |制限時間エラーが発生した場合にカスタム メッセージを表示する|いいえ|
-|インストール エラーに関するログの収集をユーザーに許可する|必要|
-|ページを既定のエクスペリエンス (OOBE) によってプロビジョニングされたデバイスにのみ表示する|必要|
-|すべてのアプリとプロファイルがインストールされるまでデバイスの使用をブロックする|必要|
-|インストール エラーが発生した場合、ユーザーにデバイスのリセットを許可する|必要|
-|インストール エラーが発生した場合、ユーザーにデバイスの使用を許可する|必要|
+|インストール エラーに関するログの収集をユーザーに許可する|はい|
+|ページを既定のエクスペリエンス (OOBE) によってプロビジョニングされたデバイスにのみ表示する|はい|
+|すべてのアプリとプロファイルがインストールされるまでデバイスの使用をブロックする|はい|
+|インストール エラーが発生した場合、ユーザーにデバイスのリセットを許可する|はい|
+|インストール エラーが発生した場合、ユーザーにデバイスの使用を許可する|はい|
 |ユーザー/デバイスに割り当てられている場合、これらの必須アプリがインストールされるまでデバイスの使用をブロックする|モダン ワークプレース - 時間の修正|モダン ワークプレース - クライアント ライブラリ|
 
 
@@ -135,14 +135,14 @@ Microsoft マネージド デスクトップは、次の設定を [登録状態�
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>データの使用を開始するMicrosoft マネージド デスクトップ
 
-1. 管理 [ポータルにアクセスします](access-admin-portal.md)。
-1. [管理者ポータルで管理者連絡先を追加して確認します](add-admin-contacts.md)。
-1. [登録後に設定を調整します](conditional-access.md)。
-1. ユーザーを展開して割[り当Intune ポータル サイト](company-portal.md)します。
+1. [管理ポータル](access-admin-portal.md)にアクセスします。
+1. [管理ポータルで管理者の連絡先を追加および確認する](add-admin-contacts.md)。
+1. [登録後に設定を調整する](conditional-access.md)。
+1. [Intune ポータル サイト](company-portal.md)を展開して割り当てます。
 1. [ライセンスを割り当てる](assign-licenses.md)。
-1. [アプリを展開します](deploy-apps.md)。
-1. [デバイスをセットアップします](set-up-devices.md)。
+1. [アプリを展開する](deploy-apps.md)。
+1. [デバイスをセットアップする](set-up-devices.md)。
 1. Autopilot と [登録の状態] ページで最初に実行するエクスペリエンスを設定します (この記事)。
 1. [ユーザー サポート機能を有効にする](enable-support.md)。
-1. [ユーザーがデバイスを使用する準備を整えます](get-started-devices.md)。
-1. [アプリ コントロールの使用を開始します](get-started-app-control.md)。
+1. [ユーザーがデバイスを使えるようにする](get-started-devices.md)。
+1. [アプリ制御の使用を開始する](get-started-app-control.md)。

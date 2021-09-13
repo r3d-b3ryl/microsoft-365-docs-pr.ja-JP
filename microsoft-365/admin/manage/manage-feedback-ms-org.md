@@ -22,11 +22,11 @@ search.appverid:
 - MOE150
 description: ユーザーが Microsoft 製品に関して Microsoft に送信できるフィードバックを管理します。
 ms.openlocfilehash: 7d6d607182a546e869a9f92e84adfa31f7e02a26
-ms.sourcegitcommit: 7883556c05ceef228dc329f715e8a6213b40d921
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "58957162"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179023"
 ---
 # <a name="manage-microsoft-feedback-for-your-organization"></a>組織に対する Microsoft フィードバックを管理する
 
@@ -63,7 +63,7 @@ Microsoft 365 組織の管理者として、Microsoft 365 アプリケーショ�
 
 :::image type="content" source="../../media/feedback-in-product-customer-engagement.png" alt-text="スクリーンショット: 製品内のお客様調査の質問例":::
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>開始する前に
 
 これらのポリシーを使用するには、デバイスが最小ビルド番号に設定されている必要があります。 詳細については、次の表を参照してください。
 
