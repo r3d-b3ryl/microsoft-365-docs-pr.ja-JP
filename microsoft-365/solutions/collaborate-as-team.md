@@ -14,16 +14,17 @@ ms.collection:
 - m365initiative-externalcollab
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkMAC
 localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: Teams のゲストとのタスク、会話、ドキュメントの共同作業を行うためチームをセットアップするのに必要な Microsoft 365 の構成手順について説明します。
-ms.openlocfilehash: e43a43c6b409379f9ca18c46f91e078ced46b7ef
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 142f8d9adf9423d1c9a2d8e59405fd4f39dfb751
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572829"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59217893"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>チームでゲストと共同作業する
 
@@ -108,7 +109,7 @@ Microsoft 365 グループのゲスト設定を行うには
 
 SharePoint 組織レベルの共有設定を設定するには
 
-1. Microsoft 365 管理センターの左側のナビゲーション ウィンドウの **[管理センター]** で、**[SharePoint]** をクリックします。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>の左側のナビゲーション ウィンドウの **[管理センター]** で、**[SharePoint]** をクリックします。
 2. SharePoint 管理センターの左側のナビゲーション ウィンドウで、**[ポリシー]** を展開し、**[共有]** をクリックします。
 3. SharePoint の外部共有が **[全員]** または **[新規および既存のゲスト]** に設定されていることを確認します。
 4. 変更を加えた場合は、**[保存]** をクリックします。

@@ -17,13 +17,15 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 組織の内外のユーザーと保護されたメールでのコミュニケーションを可能にする新しい Office 365 Message Encryption 機能についてご確認ください。
-ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0d33caff1499bf0792148039cb90d1aa6187247a90f53b7ea22828385d3d4fa3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkMAC
+ms.openlocfilehash: 93fbd85ed75684d55ed45aec6821d86ed5e9c3f7
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53819777"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216373"
 ---
 # <a name="set-up-new-message-encryption-capabilities"></a>新しい Message Encryption 機能を設定する
 
@@ -123,7 +125,7 @@ OME のメール フロー ルールの作成の手順については、「[Offi
 
 新しい OME 機能を使用するために既存のルールを更新するには:
 
-1. Microsoft 365 管理センターから [**管理センター]、[Exchange**] の順に移動します。
+1. [Microsoft 365 管理センター](https://go.microsoft.com/fwlink/p/?linkid=2024339)で、**管理者センター > Exchange** に移動します。
 2. Exchange 管理センターで、[**メール フロー]、[ルール**] の順に移動します。
 3. ルールごとに、**次の操作を行います**:
     - [**メッセージのセキュリティを変更する**] を選択します。

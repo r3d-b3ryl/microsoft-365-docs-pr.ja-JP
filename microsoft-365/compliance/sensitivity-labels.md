@@ -22,12 +22,12 @@ description: Microsoft 情報保護 (MIP) の秘密度ラベルを使用して�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: ff26c2f6f219db066b4be00e6d97e8d4e4e4babc
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 3366f90273536a1fc1fede52159b8c1199ad9324
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568987"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216474"
 ---
 # <a name="learn-about-sensitivity-labels"></a>秘密度ラベルの詳細
 
@@ -180,12 +180,15 @@ Microsoft Information Protection ソリューションの秘密度ラベルを�
 
 - **ラベルを表示させるユーザーとグループを選択する。** Azure AD の特定のユーザーまたは電子メールが有効なセキュリティ グループ、配布グループ、または Microsoft 365 グループ ([動的メンバーシップ](/azure/active-directory/users-groups-roles/groups-create-rule)を使用できる) にラベルを発行することができます。
 
-- 新規ドキュメント、ラベルのないメール、および新規コンテナーに **既定のラベルを指定** します ([Microsoft Teams、Microsoft 365 グループ、および SharePoint サイトの秘密度ラベルを有効にしている場合](sensitivity-labels-teams-groups-sites.md))。また現在では、 [a default label for Power BI コンテンツに対しては、既定のラベルを指定します](/power-bi/admin/service-security-sensitivity-label-default-label-policy)。 4 種類のアイテムすべてに同じラベルを指定することも、異なるラベルを指定することもできます。 ドキュメントに既定のラベルを指定した場合、Azure Information Protection 統合ラベル付けクライアントでは、ラベルのない既存のドキュメントにもこのラベルが適用されます。 ユーザーは、適用された既定の秘密度ラベルが正しくないと判断した場合は変更できます。
+- ラベル付けされていないドキュメントとメール、新しいコンテナー ([Microsoft Teams、Microsoft 365 グループおよび SharePoint サイトの秘密度ラベルを有効](sensitivity-labels-teams-groups-sites.md)にした場合)、の **既定のラベルを指定します**。また、[Power BI コンテンツ](/power-bi/admin/service-security-sensitivity-label-default-label-policy)に既定のラベルをしてします。 4 種類のアイテムすべてに同じラベルを指定することも、異なるラベルを指定することもできます。 ユーザーは、適用された既定の秘密度ラベルを、コンテンツまたはコンテナーの秘密度に合わせて変更できます。
+    
+    > [!NOTE]
+    > 組み込みのラベルを使用する Office アプリのロールアウト: この設定では、ユーザーが開いた既存のドキュメントと新しいドキュメントがサポートされるようになりました。 この動作の変更は、Azure Information Protection の統合ラベル付けクライアントとのパリティを提供します。 アプリごとのロールアウトと最小バージョンの詳細については、Word、Excel、PowerPoint の [機能表](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) を参照してください。
+    
+    既定ラベル使用して、すべてのコンテンツに適用する保護設定の基本レベルを設定することを検討してください。 ただし、ユーザーのとレーニングや他の制御を実施しない場合、この設定は不正確なラベル付けにつながる可能性もあります。 通常、ドキュメントの既定のラベルとして暗号化を適用するラベルを選択することはお勧めできません。 たとえば、多くの組織は、暗号化をサポートするアプリを所有していないか、認証可能なアカウントを使用していない可能性がある外部ユーザーとドキュメントを送信して共有する必要があります。 このシナリオの詳細については、「[Sharing encrypted documents with external users (外部ユーザーと暗号化されたドキュメントを共有する)](sensitivity-labels-office-apps.md#sharing-encrypted-documents-with-external-users)」を参照してください。
     
     > [!IMPORTANT]
     > [サブラベル](#sublabels-grouping-labels) がある場合は、親ラベルを既定のラベルとして構成しないように注意してください。
-    
-    既定ラベル使用して、すべてのコンテンツに適用する保護設定の基本レベルを設定することを検討してください。 ただし、ユーザーのとレーニングや他の制御を実施しない場合、この設定は不正確なラベル付けにつながる可能性もあります。 通常、ドキュメントの既定のラベルとして暗号化を適用するラベルを選択することはお勧めできません。 たとえば、多くの組織は、暗号化をサポートするアプリを所有していないか、認証可能なアカウントを使用していない可能性がある外部ユーザーとドキュメントを送信して共有する必要があります。 このシナリオの詳細については、「[Sharing encrypted documents with external users (外部ユーザーと暗号化されたドキュメントを共有する)](sensitivity-labels-office-apps.md#sharing-encrypted-documents-with-external-users)」を参照してください。
 
 - **ラベル変更の正当な理由を要求する。** ユーザーがラベルを削除しようとした場合、またはラベルを低い順序番号のラベルに置き換えようとした場合は、ユーザーにこの操作の実行についての正当な理由を要求することができます。 たとえば、ユーザーは「社外秘」というラベルの付いたドキュメント (順序番号 3) を開き、そのラベルを「公開」というラベル (順序番号 1) に置き換えます。 Office アプリの場合、この正当化プロンプトは、組み込みのラベル付けを使用する場合はアプリ セッションごとに、Azure Information Protection 統合ラベル付けクライアントを使用する場合はファイルごとに 1 回トリガーされます。 管理者は、[アクティビティ エクスプローラー](data-classification-activity-explorer.md)でラベルの変更とともに正当化の理由を読み取ることができます。
 
