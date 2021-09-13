@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 71fd1428df73686f59199c70d988599f511faaf3
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58747445"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163734"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>ライブ応答を使用してデバイス上のエンティティを調査する
 
@@ -48,7 +48,7 @@ ms.locfileid: "58747445"
 - アップロード PowerShell スクリプトまたは実行可能ファイルをライブラリに追加し、テナント レベルからデバイスで実行します。
 - 修復アクションを実行または元に戻します。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 デバイスでセッションを開始する前に、次の要件を満たしていることを確認してください。
 

@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 43989baf0d6bcd66e6f332bce325e2c19d4ca42c638d2f596e6fc8e47e4bc7c0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cf8f08dc3932c60c18a0af724c7a186df06d247e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53820797"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164295"
 ---
 # <a name="payment-information-for-poland"></a>ポーランドの支払い情報
 

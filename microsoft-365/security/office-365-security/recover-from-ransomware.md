@@ -15,12 +15,12 @@ ms.collection:
 description: Microsoft 365管理者は、ランサムウェア攻撃から回復する方法を学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b7511039c1d33722790e993e8cd9c8c89e1e620b2585255359cb14f59ddb1ece
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 608fac50fc65f20a612b80ed151252eb2a0c2e01
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56879491"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163505"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>ユーザーのランサムウェア攻撃から回復Microsoft 365
 
@@ -81,7 +81,7 @@ ms.locfileid: "56879491"
 
 環境からランサムウェア ペイロードを削除する前の手順を完了したら (ランサムウェアがファイルを暗号化または削除することを防ぐ)、Windows 7 の[](https://support.microsoft.com/help/17128)Windows 10 および Windows 8.1 または System Protection のファイル履歴を使用して、ローカル ファイルとフォルダーの回復を試みることもできます。
 
-**注意**:
+**注**:
 
 - また、一部のランサムウェアはバックアップ バージョンを暗号化または削除します。そのため、ファイルの履歴やシステム保護を使用してファイルを復元することはできません。 その場合は、次のセクションで説明するように、ランサムウェアやマルウェアの影響を受けOneDriveデバイスでバックアップを使用する必要があります。
 
@@ -93,7 +93,7 @@ ms.locfileid: "56879491"
 
 ## <a name="step-6-recover-deleted-email"></a>手順 6: 削除されたメールを復元する
 
-まれに、ランサムウェアがすべてのメールを削除した場合、削除されたアイテムを復元できる可能性があります。 詳しくは、以下を参照してください。
+まれに、ランサムウェアがすべてのメールを削除した場合、削除されたアイテムを復元できる可能性があります。 詳しくは、次のトピックを参照してください。
 
 - [ユーザーのメールボックス内の削除済みメッセージを復元する](/exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 
@@ -158,7 +158,7 @@ Microsoft 365保護:
 - [マルウェアと ランサムウェアからの保護](/compliance/assurance/assurance-malware-and-ransomware-protection)
 - [ランサムウェアの検出と、ファイルの復元OneDrive](https://support.microsoft.com/office/0d90ec50-6bfd-40f4-acc7-b8c12c73637f)
 - [ファイル内のマクロを有効またはOfficeする](https://support.microsoft.com/office/12b036fd-d140-4e74-b45e-16fed1a7e5c6)
-- [EOP と Microsoft Defender のセキュリティに関するOffice 365設定](recommended-settings-for-eop-and-office365.md)
+- [EOP および Microsoft Defender for Office 365 セキュリティの推奨設定](recommended-settings-for-eop-and-office365.md)
 
 Microsoft Security チームのブログ投稿:
 

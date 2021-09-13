@@ -13,11 +13,11 @@ ms.collection:
 description: 管理者は、Microsoft 365 Defender ポータルでの攻撃シミュレーション トレーニングが従業員にどのように影響するかを学習し、シミュレーションとトレーニングの結果から分析情報を得る方法について説明します。
 ms.technology: mdo
 ms.openlocfilehash: 725b5c0310d4412f0901526a8111c686f69898a2
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58576094"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163540"
 ---
 # <a name="gain-insights-through-attack-simulation-training"></a>攻撃シミュレーション トレーニングを通して洞察を得る
 

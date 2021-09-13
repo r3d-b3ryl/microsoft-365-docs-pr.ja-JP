@@ -18,11 +18,11 @@ ms.collection:
 ms.custom: ''
 f1.keywords: NOCSH
 ms.openlocfilehash: fb78ee4b6cc8c79b2e8ef3aeda55fcbd66499d4d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575398"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163460"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365-e5"></a>脅威保護機能を複数のユーザーに展開Microsoft 365 E5
 
@@ -65,8 +65,8 @@ Microsoft 365 Defenderは、信号とデータを統合されたセキュリテ�
 |手順 |ソリューション/機能  |説明  |
 |--|---------|---------|
 | 1 |[多要素認証と条件付きアクセス](deploy-threat-protection-configure.md#step-1-set-up-multi-factor-authentication-and-conditional-access-policies)     |侵害された ID とデバイスから保護します。 この保護は基礎なので、まずこの保護から始めましょう。 このガイダンスで推奨される構成には、前提条件として Azure AD Id Protection が含まれています。 詳細については [、「Azure AD Id Protection」を参照してください](/azure/security/fundamentals/threat-detection#azure-active-directory-identity-protection)。     |
-| 2  |[Microsoft Defender for Identity](deploy-threat-protection-configure.md#step-2-configure-microsoft-defender-for-identity)     |  オンプレミスの Active Directory ドメイン サービス (AD DS) 信号を使用して、組織に向けられた高度な脅威、侵害された ID、悪意のある内部者のアクションを特定、検出、および調査するクラウドベースのセキュリティ ソリューション。 オンプレミスおよびクラウド インフラストラクチャを保護し、依存関係や前提条件を持たないので、Microsoft Defender for Identity に次に集中し、すぐにセキュリティ上の利点を提供できます。 詳細については [、「What is Identity Protection? 」を参照してください](/azure/active-directory/identity-protection/overview-identity-protection)。 | 
-| 3  |[Microsoft 365 Defender](deploy-threat-protection-configure.md#step-3-turn-on-microsoft-365-defender) |信号を組み合わせ、機能を 1 つのソリューションに調整します。 セキュリティ専門家が脅威信号を一緒に縫い合わせ、脅威の全範囲と影響を特定できます。 Microsoft 365 Defender攻撃を防止または停止し、影響を受けるメールボックス、エンドポイント、およびユーザー ID を自己回復する自動アクションを実行します。 詳細については、「Microsoft 365 Defender」[を参照してください](/microsoft-365/security/defender/microsoft-365-defender)。 |
+| 2 |[Microsoft Defender for Identity](deploy-threat-protection-configure.md#step-2-configure-microsoft-defender-for-identity)     |  オンプレミスの Active Directory ドメイン サービス (AD DS) 信号を使用して、組織に向けられた高度な脅威、侵害された ID、悪意のある内部者のアクションを特定、検出、および調査するクラウドベースのセキュリティ ソリューション。 オンプレミスおよびクラウド インフラストラクチャを保護し、依存関係や前提条件を持たないので、Microsoft Defender for Identity に次に集中し、すぐにセキュリティ上の利点を提供できます。 詳細については [、「What is Identity Protection? 」を参照してください](/azure/active-directory/identity-protection/overview-identity-protection)。 | 
+| 3 |[Microsoft 365 Defender](deploy-threat-protection-configure.md#step-3-turn-on-microsoft-365-defender) |信号を組み合わせ、機能を 1 つのソリューションに調整します。 セキュリティ専門家が脅威信号を一緒に縫い合わせ、脅威の全範囲と影響を特定できます。 Microsoft 365 Defender攻撃を防止または停止し、影響を受けるメールボックス、エンドポイント、およびユーザー ID を自己回復する自動アクションを実行します。 詳細については、「Microsoft 365 Defender」[を参照してください](/microsoft-365/security/defender/microsoft-365-defender)。 |
 | 4  |[Microsoft Defender for Office 365](deploy-threat-protection-configure.md#step-4-configure-microsoft-defender-for-office-365)     | 電子メール メッセージ、リンク (URL)、およびコラボレーション ツールによる悪意のある脅威から組織を保護します。 マルウェア、フィッシング、スプーフィング、その他の攻撃の種類から保護します。 Microsoft Defender for Office 365構成する方法は、変更制御、現職のシステムからの設定の移行など、展開に時間がかかる可能性があるからです。 詳細については[、「Microsoft Defender for Office 365」 を参照してください](/microsoft-365/security/office-365-security/defender-for-office-365)。       |
 | 5  |[Microsoft Defender for Endpoint](deploy-threat-protection-configure.md#step-5-configure-microsoft-defender-for-endpoint)    | デバイス間の高度な脅威 (エンドポイントとも呼ばれます) の防止、検出、調査、および対応に役立ちます。 Defender for Endpoint は、堅牢な脅威保護の提供です。 詳細については [、「Microsoft Defender for Endpoint」を参照してください](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)。  |
 | 6  |[Microsoft Cloud App Security](deploy-threat-protection-configure.md#step-6-configure-microsoft-cloud-app-security)     | 検出、調査、ガバナンスのためのクラウド アクセス セキュリティ ブローカー。 データと分析情報のMicrosoft Cloud App Securityを開始するには、早い段階でデータの収集を有効にできます。 SaaS アプリ全体で情報や他の対象を絞った保護を実装するには、計画が必要であり、時間がかかる場合があります。 詳細については、「What [is is Cloud App Security?](/cloud-app-security/what-is-cloud-app-security)      | 

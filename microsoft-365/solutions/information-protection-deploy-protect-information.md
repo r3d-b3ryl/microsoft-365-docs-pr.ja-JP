@@ -18,11 +18,11 @@ ms.collection:
 ms.custom: ''
 description: セキュリティMicrosoft 365コンプライアンス機能を展開し、個人情報を保護します。
 ms.openlocfilehash: 084faec3b9c2d7bc9c7da17ee69f7821dd79a754
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575890"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164590"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>データプライバシー規制の対象となる情報を保護する
 
@@ -67,7 +67,7 @@ Microsoft 365 の情報保護スキームの使用を開始するために、以
 Microsoft[の情報保護ソリューション](../compliance/information-protection.md)には、Microsoft 365、Microsoft Azure、および Microsoft Windows。 情報Microsoft 365ソリューションには、次のものが含まれます。
 
 - [機密情報の種類](../compliance/sensitive-information-type-entity-definitions.md)(データプライバシーリスクの評価と機密アイテムの識別に関する記事[で説明)](information-protection-deploy-assess.md)
-- [機密ラベル](../compliance/sensitivity-labels.md)
+- [秘密度ラベル](../compliance/sensitivity-labels.md)
   - サービス/コンテナー レベル
   - クライアント側/コンテンツ レベル
   - ユーザーとユーザーの間でデータを保存SharePoint自動化OneDrive
@@ -84,7 +84,7 @@ Microsoft[の情報保護ソリューション](../compliance/information-protec
 - [Microsoft エンドポイント マネージャー](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)
 - [Windows 情報保護](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)
 
-## <a name="sensitivity-labels"></a>機密ラベル
+## <a name="sensitivity-labels"></a>秘密度ラベル
 
 Microsoft Information Protection フレームワークの感度ラベルを使用すると、ユーザーの生産性と共同作業能力を妨げることなく、組織のデータを分類および保護できます。
 

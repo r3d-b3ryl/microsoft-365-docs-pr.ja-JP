@@ -27,7 +27,7 @@ additionalContent:
     - items:
         - title: Microsoft Viva トピック
           links:
-            - text: 作業の開始
+            - text: 開始する
               url: /microsoft-365/knowledge/
             - text: セットアップ
               url: /microsoft-365/knowledge/set-up-topic-experiences
@@ -46,12 +46,14 @@ additionalContent:
         - title: Microsoft Viva Connections
           links:
             - text: 開始する
-              url: /sharepoint/viva-connections
+              url: /sharepoint/viva-connections-overview
+            - text: 拡張性
+              url: /sharepoint/dev/spfx/viva/overview-viva-connections
             - text: エンド ユーザー ヘルプ&トレーニング
               url: 'https://support.microsoft.com/en-us/office/your-intranet-is-now-in-microsoft-teams-8b4e7f76-f305-49a9-b6d2-09378476f95b'
         - title: Microsoft Viva ラーニング
           links:
-            - text: 作業の開始
+            - text: 開始する
               url: /microsoft-365/learning/
             - text: セットアップ
               url: /microsoft-365/learning/set-up-teams-admin-center

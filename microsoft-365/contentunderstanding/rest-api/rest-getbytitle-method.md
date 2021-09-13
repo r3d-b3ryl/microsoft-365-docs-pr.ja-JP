@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: REST API を使用して、SharePoint Syntex 文書理解モデルに関する情報をモデル タイトルを使って取得または更新します。
-ms.openlocfilehash: 25b98704fec54bee5e3e89f6978e7766ec00dccd83f2542912d44f7a2ec8d45f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1c9c9728b7f26883ebe219e723917b14e35b11c0
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53819657"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163895"
 ---
 # <a name="getbytitle"></a>GetByTitle
 
@@ -52,7 +52,7 @@ GET には要求本文は必要ありません。
 
 ## <a name="responses"></a>応答
 
-| 名前   | 種類  | 説明|
+| 名前   | 型  | 説明|
 |--------|-------|------------|
 |200 OK| |成功|
 

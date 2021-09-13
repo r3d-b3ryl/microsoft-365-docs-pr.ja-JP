@@ -17,11 +17,11 @@ ms.custom:
 - Ent_Solutions
 description: テナント用Windowsデバイス、Office アプリ、Office サーバーを移行Microsoft 365します。
 ms.openlocfilehash: 9570a34c1c1884452ee9090ca0b7d280411e0016
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571581"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163452"
 ---
 # <a name="step-4-migration-for-your-microsoft-365-for-enterprise-tenants"></a>手順 4. エンタープライズ テナントのMicrosoft 365移行
 

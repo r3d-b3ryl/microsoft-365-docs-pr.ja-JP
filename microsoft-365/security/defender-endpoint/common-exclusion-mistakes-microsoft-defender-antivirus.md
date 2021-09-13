@@ -15,13 +15,13 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 06/15/2021
-ms.openlocfilehash: 5fc496fd0d40d5dd172fb45e8ce6b8d23ebab6da
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.date: 08/31/2021
+ms.openlocfilehash: 96589d4ed30dc635588cbc66a656d53836324d2e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58509991"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163767"
 ---
 # <a name="common-mistakes-to-avoid-when-defining-exclusions"></a>除外を定義する際に避ける必要のある一般的な間違い
 
@@ -96,6 +96,17 @@ ms.locfileid: "58509991"
 `C:\Windows\Temp\`
 
 `C:\Windows\Temp\*`
+
+#### <a name="linux-and-macos-platforms"></a>Linux および macOS プラットフォーム
+
+`/`
+
+`/bin`
+
+`/sbin`
+
+`/usr/lib`
+
 
 ### <a name="file-extensions"></a>ファイル拡張子
 
@@ -252,6 +263,18 @@ ms.locfileid: "58509991"
 `system.management.automation.dll`
 
 `windbg.exe`
+
+#### <a name="linux-and-macos-platforms"></a>Linux および macOS プラットフォーム
+
+`bash`
+
+`sh`
+
+`python` と `python3`
+
+`java`
+
+`zsh`
 
 > [!NOTE]
 > ファイルの種類 (、など) を除外するか、環境に最新の最新のソフトウェアを適用し、厳密な更新ポリシーを使用して脆弱性を処理する場合に `.gif` `.jpg` `.jpeg` `.png` 選択できます。

@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 6e5f21a5d0c22ff4149adc0779ce78b31ee12725
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58510003"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163782"
 ---
 # <a name="common-rest-api-error-codes"></a>一般的な REST API エラー コード
 

@@ -23,11 +23,11 @@ ms.custom:
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: e91f0947f9622c81fb9340c09ea52c85ea567af6
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572457"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163550"
 ---
 # <a name="how-automated-investigation-and-response-works-in-microsoft-defender-for-office-365"></a>Microsoft Defender での自動調査と対応の仕組みOffice 365
 

@@ -17,11 +17,11 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.openlocfilehash: f28c209ce179cc019a8b0edbdc698f9f9eb7daf6
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58509907"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163735"
 ---
 # <a name="manage-microsoft-defender-antivirus-in-your-business"></a>ビジネスMicrosoft Defender ウイルス対策管理する
 
@@ -39,7 +39,7 @@ ms.locfileid: "58509907"
 - [Microsoft Endpoint Configuration Manager](/mem/configmgr/protect/deploy-use/endpoint-protection-configure) (現在は一部Microsoft エンドポイント マネージャー)
 - [グループ ポリシー](./use-group-policy-microsoft-defender-antivirus.md)
 - [PowerShell コマンドレット](./use-powershell-cmdlets-microsoft-defender-antivirus.md)
-- [Windows Management Instrumentation (WMI)](./use-wmi-microsoft-defender-antivirus.md)
+- [Windows管理インストルメンテーション (WMI)](./use-wmi-microsoft-defender-antivirus.md)
 - [Microsoft Malware Protection コマンド ライン ユーティリティ](./command-line-arguments-microsoft-defender-antivirus.md)(このユーティリティとmpcmdrun.exeされます。 
 
 次の記事では、これらのツールを使用してこれらのツールを管理および構成するための詳細な情報、リンク、およびリソースMicrosoft Defender ウイルス対策。

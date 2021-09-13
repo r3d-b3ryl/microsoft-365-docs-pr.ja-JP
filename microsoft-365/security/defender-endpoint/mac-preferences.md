@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: b5db9e2b75e7dcb7cb08ea29f696531935b2f486
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58747643"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163727"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>macOS のエンドポイント用 Microsoft Defender の基本設定を設定する
 
@@ -79,7 +79,7 @@ ms.locfileid: "58747643"
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
 |**Key**|enableRealTimeProtection|
-|**データ型**|ブール型|
+|**データ型**|Boolean|
 |**指定可能な値**|true (既定) <p> false|
 |||
 
@@ -101,7 +101,7 @@ ms.locfileid: "58747643"
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
 |**Key**|passiveMode|
-|**データ型**|ブール型|
+|**データ型**|Boolean|
 |**指定可能な値**|false (既定) <p> true|
 |**コメント**|Microsoft Defender for Endpoint version 100.67.60 以上で使用できます。|
 |||
@@ -184,7 +184,7 @@ ms.locfileid: "58747643"
 |除外|定義|例|
 |---|---|---|
 |ファイル拡張子|拡張子が付いたすべてのファイル(デバイス上の任意の場所)|`.test`|
-|File|完全パスで識別される特定のファイル|`/var/log/test.log` <p> `/var/log/*.log` <p> `/var/log/install.?.log`|
+|ファイル|完全パスで識別される特定のファイル|`/var/log/test.log` <p> `/var/log/*.log` <p> `/var/log/install.?.log`|
 |フォルダー|指定したフォルダーの下のすべてのファイル (再帰的)|`/var/log/` <p> `/var/*/`|
 |プロセス|特定のプロセス (完全なパスまたはファイル名で指定) と、そのプロセスで開くすべてのファイル|`/bin/cat` <p> `cat` <p> `c?t`|
 ||||
@@ -216,7 +216,7 @@ path プロパティが *ファイル* またはディレクトリを参照し�
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
 |**Key**|isDirectory|
-|**データ型**|ブール型|
+|**データ型**|Boolean|
 |**指定可能な値**|false (既定) <p> true|
 |**コメント**|適用 *できるのは、$type**が excludedPath である場合のみです。*|
 |||
@@ -418,7 +418,7 @@ macOS 上の Microsoft Defender for Endpoint のクラウド駆動型保護機�
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
 |**Key**|enabled|
-|**データ型**|ブール型|
+|**データ型**|Boolean|
 |**指定可能な値**|true (既定) <p> false|
 |||
 
@@ -450,7 +450,7 @@ macOS 上の Microsoft Defender for Endpoint のクラウド駆動型保護機�
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
 |**Key**|automaticSampleSubmission|
-|**データ型**|ブール型|
+|**データ型**|Boolean|
 |**指定可能な値**|true (既定) <p> false|
 |||
 
@@ -465,7 +465,7 @@ macOS 上の Microsoft Defender for Endpoint のクラウド駆動型保護機�
 |Section|値|
 |---|---|
 |**Key**|automaticDefinitionUpdateEnabled|
-|**データ型**|ブール型|
+|**データ型**|Boolean|
 |**指定可能な値**|true (既定) <p> false|
 |||
 
@@ -497,7 +497,7 @@ macOS 上の Microsoft Defender for Endpoint のユーザー インターフェ�
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
 |**Key**|hideStatusMenuIcon|
-|**データ型**|ブール型|
+|**データ型**|Boolean|
 |**指定可能な値**|false (既定) <p> true|
 |||
 

@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: REST API を使用して、SharePoint Syntex 文書理解モデルに関する利用可能なモデル設定を更新します。
-ms.openlocfilehash: 665fff5e5c9142ce182a44ef2f8abe031f4737ebf74733890e22c70eddfe3495
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c75f669913f16233c6015230a60643cf86f33f5a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795256"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163879"
 ---
 # <a name="updatemodelsettings"></a>UpdateModelSettings
 
@@ -44,7 +44,7 @@ POST /_api/machinelearning/models/getbytitle('{modelFileName}')/updatemodelsetti
 
 ## <a name="request-body"></a>要求本文
 
-|名前    |種類   |説明 |
+|名前    |型   |説明 |
 |--------|-------|-------|
 |ModelSettings|文字列|モデル設定の JSON。|
 |説明|string|モデルの説明。|
@@ -52,7 +52,7 @@ POST /_api/machinelearning/models/getbytitle('{modelFileName}')/updatemodelsetti
 
 ## <a name="responses"></a>応答
 
-| 名前   | 種類  | 説明|
+| 名前   | 型  | 説明|
 |--------|-------|------------|
 |200 OK| |成功|
 

@@ -17,11 +17,11 @@ ms.collection:
 - m365initiative-compliance
 - m365solution-scenario
 ms.openlocfilehash: 46ddc7584b0299a7098b3fbe0758bdd9d4ee914c
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564160"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163983"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Microsoft 365 での通信コンプライアンス
 

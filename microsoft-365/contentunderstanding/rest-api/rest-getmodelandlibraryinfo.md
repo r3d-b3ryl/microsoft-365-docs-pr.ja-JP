@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: REST API を使用して、モデルとそれが適用されているライブラリに関する情報を取得します。
-ms.openlocfilehash: 4c800f20a7dc9d8e188cf83fd1715d2ae3aa72c1aeea530e788386bdcc40a02e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 29240a6210e2079a082be6c3a07aae890d932719
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795280"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163886"
 ---
 # <a name="get-model-and-library-information"></a>モデルとライブラリの情報を取得する
 
@@ -43,7 +43,7 @@ GET /_api/machinelearning/publications/getbymodeluniqueid('{modelUniqueId}') HTT
 
 ## <a name="response"></a>応答
 
-| 名前   | 種類  | 説明|
+| 名前   | 型  | 説明|
 |--------|-------|------------|
 |200 OK| |成功|
 
