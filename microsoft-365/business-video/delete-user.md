@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ビジネス向けアプリでユーザーをMicrosoft 365する方法について学習します。
-ms.openlocfilehash: 2f0d470bc7855a5f3a57dd431fe11aac1525475710721585771f1959853ba50f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8b2f0db242197aecb04df2261caac3688ad4f1b2
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53900600"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180671"
 ---
 # <a name="delete-a-user"></a>ユーザーを削除する
 

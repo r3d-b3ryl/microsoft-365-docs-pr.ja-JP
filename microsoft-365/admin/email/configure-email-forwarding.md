@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: メール転送を使用すると、ユーザー メールボックスに送信Microsoft 365メール メッセージを組織の内部または外部の別のメールボックスに転送できます。
-ms.openlocfilehash: f6219b957c3444ea68d6e8036c2ad2ea6529571b90cb301bfead983a9c9176b7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 77f374623244708c0b2bf1ecdae1af0cbebc9812
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826173"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176560"
 ---
 # <a name="configure-email-forwarding-in-microsoft-365"></a>メール転送の構成 (Microsoft 365
 
@@ -117,4 +117,5 @@ ms.locfileid: "53826173"
 
 [共有メールボックスの作成](../email/create-a-shared-mailbox.md) (記事)\
 [別のアドレスからメールを送信](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) する (記事)\
+[外部メールの自動転送を制御Microsoft 365](/security/office-365-security/external-email-forwarding?view=o365-worldwide) (記事)\
 [ユーザー名とメール アドレスを変更する](../add-users/change-a-user-name-and-email-address.md) (記事)

@@ -18,14 +18,14 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: カストディアン管理ツールを使用して、Advanced eDiscoveryケースのデータを管理する方法について説明します。
-ms.openlocfilehash: 92102a0748f37b2d6d18ab36baf6d50ef95e699e64c278bf5daf273e6c94b312
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 22297edbf73f561ad46e5fae521abeb371fdc88d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842151"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179864"
 ---
-# <a name="work-with-custodians-and-non-custodial-data-sources-in-advanced-ediscovery"></a>管理担当者と管理されていないデータ ソースを管理Advanced eDiscovery
+# <a name="work-with-custodians-and-non-custodial-data-sources-in-advanced-ediscovery"></a>Advanced eDiscovery でカストディアンと非カストディアンのデータ ソースを操作する
 
 組織が法的調査に応答すると、関連する可能性のあるコンテンツの特定、保存、および収集に関するワークフローは、関連するデータの保管担当者である組織内のユーザーに基づいて行います。 電子情報開示では、これらの個人はデータ保管担当者 *(または* カストディアン *)* と呼ばされ、「ドキュメントまたは電子ファイルの管理制御を持つ人物」と定義されます。 たとえば、電子メールメッセージのカストディアンは、関連メッセージを含むメールボックスの所有者でもあります。
 

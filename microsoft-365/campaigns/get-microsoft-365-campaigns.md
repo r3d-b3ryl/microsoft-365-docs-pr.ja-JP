@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: キャンペーンMicrosoft 365情報を取得して、電子メール、データ、通信に対するサイバーセキュリティの脅威からキャンペーンを保護できます。
-ms.openlocfilehash: a26d58a56167fd3147664e7867ba20090f881fa616f78a6cf439a11407efb561
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3d70fef721417dd823dc272bbb7b08c04c037f98
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53856393"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180544"
 ---
 # <a name="get-microsoft-365-for-campaigns"></a>キャンペーンMicrosoft 365を取得する
 

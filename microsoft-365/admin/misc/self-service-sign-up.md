@@ -21,11 +21,11 @@ search.appverid: MET150
 description: Microsoft Microsoft 365、Microsoft Power Apps、Microsoft Power Automate、Dynamics 365 for Finance などのセルフサービス プログラムについて説明します。
 ms.date: 03/17/2021
 ms.openlocfilehash: 7c4986beb1c920865cee28f2729859e426944f3f
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532789"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178760"
 ---
 # <a name="using-self-service-sign-up-in-your-organization"></a>組織でのセルフサービス サインアップの使用
 

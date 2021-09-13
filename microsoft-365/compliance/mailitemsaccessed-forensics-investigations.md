@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: ''
 description: MailItemsAccessed メールボックス監査アクションを使用して、侵害されたユーザー アカウントのフォレンシック調査を実行します。
 ms.openlocfilehash: b0fac6e4ac5d6cc4bb20b6853cb67cf301c6295a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565998"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177975"
 ---
 # <a name="use-advanced-audit-to-investigate-compromised-accounts"></a>高度な監査を使用して、侵害されたアカウントを調査する
 

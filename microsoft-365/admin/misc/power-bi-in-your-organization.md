@@ -20,11 +20,11 @@ ms.assetid: d7941332-8aec-4e5e-87e8-92073ce73dc5
 ROBOTS: NOINDEX
 description: 組織のユーザー Power BIこのビジネス分析サービスを使用する方法について詳しくは、こちらをご覧ください。
 ms.openlocfilehash: 5301d3cd6b10101543741637014455aa2b2a207a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566954"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178792"
 ---
 # <a name="power-bi-in-your-organization"></a>組織内の Power BI
 
@@ -170,7 +170,7 @@ To allow your existing users to sign up for Power BI, run the opposite command a
   
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> の順に選択します。
 
 ::: moniker-end
 

@@ -16,11 +16,11 @@ ms.collection:
 localization_priority: Normal
 description: この記事では、サテライト地域の場所で複数地域SharePointを有効にSharePointグローバル管理者または管理者向け情報を提供します。
 ms.openlocfilehash: 731c8b0125a9f53264d18de55a76f8123021e436
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570223"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179791"
 ---
 # <a name="enabling-sharepoint-multi-geo-in-your-satellite-geo-location"></a>サテライト地域で SharePoint Multi-Geo の有効化
 

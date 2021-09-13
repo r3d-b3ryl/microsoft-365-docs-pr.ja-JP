@@ -26,11 +26,11 @@ search.appverid:
 - MET150
 description: ローカルの Active-Directory に参加Microsoft 365デバイスを保護するために、Windows 10をわずか数ステップで有効にする方法について説明します。
 ms.openlocfilehash: 2a60437bafc7aae1928d73342555c030a71689cd
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58595506"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176224"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>ドメインに参加しているデバイスWindows 10デバイスをユーザーが管理Microsoft 365 Business Premium
 
@@ -43,7 +43,7 @@ ms.locfileid: "58595506"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3C9hO]
   
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 - ユーザーを Azure AD Azure AD Connect。
 - 組織単位 (OU) AD Connect Azure 組織単位 (OU) の同期を完了します。

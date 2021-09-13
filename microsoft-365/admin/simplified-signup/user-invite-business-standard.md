@@ -15,11 +15,11 @@ ms.custom:
 - AdminSurgePortfolio
 description: 組織に参加する招待をMicrosoft 365 Business Standardする
 ms.openlocfilehash: cdb77b7f0263aaeabad972dc5a005e42ce0d6deb
-ms.sourcegitcommit: 8ef23d275d7209a705295e2b117d4382b20ad4f7
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58866946"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178432"
 ---
 # <a name="accept-an-email-invitation-to-a-microsoft-365-business-standard-subscription-user"></a>サブスクリプションへの電子メールの招待をMicrosoft 365 Business Standardする (ユーザー)
 

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5cf987c71ff3da40149dd18ba2578ffc11bd01774b83ae24ee9a3b3fba7e7b23
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f8c6c289cca61e5a0891af04ef97831a27b341f3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833965"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177663"
 ---
 # <a name="find-devices-by-tag-api"></a>タグ API でデバイスを検索する
 
@@ -54,8 +54,8 @@ ms.locfileid: "53833965"
 :---|:---|:---
 アプリケーション|Machine.Read.All|'すべてのコンピューター プロファイルを読み取る'
 アプリケーション|Machine.ReadWrite.All|'すべてのコンピューター情報の読み取りと書き込み'
-委任 (職場または学校のアカウント)|Machine.Read|'コンピューター情報の読み取り'
-委任 (職場または学校のアカウント)|Machine.ReadWrite|'コンピューター情報の読み取りおよび書き込み'
+委任 (職場または学校アカウント)|Machine.Read|'コンピューター情報の読み取り'
+委任 (職場または学校アカウント)|Machine.ReadWrite|'コンピューター情報の読み取りおよび書き込み'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
@@ -72,16 +72,16 @@ GET /api/machines/findbytag?tag={tag}&useStartsWithFilter={true/false}
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**
 
 ## <a name="request-uri-parameters"></a>要求 URI パラメーター
 
-名前|種類|説明
+Name|型|説明
 :---|:---|:---
 tag|String|タグ名。 **必須**
-useStartsWithFilter|Boolean|true に設定すると、クエリ内の指定されたタグで始まるタグ名を持つすべてのデバイスが検索されます。 既定は false です。 **オプション**。
+useStartsWithFilter|ブール値|true に設定すると、クエリ内の指定されたタグで始まるタグ名を持つすべてのデバイスが検索されます。 既定は false です。 **オプション**。
 
 ## <a name="request-body"></a>要求本文
 

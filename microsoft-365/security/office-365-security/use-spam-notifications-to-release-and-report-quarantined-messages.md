@@ -22,11 +22,11 @@ description: 管理者は、検疫済みメッセージ (EOP) で検疫された
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: a07a4196b9ad936c6dc83d8eb300332ad9aaac47
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568458"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177328"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages"></a>ユーザーのスパム通知を使用して検疫済みメッセージを解放および報告する
 

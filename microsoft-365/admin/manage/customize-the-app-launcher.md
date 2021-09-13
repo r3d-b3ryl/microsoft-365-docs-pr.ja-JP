@@ -25,11 +25,11 @@ search.appverid:
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
 description: カスタム タイルをアプリ 起動ツールに追加して、メール、ドキュメント、アプリ、SharePointサイト、外部サイト、その他のリソースへのクイック リンクを作成します。
 ms.openlocfilehash: d13be7d4bb89a8d1cebd2d59026f58bdc62c4a15
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566284"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176336"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>カスタム タイルをアプリ起動ツールに追加する
 

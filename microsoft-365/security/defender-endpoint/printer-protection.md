@@ -14,11 +14,11 @@ audience: ITPro
 ms.technology: mde
 ms.topic: article
 ms.openlocfilehash: d1a0b8af6dbf725623986582f5ee8e0b3912f0b5
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58561292"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179216"
 ---
 # <a name="device-control-printer-protection"></a>デバイス制御のプリンター保護
 

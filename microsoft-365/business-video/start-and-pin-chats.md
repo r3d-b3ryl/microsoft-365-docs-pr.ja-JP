@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: チャットを開始してピン留めする方法については、Microsoft Teams。
-ms.openlocfilehash: bbfd6334b08797f5616bd1844b48af67d6352d9c80a9aa8c6674fc9ae0561fa9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8755abfa3e961ef5408ab612f6712dbeef948074
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53893360"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180615"
 ---
 # <a name="chat-with-employees-and-customers"></a>従業員や顧客とチャットする
 

@@ -30,11 +30,11 @@ search.appverid:
 ms.assetid: 02e74022-44af-414b-9d74-0ebf5c2197f0
 description: アプリ管理ポリシーを作成または編集し、ユーザーの個人用デバイスで作業ファイルを保護するWindows 10します。
 ms.openlocfilehash: 66ddde8321742d7bcaf6294e905fdd9601482c0a
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360607"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176655"
 ---
 # <a name="set-or-edit-application-protection-settings-for-windows-10-devices"></a>デバイスのアプリケーション保護設定を設定またはWindows 10する
 

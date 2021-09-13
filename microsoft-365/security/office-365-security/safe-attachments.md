@@ -20,12 +20,12 @@ ms.collection:
 description: 管理者は、Microsoft Defender の セーフ添付ファイル機能について説明Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0158ef1e182b0c0def6a84f71608660134b5cbc68f467f8a43485447c02c7999
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 127d862d235abc4cd81f62679b97077c7a80bd70
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56807919"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179136"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>セーフMicrosoft Defender の添付ファイル (Office 365
 
@@ -37,7 +37,7 @@ ms.locfileid: "56807919"
 
 セーフMicrosoft [Defender for Office 365](defender-for-office-365.md)の添付ファイルは、Exchange Online Protection [(EOP)](anti-malware-protection.md)でマルウェア対策保護によって既にスキャンされている電子メールの添付ファイルに対する保護の追加層を提供します。 具体的には、セーフ添付ファイルは、仮想環境を使用して、受信者に配信される前に電子メール メッセージの添付ファイルをチェックします (プロセスは、デトレーションと _呼ばれる_)。
 
-セーフ電子メール メッセージの添付ファイル保護は、添付ファイル ポリシーセーフによって制御されます。 既定の添付ファイル ポリシーセーフないので、添付ファイルの保護を取得するには、セーフ 添付ファイル ポリシーを 1 つ以上セーフ **する必要があります**。 手順については、「Defender for セーフの添付ファイル ポリシーを[セットアップする」を参照Office 365。](set-up-safe-attachments-policies.md)
+メール メッセージの安全な添付ファイル保護は、安全な添付ファイル ポリシーで制御されます。 既定の添付ファイル ポリシーセーフないので、添付ファイルの保護を取得するには、セーフ 添付ファイル ポリシーを 1 つ以上セーフ **する必要があります**。 手順については、「Defender for セーフの添付ファイル ポリシーを[セットアップする」を参照Office 365。](set-up-safe-attachments-policies.md)
 
 次の表では、Office 365 用 Microsoft Defender を含む Microsoft 365 組織および Office 365 組織の セーフ 添付ファイルのシナリオについて説明します (つまり、ライセンスの不足は、この例では決して問題ではありません)。
 
@@ -53,7 +53,7 @@ ms.locfileid: "56807919"
 |Chris の組織には、組織内のすべてのユーザーセーフに関する長年の添付ファイル ポリシーがあります。 Chris は、添付ファイルを含む電子メールを受信し、そのメッセージを外部受信者に転送します。|Chis は添付ファイルによってセーフされます。 <p> 外部受信者が組織内の添付ファイル ポリシーセーフ持っている場合、転送されたメッセージはそれらのポリシーの対象になります。|
 |
 
-セーフ添付ファイルのスキャンは、データが存在する同じMicrosoft 365行います。 データセンターの地域の詳細については、「データはどこに [配置されているのか」を参照してください。](https://products.office.com/where-is-your-data-located?geo=All)
+安全な添付ライフのスキャンは、Microsoft 365 データが存在する安全な領域で実行されます。 データセンターの地域の詳細については、「データはどこに [配置されているのか」を参照してください。](https://products.office.com/where-is-your-data-located?geo=All)
 
 > [!NOTE]
 > 次の機能は、セーフポータルの添付ファイル ポリシーのグローバル設定Microsoft 365 Defenderされています。 ただし、これらの設定はグローバルに有効または無効になり、添付ファイル ポリシーセーフ必要としません。

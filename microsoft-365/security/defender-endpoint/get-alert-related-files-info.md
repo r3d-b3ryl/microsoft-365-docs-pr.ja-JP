@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: ed217afd978e5d1f3a29048bb20e7ba15d96be90d611341bde56ae42484e2e14
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 168c686ab1d14cb3489d9f2c19f8fa59065d4236
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853945"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177631"
 ---
 # <a name="get-alert-related-files-information-api"></a>アラート関連ファイル情報 API の取得
 
@@ -53,7 +53,7 @@ ms.locfileid: "53853945"
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
 アプリケーション|File.Read.All|'ファイル プロファイルの読み取り'
-委任 (職場または学校のアカウント)|File.Read.All|'ファイル プロファイルの読み取り'
+委任 (職場または学校アカウント)|File.Read.All|'ファイル プロファイルの読み取り'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
@@ -69,7 +69,7 @@ GET /api/alerts/{id}/files
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**
 

@@ -17,11 +17,11 @@ ms.custom:
 - Ent_Solutions
 description: テナントへのネットワーク アクセスを最適化Microsoft 365します。
 ms.openlocfilehash: 4bf988aca4145d52d8e5e1bb68c6e8cf134be534
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575866"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179031"
 ---
 # <a name="step-2-optimal-networking-for-your-microsoft-365-for-enterprise-tenants"></a>手順 2。 エンタープライズ テナント向けMicrosoft 365最適なネットワーク
 
@@ -88,7 +88,7 @@ Microsoft 365 クラウドリソースへのアクセスを最適化するには
 
 クラウド アプリへのトラフィックの大部分が VPN 接続をバイパスするスプリット トンネリングMicrosoft 365トラフィック フローを次に示します。
 
-![トンネリングを使用した VPN クライアントからのネットワーク トラフィック。](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-after-tunneling.png)
+![トンネリングのある VPN クライアントからのネットワーク トラフィック。](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-after-tunneling.png)
 
 この図では、VPN クライアントは、インターネットを通Microsoft 365、Microsoft グローバル ネットワークに最も近いフロント ドアに対して、重要なクラウド サービス トラフィックを送信および受信します。
 

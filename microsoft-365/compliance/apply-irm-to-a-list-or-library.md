@@ -22,11 +22,11 @@ ms.collection:
 description: Information Rights Management (IRM) を使用すると、リストまたはライブラリからダウンロードされるファイルを制御および保護できます。
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 84f0443cd31f26549dc1f5dc06be6e7bf52b05dc
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573669"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178167"
 ---
 # <a name="apply-information-rights-management-irm-to-a-list-or-library"></a>リストまたはライブラリに Information Rights Management (IRM) を適用する
 

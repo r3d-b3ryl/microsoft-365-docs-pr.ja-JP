@@ -26,11 +26,11 @@ search.appverid:
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: DNS レコードが正しく設定されていることを確認して、カスタム ドメインのセットアップ中に発生した問題を追跡する方法について説明します。
 ms.openlocfilehash: 5dd84e829ed1cd8ea1cc9738ac88eaabcba52648
-ms.sourcegitcommit: d792743bc21eec87693ebca51d7307a506d0bc43
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "58450096"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176431"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records"></a>ドメインまたは DNS レコードを追加後に問題を特定して解決する
 

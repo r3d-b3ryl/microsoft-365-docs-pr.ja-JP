@@ -22,11 +22,11 @@ ms.custom:
 - seo-marvel-jun2020
 ms.technology: m365d
 ms.openlocfilehash: 0bb4b57e3f212820852f23af2665f11f99e5be95
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575914"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177424"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>Microsoft Secure Score の履歴を追跡し、目標を達成する
 

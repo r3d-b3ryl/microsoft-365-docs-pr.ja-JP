@@ -11,12 +11,12 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 37c9c83bd61fe0be89eff47dedf7e3c0492ac78c1b9fc4c48afe822e370a1726
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f817831cda584dc1aa6c968d7332939c68f48e8b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854389"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179480"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>更新プログラムの処理方法は、Microsoft マネージド デスクトップ
 
@@ -67,7 +67,7 @@ Microsoft マネージド デスクトップ 4 つの Azure ADを使用して更
     <tr><td>オペレーティング システムの機能更新プログラム</td><td>0 日</td><td>30 日間</td><td>60 日</td><td>90 日間</td></tr>
     <tr><td>ドライバー/ファームウェア</td><td colspan="4">品質更新プログラムのスケジュールに従う</td></tr>
     <tr><td>ウイルス対策の定義</td><td colspan="4">各スキャンで更新</td></tr>
-    <tr><td>Microsoft 365 Apps for Enterprise</td><td colspan="4"><a href="/microsoft-365/managed-desktop/get-started/m365-apps#updates-to-microsoft-365-apps">詳細情報</a></td></tr>
+    <tr><td>Microsoft 365 Apps for enterprise</td><td colspan="4"><a href="/microsoft-365/managed-desktop/get-started/m365-apps#updates-to-microsoft-365-apps">詳細情報</a></td></tr>
     <tr><td>Microsoft Edge</td><td colspan="4"><a href="/microsoft-365/managed-desktop/get-started/edge-browser-app#updates-to-microsoft-edge">詳細情報</a></td></tr>
     <tr><td>Microsoft Teams</td><td colspan="4"><a href="/microsoft-365/managed-desktop/get-started/teams#updates">詳細情報</a></td></tr>
 </table>

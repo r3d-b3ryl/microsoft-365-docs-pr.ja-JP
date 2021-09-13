@@ -22,11 +22,11 @@ search.appverid: MET150
 description: 組織のプロファイル (組織名、住所、電話、技術的な連絡先、電子メールなど) を変更します。
 ms.date: 03/30/2021
 ms.openlocfilehash: a7a2b8ee10c37b315e14504eae67672c34f79f08
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394494"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176344"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>組織の住所およびその他のプロファイル情報を変更する
   

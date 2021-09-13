@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 793ca89925e98bfc622357e126e4f0c44893c3cd
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 8c8de260ebd8d16d7b402465e91a37d78e9d904b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574642"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179320"
 ---
 # <a name="create-indicators-for-files"></a>ファイルのインジケーターを作成 
 
@@ -44,7 +44,7 @@ ms.locfileid: "58574642"
 - ファイルの詳細ページからインジケーターの追加ボタンを使用してコンテキスト インジケーターを作成する
 - インジケーター API を使用してインジケーター [を作成する](ti-indicator.md)
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 ファイルのインジケーターを作成する前に、次の前提条件を理解することが重要です。
 
@@ -79,7 +79,7 @@ ms.locfileid: "58574642"
 
 インジケーターによって自動的にブロックされたファイルは、ファイルのアクション センターには表示されませんが、アラートはアラート キューに表示されます。
 
-## <a name="private-preview-alerting-on-file-blocking-actions"></a>プライベート プレビュー: ファイルブロックアクションに対するアラート
+## <a name="public-preview-alerting-on-file-blocking-actions"></a>パブリック プレビュー: ファイルブロックアクションに対するアラート
 
 > [!IMPORTANT]
 > このセクションの情報 (**自動** 調査および修復エンジンのパブリック プレビュー) は、製品の商用リリース前に大幅に変更される可能性があるプレリリース製品に関連します。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
@@ -98,17 +98,14 @@ ms.locfileid: "58574642"
 
 > [!IMPORTANT]
 >
->- 通常、ファイル ブロックは数分以内に適用および削除されますが、30 分以上かかる場合があります。
+> - 通常、ファイル ブロックは数分以内に適用および削除されますが、30 分以上かかる場合があります。
+> - 同じ適用の種類とターゲットを持つファイル IoC ポリシーが競合している場合は、より安全なハッシュのポリシーが適用されます。 SHA-256 ファイル ハッシュ IoC ポリシーは SHA-1 ファイル ハッシュ IoC ポリシーに勝ちます。ハッシュの種類が同じファイルを定義している場合、MD5 ファイル ハッシュ IoC ポリシーに勝ちます。 これは、デバイス グループに関係なく常に true です。
+> - それ以外のすべての場合、同じ適用ターゲットを持つ競合するファイル IoC ポリシーがすべてのデバイスとデバイスのグループに適用されると、デバイスの場合、デバイス グループ内のポリシーが勝ちます。
+> - EnableFileHashComputation グループ ポリシーを無効にすると、ファイル IoC のブロック精度が低下します。 ただし、有効にすると、 `EnableFileHashComputation` デバイスのパフォーマンスに影響を与える可能性があります。 たとえば、ネットワーク共有からローカル デバイス (特に VPN 接続を使用して) に大きなファイルをコピーすると、デバイスのパフォーマンスに影響を与える可能性があります。
 >
->- 同じ適用の種類とターゲットを持つファイル IoC ポリシーが競合している場合は、より安全なハッシュのポリシーが適用されます。 SHA-256 ファイル ハッシュ IoC ポリシーは SHA-1 ファイル ハッシュ IoC ポリシーに勝ちます。ハッシュの種類が同じファイルを定義している場合、MD5 ファイル ハッシュ IoC ポリシーに勝ちます。 これは、デバイス グループに関係なく常に true です。
->
->- それ以外のすべての場合、同じ適用ターゲットを持つ競合するファイル IoC ポリシーがすべてのデバイスとデバイスのグループに適用されると、デバイスの場合、デバイス グループ内のポリシーが勝ちます。
->
->- EnableFileHashComputation グループ ポリシーを無効にすると、ファイル IoC のブロック精度が低下します。 ただし、有効にすると、 `EnableFileHashComputation` デバイスのパフォーマンスに影響を与える可能性があります。 たとえば、ネットワーク共有からローカル デバイス (特に VPN 接続を使用して) に大きなファイルをコピーすると、デバイスのパフォーマンスに影響を与える可能性があります。
->
->   EnableFileHashComputation グループ ポリシーの詳細については [、「Defender CSP」を参照してください](/windows/client-management/mdm/defender-csp)。
+> EnableFileHashComputation グループ ポリシーの詳細については [、「Defender CSP」を参照してください](/windows/client-management/mdm/defender-csp)。
 
-## <a name="private-preview-advanced-hunting-capabilities"></a>プライベート プレビュー: 高度なハンティング機能
+## <a name="public-preview-advanced-hunting-capabilities"></a>パブリック プレビュー: 高度なハンティング機能
 
 > [!IMPORTANT]
 > このセクションの情報 (**自動** 調査および修復エンジンのパブリック プレビュー) は、製品の商用リリース前に大幅に変更される可能性があるプレリリース製品に関連します。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
@@ -132,7 +129,7 @@ Timestamp > ago(30d)
 
 証明書:
 
-- EUS:Win32/CustomCertEnterpriseBlock!cl  
+- EUS:Win32/CustomCertEnterpriseBlock!cl
 
 応答アクションアクティビティは、デバイスのタイムラインでも表示できます。
 
@@ -156,13 +153,18 @@ Cert および File IoC ポリシー処理の競合は、次の順序に従い�
 
 ### <a name="examples"></a>例
 
-|コンポーネント|コンポーネントの適用|ファイル インジケーター アクション|結果
+<br>
+
+****
+
+|コンポーネント|コンポーネントの適用|ファイル インジケーター アクション|結果|
 |---|---|---|---|
-|攻撃表面の縮小ファイル パスの除外|許可|ブロック|ブロック
-|攻撃表面の縮小ルール|ブロック|許可|許可
-|Windows Defender Application Control|許可|ブロック|許可
-|Windows Defender Application Control|ブロック|許可|ブロック
-|Microsoft Defender ウイルス対策除外|許可|ブロック|許可
+|攻撃表面の縮小ファイル パスの除外|許可|ブロック|ブロック|
+|攻撃表面の縮小ルール|ブロック|許可|許可|
+|Windows Defender Application Control|許可|ブロック|許可|
+|Windows Defender Application Control|ブロック|許可|ブロック|
+|Microsoft Defender ウイルス対策除外|許可|ブロック|許可|
+|
 
 ## <a name="see-also"></a>関連項目
 

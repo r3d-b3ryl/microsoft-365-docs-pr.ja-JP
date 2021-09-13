@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: このOffice 365コンテンツは、利用可能な最も強力な暗号化、プロトコル、およびテクノロジを使用して、保存時および転送中に暗号化されます。 暗号化の概要については、Office 365。
-ms.openlocfilehash: 1dcfb16c08eae1cddde10f250093df9ffc43cbc11944745c96e38e3ff0279670
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c54508434c5ae5126a79eba1cb6dab3851d8f746
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53900065"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175959"
 ---
 # <a name="encryption"></a>暗号化
 
@@ -85,7 +85,7 @@ Microsoft 365は、ボリューム暗号化、ファイル暗号化、および�
 |ドキュメントから暗号化を削除する  <br/> |[ドキュメント、ブック、またはプレゼンテーションの保護を追加または削除する](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) <br/> [保護の **削除] セクションを** 選択し、「パスワード暗号化の削除 **」を参照してください**。  |
 
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [セキュリティとMicrosoft 365機能の計画](plan-for-security-and-compliance.md)
 

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: c0337c83419e2584c779abdd1bc88b75e6c1a63a5c7cc38fe1a719a6d6908029
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d87efcd940fd9e19c9f28250f85e0f7915febc05
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53894385"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177584"
 ---
 # <a name="get-user-related-machines-api"></a>ユーザー関連のコンピューター API を取得する
 
@@ -31,7 +31,7 @@ ms.locfileid: "53894385"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
@@ -53,8 +53,8 @@ ms.locfileid: "53894385"
 :---|:---|:---
 アプリケーション |Machine.Read.All|'すべてのコンピューター プロファイルを読み取る'
 アプリケーション |Machine.ReadWrite.All |'すべてのコンピューター情報の読み取りと書き込み'
-委任 (職場または学校のアカウント) | Machine.Read | 'コンピューター情報の読み取り'
-委任 (職場または学校のアカウント) | Machine.ReadWrite | 'コンピューター情報の読み取りおよび書き込み'
+委任 (職場または学校アカウント) | Machine.Read | 'コンピューター情報の読み取り'
+委任 (職場または学校アカウント) | Machine.ReadWrite | 'コンピューター情報の読み取りおよび書き込み'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
@@ -72,7 +72,7 @@ GET /api/users/{id}/machines
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization | String | ベアラー {token}。 **必須**
 
@@ -82,7 +82,7 @@ Empty
 
 ## <a name="response"></a>応答
 
-成功し、ユーザーが存在する場合 - 本文のコンピューター[](machine.md)エンティティの一覧で 200 OK。 ユーザーが存在しない場合 - 404 が見つかりません。
+成功し、ユーザーが存在する場合 - 本文のコンピューター[](machine.md)エンティティの一覧で 200 OK。 ユーザーが存在しない場合 - 空のセットで 200 OK。
 
 ## <a name="example"></a>例
 

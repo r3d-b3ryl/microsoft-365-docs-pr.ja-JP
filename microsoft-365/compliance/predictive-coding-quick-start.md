@@ -15,11 +15,11 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: 予測コーディング モジュールの使用を開始する方法については、Advanced eDiscovery。 この記事では、予測コーディングを使用して、調査に最も関連性の高いレビュー セット内のコンテンツを識別するエンドツーエンドのプロセスについて説明します。
 ms.openlocfilehash: 0ca9e4ff8b42ced962b68fff9073e892d8ea5d4e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574834"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177880"
 ---
 # <a name="quick-start-predictive-coding-in-advanced-ediscovery-preview"></a>クイック スタート: クイック スタートでの予測Advanced eDiscovery (プレビュー)
 

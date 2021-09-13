@@ -20,11 +20,11 @@ ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: ef92717dc43e5af7a6c98d497405160fec45b7cd
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569287"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179143"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターのスマート レポートと分析情報
 

@@ -24,11 +24,11 @@ ROBOTS: NO INDEX, NO FOLLOW
 ms.assetid: ed34fff3-2881-4ed4-9906-1ba6bb8dd804
 description: 32 ビット アプリをコンピューターに自動的Officeし、Windows 10する方法について学習します。
 ms.openlocfilehash: ea131e37fa7f82a0ab03aa52b71569e3c96a2c7f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566110"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178784"
 ---
 # <a name="prepare-for-office-client-deployment-by-microsoft-365-for-business"></a>ビジネス向けOfficeクライアントの展開Microsoft 365準備する
 

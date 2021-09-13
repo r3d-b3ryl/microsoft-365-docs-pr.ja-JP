@@ -18,11 +18,11 @@ ms.custom:
 ms.assetid: 26b9ff81-93b0-4251-beaf-3c9f1d7c80c8
 description: PowerShell を使用してユーザー Microsoft 365、ライセンス、およびグループを管理する方法について説明します。
 ms.openlocfilehash: 77aa0003186eb44ce201e0e4b332c2a119c72069
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356074"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177792"
 ---
 # <a name="manage-microsoft-365-user-accounts-licenses-and-groups-with-powershell"></a>Microsoft 365 ユーザー アカウント、ライセンス、PowerShell を使用したグループを管理する
 

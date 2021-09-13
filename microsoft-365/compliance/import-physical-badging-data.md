@@ -15,11 +15,11 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: 管理者は、データ コネクタをセットアップして、組織の物理的なバッド システムからデータをインポートして、Microsoft 365。 これにより、内部リスク管理ポリシーでこのデータを使用して、組織に対する内部脅威の可能性を示す可能性のある特定のユーザーによる物理的な建物へのアクセスを検出できます。
 ms.openlocfilehash: ae513d01917c0fe4148d265865a77775a5ff2555
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567930"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179952"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>物理的な不良データをインポートするコネクタをセットアップする (プレビュー)
 
@@ -154,7 +154,7 @@ JSON ファイルは、コネクタで必要なスキーマ定義に準拠して
 
    状態ページには、スクリプトへのリンクも含まれる。 JSON ファイルを API エンドポイントに投稿する方法については、このスクリプトを参照してください。
 
-7. **[完了]** をクリックします。
+7. [ **完了**] をクリックします。
 
    新しいコネクタが [コネクタ] タブの一覧 **に表示** されます。
 

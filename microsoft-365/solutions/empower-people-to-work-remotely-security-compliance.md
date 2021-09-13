@@ -18,11 +18,11 @@ ms.collection:
 ms.custom: ''
 description: Microsoft 365 のセキュリティ センターとコンプライアンスのサービスを使用して、ハイブリッド ワーカー向けにご使用のアプリケーション、データ、およびデバイスを保護します。
 ms.openlocfilehash: aa43b2b30395def36d1c1210ef07edd379996b15
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575314"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179063"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-hybrid-workers"></a>手順 3: ハイブリッド ワーカーのためのセキュリティとコンプライアンスの展開
 

@@ -23,11 +23,11 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.openlocfilehash: 41a0c893e193c8690c0c50e5b12ecc8630b9a899
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570415"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177503"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>インシデントを管理Microsoft 365 Defender
 
@@ -46,13 +46,13 @@ ms.locfileid: "58570415"
 インシデントを管理する方法は次のとおりです。
 
 - [インシデント名を編集する](#edit-the-incident-name)
-- [インシデント タグを追加する](#add-incident-tags)
+- [インシデント タグの追加](#add-incident-tags)
 - [インシデントを自分に割り当てる](#assign-incidents)
 - [それらを解決する](#resolve-an-incident)
-- [分類と決定を設定する](#set-the-classification-and-determination)
-- [コメントを追加する](#add-comments)
+- [その分類と決定を設定する](#set-the-classification-and-determination)
+- [コメントの追加](#add-comments)
 
-インシデントを管理するには、[インシデントの **管理] ウィンドウ** でインシデントを管理できます。 次に例を示します。
+インシデントを管理するには、インシデント用の[**インシデントの管理**] ウィンドウから行います。 次に例を示します。
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="インシデントの [インシデントの管理] ウィンドウの例。":::
 
@@ -65,7 +65,7 @@ ms.locfileid: "58570415"
 
 ## <a name="edit-the-incident-name"></a>インシデント名を編集する
 
-Microsoft 365 Defender影響を受けるエンドポイントの数、影響を受けるユーザー、検出ソース、カテゴリなどのアラート属性に基づいて、名前が自動的に割り当てされます。 これにより、インシデントの範囲をすばやく理解できます。 たとえば、複数 *のソースによって報告された複数のエンドポイントに対するマルチステージ インシデント。*
+Microsoft 365 Defender影響を受けるエンドポイントの数、影響を受けるユーザー、検出ソース、カテゴリなどのアラート属性に基づいて、名前が自動的に割り当てされます。 これにより、インシデントの範囲をすばやく把握できます。 たとえば、複数 *のソースによって報告された複数のエンドポイントに対するマルチステージ インシデント。*
 
 インシデント名は、[インシデントの管理] ウィンドウの **[インシデント名** ] フィールド **から編集** できます。
 
@@ -74,7 +74,7 @@ Microsoft 365 Defender影響を受けるエンドポイントの数、影響を�
 
 ## <a name="add-incident-tags"></a>インシデント タグを追加する
 
-たとえば、共通の特性を持つインシデントのグループにフラグを設定する場合など、インシデントにカスタム タグを追加できます。 後で、特定のタグを含むすべてのインシデントに対してインシデント キューをフィルター処理できます。
+共通した特徴を持つインシデントのグループにフラグを設定するなど、インシデントにカスタム タグを追加できます。 こうすることで、特定のタグを含むすべてのインシデントのインシデント キューを後からフィルター処理できます。
 
 入力を開始すると、選択したタグの一覧から選択できます。
 

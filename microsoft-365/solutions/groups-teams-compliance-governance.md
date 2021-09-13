@@ -17,11 +17,11 @@ f1.keywords: NOCSH
 recommendations: false
 description: グループ、グループ、グループMicrosoft 365、およびTeamsのコンプライアンス オプションSharePointします。
 ms.openlocfilehash: 93bf2830d29f21f2239a17b9c2e381c46e85eea1
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394614"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179039"
 ---
 # <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>グループ、グループ、Microsoft 365、およびTeamsのコンプライアンス SharePointオプション
 
@@ -41,7 +41,7 @@ Microsoft 365共同作業時にコンプライアンスを維持するための�
 |情報保護|||
 ||機密情報の損失を防止する|[データ損失防止について](../compliance/dlp-learn-about-dlp.md)|
 ||チャット内の機密情報を保護します。|[データ損失防止と Microsoft Teams](../compliance/dlp-microsoft-teams.md)|
-||組織の機密情報を定義する|[カスタムの機密情報タイプ](../compliance/sensitive-information-type-learn-about.md)|
+||組織の機密情報を定義する|[カスタムの機密情報の種類](../compliance/sensitive-information-type-learn-about.md)|
 |ユーザーのセグメント化|||
 ||ユーザー セグメント間の通信を制限する|[情報障壁](../compliance/information-barriers.md)|
 |データ所在地|||
@@ -104,7 +104,7 @@ DLP ポリシーを使用すると、ユーザー、およびユーザー間でS
 
 プロジェクト コード名など、組織に固有の機密情報がある場合は、独自の機密情報の種類を作成して DLP ポリシーに適用して、グループ、チーム、および SharePoint のコンテンツを保護できます。
 
-- [カスタムの機密情報タイプ](../compliance/sensitive-information-type-learn-about.md)
+- [カスタムの機密情報の種類](../compliance/sensitive-information-type-learn-about.md)
 
 ## <a name="user-segmentation"></a>ユーザーのセグメント化
 

@@ -21,11 +21,11 @@ search.appverid:
 - MET150
 - MOE150
 ms.openlocfilehash: a4ed6e53712ac3aa4b99e991d5fbbbb2bee31b80
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572205"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176095"
 ---
 # <a name="learn-about-communication-compliance-in-microsoft-365"></a>通信コンプライアンスの詳細については、Microsoft 365
 

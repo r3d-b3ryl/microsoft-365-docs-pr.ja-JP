@@ -14,11 +14,11 @@ ms.collection:
 localization_priority: Normal
 description: 公開されたモデルをドキュメント ライブラリに適用するSharePointします。
 ms.openlocfilehash: d277b959fc05318380363e1eaba14343c84af126
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575146"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175752"
 ---
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntexのドキュメント理解モデルを適用する
 

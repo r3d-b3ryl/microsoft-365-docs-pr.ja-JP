@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: f9fbeb7d0fbaee05e86c89749ffc62695e8ff9e9
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563596"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179440"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Defender for Endpoint で高度な機能を構成する
 

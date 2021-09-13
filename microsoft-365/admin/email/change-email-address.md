@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
 description: ドメイン名を購入し、ドメイン名に追加して、tom@fourthcoffee.com のような使いMicrosoft 365。
-ms.openlocfilehash: a24a6b2f488f98d5a372be23ab3397d2854c56cb1b6ac75d9b229baf2365bc72
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 599ca47a9df2dc7b022ff614e3f78b23defdd96e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53832759"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176575"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>カスタム ドメインを使うように電子メール アドレスを変更する
 

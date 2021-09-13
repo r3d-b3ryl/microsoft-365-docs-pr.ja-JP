@@ -14,11 +14,11 @@ ms.collection:
 localization_priority: None
 description: トピック センターのトピックを管理する方法については、Microsoft Viva トピック。
 ms.openlocfilehash: 87e944c232d552f5a0808765a1303750eb840387
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570955"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179584"
 ---
 # <a name="manage-topics-in-the-topic-center-in-microsoft-viva-topics"></a>トピック センターのトピックを管理Microsoft Viva トピック
 

@@ -19,11 +19,11 @@ search.appverid:
 - FRP150
 description: サブスクリプション名の新しいMicrosoft 365を確認します。
 ms.openlocfilehash: f08e3f6395d97dd5f0f54665d247c474db2556b6
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394422"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178735"
 ---
 # <a name="office-365-is-now-microsoft-365"></a>Office 365 は Microsoft 365 になりました
 

@@ -20,17 +20,17 @@ ms.custom:
 search.appverid: MET150
 description: 組織内のユーザーのスクリプトOffice設定を管理する方法について学習します。
 ms.openlocfilehash: 4af5d318552b371e9b7eef5be6750fde2c0b2ace
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394206"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178983"
 ---
 # <a name="manage-office-scripts-settings"></a>Office スクリプトの設定を管理する
 
 [Officeスクリプトを使用](/office/dev/scripts)すると、ユーザーはスクリプトを記録、編集、実行することでタスクを自動化Excel on the web。 Officeスクリプトは、Power Automateと機能し、ユーザーはオンライン (Business) コネクタを使用してブックExcelスクリプトを実行します。 Microsoft 365管理者は、Officeスクリプトの設定を管理Microsoft 365 管理センター。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 - スクリプト設定Office管理するには、グローバル管理者である必要があります。詳細については、「管理者ロール[について」を参照してください](../add-users/about-admin-roles.md)。
 

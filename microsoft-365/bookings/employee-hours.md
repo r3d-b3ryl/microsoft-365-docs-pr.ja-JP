@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 0968717e-b61f-4b06-987c-6c1464541782
 description: Microsoft Bookings で従業員の勤務時間と空き時間を設定します。
 ms.openlocfilehash: 854110217f31b69d54783484aa1800332763af3e
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823650"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178327"
 ---
 # <a name="employee-working-hours-in-microsoft-bookings"></a>Microsoft Bookings の従業員の勤務時間
 

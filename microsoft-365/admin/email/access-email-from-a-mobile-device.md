@@ -18,11 +18,11 @@ ms.assetid: ba780859-0297-4114-a258-2b2809bab9e6
 ROBOTS: NOINDEX, NOFOLLOW
 description: モバイル デバイスからメールにアクセスする方法について学習します。
 ms.openlocfilehash: c003b90e704a51adcaca6d3887d1fc7286f40168
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566372"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176624"
 ---
 # <a name="options-for-accessing-email-from-your-mobile-device"></a>モバイル デバイスからメールにアクセスするためのオプション
 

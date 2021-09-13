@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 6d051666e481bcf74038dc5000ebaadbd142d429
-ms.sourcegitcommit: 095e23ba4181c86a301a25d8c898d25d1befec97
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "58962078"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179456"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting"></a>高度な狩猟で脅威を積極的に探す
 

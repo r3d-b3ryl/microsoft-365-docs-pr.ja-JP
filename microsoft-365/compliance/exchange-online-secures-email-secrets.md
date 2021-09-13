@@ -16,12 +16,12 @@ ms.assetid: 989ba10c-f73f-4efb-ad1b-af3322e5f376
 ms.collection:
 - M365-security-compliance
 description: Microsoft 365 Office 365 のセキュリティ、プライバシー、コンプライアンス情報を提供する Office 365 セキュリティ センターに加えて、Microsoft がデータセンターに保存するシークレットを保護する方法を知りたい場合があります。 分散キー マネージャー (DKM) というテクノロジを使用します。
-ms.openlocfilehash: fe049f600f9ffef496febae2e1c773d562e5693c2ab66fdc37ee377cb66f01e1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2f6e51b7fe9cd75cbd265c3135050a08130f34d8
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795868"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175912"
 ---
 # <a name="how-exchange-online-secures-your-email-secrets"></a>Exchange Online がメールの機密情報をセキュリティで保護する方法
 
@@ -39,13 +39,13 @@ Office 365 のセキュリティ、プライバシー、コンプライアンス
   
 ## <a name="where-does-exchange-online-make-use-of-dkm"></a>DKM をExchange Onlineする場所
 
-Microsoft では、[分散キー マネージャーを](office-365-bitlocker-and-distributed-key-manager-for-encryption.md)使用して、データ センター内のExchange Online暗号化します。 次に例を示します。
+Microsoft では、[分散キー マネージャーを](office-365-bitlocker-and-distributed-key-manager-for-encryption.md)使用して、データ センター内のExchange Online暗号化します。 例:
   
 - 接続されたアカウントの電子メール アカウント資格情報。 接続されたアカウントは、アプリ、Gmail、Yahoo などのHotmailサード パーティのアカウントです。 メール アカウント。
 
 - 顧客キー。 顧客キーで [サービス暗号化を使用している場合](customer-key-overview.md)は [、Azure Key Vault](/azure/key-vault/key-vault-whatis) を使用してシークレットを保護します。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [Office 365 での暗号化](encryption.md)
   

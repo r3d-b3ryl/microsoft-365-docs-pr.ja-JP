@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 44f88ab39ff8869e37bd187519c177a72565a8ba0d6c87bf69078291e3527240
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0d01f33ad92ce5047b9cfda71c8aebcae7be32ee
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53837349"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180335"
 ---
 # <a name="payment-information-for-curacao"></a>キュラソー島の支払い情報
 

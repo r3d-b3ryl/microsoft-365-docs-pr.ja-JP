@@ -16,11 +16,11 @@ search.appverid:
 description: Microsoft コンプライアンス マネージャーがリスクへの対処と、コンプライアンスに対する方針の改善のために実行するアクションに基づいて個人用スコアを計算する方法について説明します。
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 26ef0f73a8da9403c2d1fd8248f828d6faf7f6e3
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569095"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176087"
 ---
 # <a name="compliance-score-calculation"></a>コンプライアンス スコアの計算
 
@@ -114,9 +114,9 @@ ms.locfileid: "58569095"
 |:-----|:-----|
 | 予防および必須 | 27 |
 | 予防および任意 | 9  |
-| 検出および必須 | 3  |
-| 検出および任意 | 1  |
-| 修正および必須 | 3  |
-| 修正および任意 | 1  |
+| 検出および必須 | 3 |
+| 検出および任意 | 1 |
+| 修正および必須 | 3 |
+| 修正および任意 | 1 |
   
 ![コンプライアンス マネージャーのアクション ポイントの値。](../media/compliance-score-action-scoring.png "コンプライアンス マネージャー アクションのポイント値")

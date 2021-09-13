@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: 9680e2ae9dda7ece2f042124f23f5639cf469c00
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58744967"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179240"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-on-macos"></a>MacOS 上のエンドポイント用 Microsoft Defender を使用して、望ましくない可能性のあるアプリケーションを検出およびブロックする
 
@@ -41,7 +41,7 @@ macOS 上の Microsoft Defender for Endpoint の望ましくない可能性の�
 
 これらのアプリケーションは、ネットワークがマルウェアに感染するリスクを高め、マルウェアの感染を特定しにくくし、アプリケーションのクリーンアップで IT リソースを無駄にする可能性があります。
 
-## <a name="how-it-works"></a>メカニズム
+## <a name="how-it-works"></a>しくみ
 
 Microsoft Defender for Endpoint on macOS では、PUA ファイルを検出して報告できます。 ブロック モードで構成すると、PUA ファイルは検疫に移動されます。
 

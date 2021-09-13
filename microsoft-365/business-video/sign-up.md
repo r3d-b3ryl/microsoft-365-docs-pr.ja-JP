@@ -15,17 +15,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: アカウントにサインアップする方法 (以前Microsoft 365 Business Premiumビジネスと呼ばMicrosoft 365します。
-ms.openlocfilehash: c0ff8a92e240c7b00b505fcd6acacff9c802c81ab7a3ee1be9ed62b9bd2e4a12
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 339c0571d1deec988ad706db3aadcd1ca7cc679a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53803532"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180623"
 ---
 # <a name="sign-up-for-microsoft-365-business-premium-subscription"></a>サブスクリプションにサインアップMicrosoft 365 Business Premiumする
 
@@ -47,4 +48,4 @@ ms.locfileid: "53803532"
 8. ユーザー数を入力し、請求プランを選択し、[次へ] を  **選択します**。
 9.  会社の住所を&#39;し、[次へ] を  **入力します**。
 10. クレジット カード情報を入力し、[注文する  **] をクリックします**。 しばらくすると、アカウントが作成されます。
-11. この時点で、[続行]**を選択して** アカウントを設定するか、またはアカウントにサインインしてMicrosoft 365 管理センター後でセットアップを完了できます。
+11. この時点で、[続行]**を選択して** アカウントを設定するか、またはアカウントにサインインし、Microsoft 365 管理センター後でセットアップ <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">を</a>完了できます。

@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Managed Service Providers (MSP) の場合は、サービス プロバイダーで使用する要件の一覧Microsoft 365 Lighthouse。
-ms.openlocfilehash: 2247afb35e3b0e4757d7a6786b3a6a9027491e06
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 610b8cee89576b1112e9b5e3e49d59fa4becd3a3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507808"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179536"
 ---
 # <a name="requirements-for-microsoft-365-lighthouse"></a>ユーザーの要件Microsoft 365 Lighthouse
 
@@ -35,7 +35,7 @@ MSP は、ライトハウスを使用するには、クラウド ソリューシ
 さらに、各 MSP カスタマー テナントは、次の要件を満たして、ライトハウスの対象となる必要があります。 
  
 - MSP の委任された管理者特権 (DAP) 
-- 少なくとも 1 つのMicrosoft 365 Business Premiumライセンス 
+- 少なくとも 1 つのMicrosoft 365 Business PremiumまたはMicrosoft 365 E3ライセンス 
 - ライセンスユーザー数が 500 人未満  
 
 ## <a name="requirements-for-enablingdevice-management"></a>デバイス管理を有効にする要件   
@@ -47,7 +47,7 @@ MSP は、ライトハウスを使用するには、クラウド ソリューシ
 
 ## <a name="requirements-for-enabling-usermanagement"></a>ユーザー管理を有効にするための要件 
 
-リスクの高いユーザー、多要素認証、パスワードのリセットなどのユーザー管理ページのレポートに顧客データを表示するには、顧客テナントが Azure Active Directory プレミアム P1 以降のライセンスを持っている必要があります。 Azure AD Premium P1は、Microsoft 365 Business Premium。   
+リスクの高いユーザー、多要素認証、パスワードのリセットなどのユーザー管理ページのレポートに顧客データを表示するには、顧客テナントが Azure Active Directory プレミアム P1 以降のライセンスを持っている必要があります。 Azure AD Premium P1は、Microsoft 365 Business PremiumとMicrosoft 365 E3。   
 
 ## <a name="requirements-for-enablingthreat-management"></a>脅威管理を有効にするための要件 
 

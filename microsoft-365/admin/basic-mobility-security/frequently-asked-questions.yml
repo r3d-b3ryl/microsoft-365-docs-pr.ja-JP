@@ -19,12 +19,12 @@ metadata:
   search.appverid:
   - MET150
   description: Basic Mobility and Security に関するよく寄せられる質問。
-  ms.openlocfilehash: f899aecd313ffd4fbc1d94d44f2a1b9c41780984a9c8eb8383a51da661d80be8
-  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+  ms.openlocfilehash: 4d57b1fce05329b294aade2806400e343f7f6ad7
+  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 08/05/2021
-  ms.locfileid: "53826761"
+  ms.lasthandoff: 09/12/2021
+  ms.locfileid: "59176872"
 title: 基本的なモビリティとセキュリティに関するよく寄せられる質問 (FAQ)
 summary: この記事では、モバイル デバイスの管理とセキュリティをサポートする機能である Basic Mobility and Security に関してよく寄せられる質問をMicrosoft 365。 質問に対する回答が見つからなかった場合は、ページにコメントを残して、この記事への質問の追加を検討してください。
 sections:

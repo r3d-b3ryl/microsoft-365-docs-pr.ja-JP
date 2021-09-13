@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: 詳細については、「Bookings」機能にアクセスする方法についてMicrosoft 365。
 ms.openlocfilehash: 151534c2ba2effc265c8d836240a81ce88a17403
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823542"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178312"
 ---
 # <a name="get-access-to-microsoft-bookings"></a>Microsoft Bookings へのアクセス
 

@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 description: 21Vianet が運用する 21Vianet Office 365 Azure Information Protection (AIP) の詳細と、中国の顧客向け構成方法について説明します。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 4ccd3a6e86a39931cd30335825adcc0fefe660cc54e0334a62d95ac58b9d4e3f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8b85ae43df31bb1947b841d616cc83c3a0b614e4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53822381"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178575"
 ---
 # <a name="azure-information-protection-support-for-office-365-operated-by-21vianet"></a>21Vianet がOffice 365 Azure Information Protection のサポート
 
@@ -137,7 +137,7 @@ DNS プロバイダーにログインし、ドメインの DNS 設定に移動�
 
 Microsoft ダウンロード センターから AIP 統合ラベル 付けクライアントを [ダウンロードしてインストールします](https://www.microsoft.com/download/details.aspx?id=53018)。
 
-詳細については、以下を参照してください。
+詳しくは、次のトピックを参照してください。
 
 - [AIP ドキュメント](/azure/information-protection/)
 - [AIP バージョンの履歴とサポート ポリシー](/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)
@@ -207,7 +207,7 @@ AIP オンプレミス スキャナーをインストールして、ネットワ
       Set-AIPAuthentication -AppId <ID of the registered app> -AppSecret <client secret sting> -TenantId <your tenant ID> -DelegatedUser <Azure AD account>
       ```
 
-      次に例を示します。
+      例:
 
       ```PowerShell
       $pscreds = Get-Credential CONTOSO\scanner
@@ -217,7 +217,7 @@ AIP オンプレミス スキャナーをインストールして、ネットワ
 
     これで、スキャナーに Azure サーバーに対する認証トークンがAD。 このトークンは、Azure アプリの Web アプリ **/API** クライアント シークレットの構成に従って、1 年、2 年、または 2 年間有効AD。 トークンの有効期限が切れたら、この手順を繰り返す必要があります。
 
-1. [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/set-aipscannerconfiguration)コマンドレットを実行して、スキャナーをオフライン モードで機能に設定します。 次のコマンドを実行します。
+1. [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/set-aipscannerconfiguration)コマンドレットを実行して、スキャナーをオフライン モードで機能に設定します。 次を実行します: 
 
     ```powershell
     Set-AIPScannerConfiguration -OnlineConfiguration Off
@@ -225,7 +225,7 @@ AIP オンプレミス スキャナーをインストールして、ネットワ
 
 1. [Set-AIPScannerContentScanJob](/powershell/module/azureinformationprotection/set-aipscannercontentscanjob)コマンドレットを実行して、既定のコンテンツ スキャン ジョブを作成します。
 
-    **Set-AIPScannerContentScanJob** コマンドレットで必要なパラメーターは、強制 **のみです**。 ただし、この時点でコンテンツ スキャン ジョブの他の設定を定義することもできます。 次に例を示します。
+    **Set-AIPScannerContentScanJob** コマンドレットで必要なパラメーターは、強制 **のみです**。 ただし、この時点でコンテンツ スキャン ジョブの他の設定を定義することもできます。 例:
 
     ```powershell
     Set-AIPScannerContentScanJob -Schedule Manual -DiscoverInformationTypes PolicyOnly -Enforce Off -DefaultLabelType PolicyDefault -RelabelFiles Off -PreserveFileDetails On -IncludeFileTypes '' -ExcludeFileTypes '.msg,.tmp' -DefaultOwner <account running the scanner>
@@ -281,7 +281,7 @@ AIP オンプレミス スキャナーをインストールして、ネットワ
 | [Set-AIPScannerRepository](/powershell/module/azureinformationprotection/set-aipscannerrepository) | コンテンツ スキャン ジョブの既存のリポジトリの設定を定義します。 |
 | | |
 
-詳細については、以下を参照してください。
+詳しくは、次のトピックを参照してください。
 
 - [Azure Information Protection 統合ラベル スキャナーとは](/azure/information-protection/deploy-aip-scanner)
 - [Azure Information Protection (AIP) 統合ラベル スキャナーの構成とインストール](/azure/information-protection/deploy-aip-scanner-configure-install?tabs=powershell-only)

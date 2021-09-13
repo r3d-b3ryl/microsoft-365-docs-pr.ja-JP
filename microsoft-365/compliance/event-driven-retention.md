@@ -21,11 +21,11 @@ ms.custom:
 - seo-marvel-jun2020
 description: 通常、レコード管理ソリューションの一部として、特定したイベントに基づいて保持期間を開始するように保持ラベルを構成することができます。
 ms.openlocfilehash: e5be01ed75468d97c0cadf229512bce2f90efea5
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567050"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175927"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>イベントの発生時に保持を開始する
 

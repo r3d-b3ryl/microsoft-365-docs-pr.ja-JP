@@ -21,11 +21,11 @@ search.appverid:
 - MOE150
 description: 組織でYammer使用されているグループの数と、そのアクティビティYammerグループアクティビティ レポートを取得します。
 ms.openlocfilehash: 18ed4519a0f7859d8084f2144a58f4a726db530a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564748"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177176"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-groups-activity-report"></a>Microsoft 365管理センターのレポート - Yammerアクティビティ レポート
 
@@ -54,7 +54,7 @@ Microsoft 365 の [**レポート**] ダッシュボードには、組織内で�
 |グループ名  <br/> |グループの名前を指定します。 <br/> |
 |グループ管理者  <br/> |グループ管理者または所有者の名前。  <br/> |
 |Deleted  <br/> |削除されたグループYammerします。 削除されたがレポート期間中にアクティビティがあるグループは、グリッドでこのフラグが true に設定されることで示されます。  <br/> |
-|種類  <br/> |パブリックまたはプライベートのグループの種類。 <br/> |
+|型  <br/> |パブリックまたはプライベートのグループの種類。 <br/> |
 |ネットワークに接続Office 365  <br/> |ユーザー グループがYammerグループであるかどうかをMicrosoft 365します。 <br/> |
 |最終アクティビティ日 (UTC)  <br/> | メッセージがグループによって読み取り、投稿、または気に入った最新の日付。  <br/> |
 |メンバー  <br/> | グループ内のメンバーの数。  <br/> |

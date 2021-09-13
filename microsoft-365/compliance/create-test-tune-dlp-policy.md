@@ -20,11 +20,11 @@ ms.custom:
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: この記事では、組織のニーズに応じて DLP ポリシーを作成、テスト、調整する方法について学習します。
 ms.openlocfilehash: 14ee1dbaac2b250e55957023580735676e2ab724
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571135"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176031"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>DLP ポリシーの作成、テスト、調整
 

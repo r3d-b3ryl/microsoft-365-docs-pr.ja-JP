@@ -18,11 +18,11 @@ ms.topic: article
 ms.date: 01/14/2020
 ms.technology: mde
 ms.openlocfilehash: 7795f4d7f02a9b60e0bbd58fb97608733385dc9c
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563584"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179455"
 ---
 # <a name="understand-the-advanced-hunting-schema-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の高度なハンティング スキーマを理解する
 
@@ -35,7 +35,7 @@ ms.locfileid: "58563584"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-高度 [な検索スキーマ](advanced-hunting-overview.md) は、イベント情報またはデバイスや他のエンティティに関する情報を提供する複数のテーブルで構成されます。 複数のテーブルにまたがるクエリを効果的に構築するには、高度な捜索スキーマのテーブルと列を理解する必要があります。
+高度 [な検索スキーマ](advanced-hunting-overview.md) は、イベント情報またはデバイスや他のエンティティに関する情報を提供する複数のテーブルで構成されます。 複数のテーブルにまたがるクエリを効果的にビルドするには、高度な追求スキーマのテーブルと列を理解する必要があります。
 
 ## <a name="get-schema-information-in-the-security-center"></a>セキュリティ センターでスキーマ情報を取得する
 

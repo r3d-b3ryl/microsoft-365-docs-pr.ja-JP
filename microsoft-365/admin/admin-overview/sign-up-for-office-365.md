@@ -26,12 +26,12 @@ search.appverid:
 ROBOTS: NOINDEX
 description: ユーザーのサインアップ プロセスを実行する前に知る必要があるOffice 365。
 ms.date: 03/17/2021
-ms.openlocfilehash: 00745f4d936c0ee7f0a16270720fc87cb5dab2b179de4ce48b7628764152ab6a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8c9598215b5f5da7b4a62ca89bbc0fa5a94fe12d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827109"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176927"
 ---
 # <a name="how-to-sign-up---admin-help"></a>サインアップする方法 - 管理者ヘルプ
 
@@ -59,7 +59,7 @@ ms.locfileid: "53827109"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
 
-このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](../../business-video/index.yml)」をご覧ください。
+このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](../../business-video/index.yml)」をご覧ください。
 
 プランの選択に関するヘルプが必要ですか? 営業コンサルタントが質問に答えます。 [すべての製品 [を比較する](https://products.office.com/compare-all-microsoft-office-products?tab=2) ] に移動し、ページの左側に表示されている連絡先サポート オプションのいずれかを選択します。
   

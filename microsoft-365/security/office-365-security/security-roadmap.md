@@ -20,11 +20,11 @@ description: セキュリティ機能を実装してセキュリティ環境を�
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: dc401f20a7f7425e619fc057dbe481341db993ff
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58503229"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179135"
 ---
 # <a name="security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>セキュリティロードマップ - 最初の 30 日間、90 日間、それ以降の最優先事項
 

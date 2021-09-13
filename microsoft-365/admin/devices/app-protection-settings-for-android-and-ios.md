@@ -26,11 +26,11 @@ search.appverid:
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: アプリ管理ポリシーを作成、編集、または削除し、Android デバイスまたは iOS デバイス上の作業ファイルを保護する方法について説明します。
 ms.openlocfilehash: 1ab7c57e1a9da1a68c07535c2550f0762f7c8141
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564407"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176727"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>Android または iOS デバイスのアプリ保護設定を設定する
 
@@ -83,7 +83,7 @@ ms.locfileid: "58564407"
 次の設定は、ユーザーのデバイスが紛失したり盗難された場合に、作業ファイルを保護するために使用できます。
 
 
-|設定  <br/> |説明  <br/> |
+|Setting  <br/> |説明  <br/> |
 |:-----|:-----|
 |この日数後、非アクティブなデバイスから作業ファイルを削除する  <br/> |ここで指定した日数のデバイスを使用しない場合、デバイスに保存されている作業ファイルは自動的に削除されます。  <br/> |
 |ユーザーにすべての作業ファイルを OneDrive for Business に強制的に保存させる  <br/> |この設定が **[オン] の場合**、作業ファイルに使用できる保存場所は、OneDrive for Business。  <br/> |
@@ -94,7 +94,7 @@ ms.locfileid: "58564407"
 次の設定は、ユーザーが Office 作業ファイルにアクセスする方法を管理するために使用できます。
 
 
-|設定  <br/> |説明  <br/> |
+|Setting  <br/> |説明  <br/> |
 |:-----|:-----|
 |Office アプリにアクセスするのに暗証番号 (PIN) または指紋認証を使用する必要がある  <br/> |この設定が **[オン] の** 場合、ユーザーはモバイル デバイスでアプリを使用する前に、ユーザー名とパスワードに加えて、別の形式の認証Office必要があります。<br/> |
 |ログインに指定の回数失敗した場合に PIN をリセットする  <br/> |承認されていないユーザーが PIN をランダムに推測するのを防ぐため、指定した回数、エントリを間違うと、PIN がリセットされます。  <br/> |

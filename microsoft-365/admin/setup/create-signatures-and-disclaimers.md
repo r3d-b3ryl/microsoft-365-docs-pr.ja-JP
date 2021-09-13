@@ -27,11 +27,11 @@ search.appverid:
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: 組織を入力または退出するすべての電子メール メッセージに関する法的免責事項や開示ステートメントを含む電子メール署名を管理します。
 ms.openlocfilehash: 47087f2d09428214237dba226e680aa3c332625d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567170"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176263"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>組織全体の署名と免責事項を作成する
 

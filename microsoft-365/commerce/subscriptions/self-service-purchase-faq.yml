@@ -20,12 +20,12 @@ metadata:
   - MET150
   description: セルフサービス購入についてよく寄せられる質問への回答を紹介します。
   ms.date: 09/15/2020
-  ms.openlocfilehash: 9cca88d8eb2d943d8d8d5377f4223e5a69251d6aa9048d8e0ab721373605cd4d
-  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+  ms.openlocfilehash: 7dcf16ff51854b595f61c2797a62632a3003b7c9
+  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 08/05/2021
-  ms.locfileid: "53892641"
+  ms.lasthandoff: 09/12/2021
+  ms.locfileid: "59180143"
 title: セルフサービス購入に関するよくあるご質問
 summary: >
   セルフサービス購入により、ユーザーは新しいテクノロジを試して、最終的により大規模な組織に利益をもたらすソリューションを開発する機会が得られます。 中央調達と IT チームは、<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>を介してセルフサービス購入ソリューションを購入して展開するすべてのユーザーを表示できます。 管理者は、PowerShell を使用して製品ごとにセルフサービス購入を無効にすることができます。 詳細については、「[MSCommerce PowerShell モジュールに AllowSelfServicePurchase を使用する](allowselfservicepurchase-powershell.md)」を参照してください。

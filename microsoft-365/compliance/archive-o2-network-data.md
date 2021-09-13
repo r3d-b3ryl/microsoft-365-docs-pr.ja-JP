@@ -13,11 +13,11 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、TeleMessage コネクタをセットアップして、SMS および MMS データを O2 モバイル ネットワークからインポートおよびアーカイブMicrosoft 365。 これにより、Microsoft 365 のサード パーティデータ ソースからデータをアーカイブし、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティ データを管理できます。
 ms.openlocfilehash: 01e47cbd3cafe049bd444a50f1ed39c2b79701a1
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571473"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180063"
 ---
 # <a name="set-up-a-connector-to-archive-o2-network-data"></a>O2 ネットワーク データをアーカイブするコネクタをセットアップする
 

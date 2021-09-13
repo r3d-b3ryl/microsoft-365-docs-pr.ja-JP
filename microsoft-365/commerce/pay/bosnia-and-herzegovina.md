@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c3ef97f98eb4ab0aea7964391bb84b2451315b6002fd979d7ac8caeb7d2c9d2e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 63c12d4174e0ed3ad031735fd73e17f4625c5671
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53796948"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180424"
 ---
 # <a name="payment-information-for-bosnia-and-herzegovina"></a>ボスニア ヘルツェゴビナのお支払い情報
 

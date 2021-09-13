@@ -24,11 +24,11 @@ search.appverid:
 ms.assetid: 55c96b32-e086-4c9e-948b-a018b44510cb
 description: セキュリティ グループの作成、編集、削除について説明します。
 ms.openlocfilehash: c2056996eb3954777654c5ea829379ecf005276a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566306"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176519"
 ---
 # <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターでセキュリティ グループを作成、編集、削除する
 

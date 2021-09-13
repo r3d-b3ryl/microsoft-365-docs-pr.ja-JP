@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: adb3283d81241ad0fc4a544044153554511fc40bb88acb7a52ff4e29b5cc0b45
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b1b7d37a00a680c9f483bbe280336581fadae796
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53852489"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180263"
 ---
 # <a name="payment-information-for-estonia"></a>エストニアの支払い情報
 

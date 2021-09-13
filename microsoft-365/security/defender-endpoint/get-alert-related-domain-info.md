@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 59acbb6bc911a61f0632dd1fe6614fcdce055efd68cc9dfd538128f4d0f40bba
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8e23a65620bf0eba3a98e6b2ddc14ac02eaf5d80
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853957"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177639"
 ---
 # <a name="get-alert-related-domain-information-api"></a>アラート関連のドメイン情報 API を取得する
 
@@ -50,7 +50,7 @@ ms.locfileid: "53853957"
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
 アプリケーション|URL。Read.All|'URL の読み取り'
-委任 (職場または学校のアカウント)|URL。Read.All|'URL の読み取り'
+委任 (職場または学校アカウント)|URL。Read.All|'URL の読み取り'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
@@ -66,7 +66,7 @@ GET /api/alerts/{id}/domains
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**
 

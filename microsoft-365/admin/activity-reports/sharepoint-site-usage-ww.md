@@ -23,11 +23,11 @@ search.appverid:
 - MOE150
 description: ユーザーが SharePoint SharePoint サイトに保存するファイルの数、アクティブに使用されるファイルの数、および使用されたストレージの合計を確認するには、SharePoint サイト使用状況レポートを取得します。
 ms.openlocfilehash: a55f76fe1ca53129af27647b42ca44ce267a626c
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564794"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177192"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a>Microsoft 365管理センターのレポート - SharePoint使用状況
 

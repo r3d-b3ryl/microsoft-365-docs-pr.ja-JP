@@ -22,11 +22,11 @@ search.appverid:
 - MOE150
 description: 1 つの場所からテナントを管理する機能を提供するテナント スイッチアビューとマルチテナント ビューを使用する方法について学習します。
 ms.openlocfilehash: 6dbad8dbfaa84d490983cd5eccaf5ecf5d6979e5
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58393438"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178744"
 ---
 # <a name="multi-tenant-management"></a>マルチテナント管理
 

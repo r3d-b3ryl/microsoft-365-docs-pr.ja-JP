@@ -17,13 +17,13 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.openlocfilehash: a7b8214165e80347d6200c755db477b81e430630
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58863703"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179208"
 ---
-# <a name="specify-the-cloud-protection-level"></a>クラウド保護レベルの指定
+# <a name="specify-the-cloud-protection-level"></a>クラウド保護レベルを指定する
 
 **適用対象:**
 
@@ -77,7 +77,7 @@ ms.locfileid: "58863703"
     - **高 + ブロック レベルは** 、追加の保護対策を適用します (クライアントのパフォーマンスに影響を与え、誤検知の可能性が高い可能性があります)。
     - **ゼロトレランス ブロック レベルは、** 不明なすべての実行可能ファイルをブロックします。
 
-6. **[OK]** をクリックします。
+6. **[OK]** を選択します。
 
 7. 更新されたグループ ポリシー オブジェクトを展開します。 「 [グループ ポリシー管理コンソール」を参照してください。](/windows/win32/srvnodes/group-policy)
 

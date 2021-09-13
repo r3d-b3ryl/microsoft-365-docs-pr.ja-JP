@@ -23,11 +23,11 @@ search.appverid:
 - MOE150
 description: '[ゲスト ユーザー] リストに[ゲスト ユーザー] リストが表示される方法Microsoft 365 管理センター。'
 ms.openlocfilehash: e5911e6d8a8baa723d70904abfc1af49e43d5507
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58393378"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177144"
 ---
 # <a name="guest-users-in-microsoft-365-admin-center"></a>ユーザーのゲストMicrosoft 365 管理センター
 
@@ -36,7 +36,7 @@ ms.locfileid: "58393378"
 
 ゲスト ユーザーを表示するには、左側 <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">Microsoft 365 管理センターで</a>[ユーザー] を展開し、[ゲスト ユーザー]**を選択します**。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 このタスクを実行するには、グローバル管理者である必要があります。
 

@@ -20,11 +20,11 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.openlocfilehash: 8c808bd8c742666c407a59cc6a3bc654d96257b3
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569911"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177463"
 ---
 # <a name="microsoft-defender-for-endpoint-in-microsoft-365-defender"></a>Microsoft Defender for Endpoint in <DICT__Microsoft⚐365⚐Defender>Microsoft 365 Defender</DICT__Microsoft⚐365⚐Defender>
 

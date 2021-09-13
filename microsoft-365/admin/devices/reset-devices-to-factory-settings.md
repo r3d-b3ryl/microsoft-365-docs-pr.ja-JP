@@ -25,11 +25,11 @@ search.appverid:
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
 description: ビジネス向け Microsoft 365を使用して、管理Windows 10デバイスを工場出荷時の状態にリセットし、購入時に元の設定に戻す方法について学習します。
 ms.openlocfilehash: 29d5b8758ef7d86c7ac283460d0a1a87bffaf5f3
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360539"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176640"
 ---
 # <a name="reset-windows-10-devices-to-their-factory-settings"></a>Windows 10 デバイスを出荷時の設定にリセットする
 

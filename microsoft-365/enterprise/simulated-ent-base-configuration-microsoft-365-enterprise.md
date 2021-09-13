@@ -19,11 +19,11 @@ ms.custom:
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: このテスト ラボ ガイドを使用して、エンタープライズ向けシミュレーションエンタープライズ テストMicrosoft 365作成します。
 ms.openlocfilehash: e3576c5d7e1a00069dd5dd46d1b1e6063da217bf
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575254"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179704"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>シミュレートされたエンタープライズ基本構成
 
@@ -414,6 +414,6 @@ Azure portal から、CORP\User1 アカウントを使用して CLIENT1 に接�
 
 [Microsoft 365 Enterprise のテスト ラボ ガイド](m365-enterprise-test-lab-guides.md)
 
-[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
+[Microsoft 365 for Enterprise の概要](microsoft-365-overview.md)
 
 [Microsoft 365 for enterprise のドキュメント](/microsoft-365-enterprise/)

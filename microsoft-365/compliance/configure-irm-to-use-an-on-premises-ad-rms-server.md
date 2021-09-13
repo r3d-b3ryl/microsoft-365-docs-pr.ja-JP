@@ -18,11 +18,11 @@ ms.collection:
 description: Active Directory Rights Management Service (EXCHANGE ONLINE RMS) サーバーを使用ADする方法について説明します。
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 64d89d52b4e835c81ed1e2c8bbd54eaaae6f1823
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572061"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176071"
 ---
 # <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>IRM を設定して、オンプレミスの AD RMS サーバーを使用する
 

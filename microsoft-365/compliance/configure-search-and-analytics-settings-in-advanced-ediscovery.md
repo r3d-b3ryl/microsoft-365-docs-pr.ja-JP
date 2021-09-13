@@ -18,11 +18,11 @@ ms.assetid: ''
 ms.custom: seo-marvel-mar2020
 description: ケースAdvanced eDiscoveryすべてのレビュー セットに適用されるユーザー設定を構成します。 これには、分析と光学式文字認識の設定が含まれます。
 ms.openlocfilehash: 4d46ca4dfb5897c7b262858ab7c955221016e3c7
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565418"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176056"
 ---
 # <a name="configure-search-and-analytics-settings-in-advanced-ediscovery"></a>[検索と分析] の設定を構成Advanced eDiscovery
 

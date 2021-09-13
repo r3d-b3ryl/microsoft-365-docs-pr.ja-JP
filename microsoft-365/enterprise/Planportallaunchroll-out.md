@@ -18,11 +18,11 @@ search.appverid:
 - MET150
 description: この記事では、SharePoint Online でポータルの起動を計画する方法と、正常に起動するために実行する手順について説明します。
 ms.openlocfilehash: 82c4db0ccf544c66746c2a8b01e9b932a7f64564
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58552878"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179784"
 ---
 # <a name="planning-your-portal-launch-roll-out-plan-in-sharepoint-online"></a>オンラインでポータルの起動ロールアウト計画をSharePointする
 

@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: d4ed33a26bcc7583146d810db7625ed3164d7544
-ms.sourcegitcommit: a839a63c2516678139796e31762916e0162b4181
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58408080"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179199"
 ---
 # <a name="stop-and-quarantine-file-api"></a>ファイル API の停止と検疫
 
@@ -62,7 +62,7 @@ ms.locfileid: "58408080"
 アプリケーション|Machine.StopAndQuarantine|'Stop and Quarantine'
 アプリケーション|Machine.Read.All|'すべてのコンピューター プロファイルを読み取る'
 アプリケーション|Machine.ReadWrite.All|'すべてのコンピューター情報の読み取りと書き込み'
-委任 (職場または学校のアカウント)|Machine.StopAndQuarantine|'Stop and Quarantine'
+委任 (職場または学校アカウント)|Machine.StopAndQuarantine|'Stop and Quarantine'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:

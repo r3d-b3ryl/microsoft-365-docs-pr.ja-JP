@@ -18,11 +18,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: 441e7a598e0487759dc5e48dab3e74a7b3b1ead6
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507580"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179376"
 ---
 # <a name="configure-defender-for-endpoint-on-android-features"></a>Android の機能でエンドポイント用 Defender を構成する
 

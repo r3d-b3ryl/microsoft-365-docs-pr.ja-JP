@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: 'ビジネス アカウントに関連付けられたメール エイリアスと呼ばれる複数の電子メール アドレスをMicrosoft 365する方法について説明します。 '
-ms.openlocfilehash: cf418eb506b85fec60b11c481101335f04e80d8c0089f1b6a63fa71582880ab8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ab1a7b846bb35cce4656a3a5edf941961f5398c2
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53832777"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176584"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>ユーザーに別のメール エイリアスを追加する
   
@@ -47,7 +47,7 @@ ms.locfileid: "53832777"
 
 これを行うには [、管理者のアクセス許可](../add-users/about-admin-roles.md) が必要です。 
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> の順に選択します。
 
 2. [アクティブ な **ユーザー] ページ** で、[ユーザー名とメール> **管理する] のユーザーを選択します**。 ユーザーにライセンスが割り当てられていない場合、このオプションは表示しません。 
     

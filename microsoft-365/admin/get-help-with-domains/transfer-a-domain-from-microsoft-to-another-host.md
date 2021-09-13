@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: 'Microsoft から別のレジストラーにドメインを転送する手順については、こちらを参照してください。 '
-ms.openlocfilehash: dfe774644295083c606ad52371ca0e8701fa773f5ff737f40fbcdf16e98077ea
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f34e9733ab53c8bdc6f4432c96e6232ecc26ee06
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53825681"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176399"
 ---
 # <a name="transfer-a-domain-from-microsoft-to-another-host"></a>Microsoft から別のホストにドメインを転送する
 

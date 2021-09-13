@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: 8a5a4bbc-667a-4cac-8769-d8ac9015db4c
 description: ドイツのOffice 365を学ぶ。
-ms.openlocfilehash: 4b266a0bce35da5abf73c85fb4028ac3650bd85582d4b7479a78359bbc89a3e0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e08d3b72e8a87fa9cd5e5a1cc25d8178e4bd2183
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827121"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176928"
 ---
 # <a name="learn-about-office-365-germany"></a>Office 365 Germany の詳細
 

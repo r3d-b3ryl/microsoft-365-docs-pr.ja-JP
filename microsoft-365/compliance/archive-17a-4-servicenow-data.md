@@ -13,11 +13,11 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 17a-4 ServiceNow DataParser コネクタをセットアップして使用して、ServiceNow データをインポートおよびアーカイブする方法についてMicrosoft 365。
 ms.openlocfilehash: e2727a0146d5519310a9707e0d59a7560984305f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574402"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178048"
 ---
 # <a name="set-up-a-connector-to-archive-data-from-servicenow"></a>ServiceNow からデータをアーカイブするコネクタをセットアップする
 

@@ -2,7 +2,7 @@
 title: Linux 上のエンドポイント用 Microsoft Defender の基本設定を設定する
 ms.reviewer: ''
 description: エンタープライズで Microsoft Defender for Endpoint on Linux を構成する方法について説明します。
-keywords: microsoft、 defender、 Microsoft Defender for Endpoint, Linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
+keywords: Microsoft、Defender、Microsoft Defender for Endpoint、Linux、インストール、展開、アンインストール、puppet、ansible、linux、redhat、ubuntu、debian、sles、suse、centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5dca5af9c4c4cd0ca32281311a0a0dc6625b731ed8ba92fb42c95d0e43ea1367
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b8fff1c53575b7de7d3c627c5bc79d00f97d6e39
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53811196"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179296"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 上のエンドポイント用 Microsoft Defender の基本設定を設定する
 
@@ -34,7 +34,7 @@ ms.locfileid: "53811196"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 > [!IMPORTANT]
 > このトピックでは、エンタープライズ環境で Defender for Endpoint on Linux の基本設定を設定する方法について説明します。 コマンド ラインからデバイスで製品を構成する場合は、「Resources」を参照 [してください](linux-resources.md#configure-from-the-command-line)。
@@ -61,7 +61,7 @@ ms.locfileid: "53811196"
 
 |説明|値|
 |---|---|
-|**キー**|antivirusEngine|
+|**Key**|antivirusEngine|
 |**データ型**|辞書 (入れ子になった基本設定)|
 |**コメント**|辞書の内容の説明については、以下のセクションを参照してください。|
 |
@@ -76,7 +76,7 @@ ms.locfileid: "53811196"
 
 |説明|値|
 |---|---|
-|**キー**|enableRealTimeProtection|
+|**Key**|enableRealTimeProtection|
 |**データ型**|Boolean|
 |**指定可能な値**|true (既定) <p> false|
 |
@@ -97,7 +97,7 @@ ms.locfileid: "53811196"
 
 |説明|値|
 |---|---|
-|**キー**|passiveMode|
+|**Key**|passiveMode|
 |**データ型**|Boolean|
 |**指定可能な値**|false (既定) <p> true|
 |**コメント**|Defender for Endpoint version 100.67.60 以上で使用できます。|
@@ -113,7 +113,7 @@ ms.locfileid: "53811196"
 
 |説明|値|
 |---|---|
-|**キー**|exclusionsMergePolicy|
+|**Key**|exclusionsMergePolicy|
 |**データ型**|String|
 |**指定可能な値**|merge (既定) <p> admin_only|
 |**コメント**|Defender for Endpoint version 100.83.73 以上で使用できます。|
@@ -130,7 +130,7 @@ ms.locfileid: "53811196"
 
 |説明|値|
 |---|---|
-|**キー**|除外|
+|**Key**|除外|
 |**データ型**|辞書 (入れ子になった基本設定)|
 |**コメント**|辞書の内容の説明については、以下のセクションを参照してください。|
 |
@@ -145,7 +145,7 @@ ms.locfileid: "53811196"
 
 |説明|値|
 |---|---|
-|**キー**|$type|
+|**Key**|$type|
 |**データ型**|String|
 |**指定可能な値**|excludedPath <p> excludedFileExtension <p> excludedFileName|
 |
@@ -160,7 +160,7 @@ ms.locfileid: "53811196"
 
 |説明|値|
 |---|---|
-|**キー**|path|
+|**Key**|path|
 |**データ型**|String|
 |**指定可能な値**|有効なパス|
 |**コメント**|適用 *できるのは、$type**が excludedPath である場合のみです。*|
@@ -176,7 +176,7 @@ ms.locfileid: "53811196"
 
 |説明|値|
 |---|---|
-|**キー**|isDirectory|
+|**Key**|isDirectory|
 |**データ型**|Boolean|
 |**指定可能な値**|false (既定) <p> true|
 |**コメント**|適用 *できるのは、$type**が excludedPath である場合のみです。*|
@@ -192,7 +192,7 @@ ms.locfileid: "53811196"
 
 |説明|値|
 |---|---|
-|**キー**|拡張機能|
+|**Key**|拡張機能|
 |**データ型**|String|
 |**指定可能な値**|有効なファイル拡張子|
 |**コメント**|適用 *できるのは* 、$type FileExtension が *除外されている場合のみです。*|
@@ -208,7 +208,7 @@ ms.locfileid: "53811196"
 
 |説明|値|
 |---|---|
-|**キー**|name|
+|**Key**|name|
 |**データ型**|String|
 |**指定可能な値**|任意の文字列|
 |**コメント**|ファイルが excludedFileName *$type**場合にのみ適用されます。*|
@@ -224,7 +224,7 @@ ms.locfileid: "53811196"
 
 |説明|値|
 |---|---|
-|**キー**|allowedThreats|
+|**Key**|allowedThreats|
 |**データ型**|文字列の配列|
 |
 
@@ -238,7 +238,7 @@ ms.locfileid: "53811196"
 
 |説明|値|
 |---|---|
-|**キー**|disallowedThreatActions|
+|**Key**|disallowedThreatActions|
 |**データ型**|文字列の配列|
 |**指定可能な値**|allow (ユーザーによる脅威の許可を制限する) <p> 復元 (検疫からの脅威の復元をユーザーに制限する)|
 |**コメント**|Defender for Endpoint version 100.83.73 以上で使用できます。|
@@ -254,7 +254,7 @@ ms.locfileid: "53811196"
 
 |説明|値|
 |---|---|
-|**キー**|threatTypeSettings|
+|**Key**|threatTypeSettings|
 |**データ型**|辞書 (入れ子になった基本設定)|
 |**コメント**|辞書の内容の説明については、以下のセクションを参照してください。|
 |
@@ -269,7 +269,7 @@ ms.locfileid: "53811196"
 
 |説明|値|
 |---|---|
-|**キー**|キー|
+|**Key**|キー|
 |**データ型**|String|
 |**指定可能な値**|potentially_unwanted_application <p> archive_bomb|
 |
@@ -288,7 +288,7 @@ ms.locfileid: "53811196"
 
 |説明|値|
 |---|---|
-|**キー**|値|
+|**Key**|値|
 |**データ型**|String|
 |**指定可能な値**|監査 (既定) <p> block <p> off|
 |
@@ -303,7 +303,7 @@ ms.locfileid: "53811196"
 
 |説明|値|
 |---|---|
-|**キー**|threatTypeSettingsMergePolicy|
+|**Key**|threatTypeSettingsMergePolicy|
 |**データ型**|String|
 |**指定可能な値**|merge (既定) <p> admin_only|
 |**コメント**|Defender for Endpoint version 100.83.73 以上で使用できます。|
@@ -319,7 +319,7 @@ ms.locfileid: "53811196"
 
 |説明|値|
 |---|---|
-|**キー**|scanResultsRetentionDays|
+|**Key**|scanResultsRetentionDays|
 |**データ型**|String|
 |**指定可能な値**|90 (既定)。 使用できる値は、1 日から 180 日です。|
 |**コメント**|Defender for Endpoint version 101.04.76 以上で使用できます。|
@@ -335,7 +335,7 @@ ms.locfileid: "53811196"
 
 |説明|値|
 |---|---|
-|**キー**|scanHistoryMaximumItems|
+|**Key**|scanHistoryMaximumItems|
 |**データ型**|String|
 |**指定可能な値**|10000 (既定値)。 許可される値は、5000 アイテムから 15,000 アイテムまでです。|
 |**コメント**|Defender for Endpoint version 101.04.76 以上で使用できます。|
@@ -351,7 +351,7 @@ ms.locfileid: "53811196"
 
 |説明|値|
 |---|---|
-|**キー**|cloudService|
+|**Key**|cloudService|
 |**データ型**|辞書 (入れ子になった基本設定)|
 |**コメント**|辞書の内容の説明については、以下のセクションを参照してください。|
 |
@@ -366,7 +366,7 @@ ms.locfileid: "53811196"
 
 |説明|値|
 |---|---|
-|**キー**|enabled|
+|**Key**|enabled|
 |**データ型**|Boolean|
 |**指定可能な値**|true (既定) <p> false|
 |
@@ -381,7 +381,7 @@ ms.locfileid: "53811196"
 
 |説明|値|
 |---|---|
-|**キー**|diagnosticLevel|
+|**Key**|diagnosticLevel|
 |**データ型**|String|
 |**指定可能な値**|省略可能 (既定) <p> 必須|
 |
@@ -400,7 +400,7 @@ ms.locfileid: "53811196"
 
 |説明|値|
 |---|---|
-|**キー**|automaticSampleSubmissionConsent|
+|**Key**|automaticSampleSubmissionConsent|
 |**データ型**|String|
 |**指定可能な値**|none <p> safe (既定) <p> すべての|
 |
@@ -415,7 +415,7 @@ ms.locfileid: "53811196"
 
 |説明|値|
 |---|---|
-|**キー**|automaticDefinitionUpdateEnabled|
+|**Key**|automaticDefinitionUpdateEnabled|
 |**データ型**|Boolean|
 |**指定可能な値**|true (既定) <p> false|
 |

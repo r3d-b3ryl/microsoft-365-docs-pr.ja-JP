@@ -26,18 +26,18 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: セルフサービス のパスワードリセット ツールを使用して、ユーザーが自分のパスワードをリセットできるポリシーを設定する方法について学習します。
-ms.openlocfilehash: 9743c45d43510eb1db9e4d27d2b7bcf65d1bdb100b53ccefb56c25a9082153f4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 284a81e46ff22bf0a2ae514db81432b64e342a7f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53815649"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177063"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>ユーザーが自分でパスワードをリセットできるようにする
 
 管理者Microsoft 365、ユーザーがセルフサービス のパスワードリセット ツールを使用[](https://go.microsoft.com/fwlink/p/?LinkId=522677)して、パスワードをリセットする必要がなさそう。 仕事が少ない!
   
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
   
 - クラウド ユーザーのセルフサービス パスワード リセットは、ビジネス、教育、または非営利の有料プランMicrosoft 365無料で取得できます。 この機能は、試用版ではMicrosoft 365しません。
 
@@ -53,7 +53,7 @@ ms.locfileid: "53815649"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S]
 
-このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](../../business-video/index.yml)」をご覧ください。
+このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](../../business-video/index.yml)」をご覧ください。
 
 ## <a name="steps-let-people-reset-their-own-passwords"></a>手順: ユーザーが自分のパスワードをリセットする
 

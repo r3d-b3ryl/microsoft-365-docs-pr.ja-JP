@@ -18,11 +18,11 @@ search.appverid:
 - MET150
 description: 必要なものを保持し、必要でないものを削除するためにラベルを自動的に適用できるように、保持ラベルと自動ラベル付けポリシーを作成します。
 ms.openlocfilehash: cb693fb60277e5262578cc442df7e1c5ba3f3c16
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572253"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178136"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>保持ラベルを自動的に適用してコンテンツを保持または削除する
 

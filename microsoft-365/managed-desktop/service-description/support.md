@@ -9,12 +9,12 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 8f4d0ca8034295a625f5b3fdf07bbc665276b474651c5515b49a9b5c465cafa4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1c4d94fb89aef76617ebd0995a6849de428afea4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854401"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179503"
 ---
 # <a name="admin-support"></a>管理者サポート
 
@@ -48,7 +48,7 @@ Microsoft マネージド デスクトップサポートには、次の内容が
 - Microsoft マネージド デスクトップ"Test" グループ内のデバイスと、そのデバイスの一部Microsoft マネージド デスクトップがスコープ外である 
 
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [IT 管理者がサポートを受け取る方法について学習する](../working-with-managed-desktop/admin-support.md)
 - [ユーザーがサポートを受け取る方法について](../working-with-managed-desktop/end-user-support.md)

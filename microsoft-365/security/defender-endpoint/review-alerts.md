@@ -18,11 +18,11 @@ ms.topic: conceptual
 ms.date: 5/1/2020
 ms.technology: mde
 ms.openlocfilehash: 01b9fb5a3483d287f4d43db0a95af6add284b023
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571279"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179215"
 ---
 # <a name="review-alerts-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint のアラートを確認する
 

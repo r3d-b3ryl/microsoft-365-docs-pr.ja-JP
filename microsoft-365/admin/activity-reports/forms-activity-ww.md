@@ -21,11 +21,11 @@ search.appverid:
 - MOE150
 description: '[レポート] ダッシュボードの [レポート] ダッシュボードを使用して Microsoft Forms アクティビティ Microsoft 365を取得する方法Microsoft 365 管理センター。'
 ms.openlocfilehash: 59c7233a1622d0bf3ceaebd9adafb5c243d7008d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565050"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177279"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>Microsoft 365管理センターのレポート - フォーム アクティビティ
 

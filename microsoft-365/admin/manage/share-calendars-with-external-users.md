@@ -24,11 +24,11 @@ search.appverid:
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
 description: ユーザーが組織の内部または外部Microsoft 365 管理センター予定表を共有できるよう、予定表の共有を有効にします。
 ms.openlocfilehash: 3183eb9f45333e26685c09d586b5f3c5137a4a56
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58346750"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178904"
 ---
 # <a name="share-calendars-with-external-users"></a>予定表を外部ユーザーと共有する
 

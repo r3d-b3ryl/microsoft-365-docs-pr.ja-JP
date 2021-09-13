@@ -21,11 +21,11 @@ ms.custom:
 - Ent_Architecture
 description: Microsoft のクラウドプランの組織、サブスクリプション、ライセンス、ユーザー アカウント、およびテナントの関係について理解する。
 ms.openlocfilehash: 64ca4d69d0792dbe3751bffff95841409767aa4f
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58747413"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179671"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>マイクロソフトのクラウド プランのサブスクリプション、ライセンス、アカウント、およびテナント
 

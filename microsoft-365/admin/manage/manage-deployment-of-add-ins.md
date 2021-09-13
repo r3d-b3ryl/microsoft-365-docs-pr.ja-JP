@@ -25,11 +25,11 @@ search.appverid:
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 管理センターで集中展開を使用して、組織内のユーザーとグループにアドインを展開する方法について説明します。
 ms.openlocfilehash: 522a1884752e0ada6b43ba68a853cb117c8dfd75
-ms.sourcegitcommit: 99f7bd19e9c6997f0dbff7f59cb29a9768044b54
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/04/2021
-ms.locfileid: "58896479"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179000"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>管理センターでアドインを展開する
 

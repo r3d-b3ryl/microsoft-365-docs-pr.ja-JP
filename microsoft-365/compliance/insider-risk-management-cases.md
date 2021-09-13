@@ -13,11 +13,11 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.openlocfilehash: 0a1b91c888e1ee91d03d5a2d315e4d4fc38b2d10
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570823"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175831"
 ---
 # <a name="insider-risk-management-cases"></a>Insider リスク管理ケース
 
@@ -98,7 +98,7 @@ ms.locfileid: "58570823"
 [ **アラート]** タブには、ケースに含まれる現在のアラートが要約されます。 新しいアラートは既存のケースに追加され、割り当てられたアラート キューに追加されます。 次のアラート属性がキューに一覧表示されます。
 
 - 状態
-- 緊急度
+- 重要度
 - 検出された時間
 
 キューからアラートを選択して、[アラートの詳細 **] ページを表示** します。
@@ -106,7 +106,7 @@ ms.locfileid: "58570823"
 検索コントロールを使用して、特定のテキストのアラート名を検索し、アラート フィルターを使用して、次の属性でケースを並べ替える。
 
 - 状態
-- 緊急度
+- 重要度
 - 検出された時間、開始日、終了日
 
 フィルター コントロールを使用して、次を含むいくつかの属性でアラートをフィルター処理します。

@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 063c31bb8393624d7dc004d68324bb4a334e0bf095c2cdfeea87a76761f40c1c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1ce0b30788647b807f6f6349337e4086a64432ff
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53815433"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180759"
 ---
 # <a name="contact-support-for-tajikistan"></a>タジキスタンのサポートに問い合わせ
 

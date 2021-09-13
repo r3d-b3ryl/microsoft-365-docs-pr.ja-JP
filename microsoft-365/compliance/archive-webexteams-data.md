@@ -13,11 +13,11 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、Veritas の Webex からデータをインポートおよびアーカイブするコネクタをセットアップし、TeamsのコネクタMicrosoft 365。 このコネクタを使用すると、Microsoft 365 のサード パーティデータ ソースからデータをアーカイブし、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティ データを管理できます。
 ms.openlocfilehash: 499bf32093d4451d9e9aea45f9b36c1beb591733
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570919"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179975"
 ---
 # <a name="set-up-a-connector-to-archive-webex-teams-data"></a>Webex データをアーカイブするコネクタをTeamsする
 
@@ -39,7 +39,7 @@ Webex Teamsデータがユーザー メールボックスに保存された後�
 
 4. コネクタは、手順 3 で説明したように、自動ユーザー マッピングの *Email* プロパティの値を使用して、特定のユーザーのメールボックスにアイテム [をインポートします](#step-3-map-users-and-complete-the-connector-setup)。 ユーザー のメールボックスに **Webex Teams** という名前の受信トレイ フォルダー内のサブフォルダーが作成され、そのフォルダーにアイテムがインポートされます。 コネクタは、Email プロパティの値を使用して *これを行* います。 すべての Webex Teamsには、このプロパティが含まれるので、アイテムのすべての参加者の電子メール アドレスが設定されます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 - Microsoft コネクタ用の Veritas Merge1 アカウントを作成します。 このアカウントを作成するには [、Veritas カスタマー サポートにお問い合わせください](https://globanet.com/ms-connectors-contact)。 手順 1 でコネクタを作成するときに、このアカウントにサインインします。
 

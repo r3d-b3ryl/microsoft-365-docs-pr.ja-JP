@@ -16,11 +16,11 @@ appliesto:
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: de9f68c193a8c7ab4d4c78fc4f2cef3cf02142ec
-ms.sourcegitcommit: fd348579346522ead16a6bd8ce200a0b8ae8f7d4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58831923"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179200"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>メールで配信される悪意のある電子メールを修復Office 365
 

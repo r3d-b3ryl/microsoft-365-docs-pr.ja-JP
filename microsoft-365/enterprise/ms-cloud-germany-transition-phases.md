@@ -19,11 +19,11 @@ ms.custom:
 - Ent_TLGs
 description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター地域の Office 365 サービスへの移行フェーズのアクションと影響について説明します。'
 ms.openlocfilehash: 73b50d52094526857e3787c29b764f55976bde12
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570751"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177783"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>移行フェーズアクションと Microsoft Cloud Deutschland からの移行に対する影響
 
@@ -43,7 +43,7 @@ Microsoft Cloud Deutschland (MCD) から Microsoft の Office 365 Global サー�
 |Step(s)|Duration|責任ある当事者|説明|
 |---|---|---|---|
 |Opt-In|時間|顧客|組織に移行を選択します。|
-|プレワーク|Days|顧客|ユーザー、ワークステーション、およびネットワークを移行用に準備するために必要な作業を完了します。|
+|プレワーク|日数|顧客|ユーザー、ワークステーション、およびネットワークを移行用に準備するために必要な作業を完了します。|
 |Azure Active Directory (Azure AD)|1~ 2 日|Microsoft|Azure AD組織を世界中に移行します。|
 |Azure|週|顧客|新しい世界中の Azure サブスクリプションを作成し [、Azure サービスを移行します](/azure/azure-resource-manager/management/move-resource-group-and-subscription)。|
 |サブスクリプション&ライセンス移行|1~ 2 日|Microsoft|世界中のサブスクリプションを購入し、Microsoft Cloud Deutschland サブスクリプションをキャンセルし、ユーザー ライセンスを移行します。|
@@ -197,7 +197,7 @@ CNAME を指す既存の DNS エントリは、autodiscover-outlook.office.de �
 
 **PowerShell を使用Exchange Online** 管理者Exchange Online適用されます。
 
-移行フェーズ中に、PowerShell コマンドレット **New-MigrationEndpoint、Set-MigrationEndpoint、** および **Test-MigrationsServerAvailability** を使用すると、エラー (プロキシでエラー) が発生する可能性があります。  これは、調停メールボックスが世界中に移行されたが、管理者メールボックスが移行または逆の場合に発生します。 これを解決するには、テナント PowerShell セッションの作成中に **、ConnectionUri** のルーティング ヒントとして調停メールボックスを使用します。 次に例を示します。
+移行フェーズ中に、PowerShell コマンドレット **New-MigrationEndpoint、Set-MigrationEndpoint、** および **Test-MigrationsServerAvailability** を使用すると、エラー (プロキシでエラー) が発生する可能性があります。  これは、調停メールボックスが世界中に移行されたが、管理者メールボックスが移行または逆の場合に発生します。 これを解決するには、テナント PowerShell セッションの作成中に **、ConnectionUri** のルーティング ヒントとして調停メールボックスを使用します。 例:
 
 ```powershell
 New-PSSession

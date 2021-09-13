@@ -18,11 +18,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: 8e3484d07263063c9fab04a056cd09ac9b5d67a5
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58684054"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179288"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-on-linux"></a>Linux 上のエンドポイント用 Microsoft Defender を使用して、望ましくない可能性のあるアプリケーションを検出およびブロックする
 
@@ -41,7 +41,7 @@ Defender for Endpoint on Linux の望ましくない可能性のあるアプリ�
 
 これらのアプリケーションは、ネットワークがマルウェアに感染するリスクを高め、マルウェアの感染を特定しにくくし、アプリケーションのクリーンアップで IT リソースを無駄にする可能性があります。
 
-## <a name="how-it-works"></a>メカニズム
+## <a name="how-it-works"></a>しくみ
 
 Defender for Endpoint on Linux では、PUA ファイルを検出してレポートできます。 ブロック モードで構成すると、PUA ファイルは検疫に移動されます。
 

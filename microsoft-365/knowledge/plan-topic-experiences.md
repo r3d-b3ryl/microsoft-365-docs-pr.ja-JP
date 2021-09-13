@@ -11,11 +11,11 @@ search.appverid: MET150
 localization_priority: Normal
 description: プラン for Microsoft Viva トピック
 ms.openlocfilehash: deb4e219992400a5155b40a849a6df3a8bccbef1
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563988"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179576"
 ---
 # <a name="plan-for-microsoft-viva-topics"></a>計画を立Microsoft Viva トピック
 

@@ -28,11 +28,11 @@ search.appverid:
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
 description: AutoPilot プロファイルを作成してデバイスに適用する方法と、プロファイルを編集または削除する方法、またはデバイスからプロファイルを削除する方法について学習します。
 ms.openlocfilehash: 4f54b4baac1cd9364d852116115f07fae021b823
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360622"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176687"
 ---
 # <a name="create-and-edit-autopilot-profiles"></a>AutoPilot プロファイルを作成し編集する
 

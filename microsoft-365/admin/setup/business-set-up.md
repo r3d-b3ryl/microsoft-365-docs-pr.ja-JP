@@ -31,11 +31,11 @@ search.appverid:
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: ドメインとユーザーの追加Microsoft 365 Business Premiumセキュリティ ポリシーの設定など、ユーザーのセットアップ手順について説明します。
 ms.openlocfilehash: 7e01a27361ba681a6475c5e0165d8efbb16371a8
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568194"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178551"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>セットアップ ウィザードMicrosoft 365 Business Premiumの設定
 

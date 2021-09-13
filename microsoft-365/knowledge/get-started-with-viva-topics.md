@@ -9,12 +9,12 @@ ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 description: このサイトで情報を検出および探索する新しい方法についてMicrosoft Viva トピック。
-ms.openlocfilehash: 07b12ab191ec3222deb3e01f4b039f7b15dc8a5bed64047d144af35a9159a611
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 65084663db1b9cdee4a179831a98c297c83d30d7
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53840157"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179616"
 ---
 # <a name="get-started-with-microsoft-viva-topics"></a>Microsoft Viva トピックの使用を開始する
 

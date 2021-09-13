@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/22/2020
 ms.technology: mde
-ms.openlocfilehash: 9b19f526434cdaf0eb1b6f6ad1fc0b6f7232b77d6b6b96d43bb777e45e19856d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6a56a1abab388e98af52fadc322d41484c1610a5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53898397"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179463"
 ---
 # <a name="devicealertevents"></a>DeviceAlertEvents
 
@@ -33,7 +33,7 @@ ms.locfileid: "53898397"
 
 
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
 高度 `DeviceAlertEvents` な検索スキーマの[表](advanced-hunting-overview.md)には、このスキーマのアラートに関する情報Microsoft Defender セキュリティ センター。 このテーブルの情報を返すクエリを作成するには、このレファレンスを使用します。
 

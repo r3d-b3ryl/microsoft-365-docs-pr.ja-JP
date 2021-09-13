@@ -18,11 +18,11 @@ search.appverid:
 - MET150
 description: Microsoft 365 でのレコード管理ソリューションの実装に役立つレコードについて説明します。
 ms.openlocfilehash: 5e77d38ed6e3b122ceb85a6cff901a09dbe782d1
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574966"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177816"
 ---
 # <a name="use-record-versioning-to-update-records-stored-in-sharepoint-or-onedrive"></a>SharePoint または OneDrive に保存されているレコードを更新するためにレコードのバージョン管理を使用する
 

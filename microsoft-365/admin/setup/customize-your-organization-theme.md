@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: ナビゲーション バーの上部の既定のテーマを変更し、Microsoft 365ロゴや色に合わせてカスタマイズする方法について学習します。
-ms.openlocfilehash: 6a9317e1ca61711020dfa8d1521c1082b2a7682f8e12a2976dc20f5af374dd4c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 62a658929faaf130e85df5a2eb9637bf6a6c8a0a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53822127"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178520"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>組織のMicrosoft 365テーマをカスタマイズする
 
@@ -60,7 +60,7 @@ ms.locfileid: "53822127"
 
 1. 組織のテーマを以前にカスタマイズした場合は、[既定のテーマ] を選択して保存したカスタマイズのいずれかを使用するか、[テーマの追加]**を選択します**。
 2. [全般 **] ページ** では、ユーザーがテーマを上書きし、ユーザーの表示名を表示できます。
-3. **[保存]** を選択し、変更内容を保存します。  
+3. **[保存]** を選び、変更内容を保存します。  
 
 > [!IMPORTANT]
 > 既定のテーマは一意であり、名前を変更したり、組織内のすべてのユーザーに適用したりできない。 既定のテーマを削除するには、最初に他のすべてのテーマを削除する必要があります。
@@ -87,7 +87,7 @@ ms.locfileid: "53822127"
 - **代替ロゴ**: ロゴをポイントする URL の場所を追加します。 代替ロゴは、暗いテーマで使用Officeする必要があります。 既定のロゴと同じ要件。
 - **[オンクリック] リンク**: ロゴをポイントする URL の場所を追加します。 ロゴは、会社の Web サイトなど、任意の会社リソースへのリンクとして使用できます。 ロゴの URL の場所を選択しない場合は、既定でホーム ページOfficeされます。
 
-**[保存]** を選択し、変更内容を保存します。
+**[保存]** を選び、変更内容を保存します。
 
 :::image type="content" source="../../media/Logos_Tab.png" alt-text="スクリーンショット: ロゴ オプションを示す [ロゴ] タブ":::
 

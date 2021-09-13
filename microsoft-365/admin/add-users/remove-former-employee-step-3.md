@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 次の手順に従って、元従業員のメールを別の従業員に転送するか、共有メールボックスに変換します。
-ms.openlocfilehash: 07973e47dd7f79ad4adc9121c9a2f6d368bb699e22d6d2cbacb91d3b8fce4fbf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f9d5cefd761d95a3df03864aa14de1bcfb608d04
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827361"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177032"
 ---
 # <a name="step-3---forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox"></a>手順 3 - 元従業員のメールを別の従業員に転送するか、共有メールボックスに変換する
 
@@ -51,7 +51,7 @@ ms.locfileid: "53827361"
  > [!IMPORTANT]
  > メール転送または共有メールボックスを設定する場合は、最後に元従業員のアカウントを削除しない。 メール転送や共有メールボックスを固定するには、アカウントを残しておく必要があります。
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> の順に選択します。
 2. ブロックする従業員の名前を選択し、[メール] タブ **を選択** します。
 3. [メール **転送] で**、[メール転送 **の管理] を選択します**。
 4. [ **このメールボックスに送信されたすべてのメールを転送する** ] をオンにします。 [転送 **先住所]** ボックスに、メールを取得する現在の従業員のメール アドレスを入力します。

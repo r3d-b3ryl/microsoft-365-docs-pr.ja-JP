@@ -1,5 +1,5 @@
 ---
-title: データを自分のサブスクリプションMicrosoft 365 Business Standardする
+title: データを Microsoft 365 Business Standard サブスクリプションに移行する
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -15,13 +15,13 @@ ms.custom:
 - AdminSurgePortfolio
 description: データをOutlook、OneDrive、Teamsに移行Microsoft 365 Business Standard
 ms.openlocfilehash: 0a690c5092d3f288544edc5077605a6728bffc80
-ms.sourcegitcommit: 8ef23d275d7209a705295e2b117d4382b20ad4f7
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58866935"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178447"
 ---
-# <a name="migrate-data-to-my-microsoft-365-business-standard-subscription"></a>データを自分のサブスクリプションMicrosoft 365 Business Standardする
+# <a name="migrate-data-to-my-microsoft-365-business-standard-subscription"></a>データを Microsoft 365 Business Standard サブスクリプションに移行する
 
 この記事の手順に従って、OneDrive、Outlook、TeamsデータをサブスクリプションにMicrosoft 365 Business Standardします。
 
@@ -70,7 +70,7 @@ ms.locfileid: "58866935"
 
 - 以前にファイルを共有OneDrive、これらのファイルを移動した後に、新しいファイルOneDrive共有する必要があります。 また、これらのファイルを共有したら、ファイルから元のファイルを削除することをお勧OneDrive。 この方法では、以前に共有したファイルの古いコピーを参照できない場合があります。
 
-## <a name="step-set-up-outlook-for-email"></a>手順: 電子メールのOutlook設定する
+## <a name="step-set-up-outlook-for-email"></a>手順: Outlook をメール用にセットアップする
 
 1. Windows の [スタート] メニューで、[Outlook] を検索し、選択します。
 
@@ -114,7 +114,7 @@ ms.locfileid: "58866935"
 
 ## <a name="move-data-from-your-personal-microsoft-teams-account-to-new-teams-for-work-account"></a>個人用アカウントから仕事用Microsoft Teams新しいTeamsにデータを移動する
 
-1. [Microsoft Teamsを開き、プロファイル アイコンを選択し、[仕事または学校の **アカウントを追加する] をクリックします**。
+1. Microsoft Teams を開き、プロファイル アイコンを選択して、**[職場または学校アカウントを追加する]** を選択します。
 
 2. 手順に従って、新しいアカウントを作業Teams追加します。 詳細については[、「サインイン」を参照し、Teams](https://support.microsoft.com/office/sign-in-and-get-started-with-teams-6723dc43-dbc0-46e6-af49-8a2d1c5cb937)を開始してください。
 

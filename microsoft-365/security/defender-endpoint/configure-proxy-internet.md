@@ -18,11 +18,11 @@ ms.collection:
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 7665fbd52e45636988b375e4b811e3f93d8f3981
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574005"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177696"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>デバイス プロキシとインターネット接続の設定を構成する
 

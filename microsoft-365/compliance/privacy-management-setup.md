@@ -17,11 +17,11 @@ search.appverid:
 - MET150
 description: 組織のプライバシー管理を設定し、役割とアクセス許可を設定し、重要な設定を構成する方法について説明します。
 ms.openlocfilehash: 229d4bec78424858cd7034c8953313f8593e90e3
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58745967"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177832"
 ---
 # <a name="get-started-with-privacy-management-preview"></a>プライバシー管理の開始 (プレビュー)
 

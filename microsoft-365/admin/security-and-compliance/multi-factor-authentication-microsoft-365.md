@@ -26,11 +26,11 @@ ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: 多要素認証 (MFA) は、強力なパスワードと追加の検証方法の両方を使用します。
 ms.openlocfilehash: d0f88043ecaa4d2dd990f74661e904351db97524
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566098"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178647"
 ---
 # <a name="multifactor-authentication-for-microsoft-365"></a>ユーザーの多要素認証Microsoft 365
 
@@ -152,7 +152,7 @@ Azure AD Identity Protection とリスク ベースの条件付きアクセス �
 
 この表は、セキュリティの既定値、条件付きアクセス ポリシー、およびユーザーごとのアカウント設定で MFA を有効にした結果を示しています。
 
-|*項目*|有効|無効|第 2 の認証方法|
+|*アイテム*|Enabled|無効|第 2 の認証方法|
 |---|---|---|---|
 |**セキュリティの既定値**|条件付きアクセス ポリシーを使用できない|条件付きアクセス ポリシーを使用できる|Microsoft Authenticator アプリ|
 |**条件付きアクセス ポリシー**|有効になっている場合は、セキュリティの既定値を有効にできません|すべてが無効になっている場合は、セキュリティの既定値を有効にすることができます|MFA 登録中にユーザーが指定|

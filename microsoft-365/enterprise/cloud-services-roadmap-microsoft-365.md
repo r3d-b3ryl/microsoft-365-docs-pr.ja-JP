@@ -14,11 +14,11 @@ ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: クラウド サービスをセットアップするためのロードマップは、Microsoft 365。
 ms.openlocfilehash: 050dc8e622bbfe9f1a065a74f4dffcdd3647074a
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58353770"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179783"
 ---
 # <a name="cloud-services-roadmap-for-microsoft-365"></a>クラウド サービスのクラウド Microsoft 365
 
@@ -26,7 +26,7 @@ ms.locfileid: "58353770"
 
 Exchange、SharePoint、または Skype for Business の既存のサーバー ベースの展開がある場合に、組織全体を Microsoft 365 に移行する場合は、クライアントおよびサーバー ソフトウェアのロードマップを[参照](client-server-software-roadmap-microsoft-365.md)してください。 このロードマップには、Microsoft Office、オンプレミスのサーバー製品、Microsoft OfficeベースのデバイスWindows &ndash; 含まれます。
 
-## <a name="deploy"></a>展開する
+## <a name="deploy"></a>展開
 
 クラウド サービスを展開するには、次の方法を実行します。
 

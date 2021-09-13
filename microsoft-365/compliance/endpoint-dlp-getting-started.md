@@ -20,11 +20,11 @@ search.appverid:
 - MET150
 description: Microsoft 365 エンドポイントのデータ損失防止を設定して、ファイルアクティビティを監視し、それらのファイルの保護アクションをエンドポイントに実装します。
 ms.openlocfilehash: 53054e32803bb3722674c043a84eb7f410a77d06
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573633"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175944"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>エンドポイント データ損失防止を開始する
 

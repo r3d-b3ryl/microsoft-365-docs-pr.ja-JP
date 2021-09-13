@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: cecc6cd9be841043c2f3cc55977c56f14386cd2d
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58745771"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177583"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Jamf の macOS ポリシーで Microsoft Defender for Endpoint をセットアップPro
 
@@ -118,7 +118,7 @@ ms.locfileid: "58745771"
 
     ![選択されているターゲット コンピューターのイメージ。](images/jamfpro-target-selected.png)
 
-11. **[完了]** を選択します。
+11. [**完了**] を選択します。
 
     ![ターゲット グループ コンピューターのイメージ。](images/jamfpro-target-group.png)
 
@@ -154,7 +154,7 @@ JAMF Pro GUI を使用して Microsoft Defender 構成の個々の設定を編�
 
     ![カスタム スキーマを追加します。](images/4137189bc3204bb09eed3aabc41afd78.png)
 
-4. [ `com.microsoft.wdav` 基本設定ドメイン] として入力し、[スキーマの追加] をクリックし **アップロード** 手順 1 でschema.jsを選択します。 [**保存**] をクリックします。
+4. [ `com.microsoft.wdav` 基本設定ドメイン] として入力し、[スキーマの追加] をクリックし **アップロード** 手順 1 でschema.jsを選択します。 **[保存]** をクリックします。
 
     ![アップロードスキーマ。](images/a6f9f556037c42fabcfdcb1b697244cf.png)
 
@@ -178,7 +178,7 @@ JAMF Pro GUI を使用して Microsoft Defender 構成の個々の設定を編�
 
     ![構成設定 - 保存します。](images/6f093e42856753a3955cab7ee14f12d9.png)
 
-10. **[完了]** を選択します。 新しい構成プロファイルが **表示されます**。
+10. [**完了**] を選択します。 新しい構成プロファイルが **表示されます**。
 
     ![構成設定 - 完了。](images/dd55405106da0dfc2f50f8d4525b01c8.png)
 
@@ -387,7 +387,7 @@ Microsoft Defender は、時間の間に新しい設定を追加します。 こ
 
     ![構成設定のイメージが追加を保存します。](images/6f093e42856753a3955cab7ee14f12d9.png)
 
-16. **[完了]** を選択します。 新しい構成プロファイルが **表示されます**。
+16. [**完了**] を選択します。 新しい構成プロファイルが **表示されます**。
 
     ![構成設定の構成プロファイル イメージのイメージ。](images/dd55405106da0dfc2f50f8d4525b01c8.png)
 
@@ -439,7 +439,7 @@ Microsoft Defender は、時間の間に新しい設定を追加します。 こ
 
     ![構成設定のイメージは、保存を追加します。](images/4d2d1d4ee13d3f840f425924c3df0d51.png)
 
-6. **[完了]** を選択します。 新しい構成プロファイルが **表示されます**。
+6. [**完了**] を選択します。 新しい構成プロファイルが **表示されます**。
 
     ![img を実行した構成設定のイメージ。](images/633ad26b8bf24ec683c98b2feb884bdf.png)
 
@@ -523,7 +523,7 @@ Microsoft Defender は、時間の間に新しい設定を追加します。 こ
 
     ![構成設定 addimg3 のイメージ。](images/321ba245f14743c1d5d51c15e99deecc.png)
 
-14. **[完了]** を選択します。
+14. [**完了**] を選択します。
 
     ![構成設定 doneimage のイメージ。](images/ba44cdb77e4781aa8b940fb83e3c21f7.png)
 
@@ -608,7 +608,7 @@ Microsoft Defender は、時間の間に新しい設定を追加します。 こ
 
 16. **[保存]** を選択します。
 
-17. **[完了]** を選択します。
+17. [**完了**] を選択します。
 
     ![構成設定 donimg のイメージ。](images/809cef630281b64b8f07f20913b0039b.png)
 
@@ -664,7 +664,7 @@ Microsoft Defender は、時間の間に新しい設定を追加します。 こ
 
     ![構成設定の saveimag のイメージ。](images/0add8019b85a453b47fa5c402c72761b.png)
 
-10. **[完了]** を選択します。
+10. [**完了**] を選択します。
 
     ![構成設定 doneimag のイメージ。](images/1c9bd3f68db20b80193dac18f33c22d0.png)
 
@@ -719,7 +719,7 @@ Microsoft Defender は、時間の間に新しい設定を追加します。 こ
 
    ![構成設定 sysext スコープのイメージ。](images/sysext-scope.png)
 
-10. **[完了]** を選択します。
+10. [**完了**] を選択します。
 
     ![構成設定 sysext-final のイメージ。](images/sysext-final.png)
 
@@ -769,7 +769,7 @@ Microsoft Defender は、時間の間に新しい設定を追加します。 こ
 
     ![構成設定のイメージ savimg netextscop。](images/netext-scope.png)
 
-8. **[完了]** を選択します。
+8. [**完了**] を選択します。
 
     ![構成設定 netextfinal のイメージ。](images/netext-final.png)
 
@@ -884,7 +884,7 @@ macOS の Microsoft Defender for Endpoint でスキャンをスケジュール [
 
     ![構成設定セルフサービスのイメージ。](images/c9f85bba3e96d627fe00fc5a8363b83a.png)
 
-19. **[完了]** を選択します。
+19. [**完了**] を選択します。
 
     ![構成設定 do1img のイメージ。](images/99679a7835b0d27d0a222bc3fdaf7f3b.png)
 

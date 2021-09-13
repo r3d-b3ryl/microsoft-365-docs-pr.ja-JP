@@ -29,11 +29,11 @@ ROBOTS: NO INDEX, NO FOLLOW
 ms.assetid: 21e5551f-fa35-4f13-9418-f80d668b6a2b
 description: 仕事または学校のアカウントにサインインすると、Windows 10デバイスが受け取る既定のデバイス ポリシーの設定を構成する方法について説明します。
 ms.openlocfilehash: b4460f8f5e40ee6f0e121b128f17e27db7aa4979
-ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58378192"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178767"
 ---
 # <a name="secure-windows-10-devices"></a>Windows 10 デバイスをセキュリティで保護する
 
@@ -47,7 +47,7 @@ ms.locfileid: "58378192"
   
 
 
-|設定  <br/> |説明  <br/> |
+|Setting  <br/> |説明  <br/> |
 |:-----|:-----|
 |Windows Defender ウイルス対策を使用して PC をウイルスとその他の脅威から保護する  <br/> |インターネットに接続されている危険から PC を保護するには、ウイルス対策をオンにする必要があります。  <br/> |
 |Microsoft Edge で PC を Web ベースの脅威から保護する  <br/> |ユーザーを悪意のあるサイトやダウンロードから保護するために役立つ、Microsoft Edge の設定をオンにします。  <br/> |

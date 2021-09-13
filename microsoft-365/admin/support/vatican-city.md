@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 7f077c956f8fca45e2ec677f8464da97f9d6366070655d4072b475aae5bc6e9e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2fbfe46a3f0f99adca974765e370f2bbd766b882
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53852781"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178383"
 ---
 # <a name="contact-support-for-vatican-city"></a>バチカン市国のサポートに問い合わせ
 

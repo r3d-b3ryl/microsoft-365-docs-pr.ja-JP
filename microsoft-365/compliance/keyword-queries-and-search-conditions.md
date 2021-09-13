@@ -22,12 +22,12 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: 電子情報開示検索ツールを使用して検索できる電子メールとドキュメントのプロパティについてMicrosoft 365。
-ms.openlocfilehash: f0b6fac4610bbca8904f3dfe19abdc558a4f2818
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: a9db904e2386e049e38412a4c2250239078f27f6
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570103"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179944"
 ---
 # <a name="keyword-queries-and-search-conditions-for-ediscovery"></a>電子情報開示のキーワード クエリと検索条件
 
@@ -61,7 +61,7 @@ ms.locfileid: "58570103"
 |---|---|---|---|
 |AttachmentNames|メール メッセージに添付されているファイルの名前。|`attachmentnames:annualreport.ppt` <p> `attachmentnames:annual*` <br/> `attachmentnames:.pptx`|annualreport.ppt という名前の添付ファイルのあるメッセージ。 2 番目の例では、ワイルドカード文字 ( * ) を使用すると、添付ファイルのファイル名に "annual" という単語が含まれているメッセージが返されます。 3　番目の例は、ファイルの拡張子が pptx のすべての添付ファイルを返します。|
 |Bcc|メール メッセージの Bcc フィールド。<sup>1</sup>|`bcc:pilarp@contoso.com` <p> `bcc:pilarp` <p> `bcc:"Pilar Pinilla"`|どの例も Bcc フィールドに「Pilar Pinilla」が含まれているメッセージを返します。|
-|カテゴリ|検索するカテゴリ。 カテゴリは、ユーザーが Outlook または Outlook on the web (旧称: Outlook Web App) を使用して定義できます。 値は次のいずれかです。 <ul><li>青<li></li>green<li></li>orange<li></li>purple<li></li>red<li></li>yellow</li></ul>|`category:"Red Category"`|元のメールボックスで「red」のカテゴリが割り当てられているメッセージ。|
+|カテゴリ|検索するカテゴリ。 カテゴリは、ユーザーが Outlook または Outlook on the web (旧称: Outlook Web App) を使用して定義できます。 値は次のいずれかです。 <ul><li>青<li>green<li>orange<li>purple<li>red<li>yellow</li></ul>|`category:"Red Category"`|元のメールボックスで「red」のカテゴリが割り当てられているメッセージ。|
 |Cc|メール メッセージの Cc フィールド。<sup>1</sup>|`cc:pilarp@contoso.com` <p> `cc:"Pilar Pinilla"`|どちらの例も、Cc フィールドに "Pilar Pinilla" が指定されたメッセージ。|
 |Folderid|特定のメールボックス フォルダーのフォルダー ID (GUID)。 このプロパティを使う場合は、必ず指定したフォルダーが存在するメールボックスを検索するようにします。 指定したフォルダーのみが検索されます。 フォルダー内のサブフォルダーは検索されません。 サブフォルダーを検索するには、検索するサブフォルダーの Folderid プロパティを使う必要があります。 <p> Folderid プロパティを検索し、スクリプトを使用して特定のメールボックスのフォルダー ID を取得する方法の詳細については、「対象のコレクションにコンテンツ検索を使用する」を [参照してください](use-content-search-for-targeted-collections.md)。|`folderid:4D6DD7F943C29041A65787E30F02AD1F00000000013A0000` <p> `folderid:2370FB455F82FC44BE31397F47B632A70000000001160000 AND participants:garthf@contoso.com`|最初の例では、指定したメールボックス フォルダー内のすべてのアイテムが返されます。 2 番目の例では、指定したメールボックス フォルダー内で garthf@contoso.com によって送信または受信されたすべてのアイテムが返されます。|
 |送信元|メール メッセージの送信者。<sup>1</sup>|`from:pilarp@contoso.com` <p> `from:contoso.com`|指定されたユーザーによって送信された、または指定されたドメインから送信されたメッセージ。|
@@ -75,7 +75,7 @@ ms.locfileid: "58570103"
 |Recipients|メール メッセージのすべての受信者フィールド。 すなわち、[宛先]、[Cc]、[Bcc] の各フィールドです。<sup>1</sup>|`recipients:garthf@contoso.com` <p> `recipients:contoso.com`|garthf@contoso.com に送信されたメッセージ。2 番目の例では、contoso.com ドメイン内のすべての受信者に送信されたメッセージを返します。|
 |Sent|送信者によって電子メール メッセージが送信された日付。|`sent:07/01/2016` <p> `sent>=06/01/2016 AND sent<=07/01/2016`|指定された日付に送信された、または指定された日付範囲内に送信されたメッセージ。|
 |Size|アイテムのサイズ (バイト数)。|`size>26214400` <p> `size:1..1048567`|25 MB を超えるメッセージ。2 番目の例は 1 ～ 1,048,567 バイト (1 MB) のサイズのメッセージを返します。|
-|Subject|電子メール メッセージの件名行に含まれるテキスト。 <p> **注:** クエリで Subject プロパティを使用すると、検索するテキストが件名に含まれているすべてのメッセージが返されます。 つまり、完全一致のメッセージのみがクエリで返されるわけではありません。 たとえば、 `subject:"Quarterly Financials"` を検索した場合の結果には、件名が "Quarterly Financials 2018" のメッセージが含まれることになります。|`subject:"Quarterly Financials"` <p> `subject:northwind`|件名行のテキストのいずれかの箇所に "Quarterly Financials" を含むメッセージ。 2 番目の例では、件名行に「northwind」の語が含まれているすべてのメッセージを返します。|
+|件名|電子メール メッセージの件名行に含まれるテキスト。 <p> **注:** クエリで Subject プロパティを使用すると、検索するテキストが件名に含まれているすべてのメッセージが返されます。 つまり、完全一致のメッセージのみがクエリで返されるわけではありません。 たとえば、 `subject:"Quarterly Financials"` を検索した場合の結果には、件名が "Quarterly Financials 2018" のメッセージが含まれることになります。|`subject:"Quarterly Financials"` <p> `subject:northwind`|件名行のテキストのいずれかの箇所に "Quarterly Financials" を含むメッセージ。 2 番目の例では、件名行に「northwind」の語が含まれているすべてのメッセージを返します。|
 |To|メール メッセージの To フィールド。<sup>1</sup>|`to:annb@contoso.com` <p> `to:annb ` <br/> `to:"Ann Beebe"`|いずれの例も、To: 行に "Ann Beebe" が指定されているメッセージを返します。|
 |
 

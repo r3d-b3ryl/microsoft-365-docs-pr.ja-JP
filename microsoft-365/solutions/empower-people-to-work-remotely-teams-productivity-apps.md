@@ -18,11 +18,11 @@ ms.collection:
 ms.custom: ''
 description: Teams、Exchange、SharePoint、その他の Microsoft 365 サービスを利用することで、ユーザーの生産性を向上できます。
 ms.openlocfilehash: 034f0c3d4127ed75db8ba9a7cbe628a2502d192c
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566480"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179056"
 ---
 # <a name="step-5-deploy-hybrid-worker-productivity-apps-and-services"></a>手順 5. ハイブリッド ワーカー生産性向上アプリとサービスを展開する
 

@@ -12,11 +12,11 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: Microsoft 365 コンプライアンス センター のコンテンツ検索電子情報開示ツールを使用して、Exchange メールボックス内の電子メール、SharePoint サイトと OneDrive の場所のドキュメント、Skype for Business でのインスタント メッセージング会話をすばやく検索します。
 ms.openlocfilehash: 577b3af2bbeb1856f55de31123b71f2597c6604a
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508300"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175791"
 ---
 # <a name="search-for-content-using-the-content-search-tool"></a>コンテンツ検索ツールを使用してコンテンツを検索する
 

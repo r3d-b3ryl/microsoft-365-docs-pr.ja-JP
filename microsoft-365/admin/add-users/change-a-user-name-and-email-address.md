@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: 'Microsoft 365 のグローバル管理者が、ユーザー名が変更されるときにユーザーのメール アドレスと表示名を変更する方法について説明します。 '
-ms.openlocfilehash: 0f9d2e5cf817e5d3f5535122f0a7475d78e6d0a90edf8309acfeb15515d9756f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 29e2e57327550de13359106e7ba820204598f691
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53815853"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177111"
 ---
 # <a name="change-a-user-name-and-email-address"></a>ユーザー名とメール アドレスを変更する
 
@@ -53,7 +53,7 @@ ms.locfileid: "53815853"
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> の順に選択します。
 
 ::: moniker-end
 
@@ -125,7 +125,7 @@ ms.locfileid: "53815853"
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> の順に選択します。
 
 ::: moniker-end
 

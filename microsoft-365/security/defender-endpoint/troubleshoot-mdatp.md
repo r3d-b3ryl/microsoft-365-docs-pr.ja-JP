@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: d8ae4b902bd7544940834f3661d4461f1baebea7ba8170bd87248553dfe5cb05
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a487148601f9565a82f8046019fcf6cb4c2825c1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53828861"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177567"
 ---
 # <a name="troubleshoot-service-issues"></a>サービスに関する問題のトラブルシューティング
 
@@ -31,7 +31,7 @@ ms.locfileid: "53828861"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 このセクションでは、Microsoft Defender for Endpoint サービスを使用する際に発生する可能性のある問題について説明します。
 
@@ -87,7 +87,7 @@ Microsoft [](event-error-codes.md) Defender for Endpoint サービスによっ�
 
 Azure Defender を使用してサーバーを監視すると、Microsoft Defender for Endpoint テナントが自動的に作成されます。 Microsoft Defender for Endpoint データは、既定でヨーロッパに保存されます。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング](troubleshoot-onboarding.md)
 - [イベント ビューアーを使用してイベントとエラーを確認する](event-error-codes.md)

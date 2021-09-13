@@ -18,11 +18,11 @@ ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: 電子情報開示アクセス許可が割り当てられたユーザーがコンテンツ検索、コア電子情報開示、および Advanced eDiscovery タスクを実行するときに記録されるイベントMicrosoft 365 コンプライアンス センター。
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 637785a86e7fa28c0c058e9f729fcf2c1604a6f3
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256418"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175776"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>監査ログで電子情報開示アクティビティを検索する
 

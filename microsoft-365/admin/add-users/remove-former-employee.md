@@ -26,18 +26,18 @@ search.appverid:
 - MET150
 - MOE150
 description: このソリューションの手順に従って、組織のデータを保護Microsoft 365元の従業員を削除します。
-ms.openlocfilehash: 08b776430eb51546acd9e0bff82b32e08f045f0cad57d16c646e49bc17e44a7c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7c9667b771300a75a91588727f1d333ff2215302
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827415"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177000"
 ---
 # <a name="overview-remove-a-former-employee-and-secure-data"></a>概要: 元従業員とセキュリティで保護されたデータを削除する
 
 よく聞く質問は、「従業員が組織を離れるときにデータを保護し、アクセスを保護するために何をすべきですか? この記事シリーズでは、Microsoft 365 へのアクセスをブロックして、これらのユーザーが Microsoft 365 にサインインできない方法、組織データをセキュリティで保護するために実行する手順、および他の従業員が電子メールと OneDrive データにアクセスする方法について説明します。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 このソリューションの手順を完了するには、グローバル管理者である必要があります。
 

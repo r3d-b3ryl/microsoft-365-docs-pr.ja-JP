@@ -20,11 +20,11 @@ f1.keywords:
 description: サービスMicrosoft 365 Enterpriseアプリケーション (SharePoint、Exchange、Skype for Business) を構成します。
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: f1253f5d36621c252a0fd37b35a73cdf6269ebd5
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356554"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179728"
 ---
 # <a name="configure-microsoft-365-enterprise-services-and-applications"></a>サービスMicrosoft 365 Enterpriseアプリケーションを構成する
 

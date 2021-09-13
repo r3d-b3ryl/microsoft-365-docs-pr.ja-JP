@@ -17,15 +17,16 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_purchase
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid: GEA150
 description: 無料の 30 日間の試用版にサインアップして、Microsoft 365 Business Standard、Microsoft 365 Business Premium、Microsoft 365 Apps for business。
 ms.date: 08/07/2020
-ms.openlocfilehash: 794b278be829a30bbea4833253ef45d75f1f1048add2ce493b2b65c1093b5de4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3fc29097268ad4213f7a46d0a58d9eb24073924d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53861329"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180112"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>一般法人向け Microsoft 365 サブスクリプションを試用する/購入する
 
@@ -44,9 +45,9 @@ Microsoft 365は、Microsoft が IT の管理を行っている間にクラウ�
 
 ::: moniker-end
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
-無料試用版にサインアップするには、既存の Microsoft アカウントは必要ない。 この記事の他のすべての手順では、組織のグローバル管理者または課金管理者である必要があります。 詳細については、「[管理者の役割について](../admin/add-users/about-admin-roles.md)」を参照してください。
+無料試用版にサインアップするには、既存の Microsoft アカウントは必要ない。 この記事の他のすべての手順では、組織のグローバル管理者または課金管理者である必要があります。 詳細については、[「管理者の役割について」](../admin/add-users/about-admin-roles.md) を参照してください。
 
 ## <a name="try-a-free-trial-subscription"></a>無料試用版サブスクリプションを試す
 
@@ -90,7 +91,7 @@ Microsoft 365は、Microsoft が IT の管理を行っている間にクラウ�
 
 既にビジネス サブスクリプションのMicrosoft 365している場合は、Microsoft 365 管理センターを使用して別のサブスクリプションを試してみてください。
 
-新しいサブスクリプションを使用してサブスクリプションをMicrosoft 365 管理センター、新しいサブスクリプションは既存のサブスクリプションと同じ組織 (ドメイン名前空間) に関連付けられる。 この関連付けにより、組織内のユーザーをサブスクリプション間で移動したり、必要な追加製品のライセンスを割り当てやすくなります。
+[Microsoft 365 管理センター] を使用してサブスクリプションを追加<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">すると、新</a>しいサブスクリプションは既存のサブスクリプションと同じ組織 (ドメイン名前空間) に関連付けされます。 この関連付けにより、組織内のユーザーをサブスクリプション間で移動したり、必要な追加製品のライセンスを割り当てやすくなります。
 
 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">サービスを購入する</a>] ページに移動します。
 2. [サービス **の購入] ページ** に、組織で利用可能なプランが表示されます。 試Microsoft 365プランを選択します。
@@ -104,7 +105,7 @@ Microsoft 365は、Microsoft が IT の管理を行っている間にクラウ�
 
 既にビジネス サブスクリプションのMicrosoft 365している場合は、組織の別のサブスクリプションMicrosoft 365 管理センターを購入する方法を確認できます。
 
-管理センターを通じて別のサブスクリプションを購入すると、新しいサブスクリプションは既存のサブスクリプションと同じ組織 (ドメインネームスペース) に関連付けされます。 これにより、組織内のユーザーをサブスクリプション間で移動したり、必要な追加のサブスクリプションのライセンスを割り当てやすくなります。
+Microsoft 365 管理センター を使用して別のサブスクリプションを購入<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">すると、</a>新しいサブスクリプションは既存のサブスクリプションと同じ組織 (ドメインネームスペース) に関連付けられる。 これにより、組織内のユーザーをサブスクリプション間で移動したり、必要な追加のサブスクリプションのライセンスを割り当てやすくなります。
 
 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">サービスを購入する</a>] ページに移動します。
 2. [サービス **の購入] ページ** で、購入するプランを選択し、[詳細] を選択し、[購入] を **選択します**。

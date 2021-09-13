@@ -17,11 +17,11 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.openlocfilehash: 73a802f158b8804d7cf94708ecf3a6ac9355baae
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575782"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179232"
 ---
 # <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>ユーザーがユーザー インターフェイスを表示または操作Microsoft Defender ウイルス対策防止する
 
@@ -63,7 +63,7 @@ ms.locfileid: "58575782"
 
 4. ツリーを展開して **、Windowsインターフェイス> Microsoft Defender ウイルス対策 >コンポーネントを表示します**。
 
-5. [ヘッドレス UI モードを有効にする] **設定を** ダブルクリックし、オプションを [有効] に **設定します**。 **[OK]** をクリックします。 
+5. [ヘッドレス UI モードを有効にする] **設定を** ダブルクリックし、オプションを [有効] に **設定します**。 [**OK**] をクリックします。 
 
 ユーザー [が PC の保護を](configure-local-policy-overrides-microsoft-defender-antivirus.md) 変更する方法の詳細については、「ユーザーがポリシー設定をローカルで変更するのを防ぐ」を参照してください。
 
@@ -84,7 +84,7 @@ ms.locfileid: "58575782"
 
 4. ツリーを展開して、[**スキャン] WindowsコンポーネントMicrosoft Defender ウイルス対策**  >    >  **展開します**。
 
-5. [ユーザーにスキャンの **一時停止を許可する** ] 設定をダブルクリックし、オプションを [無効] に **設定します**。 **[OK]** をクリックします。 
+5. [ユーザーにスキャンの **一時停止を許可する** ] 設定をダブルクリックし、オプションを [無効] に **設定します**。 [**OK**] をクリックします。 
 
 ## <a name="related-articles"></a>関連記事
 

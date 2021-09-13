@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 719f4904-cbdd-4889-a0cf-fbd7837dfecd
 description: メッセージ センター、ターゲット リリース、ロードマップ、ブログ、Microsoft 365を使用して、最新の更新プログラムをCommunity。
-ms.openlocfilehash: 0740d94d930f291416599d7ccba4a36605108e53eb5996877c67ae145d6052ba
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d37680c4c0036f6e27619a09954d0776ca071e9e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53824517"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178888"
 ---
 # <a name="stay-on-top-of-changes"></a>変更内容の最新情報を把握する
 

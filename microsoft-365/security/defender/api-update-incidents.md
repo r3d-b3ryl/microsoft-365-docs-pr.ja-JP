@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4a083f4d891ef51b3156c2ad407a55de597cd6a754fa77d9d96fe5d6e3cffe4d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c30d9918e4e61973dc03e6a2e621ffda5e7e01e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863237"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177496"
 ---
 # <a name="update-incidents-api"></a>インシデント API の更新
 
@@ -56,7 +56,7 @@ ms.locfileid: "53863237"
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 ---|---|---
 アプリケーション|Incident.ReadWrite.All|すべてのインシデントの読み取りおよび書き込み
-委任 (職場または学校のアカウント)|Incident.ReadWrite|インシデントの読み取りおよび書き込み
+委任 (職場または学校アカウント)|Incident.ReadWrite|インシデントの読み取りおよび書き込み
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合、ユーザーはポータルでインシデントを更新するアクセス許可を持っている必要があります。
@@ -69,7 +69,7 @@ PATCH /api/incidents/{id}
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 ---|---|---
 Authorization|String|ベアラー {token}。 **必須**
 Content-Type|文字列|application/json. **必須**
@@ -78,7 +78,7 @@ Content-Type|文字列|application/json. **必須**
 
 要求本文で、更新するフィールドの値を指定します。 要求本文に含まれていない既存のプロパティは、関連する値の変更のために再計算する必要がない限り、値を維持します。 最適なパフォーマンスを得る場合は、変更していない既存の値を省略する必要があります。
 
-プロパティ|種類|説明
+プロパティ|型|説明
 ---|---|---
 status|列挙|インシデントの現在の状態を指定します。 使用できる値は `Active` `Resolved` 、、、および `Redirected` です。
 assignedTo|string|インシデントの所有者。

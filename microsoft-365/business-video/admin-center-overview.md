@@ -15,31 +15,32 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- admindeeplinkMAC
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 一般的なタスクやダッシュボード ビュー Microsoft 365、より複雑な設定とタスクを管理するには、ビューの簡略化されたビューを使用します。
-ms.openlocfilehash: 585deb5d4d1b7bf5758854ee90f31150ef1ed9e08b06c4402c90b7324965fad8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e3bee5487a0004f6741e51494c01f7e2c2355227
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53873161"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180688"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターの概要
 
 - [簡易表示の管理センター](#watch-the-admin-center-in-simplified-view)
 - [ダッシュボード ビューの管理センター](#watch-the-admin-center-in-dashboard-view)
 
-このMicrosoft 365 管理センター 2 つのビューがあります。簡略化されたビューは、小規模な組織が最も一般的なタスクを管理するのに役立ちます。 ダッシュボード ビューには、より複雑な設定とタスクが含まれます。 管理センターの上部にあるボタンから切り替えできます。
+この<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a> 2 つのビューがあります。簡略化されたビューは、小規模な組織が最も一般的なタスクを管理するのに役立ちます。 ダッシュボード ビューには、より複雑な設定とタスクが含まれます。 管理センターの上部にあるボタンから切り替えできます。
 
 ## <a name="watch-the-admin-center-in-simplified-view"></a>ウォッチ: 簡略化されたビューの管理センター
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWD3sq?autoplay=false]
 
-この機能Microsoft 365 管理センター、パスワードのリセット、請求書の表示、ユーザーの追加または削除など、すべて 1 か所で行えます。
+[パスワードの<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター、</a>パスワードのリセット、請求書の表示、ユーザーの追加または削除など、すべて 1 か所で行えます。
 
 仕事用アカウントで Office.com にサインインし、アプリ起動ツールを選択します。
 
@@ -61,7 +62,7 @@ ms.locfileid: "53873161"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfvDL?autoplay=false]
 
-このMicrosoft 365 管理センターは、クラウドでビジネスを管理する場所です。 ユーザーの追加と削除、ライセンスの変更、パスワードのリセットなどのタスクを実行できます。
+この<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>は、クラウドでビジネスを管理する場所です。 ユーザーの追加と削除、ライセンスの変更、パスワードのリセットなどのタスクを実行できます。
 
 セキュリティやデバイス管理などの専門的なワークスペースを使用すると、きめ細かな制御を行えます。 管理センターの機能の詳細については、この記事の「セキュリティ、デバイス管理、Exchange など、特定の種類の[IT](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange)ロールと他のワークスペースについて」を参照してください。
 
@@ -90,7 +91,6 @@ ms.locfileid: "53873161"
 "このページにアクセスしたり、このアクションを実行したりするためのアクセス許可はありません"というメッセージが表示された場合は、管理者ではありません。
 
 ### <a name="who-has-admin-permissions-in-my-business"></a>社内の管理者アカウントをお持ちの場合
-<a name="bkmk_admin"> </a>
 
 パスワードのリセット、アカウントの削除などのタスクを実行するために管理者が必要な場合の問い合わせ先を次に示します。
 
@@ -107,7 +107,7 @@ ms.locfileid: "53873161"
 
 ## <a name="turn-on-targeted-release"></a>対象指定リリースを有効にする
 
-1. [admin.microsoft.com](https://admin.microsoft.com) にサインインしてナビゲーション ウィンドウに移動し、[**設定**] \> [**組織プロファイルの設定**] の順に選択します。
+1. [組織の設定] [admin.microsoft.com](https://admin.microsoft.com)でサインインし、ナビゲーション ウィンドウに移動し、[組織の  >  **設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">**タブを選択** します</a>。
 
 2. [**リリースの設定**] カードに移動し、[**編集**] を選択します。
 
@@ -139,7 +139,7 @@ Microsoft ではいつでもユーザーからのご意見をお待ちしてお�
 
 ### <a name="what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange"></a>特定の種類の IT 担当者役割とセキュリティ、デバイス管理、Exchange などの他のワークスペースについて説明してください。
 
-Microsoft 365 管理センターは、Microsoft 365 を管理するすべてのチームおよび役割に共通の入り口です。 操作、情報、およびコントロールは、管理者や役割ごとにカスタマイズされています。 また、専門的なワークスペースでは、込み入った細かな制御を行えます。 これらの専門的なワークスペースには、SharePoint、Teams &amp; Skype、Exchange、セキュリティ、コンプライアンス、デバイス管理、および Azure Active Directory が含まれます。 専門的なワークスペースは、Microsoft 365 管理センター ([https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339)) のナビゲーション ウィンドウで見つけることができます。
+この<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>は、管理しているすべてのチームとロールの共通のエントリ Microsoft 365。 操作、情報、およびコントロールは、管理者や役割ごとにカスタマイズされています。 また、専門的なワークスペースでは、込み入った細かな制御を行えます。 これらの専門的なワークスペースには、SharePoint、Teams &amp; Skype、Exchange、セキュリティ、コンプライアンス、デバイス管理、および Azure Active Directory が含まれます。 専門的なワークスペースは、Microsoft 365 管理センター ([https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339)) のナビゲーション ウィンドウで見つけることができます。
 
 ### <a name="what-language-options-are-available-the-admin-center"></a>管理センターで使用できる言語オプションは何ですか?
 

@@ -15,13 +15,13 @@ ms.custom:
 - AdminSurgePortfolio
 description: 組織Microsoft 365 Business Standardを購入してセットアップします。
 ms.openlocfilehash: 7c5489a674145052eb40c533595a245a1d785247
-ms.sourcegitcommit: 8ef23d275d7209a705295e2b117d4382b20ad4f7
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58866925"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178439"
 ---
-# <a name="sign-up-for-a-microsoft-365-business-standard-subscription"></a>サブスクリプションにサインアップMicrosoft 365 Business Standardする
+# <a name="sign-up-for-a-microsoft-365-business-standard-subscription"></a>Microsoft 365 Business Standard サブスクリプションにサインアップする
 
 次の 2 つの方法でデータを取得Microsoft 365 Business Standard。
 - **[購入Microsoft 365 Business Standard](https://go.microsoft.com/fwlink/?linkid=2109397)して、独自のセットアップを完了します**:購入するには、次Microsoft 365 Business Standard [手順を実行します](#sign-up-steps)。
@@ -36,7 +36,7 @@ ms.locfileid: "58866925"
 お客様のビジネス用にMicrosoft 365 Business Standard (またはMicrosoft 365 Apps) をサインアップして購入するには、次の手順を実行します。
 
 > [!IMPORTANT]
-> ビジネス向けサービスにMicrosoft 365するユーザー (通常はビジネス所有者) は、自動的に組織の技術管理者になります。 他のユーザーを管理者として追加するには、ユーザーサービスの管理Microsoft 365できます。 詳細については、「 [管理者を追加する](../../business-video/add-admin.md) 」を参照してください。
+> Microsoft 365 for business にサインアップするユーザー (通常はビジネス所有者) は、自動的に組織の技術管理者になります。 Microsoft 365 のサービスを管理するサポートが必要な場合は、他のユーザーを管理者として追加することができます。 詳細については、「[管理者を追加する](../../business-video/add-admin.md)」をチェックアウトしてください。
 
 1. [ビジネスの [Microsoft 365] ページで、[](https://go.microsoft.com/fwlink/?linkid=2109654)プランと価格 **を&します**。
 2. 次のページで、月次コストを確認し、ページを下にスクロールして、そのページに含まれる情報の詳細を確認Microsoft 365。 [今Microsoft 365 Business Standard] で、[今すぐ **購入] を選択します**。
@@ -132,4 +132,4 @@ ms.locfileid: "58866925"
 
 [セットアップ ウィザードMicrosoft 365 Business Premiumの設定](../../business/set-up.md)
 
-[ユーザーをユーザーに招待Microsoft 365 Business Standard](user-invite-business-standard.md)
+[Microsoft 365 Business Standard にユーザーを招待する](user-invite-business-standard.md)

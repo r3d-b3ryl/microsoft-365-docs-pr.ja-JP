@@ -24,11 +24,11 @@ search.appverid:
 ms.assetid: f3433b6b-02f7-447f-9d62-306bf03638b0
 description: Android デバイスまたは iOS デバイスMicrosoft 365 Business Premiumアプリ保護設定を検証する方法について説明します。
 ms.openlocfilehash: 37593e499e772b3f3ed29d8c966812f60e088d1d
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360536"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180823"
 ---
 # <a name="validate-app-protection-settings-on-android-or-ios-devices"></a>Android デバイスまたは iOS デバイスのアプリ保護設定を検証する
 

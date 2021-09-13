@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Advanced eDiscovery、法的調査で保管担当者に通知する方法に関する法的ホールド通知ワークフローを簡単に管理できます。
-ms.openlocfilehash: 0cb845ee7aa110649d5c148868d0d8b1f16b2d801fb7b55c8b12170a121f975f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 28b719a83cbc1608ad5468e401a8b7946cb8da5f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842113"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179871"
 ---
 # <a name="work-with-communications-in-advanced-ediscovery"></a>ネットワーク内の通信をAdvanced eDiscovery
 

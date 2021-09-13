@@ -25,11 +25,11 @@ search.appverid:
 - MOE150
 description: アプリをMicrosoft 365 管理、携帯電話やタブレットからオンライン組織を管理する方法について学習します。
 ms.openlocfilehash: 7e503b70f6263e0bf5e949c7ca18ccfe0eb31ffb
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394362"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176943"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>管理者Microsoft 365アプリについて
 
@@ -52,7 +52,7 @@ ms.locfileid: "58394362"
 > [!IMPORTANT]
 > iOS または Android の管理モバイル アプリを使用して問題が発生した場合は、feedback365@microsoft.com にお問 [い合](mailto:feedback365@microsoft.com) わせください。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 管理者モバイル アプリを使用するには、Microsoft 365組織の管理者である必要があります。
   

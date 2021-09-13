@@ -21,18 +21,18 @@ search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: ユーザー アカウントを削除する方法と、ユーザーの電子メールとコンテンツをOneDriveする方法、および製品ライセンスを保持するかどうかを説明します。
-ms.openlocfilehash: 8fe01b286f59ea43f1e810f4e70422aeda140db803c76f8b7dafe04fa06953b1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 81dc71c6734340146e1dd13bcd59696eed5be202
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53815745"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177087"
 ---
 # <a name="delete-a-user-from-your-organization"></a>組織からユーザーを削除する
   
 **職場または学校で使用する *自分の* Microsoft 365 ユーザー アカウントを削除する方法をお探しの場合は、職場または大学のテクニカル サポートにこれらの手順の実行を依頼してください。**
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 - ユーザー アカウントを削除できるのは、職場や学校の [Microsoft 365 グローバル管理者](about-admin-roles.md)またはユーザー管理のアクセス許可を持っている管理者のみです。
 - 30 日後にユーザーのデータが永久に削除されるまではアカウントを[復元](restore-user.md)できます。
@@ -67,7 +67,7 @@ ms.locfileid: "53815745"
 
 ::: moniker range="o365-germany"
 
- 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
+ 1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> の順に選択します。
 
 ::: moniker-end
 
@@ -92,7 +92,7 @@ ms.locfileid: "53815745"
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> の順に選択します。
 
 ::: moniker-end
 

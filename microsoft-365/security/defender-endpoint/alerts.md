@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 5d7fe37cfb4dc923bd7ddc73db9ff8443bca0a0a
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508252"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179400"
 ---
 # <a name="alert-resource-type"></a>アラート リソースの種類
 
@@ -47,7 +47,7 @@ ms.locfileid: "58508252"
 |[警告の取得](get-alert-info-by-id.md)|[アラート](alerts.md)|1 つのアラート [オブジェクトを取得](alerts.md) します。|
 |[アラートの一覧表示](get-alerts.md)|[アラート](alerts.md) コレクション|アラート [コレクションを一覧表示](alerts.md) します。|
 |[警告の更新](update-alert.md)|[アラート](alerts.md)|特定のアラートを [更新します](alerts.md)。|
-|[バッチ更新の通知](batch-update-alerts.md)||アラートのバッチを更新 [します](alerts.md)。|
+|[アラートのバッチ更新](batch-update-alerts.md)||アラートのバッチを更新 [します](alerts.md)。|
 |[アラートの作成](create-alert-by-reference.md)|[アラート](alerts.md)|Advanced Hunting から取得したイベント データに基づいてアラート [を作成します](run-advanced-query-api.md)。|
 |[関連するドメインを一覧表示する](get-alert-related-domain-info.md)|ドメイン コレクション|アラートに関連付けられている URL を一覧表示します。|
 |[関連ファイルを一覧表示する](get-alert-related-files-info.md)|[ファイル](files.md) コレクション|アラートに [関連](files.md) 付けられているファイル エンティティを一覧表示 [します](alerts.md)。|

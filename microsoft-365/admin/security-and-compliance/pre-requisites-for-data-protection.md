@@ -23,11 +23,11 @@ search.appverid:
 ms.assetid: 7770e280-3a6c-436f-a157-b008a2744f51
 description: ビジネス向けアプリケーションを使用して組織をMicrosoft 365、ユーザーのデバイスで作業データを保護するための要件について説明します。
 ms.openlocfilehash: f92cd8d49ba645788549e5490102d76feff51dd3
-ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58377746"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178631"
 ---
 # <a name="prerequisites-for-protecting-data-on-devices-with-microsoft-365-for-business"></a>ビジネス向けデバイスでデータを保護するためのMicrosoft 365前提条件
 

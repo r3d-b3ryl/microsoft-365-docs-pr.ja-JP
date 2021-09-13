@@ -17,11 +17,11 @@ audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
 ms.openlocfilehash: 6fa4ff040bb6c863fab88e25728c69bcf920a07b
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58863643"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177527"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>リアルタイム保護に関連するパフォーマンスの問題のトラブルシューティング
 
@@ -121,7 +121,7 @@ Microsoft Defender for Endpoint のリアルタイム保護サービスに関連
         >
         > ![Procmon を最小化します。](images/procmon-minimize.png)
 
-7. 手順 6 の手順の 1 つを実行すると、次にフィルターを設定するオプションが表示されます。 **[OK]** をクリックします。 キャプチャが完了したら、いつでも結果をフィルター処理できます。
+7. 手順 6 の手順の 1 つを実行すると、次にフィルターを設定するオプションが表示されます。 **[OK]** を選択します。 キャプチャが完了したら、いつでも結果をフィルター処理できます。
 
     ![[フィルター処理名] は [システム除外] です。](images/procmon-filter-options.png)
 

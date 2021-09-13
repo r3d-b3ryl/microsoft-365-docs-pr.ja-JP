@@ -15,12 +15,12 @@ ms.custom:
 description: この記事では、EOP (EOP) 管理者が使用できるレポートとトラブルシューティング Microsoft Exchange Onlineについて説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8131fcd655d423438f80d3f2b4b5cbaf9acc32be056ef2b7a62e6647dd67ee70
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cc49a92d5fb1fb0368b14eef7524638542f38deb
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56886181"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179159"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>EOP でのレポートとメッセージの追跡
 
@@ -71,7 +71,7 @@ EOP のレポート機能とメッセージ トレース データが使用可�
 
 ****
 
-|レポートの種類|データ使用可能期間 (遡及期間)|遅延|
+|レポートの種類|データ使用可能期間 (遡及期間)|Latency|
 |---|---|---|
 |メール保護概要レポート|90 日|メッセージ データの集計は 24 ～ 48 時間以内にほぼ完了します。最大 5 日間のマイナーな増分集計変更が実施される場合があります。|
 |メール保護詳細レポート|90 日|生成後 7 日未満の詳細データに関しては、24 時間以内に表示されるはずですが、48 時間まで完成しない場合があります。最大 5 日分のマイナーな増分変更が実施される場合があります。 <p> 7 日以上前のメッセージに関する詳細レポートを表示するには、結果が出るまでに最大で数時間かかる場合があります。|

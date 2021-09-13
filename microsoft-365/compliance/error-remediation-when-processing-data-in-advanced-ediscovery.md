@@ -18,11 +18,11 @@ ms.assetid: ''
 description: エラー修復を使用して、コンテンツの適切な処理を妨げる可能性Advanced eDiscoveryのデータの問題を修正する方法について説明します。
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: 4b249f7941d4f366a2651b570286d2974aca176a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58556182"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175928"
 ---
 # <a name="error-remediation-when-processing-data"></a>データ処理中のエラー修復
 

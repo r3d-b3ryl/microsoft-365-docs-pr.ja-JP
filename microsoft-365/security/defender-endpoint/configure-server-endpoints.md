@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: ee6241e6db062730446505e2bcbc377b15ffee9c
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58745759"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179360"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Microsoft Defender Windowsエンドポイント サービスへのオンボード サーバー
 
@@ -71,7 +71,7 @@ System Center Operations Manager (SCOM) または Azure Monitor (旧称:Operatio
   4. クライアントの構成と更新System Center Endpoint Protectionします。
 
 
-#### <a name="before-you-begin"></a>はじめに
+#### <a name="before-you-begin"></a>始める前に
 
 オンボーディング要件を満たすために、次の手順を実行します。
 

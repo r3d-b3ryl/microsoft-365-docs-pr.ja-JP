@@ -16,11 +16,11 @@ ms.collection:
 ms.custom: ''
 description: ネットワークを実装するためのロードマップMicrosoft 365です。
 ms.openlocfilehash: 3fb9c99bd0381730a41bd65012efe5488b85509d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570055"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177744"
 ---
 # <a name="networking-roadmap-for-microsoft-365"></a>ネットワークのロードマップ (Microsoft 365
 
@@ -30,7 +30,7 @@ Microsoft 365には、コラボレーションと生産性のクラウド サー
 
 以下の記事を活用して主な違いを理解し、エッジ デバイス、クライアント コンピューター、オンプレミス ネットワークを変更して、オンプレミス ユーザーの最高のパフォーマンスを引き出します。
 
-## <a name="plan"></a>プラン
+## <a name="plan"></a>計画
 
 ネットワーク実装の計画フェーズでは、次の処理を行います。
 

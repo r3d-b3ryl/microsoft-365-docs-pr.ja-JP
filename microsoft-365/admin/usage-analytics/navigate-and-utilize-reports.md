@@ -21,11 +21,11 @@ search.appverid:
 ms.assetid: 286fcf0b-ffc7-4593-8073-d7a4a5dd2b45
 description: ナビゲーション タブとフィルターを使用してレポートを表示する方法について学習します。
 ms.openlocfilehash: 4cd39fea09f4204701b4183d02cd64d87d591933
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569263"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180728"
 ---
 # <a name="navigate-and-utilize-the-reports-in-microsoft-365-usage-analytics"></a>Microsoft 365 利用状況分析でレポート間を移動して活用する
 

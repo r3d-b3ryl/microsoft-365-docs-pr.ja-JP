@@ -21,11 +21,11 @@ search.appverid:
 - MOE150
 description: 組織のOneDriveレポートを取得し、すべてのユーザーのアクティビティ、共有OneDriveファイルの数、およびストレージ使用率を確認します。
 ms.openlocfilehash: 145bf6cc4f079e4916730b949ed0c4a798242860
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564830"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177231"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-activity"></a>Microsoft 365管理センターのレポート - OneDrive for Businessアクティビティ
 

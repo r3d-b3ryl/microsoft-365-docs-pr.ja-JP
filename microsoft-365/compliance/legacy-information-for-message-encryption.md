@@ -17,13 +17,14 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkMAC
 description: 従来のファイルを組織Office 365 Message Encryption (OME) に移行する方法について説明します。
-ms.openlocfilehash: 324447fe09280cef52c607613f5db8fb61b4a0b2
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: a8f165aa9fde70cfc448e999dbc7abc8818e8cd5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569791"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179911"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Office 365 Message Encryption の古い情報
 
@@ -69,7 +70,7 @@ Office 365 Message Encryptionは、Microsoft Azure Rights Management (Azure RMS)
 
 2. [管理] **タイルを選択** します。
 
-3. Microsoft 365 管理センター で、**[管理センター]** \> **[Exchange]** の順に選択します。
+3. [管理] [Microsoft 365 管理センター](https://go.microsoft.com/fwlink/p/?linkid=2024339)で、[**管理センター] を** \> **選択Exchange。**
 
 4. EAC で、[メール フロールール] に移動 **し** \> **、[** 新しい新しい] **アイコンを** ![ 選択します。](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>**新しいルールを作成します**。 EAC の使用の詳細については、「Exchange[管理センター」を参照](/exchange/exchange-admin-center)Exchange Online。
 
@@ -125,7 +126,7 @@ Office 365 Message Encryptionは、Microsoft Azure Rights Management (Azure RMS)
 
 2. [管理] **タイルを選択** します。
 
-3. Microsoft 365 管理センター で、**[管理センター]** \> **[Exchange]** の順に選択します。
+3. [管理] <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>で、[**管理センター] を** \> **選択Exchange。**
 
 4. EAC で、[メール フロールール] に移動 **し** \> **、[** 新しい新しい] **アイコンを** ![ 選択します。](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>**新しいルールを作成します**。 EAC の使用の詳細については、「Exchange[管理センター」を参照](/exchange/exchange-admin-center)Exchange Online。
 
@@ -305,7 +306,7 @@ EHE のすべてのお客様は、Office 365 Message Encryption にアップグ�
   
  **Q. 特定の受信者に送信されたメッセージを取り消すことは可能ですか。**
   
-その必要はありません。 送信後に特定のユーザーにメッセージを取り消す事はできない。
+いいえ。 送信後に特定のユーザーにメッセージを取り消す事はできない。
   
  **Q. 受信されて既読になった暗号化メッセージのレポートを表示することはできますか。**
   

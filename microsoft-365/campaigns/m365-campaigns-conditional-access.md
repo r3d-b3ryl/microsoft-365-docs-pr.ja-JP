@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 事前に構成されたセキュリティ設定を提供することで、セキュリティの既定値が ID 関連の攻撃から組織を保護する方法について学習します。
-ms.openlocfilehash: 88fac794b59785a37121800c95a99e2b6be3b35deb2830c927600442f3bdb42f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ea36ba45af26a767b08ee1e75931dca54dacea64
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53809120"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180511"
 ---
 # <a name="turn-on-security-defaults"></a>セキュリティの既定値を有効にする
 

@@ -20,17 +20,17 @@ search.appverid:
 - MET150
 description: Basic Mobility and Security を使用して、組織情報を保護するデバイス ポリシーを作成します。
 ms.openlocfilehash: 9792a936f2f209eabb4da9ce725e611ef3766526
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564516"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176888"
 ---
 # <a name="create-device-security-policies-in-basic-mobility-and-security"></a>Basic Mobility and Security でデバイス セキュリティ ポリシーを作成する
 
 Basic Mobility and Security を使用すると、承認されていないアクセスから組織の情報を保護するデバイス Microsoft 365作成できます。 ポリシーは、デバイスのユーザーが該当する Microsoft 365 ライセンスを持ち、デバイスを Basic Mobility and Security に登録している組織内の任意のモバイル デバイスに適用できます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 > [!IMPORTANT]
 > モバイル デバイス ポリシーを作成する前に、Basic Mobility and Security をアクティブ化してセットアップする必要があります。 詳細については、「Basic Mobility and Security の概要」を参照してください。
@@ -120,7 +120,7 @@ Basic Mobility and Security を使用すると、承認されていないアク�
 
 ユーザー デバイスにポリシーを適用すると、各デバイスへの影響はデバイスの種類によって多少異なります。 ポリシーが異なるデバイスに与える影響の例については、次の表を参照してください。
 
-|**セキュリティ ポリシー**|**Android 4 以降**|**Samsung KNOX**|**iOS 6 以降**|**注**|
+|**セキュリティ ポリシー**|**Android 4 以降**|**Samsung KNOX**|**iOS 6 以降**|**メモ**|
 |:-----|:-----|:-----|:-----|:-----|
 |暗号化されたバックアップを要求|いいえ|はい|はい|iOS 暗号化バックアップが必要です。|
 |クラウド バックアップの禁止|はい|はい|はい|Android の Google バックアップをブロックする (灰色表示)、iOS のクラウド バックアップ。|

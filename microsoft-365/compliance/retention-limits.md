@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: アイテム保持ポリシーおよび保持ラベル ポリシーのポリシーおよびポリシーごとの項目の最大数を把握する
-ms.openlocfilehash: 97c55e95a1269b840b83016da0893fc03cfff14112c5f993c15fa8586a81fcd1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 92647911cfc3435c2d88ce5caa0624a34467a60f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795772"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179823"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>アイテム保持ポリシーとアイテム保持ラベルの制限
 

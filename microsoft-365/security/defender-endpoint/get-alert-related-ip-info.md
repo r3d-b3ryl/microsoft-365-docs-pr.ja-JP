@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 3336cd39dcf0db15b5b2adb2189ce627b9dc6b3cd775fa19d060001613c9510a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a317e197c425750c8db0592f1e2f1e4d6d90a142
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53829389"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177616"
 ---
 # <a name="get-alert-related-ips-information-api"></a>アラート関連の AP 情報 API を取得する
 
@@ -54,7 +54,7 @@ ms.locfileid: "53829389"
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
 アプリケーション|Ip.Read.All|'IP アドレス プロファイルの読み取り'
-委任 (職場または学校のアカウント)|Ip.Read.All|'IP アドレス プロファイルの読み取り'
+委任 (職場または学校アカウント)|Ip.Read.All|'IP アドレス プロファイルの読み取り'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
@@ -70,7 +70,7 @@ GET /api/alerts/{id}/ips
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**
 

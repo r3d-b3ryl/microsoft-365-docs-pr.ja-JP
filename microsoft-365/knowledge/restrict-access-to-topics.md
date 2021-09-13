@@ -13,12 +13,12 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 localization_priority: None
-ms.openlocfilehash: e0fc8d2bce8de471049f36194696fd5600b05476ccceb362a448d7ba79be45d7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d6dfb2f7f432a40c5b6e96a9437f50ba47e23387
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854677"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179567"
 ---
 # <a name="restrict-access-to-topics-in-microsoft-viva-topics"></a>サイト内のトピックへのアクセスを制限Microsoft Viva トピック
 

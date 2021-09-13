@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: bc00b3849e0fb6ce3749ff0e6280108c0cc41bd6
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.openlocfilehash: 5c63da586affc23bea26e416479fa2e3e7a26d73
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58863859"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177423"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender の新機能
 
@@ -32,22 +32,39 @@ ms.locfileid: "58863859"
 > Microsoft 365 Defender を体験してみませんか? [ラボ環境で評価する](m365d-evaluation.md?ocid=cx-docs-MTPtriallab)ことも、[実稼働環境でパイロット プロジェクトを実行する](m365d-pilot.md?ocid=cx-evalpilot)こともできます。
 >
 
-次の機能は、最新のリリースの一般公開 (GA) でMicrosoft 365 Defender。
+次の機能は、プレビュー版または一般公開 (GA) の最新リリースMicrosoft 365 Defender。
 
 RSS フィード: 次の URL をコピーしてフィード リーダーに貼り付け、このページが更新された場合に通知を受け取ります。
 ```http
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
+
+他の Microsoft Defender セキュリティ製品の新機能の詳細については、以下を参照してください。
+
+- [Microsoft Defender for Office 365 の新機能](../office-365-security/whats-new-in-defender-for-office-365.md)
+- [Microsoft Defender for Endpoint の新機能](../defender-endpoint/whats-new-in-microsoft-defender-atp.md)
+- [Microsoft Defender for Identity の新機能](/defender-for-identity/whats-new)
+- [新しい機能Microsoft Cloud App Security](/cloud-app-security/release-notes)
+
+
+
+
+
 ## <a name="august-2021"></a>2021 年 8 月
 - (プレビュー)Microsoft Defender for Office 365高度な検索で利用可能なデータ
 <br>電子メール テーブルの新しい列は、高度な検索を使用してより詳細な調査を行う電子メール ベースの脅威に関するより多くの洞察を提供できます。 この列は `AuthenticationDetails` [、EmailEvents、EmailAttachmentInfo、](./advanced-hunting-emailevents-table.md) `FileSize` [および](./advanced-hunting-emailattachmentinfo-table.md) `ThreatTypes` `DetectionMethods` [EmailPostDeliveryEvents テーブルに含](./advanced-hunting-emailpostdeliveryevents-table.md) める必要があります。 
 
-- (プレビュー)インシデント グラフ
-
-  **インシデントの [Graph]** タブの新しい [セキュリティ] タブには、攻撃の全範囲、攻撃がネットワーク経由で時間の間にどのように広がったか、開始した場所、攻撃者がどこまで攻撃を行ったかが表示されます。
+- (プレビュー)インシデント グラフ <br>  **インシデントの [Graph]** タブの新しい [セキュリティ] タブには、攻撃の全範囲、攻撃がネットワーク経由で時間の間にどのように広がったか、開始した場所、攻撃者がどこまで攻撃を行ったかが表示されます。
 
 ## <a name="july-2021"></a>2021 年 7 月
 - [Professional サービス カタログ](https://sip.security.microsoft.com/interoperability/professional_services)<br>サポートされているパートナー接続を使用して、プラットフォームの検出、調査、および脅威インテリジェンス機能を強化します。
+
+## <a name="june-2021"></a>2021 年 6 月
+- (プレビュー) [脅威タグごとにレポートを表示する](threat-analytics.md#view-reports-per-threat-tags)<br> 脅威タグは、特定の脅威カテゴリに集中し、最も関連性の高いレポートを確認するのに役立ちます。
+- (プレビュー) [ストリーミング API](../defender-endpoint/raw-data-export.md)<br> Microsoft 365 Defenderは、高度なハンティングを通じて利用可能なすべてのイベントをイベント ハブや Azure ストレージ アカウントにストリーミングできます。
+- (プレビュー) [高度な検索でアクションを実行する](advanced-hunting-take-action.md)<br> 高度な狩猟で見つけた脅威を迅速に含むか、侵害された資産 [に対処します](advanced-hunting-overview.md)。
+- (プレビュー) [ポータル内スキーマ参照](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)<br> セキュリティ センターで高度な検索スキーマ テーブルに関する情報を直接取得します。 テーブルと列の説明に加えて、この参照には、サポートされているイベントの種類 ( `ActionType` 値) とサンプル クエリが含まれます。
+- (プレビュー) [DeviceFromIP() 関数](advanced-hunting-devicefromip-function.md)<br> 特定の時間範囲で特定の IP アドレスまたはアドレスが割り当てられているデバイスに関する情報を取得します。
     
 
 ## <a name="may-2021"></a>2021 年 5 月
@@ -66,30 +83,4 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 - [CloudAppEvents テーブル](advanced-hunting-cloudappevents-table.md) <br>さまざまなクラウド アプリとサービスのイベントに関する情報を、Microsoft Cloud App Security。 この表には、以前に使用した情報も含まれています `AppFileEvents` 。
 ## <a name="february-2021"></a>2021 年 2 月
 - (プレビュー)拡張された[Microsoft 365 Defenderポータル ( https://security.microsoft.com) ](https://security.microsoft.com)がパブリック プレビューで利用可能になります。 この新しいエクスペリエンスにより、Defender for Endpoint と Defender for Office 365が中央に表示されます。 [変更点についての詳細情報](./overview-security-center.md) はこちらを参照してください。
-
-## <a name="september-2020"></a>2020 年 9 月
-- [IdentityDirectoryEvents テーブル](advanced-hunting-identitydirectoryevents-table.md) <br> Active Directory を実行しているオンプレミスのドメイン コントローラーに関連するイベントを検索します (AD)。 この [高度な検索](advanced-hunting-overview.md) スキーマ テーブルでは、ドメイン コントローラー上の ID 関連のイベントとシステム イベントの範囲について説明します。
-- [AssignedIPAddresses() 関数](advanced-hunting-assignedipaddresses-function.md) <br> 高度な検索クエリでこの関数を使用すると、デバイスに割り当てられた最新の IP アドレスや、特定の時刻から最新の IP アドレスをすばやく取得できます。
-
-## <a name="july-2020"></a>2020 年 7 月
-- [FileProfile() 関数](advanced-hunting-fileprofile-function.md) <br> 高度な検索クエリでこの関数を使用して、包括的なファイル情報で結果を強化します。
-- [ID テーブルとアプリ テーブル](advanced-hunting-schema-tables.md)<br> 高度なハンティング スキーマの[IdentityLogonEvents、IdentityQueryEvents、](advanced-hunting-identitylogonevents-table.md)[および AppFileEvents](advanced-hunting-appfileevents-table.md)テーブルを使用して、認証イベント、Active Directory クエリ、およびアプリ関連のアクティビティを表示します。 [](advanced-hunting-identityqueryevents-table.md)
-- [検出する](advanced-hunting-go-hunt.md)<br> インシデントの調査から、高度な検索で特定のイベント、ユーザー、デバイス、または他のエンティティの種類を調べにすばやくピボットします。
-
-## <a name="june-2020"></a>2020 年 6 月
-- Twitter フィード <br> ダッシュボード内で、最新のセキュリティ調査、脅威インテリジェンス、製品ニュースなどをご覧ください。
-- [EmailPostDeliveryEvents スキーマ テーブル](advanced-hunting-emailpostdeliveryevents-table.md) <br> 高度な検索クエリに、電子メール メッセージに対して実行される配信後のアクションに関する情報を組み込む。
-- [高度な検索でレコードを検査する](advanced-hunting-query-results.md#drill-down-from-query-results) <br> 新しい詳細パネルを使用して、クエリ結果のレコードをすばやく検査します。
-
-## <a name="may-2020"></a>2020 年 5 月
-- [カスタム検出](custom-detections-overview.md) <br> 高度な検索クエリを使用して、セキュリティ イベントとシステム状態を自動的に監視して対応するカスタム検出ルールを作成します。
-
-## <a name="february-2020"></a>2020 年 2 月
-- [インシデント](incidents-overview.md) <br> 攻撃の開始場所と、攻撃の範囲を確認するためのその他の詳細を正確に知る。
-- [自動調査および対応](m365d-autoir.md) <br> セキュリティ運用チームは AIR を使用することで、セキュリティの警告やインシデントへの組織の対応能力を大幅に向上させることが可能です。
-- [高度なハンティング機能の強化](advanced-hunting-overview.md) <br> Kusto クエリ言語とセキュリティに最適化されたスキーマを使用して、モダン ワークスペース全体で脅威を事前に検出します。
-
-## <a name="march-2019"></a>2019 年 3 月
-- 高度な検出 <br> 電子メールやデータ、デバイス、および ID に影響を与える脅威を積極的に検出できるさまざまな検索機能へのランディング ページ。
-- [Microsoft セキュア スコア](microsoft-secure-score.md) <br> 組織のセキュリティ体制を測定し、より多くの改善アクションを示す数値が大きい。 セキュリティ スコアの推奨事項を実行することにより、組織を脅威から保護できます。 
-- [レポート](overview-security-center.md) <br>  セキュリティ アナリストや管理者が毎日の操作の一環として追跡するさまざまな領域をカバーするカードのホストを備えます。
+- **[(プレビュー) Microsoft 365 Defender](api-overview.md)** API - トップ レベルの Microsoft 365 Defender API を使用すると、共有インシデントテーブルと高度なハンティング テーブルに基づいてワークフローを自動化できます。 

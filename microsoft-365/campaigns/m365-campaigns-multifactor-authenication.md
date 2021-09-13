@@ -1,5 +1,5 @@
 ---
-title: 多要素認証をセットアップする
+title: 多要素認証を設定する
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -25,11 +25,11 @@ search.appverid:
 - MOE150
 description: 多要素認証を設定します。
 ms.openlocfilehash: 81a6ff75cfa5ea0250962f3e21da7890ed795ccb
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58347182"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180504"
 ---
 # <a name="set-up-multifactor-authentication-on-your-mobile-device"></a>モバイル デバイスで多要素認証を設定する
 

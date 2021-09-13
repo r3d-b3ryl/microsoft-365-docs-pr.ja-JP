@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 80ea369284e9b9677bbd1e51612915057eea3136b5e8c6172230e332187edb1e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 26033189eb5d63aee632dba2254f2109d273ae0b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53816525"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179040"
 ---
 # <a name="step-2-uploading-a-package"></a>手順 2: パッケージのアップロード
 

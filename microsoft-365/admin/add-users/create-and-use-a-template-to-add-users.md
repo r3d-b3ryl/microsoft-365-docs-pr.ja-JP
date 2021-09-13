@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: テンプレートを作成して使用すると、時間を節約し、複数のユーザーを追加するときに設定を標準化できます。
-ms.openlocfilehash: ff111850cf0dabda464653bc7503622d92e8468a430eb27a3dd2843f6ec5ade5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3ce70f6d37036a2f71bdc2d41bfb5677a54b8db9
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53815841"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177096"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>テンプレートを作成して使用し、ユーザーを追加する
 
@@ -43,7 +43,7 @@ ms.locfileid: "53815841"
 - ライセンスの場所
 - ライセンスの選択
 - アプリケーションの選択肢
-- 役割
+- Role
 - ジョブ プロファイル、部署、部署、電話番号、Office、Office **など**、ほとんどのプロファイル **情報** 
 
 次の情報はユーザー固有の情報であり、テンプレートには保存されません。

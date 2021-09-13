@@ -20,11 +20,11 @@ ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: コンテンツ検索とこの記事のスクリプトを使用して、メールボックスを検索し、OneDrive for Businessのサイトを検索します。
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: c6dea7423eefbbbba6efdf3b9fe2bbd320cb4d7d
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508180"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175760"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>コンテンツ検索を使用してメールボックスと OneDrive for Business サイトでユーザーのリストを探す
 

@@ -20,11 +20,11 @@ search.appverid:
 - MOE150
 description: コンテンツ コラボレーションの詳細 - ユーザーエクスペリエンスの生産性スコア。
 ms.openlocfilehash: fa4e84f0cf454e28cd773292f2a4065cb1252acf
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566930"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178712"
 ---
 # <a name="content-collaboration--people-experiences"></a>コンテンツのコラボレーション – ユーザー エクスペリエンス
 

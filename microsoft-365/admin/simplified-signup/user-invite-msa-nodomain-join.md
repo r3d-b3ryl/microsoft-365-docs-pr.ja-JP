@@ -15,11 +15,11 @@ ms.custom:
 - AdminSurgePortfolio
 description: メールの招待を受け入れて、Microsoft 365 Business Standard、Yahoo、Gmail、その他のOutlookを使用して組織に参加します。
 ms.openlocfilehash: 5fc7fd3fe42ef3e8aa200f4d0fa967b3be6bcdef
-ms.sourcegitcommit: 8ef23d275d7209a705295e2b117d4382b20ad4f7
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58866915"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178424"
 ---
 # <a name="accept-an-email-invitation-to-a-microsoft-365-business-standard-subscription-organization-using-an-outlook-yahoo-gmail-or-other-account-user"></a>ユーザー、Yahoo、Gmail、その他Microsoft 365 Business Standardアカウント (User) を使用して、Outlookサブスクリプション組織への電子メールの招待を受け入れる
 

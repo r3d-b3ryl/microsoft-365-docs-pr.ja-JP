@@ -25,11 +25,11 @@ search.appverid:
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: サービス管理者などの管理者ロールはビジネス機能にマップされ、管理センターで特定のタスクを実行するための権限を付与します。
 ms.openlocfilehash: 42c28d230cef36f7f6e0421cc46f64a53222eca8
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58585610"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177168"
 ---
 # <a name="about-admin-roles"></a>管理者ロールについて
 

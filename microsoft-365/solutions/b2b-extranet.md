@@ -18,11 +18,11 @@ f1.keywords: NOCSH
 recommendations: false
 description: パートナー組織の管理ゲストと B2B エクストラネット サイトまたはチームを作成する方法について説明します。
 ms.openlocfilehash: 7e3ddf12473095b0a7ac91ded01256e77c299ddf
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572385"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177320"
 ---
 # <a name="create-a-b2b-extranet-with-managed-guests"></a>管理されたゲストで B2B エクストラネットを作成する
 

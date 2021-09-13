@@ -15,11 +15,11 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: この新しい予測コーディング モジュールAdvanced eDiscovery機械学習を使用して、レビュー セット内のアイテムを分析し、ケースまたは調査に関連するアイテムを予測します。
 ms.openlocfilehash: 0b453713d986572dae8d80efe6dcd60b0616d789
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567690"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177895"
 ---
 # <a name="learn-about-predictive-coding-in-advanced-ediscovery-preview"></a>予測コーディングについて詳しくは、Advanced eDiscovery (プレビュー)
 

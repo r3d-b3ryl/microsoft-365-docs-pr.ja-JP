@@ -17,11 +17,11 @@ ms.custom:
 - seo-marvel-apr2020
 description: この記事には、2007 年または 2010 年Office 2010 年Officeアップグレードの計画に役立つユーザー向けリソースが含まれている。
 ms.openlocfilehash: 1e4379510ba6c4cf36200a6f49f56aa11a151140
-ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58378037"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179711"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Office 2007 または Office 2010 サーバー/クライアントからアップグレードする計画を立てる
 
@@ -36,7 +36,7 @@ ms.locfileid: "58378037"
 
 この記事のリソースを使用して、アップグレードを開始します。
 
-## <a name="what-is-microsoft-365"></a>Microsoft 365とは
+## <a name="what-is-microsoft-365"></a>Microsoft 365 とは
 
 [Microsoft 365](https://www.microsoft.com/microsoft-365)は、革新的なOffice、インテリジェント クラウド サービス、世界クラスのセキュリティの組み合わせで、より多くの実現に役立ちます。
 

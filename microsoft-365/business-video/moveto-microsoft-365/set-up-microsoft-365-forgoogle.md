@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Google Workspace からの移行のMicrosoft 365準備が整った状態で設定する方法について説明します。
-ms.openlocfilehash: 231847c9d3a0b34e4422a8e2f8fb93bc59e0c39f3e01be42b0c0c71ea8963a2a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ec8813f62febbd1c4ee2afa6877e4be505a75a81
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53831625"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180664"
 ---
 # <a name="set-up-microsoft-365-for-google-workspace-migration"></a>Google ワークスペースのMicrosoft 365の設定
 

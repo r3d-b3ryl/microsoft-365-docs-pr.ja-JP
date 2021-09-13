@@ -17,11 +17,11 @@ ms.custom:
 search.appverid: MET150
 description: 管理サービス プロバイダー (MSP) で Microsoft 365 Lighthouseヘルプとサポートを取得する方法について説明します。
 ms.openlocfilehash: 392eed01b5519c512c89460776ec9f4391b7bda2
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58506432"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179551"
 ---
 # <a name="get-help-and-support-for-microsoft-365-lighthouse"></a>ユーザーのヘルプとサポートをMicrosoft 365 Lighthouse 
 

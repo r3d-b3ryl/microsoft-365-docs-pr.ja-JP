@@ -16,11 +16,11 @@ ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: デバイス上のユーザーが検出した脅威を確認Microsoft Defender ウイルス対策管理するWindows 10します。
 ms.openlocfilehash: d1a611143af1f438989a549133c6f7c1e7502357
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360520"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178624"
 ---
 # <a name="review-detected-threats-and-take-action"></a>検出された脅威を確認して対処する
 

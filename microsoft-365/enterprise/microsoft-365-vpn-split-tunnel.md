@@ -19,11 +19,11 @@ f1.keywords:
 - NOCSH
 description: Office 365 で VPN スプリット トンネリングを使用して、リモート ユーザーの Office 365 の接続を最適化する方法のガイダンスです。
 ms.openlocfilehash: bfb774f6404f8eec1c517b2e2e4e434694f9673f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575854"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177776"
 ---
 # <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunneling"></a>VPN スプリット トンネリングを使用してリモート ユーザーの Office 365 の接続を最適化する
 <!---

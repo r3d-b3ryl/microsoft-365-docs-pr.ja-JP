@@ -23,11 +23,11 @@ ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: コンテンツ検索の実際の結果をエクスポートする代わりに、Microsoft 365 コンプライアンス センターレポートをエクスポートできます。 レポートには、検索結果の概要と、エクスポートされる各アイテムに関する詳細情報を含むドキュメントが含まれる。
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 56a61bb1cd0fa9952f85d75ae50f42754c583ce7
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570247"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175895"
 ---
 # <a name="export-a-content-search-report"></a>コンテンツ検索のレポートをエクスポートする
 

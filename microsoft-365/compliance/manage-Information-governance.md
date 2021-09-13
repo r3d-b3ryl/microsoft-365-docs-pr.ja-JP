@@ -16,11 +16,11 @@ search.appverid:
 recommendations: false
 description: コンプライアンスや規制の要件を満たすようにデータを管理するには、Microsoft 情報ガバナンス機能を実装します。
 ms.openlocfilehash: 7bbeefc07da1f620f8b22484ad399f87bb45f74e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569779"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177976"
 ---
 # <a name="microsoft-information-governance-in-microsoft-365"></a>Microsoft 365 の Microsoft 情報ガバナンス
 

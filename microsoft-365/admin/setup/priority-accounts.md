@@ -15,12 +15,12 @@ ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 description: ビジネスに大きな影響を与えるアカウントとの間で送信される、失敗したメールメッセージと遅延メール メッセージを監視します。
-ms.openlocfilehash: 4ade66d811fd63cbf7bb28d254f21ee454741f13
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: 5d1122502c2ba7eff653874f5affba7774e9feb5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394602"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178472"
 ---
 # <a name="manage-and-monitor-priority-accounts"></a>優先アカウントを管理および監視する
 
@@ -39,7 +39,7 @@ ms.locfileid: "58394602"
 
 優先度アカウントのセキュリティのベスト プラクティスについては、「優先度アカウント [のセキュリティに関する推奨事項」を参照してください](../../security/office-365-security/security-recommendations-for-priority-accounts.md)。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 この **トピックで説明する** 優先度アカウント保護機能は、次の要件を満たす組織でのみ使用できます。
 
@@ -48,7 +48,7 @@ ms.locfileid: "58394602"
 この **プレミアムでFlow** メール 監視機能は、次の要件を満たす組織でのみ使用できます。
 
 - 組織では、Office 365 E3、Microsoft 365 E3、Office 365 E5、Microsoft 365 E5 のいずれかの製品、または組み合わせのいずれかから、少なくとも 5,000 のライセンス数を持っている必要があります。 たとえば、組織は Office 365 E3 のライセンスを 3,000 個と Microsoft 365 E5 のライセンスを 2,500 個持つことで、条件を満たす製品から合計 5,500 個のライセンスを持つことができます。
-- 組織に月間 50 人以上のアクティブな Exchange Online ユーザーが必要です。
+- 1 つ以上のコア ワークロード (Teams、One Drive for Business、SharePoint Online、Exchange Online、Office アプリ) に対して、少なくとも 50 人の月間アクティブ ユーザーが必要です。
 
 > [!NOTE]
 > 最大 250 の優先度アカウントを監視できます。

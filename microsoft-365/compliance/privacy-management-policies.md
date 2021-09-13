@@ -17,11 +17,11 @@ search.appverid:
 - MET150
 description: 組織の個人データを処理するためのポリシーを作成および管理する方法について説明します。Microsoft 365通知への対応、および問題の修復を行います。
 ms.openlocfilehash: 49f772119cfc25284fecd66b2f3a79e063f11c09
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58747199"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177856"
 ---
 # <a name="create-and-manage-policies-in-privacy-management-preview"></a>プライバシー管理でポリシーを作成および管理する (プレビュー)
 

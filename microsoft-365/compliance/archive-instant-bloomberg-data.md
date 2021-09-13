@@ -16,11 +16,11 @@ ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: 管理者がデータ コネクタをセットアップして使用して、インスタント ブルームバーグ チャット ツールからデータをインポートおよびアーカイブする方法についてMicrosoft 365。
 ms.openlocfilehash: 98c9cd9077a8c2e11f8d51db983cbfbd0620c6f3
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572733"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180111"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>コネクタをセットアップしてインスタント ブルームバーグ データをアーカイブする
 

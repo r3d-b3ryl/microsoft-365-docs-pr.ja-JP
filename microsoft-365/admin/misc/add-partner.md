@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
 description: サブスクリプションからパートナーを購入、変更、またはMicrosoft 365の時点でレコードのパートナーを追加します。
-ms.openlocfilehash: 39e4ff5b996841815a4ae113bc3c3211a5984dadf15c4515aa37d336864d4dea
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 78419dd6d1370475c0565c0ad072a7b54639ce43
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53824313"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178864"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>サブスクリプション アドバイザー パートナーを追加、変更、または削除する
 
@@ -51,7 +51,7 @@ ms.locfileid: "53824313"
 
 ::: moniker-end
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 ::: moniker range="o365-worldwide"
 

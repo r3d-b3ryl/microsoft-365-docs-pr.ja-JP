@@ -24,11 +24,11 @@ search.appverid:
 - MOE150
 description: チームの共同作業スペースを作成し、Microsoft Teams。
 ms.openlocfilehash: c787f2c493643dcba2bbd5985fa518210aa8a5c6
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567146"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178287"
 ---
 # <a name="create-teams-for-collaboration-in-microsoft-teams"></a>グループで共同作業を行うチームをMicrosoft Teams
 

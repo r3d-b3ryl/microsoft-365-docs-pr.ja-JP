@@ -27,11 +27,11 @@ search.appverid:
 - BEA160
 description: Microsoft 365 Business Standard を購入するときに、所有するドメインを使用するか、サインアップ時に購入するかを選択することができます。
 ms.openlocfilehash: abb818b17ea5259b6e7015f73afb386e4515ac2f
-ms.sourcegitcommit: 8ef23d275d7209a705295e2b117d4382b20ad4f7
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58866765"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176183"
 ---
 # <a name="set-up-microsoft-365-business-standard-with-a-new-or-existing-domain"></a>新規ドメインまたは既存のドメインを使用して Microsoft 365 Business Standard を設定する
 

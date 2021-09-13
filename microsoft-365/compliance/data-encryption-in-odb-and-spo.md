@@ -19,12 +19,12 @@ ms.collection:
 - SPO_Content
 description: オンラインおよびオンラインでのデータ セキュリティの暗号化の基本的なOneDrive for BusinessについてSharePointします。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a7dfbe142e065ef1afcf21c7652b08a0f1277e855b6b3b40af6b6e70a3745e65
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ca93d04fa21487ad054cd9cb924dff1fc15abfbd
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53860813"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175991"
 ---
 # <a name="data-encryption-in-onedrive-for-business-and-sharepoint-online"></a>OneDrive for Business および SharePoint Online におけるデータ暗号化
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft リストを使用してビジネス情報を追跡する
+title: ビジネスMicrosoft Listsを追跡する
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -15,21 +15,21 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-description: Microsoft リストについて説明します。 Microsoft リストを使用すると、顧客の種類、注文のフルフィルメント、注文の進捗状況など、顧客の詳細を追跡できます。
-ms.openlocfilehash: 3f427e32bf0b8ce6933eedd56bb3fac8e7e5d2ae3da667f8c7e8d5d95c00931f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 詳細については、「Microsoft Lists」をMicrosoft Lists。 このMicrosoft Lists、顧客の種類、注文のフルフィルメント、注文の進捗状況など、顧客の詳細を追跡できます。
+ms.openlocfilehash: bbe88fb5a241c5991c7f7532f3ea70930e550ab5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53900585"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180583"
 ---
-# <a name="use-microsoft-lists-to-track-business-info"></a>Microsoft リストを使用してビジネス情報を追跡する
+# <a name="use-microsoft-lists-to-track-business-info"></a>ビジネスMicrosoft Listsを追跡する
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MnGM?autoplay=false]
 
 ## <a name="try-it"></a>試してみる
 
-Microsoft リストを使用して情報を追跡し、作業を整理します。 リストを最初から、Excel、既存のリストから、またはテンプレートから作成します。 ユーザーは、Microsoft 365、Microsoft Teams、またはSharePoint。
+情報を追跡し、ユーザーの作業をMicrosoft Lists。 リストを最初から、Excel、既存のリストから、またはテンプレートから作成します。 ユーザーは、Microsoft 365、Microsoft Teams、またはSharePoint。
 
 ### <a name="add-an-item-to-the-list"></a>リストにアイテムを追加する
 

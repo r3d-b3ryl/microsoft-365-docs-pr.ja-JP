@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: ec6f4bd8-5996-4505-ba68-afaf8a141fb9
 description: ドメイン 管理者が有効なレジストラー Connectを使用して、ドメインをドメインに追加する方法Microsoft 365。
-ms.openlocfilehash: f067e4982ad4154301658de1e2dafee2f944292e2481581eefa6a4d346c78ab8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 12e1f227c0a157414b56fd04f99e5460a1eb05d4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53825837"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176439"
 ---
 # <a name="using-domain-connect"></a>ドメイン の使用Connect
 

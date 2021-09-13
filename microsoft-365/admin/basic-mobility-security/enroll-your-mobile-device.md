@@ -20,11 +20,11 @@ search.appverid:
 - MET150
 description: デバイスで Microsoft 365 サービスを使用する前に、最初にデバイスの Basic Mobility and Security に登録する必要Microsoft 365。
 ms.openlocfilehash: abe1a7f82ac1435894073b99a23dd07c9e420499
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394338"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176879"
 ---
 # <a name="enroll-your-mobile-device-using-basic-mobility-and-security"></a>基本モビリティとセキュリティを使用してモバイル デバイスを登録する
 

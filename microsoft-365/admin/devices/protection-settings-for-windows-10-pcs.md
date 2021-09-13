@@ -24,11 +24,11 @@ search.appverid:
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: ビジネス向けアプリで使用できるMicrosoft 365デバイスをセキュリティで保護するWindows 10します。
 ms.openlocfilehash: 29fb5c18f016bd2832c25ff66db258671b95bd6f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566396"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176648"
 ---
 # <a name="edit-or-create-device-protection-settings-for-windows-10-pcs"></a>PC のデバイス保護設定を編集またはWindows 10する
 
@@ -69,7 +69,7 @@ ms.locfileid: "58566396"
 詳細については、「Intune の設定[にマップする方法Microsoft 365 プレミアム保護機能」を参照してください](map-protection-features-to-intune-settings.md)。 
 
 
-|設定  <br/> |説明  <br/> |
+|Setting  <br/> |説明  <br/> |
 |:-----|:-----|
 |Windows Defender ウイルス対策を使用して PC をウイルスとその他の脅威から保護する  <br/> |インターネットに接続されている危険から PC を保護するには、ウイルス対策をオンにする必要があります。  <br/> |
 |Microsoft Edge で PC を Web ベースの脅威から保護する  <br/> |ユーザーを悪意のあるサイトやダウンロードから保護するために役立つ、Microsoft Edge の設定をオンにします。  <br/> |

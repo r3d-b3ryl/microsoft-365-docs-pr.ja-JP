@@ -15,11 +15,11 @@ ms.collection:
 ms.custom: it-pro
 description: ユーザーのテナントをセットアップするためのロードマップMicrosoft 365。
 ms.openlocfilehash: d041c87e12bfb3025592cb14cda5413c805dc880
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354214"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179663"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>テナントのロードマップMicrosoft 365
 
@@ -33,7 +33,7 @@ ms.locfileid: "58354214"
 
 ネットワークがオンプレミスワーカーとリモート ワーカーの両方に対して Microsoft 365 へのアクセス用に最適化された後、次の大きなタスクは、DNS ドメイン 名、一般的なサービス、およびセキュリティで保護されたユーザー サインインをサポートする id インフラストラクチャ用に Microsoft 365 テナントを計画し、構成します。
 
-### <a name="plan"></a>プラン
+### <a name="plan"></a>計画
 
 テナントの実装を計画するには、次の方法を実行します。
 
@@ -45,7 +45,7 @@ ms.locfileid: "58354214"
 - [2007 Officeおよび 2010 Officeアップグレードを計画する](plan-upgrade-previous-versions-office.md)
 - [テナントの分離について](/compliance/assurance/microsoft-365-isolation-controls)
 
-### <a name="deploy"></a>展開する
+### <a name="deploy"></a>展開
 
 テナントを展開するには、次の方法を実行します。 
 

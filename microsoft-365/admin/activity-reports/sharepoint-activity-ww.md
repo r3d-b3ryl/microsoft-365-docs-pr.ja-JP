@@ -21,11 +21,11 @@ search.appverid:
 - MOE150
 description: すべてのユーザー SharePointのアクティビティ、共有されているファイルの数、およびストレージ使用率について知SharePointアクティビティ使用状況レポートを取得します。
 ms.openlocfilehash: 5b4fb458c96202993a30a64800aac3c443983d04
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564806"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177199"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-activity"></a>Microsoft 365管理センターのレポート - SharePointアクティビティ
 

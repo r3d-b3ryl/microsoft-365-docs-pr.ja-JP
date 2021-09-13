@@ -20,11 +20,11 @@ search.appverid:
 ms.assetid: c2ce12a2-934f-4dd4-ba65-49b02be4703d
 description: メール アプリの使用状況レポートを取得して、ユーザーが使用しているメール アプリと Exchange Onlineに接続Outlookを確認する方法について学習します。
 ms.openlocfilehash: d11d06b442bbf5008f66af3aa7eeded512c1e8b3
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565152"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177296"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---email-apps-usage"></a>Microsoft 365管理センターのレポート - メール アプリの使用状況
 

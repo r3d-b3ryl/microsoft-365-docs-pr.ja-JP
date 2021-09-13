@@ -14,11 +14,11 @@ description: 報告されたメッセージを確認し、ユーザーにフィ�
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: fb023d68e81c5592078bdd89e4826537790e7d53
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572469"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177400"
 ---
 # <a name="admin-review-for-reported-messages"></a>報告されたメッセージの管理者によるレビュー
 
@@ -72,7 +72,7 @@ Microsoft 365メールボックスExchange Online Microsoft Defender for Office 
 
     - フィッシング詐欺
     - 迷惑メール
-    - 脅威なし
+    - 脅威は検出されませんでした
     - フッター
 
     > [!div class="mx-imgBorder"]

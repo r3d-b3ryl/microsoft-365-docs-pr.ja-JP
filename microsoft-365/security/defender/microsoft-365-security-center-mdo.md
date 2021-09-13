@@ -18,11 +18,11 @@ ms.collection:
 ms.prod: m365-security
 ms.technology: m365d
 ms.openlocfilehash: e65d7e869011cbbc6a55828f693782a6b7e0dfd6
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575938"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177455"
 ---
 # <a name="microsoft-defender-for-office-365-in-microsoft-365-defender"></a>Microsoft Defender for Office 365 Microsoft 365 Defender
 

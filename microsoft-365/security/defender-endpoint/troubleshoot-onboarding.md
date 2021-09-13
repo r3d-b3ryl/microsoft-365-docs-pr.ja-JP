@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
 ms.openlocfilehash: fbf7b2328a453f1fb20d77553548a71a0e1ca8ab
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569983"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177536"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング
 
@@ -134,7 +134,7 @@ MDM イベント ログを表示して、オンボーディング中に発生す
 
 チャネル名: 管理者
 
-ID | 緊急度 | イベントの説明 | トラブルシューティングの手順
+ID | 重要度 | イベントの説明 | トラブルシューティングの手順
 :---|:---|:---|:---
 1819 | Error | エンドポイント CSP 用 Microsoft Defender: ノードの値の設定に失敗しました。 NodeId: (%1), TokenName: (%2), Result: (%3)。 | [1607 年 1607 年Windows 10累積的な更新プログラムをダウンロードします](https://go.microsoft.com/fwlink/?linkid=829760)。
 
@@ -310,7 +310,7 @@ WinHTTP は、インターネット閲覧プロキシ設定や他のユーザー
 
 また、次の情報を確認する必要があります。
 
-- タスク マネージャーの [プロセス] タブで Microsoft Defender for Endpoint Service が **実行されている****のを確認します**。 次に例を示します。
+- タスク マネージャーの [プロセス] タブで Microsoft Defender for Endpoint Service が **実行されている****のを確認します**。 例:
 
     ![Microsoft Defender for Endpoint Service が実行されているプロセス ビューのイメージ。](images/atp-task-manager.png)
 

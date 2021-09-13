@@ -17,11 +17,11 @@ search.appverid:
 description: ケース内の分析用にMicrosoft 365データをレビュー セットにインポートする方法についてAdvanced eDiscoveryします。
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 65244b74cd868c4ec308327d15a070e67b9ac551
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569047"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179880"
 ---
 # <a name="load-non-microsoft-365-data-into-a-review-set"></a>レビューセットにMicrosoft 365 以外のデータを読み込む
 

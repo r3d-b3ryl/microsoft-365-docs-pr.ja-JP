@@ -24,11 +24,11 @@ search.appverid:
 - MOE150
 description: グループMicrosoft 365グループを使用すると、グループのユーザーに共有リソースのコレクションへのアクセス権を与えることによって、Microsoft 365全体のチームワークを促進できます。
 ms.openlocfilehash: 08e90d5197e59f6c1cf6dc89343b263194925bf4
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394410"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176743"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>管理者向け Microsoft 365 グループの概要
 

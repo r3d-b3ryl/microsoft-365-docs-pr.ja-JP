@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: '[製品] ページに移動して、組織が持つサブスクリプションを確認する方法について学習します。'
 ms.date: 01/21/2021
-ms.openlocfilehash: 4db973a3817638e3c41f5e73989052e26f66c0af08eceeada74cc47728d5094c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bb11ab4fc8933e2e199998992f0c12ea8de0d23a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827097"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176919"
 ---
 # <a name="what-subscription-do-i-have"></a>取得しているサブスクリプションが不明な場合
 

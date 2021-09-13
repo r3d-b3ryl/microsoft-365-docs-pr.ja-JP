@@ -18,11 +18,11 @@ search.appverid:
 - MET150
 description: コア電子情報開示ケースからコンテンツをエクスポートおよびダウンロードする方法について説明します。Microsoft 365。
 ms.openlocfilehash: 68535f8623b26aa4f2b30dc88362f4550c256162
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567026"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175880"
 ---
 # <a name="export-content-from-a-core-ediscovery-case"></a>コア電子情報開示ケースからコンテンツをエクスポートする
 

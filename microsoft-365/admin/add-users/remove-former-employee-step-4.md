@@ -27,11 +27,11 @@ search.appverid:
 - MOE150
 description: この記事の手順に従って、別の従業員に元従業員のデータとOneDriveアクセスOutlookします。
 ms.openlocfilehash: e0904c6aeca919dd3f93044ce177a34761cb141b
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564724"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177031"
 ---
 # <a name="step-4---give-another-employee-access-to-onedrive-and-outlook-data"></a>手順 4 - 別の従業員にデータとOneDriveアクセスOutlookする
 

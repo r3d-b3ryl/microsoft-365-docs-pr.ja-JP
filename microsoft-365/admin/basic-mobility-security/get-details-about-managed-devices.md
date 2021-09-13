@@ -19,11 +19,11 @@ search.appverid:
 - MET150
 description: Windows PowerShell を使用して、組織内の基本的なモビリティおよびセキュリティ デバイスの詳細を取得します。
 ms.openlocfilehash: 231eeb87d3f72ca4107c0ee6bef5bd60c713bb3f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564467"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176864"
 ---
 # <a name="get-details-about-basic-mobility-and-security-managed-devices"></a>基本的なモビリティとセキュリティの管理対象デバイスに関する詳細を取得する
 

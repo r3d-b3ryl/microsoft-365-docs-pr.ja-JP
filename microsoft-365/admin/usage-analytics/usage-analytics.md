@@ -22,11 +22,11 @@ search.appverid:
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: 組織がコミュニケーションと共同作業を行うMicrosoft 365サービスを採用する方法の概要を確認します。
 ms.openlocfilehash: c2c81f1be38e0fe203b270eb132bff52be4482a7
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256264"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178320"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Microsoft 365 利用状況分析
 

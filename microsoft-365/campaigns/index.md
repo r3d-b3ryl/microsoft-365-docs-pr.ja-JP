@@ -26,11 +26,11 @@ search.appverid:
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: 小さな企業、独立開業、政治キャンペーンなどを含む中小企業向けの Microsoft 365 Business Premium セキュリティと共同作業に関する推奨事項。
 ms.openlocfilehash: 8e1da206a23a58d568d6e0e4a9efe04cef510a85
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573789"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180528"
 ---
 # <a name="microsoft-365-for-smaller-businesses-and-campaigns"></a>中小企業およびキャンペーン向けの Microsoft 365
 

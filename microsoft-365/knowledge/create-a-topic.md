@@ -15,11 +15,11 @@ search.appverid: ''
 localization_priority: Normal
 description: 新しいトピックを作成する方法については、Microsoft Viva トピック。
 ms.openlocfilehash: af4a56b98cd3e372cee242bb98742ba488a1f2b4
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572661"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179631"
 ---
 # <a name="create-a-new-topic-in-microsoft-viva-topics"></a>新しいトピックを作成Microsoft Viva トピック
 

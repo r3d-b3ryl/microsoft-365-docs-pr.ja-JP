@@ -24,11 +24,11 @@ search.appverid:
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: 自分の管理者パスワードをリセットする場合は、管理センターで管理者の電話番号とメール アドレスを更新します。
 ms.openlocfilehash: cbb969b93584503db0755675e4ea585ba401e377
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394194"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178879"
 ---
 # <a name="update-your-admin-phone-number-and-email-address"></a>管理者の電話番号とメール アドレスを更新する
 

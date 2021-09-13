@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 法的保持通知の状態をAdvanced eDiscovery、必要に応じて更新および再送信するには、このページの通信ワークフローを使用します。
-ms.openlocfilehash: 88dd3ef8e74dd67b196f574b1cfe8ba5c33a1a63afeac8701f19e36476e56767
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8852bfd1651e1855d276b60ba6fac35c378d4631
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842136"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177960"
 ---
 # <a name="manage-hold-notifications"></a>保留通知を管理する
 
@@ -72,7 +72,7 @@ ms.locfileid: "53842136"
 
 3. [通信 **の編集]** ウィザードで、ウィザードの **左側** のウィンドウで [ポータル コンテンツの定義] をクリックし、通知の内容を更新します。
 
-4. [**保存**] をクリックします。
+4. **[保存]** をクリックします。
 
 再発行通知は、法的保持通知に割り当てられているすべての保管担当者に送信されます。 さらに、アラーム通知またはエスカレーション通知が有効になっている場合、これらの種類の通知のワークフローが再開されます。
 
@@ -80,7 +80,7 @@ ms.locfileid: "53842136"
 
 発行、リリース、再発行、アラーム、エスカレーション通知のコンテンツまたは設定を更新すると、これらの変更は、ワークフローによって生成される将来のすべての通信に適用されます。
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 - [ケースにカストディアンを追加する](add-custodians-to-case.md)
 

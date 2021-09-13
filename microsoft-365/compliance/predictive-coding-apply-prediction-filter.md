@@ -15,11 +15,11 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: 予測スコア フィルターを使用して、予測コーディング モデルが関連性がある、または関連性が低いと予測されるアイテムを表示します。
 ms.openlocfilehash: 34a9b4da55443cae6c2334952f60b94953b0d9d4
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567702"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177911"
 ---
 # <a name="apply-a-prediction-score-filter-to-a-review-set-preview"></a>予測スコア フィルターをレビュー セットに適用する (プレビュー)
 

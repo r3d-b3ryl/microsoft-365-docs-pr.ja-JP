@@ -23,11 +23,11 @@ search.appverid:
 ms.assetid: ba256583-03ca-429e-be4d-a92d9c221ad6
 description: 従業員、パートナー、Microsoft 365などのユーザーまたは連絡先をメール配布グループに追加する方法について学習します。
 ms.openlocfilehash: af7581a7541835185a7cc8df12dcc58b779243ca
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566330"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176583"
 ---
 # <a name="add-a-user-or-contact-to-a-distribution-group"></a>配布グループにユーザーまたは連絡先を追加する
 

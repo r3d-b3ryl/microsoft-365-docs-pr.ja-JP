@@ -20,12 +20,12 @@ search.appverid:
 ROBOTS: NOINDEX
 description: 認証プロセスに最適なサーバーに移動する Office 365 の 'MSOID' CNAME レコードの詳細については、応答を速くします。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 9e9ee6c2121d1422e0982b0959d5933ad394a8ed3576783b06078b782b183865
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a1d587abc9db03c9a1f7c5f66711fde3648a0e96
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53822369"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176272"
 ---
 # <a name="whats-the-purpose-of-the-office-365-cname-record-for-msoid"></a>MSOID の Office 365 CNAME レコードの目的
 

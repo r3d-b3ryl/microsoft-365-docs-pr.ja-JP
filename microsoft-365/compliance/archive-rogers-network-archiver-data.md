@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、TeleMessage コネクタをセットアップして、ロジャース ネットワーク のデータをインポートおよびアーカイブMicrosoft 365。 これにより、Microsoft 365 のサード パーティデータ ソースからデータをアーカイブし、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティ データを管理できます。
-ms.openlocfilehash: 19f92d5d8d241818588ef32ad7560b8e9a7e9239
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 52e200274ec74fc74e554d277bf8bd5323445015
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570643"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176151"
 ---
 # <a name="set-up-a-connector-to-archive-rogers-network-data"></a>ロジャース ネットワーク データをアーカイブするコネクタをセットアップする
 
@@ -52,6 +52,8 @@ ms.locfileid: "58570643"
 - オンボーディング フォームを完了し、ロジャースからメッセージ アーカイブ サービスを注文できるよう、組織のロジャーズ アカウントと請求連絡先の詳細を取得します。
 
 - 手順 3 でロジャーズ ネットワーク アーカイブ コネクタを作成するユーザーには、メールボックスインポートエクスポートの役割が割り当てられている必要Exchange Online。 これは、データ コネクタ ページの[データ コネクタ] ページにコネクタを追加Microsoft 365 コンプライアンス センター。 既定では、この役割は Exchange Online のどの役割グループにも割り当てられていません。 [メールボックスのインポートエクスポート] 役割は、組織の [組織の管理] 役割グループに追加Exchange Online。 または、役割グループを作成し、メールボックスインポートエクスポートの役割を割り当て、適切なユーザーをメンバーとして追加できます。 詳細については、「グループ内の[役割グループを](/Exchange/permissions-exo/role-groups#create-role-groups)管理[](/Exchange/permissions-exo/role-groups#modify-role-groups)する」の「役割グループの作成」または「役割グループの変更」セクションを参照Exchange Online。
+
+- このデータ コネクタは、米国政府機関GCCのMicrosoft 365環境で使用できます。 サード パーティのアプリケーションとサービスには、Microsoft 365 インフラストラクチャの外部にあるサードパーティ システムに組織の顧客データを格納、送信、処理する必要がある場合があります。したがって、Microsoft 365 コンプライアンスとデータ保護のコミットメントの対象とはなってはいけなかっています。 Microsoft は、この製品を使用してサード パーティ製アプリケーションに接続する場合、これらのサード パーティ製アプリケーションが FEDRAMP に準拠しているという意味を示していません。
 
 ## <a name="create-a-rogers-network-archiver-connector"></a>ロジャーズ ネットワーク アーカイブ コネクタを作成する
 

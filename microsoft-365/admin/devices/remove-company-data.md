@@ -25,11 +25,11 @@ search.appverid:
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
 description: ユーザーが自分のデバイスMicrosoft 365 PC に持っている会社のデータを削除するには、ビジネス向けアプリをWindowsしてください。
 ms.openlocfilehash: f249af524dcdc00601357428425c57da3b3f738c
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360544"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176647"
 ---
 # <a name="remove-company-data-from-devices"></a>デバイスから会社のデータを削除する
 

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 生産性スコアには、ユーザーやテクノロジのエクスペリエンス測定がどのように反映されているか、同規模の組織との比較をご覧ください。
-ms.openlocfilehash: f6c469f6b754e7a6ad54d968b555a2bec45e4d2aa8a72d99337ee6a8251e5f0e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ddbc1590abc1383035db1852345310bfc8dd196d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53822891"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178680"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft 生産性スコア 
 

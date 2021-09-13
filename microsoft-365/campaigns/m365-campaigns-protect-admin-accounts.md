@@ -23,11 +23,11 @@ search.appverid:
 - MET150
 description: 管理者アカウントを設定して保護する方法について学習します。
 ms.openlocfilehash: 44b5f9bb07736e06f7e427e521b5c85364091020
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564256"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180495"
 ---
 # <a name="protect-your-administrator-accounts"></a>管理者アカウントを保護する
 

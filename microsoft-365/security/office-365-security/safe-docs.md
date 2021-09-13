@@ -17,11 +17,11 @@ description: 詳細については、「セーフドキュメント」または�
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 0ccedf53b9978329935ceb28bb0ba0695f3da67c
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58863823"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179128"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Microsoft 365 E5 の安全なドキュメント
 

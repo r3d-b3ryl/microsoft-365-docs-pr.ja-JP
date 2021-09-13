@@ -17,11 +17,11 @@ ms.custom:
 ms.assetid: 3a1ea1a6-edbd-4922-9ad3-0b075f7f9009
 description: Azure AD、Exchange Online、SharePoint Online、Skype for Business Online の Microsoft 365 PowerShell コマンドレット リファレンスに関するトピックをご覧ください。
 ms.openlocfilehash: fc6cb250fe968c8dd8222422c517ce59352e4d69
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356566"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179743"
 ---
 # <a name="cmdlet-references-for-microsoft-365-services"></a>Microsoft 365 サービスのコマンドレットリファレンス
 

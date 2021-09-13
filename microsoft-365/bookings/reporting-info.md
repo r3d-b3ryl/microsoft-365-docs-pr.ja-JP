@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
 description: Bookings アクティビティの 4 か月ビューを表示する方法を確認する
 ms.openlocfilehash: ceb318f0577d6bf1f4f46f809ecabe0d1bc5d804
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823855"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180720"
 ---
 # <a name="reporting-info-for-bookings"></a>Bookings のレポート情報
 

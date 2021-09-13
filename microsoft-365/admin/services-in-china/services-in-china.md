@@ -25,11 +25,11 @@ ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: 21Vianet がOffice 365、中国のセキュリティで保護され、信頼性が高く、スケーラブルなクラウド サービスのニーズを満たするように設計された、21Vianet が運用するサービスの詳細をご覧ください。
 monikerRange: o365-21vianet
 ms.openlocfilehash: 6313212d39b81e9954681848e5ac6747ff6ee3ea
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567834"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178567"
 ---
 # <a name="office-365-operated-by-21vianet"></a>21Vianet が運用している Office 365
 
@@ -154,9 +154,9 @@ Exchange Server の古いバージョンまたは混在したバージョンを�
 
 |**オンプレミスのExchangeバージョン**|**MRM (分割アーカイブ)**|**OWA アクセス (分割アーカイブ)**|**インプレース電子情報開示**|**メールボックスの監査**|**インプレイス保持/アーカイブ**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
-| All 2013 CU5  <br/> | サポート <br/>  | 非サポート <br/>  | サポート <br/>  | サポート  <br/> | サポート <br/> |
-| すべての 2010 SP3 <br/>  | 非サポート <br/>  | 非サポート <br/>  | サポートされている<sup>1</sup> <br/> | サポート  <br/> | サポート <br/>  |
-| 2013 年より前の CU5 サーバーが少なくとも 1 台  <br/> | サポートされている<sup>2</sup> <br/> | 非サポート  <br/> | 非サポート <br/> | サポート  <br/> | サポート <br/> |
+| All 2013 CU5  <br/> | サポート <br/>  | 非サポート <br/>  | サポートされている <br/>  | サポート済み  <br/> | サポート済み <br/> |
+| すべての 2010 SP3 <br/>  | 非サポート <br/>  | 非サポート <br/>  | サポートされている<sup>1</sup> <br/> | サポート  <br/> | サポート済み <br/>  |
+| 2013 年より前の CU5 サーバーが少なくとも 1 台  <br/> | サポートされている<sup>2</sup> <br/> | 非サポート  <br/> | 非サポート <br/> | サポート  <br/> | サポート済み <br/> |
 |||
 
 <sup>1</sup>オンプレミスメールボックスとメールボックスに対して個別のExchange Online必要です。  <br/> <sup>2</sup>つの MRM 移動からアーカイブへの移行ポリシーは、2013 CU5 以上のサーバー上Exchangeメールボックスに使用できます。 
@@ -199,7 +199,7 @@ Apple Exchangeの連絡先データを Apple iCloud に共有する。 |この�
 |調査ウィンドウとサービスBing統合  <br/> |注意事項なし。  <br/> |
 |アクセシビリティ チェック  <br/> |注意事項なし。  <br/> |
 |クラス ノートブック  <br/> |注意事項なし。  <br/> |
-|Forms  <br/> |注意事項なし。  <br/> |
+|フォーム  <br/> |注意事項なし。  <br/> |
 |イマーシブ リーダー  <br/> |注意事項なし。  <br/> |
 |オンライン画像の挿入  <br/> |注意事項なし。  <br/> |
 |会議の詳細  <br/> |注意事項なし。  <br/> |

@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 23716a8d5d1c9b30427045a3a7f2c073e04c3f8d1293ff49f034768deaf6ff83
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c9463e61ef0a6905d5030f2967a0509b2ae986e9
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53893093"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180183"
 ---
 # <a name="payment-information-for-iraq"></a>イラクの支払い情報
 

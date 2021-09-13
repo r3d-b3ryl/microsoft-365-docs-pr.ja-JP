@@ -18,11 +18,11 @@ ms.topic: conceptual
 ms.technology: mde
 ms.date: 08/11/2021
 ms.openlocfilehash: 79129d25c730f7948269c4291e53e3fc953af329
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256212"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177711"
 ---
 # <a name="configure-attack-surface-reduction-capabilities"></a>攻撃面の減少機能を構成する
 
@@ -32,7 +32,7 @@ ms.locfileid: "58256212"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 Defender for Endpoint には、攻撃表面の縮小機能がいくつか含まれています。 詳細については、「攻撃表面 [の縮小機能の概要」を参照してください](overview-attack-surface-reduction.md)。 環境で攻撃表面の縮小を構成するには、次の手順を実行します。
 

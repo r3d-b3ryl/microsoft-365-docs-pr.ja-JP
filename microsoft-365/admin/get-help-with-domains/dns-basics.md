@@ -27,11 +27,11 @@ ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: ドメイン ネーム システムは、コンピューターのホスト名を IP アドレスにマップします。DNS とドメイン レジストラーの基礎を理解することはドメインを管理するうえで役立ちます。
 ms.openlocfilehash: 37d8e885dafaa055ed5cc7eee24456b758ef8b4f
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394290"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176455"
 ---
 # <a name="dns-basics"></a>DNS の基本
 

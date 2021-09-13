@@ -18,11 +18,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 264953bd84a0a167cb6283c64b9e6ecf2d28ba19
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58683494"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179319"
 ---
 # <a name="create-indicators-based-on-certificates"></a>証明書に基づいてインジケーターを作成する
 
@@ -40,7 +40,7 @@ ms.locfileid: "58683494"
 - 攻撃表面の縮小ルールやフォルダー アクセスの制御[](attack-surface-reduction.md)など、ブロック テクノロジ[](controlled-folders.md)を展開する必要があるが、許可リストに証明書を追加して署名済みアプリケーションからの動作を許可する必要があるシナリオ。
 - 組織全体で特定の署名付きアプリケーションの使用をブロックする。 アプリケーションの証明書をブロックするインジケーターを作成すると、Windows Defender AV はファイルの実行 (ブロックと修復) を防止し、自動調査と修復は同じように動作します。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>始める前に
 
 証明書のインジケーターを作成する前に、次の要件を理解することが重要です。
 

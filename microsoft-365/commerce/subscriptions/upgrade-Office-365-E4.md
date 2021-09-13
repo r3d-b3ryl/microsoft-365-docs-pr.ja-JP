@@ -16,16 +16,17 @@ ms.collection:
 ms.custom:
 - customer-email
 - commerce_subscriptions
+- admindeeplinkMAC
 search.appverid: MET150
 description: E4 サブスクリプションからアップグレードするOffice 365します。
 ms.date: 08/14/2020
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3131f163bcf846c623213a3e2d7c88e6d21cd1479f64185d2b70be81de102c23
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5741588fddcddbfca47b39cada2fed7dca56afd8
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53892629"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180136"
 ---
 # <a name="upgrade-from-an-office-365-e4-subscription"></a>E4 サブスクリプションOffice 365アップグレードする
 
@@ -36,7 +37,7 @@ ms.locfileid: "53892629"
 
 ## <a name="what-are-my-options-for-how-to-upgrade"></a>アップグレード方法に関するオプションは何ですか?
 
-プランをアップグレードする最も簡単な方法は、プランの [アップグレード] タブを使用Microsoft 365 管理センター。 ただし、[アップグレード] **タブの** 使用は、すべての状況でサポートされるわけではありません。 シナリオがサポートされていない場合は、プランを手動でアップグレードできる場合があります。
+プランをアップグレードする最も簡単な方法は、プランの [アップグレード] タブを<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">使用Microsoft 365 管理センター。</a> ただし、[アップグレード] **タブの** 使用は、すべての状況でサポートされるわけではありません。 シナリオがサポートされていない場合は、プランを手動でアップグレードできる場合があります。
 
 ## <a name="what-is-the-upgrade-tab"></a>[アップグレード] タブとは
 
@@ -70,7 +71,7 @@ ms.locfileid: "53892629"
 
 ## <a name="upgrade-your-plan-by-using-the-upgrade-tab"></a>[アップグレード] タブを使用してプランをアップグレードする
 
-### <a name="before-you-begin"></a>はじめに
+### <a name="before-you-begin"></a>始める前に
 
 ここでは、操作を始める前に知っておく必要がある重要な点について説明します。
 
@@ -127,7 +128,7 @@ ms.locfileid: "53892629"
 
 ### <a name="step-3-reassign-licenses-to-users"></a>手順 3: ユーザーにライセンスを再割り当てする
 
-一度に最大 20 Microsoft 365 管理センターライセンスを再割り当てする場合は、このツールを使用できます。 方法については、「ユーザーを別の [サブスクリプションに移動する」を参照してください](move-users-different-subscription.md)。
+一度に最大[20 Microsoft 365 管理センター](https://go.microsoft.com/fwlink/p/?linkid=2024339)ライセンスを再割り当てする場合は、このツールを使用できます。 方法については、「ユーザーを別の [サブスクリプションに移動する」を参照してください](move-users-different-subscription.md)。
 
 > [!TIP]
 > ユーザーが多い場合は、PowerShell を使用してOffice 365[ライセンスを一括で割り当てできます](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md)。

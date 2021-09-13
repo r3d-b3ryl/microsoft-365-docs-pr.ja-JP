@@ -18,16 +18,16 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: '概要: ネットワーク容量、WAN アクセラレータ、およびデバイスへの接続に使用される負荷分散デバイスに関する考慮事項についてOffice 365。'
-ms.openlocfilehash: bda9fc9e9005530e97bc0033fc13813fceeb77d84e39f44726d259fd8847e8e8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e1209c13eb24d11a2cc9692957bc4ee5f6310f41
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53894901"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179719"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>Office 365 サービスに接続するネットワーク デバイスの計画
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
   
 一部のネットワーク ハードウェアでは、サポートされている同時セッションの数に制限がある場合があります。 2,000 人を超えるユーザーを持つ組織では、ネットワーク デバイスを監視して、追加のサービス トラフィックを処理Office 365することをお勧めします。 簡易ネットワーク管理プロトコル (SNMP) 監視ソフトウェアは、これを行うのに役立ちます。
 

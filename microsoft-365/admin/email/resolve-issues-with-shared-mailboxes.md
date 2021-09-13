@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 共有メールボックスをセットアップすると、エラーが発生する可能性があります。 共有メールボックスに問題が発生した場合は、次の解決策を試してください。
-ms.openlocfilehash: 2ec294f4dfe1d15bc4acf2789a35285d1dca78881f30512f08d39fd0a02394e3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ae76bc1cb97c44087be57adc7791ea8814b94b40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53825933"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176488"
 ---
 # <a name="resolve-issues-with-shared-mailboxes"></a>共有メールボックスの問題を解決する
 

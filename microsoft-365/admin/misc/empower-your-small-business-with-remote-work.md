@@ -15,12 +15,12 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 description: ビジネス向けリモートワークに関する最新情報、ヒント、リソース、ガイダンスをMicrosoft 365。
-ms.openlocfilehash: 8d08db66da25a40d699cc122362cbdcbe1fc21e624259d4a67c833663a4a3113
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2e2ce2c9b7e204a56a0deccc758ba19d7239c632
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53824109"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178816"
 ---
 # <a name="empower-your-small-business-with-remote-work"></a>リモート ワークで小規模ビジネスを強化する
 

@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 8c3a913c-2247-4519-894d-b6263eeb9920
 description: '[予約] Microsoft 365 管理センターまたはWindows PowerShellを使用して、予約カレンダーを削除します。'
 ms.openlocfilehash: fc5975e25fa3b1f2d2aab991cc7aac8038181f3f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572757"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178304"
 ---
 # <a name="delete-a-booking-calendar-in-bookings"></a>Bookings で予約カレンダーを削除する
 

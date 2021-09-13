@@ -23,11 +23,11 @@ search.appverid:
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 集中型アドインを使用して組織内のユーザーとグループにアドインを展開する方法について学習します。
 ms.openlocfilehash: 4dd2cbc842d10770b544df014685173a8888df67
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566272"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176304"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>管理センターでアドインを管理する
 

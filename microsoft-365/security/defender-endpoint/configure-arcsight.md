@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 1ab7e1f31fff1e4b553d5d301eb7fbe4749de19e
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58509535"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177720"
 ---
 # <a name="configure-micro-focus-arcsight-to-pull-defender-for-endpoint-detections"></a>エンドポイント検出用の Defender をプルする Micro Focus ArcSight の構成
 
@@ -74,7 +74,7 @@ Micro Focus ArcSight Connector ツールを構成するには、アプリケー�
 1. FlexConnector インストーラーに最新の 32 ビット Windowsインストールします。 この情報は、HPE ソフトウェア センターで確認できます。 ツールは通常、次の既定の場所にインストールされます `C:\Program Files\ArcSightFlexConnectors\current\bin` 。</br></br>ツールを保存する場所を選択できます (たとえば、C: \\ \current\bin folder_location\current\bin などfolder_location場所を表します。 
 
 2. インストール ウィザードに従って、次のタスクを実行します。
-   - 概要
+   - はじめに
    - [フォルダーのインストール] を選択する
    - [インストール セット] の選択
    - ショートカット フォルダーの選択
@@ -139,7 +139,7 @@ Micro Focus ArcSight Connector ツールを構成するには、アプリケー�
 ## <a name="install-and-configure-the-micro-focus-arcsight-console"></a>Micro Focus ArcSight コンソールのインストールと構成
 
 1. インストール ウィザードに従って、次のタスクを実行します。
-   - 概要
+   - はじめに
    - 使用許諾契約書
    - 特別な通知
    - [ArcSight インストール ディレクトリの選択]

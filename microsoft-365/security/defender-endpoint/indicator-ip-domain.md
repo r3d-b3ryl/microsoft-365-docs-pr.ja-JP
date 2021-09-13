@@ -18,11 +18,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 0b28d4088b8475794989d777bf58ccc7550b3f7c
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58683554"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179312"
 ---
 # <a name="create-indicators-for-ips-and-urlsdomains"></a>IP および URL/ドメインのインジケーターを作成
 
@@ -47,7 +47,7 @@ IP と URL またはドメインのインジケーターを作成することで
 > [!NOTE]
 > IP アドレスInter-Domainクラスレス ルーティング (CIDR) 表記はサポートされていません。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>始める前に
 IPS、URL、またはドメインのインジケーターを作成する前に、次の前提条件を理解することが重要です。
 
 - URL/IP 許可とブロックは、Defender for Endpoint コンポーネントのネットワーク保護をブロック モードで有効にしています。 ネットワーク保護と構成手順の詳細については、「ネットワーク保護を有効 [にする」を参照してください](enable-network-protection.md)。

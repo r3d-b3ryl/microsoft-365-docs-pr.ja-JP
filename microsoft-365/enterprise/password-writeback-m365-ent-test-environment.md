@@ -19,11 +19,11 @@ ms.custom:
 ms.assetid: ''
 description: '概要: Microsoft 365 テスト環境用のパスワードの書き戻しを構成する。'
 ms.openlocfilehash: 5bb1307888948e46a07068a2493591ff9b4dc96f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565858"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179720"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Microsoft 365 テスト環境のパスワードの書き戻し
 
@@ -140,6 +140,6 @@ ms.locfileid: "58565858"
 
 [Microsoft 365 Enterprise のテスト ラボ ガイド](m365-enterprise-test-lab-guides.md)
 
-[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
+[Microsoft 365 for Enterprise の概要](microsoft-365-overview.md)
 
 [Microsoft 365 for enterprise のドキュメント](/microsoft-365-enterprise/)

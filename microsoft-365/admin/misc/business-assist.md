@@ -17,11 +17,11 @@ search.appverid:
 - MET150
 description: ビジネス アシスト プログラムと、ビジネス向けサービスのヘルプと使用状況の向上に組織がどのように役立Microsoft 365します。
 ms.openlocfilehash: fefefe5dc587674609201be13f19cd6223b80c49
-ms.sourcegitcommit: 2048c9399a654175438d47e0c3aa2574b949bdc0
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "58923920"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178840"
 ---
 # <a name="business-assist-for-microsoft-365"></a>Microsoft 365 のビジネスサポート
 

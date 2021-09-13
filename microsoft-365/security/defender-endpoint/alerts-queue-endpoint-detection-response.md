@@ -19,11 +19,11 @@ ms.topic: conceptual
 ms.date: 09/03/2018
 ms.technology: mde
 ms.openlocfilehash: c67f5ff58ab62e6a2a4c42446f66b753d774dfbb
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507736"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179423"
 ---
 # <a name="alerts-queue-in-microsoft-365-defender"></a>Microsoft 365 Defender のアラート キュー
 

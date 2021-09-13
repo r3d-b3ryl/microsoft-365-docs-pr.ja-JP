@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 365 エンドポイント データ損失防止 (EPDLP) の場所を使用するようにデータ損失防止 (DLP) ポリシーを構成する方法を説明します。
-ms.openlocfilehash: eabd58f43e1275b3ae7ae3b8563e97299fef1233
-ms.sourcegitcommit: 8db88004f4c015138b20c55095ada2c0c79e5910
+ms.openlocfilehash: b8acad4520fc588517083574d41465e277b9c96a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58928766"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175935"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>エンドポイント データ損失防止の使用
 
@@ -358,10 +358,6 @@ DLP ポリシー ヒントの通知で、ユーザーによる業務上の正当
 8. 監視対象エンドポイントのデータのアクティビティエクスプローラーを確認します。 デバイスがある場所のフィルターを設定し、ポリシーを追加してから、ポリシー名でフィルター処理を行って、このポリシーの影響を確認します。 必要に応じて、[アクティビティ エクスプローラーの使用を開始](data-classification-activity-explorer.md)を参照してください。
 
 9. イベントのアクティビティエクスプローラーを確認します。
-
-### <a name="scenario-5-configure-a-policy-to-use-the-customized-business-justification"></a>シナリオ 5: ポリシーを構成してカスタマイズされた業務上の正当な理由を使用する
-
-
 
 ## <a name="see-also"></a>関連項目
 

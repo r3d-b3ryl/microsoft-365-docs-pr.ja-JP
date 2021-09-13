@@ -22,18 +22,18 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: 'プライベート メールボックスを、1 人ではなく複数のユーザーがアクセスできる共有メールボックスに変換する方法について説明します。 '
-ms.openlocfilehash: 242d390ba35ef63911d2bab9750e039e81a793787ec1a465847455e1ef5802ce
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: caf3935b1ffb36989b2884c6811111531a061098
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826161"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176543"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>ユーザー メールボックスを共有メールボックスに変換する
 
 ユーザーのメールボックスを共有メールボックスに変換した場合、すべての既存のメールと予定表は保持されます。現在は、1 人のユーザーのみではなく何人かのユーザーがアクセスできる共有メールボックスにそれらが入っています。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 **知っておく必要がある重要な点事項を次に示します**
 

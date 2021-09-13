@@ -19,11 +19,11 @@ search.appverid:
 - GEA150
 description: '[レポート] ダッシュボードの [Microsoft 365 Apps] ダッシュボードを使用して使用状況レポートMicrosoft 365を取得する方法についてMicrosoft 365 管理センター。'
 ms.openlocfilehash: 5e604ba21e7653cbef9e4fa7eccedc24f775128b
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564944"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177240"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-apps-usage"></a>Microsoft 365管理センターのレポート - Microsoft 365 Apps使用状況
 

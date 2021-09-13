@@ -20,17 +20,17 @@ search.appverid:
 - MET150
 description: 組み込みの Basic Mobility and Security を使用して、登録済みデバイスから情報を削除します。
 ms.openlocfilehash: b687b3d13f95cb05d9261064d385d35ef6d7f7bf
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564419"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176799"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>Basic Mobility and Security でモバイル デバイスをワイプする
 
 Microsoft 365 の組み込みの Basic Mobility and Security を使用して、組織情報のみを削除したり、出荷時のリセットを実行してモバイル デバイスからすべての情報を削除し、工場出荷時の設定に復元することができます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 モバイル デバイスは、機密性の高い組織情報を保存し、組織のリソースにアクセスMicrosoft 365できます。 組織の情報を保護するために、出荷時のリセットまたは会社データの削除を行います。
 

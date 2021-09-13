@@ -25,11 +25,11 @@ search.appverid:
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: 新しい製品と機能の更新プログラムのリリース オプションを設定する方法については、Microsoft 365 管理センター。
 ms.openlocfilehash: df64bbac95f9d902ed83080e639544feb384fd72
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566248"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178975"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>標準リリースオプションまたはターゲット リリース オプションを設定する
 

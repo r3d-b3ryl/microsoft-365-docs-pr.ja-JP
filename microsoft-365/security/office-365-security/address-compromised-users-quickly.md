@@ -16,11 +16,11 @@ description: Microsoft Defender for Office 365 プラン 2 の自動調査と対
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 4a90768038bde3126dd4ac3e5016f4d04aded9af
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572481"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177415"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>調査と対応を自動化して、侵害されたユーザー アカウントに対処する
 

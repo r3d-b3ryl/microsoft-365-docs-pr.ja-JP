@@ -24,17 +24,17 @@ search.appverid:
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: テナントのデータ収集を開始する方法については、Microsoft 365 Usage Analytics テンプレート アプリを使用Power BI。
 ms.openlocfilehash: a05ea19915af96720c3aeaf4a4d01fbe879fbc27
-ms.sourcegitcommit: 59bda7cfd92ef1b0e97858da51a776ec668bcfe0
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "58884662"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180736"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Microsoft 365 利用状況分析を有効にする
 
 Microsoft 365 Microsoft 365 US Government Community Cloud (GCC) テナントで Microsoft 365 利用状況分析を有効にするには、「Usage Analytics」を使用して Connect から Microsoft 365 Government Community Cloud [(GCC)](connect-to-gcc-data-with-usage-analytics.md)のデータを参照してください。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 使用状況分析をMicrosoft 365するには、まずデータを Microsoft 365 管理センター で使用し、次にテンプレート<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank"></a>アプリを Power BI で開始する必要があります。
 
@@ -100,7 +100,7 @@ Microsoft 365 Microsoft 365 US Government Community Cloud (GCC) テナントで 
 
 2. [**レポート**] を選択します。 
   
-3. ステートメントのチェック **を外します すべてのレポートで、ユーザー**、グループ、およびサイトの識別されていない名前を表示し、変更を保存します。  
+3. ステートメントのチェックを外します **すべてのレポートで、ユーザー、グループ、およびサイトの識別されていない名前を表示し**、変更を保存します。  
   
 これらの変更を有効にするには数分かかります。 特定可能なユーザー情報の表示は、Microsoft 365 コンプライアンス センター監査ログに記録されるイベントです。   
 

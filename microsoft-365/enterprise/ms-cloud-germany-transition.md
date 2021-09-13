@@ -16,14 +16,15 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
+- admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '概要: 新しいドイツのデータセンター リージョンで、Microsoft Cloud Germany (Microsoft Cloud Deutschland) から Office 365 サービスへの移行について理解します。'
-ms.openlocfilehash: 32e1098736a1284a37fc3f1af478debbad34c00f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 9f7800a1cbf75e2b68d43fc20b1e79505eb51a81
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573717"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177760"
 ---
 # <a name="migration-from-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Microsoft Cloud Deutschland から新しいドイツのデータセンター地域Office 365サービスへの移行
 
@@ -65,7 +66,7 @@ Office 365 ビデオは 2021 年 3 月 1 日に廃止されます。 Office 365 
 
 :::image type="content" alt-text="新しいドイツのデータセンターへの移行の 10 フェーズ。" source="../media/ms-cloud-germany-migration-opt-in/migration-organization.png" lightbox="../media/ms-cloud-germany-migration-opt-in/migration-organization.png":::
 
-移行をオプトイン [すると、これらのフェーズが開始されます](./ms-cloud-germany-migration-opt-in.md)。 移行フェーズの大部分は、最小限の顧客とのやり取りが必要なバック エンド サービス操作として実行され、その後に 1 つのフェーズが実行されます。 追加の顧客主導のタスクと全体的な移行状態の開始は、移行プロセス中に、Microsoft 365 管理センターメッセージ センターを通じて伝達されます。 タスクの例としては、顧客が管理する DNS 更新プログラム、ハイブリッド顧客向けハイブリッド セットアップの再構成、Exchange Azure 移行などがあります。
+移行をオプトイン [すると、これらのフェーズが開始されます](./ms-cloud-germany-migration-opt-in.md)。 移行フェーズの大部分は、最小限の顧客とのやり取りが必要なバック エンド サービス操作として実行され、その後に 1 つのフェーズが実行されます。 追加の顧客主導のタスクと全体的な移行状態の開始は、移行プロセス中に、Microsoft 365 管理センターメッセージ<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank"></a>センターを通じて伝達されます。 タスクの例としては、顧客が管理する DNS 更新プログラム、ハイブリッド顧客向けハイブリッド セットアップの再構成、Exchange Azure 移行などがあります。
 
 オプトインが発生しても、移行はすぐには開始されません。 組織は、後で移行する予定のテナントの一覧に追加されます。 正常な移行と完了時の使用を確実に行う上で重要な作業前フェーズを開始できます。
 
@@ -96,7 +97,7 @@ Azure ADがワールドワイド サービスに切り替わると、すべて�
 
 ## <a name="moving-to-the-new-german-datacenter-regions"></a>新しいドイツのデータセンター地域への移行
 
-既存の Microsoft Cloud Deutschland のお客様は、Office 365 Dynamics 365 Customer Engagement、および Power Platform サービスの移行を開始できます。 最初のステップは、新しいドイツのデータセンター リージョンへの [Microsoft 主導の移行にオプトインする](./ms-cloud-germany-migration-opt-in.md)ことです。 サブスクリプションを更新すると、Microsoft が支援する移行を自動的にオプトインします。 Microsoft は、お客様のテナント管理者に電子メールと、この問題が発生した場合、Microsoft 365 管理センターメッセージ センターに通知します。 ただし、今すぐプロセスを開始する場合は、今日から[](./ms-cloud-germany-migration-opt-in.md)直接オプトインMicrosoft 365 管理センターできます。 移行は 2021 年初めに開始され、2021 年 10 月 29 日までに完了する予定です。 
+既存の Microsoft Cloud Deutschland のお客様は、Office 365 Dynamics 365 Customer Engagement、および Power Platform サービスの移行を開始できます。 最初のステップは、新しいドイツのデータセンター リージョンへの [Microsoft 主導の移行にオプトインする](./ms-cloud-germany-migration-opt-in.md)ことです。 サブスクリプションを更新すると、Microsoft が支援する移行を自動的にオプトインします。 Microsoft は、お客様のテナント管理者に電子メールと、この問題が発生<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank"></a>したMicrosoft 365 管理センターメッセージ センターに通知します。 ただし、今すぐプロセスを開始する場合は、今日から[](./ms-cloud-germany-migration-opt-in.md)直接オプト<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">イン</a>Microsoft 365 管理センターできます。 移行は 2021 年初めに開始され、2021 年 10 月 29 日までに完了する予定です。 
 
 移行の結果、主要な顧客データとサブスクリプションは新しいドイツのデータセンター地域に移動されます。
 
@@ -181,7 +182,7 @@ Microsoft Cloud Deutschland クラウド サービスでは、次の 15 のサ�
 23. Web 用 Office
 24. Planner
 25. Sway
-26. Microsoft 365 Apps
+26. Microsoft 365 アプリ
 27. Outlook モバイル
 28. Enterprise Mobility + Security (EMS) E3 (Azure AD Premium P1、Intune、および Rights Management Service)
 29. Yammer Enterprise

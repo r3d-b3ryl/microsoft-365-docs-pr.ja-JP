@@ -25,11 +25,11 @@ search.appverid:
 ms.assetid: b6c18a9b-2aed-4c84-9d75-af709160258c
 description: '新しいパートナーを見つけるMicrosoft 365、過去に作業したパートナーの連絡先情報を取得する方法について学習します。 '
 ms.openlocfilehash: ac557a04039c9cf618f2ed1fd0e8c0d967e76386
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394266"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176328"
 ---
 # <a name="find-your-partner-or-reseller"></a>パートナーまたは販売店を検索する
 

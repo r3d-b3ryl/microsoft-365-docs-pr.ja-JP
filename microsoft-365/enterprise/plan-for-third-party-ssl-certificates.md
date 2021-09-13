@@ -21,11 +21,11 @@ search.appverid:
 ms.assetid: b48cdf63-07e0-4cda-8c12-4871590f59ce
 description: '概要: Exchange オンプレミスおよびハイブリッド、AD FS、Exchange Online サービス、および Exchange Web サービスを使用する SSO に必要な SSL 証明書について説明します。'
 ms.openlocfilehash: f2ad14bd35d68067cdc462706bed763e894455f8
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58355930"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179712"
 ---
 # <a name="plan-for-third-party-ssl-certificates-for-microsoft-365"></a>Microsoft 365 のサードパーティの SSL 証明書の計画
 

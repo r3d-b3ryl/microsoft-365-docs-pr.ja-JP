@@ -14,11 +14,11 @@ ms.collection:
 localization_priority: None
 description: Microsoft Viva トピックに関するリソースの検索方法について説明します。
 ms.openlocfilehash: e66252f93b3c32815e3a3a13217a59bb40fa17e6
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58684222"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179592"
 ---
 # <a name="introduction-to-microsoft-viva-topics"></a>Microsoft Viva トピックの概要
 

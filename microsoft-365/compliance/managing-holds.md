@@ -18,13 +18,15 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 保管担当者とそのデータ ソースに保留を設定して、ユーザーのケースに関連するコンテンツを保持するAdvanced eDiscoveryします。
-ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 5c5781d5dd2ce08c3b57695fa08720c1cc3ab38c6f41bceeb6f12a388232c70c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.custom:
+- seo-marvel-mar2020
+- admindeeplinkMAC
+ms.openlocfilehash: 12fdc5e6282358f96dcc1d454156a7fccf7518a4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53859805"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177952"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>Advanced eDiscovery の保留を管理する
 
@@ -54,7 +56,7 @@ ms.locfileid: "53859805"
 
 ケースに対して非保管ホールドをAdvanced eDiscoveryするには、次のAdvanced eDiscoveryします。
 
-1. [詳細] Microsoft 365 コンプライアンス センター[電子情報開示] >**を** クリックして、組織のケースの一覧を表示します。
+1. [詳細] <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター[</a>電子情報開示] >**を** クリックして、組織のケースの一覧を表示します。
   
 2. 保留リストを作成するケースの横の [**開く**] をクリックします。
   
@@ -137,7 +139,7 @@ Microsoft Teamsグループに基Office 365されます。 したがって、そ
 
  - ユーザーのメールボックスが検索された場合Microsoft 365メンバーであるグループまたは Microsoft チームは検索されません。 同様に、グループまたは Microsoft チームMicrosoft 365を配置すると、グループ メールボックスとグループ サイトだけが保留されます。グループ メンバーのメールボックスとOneDrive for Businessサイトは、明示的に保管担当者として追加するか、データ ソースを保持しない限り、保留にされません。 したがって、特定の保管担当者に対して Microsoft 365 グループまたは Microsoft チームを保留にする必要がある場合は、グループ サイトとグループ メールボックスを保管担当者にマッピングする方法を検討してください (「Advanced eDiscovery の管理保管担当者」を参照)。 管理者グループMicrosoft 365 Microsoft チームが 1 人の保管担当者に帰属しない場合は、ソースを非保管ホールドに追加する方法を検討してください。 
  
- - Microsoft 365 グループまたは Microsoft チームのメンバーの一覧を取得するには、> グループのホーム ページでプロパティを表示Microsoft 365 管理センター。 または、Exchange Online PowerShell で次のコマンドを実行できます。
+ - Microsoft 365 グループまたは Microsoft チームのメンバーの一覧を取得するには、次のページの [ホームグループ] ページで  >  [](https://go.microsoft.com/fwlink/p/?linkid=2052855)プロパティをMicrosoft 365 管理センター。 または、Exchange Online PowerShell で次のコマンドを実行できます。
 
    ```powershell
    Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress

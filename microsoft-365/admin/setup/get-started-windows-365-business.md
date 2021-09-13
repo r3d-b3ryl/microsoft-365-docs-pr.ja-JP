@@ -23,11 +23,11 @@ search.appverid:
 - MOE150
 description: 組織で 365 Business Windows購入する方法と、ユーザーがクラウド PC の使用を開始する方法について学習します。
 ms.openlocfilehash: 4c53aba7ae2d4bd47b5df2f32c50dcf6bb448201
-ms.sourcegitcommit: fd348579346522ead16a6bd8ce200a0b8ae8f7d4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58831887"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176247"
 ---
 # <a name="get-started-with-windows-365-business-and-cloud-pcs"></a>Windows 365 Business および Cloud PC の概要
 

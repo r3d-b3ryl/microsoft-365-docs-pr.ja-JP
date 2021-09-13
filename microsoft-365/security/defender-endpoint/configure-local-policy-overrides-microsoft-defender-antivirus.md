@@ -17,11 +17,11 @@ ms.date: 02/13/2020
 ms.reviewer: ''
 manager: dansimp
 ms.openlocfilehash: d70d35bc1e2baa795e024da79ea613087bf511d4
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533413"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179368"
 ---
 # <a name="prevent-or-allow-users-to-locally-modify-microsoft-defender-antivirus-policy-settings"></a>ユーザーがポリシー設定をローカルで変更Microsoft Defender ウイルス対策または許可する
 
@@ -54,10 +54,10 @@ ms.locfileid: "58533413"
 
 5. グループ ポリシー オブジェクトを通常どおり展開します。
 
-Location|設定|記事
+場所|Setting|記事
 ---|---|---|---
 MAPS|Microsoft MAPS へのレポート用にローカル設定の上書きを構成する|[クラウドによる保護の有効化](enable-cloud-protection-microsoft-defender-antivirus.md)
-検疫する|検疫フォルダーからアイテムを削除するローカル設定の上書きを構成する|[スキャンの修復を構成する](configure-remediation-microsoft-defender-antivirus.md)
+Quarantine|検疫フォルダーからアイテムを削除するローカル設定の上書きを構成する|[スキャンの修復を構成する](configure-remediation-microsoft-defender-antivirus.md)
 リアルタイム保護|コンピューター上のファイルとプログラムのアクティビティを監視するローカル設定の上書きを構成する|[常時オンのMicrosoft Defender ウイルス対策監視を有効にして構成する](configure-real-time-protection-microsoft-defender-antivirus.md)
 リアルタイム保護|受信および送信ファイルのアクティビティを監視するローカル設定の上書きを構成する|[常時オンのMicrosoft Defender ウイルス対策監視を有効にして構成する](configure-real-time-protection-microsoft-defender-antivirus.md)
 リアルタイム保護|ダウンロードしたファイルと添付ファイルをスキャンするローカル設定の上書きを構成する|[常時オンのMicrosoft Defender ウイルス対策監視を有効にして構成する](configure-real-time-protection-microsoft-defender-antivirus.md)
@@ -88,7 +88,7 @@ MAPS|Microsoft MAPS へのレポート用にローカル設定の上書きを構
 
 3. ツリーを展開して **、Windowsコンポーネント> Microsoft Defender ウイルス対策。**
 
-4. [リストのローカル **管理者の差し込み動作を構成** する] をダブルクリックし、オプションを [無効] に **設定します**。 **[OK]** をクリックします。
+4. [リストのローカル **管理者の差し込み動作を構成** する] をダブルクリックし、オプションを [無効] に **設定します**。 [**OK**] をクリックします。
 
 > [!NOTE]
 > ローカル リストの結合を無効にすると、フォルダー アクセスの制御設定が上書きされます。 また、ローカル管理者が設定した保護されたフォルダーまたは許可されたアプリも上書きされます。 フォルダー アクセスの制御設定の詳細については、「アプリでブロック[されたアプリ](https://support.microsoft.com/help/4046851/windows-10-allow-blocked-app-windows-security)を許可する」を参照Windows セキュリティ。

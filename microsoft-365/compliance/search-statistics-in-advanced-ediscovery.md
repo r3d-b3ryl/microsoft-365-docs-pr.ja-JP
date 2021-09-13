@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コレクション検索を実行した後に生成される統計情報を表示して、検索結果を検証Advanced eDiscovery。
-ms.openlocfilehash: 811668ba0a1d6a4ca9e171f634f9802273921d0fa1cf7190b315111183a172b8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5b6cfdaffc7851a00035a4edcc9d490b229c455d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53899825"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175775"
 ---
 # <a name="search-statistics-in-advanced-ediscovery"></a>[検索] で統計情報をAdvanced eDiscovery
 

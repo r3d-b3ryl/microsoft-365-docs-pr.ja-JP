@@ -23,11 +23,11 @@ search.appverid:
 description: '共有メールボックスからライセンスを削除して、別のユーザーに割り当てるか、ライセンスを返して支払いを行わない。 '
 ms.date: 05/11/2021
 ms.openlocfilehash: c100d23bad3e8992667e43d8f17d92e296ae49d5
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58683506"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176496"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>共有メールボックスからライセンスを削除する
 

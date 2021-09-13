@@ -20,11 +20,11 @@ search.appverid:
 - MET150
 description: 基本的なモビリティとセキュリティは、モバイル デバイスのセキュリティ保護と管理に役立ちます。
 ms.openlocfilehash: bd400f81b3d125b6d6100ecf2ed06f536106d1f0
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564528"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176904"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>基本的なモビリティとセキュリティの機能
 
@@ -104,8 +104,8 @@ Basic Mobility and Security を使用すると、次のデバイスをセキュ�
 |**設定名**|**iOS 7.1 以降**|**Android 5 以降**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
 |パスワードを要求|はい|はい|はい|
-|シンプルなパスワードを禁止|はい|いいえ|いいえ|
-|英数字のパスワードを要求|はい|いいえ|いいえ|
+|シンプルなパスワードを禁止|はい|いいえ|なし|
+|英数字のパスワードを要求|はい|いいえ|なし|
 |パスワードの最小文字数 |はい|はい|はい|
 |デバイスがワイプされるまでのサインイン失敗回数 |はい|はい|はい|
 |デバイスがロックされるまでのアイドル時間 (分) |はい|はい|はい|

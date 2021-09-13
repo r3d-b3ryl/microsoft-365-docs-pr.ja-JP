@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: Exchange管理者が組織のメールとメールボックスを管理します。 たとえば、ユーザーのメールボックス内の削除済みアイテムを回復します。
-ms.openlocfilehash: e4c5e437ae72e3d3baac4140200670684af73cf1080c7b80edca044389465684
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 58f0da87c0db57a3df62834a4375d561e20a98f8
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53816021"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177160"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>Exchange Online 管理者の役割について
 

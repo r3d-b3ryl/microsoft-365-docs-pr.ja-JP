@@ -18,11 +18,11 @@ description: 電子メールをユーザーが安心して使用できるよう�
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 9bed3c24fee91d746957a6418e5f5ea61babef6b
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533641"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177352"
 ---
 # <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>ユーザーにメールを送信する非顧客Microsoft 365
 

@@ -31,11 +31,11 @@ search.appverid:
 ms.assetid: 99bfbf81-e719-4630-9b0f-c187edfa1f8a
 description: AutoPilot プロファイルは、ユーザー デバイスにインストールWindows方法を制御するのに役立ちます。 プロファイルには、インストールのスキップなど、既定の設定とオプションCortana含まれる。
 ms.openlocfilehash: 9d425e73a5cedf51ce8267afa9505cbde8b97038
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360632"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176719"
 ---
 # <a name="about-autopilot-profile-settings"></a>AutoPilot プロファイルの設定について
 

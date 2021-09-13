@@ -18,11 +18,11 @@ ms.topic: article
 ms.date: 11/06/2020
 ms.technology: mde
 ms.openlocfilehash: bc8b5d2229dac85ff5029c3f40bb0581a66b3343
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58253548"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177655"
 ---
 # <a name="fix-unhealthy-sensors-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint で問題が発生したセンサーの修正
 
@@ -94,8 +94,8 @@ ms.locfileid: "58253548"
 ## <a name="see-also"></a>関連項目
 - [Microsoft Defender for Endpoint のセンサーの正常性状態を確認する](check-sensor-status.md)
 - [クライアント アナライザーの概要](overview-client-analyzer.md)
-- [クライアント アナライザーをダウンロードして実行する](download-client-analyzer.md)
-- [クライアント アナライザーをコンピューターで実行Windows](run-analyzer-windows.md)
-- [macOS または Linux でクライアント アナライザーを実行する](run-analyzer-macos-linux.md)
-- [詳細なトラブルシューティングを行うデータのWindows](data-collection-analyzer.md)
+- [クライアント アナライザーのダウンロードと実行](download-client-analyzer.md)
+- [Windows でのクライアント アナライザーの実行](run-analyzer-windows.md)
+- [macOS または Linux でのクライアント アナライザーの実行](run-analyzer-macos-linux.md)
+- [Windows で高度なトラブルシューティングを行うためのデータ収集](data-collection-analyzer.md)
 

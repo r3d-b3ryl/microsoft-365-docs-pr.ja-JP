@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 37ffe5fbf2e6901ee29bf40d44dd399003e9d709f2dbcab71a148515e95ed13f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f9917c9abe131ceb745dc173ce8ce4219c73dcaa
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838381"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180800"
 ---
 # <a name="contact-support-for-american-samoa"></a>米国サモアのサポートに問い合わせ
 

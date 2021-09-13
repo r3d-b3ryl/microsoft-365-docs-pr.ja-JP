@@ -27,11 +27,11 @@ search.appverid:
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
 description: AutoPilot をWindowsして、従業員が使用できる状態Windows 10新しいデバイスをセットアップする方法について学習します。
 ms.openlocfilehash: 1a2350e836a84870a9eb304196d6c72831f52d60
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360642"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176720"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>ステップ バイ ステップ ガイドを使用して、Autopilot デバイスとプロファイルを追加する
 

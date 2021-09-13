@@ -22,11 +22,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 22b0a82d8101c0a2a9e21c05413b64cd7dca4e9a
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58509955"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177727"
 ---
 # <a name="cancel-machine-action-api"></a>マシン アクション API のキャンセル
 
@@ -57,8 +57,8 @@ ms.locfileid: "58509955"
 
 |アクセス許可の種類|アクセス許可|アクセス許可の表示名|
 |---|---|---|
-|アプリケーション|Machine.CollectForensics <br> Machine.Isolate <br> Machine.RestrictExecution <br> Machine.Scan <br> Machine.Offboard <br> Machine.StopAndQuarantine <br> Machine.LiveResponse|forensics の収集 <br>マシンの隔離<br>コードの実行を制限する<br>  スキャン マシン<br>  マシンのオフボード<br> 停止と検疫<br> 特定のコンピューターでライブ応答を実行する|
-|委任 (職場または学校のアカウント)|Machine.CollectForensics<br> Machine.Isolate  <br>Machine.RestrictExecution<br> Machine.Scan<br> Machine.Offboard<br> Machine.StopAndQuarantineMachine.LiveResponse|forensics の収集<br> マシンの隔離<br>  コードの実行を制限する<br> スキャン マシン<br>マシンのオフボード<br> 停止と検疫<br> 特定のコンピューターでライブ応答を実行する|
+|アプリケーション|Machine.CollectForensics <br> Machine.Isolate <br> Machine.RestrictExecution <br> Machine.Scan <br> Machine.Offboard <br> Machine.StopAndQuarantine <br> Machine.LiveResponse|forensics の収集 <br>マシンの隔離<br>コードの実行制限<br>  スキャン マシン<br>  コンピューターのオフロード<br> 停止と検疫<br> 特定のコンピューターでライブ応答を実行する|
+|委任 (職場または学校アカウント)|Machine.CollectForensics<br> Machine.Isolate  <br>Machine.RestrictExecution<br> Machine.Scan<br> Machine.Offboard<br> Machine.StopAndQuarantineMachine.LiveResponse|forensics の収集<br> マシンの隔離<br>  コードの実行制限<br> スキャン マシン<br>コンピューターのオフロード<br> 停止と検疫<br> 特定のコンピューターでライブ応答を実行する|
 
 ## <a name="http-request"></a>HTTP 要求
 

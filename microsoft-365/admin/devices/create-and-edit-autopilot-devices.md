@@ -27,11 +27,11 @@ search.appverid:
 ms.assetid: 0f7b1d7c-4086-4331-8534-45d7886f9f34
 description: AutoPilot を使用してデバイスをアップロードする方法については、Microsoft 365 Business Premium。 プロファイルは、デバイスまたはデバイスのグループに割り当てできます。
 ms.openlocfilehash: 37617a37f7ea07c46aca19bc75046ebccb0bb4a9
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360627"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176696"
 ---
 # <a name="create-and-edit-autopilot-devices"></a>AutoPilot デバイスを作成し編集する
 

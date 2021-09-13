@@ -13,12 +13,12 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 79247ad0018f8bfb08e58254870fd510ca6fb0ad291a72b2bee4d16b9113ac4a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ee410bf455e770087da7999ad2019c17419a8e00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795856"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175840"
 ---
 # <a name="attributes-for-information-barrier-policies"></a>情報バリア ポリシーの属性
 
@@ -53,14 +53,14 @@ ms.locfileid: "53795856"
     > [!TIP]
     > セグメントを定義する場合は、すべてのセグメントに同じ属性を使用します。 たとえば、Department を使用して一部のセグメントを定義する場合は *、Department* を使用してすべてのセグメントを *定義します*。 MemberOf を使用して、Department および *他のセグメントを使用* して一部のセグメント *を定義しない*。 セグメントが重ならないようにします。各ユーザーは、1 つのセグメントに割り当てる必要があります。
 
-## <a name="reference"></a>参照
+## <a name="reference"></a>Reference
 
 次の表に、情報バリアで使用できる属性を示します。
 
 |**Azure Active Directoryプロパティ名 <br/> (LDAP 表示名)**|**Exchangeプロパティ名**|
 |:---------------------------------------------------------------|:-------------------------|
 | Co | Co |
-| 会社名 | 会社名 |
+| Company | Company |
 | Department | Department |
 | ExtensionAttribute1 | CustomAttribute1 |
 | ExtensionAttribute2 | CustomAttribute2 |

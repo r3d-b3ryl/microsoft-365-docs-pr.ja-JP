@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 共有予定表を作成する方法について学習します。
-ms.openlocfilehash: 6794279bb0ba33449bb7d03b7fe6ef2fd8d7e6e9176ab7d050a813e81122628f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 87b73b9b1bff2d56926c70e812515df3882edcf3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53809506"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180640"
 ---
 # <a name="create-a-shared-calendar"></a>共有予定表を作成する
 

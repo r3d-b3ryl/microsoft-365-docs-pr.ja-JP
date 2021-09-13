@@ -27,11 +27,11 @@ search.appverid:
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: ビジネス アプリ保護の設定Microsoft 365ユーザーのデバイスに適用されたことを確認するWindows 10します。
 ms.openlocfilehash: 67608c2c4b8396bced350685f439cb15f6378e6a
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360547"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176639"
 ---
 # <a name="validate-device-protection-settings-for-windows-10-pcs"></a>PC のデバイス保護設定Windows 10する
 

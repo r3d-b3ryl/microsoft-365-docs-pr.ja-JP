@@ -16,11 +16,11 @@ description: 管理者は、標準ポリシーと厳密なポリシー設定を�
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 50558ef4ff9c4f05f0e7833ef8a1697330c35362
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572841"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177360"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP と Microsoft Defender でセキュリティ ポリシーを事前に設定Office 365
 
@@ -117,7 +117,7 @@ EOP 保護は、Microsoft Defender 以外のユーザーに適用して、保護
 
   詳細については、「[Exchange Online のアクセス許可](/exchange/permissions-exo/permissions-exo)」を参照してください。
 
-  **注**: Azure Active Directory の対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 管理センター 内の他の機能に必要なアクセス許可とアクセス許可がユーザーに付与Microsoft 365。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
+  **注**: Azure Active Directory の対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 管理センター 内の他の機能に必要なアクセス許可とアクセス許可がユーザーに付与Microsoft 365。 詳細については、[「管理者の役割について」](../../admin/add-users/about-admin-roles.md) を参照してください。
 
 ### <a name="use-the-microsoft-365-defender-portal-to-assign-preset-security-policies-to-users"></a>ユーザーに事前Microsoft 365 Defenderポリシーを割り当てるには、このポータルを使用します。
 
@@ -130,7 +130,7 @@ EOP 保護は、Microsoft Defender 以外のユーザーに適用して、保護
    - **グループ**
    - **ドメイン**
 
-   適正なボックスをクリックし、値の入力を開始し、結果で希望する値を選択します。 必要な回数だけこの処理を繰り返します。 既存の値を削除するには、削除をクリックします ![[削除] アイコン。](../../media/m365-cc-sc-remove-selection-icon.png) 値の隣。
+   適正なボックスをクリックし、値の入力を開始し、結果で希望する値を選択します。 必要な回数だけこの処理を繰り返します。 既存の値を削除するには、削除をクリックします ![[削除] アイコン](../../media/m365-cc-sc-remove-selection-icon.png) 値の隣。
 
    ユーザーやグループには、ほとんどの識別子 (名前、表示名、エイリアス、メールアドレス、アカウント名など) を使用できますが、対応する表示名が結果に表示されます。 ユーザーの場合、アスタリスク (\*) を単独で入力すると、使用可能なすべての値が表示されます。
 

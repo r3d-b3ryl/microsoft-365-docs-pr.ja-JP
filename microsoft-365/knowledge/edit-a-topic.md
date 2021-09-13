@@ -15,11 +15,11 @@ ms.service: ''
 localization_priority: Normal
 description: 既存のトピックを編集する方法については、Microsoft Viva トピック。
 ms.openlocfilehash: 4fb3089d0ce701477542fec7710db5de17638469
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573609"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179624"
 ---
 # <a name="edit-an-existing-topic-in-microsoft-viva-topics"></a>既存のトピックを編集Microsoft Viva トピック 
 

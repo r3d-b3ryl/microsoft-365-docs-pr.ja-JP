@@ -13,11 +13,11 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、Veritas の Merge1 サイトにアーカイブされている Facebook から Workplace からデータをインポートおよびアーカイブするコネクタをMicrosoft 365。 コネクタをセットアップするには、Veritas を操作する必要があります このコネクタを使用すると、Microsoft 365 のサード パーティデータ ソースからデータをアーカイブし、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティ データを管理できます。
 ms.openlocfilehash: 97a2664a92b4383d08becb610640e7e8553e90da
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570907"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178024"
 ---
 # <a name="set-up-a-connector-to-archive-workplace-from-facebook-data"></a>Facebook データから Workplace をアーカイブするコネクタをセットアップする
 
@@ -39,7 +39,7 @@ Workplace データをユーザー メールボックスに格納した後、訴
 
 4. コネクタは、手順 3 で説明したように、自動ユーザー マッピングの *Email* プロパティの値を使用して、変換されたアイテムを特定のユーザーのメールボックスにインポートします。 Facebook の Workplace という名前の **受信** トレイ フォルダー内にサブフォルダーが作成され、Workplace アイテムがそのフォルダーにインポートされます。 コネクタは、Email プロパティの値を使用して *これを行* います。 すべての Workplace アイテムには、このプロパティが含まれているので、すべてのチャットまたは参加者のメール アドレスが入力されます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 - Microsoft コネクタ用の Veritas Merge1 アカウントを作成します。 このアカウントを作成するには [、Veritas カスタマー サポートにお問い合わせください](https://globanet.com/ms-connectors-contact)。 手順 1 でコネクタを作成するときに、このアカウントにサインインします。
 

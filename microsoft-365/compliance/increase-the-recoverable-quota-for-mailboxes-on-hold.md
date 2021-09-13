@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: アーカイブ メールボックスを有効にし、自動拡張アーカイブを有効にして、メールボックスの回復可能なアイテム フォルダーのサイズを増やMicrosoft 365。
 ms.openlocfilehash: e46575fcf4335b7429db2370012e44957fb07db3
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567918"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175863"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>保留中のメールボックスの回復可能なアイテムのクォータを拡大する
 

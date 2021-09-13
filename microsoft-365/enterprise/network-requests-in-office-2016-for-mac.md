@@ -18,11 +18,11 @@ search.appverid: MOM160
 ms.assetid: afdae969-4046-44b9-9adb-f1bab216414b
 description: この記事では、アプリケーションがアクセスしようとするエンドポイントOffice for Mac URL、および提供されるサービスについて説明します。
 ms.openlocfilehash: abb744d4ee75b06e66ac6a9aa43c7fd18d8a452f
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356086"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177751"
 ---
 # <a name="network-requests-in-office-for-mac"></a>Office for Mac でのネットワーク要求
 

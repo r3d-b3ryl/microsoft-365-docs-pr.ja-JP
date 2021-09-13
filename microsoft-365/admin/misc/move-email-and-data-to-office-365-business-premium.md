@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 1062115d-e312-482a-bb5a-765235990f41
 ROBOTS: NOINDEX
 description: 新しいビジネス ID にデータを移動する方法について学習します。
-ms.openlocfilehash: 69953736003fb6d19be37baafb0715bc1468843fd2ed81b94b593c6e56a68ae7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4f105e00ab6496a5d1d3edfc0e0f1abd4eced412
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53823905"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178808"
 ---
 # <a name="move-email-and-data-to-microsoft-365-business-standard"></a>メールとデータをユーザーに移動Microsoft 365 Business Standard
 

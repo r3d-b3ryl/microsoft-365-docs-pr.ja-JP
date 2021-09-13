@@ -19,11 +19,11 @@ search.appverid:
 - MET150
 description: アクティビティ エクスプローラーでは、ラベル付きコンテンツを取り扱うユーザーの操作の確認およびフィルター処理を行い、データ分類機能の機能性を完全なものにします。
 ms.openlocfilehash: 8aff58bfd37fbf4e8573546f84f7670424e6b4d8
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571401"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176015"
 ---
 # <a name="get-started-with-activity-explorer"></a>アクティビティ エクスプローラーの使用を開始する
 

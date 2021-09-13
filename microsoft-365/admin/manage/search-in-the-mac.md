@@ -18,11 +18,11 @@ search.appverid:
 - MOE150
 description: 管理センターで検索機能を使用して、より良い結果と迅速な結果を得る方法について学習します。
 ms.openlocfilehash: eca365ed7c25ac908fe5ea1679ceedb9765fb3c7
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566990"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178927"
 ---
 # <a name="search-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターで検索する
 
@@ -34,7 +34,7 @@ ms.locfileid: "58566990"
 
 次のセクションでは、検索可能な管理センターのさまざまな領域とカテゴリについて説明します。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 管理センターで検索するには、管理者である必要があります。 検索結果の範囲は、ログインしているユーザーが持つ管理者のアクセス許可です。 たとえば、管理者SharePointが管理センターに領域またはカテゴリを表示しない場合、その領域は検索で表示されます。
 
@@ -63,7 +63,7 @@ ms.locfileid: "58566990"
 
 グループ名のスペルが正しいことを確認します。
 
-## <a name="actions"></a>Actions
+## <a name="actions"></a>アクション
 
 [アクション] カテゴリには、M365 管理センターでよく使用されるアクションが含まれている検索が可能です。 アクションをシステム内の動詞と考える。 たとえば、任意のページから "パスワードのリセット" を検索し、ユーザーの 1 つ以上のパスワードをリセットすることもできます。 [ユーザーの削除] を検索し、[ユーザーの削除] ページからユーザーを削除できます。
 

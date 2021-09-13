@@ -14,11 +14,11 @@ description: レポート メッセージ機能を使用して、誤検知と誤
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 34afd8d8e15bc301f42850763d39e1846a66e6d4
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563488"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179167"
 ---
 # <a name="report-false-positives-and-false-negatives-in-outlook"></a>Outlook の誤検出と検出漏れを報告する
 

@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: 製品ライセンスの割り当てを解除する方法は、特定のユーザーからのライセンスの割り当てを解除するか、特定の製品からライセンスを割り当て解除するかによって異なります。
 ms.date: 06/07/2021
-ms.openlocfilehash: 1b471cef43064bf6da792cbb887735c38f35c056036936247958af8797edec2f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8a67d7e690ff07631f696a97d6ed59925bc871df
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53824961"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178944"
 ---
 # <a name="unassign-licenses-from-users"></a>ユーザーからライセンスの割り当てを解除する
 
@@ -36,7 +36,7 @@ ms.locfileid: "53824961"
 > [!NOTE]
 > 管理者は、組織内のユーザーが購入したセルフサービス購入サブスクリプションのライセンスを割り当てたり割り当て解除したりすることはできません。 [セルフサービス購入サブスクリプションを引き継ぐと](../../commerce/subscriptions/manage-self-service-purchases-admins.md#take-over-a-self-service-purchase-subscription)、ライセンスの割り当てまたは割り当て解除を行うことができるようになります。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 - ライセンスの割り当てを解除するには、グローバル、ライセンス、ユーザー管理者である必要があります。 詳細については、「[Microsoft 365 の管理者の役割](../add-users/about-admin-roles.md)」を参照してください。
 - [Office 365 PowerShell を使用してライセンスをユーザー アカウントに割り当てる](../../enterprise/remove-licenses-from-user-accounts-with-microsoft-365-powershell.md)ことができます。
@@ -77,7 +77,7 @@ ms.locfileid: "53824961"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> の順に選択します。
 
 ::: moniker-end
 

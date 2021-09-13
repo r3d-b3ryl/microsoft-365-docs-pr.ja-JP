@@ -17,11 +17,11 @@ ms.collection:
 ms.custom: ''
 f1.keywords: NOCSH
 ms.openlocfilehash: a372ae3b15b35c03449973fba2b1181a8ed68ac2
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575578"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177312"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>脅威保護機能を全体にわたって構成Microsoft 365
 
@@ -70,7 +70,7 @@ Microsoft Defender for Identity を使用すると、ハイブリッド環境で
 
 ### <a name="more-information-about-microsoft-defender-for-identity"></a>Microsoft Defender for Identity の詳細
 
-- [Microsoft Defender for Identity とは](/azure-advanced-threat-protection/what-is-atp)
+- [Microsoft Defender for Identity とは?](/azure-advanced-threat-protection/what-is-atp)
 - [ビデオ: Id 用 Microsoft Defender の概要](https://www.youtube.com/watch?reload=9&v=EGY2m8yU_KE)
 - [Microsoft Defender for Identity の展開](/azure-advanced-threat-protection/what-is-atp#whats-next)
 

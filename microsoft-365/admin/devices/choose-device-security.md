@@ -19,11 +19,11 @@ search.appverid:
 - MET150
 description: 異なる MDM メソッドと MAM メソッドの間で選択します。
 ms.openlocfilehash: 887dae650dd0635724a59ebb3c1ddf5bc0d38418
-ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58377705"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176704"
 ---
 # <a name="options-for-protecting-your-devices-and-app-data"></a>デバイスとアプリ データを保護するためのオプション
 

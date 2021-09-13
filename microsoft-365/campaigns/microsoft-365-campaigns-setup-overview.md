@@ -26,11 +26,11 @@ search.appverid:
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: キャンペーンや他のMicrosoft 365 Business Premiumの設定の概要
 ms.openlocfilehash: 41d3f0829829233c70e091f27225f7756a0e4f46
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567122"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178264"
 ---
 # <a name="set-up-microsoft-365"></a>設定Microsoft 365
 

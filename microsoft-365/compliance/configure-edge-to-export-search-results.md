@@ -14,11 +14,11 @@ search.appverid:
 - MET150
 description: セキュリティとコンプライアンス センター ClickOnceコンテンツ検索と電子情報開示から検索結果をダウンロードするには、Microsoft Edge の最新バージョンを使用するサポートを有効にする必要があります。
 ms.openlocfilehash: bd42ebffce326e4abe4943ff4187fc2bd960ff65
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574846"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176079"
 ---
 # <a name="use-the-ediscovery-export-tool-in-microsoft-edge"></a>[電子情報開示のエクスポート ツール] を使用Microsoft Edge
 

@@ -17,12 +17,12 @@ ms.custom:
 description: 管理者は、受信メッセージ (EOP) で受信メッセージを許可するための使用可能なオプションと優先Exchange Online Protectionできます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 81ab9b0aabc9b9699e0cee27b0046748a2a585df511f271316e01200ce552221
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f76b34a439d2eaf2c8315d174483b0b30d3b3b0b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56807526"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177383"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>EOP で差出人セーフ リストを作成する
 
@@ -94,7 +94,7 @@ EOP およびスタンドアロン EOP Exchange Onlineフロー ルールでは�
 
    b. **メッセージのプロパティを変更する** \>**メッセージ ヘッダーを設定する**:**メッセージ ヘッダーを値** \<CustomHeaderName\> **に設定します** \<CustomHeaderValue\> 。
 
-      たとえば、「 `X-ETR: Bypass spam filtering for authenticated sender 'contoso.com'` 」のように入力します。 ルールに複数のドメインがある場合は、必要に応じてヘッダー テキストをカスタマイズできます。
+      たとえば、`X-ETR: Bypass spam filtering for authenticated sender 'contoso.com'` などです。 ルールに複数のドメインがある場合は、必要に応じてヘッダー テキストをカスタマイズできます。
 
       メール フロー ルールが原因でメッセージがスパム フィルター処理をスキップすると、値は `SFV:SKN` **X-Forefront-Antispam-Report** ヘッダーにスタンプされます。 メッセージが IP 許可一覧上のソースからのメッセージである場合は、値 `IPV:CAL` も追加されます。 これらの値は、トラブルシューティングに役立ちます。
 
@@ -113,7 +113,7 @@ EOP およびスタンドアロン EOP Exchange Onlineフロー ルールでは�
 
 前述のようにメール フロー ルールを使用できない場合は、接続フィルター ポリシーで送信元メール サーバーまたはサーバーを IP 許可一覧に追加します。 詳細については [、「EOP で接続フィルターを構成する」を参照してください](configure-the-connection-filter-policy.md)。
 
-**注意**:
+**注**:
 
 - 許可される IP アドレスの数を最小限に抑える必要があります。そのため、可能な限り IP アドレス範囲全体を使用しないようにしてください。
 

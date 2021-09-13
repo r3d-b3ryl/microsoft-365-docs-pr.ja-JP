@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099
 description: Azure ExpressRoute で BGP コミュニティを使用して、複数のシナリオで必要な IP プレフィックスと必要な帯域幅の数を管理するOffice 365します。
-ms.openlocfilehash: 7dd274524ece89c6114be594c24e1a5ee049de77f139fd2116f32c6dd3adc502
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9cb6980c1d8cc120f99cac087602856aeacf1adf
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53819573"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177800"
 ---
 # <a name="using-bgp-communities-in-expressroute-for-office-365-scenarios"></a>ExpressRoute での BGP コミュニティの使用によるOffice 365シナリオ
 
@@ -42,7 +42,7 @@ Azure ExpressRoute Office 365を使用したネットワークへの接続は、
 > [!NOTE]
 > 他のアプリケーションに関連付けられている一部のネットワーク トラフィックがコミュニティ値に含まれると予想する必要があります。 これは、共有サービスとデータセンターを備えたグローバル なソフトウェア as a Service オファリングに対して期待される動作です。 これは、上記の 2 つの目標で可能な限り最小限に抑え、プレフィックス数や帯域幅を管理します。
 
-|**サービス**|**BGP Community値**|**注**|
+|**サービス**|**BGP Community値**|**メモ**|
 |:-----|:-----|:-----|
 |Exchange Online\*  <br/> |12076:5010  <br/> |サービスExchange EOP サービスを含む\*  <br/> |
 |SharePoint Online\*  <br/> |12076:5020  <br/> |SharePoint Online  <br/> |

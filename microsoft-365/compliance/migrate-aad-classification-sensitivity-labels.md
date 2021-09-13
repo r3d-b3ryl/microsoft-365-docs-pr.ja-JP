@@ -10,12 +10,12 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 description: この記事では、従来の分類Azure Active Directoryラベルについて説明します。
-ms.openlocfilehash: 8999451af155462cbd2f4c08354b01115ac2763cb15da715d5a31ef7836a4d6b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 07bc09afb3e490961a8cc5a88857ec49dd962856
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53885833"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177943"
 ---
 # <a name="azure-active-directory-classification-and-sensitivity-labels-for-microsoft-365-groups"></a>Azure Active Directoryグループの分類とMicrosoft 365ラベル
 

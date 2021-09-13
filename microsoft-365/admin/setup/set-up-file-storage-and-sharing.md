@@ -32,11 +32,11 @@ search.appverid:
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: ストレージとファイル共有をOneDrive共有するために、Microsoft 365サイトとチーム Microsoft 365する方法について学習します。
 ms.openlocfilehash: 69ecb461396ef220258ce174d462ea7afda5aa8a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566894"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178456"
 ---
 # <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>ファイルストレージと共有を設定する方法は、Microsoft 365
 

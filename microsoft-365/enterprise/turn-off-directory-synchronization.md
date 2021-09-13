@@ -22,11 +22,11 @@ search.appverid:
 ms.assetid: ee5f861e-bd48-4267-83d1-a4ead4b4a00d
 description: この記事では、PowerShell を使用してユーザーのディレクトリ同期をオフにする方法Microsoft 365。
 ms.openlocfilehash: 28e0a83bba1a63a7cd1d2f449b9bf3ba34e4862a
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354202"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179632"
 ---
 # <a name="turn-off-directory-synchronization-for-microsoft-365"></a>ユーザーのディレクトリ同期をオフMicrosoft 365
 PowerShell を使用すると、ディレクトリ同期をオフにし、同期されたユーザーをクラウド専用に変換できます。 ただし、トラブルシューティング手順としてディレクトリ同期をオフにすることをお勧めしません。 ディレクトリ同期のトラブルシューティングに関するサポートが必要な場合は、「ディレクトリ同期に関する問題を修正する」の記事[Microsoft 365](fix-problems-with-directory-synchronization.md)してください。 

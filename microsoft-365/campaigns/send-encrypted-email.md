@@ -26,11 +26,11 @@ search.appverid:
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 電子メールを使用して暗号化された電子メールを送信するOutlook。
 ms.openlocfilehash: 789477557801f2c8b89fa2bb281d0b0f2faf993a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567110"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178255"
 ---
 # <a name="encrypt-or-label-your-sensitive-email"></a>機密情報を暗号化またはラベル付けする
 

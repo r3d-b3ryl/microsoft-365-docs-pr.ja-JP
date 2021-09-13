@@ -23,11 +23,11 @@ search.appverid:
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: テナントとユーザーが要件を満たしていることを確認し、集中展開を使用してアドインを展開Officeします。
 ms.openlocfilehash: 79acef4454428daba68d42b0161d060b7e28ee56
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564395"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176351"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>組織でアドインの集中展開が機能するかどうかを判断する
 
@@ -45,7 +45,7 @@ ms.locfileid: "58564395"
 
 すべてのユーザーのクライアントにアドインが表示されるには、最大 24 時間かかる場合があります。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 アドインの一元展開では、ユーザーが Microsoft 365 Enterprise SKU E3/E5/F3 または Business SKU: Business Basic、Business Standard、Business プレミアム (および組織 ID を使用して Office にサインイン)を使用し、Exchange Online メールボックスとアクティブな Exchange Online メールボックスを持っている必要があります。 サブスクリプション ディレクトリは、サブスクリプション ディレクトリに存在するか、サブスクリプション ディレクトリにAzure Active Directory。
 次の手順に従って、OfficeとExchange要件を確認したり、集中展開の互換性チェックを[使用できます](#centralized-deployment-compatibility-checker)。
@@ -92,7 +92,7 @@ Microsoft Exchangeは、組織のテナント内にアドイン マニフェス�
 
 1. 管理者特権のウィンドウPowerShell.exeします。
 
-2. 次のコマンドを実行します。
+2. 次のコマンドを実行します:
 
    ```powershell
    Import-Module O365CompatibilityChecker

@@ -25,11 +25,11 @@ search.appverid:
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: 共有メールボックスを作成すると、社内の複数のユーザーが 1 つのメール アドレスに送付されたメールを閲覧したり、回答したりできます。
 ms.openlocfilehash: b6aaf63f61919c520c77a09bf3607174757d4c2b
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566318"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176535"
 ---
 # <a name="create-a-shared-mailbox"></a>共有メールボックスを作成する 
 
@@ -121,13 +121,13 @@ ms.locfileid: "58566318"
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> の順に選択します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> の順に選択します。
 ::: moniker-end
 
 1. ユーザー アカウントの一覧から、共有メールボックスのアカウントを探します (例: フィルターを **[ライセンス未付与のユーザー]** に変更する)。

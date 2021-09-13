@@ -20,11 +20,11 @@ search.appverid:
 - MET150
 description: 'Microsoft 365 のエンドポイントのデータ損失防止は、ファイル アクティビティの監視と、それらのファイルに対する保護アクションをエンドポイントに拡張します。 Microsoft 365 のコンプライアンスソリューションでファイルが表示されます '
 ms.openlocfilehash: ce6de37a792c81e9d43b3d7c716629e386fca7b3
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566020"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175943"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Microsoft 365 のエンドポイントのデータ損失防止について説明する
 

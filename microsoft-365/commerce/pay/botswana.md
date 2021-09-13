@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 66b1071ab4d075160a78a125b6b6fa1202769c52df586a45acfc6e74f0cca5e0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c728456fc4052f4ec8dfca29ddc28f6e26decd19
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53906577"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180423"
 ---
 # <a name="payment-information-for-botswana"></a>Botswana のお支払い情報
 

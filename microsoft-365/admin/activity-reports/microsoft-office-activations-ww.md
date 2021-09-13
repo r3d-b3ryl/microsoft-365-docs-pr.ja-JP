@@ -20,11 +20,11 @@ search.appverid:
 ms.assetid: 87c24ae2-82e0-4d1e-be01-c3bcc3f18c60
 description: ライセンス認証レポートを取得して、Officeサブスクリプションをアクティブ化したユーザーを知り、追加のOffice必要なユーザーを特定する方法について学習します。
 ms.openlocfilehash: de5ca46cd8ecabb88e250c5fb754b9943a01d4e5
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565014"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177255"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-office-activations"></a>Microsoft 365管理センターのレポート - Microsoft Officeアクティブ化
 

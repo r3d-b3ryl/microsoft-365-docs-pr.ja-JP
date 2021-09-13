@@ -17,11 +17,11 @@ ms.topic: article
 ms.technology: mde
 ms.custom: api
 ms.openlocfilehash: c9964ce7abdae004b33fb7317740b30b46b72d95
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58603293"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177607"
 ---
 # <a name="export-software-vulnerabilities-assessment-per-device"></a>デバイスごとのソフトウェアの脆弱性評価のエクスポート
 
@@ -74,7 +74,7 @@ API は、Json 応答として組織内のデータをプルします。 応答�
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 ---|---|---
 アプリケーション|Vulnerability.Read.All|\'脅威と脆弱性管理の脆弱性情報の読み取り\'
-委任 (職場または学校のアカウント)|脆弱性。読み取り|\'脅威と脆弱性管理の脆弱性情報の読み取り\'
+委任 (職場または学校アカウント)|脆弱性。読み取り|\'脅威と脆弱性管理の脆弱性情報の読み取り\'
 
 ### <a name="13-url"></a>1.3 URL
 
@@ -101,12 +101,12 @@ GET /api/machines/SoftwareVulnerabilitiesByMachine
 
 プロパティ (ID)|データ型|説明|返される値の例
 :---|:---|:---|:---
-CveId|string|共通の脆弱性と露出 (CVE) システムのセキュリティの脆弱性に割り当てられた一意の識別子。|CVE-2020-15992
+CveId|文字列|共通の脆弱性と露出 (CVE) システムのセキュリティの脆弱性に割り当てられた一意の識別子。|CVE-2020-15992
 CvssScore|string|CVE の CVSS スコア。|6.2
-DeviceId|string|サービス内のデバイスの一意の識別子。|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
+DeviceId|文字列|サービス内のデバイスの一意の識別子。|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
 DeviceName|string|デバイスの完全修飾ドメイン名 (FQDN)。|johnlaptop.europe.contoso.com
 DiskPaths|配列 \[ 文字列\]|製品がデバイスにインストールされていることを示すディスク証拠。|[ "C:\Program Files (x86)\Microsoft\Silverlight\Application\silverlight.exe" ]
-ExploitabilityLevel|string|この脆弱性の悪用レベル (NoExploit、ExploitIsPublic、ExploitIsVerified、ExploitIsInKit)|ExploitIsInKit
+ExploitabilityLevel|文字列|この脆弱性の悪用レベル (NoExploit、ExploitIsPublic、ExploitIsVerified、ExploitIsInKit)|ExploitIsInKit
 FirstSeenTimestamp|string|この製品の CVE がデバイスで初めて表示された場合。|2020-11-03 10:13:34.8476880
 ID|string|レコードの一意の識別子。|123ABG55_573AG&mnp!
 LastSeenTimestamp|string|デバイスで CVE が最後に表示された時刻。|2020-11-03 10:13:34.8476880
@@ -116,9 +116,9 @@ RecommendationReference|string|このソフトウェアに関連する推奨事�
 RecommendedSecurityUpdate (オプション)|string|ソフトウェア ベンダーが脆弱性に対処するために提供するセキュリティ更新プログラムの名前または説明。|2020 年 4 月のセキュリティ更新プログラム
 RecommendedSecurityUpdateId (オプション)|string|対応するガイダンスまたはナレッジ ベース (KB) 記事の該当するセキュリティ更新プログラムまたは識別子の識別子|4550961
 RegistryPaths|配列 \[ 文字列\]|製品がデバイスにインストールされていることを示すレジストリ証拠。|[ "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\MicrosoftSilverlight"
-SoftwareName|string|ソフトウェア製品の名前。|クロム
+SoftwareName|文字列|ソフトウェア製品の名前。|クロム
 SoftwareVendor|string|ソフトウェア ベンダーの名前。|google
-SoftwareVersion|string|ソフトウェア製品のバージョン番号。|81.0.4044.138
+SoftwareVersion|文字列|ソフトウェア製品のバージョン番号。|81.0.4044.138
 VulnerabilitySeverityLevel|string|CVSS スコアに基づくセキュリティ脆弱性に割り当てられた重大度レベルと、脅威の状況の影響を受ける動的要因。|中
 |
 
@@ -279,7 +279,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitie
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 ---|---|---
 アプリケーション|Vulnerability.Read.All|\'脅威と脆弱性管理の脆弱性情報の読み取り\'
-委任 (職場または学校のアカウント)|脆弱性。読み取り|\'脅威と脆弱性管理の脆弱性情報の読み取り\'
+委任 (職場または学校アカウント)|脆弱性。読み取り|\'脅威と脆弱性管理の脆弱性情報の読み取り\'
 
 ### <a name="23-url"></a>2.3 URL
 
@@ -356,7 +356,7 @@ DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId のすべて�
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 ---|---|---
 アプリケーション|Vulnerability.Read.All|'脅威と脆弱性管理の脆弱性情報の読み取り'
-委任 (職場または学校のアカウント)|脆弱性。読み取り|'脅威と脆弱性管理の脆弱性情報の読み取り'
+委任 (職場または学校アカウント)|脆弱性。読み取り|'脅威と脆弱性管理の脆弱性情報の読み取り'
 
 ### <a name="33-url"></a>3.3 URL
 
@@ -387,7 +387,7 @@ GET /api/machines/SoftwareVulnerabilityChangesByMachine
 :---|:---|:---|:---
 CveId |string|共通の脆弱性と露出 (CVE) システムのセキュリティの脆弱性に割り当てられた一意の識別子。|CVE-2020-15992  
 CvssScore|string|CVE の CVSS スコア。|6.2  
-DeviceId|string|サービス内のデバイスの一意の識別子。|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1  
+DeviceId|文字列|サービス内のデバイスの一意の識別子。|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1  
 DeviceName|string|デバイスの完全修飾ドメイン名 (FQDN)。|johnlaptop.europe.contoso.com  
 DiskPaths|Array[string]|製品がデバイスにインストールされていることを示すディスク証拠。|["C:\Program Files (x86)\Microsoft\Silverlight\Application\silverlight.exe"]  
 EventTimestamp|String|このデルタ イベントが見つかった時刻。|2021-01-11T11:06:08.291Z
@@ -401,9 +401,9 @@ RecommendationReference|string|このソフトウェアに関連する推奨事�
 RecommendedSecurityUpdate |string|ソフトウェア ベンダーが脆弱性に対処するために提供するセキュリティ更新プログラムの名前または説明。|2020 年 4 月のセキュリティ更新プログラム  
 RecommendedSecurityUpdateId |string|対応するガイダンスまたはナレッジ ベース (KB) 記事の該当するセキュリティ更新プログラムまたは識別子の識別子|4550961  
 RegistryPaths |Array[string]|製品がデバイスにインストールされていることを示すレジストリ証拠。|[ "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Google Chrome"  
-SoftwareName|string|ソフトウェア製品の名前。|クロム  
+SoftwareName|文字列|ソフトウェア製品の名前。|クロム  
 SoftwareVendor|string|ソフトウェア ベンダーの名前。|google  
-SoftwareVersion|string|ソフトウェア製品のバージョン番号。|81.0.4044.138  
+SoftwareVersion|文字列|ソフトウェア製品のバージョン番号。|81.0.4044.138  
 状態|String|**New**  (デバイスに導入された新しい脆弱性の場合) (1)**修正** 済み (この脆弱性がデバイス上に存在しなくなった場合、これは修復   されたという意味です)。 (2) **更新**  (デバイスの脆弱性が変更された場合)。 変更の可能性は、CVSS スコア、悪用可能性レベル、重大度レベル、DiskPaths、RegistryPaths、RecommendedSecurityUpdate などです。 |Fixed
 VulnerabilitySeverityLevel|string|CVSS スコアに基づくセキュリティ脆弱性に割り当てられた重大度レベルと、脅威の状況の影響を受ける動的要因。|中
 |

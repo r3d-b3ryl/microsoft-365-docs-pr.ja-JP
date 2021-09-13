@@ -13,11 +13,11 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 17a-4 Cisco Jabber DataParser コネクタをセットアップして使用して、Cisco Jabber データをインポートおよびアーカイブする方法についてMicrosoft 365。
 ms.openlocfilehash: 4a8e116bde6a17c9b925d1a9fa172955eaed9248
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569191"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178128"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-jabber-data"></a>Cisco Jabber データをアーカイブするコネクタをセットアップする
 

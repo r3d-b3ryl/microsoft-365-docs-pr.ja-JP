@@ -25,11 +25,11 @@ search.appverid:
 - MOE150
 description: ユーザーに対するこれらのセキュリティ推奨事項Microsoft 365 Business Premiumユーザーに与える影響とデータの保護について学習します。
 ms.openlocfilehash: 8f8ccbbb1f9edb6eb9b1f29078317727b5e9b6e7
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567134"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178272"
 ---
 # <a name="how-these-security-recommendations-affect-your-users"></a>これらのセキュリティ推奨事項がユーザーに与える影響
 

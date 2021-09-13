@@ -23,11 +23,11 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.openlocfilehash: d7982e8a8c320336a47cd64152b5477be7ae51f5
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568110"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177488"
 ---
 # <a name="microsoft-365-defender-integration-with-azure-sentinel"></a>Microsoft 365 Defender と Azure Sentinel との統合
 
