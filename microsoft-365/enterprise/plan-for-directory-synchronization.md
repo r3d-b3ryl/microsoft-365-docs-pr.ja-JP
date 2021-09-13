@@ -20,11 +20,11 @@ search.appverid:
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: ディレクトリの同期と Microsoft 365、Active Directory ドメイン サービスのクリーンアップ、およびネットワーク ツールAzure Active Directory Connectします。
 ms.openlocfilehash: 5ad437e4f8abcf2a6d59d17ce41a2b1adeac0649
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575638"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210573"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-microsoft-365"></a>ハイブリッド ID とディレクトリ同期によるMicrosoft 365
 

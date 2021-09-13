@@ -22,11 +22,11 @@ search.appverid:
 ms.assetid: e8ce6b72-745b-464a-85c7-cbf6eb53391b
 description: コンテンツ クエリ Web パーツを SharePoint Server 2013 および SharePoint Online のコンテンツ検索 Web パーツに置き換えてパフォーマンスを向上させる方法について説明します。
 ms.openlocfilehash: 270019b59666c3f52d67648a88c453278149fccd
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566746"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210433"
 ---
 # <a name="using-content-search-web-part-instead-of-content-query-web-part-to-improve-performance-in-sharepoint-online"></a>コンテンツ クエリ Web パーツの代わりにコンテンツ検索 Web パーツを使用してオンラインでのパフォーマンスSharePointする
 

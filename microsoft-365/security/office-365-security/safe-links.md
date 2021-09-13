@@ -1,5 +1,5 @@
 ---
-title: 安全なリンク
+title: Microsoft Defender セーフのリンクの概要を完了Office 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -9,6 +9,7 @@ audience: Admin
 ms.topic: overview
 f1_keywords:
 - "197503"
+ms.date: 09/08/2021
 localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
@@ -24,15 +25,15 @@ search.appverid:
 - ZPP160
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
-description: この記事では、管理者は、フィッシングや悪意のある URL を使用する他の攻撃から組織を保護するために、Office 365 用 Defender の セーフ リンク保護について学習できます。
+description: 組織をフィッシングセーフ悪意のある URL を使用する他の攻撃から組織を保護Office 365 Defender for Defender のリンク保護について学習します。 [Teams セーフリンク] を見て、リンク メッセージのセーフを参照してください。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3a4382ad06d25bd1880fa7b8603fc315ae61f61f
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 41520f2b731e5d76526393dafda6ce9be0fb290f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533101"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211594"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>セーフMicrosoft Defender for Office 365
 
@@ -45,22 +46,22 @@ ms.locfileid: "58533101"
 > [!IMPORTANT]
 > この記事は、[Microsoft Defender for Office 365](defender-for-office-365.md) をご利用の法人のお客様を対象としています。 Outlook.com、Microsoft 365 Family、または Microsoft 365 Personal を使用している場合に、Outlook の Safelinks に関する情報を探している場合は[、「Advanced Outlook.com](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)セキュリティ」を参照してください。
 
-セーフ[リンクは、メール](defender-for-office-365.md)フロー内の受信電子メール メッセージの URL のスキャンと書き換え、および電子メール メッセージなどの URL とリンクのクリック時の検証を提供する Defender for Office 365 の機能です。 セーフリンク のスキャンは、受信メール メッセージ[](anti-spam-and-anti-malware-protection.md)(EOP) の通常のスパム対策およびマルウェア対策保護に加えてExchange Online Protection発生します。 セーフリンクスキャンは、フィッシングなどの攻撃で使用される悪意のあるリンクから組織を保護するのに役立ちます。
+セーフ[リンクは、メール](defender-for-office-365.md)フロー内の受信電子メール メッセージの URL のスキャンと書き換え、および電子メール メッセージなどの URL とリンクのクリック時の検証を提供する Defender for Office 365 の機能です。 セーフリンク のスキャンは、受信メール メッセージ[](anti-spam-and-anti-malware-protection.md)(EOP) の通常のスパム対策およびマルウェア対策保護に加えてExchange Online Protection発生します。 安全なリンクのスキャンは、フィッシングやその他の攻撃で使用される悪意のあるリンクから組織を保護できます。
 
-セーフリンク保護は、次の場所で使用できます。
+安全なリンクの保護機能は以下の場所で利用できます。
 
-- **電子メール** メッセージ : セーフのリンク保護は、リンク ポリシーによって制御セーフされます。 既定のリンク ポリシーセーフないので、電子メール メッセージで セーフ リンクの保護を取得するには、1 つ以上の セーフ **リンク ポリシーを作成する必要があります**。 手順については、「Microsoft Defender for セーフのリンク ポリシーをセットアップする[」を参照Office 365。](set-up-safe-links-policies.md)
+- **メール メッセージ**: メール メッセージ内のリンクに対する安全なリンク保護は、安全なリンク ポリシーで制御されます。 既定のリンク ポリシーセーフないので、電子メール メッセージで セーフ リンクの保護を取得するには、1 つ以上の セーフ **リンク ポリシーを作成する必要があります**。 手順については、「Microsoft Defender for セーフのリンク ポリシーをセットアップする[」を参照Office 365。](set-up-safe-links-policies.md)
 
   電子メール メッセージのリンク保護セーフ詳細については、この記事の「セーフのリンク[設定](#safe-links-settings-for-email-messages)」セクションを参照してください。
   
   > [!NOTE]
   > セーフメールが有効なパブリック フォルダーでは、リンクは機能しません。
 
-- **Microsoft Teams**: セーフ Teams会話、グループ チャット、またはチャネルからのリンクのリンク保護は、セーフ リンク ポリシーによっても制御されます。 既定の セーフ リンク ポリシーはないので、Teams で セーフ リンクの保護を取得するには、1 つ以上の セーフ **リンク ポリシーを作成する必要があります**。
+- **Microsoft Teams**: Teams の会話、グループ チャット、またはチャネルからのリンクに対する安全なリンク保護も、安全なリンク ポリシーで制御されます。 既定の セーフ リンク ポリシーはないので、Teams で セーフ リンクの保護を取得するには、1 つ以上の セーフ **リンク ポリシーを作成する必要があります**。
 
   詳細については、セーフのリンク保護Teams後の「セーフのリンク[Microsoft Teams設定」](#safe-links-settings-for-microsoft-teams)を参照してください。
 
-- **Office 365 :** セーフアプリOffice 365のリンク保護は、サポートされているデスクトップ、モバイル、および Web アプリで利用できます。 リンク **ポリシー** セーフ外Office 365グローバル設定で、アプリのリンク保護セーフ構成します。  手順については、「Microsoft Defender for セーフリンクのグローバル設定を構成する」[を参照Office 365。](configure-global-settings-for-safe-links.md)
+- **Office 365 アプリ**: Office 365 アプリの安全なリンク保護は、サポートされたデスクトップ、モバイル、および Web アプリで利用できます。 リンク **ポリシー** セーフ外Office 365グローバル設定で、アプリのリンク保護セーフ構成します。  手順については、「Microsoft Defender for セーフリンクのグローバル設定を構成する」[を参照Office 365。](configure-global-settings-for-safe-links.md)
 
   Office 365 アプリ向けの安全なリンクの保護は、Microsoft Defender for Office 365 のライセンスを付与された組織内のすべてのユーザーに適用され、そのユーザーがアクティブな安全なリンク ポリシーに含まれているかどうかは関係ありません。
 
@@ -96,7 +97,7 @@ ms.locfileid: "58533101"
 
 ## <a name="safe-links-settings-for-email-messages"></a>セーフ電子メール メッセージのリンク設定
 
-セーフリンクは、既知の悪意のあるハイパーリンクの受信メールをスキャンします。 スキャンされた URL は、Microsoft 標準 URL プレフィックスを使用して書き `https://nam01.safelinks.protection.outlook.com` 換えされます。 リンクの書き換え後、悪意のある可能性のあるコンテンツについて分析されます。
+安全なリンクは、受信メールをスキャンして、悪意のあるハイパーリンクを検出します。 スキャンされた URL は、Microsoft 標準 URL プレフィックスを使用して書き `https://nam01.safelinks.protection.outlook.com` 換えされます。 リンクを書き換えた後、潜在的な悪意のあるコンテンツがないか分析します。
 
 [セーフリンクが URL を書き換えた後、メッセージが手動で転送または返信された場合でも、URL は書き換えたままです (内部受信者と外部受信者の両方)。 転送メッセージまたは返信先メッセージに追加された追加のリンクは書き換えされません。 ただし、受信トレイ ルールまたは SMTP 転送による自動転送の場合、その受信者が セーフ リンクによって保護されている場合や、以前の通信で URL が既に書き換え済みである場合を含め、最終的な受信者を対象としたメッセージに URL は書き換えされません。 書き換え URL は HTML メールにのみ適用され、URL の書き換えによってリッチ テキストとプレーン テキストの URL が読み取り不能になりますが、配信前にこれらの URL はスキャンされます。 URL を含むリッチ テキストメールとプレーン テキスト メールは、デスクトップ バージョン 16.0.12513 以降の Outlook のクリック時に セーフ Links へのクライアント側 API 呼び出しによってもチェックされます。
 
@@ -128,6 +129,8 @@ ms.locfileid: "58533101"
 
   [リンク] ポリシーの Standard および Strict ポリシー設定の推奨値の詳細については、「セーフ セーフリンク ポリシー設定」を[参照してください](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)。
 
+ - **URL を書き換えないで、SafeLinks API** を介してチェックを行う: この設定が有効になっている場合、URL の折り返しは行なされません。 セーフリンクは、URL クリック時に API を介して排他的に呼び出され、それをサポートOutlookクライアントによって呼び出されます。 推奨値は無効です。
+  
 - **受信者フィルター**: ポリシーが適用されるユーザーを決定する受信者の条件と例外を指定する必要があります。 条件や例外には次のプロパティを使用できます。
   - **受信者が次の場合**
   - **受信者ドメインは、**
@@ -256,7 +259,7 @@ Standard および Strict ポリシー設定の推奨値の詳細については
 
 [リンク] のグローバル設定で URL の一覧をセーフします。 手順については [、「Configure the Configure the following URL」リストを参照してください](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-microsoft-365-defender-portal)。
 
-**注意**:
+**注**:
 
 - あらゆる場所でブロックされている URL の本当に汎用的なリストについては、「Manage [the Tenant Allow/Block List」を参照してください](tenant-allow-block-list.md)。
 - [次の URL を **ブロックする] リストの制限** 。
@@ -293,7 +296,7 @@ Standard および Strict ポリシー設定の推奨値の詳細については
 
 新規または既存の セーフ リンク ポリシーのリストにエントリを追加するには、「Create[セーフ Links ポリシー](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-create-safe-links-policies) 」または「セーフ リンク ポリシーを変更する」[を参照してください](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-modify-safe-links-policies)。
 
-**注意**:
+**注**:
 
 - 次のクライアントは、[リンク] ポリシーの [次の **URL** を書き換えセーフしません。 ポリシーに含まれるユーザーは、次のクライアントでのリンク スキャンの結果に基づいて URL へのアクセスをブロックセーフできます。
   - Microsoft Teams

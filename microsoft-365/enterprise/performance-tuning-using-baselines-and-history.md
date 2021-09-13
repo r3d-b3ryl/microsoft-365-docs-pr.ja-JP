@@ -23,12 +23,12 @@ ms.collection:
 - Ent_O365
 - SPO_Content
 description: クライアント コンピューター接続の履歴を確認して、新しい問題を早期に検出する方法について説明します。
-ms.openlocfilehash: 8ce4e98a78d3353aa964533b0dfbe269584b637cd829d011ef827d070d7bf95b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 460bde30a0b292569b045c339066df2860c50989
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53800897"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210593"
 ---
 # <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>ベースラインとパフォーマンス履歴を使用して、Office 365 のパフォーマンスをチューニングする
 
@@ -211,7 +211,7 @@ Office 365、オートメーションと実際のユーザーによって監視�
   
 この場合、プロキシ サーバーの出力ポイントに対処するには、いくつかの方法があります。 1 ~ 2、次に 2 ~ 3 をトレースし、ミリ秒単位で数値を追加して、ネットワークの端に最終的な合計を取得できます。 または、ネットワーク アドレスのプロキシをバイパスする接続Office 365できます。 ファイアウォール、リバース プロキシ、または 2 つの組み合わせがある大規模なネットワークでは、多くの URL に対してトラフィックを渡すプロキシ サーバーで例外を作成する必要がある場合があります。 ユーザーが使用するエンドポイントの一覧Office 365 URL[と IP Office 365を参照してください](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)。 認証プロキシがある場合は、まず次の例外をテストします。
   
-- ポート 80 および 443
+- ポート 80 と 443
     
 - TCP と HTTP
     

@@ -13,11 +13,11 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、テレメッセージ コネクタをセットアップして、SMS および MMS データを AT モバイル ネットワークからインポートおよびアーカイブ&できます。 これにより、Microsoft 365 のサード パーティデータ ソースからデータをアーカイブし、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティ データを管理できます。
 ms.openlocfilehash: e17f5d369eefd5a2d7b2d9b8e55df0d1a4c9714b
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567954"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211023"
 ---
 # <a name="set-up-a-connector-to-archive-att-smsmms-data"></a>T SMS/MMS データを使用して AT&をアーカイブするコネクタをセットアップする
 
@@ -41,7 +41,7 @@ SMS および MMS メッセージがユーザー メールボックスに保存�
  
    *User* の [電子メール アドレス] プロパティの値を使用した自動ユーザー マッピングに加えて、CSV マッピング ファイルをアップロードしてカスタム マッピングを定義できます。 このマッピング ファイルには、組織内のユーザーの携帯電話番号Microsoft 365対応するメール アドレスが含まれる。 自動ユーザー マッピングとカスタム マッピングの両方を有効にした場合、すべての電子メール アイテムについて、コネクタは最初にカスタム マッピング ファイルを確認します。 携帯電話番号に対応する有効な Microsoft 365 ユーザーが見つからなかった場合、コネクタはインポートしようとしているアイテムの電子メール アドレス プロパティの値を使用します。 コネクタがカスタム マッピング ファイルまたは電子メール アイテムの電子メール アドレス プロパティに有効な Microsoft 365 ユーザーを見つからなかった場合、アイテムはインポートされません。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 AT&T Network データをアーカイブするために必要な実装手順の一部は Microsoft 365 の外部であり、コンプライアンス センターでコネクタを作成する前に完了する必要があります。
 

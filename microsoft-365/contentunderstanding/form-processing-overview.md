@@ -14,11 +14,11 @@ ms.collection:
 localization_priority: Priority
 description: Microsoft SharePoint Syntex でのフォーム処理について説明します。
 ms.openlocfilehash: 7a411a4150f09d62ae539ca35dee05df201e707c
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58561172"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210863"
 ---
 # <a name="form-processing-overview-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex でのフォーム処理の概要
 

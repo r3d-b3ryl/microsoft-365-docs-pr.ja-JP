@@ -20,16 +20,16 @@ search.appverid:
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
 description: この記事では、Azure ExpressRoute for Office 365ネットワーク計画に利用する方法について説明します。
-ms.openlocfilehash: 33e8a078a8bfd2dec5fc643a73e1d17201c3d7f51f9b491f7e53d25389104d39
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 440d4fafadd7e9b504dc4ffdac1123a2956ed798
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835045"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210603"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>Office 365 向け ExpressRoute のネットワーク計画
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 ExpressRoute for Office 365ネットワークと Microsoft のデータセンター間のレイヤー 3 接続を提供します。 回線は、クライアントのフロントエンド サーバーのボーダー ゲートウェイ プロトコル (BGP) Office 365アドバタイズを使用します。 オンプレミス デバイスの観点から、Office 365 への正しい TCP/IP パスを選択する必要がある場合、Azure ExpressRoute はインターネットの代替手段と見なされます。
   
@@ -220,7 +220,7 @@ Woodgrove がリージョンごとに複数の Azure ExpressRoute 回線を持�
   
 [Office 365 のパフォーマンスに関するトラブルシューティングの計画](performance-troubleshooting-plan.md)
   
-[Office 365 URL および IP アドレス範囲](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[Office 365 の URL と IP アドレスの範囲](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
 [Office 365 のネットワークとパフォーマンスのチューニング](network-planning-and-performance.md)
   

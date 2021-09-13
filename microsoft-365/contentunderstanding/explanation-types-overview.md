@@ -14,11 +14,11 @@ ms.collection:
 localization_priority: Priority
 description: Microsoft SharePoint Syntex のフレーズ リスト、正規表現、および類似性の説明の種類についてご覧ください。
 ms.openlocfilehash: 405080575f48f439e7d978a8fc7ca00ecf956be0
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568398"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210874"
 ---
 # <a name="explanation-types-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex の説明の種類
 

@@ -15,11 +15,11 @@ description: 管理者は、コネクタ (メール フロー インテリジェ
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: e8df87c5d8a93bec8051f29c1ba8eae0fbe8bab9
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574582"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211683"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>EOP でのメール フロー インテリジェンス
 

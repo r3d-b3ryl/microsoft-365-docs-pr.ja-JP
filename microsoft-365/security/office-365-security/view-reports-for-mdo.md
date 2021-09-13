@@ -20,12 +20,12 @@ description: 管理者は、管理者ポータルで使用できるレポート�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 29374b0f4248b520d1b00a597e3c693cdf9f18ef
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 5cc6c39c9d18e1fcc206f1d8cb81451201541e61
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574510"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211504"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>ポータルでレポートOffice 365 Defender をMicrosoft 365 Defenderする
 
@@ -222,7 +222,7 @@ PowerShell レポートコマンドレット:
 
 詳細については、「[Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)」を参照してください。
 
-**注**: Microsoft 365 管理センター の対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 Defender ポータルで必要なアクセス許可と、Microsoft 365 の他の機能に対するアクセス許可がユーザーに付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
+**注**: Microsoft 365 管理センター の対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 Defender ポータルで必要なアクセス許可と、Microsoft 365 の他の機能に対するアクセス許可がユーザーに付与されます。 詳細については、[「管理者の役割について」](../../admin/add-users/about-admin-roles.md) を参照してください。
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>レポートにデータが表示されない場合は、
 
@@ -232,4 +232,4 @@ PowerShell レポートコマンドレット:
 
 [スマート レポートと分析情報 (Microsoft 365 Defenderポータル)](reports-and-insights-in-security-and-compliance.md)
 
-[役割のアクセス許可 (Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)
+[Azure AD組み込みロール](/azure/active-directory/roles/permissions-reference)

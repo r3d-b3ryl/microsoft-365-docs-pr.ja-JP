@@ -20,11 +20,11 @@ ms.collection:
 - m365solution-scenario
 ms.technology: mdo
 ms.openlocfilehash: d4f44b1e77771860ba36a77f257b34bf0cd10e2a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571785"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211684"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>ID およびデバイス アクセス ポリシーを実装するための前提条件作業
 
@@ -99,11 +99,11 @@ BYOD デバイスWindows、ユーザーは [仕事または学校の **アカウ
 
 |プラットフォーム|Word/Excel/PowerPoint|OneNote|OneDrive アプリ|SharePoint アプリ|[OneDrive 同期クライアント](/onedrive/enable-conditional-access)|
 |---|---|---|---|---|---|
-|Windows 8.1|サポート|サポート|該当なし|該当なし|サポート|
-|Windows 10|サポート|サポート|該当なし|該当なし|サポート|
-|Android|サポート|サポート|サポート|サポート|N/A|
-|iOS|サポート|サポート|サポート|サポート|N/A|
-|macOS|サポート|サポート|該当なし|該当なし|サポートされていません|
+|Windows 8.1|サポート済み|サポート済み|該当なし|該当なし|サポート済み|
+|Windows 10|サポート|サポート済み|該当なし|該当なし|サポート済み|
+|Android|サポート済み|サポート済み|サポート済み|サポート済み|N/A|
+|iOS|サポート済み|サポート済み|サポート済み|サポート済み|N/A|
+|macOS|サポート済み|サポート済み|該当なし|該当なし|サポートされていません|
 |Linux|非サポート|非サポート|非サポート|非サポート|非サポート|
 |
 

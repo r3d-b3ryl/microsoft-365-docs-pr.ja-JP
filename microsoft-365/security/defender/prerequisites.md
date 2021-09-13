@@ -21,11 +21,11 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.openlocfilehash: 4bc846927524bd80adf512107e1d072c7969d58f
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58614928"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211833"
 ---
 # <a name="microsoft-365-defender-prerequisites"></a>Microsoft 365 Defender前提条件
 

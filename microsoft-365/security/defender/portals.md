@@ -18,11 +18,11 @@ ms.topic: article
 search.appverid: met150
 ms.technology: m365d
 ms.openlocfilehash: 81fe9d058a1144c67a1d95d02a3e8b47e3c2104b
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255439"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211834"
 ---
 # <a name="microsoft-security-portals-and-admin-centers"></a>Microsoft セキュリティ ポータルと管理センター
 
@@ -44,7 +44,7 @@ Microsoft 365 Defender[ポータル](overview-security-center.md)は、ID、デ�
 | Microsoft Defender セキュリティ センター | Microsoft Defender for Endpoint で提供される機能を使用して、エンドポイントの脅威アクティビティを監視して [対応する](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) | [securitycenter.windows.com](https://securitycenter.microsoft.com/) |
 | セキュリティ/コンプライアンス センター | メール[Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md)コラボレーション サービスOffice 365保護し、さまざまなデータ処理規制への準拠を確保するために、Microsoft Defender for Exchange Online Protectionおよび[Microsoft Defender](/microsoft-365/security/office-365-security/defender-for-office-365)を管理する | [protection.office.com](https://protection.office.com) |
 | Azure Defender ポータル | [Azure Defender を使用](/azure/security-center/security-center-intro)して、クラウド内のデータ センターとハイブリッド ワークロードのセキュリティ体制を強化する | [portal.azure.com/#blade/Microsoft_Azure_Security](https://portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0) |
-| Microsoft Defender for Identity portal | Microsoft Defender for Identity を使用して Active Directory シグナルを使用して、高度な脅威、侵害された ID、悪意のあるインサイダー アクションを特定、検出、[および調査します](/azure-advanced-threat-protection/what-is-atp)。 | [portal.atp.azure.com](https://portal.atp.azure.com/) |
+| Microsoft Defender for Identity ポータル | Microsoft Defender for Identity を使用して Active Directory シグナルを使用して、高度な脅威、侵害された ID、悪意のあるインサイダー アクションを特定、検出、[および調査します](/azure-advanced-threat-protection/what-is-atp)。 | [portal.atp.azure.com](https://portal.atp.azure.com/) |
 | Cloud App Security ポータル | クラウド[サービスMicrosoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)サイバー脅威を特定し、対処するための高度な分析を利用して、豊富な可視性、データ移動の制御、高度な分析を行います。 | [portal.cloudappsecurity.com](https://portal.cloudappsecurity.com/) |
 | Microsoft Defender セキュリティ インテリジェンス ポータル | Microsoft Defender for Endpoint のセキュリティ インテリジェンス更新プログラムを取得し、サンプルを提出し、脅威百科事典を探索する | [microsoft.com/wdsi](https://microsoft.com/wdsi) |
 

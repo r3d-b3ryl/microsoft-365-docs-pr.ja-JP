@@ -11,46 +11,52 @@ metadata:
   author: v-zhifufeng
   ms.author: v-zhifufeng
   ms.date: 03/29/2021
+  ms.openlocfilehash: 3833e05eea8f8598d228e261734fedb1b0cf2647
+  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 09/12/2021
+  ms.locfileid: "59211724"
 landingContent:
-  - title: テスト ベースについて
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: テスト ベースとは
-            url: overview.md
-      - linkListType: get-started
-        links:
-          - text: テストベース アカウントの作成
-            url: createAccount.md
-      - linkListType: tutorial
-        links:
-          - text: 追加リソース
-            url: faq.md
-  - title: 作業の開始
-    linkLists:
-      - linkListType: quickstart
-        links:
-          - text: テストベース アカウントの作成
-            url: createAccount.md
-          - text: アップロードの設定
-            url: uploadApplication.md
-          - text: アップロードバイナリの作成
-            url: binaries.md
-          - text: テスト タスクの設定
-            url: testtask.md
-          - text: テスト オプションの選択
-            url: testoptions.md
-          - text: 選択内容を確認する
-            url: review.md
-          - text: テスト パッケージのガイドライン
-            url: contentguideline.md
-          - text: メモリ回帰分析
-            url: memory.md
-          - text: CPU 回帰分析
-            url: cpu.md
-  - title: 参照の取得
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: よく寄せられる質問
-            url: faq.md
+- title: テスト ベースについて
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: テスト ベースとは
+      url: overview.md
+  - linkListType: get-started
+    links:
+    - text: テストベース アカウントの作成
+      url: createAccount.md
+  - linkListType: tutorial
+    links:
+    - text: 追加リソース
+      url: faq.md
+- title: 作業の開始
+  linkLists:
+  - linkListType: quickstart
+    links:
+    - text: テストベース アカウントの作成
+      url: createAccount.md
+    - text: アップロードの設定
+      url: uploadApplication.md
+    - text: アップロードバイナリの作成
+      url: binaries.md
+    - text: テスト タスクの設定
+      url: testtask.md
+    - text: テスト オプションの選択
+      url: testoptions.md
+    - text: 選択内容を確認する
+      url: review.md
+    - text: テスト パッケージのガイドライン
+      url: contentguideline.md
+    - text: メモリ回帰分析
+      url: memory.md
+    - text: CPU 回帰分析
+      url: cpu.md
+- title: 参照の取得
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: よく寄せられる質問
+      url: faq.md

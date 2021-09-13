@@ -19,11 +19,11 @@ ms.custom:
 ROBOTS: noindex,nofollow
 description: Microsoft Defender for Office 365 の新しいアラート ポリシーをリリースします。 また、新しいものに置き換えられた 2 つの既存のアラート ポリシーを廃止します。
 ms.openlocfilehash: 130bcb9c8511de1f18a8711561bbe6a15544f810
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564012"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210943"
 ---
 # <a name="new-alert-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の新しいアラート ポリシー
 

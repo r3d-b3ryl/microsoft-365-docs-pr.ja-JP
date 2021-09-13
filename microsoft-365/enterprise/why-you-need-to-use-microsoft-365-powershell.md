@@ -15,11 +15,11 @@ ms.custom: ''
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: '概要: PowerShell を使用して管理する必要がある理由Microsoft 365場合によっては、より効率的に、必要に応じて他の場合にも説明します。'
 ms.openlocfilehash: 361900d66c1cb8f41a27f661241a63d7d806e99b
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356866"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210363"
 ---
 # <a name="why-you-need-to-use-powershell-for-microsoft-365"></a>Microsoft 365 で PowerShell を使用する理由
 
@@ -155,7 +155,7 @@ Fabrice Canel                                         BR
 Get-AzureADUser | Select DisplayName, UsageLocation
 ```
 
-このコマンドは、規模が小さいドメインには最適に機能します。 ただし、大規模な組織では、その操作を変数にユーザー アカウント情報を格納するコマンドと、必要な情報を表示する 2 つのコマンドに分割できます。 次に例を示します。
+このコマンドは、規模が小さいドメインには最適に機能します。 ただし、大規模な組織では、その操作を変数にユーザー アカウント情報を格納するコマンドと、必要な情報を表示する 2 つのコマンドに分割できます。 次に例を示します:
 
 ```powershell
 $x = Get-AzureADUser

@@ -24,11 +24,11 @@ search.appverid:
 ms.assetid: ''
 description: 365 Business ユーザー向けクラウド PC のWindowsについて説明します。
 ms.openlocfilehash: 82fe7093d27fe3d1302e43da415df9ddce2a6064
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58350066"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211474"
 ---
 # <a name="windows-365-business-sizing-options"></a>Windows 365 Business のサイズ設定オプション
 

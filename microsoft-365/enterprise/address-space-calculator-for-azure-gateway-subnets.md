@@ -17,11 +17,11 @@ ms.custom:
 - seo-marvel-apr2020
 description: '概要: C3、Python、または PowerShell を使用して Azure ゲートウェイ サブネットのアドレス空間を計算します。'
 ms.openlocfilehash: bd6caaec5e3873403b3b3ed5a1b6cf16a730d688
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58353746"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210793"
 ---
 # <a name="address-space-calculator-for-azure-gateway-subnets"></a>Azure ゲートウェイ サブネットのアドレス空間計算
 

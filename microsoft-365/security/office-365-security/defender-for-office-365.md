@@ -19,12 +19,12 @@ ms.custom:
 description: Microsoft Defender for Office 365 には、安全な添付ファイル、安全なリンク、高度なフィッシング詐欺対策ツール、レポート ツール、および脅威インテリジェンス機能が含まれています。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e9096af6a99fb04a9f25e9d28f31f8eb522ecf4c
-ms.sourcegitcommit: 008200dad00701b6d457c1af48a33448235ce1c8
+ms.openlocfilehash: 8651adb37640d68d0eace7aa23a134ba3b892bbd
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58392180"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211734"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
@@ -48,6 +48,7 @@ Microsoft Defender for Office 365 は、メール メッセージ、リンク (U
 - **[自動調査および対応機能](office-365-air.md)**: 脅威の調査および軽減にかかる時間と労力を節約します。
 
 ## <a name="interactive-guide-to-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の対話型のガイド
+
 この対話型のガイドでは、Microsoft Defender for Office 365 を使用して組織を保護する方法について説明します。 Defender for Office 365 が、保護ポリシーの定義、組織への脅威の分析、攻撃への対応にどのように役立つかをご覧いただけます。
 
 [対話型のガイドをチェックしてください](https://aka.ms/MSDO-IG)
@@ -64,7 +65,7 @@ Microsoft Defender for Office 365 を初めて使用している場合、また�
   - 安全なリンク
   - 安全な添付ファイル
 - ワークロードを保護する (例: OSharePoint Online、OneDrive と Teams)
-- ゼロアワー自動消去を使用して保護する
+- ゼロアワー自動消去 (ZAP) を使用して保護します。
 
 詳細については、 [このリンクをクリック](protect-against-threats.md)してください。
 

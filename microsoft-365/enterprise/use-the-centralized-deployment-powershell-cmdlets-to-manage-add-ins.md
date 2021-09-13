@@ -21,11 +21,11 @@ ms.custom:
 - seo-marvel-apr2020
 description: 一元展開 PowerShell コマンドレットを使用して、組織のOfficeアドインを展開およびMicrosoft 365します。
 ms.openlocfilehash: 37a60ffe7d17f09ecbdb70c80c880b2c7bd51645
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58745843"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210454"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>集中展開 PowerShell コマンドレットを使用してアドインを管理する
 

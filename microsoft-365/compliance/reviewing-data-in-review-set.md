@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: 詳細については、「レビュー セット内のケース データを確認する」を参照Advanced eDiscovery。
-ms.openlocfilehash: 1ad7b73b05583f493bb5215ce90a1d22ec1345f5cae2200d45d76ec04ad52677
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 890edc0e813f620944cea1e73bc8f9dc45132eb3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795640"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210894"
 ---
 # <a name="review-case-data-in-advanced-ediscovery"></a>ケース データを確認Advanced eDiscovery
 

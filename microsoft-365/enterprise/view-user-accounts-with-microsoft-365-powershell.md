@@ -21,11 +21,11 @@ ms.custom:
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: PowerShell を使用して、さまざまな方法でユーザー アカウントMicrosoft 365表示、一覧表示、または表示する方法について説明します。
 ms.openlocfilehash: b10b143b3608efa88eb27346b65fd4b80100020c
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356158"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210373"
 ---
 # <a name="view-microsoft-365-user-accounts-with-powershell"></a>PowerShell Microsoft 365ユーザー アカウントを表示する
 
@@ -66,7 +66,7 @@ be4bdddd-c790-424c-9f96-a0cf609b7815 Allan Deyoung                              
 Get-AzureADUser -ObjectID <sign-in name of the user account>
 ```
 
-次に例を示します。
+次に例を示します:
   
 ```powershell
 Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com
@@ -88,7 +88,7 @@ Get-AzureADUser | Select DisplayName,Department,UsageLocation
     
 1.  ユーザー アカウント名、部署、使用状況の場所のみを表示します **([DisplayName、 Department, UsageLocation] の選択**)。
   
-特定のユーザー アカウントのすべてのプロパティを表示するには **、Select** コマンドレットとワイルドカード文字 (*)を使用します。 次に例を示します。
+特定のユーザー アカウントのすべてのプロパティを表示するには **、Select** コマンドレットとワイルドカード文字 (*)を使用します。 次に例を示します:
   
 ```powershell
 Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com | Select *
@@ -135,7 +135,7 @@ Get-AzureADUser | Where {$_.UsageLocation -eq $Null}
     
 1. 使用場所が指定されていないすべてのユーザー アカウントを検索します **(Where {$ \_ .UsageLocation -eq $Null}**)。 中かっこ内で、このコマンドは、UsageLocation ユーザー アカウント プロパティ (**$ \_ .UsageLocation**) は指定されていません (**-eq $Null)。**
     
-**UsageLocation プロパティ** は、ユーザー アカウントに関連付けられている多数のプロパティの 1 つのみです。 特定のユーザー アカウントのすべてのプロパティを表示するには **、Select** コマンドレットとワイルドカード文字 (*)を使用します。 次に例を示します。
+**UsageLocation プロパティ** は、ユーザー アカウントに関連付けられている多数のプロパティの 1 つのみです。 特定のユーザー アカウントのすべてのプロパティを表示するには **、Select** コマンドレットとワイルドカード文字 (*)を使用します。 次に例を示します:
   
 ```powershell
 Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com | Select *
@@ -227,7 +227,7 @@ ScottW@litwareinc.onmicrosoft.com     Scott Wallace         False
 
 ```
 
-*UsageLocation プロパティ* は、ユーザー アカウントに関連付けられている多数のプロパティの 1 つのみです。 ユーザー アカウントのすべてのプロパティを表示するには **、Select** コマンドレットとワイルドカード文字 (*) を使用して、それらをすべて特定のユーザー アカウントに表示します。 次に例を示します。
+*UsageLocation プロパティ* は、ユーザー アカウントに関連付けられている多数のプロパティの 1 つのみです。 ユーザー アカウントのすべてのプロパティを表示するには **、Select** コマンドレットとワイルドカード文字 (*) を使用して、それらをすべて特定のユーザー アカウントに表示します。 次に例を示します:
   
 ```powershell
 Get-MsolUser -UserPrincipalName BelindaN@litwareinc.onmicosoft.com | Select *
@@ -258,7 +258,7 @@ Get-MsolUser -UserPrincipalName <UPN of user account> | Select DisplayName,Block
 
 - isLicensed
 
-ユーザーが働く部署、Microsoft 365 サービスを使用する国/地域などの追加のプロパティが必要な場合は **、Get-MsolUser** を Select コマンドレットと組み合わせて実行して、ユーザー アカウントのプロパティの一覧を指定できます。 次に例を示します。
+ユーザーが働く部署、Microsoft 365 サービスを使用する国/地域などの追加のプロパティが必要な場合は **、Get-MsolUser** を Select コマンドレットと組み合わせて実行して、ユーザー アカウントのプロパティの一覧を指定できます。 次に例を示します:
   
 ```powershell
 Get-MsolUser | Select DisplayName, Department, UsageLocation
@@ -283,7 +283,7 @@ Alex Darrow             Sales & Marketing                    US
 Scott Wallace           Operations
 ```
 
-Select **コマンドレットでは** 、表示するプロパティを選択できます。 特定のユーザー アカウントのすべてのプロパティを表示するには、ワイルドカード文字 (*)を使用します。 次に例を示します。
+Select **コマンドレットでは** 、表示するプロパティを選択できます。 特定のユーザー アカウントのすべてのプロパティを表示するには、ワイルドカード文字 (*)を使用します。 次に例を示します:
   
 ```powershell
 Get-MsolUser -UserPrincipalName BelindaN@litwareinc.onmicosoft.com | Select *

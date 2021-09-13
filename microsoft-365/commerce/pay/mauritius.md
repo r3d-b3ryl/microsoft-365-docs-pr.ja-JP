@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 47e1ecd8cc6a3a43cacbbf63bd5cba627306f6d0aad016a1388d79f9f3715db3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8d0937e5dd3adcce4e98417bb8370f8212e38637
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53906437"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211233"
 ---
 # <a name="payment-information-for-mauritius"></a>モーリシャスの支払い情報
 

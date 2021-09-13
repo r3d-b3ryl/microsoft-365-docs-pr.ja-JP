@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: dd291c60897d4c9fa22f957685f5f67c0549c49cbe333b3ba8d0f1d453e7562a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 413083b9dd0f911d2c4db3f20ea1036b9bc703df
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53808946"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211174"
 ---
 # <a name="payment-information-for-slovenia"></a>スロベニアのお支払い情報
 

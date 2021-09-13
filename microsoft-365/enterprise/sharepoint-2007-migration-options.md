@@ -27,16 +27,16 @@ f1.keywords:
 ms.custom:
 - seo-marvel-apr2020
 description: この記事では、アップグレードの計画に役立SharePointサーバー 2007 を使用しているユーザー向け情報を示します。
-ms.openlocfilehash: 5f3df4a66eb789cd6aa88f1f3a0f170c1c49b834a7b87bad242abb1fab15b4df
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 38c4713b7dfb705c99d970c5f68a37b031c951a5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53894829"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210543"
 ---
 # <a name="sharepoint-2007-migration-options-to-consider"></a>SharePoint 2007 の移行オプションを検討する
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 Microsoft SharePoint 2007 および SharePoint Server 2007 はサポートの終了に達しました。 アップグレードの時期です! この記事では、移行オプションに関する情報を提供します。
   
@@ -56,7 +56,7 @@ Microsoft SharePoint 2007 および SharePoint Server 2007 はサポートの終
     
 - サイト コレクションまたはライブラリ間でデータを手動で移動する
     
-- FastTrack ウィザードを Microsoft 365 ( SharePoint 展開アドバイザー )[にアップグレードする](https://aka.ms/spoguidance)
+- FastTrackウィザードを Microsoft 365 ( SharePoint 展開アドバイザー )[にアップグレードする](https://aka.ms/spoguidance)
     
 - 移行 API から SharePoint Online (SPO) への移行Microsoft 365
     
@@ -148,7 +148,7 @@ SharePointがソフトウェアに組み込まれる機能を使用する以外�
 |データベース接続を使用してデータベースをアップグレードする  <br/> |一括アップグレード  <br/> |
 |ファームを並べてアップグレードする  <br/> |ハイブリッド アップグレード  <br/> |
 |サイト内の SPO へのMicrosoft 365 API (個人用サイト データの場合)  <br/> |SharePointハイブリッド (まだ必要ありません)  <br/> |
-|重要なデータに対するSharePointオンラインへの手動データの移行  <br/> |FastTrack ウィザードをサーバーにアップグレードMicrosoft 365  <br/> |
+|重要なデータに対するSharePointオンラインへの手動データの移行  <br/> |FastTrackウィザードのアップグレードを実行Microsoft 365  <br/> |
    
  **私の提案された計画:**
   
@@ -156,7 +156,7 @@ SharePointがソフトウェアに組み込まれる機能を使用する以外�
   
 - SPO を含む検索フェデレーション ハイブリッドがニーズを満たした場合を検討します。
     
-- ここから[FastTrack のサポート](https://fasttrack.microsoft.com)を利用して、SharePointにアップグレードする場合を検討してください。 
+- ここから[FastTrackオンライン](https://fasttrack.microsoft.com)にアップグレードする場合は、SharePointを検討してください。 
     
 - 任意のサイト コレクションをサブスクリプションにオフロードMicrosoft 365します。 (Microsoft 365多くのコンプライアンス基準[を満たしています](/compliance/regulatory/offering-home)。 Microsoft 365持[ち、](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da)コンプライアンス センターを[通](https://support.office.com/article/A18F8975-AA7F-43B4-A7D6-001D14744D8E)じて保留を実行できます)。 
     

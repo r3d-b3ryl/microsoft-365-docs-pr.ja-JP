@@ -25,11 +25,11 @@ ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: '概要: Office 365 には、インターネットへの接続が必要です。Office 365 のプランを利用する予定のお客様は (政府機関コミュニティ クラウド (GCC) を含む)、次のエンドポイントに到達できる必要があります。'
 hideEdit: true
 ms.openlocfilehash: 893ff9a7001e2cd343c49548400192a413d1502f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575098"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210524"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>Office 365 URL および IP アドレス範囲
 

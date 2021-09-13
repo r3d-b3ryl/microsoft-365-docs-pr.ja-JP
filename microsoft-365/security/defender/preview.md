@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ba3e607b54294a8aa61fd0a6c9c0d13e07f873035b0b98d336328b4c1e858bcf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 439884f33bee94ddddf8ddf183b4d02bfcedb09a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53799264"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211823"
 ---
 # <a name="microsoft-365-defender-preview-features"></a>Microsoft 365 Defenderプレビュー機能
 
@@ -74,13 +74,7 @@ ms.locfileid: "53799264"
 
 **[プレビュー機能をオンにする]** チェックボックスが選択されていると、プレビュー機能がオンになっていることがわかります。 
 
-## <a name="preview-features"></a>プレビュー機能
 
-現在、次の機能と拡張機能がプレビューで利用できます:
 
-- **[脅威タグごとにレポートを表示](threat-analytics.md#view-reports-per-threat-tags)** する - 脅威タグは、特定の脅威カテゴリに焦点を当て、最も関連性の高いレポートを確認するのに役立ちます。
-- **[ストリーミング API](../defender-endpoint/raw-data-export.md)** - Microsoft 365 Defender高度なハンティングを通じて利用可能なすべてのイベントをイベント ハブや Azure ストレージ アカウントにストリーミングできます。
-- **[Microsoft 365 Defender API](api-overview.md)** - トップ レベルの Microsoft 365 Defender API を使用すると、共有インシデントテーブルと高度なハンティング テーブルに基づいてワークフローを自動化できます。 
-- **[高度な狩猟でアクションを](advanced-hunting-take-action.md)** 実行する - 高度な狩猟で見つけた脅威を迅速に含むか、侵害された資産 [に対処します](advanced-hunting-overview.md)。
-- **[ポータル内スキーマ参照](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** - セキュリティ センターで高度な検索スキーマ テーブルに関する情報を直接取得します。 テーブルと列の説明に加えて、この参照には、サポートされているイベントの種類 ( `ActionType` 値) とサンプル クエリが含まれます。
-- **[DeviceFromIP() 関数](advanced-hunting-devicefromip-function.md)** - 特定の時間範囲で特定の IP アドレスまたはアドレスが割り当てられているデバイスに関する情報を取得します。
+
+

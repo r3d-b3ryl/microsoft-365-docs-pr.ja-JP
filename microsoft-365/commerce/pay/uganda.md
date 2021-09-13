@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 762236de950766a935885c6b88266ec2a2e07ae79773bc29f2980ddfbc06c3aa
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 85bfd081ea971c2e38a95791da762cbbe89a884e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53872829"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211033"
 ---
 # <a name="payment-information-for-uganda"></a>ウガンダのお支払い情報
 

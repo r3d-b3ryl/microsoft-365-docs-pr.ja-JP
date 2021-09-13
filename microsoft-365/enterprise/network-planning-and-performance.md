@@ -19,11 +19,11 @@ ms.custom:
 - Adm_O365
 description: この記事では、ネットワーク帯域幅の要件を計画し、パフォーマンスMicrosoft 365調整およびトラブルシューティングを行う際に役立ちます。
 ms.openlocfilehash: b76bc55dc421591622de73fd84cd602711699f19
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570547"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210613"
 ---
 # <a name="network-planning-and-performance-tuning-for-microsoft-365"></a>Microsoft 365 のネットワーク計画とパフォーマンス チューニング
 初めて展開するか、Microsoft 365 に移行する前に、これらのトピックの情報を使用して必要な帯域幅を見積もり、Microsoft 365 に展開または移行するのに十分な帯域幅をテストして確認できます。 概要については、「ネットワークと移行の計画」[を参照Microsoft 365。](network-and-migration-planning.md)

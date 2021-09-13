@@ -15,13 +15,14 @@ ms.custom:
 - TLG
 - Ent_TLGs
 - seo-marvel-apr2020
+- admindeeplinkMAC
 description: エンタープライズ テスト環境でスマートフォンに送信されるテキスト メッセージを使用して多要素Microsoft 365構成します。
-ms.openlocfilehash: 92c60819c2e32661b4af9cfba76553c59b784519
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 1c04729c65df455a05e37fe8d0ec6477ba251627
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570727"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210724"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-for-enterprise-test-environment"></a>エンタープライズ テスト環境向けMicrosoft 365要素認証
 
@@ -58,7 +59,7 @@ Microsoft 365 またはサブスクリプションに Azure AD テナントを�
   
 1. ブラウザーの別のプライベート インスタンスを開き、Microsoft 365 管理センター ( ) に移動し、グローバル管理者アカウント [https://portal.microsoft.com](https://portal.microsoft.com) でサインインします。
     
-2. 左側のナビゲーションで、[ユーザーがアクティブな **ユーザー]**  >  **を選択します**。
+2. 左側のナビゲーションで、[ユーザーがアクティブな **ユーザー]**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**を選択します**</a>。
     
 3. [アクティブ ユーザー] ウィンドウで、[多要素認証] **を選択します**。
     
@@ -80,7 +81,7 @@ Microsoft 365 またはサブスクリプションに Azure AD テナントを�
     
 2. [[ユーザー]](https://admin.microsoft.com) Microsoft 365 管理センターに移動し、User 2 アカウント名とパスワードを使用してサインインします。
     
-3. サインイン後、詳細については、アカウントのセットアップを求めるメッセージが表示されます。 **[次へ]** を選択します。
+3. サインイン後、詳細については、アカウントのセットアップを求めるメッセージが表示されます。 [**次へ**] を選択します。
     
 4. **[追加のセキュリティ確認]** ページで、次の手順を実行します。 
     
@@ -90,7 +91,7 @@ Microsoft 365 またはサブスクリプションに Azure AD テナントを�
     
    - [ **メソッド] で**、[ **テキスト メッセージでコードを送信する] を選択します**。
     
-5. **[次へ]** を選択します。
+5. [**次へ**] を選択します。
     
 6. スマートフォンで受信したテキスト メッセージから確認コードを入力し、[確認] を **選択します**。
     
@@ -108,7 +109,7 @@ Microsoft 365 またはサブスクリプションに Azure AD テナントを�
 
 次に、MFAUsers という名前の新しいグループを作成し、ユーザー 3 アカウントを追加します。
 
-1. [グループ] **Microsoft 365 管理センター** 左側のナビゲーションで [**グループ**] を選択し、[グループ] を **選択します**。
+1. [グループ] **Microsoft 365 管理センター** 左側のナビゲーションで [**グループ**] を選択し、[グループ] を <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**選択します**</a>。
 2. [グループ **の追加] を選択します**。
 3. [グループの **種類の選択] ウィンドウで** 、[セキュリティ] **を選択** し、[次へ] を **選択します**。
 4. [基本 **の設定] ウィンドウで、[グループの作成** ] を選択 **し**、[閉じる] を **選択します**。
@@ -143,6 +144,6 @@ Microsoft 365 またはサブスクリプションに Azure AD テナントを�
 
 [Microsoft 365 Enterprise のテスト ラボ ガイド](m365-enterprise-test-lab-guides.md)
 
-[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
+[Microsoft 365 for Enterprise の概要](microsoft-365-overview.md)
 
 [Microsoft 365 for enterprise のドキュメント](/microsoft-365-enterprise/)

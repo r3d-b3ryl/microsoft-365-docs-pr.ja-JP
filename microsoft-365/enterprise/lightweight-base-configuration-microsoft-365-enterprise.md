@@ -16,14 +16,15 @@ ms.collection:
 ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
+- admindeeplinkMAC
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: このテスト ラボ ガイドを使用して、エンタープライズ向けテスト環境をテストMicrosoft 365作成します。
-ms.openlocfilehash: 818b013d8d18a7686e88e99eff2f0be2fb12b8d9
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 0b8e0a71c8708d2faec0e263c220e3f3d91931f3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566792"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210734"
 ---
 # <a name="the-lightweight-base-configuration"></a>軽量な基本構成
 
@@ -157,7 +158,7 @@ for($i=2;$i -le 4; $i++) {
   
 1. インターネット ブラウザーのプライベート ウィンドウで、グローバル管理者アカウントの資格情報を使用して、Microsoft 365 管理センターにサインインします [https://admin.microsoft.com](https://admin.microsoft.com) 。
     
-2. [サービスの **Microsoft 365 管理センター** 左側のナビゲーションで、[サービスの購入] を選択 **>選択します**。
+2. [サービスの **Microsoft 365 管理センター** 左側のナビゲーションで、[課金の購入サービス]  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">**を選択します**</a>。
     
 3. [サービスの **購入] ページ** で、[無料試用版Microsoft 365 E5]**を** 選択 **します**。
 
@@ -167,7 +168,7 @@ for($i=2;$i -le 4; $i++) {
 
 6. [注文受領 **書] ページで** 、[続行] を **選択します**。
 
-7. [ユーザー] Microsoft 365 管理センター[アクティブ ユーザー **] >選択します**。
+7. [ユーザー] Microsoft 365 管理センター[ユーザー] **[アクティブユーザー]**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**を選択します**</a>。
 
 8. [ **アクティブ なユーザー]** で、管理者アカウントを選択します。
 
@@ -323,6 +324,6 @@ Windows 10 Enterprise の物理マシンまたは仮想マシンの作成後、�
 
 [Microsoft 365 Enterprise のテスト ラボ ガイド](m365-enterprise-test-lab-guides.md)
 
-[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
+[Microsoft 365 for Enterprise の概要](microsoft-365-overview.md)
 
 [Microsoft 365 for enterprise のドキュメント](/microsoft-365-enterprise/)

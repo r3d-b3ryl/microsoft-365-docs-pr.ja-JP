@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: ecfc8281c642e7240832a7c057f37f9df4caad68
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573465"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211803"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-azure-event-hub"></a>高度Microsoft 365 Defenderイベントを Azure イベント ハブにストリーミングするように構成する
 
@@ -33,7 +33,7 @@ ms.locfileid: "58573465"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 1. テナントに [イベント ハブ](/azure/event-hubs/) を作成します。
 

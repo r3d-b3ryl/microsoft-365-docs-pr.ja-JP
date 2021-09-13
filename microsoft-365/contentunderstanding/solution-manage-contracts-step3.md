@@ -13,11 +13,11 @@ localization_priority: None
 ROBOTS: ''
 description: カスタム ソリューションを使用してPower Automateを作成して契約を処理する方法についてMicrosoft 365します。
 ms.openlocfilehash: 1de8c0c5ed25ee9934077d015f4e66c43e07c7c8
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533245"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210814"
 ---
 # <a name="step-3-use-power-automate-to-create-the-flow-to-process-your-contracts"></a>手順 3. 契約Power Automate処理するフローを作成するには、次の手順を実行します。
 

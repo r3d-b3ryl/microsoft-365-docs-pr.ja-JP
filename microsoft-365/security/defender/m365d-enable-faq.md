@@ -21,11 +21,11 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.openlocfilehash: e630b2cdb7164157e2dd42e8f1ee8d09676dfbfb
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58252084"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211883"
 ---
 # <a name="frequently-asked-questions-when-turning-on-microsoft-365-defender"></a>ユーザー設定をオンにするときによく寄せられる質問Microsoft 365 Defender
 
@@ -80,7 +80,7 @@ Microsoft 365 Defenderは次の場所で利用できます <https://security.mic
 - セキュリティ閲覧者
 
 > [!NOTE]
-> Microsoft Defender for Endpoint の役割ベースのアクセス制御設定は、データへのアクセスに影響を与える。 詳細については、「アクセスの管理[」を参照Microsoft 365 Defender。](m365d-permissions.md)
+> Microsoft Defender for Endpoint でのロールベースのアクセス制御設定は、データへのアクセスに影響を与えます。 詳細については、「[Microsoft 365 Defender へのアクセスの管理](m365d-permissions.md)」をお読みください。
 
 ## <a name="what-time-zone-does-microsoft-365-defender-default-to"></a>既定で使用Microsoft 365 Defenderタイム ゾーンは何ですか?
 

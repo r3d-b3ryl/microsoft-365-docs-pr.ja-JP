@@ -17,11 +17,11 @@ description: 管理者は、セキュリティ ポータルのテナント許可
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 2dc45779f7e5656e2edfcb1ea89ef19f95cc3d2e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58561244"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211634"
 ---
 # <a name="add-blocks-in-the-tenant-allowblock-list"></a>テナントの許可/禁止リストの禁止リストを追加する
 
@@ -90,7 +90,7 @@ ms.locfileid: "58561244"
 
 ### <a name="create-spoofed-sender-block-entries"></a>スプーフィングされた送信者ブロック エントリを作成する
 
-**注意**:
+**注**:
 
 - スプー _フィング_ されたユーザーと、ドメイン ペアで定義されている送信インフラストラクチャの組み合わせだけが、スプーフィングを許可またはブロックされます。
 - ドメイン ペアの許可エントリまたはブロック エントリを構成すると、そのドメイン ペアからのメッセージはスプーフィング インテリジェンスインサイトに表示されなくなりました。

@@ -21,11 +21,11 @@ ms.custom:
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
 description: PowerShell でさまざまなモジュールを使用してユーザー アカウントを削除するMicrosoft 365説明します。
 ms.openlocfilehash: 30d69fa8a65207b7eb73bfc36d36733789fcb72f
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58353686"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210754"
 ---
 # <a name="delete-microsoft-365-user-accounts-with-powershell"></a>PowerShell Microsoft 365ユーザー アカウントを削除する
 

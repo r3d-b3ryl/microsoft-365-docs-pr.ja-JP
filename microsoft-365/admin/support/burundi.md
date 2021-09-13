@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c36687b0ee6f3984eb008f21c3cf79e63de100fb6c966e48d7860c4eae8d5e69
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f6f5c843d095875689a9af1a772af3de0f8e5083
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53907117"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211424"
 ---
 # <a name="contact-support-for-burundi"></a>ブルンジのサポートに問い合わせ
 

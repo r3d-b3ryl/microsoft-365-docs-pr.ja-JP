@@ -15,18 +15,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- admindeeplinkMAC
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: メール、連絡先、予定表を Google ワークスペースからビジネス向けMicrosoft 365する方法について説明します。
-ms.openlocfilehash: 26ed00be3241f07d564fd7823c44610cf34d6ffd96cc4becb36d907439f23629
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cde27ce3ab94b003d9950f1b4bc2af270dea906e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53896561"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211264"
 ---
 # <a name="migrate-business-email-and-calendar-from-google-workspace"></a>Google ワークスペースからビジネス メールと予定表を移行する
 
@@ -88,7 +89,7 @@ ms.locfileid: "53896561"
 
 1. 
             [Microsoft 365 管理センター](https://admin.microsoft.com)に戻ります。
-1. [ドメイン] **Microsoft 365 管理センター** 左側のナビゲーションで、[すべて表示] 、[ドメイン] 、[**ドメイン設定] の順** に選択し、[ドメインの追加]**を選択します**。  
+1. 左側のMicrosoft 365 管理センターで、[すべてのドメインを表示する]を選択し設定ドメインを  >    >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a>**追加します**。 
 1. 以前に作成したサブドメインを入力し、[このドメインを使用 **する] を選択します**。 
 1. ドメインを接続するには、[続行] を **選択します**。 
 1. 下にスクロールして、MX レコード、CNAME レコード、および TXT レコードをメモします。 
@@ -100,7 +101,7 @@ ms.locfileid: "53896561"
 
     これらの変更を有効にするには、時間がかかる場合があります。  
 
-1. [次へ] でオフにした場所Microsoft 365 管理センターし **、[** 続行] を **選択します**。 
+1. [次へ] でオフにした場所Microsoft 365 管理センターし、[続行] を **選択します**。 
 
 これで、ドメインがセットアップされます。  
 
@@ -119,7 +120,7 @@ ms.locfileid: "53896561"
 
 完了したら、移行する準備ができました。 
 
-1. [管理センター] の左側の **ナビゲーションMicrosoft 365 管理センター[** 管理センター]まで下にスクロールし、[**管理センター]** をExchange。 
+1. [管理センター] の左側の <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">ナビゲーションMicrosoft 365 管理センター[</a>管理センター]まで下にスクロールし、[**管理センター]** をExchange。 
 1. [**受信者] で、[** 移行] **を** 選択し、[新規] 、[移行Exchange Online、[ **G Suite** の移行] の順に選択し **、[次** へ] を **選択します**。 
 1. 移行するメールボックスの一覧を含む CSV ファイルを作成します。 ファイルが次の形式に従う必要があります。 
 

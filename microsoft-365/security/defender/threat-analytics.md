@@ -1,5 +1,5 @@
 ---
-title: 脅威の分析を使用して、新たな脅威を追跡し対応する
+title: 脅威分析 (Microsoft 365 Defender
 ms.reviewer: ''
 description: 新たな脅威と攻撃の手法と、それらを停止する方法について説明します。 組織への影響を評価し、組織の回復力を評価します。
 keywords: 脅威分析、リスク評価、Microsoft 365 Defender、M365D、軽減状態、セキュリティで保護された構成、Microsoft Defender for Office 365、Microsoft Defender for Office 365 脅威分析、MDO 脅威分析、統合 MDE および MDO 脅威分析データ、脅威分析データ統合、統合 Microsoft 365 Defender 脅威分析
@@ -21,14 +21,14 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 43b15b8fb43a06fa56e18c735868058fcfd6d24f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: e25c6bfb3efabfd53d1babc10c20a46e1f6c0f78
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568554"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211784"
 ---
-# <a name="track-and-respond-to-emerging-threats-with-threat-analytics-in-microsoft-365-defender"></a>脅威分析を使用して、新たな脅威を追跡し、Microsoft 365 Defender 
+# <a name="threat-analytics-in-microsoft-365-defender"></a>脅威分析 (Microsoft 365 Defender 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 

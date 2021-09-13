@@ -20,12 +20,12 @@ description: ユーザーがアップロードSharePointファイル内のウイ
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: efdf9364a43bdc354797b71c722fd77faf4108f812a905d266aef5bd296194d6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2ab11d4c1e2a064ad0717e6619f72a38b0cbc831
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56880142"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211503"
 ---
 # <a name="built-in-virus-protection-in-sharepoint-online-onedrive-and-microsoft-teams"></a>オンライン、SharePoint、およびOneDriveに組み込Microsoft Teams
 

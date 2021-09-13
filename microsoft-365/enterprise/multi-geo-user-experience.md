@@ -16,11 +16,11 @@ ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 description: Microsoft 365の複数地域環境での SharePoint、OneDrive、および Exchange のユーザー エクスペリエンスについて説明します。
 ms.openlocfilehash: 5ecdfd41c496149e04bfb9586f76807db7957d0d
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502905"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210653"
 ---
 # <a name="user-experience-in-a-multi-geo-environment"></a>複数地域環境でのユーザー エクスペリエンス
 

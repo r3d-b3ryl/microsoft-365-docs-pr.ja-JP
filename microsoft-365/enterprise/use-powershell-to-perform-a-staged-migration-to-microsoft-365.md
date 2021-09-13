@@ -17,11 +17,11 @@ ms.custom: seo-marvel-apr2020
 ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
 description: PowerShell を使用して、ステージ移行を使用して移行元の電子メール システムからコンテンツを移行する方法についてMicrosoft 365。
 ms.openlocfilehash: 0ec8aca643730b063ee75ead69908959a992d2dc
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354166"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210484"
 ---
 # <a name="use-powershell-to-perform-a-staged-migration-to-microsoft-365"></a>Microsoft 365 への段階的な移行に PowerShell を使用する
 

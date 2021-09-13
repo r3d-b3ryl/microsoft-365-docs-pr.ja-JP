@@ -21,11 +21,11 @@ ms.custom:
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
 description: この記事では、PowerShell を使用してライセンスおよびライセンスのないユーザー アカウントを表示するMicrosoft 365説明します。
 ms.openlocfilehash: 0f1b590dade1d07499ac6c9b5f8888d7cab7ecd6
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354394"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210394"
 ---
 # <a name="view-licensed-and-unlicensed-microsoft-365-users-with-powershell"></a>PowerShell を使用して、ライセンスMicrosoft 365ライセンスされていないユーザーを表示する
 

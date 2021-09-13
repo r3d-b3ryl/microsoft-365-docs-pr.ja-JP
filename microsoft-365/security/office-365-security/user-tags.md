@@ -17,11 +17,11 @@ description: 管理者は、プラン 2 の Microsoft Defender でユーザー �
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: d224718502725e760c6a844f3bfd289bf3dd179c
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568050"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211534"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Microsoft Defender のユーザー タグ (Office 365
 
@@ -66,7 +66,7 @@ ms.locfileid: "58568050"
 
   > [!NOTE]
   >
-  > - Microsoft 365 管理センター の対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 Defender ポータルで必要なアクセス許可と、Microsoft 365の他の機能に対するアクセス許可が付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
+  > - Microsoft 365 管理センター の対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 Defender ポータルで必要なアクセス許可と、Microsoft 365の他の機能に対するアクセス許可が付与されます。 詳細については、[「管理者の役割について」](../../admin/add-users/about-admin-roles.md) を参照してください。
   >
   > - ユーザー タグ管理は、タグ リーダーと **タグ マネージャー** の **役割によって制御** されます。
 
@@ -127,7 +127,7 @@ ms.locfileid: "58568050"
 
 3. 表示される詳細フライアウトでは、この記事の「Microsoft 365 Defender ポータルを使用してユーザー タグ[](#use-the-microsoft-365-defender-portal-to-create-user-tags)を作成する」セクションで説明したように、同じウィザードと設定を使用できます。
 
-   **注意**:
+   **注**:
 
    - [ **タグの定義** ] ページは組み込みの **Priority アカウント** システム タグでは使用できないので、このタグの名前を変更したり、説明を変更したりすることはできません。
    - カスタム タグの名前は変更できますが、説明は変更できます。

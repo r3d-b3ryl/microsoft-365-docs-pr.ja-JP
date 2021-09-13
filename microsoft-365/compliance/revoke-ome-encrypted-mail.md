@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 管理者として、およびメッセージ送信者として、ユーザーが暗号化された特定の電子メールを取り消Office 365 Advanced Message Encryption。
-ms.openlocfilehash: 58a029dbbc2fef644e533ccb072bb8e0e8bb0e67e70584d1e93d956db4c9c2c4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b49915b6ef72d366a4b2718319150d2d5b640b9f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795570"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210873"
 ---
 # <a name="revoke-email-encrypted-by-advanced-message-encryption"></a>高度なメッセージ暗号化によって暗号化された電子メールを取り消す
 
@@ -97,7 +97,7 @@ Microsoft 365管理者は、次の一般的な手順に従って、適格な暗�
 
 3. メッセージをダブルクリックして、メッセージ ID を含む詳細を表示します。
 
-### <a name="step-2-verify-that-the-mail-is-revocable"></a>手順 2. メールが失効可能な場合の確認
+### <a name="step-2-verify-that-the-mail-is-revocable"></a>手順 2。 メールが失効可能な場合の確認
 
 メッセージを取り消すかどうかを確認するには、セキュリティ コンプライアンス センターの [詳細] テーブルの [暗号化]レポートに [失効の状態] フィールドが表示されているかどうかを &amp; 確認します。
 

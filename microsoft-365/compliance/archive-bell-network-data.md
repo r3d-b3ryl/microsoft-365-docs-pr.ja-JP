@@ -13,11 +13,11 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、ベル ネットワークから SMS および MMS データをインポートおよびアーカイブする TeleMessage コネクタをセットアップできます。 これにより、Microsoft 365 のサード パーティデータ ソースからデータをアーカイブし、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティ データを管理できます。
 ms.openlocfilehash: 24c5848d1e942338d9b3a55031572443b9553657
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564220"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211004"
 ---
 # <a name="set-up-a-connector-to-archive-bell-network-data"></a>ベル ネットワーク データをアーカイブするコネクタをセットアップする
 

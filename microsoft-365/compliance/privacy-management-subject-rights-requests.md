@@ -17,11 +17,11 @@ search.appverid:
 - MET150
 description: Microsoft プライバシー管理のサブジェクト権限要求領域は、個人データを検索し、コンテンツのレビューとレポートの作成に関して共同作業を行う際に役立ちます。
 ms.openlocfilehash: 28059996d4969b23f856df3bb05584b4055ba3d2
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58745735"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210924"
 ---
 # <a name="manage-subject-rights-requests-in-privacy-management-preview"></a>プライバシー管理で件名の権利要求を管理する (プレビュー)
 
@@ -123,7 +123,7 @@ ms.locfileid: "58745735"
 
 検索クエリの編集が完了すると、以前の検索結果を置き換える新しい検索が実行されます。 これにより、[進行状況] セクションの状態が最初の手順である [データ推定] **にリセットされます**。 新しい検索の完了には最大 60 分かかる場合があります。 完了すると、要求の詳細ページに更新された結果が表示されます。
 
-### <a name="data-retention"></a>データ保持
+### <a name="data-retention"></a>データ保存期間
 
 このツールを使用して生成されたレポートと、Azure に保存された注釈付きファイルなどの関連データは、指定された期間保存されます。 この期間は、[データ保持期間] セクション **設定を通** じてグローバルレベルで定義され、30 日から 90 日間の間で選択できます。 詳細については、「プライバシー管理の [開始」を参照してください](privacy-management-setup.md)。
 

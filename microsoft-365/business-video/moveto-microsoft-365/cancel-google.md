@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Google Workspace サブスクリプションをキャンセルするが、ドメインを保持する方法について説明します。
-ms.openlocfilehash: 48ceac56e0fa0af8bd15a4a3e98db51958aec83fbd50bf83ac2241b7562677a1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f4cbb09907da399ab3fed07e7826c0a217b494f0
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53896592"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211283"
 ---
 # <a name="cancel-google-workspace-subscription"></a>Google Workspace サブスクリプションをキャンセルする
 

@@ -14,11 +14,11 @@ localization_priority: Normal
 description: 複数地域環境で指定された優先Microsoft 365場所を持つグループを作成する方法について説明します。
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 0a035856344cf49e3a7221a00b98c175b95f9a72
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575842"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210713"
 ---
 # <a name="create-a-microsoft-365-group-with-a-specific-preferred-data-location"></a>特定の優先Microsoft 365グループを作成する
 

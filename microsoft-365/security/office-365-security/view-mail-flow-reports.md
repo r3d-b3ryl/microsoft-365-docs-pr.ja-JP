@@ -20,11 +20,11 @@ ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 5c1993668b94ca8c71ccbf13e5fe59059c610cca
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572409"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211523"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>セキュリティ コンプライアンス センターの [レポート] ダッシュボードでメール フロー レポート&表示する
 
@@ -142,7 +142,7 @@ ms.locfileid: "58572409"
 
   - **日付**
   - **トランスポート ルール**
-  - **件名**
+  - **[件名]**
   - **[送信者のアドレス]**
   - **受信者の住所**
   - **重大度**

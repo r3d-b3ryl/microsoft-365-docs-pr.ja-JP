@@ -15,11 +15,11 @@ description: 管理者は、セキュリティ & コンプライアンス セン
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 9c0c0eed3cffaadd76f18b9b446ac14873712f6f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574558"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211624"
 ---
 # <a name="top-domain-mail-flow-status-insight-in-the-security--compliance-center"></a>セキュリティ コンプライアンス センターのトップ ドメイン メール フロー&分析
 

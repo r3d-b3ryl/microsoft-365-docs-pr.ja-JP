@@ -1,5 +1,5 @@
 ---
-title: 分析のために Microsoft にメッセージを手動で送信する
+title: 分析のために、メッセージを手動で Microsoft に送信する
 f1.keywords:
 - NOCSH
 ms.author: siosulli
@@ -19,13 +19,13 @@ ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 91ec2807db4a4c384dabcf20634162b3a838274e
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400357"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211563"
 ---
-# <a name="manually-submit-messages-to-microsoft-for-analysis"></a>分析のために Microsoft にメッセージを手動で送信する
+# <a name="manually-submit-messages-to-microsoft-for-analysis"></a>分析のために、メッセージを手動で Microsoft に送信する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -93,7 +93,7 @@ ms.locfileid: "58400357"
 
 ## <a name="where-is-the-data-from-submissions-to-microsoft-stored"></a>申請から Microsoft へのデータはどこに保存されますか?
 
-データは、北米のデータ センター Office 365コンプライアンス境界に存在します。 データは、フィルターの有効性を向上させるために、エンジニアリング チームのアナリストによって確認されます。
+データは、北米のデータ センター Office 365コンプライアンス境界に存在します。 データは、フィルターの有効性を向上させるため、エンジニアリング チームのアナリストによってレビューされます。
 
 ## <a name="create-a-mail-flow-rule-to-receive-copies-of-messages-that-are-reported-to-microsoft"></a>Microsoft に報告されたメッセージのコピーを受信するメール フロー ルールを作成する
 

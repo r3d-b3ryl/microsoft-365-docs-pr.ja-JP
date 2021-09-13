@@ -22,11 +22,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 4e52906cda48314967e40039caabfd81e38514c1
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58611125"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210343"
 ---
 # <a name="get-live-response-results"></a>ライブ応答の結果を取得する
 

@@ -21,11 +21,11 @@ search.appverid:
 - MET150
 description: アーキテクチャ モデル、展開、およびプラットフォーム オプションを説明する IT ポスターを取得し、SharePoint、Exchange、Skype for Business、Lync に関する情報を取得します。
 ms.openlocfilehash: 98558c20c66a808e93cd866b2f676b5f78fde3c1
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356446"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210763"
 ---
 # <a name="architectural-models-for-sharepoint-exchange-skype-for-business-and-lync"></a>SharePoint、Exchange、Skype for Business、Lync のアーキテクチャ モデル
 

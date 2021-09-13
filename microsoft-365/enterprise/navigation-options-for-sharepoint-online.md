@@ -22,11 +22,11 @@ search.appverid:
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: この記事では、SharePoint Publishing が有効化されている SharePoint Online サイトのナビゲーション オプションについて説明します。
 ms.openlocfilehash: 7c890f61beae9ae98045861bbb08e3f6752d0037
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574738"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210633"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>SharePoint Online のナビゲーション オプション
 

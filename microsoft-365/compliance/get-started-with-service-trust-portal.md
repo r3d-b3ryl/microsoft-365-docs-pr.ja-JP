@@ -17,11 +17,11 @@ ms.custom:
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: セキュリティ、プライバシー、コンプライアンスの実践に役立つ Microsoft Service Trust Portal にアクセスして使用する方法について説明します。
 ms.openlocfilehash: 63901d6b71be98c0474b5ede840b6914b38609b4
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574221"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211003"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Microsoft Service Trust Portal の使用を開始する
 
@@ -115,13 +115,13 @@ Microsoft クラウドの [セキュリティ、](https://www.microsoft.com/trus
 
 [サービス信頼ポータル] ページの右上隅にある虫眼鏡をクリックしてボックスを展開し、検索用語を入力し、Enter キーを **押します**。 [ **検索** ] ページが表示され、検索ボックスに検索用語が表示され、検索結果が以下に表示されます。
 
-![サービス信頼ポータル - フィルターが適用されたドキュメントを検索します。](../media/86b754e1-c63c-4514-89ac-d014bf334140.png)
+![Service Trust Portal - フィルターを適用したドキュメントでの検索。](../media/86b754e1-c63c-4514-89ac-d014bf334140.png)
 
 既定では、検索はドキュメントの結果を返します。 ドロップダウン リストを使用して結果をフィルター処理して、表示されるドキュメントの一覧を絞り込みできます。 複数のフィルターを使用して、ドキュメントの一覧を絞り込みできます。 フィルターには、特定のクラウド サービス、コンプライアンスまたはセキュリティプラクティスのカテゴリ、地域、業界が含まれます。 [ドキュメント名] リンクをクリックして、ドキュメントをダウンロードします。
 
 コンプライアンス マネージャー (クラシック) で検索用語に関連する評価のコントロールを一覧表示するには、[コンプライアンス マネージャー] **をクリックします**。 検索結果には、評価が作成された日付、評価グループの名前、該当する Microsoft Cloud サービス、およびコントロールが Microsoft かカスタマー マネージかが表示されます。 コントロールの名前をクリックして、コンプライアンス マネージャーの評価 (クラシック) でコントロールを表示します。
 
-![サービス信頼ポータル - コンプライアンス マネージャー コントロールで検索します。](../media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
+![Service Trust Portal - コンプライアンス マネージャー コントロールでの検索。](../media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
 
 > [!NOTE]
 > Service Trust Portal レポートとドキュメントは、発行後または新しいバージョンのドキュメントが利用可能になるまで、少なくとも 12 か月間ダウンロードできます。
@@ -150,7 +150,7 @@ Microsoft クラウドの [セキュリティ、](https://www.microsoft.com/trus
 
 Service Trust Portal では、ページの内容を異なる言語で表示できます。 ページの言語を変更するには、ページの左下隅にある地球のアイコンをクリックし、目的の言語を選択するだけです。
 
-![サービス信頼ポータル - ローカライズされたコンテンツ オプション。](../media/b50c677e-a886-4267-9eca-915d880ead7a.png)
+![Service Trust Portal - ローカライズされたコンテンツのオプション。](../media/b50c677e-a886-4267-9eca-915d880ead7a.png)
 
 ## <a name="give-feedback"></a>フィードバックを送信
 

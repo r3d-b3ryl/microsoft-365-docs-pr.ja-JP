@@ -15,16 +15,16 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
 description: PowerShell を使用してソース 電子メール システムからコンテンツを一度に移動する方法については、一度に一度に移行を実行して、移行元のメール システムMicrosoft 365。
-ms.openlocfilehash: ce2d97330cb090e261da8e1f8b120c1001a6b3d5a1e19ce5a42d72212880d3f8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6e59ac4d590208e0faed22e94cabe05601b17f18
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53894817"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210493"
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-microsoft-365"></a>Microsoft 365 への一括移行に PowerShell を使用する
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 カットオーバー移行を使用して、ユーザー メールボックスの内容をソース 電子メール システムMicrosoft 365一度に移行できます。 この記事では、Exchange Online PowerShell を使用した電子メールの一括移行の作業を順を追って説明します。
 

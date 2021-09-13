@@ -15,18 +15,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- admindeeplinkMAC
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: ドメインをドメインに接続する方法についてMicrosoft 365。
-ms.openlocfilehash: b91b6fcc297449906e54a8f61f52b9d3c8b01ca6d009d43fa69a5873b81eb873
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 377bb0444582f8efe15583fa522eceb9d675e474
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53887865"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211273"
 ---
 # <a name="connect-your-domain-to-microsoft-365-for-business"></a>Connectをビジネス向Microsoft 365に設定する
 
@@ -44,7 +45,7 @@ Google Workspace からメール データMicrosoft 365設定して移動した�
 1. [カスタム リソース レコード **]** まで下にスクロールし、表示される既存の DNS レコード (以前に作成した DNS レコードを含む) を削除Microsoft 365。
 1. 
             [Microsoft 365 管理センター](https://admin.microsoft.com)に戻ります。
-1. 左側のナビゲーションで、[すべて表示] **、[** ドメイン] 設定 **を選択します**。 
+1. 左側のナビゲーションで、[すべてのドメイン **を表示設定**  >    >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**します**</a>。
 1. 次に、既定のドメインを選択します。
 1. [セットアップ **の続行]** を選択し、ドメインを接続するには、[続行] を  **選択します**。
 1. 下にスクロールして、Google にコピーする必要がある DNS レコードを表示します。
@@ -53,6 +54,6 @@ Google Workspace からメール データMicrosoft 365設定して移動した�
 1. [データ **] フィールド** に、コピーしたレコードを貼り付けます。
 1. 次に **[追加]** を選択します。
 1. CNAME レコードと TXT レコードの処理を繰り返し、Google DNS 管理ページに値を追加します。
-1. [次へ] をクリックMicrosoft 365 管理し、[続行] を **選択します**。
+1. [次へ] に戻Microsoft 365 管理センターし、[続行] を **選択します**。
 
     ドメインのセットアップが完了しました。

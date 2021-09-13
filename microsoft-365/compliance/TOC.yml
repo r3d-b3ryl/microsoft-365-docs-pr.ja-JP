@@ -455,6 +455,8 @@
               href: archive-xslt-xml-data.md
             - name: Yieldbroker
               href: archive-yieldbroker-data.md
+            - name: YouTube (プレビュー)
+              href: archive-youtube-data.md
             - name: Zoom会議
               href: archive-zoommeetings-data.md
         - name: TeleMessage データコネクタ
@@ -618,6 +620,8 @@
               href: content-search-reference.md
             - name: キーワード クエリと検索条件
               href: keyword-queries-and-search-conditions.md
+            - name: 検索アクセス許可のフィルター処理を構成する
+              href: permissions-filtering-for-content-search.md
             - name: 電子情報開示検索結果をプレビューする
               href: preview-ediscovery-search-results.md
             - name: 検索結果のキーワード統計を表示する
@@ -632,8 +636,6 @@
               href: search-cloud-based-mailboxes-for-on-premises-users.md
             - name: ID リストの検索用の CSV ファイルを準備する
               href: csv-file-for-an-id-list-content-search.md
-            - name: コンテンツ検索用にアクセス許可フィルターを構成する
-              href: permissions-filtering-for-content-search.md
             - name: 電子情報開示に関する一般的な問題のトラブルシューティング
               href: ediscovery-troubleshooting-common-issues.md
             - name: 失敗した検索の再試行
@@ -698,16 +700,16 @@
               href: assign-ediscovery-permissions.md
             - name: キーワード クエリと検索条件
               href: keyword-queries-and-search-conditions.md
-            - name: 電子情報開示のためにメールボックスに保存されているコンテンツ
-              href: what-is-stored-in-exo-mailbox.md
-            - name: 電子情報開示検索結果をプレビューする
-              href: preview-ediscovery-search-results.md
             - name: コンプライアンスの境界を設定する
               href: set-up-compliance-boundaries.md
             - name: 検索アクセス許可のフィルター処理を構成する
               href: permissions-filtering-for-content-search.md
+            - name: 電子情報開示のためにメールボックスに保存されているコンテンツ
+              href: what-is-stored-in-exo-mailbox.md
             - name: 検索の推定結果と実際の結果の違い
               href: differences-between-estimated-and-actual-ediscovery-search-results.md
+            - name: 電子情報開示検索結果をプレビューする
+              href: preview-ediscovery-search-results.md
             - name: 検索レポートをエクスポートする
               href: export-a-content-search-report.md
             - name: スクリプトを使用して電子情報開示の保留リストにユーザーを追加する
@@ -866,24 +868,24 @@
               href: document-metadata-fields-in-advanced-ediscovery.md
             - name: 弁護士/依頼人特権の検出を設定する
               href: attorney-privilege-detection.md
-            - name: 会話レビュー セット
-              href: conversation-review-sets.md
-            - name: CJK 言語サポート
-              href: ediscovery-cjk-support.md
             - name: 電子情報開示のアクセス許可を割り当てる
               href: assign-ediscovery-permissions.md
             - name: キーワード クエリと検索条件
               href: keyword-queries-and-search-conditions.md
-            - name: 検索アクセス許可のフィルター処理を構成する
-              href: permissions-filtering-for-content-search.md
             - name: コンプライアンスの境界を設定する
               href: set-up-compliance-boundaries.md
+            - name: 検索アクセス許可のフィルター処理を構成する
+              href: permissions-filtering-for-content-search.md
             - name: 電子情報開示のためにメールボックスに保存されているコンテンツ
               href: what-is-stored-in-exo-mailbox.md
             - name: 電子情報開示ツールでの復号化
               href: ediscovery-decryption.md
             - name: 電子情報開示の保持エラーのトラブルシューティング
               href: hold-distribution-errors.md
+            - name: 会話レビュー セット
+              href: conversation-review-sets.md
+            - name: CJK 言語サポート
+              href: ediscovery-cjk-support.md
             - name: 電子情報開示の診断情報を収集する
               href: ediscovery-diagnostic-info.md
             - name: 監査ログで電子情報開示アクティビティを検索する

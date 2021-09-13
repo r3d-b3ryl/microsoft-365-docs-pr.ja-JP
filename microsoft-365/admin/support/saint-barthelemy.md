@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 92b003490030c891f6c57dd8e2ac7ad7b79f65e6ba63f5974586a8d3e192328f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f16ae8235ef308b2f703847b46cbbd4e00f4ef17
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53804302"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211304"
 ---
 # <a name="contact-support-for-saint-barthelemy"></a>Saint Barthelemy のサポートに問い合わせ
 

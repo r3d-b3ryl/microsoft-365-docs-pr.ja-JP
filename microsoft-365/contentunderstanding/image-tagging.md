@@ -6,6 +6,7 @@ manager: serdars
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
+ms.custom: admindeeplinkMAC
 search.appverid: ''
 ms.collection:
 - enabler-strategic
@@ -13,12 +14,12 @@ ms.collection:
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: SharePoint Syntex での画像のタグ付けに関する詳細
-ms.openlocfilehash: 62055f8cb6b01fcd285aa01bb5934963b13fae6b
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 2e0f3e9dea8ca7d640db906715a39448eb024b2b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58552902"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210844"
 ---
 # <a name="image-tagging-in-sharepoint-syntex"></a>SharePoint Syntex での画像のタグ付け
 
@@ -42,7 +43,7 @@ SharePoint Syntex での画像のタグ付けを使って、ユーザーは、�
 
 画像のタグ付けをオンまたはオフにするには
 
-1. Microsoft 365 管理センターで、[**セットアップ**] をクリックします。
+1. [設定] Microsoft 365 管理センター[セットアップ]<a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**を選択します**</a>。
 
 2. **[組織における知識]** の下で、**[コンテンツの理解を自動化する]** をクリックします。
 

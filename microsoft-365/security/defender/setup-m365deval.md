@@ -20,11 +20,11 @@ ms.collection:
 ms.topic: article
 ms.technology: m365d
 ms.openlocfilehash: 23a1c49ac7b0e8a12fa8d473f880981a1daa7955
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568566"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211814"
 ---
 # <a name="set-up-your-microsoft-365-defender-trial-in-a-lab-environment"></a>ラボ環境でMicrosoft 365 Defender試用版をセットアップする 
 
