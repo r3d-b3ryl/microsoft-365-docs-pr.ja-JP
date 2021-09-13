@@ -23,11 +23,11 @@ description: 管理者は、Exchange Online Protection (EOP) で利用できる�
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 1d9980240f0c45eb708a668dfea028ce5259fcab
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58576106"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189141"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>EOP のスプーフィング対策保護
 

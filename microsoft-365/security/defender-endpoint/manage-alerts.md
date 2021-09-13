@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: c0147071c79acd29db52f86aebdff2dfcf5762f0
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58745063"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189490"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-alerts"></a>エンドポイント通知の Microsoft Defender の管理
 
@@ -99,7 +99,7 @@ Defender for Endpoint は、悪意のあるイベント、属性、コンテキ�
 
 5. ルール名とコメントを入力します。
 
-6. [**保存**] をクリックします。
+6. **[保存]** をクリックします。
 
 #### <a name="view-the-list-of-suppression-rules"></a>抑制ルールの一覧を表示する
 

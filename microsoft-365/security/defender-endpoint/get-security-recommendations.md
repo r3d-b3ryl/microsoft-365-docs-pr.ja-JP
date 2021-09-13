@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9debf4c9eecdc339638373646cc54c0578c72a950a1a23d320448f3a4b285c50
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5ad13ffcd36b61f3f8f38f834065ac8ea4038981
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53829329"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190951"
 ---
 # <a name="get-security-recommendations"></a>セキュリティ上の推奨事項を取得する
 
@@ -29,7 +29,7 @@ ms.locfileid: "53829329"
 
 **適用対象:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -46,7 +46,7 @@ ms.locfileid: "53829329"
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
 アプリケーション|SecurityRecommendation.Read.All|'脅威と脆弱性管理のセキュリティに関する推奨事項情報の読み取り'
-委任 (職場または学校のアカウント)|SecurityRecommendation.Read|'脅威と脆弱性管理のセキュリティに関する推奨事項情報の読み取り'
+委任 (職場または学校アカウント)|SecurityRecommendation.Read|'脅威と脆弱性管理のセキュリティに関する推奨事項情報の読み取り'
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -56,7 +56,7 @@ GET /api/machines/{machineId}/recommendations
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**
 
@@ -112,7 +112,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/ac233fa6208e1579620bf4
 }
 ```
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [リスクベースの脅威&の管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [脅威&脆弱性のセキュリティに関する推奨事項](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)

@@ -17,11 +17,11 @@ ms.topic: article
 ms.technology: mde
 ms.custom: api
 ms.openlocfilehash: d98b231d4d2c0b415a3c76aa18d23402f19e8b06
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58603167"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191001"
 ---
 # <a name="export-assessment-methods-and-properties-per-device"></a>デバイスごとの評価方法とプロパティのエクスポート
 

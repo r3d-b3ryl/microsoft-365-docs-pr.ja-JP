@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 詳細については、「デバイス ポリシーを使用Windows 10 Proデバイス ポリシーを管理するMicrosoft 365 Business Premium。
-ms.openlocfilehash: fa639da2b12f97e833d892d2b83939d42481c766f8c57c6f52adf7eb5fae0011
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 38ed4cac88d500cec6ad4c4fe96a4fb701f1ad5b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53873113"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190450"
 ---
 # <a name="manage-windows-10-pro-device-policies"></a>デバイス ポリシー Windows 10 Pro管理する
 
@@ -36,7 +36,8 @@ Microsoft 365 Business を使用して、Windows Defender ウイルス対策デ�
 
 ## <a name="try-it"></a>お試しください!
 
-1. Microsoft 365 管理センターにサインインします。
+1. 1 にサインインします。 
+            <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>に戻ります。
 1. [ポリシー **] で、[** ポリシーの追加] を選択します。
 1. [ポリシーの **追加] ウィンドウ** で、[ポリシー名] に名前を入力し、[ポリシーの種類] の **[Windows 10デバイス構成]** **を選択します**。
 1. [**デバイスWindows 10を保護する] を** 選択して、サブ設定を表示します。

@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: d04590eee8f771fe8001f44dfae490645e270e64
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349610"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190910"
 ---
 # <a name="list-indicators-api"></a>リスト インジケーター API
 
@@ -59,7 +59,7 @@ Microsoft Defender [for Endpoint を使用した OData クエリの例を参照�
 :---|:---|:---
 アプリケーション|Ti.ReadWrite|'読み取りおよび書き込みインジケーター'
 アプリケーション|Ti.ReadWrite.All|'すべてのインジケーターの読み取りと書き込み'
-委任 (職場または学校のアカウント)|Ti.ReadWrite|'読み取りおよび書き込みインジケーター'
+委任 (職場または学校アカウント)|Ti.ReadWrite|'読み取りおよび書き込みインジケーター'
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -69,7 +69,7 @@ GET https://api.securitycenter.microsoft.com/api/indicators
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**
 

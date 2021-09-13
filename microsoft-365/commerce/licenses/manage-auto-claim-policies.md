@@ -19,12 +19,12 @@ ms.custom:
 description: 特定のアプリのライセンスをユーザーに自動的に割り当てる自動請求ポリシーを作成して管理する方法について説明します。
 search.appverid: MET150
 ms.date: 04/06/2021
-ms.openlocfilehash: da5488b1cd463f173fda44dacd33a7198330f747495d10d5d696bee2195330ae
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b104700905b3753466036411368951f12a7012d8
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53887505"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190310"
 ---
 # <a name="manage-auto-claim-policies"></a>自動請求ポリシーを管理する
 

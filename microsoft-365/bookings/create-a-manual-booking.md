@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
 description: 次の手順に従って予定を作成し、Microsoft Bookings アプリを通じて従業員を割り当てる。
 ms.openlocfilehash: 9af9b28eb1f00bfc41dbdff2d7df4111cb8bdd13
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574438"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190610"
 ---
 # <a name="create-a-manual-booking"></a>予約を作成する
 

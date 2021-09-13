@@ -22,11 +22,11 @@ search.appverid:
 - MOE150
 description: ビジネス向けサービスに含まれるセキュリティMicrosoft 365を確認します。
 ms.openlocfilehash: 686ced4c4612470d25ab3a39fdd824b576bbeab7
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572109"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190550"
 ---
 # <a name="overview-of-security"></a>セキュリティの概要
 

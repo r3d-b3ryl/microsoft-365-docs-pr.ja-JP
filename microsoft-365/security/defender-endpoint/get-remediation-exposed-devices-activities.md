@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 1ee64608e9ce6ce24dc40f1729303ef99b162cab
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58683530"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190991"
 ---
 # <a name="list-exposed-devices-of-one-remediation-activity"></a>1 つの修復アクティビティの暴露デバイスを一覧表示する
 
@@ -57,7 +57,7 @@ ms.locfileid: "58683530"
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
 アプリケーション|RemediationTasks.Read.All|\'脅威と脆弱性管理の脆弱性情報の読み取り\'
-委任 (職場または学校のアカウント)|RemediationTask.Read.Read|\'脅威と脆弱性管理の脆弱性情報の読み取り\'
+委任 (職場または学校アカウント)|RemediationTask.Read.Read|\'脅威と脆弱性管理の脆弱性情報の読み取り\'
 
 ## <a name="properties-details"></a>プロパティの詳細
 

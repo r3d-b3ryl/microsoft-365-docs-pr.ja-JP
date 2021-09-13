@@ -15,11 +15,11 @@ description: 管理者は、セキュリティ & コンプライアンス セン
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 3b2ddbc6215ebbc3b1a2b2ccff4a5bc8ad7118c3
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574546"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189100"
 ---
 # <a name="non-accepted-domain-report-in-the-security--compliance-center"></a>セキュリティ コンプライアンス センターの非&レポート
 

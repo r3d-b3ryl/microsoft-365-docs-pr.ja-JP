@@ -14,11 +14,11 @@ localization_priority: Priority
 description: エネルギー業界がデータとシステムをセキュリティで保護し、規制を遵守しつつ、最新のコラボレーション プラットフォームに移行する際に Microsoft 365 がお役に立ちます。
 ms.custom: seo-marvel-jun2020
 ms.openlocfilehash: a9e104516b203d81ef69058b2d31d4b4c97df39e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570379"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189040"
 ---
 # <a name="key-compliance-and-security-considerations-for-the-energy-industry"></a>エネルギー業界のための、コンプライアンスとセキュリティの重要な検討事項
 ![クラウドを使用するさまざまな業界のグローバル ビューの描写。](../media/solution-arch-center/MSC17_global_016.png)

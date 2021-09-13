@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンス マネージャーでコントロールの実装とテストを実行する方法について説明します。 作業時間の割り当て、ドキュメントの保存、レポートのエクスポートを行います。
-ms.openlocfilehash: 55bcdb6082d643dee15be8c2e7539e7d897bac66c1c716e7982a9f6203a32044
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f2674e24ed38362c5c7563a574e0dba9c81f2584
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53802480"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189970"
 ---
 # <a name="assign-and-complete-improvement-actions-in-compliance-manager"></a>コンプライアンス マネージャーで改善アクションを割り当て、完了する
 

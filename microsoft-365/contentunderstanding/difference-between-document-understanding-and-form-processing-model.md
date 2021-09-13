@@ -14,11 +14,11 @@ ms.collection:
 localization_priority: Priority
 description: ドキュメント理解モデルとフォーム処理モデルの主な違いについて説明します。
 ms.openlocfilehash: e9f9c417d8603be0d933607ccf527c6d821bcc72
-ms.sourcegitcommit: 7883556c05ceef228dc329f715e8a6213b40d921
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58931256"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189750"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>ドキュメント理解とフォーム処理モデルの違い 
 

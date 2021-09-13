@@ -22,11 +22,11 @@ search.appverid:
 - MOE150
 description: 従業員がアプリで取得したアプリをOfficeする方法をMicrosoft 365 Business Premium。
 ms.openlocfilehash: 7c7f28a13438d2cd5974d212d56c6885d8d4850c
-ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58377765"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190551"
 ---
 # <a name="employee-quick-setup"></a>従業員のクイック セットアップ
 

@@ -16,12 +16,12 @@ ms.assetid: 2c956776-0016-4be6-b4cd-133a237f4a9e
 ms.custom:
 - seo-marvel-apr2020
 description: 組織の要件を満たすためにExchange Online Active Directory Rights Management Service (AD RMS) を使用する IRM を構成する方法について説明します。
-ms.openlocfilehash: fd70ccd6c239d519953b35361731e7395567c3439842adf01774d7740bc36d21
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d98cf5c762cd4dac0cbad6d25a3cc766d5c5310a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53860765"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191351"
 ---
 # <a name="exchange-online-mail-encryption-with-ad-rms"></a>AD RMS による Exchange Online のメールの暗号化
 

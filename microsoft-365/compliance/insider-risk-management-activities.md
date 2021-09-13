@@ -13,11 +13,11 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.openlocfilehash: bbb0cfe262687a22277dda99f47690a4932d8abc
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58561472"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191350"
 ---
 # <a name="investigate-insider-risk-management-activities"></a>インサイダーリスク管理活動の調査
 

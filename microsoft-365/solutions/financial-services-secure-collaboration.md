@@ -13,11 +13,11 @@ localization_priority: Priority
 description: 金融サービス機関が、Microsoft 365 と Teams を使用して、財務的なセキュリテとコンプライアンスを維持し、効果的に共同作業を行う方法について説明します。
 f1.keywords: NOCSH
 ms.openlocfilehash: 0e3fada6a74776e4edf2c8c41ef9026ce17871ad
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568002"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189030"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>米国の銀行業および資本市場のための、コンプライアンスとセキュリティの重要な検討事項
 

@@ -22,11 +22,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: 674067ab082c70b2c5ae0fa0551a93c2d4f9a030
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58548680"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189250"
 ---
 # <a name="review-microsoft-defender-for-office-365-architecture-requirements-and-key-concepts"></a>Microsoft Defender のアーキテクチャ要件Office 365主な概念について確認する
 
@@ -49,8 +49,8 @@ Defender for Office 365を有効にする前に、アーキテクチャを理解
 |コールアウト  |説明  |
 |---------|---------|
 |1     | 外部送信者のホスト サーバーは、通常、メッセージを中継するターゲット サーバーを提供する MX レコードのパブリック DNS 参照を実行します。  この参照は、直接Exchange Online (EXO) または EXO に対して中継するように構成された SMTP ゲートウェイのいずれかです。  |
-|2      | Exchange Online Protection接続をネゴシエートして検証し、メッセージ ヘッダーとコンテンツを検査して、必要な追加のポリシー、タグ付け、または処理を決定します。  |
-|3      | Exchange Online、Microsoft Defender と統合Office 365、より高度な脅威保護、軽減、修復を提供します。 |
+|2     | Exchange Online Protection接続をネゴシエートして検証し、メッセージ ヘッダーとコンテンツを検査して、必要な追加のポリシー、タグ付け、または処理を決定します。  |
+|3     | Exchange Online、Microsoft Defender と統合Office 365、より高度な脅威保護、軽減、修復を提供します。 |
 |4      | 悪意のある、ブロックされている、または検疫されていないメッセージが処理され、迷惑メール、メールボックス ルール、または他の設定に関連するユーザー設定が評価され、トリガーされる EXO で受信者に配信されます。 |
 |5      | Azure AD Connect を使用すると、オンプレミスの Active Directory との統合を有効にし、メールが有効なオブジェクトとアカウントを Azure Active Directory と最終的にExchange Online。 |
 |6      | オンプレミス環境を統合する場合は、メール関連の属性、設定、および構成の管理と管理をサポートするために Exchange サーバーを使用する方が強く推奨されます。 |

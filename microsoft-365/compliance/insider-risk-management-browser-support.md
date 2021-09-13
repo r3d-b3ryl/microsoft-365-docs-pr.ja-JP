@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: cb0f84cac5b03f6b51d2853966be26686f8a13ec417230da670cae3106ced20c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ed4fe1e24a4414c4dad8f596df75705d1f6231a4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53885965"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191320"
 ---
 # <a name="learn-about-and-configure-insider-risk-management-browser-signal-detection-preview"></a>内部リスク管理ブラウザーのシグナル検出 (プレビュー) について説明し、構成する
 
@@ -185,7 +185,7 @@ Get-Item -path "HKLM:\\SOFTWARE\\Microsoft\\Windows Defender\\Miscellaneous Conf
     - データ型: *文字列*
     - 値: *\<enabled/\>\<data id=”ExtensionInstallForcelistDesc” value=”1&\#xF000; echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx″/\>*
 
-9. [**作成**] を選択します。
+9. **[作成]** を選択します。
 
 ### <a name="option-3-group-policy-setup-for-chrome"></a>オプション 3: Chrome のグループ ポリシーのセットアップ
 

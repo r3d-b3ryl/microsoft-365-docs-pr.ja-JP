@@ -16,19 +16,20 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
+- admindeeplinkMAC
 search.appverid: MET150
 description: サード パーティ製アプリをアクティブ化して管理する方法については、Microsoft 365 管理センター。
 ms.date: 04/15/2021
-ms.openlocfilehash: d7de6613ae77d70631b926ac1c2e72fab8b1837bacaf6f6f0e5a4735ef5dd06b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: df3c5372396394f1b2c80bb07aca0a79d8883bf4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53831437"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190261"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>組織のサード パーティ製アプリのサブスクリプションを管理する
 
-新しいアプリでサード パーティ製アプリのライセンスと請求を管理Microsoft 365 管理センター。 更新された機能には、サブスクリプション管理の強化、請求情報へのアクセスの改善、請求書管理の柔軟性の向上が含まれます。 サブスクリプション管理は、Microsoft の更新されたコマース プラットフォームに基づいて行います。 これは、顧客が直接購入するサービスとしてのソフトウェア アプリ、またはサード パーティ プロバイダーから適用されます。
+新しいアプリでサード パーティ製アプリのライセンスと請求を管理<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター。</a> 更新された機能には、サブスクリプション管理の強化、請求情報へのアクセスの改善、請求書管理の柔軟性の向上が含まれます。 サブスクリプション管理は、Microsoft の更新されたコマース プラットフォームに基づいて行います。 これは、顧客が直接購入するサービスとしてのソフトウェア アプリ、またはサード パーティ プロバイダーから適用されます。
 
 ## <a name="how-to-get-software-as-a-service-apps"></a>サービスとしてのソフトウェア アプリを取得する方法
 

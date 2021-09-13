@@ -20,11 +20,11 @@ ms.custom:
 - seo-marvel-mar2020
 description: この記事では、データベースに含まれるテンプレートのいずれかを使用して DLP ポリシーを作成する方法についてOffice 365。
 ms.openlocfilehash: 1fe14035f23443a8f8f35b5c9ac9edf69bf60ffd
-ms.sourcegitcommit: 2048c9399a654175438d47e0c3aa2574b949bdc0
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "58923932"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189870"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>テンプレートから DLP ポリシーを作成する
 
@@ -56,7 +56,7 @@ Microsoft 365、さまざまな一般的な規制およびビジネス ポリシ
 
 5. DLP ポリシーで保護する場所を選択し、各場所の既定のスコープを受け入れるか、スコープをカスタマイズします。 「スコープ [オプションの](dlp-policy-reference.md#locations) 場所」を参照してください。
 
-6. [\> **次へ**]を選択します。
+6. \> **次へ** を選択します。
  
 1. <!-->、次のいずれかの操作を行います。
 
@@ -83,7 +83,7 @@ Microsoft 365、さまざまな一般的な規制およびビジネス ポリシ
     1. OneDrive
     1. Teamsチャットメッセージとチャネル メッセージ 
 
-10. [**次へ**]を選択します。
+10. **[次へ]** を選択します。
 
 11. 必要に **応じて 、[保護の** アクション] ページで、ポリシー ヒントの通知と通知メールをカスタマイズできます。 [ **コンテンツがポリシー条件に一** 致する場合] を有効にし、ポリシー ヒントをユーザーに表示し、電子メール通知を送信し、[ヒントと電子メールのカスタマイズ **] を選択します**。
 1. c

@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: アプリ ガバナンスに関するフィードバックの送信方法。
 ms.openlocfilehash: 7009628d132df02f7f4e34bf3f097fe4ef700a07
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420326"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190051"
 ---
 # <a name="how-to-submit-feedback-on-app-governance"></a>アプリ ガバナンスに関するフィードバックの送信方法 
 

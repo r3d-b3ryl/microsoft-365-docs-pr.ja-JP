@@ -15,11 +15,11 @@ ms.collection:
 localization_priority: None
 description: '[プレビュー] (プレビュー) のリソースをMicrosoft Viva ラーニングする方法について学習します。'
 ms.openlocfilehash: f868c90e0dcb280bf3bd7ca592a950d9735143de
-ms.sourcegitcommit: 73a17ecbc06cd3e5452814637ab0484ddcdea17a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "58942592"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191180"
 ---
 # <a name="introduction-to-microsoft-viva-learning-preview"></a>概要 (Microsoft Viva ラーニング)
 

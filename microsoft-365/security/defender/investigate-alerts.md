@@ -23,11 +23,11 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.openlocfilehash: 92c74ae2f7e7236138f28cf30b3e835eb10b636d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572505"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189240"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>[アラートの調査] Microsoft 365 Defender
 
@@ -54,7 +54,7 @@ Microsoft Defender for Endpoint、Microsoft Defender for endpoint、Microsoft De
 
 次の条件に従ってアラートをフィルター処理できます。
 
-- 緊急度
+- 重要度
 - 状態
 - カテゴリ
 - 検出ソース

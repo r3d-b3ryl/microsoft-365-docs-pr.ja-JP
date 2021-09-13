@@ -19,11 +19,11 @@ ms.assetid: a7e4342a-a0a1-4b43-b166-3d7eecf5d2fd
 description: セキュリティ & コンプライアンス センターの DLP とメール フロー ルール (トランスポート ルール) が管理センターでどのように動作Exchangeします。
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 37d1c4a5900fb9a6d42934246cbed6666e0609eb
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570115"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191401"
 ---
 # <a name="how-dlp-works-between-the-microsoft-365-compliance-center-and-exchange-admin-center"></a>コンプライアンス センターと管理センターの間Microsoft 365 DLP の動作Exchange方法
 

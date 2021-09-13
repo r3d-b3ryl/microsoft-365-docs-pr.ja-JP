@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 9d0286ec03c6cde7aa8129d030b65271e9c78677
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58863376"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189410"
 ---
 # <a name="take-response-actions-on-a-device"></a>デバイスの対応措置を講じる
 

@@ -16,12 +16,12 @@ description: 調査中にメールボックスのすべてのコンテンツを�
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: 58de1f44c6c58125b37c8cf0800d48dc0ae86f2a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 4a3271952a1f517f97e6b0a13044d2fac102e8ec
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566882"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189850"
 ---
 # <a name="create-a-litigation-hold"></a>訴訟ホールドの作成
 
@@ -50,7 +50,7 @@ ms.locfileid: "58566882"
 
 1. <https://admin.microsoft.com> に移動し、サインインします。
 
-2. 管理センターのナビゲーション ウィンドウで、[アクティブ ユーザー] を **クリック>クリックします**。
+2. 管理センターのナビゲーション ウィンドウで、[ユーザーがアクティブな **ユーザー]**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**をクリックします**</a>。
 
 3. 訴訟ホールドに配置するユーザーを選択します。
 

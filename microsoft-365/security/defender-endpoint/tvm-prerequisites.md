@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fc138d3f4aea65cdddb2425c34c06f3fd33227e431ca4f1260ee784c46a25ccf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9fde7ed4c7a3b621730e2b6cd73370d87ea9c92c
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53845005"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189380"
 ---
 # <a name="prerequisites--permissions---threat-and-vulnerability-management"></a>前提条件&アクセス許可 - 脅威と脆弱性の管理
 

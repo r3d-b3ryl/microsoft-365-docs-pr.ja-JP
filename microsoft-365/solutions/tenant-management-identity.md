@@ -17,11 +17,11 @@ ms.custom:
 - Ent_Solutions
 description: テナントに適切な ID モデルMicrosoft 365展開し、強力なユーザー サインインを適用します。
 ms.openlocfilehash: cd67db1c70c4f3aaa4ec9784e1de6992dd40300a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571617"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192131"
 ---
 # <a name="step-3-identity-for-your-microsoft-365-for-enterprise-tenants"></a>手順 3. エンタープライズ テナントのMicrosoft 365 ID
 

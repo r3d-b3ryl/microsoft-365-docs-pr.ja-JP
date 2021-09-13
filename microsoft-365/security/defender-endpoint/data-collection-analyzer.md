@@ -21,11 +21,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: 7fa72bc6e96199fb7773e4df385e3527ac14938e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568626"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191020"
 ---
 # <a name="data-collection-for-advanced-troubleshooting-on-windows"></a>Windows で高度なトラブルシューティングを行うためのデータ収集
 
@@ -78,7 +78,7 @@ Run '**MDEClientAnalyzer.cmd /?**' をクリックして、使用可能なパラ
 >
 > - RemoteMDEClientAnalyzer.cmd を使用する場合は、psexec を呼び出して、構成されたファイル共有からツールをダウンロードし、そのツールをローカルで PsExec.exe。
     CMD スクリプトは '-r' フラグを使用して、SYSTEM コンテキスト内でリモートで実行するように指定します。そのため、ユーザーに対するプロンプトは表示されません。
-> - この同じフラグを MDEClientAnalyzer.cmd と一緒に使用すると、データ収集の分数の指定を要求するユーザーに対するプロンプトを回避できます。 次に例を示します。
+> - この同じフラグを MDEClientAnalyzer.cmd と一緒に使用すると、データ収集の分数の指定を要求するユーザーに対するプロンプトを回避できます。 例:
 >
 >    **MDEClientAnalyzer.cmd -r -i -m 5**
 >

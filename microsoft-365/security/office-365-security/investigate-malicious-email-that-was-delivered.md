@@ -21,11 +21,11 @@ ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 0a67d9291e7cb33e6385c916f90da5dfae54e352
-ms.sourcegitcommit: a4e6a5a92ea527461a7835ddc83e2b01986e566b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "58918324"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189120"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-microsoft-365"></a>メールで配信された悪意のある電子メールをMicrosoft 365
 
@@ -41,7 +41,7 @@ ms.locfileid: "58918324"
 > [!NOTE]
 > 修復に関する記事については、こちらを参照 [してください](remediate-malicious-email-delivered-office-365.md)。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 次の要件が満たされていることを確認してください。
 
@@ -64,7 +64,7 @@ ms.locfileid: "58918324"
 |最新情報|役割グループ|役割のプレビューが必要ですか?|
 |---|---|---|
 |脅威エクスプローラー (およびリアルタイム検出) を使用して脅威を分析する |グローバル管理者 <p> セキュリティ管理者 <p> セキュリティ閲覧者|いいえ|
-|脅威エクスプローラー (およびリアルタイム検出) を使用して、電子メール メッセージのヘッダーを表示し、検疫済みメール メッセージをプレビューおよびダウンロードする|グローバル管理者 <p> セキュリティ管理者 <p> セキュリティ閲覧者|いいえ|
+|脅威エクスプローラー (およびリアルタイム検出) を使用して、電子メール メッセージのヘッダーを表示し、検疫済みメール メッセージをプレビューおよびダウンロードする|グローバル管理者 <p> セキュリティ管理者 <p> セキュリティ閲覧者|なし|
 |脅威エクスプローラーを使用して、ヘッダーの表示、メールのプレビュー (電子メール エンティティ ページ内のみ)、メールボックスに配信される電子メール メッセージのダウンロード|グローバル管理者 <p> セキュリティ管理者 <p> セキュリティ閲覧者 <p> Preview|はい|
 |
 

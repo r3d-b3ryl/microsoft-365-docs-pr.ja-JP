@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: d9e733bb16b843df24fa4fee6b2eecaa889a61041f9a05fe8970124729d8dc41
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a780c30b2919aac1f5a50c475c79df87d5b1f1f3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53873453"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192450"
 ---
 # <a name="step-4-define-microsoft-365-defender-roles-responsibilities-and-oversight"></a>手順 4. 役割Microsoft 365 Defender監督の定義
 
@@ -38,7 +38,7 @@ ms.locfileid: "53873453"
 
 運用上の役割を定義するには、Microsoft 365 Defender ライセンス、構成、および管理の所有権と説明責任を初期タスクとして確立する必要があります。 通常、Microsoft 365 および Enterprise セキュリティ + モビリティ (EMS) サービス (Microsoft 365 Defender を含む場合があります) のライセンス、サブスクリプション コスト、および管理の所有権は、セキュリティ 運用センター (SOC) チームの外にあります。 SOC チームは、これらの個人と一緒に作業して、ユーザーの適切な監視をMicrosoft 365 Defender。 
 
-多くの最新の SOC は、自分のスキルセットと機能に基づいてチーム メンバーをカテゴリに割り当てる。 次に例を示します。
+多くの最新の SOC は、自分のスキルセットと機能に基づいてチーム メンバーをカテゴリに割り当てる。 以下に例を示します。
 
 - 脅威と分析機能のライフサイクル管理に関連するタスクに割り当てられた脅威インテリジェンス チーム。
 - ログ、アラート、イベント、および監視機能の管理を担当する SOC アナリストで構成される監視チーム。

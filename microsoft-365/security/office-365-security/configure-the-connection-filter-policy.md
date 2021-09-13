@@ -20,11 +20,11 @@ description: 管理者は、電子メール サーバーからの電子メール
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 6edcbbe885f8271b073afdff248106ce0d209960
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572445"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189131"
 ---
 # <a name="configure-connection-filtering"></a>接続フィルターを構成する
 
@@ -64,7 +64,7 @@ Exchange Online 内のメールボックスまたは Exchange Online メール�
   **注**:
 
   - Microsoft 365 管理センターで、対応する Azure Active Directory の役割にユーザーを追加すると、ユーザーには、必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
-  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
+  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
 
 - 許可またはブロックする電子メール サーバー (送信者) の送信元 IP アドレスを検索するには、メッセージ ヘッダーの接続 IP (**CIP**) ヘッダー フィールドを確認します。 さまざまな電子メール クライアントでメッセージ ヘッダーを表示するには、「インターネット メッセージ ヘッダーを表示する」を参照[Outlook。](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c)
 
@@ -91,7 +91,7 @@ Exchange Online 内のメールボックスまたは Exchange Online メール�
        - IP 範囲: たとえば、192.168.0.1-192.168.0.254 です。
        - CIDR IP: たとえば、192.168.0.1/25。 有効なサブネット マスク値は 、/24 ~ /32 です。 /1 ~ /23 のスパム フィルター処理をスキップするには、この記事の後半の「利用可能な範囲外の [CIDR IP](#skip-spam-filtering-for-a-cidr-ip-outside-of-the-available-range) のスパム フィルターをスキップする」セクションを参照してください。
 
-       必要な回数だけこの手順を繰り返します。 既存の値を削除するには、削除をクリックします ![[削除] アイコン。](../../media/m365-cc-sc-remove-selection-icon.png) 値の隣。
+       必要な回数だけこの手順を繰り返します。 既存の値を削除するには、削除をクリックします ![[削除] アイコン](../../media/m365-cc-sc-remove-selection-icon.png) 値の隣。
 
      IP アドレスまたはアドレス範囲を追加するには、ボックス内をクリックして「追加アイコンの追加」と ![ 入力します ](../../media/ITPro-EAC-AddIcon.png) 。 エントリを削除するには、[許可された IP アドレス] でエントリを選択 **し、[** 削除] **をクリック** ![ します ](../../media/scc-remove-icon.png) 。 完了したら、**[保存]** をクリックします。
 
@@ -124,7 +124,7 @@ Exchange Online 内のメールボックスまたは Exchange Online メール�
 Set-HostedConnectionFilterPolicy -Identity Default [-AdminDisplayName <"Optional Comment">] [-EnableSafeList <$true | $false>] [-IPAllowList <IPAddressOrRange1,IPAddressOrRange2...>] [-IPBlockList <IPAddressOrRange1,IPAddressOrRange2...>]
 ```
 
-**注意**:
+**注**:
 
 - 有効な IP アドレスまたはアドレス範囲の値は次のとおりです。
   - 単一 IP: たとえば、192.168.1.1。

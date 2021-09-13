@@ -21,11 +21,11 @@ ms.custom:
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: '概要: Office サーバーのワークロードのためにサイト間 VPN 接続を使用してクロスプレミスの Azure 仮想ネットワークを構成する方法について説明します。'
 ms.openlocfilehash: de8488df370b4ede9fef5ad6698d37bca6c99ac8
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568939"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189681"
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>オンプレミス ネットワークを Microsoft Azure 仮想ネットワークに接続する
 
@@ -128,7 +128,7 @@ Azure Virtual Network のプライベート IP アドレス空間は、仮想ネ
   
 |**必要な仮想マシンの数**|**必要なホスト ビット数**|**サブネットのサイズ**|
 |:-----|:-----|:-----|
-|1-3  <br/> |3   <br/> |/29  <br/> |
+|1-3  <br/> |3  <br/> |/29  <br/> |
 |4-11  <br/> |4   <br/> |/28  <br/> |
 |12-27  <br/> |5   <br/> |/27  <br/> |
 |28-59  <br/> |6   <br/> |/26  <br/> |

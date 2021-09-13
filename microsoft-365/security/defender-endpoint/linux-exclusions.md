@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e6a77dd2ef76a93a09670f18bad649cdc0dc0e1b393313efdbc5c9d5ecdbc681
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 269f74b0df2b0c51217d44bdb0cc2001d0f8a34d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53806894"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189500"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 上のエンドポイント向け Microsoft Defender の除外を構成および検証する
 
@@ -33,7 +33,7 @@ ms.locfileid: "53806894"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 この記事では、オンデマンド スキャンに適用される除外を定義する方法、およびリアルタイムの保護と監視について情報を提供します。
 
@@ -54,7 +54,7 @@ ms.locfileid: "53806894"
 除外|定義|例
 ---|---|---
 ファイル拡張子|拡張子が付いたすべてのファイル(デバイス上の任意の場所)|`.test`
-File|完全パスで識別される特定のファイル|`/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
+ファイル|完全パスで識別される特定のファイル|`/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
 フォルダー|指定したフォルダーの下のすべてのファイル (再帰的)|`/var/log/`<br/>`/var/*/`
 プロセス|特定のプロセス (完全なパスまたはファイル名で指定) と、そのプロセスで開くすべてのファイル|`/bin/cat`<br/>`cat`<br/>`c?t`
 

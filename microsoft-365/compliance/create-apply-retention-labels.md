@@ -18,11 +18,11 @@ search.appverid:
 - MET150
 description: 保持ラベルを作成して発行し、それをアプリに適用することで、必要なものを保持し、必要でないものを削除する手順。
 ms.openlocfilehash: ab921a2dab7bbf735ebfd2ea311a21e694fddbac
-ms.sourcegitcommit: a4e6a5a92ea527461a7835ddc83e2b01986e566b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "58918293"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189800"
 ---
 # <a name="create-retention-labels-and-apply-them-in-apps"></a>保持ラベルを作成してアプリに適用する
 

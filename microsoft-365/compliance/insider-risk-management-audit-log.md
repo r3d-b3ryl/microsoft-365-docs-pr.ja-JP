@@ -13,11 +13,11 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.openlocfilehash: 6fa7ab5b30a4cfad8ec4305c0ddf8fcda1c6f284
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571352"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191331"
 ---
 # <a name="insider-risk-management-audit-log"></a>Insider リスク管理監査ログ
 

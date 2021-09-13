@@ -21,11 +21,11 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.openlocfilehash: 29a369c2813cfe3c9c17b6b11f765d4d6162f8bf
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569935"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189311"
 ---
 # <a name="configure-your-event-hub"></a>イベント ハブを構成する
 
@@ -99,7 +99,7 @@ ms.locfileid: "58569935"
 > [!NOTE]
 > イベント ハブ クラスターの一部ではないイベントハブ名前空間を使用している場合は、Azure のイベント ハブ名前空間あたり 10 イベント ハブの制限により、定義した各エクスポート 設定 でエクスポートするイベント の種類 (テーブル) を最大 10 つまで選択できます。
 
-次に例を示します。
+例:
 
 ![イベント ハブの例のイメージ。](../../media/005c1f6c10c34420d387f594987f9ffe.png)
 

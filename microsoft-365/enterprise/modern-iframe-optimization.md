@@ -20,11 +20,11 @@ search.appverid:
 - MET150
 description: SharePoint Online 最新版と従来版の発行サイト ページで iFrame のパフォーマンスを最適化する方法について説明します。
 ms.openlocfilehash: 7f50b6582a0a65cd29a91f450642e5d38b346d77
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569419"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189601"
 ---
 # <a name="optimize-iframes-in-sharepoint-online-modern-and-classic-publishing-site-pages"></a>SharePoint Online 最新版と従来版の発行サイト ページで iFrame を最適化する
 

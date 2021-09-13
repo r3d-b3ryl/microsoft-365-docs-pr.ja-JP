@@ -21,11 +21,11 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.openlocfilehash: 9585547ea926dbee09aacada05f24e9217c07923
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563816"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189220"
 ---
 # <a name="turn-on-microsoft-365-defender"></a>Microsoft 365 Defender を有効にする
 
@@ -43,7 +43,7 @@ Microsoft 365 Defenderアクセス許可を持つ対象ユーザーがポータ�
 
 一般に、Microsoft 365製品のライセンスは、追加のライセンス コストなしでMicrosoft 365 Defenderを使用できます。 サポートされているサービスへのアクセスを提供するライセンスMicrosoft 365 E5 E5 Security、A5、A5 セキュリティ ライセンス、または有効なライセンスの組み合わせを取得することをお勧めします。
 
-ライセンスの詳細については、「ライセンス [要件」を参照してください](prerequisites.md#licensing-requirements)。
+ライセンス情報に関する詳細については、[ライセンス要件をお読みください](prerequisites.md#licensing-requirements)。
 
 ### <a name="check-your-role"></a>役割を確認する
 
@@ -51,7 +51,7 @@ Microsoft 365 Defenderアクセス許可を持つ対象ユーザーがポータ�
 
 ## <a name="supported-services"></a>サポートされているサービス
 
-Microsoft 365 Defender、既に展開したさまざまなサポートされているサービスのデータを集計します。 データを一元的に処理して保存し、新しい分析情報を特定し、一元的な応答ワークフローを可能にします。 これは、統合サービスに関連付けられている既存の展開、設定、またはデータに影響を与えることなく行います。
+Microsoft 365 Defender は、ユーザーがすでに展開しているさまざまなサポート対象のサービスからデータを集約します。 データは一元的に処理および保存され、新しい分析情報が特定され、一元化された応答ワークフローが可能になります。 これは、既存の展開、設定、統合されたサービスに関連するデータに影響を与えることなく実行されます。
 
 最適な保護と最適化をMicrosoft 365 Defender、該当するサポートされているサービスをネットワークに展開することをお勧めします。 詳細については、「サポート [されているサービスの展開」を参照してください](deploy-supported-services.md)。
 

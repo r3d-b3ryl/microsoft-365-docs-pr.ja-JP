@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: コア電子情報開示の保管担当者および非保管データ ソースに適用される法的ホールドに関連するエラーのトラブルシューティングを行います。
-ms.openlocfilehash: a1e53397b4a0b18aa5c110a0499e239b51e24bd587fa8b04351d930d684c7e8d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3e5cc6351d5026feda560bee646a1e6a03475ee2
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53813933"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191411"
 ---
 # <a name="troubleshoot-ediscovery-hold-errors"></a>電子情報開示の保持エラーのトラブルシューティング
 
@@ -120,7 +120,7 @@ ms.locfileid: "53813933"
 
 - サイトの URL が変更された場合に確認します。
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 「推奨されるプラクティス」セクションの複数のユーザーの保留ポリシーの更新に関するガイダンスは、システムが保留ポリシーへの同時更新をブロックしているという事実から生じます。 つまり、更新された保留ポリシーが新しいコンテンツの場所に適用され、保留ポリシーが保留中の状態である場合、追加のコンテンツの場所を保留ポリシーに追加できない。 この問題の軽減に役立ついくつかの注意が必要な情報を次に示します。
   

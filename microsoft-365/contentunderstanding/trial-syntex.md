@@ -11,16 +11,18 @@ ms.prod: microsoft-365-enterprise
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
-ms.custom: Adopt
+ms.custom:
+- Adopt
+- admindeeplinkMAC
 search.appverid: ''
 localization_priority: Normal
 description: 組織のユーザー向け試用版パイロット プログラムを計画SharePoint Syntexする方法について学習します。
-ms.openlocfilehash: 336a4c164f15035168d8842b05cdd4b5c566a97a
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.openlocfilehash: 51854dafb7ae9c1de350f5f9f29eedc191b8c2aa
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58863679"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189710"
 ---
 # <a name="run-a-trial-of-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex の試用版を実行SharePoint Syntex
 
@@ -39,7 +41,7 @@ ms.locfileid: "58863679"
 
 - この[Microsoft 365 管理センター](https://admin.microsoft.com)
     1. [Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。
-    2. [課金購入 **サービス**  >  **] に移動します**。
+    2. [課金購入 **サービス**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">**] に移動します**</a>。
     3. **[アドオン]** セクションまで下にスクロールします。
     4. [詳細] タイルSharePoint Syntex[詳細] を **選択します**。
     5. **[無料試用版を取得]** を選択します。

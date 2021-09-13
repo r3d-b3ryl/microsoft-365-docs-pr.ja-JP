@@ -16,11 +16,11 @@ ms.collection:
 localization_priority: None
 description: '[プレビュー] のSharePointコンテンツ ソースとしてMicrosoft Viva ラーニングする方法について学習します。'
 ms.openlocfilehash: 96dc12f8c69281f420b339198222f9f918ebc5b4
-ms.sourcegitcommit: 73a17ecbc06cd3e5452814637ab0484ddcdea17a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "58942612"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191210"
 ---
 # <a name="configure-sharepoint-as-a-learning-content-source-for-microsoft-viva-learning-preview"></a>コンテンツ SharePointコンテンツ ソースとして構成する (Microsoft Viva ラーニング プレビュー)
 

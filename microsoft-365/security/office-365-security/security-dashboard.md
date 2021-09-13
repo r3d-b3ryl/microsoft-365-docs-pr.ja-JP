@@ -20,11 +20,11 @@ description: 新しいセキュリティ ダッシュボードを使用して、
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 18cde7063e8a25426b56ee184b71408016a6116d
-ms.sourcegitcommit: a4e6a5a92ea527461a7835ddc83e2b01986e566b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "58918353"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189090"
 ---
 # <a name="security-dashboard-in-the-security--compliance-center"></a>セキュリティ 管理コンプライアンス センター&ダッシュボード
 
@@ -111,7 +111,7 @@ ms.locfileid: "58918353"
 
 ![マルウェアの傾向とファミリの種類。](../../media/malwarewidgetatpe5.png)
 
-## <a name="insights"></a>インサイト
+## <a name="insights"></a>分析情報
 
 インサイト重要な問題だけでなく、検討すべき推奨事項やアクションも含まれます。
 

@@ -22,11 +22,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: fca3a6ff838006b070a902dd37ff1cf32110a7b0
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569899"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189300"
 ---
 # <a name="investigate-and-respond-using-microsoft-365-defender-in-a-pilot-environment"></a>パイロット環境で、Microsoft 365 Defenderを使用して調査と対応を行う
 
@@ -44,7 +44,7 @@ ms.locfileid: "58569899"
 | |手順  |説明  |
 |---------|---------|---------|
 |1|[攻撃のシミュレーション](eval-defender-investigate-respond-simulate-attack.md)     |   評価環境に対する攻撃をシミュレートし、Microsoft 365 Defenderポータルを使用してインシデント対応を実行します。      |
-|2 |[インシデント対応機能を試す ](eval-defender-investigate-respond-additional.md)    |    デバイスで機能を試Microsoft 365 Defender。     |
+|2|[インシデント対応機能を試す ](eval-defender-investigate-respond-additional.md)    |    デバイスで機能を試Microsoft 365 Defender。     |
 ||||
 
 ### <a name="navigation-you-may-need"></a>必要なナビゲーション

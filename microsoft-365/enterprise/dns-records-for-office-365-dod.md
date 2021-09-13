@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: ''
 description: '概要: DoD の DNS レコードOffice 365します。'
 hideEdit: true
-ms.openlocfilehash: 23d342719e8b488fccab925a6db9574ca3f06fa8115b8b29920c038570cdfa2b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 656fb5aff3365dfb5f975f7d3ad1c222b36e1e56
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53801076"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189670"
 ---
 # <a name="dns-records-for-office-365-dod"></a>Office 365 DoD の DNS レコード
 
@@ -37,7 +37,7 @@ DoD へのオンボーディングOffice 365、オンライン サービス テ�
 
 ## <a name="exchange-online"></a>Exchange Online
 
-| Type | Priority | ホスト名 | ポイント先のアドレスまたは値 | TTL |
+| Type | Priority | ホスト名 | アドレスまたは値をポイントする | TTL |
 | --- | --- | --- | --- | --- |
 | MX | 0 | @ | *tenant*.mail.protection.office365.us (詳細については、以下を参照してください) | 1 Hour |
 | TXT | - | @ | v=spf1 include:spf.protection.office365.us -all | 1 Hour |
@@ -57,14 +57,14 @@ DoD へのオンボーディングOffice 365、オンライン サービス テ�
 
 ### <a name="cname-records"></a>CNAME レコード
 
-| 種類 | ホスト名 | ポイント先のアドレスまたは値 | TTL |
+| 型 | ホスト名 | アドレスまたは値をポイントする | TTL |
 | --- | --- | --- | --- |
 | CNAME | sip | sipdir.online.dod.skypeforbusiness.us | 1 Hour |
 | CNAME | lyncdiscover | webdir.online.dod.skypeforbusiness.us | 1 Hour | 
 
 ### <a name="srv-records"></a>SRV レコード
 
-| 種類 | サービス | プロトコル | ポート | 太さ | 優先度 | 名前 | Target | TTL |
+| 型 | サービス | プロトコル | ポート | 太さ | 優先度 | Name | Target | TTL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | SRV | \_sip | \_tls | 443 | 1 | 100 | @ | sipdir.online.dod.skypeforbusiness.us | 1 Hour |
 | SRV | \_sipfederationtls | \_tcp | 5061 | 1 | 100 | @ | sipfed.online.dod.skypeforbusiness.us | 1 Hour |

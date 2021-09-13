@@ -21,11 +21,11 @@ ms.custom:
 - seo-marvel-apr2020
 description: 電子情報開示ケースに関連付けられているすべてのホールドに関する情報を含むレポートを生成する方法について説明します。
 ms.openlocfilehash: 5ccb74960a7b0d051b0c7754710f35e81b3edae0
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572049"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189830"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases"></a>電子情報開示ケースの保留リストのレポートを作成する
 

@@ -17,11 +17,11 @@ search.appverid:
 - MET150
 description: 大規模なケースを使用Advanced eDiscovery、アイテムを追加してセットを確認し、その他の制限を増やします。
 ms.openlocfilehash: 43211dbeed7621de64d696e21fa647d5023350bb
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565486"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191590"
 ---
 # <a name="use-large-cases-in-advanced-ediscovery-preview"></a>大規模なケースを使用してAdvanced eDiscovery (プレビュー)
 

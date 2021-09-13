@@ -12,12 +12,12 @@ ms.custom: ''
 search.appverid: ''
 localization_priority: Normal
 description: 組織のユーザー向け試用版パイロット プログラムを計画Microsoft Viva トピックする方法について学習します。
-ms.openlocfilehash: 529d201203c45a5b3f39d1c6ac0f1a3a7f691aaba23098dafc32a42911247aca
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 783c84e0b7d14c51269672bc49902f02bdedd0e3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53834685"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189530"
 ---
 # <a name="run-a-trial-of-microsoft-viva-topics"></a>テストの試用版を実行Microsoft Viva トピック
 
@@ -54,7 +54,7 @@ ms.locfileid: "53834685"
 
 計画は、ビバ トピックスの効果的な試用に不可欠です。 試用期間には制限があり、トピックの検出とトピックの品質、管理、およびエンド ユーザー エクスペリエンスの探索を含める必要があります。
 
-#### <a name="discovery"></a>検出
+#### <a name="discovery"></a>Discovery
 
 試用版中のトピック検出の構成には、次の 2 つの大きな戦略オプションがあります。
 
@@ -74,7 +74,7 @@ ms.locfileid: "53834685"
 > [!NOTE]
 > AI で必要なドキュメントの数が原因で、実稼働テナントでビバ トピックスの試用版を実行することをお勧めします。 この期間中のテナントのパフォーマンスに影響はありません。 試用版ライセンスを持つユーザーだけが、Viva Topics ユーザー エクスペリエンスにアクセスできます。
 
-#### <a name="roles"></a>Roles
+#### <a name="roles"></a>役割
 
 試用版では、次の表に示す 3 つの役割をアクティブにする必要があります。
 

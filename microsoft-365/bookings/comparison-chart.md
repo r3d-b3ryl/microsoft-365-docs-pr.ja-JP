@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: d586eb28-b752-4c46-bf92-00a0c5ad781d
 description: Bookings Web アプリと Bookings Web アプリの機能の違いを示す比較Teamsです。
-ms.openlocfilehash: 4c236afb4fd62bf1ebdcc543298dee53cb4b854a66f7770f33724c115da70e0b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: de207f2f194fff07fcc07f2f278d4a2135d4585b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53797172"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190590"
 ---
 # <a name="comparison-chart-bookings-web-app-vs-bookings-teams-app"></a>比較グラフ: Bookings Web app vs. Bookings Teamsアプリ
 

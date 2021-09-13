@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コンプライアンス マネージャーのクイック スタート ガイドを使用して、コンプライアンス マネージャーの理解、セットアップ、および使用に関するジャーニーを支援します。
-ms.openlocfilehash: 28e6763947e04f5c0f924f8c832de34a47dcf7ab32ec3e8e9bba14fddb7976ad
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 59d833c74c0d56d82d3f4ae4170e1bbd32638a49
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53872003"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189951"
 ---
 # <a name="compliance-manager-quickstart"></a>コンプライアンスマネージャー用クイックスタート
 

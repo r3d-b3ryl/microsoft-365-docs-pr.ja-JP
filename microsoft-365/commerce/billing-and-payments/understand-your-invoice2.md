@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: ビジネス請求書または請求書の請求、請求、支払Microsoft 365支払い情報、および発注書番号の変更方法を解釈します。
 ms.date: 05/04/2021
-ms.openlocfilehash: 996c1856eebb378531670bbb8f28f64bcdb409bddce2a089aa70e008a12f81bc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8881129b6d7013c731dbcb24ebd5f8e21e410b93
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53856366"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190440"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Microsoft 365 for Business の課金内容または請求書を理解する
 

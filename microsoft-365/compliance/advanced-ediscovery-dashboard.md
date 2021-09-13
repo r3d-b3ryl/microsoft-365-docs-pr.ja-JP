@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: ''
 description: レビュー セットAdvanced eDiscoveryダッシュボードを使用して、コーパスをすばやく分析し、レビュー戦略の策定に役立つ傾向や主要な統計を特定します。
 ms.openlocfilehash: 6466e33964969d6cd75addba7092ee95e0c321ef
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565520"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191591"
 ---
 # <a name="advanced-ediscovery-dashboard-for-review-sets"></a>Advanced eDiscoveryのダッシュボード
 

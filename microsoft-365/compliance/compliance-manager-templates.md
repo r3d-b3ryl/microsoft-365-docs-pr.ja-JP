@@ -7,6 +7,7 @@ author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
+ms.custom: admindeeplinkMAC
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -14,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンス マネージャーで評価を構築するためのテンプレートを使用および管理する方法について説明します。 書式設定されたファイルを使用してテンプレートを作成Excelします。
-ms.openlocfilehash: 9031d94bfe3c9fba0ba53e23c229a6b207d0e4b2
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 2118f527cafe97153b9a8185da6d12d8f6f3d9da
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567062"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189911"
 ---
 # <a name="working-with-assessment-templates-in-compliance-manager"></a>コンプライアンス マネージャーでの評価テンプレートの操作
 
@@ -86,7 +87,7 @@ GCC高いアカウントと DOD アカウントは、ボリューム ライセ�
 
 購入したプレミアム テンプレートに評価をリンクすると、そのテンプレートは 1 年間アクティブになります。 キャンセルしない限り、購入は自動的に更新されます。
 
-また、プレミアム テンプレートを試用することもできます。 試用版ライセンスは、30 日間、最大 25 のテンプレートに対して良好です。 試用版が開始すると、テンプレートは 48 時間以内にテナントで利用できる必要があります。 試用版は、ライセンスを使用してMicrosoft 365 管理センター。
+また、プレミアム テンプレートを試用することもできます。 試用版ライセンスは、30 日間、最大 25 のテンプレートに対して良好です。 試用版が開始すると、テンプレートは 48 時間以内にテナントで利用できる必要があります。 試用版は、ライセンスを使用してアクティブ<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター。</a>
 
 #### <a name="activated-templates-counter"></a>アクティブ化されたテンプレート カウンター
 

@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 1d5771be82c687144759fd321dfc44b8c6158d57
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58684198"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190931"
 ---
 # <a name="list-software-version-distribution"></a>ソフトウェア バージョンの配布を一覧表示する
 
@@ -46,7 +46,7 @@ ms.locfileid: "58684198"
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
 アプリケーション|Software.Read.All|'脅威と脆弱性管理ソフトウェア情報の読み取り'
-委任 (職場または学校のアカウント)|Software.Read|'脅威と脆弱性管理ソフトウェア情報の読み取り'
+委任 (職場または学校アカウント)|Software.Read|'脅威と脆弱性管理ソフトウェア情報の読み取り'
 
 ## <a name="http-request"></a>HTTP 要求
 

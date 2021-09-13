@@ -1,5 +1,5 @@
 ---
-title: インシデントのMicrosoft 365 Defender
+title: インシデント対応とMicrosoft 365 Defender
 description: ポータル内のデバイス、ユーザー、メールボックス間で発生したインシデントMicrosoft 365 Defenderします。
 keywords: インシデント、アラート、調査、分析、応答、相関関係、攻撃、コンピューター、デバイス、ユーザー、ID、ID、メールボックス、電子メール、365、microsoft、m365、インシデント対応、サイバー攻撃
 search.product: eADQiWindows 10XVcnh
@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f6a874f263290913a5a7b1d25a16eb1c75938eb3
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.openlocfilehash: 6f55e1a30f61b8ed41ec2575b26a9346ba45cafd
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58864004"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192480"
 ---
-# <a name="incidents-in-microsoft-365-defender"></a>インシデントのMicrosoft 365 Defender
+# <a name="incident-response-with-microsoft-365-defender"></a>インシデント対応とMicrosoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 

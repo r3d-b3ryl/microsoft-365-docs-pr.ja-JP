@@ -20,11 +20,11 @@ ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
 ms.custom: seo-marvel-apr2020
 description: PST ファイルをインポートする際に、Microsoft 365 インポート サービスのインテリジェント インポート機能を使用してデータをフィルター処理するMicrosoft 365。
 ms.openlocfilehash: b893c0678d2821855bfc09ee703e3aa4cb8119cb
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569071"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191491"
 ---
 # <a name="filter-data-when-importing-pst-files"></a>PST ファイルをインポートするときに、データをフィルター処理する
 

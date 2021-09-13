@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 0ca1bc84d5e8cf5498ed3dc19cba3928823796ff
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58684102"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190981"
 ---
 # <a name="remediation-activity-methods-and-properties"></a>修復アクティビティのメソッドとプロパティ
 
@@ -58,19 +58,17 @@ API 応答には、テナント [& 脆弱性の管理](next-gen-threat-and-vul
 :---|:---|:---
 category|String|修復アクティビティのカテゴリ (ソフトウェア/セキュリティ構成)
 completerEmail|String|修復アクティビティが手動で誰かが完了した場合、この列には自分のメールが含まれる
-completerId|文字列|修復アクティビティが手動で誰かが完了した場合、この列にはオブジェクト ID が含まれる
-completionMethod|文字列|修復アクティビティは、"完了済みとしてマーク" を選択したユーザーが "自動的に" (すべてのデバイスにパッチが適用されている場合) または "手動" で完了できます。
-createdOn|DateTime
-|この修復アクティビティが作成された時刻
+completerId|String|修復アクティビティが手動で誰かが完了した場合、この列にはオブジェクト ID が含まれる
+completionMethod|String|修復アクティビティは、"完了済みとしてマーク" を選択したユーザーが "自動的に" (すべてのデバイスにパッチが適用されている場合) または "手動" で完了できます。
+createdOn|DateTime|この修復アクティビティが作成された時刻
 説明|String|この修復アクティビティの説明
-dueOn|DateTime
-|この修復アクティビティの作成者セットの期限
+dueOn|DateTime|この修復アクティビティの作成者セットの期限
 fixedDevices||固定されているデバイスの数
-id|文字列|この修復アクティビティの ID
-nameId|文字列|関連する製品名
+id|String|この修復アクティビティの ID
+nameId|String|関連する製品名
 priority|String|この修復アクティビティの作成者セットの優先度 (High\Medium\Low)
-productId|文字列|関連する製品 ID
-productivityImpactRemediationType|文字列|いくつかの構成変更は、ユーザーに影響がないデバイスに対してだけ要求できます。 この値は、「すべての公開デバイス」または「ユーザーに影響を与えないデバイスのみ」の選択を示します。
+productId|String|関連する製品 ID
+productivityImpactRemediationType|String|いくつかの構成変更は、ユーザーに影響がないデバイスに対してだけ要求できます。 この値は、「すべての公開デバイス」または「ユーザーに影響を与えないデバイスのみ」の選択を示します。
 rbacGroupNames|String|関連するデバイス グループ名
 recommendedProgram|String|にアップグレードする推奨プログラム
 recommendedVendor|String|アップグレードの推奨ベンダー
@@ -81,8 +79,7 @@ requesterId|String|Creator オブジェクト ID
 requesterNotes|String|この修復アクティビティに作成者が追加したメモ (フリー テキスト)
 scid|String|関連するセキュリティ推奨事項の SCID
 status|String|修復アクティビティの状態 (アクティブ/完了)
-statusLastModifiedOn|DateTime
-|状態フィールドが更新された日付
+statusLastModifiedOn|DateTime|状態フィールドが更新された日付
 targetDevices|Long|この修復が適用される公開デバイスの数
 title|String|この修復アクティビティのタイトル
 type|String|修復の種類

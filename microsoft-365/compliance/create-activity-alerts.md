@@ -19,11 +19,11 @@ ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 ROBOTS: NOINDEX, NOFOLLOW
 description: ユーザーが特定のアクティビティを実行するときにMicrosoft 365 コンプライアンス センター通知Microsoft 365通知を送信するためのアクティビティ通知を追加および管理する
 ms.openlocfilehash: 85362983749659bd6193e59b85e1d8f9eddaf83e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573285"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189821"
 ---
 # <a name="create-activity-alerts"></a>アクティビティアラートの作成
 

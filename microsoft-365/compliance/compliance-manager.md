@@ -18,11 +18,11 @@ search.appverid:
 - MET150
 description: Microsoft Compliance Manager は、組織がリスク評価を簡素化および自動化するのに役立ち、リスクに対処するために推奨されるアクションを提案します。
 ms.openlocfilehash: e0e8d4595f883f33dc7714cd41c8cb49002321a1
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58556398"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189910"
 ---
 # <a name="microsoft-compliance-manager"></a>Microsoft コンプライアンス マネージャー
 

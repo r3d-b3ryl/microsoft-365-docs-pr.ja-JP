@@ -13,11 +13,11 @@ localization_priority: None
 ROBOTS: ''
 description: ソリューションを使用して、SharePoint Syntexファイルを識別し、データを抽出する方法についてMicrosoft 365します。
 ms.openlocfilehash: f6097a7573037f8efc2467bb3a9f1037a12bf7ef
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58561424"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189730"
 ---
 # <a name="step-1-use-sharepoint-syntex-to-identify-contract-files-and-extract-data"></a>手順 1. 契約ファイルSharePoint Syntexデータの抽出に使用する方法
 

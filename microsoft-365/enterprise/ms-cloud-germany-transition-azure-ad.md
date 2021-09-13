@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Azure Active Directory Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツのデータセンター地域Office 365サービスに移行する際の追加情報。'
-ms.openlocfilehash: 07273a12ffe0150714db100da6a4862e4715a6e3f203f9d673f202b9b5e27a13
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 88a151b61a93b4b65e16bbd100a126d44282e513
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53858509"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191230"
 ---
 # <a name="additional-azure-active-directory-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Microsoft Cloud deutschland Azure Active Directory移行に関する追加情報
 
@@ -123,7 +123,7 @@ Azure の追加の考慮事項を次に示AD。
 
 - テナントの移行が完了すると、Office 365 ドイツ のポータルと Office 365 ポータルの Azure AD Connect のバージョンに関する警告が表示されます。 移行の完了後にバージョンの警告が警告を表示しなくなった場合は、これを無視できます。 移行の前または移行後に、いずれかのポータルで警告が表示される場合は、Azure AD Connect更新する必要があります。 警告メッセージには、「古いディレクトリ同期ツールを使用しているのが検出されました。 Microsoft ダウンロード センターにアクセスして、Azure の最新バージョンを取得することをお勧AD Connect。
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 はじめに:
 

@@ -20,12 +20,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: サード パーティ製のデータ Microsoft 365 API を使用してコンプライアンス ソリューションを拡張する方法Graph説明します。
-ms.openlocfilehash: df3fcf74fb7e042bb13d482fe4433c36dc4c4896c15d094ffb5f408dd3925908
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1fed5ac72c7dbfa4b1be370ec03678e1beecdcd2
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53892269"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190010"
 ---
 # <a name="microsoft-365-compliance-extensibility"></a>Microsoft 365の拡張性
 

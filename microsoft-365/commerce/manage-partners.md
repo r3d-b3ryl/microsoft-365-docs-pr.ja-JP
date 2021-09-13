@@ -16,15 +16,16 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
+- admindeeplinkMAC
 search.appverid: MET150
 description: Microsoft 認定ソリューション プロバイダー (パートナー) と連携して、組織または学校の製品とサービスを購入および管理する方法について説明します。
 ms.date: 04/13/2021
-ms.openlocfilehash: 024f8c4154c4e646a5a72fbc0d1b0f980b8b5c8eb854e723d84dc0f5f464911c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f7fd5cda68ce5312f284e7f86e1cfbd3716cc8d4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53809102"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190271"
 ---
 # <a name="manage-partner-relationships"></a>パートナー関係の管理
 
@@ -34,9 +35,9 @@ Microsoft 認定ソリューション プロバイダー (パートナー) と�
 2. パートナーは、パートナー関係を確立するために顧客に電子メール要求を送信します。
 3. 顧客は招待を受け入Microsoft 365 管理センターパートナーとの作業を開始します。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
-これらの手順を実行するには、グローバル管理者または課金管理者である必要があります。 詳細については、「[管理者の役割について](../admin/add-users/about-admin-roles.md)」を参照してください。
+これらの手順を実行するには、グローバル管理者または課金管理者である必要があります。 詳細については、[「管理者の役割について」](../admin/add-users/about-admin-roles.md) を参照してください。
 
 ## <a name="what-can-a-partner-do-for-my-organization-or-school"></a>パートナーが自分の組織や学校に対して何ができますか?
 
@@ -65,7 +66,7 @@ Microsoft 認定ソリューション プロバイダー (パートナー) と�
 
 パートナーを見つけて、パートナーと一緒に作業すると、招待メールが送信されます。
 
-1. 電子メールで、リンクを選択して、メール に移動Microsoft 365 管理センター。
+1. 電子メールで、リンクを選択して [メール] に<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">移動</a>Microsoft 365 管理センター。
 2. [パートナー **の承認&同意** する] ページで **、Microsoft カスタマー** 契約のリンクを選択し、ドキュメントを読み取ります。
 3. このボックスをオンにして、契約を読んだと確認します。
 4. [承認 **する] &を選択します**。

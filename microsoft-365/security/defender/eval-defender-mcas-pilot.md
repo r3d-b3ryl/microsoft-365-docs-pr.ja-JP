@@ -22,11 +22,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: d0d452c0e9a5dbc3a9060c42921f180da7c42b90
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575926"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189260"
 ---
 # <a name="pilot-microsoft-cloud-app-security-with-microsoft-365-defender"></a>パイロット Microsoft Cloud App SecurityとMicrosoft 365 Defender
 
@@ -46,7 +46,7 @@ ms.locfileid: "58575926"
 - [手順 3.機能を試す - 環境を保護するためのチュートリアルの詳細](#step-3-try-out-capabilities--walk-through-tutorials-for-protecting-your-environment) 
 
 
-## <a name="step-1-create-the-pilot-group--scope-your-pilot-deployment-to-certain-user-groups"></a>手順 1. パイロット グループの作成 - パイロット展開を特定のユーザー グループにスコープ設定する
+## <a name="step-1-create-the-pilot-group--scope-your-pilot-deployment-to-certain-user-groups"></a>手順 1。 パイロット グループの作成 - パイロット展開を特定のユーザー グループにスコープ設定する
 
 Microsoft Cloud App Securityを使用すると、展開の範囲を指定できます。 スコープを使用すると、アプリの監視対象または監視から除外する特定のユーザー グループを選択できます。 ユーザー グループを含めるか除外できます。 パイロット展開の範囲を設定するには [、「Scoped Deployment」を参照してください](/cloud-app-security/scoped-deployment)。
 

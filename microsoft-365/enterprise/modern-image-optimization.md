@@ -22,11 +22,11 @@ search.appverid:
 - MET150
 description: SharePoint Online に含まれるツールを使用して、SharePointモダン サイト ページの画像を最適化する方法について学習します。
 ms.openlocfilehash: 0bc9132a890c25804fa262bd494452db702d2a06
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570067"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189600"
 ---
 # <a name="optimize-images-in-sharepoint-online-modern-site-pages"></a>SharePoint Online のモダン サイト ページで画像を最適化する
 

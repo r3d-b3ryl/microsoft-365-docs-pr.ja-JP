@@ -20,11 +20,11 @@ ms.custom:
 - seo-marvel-apr2020
 description: レポートを使用して組織の既定のデータ損失防止 (DLP) ポリシーを絞り込む方法について学習します。
 ms.openlocfilehash: 95c4ebae431bea1db033826459ca1595614ab5cb
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569575"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191431"
 ---
 # <a name="get-started-with-the-default-dlp-policy"></a>既定の DLP ポリシーの使用を開始する
 

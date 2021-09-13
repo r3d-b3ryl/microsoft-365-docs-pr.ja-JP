@@ -17,11 +17,11 @@ ms.collection:
 - m365initiative-compliance
 - m365solution-scenario
 ms.openlocfilehash: a0f806da62378ca21c1693fd96105bb89eaf5708
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570835"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191381"
 ---
 # <a name="information-barriers-in-microsoft-365"></a>データの情報Microsoft 365
 

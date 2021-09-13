@@ -15,11 +15,11 @@ ms.collection:
 ms.custom: ''
 description: 架空の代表的なグローバル組織が企業に対してどのようにMicrosoft 365採用したのか。
 ms.openlocfilehash: 90d8e0c9d0cd81d415fc8ca9751b0cecd4331623
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354334"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189680"
 ---
 # <a name="microsoft-365-for-enterprise-for-the-contoso-corporation"></a>Microsoft 365 Contoso Corporation のエンタープライズ向けサービス
 
@@ -92,6 +92,6 @@ Contoso Corporation は、パリに本社を置く架空の代表的なグロー
 
 ## <a name="see-also"></a>関連項目
 
-[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
+[Microsoft 365 for Enterprise の概要](microsoft-365-overview.md)
 
 [テスト ラボ ガイド](m365-enterprise-test-lab-guides.md)

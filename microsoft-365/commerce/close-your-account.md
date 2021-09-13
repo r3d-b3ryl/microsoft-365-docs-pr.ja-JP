@@ -21,18 +21,18 @@ ms.custom:
 search.appverid: MET150
 description: Microsoft でアカウントを閉じると、アカウントに関連する情報 (ライセンス、ユーザー、ユーザー データなど) が削除されます。
 ms.date: 04/02/2021
-ms.openlocfilehash: 0693f592c36e39687b78587b384a193fde7cd6879a69628c1818bafed7420ef5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f46a35ca9a8b4ca0a68a3260f1a79bbf3717b552
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53893153"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190371"
 ---
 # <a name="close-your-account"></a>アカウントの使用を停止する
 
 Microsoft でのアカウントの使用を停止すると、アカウントに関連するすべての情報が削除されます。 この情報には、サブスクリプション、ライセンス、支払方法、ユーザー、ユーザー データが含まれます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 このプロセスを開始する前に、保持する必要があるすべてのデータをバックアップしてください。
 
@@ -53,7 +53,7 @@ Microsoft でのアカウントの使用を停止すると、アカウントに�
 ## <a name="step-2-cancel-all-active-subscriptions"></a>手順 2: すべてのアクティブなサブスクリプションをキャンセルする
 
 1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品]</a> ページの順に移動します。
-2. [製品 **] タブ** で、アクティブなサブスクリプションを探します。 3 つのドット(他のアクション) を選択してから、**[サブスクリプションのキャンセル]** を選択します。
+2. [製品 **] タブ** で、アクティブなサブスクリプションを探します。 3 つのドット(その他の操作) を選択してから、**[サブスクリプションのキャンセル]** を選択します。
 3. **[サブスクリプションのキャンセル]** ウィンドウで、キャンセルする理由を選択します。必要に応じて、フィードバックを提供します。
 4. **[保存]** を選択します。
 5. 手順 1 ~ 4 を繰り返して、アクティブなすべてのサブスクリプションを取り消します。

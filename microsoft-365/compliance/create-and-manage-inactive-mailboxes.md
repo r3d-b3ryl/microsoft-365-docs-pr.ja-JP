@@ -19,13 +19,14 @@ search.appverid:
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkMAC
 description: 削除されたメールボックスの内容を保持するには、削除されたメールボックスの非アクティブなメールボックス機能を使用Microsoft 365。
-ms.openlocfilehash: f0e95d5853580116db6f7c48396e601058e303e3
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 95548710e0a0f737deec6e5dc49ebc217c9ac50c
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567774"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189801"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>非アクティブなメールボックスを作成および管理する
 
@@ -65,7 +66,7 @@ Microsoft 365 では、削除済みメールボックスのコンテンツを保
   
 ### <a name="step-2-delete-the-mailbox"></a>手順 2:メールボックスを削除する
 
-メールボックスをホールドの対象にするか、アイテム保持ポリシーをそれに適用したら、次の手順としてそのメールボックスを削除します。 メールボックスを削除する最善の方法は、Microsoft 365 管理センターで対応するユーザー アカウントを削除することです。 ユーザー アカウントの削除については、「[組織からユーザーを削除する](../admin/add-users/delete-a-user.md)」を参照してください。
+メールボックスをホールドの対象にするか、アイテム保持ポリシーをそれに適用したら、次の手順としてそのメールボックスを削除します。 メールボックスを削除する最善の方法は、メールボックス内の対応するユーザー<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">アカウントを削除Microsoft 365 管理センター。</a> ユーザー アカウントの削除については、「[組織からユーザーを削除する](../admin/add-users/delete-a-user.md)」を参照してください。
   
 > [!NOTE]
 > Exchange Online PowerShell で **Remove-Mailbox** コマンドレットを使用してメールボックスを削除することもできます。 詳細については、「[Exchange Online のユーザー メールボックスを削除または復元する](/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes)」を参照してください。 
@@ -74,9 +75,9 @@ Microsoft 365 では、削除済みメールボックスのコンテンツを保
 
 組織内の非アクティブなメールボックスの一覧を表示するには:
 
-1. 組織のグローバル管理者またはコンプライアンス管理者アカウントの資格情報を使用して、アクセスして <https://compliance.microsoft.com> サインインします。
+1. [管理者] <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>に移動し、組織のグローバル管理者またはコンプライアンス管理者アカウントの資格情報を使用してサインインします。
 
-2. ページの左側のナビゲーション ウィンドウMicrosoft 365 コンプライアンス センター [すべて表示]をクリックし、[情報ガバナンスと保持] **>クリックします**。
+2. 左側のナビゲーション ウィンドウで、[すべて表示]**を** クリックし、[情報ガバナンスの保持 **] を**  >  **クリックします**。
 
    ![[保持] ページの [非アクティブなメールボックス] ボタンをクリックします。](../media/MCCInactiveMailboxes1.png)
 

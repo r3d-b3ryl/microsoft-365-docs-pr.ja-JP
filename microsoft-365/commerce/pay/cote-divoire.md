@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 09b4b760420ce2cea2464b4ac3a8718651128440bb153e216781304a3ded6922
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 71df286bf62f5a5acfe73e84313f323932123cef
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53887297"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190230"
 ---
 # <a name="payment-information-for-cte-divoire"></a>コートジボワールの支払い情報
 

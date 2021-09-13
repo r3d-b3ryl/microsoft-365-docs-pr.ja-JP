@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 22c1bfa596ffda313b26f88904042c74ddf79998e493593d8755b84e03d776b2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: efc83c637330c556724699c272cc0c2bd90f0982
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53796924"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190251"
 ---
 # <a name="payment-information-for-colombia"></a>コロンビアのお支払い情報
 

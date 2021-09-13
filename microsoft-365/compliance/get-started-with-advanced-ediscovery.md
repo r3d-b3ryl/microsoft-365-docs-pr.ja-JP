@@ -20,11 +20,11 @@ search.appverid:
 - MET150
 description: この記事では、ケースの作成と管理を開始Advanced eDiscoveryを設定する方法について説明します。 また、必要な Microsoft サブスクリプションとライセンスも説明します。 いくつかの簡単な手順を完了すると、Advanced eDiscoveryツールを使用する準備が整いました。
 ms.openlocfilehash: 42ff8a7ef49949b9061972f08ebafeebd6d1a85d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570847"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191471"
 ---
 # <a name="set-up-microsoft-365-advanced-ediscovery"></a>設定Microsoft 365 Advanced eDiscovery
 

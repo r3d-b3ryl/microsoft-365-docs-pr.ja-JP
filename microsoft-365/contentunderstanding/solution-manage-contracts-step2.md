@@ -13,11 +13,11 @@ localization_priority: None
 ROBOTS: ''
 description: カスタム ソリューションを使用してMicrosoft Teams管理チャネルを作成する方法について説明Microsoft 365します。
 ms.openlocfilehash: bafce28689e4340c3ff73694d150bac294a95b5a
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532873"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189721"
 ---
 # <a name="step-2-use-microsoft-teams-to-create-your-contract-management-channel"></a>手順 2。 契約Microsoft Teamsチャネルを作成するには、次の情報を使用します。
 

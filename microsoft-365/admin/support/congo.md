@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b6c09574e96b574e2b872bcdd78609df176ec5323f9909f72db78bb9b091f97b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e2f74fa9e28003c64f55870e8389cef6a2751625
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838345"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190800"
 ---
 # <a name="contact-support-for-congo"></a>コンゴ共和国のサポートに問い合わせ
 

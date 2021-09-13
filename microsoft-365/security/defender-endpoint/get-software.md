@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 110b86974badde65450f4264daf9373f46f8993d
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58350030"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190921"
 ---
 # <a name="list-software-inventory-api"></a>ソフトウェア インベントリ API の一覧表示
 
@@ -52,7 +52,7 @@ ms.locfileid: "58350030"
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
 アプリケーション|Software.Read.All|'脅威と脆弱性管理ソフトウェア情報の読み取り'
-委任 (職場または学校のアカウント)|Software.Read|'脅威と脆弱性管理ソフトウェア情報の読み取り'
+委任 (職場または学校アカウント)|Software.Read|'脅威と脆弱性管理ソフトウェア情報の読み取り'
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -62,7 +62,7 @@ GET /api/Software
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**
 

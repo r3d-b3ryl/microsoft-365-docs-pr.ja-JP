@@ -18,11 +18,11 @@ search.appverid:
 - MET150
 description: コア電子情報開示の使用を開始する方法についてMicrosoft 365。 電子情報開示のアクセス許可を割り当て、ケースを作成したら、メンバーの追加、電子情報開示ホールドの作成、調査に関連するコンテンツの検索とエクスポートを行います。
 ms.openlocfilehash: d1a9e68bedc77f3b74b13f438e73dcbcb83b4c8c
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569587"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191481"
 ---
 # <a name="get-started-with-core-ediscovery-in-microsoft-365"></a>コア電子情報開示の使用をMicrosoft 365
 

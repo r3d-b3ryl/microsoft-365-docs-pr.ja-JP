@@ -18,11 +18,11 @@ ms.assetid: ''
 description: Advanced eDiscovery グループでのチャット会話の再構築、レビュー、エクスポートを行う Advanced eDiscovery での会話の再構築機能についてMicrosoft TeamsおよびYammerします。
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: 62ebfc054db260fd5e41fec3809ba1efdf46b44b
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569623"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191581"
 ---
 # <a name="conversation-threading-in-advanced-ediscovery"></a>スレッド内のスレッドAdvanced eDiscovery
 

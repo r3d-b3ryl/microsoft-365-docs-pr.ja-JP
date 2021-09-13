@@ -21,11 +21,11 @@ description: 管理者は、セキュリティ設定を昇格し、組織の優�
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: e2fc9c95389bd72ebea11dcfe808101a6ca5ab40
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58576046"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189060"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>優先アカウントのセキュリティMicrosoft 365
 

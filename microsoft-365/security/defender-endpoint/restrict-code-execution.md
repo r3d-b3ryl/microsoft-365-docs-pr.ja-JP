@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: bd43fc2bfb8ef83eff988481a87dd48b1b53566b
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58350018"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189400"
 ---
 # <a name="restrict-app-execution-api"></a>アプリの実行 API の制限
 
@@ -63,7 +63,7 @@ ms.locfileid: "58350018"
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
 アプリケーション|Machine.RestrictExecution|'コードの実行を制限する'
-委任 (職場または学校のアカウント)|Machine.RestrictExecution|'コードの実行を制限する'
+委任 (職場または学校アカウント)|Machine.RestrictExecution|'コードの実行を制限する'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
@@ -79,7 +79,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/restrictCodeExec
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**
 Content-Type|string|application/json. **必須**
@@ -88,7 +88,7 @@ Content-Type|string|application/json. **必須**
 
 要求本文で、JSON オブジェクトに次のパラメーターを指定します。
 
-パラメーター|種類|説明
+パラメーター|型|説明
 :---|:---|:---
 コメント|文字列|アクションに関連付けるコメント。 **必須**
 

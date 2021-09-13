@@ -16,12 +16,12 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b9c9657521265890b842c910286d92c655297612f6c545c4abf12faa46e5d999
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1ef09fbf7a517950ae182472e4b4d5ef896d65e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53880197"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191380"
 ---
 # <a name="learn-about-information-barriers-in-microsoft-365"></a>情報バリアについて詳しくは、Microsoft 365
 

@@ -17,11 +17,11 @@ f1.keywords:
 description: データ移動は、Microsoft がテナントのサービスと関連データを新しいデータセンター geo に移動するときに発生するバック エンド操作です。
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: d2c78ace4fb25d060ecaeab96903ba577a1d7316
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394398"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189640"
 ---
 # <a name="during-and-after-your-data-move"></a>データの移行中および移行後
 
@@ -116,7 +116,7 @@ TeamsファイルはオンラインにSharePointされTeamsチャット ファ�
 
 ## <a name="skype-for-business"></a>Skype for Business
 
-Skype for Business移動は使用できなくなりました。  [Skype for Businessオンラインは](/lifecycle/announcements/skype-for-business-online-retirement)2021 年 7 月 31 日に廃止されます。 その後、サービスにアクセスできなくなりました。 
+Skype for Business移動は使用できなくなりました。  [Skype for Businessオンラインは](/lifecycle/announcements/skype-for-business-online-retirement)2021 年 7 月 31 日に廃止されます。 この日以降は、サービスにアクセスできなくなります。 
   
 ## <a name="related-topics"></a>関連項目 
  

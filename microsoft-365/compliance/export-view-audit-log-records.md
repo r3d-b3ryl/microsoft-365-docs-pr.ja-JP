@@ -19,11 +19,11 @@ ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 ms.custom: seo-marvel-apr2020
 description: この記事では、監査ログ レコードのエクスポート、構成、およびMicrosoft 365について学習します。
 ms.openlocfilehash: 33bcf3ee79a7ee27cc87825458d7d98cda590773
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567014"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191541"
 ---
 # <a name="export-configure-and-view-audit-log-records"></a>監査ログ レコードをエクスポート、構成、表示する
 
@@ -96,7 +96,7 @@ ms.locfileid: "58567014"
 
     - [元の **列名をプレフィックスとして** 使用する] チェック ボックスをオンのままにして、列名に AuditData プレフィックスを追加します。たとえば **、AuditData.RecordType または** **AuditData.SourceFileName** などです。
 
-9. **[OK]** をクリックします。
+9. [**OK**] をクリックします。
 
     **AuditData 列** は複数の列に分割されます。 新しい各列は、AuditData JSON オブジェクトのプロパティに対応します。 列の各行には、プロパティの値が含まれる。 プロパティに値が含まれている場合は *、null 値が* 表示されます。 このExcel、null 値を持つセルは空です。
   

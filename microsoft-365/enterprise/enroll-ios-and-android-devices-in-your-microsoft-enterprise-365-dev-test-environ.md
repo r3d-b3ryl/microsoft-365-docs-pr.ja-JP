@@ -15,11 +15,11 @@ ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
 description: このテスト ラボ ガイドを使用して、デバイスをテスト環境に登録Microsoft 365リモートで管理します。
 ms.openlocfilehash: 5e27f2eecc9edda0a0fe7225d4ed47c7431eee77
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568386"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189630"
 ---
 # <a name="enroll-ios-and-android-devices-in-your-microsoft-365-for-enterprise-test-environment"></a>エンタープライズ テスト環境用に iOS Microsoft 365 Android デバイスを登録する
 
@@ -80,4 +80,4 @@ Microsoft Intune、リモート ロックとパスコードのリセット機能
   
 [エンタープライズ テスト環境Microsoft 365デバイス コンプライアンス ポリシー](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
   
-[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
+[Microsoft 365 for Enterprise の概要](microsoft-365-overview.md)

@@ -13,11 +13,11 @@ localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: 2555070438ead608b470f3291bd74dea0b657543
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572121"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190841"
 ---
 # <a name="contact-support-for-china-prc"></a>中国 (PRC) のサポートに問い合わせ
 

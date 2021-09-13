@@ -21,11 +21,11 @@ ms.collection:
 ms.topic: article
 ms.technology: m365d
 ms.openlocfilehash: 9d6b786076a218a5257bbd12669f62064ae51f2a
-ms.sourcegitcommit: b05b107774e8bca36c9ee19fdc4719d17e302f11
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58483966"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189150"
 ---
 # <a name="use-power-automate-in-microsoft-365-defender"></a>[Power AutomateでMicrosoft 365 Defender
 

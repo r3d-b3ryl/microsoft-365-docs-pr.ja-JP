@@ -22,11 +22,11 @@ search.appverid:
 - MET150
 description: ページ診断ツールを使用して、オンラインモダン サイト ページでページの重SharePointする方法について説明します。
 ms.openlocfilehash: 04c3e94abef062bbd37db268da56f21c2dd7dc65
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573105"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189590"
 ---
 # <a name="optimize-page-weight-in-sharepoint-online-modern-site-pages"></a>SharePoint Online の最新のサイト ページでページのウエイトを最適化する
 

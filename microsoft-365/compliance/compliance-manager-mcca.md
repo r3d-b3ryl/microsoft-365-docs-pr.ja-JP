@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: Microsoft コンプライアンス構成アナライザーを使用して、Microsoft コンプライアンス マネージャーを使用して迅速に立ち上げ、実行する方法について説明します。
 ms.openlocfilehash: 9bf88a79de07accbf8487f09f642324efcbaf086
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572073"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189960"
 ---
 # <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>コンプライアンス マネージャー用 Microsoft コンプライアンス構成アナライザー (プレビュー)
 
@@ -48,7 +48,7 @@ MCCA をインストールするには、まず管理者モードで PowerShell 
 
 1. [スタート] ボタンWindows **選択** します。
 2. **「PowerShell」と** 入力し、[**管理者として実行** Windows PowerShellを選択します **。**
-1. コマンド プロンプトで、次のコマンドを入力します。
+1. コマンド プロンプトに次のコマンドを入力します。
 
     ```powershell
     Install-Module -Name MCCAPreview
@@ -101,9 +101,9 @@ C:\Users \<username> \AppData\Local\Microsoft\MCCA。
     ```
   | Input |  国または地域 | 
   | :------------- | :------------: |
-  | 1  | アジア太平洋 |
-  | 2  | オーストラリア |
-  | 3  | カナダ |
+  | 1 | アジア太平洋 |
+  | 2 | オーストラリア |
+  | 3 | カナダ |
   | 4  | ヨーロッパ (フランスを除く) / 中東 / アフリカ |
   | 5  | フランス |
   | 6  | インド |
@@ -111,9 +111,9 @@ C:\Users \<username> \AppData\Local\Microsoft\MCCA。
   | 8  | 韓国 |
   | 9  | 北アメリカ (カナダを除く) |
   | 10  | 南アメリカ |
-  | 11  | 南アフリカ |
+  | 11 | 南アフリカ |
   | 12  | スイス |
-  | 13  | アラブ首長国連邦 |
+  | 13 | アラブ首長国連邦 |
   | 14  | 英国 |
 
 

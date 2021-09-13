@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 20a9206574565b2a02e1dcf57545e7b40619beec212daf29d6d2cc571e08dffb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ae2e7fb960dd8ce2a42ce62fe0b8da7675e00ce5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53867753"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189350"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>高度な検索クエリのベスト プラクティス
 
@@ -254,7 +254,7 @@ SHA256,ThreatTypes,DetectionMethods
 ### <a name="parse-strings"></a>文字列の解析
 解析または変換が必要な文字列を効率的に処理するために使用できるさまざまな関数があります。
 
-| String | 職務 | 使用例 |
+| String | 関数 | 使用例 |
 |--|--|--|
 | コマンド ライン | [parse_command_line()](/azure/data-explorer/kusto/query/parse-command-line) | コマンドとすべての引数を抽出します。 |
 | Paths | [parse_path()](/azure/data-explorer/kusto/query/parsepathfunction) | ファイルパスまたはフォルダー パスのセクションを抽出します。 |
@@ -267,7 +267,7 @@ SHA256,ThreatTypes,DetectionMethods
 >[!NOTE]
 >この記事の一部のテーブルは、Microsoft Defender for Endpoint では使用できない場合があります。 [複数のデータ Microsoft 365 Defender](m365d-enable.md)を使用して脅威を検出するには、このオプションをオンにしてください。 高度なハンティング ワークフローを Microsoft Defender for Endpoint から Microsoft 365 Defenderに移動するには、「Advanced Hunting [queries](advanced-hunting-migrate-from-mde.md)を Microsoft Defender for Endpoint から移行する」の手順に従います。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [Kusto クエリ言語のドキュメント](/azure/data-explorer/kusto/query/)
 - [クォータと使用パラメータ](advanced-hunting-limits.md)
 - [高度なハンティング エラーの処理](advanced-hunting-errors.md)

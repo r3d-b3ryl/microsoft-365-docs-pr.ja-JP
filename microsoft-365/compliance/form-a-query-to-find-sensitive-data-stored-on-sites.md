@@ -18,11 +18,11 @@ search.appverid:
 - MET150
 description: オンラインでデータ損失防止 (DLP) をSharePoint、テナント全体に機密データを含むドキュメントを検出します。
 ms.openlocfilehash: e2ecaa6b4b230db09095a9f9e5008dfdf0698043
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573225"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191490"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>サイトに保存された機密データを検索するクエリの形成
 

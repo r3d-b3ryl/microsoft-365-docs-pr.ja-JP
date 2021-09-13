@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: 独立したソフトウェア ベンダー (ISV) アプリのライセンスを管理する方法については、Microsoft 365 管理センター。
 ms.date: 06/15/2021
-ms.openlocfilehash: 360b1a954d8b34fbc91b086fdab532685438b7874f998ef4ddb8b7b07732d15a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e19277a34c896d918d545cca27b1c435ca221e6f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53887529"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190301"
 ---
 # <a name="manage-isv-app-licenses-in-the-microsoft-365-admin-center"></a>ISV アプリ のライセンスを管理するには、Microsoft 365 管理センター
 
@@ -33,7 +33,7 @@ ms.locfileid: "53887529"
 
 ## <a name="before-you-begin"></a>はじめに
 
-ライセンスを割り当てるには、グローバル、ライセンス、またはユーザー管理者である必要があります。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
+ライセンスを割り当てるには、グローバル、ライセンス、またはユーザー管理者である必要があります。 詳細については、[「管理者の役割について」](../../admin/add-users/about-admin-roles.md) を参照してください。
 
 ## <a name="assign-isv-app-licenses-to-users-or-groups"></a>ISV アプリ ライセンスをユーザーまたはグループに割り当てる
 

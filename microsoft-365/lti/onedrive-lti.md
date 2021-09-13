@@ -14,11 +14,11 @@ localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: 新しいツール相互運用性アプリを使用して、課題の作成と採点、コース コンテンツの構築とキュレーション、ファイルMicrosoft OneDrive ラーニング共同作業を行います。
 ms.openlocfilehash: e67e772ce8ef460075729b34bc7da86d486c51e9
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58863412"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189560"
 ---
 # <a name="integrate-microsoft-onedrive-lti-with-canvas"></a>LTI Microsoft OneDriveキャンバスとの統合
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 333e69c910e5800332261f9a7a2e23983f2615d7bac13f2139604747874b40b2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c032c54f8b80114e00fcff432a0da37a9d836f35
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53867945"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189401"
 ---
 # <a name="configure-microsoft-defender-security-center-settings"></a>ユーザー設定Microsoft Defender セキュリティ センター構成する
 
@@ -31,7 +31,7 @@ ms.locfileid: "53867945"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-prefsettings-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-prefsettings-abovefoldlink)
 
 一般的な **設定** メニューを使用して、一般的な設定、高度な機能を変更し、プレビュー エクスペリエンス、電子メール通知、カスタム脅威インテリジェンス機能を有効にします。
 
@@ -40,7 +40,7 @@ ms.locfileid: "53867945"
 トピック | 説明
 :---|:---
 全般設定 | オンボーディング プロセスの一部として以前に定義された一般的な設定を変更します。
-Permissions | RBAC とデバイス グループを使用してポータル アクセスを管理します。
+アクセス許可 | RBAC とデバイス グループを使用してポータル アクセスを管理します。
 API | 脅威の Intel と SIEM の統合を有効にする。
 ルール | 抑制ルールとオートメーション設定を構成します。
 デバイスの管理 | オンボードデバイスとオフボード デバイス。

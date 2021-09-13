@@ -24,11 +24,11 @@ description: Microsoft Defender for Office 365オンライン、SharePoint、One
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: f9ab3c10292aed5f6f39a8534680cb8e9c5d3551
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572433"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189091"
 ---
 # <a name="safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>SPO、OneDrive、Teams 用の安全な添付ファイル機能
 

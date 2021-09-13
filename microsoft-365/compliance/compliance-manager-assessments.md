@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager で評価を構築し、組織にとって重要な規制と認定の要件を満たすのに役立ちます。
-ms.openlocfilehash: 296c29c61ca411a37f13118e956db7d050d54762940bf81bfbde26fc043b3d23
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7014e294454095456acdac8e2c60895c400ced3f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53814605"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190000"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>コンプライアンス マネージャーでの評価の作成と管理
 
@@ -56,7 +56,7 @@ Microsoft では、コンプライアンス マネージャーでデータ保護
 
 グループまたはグループ内の評価によって、改善アクションが共有される場合があります。 改善アクションは、テナントにマップされた技術ソリューション内で行う変更 (2 要素認証のオンなど) や、新しい職場ポリシーの適用など、システム外で実行する非技術的なアクションに対して行う場合があります。 技術的な改善アクションに対して行った詳細または状態の更新は、すべてのグループの評価によって取得されます。 技術的な改善以外のアクションの更新は、適用するグループ内の評価によって認識されます。 これにより、1 つの改善アクションを実装し、複数の要件を同時に満たします。
 
-### <a name="create-a-group"></a>グループの作成
+### <a name="create-a-group"></a>グループを作成する
 
 新しい評価の作成時にグループを作成できます。 グループをスタンドアロン エンティティとして作成することはできません。
 

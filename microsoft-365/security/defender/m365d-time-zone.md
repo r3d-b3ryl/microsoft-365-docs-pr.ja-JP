@@ -21,11 +21,11 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.openlocfilehash: 6665fcfcc5031e9790e7b467e32f18e203f5fe6a
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247235"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189200"
 ---
 # <a name="set-the-time-zone-for-microsoft-365-defender"></a>ユーザーのタイム ゾーンを設定Microsoft 365 Defender
 

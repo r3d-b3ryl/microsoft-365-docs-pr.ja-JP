@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Microsoft Cloud Deutschland からの移行AD Active Directory フェデレーション サービス (FS) の移行手順について説明します。'
-ms.openlocfilehash: bc71c731dd98dd859e7e19065c4c39fc041a530804b28ed5559ab1ac4a84660a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c8e784c8e582185b4bdebc0cb359cc4c19503d1a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53885185"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191281"
 ---
 # <a name="ad-fs-migration-steps-for-the-migration-from-microsoft-cloud-deutschland"></a>ADから移行するための FS 移行手順の詳細
 
@@ -51,9 +51,9 @@ FS バックアップを完了してテストしたらAD手順を実行して、
 
 4. 証明書 **利用者信頼** の追加 **ウィザードの [** ようこそ] ページで [スタート] を選択します。
 
-5. [データ **ソースの選択] ページ** で、[オンラインまたはローカル ネットワークで発行された証明書利用者に関するデータのインポート **] を選択します**。 フェデレーション **メタデータ アドレス (ホスト名または URL)** の値をに設定する必要があります `https://nexus.microsoftonline-p.com/federationmetadata/2007-06/federationmetadata.xml` 。 **[次へ]** をクリックします。
+5. [データ **ソースの選択] ページ** で、[オンラインまたはローカル ネットワークで発行された証明書利用者に関するデータのインポート **] を選択します**。 フェデレーション **メタデータ アドレス (ホスト名または URL)** の値をに設定する必要があります `https://nexus.microsoftonline-p.com/federationmetadata/2007-06/federationmetadata.xml` 。 [**次へ**] をクリックします。
 
-6. [表示 **名の指定] ページ** で、Id プラットフォーム **WorldWide などの表示Microsoft Office 365入力します**。 **[次へ]** をクリックします。
+6. [表示 **名の指定] ページ** で、Id プラットフォーム **WorldWide などの表示Microsoft Office 365入力します**。 [**次へ**] をクリックします。
 
 7. ADFS を使用している場合Windows Server 2012ウィザード ページの [多要素認証を今すぐ構成する **] で**、認証要件に応じて適切な選択肢を選択します。 既定に固執する場合は、[この証明書利用者信頼の多要素認証設定をこの時点で構成しない] **を選択します**。 必要に応じ、後でこの設定を変更できます。
 
@@ -136,7 +136,7 @@ FS ヘルプを [ADして、](https://adfshelp.microsoft.com/AadTrustClaims/Clai
 
 3. 新しい DNS レコードまたはロード バランサーを FS サーバーの新しいADポイントします。
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 はじめに:
 

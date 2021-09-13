@@ -14,7 +14,7 @@ metadata:
   localization_priority: Priority
 productDirectory:
   items:
-    - title: 作業の開始
+    - title: 開始する
       imageSrc: 'https://docs.microsoft.com/office/media/icons/get-started-blue.svg'
       summary: ビジネス向けサービスへの移行Microsoft 365計画します。
       url: what-is-microsoft-365.md

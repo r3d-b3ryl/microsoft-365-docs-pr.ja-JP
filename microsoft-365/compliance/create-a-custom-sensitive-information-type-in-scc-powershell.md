@@ -16,11 +16,11 @@ search.appverid:
 - MET150
 description: コンプライアンス センターでポリシーのカスタムの機密情報の種類を作成してインポートする方法について説明します。
 ms.openlocfilehash: 41f36354fa94da9cae8e7794dca778c1bfe8ac2e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570295"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189890"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>PowerShell を使用してカスタムの機密情報の種類を作成する
 

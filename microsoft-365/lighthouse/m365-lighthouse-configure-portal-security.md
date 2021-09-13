@@ -17,11 +17,11 @@ ms.custom:
 search.appverid: MET150
 description: 管理サービス プロバイダー (MSP) の場合は、Microsoft 365 Lighthouseセキュリティを構成する方法について説明します。
 ms.openlocfilehash: 9701ecc002144f791be6caad1e93230be5a83bf0
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508084"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191150"
 ---
 # <a name="configure-microsoft-365-lighthouse-portal-security"></a>ポータル Microsoft 365 Lighthouseの構成
 

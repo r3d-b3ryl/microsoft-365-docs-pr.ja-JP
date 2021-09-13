@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: ''
 description: '概要: 高値の DNS レコードOffice 365 GCCします。'
 hideEdit: true
-ms.openlocfilehash: ff4a3e9f4711cc61352d1b547f195054eab9b3fb2181280718f386545fea83fe
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9edcda4616d50d05331db0e2d6c4d89967b02fdc
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53859061"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189651"
 ---
 # <a name="dns-records-for-office-365-gcc-high"></a>Office 365 GCC High の DNS レコード
 
@@ -37,7 +37,7 @@ Office 365 GCC High へのオンボーディングの一環として、SMTP ド�
 
 ## <a name="exchange-online"></a>Exchange Online
 
-| Type | Priority | ホスト名 | ポイント先のアドレスまたは値 | TTL |
+| Type | Priority | ホスト名 | アドレスまたは値をポイントする | TTL |
 | --- | --- | --- | --- | --- |
 | MX | 0 | @ | *tenant*.mail.protection.office365.us (詳細については、以下を参照してください) | 1 Hour |
 | TXT | - | @ | v=spf1 include:spf.protection.office365.us -all | 1 Hour |
@@ -57,14 +57,14 @@ Office 365 GCC High へのオンボーディングの一環として、SMTP ド�
 
 ### <a name="cname-records"></a>CNAME レコード
 
-| 種類 | ホスト名 | ポイント先のアドレスまたは値 | TTL |
+| 型 | ホスト名 | アドレスまたは値をポイントする | TTL |
 | --- | --- | --- | --- |
 | CNAME | sip | sipdir.online.gov.skypeforbusiness.us | 1 Hour |
 | CNAME | lyncdiscover | webdir.online.gov.skypeforbusiness.us | 1 Hour |
 
 ### <a name="srv-records"></a>SRV レコード
 
-| 種類 | サービス | プロトコル | ポート | 太さ | 優先度 | 名前 | Target | TTL |
+| 型 | サービス | プロトコル | ポート | 太さ | 優先度 | Name | Target | TTL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | SRV | \_sip | \_tls | 443 | 1 | 100 | @ | sipdir.online.gov.skypeforbusiness.us | 1 Hour |
 | SRV | \_sipfederationtls | \_tcp | 5061 | 1 | 100 | @ | sipfed.online.gov.skypeforbusiness.us | 1 Hour |

@@ -22,11 +22,11 @@ search.appverid:
 - MET150
 description: ページ診断を使用して、Web パーツのパフォーマンスを最適化する方法については、「オンラインモダン サイト SharePointページ」を参照してください。
 ms.openlocfilehash: 93d92f6aecaa2b791823d689e53e57b92f8ed043
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568686"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191300"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>SharePoint Online のモダン サイト ページで Web パーツのパフォーマンスを最適化する
 

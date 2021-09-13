@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: e3c0a4ee-e3d8-4fbe-bd8f-16d1c712d1f4
 description: 指定された時間に従業員が予約に使用できないとマークされるように、予約カレンダーからオフィスの休業日と従業員の休み時間をスケジュールします。
 ms.openlocfilehash: bdd00d2bc97de1e981b2de7f5f21325de6967aa7
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567594"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190571"
 ---
 # <a name="schedule-business-closures-time-off-and-vacation-time"></a>休業、休暇、休暇期間のスケジュール
 

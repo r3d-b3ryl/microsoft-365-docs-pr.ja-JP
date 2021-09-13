@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b74888549069eab515ef5c7f89138cabe01b5d92
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: ee5a8decb78d2f72b796fd3fb2ef15c1da3b0160
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58550240"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189510"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Microsoft Defender for Endpoint Devices リストのデバイスを調査する
 
@@ -74,7 +74,7 @@ ms.locfileid: "58550240"
 - タグの管理
 - デバイスの分離
 - アプリの実行を制限する
-- ウイルス対策スキャンを実行する
+- ウイルス対策スキャンの実行
 - 調査パッケージの収集
 - ライブ応答セッションの開始
 - 自動調査の開始
@@ -92,6 +92,7 @@ ms.locfileid: "58550240"
 タブには、デバイスに関連する関連するセキュリティと脅威防止情報が表示されます。 各タブで、列ヘッダーの上のバーから [列のカスタマイズ] を選択して、表示される列をカスタマイズできます。
 
 ### <a name="overview"></a>概要
+
 [ **概要]** タブには、アクティブ [なアラート](#cards) 、ログオンしているユーザー、およびセキュリティ評価のカードが表示されます。
 
 ![デバイス ページの [概要] タブのイメージ。](images/overview-device.png)
@@ -112,13 +113,14 @@ ms.locfileid: "58550240"
 
 タイムラインでは、特定の期間に発生したイベントを選択的にドリルダウンすることもできます。 選択した期間にデバイスで発生したイベントの一時的なシーケンスを表示できます。 ビューをさらに制御するには、イベント グループでフィルター処理するか、列をカスタマイズできます。
 
->[!NOTE]
+> [!NOTE]
 > ファイアウォール イベントを表示するには、監査ポリシーを有効にする必要があります。「Audit [Filtering Platform 接続」を参照してください](/windows/security/threat-protection/auditing/audit-filtering-platform-connection)。
->ファイアウォールは、次のイベントをカバーします。
 >
->- [5025](/windows/security/threat-protection/auditing/event-5025) - ファイアウォール サービスが停止しました
->- [5031](/windows/security/threat-protection/auditing/event-5031) - アプリケーションがネットワーク上の受信接続を受け入れるのをブロックする
->- [5157](/windows/security/threat-protection/auditing/event-5157) - ブロックされた接続
+> ファイアウォールでは、次のイベントについて説明します。
+>
+> - [5025](/windows/security/threat-protection/auditing/event-5025) - ファイアウォール サービスが停止しました
+> - [5031](/windows/security/threat-protection/auditing/event-5031) - アプリケーションがネットワーク上の受信接続を受け入れるのをブロックする
+> - [5157](/windows/security/threat-protection/auditing/event-5157) - ブロックされた接続
 
 ![イベントを含むデバイス タイムラインのイメージ。](images/timeline-device.png)
 
@@ -132,7 +134,7 @@ ms.locfileid: "58550240"
 - デバイスの詳細なタイムライン イベントをエクスポートする
   - 現在の日付または指定した日付範囲のデバイス タイムラインを最大 7 日間エクスポートします。
 
-特定のイベントの詳細については、「追加情報」 **セクションを参照** してください。 これらの詳細は、次に示すイベントの種類によって異なります。 
+特定のイベントの詳細については、「追加情報」 **セクションを参照** してください。 これらの詳細は、次に示すイベントの種類によって異なります。
 
 - Application Guard に含まれる - Web ブラウザー イベントは、分離されたコンテナーによって制限されました
 - アクティブな脅威が検出されました - 脅威の実行中に脅威の検出が発生しました
@@ -143,6 +145,7 @@ ms.locfileid: "58550240"
 - アラート カテゴリ - イベントがアラートの生成につながった場合、アラート カテゴリ (たとえば"横方向の移動") が提供されます。
 
 #### <a name="event-details"></a>イベントの詳細
+
 イベントを選択して、そのイベントに関する関連する詳細を表示します。 一般的なイベント情報を表示するパネルが表示されます。 適用可能なデータが使用可能な場合は、関連するエンティティとその関係を示すグラフも表示されます。
 
 イベントと関連イベントをさらに調するには、[関連イベントのハント][](advanced-hunting-overview.md)を選択して高度な検索クエリ **をすばやく実行できます**。 クエリは、選択したイベントと、同じエンドポイントで同時に発生した他のイベントの一覧を返します。
@@ -180,16 +183,18 @@ Microsoft Defender for Identity 機能を有効にし、アクティブなアラ
 
 ![アクティブなアラート カードのイメージ。](images/risk-level-small.png)
 
->[!NOTE]
->この機能を使用するには、Microsoft Defender for Identity と Defender for Endpoint の両方で統合を有効にする必要があります。 Defender for Endpoint では、高度な機能でこの機能を有効にできます。 高度な機能を有効にする方法の詳細については、「高度な機能を有効 [にする」を参照してください](advanced-features.md)。
+> [!NOTE]
+> この機能を使用するには、Microsoft Defender for Identity と Defender for Endpoint の両方で統合を有効にする必要があります。 Defender for Endpoint では、高度な機能でこの機能を有効にできます。 高度な機能を有効にする方法の詳細については、「高度な機能を有効 [にする」を参照してください](advanced-features.md)。
 
 ### <a name="logged-on-users"></a>ログオンしているユーザー
 
 [ **ログオンユーザー] カード** には、過去 30 日間にログオンしたユーザーの数と、最も頻度の少ないユーザーが表示されます。 [すべてのユーザーを表示する] リンクを選択すると、詳細ウィンドウが開き、ユーザーの種類、ログオンの種類、ユーザーが最初と最後に表示された時間などの情報が表示されます。 詳細については、「ユーザー エンティティの [調査」を参照してください](investigate-user.md)。
 
 ![ユーザーの詳細ウィンドウのイメージ。](images/logged-on-users.png)
+
 > [!NOTE]
-> 「最も頻繁に」ユーザー値は、対話的に正常にログオンしたユーザーの証拠にのみ基づいて計算されます。 ただし、[すべてのユーザー] サイド ウィンドウでは、すべての種類のユーザー ログオンが計算されます。そのため、ユーザーが対話型ではない可能性がある場合に、サイド ウィンドウでユーザーが頻繁に表示される可能性があります。
+> 「最も頻繁に」ユーザー値は、対話的に正常にログオンしたユーザーの証拠にのみ基づいて計算されます。
+> ただし、[すべてのユーザー] サイド ウィンドウでは、すべての種類のユーザー ログオンが計算されます。そのため、ユーザーが対話型ではない可能性がある場合に、サイド ウィンドウでユーザーが頻繁に表示される可能性があります。
 
 ### <a name="security-assessments"></a>セキュリティ評価
 

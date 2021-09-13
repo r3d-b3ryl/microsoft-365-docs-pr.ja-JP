@@ -11,11 +11,11 @@ manager: laurawi
 ms.topic: article
 audience: Admin
 ms.openlocfilehash: 01b26ff33e02a1b26e91bb6399a73c9b22a6ba19
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58364963"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191100"
 ---
 #  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップ用に、マップされたドライブを準備する
 
@@ -58,13 +58,13 @@ ms.locfileid: "58364963"
 ## <a name="steps-to-get-ready-for-microsoft-managed-desktop"></a>インストールの準備を行うMicrosoft マネージド デスクトップ
 
 1. [Microsoft マネージド デスクトップの前提条件](prerequisites.md)を確認します。
-2. 準備 [状況評価ツールを実行します](readiness-assessment-tool.md)。
-1. 購入[ポータル サイト](../get-started/company-portal.md).
-1. ゲスト [アカウントの前提条件を確認します](guest-accounts.md)。
-1. ネットワーク [構成を確認します](network.md)。
-1. [証明書とネットワーク プロファイルを準備します](certs-wifi-lan.md)。
+2. [準備状況の評価ツール](readiness-assessment-tool.md)を実行します。
+1. [ポータル サイト](../get-started/company-portal.md)を購入します。
+1. [ゲスト アカウントの前提条件](guest-accounts.md)を確認します。
+1. [ネットワーク構成](network.md)をチェックします。
+1. [証明書とネットワーク プロファイル](certs-wifi-lan.md)を準備します。
 1. [データへのユーザー アクセスを準備します](authentication.md)。
 1. [アプリを準備します](apps.md)。
 1. マップされたドライブを準備する (この記事)。
 1. [印刷リソースを準備します](printing.md)。
-1. アドレス [デバイス名](address-device-names.md)。
+1. [デバイス名](address-device-names.md)をアドレス指定します。

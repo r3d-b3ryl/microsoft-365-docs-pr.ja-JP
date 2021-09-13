@@ -16,11 +16,11 @@ ms.collection:
 localization_priority: None
 description: ユーザー環境でのMicrosoft Viva ラーニング (プレビュー) についてMicrosoft 365します。
 ms.openlocfilehash: e08be19d9277a31401b62be71f1e180859ba29bb
-ms.sourcegitcommit: 73a17ecbc06cd3e5452814637ab0484ddcdea17a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "58942598"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191160"
 ---
 # <a name="overview-of-microsoft-viva-learning-preview"></a>プレビュー (Microsoft Viva ラーニング) の概要 
 
@@ -65,7 +65,7 @@ Viva ラーニング (プレビュー) を使用すると、学習を 1 日に�
 
 ナレッジ管理者は、適度に技術的で、管理者の資格情報にSharePoint必要があります。 ナレッジ管理者は、組織の教育、学習、トレーニング、または従業員エクスペリエンスの一部に精通している必要があります。
 
-## <a name="get-started"></a>開始する
+## <a name="get-started"></a>概要
 
 特定の環境で Viva ラーニング (プレビュー) をMicrosoft 365します。
 

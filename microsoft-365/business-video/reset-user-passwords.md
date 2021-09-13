@@ -15,18 +15,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- admindeeplinkMAC
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: ビジネス向けユーザー パスワードをMicrosoft 365する方法について学習します。
-ms.openlocfilehash: db89626096f151f9ebc446e08ff970a8f02c4aa2a966f6c882a7012745b96f07
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 593c4718fb2edcdf14bf65b6a38b55fef0962381
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53896513"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190481"
 ---
 # <a name="reset-passwords-for-your-users"></a>ユーザーのパスワードをリセットする
 
@@ -37,7 +38,7 @@ ms.locfileid: "53896513"
 ## <a name="try-it"></a>お試しください!
 
 1. ユーザーが新しいパスワードを要求すると、電子メールでパスワードリセット要求を受信します。 パスワードをリセットするには、アプリ起動ツールを開き、[管理者] を **選択します**。
-1. [ユーザー] Microsoft 365 管理センター [ユーザー] **、[アクティブ** なユーザー]**の順に** 選択し、リセットを要求したユーザーの横にあるキー アイコンを選択します。
+1. [ユーザー] Microsoft 365 管理センター [ユーザー] **、[アクティブ** なユーザー]<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**の順に**</a>選択し、リセットを要求したユーザーの横にあるキー アイコンを選択します。
 1. [ **パスワードの自動生成] を選択** すると、ランダムなパスワードが自動的に作成されます。
 1. [リセット] **を選択します**。
 1. [メールで **パスワードを送信する] チェック ボックス** をオンにします。

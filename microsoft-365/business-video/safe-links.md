@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 悪意のあるサイトからビジネスセーフリンクを管理する方法について学習します。
-ms.openlocfilehash: 236597bf06913c75a5cd1c702084d7bb7085f4cf4edd5991a6ebe61e2fc159e3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7e6b4507cd363a448812b48e3eafc7f4c077be3c
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53896405"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190461"
 ---
 # <a name="manage-safe-links"></a>[リンクセーフ管理]
 

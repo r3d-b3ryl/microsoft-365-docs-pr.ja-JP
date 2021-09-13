@@ -13,12 +13,12 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e0cab2fb0a700fa91287d36ea38635f876453443b2171d22d9d5bc9b0ebc326a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: de415ba7b68df786ead038bb72465c445a86ba5a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53880397"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191390"
 ---
 # <a name="troubleshooting-information-barriers"></a>情報バリアのトラブルシューティング
 
@@ -199,7 +199,7 @@ $DetailedLogs = Search-UnifiedAuditLog -EndDate <yyyy-mm-ddThh:mm:ss>  -StartDat
    $DetailedLogs[1] |fl
 ```
 
-次に例を示します。
+例:
 
 > "UserId": User1
 >

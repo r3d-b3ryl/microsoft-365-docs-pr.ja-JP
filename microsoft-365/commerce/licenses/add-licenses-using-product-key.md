@@ -21,12 +21,12 @@ search.appverid: MET150
 description: プロダクト キーを使用してサブスクリプションにライセンスを追加または拡張する方法について学習します。
 ROBOTS: NOINDEX
 ms.date: 04/07/2021
-ms.openlocfilehash: 3070aa6e757ec103f95f543d6922c9d61d9251f2f07f9156dd13124a99497f21
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7f1a1977eb5e20d09a22ef616937abdc483c431e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53861413"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190360"
 ---
 # <a name="add-licenses-to-or-extend-a-subscription-paid-for-using-a-product-key"></a>プロダクト キーを使用して支払われたサブスクリプションにライセンスを追加または拡張する
 

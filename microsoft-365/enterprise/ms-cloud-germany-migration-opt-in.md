@@ -16,14 +16,15 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
+- admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '概要: '
-ms.openlocfilehash: 003a643bd861d3937d9e0c62f487d36e950f14c9
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 4dcd608fcd999c8d07fdedb569279980a943caa0
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575650"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191290"
 ---
 # <a name="how-to-opt-in-for-new-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツのデータセンター地域のOffice 365サービスへの新しい移行をオプトインする方法
 
@@ -33,7 +34,7 @@ ms.locfileid: "58575650"
 
 ## <a name="how-to-request-migration"></a>移行を要求する方法
 
-Microsoft Cloud Germany (Microsoft Cloud Deutschland) でサービスがプロビジョニングされている対象顧客で、テナント (グローバル) 管理者としてサインインしていた場合、Microsoft 365 管理センター のページで移行をオプトインできます。 このOpt-InページではMicrosoft 365 管理センター登録が許可されなくなりましたが、このプロセスは参照用に以下に概説されています。  
+Microsoft Cloud Germany (Microsoft Cloud Deutschland) でプロビジョニングされたサービスの対象となる顧客で、テナント (グローバル) 管理者としてサインインしていた場合<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">、Microsoft 365 管理センター</a>のページで移行をオプトインすることを許可しました。 このOpt-InページではMicrosoft 365 管理センター登録が許可されなくなりましたが、このプロセスは参照用に以下に概説されています。  
 
 ページにアクセスするには、左側 **設定ウィンドウで**[組織プロファイル] を展開し、[組織プロファイル]**をクリックします**。
 
@@ -61,7 +62,7 @@ Microsoft Cloud Germany (Microsoft Cloud Deutschland) でサービスがプロ�
 
 顧客テナント管理者は、Microsoft が支援する移行に対して移行へのオプトインが自動的に行われますことを通知する通知を電子メールとメッセージ センターで受け取ります。 この通知は、自動オプトインの少なくとも 30 日前に送信されます。 移行オプトイン後、すべての通信と状態の更新は、メッセージ センターの顧客テナント管理者に送信されます。
 
-顧客とパートナーのテナント管理者は、移行プロセスをできるだけ早く開始できるよう、Microsoft 365 管理センターで移行をオプトインすることを推奨します。
+顧客とパートナーのテナント管理者は、移行プロセスをできるだけ早く開始できるよう、Microsoft 365 管理センターで移行をオプトインすることを推奨します。 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank"></a>
 
 ## <a name="next-step"></a>次の手順
 

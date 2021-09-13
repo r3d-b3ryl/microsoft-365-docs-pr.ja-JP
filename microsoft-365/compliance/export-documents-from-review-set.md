@@ -18,11 +18,11 @@ ms.assetid: ''
 description: プレゼンテーションまたは外部レビューのレビュー セットAdvanced eDiscoveryコンテンツを選択してエクスポートする方法について説明します。
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: 5021428dc1ee82b5fb0aeed58d4e055710dec2ef
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570859"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191561"
 ---
 # <a name="export-documents-from-a-review-set-in-advanced-ediscovery"></a>[ドキュメント] のレビュー セットからドキュメントをエクスポートAdvanced eDiscovery
 

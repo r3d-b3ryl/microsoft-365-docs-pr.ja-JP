@@ -10,26 +10,27 @@ ms.prod: microsoft-365-enterprise
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
+ms.custom: admindeeplinkMAC
 search.appverid: MET150
 localization_priority: Priority
 description: SharePoint Syntex の設定
-ms.openlocfilehash: 3b03b36e58b9f5cbb97a967be941fc43285892fd
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 2f77176e2bfd90b4f912379b3b2dcf15b62c7cf4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58552890"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179799"
 ---
 # <a name="set-up-sharepoint-syntex"></a>SharePoint Syntex の設定
 
-管理者は、Microsoft 365 管理センターを使用して、[Microsoft SharePoint Syntex](index.md)をセットアップできます。 
+管理者は、<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>を使用して、[Microsoft SharePoint Syntex](index.md) をセットアップできます。 
 
 事前に、次のことを考慮します。
 
 - どの SharePoint サイトでフォームの処理を有効にできますか? これらのすべて、それともサイトのいくつかを選択しますか?
 - 既定のコンテンツ センターの名前を何にしますか?
 
-Microsoft 365管理センターでの最初のセットアップの後でも設定を変更できます。
+<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>での最初のセットアップの後でも設定を変更できます。
 
 設定する前に、使用している環境のコンテンツ解釈をセットアップして構成する最適な方法を計画してください。たとえば、以下について決定を行う必要があります。
 
@@ -41,7 +42,7 @@ Microsoft 365管理センターでの最初のセットアップの後でも設�
 > [!NOTE]
 > Microsoft 365 管理センターにアクセスし、SharePoint Syntex をセットアップするには、グローバル管理者または SharePoint 管理者のアクセス許可が必要です。
 
-管理者は、セットアップ後に選択した設定を変更することができます。また、コンテンツ認識管理設定全体において、Microsoft 365 管理センターの管理設定を理解している必要があります。
+管理者は、セットアップ後、および <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>のコンテンツの解釈管理設定全体を通じて、選択した設定に変更を加えることもできます。
 
 カスタム Power Platform 環境を使用する場合は、フォーム処理モデルを作成する前に、[この環境で *プロジェクト Cortex の AI ビルダー* アプリをインストールし、](/power-platform/admin/manage-apps#install-an-app-in-the-environment-view)そのアプリに [AI ビルダー クレジットを割り当てる](/power-platform/admin/capacity-add-on)必要があります。
 
@@ -55,9 +56,11 @@ SharePoint Syntex を使用するには、組織に SharePoint Syntex のサブ�
 
 フォーム処理を使用するには、AI ビルダー クレジットも必要です。 ライセンス ユーザーが 300 人以上の場合、AI ビルダー クレジットの割り当てが毎月提供されます。
 
+SharePoint Syntex ライセンスの詳細については、「[SharePoint Syntex ライセンス](syntex-licensing.md)」を参照してください
+
 ## <a name="to-set-up-sharepoint-syntex"></a>SharePoint Syntex の設定
 
-1. Microsoft 365 管理センターで、**[設定]** を選択し、**[ファイルとコンテンツ]** セクションを表示します。
+1. Microsoft 365 管理センターで、<a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**[設定]**</a> を選択し、**[ファイルとコンテンツ]** セクションを表示します。
 
 2. **[ファイルとコンテンツ]** セクションで、**[コンテンツを自動的に理解する]** を選択します。 現在の AI ビルダー クレジットの可用性は、**[概要]** セクションに表示されていることに注意してください。<br/>
 
@@ -112,7 +115,7 @@ SharePoint Syntex を構成したら、SharePoint Syntex機能を使用するユ
 
 ライセンスを割り当てる
 
-1. Microsoft 365 管理センターで、**[ユーザー** ]、[**アクティブなユーザー**]の順にクリックします。
+1. Microsoft 365 管理センターの **[ユーザー]** で、<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**[アクティブなユーザー]**</a> を選択します。
 
 2. ライセンスを付与するユーザーを選択し、**[製品ライセンスの管理]** を選択します。
 

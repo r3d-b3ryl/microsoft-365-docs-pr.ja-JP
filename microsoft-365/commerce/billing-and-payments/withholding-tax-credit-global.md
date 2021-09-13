@@ -21,11 +21,11 @@ ms.custom:
 monikerRange: o365-worldwide
 ms.date: 05/27/2021
 ms.openlocfilehash: 530345c7f9234e50ec33de23847c14e1b948df8c
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823722"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190401"
 ---
 # <a name="request-a-credit-for-withholding-tax-on-your-account-global-customers"></a>アカウントの源泉徴収税のクレジットを要求する (グローバルユーザー)
 

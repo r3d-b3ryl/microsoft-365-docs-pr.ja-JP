@@ -20,11 +20,11 @@ ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: セキュリティ センター PowerShell を使用して検索の作成やレポートの実行など、コンテンツ検索&する方法について説明します。
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: fff69aac3ab30e0fe1ea60f9d097602a5390ba87
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574341"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191571"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>複数のコンテンツ検索の作成、報告、削除
 

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コンプライアンス管理の新機能と新機能を確認します。 更新された評価、新しい評価テンプレート、新しいアクションなどについて説明します。
-ms.openlocfilehash: dbce7a3781aa10d19a7f615f8a7d7d8ecd5a13daebeab3f58469a5236fe2f89c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 823df0ac274dad0ae278ce981a0dca0f0ad8a9ed
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53892281"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189901"
 ---
 # <a name="whats-new-in-microsoft-compliance-manager"></a>Microsoft コンプライアンス マネージャーの新機能
 

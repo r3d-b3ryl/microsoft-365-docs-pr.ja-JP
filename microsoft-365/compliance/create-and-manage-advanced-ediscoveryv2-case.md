@@ -20,11 +20,11 @@ search.appverid:
 - MET150
 description: この記事では、特定のケースを作成および管理するAdvanced eDiscovery説明します。 最初の手順は、ケースを作成し、新しい機能Advanced eDiscovery使用を開始します。
 ms.openlocfilehash: 69d2f22a3792f2217ea8ef58ae9771dd4a10f32d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573249"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189811"
 ---
 # <a name="create-and-manage-an-advanced-ediscovery-case"></a>ケースの作成と管理Advanced eDiscoveryする
 

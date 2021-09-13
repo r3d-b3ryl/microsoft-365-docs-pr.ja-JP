@@ -16,11 +16,11 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 43190dabe55ab3600a05aa8e6094c6ad7393a04d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567450"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191400"
 ---
 # <a name="define-information-barrier-policies"></a>情報バリア ポリシーの定義
 
@@ -71,7 +71,7 @@ ms.locfileid: "58567450"
 - アドレス帳ポリシーなし - 情報バリア ポリシーを定義して適用する前に、Exchangeポリシーが適用されないか確認してください。 情報バリアはアドレス帳ポリシーに基づいていますが、2 種類のポリシーには互換性がありません。 このようなポリシーがある場合は、まずアドレス帳 [ポリシーを削除してください](/exchange/address-books/address-book-policies/remove-an-address-book-policy) 。 情報バリア ポリシーを有効にし、階層型アドレス帳を有効にすると、情報バリア セグメントに含まれていないすべてのユーザーに、Exchange[](/exchange/address-books/hierarchical-address-books/hierarchical-address-books)オンラインで階層アドレス帳が表示されます。
 
 - PowerShell - 現在、情報バリア ポリシーは、PowerShell コマンドレットを使用して Office 365 セキュリティ &で定義および管理されます。 この記事ではいくつかの例を示しますが、PowerShell のコマンドレットとパラメーターを理解する必要があります。 また、このモジュールAzure PowerShell必要があります。
-  - [セキュリティ/コンプライアンス センターの PowerShell に接続する](/powershell/exchange/connect-to-scc-powershell)
+  - [セキュリティ/コンプライアンス センター PowerShell に接続する](/powershell/exchange/connect-to-scc-powershell)
   - [モジュールのインストールAzure PowerShellする](/powershell/azure/install-az-ps)
 
 - Microsoft Teams の情報バリアに対する管理者の同意 - IB ポリシーが適用されている場合、グループ (つまり、グループに基づく Teams チャネル) から IB 以外のコンプライアンス ユーザーを削除できます。 この構成は、組織がポリシーと規制に準拠し続けるのに役立ちます。 次の手順を使用して、情報バリア ポリシーが期待した通り動作Microsoft Teams。
@@ -148,7 +148,7 @@ ms.locfileid: "58567450"
 
 次の例では、"Department equals HR" のようなセグメントを定義しています。 
 
-| 例 | 注 |
+| 例 | 注: |
 |:----------|:-------|
 |`New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"` | この例では、セグメント定義に -eq と示される "equals" パラメーターが含 **まれています**。 |
 
@@ -198,7 +198,7 @@ ms.locfileid: "58567450"
 
 2. 2 番目のブロック セグメントを定義するには、セグメントを逆にした **SegmentsBlocked** パラメーターで **New-InformationBarrierPolicy** コマンドレットを使用します。
 
-    | 例 | 注 |
+    | 例 | 注: |
     |:----------|:-------|
     |`New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` | この例では、Research-Sales というポリシーを定義 *して、Research* が *Sales* と通信しなか *からなかっています*。 |
 
