@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: データ損失防止アラートとアラート ダッシュボードについて学習します。
-ms.openlocfilehash: 0474c5609fcd979fa8db7e47857c099cbed7be365bb55ee80e507ad3375da660
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b6fd698e535e006149f6ce3a2a5bc57d0c92c7e2
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53895661"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59193111"
 ---
 # <a name="learn-about-the-data-loss-prevention-alerts-dashboard"></a>データ損失防止の警告ダッシュボードについて
 
@@ -60,7 +60,7 @@ DLP ポリシーで構成できるアラートには、2 種類があります�
 
 ### <a name="event-details"></a>イベントの詳細
 
-|プロパティ名  |Description  |イベントの種類  |
+|プロパティ名  |説明  |イベントの種類  |
 |---------|---------|---------|
 |ID |イベントに関連付けられた一意の ID |すべてのイベント |
 |場所 |イベントが検出されたワークロード|すべてのイベント |
@@ -68,7 +68,7 @@ DLP ポリシーで構成できるアラートには、2 種類があります�
 
 ### <a name="impacted-entities"></a>影響を受け取ったエンティティ
 
-|プロパティ名 |Description| イベントの種類|
+|プロパティ名 |説明| イベントの種類|
 |---------|---------|---------|
 |ユーザー | ポリシーの一致を引き起こしたアクションを実行したユーザー | すべてのイベント|
 |ホスト名 | DLP ポリシーの一致が発生したコンピューターのホスト名 | デバイス イベント|
@@ -90,7 +90,7 @@ DLP ポリシーで構成できるアラートには、2 種類があります�
 
 ### <a name="policy-details"></a>ポリシーの詳細
 
-|プロパティ名 |Description |イベントの種類 |
+|プロパティ名 |説明 |イベントの種類 |
 |---------|---------|---------|
 |DLP ポリシーの一致 |一致する DLP ポリシーの名前 |すべてのイベント|
 |ルールの一致 |一致する DLP ポリシー ルールの名前 |すべてのイベント|

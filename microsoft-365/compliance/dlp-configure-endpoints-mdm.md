@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: モバイル デバイス管理ツールを使用してデバイスに構成パッケージを展開し、サービスにオンボードします。
-ms.openlocfilehash: b95ee215e63027b7d7579aebecc091c972fd26ebbc3352a43c1f4dfe69d73826
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1ad1115308257fa3ce63f10edebb9129638fd52f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53892077"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59193071"
 ---
 # <a name="onboard-windows-10-devices-using-mobile-device-management-tools"></a>モバイル デバイス管理ツールを使用した Windows 10 デバイスのオンボード
 
@@ -30,7 +30,7 @@ ms.locfileid: "53892077"
 モバイル デバイス管理 (MDM) ソリューションを使用してデバイスを構成できます。 Microsoft 365エンドポイント のデータ損失防止は、デバイスを管理するためのOMA-URIsを作成する機能を提供することで、MDM をサポートします。
 
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 デバイスを使用している場合Microsoft Intune MDM が登録されている必要があります。 それ以外の場合、設定は正常に適用されません。 
 
 MDM を有効にする方法の詳細については、「デバイスMicrosoft Intune [(Microsoft Intune) 」を参照してください](/mem/intune/enrollment/device-enrollment)。
@@ -73,7 +73,7 @@ Intune の指示に [従います](/intune/advanced-threat-protection)。
 > [!IMPORTANT]
 > Offboarding を使用すると、デバイスはポータルへのセンサー データの送信を停止しますが、デバイスからのデータ (通知への参照を含む) は最大 6 か月間保持されます。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [グループ ポリシー Windows 10デバイスのオンボード](dlp-configure-endpoints-gp.md)
 - [デバイスをWindows 10デバイスをオンボードMicrosoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md)
 - [ローカル スクリプトを使用した Windows 10 デバイスのオンボード](dlp-configure-endpoints-script.md)

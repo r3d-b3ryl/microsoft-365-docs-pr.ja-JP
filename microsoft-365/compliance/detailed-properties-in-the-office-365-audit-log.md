@@ -20,11 +20,11 @@ ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: この記事では、監査ログ レコードの結果をエクスポートするときに含まれる追加Office 365説明します。
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 20965367cda41ad50070d42b306564f6a8d9bb8b
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58503061"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59193171"
 ---
 # <a name="detailed-properties-in-the-audit-log"></a>監査ログの詳細なプロパティ
 

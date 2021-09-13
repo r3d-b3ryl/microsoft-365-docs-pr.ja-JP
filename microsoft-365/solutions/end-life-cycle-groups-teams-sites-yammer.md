@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: グループ、チーム、およびグループのライフサイクルのYammer。
-ms.openlocfilehash: 9532fb7f7c57cf883a0c4d989c5372239eab1c9666890dabfa598cacdbb652cf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fccdf838b7ebec6a1ab1fae2f709824bfbd3b6d1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833017"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192251"
 ---
 # <a name="end-of-lifecycle-options-for-groups-teams-and-yammer"></a>グループ、チーム、およびグループのライフサイクルのYammer
 
@@ -43,7 +43,7 @@ Microsoft 365グループとグループMicrosoft Teams複数の接続された�
 |Project上の情報|Projectプラン|
 |ロードマップ|ロードマップ|
 |SharePoint|ファイル、リスト、Teamsチャネル Wiki データ|
-|Stream|ビデオ|
+|Stream|動画|
 |Yammer|会話|
 
 グループまたはチームを削除すると、関連付けられているリソースのほとんども削除されます。 例外は次のとおりです。
@@ -58,7 +58,7 @@ Microsoft 365グループとグループMicrosoft Teams複数の接続された�
 
 グループまたはチームを削除する際には、チームとグループの所有者と IT 管理者が考慮する必要がある 3 つの重要な領域があります。
 
-**Content**
+**コンテンツ**
 
 チームが存在しなくなった後、コンテンツを保持する必要がありますか? Microsoft 365の保持機能に依存して十分ですか、それとも保持を提供しないアプリやサービスのコンテンツの一部ですか? レコード管理、アーカイブ、または将来の使用および参照の目的でコンテンツを保持する必要がありますか?
 
@@ -198,7 +198,7 @@ Power BIとワークスペースは、グループやチームとは独立して
 
 代わりに、レポートをアクティブにする必要がなくなったが、データを保持する必要がある場合は、レポートをアクティブに[エクスポートExcel。](/power-bi/visuals/power-bi-visualization-export-data)
 
-## <a name="project"></a>Project
+## <a name="project"></a>プロジェクト
 
 web 用に Project で作成されたプロジェクトとロードマップは、Microsoft 365 グループに関連付けられるので、Power BI と同様のオフボーディングの方法があります。
 
@@ -267,6 +267,6 @@ Microsoft TeamsのMicrosoft Teams、Yammerユーザーと管理者の両方が�
 
 Yammer管理者がネットワーク[データをエクスポートします](/yammer/manage-security-and-compliance/export-yammer-enterprise-data)。 ただし、そうすると、ネットワーク全体のすべての会話がエクスポートされます。 結果のエクスポートには、グループ ID が一覧表示されます。 この ID に基づいて会話をフィルター処理できます。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [元従業員を削除し、データをセキュリティで保護する](/microsoft-365/admin/add-users/remove-former-employee)

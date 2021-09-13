@@ -1,5 +1,5 @@
 ---
-title: Web 脅威から組織を保護する
+title: Web 驚異から組織を保護する
 description: Microsoft Defender for Endpoint の Web 保護と、組織を保護する方法について説明します。
 keywords: Web 保護、Web 脅威保護、Web 閲覧、セキュリティ、フィッシング、マルウェア、悪用、Web サイト、ネットワーク保護、エッジ、Internet Explorer、Chrome、Firefox、Web ブラウザー
 search.product: eADQiWindows 10XVcnh
@@ -17,13 +17,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: d309f8851720578dfdd321efff862f15afd9bca8
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58250550"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192601"
 ---
-# <a name="protect-your-organization-against-web-threats"></a>Web 脅威から組織を保護する
+# <a name="protect-your-organization-against-web-threats"></a>Web 驚異から組織を保護する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

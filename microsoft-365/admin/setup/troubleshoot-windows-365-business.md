@@ -24,11 +24,11 @@ search.appverid:
 description: 365 Business Cloud PC のセットアップWindowsトラブルシューティングする方法について説明します。
 ms.date: 08/13/2021
 ms.openlocfilehash: 701d1ce3ae97836d6687050e16a176aad85e2995
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58598932"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192101"
 ---
 # <a name="troubleshoot-windows-365-business-cloud-pc-setup-issues"></a>365 Windows PC セットアップの問題のトラブルシューティング
 
@@ -37,7 +37,7 @@ ms.locfileid: "58598932"
 > [!IMPORTANT]
 > この記事で説明されているほとんどのタスクを実行するには、グローバル管理者である必要があります。 他の管理者ロールを特定の手順に使用できる場合は、プロシージャの前に表示されます。 Azure portal の一部にログインまたはアクセスする権限を持ってない場合は、IT 管理者に問い合わせください。Azure ルールの詳細については [、「Azure AD組み込みロール」を参照してください](/azure/active-directory/roles/permissions-reference)。 Azure portal の詳細については、「Azure portal の [概要」を参照してください](/azure/azure-portal/azure-portal-overview)。
 
-## <a name="step-1-verify-azure-ad-device-settings"></a>手順 1. Azure のデバイスADを確認する
+## <a name="step-1-verify-azure-ad-device-settings"></a>手順 1。 Azure のデバイスADを確認する
 
 [すべて **] に設定されている場合は、ユーザーがデバイス** を Azure AD参加 **できます。**
 

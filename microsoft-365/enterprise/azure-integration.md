@@ -23,11 +23,11 @@ search.appverid:
 ms.assetid: a5efce5d-9c9c-4190-b61b-fd273c1d425f
 description: パスワードMicrosoft 365オンプレミス環境ADシングル サインオンを行う場合は、Azure Microsoft 365と統合します。
 ms.openlocfilehash: de971ee857e955fc4ddb8a059da23974965e81e3
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58747597"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192870"
 ---
 # <a name="azure-integration-with-microsoft-365"></a>Azure と Microsoft 365
 
@@ -59,7 +59,7 @@ DS 機能、双方向AD、その他の管理機能を強化する場合は、無
 
 |**機能**|**説明**|
 |:-----|:-----|
-|統合アプリ  <br/> |メール、予定表、連絡先、ユーザー、グループ、ファイル、フォルダーなど、Microsoft 365データへのアクセスを個々のアプリに付与できます。 **また、Azure AD DC** 管理者、またはグローバル管理者レベルでこれらのアプリを承認し、Azure AD にアプリを登録して、会社全体で利用AD。 詳細については、「統合アプリ[と Azure AD管理者Microsoft 365を参照してください](integrated-apps-and-azure-ads.md)。<br/> 詳細については、「[管理者の役割について](/microsoft-365/admin/add-users/about-admin-roles?)」を参照してください。 <br/> 「シングル [サインオン」も参照してください](/azure/active-directory/manage-apps/what-is-single-sign-on)。  <br/> |
+|統合アプリ  <br/> |メール、予定表、連絡先、ユーザー、グループ、ファイル、フォルダーなど、Microsoft 365データへのアクセスを個々のアプリに付与できます。 **また、Azure AD DC** 管理者、またはグローバル管理者レベルでこれらのアプリを承認し、Azure AD にアプリを登録して、会社全体で利用AD。 詳細については、「統合アプリ[と Azure AD管理者Microsoft 365を参照してください](integrated-apps-and-azure-ads.md)。<br/> 詳細については、[「管理者の役割について」](/microsoft-365/admin/add-users/about-admin-roles?) を参照してください。 <br/> 「シングル [サインオン」も参照してください](/azure/active-directory/manage-apps/what-is-single-sign-on)。  <br/> |
 |Power Apps  <br/> | Power Appsリストや他のデータ アプリなど、既存のデータ ソースに接続できるモバイル デバイス向SharePointアプリです。 詳細[については、「Create a Power App for a list in SharePoint」](https://support.office.com/article/9338b2d2-67ac-4b81-8e67-97da27e5e9ab)および「Power Apps[ページ」](https://powerapps.microsoft.com/)を参照してください。  <br/> |
    
 ## <a name="see-also"></a>関連項目

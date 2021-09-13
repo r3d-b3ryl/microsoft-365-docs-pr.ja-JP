@@ -19,11 +19,11 @@ ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: 管理者がユーザーの回復可能なアイテム フォルダー内のアイテムを Exchange Online メールボックスに対して削除する方法について説明します(そのメールボックスが法的に保持されている場合でも)。
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 01242e2c5f00cd1e5aef0ac0f6f7f6e1d47a56ce
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502665"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59193190"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold"></a>保留中のクラウド ベースのメールボックスの 回復可能なアイテム フォルダーのアイテムを削除する
 
@@ -66,7 +66,7 @@ ms.locfileid: "58502665"
 
 また、この手順で所有者 (または他のユーザー) がメールボックスにアクセスできない状態で一時的に無効にできるよう、メールボックス クライアント アクセス設定を取得する必要があります。 最後に、回復可能なアイテム フォルダー内のアイテムの現在のサイズと数を取得できます。 手順 5 の [回復可能なアイテム] フォルダー内のアイテムを削除した後、この情報を使用してアイテムが削除されたのを確認します。
   
-1. [Exchange Online PowerShell への接続](/powershell/exchange/connect-to-exchange-online-powershell)。 管理者アカウントで適切な管理役割が割り当てられている管理者アカウントには、必ずユーザー名とパスワードを使用Exchange Online。
+1. [Exchange Online PowerShell に接続します](/powershell/exchange/connect-to-exchange-online-powershell)。 管理者アカウントで適切な管理役割が割り当てられている管理者アカウントには、必ずユーザー名とパスワードを使用Exchange Online。
 
 2. 次のコマンドを実行して、単一アイテムの回復と削除済みアイテムの保持期間に関する情報を取得します。
 
@@ -414,7 +414,7 @@ PowerShell で次の手順 (指定した順序で) をExchange Onlineします�
     Get-CASMailbox <username> | FL EwsEnabled,ActiveSyncEnabled,MAPIEnabled,OWAEnabled,ImapEnabled,PopEnabled
     ```
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 **Get-Mailbox** コマンドレットまたは **Get-OrganizationConfig** コマンドレットを実行するときに *、InPlaceHolds* プロパティの値に基づいてさまざまな種類の保留リストを識別する方法を示す表を次に示します。 詳細については、「メールボックスに配置された保留の種類を特定する方法」[を参照Exchange Onlineしてください](identify-a-hold-on-an-exchange-online-mailbox.md)。
 

@@ -15,11 +15,11 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
 ms.openlocfilehash: 3ce1715baaf9b23fe53d900d67fc378d8fa624bb
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568206"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192170"
 ---
 # <a name="security-hurdles-you-can-sail-overone-architects-viewpoint"></a>セキュリティ上のハードル :1 人の建築家の視点
 
@@ -75,7 +75,7 @@ ms.locfileid: "58568206"
 
 これらのハードルをクリアするために、Microsoft は、セキュリティ戦略と実装に対して方法的なアプローチを取るのを助けるために設計されたいくつかのリソースを管理しました。
 
-|リソース   |詳細情報  |
+|Resource   |詳細情報  |
 |---------|---------|
 |[自宅での作業をサポートするセキュリティ チームの主なタスク](../security/top-security-tasks-for-remote-work.md)      | ほとんどが在宅の従業員を突然サポートしている場合、この記事はセキュリティを迅速に強化するのに役立ちます。 これには、ライセンス計画に基づいて推奨される最も推奨されるタスクが含まれます。    |
 |[Microsoft 365ビジネス上の意思決定者向けセキュリティ](../security/Microsoft-365-security-for-bdm.md)    | より包括的な計画を立てる時間がある場合、この記事には、攻撃の表面によって優先順位付けされた、Microsoft 365にまたがった推奨事項が含まれています。 また、ライセンスと領域 (ID、脅威保護、監視など) で並べ替えに使用できるスプレッドシートも付属しています。  |

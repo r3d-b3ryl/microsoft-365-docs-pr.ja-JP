@@ -21,11 +21,11 @@ ms.custom:
 - seo-marvel-apr2020
 description: Microsoft 以外のクラウド アプリで dlp ポリシーを使用する方法について説明します。
 ms.openlocfilehash: 5817bad8e02e0aeee6aab88ca1a4cabe45822b51
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571376"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192940"
 ---
 # <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps"></a>Microsoft 以外のクラウド アプリでデータ損失防止ポリシーを使用する
 
@@ -45,7 +45,7 @@ DLP ポリシーを Microsoft 以外のクラウド アプリに使用する前�
 
 ### <a name="permissions"></a>アクセス許可
 DLP ポリシーを作成するユーザーは、次のユーザーである必要があります。
-- 全体管理者
+- グローバル管理者
 - コンプライアンス管理者
 - コンプライアンス データ管理者
 

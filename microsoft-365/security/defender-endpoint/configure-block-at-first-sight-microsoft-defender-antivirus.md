@@ -16,11 +16,11 @@ ms.date: 07/29/2021
 ms.technology: mde
 ms.topic: article
 ms.openlocfilehash: f38bb019d3f04b4e0be19cf93062ac75005495cb
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570679"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192780"
 ---
 # <a name="turn-on-block-at-first-sight"></a>事前ブロックを有効にする
 

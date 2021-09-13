@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4b49da5102e5a61ccb8698cfc34eabb27a9a0fbef57d54b11c4c7f6a0eb94827
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e27136b860c13dbb8ec2290e819482b196ba7d21
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53880953"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59193320"
 ---
 # <a name="payment-information-for-jamaica"></a>ジャマイカのお支払い情報
 

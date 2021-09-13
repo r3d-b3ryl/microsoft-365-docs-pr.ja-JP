@@ -16,11 +16,11 @@ search.appverid:
 recommendations: false
 description: dlp ポリシーの条件と例外について学ぶ
 ms.openlocfilehash: 385c59a41535fbc3fdec0fc551a50b6915736f4f
-ms.sourcegitcommit: dda742d2b044fa56f4edef57d74d18f52fafc149
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58829282"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59193090"
 ---
 # <a name="dlp-policy-conditions-exceptions-and-actions"></a>DLP ポリシーの条件、例外、およびアクション
 
@@ -52,7 +52,7 @@ DLP ポリシーの条件と例外は、ポリシーが適用される機密性�
 
 ****
 
-|DLP の条件または例外|PowerShell の condition/exception パラメーター Microsoft 365|プロパティの種類|説明|
+|DLP の条件または例外|PowerShell の condition/exception パラメーター Microsoft 365|プロパティの種類|description|
 |---|---|---|---|
 |送信者が|condition: *From* <br/> 例外: *ExceptIfFrom*|住所|指定されたメールボックス、メール ユーザー、メール連絡先、または組織内のMicrosoft 365によって送信されるメッセージ。|
 |送信者が次のメンバーの場合 |_FromMemberOf_ <br/> _ExceptIfFromMemberOf_|住所|指定した配布グループ、メールが有効なセキュリティ グループ、またはグループのメンバーによって送信Microsoft 365メッセージ。|
@@ -71,7 +71,7 @@ DLP ポリシーの条件と例外は、ポリシーが適用される機密性�
 
 ****
 
-|DLP の条件または例外|PowerShell の condition/exception パラメーター Microsoft 365|プロパティの種類|説明|
+|DLP の条件または例外|PowerShell の condition/exception パラメーター Microsoft 365|プロパティの種類|description|
 |---|---|---|---|
 |受信者が|condition: *SentTo* <br/> 例外: *ExceptIfSentTo*|住所|受信者の 1 人が組織内の指定されたメールボックス、メール ユーザー、メール連絡先であるメッセージです。受信者はメッセージの **To**、**Cc**、**Bcc** のフィールドにいることが可能です。|
 |受信者ドメインが|condition: *RecipientDomainIs* <br/> 例外: *ExceptIfRecipientDomainIs*|DomainName|受信者の電子メール アドレスのドメインが指定した値と一致するメッセージ。|
@@ -88,7 +88,7 @@ DLP ポリシーの条件と例外は、ポリシーが適用される機密性�
 
 ****
 
-|DLP の条件または例外|PowerShell の condition/exception パラメーター Microsoft 365|プロパティの種類|説明|
+|DLP の条件または例外|PowerShell の condition/exception パラメーター Microsoft 365|プロパティの種類|description|
 |---|---|---|---|
 |件名には、単語または語句が含まれている|condition: *SubjectContainsWords* <br/> 例外: *ExceptIf SubjectContainsWords*|Words|Subject フィールドに特定の単語を持つメッセージです。|
 |件名がパターンと一致している|condition: *SubjectMatchesPatterns* <br/> 例外: *ExceptIf SubjectMatchesPatterns*|パターン|Subject フィールドに、指定された正規表現に一致するテキスト パターンが含まれるメッセージ。|
@@ -103,7 +103,7 @@ DLP ポリシーの条件と例外は、ポリシーが適用される機密性�
 
 ****
 
-|DLP の条件または例外|PowerShell の condition/exception パラメーター Microsoft 365|プロパティの種類|説明|
+|DLP の条件または例外|PowerShell の condition/exception パラメーター Microsoft 365|プロパティの種類|description|
 |---|---|---|---|
 |添付ファイルがパスワードで保護されている|condition: *DocumentIsPasswordProtected* <br/> 例外: *ExceptIfDocumentIsPasswordProtected*|none|添付ファイルがパスワードで保護された (ゆえにスキャンすることができない) メッセージです。 パスワードの検出は、Office、.zip.7z ファイルでのみ機能します。|
 |添付ファイルのファイル拡張子は、|condition: *ContentExtensionMatchesWords* <br/> 例外: *ExceptIfContentExtensionMatchesWords*|Words|添付ファイルの拡張子が、以下の指定の単語と一致するメッセージです。|
@@ -123,7 +123,7 @@ DLP ポリシーの条件と例外は、ポリシーが適用される機密性�
 
 ****
 
-|DLP の条件または例外|PowerShell の condition/exception パラメーター Microsoft 365|プロパティの種類|説明|
+|DLP の条件または例外|PowerShell の condition/exception パラメーター Microsoft 365|プロパティの種類|description|
 |---|---|---|---|
 |ヘッダーには、単語または語句が含まれています|condition: *HeaderContainsWords* <br/> 例外: *ExceptIfHeaderContainsWords*|ハッシュ テーブル|指定したヘッダー フィールドを含むメッセージであり、そのヘッダー フィールドの値には指定した単語が含まれています。|
 |ヘッダーがパターンと一致している|condition: *HeaderMatchesPatterns* <br/> 例外: *ExceptIfHeaderMatchesPatterns*|ハッシュ テーブル|指定したヘッダー フィールドを含むメッセージであり、そのヘッダー フィールドの値には指定した正規表現が含まれています。|
@@ -134,7 +134,7 @@ DLP ポリシーの条件と例外は、ポリシーが適用される機密性�
 
 ****
 
-|DLP の条件または例外|PowerShell の condition/exception パラメーター Microsoft 365|プロパティの種類|説明|
+|DLP の条件または例外|PowerShell の condition/exception パラメーター Microsoft 365|プロパティの種類|description|
 |---|---|---|---|
 |重要度の高い|condition: *WithImportance* <br/> 例外: *ExceptIfWithImportance*|Importance|指定された重要度レベルでマークされたメッセージ。|
 |コンテンツ文字セットに単語が含まれている|condition: *ContentCharacterSetContainsWords* <br/> *ExceptIfContentCharacterSetContainsWords*|CharacterSets|指定した文字セット名のいずれかを含むメッセージです。|
@@ -151,7 +151,7 @@ DLP ポリシーの条件と例外は、ポリシーが適用される機密性�
 
 ****
 
-|DLP のアクション|PowerShell のアクション Microsoft 365パラメーター|プロパティの種類|説明|
+|DLP のアクション|PowerShell のアクション Microsoft 365パラメーター|プロパティの種類|description|
 |---|---|---|---|
 |ヘッダーの設定|SetHeader|First プロパティ: *ヘッダー名* </br> 2 番目のプロパティ: *ヘッダー値*|SetHeader パラメーターは、メッセージ ヘッダーのヘッダー フィールドと値を追加または変更する DLP ルールのアクションを指定します。 このパラメーターは、構文 "HeaderName:HeaderValue" を使用します。 複数のヘッダー名と値のペアをコンマで区切って指定できます|
 |ヘッダーの削除|RemoveHeader|最初のプロパティ: *MessageHeaderField*</br> 2 番目のプロパティ: *String*|RemoveHeader パラメーターは、メッセージ ヘッダーからヘッダー フィールドを削除する DLP ルールのアクションを指定します。 このパラメーターは、構文 "HeaderName" または "HeaderName:HeaderValue" を使用します。複数のヘッダー名またはヘッダー名と値のペアをコンマで区切って指定できます。|

@@ -22,11 +22,11 @@ ms.custom:
 - seo-marvel-jun2020
 ms.technology: m365d
 ms.openlocfilehash: 4ff06a12d6d0639b00091a93b9ba7162d7cb6264
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58249059"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192441"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Microsoft Secure Score の新機能
 
@@ -79,7 +79,7 @@ Microsoft Secure Score は、ポータルの https://security.microsoft.com/secu
 
 - 異常なCloud App Securityを検出するには、次の情報を使用します。
 
-## <a name="february-2021"></a>2021年2月
+## <a name="february-2021"></a>2021 年 2 月
 
 ### <a name="compatibility-with-graph-api"></a>API とのGraph互換性
 

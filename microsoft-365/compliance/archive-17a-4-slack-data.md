@@ -13,11 +13,11 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 17a-4 Slack DataParser コネクタをセットアップして使用して、Slack データをインポートおよびアーカイブする方法についてMicrosoft 365。
 ms.openlocfilehash: 0d94a86b32fbd7269b8fc9d6a47990c29278c5d2
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572745"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59193260"
 ---
 # <a name="set-up-a-connector-to-archive-slack-data"></a>Slack データをアーカイブするコネクタをセットアップする
 

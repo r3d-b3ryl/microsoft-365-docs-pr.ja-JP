@@ -14,11 +14,11 @@ ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: このロードマップを使用して、クライアントソフトウェアとサーバー ソフトウェアをセットアップMicrosoft 365。
 ms.openlocfilehash: 66d6483df4d1bec1ea0c935f7a0b936f2e0fddcf
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356134"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192860"
 ---
 # <a name="client-and-server-software-roadmap-for-microsoft-365"></a>クライアントおよびサーバー ソフトウェアのロードマップ (Microsoft 365
 

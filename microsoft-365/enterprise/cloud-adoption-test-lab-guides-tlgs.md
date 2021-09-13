@@ -21,11 +21,11 @@ ms.custom:
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '概要: これらのテスト ラボ ガイド (TLG) を使用して、デモ環境、概念実証環境、または開発/テスト環境をセットアップMicrosoft 365。'
 ms.openlocfilehash: a7dc8c4e731b03733b200b8750cc6157eb44a9c2
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573153"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192850"
 ---
 # <a name="test-microsoft-365-with-test-lab-guides-tlgs"></a>テスト Microsoft 365 ガイド (TLG) を使用してテストする
 

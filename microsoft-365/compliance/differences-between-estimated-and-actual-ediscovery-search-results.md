@@ -20,11 +20,11 @@ search.appverid:
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: 推定検索結果と実際の検索結果が、電子情報開示ツールを使用して実行される検索で異なる理由をOffice 365。
 ms.openlocfilehash: ae6e8d21ceb448f2402b14a02d5e08a3bf331548
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570583"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59193170"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results"></a>推定電子情報開示検索結果と実際の電子情報開示検索結果の違い
 

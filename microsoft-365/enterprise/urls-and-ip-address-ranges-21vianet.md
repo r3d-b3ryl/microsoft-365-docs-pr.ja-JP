@@ -22,11 +22,11 @@ f1.keywords:
 description: この記事では、中国で 21Vianet がOffice 365の URL と IP アドレスの範囲を示します。
 hideEdit: true
 ms.openlocfilehash: 726069ef6dddc7d46ab2c5c36f9b6eaf0edf702d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564000"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192800"
 ---
 # <a name="urls-and-ip-address-ranges-for-office-365-operated-by-21vianet"></a>21Vianet が運営する Office 365の URL と IP アドレス範囲
 

@@ -16,11 +16,11 @@ ms.technology: mde
 ms.topic: article
 ms.date: 08/31/2021
 ms.openlocfilehash: 5d9f6ace79d05eff795041732e045abf18d5f792
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58864016"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192781"
 ---
 # <a name="cloud-protection-and-sample-submission-in-microsoft-defender-antivirus"></a>クラウド保護とサンプル申請 (Microsoft Defender ウイルス対策
 
@@ -106,7 +106,7 @@ Intune、Configuration Manager、GPO、または PowerShell を使用した構�
 
 次の表に、クラウド保護によって分析のために送信されるメタデータの例を示します。
 
-| 型 | 属性 |
+| 種類 | 属性 |
 |:---|:---|
 | コンピューターの属性 | `OS version` <br/> `Processor` <br/> `Security settings` |
 | 動的属性とコンテキスト属性 | **プロセスとインストール** <br/> `ProcessName` <br/> `ParentProcess` <br/> `TriggeringSignature` <br/> `TriggeringFile` <br/> `Download IP and url` <br/> `HashedFullPath` <br/> `Vpath` <br/> `RealPath` <br/> `Parent/child relationships` <br/><br/>**動作** <br/> `Connection IPs` <br/> `System changes` <br/> `API calls` <br/> `Process injection` <br/><br/>**Locale** <br/> `Locale setting` <br/> `Geographical location` |

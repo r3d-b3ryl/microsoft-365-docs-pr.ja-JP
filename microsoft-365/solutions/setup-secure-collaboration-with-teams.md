@@ -18,11 +18,11 @@ f1.keywords: NOCSH
 recommendations: false
 description: セキュリティで保護されたコンテンツ コラボレーションを設定し、Teamsに基づいてデータを保護する方法について学習します。
 ms.openlocfilehash: 07f8f1193043b31c53346221791529b5b6162c30
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572793"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192161"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365-and-microsoft-teams"></a>ユーザーとユーザーとの安全なMicrosoft 365をMicrosoft Teams
 
@@ -71,7 +71,7 @@ ms.locfileid: "58572793"
 |Microsoft Defender for Office 365|セーフSPO、OneDriveおよびTeams。セーフドキュメント。セーフサイトのリンクTeams|Microsoft 365E1、E3、E5|
 |SharePoint|サイトとファイルの共有ポリシー、サイト共有のアクセス許可、リンクの共有、要求へのアクセス、サイトのゲスト共有設定|Microsoft 365E1、E3、E5|
 |Microsoft Teams|ゲスト アクセス、プライベート チーム、プライベート チャネル|Microsoft 365E1、E3、E5|
-|Microsoft 365 コンプライアンス|機密ラベル|Microsoft 365 E3、E5|
+|Microsoft 365 コンプライアンス|秘密度ラベル|Microsoft 365 E3、E5|
 
 ## <a name="collaboration-governance"></a>共同作業ガバナンス
 
@@ -87,7 +87,7 @@ Microsoft 365ソリューションを管理するための多くのオプショ�
 
 |-|ベースライン層|機密性の高い層|機密性の高い層|
 |---|---|---|---|
-|パブリック チームまたはプライベート チーム|[Either/リンク/埋め込み]|プライベート|プライベート|
+|パブリック チームまたはプライベート チーム|[Either/リンク/埋め込み]|Kirkland|Kirkland|
 |認証されていない共有|Blocked|Blocked|Blocked|
 |ファイル共有|可|可|共有できるのはチームの所有者のみです。|
 |チーム メンバーシップ|誰でもパブリック チームに参加できます。<br>プライベート チームに参加するには、チーム所有者の承認が必要です。|参加するにはチーム所有者の承認が必要です。|参加するにはチーム所有者の承認が必要です。|

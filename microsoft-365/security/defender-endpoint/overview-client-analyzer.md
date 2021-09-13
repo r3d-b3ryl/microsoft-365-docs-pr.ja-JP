@@ -21,11 +21,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: 604a7d98b25d7b5b858db87c8b8f467ffb8edb83
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360109"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192661"
 ---
 #  <a name="troubleshoot-sensor-health-using-microsoft-defender-for-endpoint-client-analyzer"></a>Microsoft Defender for Endpoint Client Analyzer を使用したセンサーの正常性のトラブルシューティング
 

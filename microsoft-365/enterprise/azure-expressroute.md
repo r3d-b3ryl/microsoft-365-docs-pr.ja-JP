@@ -23,11 +23,11 @@ search.appverid:
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Azure ExpressRoute を使用してネットワークOffice 365展開する場合は、ネットワーク実装プロジェクトを計画する方法について説明します。
 ms.openlocfilehash: 599b1b6a40e8b74f7ca4e3ad90723f201b74592d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573165"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192871"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Office 365 向け Azure ExpressRoute
 

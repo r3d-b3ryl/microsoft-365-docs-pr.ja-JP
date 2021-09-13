@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: a7ee836cc40c7960c7963867484056b5a506241b
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566700"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192610"
 ---
 # <a name="respond-to-web-threats"></a>Web の脅威への対応
 

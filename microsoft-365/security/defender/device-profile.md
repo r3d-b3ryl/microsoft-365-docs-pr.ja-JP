@@ -14,11 +14,11 @@ ms.topic: article
 search.appverid: met150
 ms.technology: m365d
 ms.openlocfilehash: f33b16cb08f7573a579f46327f126071ed726e42
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563940"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192551"
 ---
 # <a name="device-profile-page"></a>[デバイス プロファイル] ページ
 

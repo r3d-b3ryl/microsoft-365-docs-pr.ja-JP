@@ -22,11 +22,11 @@ ms.custom:
 - seo-marvel-jun2020
 ms.technology: m365d
 ms.openlocfilehash: de8d0a0bc1609a3dfac9d177a51ef3903b477de4
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572949"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192410"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft セキュア スコア
 
@@ -46,7 +46,7 @@ Microsoft セキュア スコアは組織のセキュリティ体制を測定す
 
 ![Secure Score のホームページ。](../../media/secure-score/secure-score-home-page.png)
 
-## <a name="how-it-works"></a>メカニズム
+## <a name="how-it-works"></a>しくみ
 
 次のアクションのポイントが与えられる。
 

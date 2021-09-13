@@ -22,11 +22,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: a87b890191861677db604050814dd89fb39a93fc
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568842"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192510"
 ---
 # <a name="evaluate-microsoft-defender-for-identity-overview"></a>Microsoft Defender for Identity の概要を評価する
 
@@ -46,7 +46,7 @@ ms.locfileid: "58568842"
 | |手順  |説明  |
 |---------|---------|---------|
 |1|[アーキテクチャ要件と主な概念を確認する](eval-defender-identity-architecture.md)    | Defender for Identity アーキテクチャを理解し、環境がアーキテクチャの前提条件を満たしていることを確認します。       |
-|2 |[評価環境を有効にする](eval-defender-identity-enable-eval.md)     |   評価環境をセットアップするには、手順に従います。      |
-|3 |[パイロットのセットアップ](eval-defender-identity-pilot.md)     |   ID 環境のベンチマーク設定について説明し、Defender for Identity のチュートリアルを試してみてください。     |
+|2|[評価環境を有効にする](eval-defender-identity-enable-eval.md)     |   評価環境をセットアップするには、手順に従います。      |
+|3|[パイロットのセットアップ](eval-defender-identity-pilot.md)     |   ID 環境のベンチマーク設定について説明し、Defender for Identity のチュートリアルを試してみてください。     |
 ||||
 

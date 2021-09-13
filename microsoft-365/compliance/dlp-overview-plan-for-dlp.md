@@ -16,11 +16,11 @@ search.appverid:
 - MET150
 description: データ損失防止の計画プロセスの概要
 ms.openlocfilehash: 130675ad15a872ed14041289fb24aeec471014ff
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573261"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192960"
 ---
 # <a name="plan-for-data-loss-prevention-dlp"></a>データ損失防止 (DLP) の計画
 
@@ -72,7 +72,7 @@ ms.locfileid: "58573261"
 - 財務的 
 - 医療と健康に関する情報
 - プライバシー
-- カスタム
+- Custom
 
 関係者は機密情報を「データ 処理者なので、データ主体情報と財務情報に対するプライバシー保護を実装する必要がある」と識別する場合があります。
 

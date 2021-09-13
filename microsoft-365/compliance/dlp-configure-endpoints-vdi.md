@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 構成パッケージを仮想デスクトップ インフラストラクチャ (VDI) デバイスに展開して、エンドポイント データ損失防止サービスMicrosoft 365オンボーディングします。
-ms.openlocfilehash: d86046f474ce0afe3a21354bd36f9ed433b627384aec314f129702bc43480b4d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1e4987ba2d261c715395ed1869f597da91b5cfed
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53807986"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59193050"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-devices"></a>非永続的な仮想デスクトップ インフラストラクチャ デバイスのオンボード
 
@@ -140,7 +140,7 @@ DISM コマンドとオフライン サービスの詳細については、以�
 
 5. 通常と同じ方法で、ゴールデン/マスター イメージを再シールします。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [グループ ポリシー Windows 10デバイスのオンボード](dlp-configure-endpoints-gp.md)
 - [デバイスをWindows 10デバイスをオンボードMicrosoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md)

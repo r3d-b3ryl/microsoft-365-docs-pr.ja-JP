@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 0390163d1128bcb83fad0ad91c94c1a02d738a4e
-ms.sourcegitcommit: 8db88004f4c015138b20c55095ada2c0c79e5910
+ms.openlocfilehash: f8d3e4bc1b410ddcf0472f408864de1f34dad722
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58928718"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192890"
 ---
 # <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Microsoft SharePoint Syntex導入: 使い始める
 
@@ -68,7 +68,7 @@ ms.locfileid: "58928718"
 
 ## <a name="identify-roles--responsibilities"></a>役割と責任&識別する
 
-組織内でモデルを構築および管理するユーザーを決定しますか? 次の役割が関係している可能性があります。
+組織内でモデルを構築および管理するユーザーを決定します。 次の役割が関係している可能性があります。
 
 | SharePoint/知識管理者 | Power プラットフォーム管理者 | 知識マネージャー | モデル所有者 |
 |:-------|:-------|:-------|:-------|
@@ -146,5 +146,6 @@ ms.locfileid: "58928718"
 
 ## <a name="see-also"></a>関連項目
 
-[ユーザーのシナリオと使用SharePoint Syntex](adoption-scenarios.md) 
-[ソリューションを使用して契約Microsoft 365する](solution-manage-contracts-in-microsoft-365.md)
+[SharePoint Syntex のシナリオとユース ケース](adoption-scenarios.md)
+
+[Microsoft 365 ソリューションを使用して契約を管理する](solution-manage-contracts-in-microsoft-365.md)

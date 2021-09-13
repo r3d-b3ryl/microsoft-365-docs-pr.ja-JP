@@ -16,11 +16,11 @@ ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理者は、Twitter データをインポートおよびアーカイブするネイティブ コネクタをセットアップして、ユーザーにMicrosoft 365。 このデータを Microsoft 365 にインポートした後、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織の Twitter データのガバナンスを管理できます。
 ms.openlocfilehash: 52f5e426aa2f5fe90d067879fcf39f97d435a2a1
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564148"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59193180"
 ---
 # <a name="deploy-a-connector-to-archive-twitter-data"></a>コネクタを展開して Twitter データをアーカイブする
 

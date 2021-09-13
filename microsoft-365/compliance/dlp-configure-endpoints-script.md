@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: ローカル スクリプトを使用してデバイスに構成パッケージを展開し、サービスにオンボードします。
 ms.openlocfilehash: 18e1230285df0c462000454f2b13ac5bb2245e92
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566052"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59193060"
 ---
 # <a name="onboard-windows-10-devices-using-a-local-script"></a>ローカル スクリプトを使用した Windows 10 デバイスのオンボード
 

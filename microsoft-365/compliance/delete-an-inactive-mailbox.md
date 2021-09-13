@@ -18,12 +18,12 @@ ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 ms.custom:
 - seo-marvel-apr2020
 description: 非アクティブなメールボックスの内容を保持する必要がなくなったMicrosoft 365、非アクティブなメールボックスを完全に削除できます。
-ms.openlocfilehash: a20d9324d9a548d3be49383544f6ecfc54f8ff364b1bf5749f21440c08046cc8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 077a71bfdd82721e0992e5d14073aa037b7cfd1b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53830769"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59193200"
 ---
 # <a name="delete-an-inactive-mailbox"></a>非アクティブなメールボックスを削除する
 
@@ -204,7 +204,7 @@ Set-RetentionCompliancePolicy -Identity <retention policy GUID without prefix or
    Get-MailboxSearch $InPlaceHold.Name | FL Sources
    ```
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 - **非アクティブなメールボックスは、回復可能な削除によって削除されたメールボックスの一種です。** Exchange Onlineで、回復可能な削除によって削除されたメールボックスは、メールボックスが削除されてはいるものの、特定の保持期間内であれば回復することができます。 以前に非アクティブだったメールボックスは、183 日間、そのメールボックス内でExchange Onlineメールボックスとして使用できます。 つまり、メールボックスは、削除後 183 日以内に回復できます。 183 日後、削除されたメールボックスは完全削除のマークが付き、回復できません。
 

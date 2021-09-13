@@ -22,11 +22,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: d7474a3cb2f04627c5da16f84dbde6d195021551
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569923"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192550"
 ---
 # <a name="review-architecture-requirements-and-key-concepts-for-microsoft-defender-for-identity"></a>Microsoft Defender for Identity のアーキテクチャ要件と主な概念を確認する
 

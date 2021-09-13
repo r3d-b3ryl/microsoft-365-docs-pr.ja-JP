@@ -18,11 +18,11 @@ ms.custom:
 - seo-marvel-apr2020
 description: ローカル コンピューター Windowsレジストリを編集して、コンテンツ検索の結果をローカル コンピューターからエクスポートするときにレポートを無効Microsoft 365 コンプライアンス センター。
 ms.openlocfilehash: efe9ea768b68524dbfda003796a10d60453862bc
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58503157"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59193160"
 ---
 # <a name="disable-reports-when-you-export-content-search-results"></a>コンテンツ検索の結果をエクスポートするときにレポートを無効にする
 

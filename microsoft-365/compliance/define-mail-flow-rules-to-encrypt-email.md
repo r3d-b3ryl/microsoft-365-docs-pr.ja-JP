@@ -15,13 +15,14 @@ search.appverid:
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
+ms.custom: admindeeplinkMAC
 description: 管理者は、メール フロー ルール (トランスポート ルール) を作成して、メール フロー ルールを使用してメッセージを暗号化および復号化Office 365 Message Encryption。
-ms.openlocfilehash: e786a6ac688adbae22f7161ada18cffc27811f97
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: fe08753f3d0e12091a71cc3882dcca80380d82ca
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572193"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59193210"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages"></a>メール メッセージを暗号化するメール フロー ルールを定義する
 
@@ -46,7 +47,7 @@ EAC を使用して、新しい OME 機能を使用してメッセージ暗号�
 
 2. [管理] **タイルを選択** します。
 
-3. Microsoft 365 管理センター で、**[管理センター]** \> **[Exchange]** の順に選択します。
+3. [管理] <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>で、[**管理センター] を** \> **選択Exchange。**
 
 4. EAC で、[メール フロールール] に移動 **し** \> **、[** 新しい新しい] **アイコンを** ![ 選択します。](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>**新しいルールを作成します**。 EAC の使用の詳細については、「Exchange[管理センター」を参照](/exchange/exchange-admin-center)Exchange Online。
 
@@ -78,7 +79,7 @@ EAC を使用して、新しい OME 機能を使用してメッセージ暗号�
 
 2. [管理] **タイルを選択** します。
 
-3. Microsoft 365 管理センター で、**[管理センター]** \> **[Exchange]** の順に選択します。
+3. [管理] <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>で、[**管理センター] を** \> **選択Exchange。**
 
 4. EAC で、 **[メール フロー]** \> **[ルール]** に移動します。
 
@@ -106,7 +107,7 @@ EAC を使用して、新しい OME 機能を使用してメッセージの削�
 
 2. [管理] **タイルを選択** します。
 
-3. Microsoft 365 管理センター で、**[管理センター]** \> **[Exchange]** の順に選択します。
+3. [管理] <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>で、[**管理センター] を** \> **選択Exchange。**
 
 4. EAC で、[メール フロールール] に移動 **し** \> **、[** 新しい新しい] **アイコンを** ![ 選択します。](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>**新しいルールを作成します**。 EAC の使用の詳細については、「Exchange[管理センター」を参照](/exchange/exchange-admin-center)Exchange Online。
 
@@ -122,7 +123,7 @@ EAC を使用して、新しい OME 機能を使用してメッセージの削�
 
 組織を新しい OME 機能にまだ移動していない場合は、組織に妥当な場合は、すぐに新しい OME 機能に移行する計画を立てをお勧めします。 手順については、「Azure Information Protection の上にOffice 365 Message Encryption新しい機能をセットアップ[する」を参照してください](set-up-new-message-encryption-capabilities.md)。 それ以外の場合は、「新しい OME 機能を使用しないOffice 365 Message Encryptionメール フロー ルールの定義[」を参照してください](legacy-information-for-message-encryption.md#defining-mail-flow-rules-for-office-365-message-encryption-that-dont-use-the-new-ome-capabilities)。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-content"></a>関連コンテンツ
 
 [Office 365 での暗号化](encryption.md)
 

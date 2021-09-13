@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c36707aa98d0c7ff1a5cd7284ad149007c4d969ce1bfdf0aeb31cb68a4b4b549
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 23f093ba5f93bd8763ae27526dbeb77a16f3c5cd
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53898049"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192651"
 ---
 # <a name="overview-of-endpoint-detection-and-response"></a>エンドポイントでの検出と対応の概要
 
@@ -45,7 +45,7 @@ Defender for Endpoint endpoint detection and response capabilitis provide advanc
 
 対応機能により、影響を受けているエンティティに対策を講じることで、すばやく脅威に対処できるようになります。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [セキュリティ運用ダッシュボード](security-operations-dashboard.md)
 - [インシデント キュー](view-incidents-queue.md)

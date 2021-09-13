@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: データ損失防止ポリシーのアラートの定義と管理について説明します。
-ms.openlocfilehash: f8c8474a3bb70c46ab087572bd5c2bd2eb4138dbd51d0d7a43c2d7ca7e1590b3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ad117eb0c5460b90c92c664f0c233b81d1882327
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53895705"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59193130"
 ---
 # <a name="get-started-with-the-data-loss-prevention-alert-dashboard"></a>データ損失防止の警告ダッシュボードを開始する
 
@@ -33,13 +33,13 @@ ms.locfileid: "53895705"
 
 DLP アラートを使用する場合は、「データ損失防止アラート ダッシュボードについて [」を確認する必要があります。](dlp-alerts-dashboard-learn.md)
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 開始する前に、必要な前提条件が満たされていることを確認してください。
 
 -   DLP アラート管理ダッシュボードのライセンス
 -   アラート構成オプションのライセンス
--   Roles
+-   役割
 
 ### <a name="licensing-for-the-dlp-alert-management-dashboard"></a>DLP アラート管理ダッシュボードのライセンス
 
@@ -67,7 +67,7 @@ Teams [DLP](dlp-microsoft-teams.md)の対象となるエンドポイント[DLP](
     - Microsoft 365 E5 Compliance 
     - Microsoft 365証拠開示と監査アドオン ライセンス
 
-### <a name="roles"></a>Roles
+### <a name="roles"></a>役割
 
 
 DLP アラート管理ダッシュボードを表示する場合、または DLP ポリシーでアラート構成オプションを編集する場合は、次のいずれかの役割グループのメンバーである必要があります。

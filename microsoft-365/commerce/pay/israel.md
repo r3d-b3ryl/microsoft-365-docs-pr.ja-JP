@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ae432f74bdb8b5fa05cf5c1237bb6c5346036354bd3d4eb086ce666af3cf9fed
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 46f89062b03d51ed38a6376220fbdec255343937
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53906473"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59193360"
 ---
 # <a name="payment-information-for-israel"></a>イスラエルの支払い情報
 

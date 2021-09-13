@@ -16,12 +16,12 @@ description: エクスプローラーまたはリアルタイム検出を使用�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a89ed9eed07be2d66336dcab799e45d155151fce252f163c1d0eb27f43a4ac46
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4d0a9ba7ee40c8ad97df745a20d6b5b3314bb3d8
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53867477"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192290"
 ---
 # <a name="explorer-and-real-time-detections-basics"></a>エクスプローラーとリアルタイム検出の基本
 
@@ -71,7 +71,7 @@ ms.locfileid: "53867477"
 エクスプローラーまたはリアルタイム検出を *表示* および使用するには、次のアクセス許可が必要です。
 
 - [Defender for Office 365:
-  - 組織の管理
+  - 組織管理
   - セキュリティ管理者 (この管理者は、管理者センター Azure Active Directory割り当てることができます ( <https://aad.portal.azure.com> )
   - セキュリティ閲覧者
 - 次のExchange Online。
@@ -85,7 +85,7 @@ ms.locfileid: "53867477"
 - [Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)
 - [Exchange Online のアクセス許可](/e/exchange/permissions-exo/permissions-exo)
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 - [脅威エクスプローラーは、電子メール エンティティ ページで電子メールの詳細を収集します。](mdo-email-entity-page.md)
 - [配信された悪意のあるメールの検索と調査](investigate-malicious-email-that-was-delivered.md)

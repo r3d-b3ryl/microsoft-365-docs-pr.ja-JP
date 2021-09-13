@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: Configuration Manager を使用してデバイスに構成パッケージを展開し、サービスにオンボードします。
 ms.openlocfilehash: 309f6b7ee396baba0fcec0061d48f062510d7350
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569803"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59193061"
 ---
 # <a name="onboard-windows-10-devices-using-configuration-manager"></a>Configuration Manager を使用した Windows 10 デバイスのオンボード
 
@@ -77,7 +77,7 @@ Value: 0 or 1
 ```
 ここで、<br>
 キーの種類は D-WORD です。 <br>
-使用可能な値は次のいずれかです。
+使用可能な値は次のとおりです。
 - 0 - このデバイスからのサンプル共有を許可しない
 - 1 - このデバイスからすべての種類のファイルを共有できます
 

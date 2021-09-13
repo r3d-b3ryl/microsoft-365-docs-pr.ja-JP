@@ -17,11 +17,11 @@ ms.custom:
 - Ent_Solutions
 description: デバイスとアプリの管理に適切なオプションを展開し、Microsoft 365します。
 ms.openlocfilehash: 1d96042f2733a69919fd0dbaa9f30be6835d6469
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571195"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192141"
 ---
 # <a name="step-5-device-and-app-management-for-your-microsoft-365-for-enterprise-tenants"></a>手順 5.  エンタープライズ テナント用のデバイスMicrosoft 365管理
 

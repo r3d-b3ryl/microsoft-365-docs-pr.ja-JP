@@ -16,20 +16,20 @@ ms.topic: conceptual
 ms.author: macapara
 ms.date: 09/07/2018
 ms.technology: mde
-ms.openlocfilehash: b572f3bbd01af437abcb82052b9da8744980fb1ec91d5286abc28f0f890a7625
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6841ff3aef8fb02ec40c820756c9329e1e5b4259
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53845065"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192650"
 ---
 # <a name="hardware-based-isolation-in-windows-10"></a>Windows 10 のハードウェア ベースの分離
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Endpoint](/security/defender-endpoint)
+- [Microsoft 365 Defender](/security/defender/microsoft-365-defender)
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 

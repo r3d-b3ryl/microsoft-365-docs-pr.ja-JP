@@ -17,11 +17,11 @@ ms.custom:
 recommendations: false
 description: セキュリティ固有の秘密度ラベルを使用してチームを作成する方法について説明します。
 ms.openlocfilehash: 2a6285b63c67572ec363303e1d850c08d9c8e0c5
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571929"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192180"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>セキュリティの分離を使用してチームを構成する
 

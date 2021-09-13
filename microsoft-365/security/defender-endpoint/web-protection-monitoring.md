@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 6a134dced8eb749bebdf7e486c6d06c9cc19048b
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58558964"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192640"
 ---
 # <a name="monitor-web-browsing-security"></a>Web 閲覧のセキュリティを監視する
 

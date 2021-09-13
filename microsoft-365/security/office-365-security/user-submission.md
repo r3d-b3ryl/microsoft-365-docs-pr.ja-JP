@@ -18,11 +18,11 @@ description: 管理者は、ユーザーによって報告されるスパムメ�
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 1dc5a22fe23a64669c7ab89ecd2141aff1659166
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574498"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192261"
 ---
 # <a name="user-reported-message-settings"></a>ユーザーが報告したメッセージ設定
 
@@ -142,7 +142,7 @@ Microsoft Defender for Office 365場合は、高度なフィルター処理が�
 - 2|または迷惑メールではない
 - 3|またはフィッシング
 
-次に例を示します。
+以下に例を示します。
 
 `3|This part is ignored by the system` <br>
 `Not Junk:This part of the subject is ignored as well`

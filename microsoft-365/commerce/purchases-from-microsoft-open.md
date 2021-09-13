@@ -20,12 +20,12 @@ search.appverid: MET150
 ROBOTS: NOINDEX
 description: ビジネス サブスクリプションのライセンスをアクティブ化、更新、または追加する方法Microsoft 365確認します。
 ms.date: 10/21/2020
-ms.openlocfilehash: 9f928c772d2ae00b529951a2562d4fb3271b825637da561891586aba6f9e67a4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 78524b47b32d1b827cc6d525e4aa8e3feb499557
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53872685"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59193280"
 ---
 # <a name="enter-your-product-key-purchased-from-microsoft-open"></a>Microsoft Open から購入したプロダクト キーを入力する
 
