@@ -14,11 +14,11 @@ ms.collection:
 localization_priority: Priority
 description: Microsoft SharePoint Syntex のドキュメント理解モデルで抽出子を作成するときに、用語ストアの分類法を使用します。
 ms.openlocfilehash: 97ceace09ed4c8b1a8ea8daf6d562d8013533cea
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573729"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221801"
 ---
 # <a name="leverage-term-store-taxonomy-when-creating-an-extractor-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex の抽出子を作成するときに、用語ストアの分類法を活用します。
 

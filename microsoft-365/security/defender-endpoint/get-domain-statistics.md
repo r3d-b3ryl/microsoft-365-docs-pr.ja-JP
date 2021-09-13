@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: ba2c6e913b8768e0b905631a248435638db98939
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58364507"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221441"
 ---
 # <a name="get-domain-statistics-api"></a>ドメイン統計 API の取得
 
@@ -53,7 +53,7 @@ ms.locfileid: "58364507"
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
 アプリケーション|URL。Read.All|'URL の読み取り'
-委任 (職場または学校のアカウント)|URL。Read.All|'URL の読み取り'
+委任 (職場または学校アカウント)|URL。Read.All|'URL の読み取り'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:

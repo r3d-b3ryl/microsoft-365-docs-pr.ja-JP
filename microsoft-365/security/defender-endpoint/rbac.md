@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8d80928552b3d4dfa108270e7f5aa52c9c788d9527edea909112f769c7c65218
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e3c97151adac40e457439e07c1cb1c7dbcc84632
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53793036"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220337"
 ---
 # <a name="manage-portal-access-using-role-based-access-control"></a>役割ベースのアクセス制御を使用してポータル アクセスを管理する
 
@@ -31,7 +31,7 @@ ms.locfileid: "53793036"
 - Azure Active Directory
 - Office 365
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-rbac-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-rbac-abovefoldlink)
 
 役割ベースのアクセス制御 (RBAC) を使用して、セキュリティ運用チーム内に役割とグループを作成して、ポータルへの適切なアクセスを許可できます。 作成する役割とグループに基づいて、ポータルにアクセスできるユーザーが表示および実行できる操作を詳細に制御できます。 
 
@@ -54,7 +54,7 @@ Defender for Endpoint RBAC は、階層ベースまたは役割ベースの選�
 
 役割ベースのアクセスを実装するには、管理者ロールを定義し、対応するアクセス許可を割り当て、役割に割り当てられた Azure ADグループを割り当てる必要があります。
 
-### <a name="before-you-begin"></a>はじめに
+### <a name="before-you-begin"></a>開始する前に
 
 RBAC を使用する前に、アクセス許可を付与できる役割と RBAC をオンにした結果を理解することが重要です。
 

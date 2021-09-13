@@ -18,11 +18,11 @@ ms.custom:
 - O365ITProTrain
 description: PowerShell を使用してパスワードを管理する方法について説明します。
 ms.openlocfilehash: 40091d7add7f7adf9c560a90c00ad22e6c333c60
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356650"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220938"
 ---
 # <a name="manage-passwords-with-powershell"></a>PowerShell を使用してパスワードを管理する
 

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 373b28502fd16d8b98b5c48e0329a702c1d5dae20c0c3f95b61d56d545150e91
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9dffc5d2b7badba0a2f0e0b986973841ad488683
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53793861"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220553"
 ---
 # <a name="file-resource-type"></a>ファイル リソースの種類
 
@@ -50,18 +50,18 @@ Defender for Endpoint のファイル エンティティを表します。
 
 ## <a name="properties"></a>プロパティ
 
-|プロパティ | 種類 | 説明 |
+|プロパティ | 型 | 説明 |
 |:---|:---|:---|
-|sha1 | String | ファイル コンテンツの Sha1 ハッシュ |
-|sha256 | String | ファイル コンテンツの Sha256 ハッシュ |
+|sha1 | 文字列 | ファイル コンテンツの Sha1 ハッシュ |
+|sha256 | 文字列 | ファイル コンテンツの Sha256 ハッシュ |
 |globalPrevalence | Null 許容長 | 組織全体でのファイルの普及率 |
 |globalFirstObserved | DateTimeOffset | ファイルが初めて観察された場合 |
 |globalLastObserved | DateTimeOffset | ファイルが最後に観察された時刻 |
 |size | Null 許容長 | ファイルのサイズ |
-|fileType | String | ファイルの種類 |
-|isPeFile | Boolean | ファイルが移植可能な実行可能ファイルの場合は true ("DLL"、"EXE"など) |
-|filePublisher | String | ファイル発行元 |
-|fileProductName | String | 製品名 |
+|fileType | 文字列 | ファイルの種類 |
+|isPeFile | ブール値 | ファイルが移植可能な実行可能ファイルの場合は true ("DLL"、"EXE"など) |
+|filePublisher | 文字列 | ファイル発行元 |
+|fileProductName | 文字列 | 製品名 |
 |署名者 | String | ファイル署名者 |
 |issuer | String | ファイル発行者 |
 |signerHash | String | 署名証明書のハッシュ |

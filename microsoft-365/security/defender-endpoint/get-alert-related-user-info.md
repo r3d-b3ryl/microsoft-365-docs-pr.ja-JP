@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: bd51b218bfa31496c708f61e4469246ce3d0e0c12e5551063929f65d06337f85
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0bf041210aac90a1aa5b0c360b0b5dd55d8cd8c6
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857605"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221897"
 ---
 # <a name="get-alert-related-user-information-api"></a>アラート関連のユーザー情報 API を取得する
 
@@ -54,7 +54,7 @@ ms.locfileid: "53857605"
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
 アプリケーション|User.Read.All|'ユーザー プロファイルの読み取り'
-委任 (職場または学校のアカウント)|User.Read.All|'ユーザー プロファイルの読み取り'
+委任 (職場または学校アカウント)|User.Read.All|'ユーザー プロファイルの読み取り'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
@@ -70,7 +70,7 @@ GET /api/alerts/{id}/user
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**
 

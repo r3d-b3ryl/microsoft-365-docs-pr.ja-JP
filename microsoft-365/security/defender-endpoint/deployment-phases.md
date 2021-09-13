@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: b5d7f7384d60a5353ce4c0363e07d3451e146598
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563560"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220601"
 ---
 # <a name="deployment-phases"></a>展開フェーズ
 
@@ -78,7 +78,7 @@ Microsoft Defender for Endpoint には多くの機能が備え付けられます
 
 これらすべての機能は、Microsoft Defender for Endpoint ライセンスホルダーで使用できます。 詳細については、「ライセンス要件 [」を参照してください](minimum-requirements.md#licensing-requirements)。
 
-## <a name="scope"></a>スコープ
+## <a name="scope"></a>範囲
 
 ### <a name="in-scope"></a>スコープ内
 

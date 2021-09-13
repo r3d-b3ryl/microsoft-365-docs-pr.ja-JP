@@ -14,11 +14,11 @@ localization_priority: Normal
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.openlocfilehash: 21f9de0c92145f7029b7529a242fe58c344768a0
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823409"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220650"
 ---
 # <a name="overview-of-microsoft-defender-for-endpoint-plan-1-preview"></a>Microsoft Defender for Endpoint Plan 1 の概要 (プレビュー)
 
@@ -37,7 +37,7 @@ Microsoft Defender for Endpoint は、高度な脅威を防止、検出、調査
 このガイドを使用して、以下を行います。
 
 - [Defender for Endpoint Plan 1 に含まれる機能の概要を確認する (プレビュー)](#defender-for-endpoint-plan-1-capabilities)
-- [Defender for Endpoint Plan 1 とプラン 2 の比較](defender-endpoint-plan-1-2.md)
+- [Defender for Endpoint プラン 1 とプラン 2を比較する](defender-endpoint-plan-1-2.md)
 - [Defender for Endpoint Plan 1 をセットアップして構成する方法について説明します。](mde-p1-setup-configuration.md)
 - [インシデントとアラートの表示、デバイスの管理、検出された脅威に関するレポートの使用が可能な Microsoft 365 Defender ポータルの使用を開始する](mde-plan1-getting-started.md)
 - [メンテナンスと運用の概要を確認する](mde-p1-maintenance-operations.md)
@@ -76,7 +76,7 @@ Defender for Endpoint Plan 1 (プレビュー) には、次の機能が含まれ
 
 | ファイル/デバイス | アクション | 説明 |
 |:---|:---|:---|
-| Device | ウイルス対策スキャンを実行する | ウイルス対策スキャンを開始します。 デバイスで脅威が検出された場合、ウイルス対策スキャン中にこれらの脅威に対処する場合が多い。 |
+| Device | ウイルス対策スキャンの実行 | ウイルス対策スキャンを開始します。 デバイスで脅威が検出された場合、ウイルス対策スキャン中にこれらの脅威に対処する場合が多い。 |
 | Device | デバイスの分離 | Defender for Endpoint への接続を維持しながら、組織のネットワークからデバイスを切断します。 このアクションを使用すると、デバイスを監視し、必要に応じてさらにアクションを実行できます。 |
 | ファイル | 停止と検疫 |プロセスの実行を停止し、関連ファイルを検疫します。 |
 | ファイル | ファイルをブロックまたは許可するインジケーターを追加する | ブロックインジケーターは、ポータブル実行可能ファイルがデバイスで読み取り、書き込み、または実行されるのを防ぐ。 <p>許可インジケーターは、ファイルがブロックまたは修復されるのを防ぐ。 |
@@ -118,7 +118,7 @@ Defender for Endpoint の攻撃表面縮小機能の詳細については、「�
 
 詳細については、「フォルダー アクセスを [制御して重要なフォルダーを保護する」を参照してください](controlled-folders.md)。
 
-### <a name="device-control"></a>デバイス制御
+### <a name="device-control"></a>デバイス コントロール
 
 組織のデバイスに対する脅威は、USB ドライブなどのリムーバブル ドライブ上のファイルの形式で受け取る場合があります。 Defender for Endpoint には、承認されていない周辺機器からの脅威がデバイスを侵害するのを防ぐための機能が含まれています。 Defender for Endpoint を構成して、リムーバブル デバイス上のリムーバブル デバイスとファイルをブロックまたは許可できます。 
 

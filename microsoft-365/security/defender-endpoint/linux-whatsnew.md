@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: reference
 ms.technology: mde
 ms.openlocfilehash: 506b8103946d16c5ec85cc6d3cb449ef67f340f8
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58863992"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220481"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender for Endpoint on Linux の新機能
 

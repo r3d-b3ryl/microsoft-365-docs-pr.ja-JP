@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: e295d4014231242bf1e3ae7dceaeb38dfea2fa1c
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58246318"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221550"
 ---
 # <a name="list-alerts-api"></a>アラート API の一覧表示
 
@@ -64,8 +64,8 @@ ms.locfileid: "58246318"
 :---|:---|:---
 アプリケーション | Alert.Read.All | 'すべてのアラートの読み取り'
 アプリケーション | Alert.ReadWrite.All | 'すべてのアラートの読み取りと書き込み'
-委任 (職場または学校のアカウント) | Alert.Read | 'アラートの読み取り'
-委任 (職場または学校のアカウント) | Alert.ReadWrite | 'アラートの読み取りと書き込み'
+委任 (職場または学校アカウント) | Alert.Read | 'アラートの読み取り'
+委任 (職場または学校アカウント) | Alert.ReadWrite | 'アラートの読み取りと書き込み'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
@@ -81,9 +81,9 @@ GET /api/alerts
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
-Authorization | String | ベアラー {token}。 **必須**
+Authorization | 文字列 | ベアラー {token}。 **必須**
 
 ## <a name="request-body"></a>要求本文
 

@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 詳細については、Microsoft 365 Business Voice。
-ms.openlocfilehash: 3e909d77d0206c6f4506030340965d8bd7c756a2ba66ab9e2619f2a706adaa3a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: edffbbe615b7098377297f96a6015929d5825694
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53809708"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221273"
 ---
 # <a name="overview-of-business-voice"></a>Business Voice の概要
 

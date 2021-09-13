@@ -16,11 +16,11 @@ ms.reviewer: ''
 manager: dansimp
 ms.date: 08/27/2021
 ms.openlocfilehash: 76508ef21b60d4376512f08a07925eca109f68e2
-ms.sourcegitcommit: 8ef23d275d7209a705295e2b117d4382b20ad4f7
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58866657"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221694"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>ファイル拡張子とフォルダーの場所に基づいて除外を構成および検証する
 
@@ -115,14 +115,14 @@ ms.locfileid: "58866657"
     3. [値名] 列の下の各フォルダーを独自 **の行に指定** します。
     4. ファイルを指定する場合は、ドライブ文字、フォルダー パス、ファイル名、拡張子など、ファイルへの完全修飾パスを入力してください。 [値 **] 列に「0」****と入力** します。
 
-5. **[OK]** をクリックします。
+5. その後で、**[OK]** を選択します。
 
 6. [拡張機能 **の除外] 設定を** 開いて編集し、除外を追加します。
     1. オプションを [有効] に **設定します**。
     2. [オプション] **セクションで** 、[表示] **を選択します**。
     3. [値] 列の [値名] 列 **[0]** の下に、それぞれのファイル拡張子を独自の行に **入力** します。
 
-7. **[OK]** をクリックします。
+7. その後で、**[OK]** を選択します。
 
 <a id="ps"></a>
 

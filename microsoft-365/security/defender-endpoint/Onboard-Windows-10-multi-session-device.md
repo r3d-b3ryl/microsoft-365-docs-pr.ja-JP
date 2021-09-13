@@ -15,12 +15,12 @@ ms.author: dansimp
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 2b1527b9bef33d224b67d81f96cc9b43c703b1b2fbe873236f2882d74ffe751e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 16c953b3a1c27b73423a80b0d78b910f64b6af56
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53818901"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220674"
 ---
 # <a name="onboard-windows-10-multi-session-devices-in-azure-virtual-desktop"></a>Azure Windows 10デスクトップでのマルチセッション デバイスのオンボード 
 読み取り 6 分 
@@ -30,7 +30,7 @@ ms.locfileid: "53818901"
 
 Microsoft Defender for Endpoint では、VDI セッションと Azure Virtual Desktop セッションの両方の監視がサポートされています。 組織のニーズに応じて、従業員が管理されていないデバイス、リモートの場所、または類似のシナリオから企業データやアプリにアクセスするために、VDI または Azure Virtual Desktop セッションを実装する必要がある場合があります。 Microsoft Defender for Endpoint を使用すると、これらの仮想マシンで異常なアクティビティを監視できます。
 
- ## <a name="before-you-begin"></a>はじめに
+ ## <a name="before-you-begin"></a>開始する前に
 非永続的な [VDI の考慮事項について理解してください](/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1)。 [Azure Virtual Desktop には](/azure/virtual-desktop/overview)非永続化オプションは用意されませんが、新しいホストのプロビジョニングやマシンの再展開に使用できるゴールデン Windows イメージを使用する方法が提供されます。 これにより、環境の変動性が高まるため、Microsoft Defender for Endpoint ポータルで作成および管理されるエントリに影響が及び、セキュリティ アナリストの可視性が低下する可能性があります。
 
 > [!NOTE]

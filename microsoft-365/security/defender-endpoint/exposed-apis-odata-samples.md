@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: e88371ed141b54d873193df075313d2aed9786385ac4fbc07d5fe579d7bff59f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 31fe51aac9262e5d3bcfa9d6a9c757ddeb30f42a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53793996"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220577"
 ---
 # <a name="odata-queries-with-microsoft-defender-for-endpoint"></a>エンドポイント用 Microsoft Defender を使用した OData クエリ
 
@@ -44,7 +44,7 @@ OData クエリについて詳しくない場合は [、「OData V4 クエリ」
 ## <a name="properties-that-support-filter"></a>このプロパティをサポート$filter
 
 - [アラート](alerts.md): `alertCreationTime` , , , , , , and `lastUpdateTime` `incidentId` `InvestigationId` `status` `severity` `category` .
-- [コンピューター](machine.md): `ComputerDnsName` `LastSeen` `HealthStatus` 、、、、、、 `OsPlatform` `RiskScore` `RbacGroupId` です。
+- [Machine](machine.md): `ComputerDnsName` , , , , , and `LastSeen` `HealthStatus` `OsPlatform` `onboardingStatus` `RiskScore` `RbacGroupId` .
 - [MachineAction](machineaction.md): `Status` , , , and `MachineId` `Type` `Requestor` `CreationDateTimeUtc` .
 - [インジケーター](ti-indicator.md): `indicatorValue` , , , , and `indicatorType` `creationTimeDateTimeUtc` `createdBy` `severity` `action` .
 

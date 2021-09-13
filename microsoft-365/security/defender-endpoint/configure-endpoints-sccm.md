@@ -18,11 +18,11 @@ ms.topic: article
 ms.date: 02/07/2020
 ms.technology: mde
 ms.openlocfilehash: 6d4c63bbf13ec4149a9250b3b4240926ece0d2c4
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571328"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221717"
 ---
 # <a name="onboard-the-windows-10-devices-using-configuration-manager"></a>Configuration Manager を使用Windows 10デバイスのオンボード
 
@@ -105,7 +105,7 @@ Name: "AllowSampleCollection"
 Value: 0 or 1
 ```
 
-ここで、キーの種類は D-WORD です。 使用可能な値は次のいずれかです。
+ここで、キーの種類は D-WORD です。 使用可能な値は次のとおりです。
 
 - 0: このデバイスからのサンプル共有を許可しない
 - 1: このデバイスからすべての種類のファイルを共有できます

@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 722c4a28ab477b34fc3e52cb3eb3efddf319d0d8
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58246236"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221405"
 ---
 # <a name="get-file-related-machines-api"></a>ファイル関連のコンピューター API を取得する
 
@@ -54,8 +54,8 @@ ms.locfileid: "58246236"
 :---|:---|:---
 アプリケーション|Machine.Read.All|'すべてのコンピューター プロファイルを読み取る'
 アプリケーション|Machine.ReadWrite.All|'すべてのコンピューター情報の読み取りと書き込み'
-委任 (職場または学校のアカウント)|Machine.Read|'コンピューター情報の読み取り'
-委任 (職場または学校のアカウント)|Machine.ReadWrite|'コンピューター情報の読み取りおよび書き込み'
+委任 (職場または学校アカウント)|Machine.Read|'コンピューター情報の読み取り'
+委任 (職場または学校アカウント)|Machine.ReadWrite|'コンピューター情報の読み取りおよび書き込み'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
@@ -71,9 +71,9 @@ GET /api/files/{id}/machines
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
-Authorization|String|ベアラー {token}。 **必須**
+Authorization|文字列|ベアラー {token}。 **必須**
 
 ## <a name="request-body"></a>要求本文
 

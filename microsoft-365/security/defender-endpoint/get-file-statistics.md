@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 6e08f8379189bf221ae8eb450666084932a950b3
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58347134"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221394"
 ---
 # <a name="get-file-statistics-api"></a>ファイル統計 API の取得
 
@@ -53,7 +53,7 @@ ms.locfileid: "58347134"
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
 アプリケーション|File.Read.All|'ファイル プロファイルの読み取り'
-委任 (職場または学校のアカウント)|File.Read.All|'ファイル プロファイルの読み取り'
+委任 (職場または学校アカウント)|File.Read.All|'ファイル プロファイルの読み取り'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
@@ -68,13 +68,13 @@ GET /api/files/{id}/stats
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**
 
 ## <a name="request-uri-parameters"></a>要求 URI パラメーター
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 lookBackHours|Int32|統計を取得するために検索する時間を定義します。 既定値は 30 日です。 **オプション**。
 

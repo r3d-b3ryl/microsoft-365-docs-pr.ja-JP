@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: c89b5b676e25b23e0e5fdfb925f6894647cb41e5
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823867"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220445"
 ---
 # <a name="manage-automation-file-uploads"></a>自動化ファイルのアップロードを管理する
 

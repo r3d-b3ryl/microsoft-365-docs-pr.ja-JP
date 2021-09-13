@@ -21,11 +21,11 @@ ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
 ms.openlocfilehash: e66f9133959ce7f09915361e7583ae809e33647e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567678"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221154"
 ---
 # <a name="learn-about-privileged-access-management"></a>特権アクセス管理の詳細
 

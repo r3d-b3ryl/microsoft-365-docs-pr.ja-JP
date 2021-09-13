@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: ff5a2277edc820ee03cb7c545595bd456aed27d86e41723347cce8d80d25af19
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 74f58959c22313806ebc95aef14e8ccb2d75326b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53844897"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220183"
 ---
 # <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>グループ ポリシー設定を使用して、グループ ポリシーの構成とMicrosoft Defender ウイルス対策
 
@@ -76,8 +76,8 @@ ms.locfileid: "53844897"
 | ネットワーク検査システム | ネットワーク トラフィック検査用の追加の定義セットを指定する | [ネットワーク トラフィック検査用の追加の定義セットを指定する](specify-additional-definitions-network-traffic-inspection-mdav.md) |
 | ネットワーク検査システム | 定義の削除を有効にする | [定義の削除を構成する](turn-on-definition-retirement.md)  |
 | ネットワーク検査システム | プロトコル認識を有効にする | [プロトコル認識を有効にする](turn-on-protocol-recognition.md)  |
-| 検疫する | 検疫フォルダーからアイテムを削除するローカル設定の上書きを構成する | [ユーザーによるポリシー設定のローカル変更を防止または許可する](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
-| 検疫する | 検疫フォルダーからのアイテムの削除を構成する | [スキャンの修復をMicrosoft Defender ウイルス対策する](configure-remediation-microsoft-defender-antivirus.md) |
+| Quarantine | 検疫フォルダーからアイテムを削除するローカル設定の上書きを構成する | [ユーザーによるポリシー設定のローカル変更を防止または許可する](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
+| Quarantine | 検疫フォルダーからのアイテムの削除を構成する | [スキャンの修復をMicrosoft Defender ウイルス対策する](configure-remediation-microsoft-defender-antivirus.md) |
 | リアルタイム保護 | コンピューター上のファイルとプログラムのアクティビティを監視するローカル設定の上書きを構成する | [ユーザーによるポリシー設定のローカル変更を防止または許可する](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | リアルタイム保護 | 受信および送信ファイルのアクティビティを監視するローカル設定の上書きを構成する | [ユーザーによるポリシー設定のローカル変更を防止または許可する](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | リアルタイム保護 | ダウンロードしたファイルと添付ファイルをスキャンするローカル設定の上書きを構成する | [ユーザーによるポリシー設定のローカル変更を防止または許可する](configure-local-policy-overrides-microsoft-defender-antivirus.md) |

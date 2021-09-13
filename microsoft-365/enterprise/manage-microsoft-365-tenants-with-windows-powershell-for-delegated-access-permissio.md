@@ -18,11 +18,11 @@ ms.custom: seo-marvel-apr2020
 ms.assetid: f92d5116-5b66-4150-ad20-1452fc3dd712
 description: この記事では、PowerShell を使用して顧客のテナンシー Microsoft 365管理する方法について説明します。
 ms.openlocfilehash: ee0eb3a645d6590e2393fe8ea7820511df36ab4a
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356014"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220986"
 ---
 # <a name="manage-microsoft-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>委任Microsoft 365アクセス許可 (DAP) パートナー Windows PowerShellを使用してテナントを管理する
 

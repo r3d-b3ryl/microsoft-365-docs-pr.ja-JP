@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f0172b6346fd066cee273c16c1650a24f900077054e3848ceea970791d85b8fc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 31ff698a6094e72cea32b7db19db8edf947a1326
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833977"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221574"
 ---
 # <a name="find-devices-by-internal-ip-api"></a>内部 IP API でデバイスを検索する
 
@@ -53,8 +53,8 @@ ms.locfileid: "53833977"
 :---|:---|:---
 アプリケーション|Machine.Read.All|'すべてのコンピューター プロファイルを読み取る'
 アプリケーション|Machine.ReadWrite.All|'すべてのコンピューター情報の読み取りと書き込み'
-委任 (職場または学校のアカウント)|Machine.Read|'コンピューター情報の読み取り'
-委任 (職場または学校のアカウント)|Machine.ReadWrite|'コンピューター情報の読み取りおよび書き込み'
+委任 (職場または学校アカウント)|Machine.Read|'コンピューター情報の読み取り'
+委任 (職場または学校アカウント)|Machine.ReadWrite|'コンピューター情報の読み取りおよび書き込み'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
@@ -71,7 +71,7 @@ GET /api/machines/findbyip(ip='{IP}',timestamp={TimeStamp})
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**
 

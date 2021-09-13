@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 73dd701eff97d7afb3fee7f4480a16296fa3d983
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58347122"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221369"
 ---
 # <a name="list-investigations-api"></a>リスト調査 API
 
@@ -62,8 +62,8 @@ Microsoft Defender [for Endpoint を使用した OData クエリの例を参照�
 :---|:---|:---
 アプリケーション|Alert.Read.All|'すべてのアラートの読み取り'
 アプリケーション|Alert.ReadWrite.All|'すべてのアラートの読み取りと書き込み'
-委任 (職場または学校のアカウント)|Alert.Read|'アラートの読み取り'
-委任 (職場または学校のアカウント)|Alert.ReadWrite|'アラートの読み取りと書き込み'
+委任 (職場または学校アカウント)|Alert.Read|'アラートの読み取り'
+委任 (職場または学校アカウント)|Alert.ReadWrite|'アラートの読み取りと書き込み'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
@@ -78,7 +78,7 @@ GET https://api.securitycenter.microsoft.com/api/investigations
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**
 

@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: b9d00ec13a08751882e7c699a4e029083dc08bc6
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567870"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221669"
 ---
 # <a name="ensure-your-devices-are-configured-properly"></a>デバイスが正しく構成されていることを確認する
 

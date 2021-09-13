@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: fc57fd850e0cbb6165e624127462b167b53dec65e9151d6b7bbe930160bc0787
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 480ac20e3fe6ac9b3b8c7aa66b759b361a96a595
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817713"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220289"
 ---
 # <a name="set-device-value-api"></a>デバイス値 API の設定
 
@@ -56,7 +56,7 @@ ms.locfileid: "53817713"
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
 アプリケーション|Machine.ReadWrite.All|'すべてのコンピューター情報の読み取りと書き込み'
-委任 (職場または学校のアカウント)|Machine.ReadWrite|'コンピューター情報の読み取りおよび書き込み'
+委任 (職場または学校アカウント)|Machine.ReadWrite|'コンピューター情報の読み取りおよび書き込み'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
@@ -72,16 +72,16 @@ POST https://api.securitycenter.microsoft.com/api/machines/{machineId}/setDevice
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
-Authorization|String|ベアラー {token}。 **必須**
+Authorization|文字列|ベアラー {token}。 **必須**
 Content-Type|string|application/json. **必須**
 
 ## <a name="request-body"></a>要求本文
 
 要求本文で、JSON オブジェクトに次のパラメーターを指定します。
 
-パラメーター|種類|説明
+パラメーター|型|説明
 :---|:---|:---
 DeviceValue|列挙|デバイスの値。 使用できる値は、'Normal'、'Low'、および 'High' です。 **必須**
 

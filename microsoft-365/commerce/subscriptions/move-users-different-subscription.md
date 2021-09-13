@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: サブスクリプション間でユーザーを移動する方法について学習します。
 ms.date: 07/01/2020
-ms.openlocfilehash: 014112043582c19d6b8461c8205e03516e68e814bbc2fd62e72aa32772573c01
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 96ae6a589469004f2479edb2a4f8ed384b25f841
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53852081"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221178"
 ---
 # <a name="move-users-to-a-different-subscription"></a>ユーザーを別のサブスクリプションに移動する
 
@@ -45,13 +45,13 @@ ms.locfileid: "53852081"
 
 ::: moniker range="o365-germany"
 
- 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
+ 1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> の順に選択します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。
+ 1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> の順に選択します。
 
 ::: moniker-end
 

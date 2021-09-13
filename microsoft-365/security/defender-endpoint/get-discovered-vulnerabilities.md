@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 77df9458dfa2647cc75cdbfa6d56e318de9505e4f33ec8e39b6db2cfa7d16a78
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2b6402a7c1fbc3ace0d27a18c4832b4b4f94ebfb
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53890472"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221478"
 ---
 # <a name="get-discovered-vulnerabilities"></a>検出された脆弱性を取得する
 
@@ -50,7 +50,7 @@ ms.locfileid: "53890472"
 アクセス許可の種類 | アクセス許可 | アクセス許可の表示名
 :---|:---|:---
 アプリケーション |Vulnerability.Read.All | '脅威と脆弱性管理の脆弱性情報の読み取り'
-委任 (職場または学校のアカウント) | 脆弱性。読み取り | '脅威と脆弱性管理の脆弱性情報の読み取り'
+委任 (職場または学校アカウント) | 脆弱性。読み取り | '脅威と脆弱性管理の脆弱性情報の読み取り'
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -60,9 +60,9 @@ GET /api/machines/{machineId}/vulnerabilities
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
-Authorization | String | ベアラー {token}。 **必須**
+Authorization | 文字列 | ベアラー {token}。 **必須**
 
 ## <a name="request-body"></a>要求本文
 

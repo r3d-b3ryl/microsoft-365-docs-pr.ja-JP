@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 488450f43de17904cbcac97e2aceaf11f1e12f17
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507592"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220469"
 ---
 # <a name="list-software-by-recommendation"></a>推奨されるソフトウェアを一覧表示する
 
@@ -47,7 +47,7 @@ ms.locfileid: "58507592"
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
 アプリケーション|Software.Read.All|'脅威と脆弱性管理ソフトウェア情報の読み取り'
-委任 (職場または学校のアカウント)|SecurityRecommendation.Read|'脅威と脆弱性管理のセキュリティに関する推奨事項情報の読み取り'
+委任 (職場または学校アカウント)|SecurityRecommendation.Read|'脅威と脆弱性管理のセキュリティに関する推奨事項情報の読み取り'
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -59,7 +59,7 @@ GET /api/recommendations/{id}/software
 
 名前|型|説明
 :---|:---|:---
-Authorization|String|ベアラー {token}。 **必須**
+Authorization|文字列|ベアラー {token}。 **必須**
 
 ## <a name="request-body"></a>要求本文
 

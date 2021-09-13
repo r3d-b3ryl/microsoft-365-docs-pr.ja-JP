@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Microsoft SharePoint Syntex でモデルの名前を変更する方法と理由について説明します。
-ms.openlocfilehash: c20d0b0903850e2ff0f0ec68990710001bf64350ae4ab6c123cc12f9125e234d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d1a96646f507a3124759b2a5865440d4d5621209
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53871008"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221777"
 ---
 # <a name="rename-a-model-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex の文書理解モデルの名前を変更する
 

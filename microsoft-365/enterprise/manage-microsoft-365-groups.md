@@ -23,11 +23,11 @@ search.appverid:
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: グループを管理する方法Microsoft 365します。
 ms.openlocfilehash: 72bc47bb699e32f849f21ea4c5470a95d6228b68
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356686"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221033"
 ---
 # <a name="manage-microsoft-365-groups"></a>Microsoft 365 グループを管理する
 

@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 0b21a95930138972ac3f7fe3c1474b0434a68e4c
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 6a4d548edb660838be9ea3d1a69749f23d3ac6c8
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567846"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221909"
 ---
 # <a name="view-attack-surface-reduction-events"></a>攻撃面の減少イベントを表示する
 
@@ -57,7 +57,7 @@ E5 サブスクリプションを持っている場合は、Windows セキュリ
 
 2. [**イベント ビューアー] と** 入力し、[スタート メニュー ビューアー]**を開きます**。
 
-3. [アクション **の**  >  **インポート] [カスタム ビュー...] を選択します。**
+3. [アクション **の** \> **インポート] [カスタム ビュー...] を選択します。**
 
    > [!div class="mx-imgBorder"]
    > ![[Even ビューアー] ウィンドウの左側にあるカスタム ビューのインポートを強調表示するアニメーション。](images/events-import.gif)
@@ -154,9 +154,9 @@ E5 サブスクリプションを持っている場合は、Windows セキュリ
 
 |特徴|プロバイダー/ソース|イベント ID|説明|
 |---|---|:---:|---|
-|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|1 |ACG の監査|
-|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|2 |ACG の実施|
-|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|3 |[Do not allow child processes] (子プロセスを許可しない) 監査|
+|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|1|ACG の監査|
+|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|2|ACG の実施|
+|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|3|[Do not allow child processes] (子プロセスを許可しない) 監査|
 |エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|4 |[Do not allow child processes] (子プロセスを許可しない) ブロック|
 |エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|5 |[Block low integrity images] (整合性が低いイメージのブロック) 監査|
 |エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|6 |[Block low integrity images] (整合性が低いイメージのブロック) ブロック|
@@ -164,9 +164,9 @@ E5 サブスクリプションを持っている場合は、Windows セキュリ
 |エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|8 |[Block remote images] (リモート イメージのブロック) ブロック|
 |エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|9 |[Disable win32k system calls] (win32k システム呼び出しの無効化) 監査|
 |エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|10 |[Disable win32k system calls] (win32k システム呼び出しの無効化) ブロック|
-|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|11 |[Code integrity guard] (コードの整合性の保護) 監査|
+|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|11|[Code integrity guard] (コードの整合性の保護) 監査|
 |エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|12 |[Code integrity guard] (コードの整合性の保護) ブロック|
-|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|13 |EAF の監査|
+|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|13|EAF の監査|
 |エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|14 |EAF の実施|
 |エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|15 |EAF+ の監査|
 |エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|16 |EAF+ の実施|

@@ -17,11 +17,11 @@ f1.keywords:
 - NOCSH
 description: この記事では、グローバル テナントの中国ユーザー向けにネットワーク パフォーマンスを最適化Microsoft 365します。
 ms.openlocfilehash: 9660270dbe73e9cbdff0b1e3796224b36319956b
-ms.sourcegitcommit: 59bda7cfd92ef1b0e97858da51a776ec668bcfe0
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "58884722"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220817"
 ---
 # <a name="microsoft-365-global-tenant-performance-optimization-for-china-users"></a>Microsoft 365ユーザー向けグローバル テナントパフォーマンスの最適化
 

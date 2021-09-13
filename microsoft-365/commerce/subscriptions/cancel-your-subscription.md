@@ -21,11 +21,11 @@ search.appverid: MET150
 description: ユーザー ライセンスが 25 未満の場合は、いつでも管理センターから一般法人向け Microsoft 365 の試用版または有料版サブスクリプションをキャンセルできます。
 ms.date: 04/08/2021
 ms.openlocfilehash: 900fd5f544a405b5f337623ba35a353cefaf9bab
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255701"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221225"
 ---
 # <a name="cancel-your-subscription"></a>サブスクリプションをキャンセルする
 
@@ -55,7 +55,7 @@ ms.locfileid: "58255701"
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[お使いの製品]</a> ページの順に移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">お使いの製品</a>] ページの順に移動します。
 
 ::: moniker-end
 

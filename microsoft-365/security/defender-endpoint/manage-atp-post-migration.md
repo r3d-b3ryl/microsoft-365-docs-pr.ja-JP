@@ -21,11 +21,11 @@ ms.topic: conceptual
 ms.date: 01/26/2021
 ms.reviewer: chventou
 ms.openlocfilehash: 2d34ec5ac2fe7578e610353a21f9230c699c6a3c
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823964"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220446"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-post-migration"></a>Microsoft Defender for Endpoint の管理、移行後
 
@@ -45,7 +45,7 @@ ms.locfileid: "58823964"
 
 ****
 
-|ツール/メソッド|内容|
+|ツール/メソッド|説明|
 |---|---|
 |**[脅威と脆弱性の管理ダッシュボードの分析情報](/windows/security/threat-protection/microsoft-defender-atp/tvm-dashboard-insights)** [(Microsoft 365 Defenderポータル](https://security.microsoft.com/))|ダッシュボード& 脆弱性の管理脅威は、セキュリティ運用チームが使用できるアクション可能な情報を提供して、露出を減らし、組織のセキュリティ体制を改善します。 <p> 「[脅威の& 脆弱性の管理」](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)および「[脅威の概要」をMicrosoft 365 Defender。](/microsoft-365/security/defender-endpoint/use)|
 |**[Microsoft Intune](/mem/intune/fundamentals/what-is-intune)** (推奨)|Microsoft Intune (Intune) は、Microsoft エンドポイント マネージャー[](/mem/endpoint-manager-overview)デバイス管理 (MDM) とモバイル アプリケーション管理 (MAM) に重点を当てました。 Intune では、携帯電話、タブレット、ラップトップなど、組織のデバイスの使用方法を制御できます。 特定のポリシーを構成して、アプリケーションを制御できます。 <p> [「Intune を使用した Microsoft Defender for Endpoint の管理」を参照してください](manage-atp-post-migration-intune.md)。|

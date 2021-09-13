@@ -16,11 +16,11 @@ ms.collection:
 ms.custom: Ent_TLGs
 description: このテスト ラボ ガイドを使用して、エンタープライズ テスト環境に対する権限Microsoft 365アクセス管理を有効にしてください。
 ms.openlocfilehash: d4d3658ad8c7533e2540dde6c390b4f2b4691cb8
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569407"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220745"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-for-enterprise-test-environment"></a>エンタープライズ テスト環境向けMicrosoft 365アクセス管理
 
@@ -157,5 +157,5 @@ ms.locfileid: "58569407"
 ## <a name="see-also"></a>関連項目
 
 - [Microsoft 365 Enterprise のテスト ラボ ガイド](m365-enterprise-test-lab-guides.md)
-- [Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
+- [Microsoft 365 for Enterprise の概要](microsoft-365-overview.md)
 - [Microsoft 365 for enterprise のドキュメント](/microsoft-365-enterprise/)

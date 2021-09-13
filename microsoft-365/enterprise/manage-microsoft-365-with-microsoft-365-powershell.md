@@ -20,11 +20,11 @@ ms.custom:
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
 description: PowerShell を使用してユーザー Microsoft 365、365 アプリを管理する方法について説明します。
 ms.openlocfilehash: bbbbec88f8dcb4b31102bab4be4549c94874aff8
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58357079"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220985"
 ---
 # <a name="manage-microsoft-365-with-powershell"></a>PowerShell で Microsoft 365を管理する
 

@@ -15,11 +15,11 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.openlocfilehash: be5cbc03fa75d65d2c3fabbbf42594098d0d9d69
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507976"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221585"
 ---
 # <a name="evaluate-network-protection"></a>ネットワーク保護を評価する
 

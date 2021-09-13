@@ -18,11 +18,11 @@ ms.custom:
 - O365ITProTrain
 description: PowerShell を使用してセキュリティ グループを管理する方法について説明します。
 ms.openlocfilehash: e9842585fbb88711c0efa6e515ca8b54c124338e
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356266"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220937"
 ---
 # <a name="manage-security-groups-with-powershell"></a>PowerShell を使用してセキュリティ グループを管理する
 

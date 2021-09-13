@@ -18,12 +18,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: さまざまな形式のデータを処理する方法の概要をAdvanced eDiscovery。
-ms.openlocfilehash: 46222f84e1b9436b0bc5d29c1fb10fce1d29d56363deff5f850a13f5c47a2a0a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ad723195ab0ae8a8d1200428bde00e2fcb0094ae
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53905453"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221141"
 ---
 # <a name="work-with-processing-errors-in-advanced-ediscovery"></a>エラーの処理を処理Advanced eDiscovery
 

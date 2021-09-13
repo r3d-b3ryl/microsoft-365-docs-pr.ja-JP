@@ -18,11 +18,11 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 description: この記事では、組織のデータを組織のデータをユーザーに移行するのに役立つMicrosoft 365。
 ms.openlocfilehash: 80efbafe17d0a35da323c6f6274e18af270c4985
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58355954"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220806"
 ---
 # <a name="migrate-your-organization-data-to-microsoft-365-enterprise"></a>組織のデータを組織のデータに移行Microsoft 365 Enterprise
 

@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 7712500caf2e30d6ecdb8146ecfa4173e087f154
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58611149"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221466"
 ---
 # <a name="get-domain-related-alerts-api"></a>ドメイン関連のアラート API を取得する
 
@@ -54,8 +54,8 @@ ms.locfileid: "58611149"
 :---|:---|:---
 アプリケーション|Alert.Read.All|'すべてのアラートの読み取り'
 アプリケーション|Alert.ReadWrite.All|'すべてのアラートの読み取りと書き込み'
-委任 (職場または学校のアカウント)|Alert.Read|'アラートの読み取り'
-委任 (職場または学校のアカウント)|Alert.ReadWrite|'アラートの読み取りと書き込み'
+委任 (職場または学校アカウント)|Alert.Read|'アラートの読み取り'
+委任 (職場または学校アカウント)|Alert.ReadWrite|'アラートの読み取りと書き込み'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
@@ -73,7 +73,7 @@ GET /api/domains/{domain}/alerts
 
 |ヘッダー|値|
 |---|---|
-|Authorization|String|
+|Authorization|文字列|
 
 ## <a name="request-body"></a>要求本文
 

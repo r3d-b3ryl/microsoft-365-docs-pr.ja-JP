@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 2a3a1817b1a56ed5c3b529179a6f5253677211de
-ms.sourcegitcommit: 008200dad00701b6d457c1af48a33448235ce1c8
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58392119"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221310"
 ---
 # <a name="get-package-sas-uri-api"></a>パッケージ SAS URI API の取得
 
@@ -54,7 +54,7 @@ ms.locfileid: "58392119"
 :---|:---|:---
 アプリケーション|Machine.Read.All|''すべてのコンピューター プロファイルを読み取る'
 アプリケーション|"Machine.ReadWrite.All|'すべてのコンピューター情報の読み取りと書き込み'
-委任 (職場または学校のアカウント)|Machine.CollectForensics|'collect forensics'
+委任 (職場または学校アカウント)|Machine.CollectForensics|'collect forensics'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
@@ -72,7 +72,7 @@ GET https://api.securitycenter.microsoft.com/api/machineactions/{machine action 
 
 名前|型|説明
 :---|:---|:---
-Authorization|String|ベアラー {token}。 **必須**
+Authorization|文字列|ベアラー {token}。 **必須**
 
 ## <a name="request-body"></a>要求本文
 

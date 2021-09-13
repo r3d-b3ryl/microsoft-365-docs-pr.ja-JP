@@ -21,11 +21,11 @@ ms.custom:
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: この記事では、PowerShell を使用してオンライン ユーザー Microsoft 365、SharePointサイトを管理する方法について説明します。
 ms.openlocfilehash: 04eb4a0e2c7d2c309ae4bbe063102293a017bbd6
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356002"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220913"
 ---
 # <a name="manage-sharepoint-online-users-and-groups-with-powershell"></a>PowerShell を使用して SharePoint Online のユーザーとグループを管理する
 

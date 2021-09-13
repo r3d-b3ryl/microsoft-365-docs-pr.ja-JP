@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: e11efcf73a6fcf91e6260ef4ecf376cf6b453dca770585a37681ebd4524b701d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 43d1e11ebea2933f8a101b640690f44089e2087d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833521"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220349"
 ---
 # <a name="raw-data-streaming-api"></a>Raw Data Streaming API
 
@@ -31,7 +31,7 @@ ms.locfileid: "53833521"
 **適用対象:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configuresiem-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configuresiem-abovefoldlink)
 
 ## <a name="stream-advanced-hunting-events-to-event-hubs-andor-azure-storage-account"></a>高度なハンティング イベントをイベント ハブまたは Azure ストレージ アカウントにストリーミングする
 
@@ -46,7 +46,7 @@ Microsoft Defender for Endpoint は[](../defender/advanced-hunting-overview.md)�
 [エンドポイント イベントの Microsoft Defender を Azure イベント ハブにストリーミングする](raw-data-export-event-hub.md)|テナントでストリーミング API を有効にし、Defender for Endpoint を構成して高度なハンティングを [イベント](advanced-hunting-overview.md) ハブにストリーミングする方法について説明します。
 [エンドポイントイベントの Defender を Azure ストレージ アカウントにストリーミングする](raw-data-export-storage.md)|テナントでストリーミング API を有効にし、Defender for Endpoint を構成して Azure ストレージ アカウントに [高度](advanced-hunting-overview.md) なハンティングをストリーミングする方法について説明します。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [高度なハンティングの概要](advanced-hunting-overview.md)
 - [Azure Event Hubs のドキュメント](/azure/event-hubs/)

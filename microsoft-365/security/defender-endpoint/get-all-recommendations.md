@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4bacfe5cb45145ecfcde9a78f111ebdeaca9be9616e8ff2034957f1e0fa51c71
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: da9286d548cbe1f2566bfdac1397178d40ae9dc8
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884825"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221549"
 ---
 # <a name="list-all-recommendations"></a>すべての推奨事項を一覧表示する
 
@@ -49,7 +49,7 @@ ms.locfileid: "53884825"
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
 アプリケーション|SecurityRecommendation.Read.All|'脅威と脆弱性管理のセキュリティに関する推奨事項情報の読み取り'
-委任 (職場または学校のアカウント)|SecurityRecommendation.Read |'脅威と脆弱性管理のセキュリティに関する推奨事項情報の読み取り'
+委任 (職場または学校アカウント)|SecurityRecommendation.Read |'脅威と脆弱性管理のセキュリティに関する推奨事項情報の読み取り'
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -59,9 +59,9 @@ GET /api/recommendations
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
-Authorization|String|ベアラー {token}。 **必須**
+Authorization|文字列|ベアラー {token}。 **必須**
 
 ## <a name="request-body"></a>要求本文
 

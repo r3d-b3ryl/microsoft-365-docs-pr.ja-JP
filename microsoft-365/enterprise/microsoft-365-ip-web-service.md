@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Office 365 の IP アドレスと URL web サービスを使用して、Office 365 のネットワークトラフィックをより簡単に識別、差別化する方法について説明します。
-ms.openlocfilehash: 4de78934a76a7dba16f79cb9cc6f93a7c935a314
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 62e9b638b0f767aef3b7f52bb3d129310d2bcbd5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53419789"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220901"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>Office 365 IP アドレスと URL の Web サービス
 
@@ -132,7 +132,7 @@ Microsoft は、Office 365 の IP アドレスと FQDN エントリを毎月初�
 }
 ```
 
-例 3 要求 URI: <https://endpoints.office.com/version/Worldwide?Format=CSV&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
+例 3 要求 URI: <https://endpoints.office.com/version/Worldwide?Format=CSV&ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
 この URI は CSV 形式で出力を表示します。結果の例:
 
@@ -141,7 +141,7 @@ instance,latest
 Worldwide,2018063000
 ```
 
-例 4 要求 URI: <https://endpoints.office.com/version/Worldwide?AllVersions=true&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
+例 4 要求 URI: <https://endpoints.office.com/version/Worldwide?AllVersions=true&ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
 この URI は、Office 365 ワールドワイド サービス インスタンスに対して発行された以前のすべてのバージョンを表示します。結果の例:
 
@@ -607,7 +607,7 @@ else:
 
 IP アドレスと URL の変更が Web サービスに発行された際にメール通知を受け取るには、いくつかの方法があります。
 
-- Microsoft Flow ソリューションを使用する方法については、「[Use Microsoft Flow to receive an email for changes to Office 365 IP Addresses and URLs (Microsoft Flow を使用して Office 365 IP アドレスと URL への変更の通知メールを受け取る)](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/m-p/240651)」を参照してください。
+- Power Automate ソリューションを使用する方法については、「[Power Automate を使用して Office 365 IP アドレスと URL への変更の通知メールを受け取る](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/m-p/240651)」を参照してください。
 - ARM テンプレートを使用して Azure Logic App を展開する場合は、「[Office 365 Update Notification (v1.1) (Office 365 更新通知 (v 1.1))](https://aka.ms/ipurlws-updates-template)」を参照してください。
 - PowerShell を使用して独自の通知スクリプトを作成するには、「[Send-MailMessage](/powershell/module/microsoft.powershell.utility/send-mailmessage)」 を参照してください。
 

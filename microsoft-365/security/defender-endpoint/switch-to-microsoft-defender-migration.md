@@ -25,11 +25,11 @@ ms.date: 08/16/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
 ms.openlocfilehash: 6fa205147dc3fa042d9bdb3a1d03c67f2b2efecb
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568878"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220243"
 ---
 # <a name="make-the-switch-from-non-microsoft-endpoint-protection-to-microsoft-defender-for-endpoint"></a>Microsoft 以外のエンドポイント保護から Microsoft Defender for Endpoint への切り替え
 

@@ -1,5 +1,5 @@
 ---
-title: メールボックス使用率サービスの通知
+title: メールボックス使用率サービスのアラート
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,21 +13,22 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
 description: メールボックス使用率サービスアラートを使用して、メールボックスクォータに達している保留状態のメールボックスを監視します。
-ms.openlocfilehash: f6ce0ad5d7f4affd5d0f4a108be0f0fbebe54766
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 417e0106505dcc31af6e9a279fd79655df712dd2
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508804"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220865"
 ---
 # <a name="service-alerts-for-mailbox-utilization-in-exchange-online-monitoring"></a>監視のメールボックス使用率に関するExchange Online通知
 
 クォータに達または超過するリスクExchange Onlineメールボックスを通知する新しい Exchange Online サービス アラートがリリースされました。 これらのサービス通知は、管理者の介入が必要な可能性がある組織内のメールボックスの数を表示します。
 
-これらのサービス通知は、サービス ウィンドウにMicrosoft 365 管理センター。 これらのサービス通知を表示するには、[**正常性** サービスの正常性] Exchange Online[アクティブな問題]  >    >  **タブをクリック** します。メールボックス使用率サービスアラートの例を次に示します。
+これらのサービス通知は、サービス ウィンドウにMicrosoft 365 管理センター。 これらのサービス通知を表示するには、[**正常性** サービスの正常性] Exchange Online[アクティブな問題]  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank"></a>  >  **タブをクリック** します。メールボックス使用率サービスアラートの例を次に示します。
 
 ![メールボックス使用率サービスアラート](../media/MailboxUtilizationServiceAlert.png)
 
@@ -52,7 +53,7 @@ ms.locfileid: "58508804"
 
 | # Mailboxes ProhibitSendReceiveQuota (警告)| # Mailboxes ProhibitSendReceiveQuota (Critical)** |# Mailboxes RecoverableItemsQuota (警告)|# Mailboxes RecoverableItemsQuota (Critical)** |
 |:--------------|:--------------|:------------------|:--------------- |
-| 2              | 2              | 1                  | 0               |
+| 2             | 2             | 1                 | 0               |
 ||||
 
 管理者がこれらのメールボックスに対して実行できるアクションは、アーカイブ メールボックスを有効にし、MRM アーカイブ ポリシー (アイテムをアーカイブ メールボックスに移動する Exchange Online の MRM 保持ポリシー) がメールボックスに適用され、アイテムがアーカイブ メールボックスに移動されるのを確認します。 詳細については、「メールボックスの [アーカイブポリシーと削除ポリシーを設定する」を参照してください](../compliance/set-up-an-archive-and-deletion-policy-for-mailboxes.md)。
@@ -65,7 +66,7 @@ ms.locfileid: "58508804"
 
 |# Mailboxes ProhibitSendReceiveQuota (警告) |# Mailboxes ProhibitSendReceiveQuota (Critical) |# Mailboxes RecoverableItemsQuota (警告) |# Mailboxes RecoverableItemsQuota (Critical)** |
 |:--------------|:--------------|:------------------|:--------------- |
-| 1              | 1              | 6                  | 0               |
+| 1             | 1             | 6                  | 0               |
 ||||
 
 管理者がこれらのメールボックスに対して実行できるアクションは、[回復可能なアイテム] フォルダーのクォータを増やします。 詳細については、「保留メールボックス [の回復可能なアイテムのクォータを増やす」を参照してください](../compliance/increase-the-recoverable-quota-for-mailboxes-on-hold.md)。
@@ -84,8 +85,8 @@ ms.locfileid: "58508804"
 | 6c041498-1611-5011-a058-1156ce60890c | PrimaryWithArchive | True | False | True | 398 |
 | 6c041498-1611-5011-a058-1156ce60890c | Primary | True | False | True | 10  |
 | 749ceecc-d49d-4000-a9d5-594dbaea1e56 | PrimaryWithArchive | False | True | False | 7  |
-| 269f6a85-1234-4648-8cde-59bbc7bc67d0 | PrimaryWithArchive | True | True | True | 1  |
-| 13fb778d-e1cb-4c44-5768-ad4282906c1f | PrimaryWithArchive | True | True  | False | 1  |
+| 269f6a85-1234-4648-8cde-59bbc7bc67d0 | PrimaryWithArchive | True | True | True | 1 |
+| 13fb778d-e1cb-4c44-5768-ad4282906c1f | PrimaryWithArchive | True | True  | False | 1 |
 |||||||
 
 次の一覧では、前の表の各列について説明します。
@@ -114,7 +115,7 @@ ms.locfileid: "58508804"
 
 クォータの問題を解決するためのアクションを実行しない場合は、この種類のサービス アラートが 4 日ごとに表示される可能性があります。 後続のサービス通知には、クォータに近い他のメールボックスのメールボックス数が多くなる場合があります。 クォータの問題を解決するためのアクションを実行すると、クォータの問題を持つ別のメールボックスが特定された場合にのみ、このサービス アラートが発生します。
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 - アーカイブ メールボックスの問題のトラブルシューティングと解決の詳細については、「コンプライアンス[Microsoft 365を参照してください](/office365/troubleshoot/microsoft-365-compliance-welcome)。
 

@@ -14,12 +14,12 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: このテスト ラボ ガイドを使用して、Intune デバイス コンプライアンス ポリシーをエンタープライズ テスト環境Microsoft 365に追加します。
-ms.openlocfilehash: db4c004e6cebfe94f4844ec3e07fb42ddedccc39
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 590af404a5c026cfe82afb314eec395aaa0560d3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58552170"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221069"
 ---
 # <a name="device-compliance-policies-for-your-microsoft-365-for-enterprise-test-environment"></a>エンタープライズ テスト環境Microsoft 365デバイス コンプライアンス ポリシー
 
@@ -50,7 +50,7 @@ Intune デバイスコンプライアンス ポリシーを追加するには、
 
 このフェーズでは、デバイスのコンプライアンス ポリシーを作成し、Windows 10します。 このフェーズでは、Microsoft Intune管理センター Microsoft エンドポイント マネージャー[を使用](https://go.microsoft.com/fwlink/?linkid=2109431)してグループを追加し、コンプライアンス ポリシーを作成します。
 
-1. [管理者] [Microsoft 365 管理センター](https://admin.microsoft.com)に移動し、グローバル管理者アカウントMicrosoft 365テスト ラボ サブスクリプションにサインインします。 管理センター **エンドポイント マネージャー** 選択します。 管理[エンドポイント マネージャーが開](https://go.microsoft.com/fwlink/?linkid=2109431)きます。
+1. [[管理者]](https://admin.microsoft.com)Microsoft 365 管理センターに移動し、グローバル管理者アカウントを使用して Microsoft 365 テスト ラボ サブスクリプションにサインインし、管理センターエンドポイント マネージャー<a href="https://go.microsoft.com/fwlink/?linkid=2109431" target="_blank">選択します</a>。
 
     [デバイス管理を有効にしていない] に似たメッセージがまだ表示 **されている** 場合は、MDM 機関として [Intune] を選択します。 具体的な手順については、「モバイル デバイス管理 [機関の設定」を参照してください](/mem/intune/fundamentals/mdm-authority-set)。
 
@@ -78,6 +78,6 @@ Intune デバイスコンプライアンス ポリシーを追加するには、
   
 [エンタープライズ テスト環境用に iOS Microsoft 365 Android デバイスを登録する](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
   
-[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
+[Microsoft 365 for Enterprise の概要](microsoft-365-overview.md)
 
 [Enterprise Mobility + Security (EMS)](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)

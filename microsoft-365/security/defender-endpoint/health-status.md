@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 1480e4322c59d841e4f24fecb55f2e5453471798
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58684270"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221874"
 ---
 # <a name="investigate-agent-health-issues"></a>エージェントの正常性に関する問題の調査
 

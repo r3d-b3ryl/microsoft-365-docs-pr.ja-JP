@@ -21,11 +21,11 @@ ms.topic: article
 ms.date: 07/29/2021
 ms.reviewer: chventou
 ms.openlocfilehash: 4891505408a3f831e6ecc0c2cecb0c67fa52e49f
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58822757"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220458"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-intune"></a>Intune を使用してエンドポイント用 Microsoft Defender を管理する
 

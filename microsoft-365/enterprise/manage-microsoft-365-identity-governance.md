@@ -23,11 +23,11 @@ search.appverid:
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: ID ガバナンス機能を使用するMicrosoft 365について説明します。
 ms.openlocfilehash: 9b353a83b79c2b66ca224914a7d33a4854919d4e
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356674"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221021"
 ---
 # <a name="manage-microsoft-365-identity-governance"></a>ID ガバナンスMicrosoft 365管理する
 

@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: e1983e023a0236ea1e0ad9ac82b8d089e120cd7d
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58683936"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220541"
 ---
 # <a name="privacy-information---microsoft-defender-for-endpoint-on-ios"></a>プライバシー情報 - Microsoft Defender for Endpoint on iOS
 

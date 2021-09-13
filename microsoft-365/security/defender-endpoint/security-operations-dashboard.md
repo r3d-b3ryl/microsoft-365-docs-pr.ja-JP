@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: 2612fc618c8bd3dd8362d86413bad386856a3063
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572553"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220302"
 ---
 # <a name="microsoft-defender-security-center-security-operations-dashboard"></a>Microsoft Defender セキュリティ センターセキュリティ操作ダッシュボード
 

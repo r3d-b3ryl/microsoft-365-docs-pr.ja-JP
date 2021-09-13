@@ -17,6 +17,7 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 - commerce_purchase
+- admindeeplinkMAC
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
@@ -24,12 +25,12 @@ search.appverid:
 - MOE150
 description: 一般法人向け Microsoft 365 の新しいライセンスを購入する方法について説明します。
 ms.date: 05/11/2021
-ms.openlocfilehash: c9734f4e3c2584241aadf1d7ed9558beebae1a8c18a6eac7173ac7915f56cec1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f209b5142a2cda863645c4d78c4b515e552befb9
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53803764"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221249"
 ---
 # <a name="buy-microsoft-365-licenses"></a>Microsoft 365 のライセンスを購入する
 
@@ -39,7 +40,7 @@ ms.locfileid: "53803764"
 
 ## <a name="try-it"></a>お試しください!
 
-1. Microsoft 365 管理センターで、**[課金情報]**、**[お使いの製品]** の順に選択してサブスクリプションを選択してください。
+1. [サブスクリプション] Microsoft 365 管理センター[**製品の請求]**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">**を選択**</a>し、サブスクリプションを選択します。
 1. **[ライセンスを購入する]** を選択します。
 1. 購入するライセンスの数を入力します。
 1. **[保存]** を選択します。

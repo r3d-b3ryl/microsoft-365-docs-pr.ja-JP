@@ -19,20 +19,21 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
+- admindeeplinkMAC
 ms.assetid: ''
 description: この記事では、特権アクセス管理を有効にし、構成する方法の詳細について説明Office 365。
-ms.openlocfilehash: 70af2d3582bd2a8166645ab7507369d48e5c17f0b43dae8543dac9e427bf2285
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e66a7e66c3505145b1fa4eb3e16db9ec63c3c1e4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53905477"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221165"
 ---
 # <a name="get-started-with-privileged-access-management"></a>特権アクセス管理の使用を開始する
 
-このトピックでは、組織内で特権アクセス管理を有効および構成する方法について説明します。 特権アクセスを管理および使用するには、Microsoft 365 管理センター管理 PowerShell Exchangeを使用できます。
+このトピックでは、組織内で特権アクセス管理を有効および構成する方法について説明します。 特権アクセスを管理および<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">使用</a>するには、Microsoft 365 管理センター管理 PowerShell Exchangeを使用できます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 特権アクセス管理を開始する前に、サブスクリプションとアドオンMicrosoft 365[確認](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)する必要があります。 特権アクセス管理にアクセスして使用するには、組織に次のいずれかのサブスクリプションまたはアドオンが必要です。
 
@@ -83,7 +84,7 @@ ms.locfileid: "53905477"
 
 1. 組織内の管理者[Microsoft 365 管理センター](https://admin.microsoft.com)資格情報を使用して、管理者アカウントにサインインします。
 
-2. 管理センターで、[グループの追加]  >  **に移動します**。
+2. 管理センターで、[グループを追加 <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"></a>する  >  **] に移動します**。
 
 3. [ **メールが有効なセキュリティ** グループ] を選択し、新しいグループの [ **名前**]、[ **グループ** の電子メール アドレス]、および **[説明** ] フィールドを入力します。
 
@@ -101,7 +102,7 @@ ms.locfileid: "53905477"
 
 1. 組織の管理者[アカウントMicrosoft 365 管理](https://admin.microsoft.com)資格情報を使用して、Microsoft 365 管理 センターにサインインします。
 
-2. 管理センターで、[組織]  >  **設定[設定**  >  **特権**&  >  **アクセス] に移動します**。
+2. 管理センターで、[Org 設定セキュリティ] 設定  >    >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**アクセス&**</a>  >  **に移動します**。
 
 3. [特権タスク **の承認を要求する] コントロールを有効** にする。
 
@@ -136,7 +137,7 @@ Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com'
 
 1. 組織の管理者[アカウントMicrosoft 365 管理](https://admin.microsoft.com)資格情報を使用して、Microsoft 365 管理 センターにサインインします。
 
-2. 管理センターで、[組織]  >  **設定[設定**  >  **特権**&  >  **アクセス] に移動します**。
+2. 管理センターで、[組織]  >  **設定[設定**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**特権**</a>&  >  **アクセス] に移動します**。
 
 3. [ **アクセス ポリシーと要求の管理] を選択します**。
 
@@ -182,7 +183,7 @@ New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType 
 
 1. 資格情報を使用[Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。
 
-2. 管理センターで、[組織]  >  **設定[設定**  >  **特権**&  >  **アクセス] に移動します**。
+2. 管理センターで、[組織]  >  **設定[設定**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**特権**</a>&  >  **アクセス] に移動します**。
 
 3. [ **アクセス ポリシーと要求の管理] を選択します**。
 
@@ -222,7 +223,7 @@ New-ElevatedAccessRequest -Task 'Exchange\New-MoveRequest' -Reason 'Attempting t
 
 1. 資格情報を使用[してMicrosoft 365 管理センター](https://admin.microsoft.com)にサインインします。
 
-2. 管理センターで、[Org 設定セキュリティ] 設定  >    >  **アクセス&**  >  **に移動します**。
+2. 管理センターで、[Org 設定セキュリティ] 設定  >    >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**アクセス&**</a>  >  **に移動します**。
 
 3. [ **アクセス ポリシーと要求の管理] を選択します**。
 
@@ -250,7 +251,7 @@ Get-ElevatedAccessRequest -Identity 28560ed0-419d-4cc3-8f5b-603911cbd450 | selec
 
 1. 資格情報を使用[してMicrosoft 365 管理センター](https://admin.microsoft.com)にサインインします。
 
-2. 管理センターで、[Org 設定セキュリティ] 設定  >    >  **アクセス&**  >  **に移動します**。
+2. 管理センターで、[Org 設定セキュリティ] 設定  >    >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**アクセス&**</a>  >  **に移動します**。
 
 3. [ **アクセス ポリシーと要求の管理] を選択します**。
 
@@ -292,7 +293,7 @@ Deny-ElevatedAccessRequest -RequestId a4bc1bdf-00a1-42b4-be65-b6c63d6be279 -Comm
 
 1. 組織内の管理者[Microsoft 365 管理センター](https://admin.microsoft.com)資格情報を使用して、管理者アカウントにサインインします。
 
-2. 管理センターで、[Org 設定セキュリティ] 設定  >    >  **アクセス&**  >  **に移動します**。
+2. 管理センターで、[Org 設定セキュリティ] 設定  >    >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**アクセス&**</a>  >  **に移動します**。
 
 3. [ **アクセス ポリシーと要求の管理] を選択します**。
 
@@ -318,7 +319,7 @@ Remove-ElevatedAccessApprovalPolicy -Identity <identity GUID of the policy you w
 
 1. 組織の管理者[Microsoft 365 管理センター](https://admin.microsoft.com)資格情報を使用して、管理者アカウントにサインインします。
 
-2. 管理センターで、[組織]  >  **設定[設定**  >  **特権**&  >  **アクセス] に移動します**。
+2. 管理センターで、[組織]  >  **設定[設定**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**特権**</a>&  >  **アクセス] に移動します**。
 
 3. [特権アクセス **制御の承認を必要とする] を有効** にする。
 

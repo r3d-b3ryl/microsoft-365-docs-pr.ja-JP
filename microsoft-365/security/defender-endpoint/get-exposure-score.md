@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 903176b8c163dcd47e1e11c6c5a82c1ff7363540
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58610989"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221430"
 ---
 # <a name="get-exposure-score"></a>暴露スコアを取得する
 
@@ -48,7 +48,7 @@ ms.locfileid: "58610989"
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 ---|---|---
 アプリケーション|Score.Read.All|'Read Threat and Vulnerability Management score'
-委任 (職場または学校のアカウント)|Score.Read|'Read Threat and Vulnerability Management score'
+委任 (職場または学校アカウント)|Score.Read|'Read Threat and Vulnerability Management score'
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -58,7 +58,7 @@ GET /api/exposureScore
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 ---|---|---
 Authorization|String|ベアラー {token}。 **必須**
 

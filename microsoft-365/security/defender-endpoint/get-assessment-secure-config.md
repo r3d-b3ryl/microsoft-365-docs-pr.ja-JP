@@ -17,11 +17,11 @@ ms.topic: article
 ms.technology: mde
 ms.custom: api
 ms.openlocfilehash: 4d8010cafa9ea0195e4c77298bea2098eab5c594
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58607343"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221525"
 ---
 # <a name="export-secure-configuration-assessment-per-device"></a>デバイスごとのセキュリティで保護された構成評価をエクスポートする
 
@@ -70,7 +70,7 @@ ms.locfileid: "58607343"
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 ---|---|---
 アプリケーション|Vulnerability.Read.All|\'脅威と脆弱性管理の脆弱性情報の読み取り\'
-委任 (職場または学校のアカウント)|脆弱性。読み取り|\'脅威と脆弱性管理の脆弱性情報の読み取り\'
+委任 (職場または学校アカウント)|脆弱性。読み取り|\'脅威と脆弱性管理の脆弱性情報の読み取り\'
 
 ### <a name="13-url"></a>1.3 URL
 
@@ -233,7 +233,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 ---|---|---
 アプリケーション|Vulnerability.Read.All|\'"脅威と脆弱性の管理" の脆弱性情報を読む\'
-委任 (職場または学校のアカウント)|脆弱性。読み取り|\'"脅威と脆弱性の管理" の脆弱性情報を読む\'
+委任 (職場または学校アカウント)|脆弱性。読み取り|\'"脅威と脆弱性の管理" の脆弱性情報を読む\'
 
 ### <a name="23-url"></a>2.3 URL
 

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 8a1f956f74bebe778abdd974941dd8d055c9f092b1e1203bdbc7b9237cd93c45
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9e3ccce5c5955418e3e1243b96d51e5999f0f585
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857569"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221514"
 ---
 # <a name="export-software-inventory-assessment-per-device"></a>デバイスごとのソフトウェア インベントリ評価のエクスポート
 
@@ -65,7 +65,7 @@ ms.locfileid: "53857569"
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 ---|---|---
 アプリケーション|Software.Read.All|\'脅威と脆弱性管理の脆弱性情報の読み取り\'
-委任 (職場または学校のアカウント)|Software.Read|\'脅威と脆弱性管理の脆弱性情報の読み取り\'
+委任 (職場または学校アカウント)|Software.Read|\'脅威と脆弱性管理の脆弱性情報の読み取り\'
 
 ### <a name="13-url"></a>1.3 URL
 
@@ -98,7 +98,7 @@ DiskPaths|Array[string]|製品がデバイスにインストールされてい�
 EndOfSupportDate|string|このソフトウェアのサポートが終了または終了する日付。|2020-12-30
 EndOfSupportStatus|string|サポートの状態の終了。 これらの可能な値を含めることができます。 なし、EOS バージョン、今後の EOS バージョン、EOS ソフトウェア、今後の EOS ソフトウェア。|今後の EOS
 ID|string|レコードの一意の識別子。|123ABG55_573AG&mnp!
-NumberOfWeaknesses|整数|このデバイス上のこのソフトウェアの弱点の数|3
+NumberOfWeaknesses|int|このデバイス上のこのソフトウェアの弱点の数|3
 OSPlatform|string|デバイスで実行されているオペレーティング システムのプラットフォーム。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。 詳細については、「tvm でサポートされるオペレーティング システムとプラットフォーム」を参照してください。|Windows10
 RbacGroupName|string|役割ベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "割り当てられていない" になります。 組織に RBAC グループが含まれている場合、値は "None" になります。|Servers
 RegistryPaths|Array[string]|製品がデバイスにインストールされていることを示すレジストリ証拠。|[ "HKEY_LOCAL_MACHINE \\SOFTWARE \\ WOW6432Node \\ Microsoft Windows \\ \\ CurrentVersion Uninstall Microsoft \\ \\ Silverlight" ]
@@ -227,7 +227,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMac
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 ---|---|---
 アプリケーション|Software.Read.All|\'脅威と脆弱性管理の脆弱性情報の読み取り\'
-委任 (職場または学校のアカウント)|Software.Read|\'脅威と脆弱性管理の脆弱性情報の読み取り\'
+委任 (職場または学校アカウント)|Software.Read|\'脅威と脆弱性管理の脆弱性情報の読み取り\'
 
 ### <a name="23-url"></a>2.3 URL
 

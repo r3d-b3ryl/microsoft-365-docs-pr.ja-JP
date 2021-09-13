@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: b365be018fafb487fb689acb09749804f849ce3b
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58550060"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220398"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>ネットワーク デバイスの検出と脆弱性の管理
 

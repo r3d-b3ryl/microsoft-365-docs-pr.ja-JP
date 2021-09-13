@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 6bcabc069bd79444802ca7487de93719cb2bee00
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58347206"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221345"
 ---
 # <a name="get-ip-statistics-api"></a>IP 統計 API の取得
 
@@ -31,7 +31,7 @@ ms.locfileid: "58347206"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -51,7 +51,7 @@ ms.locfileid: "58347206"
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
 アプリケーション|Ip.Read.All|'IP アドレス プロファイルの読み取り'
-委任 (職場または学校のアカウント)|Ip.Read.All|'IP アドレス プロファイルの読み取り'
+委任 (職場または学校アカウント)|Ip.Read.All|'IP アドレス プロファイルの読み取り'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
@@ -65,13 +65,13 @@ GET /api/ips/{ip}/stats
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**
 
 ## <a name="request-uri-parameters"></a>要求 URI パラメーター
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 lookBackHours|Int32|統計を取得するために検索する時間を定義します。 既定値は 30 日です。 **オプション**。
 

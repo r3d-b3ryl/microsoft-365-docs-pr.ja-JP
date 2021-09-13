@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: 組織が現在直面している最も一般的な脅威と攻撃のシナリオは、Microsoft 365、これらのリスクを軽減するための推奨されるアクションです。
 ms.openlocfilehash: 8f5c6e75097814841f8478cd8240c80b4eebc51a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568182"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220685"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>Microsoft 365ビジネス意思決定者向けセキュリティ (BDM)
 

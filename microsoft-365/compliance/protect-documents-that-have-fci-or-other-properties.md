@@ -18,13 +18,14 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkMAC
 description: データ損失防止 (DLP) ポリシーを使用して、プロパティを持つドキュメントをサード パーティ製システムから保護する方法について学習します。
-ms.openlocfilehash: be0ca4901b8f32aca4c50daa45c059388561832f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 60440162834bbef34c6e3adc2a60053cd9015e9d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567666"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221105"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>FCI または他のプロパティを使用したドキュメントを保護する DLP ポリシーを作成する
 
@@ -63,7 +64,7 @@ DLP は検索クローラーを使用してサイトの機密情報を識別お�
 
 ### <a name="step-2-create-a-managed-property"></a>手順 2: 管理プロパティを作成する
 
-1. Microsoft 365 管理センターにサインインします。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>にサインインします。
 
 2. 左側のナビゲーションで、[管理センター]**を選択** \> **SharePoint。** SharePoint 管理センターが表示されます。
 

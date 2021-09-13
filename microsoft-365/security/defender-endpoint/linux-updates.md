@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 26e03dcc3a4e147901505d8d1b0c491dabf24a5ccc40475f66c3cf2e510e38f9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7de99494a373a2e741e7dff2da4b59d94115cc33
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53800140"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220494"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 用 Microsoft Defender for Endpoint の更新プログラムを展開する
 
@@ -35,7 +35,7 @@ ms.locfileid: "53800140"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Microsoft は、パフォーマンス、セキュリティ、および新機能の提供を行うソフトウェア更新プログラムを定期的に発行しています。
 
@@ -51,19 +51,19 @@ Microsoft は、パフォーマンス、セキュリティ、および新機能�
 
 Defender for Endpoint on Linux を手動で更新するには、次のいずれかのコマンドを実行します。
 
-## <a name="rhel-and-variants-centos-and-oracle-linux"></a>RHEL とバリアント (CentOS および Oracle Linux)
+## <a name="rhel-and-variants-centos-and-oracle-linux"></a>RHEL とバリエーション (CentOS および Oracle Linux)
 
 ```bash
 sudo yum update mdatp
 ```
 
-## <a name="sles-and-variants"></a>SLES とバリアント
+## <a name="sles-and-variants"></a>SLES とバリエーション
 
 ```bash
 sudo zypper update mdatp
 ```
 
-## <a name="ubuntu-and-debian-systems"></a>Ubuntu システムと Debian システム
+## <a name="ubuntu-and-debian-systems"></a>Ubuntu および Debian システム
 
 ```bash
 sudo apt-get install --only-upgrade mdatp
