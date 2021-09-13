@@ -16,20 +16,21 @@ ms.collection:
 ms.custom:
 - customer-email
 - commerce_subscriptions
+- admindeeplinkMAC
 search.appverid: MET150
 description: E4 サブスクリプションを使用した顧客のプランのアップグレードまたは変更にOffice 365情報。
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 08/14/2020
-ms.openlocfilehash: 7f0230272005519528952c88bb8a5426688c386677013aa58a7e46ad3a25ca2f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b740c186c2f4b53043ecc8aa1fd5024d646069d0
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53856069"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59193537"
 ---
 # <a name="important-information-for-office-365-e4-customers"></a>E4 のお客様Office 365情報
 
-E4 Office 365は 2015 年に廃止されました。 グローバル管理者Microsoft 365、メール更新プログラムを受信し、メッセージ センター [(Microsoft 365 管理センター](https://go.microsoft.com/fwlink/p/?linkid=2024339)の一部) に投稿を表示し、アクションを実行する必要がある場合に関する情報を表示します。
+E4 Office 365は 2015 年に廃止されました。 グローバル管理者Microsoft 365として、電子メールの更新プログラムを受信し、アクションを実行する必要がある場合に関する情報をメッセージ センター <a href="https://go.microsoft.com/fwlink/p/?linkid=2070717" target="_blank">(Microsoft 365 管理センター</a>の一部) に表示します。
 
 ## <a name="compare-your-options-for-upgrading-or-changing-plans"></a>プランのアップグレードまたは変更のオプションを比較する
 

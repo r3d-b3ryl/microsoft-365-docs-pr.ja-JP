@@ -15,28 +15,29 @@ ms.collection:
 - m365solution-audit
 - m365initiative-compliance
 - m365solution-scenario
+ms.custom: admindeeplinkMAC
 search.appverid:
 - MOE150
 - MET150
 description: この記事では、ユーザー アカウントが侵害された場合に法医学調査を実行したり、他のセキュリティ関連のインシデントを調査したりするために高度な監査を設定する方法について説明します。
-ms.openlocfilehash: 0df68516795c094aa33d048e77b5ca2d1b396ed7
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 45eef36cd0577708869846308c88f2dd0926d43e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569755"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216454"
 ---
 # <a name="set-up-advanced-audit-in-microsoft-365"></a>[高度な監査] を [Microsoft 365
 
 組織に高度な監査をサポートするサブスクリプションとエンド ユーザー ライセンスがある場合は、次の手順を実行して、Advanced Audit の追加機能を設定して使用します。
 
-![高度な監査を設定するワークフロー。](../media/AdvancedAuditWorkflow.png)
+![高度な監査を設定するためのワークフロー。](../media/AdvancedAuditWorkflow.png)
 
 ## <a name="step-1-set-up-advanced-audit-for-users"></a>手順 1: ユーザーの高度な監査を設定する
 
 MailItemsAccessed や Send などの重要なイベントをログに記録する機能などの高度な監査機能を使用するには、ユーザーに適切な E5 ライセンスが割り当てられている必要があります。 さらに、それらのユーザーに対して高度な監査アプリ/サービス プランを有効にする必要があります。 高度な監査アプリがユーザーに割り当てられていることを確認するには、ユーザーごとに次の手順を実行します。
 
-1. [Microsoft 365 管理センター](https://admin.microsoft.com/Adminportal)で、**[ユーザー]** > **[アクティブなユーザー]** の順に移動し、ユーザーを選択します。
+1. [ユーザー] Microsoft 365 管理センター[アクティブな **ユーザー**] に  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**移動**</a>し、ユーザーを選択します。
 
 2. ユーザー プロパティのポップアップ ページで、**[ライセンスとアプリ]** をクリックします。
 

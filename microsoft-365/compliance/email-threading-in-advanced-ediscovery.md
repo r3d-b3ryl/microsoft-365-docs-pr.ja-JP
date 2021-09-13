@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 分析を実行Advanced eDiscovery、電子メール スレッドは電子メールの会話を解析し、各メッセージを異なるカテゴリに分割します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: afe740f3b5be33a7033f8ed5ce41aa9582b0da4d2a7af05868bd5522d5f66fb1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b087bfc84175f80daaf1c0d2f1394584a70757ac
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53850893"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218944"
 ---
 # <a name="email-threading-in-advanced-ediscovery"></a>メール スレッド (Advanced eDiscovery
 

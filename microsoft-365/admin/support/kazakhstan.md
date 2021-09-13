@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 28ebd44a44a252e21ea409942614aa106945ee63c36899b1cdf8f14735fdb37a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0b4c260f301a32078b618899ff0164f75cc8f0c3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53804314"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59217394"
 ---
 # <a name="contact-support-for-kazakhstan"></a>カザフスタンのサポートに問い合わせ
 

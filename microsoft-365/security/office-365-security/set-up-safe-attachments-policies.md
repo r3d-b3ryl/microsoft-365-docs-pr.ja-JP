@@ -19,11 +19,11 @@ ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: ffe207eb1f1aab42f3a0c2639410d308fbfb64e0
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568242"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59217933"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender セーフの添付ファイル ポリシーをセットアップOffice 365
 
@@ -70,10 +70,10 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
 
   詳細については、「Microsoft 365 Defender[](permissions-microsoft-365-security-center.md)ポータルのアクセス許可」および「Exchange Online」[を参照してください](/exchange/permissions-exo/permissions-exo)。
 
-  **注意**:
+  **注**:
 
   - Microsoft 365 管理センター の対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 Defender ポータルで必要なアクセス許可と、Microsoft 365の他の機能に対するアクセス許可が付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
-  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
+  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
 
 - 添付ファイル ポリシーの推奨設定セーフ、添付ファイルの設定[セーフ参照してください](recommended-settings-for-eop-and-office365.md#safe-attachments-settings)。
 
@@ -98,7 +98,7 @@ Microsoft 365 Defender ポータルでカスタム セーフ 添付ファイル 
    - **グループ**: 組織内で指定された配布グループ、メール対応セキュリティ グループ、または Microsoft 365 グループ。
    - **ドメイン**: 組織内で指定された [承認済みドメイン](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)のすべての受信者。
 
-   適正なボックスをクリックし、値の入力を開始し、結果で希望する値を選択します。 必要な回数だけこの処理を繰り返します。 既存の値を削除するには、削除をクリックします ![[削除] アイコン。](../../media/m365-cc-sc-remove-selection-icon.png) 値の隣。
+   適正なボックスをクリックし、値の入力を開始し、結果で希望する値を選択します。 必要な回数だけこの処理を繰り返します。 既存の値を削除するには、削除をクリックします ![[削除] アイコン](../../media/m365-cc-sc-remove-selection-icon.png) 値の隣。
 
    ユーザーやグループには、ほとんどの識別子 (名前、表示名、エイリアス、メールアドレス、アカウント名など) を使用できますが、対応する表示名が結果に表示されます。 ユーザーの場合、アスタリスク (\*) を単独で入力すると、使用可能なすべての値が表示されます。
 
@@ -161,8 +161,8 @@ Microsoft 365 Defender ポータルでカスタム セーフ 添付ファイル 
 2. [添付 **ファイルセーフ]** ページで、名前をクリックして一覧からポリシーを選択します。
 
 3. 表示されるポリシーの詳細ポップアップの上部には、以下のいずれかの値が表示されます。
-   - **ポリシーオフ**: ポリシーを有効にする場合は、[オンにする] ![ アイコンをクリックします。](../../media/m365-cc-sc-turn-on-off-icon.png) **をオンにする** 。
-   - **ポリシーオン**: ポリシーをオフにする場合は、[オフにする] ![ アイコンをクリックします。](../../media/m365-cc-sc-turn-on-off-icon.png) **オフにします**。
+   - **ポリシー オフ**: ポリシーをオンにするには、![[アイコンをオンにする]](../../media/m365-cc-sc-turn-on-off-icon.png)、**[オンにする]** の順にクリックします。
+   - **ポリシー オン**: ポリシーをオフにするには、![[アイコンをオフにする]](../../media/m365-cc-sc-turn-on-off-icon.png)、**[オフにする]** の順にクリックします。
 
 4. 確認ダイアログ ボックスが表示されたら、**[オンにする]** または **[オフにする]** をクリックします。
 
@@ -191,7 +191,7 @@ Microsoft 365 Defender ポータルでカスタム セーフ 添付ファイル 
    - 優先度の値が最も **低い** ポリシー ( **たとえば、3)** には、[優先度の引き上げ] **オプション** しか使用できません。
    - 3 つ以上のポリシーがある場合、優先度の高い値と最も低い優先度の値の間のポリシーには、[優先度の引き上げ] オプションと [優先度の下 **げ]** の両方 **のオプションがあります** 。
 
-   [優先度 ![ の増加] アイコンをクリックします。](../../media/m365-cc-sc-increase-icon.png) **[優先度を上げ** ![ ] または [優先度を下げ] アイコン ](../../media/m365-cc-sc-decrease-icon.png) **優先度を下げ** 、優先度の **値を変更** します。
+   ![[優先度を上げる] アイコン](../../media/m365-cc-sc-increase-icon.png)、**[優先度を上げる]** の順にクリックするか、または ![[優先度を下げる] アイコン](../../media/m365-cc-sc-decrease-icon.png)、**[優先度を下げる]** の順にクリックして、**優先度** 値を変更します。
 
 4. 完了したら、ポリシーの詳細ポップアップで **[閉じる]** をクリックします。
 
@@ -201,7 +201,7 @@ Microsoft 365 Defender ポータルでカスタム セーフ 添付ファイル 
 
 2. [添付 **セーフ] ページ** で、ポリシーの名前をクリックして、一覧からカスタム ポリシーを選択します。
 
-3. 表示されるポリシーの詳細のフライアウトの上部にある [その他のアクション] ![ アイコンをクリックします。](../../media/m365-cc-sc-more-actions-icon.png) **その他のアクション** \>![[ポリシーの削除] アイコン ](../../media/m365-cc-sc-delete-icon.png) **[ポリシーの削除] をクリックします**。
+3. 表示されるポリシーの詳細ポップアウトの上部で、![[その他の操作]](../../media/m365-cc-sc-more-actions-icon.png) アイコンをクリックします。 **[その他の操作]** \> ![[ポリシーの削除]](../../media/m365-cc-sc-delete-icon.png) アイコン **[ポリシーの削除]** の順にクリックします。
 
 4. 確認ダイアログ ボックスが表示されたら、**[はい]** をクリックします。
 
@@ -222,7 +222,7 @@ PowerShell でセーフ添付ファイル ポリシーを作成するには、�
 1. 安全な添付ファイル ポリシーを作成します。
 2. ルールが適用される安全な添付ファイル ポリシーを指定する安全な添付ファイル ルールを作成します。
 
- **注意**:
+ **注**:
 
 - 新しい安全な添付ファイル ルールを作成し、関連付けされていない既存の安全な添付ファイル ポリシーを割り当てできます。 安全な添付ファイル ルールを複数の安全な添付ファイル ポリシーに関連付けできない。
 

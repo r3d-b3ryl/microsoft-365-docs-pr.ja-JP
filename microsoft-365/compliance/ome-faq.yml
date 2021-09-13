@@ -16,12 +16,12 @@ metadata:
   ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
   description: 新しいメッセージ保護機能がどのように機能するかについて質問がありますか? ここで答えを確認してください。
   ms.custom: seo-marvel-apr2020
-  ms.openlocfilehash: 0fb607492d8df6b1e10d73191b6d662ea6bb63eb39da74e0bfed6ba331c1516f
-  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+  ms.openlocfilehash: 2e59d4b4d2d077921e1c6c9496d14e59bae2317a
+  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 08/05/2021
-  ms.locfileid: "53813645"
+  ms.lasthandoff: 09/12/2021
+  ms.locfileid: "59216664"
 title: メッセージの暗号化に関する FAQ
 summary: >
   新しいメッセージ保護機能がどのように機能するかについて質問がありますか? ここで答えを確認してください。 また、Azure Information Protection のデータ保護サービス Azure Rights Management に関する質問に対する回答については [、Azure Information Protection](/information-protection/get-started/faqs-rms) のデータ保護に関してよく寄せられる質問を参照してください。

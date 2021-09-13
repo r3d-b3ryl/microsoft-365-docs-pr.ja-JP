@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 909247e914453cebbe86115561818cde7cb7c44e3ed8a4d1a8149db301b55031
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0b816956442408c9a61f662827f1fd45d9b6511f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53893989"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220134"
 ---
 # <a name="get-expert-training-on-advanced-hunting"></a>高度な狩猟に関する専門家のトレーニングを受け取る
 
@@ -38,7 +38,7 @@ ms.locfileid: "53893989"
 
 新しいセキュリティ アナリストや経験豊富な脅威ハンター向け Web キャスト シリーズである Tracking _the adversary_ を使用して、高度な狩猟に関する知識を迅速に強化します。 このシリーズでは、独自の高度なクエリを作成する方法の基本について説明します。 基本に関する最初のビデオから始めるか、エクスペリエンスのレベルに合った高度なビデオにジャンプします。
 
-| タイトル | Description | 視聴する | クエリ | 
+| 役職 | 説明 | 視聴する | クエリ | 
 |--|--|--|--|
 | エピソード 1: KQL の基本 | このエピソードでは、高度な狩猟の基本について説明Microsoft 365 Defender。 使用可能な高度な検索データと基本的な KQL 構文と演算子について説明します。 | [YouTube](https://youtu.be/0D9TkGjeJwM?t=351) (54:14) | [テキスト ファイル](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.txt) |
 | エピソード 2: 参加 | 高度な検索のデータと、テーブルを一緒に結合する方法について学び続ける。 、、および結合について説明し、既定の Kusto 結合のニュアンス `inner` `outer` `unique` `semi` を理解 `innerunique` します。 | [YouTube](https://youtu.be/LMrO6K5TWOU?t=297) (53:33) | [テキスト ファイル](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.txt) |
@@ -48,7 +48,7 @@ ms.locfileid: "53893989"
 
 *L33TSP3AK* を使用して、より専門的なトレーニングを受け取る: Microsoft 365 Defender での高度な捜し方、Microsoft 365 Defender で高度な狩猟を使用してセキュリティ調査を行う技術的な知識と実践的なスキルを拡張するアナリスト向け Web キャスト シリーズです。 
 
-| タイトル | Description | 視聴する | クエリ | 
+| 役職 | 説明 | 視聴する | クエリ | 
 |--|--|--|--|
 | エピソード 1  | このエピソードでは、高度な検索クエリを実行する場合のさまざまなベスト プラクティスについて説明します。 対象となるトピックの中には、クエリを最適化する方法、ランサムウェアの高度な検索を使用する方法、動的型として JSON を処理する方法、および外部データ演算子を操作する方法があります。 | [YouTube](https://www.youtube.com/watch?v=nMGbK-ALaVg&feature=youtu.be) (56:34) | [テキスト ファイル](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/Performance%2C%20Json%20and%20dynamics%20operator%2C%20external%20data.txt) |
 | エピソード 2 | このエピソードでは、不審なログオン場所や異常なログオン場所や受信トレイ転送ルールを介したデータの侵入を調査して対応する方法について学習します。 Sebastien Molendijk、クラウド セキュリティ CxE のシニア プログラム マネージャーは、高度なハンティングを使用して、Microsoft Cloud App Security データを使用して複数ステージのインシデントを調査する方法をMicrosoft Cloud App Securityしています。 | [YouTube](https://www.youtube.com/watch?v=QaUxdtNfbd8) (57:07) | [テキスト ファイル](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/MCAS%20-%20The%20Hunt.txt)
@@ -90,7 +90,7 @@ CloudAppEvents
 | sort by Timestamp desc
 ```
      
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [高度な捜索のクエリ言語について学習する](advanced-hunting-query-language.md)
 - [クエリ結果を操作する](advanced-hunting-query-results.md)

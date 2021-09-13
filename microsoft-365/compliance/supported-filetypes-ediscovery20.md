@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: サポートされているファイルの種類の一覧 (Microsoft 365 Advanced eDiscovery の OCR 機能でサポートされるイメージ ファイルの種類をAdvanced eDiscovery。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b4de1051c2f7d3f3ea3d34b624aa67aa16647d85d6f604d4af1b958a6c400cf9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0a637dc0505b74a2b7f7d726ed9a731db8e68c12
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53813585"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221849"
 ---
 # <a name="supported-file-types-in-advanced-ediscovery"></a>サポートされているファイルの種類 (Advanced eDiscovery
 
@@ -68,7 +68,7 @@ Advanced eDiscoveryさまざまなレベルで多数のファイルの種類を�
 |application/x-msaccess|はい|はい|はい|いいえ|いいえ|.mdb|
 |
 
-## <a name="email"></a>電子メール
+## <a name="email"></a>メール
 
 <br>
 

@@ -19,11 +19,11 @@ ms.custom:
 - seo-marvel-apr2020
 description: 既存のコンテンツ検索の CSV ファイルを使用して、特定の電子メール アイテムを返す ID リスト検索を作成します。
 ms.openlocfilehash: 3fc43f410d6361ac655f7f839b6b4f8752483ef9
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571075"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216913"
 ---
 # <a name="prepare-a-csv-file-for-an-id-list-content-search"></a>ID リストコンテンツ検索用の CSV ファイルを準備する
 

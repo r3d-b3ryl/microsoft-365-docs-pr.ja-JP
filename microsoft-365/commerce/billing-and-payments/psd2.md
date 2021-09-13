@@ -20,12 +20,12 @@ search.appverid: MET150
 description: 2019 年 9 月 14 日現在、欧州経済地域の 31 か国の銀行は、支払いを処理する前に、オンライン購入を行う人物の身元を確認する必要があります。
 keywords: payment services ディレクティブ 2、強力な顧客認証、多要素認証
 ms.date: 11/03/2020
-ms.openlocfilehash: eda3a962b638579001482c86307d8330f30882e50893904850ba6651a2acd1f4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bbbbe9f53c11fcae9c35cda1fd4e7d4b51a9c767
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53906657"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59219144"
 ---
 # <a name="payment-services-directive-2-and-strong-customer-authentication-for-commercial-customers"></a>商用顧客向け Payment Services ディレクティブ 2 と強力な顧客認証
 
@@ -51,7 +51,7 @@ ms.locfileid: "53906657"
 
 定期的な支払いの料金が失敗する場合があります。 その場合は、フォローする指示が記載されたメールが届きます。 確認要求に応答し、現在の支払いを行うメッセージが表示されます。
 
-## <a name="need-more-help"></a>サポートが必要な場合
+## <a name="need-more-help"></a>ヘルプを表示
 
 金融機関は、次のシナリオに最適な連絡先です。
 

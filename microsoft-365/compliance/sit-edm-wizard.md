@@ -18,11 +18,11 @@ search.appverid:
 description: 完全一致スキーマと機密情報の種類ウィザードrを使用する方法について説明します。
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: dbba5e0e63f473d12b40c902001332c1689e4d12
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572169"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218854"
 ---
 # <a name="use-the-exact-data-match-schema-and-sensitive-information-type-wizard"></a>完全一致スキーマと機密情報の種類ウィザードを使用する
 

@@ -22,11 +22,11 @@ ms.custom:
 - seo-marvel-apr2020
 description: 情報管理ポリシーを使用して、コンテンツの保持期間やユーザーがコンテンツに対して実行できるアクションを制御および追跡する方法について説明します。
 ms.openlocfilehash: fc3bfe1c0da54ccf4cb2c59589647cb396a5081e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567426"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216813"
 ---
 # <a name="introduction-to-information-management-policies"></a>情報管理ポリシー入門
 

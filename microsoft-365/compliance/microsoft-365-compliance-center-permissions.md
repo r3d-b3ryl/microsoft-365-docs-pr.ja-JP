@@ -12,11 +12,11 @@ localization_priority: Normal
 description: アクセス許可を管理する方法については、Microsoft 365 コンプライアンス センター。
 ms.collection: M365-security-compliance
 ms.openlocfilehash: 717b8cd312aad805107536b174b3a9cd58e72a55
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570091"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216793"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center"></a>Microsoft 365 コンプライアンス センターでのアクセス許可
 
@@ -34,7 +34,7 @@ Microsoft 365 コンプライアンス センター の[アクセス許可] タ�
 
 役割グループは、ユーザーがコンプライアンス ソリューション全体で仕事を行う役割のセットMicrosoft 365 コンプライアンス センター。 たとえば *、Insider Risk Management* 役割グループにユーザーを追加すると、指定された管理者、アナリスト、調査員、監査人が、1 つのグループで必要なインサイダー リスク管理のアクセス許可を構成します。 このMicrosoft 365 コンプライアンス センターには、ユーザーを割り当てる必要がある各コンプライアンス ソリューションのタスクと機能の既定の役割グループが含まれます。 通常、必要に応じて、個々のユーザーをメンバーとして既定のコンプライアンス 役割グループに追加することをお勧めします。
 
-![役割グループと役割とメンバーの関係を示す図。](../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
+![役割グループと、ロールおよびメンバーとの関係を示す図。](../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
 
 ## <a name="permissions-needed-to-use-features-in-the-microsoft-365-compliance-center"></a>アプリケーションで機能を使用するために必要なアクセス許可Microsoft 365 コンプライアンス センター
 
@@ -46,7 +46,7 @@ Microsoft 365 コンプライアンス センター で使用可能なすべて�
 
 [アクセス許可] ページの **[Azure AD** ロール] セクションに表示Microsoft 365 コンプライアンス センターロール  >  は、Azure Active Directoryされます。  これらのロールは、組織の IT グループの職務に合わせて設計されており、仕事を遂行するために必要なすべての権限をユーザーに簡単に付与できます。 管理役割を選択し、役割パネルの詳細を表示することで、各役割に現在割り当てられているユーザーを表示できます。 Azure AD ロールのメンバーを管理するには、[Azure AD でメンバーの管理] を選択します。 この選択によって、Azure 管理ポータルにリダイレクトされます。
 
-|役割|内容|
+|Role|内容|
 |:---|:----------|
 |**全体管理者**|Microsoft 365 サービスのすべての管理機能にアクセスできます。 他の管理者ロールを割り当てることができるのは全体管理者だけです。 詳細については、「[グローバル管理者または会社の管理者](/azure/active-directory/roles/permissions-reference#global-administrator--company-administrator)」を参照してください。|
 |**コンプライアンス データ管理者**|Microsoft 365 全体の組織のデータを追跡し、保護されていることを確認し、あらゆる問題を把握して分析しリスクを軽減する手伝いをします。 詳細については、「[コンプライアンス データ管理者](/azure/active-directory/roles/permissions-reference#compliance-data-administrator)」を参照してください。|

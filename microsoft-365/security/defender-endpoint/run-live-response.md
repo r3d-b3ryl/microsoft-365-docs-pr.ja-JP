@@ -22,11 +22,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: f94e4d5e51b6a846a0439e3833a01d252c51bd0a
-ms.sourcegitcommit: 008200dad00701b6d457c1af48a33448235ce1c8
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58392136"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218274"
 ---
 #  <a name="run-live-response-commands-on-a-device"></a>デバイスでライブ応答コマンドを実行する
 
@@ -90,7 +90,7 @@ ms.locfileid: "58392136"
 |アクセス許可の種類|アクセス許可|アクセス許可の表示名|
 |---|---|---|
 |アプリケーション|Machine.LiveResponse|特定のコンピューターでライブ応答を実行する|
-|委任 (職場または学校のアカウント)|Machine.LiveResponse|特定のコンピューターでライブ応答を実行する|
+|委任 (職場または学校アカウント)|Machine.LiveResponse|特定のコンピューターでライブ応答を実行する|
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -102,7 +102,7 @@ POST https://api.securitycenter.microsoft.com/API/machines/{machine_id}/runliver
 
 |名前|型|説明|
 |---|---|---|
-|Authorization|String|ベアラー\<token>\. 必須です。|
+|Authorization|文字列|ベアラー\<token>\. 必須です。|
 |Content-Type|string|application/json. Required.|
 
 ## <a name="request-body"></a>要求本文

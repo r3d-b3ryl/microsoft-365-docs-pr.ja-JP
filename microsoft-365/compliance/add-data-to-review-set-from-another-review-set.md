@@ -20,11 +20,11 @@ ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
 ms.openlocfilehash: 830f107a3935db23f771e2691fe6e83a5d8d2eff
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571171"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59217073"
 ---
 # <a name="add-data-to-a-review-set-from-another-review-set"></a>別のレビュー セットからレビュー セットにデータを追加
 

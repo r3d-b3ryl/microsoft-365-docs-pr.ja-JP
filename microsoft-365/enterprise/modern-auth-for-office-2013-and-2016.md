@@ -25,16 +25,16 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: 2013 Microsoft 365 2016 クライアント アプリの最新の認証機能の動作Officeについて学習します。
-ms.openlocfilehash: a115eec0781645c87bd799d15d4966133b4fd9de40993858912fda71cc5ab485
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 60b1729d9830fd12141d162c4fe721267e52d437
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53870525"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220794"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-office-2016-and-office-2019-client-apps"></a>2013、Office 2016、および 2019 Office 2019 クライアント アプリOfficeのしくみ
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 この記事では、Office、Office 2016、および Office 2019 クライアント アプリが Exchange Online、SharePoint Online、および Skype for Business Online の Microsoft 365 テナントの認証構成に基づいて最新の認証機能を使用する方法について説明します。
 

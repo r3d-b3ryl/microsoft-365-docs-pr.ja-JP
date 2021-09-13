@@ -18,11 +18,11 @@ ms.assetid: ''
 description: ケース内Advanced eDiscovery管理ツールを使用して、アクティビティに簡単にアクセスして検索します。
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: 4069b4ee61f15cfbe8f0f7f74cb42e9790f0106a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570775"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216173"
 ---
 # <a name="view-custodian-audit-activity"></a>カストディアンの監査アクティビティを表示する
 

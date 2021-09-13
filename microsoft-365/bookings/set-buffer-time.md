@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 271f43e4-b8f7-4d63-8059-b5747679bb7e
 description: Microsoft Bookings の予定の前または後にバッファー時間を設定して、機器のクリーンアップまたはリセットに時間を割り当て。
 ms.openlocfilehash: 21830b0cc1ec2f14bc845937387e700fb7a2ee72
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573681"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59219454"
 ---
 # <a name="set-buffer-time-in-microsoft-bookings"></a>Microsoft Bookings でバッファー時間を設定する
 

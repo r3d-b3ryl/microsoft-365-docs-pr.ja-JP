@@ -11,11 +11,11 @@ search.appverid: MET150
 localization_priority: Normal
 description: トピック センターの名前を変更する方法については、Microsoft Viva トピック。
 ms.openlocfilehash: 262ae46fadf8fc390a4ccf591aa97175ff63a68f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573069"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218483"
 ---
 # <a name="change-the-name-of-the-topic-center-in-microsoft-viva-topics"></a>トピック センターの名前を変更Microsoft Viva トピック
 

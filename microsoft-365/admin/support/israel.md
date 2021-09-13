@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 80822844678f5f4e223f459baa4fa0e2820d89921df8f5a76ab35045efbb8da9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b90dfb8708c3a7b9917d88cf6ea013b7dbfca3eb
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53896873"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59217483"
 ---
 # <a name="contact-support-for-israel"></a>イスラエルのサポートに問い合わせ
 

@@ -22,11 +22,11 @@ search.appverid:
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
 description: JavaScript を使用してイメージの読み込みと重要でない JavaScript の読み込みを遅らせSharePointオンライン ページの読み込み時間を削減する方法について説明します。
 ms.openlocfilehash: 7be256db8bce115b130322d1dd34131d845ef165
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573141"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218573"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>SharePoint Online での画像の読み込み遅延と JavaScript
 
@@ -36,7 +36,7 @@ ms.locfileid: "58573141"
   
 ## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>JavaScript を使用してオンライン ページでのイメージの読み込SharePointを遅らせ、ページの読み込み時間を短縮する
 
-JavaScript を使用すると、Web ブラウザーによる画像の事前フェッチを防止できます。 これにより、ドキュメントの全体的なレンダリングが高速化されます。 これを行うには、タグから src 属性の値を削除し、それを data-src などのデータ属性内のファイルへのパスに \<img\> 置き換える必要があります。 次に例を示します。
+JavaScript を使用すると、Web ブラウザーによる画像の事前フェッチを防止できます。 これにより、ドキュメントの全体的なレンダリングが高速化されます。 これを行うには、タグから src 属性の値を削除し、それを data-src などのデータ属性内のファイルへのパスに \<img\> 置き換える必要があります。 例:
   
 ```html
 <img src="" data-src="/sites/NavigationBySearch/_catalogs/masterpage/media/microsoft-white-8.jpg" />

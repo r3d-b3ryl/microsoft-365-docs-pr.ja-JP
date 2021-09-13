@@ -16,11 +16,11 @@ metadata:
   description: コア データを新しいデータセンター geo に移動する方法に関するよく寄せられる質問 (FAQ) にOffice 365します。
   ms.custom: seo-marvel-mar2020
   ms.openlocfilehash: cbc359db637d2d60315a724b9bf78ffb9ae0359d
-  ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 08/16/2021
-  ms.locfileid: "58354622"
+  ms.lasthandoff: 09/12/2021
+  ms.locfileid: "59218574"
 title: データ移行についての一般的な FAQ
 summary: 保存中の主要な顧客データを新しいデータセンター geo に移動する方法に関する一般的な質問に対する回答を次に示します。
 sections:

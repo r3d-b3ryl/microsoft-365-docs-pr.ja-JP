@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: データ損失防止 (DLP) ポリシーにポリシー ヒントを追加して、DLP ポリシーと競合するコンテンツを操作しているユーザーに通知する方法について学習します。
-ms.openlocfilehash: 5dba275d274ebc97ec934f6b43d8a913b80c8d84
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 50f61fb86c2458e6471c0b2002c15f4a8b1cabe0
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58589436"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216213"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>メール通知を送信して、DLP ポリシーのポリシーのヒントを表示する
 
@@ -215,7 +215,7 @@ Outlook on the web および Outlook 2013 以降で新しいメールを作成�
 - コンテンツが含まれている
 - コンテンツが共有されている
 
-例外は条件と見なされ、これらの条件はすべて Outlook で動作し、コンテンツと一致し、コンテンツに保護アクションを適用します。 ただし、ユーザーにポリシー ヒントを表示する方法はまだサポートされていません。
+例外は条件と見なされ、これらの条件はすべて Outlook で動作し、コンテンツと一致し、コンテンツに保護アクションを適用します。 ただし、ユーザーにポリシー ヒントを表示する方法はまだサポートされていません。 また、Outlook動的配布グループに適用される DLP ポリシーのポリシー ヒントの表示はサポートされていません。
 
 ### <a name="policy-tips-in-the-exchange-admin-center-vs-the-security-amp-compliance-center"></a>管理センターとセキュリティ Exchangeセンター &amp; のポリシー ヒント
 

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 使用状況レポートの情報を使用する方法について学習します。
-ms.openlocfilehash: 2703245899e62f89730885bfc9e78f13e24da7d1252dbcd4209f1ddd6ce15292
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1c499b62f14aeec392d15939c8e6d70c9bad7ced
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53900785"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59219443"
 ---
 # <a name="review-usage-reports-in-microsoft-365"></a>使用状況レポートを確認Microsoft 365
 

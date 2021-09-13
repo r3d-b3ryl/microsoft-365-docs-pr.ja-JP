@@ -18,11 +18,11 @@ search.appverid:
 ms.custom: seo-marvel-apr2020
 description: Office 365 の DLP レポートを使用して、DLP ポリシーの一致、上書き、または誤検知の数を表示し、時間の流れによって上昇または下向きかどうかを確認します。
 ms.openlocfilehash: 12ee109a348657aa8ca04c55e496047a82772e22
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574065"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216163"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>データ損失防止のレポートの表示
 

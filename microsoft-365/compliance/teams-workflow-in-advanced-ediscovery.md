@@ -15,11 +15,11 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: コンテンツを保存、収集、レビュー、エクスポートする方法については、Microsoft TeamsのAdvanced eDiscovery。
 ms.openlocfilehash: 462442d2319c2c199d39795b77b67c6dcefdb758
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573237"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216354"
 ---
 # <a name="advanced-ediscovery-workflow-for-content-in-microsoft-teams-using-large-cases-preview"></a>Advanced eDiscoveryケースを使用して、Microsoft Teamsのワークフローを確認する (プレビュー)
 

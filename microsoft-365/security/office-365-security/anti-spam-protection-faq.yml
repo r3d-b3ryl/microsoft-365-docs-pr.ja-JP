@@ -20,12 +20,12 @@ metadata:
   description: 管理者は、迷惑メール対策 (EOP) でスパム対策に関するよく寄せられる質問とExchange Online Protection表示できます。
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: 1643e94de99b06cee9ea55e03bc6bc12fefa1de9bc4c1fc9f08f0c655315019b
-  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+  ms.openlocfilehash: b15e7409c275810a9d5e70d1376a9c3accd07ab9
+  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 08/05/2021
-  ms.locfileid: "56878262"
+  ms.lasthandoff: 09/12/2021
+  ms.locfileid: "59218094"
 title: スパム対策保護に関する FAQ
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -82,7 +82,7 @@ sections:
       詳細については、次のトピックをご覧ください。
 
 
-      [EOP と Microsoft Defender のセキュリティに関するOffice 365設定](recommended-settings-for-eop-and-office365.md)
+      [EOP および Microsoft Defender for Office 365 セキュリティの推奨設定](recommended-settings-for-eop-and-office365.md)
 
 
       [EOP で接続フィルターを構成する](configure-the-connection-filter-policy.md)

@@ -15,11 +15,11 @@ ms.collection:
 ms.custom: ''
 description: ビジネスとしての Contoso Corporation について、さらに同社の世界規模のオフィスの階層構造について説明します。
 ms.openlocfilehash: 87508d47e5124f55a0302ca305b0dbd9de07e841
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569467"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218663"
 ---
 # <a name="overview-of-contoso-corporation"></a>Contoso Corporation の概要
 
@@ -75,6 +75,6 @@ Contoso Corporation のオンプレミス[IT インフラストラクチャ](con
 
 ## <a name="see-also"></a>関連項目
 
-[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
+[Microsoft 365 for Enterprise の概要](microsoft-365-overview.md)
 
 [テスト ラボ ガイド](m365-enterprise-test-lab-guides.md)

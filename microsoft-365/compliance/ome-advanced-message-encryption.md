@@ -17,11 +17,11 @@ search.appverid:
 - MET150
 description: 高度なメッセージ暗号化は、管理者が保護されたメッセージを使用してさらに多くのことを行うのを有効にすることで、組織がコンプライアンスの義務を果たすのに役立ちます。
 ms.openlocfilehash: dbd19c2028a3453d43dc2ce9082955a5ec1165db
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58243929"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216683"
 ---
 # <a name="advanced-message-encryption"></a>高度なメッセージ暗号化
 

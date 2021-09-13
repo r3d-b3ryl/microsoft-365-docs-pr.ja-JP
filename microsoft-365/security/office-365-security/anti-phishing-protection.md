@@ -21,12 +21,12 @@ ms.custom:
 description: 管理者は、フィッシング対策の保護機能について、Exchange Online Protection (EOP) と Microsoft Defender for Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8c1f28aa46b4f20c2ba12eaf7c688089d98ff8b37c08b27e0facb92a672ff2f7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2a28e2ecc45be941dbd6e346f9918e1692357840
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56806846"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218124"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>アプリ内のフィッシング対策Microsoft 365
 
@@ -41,11 +41,11 @@ ms.locfileid: "56806846"
 
 - **スピアフィッシング** では、対象となる受信者に合わせて特別にカスタマイズされた、フォーカスのあるカスタマイズされたコンテンツを使用します (通常、攻撃者による受信者の偵察後)。
 
-- **捕鯨は** 、組織内の幹部または他の高価値ターゲットに対して、最大限の効果を得る方向に向けられる。
+- **ホエーリング** では、組織内の役員などの高価値の対象者に向けて行うことで、最大の効果を発揮します。
 
 - ビジネス メール侵害 **(BEC)** は、偽造された信頼できる送信者 (財務担当者、顧客、信頼できるパートナーなど) を使用して、受信者をだまして支払いの承認、資金の転送、顧客データの公開を行います。 [このビデオ](https://www.youtube.com/watch?v=8Kn31h9HwIQ&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=2)を見て詳細をご確認ください。
 
-- **データ** を暗号化し、暗号化解除するための支払いを要求するランサムウェアは、ほとんどの場合、フィッシング メッセージから始まります。 フィッシング対策保護は、暗号化されたファイルの暗号化を解除するのに役立ちますが、ランサムウェア キャンペーンに関連付けられている最初のフィッシング メッセージを検出するのに役立ちます。 ランサムウェア攻撃からの回復の詳細については、「ランサムウェア攻撃から回復する」を参照[Microsoft 365。](recover-from-ransomware.md)
+- **データ** を暗号化し、暗号化解除するための支払いを要求するランサムウェアは、ほとんどの場合、フィッシング メッセージから始まります。 フィッシング対策では、暗号化されたファイルの暗号化を解除することはできませんが、ランサムウェアの攻撃活動に関連する初期のフィッシング メッセージを検出することができます。 ランサムウェア攻撃からの回復の詳細については、「ランサムウェア攻撃から回復する」を参照[Microsoft 365。](recover-from-ransomware.md)
 
 攻撃が複雑化する中、訓練を受けたユーザーが高度なフィッシング メッセージを識別することはさらに困難です。 幸い、Exchange Online Protection (EOP) と Microsoft Defender for microsoft Defender の追加機能Office 365役立ちます。
 

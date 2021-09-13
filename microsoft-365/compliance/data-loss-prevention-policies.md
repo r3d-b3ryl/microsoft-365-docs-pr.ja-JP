@@ -25,11 +25,11 @@ ROBOTS: NOINDEX, NOFOLLOW
 feedback_system: None
 description: データ損失防止リファレンス 資料
 ms.openlocfilehash: 1eba9c425e66c61e63133d39a844010a499b3eb4
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58595278"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216873"
 ---
 # <a name="data-loss-prevention-reference"></a>データ損失防止リファレンス
 

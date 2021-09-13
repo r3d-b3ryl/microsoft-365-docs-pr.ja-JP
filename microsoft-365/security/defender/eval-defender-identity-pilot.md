@@ -22,11 +22,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: ae54134f681568a193b7a99c166aa025d6358eec
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58561232"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218194"
 ---
 # <a name="pilot-microsoft-defender-for-identity"></a>Id の Microsoft Defender のパイロット
 
@@ -64,11 +64,11 @@ Defender for Identity のチュートリアルを試してみてください。
 - [ユーザーを調査する](/defender-for-identity/investigate-a-user)
 - [コンピューターを調査する](/defender-for-identity/investigate-a-computer)
 - [横方向の移動パスを調査する](/defender-for-identity/investigate-lateral-movement-path)
-- [エンティティの調査](/defender-for-identity/investigate-entity)
+- [エンティティを調査する](/defender-for-identity/investigate-entity)
 
 ## <a name="next-steps"></a>次の手順
 
-[Microsoft Defender のセキュリティ評価Office 365](eval-defender-office-365-overview.md)
+[Microsoft Defender for Office 365 を評価する](eval-defender-office-365-overview.md)
 
 [Microsoft Defender for Office 365 の評価[] の概要に戻Office 365](eval-defender-office-365-overview.md)
 

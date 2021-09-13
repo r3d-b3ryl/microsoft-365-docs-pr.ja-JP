@@ -24,11 +24,11 @@ search.appverid:
 - MOE150
 description: キャンペーンまたはビジネスのコミュニケーション サイトを作成します。
 ms.openlocfilehash: d40311a616e51ed665248dded45ef7d0432b6f94
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571557"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59219283"
 ---
 # <a name="create-a-communications-site"></a>コミュニケーション サイトを作成する
 

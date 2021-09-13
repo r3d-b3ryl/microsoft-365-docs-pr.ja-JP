@@ -19,11 +19,11 @@ ms.custom:
 - seo-marvel-apr2020
 description: 電子メールを介してAdvanced eDiscoveryホールド通知を送信およびフォローアップする方法、および義務の状態を監視する方法について学習します。
 ms.openlocfilehash: 43c2474bdc485a87c30d1fa2a31c3d008d2a383e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563286"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59217083"
 ---
 # <a name="acknowledge-a-hold-notification"></a>保留通知を確認する
 

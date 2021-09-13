@@ -19,11 +19,11 @@ ms.custom:
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: '概要: 単一の PowerShell ウィンドウですべての Microsoft 365 サービスに接続します。'
 ms.openlocfilehash: 82d623c0074a7cdb3b61d0e6380b779d55354809
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354970"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218753"
 ---
 # <a name="connect-to-all-microsoft-365-services-in-a-single-powershell-window"></a>単一の PowerShell ウィンドウですべての Microsoft 365 サービスに接続する
 

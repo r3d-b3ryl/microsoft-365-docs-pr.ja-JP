@@ -18,11 +18,11 @@ ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: コンテンツ検索電子情報開示ツールを使用して、クエリを作成して、Microsoft 365データ ソースからメールボックスにインポートされたアイテムを検索します。
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: afed5e519b789baffca4f16b95c842ccfe575b4f
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507640"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216263"
 ---
 # <a name="use-content-search-to-search-third-party-data-imported-by-a-custom-partner-connector"></a>コンテンツ検索を使用して、カスタム パートナー コネクタによってインポートされたサードパーティのデータを検索する
 

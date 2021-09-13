@@ -18,11 +18,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 54883ab437dcf01b042b5458bdc6312eaf24d179
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256976"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218314"
 ---
 # <a name="advanced-hunting-api"></a>高度なハンティング API
 
@@ -60,7 +60,7 @@ ms.locfileid: "58256976"
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
 アプリケーション|AdvancedQuery.Read.All|'高度なクエリを実行する'
-委任 (職場または学校のアカウント)|AdvancedQuery.Read|'高度なクエリを実行する'
+委任 (職場または学校アカウント)|AdvancedQuery.Read|'高度なクエリを実行する'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
@@ -85,9 +85,9 @@ Content-Type|application/json
 
 要求本文で、JSON オブジェクトに次のパラメーターを指定します。
 
-パラメーター|種類|説明
+パラメーター|型|説明
 :---|:---|:---
-Query|テキスト|実行するクエリ。 **必須**
+クエリ|テキスト|実行するクエリ。 **必須**
 
 ## <a name="response"></a>応答
 

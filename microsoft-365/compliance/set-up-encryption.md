@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: e86fc991-0161-4f01-9c1c-d25e87733d06
 description: このOffice 365、一部の暗号化機能は既定で有効になっています。その他の機能は、特定のコンプライアンスまたは法的要件を満たするように構成できます。
-ms.openlocfilehash: 3776c2598063129c42cfdcb47cd1d09d45eb7b1a9b190f7d3fc040305c242729
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a9a3170fdb99a4acfec8cf4d3b03ab9b584197bd
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53855481"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216384"
 ---
 # <a name="set-up-encryption-in-office-365-enterprise"></a>Office 365 Enterprise で暗号化を設定する
 
@@ -46,6 +46,6 @@ ms.locfileid: "53855481"
 |ファイルは、オンライン会議と IM 会話で共有されます (Microsoft Teams)|ユーザーがファイルを使用してファイルを操作Microsoft Teams、接続に TLS が使用されます。 これは、自動的にOffice 365されます。 Microsoft Teams現在、暗号化された電子メールのインライン レンダリングはサポートされていません。 暗号化されたメールが暗号化されたメールにMicrosoft Teamsメッセージ暗号化に関する FAQ を[参照してください](./ome-faq.yml#can-i-automatically-remove-encryption-on-incoming-and-outgoing-mail-)。|
 |
 
-## <a name="additional-information"></a>追加情報
+## <a name="additional-information"></a>ページの先頭へ
 
 暗号化オプションを含むファイル保護ソリューションの詳細については[、「File Protection Solutions in Office 365」を参照してください](https://www.microsoft.com/download/details.aspx?id=55523)。

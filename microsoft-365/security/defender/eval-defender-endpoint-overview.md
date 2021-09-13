@@ -22,11 +22,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: b630c1b10722056c3d201eb300aba8f68a38bbca
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568854"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220014"
 ---
 # <a name="evaluate-microsoft-defender-for-endpoint-overview"></a>エンドポイントの Microsoft Defender の概要を評価する
 

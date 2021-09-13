@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft Teamsチャネルは、データ損失防止 (DLP) ポリシーをサポートします。
-ms.openlocfilehash: 8dbc7ce992840101c464f64bd981c65e7703f8bd
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 789571a4123473d3c1708ec4ac16dd7656514d92
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567762"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59193000"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>データ損失防止と Microsoft Teams
 
@@ -55,7 +55,7 @@ Office 365およびMicrosoft 365 E3には、オンライン、SharePoint、お�
 
 DLP 保護は、エンティティに対してTeamsされます。
 
-|ユーザー アカウント/グループ/リスト  |Teamsエンティティ |利用可能な DLP 保護|
+|ポリシーの範囲が次の場合 |これらのエンティティTeamsエンティティ |DLP 保護が利用可能になります|
 |---------|---------|---------|
 |個々のユーザー アカウント     |1:1/n チャット         |はい         |
 |     |一般的なチャット         |いいえ         |

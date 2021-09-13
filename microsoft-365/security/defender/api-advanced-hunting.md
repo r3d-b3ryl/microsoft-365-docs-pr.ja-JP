@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4064a2d4469fb842a6446c1a869de44a48f2b627cdb25ae4f7999a255c3d04f2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3ff62265783be846a95964164e372100fe1ef662
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53792916"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220113"
 ---
 # <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender高度なハンティング API
 
@@ -47,7 +47,7 @@ ms.locfileid: "53792916"
 1. クエリは、過去 30 日間のデータを探索して返します。
 2. 結果は、最大 100,000 行を返す場合があります。
 3. テナントごとに 1 分あたり最大 15 回の呼び出しを行います。
-4. テナントが次の 15 分のサイクルの後まで 100% に達した場合、クエリはブロックされます。
+4. テナントが 100% に達した場合、次の 15 分のサイクル終了までクエリはブロックされます。
 5. 1 つの要求が 10 分以上実行された場合、その要求はタイム アウトし、エラーを返します。
 6. HTTP 応答コードは、送信された要求の数または割り当てられた実行時間のいずれかによって、クォータに達 `429` したかどうかを示します。 応答本文を読んで、到達した制限を理解します。 
 
@@ -61,7 +61,7 @@ ms.locfileid: "53792916"
 アクセス許可の種類 | アクセス許可 | アクセス許可の表示名
 -|-|-
 アプリケーション | AdvancedHunting.Read.All | 高度なクエリを実行する
-委任 (職場または学校のアカウント) | AdvancedHunting.Read | 高度なクエリを実行する
+委任 (職場または学校アカウント) | AdvancedHunting.Read | 高度なクエリを実行する
 
 >[!Note]
 > ユーザー資格情報を使用してトークンを取得する場合:
@@ -86,9 +86,9 @@ Content-Type | application/json
 
 要求本文で、JSON オブジェクトに次のパラメーターを指定します。
 
-パラメーター | 種類 | 説明
+パラメーター | 型 | 説明
 -|-|-
-Query | テキスト | 実行するクエリ。 **注: 必須**
+クエリ | テキスト | 実行するクエリ。 **注: 必須**
 
 ## <a name="response"></a>応答
 
@@ -104,7 +104,7 @@ Query | テキスト | 実行するクエリ。 **注: 必須**
 
 次の例では、ユーザーが以下のクエリを送信し、、 、および を含む API 応答オブジェクト `Stats` `Schema` を受け取ります `Results` 。
 
-### <a name="query"></a>Query
+### <a name="query"></a>クエリ
 
 ```json
 {

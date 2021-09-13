@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 5fbdb1725249797ea87104cac5f25eaac9f5bff05967ee11cccb7ae14c349d55
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0c0c2e280f63076687a0854e25c47577b050a8f7
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53888765"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220033"
 ---
 # <a name="microsoft-365-defender-incidents-api-and-the-incidents-resource-type"></a>Microsoft 365 Defender API とインシデント リソースの種類
 
@@ -46,13 +46,13 @@ ms.locfileid: "53888765"
 
 HTTP 応答コードは、送信された要求の数または割り当てられた実行時間のいずれかによって、クォータに達 `429` したかどうかを示します。 応答本文には、到達したクォータがリセットされるまでの時間が含まれます。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>アクセス許可
 
 インシデント API では、それぞれのメソッドに対してさまざまな種類のアクセス許可が必要です。 必要なアクセス許可の詳細については、それぞれのメソッドの記事を参照してください。
 
 ## <a name="methods"></a>メソッド
 
-メソッド | 戻り値の型 | Description
+メソッド | 戻り値の型 | 説明
 -|-|-
 [インシデントをリストする](api-list-incidents.md) | [インシデント リスト](api-incident.md) | インシデントの一覧を取得します。
 [インシデントを更新する](api-update-incidents.md) | [インシデント](api-incident.md) | 特定のインシデントを更新します。
@@ -64,7 +64,7 @@ HTTP 応答コードは、送信された要求の数または割り当てられ
 
 ## <a name="common-properties"></a>共通プロパティ
 
-プロパティ | 種類 | 説明
+プロパティ | 型 | 説明
 -|-|-
 incidentId | long | インシデントの一意の ID。
 redirectIncidentId | null 許容長 | 現在のインシデントが結合されたインシデント ID。

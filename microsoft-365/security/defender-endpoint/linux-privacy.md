@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: 3d6ce59ec83e8271ff0c665386bd33942084d9ad
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58683566"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218383"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 上のエンドポイント用 Microsoft Defender のプライバシー
 
@@ -234,7 +234,7 @@ IT 管理者の場合は、エンタープライズ レベルでこれらのコ�
 |フィールド|説明|
 |---|---|
 |sha256|サポート ログの SHA256 識別子。|
-|サイズ|サポート ログのサイズ。|
+|size|サポート ログのサイズ。|
 |original_path|サポート ログへのパス (常に */var/opt/microsoft/mdatp/wdavdiag/ の下*)。|
 |format|サポート ログの形式。|
 

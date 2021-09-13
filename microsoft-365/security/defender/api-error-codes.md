@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: b972bc1710a5edbb3d351f2a33f966c80266fe4d9f13cfbfa6f6bf320764a93c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: de24856e8ea7555a96de18cabca5ccadfe71b431
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53888873"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220054"
 ---
 # <a name="common-microsoft-365-defender-rest-api-error-codes"></a>REST API Microsoft 365 Defenderコードに関する一般的な情報
 

@@ -21,11 +21,11 @@ ms.custom:
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: '概要: Microsoft 365 テスト環境用にフェデレーション認証を構成します。'
 ms.openlocfilehash: 1cca1b0b5f7b345d7d9ed5f5cd23f9b742542529
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567414"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218524"
 ---
 # <a name="federated-identity-for-your-microsoft-365-test-environment"></a>Microsoft 365 テスト環境のフェデレーション ID
 
@@ -253,7 +253,7 @@ Install-WindowsFeature ADFS-Federation -IncludeManagementTools
     
   - [ **フェデレーション サービスの表示名]** に、架空の組織の名前を入力します。
     
-  - **[次へ]** を選択します。
+  - [**次へ**] を選択します。
     
 7. [サービス アカウント **の指定] ページで** 、[アカウント **名の選択]** **を選択します**。
     
@@ -335,7 +335,7 @@ Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
     
   - [パスワード **] ボックス** に、User1 アカウントのパスワードを入力します。
     
-  - **[次へ]** を選択します。
+  - [**次へ**] を選択します。
     
 6. [FS **プロキシAD]** ページで、下矢印を選択し、フェデレーション サービス FQDN の証明書を選択し、[次へ] を選択 **します**。
     

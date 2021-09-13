@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 6f80c0edeeb0d05287dc43aa9e3dea906504ac4e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 720707ab58ff5de8ddc64ac1df717d9812227735
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568122"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220094"
 ---
 # <a name="create-an-app-to-access-microsoft-365-defender-apis-on-behalf-of-a-user"></a>ユーザーに代わって API にMicrosoft 365 Defenderするアプリを作成する
 
@@ -117,7 +117,7 @@ $redirectUri = '' # Paste your app's redirection URI
 $authority = "https://login.windows.net/$tenantId"
 $resourceUrl = 'https://api.security.microsoft.com'
 
-$response = Get-ADALToken -Resource $resourceUrl -ClientId $cleintId -RedirectUri $redirectUri -Authority $authority -PromptBehavior:Always
+$response = Get-ADALToken -Resource $resourceUrl -ClientId $clientId -RedirectUri $redirectUri -Authority $authority -PromptBehavior:Always
 $response.AccessToken | clip
 
 $response.AccessToken

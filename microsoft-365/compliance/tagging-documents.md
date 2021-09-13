@@ -18,11 +18,11 @@ ms.assetid: ''
 description: レビュー セット内のドキュメントにタグを付けると、不要なコンテンツを削除し、関連するコンテンツを特定Advanced eDiscoveryできます。
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: 83d8814a1cbc35e461c5bd459390a507bd675f5d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568951"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221837"
 ---
 # <a name="tag-documents-in-a-review-set-in-advanced-ediscovery"></a>レビュー セット内のドキュメントにタグを付Advanced eDiscovery
 

@@ -1,5 +1,5 @@
 ---
-title: レポート メッセージまたはレポートフィッシング アドインを有効にする
+title: メッセージのレポートまたはフィッシング アドインのレポートを有効にする
 f1.keywords:
 - NOCSH
 ms.author: siosulli
@@ -18,13 +18,13 @@ description: レポート メッセージまたはレポート フィッシン�
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: f7c077521700a8bd4c7d1997bb87bab0f214337d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563792"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218063"
 ---
-# <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>レポート メッセージまたはレポートフィッシング アドインを有効にする
+# <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>メッセージのレポートまたはフィッシング アドインのレポートを有効にする
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 

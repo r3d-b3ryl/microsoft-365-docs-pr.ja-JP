@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 67bd5a8935f3380e3a27445af7d6733276b5579f6670d6fe9620c896e0d45350
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9e74d0b232d35f0e7e15f33cb570a17e111d4e92
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53856621"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59219594"
 ---
 # <a name="contact-support-for-tristan-da-cunha"></a>Tristan da Cunha のサポートに問い合わせ
 

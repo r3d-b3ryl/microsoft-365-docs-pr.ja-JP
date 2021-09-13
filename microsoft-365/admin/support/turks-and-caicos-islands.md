@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6ae15ba40e1eaedc5f22c3603168efcc6135da25422f155c8258581baf19851d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: dbc41b13c8b4d8d05b794988159f3bbff081fa71
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53893437"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59219563"
 ---
 # <a name="contact-support-for-turks-and-caicos-islands"></a>タークス諸島とカイコス諸島のサポートへのお問い合わせ
 

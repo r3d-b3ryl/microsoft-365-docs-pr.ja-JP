@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: REST API を使用して、ドキュメント理解モデルを 1 つ以上のライブラリに適用します。
-ms.openlocfilehash: 2bcd7bd038c228e09332b7841332b6943edb0232ec27b1315fe612a5a8a4d0c5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 04f1dfdb0c16110c9ba7de12f5f0735d498d50cf
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53865073"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221081"
 ---
 # <a name="batch-apply-model"></a>バッチ適用モデル
 
@@ -59,13 +59,13 @@ POST /_api/machinelearning/publications HTTP/1.1
 
 ## <a name="response"></a>応答
 
-| 名前   | 種類  | 説明|
+| 名前   | 型  | 説明|
 |--------|-------|------------|
 |201 Created||これは、複数のドキュメント ライブラリへのモデルの適用をサポートするためにカスタマイズされた API です。部分的に成功した場合でも、作成された 201 が返される可能性があり、呼び出し元は応答本文を調べて、モデルがドキュメント ライブラリに正常に適用されたかどうかを理解する必要があります。|
 
 ## <a name="response-body"></a>応答本文
 
-| 名前   | 種類  | 説明|
+| 名前   | 型  | 説明|
 |--------|-------|------------|
 |TotalSuccesses|整数|ドキュメント ライブラリに正常に適用されたモデルの総数。|
 |TotalFailures|整数|ドキュメント ライブラリへの適用に失敗したモデルの総数。|
@@ -73,7 +73,7 @@ POST /_api/machinelearning/publications HTTP/1.1
 
 ### <a name="machinelearningpublicationresult"></a>MachineLearningPublicationResult
 
-| 名前   | 種類  | 説明|
+| 名前   | 型  | 説明|
 |--------|-------|------------|
 |StatusCode|整数|HTTP 状態コード。|
 |ErrorMessage|文字列|モデルをドキュメント ライブラリに適用するときに何が問題になっているのかを示すエラー メッセージ。|
@@ -81,7 +81,7 @@ POST /_api/machinelearning/publications HTTP/1.1
 
 ### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
 
-| 名前 | 種類 | 説明 |
+| 名前 | 型 | 説明 |
 |--------|--------|------------|
 |ModelUniqueId|文字列|モデル ファイルの一意の ID。|
 |TargetSiteUrl|文字列|ターゲット ライブラリ サイトの完全な URL。|

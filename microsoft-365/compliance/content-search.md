@@ -21,11 +21,11 @@ ms.custom:
 - seo-marvel-apr2020
 description: Microsoft コンプライアンス センターのコンテンツ検索電子情報開示ツールを使用すると、さまざまな Microsoft 365 サービスでコンテンツを検索できます。
 ms.openlocfilehash: beee298e18fd46adfc11925de51274a60328a3a5
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567498"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59219063"
 ---
 # <a name="create-a-content-search"></a>コンテンツ検索の作成
 

@@ -21,11 +21,11 @@ ms.topic: article
 ms.date: 06/11/2021
 ms.reviewer: chventou
 ms.openlocfilehash: b731dcbeaf49b2c1f6bfbfacde17f7643c8faf4d
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823626"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218374"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-group-policy-objects"></a>グループ ポリシー オブジェクトを使用して Microsoft Defender for Endpoint を管理する
 

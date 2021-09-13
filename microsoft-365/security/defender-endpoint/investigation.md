@@ -19,11 +19,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 54e060f1cc98f62ca048ce8d561247c47f189f24
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256796"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218393"
 ---
 # <a name="investigation-resource-type"></a>調査リソースの種類
 
@@ -33,7 +33,7 @@ ms.locfileid: "58256796"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -53,17 +53,17 @@ Defender for Endpoint の自動調査エンティティを表します。
 
 ## <a name="properties"></a>プロパティ
 
-プロパティ|種類|説明
+プロパティ|型|説明
 :---|:---|:---
-id|String|調査エンティティの ID。 
+id|文字列|調査エンティティの ID。 
 startTime|DateTime Nullable|調査が作成された日時。
 endTime|DateTime Nullable|調査が完了した日時。
-cancelledBy|String|その調査を取り消したユーザー/アプリケーションの ID。
+cancelledBy|文字列|その調査を取り消したユーザー/アプリケーションの ID。
 state|列挙|調査の現在の状態。 指定できる値は、'Unknown'、'Terminated'、 'SuccessfullyRemediated', '良性', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallyInvestigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'unsupportedAlertType', 'unsupportedAlertType''
 statusDetails|String|調査の状態に関する追加情報。
 machineId|String|調査が実行されるデバイスの ID。
-computerDnsName|String|調査が実行されるデバイスの名前。
-triggeringAlertId|String|調査をトリガーしたアラートの ID。
+computerDnsName|文字列|調査が実行されるデバイスの名前。
+triggeringAlertId|文字列|調査をトリガーしたアラートの ID。
 
 ## <a name="json-representation"></a>Json 表記
 

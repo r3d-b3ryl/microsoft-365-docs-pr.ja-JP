@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: コンプライアンス センターに新しいソリューションを追加する場合、フィードバックに基づいて既存の機能を更新する場合、新しく更新されたドキュメントを展開する場合でも、Microsoft 365 を使用すると、変化し続けるコンプライアンス環境の上に立ち続けるのに役立ちます。 今月までの予定を確認します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: f05350819c040f2b230bc9be9f963b9bcf057452
-ms.sourcegitcommit: 8db88004f4c015138b20c55095ada2c0c79e5910
+ms.openlocfilehash: 498d88e2a75a0485043297eebf27c3da014a63b9
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58928694"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216094"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 コンプライアンス センターの新機能
 
@@ -51,7 +51,7 @@ Microsoft 365 コンプライアンス センター に新しいソリューシ�
 
 ### <a name="compliance--service-assurance"></a>コンプライアンス&サービス アシュアランス
 
-- [サービスアシュア](https://docs.microsoft.com/en-us/compliance/) ランスは、認定および適用性に関する声明に関する四半期ごとにコンテンツ更新プログラムを確認して更新されました。
+- [サービスアシュア](/compliance/) ランスは、認定および適用性に関する声明に関する四半期ごとにコンテンツ更新プログラムを確認して更新されました。
   - アーキテクチャ
   - 監査ログ
   - 暗号化とキー管理

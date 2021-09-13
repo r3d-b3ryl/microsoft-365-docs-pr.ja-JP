@@ -21,11 +21,11 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.openlocfilehash: 52da535c376af5775f2c75d9259529d2a011791a
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58594210"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218173"
 ---
 # <a name="the-action-center"></a>アクション センター
 
@@ -49,7 +49,7 @@ ms.locfileid: "58594210"
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="[統合アクション] センター (Microsoft 365 Defender)。":::
 
-次に例を示します。 
+例: 
 
 - 以前にコンプライアンス センター ( ) Office 365 セキュリティ &を使用していた場合は、Microsoft 365 Defender ポータル ( ) で統合 [https://protection.office.com](https://protection.office.com) アクション センターを試してください [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) 。
 - [アクション センター] を [Microsoft Defender セキュリティ センター ] で使用していた場合は、Microsoft 365 Defender ポータル ( ) [https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) で統合アクション センターを試してください [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) 。
@@ -75,7 +75,7 @@ ms.locfileid: "58594210"
 
 |タブ  |説明  |
 |---------|---------|
-|**Pending**     | 注意が必要なアクションの一覧を表示します。 アクションを一度に 1 つ承認または拒否するか、同じ種類のアクション (検疫ファイルなど) がある場合は複数のアクションを選択できます。 <p>**ヒント**: 保留中のアクションをできるだけ早く確認し、承認 (または拒否) して、自動調査が正時に完了するようにします。       |
+|**保留中**     | 注意が必要なアクションの一覧を表示します。 アクションを一度に 1 つ承認または拒否するか、同じ種類のアクション (検疫ファイルなど) がある場合は複数のアクションを選択できます。 <p>**ヒント**: 保留中のアクションをできるだけ早く確認し、承認 (または拒否) して、自動調査が正時に完了するようにします。       |
 |**履歴**     | 次のようなアクションの監査ログとして機能します。 <br/>- 自動調査の結果として実行された修復アクション <br/>- 疑わしいまたは悪意のある電子メール メッセージ、ファイル、または URL に対して実行された修復アクション<br/>- セキュリティ運用チームによって承認された修復アクション <br/>- Live Response セッション中に適用された、実行されたコマンドと修復アクション<br/>- ウイルス対策保護によって実行された修復アクション <p>特定のアクションを元に戻す方法を提供します (「完了した操作を元に戻[す」を参照)。](m365d-autoir-actions.md#undo-completed-actions)        |
 
 アクション センターでデータをカスタマイズ、並べ替え、フィルター処理、およびエクスポートできます。
@@ -91,16 +91,16 @@ ms.locfileid: "58594210"
 
 ## <a name="actions-tracked-in-the-action-center"></a>アクション センターで追跡されるアクション
 
-承認待ちか既に実行済みかのアクションはすべて、アクション センターで追跡されます。 使用可能なアクションには、次のものが含まれます。
+すべての修復アクションは、承認待ちか既に承認済みかにかかわらず、アクションセンターに統合されます。 使用可能なアクションには、次のものが含まれます。
 
 - 調査パッケージの収集 
 - デバイスを分離する (この操作は元に戻すことができます) 
-- マシンのオフボード 
+- コンピューターのオフロード 
 - リリース コードの実行 
 - 検疫からの解放 
-- 要求サンプル 
+- サンプルの要求 
 - コードの実行を制限する (このアクションは元に戻すことができます) 
-- ウイルス対策スキャンを実行する 
+- ウイルス対策スキャンの実行 
 - 停止と検疫 
 
 自動調査の結果として自動的に実行される修復アクションに加[](m365d-autoir.md)えて、アクション センターは、検出された脅威に対処するためにセキュリティ チームが実行したアクション、および Microsoft 365 Defender の脅威保護機能の結果として実行されたアクションも追跡します。 自動修復アクションと手動修復アクションの詳細については、「修復アクション」 [を参照してください](m365d-remediation-actions.md)。

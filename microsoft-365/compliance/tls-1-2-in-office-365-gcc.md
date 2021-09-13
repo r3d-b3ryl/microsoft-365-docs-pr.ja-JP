@@ -14,12 +14,12 @@ ms.reviewer: krowley
 ms.author: krowley
 appliesto:
 - Office 365 Business
-ms.openlocfilehash: 3c31f0945bfca39545d6bb841d02e4c559ad6be0d3e75a530c32ce2cac22b366
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 16a02985107c5f578d6d6c21bf2efc6e80297951
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53850569"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216304"
 ---
 # <a name="disabling-tls-10-and-11-in-microsoft-365-gcc-high-and-dod"></a>高および DoD の TLS 1.0 と 1.1 Microsoft 365 GCC無効にする
 
@@ -33,7 +33,7 @@ Microsoft [TLS 1.0](https://support.microsoft.com/help/3117336) の実装には�
 
 [TLS 1.0 の問題の解決](https://www.microsoft.com/download/details.aspx?id=55266)
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 2020 年 1 月 15 日からMicrosoft 365 GCC High 環境と DoD 環境では TLS 1.1 と 1.0 が無効になります。
 

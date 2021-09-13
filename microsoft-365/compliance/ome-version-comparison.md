@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: この記事では、さまざまなバージョンのバージョンの違いについて説明Office 365 Message Encryption。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5e94183ef90d5e55512f8d62db38be28f14d69d1fa8a5925b4de2afa660db26c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 92beb3625c0b115fe77f1667a448bf0bf9589040
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53905489"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216654"
 ---
 # <a name="compare-versions-of-ome"></a>OME のバージョンを比較する
 

@@ -18,11 +18,11 @@ description: 管理者は、Exchange Online Protection (EOP) と Microsoft Defen
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: b0b7e93c59484bb3f7b1e34d33dd3ee7a19f7634
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574522"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59217944"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>アプリ内のフィッシング対策Microsoft 365
 
@@ -50,11 +50,11 @@ EOP のフィッシング対策ポリシーと Defender for Office 365 のフィ
 
 |特徴|EOP のフィッシング対策ポリシー|Defender for Office 365|
 |---|:---:|:---:|
-|既定のポリシーを自動的に作成する|![チェック マークを付します。](../../media/checkmark.png)|![チェック マークを付します。](../../media/checkmark.png)|
-|カスタム ポリシーの作成|![チェック マークを付します。](../../media/checkmark.png)|![チェック マークを付します。](../../media/checkmark.png)|
-|一般的なポリシー設定<sup>\*</sup>|![チェック マークを付します。](../../media/checkmark.png)|![チェック マークを付します。](../../media/checkmark.png)|
-|スプーフィング設定|![チェック マークを付します。](../../media/checkmark.png)|![チェック マークを付します。](../../media/checkmark.png)|
-|最初の連絡先安全性のヒント|![チェック マークを付します。](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|
+|既定のポリシーを自動的に作成する|![チェック マーク。](../../media/checkmark.png)|![チェック マーク。](../../media/checkmark.png)|
+|カスタム ポリシーの作成|![チェック マーク。](../../media/checkmark.png)|![チェック マーク。](../../media/checkmark.png)|
+|一般的なポリシー設定<sup>\*</sup>|![チェック マーク。](../../media/checkmark.png)|![チェック マーク。](../../media/checkmark.png)|
+|スプーフィング設定|![チェック マーク。](../../media/checkmark.png)|![チェック マーク。](../../media/checkmark.png)|
+|最初の連絡先安全性のヒント|![チェック マーク。](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|
 |偽装設定||![チェック マーク](../../media/checkmark.png)|
 |高度なフィッシングのしきい値||![チェック マーク](../../media/checkmark.png)|
 |
@@ -114,7 +114,7 @@ EOP および Defender のフィッシング対策ポリシーでは、次のス
 - **認証されていない送信者通知**: これらの通知は、スプーフィング インテリジェンスが有効になっている場合にのみ使用できます。 次のセクションの情報を参照してください。
 - **アクション**: ブロックされたスプーフィングされた送信者からのメッセージ (スプーフィング インテリジェンスによって自動的にブロックされる、またはテナント許可/ブロックリストで手動でブロックされる) の場合は、メッセージに対して実行するアクションを指定することもできます。
   - **受信者の迷惑メール フォルダーにメッセージを移動する**: これが既定値です。 メッセージはメールボックスに配信され、迷惑メール フォルダーに移動されます。 このExchange Online、迷惑メール ルールがメールボックスで有効になっている場合 (既定で有効になっている) 場合、メッセージは迷惑メール フォルダーに移動されます。 詳細については、「迷惑メールの[設定を構成する」を参照Exchange OnlineのメールボックスMicrosoft 365。](configure-junk-email-settings-on-exo-mailboxes.md)
-  - **メッセージを検疫する**: メッセージを目的の受信者ではなく検疫に送信します。 検疫の詳細については、次の記事を参照してください。
+  - **メッセージを検疫する**: メッセージを目的の受信者ではなく検疫に送信します。 検疫の詳細については、以下の記事を参照してください。
     - [[検疫] Microsoft 365](quarantine-email-messages.md)
     - [検疫済みメッセージとファイルを管理者として管理Microsoft 365](manage-quarantined-messages-and-files.md)
     - [検疫済みメッセージをユーザーとして検索して解放Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
@@ -195,7 +195,7 @@ EOP および Defender のフィッシング対策ポリシーでは、次のス
   - **アクションを適用しない**
   - **メッセージを他の電子メール アドレス** にリダイレクトする: メッセージを、目的の受信者ではなく、指定した受信者に送信します。
   - **受信者の迷惑メール フォルダーに** メッセージを移動する: メッセージはメールボックスに配信され、迷惑メール フォルダーに移動されます。 このExchange Online、迷惑メール ルールがメールボックスで有効になっている場合 (既定で有効になっている) 場合、メッセージは迷惑メール フォルダーに移動されます。 詳細については、「迷惑メールの[設定を構成する」を参照Exchange OnlineのメールボックスMicrosoft 365。](configure-junk-email-settings-on-exo-mailboxes.md)
-  - **メッセージを検疫する**: メッセージを目的の受信者ではなく検疫に送信します。 検疫の詳細については、次の記事を参照してください。
+  - **メッセージを検疫する**: メッセージを目的の受信者ではなく検疫に送信します。 検疫の詳細については、以下の記事を参照してください。
     - [[検疫] Microsoft 365](quarantine-email-messages.md)
     - [検疫済みメッセージとファイルを管理者として管理Microsoft 365](manage-quarantined-messages-and-files.md)
     - [検疫済みメッセージをユーザーとして検索して解放Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)

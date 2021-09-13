@@ -17,11 +17,11 @@ ms.collection:
 ms.custom: Ent_Architecture
 description: '概要: Contoso 社は、トップシークレット プロジェクトのセキュリティ分離を持つチームを使用して、新しい製品とサービスのスイートを開発する方法について説明します。'
 ms.openlocfilehash: 3a14a5c7ba844e31b8e96d209eb21a9daac45e00
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575422"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59219714"
 ---
 # <a name="isolated-team-for-a-top-secret-project-of-the-contoso-corporation"></a>Contoso Corporation のトップシークレット プロジェクトの分離チーム
 

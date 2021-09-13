@@ -18,11 +18,11 @@ ms.assetid: b5c82de7-ed2f-4cc6-becd-db403faf4d18
 ROBOTS: NOINDEX, NOFOLLOW
 description: ファイルのタグ付け、評価結果のレビューなど、評価トレーニングを実行する手順を確認Advanced eDiscovery。
 ms.openlocfilehash: 539d4e8f28aa8e4e3ab98807c5019711edbdcc4f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574918"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216363"
 ---
 # <a name="tagging-and-assessment-in-the-relevance-module-in-advanced-ediscovery"></a>関連度モジュールのタグ付けと評価Advanced eDiscovery
   

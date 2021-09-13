@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a1c6fb4d7b643746aa66fa9bbe29b286f403e1a4e78bb97e15a3a782e0f2f3f2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 94d8996f876451fd30e39c08cdff9cb7d8c61996
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53852925"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59217833"
 ---
 # <a name="contact-support-for-australia"></a>オーストラリアのサポートに問い合わせ
 

@@ -14,11 +14,11 @@ ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
 ms.openlocfilehash: 6b12451a3c64384d46ad53af14ff17761d515251
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257682"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215574"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Microsoft マネージド デスクトップのドキュメントの変更履歴
 
@@ -90,7 +90,7 @@ ms.locfileid: "58257682"
 [Microsoft マネージド デスクトップサポートされている地域](service-description/regions-languages.md) | 更新された記事
 [ユーザー エクスペリエンスをローカライズ](get-started/localization.md) | 新しい記事
 
-## <a name="february-2021"></a>2021年2月
+## <a name="february-2021"></a>2021 年 2 月
 新しい記事または変更された記事 | 説明
 --- | ---
 [管理ポータルへのアクセス](get-started/access-admin-portal.md) | 更新された記事
@@ -180,12 +180,12 @@ ms.locfileid: "58257682"
 [Microsoft 365 Apps for enterprise](get-started/m365-apps.md) | 新しい記事
 [プライバシーと個人データ](service-description/privacy-personal-data.md) | 新しい記事
 
-## <a name="july-2020"></a>2020 年7 月
+## <a name="july-2020"></a>2020 年 7 月
 新しい記事または変更された記事 | 説明
 --- | ---
 [Microsoft マネージド デスクトップの要件](service-description/mmd-app-requirements.md) | 更新された記事
 [コンプライアンス](intro/compliance.md) | 更新された記事
-[アプリ制御の使用を開始する](get-started/get-started-app-control.md) | 更新された記事
+[アプリコントロールの使用を開始する](get-started/get-started-app-control.md) | 更新された記事
 [アプリ制御を操作する](working-with-managed-desktop/work-with-app-control.md) | 更新された記事
 [Microsoft マネージド デスクトップの前提条件](get-ready/prerequisites.md) | 更新された記事
 [アプリ コントロール](service-description/app-control.md) | 更新された記事

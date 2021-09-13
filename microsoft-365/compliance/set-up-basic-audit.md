@@ -20,11 +20,11 @@ search.appverid:
 - MET150
 description: この記事では、組織のユーザーと管理者が実行する監査アクティビティの検索を開始できるよう、基本監査を設定する方法について説明します。
 ms.openlocfilehash: caa87a34234597e36949a1a2c47b695a02b5c2b7
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568963"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216403"
 ---
 # <a name="set-up-basic-audit-in-microsoft-365"></a>[基本監査] を [Microsoft 365
 

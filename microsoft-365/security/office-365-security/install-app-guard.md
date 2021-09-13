@@ -17,11 +17,11 @@ description: ハードウェア ベースの分離の最新情報を取得しま
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: f734a4ee22984bdc716a9897624f21396c8b7c1d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58558868"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218024"
 ---
 # <a name="application-guard-for-office-for-admins"></a>管理者向け Application Guard for Office
 

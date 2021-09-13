@@ -23,12 +23,12 @@ search.appverid:
 - BEA160
 description: プランOutlook変更するOutlook前OneDrive、Yammer、SharePointコンテンツのバックアップMicrosoft 365します。
 ms.date: 03/17/2021
-ms.openlocfilehash: 1823288e60b06787a4bfe0a6fd0a1a11855d5d22df93bb496ba5c0a8a5b574d9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 86953f3235d8725ecdd6b5294611c0e5a378b17d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53872673"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59219064"
 ---
 # <a name="back-up-data-before-switching-microsoft-365-for-business-plans"></a>ビジネス プランの変更前にデータMicrosoft 365バックアップする
 

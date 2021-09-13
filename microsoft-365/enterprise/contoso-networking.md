@@ -15,11 +15,11 @@ ms.collection:
 ms.custom: ''
 description: Contoso のネットワーク インフラストラクチャと、企業が SD-WAN テクノロジを使用して、エンタープライズ クラウド サービスに最適なネットワーク パフォーマンスをMicrosoft 365について説明します。
 ms.openlocfilehash: af2c68cb31450fe17449f95391dd3e5c298a2395
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569491"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218664"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Contoso Corporation のネットワーク
 
@@ -122,6 +122,6 @@ Contoso 社が従業員 [向け](contoso-identity.md) クラウドでオンプ�
 
 [ネットワークのロードマップ (Microsoft 365](networking-roadmap-microsoft-365.md)
 
-[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
+[Microsoft 365 for Enterprise の概要](microsoft-365-overview.md)
 
 [テスト ラボ ガイド](m365-enterprise-test-lab-guides.md)

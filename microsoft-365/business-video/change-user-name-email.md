@@ -16,18 +16,19 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 - AdminTemplateSet
+- admindeeplinkMAC
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 表示名、エイリアス、または電子メール アドレスを変更して、ユーザーの名前または電子メール アドレスを変更する方法について説明します。
-ms.openlocfilehash: 238d4a81853a490fcc92858480e841aeb7aaa8b7c054ae4bd39e5caee11b91d7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: af91a9597cba44762b009f3946aca889a2ab5a11
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53803632"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59219384"
 ---
 # <a name="change-a-users-name-or-email-address"></a>ユーザーの名前または電子メール アドレスを変更する
 
@@ -41,7 +42,7 @@ ms.locfileid: "53803632"
 
 ### <a name="change-a-users-display-name"></a>ユーザーの表示名を変更する
 
-1. [ユーザー] Microsoft 365 管理センター[ユーザー] **、[** アクティブ ユーザー]**の順に選択します**。
+1. [ユーザー] Microsoft 365 管理センター[ユーザー] **[アクティブユーザー]**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**を選択します**</a>。
 1. アクティブなユーザーの一覧からユーザーを選択します。
 1. [連絡先情報 **の管理] を選択します**。
 1. 表示名を変更し、[変更の保存] **を選択します**。
@@ -50,14 +51,14 @@ ms.locfileid: "53803632"
 
 ### <a name="add-an-email-alias"></a>電子メール エイリアスを追加する
 
-1. [ユーザー] Microsoft 365 管理センター[ユーザー] **、[** アクティブ ユーザー]**の順に選択します**。
+1. [ユーザー] Microsoft 365 管理センター[ユーザー] **[アクティブユーザー]**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**を選択します**</a>。
 1. アクティブなユーザーの一覧からユーザーを選択します。
 1. [メール **エイリアスの管理] を選択します**。
 1. 新しいエイリアスを入力し、ドメインを確認し、[変更の保存] **を選択します**。
 
 ### <a name="change-a-username"></a>ユーザー名を変更する
 
-1. [ユーザー] Microsoft 365 管理センター[ユーザー] **、[** アクティブ ユーザー]**の順に選択します**。
+1. [ユーザー] Microsoft 365 管理センター[ユーザー] **[アクティブユーザー]**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**を選択します**</a>。
 1. アクティブなユーザーの一覧からユーザーを選択します。
 1. [ユーザー **名の管理] を選択します**。
 1. 新しいユーザー名を入力し、ドメインを確認し、[変更の保存] **を選択します**。

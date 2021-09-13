@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: 暗号化に使用されるさまざまな証明書、テクノロジ、およびトランスポート層セキュリティ (TLS) 暗号スイートについてOffice 365およびMicrosoft 365。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9d7c9bacc8f4e95ca15c4e420efc9b5db1eb074726496d4278be3e2f87046e52
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2b2257338ab214ccdaa08f1aa8f322aad98d7c8b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795532"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212593"
 ---
 # <a name="technical-reference-details-about-encryption"></a>暗号化についてのテクニカル リファレンスの詳細
 

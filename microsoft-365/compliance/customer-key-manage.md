@@ -12,12 +12,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 顧客キーを設定した後、AKV キーを復元し、アクセス許可を管理し、データ暗号化ポリシーを作成および割り当て、管理する方法について説明します。
-ms.openlocfilehash: cbfc93413aa7abfb37c201b8446050b1242461ac
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: 7fc985aaaf0cf0222a6cd02063207b2b1709ac25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400261"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216884"
 ---
 # <a name="manage-customer-key"></a>顧客キーの管理
 
@@ -224,7 +224,7 @@ IsEncrypted プロパティは、メールボックスが暗号化されてい�
 次のように、Get-SPODataEncryptionPolicyコマンドレットを実行して、暗号化の状態を確認します。
 
 ```PowerShell
-   Get-SPODataEncryptionPolicy -Identity <SPOAdminSiteUrl>
+   Get-SPODataEncryptionPolicy <SPOAdminSiteUrl>
 ```
 
 このコマンドレットの出力には、次の情報が含まれます。
@@ -242,6 +242,8 @@ IsEncrypted プロパティは、メールボックスが暗号化されてい�
   - **登録済み:** 顧客キーの暗号化が適用され、すべてのサイトのすべてのファイルが暗号化されています。
 
   - **ローリング:** キー ロールが進行中です。 geo のキーがローリングされている場合は、キー ロール操作を完了したサイトの割合に関する情報も表示され、進行状況を監視できます。
+
+- また、オンボーディングされたサイトの割合も出力されます。
 
 ## <a name="get-details-about-deps-you-use-with-multiple-workloads"></a>複数のワークロードで使用する DEP の詳細を取得する
 

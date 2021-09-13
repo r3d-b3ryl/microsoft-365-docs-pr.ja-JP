@@ -27,11 +27,11 @@ search.appverid:
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: ディレクトリ同期を使用してユーザーにMicrosoft 365準備する方法と、このメソッドを使用する長期的な利点について説明します。
 ms.openlocfilehash: 389f0ca682538baed21432220c16ad7cb269daa0
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356242"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220746"
 ---
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Prepare for directory synchronization to Microsoft 365 (Microsoft 365 へのディレクトリ同期を準備する)
 
@@ -67,7 +67,7 @@ DS でADライセンスが割り当てられる各ユーザー アカウント�
 4. グローバル アドレス一覧 (GAL) を最適に使用するには、DS ユーザー アカウントの次AD情報が正しいか確認します。
 
    - givenName
-   - 姓
+   - surname
    - displayName
    - 役職
    - 部署
@@ -76,7 +76,7 @@ DS でADライセンスが割り当てられる各ユーザー アカウント�
    - 携帯電話番号
    - FAX 番号
    - 番地
-   - 都市
+   - 市区町村
    - 都道府県
    - 郵便番号
    - 国または地域

@@ -12,14 +12,15 @@ ms.date: 09/21/2020
 ms.reviewer: georgiah
 ms.custom:
 - it-pro
+- admindeeplinkMAC
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: cff003b3a6eb8a996b12c4be8b6a48b256ba80d8
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.openlocfilehash: 46e0090106ce87e130cd78c7a9f6e844bd2de187
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58747509"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218593"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>テナント間メールボックスの移行 (プレビュー)
 
@@ -53,7 +54,7 @@ ms.locfileid: "58747509"
 
 また、信頼できるパートナー企業 (メールボックスを移動する相手) と通信して、テナント ID を取得Microsoft 365必要があります。 このテナント ID は、[組織の関係] フィールドで使用 `DomainName` されます。
 
-サブスクリプションのテナント ID を取得するには、サブスクリプションにサインインMicrosoft 365 管理センターに移動します [https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties) 。 Tenant ID プロパティのコピー アイコンをクリックしてクリップボードにコピーします。
+サブスクリプションのテナント ID を取得するには、サブスクリプションにサインイン<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センターに</a>移動します [https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties) 。 Tenant ID プロパティのコピー アイコンをクリックしてクリップボードにコピーします。
 
 プロセスの動作を次に示します。
 

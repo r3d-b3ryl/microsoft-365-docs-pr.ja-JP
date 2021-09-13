@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c6448a75deb018011f387d719bce4aeb145e1fef6c8279f8e013e3814ea1627a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 09820fbf6bc636f4312ba26daa85570f36ef1d2d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53907105"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59217694"
 ---
 # <a name="contact-support-for-djibouti"></a>Djibouti のサポートに問い合わせ
 

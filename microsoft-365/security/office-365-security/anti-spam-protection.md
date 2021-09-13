@@ -21,12 +21,12 @@ ms.custom:
 description: 管理者は、スパム対策 (EOP) でスパムを防止するのに役立つスパム対策設定とフィルター Exchange Online Protectionできます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2145637500376944f1adf038e33c41549479a5f4da89fb456b590da8a5c78bb8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9b960894b6923633489c005ee75307ec02b248f5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56885531"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218093"
 ---
 # <a name="anti-spam-protection-in-eop"></a>EOP でのスパム対策保護
 
@@ -55,7 +55,7 @@ Microsoft のメールの安全性ロードマップには、他に例を見な�
 
 EOP のスパム対策設定は、次のテクノロジで構成されています。
 
-- **接続フィルター**: IP 許可一覧、IP ブロック一覧、およびセーフ リスト *(Microsoft* が管理する信頼できる送信者の動的で編集できないリスト) を使用して、受信メール接続の初期の良いメール ソース サーバーと悪いメール ソース サーバーを識別します。 これらの設定は、接続フィルター ポリシーで構成します。 詳細については、「 [接続フィルターの構成」を参照してください](configure-the-connection-filter-policy.md)。
+- **接続フィルター**: IP 許可一覧、IP ブロック一覧、およびセーフ リスト *(Microsoft* が管理する信頼できる送信者の動的で編集できないリスト) を使用して、受信メール接続の初期の良いメール ソース サーバーと悪いメール ソース サーバーを識別します。 接続フィルター ポリシーでこれらの設定を構成します。 詳細については、「 [接続フィルターの構成」を参照してください](configure-the-connection-filter-policy.md)。
 
 - **スパム フィルター (** コンテンツ フィルター) : EOP は、スパム フィルターの評決スパム、高信頼スパム、**バルク** メール、フィッシング メール、高信頼フィッシング メールを使用してメッセージを分類します。 これらの評決に基づいて実行するアクションを構成し、配信ではなく検疫されたメッセージのエンドユーザー通知オプションを構成できます。 詳細については、「スパム対策ポリシーを[構成する」を参照Microsoft 365。](configure-your-spam-filter-policies.md)
 

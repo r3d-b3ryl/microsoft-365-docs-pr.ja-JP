@@ -18,11 +18,11 @@ ms.assetid: 97e06a7a-ef9a-4ce8-baea-18b9e20449a3
 description: 非アクティブなメールボックスの内容を既存のメールボックスに復元 (またはマージ) する方法についてOffice 365。
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 09ab8893b2c663d87417fbedf0c157100b3693da
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569011"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221861"
 ---
 # <a name="restore-an-inactive-mailbox"></a>非アクティブなメールボックスを復元する
 

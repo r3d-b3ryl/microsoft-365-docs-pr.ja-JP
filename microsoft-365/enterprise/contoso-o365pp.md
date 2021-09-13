@@ -15,11 +15,11 @@ ms.collection:
 ms.custom: ''
 description: Contoso 社が Microsoft Endpoint Configuration Manager を使用して Microsoft 365 Apps for enterprise を展開する方法について説明します。
 ms.openlocfilehash: 8e0a88c85a3a2af35a83c71e7eb385b9edbdde77
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58552650"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218673"
 ---
 # <a name="microsoft-365-apps-for-enterprise-deployment-for-contoso"></a>Contoso 社の Microsoft 365 Apps for enterprise の展開
 
@@ -84,6 +84,6 @@ Contoso 社が[エンタープライズ向](contoso-mdm.md)Microsoft Intune Micr
 
 [Microsoft 365 Apps for enterprise](/deployoffice/deployment-guide-microsoft-365-apps)
 
-[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
+[Microsoft 365 for Enterprise の概要](microsoft-365-overview.md)
 
 [テスト ラボ ガイド](m365-enterprise-test-lab-guides.md)

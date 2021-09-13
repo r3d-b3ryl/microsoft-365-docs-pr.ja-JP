@@ -17,11 +17,11 @@ ms.custom:
 - seo-marvel-apr2020
 description: Microsoft サポート ケースの電子情報開示診断情報を収集する方法について説明します。
 ms.openlocfilehash: e5dd4f9bd26121fd5879b2322549a801a3376be0
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58589348"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218973"
 ---
 # <a name="collect-ediscovery-diagnostic-information"></a>電子情報開示の診断情報を収集する
 

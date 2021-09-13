@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 94af3e22-aca6-4e91-8b91-1cd5a02a9ea8
 description: Microsoft Bookings で言語とタイム ゾーンの設定を変更します。 予約が間違った時刻に作成された場合、間違ったタイム ゾーンに対して予約が設定されている可能性があります。
 ms.openlocfilehash: 2ccea0446d168476961294ba5800ad3899bd24eb
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58556446"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59219453"
 ---
 # <a name="set-language-and-time-zones-in-microsoft-bookings"></a>Microsoft Bookings で言語とタイム ゾーンを設定する
 

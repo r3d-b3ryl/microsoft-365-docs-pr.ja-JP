@@ -17,11 +17,11 @@ search.appverid:
 ms.custom: seo-marvel-mar2020
 description: レビュー セット内のドキュメントを Azure Storage アカウントにエクスポートし、Azure Storage Explorerを使用してローカル コンピューターにダウンロードします。
 ms.openlocfilehash: 352bce7134f92a7f6759673f28d388aac4957d1c
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570871"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218993"
 ---
 # <a name="export-documents-in-a-review-set-to-an-azure-storage-account"></a>レビュー セット内のドキュメントをアカウントにAzure Storageする
 

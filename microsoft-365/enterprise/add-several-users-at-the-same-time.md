@@ -14,6 +14,7 @@ ms.custom:
 - O365P_AddUsersCSV
 - O365M_AddUsersCSV
 - O365E_AddUsersCSV
+- admindeeplinkMAC
 search.appverid:
 - MET150
 - MOP150
@@ -24,12 +25,12 @@ search.appverid:
 - GEA150
 - BCS160
 description: 'スプレッドシートまたは他の CSV 形式のファイルMicrosoft 365リストから複数のユーザーをビジネス用に追加する方法について説明します。 YouTube で、アカウントをユーザーに追加する方法を説明するビデオをMicrosoft 365。 このプロセスの最後に、アカウントを持つ各ユーザーにメールボックスがMicrosoft 365されます。 '
-ms.openlocfilehash: 5df43af8d01dce11c063b3d29fb2323b997580bf
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 873a9ff27f85d63596f5e69db918c0c619b73539
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572697"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218773"
 ---
 # <a name="add-several-users-at-the-same-time-to-microsoft-365---admin-help"></a>複数のユーザーを同時にユーザーに追加する - Microsoft 365 ヘルプ
 
@@ -42,7 +43,7 @@ ms.locfileid: "58572697"
 
 1. 職場または学校のアカウントを使用して、Microsoft 365 にサインインします。
 
-2. 管理センターで、[**ユーザー**] \> [**アクティブなユーザー**] の順に選択します。
+2. 管理センターで、[ユーザーがアクティブな **ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**を選択します**</a>。
 
 3. [**複数ユーザーの追加**] を選択します。
 

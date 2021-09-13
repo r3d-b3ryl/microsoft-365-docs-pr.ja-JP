@@ -20,11 +20,11 @@ description: 詳細については、「Microsoft Defender for microsoft Defende
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: ca5049b234972ef55b951c0886a9d4074613c860
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566654"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59219884"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Microsoft Defender のキャンペーン ビュー (Office 365
 
@@ -45,7 +45,7 @@ ms.locfileid: "58566654"
 
 キャンペーンとは、1 つまたは複数の組織に対する組織的なメール攻撃のことです。 資格情報と会社のデータを盗む電子メール攻撃は、大規模で収益性の高い業界です。 攻撃を止めようとするテクノロジが増加する中、攻撃者は継続的な成功を確実に実現するためにメソッドを変更します。
 
-Microsoft は、サービス全体で膨大な量のフィッシング対策、スパム対策、マルウェア対策データを活用して、キャンペーンの特定に役立ちます。 攻撃情報を分析し、いくつかの要因に従って分類します。 次に例を示します。
+Microsoft は、サービス全体で膨大な量のフィッシング対策、スパム対策、マルウェア対策データを活用して、キャンペーンの特定に役立ちます。 攻撃情報を分析し、いくつかの要因に従って分類します。 例:
 
 - **攻撃元**: 送信元 IP アドレスと送信者メール ドメイン。
 - **メッセージのプロパティ**: メッセージのコンテンツ、スタイル、トーン。
@@ -88,7 +88,7 @@ Microsoft は、サービス全体で膨大な量のフィッシング対策、�
 
 - **種類**: この値は、**フィッシングまたはマルウェア****のいずれかです**。
 
-- **サブ** タイプ : この値には、キャンペーンの詳細が含まれる。 次に例を示します。
+- **サブ** タイプ : この値には、キャンペーンの詳細が含まれる。 例:
   - **フィッシング**: 利用可能な場合は、このキャンペーンによってフィッシングされているブランド。 たとえば `Microsoft` `365` `Unknown` 、、、、、、、 `Outlook` `DocuSign` などです。
   - **マルウェア**: たとえば、 `HTML/PHISH` または `HTML/<MalwareFamilyName>` .
 
@@ -288,7 +288,7 @@ Microsoft Defender for Endpoint サブスクリプションをお持ちの場合
   - **DKIM が渡されました**: 送信者がドメイン キー識別 [メール (DKIM) によって認証されました](support-for-validation-of-dkim-signed-messages.md)。 DKIM 検証に合格しない送信者は、認証されていない送信者、またはメッセージが正当な送信者をスプーフィングすることを示します。
   - **DMARC が渡** されました: 送信者は、ドメイン ベースのメッセージ認証、レポート、および [準拠 (DMARC) によって認証されました](use-dmarc-to-validate-email.md)。 DMARC 検証に合格しない送信者は、認証されていない送信者、またはメッセージが正当な送信者をスプーフィングすることを示します。
 
-- **Attachments**
+- **添付ファイル**
   - **Filename**
   - **SHA256**
   - **マルウェア ファミリ**

@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 18c3c86588cde02b699736e2239f052707cc8a625d7de570bbe5504e6de81a7a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ff07f662cbcc6ed9f9bbe38bd4496652702e27d1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53804242"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59217373"
 ---
 # <a name="contact-support-for-saint-vincent-and-the-grenadines"></a>セント ビンセントとグレナディーン諸島のサポートに問い合わせ
 

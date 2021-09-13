@@ -20,11 +20,11 @@ description: 管理者は、Exchange Online Protection (EOP) がメール認証 
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 4662b036ebc92f69e4cba1c1a7b6c8d8231a4b2c
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575722"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59219813"
 ---
 # <a name="email-authentication-in-eop"></a>EOP のメール認証
 

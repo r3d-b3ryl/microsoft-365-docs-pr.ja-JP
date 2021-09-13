@@ -22,11 +22,11 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.openlocfilehash: 028c099dc046d6402d187e5bde0a1536e44657a4
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572985"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218163"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>自動調査の詳細と結果
 
@@ -56,7 +56,7 @@ ms.locfileid: "58572985"
 
 ### <a name="select-an-item-in-the-action-center"></a>アクション センターでアイテムを選択する
 
-改善された[アクション センター](m365d-action-center.md) ( ) は、デバイス全体の修復アクション、電子メール、コラボレーション & ID を [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) まとめます[](m365d-remediation-actions.md)。 リストされているアクションには、自動的または手動で実行された修復アクションが含まれます。 アクション センターでは、承認を待っているアクションと、既に承認または完了したアクションを表示できます。 調査ページなどの詳細に移動することもできます。
+改善された[アクション センター](m365d-action-center.md) ( ) は、デバイス全体の修復アクション、電子メール、コラボレーション & ID を [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) まとめます[](m365d-remediation-actions.md)。 リストされているアクションには、自動的または手動で実行された修復アクションが含まれます。 アクション センターでは、承認待ちのアクションと、既に承認または完了したアクションを表示できます。 調査ページなどの詳細に移動することもできます。
 
 > [!TIP]
 > アクションを承認 [、拒否、または](m365d-action-center.md#required-permissions-for-action-center-tasks) 元に戻すには、特定のアクセス許可が必要です。

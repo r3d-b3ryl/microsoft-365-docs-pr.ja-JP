@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4cf7d9d160f98bcf111d5fdffe954c748846333e3d38927aa6ce2d23462595c7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 60799ef1d7fdc89b9f2dba90a98b137799f5f7fa
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53831045"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59217174"
 ---
 # <a name="payment-information-for-saudi-arabia"></a>サウジアラビアのお支払い情報
 

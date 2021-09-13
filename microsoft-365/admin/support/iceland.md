@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 92bdcd65d7cd97319a4cd378af7aad30b23ccb8cc666857d08a4b7e5799eb6fe
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e02e5881e82a3dade3ea53c80603fe348147dd89
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53809912"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59217523"
 ---
 # <a name="contact-support-for-iceland"></a>アイスランドのサポートに問い合わせ
 

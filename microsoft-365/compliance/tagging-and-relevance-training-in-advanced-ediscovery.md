@@ -18,11 +18,11 @@ ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 ROBOTS: NOINDEX, NOFOLLOW
 description: タグを付け、40 ファイルのトレーニング サンプルを使用する手順について説明します。この手順は、Advanced eDiscovery。
 ms.openlocfilehash: 8cb1de2b2f02ec9c2fd94e07574b638a001ec235
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573765"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216394"
 ---
 # <a name="tagging-and-relevance-training-in-advanced-ediscovery"></a>タグ付けと関連性のトレーニング (Advanced eDiscovery
   

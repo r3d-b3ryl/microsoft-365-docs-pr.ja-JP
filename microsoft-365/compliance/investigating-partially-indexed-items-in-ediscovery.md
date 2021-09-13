@@ -18,12 +18,12 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: 部分的にインデックスが作成されたアイテム (インデックスのないアイテムとも呼ばれる) を、Exchange、SharePoint、OneDrive for Businessから管理する方法について学習します。
-ms.openlocfilehash: f578b5ba4b89338c5d6ef861b20d42c4aebbb3b2
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 3030867b3b27b91b32ae8d3c8529ad1d95e9c5ad
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574173"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216804"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>電子情報開示で部分的にインデックス付きアイテムを調査する
 
@@ -73,7 +73,7 @@ ms.locfileid: "58574173"
 
 ## <a name="working-with-partially-indexed-items"></a>部分的にインデックス付きアイテムを操作する
 
-部分的にアイテムを調べて、関連する情報が含まれているのを検証する必要がある場合は、部分的に[](export-a-content-search-report.md)インデックス付けされたアイテムに関する情報を含むコンテンツ検索レポートをエクスポートできます。 コンテンツ検索レポートをエクスポートする場合は、部分的にインデックス付けされたアイテムを含むエクスポート オプションのいずれかを選択してください。
+部分的にインデックスが作成されたアイテムを調べて、関連する情報が含まれているのを検証する必要がある場合は、[](export-a-content-search-report.md)部分的にインデックス付けされたアイテムに関する情報を含むコンテンツ検索レポートをエクスポートできます。 コンテンツ検索レポートをエクスポートする場合は、部分的にインデックス付けされたアイテムを含むエクスポート オプションのいずれかを選択してください。
   
 ![2 番目または 3 番目のオプションを選択して、部分的にインデックス付きアイテムをエクスポートします。](../media/PartiallyIndexedItemsExportOptions.png)
   

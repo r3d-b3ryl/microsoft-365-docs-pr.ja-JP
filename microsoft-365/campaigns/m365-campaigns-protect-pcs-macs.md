@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 管理されていないデバイスまたは持ち込み専用デバイス (BYOD) を保護するには、Microsoft 365。
-ms.openlocfilehash: 4ee7e200216833cf67f2a0800a0ed808893c325e5c14c43e50cf30df63831586
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 40e94e2f961ab34827de4ce5e43e100af53a7340
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53881771"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59219263"
 ---
 # <a name="protect-unmanaged-windows-10-pcs-and-macs"></a>非管理対象の Windows 10 PC と Mac を保護する
 

@@ -14,11 +14,11 @@ ms.collection:
 localization_priority: None
 description: トピック センターの詳細については、Microsoft Viva トピック。
 ms.openlocfilehash: 5456ef27b23ff36cd1919274424c179f8ec3d683
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572637"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218493"
 ---
 # <a name="topic-center-overview-in-microsoft-viva-topics"></a>トピック センターの概要 (Microsoft Viva トピック
 

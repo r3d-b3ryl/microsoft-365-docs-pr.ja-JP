@@ -14,16 +14,16 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: 2007 Exchange Server サポートが終了した後のオプションについて説明し、Microsoft 365、Office 365、または Exchange 2016 への移行の計画を開始します。
-ms.openlocfilehash: a6de134db567d3c932d4455409653f1bfd40b3e35960f84691cbcef247b1cfe5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d7e8f50118dab6fcb618273f5c28497c80d4a549
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53855085"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218564"
 ---
 # <a name="exchange-2007-end-of-support-roadmap"></a>Exchange 2007 のサポート終了ロードマップ
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 Exchange Server 2007 年 4 月にサポートが終了しました。 Exchange 2007 から Microsoft 365、Office 365、または Exchange 2016 への移行を開始していない場合は、計画を開始します。
   
@@ -45,7 +45,7 @@ Exchange Serverほぼすべての Microsoft 製品と同様に、サポート �
   
 ## <a name="what-are-my-options"></a>使用できるオプション
 
-次の操作を行うことができます:
+次の操作を実行できます。
   
 - カットオーバー、Microsoft 365、またはハイブリッド移行を使用して、ユーザーに移行します。
     
@@ -245,14 +245,14 @@ Microsoft 365新機能やエクスペリエンスも最初に取得します。�
     
 ## <a name="get-help"></a>ヘルプを参照する
 
-ユーザーが Microsoft FastTrack サービスMicrosoft 365移行する場合は、Microsoft FastTrack サービスを使用できる可能性があります。 FastTrack には、ベスト プラクティス、ツール、およびリソースが提供され、可能な限りシームレスMicrosoft 365移行できます。 何より、サポート エンジニアは、計画と設計から最後のメールボックスの移行まで、移行について説明します。 FastTrack の詳細については [、「Microsoft FastTrack」を参照してください](https://fasttrack.microsoft.com/)。
+移行する場合は、microsoft Microsoft 365 サービスを使用する資格FastTrackがあります。 FastTrack、ベスト プラクティス、ツール、およびリソースを提供して、移行を可能な限りシームレスMicrosoft 365作成します。 何より、サポート エンジニアは、計画と設計から最後のメールボックスの移行まで、移行について説明します。 詳細については、「Microsoft FastTrack」[を参照FastTrack。](https://fasttrack.microsoft.com/)
   
-Microsoft 365 への移行中に問題が発生し、FastTrack を使用していない場合や、新しいバージョンの Exchange Server への移行が行われなかった場合は、ここにお手伝いします。 使用できるリソースを次に示します。
+Microsoft 365 への移行中に問題が発生し、FastTrack を使用していない場合、または新しいバージョンの Exchange Server への移行を行う場合は、ここにお手伝いします。 使用できるリソースを次に示します。
   
 - [テクニカル コミュニティ](https://social.technet.microsoft.com/Forums/office/home?category=exchangeserver)
     
 - [カスタマー サポート](https://support.microsoft.com/gp/support-options-for-business)
     
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [2007 年のサーバー Officeアップグレードに役立つリソース](upgrade-from-office-2007-servers-and-products.md)

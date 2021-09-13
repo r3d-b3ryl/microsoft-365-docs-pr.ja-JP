@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 ms.custom: seo-marvel-apr2020
 description: 管理者が監査ログを検索する機能を有効または無効にするには、Microsoft 365 コンプライアンス センターの監査ログ検索機能を有効または無効にする方法を示します。
-ms.openlocfilehash: 793c76d45f2cd7aed43a959dfcb94edeb9869310
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 2c9331534035d0f0cf23a2dbec09f338a6f6a32b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575326"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216283"
 ---
 # <a name="turn-auditing-on-or-off"></a>監査のオンとオフを切り替える
 
@@ -110,3 +110,29 @@ Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
     - [監査]**ページの**[監査] Microsoft 365 コンプライアンス センター。
 
       組織の監査が有効ではない場合は、ユーザーと管理アクティビティの記録を開始するように求めるバナーが表示されます。
+
+## <a name="audit-records-when-auditing-status-is-changed"></a>監査状態が変更された場合の監査レコード
+
+組織の監査状態に対する変更は、自身が監査されます。 つまり、監査を有効または無効にした場合、監査レコードがログに記録されます。 管理者監査ログExchangeこれらの監査レコードを検索できます。
+
+管理者監査ログExchange監査を有効またはオフにするときに生成される監査レコードを検索するには[、PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)で次のコマンドExchange Onlineします。
+
+```powershell
+Search-AdminAuditLog -Cmdlets Set-AdminAuditLogConfig -Parameters UnifiedAuditLogIngestionEnabled
+```
+
+これらのイベントの監査レコードには、監査状態が変更された時間、変更した管理者、および変更に使用されたコンピューターの IP アドレスに関する情報が含まれます。 次のスクリーンショットは、組織内の監査状態の変更に対応する監査レコードを示しています。
+
+### <a name="audit-record-for-turning-on-auditing"></a>監査を有効にする監査レコード
+
+![監査を有効にする監査レコード](../media/AuditStatusAuditingEnabled.png)
+
+CmdletParameters プロパティの値は、コンプライアンス センターで、または `Confirm` **Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled** $true コマンドレットを実行して、統合監査ログが有効になっていることを示します。
+
+### <a name="audit-record-for-turning-off-auditing"></a>監査をオフにする監査レコード
+
+![監査をオフにする監査レコード](../media/AuditStatusAuditingDisabled.png)
+
+値は `Confirm` *、CmdletParameters プロパティには含* まれません。 これは **、Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled** コマンドを実行して、統合監査ログがオフ$falseします。
+
+管理者監査ログの検索のExchange詳細については[、「Search-AdminAuditLog」を参照してください](/powershell/module/exchange/search-adminauditlog)。

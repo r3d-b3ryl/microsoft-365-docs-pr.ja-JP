@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6966511526b09630e641029a9692d15054398d1603d23d059603822c08d50273
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 514ca64ef740f9a80dda6f9db2f8cf2ea354658e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53830973"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59217093"
 ---
 # <a name="payment-information-for-zambia"></a>ザンビアのお支払い情報
 

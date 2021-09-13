@@ -17,18 +17,18 @@ ms.custom:
 search.appverid: MET150
 description: Managed Service Providers (MSP) の場合は、サービス プロバイダーにサインアップするMicrosoft 365 Lighthouse。
 ms.openlocfilehash: 80e56055a89d73f53c025de05dfc1e8dabedda78
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507892"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218494"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>アカウントにサインアップMicrosoft 365 Lighthouse
 
 > [!NOTE]
 > この記事で説明する機能はプレビューで、変更される可能性があります。要件を満たすパートナーだけが [利用できます](m365-lighthouse-requirements.md)。 組織にアカウント情報がMicrosoft 365 Lighthouse、この記事の指示に従ってサインアップしてください。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>開始する前に
 
 - Microsoft 365 Lighthouseは、顧客テナントだけでなくパートナー テナントに展開されますが、ユーザーと顧客のテナントが Microsoft 365 Lighthouse 要件に記載されている &mdash; [要件を満たしていることを確認します](m365-lighthouse-requirements.md)。
 

@@ -15,11 +15,11 @@ ms.collection:
 ms.custom: ''
 description: Contoso Corporation が COVID-19 パンデミックに対してどのように対応し、ハイブリッド作業用のソフトウェア のインストールと更新インフラストラクチャを設計したのかについて説明します。
 ms.openlocfilehash: 06ce48969d35017da47be1e75ec3c374b9afb9a1
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575446"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59219723"
 ---
 # <a name="contosos-covid-19-response-and-support-for-hybrid-work"></a>Contoso 社の COVID-19 の応答とハイブリッド作業のサポート
 

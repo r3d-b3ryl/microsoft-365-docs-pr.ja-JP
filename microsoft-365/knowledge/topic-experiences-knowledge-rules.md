@@ -11,11 +11,11 @@ search.appverid: MET150
 localization_priority: Normal
 description: トピックの表示を管理する方法については、Microsoft Viva トピック。
 ms.openlocfilehash: b1ea14ccd1872825cd9ce7edb35ddc8c0a7f176e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58561064"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218454"
 ---
 # <a name="manage-topic-visibility-in-microsoft-viva-topics"></a>トピックの表示を管理Microsoft Viva トピック
 
@@ -37,7 +37,7 @@ ms.locfileid: "58561064"
 組織内のトピックを表示できるユーザーを変更できます。
 
 1. [トピックの **表示] タブの**[トピックWho表示]**の下にある [** 編集] を **選択します**。
-2. [トピック **Who** ページで、強調表示されているトピック、トピック カード、検索のトピック回答、トピック ページなど、トピックの詳細にアクセスできるユーザーを選択します。 次のものが選択できます。
+2. [トピック **Who** ページで、強調表示されているトピック、トピック カード、検索のトピック回答、トピック ページなど、トピックの詳細にアクセスできるユーザーを選択します。 次のオプションを選択できます:
     - **組織内のすべてのユーザー**
     - **選択したユーザーまたはセキュリティ グループのみ**
     - **だれも**

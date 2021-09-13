@@ -23,11 +23,11 @@ search.appverid:
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Microsoft 365 Government Community Cloud (GCC) テナントの Microsoft 365 Usage Analytics テンプレート アプリを使用してデータに接続するPower BI。
 ms.openlocfilehash: 2a0ea6985b9f9d09498e4ad086bf89f529b24c17
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567158"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59219463"
 ---
 # <a name="connect-to-microsoft-365-government-community-cloud-gcc-data-with-usage-analytics"></a>Connect分析でMicrosoft 365 Government Community Cloud (GCC) データを取得する方法
 
@@ -36,7 +36,7 @@ ms.locfileid: "58567158"
 > [!NOTE]
 > これらの手順は、特にテナントMicrosoft 365 GCCです。 
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 最初に Usage Analytics Microsoft 365構成するには、次の手順を実行します。 
 

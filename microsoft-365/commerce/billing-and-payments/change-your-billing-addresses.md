@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: ビジネス向け請求通知の受信に使用する請求先住所または電子メール アドレスを更新Microsoft 365します。
 ms.date: 04/07/2021
-ms.openlocfilehash: eb2b50bb5032b30961a14d38bbdb6c04a04a1105ce7000adde8edc1e10a16cb4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 383e8febffa2a65e01c1ae0c543d7b984a96eb26
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53802936"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59219224"
 ---
 # <a name="change-your-billing-addresses"></a>請求先住所を変更する
 
@@ -102,7 +102,7 @@ ms.locfileid: "53802936"
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[お使いの製品]</a> ページの順に移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">お使いの製品</a>] ページの順に移動します。
 
 ::: moniker-end
 

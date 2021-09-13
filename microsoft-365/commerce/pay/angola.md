@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 828b74414bd377208f53d14edb027e03ae9e8b2e57fc875d46a4155e2e0365a3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5ae0fb4ec58b4bb7cc4411269e751b8fcd179c78
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53831210"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59217273"
 ---
 # <a name="payment-information-for-angola"></a>Angola の支払い情報
 

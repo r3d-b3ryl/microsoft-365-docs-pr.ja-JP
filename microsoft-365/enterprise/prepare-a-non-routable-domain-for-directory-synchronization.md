@@ -23,11 +23,11 @@ search.appverid:
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: オンプレミスのユーザー アカウントに非ルーティング ドメインが関連付けられている場合、Microsoft 365 テナントとの同期前に実行する手順について説明します。
 ms.openlocfilehash: dd93cfd85aa6f6f5788b6ae5562c2a2def3ffaa0
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
-ms.translationtype: HT
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574293"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220770"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>ディレクトリ同期のために非ルーティング ドメインの準備を整える
 

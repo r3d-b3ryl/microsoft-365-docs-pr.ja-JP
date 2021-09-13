@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 ms.custom: seo-marvel-apr2020
 description: 管理者は、PST ファイルをハード ドライブにコピー Microsoft 365 Microsoft に配布することで、PST ファイルをメールボックスに一括インポートする方法について説明します。
-ms.openlocfilehash: d5f0fee4808d479ff4a80f4d2152b2cc8a983eb6
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 5061385007071442acb9c2e1be27501d64174ea3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575302"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216234"
 ---
 # <a name="use-drive-shipping-to-import-your-organizations-pst-files"></a>ドライブ配布を使用して組織の PST ファイルをインポートする
 
@@ -124,7 +124,7 @@ ms.locfileid: "58575302"
     > [!NOTE]
     > 前に述べたように、インポート ページにアクセスするには、適切なアクセス許可を割り当てる必要Microsoft 365 コンプライアンス センター。 
   
-3. [インポート] **タブで** 、[アイコンの追加 ![ ] をクリックします。](../media/ITPro-EAC-AddIcon.gif) **新しいインポート ジョブ**。
+3. [**インポート**] タブで、[![追加アイコン](../media/ITPro-EAC-AddIcon.gif)] > [**新規インポート ジョブ**] の順にクリックします。
     
 4. インポート ジョブ ウィザードで、PST インポート ジョブの名前を入力し、[次へ] を **クリックします**。 小文字の英字、数字、ハイフン、およびアンダー スコアを使用します。 大文字を使用したり、名前にスペースを含めたりすることはできません。
     
@@ -167,7 +167,7 @@ ms.locfileid: "58575302"
 3. 初めて WAImportExport.exe を使用してハード ドライブに PST ファイルをコピーする場合は、次のコマンドを実行する。
 
     ```powershell
-    WAImportExport.exe PrepImport /j:<Name of journal file> /t:<Drive letter> /id:<Name of session> /srcdir:<Location of PST files> /dstdir:<PST file path> /sk:<Storage account key> /blobtype:BlockBlob /encrypt /logdir:<Log file location>
+    WAImportExport.exe PrepImport /j:<Name of journal file> /t:<Drive letter> /id:<Name of session> /srcdir:<Location of PST files> /dstdir:<PST file path> /blobtype:BlockBlob /encrypt /logdir:<Log file location>
     ```
 
     次の表は、パラメーターとそれに必要な値を説明したものです。
@@ -180,7 +180,6 @@ ms.locfileid: "58575302"
     | `/id:` <br/> |コピー セッションの名前を指定します。WAImportExport.exe ツールを実行してファイルをハード ドライブにコピーするたびに、セッションが定義されます。PST ファイルは、このパラメーターで指定されたセッション名の名前が付けられたフォルダーにコピーされます。   <br/> | `/id:driveship1` <br/> |
     | `/srcdir:` <br/> |セッション中にコピーされる PST ファイルを含む組織内のソース ディレクトリを指定します。 このパラメーターの値は必ず二重引用符 (" ") で囲むようにしてください。  <br/> | `/srcdir:"\\FILESERVER01\PSTs"` <br/> |
     | `/dstdir:` <br/> |PST がアップロードされる microsoft クラウドAzure Storage領域の保存先ディレクトリを指定します。 値を使用する必要があります  `ingestiondata/` 。 このパラメーターの値は必ず二重引用符 (" ") で囲むようにしてください。  <br/> 必要に応じて、このパラメーターの値に追加のファイル パスを追加することもできます。 たとえば、ハード ドライブ上のソース ディレクトリのファイル パス (URL 形式に変換) を使用できます。このパスはパラメーターで指定  `/srcdir:` します。 たとえば、  `\\FILESERVER01\PSTs` に変更されます  `FILESERVER01/PSTs` 。 この場合も、ファイル パスに  `ingestiondata` 含める必要があります。 したがって、この例では、パラメーターの値  `/dstdir:` は  `"ingestiondata/FILESERVER01/PSTs"` .  <br/> 同じファイル名の PST ファイルがある場合は、追加のファイルのパスを追加する理由の 1 つになります。  <br/> > [!NOTE]> オプションの pathname を含める場合、pst ファイルが Azure Storage 領域にアップロードされた後の PST ファイルの名前空間には、パス名と PST ファイルの名前が含まれます。たとえば、 `FILESERVER01/PSTs/annb.pst` . パス名を含めなかった場合、名前空間は PST ファイル名のみです。たとえば  `annb.pst` .           | `/dstdir:"ingestiondata/"` <br/> または  <br/>  `/dstdir:"ingestiondata/FILESERVER01/PSTs"` <br/> |
-    | `/sk:` <br/> |手順 1 で取得したストレージ アカウント キーを指定します。 このパラメーターの値は必ず二重引用符 (" ") で囲むようにしてください。  <br/> | `"yaNIIs9Uy5g25Yoak+LlSHfqVBGOeNwjqtBEBGqRMoidq6/e5k/VPkjOXdDIXJHxHvNoNoFH5NcVUJXHwu9ZxQ=="` <br/> |
     | `/blobtype:` <br/> |PST ファイルをインポートする領域Azure Storage BLOB の種類を指定します。 PST ファイルをインポートするには、値 **BlockBlob を使用します**。 このパラメーターは必須です。   <br/> | `/blobtype:BlockBlob` <br/> |
     | `/encrypt` <br/> |このスイッチは、ハード ドライブの BitLocker を有効にします。このパラメーターは、WAImportExport.exe ツールを初めて実行する際に必要です。  <br/> BitLocker 暗号化キーは、ジャーナル ファイルと、パラメーターを使用する場合に作成されるログ ファイルにコピー  `/logfile:` されます。 前述のように、ジャーナル ファイルは、WAImportExport.exe ツールがあるフォルダーと同じフォルダーに保存されます。  <br/> | `/encrypt` <br/> |
     | `/logdir:` <br/> |この省略可能なパラメーターは、ログ ファイルの保存先のフォルダーを指定します。 指定しない場合、ログ ファイルは、ログ ファイルツールがあるのと同WAImportExport.exe保存されます。 このパラメーターの値は必ず二重引用符 (" ") で囲むようにしてください。  <br/> | `/logdir:"c:\users\admin\desktop\PstImportLogs"` <br/> |
@@ -188,7 +187,7 @@ ms.locfileid: "58575302"
     各パラメーターの実際の値を使用する WAImportExport.exe ツールの構文の例を以下に示します。
     
     ```powershell
-    WAImportExport.exe PrepImport /j:PSTHDD1.jrn /t:f /id:driveship1 /srcdir:"\\FILESERVER01\PSTs" /dstdir:"ingestiondata/" /sk:"yaNIIs9Uy5g25Yoak+LlSHfqVBGOeNwjqtBEBGqRMoidq6/e5k/VPkjOXdDIXJHxHvNoNoFH5NcVUJXHwu9ZxQ==" blobtype:BlockBlob /encrypt /logdir:"c:\users\admin\desktop\PstImportLogs"
+    WAImportExport.exe PrepImport /j:PSTHDD1.jrn /t:f /id:driveship1 /srcdir:"\\FILESERVER01\PSTs" /dstdir:"ingestiondata/" blobtype:BlockBlob /encrypt /logdir:"c:\users\admin\desktop\PstImportLogs"
     ```
 
     コマンドを実行すると、ハード ドライブへの PST ファイルのコピーの進行状況を示す状態メッセージが表示されます。最終の状態メッセージは、正常にコピーされたファイルの合計数を示しています。 
@@ -241,7 +240,7 @@ Microsoft データ センター担当者がハード ドライブから Azure S
     | `Name` <br/> |ユーザー メールボックスにインポートする PST ファイルの名前を指定します。 このパラメーターの値には、大文字と小文字の区別があります。  <br/> > [!IMPORTANT]> CSV ファイル内の PST ファイル名の大文字と小文字は、手順 2 の Azure Storageにアップロードされた PST ファイルと同じである必要があります。 たとえば、CSV ファイル内の `Name` パラメーターでは `annb.pst` を使用していますが、実際の PST ファイルの名前は `AnnB.pst` である場合、その PST ファイルのインポートは失敗します。 CSV ファイル内の PST の名前の大文字小文字は、実際の PST ファイルの場合と同じである必要があります。           | `annb.pst` <br/> |
     | `Mailbox` <br/> |PST ファイルのインポート先になるメールボックスのメールアドレスを指定します。 PST インポート サービスは、PST ファイルのパブリック フォルダーへのインポートをサポートしていないため、パブリック フォルダーを指定できません。  <br/> PST ファイルを非アクティブなメールボックスにインポートするには、このパラメーターにメールボックスの GUID を指定する必要があります。 この GUID を取得するには、Exchange Online で `Get-Mailbox <identity of inactive mailbox> -InactiveMailboxOnly | FL Guid` の PowerShell コマンドを実行します。 <br/> > [!NOTE]> 場合によっては、1 つのメールボックスがアクティブなメールボックスであり、もう一方のメールボックスがソフト削除 (または非アクティブ) 状態である、同じ電子メール アドレスを持つ複数のメールボックスがある場合があります。 このような状況で、PST ファイルのインポート先のメールボックスを一意に識別するには、メールボックスの GUID を指定する必要があります。 アクティブなメールボックスの GUID を取得するには、次の PowerShell コマンドを実行します: `Get-Mailbox <identity of active mailbox> | FL Guid` ソフト削除 (または非アクティブ) メールボックスの GUID を取得するには、次のコマンドを実行します  `Get-Mailbox <identity of soft-deleted or inactive mailbox> -SoftDeletedMailbox | FL Guid` 。           | `annb@contoso.onmicrosoft.com` <br/> または  <br/>  `2d7a87fe-d6a2-40cc-8aff-1ebea80d4ae7` <br/> |
     | `IsArchive` <br/> | PST ファイルをユーザーのアーカイブ メールボックスにインポートするかどうかを指定します。次のような 2 つの選択肢があります。<br/> **FALSE** PST ファイルをユーザーのプライマリ メールボックスにインポートします。  <br/> **TRUE** PST ファイルをユーザーのアーカイブ メールボックスにインポートします。 これは、[ユーザーのアーカイブ メールボックスが有効である](enable-archive-mailboxes.md)ことが前提です。 このパラメーターが `TRUE` に設定されている場合に、ユーザーのアーカイブ メールボックスが有効になっていない場合は、そのユーザーのインポートは失敗します。 アーカイブが有効化されていないにもかかわらずこのプロパティが `TRUE` に設定されたことが原因で、あるユーザーのインポートが失敗しても、そのインポート ジョブ内の他のユーザーが影響を受けることはありません。  <br/>  このパラメーターを空白のままにすると、PST ファイルはユーザーのプライマリ メールボックスにインポートされます。  <br/> **注:** PST ファイルをクラウド ベースのアーカイブ メールボックスにインポートするときに、そのユーザーのプライマリ メールボックスがオンプレミスの場合は、このパラメーターに対して `TRUE` を指定し、そのユーザーのオンプレミスのメールボックスのメール アドレスを `Mailbox` パラメーターで指定してください。  <br/> | `FALSE` <br/> または  <br/>  `TRUE` <br/> |
-    | `TargetRootFolder` <br/> | PST ファイルのインポート先のメールボックス フォルダーを指定します。  <br/>  このパラメーターを空白のままにすると、PST は、メールボックスのルート レベル(受信トレイ フォルダーと他の既定のメールボックス フォルダーと同じレベル) にある [インポート済み] という名前の新しいフォルダーにインポートされます。  <br/>  指定すると、PST ファイル内のアイテムがユーザーの受信トレイ フォルダー  `/` に直接インポートされます。  <br/>  指定すると  `/<foldername>` 、PST ファイル内のアイテムがという名前のフォルダーにインポートされます  *\<foldername\>* 。 たとえば、`/ImportedPst` を使用した場合、アイテムは **ImportedPst** というフォルダーにインポートされます。 このフォルダーは、ユーザーのメールボックスの受信トレイ フォルダーと同じレベルにあります。  <br/> |(空白のまま)  <br/> または  <br/>  `/` <br/> または  <br/>  `/ImportedPst` <br/> |
+    | `TargetRootFolder` <br/> | PST ファイルのインポート先のメールボックス フォルダーを指定します。  <br/>  このパラメーターを空白のままにすると、PST は、メールボックスのルート レベル(受信トレイ フォルダーと他の既定のメールボックス フォルダーと同じレベル) にある [インポート済み] という名前の新しいフォルダーにインポートされます。  <br/>  指定すると、PST ファイル内のアイテムがユーザーの受信トレイ フォルダー  `/` に直接インポートされます。  <br/>  指定すると  `/<foldername>` 、PST ファイル内のアイテムがという名前のフォルダーにインポートされます  *\<foldername\>* 。 たとえば、`/ImportedPst` を使用した場合、アイテムは **ImportedPst** というフォルダーにインポートされます。 このフォルダーは、ユーザーのメールボックスの受信トレイ フォルダーと同じレベルにあります。  <br/> |(空白)  <br/> または  <br/>  `/` <br/> または  <br/>  `/ImportedPst` <br/> |
     | `ContentCodePage` <br/> |この省略可能なパラメーターでは、PST ファイルを ANSI ファイル形式でインポートする場合に使用するコード ページの数値を指定します。 このパラメーターは、中国語、日本語、韓国語 (CJK) を使用する組織から PST ファイルをインポートする場合に使用します。通常、これらの言語は、文字エンコードのために 2 バイト文字セット (DBCS) を使用するからです。 メールボックス フォルダー名に DBCS が使用されている言語については、PST ファイルのインポートの際にこのパラメーターを使用しないと、多くの場合、インポート後にフォルダー名の文字化けが発生します。  <br/> このパラメーターに使用できる値のリストについては、「[Code Page Identifiers](/windows/win32/intl/code-page-identifiers)」 (コード ページ識別子) を参照してください。  <br/> > [!NOTE]>説明したように、これはオプションのパラメーターであり、CSV ファイルに含める必要があります。 または、このパラメーターを含め、1 つまたは複数の行について値を空白のままにしておくこともできます。           |(空白のまま)  <br/> または  <br/>  `932` (ANSI/OEM 日本語のコード ページ ID)  <br/> |
     | `SPFileContainer` <br/> |PST インポートの場合は、このパラメーターを空白のままにします。  <br/> |該当なし  <br/> |
     | `SPManifestContainer` <br/> |PST インポートの場合は、このパラメーターを空白のままにします。  <br/> |該当なし  <br/> |
@@ -255,7 +254,7 @@ Microsoft データ センター担当者がハード ドライブから Azure S
 
 2. ページの左側のナビゲーション ウィンドウで、[情報Microsoft 365 コンプライアンス センターインポート **] を** \> **クリックします**。
 
-3. [インポート] **タブで** 、[アイコンの追加 ![ ] をクリックします。](../media/ITPro-EAC-AddIcon.gif) **新しいインポート ジョブ**。
+3. [**インポート**] タブで、[![追加アイコン](../media/ITPro-EAC-AddIcon.gif)] > [**新規インポート ジョブ**] の順にクリックします。
 
     > [!NOTE]
     > 前に述べたように、インポート ページにアクセスするには、適切なアクセス許可を割り当てる必要Microsoft 365 コンプライアンス センター。
@@ -290,11 +289,11 @@ Microsoft データ センター担当者がハード ドライブから Azure S
     
 11. [アイコン ![ の追加] をクリックします。](../media/ITPro-EAC-AddIcon.gif) **手順** 3 で作成した PST インポート マッピング ファイルを送信するには、マッピング ファイルを選択します。 
 
-    ![[マッピング ファイルの選択] をクリックして、インポート ジョブ用に作成した CSV ファイルを送信します。](../media/d30b1d73-80bb-491e-a642-a21673d06889.png)
+    ![[マッピング ファイルの選択] をクリックして、インポート ジョブのために作成した CSV ファイルを送信します。](../media/d30b1d73-80bb-491e-a642-a21673d06889.png)
   
 12. CSV ファイルの名前が [**マッピング ファイル名**] に表示されたら、[**検証**] をクリックし、CSV ファイルでエラーを確認します。 
 
-    ![[検証] をクリックして、CSV ファイルでエラーを確認します。](../media/4680999d-5538-4059-b878-2736a5445037.png)
+    ![[検証] をクリックして CSV ファイルでエラーを確認します。](../media/4680999d-5538-4059-b878-2736a5445037.png)
   
     PST インポート ジョブを作成するには、CSV ファイルが正常に検証される必要があります。 正常に検証されると、ファイル名が緑色に変わります。 検証が失敗した場合は、[**ログの表示**] リンクをクリックします。 検証エラー レポートを開くと、失敗したファイルの各行にエラー メッセージが表示されます。 
 
@@ -373,7 +372,7 @@ PST ファイルが Azure にアップロードされると、状態が [進行�
 
 5. [**データのフィルター処理**] ページが表示されます。 ここには、データの使用期間に関する情報など、Office 365 によって実行された PST ファイルの分析の結果のデータ情報が含まれます。 この時点で、インポートされるデータにフィルター処理を適用するか、すべてのデータをそのままインポートするかを選択できます。 
 
-    ![PST ファイル内のデータをトリミングしたり、すべてのデータをインポートすることができます。](../media/287fc030-99e9-417b-ace7-f64617ea5d4e.png)
+    ![PST ファイルのデータをトリミングしたり、そのすべてをインポートしたりすることができます。](../media/287fc030-99e9-417b-ace7-f64617ea5d4e.png)
   
 6. 次のいずれかの操作を行います。
 
@@ -387,7 +386,7 @@ PST ファイルが Azure にアップロードされると、状態が [進行�
 
 7. すべてのデータをインポートする場合は、[**データのインポート**] をクリックしてインポート ジョブを開始します。 
 
-    インポート ジョブの状態が [PST ファイルのインポート] **ページに表示** されます。 [更新 ![ ] アイコンをクリックします。](../media/O365-MDM-Policy-RefreshIcon.gif) **[** 状態] 列に表示される状態情報を更新 **するには、** 更新します。 インポート ジョブをクリックするとステータス フライアウト ページが表示され、インポートされている各 PST ファイルに関するステータス情報が表示されます。 インポートが完了し、PST ファイルがユーザー メールボックスにインポートされると、ステータスは **[完了]** に変わります。
+    インポート ジョブの状態が [PST ファイルのインポート] **ページに表示** されます。 ![[最新の情報に更新] アイコン](../media/O365-MDM-Policy-RefreshIcon.gif)をクリックします。 [**最新の情報に更新**] して、[**ステータス**] 列に表示されるステータス情報を更新します。 インポート ジョブをクリックするとステータス フライアウト ページが表示され、インポートされている各 PST ファイルに関するステータス情報が表示されます。 インポートが完了し、PST ファイルがユーザー メールボックスにインポートされると、ステータスは **[完了]** に変わります。
 
 ## <a name="view-a-list-of-the-pst-files-uploaded-to-microsoft-365"></a>ファイルにアップロードされた PST ファイルの一覧を表示Microsoft 365
 
@@ -404,7 +403,7 @@ Azure Storage Explorer をインストールし、Azure Storage 領域に接続�
 
 2. Microsoft 365 コンプライアンス センターの左のウィンドウで、[**情報ガバナンス] > [インポート**] の順にクリックします。
 
-3. [インポート] **タブで** 、[アイコンの追加 ![ ] をクリックします。](../media/ITPro-EAC-AddIcon.gif) **新しいインポート ジョブ**。
+3. [**インポート**] タブで、[![追加アイコン](../media/ITPro-EAC-AddIcon.gif)] > [**新規インポート ジョブ**] の順にクリックします。
 
 4. インポート ジョブ ウィザードで、PST インポート ジョブの名前を入力し、[次へ] を **クリックします**。 小文字の英字、数字、ハイフン、およびアンダー スコアを使用します。 大文字を使用したり、名前にスペースを含めたりすることはできません。
 
@@ -479,7 +478,7 @@ Azure Storage Explorer をインストールし、Azure Storage 領域に接続�
 
   First time:
 
-  WAImportExport.exe PrepImport /j:<Name of journal file> /t:<Drive letter> /id:<Name of session> /srcdir:<Location of PST files> /dstdir:<PST file path> /sk:<Storage account key> /blobtype:BlockBlob /encrypt /logdir:<Log file location>
+  WAImportExport.exe PrepImport /j:<Name of journal file> /t:<Drive letter> /id:<Name of session> /srcdir:<Location of PST files> /dstdir:<PST file path> /blobtype:BlockBlob /encrypt /logdir:<Log file location>
 
   Subsequent times:
 
@@ -489,7 +488,8 @@ Azure Storage Explorer をインストールし、Azure Storage 領域に接続�
 
   First time:
 
-  WAImportExport.exe PrepImport /j:PSTHDD1.jrn /t:f /id:driveship1 /srcdir:"\\FILESERVER1\PSTs" /dstdir:"ingestiondata/" /sk:"yaNIIs9Uy5g25Yoak+LlSHfqVBGOeNwjqtBEBGqRMoidq6/e5k/VPkjOXdDIXJHxHvNoNoFH5NcVUJXHwu9ZxQ==" /blobtype:BlockBlob /encrypt /logdir:"c:\users\admin\desktop\PstImportLogs"
+  WAImportExport.exe PrepImport /j:PSTHDD1.jrn /t:f /id:driveship1 /srcdir:"\\FILESERVER1\PSTs" /dstdir:"ingestiondata/"
+  /blobtype:BlockBlob /encrypt /logdir:"c:\users\admin\desktop\PstImportLogs"
 
   Subsequent times:
 

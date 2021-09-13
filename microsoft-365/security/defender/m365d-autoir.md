@@ -1,5 +1,5 @@
 ---
-title: データの自動調査とMicrosoft 365 Defender
+title: Microsoft 365 Defender での自動調査と応答
 description: 自動調査および応答機能 (自己修復とも呼ばれる) の概要については、Microsoft 365 Defender
 keywords: 自動化、調査、アラート、トリガー、アクション、修復、自己修復
 search.appverid: met150
@@ -22,13 +22,13 @@ ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
 ms.openlocfilehash: 09274557ea35c87cb4346e797d1b5e5e26e96aa3
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255181"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59219944"
 ---
-# <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>データの自動調査とMicrosoft 365 Defender
+# <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Microsoft 365 Defender での自動調査と応答
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -61,9 +61,9 @@ Imagine第 1 層または第 2 層のセキュリティ運用チームに仮想�
 
 自動調査と対応機能により、セキュリティ運用チームは、セキュリティアラートやインシデントに対処する組織の能力を大幅に向上できます。 自動調査と対応により、調査と対応の処理コストを削減し、脅威保護スイートを有効に利用できます。 自動調査と対応機能は、次の方法でセキュリティ運用チームを支援します。
 
-1. 脅威にアクションが必要かどうかを判断する。
-2. 必要な修復アクションを実行 (または推奨) します。
-3. 他の調査が行われるかどうかと、その他の調査を行う必要があるかどうかを決定します。
+1. 脅威に対してアクションを実行する必要があるかどうかの判断。
+2. 必要な修復アクションの実行 (または推奨)。
+3. 他の調査を行うべきかどうか、どのような調査を行うべきかの決定。
 4. 必要に応じた、他の警告に対するプロセスの反復。
 
 ## <a name="the-automated-investigation-process"></a>自動調査のプロセス
@@ -85,7 +85,7 @@ Imagine第 1 層または第 2 層のセキュリティ運用チームに仮想�
 
 組織の [自動調査](m365d-configure-auto-investigation-response.md) および対応機能の構成方法に応じて、修復アクションは自動的に実行するか、セキュリティ運用チームによる承認を受けた場合にのみ実行されます。 保留中か完了かのアクションはすべて、アクション センターに [一覧表示されます](m365d-action-center.md)。
 
-調査の実行中にその他の関連する警告が発生した場合は、それらの警告は調査が完了するまで調査に追加され続けます。 影響を受けるエンティティが他の場所に表示される場合、自動調査によって対象範囲が拡大され、そのエンティティが含まれると、調査プロセスが繰り返されます。 
+調査の実行中にその他の関連する警告が発生した場合は、それらの警告は調査が完了するまで調査に追加され続けます。 影響を受けるエンティティが他の場所で見られる場合、自動調査はそのエンティティを含むようにその範囲を拡大し、調査プロセスが繰り返されます。 
 
 このMicrosoft 365 Defenderでは、次の表に示す通り、各自動調査では、Microsoft Defender for Identity、Microsoft Defender for Endpoint、Microsoft Defender for Office 365 の信号を関連付ける。 
 

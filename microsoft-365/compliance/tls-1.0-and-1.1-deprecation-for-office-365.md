@@ -17,12 +17,12 @@ appliesto:
 - Office 365 Personal
 - Office Online Server
 - Office Web Apps
-ms.openlocfilehash: 38edd6e5483504b863db5651c4b645815839a2a19f56e44dfdffed06a7073f5c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 870572a61c241d3d3c8ce6791cee77edba2a1956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53801424"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216294"
 ---
 # <a name="disabling-tls-10-and-11-for-microsoft-365"></a>TLS 1.0 と 1.1 を無効にMicrosoft 365
 
@@ -52,7 +52,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\W
 > [!NOTE]
 > Windows 2018 年 10 月 31 日現在、この更新プログラムを使用していない 7 人のユーザーが影響を受ける場合があります。 [KB 3140245は](https://support.microsoft.com/help/3140245) 、TLS プロトコルを有効にするために WINHTTP 設定を変更する方法の詳細を示します。
 
-#### <a name="more-information"></a>詳細
+#### <a name="more-information"></a>詳細情報
 
 KB の記事で説明 **されている DefaultSecureProtocols** レジストリ キーの値は、使用できるネットワーク プロトコルを決定します。
 
@@ -88,7 +88,7 @@ Windows 7 の更新プログラム ([KB 3140245](https://support.microsoft.com/h
 
 TLS 1.0 または TLS 1.1 経由で Microsoft 365 API を呼び出すアプリケーションを更新して、TLS 1.2 を使用する必要があります。 .NET 4.5 の既定値は TLS 1.1 です。 .NET 構成を更新するには、「クライアントでトランスポート層セキュリティ [(TLS) 1.2](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client)を有効にする方法」を参照してください。
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 詳細については、「TLS [1.2](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365)の必須使用の準備」を参照Office 365。
 

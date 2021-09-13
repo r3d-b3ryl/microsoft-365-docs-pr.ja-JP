@@ -1,5 +1,5 @@
 ---
-title: クライアント アナライザーをコンピューターで実行Windows
+title: Windows でクライアント アナライザーを実行する
 description: Microsoft Defender for Endpoint Client Analyzer を実行する方法については、Windows。
 keywords: クライアント アナライザー、センサー、アナライザー、mdeanalyzer、Windows のトラブルシューティング
 search.product: eADQiWindows 10XVcnh
@@ -21,13 +21,13 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: 754ec7b6cdd6e6c5e3c9f5765d839bd94a1d720b
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58254897"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218293"
 ---
-#  <a name="run-the-client-analyzer-on-windows"></a>クライアント アナライザーをコンピューターで実行Windows
+#  <a name="run-the-client-analyzer-on-windows"></a>Windows でクライアント アナライザーを実行する
 
 **適用対象:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
@@ -109,6 +109,6 @@ HardDrivePath\MDEClientAnalyzer.cmd
 
 ## <a name="see-also"></a>関連項目
 - [クライアント アナライザーの概要](overview-client-analyzer.md)
-- [クライアント アナライザーをダウンロードして実行する](download-client-analyzer.md)
-- [詳細なトラブルシューティングを行うデータのWindows](data-collection-analyzer.md)
-- [アナライザー HTML レポートについて](analyzer-report.md)
+- [クライアント アナライザーのダウンロードと実行](download-client-analyzer.md)
+- [Windows で高度なトラブルシューティングを行うためのデータ収集](data-collection-analyzer.md)
+- [アナライザー HTML レポートの理解](analyzer-report.md)

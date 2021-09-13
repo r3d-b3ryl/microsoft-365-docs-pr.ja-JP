@@ -18,12 +18,12 @@ ms.collection:
 - Strat_O365_Enterprise
 description: このページを使用して、組織の機密情報の種類ポリシーを作成するOffice 365 Message Encryption。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1cf9432adbe2cecb889d6e744077d8807ae556089b388f321e1348199e1ee165
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ad570f64122aecd245b912b1b6545a5950e838cc
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53879289"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216663"
 ---
 # <a name="create-a-sensitive-information-type-policy-for-your-organization-using-message-encryption"></a>メッセージ暗号化を使用して組織の機密情報の種類ポリシーを作成する
 

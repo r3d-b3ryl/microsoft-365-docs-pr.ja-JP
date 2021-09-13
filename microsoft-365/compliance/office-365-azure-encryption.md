@@ -17,12 +17,12 @@ ms.collection:
 - Strat_O365_Enterprise
 description: Azure で使用可能な暗号化 (Azure ディスク暗号化など) について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 72a6560d6d3fdb12489b5b2cc988c469277c81c425ca4117b728039ca0de1ff2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ee4eb2bec814d7e06d418518bb9be272f1bd5aaa
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53855913"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216743"
 ---
 # <a name="encryption-in-azure"></a>Azure での暗号化
 

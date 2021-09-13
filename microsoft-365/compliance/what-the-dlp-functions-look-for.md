@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 recommendations: false
 description: データ損失防止 (DLP) 関数が何を探すのかについて説明します。
-ms.openlocfilehash: 7dad18402b25b97097eb35729d4009d9add5533f18f3aec25e63a31015e51b32
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 787abc1e7fb4c95392a76f7514ceffd3f7f4dda0
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53859673"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216123"
 ---
 # <a name="what-the-dlp-functions-look-for"></a>DLP 関数の検索対象
 
@@ -40,178 +40,178 @@ ms.locfileid: "53859673"
 
 |関数名|function action|はバリデーターです|
 |---|---|:---:|
-|Func_Argentina_Unique_Tax_Key|アルゼンチン固有の税キーを検出して検証する|no|
+|Func_Argentina_Unique_Tax_Key|アルゼンチン固有の税キーを検出して検証する|いいえ|
 |Func_aba_routing|ABA ルーティング番号を検出する|はい|
-|Func_alabama_drivers_license_number|アラバマ州の運転免許証番号を検出する|no|
-|Func_alaska_delaware_oregon_drivers_license_number|アラスカ州、デラウェア州、オレゴン州の運転免許証番号を検出する|no|
-|Func_alaska_drivers_license_number|アラスカ州の運転免許証番号を検出する|no|
-|Func_alberta_drivers_license_number|アルバータ州の運転免許証番号を検出する|no|
-|Func_Argentina_Unique_Tax_Key|アルゼンチンの一意の税キーを検出する|no|
-|Func_arizona_drivers_license_number|アリゾナ州の運転免許証番号を検出する|no|
-|Func_arkansas_drivers_license_number|アーカンソー州の運転免許証番号を検出する|no|
-|Func_australian_business_number|オーストラリアのビジネス番号を検出する|no|
-|Func_Australian_Company_Number|オーストラリアの会社番号を検出する|no|
-|Func_australian_medical_account_number|オーストラリアの医療アカウント番号を検出する|no|
+|Func_alabama_drivers_license_number|アラバマ州の運転免許証番号を検出する|いいえ|
+|Func_alaska_delaware_oregon_drivers_license_number|アラスカ州、デラウェア州、オレゴン州の運転免許証番号を検出する|いいえ|
+|Func_alaska_drivers_license_number|アラスカ州の運転免許証番号を検出する|いいえ|
+|Func_alberta_drivers_license_number|アルバータ州の運転免許証番号を検出する|いいえ|
+|Func_Argentina_Unique_Tax_Key|アルゼンチンの一意の税キーを検出する|いいえ|
+|Func_arizona_drivers_license_number|アリゾナ州の運転免許証番号を検出する|いいえ|
+|Func_arkansas_drivers_license_number|アーカンソー州の運転免許証番号を検出する|いいえ|
+|Func_australian_business_number|オーストラリアのビジネス番号を検出する|いいえ|
+|Func_Australian_Company_Number|オーストラリアの会社番号を検出する|いいえ|
+|Func_australian_medical_account_number|オーストラリアの医療アカウント番号を検出する|いいえ|
 |Func_australian_tax_file_number|オーストラリアの税ファイル番号を検出する|はい|
-|Func_austria_eu_ssn_or_equivalent|オーストリアの社会保障番号を検出する|no|
-|Func_austria_eu_tax_file_number|オーストリアの税ファイル番号を検出する|no|
-|Func_Austria_Value_Added_Tax|オーストリアの付加価値税を検出する|no|
-|Func_belgium_national_number|ベルギーの国番号を検出する|no|
-|Func_belgium_value_added_tax_number|ベルギーの付加価値税番号を検出する|no|
+|Func_austria_eu_ssn_or_equivalent|オーストリアの社会保障番号を検出する|いいえ|
+|Func_austria_eu_tax_file_number|オーストリアの税ファイル番号を検出する|いいえ|
+|Func_Austria_Value_Added_Tax|オーストリアの付加価値税を検出する|いいえ|
+|Func_belgium_national_number|ベルギーの国番号を検出する|いいえ|
+|Func_belgium_value_added_tax_number|ベルギーの付加価値税番号を検出する|いいえ|
 |Func_brazil_cnpj|ブラジルの法人番号 (CNPJ) を検出します。|はい|
 |Func_brazil_cpf|ブラジル CPF を検出する|はい|
-|Func_brazil_rg|ブラジル RG を検出する|no|
-|Func_british_columbia_drivers_license_number|ブリティッシュ コロンビア州の運転免許証番号を検出する|no|
-|Func_bulgaria_eu_national_id_card|ブルガリアの一様な民事番号を検出する|no|
-|Func_california_drivers_license_number|カリフォルニア州の運転免許証番号を検出する|no|
+|Func_brazil_rg|ブラジル RG を検出する|いいえ|
+|Func_british_columbia_drivers_license_number|ブリティッシュ コロンビア州の運転免許証番号を検出する|いいえ|
+|Func_bulgaria_eu_national_id_card|ブルガリアの一様な民事番号を検出する|いいえ|
+|Func_california_drivers_license_number|カリフォルニア州の運転免許証番号を検出する|いいえ|
 |Func_canadian_sin|カナダの罪を検出する|はい|
-|Func_chile_id_card|チリ ID カードを検出する|no|
-|Func_china_resident_id|中国居住者 ID を検出する|no|
-|Func_colorado_drivers_license_number|コロラド州の運転免許証番号を検出する|no|
-|Func_connecticut_drivers_license_number|Connecticut のドライバーのライセンス番号を検出する|no|
+|Func_chile_id_card|チリ ID カードを検出する|いいえ|
+|Func_china_resident_id|中国居住者 ID を検出する|いいえ|
+|Func_colorado_drivers_license_number|コロラド州の運転免許証番号を検出する|いいえ|
+|Func_connecticut_drivers_license_number|Connecticut のドライバーのライセンス番号を検出する|いいえ|
 |Func_credit_card|クレジット カードを検出する|はい|
-|Func_croatia_id_card|クロアチア ID カードを検出する|no|
-|Func_croatia_oib_number|クロアチアの OIB 番号を検出する|no|
-|Func_cyprus_eu_tax_file_number|キプロスの税ファイル番号を検出する|no|
-|Func_czech_id_card|チェコ ID カードを検出する|no|
-|Func_czech_id_card_new_format|新しい形式でチェコ ID カードを検出する|no|
+|Func_croatia_id_card|クロアチア ID カードを検出する|いいえ|
+|Func_croatia_oib_number|クロアチアの OIB 番号を検出する|いいえ|
+|Func_cyprus_eu_tax_file_number|キプロスの税ファイル番号を検出する|いいえ|
+|Func_czech_id_card|チェコ ID カードを検出する|いいえ|
+|Func_czech_id_card_new_format|新しい形式でチェコ ID カードを検出する|いいえ|
 |Func_dea_number|DEA 番号を検出する|はい|
-|Func_denmark_eu_tax_file_number|デンマークの個人識別番号を検出する|no|
-|Func_district_of_columbia_drivers_license_number|コロンビア特別区の運転免許証番号を検出する|no|
-|Func_estonia_eu_national_id_card|エストニアの個人識別コードを検出する|no|
-|Func_eu_debit_card|EU のデビットカードを検出する|no|
-|Func_finnish_national_id|フィンランドの国民 ID を検出する|no|
-|Func_florida_drivers_license_number|フロリダ州の運転免許証番号を検出する|no|
-|Func_florida_maryland_michigan_minnesota_drivers_license_number|フロリダ州、メリーランド州、ミシガン州、ミネソタ州の運転免許証番号を検出する|no|
+|Func_denmark_eu_tax_file_number|デンマークの個人識別番号を検出する|いいえ|
+|Func_district_of_columbia_drivers_license_number|コロンビア特別区の運転免許証番号を検出する|いいえ|
+|Func_estonia_eu_national_id_card|エストニアの個人識別コードを検出する|いいえ|
+|Func_eu_debit_card|EU のデビットカードを検出する|いいえ|
+|Func_finnish_national_id|フィンランドの国民 ID を検出する|いいえ|
+|Func_florida_drivers_license_number|フロリダ州の運転免許証番号を検出する|いいえ|
+|Func_florida_maryland_michigan_minnesota_drivers_license_number|フロリダ州、メリーランド州、ミシガン州、ミネソタ州の運転免許証番号を検出する|いいえ|
 |Func_formatted_itin|書式設定された US ITIN を検出する|はい|
-|Func_fr_insee|フランス INSEE を検出する|no|
-|Func_fr_passport|フランスのパスポートを検出する|no|
-|Func_france_eu_tax_file_number|フランスの税ファイル番号を検出する|no|
-|Func_france_value_added_tax_number|フランスの付加価値税番号を検出する|no|
-|Func_french_drivers_license|フランスの運転免許証を検出する|no|
-|Func_french_insee|フランス語の INSEE を検出する|no|
-|Func_georgia_drivers_license_number|ジョージア州の運転免許証番号を検出する|no|
-|Func_german_drivers_license|ドイツの運転免許証を検出する|no|
-|Func_german_passport|ドイツのパスポートを検出する|no|
-|Func_german_passport_data|ドイツのパスポートを検出する|no|
-|Func_germany_eu_tax_file_number|ドイツの税ファイル番号を検出する|no|
-|Func_germany_value_added_tax_number|ドイツの付加価値税番号を検出する|no|
-|Func_greece_eu_ssn|ギリシャの罪 (AMKA) を検出する|no|
-|Func_hawaii_drivers_license_number|ハワイの運転免許証番号を検出する|no|
-|Func_hong_kong_id_card|香港 ID カードを検出する|no|
-|Func_hungarian_value_added_tax_number|ハンガリーの付加価値税番号を検出する|no|
-|Func_hungary_eu_national_id_card|ハンガリーの個人識別番号を検出する|no|
-|Func_hungary_eu_ssn_or_equivalent|ハンガリーの社会保障番号を検出する|no|
-|Func_hungary_eu_tax_file_number|ハンガリーの税ファイル番号を検出する|no|
+|Func_fr_insee|フランス INSEE を検出する|いいえ|
+|Func_fr_passport|フランスのパスポートを検出する|いいえ|
+|Func_france_eu_tax_file_number|フランスの税ファイル番号を検出する|いいえ|
+|Func_france_value_added_tax_number|フランスの付加価値税番号を検出する|いいえ|
+|Func_french_drivers_license|フランスの運転免許証を検出する|いいえ|
+|Func_french_insee|フランス語の INSEE を検出する|いいえ|
+|Func_georgia_drivers_license_number|ジョージア州の運転免許証番号を検出する|いいえ|
+|Func_german_drivers_license|ドイツの運転免許証を検出する|いいえ|
+|Func_german_passport|ドイツのパスポートを検出する|いいえ|
+|Func_german_passport_data|ドイツのパスポートを検出する|いいえ|
+|Func_germany_eu_tax_file_number|ドイツの税ファイル番号を検出する|いいえ|
+|Func_germany_value_added_tax_number|ドイツの付加価値税番号を検出する|いいえ|
+|Func_greece_eu_ssn|ギリシャの罪 (AMKA) を検出する|いいえ|
+|Func_hawaii_drivers_license_number|ハワイの運転免許証番号を検出する|いいえ|
+|Func_hong_kong_id_card|香港 ID カードを検出する|いいえ|
+|Func_hungarian_value_added_tax_number|ハンガリーの付加価値税番号を検出する|いいえ|
+|Func_hungary_eu_national_id_card|ハンガリーの個人識別番号を検出する|いいえ|
+|Func_hungary_eu_ssn_or_equivalent|ハンガリーの社会保障番号を検出する|いいえ|
+|Func_hungary_eu_tax_file_number|ハンガリーの税ファイル番号を検出する|いいえ|
 |Func_iban|IBAN を検出する|はい|
-|Func_idaho_drivers_license_number|アイダホ州の運転免許証番号を検出する|no|
-|Func_illinois_drivers_license_number|イリノイ州の運転免許証番号を検出する|no|
+|Func_idaho_drivers_license_number|アイダホ州の運転免許証番号を検出する|いいえ|
+|Func_illinois_drivers_license_number|イリノイ州の運転免許証番号を検出する|いいえ|
 |Func_india_aadhaar|インドの aadhaar を検出する|はい|
-|Func_indiana_drivers_license_number|インディアナ州の運転免許証番号を検出する|no|
-|Func_iowa_drivers_license_number|アイオワ州の運転免許証番号を検出する|no|
-|Func_ireland_pps|アイルランドの PPS を検出する|no|
-|Func_israeli_national_id_number|イスラエルの国 ID 番号を検出する|no|
-|Func_italy_eu_national_id_card|イタリアの会計コードを検出する|no|
-|Func_italy_value_added_tax_number|イタリアの付加価値税番号を検出する|no|
+|Func_indiana_drivers_license_number|インディアナ州の運転免許証番号を検出する|いいえ|
+|Func_iowa_drivers_license_number|アイオワ州の運転免許証番号を検出する|いいえ|
+|Func_ireland_pps|アイルランドの PPS を検出する|いいえ|
+|Func_israeli_national_id_number|イスラエルの国 ID 番号を検出する|いいえ|
+|Func_italy_eu_national_id_card|イタリアの会計コードを検出する|いいえ|
+|Func_italy_value_added_tax_number|イタリアの付加価値税番号を検出する|いいえ|
 |Func_japanese_my_number_corporate|日本のマイナンバー企業を検出する|はい|
 |Func_japanese_my_number_personal|日本の個人用番号を検出する|はい|
-|Func_jp_bank_account|日本の銀行口座を検出する|no|
-|Func_jp_bank_account_branch_code|日本の銀行口座の支店コードを検出する|no|
-|Func_jp_drivers_license_number|日本の運転免許証番号を検出する|no|
-|Func_jp_passport|日本のパスポートを検出する|no|
-|Func_jp_resident_registration_number|日本在住の登録番号を検出する|no|
-|Func_jp_sin|日本 SIN を検出する|no|
-|Func_jp_sin_pre_1997|日本の sin pre 1997 を検出する|no|
-|Func_kansas_drivers_license_number|カンザス州の運転免許証番号を検出する|no|
-|Func_kentucky_drivers_license_number|ケンタッキー州の運転免許証番号を検出する|no|
-|Func_kentucky_massachusetts_virginia_drivers_license_number|ケンタッキー州、マサチューセッツ州、バージニア州の運転免許証番号を検出する|no|
-|Func_latvia_eu_national_id_card|ラトビアの個人コードを検出する|no|
-|Func_lithuania_eu_tax_file_number|リトアニアの個人コードを検出する|no|
-|Func_louisiana_drivers_license_number|ルイジアナ州の運転免許証番号を検出する|no|
-|Func_luxemburg_eu_tax_file_number|ルクセンブルクの国民識別番号 (自然人) を検出します。|no|
-|Func_luxemburg_eu_tax_file_number_non_natural|ルクセンブルクの国民識別番号 (非自然人) を検出します。|no|
-|Func_maine_drivers_license_number|Maine の運転免許証番号を検出する|no|
-|Func_manitoba_drivers_license_number|Manitoba の運転免許証番号を検出する|no|
-|Func_maryland_drivers_license_number|メリーランド州の運転免許証番号を検出する|no|
-|Func_massachusetts_drivers_license_number|マサチューセッツ州の運転免許証番号を検出する|no|
-|Func_mexico_population_registry_code|メキシコの人口レジストリ コードを検出する|no|
-|Func_michigan_minnesota_drivers_license_number|ミシガン州、ミネソタ州の運転免許証番号を検出する|no|
-|Func_minnesota_drivers_license_number|ミネソタ州の運転免許証番号を検出する|no|
-|Func_mississippi_oklahoma_drivers_license_number|Mississippi、オクラホマ州の運転免許証番号を検出する|no|
-|Func_missouri_drivers_license_number|ミズーリ州の運転免許証番号を検出する|no|
-|Func_montana_drivers_license_number|Montana の運転免許証番号を検出する|no|
-|Func_nebraska_drivers_license_number|ネブラスカ州の運転免許証番号を検出する|no|
-|Func_netherlands_bsn|オランダの BSN を検出する|no|
-|Func_netherlands_eu_tax_file_number|オランダの税ファイル番号を検出する|no|
-|Func_netherlands_value_added_tax_number|オランダの付加価値税番号を検出する|no|
-|Func_nevada_drivers_license_number|ネバダ州の運転免許証番号を検出する|no|
-|Func_new_brunswick_drivers_license_number|新しい Brunswick の運転免許証番号を検出する|no|
-|Func_new_hampshire_drivers_license_number|ニューハンプシャー州の運転免許証番号を検出する|no|
-|Func_new_jersey_drivers_license_number|ニュージャージー州の運転免許証番号を検出する|no|
-|Func_new_mexico_drivers_license_number|新しいメキシコの運転免許証番号を検出する|no|
-|Func_new_york_drivers_license_number|ニューヨークの運転免許証番号を検出する|no|
-|Func_new_zealand_bank_account_number|ニュージーランドの銀行口座番号を検出する|no|
-|Func_new_zealand_inland_revenue_number|ニュージーランド内陸の収益番号を検出する|no|
-|Func_new_zealand_ministry_of_health_number|ニュージーランドの保健省番号を検出する|no|
-|Func_newfoundland_labrador_drivers_license_number|Newfoundland Labrador の運転免許証番号を検出する|no|
-|Func_newzealand_driver_license_number|ニュージーランドの運転免許証番号を検出する|no|
-|Func_newzealand_social_welfare_number|ニュージーランドのソーシャル 福利厚生番号を検出する|no|
-|Func_north_carolina_drivers_license_number|ノースカロライナ州の運転免許証番号を検出する|no|
-|Func_north_dakota_drivers_license_number|ノースダコタ州の運転免許証番号を検出する|no|
-|Func_norway_id_number|ノルウェーの ID 番号を検出する|no|
-|Func_nova_scotia_drivers_license_number|Nova Scotia の運転免許証番号を検出する|no|
-|Func_ohio_drivers_license_number|オハイオ州の運転免許証番号を検出する|no|
-|Func_ontario_drivers_license_number|オンタリオ州の運転免許証番号を検出する|no|
-|Func_pennsylvania_drivers_license_number|ペンシルベニア州の運転免許証番号を検出する|no|
-|Func_pesel_identification_number|ポーランドの国民 ID (PESEL) を検出します。|no|
-|Func_poland_eu_tax_file_number|ポーランドの税ファイル番号を検出する|no|
-|Func_polish_national_id|ポーランドの ID カードを検出する|no|
-|Func_polish_passport_number|ポーランドのパスポート番号を検出する|no|
-|Func_polish_regon_number|ポーランド語の REGON 番号を検出する|no|
-|Func_portugal_eu_tax_file_number|ポルトガルの納税者番号を検出する|no|
-|Func_prince_edward_island_drivers_license_number|プリンス エドワード島州の運転免許証番号を検出する|no|
-|Func_quebec_drivers_license_number|ケベック州の運転免許証番号を検出する|no|
+|Func_jp_bank_account|日本の銀行口座を検出する|いいえ|
+|Func_jp_bank_account_branch_code|日本の銀行口座の支店コードを検出する|いいえ|
+|Func_jp_drivers_license_number|日本の運転免許証番号を検出する|いいえ|
+|Func_jp_passport|日本のパスポートを検出する|いいえ|
+|Func_jp_resident_registration_number|日本在住の登録番号を検出する|いいえ|
+|Func_jp_sin|日本 SIN を検出する|いいえ|
+|Func_jp_sin_pre_1997|日本の sin pre 1997 を検出する|いいえ|
+|Func_kansas_drivers_license_number|カンザス州の運転免許証番号を検出する|いいえ|
+|Func_kentucky_drivers_license_number|ケンタッキー州の運転免許証番号を検出する|いいえ|
+|Func_kentucky_massachusetts_virginia_drivers_license_number|ケンタッキー州、マサチューセッツ州、バージニア州の運転免許証番号を検出する|いいえ|
+|Func_latvia_eu_national_id_card|ラトビアの個人コードを検出する|いいえ|
+|Func_lithuania_eu_tax_file_number|リトアニアの個人コードを検出する|いいえ|
+|Func_louisiana_drivers_license_number|ルイジアナ州の運転免許証番号を検出する|いいえ|
+|Func_luxemburg_eu_tax_file_number|ルクセンブルクの国民識別番号 (自然人) を検出します。|いいえ|
+|Func_luxemburg_eu_tax_file_number_non_natural|ルクセンブルクの国民識別番号 (非自然人) を検出します。|いいえ|
+|Func_maine_drivers_license_number|Maine の運転免許証番号を検出する|いいえ|
+|Func_manitoba_drivers_license_number|Manitoba の運転免許証番号を検出する|いいえ|
+|Func_maryland_drivers_license_number|メリーランド州の運転免許証番号を検出する|いいえ|
+|Func_massachusetts_drivers_license_number|マサチューセッツ州の運転免許証番号を検出する|いいえ|
+|Func_mexico_population_registry_code|メキシコの人口レジストリ コードを検出する|いいえ|
+|Func_michigan_minnesota_drivers_license_number|ミシガン州、ミネソタ州の運転免許証番号を検出する|いいえ|
+|Func_minnesota_drivers_license_number|ミネソタ州の運転免許証番号を検出する|いいえ|
+|Func_mississippi_oklahoma_drivers_license_number|Mississippi、オクラホマ州の運転免許証番号を検出する|いいえ|
+|Func_missouri_drivers_license_number|ミズーリ州の運転免許証番号を検出する|いいえ|
+|Func_montana_drivers_license_number|Montana の運転免許証番号を検出する|いいえ|
+|Func_nebraska_drivers_license_number|ネブラスカ州の運転免許証番号を検出する|いいえ|
+|Func_netherlands_bsn|オランダの BSN を検出する|いいえ|
+|Func_netherlands_eu_tax_file_number|オランダの税ファイル番号を検出する|いいえ|
+|Func_netherlands_value_added_tax_number|オランダの付加価値税番号を検出する|いいえ|
+|Func_nevada_drivers_license_number|ネバダ州の運転免許証番号を検出する|いいえ|
+|Func_new_brunswick_drivers_license_number|新しい Brunswick の運転免許証番号を検出する|いいえ|
+|Func_new_hampshire_drivers_license_number|ニューハンプシャー州の運転免許証番号を検出する|いいえ|
+|Func_new_jersey_drivers_license_number|ニュージャージー州の運転免許証番号を検出する|いいえ|
+|Func_new_mexico_drivers_license_number|新しいメキシコの運転免許証番号を検出する|いいえ|
+|Func_new_york_drivers_license_number|ニューヨークの運転免許証番号を検出する|いいえ|
+|Func_new_zealand_bank_account_number|ニュージーランドの銀行口座番号を検出する|いいえ|
+|Func_new_zealand_inland_revenue_number|ニュージーランド内陸の収益番号を検出する|いいえ|
+|Func_new_zealand_ministry_of_health_number|ニュージーランドの保健省番号を検出する|いいえ|
+|Func_newfoundland_labrador_drivers_license_number|Newfoundland Labrador の運転免許証番号を検出する|いいえ|
+|Func_newzealand_driver_license_number|ニュージーランドの運転免許証番号を検出する|いいえ|
+|Func_newzealand_social_welfare_number|ニュージーランドのソーシャル 福利厚生番号を検出する|いいえ|
+|Func_north_carolina_drivers_license_number|ノースカロライナ州の運転免許証番号を検出する|いいえ|
+|Func_north_dakota_drivers_license_number|ノースダコタ州の運転免許証番号を検出する|いいえ|
+|Func_norway_id_number|ノルウェーの ID 番号を検出する|いいえ|
+|Func_nova_scotia_drivers_license_number|Nova Scotia の運転免許証番号を検出する|いいえ|
+|Func_ohio_drivers_license_number|オハイオ州の運転免許証番号を検出する|いいえ|
+|Func_ontario_drivers_license_number|オンタリオ州の運転免許証番号を検出する|いいえ|
+|Func_pennsylvania_drivers_license_number|ペンシルベニア州の運転免許証番号を検出する|いいえ|
+|Func_pesel_identification_number|ポーランドの国民 ID (PESEL) を検出します。|いいえ|
+|Func_poland_eu_tax_file_number|ポーランドの税ファイル番号を検出する|いいえ|
+|Func_polish_national_id|ポーランドの ID カードを検出する|いいえ|
+|Func_polish_passport_number|ポーランドのパスポート番号を検出する|いいえ|
+|Func_polish_regon_number|ポーランド語の REGON 番号を検出する|いいえ|
+|Func_portugal_eu_tax_file_number|ポルトガルの納税者番号を検出する|いいえ|
+|Func_prince_edward_island_drivers_license_number|プリンス エドワード島州の運転免許証番号を検出する|いいえ|
+|Func_quebec_drivers_license_number|ケベック州の運転免許証番号を検出する|いいえ|
 |Func_randomized_formatted_ssn|ランダムに書式設定された US SSN を検出する|はい|
 |Func_randomized_unformatted_ssn|ランダム化されていない US SSN を検出する|はい|
-|Func_rhode_island_drivers_license_number|ロードアイランド州の運転免許証番号を検出する|no|
-|Func_romania_eu_national_id_card|ルーマニアの個人数値コード (CNP) を検出します。|no|
-|Func_saskatchewan_drivers_license_number|サスカチュワン州の運転免許証番号を検出する|no|
-|Func_slovakia_eu_national_id_card|スロバキアの個人番号を検出する|no|
-|Func_slovenia_eu_national_id_card|スロベニアの一意のマスター市民番号を検出する|no|
-|Func_slovenia_eu_tax_file_number|スロベニアの税ファイル番号を検出する|no|
+|Func_rhode_island_drivers_license_number|ロードアイランド州の運転免許証番号を検出する|いいえ|
+|Func_romania_eu_national_id_card|ルーマニアの個人数値コード (CNP) を検出します。|いいえ|
+|Func_saskatchewan_drivers_license_number|サスカチュワン州の運転免許証番号を検出する|いいえ|
+|Func_slovakia_eu_national_id_card|スロバキアの個人番号を検出する|いいえ|
+|Func_slovenia_eu_national_id_card|スロベニアの一意のマスター市民番号を検出する|いいえ|
+|Func_slovenia_eu_tax_file_number|スロベニアの税ファイル番号を検出する|いいえ|
 |Func_south_africa_identification_number|南アフリカの識別番号を検出する|はい|
-|Func_south_carolina_drivers_license_number|サウスカロライナ州の運転免許証番号を検出する|no|
-|Func_south_dakota_drivers_license_number|サウスダコタ州の運転免許証番号を検出する|no|
-|Func_south_korea_resident_number|韓国の居住者番号を検出する|no|
-|Func_spain_eu_DL_and_NI_number_citizen|スペインの DL と NI 番号の市民を検出する|no|
-|Func_spain_eu_DL_and_NI_number_foreigner|スペインの DL と NI 番号の外国人を検出します。|no|
-|Func_spain_eu_driver's_license_number|スペインの運転免許証番号を検出する|no|
-|Func_spain_eu_tax_file_number|スペインの税ファイル番号を検出する|no|
-|Func_spanish_social_security_number|スペインの社会保障番号を検出する|no|
+|Func_south_carolina_drivers_license_number|サウスカロライナ州の運転免許証番号を検出する|いいえ|
+|Func_south_dakota_drivers_license_number|サウスダコタ州の運転免許証番号を検出する|いいえ|
+|Func_south_korea_resident_number|韓国の居住者番号を検出する|いいえ|
+|Func_spain_eu_DL_and_NI_number_citizen|スペインの DL と NI 番号の市民を検出する|いいえ|
+|Func_spain_eu_DL_and_NI_number_foreigner|スペインの DL と NI 番号の外国人を検出します。|いいえ|
+|Func_spain_eu_driver's_license_number|スペインの運転免許証番号を検出する|いいえ|
+|Func_spain_eu_tax_file_number|スペインの税ファイル番号を検出する|いいえ|
+|Func_spanish_social_security_number|スペインの社会保障番号を検出する|いいえ|
 |Func_ssn|ランダム化されていない書式設定された US SSN を検出する関数|はい|
-|Func_sweden_eu_tax_file_number|スウェーデンの税ファイル番号を検出する|no|
+|Func_sweden_eu_tax_file_number|スウェーデンの税ファイル番号を検出する|いいえ|
 |Func_swedish_national_identifier|スウェーデンの国識別子を検出する|はい|
-|Func_swiss_social_security_number_ahv|スイスの社会保障番号 AHV を検出する|no|
-|Func_taiwanese_national_id|台湾の国民 ID を検出する|no|
-|Func_tennessee_drivers_license_number|テネシー州の運転免許証番号を検出する|no|
-|Func_texas_drivers_license_number|テキサス州の運転免許証番号を検出する|no|
-|Func_Thai_Citizen_Id|タイの市民 ID を検出する|no|
+|Func_swiss_social_security_number_ahv|スイスの社会保障番号 AHV を検出する|いいえ|
+|Func_taiwanese_national_id|台湾の国民 ID を検出する|いいえ|
+|Func_tennessee_drivers_license_number|テネシー州の運転免許証番号を検出する|いいえ|
+|Func_texas_drivers_license_number|テキサス州の運転免許証番号を検出する|いいえ|
+|Func_Thai_Citizen_Id|タイの市民 ID を検出する|いいえ|
 |Func_Turkish_National_Id|トルコの国民 ID を検出する|はい|
-|Func_uk_drivers_license|英国の運転免許証を検出する|no|
-|Func_uk_eu_tax_file_number|英国固有の納税者番号を検出する|no|
+|Func_uk_drivers_license|英国の運転免許証を検出する|いいえ|
+|Func_uk_eu_tax_file_number|英国固有の納税者番号を検出する|いいえ|
 |Func_uk_nhs_number|英国の NHS 番号を検出する|はい|
-|Func_uk_nino|英国 NINO を検出する|no|
-|Func_unformatted_canadian_sin|フォーマットされていないカナダの SIN を検出する|no|
+|Func_uk_nino|英国 NINO を検出する|いいえ|
+|Func_unformatted_canadian_sin|フォーマットされていないカナダの SIN を検出する|いいえ|
 |Func_unformatted_itin|未フォーマットの US ITIN を検出する|はい|
 |Func_unformatted_ssn|ランダム化されていない未フォーマットの US SSN を検出する|はい|
 |Func_usa_uk_passport|米国と英国のパスポートを検出する|はい|
-|Func_utah_drivers_license_number|ユタ州の運転免許証番号を検出する|no|
-|Func_vermont_drivers_license_number|バーモント州の運転免許証番号を検出する|no|
-|Func_virginia_drivers_license_number|バージニア州の運転免許証番号を検出する|no|
-|Func_washington_drivers_license_number|ワシントン州の運転免許証番号を検出する|no|
-|Func_west_virginia_drivers_license_number|ウェストバージニア州の運転免許証番号を検出する|no|
-|Func_wisconsin_drivers_license_number|Wisconsin の運転免許証番号を検出する|no|
-|Func_wyoming_drivers_license_number|Wyoming の運転免許証番号を検出する|no|
+|Func_utah_drivers_license_number|ユタ州の運転免許証番号を検出する|いいえ|
+|Func_vermont_drivers_license_number|バーモント州の運転免許証番号を検出する|いいえ|
+|Func_virginia_drivers_license_number|バージニア州の運転免許証番号を検出する|いいえ|
+|Func_washington_drivers_license_number|ワシントン州の運転免許証番号を検出する|いいえ|
+|Func_west_virginia_drivers_license_number|ウェストバージニア州の運転免許証番号を検出する|いいえ|
+|Func_wisconsin_drivers_license_number|Wisconsin の運転免許証番号を検出する|いいえ|
+|Func_wyoming_drivers_license_number|Wyoming の運転免許証番号を検出する|いいえ|
 |
 
 ## <a name="func_us_date"></a>Func_us_date

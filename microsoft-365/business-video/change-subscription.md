@@ -17,18 +17,19 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 - commerce_subscriptions
+- admindeeplinkMAC
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 新しい機能が必要な場合に、ユーザーを別のサブスクリプションに移動する方法について学習します。
-ms.openlocfilehash: e3059a9e841aba348ef3b3038bb24651c11f48792c421fb25b0bc17b720b5eeb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 95d3a4d8e32fb7e0e56e7318f507a911adbc59d9
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53803716"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59219413"
 ---
 # <a name="move-users-to-different-subscriptions"></a>ユーザーを別のサブスクリプションに移動する
 
@@ -42,7 +43,7 @@ ms.locfileid: "53803716"
 
 ### <a name="add-a-new-subscription"></a>新しいサブスクリプションを追加する
 
-1. 左側のMicrosoft 365 管理センターウィンドウで、[課金] を選択し、[サービスの購入]**を選択します**。
+1. 左側のMicrosoft 365 管理センターで、[課金購入サービス]  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">**を選択します**</a>。
 1. 追加するサブスクリプションを選択し、[購入] を **選択します**。
 1. 支払い方法と必要なライセンス数を選択し、[今すぐチェックアウト] **を選択します**。
 1. 注文を確認し、[次へ] を **選択します**。
@@ -50,13 +51,13 @@ ms.locfileid: "53803716"
 
 ### <a name="change-the-license-assigned-to-a-user"></a>ユーザーに割り当てられたライセンスを変更する
 
-1. [ユーザー] Microsoft 365 管理センター左側のナビゲーション ウィンドウで、[ユーザー] 、[アクティブユーザー]**の順に選択します**。
+1. [ユーザー] Microsoft 365 管理センター左側のナビゲーション ウィンドウで、[ユーザーがアクティブな **ユーザー]**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**を選択します**</a>。
 1. ユーザーの名前を選択し、[ライセンスとアプリ] **を選択** します。
 1. [ **ライセンス]** の下に、新しいサブスクリプションが表示されます。 新しいサブスクリプションの横にあるチェック ボックスをオンにし、古いサブスクリプションの横にあるチェック ボックスをオフにします。
 1. [**変更の保存**] を選択します。 これで、新しいサブスクリプションのライセンスがこのユーザーに割り当てられます。
 
 ### <a name="remove-an-unused-license"></a>未使用のライセンスを削除する
 
-1. [サービス] **Microsoft 365 管理センター[請求**] を選択し、[製品] を選択 **&します**。
+1. [製品] Microsoft 365 管理センター、[製品の **請求]**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">**を選択します**</a>。
 1. 変更するサブスクリプションを選択し、[ライセンスの追加 **と削除] を選択します**。
 1. 下向き矢印を使用して、このサブスクリプションのライセンス数を減らし、[変更の送信] **を選択します**。 これで、ユーザーのライセンスの数が適切になります。

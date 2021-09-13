@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 0e763e78513426e187ab4f3df87438ac750d6f4a77d8a0b5791276685c221a89
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e4f07adb051dde24d374055d206955ad61df432a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854437"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218413"
 ---
 # <a name="device-configuration"></a>デバイス構成
 
@@ -34,7 +34,7 @@ ms.locfileid: "53854437"
 
 次の表は、デバイスのプロビジョニング中にすべてのデバイスに適用Microsoft マネージド デスクトップポリシーを示しています。 ユーザーが管理するオブジェクトに対して、Microsoft マネージド デスクトップチームによって承認されていない検出された変更はすべて元に戻Microsoft マネージド デスクトップされます。
 
-ポリシー | Description
+ポリシー | 説明
 --- | ---
 セキュリティベースライン | [MDM の Microsoft セキュリティ 基準](/windows/device-security/windows-security-baselines)は、すべてのデバイスにMicrosoft マネージド デスクトップされます。 この基準は業界標準の構成です。 公開され、十分にテストされ、Microsoft のセキュリティ専門家によってレビューされ、最新の職場で Microsoft マネージド デスクトップデバイスとアプリのセキュリティを維持しています。 <br><br>絶えず進化し続けるセキュリティ脅威の状況での脅威を軽減するために、Microsoft のセキュリティ ベースラインが更新され、各機能更新プログラムを使用して Microsoft マネージド デスクトップ デバイスWindows 10展開されます。<br><br>詳細については、「セキュリティ ベースライン[のWindowsを参照してください](/windows/security/threat-protection/windows-security-baselines)。
 Microsoft マネージド デスクトップ推奨されるセキュリティ テンプレート | ユーザー エクスペリエンスを最適化するセキュリティ 基準に対する推奨される変更のセット。  これらの変更は、Security [Addendum に記載されています](#security-addendum)。 ポリシーの追加に対する更新は、必要に応じて行われます。  

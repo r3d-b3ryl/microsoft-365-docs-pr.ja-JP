@@ -15,11 +15,11 @@ ms.collection:
 ms.custom: ''
 description: Contoso 社がエンタープライズ向Microsoft Intune Microsoft 365デバイスとそのデバイスで実行するアプリを管理する方法について説明します。
 ms.openlocfilehash: c9acdbaa66af212a57bf66b2c64200b02ade6ad7
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569479"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218674"
 ---
 # <a name="mobile-device-management-for-contoso"></a>Contoso 社のモバイル デバイス管理
 
@@ -76,7 +76,7 @@ Contoso 社がエンタープライズ向[け](contoso-info-protect.md)Microsoft
 
 [デバイスの管理Microsoft 365](device-management-roadmap-microsoft-365.md)
 
-[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
+[Microsoft 365 for Enterprise の概要](microsoft-365-overview.md)
 
 [テスト ラボ ガイド](m365-enterprise-test-lab-guides.md)
 

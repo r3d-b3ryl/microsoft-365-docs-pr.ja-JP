@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 recommendations: false
 description: コンプライアンス センターに含まれるデータ損失防止 (DLP) ポリシー Office 365&説明します。
-ms.openlocfilehash: d12420af6ca2e5aea6d1290d0c136bdb27b892c709b6047fad9a4daffffc5f49
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: afcc641e6e868c1988f6b30a286c082e960d056c
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53813548"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216104"
 ---
 # <a name="what-the-dlp-policy-templates-include"></a>DLP ポリシー テンプレートに含まれるもの
 

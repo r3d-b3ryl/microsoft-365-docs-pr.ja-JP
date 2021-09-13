@@ -13,11 +13,11 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、データ コネクタをセットアップして、ブルームバーグ メッセージ電子メール ツールからデータをインポートおよびアーカイブMicrosoft 365。 これにより、Microsoft 365 のサード パーティデータ ソースからデータをアーカイブし、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織のサード パーティデータを管理できます。
 ms.openlocfilehash: 2fabe34f7172c67442474359c8eefe4078c4bdd6
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575026"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59217024"
 ---
 # <a name="set-up-a-connector-to-archive-bloomberg-message-data"></a>ブルームバーグ メッセージ データをアーカイブするコネクタをセットアップする
 

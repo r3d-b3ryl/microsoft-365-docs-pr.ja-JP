@@ -21,11 +21,11 @@ search.appverid:
 - MET150
 description: Microsoft 365 には、Exchange メールボックス、SharePoint サイト、OneDrive for Business サイト、Microsoft 365 グループ、Microsoft Teams 会話、Skype for Business 会話など、さまざまな場所にあるコンテンツを検索およびエクスポートするために使用できる 3 つの電子情報開示ツールがあります。 コアの電子情報開示とAdvanced eDiscovery、調査の管理に役立つ多くの追加機能を提供します。
 ms.openlocfilehash: d44c0b30bc6256f98063f33d838d2cabb6ceebf1
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570571"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218963"
 ---
 # <a name="ediscovery-solutions-in-microsoft-365"></a>電子情報開示ソリューション (Microsoft 365
 
@@ -56,20 +56,20 @@ Microsoft 365には、コンテンツ検索、Core 電子情報開示、およ�
 |役割に基づくアクセス許可|![サポートされています。](../media/check-mark.png)|![サポートされています。](../media/check-mark.png)|![サポートされています。](../media/check-mark.png)|
 |ケース管理||![サポートされています。](../media/check-mark.png)|![サポートされています。](../media/check-mark.png)|
 |コンテンツの場所を法的保留に設定する||![サポートされています。](../media/check-mark.png)|![サポートされています。](../media/check-mark.png)|
-|保管担当者管理|||![サポートされています。](../media/check-mark.png)|
-|法的ホールド通知|||![サポートされています。](../media/check-mark.png)|
+|保管担当者管理|||![サポート対象です。](../media/check-mark.png)|
+|法的ホールド通知|||![サポート対象です。](../media/check-mark.png)|
 |高度なインデックス作成|||![サポートされています。](../media/check-mark.png)|
 |エラー修復|||![サポートされています。](../media/check-mark.png)|
 |レビュー セット|||![サポートされています。](../media/check-mark.png)|
 |クラウド添付ファイルとクラウド SharePointサポート|||![サポートされています。](../media/check-mark.png)|
-|光学式文字認識|||![サポートされています。](../media/check-mark.png)|
-|会話スレッド|||![サポートされています。](../media/check-mark.png)|
-|コレクションの統計とレポート|||![サポートされています。](../media/check-mark.png)|
-|レビュー セットのフィルター処理|||![サポートされています。](../media/check-mark.png)|
-|タグ付け|||![サポートされています。](../media/check-mark.png)|
-|分析|||![サポートされています。](../media/check-mark.png)|
-|予測コーディング モデル|||![サポートされています。](../media/check-mark.png)|
-|計算されたドキュメント のメタデータ|||![サポートされています。](../media/check-mark.png)|
+|光学式文字認識|||![サポート対象です。](../media/check-mark.png)|
+|会話スレッド|||![サポート対象です。](../media/check-mark.png)|
+|コレクションの統計とレポート|||![サポート対象です。](../media/check-mark.png)|
+|レビュー セットのフィルター処理|||![サポート対象です。](../media/check-mark.png)|
+|タグ付け|||![サポート対象です。](../media/check-mark.png)|
+|分析|||![サポート対象です。](../media/check-mark.png)|
+|予測コーディング モデル|||![サポート対象です。](../media/check-mark.png)|
+|計算されたドキュメント のメタデータ|||![サポート対象です。](../media/check-mark.png)|
 |長時間実行されるジョブの透明性|||![サポートされています。](../media/check-mark.png)|
 |顧客所有の場所にAzure Storageする|||![サポートされています。](../media/check-mark.png)|
 |||||

@@ -21,11 +21,11 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.openlocfilehash: 715e3eff39fc4575efdfc236876fdd7c8bc20245
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575950"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220084"
 ---
 # <a name="create-an-app-to-access-microsoft-365-defender-without-a-user"></a>ユーザーなしでアプリを作成してMicrosoft 365 Defenderにアクセスする
 
@@ -223,7 +223,7 @@ aadToken = jsonResponse["access_token"]
 
 1. アプリTENANT_IDを使用してユーザーにアクセスする顧客の Azure テナント ID に設定Microsoft 365 Defender。
 
-1. 次のコマンドを実行します。
+1. 次のコマンドを実行します:
 
    ```bash
    curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=https://api.security.microsoft.com/.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID%/oauth2/v2.0/token" -k

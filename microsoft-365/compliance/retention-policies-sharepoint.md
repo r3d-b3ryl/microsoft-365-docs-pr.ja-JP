@@ -18,11 +18,11 @@ search.appverid:
 - MET150
 description: SharePoint と OneDrive の保持のしくみについて説明します。
 ms.openlocfilehash: 77d7d3eebaa4678e6d90897aab8a41554530e858
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573777"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216573"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>SharePoint と OneDrive の保持の詳細
 

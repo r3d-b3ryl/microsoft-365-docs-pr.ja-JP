@@ -13,11 +13,11 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、ICE チャット ツールからデータをインポートおよびアーカイブするコネクタをセットアップして、Microsoft 365。 これにより、Microsoft 365 のサード パーティデータ ソースからデータをアーカイブし、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティ データを管理できます。
 ms.openlocfilehash: c9d0cf8da71818b091c73002766be3beb5d516e9
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573309"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216924"
 ---
 # <a name="set-up-a-connector-to-archive-ice-chat-data"></a>ICE Chat データをアーカイブするコネクタをセットアップする
 

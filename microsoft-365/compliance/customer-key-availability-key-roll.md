@@ -12,12 +12,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 顧客キーで使用される Azure Key Vault に格納されている顧客ルート キーをロールする方法について説明します。 サービスには、Exchange Online、Skype for Business、SharePoint、オンライン、OneDrive for Business、Teamsがあります。
-ms.openlocfilehash: c74465dd9ab5d05374f11169d6c60d60b85372710f44dca1d7c164f7ca339136
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 892d77959bec1fb33b0ea6bcfaa8c530dd9b8911
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53871901"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216903"
 ---
 # <a name="roll-or-rotate-a-customer-key-or-an-availability-key"></a>カスタマー キーまたは可用性キーをローリングまたはローテーションする
 
@@ -35,7 +35,7 @@ Microsoft は、可用性キーの直接制御を顧客に公開しない。 た
 
 キーをロールするときに、既存のキーの新しいバージョンを要求します。 既存のキーの新しいバージョンを要求するには、最初にキーを作成したのと同じ構文で、同じコマンドレット [Add-AzKeyVaultKey](/powershell/module/az.keyvault/add-azkeyvaultkey)を使用します。 データ暗号化ポリシー (DEP) に関連付けられたキーのローリングが完了したら、別のコマンドレットを実行して、顧客キーが新しいキーの使用を開始します。 各 Azure Key Vault (AKV) でこの手順を実行します。
 
-次に例を示します。
+例:
 
 1. Azure サブスクリプションにサインインするには、Azure PowerShell。 手順については、「サインインする」[を参照Azure PowerShell。](/powershell/azure/authenticate-azureps)
 

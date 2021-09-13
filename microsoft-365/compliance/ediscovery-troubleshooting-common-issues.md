@@ -20,11 +20,11 @@ description: 電子情報開示の一般的な問題を解決するために実�
 siblings_only: true
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: d71091b4c3545880b103b8d4a4111b3c63d35506
-ms.sourcegitcommit: 8db88004f4c015138b20c55095ada2c0c79e5910
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58928754"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218964"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>一般的な電子情報開示の問題を調査、トラブルシューティング、解決する
 

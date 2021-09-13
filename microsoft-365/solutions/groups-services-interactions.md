@@ -17,11 +17,11 @@ f1.keywords: NOCSH
 recommendations: false
 description: グループ サービスのやり取り
 ms.openlocfilehash: 54d8cd0ff31bad9af4269b3a4d8af23ccb618e16
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563708"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192240"
 ---
 # <a name="groups-services-interactions"></a>グループ サービスのやり取り
 
@@ -119,7 +119,7 @@ SharePointサイトは、所有者、メンバー、および訪問者のセキ�
 |---|---|---|---|---|
 |Azure AD|メンバーシップ、グループ コントロール、ゲスト|はい|はい|はい|
 |Exchange|予定表、メールボックス|はい|はい|はい|
-|Forms|フォーム|はい|いいえ|いいえ|
+|フォーム|フォーム|はい|いいえ|いいえ|
 |OneNote|Notebook|はい|いいえ|いいえ|
 |Planner|タスク ボード|いいえ|はい|はい|
 |Power Appsアプリ|アプリ|はい|いいえ|いいえ|
@@ -241,7 +241,7 @@ Exchange Online、予定表、連絡先、および関連する機能を提供�
 
 はい、グループ内のメールボックスExchange、グループに関連付けられたサービスとコンテンツが削除されます。
 
-## <a name="forms"></a>Forms
+## <a name="forms"></a>フォーム
 
 フォームは、Web ベースのアンケートとクイズを提供します。
 
@@ -340,7 +340,7 @@ Planner は、軽量なグループ タスク管理サービスです。
 
 はい、プランを削除すると、グループとグループに関連付けられたサービスとコンテンツが削除されます。
 
-## <a name="power-apps"></a>Power アプリ
+## <a name="power-apps"></a>Power Apps
 
 Power Appsコードなしでアプリ開発用のキャンバスを提供します。
 

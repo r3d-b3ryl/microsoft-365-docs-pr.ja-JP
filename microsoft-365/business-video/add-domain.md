@@ -16,18 +16,19 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 - AdminTemplateSet
+- admindeeplinkMAC
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 組織では、複数のドメインが必要になる場合があります。 サブスクリプションに別のドメインを追加する方法について学習します。
-ms.openlocfilehash: c127abf899985bb23cc3a9906425d4d5408a4376fde3bc88a4c3bdda1277bace
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fb8af781f68cddd5780d27724134910a28db8bf2
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53882611"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59219424"
 ---
 # <a name="add-another-domain"></a>別のドメインを追加する
 
@@ -37,7 +38,7 @@ ms.locfileid: "53882611"
 
 ## <a name="try-it"></a>お試しください!
 
-1. Microsoft 365 管理センターで、[**セットアップ**] を選択します。
+1. [設定] Microsoft 365 管理センター[セットアップ] を <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**選択します**</a>。
 1. [**カスタム ドメインをセットアップする**] にて、[**表示**］ を選択します。
 1. [**管理**]、[**ドメインの追加**] の順に選択します。
 1. 追加する新しいドメイン名を入力し、[**次へ**] を選択します。
@@ -49,7 +50,7 @@ ms.locfileid: "53882611"
 
 新しいドメインでメールを受信するには、各ユーザーの新しいメール エイリアスを追加する必要があります。
 
-1. [**ユーザー**］、［**アクティブなユーザー**］ の順に選択してから、新しいエイリアスが割り当てられるユーザーを選択します。
+1. [ **ユーザー]**、[ <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**アクティブユーザー]**</a>の順に選択し、新しいエイリアスを割り当てるユーザーを選択します。
 1. [**メール エイリアスの管理**]、[**エイリアスを追加**] の順に選択します。
 1. ユーザー名を入力し、ドロップダウン リストから新しいドメインを選択します。
 1. [**変更を保存する**] を選択し、ウィンドウを閉じます。

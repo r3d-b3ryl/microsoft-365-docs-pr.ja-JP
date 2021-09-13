@@ -14,15 +14,17 @@ ms.collection:
 - M365-subscription-management
 f1.keywords:
 - NOCSH
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkMAC
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
 description: '概要: PowerShell を使用Microsoft 365既存の顧客テナントに別のドメイン名を追加します。'
-ms.openlocfilehash: 90eec48de55a01dd2298bed1ff0dc068d57da3bb
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 6cb57814f2f1ce8a1cbf6a47b654f6492279faeb
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356122"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218774"
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>委任アクセス許可 (DAP) パートナー用 Windows PowerShell でクライアント テナンシーにドメインを追加する
 
@@ -52,7 +54,7 @@ ms.locfileid: "58356122"
  顧客から、既定の\<domain>.onmicrosoft.comドメインを世界に対して自企業を表す主ドメインにしたくないため、追加のドメインを作成して顧客のテナンシーに関連付けるよう依頼される可能性があります。この手順では、ドメインを新規作成して顧客のテナンシーに関連付ける方法を順を追って説明します。
 
 > [!NOTE]
-> これらの操作の一部を実行するには、Microsoft 365 管理センター の管理アカウントの詳細にある [サポートする企業への管理アクセスの割り当て] 設定で、サインインするパートナー管理者アカウントを [完全な管理] に設定する必要があります。 パートナー管理者の役割の管理の詳細については、「パートナー: 委任された管理を提供 [する」を参照してください](https://go.microsoft.com/fwlink/p/?LinkId=532435)。
+> これらの操作の一部を実行するには、サインインするパートナー管理者アカウントを Microsoft 365 管理センター の管理アカウントの詳細にある [サポートする企業に管理アクセスを割り当てる] 設定の [完全な管理]<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">に設定する必要があります</a>。 パートナー管理者の役割の管理の詳細については、「パートナー: 委任された管理を提供 [する」を参照してください](https://go.microsoft.com/fwlink/p/?LinkId=532435)。
 
 ### <a name="create-the-domain-in-azure-active-directory"></a>Azure Active Directory でドメインを作成する
 

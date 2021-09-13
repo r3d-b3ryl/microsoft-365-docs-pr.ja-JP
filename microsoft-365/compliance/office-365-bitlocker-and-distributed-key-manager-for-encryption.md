@@ -17,12 +17,12 @@ ms.collection:
 - Strat_O365_Enterprise
 description: BitLocker 暗号化Office 365、コンピューターやディスクの紛失または盗難によるデータ盗難の可能性を減らす方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 71aeef37b2b9683acdb6fad0b26a0d567aea4f269e5f820f73cf772b9c88efd9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cc329a053544ba6cf1753ae07caac642546cad11
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53855901"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216724"
 ---
 # <a name="bitlocker-and-distributed-key-manager-dkm-for-encryption"></a>BitLocker と Distributed Key Manager (DKM) による暗号化
 

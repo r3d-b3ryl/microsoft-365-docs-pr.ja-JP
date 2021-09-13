@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ファイルを別のファイルに移動するOneDrive。
-ms.openlocfilehash: 2203aa29c9c83d6b26004220b14b15530f79a567d1ae62d3bf239567f926cb0a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 68d4b08fa0704279a36c32c8b6688009b08fa50f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53882563"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59219343"
 ---
 # <a name="move-files-to-onedrive"></a>ファイルをファイルに移動OneDrive
 

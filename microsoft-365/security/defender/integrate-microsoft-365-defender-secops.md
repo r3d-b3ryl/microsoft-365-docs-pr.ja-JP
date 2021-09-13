@@ -23,11 +23,11 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.openlocfilehash: 0e1fa33358dbaa63e99e4e0645a04766ab72477b
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58243919"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59219953"
 ---
 # <a name="integrating-microsoft-365-defender-into-your-security-operations"></a>セキュリティMicrosoft 365 Defenderに統合する
 

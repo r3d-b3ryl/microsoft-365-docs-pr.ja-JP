@@ -11,15 +11,17 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ms.custom: Ent_TLGs
+ms.custom:
+- Ent_TLGs
+- admindeeplinkMAC
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: このテスト ラボ ガイドを使用して、エンタープライズ テスト環境のドキュメントに保持ラベルを作成Microsoft 365使用します。
-ms.openlocfilehash: b5cc84a4d8b73b9f7dc3f64934a18b549846ba17
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: a39661da9436473da9e89330ff15d0a43d19db51
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58552602"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218584"
 ---
 # <a name="data-classification-for-your-microsoft-365-for-enterprise-test-environment"></a>エンタープライズ テスト環境Microsoft 365データ分類
 
@@ -50,7 +52,7 @@ ms.locfileid: "58552602"
 
 このフェーズでは、オンライン ドキュメント フォルダーに対するさまざまなレベルの保持SharePoint作成します。
 
-1. グローバル管理者アカウントを[使用Microsoft 365セキュリティ センター](https://security.microsoft.com/homepage)にサインインします。
+1. グローバル管理者アカウントを<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">使用Microsoft 365セキュリティ センター</a>にサインインします。
 1. ブラウザーの **[ホーム - Microsoft 365セキュリティ**] タブで、[分類の保持ラベル]  >  **を選択します**。
 1. [**ラベルを作成**] を選択します。
 1. [ラベルに **名前を付け] ウィンドウで** 、[ラベルに名前を付け] に **「内部パブリック** 」と **入力** し、[次へ] を **選択します**。
@@ -112,6 +114,6 @@ ms.locfileid: "58552602"
 
 [Microsoft 365 Enterprise のテスト ラボ ガイド](m365-enterprise-test-lab-guides.md)
 
-[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
+[Microsoft 365 for Enterprise の概要](microsoft-365-overview.md)
 
 [Microsoft 365 for enterprise のドキュメント](/microsoft-365-enterprise/)
