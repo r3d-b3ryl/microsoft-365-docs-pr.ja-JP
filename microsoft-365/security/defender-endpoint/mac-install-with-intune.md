@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: ca654a4fd06e43645f2e38fcf23e4e6de9b483de
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58745795"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212164"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>MacOS での Microsoft Defender for Endpoint の Intune ベースの展開
 
@@ -106,7 +106,7 @@ ms.locfileid: "58745795"
     > [!div class="mx-imgBorder"]
     > ![カスタム構成プロファイルの作成。](images/mdatp-6-systemconfigurationprofiles-1.png)
 
-1. プロファイルの名前を選択します。たとえば、「Defender または Endpoint onboarding for macOS」。 **[次へ]** をクリックします。
+1. プロファイルの名前を選択します。たとえば、「Defender または Endpoint onboarding for macOS」。 [**次へ**] をクリックします。
 
     > [!div class="mx-imgBorder"]
     > ![カスタム構成プロファイル - 名前。](images/mdatp-6-systemconfigurationprofiles-2.png)
@@ -117,7 +117,7 @@ ms.locfileid: "58745795"
     > [!div class="mx-imgBorder"]
     > ![カスタム構成プロファイルのファイルから構成をインポートします。](images/mdatp-6-systemconfigurationprofiles.png)
 
-1. **[次へ]** をクリックします。
+1. [**次へ**] をクリックします。
 1. [割り当て] タブでデバイス **を割り当** てる。[次へ] を **クリックします**。
 
     > [!div class="mx-imgBorder"]

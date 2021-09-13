@@ -22,12 +22,12 @@ ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 description: '[Microsoft 365 管理センター- 今月追加された機能について学習します。'
-ms.openlocfilehash: aa94686b728eabd6da3577f0f44856039ab8288c
-ms.sourcegitcommit: 8ef23d275d7209a705295e2b117d4382b20ad4f7
+ms.openlocfilehash: dbc907ac66bcc1741ceb92602b7b3062de043f6b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58866681"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212913"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>新しい機能Microsoft 365 管理センター
 
@@ -55,7 +55,7 @@ ms.locfileid: "58866681"
 
 ### <a name="microsoft-365-admin-center-search"></a>Microsoft 365 管理センター検索
 
-これで、インシデントの情報でインシデントの<a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">MICROSOFT 365 管理センター。</a> 現在のインシデントについては、ソーシャル メディア、業界の出版物、または他の管理者から確認できます。 これで、管理センターに移動してインシデントの詳細を確認し、組織への影響を理解できます。 管理センターでインシデント ID を検索します。
+これで、インシデントの情報でインシデントの<a href="https://go.microsoft.com/fwlink/p/?linkid=2091030" target="_blank">MICROSOFT 365 管理センター。</a> 現在のインシデントについては、ソーシャル メディア、業界の出版物、または他の管理者から確認できます。 これで、管理センターに移動してインシデントの詳細を確認し、組織への影響を理解できます。 管理センターでインシデント ID を検索します。
 
 :::image type="content" source="../media/incident-id.png" alt-text="スクリーンショット: 管理センターでインシデント ID を検索する":::
 

@@ -11,14 +11,14 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 45064584b622c313fee66c0699ab6495353342edad39948e8f8dabcd68911547
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7b1178312178865face58748a37228f60643d5fc
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53807194"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212393"
 ---
-# <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps for Enterprise
+# <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps for enterprise
 
 ## <a name="initial-deployment"></a>初期展開
 
@@ -28,7 +28,7 @@ Microsoft マネージド デスクトップ (64 ビット) Microsoft 365 Apps f
 - Excel
 - PowerPoint
 - Outlook
-- Publisher
+- 発行者
 - Access
 - Skype for Business
 - OneNote

@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: この記事では、ポータル起動スケジューラを使用してポータルを起動する方法について説明します。
-ms.openlocfilehash: 4bdc9a1d60423a7541c2f5c26cc544df59a271e5
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 459d2a4ddaaa2f6a7d1c8095ee93baab4e8248ce
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565256"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59193513"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>ポータル起動スケジューラを使用してSharePointを起動する
 
@@ -135,17 +135,17 @@ ms.locfileid: "58565256"
 
 **次の手順を実行します。**
 
-1. <https://admin.microsoft.com>に移動します。
-2. 新しい管理センター プレビューを使用している
-3. 左側のナビゲーション ウィンドウで、[サポート] を **選択し**、[新しい **サービス要求] を選択します。**
+1. 管理者として、管理センターでヘルプ クエリを設定する次のリンクをクリックします。 
 
-   これにより、画面の右側にある [**ヘルプが必要**] ウィンドウがアクティブになります。
+[100k ユーザー SharePointポータルを起動する](https://admin.microsoft.com/AdminPortal/?searchSolutions=Launch%20SharePoint%20Portal%20with%20100k%20users)
 
-4. 問題 **を簡単に説明するには**、「100k ユーザー SharePointポータルを起動する」と入力します。</br>
-5. 次に、[サポート **に問い合わせ] を選択します。**
-6. [**説明]** で、「100k ユーザー SharePointポータルを起動する」と入力します。
-7. 残りの情報を入力し、[連絡先] **を選択します。**
-8. チケットを作成したら、次の情報をサポート エージェントに提供してください。
+2. ウィンドウの下部で、[サポートに問い合わせ] **を** 選択し、[新しいサービス要求 **] を選択します**。 
+
+3. [**説明]** で、「100k ユーザー SharePointポータルを起動する」と入力します。 
+
+4. 残りの情報を入力して、[**連絡してください**] を選択します。
+
+5. チケットを作成したら、次の情報をサポート エージェントに提供してください。
    - ポータル URL の
    - 予想されるユーザー数
    - 推定起動スケジュール

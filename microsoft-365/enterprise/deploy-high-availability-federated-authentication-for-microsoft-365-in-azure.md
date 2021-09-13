@@ -20,11 +20,11 @@ ms.custom:
 ms.assetid: 34b1ab9c-814c-434d-8fd0-e5a82cd9bff6
 description: '概要: ユーザーサブスクリプションの高可用性フェデレーション認証を構成Microsoft 365でMicrosoft Azure。'
 ms.openlocfilehash: 22715f55a733b963a9b9f9c26c910adba1012ed7
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574029"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212583"
 ---
 # <a name="deploy-high-availability-federated-authentication-for-microsoft-365-in-azure"></a>Azure に Microsoft 365 の高可用性フェデレーション認証を展開する
 

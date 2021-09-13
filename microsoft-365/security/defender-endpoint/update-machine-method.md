@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 7ffd136bd770369248b2f0735deb42e62f372632
-ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58372822"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213323"
 ---
 # <a name="update-machine"></a>コンピューターの更新 
 
@@ -56,7 +56,7 @@ ms.locfileid: "58372822"
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
 アプリケーション|Machine.ReadWrite.All|'すべてのコンピューターのコンピューター情報の読み取りおよび書き込み'
-委任 (職場または学校のアカウント)|Machine.ReadWrite|'コンピューター情報の読み取りおよび書き込み'
+委任 (職場または学校アカウント)|Machine.ReadWrite|'コンピューター情報の読み取りおよび書き込み'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
@@ -86,7 +86,7 @@ Content-Type|文字列|application/json. **必須**
 
 プロパティ|型|説明
 :---|:---|:---
-machineTags|String コレクション|コンピューター タグ [の](machine.md) セット。
+machineTags|String collection|コンピューター タグ [の](machine.md) セット。
 deviceValue|Null 許容列挙|デバイス [の値](tvm-assign-device-value.md)です。 指定できる値は、'Normal'、'Low'、および 'High' です。
 
 ## <a name="response"></a>応答

@@ -17,12 +17,12 @@ ms.collection:
 description: Microsoft は、さまざまなポリシー、手順を開発し、ユーザーを悪用、望ましくない、または悪意のあるメールから保護するために、いくつかの業界のベスト プラクティスを採用しています。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 436c7d86ceea6a95d95e8787ea651012c43dfe314e35f146ef3cf1e1215bc2ed
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f1a71b891829a2c9ea31502342c855db4126a6b5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56806834"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213274"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>リファレンス: ポリシー、プラクティス、ガイドライン
 

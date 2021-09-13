@@ -15,12 +15,12 @@ ms.date: 09/11/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 9a9d33d123c1b308d31c80663d1a8fc373e955d53e92d3680d39dc8b1d930d00
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 80d8ec3a48ea8388d6c1807f2eccb9df334394de
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853789"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213414"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-while-migrating-from-a-third-party-solution"></a>サード パーティのソリューションからの移行中に Microsoft Defender ウイルスのトラブルシューティングを行う
 
@@ -51,7 +51,7 @@ ms.locfileid: "53853789"
 
 イベント ID|ログ名|説明|ソース
 ---|---|---|---
-15|アプリケーション|更新されたWindows Defender状態が正常に更新SECURITY_PRODUCT_STATE_OFF。|セキュリティ センター
+15 |アプリケーション|更新されたWindows Defender状態が正常に更新SECURITY_PRODUCT_STATE_OFF。|セキュリティ センター
 5007|Microsoft-Windows-Windows Defender/運用|Windows Defender ウイルス対策構成が変更されました。  予期しないイベントの場合は、マルウェアの結果である可能性がある設定を確認する必要があります。 <p> **古い値:** Default\IsServiceRunning = 0x0 p> 新しい値 **:** HKLM\SOFTWARE\Microsoft\Windows Defender\IsServiceRunning = 0x1|Windows Defender
 5010|Microsoft-Windows-Windows Defender/運用|Windows Defender ウイルス対策その他の望ましくない可能性のあるソフトウェアのスキャンが無効になります。|Windows Defender
 
@@ -102,7 +102,7 @@ GPO を獲得する|Win10-Workstations
 結果: 成功|
 **全般**|
 Action|Update
-**プロパティ**|
+**Properties**|
 ハイブ|HKEY_LOCAL_MACHINE
 キー パス|SOFTWARE\Policies\Microsoft\Windows Defender
 値の名前|DisableAntiSpyware

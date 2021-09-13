@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: bce19d10c26bbd34874af32fe493dafdc63064d6
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58503241"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213683"
 ---
 # <a name="list-vulnerabilities"></a>脆弱性の一覧表示
 

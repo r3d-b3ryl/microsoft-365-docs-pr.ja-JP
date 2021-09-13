@@ -21,11 +21,11 @@ ms.collection:
 - m365solution-scenario
 ms.technology: mdo
 ms.openlocfilehash: b135c6dd691607dd128bfd83e0d2b484bb3a97ae
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568062"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213264"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>チャット、グループ、ファイルTeamsセキュリティ保護に関するポリシーの推奨事項
 

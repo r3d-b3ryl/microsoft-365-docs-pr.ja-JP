@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 2f671a15581f8d5e85a3fbd5dbe4cbab27bd0ad2bf001568157f560870c1182d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2a15a77319f6e70d8f9c058bfb1c7031652f6050
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53796756"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212673"
 ---
 # <a name="payment-information-for-libya"></a>リビアの支払い情報
 

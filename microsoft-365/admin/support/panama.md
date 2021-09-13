@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c06b7c7f9da64e0fd4fdbf5a79f9b8e8a612035e24981abb0828b505d1246413
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e0bd218aaa95fabf3f825b09953caa7f6d79c55b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53852817"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191971"
 ---
 # <a name="contact-support-for-panama"></a>パナマのサポートに問い合わせ
 

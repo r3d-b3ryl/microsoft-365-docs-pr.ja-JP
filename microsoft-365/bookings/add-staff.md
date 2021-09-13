@@ -9,17 +9,17 @@ ms.service: bookings
 localization_priority: Normal
 description: このページを使用して、スタッフ リストを作成し、スタッフ メンバーの詳細 (名前、電話番号、電子メール アドレスなど) を管理します。
 ms.openlocfilehash: 3b61c2f3e5597208ace2a87a7d203e8d724e4f5f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573345"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212914"
 ---
 # <a name="add-staff-to-bookings"></a>Bookings にスタッフを追加する
 
 Bookings の [スタッフ] ページでは、スタッフリストを作成し、スタッフ メンバーの詳細 (名前、電話番号、電子メール アドレスなど) を管理します。 また、ここから各スタッフの勤務時間を設定できます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 Bookings は、Microsoft 365の機能ですが、すべてのスタッフがアカウントを持つ必要Microsoft 365ではありません。 予約を受け取り、変更をスケジュールするには、すべてのスタッフが有効な電子メール アドレスを持っている必要があります。
 

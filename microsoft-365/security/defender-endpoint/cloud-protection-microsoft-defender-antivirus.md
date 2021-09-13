@@ -1,5 +1,5 @@
 ---
-title: クラウド保護とMicrosoft Defender ウイルス対策
+title: クラウド保護と Microsoft Defender ウイルス対策
 description: クラウド保護とクラウド のMicrosoft Defender ウイルス対策
 keywords: Microsoft Defender ウイルス対策、次世代テクノロジ、次世代 AV、機械学習、マルウェア対策、セキュリティ、防御、クラウド、クラウド保護
 search.product: eADQiWindows 10XVcnh
@@ -16,13 +16,13 @@ ms.technology: mde
 ms.topic: article
 ms.date: 08/26/2021
 ms.openlocfilehash: 661e368d76fcdc7a3a62523aa0c92c57790bed60
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58862763"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213793"
 ---
-# <a name="cloud-protection-and-microsoft-defender-antivirus"></a>クラウド保護とMicrosoft Defender ウイルス対策
+# <a name="cloud-protection-and-microsoft-defender-antivirus"></a>クラウド保護と Microsoft Defender ウイルス対策
 
 **適用対象:**
 

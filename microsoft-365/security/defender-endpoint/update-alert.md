@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4bf668379edccff3e85fdeece6cfdcf7482ac8a5a9910cc5a8cf8629463db26c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 00c02bad3f95d2bd8def69d5dd6ad8e1c2e857df
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884537"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213364"
 ---
 # <a name="update-alert"></a>アラートを更新する
 
@@ -72,7 +72,7 @@ PATCH /api/alerts/{id}
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**
 Content-Type|文字列|application/json. **必須**
@@ -85,7 +85,7 @@ Content-Type|文字列|application/json. **必須**
 
 最適なパフォーマンスを得る場合は、変更していない既存の値を含めてはならない。
 
-プロパティ|種類|説明
+プロパティ|型|説明
 :---|:---|:---
 status|String|アラートの現在の状態を指定します。 プロパティの値は、'New'、'InProgress'、および 'Resolved' です。
 assignedTo|String|アラートの所有者

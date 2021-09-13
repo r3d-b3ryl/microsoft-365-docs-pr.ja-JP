@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: データ損失防止ポリシーのアラートを定義および管理する方法について説明します。
-ms.openlocfilehash: 75483989e18ab519aae7d8f5a0cd257b31c6aad33981b1d0ab6b7acda4293585
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ee04f6080edcde86dc39c7f4aa43130223fee8bf
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53796133"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59193011"
 ---
 # <a name="configure-and-view-alerts-for-data-loss-prevention-polices"></a>データ損失防止ポリシーのアラートを構成および表示する
 
@@ -46,13 +46,13 @@ ms.locfileid: "53796133"
     -   デバイス
 -   **高度なアラート構成オプション**: これらのオプションは、DLP ポリシー作成フローの一部です。 それらを使用して、リッチ アラート構成を作成します。 イベントの数または漏洩したデータのサイズに基づいて、単一イベントアラートまたは集約アラートを作成できます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 開始する前に、必要な前提条件が満たされていることを確認してください。
 
 -   DLP アラート管理ダッシュボードのライセンス
 -   アラート構成オプションのライセンス
--   Roles
+-   役割
 
 ### <a name="licensing-for-the-dlp-alert-management-dashboard"></a>DLP アラート管理ダッシュボードのライセンス
 
@@ -70,7 +70,7 @@ Teams [DLP](dlp-microsoft-teams.md)の対象となるエンドポイント[DLP](
         -   Microsoft 365 E5 Compliance 
         -   Microsoft 365証拠開示と監査アドオン ライセンス
 
-### <a name="roles"></a>Roles
+### <a name="roles"></a>役割
 
 DLP アラート管理ダッシュボードを表示する場合、または DLP ポリシーでアラート構成オプションを編集する場合は、次のいずれかの役割グループのメンバーである必要があります。
 

@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 電子メールをビジネス向けMicrosoft 365する方法について学習します。
-ms.openlocfilehash: a40a51773dc62d11272eb02102c421aecf70f2b5a6c02a2867c94b47177668e6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7049642d071ff6b16a489a89c9355b35667a1e58
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53843529"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191881"
 ---
 # <a name="import-email-to-microsoft-365-for-business"></a>ビジネス向けメールMicrosoft 365インポートする 
 
@@ -53,4 +53,4 @@ ms.locfileid: "53843529"
 2. [別 **のプログラムまたはファイルからインポート] を選択し、[** 次へ] を **選択します**。
 3. [データ **Outlook] を選択し**、[次へ] を **選択します**。
 4. [ **参照] を** 選択し、エクスポートしたファイルに移動します。 それを選択し、[開く] **を選択し**、[次へ] を **選択します**。
-5. サブフォルダーを含め、新しいメール アカウントの同じフォルダーにアイテムをインポートする場合を確認します。 **[完了]** を選択します。
+5. サブフォルダーを含め、新しいメール アカウントの同じフォルダーにアイテムをインポートする場合を確認します。 [**完了**] を選択します。

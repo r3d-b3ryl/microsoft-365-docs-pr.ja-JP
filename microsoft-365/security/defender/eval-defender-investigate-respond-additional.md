@@ -23,11 +23,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: 57106e33f244ad1e549fcfd7f361c82863f9e3a9
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58864040"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211913"
 ---
 # <a name="try-microsoft-365-defender-incident-response-capabilities-in-a-pilot-environment"></a>パイロットMicrosoft 365 Defenderインシデント対応機能を試す
 
@@ -155,7 +155,7 @@ ms.locfileid: "58864040"
 
     c. [[オンにする] をWindows Defender ウイルス対策](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)します。 問題が発生した場合は、このトラブルシューティング Windows Defender ウイルス対策を[参照してください](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)。
 
-    d. [エンドポイント用 Microsoft Defender にオンボードします](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)。
+    d.  [エンドポイント用 Microsoft Defender にオンボードします](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)。
 
 ### <a name="run-the-simulation"></a>シミュレーションを実行する
 
@@ -283,7 +283,7 @@ ms.locfileid: "58864040"
 
    このパイロットの場合は、このルールを実稼働環境のテスト デバイスのサブセットに制限できます。
 
-6. [**作成**] を選択します。 次に、ナビゲーション **パネルから [カスタム** 検出ルール] を選択します。
+6. **[作成]** を選択します。 次に、ナビゲーション **パネルから [カスタム** 検出ルール] を選択します。
 
    ![メニューの [カスタム検出ルール] オプションの例。](../../media/mtp/fig27a.png)
 

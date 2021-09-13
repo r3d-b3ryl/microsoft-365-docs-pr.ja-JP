@@ -23,11 +23,11 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.openlocfilehash: 954fa4d9879e9654847f50ad15f8ff3c3a88caf4
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573865"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213293"
 ---
 # <a name="step-2-remediate-your-first-incident"></a>手順 2。 最初のインシデントを修復する
 
@@ -50,7 +50,7 @@ Microsoft 365 Defenderは、アナリストが手動で開始できるいくつ�
 - **調査パッケージの収集** - 調査または対応プロセスの一環として、デバイスから調査パッケージを収集できます。 調査パッケージを収集することで、デバイスの現在の状態を特定し、攻撃者が使用するツールと手法をさらに理解できます。 
 - **脅威の専門家** に相談する (デバイスとファイルの両方のアクションで利用可能) - 既に侵害されている可能性のあるデバイスやデバイスに関する詳細な分析情報については、Microsoft の脅威専門家に問い合うことができます。 Microsoft の脅威の専門家は、迅速かつ正確な対応のために、Microsoft Defender セキュリティ センター内から直接関与できます。 
 
-## <a name="actions-on-files"></a>ファイルに対するアクション
+## <a name="actions-on-files"></a>ファイルへのアクション
 
 - **ファイルの停止と** 検疫 - このアクションには、実行中のプロセスの停止、ファイルの検疫、レジストリ キーなどの永続的なデータの削除が含まれます。 このアクションは、過去 30 日間Windows 10バージョン 1703 以降のデバイスで有効になります。 
 - **ファイルをブロックまたは許可** するインジケーターを追加する - 悪意のある可能性のあるファイルやマルウェアの疑いを禁止することで、組織内の攻撃の伝播を防止します。 この操作により、ファイルが組織内のデバイスで読み取り、書き込み、または実行されるのを防ぐ。

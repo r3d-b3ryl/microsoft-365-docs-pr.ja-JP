@@ -22,11 +22,11 @@ search.appverid:
 - MOE150
 description: フィッシング対策保護を設定する方法について学習します。
 ms.openlocfilehash: 91d8db572bff73fca5515e224c96201260f8855c
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58531493"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212774"
 ---
 # <a name="set-up-anti-phishing"></a>フィッシング詐欺対策を設定する
 

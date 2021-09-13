@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 小規模ビジネスでアプリをMicrosoft Teamsする方法について学習します。
-ms.openlocfilehash: 5ba2dee81602cf6c474728879435998b699a1b5439ae751033a3511b17940361
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 75e5c4aad1ef65e63ed7809cc667fce4b48934e2
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53882447"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191891"
 ---
 # <a name="get-started-with-teams"></a>Teams の使用を開始する
 

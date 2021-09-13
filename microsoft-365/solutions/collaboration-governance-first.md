@@ -17,11 +17,11 @@ f1.keywords: NOCSH
 recommendations: false
 description: コラボレーション ガバナンス 計画を作成する方法について説明します。
 ms.openlocfilehash: cd6da85f43d3dc72ee7b9ccd763872dbccfbeb78
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58585598"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213193"
 ---
 # <a name="create-your-collaboration-governance-plan"></a>コラボレーション ガバナンス 計画の作成
 

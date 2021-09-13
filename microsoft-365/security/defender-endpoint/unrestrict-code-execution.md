@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 38c34198f20c55e1dc6dd2518f30764bf6d58493
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349778"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213373"
 ---
 # <a name="remove-app-restriction-api"></a>アプリ制限 API の削除
 
@@ -77,7 +77,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/unrestrictCodeEx
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**
 Content-Type|string|application/json. **必須**
@@ -86,7 +86,7 @@ Content-Type|string|application/json. **必須**
 
 要求本文で、JSON オブジェクトに次のパラメーターを指定します。
 
-パラメーター|種類|説明
+パラメーター|型|説明
 :---|:---|:---
 コメント|文字列|アクションに関連付けるコメント。 **必須**
 

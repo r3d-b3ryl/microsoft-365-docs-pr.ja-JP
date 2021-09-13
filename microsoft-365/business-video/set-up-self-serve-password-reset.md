@@ -15,18 +15,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- admindeeplinkMAC
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: ユーザーがパスワードをリセットする方法については、Microsoft 365 Business Premium。
-ms.openlocfilehash: 5492bc357fb58e9d3ca5ed4e557449726657257109d9450e09c131115510982b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 815c35098253f7286a1ab99ad99cb0d23009473c
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53906745"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212784"
 ---
 # <a name="set-up-self-service-password-reset"></a>セルフサービスによるパスワードのリセットを設定する
 
@@ -36,7 +37,7 @@ ms.locfileid: "53906745"
 
 ## <a name="try-it"></a>お試しください!
 
-1. 左側のMicrosoft 365 管理センターで、[セキュリティ] を選択し、[セキュリティ]設定 **プライバシーを&します**。
+1. [組織] Microsoft 365 管理センター左側のナビゲーション ウィンドウで、[組織の設定] を選択設定[セキュリティ] を選択&  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**します**</a>。
 1. [ **ユーザーが自分のパスワードをリセットする**] で **、[Azure ADを選択します**。
 1. 左側のナビゲーション ウィンドウで、[ **ユーザー**] を選択し、[ユーザー **-** すべてのユーザー] ページで、[パスワードのリセット] **を選択します**。
 1. [ **すべて] を** 選択してセルフサービス パスワードのリセットを有効にし、[保存] を **選択します**。

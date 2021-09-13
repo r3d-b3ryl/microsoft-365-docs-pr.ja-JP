@@ -17,11 +17,11 @@ ms.custom:
 search.appverid: MET150
 description: '[脅威の管理] ページを使用Microsoft 365 Lighthouseマネージド サービス プロバイダー (MSP) について説明します。'
 ms.openlocfilehash: f9ed274b295b40f9784a193a02dad925462a6e9e
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58365011"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212483"
 ---
 # <a name="microsoft-365-lighthouse-threat-management-page-overview"></a>Microsoft 365 Lighthouse脅威管理ページの概要 
 
@@ -59,7 +59,7 @@ Microsoft Defender ウイルス対策、ユーザー、デバイスを、ウイ�
 
 | 脅威の状態 | 定義 |
 |--|--|
-| アクティブ | デバイスで脅威がアクティブです。 |
+| Active | デバイスで脅威がアクティブです。 |
 | 状態なし | 脅威の状態は使用できません。 デバイスでフル スキャンを実行して、脅威Microsoft Defender ウイルス対策再検出します。 |
 | アクションが失敗しました | デバイスが危険にさらされていない。 アクションは失敗しましたが、潜在的な脅威は停止され、デバイスでアクティブではありません。 デバイスでフル スキャンを実行します。 |
 | 手動で必要な手順 | 脅威は停止されましたが、完全スキャンやデバイスの再起動など、手動で手順を完了する必要があります。 |

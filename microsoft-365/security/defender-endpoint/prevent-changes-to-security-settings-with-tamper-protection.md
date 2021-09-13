@@ -18,11 +18,11 @@ ms.custom: nextgen
 ms.technology: mde
 ms.date: 07/27/2021
 ms.openlocfilehash: e8388721d11d25d17bc8b8bbbe505e968d243c9f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575794"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213483"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>改ざん防止機能を使用してセキュリティ設定を保護する
 
@@ -50,7 +50,7 @@ ms.locfileid: "58575794"
 - クラウド配信の保護の無効化
 - セキュリティ インテリジェンスの更新プログラムの削除
 
-### <a name="how-it-works"></a>メカニズム
+### <a name="how-it-works"></a>しくみ
 
 タンパープロテクションMicrosoft Defender ウイルス対策セキュリティで保護された既定値にロックされ、次のようなアプリやメソッドを介してセキュリティ設定が変更されるのを防ぐ。
 
@@ -79,7 +79,7 @@ ms.locfileid: "58575794"
 | タンパープロテクションを有効にする方法  | クラウドによる保護への依存 (MAPS)    |
 |:----|:----|
 | Microsoft Intune  | いいえ |
-| Microsoft Endpoint Configuration Manager + テナント接続  |     いいえ  |
+| Microsoft Endpoint Configuration Manager + テナント接続  |     なし  |
 | Microsoft 365 Defender ポータル ( [https://security.microsoft.com](https://security.microsoft.com) )  |     はい  |
 
 ## <a name="manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal"></a>ポータルを使用して組織の改ざん防止をMicrosoft 365 Defenderする
@@ -242,7 +242,7 @@ Configuration Manager バージョン 2006 をテナント接続で使用して�
 
 ### <a name="will-tamper-protection-affect-non-microsoft-antivirus-registration-in-the-windows-security-app"></a>改ざん防止は、Microsoft 以外のウイルス対策アプリの登録Windows セキュリティしますか?
 
-その必要はありません。 Microsoft 以外のウイルス対策製品は、引き続きアプリケーションにWindows セキュリティされます。
+いいえ。 Microsoft 以外のウイルス対策製品は、引き続きアプリケーションにWindows セキュリティされます。
 
 ### <a name="what-happens-if-microsoft-defender-antivirus-is-not-active-on-a-device"></a>デバイスでMicrosoft Defender ウイルス対策がアクティブではない場合は、どうなるでしょうか。
 
@@ -282,7 +282,7 @@ Intune でタンパープロテクションを構成する柔軟性がありま�
 
 ### <a name="im-an-enterprise-customer-can-local-admins-change-tamper-protection-on-their-devices"></a>エンタープライズ顧客です。 ローカル管理者は、デバイスの改ざん防止を変更できますか?
 
-その必要はありません。 ローカル管理者は、改ざん防止の設定を変更または変更できません。
+いいえ。 ローカル管理者は、改ざん防止の設定を変更または変更できません。
 
 ### <a name="what-happens-if-my-device-is-onboarded-with-microsoft-defender-for-endpoint-and-then-goes-into-an-off-boarded-state"></a>デバイスが Microsoft Defender for Endpoint にオンボードされ、オフボード状態に入った場合は、どうなるでしょうか。
 

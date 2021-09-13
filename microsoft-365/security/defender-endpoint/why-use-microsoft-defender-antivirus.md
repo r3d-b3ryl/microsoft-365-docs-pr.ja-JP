@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: b939463f072e976ee75eac98f4630b5e29c56c1d599ad03aeee8789a7368859c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 97b9d95638c205dd47453bf6ad09c0d0487f0f8e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53894007"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212023"
 ---
 # <a name="better-together-microsoft-defender-antivirus-and-microsoft-defender-for-endpoint"></a>ベストな組み合わせ: Microsoft Defender Antivirus および Microsoft Defender for Endpoint
 

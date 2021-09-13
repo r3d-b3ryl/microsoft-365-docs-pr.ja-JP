@@ -19,11 +19,11 @@ ms.topic: conceptual
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 96091f2c1a13b86d46a7ddb670dc3b42b034915a
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823602"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212073"
 ---
 # <a name="overview-of-management-and-apis"></a>管理と API の概要
 

@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: a1a042047e3203d8c401f5435e87bafa20aa952ca9e32a051b47ea3a038b7aad
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 354f61284bbd95c1c7ca4cd50459a1644a89d090
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53800692"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212403"
 ---
 # <a name="localize-the-user-experience"></a>ユーザー エクスペリエンスをローカライズ
 
@@ -41,7 +41,7 @@ ms.locfileid: "53800692"
 
 ## <a name="after-completing-setup"></a>セットアップが完了した後
 
-ユーザーは、セットアップ プロセスが完了した後Windows 10、Microsoft 365 AppsのEnterprise言語を選択できます。 具体的には次のとおりです。
+ユーザーは、セットアップ プロセスが完了した後Windows 10、Microsoft 365 AppsのEnterprise言語を選択できます。 特に次のような場合です。
 
 - Windows 10機能:
     - 表示言語

@@ -18,11 +18,11 @@ ms.collection:
 ms.custom: ''
 description: GDPR、Microsoft 365消費者プライバシー法 (CCPA) などのデータプライバシー規制 (Microsoft Teams、SharePoint、電子メールなど) に関する情報保護を構成します。
 ms.openlocfilehash: 1cf58564938efafb0b711680cf7260222c514864
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571207"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213183"
 ---
 # <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>データプライバシーに関する規制に関する情報保護を、Microsoft 365
 
@@ -45,7 +45,7 @@ Microsoft 365 のデータの種類には、Microsoft Teams でのチャット �
 |:-------|:-----|:-------|
 | コンプライアンス マネージャー | 規制コンプライアンス活動を管理し、現在のコンプライアンス構成の全体的なスコアを取得し、改善のための推奨事項を見つける。 これは、ワークフローベースのリスク評価ツールです。Microsoft 365 コンプライアンス センター。 | Microsoft 365 E3、E5 |
 | Microsoft Defender for Office 365 | メール メッセージ、Office ドキュメント、共同作業のツールなど、Microsoft 365 のアプリやデータを攻撃から保護します。 | Microsoft 365 E3、E5 |
-| 機密ラベル | ユーザーの生産性と共同作業能力を妨げることなく、組織のデータを分類して保護します。 メール、ファイル、またはサイトにさまざまなレベルの保護を持つラベルを配置します。 | Microsoft 365 E3、E5 |
+| 秘密度ラベル | ユーザーの生産性と共同作業能力を妨げることなく、組織のデータを分類して保護します。 メール、ファイル、またはサイトにさまざまなレベルの保護を持つラベルを配置します。 | Microsoft 365 E3、E5 |
 | データ損失防止 (DLP) | 内部および外部の両方で、個人情報を含むデータのリスク、不注意、または不適切な共有を検出、警告、ブロックします。 | Microsoft 365 E3、E5 |
 | データの保持ラベルとポリシー | 情報ガバナンス制御を実装する。 これには、組織のポリシーやデータ規制に準拠するためにデータ (顧客に関連する個人データなど) を保持する期間を決定する場合があります。 | Microsoft 365 E3、E5 |
 | メールの暗号化 | 組織内外のユーザー間で暗号化された電子メール メッセージを送受信することで、個人データを保護します。 | Microsoft 365 E3、E5 |

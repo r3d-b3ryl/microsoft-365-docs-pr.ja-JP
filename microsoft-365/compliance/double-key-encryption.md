@@ -13,11 +13,11 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 ms.openlocfilehash: 1489671754f26d37abbc9bfbc84f59be26099c9b
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570895"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212613"
 ---
 # <a name="double-key-encryption-for-microsoft-365"></a>ユーザーのダブル キー暗号化Microsoft 365
 
@@ -35,7 +35,7 @@ ms.locfileid: "58570895"
 
 ## <a name="when-your-organization-should-adopt-dke"></a>組織で DKE を採用する必要が生じ
 
-ダブル キー暗号化は、最も厳密な保護要件の対象となる最も機密性の高いデータを対象とします。 DKE は、すべてのデータを対象としているのではありません。 一般に、Double Key Encryption を使用して、全体的なデータの一部のみを保護します。 展開する前に、このソリューションでカバーする適切なデータを特定するためのデューデリジェンスを行う必要があります。 場合によっては、スコープを絞り込み、Microsoft が管理するキーや BYOK を使用する Microsoft Information Protectionなどのほとんどのデータに対して他のソリューションを使用する必要があります。 これらのソリューションは、強化された保護と規制要件の対象とされないドキュメントでは十分です。 また、これらのソリューションを使用すると、最も強力なサービスOffice 365できます。DKE で暗号化されたコンテンツでは使用できないサービス。 次に例を示します。
+ダブル キー暗号化は、最も厳密な保護要件の対象となる最も機密性の高いデータを対象とします。 DKE は、すべてのデータを対象としているのではありません。 一般に、Double Key Encryption を使用して、全体的なデータの一部のみを保護します。 展開する前に、このソリューションでカバーする適切なデータを特定するためのデューデリジェンスを行う必要があります。 場合によっては、スコープを絞り込み、Microsoft が管理するキーや BYOK を使用する Microsoft Information Protectionなどのほとんどのデータに対して他のソリューションを使用する必要があります。 これらのソリューションは、強化された保護と規制要件の対象とされないドキュメントでは十分です。 また、これらのソリューションを使用すると、最も強力なサービスOffice 365できます。DKE で暗号化されたコンテンツでは使用できないサービス。 以下に例を示します。
 
 - 添付ファイルを表示する必要があるマルウェア対策やスパムなどのトランスポート ルール
 - Microsoft Delve
@@ -139,12 +139,12 @@ Microsoft は、DKE ソース ファイルを新しいリポジトリGitHubし�
 
 2. 画面の右側にある [コード] を **選択します**。 バージョンの UI に [複製] または [ダウンロード **] ボタンが表示される場合** があります。 次に、表示されるドロップダウンで、コピー アイコンを選択して URL をクリップボードにコピーします。
 
-    次に例を示します。
+    以下に例を示します。
 
    > [!div class="mx-imgBorder"]
    > ![2 つのキー暗号化サービス リポジトリの複製を、GitHub。](../media/dke-clone.png)
 
-3. [コマンド Visual Studio Code] で、[**コマンド パレットの表示]** \> **を選択** し **、[Git: Clone] を選択します**。 リスト内のオプションに移動するには、入力を開始してエントリをフィルター処理し、ドロップダウン `git: clone` から選択します。 次に例を示します。
+3. [コマンド Visual Studio Code] で、[**コマンド パレットの表示]** \> **を選択** し **、[Git: Clone] を選択します**。 リスト内のオプションに移動するには、入力を開始してエントリをフィルター処理し、ドロップダウン `git: clone` から選択します。 以下に例を示します。
 
    > [!div class="mx-imgBorder"]
    > ![Visual Studio CodeGIT:Clone オプション。](../media/dke-vscode-clone.png)
@@ -153,7 +153,7 @@ Microsoft は、DKE ソース ファイルを新しいリポジトリGitHubし�
 
 5. 表示される **[フォルダーの** 選択] ダイアログで、リポジトリを保存する場所を参照して選択します。 プロンプトで、[開く] を **選択します**。
 
-    リポジトリが左側Visual Studio Code開き、左下に現在の Git ブランチが表示されます。 たとえば、ブランチは main である **必要があります**。 次に例を示します。
+    リポジトリが左側Visual Studio Code開き、左下に現在の Git ブランチが表示されます。 たとえば、ブランチは main である **必要があります**。 以下に例を示します。
 
    ![メイン ブランチを表示するVisual Studio Code DKE repo のスクリーンショット。](../media/dke-vscode-main-branch.jpg)
 
@@ -187,7 +187,7 @@ DKE サービスを展開するには、次の種類のアプリケーション�
 
 1. ファイルのappsettings.js **を開** き、設定を探 `AuthorizedEmailAddress` します。
 
-2. 承認する電子メール アドレスまたはアドレスを追加します。 複数の電子メール アドレスを二重引用符とコンマで区切ります。 次に例を示します。
+2. 承認する電子メール アドレスまたはアドレスを追加します。 複数の電子メール アドレスを二重引用符とコンマで区切ります。 例:
 
    ```json
    "AuthorizedEmailAddress": ["email1@company.com", "email2@company.com ", "email3@company.com"]
@@ -209,13 +209,13 @@ DKE サービスを展開するには、次の種類のアプリケーション�
 
 1. ファイルのappsettings.js **を開** き、設定を探 `AuthorizedRoles` します。
 
-2. 承認する Active Directory グループ名を追加します。 複数のグループ名を二重引用符とコンマで区切ります。 次に例を示します。
+2. 承認する Active Directory グループ名を追加します。 複数のグループ名を二重引用符とコンマで区切ります。 以下に例を示します。
 
    ```json
    "AuthorizedRoles": ["group1", "group2", "group3"]
    ```
 
-3. 設定を見 `LDAPPath` つけて、Active Directory ドメインを追加します。 次に例を示します。
+3. 設定を見 `LDAPPath` つけて、Active Directory ドメインを追加します。 例:
 
    ```json
    "LDAPPath": "contoso.com"
@@ -235,7 +235,7 @@ DKE テナントとキー設定は、ファイルのappsettings.js **に表示**
 
 1. ファイルのappsettings.js **開** きます。
 
-2. 設定を見 `ValidIssuers` つけて、テナント `<tenantid>` ID に置き換える。 テナント ID を見つけるには、Azure portal にアクセスしてテナントのプロパティを [表示します](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties)。 次に例を示します。
+2. 設定を見 `ValidIssuers` つけて、テナント `<tenantid>` ID に置き換える。 テナント ID を見つけるには、Azure portal にアクセスしてテナントのプロパティを [表示します](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties)。 以下に例を示します。
 
    ```json
    "ValidIssuers": [
@@ -246,7 +246,7 @@ DKE テナントとキー設定は、ファイルのappsettings.js **に表示**
 > [!NOTE]
 > キー ストアへの外部 B2B アクセスを有効にする場合は、有効な発行者のリストの一部としてこれらの外部テナントも含める必要があります。
 
-を探します `JwtAudience` 。 `<yourhostname>`DKE サービスが実行されるコンピューターのホスト名に置き換える。 次に例を示します。
+を探します `JwtAudience` 。 `<yourhostname>`DKE サービスが実行されるコンピューターのホスト名に置き換える。 例:
 
   > [!IMPORTANT]
   > の値は `JwtAudience` 、ホストの名前と完全に一致 *する必要があります*。 デバッグ中に **localhost:5001 を** 使用できます。 ただし、デバッグが完了したら、この値をサーバーのホスト名に更新してください。
@@ -353,7 +353,7 @@ DKE プロジェクトをローカルでビルドするには、次の手順を�
 
 4. [ **デバッグ** \> **の開始] を選択** して、プロセスをデバッグします。 環境の選択を求めるメッセージが表示されたら **、[.NET core] を選択します**。
 
-   .NET コア デバッガーは通常、 に起動します `https://localhost:5001` 。 テスト キーを表示するには、スラッシュ (/) とキーの `https://localhost:5001` 名前に移動して追加します。 次に例を示します。
+   .NET コア デバッガーは通常、 に起動します `https://localhost:5001` 。 テスト キーを表示するには、スラッシュ (/) とキーの `https://localhost:5001` 名前に移動して追加します。 例:
 
    ```https
    https://localhost:5001/TestKey1
@@ -383,7 +383,7 @@ DKE プロジェクトをローカルでビルドするには、次の手順を�
 
    - [ **発行]** で、 **コードを選択** し、[ **ランタイム スタック] で** **[.NET Core 3.1] を選択します**。
 
-   次に例を示します。
+   以下に例を示します。
 
    > [!div class="mx-imgBorder"]
    > ![App Service を追加します。](../media/dke-azure-add-app-service.png)
@@ -424,7 +424,7 @@ DKE が展開され、作成したテスト キーを参照できます。 [次�
 
 2. 表示された接続文字列をローカル ファイルにコピーします。 これらの文字列を使用して Web App Service に接続し、FTP 経由でファイルをアップロードします。
 
-   次に例を示します。
+   以下に例を示します。
 
    ![FTP ダッシュボードから接続文字列をコピーします。](../media/dke-ftp-dashboard.png)
 
@@ -478,7 +478,7 @@ DKE サービスを登録するには、次の方法を実行します。
 
    カスタム 以外のドメイン **(onmicrosoft.com** など) で Microsoft Azure を使用している場合は、[この組織ディレクトリ内のアカウントのみ] を選択します **(Microsoft のみ - シングル テナント)。**
 
-   次に例を示します。
+   以下に例を示します。
 
    > [!div class="mx-imgBorder"]
    > ![新しいアプリ登録。](../media/dke-app-registration.png)
@@ -503,7 +503,7 @@ DKE サービスを登録するには、次の方法を実行します。
 
 9. [**暗黙的な付与] で****、[ID トークン] チェック ボックスを** オンにします。
 
-10. **[保存]** を選択し、変更内容を保存します。
+10. **[保存]** を選び、変更内容を保存します。
 
 11. 左側のウィンドウで、[API の公開] **を選択** し、[アプリケーション ID URI] の横にある [設定] を **選択します**。
 
@@ -539,7 +539,7 @@ DKE サービスを登録するには、次の方法を実行します。
 
 このページMicrosoft 365 コンプライアンス センター新しい感度ラベルを作成し、それ以外の場合と同じように暗号化を適用します。 [ **ダブル キー暗号化を使用する]** を選択し、キーのエンドポイント URL を入力します。
 
-次に例を示します。
+例:
 
 > [!div class="mx-imgBorder"]
 > ![[キーの二重暗号化を使用する] を選択Microsoft 365 コンプライアンス センター。](../media/dke-use-dke.png)

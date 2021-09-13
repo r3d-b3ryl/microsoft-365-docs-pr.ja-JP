@@ -6,15 +6,16 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
+ms.custom: admindeeplinkMAC
 localization_priority: Normal
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: Microsoft Bookings にアクセスする方法については、Microsoft 365。
-ms.openlocfilehash: cc0352166bf7cd20cfa10542d57da9fbd5b160f7
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.openlocfilehash: a5c5e0bbac10352d3e526bbde88db66e6a253e28
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823819"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212874"
 ---
 # <a name="turn-microsoft-bookings-on-or-off"></a>Microsoft Bookings を有効または無効にする
 
@@ -27,7 +28,7 @@ ms.locfileid: "58823819"
 
 1. グローバル管理者としてMicrosoft 365 管理センターサインインします。
 
-2. 管理センターで、[組織] **** ページに移動   \> **設定、[設定]** **を選択します**。
+2. 管理センターで、[組織の設定] **設定**   \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**移動します**</a>。
 
 3. [組織で予約 **を使用して組織の予約** を有効または無効にする] チェック ボックスをオンにします。
 
@@ -48,7 +49,7 @@ PowerShell コマンドレット[Set-OrganizationConfig](/powershell/module/exch
 
 個々のユーザーの予約を無効にできます。
 
-1. [ユーザー] に移動Microsoft 365 管理センター、[ユーザー] [アクティブユーザー **]** \> **を選択します**。
+1. [ユーザー] に移動Microsoft 365 管理センター、[ユーザー] [アクティブユーザー **]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**を選択します**</a>。
 
 1. 目的のユーザーを選択し、[ライセンスとアプリ **] を選択します**。
 
@@ -56,13 +57,13 @@ PowerShell コマンドレット[Set-OrganizationConfig](/powershell/module/exch
 
 ## <a name="require-staff-approvals-before-sharing-freebusy-information"></a>空き時間情報を共有する前にスタッフの承認を要求する
 
-管理者は、予約ページを通じて予約可能になる前に、利用可能な情報を共有する前に、組織内の従業員にオプトインを要求できます。 この設定は、[予約] の [Microsoft 365 管理センター] の \> **設定設定** \> **使用できます**。
+管理者は、予約ページを通じて予約可能になる前に、利用可能な情報を共有する前に、組織内の従業員にオプトインを要求できます。 この設定は、[組織設定の予約] Microsoft 365 管理センター **の設定** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**で**</a> \> **使用できます**。
 
 この設定を有効にすると、予約カレンダーにスタッフとして追加された従業員は、受信した電子メール通知に [承認/拒否] リンクを見つける。
 
 ## <a name="block-social-sharing-options"></a>ソーシャル共有オプションをブロックする
 
-管理者は、予約ページをソーシャル ネットワーク上で共有する方法を制御できます。 この設定は、[予約] の [Microsoft 365 管理センター] の \> **設定設定** \> **使用できます**。
+管理者は、予約ページをソーシャル ネットワーク上で共有する方法を制御できます。 この設定は、[組織設定の予約] Microsoft 365 管理センター **の設定** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**で**</a> \> **使用できます**。
 
 ## <a name="allow-only-selected-users-to-create-bookings-calendars"></a>選択したユーザーにのみ予約カレンダーの作成を許可する
 

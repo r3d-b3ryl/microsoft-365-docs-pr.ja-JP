@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: オンプレミスのスキャナーで Microsoft 365 データ損失防止を使用して、保存されているデータをスキャンし、オンプレミスのファイル共有とオンプレミスの SharePoint フォルダーとドキュメント ライブラリに保護アクションを実装する方法について説明します。
-ms.openlocfilehash: 60befcd3ba35fe900c9fd90f84b484f9c49c280a53f7e6f31cd5ab17e729c34b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3d7c2e30092eee022fc0ed2a7ef6a8be7b82e3f1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53850977"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192961"
 ---
 # <a name="use-the-microsoft-365-data-loss-prevention-on-premises-scanner"></a>Microsoft 365 のデータ損失防止のオンプレミス スキャナーを使用する
 

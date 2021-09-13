@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: e4468915-15e1-4530-9361-cd18ce82e231
 description: プレフィックス フィルター、セキュリティ、コンプライアンスOffice 365構成する共通領域など、ExpressRoute for Office 365を管理する方法について学習します。
-ms.openlocfilehash: bb6f2a4f0c6c8d2d00fc8f8dcf05e33399f4f8a1695f03402a53d07cf329dc5c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e8de0763df7d592bc41802b1ead48df06891e6dc
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53878783"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213853"
 ---
 # <a name="managing-expressroute-for-office-365-connectivity"></a>Office 365 向け ExpressRoute の接続を管理する
 
@@ -104,7 +104,7 @@ Microsoft がネットワークへの接続を開始する必要があるいく�
   
 ここに戻る場合は、次の短いリンクをご利用ください: [https://aka.ms/manageexpressroute365]()
   
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [コンテンツ配信ネットワーク](content-delivery-networks.md)
   

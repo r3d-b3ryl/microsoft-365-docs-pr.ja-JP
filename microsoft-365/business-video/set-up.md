@@ -15,17 +15,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 詳しくは、アプリをセットアップするMicrosoft 365 Business Premium。
-ms.openlocfilehash: 8824755d8215af6a1459ae73d1cd9ba08f5897c574b07e8e99f6b78cfee439c1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4609789f426446b554e97576643bfba7f6d50803
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838021"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212783"
 ---
 # <a name="set-up-microsoft-365-business-premium"></a>Microsoft 365 Business Premium のセットアップ
 
@@ -33,7 +34,7 @@ ms.locfileid: "53838021"
 
 ## <a name="try-it"></a>お試しください!
 
-1. [セットアップに移動] Microsoft 365 管理センターにサインインし、[**セットアップに移動] を選択します**。 セットアップ ウィザードが起動します。
+1. [セットアップに移動 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">]</a>をMicrosoft 365 管理センターにサインインし、[**セットアップに移動] を選択します**。 セットアップ ウィザードが起動します。
 2.  [アプリ **のインストールOffice]** ページで、コンピューターにアプリをOfficeするか、[続行] を選択 **します**。
 3.  [ドメインは  **ビジネス ID] ページ**  で、ビジネスのドメイン名を入力し、[このドメインを使用する]  **を選択します**。 WordPress や GoDaddy のような一般的なレジストラーを使用する場合、レコードはこのページに自動的に追加されます。
 4. [ドメイン **の確認] ページで**、[確認] を選択してドメインの所有権を確認し、ドメイン レジストラー アカウントにサインインします。  Microsoft がアカウント検証用の TXT レコードを追加するには、[確認] を  **選択します**。

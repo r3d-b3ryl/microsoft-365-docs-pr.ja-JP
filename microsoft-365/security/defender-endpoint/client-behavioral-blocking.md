@@ -20,11 +20,11 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.technology: mde
 ms.openlocfilehash: 5afa8ec7fc6d4adeef5a099a18e335b7a9e68f5b
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567366"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212324"
 ---
 # <a name="client-behavioral-blocking"></a>クライアントの動作ブロック
 

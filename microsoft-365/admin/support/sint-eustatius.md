@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 15ea816770e45575ee60b4c2bfed433d86e3e9d0fe6539503e9d0d3b7a22cdfb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 68402aac0d704151a2252a096314383d5b726d91
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53797424"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213074"
 ---
 # <a name="contact-support-for-sint-eustatius"></a>Sint Eustatius のサポートにお問い合わせください
 

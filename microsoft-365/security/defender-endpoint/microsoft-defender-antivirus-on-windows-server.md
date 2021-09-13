@@ -16,11 +16,11 @@ ms.technology: mde
 ms.topic: article
 ms.date: 08/05/2021
 ms.openlocfilehash: 937ca4baefe4456edb97bac7f5cfc56d346c08bb
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823746"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213603"
 ---
 # <a name="microsoft-defender-antivirus-on-windows-server"></a>Windows Server 上の Microsoft Defender ウイルス対策
 

@@ -18,11 +18,11 @@ ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
 ms.openlocfilehash: 4bd6726550e444ffc31e241b8fb5c52c9967a267
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570667"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212314"
 ---
 # <a name="onboard-the-windows-10-devices-using-group-policy"></a>グループ ポリシーをWindows 10デバイスにオンボードする
 
@@ -73,7 +73,7 @@ ms.locfileid: "58570667"
 
 11. **[OK] を選択** し、開いている GPMC ウィンドウを閉じます。
 
-12. GPO を組織単位 (OU) にリンクするには、右クリックして [既存の GPO のリンク **] を選択します**。 表示されるダイアログ ボックスで、リンクするグループ ポリシー オブジェクトを選択します。 **[OK]** をクリックします。
+12. GPO を組織単位 (OU) にリンクするには、右クリックして [既存の GPO のリンク **] を選択します**。 表示されるダイアログ ボックスで、リンクするグループ ポリシー オブジェクトを選択します。 [**OK**] をクリックします。
 
 > [!TIP]
 > デバイスのオンボード後、検出テストを実行して、デバイスがサービスに適切にオンボードされていることを確認できます。 詳細については、「新しくオンボードされた Defender for Endpoint デバイスで検出テストを実行 [する」を参照してください](run-detection-test.md)。
@@ -121,7 +121,7 @@ ms.locfileid: "58570667"
 
 **ポリシーの場所:** \Windows コンポーネント\atp Windows Defender
 
-ポリシー|設定
+ポリシー|Setting
 ---|---
 Enable\Disable Sample collection|[有効] - [コンピューターでサンプル コレクションを有効にする] チェック ボックスをオンにします。
 
@@ -129,7 +129,7 @@ Enable\Disable Sample collection|[有効] - [コンピューターでサンプ�
 
 **ポリシーの場所:** \Windows コンポーネント\Microsoft Defender ウイルス対策
 
-ポリシー|設定
+ポリシー|Setting
 ---|---
 望ましくない可能性があるアプリケーションの検出を構成する|有効、ブロック
 
@@ -137,7 +137,7 @@ Enable\Disable Sample collection|[有効] - [コンピューターでサンプ�
 
 **ポリシーの場所:** \Windows コンポーネント\Microsoft Defender ウイルス対策\MAPS
 
-ポリシー|設定
+ポリシー|Setting
 ---|---
 Microsoft MAPS に参加する|有効、高度なマップ
 詳細な分析が必要な場合にファイル サンプルを送信する | 有効、安全なサンプルの送信
@@ -146,12 +146,12 @@ Microsoft MAPS に参加する|有効、高度なマップ
 
 **ポリシーの場所:** \Windows コンポーネント\Microsoft Defender ウイルス対策\リアルタイム保護
 
-ポリシー|設定
+ポリシー|Setting
 ---|---
-リアルタイム保護をオフにする|無効
-動作の監視を有効にする|有効
-ダウンロードしたファイルと添付ファイルをスキャンする|有効
-コンピューター上のファイルとプログラムのアクティビティを監視する|有効
+リアルタイム保護をオフにする|Disabled
+動作の監視を有効にする|Enabled
+ダウンロードしたファイルと添付ファイルをスキャンする|Enabled
+コンピューター上のファイルとプログラムのアクティビティを監視する|Enabled
 
 <br>
 
@@ -159,9 +159,9 @@ Microsoft MAPS に参加する|有効、高度なマップ
 
 これらの設定は、エンドポイントの定期的なスキャンを構成します。 毎週のクイック スキャンを実行することをお勧めします。パフォーマンスが許容されます。
 
-ポリシー|設定
+ポリシー|Setting
 ---|---
-スケジュールされたスキャンを実行する前に、最新のウイルスとスパイウェアのセキュリティ インテリジェンスを確認する |有効
+スケジュールされたスキャンを実行する前に、最新のウイルスとスパイウェアのセキュリティ インテリジェンスを確認する |Enabled
 
 <br>
 
@@ -181,7 +181,7 @@ Microsoft MAPS に参加する|有効、高度なマップ
 
    ![攻撃表面の縮小構成のイメージ。](images/asr-guid.png)
 
-ポリシー|設定
+ポリシー|Setting
 ---|---
 フォルダー アクセスの制御を構成する| 有効、監査モード
 

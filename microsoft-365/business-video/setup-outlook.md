@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 詳しくは、電子メールのOutlook設定Microsoft 365してください。
-ms.openlocfilehash: ce6ec27043f363f0a4aecd0981e78f7b474e97776d766ecda8ac34a808c44b90
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9dc0ed41df4aaadee060e0c7606600ba5512df09
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53809566"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212773"
 ---
 # <a name="set-up-outlook-for-microsoft-365-for-business-email"></a>ビジネス メールOutlook for Microsoft 365設定する 
 

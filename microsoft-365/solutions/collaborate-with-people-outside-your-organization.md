@@ -19,12 +19,12 @@ localization_priority: Normal
 f1.keywords: NOCSH
 recommendations: false
 description: 組織外のユーザーと共同作業をするために、Teams、OneDrive、SharePoint など、Microsoft 365 アプリを構成する方法について説明します。
-ms.openlocfilehash: 1620af867057ee771936bfc15048ce6b15968e3230c5fb324acc7bc5141af20d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 291a5e6d75ac1b1a12a2403a9aeece9cb658afd0
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853105"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213194"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>組織外のユーザーとの共同作業
 

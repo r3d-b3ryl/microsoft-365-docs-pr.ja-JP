@@ -20,11 +20,11 @@ f1.keywords:
 - NOCSH
 description: Web サイトのページ診断ツールSharePoint使用して、SharePointのモダン ポータルページとクラシック発行ページを事前に定義されたパフォーマンス条件のセットに対して分析します。
 ms.openlocfilehash: e741e8e2da62d2361578e31edcb6dbbafafbb7dc
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574714"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213813"
 ---
 # <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>[ページ診断] ツールを使用SharePointする
 

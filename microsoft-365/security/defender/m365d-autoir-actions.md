@@ -22,11 +22,11 @@ ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
 ms.openlocfilehash: daedba79bb2fd9ac452cbef08d74d4d876122478
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565662"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213294"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>アクション センターでのアクションの表示と管理
 

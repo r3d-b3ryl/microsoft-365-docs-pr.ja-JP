@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: be31f14b1b6fc66d67dd327f0bf0dfd7213324f03d7957e66ac594a2a6691ad4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8dbb6ebb123770c0293ba25145ef2234fc6031a5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53832201"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191991"
 ---
 # <a name="contact-support-for-montenegro"></a>モンテネグロのサポートに問い合わせ
 

@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: fd6b7587-5055-4bcd-83a4-13bd4929bfff
 description: オンラインで予定を予約するときに顧客に質問する必要がある場合は、予約ページにカスタムの質問と必要な質問を追加できます。
 ms.openlocfilehash: 496d395677d272c436504bfe43b3c42833e3a73e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571605"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212883"
 ---
 # <a name="add-custom-and-required-questions-to-the-booking-page"></a>予約ページにカスタムおよび必須の質問を追加する
 

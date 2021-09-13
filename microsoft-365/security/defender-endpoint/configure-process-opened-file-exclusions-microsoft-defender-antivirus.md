@@ -16,11 +16,11 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.openlocfilehash: ea06094121f9c6a654234da1cb6d7757db5c78dd
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533293"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212293"
 ---
 # <a name="configure-exclusions-for-files-opened-by-processes"></a>プロセスによって開いたファイルの除外を構成する
 
@@ -83,7 +83,7 @@ PowerShell コマンドレットと WMI を使用して、リストの確認な�
     2. [オプション] **セクションで** 、[ **表示.... をクリックします**。
     3. [値名] 列の下に、各プロセス **を独自の行に入力** します。 さまざまな種類のプロセスの除外については、例の表を参照してください。 すべての **プロセスの [** 値] **列に 0** を入力します。
 
-5. **[OK]** をクリックします。
+5. [**OK**] をクリックします。
 
 ### <a name="use-powershell-cmdlets-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>PowerShell コマンドレットを使用して、指定したプロセスで開いたファイルをスキャンから除外する
 

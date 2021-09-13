@@ -15,14 +15,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8a425740ebdc3177c8e7ed9b682ce606bd536478
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 77326645bb86b1163ca7a0bcc364544d378109c2
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572613"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212273"
 ---
-# <a name="use-sensitivity-labels-to-prioritize-incident-response"></a>秘密度ラベルを使用してインシデント対応に優先順位を付ける  
+# <a name="use-sensitivity-labels-to-prioritize-incident-response"></a>秘密度ラベルを使用してインシデント対応に優先順位を付ける
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,24 +32,24 @@ ms.locfileid: "58572613"
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-
 一般的な高度な永続的な脅威ライフサイクルには、データの取り込みが含まれる。 セキュリティ インシデントでは、機密ファイルが危険にさらされる可能性がある調査に優先順位を付け、企業のデータと情報を保護することが重要です。
 
-Defender for Endpoint は、セキュリティ インシデントの事前設定を、感度ラベルを使用して、はるかに簡単に行うのに役立ちます。 機密ラベルは、機密情報などの機密情報を持つデバイスに関連する可能性のあるインシデントをすばやく識別します。 
+Defender for Endpoint は、セキュリティ インシデントの事前設定を、感度ラベルを使用して、はるかに簡単に行うのに役立ちます。 機密ラベルは、機密情報などの機密情報を持つデバイスに関連する可能性のあるインシデントをすばやく識別します。
 
 ## <a name="investigate-incidents-that-involve-sensitive-data"></a>機密データを含むインシデントを調査する
+
 データの感度ラベルを使用してインシデント調査の優先順位を設定する方法について学習します。
 
->[!NOTE]
->ラベルは、1 つ以上のWindows 10 Version 1809検出されます。
+> [!NOTE]
+> ラベルは、1 つ以上のWindows 10 Version 1809検出されます。
 
-1. [Microsoft 365 Defender] ポータルで、[インシデント]**を選択&インシデント**  >  **を通知します**。
+1. [Microsoft 365 Defender] ポータルで、[インシデント]**を選択&インシデント** \> **を通知します**。
 
 2. 右にスクロールすると、[データの感度 **] 列が表示** されます。 この列は、インシデントに関連するデバイスで観察された機密ラベルを反映し、機密ファイルがインシデントの影響を受ける可能性があるかどうかを示します。
 
     ![[データの感度] 列のイメージ。](images/data-sensitivity-column.png)
 
-    また、データの感度に基 **づいてフィルター処理を実行できます。** 
+    また、データの感度に基 **づいてフィルター処理を実行できます。**
 
     ![データの感度フィルターのイメージ。](images/data-sensitivity-filter.png)
 
@@ -60,14 +60,12 @@ Defender for Endpoint は、セキュリティ インシデントの事前設定
 4. [デバイス] **タブを** 選択して、感度ラベル付きファイルを格納するデバイスを識別します。
 
     ![[デバイス] タブのイメージ。](images/investigate-devices-tab.png)
-   
 
-5. 機密データを格納するデバイスを選択し、タイムラインを検索して、影響を受ける可能性のあるファイルを特定し、データが保護される適切なアクションを実行します。 
+5. 機密データを格納するデバイスを選択し、タイムラインを検索して、影響を受ける可能性のあるファイルを特定し、データが保護される適切なアクションを実行します。
 
    デバイスのタイムラインに表示されるイベントを絞り込むには、データの感度ラベルを検索します。 これにより、ラベル名が指定されたファイルに関連付けられたイベントだけが表示されます。
 
     ![ラベルに基づいて検索結果を絞り込むデバイスタイムラインの画像。](images/machine-timeline-labels.png)
 
-
->[!TIP]
->これらのデータ ポイントは、高度な検索で 'DeviceFileEvents' を通じて公開され、高度なクエリとスケジュール検出で、感度ラベルとファイル保護の状態を考慮に入れることができるようになりました。 
+> [!TIP]
+> これらのデータ ポイントは、高度な検索で 'DeviceFileEvents' を通じて公開され、高度なクエリとスケジュール検出で、感度ラベルとファイル保護の状態を考慮に入れることができるようになりました。

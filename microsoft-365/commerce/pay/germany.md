@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: fc31fcc67e7bff7dcb58747b5b03d2dd83703bad36c24ccae6d7a8d7f1f2c59e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9a8070e4ef5d33eb8ca7163c42980f50ff8aa573
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53906485"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191790"
 ---
 # <a name="payment-information-for-germany"></a>ドイツの支払い情報
 

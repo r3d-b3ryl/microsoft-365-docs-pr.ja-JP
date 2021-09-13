@@ -16,11 +16,11 @@ ms.technology: mde
 ms.topic: article
 ms.date: 08/31/2021
 ms.openlocfilehash: 94e97c9d289ccf39d66618025822e0259b836219
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58865066"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212024"
 ---
 # <a name="why-cloud-protection-should-be-enabled-for-microsoft-defender-antivirus"></a>クラウド保護を有効にする必要Microsoft Defender ウイルス対策
 
@@ -36,7 +36,7 @@ Microsoft Defender ウイルス対策クラウド保護は、エンドポイン�
 | 機能/機能  | サブスクリプション |  説明  |
 |---------|---------|--------|
 | クラウド内のメタデータに対するチェック  | Microsoft 365 E5または E3 | クラウド Microsoft Defender ウイルス対策は、機械学習モデルを追加の防御層として使用します。 これらの機械学習モデルにはメタデータが含まれるので、疑わしいファイルや悪意のあるファイルが検出されると、そのメタデータがチェックされます。 <br/><br/>詳細については、「ブログ: Microsoft Defender for Endpoint 次世代保護の中核となる高度なテクノロジを [知る」を参照してください。](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)  |
-| クラウド保護とサンプル申請 | Microsoft 365 E5または E3 | ファイルと実行可能ファイルは、Microsoft Defender ウイルス対策分析のためにクラウド サービスに送信できます。 <br/><br/>詳細については、「クラウド保護と[サンプル申請」を参照Microsoft Defender ウイルス対策。](cloud-protection-microsoft-antivirus-sample-submission.md)<br/><br/>**注**: 自動サンプル送信はクラウド保護に依存しますが、スタンドアロン設定としても構成できます。         |
+| クラウド保護とサンプルの送信 | Microsoft 365 E5または E3 | ファイルと実行可能ファイルは、Microsoft Defender ウイルス対策分析のためにクラウド サービスに送信できます。 <br/><br/>詳細については、「クラウド保護と[サンプル申請」を参照Microsoft Defender ウイルス対策。](cloud-protection-microsoft-antivirus-sample-submission.md)<br/><br/>**注**: 自動サンプル送信はクラウド保護に依存しますが、スタンドアロン設定としても構成できます。         |
 | タンパープロテクション | Microsoft 365 E5 | 改ざん防止は、組織のセキュリティ設定に対する望ましくない変更から保護するのに役立ちます。 ポータルで改ざん防止をMicrosoft 365 Defender、クラウド保護を有効にする必要があります。 <br/><br/>詳細については、「改ざん防止 [によるセキュリティ設定の保護」を参照してください](prevent-changes-to-security-settings-with-tamper-protection.md)。        |
 | 事前ブロック | Microsoft 365 E5または E3 | 一目でブロックすると、新しいマルウェアが検出され、数秒でブロックされます。 疑わしいファイルや悪意のあるファイルが検出されると、一目でブロック機能がクラウド保護バックエンドにクエリを実行し、ファイルのヒューリスティック、機械学習、および自動分析を適用して、ファイルが脅威であるかどうかを判断します。<br/><br/>詳細については、「一目でブロック [する」を参照してください](configure-block-at-first-sight-microsoft-defender-antivirus.md#what-is-block-at-first-sight)。   |
 | 緊急署名の更新 | Microsoft 365 E5 | 悪意のあるコンテンツが検出されると、緊急署名の更新と修正が展開されます。 次の定期的な更新を待つのではなく、数分以内にこれらの修正プログラムと更新プログラムを受け取る必要があります。   |

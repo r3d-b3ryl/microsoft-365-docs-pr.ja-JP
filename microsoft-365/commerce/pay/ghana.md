@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9fa4dcc71f17bf550fd4f74de123efc6ae7f7a7fc427878865fe3f34a7060d5b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0865aec454ba28829bd0d829ff9c261de3ca5fdb
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53856249"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191781"
 ---
 # <a name="payment-information-for-ghana"></a>ガーナのお支払い情報
 

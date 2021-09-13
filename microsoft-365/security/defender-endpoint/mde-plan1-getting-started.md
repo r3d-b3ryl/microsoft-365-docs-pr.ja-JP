@@ -14,11 +14,11 @@ localization_priority: Normal
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.openlocfilehash: 3af483db6b2cc9801a56d96147a0a4aed90e33ce
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823424"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213664"
 ---
 # <a name="get-started-with-microsoft-defender-for-endpoint-plan-1-preview"></a>Microsoft Defender for Endpoint Plan 1 の概要 (プレビュー)
 
@@ -57,7 +57,7 @@ Microsoft 365 Defender ポータル ( ) を使用すると、検出された脅�
 
 画面の左側のナビゲーション バーを使用すると、インシデント、アラート、アクション センター、レポート、および設定の間を簡単に移動できます。 次の表に、ナビゲーション バーについて説明します。
 
-| ナビゲーション バーアイテム | 内容 |
+| ナビゲーション バーアイテム | 説明 |
 |:---|:---|
 | **ホーム** | ポータルのホーム ページに移動Microsoft 365 Defender[します](../defender/microsoft-365-security-center-mde.md)。 |
 | **インシデント&アラート** | 展開してインシデントと **アラートを****表示します**。 |

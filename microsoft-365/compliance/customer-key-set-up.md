@@ -12,12 +12,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 顧客キーを設定する方法についてMicrosoft 365。
-ms.openlocfilehash: 2db1aff638818fea18a55e331093fcd26ca30071995447ca817234f450798047
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e187c01a355cc9b926e892cb3326b5a527c714a4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53796288"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212674"
 ---
 # <a name="set-up-customer-key"></a>顧客キーの設定
 
@@ -42,7 +42,7 @@ Office 365 E5、Microsoft 365 E5、Microsoft 365 E5 Compliance、Microsoft 365 E
 
 顧客キーを設定するには、これらのタスクを一覧表示された順序で実行します。 この記事の残りの部分では、各タスクの詳細な手順を説明するか、プロセスの各ステップの詳細情報にリンクします。
   
-**Azure および Microsoft FastTrack では、次の情報を使用します。**
+**Azure と Microsoft のFastTrack。**
   
 これらのタスクのほとんどを完了するには、リモートでユーザーに接続Azure PowerShell。 最適な結果を得る場合は、バージョン 4.4.0 以降のバージョンを使用Azure PowerShell。
   
@@ -70,7 +70,7 @@ Office 365 E5、Microsoft 365 E5、Microsoft 365 E5 Compliance、Microsoft 365 E
 
 - [各 Azure Key Vault キーの URI を取得する](#obtain-the-uri-for-each-azure-key-vault-key)
   
-## <a name="complete-tasks-in-azure-key-vault-and-microsoft-fasttrack-for-customer-key"></a>Azure Key Vault および Microsoft FastTrack for Customer Key のタスクを完了する
+## <a name="complete-tasks-in-azure-key-vault-and-microsoft-fasttrack-for-customer-key"></a>Azure Key Vault と Microsoft FastTrackのタスクを完了する
 
 Azure Key Vault でこれらのタスクを実行します。 顧客キーで使用するすべての DEP に対して、以下の手順を実行する必要があります。
   
@@ -85,13 +85,13 @@ Azure Key Vault でこれらのタスクを実行します。 顧客キーで使
   
 ### <a name="submit-a-request-to-activate-customer-key-for-office-365"></a>顧客キーをアクティブ化する要求を送信Office 365
 
-2 つの新しい Azure サブスクリプションを作成したら、Microsoft FastTrack ポータルで適切な顧客キーオファー要求を [提出する必要があります](https://fasttrack.microsoft.com/)。 組織内の承認された指定に関してオファー フォームで行う選択は重要であり、顧客キー登録の完了に必要です。 組織内で選択された役割の役員は、顧客キーデータ暗号化ポリシーで使用されるすべてのキーを取り消して破棄する要求の信頼性を保証します。 組織で使用するカスタマー キー DEP の種類ごとに、この手順を 1 回実行する必要があります。
+2 つの新しい Azure サブスクリプションを作成したら[、Microsoft](https://fasttrack.microsoft.com/)カスタマー キー ポータルで適切な顧客キーオファー要求をFastTrackがあります。 組織内の承認された指定に関してオファー フォームで行う選択は重要であり、顧客キー登録の完了に必要です。 組織内で選択された役割の役員は、顧客キーデータ暗号化ポリシーで使用されるすべてのキーを取り消して破棄する要求の信頼性を保証します。 組織で使用するカスタマー キー DEP の種類ごとに、この手順を 1 回実行する必要があります。
 
-**FastTrack チームは顧客キーのサポートを提供しない。Office 365 FastTrack ポータルを使用してフォームを送信し、顧客キーに関する関連するオファーを追跡するのに役立ちます。FastTrack 要求を送信したら、対応する顧客キーオンボーディング チームに連絡してオンボーディング プロセスを開始します。**
+**顧客FastTrackチームは顧客キーのサポートを提供しない。Office 365は、FastTrackポータルを使用してフォームを送信し、顧客キーの関連するオファーを追跡するのに役立ちます。要求を送信したらFastTrack対応する顧客キーオンボーディング チームに連絡して、オンボーディング プロセスを開始します。**
   
 顧客キーをアクティブ化するオファーを送信するには、次の手順を実行します。
   
-1. 組織でグローバル管理者のアクセス許可を持つ仕事または学校のアカウントを使用して [、Microsoft FastTrack ポータルにサインインします](https://fasttrack.microsoft.com/)。
+1. 組織でグローバル管理者のアクセス許可を持つ仕事または学校のアカウントを使用して、Microsoft FastTrack[ポータルにサインインします](https://fasttrack.microsoft.com/)。
 
 2. ログインしたら、適切なドメインを選択します。
 
@@ -195,7 +195,7 @@ Azure Key Vault でこれらのタスクを実行します。 顧客キーで使
    Set-AzKeyVaultAccessPolicy -VaultName <vault name> -UserPrincipalName <UPN of user> -PermissionsToKeys create,import,list,get,backup,restore
    ```
 
-   次に例を示します。
+   例:
 
    ```powershell
    Set-AzKeyVaultAccessPolicy -VaultName Contoso-CK-EX-NA-VaultA1 -UserPrincipalName alice@contoso.com -PermissionsToKeys create,import,list,get,backup,restore
@@ -320,7 +320,7 @@ Backup-AzKeyVaultKey -VaultName <vault name> -Name <key name>
 > [!TIP]
 > 出力ファイルの場合は、コンテナー名とキー名の組み合わせを選択します。 これにより、ファイル名が自己記述的に作成されます。 また、バックアップ ファイル名が衝突しないことです。
   
-次に例を示します。
+例:
   
 ```powershell
 Backup-AzKeyVaultKey -VaultName Contoso-CK-EX-NA-VaultA1 -Name Contoso-CK-EX-NA-VaultA1-Key001 -OutputFile Contoso-CK-EX-NA-VaultA1-Key001-Backup-20170802.backup

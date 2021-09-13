@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4daba7a19af2b1653bd5158033b10b82935583da9e5977d3de1e31f3ef28cc71
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f7fb73cde3afa385b0d73b35610415cacd1cad81
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53902772"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213513"
 ---
 # <a name="microsoft-defender-security-center"></a>Microsoft Defender セキュリティ センター
 
@@ -41,7 +41,7 @@ Microsoft Defender セキュリティ センターは、Microsoft Defender for E
 
 トピック | 説明
 :---|:---
-作業の開始  |  最小要件、ライセンスの検証、セットアップの完了、プレビュー機能の把握、データストレージとプライバシーの理解、およびポータルへのユーザー アクセスの割り当て方法について説明します。
+開始する  |  最小要件、ライセンスの検証、セットアップの完了、プレビュー機能の把握、データストレージとプライバシーの理解、およびポータルへのユーザー アクセスの割り当て方法について説明します。
 [デバイスのオンボード](onboard-configure.md) | クライアント、サーバー、および非デバイスのオンボーディングについてWindowsします。 検出テストを実行する方法、プロキシとインターネット接続の設定を構成する方法、およびオンボードの潜在的な問題をトラブルシューティングする方法について説明します。
 [ポータルについて](use.md) | セキュリティ操作、Secure Score、および Threat analytics ダッシュボード、およびポータルを移動する方法について説明します。
 脅威の調査と修復 | アラート、デバイスを調査し、脅威を修復するために対応アクションを実行します。

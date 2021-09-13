@@ -17,11 +17,11 @@ ms.custom:
 - Ent_Solutions
 description: 複数地域および移動場所のオプションMicrosoft 365単一または複数のテナントを展開および管理します。
 ms.openlocfilehash: 5dee78835de1e3e64f52f653f52ea4f32dcf6547
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568446"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213123"
 ---
 # <a name="step-1-your-microsoft-365-for-enterprise-tenants"></a>手順 1. エンタープライズ Microsoft 365のユーザー 情報
 

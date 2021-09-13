@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: bfa1dd7966bbe3695cc99d33d47765e192ab867023c8316bb37ab0bd5ef2ef51
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 71f165611f59c45dd2c6d8fa5a5980264c03ba21
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53852417"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191811"
 ---
 # <a name="payment-information-for-france"></a>フランスの支払い情報
 
