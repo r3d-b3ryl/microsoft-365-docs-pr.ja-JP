@@ -23,11 +23,11 @@ search.appverid:
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: この記事では、Azure ExpressRoute ルーティング要件、回線、およびルーティング ドメインについて説明します。Office 365。
 ms.openlocfilehash: d157515f60a68a46b033571a0fd39e6a5711b884
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575830"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215694"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Office 365 向け ExpressRoute でのルーティング
 

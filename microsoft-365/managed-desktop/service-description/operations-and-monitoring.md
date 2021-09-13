@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 3b3ac3be5ac9d0944303d4e43bbb7b352d7e03497b6807752ee19b9c32f881ff
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: dab1d8befaa0d32118f3fea350037ed8b91aadf3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53834613"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215293"
 ---
 # <a name="microsoft-managed-desktop-operations-and-monitoring"></a>Microsoft マネージド デスクトップ操作と監視
 
@@ -71,7 +71,7 @@ Microsoft と顧客の間で変更プロセスを共有する方法の概要を�
 
 オンプレミス製品の場合、組織はセットアップ、および構成と運用のアクティビティを管理する責任を負います。
 
-カテゴリ | Microsoft は、 | お客様は、
+Categories | Microsoft は、 | お客様は、
 --- | --- | ---
 ネットワーク (プロキシ、パケット 検査、VPN)  | ビジネス ユーザーに対するリスクを最小限に抑えるために、お客様にアドバイスを提供し、計画します。 | - Microsoft が確認する構成の詳細、スコープ、タイムライン、その他の関連する詳細など、計画された構成変更に関する情報を要求するサポート要求を作成します。<br>- 変更を適用できるのは、Microsoft マネージド デスクトップ評価およびアドバイスを受け取った場合のみです。
 サービス アカウント |- 資格情報を実装、安全に保存、管理します。<br> - これらの資格情報の不正なアクセスまたは使用をセキュリティ運用チームに伝えます。 | - Microsoft が確認する構成の詳細、スコープ、タイムライン、その他の関連する詳細など、計画された構成変更に関する情報を要求するサポート要求を作成します。<br>- 変更を適用できるのは、Microsoft マネージド デスクトップ評価およびアドバイスを受け取った場合のみです。<br>- ポリシー、多要素認証、条件付きアクセス、またはアプリケーションの展開をサービス アカウントに割り当Microsoft マネージド デスクトップしない。<br>- パスワードをリセットしないか、資格情報を使用しない。<br>- これらのサービス アカウントに関連する Intune または Azure 監査ログで疑Microsoft マネージド デスクトップアクティビティが観察された場合は、Sev C サポート要求を開き、これらの操作を実行します。

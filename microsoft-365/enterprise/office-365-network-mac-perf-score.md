@@ -15,11 +15,11 @@ ms.collection:
 - Strat_O365_Enterprise
 description: Microsoft 365ネットワーク評価
 ms.openlocfilehash: 00ce0bb2f0f6b93df9f0eeb8e8bd63629edae9d7
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574702"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215784"
 ---
 # <a name="microsoft-365-network-assessment"></a>Microsoft 365ネットワーク評価
 

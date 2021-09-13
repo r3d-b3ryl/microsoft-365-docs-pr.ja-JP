@@ -21,11 +21,11 @@ ms.custom:
 - seo-marvel-apr2020
 description: 電子情報開示の重複検索結果を削除して、電子メール メッセージの 1 つのコピーのみをエクスポートする方法について説明します。
 ms.openlocfilehash: 67c856d9f245e3856ba1bd4f3ac1942391dab8fa
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570259"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213904"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>電子情報開示検索結果での重複排除
 

@@ -18,11 +18,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 4ea6519f18f91a6905e8fa3372aec2b2014b18ac
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400429"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214944"
 ---
 # <a name="create-indicators"></a>インジケーターの作成
 

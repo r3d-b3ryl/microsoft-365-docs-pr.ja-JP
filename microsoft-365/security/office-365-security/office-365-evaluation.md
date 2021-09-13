@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender のセキュリティ評価Office 365
+title: Microsoft Defender for Office 365 を評価する
 description: 評価モードOffice 365 Defender は、マルウェアなどのOffice 365をログに記録するが、メッセージに対して動作しない電子メール ポリシー用の Defender を作成します。
 keywords: 評価Office 365、Microsoft Defender for Office 365、office 365 評価、try office 365、Microsoft Defender、Microsoft Defender for Endpoint
 f1.keywords:
@@ -20,13 +20,13 @@ ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 908165ac4e86fe96d101644f70d0bf31047d5e5f
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258491"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214333"
 ---
-# <a name="evaluate-microsoft-defender-for-office-365"></a>Microsoft Defender のセキュリティ評価Office 365
+# <a name="evaluate-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 を評価する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -61,7 +61,7 @@ microsoft Defender for Office 365 をサポートするライセンスをまだ�
 - アクションのレポートの分析
 - 評価結果の提示
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>開始する前に
 
 ### <a name="licensing"></a>ライセンス
 
@@ -147,11 +147,11 @@ Microsoft Defender for the microsoft Defender for Office 365評価セットア�
 - **メール&コラボレーション** \>**ポリシー&ルール** \>**脅威ポリシー** ( <https://security.microsoft.com/threatpolicy> )
 - **レポート** \>**メール&コラボレーション** \>**メール&コラボレーション レポート**( <https://security.microsoft.com/emailandcollabreport> )
 
-## <a name="setting-up-the-evaluation"></a>評価のセットアップ
+## <a name="setting-up-the-evaluation"></a>評価の設定
 
 評価のセットアップ フローを開始すると、2 つのルーティング オプションが提供されます。 組織のメール ルーティングのセットアップと評価のニーズに応じて、サード パーティまたはオンプレミスのサービス プロバイダーを使用しているか、または Microsoft Exchange Online のみを使用しているかを選択できます。
 
-- サード パーティのパートナーまたはオンプレミス サービス プロバイダーを使用している場合は、ドロップダウン メニューからベンダーの名前を選択する必要があります。 他のコネクタ関連の詳細を指定します。
+- サード パーティのパートナーまたはオンプレミス サービス プロバイダーを使用している場合は、ドロップダウン メニューからベンダーの名前を選択する必要があります。 その他のコネクター関連の詳細を入力します。
 
 - MX レコードMicrosoft Exchange Online Microsoft をポイントし、ユーザーがメールボックスを持っている場合は、[Exchange Online] を選択します。
 

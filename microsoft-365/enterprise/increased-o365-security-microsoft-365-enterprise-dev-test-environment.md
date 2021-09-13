@@ -11,15 +11,17 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ms.custom: Ent_TLGs
+ms.custom:
+- Ent_TLGs
+- admindeeplinkMAC
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: このテスト ラボ ガイドを使用して、エンタープライズ テスト環境Microsoft 365セキュリティ設定Microsoft 365を有効にします。
-ms.openlocfilehash: 08b1db95a35debfa465d57d30ab0a8a2bd9f9732
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 7598ade331ae340ede52f4c47375aebba792eb84
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567906"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216003"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-for-enterprise-test-environment"></a>エンタープライズ テストMicrosoft 365のセキュリティMicrosoft 365強化
 
@@ -49,7 +51,7 @@ ms.locfileid: "58567906"
 
 最新の認証をサポートしていないアプリには、ID とデバイス アクセス構成を適用できません。これは、Microsoft 365 サブスクリプションとそのデジタル資産をセキュリティ保護する重要な要素です。 [](../security/office-365-security/microsoft-365-policies-configurations.md) 
 
-1. [テスト ラボ] Microsoft 365 管理センター ( ) に移動し、グローバル管理者アカウントMicrosoft 365テスト ラボ サブスクリプション [https://portal.microsoft.com](https://portal.microsoft.com) にサインインします。
+1. [管理者] に<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>し、グローバル管理者アカウントMicrosoft 365テスト ラボ サブスクリプションにサインインします。
     
   - 軽量のテスト環境を使用しているMicrosoft 365ローカル コンピューターからサインインします。
     
@@ -107,7 +109,7 @@ Microsoft 365 の脅威管理は、組織のデータへのモバイル デバ�
 
 Microsoft Secure Score は、サブスクリプションで利用可能な機能に対する現在のレベルを示す、セキュリティの姿勢を数値で示します。 また、スコアを向上させるために実行できる改善アクションの一覧も表示されます。
 
-1. ブラウザーで新しいタブを作成し、セキュリティ センターのMicrosoft 365に移動し、[セキュリティで [保護](https://security.microsoft.com/)されたスコア] を **クリックします**。
+1. ブラウザーで新しいタブを作成し、セキュリティ センターのMicrosoft 365 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">に</a>移動し、[スコアのセキュリティ保護]**をクリックします**。
 2. [概要 **] タブ**  で、現在の Secure Score と、それがグローバル平均とサブスクリプションと同じ数のライセンスと比較する方法をメモします。
 3. [改善アクション **] タブ** で、スコアを上げするために実行できるアクションの一覧を確認します。
 
@@ -121,6 +123,6 @@ Microsoft Secure Score は、サブスクリプションで利用可能な機能
 
 [Microsoft 365 Enterprise のテスト ラボ ガイド](m365-enterprise-test-lab-guides.md)
 
-[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
+[Microsoft 365 for Enterprise の概要](microsoft-365-overview.md)
 
 [Microsoft 365 for enterprise のドキュメント](/microsoft-365-enterprise/)

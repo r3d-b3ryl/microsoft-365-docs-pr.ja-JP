@@ -20,11 +20,11 @@ search.appverid:
 - MET150
 description: SharePoint Online サービス エンドポイントへの呼び出し数を制限することにより、SharePoint Onlineで最新および従来の発行サイト ページを最適化する方法を学びます。
 ms.openlocfilehash: 7c3872e0860b089f52d9597a06bced71ea6eb523
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573597"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215834"
 ---
 # <a name="optimize-page-calls-in-sharepoint-online-modern-and-classic-publishing-site-pages"></a>SharePoint Online の最新および従来の発行サイト ページでページ呼び出しを最適化する
 

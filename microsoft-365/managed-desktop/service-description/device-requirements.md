@@ -10,11 +10,11 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 ms.openlocfilehash: f51208b8376ef160fe83a41e5a2ac74eb843c2f3
-ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58372690"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215354"
 ---
 # <a name="device-requirements"></a>デバイスの要件
 

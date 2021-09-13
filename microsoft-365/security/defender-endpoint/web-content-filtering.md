@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 0a8d6ea1805d4783a9326ebd0eeed269ff5fef72
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568866"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214734"
 ---
 # <a name="web-content-filtering"></a>Web コンテンツ フィルタリング
 

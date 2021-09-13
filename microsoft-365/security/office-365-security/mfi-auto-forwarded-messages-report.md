@@ -13,11 +13,11 @@ description: 管理者は、セキュリティ コンプライアンス セン�
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 94700aa4fc08d0c462aa186a0f0847d73151a82a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574570"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214343"
 ---
 # <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>セキュリティ コンプライアンス センターでのメッセージの自動転送&分析
 
@@ -53,7 +53,7 @@ ms.locfileid: "58574570"
 
 ![[セキュリティ] コンプライアンス センターの [自動転送されたメッセージ] レポートの詳細&表示されます。](../../media/mfi-auto-forwarded-messages-details.png)
 
-## <a name="insights"></a>インサイト
+## <a name="insights"></a>分析情報
 
 レポート データに基づいて 2 つの分析情報が生成されます。
 

@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Office 365 向けに VPN スプリット トンネリングを実装する方法
-ms.openlocfilehash: 9d706de846b6206a6be8a1524da1222b1c49147b
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 36c3cfbd74dabb0cfaf305cb52fb7f69e1e1e49f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571977"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215864"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>Office 365 向け VPN スプリット トンネリングの実装
 
@@ -259,7 +259,7 @@ Teams が音声やセッション トラバーサル ユーティリティ for N
 
 ### <a name="additional-support-logs"></a>追加のサポート ログ
 
-トラブル シューティングのためにさらにデータが必要な場合、または Microsoft のサポートが必要な場合は、次の情報を集めておくと、解決策を迅速に見つけることができます。 Microsoft サポートの TSS Windows CMD ベースのユニバーサル **TroubleShooting スクリプト** ツールセットを使用すると、関連するログを簡単に収集できます。 ツールと使用手順は <https://aka.ms/TssTools.> をご参照ください。
+トラブル シューティングのためにさらにデータが必要な場合、または Microsoft のサポートが必要な場合は、次の情報を集めておくと、解決策を迅速に見つけることができます。 Microsoft サポートの TSS Windows CMD ベースのユニバーサル **TroubleShooting スクリプト** ツールセットを使用すると、関連するログを簡単に収集できます。 使用に関するツールと手順については、次のページをご覧ください <https://aka.ms/TssTools> 。
 
 ## <a name="howto-guides-for-common-vpn-platforms"></a>一般 VPN プラットフォームのHOWTO ガイド
 

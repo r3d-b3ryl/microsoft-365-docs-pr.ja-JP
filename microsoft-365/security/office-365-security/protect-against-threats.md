@@ -20,12 +20,12 @@ description: 管理者は、組織の脅威保護Microsoft 365、組織で使用
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 69f36a26792d37f66fca46ec7905be89483c61f6
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 06f87213131f8fccdd9cfd83d7bdf4ead10c0667
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568074"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214283"
 ---
 # <a name="protect-against-threats"></a>脅威から保護する
 
@@ -75,7 +75,7 @@ ms.locfileid: "58568074"
 |役割または役割グループ|詳細については、次の情報を参照してください。|
 |---|---|
 |グローバル管理者|[Microsoft 365 管理者ロールについて](../../admin/add-users/about-admin-roles.md)|
-|セキュリティ管理者|[Azure Active Directory での管理者役割のアクセス許可](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
+|セキュリティ管理者|[Azure AD組み込みロール](/azure/active-directory/roles/permissions-reference#security-administrator)
 |Exchange Online 組織の管理|[Exchange Online のアクセス許可](/exchange/permissions-exo/permissions-exo)|
 |
 
@@ -306,7 +306,7 @@ SharePoint Online または OneDrive for Business のファイルが悪意のあ
    完了したら、[次へ] を **クリックします。**
 
 5. [受信者 **の設定] ページで** 、次の設定を構成します。
-   - **電子メール通知の送信**: この設定が selcted を確認します。
+   - **電子メール通知の送信**: この設定が選択されているのを確認します。
    - **電子メール受信者**: 悪意のあるファイルが検出された場合に通知を受け取る必要がある 1 つ以上のグローバル管理者、セキュリティ管理者、またはセキュリティ リーダーを選択します。
    - **1 日の通知の** 制限 : **[制限なし] が** 選択されているを確認します。
 

@@ -17,11 +17,11 @@ f1.keywords: NOCSH
 recommendations: false
 description: グループ、グループ、グループ、Microsoft 365間のTeams操作についてSharePoint
 ms.openlocfilehash: 391ee9dcf5837f149a592511d1e189549a340236
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568218"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214223"
 ---
 # <a name="settings-interactions-between-microsoft-365-groups-teams-and-sharepoint"></a>Microsoft 365 グループ、Teams、および SharePoint の間の設定の相互作用
 

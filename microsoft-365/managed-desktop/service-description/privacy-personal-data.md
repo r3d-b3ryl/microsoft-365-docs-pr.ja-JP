@@ -13,11 +13,11 @@ ms.topic: article
 audience: Admin, ITPro
 ms.localizationpriority: normal
 ms.openlocfilehash: f8c27f5776c41376abd6f9c0e412480e02bab217
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58503217"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215283"
 ---
 # <a name="overview"></a>概要
 

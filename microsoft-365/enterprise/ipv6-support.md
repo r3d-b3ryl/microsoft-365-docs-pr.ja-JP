@@ -19,11 +19,11 @@ search.appverid:
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
 description: '概要: IPv6 のサポートについて、Microsoft 365および政府機関のMicrosoft 365説明します。'
 ms.openlocfilehash: be9ce7cc2eaaec74889e9d88ddfa9b781c6d308e
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58863400"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215964"
 ---
 # <a name="ipv6-support-in-microsoft-365-services"></a>Microsoft 365 サービスの IPv6 サポート
 

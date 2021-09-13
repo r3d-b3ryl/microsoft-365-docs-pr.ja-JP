@@ -21,11 +21,11 @@ ms.custom:
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
 description: PowerShell を使用して、以前にユーザーに割り当Microsoft 365ライセンスを削除する方法について説明します。
 ms.openlocfilehash: e798eaaf18c39a026c5a2d5f5861689e5ddd3953
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58355906"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215743"
 ---
 # <a name="remove-microsoft-365-licenses-from-user-accounts-with-powershell"></a>PowerShell Microsoft 365アカウントからユーザー ライセンスを削除する
 

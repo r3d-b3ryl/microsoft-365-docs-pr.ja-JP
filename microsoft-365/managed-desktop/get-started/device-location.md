@@ -13,11 +13,11 @@ manager: laurawi
 ms.topic: article
 audience: Admin
 ms.openlocfilehash: 2f1318b2c062e3db848b60edbb9ad60e1b38723f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573573"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215473"
 ---
 # <a name="windows-10-location-service"></a>Windows 10 の位置情報サービス
 

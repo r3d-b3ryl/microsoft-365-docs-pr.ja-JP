@@ -21,11 +21,11 @@ description: Microsoft 365 で利用可能なツールを使用して、侵害�
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 193afd61509b7361ac18dd32d827182752fb61ed
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563344"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214244"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>侵害された電子メール アカウントへの対応
 

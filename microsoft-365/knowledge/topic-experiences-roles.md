@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: ビバ トピックのユーザー ロールについて説明します。
-ms.openlocfilehash: d09a0e976bd403ffc13be5af5e011451763f44dcca9820f2c448c310cc8fc36d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e26f47e5826ac6db6c41e1b0648dd23398f51c43
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53840145"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215613"
 ---
 # <a name="roles-in-microsoft-viva-topics"></a>ユーザーの役割Microsoft Viva トピック
 

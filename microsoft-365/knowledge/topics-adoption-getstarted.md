@@ -12,11 +12,11 @@ ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
 ms.openlocfilehash: a8e95586dc5e3d2da2cbd6ace9369e4b2d17afed
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58863388"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215584"
 ---
 # <a name="get-started-driving-adoption-of-microsoft-viva-topics"></a>ユーザーの導入を促進するMicrosoft Viva トピック
 

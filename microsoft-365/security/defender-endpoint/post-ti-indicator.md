@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 4ab36313b25ab61ece35041f7cc6de1064465ecb
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58747609"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214823"
 ---
 # <a name="submit-or-update-indicator-api"></a>インジケーター API の送信または更新
 
@@ -57,7 +57,7 @@ IPs の CIDR 表記はサポートされていません。
 :---|:---|:---
 アプリケーション|Ti.ReadWrite|'読み取りおよび書き込みインジケーター'
 アプリケーション|Ti.ReadWrite.All|'すべてのインジケーターの読み取りと書き込み'
-委任 (職場または学校のアカウント)|Ti.ReadWrite|'読み取りおよび書き込みインジケーター'
+委任 (職場または学校アカウント)|Ti.ReadWrite|'読み取りおよび書き込みインジケーター'
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -67,23 +67,23 @@ POST https://api.securitycenter.microsoft.com/api/indicators
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
-Authorization|String|ベアラー {token}。 **必須**
+Authorization|文字列|ベアラー {token}。 **必須**
 Content-Type|string|application/json. **必須**
 
 ## <a name="request-body"></a>要求本文
 
 要求本文で、JSON オブジェクトに次のパラメーターを指定します。
 
-パラメーター|種類|説明
+パラメーター|型|説明
 :---|:---|:---
-indicatorValue|String|Indicator エンティティ [の](ti-indicator.md) ID。 **必須**
+indicatorValue|文字列|Indicator エンティティ [の](ti-indicator.md) ID。 **必須**
 indicatorType|列挙|インジケーターの種類。 指定できる値は、"FileSha1"、"FileMd5"、"CertificateThumbprint"、"FileSha256"、"IpAddress"、"DomainName"、"Url" です。 **必須**
 action|列挙|インジケーターが組織内で検出される場合に実行されるアクション。 指定できる値は、"Alert"、"Warn"、"Block"、"Audit"、"BlockAndRemediate"、"AlertAndBlock"、"Allowed" です。 **必須**
 アプリケーション|String|インジケーターに関連付けられているアプリケーション。 このフィールドは、新しいインジケーターでのみ機能します。 既存のインジケーターの値は更新されない。 **Optional**
 title|String|インジケーターアラートのタイトル。 **必須**
-説明|String|インジケーターの説明。 **必須**
+description|String|インジケーターの説明。 **必須**
 expirationTime|DateTimeOffset|インジケーターの有効期限。 **Optional**
 severity|列挙|インジケーターの重大度。 指定できる値は、"Informational"、"Low"、"Medium"、"High" です。 **Optional**
 recommendedActions|String|TI インジケーターアラート推奨アクション。 **Optional**

@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 3dd3f072ef041b20acd470727e90ab705e9ed72450bb46c8c56d89dc729e84e2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1245268b6128aa022a972fd0282009573558ec47
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863813"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215204"
 ---
 # <a name="configurable-settings-reference---microsoft-managed-desktop"></a>構成可能な設定リファレンス - Microsoft マネージド デスクトップ
 
@@ -23,7 +23,7 @@ ms.locfileid: "53863813"
 ## <a name="desktop-background-picture"></a>デスクトップの背景画像
 組織内のデバイスのデスクトップの背景画像Microsoft マネージド デスクトップカスタマイズできます。 これを使用して、会社のブランドまたはマーケティング 資料を適用できます。 
 
-### <a name="requirements"></a>Requirements
+### <a name="requirements"></a>要件
 
 デスクトップの背景画像では、次の要件を満たす必要があります。
 - ピクチャ ファイル形式 - .jpg、jpeg、または .png
@@ -42,7 +42,7 @@ ms.locfileid: "53863813"
 ## <a name="browser-start-pages"></a>ブラウザーの開始ページ
 ブラウザーのスタート ページは、ユーザーがページを開始するときに個々のタブMicrosoft Edge。 ユーザーが頻繁に使用する一連のサイトを簡単に開く場合は、サイトごとにブラウザーの開始ページを追加します。 
 
-### <a name="requirements"></a>Requirements
+### <a name="requirements"></a>要件
 
 ブラウザーのスタート ページにイントラネットまたはインターネット サイトの完全修飾ドメイン名 (FQDN) を指定する必要があります。 内部サイトが構成されている場合、これらのサイトへのアクセスは、社内ネットワークに接続されている場合、または VPN 接続に接続されている場合にのみ許可されていることをユーザーに知らせて下さい。 
 
@@ -63,7 +63,7 @@ Microsoft Edge との互換性に問題がある特定の Web サイトやアプ
 
 エンタープライズ モード サイト一覧 https:// ホストしている内部共有の場所、または場所を指定できます。 
 
-### <a name="requirements"></a>Requirements
+### <a name="requirements"></a>要件
 
 エンタープライズ モードのサイト 一覧ファイルでは、次の要件を満たす必要があります。
 - ファイル形式 - ファイル要件を満たす [XML ファイル](/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode#site-list-xml-file)
@@ -94,7 +94,7 @@ Microsoft Edge との互換性に問題がある特定の Web サイトやアプ
 - ゾーン 3 – インターネット ゾーン
 - ゾーン 4 – 制限付きサイト ゾーン
 
-### <a name="requirements"></a>Requirements
+### <a name="requirements"></a>要件
 
 信頼済みサイトごとにイントラネットまたはインターネット サイトの完全修飾ドメイン名 (FQDN) を指定します。 
 
@@ -126,7 +126,7 @@ Microsoft Edge との互換性に問題がある特定の Web サイトやアプ
 > [!NOTE]
 > 既定のプロキシ例外リストの更新は、常に顧客の展開よりも優先されます。 つまり、既定のプロキシ例外リストの展開がある場合、ステージ展開は一時停止されます。  
 
-### <a name="requirements"></a>Requirements
+### <a name="requirements"></a>要件
 
 プロキシ サーバーとプロキシ サイトの例外に対して、次の要件を満たす必要があります。
 - 有効なサーバー アドレスとポート番号である必要があります

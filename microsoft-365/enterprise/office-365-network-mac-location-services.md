@@ -13,17 +13,18 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+ms.custom: admindeeplinkMAC
 description: Microsoft 365ネットワーク接続位置情報サービス
-ms.openlocfilehash: 0aff9ca565d4e79ddbf7df723e7c102c0db92422015b722327029be12bdb2934
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 025a4a158378335271ac50e6cd8199d2b9f36106
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53858473"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215803"
 ---
 # <a name="microsoft-365-network-connectivity-location-services"></a>Microsoft 365ネットワーク接続位置情報サービス
 
-[Microsoft 365 管理 センターには、インサイトテナントから収集されたライブ パフォーマンス指標であるネットワーク のパフォーマンスとパフォーマンスの推奨事項Microsoft 365表示されます。 これらの指標は、テナントの管理ユーザーだけが表示できます。 組織のネットワーク接続は、インターネットへのネットワーク出力場所を介して、オフィスの場所ごとに設計されています。 Microsoft 365接続では、そのルートを使用し、インターネットを通して Microsoft サービスのフロント ドア サーバーに接続します。 これらのネットワークインサイトを表示するには、オフィスの場所を特定する必要があります。
+この <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター、</a>ネットワーク **インサイトと** パフォーマンスに関する推奨事項が表示されます。これは、テナントから収集されるライブ パフォーマンスMicrosoft 365です。 これらの指標は、テナントの管理ユーザーだけが表示できます。 組織のネットワーク接続は、インターネットへのネットワーク出力場所を介して、オフィスの場所ごとに設計されています。 Microsoft 365接続では、そのルートを使用し、インターネットを通して Microsoft サービスのフロント ドア サーバーに接続します。 これらのネットワークインサイトを表示するには、オフィスの場所を特定する必要があります。
 
 ## <a name="location-in-network-measurements"></a>ネットワーク測定値の場所
 
@@ -31,15 +32,15 @@ ms.locfileid: "53858473"
 
 ## <a name="location-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理 センターの場所
 
-サイト センター Microsoft 365 管理、Bingマップ コントロールを使用して、組織のオフィスの場所を表示します。 コントロールには、選択したオフィスの場所のネットワーク境界トポロジも表示されます。 管理者がオフィスの場所に特定の住所の詳細を追加すると、Bing地図を提案してデータ入力を容易にするためにも使用されます。
+このページ<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター、Bing</a>マップ コントロールを使用して、組織のオフィスの場所を表示します。 コントロールには、選択したオフィスの場所のネットワーク境界トポロジも表示されます。 管理者がオフィスの場所に特定の住所の詳細を追加すると、Bing地図を提案してデータ入力を容易にするためにも使用されます。
 
 ## <a name="terms-of-use"></a>使用条件
 
-ジオコードを含むBing地図提供されるコンテンツは、コンテンツが提供される製品内でのみ使用できます。 Bing地図 を利用した Microsoft 365 管理 センターの位置情報サービス機能の使用は、Bing地図 End-User で利用可能な _Bing地図 End-User_ 利用規約と Microsoft プライバシーに関する声明によって <https://go.microsoft.com/?linkid=9710837> [管理されます](https://go.microsoft.com/fwlink/?LinkID=248686)。
+ジオコードを含むBing地図提供されるコンテンツは、コンテンツが提供される製品内でのみ使用できます。 Bing地図 を利用した <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a> Location Services 機能の使用は、Bing地図 End-User で利用可能な _Bing地図 End-User_ 利用規約および Microsoft プライバシーに関する声明によって <https://go.microsoft.com/?linkid=9710837> [管理されます](https://go.microsoft.com/fwlink/?LinkID=248686)。
 
 この機能は **、tomTom** Bing地図によって提供されます。 TomTom の製品とサービスの詳細については、以下を参照してください [https://www.tomtom.com/legal](https://www.tomtom.com/legal) 。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [Microsoft 365 管理 センターのネットワーク接続 (プレビュー)](office-365-network-mac-perf-overview.md)
 

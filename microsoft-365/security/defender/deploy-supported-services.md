@@ -23,11 +23,11 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.openlocfilehash: 4a3aac06f19c7ed86af67f3b72bac8bf367628a8
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258464"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214564"
 ---
 # <a name="deploy-supported-services"></a>サポートされているサービスを展開する
 
@@ -55,7 +55,7 @@ E5 Microsoft 365 E5、A5、または A5 のセキュリティ ライセンス、
 Microsoft 365 Defenderサポートされているサービスを展開する場合、より良い可視性、相関関係、および修復が提供されます。
 
 ### <a name="benefits-of-full-deployment"></a>完全展開の利点
-このサービスの完全な利点を得Microsoft 365 Defenderサポートされているサービスを展開することをお勧めします。 完全展開の主な利点を次に示します。
+このサービスの完全な利点を得Microsoft 365 Defenderサポートされているサービスを展開することをお勧めします。 ここでは、完全な展開の主なメリットをご紹介します。
 - インシデントは、使用可能なすべてのセンサーとサービス固有の分析機能からのアラートとイベント信号に基づいて識別され、関連付けされます。
 - 自動調査と修復 (AIR) プレイブックは、デバイス、メールボックス、ユーザー アカウントなど、さまざまなエンティティの種類に適用されます。
 - デバイス、メールボックス、その他のエンティティからのイベントおよびエンティティ データに対して、より包括的な高度なハンティング スキーマを照会できます。
@@ -73,14 +73,14 @@ Microsoft 365 Defenderサポートされているサービスを展開する場�
 | Microsoft Cloud App Security | - 非許可のクラウド アプリとサービスの検出 (シャドウ IT)<br />- クラウド アプリへのデータの露出<br />- クラウド アプリに関連付けられた脅威アクティビティ | クラウド アプリ |
 
 ## <a name="deploy-the-services"></a>サービスの展開
-通常、各サービスを展開するには、テナントへのプロビジョニングと初期構成が必要です。 これらの各サービスの展開方法については、次の表を参照してください。
+各サービスを展開するには、通常、テナントへの事前設定といくつかの初期構成が必要です。 これらの各サービスの展開方法については、次の表を参照してください。
 
-| サービス | プロビジョニング手順 | 初期構成 |
+| サービス | 事前設定の手順 | 初期構成 |
 | ------ | ------ | ------ |
-| Microsoft Defender for Endpoint | [Microsoft Defender for Endpoint 展開ガイド](../defender-endpoint/deployment-phases.md) | *「プロビジョニングの手順」を参照してください。* |
-|Microsoft Defender for Office 365 | *None、プロビジョニングは、Office 365* | [Microsoft Defender for Office 365 のポリシーを構成する](/microsoft-365/security/office-365-security/defender-for-office-365#configure-atp-policies) |
-| Microsoft Defender for Identity | [クイック スタート: Microsoft Defender for Identity インスタンスを作成する](/azure-advanced-threat-protection/install-atp-step1) | *「プロビジョニングの手順」を参照してください。* |
-| Microsoft Cloud App Security | *なし* | [クイック スタート: クイック スタートMicrosoft Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security) |
+| Microsoft Defender for Endpoint | [Microsoft Defender for Endpoint 展開ガイド](../defender-endpoint/deployment-phases.md) | *事前設定の手順を確認する* |
+|Microsoft Defender for Office 365 | *なし、Office 365 で事前設定済み* | [Microsoft Defender for Office 365 のポリシーを構成する](/microsoft-365/security/office-365-security/defender-for-office-365#configure-atp-policies) |
+| Microsoft Defender for Identity | [クイックスタート: Microsoft Defender for Identity インスタンスを作成する](/azure-advanced-threat-protection/install-atp-step1) | *事前設定の手順を確認する* |
+| Microsoft Cloud App Security | *なし* | [クイックスタート: Microsoft Cloud App Security の使用を開始する](/cloud-app-security/getting-started-with-cloud-app-security) |
 
 サポートされているサービスを展開したら、[次の](m365d-enable.md)Microsoft 365 Defender。
 

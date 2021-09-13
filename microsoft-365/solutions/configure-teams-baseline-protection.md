@@ -20,11 +20,11 @@ ms.custom:
 recommendations: false
 description: ベースライン レベルの保護を使用してチームを展開する方法について説明します。
 ms.openlocfilehash: 24bdb7a5d5f4c124365a6b5b7cdc67d53adf8278
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575698"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214233"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>ベースライン保護を使用してチームを構成する
 

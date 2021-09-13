@@ -22,11 +22,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: bb0633145ab1a1ac97e77b7b319e8defeb06e309
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570439"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214543"
 ---
 # <a name="evaluate-and-pilot-microsoft-365-defender"></a>評価とパイロットMicrosoft 365 Defender
 
@@ -63,7 +63,7 @@ Microsoft 365 Defenderは、これらのセキュリティ テクノロジで構
 
 |コンポーネント  |説明  |参考資料  |
 |---------|---------|---------|
-|Microsoft Defender for Identity     |      Microsoft Defender for Identity は、Active Directory シグナルを使用して、組織に向けられた高度な脅威、侵害された ID、悪意のあるインサイダーアクションを特定、検出、および調査します。     |     [Microsoft Defender for Identity とは](/defender-for-identity/what-is)   |
+|Microsoft Defender for Identity     |      Microsoft Defender for Identity は、Active Directory シグナルを使用して、組織に向けられた高度な脅威、侵害された ID、悪意のあるインサイダーアクションを特定、検出、および調査します。     |     [Microsoft Defender for Identity とは?](/defender-for-identity/what-is)   |
 |Exchange Online Protection     |      Exchange Online Protectionは、スパムやマルウェアから組織を保護するのに役立つネイティブのクラウドベースの SMTP リレーおよびフィルター サービスです。      |   [Exchange Online Protection (EOP) の概要 - Office 365](../office-365-security/overview.md)     |
 |Microsoft Defender for Office 365     |     Microsoft Defender for Office 365、電子メール メッセージ、リンク (URL)、およびコラボレーション ツールによる悪意のある脅威から組織を保護します。      |    [Microsoft Defender for Office 365 - Office 365](../office-365-security/overview.md)    |
 |Microsoft Defender for Endpoint     |     Microsoft Defender for Endpoint は、デバイス保護、侵害後の検出、自動調査、推奨される対応のための統合プラットフォームです。      |   [Microsoft Defender for Endpoint - Windows セキュリティ](../defender-endpoint/microsoft-defender-endpoint.md)    |
@@ -101,8 +101,8 @@ Microsoft 365 Defenderは、これらのセキュリティ テクノロジで構
 |      |手順  |説明  |
 |------|---------|---------|
 |1     | [評価環境の作成](eval-create-eval-environment.md)       |この手順を実行すると、ライセンスの試用版Microsoft 365 Defender。         |
-|2      | [Id の Defender を有効にする](eval-defender-identity-overview.md)        | アーキテクチャ要件を確認し、評価を有効にし、さまざまな攻撃の種類を特定して修復するためのチュートリアルを説明します。   |
-|3      | [[Defender for Office 365](eval-defender-office-365-overview.md)       | アーキテクチャ要件を満たしていることを確認し、評価を有効にしてから、パイロット環境を作成します。 このコンポーネントには、Exchange Online Protectionが含まれるので、ここで両方を実際に *評価* します。      |
+|2     | [Id の Defender を有効にする](eval-defender-identity-overview.md)        | アーキテクチャ要件を確認し、評価を有効にし、さまざまな攻撃の種類を特定して修復するためのチュートリアルを説明します。   |
+|3     | [[Defender for Office 365](eval-defender-office-365-overview.md)       | アーキテクチャ要件を満たしていることを確認し、評価を有効にしてから、パイロット環境を作成します。 このコンポーネントには、Exchange Online Protectionが含まれるので、ここで両方を実際に *評価* します。      |
 |4      | [エンドポイントの Defender を有効にする ](eval-defender-endpoint-overview.md)       | アーキテクチャ要件を満たしていることを確認し、評価を有効にしてから、パイロット環境を作成します。         |
 |5      | [[有効Microsoft Cloud App Security](eval-defender-mcas-overview.md)        |  アーキテクチャ要件を満たしていることを確認し、評価を有効にしてから、パイロット環境を作成します。        |
 |6      | [脅威の調査と対応](eval-defender-investigate-respond.md)        |   攻撃をシミュレートし、インシデント対応機能の使用を開始します。      |

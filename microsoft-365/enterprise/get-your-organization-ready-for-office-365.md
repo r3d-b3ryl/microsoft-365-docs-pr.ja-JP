@@ -23,11 +23,11 @@ search.appverid:
 ms.assetid: 712fced7-f9d0-4fde-8b79-286262a5d0bc
 description: この記事では、展開を計画するためのチェックリストと他のリソースMicrosoft 365 Enterpriseします。
 ms.openlocfilehash: e914d5ea5f145197e348fd88fe7cf2b287a883f8
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356734"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216064"
 ---
 # <a name="plan-for-microsoft-365-enterprise"></a>計画を立Microsoft 365 Enterprise
 

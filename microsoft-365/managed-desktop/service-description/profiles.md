@@ -13,11 +13,11 @@ manager: laurawi
 ms.topic: article
 audience: Admin
 ms.openlocfilehash: e1806a0a21dc5f3fc300442f31da5016ffcf99e7
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567378"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215273"
 ---
 # <a name="device-profiles"></a>デバイス プロファイル
 
@@ -59,7 +59,7 @@ ms.locfileid: "58567378"
 |**デバイスの管理者**|いいえ|はい|いいえ|
 |**Autopilot プロファイル**|MMD 標準|MMD Power User|MMD 標準|
 |**AppLocker**|はい|いいえ|いいえ|
-|**パブリック ストアのブロック**|はい|はい|いいえ|
+|**パブリック ストアのブロック**|はい|はい|なし|
 |
 
 各デバイス プロファイルには、次の項目も含まれます。

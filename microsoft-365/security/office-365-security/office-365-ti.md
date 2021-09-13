@@ -21,12 +21,12 @@ ms.custom:
 description: Microsoft Defender for Office 365プランの脅威調査と対応機能について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a3af6aec423fd77dc04954974be05d3e299279e2
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 2e6a237295a979797cd8884d07d1afe8e284cace
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572853"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214324"
 ---
 # <a name="threat-investigation-and-response"></a>脅威の調査および対応
 
@@ -100,13 +100,13 @@ Microsoft Defender for Office 365ロール ベースのアクセス制御を使�
 > セキュリティ管理者などの一部の役割は、Microsoft 365 Defender ポータルで割り当てることができますが、代わりに、Microsoft 365 管理センターまたはAzure Active Directory使用してください。 役割、役割グループ、およびアクセス許可の詳細については、次のリソースを参照してください。
 >
 > - [Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)
-> - [Azure Active Directory での管理者ロールのアクセス許可](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
+> - [Azure AD組み込みロール](/azure/active-directory/roles/permissions-reference)
 
 <br>
 
 ****
 
-|アクティビティ|ロールと権限|
+|最新情報|ロールと権限|
 |---|---|
 |[脅威の管理&管理] ダッシュボード (または新しい[セキュリティ ダッシュボード) を使用する](security-dashboard.md) <p> 最近または現在の脅威に関する情報を表示する|以下のいずれか: <ul><li>**グローバル管理者**</li><li>**セキュリティ管理者**</li><li>**セキュリティ閲覧者**</li></ul> <p> これらの役割は、Azure Active Directory ( ) または <https://portal.azure.com> Microsoft 365 管理センター ( ) で割り当てることができます <https://admin.microsoft.com> 。|
 |エクスプローラー [(およびリアルタイムの検出) を使用して](threat-explorer.md) 脅威を分析する|以下のいずれか: <ul><li>**グローバル管理者**</li><li>**セキュリティ管理者**</li><li>**セキュリティ閲覧者**</li></ul> <p> これらの役割は、Azure Active Directory ( ) または <https://portal.azure.com> Microsoft 365 管理センター ( ) で割り当てることができます <https://admin.microsoft.com> 。|

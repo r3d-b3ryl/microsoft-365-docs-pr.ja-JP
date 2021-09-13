@@ -21,11 +21,11 @@ description: 管理者は、Microsoft 365 E5 または Microsoft Defender for Of
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: a47f953b0c87e3ab88df45f150bd2e6d71611664
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568098"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214504"
 ---
 # <a name="attack-simulation-training-deployment-considerations-and-faq"></a>攻撃シミュレーション トレーニングの展開に関する考慮事項と FAQ
 
@@ -51,7 +51,7 @@ URL レピュテーション サービスは、攻撃シミュレーション �
 
 ### <a name="phishing-simulation-and-admin-urls-blocked-by-network-proxy-solutions-and-filter-drivers"></a>ネットワーク プロキシ ソリューションとフィルター ドライバーによってブロックされるフィッシング シミュレーションと管理 URL
 
-フィッシング シミュレーション URL と管理 URL の両方が、中間セキュリティ デバイスまたはフィルターによってブロックまたは削除される可能性があります。 次に例を示します。
+フィッシング シミュレーション URL と管理 URL の両方が、中間セキュリティ デバイスまたはフィルターによってブロックまたは削除される可能性があります。 以下に例を示します。
 
 - ファイアウォール
 - Web アプリケーション ファイアウォール (WAF) ソリューション
@@ -118,7 +118,7 @@ URL レピュテーション サービスは、攻撃シミュレーション �
 
 ### <a name="messages-reported-as-phishing-by-users-arent-appearing-in-simulation-reports"></a>ユーザーがフィッシングとして報告したメッセージがシミュレーション レポートに表示されない
 
-攻撃シミュレーター トレーニングのシミュレーション レポートでは、ユーザーのアクティビティに関する詳細を提供します。 次に例を示します。
+攻撃シミュレーター トレーニングのシミュレーション レポートでは、ユーザーのアクティビティに関する詳細を提供します。 以下に例を示します。
 
 - メッセージ内のリンクをクリックしたユーザー。
 - 資格情報を渡したユーザー。

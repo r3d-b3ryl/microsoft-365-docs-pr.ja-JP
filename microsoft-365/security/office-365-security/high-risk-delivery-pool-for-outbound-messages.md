@@ -17,12 +17,12 @@ ms.collection:
 description: 配信プールを使用して、データ センター内の電子メール サーバーの評判を保護するMicrosoft 365します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 83932fe2d24b6dd590776924d1660e2dce8b3f5c857ed002a7ce8b34871f4771
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c5881b20eaed8387988d01b69a4acd022c5924a2
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56885502"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214404"
 ---
 # <a name="outbound-delivery-pools"></a>送信方向の配信のプール
 

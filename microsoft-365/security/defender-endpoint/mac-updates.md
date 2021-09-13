@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: ae8909f2533394e347a1885f2fb1354f6ce4cfae
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58747325"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214973"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>macOS で Microsoft Defender for Endpoint の更新プログラムを展開する
 
@@ -141,8 +141,8 @@ MAU が更新プログラムを検索する方法を変更します。
 |---|---|
 |**ドメイン**|`com.microsoft.autoupdate2`|
 |**Key**|EnableCheckForUpdatesButton|
-|**データ型**|ブール型|
-|**指定可能な値**|True (既定) <p> 不正解|
+|**データ型**|Boolean|
+|**指定可能な値**|True (既定) <p> False|
 |||
 
 ### <a name="disable-insider-checkbox"></a>Insider チェック ボックスを無効にする
@@ -157,7 +157,7 @@ true に設定すると、"Insider Program.Office参加" になります。チ�
 |---|---|
 |**ドメイン**|`com.microsoft.autoupdate2`|
 |**Key**|DisableInsiderCheckbox|
-|**データ型**|ブール型|
+|**データ型**|Boolean|
 |**指定可能な値**|False (既定) <p> 正解|
 |||
 
@@ -173,8 +173,8 @@ true に設定すると、"Insider Program.Office参加" になります。チ�
 |---|---|
 |**ドメイン**|`com.microsoft.autoupdate2`|
 |**Key**|SendAllTelemetryEnabled|
-|**データ型**|ブール型|
-|**指定可能な値**|True (既定) <p> 不正解|
+|**データ型**|Boolean|
+|**指定可能な値**|True (既定) <p> False|
 |||
 
 ## <a name="example-configuration-profile"></a>構成プロファイルの例

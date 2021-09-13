@@ -18,12 +18,12 @@ description: 不正な同意許可攻撃を認識して修復する方法につ�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1f2e5139ed9c16026ec49eab9318588b7704a0fb7f690fef5ea6cc4ce3274fde
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cb3ccfbb921c106b671c4409bb95bd200f0efb55
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56769969"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214453"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>不正同意の付与を検出して修復する
 
@@ -50,13 +50,13 @@ ms.locfileid: "56769969"
 
 ### <a name="steps-for-finding-signs-of-this-attack"></a>この攻撃の兆候を見つける手順
 
-1. [ポータル] **Microsoft 365 Defender開き** <https://security.microsoft.com> 、[監査] を **選択します**。 または、[監査] ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/auditlogsearch> 。
+1. [ポータル] **Microsoft 365 Defender開き** <https://security.microsoft.com> 、[監査] を **選択します**。 または、[**監査**] ページに直接移動するには、<https://security.microsoft.com/auditlogsearch> を使用します。
 
 2. [監査 **] ページ** で、[検索] タブ **が** 選択されているのを確認し、次の設定を構成します。
    - **日付と時刻の範囲**
    - **[アクティビティ**]: [すべての **アクティビティの結果を表示する] が選択** されているのを確認します。
 
-   完了したら、[検索] を **クリックします**。
+   完了したら、[**検索**] をクリックします。
 
 3. [アクティビティ] **列を** クリックして結果を並べ替え、[アプリケーションへの **同意] を探します**。
 
@@ -88,7 +88,7 @@ ms.locfileid: "56769969"
 
 1. 管理者権限を持つ Azure portal にサインインします。
 2. [選択] ブレードAzure Active Directory選択します。
-3. **[ユーザー]** を選択します。
+3. [**ユーザー**] を選択します。
 4. 確認するユーザーを選択します。
 5. [アプリケーション **] を選択します**。
 

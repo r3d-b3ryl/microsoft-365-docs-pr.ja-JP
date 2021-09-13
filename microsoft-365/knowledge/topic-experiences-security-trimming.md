@@ -13,11 +13,11 @@ ms.collection: enabler-strategic
 localization_priority: None
 description: セキュリティを使用してトピックを表示する方法については、「Viva Topics」を参照してください。
 ms.openlocfilehash: 25acd5ea96cb07a5974e10ec9763d1f20351d021
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563976"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215603"
 ---
 # <a name="security-trimming-in-microsoft-viva-topics"></a>セキュリティ トリミング (Microsoft Viva トピック
 

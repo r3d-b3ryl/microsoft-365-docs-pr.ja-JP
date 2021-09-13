@@ -10,11 +10,11 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 ms.openlocfilehash: ad3b53a9936fb40c8d699f656f88bf5a3fff20b9
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256670"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215184"
 ---
 # <a name="getting-help-for-users"></a>ユーザーのヘルプ
 

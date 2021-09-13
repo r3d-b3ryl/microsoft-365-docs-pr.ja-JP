@@ -18,11 +18,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 7463ea7cd8a6d458e467ab213560be7d0f16a394
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58684234"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215103"
 ---
 # <a name="manage-indicators"></a>インジケーターの管理
 
@@ -56,7 +56,7 @@ ms.locfileid: "58684234"
 
 4. **[インポート]** を選択します。 インポートするファイルすべてについて、この操作を行います。
 
-5. **[完了]** を選択します。
+5. [**完了**] を選択します。
 
 次の表に、サポートされているパラメーターを示します。
 
@@ -66,13 +66,13 @@ indicatorType|列挙|インジケーターの種類。 指定できる値は、"
 indicatorValue|String|Indicator エンティティ [の](ti-indicator.md) ID。 **必須**
 action|列挙|インジケーターが組織内で検出される場合に実行されるアクション。 指定できる値は、"Alert"、"AlertAndBlock"、"Allowed" です。 **必須**
 title|String|インジケーターアラートのタイトル。 **必須**
-説明|String| インジケーターの説明。 **必須**
+description|String| インジケーターの説明。 **必須**
 expirationTime|DateTimeOffset|次の形式の YYYYY-MM-DDTHH:MM:SS.0Z のインジケーターの有効期限。 **Optional**
 severity|列挙|インジケーターの重大度。 指定できる値は、"Informational"、"Low"、"Medium"、"High" です。 **Optional**
 recommendedActions|String|TI インジケーターアラート推奨アクション。 **Optional**
 rbacGroupNames|文字列|インジケーターが適用される RBAC グループ名のコンマ区切りのリスト。 **Optional**
-category|String|アラートのカテゴリ。 例として、実行アクセスと資格情報アクセスが含まれます。 **Optional**
-mitretechniques|文字列|MITRE の手法 code/id (コンマ区切り)。 詳細については[、「Enterprise」を参照してください](https://attack.mitre.org/tactics/enterprise/)。 **省略可能** MITRE 手法を使用する場合は、カテゴリに値を追加する必要があります。
+category|文字列|アラートのカテゴリ。 例として、実行アクセスと資格情報アクセスが含まれます。 **Optional**
+mitretechniques|String|MITRE の手法 code/id (コンマ区切り)。 詳細については[、「Enterprise」を参照してください](https://attack.mitre.org/tactics/enterprise/)。 **省略可能** MITRE 手法を使用する場合は、カテゴリに値を追加する必要があります。
 
 詳細については [、「Microsoft Defender for Endpoint alert categories are aligned with MITRE ATT&CK! 」を参照してください](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-atp-alert-categories-are-now-aligned-with/ba-p/732748)。
 

@@ -20,14 +20,14 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) の送信スパム コントロールと、大量メールを送信する必要がある場合の処理について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2207283857cd15bf2e8fcadf223532ecd810da4a1f0908cc4d391b7aee89263b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0fb6bfe5d83c551c0a93cc7b453b27a2d7b476bc
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57002678"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214313"
 ---
-# <a name="outbound-spam-protection-in-eop"></a>EOP での送信スパム保護
+# <a name="outbound-spam-protection-in-eop"></a>EOP の送信スパム保護
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 

@@ -10,11 +10,11 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 ms.openlocfilehash: 2a28112c8afe9165453153d2d23752325ae2e6d8
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58347158"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215153"
 ---
 # <a name="work-with-reports"></a>レポートを操作する
 

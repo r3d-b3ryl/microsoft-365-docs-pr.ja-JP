@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 8327d0c8973de60aa6d860bcb6ad008203fc52d94520b66174147a53f543618a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1f894f3fc8cff2113004ff9c9e34ec2ca0144799
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53902213"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214714"
 ---
 # <a name="devicefilecertificateinfo"></a>DeviceFileCertificateInfo
 
@@ -46,7 +46,7 @@ ms.locfileid: "53902213"
 | `DeviceId` | string | コンピューターの一意識別子 |
 | `DeviceName` | string | コンピューターの完全修飾ドメイン名 (FQDN) |
 | `SHA1` | 文字列 | 記録されたアクションが適用されたファイルの SHA-1 |
-| `IsSigned` | ブール値 | ファイルが署名されているかどうかを示します。 |
+| `IsSigned` | boolean | ファイルが署名されているかどうかを示します。 |
 | `SignatureType` | string | 署名情報をファイル自体に埋め込みコンテンツとして読み取ったか、外部カタログ ファイルから読み取ったかを示します。 |
 | `Signer` | string | ファイルの署名者に関する情報 |
 | `SignerHash` | string | 署名者を識別する一意のハッシュ値 |
@@ -57,11 +57,11 @@ ms.locfileid: "53902213"
 | `CertificateCreationTime` | 日付型 | 証明書が作成された日時 |
 | `CertificateExpirationTime` | 日付型 | 証明書の有効期限が設定されている日時 |
 | `CertificateCountersignatureTime` | 日付型 | 証明書が署名された日時 |
-| `IsTrusted` | ブール値 | 不明なルート証明書情報、無効な署名、失効した証明書、その他の疑いがある属性をチェックする WinVerifyTrust 関数の結果に基づいてファイルが信頼されているかどうかを示します。 |
-| `IsRootSignerMicrosoft` | ブール値 | ルート証明書の署名者が Microsoft であるかどうかを示します。 |
+| `IsTrusted` | boolean | 不明なルート証明書情報、無効な署名、失効した証明書、その他の疑いがある属性をチェックする WinVerifyTrust 関数の結果に基づいてファイルが信頼されているかどうかを示します。 |
+| `IsRootSignerMicrosoft` | boolean | ルート証明書の署名者が Microsoft であるかどうかを示します。 |
 | `ReportId` | long | 繰り返しカウンターに基づくイベント識別子。 一意のイベントを識別するには、この列を DeviceName 列と Timestamp 列と組み合わせて使用する必要があります。 | 
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)

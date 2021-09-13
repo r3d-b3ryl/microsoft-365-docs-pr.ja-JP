@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 9deece85ec5a310cea652af1dd1da39cea386848
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571303"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214954"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-incidents"></a>エンドポイント インシデントの Microsoft Defender の管理
 
@@ -47,7 +47,7 @@ ms.locfileid: "58571303"
 インシデントを自分に割り当て、ステータスと分類を変更したり、名前を変更したり、コメントを付け、進捗状況を追跡することができます。
 
 > [!TIP]
-> 一目で見たインシデント名は、影響を受けるエンドポイントの数、影響を受けるユーザー、検出元、カテゴリなどのアラート属性に基づいて自動的に生成されます。 これにより、インシデントの範囲をすばやく理解できます。
+> 一目で見たインシデント名は、影響を受けるエンドポイントの数、影響を受けるユーザー、検出元、カテゴリなどのアラート属性に基づいて自動的に生成されます。 これにより、インシデントの範囲をすばやく把握できます。
 >
 > たとえば、複数 *のソースによって報告された複数のエンドポイントに対するマルチステージ インシデント。*
 >

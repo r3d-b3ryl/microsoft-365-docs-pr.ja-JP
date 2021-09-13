@@ -18,11 +18,11 @@ ms.custom:
 ms.assetid: 4712d6fd-d9c7-4ec2-88c1-3ad9201cbb7f
 description: '概要: powerShell for Microsoft 365、Microsoft 365 テナントに接続する方法、およびヘルプを取得する場所について説明します。'
 ms.openlocfilehash: 3f9bb352a198ba5491063ee4475611a49d21c31b
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356722"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216063"
 ---
 # <a name="get-started-with-powershell-for-microsoft-365"></a>Microsoft 365 用 PowerShell の使用を開始する
 

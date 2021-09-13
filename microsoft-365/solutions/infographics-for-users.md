@@ -13,11 +13,11 @@ ms.collection:
 - M365solutions
 f1.keywords: NOCSH
 ms.openlocfilehash: 94191ebf12609eafb45f6f4fb19de2a6b072aa23
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575878"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214144"
 ---
 # <a name="microsoft-365-infographics-for-your-users"></a>Microsoft 365のインフォグラフィック
 

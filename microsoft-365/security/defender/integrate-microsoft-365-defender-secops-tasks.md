@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 6dabb757d5d51110f9b7a77b095b818bdfc61a1fb79506fe9a543a7d6bbc1240
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 229dbfd12ddca4e3a1444e2e9ca5771896ba07e0
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838846"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214524"
 ---
 # <a name="step-6-identify-soc-maintenance-tasks"></a>手順 6. SOC のメンテナンス タスクを特定する
 

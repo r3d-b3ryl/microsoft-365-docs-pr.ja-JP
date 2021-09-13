@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: 612c9a717ae10c97c91a183418e36fa87e2f7ba8
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58747521"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215014"
 ---
 # <a name="device-control-for-macos"></a>macOS のデバイスコントロール
 

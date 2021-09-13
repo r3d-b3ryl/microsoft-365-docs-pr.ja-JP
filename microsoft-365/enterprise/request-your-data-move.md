@@ -16,11 +16,11 @@ f1.keywords:
 description: 既存のOffice 365ユーザーは、その国のサービス データを新しい地域に移動Microsoft 365前に要求を提出する必要があります。
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: fa3464a33143f442a38adb8693bb77b9d174114d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574678"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215704"
 ---
 # <a name="how-to-request-your-data-move"></a>データ移行をリクエストする方法
 

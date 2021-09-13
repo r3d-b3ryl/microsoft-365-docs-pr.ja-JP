@@ -21,11 +21,11 @@ ms.collection:
 ms.topic: article
 ms.technology: m365d
 ms.openlocfilehash: 713a2c8b824b5c8fbffb1dcb35465d8f19f727d0
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563524"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214643"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>高度な検索クエリの結果を処理する
 

@@ -16,16 +16,16 @@ f1.keywords:
 - NOCSH
 description: この記事では、証明書ベース認証Microsoft 365クライアント アプリのサポートに関する詳細を確認します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cef2cc9084b44e568afd1df7291a21dce8c4ae3dd7a3feb8dcba31f20d5a31b0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bef1a684ba1ebe2eaba90677cd726cc190e342db
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53855064"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215963"
 ---
 # <a name="microsoft-365-client-app-support-certificate-based-authentication"></a>Microsoft 365クライアント アプリのサポート: 証明書ベースの認証
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 最新の認証は、認証と承認方法の組み合わせの傘下の用語です。 以下のようなメソッドがあります。
 

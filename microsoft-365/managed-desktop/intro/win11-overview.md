@@ -9,12 +9,12 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: af5380d81254ea4934fcdb0910c633adb704b3ffbdbd10dad9457ad29610d66a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7a99ca8d5f56fd5614dc27e3a28efe905ba30e46
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53819033"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215403"
 ---
 # <a name="microsoft-managed-desktop-and-windows-11"></a>Microsoft マネージド デスクトップと Windows 11
 
@@ -57,5 +57,5 @@ Microsoft マネージド デスクトップ によって管理されていな�
 **Line-of-business** アプリ: Test [Base](https://www.microsoft.com/en-us/testbase)は、アプリ発行元と IT 管理者が、Microsoft が安全な Azure 環境で Windows 11 ビルドを実行している仮想マシンで実行するためのアプリとテスト ケースの提出に使用できるリソースです。 各テスト実行の結果、テスト分析、回帰分析は、プライベート Azure ポータルで利用できます。 Microsoft マネージド デスクトップ、アプリの使用状況と信頼性データに基づく検証のために、業務上のアプリの優先順位を設定するのに役立ちます。 Test Base の詳細については、「Test [Base for Microsoft 365」 を参照してください](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/test-base-for-microsoft-365-microsoft-ignite-2021-updates/ba-p/2185566)。
 
 ### <a name="reactive-measures"></a>反応性メジャー
-テスト環境または実稼働環境でアプリの互換性に関する問題が発生した場合は、必要に応じて App [Assure](/fasttrack/products-and-capabilities#app-assure) または FastTrack を利用することで、無料のサポートを受け取ります。 11 Windowsには、最新のオペレーティング システム ビルドで実行されている Office、Microsoft Edge、Teams、および line-of-business アプリケーションの機能が含まれます。 App Assure は、アプリの互換性の問題に優先順位を付け、解決するためにアプリの発行元に直接関与します。
+テスト環境または実稼働環境でアプリの互換性の問題が発生した場合は、必要に応じて[App Assure](/fasttrack/products-and-capabilities#app-assure)または FastTrackを利用して、無料のサポートを受け取ります。 11 Windowsには、最新のオペレーティング システム ビルドで実行されている Office、Microsoft Edge、Teams、および line-of-business アプリケーションの機能が含まれます。 App Assure は、アプリの互換性の問題に優先順位を付け、解決するためにアプリの発行元に直接関与します。
 

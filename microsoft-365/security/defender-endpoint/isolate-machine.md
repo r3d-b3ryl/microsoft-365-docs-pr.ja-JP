@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 8066fe3cbb0a8c6662048e5f349f834428f419e9
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257720"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215083"
 ---
 # <a name="isolate-machine-api"></a>コンピューター API の分離
 
@@ -33,7 +33,7 @@ ms.locfileid: "58257720"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -62,7 +62,7 @@ ms.locfileid: "58257720"
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
 アプリケーション|Machine.Isolate|'分離マシン'
-委任 (職場または学校のアカウント)|Machine.Isolate|'分離マシン'
+委任 (職場または学校アカウント)|Machine.Isolate|'分離マシン'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
@@ -78,7 +78,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/isolate
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**
 Content-Type|string|application/json. **必須**
@@ -87,7 +87,7 @@ Content-Type|string|application/json. **必須**
 
 要求本文で、JSON オブジェクトに次のパラメーターを指定します。
 
-パラメーター|種類|説明
+パラメーター|型|説明
 :---|:---|:---
 コメント|文字列|アクションに関連付けるコメント。 **必須**
 IsolationType|String|分離の種類。 使用できる値は、'Full' または '選択的' です。

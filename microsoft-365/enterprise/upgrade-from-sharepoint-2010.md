@@ -21,11 +21,11 @@ f1.keywords:
 description: 2010 年からサーバー 2010 および SharePointサーバー 2010 SharePointアップグレードする情報とリソースを検索します。 2021 年 4 月 13 日の両方のサポート。
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: da824abb7575a509cb988c474e667d0475e821c1
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58745747"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215643"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>SharePoint 2010 からのアップグレード
 

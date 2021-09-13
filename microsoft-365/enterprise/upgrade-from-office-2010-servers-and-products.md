@@ -24,11 +24,11 @@ f1.keywords:
 description: サポートが間もなく終了し、カスタム サポート契約が利用できないので、Office 2010 サーバーとクライアント アプリケーションからアップグレードの計画を開始します。
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: f4f90a34bd4f6c4585cc8900b11808a11f4a2947
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571917"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215644"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Office 2010 サーバー/クライアントからのアップグレードに役立つリソース
 

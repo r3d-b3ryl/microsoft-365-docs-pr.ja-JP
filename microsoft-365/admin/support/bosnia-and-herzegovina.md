@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f70fb390e1cde09786f81dd8b7ebe790f607e55085254a6b25f6851c096cbde4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7f17526765bbd3940ed88d85f7432805546ab13c
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53883171"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214003"
 ---
 # <a name="contact-support-for-bosnia-and-herzegovnia"></a>ボスニアとヘルツェゴフナのサポートにお問い合わせください
 

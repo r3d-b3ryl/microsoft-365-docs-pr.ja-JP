@@ -15,11 +15,11 @@ ms.collection:
 - Strat_O365_Enterprise
 description: Microsoft 365接続テスト ツール
 ms.openlocfilehash: 60817f54586fd23270edc4e67be8b41a994bf50c
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570967"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215804"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool"></a>Microsoft 365接続テスト ツール
 
@@ -214,7 +214,7 @@ Outlook がこれを行うのと同じ方法で、Exchange サービス フロ�
 
 クライアントからサービス フロント ドアへの 10 秒間のテスト オーディオ呼び出しで測定Microsoft Teams UDP パケット損失を表示します。 これは、パスの **場合は 1.00% より** 低くする必要があります。
 
-#### <a name="latency"></a>遅延
+#### <a name="latency"></a>Latency
 
 **100ms** より低い UDP 待機時間を示します。
 

@@ -15,12 +15,12 @@ ms.custom:
 description: スタンドアロン環境Exchange Online Protectionハイブリッド環境で、EOP (EOP) がオンプレミスの電子メール組織を保護する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8214e4b64dbd1c89f9b393e9e88cd57e6b72dde73740874b46e4118b9916411a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a925b251ff79aec5acaa0b2c1da2aee3f5a6d70d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56806894"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214443"
 ---
 # <a name="exchange-online-protection-overview"></a>Exchange Online Protection の概要
 
@@ -80,7 +80,7 @@ EOP はデータセンター間の負荷分散を実行しますが、1 つの�
 
 すべての EOP サブスクリプション プランの要件、重要な制限、および機能の可用性については[、「Exchange Online Protection」を参照してください](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)。
 
-**注意**:
+**注**:
 
 - EOP では、メッセージ内の既知の悪意のあるリンクを検出するため、いくつかの URL 禁止リストを使用しています。
 - EOP は、スパムを送信することが知られているドメインの膨大なリストを使用します。
@@ -92,14 +92,14 @@ EOP はデータセンター間の負荷分散を実行しますが、1 つの�
 <br>
 
 ****
-|機能|コメント|
+|特徴|コメント|
 |---|---|
 |**Protection**||
 |マルウェア対策|[EOP のマルウェア対策保護](anti-malware-protection.md) <p> [マルウェア対策保護のよく寄せられる質問](anti-malware-protection-faq-eop.yml) <p> [EOP でマルウェア対策ポリシーを構成する](configure-anti-malware-policies.md)|
 |受信スパム対策|[EOP でのスパム対策保護](anti-spam-protection.md) <p> [スパム対策保護に関してよく寄せられる質問](anti-spam-protection-faq.yml) <p> [EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)|
-|送信スパム対策|[EOP での送信スパム保護](outbound-spam-controls.md) <p> [EOP で送信スパム フィルターを構成する](configure-the-outbound-spam-policy.md) <p> [外部メールの自動転送を制御Microsoft 365](external-email-forwarding.md)|
+|送信スパム対策|[EOP の送信スパム保護](outbound-spam-controls.md) <p> [EOP で送信スパム フィルターを構成する](configure-the-outbound-spam-policy.md) <p> [外部メールの自動転送を制御Microsoft 365](external-email-forwarding.md)|
 |接続フィルター|[接続フィルターの構成](configure-the-connection-filter-policy.md)|
-|フィッシング対策|[アプリ内のフィッシング対策Microsoft 365](set-up-anti-phishing-policies.md) <p> [EOP でのスパム対策ポリシーの構成](configure-anti-phishing-policies-eop.md)|
+|フィッシング詐欺対策|[アプリ内のフィッシング対策Microsoft 365](set-up-anti-phishing-policies.md) <p> [EOP でのスパム対策ポリシーの構成](configure-anti-phishing-policies-eop.md)|
 |スプーフィング対策保護|[EOP でのスプーフィング インテリジェンスの分析情報](learn-about-spoof-intelligence.md) <p> [テナントの許可/禁止リストを管理する](tenant-allow-block-list.md)|
 |配信されたマルウェア、スパム、フィッシング メッセージのゼロ時間自動削除 (ZAP)|[ZAP in Exchange Online](zero-hour-auto-purge.md)|
 |事前設定されたセキュリティ ポリシー|[EOP と Microsoft Defender でセキュリティ ポリシーを事前に設定Office 365](preset-security-policies.md) <p> [EOP および Microsoft Defender の保護ポリシー用の構成Office 365](configuration-analyzer-for-security-policies.md)|
@@ -118,7 +118,7 @@ EOP はデータセンター間の負荷分散を実行しますが、1 つの�
 |コネクタ|[コネクタを使用してメール フローを構成Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)|
 |コネクタのフィルター処理の強化|[コネクタの拡張フィルター Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)|
 |**監視**||
-|メッセージ追跡|[メッセージの追跡](message-trace-scc.md) <p> [管理センターのExchangeトレース](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac)|
+|メッセージの追跡|[メッセージの追跡](message-trace-scc.md) <p> [管理センターのExchangeトレース](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac)|
 |メール&コラボレーション レポート|[メール セキュリティ レポートを表示する](view-email-security-reports.md)|
 |メール フロー レポート|[メール フロー レポートを表示する](view-mail-flow-reports.md) <p> [管理センターのメール フロー Exchangeレポート](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
 |メール フローの分析情報|[メール フローの分析情報](mail-flow-insights-v2.md) <p> [管理センターでのメール フロー Exchange分析情報](/exchange/monitoring/mail-flow-insights/mail-flow-insights)|

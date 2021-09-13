@@ -1,5 +1,5 @@
 ---
-title: 自動調査と応答機能を構成する方法は、Microsoft 365 Defender
+title: Microsoft 365 Defender で自動調査と応答機能を構成する
 description: 自動調査と応答を構成するには、自動修復機能をMicrosoft 365 Defender
 search.appverid: MET150
 ms.author: josephd
@@ -17,13 +17,13 @@ ms.reviewer: evaldm, isco
 f1.keywords: CSH
 ms.technology: m365d
 ms.openlocfilehash: 84107a54c47c3bfe68cd7740e1e06ff40b11957a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563928"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214523"
 ---
-# <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>自動調査と応答機能を構成する方法は、Microsoft 365 Defender
+# <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>Microsoft 365 Defender で自動調査と応答機能を構成する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 

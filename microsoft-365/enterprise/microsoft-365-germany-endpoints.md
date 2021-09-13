@@ -21,11 +21,11 @@ ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
 description: この記事では、ドイツでサービスを使用しているお客様に対して到達可能Office 365説明します。
 hideEdit: true
 ms.openlocfilehash: f022c82c41aaeeed73af13572234e7826d878158
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575602"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215874"
 ---
 # <a name="office-365-germany-endpoints"></a>Office 365 Germany のエンドポイント
 

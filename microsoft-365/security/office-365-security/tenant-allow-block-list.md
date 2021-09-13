@@ -17,11 +17,11 @@ description: 管理者は、セキュリティ ポータルのテナント許可
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: aca302aedfaa97b9e2661716d7bc7a6e846fa6fb
-ms.sourcegitcommit: 99f7bd19e9c6997f0dbff7f59cb29a9768044b54
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/04/2021
-ms.locfileid: "58896491"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214243"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>テナントの許可/禁止リストを管理する
 
@@ -121,19 +121,19 @@ Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Pro
      - **Action**: 値 Allow **or** **Block**.
      - **最終更新日時**
      - **Remove on**
-     - **注**
+     - **メモ**
    - **URL**:
      - **値**: URL。
      - **Action**: 値 Allow **or** **Block**.
      - **最終更新日時**
      - **Remove on**
-     - **注**
+     - **メモ**
    - **Files**
      - **値**: ファイル ハッシュ。
      - **Action**: 値 Allow **or** **Block**.
      - **最終更新日時**
      - **Remove on**
-     - **注**
+     - **メモ**
    - 「**スプーフィング**」
      - **スプーフィングされたユーザー**
      - **インフラストラクチャの送信**

@@ -20,16 +20,16 @@ search.appverid:
 - BCS160
 ms.assetid: 64b420ef-0218-48f6-8a34-74bb27633b10
 description: Microsoft 365は、世界中のお客様がインターネット接続を使用してサービスに接続できるよう設計されています。 サービスが進化するにつれて、Microsoft 365 のセキュリティ、パフォーマンス、および信頼性は、インターネットを使用してサービスへの接続を確立する顧客に基づいて向上します。
-ms.openlocfilehash: ae3b06a607d3e45f5f1067616ba46c4226dde55766e02bd9f75b70313095474e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4d80bdf5642b2456ac8293291c720429f7f18fb1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53885413"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213894"
 ---
 # <a name="assessing-microsoft-365-network-connectivity"></a>Microsoft 365 ネットワーク接続の評価
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 Microsoft 365は、世界中のお客様がインターネット接続を使用してサービスに接続できるよう設計されています。 サービスが進化するにつれて、Microsoft 365 のセキュリティ、パフォーマンス、および信頼性は、インターネットを使用してサービスへの接続を確立する顧客に基づいて向上します。
   
@@ -45,7 +45,7 @@ Microsoft 365は、世界中のお客様がインターネット接続を使用�
 
 - ネットワーク[Microsoft 365に関する](microsoft-365-networking-overview.md)概念的な情報については、「ネットワーク接続の概要」をMicrosoft 365してください。
 - トラフィック[Microsoft 365を](./microsoft-365-network-connectivity-principles.md)安全に管理し、可能な限り最高のパフォーマンスを得るMicrosoft 365の原則を理解するには、「ネットワーク接続の原則」を参照してください。
-- Microsoft [FastTrack にサインアップして](https://www.microsoft.com/fasttrack)、計画、設計、展開Microsoft 365ガイド付きサポートを受けてください。 
+- 計画、設計、展開[FastTrack](https://www.microsoft.com/fasttrack)ガイド付きサポートを受Microsoft 365 Microsoft Microsoft 365サインアップします。 
 - 以下の[Microsoft 365 接続](assessing-network-connectivity.md#the-microsoft-365-connectivity-test)テスト セクションを参照して、特定のユーザーの場所とユーザー間で行えるネットワーク接続の改善に関する具体的なガイダンスを提供する基本的な接続テストを実行Microsoft 365。
 
 > [!NOTE]
@@ -57,7 +57,7 @@ Microsoft 365は、世界中のお客様がインターネット接続を使用�
 
 - インターネット ベースの接続の可用性、グローバルリーチMicrosoft 365パフォーマンスなど、ユーザーの主要な側面を継続的に最適化しています。 たとえば、多くのMicrosoft 365は、インターネットに接続するエッジ ノードの拡張セットを利用します。 このエッジ ネットワークは、インターネットを越える接続に最適な近接性とパフォーマンスを提供します。
 
-- Teams や Skype for Business Online の音声、ビデオ、会議の機能など、含まれるサービスに Microsoft 365 を使用する場合は、エンド to エンドのネットワーク評価を完了し[、Microsoft FastTrack](https://www.microsoft.com/fasttrack)を使用して接続要件を満たす必要があります。
+- Teams や Skype for Business Online の音声、ビデオ、会議の機能など、含まれるサービスに Microsoft 365 を使用する場合は、エンド to エンドのネットワーク評価を完了し、Microsoft FastTrack を使用して接続要件を[満たす必要があります](https://www.microsoft.com/fasttrack)。
 
 Microsoft 365 を評価する場合や、ネットワーク評価の開始場所が不明な場合や、克服するための支援が必要なネットワーク設計上の課題が見つかった場合は、Microsoft アカウント チームと協力してください。
 

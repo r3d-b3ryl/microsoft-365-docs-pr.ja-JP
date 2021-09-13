@@ -21,11 +21,11 @@ ms.collection:
 ms.topic: article
 ms.technology: m365d
 ms.openlocfilehash: 9406653a2d16c83f974e2a0ce7597b5c4f833252
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289501"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214644"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>高度な検索スキーマ - 名前付けの変更
 
@@ -43,7 +43,7 @@ ms.locfileid: "53289501"
 - API を使用して実行されるクエリ
 - セキュリティ センター外の別の場所に保存されるクエリ
 
-## <a name="december-2020"></a>2020年12月
+## <a name="december-2020"></a>2020 年 12 月
 
 | テーブル名 | 元の列名 | 新しい列名 | 変更の理由
 |--|--|--|--|

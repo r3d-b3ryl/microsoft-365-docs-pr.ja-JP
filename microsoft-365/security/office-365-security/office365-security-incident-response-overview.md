@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 62e73b3b8e72aad66fd83743551f770078d164e93136defc31140bf20cb87042
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 65ff75253f45ae2d0f051dafe73c6e665f89827a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56809634"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214314"
 ---
 # <a name="security-incident-response"></a>セキュリティ インシデント対応
 

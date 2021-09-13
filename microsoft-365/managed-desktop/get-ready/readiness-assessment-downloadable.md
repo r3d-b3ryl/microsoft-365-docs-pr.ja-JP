@@ -11,11 +11,11 @@ manager: laurawi
 ms.topic: article
 audience: Admin
 ms.openlocfilehash: ba233cf780ad428a9ecfdb6c4a3466b4ec4282da
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533365"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215554"
 ---
 # <a name="downloadable-readiness-assessment-checker"></a>ダウンロード可能な準備状況の評価チェック
 

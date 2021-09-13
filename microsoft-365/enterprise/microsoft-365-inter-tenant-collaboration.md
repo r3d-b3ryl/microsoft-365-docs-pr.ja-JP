@@ -20,11 +20,11 @@ f1.keywords:
 description: テナントと組織Microsoft 365コラボレーションがどのように機能し、さまざまな組織が安全に連携できるのかについて説明します。
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 05a1756d4707ba51d1175f0f5f5701f89fd7f5a4
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58747043"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215873"
 ---
 # <a name="microsoft-365-inter-tenant-collaboration"></a>Microsoft 365間のコラボレーション
 

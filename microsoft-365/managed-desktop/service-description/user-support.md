@@ -10,11 +10,11 @@ ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 ms.openlocfilehash: ec56158a8ccf0c1014b847b04a62db6a14fe992b
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255245"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215213"
 ---
 # <a name="user-support"></a>ユーザー サポート
 

@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: コミュニケーション ガバナンスのコラボレーション シナリオについて説明します。
-ms.openlocfilehash: a85a88c79d9a08750c6ca2e9c16028c6a0407aeec68c8eb205f7f8132735d807
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6b49f0725cb300316580e972626a96b7057b5ccb
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53893521"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214183"
 ---
 # <a name="communications-governance-for-collaboration-scenarios"></a>コラボレーション シナリオのコミュニケーション ガバナンス
 
@@ -67,7 +67,7 @@ Microsoft 365、メッセージングや会議の設定など、組織内のコ�
 
 [Microsoft 365 のコミュニケーション コンプライアンス](../compliance/communication-compliance.md)
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [コラボレーション ガバナンス計画のステップ バイ ステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 

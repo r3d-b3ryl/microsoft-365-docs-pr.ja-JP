@@ -25,11 +25,11 @@ f1.keywords:
 description: この記事では、2007 年のサポートが終了したOffice 2007 サーバーとクライアントからのアップグレードに役立つリソースOffice提供します。
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: c3f90bed99816378d4e44bb714b4c6104a9302b7
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354190"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215664"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Office 2007 のサーバーとクライアントからのアップグレードに役立つリソース
 

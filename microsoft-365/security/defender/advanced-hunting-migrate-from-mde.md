@@ -22,11 +22,11 @@ ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
 ms.openlocfilehash: 3bf6d527092a4dc5ed340a2d9548fea41d875d31
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58561256"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214704"
 ---
 # <a name="migrate-advanced-hunting-queries-from-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint から高度なハンティング クエリを移行する
 
@@ -54,12 +54,12 @@ ms.locfileid: "58561256"
 |------------|-------------|
 | [AlertEvidence](advanced-hunting-alertevidence-table.md) | アラートに関連付けられたファイル、IP アドレス、URL、ユーザー、またはデバイス |
 | [AlertInfo](advanced-hunting-alertinfo-table.md) | Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Cloud App Security、Microsoft Defender for Identity からのアラート (重大度情報と脅威カテゴリを含む)  |
-| [EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) | メールに添付されているファイルに関する情報 |
-| [EmailEvents](advanced-hunting-emailevents-table.md) | Microsoft 365配信イベントやブロック イベントを含む電子メール イベントの管理 |
-| [EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md) | 受信者メールボックスに電子メールを配信した後Microsoft 365配信後に発生するセキュリティ イベント |
+| [EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) | メールに添付されたファイルに関する情報 |
+| [EmailEvents](advanced-hunting-emailevents-table.md) | メールの配信やブロック イベントなど、Microsoft 365 のメール イベント |
+| [EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md) | Microsoft 365 が受信者メールボックスにメールを配信した後に配信後に発生するセキュリティ イベント |
 | [EmailUrlInfo](advanced-hunting-emailurlinfo-table.md) | メールの URL に関する情報 |
-| [IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md) | Active Directory を実行しているオンプレミスのドメイン コントローラーに関連するイベント (AD)。 次の表では、ドメイン コントローラー上の ID 関連イベントとシステム イベントの範囲について説明します。 |
-| [IdentityInfo](advanced-hunting-identityinfo-table.md) | さまざまなソースからのアカウント情報 (Azure Active Directory |
+| [IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md) | Active Directory (AD) を実行しているオンプレミス ドメイン コントローラーに関連するイベント。 このテーブルでは、ドメイン コントローラー上の ID 関連のイベントとシステム イベントの範囲を説明しています。 |
+| [IdentityInfo](advanced-hunting-identityinfo-table.md) | Azure Active Directory など、様々なソースからのアカウント情報 |
 | [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md) | Active Directory および Microsoft オンライン サービスでの認証イベント |
 | [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md) | ユーザー、グループ、デバイス、ドメインなどの Active Directory オブジェクトのクエリ |
 

@@ -21,11 +21,11 @@ ms.custom:
 ms.assetid: ''
 description: ネットワーク接続の概要やエンドポイントの一覧など、Microsoft 365の設定に役立つ情報を含む記事へのリンクを検索します。
 ms.openlocfilehash: 52de26081b4e61346ab584e1600893349b47fd17
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58355882"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215673"
 ---
 # <a name="set-up-your-network-for-microsoft-365"></a>ネットワークをセットアップMicrosoft 365
 

@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 9a8b87a7cee3bb03a0946773012ed6f18bbd75b9
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58350006"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214794"
 ---
 # <a name="score-resource-type"></a>スコア リソースの種類
 
@@ -50,7 +50,7 @@ ms.locfileid: "58350006"
 
 ## <a name="properties"></a>プロパティ
 
-プロパティ|種類|説明
+プロパティ|型|説明
 :---|:---|:---
 スコア|Double|現在のスコア。
 Time|DateTime|この API の呼び出しが行われた日時。

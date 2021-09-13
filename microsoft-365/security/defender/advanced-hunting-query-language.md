@@ -21,11 +21,11 @@ ms.collection:
 ms.topic: article
 ms.technology: m365d
 ms.openlocfilehash: a253d1224f1c7a0e0be0b5478efcc78204cb4a27
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565750"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214663"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>高度な捜索のクエリ言語について学習する
 
@@ -65,7 +65,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 **[高度な検索でこのクエリを実行する](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2TW0sCURSF93PQfxh8Moisp956yYIgQtLoMaYczJpbzkkTpN_et_dcdPQkcpjbmrXXWftyetKTQG5lKqmMpeB9IJksJJKZDOWdZ8wKeP5wvcm3OLgZbMXmXCmIxjnYIfcAVgYvRi8w3TnfsXEDGAG47pCCZXyP5ViO4KeNbt-Up-hEuJmB6lvButnY8XSL-cDl0M2I-GwxVX8Fe2H5zMzHiKjEVB0eEsnBrszfBIWuXOLrxCJ7VqEBfM3DWUYTkNKrv1p5y3X0jwetemzOQ_NSVuuXZ1c6aNTKRaN8VvWhY9n7OS-o6J5r7mYeQypdEKc1m1qfiqpjCSuspsDntt2J61bEvTlXls5AgQfFl5bHM_gr_BhO2RF1rztoBv2tWahrso_TtzkL93KGMGZVr2pe7eWR-xeZl91f_113UOsx3nDR4Y9j5R6kaCq8ajr_YWfFeedsd27L7it-Z6dAZyxsJq1d9-2ZOSzK3y2NVd8-zUPjtZaJnYsIH4Md7AmdeAcd2Cl1XoURc5PzXlfU8U9P54WcswL6t_TW9Q__qX-xygQAAA&runQuery=true&timeRangeId=week)**
 
 ### <a name="describe-the-query-and-specify-the-tables-to-search"></a>クエリを記述し、検索するテーブルを指定する
-クエリの先頭に短いコメントが追加され、それが何を行うのかを説明しています。 このコメントは、後でクエリを保存し、組織内の他のユーザーと共有する場合に役立ちます。 
+クエリの先頭に短いコメントが追加され、それが何を行うのかを説明しています。 このコメントは、後でクエリを保存し、組織内の他のユーザーと共有することを決定した場合に役立ちます。 
 
 ```kusto
 // Finds PowerShell execution events that could involve a download
@@ -77,7 +77,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 union DeviceProcessEvents, DeviceNetworkEvents
 ```
 ### <a name="set-the-time-range"></a>時間範囲を設定する
-最初のパイプ処理された要素は、前の 7 日間にスコープ設定された時間フィルターです。 時間範囲を制限すると、クエリのパフォーマンスが向上し、管理可能な結果が返され、時間が取れなかることができます。
+最初のパイプ処理された要素は、前の 7 日間にスコープ設定された時間フィルターです。 時間範囲を制限することで、クエリが適切に実行され、管理可能な結果が返され、タイムアウトが回避されるのに役立ちます。
 
 ```kusto
 | where Timestamp > ago(7d)
@@ -107,7 +107,7 @@ union DeviceProcessEvents, DeviceNetworkEvents
 ```
 
 ### <a name="customize-result-columns-and-length"></a>結果の列と長さをカスタマイズする 
-クエリで検索するデータが明確に識別されたので、結果の外観を定義できます。 `project` 特定の列を返し、 `top` 結果の数を制限します。 これらの演算子は、結果の形式が適切で、合理的に大きく、処理が容易であることを確認するのに役立ちます。
+クエリによって、検索するデータが明確に識別されるようになったので、結果の見た目を定義できます。 `project` 特定の列を返し、 `top` 結果の数を制限します。 これらの演算子は、結果の形式が適切で、合理的に大きく、処理が容易であることを確認するのに役立ちます。
 
 ```kusto
 | project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine, 
@@ -141,15 +141,15 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 
 これらの演算子の実際の例を見るには、高度な捜索の [**はじめに**] セクションから実行します。
 
-## <a name="understand-data-types"></a>データ型について
+## <a name="understand-data-types"></a>データ型を理解する
 
 高度な検索では、次の一般的な種類を含む Kusto データ型がサポートされています。
 
 | データ型 | 説明とクエリの意味 |
 |--|--|
-| `datetime` | 通常、イベントのタイムスタンプを表すデータと時刻の情報。 [サポートされている日時形式を参照してください。](/azure/data-explorer/kusto/query/scalar-data-types/datetime) |
-| `string` | 文字列は、UTF-8 ( ) または二重引用符 ( `'` ) で囲まれます `"` 。 [文字列の詳細](/azure/data-explorer/kusto/query/scalar-data-types/string) |
-| `bool` | このデータ型は、サポート `true` または `false` 状態です。 [サポートされているリテラルと演算子を参照してください。](/azure/data-explorer/kusto/query/scalar-data-types/bool) |
+| `datetime` | 通常、イベントのタイムスタンプを表すデータおよび時間の情報。 [サポートされている日時形式を参照してください。](/azure/data-explorer/kusto/query/scalar-data-types/datetime) |
+| `string` | 一重引用符 (`'`) または二重引用符 (`"`) で囲まれた UTF-8 の文字列。 [文字列の詳細](/azure/data-explorer/kusto/query/scalar-data-types/string) |
+| `bool` | このデータ型は `true` または `false` の状態をサポートします。 [サポートされているリテラルと演算子を参照してください。](/azure/data-explorer/kusto/query/scalar-data-types/bool) |
 | `int` | 32 ビット整数  |
 | `long` | 64 ビット整数 |
 

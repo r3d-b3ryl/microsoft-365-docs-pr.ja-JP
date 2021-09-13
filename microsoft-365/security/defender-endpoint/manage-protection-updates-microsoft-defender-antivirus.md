@@ -15,12 +15,12 @@ ms.reviewer: pahuijbr
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: 04683635399c2cd1efbf6cceca95fa0cfe1b2775
-ms.sourcegitcommit: 99f7bd19e9c6997f0dbff7f59cb29a9768044b54
+ms.openlocfilehash: d95d9e0add79d83edbee351c734ab6636902cd29
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/04/2021
-ms.locfileid: "58896443"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214904"
 ---
 # <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>Microsoft Defender ウイルス対策更新プログラムのソースを管理する
 
@@ -59,10 +59,14 @@ ms.locfileid: "58896443"
 エンドポイントが更新プログラムを取得する場所を指定できる場所は 5 種類です。
 
 - [Microsoft Update](https://support.microsoft.com/help/12373/windows-update-faq)
-- [Windows Server Update Service](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) (Intune Internal Definition Update Server - SCCM/SUP を使用して Microsoft Defender ウイルス対策 の定義更新プログラムを取得し、クライアント デバイスでブロックされている Windows Update にアクセスする必要がある場合は、共同管理に移行し、エンドポイント保護ワークロードを Intune にオフロードできます。 Intune で構成されたマルウェア対策ポリシーには、オンプレミスの WSUS を更新ソースとして使用するように構成できる '内部定義更新サーバー' のオプションがあります)
+- [Windows サーバー更新サービス](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) <sup>[[1](#fn1)]<sup></sup>  
 - [Microsoft Endpoint Configuration Manager](/configmgr/core/servers/manage/updates)
 - [ネットワーク ファイル共有](#unc-share)
-- [Microsoft Defender ウイルス対策 および他の Microsoft](https://www.microsoft.com/wdsi/defenderupdates)マルウェア対策のセキュリティ インテリジェンス更新プログラム (ポリシーとレジストリには、Microsoft マルウェア プロテクション センター (MMPC) セキュリティ インテリジェンス (以前の名前) としてリストされている可能性があります)。
+- [セキュリティ インテリジェンスの更新プログラム (Microsoft Defender ウイルス対策その他の Microsoft マルウェア対策)](https://www.microsoft.com/wdsi/defenderupdates) <sup>[[2](#fn1)]<sup></sup>
+
+  (<a id="fn1">1</a>) Intune 内部定義更新サーバー - SCCM/SUP を使用して Microsoft Defender ウイルス対策 の定義更新プログラムを取得し、クライアント デバイスでブロックされている Windows Update にアクセスする必要がある場合は、共同管理に移行し、エンドポイント保護ワークロードを Intune にオフロードできます。 Intune で構成されたマルウェア対策ポリシーには、オンプレミスの WSUS を更新ソースとして使用するように構成できる 「内部定義更新サーバー」のオプションがあります。 これにより、企業に対して承認されている公式 WU サーバーからの更新プログラムを制御し、UPdates ネットワークの公式サイトにネットワーク トラフィックをプロキシして保存するのにWindows役立ちます。
+
+  (<a id="fn1">2</a>) ポリシーとレジストリには、この情報が以前のMicrosoft マルウェア プロテクション センター (MMPC) セキュリティ インテリジェンスとして一覧表示されている可能性があります。
 
 Microsoft Update では、最高レベルの保護を確保するために、迅速なリリースが可能になります。つまり、頻繁にダウンロードする頻度が少なめになります。 サーバー更新Windowsサービス、Microsoft Endpoint Configuration Manager Microsoft セキュリティ インテリジェンス更新プログラムソースは、更新プログラムの頻度が低い。 したがって、デルタを大きくすると、ダウンロードが大きくなる可能性があります。
 
@@ -109,7 +113,7 @@ Microsoft Update では、最高レベルの保護を確保するために、迅
 
       :::image type="content" source="../../media/wdav-order-update-sources.png" alt-text="ソースの順序を示すグループ ポリシー設定。":::
 
-   3. **[OK]** をクリックします。 これにより、保護更新プログラムのソースの順序が設定されます。
+   3. **[OK]** を選択します。 これにより、保護更新プログラムのソースの順序が設定されます。
 
    4. [セキュリティ インテリジェンス更新プログラムをダウンロード **するための** ファイル共有の定義] 設定をダブルクリックし、オプションを [有効] に **設定します**。
 

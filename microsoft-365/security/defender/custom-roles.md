@@ -21,11 +21,11 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.openlocfilehash: 699d8c1d8ea7ac6928c96b6c98226ab82e0725fb
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58254872"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214613"
 ---
 # <a name="custom-roles-in-role-based-access-control-for-microsoft-365-defender"></a>ユーザーの役割ベースのアクセス制御のカスタム ロールMicrosoft 365 Defender
 
@@ -68,7 +68,7 @@ ms.locfileid: "58254872"
 アクセス許可と役割は、次のポータルでもMicrosoft 365 Defenderできます。
 
 1. [ポータル] の Microsoft 365 Defenderにサインイン security.microsoft.com。
-2. ナビゲーション ウィンドウで、[アクセス許可] **を選択&します**。
+2. ナビゲーション ウィンドウで、**[アクセス許可と役割]** を選択します。
 3. [アクセス許可 **] ヘッダーで** 、[役割] を **選択します**。
 
 > [!NOTE]
@@ -79,7 +79,7 @@ ms.locfileid: "58254872"
 次の表に、各ワークロードの各統合エクスペリエンスにアクセスするために必要な役割とアクセス許可の概要を示します。 以下の表で定義されている役割は、個々のポータルのカスタム ロールを参照し、同様に名前が付けられた場合でも、Azure AD のグローバル ロールには接続されません。
 
 > [!NOTE]
-> インシデント管理には、インシデントの一部であるすべての製品に対する管理アクセス許可が必要です。
+> インシデント管理には、インシデントの一部であるすべての製品の管理権限が必要です。
  
 | **次のいずれかの役割が必要ですMicrosoft 365 Defender**  | **Defender for Endpoint では、次のいずれかの役割が必要です**  | **Defender では、次の役割の 1 つが必要Office 365** | **次のいずれかの役割が必要ですCloud App Security** | 
 |---------|---------|---------|---------|
@@ -100,5 +100,5 @@ ms.locfileid: "58254872"
 - 表示専用の受信者
 
 ## <a name="related-topics"></a>関連項目
-- [ユーザーへのアクセスをMicrosoft 365 Defender](m365d-permissions.md)
+- [Microsoft 365 Defender へのアクセスを管理する](m365d-permissions.md)
 - [MCAS の管理者アクセスを管理する](/cloud-app-security/manage-admins)
