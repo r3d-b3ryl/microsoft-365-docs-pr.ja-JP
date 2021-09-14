@@ -12,16 +12,17 @@ ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection:
 - M365-security-compliance
+ms.custom: admindeeplinkMAC
 search.appverid:
 - MOE150
 - MET150
 description: 処理確認を利用する場合や、レコードとしてマークされたアイテムが構成した設定に従って自動的に削除される場合、コンテンツの処理を監視および管理します。
-ms.openlocfilehash: b949b712721acc7921d3c6ac25a07c14338d7609
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: a905847da3a6c28d8d24d13adb193423b57d83d1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567942"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59193150"
 ---
 # <a name="disposition-of-content"></a>コンテンツの処理
 
@@ -57,7 +58,7 @@ Microsoft 365 コンプライアンス センターの [**処理**] タブに正
 
 - プレビューの場合: 既定では、[**処理]** ページにアクセス する人は、自分に確認が割り当てられているアイテムだけが表示されます。 すべてのユーザーに割り当てられているすべてのアイテムを表示し、処理確認で構成されているすべての保持ラベルを表示できるレコード管理者の場合: **レコード管理設定** > **一般** > **レコード マネージャー向けセキュリティ グループ** に移動し、管理者アカウントを含むメールが有効になっているセキュリティ グループを選択して有効にします。
     
-    メールが有効になっていない Microsoft 365 グループとセキュリティ グループは、この機能をサポートしていないので、選択対象のリストには表示されません。 メールが有効な新しいセキュリティ グループを作成する必要がある場合は、Microsoft 365 管理センターへのリンクを使用して新しいグループを作成します。 
+    メールが有効になっていない Microsoft 365 グループとセキュリティ グループは、この機能をサポートしていないので、選択対象のリストには表示されません。 メールが有効な新しいセキュリティ グループを作成する必要がある場合は、<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>へのリンクを使用して新しいグループを作成します。 
     
     > [!IMPORTANT]
     > グループの有効化後は、コンプライアンス センターでは変更できません。 PowerShell を使用して別のグループを有効にする方法については、次のセクションを参照してください。

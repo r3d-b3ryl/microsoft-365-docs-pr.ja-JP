@@ -16,13 +16,14 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
+ms.custom: admindeeplinkMAC
 description: アイテム保持ポリシーを使用して、ユーザーがメール、ドキュメント、および会話で生成するコンテンツを効率的に制御します。 必要なものを保持し、不要なものを取り除きます。
-ms.openlocfilehash: 34f4bb10ba79e6521d785df157368cdaae89118a
-ms.sourcegitcommit: bdf506c47bfed0f7e639301a7edd94c4eb150150
+ms.openlocfilehash: 6a58092bb81f45f40f2b0bcdd76312fc1d420e4d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "58869193"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213953"
 ---
 # <a name="create-and-configure-retention-policies"></a>アイテム保持ポリシーを作成して構成する
 
@@ -67,7 +68,7 @@ ms.locfileid: "58869193"
 
 ### <a name="retention-policy-for-teams-locations"></a>Teams の場所のアイテム保持ポリシー
 
-1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)から、[**ポリシー**] > [**保持**] の順に選択します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>から、[**ポリシー**] > [**保持**] の順に選択します。
 
 2. [**新しいアイテム保持ポリシー**] を選択してアイテム保持ポリシー構成の作成を開始し、新しいアイテム保持ポリシーに名前を付けます。
 
@@ -122,7 +123,7 @@ Microsoft 365 グループ、SharePoint サイトや OneDrive アカウントに
 >
 > この機能を使用するには、ご利用の Yammer ネットワークがハイブリッド モードではなく、[ネイティブ モード](/yammer/configure-your-yammer-network/overview-native-mode)になっている必要があります。
 
-1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)から、[**ポリシー**] > [**保持**] の順に選択します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>から、[**ポリシー**] > [**保持**] の順に選択します。
 
 2. 新しいアイテム保持ポリシーを作成するには、[**新しいアイテム保持ポリシー**] を選択します。
 
@@ -169,7 +170,7 @@ SharePoint サイトや OneDrive アカウントに適用されているアイ�
 - Microsoft 365 グループ
 - Skype for Business
 
-1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)から、[**ポリシー**] > [**保持**] の順に選択します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>から、[**ポリシー**] > [**保持**] の順に選択します。
 
 2. [**新しいアイテム保持ポリシー**] を選択してアイテム保持ポリシー構成の作成を開始し、新しいアイテム保持ポリシーに名前を付けます。
 
@@ -211,9 +212,16 @@ SharePoint サイトまたは OneDrive アカウントの場所を指定する�
 
 個々の OneDrive アカウントを含めるか除外するかを指定するには、ユーザーの OneDrive 向けの URL は通常次の形式です。 ユーザー プリンシパル名 (UPN) の場合、ピリオド、コンマ、スペース、アット マーク ("@") などの特殊文字はアンダースコア ("_") に変換されます: `https://<tenant name>-my.sharepoint.com/personal/<user principal name>`
 
-たとえば、Contoso テナントで "rsimone@contoso.onmicrosoft.com" の UPN を持つユーザー向けです: `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`。 ただし、競合が検出された場合は、数値または GUID を追加できます。
+たとえば、Contoso テナントで UPN "rsimone@contoso.onmicrosoft.com" を持つユーザーは以下となります: `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
 
-Microsoft 365 管理センターまたは PowerShell を使用して実行できる OneDrive アカウント用のユーザーの URL を常に確認するのが最善の方法です。 詳細については、「[組織内のすべてのユーザーの OneDrive URL の一覧を取得する](/onedrive/list-onedrive-urls)」を参照してください。
+または、カスタム ドメイン名を使用していて、UPN が "rsimone@contoso.com" である場合: `https://contoso-my.sharepoint.com/personal/rsimone_contoso_com`
+
+ただし、競合が検出された場合は URL に数字または GUID を追加できるため、常に OneDrive アカウントのユーザーの URL を確認することをお勧めします。 URL を確認するには、Microsoft 365 管理センターまたは PowerShell を使用します。 詳細については、「[組織の全てのユーザーの OneDrive URL の一覧を取得する](/onedrive/list-onedrive-urls)」をご覧ください。
+
+> [!NOTE]
+> 含めるあるいは除外する個々の OneDrive アカウントを指定する場合、OneDrive アカウントが[事前にプロビジョ二ング](/onedrive/pre-provision-accounts)されていない限り、ユーザーが初めて OneDrive にアクセスするまで URL は作成されないことに注意してください。
+> 
+> また、ユーザーのUPNが変更されると、OneDrive の URL が[自動的に変更](/onedrive/upn-changes)されます。  たとえば、結婚などの名前が変わるイベント。 または、組織の名前変更やビジネス再構築をサポートするためのドメイン名の変更。 UPN が変更された場合は、ここで指定した OneDrive URL を更新する必要があります。
 
 ### <a name="configuration-information-for-microsoft-365-groups"></a>Microsoft 365 グループの構成情報
 

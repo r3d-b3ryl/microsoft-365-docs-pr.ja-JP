@@ -21,11 +21,11 @@ search.appverid: MET150
 description: 一般法人向け Microsoft 365 のサブスクリプションが期限切れになった場合、無効になった場合、または解約された場合に、データがどうなるかについて説明します。
 ms.date: 04/08/2021
 ms.openlocfilehash: 55a34352da6deef2fd48542dd06859e0024e6966
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394883"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180120"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>一般法人向け Microsoft 365 のサブスクリプションが終了したとき、データとアクセスはどうなりますか?
 
@@ -82,7 +82,7 @@ ms.locfileid: "53394883"
 - **サブスクリプションの継続請求を有効にします。**
   - **継続請求** が既に有効になっている場合は、何もする必要はありません。 サブスクリプションは自動的に請求され、現在の支払頻度に応じて、追加された年分または月分の料金が課せられます。 何らかの理由で **[継続請求]** を無効にした場合は、いつでも [継続請求を有効に戻す](renew-your-subscription.md)ことができます。
   - プリペイド カードで Microsoft 365 Apps for business を購入した場合は、[サブスクリプションの継続請求を有効](renew-your-subscription.md)にできます。
-  - プリペイドの 1 年間のサブスクリプションを使用するオープン ボリュ​​ーム ライセンスのお客様の場合は、パートナーに連絡して新しいプロダクト キーを購入してください。 [ボリューム ライセンス サービス センター](https://go.microsoft.com/fwlink/p/?LinkID=282016)でキーのライセンス認証を行う手順をメールで受信します。 新しいパートナー、または過去に協力したことがあるパートナーを見つける方法については、「[パートナーまたは販売店を検索する](../../admin/manage/find-your-partner-or-reseller.md)」をご覧ください。
+  - 1 年間のプリペイド サブスクリプションを利用するオープン ボリューム ライセンス ユーザーの場合は、パートナーに連絡して、新しいプロダクト キーを購入してください。[ボリューム ライセンス サービス センター](https://go.microsoft.com/fwlink/p/?LinkID=282016)でキーをアクティブ化する手順をメールで受け取ります。新しいパートナーまたは以前のパートナーを見つける方法の詳細については、「[パートナーまたはリセラーを見つける](../../admin/manage/find-your-partner-or-reseller.md)」を参照してください。
   - Microsoft 365 Apps for business をお持ちの場合、「[サブスクリプションの継続請求を管理する](renew-your-subscription.md)」を参照してください。
 - **そのままサブスクリプションを期限切れにします。**
   - クレジット カードまたは請求書を使って支払っており、サブスクリプションを継続しない場合は、[継続請求を無効にします](renew-your-subscription.md)。 有効期限日を過ぎるとサブスクリプションは期限切れになり、関連するメール通知はすべて無視できます。

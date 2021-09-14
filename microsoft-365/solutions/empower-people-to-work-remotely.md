@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: 在宅勤務、在宅勤務、ハイブリッド、リモート ワーカー、ハイブリッド ワーク、リモート従業員、ハイブリッド接続、リモート アクセス、在宅勤務、テレワーク、テレワーク、モバイル ワーク、リモート ジョブ、どこからでも作業、柔軟な職場
 description: ハイブリッド ワーカーがオンプレミスおよび Microsoft 365 のリソースに安全にアクセスできるように、インフラストラクチャのレイヤーをステップ スルーします。
-ms.openlocfilehash: 4ca2d190643b7d2bf557fcf87b4319ba4e3adc99
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 2bc5a4f1f6c6784413b716ce752855393bfed90f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566468"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179047"
 ---
 # <a name="set-up-your-infrastructure-for-hybrid-work-with-microsoft-365"></a>Microsoft 365 を使用したハイブリッドワーク用のインフラストラクチャを設定する
 
@@ -86,7 +86,7 @@ Microsoft 365 には、ハイブリッド ワーカーがオンサイトまた�
 |---|---|---|
 |セキュリティの既定値が適用されている MFA|サインインには、2 つ目の認証形式を要求することで、ID とデバイスを侵害から保護します。セキュリティの既定値では、すべてのユーザー アカウントに MFA が必要です。|Microsoft 365 E3 または E5|
 |条件付きアクセスが適用されている MFA|条件付きアクセス ポリシーを使用したサインインのプロパティに基づいて MFA を要求します。|Microsoft 365 E3 または E5|
-|リスクベースの条件付きアクセスが適用されている MFA|ユーザーが Microsoft Defender for Identity でサインインするリスクに基づいて MFA を要求します。|Azure AD Premium P2 ライセンスを含む Microsoft 365 E5 または E3|
+|リスクベースの条件付きアクセスが適用されている MFA|Azure AD Identity Protection によるユーザー サインインのリスクに基づいて MFA を要求します。|Azure AD Premium P2 ライセンスを含む Microsoft 365 E5 または E3|
 |セルフサービスによるパスワードのリセット (SSPR)|ユーザーによるパスワードまたはアカウントのリセットまたはロック解除を許可します。|Microsoft 365 E3 または E5|
 |Azure AD アプリケーション プロキシ|イントラネット サーバーでホストされている Web ベースのアプリケーションに安全なリモート アクセスを提供します。|別の有料 Azure サブスクリプションが必要|
 |Azure ポイント対サイト VPN|Azure 仮想ネットワークを介してリモート ワーカーのデバイスからイントラネットへの安全な接続を作成します。|別の有料 Azure サブスクリプションが必要|

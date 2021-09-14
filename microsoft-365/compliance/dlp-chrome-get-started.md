@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft Compliance Extension の準備と導入。
-ms.openlocfilehash: ad3fa4ae5cef1e5d4a49cbe10c36fce89252127b
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 830f068869353949927055b8859ba87c12647bcb
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564036"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59193100"
 ---
 # <a name="get-started-with-microsoft-compliance-extension"></a>Microsoft Compliance Extension を開始する
 
@@ -130,7 +130,7 @@ Microsoft Compliance Extension の展開は、多段階のプロセスです。�
 4. プロンプトが表示されたら、作成したスクリプトの場所を参照してください。
 
 5. 次の設定を選択します。
-    1. ログオンした資格情報を使用して、このスクリプトを実行する: はい
+    1. ログオンした資格情報を使用して、このスクリプトを実行する: いいえ
     1. スクリプトの署名チェックを強制する: いいえ
     1. 64 ビットの PowerShell ホストでスクリプトを実行する: はい
 

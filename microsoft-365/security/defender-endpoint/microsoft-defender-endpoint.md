@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ff8534d0b668b6a18b219297131dbd90c366cc35
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.openlocfilehash: ae0d38eec976abb88638eea3c3d2166c7203647e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823782"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213564"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint
 
@@ -152,3 +152,16 @@ EndPoint 向け Microsoft Defender は、次のようなさまざまな Microsof
 **[Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection)**
 
 EndPoint 向け Microsoft Defender および各種の Microsoft セキュリティ ソリューションは、Microsoft 365 Defender とともに侵害前と侵害後の統合されたエンタープライズ防御スイートを形成し、高度な攻撃の検出、防止、調査、およびそれに対する自動対応を、エンドポイント、ID、メール、アプリケーション全体でネイティブに統合します。
+
+
+## <a name="training-for-security-analysts"></a>セキュリティ アナリスト向けトレーニング
+
+Microsoft Learn のこの学習パスを使用すると、Defender for Endpoint と、組織のエンドポイント (デバイスとシステム) 全体の脅威の防止、検出、調査、および対応にどのように役立つかを理解できます。
+
+|トレーニング: |Microsoft 365 Defender を使用してサイバー攻撃を検出して対応する|
+|---|---|
+|![Microsoft 365 Defender トレーニング アイコン。](../../media/microsoft-365-defender/m365-defender-secure-organization.svg)|Defender for Endpoint は、脆弱性管理、エンドポイント保護、エンドポイント検出と応答、モバイル脅威防御、およびマネージドサービスを単一の統合プラットフォームで提供するエンドポイント セキュリティ ソリューションです。<p> 2 時間 25 分 - ラーニング パス - 9 モジュール|
+
+> [!div class="nextstepaction"]
+> [スタート>](/learn/paths/defender-endpoint-fundamentals/)
+

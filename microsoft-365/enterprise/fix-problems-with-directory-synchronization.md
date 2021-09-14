@@ -9,7 +9,9 @@ ms.service: o365-administration
 localization_priority: Priority
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- admindeeplinkMAC
 ms.collection:
 - Ent_O365
 - M365-identity-device-management
@@ -19,12 +21,12 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: Office 365 のディレクトリ同期の問題の一般的な原因を示し、問題のトラブルシューティングと解決に役立ついくつかの方法を紹介します。
-ms.openlocfilehash: d122fae0da8cf48336cfebf178781d84e349bd16
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 27bbe07be43c7b04b7e74f1cc600df6c1409e372
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354490"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216073"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-microsoft-365"></a>Microsoft 365 のディレクトリ同期に関する問題の修正
 
@@ -38,7 +40,7 @@ Microsoft 365 からディレクトリの同期エラーが発生したテナン
   
 ## <a name="how-do-i-get-azure-active-directory-connect-tool"></a>Azure Active Directory Connect ツールを入手する方法
 
-[Microsoft 365 管理センター](https://admin.microsoft.com) では、**[ユーザー]** \> **[アクティブ ユーザー]** の順に移動します。 **[その他]** メニュー (3つの点) をクリックして、**[ディレクトリ同期]** を選択します。 
+[Microsoft 365 管理センター](https://admin.microsoft.com)で、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**[アクティブ ユーザー]**</a> の順に移動します。 **[その他]** メニュー (3つの点) をクリックして、**[ディレクトリ同期]** を選択します。 
   
 [ウィザードの指示](set-up-directory-synchronization.md) に従って、Azure AD Connect をダウンロードします。 
   

@@ -15,17 +15,18 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Microsoft 365 Business Premium で、管理者のヘルプ、オンライン サポート、または電話でのサポートを受けるためには、ビジネス サブスクリプションの管理者であることが必要です。
-ms.openlocfilehash: f38e07cb7db25cbc6d6fa3e813d8f7c5863e4055
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: d636f153e41963ada30bd10066e4211325933cbe
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570655"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59217294"
 ---
 # <a name="get-support"></a>サポートを受ける
 
@@ -158,7 +159,7 @@ ms.locfileid: "58570655"
 
 ### <a name="open-an-online-request"></a>オンライン リクエストの登録
 
-サービス リクエストをオンラインで開始すると時間を節約できます。Microsoft 365 管理センターで、**[サポート]** \> **[新しいサービス リクエスト]** を選択してください。
+オンラインでのお問い合わせを開始すると、時間が節約されます。 1。 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>に移動し、**[サポート]** \> **[新しいサービス リクエスト]** の順に選択します。
 
 ### <a name="call-support"></a>電話でのお問い合わせ
 

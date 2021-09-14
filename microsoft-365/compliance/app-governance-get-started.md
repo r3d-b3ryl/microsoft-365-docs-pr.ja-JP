@@ -9,17 +9,18 @@ audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
+ms.custom: admindeeplinkMAC
 localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
 description: アプリを管理するためのアプリ ガバナンス機能の使用を開始します。
-ms.openlocfilehash: 9f74e2c352ccc67adbb7f1b15632cca88c75c51e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 35a04beb04f22558ca150294ebb566a8284d5270
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574894"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190031"
 ---
 # <a name="get-started-with-app-governance-in-preview"></a>アプリ ガバナンスの使用を開始する (プレビュー版)
 
@@ -141,7 +142,7 @@ Cloud App Security を使用してアプリ ガバナンスの同期を有効に
 
 プライベート プレビューに参加しておらず、アプリ ガバナンス試用版をキャンセルしたい場合は、CXE の担当者に連絡するか、以下の手順でキャンセルすることができます。
 
-1. Microsoft 365 管理センターで、[**課金情報**] > [**お使いの製品**] の順に移動します。
+1. Microsoft 365 管理センターで、[**課金情報**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">**お使いの製品**</a>] の順に移動します。
 1. アプリ ガバナンス試用版に移動し、3 つの点をクリックし、[**サブスクリプションのキャンセル**] を選択します。
 1. 表示されるフライアウト ウィンドウで、キャンセルの理由と追加のフィードバックを入力し、[**サブスクリプションのキャンセル**] を選択します。
 1. 表示されたポップアップ画面で [**サブスクリプションのキャンセル**] を選択します。 試用版がキャンセルされ、アプリ ガバナンスにアクセスできなくなり、アプリ ガバナンス データが削除されます (アプリ ガバナンスの分析情報および検出を作成するために使用されるログ データで、メールやその他のファイルは影響を受けません)。
