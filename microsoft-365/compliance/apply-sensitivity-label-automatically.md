@@ -12,16 +12,17 @@ localization_priority: Priority
 ms.collection:
 - M365-security-compliance
 ms.topic: article
+ms.custom: admindeeplinkMAC
 search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを作成する場合、ファイルまたはメールにラベルを自動的に割り当てるか、あるいは推奨するラベルを選択するようにユーザーに求めることができます。
-ms.openlocfilehash: ceea450ca55e46a5a106a5d9fd3ce9420b674d36
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.openlocfilehash: f3556096b77e775e783cd8d949e1ed5dc2c25024
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58863907"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178144"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>秘密度ラベルをコンテンツに自動的に適用する
 
@@ -123,7 +124,7 @@ Office アプリの自動ラベル付け設定は、[機密ラベルを作成ま
 
 ![ファイルとメールの秘密度ラベルの範囲オプション](../media/filesandemails-scope-options-sensitivity-label.png)
 
-ウィザード内を移動すると、**[ファイルやメールの自動ラベル付け]** ページが表示されます。このページでは、機密情報の種類またはトレーニング可能な分類子の一覧から選択できます。
+構成内を移動すると、**[ファイルやメールの自動ラベル付け]** ページが表示されます。このページでは、機密情報の種類またはトレーニング可能な分類子の一覧から選択できます。
 
 ![Office アプリでの自動ラベル付けのラベル条件](../media/sensitivity-labels-conditions.png)
 
@@ -247,7 +248,7 @@ Azure Information Protection 統合ラベル付けクライアントに関して
 
 ### <a name="creating-an-auto-labeling-policy"></a>自動ラベル付けポリシーの作成
 
-1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)で、機密ラベルに移動します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>で、機密ラベルに移動します。
 
     - [**ソリューション**]  >  [**Information Protection**]
 
@@ -260,9 +261,9 @@ Azure Information Protection 統合ラベル付けクライアントに関して
     > [!NOTE]
     > **[自動ラベル付け]** タブが表示されない場合、この機能は現在お住まいの地域ではご利用いただけません。
 
-3. [**+自動ラベル付けポリシーの作成**] を選択します。 これにより、新しいポリシー ウィザードが起動します。
+3. [**+自動ラベル付けポリシーの作成**] を選択します。 これにより、新しいポリシー構成が開始されます。
 
-    ![自動ラベル付け用の新しいポリシー ウィザード。](../media/auto-labeling-wizard.png)
+    ![自動ラベル付けの新しいポリシー構成。](../media/auto-labeling-wizard.png)
 
 4. [**このラベルを適用する情報を選択する**] ページの場合: [**財務**] または [**プライバシー**] などのテンプレートのいずれかを選択します。 ドロップダウンの **表示オプション** を使用して、検索を絞り込むことができます。 または、テンプレートが要件を満たしていない場合は、[**カスタム ポリシー**] を選択します。 [**次へ**] を選択します。
 
@@ -270,13 +271,20 @@ Azure Information Protection 統合ラベル付けクライアントに関して
 
 6. [**ラベルを適用する場所を選択する**] ページの場合: Exchange、SharePoint、OneDrive の場所を選択して指定します。 選択した場所の既定値を [**すべて**] のままにしたくない場合は、リンクを選択して特定のインスタンスを選択します。 [**次へ**] を選択します。
 
-    ![[場所] ページの自動ラベル付けウィザードを選択します。](../media/locations-auto-labeling-wizard.png)
+    ![自動ラベル付け構成の [場所の選択] ページ。](../media/locations-auto-labeling-wizard.png)
     
     個々の OneDrive アカウントを指定するには、ユーザーの OneDrive アカウントの URL は次の形式になります。 ユーザー プリンシパル名 (UPN) の場合、ピリオド、コンマ、スペース、アット 記号 ("@") などの特殊文字はアンダースコア ("_") に変換されます: `https://<tenant name>-my.sharepoint.com/personal/<user principal name>`
     
-    たとえば、Contoso テナントで UPN "rsimone@contoso.onmicrosoft.com" を持つユーザーは以下となります: `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`。 ただし、競合が検出されると、数値または GUID を追加できます。
+    たとえば、Contoso テナントで UPN "rsimone@contoso.onmicrosoft.com" を持つユーザーは以下となります: `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`。
     
-    ユーザーが自分のアカウントの URL を OneDrive アカウントで確認することは、常に適切です。それは、Microsoft 365 管理センターもしくは PowerShell で確認できます。 詳細については、「[組織の全てのユーザーの OneDrive URL の一覧を取得する](/onedrive/list-onedrive-urls)」をご覧ください。
+    または、カスタム ドメイン名を使用していて、UPN が "rsimone@contoso.com" である場合: `https://contoso-my.sharepoint.com/personal/rsimone_contoso_com`
+    
+    ただし、競合が検出された場合は URL に数字または GUID を追加できるため、常に OneDrive アカウントのユーザーの URL を確認することをお勧めします。 URL を確認するには、Microsoft 365 管理センターまたは PowerShell を使用します。 詳細については、「[組織の全てのユーザーの OneDrive URL の一覧を取得する](/onedrive/list-onedrive-urls)」をご覧ください。
+    
+    > [!NOTE]
+    > 個々の OneDrive アカウントを指定する場合、OneDrive アカウントが[事前にプロビジョ二ング](/onedrive/pre-provision-accounts)されていない限り、ユーザーが初めて OneDrive にアクセスするまで URL は作成されないことに注意してください。
+    > 
+    > また、ユーザーのUPNが変更されると、OneDrive の URL が[自動的に変更](/onedrive/upn-changes)されます。  たとえば、結婚などの名前が変わるイベント。 または、組織の名前変更やビジネス再構築をサポートするためのドメイン名の変更。 UPN が変更された場合は、ここで指定した OneDrive URL を更新する必要があります。
 
 7. [**一般または詳細ルールの設定**] ページの場合: 既定の [**一般的なルール**] のままにして、選択したすべての場所でラベル付けするコンテンツを識別するルールを定義します。 場所ごとに異なるルールが必要な場合は、[**詳細ルール**] を選択します。 [**次へ**] を選択します。
 
@@ -313,9 +321,9 @@ Azure Information Protection 統合ラベル付けクライアントに関して
 
 10. **[ポリシーを今すぐテストするか後でテストするかを決定する]** ページの場合: シミュレーション モードで、今すぐ自動ラベル付けポリシーを実行する準備が整っている場合は、**[シミュレーション モードでポリシーを実行する]** を選択します。 それ以外の場合は、**[ポリシーをオフのままにする]** を選択します。 [**次へ**] を選択します。
 
-    ![ポリシーの自動ラベル付けウィザードをテストする](../media/simulation-mode-auto-labeling-wizard.png)
+    ![構成済みの自動ラベル付けポリシーをテストします。](../media/simulation-mode-auto-labeling-wizard.png)
 
-11. **[概要]** ページの場合: 自動ラベル付けポリシーの構成を確認し、必要な変更を行い、ウィザードを完了します。
+11. **[概要]** ページの場合: 自動ラベル付けポリシーの構成を確認し、必要な変更を行い、構成を完了します。
 
 **[情報保護]** > **[自動ラベル付け]** ページでは、自動ラベル付けポリシーを **[シミュレーション]** または **[オフ]** セクションのどちらかで確認できます。これは、シミュレーション モードで実行することを選択したかどうかによって決まります。 ポリシーを選択して、構成と状態の詳細 (**[ポリシー シミュレーションの実行中]** など) を確認します。 シミュレーション モードのポリシーの場合は、**[一致したアイテム]** タブを選択して、指定したルールに一致した電子メールまたはドキュメントを確認します。
 
