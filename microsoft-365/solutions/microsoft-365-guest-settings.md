@@ -18,12 +18,12 @@ ms.custom:
 localization_priority: Priority
 recommendations: false
 description: 組織外のユーザーとの共有に影響を与える可能性がある、Microsoft 365 で使用できるゲスト共有設定について説明します。
-ms.openlocfilehash: 056152e44dbe2fc11265e64c548b1056fd72e517
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: db7622da1094dd1abf69752c6a0c41c374e80e9f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573825"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163433"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Microsoft 365 ゲストの共有設定のリファレンス
 
@@ -61,7 +61,7 @@ Microsoft 365 管理センターには、共有および Microsoft 365 グルー
 
 ### <a name="sharing"></a>共有
 
-**ナビゲーション:** [Microsoft 365 管理センター](https://admin.microsoft.com) > [設定] > [組織の設定] > [セキュリティとプライバシー] タブ > [共有]
+**ナビゲーション:** [[Microsoft 365 管理センター]](https://admin.microsoft.com) > **[設定]** > **[組織の設定]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**[セキュリティとプライバシー]** タブ</a> > **[共有]**。
 
 ![Microsoft 365 管理センターにおけるセキュリティとプライバシーのゲスト共有設定のスクリーンショット](../media/sharepoint-security-privacy-sharing-setting.png)
 
@@ -71,7 +71,7 @@ Microsoft 365 管理センターには、共有および Microsoft 365 グルー
 
 ### <a name="microsoft-365-groups"></a>Microsoft 365 グループ
 
-**ナビゲーション:**[Microsoft 365 管理センター](https://admin.microsoft.com) > [設定] > [設定] > [Microsoft 365 グループ]
+**ナビゲーション:**[[Microsoft 365 管理センター]](https://admin.microsoft.com) > **[設定]** > **[組織の設定]** > [Microsoft 365 グループ]
 
 ![Microsoft 365 管理センターにおける Microsoft 365 グループのゲスト設定のスクリーンショット](../media/office-365-groups-guest-settings.png)
 

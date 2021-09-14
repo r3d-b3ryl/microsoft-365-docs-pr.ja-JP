@@ -13,15 +13,16 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
 description: Microsoft 365 サービス正常性の状態
-ms.openlocfilehash: a8e91f3f7a5c5454413a57e8e57749ccb918d9af630b1065522fee677c4c867c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 82b5a666d4cc707981ea6da72a53bbd8d67c505d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53813140"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165255"
 ---
 # <a name="microsoft-365-network-health-status"></a>Microsoft 365 ネットワーク正常性の状態
 
@@ -31,7 +32,7 @@ ms.locfileid: "53813140"
 
 _このページの更新は遅れる可能性があります。より自動化されたソリューションを構築しつつ、手動で更新しています。_
 
-Microsoft のグローバル ネットワーク内、またはお客様と Microsoft のネットワークの間のインターネット接続で重要な問題が検出された場合、その情報をここに投稿します。 より詳細で対象を絞った情報は Microsoft 365 管理センターのサービス正常性ダッシュボードで提供されますので、ご自分のテナントに対する重要なネットワーク問題の影響を理解するために、この機能を引き続き利用することをお勧めします。
+Microsoft のグローバル ネットワーク内、またはお客様と Microsoft のネットワークの間のインターネット接続で重要な問題が検出された場合、その情報をここに投稿します。 より詳細で対象を絞った情報は Microsoft 365 管理センターの<a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">サービス正常性ダッシュボード</a>で提供されますので、ご自分のテナントに対する重要なネットワーク問題の影響を理解するために、この機能を引き続き利用することをお勧めします。
 
 ## <a name="current-network-issues"></a>現在のネットワークの問題
 

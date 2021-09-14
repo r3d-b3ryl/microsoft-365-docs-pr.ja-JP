@@ -19,20 +19,21 @@ search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkMAC
 description: Microsoft 365 コンプライアンス センターのインポート サービスを使用して、メール データ (PSTファイル) をユーザーのメールボックスに一括でインポートする方法について説明します。
-ms.openlocfilehash: d885fbcf6f4b94ec7b1716c53f6d1fa541994434
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: efb51aebcca5d724b8a1f8ecaabb6eeb5f31e8dd
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574185"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175872"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>組織の PST ファイルのインポートの概要
 
 > [!NOTE]
 > この記事は管理者向けです。 自分のメールボックスに PST ファイルをインポートしようとしていますか? 「[Outlook.pst ファイルからメール、連絡先、予定表をインポートする](https://go.microsoft.com/fwlink/p/?LinkID=785075)」を参照してください。
 
-Microsoft 365 コンプライアンス センターのインポート サービスを使用して、PST ファイルを組織の Exchange Online メールボックスにすばやく一括でインポートできます。PST ファイルを Office 365 にインポートするには 2 つの方法があります:
+<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>のインポート サービスを使用して、PST ファイルを組織の Exchange Online メールボックスにすばやく一括でインポートできます。PST ファイルを Office 365 にインポートするには 2 つの方法があります:
 
 - **ネットワークアップロード** ![クラウドアップロード。](../media/54ab16ee-3822-4551-abef-3d926f4e1c01.png) - PST ファイルをネットワーク経由で Microsoft クラウド内の一時的な Azure Storage の場所にアップロードします。 次に、Office 365 インポート サービスを使用して、組織のメールボックスに PST データをインポートします。
 
@@ -152,7 +153,7 @@ PST ファイルを Microsoft 365 メールボックスにインポートする�
 
 Using network upload to import PST files is free.
 
-つまり、PST ファイルが Azure Storage 領域から削除されると、Microsoft 365 管理センターでは、完了済みインポート ジョブのファイル一覧から PST ファイルの表示が消えます。 インポート ジョブは引き続き [**Office 365 へのデータのインポート**] ページに表示されることがありますが、古いインポート ジョブの詳細を表示すると、PST ファイルの一覧は空になっている可能性があります。
+つまり、PST ファイルが Azure Storage 領域から削除されると、[Microsoft 365 管理センター](https://go.microsoft.com/fwlink/p/?linkid=2024339)では、完了済みインポート ジョブのファイル一覧から PST ファイルの表示が消えます。 インポート ジョブは引き続き [**Office 365 へのデータのインポート**] ページに表示されることがありますが、古いインポート ジョブの詳細を表示すると、PST ファイルの一覧は空になっている可能性があります。
 
 #### <a name="what-version-of-the-pst-file-format-is-supported-for-importing-to-office-365"></a>What version of the PST file format is supported for importing to Office 365?
 

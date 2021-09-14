@@ -18,35 +18,64 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Microsoft 365 コンプライアンス センターを使用して統合監査ログを検索し、組織内のユーザーと管理者のアクティビティを確認します。
-ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9aff58f4175cd7615ad2de2a9659bec71f3f1cb8
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkMAC
+ms.openlocfilehash: a77af4e72c5eaa5d66f120f05e91913c292051ab
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574113"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175768"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>コンプライアンス センターで監査ログを検索する
 
-ユーザーが特定のドキュメントを表示したかどうか、またはメールボックスからアイテムを削除したかどうかを確認する必要がありますか。 その場合は、Microsoft 365 コンプライアンス センターを使用して統合監査ログを検索し、組織内のユーザーと管理者のアクティビティを確認できます。 なぜ統合監査ログが必要なのでしょうか。 Microsoft 365 で以下の種類の[ユーザーおよび管理アクティビティ](#audited-activities)を検索できるためです:
+ユーザーが特定のドキュメントを表示したかどうか、またはメールボックスからアイテムを削除したかどうかを確認する必要がありますか。 その場合は、Microsoft 365 コンプライアンス センターで監査ログ検索を使用して統合監査ログを検索し、組織内のユーザーと管理者のアクティビティを確認できます。 何十もの Microsoft 365 サービスやソリューションで実行された何千ものユーザーや管理者の操作は、組織の統一された監査ログにキャプチャされ、記録されて保持されます。 組織内のユーザーは、監査ログ検索ツールを使用して、これらの操作の監査レコードを検索、表示、(CSV ファイルに) エクスポートできます。
 
-- SharePoint Online および OneDrive for Business 内のユーザー アクティビティ
-- Exchange Online 内のユーザー アクティビティ (Exchange メールボックス監査ログ)
-- SharePoint Online 内の管理者アクティビティ
-- Azure Active Directory (Microsoft 365 のディレクトリ サービス) 内の管理者アクティビティ
-- Exchange Online 内の管理者アクティビティ (Exchange 管理者監査ログ)
-- セキュリティ/コンプライアンス センター内の電子情報開示アクティビティ
-- Power BI 内のユーザーおよび管理者のアクティビティ
-- Microsoft Teams 内のユーザーおよび管理者のアクティビティ
-- Dynamics 365 内のユーザーおよび管理者のアクティビティ
-- Yammer 内のユーザーおよび管理者のアクティビティ
-- Microsoft Power Automate 内のユーザーおよび管理者のアクティビティ
-- Microsoft Stream 内のユーザーおよび管理者のアクティビティ
-- Microsoft Workplace Analytics でのアナリストと管理者のアクティビティ
-- Microsoft Power Apps 内のユーザーおよび管理者のアクティビティ
-- Microsoft Forms 内のユーザーおよび管理者のアクティビティ
-- SharePoint Online または Microsoft Teams を使用するサイトの機密ラベルのユーザーおよび管理アクティビティ
-- ブリーフィング メールと MyAnalytics での管理者アクティビティ
+## <a name="microsoft-365-services-that-support-auditing"></a>監査をサポートする Microsoft 365 サービス
+
+なぜ統合監査ログが必要なのか さまざまな Microsoft 365 サービスで実行されるアクティビティを監査ログで検索できるからです。 次の表に、統合監査ログでサポートされている Microsoft 365 サービスと機能のリストを (アルファベット順に) 示します。
+
+| Microsoft 365 サービスまたは機能 | レコードの種類|
+|:---------|:---------|
+| Azure Active Directory|AzureActiveDirectory、AzureActiveDirectoryAccountLogon、AzureActiveDirectoryStsLogon |
+| Azure Information Protection|AipDiscover、AipSensitivityLabelAction、AipProtectionAction、AipFileDeleted、AipHeartBeat |
+| コンテンツ エクスプローラー|LabelContentExplorer|
+| データ損失防止 (DLP)|ComplianceDLPSharePoint、ComplianceDLPExchange|
+| Defender for Endpoint|DLPEndpoint|
+| Dynamics 365|CRM|
+| 電子情報開示|検出、AeD|
+| 完全に一致するデータ|MipExactDataMatch|
+| Exchange Online|ExchangeAdmin、ExchangeItem、ExchangeItemAggregated |
+| フォーム|MicrosoftForms|
+| 情報バリア|InformationBarrierPolicyApplication|
+| Microsoft 365 Defender|MDATPAudit、AirInvestigation、AirManualInvestigation、AirAdminActionInvestigation|
+| Microsoft Teams|MicrosoftTeams|
+| MyAnalytics|MyAnalyticsSettings|
+| OneDrive for Business|OneDrive|
+| Power Apps|PowerAppsApp、PowerAppsPlan|
+| Power Automate|MicrosoftFlow|
+| Power BI|PowerBIAudit|
+| 検疫する|検疫する|
+| アイテム保持ポリシーと保持ラベル|MIPLabel、MipAutoLabelExchangeItem、MipAutoLabelSharePointItem、MipAutoLabelSharePointPolicyLocation|
+| 機密情報の種類|DlpSensitiveInformationType|
+| 秘密度ラベル|MIPLabel、SensitivityLabelAction、SensitivityLabeledFileAction、SensitivityLabelPolicyMatch|
+| SharePoint Online|SharePoint、SharePointFileOperation、SharePointSharingOperation、SharePointListOperation、SharePointCommentOperation |
+| ストリーム|MicrosoftStream|
+| 脅威インテリジェンス|ThreatIntelligence、ThreatIntelligenceUrl、ThreatFinder、ThreatIntelligenceAtpContent|
+| Workplace Analytics|WorkplaceAnalytics|
+|Yammer|Yammer|
+|||
+
+前の表に示した、各サービスで監査される操作の詳細については、この記事の「[監査されたアクティビティ](#audited-activities)」セクションを参照してください。
+
+前の表では、Exchange Online PowerShell または PowerShell スクリプトを使用して **Search-UnifiedAuditLog** コマンドレットを使用して、対応するサービス内のアクティビティの監査ログを検索するために使用するレコードの種類の値も示しています。 一部のサービスには、同じサービス内のさまざまな種類のアクティビティに対して複数のレコードの種類があります。 監査レコードの種類のより完全なリストについては、「[Office 365 マネージメント アクティビティ API スキーマ](/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype)」を参照してください。
+
+ PowerShell を使用して監査ログを検索する方法の詳細については、以下を参照してください。
+
+- [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog)
+
+- [PowerShell スクリプトを使用して監査ログを検索する](audit-log-search-script.md)
 
 ## <a name="before-you-search-the-audit-log"></a>監査ログを検索する前に
 
@@ -91,7 +120,7 @@ ms.locfileid: "58574113"
 
   詳細については、「[監査ログの検索を無効にする](turn-audit-log-search-on-or-off.md)」を参照してください。
 
-- 前述のように、監査ログの検索に使用される基礎となるコマンドレットは Exchange Online コマンドレットの **Search-UnifiedAuditLog** です。 つまり、Microsoft 365 コンプライアンス センターの **[監査ログの検索]** ページではなく、このコマンドレットを使用して監査ログを検索できます。 このコマンドレットは、Exchange Online 組織に接続されているリモートの PowerShell で実行する必要があります。 詳細については、「[Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog)」を参照してください。
+- 前述のように、監査ログの検索に使用される基礎となるコマンドレットは Exchange Online コマンドレットの **Search-UnifiedAuditLog** です。 つまり、Microsoft 365 コンプライアンス センターの **[監査]** ページにある検索ツールを使う代わりに、このコマンドレットを使用して監査ログを検索できます。 このコマンドレットは、Exchange Online PowerShell で実行する必要があります。 詳細については、「[Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog)」を参照してください。
 
   **Search-UnifiedAuditLog** コマンドレットによって返された検索結果を CSV ファイルにエクスポートする方法の詳細については、「[監査ログ レコードをエクスポート、構成、表示する](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log)」の「監査ログをエクスポート、表示するためのヒント」のセクションを参照してください。
 
@@ -99,9 +128,6 @@ ms.locfileid: "58574113"
 
 - イベントが発生してから対応する監査ログ レコードが監査ログ検索の結果に返されるまで最長 30 分または最長 24 時間かかる場合があります。次の表は、Office 365 のさまざまなサービスで、この処理に要する時間を示しています。
 
-  <br>
-
-  ****
 
   |Microsoft 365 サービスまたは機能|30 分|24 時間|
   |---|:---:|:---:|
@@ -113,7 +139,6 @@ ms.locfileid: "58574113"
   |電子情報開示|![チェック マーク。](../media/checkmark.png)||
   |Exchange Online|![チェック マーク。](../media/checkmark.png)||
   |Microsoft Power Automate||![チェック マーク。](../media/checkmark.png)|
-  |Microsoft Project|![チェック マーク。](../media/checkmark.png)||
   |Microsoft Stream|![チェック マーク。](../media/checkmark.png)||
   |Microsoft Teams|![チェック マーク。](../media/checkmark.png)||
   |Power アプリ||![チェック マーク。](../media/checkmark.png)|
@@ -124,9 +149,9 @@ ms.locfileid: "58574113"
   |Workplace Analytics|![チェック マーク。](../media/checkmark.png)||
   |Yammer||![チェック マーク。](../media/checkmark.png)|
   |Microsoft Forms|![チェック マーク。](../media/checkmark.png)||
-  |
+  ||||
 
-- Azure Active Directory (Azure AD) は、Office 365 のディレクトリ サービスです。 統合監査ログには、Microsoft 365 管理センターまたは Azure 管理ポータルで実行されたユーザー、グループ、アプリケーション、ドメイン、およびディレクトリのアクティビティが記録されます。 Azure AD のイベントの全リストについては、「[Azure Active Directory 監査レポートのイベント](/azure/active-directory/reports-monitoring/concept-audit-logs)」を参照してください。
+- Azure Active Directory (Azure AD) は、Office 365 のディレクトリ サービスです。 統合監査ログには、<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>または Azure 管理ポータルで実行されたユーザー、グループ、アプリケーション、ドメイン、およびディレクトリのアクティビティが記録されます。 Azure AD のイベントの全リストについては、「[Azure Active Directory 監査レポートのイベント](/azure/active-directory/reports-monitoring/concept-audit-logs)」を参照してください。
 
 - Power BI の監査ログは、既定では有効になっていません。 監査ログ内の Power BI アクティビティを検索するには、Power BI 管理ポータルで監査を有効にする必要があります。 手順については、[Power BI 管理ポータル](/power-bi/service-admin-portal#audit-logs)の「監査ログ」セクションをご覧ください。
 
@@ -655,7 +680,7 @@ FilePreviewed イベントと FileAccessed イベントの両方が、ユーザ�
 
 ### <a name="user-administration-activities"></a>ユーザー管理アクティビティ
 
-次の表では、管理者が Microsoft 365 管理センターまたは Azure 管理ポータルを使用してユーザー アカウントを追加または変更したときに記録されるユーザー管理アクティビティを一覧表示します。
+次の表では、管理者が [Microsoft 365 管理センター](https://go.microsoft.com/fwlink/p/?linkid=2024339)または Azure 管理ポータルを使用してユーザー アカウントを追加または変更したときに記録されるユーザー管理アクティビティを一覧表示します。
 
 > [!NOTE]
 > 次の表の **[操作]** 列にリストされている操作名には、ピリオド ( `.` ) が含まれています。 監査ログの検索、監査保持ポリシーの作成、アラート ポリシーの作成、またはアクティビティ アラートの作成時に PowerShell コマンドで操作を指定する場合は、操作名にピリオドを含める必要があります。 また、操作名を含める場合は、二重引用符 (`" "`) を使用してください。
@@ -674,7 +699,7 @@ FilePreviewed イベントと FileAccessed イベントの両方が、ユーザ�
 
 ### <a name="azure-ad-group-administration-activities"></a>Azure AD グループ管理アクティビティ
 
-次の表に、管理者かユーザーが Microsoft 365 グループを作成または変更したとき、あるいは管理者が Microsoft 365 管理センターか Azure 管理ポータルを使用してセキュリティ グループを作成したときに記録されるグループ管理アクティビティを示します。 Office 365 のグループの詳細については、「[Microsoft 365 管理センターでグループを表示、作成、削除する](../admin/create-groups/create-groups.md)」を参照してください。
+次の表に、管理者かユーザーが Microsoft 365 グループを作成または変更したとき、あるいは管理者が [Microsoft 365 管理センター](https://go.microsoft.com/fwlink/p/?linkid=2024339)か Azure 管理ポータルを使用してセキュリティ グループを作成したときに記録されるグループ管理アクティビティを示します。 Office 365 のグループの詳細については、「[Microsoft 365 管理センターでグループを表示、作成、削除する](../admin/create-groups/create-groups.md)」を参照してください。
 
 > [!NOTE]
 > 次の表の **[操作]** 列にリストされている操作名には、ピリオド ( `.` ) が含まれています。 監査ログの検索、監査保持ポリシーの作成、アラート ポリシーの作成、またはアクティビティ アラートの作成時に PowerShell コマンドで操作を指定する場合は、操作名にピリオドを含める必要があります。 また、操作名を含める場合は、二重引用符 (`" "`) を使用してください。
@@ -708,7 +733,7 @@ FilePreviewed イベントと FileAccessed イベントの両方が、ユーザ�
 
 ### <a name="role-administration-activities"></a>役割管理アクティビティ
 
-次の表に、管理者が Microsoft 365 管理センターまたは Azure 管理ポータルで管理者の役割を管理したときに記録される Azure AD の役割管理アクティビティを示します。
+次の表に、管理者が [Microsoft 365 管理センター](https://go.microsoft.com/fwlink/p/?linkid=2024339)または Azure 管理ポータルで管理者の役割を管理したときに記録される Azure AD の役割管理アクティビティを示します。
 
 > [!NOTE]
 > 次の表の **[操作]** 列にリストされている操作名には、ピリオド ( `.` ) が含まれています。 監査ログの検索、監査保持ポリシーの作成、アラート ポリシーの作成、またはアクティビティ アラートの作成時に PowerShell コマンドで操作を指定する場合は、操作名にピリオドを含める必要があります。 また、操作名を含める場合は、二重引用符 (`" "`) を使用してください。
@@ -722,7 +747,7 @@ FilePreviewed イベントと FileAccessed イベントの両方が、ユーザ�
 
 ### <a name="directory-administration-activities"></a>ディレクトリ管理アクティビティ
 
-次の表に、管理者が Microsoft 365 管理センターまたは Azure 管理ポータルで組織を管理したときに記録される Azure AD ディレクトリおよびドメイン関連のアクティビティを示します。
+次の表に、管理者が [Microsoft 365 管理センター](https://go.microsoft.com/fwlink/p/?linkid=2024339)または Azure 管理ポータルで組織を管理したときに記録される Azure AD ディレクトリおよびドメイン関連のアクティビティを示します。
 
 > [!NOTE]
 > 次の表の **[操作]** 列にリストされている操作名には、ピリオド ( `.` ) が含まれています。 監査ログの検索、監査保持ポリシーの作成、アラート ポリシーの作成、またはアクティビティ アラートの作成時に PowerShell コマンドで操作を指定する場合は、操作名にピリオドを含める必要があります。 また、操作名を含める場合は、二重引用符 (`" "`) を使用してください。

@@ -130,19 +130,19 @@
               href: ../defender-identity/notifications.md
     - name: 脅威の調査と対応
       items:
-        - name: インシデント
+        - name: インシデントへの対応
           items:
             - name: 概要
               href: incidents-overview.md
-            - name: 優先度設定
+            - name: インシデントの優先度を設定する
               href: incident-queue.md
-            - name: 管理
+            - name: インシデントを管理する
               href: manage-incidents.md
-            - name: 調査
+            - name: インシデントを調査する
               href: investigate-incidents.md
-            - name: インシデント アラート
+            - name: アラートを調査する
               href: investigate-alerts.md
-            - name: インシデント ユーザー
+            - name: ユーザーの調査
               href: investigate-users.md
             - name: 最初のインシデントに対応する
               items:
@@ -164,15 +164,9 @@
                       href: first-incident-path-identity.md
             - name: インシデント対応プレイブック
               href: /security/compass/incident-response-playbooks
-            - name: メール通知
+            - name: インシデントのメール通知を取得する
               href: get-incident-notifications.md
-        - name: 脅威の分析
-          items:
-            - name: 新しい脅威を追跡して対応する
-              href: threat-analytics.md
-            - name: アナリスト レポートの離解
-              href: threat-analytics-analyst-reports.md
-        - name: 自動調査および対応
+        - name: 自動調査と応答
           items:
             - name: 概要
               href: m365d-autoir.md
@@ -188,9 +182,9 @@
               href: m365d-autoir-results.md
             - name: 誤検知と否定に対処する
               href: m365d-autoir-report-false-positives-negatives.md
-        - name: 高度な検出
+        - name: 高度な追及で脅威を検索する
           items:
-            - name: 高度な検出の概要
+            - name: 概要
               href: advanced-hunting-overview.md
             - name: サンプルを学習、トレーニングして取得する
               items:
@@ -212,7 +206,7 @@
               href: advanced-hunting-query-results.md
             - name: クエリ結果に対し、アクションを行う
               href: advanced-hunting-take-action.md
-            - name: 検出する
+            - name: go hunt を使用してすばやく調査する
               href: advanced-hunting-go-hunt.md
             - name: エラーを最適化し処理する
               items:
@@ -300,15 +294,21 @@
                   href: custom-detections-overview.md
                 - name: 検出ルールの作成と管理
                   href: custom-detection-rules.md
-        - name: Microsoft 脅威エキスパート
+        - name: 新しい脅威を追跡して対応する
           items:
-            - name: Microsoft 脅威エキスパートの概要
+            - name: 脅威の分析の概要
+              href: threat-analytics.md
+            - name: アナリスト レポートの理解
+              href: threat-analytics-analyst-reports.md
+        - name: Microsoft 脅威エキスパートと共同作業する
+          items:
+            - name: 概要
               href: ../mtp/microsoft-threat-experts.md
             - name: Microsoft 脅威エキスパートの機能を構成および管理する
               href: ../mtp/configure-microsoft-threat-experts.md
-        - name: Microsoft 365 Defender をセキュリティ運用に統合する
+        - name: Microsoft 365 Defender の SecOps 統合
           items:
-            - name: はじめに
+            - name: 概要
               href: integrate-microsoft-365-defender-secops.md
             - name: 手順 1. 運用の前提条件
               href: integrate-microsoft-365-defender-secops-plan.md
@@ -322,7 +322,7 @@
               href: integrate-microsoft-365-defender-secops-use-cases.md
             - name: 手順 6. SOC メンテナンス タスク
               href: integrate-microsoft-365-defender-secops-tasks.md
-        - name: Power Automate を使用する
+        - name: Power Automate を使用して脅威をトリアージする
           href: use-power-automate.md
     - name: 使い方ガイド
       items:
