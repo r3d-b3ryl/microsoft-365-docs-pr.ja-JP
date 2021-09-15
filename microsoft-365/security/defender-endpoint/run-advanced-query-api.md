@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 54883ab437dcf01b042b5458bdc6312eaf24d179
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f85c4cd8cf5d657e4043aae80da8b3dae989a29d
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218314"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59356624"
 ---
 # <a name="advanced-hunting-api"></a>高度なハンティング API
 
@@ -49,7 +49,7 @@ ms.locfileid: "59218314"
 
 4. 1 つの要求の最大実行時間は 10 分です。
 
-5. 429 応答は、要求数または CPU によってクォータ制限に達した値を表します。 応答本文を読み取り、どの制限に達したのかを理解します。 
+5. 429 応答は、要求数または CPU によってクォータ制限に達した値を表します。 応答本文を読み取り、どの制限に達したのかを理解します。
 
 6. 1 つの要求のクエリ結果の最大サイズは 124 MB を超えすることはできません。 超過した場合、HTTP 400 Bad Request メッセージ "クエリの実行が許可された結果サイズを超えました。 結果の量を制限してクエリを最適化し、もう一度やり直してください」と表示されます。
 
@@ -60,7 +60,7 @@ ms.locfileid: "59218314"
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
 アプリケーション|AdvancedQuery.Read.All|'高度なクエリを実行する'
-委任 (職場または学校アカウント)|AdvancedQuery.Read|'高度なクエリを実行する'
+委任 (職場または学校のアカウント)|AdvancedQuery.Read|'高度なクエリを実行する'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
@@ -78,16 +78,16 @@ POST https://api.securitycenter.microsoft.com/api/advancedqueries/run
 
 ヘッダー|値
 :---|:---
-Authorization|ベアラー {token}。 **必須**
+Authorization|ベアラー {token}。 **必須**。
 Content-Type|application/json
 
 ## <a name="request-body"></a>要求本文
 
 要求本文で、JSON オブジェクトに次のパラメーターを指定します。
 
-パラメーター|型|説明
+パラメーター|種類|説明
 :---|:---|:---
-クエリ|テキスト|実行するクエリ。 **必須**
+クエリ|テキスト|実行するクエリ。 **必須**。
 
 ## <a name="response"></a>応答
 
@@ -105,7 +105,7 @@ POST https://api.securitycenter.microsoft.com/api/advancedqueries/run
 
 ```json
 {
-    "Query":"DeviceProcessEvents  
+    "Query":"DeviceProcessEvents
 |where InitiatingProcessFileName =~ 'powershell.exe'
 |where ProcessCommandLine contains 'appdata'
 |project Timestamp, FileName, InitiatingProcessFileName, DeviceId

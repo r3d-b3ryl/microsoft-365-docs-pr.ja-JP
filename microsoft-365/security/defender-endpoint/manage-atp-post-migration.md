@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: conceptual
 ms.date: 01/26/2021
 ms.reviewer: chventou
-ms.openlocfilehash: 2d34ec5ac2fe7578e610353a21f9230c699c6a3c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 77777de720d369c09f62d4a7e17e8b4cf5a3519b
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220446"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59356827"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-post-migration"></a>Microsoft Defender for Endpoint の管理、移行後
 
@@ -41,9 +41,7 @@ ms.locfileid: "59220446"
 
 次の表に、使用できるさまざまなツール/メソッドの一覧と、詳細へのリンクを示します。
 
-<br>
-
-****
+<br/><br/>
 
 |ツール/メソッド|説明|
 |---|---|
@@ -52,7 +50,6 @@ ms.locfileid: "59220446"
 |**[Microsoft Endpoint Configuration Manager](/mem/configmgr/core/understand/introduction)**|Microsoft エンドポイント マネージャー (Configuration Manager) (以前は System Center Configuration Manager と呼ばれる) は、Microsoft エンドポイント マネージャー の[コンポーネントです](/mem/endpoint-manager-overview)。 Configuration Manager は、ユーザー、デバイス、ソフトウェアを管理するための強力なツールです。 <p> 「Manage [Microsoft Defender for Endpoint with Configuration Manager」を参照してください](manage-atp-post-migration-configuration-manager.md)。|
 |**[ドメイン サービスのグループ Azure Active Directory オブジェクト](/azure/active-directory-domain-services/manage-group-policy)**|[Azure Active Directoryドメイン サービスには、](/azure/active-directory-domain-services/overview)ユーザーとデバイス用の組み込みのグループ ポリシー オブジェクトが含まれています。 環境で必要に応じて組み込みのグループ ポリシー オブジェクトをカスタマイズし、カスタム グループ ポリシー オブジェクトと組織単位 (OUs) を作成できます。 <p> 「 [グループ ポリシー オブジェクトを使用した Microsoft Defender for Endpoint の管理」を参照してください](manage-atp-post-migration-group-policy-objects.md)。|
 |**[PowerShell、WMI、MPCmdRun.exe](manage-atp-post-migration-other-tools.md)**|*組織のデバイスMicrosoft エンドポイント マネージャー脅威保護機能を管理するには、Intune と Configuration Manager を含むセキュリティ ポリシー (Intune と Configuration Manager を含む) を使用することをお勧めします。ただし、PowerShell、WMI、または Microsoft Defender ウイルス対策 ツールを使用して、個々のデバイス (エンドポイント) の設定などの一部の設定MPCmdRun.exeできます。* <p> PowerShell を使用して、攻撃Microsoft Defender ウイルス対策、攻撃表面の縮小ルールを管理できます。 「Configure [Microsoft Defender for Endpoint with PowerShell」を参照してください](manage-atp-post-migration-other-tools.md#configure-microsoft-defender-for-endpoint-with-powershell)。 <p> 管理インストルメンWindows (WMI) を使用して、Microsoft Defender ウイルス対策除外を管理できます。 「Configure [Microsoft Defender for Endpoint with WMI」を参照してください](manage-atp-post-migration-other-tools.md#configure-microsoft-defender-for-endpoint-with-windows-management-instrumentation-wmi)。 <p> Microsoft Malware Protection Command-Line ユーティリティ (MPCmdRun.exe) を使用して、Microsoft Defender ウイルス対策 と除外を管理し、ネットワークとクラウド間の接続を検証できます。 「Configure [Microsoft Defender for Endpoint with MPCmdRun.exe」 を参照してください ](manage-atp-post-migration-other-tools.md#configure-microsoft-defender-for-endpoint-with-microsoft-malware-protection-command-line-utility-mpcmdrunexe)。|
-|
 
 ## <a name="see-also"></a>関連項目
 

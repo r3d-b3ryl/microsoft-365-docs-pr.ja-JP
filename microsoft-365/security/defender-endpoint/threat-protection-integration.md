@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 016ee07b9f57117b313b65ea89773fb84a08e99d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8f842c46f87e51d026f1e1793e3cc73d25b0739c
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164927"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59357042"
 ---
 # <a name="microsoft-defender-for-endpoint-and-other-microsoft-solutions"></a>エンドポイント向け Microsoft Defender および他の Microsoft ソリューション
 
@@ -39,39 +39,48 @@ ms.locfileid: "59164927"
 Microsoft Defender for Endpoint は、さまざまな Microsoft ソリューションと直接統合します。
 
 ### <a name="azure-defender"></a>Azure Defender
+
 Microsoft Defender for Endpoint は、エンドポイント検出と応答 (EDR) 機能を含む包括的なサーバー保護ソリューションをWindowsします。
 
 ### <a name="azure-sentinel"></a>Azure Sentinel
+
 Microsoft Defender for Endpoint コネクタを使用すると、Microsoft Defender for Endpoint から Azure Sentinel にアラートをストリーミングできます。 これにより、組織全体のセキュリティ イベントをより包括的に分析し、プレイブックを構築して効果的かつ迅速に対応できます。
 
 ### <a name="azure-information-protection"></a>Azure Information Protection
+
 エンドポイント DLP 機能には、ソリューション間の可視性と統合を容易にするエンドポイント デバイスに保存されている機密データの検出と保護ソリューションが強化されたので、Azure Information Protection の統合は最近廃止されました。 これは、次のブログで発表 [されました](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protecting-sensitive-information-on-devices/ba-p/2143555)。 エンドポイント DLP の使用に移行することをお勧めします。
 
 ### <a name="conditional-access"></a>条件付きアクセス
-Microsoft Defender for Endpoint の動的デバイス リスク スコアは条件付きアクセス評価に統合され、セキュリティで保護されたデバイスだけがリソースにアクセスできます。 
+
+Microsoft Defender for Endpoint の動的デバイス リスク スコアは条件付きアクセス評価に統合され、セキュリティで保護されたデバイスだけがリソースにアクセスできます。
 
 ### <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
+
 Microsoft Cloud App Securityは、Microsoft Defender for Endpoint シグナルを活用して、サポートされていないクラウド サービス (シャドウ IT) をすべての Microsoft Defender for Endpoint 監視対象デバイスから使用するなど、クラウド アプリケーションの使用状況を直接可視化できます。
 
 ### <a name="microsoft-defender-for-identity"></a>Microsoft Defender for Identity
+
 疑わしいアクティビティは、ユーザー コンテキストで実行されているプロセスです。 Microsoft Defender for Endpoint と Microsoft Defender for Identity の統合により、アクティビティと ID 全体でサイバーセキュリティ調査を柔軟に実施できます。
 
 ### <a name="microsoft-defender-for-office"></a>Microsoft Defender for Office
-[Defender for Office 365](/office365/securitycompliance/office-365-atp)は、セーフ リンク、セーフ 添付ファイル、高度なフィッシング対策、スプーフィング インテリジェンス機能を通じて、電子メール メッセージまたはファイル内のマルウェアから組織を保護するのに役立ちます。 Microsoft Defender for Office 365 と Microsoft Defender for Endpoint の統合により、セキュリティ アナリストは攻撃のエントリ ポイントを調査するために上流に移動できます。 脅威インテリジェンスの共有を通じて、攻撃を封じ込め、ブロックすることができます。 
 
->[!NOTE]
+[Defender for Office 365](/office365/securitycompliance/office-365-atp)は、セーフ リンク、セーフ 添付ファイル、高度なフィッシング対策、スプーフィング インテリジェンス機能を通じて、電子メール メッセージまたはファイル内のマルウェアから組織を保護するのに役立ちます。 Microsoft Defender for Office 365 と Microsoft Defender for Endpoint の統合により、セキュリティ アナリストは攻撃のエントリ ポイントを調査するために上流に移動できます。 脅威インテリジェンスの共有を通じて、攻撃を封じ込め、ブロックすることができます。
+
+> [!NOTE]
 > 過去 30 日以内Office 365データの Defender が表示されます。 アラートの場合、最初のOffice 365に基づいて、データの Defender が表示されます。 その後、データは Defender で使用できなくなりました。Office 365。
 
 ### <a name="skype-for-business"></a>Skype for Business
+
 このSkype for Business統合により、アナリストはポータルからの簡単なボタンを使用して、侵害される可能性のあるユーザーまたはデバイスの所有者と通信できます。
 
 ## <a name="microsoft-365-defender"></a>Microsoft 365 Defender
-Microsoft 365 Defender では、Microsoft Defender for Endpoint およびさまざまな Microsoft セキュリティ ソリューションが統合された侵害前および侵害後のエンタープライズ防御スイートを形成し、エンドポイント、ID、電子メール、およびアプリケーション間でネイティブに統合され、高度な攻撃を検出、防止、調査、および自動的に対応できます。 
- 
+
+Microsoft 365 Defender では、Microsoft Defender for Endpoint およびさまざまな Microsoft セキュリティ ソリューションが統合された侵害前および侵害後のエンタープライズ防御スイートを形成し、エンドポイント、ID、電子メール、およびアプリケーション間でネイティブに統合され、高度な攻撃を検出、防止、調査、および自動的に対応できます。
+
 [詳細については、Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)
 
-
 ## <a name="related-topics"></a>関連項目
+
 - [統合などの高度な機能を構成する](advanced-features.md)
 - [Microsoft 365 Defender概要](/microsoft-365/security/defender/microsoft-threat-protection)
 - [Microsoft 365 Defender を有効にする](/microsoft-365/security/defender/mtp-enable)

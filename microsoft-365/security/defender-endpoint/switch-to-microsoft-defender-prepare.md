@@ -23,12 +23,12 @@ ms.topic: article
 ms.custom: migrationguides
 ms.date: 08/16/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: b46cc436c9ff616f5562787327df8ec9031e0ead
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0b927f9bfb1ad9949adc8789b4dfd90b4e56c60b
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164942"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59357054"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>エンドポイント用 Microsoft Defender に切り替える - フェーズ 1: 準備
 
@@ -40,7 +40,7 @@ ms.locfileid: "59164942"
 |--|--|--|
 |*お前はここにいる!*| | |
 
-**Defender for Endpoint への切り [替えの準備フェーズへようこそ](switch-to-microsoft-defender-migration.md#the-migration-process)**。 
+**Defender for Endpoint への切り [替えの準備フェーズへようこそ](switch-to-microsoft-defender-migration.md#the-migration-process)**。
 
 この移行フェーズには、次の手順が含まれます。
 
@@ -55,35 +55,37 @@ ms.locfileid: "59164942"
 
 ### <a name="make-sure-your-existing-solution-is-up-to-date"></a>既存のソリューションが最新の情報を提供する
 
-既存のエンドポイント保護ソリューションを最新の状態に保ち、組織のデバイスに最新のセキュリティ更新プログラムが含まれています。 
+既存のエンドポイント保護ソリューションを最新の状態に保ち、組織のデバイスに最新のセキュリティ更新プログラムが含まれています。
 
-サポートが必要な場合 ソリューション プロバイダーのドキュメントを参照してください。
+お困りの際は、 ソリューション プロバイダーのドキュメントを参照してください。
 
 ### <a name="make-sure-your-organizations-devices-are-up-to-date"></a>組織のデバイスが最新の情報を提供する
 
 組織のデバイスの更新に関するヘルプが必要ですか? 以下のリソースを参照してください。
 
-|OS | Resource |
-|:--|:--|
-|Windows |[Microsoft Update](https://www.update.microsoft.com) |
-|macOS | [Mac でソフトウェアを更新する方法](https://support.apple.com/HT201541)|
-|iOS |[iPod touch iPhone、iPad、または iPod touch を更新する](https://support.apple.com/HT204204)|
-|Android |[Android &更新する方法を確認する](https://support.google.com/android/answer/7680439) |
-|Linux | [Linux 101: システムの更新](https://www.linux.com/training-tutorials/linux-101-updating-your-system) |
+<br/><br/>
+
+|OS|リソース|
+|---|---|
+|Windows|[Microsoft Update](https://www.update.microsoft.com)|
+|macOS|[Mac でソフトウェアを更新する方法](https://support.apple.com/HT201541)|
+|iOS|[iPod touch iPhone、iPad、または iPod touch を更新する](https://support.apple.com/HT204204)|
+|Android|[Android &更新する方法を確認する](https://support.google.com/android/answer/7680439)|
+|Linux|[Linux 101: システムの更新](https://www.linux.com/training-tutorials/linux-101-updating-your-system)|
 
 ## <a name="get-microsoft-defender-for-endpoint"></a>エンドポイントの Microsoft Defender を取得する
 
 組織のデバイスを更新したので、次の手順では、Defender for Endpoint を取得し、ライセンスを割り当て、サービスがプロビジョニングされているのを確認します。
 
-1. Defender for Endpoint を今すぐ購入または試してみてください。 [無料試用版を開始するか、見積もりを要求します](https://aka.ms/mdatp)。 
+1. Defender for Endpoint を今すぐ購入または試してみてください。 [無料試用版を開始するか、見積もりを要求します](https://aka.ms/mdatp)。
 
 2. ライセンスが適切にプロビジョニングされていることを確認します。 [ライセンスの状態を確認します](production-deployment.md#check-license-state)。
 
 3. Defender for Endpoint の専用クラウド インスタンスをセットアップします。 「Defender [for Endpoint setup: Tenant configuration」を参照してください](production-deployment.md#tenant-configuration)。
 
 4. 組織内のエンドポイント (デバイスなど) がプロキシを使用してインターネットにアクセスする場合は [、「Defender for Endpoint setup: Network configuration」を参照してください](production-deployment.md#network-configuration)。
- 
-この時点で、管理者ポータル () を使用するセキュリティ管理者およびセキュリティオペレーターにアクセス権を付与Microsoft 365 Defenderできます [https://security.microsoft.com](https://security.microsoft.com) 。 
+
+この時点で、管理者ポータル () を使用するセキュリティ管理者およびセキュリティオペレーターにアクセス権を付与Microsoft 365 Defenderできます [https://security.microsoft.com](https://security.microsoft.com) 。
 
 > [!NOTE]
 > ポータルMicrosoft 365 Defender Defender for Endpoint ポータルと呼ばれる場合があります。. [https://security.microsoft.com](https://security.microsoft.com) 以前のMicrosoft Defender セキュリティ センター ( https://securitycenter.windows.com) は、すぐにポータルにMicrosoft 365 Defenderされます。 詳細については、「ポータルの概要[Microsoft 365 Defender」を参照してください](portal-overview.md)。
@@ -110,14 +112,16 @@ ms.locfileid: "59164942"
 
 デバイスと Defender for Endpoint 間の通信を有効にするには、プロキシとインターネットの設定を構成します。 次の表に、さまざまなオペレーティング システムと機能のプロキシとインターネット設定を構成するために使用できるリソースへのリンクを示します。
 
-| 機能  | オペレーティング システム | リソース |
-|:--|:--|:--|
-| [エンドポイントの検出と応答](overview-endpoint-detection-response.md)(EDR) | [Windows 10](/windows/release-health/release-information) <br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/>[Windowsサーバー 1803 以降](/windows-server/get-started/whats-new-in-windows-server-1803)  | [コンピューター プロキシとインターネット接続の設定を構成する](configure-proxy-internet.md) |
-| EDR | [Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016) <br/>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/>[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |[プロキシとインターネット接続の設定を構成する](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings) |
-| EDR  | macOS: 11.3.1 (Big Sur);10.15 (Catalina);10.14 (Mojave)   | [macOS 上のエンドポイントの Defender: ネットワーク接続](microsoft-defender-endpoint-mac.md#network-connections)  |
-| [Microsoft Defender ウイルス対策](microsoft-defender-antivirus-in-windows-10.md) | [Windows 10](/windows/release-health/release-information) <br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/>[Windowsサーバー 1803 以降](/windows-server/get-started/whats-new-in-windows-server-1803) <br/>[Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) | [Microsoft Defender ウイルス対策 ネットワーク接続を構成および検証する](configure-network-connections-microsoft-defender-antivirus.md) |
-| ウイルス対策 | macOS: 11.3.1 (Big Sur);10.15 (Catalina);10.14 (Mojave) | [macOS 上のエンドポイントの Defender: ネットワーク接続](microsoft-defender-endpoint-mac.md#network-connections) |
-| ウイルス対策 | Linux: RHEL 7.2+;CentOS Linux 7.2+;Ubuntu 16 LTS 以上の LTS。SLES 12+;Debian 9+;Oracle Linux 7.2 | [Defender for Endpoint on Linux: Network connections](microsoft-defender-endpoint-linux.md#network-connections) |
+<br/><br/>
+
+|機能|オペレーティング システム|リソース|
+|---|---|---|
+|[エンドポイントの検出と応答](overview-endpoint-detection-response.md)(EDR)|[Windows 10](/windows/release-health/release-information) <p> [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019) <p> [Windowsサーバー 1803 以降](/windows-server/get-started/whats-new-in-windows-server-1803)|[コンピューター プロキシとインターネット接続の設定を構成する](configure-proxy-internet.md)|
+|EDR|[Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016) <p> [Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2) <p> [Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) <p> [Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2) <p> [Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)|[プロキシとインターネット接続の設定を構成する](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings)|
+|EDR|macOS: 11.3.1 (Big Sur);10.15 (Catalina);10.14 (Mojave)|[macOS 上のエンドポイントの Defender: ネットワーク接続](microsoft-defender-endpoint-mac.md#network-connections)|
+|[Microsoft Defender ウイルス対策](microsoft-defender-antivirus-in-windows-10.md)|[Windows 10](/windows/release-health/release-information) <p> [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019) <p> [Windowsサーバー 1803 以降](/windows-server/get-started/whats-new-in-windows-server-1803) <p> [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)|[Microsoft Defender ウイルス対策 ネットワーク接続を構成および検証する](configure-network-connections-microsoft-defender-antivirus.md)|
+|ウイルス対策|macOS: 11.3.1 (Big Sur);10.15 (Catalina);10.14 (Mojave)|[macOS 上のエンドポイントの Defender: ネットワーク接続](microsoft-defender-endpoint-mac.md#network-connections)|
+|ウイルス対策|Linux: RHEL 7.2+;CentOS Linux 7.2+;Ubuntu 16 LTS 以上の LTS。SLES 12+;Debian 9+;Oracle Linux 7.2|[Defender for Endpoint on Linux: Network connections](microsoft-defender-endpoint-linux.md#network-connections)|
 
 ## <a name="next-step"></a>次の手順
 

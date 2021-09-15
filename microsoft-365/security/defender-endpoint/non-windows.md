@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a975daa6b73f39722b077cda307aa5ea806b1e1b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fd4e983f344d4f6193d43ca3103bd2af3548fb75
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189440"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59356791"
 ---
 # <a name="microsoft-defender-for-endpoint-for-non-windows-platforms"></a>Windows 以外のプラットフォームの Microsoft Defender for Endpoint
 
@@ -32,7 +32,6 @@ ms.locfileid: "59189440"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Microsoft は、業界をリードするエンドポイント セキュリティ機能を、Windows および Windows Server から macOS、Linux、Android、および iOS に拡張する取り組み中です。
@@ -41,17 +40,17 @@ Microsoft は、業界をリードするエンドポイント セキュリティ
 
 Microsoft Defender for Endpoint を使用すると、Microsoft Defender セキュリティ センター プラットフォームと Windows Windows 以外のプラットフォームで、Microsoft Defender セキュリティ センター のすべての脅威とアラートの統合ビューを利用して、環境内で何が起こっているかを完全に理解し、脅威の評価と対応を迅速に行えます。
 
-## <a name="microsoft-defender-for-endpoint-on-macos"></a>macOS 用 Microsoft Defender for Endpoint 
+## <a name="microsoft-defender-for-endpoint-on-macos"></a>macOS 用 Microsoft Defender for Endpoint
 
 Microsoft Defender for Endpoint on macOS では、最新リリースバージョンの macOS に対して、ウイルス対策、エンドポイント検出と応答 (EDR)、脆弱性の管理 機能が提供されます。 顧客は、ソリューションを展開および管理するには、Microsoft エンドポイント マネージャー Jamf を使用します。 macOS 上Microsoft Officeアプリケーションと同様に、Microsoft Auto Update を使用して Microsoft Defender for Endpoint on Mac 更新プログラムを管理します。 主な機能と利点については、お知らせをご [覧ください](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/macOS)。
 
 開始方法の詳細については、「Defender for Endpoint on macOS」のドキュメントを参照 [してください](microsoft-defender-endpoint-mac.md)。
 
->[!NOTE]
->次の機能は、現在 macOS エンドポイントではサポートされていません。
->- データ損失防止
->- ライブ応答
-
+> [!NOTE]
+> 次の機能は、現在 macOS エンドポイントではサポートされていません。
+>
+> - データ損失防止
+> - ライブ応答
 
 ## <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 用 Microsoft Defender for Endpoint
 
@@ -59,13 +58,18 @@ Microsoft Defender for Endpoint on Linux では、Linux サーバーの予防 (A
 
 開始方法の詳細については、Microsoft Defender for Endpoint on Linux のドキュメントを参照 [してください](microsoft-defender-endpoint-linux.md)。
 
->[!NOTE]
->Linux エンドポイントでは、現在、次の機能はサポートされていません。
->- データ損失防止
->- ライブ応答
->- SIEM
+> [!NOTE]
+> Linux エンドポイントでは、現在、次の機能はサポートされていません。
+>
+> - データ損失防止
+> - ライブ応答
 
-
+> [!NOTE]
+> Linux エンドポイントでは、現在、次の機能はサポートされていません。
+>
+> - データ損失防止
+> - ライブ応答
+> - SIEM
 
 ## <a name="microsoft-defender-for-endpoint-on-android"></a>Android 用 Microsoft Defender for Endpoint
 
@@ -75,11 +79,11 @@ Microsoft Defender for Endpoint on Android は、Android 6.0 以上を実行し�
 
 ## <a name="microsoft-defender-for-endpoint-on-ios"></a>iOS 用 Microsoft Defender for Endpoint API
 
-Microsoft Defender for Endpoint on iOS は、iOS 11.0 以上を実行しているデバイス向けモバイル脅威防御ソリューションです。 顧客のテナント内に登録されているデバイス (登録済みまたは登録されていない) がサポートされています。 監視対象デバイスと教師付き登録済みデバイスの両方がサポートされています。 iOS では、フィッシング対策、安全でない接続のブロック、カスタムインジケーターの設定、脱獄の検出など、Web 保護を提供しています。 主な機能と利点の詳細については、お知らせを [参照してください](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/bg-p/MicrosoftDefenderATPBlog/label-name/iOS)。 
+Microsoft Defender for Endpoint on iOS は、iOS 11.0 以上を実行しているデバイス向けモバイル脅威防御ソリューションです。 顧客のテナント内に登録されているデバイス (登録済みまたは登録されていない) がサポートされています。 監視対象デバイスと教師付き登録済みデバイスの両方がサポートされています。 iOS では、フィッシング対策、安全でない接続のブロック、カスタムインジケーターの設定、脱獄の検出など、Web 保護を提供しています。 主な機能と利点の詳細については、お知らせを [参照してください](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/bg-p/MicrosoftDefenderATPBlog/label-name/iOS)。
 
 開始方法の詳細については、iOS の Microsoft Defender for Endpoint のドキュメントを参照 [してください](microsoft-defender-endpoint-ios.md)。
 
-## <a name="licensing-requirements"></a>ライセンスの要件 
+## <a name="licensing-requirements"></a>ライセンスの要件
 
 対象となるライセンスユーザーは、最大 5 つの同時デバイスで Microsoft Defender for Endpoint を使用できます。 Microsoft Defender for Endpoint は、ユーザー (CSP) から購入クラウド ソリューション プロバイダー利用できます。
 

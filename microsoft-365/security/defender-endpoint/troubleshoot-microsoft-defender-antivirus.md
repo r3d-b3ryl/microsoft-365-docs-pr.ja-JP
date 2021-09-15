@@ -15,12 +15,12 @@ ms.date: 09/11/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 15180a2be197b39da78bf004b761db753cd02c94
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2dda17d55dbe5e86b6d76e3a766a020c6e0bc3aa
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213404"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59356527"
 ---
 # <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策ソフトウェアの問題をトラブルシューティングするため、イベント ログとエラー コードをレビューする
 
@@ -41,7 +41,7 @@ ms.locfileid: "59213404"
 
 > [!TIP]
 > Microsoft Defender for Endpoint のデモ Web サイトにアクセス [して、demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) 機能が動作しているのを確認できます。
-> 
+>
 > - クラウドによる保護
 > - 高速学習 (一目でブロックを含む)
 > - 望ましくない可能性があるアプリケーションのブロック
@@ -53,17 +53,17 @@ Microsoft Defender ウイルス対策ログにイベントのWINDOWSを記録し
 
 イベント ログを直接表示するか、サードパーティのセキュリティ情報とイベント管理 (SIEM) ツールがある場合は[、Microsoft Defender ウイルス対策](troubleshoot-microsoft-defender-antivirus.md#windows-defender-av-ids)クライアント イベント ID を使用してエンドポイントから特定のイベントやエラーを確認することもできます。
 
-このセクションの表に、メイン イベント MICROSOFT DEFENDER ウイルス対策の一覧を示し、可能な場合は、エラーを修正または解決するための推奨される解決策を示します。 
+このセクションの表に、メイン イベント MICROSOFT DEFENDER ウイルス対策の一覧を示し、可能な場合は、エラーを修正または解決するための推奨される解決策を示します。
 
 ## <a name="to-view-a-microsoft-defender-antivirus-event"></a>イベントをMicrosoft Defender ウイルス対策するには
 
-1.  イベント **ビューアーを開きます**。
-2.  コンソール ツリーで、[アプリケーションとサービス ログ] **、[Microsoft]** の順に展開し、[Windows] を **Windows Defender。**
-3.  [操作] を **ダブルクリックします**。
-4.  詳細ウィンドウで、個々のイベントの一覧を表示して、イベントを検索します。
-5.  イベントをクリックすると、[全般] タブと [詳細] タブの下の下部ウィンドウにイベントに関する特定の **詳細が****表示** されます。
+1. イベント **ビューアーを開きます**。
+2. コンソール ツリーで、[アプリケーションとサービス ログ] **、[Microsoft]** の順に展開し、[Windows] を **Windows Defender。**
+3. [操作] を **ダブルクリックします**。
+4. 詳細ウィンドウで、個々のイベントの一覧を表示して、イベントを検索します。
+5. イベントをクリックすると、[全般] タブと [詳細] タブの下の下部ウィンドウにイベントに関する特定の **詳細が****表示** されます。
 
-<table> 
+<table>
 <tr>
 <th colspan="2" >イベント ID: 1000</th>
 </tr>
@@ -1017,7 +1017,7 @@ WindowsServer 2008、Windows Server 2008 R2、Windows Server 2012、およびWin
 ユーザー アクション:
 </td>
 <td >
-アクションは必要ありません。 Microsoft Defender ウイルス対策を削除または検疫した場合。 
+アクションは必要ありません。 Microsoft Defender ウイルス対策を削除または検疫した場合。
 </td>
 </tr>
 <tr>
@@ -1204,7 +1204,7 @@ UAC </dt>
 クライアントMicrosoft Defender ウイルス対策、重大な問題が原因でこのエラーが発生しました。 エンドポイントが保護されていない可能性があります。 エラーの説明を確認し、以下の関連する <b>ユーザー アクションの手順に</b> 従います。
 <table>
 <tr>
-<th>Action</th>
+<th>操作</th>
 <th>ユーザー操作</th>
 </tr>
 <tr>
@@ -1369,10 +1369,10 @@ Microsoft Defender ウイルス対策は正常な状態で稼働しています�
 <dt>: ? &lt;ウイルス対策署名の &gt; 作成時間</dt>
 <dt>Antispyware 署名の作成時間: ? &lt;スパイウェア対策署名の作成時間 &gt; 最後</dt>
 <dt>のクイック スキャンの開始時刻: ? &lt;最後のクイック スキャン &gt; の開始時刻</dt>
-<dt>最後のクイック スキャンの終了時刻: ? &lt;最後のクイック &gt; </dt>スキャン終了時刻 最後のクイック スキャン ソース: 最後のクイック スキャン ソース (0 = スキャンは&#39;t が実行され、1 = ユーザーが開始し
-<dt> &lt; &gt; 、2 =</dt>システムが開始されました) 最後のフル スキャン開始
-<dt>時刻: &lt;最後のフル スキャン &gt; の開始時刻</dt>
-<dt>最後のフル スキャンの終了時刻: ? &lt;最後のフル &gt; </dt>スキャン終了時刻 最後のフル スキャン ソース: 最後のフル スキャン ソース (0 = スキャンは&#39;t が実行されました、1 = ユーザーが開始
+<dt>最後のクイック スキャンの終了時刻: ? &lt;最終クイック スキャン終了 &gt; </dt>時刻 最後のクイック スキャン ソース: 最後のクイック スキャン ソース (0 = スキャンが実行されなかった、1 = ユーザーが開始
+<dt> &lt; &gt; 、2 =</dt>システムが開始) 最後のフル スキャン開始時刻:
+<dt>? &lt;最後のフル スキャン &gt; の開始時刻</dt>
+<dt>最後のフル スキャンの終了時刻: ? &lt;最後のフル &gt; </dt>スキャン終了時刻 最後のフル スキャン ソース: 最後のフル スキャン ソース (0 = スキャンが実行されなかった、1 = ユーザーが開始
 <dt> &lt; &gt; 、2 =</dt>システムが開始) 製品の状態: 内部トラブルシューティングの 
 <dt> 場合
 </dl>
@@ -2016,7 +2016,7 @@ Microsoft Defender ウイルス対策ファイルをダウンロードしよう�
 </td>
 <td >
 インターネット接続の設定を確認します。
-動的Microsoft Defender ウイルス対策サービスを使用して特定の脅威に最新の定義をダウンロードするときに、クライアントでエラーが発生しました。 このエラーは、ネットワーク接続の問題が原因である可能性があります。 
+動的Microsoft Defender ウイルス対策サービスを使用して特定の脅威に最新の定義をダウンロードするときに、クライアントでエラーが発生しました。 このエラーは、ネットワーク接続の問題が原因である可能性があります。
 </td>
 </tr>
 <tr>
@@ -2197,8 +2197,9 @@ Microsoft Defender ウイルス対策 Real-Time保護機能でエラーが発生
 ユーザー アクション:
 </td>
 <td >
-システムが一時保護されていない可能性&#39;、システムを再起動してからフル スキャンを実行する必要があります。
-クライアントMicrosoft Defender ウイルス対策の&#39;、サービスの 1 つが開始できなかったため、エラーが発生しました。 その後に 3007 イベント ID が続く場合、エラーは一時的なもので、マルウェア対策クライアントはエラーから回復しました。 
+システムが一時保護されていない可能性がある場合は、システムを再起動してからフル スキャンを実行する必要があります。
+クライアントMicrosoft Defender ウイルス対策のリアルタイム保護機能は、サービスの 1 つが開始できなかったため、エラーが発生しました。
+その後に 3007 イベント ID が続く場合、エラーは一時的なもので、マルウェア対策クライアントはエラーから回復しました。
 </td>
 </tr>
 <tr>
@@ -2243,7 +2244,7 @@ Microsoft Defender ウイルス対策リアルタイム保護が機能を再起�
 ユーザー アクション:
 </td>
 <td >
-リアルタイム保護機能が再起動されました。 このイベントが再度発生した場合は <a href="https://go.microsoft.com/fwlink/?LinkId=215491">、Microsoft テクニカル サポートにお問い合わせください</a>。 
+リアルタイム保護機能が再起動されました。 このイベントが再度発生した場合は <a href="https://go.microsoft.com/fwlink/?LinkId=215491">、Microsoft テクニカル サポートにお問い合わせください</a>。
 </td>
 </tr>
 <tr>
@@ -2295,7 +2296,7 @@ Microsoft Defender ウイルス対策、マルウェアなどの望ましくな�
 説明:
 </td>
 <td >
-Microsoft Defender ウイルス対策、マルウェアなどの望ましくない可能性があるソフトウェアのリアルタイム保護スキャンが無効になりました。 
+Microsoft Defender ウイルス対策、マルウェアなどの望ましくない可能性があるソフトウェアのリアルタイム保護スキャンが無効になりました。
 </td>
 </tr>
 <tr>
@@ -2502,7 +2503,7 @@ Microsoft Defender ウイルス対策その他の望ましくない可能性の�
 説明:
 </td>
 <td >
-Microsoft Defender ウイルス対策スキャンが有効になっています。 
+Microsoft Defender ウイルス対策スキャンが有効になっています。
 </td>
 </tr>
 <tr>
@@ -2528,7 +2529,7 @@ Microsoft Defender ウイルス対策スキャンが有効になっています�
 説明:
 </td>
 <td >
-Microsoft Defender ウイルス対策スキャンが無効になっています。 
+Microsoft Defender ウイルス対策スキャンが無効になっています。
 </td>
 </tr>
 <tr>
@@ -2598,12 +2599,12 @@ Microsoft Defender ウイルス対策期限が切れています。 ウイルス
 <a id="error-codes"></a>
 ##Microsoft Defender ウイルス対策 クライアント エラー コード Microsoft Defender ウイルス対策問題が発生した場合は、通常、問題のトラブルシューティングに役立つエラー コードが表示されます。 ほとんどの場合、エラーは更新プログラムのインストールに問題が発生したという意味です。
 このセクションでは、クライアント エラーに関する以下Microsoft Defender ウイルス対策説明します。
--   エラー コード -   エラーの考えられる理由 -   今すぐ実行する操作に関するアドバイス
+- エラー コード - エラーの考えられる理由 - 今すぐ実行する操作に関するアドバイス
 
 これらの表の情報を使用して、エラー コードのトラブルシューティングMicrosoft Defender ウイルス対策役立ちます。
 
 
-<table> 
+<table>
 <tr>
 <th colspan="2">エラー コード: 0x80508007</th>
 </tr>
@@ -2618,7 +2619,7 @@ Microsoft Defender ウイルス対策期限が切れています。 ウイルス
 考えられる理由
 </td>
 <td>
-このエラーは、メモリが使い切れている可能性を示します。 
+このエラーは、メモリが使い切れている可能性を示します。
 </td>
 </tr>
 <tr>
@@ -2627,7 +2628,7 @@ Microsoft Defender ウイルス対策期限が切れています。 ウイルス
 <ol>
 <li>デバイスで使用可能なメモリを確認します。</li>
 <li>実行中の未使用のアプリケーションを閉じて、デバイス上のメモリを解放します。</li>
-<li>デバイスを再起動し、スキャンを再度実行します。 
+<li>デバイスを再起動し、スキャンを再度実行します。
 </li>
 </ol>
 </td>
@@ -2662,7 +2663,7 @@ Microsoft Defender ウイルス対策期限が切れています。 ウイルス
 <td><b>ERR_MP_BAD_CONFIGURATION </b>
 </td></tr><tr><td>考えられる理由</td>
 <td>
-このエラーは、エンジン構成エラーが発生している可能性を示します。一般に、これはエンジンが正しく機能しない入力データに関連しています。 
+このエラーは、エンジン構成エラーが発生している可能性を示します。一般に、これはエンジンが正しく機能しない入力データに関連しています。
 </td>
 </tr>
 <tr>
@@ -2672,7 +2673,7 @@ Microsoft Defender ウイルス対策期限が切れています。 ウイルス
 <td><b>ERR_MP_QUARANTINE_FAILED </b>
 </td></tr><tr><td>考えられる理由</td>
 <td>
-このエラーは、脅威Microsoft Defender ウイルス対策検疫に失敗した可能性を示します。 
+このエラーは、脅威Microsoft Defender ウイルス対策検疫に失敗した可能性を示します。
 </td>
 </tr>
 <tr>
@@ -2682,7 +2683,7 @@ Microsoft Defender ウイルス対策期限が切れています。 ウイルス
 <td><b>ERR_MP_REBOOT_REQUIRED </b>
 </td></tr><tr><td>考えられる理由</td>
 <td>
-このエラーは、脅威の削除を完了するために再起動が必要な場合を示します。 
+このエラーは、脅威の削除を完了するために再起動が必要な場合を示します。
 </td>
 </tr>
 <tr>
@@ -2693,11 +2694,11 @@ Microsoft Defender ウイルス対策期限が切れています。 ウイルス
 <td><b>ERR_MP_THREAT_NOT_FOUND </b>
 </td></tr><tr><td>考えられる理由</td>
 <td>
-このエラーは、脅威がメディアに存在しなくなったか、マルウェアがデバイスのスキャンを停止している可能性を示します。 
+このエラーは、脅威がメディアに存在しなくなったか、マルウェアがデバイスのスキャンを停止している可能性を示します。
 </tr><tr><td>解決方法
 </td>
 <td>
-セキュリティ ソフトウェアを<a href="https://www.microsoft.com/security/scanner/default.aspx">Microsoft Safety Scanner</a>し、もう一度やり直してください。 
+セキュリティ ソフトウェアを<a href="https://www.microsoft.com/security/scanner/default.aspx">Microsoft Safety Scanner</a>し、もう一度やり直してください。
 </td>
 </tr>
 <tr>
@@ -2707,11 +2708,11 @@ Microsoft Defender ウイルス対策期限が切れています。 ウイルス
 <td><b>ERR_MP_FULL_SCAN_REQUIRED </b>
 </td></tr><tr><td>考えられる理由</td>
 <td>
-このエラーは、システム全体のスキャンが必要な可能性を示します。 
+このエラーは、システム全体のスキャンが必要な可能性を示します。
 </td></tr>
 <tr>
 <td>解決方法</td><td>
-完全なシステム スキャンを実行します。 
+完全なシステム スキャンを実行します。
 </td>
 </tr>
 <tr>
@@ -2721,7 +2722,7 @@ Microsoft Defender ウイルス対策期限が切れています。 ウイルス
 <td><b>ERR_MP_MANUAL_STEPS_REQUIRED </b>
 </td></tr><tr><td>考えられる理由</td>
 <td>
-このエラーは、脅威の削除を完了するために手動の手順が必要です。 
+このエラーは、脅威の削除を完了するために手動の手順が必要です。
 </td></tr><tr><td>解決方法</td><td>
 Microsoft マルウェア保護百科事典で説明されている手動 <a href="https://www.microsoft.com/security/portal/threat/Threats.aspx">修復手順に従います</a>。 イベント履歴には、脅威固有のリンクがあります。<br/></td>
 </tr>
@@ -2732,9 +2733,9 @@ Microsoft マルウェア保護百科事典で説明されている手動 <a hre
 <td><b>ERR_MP_REMOVE_NOT_SUPPORTED </b>
 </td></tr><tr><td>考えられる理由</td>
 <td>
-このエラーは、コンテナーの種類内の削除がサポートされていない可能性があることを示します。 
+このエラーは、コンテナーの種類内の削除がサポートされていない可能性があることを示します。
 </td></tr><tr><td>解決方法</td><td>
-Microsoft Defender ウイルス対策内で検出された脅威を修復できない場合。 検出されたリソースを手動で削除する方法を検討してください。 
+Microsoft Defender ウイルス対策内で検出された脅威を修復できない場合。 検出されたリソースを手動で削除する方法を検討してください。
 </td>
 </tr>
 <tr>
@@ -2744,9 +2745,9 @@ Microsoft Defender ウイルス対策内で検出された脅威を修復でき�
 <td><b>ERR_MP_REMOVE_LOW_MEDIUM_DISABLED </b>
 </td></tr><tr><td>考えられる理由</td>
 <td>
-このエラーは、低および中規模の脅威の削除が無効になる可能性を示します。 
+このエラーは、低および中規模の脅威の削除が無効になる可能性を示します。
 </td></tr><tr><td>解決方法</td><td>
-検出された脅威を確認し、必要に応じて解決します。 
+検出された脅威を確認し、必要に応じて解決します。
 </td>
 </tr>
 <tr>
@@ -2756,9 +2757,9 @@ Microsoft Defender ウイルス対策内で検出された脅威を修復でき�
 <td><b>ERROR_MP_RESCAN_REQUIRED </b>
 </td></tr><tr><td>考えられる理由</td>
 <td>
-このエラーは、脅威が必要な再スキャンを示します。 
+このエラーは、脅威が必要な再スキャンを示します。
 </td></tr><tr><td>解決方法</td><td>
-完全なシステム スキャンを実行します。 
+完全なシステム スキャンを実行します。
 </td>
 </tr>
 <tr>
@@ -2768,7 +2769,7 @@ Microsoft Defender ウイルス対策内で検出された脅威を修復でき�
 <td><b>ERROR_MP_CALLISTO_REQUIRED </b>
 </td></tr><tr><td>考えられる理由</td>
 <td>
-このエラーは、オフライン スキャンが必要な場合に発生します。 
+このエラーは、オフライン スキャンが必要な場合に発生します。
 </td></tr><tr><td>解決方法</td><td>
 オフライン で実行Microsoft Defender ウイルス対策。 これを行う方法については、オフラインの記事Microsoft Defender ウイルス対策<a href="https://windows.microsoft.com/windows/what-is-windows-defender-offline">できます</a>。
 </td>
@@ -2780,7 +2781,7 @@ Microsoft Defender ウイルス対策内で検出された脅威を修復でき�
 <td><b>ERROR_MP_PLATFORM_OUTDATED<br/></b>
 </td></tr><tr><td>考えられる理由</td>
 <td>
-このエラーは、Microsoft Defender ウイルス対策が現在のバージョンのプラットフォームをサポートしていないので、新しいバージョンのプラットフォームが必要です。 
+このエラーは、Microsoft Defender ウイルス対策が現在のバージョンのプラットフォームをサポートしていないので、新しいバージョンのプラットフォームが必要です。
 </td></tr><tr><td>解決方法</td><td>
 このコマンドは、Microsoft Defender ウイルス対策でのみWindows 10。 Vista Windows 8、Windows 7、Windows Vista の場合は、 を使用<a href="https://www.microsoft.com/server-cloud/system-center/endpoint-protection-2012.aspx">System Center Endpoint Protection。</a><br/></td>
 </tr>
@@ -2791,7 +2792,7 @@ Microsoft Defender ウイルス対策内で検出された脅威を修復でき�
 これらのエラーが表示された場合は、定義を[](manage-updates-baselines-microsoft-defender-antivirus.md)更新し、エンドポイントで直接再スキャンを実行できます。
 
 
-<table> 
+<table>
 <tr>
 <th colspan="3">内部エラー コード</th>
 </tr>
@@ -3097,7 +3098,7 @@ Microsoft Defender ウイルス対策内で検出された脅威を修復でき�
 <b>ERR_MP_REMOVE_FAILED</b>
 </td>
 <td>
-これは内部エラーです。 マルウェアの削除が成功しなかった場合にトリガーされる可能性があります。 
+これは内部エラーです。 マルウェアの削除が成功しなかった場合にトリガーされる可能性があります。
 </td>
 </tr>
 <tr>
@@ -3108,7 +3109,7 @@ Microsoft Defender ウイルス対策内で検出された脅威を修復でき�
 <b>ERR_MP_SCAN_ABORTED </b>
 </td>
 <td>
-これは内部エラーです。 スキャンが完了しないときにトリガーされた可能性があります。 
+これは内部エラーです。 スキャンが完了しないときにトリガーされた可能性があります。
 </td>
 </tr>
 </table>

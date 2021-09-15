@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f1ea6f3b2dd9447ff9901518a80aafa4dec56a5e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b9f7cda368f9770a645fa588597196eccf038b4f
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164950"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59356650"
 ---
 # <a name="take-response-actions-on-a-file"></a>ファイルの対応措置を講じる
 
@@ -56,7 +56,7 @@ ms.locfileid: "59164950"
 ****
 
 |アクセス許可|PE ファイル|PE 以外のファイル|
-|:---------------------|:------:|:----------:|
+|---|:---:|:---:|
 |データを表示|X|X|
 |アラートの調査|&#x2611;|X|
 |ライブ応答の基本|X|X|
@@ -160,7 +160,7 @@ ms.locfileid: "59164950"
 
 場所は、組織の地域設定 (EU、英国、または米国) によって異なります。 検疫済みファイルは、組織ごとに 1 回のみ収集されます。 サービス信頼ポータルからの Microsoft のデータ保護の詳細については、 を参照してください https://aka.ms/STP 。
 
-この設定を有効にすると、セキュリティ チームが潜在的に悪いファイルを調べ、インシデントを迅速かつリスクの低い方法で調査するのに役立ちます。 ただし、この設定をオフにする必要がある場合は、[エンドポイントの詳細設定] 設定[検疫済みファイルのダウンロード] に移動して設定  >    >    >  を調整します。 [高度な機能の詳細](advanced-features.md)
+この設定を有効にすると、セキュリティ チームが潜在的に悪いファイルを調べ、インシデントを迅速かつリスクの低い方法で調査するのに役立ちます。 ただし、この設定をオフにする必要がある場合は、[エンドポイントの詳細設定] 設定[検疫済みファイルのダウンロード] に移動して設定 \>  \>  \> を調整します。 [高度な機能の詳細](advanced-features.md)
 
 #### <a name="backing-up-quarantined-files"></a>検疫済みファイルのバックアップ
 
@@ -168,13 +168,14 @@ ms.locfileid: "59164950"
 
 この機能は、サンプル申請がオフになっている場合は機能しません。 自動サンプル申請がユーザーからのアクセス許可を要求するために設定されている場合、ユーザーが送信に同意したサンプルだけが収集されます。
 
->[!IMPORTANT]
->検疫済みファイルの要件をダウンロードします。
->- 組織がアクティブ モードMicrosoft Defender ウイルス対策を使用する 
->- ウイルス対策エンジンのバージョンは 1.1.17300.4 以降です。 「 [月次プラットフォームとエンジンのバージョン」を参照してください。](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
->- クラウドベースの保護が有効になっています。 「 [クラウドによる保護を有効にする」を参照してください。](enable-cloud-protection-microsoft-defender-antivirus.md)
->- サンプル提出が有効になっている
->- デバイスのバージョンWindows 10 1703 以降、またはサーバー 2016 または 2019 Windowsインストールされている
+> [!IMPORTANT]
+> 検疫済みファイルの要件をダウンロードします。
+>
+> - 組織がアクティブ モードMicrosoft Defender ウイルス対策を使用する
+> - ウイルス対策エンジンのバージョンは 1.1.17300.4 以降です。 「 [月次プラットフォームとエンジンのバージョン」を参照してください。](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
+> - クラウドベースの保護が有効になっています。 「 [クラウドによる保護を有効にする」を参照してください。](enable-cloud-protection-microsoft-defender-antivirus.md)
+> - サンプル提出が有効になっている
+> - デバイスのバージョンWindows 10 1703 以降、またはサーバー 2016 または 2019 Windowsインストールされている
 
 ### <a name="collect-files"></a>ファイルの収集
 
@@ -214,7 +215,7 @@ ms.locfileid: "59164950"
 
 ファイルのブロックを停止するには、インジケーターを削除します。 これを行うには、ファイルの **プロファイル ページの** [インジケーターの編集] アクションを使用します。 このアクションは、インジケーターを追加する前に、[インジケーターの追加] アクションと同じ位置に表示されます。
 
-[ルールインジケーター] の **[設定ページから** インジケーター **を編集**  >  **することもできます**。 インジケーターは、ファイルのハッシュによってこの領域に一覧表示されます。
+[ルールインジケーター] の **[設定ページから** インジケーター **を編集** \> **することもできます**。 インジケーターは、ファイルのハッシュによってこの領域に一覧表示されます。
 
 ## <a name="consult-a-threat-expert"></a>脅威のエキスパートに相談する
 
@@ -249,8 +250,6 @@ ms.locfileid: "59164950"
 詳細な分析の結果は脅威インテリジェンスと一致し、一致すると適切なアラートが生成されます。
 
 ディープ分析機能を使用して、通常、アラートの調査中、または悪意のある動作が疑われるその他の理由で、ファイルの詳細を調査します。 この機能は、ファイルのプロファイル **ページ** の [詳細分析] タブで使用できます。
-
-<br/><br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4aAYy?rel=0]
 

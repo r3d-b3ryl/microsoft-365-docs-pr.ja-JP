@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d3430dc7765dfb7d84110a3a0cbae9f53e89b379
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2c1772cc67c145b59870735910e09ae05e52b899
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218283"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59357303"
 ---
-# <a name="run-a-detection-test-on-a-newly-onboarded-microsoft-defender-for-endpoint-device"></a>新しくオンボードされた Microsoft Defender for Endpoint デバイスで検出テストを実行する 
+# <a name="run-a-detection-test-on-a-newly-onboarded-microsoft-defender-for-endpoint-device"></a>新しくオンボードされた Microsoft Defender for Endpoint デバイスで検出テストを実行する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -41,11 +41,12 @@ ms.locfileid: "59218283"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-オンボード デバイスは、Microsoft Defender for Endpoint サービスにデバイスを追加する方法です。 これにより、デバイスはサービスに信号を報告できます。  
+オンボード デバイスは、Microsoft Defender for Endpoint サービスにデバイスを追加する方法です。 これにより、デバイスはサービスに信号を報告できます。
 
-デバイスがサービスに正常に追加されたことを確認することが、展開プロセス全体の重要なステップです。 
+デバイスがサービスに正常に追加されたことを確認することが、展開プロセス全体の重要なステップです。
 
 ## <a name="verify-onboarding-using-a-detection-test"></a>検出テストを使用してオンボーディングを確認する
+
 新しくオンボードされたデバイスで次の PowerShell スクリプトを実行して、Defender for Endpoint サービスに適切に報告されていることを確認します。
 
 1. フォルダーを作成する: 'C:\test-MDATP-test'。
@@ -66,6 +67,7 @@ ms.locfileid: "59218283"
 [コマンド プロンプト] ウィンドウが自動的に閉じます。 成功した場合、検出テストは完了としてマークされ、約 10 分でオンボード デバイスのポータルに新しいアラートが表示されます。
 
 ## <a name="related-topics"></a>関連項目
+
 - [Windows 10 デバイスのオンボード](configure-endpoints.md)
 - [オンボード サーバー](configure-server-endpoints.md)
 - [Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング](/microsoft-365/security/defender-endpoint/troubleshoot-onboarding)

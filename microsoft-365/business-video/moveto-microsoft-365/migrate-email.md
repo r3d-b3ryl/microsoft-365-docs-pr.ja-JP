@@ -21,13 +21,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: メール、連絡先、予定表を Google ワークスペースからビジネス向けMicrosoft 365する方法について説明します。
-ms.openlocfilehash: cde27ce3ab94b003d9950f1b4bc2af270dea906e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: メール、連絡先、予定表を Google ワークスペースからビジネス向け Microsoft 365移行する方法について説明します。
+ms.openlocfilehash: 58037d033c35bad97d5b18dc408e5450340d0c25
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211264"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59357196"
 ---
 # <a name="migrate-business-email-and-calendar-from-google-workspace"></a>Google ワークスペースからビジネス メールと予定表を移行する
 
@@ -50,7 +50,7 @@ ms.locfileid: "59211264"
 1. [G **Suite ドメイン全体の委任を有効にする**] を選択し、同意画面の製品名を入力し、[保存] を **選択します**。 
 
     > [!NOTE]
-> 製品名は移行プロセスでは使用されませんが、ダイアログに保存するために必要です。     
+    > 製品名は移行プロセスでは使用されませんが、ダイアログに保存するために必要です。     
 
 1. [操作] **メニューを再度** 開き、[キーの作成 **] を選択します**。 
 1. **[JSON] を選択** し、[作成 **] を選択します**。 
@@ -64,12 +64,12 @@ ms.locfileid: "59211264"
 1. [[API] ページに移動します](https://console.developers.google.com/apis/library)。 
 1. 検索バーに **「Gmail API」と入力します**。
 1. それを選択し、[有効にする] **を選択します**。
-1. Google カレンダー API と連絡先 API でこのプロセスを繰り返します。 
+1. Google カレンダー API、People API、連絡先 API でこのプロセスを繰り返します。 
 
 ### <a name="grant-access-to-the-service-account"></a>サービス アカウントへのアクセスを許可する
 
 1. Google Workspace 管理コンソールに戻ります。 
-1. [セキュリティ **] を選択** し、下にスクロールして API コントロール **を開きます**。 
+1. [セキュリティ **] を** 選択し、下にスクロールして、API コントロール **を開きます**。 
 1. 下にスクロールして、[ **ドメイン全体の委任の管理] を選択します**。
 1. [ **新規追加] を** 選択し、前にメモしたクライアント ID を入力します。
 1. 次に、Google API の OAuth スコープを入力します。 これらは、手順 [5 の aka.ms/GoogleWorkspaceMigration](/exchange/mailbox-migration/perform-g-suite-migration#grant-access-to-the-service-account-for-your-google-tenant) で使用できます。

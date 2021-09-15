@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 73a802f158b8804d7cf94708ecf3a6ac9355baae
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: af938fda518e5a7eea3cb9341f04c8573a647044
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179232"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59357073"
 ---
 # <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>ユーザーがユーザー インターフェイスを表示または操作Microsoft Defender ウイルス対策防止する
 
@@ -46,8 +46,8 @@ ms.locfileid: "59179232"
 
 :::image type="content" source="../../media/wdav-headless-mode-1703.png" alt-text="シールド アイコンとWindows セキュリティ保護セクションを含むアプリのスクリーンショット。":::
 
->[!NOTE]
->インターフェイスを非表示にすることで、Microsoft Defender ウイルス対策通知がエンドポイントに表示されるのを防ぐことも可能です。 Microsoft Defender for Endpoint 通知は引き続き表示されます。 エンドポイントに表示 [される通知を個別に構成することもできます](configure-notifications-microsoft-defender-antivirus.md)
+> [!NOTE]
+> インターフェイスを非表示にすることで、Microsoft Defender ウイルス対策通知がエンドポイントに表示されるのを防ぐことも可能です。 Microsoft Defender for Endpoint 通知は引き続き表示されます。 エンドポイントに表示 [される通知を個別に構成することもできます](configure-notifications-microsoft-defender-antivirus.md)
 
 以前のバージョンの Windows 10設定では、クライアント インターフェイスWindows Defender非表示になります。 ユーザーが開くしようとすると、「システム管理者は、このアプリへのアクセスを制限しました」という警告が表示されます。
 
@@ -63,7 +63,7 @@ ms.locfileid: "59179232"
 
 4. ツリーを展開して **、Windowsインターフェイス> Microsoft Defender ウイルス対策 >コンポーネントを表示します**。
 
-5. [ヘッドレス UI モードを有効にする] **設定を** ダブルクリックし、オプションを [有効] に **設定します**。 [**OK**] をクリックします。 
+5. [ヘッドレス UI モードを有効にする] **設定を** ダブルクリックし、オプションを [有効] に **設定します**。 [**OK**] をクリックします。
 
 ユーザー [が PC の保護を](configure-local-policy-overrides-microsoft-defender-antivirus.md) 変更する方法の詳細については、「ユーザーがポリシー設定をローカルで変更するのを防ぐ」を参照してください。
 
@@ -82,14 +82,12 @@ ms.locfileid: "59179232"
 
 3. [管理 **用テンプレート] をクリックします**。
 
-4. ツリーを展開して、[**スキャン] WindowsコンポーネントMicrosoft Defender ウイルス対策**  >    >  **展開します**。
+4. ツリーを展開して、[**スキャン] WindowsコンポーネントMicrosoft Defender ウイルス対策** \>  \> **展開します**。
 
-5. [ユーザーにスキャンの **一時停止を許可する** ] 設定をダブルクリックし、オプションを [無効] に **設定します**。 [**OK**] をクリックします。 
+5. [ユーザーにスキャンの **一時停止を許可する** ] 設定をダブルクリックし、オプションを [無効] に **設定します**。 [**OK**] をクリックします。
 
 ## <a name="related-articles"></a>関連記事
 
 - [エンドポイントに表示される通知を構成する](configure-notifications-microsoft-defender-antivirus.md)
-
 - [ユーザーとのエンド ユーザー操作を構成Microsoft Defender ウイルス対策](configure-end-user-interaction-microsoft-defender-antivirus.md)
-
 - [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)

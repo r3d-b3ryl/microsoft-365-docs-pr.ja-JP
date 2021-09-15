@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3049d77ef7f934a254da54a63560e33fe2603e3b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 18f2aa79632378e477ae79f6f621fbea72350bca
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179239"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59356676"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Microsoft Defender for Endpoint プレビュー機能
 
@@ -53,7 +53,7 @@ Defender for Endpoint プレビュー リリースの新機能について説明
 - Microsoft で完全にサポートされています。
 - 選択した地域またはクラウド環境でのみ使用できます。 たとえば、この機能が政府機関のクラウドに存在しない可能性があります。
 - プレビューの個々の機能には、使用およびサポートの制限が多い場合があります。 その場合、この情報は通常、機能のドキュメントに示されています。
-- プレビュー バージョンは標準のサポート レベルで提供され、実稼働環境で使用できます。 
+- プレビュー バージョンは標準のサポート レベルで提供され、実稼働環境で使用できます。
 
 ## <a name="turn-on-preview-features"></a>プレビュー機能を有効にする
 
@@ -61,9 +61,9 @@ Defender for Endpoint プレビュー リリースの新機能について説明
 
 プレビュー機能設定をオンにして、今後の機能をいち早く試します。
 
-1. ナビゲーション ウィンドウで、[エンドポイントの高度な **機能設定**  >    >  **プレビュー機能]**  >  **を選択します**。
+1. ナビゲーション ウィンドウで、[エンドポイントの高度な **機能設定** \>  \> **プレビュー機能]** \> **を選択します**。
 
 2. [オン] と [オフ]**の間で設定を****切り替え**、[基本設定の保存]**を選択します**。
 
 > [!TIP]
-> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-preview-belowfoldlink)  
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-preview-belowfoldlink)

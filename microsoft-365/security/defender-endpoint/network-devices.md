@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b365be018fafb487fb689acb09749804f849ce3b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b67a2551e592e2fd1186985590759d44bdcc177b
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220398"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59356803"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>ネットワーク デバイスの検出と脆弱性の管理
 
@@ -37,12 +37,12 @@ ms.locfileid: "59220398"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-> [!NOTE]  
+> [!NOTE]
 > [](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-device-discovery-and-vulnerability-assessments/ba-p/2267548) \( 04-13-2021 に公開されたネットワーク デバイスの検出と脆弱性評価ブログでは、Defender for Endpoint の新しいネットワーク デバイス検出機能に関する分析情報を \) 提供します。 この記事では、ネットワーク デバイスの検出が対処するように設計されている課題の概要と、これらの新機能の使用を開始する方法に関する詳細な情報を提供します。
 
-ネットワーク検出機能は、セキュリティ センターとセキュリティ コンソールの [デバイス インベントリ] Microsoft 365セクションMicrosoft 365 Defender使用できます。  
+ネットワーク検出機能は、セキュリティ センターとセキュリティ コンソールの [デバイス インベントリ] Microsoft 365セクションMicrosoft 365 Defender使用できます。
 
-指定された Microsoft Defender for Endpoint デバイスは、構成済みのネットワーク デバイスの定期的な認証スキャンを実行するために、各ネットワーク セグメントで使用されます。 検出された Defender for Endpoint の 脅威と脆弱性の管理 機能は、検出されたスイッチ、ルーター、WLAN コントローラー、ファイアウォール、VPN ゲートウェイを保護するための統合ワークフローを提供します。  
+指定された Microsoft Defender for Endpoint デバイスは、構成済みのネットワーク デバイスの定期的な認証スキャンを実行するために、各ネットワーク セグメントで使用されます。 検出された Defender for Endpoint の 脅威と脆弱性の管理 機能は、検出されたスイッチ、ルーター、WLAN コントローラー、ファイアウォール、VPN ゲートウェイを保護するための統合ワークフローを提供します。
 
 ネットワーク デバイスが検出され、分類された後、セキュリティ管理者は最新のセキュリティ推奨事項を受け取り、組織全体に展開されたネットワーク デバイスで最近検出された脆弱性を確認できます。
 
@@ -55,9 +55,9 @@ Defender for Endpoint にはネットワーク デバイス自体にセンサー
 - **評価デバイス**: ネットワーク デバイスのスキャンに使用するオンボード済みのデバイス。
 - **ネットワーク デバイス**: スキャンとオンボードを計画しているネットワーク デバイス。
 
-### <a name="vulnerability-management-for-network-devices"></a>ネットワーク デバイスの脆弱性管理 
+### <a name="vulnerability-management-for-network-devices"></a>ネットワーク デバイスの脆弱性管理
 
-ネットワーク デバイスが検出され、分類された後、セキュリティ管理者は最新のセキュリティ推奨事項を受け取り、組織全体に展開されたネットワーク デバイスで最近検出された脆弱性を確認できます。  
+ネットワーク デバイスが検出され、分類された後、セキュリティ管理者は最新のセキュリティ推奨事項を受け取り、組織全体に展開されたネットワーク デバイスで最近検出された脆弱性を確認できます。
 
 ## <a name="operating-systems-that-are-supported"></a>サポートされているオペレーティング システム
 
@@ -74,37 +74,37 @@ Defender for Endpoint にはネットワーク デバイス自体にセンサー
 
 最初の手順は、認証されたネットワーク スキャンを実行するデバイスを選択します。
 
-1. スキャンを計画しているネットワーク デバイスの管理ポートにネットワーク接続を持つ Defender for Endpoint オンボード デバイス (クライアントまたはサーバー) を決定します。 
+1. スキャンを計画しているネットワーク デバイスの管理ポートにネットワーク接続を持つ Defender for Endpoint オンボード デバイス (クライアントまたはサーバー) を決定します。
 
 2. Defender for Endpoint 評価デバイスと対象ネットワーク デバイス間の SNMP トラフィックを許可する必要があります (ファイアウォールなど)。
 
-3. 脆弱性に対して評価されるネットワーク デバイスを決定します (たとえば、Cisco スイッチや Palo Alto Networks ファイアウォール)。  
+3. 脆弱性に対して評価されるネットワーク デバイスを決定します (たとえば、Cisco スイッチや Palo Alto Networks ファイアウォール)。
 
 4. 構成済みのすべてのネットワーク デバイスで SNMP 読み取り専用が有効になっているので、Defender for Endpoint 評価デバイスが構成済みのネットワーク デバイスに対してクエリを実行できます。 この機能の適切な機能には「SNMP 書き込み」は必要とされません。
 
 5. スキャンするネットワーク デバイス (またはこれらのデバイスが展開されているサブネット) の IP アドレスを取得します。
 
-6. ネットワーク デバイスの SNMP 資格情報を取得します (たとえば、Community String、noAuthNoPriv、authNoPriv、authPriv)。 新しい評価ジョブを構成するときに資格情報を指定する必要があります。  
+6. ネットワーク デバイスの SNMP 資格情報を取得します (たとえば、Community String、noAuthNoPriv、authNoPriv、authPriv)。 新しい評価ジョブを構成するときに資格情報を指定する必要があります。
 
 7. プロキシ クライアントの構成: Defender for Endpoint デバイス プロキシの要件以外に、追加の構成は必要ありません。
 
 8. ネットワーク スキャナーを認証して適切に動作するには、次のドメイン/URL を追加する必要があります。
 
-    - login.windows.net  
-    - *.security.microsoft.com
+    - login.windows.net
+    - \*.security.microsoft.com
     - login.microsoftonline.com
-    - *.blob.core.windows.net/networkscannerstable/ *
+    - \*.blob.core.windows.net/networkscannerstable/\*
 
     > [!NOTE]
     > すべての URL が Defender for Endpoint で指定されている場合は、許可されるデータ収集の一覧が文書化されています。
 
 ## <a name="permissions"></a>アクセス許可
 
-評価ジョブを構成するには、次のユーザーアクセス許可オプションが必要です。セキュリティ センター **でセキュリティ設定を管理します**。 アクセス許可は、ロールにアクセスして **設定**  >  **できます**。 詳細については、「役割ベースの [アクセス制御の役割を作成および管理する」を参照してください](user-roles.md)。
+評価ジョブを構成するには、次のユーザーアクセス許可オプションが必要です。セキュリティ センター **でセキュリティ設定を管理します**。 アクセス許可は、ロールにアクセスして **設定** \> **できます**。 詳細については、「役割ベースの [アクセス制御の役割を作成および管理する」を参照してください](user-roles.md)。
 
 ## <a name="install-the-network-scanner"></a>ネットワーク スキャナーのインストール
 
-1. [エンドポイント評価 **Microsoft 365の設定** に移動します  >    >    >  ([**ネットワーク評価] の下**)。
+1. [エンドポイント評価 **Microsoft 365の設定** に移動します \>  \>  \> ([**ネットワーク評価] の下**)。
     1. このポータルMicrosoft 365 Defender、[評価ジョブ] ページ設定 >移動します。
 
 2. ネットワーク スキャナーをダウンロードし、指定された Defender for Endpoint 評価デバイスにインストールします。
@@ -127,7 +127,7 @@ Defender for Endpoint にはネットワーク デバイス自体にセンサー
 
 3. 完了すると、サインインしたというメッセージが表示されます。
 
-## <a name="configure-a-new-assessment-job"></a>新しい評価ジョブを構成する  
+## <a name="configure-a-new-assessment-job"></a>新しい評価ジョブを構成する
 
 [評価ジョブ] ページ **で、[ネットワーク** 設定ジョブの **追加] を選択します**。 セットアップ プロセスに従って、定期的にスキャンしてデバイス インベントリに追加するネットワーク デバイスを選択します。
 
@@ -140,11 +140,11 @@ Defender for Endpoint にはネットワーク デバイス自体にセンサー
 
 1. ネットワーク スキャナーがインストールされた 'Assessment job' 名と 'Assessment device' を選択します。 このデバイスは、定期的に認証されたスキャンを実行します。
 
-2. スキャンするターゲット ネットワーク デバイス (またはこれらのデバイスが展開されているサブネット) の IP アドレスを追加します。 
+2. スキャンするターゲット ネットワーク デバイス (またはこれらのデバイスが展開されているサブネット) の IP アドレスを追加します。
 
-3. ターゲット ネットワーク デバイスの必要な SNMP 資格情報を追加します。 
+3. ターゲット ネットワーク デバイスの必要な SNMP 資格情報を追加します。
 
-4. 新しく構成されたネットワーク評価ジョブを保存して、定期的なネットワーク スキャンを開始します。 
+4. 新しく構成されたネットワーク評価ジョブを保存して、定期的なネットワーク スキャンを開始します。
 
 ### <a name="scan-and-add-network-devices"></a>ネットワーク デバイスのスキャンと追加
 
@@ -153,7 +153,7 @@ Defender for Endpoint にはネットワーク デバイス自体にセンサー
 - Defender for Endpoint 評価デバイスと構成済みのターゲット ネットワーク デバイスの間に接続があります。
 - 構成済みの SNMP 資格情報が正しい。
 
-各評価デバイスは、最大 1,500 の成功した IP アドレス スキャンをサポートできます。 たとえば、10 の異なるサブネットをスキャンすると、100 の IP アドレスだけが成功した結果を返す場合、同じ評価デバイス上の他のサブネットから 1,400 の IP 追加アドレスをスキャンできます。  
+各評価デバイスは、最大 1,500 の成功した IP アドレス スキャンをサポートできます。 たとえば、10 の異なるサブネットをスキャンすると、100 の IP アドレスだけが成功した結果を返す場合、同じ評価デバイス上の他のサブネットから 1,400 の IP 追加アドレスをスキャンできます。
 
 スキャンする IP アドレス範囲/サブネットが複数ある場合、テスト スキャンの結果が表示されるのに数分かかります。 テスト スキャンは、最大 1,024 アドレスで使用できます。
 
@@ -180,9 +180,9 @@ Defender for Endpoint にはネットワーク デバイス自体にセンサー
 
 スキャン結果は、評価ジョブの構成が完了した後に行った最初のスキャンの数時間後に更新する必要があります。
 
-デバイスがまだ表示されない場合は、ネットワーク スキャナーをインストールした評価デバイスでサービス 'MdatpNetworkScanService' が実行されていることを確認し、関連する評価ジョブ構成で "スキャンの実行" を実行します。  
+デバイスがまだ表示されない場合は、ネットワーク スキャナーをインストールした評価デバイスでサービス 'MdatpNetworkScanService' が実行されていることを確認し、関連する評価ジョブ構成で "スキャンの実行" を実行します。
 
-5 分後に結果が得られた場合は、サービスを再起動します。  
+5 分後に結果が得られた場合は、サービスを再起動します。
 
 ### <a name="devices-last-seen-time-is-longer-than-24-hours"></a>デバイスの最終表示時間が 24 時間を超える
 

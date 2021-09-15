@@ -15,12 +15,12 @@ ms.author: v-lsaldanha
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
-ms.openlocfilehash: b1aae75f411af4f9d745c67831222c5ceee6bb0d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0c2ffdde4ff259f2a2ef098a6d715cbcd785dfe4
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189471"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59357633"
 ---
 # <a name="migrating-from-a-third-party-hips-to-asr-rules"></a>サードパーティの HIPS から ASR ルールへの移行
 
@@ -28,7 +28,7 @@ ms.locfileid: "59189471"
 
 ## <a name="scenarios-when-migrating-from-a-third-party-hips-product-to-asr-rules"></a>サードパーティの HIPS 製品から ASR ルールに移行する場合のシナリオ
 
-### <a name="block-creation-of-specific-files-and-registry-keys"></a>特定のファイルとレジストリ キーの作成をブロックする
+### <a name="block-creation-of-specific-files"></a>特定のファイルの作成をブロックする
 
 - **適用対象**- すべてのプロセス
 - **操作**- ファイルの作成
@@ -36,7 +36,7 @@ ms.locfileid: "59189471"
 - **攻撃表面の縮小ルール**- ASR ルールは、侵害のインジケーター (IOC) ではなく、攻撃手法をブロックします。 特定のファイル拡張子をブロックしても、デバイスが侵害されるのを防ぐとは限らないので、必ずしも役に立つとは限らない。 攻撃者がペイロードの新しい種類の拡張機能を作成するまで、攻撃を部分的に警告します。
 - **その他の推奨機能**- Microsoft Defender AV を有効にし、クラウド保護と動作分析を強くお勧めします。 ASR ルール "ランサムウェアに対する高度な保護を使用する" など、他の予防を使用することをお勧めします。 これにより、ランサムウェア攻撃に対するより高いレベルの保護が提供されます。 さらに、これらのレジストリ キーの多くは、特定のアラートをトリガーする ASEP 手法など、Microsoft Defender for Endpoint によって監視されます。 使用するレジストリ キーには、少なくともローカル管理者特権または信頼できるインストーラー特権を変更する必要があります。 最小限の管理アカウントまたは権限を持つ、ロックダウンされた環境の使用をお勧めします。 その他のシステム構成は、より広範なセキュリティ推奨事項の一部である"必須ではない役割に対して SeDebug を無効にする" など、有効にできます。
 
-### <a name="block-creation-of-specific-files-and-registry-keys"></a>特定のファイルとレジストリ キーの作成をブロックする
+### <a name="block-creation-of-specific-registry-keys"></a>特定のレジストリ キーの作成をブロックする
 
 - **適用対象**- すべてのプロセス
 - **プロセス**- N/A
@@ -72,17 +72,16 @@ ms.locfileid: "59189471"
 - 攻撃 **表面** 縮小ルール - ASR ルールには、Office 通信アプリ (Outlook、Skype、および Teams) が子プロセスを起動するのを防ぐ組み込みのルールがあります。"Office 通信アプリケーションによる子プロセスの作成をブロックする"、GUID "26190899-1602-49e8-8b27-eb1d0a1869"
 - **その他の推奨機能**- PowerShell の攻撃表面を最小限に抑えるために、PowerShell の制約付き言語モードを有効にすることをお勧めします。
 
+### <a name="block-office-apps-from-launching-child-processes"></a>アプリOfficeプロセスの起動をブロックする
 
-### <a name="block-office-apps-from-launching-child-processes-and-from-creating-executable-content"></a>アプリOfficeプロセスの起動と実行可能コンテンツの作成をブロックする
-
-- **に適用される**- Office  
+- **に適用される**- Office
 - **プロセス**- winword.exe、powerpnt.exe、excel.exe
 - **操作**- プロセスの実行
 - **ファイル/フォルダー、レジストリ キー/** 値、プロセス、サービス - powershell.exe、cmd.exe、wscript.exe、mshta.exe、EQNEDT32.EXE、regsrv32.exe
 - 攻撃 **表面** の縮小ルール - ASR ルールには、Office アプリが子プロセスを起動するのを防ぐための組み込みのルールがあります。"すべての Office アプリケーションによる子プロセスの作成をブロックする"、GUID "d4f940ab-401b-4efc-aadc-ad5f3c50688a"。
 - **その他の推奨機能**- N/A
-    
-### <a name="block-office-apps-from-launching-child-processes-and-from-creating-executable-content"></a>アプリOfficeプロセスの起動と実行可能コンテンツの作成をブロックする
+
+### <a name="block-office-apps-from-creating-executable-content"></a>アプリOfficeコンテンツの作成をブロックする
 
 - **に適用される**- Office
 - **プロセス**- winword.exe、powerpnt.exe、excel.exe
@@ -108,16 +107,14 @@ ms.locfileid: "59189471"
 - **攻撃表面の縮小ルール**- ASR ルールを使用すると、Adobe Reader による子プロセスの起動をブロックできます。 ルール名は"Block Adobe Reader from creating child processes", GUID "7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c" です。
 - **その他の推奨機能**- N/A
 
-
 ### <a name="block-download-or-creation-of-executable-content"></a>実行可能コンテンツのダウンロードまたは作成をブロックする
 
-- **適用対象**- CertUtil: 実行可能ファイルのダウンロードまたは作成をブロックする 
+- **適用対象**- CertUtil: 実行可能ファイルのダウンロードまたは作成をブロックする
 - **プロセス**- certutil.exe
 - **操作**- ファイルの作成
 - **ファイル/フォルダー、レジストリ キー/** 値、プロセス、サービスの例 - *.exe
 - **攻撃表面の縮小ルール**- ASR ルールは、セキュリティ保護の一部なので、これらのシナリオをMicrosoft Defender ウイルス対策しません。
 - **その他の推奨機能**- Microsoft Defender AV では、CertUtil が実行可能なコンテンツを作成またはダウンロードできません。
-
 
 ### <a name="block-processes-from-stopping-critical-system-components"></a>重要な System コンポーネントを停止するプロセスをブロックする
 
@@ -136,7 +133,7 @@ ms.locfileid: "59189471"
 - **ファイル/フォルダー、レジストリ** キー/値、プロセス、サービス - tor.exe、bittorrent.exe、cmd.exe、powershell.exe など
 - **攻撃表面の縮小ルール**- 全体的に、ASR ルールはアプリケーション マネージャーとして機能するように設計されていない。
 - **その他の推奨機能**- ユーザーが特定のプロセスまたはプログラムを起動Windows Defender勧めします。 Microsoft Defender for Endpoint File および Cert インジケーターは、インシデント対応シナリオで使用できます (アプリケーション制御メカニズムとして見るべきではない)。
-    
+
 ### <a name="block-unauthorized-changes-to-microsoft-defender-antivirus-configurations"></a>構成に対する承認されていないMicrosoft Defender ウイルス対策ブロックする
 
 - **適用対象**- すべてのプロセス

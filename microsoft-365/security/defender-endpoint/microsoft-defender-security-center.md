@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f7fb73cde3afa385b0d73b35610415cacd1cad81
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 577c87aff1a5e5c95760ea169859da592d05727c
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213513"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59357104"
 ---
 # <a name="microsoft-defender-security-center"></a>Microsoft Defender セキュリティ センター
 
@@ -39,15 +39,20 @@ Microsoft Defender セキュリティ センターは、Microsoft Defender for E
 
 ## <a name="in-this-section"></a>このセクションの内容
 
-トピック | 説明
-:---|:---
-開始する  |  最小要件、ライセンスの検証、セットアップの完了、プレビュー機能の把握、データストレージとプライバシーの理解、およびポータルへのユーザー アクセスの割り当て方法について説明します。
-[デバイスのオンボード](onboard-configure.md) | クライアント、サーバー、および非デバイスのオンボーディングについてWindowsします。 検出テストを実行する方法、プロキシとインターネット接続の設定を構成する方法、およびオンボードの潜在的な問題をトラブルシューティングする方法について説明します。
-[ポータルについて](use.md) | セキュリティ操作、Secure Score、および Threat analytics ダッシュボード、およびポータルを移動する方法について説明します。
-脅威の調査と修復 | アラート、デバイスを調査し、脅威を修復するために対応アクションを実行します。
-API と SIEM のサポート | サポートされている API を使用して、カスタム アラートをプルして作成したり、ワークフローを自動化したりします。 サポートされている SIEM ツールを使用して、ユーザーからの通知をMicrosoft Defender セキュリティ センター。
-レポート | Microsoft Defender for Endpoint Power BIを使用して、レポートの作成とビルドを行います。
-サービスの正常性とセンサーの状態を確認する | サービスが実行されているのを確認し、デバイス上のセンサーの状態を確認します。
-[ユーザー設定Microsoft Defender セキュリティ センター構成する](preferences-setup.md) | 一般的な設定を構成し、プレビュー エクスペリエンス、通知を有効にし、その他の機能を有効にします。
-[Microsoft Defender for Endpoint コミュニティ センターにアクセスする](community.md) | Microsoft Defender for Endpoint Communityセンターにアクセスして、製品に関するエクスペリエンスを学び、共同作業し、共有します。
-[サービスに関する問題のトラブルシューティング](troubleshoot-mdatp.md) | このセクションでは、Microsoft Defender for Endpoint サービスを使用する際に発生する可能性のある問題について説明します。
+<br>
+
+****
+
+|トピック|説明|
+|---|---|
+|作業の開始|最小要件、ライセンスの検証、セットアップの完了、プレビュー機能の把握、データストレージとプライバシーの理解、およびポータルへのユーザー アクセスの割り当て方法について説明します。|
+|[デバイスのオンボード](onboard-configure.md)|クライアント、サーバー、および非デバイスのオンボーディングについてWindowsします。 検出テストを実行する方法、プロキシとインターネット接続の設定を構成する方法、およびオンボードの潜在的な問題をトラブルシューティングする方法について説明します。|
+|[ポータルについて](use.md)|セキュリティ操作、Secure Score、および Threat analytics ダッシュボード、およびポータルを移動する方法について説明します。|
+|脅威の調査と修復|アラート、デバイスを調査し、脅威を修復するために対応アクションを実行します。|
+|API と SIEM のサポート|サポートされている API を使用して、カスタム アラートをプルして作成したり、ワークフローを自動化したりします。 サポートされている SIEM ツールを使用して、ユーザーからの通知をMicrosoft Defender セキュリティ センター。|
+|レポート|Microsoft Defender for Endpoint Power BIを使用して、レポートの作成とビルドを行います。|
+|サービスの正常性とセンサーの状態を確認する|サービスが実行されているのを確認し、デバイス上のセンサーの状態を確認します。|
+|[ユーザー設定Microsoft Defender セキュリティ センター構成する](preferences-setup.md)|一般的な設定を構成し、プレビュー エクスペリエンス、通知を有効にし、その他の機能を有効にします。|
+|[Microsoft Defender for Endpoint コミュニティ センターにアクセスする](community.md)|Microsoft Defender for Endpoint Communityセンターにアクセスして、製品に関するエクスペリエンスを学び、共同作業し、共有します。|
+|[サービスに関する問題のトラブルシューティング](troubleshoot-mdatp.md)|このセクションでは、Microsoft Defender for Endpoint サービスを使用する際に発生する可能性のある問題について説明します。|
+|

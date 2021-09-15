@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 05/21/2018
 ms.technology: mde
-ms.openlocfilehash: 6f652987caf977e520dc0681b54c605f7a03b3e5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d5fa34de0394c1455fccb70a875fe12cddee3ed8
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221921"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59357428"
 ---
 # <a name="review-events-and-errors-using-event-viewer"></a>イベント ビューアーを使用してイベントとエラーを確認する
 
@@ -57,7 +57,7 @@ ms.locfileid: "59221921"
 
    ****
 
-   |イベント ID|メッセージ|説明|Action|
+   |イベント ID|メッセージ|[説明]|操作|
    |---|---|---|---|
    |1|Microsoft Defender for Endpoint service が開始されました (バージョン `variable` )。|システムの起動時、シャットダウン中、オンボーディング中に発生します。|通常の動作通知。アクションは必要ありません。|
    |2|Microsoft Defender for Endpoint service shutdown.|デバイスがシャットダウンまたはオフボードされている場合に発生します。|通常の動作通知。アクションは必要ありません。|
@@ -68,7 +68,7 @@ ms.locfileid: "59221921"
    |7 |Microsoft Defender for Endpoint service では、オンボーディング パラメーターの読み取りが失敗しました。 失敗: `variable` .|変数 = 詳細なエラーの説明。 デバイスが正しくオンボードされていないので、ポータルに報告されません。|オンボーディング設定とスクリプトが適切に展開されていることを確認します。 構成パッケージを再展開してみてください。 <p> 「[オンボード デバイスWindows 10」を参照してください](configure-endpoints.md)。|
    |8 |Microsoft Defender for Endpoint service では、構成のクリーンアップに失敗しました。 エラー コード: `variable` .|**オンボーディング中:** サービスは、オンボーディング中に構成のクリーンアップに失敗しました。 オンボーディング プロセスは続行されます。 <p> **オフボード中:** サービスは、オフボード中に構成のクリーンアップに失敗しました。 オフボード プロセスは終了しましたが、サービスは実行を続ける。|**オンボーディング:** アクションは不要です。 <p> **オフボード:** システムを再起動します。 <p> 「[オンボード デバイスWindows 10」を参照してください](configure-endpoints.md)。|
    |9 |Microsoft Defender for Endpoint service は、開始の種類を変更できなかった。 エラー コード: `variable` .|**オンボーディング中:** デバイスが正しくオンボードされていないので、ポータルに報告されません。 <p>**オフボード中:** サービスの開始の種類を変更できなかった。 オフボードプロセスは続行されます。 |オンボーディング設定とスクリプトが適切に展開されていることを確認します。 構成パッケージを再展開してみてください。 <p> 「[オンボード デバイスWindows 10」を参照してください](configure-endpoints.md)。|
-   |10 |Microsoft Defender for Endpoint Service は、オンボーディング情報を保持できなかった。 エラー コード: `variable` .|デバイスが正しくオンボードされていないので、ポータルに報告されません。|オンボーディング設定とスクリプトが適切に展開されていることを確認します。 構成パッケージを再展開してみてください。 <p> 「[オンボード デバイスWindows 10」を参照してください](configure-endpoints.md)。|
+   |10|Microsoft Defender for Endpoint Service は、オンボーディング情報を保持できなかった。 エラー コード: `variable` .|デバイスが正しくオンボードされていないので、ポータルに報告されません。|オンボーディング設定とスクリプトが適切に展開されていることを確認します。 構成パッケージを再展開してみてください。 <p> 「[オンボード デバイスWindows 10」を参照してください](configure-endpoints.md)。|
    |11|Defender for Endpoint サービスのオンボーディングまたは再オンボーディングが完了しました。|デバイスが正しくオンボードされました。|通常の動作通知。アクションは必要ありません。 <p> デバイスがポータルに表示されるには数時間かかる場合があります。|
    |12 |Microsoft Defender for Endpoint では、既定の構成の適用に失敗しました。|サービスが既定の構成を適用できなかった。|このエラーは、短時間で解決する必要があります。|
    |13|Microsoft Defender for Endpoint デバイス ID が計算 `variable` されます。|通常の操作プロセス。|通常の動作通知。アクションは必要ありません。|
@@ -81,7 +81,7 @@ ms.locfileid: "59221921"
    |26|Microsoft Defender for Endpoint service は、レジストリのオンボーディングの状態を設定できなかった。 エラー コード: `variable` .|デバイスが正しくオンボードされませんでした。 <p> ポータルに報告しますが、サービスが SCCM またはレジストリに登録されていない場合があります。|オンボーディング設定とスクリプトが適切に展開されていることを確認します。 構成パッケージを再展開してみてください。 <p> 「[オンボード デバイスWindows 10」を参照してください](configure-endpoints.md)。|
    |27|Microsoft Defender for Endpoint service は、ユーザーのアカウントで SENSE 対応モードを有効Microsoft Defender ウイルス対策。 オンボーディング プロセスに失敗しました。 エラー コード: `variable` .|通常、Microsoft Defender ウイルス対策別のリアルタイムマルウェア対策製品がデバイスで適切に実行され、デバイスが Defender for Endpoint に報告されている場合は、特別なパッシブ状態になります。|オンボーディング設定とスクリプトが適切に展開されていることを確認します。 構成パッケージを再展開してみてください。 <p> 「[オンボード デバイスWindows 10」を参照してください](configure-endpoints.md)。 <p> リアルタイムのマルウェア対策保護が正しく実行されていることを確認します。|
    |28|Microsoft Defender for Endpoint Connected User Experiences and Telemetry service registration failed. エラー コード: `variable` .|テレメトリ サービスでエラー Windows発生しました。|[診断データ サービスが有効になっているか確認します](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)。 <p> オンボーディング設定とスクリプトが適切に展開されていることを確認します。 構成パッケージを再展開してみてください。 <p> 「[オンボード デバイスWindows 10」を参照してください](configure-endpoints.md)。|
-   |29|オフボード パラメーターの読み取りに失敗しました。 エラーの種類: %1、エラー コード: %2、説明: %3|このイベントは、システムがオフボード パラメーター&#39;読み取りできない場合に発生します。|デバイスにインターネット アクセス権が設定されているのを確認し、オフボード プロセス全体を再度実行します。 オフボード パッケージの有効期限が切れていないか確認します。|
+   |29|オフボード パラメーターの読み取りに失敗しました。 エラーの種類: %1、エラー コード: %2、説明: %3|このイベントは、システムがオフボード パラメーターを読み取れなかった場合に発生します。|デバイスにインターネット アクセス権が設定されているのを確認し、オフボード プロセス全体を再度実行します。 オフボード パッケージの有効期限が切れていないか確認します。|
    |30|Microsoft Defender for Endpoint service は、このサービスで SENSE 対応モードを無効Microsoft Defender ウイルス対策。 エラー コード: `variable` .|通常、Microsoft Defender ウイルス対策別のリアルタイムマルウェア対策製品がデバイスで適切に実行され、デバイスが Defender for Endpoint に報告されている場合は、特別なパッシブ状態になります。|オンボーディング設定とスクリプトが適切に展開されていることを確認します。 構成パッケージを再展開してみてください。 <p> 「[オンボード デバイスWindows 10」を参照してください](configure-endpoints.md)。 <p> リアルタイムのマルウェア対策保護が正しく実行されていることを確認します。|
    |31|Microsoft Defender for Endpoint Connected User Experiences and Telemetry service unregistration failed. エラー コード: `variable` .|オンボーディング中に、Windowsテレメトリ サービスでエラーが発生しました。 オフボードプロセスは続行されます。|[テレメトリ サービスのエラー Windows確認します](troubleshoot-onboarding.md#ensure-the-diagnostic-data-service-is-enabled)。|
    |32|Microsoft Defender for Endpoint service は、オフボード プロセスの後に自身を停止する要求に失敗しました。 エラー コード: %1|オフボード中にエラーが発生しました。|デバイスを再起動します。|

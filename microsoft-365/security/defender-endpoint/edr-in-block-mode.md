@@ -20,12 +20,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 4d97fcc9f41f87404c620ab946dff0dd27c806f2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c590812ccc975206c6c278794f943f7e16c8bdd1
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221597"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59357683"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>ブロック モードのエンドポイントでの検出と対応 (EDR)
 
@@ -77,10 +77,6 @@ EDRモードのデータは、脅威の検出[と統合& 脆弱性の管理。](
 
 ## <a name="requirements-for-edr-in-block-mode"></a>ブロック モードでのEDRの要件
 
-<br>
-
-****
-
 |要件|詳細|
 |---|---|
 |アクセス許可|[グローバル管理者] または [セキュリティ管理者] ロールが [管理者] に割り当てられている必要[Azure Active Directory。](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal) 詳細については、「基本アクセス許可 [」を参照してください](basic-permissions.md)。|
@@ -90,7 +86,6 @@ EDRモードのデータは、脅威の検出[と統合& 脆弱性の管理。](
 |クラウドによる保護|Microsoft Defender ウイルス対策保護を有効にするように[構成する必要があります](enable-cloud-protection-microsoft-defender-antivirus.md)。|
 |Microsoft Defender ウイルス対策プラットフォーム|デバイスは最新である必要があります。 PowerShell を使用して確認するには [、Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) コマンドレットを管理者として実行します。 **AMProductVersion 行** に **4.18.2001.10 以上** が表示されます。 <p> 詳細については、「[Microsoft Defender ウイルス対策の更新プログラムの管理とベースラインの適用](manage-updates-baselines-microsoft-defender-antivirus.md)」を参照してください。|
 |Microsoft Defender ウイルス対策 エンジン|デバイスは最新である必要があります。 PowerShell を使用して確認するには [、Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) コマンドレットを管理者として実行します。 **AMEngineVersion 行に** **1.1.16700.2** 以上が表示されます。 <p> 詳細については、「[Microsoft Defender ウイルス対策の更新プログラムの管理とベースラインの適用](manage-updates-baselines-microsoft-defender-antivirus.md)」を参照してください。|
-|
 
 > [!IMPORTANT]
 > 最高の保護値を取得するには、ウイルス対策ソリューションが定期的な更新プログラムと重要な機能を受信するように構成され、除外 [が構成されていることを確認します](configure-exclusions-microsoft-defender-antivirus.md)。 EDRモードでは、Microsoft Defender for Endpoint に対して定義されているインジケーターではなく、Microsoft Defender ウイルス対策に[](manage-indicators.md)対して定義されている除外が尊重されます。
@@ -129,15 +124,12 @@ Windows 10、Windows Server、バージョン 1803 以降、または Windows Se
 
 アクティブ モードまたはパッシブ Microsoft Defender ウイルス対策実行されているかどうかを確認するには、コマンド プロンプトまたは PowerShell を、アクティブ モードで実行しているデバイスでWindows。
 
-<br>
-
-****
+<br/><br/>
 
 |メソッド|Procedure|
 |---|---|
 |PowerShell|<ol><li>選択したスタート メニュー入力を開始し、結果 `PowerShell` でWindows PowerShellを開きます。</li><li>種類 `Get-MpComputerStatus`。</li><li>結果の一覧の **[AMRunningMode]** 行で、次のいずれかの値を探します。<ul><li>`Normal`</li><li>`Passive Mode`</li></ul></li></ol> <p> 詳細については [、「Get-MpComputerStatus」を参照してください](/powershell/module/defender/get-mpcomputerstatus)。|
 |コマンド プロンプト|<ol><li>コマンド プロンプトをスタート メニューし、入力を開始し、結果 `Command Prompt` Windowsコマンド プロンプトを開きます。</li><li>種類 `sc query windefend`。</li><li>結果の一覧の STATE **行で、** サービスが実行されているのを確認します。</li></ol>|
-|
 
 ### <a name="how-do-i-confirm-that-edr-in-block-mode-is-turned-on-with-microsoft-defender-antivirus-in-passive-mode"></a>パッシブ モードでブロック モードEDRがオンになっていることを確認するには、Microsoft Defender ウイルス対策確認する方法を示します。
 

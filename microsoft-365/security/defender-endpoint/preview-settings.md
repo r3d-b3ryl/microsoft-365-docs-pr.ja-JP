@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e064b537b11fe54304a2bb26ce65299f0b23876a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: c46ee9cda0ca8bf52a6d62a2be215070eb20856a
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575758"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59356731"
 ---
 # <a name="turn-on-the-preview-experience-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint のプレビュー エクスペリエンスを有効にする
 
@@ -36,7 +36,7 @@ ms.locfileid: "58575758"
 
 プレビュー機能設定をオンにして、今後の機能をいち早く試します。
 
-1. ナビゲーション ウィンドウで、[エンドポイントの詳細設定 **] 設定**  >  **を**  >  **選択します**。
+1. ナビゲーション ウィンドウで、[エンドポイントの詳細設定 **] 設定** \> **を** \> **選択します**。
 
     :::image type="content" source="../../media/atp-preview-features-new.png" alt-text="設定とプレビュー エクスペリエンス イメージ。":::
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: a6be4282c2388f8a3aff3cd91bb8385f712bdea3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0b64c38ac19e692fd0580c42aa89116f8c0f3421
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220214"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59353670"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-live-response-issues"></a>Microsoft Defender for Endpoint のライブ応答の問題のトラブルシューティング
 
@@ -42,17 +42,17 @@ ms.locfileid: "59220214"
 1. 次のスクリプト コード スニペットをコピーし、PS1 ファイルとして保存します。
 
     ```powershell
-    $copied_file_path=$args[0] 
+    $copied_file_path=$args[0]
     $action=Copy-Item $copied_file_path -Destination $env:TEMP -PassThru -ErrorAction silentlyContinue
-        
+
     if ($action){
          Write-Host "You copied the file specified in $copied_file_path to $env:TEMP Succesfully"
     }
-    
+
     else{
         Write-Output "Error occoured while trying to copy a file, details:"
         Write-Output  $error[0].exception.message
- 
+
     }
     ```
 

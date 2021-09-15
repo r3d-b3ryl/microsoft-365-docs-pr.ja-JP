@@ -8,19 +8,20 @@ manager: dansimp
 ms.date: 01/21/2021
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
+ms.prod: m365-security
+ms.technology: mdo
 localization_priority: Normal
 search.appverid: ''
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Microsoft Defender for Office 365 E5 P1 および P2 のお客様は、電子メール エンティティ ページを使用して各メールの 360 度のビューを取得できます。
-ms.openlocfilehash: 5621476f8f8f7270d241d642354ab174a25b8b37
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8bd5f152ff945a6a60941e836e7bdc34890e974b
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189110"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59356515"
 ---
 # <a name="the-email-entity-page"></a>メール エンティティ ページ
 

@@ -17,12 +17,12 @@ ms.reviewer: chriggs, depicker, yongrhee
 f1.keywords: NOCSH
 ms.date: 06/14/2021
 ms.technology: mde
-ms.openlocfilehash: be05b4e477e00f1cdeafcd9b2b8d20452ac0c6c2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0aace52d05103afa490ec98b50ee9b6539e6b794
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213514"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59357614"
 ---
 # <a name="make-the-switch-to-microsoft-defender-for-endpoint"></a>エンドポイント用 Microsoft Defender への切り替え
 
@@ -36,13 +36,17 @@ ms.locfileid: "59213514"
 
 Defender for Endpoint への移行を検討している場合は、ヘルプを提供するガイダンスがあります。 次の表で、シナリオを確認します。 状況を最も適切に表すシナリオを選択し、推奨されるガイダンスを参照してください。
 
-| シナリオ | ガイダンス |
-|:----|:----|
-| エンドポイント保護ソリューションがまだ提供されていないので、Defender for Endpoint について詳しくはお知りください。 環境で展開する前に、Defender for Endpoint の動作を確認する必要があります。  | [Microsoft Defender for Endpoint 評価ラボ](evaluation-lab.md)   |
-| Defender for Endpoint が既に存在し、すべての設定と構成に役立つ情報が必要です。  | [Microsoft Defender for Endpoint 展開ガイド](deployment-phases.md)  |
-| Microsoft 以外のエンドポイント保護ソリューションから Defender for Endpoint に切り替え、Microsoft Defender ウイルス対策。 移行プロセスの概要と切り替え方法を取得する必要があります。 |[エンドポイント用 Microsoft Defender への切り替え](switch-to-microsoft-defender-migration.md)   |
-| Defender for Endpoint に移行またはオンボード済みです。 セキュリティ設定の管理、その他の機能の構成、セキュリティ ポリシーの微調整など、次の手順に関するヘルプが必要です。 | [移行後の Microsoft Defender for Endpoint の管理](manage-atp-post-migration.md) |
+<br>
 
+****
+
+|シナリオ|ガイダンス|
+|---|---|
+|エンドポイント保護ソリューションがまだ提供されていないので、Defender for Endpoint について詳しくはお知りください。 環境で展開する前に、Defender for Endpoint の動作を確認する必要があります。|[Microsoft Defender for Endpoint 評価ラボ](evaluation-lab.md)|
+|Defender for Endpoint が既に存在し、すべての設定と構成に役立つ情報が必要です。|[Microsoft Defender for Endpoint 展開ガイド](deployment-phases.md)|
+|Microsoft 以外のエンドポイント保護ソリューションから Defender for Endpoint に切り替え、Microsoft Defender ウイルス対策。 移行プロセスの概要と切り替え方法を取得する必要があります。|[エンドポイント用 Microsoft Defender への切り替え](switch-to-microsoft-defender-migration.md)|
+|Defender for Endpoint に移行またはオンボード済みです。 セキュリティ設定の管理、その他の機能の構成、セキュリティ ポリシーの微調整など、次の手順に関するヘルプが必要です。|[移行後の Microsoft Defender for Endpoint の管理](manage-atp-post-migration.md)|
+|
 
 ## <a name="do-you-have-feedback-for-us"></a>フィードバックをお寄せください。
 

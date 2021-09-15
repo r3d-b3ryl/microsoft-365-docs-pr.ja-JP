@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f14da0e999a0ec38c9be7ef36e47b2c786e12e97
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 85b162cce8655c7942a341326ff08ec112ace100
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220265"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59356563"
 ---
 # <a name="software-resource-type"></a>ソフトウェア リソースの種類
 
@@ -39,29 +39,38 @@ ms.locfileid: "59220265"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 ## <a name="methods"></a>メソッド
 
-メソッド |戻り値の型 |説明
-:---|:---|:---
-[ソフトウェアの一覧表示](get-software.md) | ソフトウェア コレクション | 組織のソフトウェア インベントリを一覧表示します。
-[ID でソフトウェアを取得する](get-software-by-id.md) | ソフトウェア | ソフトウェア ID で特定のソフトウェアを取得します。
-[ソフトウェア バージョンの配布を一覧表示する](get-software-ver-distribution.md)| 配布コレクション | ソフトウェアのバージョンの配布をソフトウェア ID で一覧表示します。
-[ソフトウェアによるマシンの一覧表示](get-machines-by-software.md)| MachineRef コレクション | ソフトウェア ID に関連付けられているデバイスの一覧を取得します。
-[ソフトウェアによる脆弱性の一覧表示](get-vuln-by-software.md) | [脆弱性の](vulnerability.md) コレクション | ソフトウェア ID に関連付けられている脆弱性の一覧を取得します。
-[不足している KB を取得する](get-missing-kbs-software.md) | KB コレクション | ソフトウェア ID に関連付けられている不足している KB の一覧を取得する
+<br>
+
+****
+
+|メソッド|戻り値の型|説明|
+|---|---|---|
+|[ソフトウェアの一覧表示](get-software.md)|ソフトウェア コレクション|組織のソフトウェア インベントリを一覧表示します。|
+|[ID でソフトウェアを取得する](get-software-by-id.md)|ソフトウェア|ソフトウェア ID で特定のソフトウェアを取得します。|
+|[ソフトウェア バージョンの配布を一覧表示する](get-software-ver-distribution.md)|配布コレクション|ソフトウェアのバージョンの配布をソフトウェア ID で一覧表示します。|
+|[ソフトウェアによるマシンの一覧表示](get-machines-by-software.md)|MachineRef コレクション|ソフトウェア ID に関連付けられているデバイスの一覧を取得します。|
+|[ソフトウェアによる脆弱性の一覧表示](get-vuln-by-software.md)|[脆弱性の](vulnerability.md) コレクション|ソフトウェア ID に関連付けられている脆弱性の一覧を取得します。|
+|[不足している KB を取得する](get-missing-kbs-software.md)|KB コレクション|ソフトウェア ID に関連付けられている不足している KB の一覧を取得する|
+|
 
 ## <a name="properties"></a>プロパティ
 
-プロパティ |   型   |   説明
-:---|:---|:---
-id | 文字列 | ソフトウェア ID
-名前 | String | ソフトウェア名
-ベンダー | String | ソフトウェア ベンダー名
-弱点 | Long | 検出された脆弱性の数
-publicExploit | Boolean | 一部の脆弱性に対してパブリックエクスプロイトが存在する
-activeAlert | ブール値 | アクティブアラートは、このソフトウェアに関連付けられている
-exposedMachines | Long | 公開されているデバイスの数
-impactScore | Double | このソフトウェアの露出スコアの影響
+<br>
+
+****
+
+|プロパティ|種類|説明|
+|---|---|---|
+|id|文字列|ソフトウェア ID|
+|名前|String|ソフトウェア名|
+|ベンダー|String|ソフトウェア ベンダー名|
+|弱点|Long|検出された脆弱性の数|
+|publicExploit|Boolean|一部の脆弱性に対してパブリックエクスプロイトが存在する|
+|activeAlert|Boolean|アクティブアラートは、このソフトウェアに関連付けられている|
+|exposedMachines|Long|公開されているデバイスの数|
+|impactScore|Double|このソフトウェアの露出スコアの影響|
+|

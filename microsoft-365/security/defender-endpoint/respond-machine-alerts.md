@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9d0286ec03c6cde7aa8129d030b65271e9c78677
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ab1cb1563f3ccc0f7bfda9b1f8875c76446153e3
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189410"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59357315"
 ---
 # <a name="take-response-actions-on-a-device"></a>デバイスの対応措置を講じる
 
@@ -111,8 +111,8 @@ ms.locfileid: "59189410"
 
 ****
 
-|フォルダー|説明|
-|:---|:---------|
+|フォルダー|[説明]|
+|---|---|
 |自動実行|デバイス上での攻撃者の永続性を識別するために、既知の自動開始エントリ ポイント (ASEP) のレジストリの内容を表す一連のファイルが格納されています。 <p> <div class="alert"><b>注:</b> レジストリ キーが見つからない場合、ファイルには次のメッセージが含まれます。"ERROR: システムは、指定されたレジストリ キーまたは値を見つかりませんでした。<div>|
 |インストールされているプログラム|この.CSVファイルには、デバイスに現在インストールされているプログラムを特定するのに役立つインストール済みプログラムの一覧が含まれている。 詳細については、「Win32_Product [クラス」を参照してください](https://go.microsoft.com/fwlink/?linkid=841509)。|
 |ネットワーク接続|このフォルダーには、疑わしい URL への接続、攻撃者のコマンドと制御 (C&C) インフラストラクチャ、横方向の移動、またはリモート接続の識別に役立つ接続情報に関連する一連のデータ ポイントが格納されています。 <ul><li>ActiveNetConnections.txt: プロトコル統計と現在の TCP/IP ネットワーク接続を表示します。 プロセスによって行われた疑わしい接続を探す機能を提供します。</li><li>Arp.txt: すべてのインターフェイスの現在のアドレス解決プロトコル (ARP) キャッシュ テーブルを表示します。 ARP キャッシュは、ネットワーク上で侵害された、または内部攻撃を実行するために使用された可能性がある疑わしいシステムがネットワーク上の追加のホストを表示する可能性があります。</il><li>DnsCache.txt: ローカル Hosts ファイルから事前に読み込まれるエントリと、コンピューターによって解決された名前クエリの最近取得したリソース レコードの両方を含む、DNS クライアント リゾルバー キャッシュの内容を表示します。 これは、疑わしい接続を識別するのに役立ちます。</li><li>IpConfig.txt: すべてのアダプターの TCP/IP 構成全体を表示します。 アダプターは、インストールされているネットワーク アダプターなどの物理インターフェイス、またはダイヤルアップ接続などの論理インターフェイスを表します。</li><li>FirewallExecutionLog.txt pfirewall.log</li></ul>|

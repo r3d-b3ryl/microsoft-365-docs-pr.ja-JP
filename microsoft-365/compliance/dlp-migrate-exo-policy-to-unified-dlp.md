@@ -1,5 +1,5 @@
 ---
-title: Exchange Online データ損失防止ポリシーをコンプライアンス センターに移行する (プレビュー)
+title: データ損失Exchange Onlineポリシーをコンプライアンス センターに移行する
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,14 +18,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: オンライン データ損失防止ポリシーを計画し、Exchange DLP に移行するMicrosoft 365します。
-ms.openlocfilehash: 1bc3281e66d4a1ae08fc20630e8b6d86fcbb77e1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2cf06b7aee9adb63ff85259427bcac818807cc7c
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192981"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59357471"
 ---
-# <a name="migrate-exchange-online-data-loss-prevention-policies-to-compliance-center-preview"></a>Exchange Online データ損失防止ポリシーをコンプライアンス センターに移行する (プレビュー)
+# <a name="migrate-exchange-online-data-loss-prevention-policies-to-compliance-center"></a>データ損失Exchange Onlineポリシーをコンプライアンス センターに移行する
 
 [Exchange Onlineデータ損失防止 (DLP) ポリシーは](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)非推奨です。 [DLP を含む、](dlp-learn-about-dlp.md)より豊富Exchange Online DLP 機能は、コンプライアンス センター [Microsoft 365提供されます](https://compliance.microsoft.com/datalossprevention?viewid=policies)。 DLP ポリシー移行ウィザードを使用して、DLP ポリシーを管理Exchange Onlineコンプライアンス センターに移行するのに役立ちます。
 
@@ -52,7 +52,7 @@ ms.locfileid: "59192981"
 1. テストと検証 - 結果を調べる
 1. 移行されたポリシーをアクティブ化する
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 ### <a name="licensing-and-versions"></a>ライセンスとバージョン
 
@@ -84,7 +84,7 @@ DLP ライセンス要件の詳細な一覧については、「セキュリテ�
 1. 次の質問Exchangeして、DLP とコンプライアンス センター のポリシーを評価します。
 
 
-|質問  |Action  | 移行手順|
+|質問  |操作  | 移行手順|
 |---------|---------|---------|
 |ポリシーは引き続き必要ですか?    |削除しない場合は、削除または非アクティブ化する |移行しない|
 |他のポリシーまたはコンプライアンス センター DLP Exchange重複していますか?     |はいの場合、重複するポリシーを統合できますか?         |- 別のポリシーと重複するExchange、Exchange 管理センターで統合 DLP ポリシーを手動で作成し、移行ウィザードを使用します。 </br> - 既存のコンプライアンス センター ポリシーと重複している場合は、既存のコンプライアンス センター ポリシーを一致する変更できます。コンプライアンス センター のExchangeしません。|
@@ -97,22 +97,22 @@ DLP ライセンス要件の詳細な一覧については、「セキュリテ�
 1. コンプライアンス センター [DLP コンソールMicrosoft 365開](https://compliance.microsoft.com/datalossprevention?viewid=policies)きます。
 2. 移行可能Exchange DLP ポリシーがある場合は、ページの上部にバナーが表示されます。
 3. バナー **で [ポリシーの移行** ] を選択して、移行ウィザードを開きます。 すべての DLP Exchangeが一覧表示されます。 以前に移行したポリシーは選択できません。
-4. 移行するポリシーを選択します。 それらを個別に移行するか、段階的なアプローチを使用してグループに移行するか、一度にすべて移行できます。 [**次へ**] を選択します。
+4. 移行するポリシーを選択します。 それらを個別に移行するか、段階的なアプローチを使用してグループに移行するか、一度にすべて移行できます。 **[次へ]** を選択します。
 5. 警告やメッセージについては、フライアウト ウィンドウを確認します。 進む前に問題を解決してください。
-6. 新しいコンプライアンス センター ポリシーを作成するモードを[ **アクティブ**]、[ **テスト**]、または [無効] で選択 **します**。  既定値は **Test です**。 [**次へ**] を選択します。
+6. 新しいコンプライアンス センター ポリシーを作成するモードを[ **アクティブ**]、[ **テスト**]、または [無効] で選択 **します**。  既定値は **Test です**。 **[次へ]** を選択します。
 7. 必要に応じて、他の統合 DLP の場所に対する DLP ポリシーに基Exchange追加のポリシーを作成できます。 これにより、移行された Exchange ポリシーに対して 1 つの新しい統合 DLP ポリシーと、ここで選択した追加の場所に対して 1 つの新しい統合 DLP ポリシーが作成されます。
 
 > [!IMPORTANT]
 > デバイス、SharePoint、OneDrive、オンプレミス、MCAS、Teams チャットメッセージやチャネル メッセージなど、他の DLP の場所でサポートされていない Exchange DLP ポリシーの条件とアクションは、追加のポリシーから削除されます。 また、他の場所に対して実行する必要がある事前作業があります。 参照:
 >- [Microsoft 365 のエンドポイントのデータ損失防止についての詳細情報](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention)
->- [エンドポイント データ損失防止を開始する](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention)
+>- [エンドポイント データ損失防止の使用を開始する](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention)
 >- [エンドポイントのデータ損失防止の使用](endpoint-dlp-using.md#using-endpoint-data-loss-prevention)
 >- [Microsoft 365 のエンドポイントのデータ損失防止について説明します](dlp-on-premises-scanner-learn.md#learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner)
 >- [データ損失防止のオンプレミス スキャナーの使用を開始する](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)
 >- [Microsoft 365 のデータ損失防止のオンプレミス スキャナーを使用する](dlp-on-premises-scanner-use.md#use-the-microsoft-365-data-loss-prevention-on-premises-scanner)
 >- [Microsoft 以外のクラウド アプリでデータ損失防止ポリシーを使用する](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)
  
-8. 移行ウィザードのセッション設定を確認します。 [**次へ**] を選択します。
+8. 移行ウィザードのセッション設定を確認します。 **[次へ]** を選択します。
 9. 移行レポートを確認します。 メールフロー ルールに関連するエラー Exchange注意してください。 それらを修正し、関連付けられたポリシーを再移行できます。
 
 移行されたポリシーは、コンプライアンス センター DLP コンソールの DLP ポリシーの一覧に表示されます。 

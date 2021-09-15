@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: article
 ms.date: 06/11/2021
 ms.reviewer: chventou
-ms.openlocfilehash: 2d474f4cc2c990ac8ebf3a964bbb532752741160
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 11855b9ebd6a2dd4641087e2e0a711860acb76d5
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189481"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59355846"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-configuration-manager"></a>Configuration Manager を使用して Microsoft Defender for Endpoint を管理する
 
@@ -53,7 +53,6 @@ Microsoft エンドポイント マネージャー (Intune) と Microsoft Intune
 |**組織のデバイスでマルウェア対策更新プログラムを更新** する方法を選択する <p> *Configuration Manager Endpoint Protectionを使用すると、組織のデバイスでマルウェア対策定義を最新の状態に保つために、いくつかの方法から選択できます。*|[定義の更新プログラムを構成Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-definition-updates) <p> [Configuration Manager を使用して定義の更新プログラムを配信する](/mem/configmgr/protect/deploy-use/endpoint-definitions-configmgr)|
 |**ネットワーク保護を有効** にして、従業員が悪意のあるコンテンツをインターネット上で使用するアプリを使用するのを防ぐ <p> *テスト環境で [ネットワーク保護のために](/microsoft-365/security/defender-endpoint/evaluate-network-protection) 監査モードを最初に使用して、展開前にブロックされるアプリを確認することをお勧めします。*|[Configuration Manager でネットワーク保護を有効にする](/microsoft-365/security/defender-endpoint/enable-network-protection#microsoft-endpoint-configuration-manager)|
 |**ランサムウェアから保護するためにフォルダー** アクセスの制御を構成する <p> *フォルダー アクセスの制御は、アンチランソイエムウェア保護とも呼ばれます。*|[エンドポイント保護: フォルダー アクセスの制御](/mem/intune/protect/endpoint-protection-windows-10#controlled-folder-access) <p> [Microsoft Endpoint Configuration Manage でフォルダー アクセスの制御を有効にする](/microsoft-365/security/defender-endpoint/enable-controlled-folders#microsoft-endpoint-configuration-manager)|
-|||
 
 ## <a name="configure-your-microsoft-365-defender-portal"></a>ポータルをMicrosoft 365 Defenderする
 

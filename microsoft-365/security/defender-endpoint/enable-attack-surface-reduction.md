@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.date: 08/17/2021
-ms.openlocfilehash: 4f1ec369913054e8fe119cebf3d647b42c133d34
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8d88a3f84819e22d4e8c5e5d0b01e1169a5fb3df
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177672"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59356353"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>攻撃面の減少ルールを有効にする
 
@@ -140,7 +140,7 @@ ASR ルールを有効にする次の手順には、ファイルとフォルダ�
 
    - [ **名前]** に、ルールの名前を入力します。
    - [ **説明]** に簡単な説明を入力します。
-   - **OMA-URI で**、追加するルールの特定の OMA-URI リンクを入力または貼り付けます。
+  - **OMA-URI で**、追加するルールの特定の OMA-URI リンクを入力または貼り付けます。 このルール例で使用する OMA-URI については、このトピックの前の MEM セクションを参照してください。 ASR ルール GUIDS[](attack-surface-reduction-rules.md#per-rule-descriptions)については、トピック「攻撃表面の縮小ルール」の「ルールごとの説明」を参照してください。
    - [ **データ型] で**、[文字列] を **選択します**。
    - [ **値]** で、GUID 値、記号、およびスペースを含む State 値 \= _(GUID=StateValue) を入力または貼り付けます_。 Where: {0 : Disable (DISABLE the ASR rule)}, {1 : Block (Enable the ASR rule)}, {2 : Audit (有効な場合は ASR ルールが組織に与える影響を評価する)}, {6 : Warn (Enable the ASR rule but allow the end-user to bypass the block)}
 

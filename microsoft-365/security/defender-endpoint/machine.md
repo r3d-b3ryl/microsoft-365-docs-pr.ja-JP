@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 8a7e1b9641a1c4688da86bb072ab8c33f23be11d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 91ee0c6ec2e4c11b714dee586613b16fd22df278
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165030"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59357671"
 ---
 # <a name="machine-resource-type"></a>コンピューター リソースの種類
 
@@ -68,26 +68,27 @@ ms.locfileid: "59165030"
 
 ****
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |---|---|---|
-|id|String|[マシン](machine.md) ID。|
-|computerDnsName|String|[コンピューター](machine.md) の完全修飾名。|
+|id|文字列|[マシン](machine.md) ID。|
+|computerDnsName|文字列|[コンピューター](machine.md) の完全修飾名。|
 |firstSeen|DateTimeOffset|Microsoft Defender for [](machine.md) Endpoint によってコンピューターが観測された最初の日付と時刻。|
 |lastSeen|DateTimeOffset|最後に受信した完全なデバイス レポートの時刻と日付。 通常、デバイスは 24 時間ごとに完全なレポートを送信します。|
 |osPlatform|String|オペレーティング システム プラットフォーム。|
+|onboardingstatus|文字列|コンピューターのオンボーディングの状態。 可能な値は、「オンボード」と「オフボード」です。|
 |osProcessor|String|オペレーティング システム プロセッサ。 代わりに osArchitecture プロパティを使用します。|
 |version|String|オペレーティング システムのバージョン。|
 |osBuild|Null 許容長|オペレーティング システムのビルド番号。|
-|lastIpAddress|String|コンピューター上のローカル NIC の最後の[IP。](machine.md)|
-|lastExternalIpAddress|String|コンピューターがインターネットに [アクセスした](machine.md) 最後の IP。|
+|lastIpAddress|文字列|コンピューター上のローカル NIC の最後の[IP。](machine.md)|
+|lastExternalIpAddress|文字列|コンピューターがインターネットに [アクセスした](machine.md) 最後の IP。|
 |healthStatus|列挙|[マシンの](machine.md) 正常性状態。 指定できる値は、"Active"、"Inactive"、"ImpairedCommunication"、"NoSensorData"、"NoSensorDataImpairedCommunication"、"Unknown" です。|
-|rbacGroupName|String|コンピューター グループ名。|
+|rbacGroupName|文字列|コンピューター グループ名。|
 |rbacGroupId|String|コンピューター グループ ID。|
 |riskScore|Null 許容列挙|Microsoft Defender for Endpoint によって評価されるリスク スコア。 指定できる値は、'None'、'Informational'、'Low'、'Medium'、および 'High' です。|
 |aadDeviceId|Null 許容表現 Guid|AAD デバイス ID ( [コンピューターが](machine.md) AAD 参加している場合)。|
-|machineTags|String collection|コンピューター タグ [の](machine.md) セット。|
+|machineTags|String コレクション|コンピューター タグ [の](machine.md) セット。|
 |exposureLevel|Null 許容列挙|Microsoft Defender for Endpoint によって評価される露出レベル。 指定できる値は、'None'、'Low'、'Medium'、および 'High' です。|
 |deviceValue|Null 許容列挙|デバイス [の値](tvm-assign-device-value.md)です。 指定できる値は、'Normal'、'Low'、および 'High' です。|
 |ipAddresses|IpAddress コレクション|***IpAddress オブジェクトの*** セット。 「Get [machines API」を参照してください](get-machines.md)。|
-|osArchitecture|String|オペレーティング システムのアーキテクチャ。 指定できる値は、"32 ビット"、"64 ビット" です。 osProcessor の代わりにこのプロパティを使用します。|
+|osArchitecture|文字列|オペレーティング システムのアーキテクチャ。 指定できる値は、"32 ビット"、"64 ビット" です。 osProcessor の代わりにこのプロパティを使用します。|
 |

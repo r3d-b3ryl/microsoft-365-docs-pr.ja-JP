@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: e3c944ea79adc22f587e2a0e20e3d783f845d15f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: cf5f0a63645fccb9f3895796c8ec514efe091a94
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177504"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59357030"
 ---
 # <a name="hunt-for-ransomware"></a>ランサムウェアを探す
 
@@ -252,3 +252,47 @@ ScDisable = iff(make_set(ScDisableUse) contains "1", 1, 0), TotalEvidenceCount =
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)
 - [クエリのベスト プラクティスを適用する](advanced-hunting-best-practices.md)
+
+## <a name="additional-ransomware-resources"></a>その他のランサムウェア リソース
+
+Microsoft の主な情報:
+
+- [ランサムウェアの脅威の増大](https://blogs.microsoft.com/on-the-issues/2021/07/20/the-growing-threat-of-ransomware/), Microsoft On the Issues blog post on 7月 20, 2021
+- [人が操作するランサムウェア](/security/compass/human-operated-ransomware)
+- [ランサムウェアや強要から迅速に保護する](/security/compass/protect-against-ransomware)
+- [最新のMicrosoft セキュリティ インテリジェンスレポート](https://www.microsoft.com/securityinsights/)(P. 22-24)
+- **ランサムウェア: Microsoft 365 Defender** ポータルの Threat **analytics** ノードにある、継続的な脅威レポート (以下のライセンス要件 [を参照](/microsoft-365/security/defender/prerequisites#licensing-requirements))
+
+Microsoft 365:
+
+- [ランサムウェア攻撃から回復する](/microsoft-365/security/office-365-security/recover-from-ransomware)
+- [マルウェアと ランサムウェアからの保護](/compliance/assurance/assurance-malware-and-ransomware-protection)
+- [ランサムウェアからWindows 10 PC を保護する](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
+- [SharePoint Online でのランサムウェアの処理](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
+
+Microsoft Azure:
+
+- [ランサムウェア攻撃に対する Azure 防御](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/)
+- [ランサムウェアから保護するためのバックアップと復元の計画](/security/compass/backup-plan-to-protect-against-ransomware)
+- [Microsoft Azure によるランサムウェアからの](https://www.youtube.com/watch?v=VhLOr2_1MCg)保護 (26 分のビデオ)
+- [システム ID の侵害からの回復](/azure/security/fundamentals/recover-from-identity-compromise)
+- [Azure Sentinel での高度な多段階攻撃検出](/azure/sentinel/fusion#ransomware)
+- [Azure Sentinel でのランサムウェアのフュージョン検出](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
+
+Microsoft Cloud App Security:
+
+-  [Cloud App Security で異常検出ポリシーを作成する](/cloud-app-security/anomaly-detection-policy)
+
+Microsoft Security チームのブログ投稿:
+
+- [ランサムウェアを防止して回復するための 3 つの手順 (2021 年 9 月)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
+- [サイバーセキュリティリスクを理解することで回復力を高める:パート 4:現在の脅威をナビゲートする (2021 年 5 月)](https://www.microsoft.com/security/blog/2021/05/26/becoming-resilient-by-understanding-cybersecurity-risks-part-4-navigating-current-threats/)
+
+  「ランサムウェア **」セクションを参照** してください。
+
+- [人が操作するランサムウェア攻撃: 予防可能な災害 (2020 年 3 月)](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/)
+
+  実際の攻撃の攻撃チェーン分析が含まれます。
+
+- [ランサムウェアの応答 - 支払いを行う場合と支払わない場合(2019 年 12 月)](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
+- [Norsk Hydro が透明性を持つランサムウェア攻撃に対応 (2019 年 12 月)](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)

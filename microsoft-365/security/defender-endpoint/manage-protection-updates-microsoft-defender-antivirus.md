@@ -15,12 +15,12 @@ ms.reviewer: pahuijbr
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: d95d9e0add79d83edbee351c734ab6636902cd29
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c303251ff8a6e37ac351e57dc18a1ca3dcee8751
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214904"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59356815"
 ---
 # <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>Microsoft Defender ウイルス対策更新プログラムのソースを管理する
 
@@ -77,9 +77,7 @@ Microsoft Update では、最高レベルの保護を確保するために、迅
 
 各ソースには、次の表で説明するように、更新プログラムを発行する頻度に加えて、ネットワークの構成方法に依存する一般的なシナリオがあります。
 
-<br>
-
-****
+<br/><br/>
 
 |場所|シナリオ例|
 |---|---|
@@ -88,7 +86,6 @@ Microsoft Update では、最高レベルの保護を確保するために、迅
 |ファイル共有|インターネットに接続されていないデバイス (VM など) があります。 インターネットに接続された VM ホストを使用して、更新プログラムをネットワーク共有にダウンロードし、そこから VM が更新プログラムを取得できます。 仮想デスクトップ [インフラストラクチャ (VDI)](deployment-vdi-microsoft-defender-antivirus.md) 環境でファイル共有を使用する方法については、VDI 展開ガイドを参照してください。|
 |Microsoft エンドポイント マネージャー|エンドポイントを更新Microsoft エンドポイント マネージャーを使用しています。|
 |セキュリティ インテリジェンスの更新プログラム (Microsoft Defender ウイルス対策 Microsoft マルウェア対策 (以前は MMPC と呼ばば)|[SHA-2 をサポートするためにデバイスが更新されていないことを確認します](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus)。 Microsoft Defender ウイルス対策セキュリティ インテリジェンス更新プログラムは Windows Update を通じて配信され、2019 年 10 月 21 日月曜日からセキュリティ インテリジェンス更新プログラムは SHA-2 専用に署名されます。 <br/>最近の感染による最新の保護更新プログラムをダウンロードするか、VDI 展開用の強力な基本イメージを準備 [するのに役立ちます](deployment-vdi-microsoft-defender-antivirus.md)。 このオプションは通常、プライマリ ソースではなく、最終的なフォールバック ソースとしてのみ使用する必要があります。 サーバー更新サービスまたは Microsoft Update から指定した日数更新プログラムWindowsダウンロードできない場合にのみ[使用されます](/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date)。|
-|
 
 グループ ポリシー、グループ ポリシー、PowerShell コマンドレット、および WMI で更新Microsoft Endpoint Configuration Manager使用する順序を管理できます。
 
@@ -113,7 +110,7 @@ Microsoft Update では、最高レベルの保護を確保するために、迅
 
       :::image type="content" source="../../media/wdav-order-update-sources.png" alt-text="ソースの順序を示すグループ ポリシー設定。":::
 
-   3. **[OK]** を選択します。 これにより、保護更新プログラムのソースの順序が設定されます。
+   3. **[OK]** をクリックします。 これにより、保護更新プログラムのソースの順序が設定されます。
 
    4. [セキュリティ インテリジェンス更新プログラムをダウンロード **するための** ファイル共有の定義] 設定をダブルクリックし、オプションを [有効] に **設定します**。
 

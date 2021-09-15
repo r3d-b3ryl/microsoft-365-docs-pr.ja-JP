@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: cc642d06d6f2cb253140e902114f4c2840a58036
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 813dff46f3ba26c32f3b704645a9ca35ca740001
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218294"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59353600"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>macOS または Linux でクライアント アナライザーを実行する
 
@@ -37,7 +37,7 @@ ms.locfileid: "59218294"
 1. 調査する [必要がある macOS](https://aka.ms/XMDEClientAnalyzer) または Linux コンピューターに XMDE クライアント アナライザー ツールをダウンロードします。
 
    > [!NOTE]
-   > 上記のリンクからダウンロードされる 'XMDEClientAnalyzer.zip' の現在の SHA256 ハッシュは、'029296D437BA97B5563D0C75DD874F8F51C563B2B5AC16745619F4DB2E064C85'です。
+   > 上記のリンクからダウンロードされた 'XMDEClientAnalyzer.zip' の現在の SHA256 ハッシュは、'973725417D136B7B17AF4B301F1E99BA21D7F4A7DF88036DC5A731A4B768A8B2'です。
 
 2. コンピューター上のXMDEClientAnalyzer.zipを抽出します。
 
@@ -72,9 +72,8 @@ ms.locfileid: "59218294"
 **-h** \# ヘルプ<br>
 \# ヘルプ メッセージを表示する
 
-**-p** \# パフォーマンス<br>
-\# まだ実装されていない計画されたパラメーター。<br>
-\# オンデマンドで再現できるパフォーマンスの問題を分析するために、広範なトレースを収集します。
+**パフォーマンス** \# パフォーマンス<br>
+\# オンデマンドで再現できるパフォーマンスの問題を分析するために、広範なトレースを収集します。 ベンチマーク `--length=<seconds>` の期間を指定する場合に使用します。
 
 **-o** \# 出力<br>
 \# 結果ファイルの宛先パスを指定する
@@ -95,7 +94,7 @@ ms.locfileid: "59218294"
 
   説明: いずれかの macOS で *mdatp* 診断作成を実行するときに生成される診断出力 [と同じ](/windows/security/threat-protection/microsoft-defender-atp/mac-resources#collecting-diagnostic-information)
 
-  または
+  or
 
   [ Linux ](/windows/security/threat-protection/microsoft-defender-atp/linux-resources#collect-diagnostic-information)
 
@@ -122,3 +121,7 @@ ms.locfileid: "59218294"
 - Auditd_info.txt
 
   説明: Linux OS の監査されたサービスと関連コンポーネント [の](/windows/security/threat-protection/microsoft-defender-atp/linux-support-events) 詳細
+
+- perf_benchmark.tar.gz
+
+  説明: パフォーマンス テストレポート。 これは、performance パラメーターを使用している場合にのみ表示されます。

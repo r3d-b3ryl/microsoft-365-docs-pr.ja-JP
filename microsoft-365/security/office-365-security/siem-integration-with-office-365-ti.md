@@ -19,12 +19,12 @@ description: 組織の SIEM サーバーを Microsoft Defender と統合して�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0cf5206b1b821f876aa810ba2bf280ba2f426544
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3eb38325c9695ae0ed5cfb9389e8972ee599739f
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211573"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59356005"
 ---
 # <a name="siem-integration-with-microsoft-defender-for-office-365"></a>SIEM との Microsoft Defender との統合 (Office 365
 
@@ -55,7 +55,7 @@ SIEM サーバーまたは他の同様のシステムは **、audit.general** �
 
 ### <a name="auditlogrecordtype"></a>AuditLogRecordType
 
-次の表に、Microsoft Defender のイベントに関連する **AuditLogRecordType** の値Office 365示します。
+次の表に、Microsoft Defender のイベントに関連する **AuditLogRecordType** の値Office 365示します。<br/><br/>
 
 | 値 | メンバ名 | 説明 |
 |---|---|---|
@@ -63,7 +63,6 @@ SIEM サーバーまたは他の同様のシステムは **、audit.general** �
 | 41| ThreatIntelligenceUrl | セーフMicrosoft Defender のタイム オブ ブロックイベントとブロック オーバーライド イベントをリンクして、Office 365。 |
 | 47| ThreatIntelligenceAtpContent | Microsoft Defender for SharePoint オンライン、OneDrive for Business、Microsoft Teamsのファイルのフィッシングイベントとマルウェア イベントOffice 365。 |
 | 64| AIR 調査 | Microsoft Defender for microsoft Defender for Office 365プラン 2 の調査の詳細や関連する成果物などの、自動調査およびOffice 365イベント。 |
-|
 
 > [!IMPORTANT]
 > Microsoft Defender との SIEM 統合をセットアップするには、Microsoft 365 Defender ポータルでグローバル管理者またはセキュリティ管理者の役割が割り当てられている必要Office 365。 詳細については、「[Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)」を参照してください。

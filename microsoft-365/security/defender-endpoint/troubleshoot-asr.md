@@ -17,12 +17,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 0833a616f1b6052519e92a5e46c8f36f01c80818
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1e4e32864c2541cfc0cf14602ec954d5e643f309
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213473"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59357595"
 ---
 # <a name="troubleshoot-attack-surface-reduction-rules"></a>攻撃表面の縮小ルールのトラブルシューティング
 
@@ -35,21 +35,16 @@ ms.locfileid: "59213473"
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
-
 攻撃表面の [縮小ルールを使用すると、](attack-surface-reduction.md) 次のような問題が発生する可能性があります。
 
 - ルールは、ファイル、プロセス、または実行すべきではない他のアクションをブロックします (誤検知)
-
 - ルールが説明に従って機能しないか、ファイルまたはプロセスをブロックしない (false 負の値)
 
 これらの問題のトラブルシューティングには、次の 4 つの手順があります。
 
 1. [前提条件の確認](#confirm-prerequisites)
-
 2. [監査モードを使用してルールをテストする](#use-audit-mode-to-test-the-rule)
-
 3. [指定したルールの除外を追加](#add-exclusions-for-a-false-positive) する (誤検知の場合)
-
 4. [サポート ログの送信](#collect-diagnostic-data-for-file-submissions)
 
 ## <a name="confirm-prerequisites"></a>前提条件の確認
@@ -94,9 +89,9 @@ demo.wd.microsoft.com の[Windows Defender](https://demo.wd.microsoft.com?ocid=c
 
 除外を追加するには、「攻撃表面の [縮小をカスタマイズする」を参照してください](customize-attack-surface-reduction.md)。
 
->[!IMPORTANT]
->除外する個々のファイルとフォルダーを指定できますが、個々のルールを指定することはできません。
->つまり、除外されるファイルまたはフォルダーは、すべての ASR ルールから除外されます。
+> [!IMPORTANT]
+> 除外する個々のファイルとフォルダーを指定できますが、個々のルールを指定することはできません。
+> つまり、除外されるファイルまたはフォルダーは、すべての ASR ルールから除外されます。
 
 ## <a name="report-a-false-positive-or-false-negative"></a>誤検知または偽陰性を報告する
 
@@ -123,7 +118,5 @@ demo.wd.microsoft.com の[Windows Defender](https://demo.wd.microsoft.com?ocid=c
 ## <a name="related-articles"></a>関連記事
 
 - [攻撃面の減少ルール](attack-surface-reduction.md)
-
 - [攻撃面の減少ルールを有効にする](enable-attack-surface-reduction.md)
-
 - [攻撃面の減少ルールを評価する](evaluate-attack-surface-reduction.md)

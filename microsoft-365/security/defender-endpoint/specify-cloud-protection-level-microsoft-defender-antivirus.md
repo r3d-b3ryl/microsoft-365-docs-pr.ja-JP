@@ -16,12 +16,12 @@ ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: a7b8214165e80347d6200c755db477b81e430630
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8adb0be672c20b8e51c4178df63d7b25332455ce
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179208"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59356470"
 ---
 # <a name="specify-the-cloud-protection-level"></a>クラウド保護レベルを指定する
 
@@ -39,7 +39,7 @@ ms.locfileid: "59179208"
 
 1. 管理センター ( ) Microsoft エンドポイント マネージャーに移動し [https://endpoint.microsoft.com](https://endpoint.microsoft.com) 、サインインします。
 
-2. [エンドポイント **セキュリティウイルス**  >  **対策] を選択します**。
+2. [エンドポイント **セキュリティウイルス** \> **対策] を選択します**。
 
 3. ウイルス対策プロファイルを選択します。 (まだプロファイルを持っていない場合、または新しいプロファイルを作成する場合は、「デバイス制限設定を構成する」を参照[Microsoft Intune。](/intune/device-restrictions-configure)
 
@@ -51,33 +51,32 @@ ms.locfileid: "59179208"
     - **High plus**: High レベルを **使用し** 、追加の保護手段を適用します (クライアントのパフォーマンスに影響を与える可能性があります)。
     - **ゼロ許容値**: 不明なすべての実行可能ファイルをブロックします。
 
-6. [ **確認] + [保存] の** 順に選択し、[保存] を **選択します**。 
+6. [ **確認] + [保存] の** 順に選択し、[保存] を **選択します**。
 
 > [!TIP]
 > いくつかのヘルプが必要ですか? 以下のリソースを参照してください。
+>
 > - [Endpoint Protection を構成する](/mem/configmgr/protect/deploy-use/endpoint-protection-configure)
 > - [Intune でエンドポイント保護設定を追加する](/mem/intune/protect/endpoint-protection-configure)
-  
 
 ## <a name="use-group-policy-to-specify-the-level-of-cloud-protection"></a>グループ ポリシーを使用してクラウド保護のレベルを指定する
 
-1.  グループ ポリシー管理マシンで、グループ ポリシー管理 [コンソールを開きます](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))。
+1. グループ ポリシー管理マシンで、グループ ポリシー管理 [コンソールを開きます](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))。
 
 2. 構成するグループ ポリシー オブジェクトを右クリックし、[編集] を **選択します**。
 
-3.  グループ ポリシー **管理エディターで、[コンピューター** の構成 **] [管理**  >  **用テンプレート] に移動します**。
+3. グループ ポリシー **管理エディターで、[コンピューター** の構成 **] [管理** \> **用テンプレート] に移動します**。
 
-4.  MpEngine の [**コンポーネント] Windowsツリー**  >  **Microsoft Defender ウイルス対策**  >  **展開します**。
+4. MpEngine の [**コンポーネント] Windowsツリー** \> **Microsoft Defender ウイルス対策** \> **展開します**。
 
-5.  [クラウド保護レベルの **選択] 設定をダブルクリックし** 、[有効] に **設定します**。 保護のレベルを選択します。
-
+5. [クラウド保護レベルの **選択] 設定をダブルクリックし** 、[有効] に **設定します**。 保護のレベルを選択します。
     - **既定のブロック レベルは** 、正当なファイルを検出するリスクを高めることなく、強力な検出を提供します。
     - **中程度のブロック レベル** は、高信頼検出にのみ中程度を提供します
     - **高ブロック レベルでは** 、クライアントのパフォーマンスを最適化しながら強力なレベルの検出を適用します (ただし、誤検知の可能性も高くなる可能性があります)。
     - **高 + ブロック レベルは** 、追加の保護対策を適用します (クライアントのパフォーマンスに影響を与え、誤検知の可能性が高い可能性があります)。
     - **ゼロトレランス ブロック レベルは、** 不明なすべての実行可能ファイルをブロックします。
 
-6. **[OK]** を選択します。
+6. **[OK]** をクリックします。
 
 7. 更新されたグループ ポリシー オブジェクトを展開します。 「 [グループ ポリシー管理コンソール」を参照してください。](/windows/win32/srvnodes/group-policy)
 

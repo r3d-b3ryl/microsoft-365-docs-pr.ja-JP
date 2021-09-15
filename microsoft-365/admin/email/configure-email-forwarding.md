@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: メール転送を使用すると、ユーザー メールボックスに送信Microsoft 365メール メッセージを組織の内部または外部の別のメールボックスに転送できます。
-ms.openlocfilehash: 77f374623244708c0b2bf1ecdae1af0cbebc9812
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c2715f42a32eb4a4a3743016d54b7ad42c424835
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176560"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59356329"
 ---
 # <a name="configure-email-forwarding-in-microsoft-365"></a>メール転送の構成 (Microsoft 365
 
@@ -85,7 +85,7 @@ ms.locfileid: "59176560"
 
 3. [メール **の設定]** を展開し、[メール転送] セクション **で** [編集] を **選択します**。
 
-4. [メール転送] ページで、トグルを **[オン**] に設定し、転送先アドレスを入力し、転送されたメールのコピーを保持するかどうかを選択します。 このオプションが表示されない場合は、ライセンスがユーザー アカウントに割り当てられていることを確認します。 **[保存]** を選択します。
+4. [メール転送] ページで、トグルを **[オン**] に設定し、転送先アドレスを入力し、転送されたメールのコピーを保持するかどうかを選択します。 このオプションが表示されない場合は、ライセンスがユーザー アカウントに割り当てられていることを確認します。 [**保存**] を選択します。
 
    **複数の電子メール アドレスに転送するには**、ユーザーに対して、アドレスに転送するルールを設定Outlookを設定できます。 詳細については、「ルールを使用して [メッセージを自動的に転送する」を参照してください](https://support.microsoft.com/office/45aa9664-4911-4f96-9663-ece42816d746)。
 
@@ -103,7 +103,7 @@ ms.locfileid: "59176560"
 
 3. [メール **の設定]** を展開し、[メール転送] セクション **で** [編集] を **選択します**。
 
-4. [メール転送] ページで、トグルを **[オン**] に設定し、転送先アドレスを入力し、転送されたメールのコピーを保持するかどうかを選択します。 このオプションが表示されない場合は、ライセンスがユーザー アカウントに割り当てられていることを確認します。 **[保存]** を選択します。
+4. [メール転送] ページで、トグルを **[オン**] に設定し、転送先アドレスを入力し、転送されたメールのコピーを保持するかどうかを選択します。 このオプションが表示されない場合は、ライセンスがユーザー アカウントに割り当てられていることを確認します。 [**保存**] を選択します。
 
    **複数の電子メール アドレスに転送するには**、ユーザーに対して、アドレスに転送するルールを設定Outlookを設定できます。 詳細については、「ルールを使用して [メッセージを自動的に転送する」を参照してください](https://support.microsoft.com/office/45aa9664-4911-4f96-9663-ece42816d746)。
 
@@ -117,5 +117,7 @@ ms.locfileid: "59176560"
 
 [共有メールボックスの作成](../email/create-a-shared-mailbox.md) (記事)\
 [別のアドレスからメールを送信](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) する (記事)\
-[外部メールの自動転送を制御Microsoft 365](/security/office-365-security/external-email-forwarding?view=o365-worldwide) (記事)\
-[ユーザー名とメール アドレスを変更する](../add-users/change-a-user-name-and-email-address.md) (記事)
+[ユーザー名とメール アドレスを変更](../add-users/change-a-user-name-and-email-address.md) する (記事)\
+[外部メールの自動転送をMicrosoft 365](/microsoft-365/security/office-365-security/external-email-forwarding)する (記事)
+
+

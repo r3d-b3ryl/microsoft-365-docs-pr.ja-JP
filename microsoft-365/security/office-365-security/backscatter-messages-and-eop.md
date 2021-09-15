@@ -19,12 +19,12 @@ ms.custom:
 description: この記事では、Backscatter および Microsoft Exchange Online保護 (EOP) について学習します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e5882f611c3feec9a22760e696973cd0713649b2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 31af8d1467d1e38287c8308dcbac5e55fb7478bf
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192371"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59356115"
 ---
 # <a name="backscatter-in-eop"></a>EOP のバックスキャッター
 
@@ -35,11 +35,11 @@ ms.locfileid: "59192371"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-*Backscatter* は、送信しなかったメッセージに対して受信する配信不可レポート (NDRs またはバウンス メッセージとも呼ばれる) です。 スパム送信者は、メッセージの 送信者アドレスを偽装 (なりすまし) し、メッセージへの信頼性を高めるために、実在するメール アドレスを使用することがよくあります。 したがって、スパム送信者が必然的に存在しない受信者にメッセージを送信する場合 (スパムは大規模な操作です)、宛先電子メール サーバーは基本的に、NDR の配信不能メッセージを From: アドレスの偽造送信者に返すようだまされます。
+*Backscatter* は、送信しなかったメッセージに対して受信する配信不可レポート (NDRs またはバウンス メッセージとも呼ばれる) です。 Backscatter は、スパム送信者がメッセージ内の From アドレス (または P2 アドレスとも呼ばれる) を偽造 (スプーフィング `5322.From` ) することで発生します。 スパム送信者は、多くの場合、実際の電子メール アドレスを From アドレスとして使用して、メッセージに信頼性を与えます。 スパムが存在しない受信者に送信される場合、宛先の電子メール サーバーは基本的に、NDR の配信不能メッセージを差出人アドレスの偽造送信者に返します。
 
 Exchange Online またはスタンドアロン Exchange Online Protection (EOP) 組織に Exchange Online メールボックスがない Microsoft 365 組織では、EOP は NDR を生成せずに疑わしいソースからのメッセージを識別し、サイレント ドロップするためにあらゆる努力を行います。 ただし、サービスを流れるボリュームメールに基づいて、EOP が意図せずにバックスカッターを送信する可能性は常にあります。
 
-Backscatterer.org は、バックスカッターの送信を担当した電子メール サーバーのブロック リスト (DNS ブロック リストまたは DNSBL とも呼ばれる) を保持し、EOP サーバーがこの一覧に表示される場合があります。 ただし、スパム送信者のリストではないので、Backscatterer.org ブロック リストから自分自身を削除しようとはしない (独自の許可によって)。
+Backscatterer.org は、バックスカッターの送信を担当した電子メール サーバーのブロックリスト (DNS ブロックリストまたは DNSBL とも呼ばれる) を保持し、EOP サーバーがこの一覧に表示される場合があります。 ただし、リストはスパム送信者のリストではないので、Backscatterer.org ブロックリストから自分自身を削除しようとはしない。
 
 > [!TIP]
-> web Backscatter.org ( ) は、拒否モードではなく セーフ モードで受信メールを確認するサービスを使用することを推奨します (大規模なメール サービスは、ほとんどの場合、いくつかのバックスカッターを送信 <http://www.backscatterer.org/?target=usage> します)。
+> 大規模 Backscatterer.org サービスはほとんど常にいくつかのバックスカッターを送信するため、Backscatterer.org Web サイト ( ) では、拒否モードではなく セーフ モードでサービスを使用することを <http://www.backscatterer.org/?target=usage> 推奨しています。

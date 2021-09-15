@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: 708ae221a020b8d6410b35a1db538d5ad50aba48
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 68a14ab44011506d89e219f1350dbc86939a6432
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213713"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59356379"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint での誤検出/検出漏れに対処する
 
@@ -74,16 +74,13 @@ ms.locfileid: "59213713"
 
 4. アラートの状態に応じて、次の表に示す手順を実行します。
 
-<br>
-
-****
+<br/>
 
 |アラートの状態|操作|
 |---|---|
 |アラートは正確です|アラートを割り当て、さらに [調査](investigate-alerts.md) します。|
 |アラートは誤検知です|<ol><li>[アラートを誤検知](#classify-an-alert) として分類します。</li><li>[アラートを抑制します](#suppress-an-alert)。</li><li>[Microsoft](#indicators-for-microsoft-defender-for-endpoint) Defender for Endpoint のインジケーターを作成します。</li><li>[分析のためにファイルを Microsoft に提出します](#part-4-submit-a-file-for-analysis)。</li></ol>|
 |アラートは正確ですが、良性 (重要ではない)|[アラートを正の](#classify-an-alert) 値として分類し、アラート [を抑制します](#suppress-an-alert)。|
-|||
 
 ### <a name="classify-an-alert"></a>アラートの分類
 

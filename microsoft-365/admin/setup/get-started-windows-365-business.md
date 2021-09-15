@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 組織で 365 Business Windows購入する方法と、ユーザーがクラウド PC の使用を開始する方法について学習します。
-ms.openlocfilehash: 4c53aba7ae2d4bd47b5df2f32c50dcf6bb448201
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 39d43d81d292c343591e5f5e1192d8de198a7b7c
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176247"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59355662"
 ---
 # <a name="get-started-with-windows-365-business-and-cloud-pcs"></a>Windows 365 Business および Cloud PC の概要
 
@@ -107,7 +107,7 @@ Windows 365 製品サイトまたは Microsoft 365 管理センター を通じ�
 ユーザーは、[ブラウザーで **開く] を選択** してクラウド PC を開きます。
 
 > [!NOTE]  
-> モバイル デバイスは現在サポートされていません。
+> モバイル デバイスは、現在、ブラウザーを使用してクラウド PC を開く場合はサポートされていません。 リモート デスクトップ アプリがサポートされています。
 
 #### <a name="user-actions"></a>ユーザー操作
 

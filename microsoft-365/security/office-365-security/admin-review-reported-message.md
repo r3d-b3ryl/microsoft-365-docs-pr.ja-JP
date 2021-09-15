@@ -13,12 +13,12 @@ ms.collection:
 description: 報告されたメッセージを確認し、ユーザーにフィードバックを与える方法について学習します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fb023d68e81c5592078bdd89e4826537790e7d53
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ef08b07226d8ce038547b972163d87a557099478
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177400"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59357564"
 ---
 # <a name="admin-review-for-reported-messages"></a>報告されたメッセージの管理者によるレビュー
 

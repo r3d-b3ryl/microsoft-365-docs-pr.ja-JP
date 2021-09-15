@@ -7,18 +7,18 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 08/30/2021
+ms.date: 09/13/2021
 ms.prod: m365-security
-ms.technology: mde
+ms.technology: mdep1
 localization_priority: Normal
 ms.reviewer: inbadian
 f1.keywords: NOCSH
-ms.openlocfilehash: 3af483db6b2cc9801a56d96147a0a4aed90e33ce
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f02873148fbd6415c987aad8e5161cff34c2004b
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213664"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59355827"
 ---
 # <a name="get-started-with-microsoft-defender-for-endpoint-plan-1-preview"></a>Microsoft Defender for Endpoint Plan 1 の概要 (プレビュー)
 
@@ -55,9 +55,9 @@ Microsoft 365 Defender ポータル ( ) を使用すると、検出された脅�
 
 ### <a name="navigation-bar-makes-it-easy-to-find-alerts-the-action-center-and-more"></a>ナビゲーション バーを使用すると、アラート、アクション センターなど、簡単に検索できます。
 
-画面の左側のナビゲーション バーを使用すると、インシデント、アラート、アクション センター、レポート、および設定の間を簡単に移動できます。 次の表に、ナビゲーション バーについて説明します。
+画面の左側のナビゲーション バーを使用すると、インシデント、アラート、アクション センター、レポート、および設定の間を簡単に移動できます。 次の表に、ナビゲーション バーについて説明します。<br/><br/>
 
-| ナビゲーション バーアイテム | 説明 |
+| ナビゲーション バーアイテム | [説明] |
 |:---|:---|
 | **ホーム** | ポータルのホーム ページに移動Microsoft 365 Defender[します](../defender/microsoft-365-security-center-mde.md)。 |
 | **インシデント&アラート** | 展開してインシデントと **アラートを****表示します**。 |

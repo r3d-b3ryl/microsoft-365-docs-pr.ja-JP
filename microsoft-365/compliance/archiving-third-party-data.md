@@ -21,13 +21,13 @@ search.appverid:
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
-description: ソーシャル メディア プラットフォーム、インスタント メッセージング プラットフォーム、ドキュメント コラボレーション プラットフォームからサードパーティ のデータを、ユーザーのメールボックスにインポートするMicrosoft 365します。
-ms.openlocfilehash: c2d8d3c048654c6c665cba34254a5362cd3b88c1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: ソーシャル メディア プラットフォーム、インスタント メッセージング プラットフォーム、ドキュメント コラボレーション プラットフォームからサードパーティ のデータをインポートおよびアーカイブして、メールボックスにMicrosoft 365します。
+ms.openlocfilehash: 0dd06e4b51e81020d03f113abfca9ba69f30ec16
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164222"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59355931"
 ---
 # <a name="archive-third-party-data-in-microsoft-365"></a>サードパーティのデータをアーカイブMicrosoft 365
 
@@ -132,6 +132,8 @@ TeleMessage データ コネクタは、米国政府機関クラウドGCC環境�
 このセクションの表に、17a-4 LLC と提携して利用できるサードパーティのデータ コネクタを示します。 また、この表では、サードパーティのデータをインポートしてアーカイブした後に、サードパーティのデータに適用できるコンプライアンス ソリューションMicrosoft 365。 各コンプライアンス [ソリューションの](#overview-of-compliance-solutions-that-support-third-party-data) 詳細と、サード パーティデータのサポート方法の詳細については、「サードパーティ データをサポートするコンプライアンス ソリューションの概要」セクションを参照してください。
 
 Microsoft 365 でサード パーティのデータをアーカイブするには、17a-4 LLC を使用して組織のアーカイブ サービス *(DataParser* と呼ばれる) をセットアップする必要があります。 詳細については、[サード パーティ製データ]列のリンクをクリックして、そのデータ型のコネクタを作成するための手順を実行します。
+
+17a-4 データ コネクタは、米国政府機関クラウドGCC環境Microsoft 365でも利用できます。 詳細については、この記事の「 [米国政府機関クラウドの](#data-connectors-in-the-us-government-cloud) データ コネクタ」セクションを参照してください。
 
 |サードパーティのデータ  |訴訟ホールド|電子情報開示  |保持設定  |レコード管理  |コミュニケーション コンプライアンス  |インサイダー リスクの管理  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
@@ -262,18 +264,18 @@ subject:contoso AND itemclass:ipm.externaldata.facebook*
 
 |データ コネクタ  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
-|Android Archiver | はい | いいえ | なし |
+|Android Archiver | はい | いいえ | いいえ |
 |AT&T SMS/MMS Network Archiver | はい | いいえ | いいえ |
-|Bell SMS/MMS Network Archiver | はい | いいえ | なし |
+|Bell SMS/MMS Network Archiver | はい | いいえ | いいえ |
 |Enterprise Number Archiver | はい | いいえ | いいえ |
-|O2 SMS と Voice Network Archiver | はい         | いいえ | なし |
-|Rogers Network Archiver | はい         | いいえ | なし |
-|Signal Archiver | はい | いいえ | なし |
+|O2 SMS と Voice Network Archiver | はい         | いいえ | いいえ |
+|Rogers Network Archiver | はい         | いいえ | いいえ |
+|Signal Archiver | はい | いいえ | いいえ |
 |Telegram Archiver | はい | いいえ | いいえ |
 |TELUS SMS ネットワーク アーカイブ | はい | いいえ | いいえ |
 |Verizon SMS/MMS Network Archiver | はい | いいえ | いいえ |
-|WeChat Archiver | はい | いいえ | なし |
-|WhatsApp Archiver | はい | いいえ | なし |
+|WeChat Archiver | はい | いいえ | いいえ |
+|WhatsApp Archiver | はい | いいえ | いいえ |
 |||||
 
 ### <a name="celltrust-data-connectors"></a>CellTrust データ コネクタ
@@ -281,6 +283,30 @@ subject:contoso AND itemclass:ipm.externaldata.facebook*
 |データ コネクタ  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
 |CellTrust SL2 | はい | いいえ | いいえ |
+|||||
+
+### <a name="17a-4-data-connectors"></a>17a-4 データ コネクタ
+
+|データ コネクタ  |GCC  |GCC High  |DoD  |
+|:---------|:---------|:---------|:---------|
+|BlackBerry DataParser | はい | いいえ | いいえ |
+|Bloomberg DataParser  | はい | いいえ | いいえ |
+|Cisco Jabber DataParser  | はい | いいえ | いいえ |
+|Cisco Webex DataParser  | はい | いいえ | いいえ |
+|FactSet DataParser  | はい | いいえ | いいえ |
+|Fuze DataParser  | はい | いいえ | いいえ |
+|FX Connect DataParser  | はい | いいえ | いいえ |
+|ICE DataParser  | はい | いいえ | いいえ |
+|InvestEdge DataParser  | はい | いいえ | いいえ |
+|LivePerson Conversational Cloud DataParser  | はい | いいえ | いいえ |
+|Quip DataParser  | はい | いいえ | いいえ |
+|Refinitiv Eikon Messenger DataParser  | はい | いいえ | いいえ |
+|ServiceNow DataParser  | はい | いいえ | いいえ |
+|Skype for Business Server DataParser | はい | いいえ | いいえ |
+|Slack DataParser | はい | いいえ | いいえ |
+|SQL DataParser  | はい | いいえ | いいえ |
+|Symphony DataParser | はい | いいえ | いいえ |
+|Zoom DataParser | はい | いいえ | いいえ |
 |||||
 
 ## <a name="working-with-a-microsoft-partner-to-archive-third-party-data"></a>Microsoft パートナーと作業してサード パーティのデータをアーカイブする

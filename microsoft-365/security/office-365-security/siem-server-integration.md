@@ -18,12 +18,12 @@ ms.custom:
 description: セキュリティ情報とイベント管理 (SIEM) サーバーとクラウド サービスとアプリケーションMicrosoft 365概要を確認する
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ea4d844595aaab8d8148666430187edef463b92e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 542c6a75282d32aa3b67d61f7236e82210174531
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211564"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59353612"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>セキュリティ情報とイベント管理 (SIEM) サーバーとサービスMicrosoft 365アプリケーションとの統合
 
@@ -52,16 +52,13 @@ SIEM サーバーが必要かどうかは、組織のセキュリティ要件や
 
 SIEM サーバーは、さまざまなサービスやアプリケーションからデータMicrosoft 365受信できます。 次の表に、SIEM サーバー Microsoft 365リソースと共に、複数のサービスとアプリケーションの一覧を示します。
 
-<br>
-
-****
+<br/><br/>
 
 |Microsoft 365サービスまたはアプリケーション|SIEM サーバーの入力/メソッド|追加情報|
 |---|---|---|
 |[Microsoft Defender for Office 365](defender-for-office-365.md)|監査ログ|[SIEM との Microsoft Defender との統合 (Office 365](siem-integration-with-office-365-ti.md)|
 |[Microsoft Defender for Endpoint](/windows/security/threat-protection/)|Azure でホストされる HTTPS エンドポイント <p> REST API|[SIEM ツールにアラートをプルする](../defender-endpoint/configure-siem.md)|
 |[Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)|ログの統合|[SIEM とMicrosoft Cloud App Security](/cloud-app-security/siem)|
-|
 
 > [!TIP]
 > [Azure Sentinel を見てみろ](/azure/sentinel/overview)。 Azure Sentinel には、Microsoft ソリューション用のコネクタが付属しています。 これらのコネクタは「箱から出して」利用できます。リアルタイムの統合を実現します。 Office 365、Azure AD、Microsoft Defender for Identity、Microsoft Cloud App Security など、Microsoft 365 Defender ソリューションと Microsoft 365 サービスで Azure Sentinel を使用できます。

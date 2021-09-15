@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.date: 08/05/2021
-ms.openlocfilehash: 937ca4baefe4456edb97bac7f5cfc56d346c08bb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2406dc875fce48e3af21258b5152fef6603cd923
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213603"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59355422"
 ---
 # <a name="microsoft-defender-antivirus-on-windows-server"></a>Windows Server 上の Microsoft Defender ウイルス対策
 
@@ -128,16 +128,13 @@ sc query Windefend
 
 既定では Windows Update で Windows Server 2019 または Windows Server 2016 への更新プログラムを自動的にダウンロードしてインストールすることはできません。 この構成を変更するには、以下のいずれかの方法を使用します。
 
-<br>
-
-****
+<br/><br/>
 
 |メソッド|説明|
 |---|---|
 |コントロール パネルにある **Windows Update**|**更新プログラムを自動的にインストールする** と、Windows Defender セキュリティ インテリジェンス更新プログラムを含むすべての更新プログラムが自動的にインストールされます。 <p> **更新プログラムをダウンロードし、自分でインストールを決定する** に設定すると、Windows Defender でセキュリティ インテリジェンス更新プログラムを自動的にダウンロードしてインストールできますが、他の更新プログラムが自動的にインストールされることはありません。|
 |**グループ ポリシー**|次のパスでグループ ポリシー内で使用できる設定を利用して、Windows Updateを設定、管理できます: **Administrative Templates\Windows Components\Windows Update\Configure Automatic Updates**|
 |**AUOptions** レジストリ キー|次の 2 つの値を使用すると、Windows Update でセキュリティ インテリジェンス更新プログラムを自動的にダウンロードしてインストールできます。 <p> **4** - **更新プログラムを自動的にインストールします**。 この値を使用すると、Windows Defender セキュリティ インテリジェンス更新プログラムを含むすべての更新プログラムを自動的にインストールできます。 <p> **3** - **更新プログラムをダウンロードし、自分でインストールを決定します**。 この値を使用すると Windows Defender でセキュリティ インテリジェンス更新プログラムを自動的にダウンロードしてインストールできますが、他の更新プログラムが自動的にインストールされることはありません。|
-|
 
 マルウェアからの保護を維持できるようにするには、次のサービスを有効にすることをお勧めします。
 

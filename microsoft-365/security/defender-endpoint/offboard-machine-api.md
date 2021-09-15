@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 83e43a36df3d4b4d0efdfd655e929c8aa39aeb74
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b62dbc0881ffe1b7129c053d13ee509796aef5b9
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218373"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59357398"
 ---
 # <a name="offboard-machine-api"></a>オフボード マシン API
 
@@ -32,8 +32,6 @@ ms.locfileid: "59218373"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
-
-
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -47,10 +45,11 @@ Defender for Endpoint からのオフボード デバイス。
 
 - この API のレート制限は、1 分あたり 100 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。
 
-[!include[Machine actions note](../../includes/machineactionsnote.md)]
+  [!include[Machine actions note](../../includes/machineactionsnote.md)]
 
->[!Note]
+> [!NOTE]
 > この API は、Windows 10バージョン 1703 以降、またはサーバー 2019 以降Windowsサポートされています。
+>
 > この API は、MacOS デバイスまたは Linux デバイスではサポートされていません。
 
 ## <a name="permissions"></a>アクセス許可
@@ -58,7 +57,7 @@ Defender for Endpoint からのオフボード デバイス。
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法などの詳細については [、「Use Defender for Endpoint API」を参照してください。](apis-intro.md)
 
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
-:---|:---|:---
+---|---|---
 アプリケーション|Machine.Offboard|'Offboard machine'
 委任 (職場または学校アカウント)|Machine.Offboard|'Offboard machine'
 
@@ -76,18 +75,18 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/offboard
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|型|説明
-:---|:---|:---
+名前|種類|説明
+---|---|---
 Authorization|String|ベアラー {token}。 **必須**
-Content-Type|string|application/json. **必須**
+Content-Type|string|application/json. **必須**。
 
 ## <a name="request-body"></a>要求本文
 
 要求本文で、JSON オブジェクトに次のパラメーターを指定します。
 
-パラメーター|型|説明
-:---|:---|:---
-コメント|文字列|アクションに関連付けるコメント。 **必須**
+パラメーター|種類|説明
+---|---|---
+コメント|文字列|アクションに関連付けるコメント。 **必須**。
 
 ## <a name="response"></a>応答
 

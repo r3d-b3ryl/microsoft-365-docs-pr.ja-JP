@@ -6,7 +6,8 @@ author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.service: O365-seccomp
+ms.prod: m365-security
+ms.technology: mdo
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -18,19 +19,19 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX
 description: 管理者は、管理者向け Microsoft Defender の試用版モードについてOffice 365
-ms.openlocfilehash: a11528df6960293ba4b5a3f6e4d287989049556a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 21cff6ecd695ef95173149eed211b40989fa47ce
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572493"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59357497"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>Microsoft Defender for Office 365試用版
 
 Microsoft Defender for Office 365、電子メール メッセージ、リンク (URL)、およびコラボレーション ツールによって組織が悪意のある脅威から保護します。 Defender for Office 365 には次のものが含まれます。
 
 - **脅威保護ポリシー**: 脅威保護ポリシーを定義して、組織に適切なレベルの保護を設定します。
-- **レポート**: リアルタイム レポートを表示して、組織内のパフォーマンスOffice 365 Defender を監視します。
+- **レポート**: 組織における Defender for Office 365 のパフォーマンスを監視するリアルタイム レポートを表示します。
 - **脅威の調査および反応機能**: 最先端のツールを使用して、脅威を調査、把握、シミュレーション、および回避を行います。
 - **自動調査および対応機能**: 脅威の調査と軽減にかかる時間と労力を節約します。
 

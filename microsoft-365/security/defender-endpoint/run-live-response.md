@@ -21,14 +21,14 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f94e4d5e51b6a846a0439e3833a01d252c51bd0a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ae3b0e3ad09487d9b48ddab10a43eb36e5abed35
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218274"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59353664"
 ---
-#  <a name="run-live-response-commands-on-a-device"></a>デバイスでライブ応答コマンドを実行する
+# <a name="run-live-response-commands-on-a-device"></a>デバイスでライブ応答コマンドを実行する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -50,19 +50,19 @@ ms.locfileid: "59218274"
 
 ## <a name="limitations"></a>制限事項
 
-1.  この API のレート制限は、1 分あたり 10 回の呼び出しです (追加の要求は HTTP 429 で応答されます)。
+1. この API のレート制限は、1 分あたり 10 回の呼び出しです (追加の要求は HTTP 429 で応答されます)。
 
-2.  25 の同時実行セッション (調整制限を超える要求は"429 - 要求が多すぎます" という応答を受け取ります)。
+2. 25 の同時実行セッション (調整制限を超える要求は"429 - 要求が多すぎます" という応答を受け取ります)。
 
-3.  コンピューターが使用できない場合、セッションは最大 3 日間キューに入れられます。
+3. コンピューターが使用できない場合、セッションは最大 3 日間キューに入れられます。
 
-4.  RunScript コマンドは 10 分後にタイムアウトします。
+4. RunScript コマンドは 10 分後にタイムアウトします。
 
-5.  ライブ応答コマンドをキューに入れ、一度に 1 つしか実行できません。 
+5. ライブ応答コマンドをキューに入れ、一度に 1 つしか実行できません。
 
-6.  この API 呼び出しを実行しようとしているコンピューターが、自動修復レベルが割り当てられていない RBAC デバイス グループ内にある場合は、少なくとも特定のデバイス グループの最小修復レベルを有効にする必要があります。
+6. この API 呼び出しを実行しようとしているコンピューターが、自動修復レベルが割り当てられていない RBAC デバイス グループ内にある場合は、少なくとも特定のデバイス グループの最小修復レベルを有効にする必要があります。
 
-7.  1 つの API 呼び出しで複数のライブ応答コマンドを実行できます。 ただし、ライブ応答コマンドが失敗した場合、後続のすべてのアクションは実行されません。
+7. 1 つの API 呼び出しで複数のライブ応答コマンドを実行できます。 ただし、ライブ応答コマンドが失敗した場合、後続のすべてのアクションは実行されません。
 
 ## <a name="minimum-requirements"></a>最小要件
 
@@ -82,7 +82,7 @@ ms.locfileid: "59218274"
   - **WindowsServer 2019 - パブリック プレビューにのみ適用**
     - バージョン 1903 以降 [(KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)を使用)
     - バージョン 1809 [(KB4537818 付](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)き)
-    
+
 ## <a name="permissions"></a>アクセス許可
 
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可を選択する方法など、詳細については、「開始する」 [を参照してください](apis-intro.md)。
@@ -90,7 +90,7 @@ ms.locfileid: "59218274"
 |アクセス許可の種類|アクセス許可|アクセス許可の表示名|
 |---|---|---|
 |アプリケーション|Machine.LiveResponse|特定のコンピューターでライブ応答を実行する|
-|委任 (職場または学校アカウント)|Machine.LiveResponse|特定のコンピューターでライブ応答を実行する|
+|委任 (職場または学校のアカウント)|Machine.LiveResponse|特定のコンピューターでライブ応答を実行する|
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -100,19 +100,19 @@ POST https://api.securitycenter.microsoft.com/API/machines/{machine_id}/runliver
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-|名前|型|説明|
+|名前|種類|説明|
 |---|---|---|
 |Authorization|文字列|ベアラー\<token>\. 必須です。|
 |Content-Type|string|application/json. Required.|
 
 ## <a name="request-body"></a>要求本文
 
-|パラメーター|型|説明|
+|パラメーター|種類|説明|
 |---|---|---|
 |コメント|文字列|アクションに関連付けるコメント。|
 |コマンド|配列|実行するコマンド。 使用できる値は PutFile、RunScript、GetFile です。|
 
-**コマンド**:
+## <a name="commands"></a>コマンド
 
 |コマンドの種類|パラメーター|説明|
 |---|---|---|
