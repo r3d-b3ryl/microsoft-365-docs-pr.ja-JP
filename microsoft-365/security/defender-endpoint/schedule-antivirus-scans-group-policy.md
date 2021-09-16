@@ -11,17 +11,17 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 06/09/2021
+ms.date: 09/13/2021
 ms.reviewer: pauhijbr, ksarens
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 6ca4616cd1c2818e0a1eb0b5c286142e9f65f32b
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 8f1025ac7392e146be3486655513ce39086d3337
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59353588"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400788"
 ---
 # <a name="schedule-antivirus-scans-using-group-policy"></a>グループ ポリシーを使用してウイルス対策スキャンをスケジュールする
 
@@ -43,12 +43,16 @@ ms.locfileid: "59353588"
 
 5. 通常と同じ方法でグループ ポリシー オブジェクトを展開します。 グループ ポリシー オブジェクトのヘルプが必要な場合は、「 [グループ ポリシー オブジェクトの作成」を参照してください](/windows/security/threat-protection/windows-firewall/create-a-group-policy-object)。
 
-> [!TIP]
-> 「保護更新 [プログラムをダウンロードして](manage-protection-update-schedule-microsoft-defender-antivirus.md) 適用する必要がある場合の管理」および「ユーザーによるポリシー設定のローカル変更を防止または許可する」 [のトピックを参照](configure-local-policy-overrides-microsoft-defender-antivirus.md) してください。
+> [!NOTE]
+> スケジュールされたスキャンを構成する場合、既定で有効になっているコンピューターがオンになっているが使用されていない場合にのみ、スケジュールされたスキャンを開始する設定は、コンピューターを最初にアイドル状態にすることで、予期されるスケジュールされた時間に影響を与える可能性があります。
+>
+> 毎週のスキャンの場合、Windows サーバーの既定の動作は、コンピューターがアイドル状態のときに自動メンテナンスの外部でスキャンします。 コンピューターがアイドル状態Windows 10、コンピューターの自動メンテナンス中にスキャンが実行されます。 この動作を変更するには **、ScanOnlyIfIdle** を無効にして設定を変更し、スケジュールを定義します。
+
+詳細については、「保護更新プログラム [をダウンロードして](manage-protection-update-schedule-microsoft-defender-antivirus.md) 適用する必要がある場合の管理」および「ユーザーによるポリシー設定のローカル変更を防止または許可する」 [のトピックを参照](configure-local-policy-overrides-microsoft-defender-antivirus.md) してください。
 
 ## <a name="group-policy-settings-for-scheduling-scans"></a>スキャンのスケジュール設定のグループ ポリシー設定
 
-| 場所 | 設定 | 説明 | 既定の設定 (構成されていない場合) |
+| Location | 設定 | 説明 | 既定の設定 (構成されていない場合) |
 |:---|:---|:---|:---|
 | スキャン | スケジュールされたスキャンに使用するスキャンの種類を指定する | クイック スキャン |
 | スキャン | スケジュールされたスキャンを実行する週の日を指定する | スキャンを実行する日 (または実行しない) を指定します。 | Never |
@@ -57,7 +61,7 @@ ms.locfileid: "59353588"
 
 ## <a name="group-policy-settings-for-scheduling-scans-for-when-an-endpoint-is-not-in-use"></a>エンドポイントが使用されていないときにスキャンをスケジュールするグループ ポリシー設定
 
-| 場所 | 設定 | 説明 | 既定の設定 (構成されていない場合) |
+| Location | 設定 | 説明 | 既定の設定 (構成されていない場合) |
 |:---|:---|:---|:---|
 | スキャン | コンピューターがオンで、使用されていない場合にのみ、スケジュールされたスキャンを開始する | コンピューターがオンで使用されていない場合、スケジュールされたスキャンは実行されません。 | Enabled |
 
@@ -66,21 +70,21 @@ ms.locfileid: "59353588"
 
 ## <a name="group-policy-settings-for-scheduling-remediation-required-scans"></a>修復に必要なスキャンをスケジュールするためのグループ ポリシー設定
 
-| 場所 | 設定 | 説明 | 既定の設定 (構成されていない場合) |
+| Location | 設定 | 説明 | 既定の設定 (構成されていない場合) |
 |---|---|---|---|
 | 修復 | スケジュールされたフル スキャンを実行して修復を完了する日を指定する | スキャンを実行する日 (または実行しない) を指定します。 | Never |
 | 修復 | スケジュールされたフル スキャンを実行して修復を完了する時刻を指定する | 午前 0 時以降の分数を指定します (たとえば、 **午前 1 時に 60** と入力します)。 | 2 a.m. |
 
 ## <a name="group-policy-settings-for-scheduling-daily-scans"></a>毎日のスキャンをスケジュールするグループ ポリシー設定
 
-| 場所 | 設定 | 説明 | 既定の設定 (構成されていない場合) |
+| Location | 設定 | 説明 | 既定の設定 (構成されていない場合) |
 |:---|:---|:---|:---|
 | スキャン | 1 日あたりのクイック スキャンを実行する間隔を指定する | 次のクイック スキャンの前に経過する時間を指定します。 たとえば、2 時間ごとに実行するには **、「2」と入力し、1** 日 1 回は **24 と入力します**。 **0 と入力** すると、毎日のクイック スキャンは実行されません。 | Never |
 | スキャン | 毎日のクイック スキャンの時間を指定する | 午前 0 時以降の分数を指定します (たとえば、 **午前 1 時に 60** と入力します)。 | 2 a.m. |
 
 ## <a name="group-policy-settings-for-scheduling-scans-after-protection-updates"></a>保護更新後にスキャンをスケジュールするグループ ポリシー設定
 
-| 場所 | 設定 | 説明 | 既定の設定 (構成されていない場合)|
+| Location | 設定 | 説明 | 既定の設定 (構成されていない場合)|
 |:---|:---|:---|:---|
 | 署名の更新 | セキュリティ インテリジェンスの更新後にスキャンを有効にする | 新しい保護更新プログラムがダウンロードされた直後にスキャンが実行されます | Enabled |
 

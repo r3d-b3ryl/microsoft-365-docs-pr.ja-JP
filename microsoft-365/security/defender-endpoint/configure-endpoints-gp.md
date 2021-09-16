@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 4bd6726550e444ffc31e241b8fb5c52c9967a267
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b4e6becbdb0e26317bcc29e5bb70e24486d43414
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212314"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400452"
 ---
 # <a name="onboard-the-windows-10-devices-using-group-policy"></a>グループ ポリシーをWindows 10デバイスにオンボードする
 
@@ -43,9 +43,7 @@ ms.locfileid: "59212314"
 
 ## <a name="onboard-devices-using-group-policy"></a>グループ ポリシーを使用してデバイスをオンボードする
 
-[![さまざまな展開パスを示す PDF のイメージ。](images/onboard-gp.png)](images/onboard-gp.png#lightbox)
-
-[[](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)エンドポイント用 Defender [Visio展開](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx)] のさまざまなパスを確認するには、PDF またはドキュメントを参照してください。
+[[](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)エンドポイント用 Defender [Visio展開](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx)] のさまざまなパスを確認するには、PDF またはドキュメントを参照してください。
 
 1. サービス オンボーディング ウィザードから.zipした gp 構成 *パッケージ*(WindowsDefenderATPOnboardingPackage.zip) を開きます。 また、次のポータルから[パッケージをMicrosoft 365 Defenderすることもできます](https://security.microsoft.com/)。
     1. ナビゲーション ウィンドウで、[エンドポイント **デバイス設定** \>  \> **オンボーディング]** \> **を選択します**。  
@@ -121,7 +119,7 @@ ms.locfileid: "59212314"
 
 **ポリシーの場所:** \Windows コンポーネント\atp Windows Defender
 
-ポリシー|Setting
+ポリシー|設定
 ---|---
 Enable\Disable Sample collection|[有効] - [コンピューターでサンプル コレクションを有効にする] チェック ボックスをオンにします。
 
@@ -129,7 +127,7 @@ Enable\Disable Sample collection|[有効] - [コンピューターでサンプ�
 
 **ポリシーの場所:** \Windows コンポーネント\Microsoft Defender ウイルス対策
 
-ポリシー|Setting
+ポリシー|設定
 ---|---
 望ましくない可能性があるアプリケーションの検出を構成する|有効、ブロック
 
@@ -137,7 +135,7 @@ Enable\Disable Sample collection|[有効] - [コンピューターでサンプ�
 
 **ポリシーの場所:** \Windows コンポーネント\Microsoft Defender ウイルス対策\MAPS
 
-ポリシー|Setting
+ポリシー|設定
 ---|---
 Microsoft MAPS に参加する|有効、高度なマップ
 詳細な分析が必要な場合にファイル サンプルを送信する | 有効、安全なサンプルの送信
@@ -146,9 +144,9 @@ Microsoft MAPS に参加する|有効、高度なマップ
 
 **ポリシーの場所:** \Windows コンポーネント\Microsoft Defender ウイルス対策\リアルタイム保護
 
-ポリシー|Setting
+ポリシー|設定
 ---|---
-リアルタイム保護をオフにする|Disabled
+リアルタイム保護をオフにする|無効
 動作の監視を有効にする|Enabled
 ダウンロードしたファイルと添付ファイルをスキャンする|Enabled
 コンピューター上のファイルとプログラムのアクティビティを監視する|Enabled
@@ -159,7 +157,7 @@ Microsoft MAPS に参加する|有効、高度なマップ
 
 これらの設定は、エンドポイントの定期的なスキャンを構成します。 毎週のクイック スキャンを実行することをお勧めします。パフォーマンスが許容されます。
 
-ポリシー|Setting
+ポリシー|設定
 ---|---
 スケジュールされたスキャンを実行する前に、最新のウイルスとスパイウェアのセキュリティ インテリジェンスを確認する |Enabled
 
@@ -181,7 +179,7 @@ Microsoft MAPS に参加する|有効、高度なマップ
 
    ![攻撃表面の縮小構成のイメージ。](images/asr-guid.png)
 
-ポリシー|Setting
+ポリシー|設定
 ---|---
 フォルダー アクセスの制御を構成する| 有効、監査モード
 

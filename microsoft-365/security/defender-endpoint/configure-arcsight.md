@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1ab7e1f31fff1e4b553d5d301eb7fbe4749de19e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 41d07ae2c6acc4bdbe828bc98d8bdfecdbf45f2e
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177720"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401724"
 ---
 # <a name="configure-micro-focus-arcsight-to-pull-defender-for-endpoint-detections"></a>エンドポイント検出用の Defender をプルする Micro Focus ArcSight の構成
 
@@ -41,7 +41,7 @@ ms.locfileid: "59177720"
 > - [Defender for Endpoint Alert](alerts.md) は、1 つ以上の検出から構成されます。
 > - [エンドポイント検出の Defender は](api-portal-mapping.md) 、デバイスで発生した疑わしいイベントとその関連するアラートの詳細から構成されます。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 Micro Focus ArcSight Connector ツールを構成するには、アプリケーション (AAD) アプリケーションから検出をプルして解析するために、いくつかの構成ファイルAzure Active Directory必要があります。
 
@@ -104,7 +104,7 @@ Micro Focus ArcSight Connector ツールを構成するには、アプリケー�
    |フィールド|値|
    |---|---|
    |構成ファイル|クライアント プロパティ ファイルの名前を入力します。 名前は、ダウンロードしたファイルに含.zip一致する必要があります。 <p> たとえば、"flexagent" ディレクトリの構成ファイルの名前が "WDATP-Connector.jsonparser.properties" の場合は、クライアント プロパティ ファイルの名前として "WDATP-Connector" と入力する必要があります。|
-   |イベント URL|データセンターの場所に応じて、EU または米国の URL を選択します。 <ul><li>**EU の場合**:  `https://<i></i>wdatp-alertexporter-eu.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME`</li><li>**米国の場合**: `https://<i></i>wdatp-alertexporter-us.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME`</li><li>**英国の場合**: `https://<i></i>wdatp-alertexporter-uk.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME`</li></ul>|
+   |イベント URL|データセンターの場所に応じて、EU、米国、または英国の URL を選択します。 <ul><li>**EU の場合**:  `https://wdatp-alertexporter-eu.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME`</li><li>**米国の場合**: `https://wdatp-alertexporter-us.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME`</li><li>**英国の場合**: `https://wdatp-alertexporter-uk.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME`</li></ul>|
    |認証の種類|OAuth 2|
    |OAuth 2 クライアント プロパティ ファイル|*wdatp-connector.properties ファイルの場所を参照* します。 名前は、ダウンロードしたファイルに含.zip一致する必要があります。|
    |更新トークン|更新トークンは **、SIEM** 設定ページから更新トークンを生成するか、restutil ツールを使用する方法の 2 つの方法で取得できます。 <p> Preferences セットアップから更新トークンを生成する方法の詳細については、「Defender for Endpoint で SIEM 統合を有効[にする」を参照してください](enable-siem-integration.md)。 <p> **restutil ツールを使用して更新トークンを取得します**。 <ol><li>コマンド プロンプトを開きます。 [C: フォルダーの場所\current\bin] に移動し、フォルダーの場所はツールをインストール \\ した場所を表 *\_* します。 *\_*</li><li>Type: `arcsight restutil token -config` from the bin directory. たとえば **、arcsight restutil boxtoken -proxy proxy.location.hp.com:8080。** Web ブラウザー ウィンドウが開きます。</li><li>資格情報を入力し、パスワード フィールドをクリックしてページをリダイレクトします。 ログイン プロンプトで、資格情報を入力します。</li><li>更新トークンがコマンド プロンプトに表示されます。</li><li>[トークンの更新] フィールドに **コピーして貼り付** けます。|

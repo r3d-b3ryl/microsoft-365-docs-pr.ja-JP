@@ -17,12 +17,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 19737781f2c22a356da2c237e2f059a362140956
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f2d9c6895abe4654270a9ae3818e2853fc00dd85
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222885"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400356"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>フォルダーへのアクセス制御で重要なフォルダーを保護する
 
@@ -111,20 +111,17 @@ DeviceEvents
 2. [**イベント ビューアー]** と入力スタート メニューイベント ビューアー Windows開きます。
 3. 左側のパネルの [アクション] **で、[** カスタム ビュー **のインポート... を選択します**。
 4. 抽出した場所に *移動cfa-events.xml選択* します。 または [、XML を直接コピーします](event-views.md)。
-5. **[OK]** を選択します。
+5. **[OK]** をクリックします。
 
 次の表に、フォルダー アクセスの制御に関連するイベントを示します。
 
-<br>
-
-****
+<br/><br/>
 
 |イベント ID|説明|
 |---|---|
 |5007|設定が変更された場合のイベント|
 |1124|監査されたフォルダー アクセス イベント|
 |1123|ブロックされたフォルダー アクセス イベント|
-|
 
 ## <a name="view-or-change-the-list-of-protected-folders"></a>保護されたフォルダーの一覧を表示または変更する
 

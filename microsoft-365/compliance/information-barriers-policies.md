@@ -15,12 +15,12 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 43190dabe55ab3600a05aa8e6094c6ad7393a04d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ae7d6d448c753737a96db4f74ffd6532ed7e6e66
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191400"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59399600"
 ---
 # <a name="define-information-barrier-policies"></a>情報バリア ポリシーの定義
 
@@ -70,21 +70,21 @@ ms.locfileid: "59191400"
 
 - アドレス帳ポリシーなし - 情報バリア ポリシーを定義して適用する前に、Exchangeポリシーが適用されないか確認してください。 情報バリアはアドレス帳ポリシーに基づいていますが、2 種類のポリシーには互換性がありません。 このようなポリシーがある場合は、まずアドレス帳 [ポリシーを削除してください](/exchange/address-books/address-book-policies/remove-an-address-book-policy) 。 情報バリア ポリシーを有効にし、階層型アドレス帳を有効にすると、情報バリア セグメントに含まれていないすべてのユーザーに、Exchange[](/exchange/address-books/hierarchical-address-books/hierarchical-address-books)オンラインで階層アドレス帳が表示されます。
 
-- PowerShell - 現在、情報バリア ポリシーは、PowerShell コマンドレットを使用して Office 365 セキュリティ &で定義および管理されます。 この記事ではいくつかの例を示しますが、PowerShell のコマンドレットとパラメーターを理解する必要があります。 また、このモジュールAzure PowerShell必要があります。
+- PowerShell - 現在、情報バリア ポリシーは、コンプライアンス センター PowerShell のセキュリティ &で定義および管理されます。 この記事ではいくつかの例を示しますが、PowerShell のコマンドレットとパラメーターを理解する必要があります。 また、PowerShell モジュールAzure Active Directory必要があります。
   - [セキュリティ/コンプライアンス センター PowerShell に接続する](/powershell/exchange/connect-to-scc-powershell)
-  - [モジュールのインストールAzure PowerShellする](/powershell/azure/install-az-ps)
+  - [PowerShell Azure Active DirectoryのインストールGraph](/powershell/azure/active-directory/install-adv2)
 
 - Microsoft Teams の情報バリアに対する管理者の同意 - IB ポリシーが適用されている場合、グループ (つまり、グループに基づく Teams チャネル) から IB 以外のコンプライアンス ユーザーを削除できます。 この構成は、組織がポリシーと規制に準拠し続けるのに役立ちます。 次の手順を使用して、情報バリア ポリシーが期待した通り動作Microsoft Teams。
 
-   1. 前提条件: [インストール] からAzure PowerShellを[インストールAzure PowerShell。](/powershell/azure/install-az-ps)
+   1. 前提条件: [PowerShell のAzure Active DirectoryをインストールGraph。](/powershell/azure/active-directory/install-adv2)
 
    1. 次の PowerShell コマンドレットを実行します。
 
       ```powershell
-      Connect-AzAccount -Tenant "<yourtenantdomain.com>"  //for example: Connect-AzAccount -Tenant "Contoso.onmicrosoft.com"
+      Connect-AzureAD -Tenant "<yourtenantdomain.com>"  //for example: Connect-AzureAD -Tenant "Contoso.onmicrosoft.com"
       $appId="bcf62038-e005-436d-b970-2a472f8c1982" 
       $sp=Get-AzureADServicePrincipal -Filter "appid eq '$($appid)'"
-      if ($sp -eq $null) { New-AzureADServicePrincipal -ApplicationId $appId }
+      if ($sp -eq $null) { New-AzureADServicePrincipal -AppId $appId }
       Start-Process  "https://login.microsoftonline.com/common/adminconsent?client_id=$appId"
       ```
 

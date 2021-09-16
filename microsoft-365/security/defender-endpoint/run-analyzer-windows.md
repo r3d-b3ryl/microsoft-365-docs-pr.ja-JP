@@ -20,94 +20,131 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 754ec7b6cdd6e6c5e3c9f5765d839bd94a1d720b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a0d715bd9c51f73eb58e06d68892ba955bdb7d1d
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218293"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400812"
 ---
-#  <a name="run-the-client-analyzer-on-windows"></a>Windows でクライアント アナライザーを実行する
+# <a name="run-the-client-analyzer-on-windows"></a>Windows でクライアント アナライザーを実行する
 
 **適用対象:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 
-1.  [MDE クライアント アナライザー ツールを、](https://aka.ms/mdatpanalyzer)調査Windowsコンピューターにダウンロードします。
+1. [MDE クライアント アナライザー ツールを、](https://aka.ms/mdatpanalyzer)調査Windowsコンピューターにダウンロードします。
 
-2.  コンピューター上のMDEClientAnalyzer.zipを抽出します。
+2. コンピューター上のMDEClientAnalyzer.zipを抽出します。
 
-3.  管理者特権でコマンド プロンプトを開きます。
+3. 管理者特権でコマンド プロンプトを開きます。
     1. **[スタート]** をクリックし、「**cmd**」と入力します。
     2. **[コマンド プロンプト]** を右クリックして **[管理者として実行]** を選択します。
 
-4.  次のコマンドを入力して、**Enter** キーを押します。
+4. 次のコマンドを入力して、**Enter** キーを押します。
 
-```
-HardDrivePath\MDEClientAnalyzer.cmd
-```
+   ```dos
+   HardDrivePath\MDEClientAnalyzer.cmd
+   ```
 
-**HardDrivePath を、ツールが抽出されたパスに置き換える例を次に示します。**
+   **HardDrivePath を、ツールが抽出されたパスに置き換える例を次に示します。**
 
-`C:\Work\tools\MDATPClientAnalyzer\MDEClientAnalyzer.cmd`
+   ```dos
+   C:\Work\tools\MDATPClientAnalyzer\MDEClientAnalyzer.cmd
+   ```
 
 上記に加えて、ライブ応答を使用してアナライザー サポート ログ[を収集するオプションも用意されています。](troubleshoot-collect-support-log.md)
 
-> [!NOTE]  
-> Windows 10、Windows Server 2019 以降の OS エディションでは、クライアント アナライザー スクリプトは、クラウド サービス URL への接続テストを実行するために呼び出される実行可能ファイルを呼び出します。 `MDEClientAnalyzer.exe` <br> <br> Windows 8.1、Windows Server 2016、または以前の OS エディションでは、クライアント アナライザー スクリプトは、コマンドとコントロール (CnC) URL の接続テストを実行するために呼び出される実行可能ファイルを呼び出し、サイバー データ チャネル URL の Microsoft Monitoring Agent 接続ツールにも呼び出します。 `MDEClientAnalyzerPreviousVersion.exe` `TestCloudConnection.exe`
+> [!NOTE]
+> Windows 10、Windows Server 2019 以降の OS エディションでは、クライアント アナライザー スクリプトは、クラウド サービス URL への接続テストを実行するために呼び出される実行可能ファイルを呼び出します。 `MDEClientAnalyzer.exe`
+>
+> Windows 8.1、Windows Server 2016、または以前の OS エディションでは、クライアント アナライザー スクリプトは、コマンドとコントロール (CnC) URL の接続テストを実行するために呼び出される実行可能ファイルを呼び出し、サイバー データ チャネル URL の Microsoft Monitoring Agent 接続ツールにも呼び出します。 `MDEClientAnalyzerPreviousVersion.exe` `TestCloudConnection.exe`
 
 ## <a name="result-package-contents-on-windows"></a>結果パッケージの内容がWindows
 
-> [!NOTE]    
+> [!NOTE]
 > キャプチャされる正確なファイルは、次のような要因によって変わる場合があります。
-> -   アナライザーが実行されるウィンドウのバージョン。
-> -   コンピューター上のイベント ログ チャネルの可用性。
-> -   センサーの開始状態 (EDRまだオンボードされていない場合、センサーは停止します)。
->-   アナライザー コマンドで高度なトラブルシューティング パラメーターが使用されている場合。
+>
+> - アナライザーが実行されるウィンドウのバージョン。
+> - コンピューター上のイベント ログ チャネルの可用性。
+> - センサーの開始状態 (EDRまだオンボードされていない場合、センサーは停止します)。
+> - アナライザー コマンドで高度なトラブルシューティング パラメーターが使用されている場合。
 
 既定では、開梱されたMDEClientAnalyzerResult.zipには、次の項目が含まれます。
 
--   MDEClientAnalyzer.htmこれはメインの HTML 出力ファイルであり、コンピューター上でアナライザー スクリプトが実行できる結果とガイダンス \| が含まれる。
+- MDEClientAnalyzer.htm
 
--   SystemInfoLogs [フォルダー]
+  これはメインの HTML 出力ファイルであり、コンピューター上でアナライザー スクリプトが実行できる結果とガイダンスが含まれる。
 
-    -   AddRemovePrograms.csv <br> 説明: レジストリから収集されたインストール済みソフトウェアの一覧。
+- SystemInfoLogs \[ フォルダー\]
+  - AddRemovePrograms.csv
 
--   AddRemoveProgramsWOW64.csv <br> 説明: レジストリから収集された x64 OS ソフトウェアにインストールされている x86 ソフトウェアの一覧。
+    説明: レジストリから収集された x64 OS ソフトウェアにインストールされている x86 ソフトウェアの一覧。
 
-    -   CertValidate.log <br> 説明: [CertUtil](/windows-server/administration/windows-commands/certutil)を呼び出して実行される証明書失効の詳細な結果です。
+  - AddRemoveProgramsWOW64.csv
 
-    -   dsregcmd.txt <br> 説明: [dsregcmd の実行からの出力](/azure/active-directory/devices/troubleshoot-device-dsregcmd)。
-        これにより、コンピューターの Azure AD状態に関する詳細が表示されます。
+    説明: レジストリから収集された x64 OS ソフトウェアにインストールされている x86 ソフトウェアの一覧。
 
-    -   IFEO.txt <br> 説明: コンピューターで [構成されているイメージ ファイル実行オプション](/previous-versions/windows/desktop/xperf/image-file-execution-options) の出力
+    - CertValidate.log
 
-    -   MDEClientAnalyzer.txt <br> 説明: アナライザー スクリプトの実行の詳細を示す詳細なテキスト ファイルです。
+      説明: [CertUtil](/windows-server/administration/windows-commands/certutil)を呼び出して実行される証明書失効の詳細な結果です。
 
-    -   MDEClientAnalyzer.xml <br> 説明: アナライザー スクリプトの結果を含む XML 形式。
+    - dsregcmd.txt
 
-    -   RegOnboardedInfoCurrent.Jsオン <br> 説明: レジストリから JSON 形式で収集されたオンボード コンピューター情報。
+      説明: [dsregcmd の実行からの出力](/azure/active-directory/devices/troubleshoot-device-dsregcmd)。 これにより、コンピューターの Azure AD状態に関する詳細が表示されます。
 
-    -   RegOnboardingInfoPolicy.Jsオン <br> 説明: レジストリから JSON 形式で収集されたオンボーディング ポリシー構成。
+    - IFEO.txt
 
-    -   SCHANNEL.txt <br> 説明: レジストリから [収集されたコンピューター](/windows-server/security/tls/manage-tls) に適用される SCHANNEL 構成の詳細。
+      説明: コンピューターで [構成されているイメージ ファイル実行オプション](/previous-versions/windows/desktop/xperf/image-file-execution-options) の出力
 
-    -   SessionManager.txt <br> 説明: セッション マネージャー固有の設定はレジストリから収集されます。
+    - MDEClientAnalyzer.txt
 
-    -   SSL_00010002.txt <br> 説明: レジストリから [収集された](/windows-server/security/tls/manage-tls) コンピューターに適用される SSL 構成の詳細。
+      説明: アナライザー スクリプトの実行の詳細を示す詳細なテキスト ファイルです。
 
--   EventLogs [フォルダー]
+    - MDEClientAnalyzer.xml
 
-    -   utc.evtx <br> 説明: DiagTrack イベント ログのエクスポート
+      説明: アナライザー スクリプトの結果を含む XML 形式。
 
-    -   senseIR.evtx <br> 説明: 自動調査イベント ログのエクスポート
+    - RegOnboardedInfoCurrent.Json
 
-    -   sense.evtx <br> 説明: Sensor メイン イベント ログのエクスポート
+      説明: レジストリから JSON 形式で収集されたオンボード コンピューター情報。
 
-    -   OperationsManager.evtx <br> 説明: イベント ログMicrosoft Monitoring Agentエクスポートする
+  - RegOnboardingInfoPolicy.Json
 
+    説明: レジストリから JSON 形式で収集されたオンボーディング ポリシー構成。
+
+    - SCHANNEL.txt
+
+      説明: レジストリから [収集されたコンピューター](/windows-server/security/tls/manage-tls) に適用される SCHANNEL 構成の詳細。
+
+    - SessionManager.txt
+
+      説明: セッション マネージャー固有の設定はレジストリから収集されます。
+
+    - SSL_00010002.txt
+
+      説明: レジストリから [収集された](/windows-server/security/tls/manage-tls) コンピューターに適用される SSL 構成の詳細。
+
+- EventLogs [フォルダー]
+
+  - utc.evtx
+
+    説明: DiagTrack イベント ログのエクスポート
+
+  - senseIR.evtx
+
+    説明: 自動調査イベント ログのエクスポート
+
+  - sense.evtx
+
+    説明: Sensor メイン イベント ログのエクスポート
+
+  - OperationsManager.evtx
+
+    説明: イベント ログMicrosoft Monitoring Agentエクスポートする
 
 ## <a name="see-also"></a>関連項目
+
 - [クライアント アナライザーの概要](overview-client-analyzer.md)
 - [クライアント アナライザーのダウンロードと実行](download-client-analyzer.md)
 - [Windows で高度なトラブルシューティングを行うためのデータ収集](data-collection-analyzer.md)

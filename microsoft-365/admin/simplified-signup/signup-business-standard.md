@@ -14,12 +14,12 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: 組織Microsoft 365 Business Standardを購入してセットアップします。
-ms.openlocfilehash: 7c5489a674145052eb40c533595a245a1d785247
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 498906bf227aa4cfd6a964212bb9553932d32602
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178439"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401844"
 ---
 # <a name="sign-up-for-a-microsoft-365-business-standard-subscription"></a>Microsoft 365 Business Standard サブスクリプションにサインアップする
 
@@ -40,9 +40,9 @@ ms.locfileid: "59178439"
 
 1. [ビジネスの [Microsoft 365] ページで、[](https://go.microsoft.com/fwlink/?linkid=2109654)プランと価格 **を&します**。
 2. 次のページで、月次コストを確認し、ページを下にスクロールして、そのページに含まれる情報の詳細を確認Microsoft 365。 [今Microsoft 365 Business Standard] で、[今すぐ **購入] を選択します**。
-3. [ユーザー **設定を選択してMicrosoft 365 Business Standard** に、情報を入力して開始します。 [**次へ**] を選択します。
+3. [ユーザー **設定を選択してMicrosoft 365 Business Standard** に、情報を入力して開始します。 **[次へ]** を選択します。
 4. 既に使用しているメール アドレスを入力します。 これは、セットアップ中に Microsoft がユーザーと通信するために使用する任意のアドレスを指定できます。 また、請求書と更新に関する情報を送信する住所です。 次に、[アカウント **の設定] を選択します**。
-5. 名前、会社の電話番号、ビジネス サイズ、会社名、および場所を入力します。 お客様の国または地域は、Microsoft から受け取る正確なサービスを決定し、この手順を完了した後は変更できません。 [**次へ**] を選択します。
+5. 名前、会社の電話番号、ビジネス サイズ、会社名、および場所を入力します。 お客様の国または地域は、Microsoft から受け取る正確なサービスを決定し、この手順を完了した後は変更できません。 **[次へ]** を選択します。
 
     > [!NOTE]
     > 管理センターに会社名を表示します。 ユーザー、ライセンス、その他のMicrosoft 365サービスを管理する場所です。 また、すべての内部サイト URL SharePoint含まれます。
@@ -59,7 +59,7 @@ ms.locfileid: "59178439"
 
 :::image type="content" source="../../media/ssu-how-you-sign-in.png" alt-text="スクリーンショット: 個人用メールでサインインします。":::
 
-1. 次のページでパスワードを作成し、[アカウントの作成] **を選択して** 続行します。 次のページで、データの処理方法について説明し、Microsoft パートナーから連絡を受け取るかどうかを選択します。 [**次へ**] を選択します。
+1. 次のページでパスワードを作成し、[アカウントの作成] **を選択して** 続行します。 次のページで、データの処理方法について説明し、Microsoft パートナーから連絡を受け取るかどうかを選択します。 **[次へ]** を選択します。
 
 2. 組織に必要Microsoft 365 Business Standardライセンスの数を選択し、[支払い方法の追加] を選択し、[注文の発注] にチェックアウトを **続行します**。
 
@@ -124,7 +124,7 @@ ms.locfileid: "59178439"
 
 継続請求がオンの場合は、毎年登録日にサブスクリプションに対する課金が行われます。 サブスクリプションがアクティブな場合は、管理センターでオフにしたりもう一度オンにしたりできます。 詳細については、「定期的 [な請求をオフまたはオンにする」を参照してください](../../commerce/subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on)。
 
-### <a name="what-if-i-want-to-change-my-business-name-in-future-how-do-i-do-that"></a>今後ビジネス名を変更する場合は、 これを行う方法
+### <a name="what-do-i-do-if-i-want-to-change-my-business-name"></a>ビジネス名を変更する場合は、どうしますか?
 
 ビジネス名の変更に役立つ小規模ビジネス サポートの専門家にお問い合わせください。 詳細については、「サポートを [受け取る」を参照してください](../../business-video/get-help-support.md)。
 

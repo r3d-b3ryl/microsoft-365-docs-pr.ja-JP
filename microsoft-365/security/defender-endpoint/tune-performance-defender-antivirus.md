@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 964447ee755d5587d03c6c3ee6cb56131013d34d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0ceb715549c208ccc7f961c115083c50e56dd526
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164886"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400548"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>パフォーマンス アナライザー (Microsoft Defender ウイルス対策
 
@@ -93,7 +93,7 @@ ms.locfileid: "59164886"
 Microsoft Defender ウイルス対策アナライザーには、次の前提条件があります。
 
 - サポートされているWindowsバージョン: Windows 10、Windows 11、Windows Server 2016以上
-- プラットフォーム バージョン: 4.18.2108.X+
+- プラットフォーム バージョン: 4.18.2108.7+
 - PowerShell バージョン: PowerShell バージョン 5.1
 
 ## <a name="powershell-reference"></a>PowerShell リファレンス

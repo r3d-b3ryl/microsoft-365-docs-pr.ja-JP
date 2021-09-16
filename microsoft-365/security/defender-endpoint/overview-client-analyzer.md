@@ -20,46 +20,46 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 604a7d98b25d7b5b858db87c8b8f467ffb8edb83
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bf37f1229712ba94539a8f493a5661fab61657c2
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192661"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59399180"
 ---
-#  <a name="troubleshoot-sensor-health-using-microsoft-defender-for-endpoint-client-analyzer"></a>Microsoft Defender for Endpoint Client Analyzer を使用したセンサーの正常性のトラブルシューティング
+# <a name="troubleshoot-sensor-health-using-microsoft-defender-for-endpoint-client-analyzer"></a>Microsoft Defender for Endpoint Client Analyzer を使用したセンサーの正常性のトラブルシューティング
 
 **適用対象:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 Microsoft Defender for Endpoint Client Analyzer (MDECA) は、Windows、Linux、または[](/microsoft-365/security/defender-endpoint/onboard-configure)macOS のいずれかを実行しているオンボード デバイスでセンサーの正常性または信頼性の問題を診断するときに役立ちます。 たとえば、セキュリティ ポータルに表示されるセンサーの正常性状態 [(非](/microsoft-365/security/defender-endpoint/fix-unhealthy-sensors) アクティブ、センサー データなし、または通信障害) に従って、異常と思われるコンピューターでアナライザーを実行できます。
 
-明らかなセンサーの正常性の問題に加え、MDECA は、次のような複雑なシナリオをトラブルシューティングするための他のトレース、ログ、および診断情報を収集できます。  
-アプリケーションの互換性 (AppCompat)、パフォーマンス、ネットワーク接続、またはエンドポイント データ損失防止に関連する予期しない[動作。](/microsoft-365/compliance/endpoint-dlp-learn-about)
+明らかなセンサーの正常性の問題に加え、MDECA は、次のような複雑なシナリオをトラブルシューティングするための他のトレース、ログ、および診断情報を収集できます。
+
+- アプリケーションの互換性 (AppCompat)、パフォーマンス、ネットワーク接続、または
+- エンドポイント データ損失防止に [関連する予期しない動作](/microsoft-365/compliance/endpoint-dlp-learn-about)。
 
 ## <a name="privacy-notice"></a>プライバシーに関する声明
 
+- Microsoft Defender for Endpoint Client Analyzer ツールは、Microsoft Defender for Endpoint で発生する可能性のある問題のトラブルシューティングに役立つ情報を収集するために、Microsoft カスタマー サポート サービス (CSS) によって定期的に使用されます。
 
--   Microsoft Defender for Endpoint Client Analyzer ツールは、Microsoft Defender for Endpoint で発生する可能性のある問題のトラブルシューティングに役立つ情報を収集するために、Microsoft カスタマー サポート サービス (CSS) によって定期的に使用されます。
+- 収集されたデータには、IP アドレス、PC 名、ユーザー名など、個人を特定できる情報 (PII) や機密データ (ただしこれらに限定されません) が含まれる場合があります。
 
--   収集されたデータには、IP アドレス、PC 名、ユーザー名など、個人を特定できる情報 (PII) や機密データ (ただしこれらに限定されません) が含まれる場合があります。
+- データ収集が完了すると、ツールはサブフォルダーと圧縮された zip ファイル内のコンピューターにデータをローカルに保存します。
 
--   データ収集が完了すると、ツールはサブフォルダーと圧縮された zip ファイル内のコンピューターにデータをローカルに保存します。
+- データは自動的に Microsoft に送信されません。 サポートの問題で共同作業中にツールを使用している場合は、問題の調査を容易にするために、Secure File Exchange を使用して圧縮データを Microsoft CSS に送信する必要があります。
 
--   データは自動的に Microsoft に送信されません。 サポートの問題で共同作業中にツールを使用している場合は、問題の調査を容易にするために、Secure File Exchange を使用して圧縮データを Microsoft CSS に送信する必要があります。
-
-Secure File Exchangeの詳細については、「Secure File Exchangeを使用して Microsoft サポートとファイルを交換する」[を参照してください](/troubleshoot/azure/general/secure-file-exchange-transfer-files)。  
+Secure File Exchangeの詳細については、「Secure File Exchangeを使用して Microsoft サポートとファイルを交換する」[を参照してください](/troubleshoot/azure/general/secure-file-exchange-transfer-files)。
 
 プライバシーに関する声明の詳細については [、「Microsoft Privacy Statement」を参照してください](https://privacy.microsoft.com/privacystatement)。
 
 ## <a name="requirements"></a>要件
 
--   アナライザーを実行する前に、プロキシまたはファイアウォールの構成で Microsoft Defender for Endpoint サービス URL へのアクセスを許可することを [確認することをお勧めします](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)。
+- アナライザーを実行する前に、プロキシまたはファイアウォールの構成で Microsoft Defender for Endpoint サービス URL へのアクセスを許可することを [確認することをお勧めします](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)。
 
--   アナライザーは、Microsoft Defender for Endpoint[](minimum-requirements.md#supported-windows-versions)へのオンボーディングの前に、Windows、Linux、[または macOS](microsoft-defender-endpoint-mac.md#system-requirements)のサポートされているエディションで実行できます。 [](microsoft-defender-endpoint-linux.md#system-requirements)
+- アナライザーは、Microsoft Defender for Endpoint[](minimum-requirements.md#supported-windows-versions)へのオンボーディングの前に、Windows、Linux、[または macOS](microsoft-defender-endpoint-mac.md#system-requirements)のサポートされているエディションで実行できます。 [](microsoft-defender-endpoint-linux.md#system-requirements)
 
--   Windowsデバイスの場合、Live [Response](/microsoft-365/security/defender-endpoint/troubleshoot-collect-support-log)を介してリモートではなく、特定のコンピューターでアナライザーを直接実行している場合は、SysInternals [PsExec.exe](/sysinternals/downloads/psexec)の実行を許可する必要があります (少なくとも一時的に)。  
-    アナライザーは、クラウド接続PsExec.exeローカル システムとして実行し、SENSE サービスの動作をエミュレートするために、このツールを呼び出します。
+- Windowsデバイスの場合、Live [Response](/microsoft-365/security/defender-endpoint/troubleshoot-collect-support-log)を介してリモートではなく、特定のコンピューターでアナライザーを直接実行している場合は、SysInternals [PsExec.exe](/sysinternals/downloads/psexec)の実行を許可する必要があります (少なくとも一時的に)。 アナライザーは、クラウド接続PsExec.exeローカル システムとして実行し、SENSE サービスの動作をエミュレートするために、このツールを呼び出します。
 
     > [!NOTE]
     > Windows デバイスで、攻撃表面縮小 (ASR) ルール[PSExec](attack-surface-reduction-rules.md#block-process-creations-originating-from-psexec-and-wmi-commands)および WMI コマンドから発生するプロセスの作成をブロックする場合は、ルールを一時的に無効にするか[、ASR](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules)ルールの除外を構成して、アナライザーが期待した通りクラウドに接続チェックを実行できます。

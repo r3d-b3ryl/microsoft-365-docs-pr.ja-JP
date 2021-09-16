@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: ab1cb1563f3ccc0f7bfda9b1f8875c76446153e3
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59357315"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59399240"
 ---
 # <a name="take-response-actions-on-a-device"></a>デバイスの対応措置を講じる
 
@@ -111,7 +111,7 @@ ms.locfileid: "59357315"
 
 ****
 
-|フォルダー|[説明]|
+|フォルダー|説明|
 |---|---|
 |自動実行|デバイス上での攻撃者の永続性を識別するために、既知の自動開始エントリ ポイント (ASEP) のレジストリの内容を表す一連のファイルが格納されています。 <p> <div class="alert"><b>注:</b> レジストリ キーが見つからない場合、ファイルには次のメッセージが含まれます。"ERROR: システムは、指定されたレジストリ キーまたは値を見つかりませんでした。<div>|
 |インストールされているプログラム|この.CSVファイルには、デバイスに現在インストールされているプログラムを特定するのに役立つインストール済みプログラムの一覧が含まれている。 詳細については、「Win32_Product [クラス」を参照してください](https://go.microsoft.com/fwlink/?linkid=841509)。|

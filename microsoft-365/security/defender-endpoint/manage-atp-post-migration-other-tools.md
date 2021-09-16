@@ -21,11 +21,11 @@ ms.topic: article
 ms.date: 09/22/2020
 ms.reviewer: chventou
 ms.openlocfilehash: 0b920cdd703a3c2893da3a4df3cc5b62513970c9
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59357659"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401916"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-powershell-wmi-and-mpcmdrunexe"></a>PowerShell、WMI、およびエンドポイントを使用して Microsoft Defender for Endpoint をMPCmdRun.exe
 

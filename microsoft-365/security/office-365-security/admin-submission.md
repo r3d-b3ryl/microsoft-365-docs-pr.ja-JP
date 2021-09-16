@@ -5,7 +5,6 @@ f1.keywords:
 ms.author: siosulli
 author: siosulli
 manager: dansimp
-ms.date: ''
 audience: ITPro
 ms.topic: how-to
 localization_priority: Normal
@@ -19,12 +18,12 @@ ms.custom:
 description: 管理者は、Microsoft 365 Defender ポータルの Submits ポータルを使用して、不審なメール、フィッシングメール、スパム、その他有害な可能性のあるメッセージ、URL、および電子メールの添付ファイルを Microsoft に提出して再スキャンする方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7bd845f67c25dae154832dbe280b6d158b22db8c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b36497ad6abe0325ea5d8830c4e1995370161c87
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219923"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400920"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>申請ポータルを使用して、疑わしいスパム、フィッシング、URL、ファイルを Microsoft に提出する
 
@@ -124,6 +123,9 @@ Exchange Online メールボックスを持つ組織では、管理者は Micros
 
 > [!div class="mx-imgBorder"]
 > ![新しい添付ファイルの申請例。](../../media/submission-file-flyout.png)
+
+> [!NOTE]
+> マルウェア フィルターによってメッセージ添付ファイルがマルウェア アラート Text.txt ファイルに置き換えられた場合は、元の添付ファイルを含む検疫から元のメッセージを送信する必要があります。 検疫の詳細とマルウェアの誤検知でメッセージを解放する方法については、「検疫済みメッセージとファイルを管理者として管理する」 [を参照してください](manage-quarantined-messages-and-files.md)。
 
 ## <a name="view-admin-submissions-to-microsoft"></a>Microsoft への管理者申請の表示
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7665fbd52e45636988b375e4b811e3f93d8f3981
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8cf8b1e049a96e7a03fb4df0199294afe193a660
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177696"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59399843"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>デバイス プロキシとインターネット接続の設定を構成する
 
@@ -39,12 +39,14 @@ Defender for Endpoint センサーでは、センサー データWindowsレポ�
 埋め込み Defender for Endpoint センサーは、LocalSystem アカウントを使用してシステム コンテキストで実行されます。 センサーは Microsoft Windows HTTP Services (WinHTTP) を使用して、Defender for Endpoint クラウド サービスとの通信を有効にしています。
 
 > [!TIP]
-> インターネットへのゲートウェイとして転送プロキシを使用する組織では、ネットワーク保護を使用してプロキシの背後を調査できます。 詳細については、「[転送プロキシの背後で発生する接続イベントの調査](investigate-behind-proxy.md)」を参照してください。
+> インターネットへのゲートウェイとして転送プロキシを使用する組織では、ネットワーク保護を使用して、転送プロキシの背後で発生する接続イベント [を調査できます](investigate-behind-proxy.md)。
 
-WinHTTP 構成設定は、Windows インターネット (WinINet) インターネット閲覧プロキシ設定とは独立し、次の検出方法を使用してのみプロキシ サーバーを検出できます。
+WinHTTP 構成設定は、Windows インターネット (WinINet) の参照プロキシ設定とは独立し、次の検出方法を使用してのみプロキシ サーバーを検出できます。
 
 - 自動検出の方法:
+
   - 透過プロキシ
+  
   - Web プロキシ自動発見プロトコル (WPAD)
 
     > [!NOTE]
@@ -53,11 +55,12 @@ WinHTTP 構成設定は、Windows インターネット (WinINet) インター�
 - 手動の静的プロキシの構成:
 
   - レジストリ ベースの構成
+  
   - netsh コマンドを使用して構成された WinHTTP: 安定したトポロジのデスクトップにのみ適しています (たとえば、同じプロキシの背後にある企業ネットワーク内のデスクトップ)
 
 ## <a name="configure-the-proxy-server-manually-using-a-registry-based-static-proxy"></a>レジストリ ベースの静的プロキシを使用して、プロキシ サーバーを手動で構成します。
 
-コンピューターがインターネットへの接続を許可されていない場合、Defender for Endpoint センサーだけが診断データを報告し、Defender for Endpoint サービスと通信できるレジストリ ベースの静的プロキシを構成します。
+コンピューターがインターネットへの接続を許可されていない場合は、Defender for Endpoint 検出および応答 (EDR) センサー用のレジストリ ベースの静的プロキシを構成して、診断データを報告し、Defender for Endpoint サービスと通信します。
 
 > [!NOTE]
 > このオプションを Windows 10 または Windows Server 2019 で使用する場合は、次の (以降の) ビルドと累積的な更新プログラムのロールアップを行う必要があります。
@@ -71,7 +74,7 @@ WinHTTP 構成設定は、Windows インターネット (WinINet) インター�
 
 静的プロキシは、グループ ポリシー (GP) を使用して構成できます。 グループ ポリシーは次の場所にあります。
 
-- **管理用> Windows コンポーネント>データ収集とプレビュー ビルド>接続されたユーザー エクスペリエンスとテレメトリ サービスの認証プロキシの使用を構成する**
+- **管理用> Windowsコンポーネント>データ** 収集とプレビュー ビルド>接続されたユーザー エクスペリエンスとテレメトリ サービスの認証プロキシの使用を構成します。
 
   [有効] に **設定し、[認証** された **プロキシの使用を無効にする] を選択します**。
 
@@ -83,17 +86,47 @@ WinHTTP 構成設定は、Windows インターネット (WinINet) インター�
 
   ![グループ ポリシー設定 2 のイメージ。](images/atp-gpo-proxy2.png)
 
-  ポリシーは、レジストリ キーの下に、REG_SZとREG_DWORDの 2 つのレジストリ値 `TelemetryProxyServer` `DisableEnterpriseAuthProxy` を設定します `HKLM\Software\Policies\Microsoft\Windows\DataCollection` 。
 
-  レジストリ値は、 `TelemetryProxyServer` 次の文字列形式を取ります。
+| グループ ポリシー | レジストリ キー | レジストリ エントリ | Value |
+|:---|:---|:---|:---|
+| 接続されたユーザー エクスペリエンスとテレメトリ サービスの認証されたプロキシ使用状況を構成する | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `DisableEnterpriseAuthProxy` | 1 (REG_DWORD) |
+| 接続されたユーザー エクスペリエンスと利用統計情報を構成する | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `TelemetryProxyServer` | ```http://servername or ip:port``` <br> <br> 例: ```http://10.0.0.6:8080``` (REG_SZ) |
 
-  ```text
-  <server name or ip>:<port>
-  ```
+## <a name="configure-a-static-proxy-for-microsoft-defender-antivirus"></a>サーバーの静的プロキシを構成Microsoft Defender ウイルス対策
 
-  例: 10.0.0.6:8080
+Microsoft Defender ウイルス対策[提供される保護は](cloud-protection-microsoft-defender-antivirus.md)、新しい脅威や新たな脅威に対して、ほぼ瞬時に自動化された保護を提供します。 Defender Antivirus がアクティブなマルウェア対策ソリューションである場合[、](manage-indicators.md)カスタム インジケーターには接続が必要です。また、EDR[マルウェア](edr-in-block-mode.md)対策ソリューションとして Microsoft 以外のソリューションを使用する場合でも、ブロック モードで使用できます。
 
-  レジストリ値 `DisableEnterpriseAuthProxy` を 1に設定する必要があります。
+次に示すグループ ポリシーを使用して静的プロキシを構成します。
+
+1. **管理用テンプレート > Windows コンポーネント > Microsoft Defender ウイルス対策 >ネットワークに接続するためのプロキシ サーバーを定義します**。 
+
+2. [有効] に **設定し** 、プロキシ サーバーを定義します。 URL には、ユーザーまたはユーザーが http:// 必要 https://。 サポートされているバージョンについては、「https:// 更新プログラムの[管理」をMicrosoft Defender ウイルス対策してください](manage-updates-baselines-microsoft-defender-antivirus.md)。
+
+   :::image type="content" source="images/proxy-server-mdav.png" alt-text="Microsoft Defender ウイルス対策のプロキシ サーバー。":::
+
+3. レジストリ キーの下で  `HKLM\Software\Policies\Microsoft\Windows Defender` 、ポリシーはレジストリ値をレジストリ  `ProxyServer`   値として設定REG_SZ。 
+
+   レジストリ値は、  `ProxyServer`   次の文字列形式を取ります。
+
+    ```text
+    <server name or ip>:<port>
+
+    For example: http://10.0.0.6:8080
+    ```
+
+> [!NOTE]
+>
+> 復元の目的と、クラウドによる保護のリアルタイムの性質のために、Microsoft Defender ウイルス対策は最後に既知の作業プロキシをキャッシュします。 セキュリティで保護されたクラウド接続が壊れるので、プロキシ ソリューションで SSL 検査が実行されていないことを確認します。 
+>
+> Microsoft Defender ウイルス対策更新プログラムまたは Microsoft Update に接続するために静的プロキシを使用Windows更新プログラムをダウンロードすることはできません。 代わりに、Windows Update を使用するように構成されている場合は、システム全体のプロキシを使用するか、構成済みのフォールバック順序に従って構成された内部更新元[を使用します](manage-protection-updates-microsoft-defender-antivirus.md)。 
+>
+> 必要に応じて、複数のプロキシを使用して高度な構成を設定する必要がある場合は、管理用テンプレート > Windows コンポーネント > Microsoft Defender ウイルス対策 > Define proxy **auto-config (.pac)** を使用してネットワークに接続できます。管理用テンプレート **> Windows** コンポーネントを使用> Microsoft Defender ウイルス対策 > これらの宛先のプロキシ サーバーを使用する Microsoft Defender ウイルス対策 を防ぐためにプロキシ サーバーをバイパスするアドレスを定義します。 
+>
+> コマンドレットと一緒に PowerShell を使用 `Set-MpPreference` して、次のオプションを構成することもできます。 
+>
+> - ProxyBypass 
+> - ProxyPacUrl 
+> - ProxyServer 
 
 ## <a name="configure-the-proxy-server-manually-using-netsh-command"></a>netsh コマンドを使用してプロキシ サーバーを手動で構成する
 
@@ -104,7 +137,7 @@ netsh を使用して、システム全体の静的プロキシを構成しま�
 > - これは、既定のプロキシで WinHTTP を使用する Windows サービスを含むすべてのアプリケーションに影響します。</br>
 > - トポロジを変更しているラップトップ (たとえば、オフィスから自宅) は netsh に誤動作します。 レジストリ ベースの静的プロキシの構成を使用します。
 
-1. 管理者特権でのコマンド ラインを開きます。
+1. 管理者特権でコマンド プロンプトを開きます。
    1. **[スタート]** をクリックし、「**cmd**」と入力します。
    1. **[コマンド プロンプト]** を右クリックして **[管理者として実行]** を選択します。
 
@@ -128,7 +161,7 @@ netsh winhttp reset proxy
 
 プロキシまたはファイアウォールが既定ですべてのトラフィックをブロックし、特定のドメインの通過だけを許可している場合は、ダウンロード可能シートに記載されているドメインを許可ドメインのリストに追加します。
 
-次のダウンロード可能なスプレッドシートには、ネットワークが接続できる必要があるサービスと関連付けられている URL が一覧表示されます。 これらの URL へのアクセスを拒否するファイアウォールまたはネットワーク フィルター ルールが存在しないか、許可ルールを作成する必要があります。 
+次のダウンロード可能なスプレッドシートには、ネットワークが接続できる必要があるサービスと関連付けられている URL が一覧表示されます。 これらの URL へのアクセスを拒否するファイアウォールまたはネットワーク フィルター ルールが存在しないか、許可ルールを作成する必要がある場合があります。
 
 <br>
 
@@ -170,7 +203,7 @@ Defender for Endpoint センサーがシステム コンテキストから接続
 
 ## <a name="confirm-microsoft-monitoring-agent-mma-service-url-requirements"></a>[Microsoft Monitoring Agent (MMA) サービス URL の要件を確認する 
 
-以前のバージョンのアプリケーションに対して Microsoft Monitoring Agent (MMA) を使用する場合は、特定の環境のワイルドカード (*) 要件を排除するために、以下のガイダンスを参照Windows。
+ 以前のバージョンのアプリケーションに対して Microsoft Monitoring Agent (MMA) を使用する場合は、特定の環境のワイルドカード (*) 要件を排除するには、次のガイダンスを参照Windows。
 
 1. Microsoft Monitoring Agent (MMA) を使用して以前のオペレーティング システムを Defender for Endpoint にオンボードします (詳細については、「Defender for Endpoint および Onboard Windows サーバーでの以前のバージョンの[Windows](https://go.microsoft.com/fwlink/p/?linkid=2010326)のオンボード」[を参照](configure-server-endpoints.md#windows-server-2008-r2-sp1-windows-server-2012-r2-and-windows-server-2016)してください。
 
@@ -178,7 +211,7 @@ Defender for Endpoint センサーがシステム コンテキストから接続
 
 3. "C:\Program Files\Microsoft Monitoring Agent\Agent" の TestCloudConnection.exe ツールを実行して、接続を検証し、特定のワークスペースに必要な URL を確認します。
 
-4. Microsoft Defender for Endpoint URL リストで、地域の要件の完全な一覧を確認します (「サービス URL スプレッドシート」を参照 [してください](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx))。
+4. Microsoft Defender for Endpoint URL リストで、地域の要件の完全な一覧を確認します (「サービス URL スプレッドシート」を参照[)。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
 
     ![ユーザーの管理者のWindows PowerShell。](images/admin-powershell.png)
 
@@ -239,5 +272,7 @@ Defender for Endpoint センサーがシステム コンテキストから接続
 
 ## <a name="related-topics"></a>関連項目
 
+- [Microsoft Defender ウイルス対策 ネットワーク接続を構成および検証する](configure-network-connections-microsoft-defender-antivirus.md)
+- [グループ ポリシー設定を使用して、グループ ポリシーの構成とMicrosoft Defender ウイルス対策](use-group-policy-microsoft-defender-antivirus.md)
 - [Windows 10 デバイスのオンボード](configure-endpoints.md)
 - [Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング](troubleshoot-onboarding.md)

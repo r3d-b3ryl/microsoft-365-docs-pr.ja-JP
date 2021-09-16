@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 91ee0c6ec2e4c11b714dee586613b16fd22df278
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59357671"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401928"
 ---
 # <a name="machine-resource-type"></a>コンピューター リソースの種類
 
@@ -74,7 +74,7 @@ ms.locfileid: "59357671"
 |computerDnsName|文字列|[コンピューター](machine.md) の完全修飾名。|
 |firstSeen|DateTimeOffset|Microsoft Defender for [](machine.md) Endpoint によってコンピューターが観測された最初の日付と時刻。|
 |lastSeen|DateTimeOffset|最後に受信した完全なデバイス レポートの時刻と日付。 通常、デバイスは 24 時間ごとに完全なレポートを送信します。|
-|osPlatform|String|オペレーティング システム プラットフォーム。|
+|osPlatform|文字列|オペレーティング システム プラットフォーム。|
 |onboardingstatus|文字列|コンピューターのオンボーディングの状態。 可能な値は、「オンボード」と「オフボード」です。|
 |osProcessor|String|オペレーティング システム プロセッサ。 代わりに osArchitecture プロパティを使用します。|
 |version|String|オペレーティング システムのバージョン。|

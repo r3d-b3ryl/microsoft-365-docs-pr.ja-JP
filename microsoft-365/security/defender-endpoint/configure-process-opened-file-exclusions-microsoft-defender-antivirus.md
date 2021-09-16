@@ -15,12 +15,12 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: ea06094121f9c6a654234da1cb6d7757db5c78dd
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e78706f1c95dd507ae41a6bf89403c45dc689b73
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212293"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400284"
 ---
 # <a name="configure-exclusions-for-files-opened-by-processes"></a>プロセスによって開いたファイルの除外を構成する
 
@@ -35,16 +35,13 @@ ms.locfileid: "59212293"
 
 ## <a name="examples-of-exclusions"></a>除外の例
 
-<br>
-
-****
+<br/><br/>
 
 |除外|例|
 |---|---|
 |特定のファイル名を持つ任意のプロセスによって開いたコンピューター上のファイル|指定すると `test.exe` 、次の方法で開いたファイルが除外されます。 <p>`c:\sample\test.exe` <p> `d:\internal\files\test.exe`|
 |特定のフォルダーの下の任意のプロセスによって開いたコンピューター上のファイル|指定すると `c:\test\sample\*` 、次の方法で開いたファイルが除外されます。 <p> `c:\test\sample\test.exe` <p> `c:\test\sample\test2.exe` <p> `c:\test\sample\utility.exe`|
 |特定のフォルダー内の特定のプロセスによって開いたコンピューター上のすべてのファイル|指定すると `c:\test\process.exe` 、開いたファイルだけが除外されます。 `c:\test\process.exe`|
-|
 
 プロセス除外リストにプロセスを追加すると、Microsoft Defender ウイルス対策場所に関係なく、そのプロセスで開いたファイルはスキャンされません。 ただし、ファイル除外リストにも追加されていない限り、プロセス自体 [がスキャンされます](configure-extension-file-exclusions-microsoft-defender-antivirus.md)。
 
@@ -97,16 +94,13 @@ PowerShell を使用してプロセスによって開いたファイルの除外
 
 以下を次のように使用できます \<cmdlet\> 。
 
-<br>
-
-****
+<br/><br/>
 
 |構成アクション|PowerShell コマンドレット|
 |---|---|
 |リストを作成または上書きする|`Set-MpPreference`|
 |リストに追加する|`Add-MpPreference`|
 |リストからアイテムを削除する|`Remove-MpPreference`|
-|
 
 > [!IMPORTANT]
 > コマンドレットを使用するか、または使用してリストを作成した場合は、 `Set-MpPreference` `Add-MpPreference` `Set-MpPreference` 既存のリストが上書きされます。
@@ -143,15 +137,12 @@ ExclusionProcess
 
 次の表に、プロセス除外リストでワイルドカードを使用する方法を示します。
 
-<br>
-
-****
+<br/><br/>
 
 |ワイルドカード|使用例|一致例|
 |---|---|---|
 |`*` (アスタリスク) <p> 任意の数の文字を置き換える|`C:\MyData\*`|によって開くすべてのファイル `C:\MyData\file.exe`|
 |環境変数 <p> 定義された変数は、除外が評価される際にパスとして設定されます。|`%ALLUSERSPROFILE%\CustomLogFiles\file.exe`|によって開くすべてのファイル `C:\ProgramData\CustomLogFiles\file.exe`|
-|
 
 ## <a name="review-the-list-of-exclusions"></a>除外の一覧を確認する
 

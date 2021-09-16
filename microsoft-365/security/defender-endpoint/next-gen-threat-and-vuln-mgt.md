@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: overview
 ms.technology: mde
-ms.openlocfilehash: 06fdea1c4d84ca4cd23aeb7e715c0087f65275b1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f909d39fee3eb55caaa47ef6a636d33ff4c7f025
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164982"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400176"
 ---
 # <a name="threat-and-vulnerability-management"></a>脅威と脆弱性の管理
 
@@ -31,7 +31,6 @@ ms.locfileid: "59164982"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 エンドポイントの弱点を効果的に特定、評価、修復するには、健全なセキュリティ プログラムを実行し、組織のリスクを軽減する上で極めて重要です。 脅威と脆弱性の管理は、組織の暴露を削減し、エンドポイントの役割を強化し、組織の回復性を向上させるためのインフラストラクチャとして機能します。
@@ -40,7 +39,7 @@ ms.locfileid: "59164982"
 
 詳細については、このビデオをご覧脅威と脆弱性の管理。
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mLsn]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mLsn]
 
 ## <a name="bridging-the-workflow-gaps"></a>ワークフローのギャップを埋める
 
@@ -79,18 +78,23 @@ ms.locfileid: "59164982"
 
 このビデオでは、このビデオを参照して、詳細な脅威と脆弱性の管理。
 
->[!VIDEO https://aka.ms/MDATP-TVM-Interactive-Guide]
+> [!VIDEO https://aka.ms/MDATP-TVM-Interactive-Guide]
 
 ## <a name="navigation-pane"></a>ナビゲーション ウィンドウ 
 
-分野 | 説明
-:---|:---
-**ダッシュボード**   | 組織の露出スコア、Microsoft Secure Score for Devices、デバイスの露出分布、トップ セキュリティ推奨事項、脆弱なソフトウェアの上位、トップ修復アクティビティ、および公開されているデバイス データの上位レベルのビューを取得します。
-[**セキュリティに関する推奨事項**](tvm-security-recommendation.md) | セキュリティに関する推奨事項と関連する脅威情報の一覧を参照してください。 リストからアイテムを選択すると、フライアウト パネルが開き、脆弱性の詳細、ソフトウェア ページを開くリンク、修復と例外のオプションが表示されます。 デバイスがエンドポイント経由で参加し、Defender for Endpoint で Intune 接続を有効にしている場合Azure Active Directory Intune でチケットを開く方法もできます。
-[**修復**](tvm-remediation.md) | 作成した修復アクティビティと推奨事項の例外を参照してください。
-[**ソフトウェア インベントリ**](tvm-software-inventory.md) | 組織内の脆弱なソフトウェアの一覧と、弱点と脅威に関する情報を参照してください。
-[**弱点**](tvm-weaknesses.md) | 組織の一般的な脆弱性と露出 (CVEs) の一覧を参照してください。
-[**イベントのタイムライン**](threat-and-vuln-mgt-event-timeline.md) | 組織のリスクに影響を与える可能性があるイベントを表示します。
+<br>
+
+****
+
+|分野|説明|
+|---|---|
+|**ダッシュボード**|組織の露出スコア、Microsoft Secure Score for Devices、デバイスの露出分布、トップ セキュリティ推奨事項、脆弱なソフトウェアの上位、トップ修復アクティビティ、および公開されているデバイス データの上位レベルのビューを取得します。|
+|[**セキュリティに関する推奨事項**](tvm-security-recommendation.md)|セキュリティに関する推奨事項と関連する脅威情報の一覧を参照してください。 リストからアイテムを選択すると、フライアウト パネルが開き、脆弱性の詳細、ソフトウェア ページを開くリンク、修復と例外のオプションが表示されます。 デバイスがエンドポイント経由で参加し、Defender for Endpoint で Intune 接続を有効にしている場合Azure Active Directory Intune でチケットを開く方法もできます。|
+|[**修復**](tvm-remediation.md)|作成した修復アクティビティと推奨事項の例外を参照してください。|
+|[**ソフトウェア インベントリ**](tvm-software-inventory.md)|組織内の脆弱なソフトウェアの一覧と、弱点と脅威に関する情報を参照してください。|
+|[**弱点**](tvm-weaknesses.md)|組織の一般的な脆弱性と露出 (CVEs) の一覧を参照してください。|
+|[**イベントのタイムライン**](threat-and-vuln-mgt-event-timeline.md)|組織のリスクに影響を与える可能性があるイベントを表示します。|
+|||
 
 ## <a name="apis"></a>API
 

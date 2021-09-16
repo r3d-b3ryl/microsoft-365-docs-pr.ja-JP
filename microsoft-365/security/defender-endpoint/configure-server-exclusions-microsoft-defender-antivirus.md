@@ -16,12 +16,12 @@ ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
 ms.date: 08/17/2021
-ms.openlocfilehash: d50146c3689f7b19fc6b546478bc0b01ada1fc30
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 31a5eb4e322a4ed897f0bcc59b6dffe1f53da43d
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213783"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401964"
 ---
 # <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>サーバー Microsoft Defender ウイルス対策の除外をWindowsする
 
@@ -39,16 +39,13 @@ ms.locfileid: "59213783"
 
 この記事に含まれるセクションは次のとおりです。
 
-<br>
-
-****
+<br/><br/>
 
 |Section|説明|
 |---|---|
 |[ユーザーの自動除外Windows Server 2016以降](#automatic-exclusions-on-windows-server-2016-or-later)|2 つの主な種類の自動除外について説明し、自動除外の詳細な一覧を含む|
 |[自動除外のオプトアウト](#opting-out-of-automatic-exclusions)|自動除外をオプトアウトする方法を説明する重要な考慮事項と手順が含まれています|
 |[カスタム除外の定義](#defining-custom-exclusions)|カスタム除外の定義に関する情報へのリンクを提供します。|
-|
 
 > [!IMPORTANT]
 > 次の点に注意してください。
@@ -167,16 +164,13 @@ ms.locfileid: "59213783"
 
 次の表に、Hyper-V の役割をインストールするときに自動的に配信されるファイルの種類の除外、フォルダーの除外、およびプロセスの除外の一覧を示します。
 
-<br>
-
-****
+<br><br/>
 
 |除外の種類|詳細|
 |---|---|
 |ファイルの種類|`*.vhd` <br/> `*.vhdx` <br/> `*.avhd` <br/> `*.avhdx` <br/> `*.vsv` <br/> `*.iso` <br/> `*.rct` <br/> `*.vmcx` <br/> `*.vmrs`|
 |Folders|`%ProgramData%\Microsoft\Windows\Hyper-V` <br/> `%ProgramFiles%\Hyper-V` <br/> `%SystemDrive%\ProgramData\Microsoft\Windows\Hyper-V\Snapshots` <br/> `%Public%\Documents\Hyper-V\Virtual Hard Disks`|
 |プロセス|`%systemroot%\System32\Vmms.exe` <br/> `%systemroot%\System32\Vmwp.exe`|
-|
 
 ##### <a name="sysvol-files"></a>SYSVOL ファイル
 

@@ -12,12 +12,12 @@ ms.author: jaimeo
 ms.topic: article
 audience: Admin, ITPro
 ms.localizationpriority: normal
-ms.openlocfilehash: f8c27f5776c41376abd6f9c0e412480e02bab217
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 99dd3a0782f44f0db1066ab33d3fe6ddd9a5def6
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215283"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59402228"
 ---
 # <a name="overview"></a>概要
 
@@ -40,7 +40,7 @@ Microsoft マネージド デスクトップ顧客にサービスを提供し、
 
 ## <a name="microsoft-managed-desktop-data-process-and-storage"></a>Microsoft マネージド デスクトップのプロセスとストレージ
 
-Microsoft マネージド デスクトップは、複数の Microsoft 製品およびサービスのデータに依存して、エンタープライズのお客様にサービスを提供します。 登録済みデバイスの保護と維持の目標を達成するために、これらのサービスからデータを処理し、Microsoft マネージド デスクトップ。 データを処理する際には、オンライン サービス条項および Microsoft プライバシーに関する声明で参照されている、お客様が提供する文書化された指示に従います。 データを処理する場合、オンライン サービス条項および Microsoft プライバシーに関する声明[](https://www.microsoft.com/licensing/product-licensing/products)で参照されている、お客様が提供する文書化された指示[に従います](https://privacy.microsoft.com/privacystatement)。 Microsoft マネージド デスクトップには、適切な機密性、セキュリティ、回復性の確保が含まれます。 Microsoft マネージド デスクトップ、個人を特定できるデータを適切に処理するために、追加のプライバシーとセキュリティ対策を採用しています。 
+Microsoft マネージド デスクトップは、複数の Microsoft 製品およびサービスのデータに依存して、エンタープライズのお客様にサービスを提供します。 登録済みデバイスの保護と維持の目標を達成するために、これらのサービスからデータを処理し、Microsoft マネージド デスクトップ。  データを処理する場合、オンライン サービス条項および Microsoft プライバシーに関する声明[](https://www.microsoft.com/licensing/product-licensing/products)で参照されている、お客様が提供する文書化された指示[に従います](https://privacy.microsoft.com/privacystatement)。 Microsoft マネージド デスクトップには、適切な機密性、セキュリティ、回復性の確保が含まれます。 Microsoft マネージド デスクトップ、個人を特定できるデータを適切に処理するために、追加のプライバシーとセキュリティ対策を採用しています。 
 
 
 ## <a name="microsoft-managed-desktop-data-storage-and-staff-location"></a>Microsoft マネージド デスクトップストレージとスタッフの場所

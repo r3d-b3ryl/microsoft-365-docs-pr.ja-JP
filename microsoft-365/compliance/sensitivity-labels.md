@@ -22,12 +22,12 @@ description: Microsoft 情報保護 (MIP) の秘密度ラベルを使用して�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 3366f90273536a1fc1fede52159b8c1199ad9324
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fa496e976f0d023960b6d2e633347931b7456ac3
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216474"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401124"
 ---
 # <a name="learn-about-sensitivity-labels"></a>秘密度ラベルの詳細
 
@@ -271,7 +271,3 @@ Azure Information Protection の初心者、またはラベルを最近移行し
 ライセンス情報、アクセス許可、展開戦略、およびサポートされているシナリオとエンドユーザー ドキュメントのリソースのリストを含む展開計画とガイダンスについては、「[秘密度ラベルの開始](get-started-with-sensitivity-labels.md)」を参照してください。
 
 秘密度ラベルを使用してデータ プライバシー規制に準拠する方法については、「[Microsoft 365 における、データ プライバシー規制のための情報の展開保護](../solutions/information-protection-deploy.md)」(aka.ms/m365dataprivacy) を参照してください。
-
-## <a name="see-also"></a>関連項目
-
-[Teams 接続済みサイトとチャネル サイトの管理](/SharePoint/teams-connected-sites)

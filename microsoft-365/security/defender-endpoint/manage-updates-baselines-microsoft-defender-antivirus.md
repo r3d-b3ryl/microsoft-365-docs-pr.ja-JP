@@ -17,12 +17,12 @@ ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
 ms.date: 09/08/2021
-ms.openlocfilehash: e136556bc2749261230e0267355ed68ef811e0a8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c29579ff183b74ce74d6f3f1a725a028da5874d5
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212083"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401904"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>更新Microsoft Defender ウイルス対策を管理し、基準計画を適用する
 
@@ -518,7 +518,7 @@ Microsoft Defender ウイルス対策プラットフォーム更新 [プログ�
 
 ### <a name="platform-version-included-with-windows-10-releases"></a>プラットフォームのバージョンは、Windows 10リリースに含まれています
 
-次の表に、最新Microsoft Defender ウイルス対策リリースに同梱されているプラットフォームとエンジンのWindows 10示します。
+次の表に、最新Microsoft Defender ウイルス対策リリースに同梱されているプラットフォームとエンジンのWindows 10示します。<br/><br/>
 
 |Windows 10リリース  |プラットフォームのバージョン  |エンジンのバージョン |サポート フェーズ |
 |:---|:---|:---|:---|
@@ -550,7 +550,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>ページの先頭へ
+### <a name="additional-information"></a>追加情報
 - なし
 <br/>
 </details><details>
@@ -564,7 +564,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>ページの先頭へ
+### <a name="additional-information"></a>追加情報
 - なし
 <br/>
 </details><details>
@@ -578,7 +578,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>ページの先頭へ
+### <a name="additional-information"></a>追加情報
 - なし
 <br/>
 </details><details>
@@ -592,7 +592,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>ページの先頭へ
+### <a name="additional-information"></a>追加情報
 - なし
 <br/>
 </details><details>
@@ -606,7 +606,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>ページの先頭へ
+### <a name="additional-information"></a>追加情報
 - なし
 <br/>
 </details><details>
@@ -620,7 +620,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>ページの先頭へ
+### <a name="additional-information"></a>追加情報
 - なし
 <br/>
 </details><details>
@@ -634,7 +634,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>ページの先頭へ
+### <a name="additional-information"></a>追加情報
 - なし
 <br/>
 </details><details>
@@ -648,7 +648,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>ページの先頭へ
+### <a name="additional-information"></a>追加情報
 - なし
 <br/>
 </details><details>
@@ -662,7 +662,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>ページの先頭へ
+### <a name="additional-information"></a>追加情報
 - なし
 <br/>
 </details><details>
@@ -676,7 +676,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>ページの先頭へ
+### <a name="additional-information"></a>追加情報
 - なし
 <br/>
 </details><details>
@@ -690,7 +690,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>ページの先頭へ
+### <a name="additional-information"></a>追加情報
 - 更新されたMicrosoft Defender ウイルス対策署名
 <br/>
 </details><details>
@@ -704,7 +704,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>ページの先頭へ
+### <a name="additional-information"></a>追加情報
 - なし
 <br/>
 </details><details>
@@ -718,7 +718,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>ページの先頭へ
+### <a name="additional-information"></a>追加情報
 - RS1 以降の OS Windows 10インストール イメージのサポートが追加されました。
 <br/>
 </details>

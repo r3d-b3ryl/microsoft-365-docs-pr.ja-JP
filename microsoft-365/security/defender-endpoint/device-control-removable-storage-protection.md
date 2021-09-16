@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 80a3d5bee2f26e708969832c67982f679b95c0b4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b092db48a27407bd5e3ef3fdfd6c6eda02ef0c34
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222835"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401940"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-protection"></a>Microsoft Defender for Endpoint Device Control リムーバブル Storage保護
 
@@ -98,9 +98,7 @@ Microsoft Defender for Endpoint のデバイス制御リムーバブル 記憶�
 
 Microsoft Defender for Endpoint Device Control リムーバブル Storage保護を使用すると、以下の表に示すプロパティに基づいてリムーバブル 記憶域へのアクセスを制限できます。
 
-<br>
-
-****
+<br/><br/>
 
 |プロパティ名|適用可能なポリシー|オペレーティング システムに適用される|説明|
 |---|---|---|---|
@@ -112,4 +110,3 @@ Microsoft Defender for Endpoint Device Control リムーバブル Storage保護�
 |フレンドリ名|[リムーバブル 記憶域アクセス制御](device-control-removable-storage-access-control.md)|Windows|デバイスに接続されている文字列 (汎用フラッシュ ディスク USB デバイスなど)|
 |ベンダー ID / 製品 ID|[リムーバブル 記憶域アクセス制御](device-control-removable-storage-access-control.md)|Windows <p> macOS|ベンダー ID は、USB 委員会がベンダーに割り当てる 4 桁のベンダー コードです。 製品 ID は、ベンダーがデバイスに割り当てる 4 桁の製品コードです。ワイルドカードをサポートします。|
 |シリアル番号Id|[リムーバブル 記憶域アクセス制御](device-control-removable-storage-access-control.md)|Windows <p> macOS |たとえば <SerialNumberId>、002324B534BCB431B000058A</SerialNumberId>|
-|

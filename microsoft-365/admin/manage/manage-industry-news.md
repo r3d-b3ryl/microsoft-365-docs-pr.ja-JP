@@ -17,14 +17,17 @@ ms.custom:
 search.appverid:
 - MET150
 description: 業界と組織の情報に関する最新のニュース見出しをユーザーに提供し、ニュース サービスを使用して組織のカスタマイズされたニュース フィードを有効にします。
-ms.openlocfilehash: 47c6f16efedbc3c5629bfe81e85cc6df66f51de2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e3c2e0526074571ffbe976c98fe57069adcdb9ab
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178984"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400584"
 ---
 # <a name="manage-industry-news"></a>業界ニュースの管理
+
+> [!NOTE] 
+> Bing業界&ニュースは、現時点では英語専用の市場で利用できます。
 
 業界と組織の情報に関する最新のニュース見出しをユーザーに提供するには、ニュース サービスを使用して組織のカスタマイズされたニュース フィードを有効にします。 また、毎日の業界更新プログラムのメールを有効にし、新しいタブ ページBingページMicrosoft Edge設定を管理することもできます。
 
@@ -56,7 +59,7 @@ ms.locfileid: "59178984"
 
 1. [コンテンツの除外] フィールドでキーワードを含む記事 **をブロック** できます。 たとえば、キーワード "ベイク" を含む記事がニュース フィードに表示されるのを避けるために、[コンテンツの除外] フィールドにキーワード "bake" **を追加** します。 一般的な用語 (the, it, and, など) を含めしないようにします。関連するコンテンツがエンタープライズ ニュース フィードに表示されるのをブロックできます。
 
-1. **[保存]** を選択します。 変更が表示されるには、最大で 24 時間かかる場合があります。
+1. [**保存**] を選択します。 変更が表示されるには、最大で 24 時間かかる場合があります。
 
 ## <a name="industry-updates-in-email"></a>電子メールの業界の更新
 

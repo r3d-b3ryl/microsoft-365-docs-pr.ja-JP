@@ -14,13 +14,13 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.date: 08/27/2021
-ms.openlocfilehash: 76508ef21b60d4376512f08a07925eca109f68e2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.date: 09/14/2021
+ms.openlocfilehash: 5dfa84335e9f31e531759b209ac3c2491c657fe0
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221694"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59399804"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>ファイル拡張子とフォルダーの場所に基づいて除外を構成および検証する
 
@@ -51,11 +51,8 @@ ms.locfileid: "59221694"
 >
 > 自動除外は、ユーザーおよびWindows Server 2016にのみ適用されます。 これらの除外は、アプリと PowerShell のWindows セキュリティ表示されません。
 
-次の表に、ファイル拡張子とフォルダーの場所に基づく除外の例を示します。
-
-<br>
-
-****
+次の表に、ファイル拡張子とフォルダーの場所に基づく除外の例を示します。 
+<br/><br/>
 
 |除外|例|除外リスト|
 |---|---|---|
@@ -203,7 +200,7 @@ ExclusionPath
     
 次の表では、ワイルドカードの使用方法と例を示します。
 
-<br>
+<br/><br/>
 
 |ワイルドカード|例|
 |---|---|
@@ -222,8 +219,7 @@ ExclusionPath
 
 ### <a name="system-environment-variables"></a>システム環境変数
 
-次の表に、システム アカウント環境変数の一覧と説明を示します。
-
+次の表に、システム アカウント環境変数の一覧と説明を示します。<br/><br/>
     
 |このシステム環境変数...|リダイレクト先|
 |---|---|

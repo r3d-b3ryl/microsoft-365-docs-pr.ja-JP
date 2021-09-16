@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: a372ae3b15b35c03449973fba2b1181a8ed68ac2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 32ee06e77b9c3f32e4bb9b07458925a254756d2d
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177312"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401892"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>脅威保護機能を全体にわたって構成Microsoft 365
 
@@ -97,14 +97,11 @@ Microsoft 365 Defenderは、アラート、インシデント、自動調査と�
 
 [Microsoft Defender for Office 365](../security/office-365-security/defender-for-office-365.md)メール メッセージ (添付ファイルと URL)、ドキュメント、およびコラボレーション ツールの悪意のあるOffice組織を保護します。 次の表に、Microsoft Defender Office 365に含まれている機能の一覧を示Microsoft 365 E5。
 
-<br>
-
-****
+<br/><br/>
 
 |構成、保護、および検出機能|自動化、調査、修復、および教育機能|
 |---|---|
 |[添付ファイル保護](../security/office-365-security/safe-attachments.md) <p> [リンク保護](../security/office-365-security/safe-links.md) <p> [安全なドキュメント](../security/office-365-security/safe-docs.md) <p> [SharePoint、OneDrive、Microsoft Teams 用の安全な添付ファイル](../security/office-365-security/mdo-for-spo-odb-and-teams.md) <p> [アプリ内のフィッシング対策Microsoft 365](../security/office-365-security/anti-phishing-protection.md)|[脅威トラッカー](../security/office-365-security/threat-trackers.md) <p> [脅威エクスプローラー](../security/office-365-security/threat-explorer.md) <p> [自動調査および対応](../security/office-365-security/office-365-air.md) <p> [攻撃シミュレーション トレーニング](../security/office-365-security/attack-simulation-training.md)|
-|
 
 Microsoft Defender for Office 365を使用すると、組織全体のユーザーは、電子メール コンテンツとドキュメントに対する脅威の保護を利用して、より安全にコミュニケーションとOfficeできます。
 
@@ -187,16 +184,13 @@ Harvard Kennedy School [Cybersecurity キャンペーン](https://go.microsoft.c
 
 Microsoft 365、組織内のユーザーに通知するための次のリソースを提供します。
 
-<br>
-
-****
+<br/><br/>
 
 |概念|リソース|
 |---|---|
 |Microsoft 365|[カスタマイズ可能な学習経路](/office365/customlearning/) <p> これらのリソースは、組織内のエンド ユーザー向けトレーニングをまとめるのに役立ちます。|
 |Microsoft 365 セキュリティ|[ラーニングモジュール: 組み込みのインテリジェント なセキュリティで組織をセキュリティで保護Microsoft 365](/learn/modules/security-with-microsoft-365) <p> このモジュールを使用すると、セキュリティ機能Microsoft 365機能を説明し、これらのセキュリティ機能の利点を明確にできます。|
 |多要素認証|[2 段階認証: 追加の検証ページとは](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p> この記事は、エンド ユーザーが多要素認証とは何か、および組織で使用される理由を理解するのに役立ちます。|
-|
 
 このガイダンスに加えて、Microsoft では、この記事で説明されているアクションをユーザーが実行するようにお勧めします。アカウントとデバイスをハッカーやマルウェアから [保護します](https://support.office.com/article/066d6216-a56b-4f90-9af3-b3a1e9a327d6.aspx)。 それらの操作を次に示します。
 

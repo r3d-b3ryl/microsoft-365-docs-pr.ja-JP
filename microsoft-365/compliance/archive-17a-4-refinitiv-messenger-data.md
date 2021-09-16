@@ -11,13 +11,13 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: 17a-4 Refinitiv Eikon Messenger DataParser コネクタを設定して使用して、Microsoft 365 で Refinitiv Eikon Messenger データをインポートおよびアーカイブする方法について学習します。
-ms.openlocfilehash: ec3a32a1fcf08747e8ad67983ae0c0aff2650673
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 17a-4 Refinitiv Eikon Messenger DataParser コネクタをセットアップして使用して、このデータをインポートおよびアーカイブする方法についてMicrosoft 365。
+ms.openlocfilehash: b3714a2e0d0d3e20d5a2851e520be00dd6ed5aeb
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178056"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59399648"
 ---
 # <a name="set-up-a-connector-to-archive-refinitiv-eikon-messenger-data"></a>Refinitiv Eikon Messenger データをアーカイブするコネクタをセットアップする
 
@@ -41,9 +41,11 @@ Refinitiv Eikon Messenger データをユーザー メールボックスに格�
 
 ## <a name="before-you-set-up-a-connector"></a>コネクタをセットアップする前に
 
-- Microsoft コネクタ用の DataParser アカウントを作成します。 これを行うには [、17a-4 LLC にお問い合わせください](https://www.17a-4.com/contact/)。 手順 1 でコネクタを作成する場合は、このアカウントにサインインする必要があります。
+- Microsoft コネクタ用の DataParser アカウントを作成します。 アカウントを作成するには [、17a-4 LLC にお問い合わせください](https://www.17a-4.com/contact/)。 手順 1 でコネクタを作成する場合は、このアカウントにサインインする必要があります。
 
 - 手順 1 で Refinitiv Eikon Messenger DataParser コネクタを作成し (手順 3 で完了する) ユーザーは、Exchange Online のメールボックスインポートエクスポートの役割に割り当てる必要があります。 この役割は、データ コネクタ ページの[データ コネクタ] ページにコネクタを追加Microsoft 365 コンプライアンス センター。 既定では、この役割はグループ内の役割グループExchange Online。 [メールボックスのインポートエクスポート] 役割は、組織の [組織の管理] 役割グループに追加Exchange Online。 または、役割グループを作成し、メールボックスインポートエクスポートの役割を割り当て、適切なユーザーをメンバーとして追加できます。 詳細については、「グループ内の[役割グループを](/Exchange/permissions-exo/role-groups#create-role-groups)管理[](/Exchange/permissions-exo/role-groups#modify-role-groups)する」の「役割グループの作成」または「役割グループの変更」セクションを参照Exchange Online。
+
+- このデータ コネクタは、米国政府機関GCCのMicrosoft 365環境で使用できます。 サード パーティのアプリケーションとサービスには、Microsoft 365 インフラストラクチャの外部にあるサードパーティ システムに組織の顧客データを格納、送信、処理する必要がある場合があります。したがって、Microsoft 365 コンプライアンスとデータ保護のコミットメントの対象とはなってはいけなかっています。 Microsoft は、この製品を使用してサード パーティ製アプリケーションに接続する場合、これらのサード パーティ製アプリケーションが FEDRAMP に準拠しているという意味を示していません。
 
 ## <a name="step-1-set-up-a-refinitiv-eikon-messenger-dataparser-connector"></a>手順 1: Refinitiv Eikon Messenger DataParser コネクタをセットアップする
 

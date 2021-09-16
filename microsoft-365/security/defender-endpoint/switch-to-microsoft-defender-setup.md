@@ -21,14 +21,14 @@ ms.collection:
 - m365solution-symantecmigrate
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 08/16/2021
+ms.date: 09/13/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 97ebb7de54c789ee48dc99e4f75bf6a79f290ac5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ca80a53ae67c5a3ae8c8bc7faaa1e04553237a1f
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189390"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59402156"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-2-setup"></a>エンドポイントの Microsoft Defender に切り替える - フェーズ 2: セットアップ
 
@@ -54,15 +54,12 @@ ms.locfileid: "59189390"
 
 Defender for Endpoint に切り替える場合は、一定の手順を実行して、エンドポイントを再インストールまたは有効にする必要Microsoft Defender ウイルス対策。 次の表では、クライアントとサーバーのWindows説明します。
 
-<br>
-
-****
+<br/><br/>
 
 |エンドポイントの種類|操作|
 |---|---|
 |Windowsクライアント (エンドポイントが実行されているWindows 10)|一般に、クライアントに対して何もWindowsする必要はありません (Microsoft Defender ウイルス対策場合を含む)。 その理由は次の理由です。 <p> Microsoft Defender ウイルス対策インストールする必要がありますが、移行プロセスのこの時点で無効になっている可能性が最も高い。 <p> Microsoft 以外のウイルス対策/マルウェア対策ソリューションがインストールされ、クライアントがまだ Defender for Endpoint にオンボードされていない場合、Microsoft Defender ウイルス対策は自動的に無効になります。 <p> その後、クライアント エンドポイントが Defender for Endpoint にオンボードされている場合、それらのエンドポイントが Microsoft 以外のウイルス対策ソリューションを実行している場合、Microsoft Defender ウイルス対策パッシブ モードになります。 <p> Microsoft 以外のウイルス対策ソリューションをアンインストールすると、Microsoft Defender ウイルス対策アクティブ モードになります。|
 |Windows サーバー|サーバー Windows、サーバーを再インストールし、Microsoft Defender ウイルス対策パッシブ モードに手動で設定する必要があります。 その理由は次の理由です。 <p> サーバー Windows、Microsoft 以外のウイルス対策/マルウェア対策がインストールされている場合、Microsoft Defender ウイルス対策 Microsoft 以外のウイルス対策ソリューションと一緒に実行することはできません。 このような場合、手動でMicrosoft Defender ウイルス対策またはアンインストールされます。 <p> サーバーでサーバーを再Microsoft Defender ウイルス対策またはWindowsするには、次のタスクを実行します。 <ul><li>[サーバーで DisableAntiSpyware を false にWindowsする](#set-disableantispyware-to-false-on-windows-server)(必要な場合のみ)</li><li>[サーバー Microsoft Defender ウイルス対策再インストールWindowsする](#reinstall-microsoft-defender-antivirus-on-windows-server)</li><li>[サーバー Microsoft Defender ウイルス対策パッシブ モードに設定Windowsする](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server)</li></ul>|
-|
 
 > [!TIP]
 > Microsoft 以外のウイルス対策保護Microsoft Defender ウイルス対策の状態の詳細については、「互換性」[をMicrosoft Defender ウイルス対策してください](microsoft-defender-antivirus-compatibility.md)。
@@ -100,16 +97,21 @@ Defender for Endpoint に切り替える場合は、一定の手順を実行し�
 2. 次の PowerShell コマンドレットを実行します。
 
    ```powershell
-   Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features
-   Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender
+   # For Windows Server 2016
+   Dism /online /Enable-Feature /FeatureName:Windows-Defender-Features
+   Dism /online /Enable-Feature /FeatureName:Windows-Defender
+   Dism /online /Enable-Feature /FeatureName:Windows-Defender-Gui
+   # For Windows Server 2019
+   Dism /online /Enable-Feature /FeatureName:Windows-Defender
    ```
-
+   次に、デバイスを再起動します。 
+   
    PowerShell を実行しているタスク シーケンス内で DISM コマンドを使用する場合は、次のパスを使用cmd.exe必要です。
    例:
 
    ```powershell
-   c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features
-   c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender
+   c:\windows\sysnative\cmd.exe /c Dism /online /Enable-Feature /FeatureName:Windows-Defender-Features
+   c:\windows\sysnative\cmd.exe /c Dism /online /Enable-Feature /FeatureName:Windows-Defender
    ```
 
 ### <a name="set-microsoft-defender-antivirus-to-passive-mode-on-windows-server"></a>サーバー Microsoft Defender ウイルス対策パッシブ モードに設定Windowsする
@@ -146,9 +148,7 @@ Defender for Endpoint に切り替える場合は、一定の手順を実行し�
 
 次の表で説明するように、いくつかの方法のいずれかを使用して、Microsoft Defender ウイルス対策の状態を確認できます。
 
-<br>
-
-****
+<br><br/>
 
 |メソッド|Procedure|
 |---|---|
@@ -156,7 +156,6 @@ Defender for Endpoint に切り替える場合は、一定の手順を実行し�
 |タスク マネージャー|<ol><li>デバイスでWindowsタスク マネージャー アプリを開きます。</li><li>[詳細] **タブを選択** します。</li><li>リストで **MsMpEng.exe** を探します。</li></ol>|
 |Windows PowerShell <p> (ユーザーが実行Microsoft Defender ウイルス対策確認するには)|<ol><li>デバイスでWindowsを開Windows PowerShell。</li><li>次の PowerShell コマンドレットを実行します `Get-Process` 。</li><li>結果を確認します。 有効になっている場合 **MsMpEng.exe** がMicrosoft Defender ウイルス対策表示されます。</li></ol>|
 |Windows PowerShell <p> (ウイルス対策保護が実行されているのを確認するには)|[Get-MpComputerStatus PowerShell コマンドレットを使用できます](/powershell/module/defender/get-mpcomputerstatus)。 <ol><li>デバイスでWindowsを開Windows PowerShell。</li><li>次の PowerShell コマンドレットを実行します `Get-MpComputerStatus|select AMRunningMode` 。</li><li>結果を確認します。 エンドポイントで有効になっている場合は **、[** 標準] または **[パッシブ** Microsoft Defender ウイルス対策が表示されます。</li></ol>|
-|
 
 > [!TIP]
 > [詳細については、Microsoft Defender ウイルス対策を参照してください](microsoft-defender-antivirus-compatibility.md#more-details-about-microsoft-defender-antivirus-states)。
@@ -165,17 +164,14 @@ Defender for Endpoint に切り替える場合は、一定の手順を実行し�
 
 移行プロセスのこの手順では、エンドポイントのMicrosoft Defender ウイルス対策構成します。 Intune の使用をお勧めします。ただし、次の表に示すメソッドを使用できます。
 
-<br>
-
-****
+<br/><br/>
 
 |メソッド|操作|
 |---|---|
 |[Intune](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager) <p> **メモ**: Intune は現在、アプリの一部Microsoft エンドポイント マネージャー。|<ol><li>管理センターの[Microsoft エンドポイント マネージャーに移動し](https://go.microsoft.com/fwlink/?linkid=2109431)、サインインします。</li><li>[ **デバイス** \> **構成プロファイル] を** 選択し、構成するプロファイルの種類を選択します。 まだデバイス制限プロファイルの種類を作成していない場合、または新しいデバイス制限の種類を作成する場合は、「デバイス制限の設定を構成する」を参照[Microsoft Intune。](/intune/device-restrictions-configure)</li><li>[プロパティ **] を** 選択し、[構成設定: **編集] を選択します。**</li><li>[Microsoft Defender ウイルス対策]**を展開します**。</li><li>クラウド **による保護を有効にする**。</li><li>[サンプル申請 **の前にユーザーに確認する] ドロップダウン** で、[すべてのサンプルを **自動的に送信する] を選択します**。</li><li>[望 **ましくない可能性のあるアプリケーションの検出] ドロップダウン** で、[有効にする] または [**監査] を****選択します**。</li><li>[ **確認] + [保存] の** 順に選択し、[保存] を **選択します**。</li></ol> <p> **ヒント**: Intune デバイス プロファイルの詳細 (設定の作成および構成方法など)については、「デバイス プロファイルとはMicrosoft Intune [参照してください](/intune/device-profiles)。|
 |Microsoft Endpoint Configuration Manager|Configuration [Manager の「マルウェア対策ポリシーの作成と展開Endpoint Protection」を参照してください](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies)。 <p> マルウェア対策ポリシーを作成して構成する場合は、リアルタイムの保護設定を確認[](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#real-time-protection-settings)し、一目でブロック[を有効にしてください](configure-block-at-first-sight-microsoft-defender-antivirus.md)。
 |コントロール パネル (Windows|ここでのガイダンスに従います[。[電源を入Microsoft Defender ウイルス対策。](/mem/intune/user-help/turn-on-defender-windows) (一部のバージョン *では**Windows Defender ウイルス対策のMicrosoft Defender ウイルス対策* が表示される場合がありますWindows)。|
-|[高度なグループ ポリシーの管理](/microsoft-desktop-optimization-pack/agpm/) <p> または <p> [グループ ポリシー管理コンソール](/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)|<ol><li>[コンピューターの **構成]** \> **[管理用テンプレート** \> **] Windowsに移動Microsoft Defender ウイルス対策。** \> </li><li>[電源を切る] という **ポリシーを探Microsoft Defender ウイルス対策。**</li><li>[ **ポリシー設定の編集] を** 選択し、ポリシーが無効になっているか確認します。 このアクションを使用すると、Microsoft Defender ウイルス対策。 (一部のバージョン *では**Windows Defender ウイルス対策のMicrosoft Defender ウイルス対策* が表示される場合がありますWindows)。</li></ol>|
-|
+|[高度なグループ ポリシーの管理](/microsoft-desktop-optimization-pack/agpm/) <p> or <p> [グループ ポリシー管理コンソール](/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)|<ol><li>[コンピューターの **構成]** \> **[管理用テンプレート** \> **] Windowsに移動Microsoft Defender ウイルス対策。** \> </li><li>[電源を切る] という **ポリシーを探Microsoft Defender ウイルス対策。**</li><li>[ **ポリシー設定の編集] を** 選択し、ポリシーが無効になっているか確認します。 このアクションを使用すると、Microsoft Defender ウイルス対策。 (一部のバージョン *では**Windows Defender ウイルス対策のMicrosoft Defender ウイルス対策* が表示される場合がありますWindows)。</li></ol>|
 
 > [!TIP]
 > 組織のデバイスがオンボードされる前にポリシーを展開できます。
@@ -189,32 +185,26 @@ Defender for Endpoint に切り替える場合は、一定の手順を実行し�
 
 構成する特定の除外は、エンドポイントまたはデバイスWindowsのバージョンによって異なり、次の表に示します。
 
-<br>
-
-****
+<br><br/>
 
 |OS|除外|
 |---|---|
 |Windows 10バージョン[1803](/windows/release-health/status-windows-10-1803)以降 (リリース[情報Windows 10参照](/windows/release-health/release-information)) <p> Windows 10バージョン 1703 または[KB4493441](https://support.microsoft.com/help/4493441)がインストールされている 1709 <p> [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019) <p> [Windowsサーバー、バージョン 1803](/windows-server/get-started/whats-new-in-windows-server-1803)|`C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe` <p> `C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe` <p> `C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe` <p> `C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe`|
 |[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2) <p> [Windows 7](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) <p> [Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016) <p> [Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2) <p> [Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)|`C:\Program Files\Microsoft Monitoring Agent\Agent\Health Service State\Monitoring Host Temporary Files 6\45\MsSenseS.exe` <p> **注**: ホスト一時ファイル 6\45 の監視には、番号が付くサブフォルダーが異なる場合があります。 <p> `C:\Program Files\Microsoft Monitoring Agent\Agent\AgentControlPanel.exe` <p> `C:\Program Files\Microsoft Monitoring Agent\Agent\HealthService.exe` <p> `C:\Program Files\Microsoft Monitoring Agent\Agent\HSLockdown.exe` <p> `C:\Program Files\Microsoft Monitoring Agent\Agent\MOMPerfSnapshotHelper.exe` <p> `C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe` <p> `C:\Program Files\Microsoft Monitoring Agent\Agent\TestCloudConnection.exe`|
-|
 
 ## <a name="add-your-existing-solution-to-the-exclusion-list-for-microsoft-defender-antivirus"></a>既存のソリューションをユーザーの除外リストに追加Microsoft Defender ウイルス対策
 
 セットアップ プロセスのこの手順では、既存のソリューションを既定の除外リストMicrosoft Defender ウイルス対策追加します。 次の表に示す通り、いくつかの方法から除外Microsoft Defender ウイルス対策を追加できます。
 
-<br>
-
-****
+<br><br/>
 
 |メソッド|操作|
 |---|---|
 |[Intune](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager) <p> **メモ**: Intune は現在、アプリの一部Microsoft エンドポイント マネージャー。|<ol><li>管理センターの[Microsoft エンドポイント マネージャーに移動し](https://go.microsoft.com/fwlink/?linkid=2109431)、サインインします。</li><li>[ **デバイス** \> **構成プロファイル] を** 選択し、構成するプロファイルを選択します。</li><li>[管理 **] で**、[プロパティ] **を選択します**。</li><li>[構成 **設定: 編集] を選択します**。</li><li>**[Microsoft Defender ウイルス対策] を** 展開し、[除外] **Microsoft Defender ウイルス対策展開します**。</li><li>スキャンから除外するファイルとフォルダー、拡張機能、およびプロセスMicrosoft Defender ウイルス対策します。 参照については、「除外[Microsoft Defender ウイルス対策参照してください](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus-exclusions)。</li><li>[ **確認] + [保存] の** 順に選択し、[保存] を **選択します**。</li></ol>|
 |[Microsoft Endpoint Configuration Manager](/mem/configmgr/)|<ol><li>Configuration [Manager コンソールを使用して](/mem/configmgr/core/servers/manage/admin-console)、[アセットとコンプライアンス Endpoint Protectionマルウェア対策ポリシー] に移動し、変更するポリシー \>  \> を選択します。</li><li>ファイルとフォルダー、拡張機能、およびプロセスの除外設定を指定して、スキャンから除外Microsoft Defender ウイルス対策します。</li></ol>|
-|[グループ ポリシー オブジェクト](/previous-versions/windows/desktop/Policy/group-policy-objects)|<ol><li> グループ ポリシー管理コンピューターで、グループ ポリシー [管理](https://technet.microsoft.com/library/cc731212.aspx)コンソールを開き、構成するグループ ポリシー オブジェクトを右クリックし、[編集] を選択 **します**。</li><li>**[グループ ポリシー管理エディター]** で、**[コンピューターの構成]** に移動し、**[管理用テンプレート]** を選択します。</li><li>ツリーを展開して、[**除外Windowsコンポーネント \> Microsoft Defender ウイルス対策 \> 展開します**。 (一部のバージョン *では**Windows Defender ウイルス対策のMicrosoft Defender ウイルス対策* が表示される場合がありますWindows)。</li><li>[パスの除外] **設定をダブルクリック** し、除外を追加します。<ul><li>オプションを [有効] に **設定します**。</li><li>[オプション] **セクションで** 、[ **表示.... を選択します**。</li><li>[値名] 列の下の各フォルダーを独自 **の行に指定** します。</li><li>ファイルを指定する場合は、ドライブ文字、フォルダー パス、ファイル名、拡張子など、ファイルへの完全修飾パスを入力してください。 [値 **] 列に「0」****と入力** します。</li></ul></li><li>**[OK]** を選択します。</li><li>[拡張機能の除外] **設定をダブルクリック** し、除外を追加します。<ul><li>オプションを [有効] に **設定します**。</li><li>[オプション] **セクションで** 、[ **表示.... を選択します**。</li><li>[値名] 列の下に、それぞれのファイル拡張子 **を独自の行に入力** します。 [値 **] 列に「0」****と入力** します。</li></ul></li><li>**[OK]** を選択します。</li></ul>|
+|[グループ ポリシー オブジェクト](/previous-versions/windows/desktop/Policy/group-policy-objects)|<ol><li> グループ ポリシー管理コンピューターで、グループ ポリシー [管理](https://technet.microsoft.com/library/cc731212.aspx)コンソールを開き、構成するグループ ポリシー オブジェクトを右クリックし、[編集] を選択 **します**。</li><li>**[グループ ポリシー管理エディター]** で、**[コンピューターの構成]** に移動し、**[管理用テンプレート]** を選択します。</li><li>ツリーを展開して、[**除外Windowsコンポーネント \> Microsoft Defender ウイルス対策 \> 展開します**。 (一部のバージョン *では**Windows Defender ウイルス対策のMicrosoft Defender ウイルス対策* が表示される場合がありますWindows)。</li><li>[パスの除外] **設定をダブルクリック** し、除外を追加します。<ul><li>オプションを [有効] に **設定します**。</li><li>[オプション] **セクションで** 、[ **表示.... を選択します**。</li><li>[値名] 列の下の各フォルダーを独自 **の行に指定** します。</li><li>ファイルを指定する場合は、ドライブ文字、フォルダー パス、ファイル名、拡張子など、ファイルへの完全修飾パスを入力してください。 [値 **] 列に「0」****と入力** します。</li></ul></li><li>**[OK]** をクリックします。</li><li>[拡張機能の除外] **設定をダブルクリック** し、除外を追加します。<ul><li>オプションを [有効] に **設定します**。</li><li>[オプション] **セクションで** 、[ **表示.... を選択します**。</li><li>[値名] 列の下に、それぞれのファイル拡張子 **を独自の行に入力** します。 [値 **] 列に「0」****と入力** します。</li></ul></li><li>**[OK]** をクリックします。</li></ul>|
 |ローカル グループ ポリシー オブジェクト|<ol><li>エンドポイントまたはデバイスで、ローカル グループ ポリシー エディターを開きます。</li><li>[コンピューター構成 **]** \> **[管理用** \> **テンプレート] Windows除外Microsoft Defender ウイルス対策** \>  \> **移動します**。 (一部のバージョン *では**Windows Defender ウイルス対策のMicrosoft Defender ウイルス対策* が表示される場合がありますWindows)。</li><li>パスとプロセスの除外を指定します。</li></ol>|
 |レジストリ キー|<ol><li>次のレジストリ キーをエクスポートします `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\exclusions` 。</li><li>レジストリ キーをインポートします。 次に、2 つの例を紹介します。<ul><li>ローカル パス: `regedit.exe /s c:\temp\ MDAV_Exclusion.reg`</li><li>ネットワーク共有: `regedit.exe /s \\FileServer\ShareName\MDAV_Exclusion.reg`</li></ul></li></ol>|
-|
 
 ### <a name="keep-the-following-points-about-exclusions-in-mind"></a>除外に関する以下の点を念頭に置く
 
@@ -231,16 +221,13 @@ Defender for Endpoint に切り替える場合は、一定の手順を実行し�
 
 デバイス グループ、デバイス コレクション、組織単位を使用すると、セキュリティ チームはセキュリティ ポリシーを効率的かつ効率的に管理および割り当てできます。 次の表では、これらの各グループと、それらを構成する方法について説明します。 組織では、3 つのコレクションの種類すべてが使用されない場合があります。
 
-<br>
-
-****
+<br/><br/>
 
 |コレクションの種類|操作|
 |---|---|
 |[デバイス グループ](/microsoft-365/security/defender-endpoint/machine-groups)(以前はコンピューター グループと呼ばば) を使用すると、セキュリティ運用チームは、自動調査や修復などのセキュリティ機能を構成できます。 <p> デバイス グループは、セキュリティ運用チームが必要に応じて修復アクションを実行できるよう、これらのデバイスへのアクセスを割り当てる場合にも役立ちます。 <p> デバイス グループは、ポータルで[Microsoft 365 Defenderされます](microsoft-defender-security-center.md)。|<ol><li>[ポータル] () Microsoft 365 Defender移動します <https://security.microsoft.com> 。</li><li>左側のナビゲーション ウィンドウで、[エンドポイント **アクセス許可設定** \>  \> **グループ]** \> **を選択します**。</li><li>[+ **デバイス グループの追加] の選択**</li><li>デバイス グループの名前と説明を指定します。</li><li>[オートメーション レベル **] ボックスの一覧** で、オプションを選択します。 (Full - **脅威を自動的に修復することをお勧めします**。)さまざまなオートメーション レベルの詳細については、「脅威を修復する方法 [」を参照してください](/microsoft-365/security/defender-endpoint/automated-investigations#how-threats-are-remediated)。</li><li>一致するルールの条件を指定して、デバイス グループに属するデバイスを特定します。 たとえば、ドメイン、OS のバージョンを選択したり、デバイス タグを [使用することもできます](/microsoft-365/security/defender-endpoint/machine-tags)。</li><li>[ユーザー **アクセス] タブ** で、デバイス グループに含まれるデバイスにアクセスできる役割を指定します。</li><li>[**完了**] を選択します。</li></ol>|
 |[デバイス コレクションを使用](/mem/configmgr/core/clients/manage/collections/introduction-to-collections) すると、セキュリティ運用チームは、アプリケーションの管理、コンプライアンス設定の展開、または組織内のデバイスへのソフトウェア更新プログラムのインストールを行えます。 <p> デバイス コレクションは、Configuration Manager を使用 [して作成されます](/mem/configmgr/)。|「コレクションを作成する [」の手順に従います](/mem/configmgr/core/clients/manage/collections/create-collections#bkmk_create)。|
 |[組織単位](/azure/active-directory-domain-services/create-ou) を使用すると、ユーザー アカウント、サービス アカウント、コンピューター アカウントなどのオブジェクトを論理的にグループ化できます。 <p> その後、管理者を特定の組織単位に割り当て、グループ ポリシーを適用して対象の構成設定を適用できます。 <p> 組織単位は、ドメイン サービス[Azure Active Directory定義されます](/azure/active-directory-domain-services)。|「組織単位を作成する」の手順に従って、ドメイン Azure Active Directory[ドメインを作成します](/azure/active-directory-domain-services/create-ou)。|
-|
 
 ## <a name="next-step"></a>次の手順
 

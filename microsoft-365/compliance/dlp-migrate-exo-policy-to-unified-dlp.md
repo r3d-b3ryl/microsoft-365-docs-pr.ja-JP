@@ -19,11 +19,11 @@ search.appverid:
 - MET150
 description: オンライン データ損失防止ポリシーを計画し、Exchange DLP に移行するMicrosoft 365します。
 ms.openlocfilehash: 2cf06b7aee9adb63ff85259427bcac818807cc7c
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59357471"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400524"
 ---
 # <a name="migrate-exchange-online-data-loss-prevention-policies-to-compliance-center"></a>データ損失Exchange Onlineポリシーをコンプライアンス センターに移行する
 

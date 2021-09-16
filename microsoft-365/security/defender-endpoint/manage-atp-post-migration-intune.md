@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: article
 ms.date: 07/29/2021
 ms.reviewer: chventou
-ms.openlocfilehash: 4891505408a3f831e6ecc0c2cecb0c67fa52e49f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 90cc05e801198ad2df8516fb2d9aa1f425f943c9
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220458"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59402192"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-intune"></a>Intune を使用してエンドポイント用 Microsoft Defender を管理する
 
@@ -55,15 +55,13 @@ ms.locfileid: "59220458"
 4. 既存のプロファイルを選択するか、新しいプロファイルを作成します。
 
 > [!TIP]
-> サポートが必要な場合 「Intune **[での Microsoft Defender for Endpoint の使用」を参照してください](/mem/intune/protect/advanced-threat-protection#example-of-using-microsoft-defender-atp-with-intune)**。
+> お困りの際は、 「Intune **[での Microsoft Defender for Endpoint の使用」を参照してください](/mem/intune/protect/advanced-threat-protection#example-of-using-microsoft-defender-atp-with-intune)**。
 
 ## <a name="configure-microsoft-defender-for-endpoint-with-intune"></a>Intune を使用してエンドポイント用 Microsoft Defender を構成する
 
 次の表に、Intune を使用して Microsoft Defender for Endpoint を構成するために実行できるさまざまなタスクを示します。 すべてを一度に構成する必要は一度に行う必要があります。タスクを選択し、対応するリソースを読み取り、続行します。
 
-<br>
-
-****
+<br/><br/>
 
 |タスク|追加情報|
 |---|---|
@@ -82,7 +80,6 @@ ms.locfileid: "59220458"
 |**資格情報の盗難攻撃から** 保護するために Microsoft Defender Credential Guard を構成する|サーバー 2019 Windows 10、Windows Server 2016、Windowsについては、「Endpoint [protection: Microsoft Defender Credential Guard」を参照してください。](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-credential-guard) <p> Windows 7 SP1、Windows Server 2008 R2 SP1、Windows 8.1、および Windows Server 2012 R2 については[、「Pass-the-Hash (PtH) Attacks and Other Credential Theft、Versions 1 および 2」](https://www.microsoft.com/download/details.aspx?id=36036)を参照してください。|
 |**組織のデバイスでアプリ** を監査または信頼するかどうかを選択する Microsoft Defender アプリケーションコントロールを構成する <p> *Microsoft Defender アプリケーションコントロールは [AppLocker とも呼ばれます](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview)。*|[Microsoft Defender アプリケーション制御ポリシーを展開するには、次のMicrosoft Intune](/windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune) <p> [エンドポイント保護: Microsoft Defender アプリケーション制御](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-application-control) <p> [AppLocker CSP](/windows/client-management/mdm/applocker-csp)|
 |**デバイス制御と USB 周辺機器へのアクセスを** 構成して、承認されていない周辺機器の脅威がデバイスを侵害するのを防ぐ|[Microsoft Defender for Endpoint と Intune を使用して USB デバイスや他のリムーバブル メディアを制御する](/windows/security/threat-protection/device-control/control-usb-devices-using-intune)|
-|||
 
 ## <a name="configure-your-microsoft-365-defender-portal"></a>ポータルをMicrosoft 365 Defenderする
 

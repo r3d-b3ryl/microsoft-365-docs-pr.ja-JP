@@ -18,11 +18,11 @@ ms.collection:
 ms.custom: ''
 f1.keywords: NOCSH
 ms.openlocfilehash: 1aed90c47ca72cb514d8d3df1fa22e5dff4feb44
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59357291"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59399660"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365-e5"></a>脅威保護機能を複数のユーザーに展開Microsoft 365 E5
 

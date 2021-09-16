@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ビジネス向け支払い方法を更新する方法Microsoft 365説明します。
-ms.openlocfilehash: b0ed8541068fe02e0bd1f005a5a9c7ee8f50ae1b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a5c6c5082c5d4236b5eb7ab9e6c3af45793e16cb
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180568"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401532"
 ---
 # <a name="update-the-payment-method-for-your-subscription"></a>サブスクリプションの支払い方法を更新する
 
@@ -35,6 +35,10 @@ ms.locfileid: "59180568"
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AVxy?autoplay=false]
 
 ビジネス サブスクリプションの支払い方法を簡単Microsoft 365更新できます。 使用するクレジット カード、名前、住所などの詳細を変更できます。
+
+## <a name="before-you-begin"></a>開始する前に
+
+この記事で説明されている手順を実行するには、全体管理者または課金管理者である必要があります。 詳細については、「[管理者の役割について](/microsoft-365/admin/add-users/about-admin-roles)」を参照してください。
 
 ## <a name="try-it"></a>お試しください!
 

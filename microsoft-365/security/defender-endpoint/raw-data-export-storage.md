@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5a38f1347c959cd52e0ae393fa60b4e9c371eb2a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2631d68077a51df1ae3e2e7c6f4abd3a246c5d8c
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220350"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401616"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-storage-account"></a>Microsoft Defender for Endpoint を構成して、高度なハンティング イベントを自分のアカウントStorageする
 
@@ -34,7 +34,7 @@ ms.locfileid: "59220350"
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configuresiem-abovefoldlink)
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 1. テナントに[Storageアカウント](/azure/storage/common/storage-account-overview)を作成します。
 
@@ -52,7 +52,7 @@ ms.locfileid: "59220350"
 
 5. [**イベントを転送する] をAzure Storage** します。
 
-6. アカウント リソース **ID Storage入力します**。 Storage アカウント リソース **ID を** 取得するには [、Azure portal](https://ms.portal.azure.com/) > プロパティ タブの Storage アカウント ページに移動し、> アカウント リソース ID の下のStorage **をコピーします**。
+6. アカウント リソース **ID Storage入力します**。 アカウント リソース **ID** を取得 [Storage、Azure portal](https://ms.portal.azure.com/)の [プロパティ] タブの [Storage アカウント] ページに移動し、[アカウント リソース ID] の下Storage \> \> **コピーします**。
 
    ![イベント ハブ リソース ID1 のイメージ。](images/storage-account-resource-id.png)
 
@@ -60,19 +60,19 @@ ms.locfileid: "59220350"
 
 ## <a name="the-schema-of-the-events-in-the-storage-account"></a>アカウント内のイベントのスキーマStorageします。
 
-- BLOB コンテナーは、イベントの種類ごとに作成されます。 
+- BLOB コンテナーは、イベントの種類ごとに作成されます。
 
   ![イベント ハブ リソース ID2 のイメージ。](images/storage-account-event-schema.png)
 
-- BLOB 内の各行のスキーマは、次の JSON です。 
+- BLOB 内の各行のスキーマは、次の JSON です。
 
-  ```
+  ```json
   {
           "time": "<The time WDATP received the event>"
           "tenantId": "<Your tenant ID>"
           "category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
           "properties": { <WDATP Advanced Hunting event as Json> }
-  }               
+  }
   ```
 
 - 各 BLOB には複数の行が含まれます。
@@ -89,19 +89,20 @@ ms.locfileid: "59220350"
 
 1. ログイン[して[詳細](https://securitycenter.windows.com)Microsoft Defender セキュリティ センター]ページ[に移動します](https://securitycenter.windows.com/hunting-package)。
 
-2. 次のクエリを実行して、各イベントのデータ型マッピングを取得します。 
+2. 次のクエリを実行して、各イベントのデータ型マッピングを取得します。
 
    ```
    {EventType}
    | getschema
-   | project ColumnName, ColumnType 
+   | project ColumnName, ColumnType
    ```
 
-- デバイス情報イベントの例を次に示します。 
+- デバイス情報イベントの例を次に示します。
 
   ![イベント ハブ リソース ID3 のイメージ。](images/machine-info-datatype-example.png)
 
 ## <a name="related-topics"></a>関連項目
+
 - [高度なハンティングの概要](advanced-hunting-overview.md)
 - [エンドポイント ストリーミング API 用 Microsoft Defender](raw-data-export.md)
 - [Microsoft Defender for Endpoint イベントを Azure ストレージ アカウントにストリーミングする](raw-data-export-storage.md)

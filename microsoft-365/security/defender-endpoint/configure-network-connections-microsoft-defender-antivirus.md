@@ -16,12 +16,12 @@ ms.custom: nextgen
 ms.date: 06/17/2021
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: e7631647d97abc7f67129c9d40887996cfc7eb0b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9f60b310d435693972a6573d7c9dccd920866bbe
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221657"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400332"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>Microsoft Defender ウイルス対策 ネットワーク接続を構成および検証する
 
@@ -55,9 +55,7 @@ ms.locfileid: "59221657"
 
 これらの URL へのアクセスを拒否するファイアウォールまたはネットワーク フィルタールールが存在しないか確認します。 それ以外の場合は、許可ルール (URL を除く) を作成する必要があります `*.blob.core.windows.net` 。 次の表の URL は、通信にポート 443 を使用します。
 
-<br>
-
-****
+<br/><br/>
 
 |サービスと説明|URL|
 |---|---|
@@ -117,3 +115,8 @@ ms.locfileid: "59221657"
    > バージョン 1703 Windows 10以前のバージョンのユーザー インターフェイスは異なります。 [「Microsoft Defender ウイルス対策」を参照Windows セキュリティします](microsoft-defender-security-center-antivirus.md)。
 
    またWindowsイベント ログには、クライアント[Windows Defender ID 1116 も表示されます](troubleshoot-microsoft-defender-antivirus.md)。
+
+## <a name="see-also"></a>関連項目
+
+- [デバイス プロキシとインターネット接続の設定を構成する](configure-proxy-internet.md)
+- [グループ ポリシー設定を使用して、グループ ポリシーの構成とMicrosoft Defender ウイルス対策](use-group-policy-microsoft-defender-antivirus.md)

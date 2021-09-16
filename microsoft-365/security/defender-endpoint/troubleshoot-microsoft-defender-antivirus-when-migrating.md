@@ -15,12 +15,12 @@ ms.date: 09/11/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 80d8ec3a48ea8388d6c1807f2eccb9df334394de
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 337f034dced0cad5d483b55fa279a7b220fb8e72
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213414"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401580"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-while-migrating-from-a-third-party-solution"></a>サード パーティのソリューションからの移行中に Microsoft Defender ウイルスのトラブルシューティングを行う
 
@@ -37,7 +37,7 @@ ms.locfileid: "59213414"
 
 タスク バーの [検索]アイコンを選択し、イベント ビューアーを検索して、イベント ビューアー アプリ *を開きます*。
 
-アプリケーションにMicrosoft Defender ウイルス対策については **、「Applications and Services Logs** Microsoft Windows  >    >    >  Windows Defender」**を参照してください**。
+アプリケーションにMicrosoft Defender ウイルス対策については **、「Applications and Services Logs** Microsoft Windows \>  \>  \> Windows Defender」**を参照してください**。
 
 そこから、[操作] の **下にある [** 開く] **を選択します**。
 
@@ -52,7 +52,7 @@ ms.locfileid: "59213414"
 イベント ID|ログ名|説明|ソース
 ---|---|---|---
 15 |アプリケーション|更新されたWindows Defender状態が正常に更新SECURITY_PRODUCT_STATE_OFF。|セキュリティ センター
-5007|Microsoft-Windows-Windows Defender/運用|Windows Defender ウイルス対策構成が変更されました。  予期しないイベントの場合は、マルウェアの結果である可能性がある設定を確認する必要があります。 <p> **古い値:** Default\IsServiceRunning = 0x0 p> 新しい値 **:** HKLM\SOFTWARE\Microsoft\Windows Defender\IsServiceRunning = 0x1|Windows Defender
+5007|Microsoft-Windows-Windows Defender/運用|Windows Defender ウイルス対策構成が変更されました。 予期しないイベントの場合は、マルウェアの結果である可能性がある設定を確認する必要があります。 <p> **古い値:** Default\IsServiceRunning = 0x0 <p> **新しい値:** HKLM\SOFTWARE\Microsoft\Windows Defender\IsServiceRunning = 0x1|Windows Defender
 5010|Microsoft-Windows-Windows Defender/運用|Windows Defender ウイルス対策その他の望ましくない可能性のあるソフトウェアのスキャンが無効になります。|Windows Defender
 
 ### <a name="how-to-tell-if-microsoft-defender-antivirus-wont-start-because-a-third-party-antivirus-is-installed"></a>サードパーティのウイルス対策Microsoft Defender ウイルス対策がインストールされたため、ユーザーが起動しないかを確認する方法
@@ -66,7 +66,7 @@ ms.locfileid: "59213414"
 
 サービス アプリを開く場合は、タスク バーから **[検索** ] アイコンを選択し、サービスを検索 *します*。 services.msc と入力して、コマンド ラインから *アプリを開く方法もあります*。
 
-サービスに関Microsoft Defender ウイルス対策情報は、[運用] の [サービス] アプリ **Windows Defender**  >  **表示されます**。 ウイルス対策サービス名はサービス *Windows Defender ウイルス対策です*。
+サービスに関Microsoft Defender ウイルス対策情報は、[運用] の [サービス] アプリ **Windows Defender** \> **表示されます**。 ウイルス対策サービス名はサービス *Windows Defender ウイルス対策です*。
 
 アプリの確認中に *、Windows Defender ウイルス対策 Service* が手動に設定されている場合がありますが、このサービスを手動で開始しようとすると、ローカル コンピューター上の Windows Defender ウイルス対策 Service サービスが開始してから停止したという警告が表示されます。 *一部のサービスは、他のサービスやプログラムで使用されていない場合に自動的に停止します。*
 
@@ -80,7 +80,7 @@ ms.locfileid: "59213414"
 GPresult.exe /h gpresult.html
 ```
 
-これにより、./gpresult.html にある *レポートが生成されます*。 このファイルを開き、次の結果が表示される場合があります。このファイルのMicrosoft Defender ウイルス対策に応じて異なる場合があります。
+これにより *、./gpresult.htmlにあるレポートが生成gpresult.html。* このファイルを開き、次の結果が表示される場合があります。このファイルのMicrosoft Defender ウイルス対策に応じて異なる場合があります。
 
 ##### <a name="group-policy-results"></a>グループ ポリシーの結果
 
@@ -88,7 +88,7 @@ GPresult.exe /h gpresult.html
 
 GPResults レポート内の見出し *Windows Components/Windows Defender ウイルス対策* の下に、Microsoft Defender ウイルス対策 がオフになっていることを示す次のエントリのようなものが表示される場合があります。
 
-ポリシー|Setting|GPO を獲得する
+ポリシー|設定|GPO を獲得する
 ---|---|---
 [オフにする] Windows Defender ウイルス対策|Enabled|Win10-Workstations
 
@@ -101,7 +101,7 @@ DisableAntiSpyware|-
 GPO を獲得する|Win10-Workstations
 結果: 成功|
 **全般**|
-Action|Update
+操作|Update
 **Properties**|
 ハイブ|HKEY_LOCAL_MACHINE
 キー パス|SOFTWARE\Policies\Microsoft\Windows Defender

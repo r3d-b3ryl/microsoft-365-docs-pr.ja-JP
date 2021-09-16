@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: b62dbc0881ffe1b7129c053d13ee509796aef5b9
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59357398"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59399432"
 ---
 # <a name="offboard-machine-api"></a>オフボード マシン API
 

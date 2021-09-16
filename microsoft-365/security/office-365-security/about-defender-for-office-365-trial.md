@@ -20,11 +20,11 @@ ms.custom:
 ROBOTS: NOINDEX
 description: 管理者は、管理者向け Microsoft Defender の試用版モードについてOffice 365
 ms.openlocfilehash: 21cff6ecd695ef95173149eed211b40989fa47ce
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59357497"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59402108"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>Microsoft Defender for Office 365試用版
 
@@ -78,7 +78,7 @@ Defender for Office 365試用版は 90 日間利用可能で、すべてのユ�
 
 試用版を開始または終了するには、グローバル管理者またはセキュリティ管理者の役割のメンバーである必要Azure Active Directory。 詳細については、「管理役割 [について」を参照してください](../../admin/add-users/about-admin-roles.md)。
 
-## <a name="additional-information"></a>ページの先頭へ
+## <a name="additional-information"></a>追加情報
 
 試用版に登録した後、変更と更新プログラムが利用可能になるには、最大 2 時間かかる場合があります。 また、管理者はログアウトしてログインし、変更を確認する必要があります。
 

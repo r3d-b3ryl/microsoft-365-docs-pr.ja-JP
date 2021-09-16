@@ -8,18 +8,18 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 08/30/2021
+ms.date: 09/13/2021
 ms.prod: m365-security
-ms.technology: mde
+ms.technology: mdep1
 localization_priority: Normal
 ms.reviewer: inbadian
 f1.keywords: NOCSH
-ms.openlocfilehash: ab2e2e2d1ab0b2ac35a6fd99efe9ef68ea477b44
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 55fb264981dcad52856fe9115345891c2b3387b4
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212274"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400296"
 ---
 # <a name="microsoft-defender-for-endpoint-plan-1-preview-and-plan-2"></a>Microsoft Defender for Endpoint Plan 1 (プレビュー) とプラン 2
 
@@ -30,7 +30,7 @@ EndPoint 向け Microsoft Defender は、エンタープライズネットワー
 
 ## <a name="compare-defender-for-endpoint-plans"></a>Defender for Endpoint プランの比較
 
-次の表では、各プランに高レベルで含まれるものについて説明します。
+次の表では、各プランに高レベルで含まれるものについて説明します。 <br/><br/>
 
 | [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md) <br/>(プレビュー) | [Defender for Endpoint Plan 2](microsoft-defender-endpoint.md) <br/>(現在利用可能) |
 |:---|:---|

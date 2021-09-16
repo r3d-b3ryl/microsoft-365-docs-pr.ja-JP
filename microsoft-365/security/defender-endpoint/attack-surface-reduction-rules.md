@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 6dcfd27cb609231c7caa4a486044d91140b0c4b1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1ef91e980f5cb49432a223b50a94fb0bf2354746
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222078"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59399829"
 ---
 # <a name="attack-surface-reduction-rules"></a>攻撃面の減少ルール
 
@@ -46,47 +46,48 @@ ms.locfileid: "59222078"
 
 |ルールの名前|&nbsp;Windows10|&nbsp;WindowsServer 2019|&nbsp;Windowsサーバー|&nbsp;WindowsServer 2016|&nbsp;WindowsServer 2012 R2|
 |---|:---:|:---:|:---:|:---:|:---:|
-|[悪用された脆弱な署名済みドライバーの悪用をブロックする](#block-abuse-of-exploited-vulnerable-signed-drivers) | ![サポートされなくなりました。](images/checkmark.png) <br><br> | ![サポートされなくなりました。](images/checkmark.png) <br><br> | ![サポートされなくなりました。](images/checkmark.png) <br><br> バージョン 1803 (半期チャネル) 以降 |  |  |
-|[Adobe Reader の子プロセスの作成をブロックする](#block-adobe-reader-from-creating-child-processes) | ![サポートされなくなりました。](images/checkmark.png) <br><br> バージョン 1809 以降 | ![サポートされる](images/checkmark.png) | ![サポートされる](images/checkmark.png)  <br><br> |  |  |
-|[すべてのアプリケーションOffice子プロセスの作成をブロックする](#block-all-office-applications-from-creating-child-processes) | ![サポートされなくなりました。](images/checkmark.png) <br><br> | ![サポートされる](images/checkmark.png) | ![サポートされる](images/checkmark.png) <br><br> |  |  |
-|[ローカル セキュリティ機関サブシステムからの資格情報のWindowsをブロックする (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | ![サポートされなくなりました。](images/checkmark.png) <br><br> バージョン 1803 以降 | ![サポートされる](images/checkmark.png) <br><br> | ![サポートされる](images/checkmark.png) <br><br> |  |  |
-|[メール クライアントと Web メールから実行可能なコンテンツをブロックする](#block-executable-content-from-email-client-and-webmail) | ![サポートされなくなりました。](images/checkmark.png) <br><br> | ![サポートされる](images/checkmark.png) <br><br> | ![サポートされる](images/checkmark.png) <br><br> |  |  |
-|[有病率、年齢、または信頼できるリスト条件を満たしない限り、実行可能ファイルの実行をブロックする](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | ![サポートされなくなりました。](images/checkmark.png) <br><br> バージョン 1803 以降 | ![サポートされる](images/checkmark.png) <br><br> | ![サポートされる](images/checkmark.png) <br><br> |  |  |
-|[難読化される可能性のあるスクリプトの実行をブロックする](#block-execution-of-potentially-obfuscated-scripts) | ![サポートされなくなりました。](images/checkmark.png) <br><br> | ![サポートされる](images/checkmark.png) <br><br> | ![サポートされる](images/checkmark.png) <br><br> |  |  |
-|[JavaScript または VBScript のダウンロード済み実行可能コンテンツの起動をブロックする](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | ![サポートされなくなりました。](images/checkmark.png) <br><br> | ![サポートされる](images/checkmark.png) <br><br> | ![サポートされる](images/checkmark.png) <br><br> |  |  |
-|[実行可能Office作成するアプリケーションのブロック](#block-office-applications-from-creating-executable-content) | ![サポートされなくなりました。](images/checkmark.png) <br><br> | ![サポートされる](images/checkmark.png) <br><br> | ![サポートされる](images/checkmark.png) <br><br> |  |  |
-|[アプリケーションOffice他のプロセスへのコードの挿入をブロックする](#block-office-applications-from-injecting-code-into-other-processes)  | ![サポートされなくなりました。](images/checkmark.png) <br><br> | ![サポートされる](images/checkmark.png) <br><br> | ![サポートされる](images/checkmark.png) <br><br> |  |  |
-|[通信Officeプロセスの作成をブロックする](#block-office-communication-application-from-creating-child-processes) | ![サポートされなくなりました。](images/checkmark.png) <br><br> | ![サポートされる](images/checkmark.png) <br><br> | ![サポートされる](images/checkmark.png) <br><br> |  |  |
-|[WMI イベント サブスクリプションによる永続化のブロック](#block-persistence-through-wmi-event-subscription) <br><br> \*_ファイルとフォルダーの除外はサポートされていません。_ | ![サポートされなくなりました。](images/checkmark.png) <br><br> バージョン 1903 (ビルド 18362) 以降| ![サポートされる](images/checkmark.png) | ![サポートされる](images/checkmark.png) <br><br> バージョン 1903 (ビルド 18362) 以降 |  |  |
-|[PSExec および WMI コマンドから発生するプロセス作成をブロックする](#block-process-creations-originating-from-psexec-and-wmi-commands) | ![サポートされなくなりました。](images/checkmark.png) <br><br> バージョン 1803 以降 | ![サポートされる](images/checkmark.png) <br><br> | ![サポートされる](images/checkmark.png) <br><br>  |  |  |
-|[USB から実行される信頼されていないプロセスと署名されていないプロセスをブロックする](#block-untrusted-and-unsigned-processes-that-run-from-usb) | ![サポートされなくなりました。](images/checkmark.png) <br><br> | ![サポートされる](images/checkmark.png) <br><br> | ![サポートされる](images/checkmark.png) <br><br> |  |  |
-|[Win32 API 呼び出しをブロックOfficeマクロ](#block-win32-api-calls-from-office-macros) | ![サポートされなくなりました。](images/checkmark.png) <br><br> | ![サポートされる](images/checkmark.png) <br><br> | ![サポートされる](images/checkmark.png) <br><br> |  |  |
-|[ランサムウェアに対する高度な保護の使用](#use-advanced-protection-against-ransomware) | ![サポートされなくなりました。](images/checkmark.png) <br><br> バージョン 1803 以降 | ![サポートされる](images/checkmark.png) <br><br> | ![サポートされる](images/checkmark.png) <br><br> |  |  |
+|[悪用された脆弱な署名済みドライバーの悪用をブロックする](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y | Y | Y バージョン 1803 (半期チャネル) 以降 |  |  |
+|[Adobe Reader の子プロセスの作成をブロックする](#block-adobe-reader-from-creating-child-processes) | Y バージョン 1809 以降 | Y | Y  <br><br> |  |  |
+|[すべてのアプリケーションOffice子プロセスの作成をブロックする](#block-all-office-applications-from-creating-child-processes) | Y | Y | Y <br><br> |  |  |
+|[ローカル セキュリティ機関サブシステムからの資格情報のWindowsをブロックする (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Y バージョン 1803 以降 | Y <br><br> | Y <br><br> |  |  |
+|[メール クライアントと Web メールから実行可能なコンテンツをブロックする](#block-executable-content-from-email-client-and-webmail) | Y | Y <br><br> | Y <br><br> |  |  |
+|[有病率、年齢、または信頼できるリスト条件を満たしない限り、実行可能ファイルの実行をブロックする](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | Y バージョン 1803 以降 | Y <br><br> | Y <br><br> |  |  |
+|[難読化される可能性のあるスクリプトの実行をブロックする](#block-execution-of-potentially-obfuscated-scripts) | Y | Y <br><br> | Y <br><br> |  |  |
+|[JavaScript または VBScript のダウンロード済み実行可能コンテンツの起動をブロックする](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | Y | Y <br><br> | Y <br><br> |  |  |
+|[実行可能Office作成するアプリケーションのブロック](#block-office-applications-from-creating-executable-content) | Y | Y <br><br> | Y <br><br> |  |  |
+|[アプリケーションOffice他のプロセスへのコードの挿入をブロックする](#block-office-applications-from-injecting-code-into-other-processes)  | Y | Y <br><br> | Y <br><br> |  |  |
+|[通信Officeプロセスの作成をブロックする](#block-office-communication-application-from-creating-child-processes) | Y | Y <br><br> | Y <br><br> |  |  |
+|[WMI イベント サブスクリプションによる永続化のブロック](#block-persistence-through-wmi-event-subscription) <br><br> \*_ファイルとフォルダーの除外はサポートされていません。_ | Y バージョン 1903 (ビルド 18362) 以降| Y | Y <br><br> バージョン 1903 (ビルド 18362) 以降 |  |  |
+|[PSExec および WMI コマンドから発生するプロセス作成をブロックする](#block-process-creations-originating-from-psexec-and-wmi-commands) | Y バージョン 1803 以降 | Y <br><br> | Y <br><br>  |  |  |
+|[USB から実行される信頼されていないプロセスと署名されていないプロセスをブロックする](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y | Y <br><br> | Y <br><br> |  |  |
+|[Win32 API 呼び出しをブロックOfficeマクロ](#block-win32-api-calls-from-office-macros) | Y | Y <br><br> | Y <br><br> |  |  |
+|[ランサムウェアに対する高度な保護の使用](#use-advanced-protection-against-ransomware) | Y バージョン 1803 以降 | Y <br><br> | Y <br><br> |  |  |
 | **ルール名** |  **&nbsp;Windows10** | **&nbsp;WindowsServer 2019** | **&nbsp;Windowsサーバー** | **&nbsp;WindowsServer 2016** | **&nbsp;WindowsServer 2012 R2** |
 
 ## <a name="supported-configuration-management-systems"></a>サポートされている構成管理システム
 
 この表で参照されている構成管理システムのバージョンに関する情報へのリンクは、次の表の下に示します。
 
-|ルールの名前|Intune|Microsoft エンドポイント マネージャー|Microsoft Endpoint Configuration Manager|グループ ポリシー|PowerShell|
+|ルールの名前 | Intune | Microsoft エンドポイント マネージャー |Microsoft Endpoint Configuration Manager |グループ ポリシー <sup> [[1](#fn1)]<sup></sup> | PowerShell <sup> [[1](#fn1)]<sup></sup>  |
 |---|:---:|:---:|:---:|:---:|:---:|
-|[悪用された脆弱な署名済みドライバーの悪用をブロックする](#block-abuse-of-exploited-vulnerable-signed-drivers) | ![サポートされなくなりました。](images/checkmark.png) <br><br>  |  ![サポート対象](images/checkmark.png) <br><br> MEM OMA-URI |   |   |  ![サポート対象](images/checkmark.png) <br><br> |
-|[Adobe Reader の子プロセスの作成をブロックする](#block-adobe-reader-from-creating-child-processes) | ![サポートされなくなりました。](images/checkmark.png) |   | ![サポート対象](images/checkmark.png) |   |   |
-|[すべてのアプリケーションOffice子プロセスの作成をブロックする](#block-all-office-applications-from-creating-child-processes) | ![サポートされなくなりました。](images/checkmark.png) |   | ![サポート対象](images/checkmark.png) <br><br> CB 1710 |   |   |
-|[ローカル セキュリティ機関サブシステムからの資格情報のWindowsをブロックする (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | ![サポートされなくなりました。](images/checkmark.png)  |   |  ![サポート対象](images/checkmark.png) <br><br> CB 1802 |   |   |
-|[メール クライアントと Web メールから実行可能なコンテンツをブロックする](#block-executable-content-from-email-client-and-webmail) | ![サポートされなくなりました。](images/checkmark.png) |  | ![サポート対象](images/checkmark.png) <br><br> CB 1710 | ![サポート対象](images/checkmark.png) |   |
-|[有病率、年齢、または信頼できるリスト条件を満たしない限り、実行可能ファイルの実行をブロックする](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | ![サポートされなくなりました。](images/checkmark.png) |   | ![サポート対象](images/checkmark.png) <br><br> CB 1802 |   |   |
-|[難読化される可能性のあるスクリプトの実行をブロックする](#block-execution-of-potentially-obfuscated-scripts) | ![サポートされなくなりました。](images/checkmark.png) |   |  ![サポート対象](images/checkmark.png)  <br><br> CB 1710 |   |   |
-|[JavaScript または VBScript のダウンロード済み実行可能コンテンツの起動をブロックする](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | ![サポートされなくなりました。](images/checkmark.png) |   |  ![サポート対象](images/checkmark.png) <br><br> CB 1710 |   |   |
-|[実行可能Office作成するアプリケーションのブロック](#block-office-applications-from-creating-executable-content) | ![サポートされなくなりました。](images/checkmark.png) <br><br> |  | ![サポート対象](images/checkmark.png) <br><br> CB 1710 <br><br> |   |   |
-|[アプリケーションOffice他のプロセスへのコードの挿入をブロックする](#block-office-applications-from-injecting-code-into-other-processes) | ![サポートされなくなりました。](images/checkmark.png) |  |  ![サポート対象](images/checkmark.png) <br><br> CB 1710 |   |   |
-|[通信Officeプロセスの作成をブロックする](#block-office-communication-application-from-creating-child-processes) | ![サポートされなくなりました。](images/checkmark.png) |  | ![サポート対象](images/checkmark.png) <br><br>  CB 1710 |   |   |
-|[WMI イベント サブスクリプションによる永続化のブロック](#block-persistence-through-wmi-event-subscription) |  |  |  |   |   |
-|[PSExec および WMI コマンドから発生するプロセス作成をブロックする](#block-process-creations-originating-from-psexec-and-wmi-commands) | ![サポート対象](images/checkmark.png) |   |   |   |   |
-|[USB から実行される信頼されていないプロセスと署名されていないプロセスをブロックする](#block-untrusted-and-unsigned-processes-that-run-from-usb) | ![サポートされなくなりました。](images/checkmark.png) |   | ![サポート対象](images/checkmark.png) <br><br> CB 1802 <br><br> |   |   |
-|[Win32 API 呼び出しをブロックOfficeマクロ](#block-win32-api-calls-from-office-macros) | ![サポートされなくなりました。](images/checkmark.png) |   | ![サポート対象](images/checkmark.png) <br><br> CB 1710 <br><br> |   |   |
-|[ランサムウェアに対する高度な保護の使用](#use-advanced-protection-against-ransomware) | ![サポートされなくなりました。](images/checkmark.png) |   |  ![サポート対象](images/checkmark.png) <br><br>  CB 1802 |   |   |
-| **ルール名** | **Intune** | **Microsoft エンドポイント マネージャー** | **Microsoft Endpoint Configuration Manager** | **グループ ポリシー** | **PowerShell** |
+|[悪用された脆弱な署名済みドライバーの悪用をブロックする](#block-abuse-of-exploited-vulnerable-signed-drivers) | ![サポートされなくなりました。](images/checkmark.png) <br><br>  |  ![サポート対象](images/checkmark.png) <br><br> MEM OMA-URI |   | ![サポートされなくなりました。](images/checkmark.png) <br><br>  |  ![サポート対象](images/checkmark.png) <br><br> |
+|[Adobe Reader の子プロセスの作成をブロックする](#block-adobe-reader-from-creating-child-processes) | ![サポートされなくなりました。](images/checkmark.png) |   | ![サポート対象](images/checkmark.png) | ![サポートされなくなりました。](images/checkmark.png) <br><br>  | ![サポートされなくなりました。](images/checkmark.png) <br><br>  |
+|[すべてのアプリケーションOffice子プロセスの作成をブロックする](#block-all-office-applications-from-creating-child-processes) | ![サポートされなくなりました。](images/checkmark.png) |   | ![サポート対象](images/checkmark.png) <br><br> CB 1710 | ![サポートされなくなりました。](images/checkmark.png) <br><br>  | ![サポートされなくなりました。](images/checkmark.png) <br><br>  |
+|[ローカル セキュリティ機関サブシステムからの資格情報のWindowsをブロックする (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | ![サポートされなくなりました。](images/checkmark.png)  |   |  ![サポート対象](images/checkmark.png) <br><br> CB 1802 | ![サポートされなくなりました。](images/checkmark.png) <br><br>  | ![サポートされなくなりました。](images/checkmark.png) <br><br>  |
+|[メール クライアントと Web メールから実行可能なコンテンツをブロックする](#block-executable-content-from-email-client-and-webmail) | ![サポートされなくなりました。](images/checkmark.png) |  | ![サポート対象](images/checkmark.png) <br><br> CB 1710 | ![サポート対象](images/checkmark.png) | ![サポートされなくなりました。](images/checkmark.png) <br><br>  |
+|[有病率、年齢、または信頼できるリスト条件を満たしない限り、実行可能ファイルの実行をブロックする](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | ![サポートされなくなりました。](images/checkmark.png) |   | ![サポート対象](images/checkmark.png) <br><br> CB 1802 |  ![サポートされなくなりました。](images/checkmark.png) <br><br> |  ![サポートされなくなりました。](images/checkmark.png) <br><br> |
+|[難読化される可能性のあるスクリプトの実行をブロックする](#block-execution-of-potentially-obfuscated-scripts) | ![サポートされなくなりました。](images/checkmark.png) |   |  ![サポート対象](images/checkmark.png)  <br><br> CB 1710 | ![サポートされなくなりました。](images/checkmark.png) <br><br>  | ![サポートされなくなりました。](images/checkmark.png) <br><br>  |
+|[JavaScript または VBScript のダウンロード済み実行可能コンテンツの起動をブロックする](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | ![サポートされなくなりました。](images/checkmark.png) |   |  ![サポート対象](images/checkmark.png) <br><br> CB 1710 | ![サポートされなくなりました。](images/checkmark.png) <br><br>  | ![サポートされなくなりました。](images/checkmark.png) <br><br>  |
+|[実行可能Office作成するアプリケーションのブロック](#block-office-applications-from-creating-executable-content) | ![サポートされなくなりました。](images/checkmark.png) <br><br> |  | ![サポート対象](images/checkmark.png) <br><br> CB 1710 <br><br> | ![サポートされなくなりました。](images/checkmark.png) <br><br>  | ![サポートされなくなりました。](images/checkmark.png) <br><br>  |
+|[アプリケーションOffice他のプロセスへのコードの挿入をブロックする](#block-office-applications-from-injecting-code-into-other-processes) | ![サポートされなくなりました。](images/checkmark.png) |  |  ![サポート対象](images/checkmark.png) <br><br> CB 1710 | ![サポートされなくなりました。](images/checkmark.png) <br><br>  | ![サポートされなくなりました。](images/checkmark.png) <br><br>  |
+|[通信Officeプロセスの作成をブロックする](#block-office-communication-application-from-creating-child-processes) | ![サポートされなくなりました。](images/checkmark.png) |  | ![サポート対象](images/checkmark.png) <br><br>  CB 1710 | ![サポートされなくなりました。](images/checkmark.png) <br><br>  | ![サポートされなくなりました。](images/checkmark.png) <br><br>  |
+|[WMI イベント サブスクリプションによる永続化のブロック](#block-persistence-through-wmi-event-subscription) |  |  |  |![サポートされなくなりました。](images/checkmark.png) <br><br>   | ![サポートされなくなりました。](images/checkmark.png) <br><br>  |
+|[PSExec および WMI コマンドから発生するプロセス作成をブロックする](#block-process-creations-originating-from-psexec-and-wmi-commands) | ![サポート対象](images/checkmark.png) |   |   |  ![サポートされなくなりました。](images/checkmark.png) <br><br> | ![サポートされなくなりました。](images/checkmark.png) <br><br>  |
+|[USB から実行される信頼されていないプロセスと署名されていないプロセスをブロックする](#block-untrusted-and-unsigned-processes-that-run-from-usb) | ![サポートされなくなりました。](images/checkmark.png) |   | ![サポート対象](images/checkmark.png) <br><br> CB 1802 <br><br> | ![サポートされなくなりました。](images/checkmark.png) <br><br>  | ![サポートされなくなりました。](images/checkmark.png) <br><br>  |
+|[Win32 API 呼び出しをブロックOfficeマクロ](#block-win32-api-calls-from-office-macros) | ![サポートされなくなりました。](images/checkmark.png) |   | ![サポート対象](images/checkmark.png) <br><br> CB 1710 <br><br> | ![サポートされなくなりました。](images/checkmark.png) <br><br>  |  ![サポートされなくなりました。](images/checkmark.png) <br><br> |
+|[ランサムウェアに対する高度な保護の使用](#use-advanced-protection-against-ransomware) | ![サポートされなくなりました。](images/checkmark.png) |   |  ![サポート対象](images/checkmark.png) <br><br>  CB 1802 | ![サポートされなくなりました。](images/checkmark.png) <br><br>  | ![サポートされなくなりました。](images/checkmark.png) <br><br>  |
+
+  (<a id="fn1">1</a>) 任意のルールの GUID を使用して、ルールごとに攻撃表面の縮小ルールを構成できます。
 
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 - [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
@@ -113,7 +114,9 @@ Intune 名: `Block abuse of exploited vulnerable signed drivers`
 
 GUID:  `56a863a9-875e-4185-98a7-b882c64b5ce5`
 
-AH アクションの種類:
+<!-- Hide this intro with no subsequent list items
+Advanced hunting action type:
+-->
 
 ### <a name="block-adobe-reader-from-creating-child-processes"></a>Adobe Reader の子プロセスの作成をブロックする
 
@@ -127,7 +130,7 @@ Configuration Manager 名: まだ使用できません
 
 GUID: `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`
 
-AH アクションの種類:
+高度なハンティング アクションの種類:
 
 - AsrAdobeReaderChildProcessAudited
 - AsrAdobeReaderChildProcessBlocked
@@ -144,7 +147,7 @@ Configuration Manager 名: `Block Office application from creating child process
 
 GUID: `d4f940ab-401b-4efc-aadc-ad5f3c50688a`
 
-AH アクションの種類:
+高度なハンティング アクションの種類:
 
 - AsrOfficeChildProcessAudited
 - AsrOfficeChildProcessBlocked
@@ -164,7 +167,7 @@ Configuration Manager 名: `Block credential stealing from the Windows local sec
 
 GUID: `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`
 
-AH アクションの種類:
+高度なハンティング アクションの種類:
 
 - AsrLsassCredentialTheftAudited
 - AsrLsassCredentialTheftBlocked
@@ -182,7 +185,7 @@ Microsoft エンドポイント マネージャー名:`Block executable content 
 
 GUID: `be9ba2d9-53ea-4cdc-84e5-9b1eeee46550`
 
-AH アクションの種類:
+高度なハンティング アクションの種類:
 
 - AsrExecutableEmailContentAudited
 - AsrExecutableEmailContentBlocked
@@ -217,7 +220,7 @@ Configuration Manager 名: `Block executable files from running unless they meet
 
 GUID: `01443614-cd74-433a-b99e-2ecdc07bfc25`
 
-AH アクションの種類:
+高度なハンティング アクションの種類:
 
 - AsrUntrustedExecutableAudited
 - AsrUntrustedExecutableBlocked
@@ -234,7 +237,7 @@ Configuration Manager 名: `Block execution of potentially obfuscated scripts`
 
 GUID: `5beb7efe-fd9a-4556-801d-275e5ffc04cc`
 
-AH アクションの種類:
+高度なハンティング アクションの種類:
 
 - AsrObfuscatedScriptAudited
 - AsrObfuscatedScriptBlocked
@@ -251,7 +254,7 @@ Configuration Manager 名: `Block JavaScript or VBScript from launching download
 
 GUID: `d3e037e1-3eb8-44c8-a917-57927947596d`
 
-AH アクションの種類:
+高度なハンティング アクションの種類:
 
 - AsrScriptExecutableDownloadAudited
 - AsrScriptExecutableDownloadBlocked
@@ -268,7 +271,7 @@ SCCM 名: `Block Office applications from creating executable content`
 
 GUID: `3b576869-a4ec-4529-8536-b80a7769e899`
 
-AH アクションの種類:
+高度なハンティング アクションの種類:
 
 - AsrExecutableOfficeContentAudited
 - AsrExecutableOfficeContentBlocked
@@ -289,7 +292,7 @@ Configuration Manager 名: `Block Office applications from injecting code into o
 
 GUID: `75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84`
 
-AH アクションの種類:
+高度なハンティング アクションの種類:
 
 - AsrOfficeProcessInjectionAudited
 - AsrOfficeProcessInjectionBlocked
@@ -309,7 +312,7 @@ Configuration Manager 名: 使用できません
 
 GUID: `26190899-1602-49e8-8b27-eb1d0a1ce869`
 
-AH アクションの種類:
+高度なハンティング アクションの種類:
 
 - AsrOfficeCommAppChildProcessAudited
 - AsrOfficeCommAppChildProcessBlocked
@@ -329,7 +332,7 @@ Configuration Manager 名: 使用できません
 
 GUID: `e6db77e5-3df2-4cf1-b95a-636979351e5b`
 
-AH アクションの種類:
+高度なハンティング アクションの種類:
 
 - AsrPersistenceThroughWmiAudited
 - AsrPersistenceThroughWmiBlocked
@@ -347,7 +350,7 @@ Configuration Manager 名: 該当なし
 
 GUID: `d1e49aac-8f56-4280-b9ba-993a6d77406c`
 
-AH アクションの種類:
+高度なハンティング アクションの種類:
 
 - AsrPsexecWmiChildProcessAudited
 - AsrPsexecWmiChildProcessBlocked
@@ -362,7 +365,7 @@ Configuration Manager 名: `Block untrusted and unsigned processes that run from
 
 GUID: `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`
 
-AH アクションの種類:
+高度なハンティング アクションの種類:
 
 - AsrUntrustedUsbProcessAudited
 - AsrUntrustedUsbProcessBlocked
@@ -386,7 +389,7 @@ Configuration Manager 名: `Block Win32 API calls from Office macros`
 
 GUID: `92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b`
 
-AH アクションの種類:
+高度なハンティング アクションの種類:
 
 - AsrOfficeMacroWin32ApiCallsAudited
 - AsrOfficeMacroWin32ApiCallsBlocked
@@ -410,7 +413,7 @@ Configuration Manager 名: `Use advanced protection against ransomware`
 
 GUID: `c1db55ab-c21a-4637-bb3f-a12568109d35`
 
-AH アクションの種類:
+高度なハンティング アクションの種類:
 
 - AsrRansomwareAudited
 - AsrRansomwareBlocked

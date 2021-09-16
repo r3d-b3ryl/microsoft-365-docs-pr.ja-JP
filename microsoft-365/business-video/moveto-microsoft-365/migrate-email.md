@@ -23,11 +23,11 @@ search.appverid:
 - MOE150
 description: メール、連絡先、予定表を Google ワークスペースからビジネス向け Microsoft 365移行する方法について説明します。
 ms.openlocfilehash: 58037d033c35bad97d5b18dc408e5450340d0c25
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59357196"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59402012"
 ---
 # <a name="migrate-business-email-and-calendar-from-google-workspace"></a>Google ワークスペースからビジネス メールと予定表を移行する
 

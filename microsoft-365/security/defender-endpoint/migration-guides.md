@@ -18,11 +18,11 @@ f1.keywords: NOCSH
 ms.date: 06/14/2021
 ms.technology: mde
 ms.openlocfilehash: 0aace52d05103afa490ec98b50ee9b6539e6b794
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59357614"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401664"
 ---
 # <a name="make-the-switch-to-microsoft-defender-for-endpoint"></a>エンドポイント用 Microsoft Defender への切り替え
 

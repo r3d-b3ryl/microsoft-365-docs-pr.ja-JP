@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 91891af35def83f21b3db8c7e8fa4b320bef563c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b2b2a15879b0dcac69193953ae3c57fd0ff40058
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220325"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59399229"
 ---
 # <a name="report-on-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策のレポート
 
@@ -34,15 +34,15 @@ ms.locfileid: "59220325"
 
 Microsoft Defender ウイルス対策サーバー 2019、Windows 10、Windowsに組み込Windows Server 2016。 Microsoft Defender ウイルス対策は、Microsoft Defender for Endpoint の次世代保護です。 次世代の保護は、電子メール、アプリ、クラウド、Web 全体のウイルス、マルウェア、スパイウェアなどのソフトウェアの脅威からデバイスを保護するのに役立ちます。
 
-このMicrosoft Defender ウイルス対策、保護状態とアラートを確認するためのいくつかのオプションがあります。 メール通知を監視[Microsoft エンドポイント マネージャー、またはMicrosoft Defender ウイルス対策](/configmgr/protect/deploy-use/monitor-endpoint-protection)を[作成するために使用できます](/configmgr/protect/deploy-use/endpoint-configure-alerts)。 または、 を使用して保護を[監視Microsoft Intune。](/intune/introduction-intune)  
+このMicrosoft Defender ウイルス対策、保護状態とアラートを確認するためのいくつかのオプションがあります。 メール通知を監視[Microsoft エンドポイント マネージャー、またはMicrosoft Defender ウイルス対策](/configmgr/protect/deploy-use/monitor-endpoint-protection)を[作成するために使用できます](/configmgr/protect/deploy-use/endpoint-configure-alerts)。 または、 を使用して保護を[監視Microsoft Intune。](/intune/introduction-intune)
 
 Microsoft Operations Management [](/windows/deployment/update/update-compliance-get-started) Suite には、保護更新プログラムやリアルタイム保護設定など、Microsoft Defender ウイルス対策に関する重要な問題を報告する更新コンプライアンス アドインがあります。
 
-サードパーティのセキュリティ情報とイベント管理 (SIEM) サーバーがある場合は、クライアント イベントWindows Defender[使用することもできます](/windows/win32/events/windows-events)。 
+サードパーティのセキュリティ情報とイベント管理 (SIEM) サーバーがある場合は、クライアント イベントWindows Defender[使用することもできます](/windows/win32/events/windows-events)。
 
-Windowsイベントは、セキュリティ アカウント マネージャー (SAM) イベント[(Windows 10](/windows/whats-new/whats-new-windows-10-version-1507-and-1511)用に拡張されたイベント、セキュリティ監査トピックも[](/windows/device-security/auditing/security-auditing-overview)参照) および Windows Defender イベントなど、いくつかのセキュリティ[イベント ソースで構成されます](troubleshoot-microsoft-defender-antivirus.md)。 
+Windowsイベントは、セキュリティ アカウント マネージャー (SAM) イベント[(Windows 10](/windows/whats-new/whats-new-windows-10-version-1507-and-1511)用に拡張されたイベント、セキュリティ監査トピックも[](/windows/device-security/auditing/security-auditing-overview)参照) および Windows Defender イベントなど、いくつかのセキュリティ[イベント ソースで構成されます](troubleshoot-microsoft-defender-antivirus.md)。
 
-これらのイベントは、イベント コレクターを使用して一[Windowsできます](/windows/win32/wec/windows-event-collector)。 多くの場合、SIEM サーバーには、WINDOWSイベント用のコネクタが用意され、SIEM サーバー内のすべてのセキュリティ イベントを関連付けできます。 
+これらのイベントは、イベント コレクターを使用して一[Windowsできます](/windows/win32/wec/windows-event-collector)。 多くの場合、SIEM サーバーには、WINDOWSイベント用のコネクタが用意され、SIEM サーバー内のすべてのセキュリティ イベントを関連付けできます。
 
 また、Log [Analytics のマルウェア評価ソリューションを使用してマルウェア イベントを監視することもできます](/azure/log-analytics/log-analytics-malware)。
 

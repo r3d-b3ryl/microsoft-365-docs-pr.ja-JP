@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2a0dfd562416ba4501104f9c015bb60d75140d28
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a5fb39cd97aee44edfd774c2c79080f3adaf9da2
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213494"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400368"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>エンドポイント用 Microsoft Defender の最小要件
 
@@ -37,6 +37,7 @@ ms.locfileid: "59213494"
 サービスへのデバイスのオンボーディングには、いくつかの最小要件があります。 サービスにデバイスをオンボードするライセンス、ハードウェアとソフトウェアの要件、その他の構成設定について説明します。
 
 > [!TIP]
+>
 > - この記事では、Microsoft Defender for Endpoint Plan 2 の最小要件について説明します。 Defender for Endpoint Plan 1 (プレビュー) に関する情報をお探しの場合は [、「Requirements for Defender for Endpoint Plan 1 (preview)」を参照してください](mde-p1-setup-configuration.md#review-the-requirements)。
 > - Defender for Endpoint: Defender for Endpoint Tech Community の最新[の機能強化について説明します](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced)。
 > - Defender for Endpoint は、最近の MITRE 評価で業界をリードする光学機能と検出機能を実証しました。 詳細については、「[MITRE ATT&CK ベース評価の分析](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/)」を参照してください。
@@ -66,16 +67,14 @@ Microsoft Defender for Endpoint for servers には、次のいずれかのライ
 > [!NOTE]
 > お客様は、以下のユーザー ライセンスの 1 つ以上に対して最低 50 ライセンスを合計している場合、Microsoft Defender for Endpoint for Servers のサーバー ライセンス (対象サーバーのオペレーティング システム環境 (OSE) ごとに 1 つ) を取得できます。
 >
-> * Microsoft Defender for Endpoint
-> * WindowsE5/A5
-> * Microsoft 365 E5/A5
-> * Microsoft 365 E5/A5 セキュリティ
+> - Microsoft Defender for Endpoint
+> - WindowsE5/A5
+> - Microsoft 365 E5/A5
+> - Microsoft 365 E5/A5 セキュリティ
 
 ライセンスの詳細については、「 [製品](https://www.microsoft.com/licensing/terms/) 条項」サイトを参照し、アカウント チームと一緒に使用して、契約条件の詳細について説明します。
 
 各エディションの機能の配列の詳細については、「Windows 10エディションの比較」[を参照Windows 10してください](https://www.microsoft.com/windowsforbusiness/compare)。
-
-
 
 ## <a name="browser-requirements"></a>ブラウザー要件
 
@@ -86,7 +85,6 @@ Defender for Endpoint へのアクセスはブラウザーを介して行われ�
 
 > [!NOTE]
 > 他のブラウザーが動作する場合は、前述のブラウザーがサポートされています。
-
 
 ## <a name="hardware-and-software-requirements"></a>ハードウェア要件とソフトウェア要件
 
@@ -120,7 +118,6 @@ Defender for Endpoint へのアクセスはブラウザーを介して行われ�
 >
 > 仮想環境の場合は、LTSC 2019 以降Windows 10 Enterprise使用することをお勧めします。
 
-
 ### <a name="other-supported-operating-systems"></a>その他のサポートされているオペレーティング システム
 
 - [Android](microsoft-defender-endpoint-android.md)
@@ -131,16 +128,14 @@ Defender for Endpoint へのアクセスはブラウザーを介して行われ�
 > [!NOTE]
 > 統合が機能するには、Android、iOS、および macOS の Linux ディストリビューションとバージョンが Defender for Endpoint と互換性を持つ必要があります。
 
-
-
 ### <a name="network-and-data-storage-and-configuration-requirements"></a>ネットワークとデータのストレージと構成の要件
 
 オンボーディング ウィザードを初めて実行する場合は、Microsoft Defender for Endpoint 関連情報の保存場所 (欧州連合、英国、または米国のデータセンター) を選択する必要があります。
 
 > [!NOTE]
+>
 > - 初回セットアップ後にデータストレージの場所を変更することはできません。
 > - Microsoft が [データを保存する](data-storage-privacy.md) 場所と方法の詳細については、Microsoft Defender for Endpoint のデータ ストレージとプライバシーを確認してください。
-
 
 ### <a name="diagnostic-data-settings"></a>診断データの設定
 
@@ -150,13 +145,11 @@ Defender for Endpoint へのアクセスはブラウザーを介して行われ�
 組織内のすべてのデバイスで診断データ サービスが有効になっているか確認します。
 既定では、このサービスは有効になっています。 センサー データを取得する方法を確認する方法をお試しください。
 
-**コマンド ラインを使用して、診断データ サービスWindows 10の種類を確認します**。
+#### <a name="use-the-command-line-to-check-the-windows-10-diagnostic-data-service-startup-type"></a>コマンド ラインを使用して、診断データ サービスWindows 10の種類を確認します。
 
 1. デバイスで管理者特権のコマンド ライン プロンプトを開きます。
-
-   1.  **[スタート]** をクリックし、「**cmd**」と入力します。
-
-   1.  **[コマンド プロンプト]** を右クリックして **[管理者として実行]** を選択します。
+   1. **[スタート]** をクリックし、「**cmd**」と入力します。
+   2. **[コマンド プロンプト]** を右クリックして **[管理者として実行]** を選択します。
 
 2. 次のコマンドを入力し、Enter キーを **押します**。
 
@@ -168,30 +161,25 @@ Defender for Endpoint へのアクセスはブラウザーを介して行われ�
 
    ![diagtrack の sc クエリ コマンドの結果。](images/windefatp-sc-qc-diagtrack.png)
 
-
 サービスが自動的に開始に設定されている場合は、START_TYPEに設定する **必要AUTO_START。**
 
+#### <a name="use-the-command-line-to-set-the-windows-10-diagnostic-data-service-to-automatically-start"></a>コマンド ラインを使用して、診断データ Windows 10を自動的に開始する設定
 
-**コマンド ラインを使用して、診断データ Windows 10を自動的に開始する設定を行います。**
-
-1.  エンドポイントで管理者特権のコマンド ライン プロンプトを開きます。
-
+1. エンドポイントで管理者特権のコマンド ライン プロンプトを開きます。
     1. **[スタート]** をクリックし、「**cmd**」と入力します。
+    2. **[コマンド プロンプト]** を右クリックして **[管理者として実行]** を選択します。
 
-    1. **[コマンド プロンプト]** を右クリックして **[管理者として実行]** を選択します。
-
-2.  次のコマンドを入力し、Enter キーを **押します**。
+2. 次のコマンドを入力し、Enter キーを **押します**。
 
     ```console
     sc config diagtrack start=auto
     ```
 
-3.  成功メッセージが表示されます。 次のコマンドを入力して変更を確認し、Enter キーを **押します**。
+3. 成功メッセージが表示されます。 次のコマンドを入力して変更を確認し、Enter キーを **押します**。
 
     ```console
     sc qc diagtrack
     ```
-
 
 #### <a name="internet-connectivity"></a>インターネット接続
 
@@ -202,7 +190,6 @@ Defender for Endpoint センサーは、1 日の平均帯域幅 5 MB を使用�
 追加のプロキシ構成設定の詳細については、「デバイス プロキシとインターネット接続の設定 [を構成する」を参照してください](configure-proxy-internet.md)。
 
 デバイスをオンボードする前に、診断データ サービスを有効にする必要があります。 サービスは、既定で既定で有効Windows 10。
-
 
 ## <a name="microsoft-defender-antivirus-configuration-requirement"></a>Microsoft Defender ウイルス対策構成要件
 
@@ -219,13 +206,11 @@ Defender for Endpoint デバイスでセキュリティ インテリジェンス
 > [!NOTE]
 > 通常のグループ ポリシーはタンパープロテクションには適用されません。タンパープロテクションがオンの場合、Microsoft Defender ウイルス対策設定への変更は無視されます。
 
-
 ## <a name="microsoft-defender-antivirus-early-launch-antimalware-elam-driver-is-enabled"></a>Microsoft Defender ウイルス対策早期起動マルウェア対策 (ELAM) ドライバーが有効になっている
 
 デバイスでマルウェア対策Microsoft Defender ウイルス対策として実行している場合、Defender for Endpoint エージェントは正常にオンボードされます。
 
 サードパーティのマルウェア対策クライアントを実行し、モバイル デバイス管理ソリューションまたは Microsoft エンドポイント マネージャー (現在のブランチ) を使用する場合は、Microsoft Defender ウイルス対策 ELAM ドライバーが有効になっている必要があります。 詳細については、「ポリシーによって[無効Microsoft Defender ウイルス対策を確認する」を参照してください](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)。
-
 
 ## <a name="related-topics"></a>関連項目
 

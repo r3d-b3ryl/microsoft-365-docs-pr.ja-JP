@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: afc383c158da353da35def39d5b21e2857b9e2ac
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6574b19427814b53e131f72f708e534f3b29554d
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213394"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59399372"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-reporting-in-update-compliance"></a>更新プログラムのコンプライアンスでの Microsoft Defender ウイルス対策レポートのトラブルシューティング
 
@@ -39,11 +39,12 @@ ms.locfileid: "59213394"
 [Windows Analytics Update Compliance](/windows/deployment/update/update-compliance-using#wdav-assessment)を使用して、Microsoft Defender ウイルス対策 を使用しているネットワーク内のデバイスまたはエンドポイントの保護状態に関するレポートを取得すると、問題や問題が発生する可能性があります。
 
 通常、問題の最も一般的なインジケーターは次のとおりです。
+
 - 表示を期待していたすべてのデバイスの数またはサブセットのみが表示されます。
 - デバイスが一切表示されない
 - 表示されるレポートと情報が古くなっている (数日以上前)
 
-更新コンプライアンスに関連しない Microsoft Defender ウイルス対策 サービスに関連する一般的なエラー コードとイベントの MICROSOFT DEFENDER ウイルス対策[を参照してください](troubleshoot-microsoft-defender-antivirus.md)。 
+更新コンプライアンスに関連しない Microsoft Defender ウイルス対策 サービスに関連する一般的なエラー コードとイベントの MICROSOFT DEFENDER ウイルス対策[を参照してください](troubleshoot-microsoft-defender-antivirus.md)。
 
 これらの問題のトラブルシューティングには、次の 3 つの手順があります。
 
@@ -51,16 +52,16 @@ ms.locfileid: "59213394"
 2. クラウド ベースのサービスへの接続Windows Defender確認する
 3. サポート ログの送信
 
->[!IMPORTANT]
->通常、デバイスが更新コンプライアンスに表示され始めるには 3 日かかる。
-
+> [!IMPORTANT]
+> 通常、デバイスが更新コンプライアンスに表示され始めるには 3 日かかる。
 
 ## <a name="confirm-prerequisites"></a>前提条件の確認
 
 デバイスが更新コンプライアンスに適切に表示するには、更新コンプライアンス サービスと更新プログラムの両方の前提条件を満たす必要Microsoft Defender ウイルス対策。
 
 >[!div class="checklist"]
->- エンドポイントは、Microsoft Defender ウイルス対策ウイルス対策保護アプリとして使用しています。 [他のウイルス対策アプリを使用すると、Microsoft Defender ウイルス対策](microsoft-defender-antivirus-compatibility.md)が無効にされ、エンドポイントは更新コンプライアンスで報告されません。
+>
+> - エンドポイントは、Microsoft Defender ウイルス対策ウイルス対策保護アプリとして使用しています。 [他のウイルス対策アプリを使用すると、Microsoft Defender ウイルス対策](microsoft-defender-antivirus-compatibility.md)が無効にされ、エンドポイントは更新コンプライアンスで報告されません。
 > - [クラウド配信の保護が有効になっています](enable-cloud-protection-microsoft-defender-antivirus.md)。
 > - エンドポイントはクラウド[にMicrosoft Defender ウイルス対策できます](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud)
 > - エンドポイントがバージョン 1607 Windows 10前に実行されている場合、Windows 10データを拡張[レベルに設定する必要があります](/windows/configuration/configure-windows-diagnostic-data-in-your-organization#enhanced-level)。
@@ -71,7 +72,7 @@ ms.locfileid: "59213394"
 上記の前提条件が満たされている場合は、次の手順に進み、診断情報を収集して送信する必要があります。
 
 > [!div class="nextstepaction"]
-> [更新コンプライアンスのトラブルシューティングの診断データを収集する](collect-diagnostic-data.md)  
+> [更新コンプライアンスのトラブルシューティングの診断データを収集する](collect-diagnostic-data.md)
 
 ## <a name="related-topics"></a>関連項目
 

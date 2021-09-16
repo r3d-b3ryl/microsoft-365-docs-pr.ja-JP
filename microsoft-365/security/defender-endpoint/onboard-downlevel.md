@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a1a000ec60d84e5abc4ec23591b917eb3072582e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 44a613f1f6a35f22f207b85180296c34ebf1cf11
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214873"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401268"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>以前のバージョンの Windows をオンボードする
 
@@ -38,7 +38,6 @@ ms.locfileid: "59214873"
 - Windows 8.1 Pro
 - Windows 8.1 Enterprise
 
-
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-downlevel-abovefoldlink)
 
 Defender for Endpoint は、ダウンレベルのオペレーティング システムを含むサポートを拡張し、サポートされているバージョンの高度な攻撃検出と調査Windowsします。
@@ -52,6 +51,7 @@ Defender for Endpoint は、ダウンレベルのオペレーティング シス
 > デバイスのオンボード後、検出テストを実行して、サービスに適切にオンボードされていることを確認できます。 詳細については、「新しくオンボードされた Defender for Endpoint エンドポイントで検出テストを実行 [する」を参照してください](run-detection-test.md)。
 
 ## <a name="configure-and-update-system-center-endpoint-protection-clients"></a>クライアントの構成と更新System Center Endpoint Protectionする
+
 > [!IMPORTANT]
 > この手順は、組織が SCEP (SCEP) System Center Endpoint Protection必要です。
 
@@ -59,18 +59,18 @@ Defender for Endpoint は System Center Endpoint Protection と統合し、マ�
 
 この統合を有効にするには、次の手順が必要です。
 
-- [2017 年 1](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie)月のマルウェア対策プラットフォーム更新プログラムをクライアントEndpoint Protectionする 
+- [2017 年 1](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie)月のマルウェア対策プラットフォーム更新プログラムをクライアントEndpoint Protectionする
 - SCEP クライアント Cloud Protection Service メンバーシップを詳細設定に **構成** する
 - クラウドへの接続を許可するネットワークMicrosoft Defender ウイルス対策します。 詳細については、「Allow [connections to the Microsoft Defender ウイルス対策 クラウド」を参照してください。](/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus#allow-connections-to-the-microsoft-defender-antivirus-cloud)
 
 ## <a name="install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint"></a>センサー データを Microsoft Defender for Endpoint にMicrosoft Monitoring Agentレポートするデバイス (MMA) をインストールして構成する
 
-### <a name="before-you-begin"></a>開始する前に
+### <a name="before-you-begin"></a>はじめに
 
 最小システム要件を確認するには、次の詳細を確認します。
 
 - [2018 年 2 月の更新プログラムのロールアップをインストールする](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
-  
+
   > [!NOTE]
   > 7 SP1 および 7 SP1 Windows 7 SP1 EnterpriseおよびWindowsにのみPro。
 
@@ -112,6 +112,7 @@ Defender for Endpoint は System Center Endpoint Protection と統合し、マ�
 - プロキシまたはファイアウォールが既定ですべてのトラフィックをブロックしており、特定のドメインのみを許可している場合や HTTPS スキャン (SSL 検査) が有効になっている場合は [、Defender for Endpoint](/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server)Service URL へのアクセスを有効にしてください。
 
 ## <a name="run-a-detection-test-to-verify-onboarding"></a>検出テストを実行してオンボーディングを確認する
+
 デバイスのオンボード後、検出テストを実行して、デバイスがサービスに適切にオンボードされていることを確認できます。 詳細については、「新しくオンボードされた Microsoft Defender for Endpoint デバイスで検出テストを実行する [」を参照してください](run-detection-test.md)。
 
 ## <a name="offboard-client-endpoints"></a>オフボード クライアント エンドポイント

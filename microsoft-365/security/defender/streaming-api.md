@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 431fd1271bf826ded53f88818741c5bbaa61e9b5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0b8912ee40c090522a0b6228643f37b161dbde14
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189190"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401232"
 ---
 # <a name="streaming-api"></a>ストリーミング API
 
@@ -44,6 +44,7 @@ Microsoft 365 Defenderは、高度なハン[ティングを](../defender/advance
 :---|:---
 [イベントを Azure イベント ハブにストリーミングする](streaming-api-event-hub.md)| テナントでストリーミング API を有効にし、高度なMicrosoft 365 Defenderをイベント ハブにストリーミングする方法[を](../defender/advanced-hunting-overview.md)構成する方法について説明します。
 [Azure ストレージ アカウントにイベントをストリーミングする](streaming-api-storage.md)| テナントでストリーミング API を有効にし、高度なMicrosoft 365 Defenderを Azure[](advanced-hunting-overview.md)ストレージ アカウントにストリーミングするように構成する方法について説明します。
+[サポートされているイベントの種類](supported-event-types.md) | ストリーミング API でサポートされる高度なハンティング イベントの種類について説明します。
 
 
 ## <a name="related-topics"></a>関連項目
