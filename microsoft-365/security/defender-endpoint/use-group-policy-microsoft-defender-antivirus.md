@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: 881db58dc6658c7ed73201e48e7e2079dbf6aa97
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 3e3014feb80383c370aa49f387966c574df587f9
+ms.sourcegitcommit: bf801ff8b45a68edb587f1661d06acd4121ecb49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401016"
+ms.locfileid: "59407683"
 ---
 # <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>グループ ポリシー設定を使用して、グループ ポリシーの構成とMicrosoft Defender ウイルス対策
 
@@ -96,9 +96,9 @@ ms.locfileid: "59401016"
 | 修復 | スケジュールされたフル スキャンを実行して修復を完了する時刻を指定する | [スケジュールされたスキャンMicrosoft Defender ウイルス対策構成する](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
 | レポート | 拡張通知を無効にする | [エンドポイントに表示される通知を構成する](configure-notifications-microsoft-defender-antivirus.md)
 | ルート | [オフにする] Microsoft Defender ウイルス対策 | 使用しない (インストールされているサード パーティ製ウイルス対策アプリが正しく動作するように、この設定を [構成されていない] に設定する必要があります)
-| ルート | プロキシ サーバーをバイパスするアドレスを定義する | [デバイス プロキシとインターネット接続の設定を構成する](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus) |
-| ルート | ネットワークに接続するためのプロキシの自動構成 (.pac) を定義する | [デバイス プロキシとインターネット接続の設定を構成する](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus) |
-| ルート | ネットワークに接続するためのプロキシ サーバーを定義する | [デバイス プロキシとインターネット接続の設定を構成する](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus) |
+| ルート | プロキシ サーバーをバイパスするアドレスを定義する | 不使用 |
+| ルート | ネットワークに接続するためのプロキシの自動構成 (.pac) を定義する | 不使用 |
+| ルート | ネットワークに接続するためのプロキシ サーバーを定義する | 不使用 |
 | ルート | リストのローカル管理者のマージ動作を構成する | [ユーザーによるポリシー設定のローカル変更を防止または許可する](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | ルート | マルウェア対策サービスが通常の優先度で起動を許可する | [スキャンの修復をMicrosoft Defender ウイルス対策する](configure-remediation-microsoft-defender-antivirus.md) |
 | ルート | マルウェア対策サービスの実行を常に許可する | [スキャンの修復をMicrosoft Defender ウイルス対策する](configure-remediation-microsoft-defender-antivirus.md) |

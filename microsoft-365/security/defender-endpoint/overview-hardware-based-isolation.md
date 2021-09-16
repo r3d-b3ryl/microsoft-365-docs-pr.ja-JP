@@ -16,12 +16,12 @@ ms.topic: conceptual
 ms.author: macapara
 ms.date: 09/07/2018
 ms.technology: mde
-ms.openlocfilehash: 06d07b6457e57f6693e029c9ecccf1ca7f90b0cc
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 921cdbc0287cce8affa249ba4d371fc66750d77b
+ms.sourcegitcommit: bf801ff8b45a68edb587f1661d06acd4121ecb49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401628"
+ms.locfileid: "59407677"
 ---
 # <a name="hardware-based-isolation-in-windows-10"></a>Windows 10 のハードウェア ベースの分離
 
@@ -41,6 +41,6 @@ ms.locfileid: "59401628"
 
 |機能|説明|
 |---|---|
-|[Windows Defender Application Guard](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview)|Application Guard は、生産性を維持しながら、高度な攻撃からデバイスを保護します。 独自のハードウェア ベースの分離アプローチを使用して、信頼されていない Web サイトと PDF ドキュメントを、ネイティブの Windows ハイパーバイザーを介してオペレーティング システムから分離された軽量コンテナー内で分離します。 信頼されていないサイトまたは PDF ドキュメントが悪意のあると判明した場合でも、デスクトップ PC を保護し、攻撃者をエンタープライズ データから遠く離して、Application Guard のセキュリティで保護されたコンテナーに含まれるままです。|
-|[Windows DefenderSystem Guard](/windows/security/threat-protection/windows-defender-system-guard/how-hardware-based-root-of-trust-helps-protect-windows)|System Guard は、システムの開始および実行後にシステムの整合性を保護および維持し、構成証明を使用してシステムの整合性を検証します。|
+|[Windows Defender Application Guard](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview.md)|Application Guard は、生産性を維持しながら、高度な攻撃からデバイスを保護します。 独自のハードウェア ベースの分離アプローチを使用して、信頼されていない Web サイトと PDF ドキュメントを、ネイティブの Windows ハイパーバイザーを介してオペレーティング システムから分離された軽量コンテナー内で分離します。 信頼されていないサイトまたは PDF ドキュメントが悪意のあると判明した場合でも、デスクトップ PC を保護し、攻撃者をエンタープライズ データから遠く離して、Application Guard のセキュリティで保護されたコンテナーに含まれるままです。|
+|[Windows DefenderSystem Guard](/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows.md)|System Guard は、システムの開始および実行後にシステムの整合性を保護および維持し、構成証明を使用してシステムの整合性を検証します。|
 |

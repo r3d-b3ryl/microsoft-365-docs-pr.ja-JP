@@ -16,12 +16,12 @@ ms.custom: nextgen
 ms.date: 06/17/2021
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 9f60b310d435693972a6573d7c9dccd920866bbe
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 5b1562a92302e404d10e5f309a702c09491aab80
+ms.sourcegitcommit: bf801ff8b45a68edb587f1661d06acd4121ecb49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400332"
+ms.locfileid: "59407659"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>Microsoft Defender ウイルス対策 ネットワーク接続を構成および検証する
 
@@ -115,8 +115,3 @@ ms.locfileid: "59400332"
    > バージョン 1703 Windows 10以前のバージョンのユーザー インターフェイスは異なります。 [「Microsoft Defender ウイルス対策」を参照Windows セキュリティします](microsoft-defender-security-center-antivirus.md)。
 
    またWindowsイベント ログには、クライアント[Windows Defender ID 1116 も表示されます](troubleshoot-microsoft-defender-antivirus.md)。
-
-## <a name="see-also"></a>関連項目
-
-- [デバイス プロキシとインターネット接続の設定を構成する](configure-proxy-internet.md)
-- [グループ ポリシー設定を使用して、グループ ポリシーの構成とMicrosoft Defender ウイルス対策](use-group-policy-microsoft-defender-antivirus.md)
