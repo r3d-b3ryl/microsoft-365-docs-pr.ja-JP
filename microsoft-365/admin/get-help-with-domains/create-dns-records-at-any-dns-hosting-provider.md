@@ -22,12 +22,12 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
-ms.openlocfilehash: 1947e8e91beb23f328e59ffe30fac0f596165121
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bced40831a9d73e0c72c6ebb232839409c8a64ea
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176464"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59356298"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>DNS レコードを追加して自分のドメインを接続する
 
@@ -74,7 +74,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 フィールドが次の値に設定されていることを確認します。
 
 - Record Type: `MX`
-- Priority: 使用可能な最高の値を設定します。通常は `0` です。
+- 優先度: まだ使用されていない大きな値に設定します。
 - Host Name: `@`
 - Points to address: 管理センターから値をコピーし、ここに貼り付けます。
 - TTL: `3600` (またはプロバイダーの既定値)

@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 組織内のユーザーがどのように Microsoft 365 サービスを使用しているかの定期的レポートを取得して、各チャートをドリルダウンして詳しい分析情報を得ます。
-ms.openlocfilehash: 1001081d14440f1e02800f64b891c6a988f1f10a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c340e8b1bb8e126445b802e6b03c91d595e32a43
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164543"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59355962"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>管理センターの Microsoft 365 レポート
 
@@ -153,12 +153,25 @@ ms.locfileid: "59164543"
   
 ## <a name="show-user-details-in-the-reports"></a>レポートでユーザーの詳細を表示する
 
-レポートで組織の使用状況データに関する情報を入力します。 既定では、レポートにユーザー、グループ、およびサイトの識別可能な名前を持つ情報が表示されます。 2021 年 9 月 1 日より、企業が地域のプライバシー法をサポートするのに役立つ継続的な取り組みの一環として、既定ですべてのレポートのユーザー情報を非表示にしています。
+既定では、ユーザーの詳細はすべてのレポートで非表示になります。
   
 ユーザー リストは次のように表示されます。
-  
+ 
 ![レポート - 匿名ユーザー リスト。](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
+
+
+レポートの生成時にユーザーレベルの情報を再表示する場合は、グローバル管理者が管理センターでその変更をすばやく行うことができます。
+
+レポートで組織の使用状況データに関する情報を入力します。 既定では、レポートにユーザー、グループ、およびサイトの識別可能な名前を持つ情報が表示されます。 2021 年 9 月 1 日より、企業が地域のプライバシー法をサポートするのに役立つ継続的な取り組みの一環として、既定ですべてのレポートのユーザー情報を非表示にしています。
+
   
+1. 管理センターで、 [**設定**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">サービス&amp;アドイン</a>] ページの順に移動します。
+
+2. [**組織設定**] を選択し、[**サービス**] を選択します。 
+  
+3. [**レポート**] ウィンドウで、[**ユーザー情報の表示方法の選択**] を選択し、[**識別可能なユーザー情報をレポートに表示する**] を選択します。
+  
+
 グローバル管理者は、組織のプライバシー方針で許可されている場合は、テナント用のこの変更を元に戻し、特定可能なユーザー情報を表示することができます。 これは、Microsoft 365 管理センターで以下の手順に従うことで設定できます。
   
 1. 管理センターで、**[設定]** \> **[組織の設定]** \> **[サービス]** のページの順に移動します。
@@ -168,6 +181,7 @@ ms.locfileid: "59164543"
 3. ステートメントのチェックを外します **すべてのレポートで、ユーザー、グループ、およびサイトの識別されていない名前を表示し**、変更を保存します。  
   
 レポート ダッシュボードのレポートで変更が有効になるまで数分かかります。 この設定は、[Microsoft Graph](/graph/api/resources/report?view=graph-rest-1.0) と [Power BI](/microsoft-365/admin/usage-analytics/usage-analytics?view=o365-worldwide) の Microsoft 365 使用状況レポート、および [Microsoft Teams 管理センターの使用状況レポート](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference)にも適用されます。 特定可能なユーザー情報の表示は、Microsoft 365 コンプライアンス センター監査ログに記録されるイベントです。   
+
   
 ## <a name="what-happens-to-usage-data-when-a-user-account-is-closed"></a>ユーザー アカウントが削除されたとき、使用状況データはどうなりますか?
 
