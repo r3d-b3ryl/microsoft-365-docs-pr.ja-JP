@@ -2,6 +2,8 @@
   href: index.yml
 - name: Microsoft 365 コンプライアンス センターの新機能
   href: whats-new.md
+- name: コンプライアンス試用版
+  href: compliance-easy-trials.md
 - name: 作業の開始
   items:
     - name: コンプライアンスを開始するためのクイック タスク
@@ -101,37 +103,45 @@
     - name: 機密情報の種類
       items:
         - name: 機密情報の種類に関する詳細情報
-          href: sensitive-information-type-learn-about.md
-        - name: 機密情報の種類のエンティティ定義
-          href: sensitive-information-type-entity-definitions.md
-        - name: DLP 関数の検索対象
-          href: what-the-dlp-functions-look-for.md
-        - name: 組み込みの機密情報の種類をカスタマイズする
-          href: customize-a-built-in-sensitive-information-type.md
-        - name: Exact Data Match によりカスタムの機密情報の種類を作成する
-          href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
-        - name: 完全一致スキーマと機密情報の種類ウィザードを使用する
-          href: sit-edm-wizard.md
-        - name: 構成可能な一致を使用するために完全一致スキーマを変更する
-          href: sit-modify-edm-schema-configurable-match.md
-        - name: Exact Data Match アクティビティの通知を作成する (プレビュー)
-          href: sit-edm-notifications-activities.md
-        - name: カスタムの機密情報の種類の使用を開始する - コンプライアンス センター
-          href: create-a-custom-sensitive-information-type.md
-        - name: カスタムの機密情報の種類を作成する - PowerShell
-          href: create-a-custom-sensitive-information-type-in-scc-powershell.md
-        - name: カスタムの機密情報の種類を削除する - PowerShell
-          href: sit-remove-a-custom-sensitive-information-type-in-powershell.md
-        - name: カスタムの機密情報の種類を変更する - PowerShell
-          href: sit-modify-a-custom-sensitive-information-type-in-powershell.md
-        - name: カスタムの機密情報の種類のフィルター リファレンス
-          href: sit-custom-sit-filters.md
-        - name: キーワード 辞書を作成する
-          href: create-a-keyword-dictionary.md
-        - name: キーワード 辞書を変更する
-          href: sit-modify-keyword-dictionary.md
-        - name: ドキュメント フィンガープリンティング
-          href: document-fingerprinting.md
+          items:
+            - name: 機密情報の種類に関する詳細情報
+              href: sensitive-information-type-learn-about.md
+            - name: ドキュメント フィンガープリンティング
+              href: document-fingerprinting.md
+        - name: 機密情報の種類を使用開始
+          items:
+            - name: 機密情報の種類を使用開始 - コンプライアンス センター
+              href: create-a-custom-sensitive-information-type.md
+        - name: 機密情報の種類を使用する
+          items:
+            - name: 組み込みの機密情報の種類をカスタマイズする
+              href: customize-a-built-in-sensitive-information-type.md
+            - name: Exact Data Match によりカスタムの機密情報の種類を作成する
+              href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
+            - name: 完全一致スキーマと機密情報の種類ウィザードを使用する
+              href: sit-edm-wizard.md
+            - name: 構成可能な一致を使用するために完全一致スキーマを変更する
+              href: sit-modify-edm-schema-configurable-match.md
+            - name: Exact Data Match アクティビティの通知を作成する (プレビュー)
+              href: sit-edm-notifications-activities.md
+            - name: カスタムの機密情報の種類を作成する - PowerShell
+              href: create-a-custom-sensitive-information-type-in-scc-powershell.md
+            - name: カスタムの機密情報の種類を削除する - PowerShell
+              href: sit-remove-a-custom-sensitive-information-type-in-powershell.md
+            - name: カスタムの機密情報の種類を変更する - PowerShell
+              href: sit-modify-a-custom-sensitive-information-type-in-powershell.md
+            - name: キーワード 辞書を作成する
+              href: create-a-keyword-dictionary.md
+            - name: キーワード 辞書を変更する
+              href: sit-modify-keyword-dictionary.md
+        - name: 機密情報の種類のリファレンス
+          items:
+            - name: 機密情報の種類のエンティティ定義
+              href: sensitive-information-type-entity-definitions.md
+            - name: DLP 関数の検索対象
+              href: what-the-dlp-functions-look-for.md
+            - name: カスタム機密情報の種類のフィルター リファレンス
+              href: sit-custom-sit-filters.md
     - name: トレーニング可能な分類子
       items:
         - name: トレーニング可能な分類子の詳細
@@ -166,7 +176,7 @@
           href: sensitivity-labels-teams-groups-sites.md
         - name: SharePoint および OneDrive で Office ファイルの秘密度ラベルを有効にする
           href: sensitivity-labels-sharepoint-onedrive-files.md
-        - name: 秘密度ラベルで暗号化されたドキュメントの共同編集を有効にする (プレビュー)
+        - name: 秘密度ラベルで暗号化されたドキュメントの共同編集を有効にする
           href: sensitivity-labels-coauthoring.md
         - name: Office アプリで秘密度ラベルを管理する
           href: sensitivity-labels-office-apps.md
@@ -321,7 +331,7 @@
               href: dlp-use-policies-non-microsoft-cloud-apps.md
             - name: DLP ポリシーの条件と例外
               href: dlp-conditions-and-exceptions.md
-            - name: Exchange Online データ損失防止ポリシーをコンプライアンス センターに移行する (プレビュー)
+            - name: Exchange Online データ損失防止ポリシーをコンプライアンス センターへ移行する
               href: dlp-migrate-exo-policy-to-unified-dlp.md
             - name: データ損失防止ポリシーヒントのリファレンス
               href: dlp-policy-tips-reference.md

@@ -386,6 +386,8 @@
                       href: streaming-api-event-hub.md
                     - name: 高度な追求イベントをストレージ アカウントにストリームする
                       href: streaming-api-storage.md
+                    - name: サポートされているイベントの種類
+                      href: supported-event-types.md
                     - name: イベント ハブの構成
                       href: configure-event-hub.md
                 - name: 高度な追求 API

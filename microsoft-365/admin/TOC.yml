@@ -8,6 +8,8 @@
           href: admin-overview/sign-up-for-office-365.md
         - name: Microsoft 365 の試用または購入
           href: ../commerce/try-or-buy-microsoft-365.md
+        - name: Microsoft 365 for business のセットアップを計画
+          href: setup/plan-your-setup.md
         - name: Microsoft 365 Business Premium にサインアップする
           items:
             - name: サインアップ
@@ -19,7 +21,7 @@
             - name: Microsoft 365 Business Standard にサインアップする
               href: ../admin/simplified-signup/signup-business-standard.md
             - name: Microsoft 365 Business Standard のセットアップ
-              href: ../admin/simplified-signup/signup-business-standard.md
+              href: ../admin/setup/setup-business-standard.md
             - name: Microsoft 365 Business Standard にユーザーを招待する
               href: ../admin/simplified-signup/admin-invite-business-standard.md
             - name: Microsoft 365 Business Standard への招待メールを承諾する
@@ -28,8 +30,6 @@
               href: ../admin/simplified-signup/user-invite-msa-nodomain-join.md
             - name: データを Microsoft 365 Business Standard サブスクリプションに移行する
               href: ../admin/simplified-signup/migrate-data-business-standard.md
-        - name: セットアップを計画する
-          href: setup/plan-your-setup.md
         - name: Windows 365 Business の計画
           items:
             - name: Windows 365 Business および Cloud PC の概要
@@ -38,7 +38,7 @@
               href: setup/windows-365-business-sizing.md
             - name: Windows 365 クラウド PC のセットアップに関する問題をトラブルシューティングする
               href: setup/troubleshoot-windows-365-business.md
-        - name: ガイド付きのセットアップを使用して組織をセットアップする
+        - name: Microsoft 365 for business organization のセットアップ
           items:
             - name: Microsoft 365 Business Basic
               href: setup/setup-business-basic.md
@@ -323,7 +323,7 @@
               href: usage-analytics/usage-analytics-data-model.md
             - name: 利用状況分析に関するエラーのトラブルシューティング
               href: usage-analytics/usage-analytics-errors.md
-        - name: Microsoft 365 サポートと ServiceNow 構成ガイドの統合
+        - name: Microsoft 365 サポートと ServiceNow 構成ガイドとの統合
           href: manage/microsoft-365-servicenow-support-integration.md
     - name: サブスクリプションと課金を管理する
       href: ../commerce/index.yml
