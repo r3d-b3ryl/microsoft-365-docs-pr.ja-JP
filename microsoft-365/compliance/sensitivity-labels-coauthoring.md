@@ -13,19 +13,16 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: デスクトップ アプリで共同編集と自動保存を有効にする設定をオンにして、SharePoint、OneDrive でドキュメントのラベル付けと暗号化が行えます。
-ms.openlocfilehash: f4399635be64343b4858dbf0b507284afc1f6573
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3a538f866be9d43088ab22923b41c6b070855ea3
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216503"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59356127"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>機密度ラベルを使用して暗号化されたファイルの共同編集を有効にする
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
-
-> [!NOTE]
-> この機能は現在プレビュー段階であり、変更される可能性があります。
 
 Office デスクトップ アプリで [共同編集](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) をサポートする設定を有効にして、ドキュメントが [秘密度レベル](sensitivity-labels.md) でラベル付け、暗号化されている場合、複数のユーザーがこれらのドキュメントを同時に編集できるようにします。
 
@@ -33,7 +30,7 @@ Office デスクトップ アプリで [共同編集](https://support.office.com
 
 さらに、この機能を有効にすると、これらのラベル付きおよび暗号化されたファイルで[自動保存](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5)機能がサポートされます。
 
-元のリリースの発表を確認するには、「[Microsoft Information Protection で暗号化されたドキュメントとラベルの更新に関する共同編集の発表](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-co-authoring-on-microsoft-information-protection/ba-p/2164162)」に関するブログ投稿を参照してください。
+リリースの発表を確認するには、「[Microsoft Information Protection で暗号化されたドキュメントに関する共同編集が一般公開されます](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/co-authoring-on-microsoft-information-protection-encrypted/ba-p/2693718)」のブログ投稿を参照してください。
 
 ## <a name="metadata-changes-for-sensitivity-labels"></a>機密度ラベル用のメタデータ変更
 
@@ -77,15 +74,15 @@ Office デスクトップ アプリの共同編集をサポートする設定を
 - テナントに対して、[SharePoint、OneDrive で Office ファイル](sensitivity-labels-sharepoint-onedrive-files.md) への秘密度レベルを有効にする必要があります。 この機能が有効になっていない場合、秘密度レベルがあるファイルへの共同編集を有効にする設定を選択すると、自動的に有効になります。
 
 - Microsoft 365 Apps for enterprise:
-    - **Windows**: 最小バージョン 2106
-    - **macOS**: 最小バージョン 16.50
+    - **Windows**: 最小バージョン 2107
+    - **macOS**: 最小バージョン 16.51
     - **iOS**: まだサポートされていません
     - **Android**: まだサポートされていません
 
 - テナント内のすべてのアプリ、サービス、および運用ツールで、新しい[メタデータのラベル付け](#metadata-changes-for-sensitivity-labels)をサポートしている必要があります。 次のいずれかを使用する場合は、必要な最小バージョンを確認してください。
     
     - **Azure Information Protection 統合ラベル付けクライアントとスキャナー:**
-        - [Microsoft ダウンロード センター](https://www.microsoft.com/en-us/download/details.aspx?id=53018)からインストールできるパブリック プレビュー バージョン (AzInfoProtection_2.10.46_CoAuthoring_PublicPreview.exe のインストール名)
+        - [Microsoft ダウンロード センター](https://www.microsoft.com/en-us/download/details.aspx?id=53018)からインストール可能な最小バージョン [2.12.62.0](/information-protection/rms-client/unifiedlabelingclient-version-release-history#version-212620)
     
     - **Windows 用または macOS 用の OneDrive 同期アプリ:**
         - 最小バージョン 19.002.0121.0008
@@ -112,6 +109,8 @@ Office デスクトップ アプリの共同編集をサポートする設定を
     
     Excel での仕様: 誰かが秘密度ラベルのメタデータの変更をサポートしない Excel のバージョンを使用してファイルを編集、保存すると、暗号化を適用しない秘密度ラベルのメタデータは、そのファイルから削除されることがあります。
 
+- iOS 用 Office アプリと Android 用 Office アプリは現在サポートされていません。
+
 - 共同編集と自動保存は、次の [暗号化用の構成](encryption-sensitivity-labels.md#configure-encryption-settings) のどれかを使用する Office ドキュメントのラベル付けと暗号化へはサポートされず、使用もできません。
     - **ラベルを適用する場合にユーザーがアクセス許可を割り当てられ**、**Word、PowerPoint、Excel でユーザーにアクセス許可を指定するように求める** のチェックボックスが選択されています。 この構成は、"ユーザー定義のアクセス許可" と呼ばれる場合があります。
     - **コンテンツへのユーザー アクセスは有効期限が切れています** は、**[使用しない]** 以外の値が設定されています。
@@ -119,30 +118,20 @@ Office デスクトップ アプリの共同編集をサポートする設定を
     
     これらの暗号化構成のどれかを使用したラベルは Office アプリで表示されます。 ただし、ユーザーがこれらのラベルを選択し、他のユーザーがドキュメントを編集していない場合、共同編集と自動保存を使用できないという警告が表示されます。 他のユーザーがドキュメントを編集している場合は、ラベルを適用できないというメッセージが表示されます。
 
-- Azure Information Protection 統合ラベル付けクライアントを使用する場合: [その他の要件または制限](/azure/information-protection/known-issues#known-issues-for-co-authoring-public-preview)については、このラベル付けクライアントのドキュメントを確認してください。
-
-## <a name="known-issues-for-this-preview"></a>このプレビューでの既知の問題
-
-機密度ラベルで暗号化されたファイルを共同編集しているこのプレビュー バージョンでは、次の既知の問題があります。
-
-- Office for the web で 300 MB 以上の Word ファイル、Excel ファイル、PowerPoint ファイルにラベルを適用できない。 これらのファイルでは、Office デスクトップ アプリを使用してラベルを適用できますが、ファイルを開いているのが自分だけである必要があります。
-
-- 現在ロールアウト中: [秘密度レベルを条件として使用する DLP ポリシーの使用](dlp-sensitivity-label-as-condition.md)と、メールの暗号化されていない添付ファイルのサポート。
-
-- 一部のドキュメントは、[パスワード保護](https://support.microsoft.com/office/require-a-password-to-open-or-modify-a-workbook-10579f0e-b2d9-4c05-b9f8-4109a6bce643)、[共有ブック](https://support.microsoft.com/office/about-the-shared-workbook-feature-49b833c0-873b-48d8-8bf2-c1c59a628534)、または ActiveX コントロールを含むコンテンツなどの機能のため、秘密度ラベルと互換性がありません。 その他の理由は、「[Office の共同編集のトラブルシューティング](https://support.microsoft.com/office/troubleshoot-co-authoring-in-office-bd481512-3f3a-4b6d-b7eb-ebf9d3626ae7)」に記載されています。 これらのドキュメントには、「**アップロードに失敗しました**」というメッセージが表示され、**[変更を破棄する]** オプションを選択する必要があります。 この問題が解決されるまで、この失敗メッセージで識別されるこれらのドキュメントにラベルを付けないでください。
-
-- iOS 用 Office アプリと Android 用 Office アプリがサポートされていない。
+- Azure Information Protection 統合ラベル付けクライアントを使用する場合: [その他の要件または制限](/azure/information-protection/known-issues#known-issues-for-co-authoring)については、このラベル付けクライアントのドキュメントを確認してください。
 
 ## <a name="how-to-enable-co-authoring-for-files-with-sensitivity-labels"></a>機密度ラベルを使用したファイルの共同編集を有効にする方法
 
 > [!CAUTION]
-> この設定をオンにすることは一方向のアクションです。この機能がプレビュー中は、メタデータの変更、前提条件、制限事項、このページに記載されている既知の問題を確認して理解した上で実行してください。
+> この設定をオンにできるのは、一方向の操作によります。 メタデータの変更、前提条件、制限事項、およびこのページに記載されている既知の問題を確認して理解した上で、有効にします。
+
+プレビュー期間中に既にこの設定を有効にしている場合は、それ以上の操作は必要ないので、この手順を省略できます。
 
 1. テナントのグローバル管理者として [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com) にサインインします。
 
 2. ナビゲーション ウィンドウで、**[設定]** > **[秘密度ファイルを含むファイルの共同編集]** の順に選択します。
 
-2. **[秘密度ファイルを含むファイルの共同編集 (プレビュー)]** ページで、概要の説明、前提条件、予想される内容、さらに 「この設定をオンにすると設定を戻すことができません」 という警告を読みます。
+2. **[秘密度レベルを含むファイルの共同編集]** ページで、概要の説明、前提条件、予想される内容、および「この設定をオンにすると設定を戻すことができません」という警告を確認します。
     
     **機密度ラベルを使用したファイルの共同編集を有効にする** を選んでから **適用** を選びます。
     

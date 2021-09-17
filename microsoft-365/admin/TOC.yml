@@ -323,6 +323,8 @@
               href: usage-analytics/usage-analytics-data-model.md
             - name: 利用状況分析に関するエラーのトラブルシューティング
               href: usage-analytics/usage-analytics-errors.md
+        - name: Microsoft 365 サポートと ServiceNow 構成ガイドの統合
+          href: manage/microsoft-365-servicenow-support-integration.md
     - name: サブスクリプションと課金を管理する
       href: ../commerce/index.yml
     - name: 組織をセキュリティで保護する
