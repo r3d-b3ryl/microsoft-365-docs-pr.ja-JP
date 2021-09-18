@@ -1,6 +1,6 @@
 ---
-title: 情報バリア ポリシーの定義
-description: 情報バリアのポリシーを定義する方法については、Microsoft Teams。
+title: 情報バリアの使用を開始する
+description: 情報バリアの使用を開始する方法について学習します。
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -15,14 +15,14 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ae7d6d448c753737a96db4f74ffd6532ed7e6e66
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: c2c8721cbabd6267bb7c67efc56953bb22186a0b
+ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59399600"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59443961"
 ---
-# <a name="define-information-barrier-policies"></a>情報バリア ポリシーの定義
+# <a name="get-started-with-information-barriers"></a>情報バリアの使用を開始する
 
 情報バリアを使用すると、特定のセグメントのユーザーが相互に通信したり、特定のセグメントが特定のセグメントとのみ通信したりするように設計されたポリシーを定義できます。 情報バリア ポリシーは、組織が関連する業界標準と規制への準拠を維持し、潜在的な利益相反を回避するのに役立ちます。 詳細については、「情報バリア [」を参照してください](information-barriers.md)。
 
@@ -51,7 +51,7 @@ ms.locfileid: "59399600"
 | [パート 2: 情報バリア ポリシーの定義](#part-2-define-information-barrier-policies) | - ポリシーを定義する (まだ適用しない)<br/>- 2 つの種類から選択します (ブロックまたは許可) |
 | [パート 3: 情報バリア ポリシーの適用](#part-3-apply-information-barrier-policies) | - ポリシーをアクティブな状態に設定する<br/>- ポリシー アプリケーションを実行する<br/>- ポリシーの状態を表示する |
 | (必要に応じて) [セグメントまたはポリシーの編集](information-barriers-edit-segments-policies.md) | - セグメントを編集する<br/>- ポリシーを編集または削除する<br/>- ポリシー アプリケーションを再実行する<br/>- ポリシーの状態を表示する |
-| (必要に応じて) [トラブルシューティング](information-barriers-troubleshooting.md)| - 想定通り動作していない場合にアクションを実行する|
+| (必要に応じて) [トラブルシューティング](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting)| - 想定通り動作していない場合にアクションを実行する|
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -268,7 +268,7 @@ PowerShell を使用すると、次の表に示すユーザー アカウント�
 
 情報バリア ポリシーの管理に役立つリソースを利用できます。
 
-- 情報バリアに問題がある場合は、「情報バリアのトラブルシューティング [」を参照してください](information-barriers-troubleshooting.md)。
+- 情報バリアに問題がある場合は、「情報バリアのトラブルシューティング [」を参照してください](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting)。
 - ポリシーの適用を停止するには、「ポリシー アプリケーションを停止 [する」を参照してください](information-barriers-edit-segments-policies.md#stop-a-policy-application)。
 - 情報バリア ポリシーを削除するには、「ポリシーを削除 [する」を参照してください](information-barriers-edit-segments-policies.md#remove-a-policy)。
 - セグメントまたはポリシーを変更するには、「情報バリア ポリシーを編集 [(または削除) する」を参照してください](information-barriers-edit-segments-policies.md)。

@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: '[脅威の管理] ページを使用Microsoft 365 Lighthouseマネージド サービス プロバイダー (MSP) について説明します。'
-ms.openlocfilehash: f9ed274b295b40f9784a193a02dad925462a6e9e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7f8a5ef0ebea7204b0463b921946362acfed17d9
+ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212483"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59443973"
 ---
 # <a name="microsoft-365-lighthouse-threat-management-page-overview"></a>Microsoft 365 Lighthouse脅威管理ページの概要 
 
@@ -32,7 +32,7 @@ ms.locfileid: "59212483"
 
 - Windows 10
 
-Microsoft Defender ウイルス対策、ユーザー、デバイスを、ウイルス、マルウェア、スパイウェアなどのソフトウェアの脅威から保護します。 堅牢で継続的な保護は、Windows 10に組み込Microsoft 365 Business Premium。  
+Microsoft Defender ウイルス対策、ユーザー、デバイスを、ウイルス、マルウェア、スパイウェアなどのソフトウェアの脅威から保護します。 堅牢で継続的な保護は、Windows 10 Microsoft 365 Business Premiumおよび Microsoft &nbsp; 365 E3 に組み込まれています &nbsp; 。  
   
 [脅威の管理] ページにアクセスするにはMicrosoft 365 Lighthouse左側のナビゲーション ウィンドウで [脅威の管理] を選択して、脅威に対する顧客テナントのセキュリティ体制を表示します。 テナント、ユーザー、およびデバイスが表示され、リスクを軽減するのに役立つ注意と推奨事項が必要になります。  
   
@@ -59,7 +59,7 @@ Microsoft Defender ウイルス対策、ユーザー、デバイスを、ウイ�
 
 | 脅威の状態 | 定義 |
 |--|--|
-| Active | デバイスで脅威がアクティブです。 |
+| 有効 | デバイスで脅威がアクティブです。 |
 | 状態なし | 脅威の状態は使用できません。 デバイスでフル スキャンを実行して、脅威Microsoft Defender ウイルス対策再検出します。 |
 | アクションが失敗しました | デバイスが危険にさらされていない。 アクションは失敗しましたが、潜在的な脅威は停止され、デバイスでアクティブではありません。 デバイスでフル スキャンを実行します。 |
 | 手動で必要な手順 | 脅威は停止されましたが、完全スキャンやデバイスの再起動など、手動で手順を完了する必要があります。 |

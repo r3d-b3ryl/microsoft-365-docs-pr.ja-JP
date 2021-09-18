@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 2a28112c8afe9165453153d2d23752325ae2e6d8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5bb575efa9c7e18f20025d7840d3ddc86aefb330
+ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215153"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59444285"
 ---
 # <a name="work-with-reports"></a>レポートを操作する
 
@@ -29,7 +29,7 @@ Microsoft マネージド デスクトップ、組織の IT 管理者がデバ�
 - [[**デバイスの状態]** レポート](device-status-report.md)(*プレビュー*) には、デバイスのアクティビティと使用状況に基Microsoft マネージド デスクトップサービスの使用が表示されます。 
 - デバイスの状態 **の傾向***(プレビュー*) を使用して、デバイスの過去 60 日間のデバイスの状態の傾向をMicrosoft マネージド デスクトップできます。 傾向は、デバイスの状態を、新しい展開など、時間の間に他の変更と関連付けるのに役立ちます。 
 - [ **[Windowsセキュリティ更新プログラム]** レポート](security-updates-report.md)*(プレビュー*) には、Windowsデバイス間でセキュリティ更新プログラムがMicrosoft マネージド デスクトップされます。
-
+- [**アプリケーションの使用状況] レポートには**、デバイス間での一般的なアプリの使用状況Microsoft マネージド デスクトップ表示されます。 デバイスがデータをこのレポートに提供するには、オプションの診断データ レベルに設定する必要があります。
 
 ## <a name="endpoint-analytics"></a>エンドポイント分析
 Microsoft マネージド デスクトップエンドポイント分析と[統合されました](/mem/analytics/overview)。 これらのレポートは、組織の動作状況とユーザーに提供されるエクスペリエンスの品質を測定するための分析情報を提供します。 エンドポイント分析は、エンドポイントの **[レポート**] メニュー [Microsoft エンドポイント マネージャー。](https://endpoint.microsoft.com/) スコアをピボットして、任意のレポートに移動Microsoft マネージド デスクトップ管理されているデバイスのみを含めるには、[フィルター]ドロップダウンを選択し、[デバイス] **Microsoft マネージド デスクトップします**。

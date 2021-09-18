@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: f3ccb47c2facffed0a259b4807f8155b4c87cb70
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9332483dffa9fc67bf319cc57aef89d25c866843
+ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215543"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59443997"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>準備評価ツールで見つかった問題を修正する
 
@@ -38,7 +38,7 @@ Intune の設定には、管理センターのMicrosoft エンドポイント �
 
 ### <a name="autopilot-deployment-profile"></a>自動パイロット展開プロファイル
 
-割り当てられたグループまたは動的グループをターゲットとする既存の Autopilot プロファイルを、Microsoft マネージド デスクトップする必要があります。 Microsoft マネージド デスクトップを使用して新しいデバイスをプロビジョニングします。
+割り当てられたグループまたは動的グループをターゲットとする既存の Autopilot プロファイルを、Microsoft マネージド デスクトップする必要があります。 Microsoft マネージド デスクトップを使用して新しいデバイスをプロビジョニングします。 既存の Autopilot 展開プロファイルがある場合は、Autopilot が成功するために管理デスクトップ準備テストを行う場合は、[すべての対象デバイスを自動パイロットに変換する] 設定を "No" に設定する必要があります。
 
 **使用不可能**
 

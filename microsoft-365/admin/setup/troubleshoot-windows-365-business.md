@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 description: 365 Business Cloud PC のセットアップWindowsトラブルシューティングする方法について説明します。
 ms.date: 08/13/2021
-ms.openlocfilehash: 701d1ce3ae97836d6687050e16a176aad85e2995
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: cae971187e188e6213242481b9cfaeb7dc21c7f2
+ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192101"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59444129"
 ---
 # <a name="troubleshoot-windows-365-business-cloud-pc-setup-issues"></a>365 Windows PC セットアップの問題のトラブルシューティング
 
@@ -37,7 +37,7 @@ ms.locfileid: "59192101"
 > [!IMPORTANT]
 > この記事で説明されているほとんどのタスクを実行するには、グローバル管理者である必要があります。 他の管理者ロールを特定の手順に使用できる場合は、プロシージャの前に表示されます。 Azure portal の一部にログインまたはアクセスする権限を持ってない場合は、IT 管理者に問い合わせください。Azure ルールの詳細については [、「Azure AD組み込みロール」を参照してください](/azure/active-directory/roles/permissions-reference)。 Azure portal の詳細については、「Azure portal の [概要」を参照してください](/azure/azure-portal/azure-portal-overview)。
 
-## <a name="step-1-verify-azure-ad-device-settings"></a>手順 1。 Azure のデバイスADを確認する
+## <a name="step-1-verify-azure-ad-device-settings"></a>手順 1. Azure のデバイスADを確認する
 
 [すべて **] に設定されている場合は、ユーザーがデバイス** を Azure AD参加 **できます。**
 
@@ -46,6 +46,14 @@ ms.locfileid: "59192101"
 3. 左側のナビゲーションの [管理] で **、[デバイス**] を選択 **し**、[デバイス設定] **を選択します**。
 4. ユーザー **が Azure デバイスにデバイス** を参加ADに設定されていない場合は、[すべて]を選択し、[保存] を **選択します**。
 5. 手順[2 に進みます。365 BPRT Windowsシステム アカウントがアクティブな状態を確認します](#step-2-verify-that-the-windows-365-bprt-permanent-user-system-account-is-active)。
+
+セットアップしようとしている **クラウド** PC を指定したユーザーに割り当て可能にするために、ユーザーごとのデバイスの最大数が十分に多いことを確認します。
+
+1. でポータルにサインインMicrosoft Azureします https://portal.azure.com/ 。
+2. [ビュー **の管理Azure Active Directory]** で、[表示]**を選択します**。
+3. 左側のナビゲーションの [管理] で **、[デバイス**] を選択 **し**、[デバイス設定] **を選択します**。
+4. [ **ユーザーごとのデバイスの最大数] に** 値を入力します。
+5. 変更を加えた場合は、[保存] を **選択します**。
 
 ## <a name="step-2-verify-that-the-windows-365-bprt-permanent-user-system-account-is-active"></a>手順 2。 365 BPRT Windowsシステム アカウントがアクティブな状態を確認する
 
@@ -57,7 +65,7 @@ Azure Windows 365 BPRT 常設ユーザー システム アカウントがアク�
 2. 左側のナビゲーションの [管理] で **、[ユーザー**] を **選択します**。
 3. 検索ボックスに **「365 BPRT Windowsユーザー**」と入力し、Enter キーを **押します**。
 4. 365 BPRT Windowsシステム アカウントが存在する場合は、手順[3 に進みます。デバイス ベースの MFA がオフになっていることを確認します](#step-3-verify-that-device-based-mfa-is-turned-off)。
-5. Windows 365 BPRT 常設ユーザー システム アカウントが見つからない場合、または変更が行われた場合は、Windows 365 Business ライセンスが割り当てられているアカウントで windows365.microsoft.com にログインします。 新しいWindows 365 BPRT 常設ユーザーは 12 時間以内に生成されます。 トークンが再生成された後、手順 [6 に直接移動します。クラウド PC をリセットします](#step-6-reset-your-cloud-pcs)。
+5. Windows 365 BPRT 常設ユーザー システム アカウントが見つからない場合、または変更が行われた場合 (パスワードのリセット、プロパティの変更、ライセンスの割り当てまたは割り当て解除など)、Windows 365 Business ライセンスが 12 時間後に割り当てられているアカウントで windows365.microsoft.com にログインしてください。 新しいWindows 365 BPRT 常設ユーザーが生成されます。 トークンが再生成された後、手順 [6 に直接移動します。クラウド PC をリセットします](#step-6-reset-your-cloud-pcs)。
 
 ## <a name="step-3-verify-that-device-based-mfa-is-turned-off"></a>手順 3. デバイス ベースの MFA がオフになっていることを確認する
 

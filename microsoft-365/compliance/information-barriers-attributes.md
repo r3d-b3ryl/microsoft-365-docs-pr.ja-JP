@@ -1,5 +1,5 @@
 ---
-title: 情報バリア ポリシーの属性
+title: 情報バリア属性
 description: この記事は、情報バリア Azure Active Directory定義するために使用できるユーザー アカウント属性のリファレンスです。
 ms.author: robmazz
 author: robmazz
@@ -13,14 +13,14 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ee410bf455e770087da7999ad2019c17419a8e00
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e4309b7973b3f74ba43d178b6761449c91856d06
+ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175840"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59443949"
 ---
-# <a name="attributes-for-information-barrier-policies"></a>情報バリア ポリシーの属性
+# <a name="information-barriers-attributes"></a>情報バリア属性
 
 ユーザーをセグメント化Azure Active Directory特定の属性を使用できます。 セグメントを定義すると、これらのセグメントを情報バリア ポリシーのフィルターとして使用できます。 たとえば、部門を使用して組織内の部署別にユーザーのセグメントを定義できます (2 つの部門で同時に 1 人の従業員が働かされていないと仮定します)。
 
@@ -53,7 +53,7 @@ ms.locfileid: "59175840"
     > [!TIP]
     > セグメントを定義する場合は、すべてのセグメントに同じ属性を使用します。 たとえば、Department を使用して一部のセグメントを定義する場合は *、Department* を使用してすべてのセグメントを *定義します*。 MemberOf を使用して、Department および *他のセグメントを使用* して一部のセグメント *を定義しない*。 セグメントが重ならないようにします。各ユーザーは、1 つのセグメントに割り当てる必要があります。
 
-## <a name="reference"></a>Reference
+## <a name="reference"></a>参照
 
 次の表に、情報バリアで使用できる属性を示します。
 
@@ -97,5 +97,5 @@ ms.locfileid: "59175840"
 ## <a name="resources"></a>リソース
 
 - [情報バリアのポリシーを定義Microsoft Teams](information-barriers-policies.md)
-- [情報バリアのトラブルシューティング](information-barriers-troubleshooting.md)
+- [情報バリアのトラブルシューティング](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting)
 - [情報障壁](information-barriers.md)

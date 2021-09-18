@@ -13,12 +13,12 @@ ms.technology: mdep1
 localization_priority: Normal
 ms.reviewer: inbadian
 f1.keywords: NOCSH
-ms.openlocfilehash: 1870c442676db58d8e0a48cea66bf50ed7dd051f
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 7927ba193d6b488911d3d658ac48f4980d90969c
+ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59356496"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59444105"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1-preview"></a>Microsoft Defender for Endpoint Plan 1 のセットアップと構成 (プレビュー)
 
@@ -51,7 +51,7 @@ Defender for Endpoint Plan 1 (プレビュー) の一般的なセットアップ
 
 次の表に、Defender for Endpoint Plan 1 (プレビュー) の基本的な要件を示します。<br/><br/>
 
-| 要件 | [説明] |
+| 要件 | 説明 |
 |:---|:---|
 | ライセンスの要件 | Defender for Endpoint プラン 1 <br/><br/>*プレビュー プログラムにMicrosoft 365 E3、プレビュー プログラムに参加できます。* |
 | ブラウザー要件 | Microsoft Edge <br/> Internet Explorerバージョン 11 <br/> Google Chrome |
@@ -72,9 +72,9 @@ Defender for Endpoint Plan 1 (プレビュー) の一般的なセットアップ
 
 展開オプションの詳細については、「Defender for Endpoint の展開 [を計画する」を参照してください](deployment-strategy.md)。 次のポスターをダウンロードします。 
 
-[:::image type="content" source="../../media/defender-endpoint/mde-deployment-strategy.png" alt-text="展開戦略ポスターのサムネイル":::](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)
+[:::image type="content" source="../../media/defender-endpoint/mde-deployment-strategy.png" alt-text="展開戦略ポスターのサムネイル":::](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)
 
-**[展開ポスターを取得する](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)**
+**[展開ポスターを取得する](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)**
 
 > [!TIP]
 > 展開の計画の詳細については [、「Plan your Microsoft Defender for Endpoint deployment」を参照してください](deployment-strategy.md)。
@@ -149,7 +149,7 @@ Microsoft では、タスクを実行するために必要なレベルのアク�
 
 攻撃表面の縮小とは、組織が攻撃を受け入可能な場所と方法を減らすことです。 Defender for Endpoint Plan 1 (プレビュー) には、エンドポイント全体の攻撃表面を減らすのに役立ついくつかの機能が含まれています。 これらの機能を次の表に示します。 <br/><br/>
 
-| 機能/機能 | [説明] |
+| 機能/機能 | 説明 |
 |:---|:---|
 | [攻撃面の減少ルール](#attack-surface-reduction-rules) | 攻撃表面の縮小ルールを構成して、ソフトウェア ベースのリスクの高い動作を制限し、組織を安全に保ちます。 攻撃表面の縮小ルールは、次のような特定のソフトウェア動作を対象とします。<br/>- ファイルのダウンロードまたは実行を試みる実行可能ファイルとスクリプトの起動 <br/>- 難読化されたスクリプトまたはその他の疑わしいスクリプトを実行する <br/>- 通常の毎日の作業中にアプリが通常開始しない動作を実行する <br/><br/>このようなソフトウェアの動作は、正当なアプリケーションで見られる場合があります。 ただし、これらの動作は、マルウェアを介して攻撃者によって悪用されるのが一般的なので、リスクが高いと見なされる場合が多い。  |
 | [ランサムウェアの軽減](#ransomware-mitigation) | フォルダー アクセスの制御を構成してランサムウェアの軽減を設定し、組織の貴重なデータを悪意のあるアプリやランサムウェアなどの脅威から保護します。 | 

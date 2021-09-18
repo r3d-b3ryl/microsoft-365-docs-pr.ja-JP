@@ -12,16 +12,16 @@ ms.collection:
 localization_priority: None
 f1.keywords:
 - NOCSH
-ms.openlocfilehash: 668ca8e26371d80f068c2723357ce3ee407db03a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: dff13dd6c4011ec73a1976bce0af69b607e391b0
+ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59210994"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59444057"
 ---
 # <a name="manage-information-barrier-policies"></a>情報バリア ポリシーの管理
 
-情報バリア[ポリシーを定義](information-barriers-policies.md)した後、トラブルシューティングの一環として、または定期的なメンテナンスとして、それらのポリシーまたはユーザー セグメントに変更[](information-barriers-troubleshooting.md)を加える必要がある場合があります。 この記事をガイドとして使用します。
+情報バリア[ポリシーを定義](information-barriers-policies.md)した後、トラブルシューティングの一環として、または定期的なメンテナンスとして、それらのポリシーまたはユーザー セグメントに変更[](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting)を加える必要がある場合があります。
 
 ## <a name="what-do-you-want-to-do"></a>目的に合ったトピックをクリックしてください
 
@@ -34,7 +34,7 @@ ms.locfileid: "59210994"
 | [ポリシーを削除する](#remove-a-policy) | 特定のポリシーが不要になった場合は、情報バリア ポリシーを削除します。 |
 | [ポリシー アプリケーションを停止する](#stop-a-policy-application) | 情報バリア ポリシーの適用プロセスを停止する場合は、このアクションを実行します。<br/> ポリシー アプリケーションを停止しても、ユーザーに既に適用されているポリシーは元に戻されません。 |
 | [情報バリアに対するポリシーを定義する](information-barriers-policies.md) | このようなポリシーが設定されていない場合に情報バリア ポリシーを定義し、特定のユーザー グループ間の通信を制限または制限する必要があります。 |
-| [情報バリアのトラブルシューティング](information-barriers-troubleshooting.md) | 情報バリアで予期しない問題が発生した場合は、この記事を参照してください。 |
+| [情報バリアのトラブルシューティング](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting) | 情報バリアで予期しない問題が発生した場合は、この記事を参照してください。 |
 
 > [!IMPORTANT]
 > この記事で説明するタスクを実行するには、次のいずれかの適切な役割を割り当てる必要があります。<br/>- Microsoft 365 Enterpriseグローバル管理者<br/>- グローバル管理者<br/>- コンプライアンス管理者<br/>- IB コンプライアンス管理 (これは新しい役割です!<br><br>情報バリアの前提条件の詳細については、「前提条件 (情報バリア ポリシーの場合 [)」を参照してください](information-barriers-policies.md#prerequisites)。<br><br> コンプライアンス センター [PowerShell のセキュリティ &接続してください](/powershell/exchange/connect-to-scc-powershell)。
@@ -170,4 +170,4 @@ ms.locfileid: "59210994"
 - [オンラインでの情報バリアの詳細SharePointする](/sharepoint/information-barriers)
 - [詳細については、「情報バリア」を参照OneDrive](/onedrive/information-barriers)
 - [情報障壁ポリシーの属性](information-barriers-attributes.md)
-- [情報障壁のトラブルシューティング](information-barriers-troubleshooting.md)
+- [情報障壁のトラブルシューティング](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting)

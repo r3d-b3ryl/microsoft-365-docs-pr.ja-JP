@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 538f01d1b91ebe5b980fed63f0d7c13e9b9f5a8f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e0605e6be5bc3bc5e12c2a50e00f07ab68c19d8d
+ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192751"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59444033"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>米国政府のお客様向けの Microsoft Defender for Endpoint
 
@@ -189,7 +189,7 @@ API ドキュメントに記載されているパブリック URI の代わり�
 |統合: Azure Sentinel|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg) アラート <p> ![はい](images/svg/check-yes.svg) インシデント&生データ: プライベート プレビューで|![はい](images/svg/check-yes.svg) アラート <p> ![はい](images/svg/check-yes.svg) インシデント&生データ: プライベート プレビューで|
 |統合: Microsoft Cloud App Security|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|
 |統合: Microsoft Defender for Identity|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|
-|統合: Microsoft Endpoint DLP|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![いいえ](images/svg/check-no.svg) ロール アウト|
+|統合: Microsoft Endpoint DLP|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|
 |統合: Microsoft Power Automate & Azure Logic Apps|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg) Azure Logic Apps <p> ![いいえ](images/svg/check-no.svg) Power Automate: 開発中|
 |Microsoft 脅威エキスパート|![いいえ](images/svg/check-no.svg) エンジニアリング バックログについて|![いいえ](images/svg/check-no.svg) エンジニアリング バックログについて|![いいえ](images/svg/check-no.svg) エンジニアリング バックログについて|
 |
