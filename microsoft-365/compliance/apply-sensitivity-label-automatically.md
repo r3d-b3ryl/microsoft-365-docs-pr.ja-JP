@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを作成する場合、ファイルまたはメールにラベルを自動的に割り当てるか、あるいは推奨するラベルを選択するようにユーザーに求めることができます。
-ms.openlocfilehash: f3556096b77e775e783cd8d949e1ed5dc2c25024
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f8691f8e8357f7f810468007f9802c19e70dac49
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178144"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401472"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>秘密度ラベルをコンテンツに自動的に適用する
 
@@ -265,7 +265,7 @@ Azure Information Protection 統合ラベル付けクライアントに関して
 
     ![自動ラベル付けの新しいポリシー構成。](../media/auto-labeling-wizard.png)
 
-4. [**このラベルを適用する情報を選択する**] ページの場合: [**財務**] または [**プライバシー**] などのテンプレートのいずれかを選択します。 ドロップダウンの **表示オプション** を使用して、検索を絞り込むことができます。 または、テンプレートが要件を満たしていない場合は、[**カスタム ポリシー**] を選択します。 [**次へ**] を選択します。
+4. [**このラベルを適用する情報を選択する**] ページの場合: [**財務**] または [**プライバシー**] などのテンプレートのいずれかを選択します。 ドロップダウンの **表示オプション** を使用して、検索を絞り込むことができます。 または、テンプレートが要件を満たしていない場合は、[**カスタム ポリシー**] を選択します。 **[次へ]** を選択します。
 
 5. [**自動ラベル ポリシーに名前を付ける**] ページの場合: 一意の名前を入力し、必要に応じて説明を入力して、自動的に適用されるラベル、場所、ラベル付けするコンテンツを識別する条件を識別します。
 
@@ -273,18 +273,7 @@ Azure Information Protection 統合ラベル付けクライアントに関して
 
     ![自動ラベル付け構成の [場所の選択] ページ。](../media/locations-auto-labeling-wizard.png)
     
-    個々の OneDrive アカウントを指定するには、ユーザーの OneDrive アカウントの URL は次の形式になります。 ユーザー プリンシパル名 (UPN) の場合、ピリオド、コンマ、スペース、アット 記号 ("@") などの特殊文字はアンダースコア ("_") に変換されます: `https://<tenant name>-my.sharepoint.com/personal/<user principal name>`
-    
-    たとえば、Contoso テナントで UPN "rsimone@contoso.onmicrosoft.com" を持つユーザーは以下となります: `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`。
-    
-    または、カスタム ドメイン名を使用していて、UPN が "rsimone@contoso.com" である場合: `https://contoso-my.sharepoint.com/personal/rsimone_contoso_com`
-    
-    ただし、競合が検出された場合は URL に数字または GUID を追加できるため、常に OneDrive アカウントのユーザーの URL を確認することをお勧めします。 URL を確認するには、Microsoft 365 管理センターまたは PowerShell を使用します。 詳細については、「[組織の全てのユーザーの OneDrive URL の一覧を取得する](/onedrive/list-onedrive-urls)」をご覧ください。
-    
-    > [!NOTE]
-    > 個々の OneDrive アカウントを指定する場合、OneDrive アカウントが[事前にプロビジョ二ング](/onedrive/pre-provision-accounts)されていない限り、ユーザーが初めて OneDrive にアクセスするまで URL は作成されないことに注意してください。
-    > 
-    > また、ユーザーのUPNが変更されると、OneDrive の URL が[自動的に変更](/onedrive/upn-changes)されます。  たとえば、結婚などの名前が変わるイベント。 または、組織の名前変更やビジネス再構築をサポートするためのドメイン名の変更。 UPN が変更された場合は、ここで指定した OneDrive URL を更新する必要があります。
+    個々の OneDrive アカウントを指定するには、「[組織内のすべてのユーザーの OneDrive の URL 一覧を取得する](/onedrive/list-onedrive-urls)」を参照してください。
 
 7. [**一般または詳細ルールの設定**] ページの場合: 既定の [**一般的なルール**] のままにして、選択したすべての場所でラベル付けするコンテンツを識別するルールを定義します。 場所ごとに異なるルールが必要な場合は、[**詳細ルール**] を選択します。 [**次へ**] を選択します。
 

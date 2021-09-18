@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 9d6b786076a218a5257bbd12669f62064ae51f2a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a707de259897080f8e726aed70618ea6505bdea6
+ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189150"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59444117"
 ---
 # <a name="use-power-automate-in-microsoft-365-defender"></a>[Power AutomateでMicrosoft 365 Defender
 
@@ -64,6 +64,6 @@ ms.locfileid: "59189150"
 
 ## <a name="related-information"></a>関連情報
 
-- [アプリケーションPower Automate統合Microsoft Cloud App Security](https://aka.ms/flow-integration)
+- [アプリケーションPower Automate統合Microsoft Cloud App Security](/cloud-app-security/flow-integration)
 
-- [Microsoft Power Automateドキュメント](https://aka.ms/power-automate-docs)
+- [Microsoft Power Automateドキュメント](/power-automate)

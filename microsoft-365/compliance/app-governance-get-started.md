@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アプリを管理するためのアプリ ガバナンス機能の使用を開始します。
-ms.openlocfilehash: 35a04beb04f22558ca150294ebb566a8284d5270
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d733d62927e78b99ad5289206caf51df3459522c
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59190031"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401094"
 ---
 # <a name="get-started-with-app-governance-in-preview"></a>アプリ ガバナンスの使用を開始する (プレビュー版)
 
@@ -34,19 +34,18 @@ Microsoft Cloud App Security に対してアプリ ガバナンス アドオン�
 
 ## <a name="step-2-sign-up-for-free-trial-of-app-governance"></a>手順 2: アプリ ガバナンスの無料試用版にサインアップする
 
-Microsoft 365 の新しいお客様の場合:
-
-1. このページの上部にある  **[無料アカウント]**  ボタンを選択します。
-1.  **[Microsoft 365 for business を試す]** で、**[1 か月の無料試用版を試す]** を選択します。
-1. サインアップの手順を完了します。
-1. 既存の Microsoft 365 のお客様向けの手順に進みます。
-
 既存の Microsoft 365 のお客様の場合:
 
 1. [無料試用版のサインアップ ページ](https://admin.microsoft.com/Commerce/Trial.aspx?OfferId=20be85b6-b196-402c-82b4-36b4e72862dc)に移動します。 
 1. アプリ ガバナンスを追加する手順を完了します。 次の図に示すように、サインアップは簡単です。
 
-:::image type="content" source="../media/manage-app-protection-governance/app-governance-signup2.gif" alt-text="アカウントにアプリ ガバナンスを追加する簡単な手順。":::
+:::image type="content" source="../media/manage-app-protection-governance/sign-up-page.png" alt-text="アカウントにアプリ ガバナンスを追加する簡単な手順。":::
+
+まだ Microsoft 365 顧客でない場合は、無料試用版にサインアップできます。
+
+1. このページの上部にある  **[無料アカウント]**  ボタンを選択します。
+1.  **[Microsoft 365 for business を試す]** で、**[1 か月の無料試用版を試す]** を選択します。
+1. サインアップの手順を完了します。
 
 ## <a name="step-3-add-integration-with-mcas"></a>手順 3: MCAS との統合を追加する
 
@@ -116,9 +115,6 @@ Cloud App Security を使用してアプリ ガバナンスの同期を有効に
 - セキュリティ管理者
 - セキュリティ オペレーター
 - セキュリティ リーダー (読み取り専用)
-
-> [!NOTE]
-> グローバル管理者のみが、アプリ ガバナンスの無料試用版を有効化できます。
 
 こちらが各役割の機能です。
 

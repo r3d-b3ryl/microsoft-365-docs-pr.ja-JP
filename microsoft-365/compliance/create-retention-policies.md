@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.custom: admindeeplinkMAC
 description: アイテム保持ポリシーを使用して、ユーザーがメール、ドキュメント、および会話で生成するコンテンツを効率的に制御します。 必要なものを保持し、不要なものを取り除きます。
-ms.openlocfilehash: 6a58092bb81f45f40f2b0bcdd76312fc1d420e4d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a6d78ea9b96bb4967ef41471cd039a4c245b4aa1
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213953"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400152"
 ---
 # <a name="create-and-configure-retention-policies"></a>アイテム保持ポリシーを作成して構成する
 
@@ -210,13 +210,7 @@ Exchange の保持設定を構成するときに含めるメールボックス�
 
 SharePoint サイトまたは OneDrive アカウントの場所を指定する場合、サイトにアクセスするためのアクセス許可は必要ありません。また、**[場所の編集]** ページで URL を指定するときに、検証は行われません。 ただし、指定した SharePoint サイトは、構成の最後に存在していることが確認されます。 この確認が失敗した場合は、入力した URL の検証が失敗したことを示すメッセージが表示され、検証が成功するまで、構成プロセスはアイテム保持ポリシーを作成しません。 このメッセージが表示されたら、構成に戻って URL を変更するか、アイテム保持ポリシーからサイトを削除します。
 
-個々の OneDrive アカウントを含めるか除外するかを指定するには、ユーザーの OneDrive 向けの URL は通常次の形式です。 ユーザー プリンシパル名 (UPN) の場合、ピリオド、コンマ、スペース、アット マーク ("@") などの特殊文字はアンダースコア ("_") に変換されます: `https://<tenant name>-my.sharepoint.com/personal/<user principal name>`
-
-たとえば、Contoso テナントで UPN "rsimone@contoso.onmicrosoft.com" を持つユーザーは以下となります: `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
-
-または、カスタム ドメイン名を使用していて、UPN が "rsimone@contoso.com" である場合: `https://contoso-my.sharepoint.com/personal/rsimone_contoso_com`
-
-ただし、競合が検出された場合は URL に数字または GUID を追加できるため、常に OneDrive アカウントのユーザーの URL を確認することをお勧めします。 URL を確認するには、Microsoft 365 管理センターまたは PowerShell を使用します。 詳細については、「[組織の全てのユーザーの OneDrive URL の一覧を取得する](/onedrive/list-onedrive-urls)」をご覧ください。
+含めるまたは除外する個々の OneDrive アカウントを指定するには、「[組織内のすべてのユーザーの OneDrive の URL 一覧を取得する](/onedrive/list-onedrive-urls)」を参照してください。
 
 > [!NOTE]
 > 含めるあるいは除外する個々の OneDrive アカウントを指定する場合、OneDrive アカウントが[事前にプロビジョ二ング](/onedrive/pre-provision-accounts)されていない限り、ユーザーが初めて OneDrive にアクセスするまで URL は作成されないことに注意してください。
