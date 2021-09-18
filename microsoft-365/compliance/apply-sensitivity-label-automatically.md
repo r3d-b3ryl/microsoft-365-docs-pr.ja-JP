@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを作成する場合、ファイルまたはメールにラベルを自動的に割り当てるか、あるいは推奨するラベルを選択するようにユーザーに求めることができます。
-ms.openlocfilehash: f8691f8e8357f7f810468007f9802c19e70dac49
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 0f4d702581192ab35d3d515fa668043e9a1c1399
+ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401472"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59444021"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>秘密度ラベルをコンテンツに自動的に適用する
 
@@ -52,34 +52,34 @@ Microsoft 365 でコンテンツに秘密度ラベルを自動的に適用する
     構成手順については、このページの「[Office アプリの自動ラベル付けを構成する方法](#how-to-configure-auto-labeling-for-office-apps)」を参照してください。
 
 - **コンテンツが既に保存されている (SharePoint または OneDrive で) またはメールで送信された (Exchange Online によって処理される) サービス側のラベル付け**: 自動ラベル付けポリシーを使用します。
+    
+    この方法は、保存データ (SharePoint および OneDrive のドキュメント) や転送中のデータ (Exchange によって送信または受信されたメール) の自動ラベル付けと呼ばれることもあります。Exchangeの場合、保存中の電子メール (メールボックス) は含まれません。
+    
+    このラベル付けはアプリケーションではなくサービスによって適用されるため、ユーザーが使用しているアプリやバージョンを気にする必要はありません。 その結果、この機能は、組織全体ですぐに使用できるようになります。また、規模に応じたラベル付けに適しています。 自動ラベル付けポリシーでは、ユーザーがラベル付けプロセスを操作しないので、推奨されるラベル付けをサポートしていません。 代わりに、管理者は、実際にラベルを適用する前に、コンテンツの正しいラベル付けを行うために、シミュレーション モードでポリシーを実行します。
 
-  この方法は、保存データ (SharePoint および OneDrive のドキュメント) や転送中のデータ (Exchange によって送信または受信されたメール) の自動ラベル付けと呼ばれることもあります。Exchangeの場合、保存中の電子メール (メールボックス) は含まれません。
+    構成手順については、このページの「[SharePoint、OneDrive、Exchange の自動ラベル付けポリシーを構成する方法](#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)」を参照してください。
+    
+    SharePoint と OneDrive の自動ラベル付けに固有:
+    
+    - Word (.docx)、PowerPoint (.pptx)、Excel (.xlsx) の Office ファイルがサポートされています。
+        - これらのファイルは、自動ラベル付けポリシーが作成される前または後に、保存時に自動ラベル付けできます。 開いているセッションの一部である (ファイルが開いている) 場合、ファイルに自動ラベル付けはできません。
+        - 現在、リスト アイテムへの添付はサポートされておらず、自動ラベル付けされません。
+    - テナント内で 1 日あたり最大 25,000 個の自動的にラベル付けされたファイル。
+    - テナントあたり最大 100 個の自動ラベル付けポリシーが作成されます。個別に指定した場合、各ポリシーは、最大 100 サイト (SharePoint サイトまたは OneDrive サイト) を対象としています。 すべてのサイトを指定することもできます。この構成は最大 100 サイトから除外されます。
+    - シミュレーション モードの場合、およびラベルが適用される場合、自動ラベル付けポリシーの結果として、変更、変更者、変更日の既存の値は変更されません。
+    - ラベルが暗号化を適用する場合、[Rights Management 発行者と Rights Management 所有者](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) は、ファイルを最後に変更したアカウントです。
 
-  このラベル付けはアプリケーションではなくサービスによって適用されるため、ユーザーが使用しているアプリやバージョンを気にする必要はありません。 その結果、この機能は、組織全体ですぐに使用できるようになります。また、規模に応じたラベル付けに適しています。 自動ラベル付けポリシーでは、ユーザーがラベル付けプロセスを操作しないので、推奨されるラベル付けをサポートしていません。 代わりに、管理者は、実際にラベルを適用する前に、コンテンツの正しいラベル付けを行うために、シミュレーション モードでポリシーを実行します。
-
-  構成手順については、このページの「[SharePoint、OneDrive、Exchange の自動ラベル付けポリシーを構成する方法](#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)」を参照してください。
-
-  SharePoint と OneDrive の自動ラベル付けに固有:
-
-  - Word、PowerPoint、Excel 用の Office ファイルがサポートされています。、Open XML 形式 (.docx や .xlsx など) はサポートされていますが、Microsoft Office 97-2003 形式 (.doc や .xls など) はサポートされていません。
-    - これらのファイルは、自動ラベル付けポリシーが作成される前または後に、保存時に自動ラベル付けできます。 開いているセッションの一部である (ファイルが開いている) 場合、ファイルに自動ラベル付けはできません。
-    - 現在、リスト アイテムへの添付はサポートされておらず、自動ラベル付けされません。
-  - テナント内で 1 日あたり最大 25,000 個の自動的にラベル付けされたファイル。
-  - テナントあたり最大 100 個の自動ラベル付けポリシーが作成されます。個別に指定した場合、各ポリシーは、最大 100 サイト (SharePoint サイトまたは OneDrive サイト) を対象としています。 すべてのサイトを指定することもできます。この構成は最大 100 サイトから除外されます。
-  - シミュレーション モードの場合、およびラベルが適用される場合、自動ラベル付けポリシーの結果として、変更、変更者、変更日の既存の値は変更されません。
-  - ラベルが暗号化を適用する場合、[Rights Management 発行者と Rights Management 所有者](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) は、ファイルを最後に変更したアカウントです。
-
-  Exchange の自動ラベル付けに固有:
-
-  - 手動でのラベル付けや Office アプリを使用した自動ラベル付けとは異なり、PDF の添付ファイルと Office の添付ファイル (Word、Excel、PowerPoint ファイル) も自動ラベル付けポリシーで指定した条件に合わせてスキャンされます。一致するものがある場合、メールにはラベルが付けられますが、添付ファイルにはラベルが付けられません。
-    - PDF ファイルの場合、ラベルに暗号化が適用されていると、テナントで [PDF 添付ファイルが有効になっている](ome-faq.yml#are-pdf-file-attachments-supported-)ときにこれらのファイルが暗号化されます。
-    - Office ファイルの場合、Open XML 形式 (.docx や .xlsx など) はサポートされていますが、Microsoft Office 97-2003 形式 (.doc や .xls など) はサポートされていません。ラベルに暗号化が適用されている場合、これらのファイルは暗号化されます。
-  - IRM 暗号化を適用する Exchange メール フロー ルールまたはデータ損失防止 (DLP) ポリシーがある場合: これらのルールやポリシーおよび自動ラベル付けポリシーによってコンテンツが識別されると、ラベルが適用されます。 このラベルが暗号化を適用すると、Exchange メール フロー ルールまたは DLP ポリシーの IRM 設定は無視されます。 ただし、そのラベルが暗号化を適用しない場合、メール フロー ルールまたは DLP ポリシーの IRM 設定がラベルに加えて適用されます。
-  - ラベルが表示されない IRM 暗号化を使用しているメールは、自動ラベル付けを使用すると一致する場合は、暗号化設定のあるラベルに置き換えられます。
-  - 自動ラベル付け条件と一致すると、受信メールに以下のようにラベルが付けられます。
+    Exchange の自動ラベル付けに固有:
+    
+    - 手動でのラベル付けや Office アプリを使用した自動ラベル付けとは異なり、PDF の添付ファイルと Office の添付ファイルも自動ラベル付けポリシーで指定した条件に合わせてスキャンされます。一致するものがある場合、メールにはラベルが付けられますが、添付ファイルにはラベルが付けられません。
+        - PDF ファイルの場合、ラベルが暗号化を適用する場合、テナントで[ PDF 添付ファイルが有効になっている場合](ome-faq.yml#are-pdf-file-attachments-supported-)、これらのファイルは[Office 365 Message Encryption (OME)](ome.md)を使用して暗号化されます。
+        - Word、PowerPoint、Excel の Office ファイルがサポートされています。 ラベルが暗号化を適用する場合、[Office 365 Message Encryption (OME)](ome.md)を使用して、暗号化されます。
+    - IRM 暗号化を適用する Exchange メール フロー ルールまたはデータ損失防止 (DLP) ポリシーがある場合: これらのルールやポリシーおよび自動ラベル付けポリシーによってコンテンツが識別されると、ラベルが適用されます。 このラベルが暗号化を適用すると、Exchange メール フロー ルールまたは DLP ポリシーの IRM 設定は無視されます。 ただし、そのラベルが暗号化を適用しない場合、メール フロー ルールまたは DLP ポリシーの IRM 設定がラベルに加えて適用されます。
+    - ラベルが表示されない IRM 暗号化を使用しているメールは、自動ラベル付けを使用すると一致する場合は、暗号化設定のあるラベルに置き換えられます。
+    - 自動ラベル付け条件と一致すると、受信メールに以下のようにラベルが付けられます。
     - ラベルが[暗号化](encryption-sensitivity-labels.md)用に構成されている場合、その暗号化は適用されません。
     - ラベルが[動的マーキング](sensitivity-labels-office-apps.md#dynamic-markings-with-variables)を適用するように構成されている場合、これにより組織外の人の名前が表示される可能性があることに注意してください。
-  - ラベルが暗号化を適用する場合、[Rights Management 発行者と Rights Management 所有者](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) は、メールを送信するユーザーです。 現在、自動的に暗号化されるすべての受信メール メッセージに Rights Manager 所有者を設定する方法はありません。
+    - ラベルが暗号化を適用する場合、[Rights Management 発行者と Rights Management 所有者](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) は、メールを送信するユーザーです。 現在、自動的に暗号化されるすべての受信メール メッセージに Rights Manager 所有者を設定する方法はありません。
 
 ## <a name="compare-auto-labeling-for-office-apps-with-auto-labeling-policies"></a>Office アプリの自動ラベル付けと自動ラベル付けポリシーを比較する
 
