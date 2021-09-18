@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを使用して、SharePoint サイト、Microsoft Teams サイト、Microsoft 365 グループのコンテンツを保護します。
-ms.openlocfilehash: 5480a5b8336c03323c26785e884da811a5d00d97
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fb1f0dad7aba15b33fce51b855a9b037478db627
+ms.sourcegitcommit: db571169242063f104450fec4c4b19aeec688b15
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216473"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59447338"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>秘密度ラベルを使用して、Microsoft Teams、Microsoft 365 グループ、SharePoint サイトのコンテンツを保護する
 
@@ -355,7 +355,7 @@ SharePoint Online 管理シェルのバージョン16.0.19418.12000 以降があ
 
 ## <a name="classic-azure-ad-group-classification"></a>従来の Azure AD グループの分類
 
-コンテナーの秘密度ラベルを有効にすると、Microsoft 365 は新しい Microsoft 365 のグループおよび SharePoint サイト向けに古い分類をサポートしなくなります。 ただし、秘密度ラベルをサポートしている既存のグループおよびサイトには、秘密度ラベルを使用するように変換しない限り、古い分類値が引き続き表示されます。
+コンテナーの秘密度ラベルを有効にすると、Azure AD からのグループ分類は Microsoft 365 でサポートされなくなり、秘密度ラベルをサポートするサイトには表示されなくなります。 ただし、古い分類を秘密度ラベルに変換することはできます。
 
 SharePoint の古いグループ分類を使用した場合の例として、「[SharePoint の "モダン" サイトの分類」](/sharepoint/dev/solution-guidance/modern-experience-site-classification)を参照してください。
 
