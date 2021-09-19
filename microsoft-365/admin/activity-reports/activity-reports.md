@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 組織内のユーザーがどのように Microsoft 365 サービスを使用しているかの定期的レポートを取得して、各チャートをドリルダウンして詳しい分析情報を得ます。
-ms.openlocfilehash: c340e8b1bb8e126445b802e6b03c91d595e32a43
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 863ef1c40781e2bff3e9b2de6217e1dad114f46a
+ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59355962"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59443791"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>管理センターの Microsoft 365 レポート
 
@@ -178,7 +178,7 @@ ms.locfileid: "59355962"
 
 2. [**レポート**] を選択します。 
   
-3. ステートメントのチェックを外します **すべてのレポートで、ユーザー、グループ、およびサイトの識別されていない名前を表示し**、変更を保存します。  
+3. **[すべてのレポートで非表示のユーザー、グループ、およびサイト名を表示する]** ステートメントのチェックを外し、変更を保存します。  
   
 レポート ダッシュボードのレポートで変更が有効になるまで数分かかります。 この設定は、[Microsoft Graph](/graph/api/resources/report?view=graph-rest-1.0) と [Power BI](/microsoft-365/admin/usage-analytics/usage-analytics?view=o365-worldwide) の Microsoft 365 使用状況レポート、および [Microsoft Teams 管理センターの使用状況レポート](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference)にも適用されます。 特定可能なユーザー情報の表示は、Microsoft 365 コンプライアンス センター監査ログに記録されるイベントです。   
 

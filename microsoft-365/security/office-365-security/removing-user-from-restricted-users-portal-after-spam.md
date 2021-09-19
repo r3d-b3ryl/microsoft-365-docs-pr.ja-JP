@@ -20,12 +20,12 @@ description: Microsoft 365 Defender ポータルの制限されたユーザー �
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 774f47c65f98a2e93ee6e50406afe897a315de12
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f9c54f5ac443192f094f1c1edb14273c9f226f9f
+ms.sourcegitcommit: db571169242063f104450fec4c4b19aeec688b15
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179184"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59447362"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-microsoft-365"></a>Microsoft 365 の制限されたユーザー ポータルから、ブロックされたユーザーを削除する
 
@@ -66,7 +66,7 @@ Microsoft 365 Defender ポータルの **制限されたユーザー** ページ
 
 ## <a name="use-the-microsoft-365-defender-portal-to-remove-a-user-from-the-restricted-users-list"></a>Microsoft 365 Defender ポータルを使用して、制限されたユーザーの一覧からユーザーを削除する
 
-1. Microsoft 365 Defender ポータルで、**[メールと共同作業]**  >  **[レビュー]**  >  **[制限されたユーザー]** に移動します。
+1. Microsoft 365 Defender ポータルで、**[メールと共同作業]** \> **[レビュー]** \> **[制限されたユーザー]** に移動します。
 
 2. **[制限されたユーザー]** ページで、ブロックを解除したいユーザーをクリックして検索し、選択します。
 

@@ -76,14 +76,12 @@
           href: information-barriers-solution-overview.md
         - name: 情報バリアについての詳細情報
           href: information-barriers.md
-        - name: 情報バリア ポリシーの定義
+        - name: 情報バリアの使用を開始する
           href: information-barriers-policies.md
-        - name: 情報バリア ポリシーの属性
-          href: information-barriers-attributes.md
-        - name: 情報バリアのトラブルシューティング
-          href: information-barriers-troubleshooting.md
-        - name: 情報バリア ポリシーの編集
+        - name: 情報バリアを管理する
           href: information-barriers-edit-segments-policies.md
+        - name: 情報バリアの属性
+          href: information-barriers-attributes.md
     - name: 特権アクセス管理
       items:
         - name: 概要

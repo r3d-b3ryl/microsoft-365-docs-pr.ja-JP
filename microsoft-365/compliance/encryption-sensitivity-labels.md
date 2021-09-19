@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: アクセスと使用を制限してデータを保護する暗号化のための秘密度ラベルを構成します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1ff68caef8989ec6159b60bba8be03fe7246fdbc
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 64957adeb242d14b2f4c986d3cffc282379c93f3
+ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400680"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59444141"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する
 
@@ -401,14 +401,14 @@ Word、PowerPoint、および Excel では、ドキュメントにアクセス�
 
 - 暗号化されたドキュメントを組織外のユーザーと共有する場合は、ゲスト アカウントを作成し、条件付きアクセス ポリシーを変更する必要がある場合があります。 詳細については、「[外部ユーザーと暗号化されたドキュメントを共有する](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content)」を参照してください。
 
-- 承認されたユーザーが Office アプリで暗号化されたドキュメントを開くと、アプリの上部にある黄色のメッセージ バーにラベル名と説明が表示されます。 このメッセージ バーは、ドキュメントが制限されていることをユーザーに通知し、**[アクセス許可]** ボタンを使用すると、そのドキュメントに対して付与されているアクセス許可を表示できます。 暗号化アクセス許可が組織外のユーザーに拡張されている場合は、ドキュメントを開いたときにこのメッセージ バーに表示されるラベル名と説明を慎重に確認します。
+- 承認されたユーザーが Office アプリで暗号化されたドキュメントを開くと、アプリの上部にある黄色のメッセージ バーにラベル名と説明が表示されます。 暗号化アクセス許可が組織外のユーザーに拡張されている場合は、ドキュメントを開いたときにこのメッセージ バーに表示されるラベル名と説明を慎重に確認します。
 
 - 暗号化されたファイルを複数のユーザーが同時に編集するには、全員が Office for the web を使用する必要があります。  または、Windows と Mac の場合は、[秘密度ラベルのある暗号化されたファイルの共同編集を有効に](sensitivity-labels-coauthoring.md)して、ユーザーは Word、Excel、PowerPoint の[必要な最小バージョン](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint)を持っていることが必要です。 この状況が当てはまらず、ファイルが既に開かれている場合、次のことが起こります。
 
   - Office アプリ (Windows、Mac、Android、iOS)で、[**使用中のファイル**] メッセージがファイルをチェック アウトしているユーザーの名前とともにユーザーに表示されます。 その場合、ユーザーは読み取り専用コピーの閲覧またはそのコピーの保存と編集を行うことが可能で、他のユーザーによるファイルの使用が終了したときに通知を受け取ることができます。
   - Web 用 Office では、他のユーザーと同時にドキュメントを編集することはできないというメッセージがユーザーに表示されます。 その場合は、[**閲覧表示で開く**] を選択できます。
 
-- Office アプリ (Windows、Mac、Android、iOS) の[自動保存](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5)機能は、暗号化されたファイルに対しては無効になっています。 自動保存を有効にする前に削除する必要があるアクセスの制限がファイルに適用されているというメッセージがユーザーに表示されます。
+- iOS および Android 用の Office アプリの[自動保存](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5)機能は、暗号化されたファイルに対して無効になっています。 [機密ラベルで暗号化されたファイルの共同編集を有効](sensitivity-labels-coauthoring.md)にしていない場合、この機能は Windows および Mac の暗号化ファイルでも無効になります。 自動保存を有効にする前に削除する必要があるアクセスの制限がファイルに適用されているというメッセージがユーザーに表示されます。
 
 - 暗号化されたファイルは、Office アプリ (Windows、Mac、Android、iOS) で開くのに時間がかかる場合があります。
 
