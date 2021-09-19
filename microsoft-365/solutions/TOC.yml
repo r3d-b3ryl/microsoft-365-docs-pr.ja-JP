@@ -17,7 +17,7 @@
       items:
         - name: 概要
           href: empower-people-to-work-remotely.md
-        - name: 手順 1. サインイン セキュリティを強化する
+        - name: '手順 1: サインイン セキュリティを強化する'
           href: empower-people-to-work-remotely-secure-sign-in.md
         - name: '手順 2: リモート アクセスを提供する'
           href: empower-people-to-work-remotely-remote-access.md
@@ -71,12 +71,20 @@
                   href: create-secure-guest-sharing-environment.md
             - name: 外部共有リファレンス
               href: microsoft-365-guest-settings.md
-    - name: Microsoft 365 での脅威の保護
+    - name: Microsoft 365 テナントにランサムウェア保護を展開する
       items:
         - name: 概要
-          href: deploy-threat-protection.md
-        - name: 展開に対する脅威からの保護手順
-          href: deploy-threat-protection-configure.md
+          href: ransomware-protection-microsoft-365.md
+        - name: 手順 1. セキュリティ 基準を構成する
+          href: ransomware-protection-microsoft-365-security-baselines.md
+        - name: 手順 2. 攻撃検出および対応を展開する
+          href: ransomware-protection-microsoft-365-attack-detection-response.md
+        - name: 手順 3. ID を保護する
+          href: ransomware-protection-microsoft-365-identities.md
+        - name: 手順 4. デバイスを保護する
+          href: ransomware-protection-microsoft-365-devices.md
+        - name: 手順 5. 情報を保護する
+          href: ransomware-protection-microsoft-365-information.md
     - name: データプライバシー規制のための情報の展開保護
       items:
         - name: 概要
