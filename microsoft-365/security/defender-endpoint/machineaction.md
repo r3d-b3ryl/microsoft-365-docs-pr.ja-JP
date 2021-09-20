@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c5ac9de03cec817f469fe096689e4badf615bb4c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 33df420b8b480b6957e2ec71b3bb5494f61fce63
+ms.sourcegitcommit: 7be84e7940c63b4c958b9da875d323bead9aae95
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165023"
+ms.lasthandoff: 09/20/2021
+ms.locfileid: "59453618"
 ---
 # <a name="machineaction-resource-type"></a>MachineAction リソースの種類
 
@@ -40,7 +40,7 @@ ms.locfileid: "59165023"
 
 - 詳細については、「応答アクション [」を参照してください](respond-machine-alerts.md)。
 
-|メソッド|戻り値の型|説明|
+|メソッド|戻り値の型|Description|
 |---|---|---|
 |[MachineActions の一覧表示](get-machineactions-collection.md)|[マシン アクション](machineaction.md)|[ [マシン アクション] エンティティを](machineaction.md) 一覧表示します。|
 |[MachineAction の取得](get-machineaction-object.md)|[マシン アクション](machineaction.md)|単一の [Machine Action エンティティを取得](machineaction.md) します。|
@@ -61,21 +61,21 @@ ms.locfileid: "59165023"
 
 ## <a name="properties"></a>プロパティ
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |---|---|---|
 |ID|Guid|Machine [Action エンティティの](machineaction.md) ID。|
 |type|列挙|アクションの種類。 指定できる値は、「RunAntiVirusScan」、"Offboard"、"Live Response"、"CollectInvestigationPackage"、"Isolate"、"Unisolate"、"StopAndQuarantineFile"、"RestrictCodeExecution"、"UnrestrictCodeExecution"です。|
 |scope|string|アクションのスコープ。 "Full" または "Selective" for Isolation, "Quick" or "Full" for Anti-Virus scan.|
 |requestor|String|アクションを実行したユーザーの ID。|
 |externalID|String|カスタム相関関係の要求で顧客が送信できる ID。|
-|requestSource|文字列|アクションを送信したユーザー/アプリケーションの名前。|
+|requestSource|string|アクションを送信したユーザー/アプリケーションの名前。|
 | コマンド|配列|実行するコマンド。 使用できる値は PutFile、RunScript、GetFile です。|
 |cancellationRequestor|String|アクションをキャンセルしたユーザーの ID。|
 |requestorComment|String|アクションを発行するときに書き込まれたコメント。|
 |cancellationComment|String|アクションをキャンセルするときに書き込まれたコメント。|
 |status|列挙|コマンドの現在の状態。 指定できる値は、"Pending"、"InProgress"、"Succeeded"、"Failed"、"TimeOut"、"キャンセル" です。|
 |machineId|String|アクションが [実行](machine.md) されたコンピューターの ID。|
-|machineId|String|アクションが [実行](machine.md) されたコンピューターの名前。|
+|computerDnsName|String|アクションが [実行](machine.md) されたコンピューターの名前。|
 |creationDateTimeUtc|DateTimeOffset|アクションが作成された日時。|
 |cancellationDateTimeUtc|DateTimeOffset|アクションが取り消された日時。|
 |lastUpdateDateTimeUtc|DateTimeOffset|アクションの状態が更新された最後の日付と時刻。|

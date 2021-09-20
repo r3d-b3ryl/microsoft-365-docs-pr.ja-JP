@@ -18,12 +18,12 @@ ms.collection:
 description: 管理者は、Microsoft Defender for microsoft Defender の セーフ リンク ポリシーとグローバル セーフ リンクの設定を表示、作成、変更、および削除する方法をOffice 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c1abe4f436f92cf64a94774df70a893a3dd2b9df
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5ab6620348d35d6ec5100c7e98c9043d68173377
+ms.sourcegitcommit: 7be84e7940c63b4c958b9da875d323bead9aae95
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177344"
+ms.lasthandoff: 09/20/2021
+ms.locfileid: "59453606"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender セーフのリンク ポリシーを設定Office 365
 
@@ -46,7 +46,7 @@ ms.locfileid: "59177344"
 >
 > 管理者は、リンクに関するさまざまな構成設定を検討セーフ必要があります。 使用可能なオプションの 1 つは、ユーザー識別可能な情報を [リンク] セーフします。 この機能により *、セキュリティ Ops チームは* 、潜在的なユーザー侵害を調査し、是正措置を取り、コストのかかる侵害を制限できます。
 
-セーフ リンク ポリシーは、Microsoft 365 Defender ポータルまたは PowerShell (Exchange Online のメールボックスを持つ適格な Microsoft 365 組織の場合は Exchange Online PowerShell、Exchange Online メールボックスのない組織ではスタンドアロンの EOP PowerShell、Office 365 アドオン サブスクリプションの場合は Microsoft Defender を使用) で構成できます。
+Microsoft 365 Defender ポータルまたは PowerShell で セーフ リンク ポリシーを構成できます (Exchange Online 内のメールボックスを持つ適格な Microsoft 365 組織の場合は Exchange Online PowerShell、組織はスタンドアロンの EOP PowerShell を使用せずにExchange Onlineが、Microsoft Defender を使用して、Office 365サブスクリプションを作成します)。
 
 リンク ポリシーの基本的なセーフは次のとおりです。
 
@@ -75,7 +75,7 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
 
   > [!NOTE]
   >
-  > - Microsoft 365 管理センター の対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 Defender ポータルで必要なアクセス許可と、Microsoft 365の他の機能に対するアクセス許可が付与されます。 詳細については、[「管理者の役割について」](../../admin/add-users/about-admin-roles.md) を参照してください。
+  > - Microsoft 365 管理センター の対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 Defender ポータルで必要なアクセス許可と、Microsoft 365の他の機能に対するアクセス許可が付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
   . - ビュー **専用の組織の管理** 役割グループ [](/Exchange/permissions-exo/permissions-exo#role-groups)は、Exchange Online機能への読み取り専用アクセスも提供します。
 
 - リンク ポリシーの推奨設定についてはセーフリンク ポリシー[のセーフを参照してください](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)。
@@ -119,7 +119,7 @@ Microsoft 365 Defender ポータルでカスタム セーフ リンク ポリシ
      - **ファイルを指す** 疑わしいリンクやリンクのリアルタイム URL スキャンを適用する: 電子メール メッセージ内のリンクのリアルタイム スキャンを有効にするには、このオプションを選択します。 この設定を次の設定で有効にした場合は、次の設定を使用できます。
        - **メッセージを配信する前** に URL のスキャンが完了するのを待つ: このオプションを選択すると、メッセージを配信する前にリアルタイム URL スキャンが完了するのを待ちます。
      - **[セーフ組織内** で送信された電子メール メッセージへのリンクを適用する: 内部送信者と内部受信者の間のメッセージに セーフ リンク ポリシーを適用するには、このオプションを選択します。
-   - **[リンク内の不明な** URL または潜在的に悪意のある URLのアクションをMicrosoft Teams: [オン] を選択して、セーフ リンクの保護を有効Teams。
+   - **[リンク内の不明な** URL または潜在的に悪意のある URLのアクションをMicrosoft Teams: [オン] を選択して、セーフ リンクの保護を有効Teams。 この設定を有効にするには、最大 24 時間かかる場合があります。
    - **ユーザーのクリックを追跡しない**: この設定を選択しないままにして、電子メール メッセージ内の URL を追跡するユーザーのクリックを有効にします。
    - **ユーザーに元の URL** へのクリックを許可しない : このオプションを選択すると、警告ページでユーザーが元の URL をクリックしてクリックを [ブロックできます](safe-links.md#warning-pages-from-safe-links)。
    - **次の URL を書き換えない**: 指定された URL にアクセスし、それ以外の場合はリンクによってブロックセーフします。

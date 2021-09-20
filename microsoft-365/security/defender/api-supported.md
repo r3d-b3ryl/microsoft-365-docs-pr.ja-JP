@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: acd8ec28fb1d78e3724cb0ca0ebee48133e7310f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 77c20811e6aeba266908b4d83c4f81da8b5716d4
+ms.sourcegitcommit: 7be84e7940c63b4c958b9da875d323bead9aae95
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189330"
+ms.lasthandoff: 09/20/2021
+ms.locfileid: "59453582"
 ---
 # <a name="supported-microsoft-365-defender-apis"></a>サポートされている Microsoft 365 Defender API 
 
@@ -43,7 +43,7 @@ ms.locfileid: "59189330"
 -|-
 [高度な追求 API](api-advanced-hunting.md) | 高度な検索クエリを実行します。
 [インシデント API](api-incident.md) | 他の実用的なタスクと共に、インシデントを一覧表示および更新します。
-[ストリーミング API](streaming-api.md) (プレビュー) | 1 つのデータ ストリームで発生するリアルタイム イベントとアラートを出荷します。
+[ストリーミング API](streaming-api.md) | 1 つのデータ ストリームで発生するリアルタイム イベントとアラートを出荷します。
 
 ### <a name="endpoint-uris"></a>エンドポイント URI
 
