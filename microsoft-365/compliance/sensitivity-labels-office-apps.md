@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: デスクトップ、モバイル、および Web 用の Office アプリで秘密度ラベルを管理するための IT 管理者向けの情報。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 398504524e8a2b7f0229d0f514fa7108cc06ac48
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 9a1d888ceee527960cb8b894b1bc6bcde5c73d9b
+ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59399624"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460042"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office アプリで秘密度ラベルを管理する
 
@@ -67,7 +67,7 @@ Windows コンピューターでのみ実行される Azure Information Protecti
 |[ラベル変更の正当な理由を要求する](sensitivity-labels.md#what-label-policies-can-do)                     | 1910 以上          | 16.21 以上     | 2.21 以上 | 16.0.11231 以上 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[カスタム ヘルプ ページへのリンクを提供する](sensitivity-labels.md#what-label-policies-can-do)                       | 1910 以上          | 16.21 以上     | 2.21 以上 | 16.0.11231 以上 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[コンテンツをマークする](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910 以上          | 16.21 以上     | 2.21 以上 | 16.0.11231 以上 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[変数を使用した動的マーキング](#dynamic-markings-with-variables)                                              | 2010 以上           | 16.42 以上     | 2.42 以上 | 16.0.13328 以上 | ロールアウト: [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[変数を使用した動的マーキング](#dynamic-markings-with-variables)                                              | 2010 以上           | 16.42 以上     | 2.42 以上 | 16.0.13328 以上 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[アクセス許可を今すぐ割り当てる](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910 以上          | 16.21 以上     | 2.21 以上 | 16.0.11231 以上 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[ユーザーに権限の割り当てをさせる: <br /> - ユーザーに求める](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004 以上 | 16.35 以上   | レビュー中   | レビュー中         | レビュー中                                                        |
 |[ラベル関連のユーザー アクティビティを監査する](data-classification-activity-explorer.md)                      | 2011 以上 | 16.43 以上 | 2.46 以上 | 16.0.13628 以上 | はい <sup>\*\*</sup>                                                        |
