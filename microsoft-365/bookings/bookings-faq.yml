@@ -9,12 +9,12 @@ metadata:
   ms.service: bookings
   localization_priority: Normal
   description: Microsoft Bookings のよく寄せられる質問。
-  ms.openlocfilehash: ae2f6afcd350edba17d73801aec838f3980c46b4
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.openlocfilehash: 31ec8f86a73eb61eb6fc1adcd3ad765a8d79d38c
+  ms.sourcegitcommit: 5eecb0ccc70bf75779411d80147ed5588132b103
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59212873"
+  ms.lasthandoff: 09/21/2021
+  ms.locfileid: "59461598"
 title: Microsoft Bookings に関するよく寄せられる質問
 summary: ''
 sections:
@@ -31,7 +31,7 @@ sections:
   - question: >
       Who Microsoft Bookings にアクセスできますか?
     answer: >
-      予約は、世界中の Microsoft 365 Business Premium、Microsoft 365 Business Standard、A3、A5、E3、E5 のユーザーに対して、既定で利用可能でアクティブになっています。 予約は、21Vianet がOffice 365で利用できます。
+      予約は、世界中の Microsoft 365 Business Premium、Microsoft 365 Business Standard、F1、F3、A3、A5、E3、E5 のユーザーに対して既定で利用可能でアクティブになっています。 予約は、21Vianet がOffice 365で利用できます。
   - question: >
       ユーザーに個人用カレンダーまたはビジネス カレンダーが表示されますか?
     answer: >
@@ -43,7 +43,7 @@ sections:
   - question: >
       エンド ユーザーが Bookings アプリにアクセスする方法
     answer: >
-      Microsoft 365 Business Premium、Microsoft 365 Business Standard、A3、A5、E3、E5 のライセンスを取得しているユーザー、または管理者または閲覧者の役割でスタッフ メンバーとして追加されたユーザーは、Microsoft 365 Web エクスペリエンス内のアプリ選択ツールで Bookings にアクセスできます。 iOS と Android で利用できるコンパニオン アプリもあります。
+      Microsoft 365 Business Premium、Microsoft 365 Business Standard、A3、A5、E3、E5、F1、F3 のライセンスを取得しているユーザー、または管理者またはビューアーの役割でスタッフ メンバーとして追加されたユーザーは、Microsoft 365 Web エクスペリエンス内のアプリ選択ツールで Bookings にアクセスできます。 iOS と Android で利用できるコンパニオン アプリもあります。
   - question: >
       自分の Web サイトで Bookings を使用できますか?
     answer: >
