@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d7bb79ca6e04d283ee9ec9d7e01113364ebd6588
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: ab7007143fd472757f8f6489cb14babc8cda1129
+ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400608"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460198"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>Microsoft Defender for Endpoint の展開をセットアップする
 
@@ -173,31 +173,10 @@ v20 を含む URL は、バージョン 1803 以降のデバイスWindows 10場�
 
 ****
 
-|ドメインリストのスプレッドシート|説明|
+|ドメインリストのスプレッドシート|Description|
 |---|---|
 |![Microsoft Defender for Endpoint URL スプレッドシートのサム イメージ。](images/mdatp-urls.png)|サービスの場所、地理的な場所、および OS の特定の DNS レコードのスプレッドシート。 <p> [ここにスプレッドシートをダウンロードします。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
 |
-
-### <a name="microsoft-defender-for-endpoint-service-backend-ip-ranges"></a>Microsoft Defender for Endpoint Service バックエンド IP 範囲
-
-ネットワーク デバイスが DNS ベースのルールをサポートしない場合は、代わりに IP 範囲を使用します。
-
-Defender for Endpoint は Azure クラウドに構築され、次の地域に展開されます。
-
-- AzureCloud.eastus
-- AzureCloud.eastus2
-- AzureCloud.westcentralus
-- AzureCloud.northeurope
-- AzureCloud.westeurope
-- AzureCloud.uksouth
-- AzureCloud.ukwest
-
-Azure IP 範囲とサービス タグ - パブリック クラウドで Azure IP 範囲 [を確認できます](https://www.microsoft.com/download/details.aspx?id=56519)。
-
-> [!NOTE]
-> クラウドベースのソリューションとして、IP アドレス範囲が変更される可能性があります。 DNS ベースのルールに移動する必要があります。
->
-> 米国政府機関のお客様は、「Defender for Endpoint for US Government」ページの対応 [するセクションを参照](gov.md#service-backend-ip-ranges) してください。
 
 ## <a name="next-step"></a>次の手順
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9a77662d1473a56031a30e44a1d39df8e3964541
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6d2e0fc1ffeccfd189b95fbd5908a959e4a823a8
+ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218384"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460170"
 ---
 # <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>iOS 上の Microsoft Defender for Endpoint で問題のトラブルシューティングを行い、FAQ に対する回答を見つける
 
@@ -46,7 +46,7 @@ ms.locfileid: "59218384"
 
 既定では、Defender for Endpoint on iOS には Web 保護機能が含まれています。 [Web 保護は](web-protection-overview.md) 、Web の脅威からデバイスを保護し、ユーザーをフィッシング攻撃から保護するのに役立ちます。 iOS のエンドポイントの Defender は、この保護を提供するために VPN を使用します。 これはローカル VPN であり、従来の VPN とは異なり、ネットワーク トラフィックはデバイスの外部に送信されません。
 
-既定で有効になっている場合は、VPN を無効にする必要がある場合があります。 たとえば、VPN が構成されているときに動作しないアプリを実行する場合です。 このような場合は、次の手順に従って、デバイス上のアプリから VPN を無効にできます。
+既定で有効になっている場合は、VPN を無効にする必要がある場合があります。 たとえば、VPN が構成されているときに動作しないアプリを実行する場合です。 このような場合は、Defender for Endpoint アプリから直接 VPN を無効にするか、次の手順を使用して無効にできます。
 
 1. iOS デバイスで、アプリを開き **設定[全般**] をクリック **またはタップ** し **、[VPN] をタップします**。
 1. Microsoft Defender for Endpoint の "i" ボタンをクリックまたはタップします。
@@ -56,7 +56,7 @@ ms.locfileid: "59218384"
     > ![VPN 構成はオンデマンドで接続します。](images/ios-vpn-config.png)
 
 > [!NOTE]
-> VPN が無効になっている場合、Web 保護は使用できません。 Web Protection を再び有効にするには、デバイスで Microsoft Defender for Endpoint アプリを開き、[VPN の開始] をクリックまたは **タップします**。
+> VPN が無効になっている場合、Web 保護は使用できません。 Web 保護を再び有効にするには、デバイスで Microsoft Defender for Endpoint アプリを開き、[Web 保護を有効にする] をクリックします。
 
 ## <a name="co-existence-with-multiple-vpn-profiles"></a>複数の VPN プロファイルとの共存在
 
@@ -82,7 +82,7 @@ Microsoft Defender for Endpoint では、ローカル/ループバック VPN を
 
 ## <a name="report-unsafe-site"></a>安全でないサイトを報告する
 
-フィッシング Web サイトは、お客様の個人情報または財務情報を取得する目的で信頼できる Web サイトになりすます。 [ネットワーク [保護に関するフィードバックを提供する](https://www.microsoft.com/wdsi/filesubmission/exploitguard/networkprotection) ] ページにアクセスして、フィッシング サイトになる可能性のある Web サイトを報告します。
+フィッシング Web サイトは、お客様の個人情報または財務情報を取得する目的で信頼できる Web サイトになりすます。 [ネットワーク [保護に関するフィードバックを提供する](https://www.microsoft.com/wdsi/support/report-unsafe-site) ] ページにアクセスして、フィッシング サイトになる可能性のある Web サイトを報告します。
 
 ## <a name="malicious-site-detected"></a>悪意のあるサイトが検出されました
 
@@ -103,4 +103,8 @@ Microsoft Defender for Endpoint は、フィッシングなどの Web ベース�
 ## <a name="data-and-privacy"></a>データとプライバシー
 
 収集されたデータとプライバシーの詳細については、「プライバシー情報 [- Microsoft Defender for Endpoint on iOS」を参照してください](ios-privacy.md)。
+
+## <a name="issues-during-app-updates-from-the-app-store"></a>アプリ ストアからのアプリの更新中の問題
+
+アプリがアプリ ストア (自動更新または手動更新) を介して更新される際に問題が発生した場合は、デバイスの再起動が必要になる場合があります。 それでも問題が解決しない場合は、Defender VPN を無効にしてアプリの更新を実行できます。 アプリ内フィードバックを提供して、この問題を報告することもできます。
 

@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e50e9b0dfa9119cd3c3f6fe8b45158ca9f8c5cc3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b9f2933f6e259a8e39069a0bb90eafc6c1c9a30e
+ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59210983"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460054"
 ---
 # <a name="insider-risk-management-users-dashboard"></a>Insider リスク管理 ユーザー ダッシュボード
 
@@ -68,6 +68,8 @@ Users **ダッシュボードには、** インサイダー リスク管理ワ�
 - **アクティブなアラート**: すべてのポリシーのアクティブなアラートの数。
 - **確認済み違反**: ユーザーのポリシー違反として解決された *ケース* の数。
 - **Case**: ユーザーの現在アクティブなケース。
+
+特定のユーザーをすばやく見つけるには、 **ユーザー** ダッシュボードの上部にある [検索] を使用します。 ユーザーを検索する場合は、ユーザー プリンシパル名 (UPN) を使用する必要があります。 たとえば、組織内に 'thidayah' の UPN を持つ 'Tiara Hidayah' という名前のユーザーを検索する場合、検索で 'thidayah' またはUPN の一部を入力します。
 
 ![Insider リスク管理ユーザー ダッシュボード。](../media/insider-risk-users-dashboard.png)
 

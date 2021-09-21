@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 813dff46f3ba26c32f3b704645a9ca35ca740001
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 258adabaa29420ca0b713e290926048a2ed1752d
+ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59353600"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460018"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>macOS または Linux でクライアント アナライザーを実行する
 
@@ -52,16 +52,26 @@ ms.locfileid: "59353600"
 
 ## <a name="running-the-analyzer-using-a-terminal-or-ssh-scenario"></a>ターミナルまたは SSH シナリオを使用してアナライザーを実行する
 
-1. ターミナルまたは SSH を関連するコンピューターに開きます。
+ターミナルまたは SSH を関連するコンピューターに開き、次のコマンドを実行します。
 
-2. `wget --quiet -O XMDEClientAnalyzer.zip* <https://aka.ms/XMDEClientAnalyzer> *&& unzip -q XMDEClientAnalyzer.zip && cd XMDEClientAnalyzer && chmod +x mde_support_tool.sh"` を実行します。
+1. `wget --quiet -O XMDEClientAnalyzer.zip https://aka.ms/XMDEClientAnalyzer *`
 
-3. 結果 `./mde_support_tool.sh -d` アーカイブ ファイルを生成するために実行します。
+2. `unzip -q XMDEClientAnalyzer.zip`
+
+3. `cd XMDEClientAnalyzer`
+
+4. `chmod +x mde_support_tool.sh"`
+
+3. ルート以外の使用として実行して、必要なピップと lxml をインストールします。 `./mde_support_tool.sh`
+
+4. 実際の診断パッケージを収集し、結果アーカイブ ファイルを生成するには、ルートとして再度実行します。 `./mde_support_tool.sh -d`
 
 > [!NOTE]
-> Linux の場合、アナライザーは結果出力を生成するために 'lxml' を必要とします。 インストールされていない場合、アナライザーは以下の Python パッケージの公式リポジトリから取得します。 <https://files.pythonhosted.org/packages/\*/lxml\*.whl>
->
-> また、現在、ツールのインストールには Python バージョン 3 以降が必要です。
+> - Linux の場合、アナライザーは結果出力を生成するために 'lxml' を必要とします。 インストールされていない場合、アナライザーは以下の Python パッケージの公式リポジトリから取得します。 <https://files.pythonhosted.org/packages/\*/lxml\*.whl>
+> 
+> - また、現在、ツールのインストールには Python バージョン 3 以降が必要です。
+> 
+> - デバイスがプロキシの背後にある場合は、プロキシ サーバーを環境変数として mde_support_tool.sh スクリプトに渡す必要があります。 例: `https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
 
 例:
 
@@ -94,7 +104,7 @@ ms.locfileid: "59353600"
 
   説明: いずれかの macOS で *mdatp* 診断作成を実行するときに生成される診断出力 [と同じ](/windows/security/threat-protection/microsoft-defender-atp/mac-resources#collecting-diagnostic-information)
 
-  or
+  または
 
   [ Linux ](/windows/security/threat-protection/microsoft-defender-atp/linux-resources#collect-diagnostic-information)
 

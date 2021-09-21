@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 0a1b91c888e1ee91d03d5a2d315e4d4fc38b2d10
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 86344a570c04ed67c8811d91ca92a59dcec6102d
+ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175831"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460348"
 ---
 # <a name="insider-risk-management-cases"></a>Insider リスク管理ケース
 
@@ -84,14 +84,14 @@ ms.locfileid: "59175831"
 - **マネージャー名**: ユーザーのマネージャーの名前。
 - **マネージャーの電子** メール: ユーザーのマネージャーの電子メール エイリアス。
 
+![Insider リスク管理ケースの詳細。](../media/insider-risk-case-details.png)
+
 [ **ケースの概要]** タブには、ケース **に** 関連付けられたポリシー一致アラートに関する次の情報を含む [アラート] セクションも含まれています。
 
 - **ポリシーの一致**: ユーザー アクティビティの一致アラートに関連付けられたインサイダー リスク管理ポリシーの名前。
 - **状態**: アラートの状態。
 - **重大度**: アラートの重大度。
 - **検出された時間**: アラートが生成された後に経過した時間。
-
-![Insider リスク管理ケースの詳細。](../media/insider-risk-case-details.png)
 
 ### <a name="alerts"></a>アラート
 
@@ -147,7 +147,7 @@ ms.locfileid: "59175831"
 
 [ **アクティビティ エクスプローラー]** タブを使用すると、リスク アナリストと調査担当者は、リスクアラートに関連付けられたアクティビティの詳細を確認できます。 たとえば、ケース管理アクションの一環として、調査担当者とアナリストはケースに関連付けられているすべてのリスク アクティビティを確認して詳細を確認する必要があります。 アクティビティ エクスプローラー **を使用すると**、レビュー担当者は、検出された危険なアクティビティのタイムラインをすばやく確認し、アラートに関連付けられているすべてのリスク アクティビティを特定してフィルター処理できます。
 
-アクティビティ エクスプローラーの詳細については、「Insider リスク管理アラート [」の記事を参照](insider-risk-management-activities.md#activity-explorer-preview) してください。
+アクティビティ エクスプローラーの詳細については、「Insider リスク管理アラート [」の記事を参照](insider-risk-management-activities.md#activity-explorer) してください。
 
 ### <a name="content-explorer"></a>コンテンツ エクスプローラー
 

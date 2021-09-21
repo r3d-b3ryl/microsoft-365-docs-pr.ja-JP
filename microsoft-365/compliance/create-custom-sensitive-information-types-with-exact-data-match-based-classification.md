@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 完全なデータ一致に基づく分類で、カスタムの機密情報の種類を作成する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 663180b87a9886681a1643279e49641c3fbfed3c
-ms.sourcegitcommit: db571169242063f104450fec4c4b19aeec688b15
+ms.openlocfilehash: 4a8ebc2aedc624028cf0b5144d434185c20243b9
+ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59447386"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460466"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Exact Data Match に基づく分類で、カスタムの機密情報の種類を作成する
 
@@ -108,9 +108,6 @@ EDM ベースの分類の設定と構成には、次のものが含まれます�
 #### <a name="define-the-schema-for-your-database-of-sensitive-information"></a>機密情報のデータベースのスキーマを定義する
 
 ビジネス上または技術的な理由で、PowerShell またはコマンド ラインを使用してスキーマと EDM の機密情報の種類のパターン (ルール パッケージ) を作成しない場合は、 [Exact Data Match スキーマと機密情報の種類ウィザード](sit-edm-wizard.md)を使って作成できます。 スキーマおよび EDM の機密情報の種類パターンの作成が完了したら、EDM ベースの機密情報の種類を使用できるようにするために必要なすべての手順を完了します。
-
-> [!NOTE]
-> 完全一致スキーマと機密情報の種類ウィザードは、World Wide クラウドと GCC クラウドでのみ使用できます。
 
 1. 機密情報のデータベースのスキーマを XML 形式で定義します (次の例と同様)。 このスキーマ ファイルの名前を **edm.xml** にして、データベースの各列に対して構文を使用する行があるように構成します。
 

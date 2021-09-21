@@ -17,12 +17,12 @@ ms.collection:
 description: セキュリティ保護 (EOP) の既定の設定Exchange Online Protection詳細
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c737647202e82af0fc217c0eadb3e2573d13a9b1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 14ab9ee240c1219982663c1f3557c1cf5f244144
+ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219794"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460030"
 ---
 # <a name="secure-by-default-in-office-365"></a>既定ではセキュリティで保護Office 365
 
@@ -54,6 +54,7 @@ Microsoft は既定で顧客のセキュリティを維持したいと考えて�
 - 許可された送信者リストまたは許可されたドメイン リスト (スパム対策ポリシー)
 - Outlook セーフ送信者
 - IP 許可一覧 (接続フィルター)
+- Exchange フロー ルール (トランスポート ルールとも呼ばれる)
 
 これらの上書きに関する詳細については、「差出人セーフ リストの作成 [」を参照してください](create-safe-sender-lists-in-office-365.md)。
 
@@ -73,11 +74,6 @@ Microsoft は既定で顧客のセキュリティを維持したいと考えて�
 別の言い方をすると、セキュリティ サービスとして、ユーザーが侵害されるのを防ぐために、お客様の代理として行動しています。
 
 ## <a name="exceptions"></a>例外
-
-> [!NOTE]
-> 2021 年 8 月には、既定でセキュリティで保護されたメール フロー Exchange (トランスポート ルールとも呼ばれる) に拡張されます。 メール フロー ルールを使用して、サード パーティのフィッシング シミュレーションやセキュリティ操作メールボックスへのフィルター処理されていない配信を許可する場合、最終的には、これらのルールを排除し、[](configure-advanced-delivery.md)機能が利用可能なときに高度な配信ポリシーの使用に切り替える必要があります。
-
-信頼度の高いフィッシング メッセージがフィルター処理をバイパスできる唯一のオーバーライドは、メール フロー ルールです。 メール フロー ルールを使用してフィルター処理をバイパスするには、「メール フロー ルールを使用してメッセージに [SCL を設定する」を参照してください](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)。
 
 次のシナリオでは、オーバーライドの使用のみを検討する必要があります。
 

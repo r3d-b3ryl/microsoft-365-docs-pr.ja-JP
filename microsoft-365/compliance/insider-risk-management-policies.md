@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: f10099fcfe2c8b4701ed5aa0981a3bb84bf5c7c3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 88582efe5e285df2b5439c6d01b63ed4c5ef7855
+ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179951"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460126"
 ---
 # <a name="insider-risk-management-policies"></a>インサイダー リスクの管理。
 
@@ -183,7 +183,7 @@ Insider リスク分析では、インサイダー リスク ポリシーを構�
 - 不満を持つユーザーによるデータ漏洩
 
 > [!NOTE]
-> 累積流出検出では、インサイダー リスク管理のグローバル設定で有効になっている流出インジケーターと、ポリシーで選択されている流出インジケーターを使用します。 そのため、累積流出検出は、選択された必要な流出インジケーターに対してのみ評価されます。
+> 累積流出検出では、インサイダー リスク管理のグローバル設定で有効になっている流出インジケーターと、ポリシーで選択されている流出インジケーターを使用します。 そのため、累積流出検出は、選択された必要な流出インジケーターに対してのみ評価されます。 優先度の高いコンテンツで構成 [された感度ラベル](sensitivity-labels.md) の累積外用アクティビティは、より高いリスク スコアを生成します。
 
 データの盗難またはデータ漏洩のポリシーで累積流出検出を有効にすると、インサイダー リスク管理ケース内の **[ユーザー アクティビティ]** タブに累積流出アクティビティからの分析情報が表示されます。
 

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 7/2/2018
+ms.date: 9/20/2021
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -19,12 +19,12 @@ ms.collection:
 - SPO_Content
 description: オンラインおよびオンラインでのデータ セキュリティの暗号化の基本的なOneDrive for BusinessについてSharePointします。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ca93d04fa21487ad054cd9cb924dff1fc15abfbd
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 91bb261c25a1c4bf993deb0d12d1d1b8e9f5f874
+ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175991"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460482"
 ---
 # <a name="data-encryption-in-onedrive-for-business-and-sharepoint-online"></a>OneDrive for Business および SharePoint Online におけるデータ暗号化
 
@@ -52,7 +52,7 @@ Microsoft 365は、物理データ センター のセキュリティ、ネッ�
   
 BitLocker は、サービス全体OneDrive for BusinessオンラインSharePoint展開されます。 ファイルごとの暗号化は、OneDrive for Business および SharePoint Online Microsoft 365 マルチテナントテクノロジ上に構築された新しい専用環境にも含まれます。
   
-BitLocker 暗号化はディスク上のすべてのデータを暗号化し、ファイル単位暗号化の場合にはファイルごとに固有の暗号化キーを含めてさらに細かく暗号化を行えます。 つまり、各ファイルを更新するたびに独自の暗号化キーを使用して暗号化されます。 暗号化されたコンテンツのキーは、格納される前に、コンテンツとは物理的に別の場所に格納されます。 この暗号化の各ステップでは、256 ビット キーによる高度暗号化標準 (Advanced Encryption Standard: AES) が使用され、Federal Information Processing Standard (FIPS) 140-2 に準拠しています。 暗号化されたコンテンツは、データセンターにある多数のコンテナーに配布され、各コンテナーでは固有の資格情報が使用されます。 これらの資格情報はコンテンツまたはコンテンツ キーとは物理的に別の場所に格納されます。
+BitLocker 暗号化はディスク上のすべてのデータを暗号化し、ファイル単位暗号化の場合にはファイルごとに固有の暗号化キーを含めてさらに細かく暗号化を行えます。 つまり、各ファイルを更新するたびに独自の暗号化キーを使用して暗号化されます。 暗号化されたコンテンツのキーは、コンテンツとは物理的に別の場所に格納されます。 この暗号化の各ステップでは、256 ビット キーによる高度暗号化標準 (Advanced Encryption Standard: AES) が使用され、Federal Information Processing Standard (FIPS) 140-2 に準拠しています。 暗号化されたコンテンツは、データセンターにある多数のコンテナーに配布され、各コンテナーでは固有の資格情報が使用されます。 これらの資格情報はコンテンツまたはコンテンツ キーとは物理的に別の場所に格納されます。
   
 FIPS 140-2 コンプライアンスの詳細については [、「FIPS 140-2 コンプライアンス」を参照してください](/previous-versions/sql/sql-server-2008-r2/bb326611(v=sql.105))。
   

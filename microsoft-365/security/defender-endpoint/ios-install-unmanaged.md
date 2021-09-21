@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a5080526fe224d6a8e0a524a1973c6c47dc419bc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8ea5e2c5efef1becf69f0d5f7e46b57aa89ef94a
+ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212204"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460282"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-unenrolled-ios-devices"></a>登録されていない iOS デバイスに Microsoft Defender for Endpoint を展開する
 
@@ -41,10 +41,15 @@ ms.locfileid: "59212204"
 
 Microsoft Defender for Endpoint は、iOS/iPadOS のアプリ保護ポリシー (APP、 MAM とも呼ばれる) で使用される脅威信号を送信するように構成できます。 この機能を使用すると、Microsoft Defender for Endpoint を使用して、登録されていないデバイスから企業データへのアクセスを保護することもできます。
 
-Microsoft Defender for Endpoint でアプリ保護ポリシーをセットアップする手順は次のとおりです。
+### <a name="pre-requisites"></a>前提条件
+
+1. **コネクタが有効になっているか確認します**。 <br> 統合セキュリティ [コンソールで](https://security.microsoft.com)、[エンドポイントの高度な **機能** 設定に移動し、接続が有効Microsoft Intune  >    >  **確認** します。
+2. **Intune ポータルでコネクタが有効になっていると確認します**。 <br> [Microsoft Endpoint manager 管理センターで、[](https://go.microsoft.com/fwlink/?linkid=2109431)エンドポイント セキュリティ] [エンドポイント用 Microsoft Defender] に移動し、[接続] 状態  >  が有効になっているか確認します。
+
+Microsoft Defender for Endpoint を使用してアプリ保護ポリシーをセットアップするには、次の手順を使用します。
 
 1. Microsoft Defender for Endpoint への Microsoft エンドポイント マネージャーテナントからの接続を設定します。 [Microsoft Endpoint](https://go.microsoft.com/fwlink/?linkid=2109431)Manager 管理センターで、[テナント管理コネクタとトークン Microsoft Defender for Endpoint (クロス プラットフォーム) またはエンドポイント セキュリティ Microsoft Defender for Endpoint (セットアップ] の下) に移動し、[アプリ保護ポリシー 設定 for \>  \>   \>  **iOS]** のトグルをオンにします。
-1. **[保存]** を選択します。 [接続の状態 **] が [有効]** に設定されている必要 **があります**。
+1. [**保存**] を選択します。 [接続の状態 **] が [有効]** に設定されている必要 **があります**。
 1. アプリ保護ポリシーを作成する: Microsoft Defender for Endpoint Connector のセットアップが完了したら、[アプリアプリ保護ポリシー] ([ポリシー] の下) に移動して、新しいポリシーを作成するか、既存のポリシーを \> 更新します。
 1. 組織がポリシーに必要とするプラットフォーム、 **アプリ、データ** 保護、アクセス要件の設定を選択します。
 1. [ **条件付き起動** \> **デバイスの条件**] で、[最大許可デバイスの脅威レベル **] という設定が表示されます**。 これは、Low、Medium、High、または Secured のどちらかに構成する必要があります。 使用できるアクションは、[アクセスのブロック] **または [** データの **ワイプ] になります**。 この設定を有効にする前に、コネクタをセットアップする情報ダイアログが表示される場合があります。 コネクタが既にセットアップされている場合は、このダイアログは無視できます。

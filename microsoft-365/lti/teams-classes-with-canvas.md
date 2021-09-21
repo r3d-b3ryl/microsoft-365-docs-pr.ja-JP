@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: キャンバスMicrosoft Teamsクラスを統合する
-ms.openlocfilehash: 44ba24e5c8bd7107f9cba199ce290c10b31e0806
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8c19807034d5d063f71378dd450cfda419cd1491
+ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212474"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460306"
 ---
 # <a name="use-microsoft-teams-classes-with-canvas"></a>Canvas でMicrosoft Teamsクラスを使用する
 
@@ -32,9 +32,19 @@ Microsoft Teamsクラスは、ラーニング ツール相互運用性 (LTI) ア
 > - Canvas と Microsoft の間でユーザーをマッピングするには、1 つの Microsoft テナントのみを使用できます。
 > - グループの重複を回避するには、学校データ同期 LTI を使用する前に、Teams (SDS) をオフにする必要があります。
 
-## <a name="microsoft-office-365-admin"></a>Microsoft Office 365管理者
+## <a name="grant-admin-consent"></a>管理者の同意を付与する
 
-Instructure Canvas 内で Microsoft Teams 統合を管理する前に、Canvas の管理セットアップを完了する前に、キャンバスの **microsoft-Teams-Sync-for-Canvas** Azure アプリを教育機関の Microsoft Office 365 管理者が Microsoft Azure テナントで承認することが重要です。
+Instructure Canvas 内で Microsoft Teams 統合を管理する前に、Canvas の **microsoft-Teams-Sync-for-Canvas** Azure アプリを、Microsoft Azure テナントの教育機関の Microsoft Office 365 管理者によって承認してから、Canvas 管理者のセットアップを完了することが重要です。 これらの手順を実行するには、グローバル管理者である必要があります。
+
+1. [ページ] にAzure Active Directory。
+
+2. アプリケーションEnterprise開き **、Microsoft-Teams-Sync-for-Canvas アプリケーションを選択** します。
+
+3. [アクセス **許可] を** 選択し、[管理者の **同意を付与する] を選択します**。
+
+4. アプリケーションに必要なアクセス許可に同意し、同意を与える。
+
+## <a name="microsoft-office-365-admin"></a>Microsoft Office 365管理者
 
 1. Canvas にサインインします。
 

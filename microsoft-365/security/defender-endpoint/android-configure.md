@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 441e7a598e0487759dc5e48dab3e74a7b3b1ead6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: afff05ac0e18ac41b1e2ba70b59ed4dfd0c6a22a
+ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179376"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460318"
 ---
 # <a name="configure-defender-for-endpoint-on-android-features"></a>Android の機能でエンドポイント用 Defender を構成する
 
@@ -51,6 +51,32 @@ Defender for Endpoint on Android では、IT 管理者は Web 保護機能を構
 > [!NOTE]
 > Android 上のエンドポイントの Defender は、Web Protection 機能を提供するために VPN を使用します。 これは通常の VPN ではなく、デバイス外のトラフィックを受け取らないローカル/自己ループ VPN です。
 > 詳細については、「Android を実行 [するデバイスで Web 保護を構成する」を参照してください](/mem/intune/protect/advanced-threat-protection-manage-android)。
+
+## <a name="configure-privacy-for-malware-threat-report"></a>マルウェア脅威レポートのプライバシーを構成する
+
+> [!NOTE]
+> Android 上の Defender for Endpoint のプライバシーコントロールは現在プレビュー中であり、商用リリース前に大幅に変更される可能性があります。
+
+マルウェア脅威レポートのプライバシー制御を使用すると、マルウェア脅威レポートからアプリの詳細 (名前とパッケージ情報) のコレクションを無効にできます。 これにより、悪意のあるアプリが検出された場合に、組織がアプリ名を収集するかどうかを柔軟に選択できます。 *この機能は現在、Android デバイス管理者モードに登録されている **デバイスでのみ使用** できます。*
+
+対象ユーザーに対して有効にするには、次の手順を使用します。
+
+1. 管理[Microsoft エンドポイント マネージャーで、[](https://go.microsoft.com/fwlink/?linkid=2109431)デバイス構成プロファイルプロファイルの作成] に移動し  >    >  、次の設定を入力します。
+
+   - **プラットフォーム**: Android デバイス管理者の選択
+   - **プロファイル**: [カスタム] を選択し、[作成] をクリックします。
+
+2. [基本] セクションで、プロファイルの名前と説明を指定します。
+3. [構成設定] で **、[OMA-URI の追加] 設定を選択** します。
+
+   - **名前**: この OMA-URI 設定の一意の名前と説明を入力して、後で簡単に見つけ出すことができるようにします。
+   - OMA-URI: **./Vendor/MSFT/DefenderATP/DefenderExcludeAppInReport**
+   - データ型: ドロップダウン リストで [整数] を選択します。
+   - 値: プライバシー設定を有効にするには 1 を入力します (既定では、値は 0 です)
+
+4. [次 **へ] を** クリックし、このプロファイルを対象のデバイス/ユーザーに割り当てる。
+
+上記のプライバシー制御を有効にすると、デバイスコンプライアンスチェックや条件付きアクセスには影響を与えず、たとえば悪意のあるアプリを持つデバイスは常にリスク レベルが "中" になります。
 
 ## <a name="related-topics"></a>関連項目
 

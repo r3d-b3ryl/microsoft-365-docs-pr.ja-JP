@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 33d32918316b997b2cc97d63dac8c8deff135528
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 51a94e2fd87bc5356de80e26fb70297e1dd3b710
+ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216843"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460108"
 ---
 # <a name="learn-about-insider-risk-management-in-microsoft-365"></a>インサイダー リスク管理の詳細については、Microsoft 365
 
@@ -64,6 +64,10 @@ Insider リスク管理は、次の原則を中心に行います。
 Insider リスク分析では、インサイダー リスク ポリシーを構成することなく、組織内の潜在的なインサイダー リスクの評価を行うことができます。 この評価は、組織が高いユーザー リスクの潜在的領域を特定し、構成することを考えるべきインサイダー リスク マネジメント ポリシーの種類と範囲を特定するのに役立ちます。 この評価は、既存のインサイダー リスク ポリシーの追加のライセンスまたは将来の最適化のニーズを判断するのにも役立ちます。
 
 インサイダー リスク分析の詳細については、「Insider リスク管理の設定 [: Analytics」を参照してください](insider-risk-management-settings.md#analytics-preview)。
+
+## <a name="get-started-with-recommended-actions-preview"></a>推奨されるアクションの使用を開始する (プレビュー)
+
+インサイダー リスク管理を初めて設定する場合でも、新しいポリシーの作成を開始する場合でも、新[](insider-risk-management-configure.md#recommended-actions-preview)しい推奨アクション エクスペリエンスは、インサイダー リスク管理機能を活用するのに役立ちます。 推奨されるアクションには、アクセス許可の設定、ポリシー インジケーターの選択、ポリシーの作成などです。
 
 ## <a name="workflow"></a>ワークフロー
 
