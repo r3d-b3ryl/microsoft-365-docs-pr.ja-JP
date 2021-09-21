@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを作成する場合、ファイルまたはメールにラベルを自動的に割り当てるか、あるいは推奨するラベルを選択するようにユーザーに求めることができます。
-ms.openlocfilehash: 0f4d702581192ab35d3d515fa668043e9a1c1399
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: 65926c72dfd61cc7a610f547d6c9a9d5fa04451e
+ms.sourcegitcommit: 3ec80aba8d5d9acf42ed9b9bf8817c2ec4ab6764
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59444021"
+ms.lasthandoff: 09/20/2021
+ms.locfileid: "59456295"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>秘密度ラベルをコンテンツに自動的に適用する
 
@@ -72,8 +72,8 @@ Microsoft 365 でコンテンツに秘密度ラベルを自動的に適用する
     Exchange の自動ラベル付けに固有:
     
     - 手動でのラベル付けや Office アプリを使用した自動ラベル付けとは異なり、PDF の添付ファイルと Office の添付ファイルも自動ラベル付けポリシーで指定した条件に合わせてスキャンされます。一致するものがある場合、メールにはラベルが付けられますが、添付ファイルにはラベルが付けられません。
-        - PDF ファイルの場合、ラベルが暗号化を適用する場合、テナントで[ PDF 添付ファイルが有効になっている場合](ome-faq.yml#are-pdf-file-attachments-supported-)、これらのファイルは[Office 365 Message Encryption (OME)](ome.md)を使用して暗号化されます。
-        - Word、PowerPoint、Excel の Office ファイルがサポートされています。 ラベルが暗号化を適用する場合、[Office 365 Message Encryption (OME)](ome.md)を使用して、暗号化されます。
+        - PDF ファイルの場合、ラベルに暗号化が適用されていると、テナントで [PDF 添付ファイルが有効になっている](ome-faq.yml#are-pdf-file-attachments-supported-)ときにこれらのファイルが暗号化されます。
+        - これらの Office ファイルでは、Word (.docx)、PowerPoint (.pptx)、Excel (.xlsx) がサポートされています。 ラベルで暗号化が適用される場合、これらのファイルは暗号化されます。
     - IRM 暗号化を適用する Exchange メール フロー ルールまたはデータ損失防止 (DLP) ポリシーがある場合: これらのルールやポリシーおよび自動ラベル付けポリシーによってコンテンツが識別されると、ラベルが適用されます。 このラベルが暗号化を適用すると、Exchange メール フロー ルールまたは DLP ポリシーの IRM 設定は無視されます。 ただし、そのラベルが暗号化を適用しない場合、メール フロー ルールまたは DLP ポリシーの IRM 設定がラベルに加えて適用されます。
     - ラベルが表示されない IRM 暗号化を使用しているメールは、自動ラベル付けを使用すると一致する場合は、暗号化設定のあるラベルに置き換えられます。
     - 自動ラベル付け条件と一致すると、受信メールに以下のようにラベルが付けられます。
