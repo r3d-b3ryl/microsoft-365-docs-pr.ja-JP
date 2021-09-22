@@ -2,7 +2,7 @@
 title: Microsoft 365 の Exchange Online の監視
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,12 +16,12 @@ ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
 description: Exchange Online の監視を使用して、Microsoft 365 でのメールのインシデントや勧告の情報について確認します。
-ms.openlocfilehash: 27f2cfb952359c2ef428b7bd425f611ca9458566
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8831e63e8c522513828a9dc3af83c5baf586f5f0
+ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215893"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59480990"
 ---
 # <a name="exchange-online-monitoring-for-microsoft-365"></a>Microsoft 365 の Exchange Online の監視
 

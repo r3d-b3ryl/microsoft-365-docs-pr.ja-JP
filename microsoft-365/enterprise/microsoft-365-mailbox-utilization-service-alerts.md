@@ -1,8 +1,8 @@
 ---
 title: メールボックス使用率サービスのアラート
-ms.author: markjjo
-author: markjjo
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.date: ''
 audience: Admin
 ms.topic: article
@@ -17,12 +17,12 @@ ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
 description: メールボックス使用率サービスアラートを使用して、メールボックスクォータに達している保留状態のメールボックスを監視します。
-ms.openlocfilehash: 417e0106505dcc31af6e9a279fd79655df712dd2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: afae43f0c589d6c025fb0e1d20a7c5cf81eacbe2
+ms.sourcegitcommit: dd4214a309c71292490743752da728cec7bffe88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220865"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59479887"
 ---
 # <a name="service-alerts-for-mailbox-utilization-in-exchange-online-monitoring"></a>監視のメールボックス使用率に関するExchange Online通知
 
@@ -83,7 +83,7 @@ ms.locfileid: "59220865"
 | RetentionPolicyGuid | MailboxType | HasMoveDumpsterToArchiveTag | HasMovePrimaryToArchiveTag | HasPersonalArchiveTag |  メールボックス |
 |:--------------|:--------------|:---------------|:---------------|:---------------|:--------------- |
 | 6c041498-1611-5011-a058-1156ce60890c | PrimaryWithArchive | True | False | True | 398 |
-| 6c041498-1611-5011-a058-1156ce60890c | Primary | True | False | True | 10  |
+| 6c041498-1611-5011-a058-1156ce60890c | Primary | True | False | True | 10 |
 | 749ceecc-d49d-4000-a9d5-594dbaea1e56 | PrimaryWithArchive | False | True | False | 7  |
 | 269f6a85-1234-4648-8cde-59bbc7bc67d0 | PrimaryWithArchive | True | True | True | 1 |
 | 13fb778d-e1cb-4c44-5768-ad4282906c1f | PrimaryWithArchive | True | True  | False | 1 |
@@ -115,7 +115,7 @@ ms.locfileid: "59220865"
 
 クォータの問題を解決するためのアクションを実行しない場合は、この種類のサービス アラートが 4 日ごとに表示される可能性があります。 後続のサービス通知には、クォータに近い他のメールボックスのメールボックス数が多くなる場合があります。 クォータの問題を解決するためのアクションを実行すると、クォータの問題を持つ別のメールボックスが特定された場合にのみ、このサービス アラートが発生します。
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 - アーカイブ メールボックスの問題のトラブルシューティングと解決の詳細については、「コンプライアンス[Microsoft 365を参照してください](/office365/troubleshoot/microsoft-365-compliance-welcome)。
 

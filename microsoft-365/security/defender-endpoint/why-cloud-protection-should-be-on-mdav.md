@@ -14,13 +14,13 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
-ms.date: 08/31/2021
-ms.openlocfilehash: 94e97c9d289ccf39d66618025822e0259b836219
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.date: 09/21/2021
+ms.openlocfilehash: 0f0937ef59b74ea30f673aa1d05c4b75e3e5bbcc
+ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212024"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59480786"
 ---
 # <a name="why-cloud-protection-should-be-enabled-for-microsoft-defender-antivirus"></a>クラウド保護を有効にする必要Microsoft Defender ウイルス対策
 
@@ -30,6 +30,8 @@ ms.locfileid: "59212024"
 - Microsoft Defender ウイルス対策
 
 Microsoft Defender ウイルス対策クラウド保護は、エンドポイントやネットワーク全体のマルウェアから保護するのに役立ちます。 Microsoft Defender for Endpoint の特定のセキュリティ機能と機能は、クラウド保護が有効になっている場合にのみ機能しますので、クラウド保護を有効にすることをお勧めします。 
+
+[:::image type="content" source="mde-cloud-protection.png" alt-text="クラウド保護とクラウド保護の機能を示す図Microsoft Defender ウイルス対策":::](enable-cloud-protection-microsoft-defender-antivirus.md)
 
 次の表に、クラウド保護に依存する機能の概要を示します。 <br/><br/>
 
@@ -45,7 +47,7 @@ Microsoft Defender ウイルス対策クラウド保護は、エンドポイン�
 | 侵害の指標 (IoC) | Microsoft 365 E5  | Defender for Endpoint の IoC は、エンティティの検出、防止、および除外を定義するように構成できます。 たとえば、"許可" インジケーターを使用して、Defender for Endpoint のスキャンMicrosoft Defender ウイルス対策修復アクションに対する例外を定義できます。 別の例として、"アラートとブロック" インジケーターを使用して、ファイルまたはプロセスの実行を防止し、Microsoft 365 Defender ポータルで表示可能なアラートを使用してこれらのアクティビティを追跡できます。 <br/><br/>詳細については、「インジケーターの作成 [」を参照してください](manage-indicators.md)。    |
 
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 クラウド保護とクラウド保護の役割の概要を説明し、次Microsoft Defender ウイルス対策手順を次に示します。
 

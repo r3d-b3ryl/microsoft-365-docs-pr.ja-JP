@@ -17,17 +17,17 @@ ms.custom:
 search.appverid:
 - MET150
 description: 業界と組織の情報に関する最新のニュース見出しをユーザーに提供し、ニュース サービスを使用して組織のカスタマイズされたニュース フィードを有効にします。
-ms.openlocfilehash: e3c2e0526074571ffbe976c98fe57069adcdb9ab
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 0292668ad37020f9ca2049d7c011465bd7e28479
+ms.sourcegitcommit: dd4214a309c71292490743752da728cec7bffe88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400584"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59479551"
 ---
 # <a name="manage-industry-news"></a>業界ニュースの管理
 
 > [!NOTE] 
-> Bing業界&ニュースは、現時点では英語専用の市場で利用できます。
+> Bing業界&ニュースは、現時点では en-US でのみ利用できます。
 
 業界と組織の情報に関する最新のニュース見出しをユーザーに提供するには、ニュース サービスを使用して組織のカスタマイズされたニュース フィードを有効にします。 また、毎日の業界更新プログラムのメールを有効にし、新しいタブ ページBingページMicrosoft Edge設定を管理することもできます。
 

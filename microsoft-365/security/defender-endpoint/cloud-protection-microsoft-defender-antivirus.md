@@ -14,13 +14,13 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
-ms.date: 08/26/2021
-ms.openlocfilehash: 661e368d76fcdc7a3a62523aa0c92c57790bed60
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.date: 09/21/2021
+ms.openlocfilehash: 4be3905615327ff2d6025cceb971947161cbe80e
+ms.sourcegitcommit: dd4214a309c71292490743752da728cec7bffe88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213793"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59479506"
 ---
 # <a name="cloud-protection-and-microsoft-defender-antivirus"></a>クラウド保護と Microsoft Defender ウイルス対策
 
@@ -30,6 +30,8 @@ ms.locfileid: "59213793"
 - Microsoft Defender ウイルス対策
 
 新しい脅威や新Microsoft Defender ウイルス対策に対する、ほぼ即座に自動化された保護を提供する次世代テクノロジ。 新しい脅威を動的に特定するために、次世代テクノロジは、Microsoft Intelligent Security Graph および高度な機械学習モデルによって駆動される強力な人工知能 (AI) システムで、多数の相互接続されたデータを処理します。 クラウド保護は、正確でMicrosoft Defender ウイルス対策インテリジェントな保護を提供するために、クラウド保護と共に機能します。 
+
+[:::image type="content" source="mde-cloud-protection.png" alt-text="クラウド保護とクラウド保護の機能を示す図Microsoft Defender ウイルス対策":::](enable-cloud-protection-microsoft-defender-antivirus.md)
 
 > [!TIP]
 > クラウド保護を有効に保つことをお勧めします。 詳細については、「クラウド保護を[有効にする理由」](why-cloud-protection-should-be-on-mdav.md)を参照Microsoft Defender ウイルス対策。 
@@ -62,7 +64,7 @@ Microsoft Defender ウイルス対策 Microsoft クラウド サービスとシ�
 
 サブスクリプションに E5 Windows 10含まれる場合は、緊急の動的インテリジェンス更新プログラムを利用できます。これは、新たな脅威からほぼリアルタイムで保護されます。 クラウド保護を有効にした場合、マルウェアの問題に対する修正プログラムは、次の更新を待つのではなく、数分以内にクラウド経由で配信できます。 「クラウド サービスMicrosoft Defender ウイルス対策レポートに基づいて新しい保護更新プログラムを自動的に受信する[方法の構成」を参照してください](manage-event-based-updates-microsoft-defender-antivirus.md#cloud-report-updates)。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 クラウド保護の概要を次に示Microsoft Defender ウイルス対策次の手順を示します。
 

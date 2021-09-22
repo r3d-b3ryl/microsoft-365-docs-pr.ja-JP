@@ -20,12 +20,12 @@ ms.custom:
 - commerce_purchase
 description: Microsoft 製品またはサービスを購入する際の登録番号とレビュー中の通知について説明します。
 ms.date: 03/17/2021
-ms.openlocfilehash: a03815e8c5da48c52ef43d11d613ade86657d368b908fff9ecbce5e30291e301
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ca0ddb0111b4a95a46bc64bdd63c99f756699de9
+ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53873019"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59481014"
 ---
 # <a name="about-registration-numbers-and-under-review-notifications"></a>登録番号とレビュー中の通知について
 
@@ -71,28 +71,28 @@ ms.locfileid: "53873019"
 
 | 国または地域 | 詳細 |
 |:--|:--|
-| **アルメニア** | INN – 税の識別番号<br>VAT 番号 – VAT 登録番号とも呼ばれる。 これは、VAT に登録されている課税対象の人物 (ビジネス) または非課税法人を識別する一意の番号です。<br>パブリック サービス番号 |
-| **アゼルバイジャン**  | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Azerbaijan-TIN.pdf) – 税の識別番号<br>INN – 税の識別番号 |
+| **アルメニア** | INN – 税の識別番号 <br /> VAT 番号 – VAT 登録番号とも呼ばれる。 これは、VAT に登録されている課税対象の人物 (ビジネス) または非課税法人を識別する一意の番号です。 <br /> パブリック サービス番号 |
+| **アゼルバイジャン**  | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Azerbaijan-TIN.pdf) – 税の識別番号 <br /> INN – 税の識別番号 |
 | **Belarus (Белару́сь)**  | UNP – これは、地域識別子、地域ごとのシリアル番号、およびチェック桁を含む 9 桁の番号 (組織の数値、個人の英数字) です。 |
 |**ブラジル** | [CNPJ](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Brazil-TIN.pdf) – (Cadastro Nacional da Pessoa Jurídica, or National Registry of Legal Entities). これは、ブラジル連邦歳入局によってブラジル企業に発行された識別番号です。  |
 | **中国** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/China-TIN.pdf) – 税の識別番号 |
 | **ハンガリー**  | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Hungary-TIN.pdf) – 税の識別番号 |
-| **India** | Tax ID<br>[PAN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/India-TIN.pdf) – (Presence Across Nation) PAN India Involvement は、インドの複数の場所で動作している組織が 1 つ存在する場合を意味します。 |
+| **India** | Tax ID <br /> [PAN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/India-TIN.pdf) – (Presence Across Nation) PAN India Involvement は、インドの複数の場所で動作している組織が 1 つ存在する場合を意味します。 |
 | **Iraq** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/) – 税の識別番号 |
-| **カザフスタン**  | BIN – 銀行 ID 番号<br>IIN – 発行者識別番号 |
+| **カザフスタン**  | BIN – 銀行 ID 番号 <br /> IIN – 発行者識別番号 |
 | **キルギスタン**  | INN – 税の識別番号 |
-| **モルドバ**  | IDNO – 法人に割り当てられた一意の状態識別番号 (とも呼ばれる)。 会計コード)。<br>IDNP – 出生個人コード ("Numarul de Identificare") |
+| **モルドバ**  | IDNO – 法人に割り当てられた一意の状態識別番号 (とも呼ばれる)。 会計コード)。 <br /> IDNP – 出生個人コード ("Numarul de Identificare") |
 | **ミャンマー** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/) – 税の識別番号 |
-| **ポーランド**  | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Poland-TIN.pdf) – 税の識別番号<br>[PESEL](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Poland-TIN.pdf) – ポーランドで使用される国民識別番号 (ポーランド Powszechny Elektroniczny System Ewidencji Ludności, Universal Electronic System for registration of the Population) |
+| **ポーランド**  | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Poland-TIN.pdf) – 税の識別番号 <br /> [PESEL](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Poland-TIN.pdf) – ポーランドで使用される国民識別番号 (ポーランド Powszechny Elektroniczny System Ewidencji Ludności, Universal Electronic System for registration of the Population) |
 | **Russia**  | [INN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Russia-TIN.pdf) – 納税者番号 (ロシア語 "Individualiy Nomer Nalogoplatelshika") |
 | **サウジアラビア** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Saudi-Arabia-TIN.pdf) – 税の識別番号 |
-| **南アフリカ** | TRN – 税の参照番号 |
+| **南アフリカ** | [TRN](https://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/South-Africa-TIN.pdf) – 納税者参照番号 |
 | **南スーダン** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/) – 税の識別番号 |
-| **Tajikistan**  | INN – 税の識別番号<br>EIN – 雇用主の識別番号<br>KPP – これは、組織登録の理由を反映するコードです。 |
+| **Tajikistan**  | INN – 税の識別番号 <br /> EIN – 雇用主の識別番号 <br /> KPP – これは、組織登録の理由を反映するコードです。 |
 | **タイ** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/) – 税の識別番号 |
-| **トルコ** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Turkey-TIN.pdf) – 税の識別番号<br>NIN |
-| **ウクライナ**  | EGRPOU<br>EDRPOU – ローカル ID |
-| **アラブ首長国連邦** | Tax ID<br>[VAT 番号](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/UAE-TIN.pdf) - VAT 登録番号とも呼ばれる。 これは、VAT に登録されている課税対象の人物 (ビジネス) または非課税法人を識別する一意の番号です。 |
+| **トルコ** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Turkey-TIN.pdf) – 税の識別番号 <br /> NIN |
+| **ウクライナ**  | EGRPOU <br /> EDRPOU – ローカル ID |
+| **アラブ首長国連邦** | Tax ID <br /> [VAT 番号](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/UAE-TIN.pdf) - VAT 登録番号とも呼ばれる。 これは、VAT に登録されている課税対象の人物 (ビジネス) または非課税法人を識別する一意の番号です。 |
 | **米国** | [EIN](https://irs.ein-forms-gov.com/?keyword=employer%20identification%20number&source=Google&network=o&device=c&devicemodel=&mobile=&adposition%5d&targetid=kwd-81501461534755:loc-190&msclkid=458d3159f6051392f5286e8e75ed79ce) – 雇用主の識別番号 |
 | **ウズベキスタン**  | INN – 税の識別番号 |
 | **Vietnam** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/) – 税の識別番号 |

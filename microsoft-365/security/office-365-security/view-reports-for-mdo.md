@@ -20,12 +20,12 @@ description: 管理者は、管理者ポータルで使用できるレポート�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5cc6c39c9d18e1fcc206f1d8cb81451201541e61
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fc614d873a07a40c1ef65fde3681ce89edaae6d8
+ms.sourcegitcommit: dd4214a309c71292490743752da728cec7bffe88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211504"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59479575"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>ポータルでレポートOffice 365 Defender をMicrosoft 365 Defenderする
 
@@ -35,9 +35,23 @@ ms.locfileid: "59211504"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Office 365 組織向け Microsoft Defender (Microsoft 365 E5 サブスクリプション、Office 365 プラン 1 の Microsoft Defender、Office 365 プラン 2 アドオンの Microsoft Defender など) には、さまざまなセキュリティ関連レポートが含まれる。 必要な [アクセス許可を](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)持っている場合は、[レポートの電子メール] Microsoft 365 Defender コラボレーション レポートにアクセスして、Microsoft 365 Defender ポータルでこれらのレポート& \> **を** \> **表示&できます**。 [コラボレーション レポートの電子メール] **ページ&移動するには、** を開きます <https://security.microsoft.com/emailandcollabreport> 。
+Office 365 組織向け Microsoft Defender (Microsoft 365 E5 サブスクリプション、Office 365 プラン 1 の Microsoft Defender、Office 365 プラン 2 アドオンの Microsoft Defender など) には、さまざまなセキュリティ関連レポートが含まれる。 必要なアクセス許可[を持っている場合](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)は、これらのレポートを表示し、このポータルでMicrosoft 365 Defenderできます。
 
-![[&] ポータルの [コラボレーション レポート] ページにMicrosoft 365 Defenderメールを送信します。](../../media/email-collaboration-reports.png)
+## <a name="view-and-download-reports"></a>レポートを表示してダウンロードする
+
+### <a name="view-reports"></a>レポートの表示
+
+1. [レポート] \> **[電子メール** \> **&] [グループ&] に移動します**。 [コラボレーション レポートの電子メール] **ページ&移動するには、** を開きます <https://security.microsoft.com/emailandcollabreport> 。
+
+1. 表示するレポートを選択し、[詳細の表示] **を選択します**。  
+
+### <a name="download-reports"></a>レポートのダウンロード
+
+1. ポータルで、[Microsoft 365 Defender]**に移動します。[** レポート  >  **の電子メール] &に移動します**。
+
+2. [ダウンロード **するレポート] を選択します**。
+
+![[&] ポータルの [コラボレーション レポート] ページにMicrosoft 365 Defenderメールを送信します。](/microsoft-365/media/email-collaboration-reports.png)
 
 > [!NOTE]
 >
@@ -222,7 +236,7 @@ PowerShell レポートコマンドレット:
 
 詳細については、「[Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)」を参照してください。
 
-**注**: Microsoft 365 管理センター の対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 Defender ポータルで必要なアクセス許可と、Microsoft 365 の他の機能に対するアクセス許可がユーザーに付与されます。 詳細については、[「管理者の役割について」](../../admin/add-users/about-admin-roles.md) を参照してください。
+**注**: Microsoft 365 管理センター の対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 Defender ポータルで必要なアクセス許可と、Microsoft 365 の他の機能に対するアクセス許可がユーザーに付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>レポートにデータが表示されない場合は、
 

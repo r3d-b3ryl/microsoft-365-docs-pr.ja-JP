@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2ff6348a0496878ee6a7b422d441b8c96d553395
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4f473963bca6a3ad3e3ece57ecc30118e4ec6f62
+ms.sourcegitcommit: dd4214a309c71292490743752da728cec7bffe88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214234"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59479563"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の新機能
 
@@ -43,8 +43,6 @@ ms.locfileid: "59214234"
 > [!TIP]
 > Microsoft Defender for Office 365ありませんか? [試用版を開始するために販売に問い合わせ。](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)
 
-
-
 他の Microsoft Defender セキュリティ製品の新機能の詳細については、以下を参照してください。
 
 - [Microsoft 365 Defender の新機能](../defender/whats-new.md)
@@ -52,9 +50,9 @@ ms.locfileid: "59214234"
 - [Microsoft Defender for Identity の新機能](/defender-for-identity/whats-new)
 - [新しい機能Microsoft Cloud App Security](/cloud-app-security/release-notes)
 
-
 ## <a name="september-2021"></a>2021 年 9 月
 
+- [Defender for Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/improving-the-reporting-experience-in-microsoft-defender-for/ba-p/2760898)
 - [検疫ポリシー](quarantine-policies.md): 管理者は、検疫済みメッセージへの受信者アクセスの詳細な制御を構成し、エンドユーザーのスパム通知をカスタマイズできます。
   - [管理者エクスペリエンスのビデオ](https://youtu.be/vnar4HowfpY)
   - [エンド ユーザー エクスペリエンスのビデオ](https://youtu.be/s-vozLO43rI)
