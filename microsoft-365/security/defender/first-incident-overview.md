@@ -1,7 +1,7 @@
 ---
-title: 最初のインシデントへの対応の概要
+title: 最初のインシデントへの対応
 description: ユーザーの最初のインシデントに対応する基本Microsoft 365 Defender。
-keywords: インシデント、アラート、調査、相関関係、攻撃、デバイス、ユーザー、ID、ID、メールボックス、電子メール、365、microsoft、m365、インシデント対応、サイバー攻撃
+keywords: インシデント、アラート、調査、相関関係、攻撃、デバイス、ユーザー、ID、ID、メールボックス、電子メール、365、microsoft、m365、インシデント対応、サイバー攻撃、自己調査、ランプアップ、オンボード、インシデントレスポンダー
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4176b718105643b59f23024c1a70cd8fe220eea9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f13569c8995433e0d629a3ce060d6c855f78700a
+ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211894"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59477601"
 ---
-# <a name="introduction-to-responding-to-your-first-incident"></a>最初のインシデントへの対応の概要
+# <a name="responding-to-your-first-incident"></a>最初のインシデントへの対応
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 

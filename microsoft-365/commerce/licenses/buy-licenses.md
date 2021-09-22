@@ -21,21 +21,24 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: 以下の手順を使用して、ライセンスを購入したり、ビジネス サブスクリプションのライセンス数Microsoft 365減らしたりします。
-ms.date: 04/07/2021
-ms.openlocfilehash: 4fa1b08a7a4304d13fb25ec53c5f034eae77ccec
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.date: 09/16/2021
+ms.openlocfilehash: 77c1547b279cc5367ef23106e15dc2eee0c5a471
+ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59190330"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59477710"
 ---
 # <a name="buy-or-remove-licenses"></a>ライセンスの購入または削除
 
 次の手順を使用して、サブスクリプションのライセンス数を増やしたり、ライセンス数を減らしたりできます。
 
-## <a name="before-you-begin"></a>始める前に
+> [!NOTE]
+> 一部のサブスクリプションでは、サブスクリプションを購入または更新した後に限られた期間だけキャンセルできます。 キャンセル ウィンドウが過ぎた場合は、定期的な請求をオフにし、期間の最後にサブスクリプションをキャンセルします。
 
-- この記事で説明するタスクを実行するには、グローバル管理者または課金管理者である必要があります。 詳細については、[「管理者の役割について」](../../admin/add-users/about-admin-roles.md) を参照してください。
+## <a name="before-you-begin"></a>はじめに
+
+- この記事で説明するタスクを実行するには、グローバル管理者または課金管理者である必要があります。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
 - ユーザーを [追加し、同時にライセンスを割り当てできます](../../admin/add-users/add-users.md)。
 - ビジネス向けまたはMicrosoft 365プランOffice 365 Enterprise購入した場合は、そのパートナーを通じて追加のライセンスを購入する必要があります。
 
@@ -55,12 +58,12 @@ ms.locfileid: "59190330"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[お使いの製品]</a> ページの順に移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">お使いの製品</a>] ページの順に移動します。
 
 ::: moniker-end
 
@@ -70,8 +73,11 @@ ms.locfileid: "59190330"
 ::: moniker-end
 
 2. **[製品]** タブで、ライセンスを購入または削除するサブスクリプションを見つけます。 3 つのドット (その他の操作) を選択してから、**[ライセンスの購入]** を選択します。 [[ライセンスの購入] または [ライセンスの削除] ボタンが表示できない場合は、](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
+
 3. ライセンスを数を減らす場合は、**[ライセンスの購入]** ウィンドウの上部で、**[ライセンスの削除]** を選択します。
+
 4. ライセンスを購入または削除するには、**[ライセンスの総数]** ボックスにある **[新しい数量]** に、このサブスクリプションに必要なライセンスの総数を入力します。たとえば、100 のライセンスがあり、さらに 5 つ追加する必要がある場合は、105 と入力します。ライセンスを 5 つ削除する場合は、95 と入力します。
+
 5. **[保存]** を選択します。
 
 > [!NOTE]
@@ -99,7 +105,7 @@ ms.locfileid: "59190330"
 - 請求期間の途中で追加されたライセンスは、次の請求書に表示されます。 毎年支払う場合は、これらの変更に対して 1 か月以内に請求されます。
 - 次の請求明細書では、元のライセンス数に対する以前の料金が差し引かされます。 ライセンスの元の数で期間の日割り料金を追加し、新しいライセンス数の料金を追加します。 また、請求期間の残りの期間の現在のライセンス数に対する料金も発生します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 サブスクリプションのライセンスを購入した場合、次に行う必要があるのは、組織内のユーザーにライセンスを割 [り当てることです](../../admin/manage/assign-licenses-to-users.md)。
 

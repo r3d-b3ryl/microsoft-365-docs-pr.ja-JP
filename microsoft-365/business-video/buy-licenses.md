@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: jmueller
+ms.reviewer: argani, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -24,19 +24,22 @@ search.appverid:
 - MET150
 - MOE150
 description: 一般法人向け Microsoft 365 の新しいライセンスを購入する方法について説明します。
-ms.date: 05/11/2021
-ms.openlocfilehash: f209b5142a2cda863645c4d78c4b515e552befb9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.date: 09/16/2021
+ms.openlocfilehash: 51f90e3d2f5a49ce8d20c0ab905bd72c0494f653
+ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221249"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59477577"
 ---
 # <a name="buy-microsoft-365-licenses"></a>Microsoft 365 のライセンスを購入する
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4KWvE?autoplay=false]
 
 新しいユーザーを追加する場合、それらのユーザーのために Microsoft 365 ライセンスを追加購入する必要があります。
+
+> [!NOTE]
+> 一部のサブスクリプションでは、サブスクリプションを購入または更新した後に限られた期間だけキャンセルできます。 キャンセル ウィンドウが過ぎた場合は、定期的な請求をオフにし、期間の最後にサブスクリプションをキャンセルします。
 
 ## <a name="try-it"></a>お試しください!
 

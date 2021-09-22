@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: jmueller
+ms.reviewer: micurn, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -24,12 +24,13 @@ search.appverid:
 - MET150
 - MOE150
 description: 新しい機能が必要な場合に、ユーザーを別のサブスクリプションに移動する方法について学習します。
-ms.openlocfilehash: 95d3a4d8e32fb7e0e56e7318f507a911adbc59d9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.date: 09/16/2021
+ms.openlocfilehash: 436df4d563dea3717e463dab71c3a8b7e465dd70
+ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219413"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59477553"
 ---
 # <a name="move-users-to-different-subscriptions"></a>ユーザーを別のサブスクリプションに移動する
 
@@ -38,6 +39,9 @@ ms.locfileid: "59219413"
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SBE2?autoplay=false]
 
 ユーザーが役割を変更すると、現在のサブスクリプションで使用できない機能が必要Microsoft 365 Business Premiumがあります。 この場合、これらの機能を含む新しいサブスクリプションを追加し、必要なユーザーにライセンスを割り当てできます。
+
+> [!NOTE]
+> 一部のサブスクリプションでは、サブスクリプションを購入または更新した後に限られた期間だけキャンセルできます。 キャンセル ウィンドウが過ぎた場合は、定期的な請求をオフにし、期間の最後にサブスクリプションをキャンセルします。
 
 ## <a name="try-it"></a>お試しください!
 

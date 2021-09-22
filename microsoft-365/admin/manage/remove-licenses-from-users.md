@@ -21,22 +21,25 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: 製品ライセンスの割り当てを解除する方法は、特定のユーザーからのライセンスの割り当てを解除するか、特定の製品からライセンスを割り当て解除するかによって異なります。
-ms.date: 06/07/2021
-ms.openlocfilehash: 8a67d7e690ff07631f696a97d6ed59925bc871df
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.date: 09/16/2021
+ms.openlocfilehash: c657f4ef00b797a5f66ce6ecd28ca95cf9a5d9b6
+ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178944"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59477565"
 ---
 # <a name="unassign-licenses-from-users"></a>ユーザーからライセンスの割り当てを解除する
 
 ユーザーからのライセンスの割り当てを解除するには、[アクティブなユーザー] ページまたは [ライセンス] ページ **を使用** します。 使用する方法は、特定のユーザーからの製品ライセンスの割り当てを解除するか、特定の製品からのユーザー ライセンスの割り当てを解除するかによって異なります。
 
 > [!NOTE]
-> 管理者は、組織内のユーザーが購入したセルフサービス購入サブスクリプションのライセンスを割り当てたり割り当て解除したりすることはできません。 [セルフサービス購入サブスクリプションを引き継ぐと](../../commerce/subscriptions/manage-self-service-purchases-admins.md#take-over-a-self-service-purchase-subscription)、ライセンスの割り当てまたは割り当て解除を行うことができるようになります。
+> 
+> - 管理者は、組織内のユーザーが購入したセルフサービス購入サブスクリプションのライセンスを割り当てたり割り当て解除したりすることはできません。 [セルフサービス購入サブスクリプションを引き継ぐと](../../commerce/subscriptions/manage-self-service-purchases-admins.md#take-over-a-self-service-purchase-subscription)、ライセンスの割り当てまたは割り当て解除を行うことができるようになります。
+> 
+> - 一部のサブスクリプションでは、サブスクリプションを購入または更新した後に限られた期間だけキャンセルできます。 キャンセル ウィンドウが過ぎた場合は、定期的な請求をオフにし、期間の最後にサブスクリプションをキャンセルします。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 - ライセンスの割り当てを解除するには、グローバル、ライセンス、ユーザー管理者である必要があります。 詳細については、「[Microsoft 365 の管理者の役割](../add-users/about-admin-roles.md)」を参照してください。
 - [Office 365 PowerShell を使用してライセンスをユーザー アカウントに割り当てる](../../enterprise/remove-licenses-from-user-accounts-with-microsoft-365-powershell.md)ことができます。
@@ -54,19 +57,22 @@ ms.locfileid: "59178944"
 
 ::: moniker range="o365-germany"
 
- 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">ライセンス</a>] ページに移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">ライセンス</a>] ページに移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">ライセンス</a>] ページに移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">ライセンス</a>] ページに移動します。
 
 ::: moniker-end
 
 2. ライセンスの割り当てを解除する製品を選択します。
+
 3. ライセンスの割り当てを解除するユーザーを選択します。
+
 4. [ライセンス **の割り当て解除] を選択します**。
+
 5. [ライセンスの **割り当て解除] ボックス** で、[割り当 **て解除] を選択します**。
 
 ## <a name="use-the-active-users-page-to-unassign-licenses"></a>[アクティブ ユーザー] ページを使用してライセンスの割り当てを解除する
@@ -77,49 +83,54 @@ ms.locfileid: "59178944"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> の順に選択します。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
- 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
- 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。
-
-::: moniker-end
-
-2. ライセンスの割り当てを解除するユーザーの行を選択します。
-3. 右側のウィンドウで、[**ライセンスとアプリ**] を選択します。
-4. [ライセンス **] セクションを展開** し、割り当てを解除するライセンスのボックスをオフにして、[変更の保存] **を選択します**。
-
-### <a name="unassign-licenses-from-multiple-users"></a>複数のユーザーからのライセンスの割り当てを解除する
-
-::: moniker range="o365-worldwide"
-
 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> の順に選択します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。
+
+::: moniker-end
+
+2. ライセンスの割り当てを解除するユーザーの行を選択します。
+
+3. 右側のウィンドウで、[**ライセンスとアプリ**] を選択します。
+
+4. [ライセンス **] セクションを展開** し、割り当てを解除するライセンスのボックスをオフにして、[変更の保存] **を選択します**。
+
+### <a name="unassign-licenses-from-multiple-users"></a>複数のユーザーからのライセンスの割り当てを解除する
+
+::: moniker range="o365-worldwide"
+
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> の順に選択します。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> の順に選択します。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
 ::: moniker-end
 
 2. ライセンスの割り当てを解除するユーザーの名前の横にある円を選択します。
+
 3. 上部にある [**製品ライセンスの管理**] を選択します。
+
 4. [製品ライセンス **の管理] ウィンドウで**、[すべての **保存の変更の割り当てを解除**  >  **する] を選択します**。
+
 5. ウィンドウの下部で、[完了] を **選択します**。  
 
 ## <a name="what-happens-to-a-users-data-when-you-remove-their-license"></a>ライセンスを削除すると、ユーザーのデータは何が起こりますか?
@@ -131,7 +142,7 @@ ms.locfileid: "59178944"
 - ライセンスが削除された後でユーザーの Microsoft 365 データへのアクセスをブロックする方法、および後でデータにアクセスする方法については、「元従業員を削除する」を[参照してください](../add-users/remove-former-employee.md)。
 - ユーザーのライセンスを削除し、Office アプリがまだインストールされている場合は、Office でライセンス[](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380)認証されていない製品とライセンス認証エラーが表示され、Office アプリを使用します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 未使用のライセンスを他のユーザー[](../../managed-desktop/get-started/assign-licenses.md)に再割り当てしない場合は、[](../../commerce/licenses/buy-licenses.md)必要以上に多くのライセンスを支払わない状態でサブスクリプションからライセンスを削除してください。
 
@@ -139,4 +150,4 @@ ms.locfileid: "59178944"
 
 [サブスクリプションからライセンスを削除](../../commerce/licenses/buy-licenses.md) する (記事)\
 [ユーザーにライセンスを割り当てる](assign-licenses-to-users.md)(記事)\
-[ビジネス向けサブスクリプションとライセンスMicrosoft 365理解](../../commerce/licenses/subscriptions-and-licenses.md)する (記事)
+[一般法人向け Microsoft 365 のサブスクリプションとライセンスを理解する](../../commerce/licenses/subscriptions-and-licenses.md) (記事)

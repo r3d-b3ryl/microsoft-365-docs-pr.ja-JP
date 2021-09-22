@@ -1,7 +1,6 @@
 ---
-title: Microsoft Defender for Endpoint デバイスにデバイスを追加した後で検出テストを実行する
-description: Microsoft Defender for Endpoint サービスに最近追加されたデバイスで検出スクリプトを実行して、適切にオンボードされていることを確認する
-keywords: 検出テスト、検出、powershell、スクリプト、検証、オンボーディング、エンドポイントオンボーディング用 Microsoft Defender、クライアント、サーバー、テスト
+title: デバイスで検出テストを実行して、Microsoft Defender for Endpoint に正しくオンボードされていることを確認する
+description: Microsoft Defender for Endpoint サービスに最近オンボードされたデバイスで検出テスト スクリプトを実行し、適切に追加されていることを確認します。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2c1772cc67c145b59870735910e09ae05e52b899
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 63c75ccb3ce8d3063235763986d5b9e85969ef45
+ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400800"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59477637"
 ---
 # <a name="run-a-detection-test-on-a-newly-onboarded-microsoft-defender-for-endpoint-device"></a>新しくオンボードされた Microsoft Defender for Endpoint デバイスで検出テストを実行する
 
@@ -41,11 +40,11 @@ ms.locfileid: "59400800"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-オンボード デバイスは、Microsoft Defender for Endpoint サービスにデバイスを追加する方法です。 これにより、デバイスはサービスに信号を報告できます。
+管理のために Microsoft Defender for Endpoint サービスにデバイスを追加する場合、これはオンボード デバイスとも呼ばれる。 オンボーディングを使用すると、デバイスは正常性状態に関するシグナルをサービスに報告できます。
 
-デバイスがサービスに正常に追加されたことを確認することが、展開プロセス全体の重要なステップです。
+デバイスがサービスに正常に追加されたことを確認するか、確認するかは、展開プロセス全体の重要な手順です。 これは、必要なすべてのデバイスが管理されているのを保証します。 
 
-## <a name="verify-onboarding-using-a-detection-test"></a>検出テストを使用してオンボーディングを確認する
+## <a name="verify-microsoft-defender-for-endpoint-onboarding-of-a-device-using-a-powershell-detection-test"></a>PowerShell 検出テストを使用してデバイスの Microsoft Defender for Endpoint オンボーディングを確認する
 
 新しくオンボードされたデバイスで次の PowerShell スクリプトを実行して、Defender for Endpoint サービスに適切に報告されていることを確認します。
 
@@ -64,7 +63,7 @@ ms.locfileid: "59400800"
    powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference = 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-MDATP-test\\invoice.exe');Start-Process 'C:\\test-MDATP-test\\invoice.exe'
    ```
 
-[コマンド プロンプト] ウィンドウが自動的に閉じます。 成功した場合、検出テストは完了としてマークされ、約 10 分でオンボード デバイスのポータルに新しいアラートが表示されます。
+[コマンド プロンプト] ウィンドウが自動的に閉じます。 成功した場合、検出テストは完了としてマークされ、約 10 分後にオンボード デバイスのポータルに新しいアラートが表示されます。
 
 ## <a name="related-topics"></a>関連項目
 
