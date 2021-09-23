@@ -15,12 +15,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 46e0090106ce87e130cd78c7a9f6e844bd2de187
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f4bf0a03db22df2c0e054bea86a8b65c5d77f28b
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218593"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59482811"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>テナント間メールボックスの移行 (プレビュー)
 
@@ -92,33 +92,43 @@ ms.locfileid: "59218593"
 
 #### <a name="step-by-step-instructions-for-the-target-tenant-admin"></a>ターゲット テナント管理者の手順
 
-1. ターゲット テナントのSetupCrossTenantRelationshipForTargetTenant.ps1のスクリプトを、新しいリポジトリから[GitHubします](https://github.com/microsoft/cross-tenant/releases/tag/Preview)。
+1. ターゲット テナントのSetupCrossTenantRelationshipForTargetTenant.ps1のスクリプトを、新しいリポジトリから[GitHubします](https://aka.ms/LatestRelease)。 
 2. スクリプト (SetupCrossTenantRelationshipForTargetTenant.ps1) を、スクリプトを実行するコンピューターに保存します。
 3. ターゲット テナントへのリモート PowerShell 接続Exchange Online作成します。 繰り返しますが、Azure Key Vault ストレージと証明書、Move Mailbox アプリケーション、EXO Migration Endpoint、EXO Organization Relationship を構成するために、展開スクリプトを実行するために必要なアクセス許可を持っている必要があります。
 4. ファイル フォルダー ディレクトリをスクリプトの場所に変更するか、スクリプトが現在リモート PowerShell セッションの現在の場所に保存されているのを確認します。
 5. 次のパラメーターと値を使用してスクリプトを実行します。
 
-   |パラメーター|値|必須またはオプション
-   |---|---|---|
-   |-TargetTenantDomain|fabrikam ドメインなどのターゲット \. テナント ドメイン onmicrosoft.com。|必須|
-   |-ResourceTenantDomain|contoso ドメインなどのソース \. テナント ドメイン onmicrosoft.com。|必須|
-   |-ResourceTenantAdminEmail|ソース テナント管理者の電子メール アドレス。 これは、ターゲット管理者から送信されたメールボックス移行アプリケーションの使用に同意する移行元テナント管理者です。これは、アプリケーションのメール招待を受け取る管理者です。|必須|
-   |-ResourceTenantId|ソース テナント組織 ID (GUID)。|必須|
-   |-SubscriptionId|リソースの作成に使用する Azure サブスクリプション。|必須|
-   |-ResourceGroup|キー コンテナーを含む、または含まれる Azure リソース グループ名。|必須|
-   |-KeyVaultName|メールボックス移行アプリケーション証明書/シークレットを格納する Azure Key Vault インスタンス。|必須|
-   |-CertificateName|キー コンテナーで証明書を生成または検索する場合の証明書名。|必須|
-   |-CertificateSubject|AZURE Key Vault 証明書のサブジェクト名 (CN=contoso_fabrikam など)。|必須|
-   |-AzureResourceLocation|Azure リソース グループとキー コンテナーの場所。|必須|
-   |-ExistingApplicationId|既に作成されている場合に使用するメール移行アプリケーション。|オプション|
-   |-AzureAppPermissions|メールボックス移行アプリケーションに与える必要があるアクセス許可 (Exchange または MSGraph (メールボックスを移動するための Exchange、このアプリケーションを使用してリソース テナントに同意リンクの招待を送信するための MSGraph)。|必須|
-   |-UseAppAndCertGeneratedForSendingInvitation|移行先テナント管理者に同意リンクの招待を送信するために使用する移行用に作成されたアプリケーションを使用するパラメーター。存在しない場合は、ターゲット管理者の資格情報が Azure 招待マネージャーに接続し、招待をターゲット管理者として送信するように求めるメッセージが表示されます。|オプション|
-   |-KeyVaultAuditStorageAccountName|Key Vault の監査ログが格納されるストレージ アカウント。|オプション|
-   |-KeyVaultAuditStorageResourceGroup|Key Vault 監査ログを格納するためのストレージ アカウントを含むリソース グループ。|オプション|
-   ||||
+    | パラメーター                                   | 値                                                                                                                                                                                                                                                                               | 必須またはオプション |
+    | ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
+    | -TargetTenantDomain                         | fabrikam ドメインなどのターゲット \. テナント ドメイン onmicrosoft.com。                                                                                                                                                                                                                            | 必須かどうか             |
+    | -ResourceTenantDomain                       | contoso ドメインなどのソース \. テナント ドメイン onmicrosoft.com。                                                                                                                                                                                                                             | 必須かどうか             |
+    | -ResourceTenantAdminEmail                   | ソース テナント管理者の電子メール アドレス。 これは、ターゲット管理者から送信されたメールボックス移行アプリケーションの使用に同意する移行元テナント管理者です。これは、アプリケーションのメール招待を受け取る管理者です。                                    | 必須かどうか             |
+    | -ResourceTenantId                           | ソース テナントのテナント ID。 たとえば、azure は [contoso ADテナントの](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant) テナント ID \. onmicrosoft.com します。                                                                 | 必須かどうか             |
+    | -SubscriptionId                             | リソースの作成に使用する Azure サブスクリプション。                                                                                                                                                                                                                               | 必須かどうか             |
+    | -ResourceGroup                              | キー コンテナーを含む、または含まれる Azure リソース グループ名。                                                                                                                                                                                                              | 必須かどうか             |
+    | -KeyVaultName                               | メールボックス移行アプリケーション証明書/シークレットを格納する Azure Key Vault インスタンス。                                                                                                                                                                                     | 必須かどうか             |
+    | -CertificateName                            | Key Vault で証明書を生成または検索する場合の証明書名。                                                                                                                                                                                                         | 必須かどうか             |
+    | -CertificateSubject                         | AZURE Key Vault 証明書のサブジェクト名 (CN=contoso_fabrikam など)。                                                                                                                                                                                                              | 必須かどうか             |
+    | -AzureResourceLocation                      | Azure リソース グループと Key Vault の場所 (表示名)。 使用可能な名前 `Get-AzResourceProvider -ProviderNamespace Microsoft.KeyVault | Select-Object -ExpandProperty Locations -Unique` を表示するために実行できます。                                                     | 必須かどうか             |
+    | -ExistingApplicationId                      | 既に作成されている場合に使用するメール移行アプリケーション。                                                                                                                                                                                                                       | オプション             |
+    | -AzureAppPermissions                        | メールボックス移行アプリケーションに与える必要があるアクセス許可 (Exchange または MSGraph (メールボックスを移動するための Exchange、このアプリケーションを使用してリソース テナントに同意リンクの招待を送信するための MSGraph)。                                                    | 必須かどうか             |
+    | -UseAppAndCertGeneratedForSendingInvitation | 移行先テナント管理者に同意リンクの招待を送信するために使用する移行用に作成されたアプリケーションを使用するパラメーター。存在しない場合は、ターゲット管理者の資格情報が Azure 招待マネージャーに接続し、招待をターゲット管理者として送信するように求めるメッセージが表示されます。 | オプション             |
+    | -KeyVaultAuditStorageAccountName            | Key Vault の監査ログが格納されるストレージ アカウント。                                                                                                                                                                                                                   | オプション             |
+    | -KeyVaultAuditStorageResourceGroup          | Key Vault 監査ログを格納するためのストレージ アカウントを含むリソース グループ。                                                                                                                                                                                              | オプション             |
+    | -KeyVaultAuditStorageAccountLocation        | `Required if using a KeyVaultAuditStorage Parameter`アカウントの場所をStorageします。                                                                                                                                                                                 | オプション             |
+    | -KeyVaultAuditStorageAccountSKU             | `Required if using a KeyVaultAuditStorage Parameter`アカウントの SKU 名をStorageします。                                                                                                                                                                                 | オプション             |
+    |                                             | Standard_LRS。 ローカル冗長ストレージ。                                                                                                                                                                                                                                            |                      |
+    |                                             | Standard_ZRS。 ゾーン冗長ストレージ。                                                                                                                                                                                                                                               |                      |
+    |                                             | Standard_GRS。 Geo 冗長ストレージ。                                                                                                                                                                                                                                                |                      |
+    |                                             | Standard_RAGRS。 読み取りアクセス geo 冗長ストレージ。                                                                                                                                                                                                                                  |                      |
+    |                                             | Premium_LRS。 プレミアム冗長ストレージを使用します。                                                                                                                                                                                                                                     |                      |
+    |                                             | Premium_ZRS。 プレミアム冗長ストレージ。                                                                                                                                                                                                                                        |                      |
+    |                                             | Standard_GZRS - Geo 冗長ゾーン冗長ストレージ。                                                                                                                                                                                                                               |                      |
+    |                                             | Standard_RAGZRS - 読み取りアクセス geo 冗長ゾーン冗長ストレージ。                                                                                                                                                                                                                 |                      |
+    |                                             |                                                                                                                                                                                                                                                                                     |                      |
 
-    > [!NOTE]
-    > スクリプトを実行する前に、Azure AD PowerShell モジュールがインストールされていることを確認してください。 インストール手順については [、こちらを](/powershell/azure/install-az-ps) 参照してください。
+    >[!Note]
+    > スクリプトを実行する前に、Azure AD PowerShell モジュールがインストールされていることを確認してください。 インストール手順については ![ ](/powershell/azure/install-az-ps?view=azps-5.1.0) 、こちらを参照してください。
 
 6. スクリプトは一時停止し、このプロセス中に作成されたExchange移行アプリケーションに同意するか、同意を求めるメッセージが表示されます。 次に例を示します。
 
@@ -187,14 +197,14 @@ ms.locfileid: "59218593"
 
 7. 次の必須パラメーターと値を使用してスクリプトを実行します。
 
-   |パラメーター|値|
-   |---|---|
-   |-SourceMailboxMovePublishedScopes|移行の対象である ID/メールボックスのソース テナントによって作成されたメールが有効なセキュリティ グループ。|
-   |-ResourceTenantDomain|contoso ドメインなどのソース テナント \. ドメイン onmicrosoft.com。|
-   |-ApplicationId|移行に使用されるアプリケーションの Azure アプリケーション ID (GUID)。 Azure portal (Azure AD、Enterprise アプリケーション、アプリ名、アプリケーション ID) を使用するか、招待メールに含まれるアプリケーション ID。|
-   |-TargetTenantDomain|fabrikam ドメインなどのターゲット テナント \. ドメイン onmicrosoft.com。|
-   |-TargetTenantId|ターゲット テナントのテナント ID。 たとえば、azure は contoso ADテナントのテナント ID \. onmicrosoft.com します。|
-   |||
+    | パラメーター                         | 値                                                                                                                                                                                                                 |
+    | --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+    | -SourceMailboxMovePublishedScopes | 移行の対象である ID/メールボックスのソース テナントによって作成されたメールが有効なセキュリティ グループ。                                                                                                    |
+    | -ResourceTenantDomain             | contoso ドメインなどのソース テナント \. ドメイン onmicrosoft.com。                                                                                                                                                          |
+    | -ApplicationId                    | 移行に使用されるアプリケーションの Azure アプリケーション ID (GUID)。 Azure portal (Azure AD、Enterprise アプリケーション、アプリ名、アプリケーション ID) を使用するか、招待メールに含まれるアプリケーション ID。 |
+    | -TargetTenantDomain               | fabrikam ドメインなどのターゲット テナント \. ドメイン onmicrosoft.com。                                                                                                                                                         |
+    | -TargetTenantId                   | ターゲット テナントのテナント ID。 たとえば [、Azure は fabrikam ADテナント ID](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant) を onmicrosoft.com \. します。  |
+    |                                   |                                                                                                                                                                                                                       |
 
     次に例を示します。
 
@@ -312,39 +322,39 @@ VerifySetup.ps1 -PartnerTenantId <TargetTenantId> -ApplicationId <AADApplication
       - 移行元メールボックスからターゲット MailUser に従来の smtp プロキシ アドレスを追加することはできません。 たとえば、テナント オブジェクトの MEU contoso.com を維持 fabrikam.onmicrosoft.com できません)。 ドメインは、1 つの Azure ADまたはExchange Onlineにのみ関連付けられる。
 
      MailUser **オブジェクト** の例:
-
-     |属性|値|
-     |---|---|
-     |エイリアス|LaraN|
-     |RecipientType|MailUser|
-     |RecipientTypeDetails|MailUser|
-     |UserPrincipalName|LaraN@northwintraders.onmicrosoft.com|
-     |PrimarySmtpAddress|Lara.Newton@northwind.com|
-     |ExternalEmailAddress|SMTP:LaraN@contoso.onmicrosoft.com|
-     |ExchangeGuid|1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8|
-     |LegacyExchangeDN|/o=First Organization/ou=Exchangeグループ|
-     ||(FYDIBOHF23SPDLT)/cn=Recipients/cn=74e5385fce4b46d19006876949855035Lara|
-     |EmailAddresses|x500:/o=First Organization/ou=Exchange 管理グループ (FYDIBOHF23SPDLT)/cn=Recipients/cn=d11ec1a2cacd4f81858c8190|
-     ||7273f1f9-Lara|
-     ||smtp:LaraN@northwindtraders.onmicrosoft.com|
-     ||SMTP:Lara.Newton@northwind.com|
-     |||
+ 
+     | 属性            | 値                                                                                                                   |
+     | -------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+     | エイリアス                | LaraN                                                                                                                   |
+     | RecipientType        | MailUser                                                                                                                |
+     | RecipientTypeDetails | MailUser                                                                                                                |
+     | UserPrincipalName    | LaraN@northwintraders.onmicrosoft.com                                                                                   |
+     | PrimarySmtpAddress   | Lara.Newton@northwind.com                                                                                               |
+     | ExternalEmailAddress | SMTP:LaraN@contoso.onmicrosoft.com                                                                                      |
+     | ExchangeGuid         | 1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8                                                                                    |
+     | LegacyExchangeDN     | /o=First Organization/ou=Exchangeグループ                                                                  |
+     |                      | (FYDIBOHF23SPDLT)/cn=Recipients/cn=74e5385fce4b46d19006876949855035Lara                                                 |
+     | EmailAddresses       | x500:/o=First Organization/ou=Exchange 管理グループ (FYDIBOHF23SPDLT)/cn=Recipients/cn=d11ec1a2cacd4f81858c8190 |
+     |                      | 7273f1f9-Lara                                                                                                           |
+     |                      | smtp:LaraN@northwindtraders.onmicrosoft.com                                                                             |
+     |                      | SMTP:Lara.Newton@northwind.com                                                                                          |
+     |                      |                                                                                                                         |
 
      ソース **メールボックス オブジェクト** の例:
 
-     |属性|値|
-     |---|---|
-     |エイリアス|LaraN|
-     |RecipientType|UserMailbox|
-     |RecipientTypeDetails|UserMailbox|
-     |UserPrincipalName|LaraN@contoso.onmicrosoft.com|
-     |PrimarySmtpAddress|Lara.Newton@contoso.com|
-     |ExchangeGuid|1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8|
-     |LegacyExchangeDN|/o=First Organization/ou=Exchangeグループ|
-     ||(FYDIBOHF23SPDLT)/cn=Recipients/cn=d11ec1a2cacd4f81858c81907273f1f9Lara|
-     |EmailAddresses|smtp:LaraN@contoso.onmicrosoft.com
-     ||SMTP:Lara.Newton@contoso.com|
-     |||
+     | 属性            | 値                                                                   |
+     | -------------------- | ----------------------------------------------------------------------- |
+     | エイリアス                | LaraN                                                                   |
+     | RecipientType        | UserMailbox                                                             |
+     | RecipientTypeDetails | UserMailbox                                                             |
+     | UserPrincipalName    | LaraN@contoso.onmicrosoft.com                                           |
+     | PrimarySmtpAddress   | Lara.Newton@contoso.com                                                 |
+     | ExchangeGuid         | 1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8                                    |
+     | LegacyExchangeDN     | /o=First Organization/ou=Exchangeグループ                  |
+     |                      | (FYDIBOHF23SPDLT)/cn=Recipients/cn=d11ec1a2cacd4f81858c81907273f1f9Lara |
+     | EmailAddresses       | smtp:LaraN@contoso.onmicrosoft.com                                      |
+     |                      | SMTP:Lara.Newton@contoso.com                                            |
+     |                      |                                                                         |
 
    - ハイブリッド書き込みバックに追加Exchange属性が含まれている場合があります。 含まれていない場合は、含める必要があります。
    - msExchBlockedSendersHash – クライアントからオンプレミスの Active Directory にオンラインセーフでブロックされた送信者データを書き込みます。
@@ -427,11 +437,19 @@ T2Tbatch-testforignitedemo Syncing ExchangeRemoteMove 1
 > [!NOTE]
 > CSV ファイルの電子メール アドレスは、ソース テナントではなく、ターゲット テナントで指定された電子メール アドレスである必要があります。
 
+:::image type="content" source="../media/tenant-to-tenant-mailbox-move/csv-sample.png" alt-text="CSV サンプル":::
+
 移行バッチの申請は、クロステナント オプションを選択Exchange管理センターからサポートされます。
 
 #### <a name="update-on-premises-mailusers"></a>オンプレミスの MailUsers を更新する
 
 メールボックスがソースからターゲットに移動したら、オンプレミスのメール ユーザー (ソースとターゲットの両方) が新しい targetAddress で更新されます。 例では、移動で使用される targetDeliveryDomain **は次** contoso.onmicrosoft.com。 この targetAddress を使用してメール ユーザーを更新します。
+
+### <a name="test-mailbox"></a>テスト メールボックス
+
+`Test-MigrationServerAvailability -Endpoint <EndPoint> -TestMailbox <SMTP ADDRESS>`
+
+TestMailbox パラメーターは、ターゲット サーバー上のメールボックスを指定します。 コマンドレットは、ターゲット サーバーの管理者アカウントの資格情報を使用してこのメールボックスへのアクセスを試みます。 -TestMailbox パラメーターの値としてプライマリ SMTP アドレスを使用します。  
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
@@ -582,7 +600,7 @@ VerifySetup.ps1 -PartnerTenantId <TargetTenantId> -ApplicationId <AADApplication
 
 **ソーステナントとターゲット テナントは同じドメイン名を使用できますか?**
 
-いいえ。 ソーステナントとターゲットテナントのドメイン名は一意である必要があります。 たとえば、ユーザーのソース ドメインと contoso.com のターゲット ドメイン fourthcoffee.com。
+その必要はありません。 ソーステナントとターゲットテナントのドメイン名は一意である必要があります。 たとえば、ユーザーのソース ドメインと contoso.com のターゲット ドメイン fourthcoffee.com。
 
 **共有メールボックスは移動し、引き続き機能しますか?**
 
@@ -696,41 +714,38 @@ VerifySetup.ps1 -PartnerTenantId <TargetTenantId> -ApplicationId <AADApplication
     ------------------        -------------------------               --------------------
     proxytest@fabrikam.com    e2513482-1d5b-4066-936a-cbc7f8f6f817    SMTP:proxytest@fabrikam.com
     ```
+    
+   - msExchRemoteRecipientType が 8 (DeprovisionMailbox) に設定されている場合、ターゲット テナントに移行されるオンプレミスの MailUser の場合、Azure のプロキシ スクラブ ロジックは所有されていないドメインを削除し、primarySMTP を所有ドメインにリセットします。 オンプレミスの MailUser で msExchRemoteRecipientType をクリアすると、プロキシ スクラブ ロジックは適用されなくなりました。 <br/><br>以下は、サービス プランを含む、可能なサービス プランの完全Exchange Online。
 
-    - msExchRemoteRecipientType が 8 (DeprovisionMailbox) に設定されている場合、ターゲット テナントに移行されるオンプレミスの MailUser の場合、Azure のプロキシ スクラブ ロジックは所有されていないドメインを削除し、primarySMTP を所有ドメインにリセットします。 オンプレミスの MailUser で msExchRemoteRecipientType をクリアすると、プロキシ スクラブ ロジックは適用されなくなりました。
-
-      以下は、サービス プランを含む、可能なサービス プランの完全Exchange Online。
-
-      |名前|
-      |---|
-      |Advanced eDiscovery Storage (500 GB)|
-      |顧客ロックボックス|
-      |データ損失防止|
-      |Exchange Enterprise CAL サービス (EOP、DLP)|
-      |Exchange Essentials|
-      |ExchangeFoundation|
-      |Exchange Online (P1)|
-      |Exchange Online (プラン 1)|
-      |Exchange Online (プラン 2)|
-      |Exchange Online 用の Exchange Online Archiving|
-      |Exchange Server 用の Exchange Online Archiving|
-      |Exchange Online非アクティブなユーザー アドオン|
-      |Exchange Online Kiosk|
-      |Exchange Online Multi-Geo|
-      |Exchange Online プラン 1|
-      |Exchange Online POP|
-      |Exchange Online Protection|
-      |情報バリア|
-      |Information Protection for Office 365 - Premium|
-      |Information Protection for Office 365 - Standard|
-      |インサイト By MyAnalytics|
-      |Microsoft 365高度な監査|
-      |Microsoft Bookings|
-      |Microsoft Business Center|
-      |Microsoft MyAnalytics (フル機能)|
-      |Office 365 Advanced eDiscovery|
-      |Microsoft Defender for Office 365 (プラン 1)|
-      |Microsoft Defender for Office 365 (プラン 2)|
-      |Office 365 Privileged Access Management|
-      |プレミアム暗号化のOffice 365|
-      ||
+   | 名前                                             |
+   | ------------------------------------------------ |
+   | Advanced eDiscovery Storage (500 GB)              |
+   | 顧客ロックボックス                                 |
+   | データ損失防止                             |
+   | Exchange Enterprise CAL サービス (EOP、DLP)      |
+   | Exchange Essentials                              |
+   | ExchangeFoundation                              |
+   | Exchange Online (P1)                             |
+   | Exchange Online (プラン 1)                         |
+   | Exchange Online (プラン 2)                         |
+   | Exchange Online 用の Exchange Online Archiving    |
+   | Exchange Server 用の Exchange Online Archiving    |
+   | Exchange Online非アクティブなユーザー アドオン             |
+   | Exchange Online Kiosk                            |
+   | Exchange Online Multi-Geo                        |
+   | Exchange Online プラン 1                           |
+   | Exchange Online POP                              |
+   | Exchange Online Protection                       |
+   | 情報バリア                             |
+   | Information Protection for Office 365 - Premium  |
+   | Information Protection for Office 365 - Standard |
+   | インサイト By MyAnalytics                          |
+   | Microsoft 365高度な監査                  |
+   | Microsoft Bookings                               |
+   | Microsoft Business Center                        |
+   | Microsoft MyAnalytics (フル機能)                     |
+   | Office 365 Advanced eDiscovery                   |
+   | Microsoft Defender for Office 365 (プラン 1)       |
+   | Microsoft Defender for Office 365 (プラン 2)       |
+   | Office 365 Privileged Access Management          |
+   | プレミアム暗号化のOffice 365                 |

@@ -19,12 +19,12 @@ ms.custom:
 description: 管理者は、電子メール (EOP) で送信スパム ポリシーを表示、作成、変更、および削除するExchange Online Protectionできます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 28463c30b4c256c813e5f949db43eceb060fa02a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ec82ce1f1049039fc6f4317662e5de016ba381d7
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219814"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483821"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>EOP で送信スパム フィルターを構成する
 
@@ -43,7 +43,7 @@ EOP は、スパムに対する組織の全体的な防御の一環として、�
 
 管理者は、既定の送信スパム ポリシーを表示、編集、および構成できます (ただし、削除はされません)。 さらに細分化するために、組織内の特定のユーザー、グループ、またはドメインに適用されるカスタム送信スパム ポリシーを作成することもできます。 カスタム ポリシーは既定のポリシーより常に優先されますが、カスタム ポリシーの優先度 (実行順序) を変更できます。
 
-送信スパム ポリシーは、Microsoft 365 Microsoft 365 Defender ポータルまたは PowerShell (Exchange Online のメールボックスを持つ Microsoft 365 組織の Exchange Online PowerShell、Exchange Online メールボックスのない組織のスタンドアロン EOP PowerShell) で構成できます。
+Microsoft 365 Microsoft 365 Defender ポータルまたは PowerShell (Exchange Online でメールボックスを持つ Microsoft 365 組織の Exchange Online PowerShell、スタンドアロンの EOP PowerShell で送信スパム ポリシーを構成できます。メールボックスを使用Exchange Online組織)。
 
 EOP の送信スパム ポリシーの基本的な要素は次のとおりです。
 
@@ -81,7 +81,7 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
   **注**:
 
   - Microsoft 365 管理センターで、対応する Azure Active Directory の役割にユーザーを追加すると、ユーザーには、必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
-  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
+  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
 
 - 送信スパム ポリシーの推奨設定については、「EOP 送信スパム フィルター ポリシー [設定」を参照してください](recommended-settings-for-eop-and-office365.md#eop-outbound-spam-policy-settings)。
 
@@ -204,7 +204,7 @@ Microsoft 365 Defender ポータルでカスタム送信スパム ポリシー�
 
    既定の送信スパム ポリシーの場合、[適用対象] セクションは使用できません (ポリシーはすべてのユーザーに適用されます)、ポリシーの名前を変更できません。
 
-ポリシーを有効または無効にするには、ポリシーの優先順位を設定するか、またはエンドユーザーの検疫通知を構成します。後続の各セクションをご覧ください。
+ポリシーを有効または無効にするには、ポリシーの優先度の順序を設定するか、エンドユーザーの通知を構成するには、次のセクションを参照してください。
 
 ### <a name="enable-or-disable-custom-outbound-spam-policies"></a>カスタム送信スパム ポリシーを有効または無効にする
 

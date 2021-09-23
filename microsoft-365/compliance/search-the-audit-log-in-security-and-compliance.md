@@ -21,12 +21,12 @@ description: Microsoft 365 コンプライアンス センターを使用して�
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: a77af4e72c5eaa5d66f120f05e91913c292051ab
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: abfd937b98ff863876060fcf6bbbe38c6b64f23f
+ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175768"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59477698"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>コンプライアンス センターで監査ログを検索する
 
@@ -409,9 +409,22 @@ ms.locfileid: "59175768"
         [情報バリア アクティビティ](#information-barriers-activities)
     :::column-end:::
     :::column:::
-        [Exchange 管理アクティビティ](#exchange-admin-audit-log)
+        [処理確認アクティビティ](#disposition-review-activities)
     :::column-end:::
 :::row-end:::
+
+:::row:::
+    :::column:::
+        [Exchange 管理アクティビティ](#exchange-admin-audit-log)
+    :::column-end:::
+    :::column:::
+        
+    :::column-end:::
+    :::column:::
+        
+    :::column-end:::
+:::row-end:::
+
 
 ### <a name="file-and-page-activities"></a>ファイル アクティビティとページ アクティビティ
 
@@ -984,6 +997,8 @@ Forms は、フォームの設計時および回答の分析時の協同作業�
 
 ### <a name="retention-policy-and-retention-label-activities"></a>アイテム保持ポリシーと保持ラベルのアクティビティ
 
+次の表では、[アイテム保持ポリシーと保持ラベル](retention.md)が作成、再構成、または削除された場合の構成アクティビティについて説明します。
+
 |フレンドリ名|操作​​|説明|
 |:-----|:-----|:-----|
 | アイテム保持ポリシーの構成された設定 |NewRetentionComplianceRule |管理者が新しいアイテム保持ポリシーの保持設定を構成しました。 保持設定には、アイテムを保持する期間、保持期間が終了した際のアイテムへの処理 （アイテムの削除、保持、またはアイテムの保持と削除など）が含まれます。 このアクティビティは、[New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule) コマンドレットの実行にも対応します。|
@@ -1031,6 +1046,18 @@ Office 365 監査ログに記録される情報バリアのアクティビティ
 | サイトに追加されたセグメント | SegmentsAdded | SharePoint、グローバル管理者、またはサイト所有者が、1 つ以上の情報バリア セグメントをサイトに追加しました。 |
 | サイトの変更されたセグメント | SegmentsChanged | SharePoint またはグローバル管理者が、サイトの 1 つ以上の情報バリア セグメントを変更しました。 |
 | サイトから削除されたセグメント | SegmentsRemoved | SharePoint またはグローバル管理者が、サイトから 1 つ以上の情報バリア セグメントを削除しました。 |
+||||
+
+### <a name="disposition-review-activities"></a>処理確認アクティビティ
+
+次の表では、アイテムが構成済みの保持期間が終了した場合に処理レビュー担当者が行ったアクティビティを一覧表示しています。 詳細については、「[コンテンツの表示と処理](disposition.md#viewing-and-disposing-of-content)」を参照してください。
+
+|**フレンドリ名**|**操作名**|**説明**|
+|:-----|:-----|:-----|
+|承認された廃棄|ApproveDisposal|処理レビュー担当者は、アイテムを次の処理段階に移動するためにアイテムの廃棄を承認しました。 アイテムが処理レビューの一意の段階または最終段階にある場合、廃棄承認ではアイテムを完全な削除の対象としてマークしました。|
+|延長保有期間|ExtendRetentiond|処理レビュー担当者は、アイテムの保持期間を延長しました。|
+|再ラベル付けされたアイテム|RelabelItem|処理レビュー担当者がアイテム保持ラベルにもう一度ラベルを付けました。|
+|追加されたレビュー担当者|AddReviewer|処理レビュー担当者は、現在の処理確認段階に 1 人以上の他のユーザーを追加しました。|
 ||||
 
 ### <a name="exchange-admin-audit-log"></a>Exchange 管理者監査ログ

@@ -11,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 9be51ab9204ac8a950bf316f716b70b824980ba8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ad85439d817013fa394fcb80bd5d47dbf391601f
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213794"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59484121"
 ---
 # <a name="register-new-devices-yourself"></a>新しいデバイスを自分で登録する
 
@@ -103,7 +103,7 @@ PowerShell ギャラリー web [ サイトGet-WindowsAutoPilotInfo.ps1](https://
 | 登録保留中 | 登録はまだ行っていません。 後で確認してください。 |
 | 登録に失敗しました | 登録を完了する必要があります。 詳細については [、「デバイス登録のトラブルシューティング](#troubleshooting-device-registration) 」を参照してください。 |
 | ユーザーの準備ができました | 登録が成功し、デバイスをユーザーに配信する準備が整いました。 Microsoft マネージド デスクトップセットアップをガイドしますので、それ以上の準備をする必要はありません。 |
-| Active | デバイスがユーザーに配信され、テナントに登録されています。 この状態は、デバイスを定期的に使用している場合も示します。 |
+| 有効 | デバイスがユーザーに配信され、テナントに登録されています。 この状態は、デバイスを定期的に使用している場合も示します。 |
 | 非アクティブ | デバイスがユーザーに配信され、テナントに登録されています。 ただし、最近デバイスを使用していない (過去 7 日間)。  | 
 
 #### <a name="troubleshooting-device-registration"></a>デバイス登録のトラブルシューティング
@@ -114,7 +114,7 @@ PowerShell ギャラリー web [ サイトGet-WindowsAutoPilotInfo.ps1](https://
 | ハードウェア ハッシュが無効 | このデバイスに指定したハードウェア ハッシュが正しく書式設定されていません。 ハードウェア ハッシュを再確認してから、再送信します。 |
 | デバイスが既に登録されている | このデバイスは既に組織に登録されています。 それ以上のアクションは必要ありません。 |
 | 別の組織によって要求されたデバイス | このデバイスは、既に別の組織によって要求されています。 デバイスのサプライヤーに確認します。 |
-| 予期しないエラーです | 要求を自動的に処理する必要があります。 サポートに問い合わせ、要求 ID を入力します。 <requestId> |
+| 予期しないエラーです | 要求を自動的に処理する必要があります。 サポートに問い合わせ、要求 ID を入力します。 \<requestId\> |
 
 ### <a name="check-the-image"></a>画像を確認する
 
@@ -124,7 +124,7 @@ PowerShell ギャラリー web [ サイトGet-WindowsAutoPilotInfo.ps1](https://
 
 ### <a name="autopilot-group-tag"></a>Autopilot グループ タグ
 
-管理者ポータルを使用してデバイスを登録すると、自動パイロット **グループ タグ** Microsoft365Managed_Autopilot自動的に割り当てされます。
+管理ポータルを使用してデバイスを登録する場合、パートナー センターを使用してデバイスの登録に記載されているデバイス プロファイルに関連付けられた自動パイロット グループ タグが自動的に [割り当てされます](register-devices-partner.md#register-devices-by-using-partner-center)。
 サービスは、すべてのデバイスMicrosoft マネージド デスクトップ毎日監視し、グループ タグをまだ持ってないデバイスに割り当てします。
 
 ### <a name="deliver-the-device"></a>デバイスの配信

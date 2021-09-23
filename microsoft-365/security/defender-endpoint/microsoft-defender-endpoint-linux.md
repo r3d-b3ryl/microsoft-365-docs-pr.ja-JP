@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c4d3d1d913dd08a48fb70419133c0c484b3248f8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: cdf022be492701e790606479877bf57f6f426094
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213574"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483581"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 用 Microsoft Defender for Endpoint
 
@@ -52,8 +52,7 @@ ms.locfileid: "59213574"
 
 > [!NOTE]
 > Microsoft Defender for Endpoint on Linux エージェントは [OMS エージェントから独立しています](/azure/azure-monitor/agents/agents-overview#log-analytics-agent)。 Microsoft Defender for Endpoint は、独自の独立したテレメトリ パイプラインに依存しています。
->
-> Microsoft Defender for Endpoint on Linux はまだ Azure Security Center に統合されていません。
+
 
 ### <a name="installation-instructions"></a>インストール手順
 

@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 潜在的な脅威、データ損失、およびアクセス許可の問題Microsoft 365 コンプライアンス センター監視するために、Microsoft 365 コンプライアンス センターまたは Microsoft 365 Defender ポータルにアラート ポリシーを作成します。
-ms.openlocfilehash: c6e233ec90c9143b07d32e71933c4c81b94f252b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1a5828d086b2bd09fbdd75faa714fd8c5a634d14
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59190171"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483773"
 ---
 # <a name="alert-policies-in-microsoft-365"></a>Microsoft 365 のアラート ポリシー
 
@@ -146,9 +146,9 @@ Microsoft は、管理者のアクセス許可の悪用、マルウェアのExch
 |**マルウェア キャンペーンの検出とブロック**|特定の種類のマルウェアを含む電子メール メッセージを組織内のユーザーに異常に多数送信しようとした場合に、アラートを生成します。 このイベントが発生した場合、感染したメッセージは Microsoft によってブロックされ、メールボックスに配信されません。 このポリシーの重大度 **が低** い設定です。|脅威の管理|E5/G5 または Defender for Office 365 P2 アドオン サブスクリプション|
 |**マルウェア キャンペーンがマルウェアとSharePoint検出OneDrive**|組織内のサイトまたはユーザー アカウントにあるファイルで、異常に多くのマルウェアやウイルスが検出SharePoint OneDriveアラートを生成します。 このポリシーには、 **重大度の高** い設定があります。|脅威の管理|E5/G5 または Defender for Office 365 P2 アドオン サブスクリプション|
 |**ZAP が無効になっているため、マルウェアがザップされない**| フィッシング メッセージの自動削除が無効になっているため、Microsoft がメールボックスへのマルウェア メッセージの配信を検出Zero-Hourアラートを生成します。 このポリシーには、[ **情報の重大度]** 設定があります。 |脅威の管理|E5/G5 または Defender for Office 365 P2 アドオン サブスクリプション|
-|**ユーザーの迷惑メール フォルダーが無効になっているため配信されるフィッシング**|Microsoft がユーザーの迷惑メール フォルダーが無効になっているのを検出すると警告を生成し、高信頼のフィッシング メッセージをメールボックスに配信できます。 このポリシーには、[ **情報の重大度]** 設定があります。|脅威の管理|E5/G5 または Defender for Office 365 P1 または P2 アドオン サブスクリプション|
-|**ETR オーバーライドが原因で配信されるフィッシング**|高信頼フィッシング メッセージをメールボックスに配信Exchangeメール トランスポート ルール (ETR) が検出されると、アラートを生成します。 このポリシーには、[ **情報の重大度]** 設定があります。 トランスポート ルール (メール フロー Exchange) の詳細については、「メール フロー ルール (トランスポート ルール[)」を](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)参照Exchange Online。|脅威の管理|E5/G5 または Defender for Office 365 P1 または P2 アドオン サブスクリプション|
-|**IP 許可ポリシーが原因で配信されるフィッシング**|高信頼のフィッシング メッセージをメールボックスに配信できる IP 許可ポリシーが検出されると、アラートが生成されます。 このポリシーには、[ **情報の重大度]** 設定があります。 IP 許可ポリシー (接続フィルター) の詳細については[、「Configure the default connection filter policy - Office 365」 を参照してください](../security/office-365-security/configure-the-connection-filter-policy.md)。|脅威の管理|E5/G5 または Defender for Office 365 P1 または P2 アドオン サブスクリプション|
+|**ユーザーの迷惑メール フォルダーが無効になっているため配信されるフィッシング**|Microsoft がユーザーの迷惑メール フォルダーが無効になっているのを検出すると警告を生成し、高信頼のフィッシング メッセージをメールボックスに配信できます。 このポリシーには、[ **情報の重大度]** 設定があります。|脅威の管理|E1/F1/G1、E3/F3/G3、または E5/G5|
+|**ETR オーバーライドが原因で配信されるフィッシング**|高信頼フィッシング メッセージをメールボックスに配信Exchangeメール トランスポート ルール (ETR) が検出されると、アラートを生成します。 このポリシーには、[ **情報の重大度]** 設定があります。 トランスポート ルール (メール フロー Exchange) の詳細については、「メール フロー ルール (トランスポート ルール[)」を](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)参照Exchange Online。|脅威の管理|E1/F1/G1、E3/F3/G3、または E5/G5|
+|**IP 許可ポリシーが原因で配信されるフィッシング**|高信頼のフィッシング メッセージをメールボックスに配信できる IP 許可ポリシーが検出されると、アラートが生成されます。 このポリシーには、[ **情報の重大度]** 設定があります。 IP 許可ポリシー (接続フィルター) の詳細については[、「Configure the default connection filter policy - Office 365」 を参照してください](../security/office-365-security/configure-the-connection-filter-policy.md)。|脅威の管理|E1/F1/G1、E3/F3/G3、または E5/G5|
 |**ZAP が無効になっているため、フィッシングがザップされない**| Microsoft が信頼度の高いフィッシング メッセージのメールボックスへの配信を検出すると、自動フィッシング メッセージの自動削除Zero-Hourが無効になっているため、アラートを生成します。 このポリシーには、[ **情報の重大度]** 設定があります。|脅威の管理|E5/G5 または Defender for Office 365 P2 アドオン サブスクリプション|
 |**テナントまたはユーザーオーバーライド** 1 が原因で配信 <sup>されるフィッシング</sup>|Microsoft が管理者またはユーザーの上書きを検出すると、メールボックスへのフィッシング メッセージの配信が許可された場合に警告を生成します。 上書きの例には、特定の送信者またはドメインからのメッセージを許可する受信トレイまたはメール フロー ルール、または特定の送信者またはドメインからのメッセージを許可するスパム対策ポリシーがあります。 このポリシーには、 **重大度の高** い設定があります。|脅威の管理|E5/G5 または Defender for Office 365 P2 アドオン サブスクリプション|
 |**疑わしいメール転送アクティビティ**|組織内のユーザーが不審な外部アカウントに電子メールを自動送信した場合にアラートを生成します。 これは、アカウントが侵害されたが、ユーザーを制限するほど重大ではない可能性がある動作に関する早期の警告です。 このポリシーには、 **重大度の高** い設定があります。 まれですが、このポリシーによって生成されるアラートは異常である可能性があります。 ユーザー アカウントが侵害されているかどうかを確認すると [良い考えです](../security/office-365-security/responding-to-a-compromised-email-account.md)。|脅威の管理|E1/F1/G1、E3/F3/G3、または E5/G5|
@@ -248,7 +248,7 @@ Microsoft は、管理者のアクセス許可の悪用、マルウェアのExch
 
 既定のアラート ポリシーが割り当てられているカテゴリを確認するには、「既定のアラート ポリシー」 [の表を参照してください](#default-alert-policies)。
 
-|Role|情報ガバナンス|データ損失防止|メール フロー|アクセス許可|脅威の管理|Others|
+|役割|情報ガバナンス|データ損失防止|メール フロー|アクセス許可|脅威の管理|Others|
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |監査ログ|||||||
 |ケース管理|||||||
@@ -324,7 +324,7 @@ Microsoft は、管理者のアクセス許可の悪用、マルウェアのExch
 
 コンプライアンス ポリシーによってトリガー Office 365 Cloud App Securityアラートがコンプライアンス センターの **[アラート**] ページに表示されます。 これには、アクティビティ ポリシーによってトリガーされるアラートと、アクティビティ の異常検出ポリシーによってトリガーされるアラートがOffice 365 Cloud App Security。 つまり、コンプライアンス センターですべての通知を表示できます。 Office 365 Cloud App Security E5 サブスクリプションまたは米国政府機関 G5 サブスクリプションOffice 365 Enterprise組織Office 365でのみ使用できます。 詳細については、「概要」[を参照Cloud App Security。](/cloud-app-security/what-is-cloud-app-security)
 
-Enterprise Mobility + Security E5 サブスクリプションの一部として、またはスタンドアロン サービスとして Microsoft Cloud App Security を使用している組織は、Microsoft 365 コンプライアンス センター または Microsoft 365 Defender ポータルで Microsoft 365 アプリとサービスに関連する Cloud App Security アラートを表示することもできます。
+Enterprise Mobility + Security E5 サブスクリプションMicrosoft Cloud App Securityスタンドアロン サービスとして使用されている組織は、Microsoft 365 アプリとサービスに関連する Cloud App Security アラートを表示することもできます。Microsoft 365 コンプライアンス センターまたはポータルMicrosoft 365 Defenderします。
 
 コンプライアンス センターまたは defender Cloud App Security内の通知のみを表示するには、[ソース] フィルターを使用して [削除]**を** Cloud App Security。
 

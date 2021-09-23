@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 577fc2cd228da6e09de01cf98e3e5deb9af7b730
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b2b5ef1857c246629c5d5fb9da067ccaa6a5339e
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177479"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59482825"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -97,9 +97,9 @@ Microsoft 365 Defender機能には、次のものが含まれます。
 - **侵害されたデバイス**、ユーザー ID、メールボックスの自己修復 - Microsoft 365 Defender は、AI による自動アクションとプレイブックを使用して、影響を受け取ったアセットを安全な状態に戻します。 Microsoft 365 Defenderスイート製品の自動修復機能を活用して、インシデントに関連する影響を受けたすべての資産を可能な限り自動的に修復します。
 - **製品間の脅威** の検出 - セキュリティ チームは、独自の組織の知識を活用して、さまざまな保護製品によって収集された生データに対して独自のカスタム クエリを作成することで、侵害の兆候を探し出します。 Microsoft 365 Defenderは、30 日間の過去の生信号と、エンドポイントと Defender 全体のアラート データへのクエリ ベースのアクセスを提供し、データOffice 365します。 
 
-## <a name="get-started"></a>作業の開始
+## <a name="get-started"></a>開始する
 
-Microsoft 365 Defenderポータルでサービスを有効にする前に、ライセンス要件を満Microsoft 365 Defender必要[security.microsoft.com。](https://security.microsoft.com) 詳しくは、次のトピックを参照してください。
+Microsoft 365 Defenderポータルでサービスを有効にする前に、ライセンス要件を満Microsoft 365 Defender必要[security.microsoft.com。](https://security.microsoft.com) 詳細については、以下を参照してください。
 
 - [ライセンス要件](prerequisites.md#licensing-requirements)
 - [Microsoft 365 Defender を有効にする](m365d-enable.md)
@@ -108,13 +108,13 @@ Microsoft 365 Defenderポータルでサービスを有効にする前に、ラ�
 
 Microsoft Learn のこの学習パスを使用すると、セキュリティMicrosoft 365 Defenderの特定、制御、修復に役立つ情報を理解できます。
 
-|トレーニング:|Microsoft 365 Defender を使用してサイバー攻撃を検出して対応する|
+|トレーニング: |Microsoft 365 Defender を使用してサイバー攻撃を検出して対応する|
 |---|---|
-|![Microsoft 365 Defenderのアイコンをクリックします。](../../media/microsoft-365-defender/m365-defender-secure-organization.svg)|Microsoft 365 Defender では、エンドポイント、ID、メール、アプリケーション間で脅威信号を統合し、巧妙なサイバー攻撃を包括的に保護することができます。 Microsoft 365 Defender は、インシデントを調査して対応し、継続的な悪意のあるサイバー セキュリティ活動を積極的に検索することができる中心的な環境です。<p> 1 時間 38 分 - ラーニング パス - 5 モジュール|
+|![Microsoft 365 Defender トレーニング アイコン。](../../media/microsoft-365-defender/m365-defender-secure-organization.svg)|Microsoft 365 Defender では、エンドポイント、ID、メール、アプリケーション間で脅威信号を統合し、巧妙なサイバー攻撃を包括的に保護することができます。 Microsoft 365 Defender は、インシデントを調査して対応し、継続的な悪意のあるサイバー セキュリティ活動を積極的に検索することができる中心的な環境です。<p> 1 時間 38 分 - ラーニング パス - 5 モジュール|
 
 > [!div class="nextstepaction"]
 > [スタート>](/learn/paths/defender-detect-respond/)
 
 
 ## <a name="see-also"></a>関連項目
-- [脅威保護機能を複数のユーザーに展開Microsoft 365 E5](/microsoft-365/solutions/deploy-threat-protection)
+- [Microsoft 365 テナントにランサムウェア保護を展開する](/microsoft-365/solutions/ransomware-protection-microsoft-365)

@@ -20,12 +20,12 @@ ms.custom:
 description: 管理者は、攻撃シミュレーション トレーニングを使用して、Microsoft 365 E5 または Microsoft Defender でシミュレートされたフィッシング攻撃とパスワード攻撃を実行して、Office 365プラン 2 組織に対して実行する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1fa10d0d29b76d1631dd349d255b6c386557b5b8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ece26ef2d41637d35afa8d719b6b785b733ca9f1
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214484"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59484157"
 ---
 # <a name="get-started-using-attack-simulation-training"></a>攻撃シミュレーション トレーニングの使用を開始する
 
@@ -44,9 +44,13 @@ ms.locfileid: "59214484"
 
 - さまざまなサブスクリプション間で攻撃シミュレーション トレーニングを利用Microsoft 365詳細については[、「Microsoft Defender for Office 365」を参照してください](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
 
-- この記事の手順を実行するには、Microsoft 365 Defenderポータルまたは Azure Active Directoryでアクセス許可を割り当てる必要があります。 具体的には、組織の管理、セキュリティ管理者、または次のいずれかの役割のメンバーである必要があります。
-  - **攻撃シミュレーターの管理者**: 攻撃シミュレーション キャンペーンのすべての側面を作成および管理します。
-  - **攻撃シミュレータペイロード作成者**: 管理者が後で開始できる攻撃ペイロードを作成します。
+- この記事の手順を実行するには、Azure Active Directoryにアクセス許可を割り当てる必要があります。  具体的には、次のいずれかの役割のメンバーである必要があります。
+  - **組織の管理**
+  - **セキュリティ管理者**
+  - **攻撃シミュレーション管理者** <sup>\*</sup> : 攻撃シミュレーション キャンペーンのすべての側面を作成および管理します。
+  - **攻撃ペイロードの作成者** <sup>\*</sup> : 管理者が後で開始できる攻撃ペイロードを作成します。
+
+  <sup>\*</sup>このロールにユーザーを追加すると、Microsoft 365 Defenderサポートされていません。
 
   詳細については、「管理者ポータル[のアクセス許可」または「Microsoft 365 Defenderロール](permissions-microsoft-365-security-center.md)[について」を参照してください](../../admin/add-users/about-admin-roles.md)。
 

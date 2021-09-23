@@ -20,12 +20,12 @@ description: 管理者は、組織の脅威保護Microsoft 365、組織で使用
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 06f87213131f8fccdd9cfd83d7bdf4ead10c0667
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 11d1f90278bec224bcc9f043abf57fa5a27010e5
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214283"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483125"
 ---
 # <a name="protect-against-threats"></a>脅威から保護する
 
@@ -43,7 +43,7 @@ ms.locfileid: "59214283"
 >
 > Defender for Office 365のほとんどのポリシーの手動構成をスキップするには、Standard レベルまたは Strict レベルで事前設定されたセキュリティ ポリシーを使用できます。 詳細については、「EOP でのセキュリティ ポリシーの事前設定」および[「Microsoft Defender for microsoft Defender for Office 365」 を参照してください](preset-security-policies.md)。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>Requirements
 
 ### <a name="subscriptions"></a>サブスクリプション
 
@@ -97,6 +97,7 @@ ms.locfileid: "59214283"
    - **[保護の設定** ] セクション:
      - **共通の添付ファイル フィルターを有効にする**: 選択 (オン) します。 [ファイル **の種類のカスタマイズ] を** クリックして、ファイルの種類を追加します。
      - **マルウェアに対して 0 時間自動削除を有効にする**: この設定が選択されているのを確認します。 マルウェアの ZAP の詳細については、「 [マルウェアのゼロ時間自動削除 (ZAP)」を参照してください](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-for-malware)。
+   - **検疫ポリシー**: 既定値 AdminOnlyAccessPolicy を選択したままにします。 検疫ポリシーは、検疫されたメッセージに対してユーザーが実行できる操作を定義します。 詳細については、「検疫ポリシー [」を参照してください](quarantine-policies.md)。
    - **[通知** ] セクション: 通知設定が選択されなかからなか確認します。
 
    完了したら、**[保存]** をクリックします。
@@ -133,10 +134,10 @@ ms.locfileid: "59214283"
 
    - **[操作** ] セクション: [ **アクションの編集]** をクリックし、開くフライアウトで次の設定を構成します。
      - **[メッセージの操作** ] セクション: 次の設定を構成します。
-       - **偽装ユーザーとしてメッセージが検出された場合は、[** メッセージを検疫 <sup>\*</sup> **する] を選択します**。
-       - **偽装ドメインとしてメッセージが検出された場合** は、[メッセージを検疫 <sup>\*</sup> **する] を選択します**。
-       - **メールボックス インテリジェンスが偽装ユーザーを** 検出した場合: [メッセージを受信者の迷惑メール フォルダー (標準) に移動する] または [メッセージを検疫 <sup>\*</sup> する (厳密]) を選択します。  
-       - **メッセージがスプーフィングとして検出された場合**: [メッセージを受信者の迷惑メール フォルダー **(標準** ) に移動する] または [メッセージを検疫する (Strict]) を **選択** します。
+       - **偽装ユーザーとしてメッセージが検出された場合は、[** メッセージを検疫 <sup>\*</sup> **する] を選択します**。 [**検疫ポリシーの適用**] ボックスが表示され [](quarantine-policies.md)、ユーザー偽装保護によって検疫されるメッセージに適用される検疫ポリシーを選択します。
+       - **偽装ドメインとしてメッセージが検出された場合** は、[メッセージを検疫 <sup>\*</sup> **する] を選択します**。 [**検疫ポリシーの適用**] ボックスが表示され [](quarantine-policies.md)、ドメイン偽装保護によって検疫されるメッセージに適用される検疫ポリシーを選択します。
+       - **メールボックス インテリジェンスが偽装ユーザーを** 検出した場合: [メッセージを受信者の迷惑メール フォルダー (標準) に移動する] または [メッセージを検疫 <sup>\*</sup> する (厳密]) を選択します。   [メッセージの **検疫] を** 選択すると、[検疫ポリシーの適用] ボックスが [](quarantine-policies.md)表示され、メールボックス インテリジェンス保護によって検疫されるメッセージに適用される検疫ポリシーを選択します。
+       - **メッセージがスプーフィングとして検出された場合**: [メッセージを受信者の迷惑メール フォルダー **(標準** ) に移動する] または [メッセージを検疫する (Strict]) を **選択** します。  [メッセージの **検疫] を** 選択すると、[検疫ポリシーの適用] ボックスが [](quarantine-policies.md)表示され、スプーフィング インテリジェンス保護によって検疫されるメッセージに適用される検疫ポリシーを選択します。
      - **[インジケーター&ヒント** : 次の設定を構成します。
        - **[最初の連絡先を表示安全性のヒント:** 選択 (オン) します。
        - **[ユーザーの偽装を表示安全性のヒント:** <sup>\*</sup> 選択 (オン) します。
@@ -175,15 +176,14 @@ ms.locfileid: "59214283"
        - **フィッシング :**[検疫メッセージ **] を選択します**。
        - **信頼度の高いフィッシング**: [ **検疫メッセージを確認する]** が選択されています。
        - **一括**: [ **メッセージを迷惑メール フォルダーに** 移動する] が選択されている (標準) か、[検疫メッセージ ] (厳密) **を選択します** 。
+
+       [検疫メッセージ] を選択するアクションごとに、[検疫ポリシーの選択] ボックスが表示[](quarantine-policies.md)され、スパム対策保護によって検疫されたメッセージに適用される検疫ポリシーを選択します。 
+
      - **この日数の検疫でスパムを保持** する : 値 **を 30 日間確認** します。
      - **[スパムの安全に関するヒントを有効** にする]: この設定が選択 (オン) になっていることを確認します。
      - **ゼロ時間自動削除 (ZAP) を有効にする**: この設定が選択 (オン) になっていることを確認します。
        - **フィッシング メッセージを有効にする**: この設定が選択 (オン) になっていることを確認します。 詳細については、「フィッシングの [ゼロ時間自動削除 (ZAP)」を参照してください](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-for-phishing)。
        - **スパム メッセージを有効にする**: この設定が選択 (オン) になっていることを確認します。 詳細については、「スパムの [ゼロ時間自動削除 (ZAP)」を参照してください](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-for-spam)。
-     - **[通知** ] セクション:
-       - [エンドユーザー **のスパム通知を有効にする] を選択します**。
-         - **エンド ユーザーのスパム通知を 1 日ごとに** 送信する: 値 **を 3 日ごとに確認** します。
-         - **[言語**]: [既定値] の **値を確認** するか、言語を選択します。
 
      完了したら、**[保存]** をクリックします。
 
@@ -211,7 +211,7 @@ ms.locfileid: "59214283"
      > [!IMPORTANT]
      > **[添付ファイル] セーフ SharePoint、OneDrive、Microsoft Teams** を有効にする前に、監査ログが組織で有効になっていることを確認してください。 このアクションは、通常、監査ログ ロールが割り当てられているユーザーが実行Exchange Online。 詳細については、「監査ログ検索 [を有効またはオフにする」を参照してください](../../compliance/turn-audit-log-search-on-or-off.md)。
 
-   - **[クライアントセーフドキュメントOffice有効** にする: この設定をオンにします ( ![ トグルオン ](../../media/scc-toggle-on.png) )。 この機能は、ライセンスまたはライセンスを使用する場合Microsoft 365 E5有効Microsoft 365 E5 Security注意してください。
+   - **[クライアントセーフドキュメントOffice有効** にする: この設定をオンにします ( ![ トグルオン ](../../media/scc-toggle-on.png) )。 この機能は、必要な種類のライセンスでのみ利用できます。 詳細については、「ドキュメントの[セーフ」を参照Microsoft 365 E5。](safe-docs.md)
    - **[ドキュメント] でファイル** が悪意のあると特定セーフ場合でも、保護されたビューをクリックできます。この設定がオフになっていることを確認します (トグル オフ ![ ](../../media/scc-toggle-off.png) )。
 
    完了したら、[保存] を **クリックします。**
@@ -225,6 +225,7 @@ ms.locfileid: "59214283"
    - **[ユーザーとドメイン**] ページ: これは最初のポリシーであり、カバレッジを最大化する必要がある可能性が高いので [](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)、[ドメイン] ボックスに受け入れドメインを入力する **必要** があります。 それ以外の場合は、[ **ユーザー** とグループ] **ボックスを使用** して、より詳細な制御を行います。 [これらのユーザー、グループ、ドメインを除外する] を選択し、値を入力することで **、例外を** 指定できます。
    - **設定** ページ:
      - **セーフ添付ファイル不明のマルウェア応答**: [ブロック] を **選択します**。
+     - **検疫ポリシー**: 既定値は空白で、AdminOnlyAccessPolicy ポリシーが使用されます。 検疫ポリシーは、検疫されたメッセージに対してユーザーが実行できる操作を定義します。 詳細については、「検疫ポリシー [」を参照してください](quarantine-policies.md)。
      - **検出された添付ファイルを含む添付ファイル** を **リダイレクトする:** リダイレクトを有効にする : この設定をオン (選択) し、検出されたメッセージを受信する電子メール アドレスを入力します。
      - **スキャンが完了できないセーフ添付** ファイル検出応答を適用します (タイムアウトまたはエラー) : この設定が選択されているのを確認します。
 
@@ -319,10 +320,10 @@ SharePoint Online または OneDrive for Business のファイルが悪意のあ
 > [!NOTE]
 > 構成が完了したら、次のリンクを使用してワークロード調査を開始します。
 >
->- [脅威保護の状態レポート](view-email-security-reports.md#threat-protection-status-report)
->- [Defender の検疫済Microsoft 365 Defenderを管理するには、このポータルを使用Office 365](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365)
->- [悪意のあるファイルがオンライン、オンライン、SharePoint、またはOneDriveにMicrosoft Teams](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
->- [検疫済みメッセージとファイルを管理者として管理Microsoft 365](manage-quarantined-messages-and-files.md)
+> - [脅威保護の状態レポート](view-email-security-reports.md#threat-protection-status-report)
+> - [Defender の検疫済Microsoft 365 Defenderを管理するには、このポータルを使用Office 365](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365)
+> - [悪意のあるファイルがオンライン、オンライン、SharePoint、またはOneDriveにMicrosoft Teams](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
+> - [検疫済みメッセージとファイルを管理者として管理Microsoft 365](manage-quarantined-messages-and-files.md)
 
 ## <a name="post-setup-tasks-and-next-steps"></a>セットアップ後のタスクと次の手順
 

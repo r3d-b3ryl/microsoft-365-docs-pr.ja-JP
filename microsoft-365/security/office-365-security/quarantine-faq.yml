@@ -20,12 +20,12 @@ metadata:
   ms.custom: seo-marvel-apr2020
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: c8f821381d8e51b843f3a213d8daec5ef6ffaf5f
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.openlocfilehash: 640a019c86e5313b81003136b2d9842d8784e29a
+  ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59211614"
+  ms.lasthandoff: 09/23/2021
+  ms.locfileid: "59483569"
 title: 検疫済みメッセージに関するよく寄せられる質問
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -56,11 +56,14 @@ sections:
   - question: >
       マルウェアに対して検疫されたメッセージを管理する方法
     answer: >
-      マルウェアに対して検疫されたメッセージを管理できるのは管理者のみです。 詳細については、「検疫済み [メッセージとファイルを管理者として管理する」を参照してください](manage-quarantined-messages-and-files.md)。
+      既定では、マルウェアに対して検疫されたメッセージを管理できるのは管理者のみです。 詳細については、「検疫済み [メッセージとファイルを管理者として管理する」を参照してください](manage-quarantined-messages-and-files.md)。
+
+
+      ただし、管理者は検疫ポリシーを作成し、ユーザーに対してより多くの機能を定義するマルウェア対策ポリシーに適用できます。 詳細については、「検疫ポリシー [」を参照してください](quarantine-policies.md)。
   - question: >
       スパムを検疫する方法
     answer: >
-      既定では、スパム フィルターによってスパムまたはバルク メールとして分類されたメッセージは、ユーザーのメールボックスに配信され、迷惑メール フォルダーに移動されます。 ただし、スパムまたはバルク メール メッセージを検疫するスパム対策ポリシーを作成および構成できます。 詳細については、「[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
+      既定では、スパム フィルターによってスパムまたはバルク メールとして分類されたメッセージは、ユーザーのメールボックスに配信され、迷惑メール フォルダーに移動されます。 ただし、スパム対策ポリシーを構成して、スパムメッセージまたはバルク メール メッセージを検疫することもできます。 詳細については、「[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
   - question: >
       検疫へのアクセス権をユーザーに与える方法
     answer: >
@@ -68,7 +71,33 @@ sections:
   - question: >
       検疫でエンド ユーザーがアクセスできるメッセージ
     answer: >
-      ユーザーは、スパム、バルク メール、および (2020 年 4 月現在) フィッシング メッセージ (受信者である) にアクセスできます。 エンド ユーザーは、メール フロー ルール (トランスポート ルールとも呼ばれる) でホストされた検疫アクションにメッセージを配信するために検疫されたマルウェア、信頼性の高いフィッシング、またはメッセージにアクセスできない。 検疫済みメッセージにアクセスするユーザーの詳細については、「検疫済みメッセージをユーザーとして検索して解放する」 [を参照してください](find-and-release-quarantined-messages-as-a-user.md)。
+      検疫ポリシーは、メッセージが検疫された理由 (サポートされている機能の場合) に基づいて、ユーザーが検疫されたメッセージにアクセスできるかどうか [を定義します](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)。 詳細については、「検疫ポリシー [」を参照してください](quarantine-policies.md)。
+
+
+      既定では、ユーザーは受信者である検疫済みメッセージの次の種類にアクセスできます。
+
+
+      - **スパム対策ポリシー**: スパム、バルク メール、フィッシング メッセージ (高信頼のフィッシング メッセージではありません)。
+
+      - フィッシング対策 **ポリシー**: スプーフィング送信者、ユーザー偽装保護 (Office 365 用 Defender)、ドメイン偽装保護 (Office 365 用 Defender)、およびメールボックス インテリジェンス保護 (Defender for Office 365)。
+
+
+      詳細については、「検疫済み [メッセージをユーザーとして検索して解放する」を参照してください](find-and-release-quarantined-messages-as-a-user.md)。
+
+
+      既定では、エンド ユーザーは受信者である次の種類の検疫済みメッセージにアクセスできません。
+
+
+      - **スパム対策ポリシー**: 高信頼フィッシング。
+
+      - **マルウェア対策ポリシー**
+
+      - **セーフ 添付ファイル (Defender for Office 365)**: セーフ 添付ファイル ポリシーからの電子メール メッセージと、SharePoint、OneDrive、および Microsoft Teams の セーフ 添付ファイルからのファイル。
+
+      - **メール フロー ルール (トランスポート ルール)**: メール フロールールでホストされた検疫アクションにメッセージを配信するために検疫されたメッセージ。
+
+
+      詳細については、「検疫済み [メッセージとファイルを管理者として管理する」を参照してください](manage-quarantined-messages-and-files.md)。
   - question: >
       検疫に保持されるメッセージの期間
     answer: >

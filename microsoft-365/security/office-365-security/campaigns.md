@@ -19,12 +19,12 @@ ms.collection:
 description: 詳細については、「Microsoft Defender for microsoft Defender for Office 365」を参照してください。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ca5049b234972ef55b951c0886a9d4074613c860
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5bc2bb1adc39aae70f8ace89bf0efaaf5a7a5c5a
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219884"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59482849"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Microsoft Defender のキャンペーン ビュー (Office 365
 
@@ -45,7 +45,7 @@ ms.locfileid: "59219884"
 
 キャンペーンとは、1 つまたは複数の組織に対する組織的なメール攻撃のことです。 資格情報と会社のデータを盗む電子メール攻撃は、大規模で収益性の高い業界です。 攻撃を止めようとするテクノロジが増加する中、攻撃者は継続的な成功を確実に実現するためにメソッドを変更します。
 
-Microsoft は、サービス全体で膨大な量のフィッシング対策、スパム対策、マルウェア対策データを活用して、キャンペーンの特定に役立ちます。 攻撃情報を分析し、いくつかの要因に従って分類します。 例:
+Microsoft は、サービス全体で膨大な量のフィッシング対策、スパム対策、マルウェア対策データを活用して、キャンペーンの特定に役立ちます。 攻撃情報を分析し、いくつかの要因に従って分類します。 次に例を示します。
 
 - **攻撃元**: 送信元 IP アドレスと送信者メール ドメイン。
 - **メッセージのプロパティ**: メッセージのコンテンツ、スタイル、トーン。
@@ -88,7 +88,7 @@ Microsoft は、サービス全体で膨大な量のフィッシング対策、�
 
 - **種類**: この値は、**フィッシングまたはマルウェア****のいずれかです**。
 
-- **サブ** タイプ : この値には、キャンペーンの詳細が含まれる。 例:
+- **サブ** タイプ : この値には、キャンペーンの詳細が含まれる。 次に例を示します。
   - **フィッシング**: 利用可能な場合は、このキャンペーンによってフィッシングされているブランド。 たとえば `Microsoft` `365` `Unknown` 、、、、、、、 `Outlook` `DocuSign` などです。
   - **マルウェア**: たとえば、 `HTML/PHISH` または `HTML/<MalwareFamilyName>` .
 
@@ -225,7 +225,7 @@ Microsoft Defender for Endpoint サブスクリプションをお持ちの場合
   |**テナント ブロック**<sup>\*\*</sup>|`SFV:SKA`|スパム対策ポリシーの設定により、スパム フィルターによってメッセージがブロックされました。 たとえば、送信者が許可されている送信者リストまたは許可されたドメイン リストに含めらたとします。|
   |**ユーザー許可**<sup>\*</sup>|`SFV:SFE`|送信者がユーザーの [送信者] リストに含セーフスキップされました。|
   |**ユーザー ブロック**<sup>\*\*</sup>|`SFV:BLK`|送信者がユーザーの [送信者のブロック] リストに含っていたため、メッセージはスパム フィルターによってブロックされました。|
-  |**ZAP**|該当なし|[ゼロ時間自動削除 (ZAP) は](zero-hour-auto-purge.md) 、配信されたメッセージを迷惑メール フォルダーまたは検疫に移動しました。 スパム対策ポリシーでアクションを構成します。|
+  |**ZAP**|該当なし|[ゼロ時間自動削除 (ZAP) は](zero-hour-auto-purge.md) 、配信されたメッセージを迷惑メール フォルダーまたは検疫に移動しました。 スパム対策ポリシーでアクション [を構成します](configure-your-spam-filter-policies.md)。|
   |
 
   <sup>\*</sup> 許可されたメッセージがサービスによってブロックされている可能性が高いので、スパム対策ポリシーを確認します。

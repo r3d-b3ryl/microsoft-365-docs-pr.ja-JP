@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 5c63da586affc23bea26e416479fa2e3e7a26d73
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3c35f8315423bd7245546835e5963c7968eb4c12
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177423"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483989"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender の新機能
 
@@ -48,7 +48,9 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 
 
 
-
+## <a name="september-2021"></a>2021 年 9 月
+- (GA)Microsoft Defender for Office 365イベント データは、イベント ストリーミング API Microsoft 365 Defender使用できます。 イベントの種類の可用性と状態は、ストリーミング API のサポートされるイベントMicrosoft 365 Defender[で確認できます](supported-event-types.md)。
+- (GA)高度なOffice 365利用可能なデータの Microsoft Defender が一般提供されています。
 
 ## <a name="august-2021"></a>2021 年 8 月
 - (プレビュー)Microsoft Defender for Office 365高度な検索で利用可能なデータ

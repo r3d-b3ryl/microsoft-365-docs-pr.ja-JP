@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b8fff1c53575b7de7d3c627c5bc79d00f97d6e39
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 36d4c90eb02bc9fb147ed0a28481444508be068e
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179296"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483521"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 上のエンドポイント用 Microsoft Defender の基本設定を設定する
 
@@ -61,7 +61,7 @@ ms.locfileid: "59179296"
 
 |説明|値|
 |---|---|
-|**Key**|antivirusEngine|
+|**キー**|antivirusEngine|
 |**データ型**|辞書 (入れ子になった基本設定)|
 |**コメント**|辞書の内容の説明については、以下のセクションを参照してください。|
 |
@@ -76,9 +76,9 @@ ms.locfileid: "59179296"
 
 |説明|値|
 |---|---|
-|**Key**|enableRealTimeProtection|
-|**データ型**|Boolean|
-|**指定可能な値**|true (既定) <p> false|
+|**キー**|enableRealTimeProtection|
+|**データ型**|ブール型|
+|**可能な値**|true (既定) <p> false|
 |
 
 #### <a name="enable--disable-passive-mode"></a>パッシブ モードを有効/無効にする
@@ -97,11 +97,28 @@ ms.locfileid: "59179296"
 
 |説明|値|
 |---|---|
-|**Key**|passiveMode|
-|**データ型**|Boolean|
+|**キー**|passiveMode|
+|**データ型**|ブール型|
 |**指定可能な値**|false (既定) <p> true|
 |**コメント**|Defender for Endpoint version 100.67.60 以上で使用できます。|
 |
+  
+#### <a name="run-a-scan-after-definitions-are-updated"></a>定義の更新後にスキャンを実行する
+
+新しいセキュリティ インテリジェンス更新プログラムがデバイスにダウンロードされた後にプロセス スキャンを開始するかどうかを指定します。 この設定を有効にすると、デバイスの実行中のプロセスでウイルス対策スキャンがトリガーされます。
+
+<br>
+
+****
+
+|説明|値|
+|---|---|
+|**キー**|scanAfterDefinitionUpdate|
+|**データ型**|ブール型|
+|**指定可能な値**|false (既定) <p> true|
+|**コメント**|Defender for Endpoint version 101.41.51 以上で使用できます。|
+|
+  
 
 #### <a name="exclusion-merge-policy"></a>除外マージ ポリシー
 
@@ -113,7 +130,7 @@ ms.locfileid: "59179296"
 
 |説明|値|
 |---|---|
-|**Key**|exclusionsMergePolicy|
+|**キー**|exclusionsMergePolicy|
 |**データ型**|String|
 |**指定可能な値**|merge (既定) <p> admin_only|
 |**コメント**|Defender for Endpoint version 100.83.73 以上で使用できます。|
@@ -130,7 +147,7 @@ ms.locfileid: "59179296"
 
 |説明|値|
 |---|---|
-|**Key**|除外|
+|**キー**|除外|
 |**データ型**|辞書 (入れ子になった基本設定)|
 |**コメント**|辞書の内容の説明については、以下のセクションを参照してください。|
 |
@@ -145,7 +162,7 @@ ms.locfileid: "59179296"
 
 |説明|値|
 |---|---|
-|**Key**|$type|
+|**キー**|$type|
 |**データ型**|String|
 |**指定可能な値**|excludedPath <p> excludedFileExtension <p> excludedFileName|
 |
@@ -160,7 +177,7 @@ ms.locfileid: "59179296"
 
 |説明|値|
 |---|---|
-|**Key**|path|
+|**キー**|path|
 |**データ型**|String|
 |**指定可能な値**|有効なパス|
 |**コメント**|適用 *できるのは、$type**が excludedPath である場合のみです。*|
@@ -176,8 +193,8 @@ ms.locfileid: "59179296"
 
 |説明|値|
 |---|---|
-|**Key**|isDirectory|
-|**データ型**|Boolean|
+|**キー**|isDirectory|
+|**データ型**|ブール型|
 |**指定可能な値**|false (既定) <p> true|
 |**コメント**|適用 *できるのは、$type**が excludedPath である場合のみです。*|
 |
@@ -192,7 +209,7 @@ ms.locfileid: "59179296"
 
 |説明|値|
 |---|---|
-|**Key**|拡張機能|
+|**キー**|拡張機能|
 |**データ型**|String|
 |**指定可能な値**|有効なファイル拡張子|
 |**コメント**|適用 *できるのは* 、$type FileExtension が *除外されている場合のみです。*|
@@ -208,7 +225,7 @@ ms.locfileid: "59179296"
 
 |説明|値|
 |---|---|
-|**Key**|name|
+|**キー**|name|
 |**データ型**|String|
 |**指定可能な値**|任意の文字列|
 |**コメント**|ファイルが excludedFileName *$type**場合にのみ適用されます。*|
@@ -224,7 +241,7 @@ ms.locfileid: "59179296"
 
 |説明|値|
 |---|---|
-|**Key**|allowedThreats|
+|**キー**|allowedThreats|
 |**データ型**|文字列の配列|
 |
 
@@ -238,9 +255,9 @@ ms.locfileid: "59179296"
 
 |説明|値|
 |---|---|
-|**Key**|disallowedThreatActions|
+|**キー**|disallowedThreatActions|
 |**データ型**|文字列の配列|
-|**指定可能な値**|allow (ユーザーによる脅威の許可を制限する) <p> 復元 (検疫からの脅威の復元をユーザーに制限する)|
+|**可能な値**|allow (ユーザーによる脅威の許可を制限する) <p> 復元 (検疫からの脅威の復元をユーザーに制限する)|
 |**コメント**|Defender for Endpoint version 100.83.73 以上で使用できます。|
 |
 
@@ -254,7 +271,7 @@ ms.locfileid: "59179296"
 
 |説明|値|
 |---|---|
-|**Key**|threatTypeSettings|
+|**キー**|threatTypeSettings|
 |**データ型**|辞書 (入れ子になった基本設定)|
 |**コメント**|辞書の内容の説明については、以下のセクションを参照してください。|
 |
@@ -269,7 +286,7 @@ ms.locfileid: "59179296"
 
 |説明|値|
 |---|---|
-|**Key**|キー|
+|**キー**|キー|
 |**データ型**|String|
 |**指定可能な値**|potentially_unwanted_application <p> archive_bomb|
 |
@@ -288,7 +305,7 @@ ms.locfileid: "59179296"
 
 |説明|値|
 |---|---|
-|**Key**|値|
+|**キー**|値|
 |**データ型**|String|
 |**指定可能な値**|監査 (既定) <p> block <p> off|
 |
@@ -303,7 +320,7 @@ ms.locfileid: "59179296"
 
 |説明|値|
 |---|---|
-|**Key**|threatTypeSettingsMergePolicy|
+|**キー**|threatTypeSettingsMergePolicy|
 |**データ型**|String|
 |**指定可能な値**|merge (既定) <p> admin_only|
 |**コメント**|Defender for Endpoint version 100.83.73 以上で使用できます。|
@@ -319,7 +336,7 @@ ms.locfileid: "59179296"
 
 |説明|値|
 |---|---|
-|**Key**|scanResultsRetentionDays|
+|**キー**|scanResultsRetentionDays|
 |**データ型**|String|
 |**指定可能な値**|90 (既定)。 使用できる値は、1 日から 180 日です。|
 |**コメント**|Defender for Endpoint version 101.04.76 以上で使用できます。|
@@ -335,7 +352,7 @@ ms.locfileid: "59179296"
 
 |説明|値|
 |---|---|
-|**Key**|scanHistoryMaximumItems|
+|**キー**|scanHistoryMaximumItems|
 |**データ型**|String|
 |**指定可能な値**|10000 (既定値)。 許可される値は、5000 アイテムから 15,000 アイテムまでです。|
 |**コメント**|Defender for Endpoint version 101.04.76 以上で使用できます。|
@@ -351,7 +368,7 @@ ms.locfileid: "59179296"
 
 |説明|値|
 |---|---|
-|**Key**|cloudService|
+|**キー**|cloudService|
 |**データ型**|辞書 (入れ子になった基本設定)|
 |**コメント**|辞書の内容の説明については、以下のセクションを参照してください。|
 |
@@ -366,9 +383,9 @@ ms.locfileid: "59179296"
 
 |説明|値|
 |---|---|
-|**Key**|enabled|
-|**データ型**|Boolean|
-|**指定可能な値**|true (既定) <p> false|
+|**キー**|enabled|
+|**データ型**|ブール型|
+|**可能な値**|true (既定) <p> false|
 |
 
 #### <a name="diagnostic-collection-level"></a>診断コレクション レベル
@@ -381,9 +398,9 @@ ms.locfileid: "59179296"
 
 |説明|値|
 |---|---|
-|**Key**|diagnosticLevel|
+|**キー**|diagnosticLevel|
 |**データ型**|String|
-|**指定可能な値**|省略可能 (既定) <p> 必須|
+|**指定可能な値**|省略可能 (既定) <p> 必須出席者|
 |
 
 #### <a name="enable--disable-automatic-sample-submissions"></a>自動サンプル申請を有効または無効にする
@@ -400,7 +417,7 @@ ms.locfileid: "59179296"
 
 |説明|値|
 |---|---|
-|**Key**|automaticSampleSubmissionConsent|
+|**キー**|automaticSampleSubmissionConsent|
 |**データ型**|String|
 |**指定可能な値**|none <p> safe (既定) <p> すべての|
 |
@@ -415,9 +432,9 @@ ms.locfileid: "59179296"
 
 |説明|値|
 |---|---|
-|**Key**|automaticDefinitionUpdateEnabled|
-|**データ型**|Boolean|
-|**指定可能な値**|true (既定) <p> false|
+|**キー**|automaticDefinitionUpdateEnabled|
+|**データ型**|ブール型|
+|**可能な値**|true (既定) <p> false|
 |
 
 ## <a name="recommended-configuration-profile"></a>推奨される構成プロファイル
@@ -472,6 +489,7 @@ ms.locfileid: "59179296"
       "enableRealTimeProtection":true,
       "maximumOnDemandScanThreads":1,
       "passiveMode":false,
+      "scanAfterDefinitionUpdate":false,
       "exclusionsMergePolicy":"merge",
       "exclusions":[
          {
@@ -537,9 +555,9 @@ python -m json.tool mdatp_managed.json
 
 JSON が整形式の場合、上記のコマンドはターミナルに出力し、終了コードを返します `0` 。 それ以外の場合は、問題を説明するエラーが表示され、コマンドは終了コードを返します `1` 。
 
-## <a name="verifying-that-the-mdatp_managedjson-file-is-working-as-expected"></a>ファイル上のmdatp_managed.jsが正常に動作しているのを確認する
+## <a name="verifying-that-the-mdatp_managedjson-file-is-working-as-expected"></a>mdatp_managed.json ファイルが期待通り動作しているのを確認する
 
-/etc/opt/microsoft/mdatp/managed/mdatp_managed.jsが正しく動作することを確認するには、次の設定の横に "[managed]" と表示されます。
+/etc/opt/microsoft/mdatp/managed/mdatp_managed.json が正しく動作することを確認するには、次の設定の横に "[managed]" と表示されます。
 
 - cloud_enabled
 - cloud_automatic_sample_submission_consent
@@ -548,8 +566,8 @@ JSON が整形式の場合、上記のコマンドはターミナルに出力し
 - automatic_definition_update_enabled
 
 > [!NOTE]
-> 有効にmdatp_managed.js、wdavdaemon の再起動は必要ありません。
+> mdatp_managed.json を有効にするために、wdavdaemon の再起動は必要ありません。
 
 ## <a name="configuration-profile-deployment"></a>構成プロファイルの展開
 
-企業の構成プロファイルを構築したら、企業が使用している管理ツールを使用して展開できます。 Defender for Endpoint on Linux は *、/etc/opt/microsoft/mdatp/managed/mdatp_managed.jsファイルから管理構成を読み取* ります。
+企業の構成プロファイルを構築したら、企業が使用している管理ツールを使用して展開できます。 Defender for Endpoint on Linux は *、/etc/opt/microsoft/mdatp/managed/mdatp_managed.json ファイルから管理構成を読み取* ります。

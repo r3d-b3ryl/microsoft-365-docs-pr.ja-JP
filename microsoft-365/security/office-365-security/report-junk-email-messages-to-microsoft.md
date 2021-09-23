@@ -17,12 +17,12 @@ ms.collection:
 description: 管理者は、良いメッセージと悪いメッセージやファイルを分析のために Microsoft に報告するさまざまな方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 898fd42e687ec9d5776c1791ed353937921af4ff
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c78b606ed63e18d23bb1d1a6ebf72ae2617e9386
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179160"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483389"
 ---
 # <a name="report-messages-and-files-to-microsoft"></a>メッセージとファイルを Microsoft に報告する
 
@@ -48,8 +48,6 @@ Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Pro
 |[メール フロー ルールを使用して、ユーザーが Microsoft に報告する内容を確認する](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft)|ユーザーが分析のために Microsoft にメッセージを報告したときに通知するメール フロー ルール (トランスポート ルールとも呼ばれる) を作成する方法について説明します。|
 |[分析のために、マルウェアおよびマルウェアでないファイルを Microsoft に提出する](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)|Microsoft セキュリティ インテリジェンス サイトを使用して、添付ファイルやその他のファイルを送信します。|
 |
-
-スパムメッセージまたはフィッシング メッセージが配信される代わりに検疫された場合、ユーザーはポータルの検疫から Microsoft にメッセージをMicrosoft 365 Defenderできます。 詳細については、「検疫済み[メッセージをユーザーとして](find-and-release-quarantined-messages-as-a-user.md)検索して解放する」を参照Microsoft 365。
 
 > [!NOTE]
 > Microsoft への提出からのデータは、北米のデータ センターの Office 365 コンプライアンスの境界に存在します。 データは、フィルターの有効性を向上させるため、エンジニアリング チームのアナリストによってレビューされます。

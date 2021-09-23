@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 電子情報開示ツールMicrosoft 365電子メール メッセージに添付された暗号化されたドキュメントを処理し、SharePoint Online および OneDrive for Businessに保存する方法について説明します。
-ms.openlocfilehash: 0662b6a2bbedefc2dd996491171dc1abde49bb8e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b816990e0524222938233089e6f920b753406544
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218974"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483065"
 ---
 # <a name="decryption-in-microsoft-365-ediscovery-tools"></a>電子情報開示ツールMicrosoft 365復号化
 
@@ -86,3 +86,15 @@ Microsoft 電子情報開示ツールは、Microsoft 暗号化テクノロジで
 Microsoft 暗号化テクノロジで暗号化されたファイルをプレビュー、確認、およびエクスポートするには、RMS Decrypt ロールを割り当てる必要があります。 また、このロールを割り Advanced eDiscovery当てる必要があります。
 
 この役割は、既定では、電子情報開示マネージャーの役割グループに割り当てられます。この役割は、既定で [アクセス許可] ページMicrosoft 365 コンプライアンス センター。 RMS 復号化の役割の詳細については、「電子情報開示の [アクセス許可を割り当てる」を参照してください](assign-ediscovery-permissions.md#rms-decrypt)。
+
+### <a name="decrypting-rms-protected-email-messages-and-encrypted-file-attachments-using-content-search-or-core-ediscovery"></a>コンテンツ検索または Core 電子情報開示を使用した RMS で保護された電子メール メッセージと暗号化された添付ファイルの復号化
+
+コンテンツ検索の結果に含まれる権利で保護された (RMS で保護された) 電子メール メッセージは、エクスポート時に復号化されます。 さらに [、Microsoft](encryption.md) 暗号化テクノロジで暗号化され、検索結果に含まれる電子メール メッセージに添付されているファイルは、エクスポート時に復号化されます。 この復号化機能は、電子情報開示マネージャー役割グループのメンバーに対して既定で有効になっています。 これは、RMS Decrypt 管理役割が既定でこの役割グループに割り当てられているためです。 暗号化された電子メール メッセージと添付ファイルをエクスポートする場合は、次のことを念頭に置いておきます。
+  
+- 前に説明したように、RMS で保護されたメッセージをエクスポートするときに暗号化解除するには、検索結果を個々のメッセージとしてエクスポートする必要があります。 検索結果を PST ファイルにエクスポートする場合、RMS で保護されたメッセージは暗号化されたままです。
+
+- 復号化されたメッセージは、ResultsLog レポート **で識別** されます。 このレポートには **、Decode Status** という名前の列が含まれます。 **デコード** された値は、復号化されたメッセージを識別します。
+
+- 検索結果のエクスポート時に添付ファイルを復号化する以外に、検索結果のプレビュー時に暗号化解除されたファイルをプレビューすることもできます。 権限で保護された電子メール メッセージは、エクスポート後にのみ表示できます。
+
+- 他のユーザーが RMS 保護メッセージと暗号化された添付ファイルの暗号化を解除する必要がある場合は、(組み込みの電子情報開示マネージャー役割グループをコピーして) カスタム役割グループを作成し、カスタム役割グループから RMS Decrypt 管理役割を削除する必要があります。 次に、カスタム 役割グループのメンバーとしてメッセージの暗号化を解除しないユーザーを追加します。

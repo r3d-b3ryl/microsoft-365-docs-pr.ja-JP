@@ -19,12 +19,12 @@ description: 管理者は、ポータルで使用できる電子メール セキ
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d85918b35f4c05a83b779a7f3893d0c5942c4894
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b635c865901c01b32549fe51a71c795c47d6993c
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211524"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483209"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>電子メール セキュリティ レポートを Microsoft 365 Defenderする
 
@@ -35,9 +35,7 @@ ms.locfileid: "59211524"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Microsoft 365 Defender ポータルでは、Microsoft 365 のスパム対策、マルウェア対策、暗号化機能などの電子メール セキュリティ機能が組織を保護している方法を確認できます。 <https://security.microsoft.com> 必要な [アクセス許可を](#what-permissions-are-needed-to-view-these-reports)持っている場合は、[レポートの電子メール] Microsoft 365 Defender コラボレーション レポートにアクセスして、Microsoft 365 Defender ポータルでこれらのレポート& \> **を** \> **表示&できます**。 [コラボレーション レポートの電子メール] **ページ&移動するには、** を開きます <https://security.microsoft.com/emailandcollabreport> 。
-
-![[&] ポータルの [コラボレーション レポート] ページにMicrosoft 365 Defenderメールを送信します。](../../media/email-collaboration-reports.png)
+Microsoft 365 Defender ポータルでは、Microsoft 365 のスパム対策、マルウェア対策、暗号化機能などの電子メール セキュリティ機能が組織を保護している方法を確認できます。 <https://security.microsoft.com> 必要なアクセス許可[を持っている場合](#what-permissions-are-needed-to-view-these-reports)は、これらのレポートを表示し、このポータルでMicrosoft 365 Defenderできます。 詳細については、「View [Defender for Office 365」を参照してください](view-reports-for-mdo.md#view-and-download-reports)。
 
 > [!NOTE]
 >
@@ -102,7 +100,7 @@ Microsoft 365 Defender ポータルでは、Microsoft 365 のスパム対策、�
 - **日付**
 - **DLP ポリシー** (**DLP によるデータの表示Exchangeトランスポート ルールのみ**)
 - **トランスポート ルール**
-- **件名**
+- **[件名]**
 - **[送信者のアドレス]**
 - **受信者の住所**
 - **重大度**
@@ -175,7 +173,7 @@ Microsoft 365 Defender ポータルでは、Microsoft 365 のスパム対策、�
 グラフの下の詳細テーブルは、次の情報を示しています。
 
 - **Direction**
-- **Type**
+- **型**
 - **24 時間**
 - **3 日間**
 - **7 日間**
@@ -387,7 +385,7 @@ Tech **ビューは、** ファネル **ビューに** 似ています。構成�
 - **[送信者のアドレス]**
 - **受信者の住所**
 - **メッセージ ID**: メッセージ ヘッダーの **[Message-ID** ヘッダー] フィールドで使用できます。一意である必要があります。 値の例は `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` 次のようになります (角かっこに注意してください)。
-- **[件名]**
+- **件名**
 - **Filename**
 - **マルウェア名**
 
@@ -688,7 +686,7 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
 グラフの下の詳細テーブルでは、次の情報を使用できます。
 
 - **日付**
-- **[件名]**
+- **件名**
 - **送信者**
 - **受信者**
 - **によって検出される**
@@ -919,7 +917,7 @@ URL **の脅威保護レポートは**、Microsoft Defender でのみ使用で�
 
 詳細については、「[Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)」を参照してください。
 
-**注**: Microsoft 365 管理センター の対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 Defender ポータルで必要なアクセス許可と、Microsoft 365 の他の機能に対するアクセス許可がユーザーに付与されます。 詳細については、[「管理者の役割について」](../../admin/add-users/about-admin-roles.md) を参照してください。
+**注**: Microsoft 365 管理センター の対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 Defender ポータルで必要なアクセス許可と、Microsoft 365 の他の機能に対するアクセス許可がユーザーに付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>レポートにデータが表示されない場合は、
 

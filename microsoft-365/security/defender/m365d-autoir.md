@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 09274557ea35c87cb4346e797d1b5e5e26e96aa3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ceaba46bbff3f63af8b7571660919d6c10959907
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219944"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59484016"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Microsoft 365 Defender での自動調査と応答
 
@@ -102,8 +102,18 @@ Imagine第 1 層または第 2 層のセキュリティ運用チームに仮想�
 
 調査を表示するには、[インシデント] **ページに移動** します。 インシデントを選択し、[調査] **タブを選択** します。詳細については、「自動調査 [の詳細と結果」を参照してください](m365d-autoir-results.md)。
 
+## <a name="training-for-security-analysts"></a>セキュリティ アナリスト向けトレーニング
 
-## <a name="next-steps"></a>次の手順
+Microsoft Learn のこの学習モジュールを使用して、Microsoft 365 Defenderの調査と対応に自動自己修復を使用する方法を理解します。
+
+|トレーニング: |Microsoft 365 Defender を使用する自動自己修復|
+|---|---|
+|![トレーニング アイコンを使用して自己修復Microsoft 365 Defender自動化します。](../../media/m365d-autoir/m365-defender-auto-self-healing.svg)| Microsoft 365 Defender AI を使用してインシデントの修復を自動化し、セキュリティ運用チームが脅威に効率的かつ効果的に対処するのを支援します。 <p> 11 分 ~ 5 単位 |
+
+> [!div class="nextstepaction"]
+> [スタート>](/learn/modules/defender-self-healing/)
+
+## <a name="next-steps"></a>次のステップ
 
 - [自動調査と対応の前提条件を確認する](m365d-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender)
 - [組織の自動調査と対応を構成する](m365d-configure-auto-investigation-response.md)

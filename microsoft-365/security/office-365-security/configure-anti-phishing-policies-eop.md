@@ -15,12 +15,12 @@ ms.collection:
 description: 管理者は、Exchange Online Protection (EOP) 組織で使用できるフィッシング対策ポリシーを作成、変更、および削除する方法について説明します(Exchange Online メールボックスを使用する場合と使用しない場合)。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e8e6ccbc75e7c9081a3d6f4753bd7c9415cdb296
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 93bd272009845d7b9afdd873bbdd2cd4219c82e1
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218074"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59484073"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>EOP でのスパム対策ポリシーの構成
 
@@ -29,7 +29,7 @@ ms.locfileid: "59218074"
 **適用対象**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 
-Exchange Online Microsoft 365 またはスタンドアロン Exchange Online Protection (EOP) 組織に Exchange Online メールボックスがない Microsoft 365 組織では、既定で有効になっているスプーフィング対策機能の数が制限されている既定のフィッシング対策ポリシーがあります。 詳細については、「[フィッシング詐欺対策ポリシーでのなりすまし設定](set-up-anti-phishing-policies.md#spoof-settings)」を参照してください。
+Exchange Online メールボックスのない Exchange Online 組織またはスタンドアロン Exchange Online Protection (EOP) 組織の Microsoft 365 組織では、スプーフィング対策機能の数が制限されている既定のフィッシング対策ポリシーがあります。default。 詳細については、「[フィッシング詐欺対策ポリシーでのなりすまし設定](set-up-anti-phishing-policies.md#spoof-settings)」を参照してください。
 
 管理者は、既定のフィッシング対策ポリシーを表示、編集、および構成できます (ただし、削除はされません)。 さらに細分化するために、組織内の特定のユーザー、グループ、またはドメインに適用されるカスタムフィッシング対策ポリシーを作成することもできます。 カスタム ポリシーは既定のポリシーより常に優先されますが、カスタム ポリシーの優先度 (実行順序) を変更できます。
 
@@ -124,7 +124,9 @@ Microsoft 365 Defender ポータルでカスタムフィッシング対策ポリ
 6. **[アクション]** ページが表示されたら、次の設定を構成します。
    - **メッセージがスプーフィングとして検出された** 場合: この設定は、前のページで [スプーフィング インテリジェンスを有効にする] を選択した場合にのみ使用できます。 ブロックされたスプーフィングされた送信者からのメッセージについては、ドロップダウン リストで次のいずれかのアクションを選択します。
      - **受信者の迷惑メール フォルダーにメッセージを移動する**
-     - **メッセージを検疫する**
+     - **メッセージを検疫する**: このアクションを選択すると、[検疫ポリシーの適用] ボックスが表示され、スプーフィング インテリジェンス保護によって検疫されるメッセージに適用される検疫ポリシーを選択します。 検疫ポリシーは、検疫されたメッセージに対してユーザーが実行できる操作を定義します。 詳細については、「検疫ポリシー [」を参照してください](quarantine-policies.md)。
+
+       [検疫 **ポリシーの適用]** の値が空白の場合は、既定の検疫ポリシーが使用されます (スプーフィング インテリジェンス検出の場合は DefaultFullAccessPolicy)。 後でフィッシング対策ポリシーを編集するか、設定を表示すると、既定の検疫ポリシー名が表示されます。 サポートされている保護フィルターの評決に使用される既定の検疫ポリシーの詳細については、次の表を [参照してください](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)。
 
    - **安全上のヒント&インジケーター**:
      - **最初の連絡先の安全性のヒント** を表示する : 詳細については [、「First contact 安全性のヒント」 を参照してください](set-up-anti-phishing-policies.md#first-contact-safety-tip)。
@@ -258,19 +260,22 @@ PowerShell でフィッシング対策ポリシーを作成するには、次の
 フィッシング対策ポリシーを作成するには、次の構文を使用します。
 
 ```PowerShell
-New-AntiPhishPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-EnableSpoofIntelligence <$true | $false>] [-AuthenticationFailAction <MoveToJmf | Quarantine>] [-EnableUnauthenticatedSender <$true | $false>] [-EnableViaTag <$true | $false>]
+New-AntiPhishPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-EnableSpoofIntelligence <$true | $false>] [-AuthenticationFailAction <MoveToJmf | Quarantine>] [-EnableUnauthenticatedSender <$true | $false>] [-EnableViaTag <$true | $false>] [-SpoofQuarantineTag <QuarantineTagName>]
 ```
 
 この例では、次の設定を使用して、Research Quarantine という名前のフィッシング対策ポリシーを作成します。
 
 - 説明は、調査部門のポリシーです。
-- スプーフィングの既定のアクションを [検疫] に変更します。
+- スプーフィング検出の既定のアクションを [検疫][](quarantine-policies.md)に変更し、検疫済みメッセージに既定の検疫ポリシーを _使用_ します (スプーフィンクエリアンタグ パラメーターは使用しません)。
 
 ```powershell
 New-AntiPhishPolicy -Name "Monitor Policy" -AdminDisplayName "Research department policy" -AuthenticationFailAction Quarantine
 ```
 
 構文とパラメーターの詳細については [、「New-AntiPhishPolicy」を参照してください](/powershell/module/exchange/New-AntiPhishPolicy)。
+
+> [!NOTE]
+> フィッシング対策ポリシーで使用する検疫ポリシー[](quarantine-policies.md)を指定する詳細な手順については[、「Use PowerShell](quarantine-policies.md#anti-phishing-policies)を使用してフィッシング対策ポリシーで検疫ポリシーを指定する」を参照してください。
 
 #### <a name="step-2-use-powershell-to-create-an-anti-phish-rule"></a>手順 2: PowerShell を使用してフィッシング対策ルールを作成する
 
@@ -360,6 +365,9 @@ Set-AntiPhishPolicy -Identity "<PolicyName>" <Settings>
 ```
 
 構文とパラメーターの詳細については [、「Set-AntiPhishPolicy」を参照してください](/powershell/module/exchange/Set-AntiPhishPolicy)。
+
+> [!NOTE]
+> フィッシング対策ポリシーで使用する検疫ポリシー[](quarantine-policies.md)を指定する詳細な手順については[、「Use PowerShell を](quarantine-policies.md#anti-phishing-policies)使用してフィッシング対策ポリシーで検疫ポリシーを指定する」を参照してください。
 
 ### <a name="use-powershell-to-modify-anti-phish-rules"></a>PowerShell を使用してフィッシング対策ルールを変更する
 

@@ -14,32 +14,35 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 38c21f69680d6e9d6a3231c8bf2dc44f15e057f6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a1b0ca307cbbfb5b2c99085d4b3bec89758d51bd
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219713"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483005"
 ---
 # <a name="step-3-upload-your-binaries-dependencies-and-scripts"></a>手順 3: アップロード、依存関係、およびスクリプトを削除する
 
 このタブでは、テスト スイートの実行に使用するバイナリ、依存関係、スクリプトを含む単一の zip パッケージをアップロードします。
 
+> [!NOTE]
+> zip パッケージのサイズは、最小 10 MB から最大 2 GB の間である必要があります。
+
 ## <a name="upload-package-zip-file"></a>アップロード zip ファイル
 
-![アップロードバイナリを作成します。](Media/AddBinaries.png)
+:::image type="content" alt-text="アップロードバイナリを作成します。" source="Media/AddBinaries.png":::
 
-  - アップロードされた依存関係には、テスト フレームワーク、スクリプト エンジン、またはアプリケーションまたはテスト ケースを実行するためにアクセスされるデータが含まれます。 たとえば、ブラウザー ベースのテストの実行に役立つ Selenium インストーラーと Webdriver インストーラーをアップロードできます。
+  - アップロードされた依存関係には、テスト フレームワーク、スクリプト エンジン、またはアプリケーションまたはテスト ケースを実行するためにアクセスされるデータが含まれます。 たとえば、ブラウザー ベースのテストの実行に役立つ Selenium と Web ドライバー インストーラーをアップロードできます。
   - スクリプトアクティビティがモジュール形式で保持されるのがベスト プラクティスです。 
-    - スクリプト ```Install``` はインストール操作のみを実行します。
-    - スクリプト ```Launch``` はアプリケーションのみを起動します。
-    - スクリプト ```Close``` はアプリケーションのみを閉じます。
-    - オプションの ```Uninstall``` スクリプトは、アプリケーションのみをアンインストールします。
+    - スクリプト `Install` はインストール操作のみを実行します。
+    - スクリプト `Launch` はアプリケーションのみを起動します。
+    - スクリプト `Close` はアプリケーションのみを閉じます。
+    - オプションの `Uninstall` スクリプトは、アプリケーションのみをアンインストールします。
 
 **現在、ポータルは PowerShell スクリプトのみをサポートしています。**
 
 
-## <a name="next-steps"></a>次の手順 
+## <a name="next-steps"></a>次のステップ 
 
 次の記事に進み、「手順 4: テスト タスクを設定 **する」に進みます**。
 > [!div class="nextstepaction"]

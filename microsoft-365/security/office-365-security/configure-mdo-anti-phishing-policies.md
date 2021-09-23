@@ -15,12 +15,12 @@ ms.collection:
 description: 管理者は、Microsoft Defender を使用している組織で利用可能な高度なフィッシング対策ポリシーを作成、変更、および削除する方法をOffice 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 35f8ae19b0741153d6cad695059bd91aa6199aea
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c9446104a003dfe6374e86b4525dde6a2609b9ea
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219824"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483269"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender でフィッシング対策ポリシーを構成Office 365
 
@@ -74,7 +74,7 @@ Office 365 の Defender でのフィッシング対策保護の有効性を高�
   **注**:
 
   - Microsoft 365 管理センターで、対応する Azure Active Directory の役割にユーザーを追加すると、ユーザーには、必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
-  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
+  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
 
 - Defender for Office 365 でのフィッシング対策ポリシーの推奨設定については、「Defender for Office 365 設定」[を参照してください](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365)。
 
@@ -204,7 +204,10 @@ Microsoft 365 Defender ポータルでカスタムフィッシング対策ポリ
        - **アクションを適用しない**
        - **メッセージを他の電子メール アドレスにリダイレクトする**
        - **受信者の迷惑メール フォルダーにメッセージを移動する**
-       - **メッセージを検疫する**
+       - **メッセージを検疫** する: このアクションを選択すると、[検疫ポリシーの適用] ボックスが表示され、ユーザー偽装保護によって検疫されたメッセージに適用される検疫ポリシーを選択します。 検疫ポリシーは、検疫されたメッセージに対してユーザーが実行できる操作を定義します。 詳細については、「検疫ポリシー [」を参照してください](quarantine-policies.md)。
+
+         [検疫 **ポリシーの適用]** の値が空白の場合は、既定の検疫ポリシーが使用されます (ユーザー偽装検出の場合は DefaultFullAccessPolicy)。 後でフィッシング対策ポリシーを編集するか、設定を表示すると、既定の検疫ポリシー名が表示されます。
+  
        - **メッセージを配信し、他のアドレスを Bcc 行に追加する**
        - **配信前にメッセージを削除する**
 
@@ -212,7 +215,10 @@ Microsoft 365 Defender ポータルでカスタムフィッシング対策ポリ
        - **アクションを適用しない**
        - **メッセージを他の電子メール アドレスにリダイレクトする**
        - **受信者の迷惑メール フォルダーにメッセージを移動する**
-       - **メッセージを検疫する**
+       - **メッセージを検疫** する: このアクションを選択すると、[検疫ポリシーの適用] ボックスが表示され、ドメイン偽装保護によって検疫されたメッセージに適用される検疫ポリシーを選択します。
+
+         [検疫 **ポリシーの適用]** の値が空白の場合は、既定の検疫ポリシーが使用されます (ドメイン偽装検出の場合は DefaultFullAccessPolicy)。 後でフィッシング対策ポリシーを編集するか、設定を表示すると、既定の検疫ポリシー名が表示されます。
+
        - **メッセージを配信し、他のアドレスを Bcc 行に追加する**
        - **配信前にメッセージを削除する**
 
@@ -220,13 +226,18 @@ Microsoft 365 Defender ポータルでカスタムフィッシング対策ポリ
        - **アクションを適用しない**
        - **メッセージを他の電子メール アドレスにリダイレクトする**
        - **受信者の迷惑メール フォルダーにメッセージを移動する**
-       - **メッセージを検疫する**
+       - **メッセージを検疫する**: このアクションを選択すると、[検疫ポリシーの適用] ボックスが表示され、メールボックス インテリジェンス保護によって検疫されるメッセージに適用される検疫ポリシーを選択します。 検疫ポリシーは、検疫されたメッセージに対してユーザーが実行できる操作を定義します。 詳細については、「検疫ポリシー [」を参照してください](quarantine-policies.md)。
+
+         [検疫 **ポリシーの適用]** の値が空白の場合は、既定の検疫ポリシーが使用されます (メールボックス インテリジェンス検出の場合は DefaultFullAccessPolicy)。 後でフィッシング対策ポリシーを編集するか、設定を表示すると、既定の検疫ポリシー名が表示されます。
+
        - **メッセージを配信し、他のアドレスを Bcc 行に追加する**
        - **配信前にメッセージを削除する**
 
      - **メッセージがスプーフィングとして検出された** 場合: この設定は、前のページで [スプーフィング インテリジェンスを有効にする] を選択した場合にのみ使用できます。 ブロックされたスプーフィングされた送信者からのメッセージについては、ドロップダウン リストで次のいずれかのアクションを選択します。
        - **受信者の迷惑メール フォルダーにメッセージを移動する**
-       - **メッセージを検疫する**
+       - **メッセージを検疫する**: このアクションを選択すると、[検疫ポリシーの適用] ボックスが表示され、スプーフィング インテリジェンス保護によって検疫されるメッセージに適用される検疫ポリシーを選択します。 検疫ポリシーは、検疫されたメッセージに対してユーザーが実行できる操作を定義します。 詳細については、「検疫ポリシー [」を参照してください](quarantine-policies.md)。
+
+         [検疫 **ポリシーの適用]** の値が空白の場合は、既定の検疫ポリシーが使用されます (スプーフィング インテリジェンス検出の場合は DefaultFullAccessPolicy)。 後でフィッシング対策ポリシーを編集するか、設定を表示すると、既定の検疫ポリシー名が表示されます。
 
    - **安全に関&:** 次の設定を構成します。
      - **最初の連絡先の安全性のヒント** を表示する : 詳細については [、「First contact 安全性のヒント」 を参照してください](set-up-anti-phishing-policies.md#first-contact-safety-tip)。
@@ -235,9 +246,6 @@ Microsoft 365 Defender ポータルでカスタムフィッシング対策ポリ
      - **ユーザー偽装の異常な文字を表示安全性のヒント** この設定は、[ユーザーの保護を有効にする] または [前のページで保護するドメインを有効にする] を選択 **した** 場合にのみ使用できます。
      - **スプーフィング** の認証されていない送信者に対して表示 (?) : この設定は、前のページで [スプーフィング インテリジェンスを有効にする] を選択した場合にのみ使用できます。 メッセージが SPF または DKIM チェックに合格しない場合に、メッセージが DMARC または複合認証に合格しない場合は、Outlook の [差出人] ボックスの送信者の写真に疑問符を[追加](email-validation-and-authentication.md#composite-authentication)します。
      - **"via" タグを表示** する : この設定は、前のページで [スプーフィング インテリジェンスを有効にする] を選択した場合にのみ使用できます。 DKIM 署名または chris@contoso.com MAIL FROM アドレスのドメインと異なる場合は、from アドレスに via タグ (fabrikam.com 経由で) を **追加** します。 既定値はオン (選択) です。 オフにする場合は、チェック ボックスをオフにします。
-
-       > [!NOTE]
-       > **["via"** タグを表示する] 設定が設定されていない場合、組織内のスプーフィング設定の認証されていない送信者に対して、疑問符と via タグの両方が Show **(?)** によって制御されます。
 
      設定を有効にする場合は、チェック ボックスをオンにします。 オフにする場合は、チェック ボックスをオフにします。
 
@@ -365,17 +373,22 @@ New-AntiPhishPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] <Addit
 
 - ポリシーが有効になっています (Enabled パラメーターは使用していないので、既定値はです `$true` )。
 - 説明は、調査部門のポリシーです。
+- スプーフィング検出の既定のアクションを [検疫] に [](quarantine-policies.md)変更し、検疫済みメッセージに既定の検疫ポリシーを使用します (スプーフィングクォンティンタグ パラメーターは _使用_ しません)。
 - すべての受け入れドメインに対する組織のドメイン保護と、ドメインの保護を対象 fabrikam.com。
+- ドメイン偽装検出のアクションとして検疫を指定し、検疫されたメッセージに既定の [](quarantine-policies.md)検疫ポリシーを使用します _(TargetedDomainQuarantineTag_ パラメーターは使用しません)。
 - 偽装から保護するユーザーとして Mai Fujito (mfujito@fabrikam.com) を指定します。
-- メールボックスのインテリジェンスを有効にします。
-- メールボックス インテリジェンス保護を有効にし、検疫アクションを指定します。
-- 安全に関するヒントを有効にする。
+- ユーザー偽装検出のアクションとして検疫を指定し、検疫されたメッセージに既定の [](quarantine-policies.md)検疫ポリシーを使用します _(TargetedUserQuarantineTag_ パラメーターは使用しません)。
+- メールボックス インテリジェンス _(EnableMailboxIntelligence)_ を有効にし、メールボックス インテリジェンス保護がメッセージに対してアクションを実行できます _(EnableMailboxIntelligenceProtection)_ は、[](quarantine-policies.md)検出されたメッセージのアクションとして検疫を指定し、検疫されたメッセージの既定の検疫ポリシーを使用します _(MailboxIntelligenceQuarantineTag_ パラメーターは使用しません)。
+- すべての安全に関するヒントを有効にする。
 
 ```powershell
-New-AntiPhishPolicy -Name "Monitor Policy" -AdminDisplayName "Research department policy" -EnableOrganizationDomainsProtection $true -EnableTargetedDomainsProtection $true -TargetedDomainsToProtect fabrikam.com -TargetedDomainProtectionAction Quarantine -EnableTargetedUserProtection $true -TargetedUsersToProtect "Mai Fujito;mfujito@fabrikam.com" -TargetedUserProtectionAction Quarantine -EnableMailboxIntelligence $true -EnableMailboxIntelligenceProtection $true -MailboxIntelligenceProtectionAction Quarantine -EnableSimilarUsersSafetyTips $true -EnableSimilarDomainsSafetyTips $true -EnableUnusualCharactersSafetyTips $true
+New-AntiPhishPolicy -Name "Monitor Policy" -AdminDisplayName "Research department policy" -AuthenticationFailAction Quarantine -EnableOrganizationDomainsProtection $true -EnableTargetedDomainsProtection $true -TargetedDomainsToProtect fabrikam.com -TargetedDomainProtectionAction Quarantine -EnableTargetedUserProtection $true -TargetedUsersToProtect "Mai Fujito;mfujito@fabrikam.com" -TargetedUserProtectionAction Quarantine -EnableMailboxIntelligence $true -EnableMailboxIntelligenceProtection $true -MailboxIntelligenceProtectionAction Quarantine -EnableSimilarUsersSafetyTips $true -EnableSimilarDomainsSafetyTips $true -EnableUnusualCharactersSafetyTips $true
 ```
 
 構文とパラメーターの詳細については [、「New-AntiPhishPolicy」を参照してください](/powershell/module/exchange/New-AntiPhishPolicy)。
+
+> [!NOTE]
+> フィッシング対策ポリシーで使用する検疫ポリシー[](quarantine-policies.md)を指定する詳細な手順については[、「Use PowerShell](quarantine-policies.md#anti-phishing-policies)を使用してフィッシング対策ポリシーで検疫ポリシーを指定する」を参照してください。
 
 #### <a name="step-2-use-powershell-to-create-an-anti-phish-rule"></a>手順 2: PowerShell を使用してフィッシング対策ルールを作成する
 
@@ -466,6 +479,9 @@ Set-AntiPhishPolicy -Identity "<PolicyName>" <Settings>
 ```
 
 構文とパラメーターの詳細については [、「Set-AntiPhishPolicy」を参照してください](/powershell/module/exchange/Set-AntiPhishPolicy)。
+
+> [!NOTE]
+> フィッシング対策ポリシーで使用する検疫ポリシー[](quarantine-policies.md)を指定する詳細な手順については[、「Use PowerShell](quarantine-policies.md#anti-phishing-policies)を使用してフィッシング対策ポリシーで検疫ポリシーを指定する」を参照してください。
 
 ### <a name="use-powershell-to-modify-anti-phish-rules"></a>PowerShell を使用してフィッシング対策ルールを変更する
 

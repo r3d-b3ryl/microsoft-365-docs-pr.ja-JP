@@ -23,12 +23,12 @@ ms.custom:
 description: Microsoft Defender for Office 365オンライン、SharePoint、OneDrive for Business、およびMicrosoft Teams。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f9ab3c10292aed5f6f39a8534680cb8e9c5d3551
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fe601cdb6ea130e904f8b7526dc265cd19e2ab77
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189091"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483845"
 ---
 # <a name="safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>SPO、OneDrive、Teams 用の安全な添付ファイル機能
 
@@ -66,7 +66,7 @@ SharePointオンライン管理者は、悪意のあるファイルをダウン�
 
 SharePoint、OneDrive、および Microsoft Teams の セーフ 添付ファイルによって悪意のあるファイルとして識別されたファイルは[、microsoft Defender](view-reports-for-mdo.md) for Office 365 および Explorer (およびリアルタイム検出[)](threat-explorer.md)のレポートに表示されます。
 
-SharePoint、OneDrive、および Microsoft Teams の セーフ 添付ファイルによってファイルが悪意のあるファイルとして識別された 2018 年 5 月現在、ファイルは検疫でも使用できます。 詳細については、「Defender[で検疫済みファイルを管理する」を参照Office 365。](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365)
+SharePoint、OneDrive、および Microsoft Teams の セーフ 添付ファイルによってファイルが悪意のあるファイルとして識別されると、ファイルは検疫でも使用できますが、管理者だけが使用できます。 詳細については、「Defender[で検疫済みファイルを管理する」を参照Office 365。](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365)
 
 ## <a name="keep-these-points-in-mind"></a>これらの点に気を付ける
 
@@ -74,4 +74,4 @@ SharePoint、OneDrive、および Microsoft Teams の セーフ 添付ファイ�
 
 - モダン エクスペリエンスを使用SharePointサイトが構成されていることを[確認します](/sharepoint/guide-to-sharepoint-modern-experience)。 モダン Office 365クラシック ビューを使用するかどうかは、セキュリティ保護用の Defender が適用されます。ただし、ファイルがブロックされている視覚的なインジケーターは、モダン エクスペリエンスでのみ使用できます。
 
-- セーフSharePoint、OneDrive、および Microsoft Teams の添付ファイルは、Exchange Online Protection (EOP) のスパム対策とマルウェア対策保護、および microsoft Defender for Office 365 の セーフ リンクと セーフ 添付ファイルを含む、組織の全体的な脅威保護戦略の一部です。 詳細については、「脅威から[保護する」を参照Office 365。](protect-against-threats.md)
+- セーフSharePoint、OneDrive、および Microsoft Teams の添付ファイルは、Exchange Online Protection (EOP) のスパム対策とマルウェア対策保護、および セーフ リンクと セーフ のスパム対策とマルウェア対策保護を含む、組織の全体的な脅威保護戦略の一部セーフMicrosoft Defender の添付ファイル (Office 365)。 詳細については、「脅威から[保護する」を参照Office 365。](protect-against-threats.md)

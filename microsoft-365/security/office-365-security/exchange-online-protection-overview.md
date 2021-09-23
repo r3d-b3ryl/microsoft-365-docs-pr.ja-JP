@@ -15,12 +15,12 @@ ms.custom:
 description: スタンドアロン環境Exchange Online Protectionハイブリッド環境で、EOP (EOP) がオンプレミスの電子メール組織を保護する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a925b251ff79aec5acaa0b2c1da2aee3f5a6d70d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 006be2cf23735f6ec44c749de869e87d55be2123
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214443"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483101"
 ---
 # <a name="exchange-online-protection-overview"></a>Exchange Online Protection の概要
 
@@ -48,13 +48,13 @@ EOP の仕組みを理解すると、受信メールの処理方法がわかり�
 
 1. 受信メッセージが EOP に入った場合、最初は接続フィルターを通過し、送信者の評判をチェックします。 スパムの大部分はこの時点で停止され、EOP によって拒否されます。 詳細については、「[接続フィルターを構成する](configure-the-connection-filter-policy.md)」を参照してください。
 
-2. 次に、メッセージがマルウェアの検査を受け取ります。 メッセージまたは添付ファイルにマルウェアが見つかった場合、メッセージは管理者専用の検疫ストアにルーティングされます。 マルウェア保護の詳細については [、「EOP のマルウェア対策保護」を参照してください](anti-malware-protection.md)。
+2. 次に、メッセージがマルウェアの検査を受け取ります。 メッセージまたは添付ファイルにマルウェアが見つかった場合、メッセージは検疫に配信されます。 既定では、マルウェア検疫済みメッセージを表示および操作できるのは管理者のみです。 ただし、管理者は検疫ポリシーを作成[](quarantine-policies.md)して使用して、検疫されたメッセージに対してユーザーが実行できる操作を指定できます。 マルウェア保護の詳細については [、「EOP のマルウェア対策保護」を参照してください](anti-malware-protection.md)。
 
 3. メッセージはポリシー フィルター処理を通じて続行され、作成したメール フロー ルール (トランスポート ルールとも呼ばれる) に対して評価されます。 たとえば、ルールは、特定の送信者からメッセージが届いたときに、マネージャーに通知を送信できます。
 
    サービス ライセンスを持つ CAL Exchange Enterpriseオンプレミス組織では、EOP でのデータ損失防止[(DLP)](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)チェックもこの時点で行います。
 
-4. メッセージは、有害なメッセージがスパム、高信頼スパム、フィッシング、高信頼フィッシング、またはバルク (スパム対策ポリシー) またはスプーフィング (フィッシング対策ポリシーのスプーフィング設定) として識別されるコンテンツ フィルター (スパム対策とスプーフィング対策) を通過します。 フィルター処理の評決 (検疫、迷惑メール フォルダーへの移動など) に基づいてメッセージに対して実行するアクションを構成できます。 詳細については、「スパム対策ポリシーを [構成する](configure-your-spam-filter-policies.md) 」および「EOP でフィッシング対策ポリシーを構成する」 [を参照してください](configure-anti-phishing-policies-eop.md)。
+4. メッセージは、有害なメッセージがスパム、高信頼スパム、フィッシング、高信頼フィッシング、またはバルク (スパム対策ポリシー) またはスプーフィング (フィッシング対策ポリシーのスプーフィング設定) として識別されるコンテンツ フィルター (スパム対策とスプーフィング対策) を通過します。 フィルター処理の評決 (検疫、迷惑メール フォルダーへの移動など)、および検疫ポリシーを使用して検疫されたメッセージに対してユーザーが実行できる操作に基づいて、メッセージに対して実行するアクションを [構成](quarantine-policies.md)できます。 詳細については、「スパム対策ポリシーを [構成する](configure-your-spam-filter-policies.md) 」および「EOP でフィッシング対策ポリシーを構成する」 [を参照してください](configure-anti-phishing-policies-eop.md)。
 
 これらすべての保護層を正常に通過するメッセージが受信者に配信されます。
 
@@ -92,7 +92,7 @@ EOP はデータセンター間の負荷分散を実行しますが、1 つの�
 <br>
 
 ****
-|特徴|コメント|
+|機能|コメント|
 |---|---|
 |**Protection**||
 |マルウェア対策|[EOP のマルウェア対策保護](anti-malware-protection.md) <p> [マルウェア対策保護のよく寄せられる質問](anti-malware-protection-faq-eop.yml) <p> [EOP でマルウェア対策ポリシーを構成する](configure-anti-malware-policies.md)|
@@ -111,7 +111,7 @@ EOP はデータセンター間の負荷分散を実行しますが、1 つの�
 |管理者の申請|[管理者申請を使用して、疑わしいスパム、フィッシング、URL、ファイルを Microsoft に提出する](admin-submission.md)|
 |ユーザー申請 (カスタム メールボックス)|[ユーザー申請ポリシー](user-submission.md)|
 |検疫 - 管理者|[EOP の管理者として検疫済みメッセージとファイルを管理する](manage-quarantined-messages-and-files.md) <p> [検疫済みメッセージに関するよく寄せられる質問](quarantine-faq.yml) <p> [メッセージとファイルを Microsoft に報告する](report-junk-email-messages-to-microsoft.md) <p> [Microsoft 365 のスパム対策メッセージ ヘッダー](anti-spam-message-headers.md) <p> 検疫済みメッセージのメッセージ ヘッダーは、次のメッセージ ヘッダー アナライザー [を使用して分析できます](https://mha.azurewebsites.net/)。|
-|検疫 - エンド ユーザー|[EOP のユーザーとして検疫済みメッセージを検索して解放する](find-and-release-quarantined-messages-as-a-user.md) <p> [ユーザーのスパム通知を使用して検疫済みメッセージを解放および報告する](use-spam-notifications-to-release-and-report-quarantined-messages.md)|
+|検疫 - エンド ユーザー|[EOP のユーザーとして検疫済みメッセージを検索して解放する](find-and-release-quarantined-messages-as-a-user.md) <p> [検疫通知を使用して検疫済みメッセージを解放および報告する](use-spam-notifications-to-release-and-report-quarantined-messages.md) <p> [検疫ポリシー](quarantine-policies.md)|
 |**メール フロー**||
 |メール フロー ルール|[Exchange Online のメール フロー ルール (トランスポート ルール)](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) <p> [Exchange Online のメール フロー ルールでの条件と例外 (述語)](/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions) <p> [Exchange Online でのメール フロー ルールの処理](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions) <p> [Exchange Online のメール フロー ルールを管理する](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules) <p> [メール フロー ルールの手順 (Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-procedures)|
 |承認済みドメイン|[Exchange Online で承認済みドメインを管理する](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)|

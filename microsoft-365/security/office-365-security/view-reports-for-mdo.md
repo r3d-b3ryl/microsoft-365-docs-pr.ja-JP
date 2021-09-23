@@ -20,12 +20,12 @@ description: 管理者は、管理者ポータルで使用できるレポート�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fc614d873a07a40c1ef65fde3681ce89edaae6d8
-ms.sourcegitcommit: dd4214a309c71292490743752da728cec7bffe88
+ms.openlocfilehash: 80ba6c1f7c04a48b5472a12db75d602bd503465e
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59479575"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483308"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>ポータルでレポートOffice 365 Defender をMicrosoft 365 Defenderする
 
@@ -51,7 +51,7 @@ Office 365 組織向け Microsoft Defender (Microsoft 365 E5 サブスクリプ�
 
 2. [ダウンロード **するレポート] を選択します**。
 
-![[&] ポータルの [コラボレーション レポート] ページにMicrosoft 365 Defenderメールを送信します。](/microsoft-365/media/email-collaboration-reports.png)
+![[&] ポータルの [コラボレーション レポート] ページにMicrosoft 365 Defenderメールを送信します。](../../media/email-collaboration-download-reports.png)
 
 > [!NOTE]
 >

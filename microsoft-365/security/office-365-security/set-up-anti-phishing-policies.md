@@ -17,12 +17,12 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) と Microsoft Defender で使用できるフィッシング対策ポリシーについてOffice 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b0b7e93c59484bb3f7b1e34d33dd3ee7a19f7634
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 291856addf7ce2702a1cd5f26c9cf3d2e833bbc2
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59217944"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483413"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>アプリ内のフィッシング対策Microsoft 365
 
@@ -48,7 +48,7 @@ EOP のフィッシング対策ポリシーと Defender for Office 365 のフィ
 
 ****
 
-|特徴|EOP のフィッシング対策ポリシー|Defender for Office 365|
+|機能|EOP のフィッシング対策ポリシー|Defender for Office 365|
 |---|:---:|:---:|
 |既定のポリシーを自動的に作成する|![チェック マーク。](../../media/checkmark.png)|![チェック マーク。](../../media/checkmark.png)|
 |カスタム ポリシーの作成|![チェック マーク。](../../media/checkmark.png)|![チェック マーク。](../../media/checkmark.png)|
@@ -118,6 +118,8 @@ EOP および Defender のフィッシング対策ポリシーでは、次のス
     - [[検疫] Microsoft 365](quarantine-email-messages.md)
     - [検疫済みメッセージとファイルを管理者として管理Microsoft 365](manage-quarantined-messages-and-files.md)
     - [検疫済みメッセージをユーザーとして検索して解放Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
+
+    [メッセージの **検疫] を選択した** 場合は、スプーフィング インテリジェンス保護によって検疫されたメッセージに適用される検疫ポリシーを選択することもできます。 検疫ポリシーは、検疫されたメッセージに対してユーザーが実行できる操作を定義します。 詳細については、「検疫ポリシー [」を参照してください](quarantine-policies.md)。
 
 ### <a name="unauthenticated-sender"></a>認証されていない送信者
 
@@ -199,6 +201,9 @@ EOP および Defender のフィッシング対策ポリシーでは、次のス
     - [[検疫] Microsoft 365](quarantine-email-messages.md)
     - [検疫済みメッセージとファイルを管理者として管理Microsoft 365](manage-quarantined-messages-and-files.md)
     - [検疫済みメッセージをユーザーとして検索して解放Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
+
+    [メッセージの **検疫]** を選択した場合は、ユーザー偽装またはドメイン偽装保護によって検疫されるメッセージに適用される検疫ポリシーを選択することもできます。 検疫ポリシーは、検疫されたメッセージに対してユーザーが実行できる操作を定義します。 詳細については、「検疫ポリシー [」を参照してください](quarantine-policies.md)。
+
   - **メッセージを配信し、他** のアドレスを Bcc 行に追加する : メッセージを目的の受信者に配信し、指定した受信者にメッセージをサイレント配信します。
   - **配信前にメッセージを削除する**: メッセージ全体 (すべての添付ファイルを含む) をサイレントモードで削除します。
 
@@ -217,7 +222,7 @@ EOP および Defender のフィッシング対策ポリシーでは、次のス
   - **アクションを適用** しない : この値は、メールボックス インテリジェンスをオンにしたが[インテリジェンス偽装保護を有効にする] をオフにした場合と同じ結果 **になります**。
   - **メッセージを他の電子メール アドレスにリダイレクトする**
   - **受信者の迷惑メール フォルダーにメッセージを移動する**
-  - **メッセージを検疫する**
+  - **メッセージを検疫する**: このアクションを選択した場合は、メールボックス インテリジェンス保護によって検疫されるメッセージに適用される検疫ポリシーを選択することもできます。 検疫ポリシーは、検疫されたメッセージに対してユーザーが実行できる操作を定義します。 詳細については、「検疫ポリシー [」を参照してください](quarantine-policies.md)。
   - **メッセージを配信し、他のアドレスを Bcc 行に追加する**
   - **配信前にメッセージを削除する**
 

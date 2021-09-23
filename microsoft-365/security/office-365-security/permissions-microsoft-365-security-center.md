@@ -19,12 +19,12 @@ description: 管理者は、セキュリティに関連するすべてのタス�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e3eb4f424ba8b9fd73f5cad62c2a136da8fd8249
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6e5980249d3df0dc94a83b8250f3be55298de5bd
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211623"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59482861"
 ---
 # <a name="permissions-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルのアクセス許可
 
@@ -50,7 +50,7 @@ Microsoft 365 Defender ポータルのアクセス許可は、役割ベースの
 
 **役割** は、一連のタスクを実行するアクセス許可を付与します。
 
-**役割グループ** は、ユーザーが Microsoft 365 Defender ポータルで仕事を行えるようにする一連の役割です。 たとえば、"攻撃シミュレーター管理者" 役割グループには、攻撃シミュレーション トレーニングのあらゆる側面を作成および管理するための "攻撃シミュレーター管理者" 役割が含まれます。
+**役割グループ** は、ユーザーが Microsoft 365 Defender ポータルで仕事を行えるようにする一連の役割です。
 
 Microsoft 365 Defender ポータルには、割り当てる必要がある最も一般的なタスクと機能に対する既定の役割グループが含まれます。 通常、個々のユーザーを既定の役割グループの **メンバー** として追加することをお勧めします。
 

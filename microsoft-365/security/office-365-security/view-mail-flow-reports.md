@@ -19,12 +19,12 @@ description: 管理者は、セキュリティ コンプライアンス セン�
 ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5c1993668b94ca8c71ccbf13e5fe59059c610cca
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a049a0d78bff8b86c84e89f616662e00f984c778
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211523"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59484133"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>セキュリティ コンプライアンス センターの [レポート] ダッシュボードでメール フロー レポート&表示する
 
@@ -36,7 +36,10 @@ ms.locfileid: "59211523"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> このトピックで説明するレポートの大部分は、管理センター (EAC) でExchange使用できます。 詳細については、「新しい管理センターのメール フロー レポート[Exchange参照してください](/exchange/monitoring/mail-flow-reports/mail-flow-reports)。 トランスポート[Exchangeレポートは](view-email-security-reports.md#exchange-transport-rule-report)、ポータルでMicrosoft 365 Defenderできます。
+> この記事のレポートの大部分は、Microsoft 365 Defender管理センター (EAC) Exchange使用できます。 詳細については、次のトピックをご覧ください。
+>
+> - [新しい管理センターのメール フロー Exchangeレポート](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
+> - [電子メール セキュリティ レポートを Microsoft 365 Defenderする](view-email-security-reports.md)
 
 セキュリティ & コンプライアンス センターのメール フロー[](mail-flow-insights-v2.md)ダッシュボードで使用できるメール フロー レポートに加えて、レポート ダッシュボードには、Microsoft 365 組織の監視に役立つさまざまなメール フロー レポートがあります。
 
@@ -46,57 +49,8 @@ ms.locfileid: "59211523"
 
 ## <a name="connector-report"></a>コネクタ レポート
 
-コネクタ **レポートには**、組織用に構成 [](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)されている受信コネクタと送信コネクタのメール フロー アクティビティが表示されます。
-
-レポートを表示するには、コンプライアンス センターのセキュリティ &[開き、[](https://protection.office.com)レポート **ダッシュボード]** に移動し、[コネクタ \> レポート]**を選択します**。 レポートに直接移動するには、を開きます <https://protection.office.com/reportv2?id=ConnectorReport> 。
-
-![レポート ダッシュボードのコネクタ レポート ウィジェット。](../../media/connector-report-widget.png)
-
-### <a name="report-view-for-the-connector-report"></a>コネクタ レポートのレポート ビュー
-
-レポート ビューでは、次のグラフを使用できます。
-
-- **データの表示方法: メール フロー**: このグラフは、次の方法で編成された受信メッセージと送信メッセージの数を示します。
-
-  - **合計**
-  - **コネクタのないインターネットから**
-  - **コネクタのないインターネットへ**
-  - 構成した特定のコネクタ。
-
-  グラフ内のデータを分離するには、[データの表示] コントロールを使用して、これらのオプションのいずれかを選択するか、[すべてのメール フロー **] を選択します**。
-
-  ![コネクタ レポートでメール フロー別にデータを表示します。](../../media/connector-report-view-data-by-mail-flow.png)
-
-- **データの表示方法: TLS の使用状況**: このグラフは、メール フローのトランスポート層セキュリティ (TLS) バージョンの使用状況の割合を示しています。
-
-  グラフ内のデータを分離するには、[データの表示] コントロールを使用 **して** 、次のいずれかのオプションを選択します。
-
-  - **すべてのメール フロー**
-  - **コネクタのないインターネットから**
-  - **コネクタのないインターネットへ**
-  - 構成した特定のコネクタ。
-
-  ![コネクタ レポートで TLS 使用状況別にデータを表示します。](../../media/connector-report-view-data-by-tls-usage.png)
-
-レポート ビューで **[フィルター]** をクリックすると、[開始日] と [終了日] で日付 **範囲****を指定できます**。
-
-### <a name="details-table-view-for-the-connector-report"></a>コネクタ レポートの詳細テーブル ビュー
-
-レポート ビューで **[詳細テーブルの表示** ] をクリックすると、次の情報が表示されます。
-
-- **日付**
-- **コネクタの方向と名前**
-- **コネクタの種類**
-- **強制 TLS?**: True **または** False の **値を指定します**。
-- **TLS なし** (パーセンテージ)
-- **TLS 1.0** (パーセンテージ)
-- **TLS 1.1** (パーセンテージ)
-- **TLS 1.2** (パーセンテージ)
-- **ボリューム**: メッセージの数。
-
-詳細テーブル ビューで **[フィルター** ] をクリックすると、[開始日] と [終了日] で日付 **範囲****を指定できます**。
-
-レポート ビューに戻る場合は、[レポートの表示] **をクリックします**。
+> [!NOTE]
+> このレポートは、EAC の **受信** メッセージ レポートと送信メッセージ **レポート** に置き換えられた。 詳細については、「新しい EAC の受信メッセージと送信メッセージ レポート [」を参照してください](/exchange/monitoring/mail-flow-reports/mfr-inbound-messages-and-outbound-messages-reports)。
 
 ## <a name="exchange-transport-rule-report"></a>Exchangeトランスポート ルール レポート
 
@@ -153,7 +107,7 @@ ms.locfileid: "59211523"
   - **日付**
   - **DLP ポリシー**
   - **トランスポート ルール**
-  - **件名**
+  - **[件名]**
   - **[送信者のアドレス]**
   - **受信者の住所**
   - **重大度**
@@ -169,51 +123,8 @@ ms.locfileid: "59211523"
 
 ## <a name="forwarding-report"></a>転送レポート
 
-転送 **レポートには**、組織の自動的に転送されたメッセージが、組織のメールボックスから外部ドメインExchange Onlineされます。 転送されたメッセージは、セキュリティまたはコンプライアンスリスクを引き起し、アカウントの侵害を示す可能性があります。
-
-レポートを表示するには、コンプライアンス センターのセキュリティ &[開](https://protection.office.com)き、[レポート **ダッシュボード]** に移動し、[レポートの転送] \> **を選択します**。 レポートに直接移動するには、を開きます <https://protection.office.com/reportv2?id=MailFlowForwarding> 。
-
-![レポート ダッシュボードのレポート ウィジェットの転送。](../../media/forwarding-report-widget.png)
-
-### <a name="report-view-for-the-forwarding-report"></a>転送レポートのレポート ビュー
-
-レポート ビューでは、次のグラフを使用できます。
-
-- **データの表示: 転送方法**: 次のメソッドが表示されます。
-
-  - **トランスポート ルール**: メール フロー ルール [とも呼ばれる](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)。
-  - **メールボックス ルール**: 受信トレイ ルール [とも呼ばれる](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59)。
-
-  ![転送レポートの [転送方法] ビュー。](../../media/forwarding-report-forwarding-methods.png)
-
-- **[データの表示: 転送ドメイン**] : このビューには、転送先である受信者ドメインが表示されます。
-
-  ![転送レポートの [転送ドメイン] ビュー。](../../media/forwarding-report-forwarding-domains.png)
-
-- **データを表示する: Forwarders**: 次の転送者が表示されます。
-
-  - **トランスポート ルール**
-  - 転送受信トレイ ルールを含むメールボックス。
-
-  ![フォワーダーは、フォワーディング レポートに表示されます。](../../media/forwarding-report-forwarders.png)
-
-レポート ビューで **[フィルター]** をクリックすると、[開始日] と [終了日] で日付 **範囲****を指定できます**。
-
-### <a name="details-table-view-for-the-forwarding-report"></a>転送レポートの詳細テーブル ビュー
-
-レポート ビューで **[詳細テーブルの表示** ] をクリックすると、次の情報が表示されます。
-
-- **フォワーダー**: トランスポート **ルールまたは** 転送受信トレイ ルールを含むメールボックスの値。
-- **転送の種類**: メールボックス ルール **またはトランスポート ルール****の値** です。
-- **受信者名**
-- **受信者ドメイン**
-- **詳細**: これは、メール フロー ルールの GUID 値、または受信トレイ ルールの RuleIdentity 値です。
-- **Count**
-- **最初の転送日**
-
-詳細テーブル ビューで **[フィルター** ] をクリックすると、[開始日] と [終了日] で日付 **範囲****を指定できます**。
-
-レポート ビューに戻る場合は、[レポートの表示] **をクリックします**。
+> [!NOTE]
+> 転送 **レポートは** EAC で利用できます。 詳細については、「新しい [EAC の自動転送メッセージ レポート」を参照してください](/exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report)。
 
 ## <a name="mailflow-status-report"></a>メールフローの状態レポート
 
@@ -249,7 +160,7 @@ Mailflow **状態レポートは**、送信済 [](#sent-and-received-email-repor
 データ テーブルには、次の情報が含まれます。
 
 - **Direction**
-- **Type**
+- **型**
 - **24 時間**
 - **3 日間**
 - **7 日間**
@@ -424,65 +335,8 @@ Tech **ビューは、** ファネル **ビューに** 似ています。構成�
 
 ## <a name="sent-and-received-email-report"></a>送信および受信した電子メール レポート
 
-送信 **および受信電子** メール レポートは、スパム検出、マルウェア、および "良い" と識別された電子メールを含む、受信および送信メールに関する情報を示すスマート レポートです。 このレポートと [Mailflow](#mailflow-status-report) 状態レポートの違いは、このレポートにエッジ保護によってブロックされたメッセージに関するデータは含まれておりない点です。
-
-**注**: メッセージが 5 人の受信者に送信された場合、メッセージは 1 つのメッセージとしてカウントされます。
-
-レポートの集計ビューと詳細ビューでは、90 日間のフィルター処理が可能です。
-
-レポートを表示するには、セキュリティ & コンプライアンス センターを [開](https://protection.office.com)き、[レポートダッシュボード] に移動し、[送信メールと受信メール \> **] を選択します**。 レポートに直接移動するには、を開きます <https://protection.office.com/reportv2?id=SentAndReceivedMailATP> 。
-
-![レポート ダッシュボードで送信および受信した電子メール ウィジェット。](../../media/sent-and-received-email-report-widget.png)
-
-### <a name="report-view-for-the-sent-and-received-email-report"></a>送信および受信電子メール レポートのレポート ビュー
-
-レポート ビューでは、次のグラフを使用できます。
-
-- **分類: タイプ : グラフ** には、使用可能なすべてのカテゴリが表示されます。
-
-  - **合計**
-  - **良いメール**
-  - **マルウェア (マルウェア対策)** (EOP)
-  - **スパム検出**
-  - **ルール メッセージ**
-  - **高度なマルウェア**(Microsoft Defender for Office 365)
-
-  グラフで 1 日 (データ ポイント) にカーソルを合わせると、その日の詳細を確認できます。
-
-  ![送信および受信した電子メール レポートにビューを入力します。](../../media/sent-and-received-email-report-type-view.png)
-
-- **[ブレークダウン]: [方向]**: グラフには、 **合計** データ、 **受信** データ、および **送信データが表示** されます。 グラフで 1 日 (データ ポイント) にカーソルを合わせると、その日の詳細を確認できます。
-
-  ![送信および受信電子メール レポートの方向ビュー。](../../media/sent-and-received-email-report-direction-view.png)
-
-- **ドリルダウン** \>**マルウェア (マルウェア対策)**: この選択により、マルウェア検出 [レポートが表示されます](view-email-security-reports.md#malware-detections-report)。
-
-- **ドリルダウン** \>**スパム検出)**: この選択により、スパム検出 [レポートに移動します](view-email-security-reports.md#spam-detections-report)。
-
-レポート ビューで **[フィルター]** をクリックすると、次のフィルターを使用して結果を変更できます。
-
-- **開始日と****終了日**
-- 方向の値
-- 型の値
-
-レポート ビューに戻る場合は、[レポートの表示] **をクリックします**。
-
-### <a name="details-table-view-for-the-sent-and-received-email-report"></a>送信および受信電子メール レポートの詳細テーブル ビュー
-
-[別の **方向] または [** 方向] の [方向 **]** ビューで [詳細テーブルの表示] をクリック **すると** 、次の情報が表示されます。
-
-- **日付 (UTC)**
-- **Type**
-- **Direction**
-- **メッセージ数**
-
-詳細テーブル ビューで **[フィルター]** をクリックすると、次のフィルターを使用して結果を変更できます。
-
-- **開始日と****終了日**
-- 方向の値
-- 型の値
-
-レポート ビューに戻る場合は、[レポートの表示] **をクリックします**。
+> [!NOTE]
+> このレポートは、Mailflow 状態 [レポートに置き換えされています](#mailflow-status-report)。
 
 ## <a name="top-senders-and-recipients-report"></a>上位の送信者と受信者レポート
 

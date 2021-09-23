@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 ms.custom: seo-marvel-apr2020
 description: スクリプトを実行して、& OneDrive for Businessの電子情報開示ケースに関連付けられた新しい保留リストにメールボックスを追加するMicrosoft 365 コンプライアンス センター。
-ms.openlocfilehash: a521e96cd81649acf032f7c6a79473a7507e3ba2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f64ada92bdfc3081f1695e11cd4ee21fd2995c40
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216264"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483041"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-core-ediscovery-case"></a>スクリプトを使用してコア電子情報開示ケースの保留リストにユーザーを追加する
 
@@ -105,7 +105,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
 
 スクリプトが求める情報を収集した後、最後にスクリプトを実行して新しい保留リストを作成し、ユーザーを追加します。
   
-1. ファイル名のサフィックスを使用してWindows PowerShellスクリプト ファイルに次のテキストを保存します `.ps1` 。 たとえば、`AddUsersToHold.ps1` などです。
+1. ファイル名のサフィックスを使用してWindows PowerShellスクリプト ファイルに次のテキストを保存します `.ps1` 。 たとえば、「 `AddUsersToHold.ps1` 」のように入力します。
 
 ```powershell
 #script begin
@@ -224,7 +224,7 @@ New-CaseHoldRule -Name "$holdName" -Policy "$holdname" -ContentMatchQuery $holdQ
 }
 else{
 New-CaseHoldPolicy -Name "$holdName" -Case "$casename" -ExchangeLocation $finallist -SharePointLocation $urls -Enabled $false | out-null
-New-CaseHoldRule -Name "$holdName" -Policy "$holdname" -ContentMatchQuery $holdQuery -disabled $true | out-null
+New-CaseHoldRule -Name "$holdName" -Policy "$holdname" -ContentMatchQuery $holdQuery -disabled $false | out-null
 }
 ""
 }

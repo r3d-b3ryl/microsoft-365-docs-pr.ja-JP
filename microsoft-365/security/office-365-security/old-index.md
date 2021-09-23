@@ -16,12 +16,12 @@ ms.collection:
 description: Office 365 におけるセキュリティについて、EOP、Defender for Office 365 プラン 1 およびプラン 2、セキュリティの標準構成と厳格な構成の違いなどを説明します。 持っている情報を理解し、プロパティをセキュリティで保護する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8ef88d80a4d02a51055c9bfe338617b04162888a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: fac32e667b0393cacf56c9e478d50980c7ad36ec
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571965"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59482789"
 ---
 # <a name="office-365-security"></a>Office 365 セキュリティ
 
@@ -91,7 +91,7 @@ Microsoft Defender for Office 365 プランを追加した場合に、EOP の脅
 
 |防止/検出|調査|対応|
 |---|---|---|
-|提供されるテクノロジ:<ul><li>スパム</li><li>フィッシング</li><li>マルウェア</li><li>バルク メール</li><li>スプーフィング インテリジェンス</li><li>偽装の検出</li><li>管理者検疫</li><li>管理者とユーザーによる誤検知と検出漏れの報告</li><li>URL およびファイルの許可/禁止</li><li>レポート</li></u1>|<li>監査ログ検索</li><li>メッセージ追跡</li>|<li>ゼロアワー自動消去 (ZAP)</li><li>許可リストと禁止リストの絞り込みとテスト</li>|
+|提供されるテクノロジ:<ul><li>スパム</li><li>フィッシング</li><li>マルウェア</li><li>バルク メール</li><li>スプーフィング インテリジェンス</li><li>偽装の検出</li><li>管理者検疫</li><li>管理者とユーザーによる誤検知と検出漏れの報告</li><li>URL およびファイルの許可/禁止</li><li>レポート</li></ul>|<li>監査ログ検索</li><li>メッセージ追跡</li>|<li>ゼロ時間自動削除 (ZAP)</li><li>許可リストと禁止リストの絞り込みとテスト</li>|
 |
 
 EOP の詳細については、**[こちらの記事をご覧ください](exchange-online-protection-overview.md)**。
@@ -103,7 +103,7 @@ EOP の詳細については、**[こちらの記事をご覧ください](excha
 
 |防止/検出|調査|対応|
 |---|---|---|
-|EOP に含まれるすべてのテクノロジに加えて:<u1><li>安全な添付ファイル</li><li>安全なリンク<li>Microsoft Defender for Office 365 によるワークロードの保護 (例: SharePoint Online、Teams、OneDrive for Business)</li><li>メール、Office クライアント、Teams でのクリック時の保護</li><li>Microsoft Defender for Office 365 のフィッシング詐欺対策</li><li>ユーザーの偽装とドメインの偽装の保護</li><li>アラートおよびアラート用 SIEM 統合 API</li>|<li>検出用 SIEM 統合 API</li><li>**リアルタイム検出ツール**</li><li>URL 追跡</li>|<li>同上</li></u1>
+|EOP に含まれるすべてのテクノロジに加えて:<ul><li>安全な添付ファイル</li><li>安全なリンク<li>Microsoft Defender for Office 365 によるワークロードの保護 (例: SharePoint Online、Teams、OneDrive for Business)</li><li>メール、Office クライアント、Teams でのクリック時の保護</li><li>Microsoft Defender for Office 365 のフィッシング詐欺対策</li><li>ユーザーの偽装とドメインの偽装の保護</li><li>アラートおよびアラート用 SIEM 統合 API</li>|<li>検出用 SIEM 統合 API</li><li>**リアルタイム検出ツール**</li><li>URL 追跡</li>|<li>同上</li></ul>
 
 このように、Microsoft Defender for Office 365 P1 では、***防止** 面の機能が強化され、新たに*_検出_**手段が追加されています。
 
@@ -114,7 +114,7 @@ Microsoft Defender for Office 365 P1 では、調査機能として **リアル�
 
 |防止/検出|調査|対応|
 |---|---|---|
-|EOP および Microsoft Defender for Office 365 P1に含まれるすべてのテクノロジに加えて:<u1><li>同上</li>|<li>**脅威エクスプローラー**</li><li>脅威トラッカー</li><li>キャンペーン ビュー</li>|<li>自動調査と応答 (AIR) </li><li>脅威エクスプローラーからの AIR</li><li>侵害されたユーザーの AIR</li><li>自動調査用 SIEM 統合 API</li>
+|EOP および Microsoft Defender for Office 365 P1に含まれるすべてのテクノロジに加えて:<ul><li>同上</li>|<li>**脅威エクスプローラー**</li><li>脅威トラッカー</li><li>キャンペーン ビュー</li>|<li>自動調査と応答 (AIR) </li><li>脅威エクスプローラーからの AIR</li><li>侵害されたユーザーの AIR</li><li>自動調査用 SIEM 統合 API</li>
 
 このように、Microsoft Defender for Office 365 P2 では、***検出/対応*** 面の機能が強化され、新たに 自動化された追及機能が追加されています。
 

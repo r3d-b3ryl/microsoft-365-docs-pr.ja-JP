@@ -19,12 +19,12 @@ ms.custom:
 description: 管理者は、ユーザー (EOP) 内のすべてのユーザーの検疫済みメッセージを表示および管理Exchange Online Protectionできます。 Microsoft Defender for Office 365組織の管理者は、SharePoint Online、OneDrive for Business、およびMicrosoft Teams。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 921d3e897dea70180a1338ea27e4ef1bc29db41e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 428767ea3d50108075a6a5e7e74d5786405e5090
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214353"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483533"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>EOP の管理者として検疫済みメッセージとファイルを管理する
 
@@ -37,7 +37,9 @@ ms.locfileid: "59214353"
 
 Exchange Online のメールボックスを使用している Microsoft 365 組織または Exchange Online のメールボックスを使用していないスタンドアロンの Exchange Online Protection (EOP) 組織では、危険な可能性があるメッセージまたは不要なメッセージは検疫済みメッセージとして保留されます。 詳細については [、「EOP の検疫済み電子メール メッセージ」を参照してください](quarantine-email-messages.md)。
 
-管理者は、すべてのユーザーの検疫済みメッセージのすべての種類を表示、解放、および削除できます。 マルウェア、高信頼フィッシング、またはメール フロー ルール (トランスポート ルールとも呼ばれる) の結果として検疫されたメッセージを管理できるのは、管理者だけです。 管理者は、誤検知を Microsoft に報告できます。
+管理者は、すべてのユーザーの検疫済みメッセージのすべての種類を表示、解放、および削除できます。 管理者は、誤検知を Microsoft に報告できます。
+
+既定では、マルウェア、高信頼フィッシング、またはメール フロー ルール (トランスポート ルールとも呼ばれる) の結果として検疫されたメッセージを管理できるのは管理者だけです。 ただし、管理者は検疫 _ポリシーを_ 使用して、メッセージが検疫された理由 (サポートされている機能の場合) に基づいて、検疫されたメッセージに対してユーザーが実行できる操作を定義できます。 詳細については、「検疫ポリシー [」を参照してください](quarantine-policies.md)。
 
 microsoft Defender for Office 365 の組織の管理者は、SharePoint、OneDrive、および Microsoft Teams の セーフ 添付ファイルによって検疫されたファイルを[管理することもできます](mdo-for-spo-odb-and-teams.md)。
 
@@ -58,7 +60,7 @@ microsoft Defender for Office 365 の組織の管理者は、SharePoint、OneDri
   **注**:
 
   - Microsoft 365 管理センターで、対応する Azure Active Directory の役割にユーザーを追加すると、ユーザーには、必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
-  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
+  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
   - <sup>\*</sup>Microsoft 365 Defender ポータルのメール **&** コラボレーション ロールの検疫管理者役割グループのメンバーは [、Exchange Online](permissions-microsoft-365-security-center.md#email--collaboration-roles-in-the-microsoft-365-defender-portal)の衛生管理役割グループのメンバーである必要があります [。Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) PowerShell で検疫手順を実行する必要があります。
 
 - 検疫済みメッセージは、自動的に削除される前に既定の期間保持されます。
@@ -96,7 +98,7 @@ microsoft Defender for Office 365 の組織の管理者は、SharePoint、OneDri
 4. 結果をフィルター処理するには、**[フィルター]** をクリックします。 次のフィルターは、表示される **フィルター** ポップアップで使用できます。
    - **[メッセージ ID]**: メッセージのグローバル一意識別子。
 
-     たとえば、メッセージ [トレースを](message-trace-scc.md) 使用して、組織内のユーザーに送信されたメッセージを探し、メッセージが配信される代わりに検疫されたと判断しました。 メッセージ ID の完全な値 (角かっこ ( ) を含む場合があります) を必ず含める \<\> 必要があります。 (例: `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`)。
+     たとえば、メッセージ [トレースを](message-trace-scc.md) 使用して、組織内のユーザーに送信されたメッセージを探し、メッセージが配信される代わりに検疫されたと判断しました。 メッセージ ID の完全な値 (角かっこ ( ) を含む場合があります) を必ず含める \<\> 必要があります。 例: `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`。
 
    - **[送信者のアドレス]**
    - **受信者の住所**
@@ -112,7 +114,7 @@ microsoft Defender for Office 365 の組織の管理者は、SharePoint、OneDri
      - **トランスポート ルール** (メール フロー ルール)
      - **[バルク]**
      - **[スパム]**
-     - **マルウェア**
+     - **マルウェア**: EOP のマルウェア対策ポリシー、セーフ Defender の添付ファイル ポリシー Office 365。 ポリシー **の種類の値** は、使用された機能を示します。
      - **フィッシング**: スパム フィルターの評決は、フィッシングまたはフィッシング対策保護がメッセージ [(ス](set-up-anti-phishing-policies.md#spoof-settings)プーフィング設定または [偽装保護](set-up-anti-phishing-policis) を検疫しました。
      - **高確度のフィッシング**
    - **受信者**: **[すべてのユーザー] または** **[自分のみ] です**。 エンド ユーザーは、送信された検疫済みメッセージのみを管理できます。
@@ -278,7 +280,7 @@ microsoft Defender for Office 365 の組織の管理者は、SharePoint、OneDri
 > [!NOTE]
 > このセクションの検疫済みファイルの手順は、プラン 1 またはプラン 2 Office 365 Microsoft Defender でのみ使用できます。
 
-defender for Office 365 を使用している組織では、管理者は セーフ 添付ファイルによって SharePoint Online、OneDrive for Business、および Microsoft Teams で検疫されたファイルを管理できます。 これらのファイルの保護を有効にするには、「添付ファイルを有効にする[セーフ」をSharePoint、OneDrive、](turn-on-mdo-for-spo-odb-and-teams.md)およびMicrosoft Teams。
+Defender for Office 365 の組織では、管理者は セーフ、OneDrive、および Microsoft Teams の セーフ SharePoint 添付ファイルによって検疫されたファイルを管理できます。 これらのファイルの保護を有効にするには、「添付ファイルを有効にする[セーフ」をSharePoint、OneDrive、](turn-on-mdo-for-spo-odb-and-teams.md)およびMicrosoft Teams。
 
 ### <a name="view-quarantined-files"></a>検疫済みファイルの表示
 

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 92c74ae2f7e7236138f28cf30b3e835eb10b636d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f9999fdea57465120040cb04a497f1510bcb988b
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189240"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483509"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>[アラートの調査] Microsoft 365 Defender
 
@@ -42,7 +42,7 @@ ms.locfileid: "59189240"
 
 アラート **キューには、** 現在の一連のアラートが表示されます。 インシデント ポータル (&) の&>アラートからアラート キューにMicrosoft 365 Defender取得[security.microsoft.com)。](https://security.microsoft.com)
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="アラート キューの例。":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="ポータル内のアラート キューのMicrosoft 365 Defenderします。":::
 
 Microsoft Defender for Endpoint、Microsoft Defender for endpoint、Microsoft Defender for microsoft Defender など、さまざまな Microsoft セキュリティ Office 365、Microsoft 365 Defenderここに表示されます。
 
@@ -50,7 +50,7 @@ Microsoft Defender for Endpoint、Microsoft Defender for endpoint、Microsoft De
 
 既定のアラート キューから [フィルター] を選択 **すると、[** フィルター] ウィンドウが表示され、そこからアラートのサブセットを指定できます。 次に例を示します。
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="アラート キューのフィルター ウィンドウの例。":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="ポータル内のアラート キューのフィルター ウィンドウのMicrosoft 365 Defenderします。":::
 
 次の条件に従ってアラートをフィルター処理できます。
 
@@ -66,7 +66,7 @@ Microsoft Defender for Endpoint、Microsoft Defender for endpoint、Microsoft De
 
 メインのアラート ページを表示するには、アラートの名前を選択します。 次に例を示します。
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="ポータル内のアラートの詳細ページMicrosoft 365 Defender例":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="ポータル内のアラートの詳細ページMicrosoft 365 Defenderします。":::
 
 [警告の管理] ウィンドウ **から [メインのアラート ページを開** く] **アクションを選択** することもできます。
 
@@ -115,7 +115,7 @@ Microsoft Cloud App Security |`ca{GUID}` <br> 例: `ca123a456b-c789-1d2e-12f1g33
 
 アラートを管理するには、その行のアラート キューでアラートを選択して、[警告の管理] **ウィンドウを表示** します。 次に例を示します。
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="アラートの概要ウィンドウの例。":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="ポータル内のアラートの概要ウィンドウのMicrosoft 365 Defenderします。":::
 
 [ **警告の管理]** ウィンドウでは、次の項目を指定できます。
 
@@ -149,7 +149,7 @@ Microsoft Cloud App Security |`ca{GUID}` <br> 例: `ca123a456b-c789-1d2e-12f1g33
 
 アラートを分類し、その決定を指定すると、Microsoft 365 Defenderを調整して、より多くの真のアラートと少ない誤った通知を提供できます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 インプロセス インシデントの必要に応じて、調査を続行 [します](investigate-incidents.md)。
 

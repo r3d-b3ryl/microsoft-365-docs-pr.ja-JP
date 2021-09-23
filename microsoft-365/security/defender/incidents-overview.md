@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 824d32b07acbba0d19a5f2afdafffcbba53baeeb
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 0f0bffad66588c758d4ea8c59af365362504d7f4
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401040"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483332"
 ---
 # <a name="incident-response-with-microsoft-365-defender"></a>インシデント対応とMicrosoft 365 Defender
 
@@ -181,7 +181,18 @@ Microsoft 製品全体の SecOps の詳細については、次のリソース�
 - [ベスト プラクティス](/security/compass/security-operations)
 - [ビデオとスライド](/security/compass/security-operations-videos-and-decks)
 
-## <a name="next-steps"></a>次の手順
+## <a name="training-for-security-analysts"></a>セキュリティ アナリスト向けトレーニング
+
+Microsoft Learn のこの学習モジュールを使用して、インシデントとアラートの管理にMicrosoft 365 Defender方法を理解します。
+
+|トレーニング: |Microsoft 365 Defender を使用してインシデントを調査する|
+|---|---|
+|![トレーニング アイコンを使用してMicrosoft 365 Defenderを調査します。](../../media/incidents-overview/m365-defender-address-security-investigation.svg)| Microsoft 365 Defenderの脅威データを統合し、AI を使用してインシデントとアラートに組み合わせます。 インシデントからその管理までの時間を最小限に抑え、その後の対応と解決の方法について説明します。 <p> 27 分 ~ 6 単位 |
+
+> [!div class="nextstepaction"]
+> [スタート>](/learn/modules/defender-investigate-incidents/)
+
+## <a name="next-steps"></a>次のステップ
 
 セキュリティ チームのエクスペリエンス レベルまたは役割に基づいて、一覧表示されている手順を使用します。
 

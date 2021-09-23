@@ -18,12 +18,12 @@ description: メール内の悪意のあるファイルセーフ組織を保護�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ffe207eb1f1aab42f3a0c2639410d308fbfb64e0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8fcfb578f69062d39caa44886b63a84e926f9635
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59217933"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483365"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender セーフの添付ファイル ポリシーをセットアップOffice 365
 
@@ -40,7 +40,7 @@ ms.locfileid: "59217933"
 
 組み込みまたは既定の添付ファイル ポリシーセーフはありません。 電子メール セーフの添付ファイルスキャンを取得するには、この記事で説明するように 1 つ以上セーフ添付ファイル ポリシーを作成する必要があります。
 
-セーフ 添付ファイル ポリシーは、Microsoft 365 Defender ポータルまたは PowerShell (Exchange Online のメールボックスを持つ適格な Microsoft 365 組織の場合は Exchange Online PowerShell、Exchange Online メールボックスを持つ組織ではスタンドアロンの EOP PowerShell、Office 365 アドオン サブスクリプションの場合は Defender を使用) で構成できます。
+セーフ 添付ファイル ポリシーは、Microsoft 365 Defender ポータルまたは PowerShell (Exchange Online PowerShell で、Exchange Online 内のメールボックスを持つ適格な Microsoft 365 組織に対して構成できます。スタンドアロンの EOP PowerShell は組織に対して構成できます。Exchange Onlineが、Defender を使用して、Office 365サブスクリプションを作成します)。
 
 添付ファイル ポリシーのセーフは次のとおりです。
 
@@ -73,7 +73,7 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
   **注**:
 
   - Microsoft 365 管理センター の対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 Defender ポータルで必要なアクセス許可と、Microsoft 365の他の機能に対するアクセス許可が付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
-  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
+  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
 
 - 添付ファイル ポリシーの推奨設定セーフ、添付ファイルの設定[セーフ参照してください](recommended-settings-for-eop-and-office365.md#safe-attachments-settings)。
 
@@ -118,6 +118,10 @@ Microsoft 365 Defender ポータルでカスタム セーフ 添付ファイル 
      - **動的配信 (プレビュー機能)**
 
      これらの値については、「添付ファイルポリシー[セーフ」で説明します](safe-attachments.md#safe-attachments-policy-settings)。
+
+   - **検疫ポリシー**: [添付ファイル] ([ブロック]、[置換]、または [動的配信]) によって検疫セーフに適用される検疫ポリシー **を選択します**。  検疫ポリシーは、検疫されたメッセージに対してユーザーが実行できる操作を定義します。 詳細については、「検疫ポリシー [」を参照してください](quarantine-policies.md)。
+
+     空白の値は、既定の検疫ポリシーが使用セーフします。 [添付ファイル] ポリシーを後セーフ編集するか、設定を表示すると、既定の検疫ポリシー名が表示されます。
 
    - 検出された添付ファイルを含むメッセージをリダイレクト **する**: [リダイレクトを有効にする]を選択した場合は、[ブロック、監視、または置換された添付ファイルを含むメール アドレスを指定して指定した電子メール アドレス] ボックスに電子メール アドレスを指定して、分析と調査のためにマルウェア添付ファイルを含むメッセージを送信できます。
 
@@ -237,12 +241,13 @@ PowerShell でセーフ添付ファイル ポリシーを作成するには、�
 安全な添付ファイル ポリシーを作成するには、次の構文を使用します。
 
 ```PowerShell
-New-SafeAttachmentPolicy -Name "<PolicyName>" -Enable $true [-AdminDisplayName "<Comments>"] [-Action <Allow | Block | Replace | DynamicDelivery>] [-Redirect <$true | $false>] [-RedirectAddress <SMTPEmailAddress>] [-ActionOnError <$true | $false>]
+New-SafeAttachmentPolicy -Name "<PolicyName>" -Enable $true [-AdminDisplayName "<Comments>"] [-Action <Allow | Block | Replace | DynamicDelivery>] [-Redirect <$true | $false>] [-RedirectAddress <SMTPEmailAddress>] [-ActionOnError <$true | $false>] [-QuarantineTag <QuarantinePolicyName>]
 ```
 
 この例では、Contoso All という名前の安全な添付ファイル ポリシーを次の値で作成します。
 
 - [ドキュメント] スキャンによってマルウェアがセーフ検出されたメッセージをブロックします _(Action_ パラメーターは使用していないので、既定値はです `Block` )。
+- QuarantineTag [パラメーターを](quarantine-policies.md) 使用していないので、既定の検疫ポリシー (AdminOnlyAccessPolicy) _が使用_ されます。
 - リダイレクトが有効になっていると、マルウェアが含まれていると検出されたメッセージは、分析と調査のために sec-ops@contoso.com に送信されます。
 - 添付セーフスキャンが使用できない場合、またはエラーが発生した場合は、メッセージを配信しません _(ActionOnError_ パラメーターは使用していないので、既定値はです `$true` )。
 
@@ -251,6 +256,9 @@ New-SafeAttachmentPolicy -Name "Contoso All" -Enable $true -Redirect $true -Redi
 ```
 
 構文とパラメーターの詳細については [、「New-SafeAttachmentPolicy」を参照してください](/powershell/module/exchange/new-safeattachmentpolicy)。
+
+> [!NOTE]
+> 安全な添付ファイル ポリシーで使用[](quarantine-policies.md)する検疫ポリシーを指定する詳細な手順については[、「Use PowerShell](quarantine-policies.md#safe-attachments-policies-in-powershell)to specify the quarantine policy in セーフ 添付ファイル ポリシー」を参照してください。
 
 #### <a name="step-2-use-powershell-to-create-a-safe-attachment-rule"></a>手順 2: PowerShell を使用して安全な添付ファイル ルールを作成する
 
@@ -340,6 +348,9 @@ Set-SafeAttachmentPolicy -Identity "<PolicyName>" <Settings>
 ```
 
 構文とパラメーターの詳細については [、「Set-SafeAttachmentPolicy」を参照してください](/powershell/module/exchange/set-safeattachmentpolicy)。
+
+> [!NOTE]
+> 安全な添付ファイル ポリシーで使用[](quarantine-policies.md)する検疫ポリシーを指定する詳細な手順については[、「Use PowerShell](quarantine-policies.md#safe-attachments-policies-in-powershell)to specify the quarantine policy in セーフ 添付ファイル ポリシー」を参照してください。
 
 ### <a name="use-powershell-to-modify-safe-attachment-rules"></a>PowerShell を使用して安全な添付ファイル ルールを変更する
 
