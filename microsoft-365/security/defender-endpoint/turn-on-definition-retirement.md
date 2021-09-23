@@ -16,12 +16,13 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 505270d319a78de20bf6fed01b7ca79c9fc2b400
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: m365-security-compliance
+ms.openlocfilehash: 48636954f3f9127d5c79047ad160cf5a0133efd5
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164870"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59490945"
 ---
 # <a name="turn-on-definition-retirement"></a>定義の削除を有効にする
 

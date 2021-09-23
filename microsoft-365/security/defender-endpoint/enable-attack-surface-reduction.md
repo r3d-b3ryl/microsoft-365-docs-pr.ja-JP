@@ -16,12 +16,13 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.date: 08/17/2021
-ms.openlocfilehash: 8d88a3f84819e22d4e8c5e5d0b01e1169a5fb3df
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.collection: m365-security-compliance
+ms.openlocfilehash: e8443439b85c6038d2d4a50c369cc02faaf8a3c7
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59356353"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491303"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>攻撃面の減少ルールを有効にする
 
@@ -35,7 +36,7 @@ ms.locfileid: "59356353"
 
 [攻撃表面の縮小ルール](attack-surface-reduction.md) (ASR ルール) は、マルウェアが頻繁にデバイスやネットワークを侵害するアクションを防ぐのに役立ちます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>Requirements
 
 複数のバージョンの攻撃表面Windows機能
 

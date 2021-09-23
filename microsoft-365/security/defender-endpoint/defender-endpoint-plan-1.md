@@ -13,12 +13,13 @@ ms.technology: mdep1
 localization_priority: Normal
 ms.reviewer: inbadian
 f1.keywords: NOCSH
-ms.openlocfilehash: 74621e47b70e304afa70eb2e3513d5e6701afd0d
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 2ae91e32be7d010e5b8014ba2dde47f302d0c474
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400308"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491387"
 ---
 # <a name="overview-of-microsoft-defender-for-endpoint-plan-1-preview"></a>Microsoft Defender for Endpoint Plan 1 の概要 (プレビュー)
 
@@ -118,7 +119,7 @@ Defender for Endpoint の攻撃表面縮小機能の詳細については、「�
 
 詳細については、「フォルダー アクセスを [制御して重要なフォルダーを保護する」を参照してください](controlled-folders.md)。
 
-### <a name="device-control"></a>デバイス コントロール
+### <a name="device-control"></a>デバイス制御
 
 組織のデバイスに対する脅威は、USB ドライブなどのリムーバブル ドライブ上のファイルの形式で受け取る場合があります。 Defender for Endpoint には、承認されていない周辺機器からの脅威がデバイスを侵害するのを防ぐための機能が含まれています。 Defender for Endpoint を構成して、リムーバブル デバイス上のリムーバブル デバイスとファイルをブロックまたは許可できます。 
 
@@ -193,7 +194,7 @@ Defender for Endpoint API を使用すると、ワークフローを自動化し
 - iOS
 - Android OS
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [Microsoft Defender for Endpoint Plan 1 (プレビュー) とプラン 2 の比較](defender-endpoint-plan-1-2.md)
 - [Defender for Endpoint Plan 1 のセットアップと構成 (プレビュー)](mde-p1-setup-configuration.md)

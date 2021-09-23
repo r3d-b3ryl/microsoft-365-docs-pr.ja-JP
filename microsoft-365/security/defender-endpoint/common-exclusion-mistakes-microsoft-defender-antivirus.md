@@ -15,13 +15,14 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 08/31/2021
-ms.openlocfilehash: 96589d4ed30dc635588cbc66a656d53836324d2e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.date: 09/22/2021
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 85c3aee098786d75a7a2f17d1c9c4d11c0c87aeb
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163767"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59490909"
 ---
 # <a name="common-mistakes-to-avoid-when-defining-exclusions"></a>除外を定義する際に避ける必要のある一般的な間違い
 

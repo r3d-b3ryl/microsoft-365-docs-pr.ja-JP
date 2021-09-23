@@ -15,13 +15,14 @@ ms.reviewer: ''
 manager: dansimp
 ms.topic: article
 ms.technology: mde
-ms.date: 06/02/2021
-ms.openlocfilehash: f6a86aff84eda3f9f0145e47387b4353555a3a40
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.date: 09/22/2021
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 746d3ecca3d61634cd11cc7df87d677c4667ad8d
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222030"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491029"
 ---
 # <a name="test-attack-surface-reduction-in-microsoft-defender-for-endpoint"></a>エンドポイント向け Microsoft Defender の攻撃表面の縮小をテストする
 

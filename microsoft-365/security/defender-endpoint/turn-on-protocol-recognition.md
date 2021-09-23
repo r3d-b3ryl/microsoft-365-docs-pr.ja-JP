@@ -16,12 +16,13 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 890303a15618a0318db0421c9c80f270583e19bf
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: m365-security-compliance
+ms.openlocfilehash: da8b7c2949e594fc461ca6a8ac65467bb207aae4
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164863"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59489619"
 ---
 # <a name="turn-on-protocol-recognition"></a>プロトコル認識を有効にする 
 

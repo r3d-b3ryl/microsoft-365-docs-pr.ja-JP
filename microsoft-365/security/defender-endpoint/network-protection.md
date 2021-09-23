@@ -16,12 +16,13 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: overview
-ms.openlocfilehash: 44f75b2912a8e54df6584a8f97d0f6e76cac6b15
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: M365-security-compliance
+ms.openlocfilehash: ab658009d5459093477dede8fdab5e8da4186eb6
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192710"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491159"
 ---
 # <a name="protect-your-network"></a>ネットワークを保護する
 
@@ -89,7 +90,7 @@ DeviceEvents
 
 1. [XML を直接コピーします](event-views.md)。
 
-2. **[OK]** を選択します。
+2. [**OK**] を選択します。
 
 この手順では、ネットワーク保護に関連する次のイベントのみを表示するためにフィルター処理するカスタム ビューを作成します。
 

@@ -13,12 +13,13 @@ ms.technology: mdep1
 localization_priority: Normal
 ms.reviewer: inbadian
 f1.keywords: NOCSH
-ms.openlocfilehash: b462fd6c02e455b7bd5ed41c71462628a0d0071b
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.collection: M365-security-compliance
+ms.openlocfilehash: d589a196f261d817cff3717cab613658c1533417
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59399408"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59489543"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-plan-1-preview"></a>Microsoft Defender for Endpoint Plan 1 の管理 (プレビュー)
 
@@ -57,6 +58,6 @@ Defender for Endpoint は、柔軟性と構成のオプションを提供しま�
 
 Defender for Endpoint で誤検知/陰性が表示される場合は [、「Address false positives/negatives in Microsoft Defender for Endpoint」を参照してください](defender-endpoint-false-positives-negatives.md)。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [Microsoft Defender for Endpoint の新機能を確認する](whats-new-in-microsoft-defender-atp.md)

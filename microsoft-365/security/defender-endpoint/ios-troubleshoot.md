@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6d2e0fc1ffeccfd189b95fbd5908a959e4a823a8
-ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
+ms.openlocfilehash: c7ee6f1debaf697c49e292068ba88c436714addf
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/21/2021
-ms.locfileid: "59460170"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491125"
 ---
 # <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>iOS 上の Microsoft Defender for Endpoint で問題のトラブルシューティングを行い、FAQ に対する回答を見つける
 
@@ -103,6 +103,10 @@ Microsoft Defender for Endpoint は、フィッシングなどの Web ベース�
 ## <a name="data-and-privacy"></a>データとプライバシー
 
 収集されたデータとプライバシーの詳細については、「プライバシー情報 [- Microsoft Defender for Endpoint on iOS」を参照してください](ios-privacy.md)。
+
+## <a name="issues-on-supervised-devices-with-content-filter-profile-installed"></a>コンテンツ フィルター プロファイルがインストールされている監視対象デバイスの問題
+
+Defender for Endpoint コンテンツ フィルターがインストールされている監視対象デバイスに問題があります。 そのようなデバイスのインターセット接続で遅延や遅延が発生した場合は、デバイスからコンテンツ フィルター プロファイルをアンインストールまたは削除します。 この問題の解決に取り組み、解決が完了したらこの場所を更新します。 
 
 ## <a name="issues-during-app-updates-from-the-app-store"></a>アプリ ストアからのアプリの更新中の問題
 

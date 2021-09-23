@@ -15,12 +15,13 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: d8bc077e12d52a5194b6e698a989704bdc273c52
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 23e89bd4aee02299e0710ff65fbe496fd8535b8f
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213523"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59490119"
 ---
 # <a name="microsoft-defender-antivirus-in-the-windows-security-app"></a>Microsoft Defender ウイルス対策アプリでWindows セキュリティする
 
@@ -109,8 +110,8 @@ ms.locfileid: "59213523"
 ****
 |除外の種類|によって定義される|動作|
 |---|---|---|
-|**ファイル**|場所 <br/>例: `c:\sample\sample.test`|特定のファイルは、特定のファイルによってMicrosoft Defender ウイルス対策。|
-|**Folder**|場所 <br/>例: `c:\test\sample`|指定したフォルダー内のすべてのアイテムは、指定されたフォルダー Microsoft Defender ウイルス対策。|
+|**ファイル**|Location <br/>例: `c:\sample\sample.test`|特定のファイルは、特定のファイルによってMicrosoft Defender ウイルス対策。|
+|**Folder**|Location <br/>例: `c:\test\sample`|指定したフォルダー内のすべてのアイテムは、指定されたフォルダー Microsoft Defender ウイルス対策。|
 |**ファイルの種類**|ファイル拡張子 <br/>例: `.test`|デバイス上の任意 `.test` の場所に拡張子を持つすべてのファイルは、Microsoft Defender ウイルス対策。|
 |**プロセス**|実行可能ファイルのパス <br>例: `c:\test\process.exe`|特定のプロセスと、そのプロセスによって開くファイルは、そのプロセスによってスキップMicrosoft Defender ウイルス対策。|
 |

@@ -14,13 +14,14 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
-ms.date: 09/21/2021
-ms.openlocfilehash: 4be3905615327ff2d6025cceb971947161cbe80e
-ms.sourcegitcommit: dd4214a309c71292490743752da728cec7bffe88
+ms.date: 09/22/2021
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 0cb371b8eabb74f1702bb52269e4aa9d02270dc0
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59479506"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59490230"
 ---
 # <a name="cloud-protection-and-microsoft-defender-antivirus"></a>クラウド保護と Microsoft Defender ウイルス対策
 
@@ -31,7 +32,7 @@ ms.locfileid: "59479506"
 
 新しい脅威や新Microsoft Defender ウイルス対策に対する、ほぼ即座に自動化された保護を提供する次世代テクノロジ。 新しい脅威を動的に特定するために、次世代テクノロジは、Microsoft Intelligent Security Graph および高度な機械学習モデルによって駆動される強力な人工知能 (AI) システムで、多数の相互接続されたデータを処理します。 クラウド保護は、正確でMicrosoft Defender ウイルス対策インテリジェントな保護を提供するために、クラウド保護と共に機能します。 
 
-[:::image type="content" source="mde-cloud-protection.png" alt-text="クラウド保護とクラウド保護の機能を示す図Microsoft Defender ウイルス対策":::](enable-cloud-protection-microsoft-defender-antivirus.md)
+[:::image type="content" source="images/mde-cloud-protection.png" alt-text="クラウド保護とクラウド保護の機能を示す図Microsoft Defender ウイルス対策":::](enable-cloud-protection-microsoft-defender-antivirus.md)
 
 > [!TIP]
 > クラウド保護を有効に保つことをお勧めします。 詳細については、「クラウド保護を[有効にする理由」](why-cloud-protection-should-be-on-mdav.md)を参照Microsoft Defender ウイルス対策。 

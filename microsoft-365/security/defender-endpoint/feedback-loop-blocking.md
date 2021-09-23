@@ -15,14 +15,14 @@ localization_priority: Normal
 ms.custom:
 - next-gen
 - edr
-ms.collection: ''
 ms.technology: mde
-ms.openlocfilehash: 7319ff5a89a20529eed7d36aa0d0b1522013abd4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: m365-security-compliance
+ms.openlocfilehash: adff178601ea5db452c94c3e2c1255e9820a8246
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220566"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59490789"
 ---
 # <a name="feedback-loop-blocking"></a>フィードバック ループのブロック
 

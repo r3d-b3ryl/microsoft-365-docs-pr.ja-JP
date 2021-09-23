@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender AV 設定のローカルオーバーライドを構成する
+title: ユーザー設定のローカルオーバーライドをMicrosoft Defender ウイルス対策する
 description: Microsoft Defender AV でユーザーがローカルで変更する設定を有効または無効にします。
 keywords: ローカル オーバーライド, ローカル ポリシー, グループ ポリシー, gpo, lockdown,merge, lists
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,13 @@ ms.custom: nextgen
 ms.date: 09/14/2021
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 18260bd67d99aa372de7a14dab7decd3983d1beb
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 847b2085d6285299cea7f32f98c8c682dcb3fb4d
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59355886"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59490155"
 ---
 # <a name="prevent-or-allow-users-to-locally-modify-microsoft-defender-antivirus-policy-settings"></a>ユーザーがポリシー設定をローカルで変更Microsoft Defender ウイルス対策または許可する
 
@@ -58,7 +59,7 @@ ms.locfileid: "59355886"
 
 <br/><br/>
 
-| 場所 | 設定 | 記事 |
+| Location | 設定 | 記事 |
 |---|---|---|---|
 | MAPS |Microsoft MAPS へのレポート用にローカル設定の上書きを構成する|[クラウドによる保護の有効化](enable-cloud-protection-microsoft-defender-antivirus.md) |
 | 検疫する|検疫フォルダーからアイテムを削除するローカル設定の上書きを構成する|[スキャンの修復を構成する](configure-remediation-microsoft-defender-antivirus.md) |

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 78ad8b65a7ad727417dd6152fcb34c6df34080c9
-ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
+ms.openlocfilehash: 2e7ec8ca3b9f428708c21c5a75bbfd4174373d62
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59480858"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491327"
 ---
 # <a name="web-content-filtering"></a>Web コンテンツ フィルタリング
 
@@ -38,30 +38,31 @@ ms.locfileid: "59480858"
 > [!TIP]
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-Web コンテンツ フィルターは [、Microsoft Defender](web-protection-overview.md) for Endpoint の Web 保護機能の一部です。 これにより、組織はコンテンツ カテゴリに基づいて Web サイトへのアクセスを追跡および規制できます。 これらの Web サイトの多くは悪意のあるものではないが、コンプライアンス規制、帯域幅の使用、その他の懸念により問題になる可能性があります。
+Web コンテンツ フィルターは、Microsoft [Defender](web-protection-overview.md) for Endpoint の Web 保護機能の一部です。 これにより、組織はコンテンツ カテゴリに基づいて Web サイトへのアクセスを追跡および規制できます。 これらの Web サイトの多くは悪意のあるものではないが、コンプライアンス規制、帯域幅の使用、その他の懸念により問題になる可能性があります。
 
 デバイス グループ全体のポリシーを構成して、特定のカテゴリをブロックします。 カテゴリをブロックすると、指定したデバイス グループ内のユーザーは、そのカテゴリに関連付けられた URL にアクセスできません。 ブロックされていないカテゴリの場合、URL は自動的に監査されます。 ユーザーは中断することなく URL にアクセスできます。また、アクセス統計を収集して、よりカスタム ポリシーの決定を作成できます。 表示しているページ上の要素がブロックされたリソースを呼び出している場合、ユーザーにブロック通知が表示されます。
 
 Web コンテンツ フィルターは主要な Web ブラウザーで利用できます。ブロックは Windows Defender SmartScreen (Microsoft Edge) とネットワーク保護 (Chrome、Firefox、Brave、および Opera) によって実行されます。 ブラウザーのサポートの詳細については、「前提条件」セクションを参照してください。
 
-利点の概要:
+## <a name="benefits-of-web-content-filtering"></a>Web コンテンツ フィルターの利点
 
-- ユーザーが、オンプレミスまたは離れた場所を閲覧している場合でも、ブロックされたカテゴリの Web サイトにアクセスするのを防ぐ
-- セキュリティ チームは、Microsoft Defender for Endpoint の役割ベースのアクセス制御設定で定義されているデバイス グループを使用して、ユーザーのグループにポリシーを簡単に [展開できます。](/microsoft-365/security/defender-endpoint/rbac)
+- ユーザーは、オンプレミスまたは離れた場所を閲覧している場合でも、ブロックされたカテゴリの Web サイトにアクセスできます。
+
+- セキュリティ チームは、Microsoft Defender for Endpoint の役割ベースのアクセス制御設定で定義されているデバイス グループを使用して、ユーザーのグループにポリシーを簡単 [に展開できます](/microsoft-365/security/defender-endpoint/rbac)。
+
 - セキュリティ チームは、同じ中央の場所にある Web レポートにアクセスし、実際のブロックと Web 使用状況を可視化できます。
 
 ## <a name="prerequisites"></a>前提条件
 
 この機能を試す前に、次の要件を満たしていることを確認してください。
 
-- Windows 10 EnterpriseE5、Microsoft 365 E5、Microsoft 365 E5 Security、Microsoft 365 E3 + Microsoft 365 E5 Securityアドオン、または Microsoft Defender for Endpoint スタンドアロン ライセンス。 
-- ポータルへのMicrosoft 365 Defenderアクセス ( [https://security.microsoft.com](https://security.microsoft.com) )
-- Anniversary Update (Windows 10 1607) 以降で最新のウイルス[対策/](manage-updates-baselines-microsoft-defender-antivirus.md)マルウェア対策更新プログラムを使用して実行されているデバイス。
-- Windows DefenderSmartScreen とネットワーク保護が有効です。
+- サブスクリプションには、E5、Windows 10 Enterprise、Microsoft 365 E5、Microsoft 365 E5 Security、Microsoft 365 E3 + Microsoft 365 E5 Security アドオン、またはMicrosoft Defender for Endpoint スタンドアロン ライセンス。 
 
-## <a name="user-experience"></a>ユーザー エクスペリエンス
+- ポータル ( ) へのMicrosoft 365 Defenderがあります [https://security.microsoft.com](https://security.microsoft.com) 。
 
-サード パーティでサポートされているブラウザーのブロック エクスペリエンスは、ネットワーク保護によって提供されます。これは、ブロックされた接続をユーザーに通知するシステム レベルのメッセージを提供します。 ユーザーフレンドリーでブラウザー内でのエクスペリエンスを向上するには、ユーザーエクスペリエンスの使用Microsoft Edge。
+- 組織のデバイスは、最新Windows 10更新プログラム (バージョン 1607) 以降で実行[されています](manage-updates-baselines-microsoft-defender-antivirus.md)。
+
+- Windows DefenderSmartScreen とネットワーク保護は、組織のデバイスで有効になっています。
 
 ## <a name="data-handling"></a>データの処理
 
@@ -179,6 +180,10 @@ Web コンテンツ フィルター ポリシーは、どのサイト カテゴ�
 > - ポリシーを削除したり、デバイス グループを同時に変更したりすると、ポリシーの展開が遅れる可能性があります。
 > - "未分類" カテゴリをブロックすると、予期しない結果が発生する可能性があります。  
 
+## <a name="end-user-experience"></a>エンドユーザーのエクスペリエンス
+
+サード パーティでサポートされているブラウザーのブロック エクスペリエンスは、ネットワーク保護によって提供されます。これは、ブロックされた接続をユーザーに通知するシステム レベルのメッセージを提供します。 ユーザーフレンドリーでブラウザー内でのエクスペリエンスを向上するには、ユーザーエクスペリエンスの使用Microsoft Edge。
+
 ### <a name="allow-specific-websites"></a>特定の Web サイトを許可する
 
 Web コンテンツ フィルターでブロックされたカテゴリを上書きして、カスタム インジケーター ポリシーを作成して 1 つのサイトを許可できます。 カスタム インジケーター ポリシーは、Web コンテンツ フィルター ポリシーが問題のデバイス グループに適用されると、そのポリシーに取って代えられます。
@@ -243,9 +248,7 @@ Web サイトのカテゴリを確認するには、[エンドポイント検索
 
 ページの左上にある時間範囲フィルターを使用して、期間を選択します。 情報をフィルター処理したり、列をカスタマイズしたりすることもできます。 行を選択して、選択したアイテムに関するさらに詳しい情報を含むフライアウト ウィンドウを開きます。
 
-## <a name="errors-and-issues"></a>エラーと問題
-
-### <a name="limitations-and-known-issues-in-this-preview"></a>このプレビューの制限事項と既知の問題
+### <a name="known-issues-and-limitations"></a>既知の問題と制限事項
 
 - デバイスMicrosoft Edgeの OS 構成が Server **(cmd**  >  **Systeminfo**  >  **OS Configuration)** の場合にのみサポートされます。 ネットワーク保護は、サポートされているサード パーティ製ブラウザー間のトラフィックのセキュリティ保護を担当するサーバー デバイスの検査モードでのみサポートされます。
 

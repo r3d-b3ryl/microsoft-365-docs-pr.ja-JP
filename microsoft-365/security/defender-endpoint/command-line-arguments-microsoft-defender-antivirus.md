@@ -15,12 +15,13 @@ manager: dansimp
 ms.date: 05/24/2021
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: f940d71b46f3010cded48cfe4c3b9873ea518a0b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 4fcfee2aff1c5e339339b2cd022df53a1cbcfc3e
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163783"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59490921"
 ---
 # <a name="configure-and-manage-microsoft-defender-antivirus-with-the-mpcmdrunexe-command-line-tool"></a>コマンド ライン Microsoft Defender ウイルス対策を使用してmpcmdrun.exeを構成および管理する
 
@@ -51,7 +52,7 @@ MpCmdRun.exe -Scan -ScanType 2
 
 |コマンド|説明|
 |---|---|
-|`-?`**または**`-h`|MpCmdRun ツールで使用可能なすべてのオプションを表示する|
+|`-?` **または** `-h`|MpCmdRun ツールで使用可能なすべてのオプションを表示する|
 |`-Scan [-ScanType [<value>]] [-File <path> [-DisableRemediation] [-BootSectorScan] [-CpuThrottling]] [-Timeout <days>] [-Cancel]`|悪意のあるソフトウェアをスキャンします。 **ScanType の値は次** のとおりです。<p>**0** 構成に応じて既定<p>**1** クイック スキャン<p>**2** フル スキャン<p>**3** ファイルとディレクトリのカスタム スキャン。<p>CpuThrottling はポリシー構成に従って実行されます|
 |`-Trace [-Grouping #] [-Level #]`|診断トレースを開始する|
 |`-GetFiles [-SupportLogLocation <path>]`|サポート情報を収集します。 「診断[データの収集」を参照](collect-diagnostic-data.md)してください。|

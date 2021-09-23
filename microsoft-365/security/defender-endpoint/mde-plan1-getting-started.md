@@ -13,12 +13,13 @@ ms.technology: mdep1
 localization_priority: Normal
 ms.reviewer: inbadian
 f1.keywords: NOCSH
-ms.openlocfilehash: f02873148fbd6415c987aad8e5161cff34c2004b
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 7083ebea0a43c997f9ad3942523033dc38e4c0ba
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59355827"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491363"
 ---
 # <a name="get-started-with-microsoft-defender-for-endpoint-plan-1-preview"></a>Microsoft Defender for Endpoint Plan 1 の概要 (プレビュー)
 
@@ -57,7 +58,7 @@ Microsoft 365 Defender ポータル ( ) を使用すると、検出された脅�
 
 画面の左側のナビゲーション バーを使用すると、インシデント、アラート、アクション センター、レポート、および設定の間を簡単に移動できます。 次の表に、ナビゲーション バーについて説明します。<br/><br/>
 
-| ナビゲーション バーアイテム | [説明] |
+| ナビゲーション バーアイテム | 説明 |
 |:---|:---|
 | **ホーム** | ポータルのホーム ページに移動Microsoft 365 Defender[します](../defender/microsoft-365-security-center-mde.md)。 |
 | **インシデント&アラート** | 展開してインシデントと **アラートを****表示します**。 |
@@ -167,7 +168,7 @@ Defender for Endpoint Plan 1 では、ポータルでいくつかのレポート
 > [!TIP]
 > 詳細については、「Web 保護」 [を参照してください](web-protection-overview.md)。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [Microsoft Defender for Endpoint Plan 1 の管理 (プレビュー)](mde-p1-maintenance-operations.md)
 - [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)

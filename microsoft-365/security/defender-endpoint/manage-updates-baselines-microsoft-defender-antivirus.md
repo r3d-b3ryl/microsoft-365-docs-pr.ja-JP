@@ -17,12 +17,13 @@ ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
 ms.date: 09/08/2021
-ms.openlocfilehash: c29579ff183b74ce74d6f3f1a725a028da5874d5
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 5745e5ee7604636b3ae3595ba907e055b86cc012
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401904"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491339"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>更新Microsoft Defender ウイルス対策を管理し、基準計画を適用する
 
@@ -550,7 +551,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>追加情報
+### <a name="additional-information"></a>その他の情報
 - なし
 <br/>
 </details><details>
@@ -564,7 +565,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>追加情報
+### <a name="additional-information"></a>その他の情報
 - なし
 <br/>
 </details><details>
@@ -578,7 +579,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>追加情報
+### <a name="additional-information"></a>その他の情報
 - なし
 <br/>
 </details><details>
@@ -592,7 +593,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>追加情報
+### <a name="additional-information"></a>その他の情報
 - なし
 <br/>
 </details><details>
@@ -606,7 +607,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>追加情報
+### <a name="additional-information"></a>その他の情報
 - なし
 <br/>
 </details><details>
@@ -620,7 +621,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>追加情報
+### <a name="additional-information"></a>その他の情報
 - なし
 <br/>
 </details><details>
@@ -634,7 +635,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>追加情報
+### <a name="additional-information"></a>その他の情報
 - なし
 <br/>
 </details><details>
@@ -648,7 +649,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>追加情報
+### <a name="additional-information"></a>その他の情報
 - なし
 <br/>
 </details><details>
@@ -662,7 +663,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>追加情報
+### <a name="additional-information"></a>その他の情報
 - なし
 <br/>
 </details><details>
@@ -676,7 +677,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>追加情報
+### <a name="additional-information"></a>その他の情報
 - なし
 <br/>
 </details><details>
@@ -690,7 +691,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>追加情報
+### <a name="additional-information"></a>その他の情報
 - 更新されたMicrosoft Defender ウイルス対策署名
 <br/>
 </details><details>
@@ -704,7 +705,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>追加情報
+### <a name="additional-information"></a>その他の情報
 - なし
 <br/>
 </details><details>
@@ -718,7 +719,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>追加情報
+### <a name="additional-information"></a>その他の情報
 - RS1 以降の OS Windows 10インストール イメージのサポートが追加されました。
 <br/>
 </details>

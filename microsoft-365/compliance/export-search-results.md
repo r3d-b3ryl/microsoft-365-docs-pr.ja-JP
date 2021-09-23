@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 検索結果をローカル コンピューターにエクスポートするには、Microsoft 365 コンプライアンス センター内のコンテンツ検索からエクスポートします。 電子メールの結果は PST ファイルとしてエクスポートされます。 サイトおよびSharePointサイトOneDrive for Businessコンテンツは、ネイティブ ドキュメントとしてOfficeされます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8ce3317dbd9b1d21ab1e703fce1b168885b81aa2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 15f1af054cb8ec09795ba84412efd2b63e3ad48a
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191560"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59489555"
 ---
 # <a name="export-content-search-results"></a>コンテンツ検索結果のエクスポート
 
@@ -43,20 +43,15 @@ ms.locfileid: "59191560"
   
   - 最新バージョンの Windows (32 ビットまたは 64 ビット)
   
-  - Microsoft .NET Framework 4.7
+  - Microsoft .NET Framework 4.7 以上
   
-- 電子情報開示エクスポート ツール 1 を実行するには、次のサポートされているブラウザーのいずれかを使用する<sup>必要があります</sup>。
-
-  - Microsoft Edge <sup>2</sup>
-  
-    または
-
-  - Microsoft Internet Explorer 10 以降のバージョン
+- 電子情報開示エクスポート ツールをMicrosoft Edge <sup>1</sup>を使用する必要があります。 11 Internet Explorerを使用して検索結果をエクスポートする場合は<sup>、2 はサポートされなくなりました</sup>。 
   
   > [!NOTE]
-  > <sup>1</sup> Microsoft は、サードパーティ製の拡張機能やアドオンを、他のアプリケーションClickOnce行わない。 サードパーティの拡張機能またはアドオンを使用して、サポートされていないブラウザーを使用して検索結果をエクスポートする機能はサポートされていません。<br/>
-  > <sup>2</sup>最新の変更の結果、Microsoft EdgeサポートClickOnceは既定で有効になっていません。 Edge でのサポートの有効化ClickOnce手順については、「電子情報開示エクスポート ツールを使用する」を参照[Microsoft Edge。](configure-edge-to-export-search-results.md)
-  
+  > <sup>1</sup>最新の変更により、Microsoft EdgeサポートClickOnceが既定で有効になっていません。 Edge でのサポートの有効化ClickOnce手順については、「電子情報開示エクスポート ツールを使用する」を参照[Microsoft Edge。](configure-edge-to-export-search-results.md) また、Microsoft は、他のアプリケーション用のサードパーティ拡張機能やアドオンClickOnce行わない。 サードパーティの拡張機能またはアドオンを使用して、サポートされていないブラウザーを使用して検索結果をエクスポートする機能はサポートされていません。
+  > 
+  > <sup>2</sup> 2021 年 8 月から、Microsoft 365 アプリとサービスは Internet Explorer 11 (IE11) をサポートしなくなりました。ユーザーのエクスペリエンスが低下したり、それらのアプリやサービスに接続できない場合があります。 これらのアプリとサービスは、サポートの円滑な終了を保証するために、今後数週間と数か月で段階的に終了します。 各アプリとサービスは、独立したスケジュールで段階的にアウトされています。 詳細については、このブログ投稿 [を参照してください](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-365-apps-say-farewell-to-internet-explorer-11-and/ba-p/1591666)。
+
 - 手順 2 で検索結果をダウンロードするために使用する電子情報開示エクスポート ツールは、(スクリプトまたは実行中のコマンドレットを使用して) 自動化をサポートします。 手順 1 の準備プロセスまたは手順 2 のダウンロード プロセスを自動化しなけれとすることを強くお勧めします。 これらのプロセスのいずれかを自動化した場合、問題が発生した場合、Microsoft サポートはサポートを提供しません。
 
 - 検索結果をローカル コンピューターにダウンロードすることをお勧めします。 検索結果のダウンロード時に会社のファイアウォールやプロキシ インフラストラクチャが問題を引き起こすことをなくす場合は、ネットワーク外の仮想デスクトップに検索結果をダウンロードする方法を検討してください。 これにより、多数のファイルをエクスポートするときに Azure データ接続で発生するタイムアウトが減少する可能性があります。 仮想デスクトップの詳細については、「仮想デスクトップのWindows[を参照してください](https://azure.microsoft.com/services/virtual-desktop)。
@@ -67,9 +62,9 @@ ms.locfileid: "59191560"
   
 - 組織がプロキシ サーバーを使用してインターネットと通信する場合は、検索結果のエクスポートに使用するコンピューターでプロキシ サーバー設定を定義する必要があります (そのため、エクスポート ツールをプロキシ サーバーで認証できます)。 これを行うには、machine.configのバージョンに一致する場所にあるファイルを開Windows。 
   
-  - **32 ビット:**`%windir%\Microsoft.NET\Framework\[version]\Config\machine.config`
+  - **32 ビット:** `%windir%\Microsoft.NET\Framework\[version]\Config\machine.config`
   
-  - **64 ビット:**`%windir%\Microsoft.NET\Framework64\[version]\Config\machine.config`
+  - **64 ビット:** `%windir%\Microsoft.NET\Framework64\[version]\Config\machine.config`
   
     タグとタグの  *間のmachine.config*  ファイルに次の行  `<configuration>` を追加  `</configuration>` します。 組織に適切な値を置き換え、適切な値に置き換える必要があります  `ProxyServer`  `Port` `proxy01.contoso.com:80` 。たとえば、 。 
   
@@ -177,7 +172,7 @@ ms.locfileid: "59191560"
   
     **電子情報開示エクスポート ツール** には、ダウンロードする残りのアイテムの数とサイズの見積もりなど、エクスポート プロセスの状態に関する情報が表示されます。 エクスポート処理が完了したら、ダウンロードした場所のファイルにアクセスできます。
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 検索結果のエクスポートの詳細については、次の情報を参照してください。
   

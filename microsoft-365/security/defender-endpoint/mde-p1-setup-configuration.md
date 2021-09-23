@@ -13,12 +13,13 @@ ms.technology: mdep1
 localization_priority: Normal
 ms.reviewer: inbadian
 f1.keywords: NOCSH
-ms.openlocfilehash: 7927ba193d6b488911d3d658ac48f4980d90969c
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 53d8742b411c500705434fcef181793df591eb19
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59444105"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59490969"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1-preview"></a>Microsoft Defender for Endpoint Plan 1 のセットアップと構成 (プレビュー)
 
@@ -40,7 +41,7 @@ Defender for Endpoint Plan 1 (プレビュー) の一般的なセットアップ
 | 2 | [展開の計画](#plan-your-deployment) | 考慮すべきいくつかの展開方法の一覧と、使用する方法を決定する際に役立つその他のリソースへのリンクが含まれています。  |
 | 3 | [テナント環境のセットアップ](#set-up-your-tenant-environment) | テナント環境をセットアップするタスクの一覧 |
 | 4  | [役割とアクセス許可の割り当て](#assign-roles-and-permissions) | セキュリティ チームで考慮する役割とアクセス許可の一覧 <br/><br/>**ヒント**: 役割とアクセス許可が割り当てられるとすぐに、セキュリティ チームは新しいポータルを使用Microsoft 365 Defenderできます。 詳細については [、「Getting started」を参照してください](mde-plan1-getting-started.md)。 |
-| 5  | [Defender for Endpoint へのオンボード](#onboard-to-defender-for-endpoint) | Defender for Endpoint Plan 1 にオンボードするオペレーティング システム別のいくつかのメソッドの一覧と、各メソッドの詳細情報へのリンクが含まれています  |
+| 5 | [Defender for Endpoint へのオンボード](#onboard-to-defender-for-endpoint) | Defender for Endpoint Plan 1 にオンボードするオペレーティング システム別のいくつかのメソッドの一覧と、各メソッドの詳細情報へのリンクが含まれています  |
 | 6  | [次世代の保護を構成する](#configure-next-generation-protection) | デバイスで次世代の保護設定を構成する方法についてMicrosoft エンドポイント マネージャー  |
 | 7  | [攻撃表面の縮小機能を構成する](#configure-your-attack-surface-reduction-capabilities)        | 構成できる攻撃表面の縮小機能の種類と、より多くのリソースへのリンクを含む手順を示します。  |
 
@@ -402,7 +403,7 @@ WDAC 展開の計画に役立つ情報については、次のリソースを参
 
 - [Windows Defenderさまざまなシナリオでのアプリケーション制御の展開: デバイスの種類](/windows/security/threat-protection/windows-defender-application-control/types-of-devices)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 セットアップと構成プロセスが完了したので、次に、Defender for Endpoint の使用を開始します。 
 

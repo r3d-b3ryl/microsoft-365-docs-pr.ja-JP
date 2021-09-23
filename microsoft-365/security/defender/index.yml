@@ -13,12 +13,12 @@ metadata:
   ms.author: macapara
   ms.date: 09/13/2019
   localization_priority: Priority
-  ms.openlocfilehash: 4ce4681ff5008cc3209789139bacd8441a7f724f
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.openlocfilehash: bf167feb138be131ac565817767da2d1b1dd5be7
+  ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59192470"
+  ms.lasthandoff: 09/23/2021
+  ms.locfileid: "59491423"
 landingContent:
 - title: Microsoft 365 Defender
   linkLists:
@@ -30,7 +30,7 @@ landingContent:
       url: overview-security-center.md
   - linkListType: whats-new
     links:
-    - text: 新機能のMicrosoft 365 Defender
+    - text: Microsoft 365 Defender の新機能
       url: ../defender/whats-new.md
   - linkListType: video
     links:
@@ -44,7 +44,7 @@ landingContent:
       url: eval-overview.md
     - text: 実稼働環境でパイロット プロジェクトを実行する
       url: eval-overview.md
-- title: 作業の開始
+- title: 開始する
   linkLists:
   - linkListType: get-started
     links:
@@ -110,5 +110,5 @@ landingContent:
   linkLists:
   - linkListType: reference
     links:
-    - text: Microsoft 365 DefenderAPI (プレビュー)
+    - text: Microsoft 365 DefenderAPI
       url: api-overview.md

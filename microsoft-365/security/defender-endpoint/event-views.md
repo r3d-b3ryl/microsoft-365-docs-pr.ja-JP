@@ -14,12 +14,13 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 6a4d548edb660838be9ea3d1a69749f23d3ac6c8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: m365-security-compliance
+ms.openlocfilehash: 8bfccfba0dbe3d00829c6e668830551c66d3f893
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221909"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491375"
 ---
 # <a name="view-attack-surface-reduction-events"></a>攻撃面の減少イベントを表示する
 
@@ -81,7 +82,7 @@ E5 サブスクリプションを持っている場合は、Windows セキュリ
 
 4. イベントをフィルター処理する機能の XML コードを XML セクションに貼り付けます。
 
-5. **[OK]** を選択します。 フィルターの名前を指定します。 これにより、その機能に関連するイベントのみを表示するためにフィルター処理するカスタム ビューが作成されます。
+5. [**OK**] を選択します。 フィルターの名前を指定します。 これにより、その機能に関連するイベントのみを表示するためにフィルター処理するカスタム ビューが作成されます。
 
 ### <a name="xml-for-attack-surface-reduction-rule-events"></a>攻撃表面の縮小ルール イベントの XML
 
@@ -152,18 +153,18 @@ E5 サブスクリプションを持っている場合は、Windows セキュリ
 
 ****
 
-|特徴|プロバイダー/ソース|イベント ID|説明|
+|機能|プロバイダー/ソース|イベント ID|説明|
 |---|---|:---:|---|
 |エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|1|ACG の監査|
 |エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|2|ACG の実施|
 |エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|3|[Do not allow child processes] (子プロセスを許可しない) 監査|
 |エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|4 |[Do not allow child processes] (子プロセスを許可しない) ブロック|
-|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|5 |[Block low integrity images] (整合性が低いイメージのブロック) 監査|
+|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|5|[Block low integrity images] (整合性が低いイメージのブロック) 監査|
 |エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|6 |[Block low integrity images] (整合性が低いイメージのブロック) ブロック|
 |エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|7 |[Block remote images] (リモート イメージのブロック) 監査|
 |エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|8 |[Block remote images] (リモート イメージのブロック) ブロック|
 |エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|9 |[Disable win32k system calls] (win32k システム呼び出しの無効化) 監査|
-|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|10 |[Disable win32k system calls] (win32k システム呼び出しの無効化) ブロック|
+|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|10|[Disable win32k system calls] (win32k システム呼び出しの無効化) ブロック|
 |エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|11|[Code integrity guard] (コードの整合性の保護) 監査|
 |エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|12 |[Code integrity guard] (コードの整合性の保護) ブロック|
 |エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|13|EAF の監査|
@@ -178,16 +179,16 @@ E5 サブスクリプションを持っている場合は、Windows セキュリ
 |エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|22|ROP CallerCheck の実施|
 |エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|23|ROP SimExec の監査|
 |エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|24|ROP SimExec の実施|
-|エクスプロイト保護|WER-Diagnostics|5 |CFG のブロック|
+|エクスプロイト保護|WER-Diagnostics|5|CFG のブロック|
 |エクスプロイト保護|Win32K (運用)|260|信頼されていないフォント|
 |ネットワーク保護|Windows Defender (運用)|5007|設定が変更された場合のイベント|
 |ネットワーク保護|Windows Defender (運用)|1125|監査モードでネットワーク保護が発生した場合のイベント|
 |ネットワーク保護|Windows Defender (運用)|1126|ブロック モードでネットワーク保護が発生した場合のイベント|
-|フォルダー アクセスの制御|Windows Defender (運用)|5007|設定が変更された場合のイベント|
-|フォルダー アクセスの制御|Windows Defender (運用)|1124|監査された制御フォルダー アクセス イベント|
-|フォルダー アクセスの制御|Windows Defender (運用)|1123|ブロックされたフォルダー アクセスイベントの制御|
-|フォルダー アクセスの制御|Windows Defender (運用)|1127|ブロックされたフォルダー アクセスのセクター書き込みブロック イベント|
-|フォルダー アクセスの制御|Windows Defender (運用)|1128|監査された制御フォルダー アクセス セクター書き込みブロック イベント|
+|コントロールされたフォルダー アクセス|Windows Defender (運用)|5007|設定が変更された場合のイベント|
+|コントロールされたフォルダー アクセス|Windows Defender (運用)|1124|監査された制御フォルダー アクセス イベント|
+|コントロールされたフォルダー アクセス|Windows Defender (運用)|1123|ブロックされたフォルダー アクセスイベントの制御|
+|コントロールされたフォルダー アクセス|Windows Defender (運用)|1127|ブロックされたフォルダー アクセスのセクター書き込みブロック イベント|
+|コントロールされたフォルダー アクセス|Windows Defender (運用)|1128|監査された制御フォルダー アクセス セクター書き込みブロック イベント|
 |攻撃面の縮小|Windows Defender (運用)|5007|設定が変更された場合のイベント|
 |攻撃面の縮小|Windows Defender (運用)|1122|監査モードでルールが発生した場合のイベント|
 |攻撃面の縮小|Windows Defender (運用)|1121|ブロック モードでルールが発生した場合のイベント|

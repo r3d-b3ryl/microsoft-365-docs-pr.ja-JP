@@ -3,7 +3,7 @@ title: データの移行中および移行後
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 12/10/2019
+ms.date: 09/22/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: データ移動は、Microsoft がテナントのサービスと関連データを新しいデータセンター geo に移動するときに発生するバック エンド操作です。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d2c78ace4fb25d060ecaeab96903ba577a1d7316
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f90957447e9d301594f50e67ff51ae495464b63e
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189640"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491089"
 ---
 # <a name="during-and-after-your-data-move"></a>データの移行中および移行後
 
@@ -71,7 +71,7 @@ SharePoint Online を移行すると、以下のサービスのデータも移�
     
 - Officeで使用する
     
-- Microsoft 365 Apps for enterprise
+- エンタープライズ向け Microsoft 365 アプリ
     
 - Visio ProのMicrosoft 365
     
@@ -107,12 +107,13 @@ SharePoint Online データを移行する過程で、検索インデックス�
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-Microsoft は、Exchange Online、SharePoint、OneDrive for Businessに加えて、Teams サービス データをローカル データセンターに移行します。
+### <a name="files-tab"></a>[ファイル] タブ
 
-- Teams、プライベート メッセージやチャネル メッセージを含むチャット メッセージを作成します。
-- Teamsで使用される画像を表示します。
+移行が完了すると、[ファイル] タブがユーザーが最初に使用しようとするときに、完全に読み込むのにさらに時間がかかる場合があります (最大 7 秒)。 
 
-TeamsファイルはオンラインにSharePointされTeamsチャット ファイルはオンラインにOneDrive for Business。 ボイスメール、予定表、チャット履歴、連絡先は、Exchange Online。 多くの場合、Exchange Online、SharePoint Online、OneDrive for Business は、ローカル データセンター geo の顧客によって既に使用され、対象となる顧客国の Microsoft 365 移行プログラムの一部です。
+### <a name="read-only-period"></a>読み取り専用期間
+
+Teamsチャット サービスは、各スレッドを個別に移動します。  スレッドは移動中に読み取り専用の状態でロックされ、スレッドごとに数秒続く。  スレッドは、移行中も引き続きアクセスできます。
 
 ## <a name="skype-for-business"></a>Skype for Business
 

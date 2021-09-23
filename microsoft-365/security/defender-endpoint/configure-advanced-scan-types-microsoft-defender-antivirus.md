@@ -15,13 +15,14 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.date: 09/14/2021
+ms.collection: M365-security-compliance
 ms.topic: how-to
-ms.openlocfilehash: 87200c519aa27a2f8472a025f90a283978fd21a0
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 7434a37985a9e47cc16795c6aa24d6a7d48f66a7
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59399816"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59490873"
 ---
 # <a name="configure-microsoft-defender-antivirus-scanning-options"></a>Microsoft Defender ウイルス対策スキャン オプションを構成する
 
@@ -65,7 +66,7 @@ ms.locfileid: "59399816"
 |スキャンするアーカイブ フォルダー内のサブフォルダーのレベルを指定する <p>**スキャン** \>**アーカイブ ファイルをスキャンする最大深度を指定する**|0|利用不可|
 |スキャン中の CPU の最大負荷 (パーセンテージ) を指定します。 <p> **スキャン** \>**スキャン中の CPU 使用率の最大割合を指定する**|50|`-ScanAvgCPULoadFactor` <p>**注**: CPU の最大負荷はハード制限ではなく、スキャン エンジンが平均して最大値を超えないようにするガイダンスです。 手動でスキャンを実行すると、この設定は無視され、CPU 制限なしで実行されます。|
 |スキャンするアーカイブ ファイルの最大サイズ (キロバイト単位) を指定します。 <p> **スキャン** \>**スキャンするアーカイブ ファイルの最大サイズを指定する**|無制限|使用不可 <p>既定値 0 は制限なしを適用します|
-|スケジュールされたスキャンの CPU 優先度が低い構成 <p> **スキャン** \>**スケジュールされたスキャンの CPU 優先度が低い構成**|無効|使用不可|
+|スケジュールされたスキャンの CPU 優先度が低い構成 <p> **スキャン** \>**スケジュールされたスキャンの CPU 優先度が低い構成**|無効|利用不可|
 
 > [!NOTE]
 > リアルタイム保護が有効になっている場合、ファイルにアクセスして実行する前にファイルがスキャンされます。 スキャンスコープには、マウントされたリムーバブル メディア上のファイル (USB ドライブなど) を含むすべてのファイルが含まれます。 スキャンを実行するデバイスでリアルタイム保護またはオンアクセス保護が有効になっている場合、スキャンにはネットワーク共有も含まれます。

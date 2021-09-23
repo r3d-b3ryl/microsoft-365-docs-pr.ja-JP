@@ -15,12 +15,13 @@ ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
 ms.date: 09/21/2021
-ms.openlocfilehash: 0f0937ef59b74ea30f673aa1d05c4b75e3e5bbcc
-ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
+ms.collection: m365-security-compliance
+ms.openlocfilehash: 11b45edc944cb60c476a79dc921bd211e04514ef
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59480786"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491447"
 ---
 # <a name="why-cloud-protection-should-be-enabled-for-microsoft-defender-antivirus"></a>クラウド保護を有効にする必要Microsoft Defender ウイルス対策
 
@@ -31,7 +32,7 @@ ms.locfileid: "59480786"
 
 Microsoft Defender ウイルス対策クラウド保護は、エンドポイントやネットワーク全体のマルウェアから保護するのに役立ちます。 Microsoft Defender for Endpoint の特定のセキュリティ機能と機能は、クラウド保護が有効になっている場合にのみ機能しますので、クラウド保護を有効にすることをお勧めします。 
 
-[:::image type="content" source="mde-cloud-protection.png" alt-text="クラウド保護とクラウド保護の機能を示す図Microsoft Defender ウイルス対策":::](enable-cloud-protection-microsoft-defender-antivirus.md)
+[:::image type="content" source="images/mde-cloud-protection.png" alt-text="クラウド保護に依存する内容を示す図":::](enable-cloud-protection-microsoft-defender-antivirus.md)
 
 次の表に、クラウド保護に依存する機能の概要を示します。 <br/><br/>
 

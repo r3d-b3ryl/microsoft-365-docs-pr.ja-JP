@@ -16,12 +16,13 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 1ef91e980f5cb49432a223b50a94fb0bf2354746
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 5fdabb81541de9cec5b35641d25c6c10098015ca
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59399829"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59490143"
 ---
 # <a name="attack-surface-reduction-rules"></a>攻撃面の減少ルール
 

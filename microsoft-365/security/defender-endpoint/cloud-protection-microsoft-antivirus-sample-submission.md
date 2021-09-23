@@ -15,12 +15,13 @@ ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
 ms.date: 08/31/2021
-ms.openlocfilehash: 5d9f6ace79d05eff795041732e045abf18d5f792
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 946027419feca235442476db41533fb29adc6007
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192781"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59490753"
 ---
 # <a name="cloud-protection-and-sample-submission-in-microsoft-defender-antivirus"></a>クラウド保護とサンプル申請 (Microsoft Defender ウイルス対策
 

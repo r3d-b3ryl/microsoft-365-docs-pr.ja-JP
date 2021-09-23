@@ -15,12 +15,13 @@ ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: 4018adc6fcf19e072f8c82292d488a6bbfa344d4
-ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
+ms.collection: m365-security-compliance
+ms.openlocfilehash: 36e773a2d0ff865703bd796492df81d2f1647372
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59480798"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491531"
 ---
 # <a name="turn-on-cloud-protection-in-microsoft-defender-antivirus"></a>クラウド保護をオンMicrosoft Defender ウイルス対策
 

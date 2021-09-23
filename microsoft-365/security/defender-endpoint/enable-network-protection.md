@@ -14,12 +14,13 @@ ms.author: deniseb
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: e0056f4f1517962bab3dbee4f993ce28c58dfcf9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: m365-security-compliance
+ms.openlocfilehash: dc10c8ee9147cbee0a2946eaf28d91f80743f4f5
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222754"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59489639"
 ---
 # <a name="turn-on-network-protection"></a>ネットワーク保護を有効にする
 
@@ -94,7 +95,7 @@ ms.locfileid: "59222754"
 
 4. [エンドポイント保護 **の**  >  **基本] に移動** し、プロファイルの名前を指定し、[次へ] を **選択します**。
 
-5. [構成 **設定] セクション** で、[ネットワーク フィルターネットワークMicrosoft Defender Exploit Guard有効または監査]  >    >    >  **に****移動します**。 [**次へ**] を選択します。
+5. [構成 **設定] セクション** で、[ネットワーク フィルターネットワークMicrosoft Defender Exploit Guard有効または監査]  >    >    >  **に****移動します**。 **[次へ]** を選択します。
 
 6. 組織の **必要に応じて**、適切なスコープタグ、割 **り** 当て、適用ルールを選択します。 管理者は、より多くの要件を設定できます。
 

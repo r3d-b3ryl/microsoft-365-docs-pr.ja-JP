@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 81d9194d9e0c6677f01f34b8052efa0333270c04
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5616a2b4aecede00ca11a56d37bc7d074d260627
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215094"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491171"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>iOS のエンドポイント向け Microsoft Defender の新機能
 
@@ -34,6 +34,11 @@ ms.locfileid: "59215094"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+## <a name="1120240103"></a>1.1.20240103
+- デバイス正常性カード - デバイス正常性カードは、保留中のソフトウェア更新プログラムについてエンド ユーザーに通知します。
+- 操作性の強化 - エンド ユーザーは、MSDefender アプリ自体から Defender for Endpoint VPN を無効にできます。 この更新プログラムの前に、エンド ユーザーはアプリから VPN のみを無効設定でした。
+- バグ修正。
 
 ## <a name="1120020101"></a>1.1.20020101
 - UX の機能強化 - Microsoft Defender for Endpoint に新しい外観が追加されています。

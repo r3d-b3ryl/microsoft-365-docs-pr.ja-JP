@@ -14,12 +14,13 @@ ms.technology: mdep1
 localization_priority: Normal
 ms.reviewer: inbadian
 f1.keywords: NOCSH
-ms.openlocfilehash: 55fb264981dcad52856fe9115345891c2b3387b4
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 8c0e8a07ae0d2a37b2eb5a1829c5ed5ec5904c30
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400296"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491207"
 ---
 # <a name="microsoft-defender-for-endpoint-plan-1-preview-and-plan-2"></a>Microsoft Defender for Endpoint Plan 1 (プレビュー) とプラン 2
 
@@ -41,7 +42,7 @@ EndPoint 向け Microsoft Defender は、エンタープライズネットワー
 > [!IMPORTANT]
 > この記事の一部の情報は、製品リリース前に大幅に変更される可能性がある、事前リリース済みの製品/サービスに関連しています。 Microsoft は、ここに提供される情報について、明示または黙示を問わず一切の保証を行いません。 このコンテンツには、Defender for Endpoint Plan 1 (プレビュー) に含まれていない一部の機能を説明する可能性がある他の記事へのリンクが含まれています。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [Microsoft Defender for Endpoint Plan 1 の概要を確認する (プレビュー)](defender-endpoint-plan-1.md)
 - [Defender for Endpoint Plan 1 のセットアップと構成 (プレビュー)](mde-p1-setup-configuration.md)

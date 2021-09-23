@@ -17,12 +17,13 @@ metadata:
   ms.custom: asr
   ms.topic: article
   ms.technology: mde
-  ms.openlocfilehash: 4d229ac94c7a1eb25e30c80f8e72a17d1b547be0
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.collection: M365-security-compliance
+  ms.openlocfilehash: 93fba9be41e8b04191600fd0c497bcbe3d98155f
+  ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59165159"
+  ms.lasthandoff: 09/23/2021
+  ms.locfileid: "59491411"
 title: 攻撃表面の縮小に関するよく寄せられる質問 (FAQ)
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
