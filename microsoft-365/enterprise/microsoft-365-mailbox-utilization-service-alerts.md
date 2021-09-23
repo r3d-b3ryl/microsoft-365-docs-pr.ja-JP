@@ -18,11 +18,11 @@ f1.keywords:
 - NOCSH
 description: メールボックス使用率サービスアラートを使用して、メールボックスクォータに達している保留状態のメールボックスを監視します。
 ms.openlocfilehash: afae43f0c589d6c025fb0e1d20a7c5cf81eacbe2
-ms.sourcegitcommit: dd4214a309c71292490743752da728cec7bffe88
+ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/22/2021
-ms.locfileid: "59479887"
+ms.locfileid: "59480774"
 ---
 # <a name="service-alerts-for-mailbox-utilization-in-exchange-online-monitoring"></a>監視のメールボックス使用率に関するExchange Online通知
 

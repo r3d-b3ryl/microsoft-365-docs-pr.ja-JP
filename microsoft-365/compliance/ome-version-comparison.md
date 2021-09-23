@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: この記事では、さまざまなバージョンのバージョンの違いについて説明Office 365 Message Encryption。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 92beb3625c0b115fe77f1667a448bf0bf9589040
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 161415dfafc28bbb82043b0ecefea4dcb15d144b
+ms.sourcegitcommit: 0166442bb1f9922f627bc34e97bd74c609aa9507
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216654"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59482151"
 ---
 # <a name="compare-versions-of-ome"></a>OME のバージョンを比較する
 
@@ -36,7 +36,7 @@ ms.locfileid: "59216654"
 
 Exchange Onlineには、電子メール メッセージと添付ファイルのオンラインおよびオフライン保護を提供する Information Rights Management (IRM) 機能が含まれています。 既定では、azure Exchange Online保護が使用されます。 ただし、組織は、オンプレミスの Active Directory Rights Management Service (EXCHANGE ONLINE RMS) を使用するように IRM を構成ADがあります。 ADの RMS サポートExchange Online終了しています。 代わりに、Azure Information Protection は RMS のAD置き換える必要があります。
 
-この非推奨が組織に影響を与えるかどうかを評価するには、「AD RMS を Azure RMS に移行する方法」[をExchange Online。](https://support.microsoft.com/help/5001237) この記事では、移行オプションに関する推奨事項について説明します。
+この非推奨が組織に影響を与えるかどうかを評価するには、「AD RMS を Azure RMS に移行する方法」[をExchange Online。](/exchange/troubleshoot/administration/migrate-ad-rms-to-azure) この記事では、移行オプションに関する推奨事項について説明します。
 
 ## <a name="side-by-side-comparison-of-ome-features-and-capabilities"></a>OME 機能のサイド バイ サイド比較
 
