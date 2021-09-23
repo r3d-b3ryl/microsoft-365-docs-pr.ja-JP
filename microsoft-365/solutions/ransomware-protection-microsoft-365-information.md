@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: ランサムウェア、人が操作するランサムウェア、人間が操作するランサムウェア、HumOR、強要攻撃、ランサムウェア攻撃、暗号化、暗号ウイルス学
 description: 制御されたフォルダー アクセス、MIP、DLP、および Microsoft Cloud App Security を使用して、Microsoft 365 の機密データを保護します。
-ms.openlocfilehash: 2221b269d5b3b775f870d7c7f8b47ea89912f388
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: 9548b394f5fa2cad6ec1e55e9386905b85f0335b
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59444711"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483053"
 ---
 # <a name="step-5-protect-information"></a>手順 5. 情報を保護する
 
@@ -69,7 +69,7 @@ Microsoft 365 テナント内での厳密なアクセス許可の使用は、位
 この典型的な攻撃者の行動に基づいて、攻撃者には 2 つの難易度があります。
 
 - **低:** テナント全体への広範なアクセスのため、攻撃者はアクセス許可の低いアカウントを使用して機密情報を発見する可能性があります。
-- **高:** 厳密なアクセス許可のため、攻撃者はアクセス許可の低いアカウントを使用して機密情報を発見することはできません。 機密情報のある場所にアクセスできるアカウントの資格情報を特定して侵害することにより、アクセス許可をエスカレートする必要がありますが、その場合、限られた一連のアクションしか実行できない可能性があります。
+- **より高い** 攻撃者はアクセス許可が低いアカウントを使用できず、厳密なアクセス許可のために機密情報を検出できません。機密情報を含む場所へのアクセス権を持つアカウントの資格情報を特定して侵害することで、アクセス許可をエスカレートする必要がありますが、その後は限られた一連のアクションしか実行できない可能性があります。
 
 機密情報については、できるだけ難易度を高くする必要があります。
 
@@ -112,13 +112,13 @@ Microsoft 365 テナント内での厳密なアクセス許可の使用は、位
 
 ## <a name="additional-ransomware-resources"></a>その他のランサムウェア リソース
 
-Microsoft からの重要な情報:
+Microsoft の主な情報:
 
-- [ランサムウェアの脅威の高まり](https://blogs.microsoft.com/on-the-issues/2021/07/20/the-growing-threat-of-ransomware/)、2021 年 7 月 20 日の Microsoft On the Issues ブログ投稿
+- [ランサムウェアの脅威の増大](https://blogs.microsoft.com/on-the-issues/2021/07/20/the-growing-threat-of-ransomware/)、2021 年 7月 20 日付け Microsoft On the Issues のブログ投稿
 - [人が操作するランサムウェア](/security/compass/human-operated-ransomware)
 - [ランサムウェアや強要から迅速に保護する](/security/compass/protect-against-ransomware)
-- [最新の Microsoft セキュリティ インテリジェンス レポート](https://www.microsoft.com/securityinsights/) (22 - 24 ページを参照)
-- **ランサムウェア: Microsoft 365 Defender ポータルの **脅威分析** ノードに蔓延する継続的な脅威の** レポート (これらの [ライセンス要件](/microsoft-365/security/defender/prerequisites#licensing-requirements)を参照)
+- [最新の Microsoft セキュリティ インテリジェンス レポート](https://www.microsoft.com/securityinsights/)( 22-24 ページを参照してください)
+- **ランサムウェア: Microsoft 365 Defender ポータルの **脅威分析** ノードの蔓延する継続的な脅威** に関するレポート (これらの「[ライセンス要件](/microsoft-365/security/defender/prerequisites#licensing-requirements)」 を参照ください)
 
 Microsoft 365:
 
@@ -129,14 +129,14 @@ Microsoft 365:
 
 Microsoft 365 Defender:
 
-- [高度な追求でランサムウェアを検索する](/microsoft-365/security/defender/advanced-hunting-find-ransomware)
+- [高度な検索でランサムウェアを検索する](/microsoft-365/security/defender/advanced-hunting-find-ransomware)
 
-Microsoft Azure:
+Microsoft Azure
 
-- [ランサムウェア攻撃に対する Azure の防御](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/)
+- [ランサムウェア攻撃に対する Azure 防御](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/)
 - [ランサムウェアから保護するためのバックアップと復元の計画](/security/compass/backup-plan-to-protect-against-ransomware)
-- [Microsoft Azure Backup を使用してランサムウェアから保護する](https://www.youtube.com/watch?v=VhLOr2_1MCg) (26 分のビデオ)
-- [システム ID の侵害からの回復](/azure/security/fundamentals/recover-from-identity-compromise)
+- [Microsoft Azure バックアップを使用してランサムウェアから保護する](https://www.youtube.com/watch?v=VhLOr2_1MCg) (26 分のビデオ)
+- [体系的な ID 侵害からの回復](/azure/security/fundamentals/recover-from-identity-compromise)
 - [Azure Sentinel での高度な多段階攻撃検出](/azure/sentinel/fusion#ransomware)
 - [Azure Sentinel でのランサムウェアのフュージョン検出](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
 
@@ -147,14 +147,14 @@ Microsoft Cloud App Security:
 Microsoft Security チームのブログ投稿:
 
 - [ランサムウェアを防止して回復するための 3 つの手順 (2021 年 9 月)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
-- [サイバーセキュリティ リスクを理解することで回復力を高める:パート 4 - 現在の脅威をナビゲートする (2021 年 5 月)](https://www.microsoft.com/security/blog/2021/05/26/becoming-resilient-by-understanding-cybersecurity-risks-part-4-navigating-current-threats/)
+- [サイバーセキュリティ リスクを理解することで回復力を高める パート 4—現在の脅威をナビゲートする(2021 年 5 月)](https://www.microsoft.com/security/blog/2021/05/26/becoming-resilient-by-understanding-cybersecurity-risks-part-4-navigating-current-threats/)
 
-  「**ランサムウェア**」のセクションを参照してください。
+  「**ランサムウェア**」セクションを参照 してください。
 
 - [人が操作するランサムウェア攻撃: 予防可能な災害 (2020 年 3 月)](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/)
 
   実際の攻撃の攻撃チェーン分析が含まれます。
 
-- [ランサムウェアの応答 - 支払うか支払わないか? (2019 年 12 月)](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
-- [Norsk Hydro は、ランサムウェア攻撃に透過的に対応します (2019 年 12 月)](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
+- [ランサムウェアの応答 - 支払うべきか、支払わざるべきか? (2019 年 12 月)](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
+- [Norsk Hydro のランサムウェア攻撃に対する透明性のある対応 (2019 年 12 月)](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
 

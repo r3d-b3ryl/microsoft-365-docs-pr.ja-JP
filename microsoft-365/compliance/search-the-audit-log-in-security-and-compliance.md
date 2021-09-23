@@ -21,12 +21,12 @@ description: Microsoft 365 コンプライアンス センターを使用して�
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: abfd937b98ff863876060fcf6bbbe38c6b64f23f
-ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
+ms.openlocfilehash: 08f3089433769960d7765ce5dfd096a971de0640
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59477698"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483761"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>コンプライアンス センターで監査ログを検索する
 
@@ -40,6 +40,7 @@ ms.locfileid: "59477698"
 |:---------|:---------|
 | Azure Active Directory|AzureActiveDirectory、AzureActiveDirectoryAccountLogon、AzureActiveDirectoryStsLogon |
 | Azure Information Protection|AipDiscover、AipSensitivityLabelAction、AipProtectionAction、AipFileDeleted、AipHeartBeat |
+| コミュニケーション コンプライアンス|ComplianceSuperVisionExchange|
 | コンテンツ エクスプローラー|LabelContentExplorer|
 | データ損失防止 (DLP)|ComplianceDLPSharePoint、ComplianceDLPExchange|
 | Defender for Endpoint|DLPEndpoint|
@@ -64,7 +65,7 @@ ms.locfileid: "59477698"
 | ストリーム|MicrosoftStream|
 | 脅威インテリジェンス|ThreatIntelligence、ThreatIntelligenceUrl、ThreatFinder、ThreatIntelligenceAtpContent|
 | Workplace Analytics|WorkplaceAnalytics|
-|Yammer|Yammer|
+| Yammer|Yammer|
 |||
 
 前の表に示した、各サービスで監査される操作の詳細については、この記事の「[監査されたアクティビティ](#audited-activities)」セクションを参照してください。
@@ -126,12 +127,12 @@ ms.locfileid: "59477698"
 
 - プログラムを使用して監査ログからデータをダウンロードする場合、PowerShell スクリプトを使用する代わりに、Office 365 マネージメント アクティビティ API を使用することをお勧めします。Office 365 マネージメント アクティビティ API は、組織の運用、セキュリティ、コンプライアンス監視ソリューションの開発に使用する REST Web サービスです。詳細については、「[Office 365 マネージメント アクティビティ API リファレンス](/office/office-365-management-api/office-365-management-activity-api-reference)」を参照してください。
 
-- イベントが発生してから対応する監査ログ レコードが監査ログ検索の結果に返されるまで最長 30 分または最長 24 時間かかる場合があります。次の表は、Office 365 のさまざまなサービスで、この処理に要する時間を示しています。
+- イベントが発生してから対応する監査ログ レコードが監査ログ検索の結果に返されるまで最長 30 分または最長 24 時間かかる場合があります。次の表は、Microsoft 365 のさまざまなサービスで、この処理に要する時間を示しています。
 
 
   |Microsoft 365 サービスまたは機能|30 分|24 時間|
   |---|:---:|:---:|
-  |Defender for Office 365 および脅威インテリジェンス|![チェック マーク。](../media/checkmark.png)||
+  |Defender for Microsoft 365 および脅威インテリジェンス|![チェック マーク。](../media/checkmark.png)||
   |Azure Active Directory (ユーザー ログイン イベント)||![チェック マーク。](../media/checkmark.png)|
   |Azure Active Directory (管理イベント)||![チェック マーク。](../media/checkmark.png)|
   |データ損失防止|![チェック マーク。](../media/checkmark.png)||
@@ -151,7 +152,7 @@ ms.locfileid: "59477698"
   |Microsoft Forms|![チェック マーク。](../media/checkmark.png)||
   ||||
 
-- Azure Active Directory (Azure AD) は、Office 365 のディレクトリ サービスです。 統合監査ログには、<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>または Azure 管理ポータルで実行されたユーザー、グループ、アプリケーション、ドメイン、およびディレクトリのアクティビティが記録されます。 Azure AD のイベントの全リストについては、「[Azure Active Directory 監査レポートのイベント](/azure/active-directory/reports-monitoring/concept-audit-logs)」を参照してください。
+- Azure Active Directory (Azure AD) は、Microsoft 365 のディレクトリ サービスです。 統合監査ログには、<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>または Azure 管理ポータルで実行されたユーザー、グループ、アプリケーション、ドメイン、およびディレクトリのアクティビティが記録されます。 Azure AD のイベントの全リストについては、「[Azure Active Directory 監査レポートのイベント](/azure/active-directory/reports-monitoring/concept-audit-logs)」を参照してください。
 
 - Power BI の監査ログは、既定では有効になっていません。 監査ログ内の Power BI アクティビティを検索するには、Power BI 管理ポータルで監査を有効にする必要があります。 手順については、[Power BI 管理ポータル](/power-bi/service-admin-portal#audit-logs)の「監査ログ」セクションをご覧ください。
 
@@ -275,7 +276,7 @@ ms.locfileid: "59477698"
 
 ## <a name="audited-activities"></a>監査されるアクティビティ
 
-このセクションの表では、Office 365 で監査されるアクティビティについて説明します。セキュリティ/コンプライアンス センターで監査ログを検索することで、これらのイベントを検索できます。
+このセクションの表では、Microsoft 365 で監査されるアクティビティについて説明します。セキュリティ/コンプライアンス センターで監査ログを検索することで、これらのイベントを検索できます。
 
 以下の表は、関連するアクティビティまたは特定のサービスのアクティビティをグループ別にまとめたものです。 表には、[**アクティビティ**] ドロップダウン リストに表示されるフレンドリ名と、監査レコードの詳細情報および検索結果をエクスポートするときに CSV ファイルに表示される対応する操作名が含まれています。 詳細情報の説明については、「[監査ログの詳細なプロパティ](detailed-properties-in-the-office-365-audit-log.md)」をご覧ください。
 
@@ -415,10 +416,10 @@ ms.locfileid: "59477698"
 
 :::row:::
     :::column:::
-        [Exchange 管理アクティビティ](#exchange-admin-audit-log)
+        [コミュニケーション コンプライアンス アクティビティ](#communication-compliance-activities)
     :::column-end:::
     :::column:::
-        
+        [Exchange 管理アクティビティ](#exchange-admin-audit-log)
     :::column-end:::
     :::column:::
         
@@ -635,7 +636,7 @@ FilePreviewed イベントと FileAccessed イベントの両方が、ユーザ�
 |デバイス アクセス ポリシーの変更|DeviceAccessPolicyChanged|SharePoint またはグローバル管理者が、組織の非管理対象デバイス ポリシーを変更しました。 このポリシーは、組織に参加していないデバイスからの SharePoint、OneDrive、および Microsoft 365 へのアクセスを制御します。 このポリシーを構成するには、Enterprise Mobility + Security サブスクリプションが必要です。 詳細については、「[非管理対象デバイスからのアクセスを制御する](/sharepoint/control-access-from-unmanaged-devices)」を参照してください。|
 |適用除外ユーザー エージェントの変更|CustomizeExemptUsers|SharePoint 管理者または全体管理者が、SharePoint 管理センターで適用除外ユーザー エージェントの一覧をカスタマイズしました。インデックスを作成する Web ページ全体を受け取らせないように除外するユーザー エージェントを指定できます。つまり、除外対象として指定されたユーザー エージェントが InfoPath フォームを検出すると、フォームは、Web ページ全体ではなく XML ファイルとして返されます。これにより InfoPath フォームのインデックス作成の速度が向上します。|
 |ネットワーク アクセス ポリシーの変更|NetworkAccessPolicyChanged|SharePoint 管理者または全体管理者が、SharePoint 管理センター内で、または SharePoint Online PowerShell を使用して、場所に基づくアクセス ポリシー (信頼されたネットワーク境界とも呼ばれる) を変更しました。この種類のポリシーは、指定された承認済み IP アドレスの範囲に基づいて、組織内の SharePoint および OneDrive リソースにアクセスできるユーザーを制御します。詳細については、「[ネットワークの場所に基づいて SharePoint Online および OneDrive データへのアクセスを制御する](/sharepoint/control-access-based-on-network-location)」を参照してください。|
-|サイトの地域の移動の完了|SiteGeoMoveCompleted|組織のグローバル管理者がスケジュールしたサイトの地域の移動が正常に完了しました。 複数地域機能を使用すると、組織が複数の Microsoft データセンターの場所にまたがることができます。これは「地域」と呼ばれます。 詳細については、「[OneDrive の複数地域機能および Office 365 の SharePoint Online](../enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md)」を参照してください。|
+|サイトの地域の移動の完了|SiteGeoMoveCompleted|組織のグローバル管理者がスケジュールしたサイトの地域の移動が正常に完了しました。 複数地域機能を使用すると、組織が複数の Microsoft データセンターの場所にまたがることができます。これは「地域」と呼ばれます。 詳細については、「[OneDrive および SharePoint Online の複数地域機能](../enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md)」を参照してください。|
 |送信接続の作成|SendToConnectionAdded|SharePoint 管理者または全体管理者が、SharePoint 管理センターの [レコード管理] ページで、新しい送信接続を作成しました。[送信接続] では、ドキュメント リポジトリまたはレコード センターの設定を指定します。送信接続を作成すると、コンテンツ オーガナイザーにより、指定された場所にドキュメントを送信できます。|
 |サイト コレクションの作成|SiteCollectionCreated|SharePoint 管理者または全体管理者が、SharePoint Online 組織でサイト コレクションを作成したか、ユーザーが OneDrive for Business サイトをプロビジョニングしました。|
 |孤立したハブ サイトの削除|HubSiteOrphanHubDeleted|SharePoint 管理者またはグローバル管理者が、孤立したハブサイトを削除しました。これは、それに関連付けられているサイトがないハブサイトです。 孤立したハブは、元のハブサイトの削除が原因である可能性が大きいです。|
@@ -651,7 +652,7 @@ FilePreviewed イベントと FileAccessed イベントの両方が、ユーザ�
 |許可されるデータの場所の削除|AllowedDataLocationDeleted|SharePoint 管理者またはグローバル管理者が、複数地域環境で許可されるデータの場所を削除しました。|
 |地理的位置の管理者の削除|GeoAdminDeleted|SharePoint 管理者またはグローバル管理者が、ユーザーの地理的位置の管理者の役割を削除しました。|
 |サイトの名前変更|SiteRenamed|サイトの管理者または所有者がサイトの名前を変更しました|
-|サイトの地域の移動のスケジュール設定|SiteGeoMoveScheduled|SharePoint またはグローバル管理者が SharePoint または OneDrive サイトの地域の移動を正常にスケジュール設定しました。 複数地域機能を使用すると、組織が複数の Microsoft データセンターの場所にまたがることができます。これは「地域」と呼ばれます。 詳細については、「[OneDrive の複数地域機能および Office 365 の SharePoint Online](../enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md)」を参照してください。|
+|サイトの地域の移動のスケジュール設定|SiteGeoMoveScheduled|SharePoint またはグローバル管理者が SharePoint または OneDrive サイトの地域の移動を正常にスケジュール設定しました。 複数地域機能を使用すると、組織が複数の Microsoft データセンターの場所にまたがることができます。これは「地域」と呼ばれます。 詳細については、「[OneDrive および SharePoint Online の複数地域機能](../enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md)」を参照してください。|
 |ホスト サイトの設定|HostSiteSet|SharePoint 管理者または全体管理者が、個人用サイトまたは OneDrive for Business サイトをホストするために指定されたサイトを変更しました。|
 |地理的位置のストレージ クォータの構成|GeoQuotaAllocated|SharePoint 管理者またはグローバル管理者が、複数地域環境での地理的位置のストレージ クォータを構成しました。|
 |サイトのハブサイトへの結合解除|HubSiteUnjoined|サイト所有者が、ハブサイトへのサイトの関連付けを解除しました。|
@@ -705,14 +706,14 @@ FilePreviewed イベントと FileAccessed イベントの両方が、ユーザ�
 |ユーザー パスワードが変更されました|ユーザー パスワードを変更します。|ユーザーがパスワードを変更します。 ユーザーがパスワードをリセットするには、組織内のすべてのユーザーまたは選択したユーザーに対して、セルフサービスパスワードリセットを有効にする必要があります。 Azure Active Directory でセルフサービスのパスワードリセットアクティビティを追跡することもできます。 詳細情報については、[Azure ADパスワード管理に関するレポート　オプション](/azure/active-directory/authentication/howto-sspr-reporting)をご覧ください。
 |ユーザーの削除|ユーザーを削除します。|ユーザー アカウントが削除されました。|
 |Reset user password|ユーザー パスワードを再設定します。|管理者がユーザーのパスワードを再設定します。|
-|ユーザーへパスワードの変更を強制するプロパティの設定|ユーザー パスワードの強制変更を設定します。|管理者が、ユーザーが次に Office 365 にサインインしたときにパスワードを強制的に変更させるプロパティを設定しました。|
+|ユーザーへパスワードの変更を強制するプロパティの設定|ユーザー パスワードの強制変更を設定します。|管理者が、ユーザーが次に Microsoft 365 にサインインしたときにパスワードを強制的に変更させるプロパティを設定しました。|
 |Set license properties|ライセンス プロパティを設定する|管理者が、ユーザーに割り当てられたライセンスのプロパティを変更しました。|
 |ユーザーの更新|ユーザーを更新します。|管理者がユーザー アカウントの 1 つ以上のプロパティを変更しました。更新可能なユーザー プロパティの一覧については、「[Azure Active Directory 監査レポート イベント](/azure/active-directory/reports-monitoring/concept-audit-logs)」の「ユーザー属性の更新」セクションを参照してください。|
 ||||
 
 ### <a name="azure-ad-group-administration-activities"></a>Azure AD グループ管理アクティビティ
 
-次の表に、管理者かユーザーが Microsoft 365 グループを作成または変更したとき、あるいは管理者が [Microsoft 365 管理センター](https://go.microsoft.com/fwlink/p/?linkid=2024339)か Azure 管理ポータルを使用してセキュリティ グループを作成したときに記録されるグループ管理アクティビティを示します。 Office 365 のグループの詳細については、「[Microsoft 365 管理センターでグループを表示、作成、削除する](../admin/create-groups/create-groups.md)」を参照してください。
+次の表に、管理者かユーザーが Microsoft 365 グループを作成または変更したとき、あるいは管理者が [Microsoft 365 管理センター](https://go.microsoft.com/fwlink/p/?linkid=2024339)か Azure 管理ポータルを使用してセキュリティ グループを作成したときに記録されるグループ管理アクティビティを示します。 Microsoft 365 のグループの詳細については、「[Microsoft 365 管理センターでグループを表示、作成、削除する](../admin/create-groups/create-groups.md)」を参照してください。
 
 > [!NOTE]
 > 次の表の **[操作]** 列にリストされている操作名には、ピリオド ( `.` ) が含まれています。 監査ログの検索、監査保持ポリシーの作成、アラート ポリシーの作成、またはアクティビティ アラートの作成時に PowerShell コマンドで操作を指定する場合は、操作名にピリオドを含める必要があります。 また、操作名を含める場合は、二重引用符 (`" "`) を使用してください。
@@ -830,7 +831,7 @@ Workplace Analytics は、グループが組織全体でどのように共同作
 
 ### <a name="microsoft-teams-activities"></a>Microsoft Teams アクティビティ
 
-監査ログで Microsoft Stream のユーザーおよび管理者のアクティビティを検索できます。 Teams は Office 365 のチャット中心のワークスペースです。 これにより、チームの会話、会議、ファイル、およびノートが 1 つの場所に集められます。 監査されている Teams のアクティビティの説明については、「[Microsoft Teams でイベントの監査ログを検索する](/microsoftteams/audit-log-events#teams-activities)」を参照してください。
+監査ログで Microsoft Stream のユーザーおよび管理者のアクティビティを検索できます。 Teams は Microsoft 365 のチャット中心のワークスペースです。 これにより、チームの会話、会議、ファイル、およびノートが 1 つの場所に集められます。 監査されている Teams のアクティビティの説明については、「[Microsoft Teams でイベントの監査ログを検索する](/microsoftteams/audit-log-events#teams-activities)」を参照してください。
 
 ### <a name="microsoft-teams-healthcare-activities"></a>Microsoft Teams 医療活動アクティビティ
 
@@ -903,7 +904,7 @@ Power Apps では、アプリ関連のアクティビティの監査ログを検
 
 ### <a name="quarantine-activities"></a>検疫アクティビティ
 
-次の表に、監査ログで検索できる検疫アクティビティを示します。 検疫の詳細については、「[Office 365 でのメール メッセージの検疫](../security/office-365-security/quarantine-email-messages.md)」を参照してください。
+次の表に、監査ログで検索できる検疫アクティビティを示します。 検疫の詳細については、「[メール メッセージの検疫](../security/office-365-security/quarantine-email-messages.md)」を参照してください。
 
 |フレンドリ名|操作​​|説明|
 |:-----|:-----|:-----|
@@ -918,7 +919,7 @@ Power Apps では、アプリ関連のアクティビティの監査ログを検
 
 このセクションの表には、監査ログに記録された Microsoft Forms のユーザー アクティビティおよび管理者アクティビティの一覧が表示されています。 Microsoft Forms は、データを収集し分析するために使用するフォーム/クイズ/アンケート ツールです。 下記の説明に別途記載するとおり、一部の操作には追加のアクティビティ パラメーターが含まれます。
 
-Forms アクティビティが共同作成者または匿名のレスポンダーによって実行される場合、わずかに異なるログが記録されます。 詳細については、[共同作成者および匿名のレスポンダーによって実行される Forms アクティビティ](#forms-activities-performed-by-coauthors-and-anonymous-responders) セクションを参照してください。
+Forms アクティビティが共同作成者または匿名のレスポンダーによって実行される場合、わずかに異なるログが記録されます。 詳細については、[共同作成者および匿名のレスポンダーによって実行される Forms アクティビティ セクション](#forms-activities-performed-by-coauthors-and-anonymous-responders)を参照してください。
 
 > [!NOTE]
 > 一部の Forms 監査アクティビティは、高度な監査でのみ利用できます。 つまり、これらのアクティビティが監査ログに記録される前に、ユーザーに適切なライセンスを割り当てる必要があります。 高度な監査でのみ利用できるアクティビティの詳細については、「[Microsoft 365 の高度な監査](advanced-audit.md#advanced-audit-events)」を参照してください。 高度な監査のライセンス要件については、「[Microsoft 365 での監査ソリューション](auditing-solutions-overview.md#licensing-requirements)」を参照してください。 <br/><br/>次の表では、高度な監査アクティビティがアスタリスク (*) で強調表示されています。
@@ -960,7 +961,7 @@ Forms アクティビティが共同作成者または匿名のレスポンダ�
 |特定の回答者を追加しました<sup>*</sup>|AddSpecificResponder|フォーム所有者が特定の回答者リストに新しいユーザーまたはグループを追加する。|
 |特定の回答者を削除しました<sup>*</sup>|RemoveSpecificResponder|フォーム所有者がに新しいユーザーまたはグループを特定の回答者リストから削除する。|
 |共同作業を無効にしました<sup>*</sup>|DisableCollaboration|フォーム所有者がフォームでの共同作業の設定をオフにしている。|
-|Office 365 での職場または学校アカウントの共同作業を有効にしました<sup>*</sup>|EnableWorkOrSchoolCollaboration|フォーム所有者が、Office 365 の職場または学校アカウントを使用するユーザーにフォームの表示および編集を許可する設定をオンにしている。|
+|Office 365 での職場または学校アカウントの共同作業を有効にしました<sup>*</sup>|EnableWorkOrSchoolCollaboration|フォーム所有者が、Microsoft 365 の職場または学校アカウントを使用するユーザーにフォームの表示および編集を許可する設定をオンにしている。|
 |所属組織内のユーザーの共同作業を有効にしました<sup>*</sup>|EnableSameOrgCollaboration|フォーム所有者が、現在の組織のユーザーにフォームの表示および編集を許可する設定をオンにしている。|
 |特定のユーザーの共同作業を有効にしました<sup>*</sup>|EnableSpecificCollaboaration|フォーム所有者が、現在の組織の特定のユーザーまたは特定のグループのみフォームへの表示および編集を許可する設定をオンにしている。|
 |Excel ブックに接続しました<sup>*</sup>|ConnectToExcelWorkbook|フォームを Excel ブックに接続しました。 <br><br>プロパティ ExcelWorkbookLink:string は、関連する現在のフォームの Excel ブック ID を示します。|
@@ -1015,7 +1016,7 @@ Forms は、フォームの設計時および回答の分析時の協同作業�
 
 ### <a name="briefing-email-activities"></a>ブリーフィング メール アクティビティ
 
-Office 365 監査ログに記録されるブリーフィング メールのアクティビティの一覧を次の表に記載します。ブリーフィング メールに関する詳細情報は以下を参照してください:
+Microsoft 365 監査ログに記録されるブリーフィング メールのアクティビティの一覧を次の表に記載します。ブリーフィング メールに関する詳細情報は以下を参照してください:
 
 - [ブリーフィングメールの概要](/Briefing/be-overview)
 
@@ -1029,7 +1030,7 @@ Office 365 監査ログに記録されるブリーフィング メールのア�
 
 ### <a name="myanalytics-activities"></a>MyAnalytics アクティビティ
 
-Office 365 監査ログに記録されるMyAnalytics のアクティビティの一覧を次の表に記載します。 MyAnalytics の詳細については、「[管理者向けの MyAnalytics](/workplace-analytics/myanalytics/overview/mya-for-admins)」を参照してください。
+Microsoft 365 監査ログに記録されるMyAnalytics のアクティビティの一覧を次の表に記載します。 MyAnalytics の詳細については、「[管理者向けの MyAnalytics](/workplace-analytics/myanalytics/overview/mya-for-admins)」を参照してください。
 
 |**フレンドリ名**|**操作名**|**説明**|
 |:-----|:-----|:-----|
@@ -1039,7 +1040,7 @@ Office 365 監査ログに記録されるMyAnalytics のアクティビティの
 
 ### <a name="information-barriers-activities"></a>情報バリア アクティビティ
 
-Office 365 監査ログに記録される情報バリアのアクティビティの一覧を次の表に記載します。 情報バリアの詳細については、「[Microsoft 365 の情報の障壁について](information-barriers.md)」を参照してください。
+Microsoft 365 監査ログに記録される情報バリアのアクティビティの一覧を次の表に記載します。 情報バリアの詳細については、「[Microsoft 365 の情報の障壁について](information-barriers.md)」を参照してください。
 
 |**フレンドリ名**|**操作名**|**説明**|
 |:----------------|:------------|:--------------|
@@ -1055,14 +1056,25 @@ Office 365 監査ログに記録される情報バリアのアクティビティ
 |**フレンドリ名**|**操作名**|**説明**|
 |:-----|:-----|:-----|
 |承認された廃棄|ApproveDisposal|処理レビュー担当者は、アイテムを次の処理段階に移動するためにアイテムの廃棄を承認しました。 アイテムが処理レビューの一意の段階または最終段階にある場合、廃棄承認ではアイテムを完全な削除の対象としてマークしました。|
-|延長保有期間|ExtendRetentiond|処理レビュー担当者は、アイテムの保持期間を延長しました。|
+|延長保有期間|ExtendRetention|処理レビュー担当者は、アイテムの保持期間を延長しました。|
 |再ラベル付けされたアイテム|RelabelItem|処理レビュー担当者がアイテム保持ラベルにもう一度ラベルを付けました。|
 |追加されたレビュー担当者|AddReviewer|処理レビュー担当者は、現在の処理確認段階に 1 人以上の他のユーザーを追加しました。|
 ||||
 
+### <a name="communication-compliance-activities"></a>コミュニケーション コンプライアンス アクティビティ
+
+Microsoft 365 監査ログに記録されるコミュニケーション コンプライアンス アクティビティの一覧を次の表に記載します。 詳細については、「[Microsoft 365 での通信コンプライアンスに関する詳細情報](communication-compliance.md)」を参照してください。
+
+|**フレンドリ名**|**操作名**|**説明**|
+|:-----|:-----|:-----|
+|ポリシーの更新|SupervisionPolicyCreated, SupervisionPolicyUpdated, SupervisionPolicyDeleted|コミュニケーション コンプライアンス管理者がポリシーの更新を実行しました。|
+|ポリシーとの一致|SupervisionRuleMatch|ユーザーがポリシーの条件に一致するメッセージを送信しました。|
+|メッセージに適用されるタグ|SupervisoryReviewTag|タグがメッセージに適用されるか、またはメッセージが解決されます。|
+||||
+
 ### <a name="exchange-admin-audit-log"></a>Exchange 管理者監査ログ
 
-(Office 365 において既定で有効になっている) Exchange 管理者監査ログは、管理者 (または管理者権限が割り当てられているユーザー) が Exchange Online の組織で変更を行ったときに、監査ログにイベントを記録します。 Exchange 管理センターを使用するか、Exchange Online PowerShell でコマンドレットを実行して加えられた変更は、Exchange 管理者監査ログに記録されます。 監査ログには、動詞の **Get-**、**Search-**、または **Test-** で始まるコマンドレットは記録されません。 Exchange の管理者監査ログの詳細については、「[管理者監査ログ](/exchange/administrator-audit-logging-exchange-2013-help)」を参照してください。
+(Microsoft 365 において既定で有効になっている) Exchange 管理者監査ログは、管理者 (または管理者権限が割り当てられているユーザー) が Exchange Online の組織で変更を行ったときに、監査ログにイベントを記録します。 Exchange 管理センターを使用するか、Exchange Online PowerShell でコマンドレットを実行して加えられた変更は、Exchange 管理者監査ログに記録されます。 監査ログには、動詞の **Get-**、**Search-**、または **Test-** で始まるコマンドレットは記録されません。 Exchange の管理者監査ログの詳細については、「[管理者監査ログ](/exchange/administrator-audit-logging-exchange-2013-help)」を参照してください。
 
 > [!IMPORTANT]
 > Exchange 管理者監査ログ (または監査ログ) に記録されない一部の Exchange Online コマンドレット。 これらのコマンドレットの多くは、Exchange Online サービスの保守に関連しており、Microsoft データセンサーの担当者またはサービス アカウントによって実行されます。 "雑音の多い" 監査イベントが多数発生するため、これらのコマンドレットはログに記録されません。 監査されていない Exchange Online コマンドレットがある場合は、[セキュリティ/コンプライアンスの UserVoice フォーラム](https://office365.uservoice.com/forums/289138-office-365-security-compliance)に提案を送信して、監査を有効にするよう依頼してください。 Microsoft サポートには、デザイン変更依頼 (DCR) を送信することもできます。
@@ -1093,7 +1105,7 @@ Office 365 監査ログに記録される情報バリアのアクティビティ
 
 Exchange Online、SharePoint Online、OneDrive for Business、Azure Active Directory、Microsoft Teams、Dynamics 365、Defender for Office 365、Power BI など、特に使用頻度の高いサービスが監査されます。 監査対象のサービスのリストについては、[この記事の冒頭](search-the-audit-log-in-security-and-compliance.md)を参照してください。
 
-**Office 365 の監査サービスでは、どんなアクティビティが監視されますか?**
+**Microsoft 365 の監査サービスでは、どんなアクティビティが監視されますか?**
 
 監査されるアクティビティの一覧と説明については、この記事の「[監査されるアクティビティ](#audited-activities)」のセクションを参照してください。
 
@@ -1127,6 +1139,6 @@ Exchange Online、SharePoint Online、OneDrive for Business、Azure Active Direc
 
 **監査データは暗号化されますか?**
 
-監査データは、統合監査パイプラインが展開されるのと同じ地域の Exchange メールボックス(保存データ)に保存されます。 保管中のメールボック スデータは、Exchange によって暗号化されません。 ただし、Microsoft データセンターの Exchange サーバーは BitLocker を介して暗号化されるため、サービス レベルの暗号化はすべてのメールボックス データを暗号化します。 詳細の情報に、「[Skype for Business、OneDrive for Business、SharePoint Online、および Exchange Online 用の Office 365 の暗号化](/compliance/assurance/assurance-encryption-for-microsoft-365-services)」を参照してください。
+監査データは、統合監査パイプラインが展開されるのと同じ地域の Exchange メールボックス(保存データ)に保存されます。 保管中のメールボック スデータは、Exchange によって暗号化されません。 ただし、Microsoft データセンターの Exchange サーバーは BitLocker を介して暗号化されるため、サービス レベルの暗号化はすべてのメールボックス データを暗号化します。 詳細の情報に、「[Skype for Business、OneDrive for Business、SharePoint Online、および Exchange Online 用の Microsoft 365 の暗号化](/compliance/assurance/assurance-encryption-for-microsoft-365-services)」を参照してください。
 
 送信中のメールデータは常に暗号化されます。
