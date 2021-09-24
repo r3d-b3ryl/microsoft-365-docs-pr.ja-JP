@@ -15,12 +15,13 @@ ms.date: 09/11/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 2dda17d55dbe5e86b6d76e3a766a020c6e0bc3aa
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 61766babf6da4b0e564a85bf37c9bf7222afbf34
+ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59356527"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59497641"
 ---
 # <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策ソフトウェアの問題をトラブルシューティングするため、イベント ログとエラー コードをレビューする
 
@@ -1204,7 +1205,7 @@ UAC </dt>
 クライアントMicrosoft Defender ウイルス対策、重大な問題が原因でこのエラーが発生しました。 エンドポイントが保護されていない可能性があります。 エラーの説明を確認し、以下の関連する <b>ユーザー アクションの手順に</b> 従います。
 <table>
 <tr>
-<th>操作</th>
+<th>Action</th>
 <th>ユーザー操作</th>
 </tr>
 <tr>
@@ -1352,21 +1353,21 @@ Microsoft Defender ウイルス対策は正常な状態で稼働しています�
 <td >
 ウイルス対策クライアントの正常性レポート。
 <dl>
-<dt>プラットフォームのバージョン: &lt;&gt;</dt>現在
+<dt>プラットフォームのバージョン: &lt;&gt;</dt>
+<dt> &lt; 現在 &gt; </dt>のプラットフォームバージョン エンジンバージョン: マルウェア対策エンジン バージョン ネットワークリアルタイム検査エンジンバージョン
+<dt>: &lt; &gt; </dt>ネットワークリアルタイム検査エンジンバージョン ウイルス対策署名バージョン
+<dt>: &lt; &gt; </dt>ウイルス対策署名バージョン
+<dt> &lt; &gt; Antispyware</dt>署名バージョン: スパイウェア対策署名バージョン ネットワークリアルタイム検査署名バージョン
+<dt>: &lt; ネットワークリアルタイム&gt;</dt>検査署名バージョン RTP 状態: リアルタイム保護状態 (有効または無効
+<dt> &lt; &gt; )</dt>OA 状態: On Access 状態 (有効または無効
+<dt> &lt; &gt; )</dt>IOAV 状態: IE のダウンロードと Outlook Express Attachments 状態 (有効または無効) BM 状態: 動作監視状態 (有効または無効
 <dt> &lt; &gt; </dt>
-<dt> &lt; &gt; </dt>
-<dt> &lt; &gt; </dt>
-<dt> &lt; &gt; </dt>
-<dt> &lt; &gt; </dt>
-<dt> &lt; &gt; </dt>
-<dt> &lt; &gt; </dt>
-<dt> &lt; &gt; </dt>
-<dt> &lt; &gt; </dt>
-<dt> &lt; のプラットフォームバージョン エンジンバージョン: マルウェア対策エンジン バージョン ネットワークリアルタイム検査エンジンバージョン: ネットワークリアルタイム検査エンジンバージョン ウイルス対策署名バージョン: ウイルス対策署名バージョン: スパイウェア対策署名バージョン ネットワークリアルタイム検査署名バージョン: ネットワークリアルタイム検査署名バージョン RTP 状態: リアルタイム 保護状態 (有効または無効) OA 状態: On Access 状態 (有効または無効) IOAV 状態: IE ダウンロードと Outlook Express Attachments 状態 (有効または無効) BM 状態: 動作監視状態 (有効または無効) ウイルス対策署名の &gt; </dt>年齢: ウイルス対策署名の年齢 (日)
-<dt>&lt; &gt; スパイウェア</dt>対策署名の年齢: スパイウェア対策署名の年齢 (日) 最後のクイック スキャンの時間: 最後のクイック スキャンの年齢
-<dt>(日 &lt; &gt; )</dt>最後のフル スキャンの年齢: 最後のフル スキャンの年齢
-<dt>(日 &lt; &gt; )</dt>ウイルス対策署名の作成時間
-<dt>: ? &lt;ウイルス対策署名の &gt; 作成時間</dt>
+<dt> &lt; &gt; )</dt>ウイルス対策署名の年齢: ウイルス対策署名の年齢
+<dt> &lt; &gt; (日)</dt>
+<dt>スパイウェア対策の署名の年齢: &lt;&gt;Antispyware</dt>署名の年齢 (日) 最後のクイック スキャンの時間: 最後のクイック スキャンの時間
+<dt>(日 &lt; &gt; )</dt>最後のフル スキャンの時間: 最後のフル スキャンの年齢
+<dt>(日 &lt; &gt; )</dt>ウイルス対策署名の作成
+<dt>時間: ? &lt;ウイルス対策署名の &gt; 作成時間</dt>
 <dt>Antispyware 署名の作成時間: ? &lt;スパイウェア対策署名の作成時間 &gt; 最後</dt>
 <dt>のクイック スキャンの開始時刻: ? &lt;最後のクイック スキャン &gt; の開始時刻</dt>
 <dt>最後のクイック スキャンの終了時刻: ? &lt;最終クイック スキャン終了 &gt; </dt>時刻 最後のクイック スキャン ソース: 最後のクイック スキャン ソース (0 = スキャンが実行されなかった、1 = ユーザーが開始
@@ -1769,7 +1770,7 @@ Microsoft Defender ウイルス対策動的<i>署名サービスを使用して<
 <li>バージョン</li>
 <li>Timestamp</li>
 <li>無制限</li>
-<li>Duration</li>
+<li>期間</li>
 </ul>
 </dt>
 <dt>永続パス: &lt;Path &gt; </dt>
@@ -1825,7 +1826,7 @@ Microsoft Defender ウイルス対策使用<i>して、古い</i>署名を破棄
 <li>バージョン</li>
 <li>Timestamp</li>
 <li>無制限</li>
-<li>Duration</li>
+<li>期間</li>
 </ul>
 </dt>
 <dt>永続パス: &lt;Path &gt; </dt>
@@ -1892,7 +1893,7 @@ Microsoft Defender ウイルス対策署名サービスを使用しようとし�
 <li>バージョン</li>
 <li>Timestamp</li>
 <li>無制限</li>
-<li>Duration</li>
+<li>期間</li>
 </ul>
 </dt>
 <dt>永続パス: &lt;Path &gt; </dt>

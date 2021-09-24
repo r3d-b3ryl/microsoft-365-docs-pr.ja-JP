@@ -15,12 +15,12 @@ metadata:
   - NOCSH
   description: コア データを新しいデータセンター geo に移動する方法に関するよく寄せられる質問 (FAQ) にOffice 365します。
   ms.custom: seo-marvel-mar2020
-  ms.openlocfilehash: cbc359db637d2d60315a724b9bf78ffb9ae0359d
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.openlocfilehash: 12c486e94b6039b2ee9914f83d51dec21b32d422
+  ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59218574"
+  ms.lasthandoff: 09/24/2021
+  ms.locfileid: "59498294"
 title: データ移行についての一般的な FAQ
 summary: 保存中の主要な顧客データを新しいデータセンター geo に移動する方法に関する一般的な質問に対する回答を次に示します。
 sections:
@@ -138,7 +138,7 @@ sections:
     answer: >
       はい。 Microsoft は、2,700 を超えるインターネット サービス プロバイダー (ISP) とのピアリング契約を締結し、世界 35 か国の 130 以上の場所でパブリック インターネット接続を備える大規模なグローバル ネットワークを維持しています。 インターネット上のどの場所にいるユーザーでも、データセンターにアクセスできます。
   - question: >
-      テナントが複数地域アドオンを構成しました。 引き続き、Microsoft 365 Move Program のテナントに登録して、既定の geo を変更し、サテライト地域に存在しないユーザーを新しい既定の geo に移動できますか?
+      テナントが複数地域アドオンを構成しました。 引き続き、移行プログラムでテナントMicrosoft 365できますか?をクリックして、既定の geo を変更し、サテライト地域に含めないユーザーを新しい既定の geo に移動しますか?
     answer: >
       はい、テナントは登録する資格がありますが、複数地域を構成した顧客に対してテナント レベルの移動が完全にサポートされていないので、重要な考慮事項 [があります](https://aka.ms/multi-geo)。
 
@@ -146,5 +146,5 @@ sections:
       SharePointオンラインおよびOneDrive for Business、このプログラムを通じてテナント レベルで新しいデータセンター geo に移行することはできません。 顧客管理者は、複数地域を使用して使用可能な任意の地域に移動するように OneDrive for Business 共有を構成できますが、複数地域がテナントに対して構成されている場合、テナントの既定の場所を変更することはできません。
 
 
-      移行をオプトインしているお客様向け - すべての Exchange Online メールボックスを現在の既定の geo から新しいローカル データセンター geo に移動し、既定の Exchange Online 地域を更新します。 複数地域サテライト地域で構成されている EXO メールボックスは、意図した通りサテライト地域のデータ常駐を引き続き尊重するように移動されません。
+      移行をオプトインしているお客様向け - すべての Exchange Online メールボックスを現在の既定の geo から新しいローカル データセンター geo に移動し、既定の Exchange Online 地域を更新します。 複数地域サテライト地域で構成されている EXO メールボックスは、意図した通りサテライト地域のデータ常駐を引き続き尊重するように移動されません。  Teams地域構成を持つ顧客のチャット サービス テナントの移行は、複数地域構成の場合と同様にExchange Online。
 additionalContent: "\n## <a name=\"related-topics\"></a>関連項目\n  [コア データを新しいデータ センター geos にMicrosoft 365する](moving-data-to-new-datacenter-geos.md)\n\n  [データ移行をリクエストする方法](request-your-data-move.md)\n\n  [Microsoft 365複数地域](https://aka.ms/multi-geo)\n\n  [Microsoft 365データセンター マップ](https://office.com/datamaps)\n\n  [Microsoft 365サポート](../business-video/get-help-support.md)\n\n  [Microsoft Dynamics CRM Online の新しいデータ センター geo](/power-platform/admin/new-datacenter-regions)\n\n  [Azure のリージョン](https://azure.microsoft.com/regions/)"

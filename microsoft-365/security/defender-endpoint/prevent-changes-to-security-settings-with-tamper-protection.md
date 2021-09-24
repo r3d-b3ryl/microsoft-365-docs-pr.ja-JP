@@ -16,13 +16,14 @@ author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.technology: mde
-ms.date: 07/27/2021
-ms.openlocfilehash: c85e2d8ed1a81cde397fd7be651fbefda5db0053
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.date: 09/23/2021
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 91c66ffa315e7cb6434bb845bd575f7040026c2f
+ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59356743"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59498258"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>改ざん防止機能を使用してセキュリティ設定を保護する
 

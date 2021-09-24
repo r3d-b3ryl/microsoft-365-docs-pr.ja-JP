@@ -16,12 +16,13 @@ manager: dansimp
 ms.custom: asr
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6e918c85e50f0e6f675cc623cf7765de6518ab1d
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.collection: M365-security-compliance
+ms.openlocfilehash: ecd38f39ddbc50876c6dbc6f5edf227d0f17a495
+ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401292"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59498342"
 ---
 # <a name="report-and-troubleshoot-microsoft-defender-for-atp-asr-rules"></a>ATP ASR ルールの Microsoft Defender のレポートとトラブルシューティング
 

@@ -15,12 +15,13 @@ ms.author: dansimp
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 2f18e54fcbbcd225ce7df83005ab65c0c33b1f0f
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 8b299c2c097214bfbfeb4662bcdde070c7b8c544
+ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59355905"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59498354"
 ---
 # <a name="onboard-windows-10-multi-session-devices-in-azure-virtual-desktop"></a>Azure Windows 10デスクトップでのマルチセッション デバイスのオンボード
 
@@ -155,7 +156,7 @@ WVD ホスト コンピューターをオンボードする方法は次のとお
 
 #### <a name="licensing-requirements"></a>ライセンスの要件
 
-ライセンスに関する注意: Windows 10 Enterprise マルチセッションを使用する場合は、要件に応じて、Microsoft Defender for Endpoint (ユーザーあたり)、Windows Enterprise E5、Microsoft 365 Security、または Microsoft 365 E5 を介してすべてのユーザーにライセンスを取得するか、Azure Defender を介して VM のライセンスを取得するように選択できます。
+ライセンスに関する注意: Windows 10 Enterprise マルチセッションを使用する場合、要件に応じて、Microsoft Defender for Endpoint (ユーザーあたり)、Windows Enterprise E5、Microsoft 365 Security、または Microsoft 365 E5 を通じてすべてのユーザーのライセンスを取得するか、またはAzure Defender を介して VM のライセンスを取得する必要があります。
 エンドポイントの Microsoft Defender のライセンス要件については、「ライセンス要件」 [を参照してください](minimum-requirements.md#licensing-requirements)。
 
 #### <a name="related-links"></a>関連リンク

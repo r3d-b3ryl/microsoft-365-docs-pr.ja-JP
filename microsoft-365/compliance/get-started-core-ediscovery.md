@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コア電子情報開示の使用を開始する方法についてMicrosoft 365。 電子情報開示のアクセス許可を割り当て、ケースを作成したら、メンバーの追加、電子情報開示ホールドの作成、調査に関連するコンテンツの検索とエクスポートを行います。
-ms.openlocfilehash: d1a9e68bedc77f3b74b13f438e73dcbcb83b4c8c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: aa6e1efb6ef3a773eaae697fcc60a4293967d845
+ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191481"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59498222"
 ---
 # <a name="get-started-with-core-ediscovery-in-microsoft-365"></a>コア電子情報開示の使用をMicrosoft 365
 
@@ -34,7 +34,7 @@ ms.locfileid: "59191481"
 
 コア電子情報開示のライセンスには、適切な組織のサブスクリプションとユーザーごとのライセンスが必要です。
 
-- **組織のサブスクリプション:** Microsoft 365 コンプライアンス センター のコア電子情報開示にアクセスし、保持機能とエクスポート機能を使用するには、組織に Microsoft 365 E3または Office 365 E3以上が必要です。
+- **組織のサブスクリプション:** Microsoft 365 コンプライアンス センター のコア電子情報開示にアクセスし、保持機能とエクスポート機能を使用するには、組織に Microsoft 365 E3または Office 365 E3以上が必要です。 Microsoft 365フロントライン組織は、F5 サブスクリプションを持っている必要があります。
 
 - **ユーザーごとのライセンス:** メールボックスとサイトに電子情報開示ホールドを設定するには、組織のサブスクリプションに応じて、次のいずれかのライセンスをユーザーに割り当てる必要があります。
 
@@ -44,15 +44,19 @@ ms.locfileid: "59191481"
 
   - Office 365 E1プラン 2 または Exchange Online アドオン ライセンスExchange Online Archivingライセンスを使用する場合
 
+   または
+
+  - Microsoft 365Frontline F5 Compliance または F5 Security & コンプライアンス アドオン ライセンス  
+
   AND
 
-  - Office 365 E1プラン 2 または SharePointプラン 2 OneDrive for Business ライセンスを使用するライセンス
+  - Office 365 E1プラン 2 または SharePointプラン 2 OneDrive for Business ライセンスを使用したライセンスの取得
   
   ライセンスを割り当てる方法については、「ユーザーにライセンスを割り当 [てる」を参照してください](../admin/manage/assign-licenses-to-users.md)。
 
 ライセンスの詳細については、次の情報を参照してください。
 
-- 「コンプライアンス ライセンスの比較」の「&応答の検出」Microsoft 365[をダウンロードして参照してください](/office365/servicedescriptions/downloads/microsoft-365-compliance-licensing-comparison.xlsx)。
+- [比較] テーブルの [電子情報開示と監査] セクションをダウンロードMicrosoft 365[参照してください](https://go.microsoft.com/fwlink/?linkid=2139145)。
 
 - 「セキュリティ [とコンプライアンス &サービスの説明」を参照してください](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)。
 
@@ -132,7 +136,7 @@ Core 電子情報開示にアクセスしたり、コア電子情報開示ケー
 
 ![コア電子情報開示ワークフロー。](../media/CoreEdiscoveryWorkflow.png)
 
-1. **[電子情報開示ホールドを作成します](create-ediscovery-holds.md)**。 ケースを作成した後の最初の手順は、調査に関心のあるユーザーのコンテンツの場所に保留 (電子情報開示 *ホールドとも呼* ばれる) を配置します。 コンテンツの場所には、Exchange、SharePoint サイト、OneDrive アカウント、および Microsoft Teams および Office 365 グループに関連付けられたメールボックスとサイトが含まれます。 この手順は省略可能ですが、電子情報開示ホールドを作成すると、調査中にケースに関連する可能性のあるコンテンツが保持されます。 電子情報開示ホールドを作成する場合は、特定のコンテンツの場所のすべてのコンテンツを保持するか、クエリ ベースの保持を作成して、保留クエリに一致するコンテンツのみを保持できます。 コンテンツの保持に加えて、電子情報開示ホールドを作成するもう 1 つの適切な理由は、次の手順で検索を作成して実行するときに、(検索する各場所を選択する必要がある代わりに) 保留のコンテンツの場所をすばやく検索する方法です。 調査が完了したら、作成した保留を解除できます。
+1. **[電子情報開示ホールドを作成します](create-ediscovery-holds.md)**。 ケースを作成した後の最初の手順は、調査に関心のあるユーザーのコンテンツの場所に保留 (電子情報開示 *ホールドとも呼* ばれる) を配置します。 コンテンツの場所には、Exchange、SharePoint サイト、OneDrive アカウント、および Microsoft Teams および Microsoft 365 グループに関連付けられているメールボックスが含まれます。 この手順は省略可能ですが、電子情報開示ホールドを作成すると、調査中にケースに関連する可能性のあるコンテンツが保持されます。 電子情報開示ホールドを作成する場合は、特定のコンテンツの場所のすべてのコンテンツを保持するか、クエリ ベースの保持を作成して、保留クエリに一致するコンテンツのみを保持できます。 コンテンツの保持に加えて、電子情報開示ホールドを作成するもう 1 つの適切な理由は、次の手順で検索を作成して実行するときに、(検索する各場所を選択する必要がある代わりに) 保留のコンテンツの場所をすばやく検索する方法です。 調査が完了したら、作成した保留を解除できます。
 
 2. **[コンテンツを検索します](search-for-content-in-core-ediscovery.md)**。 電子情報開示ホールドを作成した後、組み込みの検索ツールを使用して保留のコンテンツの場所を検索します。 他のコンテンツの場所で、ケースに関連する可能性のあるデータを検索できます。 ケースに関連付けられたさまざまな検索を作成して実行できます。 キーワード、プロパティ、および条件を使用して、[](keyword-queries-and-search-conditions.md)ケースに最も関連性の高いデータを含む検索結果を返す検索クエリを作成します。 以下のことも実行できます。
 

@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Normal
 description: Microsoft ドキュメント ライブラリのドキュメント ライブラリに発行SharePointを適用する方法について説明SharePoint Syntex。
-ms.openlocfilehash: 048197b8f477b62527b2f379a5361d1765c70a3b
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 2cc4719720693f6aa386abfc191e2b26b75f813f
+ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59399979"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59498100"
 ---
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntexのドキュメント理解モデルを適用する
 
@@ -61,15 +61,13 @@ ms.locfileid: "59399979"
 
 6. モデル のホーム ページの[モデルの適用場所] セクションに、一覧に表示されるSharePoint表示されます。
 
-7. ドキュメントライブラリに移動し、モデルのドキュメントライブラリビューに移動していることを確認します。 ドキュメント ライブラリ名の横にある [情報] ボタンを選択すると、ドキュメント ライブラリにモデルが適用されていることを示すメッセージが表示されます。
+7. ドキュメントライブラリに移動し、モデルのドキュメントライブラリビューに移動していることを確認します。 [ドキュメント **の**  >  **理解モデルの表示を自動化する] を選択します**。
 
-    ![情報ビュー。](../media/content-understanding/info-du.png) 
+8. [モデル **の確認と新しい** モデルの適用] ページで、[適用] タブを選択して、ドキュメント ライブラリに適用されるモデルを確認します。
 
-    [**アクティブなモデルの表示**] を選択すると、ドキュメント ライブラリに適用されているモデルに関する詳細を表示できます。
+    ![[適用] タブが選択され、適用されたモデルを示すスクリーンショット。](../media/content-understanding/applied-models.png) 
 
-8. [**アクティブなモデル**] ウィンドウで、ドキュメント ライブラリに適用されているモデルを確認できます。 モデルを選択すると、モデルの説明、モデルの発行者、およびモデルが分類するファイルに保持ラベルを適用するかどうかなど、モデルに関する詳細が表示されます。
-
-    ![[アクティブ なモデル] ウィンドウ。](../media/content-understanding/active-models.png) 
+9. [ **モデルの詳細の** 表示] を選択すると、モデルの説明、モデルの公開者、分類するファイルに保持ラベルまたは感度ラベルが適用される場合など、モデルに関する情報が表示されます。
 
 モデルをドキュメントライブラリに適用したら、サイトにドキュメントをアップロードし、結果を確認できます。
 

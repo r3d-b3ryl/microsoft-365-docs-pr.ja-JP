@@ -23,20 +23,22 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: 製品ライセンスを特定のユーザーに割り当てるのか、またはユーザー ライセンスを特定の製品に割り当てるのかによって、ライセンスを割り当てます。
-ms.date: 04/26/2021
-ms.openlocfilehash: 987572ae15ffdf6d2042c6e54eba586cd39ebcb9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.date: 09/16/2021
+ms.openlocfilehash: 48763019211f1358e09f9c712f27870bd13a4435
+ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176375"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59477541"
 ---
 # <a name="assign-licenses-to-users"></a>ユーザーにライセンスを割り当てる
 
 [**アクティブなユーザー**] ページまたは [**ライセンス**] ページで、ユーザーにライセンスを割り当てることができます。 使用する方法は、製品ライセンスを特定のユーザーに割り当てるのか、またはユーザー ライセンスを特定の製品に割り当てるのかによって異なります。
 
 > [!NOTE]
-> 管理者は、組織内のユーザーが購入したセルフサービス購入サブスクリプションのライセンスを割り当てたり割り当て解除したりすることはできません。 [セルフサービス購入サブスクリプションを引き継ぐと](../../commerce/subscriptions/manage-self-service-purchases-admins.md#take-over-a-self-service-purchase-subscription)、ライセンスの割り当てまたは割り当て解除を行うことができるようになります。
+> 
+> - 管理者は、組織内のユーザーが購入したセルフサービス購入サブスクリプションのライセンスを割り当てたり割り当て解除したりすることはできません。 [セルフサービス購入サブスクリプションを引き継ぐと](../../commerce/subscriptions/manage-self-service-purchases-admins.md#take-over-a-self-service-purchase-subscription)、ライセンスの割り当てまたは割り当て解除を行うことができるようになります。
+> - 一部のサブスクリプションでは、サブスクリプションを購入または更新した後、限られた時間内にのみキャンセルできます。 キャンセル期間が過ぎた場合は、定期的な請求をオフにして、期間の終了時にサブスクリプションをキャンセルします。
 
 [ユーザーを追加すると同時にライセンスを割り当てる方法を説明します](../add-users/add-users.md)。
 
@@ -60,21 +62,24 @@ ms.locfileid: "59176375"
 
 ::: moniker range="o365-germany"
 
- 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">ライセンス</a>] ページに移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">ライセンス</a>] ページに移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">ライセンス</a>] ページに移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">ライセンス</a>] ページに移動します。
 
 ::: moniker-end
 
-
 2. 製品を選択します。
+
 3. 製品の詳細ページで、[**ライセンスの割り当て**] を選択します。
+
 4. [**ユーザーにライセンスを割り当てる**] ウィンドウで、名前の入力を開始し、結果から名前を選択して一覧に追加します。 最大 20 人のユーザーを同時に追加することができます。
+
 4. 特定のアイテムへのアクセス権を割り当てまたは削除するには、[**アプリとサービスをオンまたはオフにする**] を選択します。
+
 6. 完了したら、**[割り当て]** を選択し、**[閉じる]** を選択します。
 
 競合がある場合、メッセージが表示され、問題の内容と修正方法が示されます。 たとえば、競合するサービスを含むライセンスを選択した場合、各ライセンスに含まれるサービスを確認して再試行するように伝えるエラー メッセージが表示されます。
@@ -89,19 +94,20 @@ ms.locfileid: "59176375"
 
 ::: moniker range="o365-germany"
 
- 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">ライセンス</a>] ページに移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">ライセンス</a>] ページに移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">ライセンス</a>] ページに移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">ライセンス</a>] ページに移動します。
 
 ::: moniker-end
 
-
 2. [**ライセンス**] ページで、特定のユーザーの行を選択します。
+
 3. 右側のウィンドウで、アクセスを許可または削除するアプリとサービスを選択または選択解除します。
+
 4. 完了したら、[**保存**] を選択し、[**閉じる**] を選択します。
 
 ## <a name="use-the-active-users-page-to-assign-licenses"></a>[アクティブなユーザー] ページでライセンスを割り当てる
@@ -118,25 +124,27 @@ ms.locfileid: "59176375"
 
 ::: moniker range="o365-germany"
 
- 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> の順に選択します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- 1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> の順に選択します。
 
 ::: moniker-end
 
-
 2. ライセンスを割り当てるユーザー名の横にある円を選択します。
+
 3. 上部にある [**製品ライセンスの管理**] を選択します。
+
 4. [**製品ライセンスの管理**] ウィンドウで、[**さらに割り当てる: 既存のライセンスを保持し、さらに割り当てる**] \> [**次へ**] の順に選択します。
+
 5. [**ライセンス**] で、選択したユーザーに付与するライセンスのボックスを選択します。\
     既定では、そのライセンスに関連付けられているすべてのサービスがユーザーに自動的に割り当てられます。ユーザーが使用できるサービスを制限するには、そのユーザーに設定しないサービスのボックスを [オフ] の位置に切り替えます。
+
 6. ウィンドウの下部にある [**変更の保存**] をクリックします。  
     すべてのユーザーに十分なライセンスがない場合は、追加のライセンスを購入する必要がある場合があります。
-
 
 > [!NOTE]
 > 多数のユーザーにライセンスを割り当てる場合は、「[Azure Active Directory でのグループ メンバーシップによるユーザーへのライセンスの割り当て](/azure/active-directory/enterprise-users/licensing-groups-assign)」を使用します
@@ -151,19 +159,20 @@ ms.locfileid: "59176375"
 
 ::: moniker range="o365-germany"
 
- 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- 1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> の順に選択します。
 
 ::: moniker-end
 
-
 2. ライセンスを割り当てるユーザーの行を選択します。
+
 3. 右側のウィンドウで、[**ライセンスとアプリ**] を選択します。
+
 4. [**ライセンス**] セクションを展開し、割り当てるライセンスのボックスを選択して、[**変更の保存**] を選択します。
 
 ## <a name="assign-a-license-to-a-guest-user"></a>ゲスト ユーザーにライセンスを割り当てる
@@ -174,15 +183,25 @@ ms.locfileid: "59176375"
 > 次の手順を実行するには、全体管理者である必要があります。
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2067268" target="_blank">Azure Active Directory 管理センター</a>に移動します。
+
 2. ナビゲーション ウィンドウで、**[ユーザー]** を選択します。
+
 3. **[ユーザー | すべてのユーザー (プレビュー)]** ページで **[フィルターの追加]** を選択します。
+
 4. **[フィールドの選択**] メニューから **[ユーザーの種類]** を選択して、**[適用]** を選択します。
+
 5. 次のメニューから **[ゲスト]** を選択します。
+
 6. 結果のリストから、ライセンスが必要なユーザーを選択します。
+
 7. **[管理]** で **[ライセンス]** を選択します。
+
 8. **[割り当て]** を選択します。
+
 9. **[ライセンスの割り当ての更新]** ページで、ライセンスを割り当てる製品を選択します。
+
 10. 右側で、ゲスト ユーザーにアクセスを許可しないサービスのチェック ボックスをオフにします。
+
 11. **[保存]** を選択します。
 
 ## <a name="next-steps"></a>次の手順

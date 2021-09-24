@@ -16,12 +16,13 @@ ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: 8adb0be672c20b8e51c4178df63d7b25332455ce
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 16d61be33af8a4d30090470e066111ba2bcde0e9
+ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59356470"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59497994"
 ---
 # <a name="specify-the-cloud-protection-level"></a>クラウド保護レベルを指定する
 
@@ -76,7 +77,7 @@ ms.locfileid: "59356470"
     - **高 + ブロック レベルは** 、追加の保護対策を適用します (クライアントのパフォーマンスに影響を与え、誤検知の可能性が高い可能性があります)。
     - **ゼロトレランス ブロック レベルは、** 不明なすべての実行可能ファイルをブロックします。
 
-6. **[OK]** をクリックします。
+6. [**OK**] を選択します。
 
 7. 更新されたグループ ポリシー オブジェクトを展開します。 「 [グループ ポリシー管理コンソール」を参照してください。](/windows/win32/srvnodes/group-policy)
 

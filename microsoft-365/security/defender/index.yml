@@ -13,12 +13,12 @@ metadata:
   ms.author: macapara
   ms.date: 09/13/2019
   localization_priority: Priority
-  ms.openlocfilehash: bf167feb138be131ac565817767da2d1b1dd5be7
-  ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+  ms.openlocfilehash: e2aa6e0546af05d9265d2aece406f18bd498c997
+  ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/23/2021
-  ms.locfileid: "59491423"
+  ms.lasthandoff: 09/24/2021
+  ms.locfileid: "59497774"
 landingContent:
 - title: Microsoft 365 Defender
   linkLists:
@@ -68,13 +68,13 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Defender for Office 365 とは
+    - text: Microsoft Defender for Office 365 とは
       url: ../office-365-security/defender-for-office-365.md
-    - text: Defender for Office 365 サービス説明書
+    - text: Microsoft Defende for Office 365 サービス説明書
       url: /office365/servicedescriptions/office-365-advanced-threat-protection-service-description
-    - text: Microsoft 365 Defender の Defender for Office 365
+    - text: Microsoft Defender for Office 365 Microsoft 365 Defender
       url: microsoft-365-security-center-mdo.md
-    - text: ドメイン内のユーザー Office 365 Defender のリダイレクトMicrosoft 365 Defender
+    - text: Microsoft Defender をリダイレクトして、Office 365のMicrosoft 365 Defender
       url: microsoft-365-security-mdo-redirection.md
 - title: Microsoft Defender for Endpoint
   linkLists:

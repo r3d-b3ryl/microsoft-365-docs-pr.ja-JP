@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: 詳細については、Advanced eDiscoveryのソリューションMicrosoft 365。 この記事では、内部および外部Advanced eDiscovery Microsoft 365を管理するためのツールである、Microsoft 365の概要を説明します。 また、法的調査を管理するために、Advanced eDiscoveryを使用するビジネス上の理由も枠に入ります。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 59052e862e84b5cf9eabdf2cdce58e8e743887ee
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b2806bb7c0043a9e47b07e96ab53a62725673247
+ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216633"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59498330"
 ---
 # <a name="overview-of-microsoft-365-advanced-ediscovery"></a>概要 Microsoft 365 Advanced eDiscovery
 
@@ -109,11 +109,19 @@ Advanced eDiscovery が、いかに高いレベルで EDRM ワークフローを
 
 - **ユーザーごとのライセンス:** Advance 電子情報開示ケースでユーザーを保管担当者として追加するには、組織のサブスクリプションに応じて、そのユーザーに次のいずれかのライセンスを割り当てる必要があります。
 
-  - Microsoft 365: ユーザーには、Microsoft 365 E5 ライセンス、E5 コンプライアンス アドオン ライセンス、または E5 電子情報開示および監査アドオン ライセンスが割り当てられている必要があります。 Microsoft 365 Education A5 ライセンスを割り当てる必要があります。
+  - Microsoft 365: ユーザーには、次のいずれかを割り当てる必要があります。
+  
+    - Microsoft 365 E5、E5 コンプライアンス アドオン ライセンス、または E5 電子情報開示および監査アドオン
+
+    - Microsoft 365フロントライン ユーザーには、F5 コンプライアンス または F5 セキュリティ &が割り当てられている必要があります。
+
+    - Microsoft 365 Educationユーザーに A5 ライセンスを割り当てる必要があります
 
   - Office 365: ユーザーには、A5 ライセンスまたは Office 365 E5割りOffice 365 Education必要があります。
 
-   ライセンスを割り当てる方法については、「ユーザーにライセンスを割り当 [てる」を参照してください](/microsoft-365/admin/manage/assign-licenses-to-users)。
+ライセンスの詳細については、「比較」の表の「電子情報開示と監査」セクションをダウンロードして[Microsoft 365してください](https://go.microsoft.com/fwlink/?linkid=2139145)。
+
+ライセンスを割り当てる方法については、「ユーザーにライセンスを割り当 [てる」を参照してください](/microsoft-365/admin/manage/assign-licenses-to-users)。
 
 > [!NOTE]
 > ユーザーは、E5 ライセンスまたは A5 ライセンス (または適切なアドオン ライセンス) のみを保管担当者として追加する必要があります。Advanced eDiscoveryします。 IT 管理者、電子情報開示管理者、弁護士、パラリーガル、または Advanced eDiscovery を使用してケースを管理し、ケース データを確認する調査担当者は、E5、A5、またはアドオン ライセンスを必要とします。

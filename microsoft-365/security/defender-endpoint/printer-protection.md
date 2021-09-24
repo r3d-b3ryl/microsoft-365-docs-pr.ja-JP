@@ -13,12 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: d1a0b8af6dbf725623986582f5ee8e0b3912f0b5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: M365-security-compliance
+ms.openlocfilehash: e60ca593f9cea750473212daca834b2e63711ace
+ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179216"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59497610"
 ---
 # <a name="device-control-printer-protection"></a>デバイス制御のプリンター保護
 
@@ -64,7 +65,7 @@ Intune でのポリシー展開では、OMA-URI を使用してポリシーを�
 
 ****
 
-|役職|説明|CSP サポート | GPO サポート | ユーザー ベースのサポート | コンピューター ベースのサポート |
+|Title|説明|CSP サポート | GPO サポート | ユーザー ベースのサポート | コンピューター ベースのサポート |
 |---|---|:---:|:---:|:---:|:---:|
 |**デバイスコントロールの印刷制限を有効にする**|企業以外のプリンターを使用してユーザーの印刷をブロックする|はい|はい|はい|はい|
 |**承認済みの USB 接続印刷デバイスの一覧**\*|特定の USB プリンターを許可する|はい|はい|はい|はい|
