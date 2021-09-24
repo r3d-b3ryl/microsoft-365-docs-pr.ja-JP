@@ -19,19 +19,22 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: 一般法人向け Microsoft 365 のサブスクリプションが期限切れになった場合、無効になった場合、または解約された場合に、データがどうなるかについて説明します。
-ms.date: 04/08/2021
-ms.openlocfilehash: 55a34352da6deef2fd48542dd06859e0024e6966
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.date: 09/16/2021
+ms.openlocfilehash: 089caf11d590d38cc729466f53f91c1123f8b596
+ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180120"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59481002"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>一般法人向け Microsoft 365 のサブスクリプションが終了したとき、データとアクセスはどうなりますか?
 
 期限切れ、または解約を決定したためにサブスクリプションが終了した場合、Microsoft 365 サービス、アプリケーション、および顧客データへのアクセスは、サブスクリプションが完全にオフまたは *削除* される前に複数の状態を経ます。 この進行を認識している場合、手遅れになる前にサブスクリプションをアクティブな状態に戻すか、Microsoft 365 を終了する場合には、最終的に削除される前にデータをバックアップする必要があります。
 
 [Microsoft 365 サポート](../../business-video/get-help-support.md)に問い合わせる前に、この重要な情報をお読みください。
+
+> [!NOTE]
+> 一部のサブスクリプションでは、サブスクリプションを購入または更新した後、限られた時間内にのみキャンセルできます。 キャンセル期間が過ぎた場合は、定期的な請求をオフにして、期間の終了時にサブスクリプションをキャンセルします。
   
 ## <a name="what-happens-to-data-when-a-subscription-expires"></a>サブスクリプションが期限切れになると、データはどうなりますか?
 

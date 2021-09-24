@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なコンテンツを保持し不要なコンテンツを削除するのに役立つ、アイテム保持ポリシーと保持ラベルについて説明します。
-ms.openlocfilehash: 9415b7aa8e258264095de41a7f820751d3794a13
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3cb6548cee9b14de661faed2d4a2aa2f45de3b83
+ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59210923"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59480606"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの詳細
 
@@ -421,6 +421,9 @@ Microsoft 365 コンプライアンス センターから、[**データ分類**
 
 - SharePoint、OneDrive または Exchange で、ラベル付けされたアイテムがレコードまたは規制レコードとしてマークされ、完全に削除された場合:
     - **ファイルおよびページ アクティビティ** で、**レコードとしてマークされた削除済みファイル** を選択します
+
+- 処理レビュー担当者がアイテムの保持期間の終了に達したアイテムに対してアクションを実行する場合:
+    -  **[処理確認アクティビティ]** から、**[承認された破棄]**、**[延長保有期間]**、**[アイテムのラベル変更]**、または **[レビュー担当者の追加]** を選択します
 
 ## <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの PowerShell コマンドレット
 

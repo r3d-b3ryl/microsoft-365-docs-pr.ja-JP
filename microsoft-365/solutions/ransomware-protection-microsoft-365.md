@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: ランサムウェア、人が操作するランサムウェア、人間が操作するランサムウェア、HumOR、強要攻撃、ランサムウェア攻撃、暗号化、暗号ウイルス学
 description: ランサムウェア攻撃から Microsoft 365 リソースを保護する手順を説明します。
-ms.openlocfilehash: e7adafd8c60e55c7bb1acc60afcd4ca5cadedb85
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: 0e5238c4e675dbbec796a19ecbb2c8354f259c42
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59444662"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483617"
 ---
 # <a name="deploy-ransomware-protection-for-your-microsoft-365-tenant"></a>Microsoft 365 テナントにランサムウェア保護を展開する
 
@@ -82,7 +82,7 @@ Microsoft 365 テナントに侵入したランサムウェア攻撃者は、次
 
    管理者とエンド ユーザーが過去 30 日間の任意の時点からファイルを復元できる SharePoint および OneDrive の完全なセルフサービス回復ソリューション。
 
-   セキュリティと IT ヘルプデスク スタッフの負担を最小限に抑えるために、ユーザーに対して、[SharePoint と OneDrive の保持](/microsoft-365/compliance/retention-policies-sharepoint)の方法についてユーザーにトレーニングします。
+   セキュリティと IT ヘルプデスク スタッフの負担を最小限に抑えるために、[ファイルの復元](https://techcommunity.microsoft.com/t5/microsoft-onedrive-blog/announcing-new-onedrive-for-business-feature-files-restore/ba-p/147436)の方法についてユーザーにトレーニングします。
 
 
 OneDrive のファイルと SharePoint のファイルについては、大量攻撃に遭った場合、Microsoft は最大 14 日前までの時点にロールバックできます。

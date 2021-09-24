@@ -20,12 +20,12 @@ ms.custom:
 description: ユーザーは、ユーザーに配信されるべきであった検疫済みメッセージを Exchange Online Protection (EOP) で表示して管理する方法を学ぶことができます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 04a3831ec923ec24846eb6d0e76273d1010862c6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3fcd6cb3eb6aee387fd1e4943c837f855abc5f34
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214433"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483665"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>EOP のユーザーとして検疫済みメッセージを検索して解放する
 
@@ -38,7 +38,7 @@ ms.locfileid: "59214433"
 
 Exchange Online のメールボックスを使用している Microsoft 365 組織または Exchange Online のメールボックスを使用していないスタンドアロンの Exchange Online Protection (EOP) 組織では、危険な可能性があるメッセージまたは不要なメッセージは検疫済みメッセージとして保留されます。詳細については、「[EOP での検疫](quarantine-email-messages.md)」を参照してください。
 
-検疫されたメッセージの受信者が、管理者以外の通常のユーザーとしてメッセージに対して実行できる操作を次の表に示します。
+通常のユーザー (管理者ではない) として、検疫済みのメッセージの受信者として使用できる **既定の** 機能を次の表に示します。
 
 <br>
 
@@ -46,12 +46,29 @@ Exchange Online のメールボックスを使用している Microsoft 365 組�
 
 |検疫の理由|表示|リリース|削除|
 |---|:---:|:---:|:---:|
+|**スパム対策ポリシー**||||
 |バルク|![チェック マーク。](../../media/checkmark.png)|![チェック マーク。](../../media/checkmark.png)|![チェック マーク。](../../media/checkmark.png)|
 |スパム|![チェック マーク。](../../media/checkmark.png)|![チェック マーク。](../../media/checkmark.png)|![チェック マーク。](../../media/checkmark.png)|
-|フィッシング (高精度フィッシングではない)|![チェック マーク。](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|![チェック マーク。](../../media/checkmark.png)|
+|高確度スパム|![チェック マーク。](../../media/checkmark.png)|![チェック マーク。](../../media/checkmark.png)|![チェック マーク。](../../media/checkmark.png)|
+|フィッシング|![チェック マーク。](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|![チェック マーク。](../../media/checkmark.png)|
+|高確度のフィッシング||||
+|**フィッシング対策ポリシー**||||
+|EOP のスプーフィング インテリジェンス保護|![チェック マーク。](../../media/checkmark.png)|![チェック マーク。](../../media/checkmark.png)|![チェック マーク。](../../media/checkmark.png)|
+|Defender for Office 365 の偽装ユーザー保護|![チェック マーク。](../../media/checkmark.png)|![チェック マーク。](../../media/checkmark.png)|![チェック マーク。](../../media/checkmark.png)|
+|Defender for Office 365 の偽装ドメイン保護|![チェック マーク。](../../media/checkmark.png)|![チェック マーク。](../../media/checkmark.png)|![チェック マーク。](../../media/checkmark.png)|
+|Defender for Office 365 のメールボックス インテリジェンス保護|![チェック マーク。](../../media/checkmark.png)|![チェック マーク。](../../media/checkmark.png)|![チェック マーク。](../../media/checkmark.png)|
+|**マルウェア対策ポリシー**||||
+|マルウェアとして検疫済みの添付ファイルを含むメール メッセージ。||||
+|**Defender for Office 365 の安全な添付ファイル**||||
+|悪意のある添付ファイルを含むメール メッセージをマルウェアとして検疫する、安全な添付ファイル ポリシー。||||
+|悪意のあるファイルをマルウェアとして検疫する SharePoint、OneDrive、Microsoft Teams 向けの安全な添付ファイル。||||
+|**メール フロー ルール (トランスポート ルール)**||||
+|メール メッセージを検疫するメール フロー ルール。||||
 |
 
-検疫されたメッセージは、Microsoft 365 Defender ポータルで、または (管理者が設定している場合は) [エンドユーザーのスパム通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)で表示および管理します。
+_検疫ポリシー_ は、[サポートされている機能](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)でメッセージが検疫された理由に基づいて、検疫済みのメッセージに対してユーザーが実行できる操作を定義します。 既定の検疫ポリシーでは、前の表で説明したように、履歴機能を適用します。 管理者は、サポートされている機能で、ユーザーの制限を緩和したり厳しくしたりする機能を定義するカスタム検疫ポリシーを作成して適用できます。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。
+
+検疫済みのメッセージは、Microsoft 365 Defender ポータルで、または (管理者が設定している場合は) 検疫ポリシーからの検疫通知にて表示および管理します。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
@@ -59,13 +76,12 @@ Exchange Online のメールボックスを使用している Microsoft 365 組�
 
 - 管理者は、スパム対策ポリシーでメッセージを完全に削除する前に、メッセージを検疫で保持する期間を構成できます。 検疫期間が切れたメッセージは回復できません。 詳細については、「[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
 
-- 管理者は、スパム対策ポリシーで[ エンドユーザー スパム通知を有効にする](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)こともできます。 元のメッセージ受信者は、検疫されたスパム メッセージをこれらの通知から直接 *リリース* できます。 元のメッセージ受信者は、検疫済フィッシング メッセージ (高精度のフィッシング メッセージではありません) をこれらの通知から直接 *確認* することができます。 詳細については、「[EOP でのエンドユーザースパム通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)」を参照してください。
-
-- 高確度フィッシング、マルウェアとして検疫されるか、メール フロー ルール (別名: トランスポート ルール) により検疫されたメッセージは、管理者のみが管理でき、ユーザーに表示されません。 詳細については、「[EOP の管理者として検疫済みのメッセージやファイルを管理する](manage-quarantined-messages-and-files.md)」を参照してください。
-
-- メッセージを移動して、それを誤検知 (迷惑メールではない) として報告できるのは一度だけです。
+- 既定では、高確度フィッシング、マルウェアとして検疫されるか、メール フロー ルールにより検疫済みのメッセージは、管理者のみが管理でき、ユーザーには表示されません。 詳細については、「[EOP の管理者として検疫済みのメッセージやファイルを管理する](manage-quarantined-messages-and-files.md)」を参照してください。
 
 ## <a name="view-your-quarantined-messages"></a>検疫済みメッセージを表示する
+
+> [!NOTE]
+> 検疫済みのメッセージを表示する機能は、検疫済みメッセージの種類に適用される[検疫ポリシー](quarantine-policies.md)によって制御されます ([検疫の理由に対する既定の検疫ポリシー](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)である可能性があります)。
 
 1. Microsoft 365 Defender ポータルで、**[メールと共同作業]** \> **[レビュー]** \> **[検疫]** に移動します。
 2. **検疫** ページで、使用可能な列ヘッダーをクリックして結果を並べ替えることができます。 表示列を変更するには、[**列のカスタマイズ**] をクリックします。 既定値にはアスタリスク (<sup>\*</sup>) が付いています。
@@ -138,7 +154,7 @@ Exchange Online のメールボックスを使用している Microsoft 365 組�
 - **[送信者のアドレス]**
 - **[受信日時]**: メッセージを受信した日時。
 - **[件名]**
-- [**検疫の理由**]: メッセージが [**迷惑メール**]、[**バルク メール**]、または [**フィッシング**] として識別されたかを表示します。
+- **検疫の理由**
 - **ポリシーの種類**: ポリシーの種類。 たとえば、**スパム対策ポリシー**。
 - **受信者の数**
 - **[受信者]**: メッセージに複数の受信者が含まれている場合は、**[メッセージのプレビュー]** か **[メッセージ ヘッダーを表示]** をクリックして受信者の完全な一覧を表示する必要があります。
@@ -152,6 +168,9 @@ Exchange Online のメールボックスを使用している Microsoft 365 組�
 > ![検疫済みメッセージの詳細ポップアップの上矢印と下矢印。](../../media/quarantine-message-details-flyout-up-down-arrows.png)
 
 ### <a name="take-action-on-quarantined-email"></a>検疫済みメールを処理する
+
+> [!NOTE]
+> 検疫済みのメッセージに対してアクションを実行する機能は、検疫済みメッセージの種類に適用される[検疫ポリシー](quarantine-policies.md)によって制御されます ([検疫の理由に対する既定の検疫ポリシー](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)である可能性があります)。 このセクションでは、使用可能なすべてのアクションについて説明します。
 
 一覧から検疫済みメッセージを選択すると、詳細ポップアップで次のアクションを使用できます。
 

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーと保持ラベルを実装して組織のデータを管理しようと思っても、どこから始めればよいかかわりませんか? 開始するのに役立つ実用的なガイダンスをご覧ください。
-ms.openlocfilehash: a58b50aeea2cfd223e54d1dd4d2c4aa91026afe8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fdcae8f3879beea5ba7b80f34378b2a3b1452fcb
+ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191451"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59497622"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの使用を開始する
 
@@ -48,7 +48,7 @@ ms.locfileid: "59191451"
 
 アイテム保持ポリシーと保持ラベルはさまざまなサブスクリプションでサポートされており、ユーザーのライセンス要件は使用する機能によって異なります。
 
-Microsoft 365 コンプライアンス機能のメリットを得られるようにユーザーにライセンスを付与するためのオプションを確認するには、「[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)」を参照してください。 保持については、「[情報ガバナンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-governance)」セクション、および機能レベルのライセンス要件に関する PDF または Excel ダウンロード ファイルを参照してください。
+Microsoft 365 コンプライアンス機能のメリットを得られるようにユーザーにライセンスを付与するためのオプションを確認するには、「[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)」を参照してください。 保持については、「[情報ガバナンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-governance)」セクション、および機能レベルのライセンス要件に関する PDF ダウンロード ファイルを参照してください。
 
 ## <a name="permissions-required-to-create-and-manage-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルを作成して管理するために必要なアクセス許可
 

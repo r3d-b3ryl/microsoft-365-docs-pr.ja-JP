@@ -1,5 +1,5 @@
 ---
-title: 手順 2.  攻撃検出および対応を展開する
+title: 手順 2. 攻撃検出および対応を展開する
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -17,20 +17,22 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: ランサムウェア、人が操作するランサムウェア、人間が操作するランサムウェア、HumOR、強要攻撃、ランサムウェア攻撃、暗号化、暗号ウイルス学
 description: Microsoft 365 Defender とそのセキュリティ信号ソースを使用して、ランサムウェアの攻撃から Microsoft 365 リソースを保護します。
-ms.openlocfilehash: 7380e546733a299e7cf888946d502c43074822f5
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: 09b2e7930d6fbe0295dcf8343a559a19b680f547
+ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59444669"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59481098"
 ---
-# <a name="step-2-deploy-attack-detection-and-response"></a>手順 2.  攻撃検出および対応を展開する
+# <a name="step-2-deploy-attack-detection-and-response"></a>手順 2. 攻撃検出および対応を展開する
 
-ランサムウェア攻撃の検出と対応のために、これらのツールを有効にし、構成して使用します。
+Microsoft 365 テナントでのランサムウェア攻撃の検出と対応のために強く推奨される最初の手順として、Microsoft 365 Defender の機能を評価するための[試用環境を設定](/microsoft-365/security/defender/eval-overview)します。
+
+詳細については、これらのリソースを参照してください。
 
 | 機能 | 説明 | どこから始めるか | 検知と対応に活用する方法 |
 |:-------|:-----|:-------|:-------|
-| [Microsoft 365 Defender](/microsoft-365/security/defender) | シグナルを統合し、機能を単一のソリューションに調整する <br><br> セキュリティ専門家は、脅威の信号をつなぎ合わせ、脅威の全範囲と影響を把握することができます。 <br><br> 攻撃を防止または停止するためのアクションを自動化し、影響を受けたメールボックス、エンドポイント、およびユーザー ID を自己回復させる | [はじめに](/microsoft-365/security/defender/get-started) | [インシデント対応](/microsoft-365/security/defender/incidents-overview) |
+| [Microsoft 365 Defender](/microsoft-365/security/defender) | シグナルを統合し、機能を単一のソリューションに調整する <br><br> セキュリティ専門家が脅威信号を一緒に縫い合わせ、脅威の範囲と影響全体を特定します <br><br> 攻撃を防止または停止するためのアクションを自動化し、影響を受けたメールボックス、エンドポイント、およびユーザー ID を自己回復させる | [はじめに](/microsoft-365/security/defender/get-started) | [インシデント対応](/microsoft-365/security/defender/incidents-overview) |
 | [Microsoft Defender for Identity](/defender-for-identity/what-is) |  Active Directory ドメイン サービス (AD DS) のシグナルを利用するクラウドベースのセキュリティ インターフェイスを通して、組織で高度な脅威やセキュリティ侵害を受けた ID、内部関係者の不正な行動を特定し、検知し、調査します。 | [概要](/defender-for-identity/what-is) | [Microsoft Defender for Identity ポータルとの連携](/defender-for-identity/workspace-portal) |
 | [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security) | メール メッセージ、リンク (URL)、共同作業ツールによってもたらされる悪意のある脅威から組織を保護します。 <br><br> マルウェア、フィッシング、スプーフィング、その他の攻撃の種類に対する保護  | [概要](/microsoft-365/security/office-365-security/overview) | [脅威の捜索](/microsoft-365/security/office-365-security/threat-hunting-in-threat-explorer) |
 | [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint) | エンドポイント (デバイス) 全体での高度な脅威の検出および対応を有効にする | [概要](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)  | [エンドポイントでの検出と対応](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) |
@@ -76,8 +78,6 @@ ms.locfileid: "59444669"
 - Microsoft Cloud App Security
 
 Microsoft 365 Defender は、脅威のシグナルをアラートにまとめ、接続されたアラートをインシデントにまとめることで、セキュリティ アナリストがランサムウェア攻撃のフェーズをより迅速に検出し、調査して修復できるようにします。
-
-[試用版の環境を設定](/microsoft-365/security/defender/eval-overview)して、Microsoft 365 Defender の機能を評価することができます。
 
 ## <a name="resulting-configuration"></a>結果の構成
 

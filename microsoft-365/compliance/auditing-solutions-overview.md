@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Microsoft 365 組織内のユーザーや管理者のアクティビティを監査する方法をご紹介します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f89303e22432f2e3297bec01912710daf21d7379
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: afed2a8a12f158ff7e283e7d82d1abe7c35a0732
+ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164182"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59498114"
 ---
 # <a name="auditing-solutions-in-microsoft-365"></a>Microsoft 365 での監査ソリューション
 
@@ -103,6 +103,7 @@ Microsoft 365 には、基本的な監査と高度な監査の 2 つの監査ソ
 - Microsoft 365 Education A3 サブスクリプション
 - Microsoft 365 Government G3 サブスクリプション
 - Microsoft 365 Government G1 サブスクリプション
+- Microsoft 365 Frontline F1 または F3 サブスクリプション、または F5 セキュリティ アドオン
 - Office 365 Enterprise E3 サブスクリプション
 - Office 365 Enterprise E1 サブスクリプション
 - Office 365 Education A1 サブスクリプション
@@ -119,6 +120,7 @@ Microsoft 365 には、基本的な監査と高度な監査の 2 つの監査ソ
 - Microsoft 365 Government G5 サブスクリプション
 - Microsoft 365 G5 コンプライアンス アドオンが含まれている Microsoft 365 Government G5 サブスクリプション
 - Microsoft 365 G5 電子情報開示および監査アドオンが含まれている Microsoft 365 Government G5 サブスクリプション
+- Microsoft 365 Frontline F5 コンプライアンス、または F5 セキュリティおよびコンプライアンス アドオン
 - Office 365 Enterprise E5 サブスクリプション
 - Office 365 Education A5 サブスクリプション
 - Office 365 Advanced Compliance アドオンが含まれている Office 365 Enterprise E3 サブスクリプション (新しいサブスクリプションでは利用できなくなりました)

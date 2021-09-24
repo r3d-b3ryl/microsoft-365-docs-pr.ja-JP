@@ -20,7 +20,7 @@ ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: 9194196ab34e5e95b986ecbaba9be855969dec20
 ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/12/2021
 ms.locfileid: "59212223"
@@ -65,7 +65,7 @@ Linux 用 Defender for Endpoint は、次のチャネル (以下、*[チャネ�
 新機能をプレビューし、早期のフィードバックを提供するために、企業内の一部のデバイスを *insiders-fast* または *insiders-slow* のいずれかを使用するように構成することをお勧めします。
 
 > [!WARNING]
-> 初期インストール後にチャネルを切り替えるには、製品を再インストールする必要があります。 製品チャネルを切り替えるには: 既存のパッケージをアンインストールし、新しいチャネルを使用するようにデバイスを再構成し、このドキュメントの手順に従って新しい場所からパッケージをインストールします。
+> 初期インストール後にチャネルを切り替えるには、製品を再インストールする必要があります。製品チャネルを切り替えるには: 既存のパッケージをアンインストールし、新しいチャネルを使用するようにデバイスを再構成し、このドキュメントの手順に従って新しい場所からパッケージをインストールします。
 
 ### <a name="rhel-and-variants-centos-and-oracle-linux"></a>RHEL とバリエーション (CentOS および Oracle Linux)
 
@@ -291,7 +291,7 @@ Microsoft 365 Defender ポータルからオンボーディング パッケー�
 2. 最初のドロップダウン メニューで、オペレーティング システムとして **[Linux サーバー]** を選択します。 2 番目のドロップダウン メニューで、展開方法として **[ローカル スクリプト]** を選択します。
 3. **[オンボーディング パッケージをダウンロードする]** を選択します。 ファイルを WindowsDefenderATPOnboardingPackage.zip として保存します。
 
-    ![Microsoft 365 Defenderのスクリーンショットを参照してください。](images/portal-onboarding-linux.png)
+    ![Microsoft 365 Defender ポータルのスクリーンショット。](images/portal-onboarding-linux.png)
 
 4. コマンド プロンプトから、ファイルがあることを確認します。
     アーカイブの内容を抽出します。

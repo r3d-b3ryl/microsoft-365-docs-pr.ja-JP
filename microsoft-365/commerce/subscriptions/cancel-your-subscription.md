@@ -19,13 +19,13 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: ユーザー ライセンスが 25 未満の場合は、いつでも管理センターから一般法人向け Microsoft 365 の試用版または有料版サブスクリプションをキャンセルできます。
-ms.date: 04/08/2021
-ms.openlocfilehash: 900fd5f544a405b5f337623ba35a353cefaf9bab
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.date: 09/16/2021
+ms.openlocfilehash: 932cac44b9bf1b8632116d544cf4b33c0cb19a27
+ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221225"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59481038"
 ---
 # <a name="cancel-your-subscription"></a>サブスクリプションをキャンセルする
 
@@ -37,7 +37,9 @@ ms.locfileid: "59221225"
 *返金*: 日割り計算された残高は、次の請求サイクルの間に返金されます。
 
 > [!NOTE]
-> Microsoft 365 Business Premium など、同じ製品に対して複数のサブスクリプションがある場合、いずれかのサブスクリプションをキャンセルしても、購入したライセンスまたは他のサブスクリプションのサービスには影響しません。
+> 
+> - Microsoft 365 Business Premium など、同じ製品に対して複数のサブスクリプションがある場合、いずれかのサブスクリプションをキャンセルしても、購入したライセンスまたは他のサブスクリプションのサービスには影響しません。
+> - 一部のサブスクリプションでは、サブスクリプションを購入または更新した後、限られた時間内にのみキャンセルできます。 キャンセル期間が過ぎた場合は、定期的な請求をオフにして、期間の終了時にサブスクリプションをキャンセルします。
 
 ## <a name="before-you-begin"></a>開始する前に
 
@@ -61,12 +63,14 @@ ms.locfileid: "59221225"
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[お使いの製品]</a> ページの順に移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">お使いの製品</a>] ページの順に移動します。
 
 ::: moniker-end
 
 2. キャンセルするサブスクリプションを見つけて、3 つのドット (その他の操作) を選択してから、**[サブスクリプションのキャンセル]** を選択します。
+
 3. **[サブスクリプションのキャンセル]** ウィンドウで、キャンセルする理由を選択します。必要に応じて、フィードバックを提供します。
+
 4. **[保存]** を選択します。
 
 これでサブスクリプションは **[無効]** 状態で表示され、削除されるまで機能が制限されます。 一般法人向け Microsoft 365 の有料サブスクリプションをキャンセルした場合に予期される動作の詳細については、「[一般法人向け Microsoft 365 のサブスクリプションが終了したとき、データとアクセスはどうなりますか?](what-if-my-subscription-expires.md)」を参照してください。

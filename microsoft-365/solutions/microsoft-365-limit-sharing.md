@@ -16,16 +16,18 @@ search.appverid:
 - SPO160
 - MET150
 f1.keywords: NOCSH
-ms.custom: admindeeplinkMAC
+ms.custom:
+- admindeeplinkMAC
+- admindeeplinkTEAMS
 localization_priority: Priority
 recommendations: false
 description: Microsoft 365 で共有を制限または無効にするオプションについて説明します。
-ms.openlocfilehash: 3a8bdc738507760fcb7eff02692859f07dc8d5c9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 500d2dd8aa1a657cd3a71cb87b30a2faf63bb4c4
+ms.sourcegitcommit: dd4214a309c71292490743752da728cec7bffe88
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189020"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59479767"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>Microsoft 365 の共有を制限する
 
@@ -59,7 +61,7 @@ Microsoft 365 グループまたは Microsoft Teams チームで共有を制限�
 Teams のゲスト アクセスを禁止する場合は、Teams 管理センターでゲスト共有をオフにします。
 
 Teams のゲスト共有をオフにするには
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2066851" target="_blank">Teams 管理センター</a>で、**[組織全体の設定]** を展開して **[ゲスト アクセス]** をクリックします。
+1. Teams 管理センターで、**[組織全体の設定]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2173122" target="_blank">**[ゲスト アクセス]** タブ</a>を展開します。
 2. **[Teams のゲスト アクセスを許可する]** をオフにします。
 3. **[保存]** をクリックします。
 

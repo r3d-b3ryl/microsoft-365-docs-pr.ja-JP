@@ -17,12 +17,12 @@ ms.collection:
 description: 管理者が、Exchange Online Protection (EOP) で迷惑メール対策ポリシーを表示、作成、変更、削除する方法を説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f12a416a95f55a73bd0bbd80bfb1a4fe5121aeec
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2510ca3289cf6b6f7ed774b1d87aa2692e8b3f5d
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192361"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59484061"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>EOP でのスパム対策ポリシーの構成
 
@@ -154,7 +154,7 @@ Microsoft 365 Defender ポータルでカスタムのスパム対策ポリシー
      |**件名行の先頭にテキストを追加する**: メッセージの件名行の先頭にテキストを追加します。 メッセージはメールボックスに配信され、[迷惑メール] フォルダーに移動されます。<sup>1、2</sup> <p> テキストを後で **[件名行の先頭にこのテキストを追加する]** ボックスに入力します。|![チェック マーク。](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)||![チェック マーク](../../media/checkmark.png)|
      |**[メッセージをメール アドレスにリダイレクトする]:** メッセージを本来の受信者の代わりに他の受信者に送信します。 <p> 後で、受信者を **[このメール アドレスにリダイレクトする]** ボックスに指定してください。|![チェック マーク。](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|
      |**[メッセージの削除]:** 添付ファイルすべてを含め、メッセージ全体が確認なしで削除されます。|![チェック マーク。](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)||![チェック マーク](../../media/checkmark.png)|
-     |**[メッセージを隔離する]:** メッセージを本来の受信者に送信せず、検疫に送信します。 <p> 後で、検疫でメッセージを保持する期間を **[検疫]** ボックスに指定します。|![チェック マーク。](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)<sup>\*</sup>|![チェック マーク](../../media/checkmark.png)<sup>\*</sup>|![チェック マーク](../../media/checkmark.png)|
+     |**[メッセージを隔離する]:** メッセージを本来の受信者に送信せず、検疫に送信します。 <p> 後で、検疫でメッセージを保持する期間を **[検疫]** ボックスに指定します。 <p> 表示される **[ポリシーの選択]** ボックスで、スパム フィルター判定に対する検疫済みメッセージに適用される [検疫ポリシー](quarantine-policies.md)を指定します。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。<sup>3</sup>|![チェック マーク。](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)<sup>\*</sup>|![チェック マーク](../../media/checkmark.png)<sup>\*</sup>|![チェック マーク](../../media/checkmark.png)|
      |**アクションなし**|||||![チェック マーク](../../media/checkmark.png)|
      |
 
@@ -163,9 +163,10 @@ Microsoft 365 Defender ポータルでカスタムのスパム対策ポリシー
      > EOP がオンプレミスの Exchange メールボックスを保護するハイブリット環境では、オンプレミスの Exchange のメール フロー ルール (トランスポート ルールとも言う) を構成して、迷惑メール ルールによりメッセージが [迷惑メール] フォルダーに移動できるように、EOP スパム対策フィルター判定を解釈する必要があります。 詳細については、「[迷惑メール フォルダーにスパムを配信するように EOP を構成する](/exchange/standalone-eop/configure-eop-spam-protection-hybrid)」を参照してください。
      >
      > <sup>2</sup> この値をメール フロー ルールの条件として、フィルターやルールに使用することができます。
+     >
+     > <sup>3</sup> 空白の **[ポリシーを選択]** 値は、特定の判定に対する既定の検疫ポリシーが使用されることを意味します。 後でスパム対策ポリシーを編集するか、設定を表示すると、既定の検疫ポリシー名が表示されます。 スパム フィルター判定に使用される既定の検疫ポリシーの詳細については[この表](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)を参照してください。
 
    - **スパムを指定した日数隔離しておく**: スパム対策フィルター判定のアクションとして **[メッセージを検疫]** を選択した場合に、メッセージを検疫に保持する期間を指定します。 期間が終了すると、メッセージは削除されます。 既定値は 30 日です。 有効な値は 1 日から 30 日です。 検疫の詳細については、以下の記事を参照してください。
-
      - [EOP で隔離されたメッセージ](quarantine-email-messages.md)
      - [EOP の管理者として検疫済みメッセージとファイルを管理する](manage-quarantined-messages-and-files.md)
      - [EOP のユーザーとして検疫済みメッセージを検索して解放する](find-and-release-quarantined-messages-as-a-user.md)
@@ -191,7 +192,8 @@ Microsoft 365 Defender ポータルでカスタムのスパム対策ポリシー
      - **フィッシング メッセージに対して ZAP を有効にする**: 既定では、ZAP はフィッシング検出に対して有効になっていますが、チェックボックスをオフにすることで無効にできます。
      - **スパム メッセージに対して ZAP を有効にする**: 既定では、ZAP はスパム検出に対して有効になっていますが、チェックボックスをオフにすることで無効にできます。
 
-   - **エンド ユーザーのスパム通知を有効にする**: 詳細については、この記事の後半の「[エンドユーザー スパム通知の構成](#configure-end-user-spam-notifications)」セクションを参照してください。
+   > [!NOTE]
+   > エンドユーザーのスパム通知は、サポートされているすべての保護機能 (スパム対策ポリシー判定だけでなく) の検疫済みメッセージに関する情報を含む、検疫ポリシーの _検疫通知_ に置き換えられました。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。
 
    完了したら、**[次へ]** をクリックします。
 
@@ -313,36 +315,6 @@ Microsoft 365 Defender ポータルでカスタムのスパム対策ポリシー
 
 4. 完了したら、ポリシーの詳細ポップアップで **[閉じる]** をクリックします。
 
-### <a name="configure-end-user-spam-notifications"></a>エンドユーザーの迷惑メール通知の構成
-
-> [!NOTE]
-> エンド ユーザーのスパム通知は、グループではサポートされていません。
-
-スパム対策フィルター判定によりメッセージが検疫された場合に、受信者に送信されたメッセージに対する処理を知らせるために、エンドユーザーの迷惑メール通知を構成できます。 これらの通知の詳細については、「[EOP でのエンドユーザーの迷惑メール通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)」を参照してください。
-
-1. Microsoft 365 Defender ポータルで、**[ポリシー]** セクションの **[メールと共同作業]** \>**[ポリシーとルール]** \> **[脅威ポリシー]** \> **[スパム対策]** に移動します。
-
-2. **[迷惑メール対策ポリシー]** ページで、リストから迷惑メール対策ポリシーの名前をクリックして選択します。
-   - ユーザーが作成したカスタム ポリシーの場合、**[種類]** 列の値が **[カスタム 迷惑メール対策ポリシー]** になっています。
-   - 既定のポリシーには、**迷惑メール受信対策ポリシー (既定)** と名前が付けられます。
-
-3. 表示されるポリシーの詳細ポップアップで、**[アクション]** セクションで **[編集]** をクリックします。 **[アクション]** ポップアップが表示されたら、次の設定を構成します。
-
-   - **エンドユーザーのスパム通知を有効にする**: チェックボックスを選択して通知を有効にするか、チェックボックスをオフにして通知を無効にします。 チェックボックスを選択すると、以下の追加設定が表示されます。
-
-     - **エンドユーザーの迷惑メール通知の送信間隔 (日)**: 通知が送信される頻度を選択します。 既定値は 3 日です。 1 日から 15 日まで入力できます。
-
-       エンドユーザーのスパム通知は、24時間以内に 3 サイクルあります。これは、次の時間に始まります: 01:00 UTC、08:00 UTC、および 16:00 UTC。
-
-       > [!NOTE]
-       > 前回のサイクルで通知を受信できなかった場合は、後続のサイクルが通知をプッシュします。 これにより、同じ日に複数の通知が表示される場合があります。
-
-     - **言語**: ドロップダウンをクリックして、リストから使用可能な言語を選びます。 既定値は、英語で、**Default** です。
-
-   完了したら、**[保存]** をクリックします。
-
-4. ポリシーの詳細ポップアップに戻り、**[閉じる]** をクリックします。
-
 ## <a name="use-the-microsoft-365-defender-portal-to-remove-custom-anti-spam-policies"></a>Microsoft 365 Defender ポータルを使用して、カスタムのスパム対策ポリシーを削除する
 
 Microsoft 365 Defender ポータルを使用して、カスタム迷惑メール対策ポリシーを削除すると、スパム フィルター ルールと、それに対応するスパム フィルター ポリシーが両方とも削除されます。既定の迷惑メール対策ポリシーを削除することはできません。
@@ -366,7 +338,6 @@ Exchange Online PowerShell またはスタンドアロンの EOP PowerShell で�
 次の迷惑メール対策ポリシー設定は、PowerShell でのみ使用できます。
 
 - _MarkAsSpamBulkMail_ パラメーター (既定は `On`)。 この設定の影響については、この記事で前述した「[Microsoft 365 Defender ポータルを使用してスパム対策ポリシーを作成する](#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies)」セクションで説明されています。
-
 - 次の設定は、エンドユーザーの迷惑メール検疫通知の設定です。
   - _DownloadLink_ パラメーター。これにより、Outlook の迷惑メール報告ツールへのリンクを表示または非表示にできます。
   - _EndUserSpamNotificationCustomSubject_ パラメーター。これにより、通知の件名行をカスタマイズできます。
@@ -397,7 +368,7 @@ New-HostedContentFilterPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments
 
 この例では、次のような設定で Contoso Executives という名前のスパム フィルター ポリシーを作成します。
 
-- スパム対策フィルター判定が「スパム」または「高確度スパム」の場合は、メッセージを検疫します。
+- スパム フィルター判定がスパムまたは高確度迷惑メールである場合に、メッセージを検疫し、検疫済みメッセージには既定の [検疫ポリシー](quarantine-policies.md)を使用します (_SpamQuarantineTag_ または _HighConfidenceSpamQuarantineTag_ パラメーターは使用していません)。
 - BCL 7、8、または 9 で、「バルク メール」スパム対策フィルター判定のアクションがトリガーされます。
 
 ```PowerShell
@@ -405,6 +376,9 @@ New-HostedContentFilterPolicy -Name "Contoso Executives" -HighConfidenceSpamActi
 ```
 
 構文とパラメーターの詳細については、「[New-HostedContentFilterPolicy](/powershell/module/exchange/new-hostedcontentfilterpolicy)」を参照してください。
+
+> [!NOTE]
+> スパム対策フィルター ポリシーで使用する[検疫ポリシー](quarantine-policies.md)を指定する詳細な手順については、「[PowerShell を使用して、スパム対策ポリシーで検疫ポリシーを指定する](quarantine-policies.md#anti-spam-policies-in-powershell)」を参照してください。
 
 #### <a name="step-2-use-powershell-to-create-a-spam-filter-rule"></a>手順 2: PowerShell を使用してスパム フィルター ルールを作成する
 
@@ -499,6 +473,9 @@ Set-HostedContentFilterPolicy -Identity "<PolicyName>" <Settings>
 ```
 
 構文とパラメーターの詳細については、「[Set-HostedContentFilterPolicy](/powershell/module/exchange/set-hostedcontentfilterpolicy)」を参照してください。
+
+> [!NOTE]
+> スパム対策フィルター ポリシーで使用する[検疫ポリシー](quarantine-policies.md)を指定する詳細な手順については、「[PowerShell を使用して、スパム対策ポリシーで検疫ポリシーを指定する](quarantine-policies.md#anti-spam-policies-in-powershell)」を参照してください。
 
 ### <a name="use-powershell-to-modify-spam-filter-rules"></a>PowerShell を使用してスパム フィルター ルールを変更する
 

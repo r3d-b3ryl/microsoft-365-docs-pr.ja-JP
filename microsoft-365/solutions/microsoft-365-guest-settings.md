@@ -15,15 +15,16 @@ ms.collection:
 f1.keywords: NOCSH
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkTEAMS
 localization_priority: Priority
 recommendations: false
 description: 組織外のユーザーとの共有に影響を与える可能性がある、Microsoft 365 で使用できるゲスト共有設定について説明します。
-ms.openlocfilehash: db7622da1094dd1abf69752c6a0c41c374e80e9f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d3db87c0c01a9bddead9b7367b6ac64a7633e107
+ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163433"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59477625"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Microsoft 365 ゲストの共有設定のリファレンス
 
@@ -90,7 +91,7 @@ Teams のマスター ゲスト アクセスのスイッチである **[Teams �
 
 ### <a name="guest-access"></a>ゲスト アクセス
 
-**ナビゲーション:** [[Teams 管理センター]](https://admin.teams.microsoft.com) > [組織全体の設定] > [ゲスト アクセス]
+**ナビゲーション:** [[Teams 管理センター]](https://admin.teams.microsoft.com) > **[組織全体の設定]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2173122" target="_blank">**[ゲスト アクセス]**</a>
 
 ![Teams ゲスト アクセスのトグルのスクリーンショット](../media/teams-guest-access-toggle.png)
 
@@ -100,7 +101,7 @@ Teams のマスター ゲスト アクセスのスイッチである **[Teams �
 
 ### <a name="guest-calling"></a>ゲスト通話
 
-**ナビゲーション:** [[Teams 管理センター]](https://admin.teams.microsoft.com) > [組織全体の設定] > [ゲスト アクセス]
+**ナビゲーション:** [[Teams 管理センター]](https://admin.teams.microsoft.com) > **[組織全体の設定]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2173122" target="_blank">**[ゲスト アクセス]**</a>
 
 ![Teams ゲスト通話オプションのスクリーンショット](../media/teams-guest-calling-setting.png)
 
@@ -110,7 +111,7 @@ Teams のマスター ゲスト アクセスのスイッチである **[Teams �
 
 ### <a name="guest-meeting"></a>ゲスト会議
 
-**ナビゲーション:** [[Teams 管理センター]](https://admin.teams.microsoft.com) > [組織全体の設定] > [ゲスト アクセス]
+**ナビゲーション:** [[Teams 管理センター]](https://admin.teams.microsoft.com) > **[組織全体の設定]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2173122" target="_blank">**[ゲスト アクセス]**</a>
 
 ![Teams ゲスト会議設定のスクリーンショット](../media/teams-guest-meeting-settings.png)
 
@@ -122,7 +123,7 @@ Teams のマスター ゲスト アクセスのスイッチである **[Teams �
 
 ### <a name="guest-messaging"></a>ゲスト メッセージング
 
-**ナビゲーション:** [[Teams 管理センター]](https://admin.teams.microsoft.com) > [組織全体の設定] > [ゲスト アクセス]
+**ナビゲーション:** [[Teams 管理センター]](https://admin.teams.microsoft.com) > **[組織全体の設定]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2173122" target="_blank">**[ゲスト アクセス]**</a>
 
 ![Teams ゲスト メッセージング設定のスクリーンショット](../media/teams-guest-messaging-settings.png)
 

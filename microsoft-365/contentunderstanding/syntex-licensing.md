@@ -13,16 +13,19 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Priority
 description: SharePoint Syntex のライセンスの詳細
-ms.openlocfilehash: 1ab7ab290ca00ba6b47510dfc43f18412b528b0c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3c44545136a7ca67a63315a8378389212a160373
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59210813"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59484049"
 ---
 # <a name="licensing-for-sharepoint-syntex"></a>SharePoint Syntex のライセンス
 
 SharePoint Syntex を使用するには、組織に SharePoint Syntex のサブスクリプションが必要であり、各 Syntex ユーザーにライセンスが必要です。 将来 SharePoint Syntex サブスクリプションを解約すると (または試用期間が終了すると)、ユーザーはドキュメントの理解またはフォーム処理モデルを作成、公開、または実行できなくなります。 さらに、用語ストア レポート、SKOS 分類インポート、およびコンテンツの種類のプッシュは使用できなくなります。 モデル、コンテンツ、メタデータが削除されたり、サイトのアクセス許可が変更されたりすることはありません。
+ 
+> [!NOTE] 
+> SharePoint Syntex はアドオン ライセンスであり、ユーザーは Microsoft 365 のライセンスも持っている必要があります。
  
 ## <a name="tasks-requiring-a-license"></a>ライセンスが必要なタスク
  
@@ -33,7 +36,7 @@ SharePoint Syntex を使用するには、組織に SharePoint Syntex のサブ�
 - 文書理解またはフォーム処理モデルが適用されているライブラリへコンテンツをアップロードする
 - 文書理解モデルをオンデマンドで実行する
 - 文書理解またはフォーム処理モデルを使用してファイルから抽出されたメタデータを表示する。 (ユーザーは、ファイルの移動先に関係なく、処理されたファイルに関連付けられたメタデータにアクセスして使用するためのライセンスが必要です。)
-- プレミアム分類サービスを使用します。 (プレミアム分類サービスは、SKOS ベースの用語セットのインポート、エンタープライズ コンテンツ タイプのハブ関連サイトへのプッシュ、および用語ストア レポートで構成されます。)
+- プレミアム分類サービスを使用します。(プレミアム分類サービスは、SKOS ベースの用語セットのインポート、エンタープライズ コンテンツ タイプのハブ関連サイトへのプッシュ、および用語ストア レポートで構成されます。)
 
 ライセンスのないユーザーは、コンテンツ センターへのアクセスを許可され、そこで文書理解モデルを作成できますが、それをドキュメント ライブラリに適用することはできません。
  

@@ -288,6 +288,8 @@
           href: mfi-slow-mail-flow-rules-insight.md
         - name: 管理者として検疫済みメッセージとファイルを管理する
           href: manage-quarantined-messages-and-files.md
+        - name: 検疫ポリシー
+          href: quarantine-policies.md
         - name: 制限されたユーザー ポータルからブロックされたユーザーを削除する
           href: removing-user-from-restricted-users-portal-after-spam.md
         - name: 無効化ポータルを使って、受信拒否リストから自分自身を削除する
@@ -330,7 +332,7 @@
           href: backscatter-messages-and-eop.md
         - name: Bulk Complaint Level (BCL)
           href: bulk-complaint-level-values.md
-        - name: エンドユーザーのスパム通知
+        - name: 検疫通知
           href: use-spam-notifications-to-release-and-report-quarantined-messages.md
         - name: 送信方向の配信のプール
           href: high-risk-delivery-pool-for-outbound-messages.md

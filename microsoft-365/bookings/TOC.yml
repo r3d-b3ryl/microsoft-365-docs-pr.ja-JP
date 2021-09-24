@@ -31,8 +31,10 @@
           href: set-language-time-zones.md
     - name: Bookings アプリを取得する
       href: get-bookings-app.md
-    - name: Microsoft Teams での Bookings アプリと仮想訪問
+    - name: Microsoft Teams で Bookings アプリを管理する
       href: /microsoftteams/bookings-app-admin?bc=%2fmicrosoft-365%2fbookings%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fbookings%2ftoc.json
+    - name: Microsoft Teams と Bookings アプリを使用した仮想訪問
+      href: /microsoftteams/expand-teams-across-your-org/bookings-virtual-visits
     - name: 比較表 - Web アプリと Teams アプリ
       href: comparison-chart.md
     - name: 予約カレンダーを削除する

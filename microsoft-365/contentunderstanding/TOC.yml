@@ -26,10 +26,12 @@
       href: rename-an-extractor.md
     - name: 説明の種類
       href: explanation-types-overview.md
-    - name: モデルを適用する
+    - name: ドキュメント理解モデルの適用
       href: apply-a-model.md
-    - name: フォーム処理モデルを作成する
+    - name: フォーム処理モデルを作成
       href: create-a-form-processing-model.md
+    - name: モデルを公開して発見する
+      href: model-discovery.md
     - name: 保持ラベルを適用する
       href: apply-a-retention-label-to-a-model.md
     - name: 秘密度ラベルを適用する
@@ -60,6 +62,8 @@
           href: solution-manage-contracts-step3.md
 - name: 設定と管理
   items:
+    - name: SharePoint Syntex のライセンス
+      href: syntex-licensing.md
     - name: SharePoint Syntexを設定する
       href: set-up-content-understanding.md
 - name: コンテンツサービス

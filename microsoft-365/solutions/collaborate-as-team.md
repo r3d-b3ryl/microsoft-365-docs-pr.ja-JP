@@ -15,16 +15,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
+- admindeeplinkTEAMS
 localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: Teams のゲストとのタスク、会話、ドキュメントの共同作業を行うためチームをセットアップするのに必要な Microsoft 365 の構成手順について説明します。
-ms.openlocfilehash: 142f8d9adf9423d1c9a2d8e59405fd4f39dfb751
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e0d787691ee7ec580efcbd61d6bab7bd1052e54c
+ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59217893"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59477617"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>チームでゲストと共同作業する
 
@@ -72,7 +73,7 @@ Teams ゲスト アクセスの設定を行うには
 1. [https://admin.microsoft.com](https://admin.microsoft.com) で、Microsoft 365 管理センターにログインします。
 2. 左側のナビゲーション ウィンドウで [**すべて表示**] をクリックします。
 3. [**管理センター**] で、[**Teams**] をクリックします。
-4. Teams 管理センターの左側のナビゲーション ウィンドウで、[**組織全体の設定**] を展開して [**ゲスト アクセス**] をクリックします。
+4. Teams 管理センターの左側のナビゲーション ウィンドウで、**[組織全体の設定]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2173122" target="_blank">**[ゲスト アクセス]**</a> を選択します。
 5. [**Teams でのゲスト アクセスを許可する**] が [**オン**] に設定されていることを確認します。
 6. 追加のゲスト設定に必要な変更を加えて、[**保存**] をクリックします。
 

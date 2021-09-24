@@ -17,14 +17,15 @@ ms.collection:
 - m365solution-securecollab
 ms.custom:
 - Ent_Solutions
+- admindeeplinkTEAMS
 recommendations: false
 description: ベースライン レベルの保護を使用してチームを展開する方法について説明します。
-ms.openlocfilehash: 24bdb7a5d5f4c124365a6b5b7cdc67d53adf8278
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a21aa9bf3aeb5d5f5cb2efbc90589cafe2a11be1
+ms.sourcegitcommit: dd4214a309c71292490743752da728cec7bffe88
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214233"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59479743"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>ベースライン保護を使用してチームを構成する
 
@@ -53,7 +54,7 @@ Teams ゲスト アクセスの設定を行うには
 1. [https://admin.microsoft.com](https://admin.microsoft.com) で、Microsoft 365 管理センターにログインします。
 2. 左側のナビゲーションで [**すべて表示**] をクリックします。
 3. [**管理センター**] で、[**Teams**] をクリックします。
-4. Teams 管理センターの左側のナビゲーションで、[**組織全体の設定**] を展開して [**ゲスト アクセス**] をクリックします。
+4. Teams 管理センターの左側のナビゲーションで、**[組織全体の設定]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2173122" target="_blank">**[ゲスト アクセス]**</a> を展開します。
 5. [**Teams でのゲスト アクセスを許可する**] が [**オン**] に設定されていることを確認します。
 6. 追加のゲスト設定に必要な変更を加えて、[**保存**] をクリックします。
 

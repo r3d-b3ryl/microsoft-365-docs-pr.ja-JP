@@ -40,6 +40,8 @@
           href: communication-compliance-investigate-remediate.md
         - name: 通信コンプライアンスの機能のリファレンス
           href: communication-compliance-feature-reference.md
+        - name: SIEM ソリューションのコミュニケーション コンプライアンス
+          href: communication-compliance-siem.md
         - name: ケース スタディ - Contoso は不快な言葉ポリシーをすばやく構成します
           href: communication-compliance-case-study.md
     - name: インサイダー リスクの管理
