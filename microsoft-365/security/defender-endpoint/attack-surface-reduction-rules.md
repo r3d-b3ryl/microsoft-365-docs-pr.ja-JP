@@ -17,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 5fdabb81541de9cec5b35641d25c6c10098015ca
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 3a336e1b8c8fe9c8a15925a3c28d7861c6e4bb10
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59490143"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776550"
 ---
 # <a name="attack-surface-reduction-rules"></a>攻撃面の減少ルール
 
@@ -109,7 +109,7 @@ ms.locfileid: "59490143"
 >
 > PowerShell を使用してこのルールを [構成できます](enable-attack-surface-reduction.md#powershell)。
 >
-> ドライバーを調べるには、この Web サイトを使用して分析 [用のドライバーを送信します](https://www.microsoft.com/wdsi/driversubmission)。
+> ドライバーを調べるには、この Web サイトを使用して分析 [用のドライバーを送信します](https://www.microsoft.com/en-us/wdsi/driversubmission)。
 
 Intune 名: `Block abuse of exploited vulnerable signed drivers`
 

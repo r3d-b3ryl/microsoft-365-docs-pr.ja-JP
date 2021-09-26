@@ -10,7 +10,6 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - Adm_O365
-- Adm_TOC
 search.appverid:
 - BCS160
 - MET150
@@ -24,12 +23,12 @@ ms.custom:
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: 組織のユーザー向けMicrosoft OfficeクライアントにOfficeアップグレードする方法について学習します。
 ms.topic: article
-ms.openlocfilehash: 877659e420079ed607adc13e5bbe44bdc979f5ac
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7e4b8ce182ff2eefea514fc8621e23e308658e47
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59210254"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776250"
 ---
 # <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>ビジネス ユーザー Microsoft 365最新のクライアントにアップグレードOfficeする
 

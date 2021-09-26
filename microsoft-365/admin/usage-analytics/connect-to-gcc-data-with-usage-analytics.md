@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -22,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Microsoft 365 Government Community Cloud (GCC) テナントの Microsoft 365 Usage Analytics テンプレート アプリを使用してデータに接続するPower BI。
-ms.openlocfilehash: 2a0ea6985b9f9d09498e4ad086bf89f529b24c17
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a57d536d7210e0ba927824d5403792a3e5090f98
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219463"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776706"
 ---
 # <a name="connect-to-microsoft-365-government-community-cloud-gcc-data-with-usage-analytics"></a>Connect分析でMicrosoft 365 Government Community Cloud (GCC) データを取得する方法
 

@@ -11,16 +11,15 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: デバイス上のユーザーが検出した脅威を確認Microsoft Defender ウイルス対策管理するWindows 10します。
-ms.openlocfilehash: d1a611143af1f438989a549133c6f7c1e7502357
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fe03b7a7a72b3908b19da71544853a671fc90f52
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178624"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59772784"
 ---
 # <a name="review-detected-threats-and-take-action"></a>検出された脅威を確認して対処する
 
@@ -77,8 +76,8 @@ IT プロフェッショナル/管理者は、Intune に登録されている複
 
 | アクション | 説明 |
 |--|--|
-| 保護の構成 | 脅威保護ポリシーを構成する必要があります。 ポリシー構成ページに移動するリンクを選択します。<br><br>サポートが必要な場合 「[デバイス セキュリティを管理する」を参照](/mem/intune/protect/endpoint-security-policy)してください。Microsoft Intune。 |
-| ポリシーを更新する | ウイルス対策ポリシーとリアルタイム保護ポリシーを更新または構成する必要があります。 リンクを選択して、ポリシー構成ページに移動します。<br><br>サポートが必要な場合 「[デバイス セキュリティを管理する」を参照](/mem/intune/protect/endpoint-security-policy)してください。Microsoft Intune。 |
+| 保護の構成 | 脅威保護ポリシーを構成する必要があります。 ポリシー構成ページに移動するリンクを選択します。<br><br>お困りの際は、 「[デバイス セキュリティを管理する」を参照](/mem/intune/protect/endpoint-security-policy)してください。Microsoft Intune。 |
+| ポリシーを更新する | ウイルス対策ポリシーとリアルタイム保護ポリシーを更新または構成する必要があります。 リンクを選択して、ポリシー構成ページに移動します。<br><br>お困りの際は、 「[デバイス セキュリティを管理する」を参照](/mem/intune/protect/endpoint-security-policy)してください。Microsoft Intune。 |
 | クイック スキャンの実行 | レジストリ キーや既知のスタートアップ フォルダーなど、マルウェアが登録される可能性がある一般的な場所に焦点を当て、デバイスでWindowsを開始します。 |
 | フル スキャンの実行 | デバイス上で完全なウイルス対策スキャンを開始し、マルウェアが登録される可能性がある一般的な場所と、デバイス上のすべてのファイルとフォルダーを含む場所に注目します。 結果は、Microsoft エンドポイント マネージャー に[送信されます](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager)。 |
 | ウイルス対策の更新 | ウイルス対策およびマルウェア対策保護 [のセキュリティ インテリジェンス更新](https://go.microsoft.com/fwlink/?linkid=2149926) プログラムを取得するには、デバイスが必要です。 |

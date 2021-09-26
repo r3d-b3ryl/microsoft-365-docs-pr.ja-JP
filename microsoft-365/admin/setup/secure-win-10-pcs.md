@@ -13,6 +13,7 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management
 - TRN_SMB
+- Adm_TOC
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -23,12 +24,12 @@ search.appverid:
 - BCS160
 - MET150
 description: デバイスをセットアップした後Windows 10 PC をセキュリティで保護する方法についてMicrosoft 365 Business Premium。
-ms.openlocfilehash: 23b2879b22299ad6c43ae5a8e03ee8060ec26789
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7579ec2b846f58fefcd61c744a56808ece591dc7
+ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178471"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59786215"
 ---
 # <a name="secure-windows-10-computers"></a>Windows 10 コンピューターをセキュリティで保護する
 

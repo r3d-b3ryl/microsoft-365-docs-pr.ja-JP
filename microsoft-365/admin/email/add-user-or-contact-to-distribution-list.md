@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -22,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: ba256583-03ca-429e-be4d-a92d9c221ad6
 description: 従業員、パートナー、Microsoft 365などのユーザーまたは連絡先をメール配布グループに追加する方法について学習します。
-ms.openlocfilehash: af7581a7541835185a7cc8df12dcc58b779243ca
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2ef6e1d389ad902a767786a480b05345f26e61f9
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176583"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59774846"
 ---
 # <a name="add-a-user-or-contact-to-a-distribution-group"></a>配布グループにユーザーまたは連絡先を追加する
 
@@ -51,7 +50,7 @@ ms.locfileid: "59176583"
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/ed4e6095-9a6a-4d3d-999d-698c39bb7ec8?autoplay=false]
   
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 メールを[配布グループとして送信する方法については、Microsoft 365。](../manage/send-email-as-distribution-list.md)
 

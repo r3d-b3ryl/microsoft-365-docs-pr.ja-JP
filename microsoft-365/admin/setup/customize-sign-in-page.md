@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
@@ -23,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: a1229cdb-ce19-4da5-90c7-2b9b146aef0a
 description: '[サインイン] Microsoft 365を使用して、サインイン ページをカスタマイズAzure Active Directory。 サインイン ページに図、ロゴ、およびテキストを追加できます。'
-ms.openlocfilehash: 1c805e8f37081b2d09e821b24ce2f83816b23e3d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3d4e84ad15d65743b2f3c0593092f14233ddf380
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178527"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776430"
 ---
 # <a name="add-your-company-branding-to-the-sign-in-page"></a>[サインイン] ページに会社のブランドを追加する
 
@@ -50,7 +49,7 @@ Microsoft 365 for business、Microsoft Dynamics CRM Online、Enterprise Mobility
     
 サインイン ページの他に、Azure のアクセス パネル ページもカスタマイズできます。
   
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 ブランドを追加する準備ができたら、Azure コンテンツ セット内のカスタマイズ オプションをご覧ください。[Add company branding to your Sign-in and Access Panel pages (会社のブランドをサインイン ページとアクセス パネル ページに追加する)](/azure/active-directory/fundamentals/customize-branding)
 

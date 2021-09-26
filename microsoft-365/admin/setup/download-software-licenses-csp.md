@@ -13,6 +13,7 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 search.appverid: MET150
 ms.custom:
 - AdminSurgePortfolio
@@ -20,20 +21,20 @@ ms.custom:
 - admindeeplinkMAC
 description: CSP プログラムで購入した永続的なソフトウェアのソフトウェアおよび製品ライセンス キーをダウンロードするクラウド ソリューション プロバイダー説明します。
 ms.date: 01/27/2021
-ms.openlocfilehash: 5dd2e17685746859768a14d61537871a75fe6698
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ae433609e13aa96344aacd2ba1944efa54b42cf6
+ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178512"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59786202"
 ---
 # <a name="download-perpetual-software-and-product-license-keys"></a>永久ソフトウェアと製品のライセンス キーをダウンロードする
 
 この記事では、CSP プログラムを通じて購入された永続的なソフトウェアのソフトウェアおよび製品ライセンス キーをダウンロードクラウド ソリューション プロバイダー説明します。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>開始する前に
 
-この記事の手順を実行するには、グローバル管理者である必要があります。 詳細については、[「管理者の役割について」](../add-users/about-admin-roles.md) を参照してください。
+この記事の手順を実行するには、グローバル管理者である必要があります。 詳細については、「[管理者の役割について](../add-users/about-admin-roles.md)」を参照してください。
 
 ## <a name="download-software-and-product-license-keys"></a>ソフトウェアおよび製品ライセンス キーのダウンロード
 

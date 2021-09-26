@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - Adm_O365_Setup
 ms.custom:
 - AdminSurgePortfolio
@@ -24,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: ドメイン名を購入する方法については、Microsoft 365。
-ms.openlocfilehash: 4d2a6546703c93f4b4d6a55e82c309120e384ead
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 54bf5cf45e1e6dbbcfe8af0e5b8839cf68104c43
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176487"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59775578"
 ---
 # <a name="buy-a-domain-name"></a>ドメイン名を購入する
 

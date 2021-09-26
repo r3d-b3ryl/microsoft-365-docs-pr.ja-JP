@@ -13,7 +13,6 @@ monikerRange: o365-worldwide
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - Adm_O365_Setup
 ms.custom:
 - AdminSurgePortfolio
@@ -23,12 +22,12 @@ search.appverid:
 - MOE150
 description: 365 Business Cloud PC のセットアップWindowsトラブルシューティングする方法について説明します。
 ms.date: 08/13/2021
-ms.openlocfilehash: cae971187e188e6213242481b9cfaeb7dc21c7f2
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: b1fa084debc71209e58530a10b79ea4f0ef29003
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59444129"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59774137"
 ---
 # <a name="troubleshoot-windows-365-business-cloud-pc-setup-issues"></a>365 Windows PC セットアップの問題のトラブルシューティング
 
@@ -55,7 +54,7 @@ ms.locfileid: "59444129"
 4. [ **ユーザーごとのデバイスの最大数] に** 値を入力します。
 5. 変更を加えた場合は、[保存] を **選択します**。
 
-## <a name="step-2-verify-that-the-windows-365-bprt-permanent-user-system-account-is-active"></a>手順 2。 365 BPRT Windowsシステム アカウントがアクティブな状態を確認する
+## <a name="step-2-verify-that-the-windows-365-bprt-permanent-user-system-account-is-active"></a>手順 2. 365 BPRT Windowsシステム アカウントがアクティブな状態を確認する
 
 Windows 365 ライセンスが組織で初めて割り当てられると **、Windows 365 BPRT 常設** ユーザーというシステム アカウントが Azure AD で自動的に作成されます。 このアカウントを削除したり、アカウントに変更を加え (名前や UPN の変更など) したりしない。 システム アカウントが変更または削除された場合、セットアップは失敗します。 このシステム アカウントは、スムーズなセットアップ プロセスを保証し、Windows 365 Business のスコープサービス機能を超えて、書き込み機能や組織へのアクセス権を持たなかったりします。 このシステム アカウントを削除または変更する場合は、Windows 365 Business ライセンスを持つアカウントを使用して windows365.microsoft.com にログインし、トークンが更新するまで 12 時間待機する必要があります。
 

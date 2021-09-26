@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
@@ -21,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 管理センター の 「Office の新機能」機能を使用して、ユーザーが Office アプリ on Windows で [ヘルプ > 新機能] を選択した場合に表示または非表示にする Office 機能を決定します。
-ms.openlocfilehash: 31506f05054d6ee98eae0e1f075618d866d3934c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 357993a3a907edcccdc74d29d13a6eab464690aa
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178895"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59773102"
 ---
 # <a name="manage-which-office-features-appear-in-whats-new"></a>新機能にOffice機能を管理する
 

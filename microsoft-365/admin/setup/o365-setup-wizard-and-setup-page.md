@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - Adm_O365_Setup
 ms.custom: AdminSurgePortfolio
 search.appverid:
@@ -20,12 +19,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: セットアップ ウィザードと [セットアップ] ページの違いについて説明します。
-ms.openlocfilehash: a4936dded4e13b6cf748a1b4d33513480bf382a9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 85cf10d767655b1ff5b211b130cc0749558c350c
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176207"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59772815"
 ---
 # <a name="difference-between-the-setup-wizard-and-the-setup-page"></a>セットアップ ウィザードと [セットアップ] ページの違い
 

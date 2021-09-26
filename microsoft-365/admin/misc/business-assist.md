@@ -9,19 +9,18 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection:
-- Adm_TOC
+ms.collection: ''
 ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
 description: ビジネス アシスト プログラムと、ビジネス向けサービスのヘルプと使用状況の向上に組織がどのように役立Microsoft 365します。
-ms.openlocfilehash: fefefe5dc587674609201be13f19cd6223b80c49
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f6c5b1ddfa6028d0748d3f01237e91dd4ac8507e
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178840"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59774197"
 ---
 # <a name="business-assist-for-microsoft-365"></a>Microsoft 365 のビジネスサポート
 

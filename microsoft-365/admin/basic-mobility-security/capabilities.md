@@ -12,19 +12,18 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:
 - MET150
 description: 基本的なモビリティとセキュリティは、モバイル デバイスのセキュリティ保護と管理に役立ちます。
-ms.openlocfilehash: bd400f81b3d125b6d6100ecf2ed06f536106d1f0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e2a8661766aa5d5ae7f257cc7c76d67949d9cffe
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176904"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59773945"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>基本的なモビリティとセキュリティの機能
 
@@ -61,7 +60,7 @@ Basic Mobility and Security を使用すると、次のデバイスをセキュ�
 
 次の表に示すさまざまな種類のモバイル デバイスでサポートされているアプリは、ユーザーのデバイスに適用される新しいモバイル デバイス管理ポリシーが作成され、ユーザーがデバイスを以前に登録しなかった場合に、Basic Mobility and Security に登録するようユーザーに求めるメッセージを表示します。 ポリシーの設定方法によっては、ユーザーのデバイスがポリシーに準拠しない場合、ユーザーがこれらのアプリの Microsoft 365 リソースにアクセスできないか、アクセス権を持っている可能性がありますが、Microsoft 365 はポリシー違反を報告します。
 
-|**Product**|**iOS 10.0 以降**|**Android 5.0 以降**|
+|**製品**|**iOS 10.0 以降**|**Android 5.0 以降**|
 |:-----|:-----|:-----|
 |**Exchange Exchange ActiveSync** バージョン 14.1 以降を使用する、組み込みの電子 Exchange ActiveSyncメールアプリとサードパーティ製アプリ (TouchDown など) が含まれています。 |メール |メール |
 |**Office**  と  **OneDrive for Business** |Outlook </br>OneDrive </br>Word </br>Excel </br>PowerPoint|**電話とタブレットの場合**:<br/>Outlook <br/> OneDrive <br/> Word <br/> Excel <br/> PowerPoint <br/> **電話のみ:** <br/> Office Mobile |
@@ -103,13 +102,13 @@ Basic Mobility and Security を使用すると、次のデバイスをセキュ�
 
 |**設定名**|**iOS 7.1 以降**|**Android 5 以降**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
-|パスワードを要求|はい|はい|はい|
-|シンプルなパスワードを禁止|はい|いいえ|なし|
-|英数字のパスワードを要求|はい|いいえ|なし|
-|パスワードの最小文字数 |はい|はい|はい|
-|デバイスがワイプされるまでのサインイン失敗回数 |はい|はい|はい|
-|デバイスがロックされるまでのアイドル時間 (分) |はい|はい|はい|
-|パスワードの有効期限 (日) |はい|はい|はい|
+|パスワードを要求|はい|はい|必要|
+|シンプルなパスワードを禁止|必要|いいえ|いいえ|
+|英数字のパスワードを要求|はい|いいえ|いいえ|
+|パスワードの最小文字数 |はい|はい|必要|
+|デバイスがワイプされるまでのサインイン失敗回数 |はい|はい|必要|
+|デバイスがロックされるまでのアイドル時間 (分) |はい|はい|必要|
+|パスワードの有効期限 (日) |はい|はい|必要|
 |パスワードの履歴を記憶して再利用を防止 |はい|はい|はい|
 
 ## <a name="encryption-settings"></a>暗号化の設定
@@ -164,7 +163,7 @@ Basic Mobility and Security を使用すると、次のデバイスをセキュ�
 
 |**設定名**|**iOS 7.1 以降**|**Android 5 以降**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
-|リムーバブル記憶域との接続の禁止 |はい|はい|いいえ|
+|リムーバブル記憶域との接続の禁止 |はい|必要|いいえ|
 |Bluetooth 接続の禁止 |はい|はい|いいえ|
 
 ## <a name="additional-settings"></a>その他の設定
@@ -177,12 +176,12 @@ Basic Mobility and Security を使用すると、次のデバイスをセキュ�
 |RegionRatings|はい|いいえ|
 |MoviesRatings|はい|いいえ|
 |TVShowsRating |はい|いいえ|
-|AppsRatings |はい|いいえ|
-|AllowVoiceDialing |はい|いいえ|
+|AppsRatings |必要|いいえ|
+|AllowVoiceDialing |必要|いいえ|
 |AllowVoiceAssistant |はい|いいえ|
-|AllowAssistantWhileLocked  |はい|いいえ|
+|AllowAssistantWhileLocked  |必要|いいえ|
 |AllowPassbookWhileLocked |はい|いいえ|
-|MaxPasswordGracePeriod |はい|いいえ|
+|MaxPasswordGracePeriod |必要|いいえ|
 |PasswordQuality |いいえ|はい|
 |SystemSecurityTLS  |はい|いいえ|
 |WLANEnabled  |いいえ|いいえ|

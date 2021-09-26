@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -26,12 +25,12 @@ search.appverid:
 - SPB160
 ms.assetid: eb3e840f-ed60-4461-81f5-12381c132b89
 description: さまざまな種類のグループについて、およびグループのさまざまなコラボレーション機能でグループを使用する方法についてMicrosoft 365。
-ms.openlocfilehash: bb5eca7ae7ad01488c13222984eee349e5554d26
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3e3cdd22f78711f74375c7e20e2fd0702c075bcd
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176511"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59775566"
 ---
 # <a name="email-collaboration"></a>メールによる共同作業
 

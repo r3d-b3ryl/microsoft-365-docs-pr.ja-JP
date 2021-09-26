@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
@@ -23,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: グループMicrosoft 365グループを使用すると、グループのユーザーに共有リソースのコレクションへのアクセス権を与えることによって、Microsoft 365全体のチームワークを促進できます。
-ms.openlocfilehash: 08e90d5197e59f6c1cf6dc89343b263194925bf4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 66026d3626eecdf9cc80dce0b0b25003e9847726
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176743"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59774894"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>管理者向け Microsoft 365 グループの概要
 
@@ -43,7 +42,7 @@ Microsoft 365グループは、グループ全体のすべてのチームワー�
 - Yammer (グループが Yammer から作成された場合)
 - チーム (グループが Teams から作成された場合)
 - ロードマップ (web のProject場合)
-- Stream
+- ストリーム
 
 グループをMicrosoft 365、これらの各リソースにアクセス許可を手動で割り当てる必要はありません。 グループにユーザーを追加すると、必要なアクセス許可が自動的に付与されます。
 

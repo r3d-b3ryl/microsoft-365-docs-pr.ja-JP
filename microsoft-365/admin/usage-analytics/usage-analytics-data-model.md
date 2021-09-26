@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - SPO_Content
 ms.custom: AdminSurgePortfolio
 search.appverid:
@@ -21,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: '使用状況分析が API に接続する方法と、さまざまなサービスの使用状況の毎月の傾向Microsoft 365します。  '
-ms.openlocfilehash: 2f271414f515d2c3a86c6e59d64dc62f44f8ef01
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a99ee64715d9fdfa27b0f0feb8900dd301ebdaac
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178343"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59775614"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Microsoft 365 利用状況分析データ モデル
 
@@ -206,7 +205,7 @@ Microsoft 365分析は、多次元データ モデルを公開する API に接�
    
 ### <a name="data-table---tenant-sharepoint-online-usage"></a>データ テーブル - Tenant SharePoint Online Usage (テナント SharePoint オンラインの利用状況)
 
-この表は、オンライン サイトの利用状況またはアクティビティに関する月の月SharePoint構成されています。 これは、チーム サイトとグループ サイトのみを対象とします。 SharePoint Online サイトの月末の状態は、たとえば、ユーザーが 5 つのドキュメントを作成し、ストレージ全体に 10 MB を使用し、一部のファイルを削除し、ファイルの最後の状態が 5 MB の記憶域を使用する合計 7 つのファイルを追加した場合、この表で表される値は月の終わりの状態になります。 このテーブルは、集計の重複カウントを回避するために非表示にされ、2 つの参照テーブルを作成するソースとして使用されます。
+この表は、オンライン サイトの利用状況またはアクティビティに関する月の月SharePoint構成されています。 これは、チーム サイトとグループ サイトのみを対象とします。 SharePoint Online サイトの月の終わりの状態は、たとえば、ユーザーが 5 つのドキュメントを作成し、合計記憶域に 10 MB を使用し、一部のファイルを削除し、ファイルの月末の状態が 5 MB の記憶域を使用する合計 7 つのファイルを追加した場合など、この列で表されます。 この表で表される値は、月の終わりの状態です。 このテーブルは、集計の重複カウントを回避するために非表示にされ、2 つの参照テーブルを作成するソースとして使用されます。
   
 |**列名**|**列の説明**|
 |:-----|:-----|

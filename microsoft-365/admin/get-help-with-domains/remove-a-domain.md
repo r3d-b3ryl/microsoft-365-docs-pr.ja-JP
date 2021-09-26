@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - Adm_O365_Setup
 ms.custom:
 - AdminSurgePortfolio
@@ -24,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: ユーザーから古いドメインを削除し、Microsoft 365別のドメインに移動するか、サブスクリプションをキャンセルする方法について学習します。
-ms.openlocfilehash: 227ca3e58a4c6278278048deeffcf68c1d659546
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6b572adb5d1ed45be473552e74adb25c54b3cae7
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176408"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59775422"
 ---
 # <a name="remove-a-domain"></a>ドメインを削除する
 
@@ -156,7 +155,7 @@ Microsoft 365 がセキュリティ グループ、配布リスト、ユーザ�
 
 数百から数千のユーザーがいる場合は、PowerShell を使用してすべてのユーザーに対するクエリを実行してから、別のドメインに移動してください。これを行わないと、一部のユーザーが UI に表示されない可能性があり、ドメインを削除しようとしてもなぜか失敗します。詳細については、「[Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname)」を参照してください。既定のドメインを設定するには、[Set-MsolDomain](/powershell/module/msonline/set-msoldomain) を使用します。
 
-## <a name="still-need-help"></a>さらにサポートが必要な場合
+## <a name="still-need-help"></a>さらにヘルプが必要ですか?
 
 ::: moniker range="o365-worldwide"
 

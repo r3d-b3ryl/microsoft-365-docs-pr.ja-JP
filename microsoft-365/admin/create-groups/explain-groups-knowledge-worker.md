@@ -12,16 +12,15 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 search.appverid:
 - MET150
 description: ユーザーにグループをMicrosoft 365する方法について説明します。
-ms.openlocfilehash: 828dffbed42b0b2bb2023a17f499802f7b2c2db1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 96085502c0600b5d36472fa40728cd4558cee3ed
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176752"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59774966"
 ---
 # <a name="explaining-microsoft-365-groups-to-your-users"></a>ユーザー Microsoft 365グループの説明
 
@@ -35,7 +34,7 @@ Microsoft 365グループを使用すると、共有メールボックスと予�
 - 組織が多くのSharePointを使用している場合、または SharePoint オンプレミスから移行する場合は、ユーザーに共同作業用にSharePointチーム サイトを作成するように指示します。
 - 組織がグループを展開Teams、共同作業スペースが必要なときにチームを作成するようにユーザーに指示します。
 
-[![image desc. ](../../media/03.png)](../../media/03.png#lightbox)
+[![image desc. ](../../media/03.png) ](../../media/03.png#lightbox)
 
 ユーザーが他のユーザーと共同作業するためのスペースが必要なときに、作業方法に最も合ったグループ作成方法を常に使用するトレーニングを行う場合は、リソースの混乱や重複を避けることができます。 ユーザーの経験が高くなると、グループに関連するサービスのコレクションが向上し、異なる作成方法が同じ結果につながることを理解できます。
 

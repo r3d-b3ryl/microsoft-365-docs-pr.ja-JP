@@ -11,15 +11,14 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom: AdminSurgePortfolio
 description: グループまたはポリシーを削除して、Basic Mobility and Security をオフにします。
-ms.openlocfilehash: 7ec4ec0d47668c21824d8e01e3845d637b9b0922
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 730c927c01bb7103c61694749ec7d55ec381a39a
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176807"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59775086"
 ---
 # <a name="turn-off-basic-mobility-and-security"></a>基本的なモビリティとセキュリティをオフにする
 

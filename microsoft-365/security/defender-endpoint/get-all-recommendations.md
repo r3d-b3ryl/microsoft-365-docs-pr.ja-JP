@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: da9286d548cbe1f2566bfdac1397178d40ae9dc8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a57a9be69401368a6b6b893e0850a3ba8c6aaf9a
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221549"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776982"
 ---
 # <a name="list-all-recommendations"></a>すべての推奨事項を一覧表示する
 
@@ -42,6 +42,19 @@ ms.locfileid: "59221549"
 
 組織に影響を与えるすべてのセキュリティ推奨事項の一覧を取得します。
 
+
+## <a name="api-description"></a>API の説明
+
+組織に影響を与えるすべてのセキュリティ推奨事項に関する情報を返します。
+
+*URL:* GET:/api/recommendations
+<br>[OData V4 クエリをサポートします](https://www.odata.org/documentation/)。
+<br>OData でサポートされている演算子:
+<br>```$filter``` on:  ```id``` ```productName``` , , , , ```vendor``` , , , , , ```recommendedVersion``` and ```recommendationCategory``` ```subCategory``` ```severityScore``` ```remediationType``` ```recommendedProgram``` ```recommendedVendor``` ```status``` properties.
+<br>```$top``` 最大値は 10,000 です。
+<br>```$skip```.
+<br>Microsoft Defender [for Endpoint を使用した OData クエリの例を参照してください](exposed-apis-odata-samples.md)。
+
 ## <a name="permissions"></a>アクセス許可
 
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」](apis-intro.md) を参照してください。
@@ -49,7 +62,7 @@ ms.locfileid: "59221549"
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
 アプリケーション|SecurityRecommendation.Read.All|'脅威と脆弱性管理のセキュリティに関する推奨事項情報の読み取り'
-委任 (職場または学校アカウント)|SecurityRecommendation.Read |'脅威と脆弱性管理のセキュリティに関する推奨事項情報の読み取り'
+委任 (職場または学校のアカウント)|SecurityRecommendation.Read |'脅威と脆弱性管理のセキュリティに関する推奨事項情報の読み取り'
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -59,7 +72,7 @@ GET /api/recommendations
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|型|説明
+名前|種類|説明
 :---|:---|:---
 Authorization|文字列|ベアラー {token}。 **必須**
 

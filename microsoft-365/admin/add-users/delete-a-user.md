@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - SPO_Content
 ms.custom:
 - AdminSurgePortfolio
@@ -21,18 +20,18 @@ search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: ユーザー アカウントを削除する方法と、ユーザーの電子メールとコンテンツをOneDriveする方法、および製品ライセンスを保持するかどうかを説明します。
-ms.openlocfilehash: 0fc74780bfdf7d5d6f0f6e21598dd07e4662d8b3
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: c15bcc88290fbd54b76a11ae96e89fbacd2c3b58
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59356391"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59774343"
 ---
 # <a name="delete-a-user-from-your-organization"></a>組織からユーザーを削除する
   
 **職場または学校で使用する *自分の* Microsoft 365 ユーザー アカウントを削除する方法をお探しの場合は、職場または大学のテクニカル サポートにこれらの手順の実行を依頼してください。**
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 - ユーザー アカウントを削除できるのは、職場や学校の [Microsoft 365 グローバル管理者](about-admin-roles.md)またはユーザー管理のアクセス許可を持っている管理者のみです。
 - 30 日後にユーザーのデータが永久に削除されるまではアカウントを[復元](restore-user.md)できます。
@@ -132,7 +131,7 @@ ms.locfileid: "59356391"
 
 4. [ライセンス **の削除]** ウィンドウの [**新** しい数量] の [ライセンスの合計] ボックスに、このサブスクリプションに必要なライセンスの総数を入力します。 たとえば、100 のライセンスを持ち、5 つのライセンスを削除する場合は、「95」と入力します。
 
-5. [**保存**] を選択します。
+5. **[保存]** を選択します。
 
 将来、新しいユーザーを組織のサブスクリプションに追加する手順を実行すると、ライセンスの購入を求めるメッセージが表示されるため、手間が省けます。
 

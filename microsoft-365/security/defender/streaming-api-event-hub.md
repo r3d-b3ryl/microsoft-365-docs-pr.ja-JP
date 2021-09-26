@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ecfc8281c642e7240832a7c057f37f9df4caad68
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9e6c1fec6eea7bf1335eec061d6812d02df16556
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211803"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776838"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-azure-event-hub"></a>高度Microsoft 365 Defenderイベントを Azure イベント ハブにストリーミングするように構成する
 
@@ -71,7 +71,9 @@ Event Hub 名前空間が作成されると、次の処理が必要になりま�
 
    ![イベント ハブ リソース Id1 のイメージ。](../defender-endpoint/images/event-hub-resource-id.png)
 
-8. ストリーミングするイベントを選択し、[保存] を **クリックします**。
+8. イベント ストリーミング API で[サポート](supported-event-types.md)Microsoft 365 Defenderイベントの種類に移動して、イベント ストリーミング API のイベントの種類のMicrosoft 365します。
+
+9. ストリーミングするイベントを選択し、[保存] を **クリックします**。
 
 ## <a name="the-schema-of-the-events-in-azure-event-hub"></a>Azure Event Hub のイベントのスキーマ
 
@@ -119,6 +121,7 @@ Event Hub 名前空間が作成されると、次の処理が必要になりま�
 
 - [高度なハンティングの概要](advanced-hunting-overview.md)
 - [Microsoft 365 Defender API](streaming-api.md)
+- [イベント ストリーミング API Microsoft 365 Defenderイベントの種類のサポート](supported-event-types.md)
 - [Azure Microsoft 365 Defenderアカウントにイベントをストリーミングする](streaming-api-storage.md)
 - [Azure Event Hub のドキュメント](/azure/event-hubs/)
 - [接続の問題のトラブルシューティング - Azure Event Hub](/azure/event-hubs/troubleshooting-guide)

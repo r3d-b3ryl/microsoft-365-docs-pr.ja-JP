@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -24,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: 新しい製品と機能の更新プログラムのリリース オプションを設定する方法については、Microsoft 365 管理センター。
-ms.openlocfilehash: df64bbac95f9d902ed83080e639544feb384fd72
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f7d770dd569c5bd8408a842c64764f949de93aa8
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178975"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776070"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>標準リリースオプションまたはターゲット リリース オプションを設定する
 
@@ -107,7 +106,7 @@ ms.locfileid: "59178975"
     
 9. ユーザーの追加が完了したら、[変更の保存] **を選択します**。
   
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 メッセージ センターで[メッセージ](/office365/admin/manage/message-center)を管理して、Microsoft 365[更新](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)プログラムとリリースに関する通知Microsoft 365確認します。
 

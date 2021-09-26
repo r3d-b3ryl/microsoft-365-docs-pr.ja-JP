@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - SPO_Content
 ms.custom:
 - IT_Networking
@@ -25,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: ドキュメント ライブラリ、リスト、ハブを使用して、SharePointサイトをカスタマイズ、整理、および管理する方法について説明します。
-ms.openlocfilehash: 47033f286f2661a8cfffa3efce0cc7deda82ea63
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fc6aad3408df0f9c14f9d87984a60ae4c5c715b5
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176256"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59775842"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>ファイルの保存と共有のためにチーム サイトをカスタマイズする
 
@@ -109,7 +108,7 @@ SharePointには、リンク、予定表、連絡先、タスクのリストな�
   
 アクセス要求の設定と管理を使用してアクセス要求を処理 [する方法について学習します](https://support.microsoft.com/office/94B26E0B-2822-49D4-929A-8455698654B3)。
   
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 チーム サイトに保存されているOfficeをタブレットや携帯電話から編集するには、デバイスにアプリを設定する必要があります。 Office アプリをタブレットやスマートフォンにインストールしない場合、チーム サイトのファイルを表示することはできますが、編集はできません。 
     

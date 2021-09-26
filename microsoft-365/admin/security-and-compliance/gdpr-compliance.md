@@ -12,19 +12,18 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
 description: 一般データ保護規則 (GDPR) プロセスで 一般法人向け Microsoft 365 がどのように役立つかについて説明します。
-ms.openlocfilehash: 147843fab8fcb8d2d1793a21f9bb897cb4a59672
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a32c31f0acd072d7c30eb7639b7f700a7f06048a
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178663"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776286"
 ---
 # <a name="gdpr-simplified-a-guide-for-your-small-business"></a>GDPR の簡略化: 小規模ビジネス向けのガイド
 

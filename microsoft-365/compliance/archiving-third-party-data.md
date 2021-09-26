@@ -13,7 +13,6 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-- m365solution-mig
 - m365initiative-compliance
 search.appverid:
 - MOE150
@@ -22,12 +21,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: ソーシャル メディア プラットフォーム、インスタント メッセージング プラットフォーム、ドキュメント コラボレーション プラットフォームからサードパーティ のデータをインポートおよびアーカイブして、メールボックスにMicrosoft 365します。
-ms.openlocfilehash: 0dd06e4b51e81020d03f113abfca9ba69f30ec16
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 5732eb622b88e7c9c0f0141ffe60949f944c3a0f
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59355931"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59772853"
 ---
 # <a name="archive-third-party-data-in-microsoft-365"></a>サードパーティのデータをアーカイブMicrosoft 365
 
@@ -265,16 +264,16 @@ subject:contoso AND itemclass:ipm.externaldata.facebook*
 |データ コネクタ  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
 |Android Archiver | はい | いいえ | いいえ |
-|AT&T SMS/MMS Network Archiver | はい | いいえ | いいえ |
-|Bell SMS/MMS Network Archiver | はい | いいえ | いいえ |
+|AT&T SMS/MMS Network Archiver | 必要 | いいえ | いいえ |
+|Bell SMS/MMS Network Archiver | 必要 | いいえ | いいえ |
 |Enterprise Number Archiver | はい | いいえ | いいえ |
-|O2 SMS と Voice Network Archiver | はい         | いいえ | いいえ |
+|O2 SMS と Voice Network Archiver | 必要         | いいえ | いいえ |
 |Rogers Network Archiver | はい         | いいえ | いいえ |
 |Signal Archiver | はい | いいえ | いいえ |
 |Telegram Archiver | はい | いいえ | いいえ |
-|TELUS SMS ネットワーク アーカイブ | はい | いいえ | いいえ |
+|TELUS SMS ネットワーク アーカイブ | 必要 | いいえ | いいえ |
 |Verizon SMS/MMS Network Archiver | はい | いいえ | いいえ |
-|WeChat Archiver | はい | いいえ | いいえ |
+|WeChat Archiver | 必要 | いいえ | いいえ |
 |WhatsApp Archiver | はい | いいえ | いいえ |
 |||||
 
@@ -290,21 +289,21 @@ subject:contoso AND itemclass:ipm.externaldata.facebook*
 |データ コネクタ  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
 |BlackBerry DataParser | はい | いいえ | いいえ |
-|Bloomberg DataParser  | はい | いいえ | いいえ |
-|Cisco Jabber DataParser  | はい | いいえ | いいえ |
+|Bloomberg DataParser  | 必要 | いいえ | いいえ |
+|Cisco Jabber DataParser  | 必要 | いいえ | いいえ |
 |Cisco Webex DataParser  | はい | いいえ | いいえ |
 |FactSet DataParser  | はい | いいえ | いいえ |
-|Fuze DataParser  | はい | いいえ | いいえ |
-|FX Connect DataParser  | はい | いいえ | いいえ |
+|Fuze DataParser  | 必要 | いいえ | いいえ |
+|FX Connect DataParser  | 必要 | いいえ | いいえ |
 |ICE DataParser  | はい | いいえ | いいえ |
-|InvestEdge DataParser  | はい | いいえ | いいえ |
-|LivePerson Conversational Cloud DataParser  | はい | いいえ | いいえ |
+|InvestEdge DataParser  | 必要 | いいえ | いいえ |
+|LivePerson Conversational Cloud DataParser  | 必要 | いいえ | いいえ |
 |Quip DataParser  | はい | いいえ | いいえ |
 |Refinitiv Eikon Messenger DataParser  | はい | いいえ | いいえ |
-|ServiceNow DataParser  | はい | いいえ | いいえ |
+|ServiceNow DataParser  | 必要 | いいえ | いいえ |
 |Skype for Business Server DataParser | はい | いいえ | いいえ |
-|Slack DataParser | はい | いいえ | いいえ |
-|SQL DataParser  | はい | いいえ | いいえ |
+|Slack DataParser | 必要 | いいえ | いいえ |
+|SQL DataParser  | 必要 | いいえ | いいえ |
 |Symphony DataParser | はい | いいえ | いいえ |
 |Zoom DataParser | はい | いいえ | いいえ |
 |||||

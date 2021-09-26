@@ -17,12 +17,12 @@ ms.reviewer: chriggs, depicker, yongrhee
 f1.keywords: NOCSH
 ms.date: 06/14/2021
 ms.technology: mde
-ms.openlocfilehash: 0aace52d05103afa490ec98b50ee9b6539e6b794
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 1fd410be19a8b5181cb2ef2b88d53e198753c7a3
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401664"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776742"
 ---
 # <a name="make-the-switch-to-microsoft-defender-for-endpoint"></a>エンドポイント用 Microsoft Defender への切り替え
 
@@ -36,9 +36,7 @@ ms.locfileid: "59401664"
 
 Defender for Endpoint への移行を検討している場合は、ヘルプを提供するガイダンスがあります。 次の表で、シナリオを確認します。 状況を最も適切に表すシナリオを選択し、推奨されるガイダンスを参照してください。
 
-<br>
-
-****
+<br/><br/>
 
 |シナリオ|ガイダンス|
 |---|---|

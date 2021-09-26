@@ -9,17 +9,16 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection:
-- Adm_TOC
+ms.collection: ''
 ms.custom:
 - AdminSurgePortfolio
 description: ユーザーに組織への参加をMicrosoft 365 Business Standardする
-ms.openlocfilehash: 8b344ee324063dd2694c04e25a4e8549b987ba2a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e3fa00edd87f98dd67159e4fa6f7c9c3ba916876
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213104"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776622"
 ---
 # <a name="invite-users-to-microsoft-365-business-standard-admin"></a>ユーザーをユーザーにMicrosoft 365 Business Standardする (管理者)
 
@@ -44,7 +43,7 @@ ms.locfileid: "59213104"
 
 2. 招待するユーザーのユーザー名とメール アドレスを追加し、[送信] を選択 **します**。 招待メールは、ユーザー アカウント情報を追加するために選択したユーザー全員に送信Microsoft 365。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 ユーザーをフォローアップし、ユーザーがサブスクリプションの共有に関して送信したメールの招待を受け取Microsoft 365 Business Standardします。
 

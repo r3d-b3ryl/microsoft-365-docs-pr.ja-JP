@@ -13,7 +13,6 @@ metadata:
   ms.collection:
   - M365-subscription-management
   - Adm_O365
-  - Adm_TOC
   ms.custom:
   - AdminSurgePortfolio
   - okr_smb
@@ -26,12 +25,12 @@ metadata:
   - GEA150
   ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
   description: FAQ で質問に対する回答を見つけて、ドメイン (onmicrosoft ドメインと転送ドメイン) の詳細について説明します。
-  ms.openlocfilehash: 3daa6948e6a54e205f1f75ab3ceac001c0e84d31
-  ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+  ms.openlocfilehash: 7ec7b28a6c1672e637c339e23bca7391993f7666
+  ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/16/2021
-  ms.locfileid: "59401160"
+  ms.lasthandoff: 09/24/2021
+  ms.locfileid: "59773209"
 title: ドメインに関する FAQ
 summary: "\n\nこの記事では、Microsoft 365 のドメインに関してよく寄せられる質問にお答えします。\n\n質問の回答が見つからない場合は、コメントを残してお知らせください。ご質問を FAQ の一覧に追加します。\n"
 sections:

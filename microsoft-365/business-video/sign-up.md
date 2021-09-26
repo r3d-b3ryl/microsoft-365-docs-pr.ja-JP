@@ -12,6 +12,7 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
@@ -21,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: アカウントにサインアップする方法 (以前Microsoft 365 Business Premiumビジネスと呼ばMicrosoft 365します。
-ms.openlocfilehash: 339c0571d1deec988ad706db3aadcd1ca7cc679a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3f46c9ee41c73ca05098b89227fedbbc83ce6516
+ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180623"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59786385"
 ---
 # <a name="sign-up-for-microsoft-365-business-premium-subscription"></a>サブスクリプションにサインアップMicrosoft 365 Business Premiumする
 

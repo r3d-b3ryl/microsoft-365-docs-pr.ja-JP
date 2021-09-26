@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 search.appverid:
 - MET150
 - MOE150
@@ -23,12 +22,12 @@ ms.custom:
 - okr_smb
 - AdminTemplateSet
 description: 新しいアプリケーションをセットアップMicrosoft 365、Mac、PC、またはモバイル デバイスにOfficeアプリケーションをインストールする方法について学習します。
-ms.openlocfilehash: dc32009bd42027890457bee97e19cdd94f49c6b7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a8d6aa4624285503340b5a22392c601c57acc439
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176240"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776022"
 ---
 # <a name="install-office-applications"></a>Office アプリケーションをインストールする
 

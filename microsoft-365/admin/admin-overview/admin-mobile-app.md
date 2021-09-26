@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
@@ -24,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: アプリをMicrosoft 365 管理、携帯電話やタブレットからオンライン組織を管理する方法について学習します。
-ms.openlocfilehash: 7e503b70f6263e0bf5e949c7ca18ccfe0eb31ffb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fdd379c6652492b2a0695b6c67b9cd46e2bdb184
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176943"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59773441"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>管理者Microsoft 365アプリについて
 
@@ -52,7 +51,7 @@ ms.locfileid: "59176943"
 > [!IMPORTANT]
 > iOS または Android の管理モバイル アプリを使用して問題が発生した場合は、feedback365@microsoft.com にお問 [い合](mailto:feedback365@microsoft.com) わせください。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>開始する前に
 
 管理者モバイル アプリを使用するには、Microsoft 365組織の管理者である必要があります。
   
@@ -121,7 +120,7 @@ ms.locfileid: "59176943"
 
 メール [feedback365@microsoft.com](mailto:feedback365@microsoft.com) アプリに関する問題を報告します。 または、この記事の下部でフィードバックを提供できます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 管理モバイルをダウンロードしたら、ユーザーを追加して開始できます。
   

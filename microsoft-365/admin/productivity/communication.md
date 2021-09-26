@@ -12,19 +12,18 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom: AdminSurgePortfolio
 monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
 description: コミュニケーションの詳細 - ユーザーエクスペリエンスの生産性スコア。
-ms.openlocfilehash: 3ea17bb859fc02343a97033fa65e830f305b69cf
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b4cbc2fec73b22f55a75b05292d9c3a9b857554e
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178727"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776502"
 ---
 # <a name="communication--people-experiences"></a>コミュニケーション – ユーザー エクスペリエンス
 

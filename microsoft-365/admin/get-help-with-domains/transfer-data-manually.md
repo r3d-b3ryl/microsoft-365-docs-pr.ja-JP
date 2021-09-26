@@ -12,19 +12,18 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
 description: プランまたは会社名を変更した場合Microsoft 365複数のサブスクリプションを 1 に結合した場合に、2 つのアカウント間で手動でデータを転送する方法について説明します。
-ms.openlocfilehash: e06136195481abcce66afa6ecc21d1c3c54415d7
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: a400784db27fabfdb57f5ece04236a035b43b168
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400141"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59775386"
 ---
 # <a name="transfer-data-manually-between-two-accounts"></a>2 つのアカウント間でデータを手動で転送する
 

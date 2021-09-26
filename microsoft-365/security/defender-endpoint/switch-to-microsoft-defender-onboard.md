@@ -21,14 +21,14 @@ ms.collection:
 - m365solution-symantecmigrate
 ms.custom: migrationguides
 ms.topic: article
-ms.date: 08/16/2021
+ms.date: 09/23/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 26bcd994052eeb265521dc45784c05c559045600
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: de37ae2b13a100c3e60b6b0e5de1c0d8a96799ce
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401436"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776922"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>エンドポイント向け Microsoft Defender への切り替え - フェーズ 3: オンボード
 
@@ -70,10 +70,10 @@ ms.locfileid: "59401436"
 
 |オペレーティング システム|メソッド|
 |---|---|
-|Windows 10|[グループ ポリシー](configure-endpoints-gp.md) <p> [構成マネージャー](configure-endpoints-sccm.md) <p> [モバイル デバイス管理 (Intune)](configure-endpoints-mdm.md) <p> [ローカル スクリプト](configure-endpoints-script.md) <p> **注**: ローカル スクリプトは概念実証に適していますが、実稼働環境での展開には使用できません。 実稼働展開の場合は、グループ ポリシー、グループ ポリシー、Microsoft Endpoint Configuration Manager Intune を使用することをお勧めします。|
-|Windows 8.1 Enterprise <p> Windows 8.1 Pro <p> Windows 7 SP1 Enterprise <p> Windows 7 SP1 Pro|[Microsoft Monitoring Agent](onboard-downlevel.md) <p> **注**: Microsoft Monitoring Agent Azure Log Analytics エージェントです。 詳細については [、「Log Analytics エージェントの概要」を参照してください](/azure/azure-monitor/platform/log-analytics-agent)。|
-|Windows Server 2019 以降 <p> Windows Server 2019 Core Edition <p> Windowsサーバー バージョン 1803 以降|[ローカル スクリプト](configure-endpoints-script.md) <p> [グループ ポリシー](configure-endpoints-gp.md) <p> [構成マネージャー](configure-endpoints-sccm.md) <p> [System Center Configuration Manager](configure-endpoints-sccm.md) <p> [永続的でないデバイスの VDI オンボーディング スクリプト](configure-endpoints-vdi.md) <p> **注**: ローカル スクリプトは概念実証に適していますが、実稼働環境での展開には使用できません。 実稼働展開の場合は、グループ ポリシー、グループ ポリシー、Microsoft Endpoint Configuration Manager Intune を使用することをお勧めします。|
-|Windows Server 2016 <p> Windows Server 2012 R2 <p> Windows Server 2008 R2 SP1|[Microsoft 365 Defender ポータル](configure-server-endpoints.md) <p> [Azure Defender](/azure/security-center/security-center-wdatp)|
+|Windows 10|[グループ ポリシー](configure-endpoints-gp.md) <br/><br/> [構成マネージャー](configure-endpoints-sccm.md) <br/><br/> [モバイル デバイス管理 (Intune)](configure-endpoints-mdm.md) <br/><br/> [ローカル スクリプト](configure-endpoints-script.md) <br/><br/> **注**: ローカル スクリプトは概念実証に適していますが、実稼働環境での展開には使用できません。 実稼働展開の場合は、グループ ポリシー、グループ ポリシー、Microsoft Endpoint Configuration Manager Intune を使用することをお勧めします。|
+|Windows 8.1 Enterprise <br/><br/> Windows 8.1 Pro <br/><br/> Windows 7 SP1 Enterprise <br/><br/> Windows 7 SP1 Pro|[Microsoft Monitoring Agent](onboard-downlevel.md) <br/><br/> **注**: Microsoft Monitoring Agent Azure Log Analytics エージェントです。 詳細については [、「Log Analytics エージェントの概要」を参照してください](/azure/azure-monitor/platform/log-analytics-agent)。|
+|Windows Server 2019 以降 <br/><br/> Windows Server 2019 Core Edition <br/><br/> Windowsサーバー バージョン 1803 以降|[ローカル スクリプト](configure-endpoints-script.md) <br/><br/> [グループ ポリシー](configure-endpoints-gp.md) <br/><br/> [構成マネージャー](configure-endpoints-sccm.md) <br/><br/> [System Center Configuration Manager](configure-endpoints-sccm.md) <br/><br/> [永続的でないデバイスの VDI オンボーディング スクリプト](configure-endpoints-vdi.md) <br/><br/> **注**: ローカル スクリプトは概念実証に適していますが、実稼働環境での展開には使用できません。 実稼働展開の場合は、グループ ポリシー、グループ ポリシー、Microsoft Endpoint Configuration Manager Intune を使用することをお勧めします。|
+|Windows Server 2016 <br/><br/> Windows Server 2012 R2 <br/><br/> Windows Server 2008 R2 SP1|[Microsoft 365 Defender ポータル](configure-server-endpoints.md) <br/><br/> [Azure Defender](/azure/security-center/security-center-wdatp)|
 |macOS: 11.3.1 (Big Sur);10.15 (Catalina);10.14 (Mojave)|[Windows 以外のデバイスをオンボードする](configure-endpoints-non-windows.md)|
 |iOS|[Windows 以外のデバイスをオンボードする](configure-endpoints-non-windows.md)|
 |Linux: RHEL 7.2+;CentOS Linux 7.2+;Ubuntu 16 LTS 以上の LTS。SLES 12+;Debian 9+;Oracle Linux 7.2|[Windows 以外のデバイスをオンボードする](configure-endpoints-non-windows.md)|
@@ -86,9 +86,9 @@ ms.locfileid: "59401436"
 
 |オペレーティング システム|ガイダンス|
 |---|---|
-|Windows 10 <p> Windows Server 2019 <p> Windowsサーバー、バージョン 1803 以降 <p> Windows Server 2016 <p> Windows Server 2012 R2|「 [検出テストを実行する」を参照してください](run-detection-test.md)。 <p> Defender for Endpoint デモ シナリオ サイト ( ) にアクセス <https://demo.wd.microsoft.com> し、1 つ以上のシナリオを試してください。 たとえば、クラウド配信の **保護デモ シナリオを** 試してみてください。|
-|macOS: 11.3.1 (Big Sur);10.15 (Catalina);10.14 (Mojave)|で DIY アプリをダウンロードして使用します <https://aka.ms/mdatpmacosdiy> 。 <p> 詳細については [、「Defender for Endpoint on macOS」を参照してください](microsoft-defender-endpoint-mac.md)。|
-|Linux: RHEL 7.2+;CentOS Linux 7.2+;Ubuntu 16 LTS 以上の LTS。SLES 12+;Debian 9+;Oracle Linux 7.2|<ol><li>次のコマンドを実行し、1 の結果 **を探します** `mdatp health --field real_time_protection_enabled` 。</li><li>ターミナル ウィンドウを開き、次のコマンドを実行します `curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt` 。</li><li>検出された脅威を一覧表示するには、次のコマンドを実行します `mdatp threat list` 。</li></ol> <p> 詳細については [、「Defender for Endpoint on Linux」を参照してください](microsoft-defender-endpoint-linux.md)。|
+|Windows 10 <br/><br/> Windows Server 2019 <br/><br/> Windowsサーバー、バージョン 1803 以降 <br/><br/> Windows Server 2016 <br/><br/> Windows Server 2012 R2|「 [検出テストを実行する」を参照してください](run-detection-test.md)。 <br/><br/> Defender for Endpoint デモ シナリオ サイト ( ) にアクセス <https://demo.wd.microsoft.com> し、1 つ以上のシナリオを試してください。 たとえば、クラウド配信の **保護デモ シナリオを** 試してみてください。|
+|macOS:<br/>- 11.3.1 (Big Sur)<br/>- 10.15 (Catalina)<br/>- 10.14 (Mojave)|で DIY アプリをダウンロードして使用します <https://aka.ms/mdatpmacosdiy> 。 <br/><br/> 詳細については [、「Defender for Endpoint on macOS」を参照してください](microsoft-defender-endpoint-mac.md)。|
+|Linux:<br/>- RHEL 7.2+<br/>- CentOS Linux 7.2+<br/>- Ubuntu 16 LTS 以上の LTS<br/>- SLES 12+<br/>- Debian 9+<br/>- Oracle Linux 7.2|1. 次のコマンドを実行し、1 の結果 **を探します** `mdatp health --field real_time_protection_enabled` 。<br/><br/>2. ターミナル ウィンドウを開き、次のコマンドを実行します `curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt` 。<br/><br/>3. 次のコマンドを実行して、検出された脅威を一覧表示します `mdatp threat list` 。 <br/><br/> 詳細については [、「Defender for Endpoint on Linux」を参照してください](microsoft-defender-endpoint-linux.md)。|
 
 ## <a name="confirm-that-microsoft-defender-antivirus-is-in-passive-mode-on-your-endpoints"></a>エンドポイントでMicrosoft Defender ウイルス対策パッシブ モードの状態を確認する
 
@@ -98,10 +98,10 @@ ms.locfileid: "59401436"
 
 |メソッド|操作|
 |---|---|
-|コマンド プロンプト|<ol><li>デバイスで、Windowsを開きます。</li><li>と `sc query windefend` 入力し、Enter キーを押します。</li><li>結果を確認して、Microsoft Defender ウイルス対策モードで実行されている状態を確認します。</li></ol>|
-|PowerShell|<ol><li>デバイスでWindows管理者としてWindows PowerShellを開きます。</li><li>次の PowerShell コマンドレットを実行します `Get-MpComputerStatus|select AMRunningMode` 。</li></ol> <p> 結果を確認します。 パッシブ モードが **表示されます**。|
-|Windows セキュリティアプリ|<ol><li>デバイスでWindowsアプリを開Windows セキュリティします。</li><li>**[ウイルスと脅威の防止]** を選択します。</li><li>**[Whoの保護] で、[** プロバイダーの管理 **] を選択します**。</li><li>[セキュリティ **プロバイダー] ページの**[ウイルス対策]**の下** に、[セキュリティ プロバイダー **Microsoft Defender ウイルス対策がオンになっている必要があります**。</li></ol>|
-|タスク マネージャー|<ol><li>デバイスでWindowsタスク マネージャー アプリを開きます。</li><li>[詳細] **タブを選択** します。</li><li>リストで **MsMpEng.exe** を探します。</li></ol>|
+|コマンド プロンプト|1. デバイスで、Windowsを開きます。<br/><br/>2. と `sc query windefend` 入力し、Enter キーを押します。<br/><br/>3. 結果を確認して、Microsoft Defender ウイルス対策モードで実行されている状態を確認します。|
+|PowerShell|1. デバイスでWindows管理者としてWindows PowerShell開きます。<br/><br/>2. 次の PowerShell コマンドレットを実行します `Get-MpComputerStatus|select AMRunningMode` 。 <br/><br/>3. 結果を確認します。 パッシブ モードが **表示されます**。|
+|Windows セキュリティアプリ|1. デバイスでWindowsアプリをWindows セキュリティします。<br/><br/>2. [ **ウイルス対策] &を選択します**。<br/><br/>3. [プロバイダー **Who保護しますか?** [プロバイダーの管理 **] を選択します**。 [セキュリティ **プロバイダー] ページの**[ウイルス対策]**の下** に、[セキュリティ プロバイダー **Microsoft Defender ウイルス対策がオンになっている必要があります**。|
+|タスク マネージャー|1. デバイスWindowsタスク マネージャー アプリを開きます。<br/><br/>2. [詳細] タブ **を選択** します。リストで **MsMpEng.exe** を探します。|
 
 > [!NOTE]
 > 一部の *バージョンWindows Defender ウイルス対策* では、Microsoft Defender ウイルス対策の *代* わりにWindows。
@@ -160,7 +160,7 @@ Defender for Endpoint にオンボードし、以前の Microsoft 以外のソ�
 - 望ましくない可能性のあるアプリケーション (PUA)
 - ネットワーク保護 (NP)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 **おめでとう** ございます! Defender for Endpoint への [移行が完了しました](switch-to-microsoft-defender-migration.md#the-migration-process)。
 

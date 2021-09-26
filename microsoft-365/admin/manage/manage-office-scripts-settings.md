@@ -12,25 +12,24 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
 search.appverid: MET150
 description: 組織内のユーザーのスクリプトOffice設定を管理する方法について学習します。
-ms.openlocfilehash: 4af5d318552b371e9b7eef5be6750fde2c0b2ace
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f76f37a8ce88b429de51271256f4c50d963f7b5c
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178983"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59773146"
 ---
 # <a name="manage-office-scripts-settings"></a>Office スクリプトの設定を管理する
 
 [Officeスクリプトを使用](/office/dev/scripts)すると、ユーザーはスクリプトを記録、編集、実行することでタスクを自動化Excel on the web。 Officeスクリプトは、Power Automateと機能し、ユーザーはオンライン (Business) コネクタを使用してブックExcelスクリプトを実行します。 Microsoft 365管理者は、Officeスクリプトの設定を管理Microsoft 365 管理センター。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>開始する前に
 
 - スクリプト設定Office管理するには、グローバル管理者である必要があります。詳細については、「管理者ロール[について」を参照してください](../add-users/about-admin-roles.md)。
 
@@ -99,7 +98,7 @@ ms.locfileid: "59178983"
 
     Office スクリプトの設定の変更が有効になるまで、最大で 48 時間かかる場合があります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 Office スクリプトは Power Automate で動作しますので、ユーザーが Office スクリプトを使用している間に組織のデータが保護されたままになるために、既存のデータ損失防止 (DLP) ポリシーを確認することをお勧めします。 詳細については、「[データ損失防止 (DLP) ポリシー](/power-automate/prevent-data-loss)」を参照してください。
 

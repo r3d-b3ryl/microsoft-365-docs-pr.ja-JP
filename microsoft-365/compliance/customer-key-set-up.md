@@ -12,12 +12,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 顧客キーを設定する方法についてMicrosoft 365。
-ms.openlocfilehash: e187c01a355cc9b926e892cb3326b5a527c714a4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 739653151031026e788c4b39fa3b182184115175
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212674"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776634"
 ---
 # <a name="set-up-customer-key"></a>顧客キーの設定
 
@@ -52,7 +52,7 @@ Office 365 E5、Microsoft 365 E5、Microsoft 365 E5 Compliance、Microsoft 365 E
  
 - [必須の保持期間を使用するように Azure サブスクリプションを登録する](#register-azure-subscriptions-to-use-a-mandatory-retention-period)
 
-  登録には 1 ~ 5 営業日かかる場合があります。
+  この登録プロセスの完了には 5 営業日かかります。
 
 - [各サブスクリプションにプレミアム Azure Key Vault を作成する](#create-a-premium-azure-key-vault-in-each-subscription)
 
@@ -111,7 +111,7 @@ Azure Key Vault でこれらのタスクを実行します。 顧客キーで使
 
 ### <a name="register-azure-subscriptions-to-use-a-mandatory-retention-period"></a>必須の保持期間を使用するように Azure サブスクリプションを登録する
 
-ルート暗号化キーが一時的または永続的に失われると、サービス操作が中断したり、壊滅的な操作を受け入れ、データが失われる可能性があります。 このため、Customer Key で使用されるリソースには強力な保護が必要です。 Customer Key で使用される Azure リソースはすべて、既定の構成を超える保護メカニズムを提供します。 必須の保持期間の Azure サブスクリプションにタグを付 *けまたは登録できます*。 必須の保持期間によって、Azure サブスクリプションの即時および取り消し不可の取り消しが防止されます。 必須の保持期間に Azure サブスクリプションを登録するために必要な手順では、管理者チームとのMicrosoft 365必要です。 このプロセスには、1 ~ 5 営業日かかる場合があります。 以前は、必須の保持期間を "キャンセルしない" と呼ばれる場合があります。
+ルート暗号化キーが一時的または永続的に失われると、サービス操作が中断したり、壊滅的な操作を受け入れ、データが失われる可能性があります。 このため、Customer Key で使用されるリソースには強力な保護が必要です。 Customer Key で使用される Azure リソースはすべて、既定の構成を超える保護メカニズムを提供します。 必須の保持期間の Azure サブスクリプションにタグを付 *けまたは登録できます*。 必須の保持期間によって、Azure サブスクリプションの即時および取り消し不可の取り消しが防止されます。 必須の保持期間に Azure サブスクリプションを登録するために必要な手順では、管理者チームとのMicrosoft 365必要です。 このプロセスの完了には 5 営業日かかります。 以前は、必須の保持期間を "キャンセルしない" と呼ばれる場合があります。
   
 チームに連絡するMicrosoft 365、顧客キーで使用する Azure サブスクリプションごとに次の手順を実行する必要があります。 開始する前に、Azure PowerShell [Az](/powershell/azure/new-azureps-module-az)モジュールがインストールされていることを確認します。
   
@@ -132,13 +132,13 @@ Azure Key Vault でこれらのタスクを実行します。 顧客キーで使
 
    - すべてのテナント ユーザーに対して複数の Microsoft 365 ワークロード (Exchange Online、Teams、MIP EDM) でコンテンツを暗号化するために DEP を割り当てる顧客キーを有効にする場合は、m365-ck@service.microsoft.com に[問い合 m365-ck@service.microsoft.com に問い合 m365-ck@service.microsoft.com。](mailto:m365-ck@service.microsoft.com)
 
-- メールに次の情報を含める。
+   - メールに次の情報を含める。
 
-   **件名**: 顧客キー \<*Your tenant's fully qualified domain name*\>
+     **件名**: 顧客キー \<*Your tenant's fully qualified domain name*\>
 
-   **本文**: 必須の保持期間を完了するサブスクリプションの Get-AzProviderFeatureを含める。
+     **本文**: 必須の保持期間を完了するサブスクリプションの Get-AzProviderFeatureを含める。
 
-   このプロセスを完了するサービス レベル契約 (SLA) は、Microsoft がサブスクリプションを登録して必須の保持期間を使用すると通知 (および確認) された後、5 営業日です。
+     このプロセスを完了するサービス レベル契約 (SLA) は、Microsoft がサブスクリプションを登録して必須の保持期間を使用すると通知 (および確認) された後、5 営業日です。
 
 4. 登録が完了したという通知を Microsoft から受け取った後、次のように Get-AzProviderFeature コマンドを実行して、登録の状態を確認します。 確認された場合、Get-AzProviderFeatureコマンドは、Registration State プロパティの **[登録済** み] **の値を返** します。 サブスクリプションごとにこの手順を完了します。
 
@@ -195,7 +195,7 @@ Azure Key Vault でこれらのタスクを実行します。 顧客キーで使
    Set-AzKeyVaultAccessPolicy -VaultName <vault name> -UserPrincipalName <UPN of user> -PermissionsToKeys create,import,list,get,backup,restore
    ```
 
-   例:
+   次に例を示します。
 
    ```powershell
    Set-AzKeyVaultAccessPolicy -VaultName Contoso-CK-EX-NA-VaultA1 -UserPrincipalName alice@contoso.com -PermissionsToKeys create,import,list,get,backup,restore
@@ -205,7 +205,7 @@ Azure Key Vault でこれらのタスクを実行します。 顧客キーで使
 
 - 顧客 **キー Microsoft 365** 使用するキー コンテナーごとにアプリケーションを管理するためのアクセス許可は、wrapKey、unwrapKey、および対応する Microsoft 365 サービス プリンシパルへのアクセス許可を取得する必要があります。 
 
-サービス プリンシパルへのアクセスMicrosoft 365するには、次の構文を使用して **Set-AzKeyVaultAccessPolicy** コマンドレットを実行します。
+  サービス プリンシパルへのアクセスMicrosoft 365するには、次の構文を使用して **Set-AzKeyVaultAccessPolicy** コマンドレットを実行します。
 
    ```powershell
    Set-AzKeyVaultAccessPolicy -VaultName <vault name> -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName <Office 365 appID>
@@ -274,7 +274,7 @@ Add-AzKeyVaultKey -VaultName <vault name> -Name <key name> -Destination <HSM|Sof
   
 キーを HSM で保護する場合は、必ず **、Destination** パラメーターの値としてHSM を指定し、それ以外の場合は[ソフトウェア] を指定 **します**。
 
-例えば、
+次に例を示します。
   
 ```powershell
 Add-AzKeyVaultKey -VaultName Contoso-CK-EX-NA-VaultA1 -Name Contoso-CK-EX-NA-VaultA1-Key001 -Destination HSM -KeyOps wrapKey,unwrapKey
@@ -320,7 +320,7 @@ Backup-AzKeyVaultKey -VaultName <vault name> -Name <key name>
 > [!TIP]
 > 出力ファイルの場合は、コンテナー名とキー名の組み合わせを選択します。 これにより、ファイル名が自己記述的に作成されます。 また、バックアップ ファイル名が衝突しないことです。
   
-例:
+次に例を示します。
   
 ```powershell
 Backup-AzKeyVaultKey -VaultName Contoso-CK-EX-NA-VaultA1 -Name Contoso-CK-EX-NA-VaultA1-Key001 -OutputFile Contoso-CK-EX-NA-VaultA1-Key001-Backup-20170802.backup
@@ -387,7 +387,7 @@ Update-AzKeyVaultKey -VaultName <vault name> -Name <key name> -Expires (Get-Date
 (Get-AzKeyVaultKey -VaultName <vault name>).Id
 ```
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 この記事の手順を完了したら、DEP を作成して割り当てる準備ができました。 手順については、「顧客キーの [管理」を参照してください](customer-key-manage.md)。
 

@@ -11,18 +11,19 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - Adm_O365
+- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 管理センターで検索機能を使用して、より良い結果と迅速な結果を得る方法について学習します。
-ms.openlocfilehash: eca365ed7c25ac908fe5ea1679ceedb9765fb3c7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c530d3e041800ef2e9b0c36169ec15366b9b3b1d
+ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178927"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59786037"
 ---
 # <a name="search-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターで検索する
 
@@ -34,7 +35,7 @@ ms.locfileid: "59178927"
 
 次のセクションでは、検索可能な管理センターのさまざまな領域とカテゴリについて説明します。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>開始する前に
 
 管理センターで検索するには、管理者である必要があります。 検索結果の範囲は、ログインしているユーザーが持つ管理者のアクセス許可です。 たとえば、管理者SharePointが管理センターに領域またはカテゴリを表示しない場合、その領域は検索で表示されます。
 

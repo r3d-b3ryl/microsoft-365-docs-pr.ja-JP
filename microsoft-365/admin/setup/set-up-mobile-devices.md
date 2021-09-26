@@ -12,6 +12,7 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
+- Adm_TOC
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -26,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
 description: アプリOffice Android iPhoneにインストールし、Office アプリ内の作業ファイルはビジネス向けMicrosoft 365保護されます。
-ms.openlocfilehash: 86bc749c30d5e3dfd731193d5ef1b56f1e33e443
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b60fc1e0d228e66e4403a932426000b44e4b9354
+ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164526"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59785953"
 ---
 # <a name="set-up-mobile-devices-for-microsoft-365-for-business-users"></a>ビジネス ユーザー向けモバイル Microsoft 365を設定する
 

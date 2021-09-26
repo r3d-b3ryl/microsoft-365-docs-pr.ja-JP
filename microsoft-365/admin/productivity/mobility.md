@@ -12,19 +12,18 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom: AdminSurgePortfolio
 monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
 description: モビリティの詳細 - ユーザーエクスペリエンスの生産性スコア。
-ms.openlocfilehash: 7789980a721e5ebaad3d3673fd0e7c640b6f737d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1bf45022193e8e1f5e4788312fb19705a6be7446
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178703"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776274"
 ---
 # <a name="mobility--people-experiences"></a>モビリティ – ユーザー エクスペリエンス
 
@@ -77,7 +76,7 @@ Microsoft 365では、Microsoft Outlook、Word、Excel、PowerPoint、OneNote、
 
 ### <a name="scoring-framework"></a>スコアリング フレームワーク
 
-組織のモビリティ スコアは、Microsoft 365 Apps - Outlook、Outlook、Teams、Word、Excel、PowerPoint、OneNote、Yammer、Skype の異なるプラットフォーム (デスクトップ、Web、モバイル) を使用しているかのレベルで測定します。
+組織のモビリティ スコアは、Microsoft 365 Apps - Outlook、Teams、Word、Excel、PowerPoint、OneNote、Yammer、および Skype - 全体で使用しているかの組織 (集計) レベルで測定します。デスクトップ、Web、モバイルなど、さまざまなプラットフォーム。
 
 スコアは個々のユーザー レベルでは提供されない。
 

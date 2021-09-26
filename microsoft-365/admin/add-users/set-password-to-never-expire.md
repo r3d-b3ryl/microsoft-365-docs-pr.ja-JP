@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
@@ -23,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: 管理者アカウントにサインインMicrosoft 365を使用して、個々のユーザー パスワードを有効期限が切れWindows PowerShell。
-ms.openlocfilehash: 29d0ebcbb3f9fb197e574731e23aaa64c2fa7894
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8574571564ddfd98e5a5cfe7c232353e0d82f85c
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176968"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59775302"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>個別のユーザーのパスワードを無期限に設定する
 
@@ -75,7 +74,7 @@ AzureAD モジュールの Get-AzureADUser コマンドの詳細については�
      }
     ```
 
-- 現在のユーザーのデスクトップで PasswordNeverExpires を Html で持つすべてのユーザーのレポートを取得するには、ReportPasswordNeverExpires.htm **l**
+- 現在のユーザーのデスクトップに PasswordNeverExpires を含む PasswordNeverExpires を持つすべてのユーザーのレポートを取得 **するには**、次のReportPasswordNeverExpires.html
 
     ```powershell
     Get-AzureADUser -All $true | Select-Object UserprincipalName,@{

@@ -352,13 +352,13 @@
               items:
                 - name: ServiceNow 統合の概要
                   href: ./tickets.md
-        - name: Microsoft 365 Defender API (プレビュー)
+        - name: Microsoft 365 Defender API
           items:
-            - name: Microsoft 365 Defender API の概要 (プレビュー)
+            - name: Microsoft 365 Defender API の概要
               href: api-overview.md
             - name: サポートされている Microsoft 365 Defender API
               href: api-supported.md
-            - name: Microsoft 365 Defender API の使用を開始する (プレビュー)
+            - name: Microsoft 365 Defender API の使用を開始する
               items:
                 - name: Microsoft 365 Defender API のライセンスと使用条件
                   href: api-terms.md
@@ -374,7 +374,7 @@
                   href: api-partner-access.md
                 - name: その他の API リソース
                   href: api-articles.md
-            - name: Microsoft 365 Defender API とスキーマ (プレビュー)
+            - name: Microsoft 365 Defender API とスキーマ
               items:
                 - name: 一般的な REST API エラー コード
                   href: api-error-codes.md

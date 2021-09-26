@@ -12,19 +12,18 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom: AdminSurgePortfolio
 monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
 description: チームワークの詳細 - ユーザーエクスペリエンスの生産性スコア。
-ms.openlocfilehash: 0924114a73a9bcf55a74744ee371de8c2d326d1c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a10de3daf0d485ec75948f7f23202b06bfe29793
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178672"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59772834"
 ---
 # <a name="teamwork--people-experiences"></a>チームワーク - ユーザー エクスペリエンス
 

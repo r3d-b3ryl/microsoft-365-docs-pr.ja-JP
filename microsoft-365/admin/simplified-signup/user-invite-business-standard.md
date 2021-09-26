@@ -9,17 +9,16 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection:
-- Adm_TOC
+ms.collection: ''
 ms.custom:
 - AdminSurgePortfolio
 description: 組織に参加する招待をMicrosoft 365 Business Standardする
-ms.openlocfilehash: cdb77b7f0263aaeabad972dc5a005e42ce0d6deb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c6d5142f966501451517e31b611fdbbe12c94bdd
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178432"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776358"
 ---
 # <a name="accept-an-email-invitation-to-a-microsoft-365-business-standard-subscription-user"></a>サブスクリプションへの電子メールの招待をMicrosoft 365 Business Standardする (ユーザー)
 
@@ -46,9 +45,9 @@ Gmail、Outlook、Yahoo (または類似の) 電子メール アドレスで Mic
 
 5. [デスクトップ **アプリに新** しいアカウントを追加する] ページで、Microsoft 365 アプリを開き、プロファイルを選択し、新しいユーザー名と一時パスワードでサインインします。 [次 **へ] を選択します**。
 
-6. [アカウントに新しいアカウントを追加する]**ページのOutlook** 手順に従って、アカウントをOutlook。 [**次へ**] を選択します。
+6. [アカウントに新しいアカウントを追加する]**ページのOutlook** 手順に従って、アカウントをOutlook。 **[次へ]** を選択します。
 
-7. [ファイルの移動] ページの手順 **に従ってOneDrive for Business** を設定OneDrive。 [**次へ**] を選択します。
+7. [ファイルの移動] ページの手順 **に従ってOneDrive for Business** を設定OneDrive。 **[次へ]** を選択します。
 
 8. [アカウントに **新しいアカウント** をMicrosoft Teams] ページで、手順に従ってアカウントを設定Teams。 完了 **したら、[完了]** を選択します。
 

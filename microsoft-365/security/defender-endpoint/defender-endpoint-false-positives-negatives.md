@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: 68a14ab44011506d89e219f1350dbc86939a6432
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: c897a65296f0f5b016b2bdb22e28773a01be494a
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59356379"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776994"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint での誤検出/検出漏れに対処する
 
@@ -74,13 +74,13 @@ ms.locfileid: "59356379"
 
 4. アラートの状態に応じて、次の表に示す手順を実行します。
 
-<br/>
+<br/><br/>
 
-|アラートの状態|操作|
-|---|---|
-|アラートは正確です|アラートを割り当て、さらに [調査](investigate-alerts.md) します。|
-|アラートは誤検知です|<ol><li>[アラートを誤検知](#classify-an-alert) として分類します。</li><li>[アラートを抑制します](#suppress-an-alert)。</li><li>[Microsoft](#indicators-for-microsoft-defender-for-endpoint) Defender for Endpoint のインジケーターを作成します。</li><li>[分析のためにファイルを Microsoft に提出します](#part-4-submit-a-file-for-analysis)。</li></ol>|
-|アラートは正確ですが、良性 (重要ではない)|[アラートを正の](#classify-an-alert) 値として分類し、アラート [を抑制します](#suppress-an-alert)。|
+   |アラートの状態|操作|
+   |---|---|
+   |アラートは正確です|アラートを割り当て、さらに [調査](investigate-alerts.md) します。|
+   |アラートは誤検知です|<ol><li>[アラートを誤検知](#classify-an-alert) として分類します。</li><li>[アラートを抑制します](#suppress-an-alert)。</li><li>[Microsoft](#indicators-for-microsoft-defender-for-endpoint) Defender for Endpoint のインジケーターを作成します。</li><li>[分析のためにファイルを Microsoft に提出します](#part-4-submit-a-file-for-analysis)。</li></ol>|
+   |アラートは正確ですが、良性 (重要ではない)|[アラートを正の](#classify-an-alert) 値として分類し、アラート [を抑制します](#suppress-an-alert)。|
 
 ### <a name="classify-an-alert"></a>アラートの分類
 
@@ -176,6 +176,7 @@ ms.locfileid: "59356379"
 調査後にファイルがクリーンだと判断した場合は、ファイルをロールバックして検疫から削除できます。 ファイルが検疫された各デバイスで次のコマンドを実行します。
 
 1. デバイスで管理者特権のコマンド ライン プロンプトを開きます。
+
    1. **[スタート]** をクリックし、「_cmd_」と入力します。
    2. **[コマンド プロンプト]** を右クリックして **[管理者として実行]** を選択します。
 
@@ -377,6 +378,7 @@ Microsoft Defender for Endpoint には、さまざまな機能や機能の設定
 4. [基本 **] タブで** 、ポリシーの名前と説明を指定します。 **[次へ]** を選択します。
 
 5. [構成設定 **] タブで** 、[クラウド保護] **を展開** し、次の設定を指定します。
+
    - [クラウド **配信の保護を有効にする] を [はい** ] に **設定します**。
    - **[クラウド配信の保護レベル]** を **[未構成]** に設定します。 (このレベルは、既定では強力なレベルの保護を提供し、誤検知を受け取る可能性を減らします)。
 
@@ -443,7 +445,7 @@ PUA[保護設定](/mem/endpoint-manager-overview)Microsoft エンドポイント
 > [!IMPORTANT]
 > 自動調査と *修復には、* 完全自動化を使用することをお勧めします。 誤検知のため、これらの機能をオフにしない。 代わりに [、"許可"](#indicators-for-microsoft-defender-for-endpoint)インジケーターを使用して例外を定義し、自動的に適切なアクションを実行するために自動調査と修復を設定します。 この [ガイダンスに従って](automation-levels.md#levels-of-automation) 、セキュリティ運用チームが処理する必要があるアラートの数を減らすのに役立ちます。
 
-## <a name="still-need-help"></a>さらにサポートが必要な場合
+## <a name="still-need-help"></a>さらにヘルプが必要ですか?
 
 この記事のすべての手順を実行し、引き続きヘルプが必要な場合は、テクニカル サポートにお問い合わせください。
 

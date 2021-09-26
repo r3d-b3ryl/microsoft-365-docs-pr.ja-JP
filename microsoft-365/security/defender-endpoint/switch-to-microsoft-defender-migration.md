@@ -21,15 +21,15 @@ ms.collection:
 - m365solution-symantecmigrate
 ms.topic: conceptual
 ms.custom: migrationguides
-ms.date: 08/16/2021
+ms.date: 09/23/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: 267787b2cacc00a1d402c2f4dd2e57f42bd3dda3
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: e9562ae976e4eeac1197c5280caebef449ae0180
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59402168"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776766"
 ---
 # <a name="make-the-switch-from-non-microsoft-endpoint-protection-to-microsoft-defender-for-endpoint"></a>Microsoft 以外のエンドポイント保護から Microsoft Defender for Endpoint への切り替え
 
@@ -45,11 +45,13 @@ Defender for Endpoint への移行プロセスは、次の表に示す 3 つの�
 
 ![MDE 移行プロセス。](images/phase-diagrams/migration-phases.png)
 
+<br/><br/>
+
 |段階|説明|
 |--|--|
-|[移行の準備](switch-to-microsoft-defender-prepare.md)|準備 [フェーズ **中**](switch-to-microsoft-defender-prepare.md): <ol><li>組織のデバイスを更新します。</li><li>エンドポイントの Defender を取得します。</li><li>役割とアクセス許可を計画し、ポータルへのアクセス権をMicrosoft 365 Defenderします。</li><li>デバイス プロキシとインターネット設定を構成して、組織のデバイスと Defender for Endpoint 間の通信を有効にします。</li></ol>|
-|[エンドポイントの Defender のセットアップ](switch-to-microsoft-defender-setup.md)|セットアップ [フェーズ **中**](switch-to-microsoft-defender-setup.md): <ol><li>デバイスを有効/再Microsoft Defender ウイルス対策し、パッシブ モードに設定します。</li><li> エンドポイントの Defender を構成します。</li><li>既存のソリューションの除外リストに Defender for Endpoint を追加します。</li><li>既存のソリューションを、既存のソリューションの除外リストに追加Microsoft Defender ウイルス対策。</li><li>デバイス グループ、コレクション、および組織単位を設定します。</li><li>マルウェア対策ポリシーとリアルタイム保護設定を構成します。</li></ol>|
-|[Defender for Endpoint へのオンボード](switch-to-microsoft-defender-onboard.md)|オンボード [フェーズ **中**](switch-to-microsoft-defender-onboard.md): <ol><li>デバイスを Defender for Endpoint にオンボードします。</li><li>検出テストを実行します。</li><li>パッシブ モードMicrosoft Defender ウイルス対策を確認します。</li><li>ユーザーの更新プログラムをMicrosoft Defender ウイルス対策。</li><li>既存のエンドポイント保護ソリューションをアンインストールします。</li><li>Defender for Endpoint が正しく動作するようにします。</li></ol>|
+|[移行の準備](switch-to-microsoft-defender-prepare.md)|準備 [フェーズ **中**](switch-to-microsoft-defender-prepare.md): <br/>1. 組織のデバイスを更新します。<br/>2. エンドポイントの Defender を取得します。<br/>3. 役割とアクセス許可を計画し、ポータルへのアクセス権をMicrosoft 365 Defenderします。<br/>4. デバイス プロキシとインターネット設定を構成して、組織のデバイスと Defender for Endpoint 間の通信を有効にします。 |
+|[エンドポイントの Defender のセットアップ](switch-to-microsoft-defender-setup.md)|セットアップ [フェーズ **中**](switch-to-microsoft-defender-setup.md): <br/>1. デバイスを有効/再インストールMicrosoft Defender ウイルス対策パッシブ モードに設定します。<br/>2. エンドポイントの Defender を構成します。<br/>3. 既存のソリューションの除外リストに Defender for Endpoint を追加します。<br/>4. 既存のソリューションを、既存のソリューションの除外リストに追加Microsoft Defender ウイルス対策。<br/>5. デバイス グループ、コレクション、および組織単位を設定します。<br/>6. マルウェア対策ポリシーとリアルタイム保護設定を構成します。|
+|[Defender for Endpoint へのオンボード](switch-to-microsoft-defender-onboard.md)|オンボード [フェーズ **中**](switch-to-microsoft-defender-onboard.md): <br/>1. デバイスを Defender for Endpoint にオンボードします。<br/>2. 検出テストを実行します。<br/>3. パッシブ モードMicrosoft Defender ウイルス対策を確認します。<br/>4. 更新プログラムを取得Microsoft Defender ウイルス対策。<br/>5. 既存のエンドポイント保護ソリューションをアンインストールします。<br/>6. Defender for Endpoint が正しく動作するようにします。|
 
 ## <a name="whats-included-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint に含まれるもの
 

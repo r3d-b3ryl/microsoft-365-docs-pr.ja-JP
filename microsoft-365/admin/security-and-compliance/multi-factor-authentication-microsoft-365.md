@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
@@ -25,12 +24,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: 多要素認証 (MFA) は、強力なパスワードと追加の検証方法の両方を使用します。
-ms.openlocfilehash: d0f88043ecaa4d2dd990f74661e904351db97524
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 85b8234d62e41489480695b71463e2474442b834
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178647"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59775710"
 ---
 # <a name="multifactor-authentication-for-microsoft-365"></a>ユーザーの多要素認証Microsoft 365
 
@@ -152,7 +151,7 @@ Azure AD Identity Protection とリスク ベースの条件付きアクセス �
 
 この表は、セキュリティの既定値、条件付きアクセス ポリシー、およびユーザーごとのアカウント設定で MFA を有効にした結果を示しています。
 
-|*アイテム*|Enabled|無効|第 2 の認証方法|
+|*項目*|Enabled|無効|第 2 の認証方法|
 |---|---|---|---|
 |**セキュリティの既定値**|条件付きアクセス ポリシーを使用できない|条件付きアクセス ポリシーを使用できる|Microsoft Authenticator アプリ|
 |**条件付きアクセス ポリシー**|有効になっている場合は、セキュリティの既定値を有効にできません|すべてが無効になっている場合は、セキュリティの既定値を有効にすることができます|MFA 登録中にユーザーが指定|
@@ -172,7 +171,7 @@ Azure ポータルでは、次のことができます。
 
 [ユーザー Microsoft 365 管理センター、ユーザーごとの MFA 設定とサービス MFA 設定<a href="https://go.microsoft.com/fwlink/p/?linkid=2169174" target="_blank">を構成できます</a>。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [Microsoft 365 の MFA を設定する](set-up-multi-factor-authentication.md)
 

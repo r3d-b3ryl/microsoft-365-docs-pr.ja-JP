@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
@@ -23,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9cdfa29d-7681-4af2-a79d-3e72e7ab9778
 description: 新入社員をメール、Microsoft 365、およびアプリのビジネスSkypeにOfficeします。
-ms.openlocfilehash: 24b31e22423fe7f0d51da5a71c4c14b54f1525f0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a5fee97b37ba56ad8d8c96420cec3610a3483cec
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177143"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59773633"
 ---
 # <a name="add-a-new-employee-to-microsoft-365"></a>新しい従業員を新しい従業員にMicrosoft 365
 

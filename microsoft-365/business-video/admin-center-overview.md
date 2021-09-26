@@ -12,6 +12,7 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
@@ -22,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 一般的なタスクやダッシュボード ビュー Microsoft 365、より複雑な設定とタスクを管理するには、ビューの簡略化されたビューを使用します。
-ms.openlocfilehash: e3bee5487a0004f6741e51494c01f7e2c2355227
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d1f187f7ab3f7fdad53727a3cd74e2543c3cbcef
+ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180688"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59786373"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターの概要
 
@@ -171,7 +172,7 @@ Microsoft ではいつでもユーザーからのご意見をお待ちしてお�
 |リトアニア語 | lt |
 |ラトビア語 | lv |
 |オランダ語 | nl |
-|ノルウェー語 | いいえ |
+|ノルウェー語 | no |
 |ポーランド語 | pl |
 |ポルトガル語 (ブラジル) | pt |
 |ポルトガル語 (ポルトガル) | pt-pt |

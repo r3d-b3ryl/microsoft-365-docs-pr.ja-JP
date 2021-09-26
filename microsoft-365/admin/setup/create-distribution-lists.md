@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 search.appverid:
 - BCS160
 - MET150
@@ -24,12 +23,12 @@ ms.custom:
 - okr_smb
 - AdminTemplateSet
 description: 各受信者の名前を入力Microsoft 365 管理センターグループに電子メールを送信できるよう、配布グループまたはリストを作成します。
-ms.openlocfilehash: 87b3f375f5e90ec7fc97332abb801d814bf4939b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 43453f54a9ae6c8bea90f58a2a3774b5c8cdca91
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178535"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59775362"
 ---
 # <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>グループ内に配布グループを作成Microsoft 365 管理センター
   

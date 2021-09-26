@@ -9,17 +9,16 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection:
-- Adm_TOC
+ms.collection: ''
 ms.custom:
 - AdminSurgePortfolio
 description: メールの招待を受け入れて、Microsoft 365 Business Standard、Yahoo、Gmail、その他のOutlookを使用して組織に参加します。
-ms.openlocfilehash: 5fc7fd3fe42ef3e8aa200f4d0fa967b3be6bcdef
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7bbf6565b71be3c6741f9b6637599560550497e9
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178424"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59774378"
 ---
 # <a name="accept-an-email-invitation-to-a-microsoft-365-business-standard-subscription-organization-using-an-outlook-yahoo-gmail-or-other-account-user"></a>ユーザー、Yahoo、Gmail、その他Microsoft 365 Business Standardアカウント (User) を使用して、Outlookサブスクリプション組織への電子メールの招待を受け入れる
 
@@ -46,7 +45,7 @@ ms.locfileid: "59178424"
 
 6. [ようこそ] ページMicrosoft 365デスクトップアプリとモバイル アプリOfficeダウンロードし、デスクトップ アプリをOneDrive。
 
-### <a name="next-steps"></a>次の手順
+### <a name="next-steps"></a>次のステップ
 
 ビジネス向けアプリOffice[ダウンロードして使用を開始します](https://support.microsoft.com/office/install-office-apps-from-office-365-dcf2d841-dac7-455b-9a77-fc8f7ee92702)。
 

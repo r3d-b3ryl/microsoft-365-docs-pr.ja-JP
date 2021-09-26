@@ -13,7 +13,6 @@ monikerRange: o365-worldwide
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - Adm_O365_Setup
 ms.custom:
 - AdminSurgePortfolio
@@ -23,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: ''
 description: 365 Business ユーザー向けクラウド PC のWindowsについて説明します。
-ms.openlocfilehash: 82fe7093d27fe3d1302e43da415df9ddce2a6064
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2b724df7c46dc7987ac2c899f4c2fdf2044a6b7e
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211474"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59772772"
 ---
 # <a name="windows-365-business-sizing-options"></a>Windows 365 Business のサイズ設定オプション
 
@@ -45,7 +44,7 @@ Windows 365 Business では、さまざまなクラウド PC サイズの固定�
 |1vCPU/2GB/64GB |Firstline ワーカー、コール センター、教育/トレーニング/CRM アクセス。|Office (Web ベース)、Microsoft Edge、OneDrive、軽量のライン オブ ビジネス アプリ (コール センター アプリケーション – Web アプリ)、Defender サポート。 |
 |2vCPU/4GB/256GB<br/> 2vCPU/4GB/128GB<br/> 2vCPU/4GB/64GB |合併および買収、短期的および季節的な顧客サービス |Microsoft 365 Apps、Microsoft Teams (チャットとオーディオのみ)、OneDrive、Adobe Reader、Microsoft Edge、line-of-business アプリ、Defender サポート。  |
 |2vCPU/8GB/256GB<br/>2vCPU/8GB/128GB |自分の PC を持参し、自宅で仕事をする、市場の研究者、政府、コンサルタント。 |Microsoft 365 Apps、Microsoft Teams、Outlook、Excel、Access、PowerPoint、OneDrive、Adobe Reader、Microsoft Edge、line-of-business アプリ、Defender サポート。  |
-|4vCPU/16GB/512GB<br/>4vCPU/16GB/256GB<br/> 4vCPU/16GB/128GB|財務、政府、コンサルタント、医療サービス、持ち込み専用 PC、在宅作業。 |Microsoft 365 Apps、Microsoft Teams、Outlook、Excel、Access、PowerPoint、Power BI、Dynamics 365、OneDrive、Adobe Reader、Microsoft Edge、line-of-business アプリ、Defender サポート。 |
+|4vCPU/16GB/512GB<br/>4vCPU/16GB/256GB<br/> 4vCPU/16GB/128GB|財務、政府、コンサルタント、医療サービス、持ち込み専用 PC、在宅作業。 |Microsoft 365 Apps、Microsoft Teams、Outlook、Excel、Access、PowerPoint、Power BI、Dynamics 365、OneDrive、Adobe Reader、Microsoft Edge、line-of-business アプリ、Defender のサポート。 |
 |8vCPU/32GB/512GB<br/>8vCPU/32GB/256GB<br/>8vCPU/32GB/128GB |ソフトウェア開発者、エンジニア、コンテンツ作成者、設計ワークステーション、エンジニアリング ワークステーション。 |Microsoft 365 Apps、Microsoft Teams、Outlook、Access、OneDrive、Adobe Reader、Microsoft Edge、Power BI、Visual Studio Code、line-of-business アプリ、Defender サポート。  |
 
 

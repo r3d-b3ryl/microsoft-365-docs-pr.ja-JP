@@ -12,19 +12,18 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:
 - MET150
 description: デバイスをリモートでワイプするなどのアクションを実行して、ユーザーのモバイル デバイスをセキュリティで保護および管理するための基本モビリティとセキュリティを設定します。
-ms.openlocfilehash: 47f2f393c3d7147bb1444e8cad32d2d6a0d31133
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 07f8283353432b06aea67ba9cf8bbc505d6c3012
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176823"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59775134"
 ---
 # <a name="set-up-basic-mobility-and-security"></a>基本的なモビリティとセキュリティの設定
 

@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - SPO_Content
 ms.custom:
 - MSStore_Link
@@ -25,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 元従業員のメールボックスのコンテンツを保存する方法について説明します。
-ms.openlocfilehash: 24a1fbff978bdc266e778b7fca84c882f9677cfe
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 287e7cd54449a86775f556d0165a19ce7ffadac8
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177047"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59775314"
 ---
 # <a name="step-2---save-the-contents-of-a-former-employees-mailbox"></a>手順 2 - 元従業員のメールボックスの内容を保存する
 
@@ -48,7 +47,7 @@ ms.locfileid: "59177047"
 
     メールボックスに保持を配置する方法については、「メールボックスで非アクティブなメールボックスを管理する」[を参照Exchange Online。](../../compliance/create-and-manage-inactive-mailboxes.md)
 
-    **または**
+    **OR**
 
 2. 以前の従業員の電子メール アドレスをデスクトップ上の Outlookのバージョンに追加し、データを .pst ファイルにエクスポートします。 必要に応じて、別のメール アカウントにデータをインポートすることができます。 チェックアウト 手順[4 - 別の従業員にデータとデータOneDriveアクセスOutlookします](remove-former-employee-step-4.md)。
 

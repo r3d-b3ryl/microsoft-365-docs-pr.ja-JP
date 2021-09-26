@@ -12,19 +12,18 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:
 - MET150
 description: 基本モビリティとセキュリティは、重要なMicrosoft 365です。
-ms.openlocfilehash: 74b6aeb5b768dc668a66bcb8c82f6c8393219561
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f348a81689aed43dcc8dbce15e92c0b7842aba69
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176903"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59775158"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>基本モビリティとセキュリティまたは Intune の間で選択する
 
@@ -70,7 +69,7 @@ Microsoft Intune組み込みの Basic Mobility and Security では、どちら�
 |デバイスの種類|さまざまな OS プラットフォームと主要な管理モードのバリエーションを管理する。 |Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>|Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>mac OS、iPad OS|
 |デバイスのポリシー準拠|デバイス レベルの PIN ロックや脱獄の検出など、セキュリティ ポリシーを設定および管理します。 |Android 9 以降のデバイスの制限事項。 詳細を [参照してください](capabilities.md)。 |はい|
 |デバイスのコンプライアンスに基づく条件付きアクセス |準拠しないデバイスがクラウドから企業の電子メールとデータにアクセスしなかからな |このページではWindows 10。<br/>オンライン、オンライン、およびExchange Online、SharePointへのアクセスを制御Outlook。 |はい |
-|デバイス構成  |デバイス設定を構成する (たとえば、カメラを無効にする)|制限された設定のセット。|はい|
+|デバイス構成  |デバイス設定を構成する (たとえば、カメラを無効にする)|制限された設定のセット。|必要|
 |電子メール プロファイル  |デバイスでネイティブメール プロファイルをプロビジョニングします。 |はい|はい|
 |WiFi プロファイル |デバイスでネイティブ WiFi プロファイルをプロビジョニングします。 |いいえ|はい|
 |VPN プロファイル |デバイスにネイティブ VPN プロファイルをプロビジョニングします。 |いいえ|はい|

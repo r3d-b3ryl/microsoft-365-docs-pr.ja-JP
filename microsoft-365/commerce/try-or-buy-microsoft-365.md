@@ -13,6 +13,7 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - commerce_purchase
@@ -21,12 +22,12 @@ ms.custom:
 search.appverid: GEA150
 description: 無料の 30 日間の試用版にサインアップして、Microsoft 365 Business Standard、Microsoft 365 Business Premium、Microsoft 365 Apps for business。
 ms.date: 08/07/2020
-ms.openlocfilehash: 3fc29097268ad4213f7a46d0a58d9eb24073924d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b38d5a0fb49b67315d43011107c8643432fa021b
+ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180112"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59786025"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>一般法人向け Microsoft 365 サブスクリプションを試用する/購入する
 
@@ -45,9 +46,9 @@ Microsoft 365は、Microsoft が IT の管理を行っている間にクラウ�
 
 ::: moniker-end
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>開始する前に
 
-無料試用版にサインアップするには、既存の Microsoft アカウントは必要ない。 この記事の他のすべての手順では、組織のグローバル管理者または課金管理者である必要があります。 詳細については、[「管理者の役割について」](../admin/add-users/about-admin-roles.md) を参照してください。
+無料試用版にサインアップするには、既存の Microsoft アカウントは必要ない。 この記事の他のすべての手順では、組織のグローバル管理者または課金管理者である必要があります。 詳細については、「[管理者の役割について](../admin/add-users/about-admin-roles.md)」を参照してください。
 
 ## <a name="try-a-free-trial-subscription"></a>無料試用版サブスクリプションを試す
 
@@ -132,7 +133,7 @@ Microsoft 365 管理センター を使用して別のサブスクリプショ�
 > 国際クレジット カードは受け付けていません。
 ::: moniker-end
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 新しいアカウントを持ち、最初のサブスクリプションを設定している場合は、ガイド付きセットアップ記事を使用して、開始に役立ちます。
 

@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
@@ -20,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: テンプレートを作成して使用すると、時間を節約し、複数のユーザーを追加するときに設定を標準化できます。
-ms.openlocfilehash: 3ce70f6d37036a2f71bdc2d41bfb5677a54b8db9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6ef35bb395417597d10b8b33c042e1baceeb40db
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177096"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59773489"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>テンプレートを作成して使用し、ユーザーを追加する
 
@@ -43,7 +42,7 @@ ms.locfileid: "59177096"
 - ライセンスの場所
 - ライセンスの選択
 - アプリケーションの選択肢
-- Role
+- 役割
 - ジョブ プロファイル、部署、部署、電話番号、Office、Office **など**、ほとんどのプロファイル **情報** 
 
 次の情報はユーザー固有の情報であり、テンプレートには保存されません。

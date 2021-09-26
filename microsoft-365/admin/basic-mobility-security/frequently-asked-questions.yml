@@ -13,18 +13,17 @@ metadata:
   ms.collection:
   - M365-subscription-management
   - Adm_O365
-  - Adm_TOC
   ms.custom:
   - AdminSurgePortfolio
   search.appverid:
   - MET150
   description: Basic Mobility and Security に関するよく寄せられる質問。
-  ms.openlocfilehash: 4d57b1fce05329b294aade2806400e343f7f6ad7
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.openlocfilehash: ad39687332a8448c405112c88d685409d07c98a8
+  ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59176872"
+  ms.lasthandoff: 09/24/2021
+  ms.locfileid: "59773405"
 title: 基本的なモビリティとセキュリティに関するよく寄せられる質問 (FAQ)
 summary: この記事では、モバイル デバイスの管理とセキュリティをサポートする機能である Basic Mobility and Security に関してよく寄せられる質問をMicrosoft 365。 質問に対する回答が見つからなかった場合は、ページにコメントを残して、この記事への質問の追加を検討してください。
 sections:

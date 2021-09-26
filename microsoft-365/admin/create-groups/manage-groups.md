@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom: admindeeplinkMAC
 search.appverid:
 - BCS160
@@ -20,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: グループ メンバーのMicrosoft 365追加、電子メール アドレス、グループ名、または説明の編集、グループの動作のカスタマイズなど、グループグループの管理について説明します。
-ms.openlocfilehash: c7f38a6a0b2eb3f6c0466858b60ac0beb2143bc0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8b9e3492409322b77d7a64c73bd90f09a0f4daad
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176767"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59774954"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>グループを管理するMicrosoft 365 管理センター
 

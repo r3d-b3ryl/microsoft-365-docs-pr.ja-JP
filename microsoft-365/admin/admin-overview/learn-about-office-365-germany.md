@@ -13,7 +13,6 @@ monikerRange: o365-germany
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
@@ -21,12 +20,12 @@ search.appverid:
 - BEA160
 ms.assetid: 8a5a4bbc-667a-4cac-8769-d8ac9015db4c
 description: ドイツのOffice 365を学ぶ。
-ms.openlocfilehash: e08d3b72e8a87fa9cd5e5a1cc25d8178e4bd2183
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9aa7fc76be39f9ea0aee373ebbecb72387f47610
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176928"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59773957"
 ---
 # <a name="learn-about-office-365-germany"></a>Office 365 Germany の詳細
 
@@ -61,7 +60,7 @@ Office 365ドイツのプラン製品は、この分離された環境で可能�
     
 - Microsoft 365ビデオ
     
-- Project for the web
+- Web 用 Project
     
 - Web 用 Visio
     

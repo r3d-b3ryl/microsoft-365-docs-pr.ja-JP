@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - MSStore_Link
 - okr_smb
@@ -28,18 +27,18 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: 管理センターで特定のタスクを実行できるよう、管理者の役割をビジネス内のユーザーまたは複数のユーザーに割り当てる方法について説明します。
-ms.openlocfilehash: 0eeafd8c91a9430db09713902fb55d9491dcac8d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bea417900374fe627d3a1a6b40697959b7c3671f
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177112"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59773873"
 ---
 # <a name="assign-admin-roles"></a>管理者ロールを割り当てる
 
 Microsoft Business サブスクリプションを購入したユーザーは、グローバル管理者です。つまり、サブスクリプション内の製品を無制限に制御し、ほとんどのデータにアクセスできます。
 
-詳細については、[「管理者の役割について」](about-admin-roles.md) を参照してください。
+詳細については、「[管理者の役割について](about-admin-roles.md)」を参照してください。
 
 新しいユーザーを追加する場合、管理者ロールを割り当てない場合は、ユーザーロールに含め、Microsoft 管理センターに管理者特権はありません。 ただし、ヘルプが必要な場合は、管理者の役割をユーザーに割り当てできます。 たとえば、パスワードのリセットを支援する必要がある場合は、グローバル管理者の役割を割り当ててはいけない場合は、パスワード管理者の役割を割り当てる必要があります。 データやオンライン ビジネスに無制限にアクセスできるグローバル管理者が多すぎると、セキュリティ リスクが生じます。
 

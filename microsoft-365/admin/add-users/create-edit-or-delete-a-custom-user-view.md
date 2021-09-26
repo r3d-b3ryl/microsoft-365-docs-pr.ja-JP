@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -20,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
 description: フィルターを使用してカスタム ユーザー ビューを作成、編集、または削除する方法については、Microsoft 365。
-ms.openlocfilehash: b4177a561d13d76f6d5a0a1077fe8037d469ee48
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6b668bd34b35cbb8b3bfda0a152b981bdcf8df5f
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177088"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59773861"
 ---
 # <a name="create-edit-or-delete-a-custom-user-view"></a>カスタム ユーザー ビューを作成、編集、削除する
 
