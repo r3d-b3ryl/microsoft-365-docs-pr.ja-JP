@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Microsoft SharePoint Syntex のフレーズ リスト、正規表現、および類似性の説明の種類についてご覧ください。
-ms.openlocfilehash: 405080575f48f439e7d978a8fc7ca00ecf956be0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 178f56ea0513d0cc8ba0c47a3c9cde3a24796899
+ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59210874"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59786397"
 ---
 # <a name="explanation-types-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex の説明の種類
 
@@ -138,6 +138,9 @@ Redmond, WA 98034<br>
 [類似性の説明を使用して、ドキュメント中の住所の番地をうまく特定するには、電話番号の説明はあまりに類似性が低いことを定義します。
 
 ![類似性の説明。](../media/content-understanding/proximity.png)
+
+> [!NOTE]
+> 現在、正規表現は近接説明の種類では使用できません。
 
 #### <a name="what-are-tokens"></a>トークンとは?
 

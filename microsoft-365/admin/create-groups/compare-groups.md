@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Microsoft 365 グループでは、メンバーは会話用のグループ メールおよび共有ワークスペース、ファイル、カレンダー イベント、ストリーム、Planner を利用できます。
-ms.openlocfilehash: 0b622f791de7615e45e49faec47558b0e67067f2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3c805084afcf3ad8538decd0859d91a6a65cfe00
+ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176784"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59785965"
 ---
 # <a name="compare-groups"></a>グループを比較する
 
@@ -56,7 +56,7 @@ Microsoft 365 グループは、社内外のユーザー間での共同作業に
 
 [管理者によって有効にされている](manage-guest-access-in-groups.md)限り、組織の外部のユーザーをグループに追加できます。 外部の送信者がグループのメール アドレスにメールを送信できるようにすることもできます。
 
-Microsoft 365 グループは [Azure Active Directory の動的メンバーシップ用に構成でき](/azure/active-directory/users-groups-roles/groups-change-type)、部署、場所、役職などのユーザー属性に基づいてグループ メンバーを自動的に追加または削除できます。
+Microsoft 365 グループは [Azure Active Directory の動的メンバーシップ用に構成](/azure/active-directory/users-groups-roles/groups-change-type)でき、部署、場所、役職などのユーザー属性に基づいてグループ メンバーを自動的に追加または削除できます。
 
 Microsoft 365 グループには、Outlook for iOS や Outlook for Android などのモバイル アプリからアクセスできます。
 
@@ -70,7 +70,7 @@ Microsoft 365 グループは、他の Microsoft 365 グループ、または配
 
 配布グループは、"建物 A のユーザー" や "Contoso の全員" など、一連のユーザーに情報をブロードキャストする必要がある状況に最適です。
 
-配布グループは、[Microsoft 365 グループ](../manage/upgrade-distribution-lists.md)にアップグレードできます。
+配布グループは、[Microsoft 365 グループにアップグレード](../manage/upgrade-distribution-lists.md)できます。
 
 配布グループは、Microsoft Teams のチームに追加できます。
 

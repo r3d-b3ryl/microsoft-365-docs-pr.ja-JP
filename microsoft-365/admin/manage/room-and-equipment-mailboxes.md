@@ -12,7 +12,6 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - Lean
 - MSStore_Link
@@ -23,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9f518a6d-1e2c-4d44-93f3-e19013a1552b
 description: '会議室メールボックスまたは備品用メールボックスを作成すると、組織の全ユーザーが Outlook を使用して会議やイベント用にそのメールボックスを予約できます。 '
-ms.openlocfilehash: 7cee521b4046a3d5ca3acc6dabb657a56ccbc7d3
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 2255d6b509e56f5a8e573ee8e88766c4ad59ada0
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400560"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776034"
 ---
 # <a name="room-and-equipment-mailboxes"></a>会議室メールボックスと備品用メールボックス
 
@@ -124,7 +123,7 @@ Outlook でスケジュールした会議を開き、出席者の場合と同様
   
 ### <a name="does-a-room-mailbox-or-equipment-mailbox-need-a-product-license"></a>会議室メールボックスまたは備品用メールボックスに製品のライセンスは必要ですか?
 
-いいえ。 Microsoft 365 を利用するには、組織内のほとんどの人がライセンスを必要としますが、リソースメールボックスのサイズが 50GB 以上である必要がない場合や、一部の機能が不要な場合（セキュリティとコンプライアンスによる保持ポリシーや、Exchange Online による保持）、または、リソースメールボックスにオンラインアーカイブを添付する必要がない場合には、ルームメールボックスや機器メールボックスにライセンスを割り当てる必要はありません。
+いいえ。Microsoft 365 を利用するには、組織内のほとんどの人がライセンスを必要としますが、リソースメールボックスのサイズが 50GB 以上である必要がない場合や、一部の機能が不要な場合 (セキュリティとコンプライアンスによる保持ポリシーや、Exchange Online による保持)、または、リソースメールボックスにオンラインアーカイブを添付する必要がない場合には、ルームメールボックスや機器メールボックスにライセンスを割り当てる必要はありません。
   
 ### <a name="do-i-need-an-owner-in-charge-of-booking-the-rooms-or-equipment"></a>会議室や備品の予約を担当する所有者は必要ですか?
 

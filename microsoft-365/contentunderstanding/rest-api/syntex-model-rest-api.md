@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: SharePoint Syntex ドキュメント理解モデル REST API の概要。
-ms.openlocfilehash: e661df76828db0d05f7c3492880259117b9f8bf1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b77e882163810a389e734f63b45418a4e682dd88
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163870"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59775686"
 ---
 # <a name="sharepoint-syntex-document-understanding-model-rest-api"></a>SharePoint Syntex ドキュメント理解モデル REST API
 
@@ -44,7 +44,8 @@ Syntex ドキュメント理解モデルを操作するには、次の REST コ�
 - [モデルとライブラリの情報を取得](rest-getmodelandlibraryinfo.md) – モデルと、それが適用されているライブラリに関する情報を取得します。
 - [UpdateModelSettings](rest-updatemodelsettings-method.md) – SharePoint Syntex ドキュメント理解モデルの使用可能なモデル設定 (関連する保持ラベルとモデルの説明) を更新します。
 - [BatchDelete](rest-batchdelete-method.md) – 適用されたドキュメント理解モデルを 1 つ以上のライブラリから削除します。
-- [分類要求 の作成](rest-createclassificationrequest.md) – 適用されたモデルを使用して、指定したファイルを分類する要求を作成します。
+- [ファイル分類要求の作成](rest-createclassificationrequest.md) – 適用されたモデルを使用して、指定したファイルを分類する要求を作成します。
+- [フォルダー分類要求の作成](rest-createclassificationrequest.md) – 適用されたモデルを使用して、フォルダー全体を分類する要求を作成します。
 
 ## <a name="scenarios"></a>シナリオ
 

@@ -12,7 +12,6 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
@@ -21,12 +20,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX
 description: ドメイン レジストラーの中には、限定的なサービスを提供するものもあり、すべての Microsoft 機能がすべてのドメインで使えるわけではありません。
-ms.openlocfilehash: 3af1503b99290611d04b1012ce5087f719f01315
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 7fe6b047773e47964b5a00728b8c1443bdeef36e
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247321"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59774594"
 ---
 # <a name="domain-registrars-with-setup-limitations"></a>セットアップ制限のあるドメイン レジストラー
 
@@ -42,7 +41,7 @@ ms.locfileid: "58247321"
 
 ## <a name="create-dns-records-at-dnsmadeeasy-for-microsoft"></a>DNSMadeEasy で Microsoft 用の DNS レコードを作成する
 
-DNSMadeEasy アカウントの場合、追加したドメインは別のドメイン レジストラーから購入されました。 DNSMadeEasy はドメイン登録サービスを提供していません。 DNSMadeEasy にログインして DNS レコードを作成する能力は、所有権の十分な証拠です。
+DNSMadeEasy アカウントの場合、追加したドメインは、別のドメイン レジストラーから購入したものです。 DNSMadeEasy はドメイン登録サービスを提供していません。 DNSMadeEasy にログインして DNS レコードを作成できれば、所有していることが十分に証明されたことになります。
 
 ## <a name="create-dns-records-at-easydns-for-microsoft"></a>Microsoft 用の easyDNS で DNS レコードを作成する
 
@@ -62,7 +61,7 @@ MyDomain の Web サイトでは、SRV レコードはサポートされませ�
 
 ## <a name="create-dns-records-when-your-domain-is-managed-by-google-enom"></a>Google がドメインを管理している場合に DNS レコードを作成する (eNom)
 
-Google Apps for Work アカウントへのサインアップ時に Google 経由でドメインを購入した場合、DNS レコードは Google が管理し、eNom が登録します。 Google ドメイン ページ経由で eNom にアクセスして、DNS を作成することができます。
+Google Apps for Work アカウントへのサインアップ中に Google 経由でドメインを購入した場合、DNS レコードは Google によって管理されますが、eNom に登録されます。Google Domains ページから eNom にアクセスし、DNS を作成できます。
 
 ## <a name="create-dns-records-at-11-ionos-for-microsoft"></a>Microsoft 用の 1&1 IONOS fで DNS レコードを作成する
 
@@ -70,10 +69,10 @@ Google Apps for Work アカウントへのサインアップ時に Google 経由
 
 このサービスの制限にもかかわらず 1&1 IONOS で自分の Microsoft DNS レコードを管理する場合は、この記事に示す手順に従い、ドメインを確認してメールや Skype for Business Online などの DNS レコードを設定します。
 
-1&1 IONOS で Microsoft 365 メール サービスに必要な CNAME レコードと共に MX レコードを使うことができるようにするには、ある対処法を実行する必要があります。 この対処法では、1&1 IONOS でサブドメインのセットを作成して CNAME レコードに割り当てる必要があります。
+1&1 IONOS で Microsoft メール サービスに必要な CNAME レコードと共に MX レコードを使うことができるようにするには、ある対処法を実行する必要があります。 この対処法では、1&1 IONOS でサブドメインのセットを作成して CNAME レコードに割り当てる必要があります。
 
 > [!NOTE]
-> この手順を開始する前に、利用可能なサブドメインが 2 つ以上あることを確認してください。 この解決策は、1&1 IONOS でサブドメインを作成した経験がある場合にのみ使うことをお勧めします。
+> この手順を開始する前に、利用可能なサブドメインが 2 つ以上あることを確認してください。この解決策は、1&1 IONOS でサブドメインを作成した経験がある場合にのみ使うことをお勧めします。
 
 ### <a name="basic-cname-records"></a>基本的な CNAME レコード
 
@@ -111,7 +110,7 @@ Google Apps for Work アカウントへのサインアップ時に Google 経由
 
 ### <a name="additional-cname-records"></a>追加の CNAME レコード
 
-次の手順で追加の CNAME レコードを使用すると、Skype for Business Online サービスが有効になります。 作成済みの 2 つの CNAME レコードに使用したのと同じ手順を使用します。
+以降の手順で追加した CNAME レコードでは、Skype for Business Online サービスが有効になります。前に 2 つの CNAME レコードを作成したときの手順と同じ手順を使用します。
 
 **3 つ目のサブドメイン (Lyncdiscover) を作成します**
 
