@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: daedf3ebbf88c70cf5b3889a9d7560800ad16f5f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 81be4d293398b264dfa72bbca0eb74b0429add71
+ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59223062"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59934121"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>Android 上の Microsoft Defender for Endpoint の問題のトラブルシューティング
 
@@ -44,7 +44,7 @@ ms.locfileid: "59223062"
 
 **サインインに失敗しました: 予期しない***エラーが発生した場合は、後で試してください*
 
-![サインインに失敗したエラーのイメージ 予期しないエラー。](images/f9c3bad127d636c1f150d79814f35d4c.png)
+:::image type="content" alt-text="サインインに失敗したエラーのイメージ 予期しないエラー。" source="images/f9c3bad127d636c1f150d79814f35d4c.png":::
 
 **メッセージ：**
 
@@ -62,7 +62,7 @@ Google Play ストアから最新バージョン[とMicrosoft Authenticator](htt
 
 **サインインに失敗しました:** *ライセンスが無効です。管理者に問い合わせてください*
 
-![サインインのイメージが失敗しました。管理者に問い合わせてください。](images/920e433f440fa1d3d298e6a2a43d4811.png)
+:::image type="content" alt-text="サインインに失敗したイメージは、管理者に問い合わせてください。" source="images/920e433f440fa1d3d298e6a2a43d4811.png":::
 
 **メッセージ:** *無効なライセンス、管理者に問い合わせてください*
 
@@ -140,3 +140,29 @@ OEM と一緒に、アプリのオンボーディング画面からこのアク�
    ![[Microsoft Defender Endpoint] を見つけて、[最適化しない] を選択します。](images/select-dont-optimise.png)
 
 [Microsoft Defender Endpoint オンボーディング] 画面に戻り、[ **許可**] を選択すると、ダッシュボード画面にリダイレクトされます。
+
+## <a name="send-in-app-feedback"></a>アプリ内フィードバックの送信
+
+ユーザーが上記のセクションでまだ解決されていない問題に直面しているか、リストされている手順を使用して解決できない場合、ユーザーは診断データと共にアプリ内フィードバックを **提供できます**。 その後、ログを調査して適切なソリューションを提供できます。 ユーザーは、次の手順に従って同じ操作を実行できます。
+
+1.  デバイスで **MDE アプリケーション** を開き、左上隅 **にある** プロファイル アイコンをクリックします。
+
+    :::image type="content" alt-text="[プロファイル] アイコンをクリックします。" source="images/select-profile-icon-1.jpg":::
+
+2.  [フィードバックに関する&] を選択します。
+
+    :::image type="content" alt-text="ヘルプとフィードバックを選択します。" source="images/selecthelpandfeedback2.png":::
+
+3.  [Microsoft にフィードバックを送信する] を選択します。
+
+    :::image type="content" alt-text="[フィードバックを Microsoft に送信する] を選択します。" source="images/send-feedback-to-microsoft-3.jpg":::
+
+4.  指定されたオプションから選択します。 問題を報告するには、[問題を報告する] を選択します。
+
+    :::image type="content" alt-text="問題を報告する。" source="images/report-issue-4.jpg":::
+
+5.  直面している問題の詳細を入力し、[診断データの送信] をオンにしてください。 チームがソリューションまたはフォローアップで連絡を取り戻す場合は、[電子メール アドレスを含める] をオンにすることをお勧めします。
+
+    :::image type="content" alt-text="詳細を追加し、診断データを添付します。" source="images/finalsubmit5.png":::
+
+6.  [送信] をクリックして、フィードバックを正常に送信します。

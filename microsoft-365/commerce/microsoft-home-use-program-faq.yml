@@ -19,12 +19,12 @@ metadata:
   search.appverid: MET150
   description: このページに関するよく寄せられる質問 (FAQ) Microsoft 自宅使用プログラム。
   ms.date: 05/01/2021
-  ms.openlocfilehash: 114686efb77a88dfad8e729ae5db908f3e8bc629
-  ms.sourcegitcommit: 73a17ecbc06cd3e5452814637ab0484ddcdea17a
+  ms.openlocfilehash: 9a149ee97c76189f52345587e1eaaac27bd562b2
+  ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/09/2021
-  ms.locfileid: "58942434"
+  ms.lasthandoff: 09/27/2021
+  ms.locfileid: "59934157"
 title: Microsoft 自宅使用プログラムよく寄せられる質問 (FAQ)
 summary: "ボリューム ライセンスのお客様は、Microsoft 自宅使用プログラム Web サイトで ビジネス向け Microsoft Store (HUP)[を使用します](https://go.microsoft.com/fwlink/?linkid=2139192)。\n\n他のすべてのユーザーは、次の手順を使用して HUP にアクセスします。\n\n- Microsoft 管理センターで、[製品の請求] ページに移動し、[特典] タブを選択し  >  [](https://go.microsoft.com/fwlink/p/?linkid=842054)**、[HUP] タブを選択** します。 \n"
 sections:
@@ -39,17 +39,7 @@ sections:
     answer: "以下の例外Microsoft 365 Family、世界中の対象となる企業に対して、サブスクリプションおよび個人サブスクリプションの割引が提供されます。\n\n- マカオ、ロシア、ベネズエラ: このオファーは、これらの市場では利用できません。\n- 中国と香港: 1 年間のサブスクリプションは、これらの市場で利用できます。 中国の場合は、中国[のMicrosoft 365をご覧ください](https://www.microsoftstore.com.cn/home-use-program/invite)。 香港の場合は、割引[価格Microsoft 365を購入するをご覧ください](https://www.microsoftestore.com.hk/partner/hup?locale=en_HK)。\n- 日本: Microsoft 365 Familyは使用できません。\n- 一部の Surface デバイスとアクセサリの割引は、一部の市場の対象となる企業に提供されます。 \n"
   - question: >
       組織は HUP 割引を受け取る資格を得る方法を示します。
-    answer: >
-      従業員が割引を利用するにはMicrosoft 自宅使用プログラム有効な会社の電子メール アドレスとアクティブな Microsoft アカウントが必要であり、組織は次のいずれかの条件を満たしている必要があります。
-
-
-      - ソフトウェア アシュアランスがアクティブで、アプリケーションのOfficeしているお客様
-
-      - ソフトウェア アシュアランスMicrosoft 365/Microsoft 365 E3/E5 をお持ちのお客様
-
-      - 1 つ以上のライセンスを 2,000 ライセンス≥購入した商用および政府機関のお客様Microsoft 365 E3/E5
-
-      - 教育および非営利の顧客
+    answer: "従業員が割引を利用するにはMicrosoft 自宅使用プログラム有効な会社の電子メール アドレスとアクティブな Microsoft アカウントが必要であり、組織は次のいずれかの条件を満たしている必要があります。\n\n- ソフトウェア アシュアランスがアクティブで、アプリケーションのOfficeしているお客様\n- ソフトウェア アシュアランスMicrosoft 365/Microsoft 365 E3/E5 をお持ちのお客様\n- 1 つ以上のライセンスを 2,000 ライセンス≥購入した商用および政府機関のお客様Microsoft 365 E3/E5\n- 教育および非営利の顧客\n- 対象となる Power BI、Office、Surface デバイス & アクセサリ、Windows、Enterprise Mobility に過去 12 か月間に 250,000 ドル以上を費やした商用および政府機関のお客様 \n"
   - question: >
       Home Use Program/Azure Active Directoryを使用するために、Azure Active Directory (AAD) アカウントを作成する必要があるビジネス向け Microsoft Store。
     answer: >

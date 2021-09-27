@@ -11,18 +11,19 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 search.appverid:
 - MET150
 description: 業界と組織の情報に関する最新のニュース見出しをユーザーに提供し、ニュース サービスを使用して組織のカスタマイズされたニュース フィードを有効にします。
-ms.openlocfilehash: 0292668ad37020f9ca2049d7c011465bd7e28479
-ms.sourcegitcommit: dd4214a309c71292490743752da728cec7bffe88
+ms.openlocfilehash: bde55ffbd9bef2f8eac7db1a4d200aeb58f32f89
+ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59479551"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59933509"
 ---
 # <a name="manage-industry-news"></a>業界ニュースの管理
 
@@ -59,7 +60,7 @@ ms.locfileid: "59479551"
 
 1. [コンテンツの除外] フィールドでキーワードを含む記事 **をブロック** できます。 たとえば、キーワード "ベイク" を含む記事がニュース フィードに表示されるのを避けるために、[コンテンツの除外] フィールドにキーワード "bake" **を追加** します。 一般的な用語 (the, it, and, など) を含めしないようにします。関連するコンテンツがエンタープライズ ニュース フィードに表示されるのをブロックできます。
 
-1. [**保存**] を選択します。 変更が表示されるには、最大で 24 時間かかる場合があります。
+1. **[保存]** を選択します。 変更が表示されるには、最大で 24 時間かかる場合があります。
 
 ## <a name="industry-updates-in-email"></a>電子メールの業界の更新
 

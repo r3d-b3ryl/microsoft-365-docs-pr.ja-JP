@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c7ee6f1debaf697c49e292068ba88c436714addf
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 840ea513980d3167d34437c048eb8d8164a2d57b
+ms.sourcegitcommit: e001934654119e15149ed29b3079b1019849f59c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491125"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59934667"
 ---
 # <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>iOS 上の Microsoft Defender for Endpoint で問題のトラブルシューティングを行い、FAQ に対する回答を見つける
 
@@ -58,7 +58,7 @@ ms.locfileid: "59491125"
 > [!NOTE]
 > VPN が無効になっている場合、Web 保護は使用できません。 Web 保護を再び有効にするには、デバイスで Microsoft Defender for Endpoint アプリを開き、[Web 保護を有効にする] をクリックします。
 
-## <a name="co-existence-with-multiple-vpn-profiles"></a>複数の VPN プロファイルとの共存在
+## <a name="coexistence-with-multiple-vpn-profiles"></a>複数の VPN プロファイルとの共存
 
 Apple iOS では、同時にアクティブになる複数のデバイス全体の **VPN** はサポートされていません。 デバイスに複数の VPN プロファイルを存在することができますが、一度にアクティブにできる VPN は 1 つのみです。
 
@@ -82,7 +82,7 @@ Microsoft Defender for Endpoint では、ローカル/ループバック VPN を
 
 ## <a name="report-unsafe-site"></a>安全でないサイトを報告する
 
-フィッシング Web サイトは、お客様の個人情報または財務情報を取得する目的で信頼できる Web サイトになりすます。 [ネットワーク [保護に関するフィードバックを提供する](https://www.microsoft.com/wdsi/support/report-unsafe-site) ] ページにアクセスして、フィッシング サイトになる可能性のある Web サイトを報告します。
+フィッシング Web サイトは、お客様の個人情報または財務情報を取得するために信頼できる Web サイトを偽装します。 [ネットワーク [保護に関するフィードバックを提供する](https://www.microsoft.com/wdsi/support/report-unsafe-site) ] ページにアクセスして、フィッシング サイトになる可能性のある Web サイトを報告します。
 
 ## <a name="malicious-site-detected"></a>悪意のあるサイトが検出されました
 
@@ -111,4 +111,17 @@ Defender for Endpoint コンテンツ フィルターがインストールされ
 ## <a name="issues-during-app-updates-from-the-app-store"></a>アプリ ストアからのアプリの更新中の問題
 
 アプリがアプリ ストア (自動更新または手動更新) を介して更新される際に問題が発生した場合は、デバイスの再起動が必要になる場合があります。 それでも問題が解決しない場合は、Defender VPN を無効にしてアプリの更新を実行できます。 アプリ内フィードバックを提供して、この問題を報告することもできます。
+
+## <a name="send-in-app-feedback"></a>アプリ内フィードバックの送信
+
+ユーザーが上記のセクションでまだ解決されていない問題に直面した場合、またはリストされている手順を使用して解決できない場合、ユーザーは診断データと共にアプリ内フィードバックを提供できます。 次に、適切なソリューションを提供するためにログを調査します。 ユーザーは、次の手順を使用して手数料を送信できます。
+
+  - iOS/iPadOS デバイスで MSDefender アプリを開きます。
+  - 左上隅のメニュー (プロファイル アイコン) をタップします。
+  - [フィードバック **の送信] をタップします**。
+  - 指定されたオプションから選択します。 問題を報告するには、[気に入らない **] を選択します**。
+  - 直面している問題の詳細を入力し、[診断データの送信 **] をオンにしてください**。 チームからソリューションまたはフォローアップの連絡を受け取る場合は、電子メール アドレスを含める必要があります。
+  - [送信 **] を** タップして、フィードバックを正常に送信します。
+
+
 

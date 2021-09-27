@@ -11,6 +11,7 @@ ms.service: o365-administration
 localization_priority: Priority
 ms.collection:
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
@@ -21,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 for Business サブスクリプションのオンラインまたは電話によるサポートを受ける方法を説明します。 これらのサポート方法を使用するには、一般法人向けサブスクリプションの管理者である必要があります。
-ms.openlocfilehash: 7d925e6cea30a5076dce225284fe57ffde6948d0
-ms.sourcegitcommit: dd4214a309c71292490743752da728cec7bffe88
+ms.openlocfilehash: a83085a9cc7abc66aa3505208b8480c94f7b692a
+ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59479539"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59934061"
 ---
 # <a name="get-support"></a>サポートを受ける
 

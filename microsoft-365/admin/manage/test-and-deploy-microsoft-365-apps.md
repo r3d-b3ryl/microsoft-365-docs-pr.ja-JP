@@ -9,17 +9,17 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: ''
+ms.collection: Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: 組織内のユーザーおよびグループ向け Microsoft および Microsoft パートナー アプリを検索、テスト、展開するには、組織の統合アプリ ポータルMicrosoft 365 管理センター。
-ms.openlocfilehash: 13276923c55632145207b61032583a26e3553e06
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6ab2b2a81fe54b38f6c2d6352a976b83cd2e84a9
+ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178887"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59934001"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-by-partners-in-the-integrated-apps-portal"></a>統合アプリ ポータルMicrosoft 365 Appsパートナーによるテストと展開
 
@@ -121,7 +121,7 @@ Officeアドインを使用すると、ドキュメントをカスタマイズ�
 
 今日では、Exchange管理者とグローバル管理者の両方が統合アプリからアドインを展開できます。   
 
-### <a name="before-you-begin"></a>始める前に
+### <a name="before-you-begin"></a>はじめに
 
 アドインの展開では、ユーザーが Microsoft 365 Enterprise ライセンス (E3/E5/F3) または Microsoft 365 Business ライセンス (Business Basic、Business Standard、Business プレミアム) を使用している必要があります。 また、ユーザーは組織 ID を使用してOfficeサインインし、メールボックスにExchange OnlineアクティブExchange Online必要があります。 サブスクリプション ディレクトリは、サブスクリプション ディレクトリに存在するか、サブスクリプション ディレクトリにAzure Active Directory。 
 
@@ -199,7 +199,7 @@ Azure Active Directory Graph API を使用してクエリを実行して、グ�
 
 4. [ **すべてのユーザー** **]、[特定のユーザー/グループ**]、または [自分だけ] を選択して、アドインの展開先 ****   を指定します。 [検索] ボックスを使用して、特定のユーザーまたはグループを検索します。 アドインをテストする場合は、[これはテスト展開です] **を選択します**。 
 
-5. [**次へ**] を選択します。 すべてのアプリの機能とアクセス許可は、アプリが認定を受け取った場合、認定情報と共に 1 つのウィンドウMicrosoft 365されます。 認定ロゴを選択すると、ユーザーは認定の詳細を確認できます。  
+5. **[次へ]** を選択します。 すべてのアプリの機能とアクセス許可は、アプリが認定を受け取った場合、認定情報と共に 1 つのウィンドウMicrosoft 365されます。 認定ロゴを選択すると、ユーザーは認定の詳細を確認できます。  
 
 6. [確認] をクリックし、[展開の完了 **] を選択します**。  
 

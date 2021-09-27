@@ -14,18 +14,19 @@ metadata:
   - M365-subscription-management
   - Adm_O365
   - Adm_NonTOC
+  - Adm_TOC
   ms.custom: AdminSurgePortfolio
   search.appverid:
   - BCS160
   - MET150
   - MOE150
   description: 一元的な展開に関するよくある質問に対する回答を、Microsoft 365 管理センター。
-  ms.openlocfilehash: e2b4717fb2e1d5e82d22ce5288c40187722495df
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.openlocfilehash: 1d9eb681412d3934c55eacc938a36dee276313ac
+  ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59176352"
+  ms.lasthandoff: 09/27/2021
+  ms.locfileid: "59933497"
 title: 一元展開に関する FAQ
 summary: Office 365 管理者が組織内のユーザーとグループに Office アドイン (Word、Excel、PowerPoint、および Outlook) を展開する場合は、この記事で説明した集中展開を使用するためのすべての要件を満たしている場合に、集中展開が推奨されます。
 sections:

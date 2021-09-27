@@ -12,6 +12,7 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
+- Adm_TOC
 ms.custom:
 - MiniMaven
 - MSB365
@@ -22,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: コンプライアンス機能を設定して、データ損失を防止し、お客様と顧客の機密情報を安全に保ちます。
-ms.openlocfilehash: 5e5aff344326874cef426e7a1a40656766564e7e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a7241c4abe3236b14935e42ab518c629a2558d21
+ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178600"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59934181"
 ---
 # <a name="set-up-compliance-features"></a>コンプライアンス機能をセットアップする
 

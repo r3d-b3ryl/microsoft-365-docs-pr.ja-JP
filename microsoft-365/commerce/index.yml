@@ -6,7 +6,9 @@ metadata:
   description: Microsoft を使用して、ビジネス サブスクリプションを購入し、ライセンス管理タスクを実行し、ビジネスアカウントの課金および支払いを管理する方法について説明します。
   ms.service: o365-administration
   ms.topic: landing-page
-  ms.collection: commerce
+  ms.collection:
+  - commerce
+  - Adm_TOC
   ms.custom:
   - commerce_landingpage
   author: cmcatee-MSFT
@@ -15,12 +17,12 @@ metadata:
   ms.date: 02/27/2020
   localization_priority: Normal
   search.appverid: MET150
-  ms.openlocfilehash: ecf809c3fe771e38b6edc758d8f2654c0cb89ca6
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.openlocfilehash: d371f6ac55e114263edd966e6d11778ae0d7e1ad
+  ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59190350"
+  ms.lasthandoff: 09/27/2021
+  ms.locfileid: "59933233"
 landingContent:
 - title: 請求と支払いを管理する
   linkLists:

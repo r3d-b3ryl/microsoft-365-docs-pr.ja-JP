@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f9999fdea57465120040cb04a497f1510bcb988b
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 18f7436c974ab9b976980861ae93bd4b3ea1fc2e
+ms.sourcegitcommit: e001934654119e15149ed29b3079b1019849f59c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483509"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59934691"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>[アラートの調査] Microsoft 365 Defender
 
@@ -61,6 +61,30 @@ Microsoft Defender for Endpoint、Microsoft Defender for endpoint、Microsoft De
 - タグ
 - ポリシー
 - 影響を受け取ったアセット
+
+## <a name="required-roles-for-defender-for-office-365-alerts"></a>ユーザー通知の Defender に必要Office 365役割
+
+Microsoft Defender にアクセスして警告を表示するには、次の役割Office 365があります。
+
+- [Azure Active Directory (Azure AD) グローバル ロールの場合:
+
+   - グローバル管理者
+
+   - セキュリティ管理者
+
+   - セキュリティ オペレーター
+
+   - グローバル閲覧者
+
+   - セキュリティ閲覧者
+
+- Office 365セキュリティ &コンプライアンス役割グループ
+
+   - コンプライアンス管理者
+
+   - 組織管理 
+
+- カスタム [ロール](custom-roles.md)
 
 ## <a name="analyze-an-alert"></a>アラートの分析
 
@@ -149,7 +173,7 @@ Microsoft Cloud App Security |`ca{GUID}` <br> 例: `ca123a456b-c789-1d2e-12f1g33
 
 アラートを分類し、その決定を指定すると、Microsoft 365 Defenderを調整して、より多くの真のアラートと少ない誤った通知を提供できます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 インプロセス インシデントの必要に応じて、調査を続行 [します](investigate-incidents.md)。
 
