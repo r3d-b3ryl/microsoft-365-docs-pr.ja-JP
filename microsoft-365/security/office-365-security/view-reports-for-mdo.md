@@ -20,12 +20,12 @@ description: 管理者は、管理者ポータルで使用できるレポート�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 80ba6c1f7c04a48b5472a12db75d602bd503465e
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 2613b8547d27ce39a14bccfb5e3bfe63f66de36f
+ms.sourcegitcommit: 835dcaf5d5e0b485dc3ac485ded8943046afe36c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483308"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59942091"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>ポータルでレポートOffice 365 Defender をMicrosoft 365 Defenderする
 
@@ -115,22 +115,22 @@ Office 365 組織向け Microsoft Defender (Microsoft 365 E5 サブスクリプ�
 
 脅威 **保護の状態** レポートは [、Exchange Online Protection](exchange-online-protection-overview.md) (EOP) と Microsoft Defender for Office 365 によって検出およびブロックされた悪意のあるコンテンツと悪意のある電子メールに関する情報をまとめる単一のビューです。 詳細については、「脅威保護の [状態レポート」を参照してください](view-email-security-reports.md#threat-protection-status-report)。
 
-## <a name="url-threat-protection-report"></a>URL 脅威保護レポート
+## <a name="url-protection-report"></a>URL 保護レポート
 
-**URL 脅威保護レポートには、** 検出された脅威の概要と傾向ビュー、および URL クリックに対するアクションが[リンク] リンクの一部としてセーフ [されます](safe-links.md)。 このレポートには、[リンク] ポリシーが適用されているユーザーセーフクリックデータが含まれる場合は、[ユーザーのクリックを追跡しない]**オプションが** 選択されています。
+**URL 保護レポートには、** 検出された脅威の概要と傾向ビュー、およびリンクの一部として URL クリックで実行されるアクション [セーフ表示されます](safe-links.md)。 このレポートには、[リンク] ポリシーが適用されているユーザーセーフクリックデータが含まれる場合は、[ユーザーのクリックを追跡しない]**オプションが** 選択されています。
 
 レポートを表示するには、Microsoft 365 Defender ポータル [を開き、[](https://security.microsoft.com)レポートの電子メール] & \> **グループ**& \> **に移動します**。 [コラボレーション **レポートのメール&] ページ** で **、[URL 保護] ページ** を探し、[詳細の表示] **をクリックします**。 レポートに直接移動するには、を開きます <https://security.microsoft.com/reports/URLProtectionActionReport> 。
 
 ![[コラボレーション レポートの電子メール] ページ& URL 保護レポート ウィジェット。](../../media/url-protection-report-widget.png)
 
-[URL 脅威保護レポート] **ページで** 使用可能なビューについては、次のセクションで説明します。
+[URL 保護レポート] **ページで** 使用可能なビューについては、次のセクションで説明します。
 
 > [!NOTE]
 > これは保護傾向 *レポートで、* データは大きなデータセットの傾向を表します。 その結果、グラフ内のデータはリアルタイムでは使用できませんが、詳細テーブルのデータは次の値なので、2 つのデータの間に若干の不一致が見られます。 グラフは 4 時間に 1 回更新され、過去 90 日間のデータが含まれています。
 
 ### <a name="view-data-by-url-click-protection-action"></a>URL クリック保護アクションによるデータの表示
 
-![URL 脅威保護レポートの URL クリック保護アクション ビュー。](../../media/url-threat-protection-report-url-click-protection-action-view.png)
+![URL 保護レポートの [URL] クリック保護アクション ビュー。](../../media/url-threat-protection-report-url-click-protection-action-view.png)
 
 [URL **によるデータの表示] クリック保護アクション** ビューには、組織内のユーザーによる URL クリックの数と、クリックの結果が表示されます。
 
@@ -164,7 +164,7 @@ Office 365 組織向け Microsoft Defender (Microsoft 365 E5 サブスクリプ�
 
 ### <a name="view-data-by-url-click-by-application"></a>アプリケーション別の URL クリックによるデータの表示
 
-![URL 脅威保護レポートのアプリケーション ビューで URL をクリックします。](../../media/url-threat-protection-report-url-click-by-application-view.png)
+![URL 保護レポートのアプリケーション ビューで URL をクリックします。](../../media/url-threat-protection-report-url-click-by-application-view.png)
 
 [URL **によるデータの表示] アプリケーション** によるクリックビューには、リンクをサポートするアプリによる URL クリック数セーフ表示されます。
 
@@ -232,7 +232,7 @@ PowerShell レポートコマンドレット:
 - **組織の管理**
 - **セキュリティ管理者**
 - **セキュリティ閲覧者**
-- **グローバル閲覧者**
+- **グローバル リーダー**
 
 詳細については、「[Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)」を参照してください。
 

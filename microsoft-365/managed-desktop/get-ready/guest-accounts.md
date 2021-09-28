@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: bb181ab213cc02e5289681b8c3965a96bd8b8dcb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 646007176a35506f0c30d6b7092d70f52f762e57
+ms.sourcegitcommit: 835dcaf5d5e0b485dc3ac485ded8943046afe36c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191101"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59941981"
 ---
 # <a name="prerequisites-for-guest-accounts"></a>ゲスト アカウントの前提条件
 
@@ -30,6 +30,8 @@ Microsoft マネージド デスクトップアカウントアクセスには、
     -   [指定した **ドメインへの** 招待のみを許可する ] (最も制限の厳しい) を *選択した場合* は、Microsoft.com がターゲット ドメインに表示されます。
 
 これらの設定を操作する制限を設定する場合は、必ずモダン Workplace サービス Azure Active Directory **を除外してください**。 たとえば、ゲスト アカウントによる Intune ポータルへのアクセスを妨げる条件付きアクセス ポリシーがある場合は、このポリシーからモダン **Workplace サービス** アカウント グループを除外します。
+
+詳細については [、「B2B 外部コラボレーションを有効にする」および「ゲストを招待できるユーザーを管理する」を参照してください](/azure/active-directory/external-identities/delegate-invitations#to-configure-external-collaboration-settings)。
 
 ## <a name="unlicensed-intune-admin"></a>ライセンスのない Intune 管理者
 

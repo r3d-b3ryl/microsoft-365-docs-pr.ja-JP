@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: トレーニングMicrosoft 365分類子は、ラボリングやポリシー アプリケーション用にさまざまな種類のコンテンツを認識するために、正のサンプルと負のサンプルを見てトレーニングできるツールです。
-ms.openlocfilehash: ea4be5c5e429e3305373229020bfb5444912b365
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 086ca0575bc701deccbb7c49dbc7c71bdd838d5a
+ms.sourcegitcommit: 835dcaf5d5e0b485dc3ac485ded8943046afe36c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164094"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59942015"
 ---
 # <a name="learn-about-trainable-classifiers"></a>トレーニング可能な分類子の詳細
 
@@ -57,7 +57,7 @@ ms.locfileid: "59164094"
 感度ラベルは、条件として分類子を使用できます。「コンテンツに自動的に感度ラベルを適用 [する」を参照してください](apply-sensitivity-label-automatically.md)。
 
 > [!IMPORTANT]
-> 分類子は、暗号化されていないアイテムと英語のアイテムでのみ動作します。
+> 分類子は、暗号化されていないアイテムでのみ動作します。
 
 ## <a name="types-of-classifiers"></a>分類子のタイプ
 
@@ -115,6 +115,9 @@ Microsoft 365には、5 つの事前トレーニング済み分類子が付属�
 > [!IMPORTANT]
 > 不快な言語、嫌がらせ、冒とく、差別、脅威分類子は検索可能なテキストでのみ機能し、これらの分野の用語や言語の完全なリストではありません。 さらに、言語と文化の基準は絶えず変化し、これらの現実に照らして、Microsoft は独自の裁量でこれらの分類子を更新する権利を留保します。 分類子は組織がこれらの領域を検出する場合に役立ちますが、分類子は、そのような言語の使用を検出または対処する組織の唯一の手段を提供することを目的としていない。 Microsoft または子会社ではなく、組織は、事前トレーニング済みの分類者によって識別されたコンテンツの監視、スキャン、ブロック、削除、保持に関連するすべての決定 (地域のプライバシーや他の適用される法律の遵守を含む) に対して引き続き責任を負います。 Microsoft では、展開と使用の前に法律顧問とのコンサルティングを推奨しています。
 
+事前トレーニング済みの分類子は、次の言語でコンテンツをスキャンできます。
+
+• 中国語 (簡体字) • 英語 • フランス語 • ドイツ語 • イタリア語 • 日本語 • ポルトガル語 • スペイン語
 
 ### <a name="custom-classifiers"></a>カスタム分類子
 
