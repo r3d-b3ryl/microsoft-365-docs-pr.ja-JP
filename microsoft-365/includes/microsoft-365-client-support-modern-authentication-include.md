@@ -26,7 +26,7 @@
 |PROJECT|該当なし|該当なし|該当なし|✔|該当なし|
 |PUBLISHER|該当なし|該当なし|該当なし|✔|該当なし|
 |SHAREPOINT ADMIN|該当なし|該当なし|該当なし|✔|該当なし|
-|SHAREPOINT|✔|✔|該当なし|該当なし|該当なし|
+|SHAREPOINT|✔|該当なし|該当なし|該当なし|該当なし|
 |SKYPE FOR BUSINESS ADMIN|該当なし|該当なし|該当なし|✔|該当なし|
 |SKYPE FOR BUSINESS|✔|✔|✔|✔|該当なし|
 |付箋|該当なし|該当なし|該当なし|該当なし|✔|
