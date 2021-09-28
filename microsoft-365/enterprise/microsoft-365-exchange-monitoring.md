@@ -16,12 +16,12 @@ ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
 description: Exchange Online の監視を使用して、Microsoft 365 でのメールのインシデントや勧告の情報について確認します。
-ms.openlocfilehash: 8831e63e8c522513828a9dc3af83c5baf586f5f0
-ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
+ms.openlocfilehash: 0f3b93d13d503ef09edc98f3f9c90f9a1f2a0a32
+ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59480990"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59933845"
 ---
 # <a name="exchange-online-monitoring-for-microsoft-365"></a>Microsoft 365 の Exchange Online の監視
 
@@ -31,21 +31,21 @@ ms.locfileid: "59480990"
 - **サードパーティのインフラストラクチャ**: 組織が依存関係にあるサードパーティのインフラストラクチャで問題が検出され、解決するには所属の組織によるアクションが必要です。 たとえば、ユーザー認証のトランザクションが、ユーザーが Exchange Online にアクセスできないようにするサードパーティのセキュリティ トークン サービス (STS) プロバイダーによって調整される場合などです。
 - **顧客のインフラストラクチャ**: 組織のインフラストラクチャで問題が検出され、解決するには所属の組織によるアクションが必要です。 たとえば、組織によってホストされている STS プロバイダーから承認トークンを取得できないため、ユーザーが Exchange Online にアクセスできない場合などです。
 
-組織のシナリオ向けに、**[正常性]**  > [ **サービス正常性]**](https://go.microsoft.com/fwlink/p/?linkid=842900) の正常性から利用できる、Microsoft 365 管理センターの **[サービス正常性]** ページの例を次に示します。
+以下は、組織のシナリオにおける Microsoft 365 管理センターの **[サービス正常性]** ページの例です。これは、**[正常性] > [サービス正常性]** と [優先アカウント](../admin/setup/priority-accounts.md) から利用できます。
 
 ![Microsoft 365 管理センターの [サービス正常性] ページ。](../media/microsoft-365-exchange-monitoring/service-health-dashboard-example.png)
 
-**[組織の問題]** は、組織レベルの監視によって識別され、使用されます。
+**[組織の問題]** は、組織レベルの監視と優先アカウントの監視によって識別され、使用されます。
 
-**[組織の問題]** の **[正常性]** の列の値は、組織のインフラストラクチャまたはサードパーティ製のソフトウェアが、組織のユーザーの Exchange Online におけるサービス正常性のエクスペリエンスに影響を与えるかどうかを示します。 勧告やインシデントを解決するには、*ユーザー* のアクションが必要です。
+**[組織の問題]** の **[正常性]** の列の値は、組織のインフラストラクチャまたはサードパーティ製のソフトウェアが Exchange Online で組織のユーザーや優先アカウントのサービス正常性エクスペリエンスに影響を与えるかどうかを示します。 勧告やインシデントを解決するには、*ユーザー* のアクションが必要です。
 
 **[Microsoft サービス正常性]** の **[正常性]** 列の値は、サービスが正常な状態にあるか、Microsoft が維持するクラウド サービスに基づいて勧告やインシデントがあるかどうかを示します。
 
-次に、**[正常性]** > [**[サービスの正常性]**](https://go.microsoft.com/fwlink/p/?linkid=842900) > **[Exchange Online]** から利用可能な組織レベルのシナリオの正常性を示す Microsoft 365 管理センター の [監視] ページの例を示します。
+以下は、Microsoft 365 管理センターの Exchange Online の監視ページで、組織レベルのシナリオと優先アカウントのシナリオの正常性の一例を示しています。これは、**[正常性] > [サービス正常性] > [Exchange Online]** から利用できます。
 
 ![Microsoft 365 管理センターの Exchange Online の監視ページ。](../media/microsoft-365-exchange-monitoring/exchange-monitoring-example.png)
 
-**Exchange Online** の監視ページで、Exchange Online サービスが正常な状態かどうか、関連するインシデントや勧告がないかどうかを確認できます。 Exchange Online の監視で、特定のメールのシナリオにおけるサービス正常性を確認し、リアルタイムに近い信号を表示して組織レベルのシナリオごとに影響を特定できます。
+**Exchange Online** の監視ページで、Exchange Online サービスが正常な状態かどうか、関連するインシデントや勧告がないかどうかを確認できます。 Exchange Online の監視で、特定のメールのシナリオにおけるサービス正常性を確認し、リアルタイムに近い信号を表示して組織レベルのシナリオごとに影響を特定できます。 優先アカウントのシナリオの正常性も確認できます。
 
 ## <a name="requirements"></a>要件
 
@@ -77,7 +77,7 @@ Exchange Online の監視は次のシナリオをサポートしています。
    >[!Note]
    > アクティブ ユーザー数は、ユーザーがメールを読むときなど、1 つのアクティビティによって測定されます。 過去 30 分間のアクティビティだけを把握しています。
 
-- **アプリ接続**: 推定接続は、組織のデバイスと Exchange Online 間の成功した代理接続の割合に基づいており、Microsoft の管理外の問題が含まれる場合があります。 
+- **アプリ接続**: 推定接続は、組織のデバイスと Exchange Online 間の成功した代理接続の割合に基づいており、Microsoft の管理外の問題が含まれる場合があります。 詳細については、「[Microsoft 365 接続光学](microsoft-365-connectivity-optics.md)」を参照してください。
 
 - **基本認証と先進認証**: Exchange Online サービスで正常に検証されたユーザー数。
 
@@ -86,6 +86,44 @@ Exchange Online の監視は次のシナリオをサポートしています。
   ![メール配信における Exchange の正常性を監視する例。](../media/microsoft-365-exchange-monitoring/exchange-monitoring-scenario-example.png)
 
 これらのシナリオでは、主要な数値はメイン ダッシュボードの過去 30 分間です。 これらの各シナリオの詳細表示には、前の週と比較した 30 分の集計で、7 日間のほぼリアルタイムの傾向が示されます。
+
+## <a name="priority-accounts-monitoring-scenarios"></a>優先アカウント監視シナリオ
+
+Exchange Online の優先アカウント監視では、[優先アカウント](/microsoft-365/admin/setup/priority-accounts) を構成すると次のシナリオの正常性を確認できます。
+
+- Exchange のライセンス
+
+- メールボックス記憶域
+
+- メッセージの制限
+
+- フォルダーごとのサブフォルダー数
+
+- フォルダー階層
+
+- 回復可能なアイテム
+
+Exchange のライセンスが付与されるシナリオでは、ライセンスの無効で優先アカウントがログインできなくなっていることを確認します。これは、テナント管理者でも対処することができます。
+
+上記の残りの 5 つのシナリオでは、優先アカウントのメールボックスが [Exchange Online の制限](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#mailbox-storage-limits) で説明された制限に近づいているか、または制限を越しているかを確認します。
+
+これらのシナリオでは、優先アカウントに影響を与えるアクティブなアドバイザリとインシデントと解決済みのアドバイザリとインシデントを確認できます。 推奨事項といっしょに優先アカウント用の識別可能情報が、アドバイザリまたはインシデントの詳細に表示されます。 以下は、**正常性 > サービス正常性 > Exchange Online** のページの一例を示しています。
+
+:::image type="content" source="../media/microsoft-365-exchange-monitoring/exchange-priority-accounts-example.png" alt-text="優先アカウントに影響を与えるアクティブなアドバイザリとインシデントと解決済みのアドバイザリとインシデントの例":::
+
+影響を受けるアカウント ウィンドウの **状態** 列には、次の値が表示されます。
+
+- 修正済み: 優先アカウントでアドバイザリまたはインシデントの原因となった問題に対処しました。 問題はありません。 
+
+- アクティブ: 優先アカウントでアドバイザリまたはインシデントの原因となっている問題に対処しています。 問題があります。 
+
+- 遅延: 優先アカウントでアドバイザリまたはインシデントの原因となっている問題は 96 時間以内に対処されていないため、中断されています。 問題があります。 
+
+次に例を示します。
+
+:::image type="content" source="../media/microsoft-365-exchange-monitoring/exchange-status-column-example.png" alt-text="影響を受けるアカウント ウィンドウの状態列の例":::
+
+アドバイザリまたはインシデントは、**アクティブ** 状態のアカウントがなくなると解消されます。 
 
 ## <a name="send-us-feedback"></a>フィードバックを送信する
 
@@ -103,13 +141,13 @@ Exchange Online の監視は次のシナリオをサポートしています。
 
 まず、<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>の **[ホーム]** ページで新しい管理センターが有効になっていることを確認してください。
 
-次に、次の両方の要件を満たしていることを確認してください。 
+次に、次の両方の要件を満たしていることを確認してください。
 
-- 組織に Office 365 E3、Microsoft 365 E3、Office 365 E5、Microsoft 365 E5 の製品のいずれか 1 つまたは組み合わせから 5,000 個以上のライセンス数が必要です。 
+- 組織に Office 365 E3、Microsoft 365 E3、Office 365 E5、Microsoft 365 E5 の製品のいずれか 1 つまたは組み合わせから 5,000 個以上のライセンス数が必要です。
 
-- 組織に月間 50 人以上のアクティブな Exchange Online ユーザーが必要です。
+- 組織には、Microsoft Teams、OneDrive for Business、SharePoint Online、Exchange Online、および Office アプリを含む 1 つ以上のコア Microsoft 365 サービスに対して、少なくとも 50 人の月間アクティブ ユーザーが必要です。
 
-組織のライセンス数が 5,000 ユーザーを下回り、月間アクティブ ユーザー数が 50 を下回る場合、この要件が満たされるまで Exchange Online の監視は有効になりません。
+組織のライセンス数が 5,000 ユーザーを下回り、コア サービスの月間アクティブ ユーザー数が 50 を下回る場合、この要件が満たされるまで Exchange Online の監視は有効になりません。
 
 #### <a name="2-the-active-user-count-in-the-dashboard-for-each-client-appears-to-be-low-we-have-a-lot-of-active-licenses-assigned-to-users-what-does-this-mean"></a>2. 各クライアントのダッシュボードのアクティブ ユーザー数が少なく表示されます。 しかし、多くの有効なライセンスがユーザーにアサインされています。 これはどういうことですか?
 
@@ -146,4 +184,11 @@ Microsoft は、Exchange Online の監視を Microsoft 365 管理センターの
 ## <a name="see-also"></a>関連項目
 
 - [Microsoft 365 サービス正常性を確認する方法](view-service-health.md) 
+
 - [Exchange Online の制限](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#mailbox-storage-limits)
+
+- [優先アカウントを管理および監視する](/microsoft-365/admin/setup/priority-accounts)
+
+- [Microsoft 365 での優先アカウント使用](https://techcommunity.microsoft.com/t5/microsoft-365-blog/using-priority-accounts-in-microsoft-365/ba-p/1873314)
+
+- [Exchange Online 監視でのメールボックス使用率サービスのアラート](microsoft-365-mailbox-utilization-service-alerts.md)
