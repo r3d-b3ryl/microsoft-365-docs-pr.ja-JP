@@ -16,12 +16,12 @@ ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
 description: Exchange Online の監視を使用して、Microsoft 365 でのメールのインシデントや勧告の情報について確認します。
-ms.openlocfilehash: 0f3b93d13d503ef09edc98f3f9c90f9a1f2a0a32
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: 2c97e161c46998f9a78e14b1efc2eb0e701e5b01
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59933845"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988249"
 ---
 # <a name="exchange-online-monitoring-for-microsoft-365"></a>Microsoft 365 の Exchange Online の監視
 
@@ -70,7 +70,6 @@ Exchange Online の監視は次のシナリオをサポートしています。
   - iOS と Android のネイティブのメール クライアント
   - iOS と Android の Outlook モバイル アプリ
   - Outlook Mac クライアント
-  - Outlook on the web を開きます。
 
    これらのクライアントについては、メールを読んでいるユーザーに基づいて過去 30 分間のアクティブ ユーザー数を表示すると共に、ダッシュボードのインシデントと勧告の数も表示できます。 このデータは、問題があるかどうかを確認するために、前の週の同じ間隔と比較されます。
 
@@ -113,11 +112,11 @@ Exchange のライセンスが付与されるシナリオでは、ライセン�
 
 影響を受けるアカウント ウィンドウの **状態** 列には、次の値が表示されます。
 
-- 修正済み: 優先アカウントでアドバイザリまたはインシデントの原因となった問題に対処しました。 問題はありません。 
+- 修正済み: 優先アカウントでアドバイザリまたはインシデントの原因となった問題に対処しました。問題はありません。 
 
-- アクティブ: 優先アカウントでアドバイザリまたはインシデントの原因となっている問題に対処しています。 問題があります。 
+- アクティブ: 優先アカウントでアドバイザリまたはインシデントの原因となっている問題に対処しています。問題は現在も存在します。 
 
-- 遅延: 優先アカウントでアドバイザリまたはインシデントの原因となっている問題は 96 時間以内に対処されていないため、中断されています。 問題があります。 
+- 遅延: 優先アカウントでアドバイザリまたはインシデントの原因となっている問題は 96 時間以内に対処されていないため、中断されています。問題は現在も存在します。 
 
 次に例を示します。
 

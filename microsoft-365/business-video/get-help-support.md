@@ -22,16 +22,17 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 for Business サブスクリプションのオンラインまたは電話によるサポートを受ける方法を説明します。 これらのサポート方法を使用するには、一般法人向けサブスクリプションの管理者である必要があります。
-ms.openlocfilehash: a83085a9cc7abc66aa3505208b8480c94f7b692a
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: e224b5a6224dc182d36a99f0b7943a586c64b08a
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59934061"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988609"
 ---
 # <a name="get-support"></a>サポートを受ける
 
 ::: moniker range="o365-worldwide"
+
 ## <a name="watch-get-help-or-support"></a>視聴: ヘルプまたはサポートを利用する
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOgo?autoplay=false]
@@ -76,6 +77,12 @@ ms.locfileid: "59934061"
 サポートの電話番号が上記にない場合は、下のドロップダウンメニューを使用して国または地域の番号を検索します。
 
 [!INCLUDE [country-region-support-dropdown-list](../admin/includes/country-region-support-dropdown-list.md)]
+
+## <a name="small-business-support-with-business-assist"></a>ビジネスサポートによる小規模ビジネスのサポート
+
+小規模ビジネスの専門家からの専門的なアドバイスを受け、サブスクリプションを最大限に活用できます。
+
+Microsoft 365 のビジネスサポートでは、小規模ビジネス向けに設計されており、オンボーディングから日常の使用まで、ビジネスの成長に合わせて、小規模ビジネスのスペシャリストに 24 時間アクセスできます。 詳細については、「[ビジネスサポート](../admin/misc/business-assist.md)」を参照してください。
 
 ::: moniker-end
 
@@ -239,7 +246,6 @@ Office 365 Germany の管理者は、知識の豊富なサポート担当者に�
 [Microsoft 365 for business コミュニティ フォーラム](https://go.microsoft.com/fwlink/p/?LinkId=518605)を検索して、既知の問題や最近の傾向に関する話題を検索したり、新しい質問を投稿したりすることもできます。コミュニティ フォーラムはユーザーの問題を解決できるよう訓練を受けた Microsoft サポート エージェントが監視しています。
 
 ::: moniker-end
-
 
 ## <a name="related-content"></a>関連コンテンツ
 
