@@ -2,8 +2,8 @@
 title: メール フロー インテリジェンス
 f1.keywords:
 - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: troubleshooting
@@ -14,12 +14,12 @@ ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: 管理者は、コネクタ (メール フロー インテリジェンスとも呼ばれる) を使用してメッセージ配信に関連付けられているエラー コードについて説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e8df87c5d8a93bec8051f29c1ba8eae0fbe8bab9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bd0d44ae991ec37cf76b664fd56ae9123c98eac8
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211683"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988969"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>EOP でのメール フロー インテリジェンス
 

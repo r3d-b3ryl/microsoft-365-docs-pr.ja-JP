@@ -2,8 +2,8 @@
 title: メール フロー ダッシュボードの送信メール フローと受信メール フローの分析情報
 f1.keywords:
 - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -13,12 +13,12 @@ ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: 管理者は、セキュリティ コンプライアンス センターのメール フロー ダッシュボードで、送信メール フローと受信メール フロー&できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6fe4f7bded7a3d1fcca26d537de24513f27bc0ec
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 278f9620b0416a1bdc23ba1efaa1581a5318b6a7
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192310"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988465"
 ---
 # <a name="outbound-and-inbound-mail-flow-insight-in-the-security--compliance-center"></a>セキュリティ コンプライアンス センターでの送信メール フローと受信メール フロー&分析
 

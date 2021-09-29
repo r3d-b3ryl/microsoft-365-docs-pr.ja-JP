@@ -2,8 +2,8 @@
 title: 新しいドメインにメールが転送されていますのインサイト
 f1.keywords:
 - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.assetid: ''
 description: 管理者は、セキュリティ & コンプライアンス センターのメール フロー ダッシュボードで、転送される新しいドメインを使用して、転送されたことがない外部ドメインにメッセージを転送するユーザーを調査する方法について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 87af41d4c6fe1964510944f0ad06554056ce4f37
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ae1d7ce0bb62082797afc0d4a2bee77fbc24c982
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59217994"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988513"
 ---
 # <a name="new-domains-being-forwarded-email-insight-in-the-security--compliance-center"></a>セキュリティ コンプライアンス センターで電子メールの分析情報を転送&ドメイン
 

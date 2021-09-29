@@ -20,12 +20,12 @@ ms.custom:
 description: 管理者は、Microsoft 365 E5 または Microsoft Defender for Office 365 プラン 2 組織の攻撃シミュレーションとトレーニングに関する展開に関する考慮事項とよく寄せられる質問について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a47f953b0c87e3ab88df45f150bd2e6d71611664
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 239d1e4bf28a93627a80ea40375e6791e1a3a5a8
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214504"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988441"
 ---
 # <a name="attack-simulation-training-deployment-considerations-and-faq"></a>攻撃シミュレーション トレーニングの展開に関する考慮事項と FAQ
 
@@ -51,7 +51,7 @@ URL レピュテーション サービスは、攻撃シミュレーション �
 
 ### <a name="phishing-simulation-and-admin-urls-blocked-by-network-proxy-solutions-and-filter-drivers"></a>ネットワーク プロキシ ソリューションとフィルター ドライバーによってブロックされるフィッシング シミュレーションと管理 URL
 
-フィッシング シミュレーション URL と管理 URL の両方が、中間セキュリティ デバイスまたはフィルターによってブロックまたは削除される可能性があります。 以下に例を示します。
+フィッシング シミュレーション URL と管理 URL の両方が、中間セキュリティ デバイスまたはフィルターによってブロックまたは削除される可能性があります。 次に例を示します。
 
 - ファイアウォール
 - Web アプリケーション ファイアウォール (WAF) ソリューション
@@ -118,7 +118,7 @@ URL レピュテーション サービスは、攻撃シミュレーション �
 
 ### <a name="messages-reported-as-phishing-by-users-arent-appearing-in-simulation-reports"></a>ユーザーがフィッシングとして報告したメッセージがシミュレーション レポートに表示されない
 
-攻撃シミュレーター トレーニングのシミュレーション レポートでは、ユーザーのアクティビティに関する詳細を提供します。 以下に例を示します。
+攻撃シミュレーター トレーニングのシミュレーション レポートでは、ユーザーのアクティビティに関する詳細を提供します。 次に例を示します。
 
 - メッセージ内のリンクをクリックしたユーザー。
 - 資格情報を渡したユーザー。
@@ -139,7 +139,7 @@ A: ターゲット ユーザーに使用できるオプションは複数あり�
 
 - すべてのユーザーを含める (現在、40,000 人未満のユーザーを持つ組織で利用可能)。
 - 特定のユーザーを選択します。
-- CSV ファイルからユーザーを選択します。
+- CSV ファイル (1 行に 1 つのメール アドレス) からユーザーを選択します。
 - Azure ADベースのターゲット設定を使用します。
 
 対象ユーザーが Azure グループによって識別されるキャンペーンは、通常、AD簡単に管理できると分かっています。

@@ -2,8 +2,8 @@
 title: 新しいユーザーがメールを転送していますのインサイト
 f1.keywords:
 - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.assetid: ''
 description: 管理者は、セキュリティ & コンプライアンス センターで電子メールの分析情報を転送する新しいユーザーを使用して、組織内のユーザーが新しいドメインにメッセージを転送する際に調査する方法について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d517b5f9a7146d7256b89ae4e4d4d5f4aa6fc14f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: dedef9cdd407859b69a0d15571f3131138ddcccb
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59217993"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988933"
 ---
 # <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>セキュリティ コンプライアンス センターで電子メールの分析情報を&する新しいユーザー
 
@@ -102,7 +102,7 @@ ms.locfileid: "59217993"
 
 - **名前**: これは、送信者の電子メール アドレス ([データの表示 **:** 新しい転送ユーザー ビュー] から) または送信者のメール ドメイン ([データの表示 **:** 新しい転送ドメイン] ビューから) のいずれかです。
 - **転送の種類**
-- **[受信者]**
+- **Recipient**
 - **詳細**
 - **Count**
 - **開始日**

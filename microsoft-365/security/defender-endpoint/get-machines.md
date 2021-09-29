@@ -16,12 +16,12 @@ ms.topic: article
 ms.collection: M365-security-compliance
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 8ffeca3d13b42e39f539e96d563aceabd464aeaf
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2e5b4b67980c3d1450832e84ab0d2a1396c2a69d
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189521"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988381"
 ---
 # <a name="list-machines-api"></a>マシン API の一覧
 
@@ -41,7 +41,7 @@ Microsoft Defender for Endpoint クラウド [と](machine.md) 通信したコ�
 
 [OData V4 クエリをサポートします](https://www.odata.org/documentation/)。
 
-OData のクエリは `$filter` 、で `computerDnsName` `id` `version` `deviceValue` `aadDeviceId` `machineTags` `lastSeen` `exposureLevel` `lastIpAddress` `healthStatus` `osPlatform` `riskScore` サポートされています `rbacGroupId` 。
+OData のクエリは、 で `$filter` `computerDnsName` `id` `version` `deviceValue` `aadDeviceId` `machineTags` `lastSeen` `exposureLevel` `onboardingStatus` `lastIpAddress` `healthStatus` `osPlatform` `riskScore` サポートされています `rbacGroupId` 。
 <br>```$stop``` 最大値が 10,000 の場合
 <br>```$skip``` Defender for Endpoint を使用した [OData クエリの例を参照してください。](exposed-apis-odata-samples.md)
 
@@ -57,8 +57,8 @@ OData のクエリは `$filter` 、で `computerDnsName` `id` `version` `deviceV
 :---|:---|:---
 アプリケーション|Machine.Read.All|'すべてのコンピューター プロファイルを読み取る'
 アプリケーション|Machine.ReadWrite.All|'すべてのコンピューター情報の読み取りと書き込み'
-委任 (職場または学校アカウント)|Machine.Read|'コンピューター情報の読み取り'
-委任 (職場または学校アカウント)|Machine.ReadWrite|'コンピューター情報の読み取りおよび書き込み'
+委任 (職場または学校のアカウント)|Machine.Read|'コンピューター情報の読み取り'
+委任 (職場または学校のアカウント)|Machine.ReadWrite|'コンピューター情報の読み取りおよび書き込み'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
@@ -76,7 +76,7 @@ GET https://api.securitycenter.microsoft.com/api/machines
 
 名前|型|説明
 :---|:---|:---
-Authorization|String|ベアラー {token}。 **必須**
+Authorization|String|ベアラー {token}。 **必須**。
 
 ## <a name="request-body"></a>要求本文
 

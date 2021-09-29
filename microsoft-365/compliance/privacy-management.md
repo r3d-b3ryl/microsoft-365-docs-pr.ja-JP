@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft のプライバシー管理は、組織が保管している個人データをMicrosoft 365、プライバシー リスクの特定と修復に役立つソリューションを提供します。
-ms.openlocfilehash: 1243e786dcfa936802b0e82eb217ec6fc4f45bbf
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9eddf65236befb35df7927e1ff3f7e4ddf6f03e7
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163935"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988669"
 ---
 # <a name="microsoft-privacy-management-preview"></a>Microsoft プライバシー管理 (プレビュー)
 
@@ -83,7 +83,7 @@ Microsoft 365管理は、組織がクラウド サービスに保存したデー
 
 ## <a name="how-privacy-management-identifies-items-with-personal-data"></a>プライバシー管理が個人データを含むアイテムを識別する方法
 
-プライバシー管理は、重要なアイテムを識別Microsoft 365タグ付けするのに役立つ、ユーザーの機能を利用します。 これは、機密情報の種類[(SIT)、](sensitive-information-type-learn-about.md)トレーニング可能な分類子、[](classifier-learn-about.md)および機密ラベルの自動および手動適用を[使用して行われます](sensitivity-labels.md)。
+プライバシー管理は、重要なアイテムを識別Microsoft 365タグ付けするのに役立つ、ユーザーの機能を利用します。 これは、機密情報の種類 [(SIT)](sensitive-information-type-learn-about.md) と機密ラベルの適用を使用 [して行われます](sensitivity-labels.md)。
 
 機密情報の種類 (SIT) は、Microsoft データ分類でサポートされるデータ型です。 たとえば、これらのデータ型には、名前、住所、社会保障番号などの個人に関する個人情報が含まれます。
 

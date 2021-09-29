@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2e7ec8ca3b9f428708c21c5a75bbfd4174373d62
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: bbf230d7ae21bd694fb3568b51903d6fa6581ab9
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491327"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988789"
 ---
 # <a name="web-content-filtering"></a>Web コンテンツ フィルタリング
 
@@ -30,10 +30,6 @@ ms.locfileid: "59491327"
 **適用対象:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-
-> [!IMPORTANT]
-> **Web コンテンツ フィルターは現在パブリック プレビュー中です**<br>
-> このプレビュー バージョンはサービス レベル アグリーメントなしで提供されているため、実稼働ワークロードでの使用はお勧めしません。 一部の機能はサポートされないか、機能が制限される可能性があります。 詳細については、「[Microsoft Defender for Endpoint のプレビュー機能](preview.md)」をご覧ください。
 
 > [!TIP]
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
@@ -161,7 +157,7 @@ Web コンテンツ フィルター ポリシーは、どのサイト カテゴ�
   
 </details>
 
-### <a name="create-a-policy"></a>ポリシーの作成
+### <a name="create-a-policy"></a>ポリシーを作成する
 
 新しいポリシーを追加するには、次の手順を実行します。
 

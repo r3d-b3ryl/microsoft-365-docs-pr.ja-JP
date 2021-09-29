@@ -17,12 +17,12 @@ ms.custom: ''
 description: 管理者は、Exchange Online Protection (EOP) の高度な配信ポリシーを使用して、サポートされている特定のシナリオ (サード パーティのフィッシング シミュレーションとセキュリティ操作 (SecOps) メールボックスに配信されるメッセージ) でフィルター処理すべきではないメッセージを識別する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: baea981e712a02bfffb6b664d4bb6a3d8c9b5ae5
-ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
+ms.openlocfilehash: 5045e3ce38c1ae1a0d1f59aaa4a0daddde112d6a
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59481050"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988957"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>サードパーティのフィッシング シミュレーションをユーザーに配信し、フィルター処理されていないメッセージを SecOps メールボックスに配信する構成
 
@@ -317,7 +317,7 @@ New-PhishSimOverridePolicy -Name PhishSimOverridePolicy
 次の構文を使用してください。
 
 ```powershell
-New-PhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePolicy -SenderDomainIs <Domain1>,<Domain2>,...<DomainN> -SenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntryN>
+New-PhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePolicy -Domains <Domain1>,<Domain2>,...<Domain10> -SenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntry10>
 ```
 
 指定した Name 値に関係なく、ルール名は、一意の GUID 値である _PhishSimOverrideRule_ \<GUID\> になります (たとえば \<GUID\> 、a0eae53e-d755-4a42-9320-b9c6b55c5011 など)。
@@ -331,7 +331,7 @@ New-PhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePoli
 次の使用例は、指定した設定でフィッシング シミュレーションオーバーライド ルールを作成します。
 
 ```powershell
-New-PhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePolicy -SenderDomainIs fabrikam.com,wingtiptoys.com -SenderIpRanges 192.168.1.55
+New-PhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePolicy -Domains fabrikam.com,wingtiptoys.com -SenderIpRanges 192.168.1.55
 ```
 
 構文とパラメーターの詳細については [、「New-PhishSimOverrideRule」を参照してください](/powershell/module/exchange/new-phishsimoverriderule)。
@@ -341,7 +341,7 @@ New-PhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePoli
 次の構文を使用してください。
 
 ```powershell
-New-TenantAllowBlockListItems -Allow -ListType Url -ListSubType AdvancedDelivery -Entries "<URL1>","<URL2>",..."<URLN>" <[-NoExpiration] | [-ExpirationDate <DateTime>]>
+New-TenantAllowBlockListItems -Allow -ListType Url -ListSubType AdvancedDelivery -Entries "<URL1>","<URL2>",..."<URL10>" <[-NoExpiration] | [-ExpirationDate <DateTime>]>
 ```
 
 URL 構文の詳細については、「テナント許可/ブロック一 [覧の URL 構文」を参照してください](tenant-allow-block-list.md#url-syntax-for-the-tenant-allowblock-list)。
@@ -494,4 +494,3 @@ Remove-TenantAllowBlockListItems -ListType Url -ListSubType AdvancedDelivery –
 ```
 
 構文とパラメーターの詳細については [、「Remove-TenantAllowBlockListItems」を参照してください](/powershell/module/exchange/remove-tenantallowblocklistitems)。
-

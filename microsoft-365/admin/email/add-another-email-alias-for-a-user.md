@@ -12,6 +12,7 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
@@ -22,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: 'ビジネス アカウントに関連付けられたメール エイリアスと呼ばれる複数の電子メール アドレスをMicrosoft 365する方法について説明します。 '
-ms.openlocfilehash: 83413bcf0adffd0af09405db7e936cec523530d9
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 06a125fac933ca8755c7306b77024365393d00c2
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774858"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988213"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>ユーザーに別のメール エイリアスを追加する
   
@@ -44,9 +45,9 @@ ms.locfileid: "59774858"
   
 ## <a name="add-email-aliases-to-a-user"></a>ユーザーにメール エイリアスを追加する
 
-これを行うには [、管理者のアクセス許可](../add-users/about-admin-roles.md) が必要です。 
+メール エイリアスをユーザーに追加するには、グローバル管理者権限が必要です。
 
-1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> の順に選択します。
+1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
 2. [アクティブ な **ユーザー] ページ** で、[ユーザー名とメール> **管理する] のユーザーを選択します**。 ユーザーにライセンスが割り当てられていない場合、このオプションは表示しません。 
     

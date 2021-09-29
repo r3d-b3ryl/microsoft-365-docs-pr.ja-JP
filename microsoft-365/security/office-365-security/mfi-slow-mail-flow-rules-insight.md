@@ -2,8 +2,8 @@
 title: 時間のかかるメール フロー ルールの修正のインサイト
 f1.keywords:
 - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -15,12 +15,12 @@ ms.custom:
 description: 管理者は、セキュリティ & コンプライアンス センターで [低速メール フロー ルールの修正] 分析情報を使用して、組織内の非効率的または壊れたメール フロー ルール (トランスポート ルールとも呼ばれる) を特定して修正する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 76fdfd7595fc3a7c760eadd51498883d8d7a63fe
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 31c755c2d5412840def5a47f464042bce9a8202e
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59217973"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988453"
 ---
 # <a name="fix-slow-mail-flow-rules-insight-in-the-security--compliance-center"></a>セキュリティ コンプライアンス センターでメール フロー ルールの分析情報が遅&修正する
 

@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: 管理者は、Microsoft Defender for Office 365 の攻撃シミュレーション トレーニングを使用して、フィッシング攻撃をシミュレートし、フィッシング防止に関するユーザーをトレーニングする方法を学Office 365。
 ms.technology: mdo
-ms.openlocfilehash: 40baa8aa3eda6f0f6045115d45e2dac1426c4455
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 304baf82d2b951ada35dc6cb97add1ac85b27236
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214454"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988717"
 ---
 # <a name="simulate-a-phishing-attack"></a>フィッシング攻撃をシミュレートする
 
@@ -81,7 +81,7 @@ microsoft Defender for Office 365 の攻撃シミュレーション トレーニ
 
   ![ポータルでの攻撃シミュレーション トレーニングでのユーザー フィルター Microsoft 365 Defenderします。](../../media/attack-sim-preview-user-targeting.png)
 
-- **CSV からインポートすると** 、このシミュレーション用に定義済みの一連のユーザーをインポートできます。
+- **CSV からインポートすると** 、このシミュレーション用に定義済みの一連のユーザーをインポートできます。 CSV ファイルには、1 行に 1 つのメール アドレスが含まれている必要があります。
 
 ## <a name="assigning-training"></a>トレーニングの割り当て
 

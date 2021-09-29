@@ -2,8 +2,8 @@
 title: メール フロー ダッシュボードのキューの分析情報
 f1.keywords:
 - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: 管理者は、セキュリティ & コンプライアンス センターのメール フロー ダッシュボードでキュー ウィジェットを使用して、送信コネクタを超えるオンプレミスまたはパートナー組織への失敗したメール フローを監視する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: eb907d6eed5ce1c406288338c478936db00e4a67
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4acebd3ca65eedf82cead5f51c23a0f8bc3f01a2
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59217974"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988429"
 ---
 # <a name="queues-insight-in-the-security--compliance-center"></a>コンプライアンス センターのセキュリティ &キューの分析情報
 

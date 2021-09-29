@@ -2,8 +2,8 @@
 title: 提出を管理する
 f1.keywords:
 - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
@@ -18,12 +18,12 @@ ms.custom:
 description: 管理者は、Microsoft 365 Defender ポータルの Submits ポータルを使用して、不審なメール、フィッシングメール、スパム、その他有害な可能性のあるメッセージ、URL、および電子メールの添付ファイルを Microsoft に提出して再スキャンする方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b36497ad6abe0325ea5d8830c4e1995370161c87
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 756b26a6d7b2a735cc7ac232348048ce76a1aa1b
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400920"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988729"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>申請ポータルを使用して、疑わしいスパム、フィッシング、URL、ファイルを Microsoft に提出する
 
@@ -86,7 +86,7 @@ Exchange Online メールボックスを持つ組織では、管理者は Micros
    - **ブロックされていない必要があります (誤検知)**
    - **ブロックされている必要** があります: 電子メールが表示されるセクションに分類されている必要があります。次のいずれかの値を選択します (不明な場合は、最善の判断を使用してください)。
      - **フィッシング**
-     - **[スパム]**
+     - **スパム**
      - **マルウェア**
 
 5. 完了したら、[送信] ボタン **をクリック** します。

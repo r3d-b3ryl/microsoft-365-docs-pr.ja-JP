@@ -20,12 +20,12 @@ description: 管理者は、管理者ポータルで使用できるレポート�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2613b8547d27ce39a14bccfb5e3bfe63f66de36f
-ms.sourcegitcommit: 835dcaf5d5e0b485dc3ac485ded8943046afe36c
+ms.openlocfilehash: da89b5421171eefe56363f38e1959cede2ef5afb
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59942091"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988498"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>ポータルでレポートOffice 365 Defender をMicrosoft 365 Defenderする
 
@@ -62,12 +62,12 @@ Office 365 組織向け Microsoft Defender (Microsoft 365 E5 サブスクリプ�
 ## <a name="safe-attachments-file-types-report"></a>セーフ添付ファイルの種類レポート
 
 > [!NOTE]
-> [**添付セーフファイルの種類] レポートは**、最終的に削除されます。 脅威保護の状態レポートでも同 [じ情報を使用できます](#threat-protection-status-report)。
+> このレポートは廃止されました。 脅威保護の状態レポートでも同 [じ情報を使用できます](#threat-protection-status-report)。
 
 ## <a name="safe-attachments-message-disposition-report"></a>セーフ添付ファイル メッセージの廃棄レポート
 
 > [!NOTE]
-> 添付 **セーフメッセージ廃棄レポートは**、最終的に消え去ります。 脅威保護の状態レポートでも同 [じ情報を使用できます](#threat-protection-status-report)。
+> このレポートは廃止されました。 脅威保護の状態レポートでも同 [じ情報を使用できます](#threat-protection-status-report)。
 
 ## <a name="mail-latency-report"></a>メール遅延レポート
 
@@ -110,6 +110,8 @@ Office 365 組織向け Microsoft Defender (Microsoft 365 E5 サブスクリプ�
 - **パーセント :** **50** **、90、****または 99**
 - **メッセージ数**
 - **全体的な待機時間**
+
+メイン レポート ページの [エクスポート] ![ アイコン。](../../media/m365-cc-sc-download-icon.png) **[[エクスポート](view-email-security-reports.md#export-report)** ] ボタンを使用できます。
 
 ## <a name="threat-protection-status-report"></a>脅威保護の状態レポート
 
@@ -162,6 +164,8 @@ Office 365 組織向け Microsoft Defender (Microsoft 365 E5 サブスクリプ�
 - **操作**
 - **アプリ**
 
+メイン レポート ページの [スケジュールの作成 ![ ] アイコン。](../../media/m365-cc-sc-create-icon.png) **[スケジュールの作成](view-email-security-reports.md#schedule-report)**、 ![ レポートの要求アイコン。](../../media/m365-cc-sc-download-icon.png) **[[レポートの要求](view-email-security-reports.md#request-report)**] と [ ![ エクスポート] アイコン。](../../media/m365-cc-sc-download-icon.png) **[エクスポート](view-email-security-reports.md#export-report)** ボタンを使用できます。
+
 ### <a name="view-data-by-url-click-by-application"></a>アプリケーション別の URL クリックによるデータの表示
 
 ![URL 保護レポートのアプリケーション ビューで URL をクリックします。](../../media/url-threat-protection-report-url-click-by-application-view.png)
@@ -193,6 +197,8 @@ Office 365 組織向け Microsoft Defender (Microsoft 365 E5 サブスクリプ�
 - **URL**
 - **操作**
 - **アプリ**
+
+メイン レポート ページの [スケジュールの作成 ![ ] アイコン。](../../media/m365-cc-sc-create-icon.png) **[スケジュールの作成](view-email-security-reports.md#schedule-report)**、 ![ レポートの要求アイコン。](../../media/m365-cc-sc-download-icon.png) **[[レポートの要求](view-email-security-reports.md#request-report)**] と [ ![ エクスポート] アイコン。](../../media/m365-cc-sc-download-icon.png) **[エクスポート](view-email-security-reports.md#export-report)** ボタンを使用できます。
 
 ## <a name="additional-reports-to-view"></a>表示するその他のレポート
 
@@ -232,7 +238,7 @@ PowerShell レポートコマンドレット:
 - **組織の管理**
 - **セキュリティ管理者**
 - **セキュリティ閲覧者**
-- **グローバル リーダー**
+- **グローバル閲覧者**
 
 詳細については、「[Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)」を参照してください。
 

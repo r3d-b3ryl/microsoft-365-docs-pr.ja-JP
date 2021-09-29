@@ -2,8 +2,8 @@
 title: ユーザーが報告したメッセージ設定
 f1.keywords:
 - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -17,12 +17,12 @@ ms.collection:
 description: 管理者は、ユーザーによって報告されるスパムメールやフィッシングメールを収集するメールボックスを構成する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9fc149a8c76180ca2baf0bd38bef149f00611899
-ms.sourcegitcommit: 835dcaf5d5e0b485dc3ac485ded8943046afe36c
+ms.openlocfilehash: 5c2bd56198ac64119ec684422a94914b178d8ecf
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59942351"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59989005"
 ---
 # <a name="user-reported-message-settings"></a>ユーザーが報告したメッセージ設定
 
@@ -145,7 +145,7 @@ Microsoft Defender for Office 365場合は、高度なフィルター処理が�
 - 2|または迷惑メールではない
 - 3|またはフィッシング
 
-例:
+次に例を示します。
 
 `3|This part is ignored by the system` <br>
 `Not Junk:This part of the subject is ignored as well`
