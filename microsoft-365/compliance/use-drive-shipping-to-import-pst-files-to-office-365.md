@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 ms.custom: seo-marvel-apr2020
 description: 管理者は、PST ファイルをハード ドライブにコピー Microsoft 365 Microsoft に配布することで、PST ファイルをメールボックスに一括インポートする方法について説明します。
-ms.openlocfilehash: 30b345a887f0b2288394fc07b3b5b290b58c9fed
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: c80428d1c1fc5fdbb8a8863dc4c6fbc4438d6c26
+ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401808"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60011418"
 ---
 # <a name="use-drive-shipping-to-import-your-organizations-pst-files"></a>ドライブ配布を使用して組織の PST ファイルをインポートする
 
@@ -372,13 +372,13 @@ PST ファイルが Azure にアップロードされると、状態が [進行�
   
 6. 次のいずれかの操作を行います。
 
-    a.  インポートするデータをトリミングする場合は [**はい、インポートする前にフィルター処理します**] をクリックします。
+   1. インポートするデータをトリミングする場合は [**はい、インポートする前にフィルター処理します**] をクリックします。
 
-    PST ファイル内のデータをフィルター処理してインポート ジョブを開始する手順の詳細については、「[Office 365 に PST ファイルをインポートするときにデータをフィルター処理する](filter-data-when-importing-pst-files.md)」を参照してください。
+      PST ファイル内のデータをフィルター処理してインポート ジョブを開始する手順の詳細については、「[Office 365 に PST ファイルをインポートするときにデータをフィルター処理する](filter-data-when-importing-pst-files.md)」を参照してください。
 
-    または
+      または
 
-    b.  PST ファイル内のすべてのデータをインポートするには、[**いいえ、すべてのアイテムをインポートします**] をクリックして、[**次へ**] をクリックします。
+   1.  PST ファイル内のすべてのデータをインポートするには、[**いいえ、すべてのアイテムをインポートします**] をクリックして、[**次へ**] をクリックします。
 
 7. すべてのデータをインポートする場合は、[**データのインポート**] をクリックしてインポート ジョブを開始します。 
 
@@ -441,11 +441,11 @@ Azure Storage Explorer をインストールし、Azure Storage 領域に接続�
     > [!NOTE]
     > PST インポート CSV マッピング ファイルのトラブルシューティングに役立つには[、Azure Storage Explorer](#view-a-list-of-the-pst-files-uploaded-to-microsoft-365)ツールを使用して、Azureストレージ領域にアップロードされたハード ドライブから PST ファイルのインジェストデータ コンテナー内のフォルダー構造を表示します。 マッピング ファイルのエラーは、通常、FilePath パラメーターの値が正しくない場合に発生します。 このパラメーターは、Azure ストレージ領域内の PST ファイルの場所を指定します。 手順 3 の表の FilePath パラメーターの説明 [を参照してください](#step-3-create-the-pst-import-mapping-file)。 前に説明したように、Azure ストレージ領域内の PST ファイルの場所は、手順 2 で WAImportExport.exe ツールを実行  `/dstdir:` した場合にパラメーターによって [指定されました](#step-2-copy-the-pst-files-to-the-hard-drive)。 
   
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 - ドライブ配布は、組織で利用できるコンプライアンス機能を活用するために、Microsoft 365 に大量のアーカイブ メッセージング データをインポートする効果的な方法です。 アーカイブ データをユーザー メールボックスにインポートした後、次の処理を実行できます。
 
-  - アーカイブ [メールボックスと自動](enable-archive-mailboxes.md) 拡張 [アーカイブ](enable-unlimited-archiving.md) を有効にして、ユーザーにデータのメールボックスストレージ領域を増やします。 
+  - アーカイブ [メールボックスと自動](enable-archive-mailboxes.md) 拡張 [アーカイブ](enable-autoexpanding-archiving.md) を有効にして、ユーザーにデータのメールボックスストレージ領域を増やします。 
 
   - メールボックスを訴訟ホールド [に配置して](./create-a-litigation-hold.md) 、データを保持します。 
 

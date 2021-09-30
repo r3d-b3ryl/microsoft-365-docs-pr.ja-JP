@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Microsoft 365 コンプライアンス センターのインポート サービスを使用して、メール データ (PSTファイル) をユーザーのメールボックスに一括でインポートする方法について説明します。
-ms.openlocfilehash: efb51aebcca5d724b8a1f8ecaabb6eeb5f31e8dd
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: da5d795c2b2babb2f2ff89bb1cdd5531d4818b1b
+ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175872"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60011274"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>組織の PST ファイルのインポートの概要
 
@@ -92,7 +92,7 @@ ms.locfileid: "59175872"
 
 - メール データを Microsoft 365 にインポートすると、次のことが可能になるため、組織のアドレスのコンプライアンス確保に役立ちます。
 
-  - [[アーカイブ メールボックス](enable-archive-mailboxes.md)] と [[無制限アーカイブ](unlimited-archiving.md)] を有効にして、ユーザーに追加のメールボックス記憶域を与える。
+  - [アーカイブ メールボックス](enable-archive-mailboxes.md)と[自動拡張アーカイブ](autoexpanding-archiving.md)を有効にして、ユーザーに追加のメールボックス記憶域を与える。
 
   - メールボックスを[訴訟ホールド](./create-a-litigation-hold.md)に配置して、コンテンツを保持する。
 

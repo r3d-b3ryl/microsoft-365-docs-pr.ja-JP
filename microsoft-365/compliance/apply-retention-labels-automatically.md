@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なものを保持し、必要でないものを削除するためにラベルを自動的に適用できるように、保持ラベルと自動ラベル付けポリシーを作成します。
-ms.openlocfilehash: cb693fb60277e5262578cc442df7e1c5ba3f3c16
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c6aede6ba25ebd7f28008e4c52450bd3e4b74c2d
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178136"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60009459"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>保持ラベルを自動的に適用してコンテンツを保持または削除する
 
@@ -149,8 +149,10 @@ ms.locfileid: "59178136"
 
 #### <a name="auto-apply-labels-to-content-with-specific-types-of-sensitive-information"></a>特定の種類の機密情報によるコンテンツへのラベルの自動適用
 
-> [!WARNING]
-> 現在、この構成には既知の制限があり、選択した機密情報タイプに一致する場合、ラベルのないすべてのメールに常に選択した保持ラベルが適用されます。 たとえば、自動適用ポリシーを特定のユーザーに限定したり、ポリシーに Exchange 以外の場所を選択したりしても、一致する場合は常にラベルのないメールにラベルが適用されます。
+> [!IMPORTANT]
+> 機密情報を識別して自動適用するメールの場合、特定の受信者を含めたり除外したりするようにポリシーをスコープすることはサポートされていません。このポリシー構成は、**[すべての受信者]** 設定のみをサポートします。 このポリシー構成に固有の **[すべての受信者]** には、Microsoft 365 グループのメールボックスが含まれます。
+> 
+> また、このポリシー構成に固有で、**Microsoft 365 グループ** の場所を選択する場合、Microsoft 365 グループに接続されている SharePoint サイトのみが含まれ、Microsoft 365 グループのメールボックスは含まれません。
 
 機密情報用に自動適用の保持ラベル ポリシーを作成するときに、データ損失防止 (DLP) ポリシーを作成するときと同じポリシー テンプレートの一覧が表示されます。 各テンプレートは、特定の種類の機密情報を見つけるように事前に設定されています。 以下の例では、機密情報の種類は、**[プライバシー]** カテゴリと **米国個人情報 (PII) データ** テンプレートのものです。
 
@@ -169,6 +171,8 @@ ms.locfileid: "59178136"
 機密情報の種類を使用して保持ラベルの自動適用を検討する場合:
 
 - カスタムの機密情報の種類を使用する場合、SharePoint および OneDrive の既存のアイテムに自動ラベルを付けることはできません。
+
+- メールの場合、含めるまたは除外する特定の受信者を選択することはできません。**[すべての受信者]** 設定のみがサポートされており、この構成の場合のみ、Microsoft 365 グループのメールボックスが含まれます。 
 
 #### <a name="auto-apply-labels-to-content-with-keywords-or-searchable-properties"></a>キーワードまたは検索可能なプロパティによるコンテンツへの自動適用ラベル
 

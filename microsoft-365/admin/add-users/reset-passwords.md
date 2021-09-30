@@ -12,6 +12,7 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - TopSMBIssues
 - MSStore_Link
@@ -27,16 +28,19 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: 管理者アカウントでサインインMicrosoft 365、ビジネス サブスクリプションのユーザーのパスワードMicrosoft 365リセットします。
-ms.openlocfilehash: 50b964826b59287405c86a7918609535edb87b4f
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 03081e4a0465206ae66cc8201411206932d15e8c
+ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775326"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60011210"
 ---
 # <a name="reset-passwords"></a>パスワードをリセットする
 
-この記事では、ビジネス サブスクリプション用のパスワードを使用している場合に、自分とユーザーのパスワードMicrosoft 365説明します。
+この記事では、ビジネス サブスクリプションのパスワードを使用している場合に、自分とユーザーのパスワードMicrosoft 365説明します。
+
+> [!NOTE]
+> また、ユーザーが自分のパスワードをリセットできるよう、セルフサービス パスワードのリセットを設定できます。 詳細については、「ユーザーが自分 [のパスワードをリセットする」を参照してください](let-users-reset-passwords.md)。
 
 ## <a name="before-you-begin"></a>開始する前に
 
@@ -64,7 +68,7 @@ ms.locfileid: "59775326"
 
 ## <a name="let-users-reset-their-own-passwords"></a>ユーザーが自分でパスワードをリセットできるようにする
 
-セルフサービスによるパスワードのリセットを設定することを強くお勧めします。この方法では、ユーザーのパスワードを手動でリセットする必要はありません。詳細については、「[Office 365 でユーザーが自分のパスワードを再設定する](let-users-reset-passwords.md)」を参照してください。
+セルフサービスによるパスワードのリセットを設定することを強くお勧めします。 この方法では、ユーザーのパスワードを手動でリセットする必要はありません。 仕事が少ない! 詳細については、「[Office 365 でユーザーが自分のパスワードを再設定する](let-users-reset-passwords.md)」を参照してください。
 
 ## <a name="reset-my-admin-password"></a>管理者パスワードをリセットする
 

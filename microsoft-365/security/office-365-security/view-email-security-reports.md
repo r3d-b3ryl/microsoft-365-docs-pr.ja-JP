@@ -19,12 +19,12 @@ description: 管理者は、ポータルで使用できる電子メール セキ
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6486059702875e4bf318d04da9be0249dc6cb7df
-ms.sourcegitcommit: 835dcaf5d5e0b485dc3ac485ded8943046afe36c
+ms.openlocfilehash: 9f3861cc57276cec6dcd09ba843ede35ab9dd583
+ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59942243"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60011490"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>電子メール セキュリティ レポートを Microsoft 365 Defenderする
 
@@ -179,7 +179,7 @@ Microsoft 365 Defender ポータルでは、Microsoft 365 のスパム対策、�
 グラフの下の詳細テーブルは、次の情報を示しています。
 
 - **Direction**
-- **型**
+- **Type**
 - **24 時間**
 - **3 日間**
 - **7 日間**
@@ -602,7 +602,7 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
 - **[件名]**
 - **送信者**
 - **受信者**
-- **検出のテクニオロジー**
+- **検出テクノロジ**
 - **配信状態**
 - [**Sender IP (送信者の IP)**]
 - **Tags**
@@ -994,7 +994,7 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
 - **組織の管理**
 - **セキュリティ管理者**
 - **セキュリティ閲覧者**
-- **グローバル リーダー**
+- **グローバル閲覧者**
 
 詳細については、「[Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)」を参照してください。
 

@@ -12,6 +12,7 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
@@ -22,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 共有メールボックスは、複数のユーザーが同じメールボックスにアクセスする必要がある場合に使用されます。 共有メールボックスを作成する前に知っておくべきことを説明します。
-ms.openlocfilehash: 0679d28abc74320da8cc47bbd4e5d48ba8b8b5b1
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: d00c234179b67961da3003b5fccbe886158d11df
+ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774870"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60011247"
 ---
 # <a name="about-shared-mailboxes"></a>共有メールボックスについて
 
@@ -63,7 +64,7 @@ ms.locfileid: "59774870"
 
 
 > [!NOTE]
-> 共有メールボックスにアクセスするには、ユーザーは Exchange Online ライセンスを持っている必要がありますが、共有メールボックス用の異なるライセンスは必要ありません。 どの共有メールボックスにも、対応するユーザー アカウントがあります。 共有メールボックスを作成する際に、パスワードの入力を求められなかったことにご注意ください。 このアカウントにはパスワードが設定されていますが、そのパスワードはシステムで生成され、ユーザーにはわかりません。 アカウントを使用して共有メールボックスにログインしないでください。 ライセンスがない場合は、共有メールボックスは 50 GB に制限されます。 サイズ制限を 100 GB に増やすには、Exchange Online プラン 2 のライセンスを共有メールボックスに割り当てる必要があります。 新Exchange Onlineプラン 1 ライセンスExchange Online Archivingライセンスを使用すると、アーカイブ メールボックスのサイズだけが増加します。 これにより、無制限のアーカイブ記憶域を得るための自動拡張アーカイブを有効にできるようにもなります。 同様に、共有メールボックスに訴訟ホールドをかける場合は、Exchange Online プラン 2 のライセンス、または Exchange Online Archiving アドオン ライセンス付帯のExchange Online Plan 1 ライセンスが共有メールボックスで必要です。 Microsoft Defender for Office 365、Advanced eDiscovery、または自動アイテム保持ポリシーなどの高度な機能を適用する場合は、その機能のために共有メールボックスにライセンスを付与する必要があります。
+> 共有メールボックスにアクセスするには、ユーザーは Exchange Online ライセンスを持っている必要がありますが、共有メールボックス用の異なるライセンスは必要ありません。 どの共有メールボックスにも、対応するユーザー アカウントがあります。 共有メールボックスを作成する際に、パスワードの入力を求められなかったことにご注意ください。 このアカウントにはパスワードが設定されていますが、そのパスワードはシステムで生成され、ユーザーにはわかりません。 アカウントを使用して共有メールボックスにログインしないでください。 ライセンスがない場合は、共有メールボックスは 50 GB に制限されます。 サイズ制限を 100 GB に増やすには、Exchange Online プラン 2 のライセンスを共有メールボックスに割り当てる必要があります。 新Exchange Onlineプラン 1 ライセンスExchange Online Archivingライセンスを使用すると、アーカイブ メールボックスのサイズだけが増加します。 これにより、追加のアーカイブ ストレージ容量の自動拡張アーカイブも有効にできます。 同様に、共有メールボックスに訴訟ホールドをかける場合は、Exchange Online プラン 2 のライセンス、または Exchange Online Archiving アドオン ライセンス付帯のExchange Online Plan 1 ライセンスが共有メールボックスで必要です。 Microsoft Defender for Office 365、Advanced eDiscovery、または自動アイテム保持ポリシーなどの高度な機能を適用する場合は、その機能のために共有メールボックスにライセンスを付与する必要があります。
 
 ## <a name="related-content"></a>関連コンテンツ
 

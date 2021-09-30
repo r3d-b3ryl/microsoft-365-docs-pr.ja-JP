@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: a8b2cc5498d15fe174d58fc9b4caf2b33982f38d
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: 2d2ea7c85badc5fbd8b9ed2939cefbb42fd276e6
+ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988915"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60011310"
 ---
 # <a name="communication-compliance-feature-reference"></a>通信コンプライアンス機能リファレンス
 
@@ -387,7 +387,7 @@ OCR が有効になっているポリシーの保留中のアラートを確認�
 |**アラート ポリシー トリガー**|**既定値**|
 |:-----|:-----|
 | 集約 | 単純な集約 |
-| しきい値 | 最小: 3 つのアクティビティ <br> 最大: 2,147,483,647 アクティビティ |
+| しきい値 | 最小: 4 つのアクティビティ <br> 最大: 2,147,483,647 アクティビティ |
 | Window | 最小: 60 分 <br> 最大: 10,000 分 |
 
 > [!NOTE]

@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: '管理者向け: ネットワーク アップロードを使用して、複数の PST ファイルを Microsoft 365 のユーザー メールボックスに一括インポートする方法について説明します。'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 625d9e37246fa6c4e24754be2e3bc830740124a2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fbe16615c4497babee9c7d1ce905b8cd4d2c23cd
+ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216224"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60011478"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>ネットワーク アップロードを使用して、組織の PST ファイルを Microsoft 365 にインポートする
 
@@ -316,7 +316,7 @@ PST ファイルを組織の Azure Storage の場所にアップロードした�
 
   - この機能は、インポートした PST ファイルのデータに Microsoft 365 のコンプライアンス機能を適用することで、組織のコンプライアンスのニーズに対応するのに役立ちます。対象は次のとおりです。
 
-  - [アーカイブ メールボックス](enable-archive-mailboxes.md)と[自動拡張アーカイブ](enable-unlimited-archiving.md)を有効にして、インポートしたデータを保存するための追加のメールボックス記憶域をユーザーに与える。
+  - [アーカイブ メールボックス](enable-archive-mailboxes.md)と[自動拡張アーカイブ](enable-autoexpanding-archiving.md)を有効にして、インポートしたデータを保存するための追加のメールボックス記憶域をユーザーに与える。
 
   - メールボックスを[訴訟ホールド](./create-a-litigation-hold.md)に配置して、インポートしたデータを保持する。
 

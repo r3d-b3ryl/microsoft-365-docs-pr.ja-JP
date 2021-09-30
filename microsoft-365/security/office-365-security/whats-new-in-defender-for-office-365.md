@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4f473963bca6a3ad3e3ece57ecc30118e4ec6f62
-ms.sourcegitcommit: dd4214a309c71292490743752da728cec7bffe88
+ms.openlocfilehash: 363abb059acc656de7ebdf074729374e75f84cff
+ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59479563"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60011454"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の新機能
 
@@ -57,6 +57,7 @@ ms.locfileid: "59479563"
   - [管理者エクスペリエンスのビデオ](https://youtu.be/vnar4HowfpY)
   - [エンド ユーザー エクスペリエンスのビデオ](https://youtu.be/s-vozLO43rI)
   - 検疫エクスペリエンスに追加されるその他の新機能については、このブログ記事「検疫エクスペリエンスの簡素化」 [で説明します](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/simplifying-the-quarantine-experience/ba-p/2676388)。
+  - 既定では、ポータルリダイレクトが開始し、ユーザーをセキュリティ コンプライアンスからコンプライアンス&にリダイレクト <https://security.microsoft.com> Microsoft 365 Defender。 詳細については、「アカウントをセキュリティとコンプライアンス センターから Office 365にリダイレクトする」を[参照Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-mdo-redirection)
 
 ## <a name="august-2021"></a>2021 年 8 月
 

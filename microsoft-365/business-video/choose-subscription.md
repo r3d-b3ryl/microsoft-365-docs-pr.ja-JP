@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 組織にMicrosoft 365サブスクリプションを確認します。
-ms.openlocfilehash: 2c269ff7dc620da0c638f2c82a836ae9b0406780
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4c1bd7ac67cd44baa8317295ade0e5525764b523
+ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219383"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60011406"
 ---
 # <a name="choose-a-microsoft-365-subscription"></a>サブスクリプションをMicrosoft 365する
 
@@ -44,7 +44,7 @@ ms.locfileid: "59219383"
 
 ## <a name="compare-plans"></a>プランを比較
 
-| サービス エリア | 特徴 | Microsoft 365 Business Standard | Microsoft 365 Business Premium | Office 365 Enterprise E3 |
+| サービス エリア | 機能 | Microsoft 365 Business Standard | Microsoft 365 Business Premium | Office 365 Enterprise E3 |
 | --- | --- | --- | --- | --- |
 | **利用可能なライセンス** | ユーザーの最大数 | 300 | 300 | 無制限 |
 | **Office アプリ** | ユーザー Office 5 PC/Mac + 5 スマートフォン (Word、Excel、PowerPoint、OneNote、Access)、Office Online にインストールする | Business | Business | ProPlus |
@@ -64,12 +64,12 @@ ms.locfileid: "59219383"
 | **情報保護** | Office 365データ損失防止 | いいえ | はい | はい |
  | Azure Information Protection Plan 1, BitLocker の適用 | | いいえ | はい | いいえ |
 | **オンプレミス CAL の権限** | ECAL スイート (Exchange、SharePoint、Skype) | いいえ | いいえ | はい |
-| **コンプライアンス** | 無制限のメール アーカイブ\*\*\* | いいえ | はい | はい |
+| **コンプライアンス** | 追加の電子メール アーカイブ\*\*\* | いいえ | はい | はい |
 
 \*E3 Microsoft 365 Business Standardプラン 2 が含Office 365 Enterpriseプラン 1 が含Office 365 Enterpriseを示します。
 
 \*\* 米国、英国、カナダで利用可能です。
 
-\*\*\* 自動拡張を有効にした場合の無制限のアーカイブ。
+\*\*\* 自動拡張アーカイブを有効にした場合の追加のアーカイブ ストレージ領域。
 
 他のMicrosoft 365 Business Premiumプランを含む他のMicrosoft 365製品と比較するには、「中小規模企業向Microsoft 365ライセンス サービス」を[参照してください](/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb)。

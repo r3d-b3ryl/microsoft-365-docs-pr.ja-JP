@@ -17,30 +17,30 @@ ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
 description: メールボックス使用率サービスアラートを使用して、メールボックスクォータに達している保留状態のメールボックスを監視します。
-ms.openlocfilehash: afae43f0c589d6c025fb0e1d20a7c5cf81eacbe2
-ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
+ms.openlocfilehash: 32536cf8a034867ecb82e44487f34280a9b591ac
+ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59480774"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60011466"
 ---
-# <a name="service-alerts-for-mailbox-utilization-in-exchange-online-monitoring"></a>監視のメールボックス使用率に関するExchange Online通知
+# <a name="service-alerts-for-mailbox-utilization-in-exchange-online-monitoring"></a>Exchange Online 監視でのメールボックス使用率サービスのアラート
 
 クォータに達または超過するリスクExchange Onlineメールボックスを通知する新しい Exchange Online サービス アラートがリリースされました。 これらのサービス通知は、管理者の介入が必要な可能性がある組織内のメールボックスの数を表示します。
 
 これらのサービス通知は、サービス ウィンドウにMicrosoft 365 管理センター。 これらのサービス通知を表示するには、[**正常性** サービスの正常性] Exchange Online[アクティブな問題]  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank"></a>  >  **タブをクリック** します。メールボックス使用率サービスアラートの例を次に示します。
 
-![メールボックス使用率サービスアラート](../media/MailboxUtilizationServiceAlert.png)
+:::image type="content" alt-text="メールボックス使用率サービスアラート。" source="../media/MailboxUtilizationServiceAlert.png" lightbox="../media/MailboxUtilizationServiceAlert.png":::
 
 記憶域クォータに近いメールボックス (メールボックス使用状況レポートと呼ばれる) の一覧を表示するには、次のスクリーンショットで強調表示されているリンクをクリックします。 このリンクは、サービスアラートに表示されます。
 
-![メールボックス使用状況レポートへのリンク](../media/LinkToMailboxUsageReport.png)
+:::image type="content" alt-text="メールボックス使用状況レポートへのリンク。" source="../media/LinkToMailboxUsageReport.png" lightbox="../media/LinkToMailboxUsageReport.png":::
 
 または、メールボックス使用状況レポートへの直接 URL はです <https://admin.microsoft.com/Adminportal/Home?source=applauncher#/reportsUsage/MailboxUsage> 。
 
 ## <a name="what-do-these-service-alerts-indicate"></a>これらのサービスアラートは何を示していますか?
 
-メールボックス使用率に関するサービス アラートは、メールボックスストレージクォータに近いメールボックスの保留に関する通知を管理者に通知します。 メールボックスに配置できる保持の種類には、訴訟ホールド、電子情報開示ホールド、Microsoft 365 保持ポリシー (データを保持するように構成されている) が含まれます。 メールボックスが保留の場合、ユーザー (または自動化されたプロセス) はメールボックスからデータを完全に削除できません。 代わりに、管理者は、ユーザーのプライマリ メールボックスからアーカイブ メールボックスにデータを移動するために、Exchange Online (データ保持に関連する組織のコンプライアンス ポリシーとインライン) で MRM 保持ポリシーを構成する必要があります。 保持されていないメールボックスが重大または警告状態に達した場合、管理者はアーカイブ メールボックスを有効[](../compliance/enable-archive-mailboxes.md)にして自動拡張アーカイブを[](../compliance/enable-unlimited-archiving.md)有効にし、メールボックスに割り当てられたアーカイブ ポリシーの保持期間 (プライマリ メールボックスからアーカイブ メールボックスに電子メールを移動する) が十分に短い必要があります。 メールボックス使用率サービスの通知によって識別されるクォータの問題を解決するために何も行われなかった場合、ユーザーは電子メール メッセージまたは会議の招待を送受信できない可能性があります。
+メールボックス使用率に関するサービス アラートは、メールボックスストレージクォータに近いメールボックスの保留に関する通知を管理者に通知します。 メールボックスに配置できる保持の種類には、訴訟ホールド、電子情報開示ホールド、Microsoft 365 保持ポリシー (データを保持するように構成されている) が含まれます。 メールボックスが保留の場合、ユーザー (または自動化されたプロセス) はメールボックスからデータを完全に削除できません。 代わりに、管理者は、ユーザーのプライマリ メールボックスからアーカイブ メールボックスにデータを移動するために、Exchange Online (データ保持に関連する組織のコンプライアンス ポリシーとインライン) で MRM 保持ポリシーを構成する必要があります。 保持されていないメールボックスが重大または警告状態に達した場合、管理者はアーカイブ メールボックスを有効[](../compliance/enable-archive-mailboxes.md)にして自動拡張アーカイブを[](../compliance/enable-autoexpanding-archiving.md)有効にし、メールボックスに割り当てられたアーカイブ ポリシーの保持期間 (プライマリ メールボックスからアーカイブ メールボックスに電子メールを移動する) が十分に短い必要があります。 メールボックス使用率サービスの通知によって識別されるクォータの問題を解決するために何も行われなかった場合、ユーザーは電子メール メッセージまたは会議の招待を送受信できない可能性があります。
 
 メールボックス使用率に関するサービス アラートには、クォータに近いメールボックスの数に関するテーブルが含まれています。 次のセクションでは、これらのテーブルの情報と、管理者がこれらのメールボックスがクォータを超えないようにするために実行できるアクションについて説明します。
 

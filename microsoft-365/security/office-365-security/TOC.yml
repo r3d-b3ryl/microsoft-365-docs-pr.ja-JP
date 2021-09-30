@@ -58,8 +58,6 @@
           href: office-365-ti.md
         - name: Office 365 セキュリティ インシデント対応
           href: office365-security-incident-response-overview.md
-        - name: セキュリティ/コンプライアンス センターのメール追跡の分析情報
-          href: mail-flow-insights-v2.md
         - name: 選挙運動、非営利組織、およびその他のアジャイル組織のための Microsoft Security ガイダンス
           href: microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md
     - name: 展開する
@@ -170,10 +168,6 @@
               href: modify-remove-entries-tenant-allow-block.md
         - name: メッセージの追跡
           href: message-trace-scc.md
-        - name: メッセージとファイルを Microsoft に報告する
-          href: report-junk-email-messages-to-microsoft.md
-        - name: レポート メッセージ アドインおよびレポート フィッシング アドインを有効にする
-          href: enable-the-report-message-add-in.md
         - name: メール フロー ルールを使用して実行可能な添付ファイルを含むメッセージをブロックする
           href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-block-executable-attachments
         - name: メール フロー ルールを使用してバルク メールをフィルタリングする
@@ -200,8 +194,6 @@
           href: ../../compliance/alert-policies.md
         - name: セキュリティ/コンプライアンス センターのスマート レポートと分析情報
           href: reports-and-insights-in-security-and-compliance.md
-        - name: Outlook の誤検出と検出漏れを報告する
-          href: report-false-positives-and-false-negatives.md
         - name: メール フロー ルール (トランスポート ルール)
           href: /exchange/security-and-compliance/mail-flow-rules/mail-flow-rules
         - name: 管理者の役割グループ レポートの実行
@@ -216,48 +208,66 @@
           href: investigate-malicious-email-that-was-delivered.md
         - name: 自動調査の詳細と結果を表示する
           href: air-view-investigation-results.md
-        - name: Microsoft Defender for Office 365 レポートを表示する
-          href: view-reports-for-mdo.md
-        - name: メール セキュリティ レポートを表示する
-          href: view-email-security-reports.md
-        - name: メール フロー レポートを表示する
-          href: view-mail-flow-reports.md
         - name: 管理者監査ログを表示する
           href: /exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log
-        - name: スタンドアロン EOP でのレポート作成とメッセージ追跡
-          href: reporting-and-message-trace-in-exchange-online-protection.md
-        - name: 自動転送されたメッセージの分析情報
-          href: mfi-auto-forwarded-messages-report.md
         - name: 偽装に関する分析情報
           href: impersonation-insight.md
-        - name: メール フローのマップ
-          href: mfi-mail-flow-map-report.md
-        - name: メッセージを手動で Microsoft に送信する
-          href: submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
-        - name: 新しいドメインにメールが転送されていますのインサイト
-          href: mfi-new-domains-being-forwarded-email.md
-        - name: 新しいユーザーがメールを転送していますのインサイト
-          href: mfi-new-users-forwarding-email.md
-        - name: 承認済みでないドメインのレポート
-          href: mfi-non-accepted-domain-report.md
-        - name: 配信不能レポート
-          href: mfi-non-delivery-report.md
-        - name: 送信および受信メール フローのインサイト
-          href: mfi-outbound-and-inbound-mail-flow.md
-        - name: SMTP Auth クライアントの分析情報とレポート
-          href: mfi-smtp-auth-clients-report.md
         - name: スプーフィング インテリジェンス分析
           href: learn-about-spoof-intelligence.md
-        - name: マルウェアとマルウェアでないファイルを Microsoft に送信する
-          href: submitting-malware-and-non-malware-to-microsoft-for-analysis.md
-        - name: トップ ドメインのメール フローの状態の分析情報
-          href: mfi-domain-mail-flow-status-insight.md
-        - name: 提出を管理する
-          href: admin-submission.md
-        - name: メール フロー ルールを使用して、ユーザーが Microsoft に報告する内容を確認する
-          href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft
-        - name: キューの分析情報
-          href: mfi-queue-alerts-and-queues.md
+        - name: EOP および Defender for Office 365 のレポート
+          items:
+            - name: EOP および Defender for Office 365 のレポート
+              href: reporting-and-message-trace-in-exchange-online-protection.md
+            - name: メール セキュリティ レポートを表示する
+              href: view-email-security-reports.md
+            - name: Defender for Office 365 レポートを表示する
+              href: view-reports-for-mdo.md
+            - name: セキュリティ/コンプライアンス センターのメールフローレポートを表示
+              href: view-mail-flow-reports.md
+        - name: セキュリティ/コンプライアンス センター のメール フロー インサイト
+          items:
+            - name: セキュリティ/コンプライアンス センター のメール フロー インサイト
+              href: mail-flow-insights-v2.md
+            - name: 自動転送されたメッセージのインサイト
+              href: mfi-auto-forwarded-messages-report.md
+            - name: メール ループの可能性の修正のインサイト
+              href: mfi-mail-loop-insight.md
+            - name: 時間のかかるメール フロー ルールの修正のインサイト
+              href: mfi-slow-mail-flow-rules-insight.md
+            - name: メール フローのマップ
+              href: mfi-mail-flow-map-report.md
+            - name: 新しいドメインにメールが転送されていますのインサイト
+              href: mfi-new-domains-being-forwarded-email.md
+            - name: 新しいユーザーがメールを転送していますのインサイト
+              href: mfi-new-users-forwarding-email.md
+            - name: 承認済みでないドメインのレポート
+              href: mfi-non-accepted-domain-report.md
+            - name: 配信不能レポート
+              href: mfi-non-delivery-report.md
+            - name: 送信および受信メール フローのインサイト
+              href: mfi-outbound-and-inbound-mail-flow.md
+            - name: キューのインサイト
+              href: mfi-queue-alerts-and-queues.md
+            - name: SMTP Auth クライアントのインサイトとレポート
+              href: mfi-smtp-auth-clients-report.md
+            - name: トップ ドメインのメール フローの状態のインサイト
+              href: mfi-domain-mail-flow-status-insight.md
+        - name: メッセージとファイルを Microsoft に報告する
+          items:
+            - name: メッセージとファイルを Microsoft に報告する
+              href: report-junk-email-messages-to-microsoft.md
+            - name: 管理者による報告
+              href: admin-submission.md
+            - name: レポート メッセージ アドインおよびレポート フィッシング アドインを有効にする
+              href: enable-the-report-message-add-in.md
+            - name: Outlook の誤検出と検出漏れを報告する
+              href: report-false-positives-and-false-negatives.md
+            - name: メッセージを手動で Microsoft に送信する
+              href: submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
+            - name: メール フロー ルールを使用して、ユーザーが Microsoft に報告する内容を確認する
+              href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft
+            - name: マルウェアとマルウェアでないファイルを Microsoft に送信する
+              href: submitting-malware-and-non-malware-to-microsoft-for-analysis.md
     - name: 対応
       items:
         - name: 侵害されたユーザー アカウントをすばやく検出して対処する
@@ -282,10 +292,6 @@
           href: tuning-anti-phishing.md
         - name: ユーザーとして検疫済みメッセージを検索して解放する
           href: find-and-release-quarantined-messages-as-a-user.md
-        - name: メール ループの可能性の修正のインサイト
-          href: mfi-mail-loop-insight.md
-        - name: 時間のかかるメール フロー ルールの修正のインサイト
-          href: mfi-slow-mail-flow-rules-insight.md
         - name: 管理者として検疫済みメッセージとファイルを管理する
           href: manage-quarantined-messages-and-files.md
         - name: 検疫ポリシー
