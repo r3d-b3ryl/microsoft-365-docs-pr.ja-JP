@@ -553,10 +553,10 @@
       items:
         - name: アーカイブ メールボックスの有効化
           href: enable-archive-mailboxes.md
-        - name: 無制限アーカイブの概要
-          href: unlimited-archiving.md
-        - name: 無制限アーカイブの有効化
-          href: enable-unlimited-archiving.md
+        - name: 自動拡張アーカイブの概要
+          href: autoexpanding-archiving.md
+        - name: 自動拡張アーカイブを有効にする
+          href: enable-autoexpanding-archiving.md
         - name: メールボックスのアーカイブと削除ポリシーを設定する
           href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
     - name: 非アクティブなメールボックスを管理する
