@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: 管理者は、Microsoft Defender で攻撃シミュレーション トレーニング用のカスタム ペイロードを作成する方法をOffice 365。
 ms.technology: mdo
-ms.openlocfilehash: 72600b787f1570839b0d6ee3fefc7467af5ac08b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d67da825862cc026b8dd3bc5b7a2f603606f1a4a
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214474"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60010309"
 ---
 # <a name="create-a-custom-payload-for-attack-simulation-training"></a>攻撃シミュレーショントレーニングのカスタム ペイロードを作成する
 
@@ -38,7 +38,7 @@ Microsoft は、攻撃シミュレーション トレーニングと組み合わ
 
 ## <a name="configure-payload"></a>ペイロードの構成
 
-次に、ペイロードをビルドします。 [送信者の詳細] セクションに、送信者の名前、電子メール アドレス、および電子メールの件名 **を入力** します。 指定されたリストからフィッシング URL を選択します。 この URL は、後でメッセージの本文に埋め込まれる予定です。
+次に、ペイロードをビルドします。 [送信者の詳細] セクションに、送信者の名前、電子メール アドレス、および電子メールの件名 **を入力** します。 ペイロードを構成する言語を選択できます。 指定されたリストからフィッシング URL を選択します。 この URL は、後でメッセージの本文に埋め込まれる予定です。
 
 > [!TIP]
 > ペイロードの送信者に対して内部メールを選択すると、そのペイロードが会社の別の従業員からのメールとして表示されます。 これにより、ペイロードの影響を受けやすくし、内部の脅威のリスクについて従業員を教育するのに役立ちます。

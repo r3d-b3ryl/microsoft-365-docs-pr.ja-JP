@@ -15,68 +15,68 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c2c8721cbabd6267bb7c67efc56953bb22186a0b
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: 2c07169254f7541b1107748e1aa5b1753df46fc6
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59443961"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60010247"
 ---
 # <a name="get-started-with-information-barriers"></a>情報バリアの使用を開始する
 
-情報バリアを使用すると、特定のセグメントのユーザーが相互に通信したり、特定のセグメントが特定のセグメントとのみ通信したりするように設計されたポリシーを定義できます。 情報バリア ポリシーは、組織が関連する業界標準と規制への準拠を維持し、潜在的な利益相反を回避するのに役立ちます。 詳細については、「情報バリア [」を参照してください](information-barriers.md)。
+情報バリアを使用すると、特定のセグメントのユーザーが相互に通信したり、特定のセグメントが特定のセグメントとのみ通信したりするように設計されたポリシーを定義できます。 情報バリア ポリシーは、組織が関連する業界標準と規制への準拠を維持し、潜在的な利益相反を回避するのに役立ちます。 詳細については、「情報バリア [について」を参照してください](information-barriers.md)。
 
-この記事では、情報バリア ポリシーを計画、定義、実装、および管理する方法について説明します。 いくつかの手順が関係し、作業フローはいくつかの部分に分かれています。 情報バリア ポリシーの定義[](#prerequisites)(または編集) を開始する前に、前提条件とプロセス全体を必ずお読みください。
+この記事では、情報バリア ポリシーを構成する方法について説明します。 いくつかの手順が含まれるので、情報バリア ポリシーの構成を開始する前に、プロセス全体を確認してください。
 
 > [!TIP]
-> この記事では、情報 [バリア ポリシー](#example-contosos-departments-segments-and-policies) の計画と定義に役立つシナリオの例を示します。
+> この記事では、情報 [バリア ポリシー](#example-scenario-contosos-departments-segments-and-policies) の計画と定義に役立つシナリオの例を示します。
 
-## <a name="concepts-of-information-barrier-policies"></a>情報バリア ポリシーの概念
+## <a name="concepts"></a>概念
 
-情報バリアのポリシーを定義する場合は、ユーザー アカウントの属性、セグメント、"ブロック" ポリシー、または "許可" ポリシー、およびポリシー アプリケーションを使用します。
+情報バリアのポリシーを定義する場合は、ユーザー アカウントの属性、セグメント、'block' ポリシー、または 'allow' ポリシー、およびポリシー アプリケーションを使用します。
 
-- ユーザー アカウント属性は、Azure Active Directory (または Exchange Online) で定義されます。 これらの属性には、部署、役職、場所、チーム名、およびその他のジョブ プロファイルの詳細を含めることができます。 
-- セグメントは、選択したユーザー アカウント属性を使用して、セキュリティ &コンプライアンス センターで定義されている **ユーザーのセットです**。 ([サポートされる属性の一覧](information-barriers-attributes.md)を参照してください。)
+- ユーザー アカウント属性は、Azure Active Directory (または Exchange Online) で定義されます。 これらの属性には、部署、役職、場所、チーム名、およびその他のジョブ プロファイルの詳細を含めることができます。
+- セグメントは、選択したユーザー アカウント属性を使用してMicrosoft 365 コンプライアンス センターに定義されているユーザー **のセットです**。 ([サポートされる属性の一覧](information-barriers-attributes.md)を参照してください。)
 - 情報バリア ポリシーは、通信の制限値または制限を決定します。 情報バリア ポリシーを定義する際は、次の 2 種類のポリシーから選択します。
-  - "ブロック" ポリシーは、あるセグメントが別のセグメントと通信を妨げる。
-  - "許可" ポリシーでは、1 つのセグメントが特定の他のセグメントとのみ通信できます。
+  - *禁止* ポリシーは、あるセグメントと別のセグメントとの通信を禁止します。
+  - *許可* ポリシーは、あるセグメントが他の特定のセグメントとのみ通信することを許可します。
 - ポリシーの適用は、すべての情報バリア ポリシーが定義された後に実行され、組織に適用する準備が整います。
 
-## <a name="the-work-flow-at-a-glance"></a>ワークフローの概要
+## <a name="configuration-at-a-glance"></a>構成の概要
 
-| フェーズ | 内容 |
-|:--------|:------------------|
-| [前提条件が満たされていることを確認する](#prerequisites) | - 必要なライセンスとアクセス [許可を持っているか確認する](information-barriers.md#required-licenses-and-permissions)<br/>- ディレクトリにセグメント化ユーザーのデータが含まれるか確認する<br/>- ディレクトリのスコープ検索を有効Microsoft Teams<br/>- 監査ログが有効になっていることを確認する<br/>- アドレス帳ポリシー Exchangeが設定されている必要はありません<br/>- PowerShell を使用する (例を示します)<br/>- 管理者の同意をMicrosoft Teamsする (手順が含まれています) |
-| [パート 1: 組織内のユーザーをセグメント化する](#part-1-segment-users) | - 必要なポリシーを決定する<br/>- 定義するセグメントの一覧を作成する<br/>- 使用する属性を特定する<br/>- ポリシー フィルターの観点からセグメントを定義する |
-| [パート 2: 情報バリア ポリシーの定義](#part-2-define-information-barrier-policies) | - ポリシーを定義する (まだ適用しない)<br/>- 2 つの種類から選択します (ブロックまたは許可) |
-| [パート 3: 情報バリア ポリシーの適用](#part-3-apply-information-barrier-policies) | - ポリシーをアクティブな状態に設定する<br/>- ポリシー アプリケーションを実行する<br/>- ポリシーの状態を表示する |
-| (必要に応じて) [セグメントまたはポリシーの編集](information-barriers-edit-segments-policies.md) | - セグメントを編集する<br/>- ポリシーを編集または削除する<br/>- ポリシー アプリケーションを再実行する<br/>- ポリシーの状態を表示する |
-| (必要に応じて) [トラブルシューティング](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting)| - 想定通り動作していない場合にアクションを実行する|
+| **手順** | **内容** |
+|:------|:----------------|
+| **手順 1:**[前提条件が満たされていることを確認する](#step-1-make-sure-prerequisites-are-met) | - 必要なライセンスとアクセス [許可を持っているか確認する](information-barriers.md#required-licenses-and-permissions)<br/>- ディレクトリにセグメント化ユーザーのデータが含まれるか確認する<br/>- ディレクトリのスコープ検索を有効Microsoft Teams<br/>- 監査ログが有効になっていることを確認する<br/>- アドレス帳ポリシー Exchangeが設定されている必要はありません<br/>- PowerShell を使用する (例を示します)<br/>- 管理者の同意をMicrosoft Teamsする (手順が含まれています) |
+| **手順 2**: [組織内のユーザーをセグメント化する](#step-2-segment-users-in-your-organization) | - 必要なポリシーを決定する<br/>- 定義するセグメントの一覧を作成する<br/>- 使用する属性を特定する<br/>- ポリシー フィルターの観点からセグメントを定義する |
+| **手順 3:**[情報バリア ポリシーを定義する](#step-3-define-information-barrier-policies) | - ポリシーを定義する (まだ適用しない)<br/>- 2 つの種類から選択します (ブロックまたは許可) |
+| **手順 4:**[情報バリア ポリシーを適用する](#step-4-apply-information-barrier-policies) | - ポリシーをアクティブな状態に設定する<br/>- ポリシー アプリケーションを実行する<br/>- ポリシーの状態を表示する |
+| **手順 5**:[ユーザーとユーザーの情報SharePointのOneDrive構成 (オプション)](#step-5-configuration-for-information-barriers-on-sharepoint-and-onedrive) | - ユーザーとユーザーの情報バリアSharePoint構成OneDrive |
+| **手順 6**: [情報バリア モード (オプション)](#step-6-information-barriers-modes-preview) | - 該当する場合は情報バリア モードを更新する |
 
-## <a name="prerequisites"></a>前提条件
+## <a name="step-1-make-sure-prerequisites-are-met"></a>手順 1: 前提条件が満たされていることを確認する
 
-必要なライセンス [とアクセス許可に加](information-barriers.md#required-licenses-and-permissions)えて、次の要件を満たしていることを確認します。
+必要なライセンスと [アクセス許可に](information-barriers.md#required-licenses-and-permissions)加えて、情報バリアを構成する前に、次の要件を満たしていることを確認してください。
 
-- ディレクトリ データ - 組織の構造がディレクトリ データに反映されます。 このアクションを実行するには、グループ メンバーシップ、部署名などのユーザー アカウント属性が Azure Active Directory (または組織名) に正しくExchange Online。 詳細については、次のリソースを参照してください。
+- **ディレクトリ データ**: 組織の構造がディレクトリ データに反映されます。 このアクションを実行するには、グループ メンバーシップ、部署名などのユーザー アカウント属性が Azure Active Directory (または組織名) に正しくExchange Online。 詳細については、次のリソースを参照してください。
   - [情報障壁ポリシーの属性](information-barriers-attributes.md)
   - [Azure Active Directory を使用してユーザーのプロファイル情報を追加または更新する](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
   - [Office 365 PowerShell でユーザー アカウント プロパティを構成する](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)
 
-- スコープディレクトリ検索 - 組織の最初の情報バリア ポリシーを定義する前に、スコープディレクトリ検索を有効にする[必要Microsoft Teams。](/MicrosoftTeams/teams-scoped-directory-search) 情報バリア ポリシーを設定または定義する前に、スコープディレクトリ検索を有効にしてから少なくとも 24 時間待ちます。
+- **スコープディレクトリ検索**: 組織の最初の情報バリア ポリシーを定義する前に、スコープディレクトリ検索を有効にする [必要Microsoft Teams。](/MicrosoftTeams/teams-scoped-directory-search) 情報バリア ポリシーを設定または定義する前に、スコープディレクトリ検索を有効にしてから少なくとも 24 時間待ちます。
 
-- EXO ライセンス - IB ポリシーは、ターゲット ユーザーに EXO ライセンスが割り当てられている場合にのみ機能します。
+- **Exchange Onlineライセンス**: 情報バリア ポリシーは、ターゲット ユーザーにライセンスが割り当てられているExchange Onlineします。
 
-- 監査ログ - ポリシー アプリケーションの状態を確認するには、監査ログを有効にする必要があります。 セグメントまたはポリシーの定義を開始する前に、監査を有効にすることをお勧めします。 詳細については、「監査ログ検索 [を有効またはオフにする」を参照してください](turn-audit-log-search-on-or-off.md)。
+- **監査ログが有効になっていることを確認** する: ポリシー アプリケーションの状態を確認するには、監査ログを有効にする必要があります。 監査は、既定で組織Microsoft 365有効になっています。 組織によっては、特定の理由で監査を無効にしている場合があります。 組織の監査が無効になっている場合は、別の管理者が無効にしている可能性があります。 この手順を完了するときに、監査を有効に戻すのが問題ない場合は、確認することをお勧めします。 詳細については、「[監査ログの検索を有効または無効にする](turn-audit-log-search-on-or-off.md)」をご覧ください。
 
-- アドレス帳ポリシーなし - 情報バリア ポリシーを定義して適用する前に、Exchangeポリシーが適用されないか確認してください。 情報バリアはアドレス帳ポリシーに基づいていますが、2 種類のポリシーには互換性がありません。 このようなポリシーがある場合は、まずアドレス帳 [ポリシーを削除してください](/exchange/address-books/address-book-policies/remove-an-address-book-policy) 。 情報バリア ポリシーを有効にし、階層型アドレス帳を有効にすると、情報バリア セグメントに含まれていないすべてのユーザーに、Exchange[](/exchange/address-books/hierarchical-address-books/hierarchical-address-books)オンラインで階層アドレス帳が表示されます。
+- **アドレス帳ポリシーなし**: 情報バリア ポリシーを定義して適用する前に、Exchangeポリシーが適用されないか確認してください。 情報バリアはアドレス帳ポリシーに基づいていますが、2 種類のポリシーには互換性がありません。 このようなポリシーがある場合は、まずアドレス帳 [ポリシーを削除してください](/exchange/address-books/address-book-policies/remove-an-address-book-policy) 。 情報バリア ポリシーを有効にし、階層型アドレス帳を有効にすると、**** 情報バリア セグメントに含まれていないすべてのユーザーに、Exchange [](/exchange/address-books/hierarchical-address-books/hierarchical-address-books)オンラインで階層アドレス帳が表示されます。
 
-- PowerShell - 現在、情報バリア ポリシーは、コンプライアンス センター PowerShell のセキュリティ &で定義および管理されます。 この記事ではいくつかの例を示しますが、PowerShell のコマンドレットとパラメーターを理解する必要があります。 また、PowerShell モジュールAzure Active Directory必要があります。
+- **PowerShell を使用して** 管理する : 現在、情報バリア ポリシーは、コンプライアンス センター PowerShell のセキュリティ &で定義および管理されます。 この記事ではいくつかの例を示しますが、PowerShell のコマンドレットとパラメーターを理解する必要があります。 また、PowerShell モジュールAzure Active Directory必要があります。
   - [セキュリティ/コンプライアンス センター PowerShell に接続する](/powershell/exchange/connect-to-scc-powershell)
   - [PowerShell Azure Active DirectoryのインストールGraph](/powershell/azure/active-directory/install-adv2)
 
-- Microsoft Teams の情報バリアに対する管理者の同意 - IB ポリシーが適用されている場合、グループ (つまり、グループに基づく Teams チャネル) から IB 以外のコンプライアンス ユーザーを削除できます。 この構成は、組織がポリシーと規制に準拠し続けるのに役立ちます。 次の手順を使用して、情報バリア ポリシーが期待した通り動作Microsoft Teams。
+- **Microsoft Teams** の情報バリアに対する管理者の同意: IB ポリシーが適用されている場合、グループ (つまり、グループに基づく Teams チャネル) から IB 以外のコンプライアンス ユーザーを削除できます。 この構成は、組織がポリシーと規制に準拠し続けるのに役立ちます。 次の手順を使用して、情報バリア ポリシーが期待した通り動作Microsoft Teams。
 
-   1. 前提条件: [PowerShell のAzure Active DirectoryをインストールGraph。](/powershell/azure/active-directory/install-adv2)
+   1. 前提条件: [PowerShell Azure Active DirectoryをインストールGraph。](/powershell/azure/active-directory/install-adv2)
 
    1. 次の PowerShell コマンドレットを実行します。
 
@@ -95,14 +95,14 @@ ms.locfileid: "59443961"
       > [!div class="mx-imgBorder"]
       > ![イメージ。](https://user-images.githubusercontent.com/8932063/107690955-b1772300-6c5f-11eb-9527-4235de860b27.png)
 
-すべての前提条件が満たされた場合は、次のセクションに進みます。
+すべての前提条件が満たされた場合は、次の手順に進みます。
 
 > [!TIP]
-> 計画の準備を支援するために、この記事にはシナリオの例が含まれています。 [「Contoso の部署、セグメント、ポリシー」を参照してください](#example-contosos-departments-segments-and-policies)。
+> 計画の準備を支援するために、この記事にはシナリオの例が含まれています。 [「Contoso の部署、セグメント、ポリシー」を参照してください](#example-scenario-contosos-departments-segments-and-policies)。
 
-## <a name="part-1-segment-users"></a>パート 1: ユーザーのセグメント化
+## <a name="step-2-segment-users-in-your-organization"></a>手順 2: 組織内のユーザーをセグメント化する
 
-このフェーズでは、必要な情報バリア ポリシーを決定し、定義するセグメントの一覧を作成してから、セグメントを定義します。
+この手順では、必要な情報バリア ポリシーを決定し、定義するセグメントの一覧を作成してから、セグメントを定義します。
 
 ### <a name="determine-what-policies-are-needed"></a>必要なポリシーを決定する
 
@@ -142,7 +142,7 @@ ms.locfileid: "59443961"
     > [!IMPORTANT]
     > **セグメントが重ならないようにします**。 情報バリアの影響を受ける各ユーザーは、1 つのセグメント (および 1 つのみ) セグメントに属する必要があります。 ユーザーが 2 つ以上のセグメントに属している必要はありません。 (この記事 [の「例: Contoso の定義されたセグメント](#contosos-defined-segments) 」を参照してください)。
 
-セグメントを定義した後、情報バリア [ポリシーの定義に進みます](#part-2-define-information-barrier-policies)。
+セグメントを定義した後、情報バリア [ポリシーの定義に進みます](#step-3-define-information-barrier-policies)。
 
 ### <a name="using-equals-and-not-equals-in-segment-definitions"></a>セグメント定義で "equals" と "not equals" を使用する
 
@@ -170,7 +170,7 @@ ms.locfileid: "59443961"
 > [!TIP]
 > 可能であれば、"-eq" または "-ne" を含むセグメント定義を使用します。 複雑なセグメント定義を定義しない。
 
-## <a name="part-2-define-information-barrier-policies"></a>パート 2: 情報バリア ポリシーの定義
+## <a name="step-3-define-information-barrier-policies"></a>手順 3: 情報バリア ポリシーを定義する
 
 特定のセグメント間の通信を防止するか、通信を特定のセグメントに制限する必要があるかどうかを決定します。 理想的には、最小数のポリシーを使用して、組織が法的および業界の要件に準拠していることを確認します。
 
@@ -205,7 +205,7 @@ ms.locfileid: "59443961"
 3. 次のいずれかの操作に進みます。
 
    - (必要に応じて) [セグメントが他の 1 つのセグメントとのみ通信できるポリシーを定義する](#scenario-2-allow-a-segment-to-communicate-only-with-one-other-segment) 
-   - (すべてのポリシーが定義された後) [情報バリア ポリシーの適用](#part-3-apply-information-barrier-policies)
+   - (すべてのポリシーが定義された後) [情報バリア ポリシーの適用](#step-4-apply-information-barrier-policies)
 
 ### <a name="scenario-2-allow-a-segment-to-communicate-only-with-one-other-segment"></a>シナリオ 2: セグメントが別のセグメント 1 つとだけ通信できるようにする
 
@@ -226,9 +226,9 @@ ms.locfileid: "59443961"
 2. 次のいずれかの操作に進みます。
 
    - (必要に応じて) [セグメント間の通信をブロックするポリシーを定義する](#scenario-1-block-communications-between-segments) 
-   - (すべてのポリシーが定義された後) [情報バリア ポリシーの適用](#part-3-apply-information-barrier-policies)
+   - (すべてのポリシーが定義された後) [情報バリア ポリシーの適用](#step-4-apply-information-barrier-policies)
 
-## <a name="part-3-apply-information-barrier-policies"></a>パート 3: 情報バリア ポリシーの適用
+## <a name="step-4-apply-information-barrier-policies"></a>手順 4: 情報バリア ポリシーを適用する
 
 情報バリア ポリシーは、アクティブな状態に設定してからポリシーを適用するまで有効ではありません。
 
@@ -250,7 +250,7 @@ ms.locfileid: "59443961"
 
     実行後、システムがポリシーの適用を開始するために `Start-InformationBarrierPoliciesApplication` 30 分かかります。 システムは、ユーザー別にポリシー ユーザーを適用します。 システムは、1 時間に約 5,000 のユーザー アカウントを処理します。
 
-## <a name="view-status-of-user-accounts-segments-policies-or-policy-application"></a>ユーザー アカウント、セグメント、ポリシー、またはポリシー アプリケーションの状態を表示する
+### <a name="view-status-of-user-accounts-segments-policies-or-policy-application"></a>ユーザー アカウント、セグメント、ポリシー、またはポリシー アプリケーションの状態を表示する
 
 PowerShell を使用すると、次の表に示すユーザー アカウント、セグメント、ポリシー、およびポリシー アプリケーションの状態を表示できます。
 
@@ -264,7 +264,7 @@ PowerShell を使用すると、次の表に示すユーザー アカウント�
 
 <!-- IN the " The most recent information barrier policy application, add link to troubleshooting topic -->
 
-## <a name="what-if-i-need-to-remove-or-change-policies"></a>ポリシーを削除または変更する必要がある場合は、
+### <a name="what-if-i-need-to-remove-or-change-policies"></a>ポリシーを削除または変更する必要がある場合は、
 
 情報バリア ポリシーの管理に役立つリソースを利用できます。
 
@@ -273,9 +273,37 @@ PowerShell を使用すると、次の表に示すユーザー アカウント�
 - 情報バリア ポリシーを削除するには、「ポリシーを削除 [する」を参照してください](information-barriers-edit-segments-policies.md#remove-a-policy)。
 - セグメントまたはポリシーを変更するには、「情報バリア ポリシーを編集 [(または削除) する」を参照してください](information-barriers-edit-segments-policies.md)。
 
-## <a name="example-contosos-departments-segments-and-policies"></a>例: Contoso の部署、セグメント、およびポリシー
+## <a name="step-5-configuration-for-information-barriers-on-sharepoint-and-onedrive"></a>手順 5: ユーザーとユーザーの情報バリアSharePoint構成OneDrive
 
-組織がセグメントおよびポリシーを定義する方法については、次の例を参照してください。
+情報バリアを SharePointおよびOneDriveする場合は、これらのサービスに関する情報バリアを有効にする必要があります。 また、サービスの情報バリアを構成する場合は、これらのサービスで情報バリアを有効にするMicrosoft Teams。 チームがMicrosoft Teamsすると、SharePointサイトが自動的に作成され、Microsoft Teamsエクスペリエンスに関連付けられる。 既定では、このサイトとファイルに関する情報SharePointポリシーは適用されません。
+
+SharePoint および OneDriveで情報バリアを有効にするには、「情報バリアを使用して情報バリアを使用する」の[SharePointしてください。](/sharepoint/information-barriers)
+
+## <a name="step-6-information-barriers-modes-preview"></a>手順 6: 情報バリア モード (プレビュー)
+
+モードは、リソースの IB モードに基づいて、Microsoft 365リソースのアクセス、共有、およびメンバーシップを強化するのに役立ちます。 モードは、Microsoft 365 グループ、Microsoft Teams、OneDrive、SharePoint サイトでサポートされ、新規または既存の IB 構成で自動的に有効になります。
+
+>[!IMPORTANT]
+>2021 年 10 月 15 日より前にテナントで情報バリアを有効にしている場合は、追加の手順は必要ではありません。 2021 年 10 月 15 日以降にテナントで情報バリアをオンボーディングする場合は、Microsoft Teams に接続されている既存のすべての Microsoft 365 グループに IB モードを設定して、グループを情報バリアコンプライアンスに適用する必要があります。
+
+次の IB モードは、リソースでMicrosoft 365されます。
+
+| **Mode** | **Description** | **例** |
+|:-----|:------------|:--------|
+| **開く** | リソースに関連付けられている IB ポリシーやセグメントMicrosoft 365行う必要があります。 誰でもリソースのメンバーに招待できます。 | 組織のピクニック イベント用に作成されたチーム サイト。 |
+| **所有者モデ評価** | リソースの IB ポリシー Microsoft 365、リソース所有者の IB ポリシーによって決まります。 リソース所有者は、IB ポリシーに基づいて任意のユーザーをリソースに招待できます。 このモードは、会社が所有者がモデ管理している互換性のないセグメント ユーザー間のコラボレーションを許可する場合に便利です。 リソース所有者だけが、IB ポリシーごとに新しいメンバーを追加できます。 | 人事担当の VP は、営業調査の VP と共同作業を行う必要があります。 同じサイトSharePoint販売セグメントユーザーとリサーチ セグメント ユーザーの両方を追加するために IB モードの所有者モデ評価で設定された新しいサイト。 適切なメンバーがリソースに追加されるのは、所有者の責任です。 |
+| **暗黙的** | リソースの IB ポリシーまたはセグメントMicrosoft 365、リソース メンバーの IB ポリシーから継承されます。 所有者は、リソースの既存のメンバーと互換性がある限り、メンバーを追加できます。 これは、アプリケーションの既定の IB モードMicrosoft Teams。 | Sales セグメント のユーザーは、組織内Microsoft Teams互換性のあるセグメントと共同作業を行うチームを作成します。 |
+| **Explicit** | リソースの IB ポリシーはMicrosoft 365に関連付けられたセグメントごとに適用されます。 リソースの所有者またはSharePoint管理者は、リソース上のセグメントを管理できます。  | Sales セグメントをサイトに関連付け、Sales セグメントのメンバーだけが共同作業するために作成したサイト。   |
+
+情報バリア モードとサービス間での情報バリア モードの構成方法の詳細については、次の記事を参照してください。
+
+- [情報バリア モードとMicrosoft Teams](/microsoftteams/information-barriers-in-teams)
+- [情報バリア モードとOneDrive](/onedrive/information-barriers)
+- [情報バリア モードとSharePoint](/sharepoint/information-barriers)
+
+## <a name="example-scenario-contosos-departments-segments-and-policies"></a>シナリオの例: Contoso の部署、セグメント、およびポリシー
+
+組織がセグメントとポリシーを定義する方法を確認するには、次のシナリオ例を検討してください。
 
 ### <a name="contosos-departments-and-plan"></a>Contoso の部門とプラン
 

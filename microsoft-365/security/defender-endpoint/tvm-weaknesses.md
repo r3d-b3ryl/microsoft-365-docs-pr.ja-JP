@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 30e1229db1af93c74731678723b60d7d20640f9b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2d6831cfaec813f5ab2598087c2777d867a5f8a7
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213383"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60009423"
 ---
 # <a name="vulnerabilities-in-my-organization---threat-and-vulnerability-management"></a>組織の脆弱性 - 脅威と脆弱性の管理
 
@@ -40,11 +40,11 @@ ms.locfileid: "59213383"
 
 [ **弱点] ページには** 、共通の脆弱性と露出 (CVE) ID を一覧表示して、デバイスが公開されるソフトウェアの脆弱性が一覧表示されます。 重大度、一般的な脆弱性スコアリング システム (CVSS) の評価、組織での普及率、対応する侵害、脅威の分析情報なども表示できます。
 
->[!NOTE]
->公式の CVE-ID が脆弱性に割り当てられていない場合、脆弱性名は脆弱性の名前によって割り当脅威と脆弱性の管理。
+> [!NOTE]
+> 公式の CVE-ID が脆弱性に割り当てられていない場合、脆弱性名は脆弱性の名前によって割り当脅威と脆弱性の管理。
 
->[!TIP]
->新しい脆弱性イベントに関する電子メールを取得するには [、「Configure vulnerability email notifications in Microsoft Defender for Endpoint」を参照してください。](configure-vulnerability-email-notifications.md)
+> [!TIP]
+> 新しい脆弱性イベントに関する電子メールを取得するには [、「Configure vulnerability email notifications in Microsoft Defender for Endpoint」を参照してください。](configure-vulnerability-email-notifications.md)
 
 ## <a name="navigate-to-the-weaknesses-page"></a>[弱点] ページに移動します。
 
@@ -76,13 +76,13 @@ ms.locfileid: "59213383"
 
 アイコンが赤に色付けされている場合は、[ **脅威** ] 列に関連する侵害と脅威の分析情報を表示します。
 
- >[!NOTE]
- > 継続的な脅威に関連付けられている推奨事項の優先順位を常に設定します。 これらの推奨事項には、脅威の分析情報アイコン赤いバグの簡単 ![ な描画がマークされています。](images/tvm_bug_icon.png) と侵害インサイト アイコン ![ ターゲットに当たる矢印の簡単な描画。 ](images/tvm_alert_icon.png)  
+ > [!NOTE]
+ > 継続的な脅威に関連付けられている推奨事項の優先順位を常に設定します。 これらの推奨事項には、脅威の分析情報アイコン赤いバグの簡単 ![ な描画がマークされています。](images/tvm_bug_icon.png) と侵害インサイト アイコン ![ ターゲットに当たる矢印の簡単な描画。 ](images/tvm_alert_icon.png)
 
 侵害の分析情報アイコンは、組織に脆弱性が見つかった場合に強調表示されます。
 ![アイコンの上にカーソルを置くと表示される可能性がある侵害インサイト テキストの例。 この 1 つは、「アクティブなアラートの可能性は、この推奨事項に関連付けられている可能性があります。](images/tvm-breach-insights.png)
 
-組織で見つかった脆弱性に関連する悪用がある場合は、脅威の分析情報アイコンが強調表示されます。 アイコンにカーソルを合わせると、脅威がエクスプロイト キットの一部かどうか、または特定の高度な永続的なキャンペーンやアクティビティ グループに接続されているかどうかを示します。 利用可能な場合は、ゼロデイの悪用ニュース、開示、または関連するセキュリティ アドバイザリを含む Threat Analytics レポートへのリンクがあります。  
+組織で見つかった脆弱性に関連する悪用がある場合は、脅威の分析情報アイコンが強調表示されます。 アイコンにカーソルを合わせると、脅威がエクスプロイト キットの一部かどうか、または特定の高度な永続的なキャンペーンやアクティビティ グループに接続されているかどうかを示します。 利用可能な場合は、ゼロデイの悪用ニュース、開示、または関連するセキュリティ アドバイザリを含む Threat Analytics レポートへのリンクがあります。
 
 ![アイコンにカーソルを合わせると表示される可能性がある脅威の分析情報テキスト。 この 1 つは、複数の箇条書きポイントとリンクされたテキストを持っています。](images/tvm-threat-insights.png)
 

@@ -15,12 +15,12 @@ ms.custom:
 description: この記事では、EOP (EOP) 管理者が使用できるレポートとトラブルシューティング Microsoft Exchange Onlineについて説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cc49a92d5fb1fb0368b14eef7524638542f38deb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 619b8376c6c9d5d733799b4350c308fc4c57f62b
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179159"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60010283"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>EOP でのレポートとメッセージの追跡
 
@@ -47,6 +47,10 @@ Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Pro
 - **Defender for Office 365**: Microsoft Defender for セーフの一部セーフリンクと添付ファイルに関する情報をOffice 365。 詳細については、「View [Defender for Office 365ポータル」をMicrosoft 365 Defenderしてください](view-reports-for-mdo.md)。
 - **EOP**: 組織のマルウェア検出、スプーフィングメール、スパム検出、メール フローに関する情報を表示します。 詳細については、「電子メール セキュリティ[レポートをポータルで表示する」をMicrosoft 365 Defenderしてください](view-email-security-reports.md)。
 
+## <a name="mail-flow-insights-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターのメール追跡の分析情報
+
+詳細については、「Security & コンプライアンス センター」 [の「メール フローの分析情報」を参照してください](mail-flow-insights-v2.md)。
+
 ## <a name="custom-reports-using-microsoft-graph"></a>Microsoft Graph を使用したカスタム レポート
 
 Microsoft サーバーを使用して管理センターで使用できるレポートをプログラムGraph。 詳細については[、「Microsoft Graphの](/graph/overview)概要」および「Microsoft Office 365での使用状況レポートの操作」[を参照Graph。](/graph/api/resources/report)
@@ -71,7 +75,7 @@ EOP のレポート機能とメッセージ トレース データが使用可�
 
 ****
 
-|レポートの種類|データ使用可能期間 (遡及期間)|Latency|
+|レポートの種類|データ使用可能期間 (遡及期間)|遅延|
 |---|---|---|
 |メール保護概要レポート|90 日|メッセージ データの集計は 24 ～ 48 時間以内にほぼ完了します。最大 5 日間のマイナーな増分集計変更が実施される場合があります。|
 |メール保護詳細レポート|90 日|生成後 7 日未満の詳細データに関しては、24 時間以内に表示されるはずですが、48 時間まで完成しない場合があります。最大 5 日分のマイナーな増分変更が実施される場合があります。 <p> 7 日以上前のメッセージに関する詳細レポートを表示するには、結果が出るまでに最大で数時間かかる場合があります。|

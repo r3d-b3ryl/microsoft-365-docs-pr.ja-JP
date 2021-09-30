@@ -17,12 +17,12 @@ ms.custom:
 description: 管理者は、受信メッセージ (EOP) で受信メッセージを許可するための使用可能なオプションと優先Exchange Online Protectionできます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f76b34a439d2eaf2c8315d174483b0b30d3b3b0b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3fe1379db88d23a1a9b7555add1d54f6587fa573
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177383"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60009387"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>EOP で差出人セーフ リストを作成する
 
@@ -46,6 +46,8 @@ Exchange Online のメールボックスまたは Exchange Online メールボ�
 
 > [!IMPORTANT]
 >
+> - マルウェアまたは高信頼フィッシングとして識別されるメッセージは、使用する差出人セーフ リスト オプションに関係なく、常に検疫されます。
+>
 > - 差出人セーフ リストを使用したスパム フィルター処理に対して行う例外を注意深く監視してください。
 >
 > - 差出人セーフ リストを使用して誤検知 (良いメールが悪いとマークされている) に役立ちますが、可能であれば避けるべき一時的な解決策として、差出人セーフ リストの使用を検討する必要があります。 スパム フィルター処理の例外によって組織がスプーフィングなどの攻撃を受け取る可能性があるため、差出人セーフ リストを使用して誤検知を管理することをお勧めしません。 差出人セーフ リストを使用して誤検知を管理する場合は、警戒し、トピック「メッセージとファイルを [Microsoft](report-junk-email-messages-to-microsoft.md) に報告する」を準備の整った状態に保つ必要があります。
@@ -53,6 +55,8 @@ Exchange Online のメールボックスまたは Exchange Online メールボ�
 > - ドメインが認証されていない電子メール (スプーフィング対策保護をバイパス) を送信するが、スパム対策およびマルウェア対策チェックをバイパスしない場合は、ス[](learn-about-spoof-intelligence.md)プーフィング インテリジェンスインサイトとテナント許可/禁止一覧を[使用できます](tenant-allow-block-list.md)。
 >
 > - EOP と Outlookさまざまなメッセージ プロパティを検査して、メッセージの送信者を特定します。 詳細については、この記事の後半 [の「一括メールに関する](#considerations-for-bulk-email) 考慮事項」セクションを参照してください。
+>
+
 
 これに対し、ブロックされた送信者リストを使用して特定のソースからの電子メールをブロックする _オプションもいくつか用意されています_。 詳細については、「[EOP での受信拒否リストの作成](create-block-sender-lists-in-office-365.md)」を参照してください。
 
@@ -113,7 +117,7 @@ EOP およびスタンドアロン EOP Exchange Onlineフロー ルールでは�
 
 前述のようにメール フロー ルールを使用できない場合は、接続フィルター ポリシーで送信元メール サーバーまたはサーバーを IP 許可一覧に追加します。 詳細については [、「EOP で接続フィルターを構成する」を参照してください](configure-the-connection-filter-policy.md)。
 
-**注**:
+**注意**:
 
 - 許可される IP アドレスの数を最小限に抑える必要があります。そのため、可能な限り IP アドレス範囲全体を使用しないようにしてください。
 

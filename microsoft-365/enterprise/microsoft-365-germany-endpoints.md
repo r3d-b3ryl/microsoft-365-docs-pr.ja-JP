@@ -3,7 +3,7 @@ title: Office 365のエンドポイント
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 12/01/2020
+ms.date: 09/28/2021
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -20,12 +20,12 @@ search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
 description: この記事では、ドイツでサービスを使用しているお客様に対して到達可能Office 365説明します。
 hideEdit: true
-ms.openlocfilehash: f022c82c41aaeeed73af13572234e7826d878158
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 39ed851f6cf17a459e33bd5726371432b23ac530
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215874"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60009519"
 ---
 # <a name="office-365-germany-endpoints"></a>Office 365 Germany のエンドポイント
 
@@ -39,7 +39,7 @@ Office 365 にはインターネットへの接続が必要です。 以下の�
   
  **Office 365 エンドポイント:** [(GCC を含む) 世界](urls-and-ip-address-ranges.md)  | [21Vianet が運営する Office 365](urls-and-ip-address-ranges-21vianet.md)  | *Office 365 ドイツ* |  [Office 365 米国政府機関向け DoD](microsoft-365-u-s-government-dod-endpoints.md) | [Office 365 米国政府 GCC 高](microsoft-365-u-s-government-gcc-high-endpoints.md)  |
   
-**最終更新日:** 12/01/2020 - ![ RSS。](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [ログ サブスクリプションの変更](https://endpoints.office.com/version/Germany?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)
+**最終更新日:** 09/28/2021 - ![ RSS。](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [ログ サブスクリプションの変更](https://endpoints.office.com/version/Germany?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)
 
 **ダウンロード:** 1 つの [JSON 形式](https://endpoints.office.com/endpoints/Germany?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)リスト内のすべての必須およびオプションの宛先。
 

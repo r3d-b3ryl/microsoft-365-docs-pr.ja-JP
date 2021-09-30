@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 345088af66e08cb693d2b0a8a1e9bfbc51400aab
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8adc45741bfecfce7373ba23303803f90aea65ab
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214723"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60010095"
 ---
 # <a name="web-protection"></a>Web 保護
 
@@ -49,9 +49,7 @@ Web 脅威保護を構成するカードは、時間の過ぎた Web 脅威検�
 Web 脅威保護には、次の機能が含まれます。
 
 - 組織に影響を与える Web の脅威を包括的に可視化します。
-
 - アラートと URL とこれらの URL にアクセスするデバイスの包括的なプロファイルを通じて、Web 関連の脅威アクティビティを調査する機能。
-
 - 悪意のある Web サイトや望ましくない Web サイトへの一般的なアクセス傾向を追跡する一連のセキュリティ機能。
 
 詳細については、「Web 脅威保護 [」を参照してください](web-threat-protection.md)。
@@ -63,9 +61,7 @@ Web 脅威保護には、次の機能が含まれます。
 カスタム インジケーターには、次の情報が含まれます。
 
 - IP および URL ベースの侵害の指標を作成して、組織を脅威から保護する機能。
-
 - カスタム IP/URL プロファイルとこれらの URL にアクセスするデバイスに関連するアクティビティに関する調査機能。
-
 - AP と URL の許可、ブロック、および警告ポリシーを作成する機能。
 
 詳細については、「CREATE [indicators for IPs and URL/domains」を参照してください。](indicator-ip-domain.md)
@@ -77,9 +73,7 @@ Web コンテンツ フィルターには、**カテゴリ別の Web アクテ�
 Web コンテンツ フィルターには、次の機能が含まれます。
 
 - ユーザーは、オンプレミスまたは離れた場所を参照している場合でも、ブロックされたカテゴリの Web サイトにアクセスする権限を持たれています。
-
 - Microsoft Defender for Endpoint の役割ベースのアクセス制御設定で定義されているデバイス グループを使用して、さまざまなポリシーをさまざまなユーザー セットに簡単に [展開できます](/microsoft-365/security/defender-endpoint/rbac)。
-
 - 同じ中央の場所で Web レポートにアクセスし、実際のブロックと Web 使用状況を可視化できます。
 
 詳細については、「Web コンテンツ フィルター [」を参照してください](web-content-filtering.md)。
@@ -89,26 +83,24 @@ Web コンテンツ フィルターには、次の機能が含まれます。
 Web 保護は、優先順位の順にリストされた次のコンポーネントで構成されます。 これらの各コンポーネントは、SmartScreen クライアントが Microsoft Edge、その他のすべてのブラウザーとプロセスでネットワーク保護クライアントによって適用されます。
 
 - カスタム インジケーター (IP/URL、Microsoft Cloud App Security (MCAS) ポリシー)
-
-    - 許可
-    - 警告
-    - ブロック
+  - 許可
+  - 警告
+  - ブロック
 
 - Web の脅威 (マルウェア、フィッシング)
-
-    - SmartScreen Intel(EOP Exchange Online Protection含む)
-    - エスカレーション
+  - SmartScreen Intel(EOP Exchange Online Protection含む)
+  - エスカレーション
 
 - Web コンテンツ フィルター (WCF)
 
->[!Note]
->Microsoft Cloud App Security (MCAS) は現在、ブロックされた URL についてのみインジケーターを生成します。
+> [!NOTE]
+> Microsoft Cloud App Security (MCAS) は現在、ブロックされた URL についてのみインジケーターを生成します。
 
-優先順位は、URL または IP が評価される操作の順序に関連します。 たとえば、Web コンテンツ フィルター ポリシーがある場合は、カスタム IP/URL インジケーターを使用して除外を作成できます。 カスタム 侵害のインジケーター (IoC) は、WCF ブロックよりも優先順位が高くなります。 
+優先順位は、URL または IP が評価される操作の順序に関連します。 たとえば、Web コンテンツ フィルター ポリシーがある場合は、カスタム IP/URL インジケーターを使用して除外を作成できます。 カスタム 侵害のインジケーター (IoC) は、WCF ブロックよりも優先順位が高くなります。
 
 同様に、インジケーター間の競合時には、常にブロック (オーバーライド ロジック) よりも優先されます。 つまり、許可インジケーターは、存在するブロック インジケーターに勝ちます。
 
-次の表は、Web 保護スタック内で競合が発生する一般的な構成の概要を示しています。 また、上記の優先順位に基づいて、結果の判定を識別します。 
+次の表は、Web 保護スタック内で競合が発生する一般的な構成の概要を示しています。 また、上記の優先順位に基づいて、結果の判定を識別します。
 
 <br>
 
@@ -119,6 +111,7 @@ Web 保護は、優先順位の順にリストされた次のコンポーネン�
 |許可|ブロック|ブロック|ブロック|許可 (Web 保護の上書き)|
 |許可|許可|ブロック|ブロック|許可 (WCF 例外)|
 |警告|ブロック|ブロック|ブロック|警告 (オーバーライド)|
+|
 
 内部 IP アドレスは、カスタム インジケーターではサポートされていません。 エンド ユーザーがバイパスした場合の警告ポリシーの場合、既定では、そのユーザーのサイトのブロックが 24 時間解除されます。 この時間枠は管理者によって変更され、SmartScreen クラウド サービスによって受け渡されます。 また、WEB 脅威ブロック (マルウェア/フィッシング) に CSP をMicrosoft Edgeで警告をバイパスする機能を無効にできます。 詳細については[、「SmartScreen Microsoft Edge」を](/DeployEdge/microsoft-edge-policies#smartscreen-settings-policies)設定。
 
@@ -130,11 +123,11 @@ Web 保護は、優先順位の順にリストされた次のコンポーネン�
 
 ## <a name="troubleshoot-endpoint-blocks"></a>エンドポイント ブロックのトラブルシューティング
 
-SmartScreen クラウドからの応答は標準化されています。 Fiddler のようなツールを使用して、クラウド サービスからの応答を調べ、ブロックのソースを特定するのに役立ちます。 
+SmartScreen クラウドからの応答は標準化されています。 Fiddler のようなツールを使用して、クラウド サービスからの応答を調べ、ブロックのソースを特定するのに役立ちます。
 
 SmartScreen クラウド サービスが応答を許可、ブロック、または警告すると、応答カテゴリとサーバー コンテキストがクライアントに中継されます。 このMicrosoft Edge、応答カテゴリは、表示する適切なブロック ページ (悪意のある、フィッシング、組織のポリシー) を決定するために使用されます。
 
-次の表は、応答とその相関機能を示しています。  
+次の表は、応答とその相関機能を示しています。
 
 <br>
 
@@ -147,27 +140,28 @@ SmartScreen クラウド サービスが応答を許可、ブロック、また�
 |CasbPolicy|MCAS|
 |悪意がある|Web の脅威|
 |フィッシング詐欺|Web の脅威|
+|||
 
 ## <a name="advanced-hunting-for-web-protection"></a>Web 保護のための高度な検索
 
 高度な検索の Kusto クエリを使用すると、組織内の Web 保護ブロックを最大 30 日間要約できます。 これらのクエリでは、上記の情報を使用して、ブロックのさまざまなソースを区別し、ユーザーフレンドリーな方法で要約します。 たとえば、次のクエリは、次のクエリから発生する WCF ブロックMicrosoft Edge。
 
 ```kusto
-DeviceEvents  
-| where ActionType == "SmartScreenUrlWarning" 
-| extend ParsedFields=parse_json(AdditionalFields) 
+DeviceEvents 
+| where ActionType == "SmartScreenUrlWarning"
+| extend ParsedFields=parse_json(AdditionalFields)
 | project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, Experience=tostring(ParsedFields.Experience)
-| where Experience == "CustomPolicy" 
+| where Experience == "CustomPolicy"
 ```
 
 同様に、以下のクエリを使用して、ネットワーク保護から発信される WCF ブロック (サードパーティ ブラウザーの WCF ブロックなど) を一覧表示できます。 ActionType が更新され、'Experience' が 'ResponseCategory' に変更された点に注意してください。
 
 ```kusto
-DeviceEvents  
-| where ActionType == "ExploitGuardNetworkProtectionBlocked" 
-| extend ParsedFields=parse_json(AdditionalFields) 
+DeviceEvents 
+| where ActionType == "ExploitGuardNetworkProtectionBlocked"
+| extend ParsedFields=parse_json(AdditionalFields)
 | project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, ResponseCategory=tostring(ParsedFields.ResponseCategory)
-| where ResponseCategory == "CustomPolicy" 
+| where ResponseCategory == "CustomPolicy"
 ```
 
 他の機能 (カスタム インジケーターなど) が原因のブロックを一覧表示するには、上の表を参照して、各機能とそれぞれの応答カテゴリの説明を参照してください。 これらのクエリは、組織内の特定のコンピューターに関連するテレメトリを検索するために変更される場合もあります。 上記の各クエリに示す ActionType には、Web Protection 機能によってブロックされた接続だけが表示され、すべてのネットワーク トラフィックが表示されるという点に注意してください。
@@ -184,7 +178,7 @@ WCF またはカスタム インジケーターによってブロックされて
 > [!div class="mx-imgBorder"]
 > ![組織によってブロックされたページ。](../../media/web-protection-indicator-blockpage.png)
 
-いずれにしても、サード パーティのブラウザーにブロック ページは表示されません。ユーザーにはトースト通知と共に 「Secure Connection Failed」ページが表示されます。 ブロックを担当するポリシーに応じて、ユーザーはトースト通知に別のメッセージを表示します。 たとえば、Web コンテンツ フィルターでは、「このコンテンツはブロックされています」というメッセージが表示されます。 
+いずれにしても、サード パーティのブラウザーにブロック ページは表示されません。ユーザーにはトースト通知と共に 「Secure Connection Failed」ページが表示されます。 ブロックを担当するポリシーに応じて、ユーザーはトースト通知に別のメッセージを表示します。 たとえば、Web コンテンツ フィルターでは、「このコンテンツはブロックされています」というメッセージが表示されます。
 
 > [!div class="mx-imgBorder"]
 > ![WCF によってブロックされたページ。](../../media/web-protection-np-block.png)
@@ -199,8 +193,12 @@ WCF では、ドメインのカテゴリに異議を申し立てできます。 
 
 ## <a name="related-information"></a>関連情報
 
-トピック|説明
----|---
-[Web の脅威に対する保護](web-threat-protection.md) | フィッシング サイト、マルウェア ベクター、悪用サイト、信頼されていないサイトまたは低評価サイト、ブロックしたサイトへのアクセスを停止します。
-[Web コンテンツ フィルタリング](web-content-filtering.md) | コンテンツ カテゴリに基づいて Web サイトへのアクセスを追跡および調整します。
+<br>
 
+****
+
+|トピック|説明|
+|---|---|
+|[Web の脅威に対する保護](web-threat-protection.md) | フィッシング サイト、マルウェア ベクター、悪用サイト、信頼されていないサイトまたは低評価サイト、ブロックしたサイトへのアクセスを停止します。|
+|[Web コンテンツ フィルタリング](web-content-filtering.md) | コンテンツ カテゴリに基づいて Web サイトへのアクセスを追跡および調整します。|
+|

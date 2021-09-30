@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 9332483dffa9fc67bf319cc57aef89d25c866843
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: 32e750dc824484624a5f0d953b75f242639c3e23
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59443997"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60009507"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>準備評価ツールで見つかった問題を修正する
 
@@ -131,7 +131,7 @@ Microsoft マネージド デスクトップ Intune への登録を許可する�
 現在、Intune でのデバイスへの登録を許可Windows、少なくとも 1 つの登録制限ポリシーが構成されています。 「ユーザーを対象 [](/mem/intune/enrollment/enrollment-restrictions-set)とする登録制限ポリシーごとに登録制限を設定し、Microsoft マネージド デスクトップ **(MDM)** 設定を [許可] に変更Windows手順に従 **います**。 ただし、個人所有のデバイス **(MDM)** Windowsを [ブロック] に **設定できます**。 
 
 
-### <a name="enrollment-status-page"></a>[登録の状態] ページ
+### <a name="enrollment-status-page"></a>登録ステータス ページ
 
 現在、登録状態ページ (ESP) が有効になっています。 この機能のパブリック プレビュー Microsoft マネージド デスクトップ参加する場合は、このアイテムを無視できます。 詳細については [、「First-run experience with Autopilot」および「登録状態ページ」を参照してください](../get-started/esp-first-run.md)。
 
@@ -196,7 +196,7 @@ Azure AD組織の地域は、現在、ユーザーがサポートMicrosoft マ�
 Azure 組織が所属する 1 つ以上のADは、ユーザーがサポートMicrosoft マネージド デスクトップ。 詳細については、「サポートされている[地域Microsoft マネージド デスクトップ言語」を参照してください](../service-description/regions-languages.md)。
 
 
-### <a name="security-baselines"></a>セキュリティベースライン
+### <a name="security-baselines"></a>セキュリティ基本計画
 
 セキュリティ ベースライン ポリシーは、すべてのデバイスを対象Microsoft マネージド デスクトップする必要があります。
 
@@ -277,6 +277,14 @@ Enterprise状態ローミングを有効にする必要があります。
 **アドバイザリ**
 
 [すべて] または [選択Enterprise] の **状態ローミングが** 有効 **になっているか確認** します。 詳細については、「Enable Enterprise ステート ローミング」[を参照Azure Active Directory。](/azure/active-directory/devices/enterprise-state-roaming-enable)
+
+### <a name="guest-invitation-settings"></a>ゲスト招待の設定
+
+Microsoft マネージド デスクトップ設定では、ディレクトリ内のすべてのユーザーとゲストがゲストを招待できるので、ゲストの招待設定を調整する方法をお勧めします。
+
+**アドバイザリ**
+
+**特定の管理者ロールに割り当** てられたメンバー ユーザーとユーザーは、メンバーアクセス許可を持つゲストを含むゲスト ユーザーを招待できます。有効にする必要があります。 手順については、「ゲスト アカウント [の前提条件」を参照してください](/microsoft-365/managed-desktop/get-ready/guest-accounts)。
 
 ### <a name="licenses"></a>ライセンス
 

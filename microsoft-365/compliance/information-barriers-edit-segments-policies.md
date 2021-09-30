@@ -12,12 +12,12 @@ ms.collection:
 localization_priority: None
 f1.keywords:
 - NOCSH
-ms.openlocfilehash: dff13dd6c4011ec73a1976bce0af69b607e391b0
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: 79f82ba1133af3c3cfe1d8c7b05b481528bcb003
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59444057"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60010107"
 ---
 # <a name="manage-information-barrier-policies"></a>情報バリア ポリシーの管理
 
@@ -37,7 +37,7 @@ ms.locfileid: "59444057"
 | [情報バリアのトラブルシューティング](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting) | 情報バリアで予期しない問題が発生した場合は、この記事を参照してください。 |
 
 > [!IMPORTANT]
-> この記事で説明するタスクを実行するには、次のいずれかの適切な役割を割り当てる必要があります。<br/>- Microsoft 365 Enterpriseグローバル管理者<br/>- グローバル管理者<br/>- コンプライアンス管理者<br/>- IB コンプライアンス管理 (これは新しい役割です!<br><br>情報バリアの前提条件の詳細については、「前提条件 (情報バリア ポリシーの場合 [)」を参照してください](information-barriers-policies.md#prerequisites)。<br><br> コンプライアンス センター [PowerShell のセキュリティ &接続してください](/powershell/exchange/connect-to-scc-powershell)。
+> この記事で説明するタスクを実行するには、次のいずれかの適切な役割を割り当てる必要があります。<br/>- Microsoft 365 Enterpriseグローバル管理者<br/>- グローバル管理者<br/>- コンプライアンス管理者<br/>- IB コンプライアンス管理 (これは新しい役割です!<br><br>情報バリアの前提条件の詳細については、「前提条件 (情報バリア ポリシーの場合 [)」を参照してください](information-barriers-policies.md#step-1-make-sure-prerequisites-are-met)。<br><br> コンプライアンス センター [PowerShell のセキュリティ &接続してください](/powershell/exchange/connect-to-scc-powershell)。
 
 ## <a name="edit-user-account-attributes"></a>ユーザー アカウントの属性を編集する
 
@@ -76,7 +76,7 @@ ms.locfileid: "59444057"
     |:---------|:----------|
     | `Set-OrganizationSegment -Identity GUID -UserGroupFilter "attribute -eq 'attributevalue'"` |`Set-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd -UserGroupFilter "Department -eq 'HRDept'"` <p> この例では、GUID *c96e0837-c232-4a8a-841e-ef45787d8fcd* を持つセグメントについて、部門名を "HRDept" に更新しました。 |
 
-組織のセグメントの編集が完了したら、情報バリア ポリシーを[定義](#edit-a-policy)または編集できます。 [](information-barriers-policies.md#part-2-define-information-barrier-policies)
+組織のセグメントの編集が完了したら、情報バリア ポリシーを[定義](#edit-a-policy)または編集できます。 [](information-barriers-policies.md#step-3-define-information-barrier-policies)
 
 ## <a name="edit-a-policy"></a>ポリシーを編集する
 
@@ -94,7 +94,7 @@ ms.locfileid: "59444057"
 
     この例では、"SegmentsBlocked" を "SegmentsAllowed" に変更し *、HR* セグメントを指定しました。
 
-3. ポリシーの編集が完了したら、必ず変更を適用してください。 (「 [情報バリア ポリシーの適用」を参照](information-barriers-policies.md#part-3-apply-information-barrier-policies)してください。
+3. ポリシーの編集が完了したら、必ず変更を適用してください。 (「 [情報バリア ポリシーの適用」を参照](information-barriers-policies.md#step-4-apply-information-barrier-policies)してください。
 
 ## <a name="set-a-policy-to-inactive-status"></a>ポリシーを非アクティブな状態に設定する
 

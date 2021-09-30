@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: ab8562eb1ae9a9d45baa31952b0a88ed4a1d9f36
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bed6a3bfdbad66a8eb9979aea997d33a060fd134
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177431"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60010259"
 ---
 # <a name="redirecting-accounts-from-office-365-security-and-compliance-center-to-microsoft-365-defender"></a>[セキュリティとコンプライアンス センター Office 365アカウントをユーザーにリダイレクトMicrosoft 365 Defender
 
@@ -45,23 +45,26 @@ ms.locfileid: "59177431"
 
 自動リダイレクトが有効になっていると、ユーザーは Microsoft 365 Defender セキュリティ とコンプライアンス センターでセキュリティ機能を使用するときにOffice 365にルーティングされます。
 
-これには、[脅威の管理] セクションと [脅威の管理] ダッシュボードとレポートの機能が含まれます。 セキュリティに関連Office 365セキュリティとコンプライアンス センター内のアイテムは、セキュリティにMicrosoft 365 Defender。
+これには、[脅威の管理] セクションの [アラート] ([アラートとアラート ポリシーの表示])、および [脅威管理] ダッシュボードとレポートの機能が含まれます。 セキュリティに関連Office 365セキュリティとコンプライアンス センター内のアイテムは、セキュリティにMicrosoft 365 Defender。
 
 コンプライアンス関連のアイテムは Microsoft 365 コンプライアンス センター、メール フロー関連のアイテムは管理センター Exchangeにあります。
 
-コンプライアンス関連または両方に対応する機能など、他のすべての機能は、リダイレクトの影響を受け取る必要があります。 Office 365通知は、リダイレクトMicrosoft 365 Defender、Office 365とコンプライアンス センターの両方に表示されます。  
+コンプライアンス関連または両方に対応する機能など、他のすべての機能は、リダイレクトの影響を受け取る必要があります。
 
 ### <a name="set-up-portal-redirection"></a>ポータルリダイレクトの設定
-アカウントのルーティングを開始するには、Microsoft 365 Defenderで security.microsoft.com。
 
-1. Azure Active directory で、グローバル管理者またはセキュリティ管理者のアクセス許可を持っている必要があります。
-2. [サインインして](https://security.microsoft.com/)、Microsoft 365 Defender。
-3. [電子 **メール**  >  **設定] &に**  >  **移動します**。  
-4. [自動リダイレクト] 設定を [オン] に **切り替える**。
-5. [有効 **にする]** をクリックして、自動リダイレクトをMicrosoft 365 Defender。
+2021 年 10 月の初め現在、ポータルリダイレクトは自動的に、または既定で行われます。 ただし、一時的に無効にする必要がある場合は、これらの手順に従います。
+
+<!--To start routing accounts to Microsoft 365 Defender at security.microsoft.com:
+
+1. Make sure you’re a global administrator or have security administrator permissions in Azure Active directory.
+2. [Sign in](https://security.microsoft.com/) to Microsoft 365 Defender.
+3. Navigate to **Settings** > **Email & collaboration** > **Portal redirection**.  
+4. Toggle the Automatic redirection setting to **On**.
+5. Click **Enable** to apply automatic redirection to Microsoft 365 Defender.
 
 > [!NOTE]
-> リダイレクトを有効にすると、この設定が適用されている間、アクティブなセッションのアカウントはセッションから取り出され、現在のセッションを終了して再びサインインした後にのみ Microsoft 365 Defender にルーティングされます。
+> After redirection is enabled, accounts in active sessions while this setting is applied will not be ejected from their session and will only be routed to Microsoft 365 Defender after ending their current session and signing back in again.-->
 
 ## <a name="can-i-go-back-to-using-the-former-portal"></a>以前のポータルを使用して戻ってみませんか?
 何かが機能していない場合、または Microsoft 365 Defender を通じて完了できない場合は、ポータル フィードバック オプションを使用してその情報を確認します。 リダイレクトに関する問題が発生した場合は、お知らせください。

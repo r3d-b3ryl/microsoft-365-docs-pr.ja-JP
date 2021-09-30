@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: de458eed2b52b6043a4f5aaa5f8593b6136f9d37
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: aaa1c8cf1d54fe589adfd06939fc3f4c4398b18e
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164838"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60009495"
 ---
 # <a name="create-and-view-exceptions-for-security-recommendations---threat-and-vulnerability-management"></a>セキュリティ推奨事項の例外を作成して表示する - 脅威と脆弱性の管理
 
@@ -35,10 +35,9 @@ ms.locfileid: "59164838"
 - [脅威と脆弱性の管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-推奨事項が現時点では関連しない場合の修復要求の代わりに、推奨事項の例外を作成できます。 組織にデバイス グループがある場合は、例外の範囲を特定のデバイス グループに設定できます。 例外は、選択したデバイス グループに対して作成するか、過去と現在のすべてのデバイス グループに対して作成できます。  
+推奨事項が現時点では関連しない場合の修復要求の代わりに、推奨事項の例外を作成できます。 組織にデバイス グループがある場合は、例外の範囲を特定のデバイス グループに設定できます。 例外は、選択したデバイス グループに対して作成するか、過去と現在のすべてのデバイス グループに対して作成できます。
 
 推奨事項に対して例外が作成されると、例外期間が終了するまで、推奨事項はアクティブにされません。 推奨事項の状態が [完全な例外] **または [部分的な** 例外] (デバイス **グループ** 別) に変更されます。
 
@@ -50,7 +49,7 @@ ms.locfileid: "59164838"
 
 ## <a name="create-an-exception"></a>例外の作成
 
-例外を作成するセキュリティ推奨事項を選択し、[例外オプション] を選択してフォームに入力します。  
+例外を作成するセキュリティ推奨事項を選択し、[例外オプション] を選択してフォームに入力します。
 
 !["例外オプション" のボタンがセキュリティ推奨事項のフライアウト内の場所である場所を表示します。](images/tvm-exception-options.png)
 
@@ -64,7 +63,7 @@ ms.locfileid: "59164838"
 
 任意のページでデバイス グループでフィルター処理した脅威と脆弱性の管理、フィルター処理されたデバイス グループだけがオプションとして表示されます。
 
-これは、デバイス グループ別にフィルター処理を行うボタンで、次のページ脅威と脆弱性の管理します。 
+これは、デバイス グループ別にフィルター処理を行うボタンで、次のページ脅威と脆弱性の管理します。
 
 ![選択したデバイス グループ フィルターを表示する。](images/tvm-selected-device-groups.png)
 

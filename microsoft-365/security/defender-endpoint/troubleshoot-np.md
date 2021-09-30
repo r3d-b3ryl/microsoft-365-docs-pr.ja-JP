@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 98477c3f9137c175a46f6e050041974ef6a2b8f1
-ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
+ms.openlocfilehash: f520d3ed090b878c2d3cd9294bc04ee8c375972e
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59497790"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60010155"
 ---
 # <a name="troubleshoot-network-protection"></a>ネットワーク保護のトラブルシューティング
 
@@ -115,19 +115,19 @@ ms.locfileid: "59497790"
 ネットワーク保護が実行される環境のため、Microsoft はオペレーティング システムのプロキシ設定を確認できません。 場合によっては、ネットワーク保護クライアントがクラウド サービスにアクセスできない場合があります。 ネットワーク保護に関する接続の問題を解決するには、次のいずれかのレジストリ キーを構成して、ネットワーク保護がプロキシ構成を認識します。
 
 ```powershell
-reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyServer /d "<proxy IP address: Port>" /f
+Set-MpPreference -ProxyServer <proxy IP address: Port>
 ```
 
 ---OR---
 
 ```powershell
-reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC url>" /f
+Set-MpPreference -ProxyPacUrl <Proxy PAC url>
 ```
 
 レジストリ キーは、PowerShell、Microsoft エンドポイント マネージャーグループ ポリシーを使用して構成できます。 以下に役立つリソースを示します。
 
 - [レジストリ キーの操作](/powershell/scripting/samples/working-with-registry-keys)
-- [ユーザー設定のカスタム クライアント設定を構成Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-configure-client)
+- [Endpoint Protection 向けカスタム クライアント設定の構成](/mem/configmgr/protect/deploy-use/endpoint-protection-configure-client)
 - [グループ ポリシー設定を使用してグループ ポリシーをEndpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-group-policies)
 
 ## <a name="see-also"></a>関連項目

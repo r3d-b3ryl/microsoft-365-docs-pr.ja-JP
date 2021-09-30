@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: コンプライアンス センターに新しいソリューションを追加する場合、フィードバックに基づいて既存の機能を更新する場合、新しく更新されたドキュメントを展開する場合でも、Microsoft 365 を使用すると、変化し続けるコンプライアンス環境の上に立ち続けるのに役立ちます。 今月までの予定を確認します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 498d88e2a75a0485043297eebf27c3da014a63b9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1894721cb929aaf92df371668348b36bb788727b
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216094"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60010235"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 コンプライアンス センターの新機能
 
@@ -143,7 +143,7 @@ Microsoft 365 コンプライアンス センター に新しいソリューシ�
 
 次のページが追加されました。
 
-- [カスタムの機密情報の種類のフィルター リファレンス](sit-custom-sit-filters.md)
+- [カスタム機密情報の種類のフィルター リファレンス](sit-custom-sit-filters.md)
 - [PowerShell を使用してカスタム機密情報の種類を変更する](sit-modify-a-custom-sensitive-information-type-in-powershell.md)
 - [PowerShell を使用してカスタム機密情報の種類を削除する](sit-remove-a-custom-sensitive-information-type-in-powershell.md)
 
@@ -174,9 +174,9 @@ Microsoft 365 コンプライアンス センター に新しいソリューシ�
 - 感度ラベル ポリシー ウィザードでは、既定[の](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling)ラベルOutlook固有のオプションがサポートされ、必須のラベル付けは PowerShell の詳細設定よりも簡単に構成できます。
 - 変数を[使用した動的マーキング](sensitivity-labels-office-apps.md#dynamic-markings-with-variables )のサポートが、Word、Excel、およびPowerPoint on the web
 - ユーザー[の自動ラベル](apply-sensitivity-label-automatically.md)付けポリシー Exchangeラベルが暗号化用に構成されている場合、その暗号化は適用されません。 さらに、Exchangeラベル付けポリシーの場合は、例外を構成し、サブジェクト、受信者アドレス、または送信者アドレスがパターンと一致する新しい条件を構成できます。受信者アドレスには単語が含まれる。送信者ドメインは、受信者がメンバーです。送信者は次の場合です。
-- チーム、グループ、およびサイトで感度ラベルを使用する場合は、BlockSendLabelMismatchEmail パラメーターと一緒に Set-SPOTenant を使用して、監査イベントの検出されたドキュメントの感度の不一致がログに記録される際に自動的に生成される電子メールを防ぐのに使用できます。  詳細については、「監査の感度 [ラベルアクティビティ」を参照してください](sensitivity-labels-teams-groups-sites.md#auditing-sensitivity-label-activities )。
+- チーム、グループ、およびサイトで感度ラベルを使用する場合は、BlockSendLabelMismatchEmail パラメーターと一緒に Set-SPOTenant を使用して、監査イベントの検出されたドキュメントの感度の不一致がログに記録される際に自動的に生成される電子メールを防ぐのに使用できます。  詳細については、「監査の感度 [ラベルアクティビティ」を参照してください](sensitivity-labels-teams-groups-sites.md#auditing-sensitivity-label-activities)。
 - 認証 [コンテキスト設定が](sensitivity-labels-teams-groups-sites.md#more-information-about-the-dependencies-for-the-authentication-context-option) 、感度ラベルのプレビューで完全に展開されました。 さらに、この構成は現在、ユーザーがサポートMicrosoft Teams。
-- SharePoint および OneDrive で Office ファイルの感度ラベルを有効にした場合に、サービス原則名 (Microsoft Cloud App Security など) でラベル付けされ暗号化され、SharePoint および OneDrive にアップロード[](sensitivity-labels-sharepoint-onedrive-files.md)されたファイルを Office for the web で開く事が可能になります。
+- サービス原則名 (Microsoft Cloud App Security など) でラベル付けおよび暗号化され、SharePoint および OneDrive にアップロードされたファイルは、Office ファイルの感度ラベルを有効にした場合に Office for the web[で開けるSharePointとOneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 - バージョン 2105: Windows の場合は 6 月 18 日、macOS ではバージョン 16.50 以上を使用する場合、共同編集と[AutoSave](sensitivity-labels-coauthoring.md)はテスト テナントに制限されなくなりました。 この機能は引き続き iOS と Android ではサポートされていません。プレビューのままです。
 
 ## <a name="may-2021"></a>2021 年 5 月

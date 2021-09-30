@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: fbf7b2328a453f1fb20d77553548a71a0e1ca8ab
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 47e532f8746c0fa4bb0b256754bfb5602b5e367b
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177536"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60008919"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング
 
@@ -58,7 +58,7 @@ Configuration Manager の次のバージョンを使用してデバイスをオ�
 
 - Microsoft Endpoint Configuration Manager
 - System Center 2012 Configuration Manager
-- System Center 2012 R2 構成マネージャー
+- System Center 2012 R2 Configuration Manager
 
 上記のバージョンの Configuration Manager を使用した展開は、デバイスでオンボーディング スクリプトを実行して行います。 Configuration Manager コンソールで展開を追跡できます。
 
@@ -72,7 +72,7 @@ Configuration Manager の次のバージョンを使用してデバイスをオ�
 
 1. [スタート **] ボタンを** クリックし、「 **イベント ビューアー」と入力** し、Enter キーを **押します**。
 
-2. [ログ アプリケーション **Windows] に**  >  **移動します**。
+2. [ログ アプリケーション **Windows] に** \> **移動します**。
 
 3. **WDATPOnboarding イベント ソースからイベントを** 探します。
 
@@ -81,16 +81,21 @@ Configuration Manager の次のバージョンを使用してデバイスをオ�
 > [!NOTE]
 > 次のイベントの ID は、オンボーディング スクリプトにのみ固有のイベントです。
 
-イベント ID | エラーの種類 | 解決手順
-:---:|:---|:---
- `5` | オフボード データが見つかりましたが、削除できなかった | レジストリのアクセス許可を確認する (具体的には)<br> `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
-`10` | オンボード データをレジストリに書き込めなかった |  レジストリのアクセス許可を確認する (具体的には)<br> `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.<br>スクリプトが管理者として実行されたと確認します。
-`15` |  SENSE サービスの開始に失敗しました |サービスの正常性 (コマンド) を `sc query sense` 確認します。 中間の状態 *('Pending_Stopped'*、 *'Pending_Running'*) に含めず、(管理者権限を持つ) スクリプトを再度実行してください。 <br> <br> デバイスがバージョン 1607 Windows 10実行してコマンドを実行している場合は、 `sc query sense` `START_PENDING` デバイスを再起動します。 デバイスを再起動しても問題が解決しない場合は、KB4015217 にアップグレードして、もう一度オンボーディングを試してください。
-`15` | SENSE サービスの開始に失敗しました | エラーのメッセージが次の場合:システム エラー 577 またはエラー 1058 が発生した場合は、Microsoft Defender ウイルス対策 ELAM ドライバーを有効にする必要があります。手順については[、「Microsoft Defender ウイルス対策](#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)がポリシーによって無効にされていないか確認する」を参照してください。
-`30` |  スクリプトがサービスの実行を待機できなかった | サービスの開始に時間がかかったか、開始しようとしている間にエラーが発生している可能性があります。 SENSE に関連するイベントとエラーの詳細については、「イベント ビューアーを使用してイベント [とエラーを確認する」を参照してください](event-error-codes.md)。
-`35` |  スクリプトが必要なオンボーディング状態レジストリ値を見つけ出すに失敗しました | SENSE サービスが初めて開始されると、オンボード状態がレジストリの場所に書き込み<br>`HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status`.<br> スクリプトは数秒後に検索に失敗しました。 手動でテストし、それがそこにあるか確認できます。 SENSE に関連するイベントとエラーの詳細については、「イベント ビューアーを使用してイベント [とエラーを確認する」を参照してください](event-error-codes.md)。
-`40` | SENSE サービスオンボーディングの状態が **1 に設定されていない** | SENSE サービスが正しくオンボードに失敗しました。 SENSE に関連するイベントとエラーの詳細については、「イベント ビューアーを使用してイベント [とエラーを確認する」を参照してください](event-error-codes.md)。
-`65` | 不十分な特権| 管理者特権でスクリプトを再度実行します。
+<br>
+
+****
+
+|イベント ID|エラーの種類|解決手順|
+|:---:|---|---|
+|`5`|オフボード データが見つかりましたが、削除できなかった|レジストリのアクセス許可を確認する (具体的には) <p> `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.|
+|`10`|オンボード データをレジストリに書き込めなかった|レジストリのアクセス許可を確認する (具体的には) <p> `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`. <p> スクリプトが管理者として実行されたと確認します。|
+|`15`|SENSE サービスの開始に失敗しました|サービスの正常性 (コマンド) を `sc query sense` 確認します。 中間の状態 *('Pending_Stopped'*、 *'Pending_Running'*) に含めず、(管理者権限を持つ) スクリプトを再度実行してください。 <p> デバイスがバージョン 1607 Windows 10実行してコマンドを実行している場合は、 `sc query sense` `START_PENDING` デバイスを再起動します。 デバイスを再起動しても問題が解決しない場合は、KB4015217 にアップグレードして、もう一度オンボーディングを試してください。|
+|`15`|SENSE サービスの開始に失敗しました|エラーのメッセージが次の場合:システム エラー 577 またはエラー 1058 が発生した場合は、Microsoft Defender ウイルス対策 ELAM ドライバーを有効にする必要があります。手順については[、「Microsoft Defender ウイルス対策](#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)がポリシーによって無効にされていないか確認する」を参照してください。|
+|`30`|スクリプトがサービスの実行を待機できなかった|サービスの開始に時間がかかったか、開始しようとしている間にエラーが発生している可能性があります。 SENSE に関連するイベントとエラーの詳細については、「イベント ビューアーを使用してイベント [とエラーを確認する」を参照してください](event-error-codes.md)。|
+|`35`|スクリプトが必要なオンボーディング状態レジストリ値を見つけ出すに失敗しました|SENSE サービスが初めて開始されると、オンボード状態がレジストリの場所に書き込み <p> `HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status`. <p> スクリプトは数秒後に検索に失敗しました。 手動でテストし、それがそこにあるか確認できます。 SENSE に関連するイベントとエラーの詳細については、「イベント ビューアーを使用してイベント [とエラーを確認する」を参照してください](event-error-codes.md)。|
+|`40`|SENSE サービスオンボーディングの状態が **1 に設定されていない**|SENSE サービスが正しくオンボードに失敗しました。 SENSE に関連するイベントとエラーの詳細については、「イベント ビューアーを使用してイベント [とエラーを確認する」を参照してください](event-error-codes.md)。|
+|`65`|不十分な特権|管理者特権でスクリプトを再度実行します。|
+|
 
 ### <a name="troubleshoot-onboarding-issues-using-microsoft-intune"></a>ユーザー設定を使用してオンボーディングの問題をトラブルシューティングMicrosoft Intune
 
@@ -108,23 +113,33 @@ Intune でポリシーを構成し、デバイスに反映されない場合は�
 
 #### <a name="microsoft-intune-error-codes-and-oma-uris"></a>Microsoft Intuneコードとエラー コードOMA-URIs
 
-エラー コード 16 進数 | エラー コード 12 月 | エラーの説明 | OMA-URI | 考えられる原因とトラブルシューティングの手順
-:---:|:---|:---|:---|:---
-0x87D1FDE8 | -2016281112 | 修復に失敗しました | オンボード <br> オフボード | **考えられる原因:** 誤った BLOB でオンボーディングまたはオフボードが失敗しました。署名が間違っていたり、PreviousOrgIds フィールドが見つからない場合。 <br><br> **トラブルシューティングの手順:** <br> [デバイス イベント ログのエージェントオンボーディング エラーの表示] セクション [でイベントの ID を確認](#view-agent-onboarding-errors-in-the-device-event-log) します。 <br><br> 次の表の MDM イベント ログを確認するか、「MDM エラーの診断」の手順に従[Windows 10。](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)
- | | | | オンボード <br> オフボード <br> SampleSharing | **考えられる原因:** Microsoft Defender for Endpoint Policy レジストリ キーが存在しないか、OMA DM クライアントに書き込み権限が付与されていない。 <br><br> **トラブルシューティングの手順:** 次のレジストリ キーが存在することを確認します。 `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection` <br> <br> 存在しない場合は、管理者特権でコマンドを開き、キーを追加します。
- | | | | SenseIsRunning <br> OnboardingState <br> OrgId |  **考えられる原因:** 読み取り専用プロパティによる修復の試行。 オンボーディングに失敗しました。 <br><br> **トラブルシューティングの手順:** 「デバイスでのオンボードの問題の [トラブルシューティング」のトラブルシューティング手順を確認します](#troubleshoot-onboarding-issues-on-the-device)。 <br><br> 次の表の MDM イベント ログを確認するか、「MDM エラーの診断」の手順に従[Windows 10。](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)
- | | | | すべて | **考えられる原因:** Microsoft Defender for Endpoint をサポートされていない SKU/プラットフォーム (特に Holographic SKU) に展開します。 <br><br> 現在サポートされているプラットフォーム:<br> Enterprise、教育、およびProfessional。<br> サーバーはサポートされていません。
- 0x87D101A9 | -2016345687 |SyncML(425): 要求されたコマンドは、送信者が受信者に適切なアクセス制御アクセス許可 (ACL) を持たないので失敗しました。 | すべて |  **考えられる原因:** Microsoft Defender for Endpoint をサポートされていない SKU/プラットフォーム (特に Holographic SKU) に展開します。<br><br> 現在サポートされているプラットフォーム:<br>  Enterprise、教育、およびProfessional。
+<br>
+
+****
+
+|エラー コード 16 進数|エラー コード 12 月|エラーの説明|OMA-URI|考えられる原因とトラブルシューティングの手順|
+|:---:|---|---|---|---|
+|0x87D1FDE8|-2016281112|修復に失敗しました|オンボード <p> オフボード|**考えられる原因:** 誤った BLOB でオンボーディングまたはオフボードが失敗しました。署名が間違っていたり、PreviousOrgIds フィールドが見つからない場合。 <p> **トラブルシューティングの手順:** <p> [デバイス イベント ログのエージェントオンボーディング エラーの表示] セクション [でイベントの ID を確認](#view-agent-onboarding-errors-in-the-device-event-log) します。 <p> 次の表の MDM イベント ログを確認するか、「MDM エラーの診断」の手順に従[Windows 10。](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)|
+||||オンボード <p> オフボード <p> SampleSharing|**考えられる原因:** Microsoft Defender for Endpoint Policy レジストリ キーが存在しないか、OMA DM クライアントに書き込み権限が付与されていない。 <p> **トラブルシューティングの手順:** 次のレジストリ キーが存在することを確認します。 `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection` <p> 存在しない場合は、管理者特権でコマンドを開き、キーを追加します。|
+||||SenseIsRunning <p> OnboardingState <p> OrgId|**考えられる原因:** 読み取り専用プロパティによる修復の試行。 オンボーディングに失敗しました。 <p> **トラブルシューティングの手順:** 「デバイスでのオンボードの問題の [トラブルシューティング」のトラブルシューティング手順を確認します](#troubleshoot-onboarding-issues-on-the-device)。 <p> 次の表の MDM イベント ログを確認するか、「MDM エラーの診断」の手順に従[Windows 10。](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)|
+||||すべて|**考えられる原因:** Microsoft Defender for Endpoint をサポートされていない SKU/プラットフォーム (特に Holographic SKU) に展開します。 <p> 現在サポートされているプラットフォーム: <p> Enterprise、教育、およびProfessional。<p> サーバーはサポートされていません。|
+|0x87D101A9|-2016345687|SyncML(425): 要求されたコマンドは、送信者が受信者に適切なアクセス制御アクセス許可 (ACL) を持たないので失敗しました。|すべて|**考えられる原因:** Microsoft Defender for Endpoint をサポートされていない SKU/プラットフォーム (特に Holographic SKU) に展開します。<p> 現在サポートされているプラットフォーム: <p> Enterprise、教育、およびProfessional。|
+|
 
 #### <a name="known-issues-with-non-compliance"></a>コンプライアンスに関する既知の問題
 
 次の表に、コンプライアンス以外の問題に関する情報と、問題に対処する方法を示します。
 
-ケース | 現象 | 考えられる原因とトラブルシューティングの手順
-:---:|:---|:---
- `1` | デバイスは SenseIsRunning OMA-URI に準拠しています。 ただし、OrgId、Onboarding、OnboardingState OMA-URI では非準拠です。 | **考えられる原因:** インストールまたはアップグレード後にユーザーが OOBE をWindows確認します。 OOBE オンボーディングを完了できなかったが、SENSE が既に実行されている。<br><br> **トラブルシューティングの手順:** OOBE が完了するのを待ちます。
- `2` |  デバイスは OrgId、Onboarding、および OnboardingState OMA-URI に準拠していますが、SenseIsRunning OMA-URI では非準拠です。 |  **考えられる原因:** センス サービスのスタートアップの種類は、"遅延開始" に設定されます。 これにより、システムのMicrosoft Intune DM セッションが発生すると、サーバーは SenseIsRunning によってデバイスが非準拠として報告される場合があります。 <br><br> **トラブルシューティングの手順:** この問題は、24 時間以内に自動的に修正されるはずです。
- `3` | デバイスが非準拠 | **トラブルシューティングの手順:** オンボーディング ポリシーとオフボード ポリシーが同じデバイスに同時に展開されないことを確認します。
+<br>
+
+****
+
+|ケース|現象|考えられる原因とトラブルシューティングの手順|
+|:---:|---|---|
+|`1`|デバイスは SenseIsRunning OMA-URI に準拠しています。 ただし、OrgId、Onboarding、OnboardingState OMA-URI では非準拠です。|**考えられる原因:** インストールまたはアップグレード後にユーザーが OOBE をWindows確認します。 OOBE オンボーディングを完了できなかったが、SENSE が既に実行されている。 <p> **トラブルシューティングの手順:** OOBE が完了するのを待ちます。|
+|`2`|デバイスは OrgId、Onboarding、および OnboardingState OMA-URI に準拠していますが、SenseIsRunning OMA-URI では非準拠です。|**考えられる原因:** センス サービスのスタートアップの種類は、"遅延開始" に設定されます。 これにより、システムのMicrosoft Intune DM セッションが発生すると、サーバーは SenseIsRunning によってデバイスが非準拠として報告される場合があります。 <p> **トラブルシューティングの手順:** この問題は、24 時間以内に自動的に修正されるはずです。|
+|`3`|デバイスが非準拠|**トラブルシューティングの手順:** オンボーディング ポリシーとオフボード ポリシーが同じデバイスに同時に展開されないことを確認します。|
+|
 
 #### <a name="mobile-device-management-mdm-event-logs"></a>モバイル デバイス管理 (MDM) イベント ログ
 
@@ -134,9 +149,14 @@ MDM イベント ログを表示して、オンボーディング中に発生す
 
 チャネル名: 管理者
 
-ID | 重要度 | イベントの説明 | トラブルシューティングの手順
-:---|:---|:---|:---
-1819 | Error | エンドポイント CSP 用 Microsoft Defender: ノードの値の設定に失敗しました。 NodeId: (%1), TokenName: (%2), Result: (%3)。 | [1607 年 1607 年Windows 10累積的な更新プログラムをダウンロードします](https://go.microsoft.com/fwlink/?linkid=829760)。
+<br>
+
+****
+
+|ID|重要度|イベントの説明|トラブルシューティングの手順|
+|---|---|---|---|
+|1819|Error|エンドポイント CSP 用 Microsoft Defender: ノードの値の設定に失敗しました。 NodeId: (%1), TokenName: (%2), Result: (%3)。|[1607 年 1607 年Windows 10累積的な更新プログラムをダウンロードします](https://go.microsoft.com/fwlink/?linkid=829760)。|
+|
 
 ## <a name="troubleshoot-onboarding-issues-on-the-device"></a>デバイスでのオンボーディングの問題のトラブルシューティング
 
@@ -152,7 +172,7 @@ ID | 重要度 | イベントの説明 | トラブルシューティングの手
 
 1. [スタート **] ボタンを** クリックし、「 **イベント ビューアー」と入力** し、Enter キーを **押します**。
 
-2. [イベント **ビューアー (ローカル)] ウィンドウ** で、[**アプリケーション** とサービス ログ]  >  **を展開します。Microsoft** Windows SENSE  >    >  **です**。
+2. [イベント **ビューアー (ローカル)] ウィンドウ** で、[**アプリケーション** とサービス ログ] \> **を展開します。Microsoft** Windows SENSE \>  \> **です**。
 
    > [!NOTE]
    > SENSE は、Microsoft Defender for Endpoint をサポートする動作センサーを参照するために使用される内部名です。
@@ -167,27 +187,30 @@ ID | 重要度 | イベントの説明 | トラブルシューティングの手
 
 6. [操作] ウィンドウに問題を示すイベント **が表示** されます。 次の表のソリューションに基づいて、トラブルシューティングを試みできます。
 
-イベント ID | メッセージ | 解決手順
-:---:|:---|:---
- `5` | Microsoft Defender for Endpoint service が変数でサーバーに接続 _できなかった_ | [デバイスにインターネット アクセス権が設定されている必要があります](#ensure-the-device-has-an-internet-connection)。
- `6` | Microsoft Defender for Endpoint Service はオンボードされていないので、オンボーディング パラメーターが見つかりませんでした。 エラー コード: _変数_ | [オンボーディング スクリプトを再度実行します](configure-endpoints-script.md)。
- `7` | Microsoft Defender for Endpoint service では、オンボーディング パラメーターの読み取りが失敗しました。 エラー コード: _変数_ | [デバイスにインターネット アクセス権が設定されているのを](#ensure-the-device-has-an-internet-connection)確認し、オンボーディング プロセス全体を再度実行します。
- `9` | Microsoft Defender for Endpoint service は、開始の種類を変更できなかった。 エラー コード: 変数 | オンボーディング中にイベントが発生した場合は、再起動し、オンボーディング スクリプトの実行を再試みします。 詳細については、「オンボード スクリプトを [再度実行する」を参照してください](configure-endpoints-script.md)。 <br><br>オフボード中にイベントが発生した場合は、サポートにお問い合わせください。
-`10` | Microsoft Defender for Endpoint Service は、オンボーディング情報を保持できなかった。 エラー コード: 変数 | オンボーディング中にイベントが発生した場合は、オンボーディング スクリプトの実行を再試みします。 詳細については、「オンボード スクリプトを [再度実行する」を参照してください](configure-endpoints-script.md)。 <br><br>問題が解決しない場合は、サポートにお問い合わせください。
-`15` | Microsoft Defender for Endpoint では、URL 変数を使用してコマンド チャネルを開始 _できません。_ | [デバイスにインターネット アクセス権が設定されている必要があります](#ensure-the-device-has-an-internet-connection)。
-`17` | Microsoft Defender for Endpoint service は、接続されたユーザー エクスペリエンスとテレメトリ サービスの場所を変更できなかった。 エラー コード: 変数 | [オンボーディング スクリプトを再度実行します](configure-endpoints-script.md)。 問題が解決しない場合は、サポートにお問い合わせください。
-`25` | Microsoft Defender for Endpoint service は、レジストリの正常性状態をリセットできなかった。 エラー コード: _変数_ | サポートに問い合わせてください。
-`27` | Microsoft Defender for Endpoint モードを有効にWindows Defender。 オンボーディング プロセスに失敗しました。 エラー コード: 変数 | サポートに問い合わせてください。
-`29` | オフボード パラメーターの読み取りに失敗しました。 エラーの種類: %1、エラー コード: %2、説明: %3 | デバイスにインターネット アクセス権が設定されているのを確認し、オフボード プロセス全体を再度実行します。
-`30` | Microsoft Defender for Endpoint で $(build.sense.productDisplayName) モードを無効にしました。 エラー コード: %1 | サポートに問い合わせてください。
-`32` | $(build.sense.productDisplayName) サービスは、オフボード プロセスの後に自分自身を停止する要求に失敗しました。 エラー コード: %1 | サービスの開始の種類が手動で行い、デバイスを再起動します。
-`55` | Secure ETW 自動ロガーの作成に失敗しました。 エラー コード: %1 | デバイスを再起動します。
-`63` | 外部サービスの開始の種類を更新します。 名前: %1、実際の開始の種類: %2、予期される開始の種類: %3、終了コード: %4 | 前述のサービスの開始の種類の変更の原因を特定します。 終了コードが 0 ではない場合は、開始の種類を手動で予期される開始の種類に修正します。
-`64` | 停止した外部サービスの開始。 名前: %1、終了コード: %2 | イベントが再表示され続ける場合は、サポートにお問い合わせください。
-`68` | サービスの開始の種類が予期しない。 サービス名: %1、実際の開始の種類: %2、予期される開始の種類: %3 | 開始の種類の変更の原因を特定します。 前述のサービス開始の種類を修正しました。
-`69` | サービスが停止します。 サービス名: %1 | 前述のサービスを開始します。 継続する場合はサポートにお問い合わせください。
+   <br>
 
-<br />
+   ****
+
+   |イベント ID|メッセージ|解決手順|
+   |:---:|---|---|
+   |`5`|Microsoft Defender for Endpoint service が変数でサーバーに接続 _できなかった_|[デバイスにインターネット アクセス権が設定されている必要があります](#ensure-the-device-has-an-internet-connection)。|
+   |`6`|Microsoft Defender for Endpoint Service はオンボードされていないので、オンボーディング パラメーターが見つかりませんでした。 エラー コード: _変数_|[オンボーディング スクリプトを再度実行します](configure-endpoints-script.md)。|
+   |`7`|Microsoft Defender for Endpoint service では、オンボーディング パラメーターの読み取りが失敗しました。 エラー コード: _変数_|[デバイスにインターネット アクセス権が設定されているのを](#ensure-the-device-has-an-internet-connection)確認し、オンボーディング プロセス全体を再度実行します。|
+   |`9`|Microsoft Defender for Endpoint service は、開始の種類を変更できなかった。 エラー コード: 変数|オンボーディング中にイベントが発生した場合は、再起動し、オンボーディング スクリプトの実行を再試みします。 詳細については、「オンボード スクリプトを [再度実行する」を参照してください](configure-endpoints-script.md)。 <br><br>オフボード中にイベントが発生した場合は、サポートにお問い合わせください。|
+   |`10`|Microsoft Defender for Endpoint Service は、オンボーディング情報を保持できなかった。 エラー コード: 変数|オンボーディング中にイベントが発生した場合は、オンボーディング スクリプトの実行を再試みします。 詳細については、「オンボード スクリプトを [再度実行する」を参照してください](configure-endpoints-script.md)。 <br><br>問題が解決しない場合は、サポートにお問い合わせください。|
+   |`15`|Microsoft Defender for Endpoint では、URL 変数を使用してコマンド チャネルを開始 _できません。_|[デバイスにインターネット アクセス権が設定されている必要があります](#ensure-the-device-has-an-internet-connection)。|
+   |`17`|Microsoft Defender for Endpoint service は、接続されたユーザー エクスペリエンスとテレメトリ サービスの場所を変更できなかった。 エラー コード: 変数|[オンボーディング スクリプトを再度実行します](configure-endpoints-script.md)。 問題が解決しない場合は、サポートにお問い合わせください。|
+   |`25`|Microsoft Defender for Endpoint service は、レジストリの正常性状態をリセットできなかった。 エラー コード: _変数_|サポートに問い合わせてください。|
+   |`27`|Microsoft Defender for Endpoint モードを有効にWindows Defender。 オンボーディング プロセスに失敗しました。 エラー コード: 変数|サポートに問い合わせてください。|
+   |`29`|オフボード パラメーターの読み取りに失敗しました。 エラーの種類: %1、エラー コード: %2、説明: %3|デバイスにインターネット アクセス権が設定されているのを確認し、オフボード プロセス全体を再度実行します。|
+   |`30`|Microsoft Defender for Endpoint で $(build.sense.productDisplayName) モードを無効にしました。 エラー コード: %1|サポートに問い合わせてください。|
+   |`32`|$(build.sense.productDisplayName) サービスは、オフボード プロセスの後に自分自身を停止する要求に失敗しました。 エラー コード: %1|サービスの開始の種類が手動で行い、デバイスを再起動します。|
+   |`55`|Secure ETW 自動ロガーの作成に失敗しました。 エラー コード: %1|デバイスを再起動します。|
+   |`63`|外部サービスの開始の種類を更新します。 名前: %1、実際の開始の種類: %2、予期される開始の種類: %3、終了コード: %4|前述のサービスの開始の種類の変更の原因を特定します。 終了コードが 0 ではない場合は、開始の種類を手動で予期される開始の種類に修正します。|
+   |`64`|停止した外部サービスの開始。 名前: %1、終了コード: %2|イベントが再表示され続ける場合は、サポートにお問い合わせください。|
+   |`68`|サービスの開始の種類が予期しない。 サービス名: %1、実際の開始の種類: %2、予期される開始の種類: %3|開始の種類の変更の原因を特定します。 前述のサービス開始の種類を修正しました。|
+   |`69`|サービスが停止します。 サービス名: %1|前述のサービスを開始します。 継続する場合はサポートにお問い合わせください。|
+   |
 
 デバイスには、Microsoft Defender for Endpoint エージェントが適切に機能するために依存しているその他のコンポーネントがあります。 Microsoft Defender for Endpoint エージェント イベント ログにオンボード関連のエラーがない場合は、次の手順に進み、追加のコンポーネントが正しく構成されていることを確認します。
 
@@ -295,13 +318,14 @@ WinHTTP は、インターネット閲覧プロキシ設定や他のユーザー
    > すべての Windows Defender (wdboot、wdfilter、wdnisdrv、wdnissvc、および windefend) は、既定の状態である必要があります。 これらのサービスの起動を変更する機能はサポートされていないため、システムのイメージを再作成する必要があります。
    >
    > WdBoot と WdFilter の既定の構成の例:
+   >
    > - `<Key Path="SYSTEM\CurrentControlSet\Services\WdBoot"><KeyValue Value="0" ValueKind="DWord" Name="Start"/></Key>`
    > - `<Key Path="SYSTEM\CurrentControlSet\Services\WdFilter"><KeyValue Value="0" ValueKind="DWord" Name="Start"/></Key>`
 
 ## <a name="troubleshoot-onboarding-issues-on-a-server"></a>サーバーでのオンボーディングの問題のトラブルシューティング
 
->[!NOTE]
->次のトラブルシューティング ガイダンスは、以下のユーザーにのみWindows Server 2016適用されます。
+> [!NOTE]
+> 次のトラブルシューティング ガイダンスは、以下のユーザーにのみWindows Server 2016適用されます。
 
 サーバーのオンボード中に問題が発生した場合は、次の検証手順を実行して、考えられる問題に対処します。
 
@@ -310,17 +334,17 @@ WinHTTP は、インターネット閲覧プロキシ設定や他のユーザー
 
 また、次の情報を確認する必要があります。
 
-- タスク マネージャーの [プロセス] タブで Microsoft Defender for Endpoint Service が **実行されている****のを確認します**。 例:
+- タスク マネージャーの [プロセス] タブで Microsoft Defender for Endpoint Service が **実行されている****のを確認します**。 次に例を示します。
 
     ![Microsoft Defender for Endpoint Service が実行されているプロセス ビューのイメージ。](images/atp-task-manager.png)
 
-- イベント **ビューアー アプリケーション**  >  **とサービス ログ操作** マネージャー  >  **をチェックして**、エラーが発生した場合を確認します。
+- イベント **ビューアー アプリケーション** \> **とサービス ログ操作** マネージャー \> **をチェックして** 、エラーが発生した場合を確認します。
 
 - [**サービス]** で、**サーバー** Microsoft Monitoring Agent実行しているサーバーを確認します。 例えば、
 
     ![サービスのイメージ。](images/atp-services.png)
 
-- [Microsoft Monitoring Agent   >  **Azure Log Analytics (OMS) で**、ワークスペースを確認し、状態が実行されているのを確認します。
+- [Microsoft Monitoring Agent  \> **Azure Log Analytics (OMS) で**、ワークスペースを確認し、状態が実行されているのを確認します。
 
     ![[プロパティ] Microsoft Monitoring Agentイメージ。](images/atp-mma-properties.png)
 
@@ -338,10 +362,12 @@ WinHTTP は、インターネット閲覧プロキシ設定や他のユーザー
 - このシナリオでは、オンボード パッケージが展開された場合でも、SENSE サービスは自動的に開始されません
 
 > [!NOTE]
-> SENSE サービスが 2021 年 4 月 22 日の更新プログラムのロールアップを使用して Windows 10 Version 1809 または Windows Server [2019](https://support.microsoft.com/kb/5001384)以降の Windows バージョンで開始するには、OOBE 後のユーザー ログオンが不要になります。 Windows 10バージョン 1909 と[2021 年 4](https://support.microsoft.com/kb/5001396)月の更新プログラムのロールアップ 。 Windows 10バージョン 2004/20H2 と[2021 年 4 月 28](https://support.microsoft.com/kb/5001391)日の更新プログラムのロールアップ 。 
-
-
-> [!NOTE]
+> SENSE サービスが次のバージョンまたはそれ以上の最新バージョンで開始するには、OOBE 後のユーザー ログオンWindows必要ありません。
+>
+> - Windows 10 Version 1809 2019 Windows 2021 年 4 月 22 日の更新プログラムのロールアップを使用してサーバー [2019 を更新または更新します](https://support.microsoft.com/kb/5001384)。
+> - Windows 10バージョン 1909 と[2021 年 4](https://support.microsoft.com/kb/5001396)月の更新プログラムのロールアップ 。
+> - Windows 10バージョン 2004/20H2 と[2021 年 4 月 28](https://support.microsoft.com/kb/5001391)日の更新プログラムのロールアップ 。
+>
 > 次の手順は、次の手順を使用する場合にのみMicrosoft Endpoint Configuration Manager。 アプリケーションを使用したオンボーディングの詳細については、「Microsoft Endpoint Configuration Manager [Microsoft Defender for Endpoint」を参照してください](/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection)。
 
 1. アプリケーションを作成Microsoft Endpoint Configuration Manager。
@@ -372,7 +398,7 @@ WinHTTP は、インターネット閲覧プロキシ設定や他のユーザー
 
     ![構成 7 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-7.png)
 
-8. [**コンテンツ インストール**  >  **プログラム] で、** 次のコマンドを指定します `net start sense` 。
+8. [ **コンテンツ インストール** \> **プログラム] で、** 次のコマンドを指定します `net start sense` 。
 
     ![configuration8 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-8.png)
 
@@ -459,7 +485,6 @@ WinHTTP は、インターネット閲覧プロキシ設定や他のユーザー
 28. [ **完了] で**、[閉じる] **を選択します**。
 
     ![configuration30 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-30.png)
-
 
 ## <a name="related-topics"></a>関連項目
 

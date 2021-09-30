@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: a0f806da62378ca21c1693fd96105bb89eaf5708
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 930b508b8e923baadff68701e88fc09af6a5051a
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191381"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60010083"
 ---
 # <a name="information-barriers-in-microsoft-365"></a>データの情報Microsoft 365
 
@@ -41,10 +41,10 @@ Microsoft 365グループや組織間のコミュニケーションとコラボ�
 ![Insider リスク ソリューション情報の障壁の手順。](../media/ir-solution-ib-steps.png)
 
 1. 情報バリアについて[詳しくは](information-barriers.md)、Microsoft 365
-2. 前提条件 [とアクセス許可を構成する](information-barriers-policies.md#prerequisites)
-3. 組織内 [のユーザーをセグメント化する](information-barriers-policies.md#part-1-segment-users)
-4. 情報バリア ポリシー [の作成と構成](information-barriers-policies.md#part-2-define-information-barrier-policies)
-5. 情報 [バリア ポリシーの適用](information-barriers-policies.md#part-3-apply-information-barrier-policies)
+2. 前提条件 [とアクセス許可を構成する](information-barriers-policies.md#step-1-make-sure-prerequisites-are-met)
+3. 組織内 [のユーザーをセグメント化する](information-barriers-policies.md#step-2-segment-users-in-your-organization)
+4. 情報バリア ポリシー [の作成と構成](information-barriers-policies.md#step-3-define-information-barrier-policies)
+5. 情報 [バリア ポリシーの適用](information-barriers-policies.md#step-4-apply-information-barrier-policies)
 
 ## <a name="more-information-about-information-barriers"></a>情報バリアの詳細
 

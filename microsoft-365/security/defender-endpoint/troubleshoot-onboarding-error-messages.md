@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 24d6873df2432adf5e56b62f01e784f65df4e980
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a80f30d132706633232713f1ba4b30fa1e64b800
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177544"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60010143"
 ---
 # <a name="troubleshoot-subscription-and-portal-access-issues"></a>サブスクリプションとポータル アクセスの問題のトラブルシューティング
 
@@ -42,10 +42,11 @@ ms.locfileid: "59177544"
 Microsoft 365 Defender にアクセス中にサブスクリプションが見つからないというメッセージが表示される場合は、ユーザーのポータルへのログインに使用される Azure Active Directory (Azure AD) が Microsoft Defender for Endpoint ライセンスを持っていないという意味です。
 
 潜在的な理由:
+
 - Windows E5 ライセンスと Office E5 ライセンスは、別のライセンスです。
 - ライセンスは購入されましたが、この Azure サーバー インスタンスADされません。
-    - ライセンス プロビジョニングの問題である可能性があります。
-    - サービスへの認証に使用されるライセンスとは異なるMicrosoft Azure ADにライセンスをプロビジョニングした可能性があります。
+  - ライセンス プロビジョニングの問題である可能性があります。
+  - サービスへの認証に使用されるライセンスとは異なるMicrosoft Azure ADにライセンスをプロビジョニングした可能性があります。
 
 どちらの場合も、Microsoft Defender for [Endpoint Support](https://support.microsoft.com/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636419533611396913) または Volume ライセンス のサポートで Microsoft サポートに問い [合わせるべきです](https://www.microsoft.com/licensing/servicecenter/Help/Contact.aspx)。
 
@@ -53,7 +54,7 @@ Microsoft 365 Defender にアクセス中にサブスクリプションが見つ
 
 ## <a name="your-subscription-has-expired"></a>サブスクリプションの有効期限が切れています
 
-サブスクリプションへのアクセス中Microsoft 365 Defenderサブスクリプションの有効期限が切れているメッセージが表示される場合、オンライン サービスサブスクリプションの有効期限が切れています。 Microsoft Defender for Endpoint サブスクリプションは、他のオンライン サービス サブスクリプションと同様に有効期限があります。 
+サブスクリプションへのアクセス中Microsoft 365 Defenderサブスクリプションの有効期限が切れているメッセージが表示される場合、オンライン サービスサブスクリプションの有効期限が切れています。 Microsoft Defender for Endpoint サブスクリプションは、他のオンライン サービス サブスクリプションと同様に有効期限があります。
 
 ライセンスの更新または延長は、任意の時点で選択できます。 有効期限が切れた後にポータルにアクセスすると、サブスクリプションの有効期限が切れたメッセージが表示され、ライセンスを更新しない場合は、デバイスのオフボード パッケージをダウンロードするオプションが表示されます。
 
@@ -70,27 +71,25 @@ Microsoft 365 Defender にアクセス中にサブスクリプションが見つ
 ![ポータルへのアクセスが承認されていないイメージ。](images/atp-not-authorized-to-access-portal.png)
 
 ## <a name="data-currently-isnt-available-on-some-sections-of-the-portal"></a>現在、ポータルの一部のセクションでデータを使用できない
+
 ポータル ダッシュボードや他のセクションに「現在データが使用できない」などのエラー メッセージが表示される場合は、次の手順を実行します。
 
 ![現在、データの画像は使用できません。](images/atp-data-not-available.png)
 
 その下のすべてのサブドメインを許可 `security.windows.com` する必要があります。 たとえば、`*.security.windows.com` などです。
 
-
 ## <a name="portal-communication-issues"></a>ポータル通信の問題
+
 ポータルへのアクセス、不足しているデータ、またはポータルの一部へのアクセス制限に関する問題が発生した場合は、次の URL が許可され、通信のために開いているか確認する必要があります。
 
 - `*.blob.core.windows.net`
 - `crl.microsoft.com`
 - `https://*.microsoftonline-p.com`
-- `https://*.securitycenter.windows.com` 
+- `https://*.securitycenter.windows.com`
 - `https://automatediracs-eus-prd.securitycenter.windows.com`
 - `https://login.microsoftonline.com`
 - `https://login.windows.net`
 - `https://onboardingpackagescusprd.blob.core.windows.net`
-- `https://secure.aadcdn.microsoftonline-p.com` 
-- `https://securitycenter.windows.com` 
-- `https://static2.sharepointonline.com` 
-
-
-
+- `https://secure.aadcdn.microsoftonline-p.com`
+- `https://securitycenter.windows.com`
+- `https://static2.sharepointonline.com`

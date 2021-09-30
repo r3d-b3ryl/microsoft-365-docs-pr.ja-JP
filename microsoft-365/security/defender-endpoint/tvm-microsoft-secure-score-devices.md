@@ -1,5 +1,5 @@
 ---
-title: デバイス向けの Microsoft セキュア スコア
+title: デバイスの Microsoft セキュア スコア
 description: デバイスのスコアは、アプリケーション、オペレーティング システム、ネットワーク、アカウント、およびセキュリティ制御全体にわたるデバイスの一括セキュリティ構成状態を示します。
 keywords: Microsoft Secure Score for Devices, Microsoft Defender for Endpoint Microsoft Secure Score for Devices, secure score, configuration score, 脅威と脆弱性の管理, security controls, improvement opportunitis, security configuration score over time, security posture, baseline
 search.product: eADQiWindows 10XVcnh
@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cc25da8c4cffa5c67747ea02a0f431c0c2c7a436
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ffed82085b07949e13aa059667f278b8640a1955
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164807"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60009435"
 ---
-# <a name="microsoft-secure-score-for-devices"></a>デバイス向けの Microsoft セキュア スコア
+# <a name="microsoft-secure-score-for-devices"></a>デバイスの Microsoft セキュア スコア
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -37,8 +37,7 @@ ms.locfileid: "59164807"
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
-
->[!NOTE]
+> [!NOTE]
 > 構成スコアは、Microsoft Secure Score 脅威と脆弱性の管理デバイスの一部です。
 
 デバイスのスコアは、ポータルの脅威と脆弱性の管理[ダッシュボード](tvm-dashboard-insights.md)にMicrosoft 365 Defenderされます。 デバイスの Microsoft セキュア スコアが高いということは、エンドポイントがサイバー セキュリティの脅威攻撃に対してより回復力があることを意味します。 これは、次のカテゴリにわたるデバイスの一括セキュリティ構成状態を反映します。
@@ -57,8 +56,7 @@ Microsoft Defender for Endpoint シグナルを転送し、Microsoft Secure Scor
 
 変更は、ダッシュボードに反映するために数時間かかる場合があります。
 
-
-1. ナビゲーション ウィンドウで、[**エンドポイントの全般** 設定  >  **機能]**  >    >  **に移動します。** 
+1. ナビゲーション ウィンドウで、[**エンドポイントの全般** 設定 \> **機能]** \>  \> **に移動します。**
 
 2. 下にスクロールして **Microsoft Secure Score に移動** し、設定を [オン] に **切り替える**。
 
@@ -66,7 +64,7 @@ Microsoft Defender for Endpoint シグナルを転送し、Microsoft Secure Scor
 
 ## <a name="how-it-works"></a>しくみ
 
->[!NOTE]
+> [!NOTE]
 > Microsoft Secure Score for Devices は現在、グループ ポリシーを介して設定された構成をサポートしています。 現在の部分的な Intune のサポートにより、Intune を介して設定されている可能性がある構成が正しく構成されていないと表示される場合があります。 組織が安全な構成管理のために Intune を使用している場合に、IT 管理者に問い合わせて実際の構成状態を確認します。
 
 Microsoft Secure Score for Devices カードのデータは、細心の注意を払い、継続的な脆弱性検出プロセスの製品です。 次の構成検出評価が継続的に集計されます。
@@ -100,16 +98,18 @@ Microsoft Secure Score for Devices カードのデータは、細心の注意を
 
 7. ダッシュボードで **Microsoft Secure Score for Devices** カードを再度確認します。 セキュリティ制御の推奨事項の数は減少します。 [セキュリティの **推奨事項]** ページに戻る[セキュリティ コントロール] を選択すると、アドレス指定したアイテムは表示されません。 Microsoft Secure Score for Devices は増加する必要があります。
 
->[!IMPORTANT]
+> [!IMPORTANT]
 >脆弱性評価の検出率を上げるには、次の必須のセキュリティ更新プログラムをダウンロードし、ネットワークに展開します。
->- 19H1 のお客様| [KB 4512941](https://support.microsoft.com/help/4512941/windows-10-update-kb4512941)
->- RS5 のお客様| [KB 4516077](https://support.microsoft.com/help/4516077/windows-10-update-kb4516077)
->- RS4 のお客様| [KB 4516045](https://support.microsoft.com/help/4516045/windows-10-update-kb4516045)
->- RS3 のお客様| [KB 4516071](https://support.microsoft.com/help/4516071/windows-10-update-kb4516071)
 >
->セキュリティ更新プログラムをダウンロードするには、次の方法を実行します。
->1. [Microsoft Update [Catalog] に移動します](https://www.catalog.update.microsoft.com/home.aspx)。
->2. ダウンロードする必要があるセキュリティ更新プログラムの KB 番号をキーインし、[検索] を **クリックします**。  
+> - 19H1 のお客様| [KB 4512941](https://support.microsoft.com/help/4512941/windows-10-update-kb4512941)
+> - RS5 のお客様| [KB 4516077](https://support.microsoft.com/help/4516077/windows-10-update-kb4516077)
+> - RS4 のお客様| [KB 4516045](https://support.microsoft.com/help/4516045/windows-10-update-kb4516045)
+> - RS3 のお客様| [KB 4516071](https://support.microsoft.com/help/4516071/windows-10-update-kb4516071)
+>
+> セキュリティ更新プログラムをダウンロードするには、次の方法を実行します。
+>
+> 1. [Microsoft Update [Catalog] に移動します](https://www.catalog.update.microsoft.com/home.aspx)。
+> 2. ダウンロードする必要があるセキュリティ更新プログラムの KB 番号をキーインし、[検索] を **クリックします**。
 
 ## <a name="related-topics"></a>関連項目
 

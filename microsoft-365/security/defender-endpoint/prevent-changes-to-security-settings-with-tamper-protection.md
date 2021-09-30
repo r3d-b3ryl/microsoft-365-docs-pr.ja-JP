@@ -18,12 +18,12 @@ ms.custom: nextgen
 ms.technology: mde
 ms.date: 09/23/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 91c66ffa315e7cb6434bb845bd575f7040026c2f
-ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
+ms.openlocfilehash: 2e279a5a256f1b729d5fe39d51eb82801bc34bcb
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59498258"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60008823"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>改ざん防止機能を使用してセキュリティ設定を保護する
 
@@ -305,7 +305,7 @@ Intune でタンパープロテクションを構成する柔軟性がありま�
 
 セキュリティ運用チームは、次の例のような検索クエリも使用できます。
 
-`DeviceAlertEvents|where Title == "Tamper Protection bypass"`
+`AlertInfo|where Title == "Tamper Protection bypass"`
 
 [改ざんの試行に関する情報を表示します](#view-information-about-tampering-attempts)。
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: de94125566985447b10997cd354c7c9aed01630d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: da78b5fe13c9b2b1af086a10b61b085e3d20af64
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164798"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60010223"
 ---
 # <a name="security-recommendations---threat-and-vulnerability-management"></a>セキュリティに関する推奨事項 - 脅威と脆弱性の管理
 
@@ -109,8 +109,8 @@ ms.locfileid: "59164798"
 
 - [**例外オプション**](tvm-exception.md) - まだ問題を修復できない場合は、例外を送信し、正当化を提供し、例外期間を設定します。
 
->[!NOTE]
->デバイスでソフトウェアの変更が行われた場合、通常、データがセキュリティ ポータルに反映されるのに 2 時間かかります。 ただし、時間がかかる場合もあります。 構成の変更には、4 ~ 24 時間かかる場合があります。
+> [!NOTE]
+> デバイスでソフトウェアの変更が行われた場合、通常、データがセキュリティ ポータルに反映されるのに 2 時間かかります。 ただし、時間がかかる場合もあります。 構成の変更には、4 ~ 24 時間かかる場合があります。
 
 ### <a name="investigate-changes-in-device-exposure-or-impact"></a>デバイスの露出や影響の変化を調査する
 
@@ -138,7 +138,7 @@ ms.locfileid: "59164798"
 
 ### <a name="how-to-create-an-exception"></a>例外を作成する方法
 
-例外を作成するセキュリティ推奨事項を選択し、[例外オプション] **を選択します**。  
+例外を作成するセキュリティ推奨事項を選択し、[例外オプション] **を選択します**。
 
 !["例外オプション" のボタンがセキュリティ推奨事項のフライアウト内の場所である場所を表示します。](images/tvm-exception-options.png)
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 988b1177932a67f10f79651cc0190fd665de4c17
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e2b6d88f7cd443c7fb093d791a7904baafeb9c1d
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164847"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60010131"
 ---
 # <a name="plan-for-end-of-support-software-and-software-versions-with-threat-and-vulnerability-management"></a>サポート終了のソフトウェアとソフトウェアのバージョンを計画する場合は、脅威と脆弱性の管理
 
@@ -41,7 +41,7 @@ ms.locfileid: "59164847"
 
 セキュリティと IT 管理者が一緒に作業し、最適な結果、コンプライアンス、および健全なネットワーク エコシステムのために組織のソフトウェア インベントリが構成されていることを確認することが重要です。 サポートが終了し、サポートされなくなったバージョンを更新したアプリを削除または置き換えるオプションを確認する必要があります。 サポート終了日前に計画を作成して実装するのが最善です。
 
->[!NOTE]
+> [!NOTE]
 > 現在、サポート終了機能は、現在、一部の製品Windowsできます。
 
 ## <a name="find-software-or-software-versions-that-are-no-longer-supported"></a>サポートされなくなったソフトウェアまたはソフトウェアのバージョンを検索する
