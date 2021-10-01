@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/20/2018
 ms.technology: mde
-ms.openlocfilehash: 3ccb0bf5392bcfd8b520c1124d5daa568f1bc8be
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2d60897d00b2b0228fd1a716dd9b4b7bb12a7bb9
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222089"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60041674"
 ---
 # <a name="experience-microsoft-defender-for-endpoint-through-simulated-attacks"></a>シミュレートされた攻撃を通じて Microsoft Defender for Endpoint を体験する 
 
@@ -42,7 +42,7 @@ ms.locfileid: "59222089"
 
 サービスに複数のデバイスをオンボードする前に、Defender for Endpoint を体験する必要がある場合があります。 これを行うには、いくつかのテスト デバイスで制御攻撃シミュレーションを実行できます。 シミュレートされた攻撃を実行した後、Defender for Endpoint が悪意のあるアクティビティを表面化する方法を確認し、効率的な対応を可能にする方法を確認できます。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 提供されているシミュレーションのいずれかを実行するには、オンボードデバイスが少なくとも [1 つ必要です](onboard-configure.md)。
 
@@ -69,4 +69,4 @@ ms.locfileid: "59222089"
 ## <a name="related-topics"></a>関連項目
 
 - [デバイスのオンボード](onboard-configure.md)
-- [Windows 10 デバイスのオンボード](configure-endpoints.md)
+- [オンボード Windows デバイス](configure-endpoints.md)

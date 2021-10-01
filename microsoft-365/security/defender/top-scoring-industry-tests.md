@@ -2,7 +2,7 @@
 title: 業界のテストでトップスコアを記録 - Microsoft 365 Defender
 ms.reviewer: ''
 description: Microsoft 365 Defender の最新のスコアと分析を表示します。 個別の試験 (AV-TEST、AV Comparatives、 SE Labs、MITRE ATT&CK) で高いスコアを一貫して達成しています。 最新のスコアと分析をご覧ください。
-keywords: Microsoft Defender ウイルス対策、Windows Defender ウイルス対策、AV レビュー、ウイルス対策テスト、AV テスト、最新の AV スコア、検出スコア、セキュリティ製品のテスト、セキュリティ業界テスト、業界のウイルス対策テスト、最善のウイルス対策、av-test、av-comparatives、SE ラボ、MITRE ATT&CK、エンドポイント保護プラットフォーム、EPP、エンドポイント検出と応答、EDR、Windows 10、Microsoft Defender ウイルス対策、WDAV、Microsoft Defender for Endpoint、Microsoft 365 Defender、セキュリティ、マルウェア、av、ウイルス対策、スコア、スコア付け、次世代の保護、ランク付け、成功
+keywords: Microsoft Defender ウイルス対策, Windows Defender ウイルス対策, AV レビュー, ウイルス対策テスト, AV テスト, 最新の AV スコア, 検出スコア, セキュリティ製品テスト, セキュリティ業界テスト, 業界ウイルス対策テスト, 最高のウイルス対策, av-test, AV 比較, SE ラボ, MITRE ATT&CK, エンドポイント保護プラットフォーム, EPP, エンドポイント検出と応答, EDR, Windows 10, Windows 11 Microsoft Defender ウイルス対策, WDAV, Microsoft Defender for Endpoint, Microsoft 365 Defender, セキュリティ, マルウェア, AV, ウイルス対策, スコア付け, スコア付け, 次世代の保護, ランク付け, 成功
 ms.prod: m365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
@@ -15,25 +15,25 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 4d49772eb3932ae98840d2be94c447183e94fade
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8f51fe73d25ac0ab3568b1896a0c35efdd14a40f
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189181"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042700"
 ---
 # <a name="top-scoring-in-industry-tests"></a>業界テストでのトップ スコア
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-> Microsoft 365 Defender を体験してみませんか? [ラボ環境で評価する](m365d-evaluation.md?ocid=cx-docs-MTPtriallab)ことも、[実稼働環境でパイロット プロジェクトを実行する](m365d-pilot.md?ocid=cx-evalpilot)こともできます。
+> Microsoft 365 Defender を体験しますか? [ラボ環境で評価](m365d-evaluation.md?ocid=cx-docs-MTPtriallab)、または[運用でパイロット プロジェクトを実行](m365d-pilot.md?ocid=cx-evalpilot)することができます。
 >
 
 [Microsoft 365 Defender](https://www.microsoft.com/security/business/threat-protection/integrated-threat-protection) テクノロジは、個別のテストで一貫してハイ スコアを実現し、企業を脅威から保護する機能の強度を実証しています。 Microsoft は、これらのテスト スコアについて透明性を保つことを目指しています。 このページでは、結果の概要を示し、分析を提供します。
 
 ## <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
-[Microsoft 365 Defender](microsoft-365-defender.md) は、統合された侵害前および侵害後のエンタープライズ防御スイートです。 エンドポイント、ID、メール、およびアプリケーション全体での検出、防止、調査、応答をネイティブに調整し、高度な攻撃に対する統合された保護を提供します。
+[Microsoft 365 Defender](microsoft-365-defender.md) は、侵害の前後に対応した統合エンタープライズ防御スイートです。エンドポイント、ID、メール、およびアプリケーション全体での検出、防止、調査、応答をネイティブに調整し、高度な攻撃に対する統合された保護を提供します。
 
 Microsoft 365 Defender は、[Microsoft Defender for Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp)、 [Microsoft Defender for Office 365](https://www.microsoft.com/microsoft-365/exchange/advance-threat-protection)、[Microsoft Defender for Identity](https://azure.microsoft.com/features/azure-advanced-threat-protection/)、[Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection)、および [Microsoft Cloud App Security](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/cloud-app-security) の機能を 1 つのソリューションに結合します。
 
@@ -49,7 +49,7 @@ MITRE のテストアプローチの中心は、現実世界の攻撃をエミ�
 
 [Microsoft Defender ウイルス対策](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)は、独立したテストで一貫してハイ スコアを実現し、ウイルス対策市場で最高の選択肢となっている理由を示しています。 これらのテストでは、ウイルス対策の結果のみが提供され、追加のセキュリティ保護のテストは行われないことに注意してください。
 
-Microsoft Defender ウイルス対策は、今現在最新かつ最も高度な脅威に対処する [Microsoft Defender for Endpoint Windows 10 セキュリティ スタック](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)での[次世代保護](https://www.youtube.com/watch?v=Xy3MOxkX_o4)機能です。 場合によっては、サイバー攻撃は[キャンペーンが開始してから数ミリ秒後](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign)に停止するため、ユーザーは保護されていることに気付いていないことさえあります。 これは、Microsoft Defender Antivirus と他の Defender for Endpointの [エンドポイント保護プラットフォーム (EPP) ](https://www.microsoft.com/security/blog/2019/08/23/gartner-names-microsoft-a-leader-in-2019-endpoint-protection-platforms-magic-quadrant/) 機能が、マルウェアを検出すると即座に停止するからです。 彼らは [機械学習](https://cloudblogs.microsoft.com/microsoftsecure/2018/06/07/machine-learning-vs-social-engineering)、[人工知能](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak)、行動分析、その他の高度なテクノロジを使用します。
+Microsoft Defender ウイルス対策は、現時点で最新の最も高度な脅威に対処する [Microsoft Defender for Endpoint Windows セキュリティ スタック](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)の[次世代保護機能](https://www.youtube.com/watch?v=Xy3MOxkX_o4)です。 場合によっては、サイバー攻撃は[キャンペーンが開始してから数ミリ秒後](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign)に停止するため、ユーザーは保護されていることに気付いていないことさえあります。 これは、Microsoft Defender Antivirus と他の Defender for Endpointの [エンドポイント保護プラットフォーム (EPP) ](https://www.microsoft.com/security/blog/2019/08/23/gartner-names-microsoft-a-leader-in-2019-endpoint-protection-platforms-magic-quadrant/) 機能が、マルウェアを検出すると即座に停止するからです。 彼らは [機械学習](https://cloudblogs.microsoft.com/microsoftsecure/2018/06/07/machine-learning-vs-social-engineering)、[人工知能](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak)、行動分析、その他の高度なテクノロジを使用します。
 
 ### <a name="av-test-protection-score-of-6060-in-the-latest-test"></a>AV テスト: 最新のテストでの保護スコア 6.0/6.0
 
@@ -57,7 +57,7 @@ AV テスト製品のレビューと認定レポートは、3 つのカテゴリ
 
 - 2020 年 11 月から 12 月 AV テスト ビジネス ユーザー テスト: [保護スコア 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/december-2020/microsoft-defender-antivirus-4.18-205017/) <sup>**最新**</sup>
 
-    Microsoft Defender ウイルス対策は、11 月と 12 月に 100% の完璧な保護スコア 6.0/6.0 を達成しました。 11,382 のマルウェア サンプルが使用されました。
+    Microsoft Defender ウイルス対策は、11 月と 12 月に 100% の完璧な保護スコア 6.0/6.0 を達成し、11,382 個のマルウェア サンプルを使用しました。
 
 - 2020 年 9 月から 10 月 AV テスト ビジネス ユーザー テスト: [保護スコア 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/october-2020/microsoft-defender-antivirus-4.18-204116/)
 

@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 1b5e664e6675b477ecb2507fd52588aa159bcc9b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c36e0f9841d0b1e95d17734047a1ad9f35d3739c
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189291"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042592"
 ---
 # <a name="enable-the-evaluation-environment-for-microsoft-cloud-app-security"></a>ユーザーの評価環境を有効Microsoft Cloud App Security
 
@@ -40,7 +40,7 @@ ms.locfileid: "59189291"
 
 環境で使用されているクラウド アプリを検出するには、次の 1 つまたは両方を実行できます。
 
-- Microsoft Defender for Endpoint と統合することで、クラウド探索を迅速に実行できます。 このネイティブ統合により、ネットワークのオンとオフを切り替えて、Windows 10トラフィックのデータ収集をすぐに開始できます。
+- Microsoft Defender for Endpoint と統合することで、クラウド探索を迅速に実行できます。 このネイティブ統合により、ネットワークのオンとオフを切り替えて、Windows 10デバイスWindowsクラウド トラフィックのデータ収集をすぐに開始できます。
 - ネットワークに接続されているすべてのデバイスがアクセスしているすべてのクラウド アプリを検出するには、ファイアウォールや他のプロキシに Cloud App Security ログ コレクターを展開します。 これにより、エンドポイントからデータが収集され、分析Cloud App Security送信されます。 Cloud App Security機能を強化するために、一部のサード パーティ製プロキシとネイティブに統合できます。
 
 この記事には、両方の方法のガイダンスが含まれています。
@@ -54,7 +54,7 @@ ms.locfileid: "59189291"
 - [手順 3.ファイアウォールやCloud App Securityプロキシにログ コレクターを展開する](#step-3-deploy-the-cloud-app-security-log-collector-on-your-firewalls-and-other-proxies)
 - [手順 4.クラウド探索ダッシュボードを表示して、組織内で使用されているアプリを確認する](#step-4-view-the-cloud-discovery-dashboard-to-see-what-apps-are-being-used-in-your-organization)
 
-## <a name="step-1-connect-to-the-cloud-app-security-portal"></a>手順 1. ConnectポータルにCloud App Securityする
+## <a name="step-1-connect-to-the-cloud-app-security-portal"></a>手順 1。 ConnectポータルにCloud App Securityする
 
 ライセンスを確認し、Cloud App Security ポータルに接続するには[、「Quickstart: Get started with Microsoft Cloud App Security」 を参照してください](/cloud-app-security/getting-started-with-cloud-app-security)。 
 
@@ -64,7 +64,7 @@ ms.locfileid: "59189291"
 
 ## <a name="step-2-integrate-with-microsoft-defender-for-endpoint"></a>手順 2。 エンドポイント向け Microsoft Defender との統合
 
-Microsoft Cloud App Security Microsoft Defender for Endpoint とネイティブに統合されます。 この統合により、クラウド探索のロールアウトが簡素化され、クラウド探索機能が企業ネットワークを超えて拡張され、デバイスベースの調査が可能です。 この統合により、IT 管理デバイスからアクセスされるクラウド アプリとサービスWindows 10されます。 
+Microsoft Cloud App Security Microsoft Defender for Endpoint とネイティブに統合されます。 この統合により、クラウド探索のロールアウトが簡素化され、クラウド探索機能が企業ネットワークを超えて拡張され、デバイスベースの調査が可能です。 この統合により、11 台のデバイスから IT 管理されたデバイスからアクセスWindows 10クラウド Windowsが明らかになります。 
 
 Microsoft Defender for Endpoint を既にセットアップしている場合は、Cloud App Securityとの統合を構成Microsoft 365 Defender。 統合が有効になったら、ポータルに戻り、Cloud App Securityダッシュボードでリッチ データを表示できます。
 

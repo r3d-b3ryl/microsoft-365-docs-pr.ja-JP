@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アプリを管理するためのアプリ ガバナンス機能の使用を開始します。
-ms.openlocfilehash: c0e5b92f534533fb03505421b5e6a49208891443
-ms.sourcegitcommit: 835dcaf5d5e0b485dc3ac485ded8943046afe36c
+ms.openlocfilehash: b57d5b36266a5facebe8136b14d01014cfe68b03
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59942030"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042784"
 ---
 # <a name="get-started-with-app-governance-in-preview"></a>アプリ ガバナンスの使用を開始する (プレビュー版)
 
@@ -72,7 +72,7 @@ MCAS との統合がアクティブであることを確認するには、MCAS �
 
 ## <a name="licensing-and-administrator-role-prerequisites"></a>ライセンスと管理者の役割の前提条件
 
-1. お客様のアカウントが[適切なレベルのライセンス](#licensing-for-app-governance)を所有していることを確認します。 アプリ ガバナンスは、Microsoft Cloud App Security (MCAS) のアドオン機能であるため、アカウントに MCAS がスタンドアロン製品または各種ライセンス パッケージの一部として存在している必要があります。
+1. アカウントが[適正なレベルのライセンス](#licensing-for-app-governance)を保持しているかを検証する。アプリ ガバナンスは、Microsoft Cloud App Security (MCAS) のアドオン機能であり、アカウントに MCAS がスタンドアロン製品または以下の各種ライセンス パッケージの一部として存在している必要があります。
 1. ポータルのアプリ ガバナンス ページにアクセスするには、以下のいずれかの[管理者の役割](#administrator-roles)が必要です。
 1. 無料試用版を有効にするには、所属している組織の請求先住所が、[北米、欧州、アフリカのいずれかのサポート エリア内](app-governance-countries.md)である必要があります。
 
@@ -81,27 +81,13 @@ MCAS との統合がアクティブであることを確認するには、MCAS �
 アプリ ガバナンスを開始する前に、「[Microsoft 365 管理センター（サブスクリプション](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/subscriptions)）」とアドオンを確認しなければなりません。 アプリ ガバナンスにアクセスして使用するには、組織は次のいずれかのサブスクリプションまたはアドオンを持っている必要があります。
 
 - Microsoft Cloud App Security
-- Microsoft 365 E5
-- Microsoft 365 E5 Compliance 
-- Microsoft 365 E5 Developer (Windows および電話会議なし)
-- Microsoft 365 E5 Information Protection and Governance
-- Microsoft 365 E5 Security
-- Microsoft 365 E5 (無料通話時間付き)
-- Microsoft 365 E5 (電話会議なし)
-- Microsoft 365 A5 Compliance for faculty
-- Microsoft 365 A5 Compliance 学生用
-- Microsoft 365 A5 教職員用
-- Microsoft 365 A5 児童/学生用
-- Microsoft 365 A5 Information Protection and Governance 教職員用
-- Microsoft 365 A5 Information Protection and Governance 児童/学生用
-- Microsoft 365 A5 Security for faculty
-- Microsoft 365 A5 Security 学生用
-- Microsoft 365 A5 学生使用特典
-- Microsoft 365 A5 (無料通話時間付き) 教職員用
-- Microsoft 365 A5 (無料通話時間付き) 学生用
-- Microsoft 365 A5 (電話会議なし) 教職員用
-- Microsoft 365 A5 (電話会議なし) 学生用
-- Microsoft 365 A5 (電話会議なし) 学生使用特典
+- Microsoft 365 E5/A5
+- Microsoft 365 E5/A5 コンプライアンス
+- Microsoft 365 E5/A5 情報の保護とガバナンス
+- Microsoft 365 E5/A5 セキュリティ
+- Microsoft 365 E5 コンプライアンス アドオン
+- Microsoft 365 F5 セキュリティ + コンプライアンス アドオン
+
 
 ### <a name="administrator-roles"></a>管理者の役割
 
@@ -146,7 +132,7 @@ MCAS との統合がアクティブであることを確認するには、MCAS �
 1. Microsoft 365 管理センターで、[**課金情報**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">**お使いの製品**</a>] の順に移動します。
 1. アプリ ガバナンス試用版に移動し、3 つの点をクリックし、[**サブスクリプションのキャンセル**] を選択します。
 1. 表示されるフライアウト ウィンドウで、キャンセルの理由と追加のフィードバックを入力し、[**サブスクリプションのキャンセル**] を選択します。
-1. 表示されたポップアップ画面で [**サブスクリプションのキャンセル**] を選択します。 試用版がキャンセルされ、アプリ ガバナンスにアクセスできなくなり、アプリ ガバナンス データが削除されます (アプリ ガバナンスの分析情報および検出を作成するために使用されるログ データで、メールやその他のファイルは影響を受けません)。
+1. 結果のポップアップ画面で [**サブスクリプションの取り消し**] を選択します。試用版が取り消され、アプリ ガバナンスにアクセスできなくなり、アプリ ガバナンス データが削除されます (アプリ ガバナンスの分析情報および検出を作成するために使用されるログ データで、メールやその他のファイルは影響を受けません)。
 
 ## <a name="known-issues-for-the-public-preview"></a>パブリック プレビューにおける既知の問題
 

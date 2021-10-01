@@ -17,12 +17,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 1e754f43cc1963ae7991a72a65fef2aefa833305
-ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
+ms.openlocfilehash: 3f4a0c8fbcfe58a252bb393fdba837e6ecad85ab
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59498066"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60041650"
 ---
 # <a name="report-on-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策のレポート
 
@@ -33,7 +33,7 @@ ms.locfileid: "59498066"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-Microsoft Defender ウイルス対策サーバー 2019、Windows 10、Windowsに組み込Windows Server 2016。 Microsoft Defender ウイルス対策は、Microsoft Defender for Endpoint の次世代保護です。 次世代の保護は、電子メール、アプリ、クラウド、Web 全体のウイルス、マルウェア、スパイウェアなどのソフトウェアの脅威からデバイスを保護するのに役立ちます。
+Microsoft Defender ウイルス対策は、Windows 10 Server 2019、Windows Server 2022、および Windows に組み込Windows Server 2016。 Microsoft Defender ウイルス対策は、Microsoft Defender for Endpoint の次世代保護です。 次世代の保護は、電子メール、アプリ、クラウド、Web 全体のウイルス、マルウェア、スパイウェアなどのソフトウェアの脅威からデバイスを保護するのに役立ちます。
 
 このMicrosoft Defender ウイルス対策、保護状態とアラートを確認するためのいくつかのオプションがあります。 メール通知を監視[Microsoft エンドポイント マネージャー、またはMicrosoft Defender ウイルス対策](/configmgr/protect/deploy-use/monitor-endpoint-protection)を[作成するために使用できます](/configmgr/protect/deploy-use/endpoint-configure-alerts)。 または、 を使用して保護を[監視Microsoft Intune。](/intune/introduction-intune)
 

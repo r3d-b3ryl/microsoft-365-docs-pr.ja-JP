@@ -19,12 +19,12 @@ ms.assetid: 28c86a1c-e4dd-4aad-a2a6-c768a21cb352
 description: セキュリティ機能を実装してセキュリティ環境を保護するための Microsoft のサイバーセキュリティ チームからのMicrosoft 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dc401f20a7f7425e619fc057dbe481341db993ff
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1a2e982f1da196185d466dfddfbbc61e98100070
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179135"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042796"
 ---
 # <a name="security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>セキュリティロードマップ - 最初の 30 日間、90 日間、それ以降の最優先事項
 
@@ -61,10 +61,10 @@ ms.locfileid: "59179135"
 
 ****
 
-|分野|Tasks|
+|分野|タスク|
 |---|---|
 |セキュリティ管理|<ul><li>[セキュリティで保護されたスコア] をオンにし、現在のスコア () をメモします <https://security.microsoft.com/securescore> 。</li><li>ユーザーの監査ログを有効Office 365。 「 [監査ログの検索」を参照してください](../../compliance/search-the-audit-log-in-security-and-compliance.md)。</li><li>[セキュリティMicrosoft 365を構成します](tenant-wide-setup-for-increased-security.md)。</li><li>ダッシュボードとレポートを定期的に確認するには、Microsoft 365 DefenderとCloud App Security。</li></ul>|
-|脅威に対する保護|[Connect Microsoft 365異常なMicrosoft Cloud App Security](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)既定の脅威検出ポリシーを使用して監視を開始する必要があります。 異常検出のベースラインを構築するには 7 日かかる。 <p>  管理者アカウントの保護を実装する:<ul><li>管理アクティビティには専用の管理者アカウントを使用します。</li><li>管理者アカウントに多要素認証 (MFA) を適用します。</li><li>管理者の[アクティビティには、Windows 10セキュリティ保護されたデバイス](/windows-hardware/design/device-experiences/oem-highly-secure)を使用します。</li></ul>|
+|脅威に対する保護|[Connect Microsoft 365異常なMicrosoft Cloud App Security](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)既定の脅威検出ポリシーを使用して監視を開始する必要があります。 異常検出のベースラインを構築するには 7 日かかる。 <p>  管理者アカウントの保護を実装する:<ul><li>管理アクティビティには専用の管理者アカウントを使用します。</li><li>管理者アカウントに多要素認証 (MFA) を適用します。</li><li>管理者の[アクティビティには、Windowsセキュリティ保護されたデバイス](/windows-hardware/design/device-experiences/oem-highly-secure)を使用します。</li></ul>|
 |ID およびアクセス管理|<ul><li>[[ID Azure Active Directoryを有効にする] をクリックします](/azure/active-directory/active-directory-identityprotection-enable)。</li><li>フェデレーション ID 環境では、アカウント のセキュリティ (パスワードの長さ、年齢、複雑さなど) を適用します。</li></ul>|
 |情報保護|情報保護の推奨事項の例を確認します。 情報保護には、組織全体の調整が必要です。 次のリソースの使用を開始する:<ul><li>[GDPR のための Office 365 の情報保護](/compliance/regulatory/gdpr)</li><li>[3 Teams保護を](../../solutions/configure-teams-three-tiers-protection.md)構成する (共有、分類、データ損失防止、Azure 情報保護など)</li></ul>|
 |

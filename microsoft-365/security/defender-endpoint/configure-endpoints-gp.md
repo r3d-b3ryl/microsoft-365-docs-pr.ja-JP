@@ -15,14 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 04/24/2018
+ms.date: 09/16/2021
 ms.technology: mde
-ms.openlocfilehash: b4e6becbdb0e26317bcc29e5bb70e24486d43414
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 0d33484a7d7369cd9b3727fbd125e208649c533d
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400452"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60041782"
 ---
 # <a name="onboard-the-windows-10-devices-using-group-policy"></a>グループ ポリシーをWindows 10デバイスにオンボードする
 
@@ -39,7 +39,7 @@ ms.locfileid: "59400452"
 > [!NOTE]
 > グループ ポリシー (GP) 更新プログラムを使用してパッケージを展開するには、サーバー 2008 R2 以降Windowsする必要があります。
 >
-> サーバー Windows 2019 では、グループ ポリシーの基本設定で作成される XML ファイルの NT AUTHORITY\Well-Known-System-Account を NT AUTHORITY\SYSTEM に置き換える必要があります。
+> Windows Server 2019 および Windows Server 2022 では、グループ ポリシーの基本設定で作成される XML ファイルの NT AUTHORITY\Well-Known-System-Account を NT AUTHORITY\SYSTEM に置き換える必要があります。
 
 ## <a name="onboard-devices-using-group-policy"></a>グループ ポリシーを使用してデバイスをオンボードする
 
@@ -113,13 +113,13 @@ ms.locfileid: "59400452"
 
 ### <a name="update-endpoint-protection-configuration"></a>エンドポイント保護構成の更新
 
-オンボーディング スクリプトを構成したら、同じグループ ポリシーの編集を続けてエンドポイント保護構成を追加します。 グループ ポリシーの編集は、Windows 10または Server 2019 を実行しているシステムから実行し、必要なすべての機能をMicrosoft Defender ウイルス対策します。 Defender ATP 構成設定を登録するには、グループ ポリシー オブジェクトを閉じて再度開く必要がある場合があります。
+オンボーディング スクリプトを構成したら、同じグループ ポリシーの編集を続けてエンドポイント保護構成を追加します。 Windows 10 または Server 2019、または Windows Server 2022 を実行しているシステムからグループ ポリシーの編集を実行して、必要なすべての Microsoft Defender ウイルス対策 機能を確保します。 Defender ATP 構成設定を登録するには、グループ ポリシー オブジェクトを閉じて再度開く必要がある場合があります。
 
 すべてのポリシーは 、 の下に位置します `Computer Configuration\Policies\Administrative Templates` 。
 
 **ポリシーの場所:** \Windows コンポーネント\atp Windows Defender
 
-ポリシー|設定
+ポリシー|Setting
 ---|---
 Enable\Disable Sample collection|[有効] - [コンピューターでサンプル コレクションを有効にする] チェック ボックスをオンにします。
 
@@ -127,7 +127,7 @@ Enable\Disable Sample collection|[有効] - [コンピューターでサンプ�
 
 **ポリシーの場所:** \Windows コンポーネント\Microsoft Defender ウイルス対策
 
-ポリシー|設定
+ポリシー|Setting
 ---|---
 望ましくない可能性があるアプリケーションの検出を構成する|有効、ブロック
 
@@ -135,7 +135,7 @@ Enable\Disable Sample collection|[有効] - [コンピューターでサンプ�
 
 **ポリシーの場所:** \Windows コンポーネント\Microsoft Defender ウイルス対策\MAPS
 
-ポリシー|設定
+ポリシー|Setting
 ---|---
 Microsoft MAPS に参加する|有効、高度なマップ
 詳細な分析が必要な場合にファイル サンプルを送信する | 有効、安全なサンプルの送信
@@ -144,7 +144,7 @@ Microsoft MAPS に参加する|有効、高度なマップ
 
 **ポリシーの場所:** \Windows コンポーネント\Microsoft Defender ウイルス対策\リアルタイム保護
 
-ポリシー|設定
+ポリシー|Setting
 ---|---
 リアルタイム保護をオフにする|無効
 動作の監視を有効にする|Enabled
@@ -157,7 +157,7 @@ Microsoft MAPS に参加する|有効、高度なマップ
 
 これらの設定は、エンドポイントの定期的なスキャンを構成します。 毎週のクイック スキャンを実行することをお勧めします。パフォーマンスが許容されます。
 
-ポリシー|設定
+ポリシー|Setting
 ---|---
 スケジュールされたスキャンを実行する前に、最新のウイルスとスパイウェアのセキュリティ インテリジェンスを確認する |Enabled
 
@@ -179,7 +179,7 @@ Microsoft MAPS に参加する|有効、高度なマップ
 
    ![攻撃表面の縮小構成のイメージ。](images/asr-guid.png)
 
-ポリシー|設定
+ポリシー|Setting
 ---|---
 フォルダー アクセスの制御を構成する| 有効、監査モード
 

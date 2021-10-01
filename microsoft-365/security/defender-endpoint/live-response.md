@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 71fd1428df73686f59199c70d988599f511faaf3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5e77cecfe06606f974c4e488bcec14e12c9ce0de
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163734"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60043337"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>ライブ応答を使用してデバイス上のエンティティを調査する
 
@@ -48,7 +48,7 @@ ms.locfileid: "59163734"
 - アップロード PowerShell スクリプトまたは実行可能ファイルをライブラリに追加し、テナント レベルからデバイスで実行します。
 - 修復アクションを実行または元に戻します。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 デバイスでセッションを開始する前に、次の要件を満たしていることを確認してください。
 
@@ -66,6 +66,9 @@ ms.locfileid: "59163734"
   - **WindowsServer 2019 - パブリック プレビューにのみ適用**
     - バージョン 1903 以降 [(KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)を使用)
     - バージョン 1809 [(KB4537818 付](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)き)
+    
+  - **Windows Server 2022**
+       
 
 - **[詳細設定] ページからライブ応答を有効にします**。
 
@@ -323,7 +326,7 @@ processes > output.txt
 
 - ID
 - コマンド ライン
-- Duration
+- 期間
 - 状態と入力または出力のサイド バー
 
 ## <a name="limitations"></a>制限事項

@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8cf8b1e049a96e7a03fb4df0199294afe193a660
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 81640ff0716d6dd0803dcad5b0db1849dfbee0d5
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59399843"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042664"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>デバイス プロキシとインターネット接続の設定を構成する
 
@@ -63,9 +63,9 @@ WinHTTP 構成設定は、Windows インターネット (WinINet) の参照プ�
 コンピューターがインターネットへの接続を許可されていない場合は、Defender for Endpoint 検出および応答 (EDR) センサー用のレジストリ ベースの静的プロキシを構成して、診断データを報告し、Defender for Endpoint サービスと通信します。
 
 > [!NOTE]
-> このオプションを Windows 10 または Windows Server 2019 で使用する場合は、次の (以降の) ビルドと累積的な更新プログラムのロールアップを行う必要があります。
+> Windows 10 または Windows Server 2019、または Windows Server 2022 でこのオプションを使用する場合は、次の (以降の) ビルドと累積的な更新プログラムのロールアップを行う必要があります。
 >
-> - Windows 10 Version 1809またはWindows Server 2019 -<https://support.microsoft.com/kb/5001384>
+> - Windows 10 Version 1809またはWindows Server 2019、または Windows Server 2022 -<https://support.microsoft.com/kb/5001384>
 > - Windows 10バージョン 1909 -<https://support.microsoft.com/kb/4601380>
 > - Windows 10バージョン 2004 -<https://support.microsoft.com/kb/4601382>
 > - Windows 10バージョン 20H2 -<https://support.microsoft.com/kb/4601382>
@@ -87,7 +87,7 @@ WinHTTP 構成設定は、Windows インターネット (WinINet) の参照プ�
   ![グループ ポリシー設定 2 のイメージ。](images/atp-gpo-proxy2.png)
 
 
-| グループ ポリシー | レジストリ キー | レジストリ エントリ | Value |
+| グループ ポリシー | レジストリ キー | レジストリ エントリ | 値 |
 |:---|:---|:---|:---|
 | 接続されたユーザー エクスペリエンスとテレメトリ サービスの認証されたプロキシ使用状況を構成する | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `DisableEnterpriseAuthProxy` | 1 (REG_DWORD) |
 | 接続されたユーザー エクスペリエンスと利用統計情報を構成する | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `TelemetryProxyServer` | ```http://servername or ip:port``` <br> <br> 例: ```http://10.0.0.6:8080``` (REG_SZ) |

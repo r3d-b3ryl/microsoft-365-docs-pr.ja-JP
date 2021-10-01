@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 2e3e649911cb2ce63c2a49be0ebc93e35e8055d6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ae7dac229aba0d5c4cbfc32782fe1a4ad5613c8f
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163702"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60043289"
 ---
 # <a name="devicetvmsecureconfigurationassessment"></a>DeviceTvmSecureConfigurationAssessment
 
@@ -46,16 +46,16 @@ ms.locfileid: "59163702"
 |-------------|-----------|-------------|
 | `DeviceId` | string | サービス内のデバイスの一意の識別子 |
 | `DeviceName` | string | デバイスの完全修飾ドメイン名 (FQDN) |
-| `OSPlatform` | 文字列 | デバイスで実行されているオペレーティング システムのプラットフォーム。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。|
+| `OSPlatform` | string | デバイスで実行されているオペレーティング システムのプラットフォーム。 これは、特定のオペレーティング システム (同じファミリ内のバリエーション (Windows 11、Windows 10、Windows 7 など) を示します。|
 | `Timestamp` | datetime | レコードが作成された日付と時刻 |
 | `ConfigurationId` | 文字列 | 特定の構成の一意の識別子 |
-| `ConfigurationCategory` | 文字列 | 構成が属するカテゴリまたはグループ: アプリケーション、OS、ネットワーク、アカウント、セキュリティ制御 |
+| `ConfigurationCategory` | string | 構成が属するカテゴリまたはグループ: アプリケーション、OS、ネットワーク、アカウント、セキュリティ制御 |
 | `ConfigurationSubcategory` | string | 構成が属するサブカテゴリまたはサブグループ。 多くの場合、これは特定の機能または機能を説明します。 |
 | `ConfigurationImpact` | 文字列 | 構成の評価が全体の構成スコア (1-10) に及ぼす影響 |
 | `IsCompliant` | ブール値 | 構成やポリシーが正しく構成されているかどうかを示します |
-| `IsApplicable` | boolean | 構成またはポリシーがデバイスに適用されるかどうかを示します。 |
-| `Context` | 文字列 | 構成またはポリシーに関するその他のコンテキスト情報 |
-| `IsExpectedUserImpact` | boolean | 構成またはポリシーが適用された場合にユーザーに影響を与えるかどうかを示します。 |
+| `IsApplicable` | ブール値 | 構成またはポリシーがデバイスに適用されるかどうかを示します。 |
+| `Context` | string | 構成またはポリシーに関するその他のコンテキスト情報 |
+| `IsExpectedUserImpact` | ブール値 | 構成またはポリシーが適用された場合にユーザーに影響を与えるかどうかを示します。 |
 
 ## <a name="related-topics"></a>関連項目
 

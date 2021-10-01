@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 9c041e91f2581390a75cbe5151960e5be2e1be29
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 232fda3b5d9c9f14db9225ae6f7d98127a394244
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59489634"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60043241"
 ---
 # <a name="evaluate-attack-surface-reduction-rules"></a>攻撃面の減少ルールを評価する
 
@@ -41,6 +41,7 @@ ms.locfileid: "59489634"
 - Windows 10 Enterpriseバージョン[1709](/windows/whats-new/whats-new-windows-10-version-1709)以降
 - Windowsサーバー、[バージョン 1803 (半期チャネル)](/windows-server/get-started/whats-new-in-windows-server-1803)以降
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- Windows Server 2022
 
 > [!WARNING]
 > 攻撃サービスの縮小ルールを有効にすると、Windows Server 2016予期しない結果を引き起こし、サーバーのパフォーマンスに影響を与える可能性があります。 サポートされていないプラットフォームに対して攻撃表面の縮小ルールを有効または展開はお勧めしません。

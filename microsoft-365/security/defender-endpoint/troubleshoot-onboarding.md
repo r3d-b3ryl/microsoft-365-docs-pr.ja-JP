@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 47e532f8746c0fa4bb0b256754bfb5602b5e367b
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: 3fe7610d35114200a5bed515f82bb7a4453cf4fa
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60008919"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042977"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング
 
@@ -362,12 +362,10 @@ WinHTTP は、インターネット閲覧プロキシ設定や他のユーザー
 - このシナリオでは、オンボード パッケージが展開された場合でも、SENSE サービスは自動的に開始されません
 
 > [!NOTE]
-> SENSE サービスが次のバージョンまたはそれ以上の最新バージョンで開始するには、OOBE 後のユーザー ログオンWindows必要ありません。
->
-> - Windows 10 Version 1809 2019 Windows 2021 年 4 月 22 日の更新プログラムのロールアップを使用してサーバー [2019 を更新または更新します](https://support.microsoft.com/kb/5001384)。
-> - Windows 10バージョン 1909 と[2021 年 4](https://support.microsoft.com/kb/5001396)月の更新プログラムのロールアップ 。
-> - Windows 10バージョン 2004/20H2 と[2021 年 4 月 28](https://support.microsoft.com/kb/5001391)日の更新プログラムのロールアップ 。
->
+> SENSE サービスが Windows 10 Version 1809 または Windows Windows Server 2019、または Windows Server 2022 と[2021](https://support.microsoft.com/kb/5001384)年 4 月 22 日の更新プログラムのロールアップで開始するには、OOBE の後のユーザー ログオンが必要なくなりました。 Windows 10バージョン 1909 と[2021 年 4](https://support.microsoft.com/kb/5001396)月の更新プログラムのロールアップ 。 Windows 10バージョン 2004/20H2 と[2021 年 4 月 28](https://support.microsoft.com/kb/5001391)日の更新プログラムのロールアップ 。 
+
+
+> [!NOTE]
 > 次の手順は、次の手順を使用する場合にのみMicrosoft Endpoint Configuration Manager。 アプリケーションを使用したオンボーディングの詳細については、「Microsoft Endpoint Configuration Manager [Microsoft Defender for Endpoint」を参照してください](/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection)。
 
 1. アプリケーションを作成Microsoft Endpoint Configuration Manager。

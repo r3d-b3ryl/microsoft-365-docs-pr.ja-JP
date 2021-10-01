@@ -15,12 +15,12 @@ ms.author: dansimp
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 1095d29ba5ad24da7b4b3da8f17ae0dc7f0e6afa
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 8400ef9e910afa6683c30221342d1c9d0ed11012
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491567"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60041633"
 ---
 # <a name="host-firewall-reporting-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint でのホスト ファイアウォール レポート
 
@@ -30,11 +30,11 @@ ms.locfileid: "59491567"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-管理者の場合は、ファイアウォール レポートをセキュリティ センターにホストMicrosoft 365[できます](https://security.microsoft.com)。 この機能を使用すると、サーバー 2019 Windows 10とWindowsレポートを一元的な場所から表示できます。
+管理者の場合は、ファイアウォール レポートをセキュリティ センターにホストMicrosoft 365[できます](https://security.microsoft.com)。 この機能を使用すると、サーバー 2019 Windows 10、Windows、Windows Server 2022 ファイアウォールレポートを一元的な場所から表示できます。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
-- サーバー 2019 Windows 10またはWindowsする必要があります。
+- サーバー 2019 Windows 10またはWindowsサーバー 2022 で実行Windows必要があります。
 - デバイスを Microsoft Defender for Endpoint サービスにオンボードするには、こちらを参照 [してください](onboard-configure.md)。
 - セキュリティ センター Microsoft 365データの受信を開始するには、Advanced **Security** を使用するファイアウォールの監査イベントWindows Defender有効にする必要があります。
   - [監査フィルター プラットフォーム のパケット ドロップ](/windows/security/threat-protection/auditing/audit-filtering-platform-packet-drop)

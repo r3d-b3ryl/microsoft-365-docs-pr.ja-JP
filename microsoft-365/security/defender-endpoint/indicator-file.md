@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8c8de260ebd8d16d7b402465e91a37d78e9d904b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 34c2e3a797dd463ad44fbc5d8576bc2b77b75f5c
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179320"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042652"
 ---
 # <a name="create-indicators-for-files"></a>ファイルのインジケーターを作成 
 
@@ -44,7 +44,7 @@ ms.locfileid: "59179320"
 - ファイルの詳細ページからインジケーターの追加ボタンを使用してコンテキスト インジケーターを作成する
 - インジケーター API を使用してインジケーター [を作成する](ti-indicator.md)
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 ファイルのインジケーターを作成する前に、次の前提条件を理解することが重要です。
 
@@ -52,7 +52,7 @@ ms.locfileid: "59179320"
 
 - マルウェア対策クライアントのバージョンは、4.18.1901.x 以降である必要があります。 「 [月次プラットフォームとエンジンのバージョン」を参照してください。](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 
-- 2019 年Windows 10バージョン 1703 以降のデバイスWindows Server 2016サポートされています。
+- Windows 10、バージョン 1703 以降、Windows Server 2016、2019、および Windows Server 2022 のデバイスでサポートされます。
 
 - ファイルのブロックを開始するには、まず、ファイルのブロックまたは許可 [機能](advanced-features.md)を有効にする設定。
 

@@ -17,12 +17,12 @@ ms.collection:
 description: 管理者は、良いメッセージと悪いメッセージやファイルを分析のために Microsoft に報告するさまざまな方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 77b370bcd0a1ee59e80a638669598cf27ef32942
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: 6dbf5a840da4474306b6140e16bdc01d24761eed
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988921"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042808"
 ---
 # <a name="report-messages-and-files-to-microsoft"></a>メッセージとファイルを Microsoft に報告する
 
@@ -50,4 +50,4 @@ Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Pro
 |
 
 > [!NOTE]
-> Microsoft への提出からのデータは、北米のデータ センターの Office 365 コンプライアンスの境界に存在します。 データは、フィルターの有効性を向上させるため、エンジニアリング チームのアナリストによってレビューされます。
+> Microsoft への提出からのデータは、北米のデータ センターの Office 365 コンプライアンスの境界に存在します。 データは、フィルターの有効性を向上させるため、エンジニアリング チームのアナリストによってレビューされます。 申請は、フィルターの改善に役立つフィードバックと見なされ、30 日間保持されます。 その後、削除されます。

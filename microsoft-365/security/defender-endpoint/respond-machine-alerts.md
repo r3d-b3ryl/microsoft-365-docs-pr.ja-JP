@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ab1cb1563f3ccc0f7bfda9b1f8875c76446153e3
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 7626c01aeee81c50ee1bed418735c87dc61c8853
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59399240"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042616"
 ---
 # <a name="take-response-actions-on-a-device"></a>デバイスの対応措置を講じる
 
@@ -57,7 +57,7 @@ ms.locfileid: "59399240"
 
 > [!IMPORTANT]
 >
-> - これらの応答アクションは、Windows 10 バージョン 1703 以降およびサーバー 2019 Windowsでのみ使用できます。
+> - これらの応答アクションは、Windows 10 バージョン 1703 以降、Windows Server 2019、および Windows Server 2022 のデバイスでのみ使用できます。
 > - 非デバイス プラットフォームWindows応答機能 (デバイスの分離など) は、サード パーティの機能に依存します。
 > - Microsoft ファースト パーティエージェントの場合、OS の最小要件については、各機能の下にある 「詳細」リンクを参照してください。
 
@@ -182,8 +182,8 @@ ms.locfileid: "59399240"
 
 > [!IMPORTANT]
 >
-> - 完全な分離は、サーバー 2019 Windows 10バージョン 1703 および Windowsデバイスで使用できます。
-> - 選択的な分離は、サーバー 2019 Windows 10バージョン 1709 以降のデバイスWindows使用できます。
+> - 完全な分離は、Windows 10、バージョン 1703、Windows Server 2019、および Windows Server 2022 のデバイスで使用できます。
+> - 選択的な分離は、Windows 10 バージョン 1709 以降、Windows Server 2019、および Windows Server 2022 のデバイスで使用できます。
 > - デバイスを分離する場合は、特定のプロセスと宛先だけが許可されます。 したがって、完全な VPN トンネルの背後にあるデバイスは、デバイスが分離された後、Microsoft Defender for Endpoint クラウド サービスに到達できません。 Microsoft Defender for Endpoint にスプリット トンネリング VPN を使用し、クラウド ベースMicrosoft Defender ウイルス対策トラフィックを使用することをお勧めします。
 
 このデバイス分離機能は、デバイスを監視し続ける Defender for Endpoint サービスへの接続を維持しながら、侵害されたデバイスをネットワークから切断します。

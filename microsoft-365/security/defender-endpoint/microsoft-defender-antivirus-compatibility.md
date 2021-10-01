@@ -17,12 +17,12 @@ manager: dansimp
 ms.technology: mde
 ms.date: 09/14/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: ed1e5af0c5e49dfaedcd433c8bec9da29ec3f871
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: d77f5885f4c2e957a598c37fd75a6813f2b37dd1
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776058"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60043313"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>Microsoft Defender ウイルス対策の他のセキュリティ製品との互換性
 
@@ -38,6 +38,7 @@ Microsoft Defender ウイルス対策のバージョンを実行しているエ�
 - Windows Server 2016
 - Windowsサーバー、バージョン 1803 以降
 - Windows Server 2019
+- Windows Server 2022
 
 別の Microsoft 以外のウイルス対策/マルウェア対策ソリューションを使用すると、どうなるでしょうか。 Microsoft Defender ウイルス対策を別のウイルス対策製品と共に実行できますか? 答えは、オペレーティング システムや [、Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) (Defender for Endpoint) とウイルス対策保護を組み合わせて使用するかどうかなど、いくつかの要因に依存します。
 
@@ -53,8 +54,9 @@ Microsoft Defender ウイルス対策のバージョンを実行しているエ�
 |---|---|---|---|
 |Windows 10|Microsoft Defender ウイルス対策|アクティブ モード|
 |Windows 10|Microsoft 以外のウイルス対策/マルウェア対策ソリューション|無効モード (自動的に発生)|
-|Windows Server 2016 <br/><br/> Windowsサーバー、バージョン 1803 以降 <br/><br/> Windows Server 2019|Microsoft Defender ウイルス対策|アクティブ モード|
-|Windows Server 2016 <br/><br/> Windowsサーバー、バージョン 1803 以降 <br/><br/> Windows Server 2019|Microsoft 以外のウイルス対策/マルウェア対策ソリューション|無効 (手動で設定) <sup>[[1](#fn1)]</sup>|
+|Windows Server 2016 <p> Windowsサーバー、バージョン 1803 以降 <p> WindowsServer 2019 または Windows Server 2022|Microsoft Defender ウイルス対策|アクティブ モード|
+|Windows Server 2016 <p> Windowsサーバー、バージョン 1803 以降 <p> WindowsServer 2019 または Windows Server 2022|Microsoft 以外のウイルス対策/マルウェア対策ソリューション|無効 (手動で設定) <sup>[[1](#fn1)]</sup>|
+
 
 (<a id="fn1">1</a>) Windows Server で Microsoft 以外のウイルス対策製品を実行している場合は、グループ ポリシーを使用して Microsoft Defender ウイルス対策 を無効にするか[、DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware)レジストリ キーを使用して Microsoft Defender ウイルス対策 を無効にできます。 レジストリ キーを使用するには、に移動し、 `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender` という名前の DWORD エントリを設定または作成します `DisableAntiSpyware` 。 その値を (レジストリ キーの値を true に設定する) に設定し、ベースに `1` **[16** 進数] を選択します。 
 
@@ -71,11 +73,11 @@ Microsoft Defender ウイルス対策のバージョンを実行しているエ�
 |---|---|---|---|
 |Windows 10以降|Microsoft Defender ウイルス対策|アクティブ モード|
 |Windows 10以降|Microsoft 以外のウイルス対策/マルウェア対策ソリューション|パッシブ モード (自動的に行われます)|
-|Windows Server 2016 <br/><br/> Windowsサーバー、バージョン 1803 以降 <br/><br/> Windows Server 2019|Microsoft Defender ウイルス対策|アクティブ モード|
-|Windowsサーバー、バージョン 1803 以降 <br/><br/> Windows Server 2019|Microsoft 以外のウイルス対策/マルウェア対策ソリューション|パッシブ モード (手動で設定) <sup> [[2](#fn2)]<sup></sup>|
+|Windows Server 2016 <p> Windowsサーバー、バージョン 1803 以降 <p> WindowsServer 2019 または Windows Server 2022|Microsoft Defender ウイルス対策|アクティブ モード|
+|Windowsサーバー、バージョン 1803 以降 <p> WindowsServer 2019 または Windows Server 2022|Microsoft 以外のウイルス対策/マルウェア対策ソリューション|パッシブ モード (手動で設定) <sup> [[2](#fn2)]<sup></sup>|
 |Windows Server 2016|Microsoft 以外のウイルス対策/マルウェア対策ソリューション|無効 (手動で設定) <sup>[[3](#fn3)]</sup>|
 
-(<a id="fn2">2</a>) Windows Server、バージョン 1803 以降、または Windows Server 2019 では、Microsoft 以外のウイルス対策製品をインストールする場合は、Microsoft Defender ウイルス対策 をパッシブ モードに手動で設定します。 **ForceDefenderPassiveMode** レジストリ キーを使用して、このタスクを実行できます。 レジストリ キーを使用するには、に移動し、 `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection` という名前の DWORD エントリを設定または作成します `ForceDefenderPassiveMode` 。 その値を (レジストリ キーの値を true に設定する) に設定し、ベースに `1` **[16** 進数] を選択します。  詳細については、「パッシブ モードと[パッシブ サーバー」をWindowsしてください](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server)。
+(<a id="fn2">2</a>) Windows Server、バージョン 1803 以降、または Windows Server 2019、または Windows Server 2022 では、Microsoft 以外のウイルス対策製品をインストールする場合は、Microsoft Defender ウイルス対策 をパッシブ モードに手動で設定します。 **ForceDefenderPassiveMode** レジストリ キーを使用して、このタスクを実行できます。 レジストリ キーを使用するには、に移動し、 `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection` という名前の DWORD エントリを設定または作成します `ForceDefenderPassiveMode` 。 その値を (レジストリ キーの値を true に設定する) に設定し、ベースに `1` **[16** 進数] を選択します。  詳細については、「パッシブ モードと[パッシブ サーバー」をWindowsしてください](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server)。
 
 (<a id="fn3">3</a>) Windows Server 2016では、グループ ポリシーを使用して Windows Defender ウイルス対策 を無効にするか[、DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware)レジストリ キーを使用して、Microsoft Defender ウイルス対策 を無効にできます。 レジストリ キーを使用するには、に移動し、 `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender` という名前の DWORD エントリを設定または作成します `DisableAntiSpyware` 。 その値を (レジストリ キーの値を true に設定する) に設定し、ベースに `1` **[16** 進数] を選択します。 
 
@@ -92,7 +94,7 @@ Defender for Endpoint には、エンドポイントにインストールされ�
 
 パッシブ モードでMicrosoft Defender ウイルス対策するには、エンドポイントが次の要件を満たす必要があります。
 
-- オペレーティング システム: Windows 10以降。Windowsサーバー、バージョン 1803 以降。または Windows Server 2019
+- オペレーティング システム: Windows 10以降。Windowsサーバー、バージョン 1803 以降。またはWindows Server 2019、または Windows Server 2022
 - Microsoft Defender ウイルス対策インストールする必要があります
 - Microsoft 以外のウイルス対策/マルウェア対策製品をインストールし、プライマリ ウイルス対策ソリューションとして使用する必要があります。
 - エンドポイントは Defender for Endpoint にオンボードする必要があります
@@ -110,11 +112,11 @@ Defender for Endpoint は、パッシブ モードMicrosoft Defender ウイル�
 
 |保護|Microsoft Defender ウイルス対策 <br/><br/> アクティブ モード|Microsoft Defender ウイルス対策 <br/><br/> パッシブ モード|Microsoft Defender ウイルス対策 <br/><br/> 無効またはアンインストール済み|[ブロック モードの EDR](edr-in-block-mode.md)|
 |---|---|---|---|---|
-|[リアルタイム保護](configure-real-time-protection-microsoft-defender-antivirus.md) と [クラウドによる保護](enable-cloud-protection-microsoft-defender-antivirus.md)|はい|No <sup>[[5](#fn5)]</sup>|いいえ|いいえ|
-|[限定された定期的なスキャンの可用性](limited-periodic-scanning-microsoft-defender-antivirus.md)|いいえ|いいえ|はい|いいえ|
+|[リアルタイム保護](configure-real-time-protection-microsoft-defender-antivirus.md) と [クラウドによる保護](enable-cloud-protection-microsoft-defender-antivirus.md)|はい|No <sup>[[5](#fn5)]</sup>|不要|いいえ|
+|[限定された定期的なスキャンの可用性](limited-periodic-scanning-microsoft-defender-antivirus.md)|いいえ|不要|はい|不要|
 |[スキャン中ファイルと検出情報](review-scan-results-microsoft-defender-antivirus.md)|はい|はい|いいえ|はい|
-|[脅威の修復](configure-remediation-microsoft-defender-antivirus.md)|はい|メモ<sup>[ 6 ][を参照してください。](#fn6)</sup>|いいえ|はい|
-|[セキュリティ インテリジェンスの更新プログラム](manage-updates-baselines-microsoft-defender-antivirus.md)|はい|はい|いいえ|はい|
+|[脅威の修復](configure-remediation-microsoft-defender-antivirus.md)|はい|メモ<sup>[ 6 ][を参照してください。](#fn6)</sup>|不要|はい|
+|[セキュリティ インテリジェンスの更新プログラム](manage-updates-baselines-microsoft-defender-antivirus.md)|はい|はい|不要|はい|
 
 (<a id="fn5">5</a>) 一般に、Microsoft Defender ウイルス対策 がパッシブ モードの場合、リアルタイム保護は、有効でパッシブ モードの場合でも、ブロックまたは強制を提供しません。
 
@@ -135,7 +137,7 @@ Defender for Endpoint は、パッシブ モードMicrosoft Defender ウイル�
 
 <br/><br/>
 
-|メソッド|Procedure|
+|Method|Procedure|
 |---|---|
 |Windows セキュリティアプリ| 1. デバイスでWindowsアプリをWindows セキュリティします。<br/>2. [ **ウイルス対策] &を選択します**。<br/>3. [プロバイダー **Who保護しますか?** [プロバイダーの管理 **] を選択します**。<br/>4. [セキュリティ **プロバイダー] ページ** の [ウイルス対策]**の下** に、[セキュリティ プロバイダー **Microsoft Defender ウイルス対策がオンになっている必要があります**。|
 |タスク マネージャー| 1. デバイスWindowsタスク マネージャー アプリを開きます。<br/>2. [詳細] タブ **を選択** します。<br/>3. リストで **MsMpEng.exe** を探します。|

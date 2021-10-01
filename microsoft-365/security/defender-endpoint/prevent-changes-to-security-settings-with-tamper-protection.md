@@ -18,12 +18,12 @@ ms.custom: nextgen
 ms.technology: mde
 ms.date: 09/23/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 2e279a5a256f1b729d5fe39d51eb82801bc34bcb
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: 75b19373cbdecfe73c9b41b6bcbdbaa2050fcf53
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60008823"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042856"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>改ざん防止機能を使用してセキュリティ設定を保護する
 
@@ -35,6 +35,7 @@ ms.locfileid: "60008823"
 
 - Windows 10
 - Windows Server 2019
+- Windows Server 2022
 - Windowsサーバー、バージョン 1803 以降
 - Windows Server 2016
 
@@ -88,8 +89,8 @@ ms.locfileid: "60008823"
 
 |タンパープロテクションを有効にする方法|クラウドによる保護への依存 (MAPS)|
 |---|---|
-|Microsoft Intune|いいえ|
-|Microsoft Endpoint Configuration Manager + テナント接続|いいえ|
+|Microsoft Intune|不要|
+|Microsoft Endpoint Configuration Manager + テナント接続|不要|
 |Microsoft 365 Defender ポータル ( [https://security.microsoft.com](https://security.microsoft.com) )|はい|
 |
 
@@ -101,7 +102,7 @@ ms.locfileid: "60008823"
 
 - 改ざん防止を管理Microsoft 365 Defenderポータルを使用する場合は、Intune またはテナント接続方法を使用する必要があります。
 
-- Microsoft 365 Defender ポータルで改ざん防止を管理すると、テナント全体に設定が適用され、Windows 10、Windows Server 2016、または Windows Server 2019 を実行しているすべてのデバイスに影響します。 タンパープロテクションを微調整するには (一部のデバイスではタンパープロテクションをオンにし、他のデバイスではオフにするなど [)、Intune](#manage-tamper-protection-for-your-organization-using-intune) または Configuration Manager をテナント接続で [使用します](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006)。
+- Microsoft 365 Defender ポータルで改ざん防止を管理する場合、この設定はテナント全体に適用され、Windows 10、Windows Server 2016、または Windows Server 2019、または Windows Server 2022 を実行しているすべてのデバイスに影響します。 タンパープロテクションを微調整するには (一部のデバイスではタンパープロテクションをオンにし、他のデバイスではオフにするなど [)、Intune](#manage-tamper-protection-for-your-organization-using-intune) または Configuration Manager をテナント接続で [使用します](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006)。
 
 - ハイブリッド環境がある場合、Intune で構成されたタンパープロテクション設定は、ポータルで構成された設定よりも優先Microsoft 365 Defenderされます。
 
@@ -112,6 +113,7 @@ ms.locfileid: "60008823"
 - デバイスWindows次のいずれかのバージョンのデバイスを実行している必要Windows。
   - Windows 10
   - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+  - Windows Server 2022
   - Windowsサーバー、バージョン[1803](/windows/release-health/status-windows-10-1803)以降
   - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
 
@@ -182,10 +184,10 @@ Windows Server 2016、Windows 10 バージョン 1709、1803、[または 1809](
 
 ## <a name="manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006"></a>Configuration Manager バージョン 2006 で組織の改ざん防止を管理する
 
-Configuration Manager のバージョン [2006](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2006)を使用している場合は、テナント接続というメソッドを使用して、Windows 10、Windows Server 2016、および Windows Server 2019 のタンパープロテクション設定を *管理できます*。 テナント接続を使用すると、オンプレミス専用の Configuration Manager デバイスを Microsoft エンドポイント マネージャー 管理センターに同期し、エンドポイント セキュリティ構成ポリシーを & デバイスのオンプレミス コレクションに配信できます。
+Configuration Manager のバージョン[2006](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2006)を使用している場合は、テナント接続というメソッドを使用して、Windows 10、Windows Server 2016、Windows Server 2019、および Windows Server 2022 のタンパープロテクション設定を管理できます。 テナント接続を使用すると、オンプレミス専用の Configuration Manager デバイスを Microsoft エンドポイント マネージャー 管理センターに同期し、エンドポイント セキュリティ構成ポリシーを & デバイスのオンプレミス コレクションに配信できます。
 
 > [!NOTE]
-> この手順を使用して、サーバー 2019 で実行されているデバイスWindows 10、Windowsを拡張できます。 この手順で説明されているリソースの前提条件と他の情報を必ず確認してください。
+> この手順を使用すると、改ざん防止を、Windows 10、Windows Server 2019、および Windows Server 2022 を実行するデバイスに拡張できます。 この手順で説明されているリソースの前提条件と他の情報を必ず確認してください。
 
 1. テナント接続を設定します。 詳細については、「テナント接続Microsoft エンドポイント マネージャー:デバイスの同期と[デバイスの操作」を参照してください](/mem/configmgr/tenant-attach/device-sync-actions)。
 
@@ -248,11 +250,11 @@ Microsoft [](/microsoft-365/security/defender-endpoint/overview-endpoint-detecti
 
 Windows 10OS [1709](/windows/release-health/status-windows-10-1709)、 [1803](/windows/release-health/status-windows-10-1803)、 [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019)以降と[Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint).
 
-Configuration Manager バージョン 2006 をテナント接続で使用している場合は、改ざん防止をサーバー 2019 Windowsできます。 「 [テナント接続: 管理センターからエンドポイント セキュリティ](/mem/configmgr/tenant-attach/deploy-antivirus-policy)ウイルス対策ポリシーを作成して展開する (プレビュー)」を参照してください。
+Configuration Manager バージョン 2006 をテナント接続で使用している場合は、改ざん防止を Windows Server 2019 および Windows Server 2022 に拡張できます。 「 [テナント接続: 管理センターからエンドポイント セキュリティ](/mem/configmgr/tenant-attach/deploy-antivirus-policy)ウイルス対策ポリシーを作成して展開する (プレビュー)」を参照してください。
 
 ### <a name="will-tamper-protection-affect-non-microsoft-antivirus-registration-in-the-windows-security-app"></a>改ざん防止は、Microsoft 以外のウイルス対策アプリの登録Windows セキュリティしますか?
 
-いいえ。 Microsoft 以外のウイルス対策製品は、引き続きアプリケーションにWindows セキュリティされます。
+その必要はありません。 Microsoft 以外のウイルス対策製品は、引き続きアプリケーションにWindows セキュリティされます。
 
 ### <a name="what-happens-if-microsoft-defender-antivirus-is-not-active-on-a-device"></a>デバイスでMicrosoft Defender ウイルス対策がアクティブではない場合は、どうなるでしょうか。
 
@@ -293,7 +295,7 @@ Intune でタンパープロテクションを構成する柔軟性がありま�
 
 ### <a name="im-an-enterprise-customer-can-local-admins-change-tamper-protection-on-their-devices"></a>エンタープライズ顧客です。 ローカル管理者は、デバイスの改ざん防止を変更できますか?
 
-いいえ。 ローカル管理者は、改ざん防止の設定を変更または変更できません。
+その必要はありません。 ローカル管理者は、改ざん防止の設定を変更または変更できません。
 
 ### <a name="what-happens-if-my-device-is-onboarded-with-microsoft-defender-for-endpoint-and-then-goes-into-an-off-boarded-state"></a>デバイスが Microsoft Defender for Endpoint にオンボードされ、オフボード状態に入った場合は、どうなるでしょうか。
 

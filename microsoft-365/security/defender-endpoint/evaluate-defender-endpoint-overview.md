@@ -1,7 +1,7 @@
 ---
 title: エンドポイントMicrosoft 365 Defenderの概要を評価する
 description: 試用版ラボまたはMicrosoft 365 Defender環境をセットアップします。 組織のデバイス、ID、データ、アプリを保護するようにセキュリティ ソリューションがどのように設計されているのかテストして体験します。
-keywords: Microsoft 365 Defender試し、Microsoft 365 Defender を試し、Microsoft 365 Defender、Microsoft 365 Defender 評価ラボ、Microsoft 365 Defender パイロット、サイバーセキュリティ、高度な永続的脅威、エンタープライズ セキュリティ、デバイス、デバイス、ID、ユーザー、データ、アプリケーション、インシデント、自動調査と修復、高度なハンティングを評価する
+keywords: Microsoft 365 Defender試し、テストMicrosoft 365 Defender、Microsoft 365 Defender評価ラボMicrosoft 365 Defender、パイロット、サイバー Microsoft 365 Defenderを評価するセキュリティ、高度な永続的脅威、エンタープライズ セキュリティ、デバイス、デバイス、ID、ユーザー、データ、アプリケーション、インシデント、自動調査と修復、高度な検索
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 2c9e5d06b13cb2fa64ed9d51977ee13af19c92f8
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: b100ddc7abb64e5f73acce29edd1eecc2bd31af1
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567606"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60043229"
 ---
 # <a name="evaluate-microsoft-365-defender-for-endpoint-overview"></a>エンドポイントMicrosoft 365 Defenderの概要を評価する
 
@@ -51,7 +51,7 @@ Microsoft Defender for Endpoint 評価ラボは、デバイスと環境構成の
 
 自動調査、高度な狩猟、脅威分析など、プラットフォームの強力な機能に完全にアクセスでき、Defender for Endpoint が提供する包括的な保護スタックをテストできます。
 
-Windows 10 または Windows Server 2019 デバイスを追加して、最新の OS バージョンと適切なセキュリティ コンポーネントがインストールされ、Office 2019 Standard がインストールされます。
+Windows 10 または Windows Server 2019、または Windows Server 2022 デバイスを追加して、最新の OS バージョンと適切なセキュリティ コンポーネントをインストールし、Office 2019 Standard をインストールすることができます。
 
 また、脅威シミュレーターをインストールできます。 Defender for Endpoint は、業界をリードする脅威シミュレーション プラットフォームと提携し、ポータルから出ることなく Defender for Endpoint の機能をテストするのに役立ちます。
 

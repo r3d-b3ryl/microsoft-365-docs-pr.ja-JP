@@ -23,12 +23,12 @@ ms.topic: article
 ms.custom: migrationguides
 ms.date: 09/23/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: c65860eca559b1871f4f22a14a0bf179f06f3f9b
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 18722989f99c8bb5ccb9b6dfc9762ea570033511
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776862"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042989"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-2-setup"></a>エンドポイントの Microsoft Defender に切り替える - フェーズ 2: セットアップ
 
@@ -89,6 +89,7 @@ Defender for Endpoint に切り替える場合は、一定の手順を実行し�
 > 次の手順は、次のバージョンのデバイスを実行しているエンドポイントまたはデバイスにのみ適用Windows。
 >
 > - Windows Server 2019
+> - Windows Server 2022
 > - Windowsサーバーバージョン 1803 (コア専用モード)
 > - Windows Server 2016 (次のセクションを参照[Windows Server 2016](#are-you-using-windows-server-2016)してください。
 
@@ -101,7 +102,7 @@ Defender for Endpoint に切り替える場合は、一定の手順を実行し�
    Dism /online /Enable-Feature /FeatureName:Windows-Defender-Features
    Dism /online /Enable-Feature /FeatureName:Windows-Defender
    Dism /online /Enable-Feature /FeatureName:Windows-Defender-Gui
-   # For Windows Server 2019
+   # For Windows Server 2019 and Windows Server 2022
    Dism /online /Enable-Feature /FeatureName:Windows-Defender
    ```
    次に、デバイスを再起動します。 
@@ -150,7 +151,7 @@ Defender for Endpoint に切り替える場合は、一定の手順を実行し�
 
 <br/><br/>
 
-|メソッド|Procedure|
+|Method|Procedure|
 |---|---|
 |Windows セキュリティアプリ| 1. デバイスでWindowsアプリをWindows セキュリティします。<br/><br/>2. [ **ウイルス対策] &を選択します**。<br/><br/>3. [プロバイダー **Who保護しますか?** [プロバイダーの管理 **] を選択します**。 [セキュリティ **プロバイダー] ページの**[ウイルス対策]**の下** に、[セキュリティ プロバイダー **Microsoft Defender ウイルス対策がオンになっている必要があります**。|
 |タスク マネージャー|1. デバイスWindowsタスク マネージャー アプリを開きます。<br/><br/>2. [詳細] タブ **を選択** します。<br/><br/>3. リストで **MsMpEng.exe** を探します。|
@@ -160,7 +161,7 @@ Defender for Endpoint に切り替える場合は、一定の手順を実行し�
 > [!TIP]
 > [詳細については、Microsoft Defender ウイルス対策を参照してください](microsoft-defender-antivirus-compatibility.md#more-details-about-microsoft-defender-antivirus-states)。
 
-## <a name="configure-defender-for-endpoint"></a>エンドポイントの Defender を構成する
+## <a name="configure-defender-for-endpoint"></a>Android 機能用に Microsoft Defender for Endpoint を構成する
 
 移行プロセスのこの手順では、エンドポイントのMicrosoft Defender ウイルス対策構成します。 Intune の使用をお勧めします。ただし、次の表に示すメソッドを使用できます。
 
@@ -189,8 +190,9 @@ Defender for Endpoint に切り替える場合は、一定の手順を実行し�
 
 |OS|除外|
 |---|---|
-|Windows 10バージョン[1803](/windows/release-health/status-windows-10-1803)以降 (リリース[情報Windows 10参照](/windows/release-health/release-information)) <br/><br/> Windows 10バージョン 1703 または[KB4493441](https://support.microsoft.com/help/4493441)がインストールされている 1709 <br/><br/> [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019) <br/><br/> [Windowsサーバー、バージョン 1803](/windows-server/get-started/whats-new-in-windows-server-1803)|`C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe` <br/><br/> `C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe` <br/><br/> `C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe` <br/><br/> `C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe`|
-|[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2) <br/><br/> [Windows 7](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) <br/><br/> [Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016) <br/><br/> [Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2) <br/><br/> [Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)|`C:\Program Files\Microsoft Monitoring Agent\Agent\Health Service State\Monitoring Host Temporary Files 6\45\MsSenseS.exe` <br/><br/> **注**: ホスト一時ファイル 6\45 の監視には、番号が付くサブフォルダーが異なる場合があります。 <br/><br/> `C:\Program Files\Microsoft Monitoring Agent\Agent\AgentControlPanel.exe` <br/><br/> `C:\Program Files\Microsoft Monitoring Agent\Agent\HealthService.exe` <br/><br/> `C:\Program Files\Microsoft Monitoring Agent\Agent\HSLockdown.exe` <br/><br/> `C:\Program Files\Microsoft Monitoring Agent\Agent\MOMPerfSnapshotHelper.exe` <br/><br/> `C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe` <br/><br/> `C:\Program Files\Microsoft Monitoring Agent\Agent\TestCloudConnection.exe`|
+|Windows 10バージョン[1803](/windows/release-health/status-windows-10-1803)以降 (リリース[情報Windows 10参照](/windows/release-health/release-information)) <p> Windows 10バージョン 1703 または[KB4493441](https://support.microsoft.com/help/4493441)がインストールされている 1709 <p> [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)、Windows Server 2022 <p> [Windowsサーバー、バージョン 1803](/windows-server/get-started/whats-new-in-windows-server-1803)|`C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe` <p> `C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe` <p> `C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe` <p> `C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe`|
+|[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2) <p> [Windows 7](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) <p> [Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016) <p> [Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2) <p> [Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)|`C:\Program Files\Microsoft Monitoring Agent\Agent\Health Service State\Monitoring Host Temporary Files 6\45\MsSenseS.exe` <p> **注**: ホスト一時ファイル 6\45 の監視には、番号が付くサブフォルダーが異なる場合があります。 <p> `C:\Program Files\Microsoft Monitoring Agent\Agent\AgentControlPanel.exe` <p> `C:\Program Files\Microsoft Monitoring Agent\Agent\HealthService.exe` <p> `C:\Program Files\Microsoft Monitoring Agent\Agent\HSLockdown.exe` <p> `C:\Program Files\Microsoft Monitoring Agent\Agent\MOMPerfSnapshotHelper.exe` <p> `C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe` <p> `C:\Program Files\Microsoft Monitoring Agent\Agent\TestCloudConnection.exe`|
+
 
 ## <a name="add-your-existing-solution-to-the-exclusion-list-for-microsoft-defender-antivirus"></a>既存のソリューションをユーザーの除外リストに追加Microsoft Defender ウイルス対策
 

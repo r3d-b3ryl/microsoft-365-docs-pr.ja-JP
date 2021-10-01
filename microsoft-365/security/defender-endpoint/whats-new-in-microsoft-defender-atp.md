@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a2652b3a324bd13ce8e438641b54eef5aa97125e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 62f62e421c789f419eeabe174b0d05ae36e3dd4b
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212064"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042604"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の新機能
 
@@ -95,7 +95,7 @@ ms.locfileid: "59212064"
 
 
 ## <a name="march-2021"></a>2021 年 3 月
-- [アプリケーションを使用して改ざん防止を管理Microsoft Defender セキュリティ センター](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) <br> テナント接続というメソッドを使用して、Windows 10、Windows Server 2016、Windows サーバー 2019 の改ざん防止設定 *を管理できます*。
+- [アプリケーションを使用して改ざん防止を管理Microsoft Defender セキュリティ センター](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) <br> Windows 10、Windows Server 2016、Windows Server 2019、Windows Server 2022 のタンパープロテクション設定は、テナント接続というメソッドを使用して *管理できます*。
 
 
 ## <a name="january-2021"></a>2021 年 1 月

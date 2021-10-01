@@ -17,18 +17,21 @@ ms.collection:
 - m365solution-spintranet
 localization_priority: Normal
 description: 複数地域でのTeamsのMicrosoft 365について説明します。
-ms.openlocfilehash: 7da2032e1106d03178eccf3bcfb4f37fc63780d7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6df7d20b8541ec6aefca1f30d7fbfe6bf7c3f6c9
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59210683"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60043013"
 ---
 # <a name="multi-geo-capabilities-in-microsoft-teams"></a>複数地域の機能 (Microsoft Teams
 
 複数地域機能を使用するとTeams場所Teamsチャット データを保存できます。 チャット データは、プライベート メッセージ、チャネル メッセージ、チャットで使用される画像などのチャット メッセージで構成されます。
 
 Teamsユーザーとグループに優先データの場所 (PDL) を使用して、データを格納する場所を決定します。 PDL が設定されていないか無効な場合、データはテナントの中央の場所に格納されます。
+
+> [!NOTE]
+> 2021 年 7 月にTeamsの複数地域機能が展開されました。 チャットメッセージとチャネル メッセージは、今後数四半期で自動的に正しい地域の場所に移行されます。 テナントが最初の同期を完了した後、新しい PDL 変更が処理され、それ以降の新しい PDL 変更は受信順にキューに入れ、処理されます。
 
 ## <a name="user-chat"></a>ユーザー チャット
 

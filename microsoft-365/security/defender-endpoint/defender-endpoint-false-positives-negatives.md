@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: c897a65296f0f5b016b2bdb22e28773a01be494a
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: dcc6a0fd065ecffd302fd0b1ea9296ddaa1a5c80
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776994"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042580"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint での誤検出/検出漏れに対処する
 
@@ -268,7 +268,7 @@ Microsoft Defender for Endpoint の除外としてエンティティを指定す
 
 - Microsoft Defender ウイルス対策保護が有効になっていると構成されている場合 (「クラウドベースの保護の管理[」を参照)](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)
 - マルウェア対策クライアントのバージョンは 4.18.1901.x 以降です
-- デバイスはバージョン Windows 10 1703 以降で実行されています。Windows Server 2016;または Windows Server 2019
+- デバイスはバージョン Windows 10 1703 以降で実行されています。Windows Server 2016サーバー 2019 Windows、またはサーバー 2022 Windowsを使用する
 - [ [ブロックまたは許可] 機能がオンになっている](/microsoft-365/security/defender-endpoint/advanced-features)
 
 #### <a name="indicators-for-ip-addresses-urls-or-domains"></a>IP アドレス、URL、またはドメインのインジケーター
@@ -291,7 +291,7 @@ IP アドレス、URL、またはドメインのインジケーターを作成�
 
 - Microsoft Defender ウイルス対策保護が有効になっていると構成されている場合 (「クラウドベースの保護の管理[」を参照)](deploy-manage-report-microsoft-defender-antivirus.md)
 - マルウェア対策クライアントのバージョンは 4.18.1901.x 以降です
-- デバイスはバージョン Windows 10 1703 以降で実行されています。Windows Server 2016;または Windows Server 2019
+- デバイスはバージョン Windows 10 1703 以降で実行されています。Windows Server 2016サーバー 2019 Windows、またはサーバー 2022 Windowsを使用する
 - ウイルスと脅威の保護の定義が最新
 
 > [!TIP]

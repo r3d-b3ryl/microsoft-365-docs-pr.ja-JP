@@ -19,12 +19,12 @@ ms.collection:
 description: セキュリティ設定に関する Exchange Online Protection (EOP) と Defender のベスト Office 365は何ですか? 標準保護に関する現在の推奨事項は何ですか? より厳密にしたい場合は、何を使用する必要がありますか? また、Defender をユーザーに使用する場合、どのような追加Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c84f98bdcf27106aceb588d4ddee82d9328d80c6
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: c7ac68c1085a748b82007ff3a890e7dc42b46ce3
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483833"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60043217"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>EOP および Microsoft Defender for Office 365 セキュリティの推奨設定
 
@@ -71,7 +71,7 @@ ms.locfileid: "59483833"
 |**特定の言語が含まれる** <p> _EnableLanguageBlockList_ <p> _LanguageBlockList_|**オフ** <p> `$false` <p> 空白|**オフ** <p> `$false` <p> 空白|**オフ** <p> `$false` <p> 空白|この設定に関する具体的な推奨事項はありません。 ビジネス ニーズに基づいて、特定の言語でメッセージをブロックできます。|
 |**これらの国から** <p> _EnableRegionBlockList_ <p> _RegionBlockList_|**オフ** <p> `$false` <p> 空白|**オフ** <p> `$false` <p> 空白|**オフ** <p> `$false` <p> 空白|この設定に関する具体的な推奨事項はありません。 ビジネス ニーズに基づいて、特定の国からのメッセージをブロックできます。|
 |**テスト モード** (_TestModeAction_)|**なし**|**なし**|**なし**|この設定は ASF の一部です。 詳細については、この記事の「 [スパム対策ポリシーの ASF](#asf-settings-in-anti-spam-policies) 設定」セクションを参照してください。|
-|**Actions**||||[検疫メッセージ] **を選択した場合** は、[ **検疫ポリシーの選択] ボックス** を使用できます。 検疫ポリシーは、検疫されたメッセージに対してユーザーが実行できる操作を定義します。 <p> 新しいスパム対策ポリシーを作成する場合、空白の値は、既定の検疫ポリシーを使用して、その特定の評決によって検疫されたメッセージの履歴機能を定義します (AdminOnlyAccessPolicy **for** High confidence フィッシング;それ以外の場合は DefaultFullAccessPolicy)。 <p> 管理者は、ユーザーに対して制限の厳しい機能または制限の少ない機能を定義するカスタム検疫ポリシーを作成して選択できます。 詳細については、「検疫ポリシー [」を参照してください](quarantine-policies.md)。|
+|**アクション**||||[検疫メッセージ] **を選択した場合** は、[ **検疫ポリシーの選択] ボックス** を使用できます。 検疫ポリシーは、検疫されたメッセージに対してユーザーが実行できる操作を定義します。 <p> 新しいスパム対策ポリシーを作成する場合、空白の値は、既定の検疫ポリシーを使用して、その特定の評決によって検疫されたメッセージの履歴機能を定義します (AdminOnlyAccessPolicy **for** High confidence フィッシング;それ以外の場合は DefaultFullAccessPolicy)。 <p> 管理者は、ユーザーに対して制限の厳しい機能または制限の少ない機能を定義するカスタム検疫ポリシーを作成して選択できます。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。|
 |**スパム** 検出アクション <p> _SpamAction_|**メッセージを迷惑メール フォルダーに移動する** <p> `MoveToJmf`|**メッセージを迷惑メール フォルダーに移動する** <p> `MoveToJmf`|**検疫メッセージ** <p> `Quarantine`||
 |**信頼度の高いスパム** 検出アクション <p> _HighConfidenceSpamAction_|**メッセージを迷惑メール フォルダーに移動する** <p> `MoveToJmf`|**検疫メッセージ** <p> `Quarantine`|**検疫メッセージ** <p> `Quarantine`||
 |**フィッシング検出** アクション <p> _PhishSpamAction_|**検疫メッセージ** <p> `MoveToJmf`|**検疫メッセージ** <p> `Quarantine`|**検疫メッセージ** <p> `Quarantine`||
@@ -152,7 +152,7 @@ ms.locfileid: "59483833"
 |**保護設定**|||||
 |**共通の添付ファイル フィルターを有効にする** <p> _EnableFileFilter_|未選択 <p> `$false`|選択済み <p> `$true`|選択済み <p> `$true`|この設定は、添付ファイルの内容に関係なく、ファイルの種類に基づいて実行可能な添付ファイルを含むメッセージを検疫します。|
 |**マルウェアに対して 0 時間自動削除を有効にする** <p> _ZapEnabled_|選択済み <p> `$true`|選択済み <p> `$true`|選択済み <p> `$true`||
-|**検疫ポリシー**|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|新しいマルウェア対策ポリシーを作成する場合、空白の値は、既定の検疫ポリシーを使用して、マルウェアとして検疫されたメッセージの履歴機能を定義します (AdminOnlyAccessPolicy)。 <p> 管理者は、ユーザーに対してより多くの機能を定義するカスタム検疫ポリシーを作成および選択できます。 詳細については、「検疫ポリシー [」を参照してください](quarantine-policies.md)。|
+|**検疫ポリシー**|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|新しいマルウェア対策ポリシーを作成する場合、空白の値は、既定の検疫ポリシーを使用して、マルウェアとして検疫されたメッセージの履歴機能を定義します (AdminOnlyAccessPolicy)。 <p> 管理者は、ユーザーに対してより多くの機能を定義するカスタム検疫ポリシーを作成および選択できます。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。|
 |**受信者の通知**|||||
 |**メッセージがマルウェアとして検疫された場合に受信者に通知する** <p> _操作_|未選択 <p> _DeleteMessage_|未選択 <p> _DeleteMessage_|未選択 <p> _DeleteMessage_|電子メールの添付ファイルでマルウェアが検出された場合、メッセージは検疫され、管理者だけが解放できます。|
 |**送信者の通知**|||||
@@ -185,8 +185,8 @@ ms.locfileid: "59483833"
 |---|:---:|:---:|:---:|---|
 |**フィッシングのしきい値&保護**|||||
 |**スプーフィング インテリジェンスを有効にする** <p> _EnableSpoofIntelligence_|選択済み <p> `$true`|選択済み <p> `$true`|選択済み <p> `$true`||
-|**Actions**|||||
-|**メッセージがスプーフィングとして検出された場合** <p> _AuthenticationFailAction_|**受信者の迷惑メール フォルダーにメッセージを移動する** <p> `MoveToJmf`|**受信者の迷惑メール フォルダーにメッセージを移動する** <p> `MoveToJmf`|**メッセージを検疫する** <p> `Quarantine`|この設定は、スプーフィング インテリジェンスの分析情報に示すように自動的に[](learn-about-spoof-intelligence.md)ブロックされたスプーフィングされた送信者、またはテナント許可/ブロック一覧で手動でブロックされた送信者に[適用されます](tenant-allow-block-list.md)。 <p> [メッセージの **検疫]** を選択すると、[検疫ポリシーの適用] ボックスを使用して、スプーフィングとして検疫されたメッセージに対してユーザーが実行できる操作を定義する検疫ポリシーを選択できます。 新しいフィッシング対策ポリシーを作成すると、空白の値を指定すると、スプーフィングとして検疫されたメッセージの履歴機能を定義するために既定の検疫ポリシーが使用されます (DefaultFullAccessPolicy)。 <p> 管理者は、ユーザーに対して制限の厳しい機能または制限の少ない機能を定義するカスタム検疫ポリシーを作成して選択できます。 詳細については、「検疫ポリシー [」を参照してください](quarantine-policies.md)。|
+|**アクション**|||||
+|**メッセージがスプーフィングとして検出された場合** <p> _AuthenticationFailAction_|**受信者の迷惑メール フォルダーにメッセージを移動する** <p> `MoveToJmf`|**受信者の迷惑メール フォルダーにメッセージを移動する** <p> `MoveToJmf`|**メッセージを検疫する** <p> `Quarantine`|この設定は、スプーフィング インテリジェンスの分析情報に示すように自動的に[](learn-about-spoof-intelligence.md)ブロックされたスプーフィングされた送信者、またはテナント許可/ブロック一覧で手動でブロックされた送信者に[適用されます](tenant-allow-block-list.md)。 <p> [メッセージの **検疫]** を選択すると、[検疫ポリシーの適用] ボックスを使用して、スプーフィングとして検疫されたメッセージに対してユーザーが実行できる操作を定義する検疫ポリシーを選択できます。 新しいフィッシング対策ポリシーを作成すると、空白の値を指定すると、スプーフィングとして検疫されたメッセージの履歴機能を定義するために既定の検疫ポリシーが使用されます (DefaultFullAccessPolicy)。 <p> 管理者は、ユーザーに対して制限の厳しい機能または制限の少ない機能を定義するカスタム検疫ポリシーを作成して選択できます。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。|
 |**最初の連絡先を表示安全性のヒント** <p> _EnableFirstContactSafetyTips_|未選択 <p> `$false`|選択済み <p> `$true`|選択済み <p> `$true`|詳細については、「First [contact 安全性のヒント」 を参照してください](set-up-anti-phishing-policies.md#first-contact-safety-tip)。|
 |**スプーフィング用の認証されていない送信者の表示 (?)** <p> _EnableUnauthenticatedSender_|選択済み <p> `$true`|選択済み <p> `$true`|選択済み <p> `$true`|未確認のスプーフィングされた送信者の場合は、Outlookに疑問符 (?) を追加します。 詳細については、「認証されていない送信者 [」を参照してください](set-up-anti-phishing-policies.md#unauthenticated-sender)。|
 |**"via" タグを表示する** <p> _EnableViaTag_|選択済み <p> `$true`|選択済み <p> `$true`|選択済み <p> `$true`|DKIM 署名または chris@contoso.com MAIL FROM アドレスのドメインと異なる場合は、from アドレスに via タグ (fabrikam.com 経由で) を **追加** します。 <p> 詳細については、「認証されていない送信者 [」を参照してください](set-up-anti-phishing-policies.md#unauthenticated-sender)。|
@@ -241,7 +241,7 @@ EOP のお客様は、前述のように基本的なフィッシング対策を�
 |**信頼できる送信者とドメインの追加** <p> _ExcludedSenders_ <p> _ExcludedDomains_|なし|なし|なし|組織によっては、偽装の試行として誤って識別される送信者またはドメインを追加することをお勧めします。|
 |**メールボックス インテリジェンスを有効にする** <p> _EnableMailboxIntelligence_|選択済み <p> `$true`|選択済み <p> `$true`|選択済み <p> `$true`||
 |**偽装保護のインテリジェンスを有効にする** <p> _EnableMailboxIntelligenceProtection_|オフ <p> `$false`|選択済み <p> `$true`|選択済み <p> `$true`|この設定では、メールボックス インテリジェンスによる偽装検出に対して指定されたアクションを使用できます。|
-|**Actions**||||[メッセージの **検疫] を選択した場合は**、[ **検疫ポリシーの選択] ボックス** を使用できます。 検疫ポリシーは、検疫されたメッセージに対してユーザーが実行できる操作を定義します。 <p> 新しいフィッシング対策ポリシーを作成する場合、空白の値は、既定の検疫ポリシーを使用して、その評決によって検疫されたメッセージの履歴機能を定義します (すべての偽装検出の種類に対する DefaultFullAccessPolicy)。 <p> 管理者は、ユーザーの制限が少ない、または制限の厳しい機能を定義するカスタム検疫ポリシーを作成して選択できます。 詳細については、「検疫ポリシー [」を参照してください](quarantine-policies.md)。|
+|**アクション**||||[メッセージの **検疫] を選択した場合は**、[ **検疫ポリシーの選択] ボックス** を使用できます。 検疫ポリシーは、検疫されたメッセージに対してユーザーが実行できる操作を定義します。 <p> 新しいフィッシング対策ポリシーを作成する場合、空白の値は、既定の検疫ポリシーを使用して、その評決によって検疫されたメッセージの履歴機能を定義します (すべての偽装検出の種類に対する DefaultFullAccessPolicy)。 <p> 管理者は、ユーザーの制限が少ない、または制限の厳しい機能を定義するカスタム検疫ポリシーを作成して選択できます。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。|
 |**偽装ユーザーとしてメッセージが検出された場合** <p> _TargetedUserProtectionAction_|**アクションを適用しない** <p> `NoAction`|**メッセージを検疫する** <p> `Quarantine`|**メッセージを検疫する** <p> `Quarantine`||
 |**偽装ドメインとしてメッセージが検出された場合** <p> _TargetedDomainProtectionAction_|**アクションを適用しない** <p> `NoAction`|**メッセージを検疫する** <p> `Quarantine`|**メッセージを検疫する** <p> `Quarantine`||
 |**メールボックス インテリジェンスがユーザーを検出して偽装した場合** <p> _MailboxIntelligenceProtectionAction_|**アクションを適用しない** <p> `NoAction`|**受信者の迷惑メール フォルダーにメッセージを移動する** <p> `MoveToJmf`|**メッセージを検疫する** <p> `Quarantine`||
@@ -264,8 +264,8 @@ EOP のお客様は、前述のように基本的なフィッシング対策を�
 |---|:---:|:---:|:---:|---|
 |**フィッシングのしきい値&保護**|||||
 |**スプーフィング インテリジェンスを有効にする** <p> _EnableSpoofIntelligence_|選択済み <p> `$true`|選択済み <p> `$true`|選択済み <p> `$true`||
-|**Actions**|||||
-|**メッセージがスプーフィングとして検出された場合** <p> _AuthenticationFailAction_|**受信者の迷惑メール フォルダーにメッセージを移動する** <p> `MoveToJmf`|**受信者の迷惑メール フォルダーにメッセージを移動する** <p> `MoveToJmf`|**メッセージを検疫する** <p> `Quarantine`|この設定は、スプーフィング インテリジェンスの分析情報に示すように自動的に[](learn-about-spoof-intelligence.md)ブロックされたスプーフィングされた送信者、またはテナント許可/ブロック一覧で手動でブロックされた送信者に[適用されます](tenant-allow-block-list.md)。 <p> [メッセージの **検疫] を** 選択すると、[検疫ポリシーの適用] ボックスを使用して、検疫メッセージに対してユーザーが実行できる操作を定義する検疫ポリシーを選択できます。 新しいフィッシング対策ポリシーを作成すると、空白の値は、既定の検疫ポリシーを使用して、スプーフィング検疫されたメッセージの履歴機能を定義します (DefaultFullAccessPolicy)。 <p> 管理者は、検疫でこれらのメッセージに対して受信者が実行できる操作を定義するカスタム検疫ポリシーを作成して選択できます。 詳細については、「検疫ポリシー [」を参照してください](quarantine-policies.md)。|
+|**アクション**|||||
+|**メッセージがスプーフィングとして検出された場合** <p> _AuthenticationFailAction_|**受信者の迷惑メール フォルダーにメッセージを移動する** <p> `MoveToJmf`|**受信者の迷惑メール フォルダーにメッセージを移動する** <p> `MoveToJmf`|**メッセージを検疫する** <p> `Quarantine`|この設定は、スプーフィング インテリジェンスの分析情報に示すように自動的に[](learn-about-spoof-intelligence.md)ブロックされたスプーフィングされた送信者、またはテナント許可/ブロック一覧で手動でブロックされた送信者に[適用されます](tenant-allow-block-list.md)。 <p> [メッセージの **検疫] を** 選択すると、[検疫ポリシーの適用] ボックスを使用して、検疫メッセージに対してユーザーが実行できる操作を定義する検疫ポリシーを選択できます。 新しいフィッシング対策ポリシーを作成すると、空白の値は、既定の検疫ポリシーを使用して、スプーフィング検疫されたメッセージの履歴機能を定義します (DefaultFullAccessPolicy)。 <p> 管理者は、検疫でこれらのメッセージに対して受信者が実行できる操作を定義するカスタム検疫ポリシーを作成して選択できます。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。|
 |**最初の連絡先を表示安全性のヒント** <p> _EnableFirstContactSafetyTips_|未選択 <p> `$false`|選択済み <p> `$true`|選択済み <p> `$true`|詳細については、「First [contact 安全性のヒント」 を参照してください](set-up-anti-phishing-policies.md#first-contact-safety-tip)。|
 |**スプーフィング用の認証されていない送信者の表示 (?)** <p> _EnableUnauthenticatedSender_|選択済み <p> `$true`|選択済み <p> `$true`|選択済み <p> `$true`|未確認のスプーフィングされた送信者の場合は、Outlookに疑問符 (?) を追加します。 詳細については、「認証されていない送信者 [」を参照してください](set-up-anti-phishing-policies.md#unauthenticated-sender)。|
 |**"via" タグを表示する** <p> _EnableViaTag_|選択済み <p> `$true`|選択済み <p> `$true`|選択済み <p> `$true`|DKIM 署名または chris@contoso.com MAIL FROM アドレスのドメインと異なる場合は、from アドレスに via タグ (fabrikam.com 経由で) を **追加** します。 <p> 詳細については、「認証されていない送信者 [」を参照してください](set-up-anti-phishing-policies.md#unauthenticated-sender)。|
@@ -308,7 +308,7 @@ PowerShell では、これらの設定に [New-SafeAttachmentPolicy](/powershell
 |セキュリティ機能名|既定値|Standard|Strict|コメント|
 |---|:---:|:---:|:---:|---|
 |**セーフ添付ファイル不明のマルウェア応答** <p> _有効にして__操作する_|**オフ** <p> `-Enable $false` と `-Action Block`|**Block** <p> `-Enable $true` と `-Action Block`|**Block** <p> `-Enable $true` と `-Action Block`|Enable パラメーター _が_ 有効 _$false、Action_ パラメーターの値は関係ありません。|
-|**検疫ポリシー** (_QuarantineTag_)|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|新しい セーフ 添付ファイル ポリシーを作成すると、空白の値は、既定の検疫ポリシーを使用して、セーフ 添付ファイル (AdminOnlyAccessPolicy) によって検疫されたメッセージの履歴機能を定義します。 <p> 管理者は、ユーザーに対してより多くの機能を定義するカスタム検疫ポリシーを作成および選択できます。 詳細については、「検疫ポリシー [」を参照してください](quarantine-policies.md)。|
+|**検疫ポリシー** (_QuarantineTag_)|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|新しい セーフ 添付ファイル ポリシーを作成すると、空白の値は、既定の検疫ポリシーを使用して、セーフ 添付ファイル (AdminOnlyAccessPolicy) によって検疫されたメッセージの履歴機能を定義します。 <p> 管理者は、ユーザーに対してより多くの機能を定義するカスタム検疫ポリシーを作成および選択できます。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。|
 |**検出された添付ファイルを含む添付ファイルのリダイレクト** : **リダイレクトを有効にする** <p> _リダイレクトする_ <p> _RedirectAddress_|選択されていないと、電子メール アドレスが指定されていません。 <p> `-Redirect $false` <p> _RedirectAddress が_ 空白 ( `$null` )|電子メール アドレスを選択して指定します。 <p> `$true` <p> 電子メール アドレス|電子メール アドレスを選択して指定します。 <p> `$true` <p> 電子メール アドレス|メッセージをセキュリティ管理者にリダイレクトして確認します。|
 |**スキャンが完了できないセーフ添付ファイル検出応答を適用する (タイムアウトまたはエラー)** <p> _ActionOnError_|選択済み <p> `$true`|選択済み <p> `$true`|選択済み <p> `$true`||
 |
@@ -372,4 +372,4 @@ PowerShell では、これらの設定に [New-SafeLinksPolicy](/powershell/modu
 
 - これらのリンクを使用して[、EOP](/exchange/standalone-eop/set-up-your-eop-service)サービスをセットアップし、Microsoft  Defender for  [Office 365。](defender-for-office-365.md) 「脅威に対する保護」の「脅威に対[する保護」](protect-against-threats.md)の役に立つ指示を忘Office 365してください。
 
-- **Windows** のセキュリティ基準については、GPO/オンプレミス オプション [](/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines)のセキュリティ 基準を取得できる場所と [、Intune](/intune/protect/security-baselines)ベースのセキュリティ用に Intune で Windows 10 デバイスを構成するためのセキュリティ 基準を使用します。 最後に、Microsoft Defender for Endpoint と Microsoft Intune セキュリティ ベースラインの比較については[、「Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines)と Intune のセキュリティ ベースラインの比較Windows参照してください。
+- **Windows** のセキュリティ基準については、GPO/オンプレミス オプションの [](/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines)セキュリティ 基準を取得できる場所と [、Intune](/intune/protect/security-baselines)ベースのセキュリティ用に Intune で Windows デバイスを構成するためのセキュリティ 基準を使用します。 最後に、Microsoft Defender for Endpoint と Microsoft Intune セキュリティ ベースラインの比較については[、「Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines)と Intune のセキュリティ ベースラインの比較Windows参照してください。

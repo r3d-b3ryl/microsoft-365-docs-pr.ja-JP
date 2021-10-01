@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4e52906cda48314967e40039caabfd81e38514c1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 91a4e2cd0d0a19fcbceb36560fea5c49ad904237
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59210343"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042905"
 ---
 # <a name="get-live-response-results"></a>ライブ応答の結果を取得する
 
@@ -69,6 +69,8 @@ ms.locfileid: "59210343"
   - **WindowsServer 2019 - パブリック プレビューにのみ適用**
     - バージョン 1903 以降 [(KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)を使用)
     - バージョン 1809 [(KB4537818 付](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)き)
+    
+  - **Windows Server 2022**  
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -89,7 +91,7 @@ id}/GetLiveResponseResultDownloadLink(index={command-index})
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-|名前|種類|説明|
+|名前|型|説明|
 |---|---|---|
 |Authorization|String|ベアラー {トークン}。必須。|
 

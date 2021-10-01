@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b9f7cda368f9770a645fa588597196eccf038b4f
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 3169464afe92a8af80df1b6dedfd9f7eb806a402
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59356650"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042628"
 ---
 # <a name="take-response-actions-on-a-file"></a>ファイルの対応措置を講じる
 
@@ -175,7 +175,7 @@ ms.locfileid: "59356650"
 > - ウイルス対策エンジンのバージョンは 1.1.17300.4 以降です。 「 [月次プラットフォームとエンジンのバージョン」を参照してください。](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 > - クラウドベースの保護が有効になっています。 「 [クラウドによる保護を有効にする」を参照してください。](enable-cloud-protection-microsoft-defender-antivirus.md)
 > - サンプル提出が有効になっている
-> - デバイスのバージョンWindows 10 1703 以降、またはサーバー 2016 または 2019 Windowsインストールされている
+> - デバイスのWindows 10バージョン 1703 以降、または Windows サーバー 2016 または 2019、または Windows Server 2022
 
 ### <a name="collect-files"></a>ファイルの収集
 

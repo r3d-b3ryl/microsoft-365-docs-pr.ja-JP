@@ -15,12 +15,12 @@ ms.collection:
 description: Microsoft 365管理者は、ランサムウェア攻撃から回復する方法を学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 755086b039a95770ef1f615733f46c3c782214fc
-ms.sourcegitcommit: 835dcaf5d5e0b485dc3ac485ded8943046afe36c
+ms.openlocfilehash: 94f45fd03d33fb5c1111e8a9098acc21b4830b01
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59941941"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60041710"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>ユーザーのランサムウェア攻撃から回復Microsoft 365
 
@@ -84,9 +84,9 @@ Microsoft 365 コンプライアンス スイートのツールは、組織の�
 
 ## <a name="step-4-recover-files-on-a-cleaned-computer-or-device"></a>手順 4: クリーンアップされたコンピューターまたはデバイス上のファイルを回復する
 
-環境からランサムウェア ペイロードを削除する前の手順を完了したら (ランサムウェアがファイルを暗号化または削除することを防ぐ)、Windows 7 の[](https://support.microsoft.com/help/17128)Windows 10 および Windows 8.1 または System Protection のファイル履歴を使用して、ローカル ファイルとフォルダーの回復を試みることもできます。
+環境からランサムウェア ペイロードを削除する前の手順を完了したら (ランサムウェアによるファイルの暗号化または削除を防ぐ)、Windows 11、Windows 10、Windows 8.1 のファイル履歴を使用し、Windows 7 の System Protection を使用してローカル ファイルとフォルダーの回復を試みることもできます。 [](https://support.microsoft.com/help/17128)
 
-**注**:
+**注意**:
 
 - また、一部のランサムウェアはバックアップ バージョンを暗号化または削除します。そのため、ファイルの履歴やシステム保護を使用してファイルを復元することはできません。 その場合は、次のセクションで説明するように、ランサムウェアやマルウェアの影響を受けOneDriveデバイスでバックアップを使用する必要があります。
 
@@ -160,7 +160,7 @@ Microsoft 365:
 
 - [Microsoft 365 テナントにランサムウェア保護を展開する](/microsoft-365/solutions/ransomware-protection-microsoft-365)
 - [マルウェアと ランサムウェアからの保護](/compliance/assurance/assurance-malware-and-ransomware-protection)
-- [ランサムウェアから Windows 10 PC を保護する](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
+- [ランサムウェアからWindows PC を保護する](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
 - [SharePoint Online でのランサムウェアの処理](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
 
 Microsoft 365 Defender:

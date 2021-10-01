@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 9533cff93c3e7f5a1859834d93541a1f818eca21
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 708d7d271e03b127460d5b2aa2745568d920a198
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59489624"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042880"
 ---
 # <a name="evaluate-controlled-folder-access"></a>制御されたフォルダー アクセスを評価する
 
@@ -33,7 +33,7 @@ ms.locfileid: "59489624"
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 
-[フォルダー アクセスの制御は](controlled-folders.md) 、疑わしいアプリや悪意のあるアプリによる変更からドキュメントやファイルを保護する機能です。 フォルダー アクセスの制御は、サーバー 2019 WindowsクライアントでWindows 10されます。
+[フォルダー アクセスの制御は](controlled-folders.md) 、疑わしいアプリや悪意のあるアプリによる変更からドキュメントやファイルを保護する機能です。 フォルダー アクセスの制御は、サーバー 2019、Windows Server 2022、WindowsクライアントでWindows 10されます。
 
 特に、ファイルを暗号化して人質[](https://www.microsoft.com/wdsi/threats/ransomware)に保持しようとするランサムウェアから保護する場合に役立ちます。
 

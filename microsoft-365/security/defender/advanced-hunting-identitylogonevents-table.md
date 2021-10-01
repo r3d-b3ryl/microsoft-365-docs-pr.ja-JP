@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3cd0c0f371c73a515704791e829be7266d400580
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8894e30f013e89110478000372c2b24c44c1f183
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163643"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042712"
 ---
 # <a name="identitylogonevents"></a>IdentityLogonEvents
 
@@ -49,26 +49,26 @@ ms.locfileid: "59163643"
 |-------------|-----------|-------------|
 | `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
 | `ActionType` | string | イベントをトリガーしたアクティビティの種類。 詳細については [、ポータル内スキーマリファレンス](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) を参照してください。 |
-| `Application` | 文字列 | 記録されたアクションを実行したアプリケーション |
-| `LogonType` | 文字列 | ログオン セッションの種類(具体的には次の場合):<br><br> - **対話型** - ユーザーがローカル キーボードと画面を使用してコンピューターと物理的に対話する<br><br> - **リモート 対話型 (RDP) ログオン** - ユーザーはリモート デスクトップ、ターミナル サービス、リモート アシスタンス、または他の RDP クライアントを使用してコンピューターをリモート操作します。<br><br> - **ネットワーク** - PsExec を使用してコンピューターにアクセスした場合、またはコンピューター上の共有リソース (プリンターや共有フォルダーなど) にアクセスするときに開始されるセッション<br><br> - **Batch** - スケジュールされたタスクによって開始されるセッション<br><br> - **サービス** - サービスが開始するセッション |
+| `Application` | string | 記録されたアクションを実行したアプリケーション |
+| `LogonType` | string | ログオン セッションの種類(具体的には次の場合):<br><br> - **対話型** - ユーザーがローカル キーボードと画面を使用してコンピューターと物理的に対話する<br><br> - **リモート 対話型 (RDP) ログオン** - ユーザーはリモート デスクトップ、ターミナル サービス、リモート アシスタンス、または他の RDP クライアントを使用してコンピューターをリモート操作します。<br><br> - **ネットワーク** - PsExec を使用してコンピューターにアクセスした場合、またはコンピューター上の共有リソース (プリンターや共有フォルダーなど) にアクセスするときに開始されるセッション<br><br> - **Batch** - スケジュールされたタスクによって開始されるセッション<br><br> - **サービス** - サービスが開始するセッション |
 | `Protocol` | string | 使用されるネットワーク プロトコル |
 | `FailureReason` | string | 記録されたアクションが失敗した理由を説明する情報 |
 | `AccountName` | string | アカウントのユーザー名 |
 | `AccountDomain` | string | アカウントのドメイン |
 | `AccountUpn` | string | アカウントのユーザー プリンシパル名 (UPN) |
-| `AccountSid` | 文字列 | アカウントのセキュリティ識別子 (SID) |
+| `AccountSid` | string | アカウントのセキュリティ識別子 (SID) |
 | `AccountObjectId` | string | Azure アカウントのアカウントの一意AD |
 | `AccountDisplayName` | string | アドレス帳に表示されるアカウント ユーザーの名前。 通常、指定または名、ミドル イニシエーション、姓または姓の組み合わせ。 |
-| `DeviceName` | 文字列 | デバイスの完全修飾ドメイン名 (FQDN) |
+| `DeviceName` | string | デバイスの完全修飾ドメイン名 (FQDN) |
 | `DeviceType` | string | デバイスの種類 |
-| `OSPlatform` | 文字列 | コンピューターで実行されているオペレーティング システムのプラットフォームです。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。 |
+| `OSPlatform` | string | コンピューターで実行されているオペレーティング システムのプラットフォームです。 これは、特定のオペレーティング システム (同じファミリ内のバリエーション (Windows 11、Windows 10、Windows 7 など) を示します。 |
 | `IPAddress` | string | エンドポイントに割り当て、関連するネットワーク通信中に使用される IP アドレス |
 | `Port` | string | 通信中に使用される TCP ポート |
 | `DestinationDeviceName` | string | 記録されたアクションを処理したサーバー アプリケーションを実行しているデバイスの名前 |
 | `DestinationIPAddress` | string | 記録されたアクションを処理したサーバー アプリケーションを実行しているデバイスの IP アドレス |
 | `DestinationPort` | string | 関連するネットワーク通信の宛先ポート |
 | `TargetDeviceName` | string | 記録されたアクションが適用されたデバイスの完全修飾ドメイン名 (FQDN) |
-| `TargetAccountDisplayName` | 文字列 | 記録されたアクションが適用されたアカウントの表示名 |
+| `TargetAccountDisplayName` | string | 記録されたアクションが適用されたアカウントの表示名 |
 | `Location` | string | イベントに関連付けられている都市、国、その他の地理的な場所 |
 | `Isp` | string | エンドポイント IP アドレスに関連付けられたインターネット サービス プロバイダー (ISP) |
 | `ReportId` | long | イベントの一意識別子 |

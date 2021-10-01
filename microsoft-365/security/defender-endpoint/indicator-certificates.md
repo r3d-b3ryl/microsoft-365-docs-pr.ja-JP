@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 264953bd84a0a167cb6283c64b9e6ecf2d28ba19
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b471bcfa1c4a42ddf5c49c2a0bc2129c99fd9297
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179319"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60043349"
 ---
 # <a name="create-indicators-based-on-certificates"></a>証明書に基づいてインジケーターを作成する
 
@@ -40,13 +40,13 @@ ms.locfileid: "59179319"
 - 攻撃表面の縮小ルールやフォルダー アクセスの制御[](attack-surface-reduction.md)など、ブロック テクノロジ[](controlled-folders.md)を展開する必要があるが、許可リストに証明書を追加して署名済みアプリケーションからの動作を許可する必要があるシナリオ。
 - 組織全体で特定の署名付きアプリケーションの使用をブロックする。 アプリケーションの証明書をブロックするインジケーターを作成すると、Windows Defender AV はファイルの実行 (ブロックと修復) を防止し、自動調査と修復は同じように動作します。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 証明書のインジケーターを作成する前に、次の要件を理解することが重要です。
 
 - この機能は、組織でクラウド ベースのWindows Defender ウイルス対策が有効になっている場合に使用できます。 詳細については、「クラウドベースの保護 [を管理する」を参照してください](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)。
 - マルウェア対策クライアントのバージョンは、4.18.1901.x 以降である必要があります。
-- サーバー 2016 および 2019 Windows 10バージョン 1703 以降のコンピューター Windowsサポートされています。
+- Windows 10 バージョン 1703 以降、Windows サーバー 2016、2019、および Windows Server 2022 のコンピューターでサポートされます。
 - ウイルスおよび脅威保護の定義は最新である必要があります。
 - この機能は現在、 の入力をサポートしています。CER または .PEM ファイル拡張子。
 

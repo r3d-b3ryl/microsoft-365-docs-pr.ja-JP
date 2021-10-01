@@ -20,12 +20,12 @@ ms.collection:
 description: 管理者は、セキュリティ設定を昇格し、組織の優先度アカウントに関するレポート、アラート、および調査をMicrosoft 365できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e2fc9c95389bd72ebea11dcfe808101a6ca5ab40
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 541e6f4008b7ea33a7d3395c9fd62522b3110086
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189060"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60043265"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>優先アカウントのセキュリティMicrosoft 365
 
@@ -129,7 +129,7 @@ Microsoft 365、組織内のユーザーに通知するための次のリソー�
 
 - 強力なパスワードの使用
 - デバイスの保護
-- デバイス PC および Mac pc Windows 10セキュリティ機能の有効化 (非管理対象デバイスの場合)
+- デバイス PC および Mac PC Windowsセキュリティ機能を有効にする (管理されていないデバイスの場合)
 
 ## <a name="see-also"></a>関連項目
 

@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 591a98e07f47717f0475c88584a161c93198c084
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6b4efbcb1a137faf6311ba1247405a389fdcbe4a
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218174"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042941"
 ---
 # <a name="review-architecture-requirements-and-key-concepts-for-microsoft-cloud-app-security"></a>アーキテクチャの要件と主要な概念を確認Microsoft Cloud App Security
 
@@ -58,7 +58,7 @@ Microsoft Cloud App Securityは、クラウド アクセス セキュリティ �
 ![クラウド検出Microsoft Cloud App Securityアーキテクチャ。](../../media/defender/m365-defender-mcas-architecture-b.png)
 
 この図では、ネットワーク トラフィックを監視し、組織で使用されているクラウド アプリを検出するために使用できる 2 つの方法があります。
-- A. クラウド アプリの検出は、Microsoft Defender for Endpoint とネイティブに統合されます。 Defender for Endpoint は、IT 管理デバイスからアクセスされるクラウド アプリとサービスWindows 10します。 
+- A. クラウド アプリの検出は、Microsoft Defender for Endpoint とネイティブに統合されます。 Defender for Endpoint は、11 台のデバイスから IT 管理されたアプリとサービスWindows 10レポートWindowsレポートします。 
 - B. ネットワークに接続されているすべてのデバイスでのカバレッジの場合、Cloud App Securityログ コレクターがファイアウォールや他のプロキシにインストールされ、エンドポイントからデータを収集します。 このデータは、分析のためにCloud App Security送信されます。
 
 #### <a name="managing-cloud-apps"></a>クラウド アプリの管理
@@ -128,7 +128,7 @@ Microsoft Cloud App Security は、この図の右側に焦点を当て、移動
 
 環境で使用されているクラウド アプリを検出するには、次の 1 つまたは両方を実行できます。
 
-- Microsoft Defender for Endpoint と統合することで、クラウド探索を迅速に実行できます。 このネイティブ統合により、ネットワークのオンとオフを切り替えて、Windows 10トラフィックのデータ収集をすぐに開始できます。
+- Microsoft Defender for Endpoint と統合することで、クラウド探索を迅速に実行できます。 このネイティブ統合を使用すると、ネットワークのオンとオフを切り替えて、Windows 11 および Windows 10デバイス間のクラウド トラフィックに関するデータの収集をすぐに開始できます。
 - ネットワークに接続されているすべてのデバイスがアクセスしているすべてのクラウド アプリを検出するには、ファイアウォールや他のプロキシに Cloud App Security ログ コレクターを展開します。 これにより、エンドポイントからデータが収集され、分析Cloud App Security送信されます。 Cloud App Security機能を強化するために、一部のサード パーティ製プロキシとネイティブに統合できます。
 
 これらのオプションは、手順 [2 に含まれています。評価環境を有効にする](eval-defender-mcas-enable-eval.md)。 

@@ -20,12 +20,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: c590812ccc975206c6c278794f943f7e16c8bdd1
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: e58d98f059dc723b06a65bfad36d6e72807e2f63
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400824"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042917"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>ブロック モードのエンドポイントでの検出と対応 (EDR)
 
@@ -80,7 +80,7 @@ EDRモードのデータは、脅威の検出[と統合& 脆弱性の管理。](
 |要件|詳細|
 |---|---|
 |アクセス許可|[グローバル管理者] または [セキュリティ管理者] ロールが [管理者] に割り当てられている必要[Azure Active Directory。](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal) 詳細については、「基本アクセス許可 [」を参照してください](basic-permissions.md)。|
-|オペレーティング システム|デバイスは、次のいずれかのバージョンのデバイスを実行している必要Windows。 <ul><li>Windows 10 (すべてのリリース)</li><li>Windows Server バージョン 1803 以降</li><li>Windows Server 2019</li><li>Windows Server 2016 (Microsoft Defender ウイルス対策モードの場合のみ)</li></ul>|
+|オペレーティング システム|デバイスは、次のいずれかのバージョンのデバイスを実行している必要Windows。 <ul><li>Windows 10 (すべてのリリース)</li><li>Windows Server バージョン 1803 以降</li><li>Windows Server 2019</li><li>Windows Server 2022</li><li>Windows Server 2016 (Microsoft Defender ウイルス対策モードの場合のみ)</li></ul>|
 |Microsoft Defender for Endpoint|デバイスは Defender for Endpoint にオンボードされている必要があります。 「 [エンドポイント用 Microsoft Defender の最小要件」を参照してください](minimum-requirements.md)。|
 |Microsoft Defender ウイルス対策|デバイスには、アクティブ Microsoft Defender ウイルス対策パッシブ モードでインストールおよび実行されている必要があります。 [アクティブMicrosoft Defender ウイルス対策パッシブ モードの状態を確認します](#how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode)。|
 |クラウドによる保護|Microsoft Defender ウイルス対策保護を有効にするように[構成する必要があります](enable-cloud-protection-microsoft-defender-antivirus.md)。|
@@ -113,7 +113,7 @@ EDRモードの場合、ユーザーのデバイスで実行されているサ�
 
 ### <a name="what-is-the-difference-between-active-and-passive-mode"></a>アクティブ モードとパッシブ モードの違いは何ですか?
 
-Windows 10、Windows Server、バージョン 1803 以降、または Windows Server 2019 を実行しているエンドポイントでは、Microsoft Defender ウイルス対策 がアクティブ モードの場合、デバイス上のプライマリ ウイルス対策として使用されます。 パッシブ モードで実行する場合、Microsoft Defender ウイルス対策ウイルス対策製品ではありません。 この場合、脅威はリアルタイムでMicrosoft Defender ウイルス対策修復されるのではありません。
+Windows 10、Windows Server、バージョン 1803 以降、Windows Server 2019、または Windows Server 2022 を実行しているエンドポイントでは、Microsoft Defender ウイルス対策 がアクティブ モードの場合、デバイス上のプライマリ ウイルス対策として使用されます。 パッシブ モードで実行する場合、Microsoft Defender ウイルス対策ウイルス対策製品ではありません。 この場合、脅威はリアルタイムでMicrosoft Defender ウイルス対策修復されるのではありません。
 
 > [!NOTE]
 > Microsoft Defender ウイルス対策は、デバイスが Microsoft Defender for Endpoint にオンボードされている場合にのみパッシブ モードで実行できます。
@@ -126,10 +126,10 @@ Windows 10、Windows Server、バージョン 1803 以降、または Windows Se
 
 <br/><br/>
 
-|メソッド|Procedure|
+|Method|Procedure|
 |---|---|
-|PowerShell|<ol><li>選択したスタート メニュー入力を開始し、結果 `PowerShell` でWindows PowerShellを開きます。</li><li>種類 `Get-MpComputerStatus`。</li><li>結果の一覧の **[AMRunningMode]** 行で、次のいずれかの値を探します。<ul><li>`Normal`</li><li>`Passive Mode`</li></ul></li></ol> <p> 詳細については [、「Get-MpComputerStatus」を参照してください](/powershell/module/defender/get-mpcomputerstatus)。|
-|コマンド プロンプト|<ol><li>コマンド プロンプトをスタート メニューし、入力を開始し、結果 `Command Prompt` Windowsコマンド プロンプトを開きます。</li><li>種類 `sc query windefend`。</li><li>結果の一覧の STATE **行で、** サービスが実行されているのを確認します。</li></ol>|
+|PowerShell|<ol><li>選択したスタート メニュー入力を開始し、結果 `PowerShell` でWindows PowerShellを開きます。</li><li>種類`Get-MpComputerStatus`</li><li>結果の一覧の **[AMRunningMode]** 行で、次のいずれかの値を探します。<ul><li>`Normal`</li><li>`Passive Mode`</li></ul></li></ol> <p> 詳細については [、「Get-MpComputerStatus」を参照してください](/powershell/module/defender/get-mpcomputerstatus)。|
+|コマンド プロンプト|<ol><li>コマンド プロンプトをスタート メニューし、入力を開始し、結果 `Command Prompt` Windowsコマンド プロンプトを開きます。</li><li>種類`sc query windefend`</li><li>結果の一覧の STATE **行で、** サービスが実行されているのを確認します。</li></ol>|
 
 ### <a name="how-do-i-confirm-that-edr-in-block-mode-is-turned-on-with-microsoft-defender-antivirus-in-passive-mode"></a>パッシブ モードでブロック モードEDRがオンになっていることを確認するには、Microsoft Defender ウイルス対策確認する方法を示します。
 
@@ -137,7 +137,7 @@ PowerShell を使用して、パッシブ モードでEDRでブロック モー�
 
 1. 選択したスタート メニュー入力を開始し、結果 `PowerShell` でWindows PowerShellを開きます。
 
-2. 種類 `Get-MPComputerStatus|select AMRunningMode`。
+2. 種類`Get-MPComputerStatus|select AMRunningMode`
 
 3. 結果が表示 `EDR Block Mode` されます。
 
@@ -151,6 +151,7 @@ PowerShell を使用して、パッシブ モードでEDRでブロック モー�
 - Windows 10 (すべてのリリース)
 - Windows Server バージョン 1803 以降
 - Windows Server 2019
+- Windows Server 2022
 
 #### <a name="what-about-windows-server-2016"></a>何をWindows Server 2016?
 

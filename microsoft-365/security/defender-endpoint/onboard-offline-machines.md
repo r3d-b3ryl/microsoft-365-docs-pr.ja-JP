@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c271aeac44e6590a4273fa9650c101a039225003
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: eb74f3fab320364c1311efa1a629e43eb90a1aae
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59353677"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042760"
 ---
 # <a name="onboard-devices-without-internet-access-to-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint へのインターネット アクセスのないオンボード デバイス
 
@@ -42,9 +42,9 @@ ms.locfileid: "59353677"
 > 以下の手順は、以前のバージョンのデバイス (Windows以前または以前のバージョンWindows Server 2016デバイスWindows 8.1適用されます。
 
 > [!NOTE]
-> - 「TelemetryProxyServer」レジストリまたは GPO を使用して構成されている場合、接続されていない Windows 10 または Windows Server 2019 デバイスのプロキシとして OMS ゲートウェイ サーバーを使用することはできません。
-> - サーバー 2019 Windows 10またはWindowsサーバー 2019 では、TelemetryProxyServer を使用する場合は、標準のプロキシ デバイスまたはアプライアンスを指している必要があります。
-> - さらに、接続Windows 10環境Windowsサーバー 2019 の証明書信頼リストを、内部ファイルまたは Web サーバーを介してオフラインで更新できる必要があります。
+> - OMS ゲートウェイ サーバーは、Windows 10 または Windows Server 2019、または Windows Server 2022 デバイスが 'TelemetryProxyServer' レジストリまたは GPO を介して構成されている場合、プロキシとして使用できません。
+> - Windows 10または Windows Server 2019、または Windows Server 2022 の場合は、TelemetryProxyServer を使用する場合は、標準のプロキシ デバイスまたはアプライアンスをポイントする必要があります。
+> - さらに、Windows 10 または Windows Server 2019、または切断された環境の Windows Server 2022 は、内部ファイルまたは Web サーバーを介して証明書信頼リストをオフラインで更新できる必要があります。
 > - オフラインでの CTL の更新の詳細については、「CTL ファイルをダウンロードするファイルまたは Web サーバーを構成する [」を参照してください](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn265983(v=ws.11)#configure-a-file-or-web-server-to-download-the-ctl-files)。
 
 オンボーディング方法の詳細については、次の記事を参照してください。

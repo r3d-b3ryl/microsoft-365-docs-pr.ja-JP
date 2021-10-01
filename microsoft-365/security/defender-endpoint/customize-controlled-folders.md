@@ -16,12 +16,12 @@ ms.date: 05/10/2021
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: d0cefdd90eed741a5f7c251e8cc524c3f9f5166d
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 77df84645785da8944a47d0fb9501c95a5842969
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491399"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60041662"
 ---
 # <a name="customize-controlled-folder-access"></a>制御されたフォルダー アクセスをカスタマイズする
 
@@ -32,7 +32,7 @@ ms.locfileid: "59491399"
 > [!TIP]
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-フォルダー アクセスの制御により、悪意のあるアプリやランサムウェアなどの脅威から貴重なデータを保護できます。 フォルダー アクセスの制御は、サーバー 2019 WindowsクライアントでWindows 10されます。 この記事では、フォルダー アクセスの制御機能をカスタマイズする方法について説明し、次のセクションを示します。
+フォルダー アクセスの制御により、悪意のあるアプリやランサムウェアなどの脅威から貴重なデータを保護できます。 フォルダー アクセスの制御は、サーバー 2019、Windows Server 2022、WindowsクライアントでWindows 10されます。 この記事では、フォルダー アクセスの制御機能をカスタマイズする方法について説明し、次のセクションを示します。
 
 - [追加のフォルダーを保護する](#protect-additional-folders)
 - [保護されたフォルダーへのアクセスを許可する必要がありますアプリを追加する](#allow-specific-apps-to-make-changes-to-controlled-folders)

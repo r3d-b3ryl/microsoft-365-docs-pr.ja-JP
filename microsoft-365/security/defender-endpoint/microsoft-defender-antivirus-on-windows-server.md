@@ -1,6 +1,6 @@
 ---
 title: Windows Server 上の Microsoft Defender ウイルス対策
-description: Windows Server 2016 および Windows Server 2019 上のMicrosoft Defender ウイルス対策を有効にして構成する方法について説明します。
+description: サーバー 2019、Microsoft Defender ウイルス対策サーバー 2019、Windows Server 2016 Windowsサーバー 2022 Windows構成する方法について学習します。
 keywords: Windows Defender、サーバー、scep、System Center Endpoint 保護、Server 2016、Current Branch、Server 2012
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -16,12 +16,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 08/05/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: d7f5921e3c292d453f91ba802d036293260d478a
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: ae209a9b3442d1bb5744c7f8255ae9ddf041a321
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491017"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60043193"
 ---
 # <a name="microsoft-defender-antivirus-on-windows-server"></a>Windows Server 上の Microsoft Defender ウイルス対策
 
@@ -34,6 +34,7 @@ ms.locfileid: "59491017"
 Microsoft Defender ウイルス対策は、次のエディション/バージョンの Windows Server で利用できます。
 
 - Windows Server 2019
+- Windows Server 2022
 - Windows Server バージョン 1803 以降
 - Windows Server 2016。
 
@@ -71,7 +72,7 @@ GUI がサーバーにインストールされておらず、インストール�
 
    ![[ユーザー設定] オプションの GUI を示す役割とWindows Defender追加します。](images/server-add-gui.png)
 
-   Windows Server 2019 でも、**役割と機能の追加ウィザード** は同じようになります。
+   サーバー 2019 Windowsサーバー 2022 Windows役割と機能の追加 **ウィザードは** 似ています。
 
 ### <a name="turn-on-the-gui-using-powershell"></a>PowerShell を使用して GUI を有効にする
 
@@ -127,7 +128,7 @@ sc query Windefend
 
 更新されたマルウェア対策セキュリティ インテリジェンスを取得するには、Windows Update サービスを実装する必要があります。 Windows Server Update Services (WSUS) などの更新管理サービスを使用する場合は、Microsoft Defender ウイルス対策 セキュリティ インテリジェンスへの更新プログラムが管理するコンピューターに対して承認されていることを確認します。
 
-既定では Windows Update で Windows Server 2019 または Windows Server 2016 への更新プログラムを自動的にダウンロードしてインストールすることはできません。 この構成を変更するには、以下のいずれかの方法を使用します。
+既定では、Windows 更新プログラムは、Windows Server 2019 または Windows Server 2022、または Windows Server 2016 に更新プログラムを自動的にダウンロードおよびインストールWindows Server 2016。 この構成を変更するには、以下のいずれかの方法を使用します。
 
 <br/><br/>
 
@@ -175,7 +176,7 @@ sc query Windefend
 
 |Setting|説明|
 |---|---|
-|**0** - **常にプロンプトを表示する**|Microsoft Defender ウイルス対策 サービスで、必要なすべてのファイルの送信を確認するプロンプトが表示されます。 これは Microsoft Defender ウイルス対策の既定の設定ですが、GUI を使用せずに Windows Server 2016 または Windows Server 2019 にインストールすることはお勧めしません。|
+|**0** - **常にプロンプトを表示する**|Microsoft Defender ウイルス対策 サービスで、必要なすべてのファイルの送信を確認するプロンプトが表示されます。 これは Microsoft Defender ウイルス対策 の既定の設定ですが、Windows Server 2016 または 2019、または Windows Server 2022 のインストールでは GUI を使用しない場合は推奨されません。|
 |**1**  - **安全なサンプルを自動的に送信する**|Microsoft Defender ウイルス対策 サービスで "安全" とマークされたすべてのファイルが送信され、その他のファイルにはプロンプトが表示されます。|
 |**2** - **送信しない**|Microsoft Defender ウイルス対策 サービスではプロンプトが表示されず、すべてのファイルが送信されません。|
 |**3** - **すべてのサンプルを自動的に送信する**|Microsoft Defender ウイルス対策 サービスでは確認を行うプロンプトが表示されず、すべてのファイルが送信されます。|
@@ -183,7 +184,7 @@ sc query Windefend
 
 ## <a name="configure-automatic-exclusions"></a>自動除外を構成する
 
-セキュリティとパフォーマンスを確保できるように、Windows Server 2016 または Windows Server 2019 での Microsoft Defender ウイルス対策使用時に、インストールする役割と機能に基づいて特定の除外が自動的に追加されます。
+セキュリティとパフォーマンスを確保するために、Microsoft Defender ウイルス対策 on Windows Server 2016 または 2019、または Windows Server 2022 を使用するときにインストールする役割と機能に基づいて、特定の除外が自動的に追加されます。
 
 詳細については、「[Windows Server 上の Microsoft Defender ウイルス対策で除外を構成する](configure-server-exclusions-microsoft-defender-antivirus.md)」を参照してください。
 
@@ -191,7 +192,7 @@ sc query Windefend
 
 Windows Server 上のプライマリ ウイルス対策ソリューションとして Microsoft 以外のウイルス対策製品を使用している場合は、Microsoft Defender ウイルス対策をパッシブ モードまたは無効モードに設定する必要があります。
 
-- バージョン 1803 以降の Windows Server、または Windows Server 2019 では、Microsoft Defender ウイルス対策をパッシブ モードに設定してください。 次のセクションを参照してください。
+- Windows サーバー、バージョン 1803 以降、または Windows Server 2019、または Windows Server 2022 では、Microsoft Defender ウイルス対策 をパッシブ モードに設定できます。 次のセクションを参照してください。
   - [レジストリ キーを使用して Microsoft Defender ウイルス対策をパッシブ モードに設定する](#set-microsoft-defender-antivirus-to-passive-mode-using-a-registry-key)
   - [役割と機能の削除ウィザードを使用して Microsoft Defender ウイルス対策を無効にする](#disable-microsoft-defender-antivirus-using-the-remove-roles-and-features-wizard)
   - [PowerShell を使用して Microsoft Defender ウイルス対策ユーザー インターフェイスをオフにする](#turn-off-the-microsoft-defender-antivirus-user-interface-using-powershell)
@@ -200,7 +201,7 @@ Windows Server 上のプライマリ ウイルス対策ソリューションと�
 
 ### <a name="set-microsoft-defender-antivirus-to-passive-mode-using-a-registry-key"></a>レジストリ キーを使用して Microsoft Defender ウイルス対策をパッシブ モードに設定する
 
-バージョン 1803 の Windows Server、または Windows Server 2019 では、次のレジストリ キーを使用して Microsoft Defender ウイルス対策をパッシブ モードに設定できます。
+Windows Server、バージョン 1803、Windows Server 2019、または Windows Server 2022 を使用している場合は、次のレジストリ キーを設定して、Microsoft Defender ウイルス対策 をパッシブ モードに設定できます。
 
 - パス: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
 - 名前: `ForceDefenderPassiveMode`

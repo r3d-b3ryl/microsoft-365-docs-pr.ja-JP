@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 06/02/2021
 ms.collection: m365-security-compliance
-ms.openlocfilehash: aec229a8286113b78b39f8aad330ca3545bc92a6
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 230e70000e4561c7b88bcedb7bab143b03b95b49
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59490849"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042892"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>望ましくない可能性のあるアプリケーションを検出してブロックする
 
@@ -42,7 +42,7 @@ ms.locfileid: "59490849"
 > [!TIP]
 > セキュリティ機能から特別な注意を払うアプリケーションにラベルを付けるために使用するその他の例と基準の説明については、「[Microsoft がマルウェアと望ましくない可能性のあるアプリケーションを識別する方法](/windows/security/threat-protection/intelligence/criteria)」を参照してください。
 
-望ましくない可能性のあるアプリケーションは、ネットワークが実際のマルウェアに感染するリスクを高めたり、マルウェア感染の特定を困難にしたり、IT リソースを浪費してそれらをクリーンアップしたりする可能性があります。 PUA 保護は、Windows 10、Windows Server 2019、および Windows Server 2016 でサポートされています。 Windows 10 (バージョン 2004 以降) では、Microsoft Defender ウイルス対策は、既定で Enterprise (E5) デバイスの PUA と見なされるアプリをブロックします。
+望ましくない可能性のあるアプリケーションは、ネットワークが実際のマルウェアに感染するリスクを高めたり、マルウェア感染の特定を困難にしたり、IT リソースを浪費してそれらをクリーンアップしたりする可能性があります。 PUA 保護は、Windows 10、Windows Server 2019、Windows Server 2022 および Windows Server 2016 でサポートされています。 Windows 10 (バージョン 2004 以降) では、Microsoft Defender ウイルス対策は、既定で Enterprise (E5) デバイスの PUA と見なされるアプリをブロックします。
 
 ## <a name="microsoft-edge"></a>Microsoft Edge
 
@@ -74,7 +74,7 @@ Microsoft Defender for Endpoint には、Microsoft が管理するデータ セ�
 Microsoft Defender ウイルス対策の望ましくない可能性のあるアプリケーション (PUA) 保護機能は、ネットワーク内のエンドポイント上の PUA を検出してブロックできます。
 
 > [!NOTE]
-> この機能は、Windows 10、Windows Server 2019、および Windows Server 2016 で使用できます。
+> この機能は、Windows 10、Windows Server 2019、Windows Server 2022 および Windows Server 2016 で使用できます。
 
 Windows Defender ウイルス対策は、検出された PUA ファイルと、それらのダウンロード、移動、実行、またはインストールの試行をブロックします。 ブロックされた PUA ファイルは、検疫に移動されます。 エンドポイントで PUA ファイルが検出されると、Microsoft Defender ウイルス対策は、他の脅威の検出と同じ形式でユーザーに通知を送信します ([通知が無効になっていない場合](configure-notifications-microsoft-defender-antivirus.md))。 通知の前には、その内容を示す `PUA:` が付いています。
 
@@ -122,7 +122,7 @@ System Center 2012 Configuration Manager については、「[Configuration Man
 
 7. PUA 保護を有効にするには、**[有効]** を選択します。
 
-8. **[オプション]** で、**[ブロック]** を選択して望ましくない可能性のあるアプリケーションをブロックするか、**[監査モード]** を選択して環境で設定がどのように機能するかをテストします。 **[OK]** を選択します。
+8. **[オプション]** で、**[ブロック]** を選択して望ましくない可能性のあるアプリケーションをブロックするか、**[監査モード]** を選択して環境で設定がどのように機能するかをテストします。**[OK]** を選択します。
 
 9. 通常どおりにグループ ポリシー オブジェクトを展開します。
 
@@ -183,7 +183,7 @@ Microsoft Defender ウイルス対策イベントの表示の詳細について�
 
 ## <a name="view-pua-events-using-advanced-hunting"></a>高度な追求を使用して PUA イベントを表示する
 
-[Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) を使用している場合は、高度な追求クエリを使用して PUA イベントを表示できます。 クエリの例を次に示します:
+[Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) をお使いの場合は、高度な追求クエリを使用して PUA イベントを表示できます。ここにクエリ例を示します:
 
 ```console
 DeviceEvents

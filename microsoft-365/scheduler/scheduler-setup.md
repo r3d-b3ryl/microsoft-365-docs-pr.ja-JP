@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: scheduler
 localization_priority: Normal
 description: スケジューラの設定 Microsoft 365。
-ms.openlocfilehash: 01e574fd2f4cd766b3347c6fa56149f6bcd600d5
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: bebb2befa6a24f8913b70aa77ca66ef7e664e9d2
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988825"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042568"
 ---
 # <a name="setting-up-scheduler-for-microsoft-365"></a>Scheduler for Microsoft 365 を設定する
 
@@ -51,7 +51,7 @@ ms.locfileid: "59988825"
 メールボックスのプライマリ SMTP Cortanaの名前を使用します。 などの名前 `Cortana@yourdomain.com` `CortanaScheduler@contoso.com` 、、または `Cortana.Scheduler@yourdomain.com` 推奨される名前。
 
 ```PowerShell
-$domain="yourdomain.com  "
+$domain="yourdomain.com"
 $tenantAdmin="<tenantadmin>@$domain"
 Import-Module ExchangeOnlineManagement
 Connect-ExchangeOnline -UserPrincipalName $tenantAdmin
@@ -80,7 +80,7 @@ Cortana スケジューラ アシスタント メールボックスでこの "se
 スケジューラ アシスタント メールボックスが作成されたを確認するには
 
 ```PowerShell
-Get-CalendarProcessing cortana$domain | fl DeleteNonCalendarItems
+Get-CalendarProcessing cortana@$domain | fl DeleteNonCalendarItems
 ```
 
 結果は "false" である必要があります。
@@ -88,7 +88,7 @@ Get-CalendarProcessing cortana$domain | fl DeleteNonCalendarItems
 <br>
 
 ```PowerShell
-Get-Mailbox -Identity cortana$domain | fl *type*
+Get-Mailbox -Identity cortana@$domain | fl *type*
 ```
 
 結果は次の値になります。

@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ad24bc74eeaee8dd67009db6cfeb25e602c0c269
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ab3405022dac71843ecd4e8b630d3738fe69fcaa
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213573"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60043085"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender for Endpoint on Mac
 
@@ -87,7 +87,7 @@ macOS の最新の 3 つのメジャー リリースがサポートされてい�
 
 macOS のベータ版はサポートされていません。
 
-M1 チップ ベースのプロセッサを搭載した macOS デバイスのサポートは、現在プレビュー中です。
+M1 チップ ベースのプロセッサを搭載した macOS デバイスのサポートは、エージェントのバージョン 101.40.84 以降正式にサポートされています。
 
 サービスを有効にした後、ネットワークまたはファイアウォールを構成して、ネットワークとエンドポイント間の送信接続を許可する必要がある場合があります。
 

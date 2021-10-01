@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 99a07b1517058b0e5ab241aaae9c6899e2994432
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 88d91e2434871014cf286bbb27812e60036cb5cb
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164751"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042724"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -47,12 +47,12 @@ ms.locfileid: "59164751"
 | `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
 | `DeviceId` | string | コンピューターの一意識別子 |
 | `DeviceName` | string | コンピューターの完全修飾ドメイン名 (FQDN) |
-| `ClientVersion` | 文字列 | コンピューターで実行されているエンドポイント エージェントまたはセンサーのバージョン |
+| `ClientVersion` | string | コンピューターで実行されているエンドポイント エージェントまたはセンサーのバージョン |
 | `PublicIP` | string | オンボード コンピューターが Microsoft Defender for Endpoint サービスに接続するために使用するパブリック IP アドレス。 これは、コンピューター自体の IP アドレス、NAT デバイス、またはプロキシである可能性があります。 |
 | `OSArchitecture` | string | コンピューターで実行されているオペレーティング システムのアーキテクチャです。 |
-| `OSPlatform` | string | コンピューターで実行されているオペレーティング システムのプラットフォームです。 これは、特定のオペレーティング システム (同じファミリ内のバリエーション (Windows 10および Windows 7 など) を示します。 |
+| `OSPlatform` | string | コンピューターで実行されているオペレーティング システムのプラットフォームです。 これは、特定のオペレーティング システム (同じファミリ内のバリエーション (Windows 11、Windows 10、Windows 7 など) を示します。 |
 | `OSBuild` | string | コンピューターで実行されているオペレーティング システムのバージョンをビルドする |
-| `IsAzureADJoined` | boolean | コンピューターがコンピューターに参加しているかどうかを示すブールAzure Active Directory |
+| `IsAzureADJoined` | ブール値 | コンピューターがコンピューターに参加しているかどうかを示すブールAzure Active Directory |
 | `AadObjectId` | string | Azure のデバイスの一意の識別子AD |
 | `LoggedOnUsers` | string | JSON 配列形式のイベント時にコンピューターにログオンしているすべてのユーザーの一覧 |
 | `RegistryDeviceTag` | string | レジストリを介して追加されたコンピューター タグ |
@@ -67,7 +67,7 @@ ms.locfileid: "59164751"
 |`Model` | string | ベンダーまたは製造元の製品のモデル名または番号 |
 |`Vendor` | string | 製品ベンダーまたは製造元の名前 |
 |`OSDistribution` | string | Linux プラットフォーム用の Ubuntu や RedHat などの OS プラットフォームの配布 |
-|`OSVersionInfo` | 文字列 | OS バージョンに関する追加情報 (一般的な名前、コード名、バージョン番号など) |
+|`OSVersionInfo` | string | OS バージョンに関する追加情報 (一般的な名前、コード名、バージョン番号など) |
 |`MergedDeviceIds` | string | 同じデバイスに割り当てられている以前のデバイス ID |
 |`MergedToDeviceId` | string | デバイスに割り当てられた最新のデバイス ID |
 

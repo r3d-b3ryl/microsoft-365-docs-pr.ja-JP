@@ -18,12 +18,12 @@ manager: dansimp
 ms.technology: mde
 ms.date: 09/08/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 5745e5ee7604636b3ae3595ba907e055b86cc012
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 173fd730edfb2fe0ca535a45da07abfea50d5f4d
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491339"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60043325"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>更新Microsoft Defender ウイルス対策を管理し、基準計画を適用する
 
@@ -536,7 +536,7 @@ Microsoft Defender ウイルス対策プラットフォーム更新 [プログ�
 
 ## <a name="updates-for-deployment-image-servicing-and-management-dism"></a>展開イメージのサービスと管理 (DISM) の更新プログラム
 
-Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 2019、Windows Server 2016 OS インストール イメージを最新のウイルス対策およびマルウェア対策更新プログラムで更新することをお勧めします。 OS のインストール イメージを最新の状態に保つことは、保護のギャップを回避するのに役立ちます。
+Windows 10 (Enterprise、Pro、およびホーム エディション)、Windows Server 2019、Windows Server 2022、Windows Server 2016 OS インストール イメージを最新のウイルス対策およびマルウェア対策更新プログラムで更新することをお勧めします。 OS のインストール イメージを最新の状態に保つことは、保護のギャップを回避するのに役立ちます。
 
 詳細については、「Microsoft Defender update for Windows オペレーティング システムのインストール[イメージ」を参照してください](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)。
 
@@ -728,7 +728,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 
 | 記事 | 説明  |
 |:---|:---|
-|[Microsoft Defender のオペレーティング システムインストール イメージWindows更新プログラム](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)  | OS インストール イメージ (WIM ファイルと VHD ファイル) のマルウェア対策更新プログラム パッケージを確認します。 Microsoft Defender ウイルス対策 (Enterprise Windows 10、Pro、およびホーム エディション)、Windows Server 2019、およびインストール イメージWindows Server 2016更新プログラムを取得します。  |
+|[Microsoft Defender のオペレーティング システムインストール イメージWindows更新プログラム](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)  | OS インストール イメージ (WIM ファイルと VHD ファイル) のマルウェア対策更新プログラム パッケージを確認します。 Windows 10 Microsoft Defender ウイルス対策 (Enterprise、Pro、およびホーム エディション)、Windows Server 2019、Windows Server 2022、および Windows Server 2016 インストール イメージの更新プログラムを取得します。  |
 |[保護更新プログラムのダウンロードと適用方法を管理する](manage-protection-updates-microsoft-defender-antivirus.md) | 保護更新プログラムは、多くのソースを介して配信できます。 |
 |[保護更新プログラムをダウンロードして適用する場合の管理](manage-protection-update-schedule-microsoft-defender-antivirus.md) | 保護更新プログラムをダウンロードするスケジュールを設定できます。 |
 |[最新のエンドポイントの更新プログラムを管理する](manage-outdated-endpoints-microsoft-defender-antivirus.md) | エンドポイントが更新またはスケジュールされたスキャンを見逃した場合は、ユーザーが次回サインインする場合に、強制的に更新またはスキャンを実行できます。 |

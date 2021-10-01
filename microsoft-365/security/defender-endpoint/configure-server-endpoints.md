@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ee6241e6db062730446505e2bcbc377b15ffee9c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 49c307bc2a68ae750e7ac9c54fd52b3b2b5f45ad
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179360"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60043205"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Microsoft Defender Windowsエンドポイント サービスへのオンボード サーバー
 
@@ -71,7 +71,7 @@ System Center Operations Manager (SCOM) または Azure Monitor (旧称:Operatio
   4. クライアントの構成と更新System Center Endpoint Protectionします。
 
 
-#### <a name="before-you-begin"></a>始める前に
+#### <a name="before-you-begin"></a>はじめに
 
 オンボーディング要件を満たすために、次の手順を実行します。
 
@@ -140,9 +140,9 @@ R2 と Windows Server 2012バージョン 2002 以降Windows Server 2016使用Mi
 
 オンボーディングの手順を完了した後、クライアントの構成と[更新System Center Endpoint Protection必要があります](#configure-and-update-system-center-endpoint-protection-clients)。
 
-## <a name="windows-server-sac-version-1803-windows-server-2019-and-windows-server-2019-core-edition"></a>Windowsサーバー (SAC) バージョン 1803、Windows Server 2019、Windows Server 2019 Core Edition
+## <a name="windows-server-sac-version-1803-windows-server-2019-windows-server-2022-and-windows-server-2019-core-edition"></a>Windowsサーバー (SAC) バージョン 1803、Windows Server 2019、Windows Server 2022、Windows Server 2019 Core Edition
 
-次の展開方法を使用して、Windows Server (SAC) バージョン 1803、Windows Server 2019、または Windows Server 2019 Core Edition をオンボードできます。
+Windows Server (SAC) バージョン 1803 または Windows Server 2019、Windows Server 2022、または Windows Server 2019 Core Edition をオンボードするには、次の展開方法を使用します。
 
 - [ローカル スクリプト](configure-endpoints-script.md)
 - [グループ ポリシー](configure-endpoints-gp.md)
@@ -152,7 +152,7 @@ R2 と Windows Server 2012バージョン 2002 以降Windows Server 2016使用Mi
 
 > [!NOTE]
 >
-> - 現在、スクリプトがWindowsサーバー 2019 Microsoft エンドポイント マネージャーオンボーディング パッケージ。 Configuration Manager でスクリプトを展開する方法の詳細については、「Configuration Manager の [パッケージとプログラム」を参照してください](/configmgr/apps/deploy-use/packages-and-programs)。
+> - 現在、Windows Server 2019 および Windows Server 2022 Microsoft エンドポイント マネージャーオンボード パッケージがスクリプトを出荷しています。 Configuration Manager でスクリプトを展開する方法の詳細については、「Configuration Manager の [パッケージとプログラム」を参照してください](/configmgr/apps/deploy-use/packages-and-programs)。
 > - ローカル スクリプトは概念実証に適していますが、実稼働展開には使用できません。 実稼働展開の場合は、グループ ポリシーまたはグループ ポリシーを使用Microsoft Endpoint Configuration Manager。
 
 サーバーのWindowsは、サーバーアクティビティ、カーネル攻撃とメモリ攻撃検出の範囲に関するより深い洞察を提供し、応答アクションを有効にします。
@@ -196,7 +196,7 @@ Defender for Endpoint は、Azure Defender と統合して、包括的なサー�
 - 自動オンボーディング - Defender for Endpoint センサーは、Azure Defender にオンボードWindowsサーバーで自動的に有効になります。 Azure Defender オンボーディングの詳細については、「統合 Microsoft Defender for Endpoint ライセンスを使用する [」を参照してください](/azure/security-center/security-center-wdatp)。
 
     > [!NOTE]
-    > Azure Defender for Servers と Microsoft Defender for Endpoint の統合は[、Windows Server 2019 と Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)をサポートするように拡張されました。
+    > Azure Defender for Servers と Microsoft Defender for Endpoint の統合は、Windows Server 2022、Windows [Server 2019、および Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)をサポートするように拡張されました。
 
 - Windows監視されるサーバーは、Defender for Endpoint でも利用できます 。 Azure Defender は Defender for Endpoint テナントにシームレスに接続し、クライアントとサーバー間で 1 つのビューを提供します。 さらに、Defender for Endpoint アラートは Azure Defender コンソールで利用できます。
 
@@ -227,7 +227,7 @@ Defender for Endpoint は、エンドポイントとSystem Center Endpoint Prote
 
 ## <a name="offboard-windows-servers"></a>オフボード Windows サーバー
 
-Windows クライアント デバイスで使用できるのと同じ方法で、Windows サーバー (SAC)、Windows Server 2019、および Windows Server 2019 Core edition をオフボードWindows 10できます。
+Windows Server (SAC)、Windows Server 2019、Windows Server 2022、Windows Server 2019 Core Edition は、Windows 10 クライアント デバイスで使用できるのと同じ方法で実行できます。
 
 - [グループ ポリシーを使用したオフボード](configure-endpoints-gp.md#offboard-devices-using-group-policy)
 - [Configuration Manager を使用したオフボード デバイス](configure-endpoints-sccm.md#offboard-devices-using-configuration-manager)

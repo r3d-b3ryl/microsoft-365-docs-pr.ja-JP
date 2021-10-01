@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 09785d48d2ad5efb2d33559d0580c5a0ff63c768
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e4c3f6d96c1b161274c1ae00c8e372e1f93bcdb7
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220023"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60043049"
 ---
 # <a name="enable-microsoft-defender-for-endpoint-evaluation-environment"></a>エンドポイント評価環境で Microsoft Defender を有効にする
 
@@ -64,7 +64,7 @@ Microsoft Defender for Endpoint の評価を有効にするには、次の手順
 
 ライセンス状態が適切にプロビジョニングされていることを確認した後、サービスへのデバイスのオンボーディングを開始できます。 
 
-Microsoft Defender for Endpoint の評価を行う目的で、評価を行う 2 Windows 10デバイスを選択することをお勧めします。
+Microsoft Defender for Endpoint の評価を行う目的で、評価を実行する 2 Windows デバイスを選択することをお勧めします。
 
 サポートされている管理ツールを使用することもできますが、Intune は最適な統合を提供します。 詳細については、「Configure [Microsoft Defender for Endpoint in Microsoft Intune」を参照してください](/mem/intune/protect/advanced-threat-protection-configure#enable-microsoft-defender-for-endpoint-in-intune)。
 
@@ -78,7 +78,7 @@ Microsoft Defender for Endpoint の評価を行う目的で、評価を行う 2 
 
 次の表に、オンボードする必要があるエンドポイントに基づいて使用可能なツールを示します。
 
-Endpoint | ツール オプション
+エンドポイント | ツール オプション
 :---|:---
 **Windows** | [ローカル スクリプト (最大 10](../defender-endpoint/configure-endpoints-script.md)台のデバイス) [、](../defender-endpoint/configure-endpoints-gp.md)グループ ポリシー 、 [Microsoft エンドポイント マネージャー/](../defender-endpoint/configure-endpoints-mdm.md)Mobile Device Manager [、](../defender-endpoint/configure-endpoints-sccm.md)Microsoft Endpoint Configuration Manager 、 [VDI スクリプト](../defender-endpoint/configure-endpoints-vdi.md)、 Azure Defender との[統合](../defender-endpoint/configure-server-endpoints.md#integration-with-azure-defender)
 **macOS** | [ローカル スクリプト](../defender-endpoint/mac-install-manually.md)、 [Microsoft エンドポイント マネージャー](../defender-endpoint/mac-install-with-intune.md)、 [JAMF Pro](../defender-endpoint/mac-install-with-jamf.md)、[モバイル デバイス管理](../defender-endpoint/mac-install-with-other-mdm.md)

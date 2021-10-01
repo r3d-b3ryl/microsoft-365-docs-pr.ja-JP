@@ -15,14 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 02/07/2020
+ms.date: 09/22/2021
 ms.technology: mde
-ms.openlocfilehash: e61e525f23cf1e763c64fae1828e7d505d51a5cb
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 9a5ef03cf94501d83340f159ecd1b54f26f68b0a
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59402000"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042929"
 ---
 # <a name="onboard-the-windows-10-devices-using-configuration-manager"></a>Configuration Manager を使用Windows 10デバイスのオンボード
 
@@ -33,7 +33,7 @@ ms.locfileid: "59402000"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Microsoft Endpoint Configuration Manager現在のブランチ
-- System Center 2012 R2 構成マネージャー
+- System Center 2012 R2 Configuration Manager
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
 
@@ -53,9 +53,10 @@ ms.locfileid: "59402000"
   - Windows Server 2016
   - Windows Server 2016バージョン 1803 以降
   - Windows Server 2019
+  - Windows Server 2022
 
 > [!NOTE]
-> R2、Windows Server 2012、Windows Server 2016、および Windows Server 2019 をオンボードする方法の詳細については、「オンボード Windows サーバー」を[参照してください](configure-server-endpoints.md)。
+> Windows Server 2012 R2、Windows Server 2016、Windows Server 2019、Windows Server 2022 をオンボードする方法の詳細については、「オンボード Windows[サーバー」を参照](configure-server-endpoints.md)してください。
 
 ### <a name="onboard-devices-using-system-center-configuration-manager"></a>デバイスを使用したオンボード System Center Configuration Manager
 
@@ -147,7 +148,7 @@ Value: 0 or 1
 
 監査モードまたはブロック モードでネットワーク保護を有効にする前に、サポート ページから入手できるマルウェア対策プラットフォーム更新プログラムがインストール [されていることを確認してください](https://support.microsoft.com/help/4560203/windows-defender-anti-malware-platform-binaries-are-missing)。
 
-#### <a name="controlled-folder-access"></a>フォルダー アクセスの制御
+#### <a name="controlled-folder-access"></a>コントロールされたフォルダー アクセス
 
 監査モードで機能を 30 日以上有効にします。 この期間が終了した後、検出を確認し、保護されたディレクトリへの書き込みを許可するアプリケーションの一覧を作成します。
 

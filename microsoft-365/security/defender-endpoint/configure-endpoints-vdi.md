@@ -15,14 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 04/16/2020
+ms.date: 09/22/2021
 ms.technology: mde
-ms.openlocfilehash: c2d33c40cba675f36f9be3a181db655e8087a811
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 494cfb352d8ccbf6dd0640d559083c9e733fa9b7
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222966"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60041634"
 ---
 # <a name="onboarding-non-persistent-virtual-desktop-infrastructure-devices"></a>非永続的な仮想デスクトップ インフラストラクチャ デバイスのオンボーディング
 
@@ -33,7 +33,7 @@ ms.locfileid: "59222966"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - 仮想デスクトップ インフラストラクチャ (VDI) デバイス
-- Windows 10、Windows Server 2019、Windows Server 2008R2/2012R2/2016
+- Windows 10、Windows Server 2019、Windows Server 2022、Windows Server 2008R2/2012R2/2016
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configvdi-abovefoldlink)
 
@@ -60,7 +60,7 @@ VDI デバイスは、Defender for Endpoint ポータルに次のように表示
 > [!WARNING]
 > リソース構成が低い環境では、VDI ブート手順によって Defender for Endpoint センサーのオンボーディングが遅くなる可能性があります。
 
-### <a name="for-windows-10-or-windows-server-2019"></a>サーバー Windows 10またはWindowsサーバー 2019 の場合
+### <a name="for-windows-10-or-windows-server-2019-or-windows-server-2022"></a>サーバー Windows 10またはWindowsサーバー 2019、またはサーバー 2022 Windowsの場合
 
 1. サービス オンボーディング ウィザードから.zipした VDI *構成パッケージ*(WindowsDefenderATPOnboardingPackage.zip) を開きます。 パッケージは、次のポータルから[Microsoft 365 Defenderすることもできます](https://security.microsoft.com/)。
    1. ナビゲーション ウィンドウで、[エンドポイント **デバイス設定** \>  \> **オンボーディング]** \> **を選択します**。

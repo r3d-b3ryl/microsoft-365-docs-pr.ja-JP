@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 01e7c83a797930ed0137aeb864f22485f1cc581d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 06e7c1bc2fec29ad679ea12194f83a22954a5a02
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214553"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60043061"
 ---
 # <a name="review-microsoft-defender-for-endpoint-architecture-requirements-and-key-concepts"></a>Microsoft Defender for Endpoint アーキテクチャの要件と主な概念を確認する
 
@@ -51,8 +51,8 @@ Microsoft Defender for Endpoint を有効にする前に、アーキテクチャ
 1 | デバイスは、サポートされている管理ツールのいずれかを介してオンボードされます。 
 2 | ボード上のデバイスは、Microsoft Defender for Endpoint シグナル データを提供して応答します。
 3 | 管理対象デバイスは、デバイスに参加または登録Azure Active Directory。
-4  | ドメインに参加しているWindows 10デバイスは、Azure Active Directoryを使用Azure Active Directory Connect。
-5  | Microsoft Defender for Endpoint のアラート、調査、および応答は、Microsoft 365 Defender。
+4  | ドメインに参加しているWindowsデバイスは、デバイスを使用Azure Active DirectoryにAzure Active Directory Connect。
+5 | Microsoft Defender for Endpoint のアラート、調査、および応答は、Microsoft 365 Defender。
 
 ## <a name="understand-key-concepts"></a>主要な概念を理解する
 
@@ -65,7 +65,7 @@ Microsoft Defender for Endpoint を有効にする前に、アーキテクチャ
 エンドポイントの検出と応答 | エンドポイントの検出および応答機能は、ほぼリアルタイムでアクション可能な高度な攻撃検出を提供します。 | [エンドポイントの検出および応答機能の概要](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)
 動作のブロックと格納 | 動作のブロックと格納機能は、脅威の実行が開始された場合でも、その動作とプロセス ツリーに基づいて、脅威を特定して停止するのに役立ちます。 | [動作ブロックと封じ込め](/microsoft-365/security/defender-endpoint/behavioral-blocking-containment)
 自動調査と対応 | 自動調査では、セキュリティ アナリストが使用するプロセスに基づいてさまざまな検査アルゴリズムを使用し、アラートを調べ、侵害を解決するために直ちに対応するように設計されています。 | [自動調査を使用して脅威を調査および修復する](/microsoft-365/security/defender-endpoint/automated-investigations)
-高度なハンティング | 高度な検索はクエリベースの脅威ハンティング ツールで、最大 30 日間の生データを調査して、ネットワーク内のイベントを積極的に検査して脅威インジケーターとエンティティを特定できます。 | [高度な検索の概要](/microsoft-365/security/defender-endpoint/advanced-hunting-overview)
+高度な追求 | 高度な検索はクエリベースの脅威ハンティング ツールで、最大 30 日間の生データを調査して、ネットワーク内のイベントを積極的に検査して脅威インジケーターとエンティティを特定できます。 | [高度な検索の概要](/microsoft-365/security/defender-endpoint/advanced-hunting-overview)
 脅威の分析 | 脅威分析は、最も関連性の高い脅威をカバーする Microsoft の専門家のセキュリティ研究者からの一連のレポートです。 | [新しい脅威を追跡して対応する](/microsoft-365/security/defender-endpoint/threat-analytics)
 
 

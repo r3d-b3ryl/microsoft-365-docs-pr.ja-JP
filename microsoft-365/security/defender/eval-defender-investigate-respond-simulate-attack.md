@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-pilotmtpproject
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 1fae1d1a800c6005f690ac3b4ac5a32cff38d549
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b2bdb81ff6e6f95c30cb7661fde98b272310539d
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189310"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60043277"
 ---
 # <a name="run-an-attack-simulation-in-a-microsoft-365-defender-pilot-environment"></a>パイロット環境で攻撃シミュレーションMicrosoft 365 Defender実行する
 
@@ -94,13 +94,13 @@ Attack IQ と SafeBreach から追加のシミュレーションがあります�
 
 ## <a name="simulate-an-attack-with-an-isolated-domain-controller-and-client-device-optional"></a>分離ドメイン コントローラーとクライアント デバイスを使用して攻撃をシミュレートする (オプション)
 
-このオプションのインシデント対応演習では、PowerShell スクリプトを使用して分離された Active Directory ドメイン サービス (AD DS) ドメイン コントローラーと Windows 10 デバイスに対する攻撃をシミュレートし、インシデントを調査、修復、解決します。
+このオプションのインシデント対応演習では、PowerShell スクリプトを使用して、分離された Active Directory ドメイン サービス (AD DS) ドメイン コントローラーと Windows デバイスに対する攻撃をシミュレートし、インシデントを調査、修復、解決します。
 
 まず、パイロット環境にエンドポイントを追加する必要があります。
 
 ### <a name="add-pilot-environment-endpoints"></a>パイロット環境エンドポイントの追加
 
-最初に、分離された DS ドメイン コントローラーとADデバイスをパイロット環境にWindows 10する必要があります。
+まず、分離された DS ドメイン コントローラーとADデバイスをパイロット環境にWindowsする必要があります。
 
 1. パイロット環境テナントが有効になっている[Microsoft 365 Defender。](m365d-enable.md#confirm-that-the-service-is-on)
 
@@ -141,7 +141,7 @@ Attack IQ と SafeBreach から追加のシミュレーションがあります�
 
 攻撃シナリオのシミュレーションを実行するには、次のコマンドを実行します。
 
-1. パイロット環境に、分離された DS ドメイン コントローラーとADデバイスが含Windows 10してください。
+1. パイロット環境に、分離された DS ドメイン コントローラーとADデバイスが含Windowsしてください。
 
 2. テスト ユーザー アカウントを使用してテスト デバイスにサインインします。
 

@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: ae3b0e3ad09487d9b48ddab10a43eb36e5abed35
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 7f18d72907ec8f2775ee258906c9185672bfa9be
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59353664"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60041698"
 ---
 # <a name="run-live-response-commands-on-a-device"></a>デバイスでライブ応答コマンドを実行する
 
@@ -82,6 +82,8 @@ ms.locfileid: "59353664"
   - **WindowsServer 2019 - パブリック プレビューにのみ適用**
     - バージョン 1903 以降 [(KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)を使用)
     - バージョン 1809 [(KB4537818 付](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)き)
+    
+  - **Windows Server 2022**
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -100,14 +102,14 @@ POST https://api.securitycenter.microsoft.com/API/machines/{machine_id}/runliver
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-|名前|種類|説明|
+|名前|型|説明|
 |---|---|---|
-|Authorization|文字列|ベアラー\<token>\. 必須です。|
+|Authorization|String|ベアラー\<token>\. 必須です。|
 |Content-Type|string|application/json. Required.|
 
 ## <a name="request-body"></a>要求本文
 
-|パラメーター|種類|説明|
+|パラメーター|型|説明|
 |---|---|---|
 |コメント|文字列|アクションに関連付けるコメント。|
 |コマンド|配列|実行するコマンド。 使用できる値は PutFile、RunScript、GetFile です。|

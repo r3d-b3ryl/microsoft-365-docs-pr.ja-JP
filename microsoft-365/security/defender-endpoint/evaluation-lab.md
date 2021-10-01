@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c1a51ec4d2e17275379eb40521f506e4a83d19ef
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3765bdc36dc53f10c1842754266f72434f5b2f1c
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177664"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60043133"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Microsoft Defender for Endpoint 評価ラボ
 
@@ -44,13 +44,13 @@ Microsoft Defender for Endpoint 評価ラボは、プラットフォームの機
 
 自動調査、高度な狩猟、脅威分析など、プラットフォームの強力な機能に完全にアクセスでき、Defender for Endpoint が提供する包括的な保護スタックをテストできます。
 
-Windows 10 または Windows Server 2019 デバイスを追加して、最新の OS バージョンと適切なセキュリティ コンポーネントがインストールされ、Office 2019 Standard がインストールされます。
+Windows 10 または Windows Server 2019、または Windows Server 2022 デバイスを追加して、最新の OS バージョンと適切なセキュリティ コンポーネントをインストールし、Office 2019 Standard をインストールすることができます。
 
 また、脅威シミュレーターをインストールできます。 Defender for Endpoint は、業界をリードする脅威シミュレーション プラットフォームと提携し、ポータルから出ることなく Defender for Endpoint の機能をテストするのに役立ちます。
 
 お好みのシミュレーターをインストールし、評価ラボ内でシナリオを実行し、プラットフォームのパフォーマンスを即座に確認できます。 また、さまざまなシミュレーションにアクセスして、シミュレーション カタログから実行できます。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 評価ラボにアクセスするには、ライセンス[](minimum-requirements.md#licensing-requirements)要件を満たすか、Microsoft Defender for Endpoint への試用版アクセス権が必要です。
 
@@ -106,7 +106,7 @@ Microsoft Defender ATP を試してみたいですか? [無料試用版にサイ
 
 ## <a name="add-devices"></a>デバイスの追加
 
-環境にデバイスを追加すると、Defender for Endpoint は接続の詳細を示す構成済みのデバイスをセットアップします。 サーバー 2019 Windows 10またはWindows追加できます。
+環境にデバイスを追加すると、Defender for Endpoint は接続の詳細を示す構成済みのデバイスをセットアップします。 サーバー 2019 Windows 10またはWindowsサーバー 2022 デバイスWindows追加できます。
 
 デバイスは、OS および Office 2019 Standard の最新バージョンと、Java、Python、SysIntenals などの他のアプリで構成されます。
 
@@ -135,7 +135,7 @@ Microsoft Defender ATP を試してみたいですか? [無料試用版にサイ
 
 1. ダッシュボードで、[デバイスの追加 **] を選択します**。
 
-2. 追加するデバイスの種類を選択します。 サーバー 2019 にWindows 10またはWindows選択できます。
+2. 追加するデバイスの種類を選択します。 サーバー 2019 にWindows 10追加Windows、またはサーバー 2022 Windows選択できます。
 
     :::image type="content" source="../../media/add-machine-optionsnew.png" alt-text="デバイス オプションを使用したラボセットアップ。":::
 

@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: how-to
 ms.date: 08/17/2021
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e8443439b85c6038d2d4a50c369cc02faaf8a3c7
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 311c1f7863efab708178464c9dc616abe314b6d5
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491303"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60041734"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>攻撃面の減少ルールを有効にする
 
@@ -36,7 +36,7 @@ ms.locfileid: "59491303"
 
 [攻撃表面の縮小ルール](attack-surface-reduction.md) (ASR ルール) は、マルウェアが頻繁にデバイスやネットワークを侵害するアクションを防ぐのに役立ちます。
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要件
 
 複数のバージョンの攻撃表面Windows機能
 
@@ -46,6 +46,7 @@ ms.locfileid: "59491303"
 - Windows 10 Enterpriseバージョン[1709](/windows/whats-new/whats-new-windows-10-version-1709)以降
 - Windowsサーバー、[バージョン 1803 (半期チャネル)](/windows-server/get-started/whats-new-in-windows-server-1803)以降
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- Windows Server 2022
 
 攻撃表面の縮小ルールの機能セット全体を使用するには、以下が必要です。
 

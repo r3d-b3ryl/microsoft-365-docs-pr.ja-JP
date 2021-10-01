@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2d6831cfaec813f5ab2598087c2777d867a5f8a7
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: 13391bb906f2d056d4c554d52ffcf1ed8b6a6e2b
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60009423"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042748"
 ---
 # <a name="vulnerabilities-in-my-organization---threat-and-vulnerability-management"></a>組織の脆弱性 - 脅威と脆弱性の管理
 
@@ -141,7 +141,7 @@ CVE を選択すると、フライアウト パネルが開き、脆弱性の説
 
 ソフトウェアの証拠と同様に、デバイスに適用した検出ロジックが表示され、脆弱性が確認されます。 新しいセクションは "Detection Logic" (デバイス ページで検出された脆弱性) と呼ばれ、検出ロジックとソースを示します。
 
-"OS 機能" カテゴリは、関連するシナリオにも表示されます。 CVE は、特定の OS コンポーネントが有効になっている場合にのみ、脆弱な OS を実行するデバイスに影響します。 たとえば、サーバー 2019 Windows DNS コンポーネントに脆弱性が存在するとします。 この新機能では、この CVE を OS で DNS 機能が有効になっている Windows Server 2019 デバイスにのみ接続します。
+"OS 機能" カテゴリは、関連するシナリオにも表示されます。 CVE は、特定の OS コンポーネントが有効になっている場合にのみ、脆弱な OS を実行するデバイスに影響します。 たとえば、サーバー 2019 Windowsサーバー 2022 Windows DNS コンポーネントに脆弱性が存在するとします。 この新機能では、この CVE を OS で DNS 機能が有効になっている Windows Server 2019 および Windows Server 2022 デバイスにのみ接続します。
 
 :::image type="content" alt-text="デバイスと KB で検出されたソフトウェアを一覧表示する検出ロジックの例。" source="images/tvm-cve-detection-logic.png":::
 

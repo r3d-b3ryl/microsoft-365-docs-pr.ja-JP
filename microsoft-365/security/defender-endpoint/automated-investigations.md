@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: 00cf587af9eaeb6199b8058ff231c5704ca19f78
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a8e506e75c0eb9a42ab2a460fcc8c3370ffafbb2
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222006"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042676"
 ---
 # <a name="overview-of-automated-investigations"></a>自動調査の概要
 
@@ -91,6 +91,7 @@ ms.locfileid: "59222006"
 現在、AIR は次の OS バージョンのみをサポートしています。
 
 - Windows Server 2019
+- Windows Server 2022
 - Windows 10バージョン 1709 (OS ビルド 16299.1085[および KB4493441)](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)以降
 - Windows 10バージョン 1803 (OS ビルド 17134.704[および KB4493464)](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)以降
 - Windows 10バージョン[1803](/windows/release-information/status-windows-10-1809-and-windows-server-2019)以降
