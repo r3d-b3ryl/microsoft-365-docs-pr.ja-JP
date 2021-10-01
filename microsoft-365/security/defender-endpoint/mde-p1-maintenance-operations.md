@@ -14,17 +14,17 @@ localization_priority: Normal
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: d589a196f261d817cff3717cab613658c1533417
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: cdfe95466eeb9151fac1047850a32f5e657f4c94
+ms.sourcegitcommit: e686e64e846c26a9f4def7c145cbb140e6427076
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59489543"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60069103"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-plan-1-preview"></a>Microsoft Defender for Endpoint Plan 1 の管理 (プレビュー)
 
 > [!TIP]
-> プレビュー プログラムをMicrosoft 365 E3まだMicrosoft 365 E5場合は、プレビュー プログラムにサインアップ [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) してください。
+> ユーザーまたは A3 Microsoft 365 E3が、Microsoft 365 E5 A5 を使用していない場合は、プレビュー プログラムに [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) サインアップしてください。
 
 組織内で Defender for Endpoint Plan 1 (プレビュー) を使用する場合、セキュリティ チームはセキュリティ ソリューションを維持するために特定の手順を実行できます。 セキュリティ チームがメンテナンスと運用計画をまとめる場合は、少なくとも次のアクティビティを含める必要があります。
 
@@ -58,6 +58,6 @@ Defender for Endpoint は、柔軟性と構成のオプションを提供しま�
 
 Defender for Endpoint で誤検知/陰性が表示される場合は [、「Address false positives/negatives in Microsoft Defender for Endpoint」を参照してください](defender-endpoint-false-positives-negatives.md)。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - [Microsoft Defender for Endpoint の新機能を確認する](whats-new-in-microsoft-defender-atp.md)

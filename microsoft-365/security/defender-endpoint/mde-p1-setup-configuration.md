@@ -7,24 +7,24 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 09/13/2021
+ms.date: 10/01/2021
 ms.prod: m365-security
 ms.technology: mdep1
 localization_priority: Normal
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 53d8742b411c500705434fcef181793df591eb19
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: b0b11d43b0736224a26c2863afa6de6be31e4a63
+ms.sourcegitcommit: e686e64e846c26a9f4def7c145cbb140e6427076
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59490969"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60069127"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1-preview"></a>Microsoft Defender for Endpoint Plan 1 のセットアップと構成 (プレビュー)
 
 > [!TIP]
-> プレビュー プログラムをMicrosoft 365 E3まだMicrosoft 365 E5場合は、プレビュー プログラムにサインアップ [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) してください。
+> ユーザーまたは A3 Microsoft 365 E3が、Microsoft 365 E5 A5 を使用していない場合は、プレビュー プログラムに [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) サインアップしてください。
 
 この記事では、Defender for Endpoint Plan 1 (プレビュー) を設定および構成する方法について説明します。 サポートを受け取っている場合でも、自分で行っている場合でも、この記事を展開全体のガイドとして使用できます。  
 
@@ -54,7 +54,7 @@ Defender for Endpoint Plan 1 (プレビュー) の一般的なセットアップ
 
 | 要件 | 説明 |
 |:---|:---|
-| ライセンスの要件 | Defender for Endpoint プラン 1 <br/><br/>*プレビュー プログラムにMicrosoft 365 E3、プレビュー プログラムに参加できます。* |
+| ライセンスの要件 | Defender for Endpoint プラン 1 <br/><br/>*ユーザーまたは A3 Microsoft 365 E3、プレビュー プログラムに参加できます。* |
 | ブラウザー要件 | Microsoft Edge <br/> Internet Explorerバージョン 11 <br/> Google Chrome |
 | オペレーティング システム | Windows 10バージョン 1709 以降 <br/>macOS: 11.5 (Big Sur), 10.15.7 (Catalina), or 10.14.6 (Mojave) <br/>iOS <br/>Android OS  |
 | Datacenter | 次のいずれかのデータセンターの場所。 <br/>- 欧州連合 <br/>- イギリス <br/>- 米国 |
@@ -312,7 +312,7 @@ Web 保護を使用すると、Web の脅威や望ましくないコンテンツ
 
 5. [構成設定 **] タブで****、[Web Protection]** を展開し、次の表で設定を指定し、[次へ] を **選択します**。 <br/><br/>
 
-   | 設定 | 推奨事項 |
+   | Setting | 推奨事項 |
    |:---|:---|
    | **ネットワーク保護を有効にする** | [有効] に **設定します**。 ユーザーが悪意のあるサイトやドメインにアクセスできない。 <br/><br/>または、ネットワーク保護を監査モード **に設定** して、環境での動作を確認することもできます。 監査モードでは、ネットワーク保護によってユーザーがサイトやドメインにアクセスできませんが、検出はイベントとして追跡されます。 |
    | **ユーザーに SmartScreen を要求Microsoft Edge 従来版** | [はい] **に設定します**。 潜在的なフィッシング詐欺や悪意のあるソフトウェアからユーザーを保護するのに役立ちます。 |
@@ -403,7 +403,7 @@ WDAC 展開の計画に役立つ情報については、次のリソースを参
 
 - [Windows Defenderさまざまなシナリオでのアプリケーション制御の展開: デバイスの種類](/windows/security/threat-protection/windows-defender-application-control/types-of-devices)
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 セットアップと構成プロセスが完了したので、次に、Defender for Endpoint の使用を開始します。 
 

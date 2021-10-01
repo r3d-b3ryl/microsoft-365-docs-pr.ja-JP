@@ -7,24 +7,24 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 09/13/2021
+ms.date: 10/01/2021
 ms.prod: m365-security
 ms.technology: mdep1
 localization_priority: Normal
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 7083ebea0a43c997f9ad3942523033dc38e4c0ba
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: e9caad6640b0c70382852c548d4b78b9fa95d450
+ms.sourcegitcommit: e686e64e846c26a9f4def7c145cbb140e6427076
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491363"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60069139"
 ---
 # <a name="get-started-with-microsoft-defender-for-endpoint-plan-1-preview"></a>Microsoft Defender for Endpoint Plan 1 の概要 (プレビュー)
 
 > [!TIP]
-> プレビュー プログラムをMicrosoft 365 E3まだMicrosoft 365 E5場合は、プレビュー プログラムにサインアップ [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) してください。
+> ユーザーまたは A3 Microsoft 365 E3が、Microsoft 365 E5 A5 を使用していない場合は、プレビュー プログラムに [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) サインアップしてください。
 
 Microsoft 365 Defender ポータル ( ) を使用すると、検出された脅威に関する情報を表示し、アラートとインシデントを管理し、検出された脅威に対して必要なアクションを実行し、デバイス [https://security.microsoft.com](https://security.microsoft.com) を管理できます。 このMicrosoft 365 Defenderポータルでは、Defender for Endpoint Plan 1 (プレビュー) で取得した脅威保護機能の操作を開始できます。 次のセクションでは、開始する方法について説明します。
 
@@ -168,7 +168,7 @@ Defender for Endpoint Plan 1 では、ポータルでいくつかのレポート
 > [!TIP]
 > 詳細については、「Web 保護」 [を参照してください](web-protection-overview.md)。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - [Microsoft Defender for Endpoint Plan 1 の管理 (プレビュー)](mde-p1-maintenance-operations.md)
 - [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)

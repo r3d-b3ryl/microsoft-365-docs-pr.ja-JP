@@ -7,24 +7,24 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 09/13/2021
+ms.date: 10/01/2021
 ms.prod: m365-security
 ms.technology: mdep1
 localization_priority: Normal
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 2ae91e32be7d010e5b8014ba2dde47f302d0c474
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 5edc3db69c8c1f0f6f0a5f79a0838d2b054c9e91
+ms.sourcegitcommit: e686e64e846c26a9f4def7c145cbb140e6427076
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491387"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60069115"
 ---
 # <a name="overview-of-microsoft-defender-for-endpoint-plan-1-preview"></a>Microsoft Defender for Endpoint Plan 1 の概要 (プレビュー)
 
 > [!TIP]
-> プレビュー プログラムをMicrosoft 365 E3まだMicrosoft 365 E5場合は、プレビュー プログラムにサインアップ [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) してください。
+> ユーザーまたは A3 Microsoft 365 E3が、Microsoft 365 E5 A5 を使用していない場合は、プレビュー プログラムに [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) サインアップしてください。
 
 Microsoft Defender for Endpoint は、高度な脅威を防止、検出、調査、および対応するための組織を支援するために設計されたエンタープライズ エンドポイント セキュリティ プラットフォームです。 Defender for Endpoint が次の 2 つのプランで利用可能になります。 
 
@@ -194,7 +194,7 @@ Defender for Endpoint API を使用すると、ワークフローを自動化し
 - iOS
 - Android OS
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - [Microsoft Defender for Endpoint Plan 1 (プレビュー) とプラン 2 の比較](defender-endpoint-plan-1-2.md)
 - [Defender for Endpoint Plan 1 のセットアップと構成 (プレビュー)](mde-p1-setup-configuration.md)

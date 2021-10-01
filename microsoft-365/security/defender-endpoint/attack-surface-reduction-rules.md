@@ -17,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3a336e1b8c8fe9c8a15925a3c28d7861c6e4bb10
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: b73fe25f7ff8ce6ef43c34cdfa2b8806f48f66e4
+ms.sourcegitcommit: e686e64e846c26a9f4def7c145cbb140e6427076
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776550"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60069091"
 ---
 # <a name="attack-surface-reduction-rules"></a>攻撃面の減少ルール
 
@@ -71,22 +71,22 @@ ms.locfileid: "59776550"
 
 |ルールの名前 | Intune | Microsoft エンドポイント マネージャー |Microsoft Endpoint Configuration Manager |グループ ポリシー <sup> [[1](#fn1)]<sup></sup> | PowerShell <sup> [[1](#fn1)]<sup></sup>  |
 |---|:---:|:---:|:---:|:---:|:---:|
-|[悪用された脆弱な署名済みドライバーの悪用をブロックする](#block-abuse-of-exploited-vulnerable-signed-drivers) | ![サポートされなくなりました。](images/checkmark.png) <br><br>  |  ![サポート対象](images/checkmark.png) <br><br> MEM OMA-URI |   | ![サポートされなくなりました。](images/checkmark.png) <br><br>  |  ![サポート対象](images/checkmark.png) <br><br> |
-|[Adobe Reader の子プロセスの作成をブロックする](#block-adobe-reader-from-creating-child-processes) | ![サポートされなくなりました。](images/checkmark.png) |   | ![サポート対象](images/checkmark.png) | ![サポートされなくなりました。](images/checkmark.png) <br><br>  | ![サポートされなくなりました。](images/checkmark.png) <br><br>  |
-|[すべてのアプリケーションOffice子プロセスの作成をブロックする](#block-all-office-applications-from-creating-child-processes) | ![サポートされなくなりました。](images/checkmark.png) |   | ![サポート対象](images/checkmark.png) <br><br> CB 1710 | ![サポートされなくなりました。](images/checkmark.png) <br><br>  | ![サポートされなくなりました。](images/checkmark.png) <br><br>  |
-|[ローカル セキュリティ機関サブシステムからの資格情報のWindowsをブロックする (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | ![サポートされなくなりました。](images/checkmark.png)  |   |  ![サポート対象](images/checkmark.png) <br><br> CB 1802 | ![サポートされなくなりました。](images/checkmark.png) <br><br>  | ![サポートされなくなりました。](images/checkmark.png) <br><br>  |
-|[メール クライアントと Web メールから実行可能なコンテンツをブロックする](#block-executable-content-from-email-client-and-webmail) | ![サポートされなくなりました。](images/checkmark.png) |  | ![サポート対象](images/checkmark.png) <br><br> CB 1710 | ![サポート対象](images/checkmark.png) | ![サポートされなくなりました。](images/checkmark.png) <br><br>  |
-|[有病率、年齢、または信頼できるリスト条件を満たしない限り、実行可能ファイルの実行をブロックする](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | ![サポートされなくなりました。](images/checkmark.png) |   | ![サポート対象](images/checkmark.png) <br><br> CB 1802 |  ![サポートされなくなりました。](images/checkmark.png) <br><br> |  ![サポートされなくなりました。](images/checkmark.png) <br><br> |
-|[難読化される可能性のあるスクリプトの実行をブロックする](#block-execution-of-potentially-obfuscated-scripts) | ![サポートされなくなりました。](images/checkmark.png) |   |  ![サポート対象](images/checkmark.png)  <br><br> CB 1710 | ![サポートされなくなりました。](images/checkmark.png) <br><br>  | ![サポートされなくなりました。](images/checkmark.png) <br><br>  |
-|[JavaScript または VBScript のダウンロード済み実行可能コンテンツの起動をブロックする](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | ![サポートされなくなりました。](images/checkmark.png) |   |  ![サポート対象](images/checkmark.png) <br><br> CB 1710 | ![サポートされなくなりました。](images/checkmark.png) <br><br>  | ![サポートされなくなりました。](images/checkmark.png) <br><br>  |
-|[実行可能Office作成するアプリケーションのブロック](#block-office-applications-from-creating-executable-content) | ![サポートされなくなりました。](images/checkmark.png) <br><br> |  | ![サポート対象](images/checkmark.png) <br><br> CB 1710 <br><br> | ![サポートされなくなりました。](images/checkmark.png) <br><br>  | ![サポートされなくなりました。](images/checkmark.png) <br><br>  |
-|[アプリケーションOffice他のプロセスへのコードの挿入をブロックする](#block-office-applications-from-injecting-code-into-other-processes) | ![サポートされなくなりました。](images/checkmark.png) |  |  ![サポート対象](images/checkmark.png) <br><br> CB 1710 | ![サポートされなくなりました。](images/checkmark.png) <br><br>  | ![サポートされなくなりました。](images/checkmark.png) <br><br>  |
-|[通信Officeプロセスの作成をブロックする](#block-office-communication-application-from-creating-child-processes) | ![サポートされなくなりました。](images/checkmark.png) |  | ![サポート対象](images/checkmark.png) <br><br>  CB 1710 | ![サポートされなくなりました。](images/checkmark.png) <br><br>  | ![サポートされなくなりました。](images/checkmark.png) <br><br>  |
-|[WMI イベント サブスクリプションによる永続化のブロック](#block-persistence-through-wmi-event-subscription) |  |  |  |![サポートされなくなりました。](images/checkmark.png) <br><br>   | ![サポートされなくなりました。](images/checkmark.png) <br><br>  |
-|[PSExec および WMI コマンドから発生するプロセス作成をブロックする](#block-process-creations-originating-from-psexec-and-wmi-commands) | ![サポート対象](images/checkmark.png) |   |   |  ![サポートされなくなりました。](images/checkmark.png) <br><br> | ![サポートされなくなりました。](images/checkmark.png) <br><br>  |
-|[USB から実行される信頼されていないプロセスと署名されていないプロセスをブロックする](#block-untrusted-and-unsigned-processes-that-run-from-usb) | ![サポートされなくなりました。](images/checkmark.png) |   | ![サポート対象](images/checkmark.png) <br><br> CB 1802 <br><br> | ![サポートされなくなりました。](images/checkmark.png) <br><br>  | ![サポートされなくなりました。](images/checkmark.png) <br><br>  |
-|[Win32 API 呼び出しをブロックOfficeマクロ](#block-win32-api-calls-from-office-macros) | ![サポートされなくなりました。](images/checkmark.png) |   | ![サポート対象](images/checkmark.png) <br><br> CB 1710 <br><br> | ![サポートされなくなりました。](images/checkmark.png) <br><br>  |  ![サポートされなくなりました。](images/checkmark.png) <br><br> |
-|[ランサムウェアに対する高度な保護の使用](#use-advanced-protection-against-ransomware) | ![サポートされなくなりました。](images/checkmark.png) |   |  ![サポート対象](images/checkmark.png) <br><br>  CB 1802 | ![サポートされなくなりました。](images/checkmark.png) <br><br>  | ![サポートされなくなりました。](images/checkmark.png) <br><br>  |
+|[悪用された脆弱な署名済みドライバーの悪用をブロックする](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y  | Y MEM OMA-URI |   | Y  |  [サポート](images/checkmark.png) <br><br> |
+|[Adobe Reader の子プロセスの作成をブロックする](#block-adobe-reader-from-creating-child-processes) | Y |   | Y | Y  | Y  |
+|[すべてのアプリケーションOffice子プロセスの作成をブロックする](#block-all-office-applications-from-creating-child-processes) | Y |   |Y <br><br> CB 1710 | Y  | Y  |
+|[ローカル セキュリティ機関サブシステムからの資格情報のWindowsをブロックする (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Y  |   | Y <br><br>CB 1802 | Y  | Y  |
+|[メール クライアントと Web メールから実行可能なコンテンツをブロックする](#block-executable-content-from-email-client-and-webmail) | Y |  |Y <br><br> CB 1710 | Y | Y  |
+|[有病率、年齢、または信頼できるリスト条件を満たしない限り、実行可能ファイルの実行をブロックする](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | Y |   | Y <br><br> CB 1802 |  Y |  Y |
+|[難読化される可能性のあるスクリプトの実行をブロックする](#block-execution-of-potentially-obfuscated-scripts) | Y |   |  Y  <br><br> CB 1710 | Y  | Y  |
+|[JavaScript または VBScript のダウンロード済み実行可能コンテンツの起動をブロックする](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | Y |   | Y <br><br> CB 1710 | Y  | Y  |
+|[実行可能Office作成するアプリケーションのブロック](#block-office-applications-from-creating-executable-content) | Y |  |Y <br><br> CB 1710 | Y  | Y  |
+|[アプリケーションOffice他のプロセスへのコードの挿入をブロックする](#block-office-applications-from-injecting-code-into-other-processes) | Y |  | Y <br><br> CB 1710 | Y  | Y  |
+|[通信Officeプロセスの作成をブロックする](#block-office-communication-application-from-creating-child-processes) | Y |  |Y <br><br> CB 1710 | Y  | Y  |
+|[WMI イベント サブスクリプションによる永続化のブロック](#block-persistence-through-wmi-event-subscription) |  |  |  |Y   | Y  |
+|[PSExec および WMI コマンドから発生するプロセス作成をブロックする](#block-process-creations-originating-from-psexec-and-wmi-commands) | Y |   |   |  Y | Y  |
+|[USB から実行される信頼されていないプロセスと署名されていないプロセスをブロックする](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y |   |Y <br><br> CB 1802  | Y  | Y  |
+|[Win32 API 呼び出しをブロックOfficeマクロ](#block-win32-api-calls-from-office-macros) | Y |   | Y <br><br> CB 1710  | Y  |  Y |
+|[ランサムウェアに対する高度な保護の使用](#use-advanced-protection-against-ransomware) | Y |   | Y <br><br> CB 1802 | Y  | Y  |
 
   (<a id="fn1">1</a>) 任意のルールの GUID を使用して、ルールごとに攻撃表面の縮小ルールを構成できます。
 
@@ -119,6 +119,10 @@ GUID:  `56a863a9-875e-4185-98a7-b882c64b5ce5`
 Advanced hunting action type:
 -->
 
+<!-- 
+Dependencies:
+-->
+
 ### <a name="block-adobe-reader-from-creating-child-processes"></a>Adobe Reader の子プロセスの作成をブロックする
 
 このルールは、Adobe Reader によるプロセスの作成をブロックすることで攻撃を防止します。
@@ -136,6 +140,8 @@ GUID: `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`
 - AsrAdobeReaderChildProcessAudited
 - AsrAdobeReaderChildProcessBlocked
 
+依存関係: MDAV
+
 ### <a name="block-all-office-applications-from-creating-child-processes"></a>すべてのアプリケーションOffice子プロセスの作成をブロックする
 
 このルールは、Officeプロセスの作成をブロックします。 Officeには、Word、Excel、PowerPoint、OneNote、Access が含まれます。
@@ -152,6 +158,8 @@ GUID: `d4f940ab-401b-4efc-aadc-ad5f3c50688a`
 
 - AsrOfficeChildProcessAudited
 - AsrOfficeChildProcessBlocked
+
+依存関係: MDAV
 
 ### <a name="block-credential-stealing-from-the-windows-local-security-authority-subsystem"></a>ローカル セキュリティ機関サブシステムからの資格情報のWindowsをブロックする
 
@@ -173,6 +181,8 @@ GUID: `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`
 - AsrLsassCredentialTheftAudited
 - AsrLsassCredentialTheftBlocked
 
+依存関係: MDAV
+
 ### <a name="block-executable-content-from-email-client-and-webmail"></a>メール クライアントと Web メールから実行可能なコンテンツをブロックする
 
 このルールは、Microsoft Outlook アプリケーション、または Outlook.com や他の一般的な Web メール プロバイダー内で開いた電子メールから、次の種類のファイルの起動をブロックします。
@@ -190,6 +200,8 @@ GUID: `be9ba2d9-53ea-4cdc-84e5-9b1eeee46550`
 
 - AsrExecutableEmailContentAudited
 - AsrExecutableEmailContentBlocked
+
+依存関係: MDAV
 
 > [!NOTE]
 > [メール **クライアントと Web メールからの** 実行可能なコンテンツをブロックする] というルールには、使用するアプリケーションに応じて、次の別の説明があります。
@@ -226,6 +238,8 @@ GUID: `01443614-cd74-433a-b99e-2ecdc07bfc25`
 - AsrUntrustedExecutableAudited
 - AsrUntrustedExecutableBlocked
 
+依存関係: MDAV、クラウド保護
+
 ### <a name="block-execution-of-potentially-obfuscated-scripts"></a>難読化される可能性のあるスクリプトの実行をブロックする
 
 このルールは、難読化されたスクリプト内の疑わしいプロパティを検出します。
@@ -242,6 +256,8 @@ GUID: `5beb7efe-fd9a-4556-801d-275e5ffc04cc`
 
 - AsrObfuscatedScriptAudited
 - AsrObfuscatedScriptBlocked
+
+依存関係: MDAV、AMSI
 
 ### <a name="block-javascript-or-vbscript-from-launching-downloaded-executable-content"></a>JavaScript または VBScript のダウンロード済み実行可能コンテンツの起動をブロックする
 
@@ -260,6 +276,8 @@ GUID: `d3e037e1-3eb8-44c8-a917-57927947596d`
 - AsrScriptExecutableDownloadAudited
 - AsrScriptExecutableDownloadBlocked
 
+依存関係: MDAV、AMSI
+
 ### <a name="block-office-applications-from-creating-executable-content"></a>実行可能Office作成するアプリケーションのブロック
 
 このルール Officeは、悪意のあるコードがディスクに書き込まれるのをブロックすることで、Word、Excel、PowerPoint などのアプリが悪意のある実行可能コンテンツを作成するのを防ぐためです。
@@ -276,6 +294,8 @@ GUID: `3b576869-a4ec-4529-8536-b80a7769e899`
 
 - AsrExecutableOfficeContentAudited
 - AsrExecutableOfficeContentBlocked
+
+依存関係: MDAV、RPC
 
 ### <a name="block-office-applications-from-injecting-code-into-other-processes"></a>アプリケーションOffice他のプロセスへのコードの挿入をブロックする
 
@@ -298,6 +318,8 @@ GUID: `75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84`
 - AsrOfficeProcessInjectionAudited
 - AsrOfficeProcessInjectionBlocked
 
+依存関係: MDAV
+
 ### <a name="block-office-communication-application-from-creating-child-processes"></a>通信Officeプロセスの作成をブロックする
 
 このルールは、Outlookプロセスを作成する一方で、正当なプロセス機能Outlookします。
@@ -317,6 +339,8 @@ GUID: `26190899-1602-49e8-8b27-eb1d0a1ce869`
 
 - AsrOfficeCommAppChildProcessAudited
 - AsrOfficeCommAppChildProcessBlocked
+
+依存関係: MDAV
 
 ### <a name="block-persistence-through-wmi-event-subscription"></a>WMI イベント サブスクリプションによる永続化のブロック
 
@@ -338,6 +362,8 @@ GUID: `e6db77e5-3df2-4cf1-b95a-636979351e5b`
 - AsrPersistenceThroughWmiAudited
 - AsrPersistenceThroughWmiBlocked
 
+依存関係: MDAV、RPC
+
 ### <a name="block-process-creations-originating-from-psexec-and-wmi-commands"></a>PSExec および WMI コマンドから発生するプロセス作成をブロックする
 
 このルールは [、PsExec](/sysinternals/downloads/psexec) および WMI を介して作成 [されたプロセスの実行](/windows/win32/wmisdk/about-wmi) をブロックします。 PsExec と WMI の両方がコードをリモートで実行できるので、コマンドと制御の目的でこの機能を不正に使用したり、組織のネットワーク全体に感染を広げる危険性があります。
@@ -356,6 +382,8 @@ GUID: `d1e49aac-8f56-4280-b9ba-993a6d77406c`
 - AsrPsexecWmiChildProcessAudited
 - AsrPsexecWmiChildProcessBlocked
 
+依存関係: MDAV
+
 ### <a name="block-untrusted-and-unsigned-processes-that-run-from-usb"></a>USB から実行される信頼されていないプロセスと署名されていないプロセスをブロックする
 
 このルールを使用すると、管理者は、SD カードを含む USB リムーバブル ドライブから署名されていない実行可能ファイルまたは信頼されていない実行可能ファイルを実行できません。 ブロックされたファイルの種類には、実行可能ファイル (.exe、.dll.scr など) が含まれます。
@@ -370,6 +398,8 @@ GUID: `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`
 
 - AsrUntrustedUsbProcessAudited
 - AsrUntrustedUsbProcessBlocked
+
+依存関係: MDAV
 
 ### <a name="block-win32-api-calls-from-office-macros"></a>Win32 API 呼び出しをブロックOfficeマクロ
 
@@ -395,6 +425,8 @@ GUID: `92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b`
 - AsrOfficeMacroWin32ApiCallsAudited
 - AsrOfficeMacroWin32ApiCallsBlocked
 
+依存関係: MDAV、AMSI
+
 ### <a name="use-advanced-protection-against-ransomware"></a>ランサムウェアに対する高度な保護の使用
 
 このルールは、ランサムウェアに対する保護の追加層を提供します。 クライアントとクラウドの両方のヒューリスティックを使用して、ファイルがランサムウェアに似ているかどうかを判断します。 このルールは、次の 1 つ以上の特性を持つファイルをブロックしない。
@@ -418,3 +450,5 @@ GUID: `c1db55ab-c21a-4637-bb3f-a12568109d35`
 
 - AsrRansomwareAudited
 - AsrRansomwareBlocked
+
+依存関係: MDAV、クラウド保護
