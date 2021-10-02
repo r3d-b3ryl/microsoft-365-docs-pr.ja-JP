@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なコンテンツを保持し不要なコンテンツを削除するのに役立つ、アイテム保持ポリシーと保持ラベルについて説明します。
-ms.openlocfilehash: 6403cd288c005e4601c5642ab8ce37fdbe380b02
-ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
+ms.openlocfilehash: 4537662d9f2268602baaea5d207af854d88657b4
+ms.sourcegitcommit: e686e64e846c26a9f4def7c145cbb140e6427076
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59786265"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60069183"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの詳細
 
@@ -140,7 +140,7 @@ ms.locfileid: "59786265"
   
 保持ラベルを使用すると、次のことができます。
   
-- **組織のユーザーが保持ラベルを手動で適用できるようにする**。ユーザーが保持ラベルを手動で適用できるのは、Outlook および Outlook on the web、OneDrive、SharePoint​​、Microsoft 365 グループ内のコンテンツです。 多くの場合、ユーザーは自分が操作するコンテンツの種類を最もよく知っているので、コンテンツを分類して適切な保持設定を適用できます。 
+- Outlook、Outlook on the web、OneDrive、SharePoint、Microsoft 365 グループのコンテンツに、**組織内のユーザーが保持ラベルを手動で適用** できるようにします。多くの場合、コンテンツの種類を最も良く理解しているのはそれを扱っているユーザーです。そこでユーザーにコンテンツを分類し、適切なアイテム保持設定を適用してもらいます。 
     
 - コンテンツに次のものが含まれている場合など、特定の条件に一致するときには、**保持ラベルをコンテンツに自動的に適用** できます。 
     - 特定の種類の機密情報。
@@ -173,7 +173,7 @@ SharePoint のドキュメントのデータ損失防止 (DLP) ポリシーの�
 
 #### <a name="retention-labels-and-policies-that-apply-them"></a>保持ラベルと保持ラベルを適用するポリシー
 
-保持ラベルを発行すると、それらは **保持ラベル ポリシー** に含まれます。管理者とユーザーは、このポリシーをコンテンツに適用できます。 次の図で説明します。
+保持ラベルを発行すると、それらは **保持ラベル ポリシー** に含まれます。管理者とユーザーは、このポリシーをコンテンツに適用できます。次の図で説明します。
 
 1. 1 つの保持ラベルを複数の保持ラベル ポリシーに含めることができます。
 
@@ -190,11 +190,10 @@ SharePoint のドキュメントのデータ損失防止 (DLP) ポリシーの�
 | 保持ラベルの種類 | ラベル ポリシーの適用先 |
 |:-----|:-----|
 |管理者とエンド ユーザーに発行されたラベル  <br/> |Exchange、SharePoint、OneDrive、Microsoft 365 グループ  <br/> |
-|機密情報の種類またはトレーニング可能な分類子に基づいて自動適用されたラベル  <br/> |Exchange (すべてのメールボックスのみ)、SharePoint、OneDrive  <br/> |
-|クエリに基づいて自動適用されたラベル  <br/> |Exchange、SharePoint、OneDrive、Microsoft 365 グループ  <br/> |
+|機密情報の種類またはトレーニング可能な分類子に基づいて自動適用されたラベル  <br/> |Exchange、SharePoint、OneDrive  <br/> |
+|キーワードまたはクエリに基づく自動適用  <br/> |Exchange、SharePoint、OneDrive、Microsoft 365 グループ  <br/> |
    
-Exchange で自動で付けることができる保持ラベルは、新しく送信されたメッセージ (送信中のデータ) にのみ適用され、現在メールボックスにあるすべてのアイテム (保存データ) には適用されません。また、機密情報の種類やトレーニング可能な分類子向けの自動適用の保持ラベルは、すべてのメールボックスにのみ適用されます。特定のメールボックスを選択することはできません。
-  
+
 Exchange パブリックフォルダー、Skype、Teams、Yammer メッセージは保持ラベルをサポートしていません。 これらの場所のコンテンツを保持または削除するには、代わりにデータ保持ポリシーを使用します。
 
 #### <a name="only-one-retention-label-at-a-time"></a>一度に 1 つの保持ラベルのみ
@@ -222,7 +221,7 @@ Exchange パブリックフォルダー、Skype、Teams、Yammer メッセージ
 
 #### <a name="monitoring-retention-labels"></a>保持ラベルの監視
 
-Microsoft 365 コンプライアンス センターから、[**データ分類**]、[**概要**] ページを使用して、保持ラベルがテナントでどのように使用されているかを監視し、ラベル付きアイテムの場所を特定します。 重要な前提条件を含む詳細については、「[データ分類の説明](data-classification-overview.md)」を参照してください。
+Microsoft 365 コンプライアンス センターから、[**データの分類**] と [**概要**] ページを選択して、テナントでの保持ラベルの使用方法を監視し、ラベル付けされたアイテムの場所を特定します。重要な前提条件を含む詳細については、「[データ分類に関する詳細](data-classification-overview.md)」を参照してください。
 
 詳細については、[コンテンツ エクスプローラー](data-classification-content-explorer.md) と [アクティビティ エクスプローラー](data-classification-activity-explorer.md) を使用します。
 
@@ -233,7 +232,7 @@ Microsoft 365 コンプライアンス センターから、[**データ分類**
 
 保持ラベルがユーザーによって、または自動適用されてコンテンツに適用された後、コンテンツ検索を使用して、特定の保持ラベルが適用されているすべてのアイテムを検索できます。
 
-コンテンツ検索を作成するとき、**保持 ラベル** の条件を選択し、完全な保持ラベル名を入力するか、ラベル名の一部を入力してワイルドカードを使用します。 詳細については、「[コンテンツ検索のキーワード クエリと検索条件](keyword-queries-and-search-conditions.md)」を参照してください。
+コンテンツ検索を作成する場合は、[**保持ラベル** ] 条件を選択し、完全なラベル名またはラベル名の一部を入力し、ワイルドカードを使用します。詳細については、「[コンテンツ検索のキーワード クエリと検索条件](keyword-queries-and-search-conditions.md)」をご参照ください。
   
 ![保持ラベルの条件。](../media/retention-label-condition.png)
 
@@ -257,11 +256,11 @@ Microsoft 365 コンプライアンス センターから、[**データ分類**
 |廃棄の証明 (最大 7 年間) | いいえ |はい、処分レビューを使用するか、アイテムがレコードとしてマークされている場合|
 |管理者アクティビティを監査する| はい | はい|
 |保持アクションの監査| いいえ | はい <sup>\*</sup> |
-|保持対象のアイテムの特定 <br /> - コンテンツ検索 <br /> - データ分類ページ、コンテンツ エクスプローラー、アクティビティ エクスプローラー | <br /> 不要 <br /> いいえ | <br /> はい <br /> はい|
+|保持対象のアイテムの特定 <br /> - コンテンツ検索 <br /> - データ分類ページ、コンテンツ エクスプローラー、アクティビティ エクスプローラー | <br /> 不要 <br /> 不要 | <br /> はい <br /> はい|
 
 **脚注:**
 
-<sup>\*</sup> コンテンツをレコードまたは規制レコードとしてマークしない保持ラベルの場合、監査イベントは SharePoint または OneDrive でアイテムが適用済みラベル、変更済みラベル、または削除済みラベルを所有する場合に限定されます。 保持ラベル向けの監査の詳細については、このページの[保持アクションの監査](#auditing-retention-actions) セクションを参照してください。
+<sup>\*</sup>コンテンツをレコードまたは規制レコードとしてマークしない保持ラベルの場合、監査イベントは、SharePoint または OneDrive のアイテムにラベルが適用、変更、または削除された場合に制限されます。保持ラベルの監査の詳細については、このページの「[保持アクションの監査](#auditing-retention-actions)」セクションを参照してください。
 
 ### <a name="combining-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの組み合わせ
 
@@ -424,7 +423,7 @@ Microsoft 365 コンプライアンス センターから、[**データ分類**
 
 ## <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの PowerShell コマンドレット
 
-保持コマンドレットを使用するには、最初に [Office 365 セキュリティ/コンプライアンス センターの PowerShell](/powershell/exchange/connect-to-scc-powershell) に接続する必要があります。 次に、次のいずれかのコマンドレットを使用します。
+保持コマンドレットを使用するには、最初に [ Office 365 セキュリティ/コンプライアンス センターの PowerShell](/powershell/exchange/connect-to-scc-powershell)に接続する必要があります。次に、次のいずれかのコマンドレットを使用します。
 
 - [Get-ComplianceTag](/powershell/module/exchange/get-compliancetag)
 
