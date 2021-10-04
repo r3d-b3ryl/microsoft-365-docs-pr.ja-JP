@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、Veritas からユーザーに YouTube データをインポートおよびアーカイブするコネクタをMicrosoft 365。 このコネクタを使用すると、サードパーティのデータ ソースからデータをアーカイブできます。Microsoft 365。 このデータをアーカイブした後、法的保持、電子情報開示、保持ポリシーなどのコンプライアンス機能を使用して、サードパーティのデータを管理できます。
-ms.openlocfilehash: fb131d27857a1e1e0fdaf01160f7a84e249227de
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 48354460a79cbb8c23086962d17482a3d3419044
+ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164207"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "60088243"
 ---
-# <a name="set-up-a-connector-to-archive-youtube-data-preview"></a>YouTube データをアーカイブするコネクタをセットアップする (プレビュー)
+# <a name="set-up-a-connector-to-archive-youtube-data"></a>YouTube データをアーカイブするコネクタをセットアップする
 
 YouTube からデータをインポートおよびアーカイブするには、Microsoft 365 コンプライアンス センターの Veritas コネクタを使用して、組織のユーザー メールボックスMicrosoft 365します。 Veritas には、サードパーティのデータ ソースからアイテムをキャプチャし、それらのアイテムをデータ ソースにインポートするように構成されたコネクタMicrosoft 365。 コネクタは、チャット、添付ファイル、タスク、メモ、投稿などのコンテンツを YouTube から電子メール メッセージ形式に変換し、それらのアイテムを Microsoft 365 のユーザー メールボックスにインポートします。
 

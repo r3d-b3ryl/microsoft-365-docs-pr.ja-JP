@@ -10,21 +10,25 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 646007176a35506f0c30d6b7092d70f52f762e57
-ms.sourcegitcommit: 835dcaf5d5e0b485dc3ac485ded8943046afe36c
+ms.openlocfilehash: 2c14a493cb496b369a313a3e44600af9940922da
+ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59941981"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "60088099"
 ---
 # <a name="prerequisites-for-guest-accounts"></a>ゲスト アカウントの前提条件
 
 ## <a name="external-collaboration-settings"></a>外部コラボレーションの設定
 
-Microsoft マネージド デスクトップアカウントアクセスには、Azure ADの設定が必要です。 これらの設定は [、Azure portal](https://portal.azure.com) の [外部 **ID/ 外部コラボレーション設定] で調整できます**。
+Microsoft マネージド デスクトップアカウント アクセス用に Azure AD構成をお勧めします。 これらの設定は [、Azure portal](https://portal.azure.com) の [外部 **ID/ 外部コラボレーション設定] で調整できます**。
 
--   [ **ゲスト招待の制限] を** [メンバー ユーザー] に設定し、特定の管理者ロールに割り当てられたユーザーは、メンバーのアクセス許可を持つゲストを含むゲスト ユーザー **を招待できます。**
--   [ **コラボレーションの制限] で**、次のオプションを選択します。
+-   ゲスト **ユーザー アクセスの場合**、ゲスト ユーザーに設定すると、ディレクトリ オブジェクトのプロパティ **とメンバーシップへのアクセスが制限されています**
+-   [ **ゲスト招待の設定**] で、[メンバー ユーザー] に設定し、特定の管理者ロールに割り当てられたユーザーは、メンバーのアクセス許可を持つゲストを含むゲスト **ユーザーを招待できます。**
+
+Microsoft マネージド デスクトップアカウントアクセスには、Azure AD構成が必要です。 この設定は [、Azure portal](https://portal.azure.com) の [外部 **ID/ 外部コラボレーション設定] で調整できます**。
+
+-   **[コラボレーションの制限]** で、次のオプションを選択します。
     -   [任意の **ドメインへの招待の** 送信を許可する ( 最も包括的な) ] を選択した場合、他の構成は必要ありません。
     -   [指定した **ドメインへの** 招待を拒否する] を選択した場合は、Microsoft.com ドメインに一覧が表示されません。
     -   [指定した **ドメインへの** 招待のみを許可する ] (最も制限の厳しい) を *選択した場合* は、Microsoft.com がターゲット ドメインに表示されます。

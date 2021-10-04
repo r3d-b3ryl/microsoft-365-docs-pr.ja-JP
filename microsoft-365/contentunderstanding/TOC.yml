@@ -26,6 +26,8 @@
       href: rename-an-extractor.md
     - name: 説明の種類
       href: explanation-types-overview.md
+    - name: 説明テンプレートを使用する
+      href: explanation-templates.md
     - name: ドキュメント理解モデルの適用
       href: apply-a-model.md
     - name: フォーム処理モデルを作成

@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: a8fcd811d8211e253b069346de9c00bb738bf981
-ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
+ms.openlocfilehash: ed064be83a93c913b13de62dbd14936c38accd31
+ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/21/2021
-ms.locfileid: "59460081"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "60088207"
 ---
 # <a name="get-started-with-insider-risk-management"></a>インサイダー リスクの管理の概要
 
@@ -262,6 +262,9 @@ Defender for Endpoint を [インサイダー](/windows/security/threat-protecti
     - **SharePoint サイト**: **[SharePoint サイトの追加]** を選択し、アクセスして優先化する SharePoint サイトを選択します。 たとえば, *"group1@contoso.sharepoint.com/sites/group1"*。
     - **機密情報の種類**: **[優先する機密情報 の種類を追加する]** を選択し、優先順位を付ける機密性の高い種類を選択します。 たとえば、"*米国の銀行口座番号*" と "*クレジット カード番号*" を入力。
     - **秘密度ラベル**: **[秘密度ラベルの追加]** を選択して優先化したいラベルを選択します。 たとえば、*"機密情報"* や *"シークレット"*。
+
+    >[!NOTE]
+    >ポリシーを構成し、優先度の高い Share Point サイトを選択するユーザーは、アクセスSharePointを持つサイトを選択できます。 現在SharePointのユーザーがポリシーで選択できない場合は、必要なアクセス許可を持つ別のユーザーがポリシーのサイトを後で選択するか、現在のユーザーに必要なサイトへのアクセス権を与えられる必要があります。
 
 12. [**次へ**] を選んで続行します。
 13. **[インジケーターとトリガーされるイベント]** ページで、**インサイダー リスク設定** > **インジケーター** ページで利用可能と定義した [インジケーター](insider-risk-management-settings.md#indicators) が表示されます。 ウィザードの最初に *データ漏洩* テンプレートを選択した場合、ポリシーのインジケーターをトリガーしたり、組み込みのトリガー イベントを選択したりするには、 **DLP ポリシー** ドロップダウン リストから DLP ポリシーを選択する必要があります。

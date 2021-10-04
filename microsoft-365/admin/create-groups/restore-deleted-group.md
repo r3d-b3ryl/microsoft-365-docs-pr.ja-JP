@@ -12,6 +12,7 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -21,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: 削除されたグループは 30 日間保持され、グループを復元できます。 30 日後、グループとそのコンテンツは完全に削除されます。
-ms.openlocfilehash: 30fa44a50ea6a65ae3cf71cb91e7d8ab0fd2e200
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: fb703240ebec219c0a1d15791782ea72be88a3a4
+ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773197"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "60087775"
 ---
 # <a name="restore-a-deleted-microsoft-365-group"></a>削除された Microsoft 365 グループを復元する
 
@@ -49,6 +50,8 @@ ms.locfileid: "59773197"
 - Teams
 
 - Yammerグループとグループ のコンテンツ (Microsoft 365グループがグループから作成されたYammer)
+
+- Power BI クラシック[ワークスペース](/power-bi/collaborate-share/service-create-workspaces)
 
 > [!NOTE]
 > この記事では、グループの復元Microsoft 365説明します。 他のすべてのグループは、一度削除すると復元できません。

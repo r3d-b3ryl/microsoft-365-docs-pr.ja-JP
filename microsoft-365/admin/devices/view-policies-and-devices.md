@@ -23,13 +23,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6b70fa27-d171-4593-8ecf-f78bb4ed2e99
-description: グローバル管理者資格情報を使用してビジネス向け Microsoft 365にサインインして、デバイス ポリシーとアクションを表示します。
-ms.openlocfilehash: 2245f979f67d2a2e48a60516faa9888ccb416e23
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+description: デバイス ポリシーとアクションを表示するには、ビジネス向け Microsoft 365サインインします。
+ms.openlocfilehash: 62644c574ea642b63b394e1fdb3c56aae559836e
+ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59933245"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "60087787"
 ---
 # <a name="view-and-manage-policies-and-devices"></a>ポリシーとデバイスの表示と管理
 

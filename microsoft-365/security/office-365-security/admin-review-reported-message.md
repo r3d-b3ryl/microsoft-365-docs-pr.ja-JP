@@ -13,19 +13,16 @@ ms.collection:
 description: 報告されたメッセージを確認し、ユーザーにフィードバックを与える方法について学習します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ef08b07226d8ce038547b972163d87a557099478
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: de83846e596185687817af6e89957f455ce7b9a1
+ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401028"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "60087823"
 ---
 # <a name="admin-review-for-reported-messages"></a>報告されたメッセージの管理者によるレビュー
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
-> [!NOTE]
-> この記事の情報は、商用リリース前に大幅に変更される可能性があるプレビュー製品に関連しています。 このドキュメントは、評価と探索の目的でのみ提供されています。
 
 **適用対象**
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)

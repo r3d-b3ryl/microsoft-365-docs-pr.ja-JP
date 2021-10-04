@@ -16,14 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 description: KQL エディターを使用して、コンテンツ検索、Core 電子情報開示、および電子情報開示の各ページで電子情報開示検索クエリをAdvanced eDiscovery。
-ms.openlocfilehash: 185ab0396166d54e4a1e11f03a3e3613d24fff4b
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: 571612cc2032b6241923cb6bba2a730a5d821c8a
+ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59989156"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "60088219"
 ---
-# <a name="use-the-kql-editor-to-build-search-queries"></a>KQL エディターを使用して検索クエリを作成する
+# <a name="use-the-kql-editor-to-build-search-queries-preview"></a>KQL エディターを使用して検索クエリを作成する (プレビュー)
 
 電子情報開示ツール検索の新しい KQL クエリ エクスペリエンスMicrosoft 365コンテンツ検索、Core 電子情報開示、および電子情報開示で検索クエリを作成するときにフィードバックとガイダンスを提供Advanced eDiscovery。 エディターにクエリを入力すると、サポートされている検索可能なプロパティと条件のオートコンプリートが提供され、標準のプロパティと条件でサポートされる値の一覧が提供されます。 たとえば、クエリで email プロパティを指定すると、エディターに、選択できるサポートされている値の `kind` 一覧が表示されます。 また、KQL エディターは、検索を実行する前に修正できるクエリ エラーをリアルタイムで表示します。 何より、複雑なクエリをエディターに直接貼り付け、標準条件ビルダーのキーワードカードと条件カードを使用して手動でクエリを作成する必要はありません。
   
@@ -83,7 +83,7 @@ KQL エディターは、検索クエリの潜在的なエラーを検出し、�
 
 この場合、潜在的なエラー ヒントを使用して、クエリのトラブルシューティングと修正を行えます。
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 - 条件ビルダーと KQL エディターを切り替えできます。 たとえば、条件ビルダーを使用して [キーワード] ボックスと複数の条件カードを使用してクエリを構成する場合、結果のクエリを KQL エディターに表示できます。 ただし、KQL エディターで複雑なクエリ (キーワードと条件を含む) を作成した場合、結果のクエリは、条件ビルダーで表示するときに [キーワード] ボックスにのみ表示されます。
 
