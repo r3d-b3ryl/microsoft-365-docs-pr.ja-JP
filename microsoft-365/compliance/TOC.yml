@@ -473,7 +473,7 @@
               href: archive-xslt-xml-data.md
             - name: Yieldbroker
               href: archive-yieldbroker-data.md
-            - name: YouTube (プレビュー)
+            - name: YouTube
               href: archive-youtube-data.md
             - name: Zoom会議
               href: archive-zoommeetings-data.md
@@ -638,7 +638,7 @@
               href: content-search-reference.md
             - name: キーワード クエリと検索条件
               href: keyword-queries-and-search-conditions.md
-            - name: KQL エディターを使用して検索クエリを作成する
+            - name: KQL エディターを使用して検索クエリを作成する (プレビュー)
               href: ediscovery-kql-editor.md
             - name: 検索アクセス許可のフィルター処理を構成する
               href: permissions-filtering-for-content-search.md
@@ -716,7 +716,7 @@
               href: assign-ediscovery-permissions.md
             - name: キーワード クエリと検索条件
               href: keyword-queries-and-search-conditions.md
-            - name: KQL エディターを使用して検索クエリを作成する
+            - name: KQL エディターを使用して検索クエリを作成する (プレビュー)
               href: ediscovery-kql-editor.md
             - name: コンプライアンスの境界を設定する
               href: set-up-compliance-boundaries.md
@@ -811,7 +811,7 @@
               href: collection-statistics-reports.md
             - name: コレクションの検索クエリを作成する
               href: building-search-queries.md
-            - name: KQL エディターを使用して検索クエリを作成する
+            - name: KQL エディターを使用して検索クエリを作成する (プレビュー)
               href: ediscovery-kql-editor.md
             - name: キーワード クエリと検索条件
               href: keyword-queries-and-search-conditions.md

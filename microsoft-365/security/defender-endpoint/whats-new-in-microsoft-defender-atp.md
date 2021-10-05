@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 62f62e421c789f419eeabe174b0d05ae36e3dd4b
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: db1050486ba5b9a4238c8759e23ea449723c74f0
+ms.sourcegitcommit: d1eb1c26609146ff5a59b2a1b005dd7ac43ae64e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042604"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60099823"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の新機能
 
@@ -59,6 +59,9 @@ ms.locfileid: "60042604"
 - [iOS の Defender for Endpoint の新機能](ios-whatsnew.md)
 - [Defender for Endpoint on Linux の新機能](linux-whatsnew.md)
 
+## <a name="september-2021"></a>2021 年 9 月
+
+- [Web コンテンツ フィルタリング](web-content-filtering.md) <br/>Microsoft Defender for Endpoint の Web 保護機能の一環として、Web コンテンツ フィルターを使用すると、組織のセキュリティ チームはコンテンツ カテゴリに基づいて Web サイトへのアクセスを追跡および規制できます。 カテゴリには、アダルト コンテンツ、高帯域幅、法的責任、余暇、未分類が含まれます。 これらのカテゴリの 1 つ以上に分類される多くの Web サイトは悪意のあるものではない可能性があります。コンプライアンス規制、帯域幅の使用、その他の懸念により、問題が発生する可能性があります。 [Web コンテンツ フィルターの詳細については、次のページを参照してください](web-content-filtering.md)。
 
 ## <a name="august-2021"></a>2021 年 8 月
 

@@ -16,14 +16,14 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 09/08/2021
+ms.date: 10/04/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 173fd730edfb2fe0ca535a45da07abfea50d5f4d
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 794c735ecf84efe57b9bb4c88f20f599f25a6a8a
+ms.sourcegitcommit: d1eb1c26609146ff5a59b2a1b005dd7ac43ae64e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043325"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60099635"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>更新Microsoft Defender ウイルス対策を管理し、基準計画を適用する
 
@@ -517,6 +517,9 @@ Microsoft Defender ウイルス対策プラットフォーム更新 [プログ�
 
 テクニカル サポート (のみ) フェーズでは、Microsoft Customer Service & サポートと Microsoft のマネージ サポートサービス (プレミア サポートなど) を通じて、商業的に合理的なサポート インシデントが提供されます。 サポート インシデントで、さらなるガイダンスのために開発へのエスカレーションが必要な場合、セキュリティ以外の更新プログラムが必要な場合、またはセキュリティ更新プログラムが必要な場合は、最新のプラットフォーム バージョンまたは中間更新プログラム (*)へのアップグレードを求める要求が表示されます。
 
+> [!NOTE]
+> Microsoft Defender ウイルス対策 プラットフォーム更新プログラムを手動で展開する場合、またはスクリプトまたは Microsoft 以外の管理製品を使用して Microsoft Defender ウイルス対策 プラットフォーム更新プログラムを展開する場合は、最新バージョンのプラットフォーム更新 `4.18.2001.10` プログラム (N-2) がインストールされる前に[、Microsoft Update カタログ](https://www.catalog.update.microsoft.com/Search.aspx?q=4.18.2001.10)からバージョンがインストールされていることを確認してください。
+
 ### <a name="platform-version-included-with-windows-10-releases"></a>プラットフォームのバージョンは、Windows 10リリースに含まれています
 
 次の表に、最新Microsoft Defender ウイルス対策リリースに同梱されているプラットフォームとエンジンのWindows 10示します。<br/><br/>
@@ -549,10 +552,10 @@ Windows 10 (Enterprise、Pro、およびホーム エディション)、Windows 
 &ensp;署名バージョン: **1.347.891.0**<br/>
 
 ### <a name="fixes"></a>修正プログラム
-- なし
+- None
 
-### <a name="additional-information"></a>その他の情報
-- なし
+### <a name="additional-information"></a>ページの先頭へ
+- None
 <br/>
 </details><details>
 <summary>1.1.2108.01</summary>
@@ -563,10 +566,10 @@ Windows 10 (Enterprise、Pro、およびホーム エディション)、Windows 
 &ensp;署名バージョン: **1.343.2244.0**<br/>
 
 ### <a name="fixes"></a>修正プログラム
-- なし
+- None
 
-### <a name="additional-information"></a>その他の情報
-- なし
+### <a name="additional-information"></a>ページの先頭へ
+- None
 <br/>
 </details><details>
 <summary>1.1.2107.02</summary>
@@ -577,10 +580,10 @@ Windows 10 (Enterprise、Pro、およびホーム エディション)、Windows 
 &ensp;署名バージョン: **1.343.658.0**<br/>
 
 ### <a name="fixes"></a>修正プログラム
-- なし
+- None
 
-### <a name="additional-information"></a>その他の情報
-- なし
+### <a name="additional-information"></a>ページの先頭へ
+- None
 <br/>
 </details><details>
 <summary>1.1.2106.01</summary>
@@ -591,10 +594,10 @@ Windows 10 (Enterprise、Pro、およびホーム エディション)、Windows 
 &ensp;署名バージョン: **1.339.1923.0**<br/>
 
 ### <a name="fixes"></a>修正プログラム
-- なし
+- None
 
-### <a name="additional-information"></a>その他の情報
-- なし
+### <a name="additional-information"></a>ページの先頭へ
+- None
 <br/>
 </details><details>
 <summary>1.1.2105.01</summary>
@@ -605,10 +608,10 @@ Windows 10 (Enterprise、Pro、およびホーム エディション)、Windows 
 &ensp;署名バージョン: **1.339.42.0**<br/>
 
 ### <a name="fixes"></a>修正プログラム
-- なし
+- None
 
-### <a name="additional-information"></a>その他の情報
-- なし
+### <a name="additional-information"></a>ページの先頭へ
+- None
 <br/>
 </details><details>
 <summary>1.1.2104.01</summary>
@@ -619,10 +622,10 @@ Windows 10 (Enterprise、Pro、およびホーム エディション)、Windows 
 &ensp;署名バージョン: **1.335.232.0**<br/>
 
 ### <a name="fixes"></a>修正プログラム
-- なし
+- None
 
-### <a name="additional-information"></a>その他の情報
-- なし
+### <a name="additional-information"></a>ページの先頭へ
+- None
 <br/>
 </details><details>
 <summary>1.1.2103.01</summary>
@@ -633,10 +636,10 @@ Windows 10 (Enterprise、Pro、およびホーム エディション)、Windows 
 &ensp;署名バージョン: **1.331.2302.0**<br/>
 
 ### <a name="fixes"></a>修正プログラム
-- なし
+- None
 
-### <a name="additional-information"></a>その他の情報
-- なし
+### <a name="additional-information"></a>ページの先頭へ
+- None
 <br/>
 </details><details>
 <summary>1.1.2102.03</summary>
@@ -647,10 +650,10 @@ Windows 10 (Enterprise、Pro、およびホーム エディション)、Windows 
 &ensp;署名バージョン: **1.331.174.0**<br/>
 
 ### <a name="fixes"></a>修正プログラム
-- なし
+- None
 
-### <a name="additional-information"></a>その他の情報
-- なし
+### <a name="additional-information"></a>ページの先頭へ
+- None
 <br/>
 </details><details>
 <summary>1.1.2101.02</summary>
@@ -661,10 +664,10 @@ Windows 10 (Enterprise、Pro、およびホーム エディション)、Windows 
 &ensp;署名バージョン: **1.329.1796.0**<br/>
 
 ### <a name="fixes"></a>修正プログラム
-- なし
+- None
 
-### <a name="additional-information"></a>その他の情報
-- なし
+### <a name="additional-information"></a>ページの先頭へ
+- None
 <br/>
 </details><details>
 <summary>1.1.2012.01</summary>
@@ -675,10 +678,10 @@ Windows 10 (Enterprise、Pro、およびホーム エディション)、Windows 
 &ensp;署名バージョン: **1.327.1991.0**<br/>
 
 ### <a name="fixes"></a>修正プログラム
-- なし
+- None
 
-### <a name="additional-information"></a>その他の情報
-- なし
+### <a name="additional-information"></a>ページの先頭へ
+- None
 <br/>
 </details><details>
 <summary>1.1.2011.02</summary>
@@ -689,9 +692,9 @@ Windows 10 (Enterprise、Pro、およびホーム エディション)、Windows 
 &ensp;署名バージョン: **1.327.658.0**<br/>
 
 ### <a name="fixes"></a>修正プログラム
-- なし
+- None
 
-### <a name="additional-information"></a>その他の情報
+### <a name="additional-information"></a>ページの先頭へ
 - 更新されたMicrosoft Defender ウイルス対策署名
 <br/>
 </details><details>
@@ -703,10 +706,10 @@ Windows 10 (Enterprise、Pro、およびホーム エディション)、Windows 
 &ensp;署名バージョン: **1.327.344.0**<br/>
 
 ### <a name="fixes"></a>修正プログラム
-- なし
+- None
 
-### <a name="additional-information"></a>その他の情報
-- なし
+### <a name="additional-information"></a>ページの先頭へ
+- None
 <br/>
 </details><details>
 <summary>1.1.2009.10</summary>
@@ -717,9 +720,9 @@ Windows 10 (Enterprise、Pro、およびホーム エディション)、Windows 
 &ensp;署名バージョン: **1.327.2216.0**<br/>
 
 ### <a name="fixes"></a>修正プログラム
-- なし
+- None
 
-### <a name="additional-information"></a>その他の情報
+### <a name="additional-information"></a>ページの先頭へ
 - RS1 以降の OS Windows 10インストール イメージのサポートが追加されました。
 <br/>
 </details>

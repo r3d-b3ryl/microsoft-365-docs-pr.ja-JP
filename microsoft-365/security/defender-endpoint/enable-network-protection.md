@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: dc10c8ee9147cbee0a2946eaf28d91f80743f4f5
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 7c27e1264de8673e1cc366df29ecd57e0cf8431a
+ms.sourcegitcommit: d1eb1c26609146ff5a59b2a1b005dd7ac43ae64e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59489639"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60099695"
 ---
 # <a name="turn-on-network-protection"></a>ネットワーク保護を有効にする
 
@@ -35,7 +35,7 @@ ms.locfileid: "59489639"
 
 [ネットワーク保護](network-protection.md) は、従業員がアプリケーションを使用して、インターネット上でフィッシング詐欺、悪用、その他の悪意のあるコンテンツをホストする可能性のある危険なドメインにアクセスするのを防ぐのに役立ちます。 テスト環境 [でネットワーク保護](evaluate-network-protection.md) を監査して、ブロックするアプリを確認してから有効にできます。
 
-[ネットワーク フィルター構成オプションの詳細](/mem/intune/protect/endpoint-protection-windows-10#network-filtering)
+[ネットワーク フィルター構成オプションの詳細について説明します。](/mem/intune/protect/endpoint-protection-windows-10#network-filtering)
 
 ## <a name="check-if-network-protection-is-enabled"></a>ネットワーク保護が有効になっているか確認する
 
@@ -53,7 +53,7 @@ ms.locfileid: "59489639"
    - 1、または **On**
    - 2、または **監査** モード
 
-    ![ネットワーク保護レジストリ キー。](../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png)
+    :::image type="content" alt-text="ネットワーク保護レジストリ キー。" source="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png" lightbox="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png":::
 
 ## <a name="enable-network-protection"></a>ネットワーク保護を有効にする
 
@@ -63,10 +63,12 @@ ms.locfileid: "59489639"
 - [モバイル デバイス管理 (MDM)](#mobile-device-management-mdm)
 - [Microsoft エンドポイント マネージャー / Intune](#microsoft-endpoint-manager-formerly-intune)
 - [グループ ポリシー](#group-policy)
+- [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
 
 ### <a name="powershell"></a>PowerShell
 
 1. **[powershell]** と入力スタート メニュー **右クリックし**、[管理者Windows PowerShell **実行] を選択します**。
+
 2. 次のコマンドレットを入力します。
 
     ```PowerShell
@@ -123,8 +125,8 @@ ms.locfileid: "59489639"
     - **無効 (既定)** - ネットワーク保護機能が機能しません。 ユーザーは悪意のあるドメインへのアクセスをブロックされません。
     - **監査モード**- ユーザーが悪意のある IP アドレスまたはドメインにアクセスした場合、イベントはイベント ログWindowsされます。 ただし、ユーザーはアドレスへのアクセスをブロックされません。
 
-> [!IMPORTANT]
-> ネットワーク保護を完全に有効にするには、[グループ ポリシー] オプションを[有効]に設定し、[オプション] ドロップダウン メニューの [ブロック] を選択する必要があります。
+   > [!IMPORTANT]
+   > ネットワーク保護を完全に有効にするには、[グループ ポリシー] オプションを[有効]に設定し、[オプション] ドロップダウン メニューの [ブロック] を選択する必要があります。
 
 レジストリ エディターを使用して、ローカル コンピューターでネットワーク保護が有効になっているか確認します。
 
@@ -136,6 +138,45 @@ ms.locfileid: "59489639"
    - 0=Off
    - 1=On
    - 2=Audit
+
+### <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
+
+1. Configuration Manager コンソールを開きます。
+
+2. Exploit Guard **の [アセットと**  >  **コンプライアンスEndpoint Protection Windows Defender**  >  **に移動します**。 
+
+3. リボン **から [Exploit Guard ポリシーの作成** ] を選択して、新しいポリシーを作成します。
+   - 既存のポリシーを編集するには、ポリシーを選択し、リボンまたは右クリック メニューから [プロパティ] を選択します。 [ネットワーク保護 **] タブから** [ネットワーク保護の構成 **] オプションを編集** します。  
+
+4. [全般 **] ページ** で、新しいポリシーの名前を指定し、[ネットワーク保護] オプション **が有効になっているか** 確認します。 
+
+5. [ネットワーク保護 **] ページ** で、[ネットワーク保護の構成] オプションで次のいずれかの **設定を選択** します。
+   - **Block**
+   - **監査**
+   - **Disabled**
+   
+6. 残りの手順を完了し、ポリシーを保存します。 
+
+7. リボンから [展開] **を選択** して、ポリシーをコレクションに展開します。
+
+> [!IMPORTANT]
+> Configuration Manager から Exploit Guard ポリシーを展開すると、展開を削除した場合、Exploit Guard の設定はクライアントから削除されません。 `Delete not supported` クライアントの Exploit Guard 展開を削除すると、Configuration Manager クライアントの ExploitGuardHandler.log に記録されます。 <!--CMADO8538577-->
+> 次の PowerShell スクリプトを SYSTEM コンテキストで実行して、これらの設定を削除できます。<!--CMADO9907132-->
+>
+> ```powershell
+> $defenderObject = Get-WmiObject -Namespace "root/cimv2/mdm/dmmap" -Class "MDM_Policy_Config01_Defender02" -Filter "InstanceID='Defender' and ParentID='./Vendor/MSFT/Policy/Config'"
+> $defenderObject.AttackSurfaceReductionRules = $null
+> $defenderObject.AttackSurfaceReductionOnlyExclusions = $null
+> $defenderObject.EnableControlledFolderAccess = $null
+> $defenderObject.ControlledFolderAccessAllowedApplications = $null
+> $defenderObject.ControlledFolderAccessProtectedFolders = $null
+> $defenderObject.EnableNetworkProtection = $null
+> $defenderObject.Put()
+>
+> $exploitGuardObject = Get-WmiObject -Namespace "root/cimv2/mdm/dmmap" -Class "MDM_Policy_Config01_ExploitGuard02" -Filter "InstanceID='ExploitGuard' and ParentID='./Vendor/MSFT/Policy/Config'"
+> $exploitGuardObject.ExploitProtectionSettings = $null
+> $exploitGuardObject.Put()
+>```  
 
 ## <a name="see-also"></a>関連項目
 

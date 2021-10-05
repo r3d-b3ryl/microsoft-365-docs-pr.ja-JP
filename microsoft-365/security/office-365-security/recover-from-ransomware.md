@@ -15,12 +15,12 @@ ms.collection:
 description: Microsoft 365管理者は、ランサムウェア攻撃から回復する方法を学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 94f45fd03d33fb5c1111e8a9098acc21b4830b01
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 9659a68e69f732203a20853320b2e35cd268a7c8
+ms.sourcegitcommit: d1eb1c26609146ff5a59b2a1b005dd7ac43ae64e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60041710"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60099755"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>ユーザーのランサムウェア攻撃から回復Microsoft 365
 
@@ -33,7 +33,6 @@ ms.locfileid: "60041710"
 
 組織を保護するためにあらゆる予防措置を講じた場合でも、ランサムウェア攻撃の被害に陥 [る可能性](/windows/security/threat-protection/intelligence/ransomware-malware) があります。 ランサムウェアは大きなビジネスであり、今日の脅威の状況ではMicrosoft 365高度な攻撃のターゲットが増[え続えています](https://i.blackhat.com/USA21/Wednesday-Handouts/us-21-Cloudy-With-A-Chance-Of-APT-Novel-Microsoft-365-Attacks-In-The-Wild.pdf)。
 
-
 この記事の手順では、データを回復し、感染の内部拡散を停止する最良の機会を提供します。 開始する前に、次の項目を考慮する必要があります。
 
 - 身代金の支払いによってファイルへのアクセスが返されるという保証はありません。 実際、身代金を支払って、より多くのランサムウェアのターゲットとなる可能性があります。
@@ -44,13 +43,9 @@ ms.locfileid: "60041710"
 
 - 攻撃とその結果に迅速に対応することが重要です。 待つ時間が長くなると、影響を受けるデータを回復できる可能性は低くなります。
 
-## <a name="step-1-verify-your-third-party-backups"></a>手順 1: サードパーティのバックアップを確認する
+## <a name="step-1-verify-your-backups"></a>手順 1: バックアップを確認する
 
-Microsoft 365 コンプライアンス スイートのツールは、組織の法的および規制基準を満[](/microsoft-365/compliance/)たして設計されています。そのため、ベスト プラクティスとして、サードパーティのアプリ[](https://www.microsoft.com/servicesagreement)とサービスを使用して Microsoft 365 コンテンツとデータを定期的にバックアップすることをお勧めします。
-
-データを確実に復元するには、定期的にバックアップをテストし、攻撃が発生した場合に復元可能なバックアップを検証することが重要です。 実際の攻撃の場合は、環境からランサムウェア ペイロード (マルウェア)を削除した後、Microsoft 365 環境に不正なアクセスがないのを確認した後まで、これらの復元を完了しないでください。
-
-バックアップがランサムウェアの影響も受けずに、サードパーティサービスを環境からエアギャッピングする必要があります。
+オフライン バックアップがある場合は、環境からランサムウェア ペイロード (マルウェア) を削除した後、および Microsoft 365 環境に承認されていないアクセスが存在しなかったことを確認した後に、暗号化されたデータを復元できる可能性があります。
 
 バックアップが作成されていない場合、またはバックアップがランサムウェアの影響を受けた場合は、この手順を省略できます。
 

@@ -64,6 +64,9 @@
 #### [プロキシとインターネット接続の設定を構成する](configure-proxy-internet.md)
 #### [オンボーディングまたはオフボーディングの通知ルールを作成する](onboarding-notification.md)
 
+#### [アプリケーション ライセンス条項](mde-terms-windows.md)
+
+
 ### [他のオペレーティング システム上の Microsoft Defender for Endpoint]()
 #### [Windows 以外のデバイスをオンボードする](configure-endpoints-non-windows.md)
 
@@ -103,7 +106,7 @@
 
 ##### [プライバシー](mac-privacy.md)
 ##### [リソース](mac-resources.md)
-
+##### [アプリケーション ライセンス条項](mde-terms-mac.md)
 
 #### [iOS 用 Microsoft Defender for Endpoint API]()
 ##### [iOS 用 Microsoft Defender for Endpoint の概要](microsoft-defender-endpoint-ios.md)
@@ -165,6 +168,9 @@
 
 ##### [トラブルシューティング]()
 ###### [問題のトラブルシューティング](android-support-signin.md)
+
+##### [Microsoft Defender for Endpoint アプリケーション ライセンス条項](mde-terms-mobile.md) 
+
 
 ### [オンボーディングに関する問題のトラブルシューティング]()
 #### [オンボーディング中の問題のトラブルシューティング](troubleshoot-onboarding.md)

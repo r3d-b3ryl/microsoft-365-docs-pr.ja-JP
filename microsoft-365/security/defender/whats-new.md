@@ -18,18 +18,18 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 3c35f8315423bd7245546835e5963c7968eb4c12
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 5ebd798baa9b9c4fb759defbf0a650d4835568b8
+ms.sourcegitcommit: d1eb1c26609146ff5a59b2a1b005dd7ac43ae64e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483989"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60099791"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender の新機能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-> Microsoft 365 Defender を体験してみませんか? [ラボ環境で評価する](m365d-evaluation.md?ocid=cx-docs-MTPtriallab)ことも、[実稼働環境でパイロット プロジェクトを実行する](m365d-pilot.md?ocid=cx-evalpilot)こともできます。
+> Microsoft 365 Defender を体験しますか? [ラボ環境で評価](m365d-evaluation.md?ocid=cx-docs-MTPtriallab)、または[運用でパイロット プロジェクトを実行](m365d-pilot.md?ocid=cx-evalpilot)することができます。
 >
 
 次の機能は、プレビュー版または一般公開 (GA) の最新リリースMicrosoft 365 Defender。
@@ -51,6 +51,8 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 ## <a name="september-2021"></a>2021 年 9 月
 - (GA)Microsoft Defender for Office 365イベント データは、イベント ストリーミング API Microsoft 365 Defender使用できます。 イベントの種類の可用性と状態は、ストリーミング API のサポートされるイベントMicrosoft 365 Defender[で確認できます](supported-event-types.md)。
 - (GA)高度なOffice 365利用可能なデータの Microsoft Defender が一般提供されています。
+- (プレビュー)インシデントとアラートをユーザー アカウントに割り当てる <br> インシデントに関連付けられているすべてのアラートを、インシデントの [インシデントの管理] ウィンドウまたはアラートの [管理] アラート ウィンドウの[割り当て] からユーザー アカウントに割り当てできます。 
+
 
 ## <a name="august-2021"></a>2021 年 8 月
 - (プレビュー)Microsoft Defender for Office 365高度な検索で利用可能なデータ

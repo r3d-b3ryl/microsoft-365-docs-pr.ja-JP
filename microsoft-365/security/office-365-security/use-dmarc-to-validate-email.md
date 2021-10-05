@@ -18,12 +18,12 @@ ms.collection:
 description: Domain-based Message Authentication, Reporting, and Conformance (DMARC) を構成して、組織から送信されたメッセージを検証する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a92c6ec50fb60d15e027a11163aad6b2186e5304
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 68a3f9bc2b7752ee59c040ebaca54e58008479e9
+ms.sourcegitcommit: d1eb1c26609146ff5a59b2a1b005dd7ac43ae64e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59217894"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60099747"
 ---
 # <a name="use-dmarc-to-validate-email"></a>DMARC を使用してメールを検証する
 
@@ -211,7 +211,7 @@ DMARC は、メール フローの他の部分に影響を与えないように�
 
    DMARC は、ポリシーを DNS の TXT レコードとして公開することで実装され、階層的です (たとえば、contoso.com に公開されたポリシーは、サブドメインに別のポリシーが明示的に定義されていない限り、sub.domain.contonos.com に適用されます)。 これは、より広い範囲をカバーするために、より少ない数の高レベル DMARC レコードを指定できる場合があるため、便利です。 サブドメインがトップ レベル ドメインの DMARC レコードを継承しないようにするには、明示的なサブドメイン DMARC レコードを構成するように注意する必要があります。
 
-   また、`sp=reject` 値を追加することにより、サブドメインがメールを送信してはならないときに DMARC にワイルドカード タイプのポリシーを追加できます。 例:
+   また、`sp=reject` 値を追加することにより、サブドメインがメールを送信してはならないときに DMARC にワイルドカード タイプのポリシーを追加できます。次に例を示します。
 
    ```text
    _dmarc.contoso.com. TXT "v=DMARC1; p=reject; sp=reject; ruf=mailto:authfail@contoso.com; rua=mailto:aggrep@contoso.com"
@@ -219,7 +219,7 @@ DMARC は、メール フローの他の部分に影響を与えないように�
 
 ## <a name="how-microsoft-365-handles-outbound-email-that-fails-dmarc"></a>Microsoft 365 が DMARC に失敗した送信メールを処理する方法
 
-メッセージが Microsoft 365 から送信され、DMARC に失敗し、ポリシーを p=quarantine または p=reject に設定していると、メッセージは「[送信メッセージにおける危険度の高い配信プール](high-risk-delivery-pool-for-outbound-messages.md)」によってルーティングされます。 送信メールの上書きはありません。
+メッセージが Microsoft 365 から送信され、DMARC に失敗し、ポリシーを p=quarantine または p=reject に設定していると、メッセージは「[送信メッセージにおける危険度の高い配信プール](high-risk-delivery-pool-for-outbound-messages.md)」によってルーティングされます。送信メールの上書きはありません。
 
 DMARC 拒否ポリシー (p=reject) を発行すると、どの顧客も Microsoft 365 ではドメインを偽装できなくなります。メッセージは、サービスを通じたメッセージ送信の中継時に、ドメインの SPF または DKIM をパスできないためです。ただし、DMARC 拒否ポリシーを発行していても、すべてのメールが Microsoft 365 で認証されている場合、前述の説明どおりに受信メールの一部はスパムとしてのマークが付けられます。それ以外のメールは、SPF を発行していない場合に、サービスを通じて送信を中継するようにしていると拒否されます。 これは、DMARC TXT レコードの作成時に、ドメインの代理としてメールを送信するサーバーの一部の IP アドレスとアプリを含め忘れている場合などに発生します。
 
@@ -274,6 +274,6 @@ DMARC の詳細情報が必要ですか。以下のリソースが役に立ち�
 
 [Microsoft 365 において Sender Policy Framework (SPF) を使用して、スプーフィングを防止する方法](how-office-365-uses-spf-to-prevent-spoofing.md)
 
-[Microsoft 365 で SPF を設定して、スプーフィングを防止する](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+[**Microsoft 365 で SPF を設定して、スプーフィングを防止する**](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
-[DKIM を使用して、Microsoft 365 のカスタム ドメインから送信される送信電子メールを検証する](use-dkim-to-validate-outbound-email.md)
+[**DKIM を使用して、Microsoft 365 のカスタム ドメインから送信される送信電子メールを検証する**](use-dkim-to-validate-outbound-email.md)
