@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 0bfbd44e0e097148800501c5bed3b1b3db2dbbc9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d5d713b142ca65500366bca43564d35edf18a450
+ms.sourcegitcommit: d1a93f25323a0e6ce3b898bf9dc57dcef27eda67
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214974"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60126952"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender for Endpoint on Mac の新機能
 
@@ -37,6 +37,15 @@ ms.locfileid: "59214974"
 
 > [!IMPORTANT]
 > macOS 11 (Big Sur) では、Microsoft Defender for Endpoint には追加の構成プロファイルが必要です。 以前のバージョンの macOS からアップグレードする既存の顧客の場合は、このページに記載されている追加の構成プロファイルを [必ず展開してください](mac-sysext-policies.md)。
+
+## <a name="1014110-20121072141100"></a>101.41.10 (20.121072.14110.0)
+
+- コマンド ライン ツールに新しいスイッチを追加しました。
+  - オンデマンド スキャンの並列処理の程度を制御します。 これは、 を使用して構成できます `mdatp config maximum-on-demand-scan-threads --value [number-between-1-and-64]` 。 既定では、並列処理の程度が `2` 使用されます。
+  - セキュリティ インテリジェンス更新プログラムが有効または無効にされた後のスキャンを制御します。 これは、 を使用して構成できます `mdatp config scan-after-definition-update --value [enabled/disabled]` 。 既定では、 に設定されています `enabled` 。
+  - オンデマンド スキャン中にアーカイブをスキャンするかどうかを制御します。 これは、 を使用して構成できます `mdatp config scan-archives --value [enabled/disabled]` 。 既定では、 に設定されています `enabled` 。
+- 製品ログ レベルを変更するには、昇格が必要になります。
+- バグ修正&パフォーマンスの向上
 
 ## <a name="1014084-20121071140840"></a>101.40.84 (20.121071.14084.0)
 

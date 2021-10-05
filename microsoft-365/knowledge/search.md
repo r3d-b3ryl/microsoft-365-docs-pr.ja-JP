@@ -8,14 +8,14 @@ audience: admin
 ms.topic: article
 ms.service: o365-administration
 search.appverid: ''
-localization_priority: None
+localization_priority: medium
 description: トピックを検索する方法については、Microsoft Viva トピック。
-ms.openlocfilehash: 525ec03621d28c26ecdc717648b3e9d6dcf51024
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2ccdffef034cbdc42d50d3fa29822e084c73a10d
+ms.sourcegitcommit: d1a93f25323a0e6ce3b898bf9dc57dcef27eda67
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179559"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60126784"
 ---
 # <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>[Microsoft Searchを使用して、トピックを検索Microsoft Viva トピック
 

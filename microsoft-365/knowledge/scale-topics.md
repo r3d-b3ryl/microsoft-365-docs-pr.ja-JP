@@ -11,14 +11,14 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
-localization_priority: None
+localization_priority: medium
 description: ビバ トピックを使用して組織内の多くのトピックを管理するためのベスト プラクティスについて説明します。
-ms.openlocfilehash: 96580df486195af991e446ae6f1bbb4b08013947
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e076c8a29070fbfe0db5e21bbca842716afe69fd
+ms.sourcegitcommit: d1a93f25323a0e6ce3b898bf9dc57dcef27eda67
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179560"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60126820"
 ---
 # <a name="manage-topics-at-scale-in-microsoft-viva-topics"></a>トピックを大規模に管理Microsoft Viva トピック
 

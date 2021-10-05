@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a396f704405b062954b5d51fff4e69e85807e621
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: 1da7c59ad7702482b1edbf52da821e474addd601
+ms.sourcegitcommit: d1a93f25323a0e6ce3b898bf9dc57dcef27eda67
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59444189"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60126868"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>macOS のエンドポイント用 Microsoft Defender の基本設定を設定する
 
@@ -36,7 +36,7 @@ ms.locfileid: "59444189"
 > [!IMPORTANT]
 > この記事では、エンタープライズ組織の macOS で Microsoft Defender for Endpoint の基本設定を設定する方法について説明します。 コマンド ライン インターフェイスを使用して macOS 上の Microsoft Defender for Endpoint を構成するには、「Resources」を [参照してください](mac-resources.md#configuring-from-the-command-line)。
 
-## <a name="summary"></a>概要
+## <a name="summary"></a>要約
 
 エンタープライズ組織では、macOS 上の Microsoft Defender for Endpoint を、いくつかの管理ツールのいずれかを使用して展開される構成プロファイルを介して管理できます。 セキュリティ運用チームによって管理される基本設定は、デバイス上でローカルに設定されている基本設定よりも優先されます。 構成プロファイルを使用して設定される基本設定を変更するには、エスカレートされた特権が必要であり、管理アクセス許可のないユーザーでは使用できません。
 
@@ -62,7 +62,7 @@ ms.locfileid: "59444189"
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
-|**キー**|antivirusEngine|
+|**Key**|antivirusEngine|
 |**データ型**|辞書 (入れ子になった基本設定)|
 |**コメント**|辞書の内容の説明については、以下のセクションを参照してください。|
 |||
@@ -78,25 +78,9 @@ ms.locfileid: "59444189"
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
-|**キー**|enableRealTimeProtection|
-|**データ型**|ブール型|
-|**可能な値**|true (既定) <p> false|
-|||
-
-#### <a name="run-a-scan-after-definitions-are-updated"></a>定義の更新後にスキャンを実行する
-新しいセキュリティ インテリジェンス更新プログラムがデバイスにダウンロードされた後にプロセス スキャンを開始するかどうかを指定します。 この設定を有効にすると、デバイスの実行中のプロセスでウイルス対策スキャンがトリガーされます。
-
-<br>
-
-****
-
-|Section|値|
-|---|---|
-|**ドメイン**|`com.microsoft.wdav`|
-|**キー**|scanAfterDefinitionUpdate|
-|**データ型**|ブール型|
-|**指定可能な値**|false (既定) <p> true|
-|**コメント**|Microsoft Defender for Endpoint version 101.41.10 以上で使用できます。|
+|**Key**|enableRealTimeProtection|
+|**データ型**|Boolean|
+|**指定可能な値**|true (既定) <p> false|
 |||
 
 #### <a name="enable--disable-passive-mode"></a>パッシブ モードを有効/無効にする
@@ -116,12 +100,63 @@ ms.locfileid: "59444189"
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
-|**キー**|passiveMode|
-|**データ型**|ブール型|
+|**Key**|passiveMode|
+|**データ型**|Boolean|
 |**指定可能な値**|false (既定) <p> true|
 |**コメント**|Microsoft Defender for Endpoint version 100.67.60 以上で使用できます。|
 |||
-  
+
+#### <a name="run-a-scan-after-definitions-are-updated"></a>定義の更新後にスキャンを実行する
+
+新しいセキュリティ インテリジェンス更新プログラムがデバイスにダウンロードされた後にプロセス スキャンを開始するかどうかを指定します。 この設定を有効にすると、デバイスの実行中のプロセスでウイルス対策スキャンがトリガーされます。
+
+<br>
+
+****
+
+|Section|値|
+|---|---|
+|**ドメイン**|`com.microsoft.wdav`|
+|**Key**|scanAfterDefinitionUpdate|
+|**データ型**|Boolean|
+|**指定可能な値**|true (既定) <p> false|
+|**コメント**|Microsoft Defender for Endpoint version 101.41.10 以上で使用できます。|
+|||
+
+#### <a name="scan-archives-on-demand-antivirus-scans-only"></a>アーカイブのスキャン (オンデマンド ウイルス対策スキャンのみ)
+
+オンデマンドウイルス対策スキャン中にアーカイブをスキャンするかどうかを指定します。
+
+<br>
+
+****
+
+|Section|値|
+|---|---|
+|**ドメイン**|`com.microsoft.wdav`|
+|**Key**|scanArchives|
+|**データ型**|Boolean|
+|**指定可能な値**|true (既定) <p> false|
+|**コメント**|Microsoft Defender for Endpoint version 101.41.10 以上で使用できます。|
+|||
+
+#### <a name="degree-of-parallelism-for-on-demand-scans"></a>オンデマンド スキャンの並列処理の程度
+
+オンデマンド スキャンの並列処理の程度を指定します。 これは、スキャンの実行に使用されるスレッドの数に対応し、CPU 使用率とオンデマンド スキャンの期間に影響します。
+
+<br>
+
+****
+
+|Section|値|
+|---|---|
+|**ドメイン**|`com.microsoft.wdav`|
+|**Key**|maximumOnDemandScanThreads|
+|**データ型**|整数|
+|**指定可能な値**|2 (既定)。 使用できる値は、1 ~ 64 の整数です。|
+|**コメント**|Microsoft Defender for Endpoint version 101.41.10 以上で使用できます。|
+|||
+
 #### <a name="exclusion-merge-policy"></a>除外マージ ポリシー
 
 除外のマージ ポリシーを指定します。 これには、管理者定義の除外とユーザー定義の除外 ( ) の組み合わせ、または管理者定義の除外 ( ) のみを `merge` 組み合わせて指定できます `admin_only` 。 この設定は、ローカル ユーザーが独自の除外を定義するのを制限するために使用できます。
@@ -133,7 +168,7 @@ ms.locfileid: "59444189"
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
-|**キー**|exclusionsMergePolicy|
+|**Key**|exclusionsMergePolicy|
 |**データ型**|String|
 |**指定可能な値**|merge (既定) <p> admin_only|
 |**コメント**|Microsoft Defender for Endpoint version 100.83.73 以上で使用できます。|
@@ -151,7 +186,7 @@ ms.locfileid: "59444189"
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
-|**キー**|除外|
+|**Key**|除外|
 |**データ型**|辞書 (入れ子になった基本設定)|
 |**コメント**|辞書の内容の説明については、以下のセクションを参照してください。|
 |||
@@ -167,7 +202,7 @@ ms.locfileid: "59444189"
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
-|**キー**|$type|
+|**Key**|$type|
 |**データ型**|String|
 |**指定可能な値**|excludedPath <p> excludedFileExtension <p> excludedFileName|
 |||
@@ -183,7 +218,7 @@ ms.locfileid: "59444189"
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
-|**キー**|path|
+|**Key**|path|
 |**データ型**|String|
 |**指定可能な値**|有効なパス|
 |**コメント**|適用 *できるのは、$type**が excludedPath である場合のみです。*|
@@ -231,8 +266,8 @@ path プロパティが *ファイル* またはディレクトリを参照し�
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
-|**キー**|isDirectory|
-|**データ型**|ブール型|
+|**Key**|isDirectory|
+|**データ型**|Boolean|
 |**指定可能な値**|false (既定) <p> true|
 |**コメント**|適用 *できるのは、$type**が excludedPath である場合のみです。*|
 |||
@@ -248,7 +283,7 @@ path プロパティが *ファイル* またはディレクトリを参照し�
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
-|**キー**|拡張機能|
+|**Key**|拡張機能|
 |**データ型**|String|
 |**指定可能な値**|有効なファイル拡張子|
 |**コメント**|適用 *できるのは* 、$type FileExtension が *除外されている場合のみです。*|
@@ -265,7 +300,7 @@ path プロパティが *ファイル* またはディレクトリを参照し�
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
-|**キー**|name|
+|**Key**|name|
 |**データ型**|String|
 |**指定可能な値**|任意の文字列|
 |**コメント**|ファイルが excludedFileName *$type**場合にのみ適用されます。*|
@@ -282,7 +317,7 @@ Defender for Endpoint on Mac でブロックされない脅威を名前で指定
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
-|**キー**|allowedThreats|
+|**Key**|allowedThreats|
 |**データ型**|文字列の配列|
 |||
 
@@ -297,9 +332,9 @@ Defender for Endpoint on Mac でブロックされない脅威を名前で指定
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
-|**キー**|disallowedThreatActions|
+|**Key**|disallowedThreatActions|
 |**データ型**|文字列の配列|
-|**可能な値**|allow (ユーザーによる脅威の許可を制限する) <p> 復元 (検疫からの脅威の復元をユーザーに制限する)|
+|**指定可能な値**|allow (ユーザーによる脅威の許可を制限する) <p> 復元 (検疫からの脅威の復元をユーザーに制限する)|
 |**コメント**|Microsoft Defender for Endpoint version 100.83.73 以上で使用できます。|
 |||
 
@@ -314,7 +349,7 @@ Defender for Endpoint on Mac でブロックされない脅威を名前で指定
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
-|**キー**|threatTypeSettings|
+|**Key**|threatTypeSettings|
 |**データ型**|辞書 (入れ子になった基本設定)|
 |**コメント**|辞書の内容の説明については、以下のセクションを参照してください。|
 |||
@@ -330,7 +365,7 @@ Defender for Endpoint on Mac でブロックされない脅威を名前で指定
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
-|**キー**|キー|
+|**Key**|キー|
 |**データ型**|String|
 |**指定可能な値**|potentially_unwanted_application <p> archive_bomb|
 |||
@@ -350,7 +385,7 @@ Defender for Endpoint on Mac でブロックされない脅威を名前で指定
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
-|**キー**|値|
+|**Key**|値|
 |**データ型**|String|
 |**指定可能な値**|監査 (既定) <p> block <p> off|
 |||
@@ -366,7 +401,7 @@ Defender for Endpoint on Mac でブロックされない脅威を名前で指定
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
-|**キー**|threatTypeSettingsMergePolicy|
+|**Key**|threatTypeSettingsMergePolicy|
 |**データ型**|String|
 |**指定可能な値**|merge (既定) <p> admin_only|
 |**コメント**|Microsoft Defender for Endpoint version 100.83.73 以上で使用できます。|
@@ -383,7 +418,7 @@ Defender for Endpoint on Mac でブロックされない脅威を名前で指定
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
-|**キー**|scanResultsRetentionDays|
+|**Key**|scanResultsRetentionDays|
 |**データ型**|String|
 |**指定可能な値**|90 (既定)。 使用できる値は、1 日から 180 日です。|
 |**コメント**|エンドポイント バージョン 101.07.23 以上の Microsoft Defender で使用できます。|
@@ -400,7 +435,7 @@ Defender for Endpoint on Mac でブロックされない脅威を名前で指定
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
-|**キー**|scanHistoryMaximumItems|
+|**Key**|scanHistoryMaximumItems|
 |**データ型**|String|
 |**指定可能な値**|10000 (既定値)。 許可される値は、5000 アイテムから 15,000 アイテムまでです。|
 |**コメント**|エンドポイント バージョン 101.07.23 以上の Microsoft Defender で使用できます。|
@@ -417,7 +452,7 @@ macOS 上の Microsoft Defender for Endpoint のクラウド駆動型保護機�
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
-|**キー**|cloudService|
+|**Key**|cloudService|
 |**データ型**|辞書 (入れ子になった基本設定)|
 |**コメント**|辞書の内容の説明については、以下のセクションを参照してください。|
 |||
@@ -433,8 +468,8 @@ macOS 上の Microsoft Defender for Endpoint のクラウド駆動型保護機�
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
-|**キー**|enabled|
-|**データ型**|ブール型|
+|**Key**|enabled|
+|**データ型**|Boolean|
 |**可能な値**|true (既定) <p> false|
 |||
 
@@ -449,7 +484,7 @@ macOS 上の Microsoft Defender for Endpoint のクラウド駆動型保護機�
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
-|**キー**|diagnosticLevel|
+|**Key**|diagnosticLevel|
 |**データ型**|String|
 |**指定可能な値**|省略可能 (既定) <p> 必須出席者|
 |||
@@ -465,9 +500,9 @@ macOS 上の Microsoft Defender for Endpoint のクラウド駆動型保護機�
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
-|**キー**|automaticSampleSubmission|
-|**データ型**|ブール型|
-|**可能な値**|true (既定) <p> false|
+|**Key**|automaticSampleSubmission|
+|**データ型**|Boolean|
+|**指定可能な値**|true (既定) <p> false|
 |||
 
 #### <a name="enable--disable-automatic-security-intelligence-updates"></a>セキュリティ インテリジェンスの自動更新を有効または無効にする
@@ -480,9 +515,9 @@ macOS 上の Microsoft Defender for Endpoint のクラウド駆動型保護機�
 
 |Section|値|
 |---|---|
-|**キー**|automaticDefinitionUpdateEnabled|
-|**データ型**|ブール型|
-|**可能な値**|true (既定) <p> false|
+|**Key**|automaticDefinitionUpdateEnabled|
+|**データ型**|Boolean|
+|**指定可能な値**|true (既定) <p> false|
 |||
 
 ### <a name="user-interface-preferences"></a>ユーザー インターフェイスの基本設定
@@ -496,7 +531,7 @@ macOS 上の Microsoft Defender for Endpoint のユーザー インターフェ�
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
-|**キー**|userInterface|
+|**Key**|userInterface|
 |**データ型**|辞書 (入れ子になった基本設定)|
 |**コメント**|辞書の内容の説明については、以下のセクションを参照してください。|
 |||
@@ -512,8 +547,8 @@ macOS 上の Microsoft Defender for Endpoint のユーザー インターフェ�
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
-|**キー**|hideStatusMenuIcon|
-|**データ型**|ブール型|
+|**Key**|hideStatusMenuIcon|
+|**データ型**|Boolean|
 |**指定可能な値**|false (既定) <p> true|
 |||
 
@@ -528,7 +563,7 @@ macOS 上の Microsoft Defender for Endpoint のユーザー インターフェ�
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
-|**キー**|userInitiatedFeedback|
+|**Key**|userInitiatedFeedback|
 |**データ型**|String|
 |**指定可能な値**|有効 (既定) <p> disabled|
 |**コメント**|Microsoft Defender for Endpoint version 101.19.61 以上で使用できます。|
@@ -545,7 +580,7 @@ macOS 上の Microsoft Defender for Endpoint のエンドポイント検出お�
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
-|**キー**|edr|
+|**Key**|edr|
 |**データ型**|辞書 (入れ子になった基本設定)|
 |**コメント**|辞書の内容の説明については、以下のセクションを参照してください。|
 |||
@@ -563,7 +598,7 @@ macOS 上の Microsoft Defender for Endpoint のエンドポイント検出お�
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
-|**キー**|tags|
+|**Key**|tags|
 |**データ型**|辞書 (入れ子になった基本設定)|
 |**コメント**|辞書の内容の説明については、以下のセクションを参照してください。|
 |||
@@ -579,7 +614,7 @@ macOS 上の Microsoft Defender for Endpoint のエンドポイント検出お�
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
-|**キー**|キー|
+|**Key**|キー|
 |**データ型**|String|
 |**指定可能な値**|`GROUP`|
 |||
@@ -595,7 +630,7 @@ tag の値を指定します。
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
-|**キー**|値|
+|**Key**|値|
 |**データ型**|String|
 |**指定可能な値**|任意の文字列|
 |||
@@ -711,8 +746,6 @@ tag の値を指定します。
                     <true/>
                     <key>passiveMode</key>
                     <false/>
-                    <key>ScanAfterDefinitionUpdate</key>
-                    <false/>
                     <key>threatTypeSettings</key>
                     <array>
                         <dict>
@@ -761,8 +794,10 @@ tag の値を指定します。
         <true/>
         <key>passiveMode</key>
         <false/>
-        <key>ScanAfterDefinitionUpdate</key>
-        <false/>
+        <key>scanAfterDefinitionUpdate</key>
+        <true/>
+        <key>scanArchives</key>
+        <true/>
         <key>maximumOnDemandScanThreads</key>
         <integer>1</integer>
         <key>exclusions</key>
@@ -915,6 +950,10 @@ tag の値を指定します。
                     <true/>
                     <key>passiveMode</key>
                     <false/>
+                    <key>scanAfterDefinitionUpdate</key>
+                    <true/>
+                    <key>scanArchives</key>
+                    <true/>
                     <key>maximumOnDemandScanThreads</key>
                     <integer>1</integer>
                     <key>exclusions</key>
@@ -1056,7 +1095,7 @@ JAMF コンソールで、[**コンピューター** 構成プロファイル] �
 
 5. 構成プロファイルを開き、ファイルを `com.microsoft.wdav.xml` アップロードします。 (このファイルは手順 3 で作成されました。
 
-6. **[OK]** を選択します。
+6. [**OK**] を選択します。
 
 7. [割 **り当** \> **ての管理] を選択します**。 [含める **] タブ** で、[すべてのユーザーに割り当てる] & **を選択します**。
 

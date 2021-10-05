@@ -8,14 +8,14 @@ audience: admin
 ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
-localization_priority: Normal
-description: ユーザー設定のMicrosoft Viva トピック
-ms.openlocfilehash: fc5647b65a62afdff55c22b8a8b5526a7ddfa14a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+localization_priority: medium
+description: 詳しくは、アプリをセットアップするMicrosoft Viva トピック。
+ms.openlocfilehash: ba0bf7c9bec785f359e3a5f9a43ee0f7063b25dd
+ms.sourcegitcommit: d1a93f25323a0e6ce3b898bf9dc57dcef27eda67
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189571"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60126844"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>設定Microsoft Viva トピック
 
@@ -106,7 +106,7 @@ ms.locfileid: "59189571"
 
     ファイルを完了して保存したら、[参照] を.csv検索して選択します。
     
-    [**次へ**] を選択します。
+    **[次へ]** を選択します。
 
 6. このページ **Whoトピックを表示し、** どこでトピックを表示できるのかページで、トピックの表示を構成します。 [トピック **Who** 表示] の設定で、強調表示されているトピック、トピック カード、検索のトピック回答、トピック ページなど、トピックの詳細にアクセスできるユーザーを選択します。 次のオプションを選択できます:
     - **組織内のすべてのユーザー**
@@ -131,14 +131,14 @@ ms.locfileid: "59189571"
 
     ![トピック管理のアクセス許可。](../media/km-setup-create-edit-topics.png) 
 
-    [**次へ**] を選択します。
+    **[次へ]** を選択します。
 
 9. [トピック **センターの作成** ] ページで、トピック ページを表示し、トピックを管理できるトピック センター サイトを作成できます。 [サイト **名] ボックス** に、トピック センターの名前を入力します。 URL を変更する場合は、鉛筆アイコンをクリックできます。 必要に応じて、[説明] ボックスに短い説明 **を入力** します。 
 
    > [!Important]
    > 後でサイト名を変更できますが、ウィザードの完了後は URL を変更できます。
 
-   [**次へ**] を選択します。
+   **[次へ]** を選択します。
 
    ![ナレッジ センターを作成します。](../media/ksetup4.png)  
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7d09ce01bc8d9409d4537df8eaabb50915538aa6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 58991b732a76079b5c2de12d7cca332c5dc0d752
+ms.sourcegitcommit: d1a93f25323a0e6ce3b898bf9dc57dcef27eda67
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212103"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60126964"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上のエンドポイント用 Microsoft Defender のリソース
 
@@ -97,7 +97,7 @@ macOS で Microsoft Defender for Endpoint をアンインストールするに�
 
 製品設定の制御やオンデマンド スキャンのトリガーなどの重要なタスクは、コマンド ラインから実行できます。
 
-|グループ|シナリオ|コマンド|
+|Group|シナリオ|コマンド|
 |---|---|---|
 |構成|リアルタイム保護のオン/オフ|`mdatp config real-time-protection --value [enabled/disabled]`|
 |構成|クラウド保護のオン/オフ|`mdatp config cloud --value [enabled/disabled]`|
@@ -109,7 +109,10 @@ macOS で Microsoft Defender for Endpoint をアンインストールするに�
 |構成|PUA 保護を有効にする|`mdatp threat policy set --type potentially_unwanted_application -- action block`|
 |構成|PUA 保護をオフにする|`mdatp threat policy set --type potentially_unwanted_application -- action off`|
 |構成|PUA 保護の監査モードを有効にする|`mdatp threat policy set --type potentially_unwanted_application -- action audit`|
-|構成|パッシブ モードのオン/オフ|`mdatp config passive-mode --value enabled [enabled/disabled]`|
+|構成|ウイルス対策パッシブ モードのオン/オフ|`mdatp config passive-mode --value [enabled/disabled]`|
+|構成|オンデマンド スキャンの並列処理の程度を構成する|`mdatp config maximum-on-demand-scan-threads --value [numerical-value-between-1-and-64]`|
+|構成|セキュリティ インテリジェンスの更新後にスキャンをオン/オフにする|`mdatp config scan-after-definition-update --value [enabled/disabled]`|
+|構成|アーカイブ スキャンのオン/オフ (オンデマンド スキャンのみ)|`mdatp config scan-archives --value [enabled/disabled]`|
 |Diagnostics|ログ レベルの変更|`mdatp log level set --level [error/warning/info/verbose]`|
 |Diagnostics|診断ログの生成|`mdatp diagnostic create --path [directory]`|
 |正常性|製品の正常性を確認する|`mdatp health`|
