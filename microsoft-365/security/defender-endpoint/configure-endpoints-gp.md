@@ -1,9 +1,7 @@
 ---
-title: グループ Windows 10経由で Microsoft Defender for Endpoint にデバイスをオンボードする
-description: グループ ポリシーを使用して、サービスにオンボードWindows 10デバイスに構成パッケージを展開します。
+title: グループ Windows経由で Microsoft Defender for Endpoint にデバイスをオンボードする
+description: グループ ポリシーを使用して、サービスにオンボードWindowsデバイスに構成パッケージを展開します。
 keywords: グループ ポリシーを使用したデバイスの構成、デバイス管理、エンドポイント デバイス用 Microsoft Defender の構成、Microsoft Defender for Endpoint デバイスのオンボード、グループ ポリシー
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,14 +15,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/16/2021
 ms.technology: mde
-ms.openlocfilehash: 0d33484a7d7369cd9b3727fbd125e208649c533d
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 7d3d408e07790ef0dc095b57dcd84b644dfe655c
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60041782"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124675"
 ---
-# <a name="onboard-the-windows-10-devices-using-group-policy"></a>グループ ポリシーをWindows 10デバイスにオンボードする
+# <a name="onboard-windows-devices-using-group-policy"></a>グループ ポリシー Windowsデバイスのオンボード
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -47,7 +45,7 @@ ms.locfileid: "60041782"
 
 1. サービス オンボーディング ウィザードから.zipした gp 構成 *パッケージ*(WindowsDefenderATPOnboardingPackage.zip) を開きます。 また、次のポータルから[パッケージをMicrosoft 365 Defenderすることもできます](https://security.microsoft.com/)。
     1. ナビゲーション ウィンドウで、[エンドポイント **デバイス設定** \>  \> **オンボーディング]** \> **を選択します**。  
-    2. オペレーティング システムWindows 10を選択します。
+    2. オペレーティング Windows 10としてWindows 11 を選択します。
     3. [展開方法 **] フィールドで** 、[グループ ポリシー] **を選択します**。
     4. [パッケージ **のダウンロード] を** クリックし、.zip保存します。
 
@@ -113,7 +111,7 @@ ms.locfileid: "60041782"
 
 ### <a name="update-endpoint-protection-configuration"></a>エンドポイント保護構成の更新
 
-オンボーディング スクリプトを構成したら、同じグループ ポリシーの編集を続けてエンドポイント保護構成を追加します。 Windows 10 または Server 2019、または Windows Server 2022 を実行しているシステムからグループ ポリシーの編集を実行して、必要なすべての Microsoft Defender ウイルス対策 機能を確保します。 Defender ATP 構成設定を登録するには、グループ ポリシー オブジェクトを閉じて再度開く必要がある場合があります。
+オンボーディング スクリプトを構成したら、同じグループ ポリシーの編集を続けてエンドポイント保護構成を追加します。 Windows 10 または Server 2019、Windows 11、または Windows Server 2022 を実行しているシステムからグループ ポリシーの編集を実行して、必要なすべての Microsoft Defender ウイルス対策 機能を確実に使用します。 Defender ATP 構成設定を登録するには、グループ ポリシー オブジェクトを閉じて再度開く必要がある場合があります。
 
 すべてのポリシーは 、 の下に位置します `Computer Configuration\Policies\Administrative Templates` 。
 
@@ -196,7 +194,7 @@ Microsoft MAPS に参加する|有効、高度なマップ
 
 1. ポータルからオフボード パッケージ[Microsoft 365 Defenderします](https://security.microsoft.com/)。
     1. ナビゲーション ウィンドウで、[エンドポイント **デバイス** 設定 \> **オフ** \> **ボード]** \> **を選択します**。
-    2. オペレーティング システムWindows 10を選択します。
+    2. オペレーティング Windows 10としてWindows 11 を選択します。
     3. [展開方法 **] フィールドで** 、[グループ ポリシー] **を選択します**。
     4. [パッケージ **のダウンロード] を** クリックし、.zip保存します。
 
@@ -239,8 +237,11 @@ Microsoft MAPS に参加する|有効、高度なマップ
 新しいグループ ポリシーを作成するか、他のポリシーでこれらの設定をグループ化します。 これは、お客様の環境と、異なる OU (組織単位) をターゲットにしたサービスの展開方法に依存します。
 
 1. GP を選択するか、新しい GP を作成した後、GP を編集します。
+
 2. [コンピューター構成 **ポリシー]**  >    >  **[管理用** テンプレートWindows  >  **コンポーネントMicrosoft Defender ウイルス対策**  >    >  **リアルタイム保護] を参照します**。
-:::image type="content" source="images/realtime-protect.png" alt-text="リアルタイム保護。":::
+
+    :::image type="content" source="images/realtime-protect.png" alt-text="リアルタイム保護。":::
+
 1. [検疫] フォルダーで、検疫フォルダーからアイテムの削除を構成します。
 
     :::image type="content" source="images/removal-items-quarantine1.png" alt-text="削除アイテムの検疫フォルダー。":::
@@ -304,11 +305,11 @@ Microsoft MAPS に参加する|有効、高度なマップ
 
 :::image type="content" source="images/cloud-protection-level.png" alt-text="config クラウド保護レベル。":::
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
-- [デバイスをWindows 10デバイスをオンボードMicrosoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
-- [モバイル デバイス管理ツールを使用した Windows 10 デバイスのオンボード](configure-endpoints-mdm.md)
-- [ローカル スクリプトを使用した Windows 10 デバイスのオンボード](configure-endpoints-script.md)
+- [デバイスWindowsデバイスのオンボードMicrosoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+- [モバイル Windowsツールを使用してデバイスをオンボードする](configure-endpoints-mdm.md)
+- [ローカル Windowsを使用してデバイスをオンボードする](configure-endpoints-script.md)
 - [非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード](configure-endpoints-vdi.md)
 - [新しくオンボードされた Microsoft Defender for Endpoint デバイスで検出テストを実行する](run-detection-test.md)
 - [Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング](troubleshoot-onboarding.md)

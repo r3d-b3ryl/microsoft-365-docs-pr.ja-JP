@@ -3,7 +3,6 @@ title: Microsoft Defender for Endpoint の機能を構成および管理する
 ms.reviewer: ''
 description: 攻撃表面の縮小や次世代保護などの Microsoft Defender for Endpoint 機能の構成と管理
 keywords: 構成、管理、機能、攻撃表面の縮小、次世代保護、セキュリティ制御、エンドポイントの検出と応答、自動調査と修復、セキュリティ制御、コントロール
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -19,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 18d3023900d624afe9b85c71d350c6e8e89f552386a23acc6f5b623d03e7b1f9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 946be62b418e3162de8ee6d51edb3114e6f81ca7
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53898061"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124483"
 ---
 # <a name="configure-and-manage-microsoft-defender-for-endpoint-capabilities"></a>Microsoft Defender for Endpoint の機能を構成および管理する
 

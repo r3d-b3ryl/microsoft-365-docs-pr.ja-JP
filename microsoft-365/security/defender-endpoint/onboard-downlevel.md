@@ -2,8 +2,6 @@
 title: Microsoft Defender for Endpoint の以前Windowsバージョンのオンボード
 description: センサー データを Microsoft Defender for Endpoint センサーに送信Windows以前のバージョンのデバイスをオンボードでサポート
 keywords: オンボード、Windows、7、81、oms、sp1、enterprise、pro、down level
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 44a613f1f6a35f22f207b85180296c34ebf1cf11
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 11771bc8a5eab4a514ef70db43946cead0b16214
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401268"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124339"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>以前のバージョンの Windows をオンボードする
 

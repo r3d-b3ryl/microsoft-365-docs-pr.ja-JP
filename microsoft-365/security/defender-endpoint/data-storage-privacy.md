@@ -2,8 +2,6 @@
 title: Microsoft Defender for Endpoint データストレージとプライバシー
 description: Microsoft Defender for Endpoint が収集するプライバシーとデータを処理する方法について説明します。
 keywords: Microsoft Defender for Endpoint, data storage and privacy, storage, privacy, licensing, geolocation, data retention, data
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1ad4dd1bacb301ad50b5a6aa52e6a49eacb647f1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9cbe0ca481b582a2161480d8e7aa1ecc1d4164ff
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59210344"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124476"
 ---
 # <a name="microsoft-defender-for-endpoint-data-storage-and-privacy"></a>Microsoft Defender for Endpoint データストレージとプライバシー
 
@@ -36,7 +34,7 @@ ms.locfileid: "59210344"
 このセクションでは、Defender for Endpoint のプライバシーとデータ処理に関してよく寄せられる質問について説明します。
 
 > [!NOTE]
-> このドキュメントでは、Defender for Endpoint に関連するデータストレージとプライバシーの詳細について説明します。 Defender for Endpoint および他の製品およびサービス (Microsoft Defender ウイルス対策 および Windows 10に関する詳細については[、「Microsoft Privacy Statement」を参照してください](https://go.microsoft.com/fwlink/?linkid=827576)。 詳細については[、「Windows 10 FAQ」](https://go.microsoft.com/fwlink/?linkid=827577)を参照してください。
+> このドキュメントでは、Defender for Endpoint に関連するデータストレージとプライバシーの詳細について説明します。 Defender for Endpoint および他の製品およびサービス (Microsoft Defender ウイルス対策 および Windowsに関する詳細については[、「Microsoft Privacy Statement」を参照してください](https://go.microsoft.com/fwlink/?linkid=827576)。 詳細については[、「Windows FAQ」](https://go.microsoft.com/fwlink/?linkid=827577)を参照してください。
 
 ## <a name="what-data-does-microsoft-defender-for-endpoint-collect"></a>Microsoft Defender for Endpoint が収集するデータは何ですか?
 
@@ -88,7 +86,7 @@ Microsoft Azure Government データ センターに展開されるサービス�
 
 ## <a name="is-data-shared-with-other-customers"></a>データは他の顧客と共有されていますか?
 
-いいえ。 顧客データは他の顧客から分離され、共有されません。 ただし、Microsoft の処理に起因するデータ、および顧客固有のデータを含むデータに関する分析情報は、他の顧客と共有される場合があります。 各顧客は、Microsoft が提供する独自の組織および汎用データから収集されたデータにのみアクセスできます。
+その必要はありません。 顧客データは他の顧客から分離され、共有されません。 ただし、Microsoft の処理に起因するデータ、および顧客固有のデータを含むデータに関する分析情報は、他の顧客と共有される場合があります。 各顧客は、Microsoft が提供する独自の組織および汎用データから収集されたデータにのみアクセスできます。
 
 ## <a name="how-long-will-microsoft-store-my-data-what-is-microsofts-data-retention-policy"></a>Microsoft は自分のデータを保存する期間を指定します。 Microsoft のデータ保持ポリシーとは
 

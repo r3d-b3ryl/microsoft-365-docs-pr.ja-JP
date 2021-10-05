@@ -2,7 +2,6 @@
 title: オンボーディングまたはオフボーディングの通知ルールを作成する
 description: ローカルオンボーディングスクリプトまたはオフボード スクリプトが使用されている場合に通知を取得します。
 keywords: オンボーディング、オフボード、ローカル、スクリプト、通知、ルール
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9b00d971afa714b89a473ff75cf6022f8bba9ef8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2fc605a57d1bce1b1653f5e15bf8600cd9e1d831
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192681"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124291"
 ---
 # <a name="create-a-notification-rule-when-a-local-onboarding-or-offboarding-script-is-used"></a>ローカル オンボーディングスクリプトまたはオフボード スクリプトを使用する場合に通知ルールを作成する
 
@@ -41,7 +40,7 @@ ms.locfileid: "59192681"
 
 ローカルオンボーディングまたはオフボード スクリプトが使用されている場合に通知を受け取る通知ルールを作成します。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 次のアクセス権が必要です。
 

@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/22/2021
 ms.technology: mde
-ms.openlocfilehash: 494cfb352d8ccbf6dd0640d559083c9e733fa9b7
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 57d029e55759a08d84efe1eb684b67caf3e8653a
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60041634"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124687"
 ---
 # <a name="onboarding-non-persistent-virtual-desktop-infrastructure-devices"></a>非永続的な仮想デスクトップ インフラストラクチャ デバイスのオンボーディング
 
@@ -33,7 +33,7 @@ ms.locfileid: "60041634"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - 仮想デスクトップ インフラストラクチャ (VDI) デバイス
-- Windows 10、Windows Server 2019、Windows Server 2022、Windows Server 2008R2/2012R2/2016
+- Windows 10、Windows 11、Windows Server 2019、Windows Server 2022、Windows Server 2008R2/2012R2/2016
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configvdi-abovefoldlink)
 
@@ -60,11 +60,11 @@ VDI デバイスは、Defender for Endpoint ポータルに次のように表示
 > [!WARNING]
 > リソース構成が低い環境では、VDI ブート手順によって Defender for Endpoint センサーのオンボーディングが遅くなる可能性があります。
 
-### <a name="for-windows-10-or-windows-server-2019-or-windows-server-2022"></a>サーバー Windows 10またはWindowsサーバー 2019、またはサーバー 2022 Windowsの場合
+### <a name="for-windows-10-or-windows-11-or-windows-server-2019-or-windows-server-2022"></a>サーバー 11 Windows 10、Windowsサーバー 2019、Windowsサーバー 2022 Windowsの場合
 
 1. サービス オンボーディング ウィザードから.zipした VDI *構成パッケージ*(WindowsDefenderATPOnboardingPackage.zip) を開きます。 パッケージは、次のポータルから[Microsoft 365 Defenderすることもできます](https://security.microsoft.com/)。
    1. ナビゲーション ウィンドウで、[エンドポイント **デバイス設定** \>  \> **オンボーディング]** \> **を選択します**。
-   2. オペレーティング システムWindows 10を選択します。
+   2. オペレーティング Windows 10としてWindows 11 を選択します。
    3. [展開方法 **] フィールドで** 、[永続的でないエンドポイントの VDI オンボーディング **スクリプト] を選択します**。
    4. [パッケージ **のダウンロード] を** クリックし、.zip保存します。
 
@@ -164,10 +164,10 @@ DISM コマンドとオフライン サービスの詳細については、以�
 
 5. 通常と同じ方法で、ゴールデン/マスター イメージを再シールします。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
-- [グループ ポリシー Windows 10デバイスのオンボード](configure-endpoints-gp.md)
-- [デバイスをWindows 10デバイスをオンボードMicrosoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
-- [モバイル デバイス管理ツールを使用した Windows 10 デバイスのオンボード](configure-endpoints-mdm.md)
-- [ローカル スクリプトを使用した Windows 10 デバイスのオンボード](configure-endpoints-script.md)
+- [グループ ポリシー Windowsデバイスのオンボード](configure-endpoints-gp.md)
+- [デバイスWindowsデバイスのオンボードMicrosoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+- [モバイル Windowsツールを使用してデバイスをオンボードする](configure-endpoints-mdm.md)
+- [ローカル Windowsを使用してデバイスをオンボードする](configure-endpoints-script.md)
 - [Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング](troubleshoot-onboarding.md)

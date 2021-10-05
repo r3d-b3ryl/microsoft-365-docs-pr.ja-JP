@@ -16,12 +16,12 @@ metadata:
   ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
   description: 新しいメッセージ保護機能がどのように機能するかについて質問がありますか? ここで答えを確認してください。
   ms.custom: seo-marvel-apr2020
-  ms.openlocfilehash: 2e59d4b4d2d077921e1c6c9496d14e59bae2317a
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.openlocfilehash: 4298ab1460088ac494fe4c6386fa793665cb7c1b
+  ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59216664"
+  ms.lasthandoff: 10/05/2021
+  ms.locfileid: "60124819"
 title: メッセージの暗号化に関する FAQ
 summary: >
   新しいメッセージ保護機能がどのように機能するかについて質問がありますか? ここで答えを確認してください。 また、Azure Information Protection のデータ保護サービス Azure Rights Management に関する質問に対する回答については [、Azure Information Protection](/information-protection/get-started/faqs-rms) のデータ保護に関してよく寄せられる質問を参照してください。
@@ -41,7 +41,7 @@ sections:
     answer: "はい。 OME をセットアップする前に、BYOK をセットアップする手順を完了してください。\n  \nBYOK の詳細については、「Azure Information Protection テナント キーの計画 [と実装」を参照してください](/information-protection/plan-design/plan-implement-tenant-key)。\n  \n"
   - question: >
       Azure Information Protection を使用した OME と BYOK は、サブポエナなどのサード パーティのデータ要求に対する Microsoft のアプローチを変更しますか?
-    answer: "いいえ。 OME と、Azure Information Protection から BYOK と呼ばれる独自の暗号化キーを提供および制御するオプションは、法執行機関のサブポエナに対応するようには設計されていない。 OME は、BYOK for Azure Information Protection を使用して、コンプライアンスに重点を置く組織向けに設計されました。 Microsoft は、顧客データに対するサードパーティの要求を真剣に受け止める。 クラウド サービス プロバイダーとして、常にデータのプライバシーを主張します。 Subpoena が取得された場合、情報を取得するために、常に第三者を直接お客様にリダイレクトしようと試みます。 (Brad Smith のブログを読む: 政府のスヌーピングから顧客データ [を保護する](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/))。 受信した要求の詳細な情報を定期的に公開します。 サード パーティのデータ要求の詳細については、「Microsoft Trust [](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data) Center で顧客データにアクセスする政府機関および法執行機関の要求への対応」を参照してください。 また、オンライン サービス条項 (OST) の「顧客データの開示 [」を参照してください](https://www.microsoft.com/Licensing/product-licensing/products.aspx)。\n  \n"
+    answer: "その必要はありません。 OME と、Azure Information Protection から BYOK と呼ばれる独自の暗号化キーを提供および制御するオプションは、法執行機関のサブポエナに対応するようには設計されていない。 OME は、BYOK for Azure Information Protection を使用して、コンプライアンスに重点を置く組織向けに設計されました。 Microsoft は、顧客データに対するサードパーティの要求を真剣に受け止める。 クラウド サービス プロバイダーとして、常にデータのプライバシーを主張します。 Subpoena が取得された場合、情報を取得するために、常に第三者を直接お客様にリダイレクトしようと試みます。 (Brad Smith のブログを読む: 政府のスヌーピングから顧客データ [を保護する](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/))。 受信した要求の詳細な情報を定期的に公開します。 サード パーティのデータ要求の詳細については、「Microsoft Trust [](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data) Center で顧客データにアクセスする政府機関および法執行機関の要求への対応」を参照してください。 また、オンライン サービス条項 (OST) の「顧客データの開示 [」を参照してください](https://www.microsoft.com/Licensing/product-licensing/products.aspx)。\n  \n"
   - question: >
       この機能は、レガシ Office 365 Message Encryption (OME) および Information Rights Management (IRM) 機能とどのように関連していますか?
     answer: "既存の IRM と従来Office 365 Message Encryption OME ソリューションの進化は、新しい機能です。 以下の表に詳細を示します。\n  \n**従来の OME、IRM、および新しい OME 機能の比較**\n\n| 機能 | OME の以前のバージョン | IRM | 新しい OME 機能 |\n|:-----|:-----|:-----|:-----|\n|**暗号化されたメールの送信**|メール フロー Exchangeを使用する場合のみ|エンド ユーザーは、Outlook、Windows、Outlook for MacのOutlook on the web。またはメール フロー Exchangeを介して|エンド ユーザーは、Outlook、Windows、Outlook for MacのOutlook on the web。またはメール フロー ルールを使用する|\n|**権限の管理**|-|[転送しない] オプションとカスタム テンプレート|[転送しない] オプション、暗号化のみ可能なオプション、既定のテンプレートとカスタム テンプレート|\n|**サポートされている受信者の種類**|外部受信者のみ|内部受信者のみ|内部および外部の受信者|\n|**受信者のエクスペリエンス**|外部受信者は、ブラウザーまたはダウンロードしたモバイル アプリでダウンロードして開いた HTML メッセージを受信しました。|内部受信者が受信した暗号化された電子メールは、Outlook、Windows、Outlook for Mac、およびOutlook on the web。|内部および外部の受信者は、Outlook Windows、Outlook for Mac、Outlook on the web、Outlook for Android、Outlook for iOS、または Web ポータルを通じて、同じ組織または組織内のかどうかに関係なく、電子メールを受信します。 OME ポータルでは、個別にダウンロードする必要はありません。|\n|**独自のキーのサポートを提供する**|使用不可|使用不可| BYOK がサポートされています|\n"
@@ -54,7 +54,7 @@ sections:
       以前のバージョンの OME は引き続き使用できます。現時点では廃止されません。 ただし、新しく改良された OME ソリューションを使用することを組織に強くお勧めしています。 OME をまだ展開していない場合は、以前のバージョンの OME の新しい展開を設定できます。
   - question: >
       組織で Active Directory Rights Management を使用している場合、この機能を使用できますか?
-    answer: "いいえ。 Active Directory Rights Management サービス (Exchange Online RMS) で ADを使用している場合は、これらの新機能をすぐ有効にできます。 代わりに、最初に RMS AD [Azure Information Protection に移行する必要](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) があります。\n  \n"
+    answer: "その必要はありません。 Active Directory Rights Management サービス (Exchange Online RMS) で ADを使用している場合は、これらの新機能をすぐ有効にできます。 代わりに、最初に RMS AD [Azure Information Protection に移行する必要](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) があります。\n  \n"
   - question: >
       組織にはハイブリッド展開Exchangeがあります。 この機能を使用できますか?
     answer: "オンプレミスのユーザーは、メール フロー ルールを使用して暗号化Exchange Online送信できます。 これを行うには、電子メールをルーティングする必要Exchange Online。 詳細については、「Part [2: Configure mail to flow](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365)from your email server to Microsoft 365」 を参照してください。\n  \n"
@@ -163,15 +163,15 @@ sections:
 
       |----------|-----------|------------------------|
 
-      | Outlook on the web | はい | はい                |
+      | Outlook on the web | はい | 必要                |
 
-      | Outlook for Windows| はい | はい                |
+      | Outlook for Windows| はい | 必要                |
 
       | Outlook for Mac    | はい | はい                |
 
-      | Outlook for Android| はい | いいえ                 |
+      | Outlook for Android| 必要 | いいえ                 |
 
-      | Outlook for iOS    | はい | いいえ                 |
+      | Outlook for iOS    | 必要 | いいえ                 |
 
       |
 
@@ -182,7 +182,7 @@ sections:
       - モバイル デバイスで受信したメールの添付ファイルは、モバイルデバイスで開Outlookできません。
 
 
-      - メールが有効なセキュリティ グループによる割り当てはサポートされていません。 共有メールボックスへの直接ユーザー割り当てによって提供されるアクセスのみをサポートし、自動マッピングが有効になっているExchange Online。 自動マッピングは既定で有効になっています。Exchange Online。
+      - Outlook と Azure Information Protection の統合ラベル付けクライアントでは、ユーザーにフル アクセスのアクセス許可と自動マッピングが有効になっている必要があるため、電子メールが有効なセキュリティ グループによる割り当てはサポートされていません。 自動マッピングは既定で有効になっています。Exchange Online。
 
 
       **共有メールボックスにユーザーを割り当てるには**

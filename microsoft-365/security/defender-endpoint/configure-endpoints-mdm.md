@@ -1,9 +1,7 @@
 ---
-title: モバイル デバイス管理ツールを使用した Windows 10 デバイスのオンボード
+title: モバイル Windowsツールを使用してデバイスをオンボードする
 description: モバイル デバイス管理ツールを使用してデバイスに構成パッケージを展開し、サービスにオンボードします。
 keywords: mdm を使用したオンボード デバイス、デバイス管理、オンボード Microsoft Defender for Endpoint デバイス、mdm
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,14 +14,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 192c3231a44f2f1c4358a930fed8884bb00da093
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 6cb99f300c7d87497f31729507695a9a633b345a
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59402036"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124699"
 ---
-# <a name="onboard-the-windows-10-devices-using-mobile-device-management-tools"></a>モバイル デバイス管理Windows 10使用してデバイスをオンボードする
+# <a name="onboard-the-windows-devices-using-mobile-device-management-tools"></a>モバイル デバイス管理ツールWindowsデバイスをオンボードする
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -74,7 +72,7 @@ Defender for Endpoint CSP の使用の詳細については [、「WindowsAdvanc
 
    1. ナビゲーション ウィンドウで、[エンドポイント **デバイス** 設定 \> **オフ** \> **ボード]** \> **を選択します**。
 
-   1. オペレーティング システムWindows 10を選択します。
+   1. オペレーティング Windows 10としてWindows 11 を選択します。
 
    1. [展開 **方法] フィールドで**、[**モバイル デバイスの管理/ 管理] を選択Microsoft Intune。**
 
@@ -95,11 +93,11 @@ Defender for Endpoint CSP の使用の詳細については [、「WindowsAdvanc
 > [!IMPORTANT]
 > Offboarding を使用すると、デバイスはポータルへのセンサー データの送信を停止しますが、デバイスからのデータ (通知への参照を含む) は最大 6 か月間保持されます。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
-- [グループ ポリシー Windows 10デバイスのオンボード](configure-endpoints-gp.md)
-- [デバイスをWindows 10デバイスをオンボードMicrosoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
-- [ローカル スクリプトを使用した Windows 10 デバイスのオンボード](configure-endpoints-script.md)
+- [グループ ポリシー Windowsデバイスのオンボード](configure-endpoints-gp.md)
+- [デバイスWindowsデバイスのオンボードMicrosoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+- [ローカル Windowsを使用してデバイスをオンボードする](configure-endpoints-script.md)
 - [非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード](configure-endpoints-vdi.md)
 - [新しくオンボードされた Microsoft Defender for Endpoint デバイスで検出テストを実行する](run-detection-test.md)
 - [Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング](troubleshoot-onboarding.md)

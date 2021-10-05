@@ -1,9 +1,7 @@
 ---
 title: デバイスを Microsoft Defender for Endpoint サービスにオンボードする
-description: オンボード Windows 10、サーバー、非デバイスWindows検出テストを実行する方法について学習します。
+description: オンボード Windows、サーバー、非デバイスWindows、検出テストを実行する方法について学習します。
 keywords: オンボーディング、Microsoft Defender for Endpoint オンボーディング、sccm、グループ ポリシー、mdm、ローカル スクリプト、検出テスト
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4792489abf721993fe55dc642f132c51442c21a5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 49109b7671cc4ecd1891cb942dcd6b678d7b5c11
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220385"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124531"
 ---
 # <a name="onboard-devices-to-the-microsoft-defender-for-endpoint-service"></a>デバイスを Microsoft Defender for Endpoint サービスにオンボードする
 
@@ -50,7 +48,7 @@ Defender for Endpoint ポータルのオンボーディング セクションに
 
 次の表に、オンボードする必要があるエンドポイントに基づいて使用可能なツールを示します。
 
-|Endpoint|ツール オプション|
+|エンドポイント|ツール オプション|
 |---|---|
 |**Windows**|[ローカル スクリプト (最大 10 台のデバイス)](configure-endpoints-script.md) <p> [グループ ポリシー](configure-endpoints-gp.md) <p> [Microsoft エンドポイント マネージャー/ モバイル デバイス マネージャー](configure-endpoints-mdm.md) <p> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <p> [VDI スクリプト](configure-endpoints-vdi.md) <p> [Azure Defender との統合](configure-server-endpoints.md#integration-with-azure-defender)|
 |**macOS**|[ローカル スクリプト](mac-install-manually.md) <p> [Microsoft エンドポイント マネージャー](mac-install-with-intune.md) <p> [JAMF Pro](mac-install-with-jamf.md) <p> [モバイル デバイス管理](mac-install-with-other-mdm.md)|
@@ -63,7 +61,7 @@ Defender for Endpoint ポータルのオンボーディング セクションに
 トピック|説明
 :---|:---
 [以前のバージョンの Windows をオンボードする](onboard-downlevel.md)|Defender for Endpoint Windows 7 および Windows 8.1デバイスをオンボードします。
-[Windows 10 デバイスのオンボード](configure-endpoints.md)|Defender for Endpoint サービスに報告するには、デバイスをオンボードする必要があります。 エンタープライズでデバイスを構成するために使用できるツールと方法について説明します。
+[オンボード Windows デバイス](configure-endpoints.md)|Defender for Endpoint サービスに報告するには、デバイスをオンボードする必要があります。 エンタープライズでデバイスを構成するために使用できるツールと方法について説明します。
 [オンボード サーバー](configure-server-endpoints.md)|Windows Server 2008 R2 SP1、Windows Server 2012 R2、Windows Server 2016、Windows Server (SAC) バージョン 1803 以降、Windows Server 2019 以降、Windows Server 2019 コア エディションを Defender for Endpoint に搭載します。
 [Windows 以外のデバイスをオンボードする](configure-endpoints-non-windows.md)|Defender for Endpoint は、セキュリティ プラットフォームだけでなく、Windowsプラットフォームにも一元的なセキュリティWindows提供します。 サポートされているさまざまなオペレーティング システム (OS) からのアラートを、組織のネットワークMicrosoft Defender セキュリティ センター保護することができます。 このエクスペリエンスは、サードパーティのセキュリティ製品のセンサー データを活用します。
 [新しくオンボードされたデバイスで検出テストを実行する](run-detection-test.md)|新しくオンボードされたデバイスでスクリプトを実行して、Defender for Endpoint サービスに適切に報告されていることを確認します。

@@ -1,9 +1,7 @@
 ---
-title: Configuration Manager を使用した Windows 10 デバイスのオンボード
+title: Configuration Manager をWindowsデバイスのオンボード
 description: Configuration Manager を使用してデバイスに構成パッケージを展開し、デバイスがサービスにオンボードされます。
 keywords: sccm を使用したオンボード デバイス、デバイス管理、エンドポイント デバイス用 Microsoft Defender の構成
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,14 +15,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/22/2021
 ms.technology: mde
-ms.openlocfilehash: 9a5ef03cf94501d83340f159ecd1b54f26f68b0a
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: ae560e7072884d19f224df1af15e90d507826812
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042929"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124711"
 ---
-# <a name="onboard-the-windows-10-devices-using-configuration-manager"></a>Configuration Manager を使用Windows 10デバイスのオンボード
+# <a name="onboard-the-windows-devices-using-configuration-manager"></a>Configuration Manager をWindowsデバイスのオンボード
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -49,6 +47,7 @@ ms.locfileid: "60042929"
 
   - Windows 8.1
   - Windows 10
+  - Windows 11
   - Windows Server 2012 R2
   - Windows Server 2016
   - Windows Server 2016バージョン 1803 以降
@@ -64,7 +63,7 @@ ms.locfileid: "60042929"
 
 1. サービス オンボーディング ウィザードからダウンロード *.zipファイル*(WindowsDefenderATPOnboardingPackage.zip) の Configuration Manager 構成パッケージを開きます。 また、次のポータルから[パッケージをMicrosoft 365 Defenderすることもできます](https://security.microsoft.com/)。
     1. ナビゲーション ウィンドウで、[エンドポイント **デバイス設定** \>  \> **オンボーディング]** \> **を選択します**。
-    2. オペレーティング システムWindows 10を選択します。
+    2. オペレーティング Windows 10としてWindows 11 を選択します。
     3. [展開方法 **] フィールド** で、[System Center Configuration Manager **2012/2012 R2/1511/1602] を選択します**。
     4. [ **パッケージのダウンロード]** を選択し、ファイルを.zipします。
 
@@ -155,8 +154,8 @@ Value: 0 or 1
 詳細については、「管理フォルダー アクセス [の評価」を参照してください](evaluate-controlled-folder-access.md)。
 
 ## <a name="run-a-detection-test-to-verify-onboarding"></a>検出テストを実行してオンボーディングを確認する
-デバイスのオンボード後、検出テストを実行して、デバイスがサービスに適切にオンボードされていることを確認できます。 詳細については、「新しくオンボードされた Microsoft Defender for Endpoint デバイスで検出テストを実行する [」を参照してください](run-detection-test.md)。
 
+デバイスのオンボード後、検出テストを実行して、デバイスがサービスに適切にオンボードされていることを確認できます。 詳細については、「新しくオンボードされた Microsoft Defender for Endpoint デバイスで検出テストを実行する [」を参照してください](run-detection-test.md)。
 
 ## <a name="offboard-devices-using-configuration-manager"></a>Configuration Manager を使用したオフボード デバイス
 
@@ -173,7 +172,7 @@ Value: 0 or 1
 
 1. ポータルからオフボード パッケージ[Microsoft 365 Defenderします](https://security.microsoft.com/)。
     1. ナビゲーション ウィンドウで、[エンドポイント **デバイス** 設定 \> **オフ** \> **ボード]** \> **を選択します**。  
-    1. オペレーティング システムWindows 10を選択します。
+    1. オペレーティング Windows 10としてWindows 11 を選択します。
     1. [展開方法 **] フィールド** で、[System Center Configuration Manager **2012/2012 R2/1511/1602] を選択します**。
     1. [ **パッケージのダウンロード]** を選択し、ファイルを.zipします。
 
@@ -226,11 +225,11 @@ Value: "1"
 
 詳細については[、「2012 R2](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\))Configuration Manager のコンプライアンスSystem Center概要」を参照してください。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
-- [グループ ポリシー Windows 10デバイスのオンボード](configure-endpoints-gp.md)
-- [モバイル デバイス管理ツールを使用した Windows 10 デバイスのオンボード](configure-endpoints-mdm.md)
-- [ローカル スクリプトを使用した Windows 10 デバイスのオンボード](configure-endpoints-script.md)
+- [グループ ポリシー Windowsデバイスのオンボード](configure-endpoints-gp.md)
+- [モバイル Windowsツールを使用してデバイスをオンボードする](configure-endpoints-mdm.md)
+- [ローカル Windowsを使用してデバイスをオンボードする](configure-endpoints-script.md)
 - [非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード](configure-endpoints-vdi.md)
 - [新しくオンボードされた Microsoft Defender for Endpoint デバイスで検出テストを実行する](run-detection-test.md)
 - [Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング](troubleshoot-onboarding.md)

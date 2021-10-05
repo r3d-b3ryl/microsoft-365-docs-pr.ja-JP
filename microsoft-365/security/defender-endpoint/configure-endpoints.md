@@ -1,7 +1,7 @@
 ---
-title: Windows 10 デバイスのオンボード ツールと各種方法
-description: オンボード Windows 10デバイスを使用して、センサー データを Microsoft Defender for Endpoint センサーに送信できます。
-keywords: オンボード Windows 10、グループ ポリシー、エンドポイント構成マネージャー、モバイル デバイス管理、ローカル スクリプト、gp、sccm、mdm、intune
+title: デバイスのオンボーディング ツールWindows方法
+description: オンボード Windowsデバイスを使用して、センサー データを Microsoft Defender for Endpoint センサーに送信できます。
+keywords: オンボード Windows、グループ ポリシー、エンドポイント構成マネージャー、モバイル デバイス管理、ローカル スクリプト、gp、sccm、mdm、intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: eb71cc8ee014c1e96f4e57fb58785e0c15b4602a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a07bd5cf5d3c3a021811841ccf3fffe054823ffa
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222955"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124723"
 ---
-# <a name="onboarding-tools-and-methods-for-windows-10-devices-in-defender-for-endpoint"></a>Defender for Endpoint のデバイスWindows 10オンボーディング ツールとメソッド
+# <a name="onboarding-tools-and-methods-for-windows-devices-in-defender-for-endpoint"></a>Defender for Endpoint のデバイスWindowsオンボーディング ツールとメソッド
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

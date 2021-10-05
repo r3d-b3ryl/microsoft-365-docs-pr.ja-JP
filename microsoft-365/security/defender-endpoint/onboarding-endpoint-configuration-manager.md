@@ -2,7 +2,6 @@
 title: Microsoft Endpoint Configuration Manager を使用したオンボーディング
 description: デバイスを使用して Microsoft Defender for Endpoint にオンボードするMicrosoft Endpoint Configuration Manager
 keywords: オンボーディング、構成、展開、展開、エンドポイント構成マネージャー、Microsoft Defender for Endpoint、コレクション作成、エンドポイント検出応答、次世代保護、攻撃表面の縮小、Microsoft エンドポイント構成マネージャー
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a73dc197a1643a2d1b4de079562579530c081e23
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e26e9c367015b05e1875693a5312af786a907031
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214833"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124447"
 ---
 # <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager を使用したオンボーディング
 
@@ -61,7 +60,7 @@ Defender for Endpoint はさまざまなエンドポイントとツールのオ�
 
 ### <a name="collection-creation"></a>コレクションの作成
 
-既存のWindows 10デバイスMicrosoft Endpoint Configuration Managerオンボーディングするには、展開で既存のコレクションをターゲットにするか、テスト用に新しいコレクションを作成できます。
+既存のWindowsデバイスMicrosoft Endpoint Configuration Managerオンボーディングするには、展開で既存のコレクションをターゲットにするか、テスト用に新しいコレクションを作成できます。
 
 グループ ポリシーや手動メソッドなどのツールを使用したオンボーディングでは、システムにエージェントはインストールされない。
 
@@ -103,11 +102,11 @@ Defender for Endpoint はさまざまなエンドポイントとツールのオ�
 
     ![ウィザード 8 Microsoft Endpoint Configuration Managerイメージ。](images/configmgr-membership-rules.png)
 
-9. [**次へ**] を選択します。
+9. **[次へ]** を選択します。
 
     ![ウィザード 9 Microsoft Endpoint Configuration Managerのイメージ。](images/configmgr-confirm.png)
 
-このタスクを完了すると、環境内のすべてのエンドポイントWindows 10デバイス コレクションが作成されます。
+このタスクを完了すると、環境内のすべてのエンドポイントがWindowsデバイス コレクションが作成されます。
 
 
 ## <a name="step-2-configure-microsoft-defender-for-endpoint-capabilities"></a>手順 2: Microsoft Defender for Endpoint の機能を構成する
@@ -120,9 +119,9 @@ Defender for Endpoint はさまざまなエンドポイントとツールのオ�
 
 ### <a name="endpoint-detection-and-response"></a>エンドポイントの検出および応答
 
-#### <a name="windows-10"></a>Windows 10
+#### <a name="windows-10-and-windows-11"></a>Windows 10とWindows 11
 
-Microsoft 365 Defender ポータル内から、System Center Configuration Manager でポリシーを作成し、そのポリシーを Windows 10 デバイスに展開するために使用できる '.onboarding' ポリシーをダウンロードできます。
+Microsoft 365 Defender ポータル内から、System Center Configuration Manager でポリシーを作成し、そのポリシーを Windows 10 デバイスおよび Windows デバイスに展開するために使用できる '.onboarding' ポリシーをダウンロードできます。
 
 1. 新しいポータルMicrosoft 365 Defender、[オンボーディング][設定を選択します](https://security.microsoft.com/preferences2/onboarding)。
 
@@ -246,7 +245,7 @@ Windows Defender ウイルス対策は、デスクトップ、ポータブル �
 
     ![次世代保護ウィンドウ 10 のイメージ。](images/f5508317cd8c7870627cb4726acd5f3d.png)
 
-4. 新しいマルウェア対策ポリシーをユーザーコレクションにWindows 10し **、[OK] をクリックします**。
+4. 新しいマルウェア対策ポリシーを対象として、Windowsをクリック **します。[OK] をクリックします**。
 
      ![次世代保護ウィンドウ 11 のイメージ。](images/configmgr-select-collection.png)
 
@@ -282,7 +281,7 @@ Defender for Endpoint の攻撃表面の縮小の柱には、Exploit Guard で�
 
     ![コンソール 4 Microsoft Endpoint Configuration Managerイメージ。](images/8999dd697e3b495c04eb911f8b68a1ef.png)
 
-7. ポリシーを新しく作成したコレクションにWindows 10し **、[OK] をクリックします**。
+7. ポリシーを新しく作成したコレクションにWindowsし **、[OK] をクリックします**。
 
     ![コンソール 5 Microsoft Endpoint Configuration Managerイメージ。](images/0ccfe3e803be4b56c668b220b51da7f7.png)
 
@@ -332,7 +331,7 @@ ASR ルールがエンドポイントに正しく適用されているかどう�
 
     ![スクリーンショット Microsoft Endpoint Configuration Manager1。](images/8999dd697e3b495c04eb911f8b68a1ef.png)
 
-7. 新しく作成したコレクションのポリシーを選択しWindows 10 OK を選択 **します**。
+7. 新しく作成したコレクションのポリシーを選択しWindows OK を選択 **します**。
 
     ![スクリーンショット Microsoft Endpoint Configuration Manager2。](images/0ccfe3e803be4b56c668b220b51da7f7.png)
 
@@ -362,7 +361,7 @@ ASR ルールがエンドポイントに正しく適用されているかどう�
 
     ![Microsoft Endpoint Configuration Manager7 のスクリーンショット。](images/8999dd697e3b495c04eb911f8b68a1ef.png)
 
-7. ポリシーを新しく作成したコレクションにWindows 10し **、[OK] をクリックします**。
+7. ポリシーを新しく作成したコレクションにWindowsし **、[OK] をクリックします**。
 
     ![Microsoft Endpoint Configuration Manager8 のスクリーンショット。](images/0ccfe3e803be4b56c668b220b51da7f7.png)
 

@@ -2,11 +2,10 @@
 title: Microsoft Defender for Endpoint 評価ラボ
 description: Microsoft Defender for Endpoint の機能について説明し、攻撃シミュレーションを実行し、脅威を防止、検出、修復する方法を確認します。
 keywords: エンドポイント用 Microsoft Defender の評価、評価、ラボ、シミュレーション、Windows 10、Windows Server 2019、評価ラボ
-search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.prod: m365-security
 ms.author: macapara
 author: mjcaparas
 localization_priority: Normal
@@ -17,12 +16,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3765bdc36dc53f10c1842754266f72434f5b2f1c
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 5ddd486bb062c86b21891c8a1678a5f2cc8226dd
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043133"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124507"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Microsoft Defender for Endpoint 評価ラボ
 
@@ -44,7 +43,7 @@ Microsoft Defender for Endpoint 評価ラボは、プラットフォームの機
 
 自動調査、高度な狩猟、脅威分析など、プラットフォームの強力な機能に完全にアクセスでき、Defender for Endpoint が提供する包括的な保護スタックをテストできます。
 
-Windows 10 または Windows Server 2019、または Windows Server 2022 デバイスを追加して、最新の OS バージョンと適切なセキュリティ コンポーネントをインストールし、Office 2019 Standard をインストールすることができます。
+Windows 10、Windows 11、Windows Server 2019、または Windows Server 2022 デバイスを追加して、最新の OS バージョンと適切なセキュリティ コンポーネントと Office 2019 Standard をインストールするように事前構成できます。
 
 また、脅威シミュレーターをインストールできます。 Defender for Endpoint は、業界をリードする脅威シミュレーション プラットフォームと提携し、ポータルから出ることなく Defender for Endpoint の機能をテストするのに役立ちます。
 
@@ -106,7 +105,7 @@ Microsoft Defender ATP を試してみたいですか? [無料試用版にサイ
 
 ## <a name="add-devices"></a>デバイスの追加
 
-環境にデバイスを追加すると、Defender for Endpoint は接続の詳細を示す構成済みのデバイスをセットアップします。 サーバー 2019 Windows 10またはWindowsサーバー 2022 デバイスWindows追加できます。
+環境にデバイスを追加すると、Defender for Endpoint は接続の詳細を示す構成済みのデバイスをセットアップします。 サーバー 2019 Windows 10、Windowsサーバー 2019、Windowsサーバー 2022 デバイスWindows追加できます。
 
 デバイスは、OS および Office 2019 Standard の最新バージョンと、Java、Python、SysIntenals などの他のアプリで構成されます。
 
@@ -135,7 +134,7 @@ Microsoft Defender ATP を試してみたいですか? [無料試用版にサイ
 
 1. ダッシュボードで、[デバイスの追加 **] を選択します**。
 
-2. 追加するデバイスの種類を選択します。 サーバー 2019 にWindows 10追加Windows、またはサーバー 2022 Windows選択できます。
+2. 追加するデバイスの種類を選択します。 サーバー 2019、Windows 10 11、Windowsサーバー 2019、Windowsサーバー 2022 のWindows選択できます。
 
     :::image type="content" source="../../media/add-machine-optionsnew.png" alt-text="デバイス オプションを使用したラボセットアップ。":::
 

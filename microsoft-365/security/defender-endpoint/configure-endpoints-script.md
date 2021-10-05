@@ -1,8 +1,7 @@
 ---
-title: ローカル スクリプトを使用した Windows 10 デバイスのオンボード
+title: ローカル Windowsを使用してデバイスをオンボードする
 description: ローカル スクリプトを使用してデバイスに構成パッケージを展開し、サービスへのデバイスのオンボーディングを有効にします。
 keywords: ローカル スクリプトを使用してデバイスを構成し、デバイス管理を行い、Microsoft Defender for Endpoint デバイスを構成する
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,14 +15,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b1e6bcd4991ea94f1b46b43f446f5f40f6f2e1d4
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 1bcc9c51f37c9d76009b4c949a40b564617dd563
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59399252"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124795"
 ---
-# <a name="onboard-the-windows-10-devices-using-a-local-script"></a>ローカル スクリプトをWindows 10デバイスにオンボードする
+# <a name="onboard-the-windows-devices-using-a-local-script"></a>ローカル スクリプトをWindowsデバイスにオンボードする
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,7 +35,7 @@ ms.locfileid: "59399252"
 > [!IMPORTANT]
 > このスクリプトは、最大 10 台のデバイスで使用するために最適化されています。
 >
-> 大規模に展開するには、他の [展開オプションを使用します](configure-endpoints.md)。 たとえば、オンボーディング スクリプトを 10 台以上のデバイスに展開し、グループ ポリシーを使用してオンボード Windows 10 デバイスで使用[できます](configure-endpoints-gp.md)。
+> 大規模に展開するには、他の [展開オプションを使用します](configure-endpoints.md)。 たとえば、オンボーディング スクリプトを 10 台以上のデバイスに展開し、グループ ポリシーを使用したオンボード Windows デバイスで使用[できます](configure-endpoints-gp.md)。
 
 ## <a name="onboard-devices"></a>デバイスのオンボード
 
@@ -45,7 +44,7 @@ ms.locfileid: "59399252"
 
 1. サービス オンボーディング ウィザードから.zipした gp 構成 *パッケージ*(WindowsDefenderATPOnboardingPackage.zip) を開きます。 Defender ポータルからパッケージを取得[Microsoft 365することもできます](https://security.microsoft.com/)。
     1. ナビゲーション ウィンドウで、[エンドポイント **デバイス設定** \>  \> **オンボーディング]** \> **を選択します**。
-    2. オペレーティング システムWindows 10を選択します。
+    2. オペレーティング Windows 10としてWindows 11 を選択します。
     3. [展開方法 **] フィールドで** 、[ローカル スクリプト] **を選択します**。
     4. [パッケージ **のダウンロード] を** クリックし、.zip保存します。
 
@@ -100,7 +99,7 @@ Name 型は D-WORD です。 使用可能な値は次のとおりです。
 
 1. ポータルからオフボード パッケージ[Microsoft 365 Defenderします](https://security.microsoft.com/)。
     1. ナビゲーション ウィンドウで、[エンドポイント **デバイス** 設定 \> **オフ** \> **ボード]** \> **を選択します**。
-    2. オペレーティング システムWindows 10を選択します。
+    2. オペレーティング Windows 10としてWindows 11 を選択します。
     3. [展開方法 **] フィールドで** 、[ローカル スクリプト] **を選択します**。
     4. [パッケージ **のダウンロード] を** クリックし、.zip保存します。
 
@@ -131,11 +130,11 @@ Name 型は D-WORD です。 使用可能な値は次のとおりです。
 2. [デバイス **インベントリ] をクリックします**。
 3. デバイスが表示されているのを確認します。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
-- [グループ ポリシー Windows 10デバイスのオンボード](configure-endpoints-gp.md)
-- [デバイスをWindows 10デバイスをオンボードMicrosoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
-- [モバイル デバイス管理ツールを使用した Windows 10 デバイスのオンボード](configure-endpoints-mdm.md)
+- [グループ ポリシー Windowsデバイスのオンボード](configure-endpoints-gp.md)
+- [デバイスWindowsデバイスのオンボードMicrosoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+- [モバイル Windowsツールを使用してデバイスをオンボードする](configure-endpoints-mdm.md)
 - [非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード](configure-endpoints-vdi.md)
 - [新しくオンボードされた Microsoft Defender for Endpoint デバイスで検出テストを実行する](run-detection-test.md)
 - [Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング](troubleshoot-onboarding.md)

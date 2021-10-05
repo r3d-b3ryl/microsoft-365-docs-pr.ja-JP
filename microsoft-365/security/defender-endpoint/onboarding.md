@@ -2,7 +2,6 @@
 title: Microsoft Defender for Endpoint サービスへのオンボード
 description: エンドポイントを Microsoft Defender for Endpoint サービスにオンボードする方法について説明します。
 keywords: microsoft defender for endpoint, onboard, deploy
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 173135d9cc1ecf45ad5c0485b2bab4bb39b88a5e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e56bb5f8647e9504c18fdc280b8e85b9764bc6c4
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192680"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124283"
 ---
 # <a name="onboard-to-the-microsoft-defender-for-endpoint-service"></a>Microsoft Defender for Endpoint サービスへのオンボード
 
@@ -65,7 +64,7 @@ Defender for Endpoint を展開するために必要な手順は次のとおり�
 
 次の表に、オンボードする必要があるエンドポイントに基づいて使用可能なツールを示します。
 
-|Endpoint|ツール オプション|
+|エンドポイント|ツール オプション|
 |---|---|
 |**Windows**|[ローカル スクリプト (最大 10 台のデバイス)](configure-endpoints-script.md) <br>  [グループ ポリシー](configure-endpoints-gp.md) <br>  [Microsoft エンドポイント マネージャー/ モバイル デバイス マネージャー](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI スクリプト](configure-endpoints-vdi.md) <br> [Azure Defender との統合](configure-server-endpoints.md#integration-with-azure-defender)|
 |**macOS**|[ローカル スクリプト](mac-install-manually.md) <br> [Microsoft エンドポイント マネージャー](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [モバイル デバイス管理](mac-install-with-other-mdm.md)|
@@ -92,7 +91,7 @@ Defender for Endpoint を展開するために必要な手順は次のとおり�
 - 次世代の保護構成
 - 攻撃表面の縮小構成
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [Microsoft Endpoint Configuration Manager を使用したオンボーディング](onboarding-endpoint-configuration-manager.md)
 - [Microsoft エンドポイント マネージャーを使用したオンボーディング](onboarding-endpoint-manager.md)

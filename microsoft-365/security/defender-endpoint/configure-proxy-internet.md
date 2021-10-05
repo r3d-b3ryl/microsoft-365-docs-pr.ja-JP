@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 81640ff0716d6dd0803dcad5b0db1849dfbee0d5
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: d00bfa4b9a595725ed689c33dff096b3a96bd2d5
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042664"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124747"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>デバイス プロキシとインターネット接続の設定を構成する
 
@@ -63,8 +63,9 @@ WinHTTP 構成設定は、Windows インターネット (WinINet) の参照プ�
 コンピューターがインターネットへの接続を許可されていない場合は、Defender for Endpoint 検出および応答 (EDR) センサー用のレジストリ ベースの静的プロキシを構成して、診断データを報告し、Defender for Endpoint サービスと通信します。
 
 > [!NOTE]
-> Windows 10 または Windows Server 2019、または Windows Server 2022 でこのオプションを使用する場合は、次の (以降の) ビルドと累積的な更新プログラムのロールアップを行う必要があります。
+> Windows 10、Windows 11、Windows Server 2019、または Windows Server 2022 でこのオプションを使用する場合は、次のビルドと累積的な更新プログラムのロールアップを使用してください。
 >
+> - Windows 11
 > - Windows 10 Version 1809またはWindows Server 2019、または Windows Server 2022 -<https://support.microsoft.com/kb/5001384>
 > - Windows 10バージョン 1909 -<https://support.microsoft.com/kb/4601380>
 > - Windows 10バージョン 2004 -<https://support.microsoft.com/kb/4601382>
@@ -102,7 +103,7 @@ Microsoft Defender ウイルス対策[提供される保護は](cloud-protection
 
 2. [有効] に **設定し** 、プロキシ サーバーを定義します。 URL には、ユーザーまたはユーザーが http:// 必要 https://。 サポートされているバージョンについては、「https:// 更新プログラムの[管理」をMicrosoft Defender ウイルス対策してください](manage-updates-baselines-microsoft-defender-antivirus.md)。
 
-   :::image type="content" source="images/proxy-server-mdav.png" alt-text="Microsoft Defender ウイルス対策のプロキシ サーバー。":::
+   :::image type="content" source="images/proxy-server-mdav.png" alt-text="サーバーのプロキシ サーバー Microsoft Defender ウイルス対策。":::
 
 3. レジストリ キーの下で  `HKLM\Software\Policies\Microsoft\Windows Defender` 、ポリシーはレジストリ値をレジストリ  `ProxyServer`   値として設定REG_SZ。 
 
@@ -175,9 +176,9 @@ netsh winhttp reset proxy
 ファイアウォールで、地理列が WW であるすべての URL を開きます。 地理列が WW ではない行の場合は、特定のデータの場所の URL を開きます。 データの場所の設定を確認するには、「データストレージの場所を確認し、Microsoft Defender for Endpoint のデータ保持設定 [を更新する」を参照してください](/microsoft-365/security/defender-endpoint/data-retention-settings)。
 
 > [!NOTE]
-> settings-win.data.microsoft.com は、バージョン 1803 以前Windows 10デバイスを使用している場合にのみ必要です。<br>
+> settings-win.data.microsoft.com は、バージョン 1803 以前Windowsデバイスを使用している場合にのみ必要です。<br>
 >
-> v20 を含む URL は、バージョン 1803 以降をWindows 10デバイスを使用している場合にのみ必要です。 たとえば、バージョン 1803 以降をWindows 10しているデバイスで、米国のデータ 転送地域にオンボードされている場合 `us-v20.events.data.microsoft.com` Storageです。
+> v20 を含む URL は、バージョン 1803 以降をWindowsデバイスを使用している場合にのみ必要です。 たとえば、バージョン 1803 以降をWindowsしているデバイスで、米国のデータ 転送地域にオンボードStorage `us-v20.events.data.microsoft.com` です。
 >
 > 環境でネットワーク 接続をMicrosoft Defender ウイルス対策する場合は、「Configure network connections to the [Microsoft Defender ウイルス対策 クラウド サービス」を参照してください](/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus)。
 
@@ -270,9 +271,9 @@ Defender for Endpoint センサーがシステム コンテキストから接続
 >
 > TelemetryProxyServer がレジストリまたはグループ ポリシーを介して設定されている場合、Defender for Endpoint は、定義されたプロキシにアクセスできない場合、直接に戻されます。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [Microsoft Defender ウイルス対策 ネットワーク接続を構成および検証する](configure-network-connections-microsoft-defender-antivirus.md)
 - [グループ ポリシー設定を使用して、グループ ポリシーの構成とMicrosoft Defender ウイルス対策](use-group-policy-microsoft-defender-antivirus.md)
-- [Windows 10 デバイスのオンボード](configure-endpoints.md)
+- [オンボード Windows デバイス](configure-endpoints.md)
 - [Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング](troubleshoot-onboarding.md)

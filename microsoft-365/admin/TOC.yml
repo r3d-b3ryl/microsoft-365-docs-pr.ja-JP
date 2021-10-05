@@ -30,14 +30,6 @@
               href: ../admin/simplified-signup/user-invite-msa-nodomain-join.md
             - name: データを Microsoft 365 Business Standard サブスクリプションに移行する
               href: ../admin/simplified-signup/migrate-data-business-standard.md
-        - name: Windows 365 Business の計画
-          items:
-            - name: Windows 365 Business および Cloud PC の概要
-              href: setup/get-started-windows-365-business.md
-            - name: Windows 365 Business のサイズ設定オプション
-              href: setup/windows-365-business-sizing.md
-            - name: Windows 365 クラウド PC のセットアップに関する問題をトラブルシューティングする
-              href: setup/troubleshoot-windows-365-business.md
         - name: Microsoft 365 for business organization のセットアップ
           items:
             - name: Microsoft 365 Business Basic

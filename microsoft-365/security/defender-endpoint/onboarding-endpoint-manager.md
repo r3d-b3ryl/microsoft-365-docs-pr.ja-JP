@@ -2,7 +2,6 @@
 title: Microsoft エンドポイント マネージャーを使用したオンボーディング
 description: デバイスを使用して Microsoft Defender for Endpoint にオンボードするMicrosoft エンドポイント マネージャー
 keywords: オンボーディング、構成、展開、展開、エンドポイント マネージャー、Microsoft Defender for Endpoint、コレクション作成、エンドポイント検出応答、次世代保護、攻撃表面の縮小、Microsoft エンドポイント マネージャー
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1e1a598f0a87a4bb0bd7882d2b402c43b276a24f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 75bbf7e0d121a7d0ed71124179367243e8aff777
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192690"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124807"
 ---
 # <a name="onboarding-using-microsoft-endpoint-manager"></a>Microsoft エンドポイント マネージャーを使用したオンボーディング
 

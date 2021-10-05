@@ -2,8 +2,6 @@
 title: エンドポイント用 Microsoft Defender の最小要件
 description: デバイスをサービスにオンボーディングする場合のライセンス要件と要件を理解する
 keywords: 最小要件、ライセンス、比較表
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7cb01f6067e14d615e018b5c8648b0b6c423ddca
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 4779a0c40cd8282d8e05fde84ae72827531810d9
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042772"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124268"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>エンドポイント用 Microsoft Defender の最小要件
 
@@ -46,9 +44,11 @@ ms.locfileid: "60042772"
 
 Microsoft Defender for Endpoint を使用するには、次のいずれかの Microsoft ボリューム ライセンス製品が必要です。
 
+- Windows 11 Enterprise E5
+- Windows 11 Education A5
 - Windows 10 Enterprise E5
 - Windows 10 Education A5
-- Windows 10 Enterprise E5 が含まれている Microsoft 365 E5 (M365 E5)
+- Microsoft 365 E5 E5 または E5 Windows 10 Enterprise 11 をWindowsする Enterprise (M365 E5)
 - Microsoft 365 A5 (M365 A5)
 - Microsoft 365 E5 Security
 - Microsoft 365 A5 Security
@@ -74,7 +74,7 @@ Microsoft Defender for Endpoint for servers には、次のいずれかのライ
 
 ライセンスの詳細については、「 [製品](https://www.microsoft.com/licensing/terms/) 条項」サイトを参照し、アカウント チームと一緒に使用して、契約条件の詳細について説明します。
 
-各エディションの機能の配列の詳細については、「Windows 10エディションの比較」[を参照Windows 10してください](https://www.microsoft.com/windowsforbusiness/compare)。
+各エディションの機能の配列の詳細については、「Windowsエディションの比較」[を参照Windowsしてください](https://www.microsoft.com/windowsforbusiness/compare)。
 
 ## <a name="browser-requirements"></a>ブラウザー要件
 
@@ -94,6 +94,10 @@ Defender for Endpoint へのアクセスはブラウザーを介して行われ�
 - Windows 7 SP1 Pro ([サポートには ESU が必要です](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq))。
 - Windows 8.1 Enterprise
 - Windows 8.1 Pro
+- Windows 11 Enterprise
+- Windows 11 Education
+- Windows 11 Pro
+- Windows 11 Pro Education
 - Windows 10 Enterprise
 - [Windows 10 EnterpriseLTSC 2016 (以降)](/windows/whats-new/ltsc/)
 - Windows 10 Education
@@ -146,7 +150,7 @@ Defender for Endpoint へのアクセスはブラウザーを介して行われ�
 組織内のすべてのデバイスで診断データ サービスが有効になっているか確認します。
 既定では、このサービスは有効になっています。 センサー データを取得する方法を確認する方法をお試しください。
 
-#### <a name="use-the-command-line-to-check-the-windows-10-diagnostic-data-service-startup-type"></a>コマンド ラインを使用して、診断データ サービスWindows 10の種類を確認します。
+#### <a name="use-the-command-line-to-check-the-windows-diagnostic-data-service-startup-type"></a>コマンド ラインを使用して、診断データ サービスWindowsの種類を確認する
 
 1. デバイスで管理者特権のコマンド ライン プロンプトを開きます。
    1. **[スタート]** をクリックし、「**cmd**」と入力します。
@@ -164,7 +168,7 @@ Defender for Endpoint へのアクセスはブラウザーを介して行われ�
 
 サービスが自動的に開始に設定されている場合は、START_TYPEに設定する **必要AUTO_START。**
 
-#### <a name="use-the-command-line-to-set-the-windows-10-diagnostic-data-service-to-automatically-start"></a>コマンド ラインを使用して、診断データ Windows 10を自動的に開始する設定
+#### <a name="use-the-command-line-to-set-the-windows-diagnostic-data-service-to-automatically-start"></a>コマンド ラインを使用して、診断データ Windowsを自動的に開始する設定
 
 1. エンドポイントで管理者特権のコマンド ライン プロンプトを開きます。
     1. **[スタート]** をクリックし、「**cmd**」と入力します。
@@ -190,7 +194,7 @@ Defender for Endpoint センサーは、1 日の平均帯域幅 5 MB を使用�
 
 追加のプロキシ構成設定の詳細については、「デバイス プロキシとインターネット接続の設定 [を構成する」を参照してください](configure-proxy-internet.md)。
 
-デバイスをオンボードする前に、診断データ サービスを有効にする必要があります。 サービスは、既定で既定で有効Windows 10。
+デバイスをオンボードする前に、診断データ サービスを有効にする必要があります。 このサービスは、既定で 11 の Windows 10およびWindowsされます。
 
 ## <a name="microsoft-defender-antivirus-configuration-requirement"></a>Microsoft Defender ウイルス対策構成要件
 
@@ -213,7 +217,7 @@ Defender for Endpoint デバイスでセキュリティ インテリジェンス
 
 サードパーティのマルウェア対策クライアントを実行し、モバイル デバイス管理ソリューションまたは Microsoft エンドポイント マネージャー (現在のブランチ) を使用する場合は、Microsoft Defender ウイルス対策 ELAM ドライバーが有効になっている必要があります。 詳細については、「ポリシーによって[無効Microsoft Defender ウイルス対策を確認する」を参照してください](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [Microsoft Defender for Endpoint の展開をセットアップする](production-deployment.md)
 - [デバイスのオンボード](onboard-configure.md)
