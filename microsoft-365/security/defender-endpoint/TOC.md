@@ -48,14 +48,14 @@
 ### [Windows および Windows Server 上の Microsoft Defender for Endpoint]()
 #### [デバイスを Microsoft Defender for Endpoint にオンボードする](onboard-configure.md)
 #### [以前のバージョンの Windows をオンボードする](onboard-downlevel.md)
-#### [Windows 10 デバイスのオンボード]()
+#### [Windows デバイスのオンボード]()
 ##### [オンボーディング ツールとメソッド](configure-endpoints.md)
 ##### [グループ ポリシーを使用してデバイスをオンボードする](configure-endpoints-gp.md)
 ##### [Microsoft Endpoint Configuration Manager を使用したデバイスのオンボード](configure-endpoints-sccm.md)
 ##### [モバイル デバイス管理ツールを使用したデバイスのオンボード](configure-endpoints-mdm.md)
 ##### [ローカル スクリプトを使用したデバイスのオンボード](configure-endpoints-script.md)
 ##### [非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード](configure-endpoints-vdi.md)
-##### [Windows Virtual Desktop の Windows 10 マルチセッション デバイスのオンボード](Onboard-Windows-10-multi-session-device.md)
+##### [Windows Virtual Desktop の Windows マルチセッション デバイスのオンボード](onboard-windows-multi-session-device.md)
 #### [Windows サーバーのオンボード](configure-server-endpoints.md)
 
 #### [インターネット アクセスなしでデバイスをオンボードする](onboard-offline-machines.md)
@@ -327,9 +327,6 @@
 ##### [パフォーマンスに関する問題のトラブルシューティング](troubleshoot-performance-issues.md)
 ##### [Microsoft Defender ウイルス対策ソフトウェアの問題をトラブルシューティングするため、イベント ログとエラー コードをレビューする](troubleshoot-microsoft-defender-antivirus.md)
 ##### [サード パーティのソリューションからの移行中に Microsoft Defender ウイルスのトラブルシューティングを行う](troubleshoot-microsoft-defender-antivirus-when-migrating.md)
-
-#### [ハードウェア ベースの分離]()
-##### [Windows 10 のハードウェア ベースの分離](overview-hardware-based-isolation.md)
 
 #### [エクスプロイト保護]()
 ##### [エクスプロイトからデバイスを保護する](exploit-protection.md)
