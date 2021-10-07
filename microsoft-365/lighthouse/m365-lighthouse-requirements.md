@@ -7,7 +7,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Managed Service Providers (MSP) の場合は、サービス プロバイダーで使用する要件の一覧Microsoft 365 Lighthouse。
-ms.openlocfilehash: 610b8cee89576b1112e9b5e3e49d59fa4becd3a3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 70aaefc7e19268a5ad4c33c50b2e165361f2c362
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179536"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188927"
 ---
 # <a name="requirements-for-microsoft-365-lighthouse"></a>ユーザーの要件Microsoft 365 Lighthouse
 

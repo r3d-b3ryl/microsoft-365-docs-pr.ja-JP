@@ -7,19 +7,19 @@ ms.date: 03/10/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365ネットワーク ルーティング
-ms.openlocfilehash: bccac9dae56bb4a44df7a96144eb84ae7c19a84b
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.openlocfilehash: 4781acd78e314592ca33cdad77e1f270e86e002c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58745003"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199911"
 ---
 # <a name="microsoft-365-informed-network-routing-preview"></a>Microsoft 365ネットワーク ルーティング (プレビュー)
 
@@ -138,7 +138,7 @@ Officeのネットワークテレメトリの継続的なコレクションの�
 
 3. [このオフィスの場所] セクションの [IP アドレス範囲] で、Egress接続を提供するすべてのネットワーク回線 **をこのオフィスの場所に追加** します。 各回線が、ネットワーク トラフィックを表す一意のパブリック IP アドレス サブネットに関連付けられているか確認します。
 
-4. **[保存]** を選択し、変更内容を保存します。
+4. **[保存]** を選び、変更内容を保存します。
 
 ## <a name="disabling-informed-network-routing"></a>情報に基づいたネットワーク ルーティングの無効化
 
@@ -169,7 +169,7 @@ Microsoft と SD-WAN ソリューション プロバイダー間で交換され�
 
 この場所のデータは、選択した SD-WAN ソリューションと交換され、構成済みの SD-WAN ソリューションの場所が同じ領域内に含めない場合があります。 お客様は、SD-WAN ソリューション プロバイダーと一緒に、実稼働環境の展開前にデータ格納場所の要件を評価する必要があります。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [ネットワーク接続 (プレビュー) Microsoft 365 管理センターネットワーク接続](office-365-network-mac-perf-overview.md)
 

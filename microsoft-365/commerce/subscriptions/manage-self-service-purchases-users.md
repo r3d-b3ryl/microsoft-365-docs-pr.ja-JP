@@ -9,7 +9,7 @@ ms.reviewer: mijeffer, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-subscription-management
 ms.custom:
 - AdminSurgePortfolio
@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: ユーザーは、セルフサービス購入を管理する方法について学習できます。
 ms.date: 03/17/2021
-ms.openlocfilehash: fb8431bce82893d8ca2903caf96968dd3b0ef359
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e4d8fe771340efa1e5084e77a1870e4db20bfe67
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191640"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203353"
 ---
 # <a name="manage-self-service-purchases-users"></a>セルフサービスによる購入を管理する (ユーザー)
 
@@ -37,7 +37,7 @@ ms.locfileid: "59191640"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
+1. 管理センターで、[**課金**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
 
 ::: moniker-end
 
@@ -49,7 +49,7 @@ ms.locfileid: "59191640"
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[お使いの製品]</a> ページの順に移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">お使いの製品</a>] ページの順に移動します。
 ::: moniker-end
 2. [製品 **] タブ** で、フィルター アイコンを選択し、[セルフサービス] **を選択します**。
 
@@ -63,7 +63,7 @@ ms.locfileid: "59191640"
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[お使いの製品]</a> ページの順に移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">お使いの製品</a>] ページの順に移動します。
 
 ::: moniker-end
 
@@ -131,7 +131,7 @@ ms.locfileid: "59191640"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
+1. 管理センターで、[**課金**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
 
 ::: moniker-end
 
@@ -143,7 +143,7 @@ ms.locfileid: "59191640"
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[お使いの製品]</a> ページの順に移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">お使いの製品</a>] ページの順に移動します。
 ::: moniker-end
 2. **[製品]** タブで、キャンセルするサブスクリプションを見つけます。3 つのドット (その他の操作) を選択し、**[サブスクリプションのキャンセル]** を選択します。
 3. **[サブスクリプションのキャンセル]** ウィンドウで、キャンセルする理由を選択します。 必要に応じて、フィードバックを提供します。
@@ -176,7 +176,7 @@ ms.locfileid: "59191640"
 1. 管理センターで、[請求書の支払い] ページ  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">&移動</a>します。
 2. [請求書 **] タブ** で、表示する請求書を選択します。 請求書が表示されない場合は、[ **過去 3** か月] を [ **過去 6** か月] または [日付範囲の指定 **] に変更します**。
 
-## <a name="need-help-contact-us"></a>サポートが必要な場合 お問い合わせください。
+## <a name="need-help-contact-us"></a>お困りの際は、 お問い合わせください。
 
 セルフサービス購入に関する一般的な質問については、「セルフサービス購入に関する [よく寄せられる質問」を参照してください](self-service-purchase-faq.yml)。
 

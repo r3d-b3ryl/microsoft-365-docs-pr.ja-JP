@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: troubleshooting
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
@@ -19,12 +19,12 @@ ms.custom:
 description: この記事では、メールを受信トレイに送信する際の問題に関するトラブルシューティング情報を、Microsoft 365 &顧客に一括郵送するためのベスト プラクティスMicrosoft 365提供します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c3017b0e7d0c583c9038f695f9f47010ff92c18a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1e51173e589bac06fb4ca1ba92657137e77ade92
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177336"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203809"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>Microsoft 365 に送信されるメールのトラブルシューティング
 

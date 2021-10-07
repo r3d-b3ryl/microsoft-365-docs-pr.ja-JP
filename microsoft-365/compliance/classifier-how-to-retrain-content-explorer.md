@@ -9,18 +9,18 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+ms.localizationpriority: ''
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: コンテンツ エクスプローラーでトレーニング可能な分類子にフィードバックを提供する方法について学習します。
-ms.openlocfilehash: 7c021a1fb7a79e335f53fd99b162c9062c4f43a0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 00162bcce2f8291ff151d1f8a9f692581c9ee9b2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164095"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203281"
 ---
 # <a name="how-to-retrain-a-classifier-in-content-explorer"></a>コンテンツ エクスプローラーで分類子を再トレーニングする方法
 

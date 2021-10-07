@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 管理されていないデバイスまたは持ち込み専用デバイス (BYOD) を保護するには、Microsoft 365。
-ms.openlocfilehash: 40e94e2f961ab34827de4ce5e43e100af53a7340
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0f14112356313dcbad56f5a78bd2c837987d234f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219263"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204757"
 ---
 # <a name="protect-unmanaged-windows-10-pcs-and-macs"></a>非管理対象の Windows 10 PC と Mac を保護する
 
@@ -63,7 +63,7 @@ Windows Update では、自動的に Windows セキュリティの更新プロ�
 
 以前のバージョンの Windowsを使用している場合Microsoft Security Essentialsに移動するとWindows セキュリティ。 詳細については、「デバイスを保護[する」を参照Windows セキュリティ。](https://support.microsoft.com/help/17464/windows-10-help-protect-my-device-with-windows-security)
 
-**ファイアウォールのWindowsする**<p>
+**Windows ファイアウォールを有効にする**<p>
 別のファイアウォールを有効Windows場合でも、常にファイアウォールを実行する必要があります。 ファイアウォールをWindowsすると、デバイス (およびネットワークがある場合) が、承認されていないアクセスに対してより脆弱になる可能性があります。 手順[については、「Windowsファイアウォールを有効または無効にする](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off)」を参照してください。
 
 ## <a name="mac"></a>[ Mac ](#tab/Mac)

@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ ms.custom:
 - AdminTemplateSet
 description: ビジネス サブスクリプション用のアドオンを購入および管理するMicrosoft 365を確認します。
 ms.date: 04/02/2021
-ms.openlocfilehash: c9b552ebc6b23bf01816fee197641caf5c6a43c6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 316692bb514285dc177397d7b8f61c4dcd0dcf7c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59190391"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190957"
 ---
 # <a name="buy-or-manage-add-ons"></a>アドオンを購入するか、管理します
 

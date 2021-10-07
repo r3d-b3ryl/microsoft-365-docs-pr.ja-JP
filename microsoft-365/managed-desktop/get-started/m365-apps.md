@@ -10,13 +10,13 @@ f1.keywords:
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.localizationpriority: normal
-ms.openlocfilehash: 7b1178312178865face58748a37228f60643d5fc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.localizationpriority: medium
+ms.openlocfilehash: f6df4ed3568be232927b7c427341d16eb869b7ed
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212393"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199827"
 ---
 # <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps for enterprise
 
@@ -153,7 +153,7 @@ Microsoft マネージド デスクトップデバイスのすべての[更新�
 
 サービスの一部としてまだ設定Microsoft マネージド デスクトップポリシーは他にも多数存在します。 これらのポリシーは、クラウド ポリシー サービスMicrosoft Intune使用する Office[を使用して構成](/DeployOffice/overview-office-cloud-policy-service#how-the-policy-configuration-is-applied)できます。 これらのポリシーを設定するには、次の手順を実行します。
 
-1. 管理者センターにサインインMicrosoft エンドポイント マネージャーします。
+1. Microsoft エンドポイント マネージャー管理センター
 2. [**作成] >アプリの [アプリとOfficeポリシー>選択します。**
 3. [ポリシー構成 **の作成]** ページで、次の操作を行います。
     - 名前を入力します。

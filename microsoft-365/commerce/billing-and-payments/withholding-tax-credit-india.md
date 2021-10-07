@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller, martinl, melmar
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: None
+ms.localizationpriority: ''
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ ms.custom:
 ROBOTS: NOINDEX, NOFOLLOW
 monikerRange: o365-worldwide
 ms.date: 05/03/2021
-ms.openlocfilehash: 1856f9b7d56f39dbc4326c9175c2e70fc8c7c0c7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: cf4e742dfae6866a20690b900604042a1c411503
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59190400"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189635"
 ---
 # <a name="request-a-credit-for-withholding-tax-on-your-account-india-customers"></a>アカウントの源泉徴収税のクレジットを要求する (インドのお客様)
 

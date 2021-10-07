@@ -12,15 +12,15 @@ ms.collection:
 - m365solution-managecontracts
 - m365solution-overview
 search.appverid: ''
-localization_priority: None
+ms.localizationpriority: medium
 ROBOTS: ''
 description: Microsoft 365 SharePoint Syntex、Microsoft 365、SharePoint、およびMicrosoft TeamsのPower Automate。
-ms.openlocfilehash: 632a1cbe76c213c0bdb263bcb564fc7303c4780f
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 86ccbeef283b165e178b12debd3ae99f982afc04
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776238"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189239"
 ---
 # <a name="manage-contracts-using-a-microsoft-365-solution"></a>Microsoft 365 ソリューションを使用して契約を管理する
 

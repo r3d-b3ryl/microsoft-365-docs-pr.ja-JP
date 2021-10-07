@@ -8,14 +8,14 @@ audience: ITPro
 f1.keywords: NOCSH
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 description: この記事では、従来の分類Azure Active Directoryラベルについて説明します。
-ms.openlocfilehash: 07bc09afb3e490961a8cc5a88857ec49dd962856
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0a8c12d3d133000a880c58366a9f2b13ed8cbf49
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177943"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203029"
 ---
 # <a name="azure-active-directory-classification-and-sensitivity-labels-for-microsoft-365-groups"></a>Azure Active Directoryグループの分類とMicrosoft 365ラベル
 

@@ -11,7 +11,7 @@ ms.topic: article
 f1_keywords:
 - MACBillingBillsPaymentsBillingProfiles
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: 請求プロファイルが請求書をサポートする方法について学習します。
 ms.date: 04/02/2021
-ms.openlocfilehash: ecea09a9ceea12fa92b92eac3e5a7595b2510042
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8407e3855a8e497c730925a424b999ed07da6228
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219194"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188555"
 ---
 # <a name="understand-billing-profiles"></a>課金プロファイルを理解する
 
@@ -41,7 +41,7 @@ ms.locfileid: "59219194"
 
 課金プロファイルのロールには、購入を制御し、請求書を表示および管理するためのアクセス許可があります。 これらの役割を、請求書の追跡、整理、支払いを行うユーザーに割り当てます。 たとえば、組織内の調達チームのメンバーです。
 
-| Role                         | 説明                                                                      |
+| 役割                         | 説明                                                                      |
 |----------------------------- |--------------------------------------------------------------------------------- |
 | 課金プロファイルの所有者        | 課金プロファイルに関するすべてを管理する                                          |
 | 課金プロファイル投稿者  | 課金プロファイルのアクセス許可を除くすべてを管理する                        |
@@ -70,7 +70,7 @@ ms.locfileid: "59219194"
 >
 > 請求プロファイルの役割は、組織内のユーザーにのみ割り当てることができます。
 
-## <a name="need-help-contact-support"></a>サポートが必要な場合 サポートにお問い合せください
+## <a name="need-help-contact-support"></a>お困りの際は、 サポートにお問い合せください
 
 Azure の料金に関する質問やサポートが必要な場合は、Azure サポートを <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">使用してサポート 要求を作成します</a>。
 

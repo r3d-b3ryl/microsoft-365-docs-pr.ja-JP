@@ -7,7 +7,7 @@ ms.date: 09/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: admindeeplinkMAC
 description: Microsoft 365ネットワーク接続位置情報サービス
-ms.openlocfilehash: 025a4a158378335271ac50e6cd8199d2b9f36106
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 71908e5c0f697aac3068af205adc998f88a00c85
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215803"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199923"
 ---
 # <a name="microsoft-365-network-connectivity-location-services"></a>Microsoft 365ネットワーク接続位置情報サービス
 
@@ -40,7 +40,7 @@ ms.locfileid: "59215803"
 
 この機能は **、tomTom** Bing地図によって提供されます。 TomTom の製品とサービスの詳細については、以下を参照してください [https://www.tomtom.com/legal](https://www.tomtom.com/legal) 。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [Microsoft 365 管理 センターのネットワーク接続 (プレビュー)](office-365-network-mac-perf-overview.md)
 

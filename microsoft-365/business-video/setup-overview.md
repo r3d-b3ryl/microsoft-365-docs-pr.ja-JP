@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: アプリのセットアップに必要なMicrosoft 365 Business Premium。
-ms.openlocfilehash: 70d0bf00afaa1a504097ac80598f9c1b1a184b05
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 82b8a1739451db9e93cb1006d77614cd1bd61443
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212764"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189731"
 ---
 # <a name="overview-of-microsoft-365-business-premium-setup"></a>セットアップのMicrosoft 365 Business Premium概要
 
@@ -85,7 +85,7 @@ ms.locfileid: "59212764"
 
 ## <a name="6-upgrade-your-pcs-to-windows-10-pro"></a>6. PC をアップグレードしてWindows 10 Pro
 
-- 高度なセキュリティやデバイス管理など、Microsoft 365 Business Premium のすべての機能を利用できるよう、pc の Windows 10 Professional へのアップグレードを開始します Microsoft 365 Business Premium (&#39;&#39;で Windows 7 Pro、Windows 8 Pro、または Windows 8.1 Pro を実行する場合は無料)。
+- pc の Windows 10 Professional へのアップグレードを開始します (Microsoft 365 Business Premium&#39;Windows Pro、Windows 8 Pro、または Windows 8.1 Pro) を実行し続け、Windows 8.1 Pro を実行できます。高度なセキュリティやデバイスMicrosoft 365 Business Premiumなど、すべての機能を利用できます。
 - コンシューマー バージョンから Windows 10 Proにアップグレードしたり、&#39;をMicrosoft 365 Business Standardする場合でも、1 回の購入が必要です。
 
 ## <a name="7-connect-your-pcs-to-microsoft-365"></a>7. Connectに PC をMicrosoft 365

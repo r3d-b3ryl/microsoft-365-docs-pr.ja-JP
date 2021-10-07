@@ -3,15 +3,13 @@ title: Linux 用 Microsoft Defender for Endpoint の更新プログラムを展�
 ms.reviewer: ''
 description: エンタープライズ環境で Microsoft Defender for Endpoint の更新プログラムを Linux に展開する方法について説明します。
 keywords: microsoft、defender、Microsoft Defender for Endpoint、Linux、更新プログラム、展開
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -19,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7de99494a373a2e741e7dff2da4b59d94115cc33
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 36783c3f00a38711489e85d60974888a96fff8aa
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220494"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205429"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 用 Microsoft Defender for Endpoint の更新プログラムを展開する
 

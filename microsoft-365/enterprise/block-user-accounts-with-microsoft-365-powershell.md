@@ -7,7 +7,7 @@ ms.date: 07/16/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: Ent_O365
@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 04e58c2a-400b-496a-acd4-8ec5d37236dc
 description: PowerShell を使用して、アカウントへのアクセスをブロックおよびブロック解除するMicrosoft 365方法。
-ms.openlocfilehash: fd9eba96b09a73b2fb6e87b30096dbf8186caceb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0ecfdfb8f99175ce5312769593c7637a7d1ae25b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189700"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189191"
 ---
 # <a name="block-microsoft-365-user-accounts-with-powershell"></a>PowerShell Microsoft 365ユーザー アカウントをブロックする
 

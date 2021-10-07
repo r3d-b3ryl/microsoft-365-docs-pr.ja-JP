@@ -9,7 +9,7 @@ ms.reviewer: shegu, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid: MET150
 ROBOTS: NOINDEX
 description: Microsoft が認識するサード パーティパートナー Microsoft 365サブスクリプションにライセンスを追加する方法について説明します。
 ms.date: 08/27/2021
-ms.openlocfilehash: 5877ffbc1d0403d362666c4b6c34cdfee8aa5ee2
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.openlocfilehash: d5c8c689db74c1e12588ab1ad1bcefc102f9476d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58745783"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203461"
 ---
 # <a name="add-licenses-to-a-subscription-purchased-through-the-volume-licensing-service-center"></a>ボリューム ライセンス サービス センター (VLSC) 経由で購入したサブスクリプションにライセンスを追加する
 
@@ -38,7 +38,7 @@ ms.locfileid: "58745783"
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[お使いの製品]</a> ページの順に移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">お使いの製品</a>] ページの順に移動します。
 
 ::: moniker-end
 

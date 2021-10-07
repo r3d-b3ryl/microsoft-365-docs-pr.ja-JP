@@ -12,7 +12,7 @@ ms.collection:
 - Adm_NonTOC
 ms.custom: AdminSurgePortfolio
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BCS160
 - MET150
@@ -20,12 +20,12 @@ search.appverid:
 ROBOTS: NOINDEX
 description: 認証プロセスに最適なサーバーに移動する Office 365 の 'MSOID' CNAME レコードの詳細については、応答を速くします。
 monikerRange: o365-21vianet
-ms.openlocfilehash: a1d587abc9db03c9a1f7c5f66711fde3648a0e96
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e51847065ac3f91f44b8be35932869e9418e8a70
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176272"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188795"
 ---
 # <a name="whats-the-purpose-of-the-office-365-cname-record-for-msoid"></a>MSOID の Office 365 CNAME レコードの目的
 

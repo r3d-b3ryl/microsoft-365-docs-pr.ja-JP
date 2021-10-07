@@ -2,7 +2,7 @@
 title: Insider リスク管理 ユーザー ダッシュボード
 description: インサイダーリスク管理について詳しくは、Microsoft 365
 keywords: Microsoft 365, インサイダー リスク管理, リスク管理, コンプライアンス
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: b9f2933f6e259a8e39069a0bb90eafc6c1c9a30e
-ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
+ms.openlocfilehash: 3fa0a9a44c8083c62d30bd7e7aeca02b60046eea
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/21/2021
-ms.locfileid: "59460054"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204253"
 ---
 # <a name="insider-risk-management-users-dashboard"></a>Insider リスク管理 ユーザー ダッシュボード
 

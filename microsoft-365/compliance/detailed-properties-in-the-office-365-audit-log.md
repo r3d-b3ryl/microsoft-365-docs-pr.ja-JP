@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: この記事では、監査ログ レコードの結果をエクスポートするときに含まれる追加Office 365説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 20965367cda41ad50070d42b306564f6a8d9bb8b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 94fc41245a3def9e12412249368e31a0a13655a2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59193171"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188255"
 ---
 # <a name="detailed-properties-in-the-audit-log"></a>監査ログの詳細なプロパティ
 

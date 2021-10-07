@@ -2,27 +2,25 @@
 title: iOS 上の Microsoft Defender for Endpoint に関連する FAQ に関する問題のトラブルシューティングと回答の検索
 description: トラブルシューティングと FAQ - Microsoft Defender for Endpoint on iOS
 keywords: microsoft、defender、Microsoft Defender for Endpoint、ios、トラブルシューティング、FAQ、方法
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1a7900256207dd50f64a4bb8fe43b86bcf2b2913
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: 809954847f1ef96f3efae1b243061af4f573a21e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988273"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199803"
 ---
 # <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>iOS 上の Microsoft Defender for Endpoint で問題のトラブルシューティングを行い、FAQ に対する回答を見つける
 
@@ -106,7 +104,7 @@ Microsoft Defender for Endpoint は、フィッシングなどの Web ベース�
 
 ## <a name="issues-on-supervised-devices-with-content-filter-profile-installed"></a>コンテンツ フィルター プロファイルがインストールされている監視対象デバイスの問題
 
-Defender for Endpoint コンテンツ フィルターがインストールされている監視対象デバイスに問題があります。 そのようなデバイスのインターセット接続で遅延や遅延が発生した場合は、デバイスからコンテンツ フィルター プロファイルをアンインストールまたは削除します。 この問題の解決に取り組み、解決が完了したらこの場所を更新します。 
+Defender for Endpoint コンテンツ フィルターがインストールされている監視対象デバイスに問題があります。 このようなデバイスでインターネット接続の遅延や遅延が発生した場合は、デバイスからコンテンツ フィルター プロファイルをアンインストールまたは削除します。 この問題の解決に取り組み、解決が完了したらこの場所を更新します。 
 
 ## <a name="issues-during-app-updates-from-the-app-store"></a>アプリ ストアからのアプリの更新中の問題
 
@@ -114,7 +112,7 @@ Defender for Endpoint コンテンツ フィルターがインストールされ
 
 ## <a name="send-in-app-feedback"></a>アプリ内フィードバックの送信
 
-ユーザーが上記のセクションでまだ解決されていない問題に直面した場合、またはリストされている手順を使用して解決できない場合、ユーザーは診断データと共にアプリ内フィードバックを提供できます。 次に、適切なソリューションを提供するためにログを調査します。 ユーザーは、次の手順を使用して手数料を送信できます。
+ユーザーが上記のセクションでまだ解決されていない問題に直面した場合、またはリストされている手順を使用して解決できない場合、ユーザーは診断データと共にアプリ内フィードバックを提供できます。 次に、適切なソリューションを提供するためにログを調査します。 ユーザーは、次の手順を使用してフィードバックを送信できます。
 
   - iOS/iPadOS デバイスで MSDefender アプリを開きます。
   - 左上隅のメニュー (プロファイル アイコン) をタップします。

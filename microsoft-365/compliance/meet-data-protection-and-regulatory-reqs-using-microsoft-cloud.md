@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -17,12 +17,12 @@ ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: データ保護と規制の要件を満たすために、Microsoft Service Trust Portal のコンプライアンス マネージャーの使用方法をご説明します。
 ms.custom: seo-marvel-apr2020
 ROBOTS: NOINDEX
-ms.openlocfilehash: fa4ed459f713761e648454c42c8ded91391f7cff
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: a4d38c827fb2941516c2d84389204723599db44b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58556170"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203221"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Microsoft コンプライアンス マネージャー (クラシック)
 
@@ -264,8 +264,8 @@ CIA/脅威および法的/外的要因で示された、可能性のある 15 �
 |リスク レベル|コントロール値|
 |---|:---:|
 |低|1-3|
-|中|6|
-|高|8|
+|中|6 |
+|高|8 |
 |重大|10|
 
 最も高いコンプライアンス スコアの値で評価コントロールの優先度を設定することで、組織は最もリスクの高い項目に集中できるようになります。コントロールの評価を完了するごとに、組織は、評価に対するコンプライアンス スコアの合計にさらにポイントが追加された形で、比例的に高い値のフィードバックを受け取ります。

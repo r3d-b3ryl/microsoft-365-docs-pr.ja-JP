@@ -9,17 +9,17 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
 description: アプリの脅威の検出と修復を開始する。
-ms.openlocfilehash: a57d888d2494fdcdc52e69b3738edba198b6363f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7bf3e716bfa84161503ad656264ada82adc2bd6b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59190070"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188375"
 ---
 # <a name="get-started-with-app-threat-detection-and-remediation"></a>アプリの脅威の検出と修復を開始する
 

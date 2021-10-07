@@ -10,7 +10,7 @@ metadata:
   audience: Admin
   ms.topic: article
   ms.service: o365-administration
-  localization_priority: Normal
+  ms.localizationpriority: medium
   ms.collection: M365-subscription-management
   ms.custom:
   - AdminSurgePortfolio
@@ -20,12 +20,12 @@ metadata:
   - MET150
   description: セルフサービス購入についてよく寄せられる質問への回答を紹介します。
   ms.date: 09/15/2020
-  ms.openlocfilehash: 7dcf16ff51854b595f61c2797a62632a3003b7c9
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.openlocfilehash: 603f50b95ef16e7484f87bcb437416f258073165
+  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59180143"
+  ms.lasthandoff: 10/06/2021
+  ms.locfileid: "60188411"
 title: セルフサービス購入に関するよくあるご質問
 summary: >
   セルフサービス購入により、ユーザーは新しいテクノロジを試して、最終的により大規模な組織に利益をもたらすソリューションを開発する機会が得られます。 中央調達と IT チームは、<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>を介してセルフサービス購入ソリューションを購入して展開するすべてのユーザーを表示できます。 管理者は、PowerShell を使用して製品ごとにセルフサービス購入を無効にすることができます。 詳細については、「[MSCommerce PowerShell モジュールに AllowSelfServicePurchase を使用する](allowselfservicepurchase-powershell.md)」を参照してください。

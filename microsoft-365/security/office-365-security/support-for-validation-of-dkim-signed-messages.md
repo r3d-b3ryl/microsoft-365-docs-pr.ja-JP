@@ -7,7 +7,7 @@ author: MSFTTracyP
 manager: dansimp
 audience: ITPro
 ms.topic: article
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: a4c95148-a00c-4d12-85ed-88520b547d97
@@ -16,12 +16,12 @@ ms.collection:
 description: DKIM 署名済みメッセージの検証について、Exchange Online ProtectionおよびExchange Online
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8695e25000390cf6c5d58adf63db1984c873d75b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a5ea98add5ebe860f756d645909366a1f5502832
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192271"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203853"
 ---
 # <a name="support-for-validation-of-dkim-signed-messages"></a>DKIM 署名付きメッセージの検証をサポートする
 

@@ -2,7 +2,7 @@
 title: インサイダーリスク管理活動の調査
 description: インサイダーリスク管理活動の調査についてMicrosoft 365
 keywords: Microsoft 365、インサイダー リスク、リスク管理、コンプライアンス
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 53e6c5ba245a99970a66aa7a61c74cecb6555420
-ms.sourcegitcommit: e001934654119e15149ed29b3079b1019849f59c
+ms.openlocfilehash: d97ddce798a043f2f73bf3f6bf62fdb890fdfee1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59934679"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190811"
 ---
 # <a name="investigate-insider-risk-management-activities"></a>インサイダーリスク管理活動の調査
 

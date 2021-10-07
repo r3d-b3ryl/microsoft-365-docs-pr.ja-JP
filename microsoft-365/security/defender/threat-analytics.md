@@ -13,7 +13,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e25c6bfb3efabfd53d1babc10c20a46e1f6c0f78
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2980eb4d5fe2d16d38237d3166b9c25810985fab
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211784"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205105"
 ---
 # <a name="threat-analytics-in-microsoft-365-defender"></a>脅威分析 (Microsoft 365 Defender 
 
@@ -35,7 +35,7 @@ ms.locfileid: "59211784"
 **適用対象:**
 - Microsoft 365 Defender
 
-> Microsoft 365 Defender を体験してみませんか? [ラボ環境で評価する](m365d-evaluation.md?ocid=cx-docs-MTPtriallab)ことも、[実稼働環境でパイロット プロジェクトを実行する](m365d-pilot.md?ocid=cx-evalpilot)こともできます。
+> Microsoft 365 Defender を体験しますか? [ラボ環境で評価](m365d-evaluation.md?ocid=cx-docs-MTPtriallab)、または[運用でパイロット プロジェクトを実行](m365d-pilot.md?ocid=cx-evalpilot)することができます。
 >
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
@@ -91,7 +91,7 @@ _脅威分析ダッシュボード。検索アイコンをクリックして、�
 - [**関連するインシデント**](#related-incidents-view-and-manage-related-incidents)
 - [**影響を受け取ったアセット**](#impacted-assets-get-list-of-impacted-devices-and-mailboxes)
 - [**メールの試行の防止**](#prevented-email-attempts-view-blocked-or-junked-threat-emails)
-- [**緩和策**](#mitigations-review-list-of-mitigations-and-the-status-of-your-devices)
+- [**軽減策**](#mitigations-review-list-of-mitigations-and-the-status-of-your-devices)
 
 ### <a name="overview-quickly-understand-the-threat-assess-its-impact-and-review-defenses"></a>概要: 脅威をすばやく理解し、影響を評価し、防御を確認する
 
@@ -127,7 +127,7 @@ _脅威分析レポートの概要セクション_
 - **レポートの種類**- 特定のレポートの種類に応じて最も関連性の高いレポートを表示できます。 たとえば、ツールとテクニックをカバーするレポートすべてです。 
 - **フィルター**— 脅威レポートの一覧を効率的に確認し、特定の脅威タグまたはレポートの種類に基づいてビューをフィルター処理する場合に役立つ。 たとえば、ランサムウェアカテゴリに関連する脅威レポート、または脆弱性をカバーする脅威レポートを確認します。
 
-##### <a name="how-does-it-work"></a>どのような仕組みですか?
+##### <a name="how-does-it-work"></a>どのような仕組みなのか。
 
 Microsoft Threat Intelligence チームは、各脅威レポートに脅威タグを追加しました。
 
@@ -222,7 +222,7 @@ _脅威分析レポートの [軽減策] セクション_
 - デバイスは、サービスにデータを送信していない場合は、"使用不可" としてカウントされます。
 - ウイルス対策関連の統計情報は、ユーザー設定Microsoft Defender ウイルス対策されます。 サードパーティのウイルス対策ソリューションを使用するデバイスは、"公開" として表示されます。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [高度な検索で脅威を事前に検出する](advanced-hunting-overview.md) 
 - [[アナリスト レポート] セクションについて](threat-analytics-analyst-reports.md)

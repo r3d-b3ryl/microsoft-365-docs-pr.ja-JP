@@ -7,7 +7,7 @@ ms.date: 06/04/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - SPO_Content
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - SPO160
 description: Office 365 Content Delivery Network (CDN) クイック スタート
-ms.openlocfilehash: 30c5d301af6e4ca20646c46cc63cde38f2b28aed
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f0794c16188c6a020df56914adf0619a1688c052
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215813"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199983"
 ---
 # <a name="office-365-content-delivery-network-cdn-quickstart"></a>Office 365 Content Delivery Network (CDN) クイック スタート
 

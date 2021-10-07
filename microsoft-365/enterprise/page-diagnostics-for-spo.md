@@ -7,7 +7,7 @@ ms.date: 06/03/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - SPO_Content
@@ -19,12 +19,12 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: Web サイトのページ診断ツールSharePoint使用して、SharePointのモダン ポータルページとクラシック発行ページを事前に定義されたパフォーマンス条件のセットに対して分析します。
-ms.openlocfilehash: e741e8e2da62d2361578e31edcb6dbbafafbb7dc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7e1931b7cdc661b5e0a6ed8751a26f8a77e4bc2e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213813"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199971"
 ---
 # <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>[ページ診断] ツールを使用SharePointする
 
@@ -171,7 +171,7 @@ SharePoint のページ診断ツールを使用して SharePoint モダン ポ�
   
     CorrelationID (ツールの上部に表示) をメモし、サポート担当者に提供して、診断セッションに関する追加情報を収集できます。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [SharePoint Online のパフォーマンスをチューニングする](tune-sharepoint-online-performance.md)
 

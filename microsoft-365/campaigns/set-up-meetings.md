@@ -8,7 +8,7 @@ manager: scotv
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: オンライン会議と会議をMicrosoft Teams。
-ms.openlocfilehash: 40858f43794736a6b2a9696b84409ca376ed8706
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: cb19649da667c7c9317ca240162ac3e42e991806
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178248"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204733"
 ---
 # <a name="set-up-meetings"></a>会議をセットアップする
 

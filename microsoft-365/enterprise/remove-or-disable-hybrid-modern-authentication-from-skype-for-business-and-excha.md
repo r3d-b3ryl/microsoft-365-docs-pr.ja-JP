@@ -7,7 +7,7 @@ ms.date: 11/3/2017
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: 5a91b9e3-1508-475b-93e0-710fa5d5cd2d
@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - seo-marvel-apr2020
 description: この記事では、ハイブリッドモダン認証を削除または無効にする方法について、Skype for BusinessおよびExchange。
-ms.openlocfilehash: 9442ef3e19d0835bfd59f27ec425e36fd7dfcf7a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: efc84ead5ea8219e77391f2a8ebe51e5fa23da8c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215734"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202813"
 ---
 # <a name="removing-or-disabling-hybrid-modern-authentication-from-skype-for-business-and-exchange"></a>Skype for Business および Exchange からのハイブリッド先進認証の削除または無効化
 

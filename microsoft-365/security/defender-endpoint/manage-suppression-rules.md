@@ -2,26 +2,24 @@
 title: エンドポイント抑制ルールの Microsoft Defender の管理
 description: 抑制ルールを使用して、ポータルにアラートが表示されるのを防ぐ必要がある場合があります。 Microsoft Defender for Endpoint で抑制ルールを管理する方法について説明します。
 keywords: 抑制、ルール、ルール名、スコープ、アクション、アラートの管理、オン、オフ
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ac8b6255b46c20582d43680b3287f324f4f63c42
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4a40fe425f829f3521098ece27bd23948619cd66
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214903"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205321"
 ---
 # <a name="manage-suppression-rules"></a>抑制ルールの管理
 
@@ -53,6 +51,6 @@ ms.locfileid: "59214903"
 
 2. ルール名をクリックします。 ルールの詳細が表示されます。 ルールが作成された状態、スコープ、アクション、一致するアラートの数、作成日時などのルールの詳細が表示されます。 関連付けられたアラートとルールの条件を表示することもできます。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [アラートの管理](manage-alerts.md)

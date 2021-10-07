@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 audience: ITPro
 ms.topic: article
 author: denisebmsft
@@ -18,12 +18,12 @@ manager: dansimp
 ms.technology: mde
 ms.date: 10/04/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 794c735ecf84efe57b9bb4c88f20f599f25a6a8a
-ms.sourcegitcommit: d1eb1c26609146ff5a59b2a1b005dd7ac43ae64e
+ms.openlocfilehash: 881711359313bb0b22870ce15bbbc7ff2d91d1b5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60099635"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205309"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>更新Microsoft Defender ウイルス対策を管理し、基準計画を適用する
 

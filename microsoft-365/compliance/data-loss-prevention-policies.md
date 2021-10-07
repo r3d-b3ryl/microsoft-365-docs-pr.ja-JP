@@ -11,7 +11,7 @@ ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
-localization_priority: ''
+ms.localizationpriority: ''
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -24,12 +24,12 @@ ms.custom:
 ROBOTS: NOINDEX, NOFOLLOW
 feedback_system: None
 description: データ損失防止リファレンス 資料
-ms.openlocfilehash: 1eba9c425e66c61e63133d39a844010a499b3eb4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: cce8aa10f0ae84daa3a89881b689b93a212ef472
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216873"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204421"
 ---
 # <a name="data-loss-prevention-reference"></a>データ損失防止リファレンス
 

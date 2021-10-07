@@ -8,7 +8,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -22,18 +22,18 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: ''
 description: この記事では、特権アクセス管理を有効にし、構成する方法の詳細について説明Office 365。
-ms.openlocfilehash: e66a7e66c3505145b1fa4eb3e16db9ec63c3c1e4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 28e1e6a399f4491ad63094ac5e589c9746dd58cf
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221165"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189335"
 ---
 # <a name="get-started-with-privileged-access-management"></a>特権アクセス管理の使用を開始する
 
 このトピックでは、組織内で特権アクセス管理を有効および構成する方法について説明します。 特権アクセスを管理および<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">使用</a>するには、Microsoft 365 管理センター管理 PowerShell Exchangeを使用できます。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 特権アクセス管理を開始する前に、サブスクリプションとアドオンMicrosoft 365[確認](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)する必要があります。 特権アクセス管理にアクセスして使用するには、組織に次のいずれかのサブスクリプションまたはアドオンが必要です。
 

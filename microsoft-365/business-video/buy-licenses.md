@@ -9,7 +9,7 @@ ms.reviewer: argani, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 description: 一般法人向け Microsoft 365 の新しいライセンスを購入する方法について説明します。
 ms.date: 09/16/2021
-ms.openlocfilehash: 51f90e3d2f5a49ce8d20c0ab905bd72c0494f653
-ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
+ms.openlocfilehash: 7a6be3ea1c7592b2c05983a0648b8eee87ab2049
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59477577"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204793"
 ---
 # <a name="buy-microsoft-365-licenses"></a>Microsoft 365 のライセンスを購入する
 
@@ -39,7 +39,7 @@ ms.locfileid: "59477577"
 新しいユーザーを追加する場合、それらのユーザーのために Microsoft 365 ライセンスを追加購入する必要があります。
 
 > [!NOTE]
-> 一部のサブスクリプションでは、サブスクリプションを購入または更新した後に限られた期間だけキャンセルできます。 キャンセル ウィンドウが過ぎた場合は、定期的な請求をオフにし、期間の最後にサブスクリプションをキャンセルします。
+> 一部のサブスクリプションでは、サブスクリプションを購入または更新した後、限られた時間内にのみキャンセルできます。 キャンセル期間が過ぎた場合は、定期的な請求をオフにして、期間の終了時にサブスクリプションをキャンセルします。
 
 ## <a name="try-it"></a>お試しください!
 

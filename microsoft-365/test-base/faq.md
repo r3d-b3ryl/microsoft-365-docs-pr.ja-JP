@@ -9,17 +9,17 @@ audience: Software-Vendor
 ms.topic: troubleshooting
 ms.date: 07/06/2021
 ms.service: virtual-desktop
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 2f4cfd4cb55d6a89acf8f78d60006851c14e603f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 668631563b35a848df5bfbdfd930be17efce8c04
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219704"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203665"
 ---
 # <a name="test-base-faq"></a>テスト ベースに関する FAQ
 

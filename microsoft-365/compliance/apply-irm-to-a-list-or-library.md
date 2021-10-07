@@ -9,7 +9,7 @@ ms.date: 7/2/2018
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - SPO160
 - OSU150
@@ -21,12 +21,12 @@ ms.collection:
 - SPO_Content
 description: Information Rights Management (IRM) を使用すると、リストまたはライブラリからダウンロードされるファイルを制御および保護できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 84f0443cd31f26549dc1f5dc06be6e7bf52b05dc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4dfa7360dd178e5943402fcb834236d7d0bf9a08
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178167"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203305"
 ---
 # <a name="apply-information-rights-management-irm-to-a-list-or-library"></a>リストまたはライブラリに Information Rights Management (IRM) を適用する
 

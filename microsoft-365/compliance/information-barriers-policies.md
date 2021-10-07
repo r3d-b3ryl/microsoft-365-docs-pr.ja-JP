@@ -11,16 +11,16 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
-localization_priority: None
+ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2c07169254f7541b1107748e1aa5b1753df46fc6
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: 74a16519a6b7e6640c72eb500b1c72d5df494fd9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60010247"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204337"
 ---
 # <a name="get-started-with-information-barriers"></a>情報バリアの使用を開始する
 

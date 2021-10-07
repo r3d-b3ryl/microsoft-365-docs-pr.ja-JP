@@ -9,18 +9,18 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: このページでコネクタを&して、Facebook Business Microsoft 365 コンプライアンス センターページから&にアーカイブ データをインポートする方法についてMicrosoft 365。
-ms.openlocfilehash: 766f7858c6e5117190712d3daad68b2b7b4e37c2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b78a2ae168c896d525ad57bc986105e891f7dde9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216954"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204505"
 ---
 # <a name="set-up-a-connector-to-archive-facebook-data-preview"></a>Facebook データをアーカイブするコネクタをセットアップする (プレビュー)
 

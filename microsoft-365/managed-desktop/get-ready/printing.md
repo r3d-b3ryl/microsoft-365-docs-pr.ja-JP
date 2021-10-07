@@ -5,17 +5,17 @@ keywords: Microsoft マネージド デスクトップ、Microsoft 365、サー�
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: feba220d4e31443c85e600a7ab367a5f3c970e16
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 81de89a704c8ff8717439d83e70504ba2fe8e410
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215564"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188915"
 ---
 # <a name="prepare-printing-resources-for-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップ用に、印刷リソースを準備する
 

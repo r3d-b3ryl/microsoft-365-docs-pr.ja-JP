@@ -8,19 +8,19 @@ manager: laurawi
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: None
+ms.localizationpriority: ''
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 recommendations: false
 description: dlp ポリシーの条件と例外について学ぶ
-ms.openlocfilehash: 385c59a41535fbc3fdec0fc551a50b6915736f4f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6e02b4010671404174c9166bd65e237295e87483
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59193090"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204397"
 ---
 # <a name="dlp-policy-conditions-exceptions-and-actions"></a>DLP ポリシーの条件、例外、およびアクション
 
@@ -65,7 +65,7 @@ DLP ポリシーの条件と例外は、ポリシーが適用される機密性�
 |送信者の指定のプロパティが次のテキスト パターンと一致する|condition: *SenderADAttributeMatchesPatterns* <br/> 例外: *ExceptIfSenderADAttributeMatchesPatterns*|First プロパティ: `ADAttribute` <p> 2 番目のプロパティ: `Patterns`|送信者の指定した Active Directory 属性に、指定した正規表現に一致するテキスト パターンが含まれるメッセージ。|
 |
 
-### <a name="recipients"></a>受信者
+### <a name="recipients"></a>Recipients
 
 <br>
 
@@ -97,7 +97,7 @@ DLP ポリシーの条件と例外は、ポリシーが適用される機密性�
 |件名または本文に単語が含まれている|condition: *SubjectOrBodyContainsWords* <br/> 例外: *ExceptIfSubjectOrBodyContainsWords*|Words|件名フィールドまたはメッセージ本文に指定された単語があるメッセージ|
 |
 
-### <a name="attachments"></a>Attachments
+### <a name="attachments"></a>添付ファイル
 
 <br>
 

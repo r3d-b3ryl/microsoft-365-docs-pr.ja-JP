@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 - SPO_Content
 ms.custom: AdminSurgePortfolio
 search.appverid:
@@ -20,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: '使用状況分析が API に接続する方法と、さまざまなサービスの使用状況の毎月の傾向Microsoft 365します。  '
-ms.openlocfilehash: a99ee64715d9fdfa27b0f0feb8900dd301ebdaac
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 986a7c7b7f07fca9275f4d7d2d4171ae464158c7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775614"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191117"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Microsoft 365 利用状況分析データ モデル
 

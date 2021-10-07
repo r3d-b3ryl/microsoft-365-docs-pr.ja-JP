@@ -9,19 +9,19 @@ ms.date: ''
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: サポートされているファイルの種類の一覧 (Microsoft 365 Advanced eDiscovery の OCR 機能でサポートされるイメージ ファイルの種類をAdvanced eDiscovery。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0a637dc0505b74a2b7f7d726ed9a731db8e68c12
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3dccc6b0a8c96f7d78a2225051aca626818ec889
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221849"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204200"
 ---
 # <a name="supported-file-types-in-advanced-ediscovery"></a>サポートされているファイルの種類 (Advanced eDiscovery
 
@@ -106,7 +106,7 @@ Advanced eDiscoveryさまざまなレベルで多数のファイルの種類を�
 |text/html|はい|はい|はい|はい|はい|.htm;.html; .shtml|
 |
 
-## <a name="image"></a>イメージ
+## <a name="image"></a>Image
 
 <br>
 

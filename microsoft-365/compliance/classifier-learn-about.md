@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365solution-mip
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: トレーニングMicrosoft 365分類子は、ラボリングやポリシー アプリケーション用にさまざまな種類のコンテンツを認識するために、正のサンプルと負のサンプルを見てトレーニングできるツールです。
-ms.openlocfilehash: 086ca0575bc701deccbb7c49dbc7c71bdd838d5a
-ms.sourcegitcommit: 835dcaf5d5e0b485dc3ac485ded8943046afe36c
+ms.openlocfilehash: b218fea598049e8a3b621b4b6711550227e3cbd4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59942015"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204469"
 ---
 # <a name="learn-about-trainable-classifiers"></a>トレーニング可能な分類子の詳細
 

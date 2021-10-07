@@ -7,15 +7,15 @@ ms.author: jaimeo
 author: jaimeo
 ms.topic: article
 audience: ITPro
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: e438e9a84b86bd4c3360022c0558480f317144e7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d0444b1ad169619f2dfbe79b7b42ad8849f4736d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192790"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188903"
 ---
 # <a name="access-the-admin-portal"></a>管理ポータルへのアクセス
 

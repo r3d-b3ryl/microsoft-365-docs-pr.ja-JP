@@ -11,7 +11,7 @@ ms.topic: article
 f1_keywords:
 - MACBillingBillsPaymentsInvoices
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +23,12 @@ search.appverid: MET150
 description: Microsoft ビジネス製品の課金内容または請求書の内容を読んで理解する方法について説明します。
 keywords: 課金アカウント、組織情報、請求書
 ms.date: 05/04/2021
-ms.openlocfilehash: b780b2f0379e9e1f1866c22139a7ac3504a23b53
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d6b36d547bfa1610339c2818969d0164a585eeb2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219133"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203485"
 ---
 # <a name="understand-your-bill-or-invoice"></a>課金内容または請求書の内容を理解する
 
@@ -145,7 +145,7 @@ Microsoft 365 サブスクリプションしかない場合は、「[Microsoft 3
 
 Azure 前払は、対象となる Azure 製品およびサービスの支払い方法としてのみ利用できます。
 
-## <a name="need-help-contact-support"></a>サポートが必要な場合 サポートにお問い合せください
+## <a name="need-help-contact-support"></a>お困りの際は、 サポートにお問い合せください
 
 Azure クレジットについて質問がある場合、またはサポートが必要な場合は、<a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">Azure サポートを使用してサポート要求を作成してください</a>。
 

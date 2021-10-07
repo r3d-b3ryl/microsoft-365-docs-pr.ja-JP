@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 共有予定表を作成する方法について学習します。
-ms.openlocfilehash: 87b73b9b1bff2d56926c70e812515df3882edcf3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 938318efc126aebbde5c2eb44b2ea053a5801553
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180640"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188579"
 ---
 # <a name="create-a-shared-calendar"></a>共有予定表を作成する
 

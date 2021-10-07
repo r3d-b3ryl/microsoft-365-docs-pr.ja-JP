@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ドメインを Google ワークスペースからビジネス向けMicrosoft 365する方法について説明します。
-ms.openlocfilehash: 550a94614c9cc2b05f46bf2490c8866e8fc4a478
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b41fdf304d0f0b9680f87f40a4564573593d6e75
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59193400"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204781"
 ---
 # <a name="add-your-google-workspace-domain-to-microsoft-365"></a>Google Workspace ドメインをユーザーに追加Microsoft 365
 

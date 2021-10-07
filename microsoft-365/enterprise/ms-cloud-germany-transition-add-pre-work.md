@@ -7,7 +7,7 @@ ms.date: 05/12/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター地域のOffice 365サービスに移行する場合の事前作業。'
-ms.openlocfilehash: 77e3dbd3f819aea15632a0ba069249a44a8663fb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 04d94cb8cd95d55ccccec388e10be49541828270
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191240"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189071"
 ---
 # <a name="pre-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>Microsoft Cloud Deutschland からの移行の移行前アクティビティ
 
@@ -93,7 +93,7 @@ nslookup -querytype=CNAME msoid.contoso.com
 **適用対象**: アプリを使用しているOffice、特にクライアントWindowsします。 <br>
 **適用時**: フェーズ 9 が開始される前の任意の時間
 
-Office 365 地域 "ドイツ" に移行するテナントでは、テナント移行がフェーズ 9 に達した後、すべての Office デスクトップ アプリケーション (Word、Excel、PowerPoint、Outlook など) および OneDrive for Business クライアントを閉じて、Office 365 からサインアウトし、戻す必要があります。 サインアウトしてサインインすると、Officeサービスは、グローバル Azure AD サービスから新しい認証トークンをADできます。
+Office 365 "ドイツ" に移行するテナントでは、すべてのユーザーが Office 365 からサインアウトし、Office デスクトップ アプリケーション (Word、Excel、PowerPoint、Outlook など) および OneDrive for Business デスクトップ アプリケーションに戻る必要があります。テナントの移行がフェーズ 9 に達した後のクライアント。 サインアウトしてサインインすると、Officeサービスは、グローバル Azure AD サービスから新しい認証トークンをADできます。
 
 これは、すべてのクライアントに必要です。 スムーズな移行エクスペリエンスを実現するには、影響を受けるすべてのユーザーに、この今後のアクティビティについて事前に、また早期に通知し、指示を行う必要があります。
 
@@ -194,7 +194,7 @@ Microsoft Cloud Deutschland から Office 365 ドイツ地域に移行する場�
 |移行後に再構成が必要かどうかを判断します。|モバイル デバイス管理 (MDM) ソリューションはエンドポイントを `outlook.de` 対象とします。 このサービスへの移行Office 365、クライアント プロファイルはサービス URL に更新Office 365必要があります `outlook.office365.com` 。|Exchange Online MDM のお客様|クライアントは、エンドポイントにアクセスできる間も引き続き機能しますが、Microsoft Cloud Deutschland エンドポイントが使用できなくなった場合は失敗 `outlook.de` します。|
 
 
-## <a name="line-of-business-apps"></a>Line-of-business アプリ
+## <a name="line-of-business-apps"></a>基幹業務アプリ
 
 **適用対象:** Microsoft Cloud Deutschland が提供するエンドポイントを使用して、業務ライン (LOB) アプリを使用しているお客様<br>
 **適用時**: フェーズ 2 の完了後とフェーズ 9 の終了前

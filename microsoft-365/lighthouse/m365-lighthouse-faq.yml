@@ -8,7 +8,7 @@ metadata:
   audience: Admin
   ms.topic: article
   ms.prod: microsoft-365-lighthouse
-  localization_priority: Normal
+  ms.localizationpriority: medium
   ms.collection:
   - M365-subscription-management
   - Adm_O365
@@ -17,12 +17,12 @@ metadata:
   - M365-Lighthouse
   search.appverid: MET150
   description: 管理サービス プロバイダー (MSP) で Microsoft 365 Lighthouse に関するよく寄せられる質問 (FAQ) に対する回答をMicrosoft 365 Lighthouse。
-  ms.openlocfilehash: f1373ba23149583b1730499bcf9a222554ec91a0
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.openlocfilehash: 2a42dc6b0bec6b1b88b175eee8e2cb0b4b291e8c
+  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59212484"
+  ms.lasthandoff: 10/06/2021
+  ms.locfileid: "60188951"
 title: Microsoft 365 Lighthouseよく寄せられる質問 (FAQ)
 summary: >
   > [!NOTE]

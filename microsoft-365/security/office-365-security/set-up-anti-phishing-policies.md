@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: how-to
 ms.date: ''
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
 - M365-security-compliance
@@ -17,12 +17,12 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) と Microsoft Defender で使用できるフィッシング対策ポリシーについてOffice 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b08439f07bcf80a76e45cad02001194543491c14
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: f4b845f9a34eecde953d3736b1a82f37b54b05d6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60009531"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205045"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>アプリ内のフィッシング対策Microsoft 365
 
@@ -85,7 +85,7 @@ EOP のフィッシング対策ポリシーと Defender for Office 365 のフィ
   - **ドメイン**: ドメイン内で構成されている [](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)1 つ以上のMicrosoft 365。
 
   - **これらのユーザー、グループ、およびドメインを除外する**: ポリシーの例外。 設定と動作は、次の条件とまったく同じになります。
-    - **Users**
+    - **ユーザー**
     - **グループ**
     - **ドメイン**
 

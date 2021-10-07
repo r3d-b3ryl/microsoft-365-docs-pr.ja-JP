@@ -8,14 +8,14 @@ audience: admin
 ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
-localization_priority: Normal
+ms.localizationpriority: medium
 description: トピックの検出を管理する方法については、Microsoft Viva トピック。
-ms.openlocfilehash: 2316df8df7a1d8fb2b8e0951e12810398bcb2e40
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fb26bccc7feb00611f46c278dd85a3f75a8c4a50
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218464"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188999"
 ---
 # <a name="manage-topic-discovery-in-microsoft-viva-topics"></a>トピックの検出を管理Microsoft Viva トピック
 

@@ -10,7 +10,7 @@ ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
@@ -18,12 +18,12 @@ ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
 description: 評価ステージの概要と、関連度トレーニング中の問題の豊富さを判断する際の役割Microsoft 365 Advanced eDiscovery。
 ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c3965d15f64559da51b2071679913f02979d89f83db6124703c0d393608effe4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 80ec4f0c362ff403f45123bf837e82c5d2f6ed7e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53808574"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189479"
 ---
 # <a name="assessment-in-the-relevance-module-in-advanced-ediscovery"></a>[関連度] モジュールの評価Advanced eDiscovery
   

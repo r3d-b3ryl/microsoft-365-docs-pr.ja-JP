@@ -9,7 +9,7 @@ ms.reviewer: tugu, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: Microsoft 認定ソリューション プロバイダー (パートナー) と連携して、組織または学校の製品とサービスを購入および管理する方法について説明します。
 ms.date: 04/13/2021
-ms.openlocfilehash: f7fd5cda68ce5312f284e7f86e1cfbd3716cc8d4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 19068c87693fbcda06a520b4e41baaad3fef651b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59190271"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203449"
 ---
 # <a name="manage-partner-relationships"></a>パートナー関係の管理
 
@@ -35,9 +35,9 @@ Microsoft 認定ソリューション プロバイダー (パートナー) と�
 2. パートナーは、パートナー関係を確立するために顧客に電子メール要求を送信します。
 3. 顧客は招待を受け入Microsoft 365 管理センターパートナーとの作業を開始します。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
-これらの手順を実行するには、グローバル管理者または課金管理者である必要があります。 詳細については、[「管理者の役割について」](../admin/add-users/about-admin-roles.md) を参照してください。
+これらの手順を実行するには、グローバル管理者または課金管理者である必要があります。 詳細については、「[管理者の役割について](../admin/add-users/about-admin-roles.md)」を参照してください。
 
 ## <a name="what-can-a-partner-do-for-my-organization-or-school"></a>パートナーが自分の組織や学校に対して何ができますか?
 

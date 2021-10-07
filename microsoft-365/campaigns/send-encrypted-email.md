@@ -9,7 +9,7 @@ ms.date: 9/20/2018
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 電子メールを使用して暗号化された電子メールを送信するOutlook。
-ms.openlocfilehash: 789477557801f2c8b89fa2bb281d0b0f2faf993a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0fed17340cb3ad6c049a3d242604c63f50509450
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178255"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189695"
 ---
 # <a name="encrypt-or-label-your-sensitive-email"></a>機密情報を暗号化またはラベル付けする
 

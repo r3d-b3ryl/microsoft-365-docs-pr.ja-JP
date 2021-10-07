@@ -12,7 +12,7 @@ f1.keywords:
 ms.author: tracyp
 author: MSFTTracyP
 ms.date: 07/01/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 674067ab082c70b2c5ae0fa0551a93c2d4f9a030
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8ff1cf191670dc2345293ebd8aa531b87b090a8a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189250"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205093"
 ---
 # <a name="review-microsoft-defender-for-office-365-architecture-requirements-and-key-concepts"></a>Microsoft Defender のアーキテクチャ要件Office 365主な概念について確認する
 
@@ -52,7 +52,7 @@ Defender for Office 365を有効にする前に、アーキテクチャを理解
 |2     | Exchange Online Protection接続をネゴシエートして検証し、メッセージ ヘッダーとコンテンツを検査して、必要な追加のポリシー、タグ付け、または処理を決定します。  |
 |3     | Exchange Online、Microsoft Defender と統合Office 365、より高度な脅威保護、軽減、修復を提供します。 |
 |4      | 悪意のある、ブロックされている、または検疫されていないメッセージが処理され、迷惑メール、メールボックス ルール、または他の設定に関連するユーザー設定が評価され、トリガーされる EXO で受信者に配信されます。 |
-|5      | Azure AD Connect を使用すると、オンプレミスの Active Directory との統合を有効にし、メールが有効なオブジェクトとアカウントを Azure Active Directory と最終的にExchange Online。 |
+|5     | Azure AD Connect を使用すると、オンプレミスの Active Directory との統合を有効にし、メールが有効なオブジェクトとアカウントを Azure Active Directory と最終的にExchange Online。 |
 |6      | オンプレミス環境を統合する場合は、メール関連の属性、設定、および構成の管理と管理をサポートするために Exchange サーバーを使用する方が強く推奨されます。 |
 |7      | Microsoft Defender for Office 365拡張検出および応答 (XDR) Microsoft 365 Defender信号を共有します。|
 

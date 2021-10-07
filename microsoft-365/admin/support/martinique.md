@@ -9,15 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-localization_priority: Normal
+ms.localizationpriority: medium
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: dabfd8a901d4b4c375cf666e3fd1b2fe281db347
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1c2ac811778c7298b57f33edb06bdcf1977fd15a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59210164"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204992"
 ---
 # <a name="contact-support-for-martinique"></a>マルティニークのサポートに問い合わせ
 

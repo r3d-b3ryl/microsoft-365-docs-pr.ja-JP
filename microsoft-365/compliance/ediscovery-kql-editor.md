@@ -10,18 +10,18 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: KQL エディターを使用して、コンテンツ検索、Core 電子情報開示、および電子情報開示の各ページで電子情報開示検索クエリをAdvanced eDiscovery。
-ms.openlocfilehash: 571612cc2032b6241923cb6bba2a730a5d821c8a
-ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
+ms.openlocfilehash: cc63b0d945d6807178a801d8e6e1a69311916365
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "60088219"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190979"
 ---
 # <a name="use-the-kql-editor-to-build-search-queries-preview"></a>KQL エディターを使用して検索クエリを作成する (プレビュー)
 

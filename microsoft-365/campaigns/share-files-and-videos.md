@@ -8,7 +8,7 @@ manager: scotv
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: キャンペーン内のファイルやビデオを、Microsoft TeamsとSharePoint。
-ms.openlocfilehash: 20e232f1ca8a8392efa236d21b26259f47382148
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fa76261377f4ae52a53a4ff2375afc670086a449
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178239"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191015"
 ---
 # <a name="share-files-and-videos"></a>ファイルやビデオを共有する
 
@@ -52,7 +52,7 @@ Microsoft Stream を使用して、内部でビデオを保存および共有で
 4. Microsoft Stream を使用して、キャンペーンに表示するビデオをホストします。
 5. チームMicrosoft Teams共有SharePoint必要なビデオ ファイルを保存するには、ビデオ ファイルを使用します。
 
-## <a name="set-up"></a>セットアップ
+## <a name="set-up"></a>設定
 
 チームを作成し、広告主やファイナンス パートナーなど、ゲストをそのチームに追加するには、次の手順を実行します。
 

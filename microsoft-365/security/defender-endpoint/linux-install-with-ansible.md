@@ -3,27 +3,25 @@ title: Ansible を使用した Linux での Microsoft Defender for Endpoint の�
 ms.reviewer: ''
 description: Ansible を使用して Microsoft Defender for Endpoint を Linux に展開する方法について説明します。
 keywords: Microsoft、Defender、Microsoft Defender for Endpoint、Linux、インストール、展開、アンインストール、puppet、ansible、linux、redhat、ubuntu、debian、sles、suse、centos
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: dc4986f5ef71f7080c3296448c1b85a717336940
-ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
+ms.openlocfilehash: 0ecc13693a043602885e8f221e6967bd44eb0da8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/21/2021
-ms.locfileid: "59460294"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205441"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Ansible を使用した Linux での Microsoft Defender for Endpoint の展開
 
@@ -77,7 +75,7 @@ Microsoft 365 Defender ポータルからオンボーディング パッケー�
 2. 最初のドロップダウン メニューで、オペレーティング システムとして **[Linux サーバー]** を選択します。 2 番目のドロップダウン メニューで、展開 **方法として [優先する Linux 構成管理ツール** ] を選択します。
 3. **[オンボーディング パッケージをダウンロードする]** を選択します。 ファイルを WindowsDefenderATPOnboardingPackage.zip として保存します。
 
-    ![Microsoft 365 Defenderのスクリーンショットを参照してください。](images/portal-onboarding-linux-2.png)
+    ![Microsoft 365 Defender ポータルのスクリーンショット。](images/portal-onboarding-linux-2.png)
 
 4. コマンド プロンプトから、ファイルがあることを確認します。 アーカイブの内容を抽出します。
 
@@ -136,7 +134,7 @@ Microsoft 365 Defender ポータルからオンボーディング パッケー�
     新機能をプレビューし、早期のフィードバックを提供するために、企業内の一部のデバイスを *insiders-fast* または *insiders-slow* のいずれかを使用するように構成することをお勧めします。
 
     > [!WARNING]
-    > 初期インストール後にチャネルを切り替えるには、製品を再インストールする必要があります。 製品チャネルを切り替えるには: 既存のパッケージをアンインストールし、新しいチャネルを使用するようにデバイスを再構成し、このドキュメントの手順に従って新しい場所からパッケージをインストールします。
+    > 初期インストール後にチャネルを切り替えるには、製品を再インストールする必要があります。製品チャネルを切り替えるには: 既存のパッケージをアンインストールし、新しいチャネルを使用するようにデバイスを再構成し、このドキュメントの手順に従って新しい場所からパッケージをインストールします。
 
     配布とバージョンをメモし、その下の最も近いエントリを識別します `https://packages.microsoft.com/config/[distro]/` 。
 
@@ -273,7 +271,7 @@ Microsoft 365 Defender ポータルからオンボーディング パッケー�
 
 オペレーティング システムを新しいメジャー バージョンにアップグレードするときは、最初に Linux 用 Defender for Endpoint をアンインストールし、アップグレードをインストールしてから、最後にデバイスの Linux 用 Defender for Endpoint を再構成する必要があります。
 
-## <a name="references"></a>関連情報
+## <a name="references"></a>参照
 
 - [YUM リポジトリの追加または削除](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/yum_repository_module.html)
 

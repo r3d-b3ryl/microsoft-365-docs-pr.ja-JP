@@ -10,19 +10,19 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 ROBOTS: NOINDEX, NOFOLLOW
 description: タグを付け、40 ファイルのトレーニング サンプルを使用する手順について説明します。この手順は、Advanced eDiscovery。
-ms.openlocfilehash: 8cb1de2b2f02ec9c2fd94e07574b638a001ec235
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c21ec89896dbd67bd348abd317d1389f8e105fda
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216394"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202993"
 ---
 # <a name="tagging-and-relevance-training-in-advanced-ediscovery"></a>タグ付けと関連性のトレーニング (Advanced eDiscovery
   

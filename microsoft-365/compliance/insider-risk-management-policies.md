@@ -2,7 +2,7 @@
 title: インサイダー リスクの管理。
 description: Microsoft 365 のインサイダー リスクの管理ポリシー
 keywords: Microsoft 365, インサイダー リスク管理, リスク管理, コンプライアンス
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 2f9a299faad33dbba09d9e32f3c860f9f7bd6311
-ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
+ms.openlocfilehash: ce78ca3459088907b497c540f438fdc960d3d350
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "60087811"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204289"
 ---
 # <a name="insider-risk-management-policies"></a>インサイダー リスクの管理。
 

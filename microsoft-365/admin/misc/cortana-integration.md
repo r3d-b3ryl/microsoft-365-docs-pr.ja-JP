@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: 有効な仕事用アカウントまたは学校アカウントを持つCortana、Microsoft 365レベルのセキュリティOffice 365を満たすエクスペリエンスを利用できます。
-ms.openlocfilehash: 94fdd199a0887750379c2582fe38538b1ff48c2f
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: ea1fc421a099c7fc446dd85c871ad9e508fb3a40
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394182"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188855"
 ---
 # <a name="cortana-in-microsoft-365"></a>CortanaのMicrosoft 365
 

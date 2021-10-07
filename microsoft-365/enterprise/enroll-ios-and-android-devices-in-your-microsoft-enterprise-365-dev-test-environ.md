@@ -9,17 +9,17 @@ ms.date: 11/19/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
 description: このテスト ラボ ガイドを使用して、デバイスをテスト環境に登録Microsoft 365リモートで管理します。
-ms.openlocfilehash: 5e27f2eecc9edda0a0fe7225d4ed47c7431eee77
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7610348febcc8c2054c50d7f7a6f1433e9b62306
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189630"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189119"
 ---
 # <a name="enroll-ios-and-android-devices-in-your-microsoft-365-for-enterprise-test-environment"></a>エンタープライズ テスト環境用に iOS Microsoft 365 Android デバイスを登録する
 
@@ -58,7 +58,7 @@ Intune では、iOS/iPadOS および Android デバイスを登録する方法�
 Intune をデバイス管理に使用する準備が整い、ガイダンスが必要な場合は、次の情報が役立つ場合があります。
 
 - [デバイス管理の概要](/mem/intune/fundamentals/what-is-device-management)
-- [チュートリアル: チュートリアル Intune in Microsoft エンドポイント マネージャー](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager)
+- [チュートリアル: Microsoft エンドポイント マネージャーでの Intune のチュートリアル](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager)
 - [展開ガイド: セットアップまたは移行Microsoft Intune](/mem/intune/fundamentals/deployment-guide-intune-setup)
 
 ## <a name="phase-3-manage-your-ios-and-android-devices-remotely"></a>フェーズ 3: iOS デバイスと Android デバイスをリモートで管理する
