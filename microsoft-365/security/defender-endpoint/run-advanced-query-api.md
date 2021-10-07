@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f85c4cd8cf5d657e4043aae80da8b3dae989a29d
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 3ad015c459cdaf4214fb88cab27b9d4d61342268
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59356624"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166268"
 ---
 # <a name="advanced-hunting-api"></a>高度なハンティング API
 
@@ -85,9 +85,9 @@ Content-Type|application/json
 
 要求本文で、JSON オブジェクトに次のパラメーターを指定します。
 
-パラメーター|種類|説明
+パラメーター|型|説明
 :---|:---|:---
-クエリ|テキスト|実行するクエリ。 **必須**。
+Query|テキスト|実行するクエリ。 **必須**。
 
 ## <a name="response"></a>応答
 
@@ -157,7 +157,7 @@ POST https://api.securitycenter.microsoft.com/api/advancedqueries/run
 }
 ```
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [Microsoft Defender for Endpoint API の概要](apis-intro.md)
 - [ポータルからの高度な検索](advanced-hunting-query-language.md)

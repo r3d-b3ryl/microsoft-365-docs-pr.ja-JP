@@ -8,28 +8,29 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:
 - MET150
 description: Basic Mobility and Security を使用して、組織情報を保護するデバイス ポリシーを作成します。
-ms.openlocfilehash: 06d377e86913cbacd781241d75765e6b6cc63b8b
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: aabac06a8936728ad1b37ee69fa22cc74e1a712e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775182"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166134"
 ---
 # <a name="create-device-security-policies-in-basic-mobility-and-security"></a>Basic Mobility and Security でデバイス セキュリティ ポリシーを作成する
 
 Basic Mobility and Security を使用すると、承認されていないアクセスから組織の情報を保護するデバイス Microsoft 365作成できます。 ポリシーは、デバイスのユーザーが該当する Microsoft 365 ライセンスを持ち、デバイスを Basic Mobility and Security に登録している組織内の任意のモバイル デバイスに適用できます。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 > [!IMPORTANT]
 > モバイル デバイス ポリシーを作成する前に、Basic Mobility and Security をアクティブ化してセットアップする必要があります。 詳細については、「Basic Mobility and Security の概要」を参照してください。
@@ -119,7 +120,7 @@ Basic Mobility and Security を使用すると、承認されていないアク�
 
 ユーザー デバイスにポリシーを適用すると、各デバイスへの影響はデバイスの種類によって多少異なります。 ポリシーが異なるデバイスに与える影響の例については、次の表を参照してください。
 
-|**セキュリティ ポリシー**|**Android 4 以降**|**Samsung KNOX**|**iOS 6 以降**|**メモ**|
+|**セキュリティ ポリシー**|**Android 4 以降**|**Samsung KNOX**|**iOS 6 以降**|**注**|
 |:-----|:-----|:-----|:-----|:-----|
 |暗号化されたバックアップを要求|いいえ|はい|はい|iOS 暗号化バックアップが必要です。|
 |クラウド バックアップの禁止|はい|はい|はい|Android の Google バックアップをブロックする (灰色表示)、iOS のクラウド バックアップ。|

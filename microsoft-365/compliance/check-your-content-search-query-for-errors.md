@@ -9,19 +9,19 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
 ms.custom: seo-marvel-apr2020
 description: 検索を実行する前に、電子情報開示検索のキーワード クエリでエラーと入力ミスを検出する方法について説明します。
-ms.openlocfilehash: b99f7c3df052cf41543ab57c92eb6326c6d814d8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c820b72ea54e338d4f2fde475568bf2b1c22ba3b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164111"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168676"
 ---
 # <a name="check-your-search-query-for-errors"></a>検索クエリでエラーを確認する
   

@@ -9,18 +9,18 @@ ms.date: ''
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
 description: Microsoft Teamsチャネルは、データ損失防止 (DLP) ポリシーをサポートします。
-ms.openlocfilehash: 789571a4123473d3c1708ec4ac16dd7656514d92
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f4e4c7b0d25d411fe8aa3d69b1768ed7508b9b6b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59193000"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168712"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>データ損失防止と Microsoft Teams
 
@@ -58,14 +58,14 @@ DLP 保護は、エンティティに対してTeamsされます。
 |ポリシーの範囲が次の場合 |これらのエンティティTeamsエンティティ |DLP 保護が利用可能になります|
 |---------|---------|---------|
 |個々のユーザー アカウント     |1:1/n チャット         |はい         |
-|     |一般的なチャット         |いいえ         |
+|     |一般的なチャット         |no         |
 |     |プライベート チャネル         |はい         |
 |セキュリティ グループ/配布リスト  | 1:1/n チャット         |はい         |
-|     |一般的なチャット         |いいえ         |
+|     |一般的なチャット         |no         |
 |     |プライベート チャネル         |はい        |
-|Microsoft 365 グループ    |1:1/n チャット          |いいえ         |
+|Microsoft 365 グループ    |1:1/n チャット          |no         |
 |     |一般的なチャット          |はい        |
-|     |プライベート チャネル|いいえ| 
+|     |プライベート チャネル|no| 
 
 
 ## <a name="policy-tips-help-educate-users"></a>ポリシー ヒントは、ユーザーの教育に役立ちます
@@ -205,7 +205,7 @@ DLP 保護は、エンティティに対してTeamsされます。
           > [!div class="mx-imgBorder"]
           > ![機密性の高いコンテンツの外部共有を検出する DLP 条件。](../media/dlp-teams-external-sharing/external-condition.png)
 
-    - **Actions**
+    - **アクション**
         - 外部ユーザーのコンテンツへのアクセスを制限する
         
         - メールおよびポリシー ヒントでユーザーに通知する

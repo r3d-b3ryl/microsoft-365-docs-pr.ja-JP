@@ -9,7 +9,7 @@ ms.reviewer: jamitche, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid: MET150
 description: 2019 年 9 月 14 日現在、欧州経済地域の 31 か国の銀行は、支払いを処理する前に、オンライン購入を行う人物の身元を確認する必要があります。
 keywords: payment services ディレクティブ 2、強力な顧客認証、多要素認証
 ms.date: 11/03/2020
-ms.openlocfilehash: bbbbe9f53c11fcae9c35cda1fd4e7d4b51a9c767
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7b2fdec6a921979dc5f314c5441b42eac84f6f1d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219144"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167740"
 ---
 # <a name="payment-services-directive-2-and-strong-customer-authentication-for-commercial-customers"></a>商用顧客向け Payment Services ディレクティブ 2 と強力な顧客認証
 

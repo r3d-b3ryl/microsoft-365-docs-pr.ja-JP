@@ -8,19 +8,19 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+ms.localizationpriority: ''
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager は、Microsoft Service Trust Portal の無料のワークフロー ベースのリスク評価ツールです。 コンプライアンス マネージャーを使用すると、Microsoft クラウド サービスに関連する規制コンプライアンス活動を追跡、割り当て、検証できます。
-ms.openlocfilehash: dc58bf9b38b08ddd7218dfe0be07013a72ad0608dec931a3a5992193f75b0a25
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b4a648c43fb20f557b85e24e9e67de036cc4f2e0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53880547"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168664"
 ---
 # <a name="microsoft-compliance-manager-and-the-gdpr"></a>Microsoft コンプライアンス マネージャーと GDPR
 

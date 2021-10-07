@@ -6,17 +6,17 @@ author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: fa1cb7307fddd815a2a9249c5a98739d21bd2418
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7da1bac830df352e776d9a9f59dc33cf5a22b8ee
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215164"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60169877"
 ---
 # <a name="remove-devices"></a>デバイスの削除
 

@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dolmont
 author: DulceMontemayor
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 93ffef0be7a8710fbaf115418e69c724bed17869
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ea06da7c3f7b6faad5a563968b735a6cd9154c0e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222685"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166494"
 ---
 # <a name="list-devices-by-software"></a>ソフトウェア別にデバイスを一覧表示する
 
@@ -46,7 +46,7 @@ ms.locfileid: "59222685"
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
 アプリケーション|Software.Read.All|'脅威と脆弱性管理ソフトウェア情報の読み取り'
-委任 (職場または学校アカウント)|Software.Read|'脅威と脆弱性管理ソフトウェア情報の読み取り'
+委任 (職場または学校のアカウント)|Software.Read|'脅威と脆弱性管理ソフトウェア情報の読み取り'
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -104,7 +104,7 @@ GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge/machi
 }
 ```
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [リスクベースの脅威&の管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [脅威&ソフトウェア インベントリ](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

@@ -7,7 +7,7 @@ ms.date: 11/17/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -16,12 +16,12 @@ search.appverid: MET150
 f1.keywords:
 - NOCSH
 description: この記事では、グローバル テナントの中国ユーザー向けにネットワーク パフォーマンスを最適化Microsoft 365します。
-ms.openlocfilehash: 9660270dbe73e9cbdff0b1e3796224b36319956b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 65f80137786ea708e2ee0200e63600906fd18d24
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220817"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166984"
 ---
 # <a name="microsoft-365-global-tenant-performance-optimization-for-china-users"></a>Microsoft 365ユーザー向けグローバル テナントパフォーマンスの最適化
 
@@ -102,7 +102,7 @@ ms.locfileid: "59220817"
 
 Microsoft は、ネットワーク アーキテクチャと特性のMicrosoft 365可能な範囲を超えるクライアントのユーザー エクスペリエンスとパフォーマンスの向上に継続的に取り組み続け中です。 [ネットワーク[Office 365] Communityに](https://techcommunity.microsoft.com/t5/office-365-networking/bd-p/Office365Networking)アクセスして、会話を開始または参加し、リソースを検索し、機能の要求と提案を送信します。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [Microsoft 365 のネットワーク計画とパフォーマンス チューニング](./network-planning-and-performance.md)
 

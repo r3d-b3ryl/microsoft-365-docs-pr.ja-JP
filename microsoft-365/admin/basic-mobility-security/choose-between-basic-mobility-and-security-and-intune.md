@@ -8,22 +8,23 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:
 - MET150
 description: 基本モビリティとセキュリティは、重要なMicrosoft 365です。
-ms.openlocfilehash: f348a81689aed43dcc8dbce15e92c0b7842aba69
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 0a461bc7462300bb2b27b5d027c2b4d4582b7d14
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775158"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166232"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>基本モビリティとセキュリティまたは Intune の間で選択する
 
@@ -67,9 +68,9 @@ Microsoft Intune組み込みの Basic Mobility and Security では、どちら�
 | 機能領域 | 機能のハイライト | 基本的なモビリティとセキュリティ | Microsoft Intune |
 |:-----|:-----|:-----|:-----|
 |デバイスの種類|さまざまな OS プラットフォームと主要な管理モードのバリエーションを管理する。 |Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>|Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>mac OS、iPad OS|
-|デバイスのポリシー準拠|デバイス レベルの PIN ロックや脱獄の検出など、セキュリティ ポリシーを設定および管理します。 |Android 9 以降のデバイスの制限事項。 詳細を [参照してください](capabilities.md)。 |はい|
+|デバイスのコンプライアンス|デバイス レベルの PIN ロックや脱獄の検出など、セキュリティ ポリシーを設定および管理します。 |Android 9 以降のデバイスの制限事項。 詳細を [参照してください](capabilities.md)。 |はい|
 |デバイスのコンプライアンスに基づく条件付きアクセス |準拠しないデバイスがクラウドから企業の電子メールとデータにアクセスしなかからな |このページではWindows 10。<br/>オンライン、オンライン、およびExchange Online、SharePointへのアクセスを制御Outlook。 |はい |
-|デバイス構成  |デバイス設定を構成する (たとえば、カメラを無効にする)|制限された設定のセット。|必要|
+|デバイス構成  |デバイス設定を構成する (たとえば、カメラを無効にする)|制限された設定のセット。|はい|
 |電子メール プロファイル  |デバイスでネイティブメール プロファイルをプロビジョニングします。 |はい|はい|
 |WiFi プロファイル |デバイスでネイティブ WiFi プロファイルをプロビジョニングします。 |いいえ|はい|
 |VPN プロファイル |デバイスにネイティブ VPN プロファイルをプロビジョニングします。 |いいえ|はい|
@@ -95,11 +96,11 @@ Intune では、次の一連のアクションを実行できます。
 - [紛失モード](/mem/intune/remote-actions/device-lost-mode)  (iOS のみ)-[クイック スキャン](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus)(Windows 10のみ)
 - [Android 用リモート コントロール](/mem/intune/remote-actions/teamviewer-support)
 - [リモート ロック](/mem/intune/remote-actions/device-remote-lock)
-- [デバイスの名前を変更する](/mem/intune/remote-actions/device-rename)
+- [デバイスの名前の変更](/mem/intune/remote-actions/device-rename)
 -  [パスコードのリセット](/mem/intune/remote-actions/device-passcode-reset)[再起動](/mem/intune/remote-actions/device-restart)   (Windowsのみ)
 -  セキュリティ Windows Defenderの更新 (Windowsのみ)
 -  Windows 10PIN のリセット (Windowsのみ)
 -  [カスタム通知の送信](/mem/intune/remote-actions/custom-notifications#send-a-custom-notification-to-a-single-device)  (Android、iOS、iPad OS)
--  [デバイスの同期](/mem/intune/remote-actions/device-sync)
+-  [デバイスを同期する](/mem/intune/remote-actions/device-sync)
 
 Intune アクションの詳細については、「ドキュメント」[をMicrosoft Intuneしてください](/mem/intune/)。

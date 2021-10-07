@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 63a3592e2bb8a89c373910e73b0bc91d544415d6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3450eebd549589f20b074f025d581783acdb23c1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164967"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168352"
 ---
 # <a name="microsoft-365-defender-portal-overview"></a>Microsoft 365 Defender ポータルの概要
 
@@ -129,7 +129,7 @@ Enterpriseチームは、Microsoft 365 Defenderを使用して、潜在的な永
 ![可能なアクティブなアラート アイコン。](images/tvm_alert_icon.png)|脅威&の管理 - アクティブなアラートの可能性
 ![推奨事項の分析情報アイコン。](images/tvm_insight_icon.png)|脅威&の管理 - 推奨事項の分析情報
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [概要 Microsoft 365 Defender](use.md)
 - [セキュリティ操作ダッシュボードの表示](security-operations-dashboard.md)

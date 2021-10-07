@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,20 +22,20 @@ ms.custom:
 search.appverid: MET150
 description: 管理者は、サブスクリプションの有効期限が切れた場合、無効になっている場合、キャンセルされた場合、またはサブスクリプション期間の途中でキャンセルした場合に、サブスクリプションを再アクティブ化できます。
 ms.date: 04/07/2021
-ms.openlocfilehash: 1637e1db74e1b22de3739282f08e70e08b842fb9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 85365d9d78bde8297ae483c645d6df0453a34e39
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213983"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167620"
 ---
 # <a name="reactivate-your-subscription"></a>サブスクリプションを再度有効にする
 
 サブスクリプションの有効期限が切れている場合、Microsoft が無効にした場合、またはサブスクリプション期間の途中でサブスクリプションをキャンセルした場合は、管理センターでサブスクリプションを再アクティブ化できます。
   
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
-サブスクリプションを再アクティブ化するには、グローバル管理者または課金管理者である必要があります。 詳細については、[「管理者の役割について」](../../admin/add-users/about-admin-roles.md) を参照してください。
+サブスクリプションを再アクティブ化するには、グローバル管理者または課金管理者である必要があります。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
 
 **管理者ではない場合**: サブスクリプションを再アクティブ化するには、管理に問い合わせください。
 

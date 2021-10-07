@@ -10,7 +10,7 @@ ms.topic: how-to
 f1_keywords:
 - ms.o365.cc.CustomizeExport
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 検索結果をローカル コンピューターにエクスポートするには、Microsoft 365 コンプライアンス センター内のコンテンツ検索からエクスポートします。 電子メールの結果は PST ファイルとしてエクスポートされます。 サイトおよびSharePointサイトOneDrive for Businessコンテンツは、ネイティブ ドキュメントとしてOfficeされます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8d79e753b052e4514cb8f8aab6a94a858c8cd9b5
-ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
+ms.openlocfilehash: f4a140b933aabbdcf06c9f3c9ab0cbf40d2b05e7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59497850"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170682"
 ---
 # <a name="export-content-search-results"></a>コンテンツ検索結果のエクスポート
 
@@ -172,7 +172,7 @@ ms.locfileid: "59497850"
   
     **電子情報開示エクスポート ツール** には、ダウンロードする残りのアイテムの数とサイズの見積もりなど、エクスポート プロセスの状態に関する情報が表示されます。 エクスポート処理が完了したら、ダウンロードした場所のファイルにアクセスできます。
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 検索結果のエクスポートの詳細については、次の情報を参照してください。
   

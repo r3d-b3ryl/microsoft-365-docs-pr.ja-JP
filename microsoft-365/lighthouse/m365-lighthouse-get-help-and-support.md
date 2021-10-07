@@ -7,7 +7,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 管理サービス プロバイダー (MSP) で Microsoft 365 Lighthouseヘルプとサポートを取得する方法について説明します。
-ms.openlocfilehash: 392eed01b5519c512c89460776ec9f4391b7bda2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 554747fa7360892c7ea8c52e31dc0f4e2bc18589
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179551"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170141"
 ---
 # <a name="get-help-and-support-for-microsoft-365-lighthouse"></a>ユーザーのヘルプとサポートをMicrosoft 365 Lighthouse 
 
@@ -45,7 +45,7 @@ ms.locfileid: "59179551"
 > [!NOTE]
 > サポートは英語に制限されています。ライトハウスはプレビュー中です。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 - サービス要求を作成および管理するには **、microsoft.office365.supportTickets/allEntities/allTasks** というプロパティ セットを使用して、少なくとも 1 つの Azure Active Directory (Azure AD) ロールが割り当てられている必要があります。 Azure ADロールの一覧については、「Azure AD [組み込みロール」を参照してください](/azure/active-directory/roles/permissions-reference)。 役割を割り当てる方法の詳細については [、「Assign Azure AD ロールをユーザーに割り当てる」を参照してください](/azure/active-directory/roles/manage-roles-portal)。
 

@@ -2,27 +2,25 @@
 title: iOS の機能で Microsoft Defender for Endpoint を構成する
 description: iOS 機能に Microsoft Defender for Endpoint を展開する方法について説明します。
 keywords: microsoft、 defender、 Microsoft Defender for Endpoint, ios, configure, features, ios
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3916217467892a46fd8a2534a7852b928d2b5215
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1b8817b9a8a6fed86353c77c7202b41115c640de
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212224"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168376"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>iOS の機能で Microsoft Defender for Endpoint を構成する
 

@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: プランをアップグレードする最も簡単な方法は、管理センターの [アップグレード] タブを使用する方法です。 ただし、[アップグレード] タブが常にサポートされているわけではありません。
 ms.date: 04/21/2021
-ms.openlocfilehash: a4db0934767beb7913939475d8615f2a0184d0a3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8d481ec0b5eb64fcc86ca331d9bde3cac746f177
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180119"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167548"
 ---
 # <a name="upgrade-to-a-different-plan"></a>別のプランにアップグレードする
 

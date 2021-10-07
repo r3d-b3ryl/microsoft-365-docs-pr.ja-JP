@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 ms.custom: AdminSurgePortfolio
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: エンド ユーザーの Net プロモーター スコア (NPS) を使用して、Microsoft 製品とサービスに対するユーザーの気持ちを確認します。
-ms.openlocfilehash: 967de32339c23cf277871102dfecc8c00a55d8e6
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: afde0abf85cca682a5cda3206fa78d24cafc8cb8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59777076"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168124"
 ---
 # <a name="microsoft-product-nps-feedback-and-insights-for-your-organization"></a>組織の Microsoft 製品 NPS フィードバックと分析情報
 
@@ -38,7 +38,7 @@ Microsoft は、エンド ユーザーからの NPS アンケートとフィー�
 - 上位の製品と問題に関するエンド ユーザーのコメントを表示する
 - フィードバックとアンケート情報を CSV ファイルにエクスポートして詳細な調査を行う
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 アンケート レポートを表示および読 [み](../add-users/about-admin-roles.md) 取る管理者である必要があります。 アンケート レポートを表示および読み取りするには、組織でフィードバックアンケートを有効にしている必要があります。 詳細については、「 [組織の Microsoft フィードバックの管理」](manage-feedback-ms-org.md) を参照してください。
 

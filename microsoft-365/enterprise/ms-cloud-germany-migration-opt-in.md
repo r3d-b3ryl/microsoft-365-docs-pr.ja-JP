@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -19,12 +19,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '概要: '
-ms.openlocfilehash: 4dcd608fcd999c8d07fdedb569279980a943caa0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a50e1b561857a0630b32dc4c281cfe46fa4cbf29
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191290"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168472"
 ---
 # <a name="how-to-opt-in-for-new-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツのデータセンター地域のOffice 365サービスへの新しい移行をオプトインする方法
 

@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b449dbf22511e3a53a852c7a6f235a70fb401ce6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bd3e8a9a265070f3cda61a2c96eb704ed2dc177a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165022"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60169829"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-devices-list"></a>Microsoft Defender for Endpoint Devices リストの表示と整理
 
@@ -122,6 +122,6 @@ ms.locfileid: "59165022"
 
 個々のデバイスに追加したグループ化とタグ付けに基づいてリストをフィルター処理します。 「デバイス [タグの作成と管理」を参照してください](machine-tags.md)。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [Microsoft Defender for Endpoint Devices リストのデバイスを調査する](investigate-machines.md)

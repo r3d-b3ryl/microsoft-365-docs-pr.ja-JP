@@ -9,17 +9,17 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: ''
-ms.openlocfilehash: ad9bf2ba40ede2d76246c56bf94b90e0e96aeeff
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ff681793a86d9953088c2c4da65553e1d2c54d22
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177896"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170573"
 ---
 # <a name="predictive-coding-reference-preview"></a>予測コーディング参照 (プレビュー)
 

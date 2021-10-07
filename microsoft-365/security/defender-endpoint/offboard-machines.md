@@ -1,27 +1,25 @@
 ---
 title: Microsoft Defender for Endpoint サービスのオフボード デバイス
-description: オンボード Windows 10、サーバー、Microsoft Defender for Endpoint サービスWindowsデバイス以外のデバイス
+description: オンボード Windows、サーバー、Microsoft Defender for Endpoint サービスWindowsデバイス以外のデバイス
 keywords: offboarding, Microsoft Defender for Endpoint offboarding, offboarding
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ca3e2b5ca26a2d57d27d91d84493c927d6fb2021
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 8a84885f26273a731bbda72f81c51502aa137b21
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59353674"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168220"
 ---
 # <a name="offboard-devices-from-the-microsoft-defender-for-endpoint-service"></a>Microsoft Defender for Endpoint サービスのオフボード デバイス
 
@@ -53,7 +51,7 @@ ms.locfileid: "59353674"
 >
 > アクティブなデバイスのみを表示するには、正常性状態、[](machines-view-overview.md#health-state)デバイス タグ、または[コンピューター グループで](machine-tags.md)[フィルター処理できます](machine-groups.md)。
 
-## <a name="offboard-windows-10-devices"></a>Windows 10 デバイスをオフボードする
+## <a name="offboard-windows-devices"></a>オフボード Windows デバイス
 
 - [ローカル スクリプトを使用してデバイスをオフボードする](configure-endpoints-script.md#offboard-devices-using-a-local-script)
 - [グループ ポリシーを使用してデバイスをオフボードする](configure-endpoints-gp.md#offboard-devices-using-group-policy)

@@ -9,7 +9,7 @@ ms.date: 9/20/2021
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - SPO160
 - MET150
@@ -19,12 +19,12 @@ ms.collection:
 - SPO_Content
 description: オンラインおよびオンラインでのデータ セキュリティの暗号化の基本的なOneDrive for BusinessについてSharePointします。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 91bb261c25a1c4bf993deb0d12d1d1b8e9f5f874
-ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
+ms.openlocfilehash: 25bebc8fd5ab9b820667f5220785b021230ca6e1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/21/2021
-ms.locfileid: "59460482"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170765"
 ---
 # <a name="data-encryption-in-onedrive-for-business-and-sharepoint-online"></a>OneDrive for Business および SharePoint Online におけるデータ暗号化
 

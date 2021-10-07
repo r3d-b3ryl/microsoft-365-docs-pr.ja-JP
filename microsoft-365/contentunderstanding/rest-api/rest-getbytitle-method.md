@@ -9,14 +9,14 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection: m365initiative-syntex
-localization_priority: Priority
+ms.localizationpriority: high
 description: REST API を使用して、SharePoint Syntex 文書理解モデルに関する情報をモデル タイトルを使って取得または更新します。
-ms.openlocfilehash: 1c9c9728b7f26883ebe219e723917b14e35b11c0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2c781bdaeb491dd7020e462e70f20617f6e4034e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163895"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170549"
 ---
 # <a name="getbytitle"></a>GetByTitle
 

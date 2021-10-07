@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: lomayor
 author: lomayor
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 7a4176e5b375c32edb1e1fae3ab74f0760f28366
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ee78ead64f58cc90f43d556f5c1717753f672656
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189211"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60169613"
 ---
 # <a name="manage-access-to-microsoft-365-defender-with-azure-active-directory-global-roles"></a>グローバル ロールを使用Microsoft 365 DefenderアクセスAzure Active Directory管理する
 
@@ -67,7 +67,7 @@ Microsoft Defender for Endpoint Microsoft 365 Defenderアクセス制御 (RBAC) 
 ### <a name="microsoft-cloud-app-security-access-controls"></a>Microsoft Cloud App Security のアクセス制御
 プレビュー中に、Microsoft 365 Defender設定に基づいてアクセス制御をCloud App Security行う必要があります。 これらの設定Microsoft 365 Defenderデータへのアクセスは影響されません。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [ユーザーの役割ベースのアクセス制御のカスタム ロールMicrosoft 365 Defender](custom-roles.md)
 - [Azure AD組み込みロール](/azure/active-directory/roles/permissions-reference)
 - [エンドポイント RBAC 用 Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/rbac)

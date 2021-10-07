@@ -11,18 +11,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 551eddb42f7b0bdbbd84f6294f3413b4435c1dc1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bf23229a530c84beab3f5f272f646c67d2ea06fb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221934"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166482"
 ---
 # <a name="evaluate-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の評価 
 

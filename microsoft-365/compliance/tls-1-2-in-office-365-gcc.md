@@ -3,7 +3,7 @@ title: 高および DoD の TLS 1.0 と 1.1 Microsoft 365 GCC無効にする
 description: Microsoft が、Microsoft 365 の高レベル環境と DoD 環境で TLS 1.1 と 1.0 のサポートをGCCについて説明します。
 author: kccross
 manager: laurawi
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 audience: ITPro
@@ -14,16 +14,16 @@ ms.reviewer: krowley
 ms.author: krowley
 appliesto:
 - Office 365 Business
-ms.openlocfilehash: 16a02985107c5f578d6d6c21bf2efc6e80297951
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a1c2c733036dfc5a88ddf0abe73147c1b64542f4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216304"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167116"
 ---
 # <a name="disabling-tls-10-and-11-in-microsoft-365-gcc-high-and-dod"></a>高および DoD の TLS 1.0 と 1.1 Microsoft 365 GCC無効にする
 
-## <a name="summary"></a>概要
+## <a name="summary"></a>要約
 
 連邦リスクおよび承認管理プログラム (FedRAMP) の最新のコンプライアンス基準に準拠するために、GCC High 環境と DoD 環境では、Microsoft 365 でトランスポート層セキュリティ (TLS) バージョン 1.1 および 1.0 を無効にします。 この変更は、以前に Microsoft サポートを通じて「TLS [1.2](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365)の必須使用の準備」を通じてOffice 365。
 
@@ -59,6 +59,6 @@ TLS 1.2 を使用できない一覧のクライアントを使用する場合に
 
 - Lync 電話
 
-## <a name="references"></a>関連情報
+## <a name="references"></a>参照
 
 クライアントが TLS 1.2 を使用している場合のガイダンスと参照については、「Office 365 での[TLS 1.2](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365)の必須使用の準備」を参照してください。

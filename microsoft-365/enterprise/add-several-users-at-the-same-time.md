@@ -6,7 +6,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 - BCS160
 description: 'スプレッドシートまたは他の CSV 形式のファイルMicrosoft 365リストから複数のユーザーをビジネス用に追加する方法について説明します。 YouTube で、アカウントをユーザーに追加する方法を説明するビデオをMicrosoft 365。 このプロセスの最後に、アカウントを持つ各ユーザーにメールボックスがMicrosoft 365されます。 '
-ms.openlocfilehash: 873a9ff27f85d63596f5e69db918c0c619b73539
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d9152ba8dfef21faeaba6f981c23359eb114b653
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218773"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170417"
 ---
 # <a name="add-several-users-at-the-same-time-to-microsoft-365---admin-help"></a>複数のユーザーを同時にユーザーに追加する - Microsoft 365 ヘルプ
 

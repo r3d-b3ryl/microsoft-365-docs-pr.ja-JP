@@ -7,7 +7,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 管理サービス プロバイダー (MSP) の場合は、Microsoft 365 Lighthouseの一覧について説明します。
-ms.openlocfilehash: 13481ecbaaf20c5886837e03f4a606531548145e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bff85a523d55cfeeacffc3024bb733a5c3fe2eb5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211733"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170105"
 ---
 # <a name="microsoft-365-lighthouse-tenant-list-overview"></a>Microsoft 365 Lighthouseリストの概要
 
@@ -40,7 +40,7 @@ ms.locfileid: "59211733"
 
 | ステータス メッセージ | 説明 |
 |--|--|
-| Active | オンボーディングとデータ フローが開始されました。 |
+| 有効 | オンボーディングとデータ フローが開始されました。 |
 | プロセス中 | テナントが検出されましたが、完全にはオンボードされません。 |
 | 不適格、DAP | 委任された管理者特権 (DAP) のセットアップが必要です。 |
 | 不適格、ユーザー数 | テナントには、許可されているユーザーよりも多くのユーザーがあります。 |

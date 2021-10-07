@@ -4,17 +4,17 @@ description: 管理者がサービスのヘルプを受ける方法
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 3e8c7de35576324a24f51c2a59df3432acdb0daa
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7beb080045c5c1e6db0c04ae1a19134e550e2a1f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191080"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166715"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップの管理者サポート
 
@@ -91,4 +91,4 @@ ms.locfileid: "59191080"
 
 - [ユーザーがサポートするMicrosoft マネージド デスクトップ。](end-user-support.md)
 - [ファイルのMicrosoft マネージド デスクトップ。](../service-description/support.md)
-- Microsoft マネージド デスクトップ を既にサブスクライブしている場合は、Microsoft エンドポイント マネージャー の [テナント管理] メニューの [Microsoft マネージド デスクトップ] セクションにある [オンライン リソース] ページのMicrosoft マネージド デスクトップ 管理ガイドで、詳細な手順、プロセスフロー、作業手順、および FAQ[を確認できます](https://endpoint.microsoft.com/)。
+- Microsoft マネージド デスクトップ を既にサブスクライブしている場合は、テナント管理の Microsoft マネージド デスクトップ セクションの [オンライン リソース] ページの Microsoft マネージド デスクトップ 管理ガイドで詳細な手順、プロセス フロー、作業手順、および FAQ を **確認できます**。メニューを [Microsoft エンドポイント マネージャー](https://endpoint.microsoft.com/)します。

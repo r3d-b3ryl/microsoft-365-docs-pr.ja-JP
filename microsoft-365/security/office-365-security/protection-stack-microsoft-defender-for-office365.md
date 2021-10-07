@@ -9,16 +9,16 @@ ms.date: 04/05/2021
 ms.reviewer: gigarrub
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Microsoft Defender の脅威フィルター スタックを通じて受信メッセージのパスに従って、Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e5385817610100a7e29baca9b6dd98b89493de35
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d920ed0bfcbe5f341395740b01ad17c7eed4ff77
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214274"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60169457"
 ---
 # <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 でのステップ バイ ステップの脅威に対する保護
 

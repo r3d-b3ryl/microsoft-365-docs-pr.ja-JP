@@ -7,18 +7,19 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom: AdminSurgePortfolio
 description: 基本モビリティとセキュリティの問題を追跡するには、次の手順を実行します。
-ms.openlocfilehash: 533e2d60d3c23809bdfbf6dda5a64e43082c739e
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: f625fbc642392ee575b35f225f5e65b942362c4a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775110"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165942"
 ---
 # <a name="troubleshoot-basic-mobility-and-security"></a>基本的なモビリティとセキュリティのトラブルシューティング
 

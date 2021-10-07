@@ -5,17 +5,17 @@ keywords: Microsoft マネージド デスクトップ、Microsoft 365、サー�
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 3f9116f698558b0fb8391f985671872891cbf4cd
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: db373ad60782de8bcf925107b5b8b773eb10a482
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165198"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166716"
 ---
 # <a name="set-up-microsoft-managed-desktop-devices"></a>Microsoft マネージド デスクトップのデバイスをセットアップする
 

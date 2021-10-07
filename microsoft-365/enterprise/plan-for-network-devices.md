@@ -7,7 +7,7 @@ ms.date: 12/29/2016
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: '概要: ネットワーク容量、WAN アクセラレータ、およびデバイスへの接続に使用される負荷分散デバイスに関する考慮事項についてOffice 365。'
-ms.openlocfilehash: e1209c13eb24d11a2cc9692957bc4ee5f6310f41
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 38df9a64610c4b4d44014a142bf7d255aa0a0f46
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179719"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166780"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>Office 365 サービスに接続するネットワーク デバイスの計画
 

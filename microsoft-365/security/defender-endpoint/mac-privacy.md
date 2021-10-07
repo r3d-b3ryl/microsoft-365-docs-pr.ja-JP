@@ -2,27 +2,25 @@
 title: Microsoft Defender for Endpoint on Mac のプライバシー
 description: プライバシー制御、プライバシーに影響を与えるポリシー設定を構成する方法、および Microsoft Defender for Endpoint on Mac で収集された診断データに関する情報。
 keywords: microsoft、 defender、 Microsoft Defender for Endpoint, mac, privacy, diagnostic
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 087a5e416ce4f56f3cf4b8f96cc2e0109fe7ca49
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d9ad9b3bfe8aec36a3fdf7db456ed6383c586176
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179247"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168328"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上のエンドポイント用 Microsoft Defender のプライバシー
 
@@ -86,7 +84,7 @@ IT 管理者の場合は、エンタープライズ レベルでこれらのコ�
 
 次のフィールドは、すべてのイベントで一般的と見なされます。
 
-|Field|説明|
+|フィールド|説明|
 |---|---|
 |platform|アプリが実行されているプラットフォームの広範な分類。 Microsoft は、問題が発生している可能性のあるプラットフォームを特定して、問題の優先順位を正しく設定できます。|
 |machine_guid|デバイスに関連付けられている一意の識別子。 Microsoft は、問題がインストールの選択セットに影響を与えるかどうか、および影響を受け取るユーザーの数を特定できます。|
@@ -111,7 +109,7 @@ IT 管理者の場合は、エンタープライズ レベルでこれらのコ�
 
 収集されるフィールドは、次のとおりです。
 
-|Field|説明|
+|フィールド|説明|
 |---|---|
 |correlation_id|インストールに関連付けられた一意の識別子。|
 |version|パッケージのバージョン。|
@@ -123,7 +121,7 @@ IT 管理者の場合は、エンタープライズ レベルでこれらのコ�
 
 収集されるフィールドは、次のとおりです。
 
-|Field|説明|
+|フィールド|説明|
 |---|---|
 |antivirus_engine.enable_real_time_protection|デバイスでリアルタイム保護が有効になっているかどうか。|
 |antivirus_engine.passive_mode|デバイスでパッシブ モードが有効になっているかどうか。|
@@ -145,7 +143,7 @@ IT 管理者の場合は、エンタープライズ レベルでこれらのコ�
 
 収集されるフィールドは、次のとおりです。
 
-|Field|説明|
+|フィールド|説明|
 |---|---|
 |from_version|元のセキュリティ インテリジェンスバージョン。|
 |to_version|新しいセキュリティ インテリジェンスのバージョン。|
@@ -162,7 +160,7 @@ IT 管理者の場合は、エンタープライズ レベルでこれらのコ�
 
 収集されるフィールドは、次のとおりです。
 
-|Field|説明|
+|フィールド|説明|
 |---|---|
 |v1_crash_count|クライアント コンピューターで V1 エンジン プロセスが 1 時間ごとにクラッシュした回数|
 |v2_crash_count|クライアント コンピューターで V2 エンジン プロセスが 1 時間ごとにクラッシュした回数|
@@ -172,7 +170,7 @@ IT 管理者の場合は、エンタープライズ レベルでこれらのコ�
 
 収集されるフィールドは、次のとおりです。
 
-|Field|説明|
+|フィールド|説明|
 |---|---|
 |version|macOS 上のエンドポイント用 Microsoft Defender のバージョン。|
 |instance_id|カーネル拡張機能の起動時に生成される一意の識別子。|
@@ -208,7 +206,7 @@ IT 管理者の場合は、エンタープライズ レベルでこれらのコ�
 
 収集されるフィールドは、次のとおりです。
 
-|Field|説明|
+|フィールド|説明|
 |---|---|
 |connection_retry_timeout|クラウドとの通信時に接続の再試行が時間切れになります。|
 |file_hash_cache_maximum|製品キャッシュのサイズ。|
@@ -230,7 +228,7 @@ IT 管理者の場合は、エンタープライズ レベルでこれらのコ�
 
 収集されるフィールドは、次のとおりです。
 
-|Field|説明|
+|フィールド|説明|
 |---|---|
 |how_to_check|製品の更新プログラムのチェック方法 (自動または手動など) を決定します。|
 |channel_name|デバイスに関連付けられているチャネルを更新します。|
@@ -243,7 +241,7 @@ IT 管理者の場合は、エンタープライズ レベルでこれらのコ�
 
 収集されるフィールドは、次のとおりです。
 
-|Field|説明|
+|フィールド|説明|
 |---|---|
 |sha256|サポート ログの SHA256 識別子。|
 |size|サポート ログのサイズ。|
@@ -254,7 +252,7 @@ IT 管理者の場合は、エンタープライズ レベルでこれらのコ�
 
 収集されるフィールドは、次のとおりです。
 
-|Field|説明|
+|フィールド|説明|
 |---|---|
 |request_id|サポート ログのアップロード要求の相関関係 ID。|
 |sha256|サポート ログの SHA256 識別子。|
@@ -270,7 +268,7 @@ IT 管理者の場合は、エンタープライズ レベルでこれらのコ�
 
 収集されるフィールドは、次のとおりです。
 
-|Field|説明|
+|フィールド|説明|
 |---|---|
 |pkt_ack_timeout|次のプロパティは、カーネル拡張機能の起動後に発生したイベントの数を表す集計された数値です。|
 |pkt_ack_conn_timeout||

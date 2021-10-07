@@ -7,7 +7,7 @@ ms.date: 8/1/2017
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
@@ -25,12 +25,12 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: 2013 Microsoft 365 2016 クライアント アプリの最新の認証機能の動作Officeについて学習します。
-ms.openlocfilehash: 60b1729d9830fd12141d162c4fe721267e52d437
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c3586029a3c1ea73dae30696c74011e3dd22400d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220794"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166888"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-office-2016-and-office-2019-client-apps"></a>2013、Office 2016、および 2019 Office 2019 クライアント アプリOfficeのしくみ
 

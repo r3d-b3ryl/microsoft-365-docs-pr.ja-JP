@@ -6,7 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.reviewer: mkaminska
@@ -16,12 +16,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 09/22/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 0cb371b8eabb74f1702bb52269e4aa9d02270dc0
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 82f40a1110a93a44fe8b1712568d15bd849bd975
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59490230"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60169865"
 ---
 # <a name="cloud-protection-and-microsoft-defender-antivirus"></a>クラウド保護と Microsoft Defender ウイルス対策
 
@@ -65,7 +65,7 @@ Microsoft Defender ウイルス対策 Microsoft クラウド サービスとシ�
 
 サブスクリプションに E5 Windows 10含まれる場合は、緊急の動的インテリジェンス更新プログラムを利用できます。これは、新たな脅威からほぼリアルタイムで保護されます。 クラウド保護を有効にした場合、マルウェアの問題に対する修正プログラムは、次の更新を待つのではなく、数分以内にクラウド経由で配信できます。 「クラウド サービスMicrosoft Defender ウイルス対策レポートに基づいて新しい保護更新プログラムを自動的に受信する[方法の構成」を参照してください](manage-event-based-updates-microsoft-defender-antivirus.md#cloud-report-updates)。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 クラウド保護の概要を次に示Microsoft Defender ウイルス対策次の手順を示します。
 

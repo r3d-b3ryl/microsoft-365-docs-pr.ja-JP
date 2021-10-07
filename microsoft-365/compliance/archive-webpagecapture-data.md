@@ -9,15 +9,15 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 管理者は、Web ページ キャプチャ データをインポートおよびアーカイブするコネクタを Veritas からインポートおよびアーカイブMicrosoft 365。 このコネクタを使用すると、Microsoft 365 のサード パーティデータ ソースからデータをアーカイブし、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティ データを管理できます。
-ms.openlocfilehash: 9d35f23371bfdf0f3f3c9d29d059d862f9cd93ac
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 28d8347c8749e040b778d1efe230e403210095a5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179967"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168760"
 ---
 # <a name="set-up-a-connector-to-archive-webpage-data"></a>Web ページ データをアーカイブするコネクタをセットアップする
 
@@ -39,7 +39,7 @@ Web ページのコンテンツをユーザー メールボックスに保存し
 
 4. コネクタは、手順 3 で説明したように、自動ユーザー マッピングの *Email* プロパティの値を使用して、変換された Web ページ アイテムを特定のユーザーのメールボックス [にインポートします](#step-3-map-users-and-complete-the-connector-setup)。 [Web ページ キャプチャ] という名前の **受信** トレイ フォルダー内のサブフォルダーがユーザー メールボックスに作成され、Web ページアイテムがそのフォルダーにインポートされます。 コネクタは、Email プロパティの値を使用して *これを行* います。 すべての Web ページ アイテムには、このプロパティが含まれます。このプロパティには、手順 2 で Web ページ キャプチャ コネクタを構成するときに提供される電子メール アドレスが [入力されます](#step-2-configure-the-webpage-capture-connector-on-the-veritas-merge1-site)。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 - Microsoft コネクタ用の Veritas Merge1 アカウントを作成します。 このアカウントを作成するには [、Veritas カスタマー サポートにお問い合わせください](https://www.veritas.com/content/support/)。 手順 1 でコネクタを作成するときに、このアカウントにサインインします。
 

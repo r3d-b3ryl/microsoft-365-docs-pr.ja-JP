@@ -10,15 +10,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.custom: commerce_billing_payinfo
-localization_priority: Normal
+ms.localizationpriority: medium
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d4c1cf128353aabd402c32f461aa1441dd538ad0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 440f9d84e521a1d15ee1d57c3c5c5fb26a01a6b6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212703"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167716"
 ---
 # <a name="payment-information-for-korea"></a>韓国のお支払い情報
 

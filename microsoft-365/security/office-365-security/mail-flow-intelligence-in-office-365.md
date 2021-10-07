@@ -7,19 +7,19 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: troubleshooting
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: 管理者は、コネクタ (メール フロー インテリジェンスとも呼ばれる) を使用してメッセージ配信に関連付けられているエラー コードについて説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bd0d44ae991ec37cf76b664fd56ae9123c98eac8
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: 84029f2f3387913b810c6886a2ac546e587aaca7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988969"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60169493"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>EOP でのメール フロー インテリジェンス
 

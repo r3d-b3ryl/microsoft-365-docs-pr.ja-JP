@@ -7,19 +7,19 @@ ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
 description: '概要: ドメイン コントローラーとディレクトリ同期サーバーを構成して、高可用性フェデレーション認証を、Microsoft 365にMicrosoft Azure。'
-ms.openlocfilehash: f5d68f75a281ed8e04b8a41d7b748e056e081b52
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 82199d6782e9c2497214d501da9e27ac0956edcd
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216004"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167020"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>高可用性フェデレーション認証のフェーズ 2: ドメイン コントローラーを構成する
 

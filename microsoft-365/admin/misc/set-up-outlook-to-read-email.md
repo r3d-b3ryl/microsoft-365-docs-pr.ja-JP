@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.custom:
 - Core_O365Admin_Migration
 - GSTips
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e155154-bc66-48cc-8476-ab558c97115a
 description: Outlook と Mac の両方にメール アカウントをWindowsする方法と、Office アプリをインストールしてオンラインでメールにアクセスする方法について説明します。
-ms.openlocfilehash: 71fd79d96135169f6a1a6fa3850a2fd6f73c5457
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 4afa2c18346dd83006754e90096a2abec9fc7c35
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566942"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60169337"
 ---
 # <a name="set-up-outlook-to-read-email"></a>Outlook でメールの閲覧を設定する
 

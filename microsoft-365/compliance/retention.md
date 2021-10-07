@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なコンテンツを保持し不要なコンテンツを削除するのに役立つ、アイテム保持ポリシーと保持ラベルについて説明します。
-ms.openlocfilehash: 4537662d9f2268602baaea5d207af854d88657b4
-ms.sourcegitcommit: e686e64e846c26a9f4def7c145cbb140e6427076
+ms.openlocfilehash: 858149ce169d335924a643e3c90b895906d28d9b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60069183"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170633"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの詳細
 
@@ -256,7 +256,7 @@ Microsoft 365 コンプライアンス センターから、[**データの分�
 |廃棄の証明 (最大 7 年間) | いいえ |はい、処分レビューを使用するか、アイテムがレコードとしてマークされている場合|
 |管理者アクティビティを監査する| はい | はい|
 |保持アクションの監査| いいえ | はい <sup>\*</sup> |
-|保持対象のアイテムの特定 <br /> - コンテンツ検索 <br /> - データ分類ページ、コンテンツ エクスプローラー、アクティビティ エクスプローラー | <br /> 不要 <br /> 不要 | <br /> はい <br /> はい|
+|保持対象のアイテムの特定 <br /> - コンテンツ検索 <br /> - データ分類ページ、コンテンツ エクスプローラー、アクティビティ エクスプローラー | <br /> 不要 <br /> いいえ | <br /> はい <br /> はい|
 
 **脚注:**
 

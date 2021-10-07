@@ -8,18 +8,18 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンス マネージャーは、国内、地域、業界の規制、標準、および法律に合わせて評価を構築するテンプレートを提供します。
-ms.openlocfilehash: 88d68e270990229164c442939cf93c6fa2d6781f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 71367b7f88fd0b7cfdee243f4ed0101e88a21fce
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189920"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167452"
 ---
 # <a name="compliance-manager-templates-list"></a>コンプライアンスマネージャーテンプレートの一覧
 

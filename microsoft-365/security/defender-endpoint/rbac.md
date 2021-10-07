@@ -2,26 +2,24 @@
 title: 役割ベースのアクセス制御を使用して、ポータルへのきめ細かなアクセスMicrosoft 365 Defenderする
 description: セキュリティ操作内に役割とグループを作成して、ポータルへのアクセスを許可します。
 keywords: rbac、 role, based, access, control, groups, control, tier, aad
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e3c97151adac40e457439e07c1cb1c7dbcc84632
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a99b69994638af788d3e4ba80c695885f7c3a856
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220337"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60169697"
 ---
 # <a name="manage-portal-access-using-role-based-access-control"></a>役割ベースのアクセス制御を使用してポータル アクセスを管理する
 
@@ -54,7 +52,7 @@ Defender for Endpoint RBAC は、階層ベースまたは役割ベースの選�
 
 役割ベースのアクセスを実装するには、管理者ロールを定義し、対応するアクセス許可を割り当て、役割に割り当てられた Azure ADグループを割り当てる必要があります。
 
-### <a name="before-you-begin"></a>開始する前に
+### <a name="before-you-begin"></a>はじめに
 
 RBAC を使用する前に、アクセス許可を付与できる役割と RBAC をオンにした結果を理解することが重要です。
 

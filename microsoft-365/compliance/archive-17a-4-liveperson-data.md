@@ -9,15 +9,15 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 17a-4 LivePerson Conversational Cloud DataParser コネクタをセットアップして使用して、LivePerson Conversational Cloud データをインポートおよびアーカイブする方法についてMicrosoft 365。
-ms.openlocfilehash: 6871bd91f051c2dcf3ce343432cc323cdcfc22a8
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: e1ee1bb91468ba0ad6aee1f12ff2fa4b85f62c07
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59399216"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167572"
 ---
 # <a name="set-up-a-connector-to-archive-liveperson-conversational-cloud-data"></a>LivePerson Conversational Cloud データをアーカイブするコネクタをセットアップする
 

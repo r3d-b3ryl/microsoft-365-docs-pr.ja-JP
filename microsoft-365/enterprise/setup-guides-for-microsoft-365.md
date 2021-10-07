@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - M365-subscription-management
@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: テナントのライセンスの機能を計画、移行、および実装するためのステップバイステップのツールを取得します。 サービスまたは実行する必要があるアプリをセットアップするガイドを見つける。
-ms.openlocfilehash: 3d69484cf1899fbca8994e3abc89bd49876da5cf
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b95437a3aed5409900d5006859b7099b1ff2443e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189580"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170201"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Microsoft 365 および Office 365 サービスのセットアップ ガイド
 
@@ -218,7 +218,7 @@ Windows 7 と Windows 8.1 デバイスを最新バージョンの Windows 10 に
 
 Office 展開ツールを使用して、インストールをカスタマイズできる機能を備えた Office アプリをクラウドから展開します。 [[ユーザーにOffice](https://aka.ms/proplusodt)を展開する] ガイドでは、高度な設定を使用してカスタマイズOffice構成を作成したり、事前に構築された推奨構成を使用できます。 ユーザーが自己インストールを行う場合でも、ユーザーに対して個別または一括で展開する場合でも、この高度なガイドでは、組織に合わせてカスタマイズされた Office インストールをユーザーに提供する手順を詳細に説明します。
 
-### <a name="deploy-office-to-remote-users"></a>リモート Officeに展開する
+### <a name="deploy-office-to-remote-users"></a>リモート ユーザーに Office を展開する
 
 リモートでの作業が標準になったので、ユーザーが内部ネットワークに接続されていない場合や、自分のデバイスを使用している場合は、組織の Office 設定を受け取る必要があります。
 

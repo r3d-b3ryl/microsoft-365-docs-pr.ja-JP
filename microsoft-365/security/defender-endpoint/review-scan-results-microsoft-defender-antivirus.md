@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -17,12 +17,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 76c865d7d95db34c2bb25cb2629e4cfee73cd022
-ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
+ms.openlocfilehash: db19bb6a7d3fb8eeaa77c640efb084d98f50a3d4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59497826"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60169661"
 ---
 # <a name="review-microsoft-defender-antivirus-scan-results"></a>スキャンMicrosoft Defender ウイルス対策確認する
 

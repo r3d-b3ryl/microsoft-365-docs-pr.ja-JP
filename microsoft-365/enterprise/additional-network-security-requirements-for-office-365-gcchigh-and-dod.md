@@ -7,7 +7,7 @@ ms.date: 05/19/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: ''
 description: '概要: Office 365 GCC DoD には追加のネットワーク セキュリティ要件があります'
 hideEdit: true
-ms.openlocfilehash: f4c03d364e84d89a1b12e4d858ab46eb3be6ae5e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c4fbfc52085b634329130c2785ce683109b8febe
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218754"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170369"
 ---
 # <a name="additional-network-security-requirements-for-office-365-gcc-high-and-dod"></a>Office 365 GCC High および DOD の追加のネットワーク セキュリティ要件
 

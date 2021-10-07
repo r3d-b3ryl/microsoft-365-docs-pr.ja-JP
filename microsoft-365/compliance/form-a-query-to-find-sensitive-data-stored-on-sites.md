@@ -12,17 +12,17 @@ ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 - SPO_Content
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
 description: オンラインでデータ損失防止 (DLP) をSharePoint、テナント全体に機密データを含むドキュメントを検出します。
-ms.openlocfilehash: e2ecaa6b4b230db09095a9f9e5008dfdf0698043
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: af1ca8f28f80d58c0f366e1a002181e23db3d552
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191490"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170621"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>サイトに保存された機密データを検索するクエリの形成
 
@@ -68,7 +68,7 @@ DLP 固有のプロパティを使用してクエリを作成することもで�
 
 ****
 
-|クエリ|説明|
+|Query|説明|
 |---|---|
 |`SensitiveType:"International Banking Account Number (IBAN)"`|名前は長いので奇妙に見えるかもしれませんが、その機密性の高い型の正しい名前です。 機密情報の種類のインベントリから正確な名前 [を使用してください](/Exchange/what-the-sensitive-information-types-in-exchange-look-for-exchange-2013-help)。 また、組織用に [作成したカスタム](create-a-custom-sensitive-information-type.md) 機密情報の種類の名前を使用することもできます。|
 |`SensitiveType:"Credit Card Number|1..4294967295|1..100"`|これにより、機密性の高い種類の "クレジット カード番号" に少なくとも 1 つ一致するドキュメントが返されます。 各範囲の値は、それぞれの最小値と最大値です。 このクエリを記述するより簡単な方法  `SensitiveType:"Credit Card Number"` は、ですが、その中で楽しいのはどこですか?|

@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b62dbc0881ffe1b7129c053d13ee509796aef5b9
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 961f7b5635a5af1eb7dff0bae790bbf9660a0f57
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59399432"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168268"
 ---
 # <a name="offboard-machine-api"></a>オフボード マシン API
 
@@ -59,7 +59,7 @@ Defender for Endpoint からのオフボード デバイス。
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 ---|---|---
 アプリケーション|Machine.Offboard|'Offboard machine'
-委任 (職場または学校アカウント)|Machine.Offboard|'Offboard machine'
+委任 (職場または学校のアカウント)|Machine.Offboard|'Offboard machine'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
@@ -75,7 +75,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/offboard
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 ---|---|---
 Authorization|String|ベアラー {token}。 **必須**
 Content-Type|string|application/json. **必須**。
@@ -84,7 +84,7 @@ Content-Type|string|application/json. **必須**。
 
 要求本文で、JSON オブジェクトに次のパラメーターを指定します。
 
-パラメーター|種類|説明
+パラメーター|型|説明
 ---|---|---
 コメント|文字列|アクションに関連付けるコメント。 **必須**。
 

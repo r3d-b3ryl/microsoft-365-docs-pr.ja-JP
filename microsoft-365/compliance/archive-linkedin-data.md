@@ -9,18 +9,18 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: 管理者がネイティブ コネクタを&して LinkedIn Company Page からデータをインポートする方法について説明Microsoft 365。
-ms.openlocfilehash: 2d34a424b11c9489d54a87bfb9f81de9a74ed5e6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 70d17c0cf9eaeec7110ea178f1f3db56c3d3b553
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180095"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167500"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data"></a>コネクタをセットアップして LinkedIn データをアーカイブする
 

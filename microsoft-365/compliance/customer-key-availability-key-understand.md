@@ -6,16 +6,16 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 description: 紛失した顧客キーの回復に使用される可用性キーについて学習します。
-ms.openlocfilehash: 9fb4602f61146a28e8e35fb6715da3ebb2aa7d5f
-ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
+ms.openlocfilehash: 72e66e9deb74400944c6ea65ea3ac167a703da26
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/21/2021
-ms.locfileid: "59460330"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170789"
 ---
 # <a name="learn-about-the-availability-key-for-customer-key"></a>カスタマー キーの可用性キーの詳細
 

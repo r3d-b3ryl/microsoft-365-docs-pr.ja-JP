@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 ms.custom:
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: 個人用 Microsoft アカウントを持つユーザーは、リンク AAD with Rewards 機能が有効になっている場合、仕事の検索に関連して Microsoft リワード ポイントを獲得できます。
-ms.openlocfilehash: 682bfb9e26ca81ac76f147ce53f3ff92bae1ec47e3b91babcdfde6bf6acab4fc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 59c9f3e2bb17a01880995d5e57f38d02d41015aa
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53825081"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168064"
 ---
 # <a name="manage-microsoft-rewards"></a>Microsoft Rewards を管理する
 

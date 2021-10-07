@@ -13,14 +13,14 @@ ms.custom: seo-marvel-apr2020
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Microsoft 365 Multi-Geo 複数地域、複数地域のしくみ、およびデータ ストレージに使用できる地理的な場所について説明します。
-ms.openlocfilehash: 52c4bc8a23bdf89afb1a3f3eae3fe6348fed8009
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5c079d5cf5f093be2c942a53468494044913fbd7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59210564"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170297"
 ---
 # <a name="plan-for-microsoft-365-multi-geo"></a>Microsoft 365 Multi-Geo の計画
 
@@ -79,6 +79,6 @@ Microsoft 365 Multi-Geo 複数地域の構成を開始する場合は、「[Micr
 
 構成の完了後は、ユーザーが優先するデータの場所から作業するために必要になる、[ユーザーの OneDrive ライブラリの移行](move-onedrive-between-geo-locations.md)を必ず実行してください。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [Microsoft 365 Multi-Geo 電子情報開示の構成](./multi-geo-ediscovery-configuration.md)

@@ -8,10 +8,11 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -19,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: グループにメンバーを追加し、グループからメンバーを削除し、グループ所有者の状態を管理する方法については、Microsoft 365 管理センター。
-ms.openlocfilehash: a9dfad48b3109512717f5c3e74ff9aef7d4621cd
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 610da28d6282cb45cb43e086fb3f80acaf18bb05
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775074"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165822"
 ---
 # <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>管理センターを使用して、Microsoft 365グループのメンバーを追加または削除する
 

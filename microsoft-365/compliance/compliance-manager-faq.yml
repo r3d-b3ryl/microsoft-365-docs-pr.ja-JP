@@ -9,18 +9,18 @@ metadata:
   audience: Admin
   ms.topic: article
   ms.service: O365-seccomp
-  localization_priority: Normal
+  ms.localizationpriority: medium
   ms.collection: M365-security-compliance
   search.appverid:
   - MOE150
   - MET150
   description: Microsoft コンプライアンス マネージャーに関してよく寄せられる質問に対する回答を見つけ、組織がリスク評価を簡素化および自動化するのに役立ちます。
-  ms.openlocfilehash: 7029cc031b072ddfcc5603edb812b1cd809bcd85
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.openlocfilehash: d1abfc3cb951197927b13cf1e15a3481a302cf68
+  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59189980"
+  ms.lasthandoff: 10/06/2021
+  ms.locfileid: "60167440"
 title: コンプライアンス マネージャーに関するよく寄せられる質問
 summary: ''
 sections:
@@ -106,7 +106,7 @@ sections:
   - question: >
       スコアが高い場合は、完全に準拠しているという意味ですか?
     answer: >
-      いいえ。 コンプライアンス スコアは、データ保護と規制基準に関するリスクを軽減するために役立つ推奨アクションの完了状況を測定します。 これは、特定の標準または規制に関する組織のコンプライアンスの絶対的な尺度を表すのではありません。 コンプライアンス マネージャーとコンプライアンス スコアは、いかなる方法でも保証として解釈される必要はありません。
+      その必要はありません。 コンプライアンス スコアは、データ保護と規制基準に関するリスクを軽減するために役立つ推奨アクションの完了状況を測定します。 これは、特定の標準または規制に関する組織のコンプライアンスの絶対的な尺度を表すのではありません。 コンプライアンス マネージャーとコンプライアンス スコアは、いかなる方法でも保証として解釈される必要はありません。
   - question: >
       Microsoft 以外の製品にコンプライアンス マネージャーを使用できますか?
     answer: コンプライアンス マネージャーは、Microsoft クラウド サービスに対する継続的な監視と推奨されるアクションのみを提供しますが、サードパーティ サービスのコンプライアンス マネージャーでカスタム評価を追加できます。 この方法で、Microsoft Compliance Manager を SaaS コンプライアンス管理ツールとして使用して、デジタル資産全体のすべてのコントロールを管理できます。

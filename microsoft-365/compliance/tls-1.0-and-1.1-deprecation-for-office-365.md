@@ -3,7 +3,7 @@ title: TLS 1.0 と 1.1 を無効にMicrosoft 365
 description: TLS 1.0 および 1.1 の非推奨と無効化についてMicrosoft 365。
 author: workshay
 manager: laurawi
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 audience: ITPro
@@ -17,12 +17,12 @@ appliesto:
 - Office 365 Personal
 - Office Online Server
 - Office Web Apps
-ms.openlocfilehash: 870572a61c241d3d3c8ce6791cee77edba2a1956
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3084232f267a1180425d2daa3fcd2ba2fbcbd063
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216294"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167104"
 ---
 # <a name="disabling-tls-10-and-11-for-microsoft-365"></a>TLS 1.0 と 1.1 を無効にMicrosoft 365
 
@@ -92,7 +92,7 @@ TLS 1.0 または TLS 1.1 経由で Microsoft 365 API を呼び出すアプリ�
 
 詳細については、「TLS [1.2](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365)の必須使用の準備」を参照Office 365。
 
-## <a name="references"></a>関連情報
+## <a name="references"></a>参照
 
 次のリソースは、クライアントが TLS 1.2 以降のバージョンを使用し、TLS 1.0 および 1.1 を無効にするためのガイダンスを提供します。
 

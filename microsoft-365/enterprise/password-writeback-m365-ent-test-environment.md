@@ -9,7 +9,7 @@ ms.date: 11/22/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: '概要: Microsoft 365 テスト環境用のパスワードの書き戻しを構成する。'
-ms.openlocfilehash: 5bb1307888948e46a07068a2493591ff9b4dc96f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0c0660008aea4a676da4be3c13e8d5c15cb3a51d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179720"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166840"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Microsoft 365 テスト環境のパスワードの書き戻し
 

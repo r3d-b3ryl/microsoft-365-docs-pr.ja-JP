@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 別の管理者を追加する方法について学習します。
-ms.openlocfilehash: 1e727f60d209f8d80edee38a21ce3992dd52d62c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 757a16da2b4bf73fbf905bb46ed6bc18f08b6d9f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219434"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60169120"
 ---
 # <a name="add-an-admin"></a>管理者の追加
 
@@ -51,10 +51,10 @@ ms.locfileid: "59219434"
 
 1. [ユーザー] Microsoft 365 管理センター **[アクティブ** ユーザー]  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**を選択**</a>し、[ユーザーの追加]**を選択します**。
 1. [基本 **の設定] ページで** 、ユーザーの名前、表示名、およびユーザー名を入力します。
-1. [完了 **時にメールでパスワードを** 送信する] チェック ボックスをオンにして、ユーザーのパスワードを電子メールで送信します。 メール アドレスを入力します。 複数のアドレスをセミコロンで区切ります。 [**次へ**] を選択します。
+1. [完了 **時にメールでパスワードを** 送信する] チェック ボックスをオンにして、ユーザーのパスワードを電子メールで送信します。 メール アドレスを入力します。 複数のアドレスをセミコロンで区切ります。 **[次へ]** を選択します。
 1. [場所 **の選択]** ドロップダウン リストで、ユーザーの場所を選択します。
-1. [製品ライセンス **なしでユーザーを作成する] チェック ボックス** をオンにします。 このユーザーにライセンス Microsoft 365を割り当てる必要はありません。 [**次へ**] を選択します。
-1. [役割] **セクションを展開** します。 ユーザーの現在の役割の横にあるチェック ボックスをオフにし、[グローバル管理者] **を選択します**。 [**次へ**] を選択します。
+1. [製品ライセンス **なしでユーザーを作成する] チェック ボックス** をオンにします。 このユーザーにライセンス Microsoft 365を割り当てる必要はありません。 **[次へ]** を選択します。
+1. [役割] **セクションを展開** します。 ユーザーの現在の役割の横にあるチェック ボックスをオフにし、[グローバル管理者] **を選択します**。 **[次へ]** を選択します。
 1. 設定を確認し、[追加の完了] **を選択します**。
 1. **[閉じる]** を選択します。
 

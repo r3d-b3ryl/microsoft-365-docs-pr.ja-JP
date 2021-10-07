@@ -7,7 +7,7 @@ ms.date: 9/22/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Office 365 向けに VPN スプリット トンネリングを実装する方法
-ms.openlocfilehash: 36c3cfbd74dabb0cfaf305cb52fb7f69e1e1e49f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1a1b0ecf47e6644db926aae97386a4e5bf0217cf
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215864"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166996"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>Office 365 向け VPN スプリット トンネリングの実装
 

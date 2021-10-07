@@ -7,7 +7,7 @@ ms.date: 07/17/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
 description: '概要: PowerShell を使用して、Microsoft 365で生成できないレポートを作成Microsoft 365 管理センター。'
-ms.openlocfilehash: 9fe1b48bdb61d037a3b2bc49d017a16c3a6875cd
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 35c4e810dbbf0006a72c8073c3ead900812f5c66
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59210443"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166768"
 ---
 # <a name="use-powershell-to-create-reports-for-microsoft-365"></a>PowerShell を使用して Microsoft 365 のレポートを作成する
 

@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -19,12 +19,12 @@ description: 管理者は、偽装の分析情報がどのように機能する�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b01da861b3d85bee1f89a92da0d973679fca3c0c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3a7125646b14df3aa1b36dd0324184f41a8e0993
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163516"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60169685"
 ---
 # <a name="impersonation-insight-in-defender-for-office-365"></a>Defender for Office 365
 
@@ -60,7 +60,7 @@ Microsoft 365 Defender ポータルの偽装インサイトを使用して、偽
 
   詳細については、「[Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)」を参照してください。
 
-  **注**: Microsoft 365 管理センター の対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 Defender ポータルで必要なアクセス許可と、Microsoft 365 の他の機能に対するアクセス許可がユーザーに付与されます。 詳細については、[「管理者の役割について」](../../admin/add-users/about-admin-roles.md) を参照してください。
+  **注**: Microsoft 365 管理センター の対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 Defender ポータルで必要なアクセス許可と、Microsoft 365 の他の機能に対するアクセス許可がユーザーに付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
 
 - Microsoft Defender のフィッシング対策ポリシーで偽装保護を有効にして構成Office 365。 偽装保護は既定では有効になっていません。 詳細については[、「Microsoft Defender でフィッシング対策ポリシー](configure-mdo-anti-phishing-policies.md)を構成する」を参照Office 365。
 

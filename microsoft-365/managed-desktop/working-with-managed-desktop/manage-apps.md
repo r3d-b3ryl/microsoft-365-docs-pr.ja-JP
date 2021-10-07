@@ -9,15 +9,15 @@ f1.keywords:
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.date: 01/18/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: b016d8458b4b4cc9f6b684d3b8a3c0a1e1322fef
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ad30f6647df4146efe81daec4b2bcaa506b7c8b0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215173"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60169889"
 ---
 # <a name="manage-line-of-business-apps-in-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップでの基幹業務アプリの管理
 

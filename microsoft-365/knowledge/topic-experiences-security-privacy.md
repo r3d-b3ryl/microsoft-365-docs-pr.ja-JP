@@ -1,5 +1,5 @@
 ---
-title: Microsoft Viva トピックとプライバシーの保護
+title: セキュリティとプライバシーのMicrosoft Viva トピック
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -8,16 +8,16 @@ audience: admin
 ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
-localization_priority: Normal
-description: セキュリティとプライバシーに関するMicrosoft Viva トピックする方法について説明します
-ms.openlocfilehash: b8c82b1914df739ea9086a4ce1585733a7b6d854
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.localizationpriority: medium
+description: セキュリティとプライバシーを計画する方法については、Microsoft Viva トピック。
+ms.openlocfilehash: 4b0c94244badab9aa7e294b04b20b09149ead3b7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179552"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168436"
 ---
-# <a name="microsoft-viva-topics-security-and-privacy"></a>Microsoft Viva トピックとプライバシーの保護
+# <a name="security-and-privacy-in-microsoft-viva-topics"></a>セキュリティとプライバシーのMicrosoft Viva トピック
 
 トピックでは、Microsoft 365 の既存のコンテンツ セキュリティ機能と管理コントロールを使用して、組織内のユーザーに表示される AI 生成コンテンツを制御します。 これは、特定のユーザーがトピックMicrosoft 365表示できる内容を決定するセキュリティ設定 (サイト、ファイル、およびフォルダーへのアクセス許可) と Topics 管理設定の組み合わせです。
 

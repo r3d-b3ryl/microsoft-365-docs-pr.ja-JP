@@ -8,14 +8,14 @@ ms.author: jaimeo
 manager: laurawi
 audience: ITpro
 ms.topic: article
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 2bf1fab504ae77a1e66235f49333c3b123e38904
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 40ee9f21f94d480ec0cd76a6d145b6d242921614
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215454"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170045"
 ---
 # <a name="new-microsoft-edge-app"></a>新Microsoft Edgeアプリ
 

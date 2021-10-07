@@ -6,7 +6,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
@@ -25,18 +25,18 @@ search.appverid:
 - BCS160
 - IWA160
 description: サービス正常性ダッシュボードの投稿は英語のみですが、ユーザーが指定した言語で自動的に表示Microsoft 365。
-ms.openlocfilehash: 9f5ce6dbb918f7a3dddf43b6332d28142446f179
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f8f4877fcfb12200ea3f540fe52472d0310cd46e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59210733"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168592"
 ---
 # <a name="language-translation-for-service-health-dashboard"></a>サービス正常性ダッシュボードの言語変換
 
 サービス正常性ダッシュボードの投稿は、投稿する情報のタイムラインが原因で英語でのみ書き込まれますが、Microsoft 365 の個人の言語設定で指定された言語で自動的に表示できます。 優先する言語を英語以外に設定すると、サービス正常性ダッシュボードに投稿を自動的に翻訳するオプションが表示されます。 メッセージは、コンピューターが優先する言語に翻訳され、コンピューターが翻訳を行ったことを意味します。 既定のビューは、このオプションによって制御されますが、ドロップダウン メニューを使用すると、翻訳をサポートしている任意の言語で、投稿を翻訳して表示することができます。 英語を選択すると、メッセージは元の英語バージョンに戻されます。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 > [!IMPORTANT]
 > 言語設定を選択する前に、優先する言語を設定する必要があります。 英語を言語に設定した場合、翻訳オプションは表示されません。 他のユーザーの優先する言語は設定することができません。ユーザーが自分自身で設定する必要があります。
@@ -53,7 +53,7 @@ ms.locfileid: "59210733"
 
 サービス正常性ダッシュボードの投稿を優先言語で自動的に機械翻訳および表示に設定するには、[正常性] >に移動します。 ビューの上部に自動翻訳のオンとオフを切り替えるスイッチが表示されます。 When this setting is off, posts are shown in English. When this setting is on, messages display in your preferred language. 選択した設定は、訪問ごとに保持されます。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [Microsoft 365 サービス正常性を確認する方法](view-service-health.md)
 

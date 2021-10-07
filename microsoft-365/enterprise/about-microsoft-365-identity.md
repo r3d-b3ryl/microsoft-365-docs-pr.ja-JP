@@ -7,7 +7,7 @@ audience: Admin
 ms.date: 09/30/2020
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - M365-identity-device-management
@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: クラウド専用またはハイブリッド ID モデルをADを使用して、Microsoft 365ユーザー ID サービスを管理する方法について説明します。
-ms.openlocfilehash: 0e83d94c6c82df3f47989433cf20ebf402b265df
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 14f96e2ddb74eb1da8c6937a21e8dcaf72ae0808
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218784"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170537"
 ---
 # <a name="microsoft-365-identity-models-and-azure-active-directory"></a>Microsoft 365 ID モデルと id モデルAzure Active Directory
 
@@ -69,7 +69,7 @@ ID の 2 種類と、最適なフィット感と利点を次に示します。
 オンプレミスとリモート (オンライン) の両方のユーザーは、Azure ADアカウントとパスワードを使用して、クラウド Microsoft 365アクセスします。 Azure AD は、保存されたユーザー アカウントとパスワードに基づいて、ユーザー資格情報を認証します。
 
 ### <a name="administration"></a>管理
-ユーザー アカウントは Azure AD にのみ格納されるので、クラウド ID は、クラウド ID などのツールを[](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)使用[Microsoft 365 管理センター管理](../admin/add-users/index.yml)Windows PowerShell。
+ユーザー アカウントは Azure AD にのみ格納されるので、クラウド ID は、クラウド ID などのツールを[](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)使用[Microsoft 365 管理センター管理](/admin)Windows PowerShell。
 
 ## <a name="hybrid-identity"></a>ハイブリッド ID
 

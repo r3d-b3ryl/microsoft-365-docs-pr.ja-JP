@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 52e7a3098f157e52ecf32802a9f69328b28e2e52
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 99bcf3c3d3381ffe226aeb54a72c7a673b06e88e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165102"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166364"
 ---
 # <a name="investigate-a-file-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Microsoft Defender for Endpoint アラートに関連付けられたファイルを調査する
 
@@ -108,7 +108,7 @@ ms.locfileid: "59165102"
 
 ![[ファイル名] タブのイメージ。](images/atp-file-names.png)
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [Microsoft Defender for Endpoint キューの表示と整理](alerts-queue.md)
 - [エンドポイント通知の Microsoft Defender の管理](manage-alerts.md)

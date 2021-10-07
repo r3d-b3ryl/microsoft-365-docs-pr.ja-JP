@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
@@ -20,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ユーザーが Microsoft 製品に関して Microsoft に送信できるフィードバックを管理します。
-ms.openlocfilehash: 9f6923f4f20ec445980a40aeb2d731f8b1a2085a
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 9b63a4046c9d1ab13ae6b3f4856a521d4c7a9b70
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775782"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168148"
 ---
 # <a name="manage-microsoft-feedback-for-your-organization"></a>組織に対する Microsoft フィードバックを管理する
 
@@ -62,7 +63,7 @@ Microsoft 365 組織の管理者として、Microsoft 365 アプリケーショ�
 
 :::image type="content" source="../../media/feedback-in-product-customer-engagement.png" alt-text="スクリーンショット: 製品内のお客様調査の質問例":::
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 これらのポリシーを使用するには、デバイスが最小ビルド番号に設定されている必要があります。 詳細については、次の表を参照してください。
 
@@ -77,7 +78,7 @@ Microsoft 365 組織の管理者として、Microsoft 365 アプリケーショ�
 
 ### <a name="feedback-policies"></a>フィードバック ポリシー
 
-|**[ポリシー名]**|**既定の状態**|**コントロールの概要**|
+|**ポリシー名**|**既定の状態**|**コントロールの概要**|
 |:-----|:-----|:-----|
 |ユーザーが Microsoft にフィードバックを送信するを許可する|オン|アプリケーション全体のフィードバック エントリ ポイントを制御する|
 |ユーザーが Microsoft から製品内アンケートを受け取り、対応できる|オン|製品内のアンケート プロンプトを制御する|

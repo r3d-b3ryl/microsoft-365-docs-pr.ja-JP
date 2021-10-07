@@ -8,18 +8,18 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso のオンプレミス IT インフラストラクチャの基本的な構造と、企業のビジネス ニーズが企業向けサービスによってどのように満たされるかMicrosoft 365理解します。
-ms.openlocfilehash: aa0779cfadb12aa0213a74f2e348951be4eca4f5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9f7a25a9a3bd23c5725be06af39dbd65a1d3a4e5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218684"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170357"
 ---
 # <a name="contoso-it-infrastructure-and-business-needs"></a>Contoso IT インフラストラクチャとビジネス ニーズ
 

@@ -10,7 +10,7 @@ ms.reviewer: pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: 教育機関向け価格に対する学校の適格性をMicrosoft 365 Educationする方法について学習します。
 ms.date: 07/21/2020
-ms.openlocfilehash: 86bdb4338c316edf5b8bdb83a61a5a0fd2f411ee
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8fc3be02de01e2d37159162581276e7c9d3451f1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59167541"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168904"
 ---
 # <a name="verify-academic-eligibility-for-microsoft-365-education-subscriptions"></a>サブスクリプションの学業Microsoft 365 Education確認する
 
@@ -34,7 +34,7 @@ ms.locfileid: "59167541"
 
 この記事では、学校の教育機関の資格を確認し、資格の状態を確認し、学校が承認された後に学術価格でサブスクリプションを購入する方法について説明します。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 試用版サブスクリプションが既Microsoft 365 Education必要です。 試用版サブスクリプションをお持ちでない場合は、この Web ページ [にアクセス](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) し、[無料で開始 **する] を選択します**。
 

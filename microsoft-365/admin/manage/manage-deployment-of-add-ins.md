@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 管理センターで集中展開を使用して、組織内のユーザーとグループにアドインを展開する方法について説明します。
-ms.openlocfilehash: 33e139872c9d0b334ff8eabe49962208ca4b297a
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: e9f5cb01394d947a6b44e1c34870d33b0d6dd9bd
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59933473"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168172"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>管理センターでアドインを展開する
 

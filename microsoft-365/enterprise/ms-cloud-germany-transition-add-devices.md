@@ -7,7 +7,7 @@ ms.date: 12/01/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツのデータセンター地域の Office 365サービスに移行する場合のサービスに関するその他のデバイス情報。'
-ms.openlocfilehash: b38c279bbbb763c8f0859d6d45cd838c8652ec5e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 16c2e1f33e66f9b7d710a867c5c4467053e03c67
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191260"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166828"
 ---
 # <a name="additional-device-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Microsoft Cloud Deutschland からの移行に関するその他のデバイス情報
 
@@ -32,7 +32,7 @@ Azure AD、Microsoft Cloud Deutschland に接続されている登録済みデ�
 ## <a name="azure-ad-joined-windows-10-devices"></a>Azure AD参加Windows 10デバイス
 デバイスが Azure Windows 10参加しているAD、Azure デバイスから切断され、再び接続AD必要があります。
 
-[![Azure AD デバイス Re-Join Flow。 ](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png)](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
+[![Azure AD デバイス Re-Join Flow。 ](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png) ](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
 
 
 ユーザーが Windows 10 デバイスの管理者である場合、ユーザーは Azure AD からデバイスの登録を解除し、3 つの手順で再度追加できます。
@@ -65,7 +65,7 @@ Azure AD、Microsoft Cloud Deutschland に接続されている登録済みデ�
 
 *設定 > アカウント > アカウント >資格情報不明 > Microsoft-Account を使用せずにユーザーを追加する*
 
-詳細については、[「管理者の役割について」](/microsoft-365/admin/add-users/about-admin-roles?) を参照してください。
+詳細については、「[管理者の役割について](/microsoft-365/admin/add-users/about-admin-roles?)」を参照してください。
 
 この手順では、組織の任意の作業アカウントの資格情報を使用して、再び登録できます。
 
@@ -76,7 +76,7 @@ Azure AD、Microsoft Cloud Deutschland に接続されている登録済みデ�
 
 デバイスが azure Windows 10登録されているAD場合は、Azure デバイスから切断され、再度接続AD必要があります。
 
-[![Azure AD デバイス Re-Registration Flow。 ](../media/ms-cloud-germany-migration-opt-in/AAD-ReRegistration-flow.png)](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
+[![Azure AD デバイス Re-Registration Flow。 ](../media/ms-cloud-germany-migration-opt-in/AAD-ReRegistration-flow.png) ](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
 
 ### <a name="step-1-determine-if-the-device-is-azure-id-registered"></a>手順 1: デバイスが Azure ID 登録かどうかを判断する
 

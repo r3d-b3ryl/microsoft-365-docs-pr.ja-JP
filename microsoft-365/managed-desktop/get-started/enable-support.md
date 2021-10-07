@@ -7,14 +7,14 @@ author: jaimeo
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: f5656a857a05b317f12393550d4e6a8386dcea9f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e8d679eea96c221ee245ac0029ea291436fd84da
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215443"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168400"
 ---
 # <a name="enable-user-support-features"></a>ユーザー サポート機能を有効にする
 

@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_TOC
@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 業界と組織の情報に関する最新のニュース見出しをユーザーに提供し、ニュース サービスを使用して組織のカスタマイズされたニュース フィードを有効にします。
-ms.openlocfilehash: bde55ffbd9bef2f8eac7db1a4d200aeb58f32f89
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: f53f9d7d52a68c29f1225dd38df90d9c4c3e72e2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59933509"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168112"
 ---
 # <a name="manage-industry-news"></a>業界ニュースの管理
 
@@ -101,8 +101,8 @@ ms.locfileid: "59933509"
 3. [新 **しいタブ ページOffice 365コンテンツを許可する] を選択します**。 有効にすると、ユーザーは新しいタブをカスタマイズして、Office 365 からの情報 (推奨ファイルや最近のファイルを含む) と、頻繁に使用される SharePoint サイトなどの情報を表示できます。
 4. [新 **しいタブ ページに会社情報と業界ニュースを表示する] を選択します**。 組織と業界に関するニュース記事は、新しいタブに記事を表示するユーザーに表示されます。
 
-## <a name="related-articles"></a>関連記事
+## <a name="related-content"></a>関連コンテンツ
 
 - 
   [Microsoft Search](/microsoftsearch/)
-- [データとサービスを管理する](./index.yml)
+- [データとサービスを管理する](/admin)

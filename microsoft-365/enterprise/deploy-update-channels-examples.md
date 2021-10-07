@@ -9,18 +9,18 @@ ms.date: 07/21/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_Enterprise
 - M365-subscription-management
 ms.custom: ''
 description: パートナー組織がチャネルを使用してどのように展開および更新するか。
-ms.openlocfilehash: 76c627e3a3278897c9075adf8af8a721c1021a99
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a2ce901d6014079a729b0e1f069d4a2d0d4be42a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165415"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167008"
 ---
 # <a name="deployment-and-update-channel-example-configurations"></a>展開および更新プログラム チャネルの構成例
 

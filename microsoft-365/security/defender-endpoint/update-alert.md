@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 00c02bad3f95d2bd8def69d5dd6ad8e1c2e857df
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b04abf5b0051d4b0849d88e30c8e5e31ee174a57
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213364"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60169649"
 ---
 # <a name="update-alert"></a>アラートを更新する
 
@@ -75,7 +75,7 @@ PATCH /api/alerts/{id}
 名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**
-Content-Type|文字列|application/json. **必須**
+Content-Type|文字列|application/json. **必須**。
 
 ## <a name="request-body"></a>要求本文
 

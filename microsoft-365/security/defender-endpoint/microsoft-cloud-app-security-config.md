@@ -11,18 +11,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f49050ff6ac4f283e8552073922517e9d59d6849
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5ac28c083e44ef25a77d49c57ee852e6179381df
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213623"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166316"
 ---
 # <a name="configure-microsoft-cloud-app-security-in-microsoft-defender-for-endpoint"></a>Microsoft Defender Microsoft Cloud App Securityエンドポイントの構成
 

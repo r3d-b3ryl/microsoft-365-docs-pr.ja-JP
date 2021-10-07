@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -19,12 +19,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
 description: '概要: PowerShell を使用Microsoft 365既存の顧客テナントに別のドメイン名を追加します。'
-ms.openlocfilehash: 6cb57814f2f1ce8a1cbf6a47b654f6492279faeb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1a121407ebe242747a693084289e972e56e1cbee
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218774"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170525"
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>委任アクセス許可 (DAP) パートナー用 Windows PowerShell でクライアント テナンシーにドメインを追加する
 
@@ -33,7 +33,7 @@ ms.locfileid: "59218774"
 新しいドメインを作成し、顧客のテナントと PowerShell を関連付け、Microsoft 365を使用するよりもMicrosoft 365 管理センター。
 
 委任アクセス許可 (DAP) パートナー とは、シンジケート パートナーとクラウド ソリューション プロバイダー (CSP) パートナーです。 他の会社のネットワーク プロバイダーまたは通信プロバイダーであることもよくあります。 ユーザーは、Microsoft 365サービスサービスにサブスクリプションをバンドルします。 Microsoft 365 サブスクリプションを販売すると、顧客テナンシーに対する管理 (AOBO) アクセス許可が自動的に付与され、顧客テナンシーの管理と報告が可能になります。
-## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
 このトピックの手順では、PowerShell を使用してConnect[にMicrosoft 365する必要があります](connect-to-microsoft-365-powershell.md)。
 

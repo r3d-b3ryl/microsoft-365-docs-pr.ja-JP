@@ -7,7 +7,7 @@ ms.date: 3/1/2017
 audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - SPO_Content
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 87a52468-994e-43a2-b155-7229ed659291
 description: Web Essentials でミニフィケーションとバンドルの手法を使用して HTTP 要求を削減する方法と、Web オンラインでページを読み込むのにかかる時間SharePointします。
-ms.openlocfilehash: 5ba1e174cbb016bdf88a1d4006a0b8aafd5ec042
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7214d396dc39147f6864144420f8fa3fd61195b0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220805"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166960"
 ---
 # <a name="minification-and-bundling-in-sharepoint-online"></a>SharePoint Online での縮小とバンドル
 
@@ -57,7 +57,7 @@ Web Essentials には、次の 2 つの形式のバンドルが用意されて�
   
 1. [Visual Studio エクスプローラーで、バンドルに含めるファイルを選択します。
     
-2. 選択したファイルを右クリックし、コンテキスト メニューから **[Web Essentials** \> **Create JavaScript バンドル ファイル** ] を選択します。 以下に例を示します。 
+2. 選択したファイルを右クリックし、コンテキスト メニューから **[Web Essentials** \> **Create JavaScript バンドル ファイル** ] を選択します。 次に例を示します。 
     
     ![Web Essentials メニュー オプションを示すスクリーンショット。](../media/41aac84c-4538-4f78-b454-46e651f868a3.png)
   
@@ -93,7 +93,7 @@ JavaScript ファイルと CSS ファイルをバンドルする方法と同様�
   
 1. [Visual Studio エクスプローラーで、バンドルに含めるファイルを選択します。
     
-2. 選択したファイルを右クリックし、コンテキスト メニューから **[Web Essentials** \> **Create image sprite]** を選択します。 例: 
+2. 選択したファイルを右クリックし、コンテキスト メニューから **[Web Essentials** \> **Create image sprite]** を選択します。 次に例を示します。 
     
     ![イメージ スプライトを作成する方法を示すスクリーンショット。](../media/de0fe741-4ef7-4e3b-bafa-ef9f4822dac6.png)
   

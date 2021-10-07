@@ -7,7 +7,7 @@ ms.date: 03/11/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: SharePoint Online 最新版と従来版の発行サイト ページで iFrame のパフォーマンスを最適化する方法について説明します。
-ms.openlocfilehash: 7f50b6582a0a65cd29a91f450642e5d38b346d77
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e38dd3922444228cdf54c8ef306fbbd9eafb81c4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189601"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170345"
 ---
 # <a name="optimize-iframes-in-sharepoint-online-modern-and-classic-publishing-site-pages"></a>SharePoint Online 最新版と従来版の発行サイト ページで iFrame を最適化する
 
@@ -74,7 +74,7 @@ iFrame は本来、javascript、CSS、framework の要素など、関連付け�
 >[!NOTE]
 >ページ読み込み時間は、ネットワーク負荷、時間帯、その他の一時的な状態など、さまざまな要素によって異なります。 結果を平均化するために、変更の前後に数回に渡ってページ読み込み時間をテストする必要があります。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [SharePoint Online のパフォーマンスをチューニングする](tune-sharepoint-online-performance.md)
 

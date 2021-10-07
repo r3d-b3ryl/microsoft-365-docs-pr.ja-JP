@@ -4,17 +4,17 @@ description: 「作業」セクションのランディング ページ
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: f950943d63c7c67a6b4a364e75b4c91b461b7f73
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5cd5649ef236c889ea513dc6fbed1cef359b4e31
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215174"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60169925"
 ---
 # <a name="working-with-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップを使用する
 

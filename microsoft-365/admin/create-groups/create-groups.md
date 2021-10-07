@@ -8,10 +8,11 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
@@ -23,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: グループの作成と削除、Microsoft 365メンバーの追加と削除、グループの動作のカスタマイズについて説明します。
-ms.openlocfilehash: 5abe83570121ae6c1837e0037521be3d1da8580c
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 32a79182efc021a5f95cc4ef7f53e722c76a1df2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775062"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165798"
 ---
 # <a name="create-a-group-in-the-microsoft-365-admin-center"></a>グループを作成するMicrosoft 365 管理センター
   
@@ -81,7 +82,7 @@ ms.locfileid: "59775062"
   
 グループ メールボックスからメールが削除された場合、そのメールはグループ メンバーの個人用メールボックスから削除されません。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 新しいグループを作成してメンバーを追加した後、グループ名や説明の編集、所有者またはメンバーの変更、外部送信者がグループにメールを送信できるかどうか、グループ会話のコピーをメンバーに送信するかどうかを指定するなどのグループをさらに構成できます。 詳細については[、「グループMicrosoft 365管理する](manage-groups.md)」を参照してください。
 

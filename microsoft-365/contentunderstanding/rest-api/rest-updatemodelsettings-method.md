@@ -9,14 +9,14 @@ ms.topic: reference
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection: m365initiative-syntex
-localization_priority: Priority
+ms.localizationpriority: high
 description: REST API を使用して、SharePoint Syntex 文書理解モデルに関する利用可能なモデル設定を更新します。
-ms.openlocfilehash: c75f669913f16233c6015230a60643cf86f33f5a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f6489208b292237936776a2cfa98a5c1c42e64a9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163879"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168652"
 ---
 # <a name="updatemodelsettings"></a>UpdateModelSettings
 

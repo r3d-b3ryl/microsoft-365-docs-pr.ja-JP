@@ -7,7 +7,7 @@ ms.pagetype: security
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: normal
+ms.localizationpriority: medium
 ms.topic: article
 author: denisebmsft
 ms.author: deniseb
@@ -17,12 +17,12 @@ manager: dansimp
 ms.technology: mde
 ms.date: 09/14/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: d77f5885f4c2e957a598c37fd75a6813f2b37dd1
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 769c8519fa2967b317bd266d143153c28b269b98
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043313"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60169709"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>Microsoft Defender ウイルス対策の他のセキュリティ製品との互換性
 
@@ -112,11 +112,11 @@ Defender for Endpoint は、パッシブ モードMicrosoft Defender ウイル�
 
 |保護|Microsoft Defender ウイルス対策 <br/><br/> アクティブ モード|Microsoft Defender ウイルス対策 <br/><br/> パッシブ モード|Microsoft Defender ウイルス対策 <br/><br/> 無効またはアンインストール済み|[ブロック モードの EDR](edr-in-block-mode.md)|
 |---|---|---|---|---|
-|[リアルタイム保護](configure-real-time-protection-microsoft-defender-antivirus.md) と [クラウドによる保護](enable-cloud-protection-microsoft-defender-antivirus.md)|はい|No <sup>[[5](#fn5)]</sup>|不要|いいえ|
-|[限定された定期的なスキャンの可用性](limited-periodic-scanning-microsoft-defender-antivirus.md)|いいえ|不要|はい|不要|
+|[リアルタイム保護](configure-real-time-protection-microsoft-defender-antivirus.md) と [クラウドによる保護](enable-cloud-protection-microsoft-defender-antivirus.md)|はい|No <sup>[[5](#fn5)]</sup>|いいえ|いいえ|
+|[限定された定期的なスキャンの可用性](limited-periodic-scanning-microsoft-defender-antivirus.md)|いいえ|いいえ|はい|いいえ|
 |[スキャン中ファイルと検出情報](review-scan-results-microsoft-defender-antivirus.md)|はい|はい|いいえ|はい|
-|[脅威の修復](configure-remediation-microsoft-defender-antivirus.md)|はい|メモ<sup>[ 6 ][を参照してください。](#fn6)</sup>|不要|はい|
-|[セキュリティ インテリジェンスの更新プログラム](manage-updates-baselines-microsoft-defender-antivirus.md)|はい|はい|不要|はい|
+|[脅威の修復](configure-remediation-microsoft-defender-antivirus.md)|はい|メモ<sup>[ 6 ][を参照してください。](#fn6)</sup>|いいえ|はい|
+|[セキュリティ インテリジェンスの更新プログラム](manage-updates-baselines-microsoft-defender-antivirus.md)|はい|はい|いいえ|はい|
 
 (<a id="fn5">5</a>) 一般に、Microsoft Defender ウイルス対策 がパッシブ モードの場合、リアルタイム保護は、有効でパッシブ モードの場合でも、ブロックまたは強制を提供しません。
 
@@ -137,7 +137,7 @@ Defender for Endpoint は、パッシブ モードMicrosoft Defender ウイル�
 
 <br/><br/>
 
-|Method|Procedure|
+|メソッド|Procedure|
 |---|---|
 |Windows セキュリティアプリ| 1. デバイスでWindowsアプリをWindows セキュリティします。<br/>2. [ **ウイルス対策] &を選択します**。<br/>3. [プロバイダー **Who保護しますか?** [プロバイダーの管理 **] を選択します**。<br/>4. [セキュリティ **プロバイダー] ページ** の [ウイルス対策]**の下** に、[セキュリティ プロバイダー **Microsoft Defender ウイルス対策がオンになっている必要があります**。|
 |タスク マネージャー| 1. デバイスWindowsタスク マネージャー アプリを開きます。<br/>2. [詳細] タブ **を選択** します。<br/>3. リストで **MsMpEng.exe** を探します。|

@@ -7,19 +7,19 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、セキュリティ & コンプライアンス センターのメール フロー ダッシュボードで [非承諾ドメイン] レポートを使用して、送信者のドメインが Microsoft 365 で構成されていないオンプレミス組織からのメッセージを監視する方法について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b9bab55ddf23f991179245837f4ecb4e7d28b8f1
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: 5b698600cb3fbc85ec86bed4da542d23fe5eb17e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988357"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60169469"
 ---
 # <a name="non-accepted-domain-report-in-the-security--compliance-center"></a>セキュリティ コンプライアンス センターの非&レポート
 
@@ -72,6 +72,6 @@ Microsoft 365の意図が悪意のあるものであることを証明するデ�
 
 レポート ビューに戻る場合は、[レポートの表示] **をクリックします**。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 メール フロー ダッシュボードの他の分析情報の詳細については、「Security & コンプライアンス センター」 [を参照してください](mail-flow-insights-v2.md)。

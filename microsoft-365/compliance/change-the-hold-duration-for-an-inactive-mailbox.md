@@ -9,7 +9,7 @@ ms.date: 8/29/2017
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -20,12 +20,12 @@ ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 ms.custom:
 - seo-marvel-apr2020
 description: メールボックスをOffice 365した後、非アクティブなメールボックスに割り当てられている保持ポリシーまたは保持ポリシー Office 365期間を変更します。
-ms.openlocfilehash: ff6394117c0c4f9410b12fcf3d8fc1c952ec1619
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: be7877e3087004e6b633e0967d72173fa83a3948
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164119"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170825"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox"></a>非アクティブなメールボックスの保持期間を変更する
 

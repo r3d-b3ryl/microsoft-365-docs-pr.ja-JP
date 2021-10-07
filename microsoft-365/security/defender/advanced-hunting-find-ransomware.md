@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: a5cc69edfb6e1b2224b51036d879538dffde64b8
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 0fd58f038992e3728915a822500bbbe1b7db1a26
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043181"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60169625"
 ---
 # <a name="hunt-for-ransomware"></a>ランサムウェアを探す
 
@@ -245,7 +245,7 @@ ScDisable = iff(make_set(ScDisableUse) contains "1", 1, 0), TotalEvidenceCount =
 | where UniqueEvidenceCount > 2
 ```
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [クエリ結果を操作する](advanced-hunting-query-results.md)
@@ -266,6 +266,7 @@ Microsoft の主な情報:
 Microsoft 365:
 
 - [Microsoft 365 テナントにランサムウェア保護を展開する](/microsoft-365/solutions/ransomware-protection-microsoft-365)
+- [Azure とクラウド を使用してランサムウェアの復元を最大化Microsoft 365](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
 - [ランサムウェア攻撃から回復する](/microsoft-365/security/office-365-security/recover-from-ransomware)
 - [マルウェアと ランサムウェアからの保護](/compliance/assurance/assurance-malware-and-ransomware-protection)
 - [ランサムウェアからWindows PC を保護する](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
@@ -274,6 +275,7 @@ Microsoft 365:
 Microsoft Azure
 
 - [ランサムウェア攻撃に対する Azure 防御](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/)
+- [Azure とクラウド を使用してランサムウェアの復元を最大化Microsoft 365](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
 - [ランサムウェアから保護するためのバックアップと復元の計画](/security/compass/backup-plan-to-protect-against-ransomware)
 - [Microsoft Azure によるランサムウェアからの](https://www.youtube.com/watch?v=VhLOr2_1MCg)保護 (26 分のビデオ)
 - [体系的な ID 侵害からの回復](/azure/security/fundamentals/recover-from-identity-compromise)

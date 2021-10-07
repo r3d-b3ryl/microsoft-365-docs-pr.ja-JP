@@ -3,27 +3,25 @@ title: Linux 用 Microsoft Defender for Endpoint を手動で展開する
 ms.reviewer: ''
 description: コマンド ラインから手動で Linux 用 Microsoft Defender for Endpoint を展開する方法について説明します。
 keywords: Microsoft、Defender、Microsoft Defender for Endpoint、Linux、インストール、展開、アンインストール、puppet、ansible、linux、redhat、ubuntu、debian、sles、suse、centos
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9194196ab34e5e95b986ecbaba9be855969dec20
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
-ms.translationtype: HT
+ms.openlocfilehash: 7e737ecba6acfd9ebf09b826d6cec643936f090c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212223"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60169841"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Linux 用 Microsoft Defender for Endpoint を手動で展開する
 

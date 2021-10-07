@@ -8,17 +8,17 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.collection: SPO_Content
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 description: 地理的な場所ごとに個別の管理者を構成する必要がありますか? Microsoft 365 Multi-Geo で地域管理者を追加または削除する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 32fe5e934e6a3d6f18c802c3c427974e67c1b454
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e661e42759fe0b035bfe97c33165f78316973403
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218764"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170441"
 ---
 # <a name="add-or-remove-a-geo-administrator-in-microsoft-365-multi-geo"></a>Microsoft 365 Multi-Geo で地域管理者を追加または削除する
 
@@ -56,7 +56,7 @@ ms.locfileid: "59218764"
 
 ObjectID を使用してグループを削除するには、`Remove-SPOGeoAdministrator -ObjectID <ObjectID>` を実行します。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [Add-SPOGeoAdministrator](/powershell/module/sharepoint-online/add-spogeoadministrator)
 
