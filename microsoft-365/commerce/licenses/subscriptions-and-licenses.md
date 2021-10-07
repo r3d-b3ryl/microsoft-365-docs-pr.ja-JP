@@ -9,7 +9,7 @@ ms.reviewer: micurn, nicholak
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: 受け取るアプリケーションとサービスは、購入Microsoft 365製品によって異Microsoft 365 Apps for business。
 ms.date: 07/01/2020
-ms.openlocfilehash: 69996a97b582ec3323a31efbe4cb70fe4a61e19d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 11cda35cdb4326e620d5bedbc49762e868e93efa
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59190290"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60153656"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>ビジネス向けサブスクリプションとライセンスMicrosoft 365理解する
 

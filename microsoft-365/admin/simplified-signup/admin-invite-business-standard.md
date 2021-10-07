@@ -8,17 +8,18 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
-ms.collection: ''
+ms.localizationpriority: medium
+ms.collection:
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 description: ユーザーに組織への参加をMicrosoft 365 Business Standardする
-ms.openlocfilehash: e3fa00edd87f98dd67159e4fa6f7c9c3ba916876
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: f4170cee2e389665d59bd516b100143e62674281
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776622"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151796"
 ---
 # <a name="invite-users-to-microsoft-365-business-standard-admin"></a>ユーザーをユーザーにMicrosoft 365 Business Standardする (管理者)
 
@@ -33,7 +34,7 @@ ms.locfileid: "59776622"
 > [!IMPORTANT]
 > Microsoft 365 for business にサインアップするユーザー (通常はビジネス所有者) は、自動的に組織の技術管理者になります。 Microsoft 365 のサービスを管理するサポートが必要な場合は、他のユーザーを管理者として追加することができます。 詳細については、「[管理者を追加する](../../business-video/add-admin.md)」をチェックアウトしてください。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 ビジネス 標準[組織に既](signup-business-standard.md)にMicrosoft 365 Business Standardし、ビジネス 標準の組織を[セットアップ済みである必要があります](../setup/setup-business-standard.md)。 これらの手順を完了したら、ユーザーに招待を共有できます。
 
@@ -43,7 +44,7 @@ ms.locfileid: "59776622"
 
 2. 招待するユーザーのユーザー名とメール アドレスを追加し、[送信] を選択 **します**。 招待メールは、ユーザー アカウント情報を追加するために選択したユーザー全員に送信Microsoft 365。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 ユーザーをフォローアップし、ユーザーがサブスクリプションの共有に関して送信したメールの招待を受け取Microsoft 365 Business Standardします。
 

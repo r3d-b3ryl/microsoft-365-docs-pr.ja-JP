@@ -7,18 +7,18 @@ manager: bcarter
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 42c8a34082b2607f7803a44d444d2b4e5d0772b6
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: 33c4ece2868a893b81db51f809a6e80126e8982e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59444243"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60149648"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Microsoft 365 の生産性図
 

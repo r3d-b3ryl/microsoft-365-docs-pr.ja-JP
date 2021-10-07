@@ -10,15 +10,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.custom: commerce_billing_payinfo
-localization_priority: Normal
+ms.localizationpriority: medium
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ba47c83a81797f30c956ca16023b299e167566e5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6d48398e3d6e91f257b3e813bc1caee5feec8be5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180344"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60153608"
 ---
 # <a name="payment-information-for-china-prc"></a>中国の支払い情報 (PRC)
 

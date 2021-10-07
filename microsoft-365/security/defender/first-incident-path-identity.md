@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f0695f406bdc2063c58d87c61032d120442928e5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4f15bf358d180e30ab34abff3105ba77edb6fa0d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192500"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60149837"
 ---
 # <a name="example-of-an-identity-based-attack"></a>ID ベースの攻撃の例
 

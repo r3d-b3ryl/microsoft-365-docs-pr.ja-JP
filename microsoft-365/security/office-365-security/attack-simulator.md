@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -20,12 +20,12 @@ ms.custom:
 description: 管理者は、セキュリティ & Complance センターで攻撃シミュレーターを使用して、Microsoft 365 E5 または Microsoft Defender で Office 365 プラン 2 組織でシミュレートされたフィッシング攻撃とパスワード攻撃を実行する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 631c6d9ecfeb24ddfad16391990043d283b02a82
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 73dcc3c8fbe121ee18f16d1d806718b3bb60923e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218084"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60149792"
 ---
 # <a name="attack-simulator-in-the-security--compliance-center"></a>セキュリティ コンプライアンス センターの攻撃&シミュレーター
 

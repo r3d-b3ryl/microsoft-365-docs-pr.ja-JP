@@ -10,15 +10,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.custom: commerce_billing_payinfo
-localization_priority: Normal
+ms.localizationpriority: medium
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: cd28a2e55baddc81dba43be8d4facdf07c8ccda4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6a3fa39e018315919cbeef8bf7e20750af3dd6a2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191760"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60153452"
 ---
 # <a name="payment-information-for-grenada"></a>グレナダのお支払い情報
 

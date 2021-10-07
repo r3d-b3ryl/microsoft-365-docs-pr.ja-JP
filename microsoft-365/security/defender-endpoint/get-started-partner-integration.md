@@ -11,17 +11,17 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 8597cc951c5a6d9cc587eaee957beb304fb35311
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 75698e7ba0d0fd36459701f13a22ebe70762870e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59190920"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150027"
 ---
 # <a name="become-a-microsoft-defender-for-endpoint-partner"></a>Microsoft Defender for Endpoint パートナーになる
 
@@ -80,6 +80,6 @@ Microsoft Defender for Endpoint は、Microsoft Defender for Endpoint[](partner-
 
 Microsoft Defender for Endpoint とのパートナーシップは、相互のお客様が防御をさらに合理化、統合、および調整するのに役立ちます。 Microsoft Defender for Endpoint パートナーになり、最新の脅威を一緒に防止して対応することで、顧客とその資産を効果的に保護する共通の目標を達成することを選んだのは嬉しく思います。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [テクニカル パートナーの機会](partner-integration.md)

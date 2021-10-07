@@ -9,7 +9,7 @@ ms.date: 12/13/2017
 audience: End User
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: 3ecde857-4b7c-451d-b4aa-9eeffc8a8c61
@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Active Directory Rights Management Service (EXCHANGE ONLINE RMS) サーバーを使用ADする方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 64d89d52b4e835c81ed1e2c8bbd54eaaae6f1823
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 89ef25adf41c80abfd04ffdc51a32ba2cbef0c5d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176071"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60153188"
 ---
 # <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>IRM を設定して、オンプレミスの AD RMS サーバーを使用する
 

@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5e77cecfe06606f974c4e488bcec14e12c9ce0de
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: fdce3a978d79f3ba87455f67d058185f740972ce
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043337"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150048"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>ライブ応答を使用してデバイス上のエンティティを調査する
 

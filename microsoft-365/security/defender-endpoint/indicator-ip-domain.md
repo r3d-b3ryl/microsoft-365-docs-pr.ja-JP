@@ -3,26 +3,24 @@ title: IP および URL/ドメインのインジケーターを作成
 ms.reviewer: ''
 description: エンティティの検出、防止、および除外を定義する、IPs および URL/ドメインのインジケーターを作成します。
 keywords: IP、URL、ドメイン、管理、許可、ブロック、ブロック、クリーン、悪意のある、ファイル ハッシュ、IP アドレス、URL、ドメイン
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0b28d4088b8475794989d777bf58ccc7550b3f7c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0aaeb4a290c43b8fc725fe806014acfe61a939e8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179312"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150028"
 ---
 # <a name="create-indicators-for-ips-and-urlsdomains"></a>IP および URL/ドメインのインジケーターを作成
 
@@ -47,12 +45,12 @@ IP と URL またはドメインのインジケーターを作成することで
 > [!NOTE]
 > IP アドレスInter-Domainクラスレス ルーティング (CIDR) 表記はサポートされていません。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 IPS、URL、またはドメインのインジケーターを作成する前に、次の前提条件を理解することが重要です。
 
 - URL/IP 許可とブロックは、Defender for Endpoint コンポーネントのネットワーク保護をブロック モードで有効にしています。 ネットワーク保護と構成手順の詳細については、「ネットワーク保護を有効 [にする」を参照してください](enable-network-protection.md)。
 - マルウェア対策クライアントのバージョンは、4.18.1906.x 以降である必要があります。
-- バージョン 1709 以降Windows 10コンピューターでサポートされます。
+- バージョン 1709 以降Windows 10 11 のコンピューターでWindowsされます。
 - [高度 **な機能] の [** エンドポイント] で **カスタム Microsoft 365 Defender > 設定 >が>確認します**。 詳細については、「高度な機能 [」を参照してください](advanced-features.md)。
 - iOS でのインジケーターのサポートについては、「カスタム インジケーターの [構成」を参照してください](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators)。
 
@@ -104,7 +102,7 @@ IPS、URL、またはドメインのインジケーターを作成する前に�
 
 5. [概要] タブで詳細を確認し、[保存] を **クリックします**。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [インジケーターの作成](manage-indicators.md)
 - [ファイルのインジケーターを作成 ](indicator-file.md)

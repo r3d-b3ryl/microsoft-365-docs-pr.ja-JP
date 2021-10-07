@@ -7,7 +7,7 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -18,12 +18,12 @@ ms.custom:
 description: 管理者は、Microsoft 365 Defender ポータルの Submits ポータルを使用して、不審なメール、フィッシングメール、スパム、その他有害な可能性のあるメッセージ、URL、および電子メールの添付ファイルを Microsoft に提出して再スキャンする方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 756b26a6d7b2a735cc7ac232348048ce76a1aa1b
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: 1c41f8d06755e5d71143bc94090742079757be4b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988729"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154532"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>申請ポータルを使用して、疑わしいスパム、フィッシング、URL、ファイルを Microsoft に提出する
 

@@ -11,14 +11,14 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
-localization_priority: medium
+ms.localizationpriority: medium
 description: Microsoft Viva トピックに関するリソースの検索方法について説明します。
-ms.openlocfilehash: b03d2e6ed499b27f4e472565e2cb47c37ed56db2
-ms.sourcegitcommit: d1a93f25323a0e6ce3b898bf9dc57dcef27eda67
+ms.openlocfilehash: 384b8ad34f6f9d162a30ba997d0f322e639f3928
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60126772"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152504"
 ---
 # <a name="introduction-to-microsoft-viva-topics"></a>Microsoft Viva トピックの概要
 
@@ -52,7 +52,7 @@ Viva Topics は、組織がMicrosoft 365情報を知識に変換するのに役�
 
 | この情報を探している場合: | 参照先: |
 |:-----|:-----|
-|ビバ トピックの使用計画を開始する方法について説明します。 |[使用を開始する](topics-adoption-getstarted.md)|  
+|ビバ トピックの使用計画を開始する方法について説明します。 |[概要](topics-adoption-getstarted.md)|  
 |ビバ トピックの試用版パイロット プログラムをセットアップして実行する |[試用版を実行する](trial-topics.md)|
 
 ## <a name="set-up-and-administration"></a>設定と管理

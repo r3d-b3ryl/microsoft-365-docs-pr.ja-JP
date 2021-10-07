@@ -7,7 +7,7 @@ ms.date: 04/19/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: ''
 description: '概要: 新しいエンドポイントの Web サービスでは、特定のシナリオ用の一部のエンドポイントは含まれません。'
 hideEdit: true
-ms.openlocfilehash: e01bf3522d148e71fd4968029e1bbc9204ef9a6a
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 1313bc4dd10afe07f82fdc2c1b5df9d9d9bd0f2a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491243"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150824"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Office 365 IP アドレスと URL Web サービスに含まれないその他のエンドポイント
 
@@ -64,7 +64,7 @@ DNS に関するものを除き、記載された特定のシナリオを必要�
 |13|Skype for Business ハイブリッド オンプレミス サーバーから Skype for Business Online への接続性|13.107.64.0/18, 52.112.0.0/14 <br> UDP ポート 50,000-59,999 <br> TCP ポート 50,000-59,999; 5061|Skype for Business オンプレミス サーバーの送信接続性|
 |14 |オンプレミスのハイブリッド接続を使用するクラウド PSTN では、オンプレミスのホストへのネットワーク接続を開く必要があります。Skype for Business Online のハイブリッド構成の詳細については、|「[Skype for Business Server と Office 365 間のハイブリッド接続を計画する](/skypeforbusiness/hybrid/plan-hybrid-connectivity)」を参照してください。|Skype for Business オンプレミス ハイブリッド受信|
 |15 |**認証と ID FQDN** <p> FQDN (`secure.aadcdn.microsoftonline-p.com`) を機能させるには、クライアントの Internet Explorer (IE) またはエッジの信頼済みサイト ゾーンに含める必要があります。||信頼済みサイト|
-|16 |**Microsoft Teams FQDN** <p> Internet Explorer または Microsoft Edge を使用している場合は、最初にサード パーティの cookie を有効にし、信頼済みサイトに (スイート製品全体の FQDN、CDN、および 14 行目に記載されているテレメトリに加え) Teams の FQDN を追加する必要があります。詳細については、「[Microsoft Teams の既知の問題](/microsoftteams/known-issues)」を参照してください。||信頼済みサイト|
+|16|**Microsoft Teams FQDN** <p> Internet Explorer または Microsoft Edge を使用している場合は、最初にサード パーティの cookie を有効にし、信頼済みサイトに (スイート製品全体の FQDN、CDN、および 14 行目に記載されているテレメトリに加え) Teams の FQDN を追加する必要があります。詳細については、「[Microsoft Teams の既知の問題](/microsoftteams/known-issues)」を参照してください。||信頼済みサイト|
 |17 |**Sharepoint Online と OneDrive for Business FQDN** <p> 「\<tenant\>」が入ったすべての FQDN (「.sharepoint.com」) を機能させるには、クライアントの IE または Edge の信頼済みサイト ゾーンに含める必要があります。スイート製品全体の FQDN、CDN、および 14 行目に記載されているテレメトリに加えて、これらのエンドポイントも追加する必要があります。||信頼済みサイト|
 |18 |**Yammer**  <br> Yammer はブラウザーでのみ利用でき、認証されたユーザーはプロキシを経由する必要があります。Yammer のすべての FQDN をさせるには、クライアントの IE またはエッジの信頼済みサイト ゾーンに含める必要があります。||信頼済みサイト|
 |19|[Azure AD Connect](/azure/active-directory/hybrid/) を使用して、オンプレミスのユーザー アカウントを Azure AD に同期します。|詳細については、「[ハイブリッド ID で必要なポートとプロトコル](/azure/active-directory/hybrid/reference-connect-ports)」、「[Azure AD の接続のトラブルシューティング](/azure/active-directory/hybrid/tshoot-connect-connectivity)」、および「[Azure AD Connect Health エージェントのインストール](/azure/active-directory/hybrid/how-to-connect-health-agent-install#outbound-connectivity-to-the-azure-service-endpoints)」を参照してください。|送信サーバーのみのトラフィック|

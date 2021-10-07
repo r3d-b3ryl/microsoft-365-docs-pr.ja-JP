@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: a5b03b3c-37dd-429e-8e9b-2c1b25031794
@@ -17,12 +17,12 @@ ms.collection:
 description: 管理者は、管理者 (EOP) で使用される一括苦情レベル (BCL) Exchange Online Protectionできます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 11f884ec6b32795deba09c0f1ba88055a6422e9b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 93eed15773acc505b0106510d3774d862c50e67a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192380"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60149780"
 ---
 # <a name="bulk-complaint-level-bcl-in-eop"></a>EOP のバルク 苦情レベル (BCL)
 
@@ -38,8 +38,6 @@ Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Pro
 バルク メールは、送信パターン、コンテンツの作成、受信者の取得方法によって異なります。 適切なバルク メール配信者は、関連するコンテンツを含む望ましいメッセージをサブスクライバーに送信します。 このようなメッセージが受信者の苦情につながることはあまりありません。 他のバルク メール業者は、スパムによく似た未承諾のメッセージを送りつけ、多くの受信者の苦情を生んでいます。 バルク メールのメッセージは、バルク メールまたはグレー メールと呼ばれる。
 
  スパム フィルターは、BCL しきい値 (既定値または指定した値) に基づいてメッセージをバルク メールとしてマークし、メッセージに対して指定されたアクションを実行します (既定のアクションは、受信者の迷惑メール フォルダーにメッセージを配信します)。  詳細については、「 [スパム](configure-your-spam-filter-policies.md) 対策ポリシーを構成する」および「迷惑メールとバルク メールの違い」 [を参照してください。](what-s-the-difference-between-junk-email-and-bulk-email.md)
-
-テナント許可/ブロック一覧を使用して、バルク メール フィルターの例外を構成できます。 指定されたドメインの送信者からのメッセージは、スパム対策ポリシーのバルク メールスパム フィルターの評決に対するアクションを受信しません。 詳細については、「Manage [the Tenant Allow/Block List」を参照してください](tenant-allow-block-list.md)。
 
 BCL のしきい値を次の表に示します。
 

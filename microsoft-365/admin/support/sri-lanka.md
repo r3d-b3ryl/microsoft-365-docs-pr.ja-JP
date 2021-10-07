@@ -9,15 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-localization_priority: Normal
+ms.localizationpriority: medium
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a0720cdccaacd3432d15ed254b00a8c9fb2852da
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e310c7cc38070203e8652a7f9752a558dd80f7f6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212974"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151520"
 ---
 # <a name="contact-support-for-sri-lanka"></a>スリランカのサポートに問い合わせ
 

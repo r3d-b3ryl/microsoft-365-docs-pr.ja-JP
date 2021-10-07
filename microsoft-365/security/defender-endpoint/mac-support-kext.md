@@ -2,15 +2,13 @@
 title: macOS の Microsoft Defender for Endpoint でのカーネル拡張機能の問題のトラブルシューティング
 description: macOS の Microsoft Defender for Endpoint のカーネル拡張機能関連の問題のトラブルシューティングを行います。
 keywords: microsoft、 defender、 Microsoft Defender for Endpoint, mac, kernel, extension
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9ca412a54fb94fd9835b30d6b9b6092dc4e79015
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9a6486985b0c6f0e1069c30889621d730361d65b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214994"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152156"
 ---
 # <a name="troubleshoot-kernel-extension-issues-in-microsoft-defender-for-endpoint-on-macos"></a>macOS の Microsoft Defender for Endpoint でのカーネル拡張機能の問題のトラブルシューティング
 

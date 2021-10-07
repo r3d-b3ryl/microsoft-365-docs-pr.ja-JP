@@ -2,15 +2,13 @@
 title: macOS のデバイスコントロール
 description: Usb デバイスなどのリムーバブル 記憶域からの脅威を軽減するために Microsoft Defender for Endpoint on Mac を構成する方法について説明します。
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, device, control, usb, リムーバブル, メディア
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: security
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 612c9a717ae10c97c91a183418e36fa87e2f7ba8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1be1598f1ff960a90e65de13ead5d1fd79b63173
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215014"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150110"
 ---
 # <a name="device-control-for-macos"></a>macOS のデバイスコントロール
 
@@ -174,7 +172,7 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
-|**Key**|permission|
+|**Key**|アクセス許可|
 |**データ型**|文字列の配列|
 |**指定可能な値**|none <p> read <p> write <p> execute|
 |
@@ -207,7 +205,7 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
-|**Key**|permission|
+|**Key**|アクセス許可|
 |**データ型**|文字列の配列|
 |**指定可能な値**|既定のアクセス [許可レベルと同じ](#default-permission-level)|
 |
@@ -234,7 +232,7 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
-|**Key**|permission|
+|**Key**|アクセス許可|
 |**データ型**|文字列の配列|
 |**指定可能な値**|既定のアクセス [許可レベルと同じ](#default-permission-level)|
 |
@@ -263,7 +261,7 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
-|**Key**|permission|
+|**Key**|アクセス許可|
 |**データ型**|文字列の配列|
 |**指定可能な値**|既定のアクセス [許可レベルと同じ](#default-permission-level)|
 |
@@ -403,7 +401,7 @@ mdatp device-control removable-media devices list
 
 上記の例では、デバイスに配信されたデバイス制御ポリシーに従って、接続されているリムーバブル メディア デバイスが 1 つしか接続され、アクセス許可が `read` `execute` 付与されています。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [Intune のデバイス制御ポリシーの例](mac-device-control-intune.md)
 - [JAMF のデバイス制御ポリシーの例](mac-device-control-jamf.md)

@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - m365solution-mip
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: データ分類ダッシュボードを使用すると、組織内で検出、分類された機密データの量を確認できます。
-ms.openlocfilehash: 41dda8573b66fa217fb92b0ee179de2cad9bc861
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2e9d9a2581a5a2dd94dbfa32e3105486999f4b6b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176000"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60153128"
 ---
 # <a name="learn-about-data-classification"></a>データ分類について
 

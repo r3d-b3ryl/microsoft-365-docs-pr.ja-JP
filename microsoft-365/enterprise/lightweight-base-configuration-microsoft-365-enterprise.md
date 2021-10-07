@@ -9,7 +9,7 @@ ms.date: 11/14/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -19,12 +19,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: このテスト ラボ ガイドを使用して、エンタープライズ向けテスト環境をテストMicrosoft 365作成します。
-ms.openlocfilehash: 0b8e0a71c8708d2faec0e263c220e3f3d91931f3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 742fc93b64d2e3c1d858931eb7dbc591ebcd8e9d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59210734"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152720"
 ---
 # <a name="the-lightweight-base-configuration"></a>軽量な基本構成
 

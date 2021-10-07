@@ -6,18 +6,18 @@ manager: laurawi
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
 description: Exchange 2010 はサポートの終了に達しました。 この計画ロードマップを使用して、Exchange Onlineまたは新しいバージョンのExchange Server準備します。
-ms.openlocfilehash: 14875c793380c509c578d86d2d835596fa57cc73
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b1b4c1244d195f62261f0abc9cfaa4093beeb22f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218554"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150836"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Exchange 2010 のサポート終了のロードマップ
 
@@ -34,7 +34,7 @@ Exchange Server 2010 年 10 月 **13** 日にサポートが終了しました�
 - サーバーがセキュリティ侵害に対して脆弱になる可能性のある脆弱性に対するセキュリティ修正。
 - タイム ゾーンの更新。
 
-2010 Exchangeのインストールは、この日付以降も実行されます。 ただし、上記の変更により、できるだけ早く Exchange 2010 から移行することを強く推奨します。
+現在インストールされている Exchange 2010 は、この日付以降も引き続き 実行できます。 ただし、上記の変更により、できるだけ早く Exchange 2010 から移行することを強く推奨します。
 
 サポートの終了に近付く方法の詳細については[、「2010](upgrade-from-office-2010-servers-and-products.md)サーバーとクライアントからのアップグレードに役立つリソースOfficeを参照してください。
 
@@ -92,7 +92,7 @@ Microsoft 365機能とエクスペリエンスを最初に取得し、組織が�
 
 ****
 
-|移行オプション|組織のサイズ|Duration|
+|移行オプション|組織のサイズ|期間|
 |---|---|---|
 |カットオーバー移行|シート数が 150 未満|1 週間以下|
 |最小限のハイブリッド移行|シート数が 150 未満|数週間以下|

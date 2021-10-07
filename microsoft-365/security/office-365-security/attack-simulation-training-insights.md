@@ -6,18 +6,18 @@ manager: dansimp
 audience: ITPro
 ms.topic: conceptual
 ms.prod: m365-security
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: 管理者は、Microsoft 365 Defender ポータルでの攻撃シミュレーション トレーニングが従業員にどのように影響するかを学習し、シミュレーションとトレーニングの結果から分析情報を得る方法について説明します。
 ms.technology: mdo
-ms.openlocfilehash: 725b5c0310d4412f0901526a8111c686f69898a2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9376ef78ef6349bbd595ec0c48fccd394e0cd869
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163540"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154355"
 ---
 # <a name="gain-insights-through-attack-simulation-training"></a>攻撃シミュレーション トレーニングを通して洞察を得る
 

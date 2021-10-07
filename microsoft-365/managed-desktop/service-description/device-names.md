@@ -6,17 +6,17 @@ author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: adf4809e0d8dc29f170475435b19092abf2062fd
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: aaf364d4244afaff86f532486597e864cd77209b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218444"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150368"
 ---
 # <a name="device-names"></a>デバイス名
 

@@ -7,19 +7,19 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、セキュリティ & コンプライアンス センターのメール フロー ダッシュボードで配信不可の詳細レポートを使用して、組織内の送信者からの配信不可レポート (NDRs またはバウンス メッセージとも呼ばれる) で最も頻繁に発生するエラー コードを監視する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 02b745943b57965941e38c4e5c5ec6ae503972ec
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: 00efa42dbe9f3ca119d407c74d3711d99d6c0d5c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988525"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154388"
 ---
 # <a name="non-delivery-report-in-the-security--compliance-center"></a>セキュリティ コンプライアンス センターの配信&レポート
 
@@ -66,6 +66,6 @@ ms.locfileid: "59988525"
 
 ![[配信不可] レポートの [詳細] テーブル ビューで行を選択した後の詳細の飛び出し。](../../media/mfi-non-delivery-report-details-flyout.png)
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 メール フロー ダッシュボードの他の分析情報の詳細については、「Security & コンプライアンス センター」 [を参照してください](mail-flow-insights-v2.md)。

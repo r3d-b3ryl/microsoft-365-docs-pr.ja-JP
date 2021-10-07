@@ -9,17 +9,17 @@ ms.date: 11/19/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: このテスト ラボ ガイドを使用して、Intune デバイス コンプライアンス ポリシーをエンタープライズ テスト環境Microsoft 365に追加します。
-ms.openlocfilehash: 590af404a5c026cfe82afb314eec395aaa0560d3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ec73211a21e9e064b729b93d9e88b7c5c69b21fe
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221069"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150812"
 ---
 # <a name="device-compliance-policies-for-your-microsoft-365-for-enterprise-test-environment"></a>エンタープライズ テスト環境Microsoft 365デバイス コンプライアンス ポリシー
 

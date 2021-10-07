@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: v-jweston
 author: jweston-1
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0ca1bc84d5e8cf5498ed3dc19cba3928823796ff
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: aa40768a2ed11c112bd6fc57575dce3e4db1146a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59190981"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152264"
 ---
 # <a name="remediation-activity-methods-and-properties"></a>修復アクティビティのメソッドとプロパティ
 
@@ -61,7 +61,7 @@ completerEmail|String|修復アクティビティが手動で誰かが完了し�
 completerId|String|修復アクティビティが手動で誰かが完了した場合、この列にはオブジェクト ID が含まれる
 completionMethod|String|修復アクティビティは、"完了済みとしてマーク" を選択したユーザーが "自動的に" (すべてのデバイスにパッチが適用されている場合) または "手動" で完了できます。
 createdOn|DateTime|この修復アクティビティが作成された時刻
-説明|String|この修復アクティビティの説明
+description|String|この修復アクティビティの説明
 dueOn|DateTime|この修復アクティビティの作成者セットの期限
 fixedDevices||固定されているデバイスの数
 id|String|この修復アクティビティの ID

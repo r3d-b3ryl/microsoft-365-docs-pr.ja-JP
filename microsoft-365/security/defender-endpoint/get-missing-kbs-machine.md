@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0b2305472f19ac0424861a30034c2fdd45bd753c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fd8bb1d004259a3c3f8595b4686e5c78266495c2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222138"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152252"
 ---
 # <a name="get-missing-kbs-by-device-id"></a>デバイス ID で不足している KB を取得する
 
@@ -54,7 +54,7 @@ GET /api/machines/{machineId}/getmissingkbs
 
 名前|型|説明
 :---|:---|:---
-Authorization | 文字列 | ベアラー {token}。 **必須**
+Authorization | String | ベアラー {token}。 **必須**。
 
 ## <a name="request-body"></a>要求本文
 
@@ -99,7 +99,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/2339ad14a01bd0299afb93
 }
 ```
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [リスクベースの脅威&の管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [脅威&ソフトウェア インベントリ](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

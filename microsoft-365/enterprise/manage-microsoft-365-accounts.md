@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
@@ -23,16 +23,16 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: ユーザー アカウントを管理するMicrosoft 365を確認します。
-ms.openlocfilehash: 7a21ed12101f3aaa8323c62d2c15ae30860cd041
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7f75c74984ce58a8b403f01948075b185047f260
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221034"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150776"
 ---
 # <a name="manage-microsoft-365-user-accounts"></a>ユーザー Microsoft 365を管理する
 
-構成に応Microsoft 365、さまざまな方法でユーザー アカウントを管理できます。 ユーザー アカウントは[、Microsoft 365 管理センター](../admin/add-users/index.yml) [、PowerShell、Active](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)Directory ドメイン サービス (AD DS)、または Azure Active Directory (Azure AD) 管理ポータルで管理できます。 
+構成に応Microsoft 365、さまざまな方法でユーザー アカウントを管理できます。 ユーザー アカウントは[、Microsoft 365 管理センター](/admin) [、PowerShell、Active](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)Directory ドメイン サービス (AD DS)、または Azure Active Directory (Azure AD) 管理ポータルで管理できます。 
 
 アカウントを購入すると<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365、Microsoft 365 管理センター</a> PowerShell を使用してアカウントを管理できます。 クラウド ID を管理する場合、組織内のすべてのユーザーには、個別のユーザー アカウント名とパスワードがあります。 オンプレミスインフラストラクチャと統合し、Microsoft 365 とユーザー アカウントを同期する場合は、Azure AD Connect を使用してシングル サインオン (SSO) 機能の ID とパスワードの同期を提供できます。
   
@@ -60,7 +60,7 @@ ms.locfileid: "59221034"
     
 次の表に、さまざまなアカウント管理ツールの一覧を示します。
     
-|ツール|Notes|
+|ツール|メモ|
 |:-----|:-----|
 |Microsoft 365 管理センター  <br/> |[ユーザーを個別または一括で追加する](../admin/add-users/add-users.md) <br/>  ユーザー アカウントを追加および変更する簡単な Web インターフェイスを提供します。  <br/>  ディレクトリ同期が有効になっている場合は、ユーザーを変更することはできません (場所とライセンスの割り当てを設定できます)。  <br/>  SSO オプションでは使用できません。  <br/> |
 |Windows PowerShell  <br/> |[管理Microsoft 365を使用Windows PowerShell](./manage-microsoft-365-with-microsoft-365-powershell.md) <br/>  カスタム スクリプトを使用して、一括ユーザーにユーザーをWindows PowerShellできます。  <br/>  アカウントの作成方法に関係なく、場所とライセンスをアカウントに割り当てる場合に使用できます。  <br/> |
@@ -78,6 +78,6 @@ ms.locfileid: "59221034"
   
 ## <a name="see-also"></a>関連項目
 
-[Microsoft 365 管理センター](../admin/add-users/index.yml)
+[Microsoft 365 管理センター](/admin)
 
 [PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)

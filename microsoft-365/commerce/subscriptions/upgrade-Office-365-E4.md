@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid: MET150
 description: E4 サブスクリプションからアップグレードするOffice 365します。
 ms.date: 08/14/2020
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5741588fddcddbfca47b39cada2fed7dca56afd8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1b909a6a40359e5d3f73b79bfd28ddff1037ea53
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180136"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151280"
 ---
 # <a name="upgrade-from-an-office-365-e4-subscription"></a>E4 サブスクリプションOffice 365アップグレードする
 
@@ -71,7 +71,7 @@ ms.locfileid: "59180136"
 
 ## <a name="upgrade-your-plan-by-using-the-upgrade-tab"></a>[アップグレード] タブを使用してプランをアップグレードする
 
-### <a name="before-you-begin"></a>始める前に
+### <a name="before-you-begin"></a>はじめに
 
 ここでは、操作を始める前に知っておく必要がある重要な点について説明します。
 

@@ -9,7 +9,7 @@ ms.date: 10/8/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -17,16 +17,16 @@ ms.collection:
 - M365-security-compliance
 description: カスタム Office 365 Advanced Message Encryptionを使用してメールの有効期限を設定することで、電子メールのセキュリティを拡張するために使用します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f936ffa62f31e47f51fc1bcb2765195b0ea809af
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1213ecf48ee9bd2e04accdd13aaf3ecd74d3faba
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216684"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152936"
 ---
 # <a name="set-an-expiration-date-for-email-encrypted-by-office-365-advanced-message-encryption"></a>Office 365 Advanced Message Encryption 機能を使って暗号化されたメールの有効期限を設定する
 
-Office 365 Advanced Message Encryptionは[、Microsoft 365 Enterprise E5、Office 365 E5、Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise/home)(非営利スタッフ価格)、Office 365 Enterprise E5 (非営利スタッフ価格)、および Office 365 Education A5 に含まれています。 組織に Office 365 Advanced Message Encryption を含めないサブスクリプションがある場合は、Microsoft 365 E3、Microsoft 365 E3 (非営利スタッフ価格) の Microsoft 365 E5 Compliance SKU アドオン、または Microsoft 365 E3、Microsoft 365 E3 (非営利スタッフ価格)、または Office 365 SKU の Office 365 Advanced Compliance SKU アドオンを使用して購入できます。
+Office 365 Advanced Message Encryptionは[、Microsoft 365 Enterprise E5、Office 365 E5、Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise/home)(非営利スタッフ価格)、Office 365 Enterprise E5 (非営利スタッフ価格)、および Office 365 Education A5 に含まれています。 組織に Office 365 Advanced Message Encryption を含めないサブスクリプションがある場合は、Microsoft 365 E5 Compliance SKU アドオンを使用して Microsoft 365 E3、Microsoft 365 E3 (Nonprofit)スタッフの価格設定Office 365 Advanced Compliance SKU アドオン(Microsoft 365 E3、Microsoft 365 E3(非営利スタッフ価格)、または SKU のOffice 365します。
 
 ユーザーが OME ポータルを使用して暗号化されたメールにアクセスする外部受信者に送信するメールに対して、メッセージの有効期限を使用できます。 Windows PowerShell で有効期限を指定するカスタム ブランド テンプレートを使用して、受信者に OME ポータルを使用して組織から送信された暗号化されたメールを表示して返信を強制します。
 

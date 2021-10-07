@@ -9,18 +9,18 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: インポート ツール d を使用して、複数の保管担当者と関連付けられたデータ ソースをすばやくケースに追加Advanced eDiscovery。
-ms.openlocfilehash: ccb180766df47de39e3deb61faab60396c74bb9e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 97eb2337fb49863a19b8d55a6dd396e51f4ee8d2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164150"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151232"
 ---
 # <a name="import-custodians-to-an-advanced-ediscovery-case"></a>保管担当者をケースにAdvanced eDiscoveryする
 
@@ -87,7 +87,7 @@ CSV カストディアン テンプレートをダウンロードした後、各
 
 保管担当者が検証され、ケースに追加された後、保管担当者に関連付けられている各プライマリ メールボックスと OneDrive アカウントが追加されます。
 
-ただし、保管担当者に関連付けられた他のデータ ソース (SharePoint サイト、Microsoft Teams、Microsoft 365 グループ、Yammer グループなど) が見つからない場合、それらのデータ ソースはいずれも保管担当者に割り当てられていないので、[データ ソース] タブの [カストディアン]の横にある [状態] 列に値が表示されます。 
+ただし、保管担当者に関連付けられた他のデータ ソース (SharePoint サイト、Microsoft Teams、Microsoft 365 グループ、Yammer グループなど) が見つからない場合、それらのデータ ソースはいずれも保管担当者に割り当てられていないので、データ ソースの保管担当者の横にある [状態]列に値が表示されます。 タブ。
 
 カストディアンの検証済みデータ ソースを追加するには、次の方法を実行します。
 

@@ -11,19 +11,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.topic: conceptual
-ms.openlocfilehash: c81d84785404674781e21c7421921aa0a3a8bab0b3bd1a727f555d5cadf1a399
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 843a818ffd3507b55cff3c16d881c5e086efe90d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53806738"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151979"
 ---
 # <a name="manage-endpoint-detection-and-response-capabilities"></a>エンドポイントの検出および応答機能の管理
 

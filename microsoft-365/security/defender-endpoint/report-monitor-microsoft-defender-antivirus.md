@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -17,12 +17,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3f4a0c8fbcfe58a252bb393fdba837e6ecad85ab
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 6c9b334f2da04c3ad55f8c1faedad5f823c2571a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60041650"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151904"
 ---
 # <a name="report-on-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策のレポート
 

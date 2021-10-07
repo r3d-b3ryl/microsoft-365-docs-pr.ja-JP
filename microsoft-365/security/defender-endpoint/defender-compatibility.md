@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 05/06/2021
 ms.technology: mde
-ms.openlocfilehash: 02c6ecefc5d6393508382c436a9fe82e31200b76
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: f4fd2046e9fdeb7e0832577effb8d445232bb543
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533497"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150260"
 ---
 # <a name="antivirus-solution-compatibility-with-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint とのウイルス対策ソリューションの互換性
 

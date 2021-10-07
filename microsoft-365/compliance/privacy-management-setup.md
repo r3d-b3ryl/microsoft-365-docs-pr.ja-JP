@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - M365-privacy-management
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 組織のプライバシー管理を設定し、役割とアクセス許可を設定し、重要な設定を構成する方法について説明します。
-ms.openlocfilehash: 229d4bec78424858cd7034c8953313f8593e90e3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d75054c76a20ec622813d022c9de0218ea5f7b6c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177832"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151028"
 ---
 # <a name="get-started-with-privacy-management-preview"></a>プライバシー管理の開始 (プレビュー)
 
@@ -58,7 +58,7 @@ ms.locfileid: "59177832"
 
 役割グループとアクセスを許可する方法の詳細については、「ユーザーアクセス許可の設定と役割の割り当て [」を参照してください](privacy-management-permissions.md)。
 
-### <a name="manage-settings"></a>設定の管理
+### <a name="manage-settings"></a>設定を管理する
 
 [設定ページには、プライバシー管理のメイン ページの右上隅にある歯車ホイールを使用してアクセスできます。 これにより、プライバシー管理管理者は、匿名化のグローバル設定、電子メール通知など、プライバシー管理全体で重要なプロパティを構成できます。
 

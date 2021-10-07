@@ -9,18 +9,18 @@ ms.date: 10/02/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社がエンタープライズ向けサービスのセキュリティMicrosoft 365使用する方法。
-ms.openlocfilehash: 581314b34ab8f60533f1e2de99d4d1097086d1a0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f4d35ef3c5b862b42bf0a995f25b29c26eedd408
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218644"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152744"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Contoso Corporation のMicrosoft 365セキュリティの概要
 

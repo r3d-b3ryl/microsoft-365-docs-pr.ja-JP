@@ -9,18 +9,18 @@ ms.date: 10/02/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社がエンタープライズ向け Microsoft 365の情報保護機能を使用して、クラウド内のデジタル資産をセキュリティで保護する方法について説明します。
-ms.openlocfilehash: c61d6ee0a3f577d27c306631ea9f57d8cb3d7c2a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1a1130329f09868d6f235b575ff2d3128f538154
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218694"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152756"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Contoso Corporation の情報保護
 

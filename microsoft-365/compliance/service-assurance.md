@@ -9,19 +9,19 @@ ms.date: 6/29/2018
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - BCS160
 - MET150
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: サードパーティの監査をダウンロードし、Microsoft が顧客データを安全に保つ方法を確認し、OFFICE 365 を使用するときに ISO、HIPAA、FINRA、および FedRAMP に準拠する方法を知っています。
-ms.openlocfilehash: a6e6de646df2048d880ce099a90c793d11aaff89
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: df0cf99a3cfba0c6f5358fb48c45cfd3da62799e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216464"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150992"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターのサービス アシュアランス
 

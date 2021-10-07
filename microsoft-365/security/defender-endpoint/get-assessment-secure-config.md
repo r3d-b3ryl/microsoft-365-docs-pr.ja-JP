@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: v-jweston
 author: jweston-1
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4d8010cafa9ea0195e4c77298bea2098eab5c594
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 01e2e312af0158aa2d55ae9d8589712eef618f51
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221525"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150076"
 ---
 # <a name="export-secure-configuration-assessment-per-device"></a>デバイスごとのセキュリティで保護された構成評価をエクスポートする
 
@@ -70,7 +70,7 @@ ms.locfileid: "59221525"
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 ---|---|---
 アプリケーション|Vulnerability.Read.All|\'脅威と脆弱性管理の脆弱性情報の読み取り\'
-委任 (職場または学校アカウント)|脆弱性。読み取り|\'脅威と脆弱性管理の脆弱性情報の読み取り\'
+委任 (職場または学校のアカウント)|脆弱性。読み取り|\'脅威と脆弱性管理の脆弱性情報の読み取り\'
 
 ### <a name="13-url"></a>1.3 URL
 
@@ -107,7 +107,7 @@ IsApplicable|bool|構成またはポリシーが適用可能かどうかを示�
 IsCompliant|bool|構成やポリシーが正しく構成されているかどうかを示します|false
 IsExpectedUserImpact|bool|構成が適用される場合にユーザーに影響を与えるかどうかを示します。|true
 OSPlatform|string|デバイスで実行されているオペレーティング システムのプラットフォーム。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。 詳細については、「tvm でサポートされるオペレーティング システムとプラットフォーム」を参照してください。|Windows10
-RbacGroupName|string|役割ベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "割り当てられていない" になります。 組織に RBAC グループが含まれている場合、値は "None" になります。|Servers
+RbacGroupName|string|役割ベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "割り当てられていない" になります。 組織に RBAC グループが含まれている場合、値は "None" になります。|サーバー
 RecommendationReference|string|このソフトウェアに関連する推奨事項 ID への参照。|sca-_-scid-20000
 Timestamp|string|デバイスで構成が最後に表示された時刻|2020-11-03 10:13:34.8476880
 |
@@ -233,7 +233,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 ---|---|---
 アプリケーション|Vulnerability.Read.All|\'"脅威と脆弱性の管理" の脆弱性情報を読む\'
-委任 (職場または学校アカウント)|脆弱性。読み取り|\'"脅威と脆弱性の管理" の脆弱性情報を読む\'
+委任 (職場または学校のアカウント)|脆弱性。読み取り|\'"脅威と脆弱性の管理" の脆弱性情報を読む\'
 
 ### <a name="23-url"></a>2.3 URL
 

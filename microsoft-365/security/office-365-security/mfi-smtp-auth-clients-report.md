@@ -7,19 +7,19 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、セキュリティ & コンプライアンス センターのメール フロー ダッシュボードで SMTP Auth インサイトとレポートを使用して、認証された SMTP (SMTP AUTH) を使用して電子メール メッセージを送信する組織内の電子メール送信者を監視する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 950661664479e38b8c9094c52908ee23ba34e66c
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: 30e3ff41068b80ad7c308fcb8163cb2748118e11
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988765"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154424"
 ---
 # <a name="smtp-auth-clients-insight-and-report-in-the-security--compliance-center"></a>SMTP Auth クライアントの分析情報とレポート (セキュリティ & コンプライアンス センター)
 
@@ -93,6 +93,6 @@ ms.locfileid: "59988765"
 
 レポート ビューに戻る場合は、[レポートの表示] **をクリックします**。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 メール フロー ダッシュボードの他の分析情報の詳細については、「Security & コンプライアンス センター」 [を参照してください](mail-flow-insights-v2.md)。

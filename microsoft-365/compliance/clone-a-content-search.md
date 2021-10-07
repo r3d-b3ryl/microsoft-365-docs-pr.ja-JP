@@ -9,7 +9,7 @@ ms.date: 4/26/2017
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MED150
@@ -18,12 +18,12 @@ ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 ms.custom:
 - seo-marvel-apr2020
 description: この記事の PowerShell スクリプトを使用して、コンプライアンス センターの既存のコンテンツ検索をすばやく複製Office 365またはMicrosoft 365。
-ms.openlocfilehash: 80dd6911f387a7912d92bfbcfac3c94e6ee804eb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 763bd6ac49841e5b55bbbc187631ef74426d9d0a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164078"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60153212"
 ---
 # <a name="clone-a-content-search"></a>コンテンツ検索をコピーする
 

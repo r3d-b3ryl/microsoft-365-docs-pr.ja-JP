@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: b286f853-b484-4af0-b01f-281fffd85e7a
@@ -18,12 +18,12 @@ ms.custom:
 description: 管理者は、スパム対策ポリシー (EOP) で使用できる高度なスパム フィルター (ASF) 設定Exchange Online Protectionできます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 012eec6aea888cc68a11f585e88b0d610382cc53
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: c3bb500ff27ca4d9dfe3b17e42ba1c254962a32c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59399288"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154340"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>EOP の高度なスパム フィルター (ASF) 設定
 
@@ -59,7 +59,7 @@ ASF 設定ごとに、スパム対策ポリシーで次のオプションを使�
   - **既定の X ヘッダー テキスト (*AddXHeader*) を** 追加する: X ヘッダー値 `X-CustomSpam: This message was filtered by the custom spam filter option` がメッセージに追加されます。 受信トレイ ルールまたはメール フロー ルール (トランスポート ルールとも呼ばれる) でこの値を使用すると、メッセージの配信に影響を与える可能性があります。
   - **Bcc メッセージの送信 (*BccMessage*)**: 指定した電子メール アドレス *(PowerShell の TestModeBccToRecipients* パラメーター値) がメッセージの Bcc フィールドに追加され、メッセージは追加の BCC 受信者に配信されます。 このポータルMicrosoft 365 Defender、複数の電子メール アドレスをセミコロン (;)) で区切ります。 PowerShell では、複数の電子メール アドレスをコンマで区切ります。
 
-  **注**:
+  **注意**:
 
   - テスト モードは、次の ASF 設定では使用できません。
     - **条件付き送信者 ID フィルター: ハード失敗** (*MarkAsSpamFromAddressAuthFail*)

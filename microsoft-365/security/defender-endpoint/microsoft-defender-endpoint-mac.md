@@ -3,15 +3,13 @@ title: Microsoft Defender for Endpoint on Mac
 ms.reviewer: ''
 description: Mac で Microsoft Defender for Endpoint をインストール、構成、更新、および使用する方法について説明します。
 keywords: microsoft、 defender、 Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamf, macos, big sur, catalina, mojave, mde for mac
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -19,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 827ea407d51f657914161056d97be648b3282190
-ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
+ms.openlocfilehash: 4fe0d1b073a2efb14b8b771a2786889cbaa8e892
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60124771"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60149888"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender for Endpoint on Mac
 
@@ -105,6 +103,10 @@ Microsoft Defender for Endpoint on Mac では、次のいずれかの Microsoft 
 > [!NOTE]
 > 対象となるライセンスユーザーは、最大 5 つの同時デバイスで Microsoft Defender for Endpoint を使用できます。
 > Microsoft Defender for Endpoint は、ユーザー (CSP) から購入クラウド ソリューション プロバイダー利用できます。 CSP を介して購入した場合、Microsoft ボリューム ライセンスの提供は必要とされません。
+
+### <a name="configuring-exclusions"></a>除外の構成
+
+Microsoft Defender に除外を追加する場合は、ユーザーの一般的な除外の間違いを[念頭に置Microsoft Defender ウイルス対策](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus)
 
 ### <a name="network-connections"></a>ネットワーク接続
 

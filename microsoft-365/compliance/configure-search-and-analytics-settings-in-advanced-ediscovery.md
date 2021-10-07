@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ms.custom: seo-marvel-mar2020
 description: ケースAdvanced eDiscoveryすべてのレビュー セットに適用されるユーザー設定を構成します。 これには、分析と光学式文字認識の設定が含まれます。
-ms.openlocfilehash: 4d46ca4dfb5897c7b262858ab7c955221016e3c7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 65175950a430dd6b43cac207e16a17cf02d1bbbf
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176056"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60153200"
 ---
 # <a name="configure-search-and-analytics-settings-in-advanced-ediscovery"></a>[検索と分析] の設定を構成Advanced eDiscovery
 
@@ -90,7 +90,7 @@ ms.locfileid: "59176056"
 
 - 他のデータ ソース (保管担当者に関連付けされていないコンテンツで、保管されていないデータ ソースのケースに追加されたコンテンツ) がレビュー セットに追加される場合。
 
-データをレビュー セットに追加すると、画像テキストを確認、検索、タグ付け、分析できます。 抽出されたテキストは、レビュー セットで選択したイメージ ファイルのテキスト ビューアーで表示できます。 詳しくは、次のトピックを参照してください。
+データをレビュー セットに追加すると、画像テキストを確認、検索、タグ付け、分析できます。 抽出されたテキストは、レビュー セットで選択したイメージ ファイルのテキスト ビューアーで表示できます。 詳細については、以下を参照してください。
 
 - [カストディアン データの詳細なインデックス処理](indexing-custodian-data.md)
 

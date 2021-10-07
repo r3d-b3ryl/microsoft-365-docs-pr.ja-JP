@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: ランサムウェア、人が操作するランサムウェア、人間が操作するランサムウェア、HumOR、強要攻撃、ランサムウェア攻撃、暗号化、暗号ウイルス学
 description: Microsoft 365 Defender とそのセキュリティ信号ソースを使用して、ランサムウェアの攻撃から Microsoft 365 リソースを保護します。
-ms.openlocfilehash: 09b2e7930d6fbe0295dcf8343a559a19b680f547
-ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
+ms.openlocfilehash: c290d8d0c614f282cbacf4829da039dd14e336db
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59481098"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60149552"
 ---
 # <a name="step-2-deploy-attack-detection-and-response"></a>手順 2. 攻撃検出および対応を展開する
 

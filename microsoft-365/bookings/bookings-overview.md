@@ -6,15 +6,15 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 47403d64-a067-4754-9ae9-00157244c27d
 description: Web ベースの予約カレンダーを含み、Outlook と統合してスタッフの予定表を最適化し、顧客に予定を柔軟に予約できる Microsoft Bookings アプリの概要を示します。
-ms.openlocfilehash: c1bc36ea7724cdb29394b60fafa0178a08aab117
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0db665a0eb080d76bd90f24887ca7043b00b0dde
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212894"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60153680"
 ---
 # <a name="microsoft-bookings"></a>Microsoft Bookings
 
@@ -33,7 +33,7 @@ Bookings には、主に 3 つのコンポーネントがあります。
 
 - 会社用モバイル アプリを使用して、Bookings カレンダーの所有者や管理者は全予約の閲覧、顧客リストと連絡先情報へのアクセス、外出先での手動予約を行うことができます。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 Microsoft Bookings は、次のサブスクリプションで利用できます。
 

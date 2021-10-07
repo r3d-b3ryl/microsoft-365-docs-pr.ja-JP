@@ -10,15 +10,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.custom: commerce_billing_payinfo
-localization_priority: Normal
+ms.localizationpriority: medium
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3b4c7e9b7519c2fc0cdc6420093076acbaf88912
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 434f42d23b33408ddf5ffb7b7c18a16205469dff
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219083"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151316"
 ---
 # <a name="payment-information-for-netherlands"></a>オランダの支払い情報
 

@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
@@ -22,18 +22,18 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: ユーザー アカウントのパスワードをMicrosoft 365する方法について説明します。
-ms.openlocfilehash: 85d3c42a7aca977472e44fce63af3968fc8e9705
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6a0d4298f3d6c46ab067795bccf01123605ce1aa
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221010"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150740"
 ---
 # <a name="manage-microsoft-365-user-account-passwords"></a>ユーザー Microsoft 365パスワードの管理
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-ID 構成にMicrosoft 365、ユーザー アカウント のパスワードを管理できます。 ユーザー アカウントは[、Microsoft 365 管理センター、Active](../admin/add-users/index.yml)Directory ドメイン サービス (AD DS)、または Azure Active Directory (Azure AD) 管理センターで管理できます。
+ID 構成にMicrosoft 365、ユーザー アカウント のパスワードを管理できます。 ユーザー アカウントは[、Microsoft 365 管理センター、Active](/admin)Directory ドメイン サービス (AD DS)、または Azure Active Directory (Azure AD) 管理センターで管理できます。
 
 ## <a name="plan-for-where-and-how-you-will-manage-your-user-account-passwords"></a>ユーザー アカウントのパスワードを管理する場所と方法を計画する
 
@@ -43,7 +43,7 @@ ID 構成にMicrosoft 365、ユーザー アカウント のパスワードを�
 
 ユーザー アカウントのパスワードは、次の場所で管理します。
 
-- [Microsoft 365 管理センター](../admin/add-users/index.yml)
+- [Microsoft 365 管理センター](/admin)
 - Azure AD管理センター
     
 ### <a name="hybrid"></a>ハイブリッド

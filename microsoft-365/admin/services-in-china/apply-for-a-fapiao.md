@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ search.appverid:
 description: 中国の 21Vianet が運営する Office 365 で支払いを行った後、Fapiao 要求を 21Vianet Fapiao 管理システムに送信する方法について説明します。
 monikerRange: o365-21vianet
 ms.date: 03/30/2021
-ms.openlocfilehash: 605e1bf001f6c6acb3a8b5044adeb66e110641b0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 59995d7bed5c24b26079dcd6865d5a901c518724
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178584"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60153968"
 ---
 # <a name="apply-for-a-fapiao-for-office-365-operated-by-21vianet"></a>21Vianet が運用するOffice 365 Fapiao を申請する
 
@@ -109,7 +109,7 @@ Fapiao が使用されなき場合、システムは通知を表示し、Fapiao 
   
 ![21Vianet Fapiao 管理システムが使い切れた場合に表示されるエラー メッセージ。](../../media/effe0796-83aa-4a91-a488-15d6f58c01dc.png)
   
-## <a name="faqs"></a>よく寄せられる質問
+## <a name="faqs"></a>FAQ
 
 ### <a name="what-services-can-i-get-from-online-support"></a>オンライン サポートからどのようなサービスを受け取れるか。
 

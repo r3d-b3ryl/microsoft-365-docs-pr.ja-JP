@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +23,12 @@ ms.custom:
 search.appverid: MET150
 description: '[製品] ページに移動して、組織が持つサブスクリプションを確認する方法について学習します。'
 ms.date: 01/21/2021
-ms.openlocfilehash: 9c6870ae7008dee25a8dd6e5a3e2f44e534b0028
-ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
+ms.openlocfilehash: df18228d8b5b551f8c64246c96aa6f397ec13484
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59786001"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60153956"
 ---
 # <a name="what-subscription-do-i-have"></a>取得しているサブスクリプションが不明な場合
 

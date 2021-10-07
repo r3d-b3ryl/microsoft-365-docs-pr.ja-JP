@@ -8,22 +8,23 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:
 - MET150
 description: 基本的なモビリティとセキュリティは、モバイル デバイスのセキュリティ保護と管理に役立ちます。
-ms.openlocfilehash: e2a8661766aa5d5ae7f257cc7c76d67949d9cffe
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: b5c2abf9fe261521d5b22a98dc56abf4885693e6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773945"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60153944"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>基本的なモビリティとセキュリティの機能
 
@@ -102,13 +103,13 @@ Basic Mobility and Security を使用すると、次のデバイスをセキュ�
 
 |**設定名**|**iOS 7.1 以降**|**Android 5 以降**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
-|パスワードを要求|はい|はい|必要|
-|シンプルなパスワードを禁止|必要|いいえ|いいえ|
+|パスワードを要求|はい|はい|はい|
+|シンプルなパスワードを禁止|はい|いいえ|いいえ|
 |英数字のパスワードを要求|はい|いいえ|いいえ|
-|パスワードの最小文字数 |はい|はい|必要|
-|デバイスがワイプされるまでのサインイン失敗回数 |はい|はい|必要|
-|デバイスがロックされるまでのアイドル時間 (分) |はい|はい|必要|
-|パスワードの有効期限 (日) |はい|はい|必要|
+|パスワードの最小文字数 |はい|はい|はい|
+|デバイスがワイプされるまでのサインイン失敗回数 |はい|はい|はい|
+|デバイスがロックされるまでのアイドル時間 (分) |はい|はい|はい|
+|パスワードの有効期限 (日) |はい|はい|はい|
 |パスワードの履歴を記憶して再利用を防止 |はい|はい|はい|
 
 ## <a name="encryption-settings"></a>暗号化の設定
@@ -163,7 +164,7 @@ Basic Mobility and Security を使用すると、次のデバイスをセキュ�
 
 |**設定名**|**iOS 7.1 以降**|**Android 5 以降**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
-|リムーバブル記憶域との接続の禁止 |はい|必要|いいえ|
+|リムーバブル記憶域との接続の禁止 |はい|はい|いいえ|
 |Bluetooth 接続の禁止 |はい|はい|いいえ|
 
 ## <a name="additional-settings"></a>その他の設定
@@ -176,12 +177,12 @@ Basic Mobility and Security を使用すると、次のデバイスをセキュ�
 |RegionRatings|はい|いいえ|
 |MoviesRatings|はい|いいえ|
 |TVShowsRating |はい|いいえ|
-|AppsRatings |必要|いいえ|
-|AllowVoiceDialing |必要|いいえ|
+|AppsRatings |はい|いいえ|
+|AllowVoiceDialing |はい|いいえ|
 |AllowVoiceAssistant |はい|いいえ|
-|AllowAssistantWhileLocked  |必要|いいえ|
+|AllowAssistantWhileLocked  |はい|いいえ|
 |AllowPassbookWhileLocked |はい|いいえ|
-|MaxPasswordGracePeriod |必要|いいえ|
+|MaxPasswordGracePeriod |はい|いいえ|
 |PasswordQuality |いいえ|はい|
 |SystemSecurityTLS  |はい|いいえ|
 |WLANEnabled  |いいえ|いいえ|

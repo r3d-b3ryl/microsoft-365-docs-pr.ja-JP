@@ -8,18 +8,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4779a0c40cd8282d8e05fde84ae72827531810d9
-ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
+ms.openlocfilehash: fcfce563a177dd90e312da2da3bc578ec39b15b5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60124268"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152048"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>エンドポイント用 Microsoft Defender の最小要件
 

@@ -11,7 +11,7 @@ ms.topic: article
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: データ損失防止ポリシーのアラートの定義と管理について説明します。
-ms.openlocfilehash: ad117eb0c5460b90c92c664f0c233b81d1882327
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 601442336cb6ba2a913f3c64eb8345030d0f8209
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59193130"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151100"
 ---
 # <a name="get-started-with-the-data-loss-prevention-alert-dashboard"></a>データ損失防止の警告ダッシュボードを開始する
 
@@ -33,7 +33,7 @@ ms.locfileid: "59193130"
 
 DLP アラートを使用する場合は、「データ損失防止アラート ダッシュボードについて [」を確認する必要があります。](dlp-alerts-dashboard-learn.md)
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 開始する前に、必要な前提条件が満たされていることを確認してください。
 
@@ -52,7 +52,7 @@ Teams [DLP](dlp-microsoft-teams.md)の対象となるエンドポイント[DLP](
 - Microsoft 365 (E5)
 - Office 365 (E5)
 - 高度なコンプライアンス (E5) アドオン
-- Microsoft 365 E5/A5 情報保護とガバナンス
+- Microsoft 365 E5/A5 情報の保護とガバナンス
 - Microsft 365 E5/A5 コンプライアンス
 
 ### <a name="licensing-for-alert-configuration-options"></a>アラート構成オプションのライセンス

@@ -9,7 +9,7 @@ ms.date: 6/29/2018
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 2018 Office 365 Message Encryption (OME) ビューアー アプリは、Android ストアと Apple ストアから削除されました。
-ms.openlocfilehash: dc12eaa783c43fb80fb8ecbe984ecbcd0cda315f33b2cd1d3bc65e8932d77bda
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0eded17f4da5347e1f1a88031a780cee5f8b1dee
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53892089"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152984"
 ---
 # <a name="deprecating-message-encryption-viewer-app"></a>メッセージ暗号化ビューアー アプリの非推奨
 
@@ -48,7 +48,7 @@ OME の新しいバージョンでは、保護された電子メール メッセ
   
 ## <a name="can-i-still-use-the-previous-version-of-office-365-message-encryption"></a>以前のバージョンのファイルを引き続き使用Office 365 Message Encryption
 
-Office 365 Message Encryption の以前のバージョンは現時点では廃止されませんが、新しいバージョンの Office 365 Message Encryption は大幅に強化されました。これにより、ユーザーが Outlook (デスクトップ、モバイル、および Web) で保護されたメッセージを直接読み取る機能を含め、機密データを暗号化し、権利を簡単に保護できます。 
+Office 365 Message Encryption の以前のバージョンは現時点では廃止されませんが、Office 365 Message Encryption の新しいバージョンが大幅に強化され、暗号化が容易になり、ユーザーが保護されたメッセージを読み取る機能など、すべてのデバイスで機密データを暗号化して権利を保護できます。ctly in Outlook (デスクトップ、モバイル、および Web)。 
   
 ## <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>この変更の準備に必要な操作
 

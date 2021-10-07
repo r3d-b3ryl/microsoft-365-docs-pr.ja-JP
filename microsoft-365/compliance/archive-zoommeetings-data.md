@@ -9,15 +9,15 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 管理者は、Veritas Zoom Meetings からデータをインポートおよびアーカイブするコネクタを設定して、Microsoft 365。 これにより、Microsoft 365 のサード パーティデータ ソースからデータをアーカイブし、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティ データを管理できます。
-ms.openlocfilehash: 1ee2ede9005f502523a3b298248b0bf1fb1716d6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 640cfddc2992b0327433a91c81294128054f7ca1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164231"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60153248"
 ---
 # <a name="set-up-a-connector-to-archive-zoom-meetings-data"></a>ズーム 会議データをアーカイブするコネクタをセットアップする
 
@@ -39,7 +39,7 @@ Zoom Meetings データをユーザー メールボックスに格納した後�
 
 4. コネクタは、手順 3 で説明したように *、Email* プロパティと自動ユーザー マッピングの値を使用して、変換された会議アイテムを特定のユーザーのメールボックスにインポートします。 Zoom **Meetings** という名前の受信トレイ フォルダー内の新しいサブフォルダーがユーザー のメールボックスに作成され、そのフォルダーに会議アイテムがインポートされます。 コネクタは、Email プロパティの値を使用して *これを行* います。 すべての会議アイテムには、このプロパティが含まれるので、会議のすべての参加者の電子メール アドレスが設定されます。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 - Microsoft コネクタ用の Veritas Merge1 アカウントを作成します。 このアカウントを作成するには [、Veritas カスタマー サポートにお問い合わせください](https://globanet.com/ms-connectors-contact)。 手順 1 でコネクタを作成するときに、このアカウントにサインインします。
 

@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: Admin
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -21,12 +21,12 @@ ms.custom:
 description: 管理者は、スパム対策 (EOP) でスパムを防止するのに役立つスパム対策設定とフィルター Exchange Online Protectionできます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dcc96cf6ad7b7c6b43f4bc232cf0be67b72c1615
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 7a6cd11e25a29cd9b3866adb216464e021d15dc0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483785"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154364"
 ---
 # <a name="anti-spam-protection-in-eop"></a>EOP でのスパム対策保護
 

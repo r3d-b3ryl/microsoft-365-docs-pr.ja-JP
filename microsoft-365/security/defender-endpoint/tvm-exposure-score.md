@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: be60d8f4c8adae02a1a5e388a5b75e717dd5eb51
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8295fee4d0c27b85cc3daf95224b770f3c0fec0c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164823"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60149876"
 ---
 # <a name="exposure-score---threat-and-vulnerability-management"></a>露出スコア - 脅威と脆弱性の管理
 
@@ -61,7 +61,7 @@ ms.locfileid: "59164823"
 
 セキュリティに関する推奨事項を修正することで、脅威と脆弱性の暴露 [を削減します](tvm-security-recommendation.md)。 最も重要なセキュリティ推奨事項を修復して、露出スコアに最も大きな影響を与えます。これは、脅威と脆弱性の管理[ダッシュボードで確認できます](tvm-dashboard-insights.md)。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [デバイス向けの Microsoft セキュア スコア](tvm-microsoft-secure-score-devices.md)

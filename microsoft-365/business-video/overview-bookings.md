@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 顧客に予約予約を提供する小規模企業向けオンラインおよびモバイル アプリである Microsoft Bookings について説明します。
-ms.openlocfilehash: f797a18616f63aea873ea5c1060a54dffbe078ef
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 05a43a08001b38d086b86c24c4bfb2d84db5fc1e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180655"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151472"
 ---
 # <a name="overview-of-microsoft-bookings"></a>Microsoft Bookings の概要
 

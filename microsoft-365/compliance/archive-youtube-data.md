@@ -9,15 +9,15 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 管理者は、Veritas からユーザーに YouTube データをインポートおよびアーカイブするコネクタをMicrosoft 365。 このコネクタを使用すると、サードパーティのデータ ソースからデータをアーカイブできます。Microsoft 365。 このデータをアーカイブした後、法的保持、電子情報開示、保持ポリシーなどのコンプライアンス機能を使用して、サードパーティのデータを管理できます。
-ms.openlocfilehash: 48354460a79cbb8c23086962d17482a3d3419044
-ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
+ms.openlocfilehash: 6205e9a8425b4d9eeea2278a131881045b6e6bac
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "60088243"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60153236"
 ---
 # <a name="set-up-a-connector-to-archive-youtube-data"></a>YouTube データをアーカイブするコネクタをセットアップする
 

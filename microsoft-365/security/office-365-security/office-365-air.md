@@ -9,7 +9,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.date: 01/29/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9cc1ddac10ddea4ea50ab1fc339db77a3240552b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c1097107aac85edc9a757f42d3502f7cbb51c758
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214334"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154316"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Microsoft Defender の自動調査と応答 (AIR) Office 365
 
@@ -151,7 +151,7 @@ Microsoft Defender で既に AIR 機能を使用している場合は、Office 3
 
 ****
 
-|アイテム|何が変わるのか?|
+|Item|何が変わるのか?|
 |---|---|
 |**[調査]** ページ|更新された [ **調査] ページ** は、Microsoft Defender for Endpoint に表示 [される情報とより一貫性があります](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)。 統合された新しい [調査] ビューに合わせて、一般的な形式とスタイルの変更 **が表示** されます。 たとえば、調査グラフの形式が統一されています。|
 |**[ユーザー]** タブ|[ **ユーザー]** タブが [ **メールボックス] タブ** です。ユーザーに関する詳細は、[メールボックス] タブ **に表示** されます。|

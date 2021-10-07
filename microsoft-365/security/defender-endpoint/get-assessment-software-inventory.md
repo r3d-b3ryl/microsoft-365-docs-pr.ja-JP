@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: v-jweston
 author: jweston-1
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9e3ccce5c5955418e3e1243b96d51e5999f0f585
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 77d0bfb569837a508221d78d811c985153533ed7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221514"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152228"
 ---
 # <a name="export-software-inventory-assessment-per-device"></a>デバイスごとのソフトウェア インベントリ評価のエクスポート
 
@@ -65,7 +65,7 @@ ms.locfileid: "59221514"
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 ---|---|---
 アプリケーション|Software.Read.All|\'脅威と脆弱性管理の脆弱性情報の読み取り\'
-委任 (職場または学校アカウント)|Software.Read|\'脅威と脆弱性管理の脆弱性情報の読み取り\'
+委任 (職場または学校のアカウント)|Software.Read|\'脅威と脆弱性管理の脆弱性情報の読み取り\'
 
 ### <a name="13-url"></a>1.3 URL
 
@@ -98,9 +98,9 @@ DiskPaths|Array[string]|製品がデバイスにインストールされてい�
 EndOfSupportDate|string|このソフトウェアのサポートが終了または終了する日付。|2020-12-30
 EndOfSupportStatus|string|サポートの状態の終了。 これらの可能な値を含めることができます。 なし、EOS バージョン、今後の EOS バージョン、EOS ソフトウェア、今後の EOS ソフトウェア。|今後の EOS
 ID|string|レコードの一意の識別子。|123ABG55_573AG&mnp!
-NumberOfWeaknesses|int|このデバイス上のこのソフトウェアの弱点の数|3
+NumberOfWeaknesses|整数|このデバイス上のこのソフトウェアの弱点の数|3
 OSPlatform|string|デバイスで実行されているオペレーティング システムのプラットフォーム。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。 詳細については、「tvm でサポートされるオペレーティング システムとプラットフォーム」を参照してください。|Windows10
-RbacGroupName|string|役割ベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "割り当てられていない" になります。 組織に RBAC グループが含まれている場合、値は "None" になります。|Servers
+RbacGroupName|string|役割ベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "割り当てられていない" になります。 組織に RBAC グループが含まれている場合、値は "None" になります。|サーバー
 RegistryPaths|Array[string]|製品がデバイスにインストールされていることを示すレジストリ証拠。|[ "HKEY_LOCAL_MACHINE \\SOFTWARE \\ WOW6432Node \\ Microsoft Windows \\ \\ CurrentVersion Uninstall Microsoft \\ \\ Silverlight" ]
 SoftwareFirstSeenTimestamp|string|このソフトウェアがデバイスで初めて見られた。|2019-04-07 02:06:47
 SoftwareName|string|ソフトウェア製品の名前。|Silverlight
@@ -227,7 +227,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMac
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 ---|---|---
 アプリケーション|Software.Read.All|\'脅威と脆弱性管理の脆弱性情報の読み取り\'
-委任 (職場または学校アカウント)|Software.Read|\'脅威と脆弱性管理の脆弱性情報の読み取り\'
+委任 (職場または学校のアカウント)|Software.Read|\'脅威と脆弱性管理の脆弱性情報の読み取り\'
 
 ### <a name="23-url"></a>2.3 URL
 

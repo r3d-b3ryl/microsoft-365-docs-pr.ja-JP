@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 完全一致スキーマと機密情報の種類ウィザードrを使用する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dbba5e0e63f473d12b40c902001332c1689e4d12
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 056dc858fdd2da729cb076afc5deb50f1d21602e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218854"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150968"
 ---
 # <a name="use-the-exact-data-match-schema-and-sensitive-information-type-wizard"></a>完全一致スキーマと機密情報の種類ウィザードを使用する
 

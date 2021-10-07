@@ -10,15 +10,15 @@ ms.service: o365-administration
 f1.keywords:
 - CSH
 ms.collection: M365-modern-desktop
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: キャンバスMicrosoft Teamsクラスを統合する
-ms.openlocfilehash: 8c19807034d5d063f71378dd450cfda419cd1491
-ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
+ms.openlocfilehash: 91cca1611cc6e84dd3844d68e5e87fe7012048dc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/21/2021
-ms.locfileid: "59460306"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150500"
 ---
 # <a name="use-microsoft-teams-classes-with-canvas"></a>Canvas でMicrosoft Teamsクラスを使用する
 

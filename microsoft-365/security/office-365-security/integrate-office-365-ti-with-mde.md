@@ -9,7 +9,7 @@ manager: dansimp
 ms.date: 06/10/2021
 audience: ITPro
 ms.topic: article
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -19,12 +19,12 @@ description: Microsoft Defender for Office 365 Microsoft Defender for Endpoint �
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ed8d433cd997166ed7fd96034f91eb117b9309cd
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c0d532f06ce4757e8bca7f337992706480916aba
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189111"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60149611"
 ---
 # <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint とOffice 365 Microsoft Defender を使用する
 

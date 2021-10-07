@@ -11,7 +11,7 @@ ms.topic: article
 f1_keywords:
 - ms.o365.cc.SupervisoryReview
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - m365-security-compliance
@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: a4ed6e53712ac3aa4b99e991d5fbbbb2bee31b80
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 46ba59bc1e9e2d137c254939847c5de8a68a861a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176095"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60153224"
 ---
 # <a name="learn-about-communication-compliance-in-microsoft-365"></a>通信コンプライアンスの詳細については、Microsoft 365
 

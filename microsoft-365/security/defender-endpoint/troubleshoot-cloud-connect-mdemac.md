@@ -2,15 +2,13 @@
 title: macOS 上の Microsoft Defender for Endpoint のクラウド接続の問題のトラブルシューティング
 description: このトピックでは、macOS 上の Microsoft Defender for Endpoint のクラウド接続の問題をトラブルシューティングする方法について説明します。
 keywords: microsoft、 defender、 Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: v-lsaldanha
 author: lovina-saldanha
-localization_priority: normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 291cd3016dcb4e1a321f39b4d2731ce2068b6544
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fab06ce2d221d08aac57d9c6873e255fca5a7627
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213464"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151808"
 ---
 # <a name="troubleshoot-cloud-connectivity-issues-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上の Microsoft Defender for Endpoint のクラウド接続の問題のトラブルシューティング
 

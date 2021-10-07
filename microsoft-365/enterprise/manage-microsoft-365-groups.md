@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
@@ -22,18 +22,18 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: グループを管理する方法Microsoft 365します。
-ms.openlocfilehash: 72bc47bb699e32f849f21ea4c5470a95d6228b68
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 28d8bae8aaed6d02fe082824c07afe03bdc0ce5a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221033"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150764"
 ---
 # <a name="manage-microsoft-365-groups"></a>Microsoft 365 グループを管理する
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-構成に応じてMicrosoft 365グループを複数の方法で管理できます。 ユーザー アカウントは、Microsoft 365 管理センター、PowerShell、Active Directory ドメイン サービス (AD DS)、または Azure Active Directory [(Azure AD) 管理センターで管理できます](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)。 [](../admin/add-users/index.yml) 
+構成に応じてMicrosoft 365グループを複数の方法で管理できます。 ユーザー アカウントは、Microsoft 365 管理センター、PowerShell、Active Directory ドメイン サービス (AD DS)、または Azure Active Directory [(Azure AD) 管理センターで管理できます](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)。 [](/admin) 
 
 ## <a name="plan-for-where-and-how-you-will-manage-your-groups"></a>グループを管理する場所と方法を計画する
 
@@ -43,7 +43,7 @@ ms.locfileid: "59221033"
 
 グループを作成および管理するには、次の機能を使用します。
 
-- [Microsoft 365 管理センター](../admin/add-users/index.yml)
+- [Microsoft 365 管理センター](/admin)
 - [PowerShell](maintain-group-membership-with-microsoft-365-powershell.md)
 - [Azure AD 管理センター](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
     
@@ -53,7 +53,7 @@ AD DS グループは Microsoft 365 DS の AD と同期されます。そのた�
 
 また、DS グループとは別の Azure ADグループを作成および管理AD DS からのユーザーとグループを含ADすることもできます。 この場合、次のコマンドを使用できます。
 
-- [Microsoft 365 管理センター](../admin/add-users/index.yml)
+- [Microsoft 365 管理センター](/admin)
 - [PowerShell](maintain-group-membership-with-microsoft-365-powershell.md)
 - [Azure AD 管理センター](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
 

@@ -9,18 +9,18 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: 管理者がデータ コネクタをセットアップして使用して、インスタント ブルームバーグ チャット ツールからデータをインポートおよびアーカイブする方法についてMicrosoft 365。
-ms.openlocfilehash: 98c9cd9077a8c2e11f8d51db983cbfbd0620c6f3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7e7f955745b3c0b95040561497ee29228a150c5e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180111"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151256"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>コネクタをセットアップしてインスタント ブルームバーグ データをアーカイブする
 

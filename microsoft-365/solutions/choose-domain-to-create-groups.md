@@ -8,7 +8,7 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
 recommendations: false
 description: PowerShell を使用して電子メール アドレス ポリシーを構成して、Microsoft 365グループを作成するときに使用するドメインを選択する方法について説明します。
-ms.openlocfilehash: 4d620c3344f83f56afd05c00d78615331dd413ed
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f909decd81c94ea04adb3a714dd1dfd282e7f40e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59217884"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60149564"
 ---
 # <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>グループの作成時に使用するドメインMicrosoft 365する
 

@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.date: ''
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理者は、Word、Excel、および PowerPoint ファイルのSharePointラベルのOneDrive。
-ms.openlocfilehash: 661cd33c5636e9447430283d4f838565a2f1e667
-ms.sourcegitcommit: 7be84e7940c63b4c958b9da875d323bead9aae95
+ms.openlocfilehash: e95b4287fba3994c1e2a3515a038af4f36970202
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2021
-ms.locfileid: "59453630"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151040"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>SharePoint および OneDrive で Office ファイルの秘密度ラベルを有効にする
 
@@ -65,7 +65,7 @@ SharePoint および OneDrive の Office ファイルの感度ラベルを有効
 
 SharePoint Information Rights Management (IRM) を使用して SharePoint でドキュメントを現在保護している場合は、このページの SharePoint Information [Rights Management (IRM)](#sharepoint-information-rights-management-irm-and-sensitivity-labels)と感度ラベルセクションを確認してください。
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要件
 
 これらの新機能は、感度ラベル [でのみ機能](sensitivity-labels.md) します。 現在 Azure Information Protection ラベルがある場合は、アップロードする新しいファイルに対してこれらの機能を有効にできるよう、最初にラベルを感度ラベルに移行します。 手順については、、「[Azure Information Protection ラベルを統合秘密度ラベルに移行する方法](/azure/information-protection/configure-policy-migrate-labels)」を参照してください。
 

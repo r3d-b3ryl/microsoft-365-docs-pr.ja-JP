@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: cb2250e3-451e-416f-bf4e-363549652c2a
 description: Azure AD で統合アプリを登録および管理する **AD、Azure** AD DC 管理者、またはグローバル管理者レベルでアプリの承認を許可する方法について **説明** します。 Office 365
-ms.openlocfilehash: ccf1e16e7e0307499e515eb3691c865d49801412
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 78092ae817708f0af19eaa85648c35a9c413d3fb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215983"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150800"
 ---
 # <a name="integrated-apps-and-azure-ad-for-microsoft-365-administrators"></a>管理者向け統合AD Azure Microsoft 365
 

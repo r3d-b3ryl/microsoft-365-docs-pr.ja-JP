@@ -9,17 +9,17 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: b7e966586d13a8a4a5d4c5b1126354c72a2e03cc8811bb222b673cb7245c959b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 88ba90f15731ec5d3c731503dc274c0ad4187754
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833971"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150114"
 ---
 # <a name="find-device-information-by-internal-ip-api"></a>内部 IP API によるデバイス情報の検索
 
@@ -56,9 +56,9 @@ GET /api/machines/find(timestamp={time},key={IP})
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
-Authorization|String|ベアラー {token}。 **必須**
+Authorization|String|ベアラー {token}。 **必須**。
 
 ## <a name="request-body"></a>要求本文
 

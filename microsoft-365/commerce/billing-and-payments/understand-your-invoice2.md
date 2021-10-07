@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: ビジネス請求書または請求書の請求、請求、支払Microsoft 365支払い情報、および発注書番号の変更方法を解釈します。
 ms.date: 05/04/2021
-ms.openlocfilehash: 8881129b6d7013c731dbcb24ebd5f8e21e410b93
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7b6f82570416b84d1b0b8c5b65cf13ce94522063
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59190440"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151460"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Microsoft 365 for Business の課金内容または請求書を理解する
 
@@ -111,7 +111,7 @@ ms.locfileid: "59190440"
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[お使いの製品]</a> ページの順に移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">お使いの製品</a>] ページの順に移動します。
 
 ::: moniker-end
 

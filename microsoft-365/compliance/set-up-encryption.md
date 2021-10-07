@@ -9,18 +9,18 @@ ms.date: 4/2/2018
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: e86fc991-0161-4f01-9c1c-d25e87733d06
 description: このOffice 365、一部の暗号化機能は既定で有効になっています。その他の機能は、特定のコンプライアンスまたは法的要件を満たするように構成できます。
-ms.openlocfilehash: a9a3170fdb99a4acfec8cf4d3b03ab9b584197bd
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 00035af0049abedff8a794710649f162576dc46c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216384"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152924"
 ---
 # <a name="set-up-encryption-in-office-365-enterprise"></a>Office 365 Enterprise で暗号化を設定する
 

@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: この記事では、Connectivity Optics のMicrosoft 365説明します。
-ms.openlocfilehash: e4020fc21492f3c261e10b8fad3c60c43c64bad24d12f1b1145773489f2fa3b0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c1ee14966f13ff50ff809ebbdf4c578bf949e956
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854893"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150547"
 ---
 # <a name="microsoft-365-connectivity-optics"></a>Microsoft 365Connectivity Optics
 
@@ -38,7 +38,7 @@ ms.locfileid: "53854893"
 光学は現在、すべてのデバイスでまれなサンプリングを使用して収集されます。 一般的な問題として、特定のイテレーションで測定される光学および宛先 (サービス エンドポイント) の特定のセットは、サービス要件に基づいて Microsoft によって構成され、サンプリング目的でランダム化されます。
 各光学コレクション間隔で、次の測定値の 1 つ以上を測定元としてエンド ユーザー デバイスを使用し、Microsoft 365 サービス エンドポイントを測定先として収集できます。
 
-| 測定 | Description |
+| 測定 | 説明 |
 | --- | --- |
 | 遅延 | HTTP 経由で小さなファイルを取得するために必要な時間 |
 | スループット | HTTP 経由で大きなファイルを取得するために必要な時間 (帯域幅の過剰消費を避けるためにほとんど測定されない) |
@@ -54,7 +54,7 @@ ms.locfileid: "53854893"
 | リクエスト ID | Microsoft が提供する測定構成で指定された測定要求の識別子。 |
 | リモート IP | クライアントからサービス エンドポイントへの要求に関連付けられたマスクされたソース IP。測定要求を受信したサーバーによって提供され、Microsoft に表示されるクライアント ソース IP アドレスに基づいて計算されます。 IP アドレスは、IPv4 アドレスの /24 サブネット、または IPv6 アドレスの /48 サブネットにマスクされ、Microsoft が個々のデバイスまたはユーザーを識別できないことを確認します。 |
 | フロントエンド | Microsoft 365要求を受け取ったサーバーによって提供されるサービス フロントエンド識別子。 |
-| Endpoint | Microsoft 365を受け取ったサーバーによって提供されるサービス エンドポイントの場所を指定します。 |
+| エンドポイント | Microsoft 365を受け取ったサーバーによって提供されるサービス エンドポイントの場所を指定します。 |
 | 発行者の証明書 | サービス エンドポイントへの接続中に提示される SSL 証明書の "発行された証明書" プロパティ 。これは、サービス エンドポイントに証明書を発行した証明機関を示します。 |
 | 証明書の拇印 | サービス エンドポイントへの接続中に提示される SSL 証明書の "証明書拇印" プロパティ 。これは、証明書の一意の一意の識別子です。 |
 | 緯度/経度 | エンド ユーザー デバイスの抽象化された緯度と経度。 これは、エンド ユーザー デバイスで Windows Location Service を有効にし、Microsoft 365 管理ポータルでこの情報のコレクションを有効にしている[テナントにのみ収集されます](office-365-network-mac-perf-overview.md#1-enable-windows-location-services)。 |

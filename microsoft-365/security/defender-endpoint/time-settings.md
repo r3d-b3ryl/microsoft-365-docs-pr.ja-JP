@@ -2,26 +2,24 @@
 title: Microsoft 365 Defenderの設定
 description: ここに示す情報を使用して、タイム ゾーンの設定Microsoft 365 Defenderライセンス情報を表示します。
 keywords: 設定, Microsoft Defender, サイバーセキュリティ脅威インテリジェンス, エンドポイント用 Microsoft Defender, タイム ゾーン, utc, 現地時間, ライセンス
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 65ed76f115b9e9f39e18d69a50e736c561d18c7c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 461b87750b40e37493ff88acfa2b4a5521494841
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164894"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151820"
 ---
 # <a name="microsoft-365-defender-time-zone-settings"></a>Microsoft 365 Defenderの設定
 

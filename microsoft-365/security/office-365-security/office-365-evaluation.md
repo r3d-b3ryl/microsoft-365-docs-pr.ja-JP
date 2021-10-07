@@ -10,7 +10,7 @@ manager: dansimp
 ms.date: 04/21/2021
 audience: ITPro
 ms.topic: article
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 908165ac4e86fe96d101644f70d0bf31047d5e5f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6baa78512b102bae74a242e243c2e4ac023aa4f2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214333"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60149595"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 を評価する
 
@@ -61,7 +61,7 @@ microsoft Defender for Office 365 をサポートするライセンスをまだ�
 - アクションのレポートの分析
 - 評価結果の提示
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 ### <a name="licensing"></a>ライセンス
 

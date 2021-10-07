@@ -9,7 +9,7 @@ ms.date: 12/21/2016
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -20,12 +20,12 @@ ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 ms.custom:
 - seo-marvel-apr2020
 description: 電子情報開示の重複検索結果を削除して、電子メール メッセージの 1 つのコピーのみをエクスポートする方法について説明します。
-ms.openlocfilehash: 67c856d9f245e3856ba1bd4f3ac1942391dab8fa
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 792726062576f6e17adb5a10cc544e7efdb02e03
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213904"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60153080"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>電子情報開示検索結果での重複排除
 

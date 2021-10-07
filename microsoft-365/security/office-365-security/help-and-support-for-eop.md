@@ -8,17 +8,17 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft は、サポート サービスやアシスト サービスを含め、さまざまな場所と方法で EOP のヘルプを提供しています。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 85d6c23dcec77fac6a91ae353bce951c005a4b29
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4ee0affc301500d3ebebd8d17ff13f569356c123
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214414"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60149600"
 ---
 # <a name="help-and-support-for-eop"></a>EOP のヘルプとサポート
 

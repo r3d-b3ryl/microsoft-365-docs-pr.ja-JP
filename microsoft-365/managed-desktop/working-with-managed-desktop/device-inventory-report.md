@@ -4,17 +4,17 @@ description: ''
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 0137bef845cace589247c35763bbf4253398cbc6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e45bb0064554e9a0e5b9266c37aff86f101f6d99
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215203"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150332"
 ---
 # <a name="device-inventory-report"></a>デバイス一覧レポート
 

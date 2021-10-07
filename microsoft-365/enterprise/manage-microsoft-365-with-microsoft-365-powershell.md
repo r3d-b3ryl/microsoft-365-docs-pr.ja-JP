@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: Ent_O365
@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
 description: PowerShell を使用してユーザー Microsoft 365、365 アプリを管理する方法について説明します。
-ms.openlocfilehash: bbbbec88f8dcb4b31102bab4be4549c94874aff8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 298955f37e3f29843a7efeaf1bdf8ce6f40862fc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220985"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150584"
 ---
 # <a name="manage-microsoft-365-with-powershell"></a>PowerShell で Microsoft 365を管理する
 
@@ -34,7 +34,7 @@ PowerShell for Microsoft 365は、この機能を補完する強力な管理Micr
 
 PowerShell を使用して管理する方法については、次のトピックからMicrosoft 365。
   
-- [**開始する**](getting-started-with-microsoft-365-powershell.md)
+- [**作業の開始**](getting-started-with-microsoft-365-powershell.md)
 
     PowerShell for Microsoft 365に慣れ親しまず、Microsoft 365 モジュールをインストールしてサブスクリプションに接続する場合は、ここから開始します。
 
@@ -62,6 +62,6 @@ PowerShell を使用して管理する方法については、次のトピック
 
     Syndication および CSP (CSP) パートナーを使用して顧客テナントクラウド ソリューション プロバイダー管理する場合はMicrosoft 365開始します。
 
-- [**Skype for Businessオンライン**](manage-skype-for-business-online-with-microsoft-365-powershell.md)
+- [**Skype for Business Online**](manage-skype-for-business-online-with-microsoft-365-powershell.md)
 
     オンラインを管理するには、Skype for Business開始します。

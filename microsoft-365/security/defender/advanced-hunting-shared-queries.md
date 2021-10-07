@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 37960ef9b7ff1431a2d1344e6a234b0106782100
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4c410623012362c809d8d045d51bc0226f181ba9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214624"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60149852"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>高度な捜索で共有クエリを使用する
 
@@ -78,7 +78,7 @@ Microsoft のセキュリティ調査員は、[GitHub の指定された公開�
 >[!NOTE]
 >この記事の一部のテーブルは、Microsoft Defender for Endpoint では使用できない場合があります。 [複数のデータ Microsoft 365 Defender](m365d-enable.md)を使用して脅威を検出するには、このオプションをオンにしてください。 高度なハンティング ワークフローを Microsoft Defender for Endpoint から Microsoft 365 Defenderに移動するには、「Advanced Hunting [queries](advanced-hunting-migrate-from-mde.md)を Microsoft Defender for Endpoint から移行する」の手順に従います。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [クエリ結果を操作する](advanced-hunting-query-results.md)

@@ -6,15 +6,15 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0968717e-b61f-4b06-987c-6c1464541782
 description: Microsoft Bookings で従業員の勤務時間と空き時間を設定します。
-ms.openlocfilehash: 854110217f31b69d54783484aa1800332763af3e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ef283043ecccc959d8ee42da661770a7f95337fe
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178327"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151532"
 ---
 # <a name="employee-working-hours-in-microsoft-bookings"></a>Microsoft Bookings の従業員の勤務時間
 

@@ -11,19 +11,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/03/2018
 ms.technology: mde
-ms.openlocfilehash: c67f5ff58ab62e6a2a4c42446f66b753d774dfbb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 60e4b251ad14824f22cb7dbe0a27f0dfc48afe58
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179423"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150292"
 ---
 # <a name="alerts-queue-in-microsoft-365-defender"></a>Microsoft 365 Defender のアラート キュー
 

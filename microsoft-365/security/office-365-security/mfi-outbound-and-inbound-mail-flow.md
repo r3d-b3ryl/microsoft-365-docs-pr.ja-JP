@@ -8,17 +8,17 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: 管理者は、セキュリティ コンプライアンス センターのメール フロー ダッシュボードで、送信メール フローと受信メール フロー&できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 278f9620b0416a1bdc23ba1efaa1581a5318b6a7
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: acd1b46dfd93e2baee7861daae7b24daa42a324b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988465"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154376"
 ---
 # <a name="outbound-and-inbound-mail-flow-insight-in-the-security--compliance-center"></a>セキュリティ コンプライアンス センターでの送信メール フローと受信メール フロー&分析
 

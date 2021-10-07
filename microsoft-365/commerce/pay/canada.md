@@ -10,15 +10,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.custom: commerce_billing_payinfo
-localization_priority: Normal
+ms.localizationpriority: medium
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b553c543989798f46e3e0301c36cfe6b5de80546
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6d14fd6e6035d681c0accc482065e073cac75a6c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180384"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60153644"
 ---
 # <a name="payment-information-for-canada"></a>カナダのお支払い情報
 

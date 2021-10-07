@@ -8,17 +8,17 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: In-Placeの電子情報開示とIn-Placeホールド (および対応する PowerShell コマンドレット Exchange Online) は、2020 年前半に廃止されます。 また、Search-Mailbox v1.0 Advanced eDiscoveryおよび v1.0 も同じ期間に廃止されます。
-ms.openlocfilehash: 16a43122ce16a134a6068f78dadea02ac8605625
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 18509476234494633b425765de07dfc163eaabc9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179943"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152996"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>従来の電子情報開示ツールの廃止
 
@@ -67,7 +67,7 @@ Microsoft 365 コンプライアンス センター でこの新しく改善さ�
 
 2017 年 7 月 1 日の当初の発表と同様に、In-Place 管理センター (EAC) の Exchange In-Place 電子情報開示 & 保留機能は廃止されます。 EAC In-Place [&保持] ページでは、コンテンツを検索、保持、およびエクスポートExchange Online。 In-Place電子情報開示を使用すると、検索結果を探索メールボックスにコピーして、ユーザーまたは他の電子情報開示管理者がコンテンツを確認し、法的、規制、およびパブリック要求に対して利用可能にできます。
 
-これらの機能 (検索結果を探索メールボックスにコピーする場合を除く) はすべて[、Microsoft 365 コンプライアンス センター](./microsoft-365-compliance-center.md)のコンテンツ検索、電子情報開示、および Advanced eDiscovery ツールで利用できます (機能、信頼性、および幅広い Microsoft 365 サービスのサポートが強化されています)、できるだけ早くこれらのツールの使用を開始することをお勧めします。 これらの他の電子情報開示ツールへの移行を支援するために、以下の表に、電子情報開示と電子情報開示の保持ではなくIn-PlaceツールIn-Place示します。
+これらの機能 (検索結果を探索メールボックスにコピーする場合を除く) はすべて[、Microsoft 365 コンプライアンス センター](./microsoft-365-compliance-center.md)のコンテンツ検索、電子情報開示、および Advanced eDiscovery ツールで利用できます (機能、信頼性、および幅広い Microsoft 365 サービスのサポートが強化されています)これらのツールの使用をできるだけ早く開始することをお勧めします。 これらの他の電子情報開示ツールへの移行を支援するために、以下の表に、電子情報開示と電子情報開示の保持ではなくIn-PlaceツールIn-Place示します。
 
 ### <a name="scope-of-affected-organizations"></a>影響を受ける組織の範囲
 
@@ -110,7 +110,7 @@ Microsoft 365 コンプライアンス センター でこの新しく改善さ�
 <p>コンテンツの検索、エクスポート、および保留に関する信頼性の向上</p>
 </li>
 <li>
-<p>Exchange Online、SharePoint Online、OneDrive for Business、Skype for Business、Microsoft Teams、Yammer グループ、Microsoft 365 グループ、Office 365 アプリケーションに保存されている他のコンテンツの検索</p></li></ul>
+<p>Exchange Online、SharePoint、OneDrive for Business、OneDrive for Business、Skype for Business、Microsoft Teams、Yammer グループ、Microsoft 365のコンテンツMicrosoft 365グループ、その他のコンテンツは、Office 365アプリケーションに保存されます。</p></li></ul>
 </td>
 </tr>
 <tr class="even">
@@ -351,7 +351,7 @@ Advanced eDiscovery v1.0 は、コアの電子情報開示ケースで使用で�
 
 3. [デバイスに切り替Advanced eDiscovery] ボタン **が表示** された場合は、クリックすると 1.0 バージョンの Advanced eDiscovery に移動します。これは廃止されます。 Core eDiscovery でケースを作成および管理する機能は影響を受け取らない。 v1.0 でケース データを追加および分析する機能 (Advanced eDiscovery に切り替 **える)** をクリックAdvanced eDiscovery削除されます。
 
-Microsoft 365 の新しい Advanced eDiscovery ソリューション *(Advanced eDiscovery v2.0* とも呼ばれる) は、元のソリューションのすべての機能を提供しますが、他の Microsoft 365 サービスのコンテンツを識別し、そのコンテンツを収集し、レビュー担当者が迅速な検索クエリ、タグ付け、分析機能を活用して関連ドキュメントを作成できるレビュー セットに追加するカストディアンベースのアプローチが含まれています。 Advanced eDiscovery、Microsoft と Microsoft 以外のファイルの種類の両方の処理とネイティブ ビューアーが追加されました。ファイルの種類の完全な一覧は[次](./supported-filetypes-ediscovery20.md)のとおりです。サポートされているメタデータ フィールドは次[のとおりです](./document-metadata-fields-in-advanced-ediscovery.md)。 また、新しい Advanced eDiscovery ソリューションでは、強力な保管担当者が管理機能を提供し、さまざまなサービスのコンテンツにホールドを適用し、保留リストのユーザーに通知し、保管担当者の応答を追跡できます(すべて Advanced eDiscovery ケース内)。
+Microsoft 365 の新しい Advanced eDiscovery ソリューション *(Advanced eDiscovery v2.0* とも呼ばれる) は、元のソリューションのすべての機能を提供しますが、他の Microsoft 365 サービスのコンテンツを識別し、そのコンテンツを収集するカストディアン ベースのアプローチが含まれています。その後、レビュー担当者が迅速な検索クエリ、タグ付け、分析機能を利用して関連するドキュメントを作成できるレビュー セットに追加します。 Advanced eDiscovery、Microsoft と Microsoft 以外のファイルの種類の両方の処理とネイティブ ビューアーが追加されました。ファイルの種類の完全な一覧は[次](./supported-filetypes-ediscovery20.md)のとおりです。サポートされているメタデータ フィールドは次[のとおりです](./document-metadata-fields-in-advanced-ediscovery.md)。 また、新しい Advanced eDiscovery ソリューションでは、強力な保管担当者が管理機能を提供し、さまざまなサービスのコンテンツにホールドを適用し、保留リストのユーザーに通知し、保管担当者の応答を追跡できます(すべて Advanced eDiscovery ケース内)。
 
 Advanced eDiscovery v2.0 へのアクセス
 

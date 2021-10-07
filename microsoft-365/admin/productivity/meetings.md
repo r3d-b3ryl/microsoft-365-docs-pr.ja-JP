@@ -8,22 +8,23 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom: AdminSurgePortfolio
 monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
 description: 会議の詳細 - ユーザーエクスペリエンスの生産性スコア。
-ms.openlocfilehash: b5106b03e3fa4abc3c10a543dc4cc3cd5353d8d7
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 8de609ee167ed48b7c724ee261832d73ef844f8d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776538"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60153980"
 ---
 # <a name="meetings--people-experiences"></a>会議 - ユーザー エクスペリエンス
 

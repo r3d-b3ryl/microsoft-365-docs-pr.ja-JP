@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: 8079f193-1b40-4081-9e5d-d0e50dfbcc59
@@ -19,12 +19,12 @@ ms.custom:
 description: 管理者は、迷惑メール (スパム) とバルク メール (グレー メール) の違いについて、電子メール (EOP) Exchange Online Protectionできます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fc9c94946c3da2f9a14f45070a86c557a5c7dc85
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e8a896ac3360ccf799dbe34c7e298f76140ee6d5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163449"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154304"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email-in-eop"></a>EOP での迷惑メールとバルク メールの違いは何ですか?
 
