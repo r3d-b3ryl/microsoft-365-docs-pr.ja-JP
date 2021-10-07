@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -16,12 +16,12 @@ ms.collection:
 description: 管理者は、セキュリティ ポータルのテナント許可/ブロック一覧で許可を構成する方法について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 977cd2d099d9c5be7fc0db9ef61f31f28afdc9fe
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 411fc860ad59c214000936486d3c0456c732df19
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211654"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190319"
 ---
 # <a name="add-allows-in-the-tenant-allowblock-list"></a>テナントの許可/禁止リストの許可リストを追加する
 
@@ -57,7 +57,7 @@ ms.locfileid: "59211654"
 
 ## <a name="create-spoofed-sender-allow-entries-using-microsoft-365-defender"></a>スプーフィングされた送信者許可エントリを作成するには、Microsoft 365 Defender
 
-**注**:
+**注意**:
 
 - スプー _フィング_ されたユーザーと、ドメイン ペアで定義されている送信インフラストラクチャの組み合わせだけが、スプーフィングを許可またはブロックされます。
 - ドメイン ペアの許可エントリまたはブロック エントリを構成すると、そのドメイン ペアからのメッセージはスプーフィング インテリジェンスインサイトに表示されなくなりました。
@@ -89,5 +89,5 @@ New-TenantAllowBlockListSpoofItems -SpoofedUser <Domain | EmailAddress | *> -Sen
 
 ## <a name="related-articles"></a>関連記事
 
-- [管理者の申請](admin-submission.md)
+- [管理者による報告](admin-submission.md)
 - [誤検知と誤検知を報告する](report-false-positives-and-false-negatives.md)

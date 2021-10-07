@@ -2,14 +2,13 @@
 title: 展開フェーズ
 description: エンドポイントを準備、セットアップ、オンボーディングして、そのサービスに Microsoft Defender for Endpoint を展開する方法について説明します。
 keywords: 展開、準備、セットアップ、オンボード、フェーズ、展開、展開、導入、構成
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +17,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b5d7f7384d60a5353ce4c0363e07d3451e146598
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6b7c9c4389506e59998609f7d960016abf694ebc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220601"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190535"
 ---
 # <a name="deployment-phases"></a>展開フェーズ
 

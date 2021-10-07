@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 recommendations: false
 description: ユーザーがグループを作成できるユーザーを制御Microsoft 365します。
-ms.openlocfilehash: a9bfcbe97000cc6fbe0050ffee44cdc5ecc87080
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b78ff54c8ff475f96f10592a95a3f83255665727
+ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154148"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60217164"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>Microsoft 365 グループを作成できるユーザーを管理する
 
@@ -104,7 +104,7 @@ ms.locfileid: "60154148"
 
 GroupCreators.ps1 としてファイルを保存します。
 
-PowerShell ウィンドウで、ファイルを保存した場所に移動 します ("CD <FileLocation>" と入力)。
+PowerShell ウィンドウで、ファイルを保存した場所に移動 します ("CD \<FileLocation\>" と入力)。
 
 次のように入力してスクリプトを実行します。
 
@@ -133,8 +133,7 @@ $settingsCopy["EnableGroupCreation"] = $AllowGroupCreation
 if($GroupName)
 {
   $settingsCopy["GroupCreationAllowedGroupId"] = (Get-AzureADGroup -SearchString $GroupName).objectid
-}
- else {
+} else {
 $settingsCopy["GroupCreationAllowedGroupId"] = $GroupName
 }
 Set-AzureADDirectorySetting -Id $settingsObjectID -DirectorySetting $settingsCopy

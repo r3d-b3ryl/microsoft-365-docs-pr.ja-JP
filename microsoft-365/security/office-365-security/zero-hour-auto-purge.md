@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: 06/22/2021
 audience: Admin
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MED150
@@ -22,12 +22,12 @@ ms.custom:
 description: ゼロ時間自動削除 (ZAP) は、Exchange Online メールボックス内の配信されたメッセージを、スパム、フィッシング、または配信後にマルウェアが含まれていると検出された迷惑メール フォルダーまたは検疫にさかのぼって移動します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 14d3378ccc2693a62fbc90ce393073199e603931
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: ebfe8bd2eec176b57cfa55400525c8379f9ef4c8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483113"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197859"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>ゼロ時間自動削除 (ZAP) (Exchange Online
 
@@ -54,7 +54,7 @@ ZAP アクションはユーザーにシームレスです。メッセージが�
 
 ### <a name="zero-hour-auto-purge-zap-for-malware"></a>マルウェアのゼロ時間自動削除 (ZAP)
 
-配信 **後にマルウェアが含まれている** と判明した読み取りメッセージまたは未読メッセージの場合、ZAP はマルウェア添付ファイルを含むメッセージを検疫します。 既定では、検疫済みマルウェア メッセージを表示および管理できるのは管理者のみです。 ただし、管理者は検疫ポリシーを作成して使用して、マルウェアとして検疫されたメッセージに対してユーザーが実行できる操作を定義できます。 詳細については、「検疫ポリシー [」を参照してください](quarantine-policies.md)。
+配信 **後にマルウェアが含まれている** と判明した読み取りメッセージまたは未読メッセージの場合、ZAP はマルウェア添付ファイルを含むメッセージを検疫します。 既定では、検疫済みマルウェア メッセージを表示および管理できるのは管理者のみです。 ただし、管理者は検疫ポリシーを作成して使用して、マルウェアとして検疫されたメッセージに対してユーザーが実行できる操作を定義できます。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。
 
 マルウェアに対する ZAP は、マルウェア対策ポリシーで既定で有効になっています。 詳細については [、「EOP でマルウェア対策ポリシーを構成する」を参照してください](configure-anti-malware-policies.md)。
 

@@ -2,15 +2,13 @@
 title: Mac 上の Microsoft Defender for Endpoint のライセンスの問題のトラブルシューティング
 description: Microsoft Defender for Endpoint on Mac のライセンスの問題のトラブルシューティングを行います。
 keywords: microsoft、 defender、 Microsoft Defender for Endpoint, mac, performance
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5b1cee16f4eccaa8f6fd36d8764b1305cba3131f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bf2da03b93b38b27efebbdf3e031c3071f56d188
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214984"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198169"
 ---
 # <a name="troubleshoot-license-issues-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上の Microsoft Defender for Endpoint のライセンスの問題のトラブルシューティング
 

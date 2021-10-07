@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 5ecab217a6181096e4689d78fa2bdddc0a767d0d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c328094c9b9443b4e130ce91d418fa2694e7c402
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211984"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190475"
 ---
 # <a name="alertevidence"></a>AlertEvidence
 
@@ -51,7 +51,7 @@ ms.locfileid: "59211984"
 | `FolderPath` | 文字列 | 記録されたアクションが適用されたファイルを含むフォルダー |
 | `SHA1` | 文字列 | 記録されたアクションが適用されたファイルの SHA-1 |
 | `SHA256` | 文字列 | 記録されたアクションが適用されたファイルの SHA-256 このフィールドは、通常は入力されません。使用可能な場合は SHA1 列を使用します。 |
-| `FileSize` | int | ファイルのサイズ (バイト単位) |
+| `FileSize` | 整数 | ファイルのサイズ (バイト単位) |
 | `ThreatFamily` | string | 疑わしいファイルまたは悪意のあるファイルまたはプロセスが分類されたマルウェア ファミリは、 |
 | `RemoteIP` | 文字列 | に接続されていた IP アドレス |
 | `RemoteUrl` | 文字列 | に接続されていた URL または完全修飾ドメイン名 (FQDN) |
@@ -73,7 +73,7 @@ ms.locfileid: "59211984"
 | `RegistryValueName` |string | 記録されたアクションが適用されたレジストリ値の名前 |
 | `RegistryValueData` |string | 記録されたアクションが適用されたレジストリ値のデータ |
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)

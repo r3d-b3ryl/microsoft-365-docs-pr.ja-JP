@@ -9,7 +9,7 @@ ms.date: 10/16/2020
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: DOD と証明書の完全な一覧をGCCの高ルート証明書と証明機関 (CA) をMicrosoft 365。
-ms.openlocfilehash: ae8954ecb80cdcef0a62cbf4f928f7ffe6b8c4d7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5db850f59223238bdd9e749f442caf9eab93ea29
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218883"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197607"
 ---
 # <a name="microsoft-365-encryption-chains---dod-and-gcc-high"></a>Microsoft 365暗号化チェーン - DOD と GCC High
 
@@ -77,7 +77,7 @@ Microsoft 365さまざまな証明書プロバイダーを活用します。 次
 
 ### <a name="digicert-cloud-services-ca-1"></a>**DigiCert クラウド サービス CA-1**
 
-| **件名** | CN=DigiCert クラウド サービス CA-1<br>O=DigiCert Inc<br>C=US |
+| **[件名]** | CN=DigiCert クラウド サービス CA-1<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
 | **発行者** | CN=DigiCert Global Root CA, OU=www.digicert.com, O=DigiCert Inc, C=US |
 | **シリアル番号** | 0F:17:1A:48:C6:F2:23:80:92:18:CD:2E:D6:DD:C0:E8 |
@@ -139,7 +139,7 @@ Microsoft 365さまざまな証明書プロバイダーを活用します。 次
 
 ### <a name="digicert-sha2-extended-validation-server-ca"></a>**DigiCert SHA2 拡張検証サーバー CA**
 
-| **[件名]** | CN=DigiCert SHA2 拡張検証サーバー CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
+| **件名** | CN=DigiCert SHA2 拡張検証サーバー CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
 | **シリアル番号** | 0C:79:A9:44:B0:8C:11:95:20:92:61:5F:E2:6B:1D:83 |
 | **公開キーの長さ** | RSA 2048 ビット (e 65537) |
@@ -170,7 +170,7 @@ Microsoft 365さまざまな証明書プロバイダーを活用します。 次
 
 ### <a name="digicert-sha2-secure-server-ca"></a>**DigiCert SHA2 Secure Server CA**
 
-| **[件名]** | CN=DigiCert SHA2 Secure Server CA<br>O=DigiCert Inc<br>C=US |
+| **件名** | CN=DigiCert SHA2 Secure Server CA<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
 | **発行者** | CN=DigiCert Global Root CA, OU=www.digicert.com, O=DigiCert Inc, C=US |
 | **シリアル番号** | 02:74:2E:AA:17:CA:8E:21:C7:17:BB:1F:FC:FD:0C:A0 |
@@ -187,7 +187,7 @@ Microsoft 365さまざまな証明書プロバイダーを活用します。 次
 
 ### <a name="digicert-tls-rsa-sha256-2020-ca1"></a>**DigiCert TLS RSA SHA256 2020 CA1**
 
-| **[件名]** | CN=DigiCert TLS RSA SHA256 2020 CA1<br>O=DigiCert Inc<br>C=US |
+| **件名** | CN=DigiCert TLS RSA SHA256 2020 CA1<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
 | **発行者** | CN=DigiCert Global Root CA, OU=www.digicert.com, O=DigiCert Inc, C=US |
 | **シリアル番号** | 0A:35:08:D5:5C:29:2B:01:7D:F8:AD:65:C0:0F:F7:E4 |
@@ -204,7 +204,7 @@ Microsoft 365さまざまな証明書プロバイダーを活用します。 次
 
 ### <a name="entrust-root-certification-authority"></a>**ルート証明機関の委託**
 
-| **[件名]** | CN=Entrust Root 証明機関<br>OU="(c) 2006 Entrust, Inc."<br>OU=www.entrust.net/CPS は参照によって組み込まれる<br>OU=詳細 www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
+| **件名** | CN=Entrust Root 証明機関<br>OU="(c) 2006 Entrust, Inc."<br>OU=www.entrust.net/CPS は参照によって組み込まれる<br>OU=詳細 www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
 | --- | --- |
 | **シリアル番号** | 45:6B:50:54 |
 | **公開キーの長さ** | RSA 2048 ビット (e 65537) |
@@ -232,7 +232,7 @@ Microsoft 365さまざまな証明書プロバイダーを活用します。 次
 
 ### <a name="entrustnet-certification-authority-2048"></a>**Entrust.net Certification Authority (2048)**
 
-| **[件名]** | CN=Entrust.net 証明機関 (2048)<br>OU=(c) 1999 Entrust.net Limited<br>OU=www.entrust.net/CPS \_ 2048 incorp. by ref. (limit s liab.)<br>O=Entrust.net |
+| **件名** | CN=Entrust.net 証明機関 (2048)<br>OU=(c) 1999 Entrust.net Limited<br>OU=www.entrust.net/CPS \_ 2048 incorp. by ref. (limit s liab.)<br>O=Entrust.net |
 | --- | --- |
 | **シリアル番号** | 38:63:DE:F8 |
 | **公開キーの長さ** | RSA 2048 ビット (e 65537) |
@@ -246,7 +246,7 @@ Microsoft 365さまざまな証明書プロバイダーを活用します。 次
 
 ### <a name="entrust-certification-authority---l1c"></a>**証明機関の委託 - L1C**
 
-| **[件名]** | CN=Entrust 証明機関 - L1C<br>OU= &quot; (c) 2009 Entrust, Inc.&quot;<br>OU=www.entrust.net/rpa は参照によって組み込まれる<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
+| **件名** | CN=Entrust 証明機関 - L1C<br>OU= &quot; (c) 2009 Entrust, Inc.&quot;<br>OU=www.entrust.net/rpa は参照によって組み込まれる<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
 | --- | --- |
 | **発行者** | CN=Entrust.net 証明機関 (2048)<br>OU=(c) 1999 Entrust.net Limited<br>OU=www.entrust.net/CPS \_ 2048 incorp. ref. (liab を制限します)。<br>O=Entrust.net |
 | **シリアル番号** | 4C:0E:8C:39 |
@@ -299,7 +299,7 @@ Microsoft 365さまざまな証明書プロバイダーを活用します。 次
 
 ### <a name="entrust-certification-authority---l1m"></a>**証明機関の委託 - L1M**
 
-| **件名** | CN=Entrust 証明機関 - L1M, OU= &quot; (c) 2014 Entrust, Inc. - 承認された使用のみ可能&quot;<br>OU=詳細 www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
+| **[件名]** | CN=Entrust 証明機関 - L1M, OU= &quot; (c) 2014 Entrust, Inc. - 承認された使用のみ可能&quot;<br>OU=詳細 www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
 | --- | --- |
 | **発行者** | CN=Entrust Root 証明機関 - G2<br>OU= &quot; (c) 2009 Entrust, Inc. - 承認された使用のみ可能&quot;<br>OU=詳細 www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
 | **シリアル番号** | 61:A1:E7:D2:00:00:00:00:51:D3:66:A6 |
@@ -333,7 +333,7 @@ Microsoft 365さまざまな証明書プロバイダーを活用します。 次
 
 ### <a name="microsoft-azure-tls-issuing-ca-02"></a>**Microsoft AzureTLS 発行 CA 02**
 
-| **件名** | CN=Microsoft Azure TLS 発行 CA 02<br>O=Microsoft Corporation<br>C=US |
+| **[件名]** | CN=Microsoft Azure TLS 発行 CA 02<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
 | **発行者** | CN=DigiCert Global Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US |
 | **シリアル番号** | 0C:6A:E9:7C:CE:D5:99:83:86:90:A0:0A:9E:A5:32:14 |
@@ -350,7 +350,7 @@ Microsoft 365さまざまな証明書プロバイダーを活用します。 次
 
 ### <a name="microsoft-azure-tls-issuing-ca-05"></a>**Microsoft AzureTLS 発行 CA 05**
 
-| **件名** | CN=Microsoft Azure TLS 発行 CA 05<br>O=Microsoft Corporation<br>C=US |
+| **[件名]** | CN=Microsoft Azure TLS 発行 CA 05<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
 | **発行者** | CN=DigiCert Global Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US |
 | **シリアル番号** | 0D:7B:ED:E9:7D:82:09:96:7A:52:63:1B:8B:DD:18:BD |
@@ -402,7 +402,7 @@ Microsoft 365さまざまな証明書プロバイダーを活用します。 次
 
 ### <a name="microsoft-it-tls-ca-2"></a>**Microsoft IT TLS CA 2**
 
-| **件名** | CN=Microsoft IT TLS CA 2<br>OU=Microsoft IT<br>O=Microsoft Corporation<br>L=Redmond<br>S=Washington<br>C=US |
+| **[件名]** | CN=Microsoft IT TLS CA 2<br>OU=Microsoft IT<br>O=Microsoft Corporation<br>L=Redmond<br>S=Washington<br>C=US |
 | --- | --- |
 | **発行者** | CN=ボルチモア サイバートラスト ルート<br>OU=CyberTrust<br>O=ボルチモア<br>C=IE |
 | **シリアル番号** | 0F:2C:10:C9:5B:06:C0:93:7F:B8:D4:49:F8:3E:85:69 |
@@ -456,7 +456,7 @@ Microsoft 365さまざまな証明書プロバイダーを活用します。 次
 
 ### <a name="microsoft-rsa-tls-ca-01"></a>**Microsoft RSA TLS CA 01**
 
-| **件名** | CN=Microsoft RSA TLS CA 01<br>O=Microsoft Corporation<br>C=US |
+| **[件名]** | CN=Microsoft RSA TLS CA 01<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
 | **発行者** | CN=Baltimore CyberTrust Root, OU=CyberTrust, O=Baltimore, C=IE |
 | **シリアル番号** | 0F:14:96:5F:20:20:69:99:4F:D5:C7:AC:78:89:41:E2 |
@@ -473,7 +473,7 @@ Microsoft 365さまざまな証明書プロバイダーを活用します。 次
 
 ### <a name="microsoft-rsa-tls-ca-02"></a>**Microsoft RSA TLS CA 02**
 
-| **[件名]** | CN=Microsoft RSA TLS CA 02<br>O=Microsoft Corporation<br>C=US |
+| **件名** | CN=Microsoft RSA TLS CA 02<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
 | **発行者** | CN=Baltimore CyberTrust Root, OU=CyberTrust, O=Baltimore, C=IE |
 | **シリアル番号** | 0F:A7:47:22:C5:3D:88:C8:0F:58:9E:FB:1F:9D:4A:3A |

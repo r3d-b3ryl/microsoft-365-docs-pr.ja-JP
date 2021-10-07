@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
@@ -22,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: ナビゲーション バーの上部の既定のテーマを変更し、Microsoft 365ロゴや色に合わせてカスタマイズする方法について学習します。
-ms.openlocfilehash: f90f38546cce24d5bef11d7fb0ab7bc88a824bca
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: f6aa013d20cfedcc8d61d005e21db11c58cb5f6f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773221"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197810"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>組織のMicrosoft 365テーマをカスタマイズする
 
@@ -59,7 +60,7 @@ ms.locfileid: "59773221"
 
 1. 組織のテーマを以前にカスタマイズした場合は、[既定のテーマ] を選択して保存したカスタマイズのいずれかを使用するか、[テーマの追加]**を選択します**。
 2. [全般 **] ページ** では、ユーザーがテーマを上書きし、ユーザーの表示名を表示できます。
-3. **[保存]** を選択し、変更内容を保存します。  
+3. **[保存]** を選び、変更内容を保存します。  
 
 > [!IMPORTANT]
 > 既定のテーマは一意であり、名前を変更したり、組織内のすべてのユーザーに適用したりできない。 既定のテーマを削除するには、最初に他のすべてのテーマを削除する必要があります。
@@ -86,7 +87,7 @@ ms.locfileid: "59773221"
 - **代替ロゴ**: ロゴをポイントする URL の場所を追加します。 代替ロゴは、暗いテーマで使用Officeする必要があります。 既定のロゴと同じ要件。
 - **[オンクリック] リンク**: ロゴをポイントする URL の場所を追加します。 ロゴは、会社の Web サイトなど、任意の会社リソースへのリンクとして使用できます。 ロゴの URL の場所を選択しない場合は、既定でホーム ページOfficeされます。
 
-**[保存]** を選択し、変更内容を保存します。
+**[保存]** を選び、変更内容を保存します。
 
 :::image type="content" source="../../media/Logos_Tab.png" alt-text="スクリーンショット: ロゴ オプションを示す [ロゴ] タブ":::
 

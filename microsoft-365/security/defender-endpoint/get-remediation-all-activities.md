@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: v-jweston
 author: jweston-1
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 670656ff15f33b28f66da5af9fa105606b99ca01
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9f7e82d3ac4dce15f444f416e7dfb154188c093f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192750"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190523"
 ---
 # <a name="list-all-remediation-activities"></a>すべての修復作業を一覧表示する
 
@@ -61,7 +61,7 @@ ms.locfileid: "59192750"
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
 アプリケーション|RemediationTasks.Read.All|\'脅威と脆弱性管理の脆弱性情報の読み取り\'
-委任 (職場または学校アカウント)|RemediationTask.Read|\'脅威と脆弱性管理の脆弱性情報の読み取り\'
+委任 (職場または学校のアカウント)|RemediationTask.Read|\'脅威と脆弱性管理の脆弱性情報の読み取り\'
 
 ## <a name="properties"></a>プロパティ
 
@@ -77,7 +77,7 @@ dueOn|DateTime|この修復アクティビティの作成者セットの期限|2
 fixedDevices|.|固定されているデバイスの数|2
 id|String|この修復アクティビティの ID|097d9735-5479-4899-b1b7-77398899df92
 nameId|String|関連する製品名|Microsoft Silverlight
-priority|String|この修復アクティビティの作成者セットの優先度 (High\Medium\Low)|高
+priority|String|この修復アクティビティの作成者セットの優先度 (High\Medium\Low)|高い
 productId|String|関連する製品 ID|microsoft-_-silverlight
 productivityImpactRemediationType|String|いくつかの構成変更は、ユーザーに影響がないデバイスに対してだけ要求できます。 この値は、「すべての公開デバイス」または「ユーザーに影響を与えないデバイスのみ」の選択を示します。|AllExposedAssets
 rbacGroupNames|String|関連するデバイス グループ名|[ "Windows サーバー", "Windows 10" ]
@@ -89,7 +89,7 @@ requesterEmail|String|作成者の電子メール アドレス|globaladmin@UserN
 requesterId|String|Creator オブジェクト ID|r647211f-2e16-43f2-a480-16ar3a2a796r
 requesterNotes|String|この修復アクティビティに作成者が追加したメモ (フリー テキスト)|null
 scid|String|関連するセキュリティ推奨事項の SCID|null
-status|String|修復アクティビティの状態 (アクティブ/完了)|Active
+status|String|修復アクティビティの状態 (アクティブ/完了)|有効
 statusLastModifiedOn|DateTime|状態フィールドが更新された日付|2021-01-12T18:54:11.5499487Z
 targetDevices|Long|この修復が適用される公開デバイスの数|43
 title|String|この修復アクティビティのタイトル|Microsoft Silverlight の更新

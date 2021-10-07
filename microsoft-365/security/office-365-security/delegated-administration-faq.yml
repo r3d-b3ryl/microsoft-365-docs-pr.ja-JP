@@ -9,19 +9,19 @@ metadata:
   ms.date: 
   audience: ITPro
   ms.topic: troubleshooting
-  localization_priority: Normal
+  ms.localizationpriority: medium
   ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
   ms.custom:
   - seo-marvel-apr2020
   description: 管理者は、委任された管理タスクに関するよく寄せられる質問と回答を Microsoft パートナー Microsoft 365リセラー向けページで表示できます。
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: b62c1d53d4b2a482aeb91cea147ed9feaa4027c4
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.openlocfilehash: b3bf371ef0e726082c2d775bb63222f795b36671
+  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59192351"
+  ms.lasthandoff: 10/06/2021
+  ms.locfileid: "60190367"
 title: 代理管理に関する FAQ
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -58,7 +58,7 @@ sections:
   - question: >
       管理下の管理者がポリシーを変更するのを防ぐことはできますか?
     answer: >
-      いいえ。 Microsoft 365この機能は現在持っていません。
+      その必要はありません。 Microsoft 365この機能は現在持っていません。
   - question: >
       すべてのサブテナ間で統合レポートを取得できますか?
     answer: 管理する会社全体の統合レポートは、管理レポートMicrosoft 365 管理センターできません。 ただし、Microsoft を使用してレポートを[取得Graph。](/graph/overview)

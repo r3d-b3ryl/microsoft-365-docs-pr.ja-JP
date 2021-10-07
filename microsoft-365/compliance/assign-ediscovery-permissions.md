@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -20,12 +20,12 @@ description: 電子情報開示関連のタスクを実行するために必要�
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 8fda81c4318525744eaa51c8904a465e87159675
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2ff6a589ce8b4db6adf00a820eaf00b20f9f7bcc
+ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164215"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60217152"
 ---
 # <a name="assign-ediscovery-permissions-in-the-microsoft-365-compliance-center"></a>電子情報開示のアクセス許可をユーザーに割り当Microsoft 365 コンプライアンス センター
 
@@ -35,7 +35,7 @@ ms.locfileid: "59164215"
   
 - **電子情報開示マネージャー** - 電子情報開示検索ツールを使用して組織内のコンテンツの場所を検索し、検索結果のプレビューやエクスポートなど、さまざまな検索関連のアクションを実行できます。 メンバーは、Core eDiscovery および Advanced eDiscovery でケースを作成および管理したり、ケースにメンバーを追加および削除したり、ケースホールドを作成したり、ケースに関連付けられた検索を実行したり、ケース データにアクセスしたりできます。 電子情報開示マネージャーがアクセスして管理できるのは、自分で作成したケースだけです。 他の電子情報開示マネージャーが作成したケースの場合、アクセスまたは管理はできません。
   
-- **電子情報開示管理者** - 電子情報開示管理者は電子情報開示マネージャー役割グループのメンバーであり、電子情報開示マネージャーと同じコンテンツ検索やケース管理に関連するタスクを実行できます。 さらに、電子情報開示管理者は、次のことができます。
+- **電子情報開示管理者** - 電子情報開示管理者は、電子情報開示マネージャー役割グループのメンバーであり、電子情報開示マネージャーが実行できるのと同じコンテンツ検索およびケース管理関連のタスクを実行できます。 さらに、電子情報開示管理者は、次のことができます。
   
   - コア電子情報開示に記載されているすべてのケースにアクセスし、Advanced eDiscoveryページ **に** Microsoft 365 コンプライアンス センター。
 
@@ -56,7 +56,7 @@ ms.locfileid: "59164215"
   
 ## <a name="assign-ediscovery-permissions"></a>電子情報開示のアクセス許可を割り当てる
 
-1. アクセス許可を<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>アカウントを使用してサインインします。
+1. アクセス許可 <https://compliance.microsoft.com> を割り当て可能なアカウントを使用して、アクセスしてサインインします。
   
 2. 左側のウィンドウで、[アクセス許可] **を選択します**。
 
@@ -79,7 +79,7 @@ Microsoft 365 コンプライアンス センターの [アクセス許可] ペ�
 
 次の表に、Microsoft 365 コンプライアンス センター の電子情報開示関連の RBAC ロールを示し、各役割が既定で割り当てられている組み込みの役割グループを示します。
   
-| Role | コンプライアンス管理者 | 電子情報開示マネージャー &管理者 | 組織管理 | レビュー担当者 |
+| 役割 | コンプライアンス管理者 | 電子情報開示マネージャー &管理者 | 組織管理 | レビュー担当者 |
 |:-----|:-----:|:-----:|:-----:|:-----:|
 |ケース管理 <br/> |![チェック マーク。](../media/checkmark.png) <br/> |![チェック マーク。](../media/checkmark.png) <br/> |![チェック マーク。](../media/checkmark.png) <br/> | <br/> |
 |コミュニケーション <br/> | <br/> |![チェック マーク。](../media/checkmark.png) <br/> | <br/> | <br/> |
@@ -99,7 +99,7 @@ Microsoft 365 コンプライアンス センターの [アクセス許可] ペ�
 
 この役割を使用すると、ユーザーはコア電子情報開示へのアクセスを作成、編集、削除、および制御し、Advanced eDiscoveryケースにアクセスMicrosoft 365 コンプライアンス センター。 前に説明したように、**Add-eDiscoveryCaseAdmin** コマンドレットを使用してユーザーを電子情報開示管理者にするには、そのユーザーにケース管理の役割が割り当てられている必要があります。
 
-詳しくは、次のトピックを参照してください。
+詳細については、以下を参照してください。
 
 - [コア電子情報開示を開始する](get-started-core-ediscovery.md)
 
@@ -158,6 +158,30 @@ Microsoft 365 コンプライアンス センターの [アクセス許可] ペ�
 ### <a name="search-and-purge"></a>検索と消去
 
 この役割では、コンテンツ検索の条件に一致するデータの一括削除を行うことができます。 詳細については、「組織内の [電子メール メッセージを検索および削除する」を参照してください](search-for-and-delete-messages-in-your-organization.md)。
+
+## <a name="adding-role-groups-as-members-of-ediscovery-cases"></a>電子情報開示ケースのメンバーとしての役割グループの追加
+
+役割グループを Core eDiscovery および Advanced eDiscovery ケースのメンバーとして追加して、役割グループのメンバーが割り当てられたケースのタスクにアクセスして実行できます。 役割グループに割り当てられた役割は、役割グループのメンバーが実行できる操作を定義します。 その後、役割グループをケースのメンバーとして追加すると、メンバーは特定のケースでそれらのタスクにアクセスして実行できます。 ケースのメンバーとして役割グループを追加する方法の詳細については、以下を参照してください。
+
+- [コア電子情報開示を開始する](get-started-core-ediscovery.md#step-4-optional-add-members-to-a-core-ediscovery-case)
+
+- [ユーザー ケースにメンバーを追加またはAdvanced eDiscoveryする](add-or-remove-members-from-a-case-in-advanced-ediscovery.md)
+
+この点を念頭に置いて、役割が役割グループに追加または削除された場合、役割グループがメンバーである場合、その役割グループはメンバーとして自動的に削除されます。 その理由は、ケースのメンバーに不注意で追加のアクセス許可を与えてしまうのを組織が保護する理由です。 同様に、役割グループが削除された場合は、そのグループがメンバーだったすべてのケースから削除されます。
+
+電子情報開示ケースのメンバーである可能性がある役割グループに役割を追加または削除する前に [、Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) で次のコマンドを実行して、役割グループがメンバーであるケースの一覧を取得できます。 役割グループを更新した後、それらのケースのメンバーとして役割グループを追加し戻します。
+
+### <a name="get-a-list-of-role-groups-assigned-to-core-ediscovery-cases"></a>コア電子情報開示ケースに割り当てられた役割グループの一覧を取得する
+
+```powershell
+Get-ComplianceCase -RoleGroup "Name of role group"
+```
+
+### <a name="get-a-list-of-role-groups-assigned-to-advanced-ediscovery-cases"></a>ケースに割り当てられた役割グループの一覧Advanced eDiscoveryする
+
+```powershell
+Get-ComplianceCase -RoleGroup "Name of role group" -CaseType AdvancedEdiscovery
+```
 
 ## <a name="more-information"></a>詳細情報
 

@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: レビュー セット内のドキュメントにタグを付けると、不要なコンテンツを削除し、関連するコンテンツを特定Advanced eDiscoveryできます。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 83d8814a1cbc35e461c5bd459390a507bd675f5d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 43b0bf42bcd94f0bc3ade169ee5b41ee33dcbc5a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221837"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190715"
 ---
 # <a name="tag-documents-in-a-review-set-in-advanced-ediscovery"></a>レビュー セット内のドキュメントにタグを付Advanced eDiscovery
 

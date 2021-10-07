@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - Adm_NonTOC
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: d7941332-8aec-4e5e-87e8-92073ce73dc5
 ROBOTS: NOINDEX
 description: 組織のユーザー Power BIこのビジネス分析サービスを使用する方法について詳しくは、こちらをご覧ください。
-ms.openlocfilehash: 5301d3cd6b10101543741637014455aa2b2a207a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4b9a8df06cbb486afa878054c24d820bcb2af2e1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178792"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190115"
 ---
 # <a name="power-bi-in-your-organization"></a>組織内の Power BI
 
@@ -126,7 +126,7 @@ Microsoft によってテナントが作成されたら、次の手順に従っ�
 
 ユーザーが既存のテナントに参加するのを防ぐため、管理者として実行できる手順があります。 ユーザーがテナントに参加するのをブロックすると、ユーザーのサインイン試行は失敗し、組織の管理者に連絡する指示が表示されます。以前にライセンスの自動配布を既に無効にしている場合は、このプロセスを繰り返す必要があります (たとえば、学生、教職員、およびスタッフのOffice 365 Educationなど)。
   
-これらの手順では、Windows PowerShell を使う必要があります。 Windows PowerShell を使い始める場合は、「[PowerShell ファースト ステップ ガイド](/powershell/scripting/overview)」を参照してください。
+この手順を実行するには、Windows PowerShell を使う必要があります。Windows PowerShell を使用するには、「[PowerShell ファースト ステップ ガイド](/powershell/scripting/overview)」を参照してください。
   
 次の手順を実行するには、V2 PowerShell モジュールの最新の 64 ビット バージョンをインストールAzure Active Directory[する必要があります](https://www.powershellgallery.com/packages/AzureADPreview/2.0.2.5)。
   
@@ -200,7 +200,7 @@ To allow your existing users to sign up for Power BI, run the opposite command a
   
 ## <a name="are-there-any-additional-things-i-should-be-prepared-for"></a>事前に準備しておく必要のあるものが、他にもありますか?
 
-パスワード再設定の依頼が増えることがあります。 このプロセスの詳細については、「[ユーザーのパスワードを再設定する](../add-users/reset-passwords.md)」を参照してください。
+パスワードの再設定を要求される回数が増える場合があります。このプロセスの詳細については、「[ユーザーのパスワードを再設定する](../add-users/reset-passwords.md)」を参照してください。
   
 管理センターの標準プロセスを使用して、テナントからユーザーを削除できます。 ただし、ユーザーが組織のアクティブなメール アドレスをまだ持っている場合、すべてのユーザーの参加がブロックされていない限り、そのユーザーは再び参加することができます。
   

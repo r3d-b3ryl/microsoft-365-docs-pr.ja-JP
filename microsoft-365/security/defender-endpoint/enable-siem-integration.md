@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6adb1ed443dc39be3b6d56adc6c3dac65f37ee3d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c102583b2e3d8abc7995821870252946e48ccac6
+ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222734"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60217140"
 ---
 # <a name="enable-siem-integration-in-microsoft-defender-for-endpoint"></a>エンドポイント向け Microsoft Defender で SIEM 統合を有効にする
 
@@ -90,7 +90,7 @@ ms.locfileid: "59222734"
 
 ## <a name="integrate-microsoft-defender-for-endpoint-with-ibm-qradar"></a>Microsoft Defender for Endpoint と IBM QRadar の統合
 
-Microsoft Defender for Endpoint から検出を収集するために IBM QRadar を構成できます。 詳細については [、「IBM Knowledge Center」を参照してください](https://www.ibm.com/support/knowledgecenter/SS42VS_DSM/c_dsm_guide_MS_Win_Defender_ATP_overview.html?cp=SS42VS_7.3.1)。
+Microsoft Defender for Endpoint から検出を収集するために IBM QRadar を構成できます。 詳細については [、「IBM Knowledge Center」を参照してください](https://www.ibm.com/docs/en/qsip/7.3.2?topic=quick-start-guide)。
 
 ## <a name="see-also"></a>関連項目
 

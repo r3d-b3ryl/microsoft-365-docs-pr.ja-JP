@@ -7,7 +7,7 @@ ms.date: 09/30/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom: Adm_O365
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: ユーザーとオンプレミスの Active Directory の間Microsoft 365同期を設定する方法について学習します。
-ms.openlocfilehash: f6537e1c813e564b728891ffb13f644c3850a07e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 61b2dd822d0e65ebbf97ddcbfc3c8a03887c45a6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215683"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208735"
 ---
 # <a name="set-up-directory-synchronization-for-microsoft-365"></a>ユーザーのディレクトリ同期をMicrosoft 365
 

@@ -9,19 +9,19 @@ metadata:
   ms.date: 
   audience: ITPro
   ms.topic: troubleshooting
-  localization_priority: Normal
+  ms.localizationpriority: medium
   ms.assetid: 9d015a0d-52a0-484d-9a08-121d04f973d3
   ms.custom:
   - seo-marvel-apr2020
   description: EOP (EOP) フィルター 処理中にキューに入れ、延期、またはバウンスされたメッセージに関する最も一般的な質問Exchange Online Protectionを見つける。
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: c9c3343de6e61d660cf07e920661af8d996c3039
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.openlocfilehash: 4de909072409b1ee01adb79ecb8f324b76c6a2fd
+  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59211694"
+  ms.lasthandoff: 10/06/2021
+  ms.locfileid: "60190355"
 title: EOP のキューイング、保留、返送されるメッセージに関する FAQ
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]

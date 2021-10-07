@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ゲストとの会議に参加Teamsする方法について学習します。
-ms.openlocfilehash: 781e1aa242270588ba50a025ca0dd71c06354ad0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 13d5017e4136c24c0474622fb9fb4bb6f96c7899
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191850"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60177845"
 ---
 # <a name="join-a-teams-meeting-with-guests"></a>ゲストとの Teams の会議に参加する
 

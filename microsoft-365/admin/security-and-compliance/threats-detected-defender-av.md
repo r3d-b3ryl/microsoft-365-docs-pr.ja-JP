@@ -7,19 +7,20 @@ manager: scotv
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: ウイルス、マルウェアMicrosoft Defender ウイルス対策スパイウェアWindowsソフトウェアの脅威からデバイスを保護する方法について学習します。
-ms.openlocfilehash: 7894a1f2a3947a3d71f46bf0ca3797370db078f4
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 969cd707e40c9c7f665089cc1b9b6ddd45583982
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59772736"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178073"
 ---
 # <a name="threats-detected-by-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策によって検出された脅威
 

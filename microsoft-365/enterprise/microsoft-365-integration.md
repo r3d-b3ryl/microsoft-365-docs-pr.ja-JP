@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
@@ -22,12 +22,12 @@ search.appverid:
 - MED150
 ms.assetid: 263faf8d-aa21-428b-aed3-2021837a4b65
 description: この記事では、既存のディレクトリ サービスMicrosoft 365オンプレミス環境と統合する方法について学習します。
-ms.openlocfilehash: 87b456a0b44e4b38df6cec8e72713c6573917805
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 06e6ff598d064f14ffb89bcf88e78932cc621225
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215883"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198435"
 ---
 # <a name="microsoft-365-integration-with-on-premises-environments"></a>Microsoft 365環境との統合
 
@@ -44,7 +44,7 @@ Microsoft 365 管理センター のカスタマイズされたセットアッ�
 - [組織のディレクトリからユーザーを同期する](https://aka.ms/aadconnectpwsync)
 - [Active Directory フェデレーション サービス (AD FS) 展開アドバイザー](https://aka.ms/adfsguidance)
    
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 オンプレミス環境Microsoft 365統合する前に、ネットワーク計画とパフォーマンス[調整も行う必要があります](network-planning-and-performance.md)。 また、使用可能な ID モデルも [理解する必要があります](about-microsoft-365-identity.md)。 
 

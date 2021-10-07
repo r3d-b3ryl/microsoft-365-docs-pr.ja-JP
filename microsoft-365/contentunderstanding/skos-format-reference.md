@@ -8,14 +8,14 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection: enabler-strategic
-localization_priority: Priority
+ms.localizationpriority: high
 description: 「SharePoint 分類計画」のためのSKOSフォーマットの詳細
-ms.openlocfilehash: 4c08073f453ef0b6a224829b7d4cb4034b74ed14
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9ea3183bcf05755dcfb6d9391a2c59db63c35cb8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216093"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190595"
 ---
 # <a name="skos-format-reference-for-sharepoint-taxonomy"></a>「SharePoint 分類計画」のためのSKOSフォーマットの詳細
 
@@ -105,7 +105,7 @@ ex:TermSetA    a    sharepoint-taxonomy:TermSet;
 
 **sharepoint-taxonomy:hasTopLevelTerm**
 
-SharePoint では、このプロパティを使用して、[TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset)([TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset)の[用語](/dotnet/api/microsoft.sharepoint.taxonomy.term) の階層へのエントリポイント) の最上位 の[用語](/dotnet/api/microsoft.sharepoint.taxonomy.term) がマッピングされます。 これは、sharepoint-taxonomy:topLevelTermOfの逆リレーションシップです。
+SharePoint では、このプロパティを使用して、[TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset) の最上位の [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term) をマップします。これは、[TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset) の [Terms](/dotnet/api/microsoft.sharepoint.taxonomy.term) の階層へのエントリ ポイントです。これは、sharepoint-taxonomy:topLevelTermOf と逆の関係です。
 
 これを定義する構文は次のとおりです。
 
@@ -138,7 +138,7 @@ ex:TermA    sharepoint-taxonomy:topLevelTermOf    ex:TermSetA.
 
 **sharepoint-taxonomy:defaultLabel**
 
-[用語](/dotnet/api/microsoft.sharepoint.taxonomy.term)の必須パラメーターである、この[用語](/dotnet/api/microsoft.sharepoint.taxonomy.term)の既定の字句ラベルを使用します。 [用語](/dotnet/api/microsoft.sharepoint.taxonomy.term)を視覚的に表現するために使用します。
+[Term](/dotnet/api/microsoft.sharepoint.taxonomy.term) の既定の語彙ラベルを使用します。これは、[Term](/dotnet/api/microsoft.sharepoint.taxonomy.term) に必要なパラメーターです。[Term](/dotnet/api/microsoft.sharepoint.taxonomy.term) を視覚的に表すために使用します。
 
 DefaultLabel を定義する構文は次のとおりです。
 
@@ -194,7 +194,7 @@ ex:TermA    sharepoint-taxonomy:otherLabel    “Term A”@en-us.
 
 **sharepoint-taxonomy:parent**
 
-これにより、[用語](/dotnet/api/microsoft.sharepoint.taxonomy.term) が別の[用語](/dotnet/api/microsoft.sharepoint.taxonomy.term)に階層的に関連付けられます。 [用語](/dotnet/api/microsoft.sharepoint.taxonomy.term)は、[TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset)の最上位 [用語](/dotnet/api/microsoft.sharepoint.taxonomy.term)の場合もありますが、そうでない場合は親 [用語](/dotnet/api/microsoft.sharepoint.taxonomy.term)が必要です。
+これは、[Term](/dotnet/api/microsoft.sharepoint.taxonomy.term) を別の[Term](/dotnet/api/microsoft.sharepoint.taxonomy.term)に階層的に関連付けます。[Term](/dotnet/api/microsoft.sharepoint.taxonomy.term) は、[TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset) の最上位レベルの [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term) である可能性があります。ただし、関連付けしない場合は、親 [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term) が必要です。
 
 親を定義する構文は次のとおりです。
 

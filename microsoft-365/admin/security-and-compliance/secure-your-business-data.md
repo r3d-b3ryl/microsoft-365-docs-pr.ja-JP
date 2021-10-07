@@ -8,9 +8,10 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
@@ -23,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: ランサムウェア、フィッシング、悪意のある添付ファイルなどのサイバー脅威からビジネス メールとデータを保護する方法。
-ms.openlocfilehash: 4f983aa809cfa05439d49fef984ab0036709319c
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: a7640dd1fae74bf2a954dc02df14e05e63750fcd
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776262"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178109"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>ビジネス プランのセキュリティをMicrosoft 365するトップ 10 の方法
 
@@ -155,7 +156,7 @@ Microsoft では、次の記事で推奨されるアクションを実行して�
 
 6. **[保存]** を選択します。
     
-| 設定 | ファイルの添付ファイルを開く前にユーザーにOfficeする | ランサムウェアなどの悪意のあるコードを含む可能性のあるファイルの種類をブロックする |
+| Setting | ファイルの添付ファイルを開く前にユーザーにOfficeする | ランサムウェアなどの悪意のあるコードを含む可能性のあるファイルの種類をブロックする |
 |:-----|:-----|:-----|
 |名前  <br/> |ランサムウェア対策ルール: ユーザーに警告する  <br/> |ランサムウェア対策ルール: ファイルの種類をブロックする  <br/> |
 |場合は、このルールを適用します。 . .  <br/> |任意の添付ファイル 。 . . ファイル拡張子が一致します。 . .  <br/> |任意の添付ファイル 。 . . ファイル拡張子が一致します。 . .  <br/> |
@@ -191,7 +192,7 @@ Microsoft では、次の記事で推奨されるアクションを実行して�
 
 6. **[保存]** を選択します。
 
-|設定|外部ドメインへのメールの自動転送を拒否する|
+|Setting|外部ドメインへのメールの自動転送を拒否する|
 |---|---|
 |名前|外部ドメインへの電子メールの自動転送を防止する|
 |... の場合は、このルールを適用します。|送信者 。 . . は外部/内部です。 . . 組織内|

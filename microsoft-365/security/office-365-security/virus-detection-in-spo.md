@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: Admin
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - SPO160
 - MOE150
@@ -20,12 +20,12 @@ description: ユーザーがアップロードSharePointファイル内のウイ
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2ab11d4c1e2a064ad0717e6619f72a38b0cbc831
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ddb424458e991becefb98efbad5b2a86c5f9441c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211503"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208903"
 ---
 # <a name="built-in-virus-protection-in-sharepoint-online-onedrive-and-microsoft-teams"></a>オンライン、SharePoint、およびOneDriveに組み込Microsoft Teams
 

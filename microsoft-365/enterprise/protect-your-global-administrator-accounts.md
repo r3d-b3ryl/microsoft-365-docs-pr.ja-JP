@@ -7,7 +7,7 @@ ms.date: 09/30/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - m365initiative-coredeploy
@@ -22,12 +22,12 @@ f1.keywords:
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: この記事では、サブスクリプションへのグローバル管理者アクセスの保護に関Microsoft 365します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3a43c8b6ac5389be99581302c249e431853ba99b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9693a8321643539e21ff10f3c624a0558916eb29
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215783"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198351"
 ---
 # <a name="protect-your-microsoft-365-global-administrator-accounts"></a>グローバル管理者Microsoft 365アカウントを保護する
 
@@ -35,9 +35,9 @@ ms.locfileid: "59215783"
 
 Microsoft 365 サブスクリプションのセキュリティ侵害 (情報の収集やフィッシング攻撃など) は、通常、Microsoft 365 グローバル管理者アカウントの資格情報を侵害することで行われます。 クラウドのセキュリティは、お客様と Microsoft のパートナーシップです。
   
-- Microsoft クラウド サービスは、信頼とセキュリティの基盤の上に構築されています。 Microsoft は、データとアプリケーションの保護に役立つセキュリティ制御と機能を提供します。
+- Microsoft クラウド サービスは信頼とセキュリティの基盤の上に構築されます。 Microsoft が提供するセキュリティ制御と機能は、お客様のデータとアプリケーションの保護に役立ちます。
     
-- ユーザーは、データと ID、およびデータを保護する責任、オンプレミス リソースのセキュリティ、および制御するクラウド コンポーネントのセキュリティを所有します。
+- お客様はご自分のデータと ID を所有しており、それらとオンプレミス リソースのセキュリティ、およびご自分が制御しているクラウド コンポーネントのセキュリティを保護する責任を担っています。
     
 Microsoft では、組織の保護に役立つ機能を提供していますが、組織を使用する場合にのみ有効です。 それらを使用しない場合は、攻撃に対して脆弱になる可能性があります。 グローバル管理者アカウントを保護するために、Microsoft は以下の詳細な手順を支援します。
   
@@ -91,7 +91,7 @@ Microsoft では、組織の保護に役立つ機能を提供していますが�
 > [!NOTE]
 > これには、日常のユーザー アカウントとしてサインアウトし、専用のグローバル管理者アカウントでサインインするための追加の手順が必要です。 ただし、これはグローバル管理者の操作に対して時折行う必要があります。 グローバル管理者アカウント侵害後にMicrosoft 365サブスクリプションを回復するには、さらに多くの手順が必要です。
   
-## <a name="step-2-configure-multi-factor-authentication-for-your-dedicated-microsoft-365-global-administrator-accounts"></a>手順 2。 グローバル管理者アカウント専用の複数要素認証Microsoft 365構成する
+## <a name="step-2-configure-multi-factor-authentication-for-your-dedicated-microsoft-365-global-administrator-accounts"></a>手順 2. グローバル管理者アカウント専用の複数要素認証Microsoft 365構成する
 
 多要素認証 (MFA) には、アカウント名とパスワード以外の追加情報が必要です。 Microsoft 365は、次の追加の検証方法をサポートしています。
   
@@ -113,7 +113,7 @@ Microsoft では、組織の保護に役立つ機能を提供していますが�
     
 ハイブリッド ID モデルを使用している大規模な組織Microsoft 365、より多くの検証オプションがあります。 より強力なセカンダリ認証方法のセキュリティ インフラストラクチャが既に用意されている場合は [、MFA](../admin/security-and-compliance/set-up-multi-factor-authentication.md) をセットアップし、各専用のグローバル管理者アカウントを適切な検証方法用に構成します。
   
-必要な強力な検証方法のセキュリティ インフラストラクチャが Microsoft 365 MFA に対して機能していない場合は、Microsoft Authenticator アプリ、電話、または暫定的なセキュリティ対策として、グローバル管理者アカウント用にスマートフォンに送信されるテキスト メッセージ検証コードを使用して、MFA を使用して専用のグローバル管理者アカウントを構成することを強く推奨します。 MFA によって提供される追加の保護がない場合は、専用のグローバル管理者アカウントを残しません。
+目的の強力な検証方法のセキュリティ インフラストラクチャが Microsoft 365 MFA で機能していない場合は、Microsoft Authenticator アプリ、電話、または暫定的なセキュリティとして、スマートフォンに送信されるテキスト メッセージ検証コードを使用して、MFA を使用して専用のグローバル管理者アカウントを構成することを強く推奨します。メジャー。 MFA によって提供される追加の保護がない場合は、専用のグローバル管理者アカウントを残しません。
   
 詳細については[、「MFA for Microsoft 365」 を参照してください](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md)。
   

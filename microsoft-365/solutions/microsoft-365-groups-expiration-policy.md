@@ -8,7 +8,7 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: グループのMicrosoft 365ポリシーについて説明します。
-ms.openlocfilehash: 4617124801ed0400481bd81a453c6520a0c8d73a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: abfcc6947adc33610dee02b6b92447ce4c0d5412
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214113"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208867"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365有効期限ポリシー
 
@@ -51,10 +51,10 @@ ms.locfileid: "59214113"
 
 ## <a name="who-can-configure-and-use-the-microsoft-365-groups-expiration-policy"></a>Whoグループの有効期限ポリシーを構成Microsoft 365使用できますか?
 
-|Role|実行できる操作|
+|役割|実行できる操作|
 |---------|---------|
 |Office 365管理者 (Azure、会社管理者)、ユーザー管理者|有効期限ポリシー設定を作成、読み取り、更新Microsoft 365削除します。|
-|User|自分が[所有するMicrosoft 365](/azure/active-directory/users-groups-roles/groups-restore-deleted)グループを更新または復元する|
+|ユーザー|自分が[所有するMicrosoft 365](/azure/active-directory/users-groups-roles/groups-restore-deleted)グループを更新または復元する|
 
 ## <a name="how-to-set-the-expiration-policy"></a>有効期限ポリシーを設定する方法
 
@@ -84,7 +84,7 @@ ms.locfileid: "59214113"
 
 使用する予定がないグループがあるが、そのコンテンツを保持する場合は、「アーカイブ グループ、チーム、[および Yammer」](end-life-cycle-groups-teams-sites-yammer.md)を参照して、さまざまなグループ サービスから情報をエクスポートする方法について確認してください。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [コラボレーション ガバナンス計画のステップ バイ ステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 

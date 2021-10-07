@@ -6,7 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.reviewer: mkaminska
@@ -16,12 +16,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 08/31/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 946027419feca235442476db41533fb29adc6007
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: f23ff6ccbde512b8c8b3f1da36e86ede1c2d0324
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59490753"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208567"
 ---
 # <a name="cloud-protection-and-sample-submission-in-microsoft-defender-antivirus"></a>クラウド保護とサンプル申請 (Microsoft Defender ウイルス対策
 
@@ -107,7 +107,7 @@ Intune、Configuration Manager、GPO、または PowerShell を使用した構�
 
 次の表に、クラウド保護によって分析のために送信されるメタデータの例を示します。
 
-| 種類 | 属性 |
+| 型 | 属性 |
 |:---|:---|
 | コンピューターの属性 | `OS version` <br/> `Processor` <br/> `Security settings` |
 | 動的属性とコンテキスト属性 | **プロセスとインストール** <br/> `ProcessName` <br/> `ParentProcess` <br/> `TriggeringSignature` <br/> `TriggeringFile` <br/> `Download IP and url` <br/> `HashedFullPath` <br/> `Vpath` <br/> `RealPath` <br/> `Parent/child relationships` <br/><br/>**動作** <br/> `Connection IPs` <br/> `System changes` <br/> `API calls` <br/> `Process injection` <br/><br/>**Locale** <br/> `Locale setting` <br/> `Geographical location` |

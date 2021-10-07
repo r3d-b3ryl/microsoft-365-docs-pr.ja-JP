@@ -10,18 +10,18 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: レビュー セットにコミットされた下書きコレクションとコレクションの統計とレポートにアクセスして使用する方法についてAdvanced eDiscovery。
-ms.openlocfilehash: d5c1fa3ccb8d9657570b7d0bf3640ac1834248d9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 32867324dfef6cd0e7c9d7a5a396d066e5b5ad67
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164047"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197703"
 ---
 # <a name="collection-statistics-and-reports-in-advanced-ediscovery"></a>コレクションの統計情報とレポート (Advanced eDiscovery
 

@@ -7,7 +7,7 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 - m365solution-collabgovernance
@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: グループ、チーム、およびグループのライフサイクルのYammer。
-ms.openlocfilehash: fccdf838b7ebec6a1ab1fae2f709824bfbd3b6d1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 883af3878bd0bc68aa539fc1cc36b66c4f1cfe9e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192251"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190127"
 ---
 # <a name="end-of-lifecycle-options-for-groups-teams-and-yammer"></a>グループ、チーム、およびグループのライフサイクルのYammer
 
@@ -43,7 +43,7 @@ Microsoft 365グループとグループMicrosoft Teams複数の接続された�
 |Project上の情報|Projectプラン|
 |ロードマップ|ロードマップ|
 |SharePoint|ファイル、リスト、Teamsチャネル Wiki データ|
-|Stream|動画|
+|Stream|ビデオ|
 |Yammer|会話|
 
 グループまたはチームを削除すると、関連付けられているリソースのほとんども削除されます。 例外は次のとおりです。
@@ -267,6 +267,6 @@ Microsoft TeamsのMicrosoft Teams、Yammerユーザーと管理者の両方が�
 
 Yammer管理者がネットワーク[データをエクスポートします](/yammer/manage-security-and-compliance/export-yammer-enterprise-data)。 ただし、そうすると、ネットワーク全体のすべての会話がエクスポートされます。 結果のエクスポートには、グループ ID が一覧表示されます。 この ID に基づいて会話をフィルター処理できます。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [元従業員を削除し、データをセキュリティで保護する](/microsoft-365/admin/add-users/remove-former-employee)

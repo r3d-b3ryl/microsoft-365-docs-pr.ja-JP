@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コア電子情報開示の使用を開始する方法についてMicrosoft 365。 電子情報開示のアクセス許可を割り当て、ケースを作成したら、メンバーの追加、電子情報開示ホールドの作成、調査に関連するコンテンツの検索とエクスポートを行います。
-ms.openlocfilehash: aa6e1efb6ef3a773eaae697fcc60a4293967d845
-ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
+ms.openlocfilehash: d8827f5f63e0fc0432aef7869436112c00ca4151
+ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59498222"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60217176"
 ---
 # <a name="get-started-with-core-ediscovery-in-microsoft-365"></a>コア電子情報開示の使用をMicrosoft 365
 
@@ -129,6 +129,9 @@ Core 電子情報開示にアクセスしたり、コア電子情報開示ケー
 4. ケースのメンバーとして追加できるユーザーまたは役割グループの一覧で、追加するユーザー (または役割グループ) の名前の左側をクリックします。 メンバーとして追加できるユーザーまたは役割グループの大きなリストがある場合は、[検索] ボックスを使用して、リスト内の特定のユーザーまたは役割グループを検索します。
   
 5. ケースのメンバーとして追加するユーザーまたは役割グループを選択した後、[保存]をクリックして新しいメンバーまたは役割グループを保存します。
+
+> [!IMPORTANT]
+> ケースのメンバーとして追加した役割グループから役割が追加または削除された場合、その役割グループはケースのメンバー (または役割グループがメンバーである場合) として自動的に削除されます。 その理由は、ケースのメンバーに不注意で追加のアクセス許可を与えてしまうのを組織が保護する理由です。 同様に、役割グループが削除された場合は、そのグループがメンバーだったすべてのケースから削除されます。 詳細については、「[電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md#adding-role-groups-as-members-of-ediscovery-cases)」を参照してください。電子情報開示のアクセス許可を割り当てる」を参照してください。
 
 ## <a name="explore-the-core-ediscovery-workflow"></a>コア電子情報開示ワークフローの詳細
 

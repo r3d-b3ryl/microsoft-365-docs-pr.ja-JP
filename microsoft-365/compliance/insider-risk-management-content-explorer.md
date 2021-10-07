@@ -2,7 +2,7 @@
 title: Insider リスク管理 コンテンツ エクスプローラー
 description: インサイダー リスク管理について詳しくは、Microsoft 365
 keywords: Microsoft 365, インサイダー リスク管理, リスク管理, コンプライアンス
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: b76194037dec0ca6a660d2024a35c3376f06eab2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 30600241881ccb4203c3ea1015d8c54a680458ff
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175824"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190739"
 ---
 # <a name="insider-risk-management-content-explorer"></a>Insider リスク管理 コンテンツ エクスプローラー
 
@@ -70,11 +70,11 @@ ms.locfileid: "59175824"
 | **機密情報の種類** | コンテンツで識別される機密情報の種類。 |
 | **秘密度ラベル** | コンテンツに適用される感度ラベル。 |
 | **Sent** | 送信者によって電子メール メッセージが送信された日付。 このフィールドは、送信電子メール プロパティと同じプロパティです。 |
-| **サイズ** | メールとドキュメントのいずれの場合も、アイテムのサイズ (バイト単位)。 |
+| **Size** | メールとドキュメントのいずれの場合も、アイテムのサイズ (バイト単位)。 |
 | **[件名]** | 電子メール メッセージの件名行に含まれるテキスト。 |
 | **件名/タイトル** | メールの場合、メッセージの件名行のテキスト。 ドキュメントの場合、ドキュメントのタイトル。 前述したように、Title プロパティは Microsoft Office ドキュメントに指定されたメタデータです。 複数の件名とタイトルをコンマで区切って入力できます。 2 つ以上の値は、OR 演算子によって論理的に結合されます。 |
 | **テーマリスト** | 分析用に計算されたテーマの一覧。 |
-| **Title** | ドキュメントのタイトル。 Title プロパティは、Office ドキュメントに 指定されているメタデータです。 ドキュメントのファイル名とは異なります。 |
+| **タイトル** | ドキュメントのタイトル。 Title プロパティは、Office ドキュメントに 指定されているメタデータです。 ドキュメントのファイル名とは異なります。 |
 | **To** | [宛先] フィールドにある、メール メッセージの受信者。 |
 
 ## <a name="filtering"></a>フィルター処理

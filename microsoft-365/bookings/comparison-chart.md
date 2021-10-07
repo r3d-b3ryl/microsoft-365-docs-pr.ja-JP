@@ -6,15 +6,15 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d586eb28-b752-4c46-bf92-00a0c5ad781d
 description: Bookings Web アプリと Bookings Web アプリの機能の違いを示す比較Teamsです。
-ms.openlocfilehash: de207f2f194fff07fcc07f2f278d4a2135d4585b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 594674584c189dc03d60ec49c5b3a0fbb4ce34eb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59190590"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189803"
 ---
 # <a name="comparison-chart-bookings-web-app-vs-bookings-teams-app"></a>比較グラフ: Bookings Web app vs. Bookings Teamsアプリ
 
@@ -22,7 +22,7 @@ ms.locfileid: "59190590"
 
 Teams機能は随時追加され、引き続きこの一覧を更新します。 詳細については **、「FAQ」** の「元の Bookings Web アプリのすべての機能は、Microsoft Teamsで使用できますか [」を参照](bookings-faq.yml)してください。
 
-| 特徴 | Bookings Web アプリ | 予約Teamsアプリ |
+| 機能 | Bookings Web アプリ | 予約Teamsアプリ |
 |:---|:---|:---|
 | 新しい予約カレンダーを作成する | はい | はい |
 | 予約カレンダーのスタッフの追加と削除 | はい | はい |

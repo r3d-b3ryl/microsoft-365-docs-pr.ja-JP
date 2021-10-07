@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +23,12 @@ ms.custom:
 - okr_smb
 - AdminTemplateSet
 description: 各受信者の名前を入力Microsoft 365 管理センターグループに電子メールを送信できるよう、配布グループまたはリストを作成します。
-ms.openlocfilehash: 43453f54a9ae6c8bea90f58a2a3774b5c8cdca91
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 4eb98e0be0dcfef8d1648aabe4c9a35106814e52
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775362"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197823"
 ---
 # <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>グループ内に配布グループを作成Microsoft 365 管理センター
   

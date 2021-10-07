@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 05/21/2018
 ms.technology: mde
-ms.openlocfilehash: d5fa34de0394c1455fccb70a875fe12cddee3ed8
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: d2e466bd728e546cfae546c16994eb1f68446657
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400326"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178433"
 ---
 # <a name="review-events-and-errors-using-event-viewer"></a>イベント ビューアーを使用してイベントとエラーを確認する
 
@@ -57,13 +57,13 @@ ms.locfileid: "59400326"
 
    ****
 
-   |イベント ID|メッセージ|説明|操作|
+   |イベント ID|メッセージ|説明|アクション|
    |---|---|---|---|
    |1|Microsoft Defender for Endpoint service が開始されました (バージョン `variable` )。|システムの起動時、シャットダウン中、オンボーディング中に発生します。|通常の動作通知。アクションは必要ありません。|
    |2|Microsoft Defender for Endpoint service shutdown.|デバイスがシャットダウンまたはオフボードされている場合に発生します。|通常の動作通知。アクションは必要ありません。|
    |3|Microsoft Defender for Endpoint service の開始に失敗しました。 エラー コード: `variable` .|サービスが開始しなかった。|他のメッセージを確認して、考えられる原因とトラブルシューティングの手順を確認します。|
    |4 |Microsoft Defender for Endpoint service がでサーバーに連絡しました `variable` 。|Variable = Defender for Endpoint 処理サーバーの URL。 <p> この URL は、ファイアウォールまたはネットワーク アクティビティに表示される URL と一致します。|通常の動作通知。アクションは必要ありません。|
-   |5 |Microsoft Defender for Endpoint service でサーバーへの接続に失敗しました `variable` 。|Variable = Defender for Endpoint 処理サーバーの URL。 <p> サービスは、その URL の外部処理サーバーに接続できません。|URL への接続を確認します。 「Configure [proxy and Internet connectivity」を参照してください](configure-proxy-internet.md)。|
+   |5|Microsoft Defender for Endpoint service でサーバーへの接続に失敗しました `variable` 。|Variable = Defender for Endpoint 処理サーバーの URL。 <p> サービスは、その URL の外部処理サーバーに接続できません。|URL への接続を確認します。 「Configure [proxy and Internet connectivity」を参照してください](configure-proxy-internet.md)。|
    |6 |Microsoft Defender for Endpoint Service はオンボードされていないので、オンボーディング パラメーターが見つかりませんでした。|デバイスが正しくオンボードされていないので、ポータルに報告されません。|サービスを開始する前にオンボーディングを実行する必要があります。 <p> オンボーディング設定とスクリプトが適切に展開されていることを確認します。 構成パッケージを再展開してみてください。 <p> 「[オンボード デバイスWindows 10」を参照してください](configure-endpoints.md)。|
    |7 |Microsoft Defender for Endpoint service では、オンボーディング パラメーターの読み取りが失敗しました。 失敗: `variable` .|変数 = 詳細なエラーの説明。 デバイスが正しくオンボードされていないので、ポータルに報告されません。|オンボーディング設定とスクリプトが適切に展開されていることを確認します。 構成パッケージを再展開してみてください。 <p> 「[オンボード デバイスWindows 10」を参照してください](configure-endpoints.md)。|
    |8 |Microsoft Defender for Endpoint service では、構成のクリーンアップに失敗しました。 エラー コード: `variable` .|**オンボーディング中:** サービスは、オンボーディング中に構成のクリーンアップに失敗しました。 オンボーディング プロセスは続行されます。 <p> **オフボード中:** サービスは、オフボード中に構成のクリーンアップに失敗しました。 オフボード プロセスは終了しましたが、サービスは実行を続ける。|**オンボーディング:** アクションは不要です。 <p> **オフボード:** システムを再起動します。 <p> 「[オンボード デバイスWindows 10」を参照してください](configure-endpoints.md)。|

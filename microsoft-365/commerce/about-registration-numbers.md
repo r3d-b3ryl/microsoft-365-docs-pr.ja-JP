@@ -9,7 +9,7 @@ ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ ms.custom:
 - commerce_purchase
 description: Microsoft 製品またはサービスを購入する際の登録番号とレビュー中の通知について説明します。
 ms.date: 09/21/2021
-ms.openlocfilehash: bc40d4253e0d56c06e0bc7c4be1d1fae9729ead4
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 87a9b115464a2e8f0d09335522fda7c887413a05
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491053"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60177821"
 ---
 # <a name="about-registration-numbers-and-under-review-notifications"></a>登録番号とレビュー中の通知について
 

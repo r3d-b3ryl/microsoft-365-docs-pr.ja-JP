@@ -12,7 +12,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.date: 07/09/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: d7474a3cb2f04627c5da16f84dbde6d195021551
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2a3e2949cd05a72c949bad4a55c10fcb84b1f4f2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192550"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198087"
 ---
 # <a name="review-architecture-requirements-and-key-concepts-for-microsoft-defender-for-identity"></a>Microsoft Defender for Identity のアーキテクチャ要件と主な概念を確認する
 
@@ -76,7 +76,7 @@ Defender for Identity のアーキテクチャの詳細については、「Micr
 | ネットワーク名の解決    |  ネットワーク名解決 (NNR) は、ネットワーク トラフィック、Windows イベント、ETW などに基づいてアクティビティをキャプチャし、この生データを各アクティビティに関係する関連するコンピューターに関連付ける MDI 機能のコンポーネントです。       | [ネットワーク名の解決とは](/defender-for-identity/nnr-policy)      |
 | レポート    | Defender for Identity レポートを使用すると、システムとエンティティの状態情報を提供するレポートをスケジュールまたは即座に生成およびダウンロードできます。  システムの正常性、セキュリティアラート、および環境で検出された潜在的な横方向の移動パスに関するレポートを作成できます。   | [Microsoft Defender for Identity Reports ](/defender-for-identity/reports)       |
 | 役割グループ    | Defender for Identity は、管理者、ユーザー、閲覧者を含む組織の特定のセキュリティとコンプライアンスのニーズに応じて、役割ベースのグループと委任されたアクセスを提供します。        |  [Microsoft Defender for Identity の役割グループ](/defender-for-identity/role-groups)       |
-| 管理ポータル    |  セキュリティ ポータルにMicrosoft 365 Defender、Defender for Identity ポータル キャブを使用して、疑わしいアクティビティの監視と対応を行います。      | [Microsoft Defender for Identity ポータルの操作](/defender-for-identity/workspace-portal)        |
+| 管理ポータル    |  セキュリティ ポータルにMicrosoft 365 Defender、Defender for Identity ポータル キャブを使用して、疑わしいアクティビティの監視と対応を行います。      | [Microsoft Defender for Identity ポータルとの連携](/defender-for-identity/workspace-portal)        |
 | Microsoft Cloud App Security統合   | Microsoft Cloud App Security Microsoft Defender for Identity と統合して、クラウド アプリとオンプレミスの両方のハイブリッド環境全体でユーザー エンティティの動作分析 (UEBA) を提供する   | Id 統合用 Microsoft Defender  |
 | | | |
 

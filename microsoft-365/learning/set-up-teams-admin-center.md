@@ -14,14 +14,14 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-learning
 ms.custom: admindeeplinkTEAMS
-localization_priority: None
+ms.localizationpriority: ''
 description: 管理センターでMicrosoft Viva ラーニング (プレビュー) を構成Teamsします。
-ms.openlocfilehash: 55376371361ffb54b567ce9c3e7e12cd462b162b
-ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
+ms.openlocfilehash: 4a54bc478c22d7a7ba3cb64c7efe69153882e308
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59477649"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198327"
 ---
 # <a name="set-up-microsoft-viva-learning-preview-in-the-teams-admin-center"></a>管理センター Microsoft Viva ラーニング (プレビュー) のTeams設定する
 

@@ -10,14 +10,14 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.custom: ''
 search.appverid: ''
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 組織のユーザー向け試用版パイロット プログラムを計画Microsoft Viva トピックする方法について学習します。
-ms.openlocfilehash: 783c84e0b7d14c51269672bc49902f02bdedd0e3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9e0aff8f2c4ce339af44261becc1b0ebd0a39445
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189530"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178721"
 ---
 # <a name="run-a-trial-of-microsoft-viva-topics"></a>テストの試用版を実行Microsoft Viva トピック
 
@@ -54,7 +54,7 @@ ms.locfileid: "59189530"
 
 計画は、ビバ トピックスの効果的な試用に不可欠です。 試用期間には制限があり、トピックの検出とトピックの品質、管理、およびエンド ユーザー エクスペリエンスの探索を含める必要があります。
 
-#### <a name="discovery"></a>Discovery
+#### <a name="discovery"></a>検出
 
 試用版中のトピック検出の構成には、次の 2 つの大きな戦略オプションがあります。
 

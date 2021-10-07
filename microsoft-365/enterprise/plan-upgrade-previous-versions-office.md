@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: Ent_O365
@@ -16,12 +16,12 @@ f1.keywords:
 ms.custom:
 - seo-marvel-apr2020
 description: この記事には、2007 年または 2010 年Office 2010 年Officeアップグレードの計画に役立つユーザー向けリソースが含まれている。
-ms.openlocfilehash: 1e4379510ba6c4cf36200a6f49f56aa11a151140
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f5a8c3e4f1e3576684ea037609c39ff8511186e2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179711"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208771"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Office 2007 または Office 2010 サーバー/クライアントからアップグレードする計画を立てる
 
@@ -91,7 +91,7 @@ Microsoft 365は、Microsoft クラウドによって有効およびセキュリ
 
 - **ブラウザー Officeを無料で使用します。** ブラウザーでファイルを作成、表示Office編集します。 インターネットにアクセスできるデバイスに関する情報から、これらのファイルにアクセスできます。 
 
-  [Office on the web](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online)には[](https://go.microsoft.com/fwlink/p/?linkid=746665)、Word for the web、Excel for the web、PowerPoint for the web、OneNote for the web [](https://go.microsoft.com/fwlink/p/?linkid=746664) [、Sway、Email、Calendar、](https://go.microsoft.com/fwlink/p/?linkid=746675)および[](https://go.microsoft.com/fwlink/p/?linkid=746674)OneDrive が[含まれます](https://go.microsoft.com/fwlink/p/?linkid=746679)。 [](https://go.microsoft.com/fwlink/p/?linkid=746666) [](https://go.microsoft.com/fwlink/p/?linkid=746676) [](https://go.microsoft.com/fwlink/p/?linkid=746678) 開始するには、Office.com にアクセス[し、Microsoft](https://office.com)アカウントを使用して[サインインします](https://account.microsoft.com/account)。 Microsoft アカウントをお持ちでない場合は[、Office.com で作成できます](https://office.com)。
+  [Office on the web](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online)には[、Word for the web](https://go.microsoft.com/fwlink/p/?linkid=746664) [、Excel for the web、PowerPoint for the web、OneNote for the web](https://go.microsoft.com/fwlink/p/?linkid=746665) [、Sway](https://go.microsoft.com/fwlink/p/?linkid=746675)、[メール](https://go.microsoft.com/fwlink/p/?linkid=746676)、[](https://go.microsoft.com/fwlink/p/?linkid=746674)[予定表](https://go.microsoft.com/fwlink/p/?linkid=746678)、および[](https://go.microsoft.com/fwlink/p/?linkid=746666)[OneDrive](https://go.microsoft.com/fwlink/p/?linkid=746679). 開始するには、Office.com にアクセス[し、Microsoft](https://office.com)アカウントを使用して[サインインします](https://account.microsoft.com/account)。 Microsoft アカウントをお持ちでない場合は[、Office.com で作成できます](https://office.com)。
 
 - **試Microsoft 365 Family。** アプリケーションの試用版を[Microsoft 365 Family、](https://www.microsoft.com/microsoft-365/p/microsoft-365-family/cfq7ttc0k5dm?rtc=2&activetab=pivot:overviewtab)その動作を確認します。 このMicrosoft 365 Family、クラウド ストレージとクラウド ストレージをOneDrive。
 
@@ -112,6 +112,6 @@ Microsoft 365は、Microsoft クラウドによって有効およびセキュリ
 - [Office 2007 サーバー/クライアントからアップグレードする](upgrade-from-office-2007-servers-and-products.md)
 - [Office 2010 サーバー/クライアントからアップグレードする](upgrade-from-office-2010-servers-and-products.md)
    
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
   
 [Microsoft のライフサイクル ポリシー](/lifecycle/)

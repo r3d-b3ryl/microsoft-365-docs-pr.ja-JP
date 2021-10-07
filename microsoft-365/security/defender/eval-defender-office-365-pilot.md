@@ -12,7 +12,7 @@ f1.keywords:
 ms.author: tracyp
 author: MSFTTracyP
 ms.date: 05/25/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: 5e2588361cfc416b8d7aa8b51b8e12ded8a7ceca
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ef91bf7b4d3cdb2e4e335215a3b4f068ccdfe645
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220004"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198111"
 ---
 # <a name="pilot-microsoft-defender-for-office-365"></a>パイロット Microsoft Defender for Office 365
 **適用対象:**
@@ -122,7 +122,7 @@ MDO を評価する際に推奨されるベースライン ポリシーから始
 
 次の表は、カスタム保護ポリシーの構成と割り当てに関するリファレンスと追加のガイダンスを示しています。
 
-|ポリシー   |説明  |参照  |
+|ポリシー   |説明  |リファレンス  |
 |:---------:|---------|---------|
 |接続フィルター     |    IP アドレスを使用して、適切または悪い送信元メール サーバーを識別します。     |     [EOP で既定の接続フィルター ポリシーを構成する](../office-365-security/configure-the-connection-filter-policy.md)    |
 |マルウェア対策    |    ユーザーを電子メール マルウェアから保護します。その中には、実行するアクションやマルウェアが検出された場合に通知するユーザーが含されます。     |    [EOP でマルウェア対策ポリシーを構成する](../office-365-security/configure-anti-malware-policies.md)     |

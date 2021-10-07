@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_Enterprise
 - M365-subscription-management
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: この記事では、複数要素認証をサポートするプラットフォーム、クライアント、および PowerShell モジュールについてMicrosoft 365。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8749c05e3f7ce5dacf7d3ed1eaa46a46a20482d5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2b96e25355bf5dde302bf400fec25f4bafb6b0a6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215913"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178769"
 ---
 # <a name="microsoft-365-client-app-support-multi-factor-authentication"></a>Microsoft 365クライアント アプリのサポート: 多要素認証
 

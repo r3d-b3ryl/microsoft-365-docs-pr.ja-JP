@@ -6,14 +6,14 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: scheduler
-localization_priority: Normal
+ms.localizationpriority: medium
 description: FAQ のMicrosoft 365スケジューラ
-ms.openlocfilehash: 423660785e51a61cbff9fa2849b9466feddfc1c1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: da00bf841c41d1bda589142a680d948796db3b45
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163823"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178541"
 ---
 # <a name="scheduler-for-microsoft-365-faqs"></a>FAQ のMicrosoft 365スケジューラ
 

@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: フィッシング、マルウェア、その他のOffice 365から機密データを保護するために Microsoft Defender をセットアップします。
-ms.openlocfilehash: 92b4ca45e03995fb3586f1abce9301de7ec33570
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: 60a84b972618444fcddc4165235eef909f4341c5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59934049"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178169"
 ---
 # <a name="increase-threat-protection"></a>驚異の保護を強化する
 
@@ -82,7 +82,7 @@ ms.locfileid: "59934049"
 
 6. **[保存]** を選択します。
 
-|設定値|ファイルの添付ファイルを開く前にユーザーにOfficeする|
+|Setting|ファイルの添付ファイルを開く前にユーザーにOfficeする|
 |---|---|
 |名前|ランサムウェア対策ルール: ユーザーに警告する|
 |場合は、このルールを適用します。 . .|任意の添付ファイル 。 . . ファイル拡張子が一致します。 . .|
@@ -114,7 +114,7 @@ ms.locfileid: "59934049"
 
 6. **[保存]** を選択します。
 
-|設定値|ファイルの添付ファイルを開く前にユーザーにOfficeする|
+|Setting|ファイルの添付ファイルを開く前にユーザーにOfficeする|
 |---|---|
 |名前|外部ドメインへの電子メールの自動転送を防止する|
 |... の場合は、このルールを適用します。|送信者 。 . . は外部/内部です。 . . 組織内|

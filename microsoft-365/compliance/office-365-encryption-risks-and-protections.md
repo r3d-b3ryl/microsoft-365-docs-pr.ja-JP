@@ -8,7 +8,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+ms.localizationpriority: ''
 search.appverid:
 - MET150
 ms.collection:
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-mar2020
 description: この記事では、セキュリティ保護に対するリスクとOffice 365暗号化テクノロジについて学習します。
-ms.openlocfilehash: 6bb0e705095b4f31c730a21921985131785dc3f0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fc1792c11bfbe0451eb2a835b3b02504ab05546f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216694"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190667"
 ---
 # <a name="encryption-risks-and-protections"></a>暗号化のリスクと保護
 

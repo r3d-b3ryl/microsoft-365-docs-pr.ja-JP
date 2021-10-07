@@ -7,7 +7,7 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 - m365solution-overview
@@ -17,12 +17,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: 関連する機能を管理する方法については、Microsoft 365、Teams、SharePoint、およびYammer。
-ms.openlocfilehash: fefda518d9864984d7fb8ee6f82e57ad14ff7b6e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 31b97403b955cb92a7e4cf4b79bb2cd31927b73b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179080"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190235"
 ---
 # <a name="what-is-collaboration-governance"></a>共同作業のガバナンスとは?
 
@@ -172,7 +172,7 @@ Microsoft Learn のトレーニング モジュールを使用すると、Micros
 
 #### <a name="information-protection"></a>情報保護
 
-|トレーニング:|情報保護とガバナンスを管理する|
+|トレーニング: |情報保護とガバナンスを管理する|
 |:---|:---|
 |![情報保護トレーニング アイコン。](../media/information-protection-governance.svg)|今日、生成されるデータ量はかつてないほど急速に増加し、従業員はあらゆる場所で仕事をしたいと考えており、規制の状況は常に変化しています。 情報保護とガバナンスに関するMicrosoft のソリューションで、企業はデータの保護と従業員の生産性との適切なバランスの実現を保つことができます。 このラーニングパスはMicrosoft 365 認定: セキュリティ管理者  と Microsoft 365 認定: エンタープライズ管理エキスパート  の認定のための準備を行うことが出来ます。<br><br>5 時間 13 分 - ラーニング パス - 7 モジュール|
 
@@ -181,7 +181,7 @@ Microsoft Learn のトレーニング モジュールを使用すると、Micros
 
 <br><br>
 
-|トレーニング:|Microsoft 365 で企業情報を保護する|
+|トレーニング: |Microsoft 365 で企業情報を保護する|
 |:---|:---|
 |![Teamsのアイコンをクリックします。](../media/protect-enterprise-information-microsoft-365.svg)|組織の情報を保護することは、かつてないほど困難になっています。 「Microsoft 365 で社内の情報を保護する」のラーニング パスでは、機密情報を不用意な共有や誤用から保護する方法、データを検出して分類する方法、秘密度ラベルを使用して保護する方法、損失から保護するために機密情報を監視および分析する方法について説明します。 この学習パスは、セキュリティ管理者の認定:セキュリティ管理者アソシエMicrosoft 365 Microsoft 365認定: Enterpriseエキスパート認定の準備に役立ちます。<br><br>1 時間 - ラーニング パス - 5 モジュール|
 
@@ -190,7 +190,7 @@ Microsoft Learn のトレーニング モジュールを使用すると、Micros
 
 #### <a name="security-and-compliance"></a>セキュリティとコンプライアンス
 
-|トレーニング:|Microsoft 365 のセキュリティおよびコンプライアンス機能の基本的な知識を示します|
+|トレーニング: |Microsoft 365 のセキュリティおよびコンプライアンス機能の基本的な知識を示します|
 |:---|:---|
 |![セキュリティとコンプライアンスのトレーニング アイコン。](../media/microsoft-365-security-and-compliance-capabilities.svg)|エンタープライズをセキュリティで保護し、規制要件に対応できるようにするために、365 Microsoft のセキュリティおよびコンプライアンス ソリューション エリアに関する情報を参照します。 基本的なクラウド コンピューティングの概念に慣れていない場合は、クラウド 概念 - クラウド コンピューティングの原則を [使用することをお勧めします](/learn/modules/principles-cloud-computing/index)。<br><br>3 時間 11 分 - ラーニング パス - 8 モジュール|
 

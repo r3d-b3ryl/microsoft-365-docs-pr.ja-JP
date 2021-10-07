@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: dd0b33ca6c2045a0f709e94e4c59f89b99b58bc7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 31dbc29d2aca019c2b2553bb7ffa3082e410aab9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211884"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209203"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>インシデントを調査Microsoft 365 Defender
 
@@ -60,7 +60,7 @@ Microsoft 365 Defender、デバイス、ユーザー、およびメールボッ�
 
 インシデント キューからインシデント名を選択して、インシデントのメイン ページを開く方法も指定できます。
 
-## <a name="summary"></a>概要
+## <a name="summary"></a>要約
 
 [ **概要] ページ** では、インシデントに関する一番上の情報をスナップショットで確認できます。
 

@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.date: 08/11/2021
 ms.collection:
 - Strat_O365_IP
@@ -16,16 +16,16 @@ ms.collection:
 search.appverid:
 - MET150
 description: 高度なメッセージ暗号化は、管理者が保護されたメッセージを使用してさらに多くのことを行うのを有効にすることで、組織がコンプライアンスの義務を果たすのに役立ちます。
-ms.openlocfilehash: dbd19c2028a3453d43dc2ce9082955a5ec1165db
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9e0f1933d68ba696e6446b321857eb3f6836f378
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216683"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197559"
 ---
 # <a name="advanced-message-encryption"></a>高度なメッセージ暗号化
 
-Office 365 Advanced Message Encryptionは[、Microsoft 365 Enterprise E5、Office 365 E5、Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise/home)(非営利スタッフ価格)、Office 365 Enterprise E5 (非営利スタッフ価格)、および Office 365 Education A5 に含まれています。 組織に Office 365 Advanced Message Encryption を含めないサブスクリプションがある場合は、Microsoft 365 E3、Microsoft 365 E3 Office 365 Advanced Compliance (非営利スタッフ価格) の Microsoft 365 E5 Compliance SKU アドオン、Microsoft 365 E3、Microsoft 365 E3 (非営利スタッフ価格)、Office 365 SKU、Microsoft 365 E5/A5 Information Protection and Governance SKU アドオンを使用して購入できます。Microsoft 365 A3/E3 用。
+Office 365 Advanced Message Encryptionは[、Microsoft 365 Enterprise E5、Office 365 E5、Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise/home)(非営利スタッフ価格)、Office 365 Enterprise E5 (非営利スタッフ価格)、および Office 365 Education A5 に含まれています。 組織に Office 365 Advanced Message Encryption を含めないサブスクリプションがある場合は、Microsoft 365 E5 Compliance SKU アドオンを使用して Microsoft 365 E3、Microsoft 365 E3 (Nonprofit)スタッフの価格設定)、Office 365 Advanced Compliance、Microsoft 365 E3 Microsoft 365 E3 (非営利スタッフ価格)、Office 365 SKU、または Microsoft 365 E5/A5 情報保護とガバナンス SKU の Microsoft 365 E5 SKU アドオンMicrosoft 365 A3/E3 のアドオン。
 
 高度なメッセージ暗号化は、お客様が外部の受信者と暗号化された電子メールへのアクセスに対してより柔軟な制御を必要とするコンプライアンスの義務を満たすのに役立ちます。 [高度なメッセージの暗号化] Office 365、組織外で共有される機密性の高いメールを自動ポリシーで制御できます。 これらのポリシーを構成して、PII、Financial、Health などの機密情報の種類を識別するか、キーワードを使用して保護を強化できます。 ポリシーを構成したら、ポリシーをカスタム ブランドの電子メール テンプレートと組み合わせ、ポリシーに合った電子メールを特別に制御する有効期限を追加します。 また、管理者は、いつでもメールへのアクセスを取りやめて、セキュリティで保護された Web ポータルを介して外部からアクセスされる暗号化されたメールをさらに制御できます。
 

@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dolmont
 author: DulceMontemayor
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 85b162cce8655c7942a341326ff08ec112ace100
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 637c56e5c02283e4efee5a456c21f4a74fcda40d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59356563"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178289"
 ---
 # <a name="software-resource-type"></a>ソフトウェア リソースの種類
 
@@ -63,14 +63,14 @@ ms.locfileid: "59356563"
 
 ****
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |---|---|---|
-|id|文字列|ソフトウェア ID|
+|id|String|ソフトウェア ID|
 |名前|String|ソフトウェア名|
 |ベンダー|String|ソフトウェア ベンダー名|
 |弱点|Long|検出された脆弱性の数|
-|publicExploit|Boolean|一部の脆弱性に対してパブリックエクスプロイトが存在する|
-|activeAlert|Boolean|アクティブアラートは、このソフトウェアに関連付けられている|
+|publicExploit|ブール値|一部の脆弱性に対してパブリックエクスプロイトが存在する|
+|activeAlert|ブール値|アクティブアラートは、このソフトウェアに関連付けられている|
 |exposedMachines|Long|公開されているデバイスの数|
-|impactScore|Double|このソフトウェアの露出スコアの影響|
+|impactScore|倍精度浮動小数点数|このソフトウェアの露出スコアの影響|
 |

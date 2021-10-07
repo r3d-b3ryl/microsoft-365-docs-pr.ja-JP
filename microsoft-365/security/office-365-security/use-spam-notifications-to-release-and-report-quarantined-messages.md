@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: Admin
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MED150
@@ -21,12 +21,12 @@ ms.custom:
 description: 管理者は、検疫済みメッセージ (EOP) で検疫されたメッセージに対するエンド Exchange Online Protectionについて学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 029c48dd2986a55b1b2eb723c12f629a75b14efa
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 31cfebba6d7bde610ac855dc4c7985d2432fabe3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483027"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190247"
 ---
 # <a name="use-quarantine-notifications-to-release-and-report-quarantined-messages"></a>検疫通知を使用して検疫済みメッセージを解放および報告する
 
@@ -39,7 +39,7 @@ ms.locfileid: "59483027"
 
 Exchange Online のメールボックスを使用している Microsoft 365 組織または Exchange Online のメールボックスを使用していないスタンドアロンの Exchange Online Protection (EOP) 組織では、危険な可能性があるメッセージまたは不要なメッセージは検疫済みメッセージとして保留されます。 詳細については [、「EOP の検疫済みメッセージ」を参照してください](quarantine-email-messages.md)。
 
-_検疫ポリシーは、_ メッセージが検疫された理由 (サポートされている機能の場合) に基づいて、検疫されたメッセージに対してユーザーが実行できる操作を定義します。 詳細については、「検疫ポリシー [」を参照してください](quarantine-policies.md)。 検疫ポリシーは、影響を受ける受信者 (共有メールボックスを含む) が検疫済みメッセージに関する定期的な検疫通知を受け取るかどうかを制御します。 検疫通知は、サポートされている保護機能 (スパム対策ポリシーの評決だけではない) に対するエンド ユーザーのスパム通知に代わるものとなります。
+_検疫ポリシーは、_ メッセージが検疫された理由 (サポートされている機能の場合) に基づいて、検疫されたメッセージに対してユーザーが実行できる操作を定義します。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。 検疫ポリシーは、影響を受ける受信者 (共有メールボックスを含む) が検疫済みメッセージに関する定期的な検疫通知を受け取るかどうかを制御します。 検疫通知は、サポートされている保護機能 (スパム対策ポリシーの評決だけではない) に対するエンド ユーザーのスパム通知に代わるものとなります。
 
 管理者は検疫ポリシーのグローバル設定を使用して、送信者の表示名、さまざまな言語の免責事項のテキスト、通知で使用される会社のロゴをカスタマイズすることもできます。 手順については、「サーバー ポータルでグローバル検疫通知設定を構成する[」をMicrosoft 365 Defenderしてください](quarantine-policies.md#configure-global-quarantine-notification-settings-in-the-microsoft-365-defender-portal)。
 

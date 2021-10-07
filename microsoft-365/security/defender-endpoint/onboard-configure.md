@@ -8,18 +8,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 49109b7671cc4ecd1891cb942dcd6b678d7b5c11
-ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
+ms.openlocfilehash: 52083cbd8b7e94c09c21ef434634376966102df6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60124531"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178325"
 ---
 # <a name="onboard-devices-to-the-microsoft-defender-for-endpoint-service"></a>デバイスを Microsoft Defender for Endpoint サービスにオンボードする
 
@@ -61,7 +61,7 @@ Defender for Endpoint ポータルのオンボーディング セクションに
 トピック|説明
 :---|:---
 [以前のバージョンの Windows をオンボードする](onboard-downlevel.md)|Defender for Endpoint Windows 7 および Windows 8.1デバイスをオンボードします。
-[オンボード Windows デバイス](configure-endpoints.md)|Defender for Endpoint サービスに報告するには、デバイスをオンボードする必要があります。 エンタープライズでデバイスを構成するために使用できるツールと方法について説明します。
+[Windows デバイスのオンボード](configure-endpoints.md)|Defender for Endpoint サービスに報告するには、デバイスをオンボードする必要があります。 エンタープライズでデバイスを構成するために使用できるツールと方法について説明します。
 [オンボード サーバー](configure-server-endpoints.md)|Windows Server 2008 R2 SP1、Windows Server 2012 R2、Windows Server 2016、Windows Server (SAC) バージョン 1803 以降、Windows Server 2019 以降、Windows Server 2019 コア エディションを Defender for Endpoint に搭載します。
 [Windows 以外のデバイスをオンボードする](configure-endpoints-non-windows.md)|Defender for Endpoint は、セキュリティ プラットフォームだけでなく、Windowsプラットフォームにも一元的なセキュリティWindows提供します。 サポートされているさまざまなオペレーティング システム (OS) からのアラートを、組織のネットワークMicrosoft Defender セキュリティ センター保護することができます。 このエクスペリエンスは、サードパーティのセキュリティ製品のセンサー データを活用します。
 [新しくオンボードされたデバイスで検出テストを実行する](run-detection-test.md)|新しくオンボードされたデバイスでスクリプトを実行して、Defender for Endpoint サービスに適切に報告されていることを確認します。

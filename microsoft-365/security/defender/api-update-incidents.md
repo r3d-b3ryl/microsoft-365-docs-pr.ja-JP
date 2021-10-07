@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c30d9918e4e61973dc03e6a2e621ffda5e7e01e5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 703b1df0bbe58874295e809ebe94ec748678e401
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177496"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209227"
 ---
 # <a name="update-incidents-api"></a>インシデント API の更新
 
@@ -56,7 +56,7 @@ ms.locfileid: "59177496"
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 ---|---|---
 アプリケーション|Incident.ReadWrite.All|すべてのインシデントの読み取りおよび書き込み
-委任 (職場または学校アカウント)|Incident.ReadWrite|インシデントの読み取りおよび書き込み
+委任 (職場または学校のアカウント)|Incident.ReadWrite|インシデントの読み取りおよび書き込み
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合、ユーザーはポータルでインシデントを更新するアクセス許可を持っている必要があります。
@@ -71,8 +71,8 @@ PATCH /api/incidents/{id}
 
 名前|型|説明
 ---|---|---
-Authorization|String|ベアラー {token}。 **必須**
-Content-Type|文字列|application/json. **必須**
+Authorization|String|ベアラー {token}。 **必須**。
+Content-Type|文字列|application/json. **必須**。
 
 ## <a name="request-body"></a>要求本文
 
@@ -82,7 +82,7 @@ Content-Type|文字列|application/json. **必須**
 ---|---|---
 status|列挙|インシデントの現在の状態を指定します。 使用できる値は `Active` `Resolved` 、、、および `Redirected` です。
 assignedTo|string|インシデントの所有者。
-classification|列挙|インシデントの仕様。 可能な値は、`Unknown`、`FalsePositive`、`TruePositive` です。
+classification|列挙|インシデントの仕様。 可能な値は `Unknown`、`FalsePositive`、`TruePositive` です。
 決定|列挙|インシデントの決定を指定します。 可能な値は、`NotAvailable`、`Apt`、`Malware`、`SecurityPersonnel`、`SecurityTesting`、`UnwantedSoftware`、`Other` です。
 tags|string List|インシデント タグの一覧。
 comment|string|インシデントに追加するコメント。
