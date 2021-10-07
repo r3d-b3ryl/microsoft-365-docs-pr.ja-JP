@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 7ccd05a2848b673d511a89c93cdbfed81f26c3d3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b2cb41e4696d964f8a732adb56826de20dcdec6d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211933"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199599"
 ---
 # <a name="create-an-app-with-partner-access-to-microsoft-365-defender-apis"></a>パートナーが API にアクセスできるアプリをMicrosoft 365 Defenderする
 
@@ -246,7 +246,7 @@ aadToken = jsonResponse["access_token"]
 1. コマンド プロンプトを開き、Azure CLIENT_ID ID に設定します。
 1. Azure CLIENT_SECRETシークレットに設定します。
 1. アプリTENANT_IDを使用してアクセスするユーザーの Azure テナント ID に設定Microsoft 365 Defender。
-1. 次のコマンドを実行します:
+1. 次のコマンドを実行します。
 
 ```bash
 curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=https://securitycenter.onmicrosoft.com/windowsatpservice/.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID%/oauth2/v2.0/token" -k
