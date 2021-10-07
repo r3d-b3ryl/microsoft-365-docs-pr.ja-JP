@@ -8,17 +8,18 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
-ms.collection: ''
+ms.localizationpriority: medium
+ms.collection:
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 description: 組織に参加する招待をMicrosoft 365 Business Standardする
-ms.openlocfilehash: c6d5142f966501451517e31b611fdbbe12c94bdd
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: c9855a02cbc494ad5e0b3b9defbfc9d91c1ca4e4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776358"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176045"
 ---
 # <a name="accept-an-email-invitation-to-a-microsoft-365-business-standard-subscription-user"></a>サブスクリプションへの電子メールの招待をMicrosoft 365 Business Standardする (ユーザー)
 

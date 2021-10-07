@@ -7,7 +7,7 @@ ms.date: 7/13/2017
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: e4468915-15e1-4530-9361-cd18ce82e231
 description: プレフィックス フィルター、セキュリティ、コンプライアンスOffice 365構成する共通領域など、ExpressRoute for Office 365を管理する方法について学習します。
-ms.openlocfilehash: e8de0763df7d592bc41802b1ead48df06891e6dc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bffe82249a9d8a531ee85525f9db0eb38a344d50
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213853"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173324"
 ---
 # <a name="managing-expressroute-for-office-365-connectivity"></a>Office 365 向け ExpressRoute の接続を管理する
 
@@ -49,7 +49,7 @@ ExpressRoute パブリック ピアリング全体でルート所有権の追加
 
 |**オプション**|**複雑さ**|**変更コントロール**|
 |:-----|:-----|:-----|
-|すべての Microsoft ルートを受け入れる  <br/> |**低:** お客様は、すべてのルートが適切に所有されていることを確認するために、Microsoft のコントロールに依存しています。  <br/> |なし  <br/> |
+|すべての Microsoft ルートを受け入れる  <br/> |**低:** お客様は、すべてのルートが適切に所有されていることを確認するために、Microsoft のコントロールに依存しています。  <br/> |None  <br/> |
 |Microsoft 所有のスーパーネットをフィルター処理する  <br/> |**中:** お客様は、Microsoft が所有するルートのみを許可する要約プレフィックス フィルター リストを実装します。  <br/> |お客様は、まれな更新プログラムがルート フィルターに反映される必要があります。  <br/> |
 |IP Office 365フィルター  <br/> [!CAUTION] Not-Recommended |**高:** 顧客は、定義された IP プレフィックスに基Office 365をフィルター処理します。  <br/> |お客様は、毎月の更新プログラムに対して堅牢な変更管理プロセスを実装する必要があります。  <br/> [!CAUTION] このソリューションには、重要な変更が必要です。 時間内に実装されていない変更は、サービスが停止する可能性があります。   |
 
@@ -72,7 +72,7 @@ Microsoft では、ExpressRoute パブリックと Microsoft ピアリングを�
 
 |**オプション**|**複雑さ**|**変更コントロール**|
 |:-----|:-----|:-----|
-|制限なし  <br/> |**低:** お客様は、Microsoft への無制限の送信アクセスを許可します。  <br/> |なし  <br/> |
+|制限なし  <br/> |**低:** お客様は、Microsoft への無制限の送信アクセスを許可します。  <br/> |None  <br/> |
 |ポートの制限  <br/> |**低:** お客様は、予期されるポートによって Microsoft への送信アクセスを制限します。  <br/> |まれです。  <br/> |
 |FQDN の制限  <br/> |**高:** 顧客は、発行された FQDN に基づいてOffice 365への送信アクセスを制限します。  <br/> |毎月の変更。  <br/> |
 
@@ -104,7 +104,7 @@ Microsoft がネットワークへの接続を開始する必要があるいく�
   
 ここに戻る場合は、次の短いリンクをご利用ください: [https://aka.ms/manageexpressroute365]()
   
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [コンテンツ配信ネットワーク](content-delivery-networks.md)
   

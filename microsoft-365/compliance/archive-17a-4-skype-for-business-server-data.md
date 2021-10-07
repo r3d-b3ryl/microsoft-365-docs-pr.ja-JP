@@ -9,15 +9,15 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 17a-4 Skype for Business Server DataParser コネクタをセットアップして使用して、Skype for Business Server データをインポートおよびアーカイブするMicrosoft 365。
-ms.openlocfilehash: fef2f4673ac030d547cca88c118b8f50f8e15e71
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: c971b587250f5b37619f3bd91f52f2cf4adf6b2b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400632"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175433"
 ---
 # <a name="set-up-a-connector-to-archive-skype-for-business-server-data"></a>データをアーカイブするコネクタをSkype for Business Serverする
 

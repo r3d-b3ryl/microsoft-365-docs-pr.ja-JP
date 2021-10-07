@@ -1,5 +1,5 @@
 ---
-title: 自動転送されたメッセージの分析情報
+title: 自動転送されたメッセージのインサイト
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -7,17 +7,17 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: 管理者は、セキュリティ コンプライアンス センターのメール フロー ダッシュボードで自動転送&できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7c0b2ddd462cccdea744d9a37ec357ee152b6369
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: 734a072e23ecd77bcf1dd328c9c952387ba65c52
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988693"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174269"
 ---
 # <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>セキュリティ コンプライアンス センターでのメッセージの自動転送&分析
 

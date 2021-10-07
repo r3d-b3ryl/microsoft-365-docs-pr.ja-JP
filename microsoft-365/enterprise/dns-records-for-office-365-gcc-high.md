@@ -7,7 +7,7 @@ ms.date: 05/19/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: ''
 description: '概要: 高値の DNS レコードOffice 365 GCCします。'
 hideEdit: true
-ms.openlocfilehash: 9edcda4616d50d05331db0e2d6c4d89967b02fdc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 103d6157bdb11f787b46b649a048b9fdd3fde5cb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189651"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174881"
 ---
 # <a name="dns-records-for-office-365-gcc-high"></a>Office 365 GCC High の DNS レコード
 
@@ -64,7 +64,7 @@ Office 365 GCC High へのオンボーディングの一環として、SMTP ド�
 
 ### <a name="srv-records"></a>SRV レコード
 
-| 型 | サービス | プロトコル | ポート | 太さ | 優先度 | Name | Target | TTL |
+| 型 | サービス | プロトコル | ポート | 太さ | 優先度 | 名前 | Target | TTL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | SRV | \_sip | \_tls | 443 | 1 | 100 | @ | sipdir.online.gov.skypeforbusiness.us | 1 Hour |
 | SRV | \_sipfederationtls | \_tcp | 5061 | 1 | 100 | @ | sipfed.online.gov.skypeforbusiness.us | 1 Hour |

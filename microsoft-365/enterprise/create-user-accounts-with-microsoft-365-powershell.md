@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: Ent_O365
@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: PowerShell を使用して個々のユーザー アカウントまたは複数のユーザー アカウントMicrosoft 365する方法。
-ms.openlocfilehash: c096b5b4966bfde9973173b9a0a0c5bf1f0d786c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7396e98e597491910b639e5a0d0c57b8f685bc02
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218594"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60172001"
 ---
 # <a name="create-microsoft-365-user-accounts-with-powershell"></a>PowerShell Microsoft 365ユーザー アカウントを作成する
 
@@ -47,7 +47,7 @@ PowerShell でユーザー アカウントを作成する場合、特定のア�
 >[!Note]
 >[ユーザー アカウントを作成する方法については](../admin/add-users/add-users.md)、Microsoft 365 管理センター。
 > 
-> その他のリソースの一覧については、「ユーザーと [グループの管理」を参照してください](../admin/add-users/index.yml)。
+> その他のリソースの一覧については、「ユーザーと [グループの管理」を参照してください](/admin)。
 >   
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph 用 Azure Active Directory PowerShell モジュールを使用する

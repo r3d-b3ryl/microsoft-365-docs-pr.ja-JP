@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_TOC
@@ -17,12 +17,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: ServiceNow のスコープ認定アプリケーションのインストールと構成ガイド。
-ms.openlocfilehash: d812866ce2310b25b857b701be7d29d6d7ea5f22
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: 58b955509fd998e7478ad32704c00bd89d692098
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59933641"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60171989"
 ---
 # <a name="microsoft-365-support-integration-with-servicenow-configuration-guide"></a>Microsoft 365 サポートと ServiceNow 構成ガイドとの統合
 
@@ -731,4 +731,4 @@ ServiceNow インスタンスと Microsoft サポートの間の統合をセッ�
 |13|ユーザーが **[Microsoft サポートに問い合わせ] を** 選択しますが、何も起こりません|[ **システム ログの確認] - フィルターログとフィルター処理** を使用 login.microsoftonline.com HTTP ログ connector.rave.microsoft.com|
 |14 |インシデントを再度開いた後に Microsoft 推奨ソリューションを表示できない|[**システム ログ]**  >  **フィルター を使用して**[すべて] をx_mioms_m365_assit|
 |15 |Microsoft サポートに転送されたインシデントを再度開くと、Microsoft ケースが表示されません|[**システム ログ]**  >  **フィルター を使用して**[すべて] をx_mioms_m365_assit|
-|16 |チケットの詳細を保存できません。エラー "チケットの詳細を保存できません。 アプリのサポートにお問い合わせください。|フォームの上部にあるエラー メッセージを確認する|
+|16|チケットの詳細を保存できません。エラー "チケットの詳細を保存できません。 アプリのサポートにお問い合わせください。|フォームの上部にあるエラー メッセージを確認する|

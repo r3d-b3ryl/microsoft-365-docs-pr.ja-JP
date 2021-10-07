@@ -9,15 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-localization_priority: Normal
+ms.localizationpriority: medium
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6df569c2919e9941bc5c7c6ee92970fa694af225
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4834e6fc8970d1abcf63d46edd89c0c0b8af31d4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213994"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175851"
 ---
 # <a name="contact-support-for-heard-island-and-mcdonald-islands"></a>聞き取り諸島とマクドナルド諸島のサポートにお問い合わせください
 

@@ -11,7 +11,7 @@ ms.topic: article
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: データ損失防止アラートとアラート ダッシュボードについて学習します。
-ms.openlocfilehash: b6fd698e535e006149f6ce3a2a5bc57d0c92c7e2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ea5d01e580b88445ba64e4ed26fc01fb51c97d5d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59193111"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175217"
 ---
 # <a name="learn-about-the-data-loss-prevention-alerts-dashboard"></a>データ損失防止の警告ダッシュボードについて
 
@@ -63,7 +63,7 @@ DLP ポリシーで構成できるアラートには、2 種類があります�
 |プロパティ名  |説明  |イベントの種類  |
 |---------|---------|---------|
 |ID |イベントに関連付けられた一意の ID |すべてのイベント |
-|場所 |イベントが検出されたワークロード|すべてのイベント |
+|Location |イベントが検出されたワークロード|すべてのイベント |
 |アクティビティの時間     |DLP ポリシーの条件に一致したユーザー アクティビティの時間 |
 
 ### <a name="impacted-entities"></a>影響を受け取ったエンティティ

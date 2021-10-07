@@ -10,19 +10,19 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
 ROBOTS: NOINDEX, NOFOLLOW
 description: 関連度トレーニングの状態と結果を表示および解釈する方法については、Advanced eDiscovery。
-ms.openlocfilehash: ac575ebf073afa8eb4ba13e63202f8b634c52f60
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7a2786a727fd233b6617779bae95a26c1b62644e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216343"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175013"
 ---
 # <a name="track-relevance-analysis-in-advanced-ediscovery"></a>[関連度の分析を追跡する] Advanced eDiscovery
   

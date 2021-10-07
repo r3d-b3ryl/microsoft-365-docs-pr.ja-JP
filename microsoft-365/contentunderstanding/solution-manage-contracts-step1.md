@@ -9,15 +9,15 @@ ms.topic: article
 ms.date: ''
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-localization_priority: None
+ms.localizationpriority: medium
 ROBOTS: ''
 description: ソリューションを使用して、SharePoint Syntexファイルを識別し、データを抽出する方法についてMicrosoft 365します。
-ms.openlocfilehash: f6097a7573037f8efc2467bb3a9f1037a12bf7ef
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c654c72ef36bf86337b7564efc68e4523516f4f9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189730"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173513"
 ---
 # <a name="step-1-use-sharepoint-syntex-to-identify-contract-files-and-extract-data"></a>手順 1. 契約ファイルSharePoint Syntexデータの抽出に使用する方法
 
@@ -99,7 +99,7 @@ ms.locfileid: "59189730"
 
     c. [語句 **] リスト ボックス** に、文字列 ("AGREEMENT" など) を入力します。 文字列で大文字 **と小文字を** 区別する必要がある場合は、[大文字と小文字を区別する] を選択できます。
 
-    d.  [保存 **してトレーニング] を選択します**。
+    d. [保存 **してトレーニング] を選択します**。
 
     ![[説明の作成] パネルのスクリーンショット。](../media/content-understanding/contract-classifier-create-explanation.png) 
 

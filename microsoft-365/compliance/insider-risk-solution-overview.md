@@ -2,7 +2,7 @@
 title: インサイダー リスク ソリューション
 description: インサイダー リスク ソリューションを使用して、組織内のリスクを最小限に抑える方法についてMicrosoft 365。
 keywords: Microsoft 365、インサイダー リスク、コンプライアンス
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-overview
-ms.openlocfilehash: 40d1076f9c6706b9a24c1a6af23a32b02809c7ba
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ab7f0b26770c78298d620fa1f7d991dc5c7cae4b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216824"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175241"
 ---
 # <a name="insider-risk-solutions-in-microsoft-365"></a>Microsoft 365 のインサイダー リスク ソリューション
 
@@ -33,18 +33,18 @@ Microsoft 365リスク防止機能は、インサイダー リスク製品とソ
 
 | リスク アイコン | リスク | コミュニケーション コンプライアンス | インサイダー リスクの管理 | 情報バリア | 特権アクセス管理 |
 | :---- | :-------- | :--------------------------- | :-------------------------- |:-------------------------| :--------------------------------|
-| ![データ流出アイコン。](../media/ir-risk-data-spillage.png)| データの流出 | ![サポート済み](../media/check-mark.png) | ![サポート済み](../media/check-mark.png) |  |  |
-| ![秘密保持違反のアイコン。](../media/ir-risk-confidentiality-violations.png)| 機密違反 | ![サポート済み](../media/check-mark.png) | ![サポート済み](../media/check-mark.png) | ![サポート済み](../media/check-mark.png) |  |
-| ![IP 盗難アイコン。](../media/ir-risk-ip-theft.png)| IP 盗難 | ![サポート済み](../media/check-mark.png) | ![サポート済み](../media/check-mark.png) | ![サポート済み](../media/check-mark.png) |  |
-| ![職場の暴力アイコン。](../media/ir-risk-workplace-violence.png)| 職場での暴力 | ![サポート済み](../media/check-mark.png) |  |  |  |
-| ![詐欺/泥棒アイコン。](../media/ir-risk-fraud.png)| 詐欺 | ![サポート済み](../media/check-mark.png) | ![サポート済み](../media/check-mark.png) |  |  |
-| ![ポリシー違反アイコン。](../media/ir-risk-policy-violations.png)| ポリシー違反 | ![サポート済み](../media/check-mark.png) | ![サポート済み](../media/check-mark.png) | ![サポート済み](../media/check-mark.png) | ![サポート済み](../media/check-mark.png) |
-| ![Insider の取引/ハンドシェイク アイコン。](../media/ir-risk-insider-trading.png)| インサイダー取引 | ![サポート済み](../media/check-mark.png) |  |  |  |
-| ![[利益相反] アイコン。](../media/ir-risk-conflicts-of-interest.png)| 利益相反 | ![サポート済み](../media/check-mark.png) |  | ![サポート済み](../media/check-mark.png) |  |
-| ![機密性の高いデータ リーク/デバイス アイコン。](../media/ir-risk-sensitive-data-leaks.png)| 機密性の高いデータ リーク | ![サポート済み](../media/check-mark.png) | ![サポート済み](../media/check-mark.png) |  |  |
-| ![職場のハラスメント/人のアイコン。](../media/ir-risk-workplace-harassment.png)| 職場での嫌がらせ | ![サポート済み](../media/check-mark.png) |  |  |  |
-| ![セキュリティ違反アイコン。](../media/ir-risk-security-violations.png)| セキュリティ違反 |  | ![サポート済み](../media/check-mark.png) |  | ![サポート済み](../media/check-mark.png) |
-| ![規制コンプライアンス違反アイコン。](../media/ir-risk-regulatory-compliance-violations.png)| 規制遵守違反 | ![サポート済み](../media/check-mark.png) | ![サポート済み](../media/check-mark.png) | ![サポート済み](../media/check-mark.png) |  |
+| ![データ流出アイコン。](../media/ir-risk-data-spillage.png)| データの流出 | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) |  |  |
+| ![秘密保持違反のアイコン。](../media/ir-risk-confidentiality-violations.png)| 機密違反 | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) |  |
+| ![IP 盗難アイコン。](../media/ir-risk-ip-theft.png)| IP 盗難 | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) |  |
+| ![職場の暴力アイコン。](../media/ir-risk-workplace-violence.png)| 職場での暴力 | ![サポート](../media/check-mark.png) |  |  |  |
+| ![詐欺/泥棒アイコン。](../media/ir-risk-fraud.png)| 詐欺 | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) |  |  |
+| ![ポリシー違反アイコン。](../media/ir-risk-policy-violations.png)| ポリシー違反 | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) |
+| ![Insider の取引/ハンドシェイク アイコン。](../media/ir-risk-insider-trading.png)| インサイダー取引 | ![サポート](../media/check-mark.png) |  |  |  |
+| ![[利益相反] アイコン。](../media/ir-risk-conflicts-of-interest.png)| 利益相反 | ![サポート](../media/check-mark.png) |  | ![サポート](../media/check-mark.png) |  |
+| ![機密性の高いデータ リーク/デバイス アイコン。](../media/ir-risk-sensitive-data-leaks.png)| 機密性の高いデータ リーク | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) |  |  |
+| ![職場のハラスメント/人のアイコン。](../media/ir-risk-workplace-harassment.png)| 職場での嫌がらせ | ![サポート](../media/check-mark.png) |  |  |  |
+| ![セキュリティ違反アイコン。](../media/ir-risk-security-violations.png)| セキュリティ違反 |  | ![サポート](../media/check-mark.png) |  | ![サポート](../media/check-mark.png) |
+| ![規制コンプライアンス違反アイコン。](../media/ir-risk-regulatory-compliance-violations.png)| 規制遵守違反 | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) | ![サポート](../media/check-mark.png) |  |
 
 ## <a name="microsoft-365-insider-risk-solutions"></a>Microsoft 365 インサイダー リスク ソリューション
 
@@ -80,9 +80,9 @@ Insider リスク管理は、次のサブスクリプションで利用できま
 - Microsoft 365 A5 コンプライアンス アドオンが含まれている Microsoft 365 A3 サブスクリプション。
 - Microsoft 365 A5 インサイダー リスク管理アドオンが含まれている Microsoft 365 A3 サブスクリプション。
 - Microsoft 365 G5 サブスクリプション (有料または試用版)
-- Microsoft 365 G3 + G5 コンプライアンス Microsoft 365アドオン
-- Microsoft 365 G3 + G5 Insider Risk Management アドオンMicrosoft 365 G5 Insider Risk Management アドオン
-- Office 365 E3サブスクリプション + Enterprise モビリティとセキュリティ E3 + Microsoft 365 E5 Compliance アドオン
+- Microsoft 365 G5 コンプライアンス アドオンが含まれている Microsoft 365 G3 サブスクリプション
+- Microsoft 365 G5 インサイダー リスク管理アドオンが含まれている Microsoft 365 G3 サブスクリプション
+- Office 365 E3 サブスクリプション + Enterprise Mobility and Security E3 + Microsoft 365 E5 Compliance アドオン
 
 ### <a name="information-barriers"></a>情報バリア
 

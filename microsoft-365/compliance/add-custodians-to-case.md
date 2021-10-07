@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 組み込みのカストディアン管理ツールを使用して、Advanced eDiscoveryを調整し、関連するデータ ソースを特定する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3c5adf4b51cbb9898b0b4f7bc806c1392453c526
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 12a1a6d40706e71043dffdc899847b7d8062430b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59217074"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60171041"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-case"></a>管理者をケースに追加Advanced eDiscoveryする
 
@@ -38,7 +38,7 @@ Advanced eDiscovery の組み込みのカストディアン管理ツールを使
 
 4. 保管担当者を確認し、プロセスを完了します。
 
-   [![[ソース] タブ (Advanced eDiscovery) ](../media/AeD-Sources-Tab.png)](../media/AeD-Sources-Tab.png#lightbox)
+   [![[ソース] タブ (Advanced eDiscovery) ](../media/AeD-Sources-Tab.png) ](../media/AeD-Sources-Tab.png#lightbox)
 
 ## <a name="make-sure-you-have-the-necessary-permissions"></a>必要なアクセス許可を持っている必要があります。
 
@@ -114,4 +114,4 @@ Advanced eDiscovery の組み込みのカストディアン管理ツールを使
 
    新しい保管担当者がケースに追加され、[データ ソース] **タブに表示** されます。
 
-   [![[データ ソース] タブに表示される保管担当者。 ](../media/DataSourcesTab.png)](../media/DataSourcesTab.png#lightbox)
+   [![[データ ソース] タブに表示される保管担当者。 ](../media/DataSourcesTab.png) ](../media/DataSourcesTab.png#lightbox)

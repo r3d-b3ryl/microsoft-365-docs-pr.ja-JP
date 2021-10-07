@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - M365-privacy-management
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: プライバシー管理のグローバル設定オプションについて説明します。
-ms.openlocfilehash: bd67dc80ab7dec2132bfffe190f64692f69076ed
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: e7bcbdc3054b69e320ce35d1df5e1e52501f5736
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401052"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175097"
 ---
 # <a name="manage-privacy-management-settings-preview"></a>プライバシー管理設定の管理 (プレビュー)
 

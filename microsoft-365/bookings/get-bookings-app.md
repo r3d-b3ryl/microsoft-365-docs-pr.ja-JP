@@ -6,21 +6,21 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 01b79cb0-e206-4a3a-aaef-b10941770f87
 description: Bookings モバイル アプリはまだ世界中で利用できません。 この記事では、アプリが現在利用可能な地域の一覧を示します。
-ms.openlocfilehash: 4c00d7559c4f2e7f0a20878fa40d03ebc5f79be4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3eb13338f933a650d723b749f2e3a1786f82e506
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212893"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60172841"
 ---
 # <a name="get-the-microsoft-bookings-app-for-ios-and-android"></a>iOS と Android 用の Microsoft Bookings アプリを取得する
 
 Microsoft Bookings は、iOS および Android 用のモバイル アプリとして利用できます。 iOS 用の Bookings アプリは、Apple がサポートしているすべての地域と国で利用できます。 iTunes App Store から [アプリをダウンロードできます](https://apps.apple.com/app/microsoft-bookings/id1065657468)。 Android 用の Bookings アプリは、米国とカナダの [Google Play ストア](https://play.google.com/store/apps/details?id=com.microsoft.exchange.bookings) からダウンロードできます。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 始める前に、Web で 予約 を設定する必要があります。
 

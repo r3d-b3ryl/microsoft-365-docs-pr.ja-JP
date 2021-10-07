@@ -7,7 +7,7 @@ ms.date: 12/5/2017
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: ExpressRoute for Office 365を実装する方法について説明します。これは、インターネットに接続している多数のサービスへの代替ルーティング パスOffice 365します。
-ms.openlocfilehash: 66ff6157c8f2fb28b1a57af42295a6ba0ed93dad
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 574704fa52c556eed6550a25ec33c53a65dbcde4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215994"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173453"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>Office 365 向け ExpressRoute の実装
 
@@ -191,7 +191,7 @@ ExpressRoute 回線がネットワークを Microsoft ネットワークに接�
 
 **カリフォルニアとニューヨークの ExpressRoute meet-me の計画場所**
 
-|場所  <br/> |人数  <br/> |インターネット出力を通して Microsoft ネットワークに予想される待機時間  <br/> |ExpressRoute を使用した Microsoft ネットワークへの予期される待機時間  <br/> |
+|Location  <br/> |人数  <br/> |インターネット出力を通して Microsoft ネットワークに予想される待機時間  <br/> |ExpressRoute を使用した Microsoft ネットワークへの予期される待機時間  <br/> |
 |----------|-----------|----------|-----------|
 |Los Angeles  <br/> |10,000  <br/> |~15ms  <br/> |~10ms (シリコン バレー経由)  <br/> |
 |ワシントン DC  <br/> |15,000  <br/> |~20ms  <br/> |~10ms (ニューヨーク経由)  <br/> |
@@ -599,6 +599,6 @@ ExpressRoute 接続を使用して Office 365 を展開する場合は、Express
   
 [Office 365 のパフォーマンスに関するトラブルシューティングの計画](performance-troubleshooting-plan.md)
   
-[Office 365 の URL と IP アドレスの範囲](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[Office 365 の URL および IP アドレスの範囲](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
 [Office 365 のネットワークとパフォーマンスのチューニング](network-planning-and-performance.md)

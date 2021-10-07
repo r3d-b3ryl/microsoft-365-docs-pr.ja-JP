@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
@@ -17,12 +17,12 @@ ms.topic: article
 ms.technology: mde
 ms.date: 09/22/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 746d3ecca3d61634cd11cc7df87d677c4667ad8d
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: b261625215fa5f4f84daac7850f50569d8826cb6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491029"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174869"
 ---
 # <a name="test-attack-surface-reduction-in-microsoft-defender-for-endpoint"></a>エンドポイント向け Microsoft Defender の攻撃表面の縮小をテストする
 

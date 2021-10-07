@@ -10,15 +10,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.custom: commerce_billing_payinfo
-localization_priority: Normal
+ms.localizationpriority: medium
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e0c13fcc5309418beaf92f5f34ed83b7295e0ef3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e19ce98c157ca4ff607aca59024673659f7b68fc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180287"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173789"
 ---
 # <a name="payment-information-for-dominican-republic"></a>ドミニカ共和国のお支払い情報
 

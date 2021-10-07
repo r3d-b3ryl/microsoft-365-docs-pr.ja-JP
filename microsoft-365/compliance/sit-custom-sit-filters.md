@@ -8,21 +8,21 @@ manager: laurawi
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: この記事では、カスタム機密情報の種類にエンコードできるフィルターの一覧を示します。
-ms.openlocfilehash: 6dfa562d581f14c0b1ac41c4ce803e2367a94636
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3c91ff4a31f8e80b4798743169d5c30195dcdcde
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218873"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175001"
 ---
-# <a name="custom-sensitive-information-type-filters-reference"></a>カスタムの機密情報の種類のフィルター リファレンス
+# <a name="custom-sensitive-information-type-filters-reference"></a>カスタム機密情報の種類のフィルター リファレンス
 
 Microsoft では、カスタム機密情報の種類 (SIT) を作成する際にフィルターや追加のチェックを定義できます。
 

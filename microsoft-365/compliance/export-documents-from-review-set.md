@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -17,31 +17,31 @@ search.appverid:
 ms.assetid: ''
 description: プレゼンテーションまたは外部レビューのレビュー セットAdvanced eDiscoveryコンテンツを選択してエクスポートする方法について説明します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 5021428dc1ee82b5fb0aeed58d4e055710dec2ef
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: dba9708bfda6d1b98a2861615e56518067822100
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191561"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175169"
 ---
 # <a name="export-documents-from-a-review-set-in-advanced-ediscovery"></a>[ドキュメント] のレビュー セットからドキュメントをエクスポートAdvanced eDiscovery
 
 エクスポートを使用すると、ユーザーは、ドキュメントをダウンロード パッケージのレビュー セットからエクスポートするときに、ダウンロード パッケージに含まれるコンテンツをカスタマイズAdvanced eDiscovery。
 
-レビュー セットからドキュメントをエクスポートするには、次の方法を使用します。
+レビュー セットからドキュメントをエクスポートするには:
 
 1. 次のMicrosoft 365 コンプライアンス センターケースを開Advanced eDiscovery、[レビュー セット] タブを選択し、エクスポートするレビュー セットを選択します。
 
 2. レビュー セットで、[アクションのエクスポート]**を**  >  **クリックします**。
 
-   [エクスポート] ツールは、エクスポートを構成する設定を含むフライアウト ページを表示します。 一部のオプションは既定で選択されますが、これらを変更できます。 構成できるエクスポート オプションの説明については、次のセクションを参照してください。
+   エクスポート ツールは、エクスポートを構成するための設定を含むフライアウト ページを表示します。 一部のオプションは既定で選択されますが、これらを変更できます。 構成できるエクスポート オプションの説明については、次のセクションを参照してください。
 
    ![レビュー セットからアイテムをエクスポートするための構成オプション。](../media/bcfc72c7-4a01-4697-9e16-2965b7f04fdb.png)
 
 3. エクスポートを構成した後、[エクスポート] **をクリックして** エクスポート プロセスを開始します。 [出力オプション] セクションで選択したオプションに応じて、直接ダウンロードするか、組織のアカウントでエクスポート ファイルにAzure Storageできます。
 
 > [!NOTE]
-> エクスポート ジョブは、ケースの一生保持されます。 ただし、エクスポート ジョブが完了した後、30 日以内にエクスポート ジョブからコンテンツをダウンロードする必要があります。
+> エクスポート ジョブは、ケースの存続期間中保持されます。 ただし、エクスポート ジョブが完了してから 30 日以内に、エクスポート ジョブからコンテンツをダウンロードする必要があります。
 
 ## <a name="export-options"></a>エクスポート オプション
 

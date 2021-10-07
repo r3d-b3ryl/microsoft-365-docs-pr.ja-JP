@@ -6,7 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: normal
+ms.localizationpriority: medium
 ms.topic: article
 author: martyav
 ms.author: v-maave
@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: cbfb672795dc64a4bb6e4d4541b8eb72511e128b
-ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
+ms.openlocfilehash: 0f2923d03a101d6ec55bfa4090ce22e9d1353e6e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59497646"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174605"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-while-migrating-from-a-third-party-solution"></a>サード パーティのソリューションからの移行中に Microsoft Defender ウイルスのトラブルシューティングを行う
 
@@ -89,7 +89,7 @@ GPresult.exe /h gpresult.html
 
 GPResults レポート内の見出し *Windows Components/Windows Defender ウイルス対策* の下に、Microsoft Defender ウイルス対策 がオフになっていることを示す次のエントリのようなものが表示される場合があります。
 
-ポリシー|設定|GPO を獲得する
+ポリシー|Setting|GPO を獲得する
 ---|---|---
 [オフにする] Windows Defender ウイルス対策|Enabled|Win10-Workstations
 
@@ -102,9 +102,9 @@ DisableAntiSpyware|-
 GPO を獲得する|Win10-Workstations
 結果: 成功|
 **全般**|
-Action|Update
+アクション|Update
 **Properties**|
-ハイブ|HKEY_LOCAL_MACHINE
+Hive|HKEY_LOCAL_MACHINE
 キー パス|SOFTWARE\Policies\Microsoft\Windows Defender
 値の名前|DisableAntiSpyware
 値の型|REG_DWORD

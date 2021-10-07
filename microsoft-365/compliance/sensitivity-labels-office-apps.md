@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: デスクトップ、モバイル、および Web 用の Office アプリで秘密度ラベルを管理するための IT 管理者向けの情報。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f202eae985ea1dbf0057a0c1ee5663931ea134d9
-ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
+ms.openlocfilehash: 22fa76c56e1cca84fc62784ac31a6acae8b65421
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60011209"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124303"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office アプリで秘密度ラベルを管理する
 
@@ -59,7 +59,7 @@ Windows コンピューターでのみ実行される Azure Information Protecti
 記載されている番号は、各機能に必要な Office アプリケーションの最小バージョンです。 
 
 > [!NOTE]
-> Windows と半期エンタープライズ チャネルの場合、最小サポート バージョン番号がまだリリースされていない可能性があります。 [詳細情報](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions)
+> Windows と半期エンタープライズ チャネルの場合、最小サポート バージョン番号がまだリリースされていない可能性があります。[詳細情報](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions)
  
 |機能 |Windows |Mac |iOS |Android |Web |
 |-----------|-------:|----|----|--------|----|
@@ -88,7 +88,7 @@ Windows コンピューターでのみ実行される Azure Information Protecti
 記載されている番号は、各機能に必要な Office アプリケーションの最小バージョンです。 
 
 > [!NOTE]
-> Windows と半期エンタープライズ チャネルの場合、最小サポート バージョン番号がまだリリースされていない可能性があります。 [詳細情報](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions)
+> Windows と半期エンタープライズ チャネルの場合、最小サポート バージョン番号がまだリリースされていない可能性があります。[詳細情報](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions)
 
 |機能 |Outlook for Windows |Outlook for Mac |Outlook on iOS |Outlook on Android |Outlook on the web |
 |-----------|-------------------:|----------------|---------------|-------------------|-------------------|
@@ -102,7 +102,7 @@ Windows コンピューターでのみ実行される Azure Information Protecti
 |[ユーザーに権限の割り当てをさせる: <br /> - 転送不可](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 現在のチャネル: 1910 以上 <br /><br> 月次エンタープライズ チャネル: 1910 以上 <br /><br> 半期エンタープライズ チャネル: 2002 以上 | 16.21 以上                 | 4.7.1 以上         | 4.0.39 以上           | はい               |
 |[ユーザーに権限の割り当てをさせる: <br /> - 暗号化のみ](encryption-sensitivity-labels.md#let-users-assign-permissions)  | 現在のチャネル: 2011 以上 <br /><br> 月次エンタープライズ チャネル: 2011 以上 <br /><br> 半期エンタープライズ チャネル: 2108 以上 | 16.48 以上 <sup>\*</sup> | 4.2112.0 以上  | 4.2112.0 以上 | はい |
 |[ユーザーがメールとドキュメントにラベルを適用することを必須にする](#require-users-to-apply-a-label-to-their-email-and-documents)   | 現在のチャネル: 2101 以上 <br /><br> 月次エンタープライズ チャネル: 2101 以上 <br /><br> 半期エンタープライズ チャネル: 2108 以上 | 16.43 以上 <sup>\*</sup>                    | 4.2111 以上            | 4.2111 以上                | はい                |
-|[ラベル関連のユーザー アクティビティを監査する](data-classification-activity-explorer.md) | 現在のチャネル: 2111 以上 <br /><br> 月次エンタープライズ チャネル: 2011 以上 <br /><br> 半期エンタープライズ チャネル: レビュー中 | 16.51 以上 <sup>\*</sup> | 4.2126 以上 | 4.2126 以上 | はい |
+|[ラベル関連のユーザー アクティビティを監査する](data-classification-activity-explorer.md) | 現在のチャネル: 2011 以上 <br /><br> 月次エンタープライズ チャネル: 2011 以上 <br /><br> 半期エンタープライズ チャネル: レビュー中 | 16.51 以上 <sup>\*</sup> | 4.2126 以上 | 4.2126 以上 | はい |
 |[秘密度ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md) <br /> - 機密情報の種類の使用                    | 現在のチャネル: 2009 以上 <br /><br> 月次エンタープライズ チャネル: 2009 以上 <br /><br> 半期エンタープライズ チャネル: 2102 以上 | 16.44 以上 <sup>\*</sup>                    | レビュー中           | レビュー中               | はい |
 |[秘密度ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md) <br /> - トレーニング可能な分類子の使用                    | 現在のチャネル: 2105 以上 <br /><br> 月次エンタープライズ チャネル: 2105 以上 <br /><br> 半期エンタープライズ チャネル: 2108 以上 | レビュー中                    | レビュー中           | レビュー中               | はい |
 |[既定ラベルと必須ラベルのさまざまな設定](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | 現在のチャネル: 2105 以上 <br /><br> 月次エンタープライズ チャネル: 2105 以上 <br /><br> 半期エンタープライズ チャネル: 2108 以上 | 16.43 以上 <sup>\*</sup>                   | 4.2111 以上           | 4.2111 以上               | はい |
@@ -150,7 +150,7 @@ Microsoft Word 2016、Excel 2016、PowerPoint 2016、Outlook 2016 の場合は�
 グループ ポリシーを使用するか、[Office クラウド ポリシー サービス](/DeployOffice/overview-office-cloud-policy-service)を使用して、この設定を展開します。
 
 > [!NOTE]
-> グループ ポリシー設定 **Office の機密度機能を使用して、機密度ラベルを表示する** を使用して、これを **1** に設定する場合、Azure Information Protection クライアントが Office アプリに読み込まれる可能性があります。 アドインが各アプリで読み込まれるのをブロックすると、このような問題が防止されます。
+> グループ ポリシー設定 **[Office の秘密度機能を使用して、秘密度ラベルを適用し表示する]** を使用して、これを **1** に設定する場合、Azure Information Protection クライアントが Office アプリに読み込まれる可能性があります。アドインが各アプリで読み込まれるのをブロックすると、このような問題が防止されます。
 
 二者択一的に、Word、Excel、PowerPoint、Outlook から office **Microsoft Azure Information Protection** を対話的に無効にしたり、削除したりすることもできます。 このメソッドは、単一のコンピューターおよびアドホック テストに適しています。 手順については、「[Office プログラムでアドインを表示、管理、インストールする](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d)」を参照してください。 
 
@@ -160,7 +160,7 @@ Azure Information Protection クライアントと Office 組み込みのラベ�
 
 ## <a name="office-file-types-supported"></a>サポートされる Office ファイルの種類
 
-Word、Excel、および PowerPoint ファイルに組み込みのラベル付けをする Office アプリは、Open XML 形式 (.docx や .xlsx など) をサポートしていますが、Microsoft Office 97-2003 形式 (.doc や .xls など)、Open Document 形式 (.odt や .ods など)、またはその他の形式はサポートしていません。 ファイルの種類が組み込みのラベル付けでサポートされていない場合、Office アプリでは **[秘密度]** ボタンを使用できません。
+Word、Excel、および PowerPoint ファイルに組み込みのラベル付けをする Office アプリは、Open XML 形式 (.docx や .xlsx など) をサポートしていますが、Microsoft Office 97-2003 形式 (.doc や .xls など)、Open Document 形式 (.odt や .ods など)、またはその他の形式はサポートしていません。ファイルの種類が組み込みのラベル付けでサポートされていない場合、Office アプリでは **[秘密度]** ボタンを使用できません。
 
 Azure Information Protection 統合ラベル付けクライアントは、Open XML 形式と Microsoft Office 97-2003 形式の両方をサポートしています。 詳細については、クライアントの管理ガイドの「[Azure Information Protection 統合ラベル付けクライアントでサポートされるファイルの種類](/azure/information-protection/rms-client/clientv2-admin-guide-file-types)」を参照してください。
 
@@ -279,9 +279,9 @@ Microsoft アカウントを持つユーザーがこの方法で暗号化され�
 
 ### <a name="conditional-access-policies"></a>条件付きアクセス ポリシー
 
-組織で [Azure Active Directory 条件付きアクセス ポリシー](/azure/active-directory/conditional-access/overview)を実装している場合は、それらのポリシーの構成を確認してください。 ポリシーに **Microsoft Azure Information Protection** が含まれていて、ポリシーが外部ユーザーに拡張されている場合、それらの外部ユーザーは、自分のテナントに Azure AD アカウントを持っている場合でも、テナントにゲスト アカウントを持っている必要があります。
+組織で [Azure Active Directory 条件付きアクセス ポリシー](/azure/active-directory/conditional-access/overview)を実装している場合は、それらのポリシーの構成を確認してください。ポリシーに **Microsoft Azure Information Protection** が含まれていて、ポリシーが外部ユーザーに拡張されている場合、それらの外部ユーザーは、自分のテナントに Azure AD アカウントを持っている場合でも、テナントにゲスト アカウントを持っている必要があります。
 
-このゲスト アカウントがないと、暗号化されたドキュメントを開いてエラー メッセージを表示することはできません。 メッセージ テキストは、アカウントをテナントの外部ユーザーとして追加する必要があることを通知する場合があります。このシナリオでは、「**別の Azure Active Directory ユーザー アカウントでサインアウトして再度サインインする**」という誤った指示があります。
+このゲスト アカウントがないと、暗号化されたドキュメントを開いてエラー メッセージを表示することはできません。メッセージ テキストは、アカウントをテナントの外部ユーザーとして追加する必要があることを通知する場合があります。このシナリオでは、「**別の Azure Active Directory ユーザー アカウントでサインアウトして再度サインインする**」という誤った指示があります。
 
 ラベルで暗号化されたドキュメントを開く必要がある外部ユーザー用にテナントでゲスト アカウントを作成および構成できない場合は、条件付きアクセス ポリシーから Azure Information Protection を削除するか、ポリシーから外部ユーザーを除外する必要があります。
 
@@ -319,7 +319,7 @@ Office アプリの外部に秘密度ラベルを適用することを含むシ�
 > [!IMPORTANT]
 > 現在、すべてのプラットフォームのすべてのアプリが、ヘッダー、フッター、透かしに指定できる動的コンテンツ マーキングをサポートしているわけではありません。 この機能をサポートしていないアプリの場合、変数を解決するのではなく、ラベル構成で指定された元のテキストとしてマーキングを適用します。
 > 
-> Azure Information Protection 統合ラベル付けクライアントは、動的マーキングをサポートしています。 Office に組み込まれているラベル付けについては、サポートされている最小バージョンについて、このページの[機能](#support-for-sensitivity-label-capabilities-in-apps)セクションの表を参照してください。
+> Azure Information Protection 統合ラベル付けクライアントは、動的マーキングをサポートしています。Office に組み込まれているラベル付けについては、サポートされている最小バージョンについて、このページの[機能](#support-for-sensitivity-label-capabilities-in-apps)セクションの表を参照してください。
 
 コンテンツ マーキングの秘密度ラベルを構成する場合、ヘッダー、フッター、または透かしのテキスト文字列で次の変数を使用できます。
 
@@ -371,7 +371,7 @@ ${If.App.<application type>}<your visual markings text> ${If.End}
 
 > [!IMPORTANT]
 > 
-> [Azure Information Protection 統合ラベリング クライアント](/azure/information-protection/rms-client/install-unifiedlabelingclient-app)は、必須ラベリングとも呼ばれるこの構成をサポートします。 Office アプリに組み込まれているラベル付けについては、最小バージョンについて、このページの[機能](#support-for-sensitivity-label-capabilities-in-apps)セクションの表を参照してください。
+> [Azure Information Protection 統合ラベル付けクライアント](/azure/information-protection/rms-client/install-unifiedlabelingclient-app)は、必須ラベリングとも呼ばれるこの構成をサポートします。Office アプリに組み込まれているラベル付けについては、このページの[機能](#support-for-sensitivity-label-capabilities-in-apps)セクションの表で最小バージョンを参照してください。
 >
 > メールではなくドキュメントに必須ラベルを使用するには、Outlook 固有のオプションを構成する方法を説明する次のセクションの手順を参照してください。
 > 
@@ -404,7 +404,7 @@ ${If.App.<application type>}<your visual markings text> ${If.End}
 
 ## <a name="outlook-specific-options-for-default-label-and-mandatory-labeling"></a>既定ラベルと必須ラベルの Outlook 固有のオプション
 
-組み込みのラベル付けの場合は、このページの [Outlook の機能テーブル](#sensitivity-label-capabilities-in-outlook)と、**既定ラベルと必須ラベル付けのさまざまな設定の行を使用** して、これらの機能をサポートする Outlook の最小バージョンを特定します。 Azure Information Protection 統合ラベル付けクライアントのすべてのバージョンは、これらの Outlook 固有のオプションをサポートします。
+組み込みのラベル付けの場合は、このページの [Outlook の機能テーブル](#sensitivity-label-capabilities-in-outlook)と、**既定ラベルと必須ラベル付けのさまざまな設定** の行を使用して、これらの機能をサポートする Outlook の最小バージョンを特定します。Azure Information Protection 統合ラベル付けクライアントのすべてのバージョンは、これらの Outlook 固有のオプションをサポートします。
 
 Outlook アプリが、ドキュメントの既定のラベル設定と異なる既定のラベル設定をサポートしている場合は、以下のようになります。
 

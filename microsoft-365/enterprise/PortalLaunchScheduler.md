@@ -6,7 +6,7 @@ manager: pamgreen
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - SPO_Content
@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: この記事では、ポータル起動スケジューラを使用してポータルを起動する方法について説明します。
-ms.openlocfilehash: 459d2a4ddaaa2f6a7d1c8095ee93baab4e8248ce
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 035ed3401323ae1221c7e7afd6f6c7d34b78aea4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59193513"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60172097"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>ポータル起動スケジューラを使用してSharePointを起動する
 
@@ -139,7 +139,7 @@ ms.locfileid: "59193513"
 
 [100k ユーザー SharePointポータルを起動する](https://admin.microsoft.com/AdminPortal/?searchSolutions=Launch%20SharePoint%20Portal%20with%20100k%20users)
 
-2. ウィンドウの下部で、[サポートに問い合わせ] **を** 選択し、[新しいサービス要求 **] を選択します**。 
+2. ウィンドウの下部で、[**サポートに問い合わせ**] を選択し、[**新しいサービス要求**] を選択します。 
 
 3. [**説明]** で、「100k ユーザー SharePointポータルを起動する」と入力します。 
 

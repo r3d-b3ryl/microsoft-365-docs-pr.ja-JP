@@ -9,15 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-localization_priority: Normal
+ms.localizationpriority: medium
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 730d55b25a0e55ff87accbc77d495b2c216048a8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 81a9a9a4d976a919edb6143b708f7c39428651d7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59190801"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175840"
 ---
 # <a name="contact-support-for-congo-drc"></a>コンゴ (DRC) のサポートに問い合わせ
 

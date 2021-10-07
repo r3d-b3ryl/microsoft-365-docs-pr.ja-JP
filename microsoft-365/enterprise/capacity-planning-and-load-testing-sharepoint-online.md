@@ -7,7 +7,7 @@ ms.date: 04/10/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - SPO_Content
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: c932bd9b-fb9a-47ab-a330-6979d03688c0
 description: この記事では、許可されないので、従来SharePointを実行せずにオンラインに展開する方法について説明します。
-ms.openlocfilehash: fb54864168b35fed290ccb1139cb6c607969820d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f9bf4c508e862d9d99bac2935cfea32878a93762
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216074"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60172025"
 ---
 # <a name="capacity-planning-and-load-testing-sharepoint-online"></a>SharePoint Online のキャパシティ プランニングとロード テスト
 この記事では、従来の負荷テストを行わずに SharePoint Online に展開する方法について説明します。この方法は、オンラインでは読み込みテストがSharePointです。 SharePointオンラインはクラウド サービスであり、サービスの負荷機能、正常性、および全体的な負荷のバランスは Microsoft によって管理されます。

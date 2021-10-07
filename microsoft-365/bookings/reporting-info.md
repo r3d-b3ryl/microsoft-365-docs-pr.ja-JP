@@ -6,15 +6,15 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
 description: Bookings アクティビティの 4 か月ビューを表示する方法を確認する
-ms.openlocfilehash: ceb318f0577d6bf1f4f46f809ecabe0d1bc5d804
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 70d73da86e40555a5754a4284cbfbb0510e8c9e6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180720"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175637"
 ---
 # <a name="reporting-info-for-bookings"></a>Bookings のレポート情報
 

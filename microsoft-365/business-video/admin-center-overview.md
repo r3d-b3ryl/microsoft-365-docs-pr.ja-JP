@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 一般的なタスクやダッシュボード ビュー Microsoft 365、より複雑な設定とタスクを管理するには、ビューの簡略化されたビューを使用します。
-ms.openlocfilehash: d1f187f7ab3f7fdad53727a3cd74e2543c3cbcef
-ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
+ms.openlocfilehash: 37ec045db118dc0508a47dc8d4cfa6fc90e7af42
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59786373"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60171305"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターの概要
 

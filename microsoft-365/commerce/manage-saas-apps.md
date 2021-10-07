@@ -9,7 +9,7 @@ ms.reviewer: jamitche, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-ms.localizationpriority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: サード パーティ製アプリをアクティブ化して管理する方法については、Microsoft 365 管理センター。
 ms.date: 04/15/2021
-ms.openlocfilehash: df3c5372396394f1b2c80bb07aca0a79d8883bf4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4df8dd65656bf70329c0ea09911bc7ca4cd40f57
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59190261"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60171269"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>組織のサード パーティ製アプリのサブスクリプションを管理する
 

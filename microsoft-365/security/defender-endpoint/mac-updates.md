@@ -2,15 +2,13 @@
 title: Microsoft Defender for Endpoint の更新プログラムを Mac に展開する
 description: エンタープライズ環境での Microsoft Defender for Endpoint on Mac の更新プログラムを制御します。
 keywords: microsoft、 defender、 Microsoft Defender for Endpoint, mac, updates, deploy
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ae8909f2533394e347a1885f2fb1354f6ce4cfae
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b2abd270aeee07e84cf31711494d68ca15885515
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214973"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174677"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>macOS で Microsoft Defender for Endpoint の更新プログラムを展開する
 
@@ -158,7 +156,7 @@ true に設定すると、"Insider Program.Office参加" になります。チ�
 |**ドメイン**|`com.microsoft.autoupdate2`|
 |**Key**|DisableInsiderCheckbox|
 |**データ型**|Boolean|
-|**指定可能な値**|False (既定) <p> 正解|
+|**指定可能な値**|False (既定) <p> True|
 |||
 
 ### <a name="limit-the-telemetry-that-is-sent-from-mau"></a>MAU から送信されるテレメトリを制限する

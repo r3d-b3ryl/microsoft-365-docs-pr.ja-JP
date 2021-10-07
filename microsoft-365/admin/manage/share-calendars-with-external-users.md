@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
@@ -22,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
 description: ユーザーが組織の内部または外部Microsoft 365 管理センター予定表を共有できるよう、予定表の共有を有効にします。
-ms.openlocfilehash: 5b9808f2b44e87d39a1f16389fa09aa511fbc2ee
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: b3ad3735c8cf5b33ddc501310e8f34dcc3c6f786
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776010"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60171773"
 ---
 # <a name="share-calendars-with-external-users"></a>予定表を外部ユーザーと共有する
 
@@ -54,4 +55,4 @@ ms.locfileid: "59776010"
 
 [サイトの外部共有をオンまたはオフにする](/sharepoint/change-external-sharing-site) (記事)\
 [アプリケーションの概要 (Microsoft 365 管理センター)\](../../business-video/admin-center-overview.md)
-[メールと予定表の管理](../email/index.yml) (リンク ページ)
+[メールと予定表の管理](/admin) (リンク ページ)

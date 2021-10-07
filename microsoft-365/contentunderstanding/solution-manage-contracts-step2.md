@@ -9,17 +9,17 @@ ms.topic: article
 ms.date: ''
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-localization_priority: None
+ms.localizationpriority: medium
 ROBOTS: ''
 description: カスタム ソリューションを使用してMicrosoft Teams管理チャネルを作成する方法について説明Microsoft 365します。
-ms.openlocfilehash: bafce28689e4340c3ff73694d150bac294a95b5a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a5a42bedcb6acba4caf8f6f114812c63869ee92e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189721"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60172121"
 ---
-# <a name="step-2-use-microsoft-teams-to-create-your-contract-management-channel"></a>手順 2。 契約Microsoft Teamsチャネルを作成するには、次の情報を使用します。
+# <a name="step-2-use-microsoft-teams-to-create-your-contract-management-channel"></a>手順 2. 契約Microsoft Teamsチャネルを作成するには、次の情報を使用します。
 
 組織が契約管理ソリューションをセットアップする場合は、関係者が契約を確認および管理できる中心的な場所が必要です。 この目的のために、Microsoft Teams[を使用](/microsoftteams/)して、Teamsチャネルを設定し、Teams使用できます。
 
@@ -45,13 +45,13 @@ Contracts **Management チャネルで [契約]** タブを作成した後、ド
 ## <a name="customize-your-contracts-tab-tile-view"></a>[契約] タブのタイル ビューをカスタマイズする
 
 > [!NOTE]
-> このセクションでは、Contracts Management Solution Assets[](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json)リポジトリにContractTileFormatting.jsファイルに含まれるコード例[を参照します](https://github.com/pnp/syntex-samples/tree/main/scenario%20assets/Contracts%20Management)。
+> このセクションでは、Contracts Management Solution Assets リポジトリに含まれる [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) ファイルに含まれるコード [例を参照します](https://github.com/pnp/syntex-samples/tree/main/scenario%20assets/Contracts%20Management)。
 
 このTeamsタイル ビューで契約を表示することができますが、それをカスタマイズして、契約カードに表示する契約データを表示できます。 たとえば、[ **契約]** タブでは、メンバーが契約カードのクライアント、請負業者、および手数料の金額を確認することが重要です。 これらのフィールドはすべて、ドキュメント ライブラリに適用された SharePoint Syntexモデルを通じて各コントラクトから抽出されました。 また、タイル ヘッダー バーを各ステータスの異なる色に変更して、メンバーが承認プロセス内の契約の場所を簡単に確認できます。 たとえば、承認済みのすべての契約には青色のヘッダー バーが表示されます。
 
    ![ライブラリのタイル ビュー SharePoint表示します。](../media/content-understanding/tile.png)
 
-使用するカスタム タイル ビューでは、現在のタイル ビューの書式設定に使用する JSON ファイルを変更する必要があります。 カード ビューの作成に使用する JSON ファイルを参照するには、ファイルのContractTileFormatting.js[ します](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) 。 次のセクションでは、コントラクト カード内の機能に関するコードの特定のセクションが表示されます。
+使用するカスタム タイル ビューでは、現在のタイル ビューの書式設定に使用する JSON ファイルを変更する必要があります。 [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json)ファイルを見て、カード ビューの作成に使用する JSON ファイルを参照できます。 次のセクションでは、コントラクト カード内の機能に関するコードの特定のセクションが表示されます。
 
 Teams チャネルのビューの JSON コードを表示または変更する場合は、Teams チャネルでビューのドロップダウン メニューを選択し、[現在のビューの書式設定] を選択します。 
 
@@ -59,7 +59,7 @@ Teams チャネルのビューの JSON コードを表示または変更する�
 
 ## <a name="card-size-and-shape"></a>カードのサイズと図形
 
-ファイルの [ContractTileFormatting.jsで](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) 、次のセクションを参照して、カードのサイズと図形の書式設定方法のコードを確認します。
+[ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json)ファイルで、次のセクションを参照して、カードのサイズと図形の書式設定方法のコードを確認します。
 
 ```JSON
                   {
@@ -84,7 +84,7 @@ Teams チャネルのビューの JSON コードを表示または変更する�
 
 ## <a name="contract-status"></a>契約の状態
 
-次のコードでは、各タイトル カードの状態を定義できます。 各ステータス値 *(New、In* *review、Approved、**および Rejected)* は、それぞれ異なる色コードを表示します。  [ファイル [ContractTileFormatting.js] で](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) 、状態を定義するセクションを確認します。
+次のコードでは、各タイトル カードの状態を定義できます。 各ステータス値 *(New、In* *review、Approved、**および Rejected)* は、それぞれ異なる色コードを表示します。  [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json)ファイルで、状態を定義するセクションを確認します。
 
 ```JSON
           {
@@ -108,7 +108,7 @@ Teams チャネルのビューの JSON コードを表示または変更する�
 
 各契約カードには、契約ごとに抽出された 3 つのフィールド (*クライアント*、契約者、および手数料金額)*が表示されます*。 さらに、ファイルの識別に使用されるデータ モデルによってファイルが分類されたSharePoint Syntex表示する必要があります。
 
-ファイルの [ContractTileFormatting.jsセクション](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) では、これらのそれぞれを定義します。
+[ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json)ファイルでは、次のセクションでそれぞれを定義します。
 
 ### <a name="client"></a>クライアント
 

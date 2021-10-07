@@ -6,15 +6,15 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fd6b7587-5055-4bcd-83a4-13bd4929bfff
 description: オンラインで予定を予約するときに顧客に質問する必要がある場合は、予約ページにカスタムの質問と必要な質問を追加できます。
-ms.openlocfilehash: 496d395677d272c436504bfe43b3c42833e3a73e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d7d997ff02e2a6b8d849cb50014924733bac8e32
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212883"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173969"
 ---
 # <a name="add-custom-and-required-questions-to-the-booking-page"></a>予約ページにカスタムおよび必須の質問を追加する
 

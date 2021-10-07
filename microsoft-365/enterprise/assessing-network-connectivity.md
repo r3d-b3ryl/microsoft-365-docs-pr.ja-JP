@@ -7,7 +7,7 @@ ms.date: 6/23/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 64b420ef-0218-48f6-8a34-74bb27633b10
 description: Microsoft 365は、世界中のお客様がインターネット接続を使用してサービスに接続できるよう設計されています。 サービスが進化するにつれて、Microsoft 365 のセキュリティ、パフォーマンス、および信頼性は、インターネットを使用してサービスへの接続を確立する顧客に基づいて向上します。
-ms.openlocfilehash: 4d80bdf5642b2456ac8293291c720429f7f18fb1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2f982bbce4786c69034560276e5aceebaa575a00
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213894"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60172037"
 ---
 # <a name="assessing-microsoft-365-network-connectivity"></a>Microsoft 365 ネットワーク接続の評価
 

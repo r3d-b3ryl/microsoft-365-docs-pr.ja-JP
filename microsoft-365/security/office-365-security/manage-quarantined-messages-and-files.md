@@ -6,7 +6,7 @@ manager: dansimp
 ms.date: ''
 audience: Admin
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MED150
@@ -19,12 +19,12 @@ ms.custom:
 description: 管理者は、ユーザー (EOP) 内のすべてのユーザーの検疫済みメッセージを表示および管理Exchange Online Protectionできます。 Microsoft Defender for Office 365組織の管理者は、SharePoint Online、OneDrive for Business、およびMicrosoft Teams。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 66ae5d7a5b13495aabbd071f03e87efc5b239294
-ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
+ms.openlocfilehash: 7bf5b4fa2c339e1132efb71c53a5eaf62f9646ad
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "60088306"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174437"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>EOP の管理者として検疫済みメッセージとファイルを管理する
 

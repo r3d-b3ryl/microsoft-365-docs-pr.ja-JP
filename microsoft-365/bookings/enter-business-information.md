@@ -6,15 +6,15 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 828a17db-956a-401e-bb62-d153b6dffd53
 description: Microsoft Bookings のビジネス名、住所、電話番号、Web サイトの URL、ロゴ、営業時間など、会社情報ページを作成するには、次の手順に従います。
-ms.openlocfilehash: 0c0b33f38cd92b9d99114d2b896c0e86eb92f2ee
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 313e85166c02afa5a52f4cd4fb6cf25a7077ad26
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212903"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173957"
 ---
 # <a name="enter-your-business-information"></a>勤務先情報を入力する
 

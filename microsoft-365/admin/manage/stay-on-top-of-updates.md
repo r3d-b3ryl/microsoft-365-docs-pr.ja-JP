@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -19,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 719f4904-cbdd-4889-a0cf-fbd7837dfecd
 description: メッセージ センター、ターゲット リリース、ロードマップ、ブログ、Microsoft 365を使用して、最新の更新プログラムをCommunity。
-ms.openlocfilehash: e25093d784750ae97ffd2fef0700fd8d925f6f64
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: dec70d6f496f78690cc27c153e7824bfc2741390
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775998"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60171749"
 ---
 # <a name="stay-on-top-of-changes"></a>変更内容の最新情報を把握する
 
@@ -32,7 +33,7 @@ ms.locfileid: "59775998"
 
 ## <a name="stay-on-top-of-microsoft-365-changes"></a>常に Microsoft 365 の最新情報を確認する
 
-|機能|説明| の使用法|
+|機能|説明|使用方法|
 |:-----|:-----|:-----|
 |**メッセージ センター** <br/> |正式なサービスのお知らせと機能の変更について学ぶ。 これらのメッセージは、管理者Microsoft 365 管理センターアプリで読むか、電子メールで毎週ダイジェストを受け取る場合があります。 他のユーザーが行動する必要があるメッセージが表示されたときに、これらのメッセージを組織内の他のユーザーと共有します。 また、サービスの通信 API を使用して、メッセージを取得することもできます。  <br/> |Sign in to the [admin center](../admin-overview/about-the-admin-center.md) or [admin mobile app](../admin-overview/admin-mobile-app.md). [正常性 **メッセージ** \> **センター] を選択します**。 Select a message to read or share.  <br/> 管理センターで [基本設定の編集] を選択して、メッセージに関するメッセージまたはオプトインするサービスを週次ダイジェストに変更します。 また、週ごとのダイジェストをオプトアウトできます。  <br/> [メッセージ センター Microsoft 365概要](message-center.md) <br/> |
 |**対象指定リリース** <br/> |対象指定リリースにサインインし、組織の個人のグループを選びます。 すべてのユーザーの前Microsoft 365最新の更新プログラムを取得し、新しいエクスペリエンスについてユーザーに通知またはトレーニングします。  <br/> |Sign in to the [admin center](../admin-overview/about-the-admin-center.md) or [admin mobile app](../admin-overview/admin-mobile-app.md). Selece **設定** \> **組織プロファイル リリース** \> **の基本設定**. Learn more about [Targeted release](release-options-in-office-365.md).  <br/> |

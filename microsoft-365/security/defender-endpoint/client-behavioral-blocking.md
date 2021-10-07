@@ -11,7 +11,7 @@ ms.reviewer: shwetaj
 audience: ITPro
 ms.topic: article
 ms.prod: m365-security
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.custom:
 - next-gen
 - edr
@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 5afa8ec7fc6d4adeef5a099a18e335b7a9e68f5b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 80b8ae1eebb0aac941d8c337e73eab97cdafb2a5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212324"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174845"
 ---
 # <a name="client-behavioral-blocking"></a>クライアントの動作ブロック
 
@@ -62,7 +62,7 @@ ms.locfileid: "59212324"
 |特権エスカレーション|`Behavior:Win32/PrivilegeEscalation.*!ml`|
 |防御回避|`Behavior:Win32/DefenseEvasion.*!ml`|
 |資格情報へのアクセス|`Behavior:Win32/CredentialAccess.*!ml`|
-|Discovery|`Behavior:Win32/Discovery.*!ml`|
+|検出|`Behavior:Win32/Discovery.*!ml`|
 |横方向の動き|`Behavior:Win32/LateralMovement.*!ml`|
 |コレクション|`Behavior:Win32/Collection.*!ml`|
 |コマンドとコントロール|`Behavior:Win32/CommandAndControl.*!ml`|

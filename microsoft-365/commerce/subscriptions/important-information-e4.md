@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid: MET150
 description: E4 サブスクリプションを使用した顧客のプランのアップグレードまたは変更にOffice 365情報。
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 08/14/2020
-ms.openlocfilehash: b740c186c2f4b53043ecc8aa1fd5024d646069d0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 74ae379a1a159c85c4a2b58bd018acb2690e3332
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59193537"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173633"
 ---
 # <a name="important-information-for-office-365-e4-customers"></a>E4 のお客様Office 365情報
 

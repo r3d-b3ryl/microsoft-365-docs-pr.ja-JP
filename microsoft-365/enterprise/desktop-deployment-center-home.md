@@ -9,16 +9,16 @@ ms.date: 08/10/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 非推奨のデスクトップ展開センターと同等のリソースを取得する方法。
-ms.openlocfilehash: b74072593b3345c2c0ffef495b117af47f1f88a3
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 6a8f08b855393741e6b2d48c40b4f712154ee1a6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356782"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174905"
 ---
 # <a name="desktop-deployment-center-deprecated"></a>デスクトップ展開センター (非推奨)
 

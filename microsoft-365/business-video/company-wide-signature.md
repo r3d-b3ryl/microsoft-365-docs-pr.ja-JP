@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 会社全体の電子メール署名を作成する方法について学習します。
-ms.openlocfilehash: 0585f1020779e70eff55c41b83ffe9337443afc9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bf856881fd19386390031807c0098279fc37a595
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219363"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60172817"
 ---
 # <a name="create-a-company-wide-email-signature"></a>会社全体のメール署名を作成する
 

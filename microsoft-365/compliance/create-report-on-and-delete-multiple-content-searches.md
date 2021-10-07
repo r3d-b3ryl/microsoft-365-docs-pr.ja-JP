@@ -11,7 +11,7 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.collection:
 - SPO_Content
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - SPO160
 - MOE150
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: セキュリティ センター PowerShell を使用して検索の作成やレポートの実行など、コンテンツ検索&する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fff69aac3ab30e0fe1ea60f9d097602a5390ba87
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 602997114c46a68be13182a504d0b123e98d2be2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191571"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60172481"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>複数のコンテンツ検索の作成、報告、削除
 

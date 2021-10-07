@@ -9,7 +9,7 @@ ms.date: 9/20/2018
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: キャンペーンや他のMicrosoft 365 Business Premiumの設定の概要
-ms.openlocfilehash: 41d3f0829829233c70e091f27225f7756a0e4f46
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 272f4728214feaf3868b6861cdf990ea87442fad
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178264"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173825"
 ---
 # <a name="set-up-microsoft-365"></a>設定Microsoft 365
 

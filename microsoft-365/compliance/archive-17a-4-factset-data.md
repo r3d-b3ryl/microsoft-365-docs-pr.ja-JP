@@ -9,15 +9,15 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 17a-4 FactSet DataParser コネクタをセットアップして使用して、ファクトセット データをインポートおよびアーカイブする方法についてMicrosoft 365。
-ms.openlocfilehash: 5c8aba92f189bb6fa12a2d7ed4426e4902561ac4
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 8e58acd47043838cee27e85a8a1b992383ccec49
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59356253"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60172589"
 ---
 # <a name="set-up-a-connector-to-archive-factset-data"></a>FactSet データをアーカイブするコネクタをセットアップする
 

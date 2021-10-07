@@ -8,18 +8,18 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: 組織内のユーザーおよびグループ向け Microsoft および Microsoft パートナー アプリを検索、テスト、展開するには、組織の統合アプリ ポータルMicrosoft 365 管理センター。
-ms.openlocfilehash: 6ab2b2a81fe54b38f6c2d6352a976b83cd2e84a9
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: 08660c4f90a27f4294268aa0fb2204347ad06498
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59934001"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174149"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-by-partners-in-the-integrated-apps-portal"></a>統合アプリ ポータルMicrosoft 365 Appsパートナーによるテストと展開
 
@@ -314,8 +314,8 @@ Office アドインの種類と機能の詳細については [、「Office](/
 
 ### <a name="is-integrated-apps-available-in-sovereign-cloud"></a>統合アプリはソブリン クラウドで利用できますか?
 
-いいえ。 統合アプリは、ソブリン クラウドのお客様が利用できません。
+その必要はありません。 統合アプリは、ソブリン クラウドのお客様が利用できません。
 
 ### <a name="is-integrated-apps-available-in-government-clouds"></a>統合アプリは政府機関のクラウドで利用できますか?
 
-いいえ。 統合アプリは、政府機関のクラウド顧客が利用できません。
+その必要はありません。 統合アプリは、政府機関のクラウド顧客が利用できません。

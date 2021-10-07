@@ -6,18 +6,18 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
 description: 顧客キーを設定する方法についてMicrosoft 365。
-ms.openlocfilehash: 739653151031026e788c4b39fa3b182184115175
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 5c505e5c9545dd679860d9976f587459e64363c3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776634"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60172361"
 ---
 # <a name="set-up-customer-key"></a>顧客キーの設定
 
@@ -387,7 +387,7 @@ Update-AzKeyVaultKey -VaultName <vault name> -Name <key name> -Expires (Get-Date
 (Get-AzKeyVaultKey -VaultName <vault name>).Id
 ```
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 この記事の手順を完了したら、DEP を作成して割り当てる準備ができました。 手順については、「顧客キーの [管理」を参照してください](customer-key-manage.md)。
 

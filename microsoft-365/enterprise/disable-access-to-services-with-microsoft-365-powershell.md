@@ -7,7 +7,7 @@ ms.date: 07/27/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: Ent_O365
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
 description: この記事では、PowerShell を使用してユーザーのサービスへのアクセスを無効にするMicrosoft 365説明します。
-ms.openlocfilehash: 7caab5fc6bc4522f210d788d0293c4594997f13d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bce02c40bf6ca99d74b8747fb0c5eb5c0b485888
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165390"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173465"
 ---
 # <a name="disable-access-to-microsoft-365-services-with-powershell"></a>PowerShell を使用してMicrosoft 365サービスへのアクセスを無効にする
 
@@ -66,10 +66,10 @@ Get-MsolAccountSku | Select AccountSkuId | Sort AccountSkuId
   
 特定のライセンス プランに対してユーザー Microsoft 365サービスの特定のセットを無効にするには、次の手順を実行します。
   
-#### <a name="step-1-identify-the-undesirable-services-in-the-licensing-plan-by-using-the-following-syntax"></a>手順 1: 次の構文を使用して、ライセンス 計画で望ましくないサービスを特定します。
+#### <a name="step-1-identify-the-undesired-services-in-the-licensing-plan-by-using-the-following-syntax"></a>手順 1: 次の構文を使用して、ライセンス 計画で望ましくないサービスを特定します。
     
 ```powershell
-$LO = New-MsolLicenseOptions -AccountSkuId <AccountSkuId> -DisabledPlans "<UndesirableService1>", "<UndesirableService2>"...
+$LO = New-MsolLicenseOptions -AccountSkuId <AccountSkuId> -DisabledPlans "<UndesiredService1>", "<UndesiredService2>"...
 ```
 
 次の使用例は、ライセンス プラン (Office E3) で Office および SharePoint Online サービスを無効にする **LicenseOptions** オブジェクトを `litwareinc:ENTERPRISEPACK` Office 365 Enterpriseします。
@@ -148,7 +148,7 @@ $USSales | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName 
 
    この例では、テキスト ファイルは C: \\ My Documents \\Accounts.txt。
     
-2. 次のコマンドを実行します:
+2. 次のコマンドを実行します。
     
    ```powershell
    Get-Content "C:\My Documents\Accounts.txt" | foreach {Set-MsolUserLicense -UserPrincipalName $_ -LicenseOptions $LO}

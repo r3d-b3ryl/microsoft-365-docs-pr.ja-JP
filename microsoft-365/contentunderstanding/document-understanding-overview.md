@@ -11,14 +11,14 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
-localization_priority: Priority
+ms.localizationpriority: medium
 description: Microsoft SharePoint Syntex のドキュメント理解について説明します。
-ms.openlocfilehash: 631afa9379b3c902c140c25aee4de493e49ab47f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
-ms.translationtype: HT
+ms.openlocfilehash: dab209fc47db18875f0bc48d3b2816cd9d1927b8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179808"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60172211"
 ---
 # <a name="document-understanding-overview-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex のドキュメント理解の概要
 

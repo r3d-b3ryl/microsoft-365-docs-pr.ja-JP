@@ -10,18 +10,18 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: 下書きコレクションを作成して反復処理した後、そのコレクションをレビュー セットにコミットできます。 下書きコレクションをコミットすると、収集されたアイテムがケースのレビュー セットに追加されます。 収集したアイテムがレビュー セットに含められたら、それらを分析、確認、およびエクスポートできます。
-ms.openlocfilehash: 8aaa6a2eca4adb312fdf739e7c457cce82436087
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 0d230f02f08b5a29b2c53ab20ff175f8c7db9ac6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043253"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173573"
 ---
 # <a name="commit-a-draft-collection-to-a-review-set-in-advanced-ediscovery"></a>下書きコレクションをレビュー セットにコミットAdvanced eDiscovery
 

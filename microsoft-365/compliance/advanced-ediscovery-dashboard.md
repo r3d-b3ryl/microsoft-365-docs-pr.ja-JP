@@ -9,19 +9,19 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: レビュー セットAdvanced eDiscoveryダッシュボードを使用して、コーパスをすばやく分析し、レビュー戦略の策定に役立つ傾向や主要な統計を特定します。
-ms.openlocfilehash: 6466e33964969d6cd75addba7092ee95e0c321ef
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b7bc487e95c2dbae1a65aaad94face6bee19d39b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191591"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175481"
 ---
 # <a name="advanced-ediscovery-dashboard-for-review-sets"></a>Advanced eDiscoveryのダッシュボード
 

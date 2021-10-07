@@ -7,7 +7,7 @@ ms.date: 11/14/2019
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '概要: これらのテスト ラボ ガイド (TLG) を使用して、デモ環境、概念実証環境、または開発/テスト環境をセットアップMicrosoft 365。'
-ms.openlocfilehash: a7dc8c4e731b03733b200b8750cc6157eb44a9c2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 802c606375ff6bfd4f2a7d7e1a36301c94bf3b37
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192850"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174917"
 ---
 # <a name="test-microsoft-365-with-test-lab-guides-tlgs"></a>テスト Microsoft 365 ガイド (TLG) を使用してテストする
 
@@ -51,7 +51,7 @@ TLG では短時間で Microsoft 製品について学習できます。ある�
     
 アプリケーションとアプリケーションの両方に適用されるOffice 365 TLG Microsoft 365、テスト ラボ ガイド[に移動します](m365-enterprise-test-lab-guides.md)。  
     
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [Microsoft 365 ソリューションおよびアーキテクチャ センター](../solutions/index.yml)
   

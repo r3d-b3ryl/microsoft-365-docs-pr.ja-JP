@@ -9,18 +9,18 @@ ms.date: 04/26/2021
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows および Office 展開ラボ キットと、その入手方法について説明します。
-ms.openlocfilehash: 8831293d1b17649ae387aab9ab99063ba31bef15
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2801840e0329233ad79abdae607b81094db5e282
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189611"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173309"
 ---
 # <a name="windows-10-and-office-365-deployment-lab-kit"></a>Windows 10 と Office 365 展開ラボ キット
 
@@ -59,12 +59,12 @@ ms.locfileid: "59189611"
 - Desktop Analytics
 - クラウド管理ゲートウェイ &クラウド配布ポイント
 - 新機能 テナントの接続と共同管理
-- 新機能 エンドポイント分析
+- 新機能 エンドポイントの分析
 - リモート アクセス (VPN)
 
 ### <a name="prepare-configuration"></a>構成の準備
 
-- 更新Windows 10の最適化
+- Windows 10 更新プログラム配信の最適化
 - グループ ポリシー Windows 10サービス サービス
 - サービス Windows 10を使用Microsoft Intune
 - Configuration Manager Windows 10サービス サービス

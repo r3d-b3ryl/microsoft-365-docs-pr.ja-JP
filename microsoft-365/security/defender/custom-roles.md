@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 699d8c1d8ea7ac6928c96b6c98226ab82e0725fb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 95fa7c4821f28775c78175aa18a413b8cd1928e5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214613"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174413"
 ---
 # <a name="custom-roles-in-role-based-access-control-for-microsoft-365-defender"></a>ユーザーの役割ベースのアクセス制御のカスタム ロールMicrosoft 365 Defender
 
@@ -99,6 +99,6 @@ ms.locfileid: "59214613"
 - セキュリティ管理者
 - 表示専用の受信者
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [Microsoft 365 Defender へのアクセスを管理する](m365d-permissions.md)
 - [MCAS の管理者アクセスを管理する](/cloud-app-security/manage-admins)

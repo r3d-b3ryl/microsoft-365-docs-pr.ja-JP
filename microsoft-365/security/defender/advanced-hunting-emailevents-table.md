@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 76f0478167c020d470fec32f2f2020a9263b0b44
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 66f5992dfd3b2d5d54fb4d98e68f357c3b02b454
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192590"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174497"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -83,7 +83,7 @@ ms.locfileid: "59192590"
 | `ReportId` | long | 繰り返しカウンターに基づくイベント識別子。 一意のイベントを識別するには、この列を DeviceName 列と Timestamp 列と組み合わせて使用する必要があります。 |
 | `AuthenticationDetails` | string | DMARC、DKIM、SPF、複数の認証の種類の組み合わせ (CompAuth) のような電子メール認証プロトコルによる合格または失敗の評決の一覧 |
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)

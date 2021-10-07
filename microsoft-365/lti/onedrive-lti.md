@@ -10,15 +10,15 @@ ms.service: o365-administration
 f1.keywords:
 - CSH
 ms.collection: M365-modern-desktop
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: 新しいツール相互運用性アプリを使用して、課題の作成と採点、コース コンテンツの構築とキュレーション、ファイルMicrosoft OneDrive ラーニング共同作業を行います。
-ms.openlocfilehash: e67e772ce8ef460075729b34bc7da86d486c51e9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d8243580b32b8ba3b42297d1d5ec4183f7eee7d7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189560"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173177"
 ---
 # <a name="integrate-microsoft-onedrive-lti-with-canvas"></a>LTI Microsoft OneDriveキャンバスとの統合
 

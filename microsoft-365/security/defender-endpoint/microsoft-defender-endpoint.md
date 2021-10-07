@@ -2,8 +2,6 @@
 title: Microsoft Defender for Endpoint
 description: Microsoft Defender for Endpoint は、継続的な高度な脅威にからの防御に役立つエンタープライズ エンドポイントセキュリティ プラットフォームです。
 keywords: Microsoft Defender for Endpoint の概要、Microsoft Defender for Endpoint の概要、サイバーセキュリティ、継続的な高度な脅威、エンタープライズ セキュリティ、コンピューター動作センサー、クラウド セキュリティ、分析、脅威インテリジェンス、攻撃面の縮小、次世代の保護、調査と修復の自動化、Microsoft 脅威エキスパート、セキュア スコア、高度な捜索、Microsoft 365 Defender、サイバー脅威の捜索
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ae0d38eec976abb88638eea3c3d2166c7203647e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e87c13b8d5b4afe2dc14664b680900f7b30b3d02
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213564"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124555"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint
 
@@ -32,8 +30,6 @@ ms.locfileid: "59213564"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
-
-> Windows 10 Enterprise エディションの機能の詳細については、「[Windows 10 Enterprise エディション](https://www.microsoft.com/WindowsForBusiness/buy)」を参照してください。
 
 EndPoint 向け Microsoft Defender は、エンタープライズネットワークによる高度な脅威の防止、検出、調査、および応答を支援するために設計されたエンタープライズエンドポイントセキュリティプラットフォームです。
 
@@ -80,7 +76,7 @@ EndPoint 向け Defender は、Windows 10 と Microsoft の堅牢なクラウド
 > [!TIP]
 >
 > - EndPoint 向け Microsoft Defender の最新機能の詳細については、「[EndPoint 向け Microsoft Defender の新機能](whats-new-in-microsoft-defender-atp.md)」を参照してください。
-> - 最近の MITRE 評価で、EndPoint 向け Microsoft Defender の業界をリードする分析力と検出能力が認められました。 詳細については、「[MITRE ATT&CK ベース評価の分析](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/)」を参照してください。
+> - 最近の MITRE 評価で、Microsoft Defender for Endpoint の業界をリードする分析力と検出能力が認められました。詳細については、「[MITRE ATT&CK ベース評価の分析](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/)」を参照してください。
 
 <a name="tvm"></a>
 

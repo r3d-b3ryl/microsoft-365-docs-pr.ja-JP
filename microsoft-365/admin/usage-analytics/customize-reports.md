@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -19,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9b76065f-29b9-4b89-8059-c5f9db9ddbf6
 description: ブラウザーとブラウザーでレポートをカスタマイズする方法についてPower BI Desktop。
-ms.openlocfilehash: 7fbd31af1dc59cb8161e981bb27d0bac132be755
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 32cf44c8d72160a583a841e26c2ad6934bd7eef2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773933"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175733"
 ---
 # <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>使用状況分析でレポートMicrosoft 365カスタマイズする
 

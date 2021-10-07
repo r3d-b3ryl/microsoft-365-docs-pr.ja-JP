@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +23,12 @@ search.appverid:
 - BEA160
 description: プランOutlook変更するOutlook前OneDrive、Yammer、SharePointコンテンツのバックアップMicrosoft 365します。
 ms.date: 03/17/2021
-ms.openlocfilehash: 86953f3235d8725ecdd6b5294611c0e5a378b17d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c65c0ce533739f5d39314dc575d407d8d1af9ca8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219064"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60171053"
 ---
 # <a name="back-up-data-before-switching-microsoft-365-for-business-plans"></a>ビジネス プランの変更前にデータMicrosoft 365バックアップする
 

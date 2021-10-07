@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365solution-mip
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アクティビティ エクスプローラーで使用できるラベル付けアクティビティの一覧。
-ms.openlocfilehash: 163231d4d1e7c6a2d1b75c0f81a17443cfafe246
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ed1b207f4d0879185d757e2481cc3e8879293710
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176008"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173477"
 ---
 # <a name="labeling-activities-that-are-available-in-activity-explorer"></a>アクティビティ エクスプローラーで使用できるアクティビティのラベル付け
 
@@ -38,12 +38,12 @@ ms.locfileid: "59176008"
 
 |ソース  |アクティビティ エクスプローラーで報告される | 注:  |
 |---------|---------|---------|
-| Word、Excel、PowerPoint|○ |
-|Outlook| ○ | |
+| Word、Excel、PowerPoint|はい |
+|Outlook| はい | |
 |SharePointオンライン、OneDrive|はい | |
-|Exchange        |○         | |
-|Azure Information Protection (AIP) 統合クライアントと AIP 統合スキャナー |○ |AIP の *新しいラベル* アクションは、アクティビティ エクスプローラー *に適用されるラベル* にマップされます。   |
-|Microsoft の情報保護 (MIP) SDK         |○|AIP の *新しいラベル* アクションは、アクティビティ エクスプローラー *に適用されるラベル* にマップされます。|
+|Exchange        |はい         | |
+|Azure Information Protection (AIP) 統合クライアントと AIP 統合スキャナー |はい |AIP の *新しいラベル* アクションは、アクティビティ エクスプローラー *に適用されるラベル* にマップされます。   |
+|Microsoft の情報保護 (MIP) SDK         |はい|AIP の *新しいラベル* アクションは、アクティビティ エクスプローラー *に適用されるラベル* にマップされます。|
 |Rights Management Service (RMS)         |該当なし         | |
 |Power BIと Web        | no| 監査ログでMicrosoft 365アクセス可能         |
 |Microsoft Cloud App Security (MCAS)         |no|         |
@@ -62,13 +62,13 @@ ms.locfileid: "59176008"
 
 |ソース  |アクティビティ エクスプローラーで報告される|注:  |
 |---------|---------|---------| 
-|Word、Excel、PowerPoint         |○         |
-|Outlook         |○         |
+|Word、Excel、PowerPoint         |はい         |
+|Outlook         |はい         |
 |SharePointオンライン、OneDrive         |はい         |
-|Exchange         |○         |
-|AIP 統合クライアント         |○         |
-|AIP 統合スキャナー         |○         |
-|MIP SDK         |○         |
+|Exchange         |はい         |
+|AIP 統合クライアント         |はい         |
+|AIP 統合スキャナー         |はい         |
+|MIP SDK         |はい         |
 |RMS サービス         |該当なし         |
 |Power BIと Web         |no         |監査ログでMicrosoft 365アクセス可能 |
 |MCAS     |no         |         |
@@ -83,13 +83,13 @@ ms.locfileid: "59176008"
 
 |ソース  |アクティビティ エクスプローラーで報告される | 注:  |
 |---------|---------|---------| 
-|Word、Excel、PowerPoint         |○         |
-|Outlook         |○         ||
+|Word、Excel、PowerPoint         |はい         |
+|Outlook         |はい         ||
 |SharePointオンライン、OneDrive         |はい         |
-|Exchange         |○         |
-|AIP 統合クライアント         |○         |AIP *削除ラベル アクション* は、アクティビティ エクスプローラーの *ラベル削除アクション* にマップされます。|
-|AIP 統合スキャナー         |○         |AIP *削除ラベル アクション* は、アクティビティ エクスプローラーの *ラベル削除アクション* にマップされます。 |
-|MIP SDK         |○         |AIP *削除ラベル アクション* は、アクティビティ エクスプローラーの *ラベル削除アクション* にマップされます。 |
+|Exchange         |はい         |
+|AIP 統合クライアント         |はい         |AIP *削除ラベル アクション* は、アクティビティ エクスプローラーの *ラベル削除アクション* にマップされます。|
+|AIP 統合スキャナー         |はい         |AIP *削除ラベル アクション* は、アクティビティ エクスプローラーの *ラベル削除アクション* にマップされます。 |
+|MIP SDK         |はい         |AIP *削除ラベル アクション* は、アクティビティ エクスプローラーの *ラベル削除アクション* にマップされます。 |
 |RMS サービス         |該当なし         |
 |Power BIと Web         |no         |監査ログでMicrosoft 365アクセス可能 |
 |MCAS     |no         |         |
@@ -101,14 +101,14 @@ ms.locfileid: "59176008"
 
 |ソース  |アクティビティ エクスプローラーで報告される | 注:  |
 |---------|---------|---------| 
-|Word、Excel、PowerPoint         |○         |
+|Word、Excel、PowerPoint         |はい         |
 |Outlook         |no         |
 |SharePointオンライン、OneDrive         |no         |
 |Exchange         |no         |
-|AIP 統合クライアント         |○         |AIP アクセス アクション *は* 、アクティビティ エクスプローラーの *ファイル読み取り* アクションにマップされます。|
-|AIP 統合スキャナー         |○         |AIP アクセス アクション *は* 、アクティビティ エクスプローラーの *ファイル読み取り* アクションにマップされます。|
-|MIP SDK         |○         |AIP アクセス アクション *は* 、アクティビティ エクスプローラーの *ファイル読み取り* アクションにマップされます。|
-|RMS サービス         |○         |アクセス *アクションは* 、アクティビティ エクスプローラーの *ファイル読み取* りアクションにマップされます。 |
+|AIP 統合クライアント         |はい         |AIP アクセス アクション *は* 、アクティビティ エクスプローラーの *ファイル読み取り* アクションにマップされます。|
+|AIP 統合スキャナー         |はい         |AIP アクセス アクション *は* 、アクティビティ エクスプローラーの *ファイル読み取り* アクションにマップされます。|
+|MIP SDK         |はい         |AIP アクセス アクション *は* 、アクティビティ エクスプローラーの *ファイル読み取り* アクションにマップされます。|
+|RMS サービス         |はい         |アクセス *アクションは* 、アクティビティ エクスプローラーの *ファイル読み取* りアクションにマップされます。 |
 |Power BIと Web         |no         |監査ログでMicrosoft 365アクセス可能 |
 |MCAS     |no         |         |
 
@@ -124,8 +124,8 @@ ms.locfileid: "59176008"
 |SharePointオンライン、OneDrive         |該当なし         |
 |Exchange         |該当なし         |
 |AIP 統合クライアント         |該当なし       |
-|AIP 統合スキャナー         |○         |AIP 検出 *アクション* は、アクティビティ エクスプローラーで検出 *されたファイルアクション* にマップされます。|
-|MIP SDK         |○         |AIP 検出 *アクション* は、アクティビティ エクスプローラーで検出 *されたファイルアクション* にマップされます。|
+|AIP 統合スキャナー         |はい         |AIP 検出 *アクション* は、アクティビティ エクスプローラーで検出 *されたファイルアクション* にマップされます。|
+|MIP SDK         |はい         |AIP 検出 *アクション* は、アクティビティ エクスプローラーで検出 *されたファイルアクション* にマップされます。|
 |RMS サービス         |該当なし         |
 |Power BIと Web         |該当なし         |
 |MCAS     |該当なし         |         |
@@ -137,7 +137,7 @@ ms.locfileid: "59176008"
 
 |ソース  | アクティビティ エクスプローラーで報告される | 注:  |
 |---------|---------|---------| 
-|Word、Excel、PowerPoint         |○         |
+|Word、Excel、PowerPoint         |はい         |
 |Outlook         |該当なし         |
 |SharePointオンライン、OneDrive         |no        |
 |Exchange         |該当なし         |
@@ -160,7 +160,7 @@ ms.locfileid: "59176008"
 |SharePointオンライン、OneDrive         |該当なし           |
 |Exchange         |該当なし         |
 |AIP 統合クライアント         |該当なし            |
-|AIP 統合スキャナー         |○         |
+|AIP 統合スキャナー         |はい         |
 |MIP SDK         |該当なし            |
 |RMS サービス         |該当なし         |
 |Power BIと Web         |該当なし  |
@@ -176,9 +176,9 @@ ms.locfileid: "59176008"
 |Outlook         |no         |
 |SharePointオンライン、OneDrive         |該当なし           |
 |Exchange         |no       |
-|AIP 統合クライアント         |○            |
+|AIP 統合クライアント         |はい            |
 |AIP 統合スキャナー         |該当なし         |
-|MIP SDK         |○            |
+|MIP SDK         |はい            |
 |RMS サービス         |該当なし         |
 |Power BIと Web         |該当なし            |
 |MCAS     |該当なし        |         |
@@ -193,9 +193,9 @@ ms.locfileid: "59176008"
 |Outlook         |no         |
 |SharePointオンライン、OneDrive         |該当なし           |
 |Exchange         |no       |
-|AIP 統合クライアント         |○            |
+|AIP 統合クライアント         |はい            |
 |AIP 統合スキャナー         |該当なし         |
-|MIP SDK         |○            |
+|MIP SDK         |はい            |
 |RMS サービス         |該当なし         |
 |Power BIと Web         |該当なし            |
 |MCAS     |該当なし        |
@@ -210,9 +210,9 @@ ms.locfileid: "59176008"
 |Outlook         |no         |
 |SharePointオンライン、OneDrive         |該当なし           |
 |Exchange         |no       |
-|AIP 統合クライアント         |○            |
+|AIP 統合クライアント         |はい            |
 |AIP 統合スキャナー         |該当なし         |
-|MIP SDK         |○            |
+|MIP SDK         |はい            |
 |RMS サービス         |該当なし         |
 |Power BIと Web         |該当なし            |
 |MCAS     |該当なし        |
@@ -223,11 +223,11 @@ ms.locfileid: "59176008"
 
 |ソース  |アクティビティ エクスプローラーで報告される |
 |---------|---------| 
-|Exchange         |○       |
-|SharePoint Online|○          |
+|Exchange         |はい       |
+|SharePoint Online|はい          |
 |OneDrive |はい|
-|Teams |○   |
-|Windows 10 デバイス         |○ |
+|Teams |はい   |
+|Windows 10 デバイス         |はい |
 |MAC         |no     |
 |オンプレミス         |no|
 |MCAS     |no        | 
@@ -254,8 +254,8 @@ ms.locfileid: "59176008"
 |ソース  |アクティビティ エクスプローラーで報告される |
 |---------|---------| 
 |Exchange         |no       |
-|SharePoint Online|○          |
-|OneDrive |○|
+|SharePoint Online|はい          |
+|OneDrive |はい|
 
 ## <a name="retention-label-changed"></a>アイテム保持ラベルの変更
 
@@ -266,8 +266,8 @@ ms.locfileid: "59176008"
 |ソース  |アクティビティ エクスプローラーで報告される |
 |---------|---------| 
 |Exchange         |no       |
-|SharePoint Online|○          |
-|OneDrive |○|
+|SharePoint Online|はい          |
+|OneDrive |はい|
  
 ## <a name="retention-label-removed"></a>アイテム保持ラベルの削除
 
@@ -278,8 +278,8 @@ ms.locfileid: "59176008"
 |ソース  |アクティビティ エクスプローラーで報告される |
 |---------|---------| 
 |Exchange         |no       |
-|SharePoint Online|○          |
-|OneDrive |○|
+|SharePoint Online|はい          |
+|OneDrive |はい|
 
 
 ## <a name="known-issues"></a>既知の問題

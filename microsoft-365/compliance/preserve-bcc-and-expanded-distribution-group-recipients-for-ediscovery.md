@@ -9,15 +9,15 @@ ms.date: 6/19/2017
 audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
 description: In-Place保持、訴訟ホールド、Microsoft 365保持ポリシーを使用すると、規制遵守と電子情報開示の要件を満たすためにメールボックス のコンテンツを保持できます。
-ms.openlocfilehash: 4d72233a6026ac493de1cd551c0b4908d200815f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f034129400a47e9b72f0883ce368ecea657851a5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177863"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175133"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>電子情報開示のために Bcc および展開された配布グループの受信者を保持する
   

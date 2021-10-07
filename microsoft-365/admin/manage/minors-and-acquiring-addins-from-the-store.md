@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 未成年者の個人データを管理する一般データ保護規則 (GDPR) の規制について学ぶ。
-ms.openlocfilehash: e7f53a5a6b64f29f5029f0080fef44439c926edb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 84a1ecc9eb5d29ae1c2e4597b8299430cc3de038
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178960"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173069"
 ---
 # <a name="minors-and-acquiring-add-ins-from-the-store"></a>未成年者とストアからアドインを取得する
 

@@ -9,15 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-localization_priority: Normal
+ms.localizationpriority: medium
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e3604cd6d829cf0a60650cbb483d74390d2c0d2d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3bf28e15159097a3ba646306f4705c4a72908e95
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59217804"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60171589"
 ---
 # <a name="contact-support-for-bahrain-kingdom-of"></a>バーレーン、キングダムのサポートに問い合わせ
 
