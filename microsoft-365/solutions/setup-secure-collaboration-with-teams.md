@@ -6,7 +6,7 @@ manager: serdars
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 - m365solution-securecollab
@@ -17,12 +17,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: セキュリティで保護されたコンテンツ コラボレーションを設定し、Teamsに基づいてデータを保護する方法について学習します。
-ms.openlocfilehash: 07f8f1193043b31c53346221791529b5b6162c30
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f8475cd2f832bf2b634a8e60c819927fb8f2769c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192161"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60158996"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365-and-microsoft-teams"></a>ユーザーとユーザーとの安全なMicrosoft 365をMicrosoft Teams
 
@@ -87,7 +87,7 @@ Microsoft 365ソリューションを管理するための多くのオプショ�
 
 |-|ベースライン層|機密性の高い層|機密性の高い層|
 |---|---|---|---|
-|パブリック チームまたはプライベート チーム|[Either/リンク/埋め込み]|Kirkland|Kirkland|
+|パブリック チームまたはプライベート チーム|[Either/リンク/埋め込み]|プライベート|プライベート|
 |認証されていない共有|Blocked|Blocked|Blocked|
 |ファイル共有|可|可|共有できるのはチームの所有者のみです。|
 |チーム メンバーシップ|誰でもパブリック チームに参加できます。<br>プライベート チームに参加するには、チーム所有者の承認が必要です。|参加するにはチーム所有者の承認が必要です。|参加するにはチーム所有者の承認が必要です。|
@@ -134,7 +134,7 @@ Microsoft Learn のこれらのトレーニング モジュールを使用する
 
 ### <a name="teams"></a>Teams
 
-|トレーニング:|Microsoft Teams を使用してチームの共同作業を管理する|
+|トレーニング: |Microsoft Teams を使用してチームの共同作業を管理する|
 |---|---|
 |![Teamsのトレーニング アイコン。](../media/manage-team-collaboration-with-microsoft-teams.svg)|「Microsoft Teams を使用してチームの共同作業を管理する」では、Microsoft 365 でのチームの共同作業の中央のハブである Microsoft Teams の機能について説明します。 Teams を使用して、Office 365 アプリケーションの充実した機能を最大限に活用しながらオンプレミスとオフプレミスの両方で、デスクトップからタブレット、携帯電話までさまざまなデバイス上で組織内のチームワークとコミュニケーションを円滑に進める方法を習得できます。 Teams が、共同作業のための包括的で柔軟な環境をさまざまなアプリケーションやデバイスで提供する方法について説明します。 このラーニングパスはMicrosoft 365 認定: Teams 管理者 の認定の準備を行うことができます。<p>2 時間 17 分 - ラーニング パス - 5 モジュール|
 
@@ -143,7 +143,7 @@ Microsoft Learn のこれらのトレーニング モジュールを使用する
 
 ### <a name="sharepoint"></a>SharePoint
 
-|トレーニング:|Microsoft 365 で SharePoint を使用して共同作業する|
+|トレーニング: |Microsoft 365 で SharePoint を使用して共同作業する|
 |---|---|
 |![SharePointのアイコンをクリックします。](../media/collaborate-with-sharepoint-in-microsoft-365.svg)|「Microsoft SharePoint で共有コンテンツを管理する」では、SharePoint の特徴と機能および Microsoft 365 と連携する仕組みについて紹介します。 ハブ サイトなど、さまざまな種類の SharePoint サイトだけでなく、情報保護、レポート、監視についても説明します。 さらに、SharePoint のファイルとフォルダーの共有を使用してコラボレーションを最適化する方法、外部でファイルを共有する方法、SharePoint 管理センターで SharePoint サイトを管理する方法も説明します。 このラーニングパスはMicrosoft 365 認定: チームワーク管理者の関連付け の認定の準備を行うことができます。<p>1 時間 14 分 - ラーニング パス - 4 モジュール|
 
@@ -152,7 +152,7 @@ Microsoft Learn のこれらのトレーニング モジュールを使用する
 
 ### <a name="information-protection"></a>情報保護
 
-|トレーニング:|Microsoft 365 で企業情報を保護する|
+|トレーニング: |Microsoft 365 で企業情報を保護する|
 |---|---|
 |![Teamsのトレーニング アイコンをクリックします。](../media/protect-enterprise-information-microsoft-365.svg)|組織の情報を保護することは、かつてないほど困難になっています。 「Microsoft 365 で社内の情報を保護する」のラーニング パスでは、機密情報を不用意な共有や誤用から保護する方法、データを検出して分類する方法、秘密度ラベルを使用して保護する方法、損失から保護するために機密情報を監視および分析する方法について説明します。 この学習パスは、セキュリティ管理者の認定:セキュリティ管理者アソシエMicrosoft 365 Microsoft 365認定: Enterpriseエキスパート認定の準備に役立ちます。<p>1 時間 - ラーニング パス - 5 モジュール|
 
@@ -161,7 +161,7 @@ Microsoft Learn のこれらのトレーニング モジュールを使用する
 
 ### <a name="identity-and-access"></a>ID とアクセス
 
-|トレーニング:|Azure Active Directory で ID とアクセスを保護する|
+|トレーニング: |Azure Active Directory で ID とアクセスを保護する|
 |---|---|
 |![ID とアクセスのトレーニング アイコン。](../media/protect-identity-and-access-with-microsoft-365.svg)|ID とアクセスのラーニングパスは、最新の ID およびアクセステクノロジ、認証を強化するためのツール、組織内での ID 保護のガイダンスについて説明しています。 Microsoft ID およびアクセステクノロジを使用すると、組織のIDをオンプレミスでもクラウドでも保護し、ユーザーがどこからでも安全に作業できるようになります。 このラーニングパスはMicrosoft 365 認定: セキュリティ管理者 と Microsoft 365 認定: エンタープライズ管理エキスパート の認定のための準備を行うことが出来ます。<p>2 時間 52 分 - ラーニング パス - 6 モジュール|
 

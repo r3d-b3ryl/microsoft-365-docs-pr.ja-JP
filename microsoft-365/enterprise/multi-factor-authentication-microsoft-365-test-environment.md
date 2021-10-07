@@ -9,7 +9,7 @@ ms.date: 12/12/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-identity-device-management
 ms.custom:
 - TLG
@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: エンタープライズ テスト環境でスマートフォンに送信されるテキスト メッセージを使用して多要素Microsoft 365構成します。
-ms.openlocfilehash: 1c04729c65df455a05e37fe8d0ec6477ba251627
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 283504812466568c4254febe57c3f2886dd3098e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59210724"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60155000"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-for-enterprise-test-environment"></a>エンタープライズ テスト環境向けMicrosoft 365要素認証
 
@@ -81,7 +81,7 @@ Microsoft 365 またはサブスクリプションに Azure AD テナントを�
     
 2. [[ユーザー]](https://admin.microsoft.com) Microsoft 365 管理センターに移動し、User 2 アカウント名とパスワードを使用してサインインします。
     
-3. サインイン後、詳細については、アカウントのセットアップを求めるメッセージが表示されます。 [**次へ**] を選択します。
+3. サインイン後、詳細については、アカウントのセットアップを求めるメッセージが表示されます。 **[次へ]** を選択します。
     
 4. **[追加のセキュリティ確認]** ページで、次の手順を実行します。 
     
@@ -91,7 +91,7 @@ Microsoft 365 またはサブスクリプションに Azure AD テナントを�
     
    - [ **メソッド] で**、[ **テキスト メッセージでコードを送信する] を選択します**。
     
-5. [**次へ**] を選択します。
+5. **[次へ]** を選択します。
     
 6. スマートフォンで受信したテキスト メッセージから確認コードを入力し、[確認] を **選択します**。
     

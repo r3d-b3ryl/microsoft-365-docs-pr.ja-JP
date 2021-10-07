@@ -3,26 +3,24 @@ title: 証明書に基づいてインジケーターを作成する
 ms.reviewer: ''
 description: エンティティの検出、防止、除外を定義する証明書に基づいてインジケーターを作成します。
 keywords: ioc、証明書、証明書、管理、許可、ブロック、ブロック、クリーン、悪意のある、ファイル ハッシュ、IP アドレス、URL、ドメイン
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b471bcfa1c4a42ddf5c49c2a0bc2129c99fd9297
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 0e74fd5a0ffc62d077f9110b014af5d3b0813afd
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043349"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154844"
 ---
 # <a name="create-indicators-based-on-certificates"></a>証明書に基づいてインジケーターを作成する
 
@@ -46,7 +44,7 @@ ms.locfileid: "60043349"
 
 - この機能は、組織でクラウド ベースのWindows Defender ウイルス対策が有効になっている場合に使用できます。 詳細については、「クラウドベースの保護 [を管理する」を参照してください](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)。
 - マルウェア対策クライアントのバージョンは、4.18.1901.x 以降である必要があります。
-- Windows 10 バージョン 1703 以降、Windows サーバー 2016、2019、および Windows Server 2022 のコンピューターでサポートされます。
+- Windows 11、Windows 10、バージョン 1703 以降、Windows サーバー 2016、2019、および Windows Server 2022 のコンピューターでサポートされます。
 - ウイルスおよび脅威保護の定義は最新である必要があります。
 - この機能は現在、 の入力をサポートしています。CER または .PEM ファイル拡張子。
 
@@ -72,7 +70,7 @@ ms.locfileid: "60043349"
 
 4. [概要] タブで詳細を確認し、[保存] を **クリックします**。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [インジケーターの作成](manage-indicators.md)
 - [ファイルのインジケーターを作成 ](indicator-file.md)

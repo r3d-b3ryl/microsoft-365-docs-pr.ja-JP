@@ -10,15 +10,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.custom: commerce_billing_payinfo
-localization_priority: Normal
+ms.localizationpriority: medium
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b20ad47900d2061c54fdb45a6ce274549292cbb5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fff2c2014c131874469d73fbc2d902a8040bfe71
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59193290"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60160134"
 ---
 # <a name="payment-information-for-uzbekistan"></a>ウズベキスタンのお支払い情報
 

@@ -14,16 +14,16 @@ ms.collection:
 - m365initiative-externalcollab
 ms.custom:
 - seo-marvel-apr2020
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
 description: この記事では、ドキュメントのゲストと共同作業を行う方法について、SharePointおよびOneDrive。
-ms.openlocfilehash: db7e619e674a270745b783e85bca803b85ee54ff
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e51ec7e9695c564b2994089f0a827ca7ea4b67c6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219763"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60158960"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>ゲストと共同でドキュメントの作業をする
 

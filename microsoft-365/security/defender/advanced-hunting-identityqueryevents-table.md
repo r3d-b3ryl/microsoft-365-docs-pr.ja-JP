@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 89f6f83112bc6bea57a3b5f7703353adb9d87a30
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 58809ea13b725a7ee7aa9b4098d221b02fe6d35c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163633"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60159128"
 ---
 # <a name="identityqueryevents"></a>IdentityQueryEvents
 
@@ -45,14 +45,14 @@ ms.locfileid: "59163633"
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
-| `ActionType` | 文字列 | イベントをトリガーしたアクティビティの種類。 詳細については [、ポータル内スキーマリファレンス](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) を参照してください。 |
+| `ActionType` | string | イベントをトリガーしたアクティビティの種類。 詳細については [、ポータル内スキーマリファレンス](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) を参照してください。 |
 | `Application` | string | 記録されたアクションを実行したアプリケーション |
-| `QueryType` | 文字列 | QueryGroup、QueryUser、または EnumerateUsers などのクエリの種類 |
+| `QueryType` | string | QueryGroup、QueryUser、または EnumerateUsers などのクエリの種類 |
 | `QueryTarget` | string | クエリを実行するユーザー、グループ、デバイス、ドメイン、その他のエンティティ型の名前 |
 | `Query` | string | クエリの実行に使用される文字列 |
 | `Protocol` | string | 通信中に使用されるプロトコル |
 | `AccountName` | string | アカウントのユーザー名 |
-| `AccountDomain` | 文字列 | アカウントのドメイン |
+| `AccountDomain` | string | アカウントのドメイン |
 | `AccountUpn` | string | アカウントのユーザー プリンシパル名 (UPN) |
 | `AccountSid` | string | アカウントのセキュリティ識別子 (SID) |
 | `AccountObjectId` | string | Azure アカウントのアカウントの一意AD |
@@ -70,7 +70,7 @@ ms.locfileid: "59163633"
 | `ReportId` | long | イベントの一意識別子 |
 | `AdditionalFields` | string | エンティティまたはイベントに関する追加情報 |
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)

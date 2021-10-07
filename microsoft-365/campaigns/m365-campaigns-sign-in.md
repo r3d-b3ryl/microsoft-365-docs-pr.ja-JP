@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: サインインしてMicrosoft 365。 電子メール、データ、コミュニケーションに対するサイバーセキュリティの脅威から、ビジネス、プラクティス、またはキャンペーンを保護します。
-ms.openlocfilehash: eff81da84853130da2f2dcc0aaaf2a9834477a85
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: cd2433adad2563528242d119011afdca208f7424
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219253"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60160606"
 ---
 # <a name="sign-in-to-microsoft-365"></a>サインインしてサインインMicrosoft 365
 
@@ -38,7 +38,7 @@ ms.locfileid: "59219253"
 
 1. サインアップする手順 2 の手順 2 で、メール アドレスに送信したユーザー名とパスワード [を確認します](m365-campaigns-sign-up.md#steps-to-sign-up)。
 2. ブラウザーで、次のページにMicrosoft 365 管理センターします <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> 。
-3. ユーザー名とパスワードを入力します。 **[サインイン]** を選びます。
+3. ユーザー名とパスワードを入力します。 [**サインイン**] を選びます。
 4. ページの上部にある [プレビュー] コントロール **を探** します。 [ **プレビューオン] を** 選択すると、「バンプアップ保護」で説明されているすべての [コントロールをキャンペーンで使用できます](m365-campaigns-security-overview.md)。
 
 ## <a name="for-staff"></a>スタッフ向け

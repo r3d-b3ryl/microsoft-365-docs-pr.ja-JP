@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6f1e59dd653ef0718797a4b71e67c3607b39824c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8861dc3752d2c4cc798bc83475f6a51f8245191a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220053"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60159056"
 ---
 # <a name="get-incident-information-api"></a>インシデント情報 API の取得
 
@@ -52,8 +52,8 @@ ID によって特定のインシデントを取得します。
 ---|---|---
 アプリケーション|Incident.Read.All|'すべてのインシデントを読み取る'
 アプリケーション|Incident.ReadWrite.All|'すべてのインシデントの読み取りと書き込み'
-委任 (職場または学校アカウント)|Incident.Read|'インシデントの読み取り'
-委任 (職場または学校アカウント)|Incident.ReadWrite|'インシデントの読み取りと書き込み'
+委任 (職場または学校のアカウント)|Incident.Read|'インシデントの読み取り'
+委任 (職場または学校のアカウント)|Incident.ReadWrite|'インシデントの読み取りと書き込み'
 
 > [!NOTE]
 >
@@ -72,7 +72,7 @@ GET .../api/incidents/{id}
 
 名前|型|説明
 ---|---|---
-Authorization|文字列|ベアラー {token}。 **必須**
+Authorization|String|ベアラー {token}。 **必須**。
 
 ## <a name="request-body"></a>要求本文
 

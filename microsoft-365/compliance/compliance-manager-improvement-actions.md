@@ -8,18 +8,18 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンス マネージャーでコントロールの実装とテストを実行する方法について説明します。 作業時間の割り当て、ドキュメントの保存、レポートのエクスポートを行います。
-ms.openlocfilehash: f2674e24ed38362c5c7563a574e0dba9c81f2584
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6b8c85b4d22fdd8161300d250d7322f68959f808
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189970"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60156536"
 ---
 # <a name="assign-and-complete-improvement-actions-in-compliance-manager"></a>コンプライアンス マネージャーで改善アクションを割り当て、完了する
 

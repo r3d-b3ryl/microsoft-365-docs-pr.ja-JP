@@ -8,7 +8,7 @@ metadata:
   audience: Admin
   ms.topic: reference
   ms.service: o365-administration
-  localization_priority: Normal
+  ms.localizationpriority: medium
   ms.collection:
   - M365-subscription-management
   - Adm_O365
@@ -19,12 +19,12 @@ metadata:
   search.appverid: MET150
   description: このページに関するよく寄せられる質問 (FAQ) Microsoft 自宅使用プログラム。
   ms.date: 05/01/2021
-  ms.openlocfilehash: 77505b0855ff47afa497acb16b13eb6ad17112cf
-  ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
+  ms.openlocfilehash: 1a4ce5ff55d9d5a24e83e439e838d049d29bd185
+  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 10/05/2021
-  ms.locfileid: "60124255"
+  ms.lasthandoff: 10/06/2021
+  ms.locfileid: "60156764"
 title: Microsoft 自宅使用プログラムよく寄せられる質問 (FAQ)
 summary: "ボリューム ライセンスのお客様は、Microsoft 自宅使用プログラム Web サイトで ビジネス向け Microsoft Store (HUP)[を使用します](https://go.microsoft.com/fwlink/?linkid=2139192)。\n\n他のすべてのユーザーは、次の手順を使用して HUP にアクセスします。\n\n- Microsoft 管理センターで、[製品の請求] ページに移動し、[特典] タブを選択し  >  [](https://go.microsoft.com/fwlink/p/?linkid=842054)**、[HUP] タブを選択** します。 \n"
 sections:

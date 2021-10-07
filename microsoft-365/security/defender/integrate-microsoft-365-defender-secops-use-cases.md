@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 710e2adef0d04d9a7c45506f8b1bd4ec00d1d044
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 79a5b1ea36e6a18d880d7fec7681f826cacac48f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219954"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60158984"
 ---
 # <a name="step-5-develop-and-test-use-cases"></a>手順 5.  使用例の開発とテスト
 

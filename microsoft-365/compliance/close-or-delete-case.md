@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: ケースが閉じたり削除された場合に、調査または法的ケースがサポートAdvanced eDiscoveryどうなるかを確認します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 1096223c3bc6d0648aa45207595c816e26e70da8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 88e0892bec3f220d9c405f3886c37fa89ad2c647
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164071"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60158348"
 ---
 # <a name="close-or-delete-an-advanced-ediscovery-case"></a>ケースを閉じるAdvanced eDiscovery削除する
 

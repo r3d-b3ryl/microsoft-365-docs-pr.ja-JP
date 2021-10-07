@@ -6,7 +6,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: c2ce12a2-934f-4dd4-ba65-49b02be4703d
 description: メール アプリの使用状況レポートを取得して、ユーザーが使用しているメール アプリと Exchange Onlineに接続Outlookを確認する方法について学習します。
-ms.openlocfilehash: d11d06b442bbf5008f66af3aa7eeded512c1e8b3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 11894cc3d7115d2b1050957d2b63b7c2e3e039e3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177296"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60156008"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---email-apps-usage"></a>Microsoft 365管理センターのレポート - メール アプリの使用状況
 

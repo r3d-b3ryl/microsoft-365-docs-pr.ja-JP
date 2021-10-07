@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
@@ -17,12 +17,12 @@ ms.custom:
 description: 管理者は、受信メッセージ (EOP) で受信メッセージを許可するための使用可能なオプションと優先Exchange Online Protectionできます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3fe1379db88d23a1a9b7555add1d54f6587fa573
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: ac0d6cf4ff2dab75809525e5c49fc5c12eec670b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60009387"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157664"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>EOP で差出人セーフ リストを作成する
 

@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 32d50103c6476a89f24568edeea75a206e37e227
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f3b87dc127a1cf5d19d1e310ac4b31b60f690499
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211924"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154580"
 ---
 # <a name="handle-advanced-hunting-errors"></a>高度なハンティング エラーの処理
 
@@ -51,7 +51,7 @@ ms.locfileid: "59211924"
 
 
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [高度な狩猟のベスト プラクティス](advanced-hunting-best-practices.md)
 - [クォータと使用パラメータ](advanced-hunting-limits.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)

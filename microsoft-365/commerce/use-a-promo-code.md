@@ -9,7 +9,7 @@ ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150 S
 description: 価格を下Microsoft 365プロモーション コードを Microsoft 365する方法と、エラーが発生した場合のプロモーション コードのトラブルシューティング方法について説明します。
 ms.date: 03/17/2021
-ms.openlocfilehash: 01a185229f7ca07b7f665fa0515ed479490b92f4e8499787711bb847e2cb51e9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ac7d07406ff25c5f32d269567e418cd94f540d0f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53872661"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60160100"
 ---
 # <a name="use-your-promo-code-to-reduce-price"></a>プロモーション コードを使用して価格を下
 

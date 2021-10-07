@@ -2,7 +2,6 @@
   href: index.yml
   items:
     - name: 作業の開始
-      href: setup/index.yml
       items:
         - name: サインアップ
           href: admin-overview/sign-up-for-office-365.md
@@ -103,7 +102,6 @@
         - name: Azure Information Protection
           href: services-in-china/parity-between-azure-information-protection.md
     - name: ユーザー、グループ、パスワードを管理する
-      href: add-users/index.yml
       items:
         - name: ユーザー
           items:
@@ -180,7 +178,6 @@
             - name: パスワードの有効期限ポリシーを設定する
               href: manage/set-password-expiration-policy.md
     - name: メールと予定表を管理する
-      href: email/index.yml
       items:
         - name: ユーザーのメール設定について
           href: email/office-365-user-email-settings.md
@@ -217,7 +214,6 @@
         - name: 組織での低優先メールを管理する
           href: email/configure-clutter.md
     - name: ドメインの管理
-      href: get-help-with-domains/index.yml
       items:
         - name: ドメインの追加
           href: setup/add-domain.md
@@ -240,7 +236,6 @@
         - name: ドメインに関する問題のトラブルシューティング
           href: get-help-with-domains/find-and-fix-issues.md
     - name: データとサービスを管理する
-      href: manage/index.yml
       items:
         - name: レポートを使用して Microsoft 365 のアクティビティを監視する
           href: activity-reports/activity-reports.md
@@ -348,7 +343,6 @@
         - name: GDPR コンプライアンスのガイド
           href: security-and-compliance/gdpr-compliance.md
     - name: デバイスとアプリのデータを管理する
-      href: devices/index.yml
       items:
         - name: デバイスとアプリのデータの保護方法
           href: devices/choose-device-security.md
@@ -421,7 +415,6 @@
             - name: トラブルシューティング
               href: basic-mobility-security/troubleshoot.md
     - name: 顧客と連携する
-      href: work-with-customers/index.yml
       items:
         - name: サイトとファイルをゲスト ユーザーと共有する
           href: manage/share-sites-with-external-users.md

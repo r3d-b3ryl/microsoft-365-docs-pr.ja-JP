@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Advanced eDiscovery グループでのチャット会話の再構築、レビュー、エクスポートを行う Advanced eDiscovery での会話の再構築機能についてMicrosoft TeamsおよびYammerします。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 62ebfc054db260fd5e41fec3809ba1efdf46b44b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c2638b2e89169560307cd32217532d4d5ce565e8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191581"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60156524"
 ---
 # <a name="conversation-threading-in-advanced-ediscovery"></a>スレッド内のスレッドAdvanced eDiscovery
 

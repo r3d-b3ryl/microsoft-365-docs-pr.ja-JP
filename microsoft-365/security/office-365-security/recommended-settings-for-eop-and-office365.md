@@ -9,7 +9,7 @@ ms.date: ''
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
@@ -19,12 +19,12 @@ ms.collection:
 description: セキュリティ設定に関する Exchange Online Protection (EOP) と Defender のベスト Office 365は何ですか? 標準保護に関する現在の推奨事項は何ですか? より厳密にしたい場合は、何を使用する必要がありますか? また、Defender をユーザーに使用する場合、どのような追加Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c7ac68c1085a748b82007ff3a890e7dc42b46ce3
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: ecb8094c73aedc4d737043f2682bbd1a1258acfa
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043217"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157580"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>EOP および Microsoft Defender for Office 365 セキュリティの推奨設定
 
@@ -61,7 +61,7 @@ ms.locfileid: "60043217"
 
 ****
 
-|セキュリティ機能名|既定値|Standard|Strict|コメント|
+|セキュリティ機能名|既定値|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
 |**スパム プロパティの一括&しきい値**|||||
 |**バルク メールのしきい値** <p> _BulkThreshold_|7 |6 |4 |詳細については [、「EOP のバルク 苦情レベル (BCL)」を参照してください](bulk-complaint-level-values.md)。|
@@ -98,7 +98,7 @@ ms.locfileid: "60043217"
 
 ****
 
-|セキュリティ機能名|コメント|
+|セキュリティ機能名|Comment|
 |---|---|
 |**リモート サイトへのイメージ リンク** (_IncreaseScoreWithImageLinks_)||
 |**URL の数値 IP アドレス** (_IncreaseScoreWithNumericIps_)||
@@ -128,7 +128,7 @@ ms.locfileid: "60043217"
 
 ****
 
-|セキュリティ機能名|既定値|Standard|Strict|コメント|
+|セキュリティ機能名|既定値|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
 |**外部メッセージの制限を設定する** <p> _RecipientLimitExternalPerHour_|0|500|400|既定値 0 は、サービスの既定値を使用します。|
 |**内部メッセージの制限を設定する** <p> _RecipientLimitInternalPerHour_|0|1000|800|既定値 0 は、サービスの既定値を使用します。|
@@ -147,7 +147,7 @@ ms.locfileid: "60043217"
 
 ****
 
-|セキュリティ機能名|既定値|Standard|Strict|コメント|
+|セキュリティ機能名|既定値|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
 |**保護設定**|||||
 |**共通の添付ファイル フィルターを有効にする** <p> _EnableFileFilter_|未選択 <p> `$false`|選択済み <p> `$true`|選択済み <p> `$true`|この設定は、添付ファイルの内容に関係なく、ファイルの種類に基づいて実行可能な添付ファイルを含むメッセージを検疫します。|
@@ -181,7 +181,7 @@ ms.locfileid: "60043217"
 
 ****
 
-|セキュリティ機能名|既定値|Standard|Strict|コメント|
+|セキュリティ機能名|既定値|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
 |**フィッシングのしきい値&保護**|||||
 |**スプーフィング インテリジェンスを有効にする** <p> _EnableSpoofIntelligence_|選択済み <p> `$true`|選択済み <p> `$true`|選択済み <p> `$true`||
@@ -218,7 +218,7 @@ EOP のお客様は、前述のように基本的なフィッシング対策を�
 
 ****
 
-|セキュリティ機能名|既定値|Standard|Strict|コメント|
+|セキュリティ機能名|既定値|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
 |**フィッシングメールのしきい値** <p> _PhishThresholdLevel_|**1 - Standard** <p> `1`|**2 - アグレッシブ** <p> `2`|**3 - より積極的** <p> `3`||
 |
@@ -231,7 +231,7 @@ EOP のお客様は、前述のように基本的なフィッシング対策を�
 
 ****
 
-|セキュリティ機能名|既定値|Standard|Strict|コメント|
+|セキュリティ機能名|既定値|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
 |**フィッシングのしきい値&保護**|||||
 |**ユーザーによる保護の有効化** (偽装ユーザー保護) <p> _EnableTargetedUserProtection_ <p> _TargetedUsersToProtect_|未選択 <p> `$false` <p> none|選択済み <p> `$true` <p> \<list of users\>|選択済み <p> `$true` <p> \<list of users\>|主要な役割にユーザー (メッセージ送信者) を追加することをお勧めします。 内部的には、保護された送信者は、CEO、CFO、その他の上級リーダーである可能性があります。 外部的には、保護された送信者には、評議会のメンバーまたは取締役会が含まれる可能性があります。|
@@ -260,7 +260,7 @@ EOP のお客様は、前述のように基本的なフィッシング対策を�
 
 ****
 
-|セキュリティ機能名|既定値|Standard|Strict|コメント|
+|セキュリティ機能名|既定値|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
 |**フィッシングのしきい値&保護**|||||
 |**スプーフィング インテリジェンスを有効にする** <p> _EnableSpoofIntelligence_|選択済み <p> `$true`|選択済み <p> `$true`|選択済み <p> `$true`||
@@ -285,7 +285,7 @@ PowerShell では、これらの設定に [Set-AtpPolicyForO365](/powershell/mod
 
 ****
 
-|セキュリティ機能名|既定値|Standard|Strict|コメント|
+|セキュリティ機能名|既定値|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
 |**SharePoint、OneDrive、Microsoft Teams 用の Microsoft Defender for Office 365 を有効にする** <p> _EnableATPForSPOTeamsODB_|オフ <p> `$false`|オン <p> `$true`|オン <p> `$true`||
 |**クライアントのセーフドキュメントを有効Officeする** <p> _EnableSafeDocs_|オフ <p> `$false`|オン <p> `$true`|オン <p> `$true`|この機能は、Defender for Office 365に含まれていないライセンス (たとえば、Microsoft 365 E5またはMicrosoft 365 E5 Security)。 詳細については、「ドキュメントの[セーフ」を参照Microsoft 365 E5。](safe-docs.md)|
@@ -305,7 +305,7 @@ PowerShell では、これらの設定に [New-SafeAttachmentPolicy](/powershell
 
 ****
 
-|セキュリティ機能名|既定値|Standard|Strict|コメント|
+|セキュリティ機能名|既定値|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
 |**セーフ添付ファイル不明のマルウェア応答** <p> _有効にして__操作する_|**オフ** <p> `-Enable $false` と `-Action Block`|**Block** <p> `-Enable $true` と `-Action Block`|**Block** <p> `-Enable $true` と `-Action Block`|Enable パラメーター _が_ 有効 _$false、Action_ パラメーターの値は関係ありません。|
 |**検疫ポリシー** (_QuarantineTag_)|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|新しい セーフ 添付ファイル ポリシーを作成すると、空白の値は、既定の検疫ポリシーを使用して、セーフ 添付ファイル (AdminOnlyAccessPolicy) によって検疫されたメッセージの履歴機能を定義します。 <p> 管理者は、ユーザーに対してより多くの機能を定義するカスタム検疫ポリシーを作成および選択できます。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。|
@@ -327,7 +327,7 @@ PowerShell では、これらの設定に [Set-AtpPolicyForO365](/powershell/mod
 
 ****
 
-|セキュリティ機能名|既定値|Standard|Strict|コメント|
+|セキュリティ機能名|既定値|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
 |**次の URL をブロックする** <p> _ExcludedUrls_|空白 <p> `$null`|空白 <p> `$null`|空白 <p> `$null`|この設定に関する具体的な推奨事項はありません。 <p> 詳細については、「リンク」の「次の URL をブロックする[」をセーフしてください](safe-links.md#block-the-following-urls-list-for-safe-links)。
 |**アプリセーフリンクをOffice 365する** <p> _EnableSafeLinksForO365Clients_|オン <p> `$true`|オン <p> `$true`|オン <p> `$true`|デスクトップセーフモバイル (iOS Office 365 Android) アプリでサポートされているリンクを使用します。 詳細については、「[Office 365 アプリ向けの安全なリンク設定](safe-links.md#safe-links-settings-for-office-365-apps)」を参照してください。|
@@ -348,7 +348,7 @@ PowerShell では、これらの設定に [New-SafeLinksPolicy](/powershell/modu
 
 ****
 
-|セキュリティ機能名|既定値|Standard|Strict|コメント|
+|セキュリティ機能名|既定値|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
 |**保護設定**|||||
 |**メッセージ内の不明な潜在的に悪意のある URL のアクションを選択する** <p> _IsEnabled_|**オフ** <p> `$false`|**On** <p> `$true`|**On** <p> `$true`||

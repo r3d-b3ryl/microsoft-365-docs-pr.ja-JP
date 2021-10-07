@@ -10,18 +10,18 @@ audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 ms.search: M365-security-compliance
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
 description: 検索統計機能を使用して、コア電子情報開示ケースに関連付けられたコンテンツ検索と検索の統計を表示する方法についてMicrosoft 365 コンプライアンス センター。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7f9948a5ae194a475f5bdcf319aa48fa32cc282f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e9f849c6a65fec83fc936876e1b024c4eeab1833
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216174"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60156452"
 ---
 # <a name="view-statistics-for-ediscovery-search-results"></a>電子情報開示検索結果の統計情報を表示する
 

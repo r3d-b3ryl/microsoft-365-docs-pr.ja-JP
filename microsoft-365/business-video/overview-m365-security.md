@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ビジネス向けサービスに含まれるセキュリティMicrosoft 365を確認します。
-ms.openlocfilehash: 686ced4c4612470d25ab3a39fdd824b576bbeab7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 118c69356e7e12bfab69770f6ee1dc15bd58525e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59190550"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60160682"
 ---
 # <a name="overview-of-security"></a>セキュリティの概要
 
@@ -55,7 +55,7 @@ Microsoft 365 Business Premium高度[Office 365保護 (ATP)、](safe-links.md)�
 
 [Exchange Online Archiving](/office365/servicedescriptions/exchange-online-archiving-service-description/exchange-online-archiving-service-description)は、Microsoft Exchange または Exchange Online と組み合わせ、保留やデータの冗長性などの高度なアーカイブ機能を提供するクラウドベースのアーカイブ ソリューションです。 保持ポリシーを使用すると、組織が電子メールや他の通信に関連する負債を減らすのに役立ちます。 会社が訴訟に関連する通信を保持する必要がある場合は、In-Place保持と訴訟ホールドを使用して、関連する電子メールを保持できます。
 
-## <a name="device-management"></a>デバイスの管理
+## <a name="device-management"></a>デバイス管理
 
 Microsoft 365 Business Premium高度なデバイス管理機能を使用すると、登録済みのデバイスでユーザーが実行できる操作を監視および制御できます。 これらの機能には、条件付きアクセス、 [モバイル デバイス管理 (MDM)、BitLocker、](/microsoft-365/admin/basic-mobility-security/manage-enrolled-devices)自動更新が含まれます。
 

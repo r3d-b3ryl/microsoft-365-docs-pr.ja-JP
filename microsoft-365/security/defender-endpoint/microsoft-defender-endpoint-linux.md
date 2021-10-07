@@ -3,15 +3,13 @@ title: Linux 用 Microsoft Defender for Endpoint
 ms.reviewer: ''
 description: Linux で Microsoft Defender for Endpoint をインストールして使用する方法について説明します。
 keywords: Microsoft、Defender、Microsoft Defender for Endpoint、Linux、インストール、展開、アンインストール、puppet、ansible、linux、redhat、ubuntu、debian、sles、suse、centos
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -19,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cdf022be492701e790606479877bf57f6f426094
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 1717a184bb03bbc4165e4637a1a04557925f8abb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483581"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157916"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 用 Microsoft Defender for Endpoint
 
@@ -129,6 +127,10 @@ Linux での Microsoft Defender for Endpoint のインストールと構成に�
   > [!NOTE]
   > 追加されたルールによってキャプチャされたシステム イベントは (s) に追加され、ホストの監査とアップストリーム コレクション `/etc/audit/rules.d/` `audit.log` に影響を与える可能性があります。 Microsoft Defender for Endpoint on Linux で追加されたイベントには、キーがタグ付け `mdatp` されます。
 
+### <a name="configuring-exclusions"></a>除外の構成
+
+ユーザーに除外を追加Microsoft Defender ウイルス対策、ユーザーの一般的な除外の間違い[を念頭に置Microsoft Defender ウイルス対策](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus)
+
 ### <a name="network-connections"></a>ネットワーク接続
 
 次のダウンロード可能なスプレッドシートには、ネットワークが接続できる必要があるサービスと関連付けられている URL が一覧表示されます。 これらの URL へのアクセスを拒否するファイアウォールまたはネットワーク フィルタールールが存在しなかっている必要があります。 ある場合は、許可ルール *の作成が* 必要な場合があります。
@@ -166,6 +168,10 @@ Microsoft は、パフォーマンス、セキュリティ、および新機能�
 ## <a name="how-to-configure-microsoft-defender-for-endpoint-on-linux"></a>Linux 用 Microsoft Defender for Endpoint の構成方法
 
 エンタープライズ環境で製品を構成する方法については、「Linux での Microsoft Defender for Endpoint の基本設定の設定 [」を参照してください](linux-preferences.md)。
+
+## <a name="common-applications-to-microsoft-defender-for-endpoint-can-impact"></a>エンドポイント向け Microsoft Defender への一般的なアプリケーションは、影響を与える可能性があります
+
+特定のアプリケーションの高い I/O ワークロードでは、Microsoft Defender for Endpoint のインストール時にパフォーマンスの問題が発生する可能性があります。 これには、Jenkins や Jira などの開発者シナリオ用のアプリケーションや、OracleDB や Postgres などのデータベース ワークロードが含まれます。 パフォーマンスの低下が発生した場合は、信頼できるアプリケーションの除外を設定し、一般的な除外の間違いを念頭に置[Microsoft Defender ウイルス対策検討してください](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus)。 その他のガイダンスについては、サード パーティ製アプリケーションからのウイルス対策の除外に関するコンサルティング ドキュメントを検討してください。
 
 ## <a name="resources"></a>リソース
 

@@ -9,17 +9,17 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 8932b28c2e87431028ae608ea56b95f340485199
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5ad5e942f60f34adb7faf35eb70b1a027124664e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179343"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157928"
 ---
 # <a name="import-indicators-api"></a>インポート インジケーター API
 
@@ -54,7 +54,7 @@ IPs の CIDR 表記はサポートされていません。
 :---|:---|:---
 アプリケーション|Ti.ReadWrite|'読み取りおよび書き込みインジケーター'
 アプリケーション|Ti.ReadWrite.All|'すべてのインジケーターの読み取りと書き込み'
-委任 (職場または学校アカウント)|Ti.ReadWrite|'読み取りおよび書き込みインジケーター'
+委任 (職場または学校のアカウント)|Ti.ReadWrite|'読み取りおよび書き込みインジケーター'
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -66,8 +66,8 @@ POST https://api.securitycenter.microsoft.com/api/indicators/import
 
 名前|型|説明
 :---|:---|:---
-Authorization|String|ベアラー {token}。 **必須**
-Content-Type|string|application/json. **必須**
+Authorization|String|ベアラー {token}。 **必須**。
+Content-Type|string|application/json. **必須**。
 
 ## <a name="request-body"></a>要求本文
 

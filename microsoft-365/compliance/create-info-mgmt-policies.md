@@ -9,7 +9,7 @@ ms.date: 5/16/2017
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - SPO160
 - OSU150
@@ -22,12 +22,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 情報管理ポリシーを設定して、情報の保持期間を制御し、情報を使用しているユーザーを追跡する方法について説明します。
-ms.openlocfilehash: eb5d493cfc8f442c5210b99ec394ebf72f30086e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7307e496349360777e7f5aa7b49948f113d91387
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163951"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60156500"
 ---
 # <a name="create-and-apply-information-management-policies"></a>情報管理ポリシーを作成して適用する
 

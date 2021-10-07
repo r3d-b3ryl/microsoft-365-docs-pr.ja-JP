@@ -11,19 +11,19 @@ ms.topic: article
 ms.collection:
 - o365_security_incident_response
 - M365-security-compliance
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 description: カスタム フォーム のルールとカスタム フォームOutlook攻撃を認識して修復する方法について説明Office 365
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0846051b65b34ec26358f87bb4ca49302573e6e7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6c715552fedeefeb87206d889aa448609e8d7f60
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163530"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157640"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>ルールとカスタム フォームOutlook攻撃を検出して修復する
 
@@ -140,7 +140,7 @@ ms.locfileid: "59163530"
 
 3. PowerShell インスタンスを管理者として開き、スクリプトを保存したフォルダーを開きます。
 
-4. 次のようにこの PowerShell コマンド ラインを `.\Get-AllTenantRulesAndForms.ps1` 実行.\Get-AllTenantRulesAndForms.ps1
+4. 次の .\Get-AllTenantRulesAndForms.ps1 に従って、この `.\Get-AllTenantRulesAndForms.ps1` PowerShell コマンド ラインを実行\Get-AllTenantRulesAndForms.ps1
 
 #### <a name="interpreting-the-output"></a>出力の解釈
 

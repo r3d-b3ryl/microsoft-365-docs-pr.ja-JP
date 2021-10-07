@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: アプリを使用して iOS Officeアプリをセキュリティで保護するMicrosoft 365 Business Premium。
-ms.openlocfilehash: 748a24aeeb7859726f37491511c4e120207ef59e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c1e8f520805237649df307ba9f4a2fe9ad88b0b8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59190451"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60155588"
 ---
 # <a name="secure-office-apps-on-ios"></a>iOS の Office アプリをセキュリティで保護する
 

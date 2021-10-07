@@ -11,14 +11,14 @@ ms.service: O365-seccomp
 ms.collection:
 - m365-security-compliance
 - m365initiative-compliance
-localization_priority: Normal
+ms.localizationpriority: medium
 description: コンプライアンスを迅速に開始するのに役立つタスクについては、Microsoft 365。
-ms.openlocfilehash: 61a057c3666faae51a012dd9db2d4c63ded0f77a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d60a9f589b6dc0c29d60c96fac9a8e30fbc4a3e0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176088"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60156548"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Microsoft 365 コンプライアンスを開始するためのクイック タスク
 

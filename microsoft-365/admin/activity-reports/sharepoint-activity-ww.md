@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: すべてのユーザー SharePointのアクティビティ、共有されているファイルの数、およびストレージ使用率について知SharePointアクティビティ使用状況レポートを取得します。
-ms.openlocfilehash: 5b4fb458c96202993a30a64800aac3c443983d04
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c1e476ff36fb21150914d08e39aa742bd17493a2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177199"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60158912"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-activity"></a>Microsoft 365管理センターのレポート - SharePointアクティビティ
 
@@ -59,7 +59,7 @@ ms.locfileid: "59177199"
 |内部で共有されるファイル  <br/> | 組織内のユーザー、またはグループ内のユーザーと共有されたファイルの数 (外部ユーザーを含む場合があります)。  <br/> |
 |外部で共有されるファイル  <br/> |組織外のユーザーと共有されているファイルの数。 <br/>|
 |アクセスしたページ  <br/> |ユーザーによる一意のページへのアクセス。 <br/>|
-|Deleted  <br/> | これは、ユーザーのライセンスが削除されたかどうかを示します。  <br/>  **注:** 削除されたユーザーのアクティビティは、選択した期間中にライセンスを取得した場合でも、レポートに表示されます。 [削除済みの列] は、アクティブではないユーザーに気づく際に役立ちますが、レポート内のデータには反映されます。  <br/> |
+|削除済み  <br/> | これは、ユーザーのライセンスが削除されたかどうかを示します。  <br/>  **注:** 削除されたユーザーのアクティビティは、選択した期間中にライセンスを取得した場合でも、レポートに表示されます。 [削除済みの列] は、アクティブではないユーザーに気づく際に役立ちますが、レポート内のデータには反映されます。  <br/> |
 |削除日  <br/> |ユーザーのライセンスが削除された日付。 <br/>|
 |割り当てられた製品  <br/> |ユーザー Microsoft 365ライセンスされている製品の一覧です。|
 |||

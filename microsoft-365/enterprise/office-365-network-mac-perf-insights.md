@@ -7,19 +7,19 @@ ms.date: 09/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365ネットワーク インサイト
-ms.openlocfilehash: e5b46b4a19a52807a0690722e9a5f5f46727c7ae
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d8f021ee543b41d3e53a5f12f9ba3d6c83da8757
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215794"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60155012"
 ---
 # <a name="microsoft-365-network-insights"></a>Microsoft 365ネットワーク インサイト
 
@@ -190,7 +190,7 @@ Exchange、SharePoint、Teams の重要な Office 365 ネットワーク エン�
 
 オフィスの場所ネットワーク接続の可視性を有効にする (まだ有効にしていない場合)。 SharePoint に影響を与えるネットワーク接続の不十分な影響を受け、ユーザーを Microsoft のネットワークに接続する各オフィスでネットワーク境界を改善する方法を見つける必要があります。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [Microsoft 365 管理 センターのネットワーク接続 (プレビュー)](office-365-network-mac-perf-overview.md)
 

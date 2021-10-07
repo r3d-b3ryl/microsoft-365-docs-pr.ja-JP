@@ -1,14 +1,13 @@
 ---
 title: Microsoft Defender for Endpoint への切り替えに関する移行ガイド
 description: 非セキュリティ ソリューションから Microsoft Defender for Endpoint への切りMicrosoft 365 Defenderする方法について説明します。
-search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
 ms.prod: m365-security
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365solution-scenario
@@ -17,12 +16,12 @@ ms.reviewer: chriggs, depicker, yongrhee
 f1.keywords: NOCSH
 ms.date: 06/14/2021
 ms.technology: mde
-ms.openlocfilehash: 1fd410be19a8b5181cb2ef2b88d53e198753c7a3
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 81de8401a9b09fdcc008a02a240bb66010d6ef33
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776742"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154760"
 ---
 # <a name="make-the-switch-to-microsoft-defender-for-endpoint"></a>エンドポイント用 Microsoft Defender への切り替え
 
@@ -45,6 +44,7 @@ Defender for Endpoint への移行を検討している場合は、ヘルプを�
 |Microsoft 以外のエンドポイント保護ソリューションから Defender for Endpoint に切り替え、Microsoft Defender ウイルス対策。 移行プロセスの概要と切り替え方法を取得する必要があります。|[エンドポイント用 Microsoft Defender への切り替え](switch-to-microsoft-defender-migration.md)|
 |Defender for Endpoint に移行またはオンボード済みです。 セキュリティ設定の管理、その他の機能の構成、セキュリティ ポリシーの微調整など、次の手順に関するヘルプが必要です。|[移行後の Microsoft Defender for Endpoint の管理](manage-atp-post-migration.md)|
 |
+
 
 ## <a name="do-you-have-feedback-for-us"></a>フィードバックをお寄せください。
 

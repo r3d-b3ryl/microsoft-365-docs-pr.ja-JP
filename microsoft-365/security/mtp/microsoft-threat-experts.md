@@ -11,16 +11,16 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: v-maave
 author: martyav
-localization_priority: normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.openlocfilehash: 4fcab8abd4f1a5a45ff2700b01abc7fe67b8563f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e47783d2308ca4b94360dd4fa06341d18f8973bb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164695"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154664"
 ---
 # <a name="microsoft-threat-experts-in-microsoft-365-overview"></a>Microsoft 脅威エキスパートの概要Microsoft 365説明
 

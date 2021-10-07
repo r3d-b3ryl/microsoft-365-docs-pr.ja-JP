@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a7ee836cc40c7960c7963867484056b5a506241b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: db128699fe68ef8728122a7b505e74be1689d38d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192610"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60159200"
 ---
 # <a name="respond-to-web-threats"></a>Web の脅威への対応
 
@@ -82,7 +82,7 @@ Microsoft Defender for Endpoint の Web 保護を使用すると、エンド ユ
 ![セキュリティで保護された接続の警告とセキュリティで保護された通知を示す Chrome Windows画像。 ](images/wtp-chrome-browser-blocking-page.png)
 *Chrome でブロックされた Web の脅威*
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [Web 保護の概要](web-protection-overview.md)
 - [Web コンテンツ フィルタリング](web-content-filtering.md)

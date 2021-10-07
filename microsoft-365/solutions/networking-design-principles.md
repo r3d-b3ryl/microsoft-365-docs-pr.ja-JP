@@ -7,18 +7,18 @@ manager: bcarter
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 6ab911fa9ad4e39a59b7acc58cae7686dd330ed4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 519f3035040f563a6f3663198be3952830cb21cb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192191"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60158948"
 ---
 # <a name="networking-up-to-the-cloudone-architects-viewpoint"></a>ネットワークアップ (クラウドまで) - 1 人のアーキテクトの視点
 
@@ -104,7 +104,7 @@ UDP を使用するOffice 365サービスは、Skype (間もなく廃止され�
 
 スプリット トンネリングを許可する一方で、一般的な Web トラフィックにもプロキシを使用する場合は、PAC ファイルで、VPN トンネルを通過するトラフィックに関する興味深いトラフィックを定義する方法と同様に、直接行う必要がある処理を定義してください。 サンプル PAC ファイルを提供 [https://aka.ms/ipaddrs](../enterprise/urls-and-ip-address-ranges.md) しています。これにより、管理が容易になります。
 
-## <a name="conclusion"></a>まとめ
+## <a name="conclusion"></a>終わりに
 
 ほぼすべての Fortune 500 を含む数万の組織は、ミッション クリティカルな機能Office 365毎日使用しています。 セキュリティで保護され、インターネットを使用して行います。
 

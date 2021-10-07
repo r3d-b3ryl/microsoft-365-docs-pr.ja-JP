@@ -6,7 +6,7 @@ manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d
 description: '[アクティブ ユーザー] ダッシュボードの [Microsoft 365] ダッシュボードを使用してアクティブ ユーザー レポートを取得するMicrosoft 365 管理センター、使用されている製品ライセンスの数を確認します。'
-ms.openlocfilehash: 456d561246a1c2073b571fa5c48ed97cc9f71849
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: abb2c4459ac52151fbf1af5712e52ac49f0d5762
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164551"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60156068"
 ---
 # <a name="assess-the-microsoft-365-active-users-report"></a>[アクティブ ユーザーのMicrosoft 365評価] レポート
 

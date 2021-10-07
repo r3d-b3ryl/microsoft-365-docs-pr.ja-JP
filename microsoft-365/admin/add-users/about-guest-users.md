@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -21,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: '[ゲスト ユーザー] リストに[ゲスト ユーザー] リストが表示される方法Microsoft 365 管理センター。'
-ms.openlocfilehash: 3afc1c3de5a56def6e6bcf1fa9b9711bdff0d4e8
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: f2a8de5b4e9c00361aa0cb2113185fa07d8885a2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773657"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60158744"
 ---
 # <a name="guest-users-in-microsoft-365-admin-center"></a>ユーザーのゲストMicrosoft 365 管理センター
 
@@ -35,7 +36,7 @@ ms.locfileid: "59773657"
 
 ゲスト ユーザーを表示するには、左側 <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">Microsoft 365 管理センターで</a>[ユーザー] を展開し、[ゲスト ユーザー]**を選択します**。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 このタスクを実行するには、グローバル管理者である必要があります。
 

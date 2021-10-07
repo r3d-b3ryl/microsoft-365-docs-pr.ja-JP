@@ -8,10 +8,11 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
@@ -20,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 管理センター の 「Office の新機能」機能を使用して、ユーザーが Office アプリ on Windows で [ヘルプ > 新機能] を選択した場合に表示または非表示にする Office 機能を決定します。
-ms.openlocfilehash: 357993a3a907edcccdc74d29d13a6eab464690aa
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 53372a4075de6d6a4790d49dc23e79e0ca60d65d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773102"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60155996"
 ---
 # <a name="manage-which-office-features-appear-in-whats-new"></a>新機能にOffice機能を管理する
 

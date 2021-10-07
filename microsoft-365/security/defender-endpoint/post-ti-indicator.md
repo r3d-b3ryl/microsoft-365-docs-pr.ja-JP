@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4ab36313b25ab61ece35041f7cc6de1064465ecb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 299a6fff547c921dfdc02d4c23bfd8947b878875
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214823"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157880"
 ---
 # <a name="submit-or-update-indicator-api"></a>インジケーター API の送信または更新
 
@@ -57,7 +57,7 @@ IPs の CIDR 表記はサポートされていません。
 :---|:---|:---
 アプリケーション|Ti.ReadWrite|'読み取りおよび書き込みインジケーター'
 アプリケーション|Ti.ReadWrite.All|'すべてのインジケーターの読み取りと書き込み'
-委任 (職場または学校アカウント)|Ti.ReadWrite|'読み取りおよび書き込みインジケーター'
+委任 (職場または学校のアカウント)|Ti.ReadWrite|'読み取りおよび書き込みインジケーター'
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -69,8 +69,8 @@ POST https://api.securitycenter.microsoft.com/api/indicators
 
 名前|型|説明
 :---|:---|:---
-Authorization|文字列|ベアラー {token}。 **必須**
-Content-Type|string|application/json. **必須**
+Authorization|String|ベアラー {token}。 **必須**
+Content-Type|string|application/json. **必須**。
 
 ## <a name="request-body"></a>要求本文
 
@@ -78,7 +78,7 @@ Content-Type|string|application/json. **必須**
 
 パラメーター|型|説明
 :---|:---|:---
-indicatorValue|文字列|Indicator エンティティ [の](ti-indicator.md) ID。 **必須**
+indicatorValue|String|Indicator エンティティ [の](ti-indicator.md) ID。 **必須**
 indicatorType|列挙|インジケーターの種類。 指定できる値は、"FileSha1"、"FileMd5"、"CertificateThumbprint"、"FileSha256"、"IpAddress"、"DomainName"、"Url" です。 **必須**
 action|列挙|インジケーターが組織内で検出される場合に実行されるアクション。 指定できる値は、"Alert"、"Warn"、"Block"、"Audit"、"BlockAndRemediate"、"AlertAndBlock"、"Allowed" です。 **必須**
 アプリケーション|String|インジケーターに関連付けられているアプリケーション。 このフィールドは、新しいインジケーターでのみ機能します。 既存のインジケーターの値は更新されない。 **Optional**

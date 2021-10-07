@@ -11,7 +11,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: sunasing
 author: sunasing
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 hideEdit: true
 ms.technology: mde
-ms.openlocfilehash: 1d5a6a6f35a71481abf79901aed6d991fcee83fa
-ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
+ms.openlocfilehash: 4b6bcadfa7f6bb51f48790460aeb0d034b1fbf65
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "60088428"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60156232"
 ---
 # <a name="microsoft-defender-for-endpoint-application-license-terms"></a>Microsoft Defender for Endpoint アプリケーション ライセンス条項
 

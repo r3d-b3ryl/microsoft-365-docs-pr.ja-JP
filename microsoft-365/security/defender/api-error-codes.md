@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: de24856e8ea7555a96de18cabca5ccadfe71b431
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: aa85de2f9dc6a5cbc8a7f22660fd96487f7d8aaf
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220054"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154568"
 ---
 # <a name="common-microsoft-365-defender-rest-api-error-codes"></a>REST API Microsoft 365 Defenderコードに関する一般的な情報
 

@@ -8,19 +8,19 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンス マネージャーがリスクへの対処と、コンプライアンスに対する方針の改善のために実行するアクションに基づいて個人用スコアを計算する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 26ef0f73a8da9403c2d1fd8248f828d6faf7f6e3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b3b250391d04a8bf7388c761bcb00fe7cf99a4a5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176087"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60156512"
 ---
 # <a name="compliance-score-calculation"></a>コンプライアンス スコアの計算
 

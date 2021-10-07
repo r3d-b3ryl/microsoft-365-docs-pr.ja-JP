@@ -9,15 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-localization_priority: Normal
+ms.localizationpriority: medium
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 63da424b7bf93fa2f570081ddd3c09ea9f9df94e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f9924d0fd574e1ce53a67dfef1a35a18627967d4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219644"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60155780"
 ---
 # <a name="contact-support-for-tokelau"></a>Tokelau のサポートに問い合わせ
 

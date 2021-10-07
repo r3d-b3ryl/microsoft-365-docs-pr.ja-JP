@@ -3,7 +3,7 @@ title: Office 365 および Office 365 GCC での TLS 1.2 の準備
 description: TLS 1.0 および 1.1 のサポートが無効になった後、Office 365 と Office 365 GCC でのすべてのクライアントとサーバー間、ブラウザーとサーバー間の組み合わせにおいて、TLS 1.2 の使用を準備する方法
 author: kccross
 manager: laurawi
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 audience: ITPro
@@ -13,16 +13,16 @@ ms.author: shmehta
 ms.reviewer: krowley
 appliesto:
 - Office 365 Business
-ms.openlocfilehash: b09ffa936ef7395bd16df37378db2d7de4a253f8
-ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
+ms.openlocfilehash: 2ae758ef9e5c36b2406527e2a10c43f57986ea1f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59480738"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60159756"
 ---
 # <a name="preparing-for-tls-12-in-office-365-and-office-365-gcc"></a>Office 365 および Office 365 GCC での TLS 1.2 の準備
 
-## <a name="summary"></a>概要
+## <a name="summary"></a>要約
 
 お客様へ最高クラスの暗号化機能を提供するために、マイクロソフトは Office 365 および Office 365 GCC のトランスポート層セキュリティ (TLS) バージョン 1.0 および 1.1 を廃止することを計画しています。 お客様のデータに対するセキュリティの重要性を理解すると共に、お客様が利用しているサービスに影響を及ぼす可能性のある変更については、その情報を公開することをお約束いたします。
 

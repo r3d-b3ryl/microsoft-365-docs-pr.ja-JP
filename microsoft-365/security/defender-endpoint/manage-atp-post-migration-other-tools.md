@@ -2,8 +2,6 @@
 title: PowerShell、WMI、およびデバイスを使用して Microsoft Defender for Endpoint をMPCmdRun.exe
 description: PowerShell、WMI、およびエンドポイントを使用して Microsoft Defender for Endpoint を管理するMPCmdRun.exe
 keywords: 移行後、管理、運用、メンテナンス、使用率、PowerShell、WMI、MPCmdRun.exe Microsoft Defender for Endpoint、edr
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: deploy
@@ -11,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +18,12 @@ ms.collection:
 ms.topic: article
 ms.date: 09/23/2020
 ms.reviewer: chventou
-ms.openlocfilehash: 27391b65b583a05e2c3d50f93dd1a0d2f3ce561b
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 2fe421e79efa7da204209e2df35d3be51bdbf6d1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59777006"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154778"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-powershell-wmi-and-mpcmdrunexe"></a>PowerShell、WMI、およびエンドポイントを使用して Microsoft Defender for Endpoint をMPCmdRun.exe
 
@@ -41,7 +39,7 @@ ms.locfileid: "59777006"
 > デバイス (エンドポイント[ともMicrosoft エンドポイント マネージャー)](/mem)に対する組織の脅威保護機能を管理するには、この機能を使用することをお勧めします。 エンドポイント マネージャーには、Microsoft Intuneと[](/mem/intune/fundamentals/what-is-intune)Microsoft Endpoint Configuration Manager[が含Microsoft Endpoint Configuration Manager。](/mem/configmgr/core/understand/introduction)
 >
 > - [詳細については、エンドポイント マネージャー](/mem/endpoint-manager-overview)
-> - [Configuration Manager と Intune を使用して、Windows 10の Microsoft Defender for Endpoint を共同管理する](manage-atp-post-migration-intune.md)
+> - [Configuration Manager と Intune を使用して 11 Windows 10デバイスWindows Microsoft Defender for Endpoint を共同管理する](manage-atp-post-migration-intune.md)
 > - [Intune を使用してエンドポイント用 Microsoft Defender を管理する](manage-atp-post-migration-intune.md)
 
 [PowerShell、Microsoft Defender ウイルス対策](#configure-microsoft-defender-for-endpoint-with-powershell)Windows 管理インストルメンテーション[](#configure-microsoft-defender-for-endpoint-with-windows-management-instrumentation-wmi) (WMI)、および Microsoft[マルウェア](#configure-microsoft-defender-for-endpoint-with-microsoft-malware-protection-command-line-utility-mpcmdrunexe)保護コマンド ライン ユーティリティ (MPCmdRun.exe) を使用して、デバイスの一部の設定を管理MPCmdRun.exe。 たとえば、一部の設定をMicrosoft Defender ウイルス対策できます。 また、場合によっては、攻撃表面の縮小ルールをカスタマイズし、保護設定を悪用することもできます。
@@ -88,7 +86,7 @@ WMI は、設定を取得、変更、および更新できるスクリプト イ
 
 - [エンドポイント保護: Microsoft Defender セキュリティ センター](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - [脅威と脆弱性の管理の概要を取得する](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 

@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: この記事では、コア電子情報開示ケースを管理する方法について説明します。 これには、ケースの終了、閉じたケースの再オープン、ケースの削除が含まれます。
-ms.openlocfilehash: 67961d2404f54ca3fbb33dabc71508ba65bfa205
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a210a06da2effb0b17d526a09499a65fa59bfeb4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164055"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60158276"
 ---
 # <a name="close-reopen-and-delete-a-core-ediscovery-case"></a>Core 電子情報開示ケースを閉じる、再度開く、削除する
 

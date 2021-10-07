@@ -9,15 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-localization_priority: Normal
+ms.localizationpriority: medium
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: cbe29e5323047e887aa64823c9011a0f77c498a8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0f0985f2295d86f1dfa90c86a7357d1a6da033de
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211433"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60155960"
 ---
 # <a name="contact-support-for-burkina-faso"></a>Burkina Faso のサポートに問い合わせ
 

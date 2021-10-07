@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 電子情報開示ツールMicrosoft 365電子メール メッセージに添付された暗号化されたドキュメントを処理し、SharePoint Online および OneDrive for Businessに保存する方法について説明します。
-ms.openlocfilehash: b816990e0524222938233089e6f920b753406544
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 351a6c77d1fc0956c83661132f1111897896a724
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483065"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60159910"
 ---
 # <a name="decryption-in-microsoft-365-ediscovery-tools"></a>電子情報開示ツールMicrosoft 365復号化
 

@@ -2,15 +2,13 @@
 title: Mac 上のエンドポイント用 Microsoft Defender の基本設定を設定する
 description: エンタープライズ組織で Microsoft Defender for Endpoint on Mac を構成します。
 keywords: microsoft、 defender、 Microsoft Defender for Endpoint, mac, management, preferences, enterprise, intune, jamf, macos, catalina, mojave, high sierra
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1da7c59ad7702482b1edbf52da821e474addd601
-ms.sourcegitcommit: d1a93f25323a0e6ce3b898bf9dc57dcef27eda67
+ms.openlocfilehash: 0ac6031e793d36bd51c84b2cd94517f81ab4e649
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60126868"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60156272"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>macOS のエンドポイント用 Microsoft Defender の基本設定を設定する
 
@@ -1095,7 +1093,7 @@ JAMF コンソールで、[**コンピューター** 構成プロファイル] �
 
 5. 構成プロファイルを開き、ファイルを `com.microsoft.wdav.xml` アップロードします。 (このファイルは手順 3 で作成されました。
 
-6. [**OK**] を選択します。
+6. **[OK]** を選択します。
 
 7. [割 **り当** \> **ての管理] を選択します**。 [含める **] タブ** で、[すべてのユーザーに割り当てる] & **を選択します**。
 

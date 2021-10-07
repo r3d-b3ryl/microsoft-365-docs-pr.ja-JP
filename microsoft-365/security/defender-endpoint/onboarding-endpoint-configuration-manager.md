@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e26e9c367015b05e1875693a5312af786a907031
-ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
+ms.openlocfilehash: 9b33db7e4fa0b3cc2fa61c0c7a45d1a9d2f9d3b7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60124447"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60156332"
 ---
 # <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager を使用したオンボーディング
 
@@ -107,7 +107,6 @@ Defender for Endpoint はさまざまなエンドポイントとツールのオ�
     ![ウィザード 9 Microsoft Endpoint Configuration Managerのイメージ。](images/configmgr-confirm.png)
 
 このタスクを完了すると、環境内のすべてのエンドポイントがWindowsデバイス コレクションが作成されます。
-
 
 ## <a name="step-2-configure-microsoft-defender-for-endpoint-capabilities"></a>手順 2: Microsoft Defender for Endpoint の機能を構成する
 
@@ -331,6 +330,7 @@ ASR ルールがエンドポイントに正しく適用されているかどう�
 
     ![スクリーンショット Microsoft Endpoint Configuration Manager1。](images/8999dd697e3b495c04eb911f8b68a1ef.png)
 
+
 7. 新しく作成したコレクションのポリシーを選択しWindows OK を選択 **します**。
 
     ![スクリーンショット Microsoft Endpoint Configuration Manager2。](images/0ccfe3e803be4b56c668b220b51da7f7.png)
@@ -361,7 +361,9 @@ ASR ルールがエンドポイントに正しく適用されているかどう�
 
     ![Microsoft Endpoint Configuration Manager7 のスクリーンショット。](images/8999dd697e3b495c04eb911f8b68a1ef.png)
 
+
 7. ポリシーを新しく作成したコレクションにWindowsし **、[OK] をクリックします**。
+
 
     ![Microsoft Endpoint Configuration Manager8 のスクリーンショット。](images/0ccfe3e803be4b56c668b220b51da7f7.png)
 
