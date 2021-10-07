@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 f1.keywords:
 - CSH
 ms.custom:
@@ -21,12 +21,12 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: Office 365 のディレクトリ同期の問題の一般的な原因を示し、問題のトラブルシューティングと解決に役立ついくつかの方法を紹介します。
-ms.openlocfilehash: 27bbe07be43c7b04b7e74f1cc600df6c1409e372
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: dba6626ead648928186f8fbeac646a2b52206bc0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216073"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208279"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-microsoft-365"></a>Microsoft 365 のディレクトリ同期に関する問題の修正
 
@@ -36,7 +36,7 @@ ms.locfileid: "59216073"
 
 問題がある場合に最初の通知として、Microsoft 365 管理センターにある同期ツールの状態タイルに次のように問題があると示されます。
   
-Microsoft 365 からディレクトリの同期エラーが発生したテナントを示すメール (連絡用メール アドレスと管理者メール宛) も受信します。 詳細については、「[Microsoft 365 でディレクトリ同期エラーを特定する](identify-directory-synchronization-errors.md)」を参照してください。
+Microsoft 365 からディレクトリの同期エラーが発生したテナントを示すメール (予備のメール アドレスと管理者宛てのメール) も受信します。詳細については、「[Microsoft 365 でディレクトリ同期エラーを確認する](identify-directory-synchronization-errors.md)」を参照してください。
   
 ## <a name="how-do-i-get-azure-active-directory-connect-tool"></a>Azure Active Directory Connect ツールを入手する方法
 
@@ -64,7 +64,7 @@ Azure AD Sync から Azure AD Connect に更新するには、「[アップグ�
 - [Azure AD Connect Sync を使用してパスワード ハッシュの同期を実装する](/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)
 
 ### <a name="im-seeing-an-alert-that-object-quota-exceeded"></a>オブジェクト クォータの超過通知が表示される
-- サービスを保護するのに役立つ、組み込みのオブジェクト クォータがあります。 Microsoft 365 に同期する必要があるオブジェクトの数が多すぎる場合、クォータを増やすために [一般法人向け製品のサポートに連絡](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) する必要があります。
+- サービスを保護するために、組み込みのオブジェクト クォータが設定されています。Microsoft 365 に同期する必要があるディレクトリ内のオブジェクトの数がこの限度を超えている場合は、[一般法人向け製品のサポートに問い合わせ](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)してクォータを増やす必要があります。
 
 ### <a name="i-need-to-know-which-attributes-are-synchronized"></a>どの属性が同期されているか知る必要があります。
 - オンプレミス環境とクラウドとの間で同期されるすべての属性の一覧については、[このページ](https://go.microsoft.com/fwlink/p/?LinkId=396719) を参照してください。

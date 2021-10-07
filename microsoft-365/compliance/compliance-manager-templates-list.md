@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンス マネージャーは、国内、地域、業界の規制、標準、および法律に合わせて評価を構築するテンプレートを提供します。
-ms.openlocfilehash: 71367b7f88fd0b7cfdee243f4ed0101e88a21fce
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b7002f1994f71179f422e725364808bfac77de88
+ms.sourcegitcommit: 81533e5d3e1aee0823539a7c9bdc20dba6541a02
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60167452"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60223433"
 ---
 # <a name="compliance-manager-templates-list"></a>コンプライアンスマネージャーテンプレートの一覧
 
@@ -43,10 +43,11 @@ ms.locfileid: "60167452"
 組織で使用できるテンプレートを確認するには、[評価テンプレート] **ページに移動** します。 詳しくは、 [テンプレートを表示および管理する方法をご覧ください](compliance-manager-templates.md#view-and-manage-templates)。
 
 ## <a name="included-templates"></a>含まれるテンプレート
+
 これらのテンプレートの 1 つ以上は、ライセンス契約に基づいて利用できます。 データ保護基準テンプレートは、すべてのユーザーに含まれます。
 
 - [Microsoft データ保護基準](compliance-manager-assessments.md#data-protection-baseline-default-assessment)
-- [EU GDPR](/compliance/regulatory/gdpr) (Microsoft 365、Office 365 Intune)
+- [EU GDPR](/compliance/regulatory/gdpr)
 - [ISO/IEC 27001:2013](/compliance/regulatory/offering-iso-27001)
 - NIST 800-53 Revs. 4 と 5
 
@@ -54,9 +55,11 @@ ms.locfileid: "60167452"
 > 米国政府Community (GCC) モデレート、GCC 高、および国防総省 (DoD) のお客様向け: 上記のテンプレートに加えて、サイバーセキュリティ成熟度モデル認定 (CMMC) レベル 1 ~ 5 のテンプレートが含まれています。
 
 ## <a name="premium-templates"></a>プレミアム テンプレート
+
 これらのテンプレートは、組織で購入できます。
 
 ### <a name="global"></a>グローバル
+
 - 電子レコード管理システムのガイドラインと機能要件 (ICA モジュール 2) (Microsoft 365)
 - ISO 15489-1:2016 (Microsoft 365)
 - ISO 16175-1:2020 (Microsoft 365)
@@ -79,6 +82,7 @@ ms.locfileid: "60167452"
 - [システムおよび組織の制御 (SOC) 2](/compliance/regulatory/offering-soc)
 
 ### <a name="industry"></a>業界
+
 - AICPA/CICA 一般に受け入れられるプライバシー原則 (GAPP) (Microsoft 365)
 - ARMA - 一般的に受け入れられるレコード保持原則 (GARP) の実装 (Microsoft 365)
 - [CDSA コンテンツ保護 &セキュリティ標準](/compliance/regulatory/offering-cdsa)(Microsoft 365)
@@ -101,6 +105,7 @@ ms.locfileid: "60167452"
 - [信頼できる情報セキュリティ評価Exchange](/compliance/regulatory/offering-tisax-germany)
 
 ### <a name="us-government"></a>米国政府機関
+
 - 付録 III to OMB Circular No. A-130 - 連邦自動情報リソースのセキュリティ
 - [CFR - 連邦規制のコード タイトル 21、パート 11、](/compliance/regulatory/offering-fda-cfr-title-21-part-11)電子記録、電子署名 (Microsoft 365)
 - 子どものオンライン プライバシー保護ルール (COPPA) (Microsoft 365)
@@ -115,13 +120,13 @@ ms.locfileid: "60167452"
 - e-CFR - Identity Theft Rules (Microsoft 365)
 - 連邦規制の電子コード - パート 748.0 と付録 A (Microsoft 365)
 - FDIC プライバシー ルール (Microsoft 365)
-- [連邦金融機関審査評議会 (FFIEC) Information Security booklet](/compliance/regulatory/offering-ffiec-us) (Microsoft 365, Intune)
+- [連邦金融機関審査評議会 (FFIEC) Information Security Booklet](/compliance/regulatory/offering-ffiec-us) (Microsoft 365)
 - [FedRAMP モデレート](/compliance/regulatory/offering-fedramp)(Microsoft 365)
 - FedRAMP SSP High Baseline (Microsoft 365)
 - 情報の自由法 (FOIA) (Microsoft 365)
 - 消費者金融情報の FTC プライバシー (Microsoft 365)
 - [Gramm-Leach-Bliley Act, Title V, Subtitle A, Financial Privacy](/compliance/regulatory/offering-GLBA) (Microsoft 365)
-- [HIPAA/HITECH](/compliance/regulatory/offering-hipaa-hitech) (Microsoft 365 Intune)
+- [HIPAA/HITECH](/compliance/regulatory/offering-hipaa-hitech) (Microsoft 365)
 - [HITRUST](/compliance/regulatory/offering-hitrust) (Microsoft 365)
 - Homeland Security Presidential Directive 7: Critical Infrastructure IDENTIFICATION, Prioritization, and Protection (Microsoft 365)
 - IRS - 収益手順 98-25 自動レコード (Microsoft 365)
@@ -152,6 +157,7 @@ ms.locfileid: "60167452"
 - 米国 - テロ攻撃法からの化学施設の保護とMicrosoft 365)
 
 ### <a name="us-states-and-territories"></a>米国の州と地域
+
 - アラバマ州 - ポリシー 621: データ侵害通知 - DRAFT (Microsoft 365)
 - アラスカ - 第 48 章 - 個人情報保護法 (Microsoft 365)
 - アリゾナ州 - セキュリティ システムの侵害の通知 (Microsoft 365)
@@ -232,6 +238,7 @@ ms.locfileid: "60167452"
 ### <a name="regional"></a>地域
 
 #### <a name="asia-pacific-countries"></a>Asia-Pacific国
+
 - アジア太平洋経済協力 (APEC) プライバシー フレームワーク
 - オーストラリア - ASD Essential 8 (Microsoft 365)
 - オーストラリア - 国立公文書館法
@@ -296,6 +303,7 @@ ms.locfileid: "60167452"
 - ベトナム - 情報技術に関する法律 (Microsoft 365)
 
 #### <a name="europe-middle-east-and-africa-emea"></a>ヨーロッパ、中東、アフリカ (EMEA)
+
 - アルバニア - 個人データの保護に関する法律 No. 9887
 - オーストリアの通信法 2003 (Microsoft 365)
 - アルメニア - 個人データの保護に関するアルメニア共和国の法律 (Microsoft 365)
@@ -371,6 +379,7 @@ ms.locfileid: "60167452"
 - イエメン - 情報へのアクセス権のイエメン法 (Microsoft 365)
 
 #### <a name="latin-america"></a>ラテン アメリカ
+
 - アンティグアバーブーダ - データ保護法 /2013 (Microsoft 365)
 - Bahamas - データ保護法 (Microsoft 365)
 - Barbados - データ保護法案 2019 (Microsoft 365)
@@ -380,6 +389,7 @@ ms.locfileid: "60167452"
 - トリニダードトバゴのデータ保護 (2011 年の法律 13) (Microsoft 365)
 
 #### <a name="north-america"></a>北アメリカ
+
 - カナダ - セキュリティセーフガード規制違反 (Microsoft 365)
 - カナダ - ブリティッシュ コロンビア州 - 情報プライバシー &セキュリティ - FOIPPA (Microsoft 365)
 - [カナダ - Office](/compliance/regulatory/offering-osfi-canada)サイバーセキュリティの監督のガイド (Self-Assessment) (Microsoft 365)
@@ -392,6 +402,7 @@ ms.locfileid: "60167452"
 - メキシコ - 個人データの保護に関する連邦法 (Microsoft 365)
 
 #### <a name="south-america"></a>南アメリカ
+
 - [アルゼンチン - 個人データ保護法 25.326](/compliance/regulatory/offering-pdpa-argentina) (Microsoft 365)
 - ブラジル - 消費者保護コード法 No. 8078 (Office 365)
 - ブラジル - 一般データ保護法 (LGPD) (Microsoft 365)

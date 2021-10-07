@@ -11,7 +11,7 @@ ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - m365solution-mip
@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 365 エンドポイントのデータ損失防止を設定して、ファイルアクティビティを監視し、それらのファイルの保護アクションをエンドポイントに実装します。
-ms.openlocfilehash: 53054e32803bb3722674c043a84eb7f410a77d06
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0d7902076885bd79d4a2d57e7be85fffbc5770fd
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175944"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200523"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>エンドポイント データ損失防止を開始する
 
@@ -114,7 +114,7 @@ Endpoint DLP からのデータは、[Activity エクスプローラー](data-cl
 
 デバイス上の機密アイテムを監視および保護する前に、デバイスの監視を有効にし、エンドポイントをオンボードしなければなりません。 これらのアクションはどちらも Microsoft 365 コンプライアンスポータルで行われます。
 
-まだオンボーディングされていないデバイスをオンボーディングする場合は、適切なスクリプトをダウンロードして、それらのデバイスに導入します。 [オンボーディングデバイスの手順](endpoint-dlp-getting-started.md#onboarding-devices)に従ってください。
+まだオンボードされていないデバイスをオンボードする場合は、適切なスクリプトをダウンロードして、それらのデバイスに展開します。「[デバイスのオンボーディング](endpoint-dlp-getting-started.md#onboarding-devices)」の手順に従ってください。
 
 既に [Microsoft Defender for Endpoint](/windows/security/threat-protection/) にオンボーディングされているデバイスがある場合、それらは管理対象デバイスのリストに表示されます。 [「Microsoft Defender for Endpoint にオンボーディングされているデバイスを使用」の手順](?source=docs&view=o365-worldwide#with-devices-onboarded-into-microsoft-defender-for-endpoint)に従ってください。
 

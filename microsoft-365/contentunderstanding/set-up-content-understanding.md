@@ -12,14 +12,14 @@ ms.collection:
 - m365initiative-syntex
 ms.custom: admindeeplinkMAC
 search.appverid: MET150
-localization_priority: Priority
+ms.localizationpriority: high
 description: SharePoint Syntex の設定
-ms.openlocfilehash: 2f77176e2bfd90b4f912379b3b2dcf15b62c7cf4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 50a38a172a2904a649d4f4c31aa293c3c085bd31
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179799"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202933"
 ---
 # <a name="set-up-sharepoint-syntex"></a>SharePoint Syntex の設定
 
@@ -96,7 +96,7 @@ SharePoint Syntex ライセンスの詳細については、「[SharePoint Synte
 
     1. [**サイト名**] に、コンテンツ センター サイトの名前を入力します。
     
-    1. [ **サイトアドレス** には、サイト名に選択した内容に基づいて、サイトの URL が表示されます。 変更する場合は、[ **編集**] をクリックします。
+    1. **[サイト アドレス]** は、サイト名に選択した内容に基づいて、サイトの URL を表示します。変更する場合は **[編集]** をクリックします。
 
        > [!div class="mx-imgBorder"]
        > ![コンテンツ センターを作成します。](../media/content-understanding/admin-cu-create-cc.png)</br>
@@ -121,7 +121,7 @@ SharePoint Syntex を構成したら、SharePoint Syntex機能を使用するユ
 
 3. ドロップダウン メニューから **[アプリ]** を選択します。
 
-4. **[SharePoint Syntex のアプリを表示する]** を選択します。 **[アプリ]** で、**Common Data Service for SharePoint Syntex**、**SharePoint Syntex**、**SharePoint Syntex - SPO type** がすべて選択されていることを確認します。
+4. **[SharePoint Syntex 用アプリを表示する]** を選択します。**[アプリ]** で、**Common Data Service for SharePoint Syntex**、**SharePoint Syntex**、および **SharePoint Syntex - SPO type** のすべてが選択されていることを確認します。
 
     > [!div class="mx-imgBorder"]
     > ![Microsoft 365 管理センターの SharePoint Syntex ライセンス。](../media/content-understanding/sharepoint-syntex-licenses.png)

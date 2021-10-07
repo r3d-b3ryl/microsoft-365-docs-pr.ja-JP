@@ -7,7 +7,7 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection:
@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: 機密データに対する保護機能を使用してチームを展開する方法について説明します。
-ms.openlocfilehash: a3f715cb05ad1d5acf3c93c58959f12ebec46978
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: edeeb0fc0f93ae962b85e113734dea1844b11d04
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219744"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213423"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>機密データに対する保護機能を使用してチームを構成する
 
@@ -66,7 +66,7 @@ Teams の秘密度ラベルを有効にしたら、次の手順ではラベル�
 1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com)を開きます。
 2. **[ソリューション]** で、**[情報保護]** をクリックします。
 3. **[ラベルの作成]** をクリックします。
-4. ラベルに名前を付けます。 **Sensitive** をお勧めしますが、既に使用されている別の名前を選択することもできます。
+4. ラベルに名前を付けます。**[Sensitive]** をお勧めしますが、それが既に使用されている場合は別の名前を選択することもできます。
 5. 表示名と説明を追加し、**[次へ]** をクリックします。
 6. **Define the scope for this label** (このラベルの範囲の定義) ページで、**[Files & emails]** (ファイルとメール) と **[Groups & sites]** (グループとサイト) を選択し、**[次へ]** をクリックします。
 7. **[Choose protection settings for files and emails]** (ファイルやメールの保護の設定の選択) ページで、**[次へ]** をクリックします。

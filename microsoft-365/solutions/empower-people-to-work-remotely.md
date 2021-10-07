@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: 在宅勤務、在宅勤務、ハイブリッド、リモート ワーカー、ハイブリッド ワーク、リモート従業員、ハイブリッド接続、リモート アクセス、在宅勤務、テレワーク、テレワーク、モバイル ワーク、リモート ジョブ、どこからでも作業、柔軟な職場
 description: ハイブリッド ワーカーがオンプレミスおよび Microsoft 365 のリソースに安全にアクセスできるように、インフラストラクチャのレイヤーをステップ スルーします。
-ms.openlocfilehash: 2bc5a4f1f6c6784413b716ce752855393bfed90f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b93469fe1cb60dd1f0b86d34e23c49faa5c9e373
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179047"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205033"
 ---
 # <a name="set-up-your-infrastructure-for-hybrid-work-with-microsoft-365"></a>Microsoft 365 を使用したハイブリッドワーク用のインフラストラクチャを設定する
 
@@ -114,7 +114,7 @@ Microsoft 365 には、ハイブリッド ワーカーがオンサイトまた�
 
 - Surface Laptop や Windows 10 などの最新のデバイスです。Web 経由で直接 Microsoft 365 クラウド アプリやサービスにアクセスするための機能、セキュリティ、パフォーマンスを備えています。
 
-- 迅速に展開された [Windows 10 ベースの仮想デスクトップ](empower-people-to-work-remotely-remote-access.md#deploy-windows-virtual-desktop-to-provide-remote-access-for-remote-workers-using-personal-devices)を介して間接的に Microsoft 365 クラウド アプリとサービスにアクセスできる、自宅で使用されている以前のラップトップやデスクトップを含むすべてのデバイスです。 このオプションは、高い性能、強力なセキュリティ、およびシンプルな IT 管理を提供します。
+- 迅速にデプロイされた [Windows 10 ベースの仮想デスクトップ](empower-people-to-work-remotely-remote-access.md#deploy-windows-virtual-desktop-to-provide-remote-access-for-remote-workers-using-personal-devices)を通じて、Microsoft 365 クラウド アプリやサービスに間接的にアクセスできる、自宅で使用される古いノート PC やデスクトップを含むあらゆるデバイス。このオプションにより、高パフォーマンス、強力なセキュリティ、および簡素化された IT 管理が提供されます。
 
 ## <a name="next-steps"></a>次の手順
 

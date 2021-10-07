@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コンプライアンス マネージャーのクイック スタート ガイドを使用して、コンプライアンス マネージャーの理解、セットアップ、および使用に関するジャーニーを支援します。
-ms.openlocfilehash: 9697e638d29f61e70f01534d1fa0a5bfb2b80e48
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d70167341082c851ee25d94c3ee5b827d6e1492f
+ms.sourcegitcommit: 81533e5d3e1aee0823539a7c9bdc20dba6541a02
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192285"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60223457"
 ---
 # <a name="compliance-manager-quickstart"></a>コンプライアンスマネージャー用クイックスタート
 
@@ -63,8 +63,8 @@ ms.locfileid: "60192285"
 
 また、改善アクションのすべてまたはサブセットの自動テストを設定できます。 コンプライアンス マネージャーの高度な機能を理解するには、以下のリンクを参照してください。
 
-- [独自のコントロールと改善アクションを追加してコンプライアンス マネージャー テンプレートを拡張する](compliance-manager-templates.md#extend-microsoft-365-assessment-templates)
-- [独自のカスタム テンプレートを作成する](compliance-manager-templates.md#create-an-assessment-template)
-- [コントロールとアクションを追加または削除する既存のテンプレートを変更する](compliance-manager-templates.md#modify-a-template)
+- [独自のコントロールと改善アクションを追加してコンプライアンス マネージャー テンプレートを拡張する](compliance-manager-templates-extend.md)
+- [独自のカスタム テンプレートを作成する](compliance-manager-templates-create.md)
+- [コントロールとアクションを追加または削除する既存のテンプレートを変更する](compliance-manager-templates-modify.md)
 - [改善アクションの自動テストをセットアップする](compliance-manager-setup.md#set-up-automated-testing)
 - [改善のための処置を別のユーザーに再び割り当てる](compliance-manager-setup.md#reassign-improvement-actions-to-another-user)

@@ -14,16 +14,16 @@ ms.collection:
 - m365initiative-externalcollab
 ms.custom:
 - seo-marvel-apr2020
-localization_priority: Priority
+ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: セキュリティで保護されたゲスト共有環境を Microsoft 365 で作成するための使用可能なオプションについては、こちらを参照してください。ゲスト アクセスによって共同作業を改善します。
-ms.openlocfilehash: 1986140e2aa809e81415a8e581ce626c5100809d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 775a5f1376df1bca553bc1b3b9cd92072736ac60
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179072"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203737"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>セキュリティで保護されたゲスト共有環境を作成する
 
@@ -168,7 +168,7 @@ Microsoft 365 グループとTeamsの場合は、Azure AD の条件付きアク�
 8. **[選択]** ブレードで、**Microsoft Teams**、**Outlookグループ** を選択し、 **選択** をクリックします。
 9. **[割り当て]** の下の **[条件]** をクリックします。
 10. **[条件]** ブレードで、**[クライアント アプリ]** をクリックします。
-11. **[クライアント アプリ]** ブレードで、**[構成する]** の **[はい]** をクリックし、**[モバイル アプリとデスクトップ クライアント]** と **[Exchange ActiveSyncクライアント]**、および **その他のクライアント** 設定を選択します。 **ブラウザー** チェックボックスをオフにします。
+11. **[クライアント アプリ]** ブレードで、**[構成]** の **[はい]** をクリックし、**[モバイル アプリとデスクトップ クライアント]**、**[Exchange ActiveSync クライアント]**、[**その他のクライアント]** の設定をします。**[ブラウザー]**] のチェック ボックスをオフにします。
 
     ![Azure AD の条件付きアクセス クライアント アプリ設定のスクリーンショット。](../media/azure-ad-conditional-access-client-mobile.png)
 
