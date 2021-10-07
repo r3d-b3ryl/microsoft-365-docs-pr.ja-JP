@@ -9,18 +9,18 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 米国政府機関クラウドの管理者は、組織の人事 (HR) システムから従業員データをインポートするデータ コネクタをMicrosoft 365。 これにより、内部リスク管理ポリシーで人事データを使用して、組織に内部的な脅威を与える可能性のある特定のユーザーによるアクティビティを検出できます。
-ms.openlocfilehash: a8edc80d9663165608a23d3d3e03fbd6c57933f8
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: bd253ca06b365aab99822aa6245f80e43119a8d9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574209"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188207"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-in-us-government"></a>米国政府機関で人事データをインポートするコネクタをセットアップする
 
@@ -99,7 +99,7 @@ CSV ファイルの最初の行 (ヘッダー行) には、必要な列名が一
    
    1. **サンプル スクリプトへのリンク。** サンプル スクリプト **にアクセス** するには、GitHubリンクをクリックします (リンクによって新しいウィンドウが開きます)。 手順 4 でスクリプトをコピーできるよう、このウィンドウを開いた状態にしてください。 または、手順 4 でもう一度アクセスできるよう、リンク先をブックマークするか、URL をコピーすることもできます。 このリンクは、コネクタ のフライアウト ページでも使用できます。
 
-7. **[完了]** をクリックします。
+7. [ **完了**] をクリックします。
 
    新しいコネクタが [コネクタ] タブの一覧 **に表示** されます。 
 

@@ -11,14 +11,14 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
-localization_priority: Priority
+ms.localizationpriority: medium
 description: ドキュメント理解モデルの使用状況分析を検索して使用する方法について説明します。
-ms.openlocfilehash: d39b2417a90716200d33831bfef7e9cb2ff1d523
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
-ms.translationtype: HT
+ms.openlocfilehash: 3dd77f760f70812045841ab56afbb13b02044d91
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221790"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201759"
 ---
 # <a name="document-understanding-model-usage-analytics-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex での文書理解のモデル使用状況分析
 

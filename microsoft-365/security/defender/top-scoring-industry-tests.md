@@ -6,7 +6,7 @@ keywords: Microsoft Defender ウイルス対策, Windows Defender ウイルス�
 ms.prod: m365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
-localization_priority: Priority
+ms.localizationpriority: high
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 8f51fe73d25ac0ab3568b1896a0c35efdd14a40f
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: deea83a515feeec15097613b297f395f39e1ffa1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042700"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202539"
 ---
 # <a name="top-scoring-in-industry-tests"></a>業界テストでのトップ スコア
 

@@ -16,12 +16,12 @@ metadata:
   ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
   description: 新しいメッセージ保護機能がどのように機能するかについて質問がありますか? ここで答えを確認してください。
   ms.custom: seo-marvel-apr2020
-  ms.openlocfilehash: 4dcac8a2b4a33b70bfe94421b4813412d012db46
-  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+  ms.openlocfilehash: 8b9e9b17aa09c535529488bbd3b73abc9d9c1170
+  ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 10/06/2021
-  ms.locfileid: "60177485"
+  ms.lasthandoff: 10/07/2021
+  ms.locfileid: "60217115"
 title: メッセージの暗号化に関する FAQ
 summary: >
   新しいメッセージ保護機能がどのように機能するかについて質問がありますか? ここで答えを確認してください。 また、Azure Information Protection のデータ保護サービス Azure Rights Management に関する質問に対する回答については [、Azure Information Protection](/information-protection/get-started/faqs-rms) のデータ保護に関してよく寄せられる質問を参照してください。
@@ -105,9 +105,9 @@ sections:
 
       > Outlookデスクトップ クライアントは PDF 暗号化をサポートしません。
   - question: >
-      添付OneDrive for Businessサポートされていますか?
+      オンラインSharePointまたは添付ファイルOneDrive for Businessサポートされていますか?
     answer: >
-      Not yet. OneDrive for Business添付ファイルはサポートされていません。また、エンドユーザーはクラウド 添付ファイルを含むメールを暗号化OneDrive for Businessできません。
+      Not yet. SharePointオンラインまたはOneDrive for Businessはサポートされていません。エンドユーザーはメールを暗号化できますが、クラウド添付ファイルは暗号化できません。
   - question: >
       保護されたメールで暗号化された添付ファイルのプレビューをサポートするメール クライアント
     answer: "添付ファイルが保護されたメールで保護されている場合、Outlookクライアントはドキュメントを直接プレビューできます。 Outlookドキュメント (docx、xlsx Office pptx、doc、xls、ppt) のプレビューをサポートしています。 Outlook on the webドキュメント (docx、xlsx、pptx) および PDF Officeプレビューをサポートしています。  \n"
@@ -135,7 +135,7 @@ sections:
   - question: >
       電子情報開示などのコンプライアンス機能でメッセージ暗号化を使用できますか?
     answer: >
-      はい。 Microsoft 365機能を使用すると、すべての暗号化された電子メール メッセージを検出できます。 詳細については [、「暗号化されたアイテムをサポートする電子情報開示アクティビティ」](/microsoft-365/compliance/ediscovery-decryption#ediscovery-activities-that-support-encrypted-items) を参照してください。
+      はい、OME で保護されているほとんどのメッセージは検出可能です。 メール フロー ルールを介して適用されたカスタム ブランドMicrosoft 365を持つ別の組織から受信した OME 保護されたメールは、電子情報開示サービスによって検出できません。 つまり、ユーザーのメールボックスからメールにアクセスするのではなく、OME ポータルへのリンクを介してしか表示されていない場合、メールは検索できません。 詳細については [、「暗号化されたアイテムをサポートする電子情報開示アクティビティ」](/microsoft-365/compliance/ediscovery-decryption#ediscovery-activities-that-support-encrypted-items) を参照してください。
   - question: >
       電子メールから暗号化を削除できますか?
     answer: >
@@ -200,6 +200,10 @@ sections:
       委任されたアクセスは、暗号化されたメッセージを開いてサポートされていますか? 代理人が別のユーザーのメールボックスにフル アクセスできる場合でも?
     answer: >
       暗号化されたメールの委任されたアクセスは、Outlook on the web、Outlook for Mac、Outlook iOS、および Android Outlookでサポートされています。  OutlookのWindowsアクセスはサポートされていません。
+  - question: >
+      OME ポータルでメールにアクセスできる期間
+    answer: >
+      OME ポータルにログインして、送信者の組織がアクティブで、メールの有効期限が切れる構成がされていない限り、メールを取得できます。
   - question: >
       要求した後に 1 回のパス コードを受け取らない場合は、どうしますか。
     answer: >-

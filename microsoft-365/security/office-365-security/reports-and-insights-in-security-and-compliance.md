@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: article
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -19,12 +19,12 @@ description: セキュリティ & コンプライアンス センターで利用
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 627ca557e7df0d12565f833287c7a6aad18854f1
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: fb46c3436c48328b02e2937968321c0adce9ffb8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988753"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202419"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターのスマート レポートと分析情報
 
@@ -66,7 +66,7 @@ ms.locfileid: "59988753"
 |**監査ログ** <p> Microsoft 365 のアクティビティ、ユーザー、ファイルまたはフォルダーなどに関する情報|セキュリティ コンプライアンス センターで&調査監査ログ **&検索** \> **に移動します。**|[セキュリティ/コンプライアンス センターで監査ログを検索する](../../compliance/search-the-audit-log-in-security-and-compliance.md)|
 |**コンプライアンス レポート** <p> FedRAMP のレポート、ガバナンス、リスクとコンプライアンス レポート、ISO 情報セキュリティ管理レポート、Service Organization Controls の監査レポートと評価レポート|セキュリティ コンプライアンス センター&サービス アシュアランス **コンプライアンス レポート** \> **に移動します。**|[セキュリティ とコンプライアンスの&を計画Office 365](../../compliance/plan-for-security-and-compliance.md)|
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [Microsoft 365 Defender ポータル](../defender/overview-security-center.md)
 

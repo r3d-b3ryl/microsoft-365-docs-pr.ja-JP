@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: コンプライアンス センターでキーワード 辞書を変更するMicrosoft 365説明します。
-ms.openlocfilehash: e060b09f271615f98fe43002029144b119013439
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3cf6a2df702a109a5e63c641f7ac64a9f9ab7b4f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218843"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188003"
 ---
 # <a name="modify-a-keyword-dictionary"></a>キーワード 辞書を変更する
 

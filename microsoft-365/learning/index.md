@@ -12,14 +12,14 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-viva-learning
-localization_priority: None
+ms.localizationpriority: ''
 description: '[プレビュー] (プレビュー) のリソースをMicrosoft Viva ラーニングする方法について学習します。'
-ms.openlocfilehash: f868c90e0dcb280bf3bd7ca592a950d9735143de
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0979d9e2a5b8f0f04565ccc8d2089e85eb6f8411
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191180"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213987"
 ---
 # <a name="introduction-to-microsoft-viva-learning-preview"></a>概要 (Microsoft Viva ラーニング)
 

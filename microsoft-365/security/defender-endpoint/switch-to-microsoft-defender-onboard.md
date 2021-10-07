@@ -2,8 +2,6 @@
 title: エンドポイント用 Microsoft Defender に切り替える - オンボード
 description: Microsoft Defender for Endpoint に切り替えます。 デバイスをオンボードし、Microsoft 以外のソリューションをアンインストールします。
 keywords: 移行, Microsoft Defender for Endpoint, edr
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: deploy
@@ -11,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,14 +19,14 @@ ms.collection:
 - m365solution-symantecmigrate
 ms.custom: migrationguides
 ms.topic: article
-ms.date: 09/23/2021
+ms.date: 10/06/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: faf18134d125932c4da9e041c6bf80ccc3881761
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 47a698d2e0832ed477808be379a6ad99b932b702
+ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042844"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60217092"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>エンドポイント向け Microsoft Defender への切り替え - フェーズ 3: オンボード
 
@@ -68,7 +66,7 @@ ms.locfileid: "60042844"
 
 <br/><br/>
 
-|オペレーティング システム|Methods|
+|オペレーティング システム|メソッド|
 |---|---|
 |Windows 10|[グループ ポリシー](configure-endpoints-gp.md) <br/><br/> [構成マネージャー](configure-endpoints-sccm.md) <br/><br/> [モバイル デバイス管理 (Intune)](configure-endpoints-mdm.md) <br/><br/> [ローカル スクリプト](configure-endpoints-script.md) <br/><br/> **注**: ローカル スクリプトは概念実証に適していますが、実稼働環境での展開には使用できません。 実稼働展開の場合は、グループ ポリシー、グループ ポリシー、Microsoft Endpoint Configuration Manager Intune を使用することをお勧めします。|
 |Windows 8.1 Enterprise <br/><br/> Windows 8.1 Pro <br/><br/> Windows 7 SP1 Enterprise <br/><br/> Windows 7 SP1 Pro|[Microsoft Monitoring Agent](onboard-downlevel.md) <br/><br/> **注**: Microsoft Monitoring Agent Azure Log Analytics エージェントです。 詳細については [、「Log Analytics エージェントの概要」を参照してください](/azure/azure-monitor/platform/log-analytics-agent)。|
@@ -88,7 +86,7 @@ ms.locfileid: "60042844"
 |---|---|
 |Windows 10 <p> Windows Server 2019 <p> <p> Windows Server 2022 <p>Windowsサーバー、バージョン 1803 以降 <p> Windows Server 2016 <p> Windows Server 2012 R2|「 [検出テストを実行する」を参照してください](run-detection-test.md)。 <p> Defender for Endpoint デモ シナリオ サイト ( ) にアクセス <https://demo.wd.microsoft.com> し、1 つ以上のシナリオを試してください。 たとえば、クラウド配信の **保護デモ シナリオを** 試してみてください。|
 |macOS: 11.3.1 (Big Sur);10.15 (Catalina);10.14 (Mojave)|で DIY アプリをダウンロードして使用します <https://aka.ms/mdatpmacosdiy> 。 <p> 詳細については [、「Defender for Endpoint on macOS」を参照してください](microsoft-defender-endpoint-mac.md)。|
-|Linux: RHEL 7.2+;CentOS Linux 7.2+;Ubuntu 16 LTS 以上の LTS。SLES 12+;Debian 9+;Oracle Linux 7.2|<ol><li>次のコマンドを実行し、1 の結果 **を探します** `mdatp health --field real_time_protection_enabled` 。</li><li>ターミナル ウィンドウを開き、次のコマンドを実行します `curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt` 。</li><li>検出された脅威を一覧表示するには、次のコマンドを実行します `mdatp threat list` 。</li></ol> <p> 詳細については [、「Defender for Endpoint on Linux」を参照してください](microsoft-defender-endpoint-linux.md)。|
+|Linux: RHEL 7.2+;CentOS Linux 7.2+;Ubuntu 16 LTS 以上の LTS。SLES 12+;Debian 9+;Oracle Linux 7.2|1. 次のコマンドを実行し、1 の結果 **を探します** `mdatp health --field real_time_protection_enabled` 。<br/><br/>2. ターミナル ウィンドウを開き、次のコマンドを実行します `curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt` 。<br/><br/>3. 次のコマンドを実行して、検出された脅威を一覧表示します `mdatp threat list` 。<br/><br/>詳細については [、「Defender for Endpoint on Linux」を参照してください](microsoft-defender-endpoint-linux.md)。|
 
 
 ## <a name="confirm-that-microsoft-defender-antivirus-is-in-passive-mode-on-your-endpoints"></a>エンドポイントでMicrosoft Defender ウイルス対策パッシブ モードの状態を確認する
@@ -101,7 +99,7 @@ ms.locfileid: "60042844"
 |---|---|
 |コマンド プロンプト|1. デバイスで、Windowsを開きます。<br/><br/>2. と `sc query windefend` 入力し、Enter キーを押します。<br/><br/>3. 結果を確認して、Microsoft Defender ウイルス対策モードで実行されている状態を確認します。|
 |PowerShell|1. デバイスでWindows管理者としてWindows PowerShell開きます。<br/><br/>2. 次の PowerShell コマンドレットを実行します `Get-MpComputerStatus|select AMRunningMode` 。 <br/><br/>3. 結果を確認します。 パッシブ モードが **表示されます**。|
-|Windows セキュリティアプリ|1. デバイスでWindowsアプリをWindows セキュリティします。<br/><br/>2. [ **ウイルス対策] &を選択します**。<br/><br/>3. [プロバイダー **Who保護しますか?** [プロバイダーの管理 **] を選択します**。 [セキュリティ **プロバイダー] ページの**[ウイルス対策]**の下** に、[セキュリティ プロバイダー **Microsoft Defender ウイルス対策がオンになっている必要があります**。|
+|Windows セキュリティアプリ|1. デバイスでWindowsアプリをWindows セキュリティします。<br/><br/>2. [ **ウイルス対策] &を選択します**。<br/><br/>3. [プロバイダー **Who保護しますか?** [プロバイダーの管理 **] を選択します**。<br/><br/>4. [セキュリティ プロバイダー **] ページの**[ウイルス対策]**で、** オンになっているMicrosoft Defender ウイルス対策 **を探します**。|
 |タスク マネージャー|1. デバイスWindowsタスク マネージャー アプリを開きます。<br/><br/>2. [詳細] タブ **を選択** します。リストで **MsMpEng.exe** を探します。|
 
 > [!NOTE]

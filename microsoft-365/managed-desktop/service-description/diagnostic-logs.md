@@ -4,17 +4,17 @@ description: トラブルシューティング中にデバイスから収集さ�
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: ef7d19fef989610c10323c2a9820a5314d5e1641
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5c890ea42da4bb13c163e7b8b123080e0264d025
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215313"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201531"
 ---
 # <a name="diagnostic-logs"></a>診断ログ
 
@@ -72,8 +72,8 @@ Microsoft マネージド デスクトップ が管理するデバイスの問�
 - %windir% \\ system32 \\netsh.exe wlan show profiles
 - %windir% \\ system32 \\netsh.exe wlan show wlanreport
 - %windir% \\ system32 \\ping.exe -n 50 localhost
-- %windir% \\ system32powercfg.exe \\ /batteryreport /output %temp% \\ MDMDiagnosticsbattery-report.htm\\ l
-- %windir% \\ system32powercfg.exe \\ /energy/output %temp% \\ MDMDiagnosticsenergy-report.htm\\ l
+- %windir% \\ system32powercfg.exe \\ /batteryreport /output %temp% \\ MDMDiagnosticsbattery-report.html \\
+- %windir% \\ system32powercfg.exe \\ /energy/output %temp% \\ MDMDiagnosticsenergy-report.html \\
 - bitsadmin /list /allusers /verbose
 - fltMC.exe
 - bcdedit /enum all /v
@@ -107,7 +107,7 @@ Microsoft マネージド デスクトップ が管理するデバイスの問�
 - %ProgramData% \\ Microsoft \\ DiagnosticLogCSP \\ コレクター \\ \* .etl
 - %ProgramData% \\ \\ Microsoft IntuneManagementExtension \\ Logs \\ \* .\*
 - %ProgramData% \\ Microsoft Windows Defender サポート \\ \\ \\MpSupportFiles.cab
-- %ProgramData% \\ Microsoft Windows \\ \\ WlanReportwlan-report-latest.htm\\ l
+- %ProgramData% \\ Microsoft Windows \\ \\ WlanReport \\wlan-report-latest.html
 - %ProgramData% \\ Microsoft Windows \\ \\ WlanReport -SourceFileName wlan-report-latest.html
 - %windir% \\ ccm \\ ログ \* .log
 - %windir% \\ ccmsetup \\ ログ \* .log

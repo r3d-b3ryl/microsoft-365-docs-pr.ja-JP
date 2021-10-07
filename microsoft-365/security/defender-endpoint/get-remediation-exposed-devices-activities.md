@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: v-jweston
 author: jweston-1
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1ee64608e9ce6ce24dc40f1729303ef99b162cab
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 393e0596531f8706c0cb0f5e620702d0ab7ef124
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59190991"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194167"
 ---
 # <a name="list-exposed-devices-of-one-remediation-activity"></a>1 つの修復アクティビティの暴露デバイスを一覧表示する
 
@@ -57,7 +57,7 @@ ms.locfileid: "59190991"
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
 アプリケーション|RemediationTasks.Read.All|\'脅威と脆弱性管理の脆弱性情報の読み取り\'
-委任 (職場または学校アカウント)|RemediationTask.Read.Read|\'脅威と脆弱性管理の脆弱性情報の読み取り\'
+委任 (職場または学校のアカウント)|RemediationTask.Read.Read|\'脅威と脆弱性管理の脆弱性情報の読み取り\'
 
 ## <a name="properties-details"></a>プロパティの詳細
 
@@ -66,7 +66,7 @@ ms.locfileid: "59190991"
 id|String|デバイス ID|w2957837fwda8w9ae7f023dba081059dw8d94503
 computerDnsName|String|デバイス名|PC-SRV2012R2Foo.UserNameVldNet.local
 osPlatform|String|デバイス オペレーティング システム|WindowsServer2012R2
-rbacGroupName|String|このデバイスが関連付けられているデバイス グループの名前|Servers
+rbacGroupName|String|このデバイスが関連付けられているデバイス グループの名前|サーバー
 
 ## <a name="example"></a>例
 

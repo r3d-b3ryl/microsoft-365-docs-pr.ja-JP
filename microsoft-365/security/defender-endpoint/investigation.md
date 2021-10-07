@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +18,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 54e060f1cc98f62ca048ce8d561247c47f189f24
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 069e74b8ad0aef33caab411b92c24c4d0b72f022
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218393"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194155"
 ---
 # <a name="investigation-resource-type"></a>調査リソースの種類
 
@@ -55,15 +55,15 @@ Defender for Endpoint の自動調査エンティティを表します。
 
 プロパティ|型|説明
 :---|:---|:---
-id|文字列|調査エンティティの ID。 
+id|String|調査エンティティの ID。 
 startTime|DateTime Nullable|調査が作成された日時。
 endTime|DateTime Nullable|調査が完了した日時。
-cancelledBy|文字列|その調査を取り消したユーザー/アプリケーションの ID。
+cancelledBy|String|その調査を取り消したユーザー/アプリケーションの ID。
 state|列挙|調査の現在の状態。 指定できる値は、'Unknown'、'Terminated'、 'SuccessfullyRemediated', '良性', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallyInvestigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'unsupportedAlertType', 'unsupportedAlertType''
 statusDetails|String|調査の状態に関する追加情報。
 machineId|String|調査が実行されるデバイスの ID。
-computerDnsName|文字列|調査が実行されるデバイスの名前。
-triggeringAlertId|文字列|調査をトリガーしたアラートの ID。
+computerDnsName|String|調査が実行されるデバイスの名前。
+triggeringAlertId|String|調査をトリガーしたアラートの ID。
 
 ## <a name="json-representation"></a>Json 表記
 

@@ -1,5 +1,5 @@
 ---
-title: プライバシーと個人データ
+title: プライバシーおよび個人データ
 description: サービスによって収集、保存、および使用されるデータの詳細
 keywords: GDPR、保持、削除、ストレージ、保持、処理、セキュリティ、監査
 ms.service: m365-md
@@ -11,13 +11,13 @@ f1.keywords:
 ms.author: jaimeo
 ms.topic: article
 audience: Admin, ITPro
-ms.localizationpriority: normal
-ms.openlocfilehash: 99dd3a0782f44f0db1066ab33d3fe6ddd9a5def6
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.localizationpriority: medium
+ms.openlocfilehash: 23f74d8ddab72b08e2106c1b7d3de0a3264b4444
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59402228"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194263"
 ---
 # <a name="overview"></a>概要
 

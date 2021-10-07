@@ -14,18 +14,18 @@ ms.collection:
 - m365solution-ediscovery
 - m365initiative-compliance
 - m365solution-overview
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - SPO160
 - MOE150
 - MET150
 description: Microsoft 365 には、Exchange メールボックス、SharePoint サイト、OneDrive for Business サイト、Microsoft 365 グループ、Microsoft Teams 会話、Skype for Business 会話など、さまざまな場所にあるコンテンツを検索およびエクスポートするために使用できる 3 つの電子情報開示ツールがあります。 コアの電子情報開示とAdvanced eDiscovery、調査の管理に役立つ多くの追加機能を提供します。
-ms.openlocfilehash: 0dd8ca2e18f1388f4d8a5cdbbbbf401d1d579e10
-ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
+ms.openlocfilehash: f8419176e8307c6e87d376f04c8395f18c175740
+ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "60087799"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60216900"
 ---
 # <a name="ediscovery-solutions-in-microsoft-365"></a>電子情報開示ソリューション (Microsoft 365
 
@@ -56,22 +56,22 @@ Microsoft 365には、コンテンツ検索、Core 電子情報開示、およ�
 |役割に基づくアクセス許可|![サポートされています。](../media/check-mark.png)|![サポートされています。](../media/check-mark.png)|![サポートされています。](../media/check-mark.png)|
 |ケース管理||![サポートされています。](../media/check-mark.png)|![サポートされています。](../media/check-mark.png)|
 |コンテンツの場所を法的保留に設定する||![サポートされています。](../media/check-mark.png)|![サポートされています。](../media/check-mark.png)|
-|保管担当者管理|||![サポートされています。](../media/check-mark.png)|
-|法的ホールド通知|||![サポート対象です。](../media/check-mark.png)|
-|高度なインデックス作成|||![サポートされています。](../media/check-mark.png)|
+|保管担当者管理|||![サポート対象です。](../media/check-mark.png)|
+|法的ホールド通知|||![サポートされています。](../media/check-mark.png)|
+|高度なインデックス作成|||![サポート対象です。](../media/check-mark.png)|
 |エラー修復|||![サポートされています。](../media/check-mark.png)|
-|レビュー セット|||![サポートされています。](../media/check-mark.png)|
+|レビュー セット|||![サポート対象です。](../media/check-mark.png)|
 |クラウド添付ファイルとクラウド SharePointサポート|||![サポートされています。](../media/check-mark.png)|
-|光学式文字認識|||![サポートされています。](../media/check-mark.png)|
-|会話スレッド|||![サポートされています。](../media/check-mark.png)|
-|コレクションの統計とレポート|||![サポートされています。](../media/check-mark.png)|
-|レビュー セットのフィルター処理|||![サポートされています。](../media/check-mark.png)|
-|タグ付け|||![サポートされています。](../media/check-mark.png)|
+|光学式文字認識|||![サポート対象です。](../media/check-mark.png)|
+|会話スレッド|||![サポート対象です。](../media/check-mark.png)|
+|コレクションの統計とレポート|||![サポート対象です。](../media/check-mark.png)|
+|レビュー セットのフィルター処理|||![サポート対象です。](../media/check-mark.png)|
+|タグ付け|||![サポート対象です。](../media/check-mark.png)|
 |分析|||![サポート対象です。](../media/check-mark.png)|
 |予測コーディング モデル|||![サポート対象です。](../media/check-mark.png)|
-|計算されたドキュメント のメタデータ|||![サポートされています。](../media/check-mark.png)|
-|長時間実行されるジョブの透明性|||![サポートされています。](../media/check-mark.png)|
-|顧客所有の場所にAzure Storageする|||![サポートされています。](../media/check-mark.png)|
+|計算されたドキュメント のメタデータ|||![サポート対象です。](../media/check-mark.png)|
+|長時間実行されるジョブの透明性|||![サポート対象です。](../media/check-mark.png)|
+|顧客所有の場所にAzure Storageする|||![サポート対象です。](../media/check-mark.png)|
 |||||
 
 各電子情報開示機能の説明を次に示します。
@@ -132,6 +132,7 @@ Microsoft 365には、コンテンツ検索、Core 電子情報開示、およ�
 - Microsoft 365G1 サブスクリプション
 - Microsoft 365 F1 F3 サブスクリプション、または F5 セキュリティ アドオン
 - Office 365 Education A1 サブスクリプション
+- Office 365 E1サブスクリプション
 
 ### <a name="core-ediscovery"></a>コア電子情報開示
 
@@ -139,6 +140,7 @@ Microsoft 365には、コンテンツ検索、Core 電子情報開示、およ�
 - Microsoft 365 G3サブスクリプション
 - Microsoft 365F5 コンプライアンス アドオンまたは F5 セキュリティ & コンプライアンス アドオン
 - Microsoft 365 EducationA3 または Office 365 Education A3 サブスクリプション
+- Office 365 E3サブスクリプション
 
 ### <a name="advanced-ediscovery"></a>Advanced eDiscovery
 

@@ -7,7 +7,7 @@ ms.date: 10/9/2019
 audience: Admin
 ms.topic: interactive-tutorial
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_Enterprise
 - SPO_Content
@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: SharePoint Online のモダン サイトのパフォーマンスに関する推奨事項 (SharePointおよび外部エンドポイントへの呼び出しの制限など) について説明します。
-ms.openlocfilehash: 3a7a25d4e14b1e38e28f0e6b6817be3f1b0d4791
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: 6d09af30f5bdc8866b44047771060ced86362565
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394806"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60214191"
 ---
 # <a name="sharepoint-online-modern-portal-site-limits"></a>SharePointオンラインモダン ポータル サイトの制限
 
@@ -48,7 +48,7 @@ ms.locfileid: "58394806"
 
 ## <a name="modern-portal-site-limits-and-recommendations"></a>最新のポータル サイトの制限と推奨事項
 
-|**制限**|**推奨される最大値**|**メモ**|
+|**制限**|**推奨される最大値**|**注**|
 |:-----|:-----|:-----|:-----|
 |ページとニュース アイテム  <br/> |サイトごとに 5,000 件  <br/> |モダン ポータル サイトのページとニュース アイテムの数を 5,000 以下に制限することをお勧めします。  <br/> |
 |ページ上の Web パーツ  <br/> |1 ページあたり 20  <br/> |1 ページあたり 20 以下の Web パーツを使用することをお勧めします。その中には、Microsoft Web パーツとカスタム Web パーツの両方を含める必要があります。 <br/> 詳細については、「Web パーツの[パフォーマンスを最適化する」を参照SharePointモダン サイト ページを参照してください](modern-web-part-optimization.md)。  <br/> |
@@ -61,7 +61,7 @@ ms.locfileid: "58394806"
 |UPA サービスへの呼び出し  <br/> |ユーザー 1 人あたり 1 時間あたり 1  <br/> |UPA (User  Profile Application) サービスに対する要求呼び出しごとに行う必要はありません。 [Microsoft Graph API](/graph/call-api)と[PageContext](/javascript/api/sp-page-context/pagecontext)を使用して、ユーザー情報のクエリを実行できます。  <br/> UPA サービス呼び出しが必要な場合は、必要に応じて 1 回の呼び出しを行い、同じセッションで再利用するために情報をキャッシュします。 |
 |分類サービスへの呼び出し  <br/> |1 時間あたりのユーザーあたり 5  <br/> |Taxonomy サービスに対する _要求呼び出し_ ごとに行う必要はありません。 分類サービス呼び出しが必要な場合は、同じセッションで再利用するために情報をキャッシュします。 <br/> 詳細については、「オンラインモダンおよびクラシック発行サイト ページ[でのページSharePointの最適化」を参照してください](modern-page-call-optimization.md)。 <br/> |
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [正常なポータルSharePointする](/sharepoint/portal-health)
 

@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: a148e2fb1cc0e8fb88797b44ee4d08745728aa34
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 82557f955626436236401f622de6f2dc19aba9c2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211993"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202669"
 ---
 # <a name="aadspnsignineventsbeta"></a>AADSpnSignInEventsBeta
 
@@ -50,8 +50,8 @@ ms.locfileid: "59211993"
 |`Timestamp`|datetime|レコードが作成された日付と時刻|
 |`Application`|文字列|記録されたアクションを実行したアプリケーション|
 |`ApplicationId`|string|アプリケーションの一意の識別子|
-|`IsManagedIdentity`|boolean|マネージ ID によってサインインが開始されたかどうかを示します。|
-|`ErrorCode`|int|サインイン エラーが発生した場合のエラー コードを格納します。 特定のエラー コードの説明を見つけるには、 を参照してください <https://aka.ms/AADsigninsErrorCodes> 。|
+|`IsManagedIdentity`|ブール値|マネージ ID によってサインインが開始されたかどうかを示します。|
+|`ErrorCode`|整数|サインイン エラーが発生した場合のエラー コードを格納します。 特定のエラー コードの説明を見つけるには、 を参照してください <https://aka.ms/AADsigninsErrorCodes> 。|
 |`CorrelationId`|string|サインイン イベントの一意の識別子|
 |`ServicePrincipalName`|string|サインインを開始したサービス プリンシパルの名前|
 |`ServicePrincipalId`|string|サインインを開始したサービス プリンシパルの一意の識別子|

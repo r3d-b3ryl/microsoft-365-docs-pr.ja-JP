@@ -10,7 +10,7 @@ audience: Admin
 ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.AdminRoleGroups
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Strat_O365_IP
 search.appverid:
 - MOE150
@@ -19,12 +19,12 @@ description: 管理者は、セキュリティ コンプライアンス セン�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 80fb87edc8cb2d295d365b5d2d4c0822f909fabb
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: bccf67a7f1c4551f0c630d8655a4555203b4b258
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483593"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208387"
 ---
 # <a name="permissions-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターのアクセス許可
 

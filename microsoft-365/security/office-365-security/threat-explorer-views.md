@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: 05/15/2020
 audience: ITPro
 ms.topic: article
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: ''
 ms.collection:
 - M365-security-compliance
@@ -17,12 +17,12 @@ description: 脅威エクスプローラーとリアルタイム検出レポー�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ae46d8540ec0d2bd9ae8d906a9a44fd0e397ee2f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 959d3d676f07a7816b622d5db53252c846340d2a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163508"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202443"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>脅威エクスプローラーのビューとリアルタイム検出
 

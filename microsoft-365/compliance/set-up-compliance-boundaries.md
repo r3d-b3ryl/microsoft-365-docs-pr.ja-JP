@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: コンプライアンスの境界を使用して、電子情報開示マネージャーが電子情報開示マネージャーで検索できるユーザー コンテンツの場所を制御する論理境界を作成するMicrosoft 365。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f907e34bb7d266ead2441535856713dd0cbc5e49
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 29596375263d52eb6156ddfa32330f08957ccd15
+ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216404"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60216876"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>電子情報開示調査のコンプライアンス境界を設定する
 
@@ -107,6 +107,9 @@ Contoso コンプライアンスの境界シナリオを使用して、4 つの�
 - Coho Winery の調査担当者
   
 Contoso コンプライアンス境界シナリオの要件を満たすために、調査担当者がコンテンツの場所を保留にしたり、ケースからコンテンツをエクスポートしたりするのを防ぐために、調査担当者の役割グループから保留とエクスポートの役割も削除します。
+
+> [!IMPORTANT]
+> ケースのメンバーとして追加した役割グループから役割が追加または削除された場合、その役割グループはケースのメンバー (または役割グループがメンバーである場合) として自動的に削除されます。 その理由は、ケースのメンバーに不注意で追加のアクセス許可を与えてしまうのを組織が保護する理由です。 同様に、役割グループが削除された場合は、そのグループがメンバーだったすべてのケースから削除されます。
 
 ## <a name="step-3-create-a-search-permissions-filter-to-enforce-the-compliance-boundary"></a>手順 3: コンプライアンス境界を適用するための検索アクセス許可フィルターを作成する
 
@@ -247,7 +250,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
 
 - SharePoint および OneDrive でコンテンツを検索する場合 *、Region* パラメーターは、電子情報開示マネージャーが電子情報開示調査を行うプライマリまたはサテライトの場所に検索を指示します。 電子情報開示マネージャーが、検索SharePointフィルター OneDrive指定された地域外のサイトを検索した場合、検索結果は返されません。
 
-- Core eDiscovery から検索結果をエクスポートする場合、すべてのコンテンツの場所 (Exchange、Skype for Business、SharePoint、OneDrive、およびコンテンツ検索ツールを使用して検索できるその他のサービスを含む) のコンテンツが *、Region* パラメーターで指定されたデータセンター内の Azure Storage の場所にアップロードされます。 これにより、組織は、管理された境界を越えてコンテンツをエクスポートすることを許可しない方法でコンプライアンスを遵守できます。 検索アクセス許可フィルターで地域が指定されていない場合、コンテンツは組織のプライマリ データセンターにアップロードされます。
+- Core eDiscovery から検索結果をエクスポートする場合、すべてのコンテンツの場所 (Exchange、Skype for Business、SharePoint、OneDrive、およびコンテンツ検索ツールを使用して検索できるその他のサービスを含む) のコンテンツが、データセンター内の Azure Storage の場所にアップロードされます。Region パラメーターで *指定* します。 これにより、組織は、管理された境界を越えてコンテンツをエクスポートすることを許可しない方法でコンプライアンスを遵守できます。 検索アクセス許可フィルターで地域が指定されていない場合、コンテンツは組織のプライマリ データセンターにアップロードされます。
 
   ファイルからコンテンツをAdvanced eDiscovery、Region パラメーターを使用してコンテンツのアップロード先を *制御* することはできません。 コンテンツは、組織のAzure Storageデータセンター内の場所にアップロードされます。 中央の場所に基づく地域の場所の一覧については、「複数地域[Microsoft 365の構成」を参照してください](../enterprise/multi-geo-ediscovery-configuration.md)。
 

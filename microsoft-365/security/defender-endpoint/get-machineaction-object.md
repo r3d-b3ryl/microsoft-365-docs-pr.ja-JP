@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1c5acecaecd4121eeb6f7ad13731f2cfd036fe39
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3773e124aa63b5975bf1dc8156e32edb0f3f3c8a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59210264"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194191"
 ---
 # <a name="get-machineaction-api"></a>Get machineAction API
 
@@ -51,7 +51,7 @@ ID によって特定 [の Machine Action](machineaction.md) を取得します�
 :---|:---|:---
 アプリケーション|Machine.Read.All|'すべてのコンピューター プロファイルを読み取る'
 アプリケーション|Machine.ReadWrite.All|'すべてのコンピューター情報の読み取りと書き込み'
-委任 (職場または学校アカウント)|Machine.Read|'コンピューター情報の読み取り'
+委任 (職場または学校のアカウント)|Machine.Read|'コンピューター情報の読み取り'
 委任 (職場または学校のアカウント)|Machine.ReadWrite|'コンピューター情報の読み取りおよび書き込み'
 
 > [!NOTE]
@@ -69,7 +69,7 @@ GET https://api.securitycenter.microsoft.com/api/machineactions/{id}
 
 名前|型|説明
 :---|:---|:---
-Authorization|String|ベアラー {token}。 **必須**
+Authorization|String|ベアラー {token}。 **必須**。
 
 ## <a name="request-body"></a>要求本文
 

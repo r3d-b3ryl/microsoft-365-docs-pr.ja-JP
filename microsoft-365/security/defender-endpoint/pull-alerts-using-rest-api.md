@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 29aa8008dc3674760e4e720f155d6df82068ab55
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 2ca1f3d257e40fab340972b3b0d96ce0f7b9977b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59402180"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194047"
 ---
 # <a name="pull-microsoft-defender-for-endpoint-detections-using-siem-rest-api"></a>SIEM REST API を使用したエンドポイント検出用の Microsoft Defender のプル
 
@@ -120,9 +120,9 @@ Defender for Endpoint API への要求 *access_tokenフィールドの* 値を�
 
 ### <a name="request-header"></a>要求ヘッダー
 
-ヘッダー|種類|説明|
+ヘッダー|型|説明|
 ---|---|---
-Authorization|string|必須。 Azure ADベアラー トークンという形式の **アクセス トークンです** &lt;  &gt; 。|
+Authorization|string|必須です。 Azure ADベアラー トークンという形式の **アクセス トークンです** &lt;  &gt; 。|
 
 ### <a name="request-parameters"></a>要求パラメーター
 
@@ -132,11 +132,11 @@ Authorization|string|必須。 Azure ADベアラー トークンという形式�
 ---|---|---
 sinceTimeUtc|DateTime|フィールドに基づいて、取得される下限時間のアラートを定義します。 <p> `LastProcessedTimeUtc` <p> 時間範囲は次の値です。sinceTimeUtc 時刻から現在の時刻までです。 <p> **注**: 指定しない場合、過去 2 時間に生成されたアラートはすべて取得されます。
 untilTimeUtc|DateTime|取得される上限時間のアラートを定義します。 <p> 時間範囲は、次の場合に `sinceTimeUtc` 指定 `untilTimeUtc` します。 <p> **注**: 指定しない場合、既定値は現在の時刻になります。
-前|文字列|次の時間範囲のアラートを引き `(current_time - ago)` 出 `current_time` します。 <p> 値は ISO **8601 期間形式に従って** 設定する必要があります <p> 例: `ago=PT10M` 過去 10 分間に受信したアラートをプルします。
-limit|int|取得するアラートの数を定義します。 最新のアラートは、定義された番号に基づいて取得されます。<p> **注**: 指定しない場合、時間範囲内で使用可能なすべてのアラートが取得されます。
-machinegroups|文字列|アラートをプルするデバイス グループを指定します。 <p> **注**: 指定しない場合、すべてのデバイス グループからのアラートが取得されます。 <p> 例: <br><br> `https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts/?machinegroups=UKMachines&machinegroups=FranceMachines`
-DeviceCreatedMachineTags|文字列|レジストリからの単一のデバイス タグ。
-CloudCreatedMachineTags|文字列|このページで作成されたデバイス Microsoft Defender セキュリティ センター。
+前|string|次の時間範囲のアラートを引き `(current_time - ago)` 出 `current_time` します。 <p> 値は ISO **8601 期間形式に従って** 設定する必要があります <p> 例: `ago=PT10M` 過去 10 分間に受信したアラートをプルします。
+limit|整数|取得するアラートの数を定義します。 最新のアラートは、定義された番号に基づいて取得されます。<p> **注**: 指定しない場合、時間範囲内で使用可能なすべてのアラートが取得されます。
+machinegroups|string|アラートをプルするデバイス グループを指定します。 <p> **注**: 指定しない場合、すべてのデバイス グループからのアラートが取得されます。 <p> 例: <br><br> `https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts/?machinegroups=UKMachines&machinegroups=FranceMachines`
+DeviceCreatedMachineTags|string|レジストリからの単一のデバイス タグ。
+CloudCreatedMachineTags|string|このページで作成されたデバイス Microsoft Defender セキュリティ センター。
 
 ### <a name="request-example"></a>要求の例
 
@@ -349,7 +349,7 @@ HTTP エラー コード|説明
 403|承認されていない例外 - テナント管理者によって管理されていないドメインまたはテナントの状態が削除されます。
 500|サービスのエラー。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [エンドポイント向け Microsoft Defender で SIEM 統合を有効にする](enable-siem-integration.md)
 - [エンドポイント検出用の Microsoft Defender をプルする ArcSight の構成](configure-arcsight.md)

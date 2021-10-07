@@ -10,19 +10,19 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 ms.custom: seo-marvel-apr2020
 description: 非アクティブなメールボックスの内容を含む新しいメールボックスに変換して、Office 365で非アクティブなメールボックスの内容を回復する方法について説明します。
-ms.openlocfilehash: e7f5ea9e3d47bf6b7ee6de495d2f5f47984cdf8f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d4776b5b11647409a1c96e3301e22e8b78fae91b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177807"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188123"
 ---
 # <a name="recover-an-inactive-mailbox"></a>非アクティブなメールボックスを回復する
 

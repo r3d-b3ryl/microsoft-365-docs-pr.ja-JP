@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -30,12 +30,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: ストレージとファイル共有をOneDrive共有するために、Microsoft 365サイトとチーム Microsoft 365する方法について学習します。
-ms.openlocfilehash: 334a199580b8f74c841f0f9d1d6db85db19bbb2e
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 2cc7354a5f22f170a097d7960d936e36999bde49
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776718"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202323"
 ---
 # <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>ファイルストレージと共有を設定する方法は、Microsoft 365
 
@@ -194,7 +194,7 @@ Microsoft 365 のユーザーが、Microsoft 365 やチーム サイトに加え
 
 4. チェック ボックスをオンまたはオフにしてサード パーティ製ストレージのオン/オフを切り替え、[変更を保存] **を選択します**。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - [ファイルの保存と共有のためにチーム サイトをカスタマイズします](customize-team-site.md)。 このチュートリアルでは、ストレージとコラボレーションの機能をさらに活用する方法について説明します。
 

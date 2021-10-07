@@ -9,18 +9,18 @@ ms.date: ''
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
 description: データ損失防止の計画プロセスの概要
-ms.openlocfilehash: 130675ad15a872ed14041289fb24aeec471014ff
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 144f07a75bc7ab2ae5cd06b04328f91f06c9a91f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192960"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201903"
 ---
 # <a name="plan-for-data-loss-prevention-dlp"></a>データ損失防止 (DLP) の計画
 
@@ -72,7 +72,7 @@ ms.locfileid: "59192960"
 - 財務的 
 - 医療と健康に関する情報
 - プライバシー
-- Custom
+- カスタム
 
 関係者は機密情報を「データ 処理者なので、データ主体情報と財務情報に対するプライバシー保護を実装する必要がある」と識別する場合があります。
 
@@ -161,7 +161,7 @@ DLP の導入を開始すると、これらの質問を使用して、ポリシ�
 DLP の場所を監視する前に、満たす必要がある前提条件があります。 「開始 **する前に」のセクション** を参照してください。
 
 - [データ損失防止のオンプレミス スキャナー (プレビュー) を開始する](dlp-on-premises-scanner-get-started.md#before-you-begin)
-- [エンドポイント データ損失防止を開始する](endpoint-dlp-getting-started.md#before-you-begin)
+- [エンドポイント データ損失防止の使用を開始する](endpoint-dlp-getting-started.md#before-you-begin)
 - [Microsoft コンプライアンス拡張機能の使用を開始する (プレビュー)](dlp-chrome-get-started.md#before-you-begin)
 - [Microsoft 以外のクラウド アプリでデータ損失防止ポリシーを使用する (プレビュー)](dlp-use-policies-non-microsoft-cloud-apps.md#before-you-begin)
 

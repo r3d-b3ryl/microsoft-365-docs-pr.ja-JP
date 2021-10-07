@@ -4,18 +4,18 @@ description: アプリのパッケージ化、展開、サポート方法など�
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: c8a501c178ae0cffb98870d4fccd44028cbf6ec0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e3ac937a4ff98d853ad16ef4ae5854da70fa4d99
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163814"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213963"
 ---
 # <a name="apps-in-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップのアプリ
 
@@ -31,7 +31,7 @@ Microsoft には、特定の主要なアプリと、Microsoft 365 E3または E5
 
 ## <a name="apps-provided-by-microsoft"></a>Microsoft が提供するアプリ
 
-Microsoft マネージド デスクトップ ライセンスには、Microsoft 365 Apps for enterprise Standard Suite の 64 ビット バージョンのアプリ (Word、Excel、PowerPoint、PowerPoint、Outlook、Publisher、Access、Teams、OneNote) が含まれています。クイック実行のMicrosoft ProjectおよびVisioは既定では含まれませんが、追加を要求できます。  これらのアプリの詳細については、「デバイスにインストールMicrosoft Project[または Microsoft Visio」をMicrosoft マネージド デスクトップしてください](../get-started/project-visio.md)。
+Microsoft マネージド デスクトップ ライセンスには、Microsoft 365 Apps for enterprise Standard Suite (Word、Excel、PowerPoint、Outlook、Publisher、Access、Teams、およびOneNote)。クイック実行のMicrosoft ProjectおよびVisioは既定では含まれませんが、追加を要求できます。  これらのアプリの詳細については、「デバイスにインストールMicrosoft Project[または Microsoft Visio」をMicrosoft マネージド デスクトップしてください](../get-started/project-visio.md)。
 
 ### <a name="what-microsoft-does-to-support-the-apps-we-provide"></a>Microsoft が提供するアプリをサポートするために行う機能
 

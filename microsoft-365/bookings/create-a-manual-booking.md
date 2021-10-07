@@ -6,15 +6,15 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
 description: 次の手順に従って予定を作成し、Microsoft Bookings アプリを通じて従業員を割り当てる。
-ms.openlocfilehash: 9af9b28eb1f00bfc41dbdff2d7df4111cb8bdd13
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3c71a3f96aa79e55c857078aad77a14e37d9009b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59190610"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202143"
 ---
 # <a name="create-a-manual-booking"></a>予約を作成する
 

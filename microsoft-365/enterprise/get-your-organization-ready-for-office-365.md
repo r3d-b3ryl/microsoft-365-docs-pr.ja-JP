@@ -7,7 +7,7 @@ ms.date: 08/12/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - M365-subscription-management
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 712fced7-f9d0-4fde-8b79-286262a5d0bc
 description: この記事では、展開を計画するためのチェックリストと他のリソースMicrosoft 365 Enterpriseします。
-ms.openlocfilehash: e914d5ea5f145197e348fd88fe7cf2b287a883f8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7cec2c8eebb35d215bb46370de5a2019118d6310
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216064"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201687"
 ---
 # <a name="plan-for-microsoft-365-enterprise"></a>計画を立Microsoft 365 Enterprise
 

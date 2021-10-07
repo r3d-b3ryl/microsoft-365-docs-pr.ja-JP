@@ -9,7 +9,7 @@ ms.reviewer: tugu, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: ビジネス向け請求通知の受信に使用する請求先住所または電子メール アドレスを更新Microsoft 365します。
 ms.date: 04/07/2021
-ms.openlocfilehash: 383e8febffa2a65e01c1ae0c543d7b984a96eb26
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: abc86bdaad0f28bf0590e19d8a7d37fbc21239b8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219224"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202059"
 ---
 # <a name="change-your-billing-addresses"></a>請求先住所を変更する
 

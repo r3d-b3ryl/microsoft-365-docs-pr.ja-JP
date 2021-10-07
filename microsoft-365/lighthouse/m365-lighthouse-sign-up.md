@@ -7,7 +7,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -16,19 +16,19 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Managed Service Providers (MSP) の場合は、サービス プロバイダーにサインアップするMicrosoft 365 Lighthouse。
-ms.openlocfilehash: 80e56055a89d73f53c025de05dfc1e8dabedda78
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9a69b8a261d3a5faebd7ad7aa72336d0c9f5977c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218494"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213999"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>アカウントにサインアップMicrosoft 365 Lighthouse
 
 > [!NOTE]
 > この記事で説明する機能はプレビューで、変更される可能性があります。要件を満たすパートナーだけが [利用できます](m365-lighthouse-requirements.md)。 組織にアカウント情報がMicrosoft 365 Lighthouse、この記事の指示に従ってサインアップしてください。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 - Microsoft 365 Lighthouseは、顧客テナントだけでなくパートナー テナントに展開されますが、ユーザーと顧客のテナントが Microsoft 365 Lighthouse 要件に記載されている &mdash; [要件を満たしていることを確認します](m365-lighthouse-requirements.md)。
 

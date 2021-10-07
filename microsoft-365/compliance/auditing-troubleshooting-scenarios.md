@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: troubleshooting
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 電子メール アカウントの一般的なMicrosoft 365のトラブルシューティングに役立つ監査ログ検索ツールを使用する方法について説明します。
-ms.openlocfilehash: 4f90d618fd72c41a3c1d3d6ff1600f3d6d10bbfc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 026a0d86d1f8d4dd6dbe3d1f93eae167c817e5dc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164167"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201951"
 ---
 # <a name="search-the-audit-log-to-investigate-common-support-issues"></a>監査ログを検索して、一般的なサポートの問題を調査する
 
@@ -122,7 +122,7 @@ b. [パラメーター **] フィールド** の値 *ForwardingSmtpAddress は* 
 
 c. *DeliverToMailboxAndForward* パラメーターの True 値は、メッセージのコピーが sarad@alpinehouse.onmicrosoft.com に配信され *、ForwardingSmtpAddress* パラメーターで指定された電子メール アドレスに転送され、この例では mike@contoso.com です。   *DeliverToMailboxAndForward* パラメーターの値が *False* に設定されている場合、Email は *ForwardingSmtpAddress* パラメーターで指定されたアドレスにのみ転送されます。 ObjectId フィールドで指定されたメールボックスには **配信** されません。
 
-d.  UserId **フィールドは、ObjectId** フィールドで指定されたメールボックスにメール転送を設定したユーザー **を示** します。 このユーザーは、検索結果ページ **の [ユーザー** ] 列にも表示されます。 この場合、メールボックスの所有者は自分のメールボックスにメール転送を設定しているようです。
+d. UserId **フィールドは、ObjectId** フィールドで指定されたメールボックスにメール転送を設定したユーザー **を示** します。 このユーザーは、検索結果ページ **の [ユーザー** ] 列にも表示されます。 この場合、メールボックスの所有者は自分のメールボックスにメール転送を設定しているようです。
 
 メールボックスのメール転送を設定すべきでないと判断される場合は、Exchange Online PowerShell で次のコマンドを実行して、この設定を削除できます:
 
@@ -198,7 +198,7 @@ b. [**パラメーター**] フィールドには受信トレイ ルールの条
 
 c. *MoveToFolder パラメーターは*、受信トレイ ルールのアクションを指定します。 この例では、管理者から受信したメッセージ admin@alpinehouse.onmicrosoft.com AdminSearch という名前のフォルダー *に移動します*。 受信トレイ ルールのアクションを定義するために使用できるパラメーターの完全な一覧については [、「New-InboxRule」](/powershell/module/exchange/new-inboxrule) の記事も参照してください。
 
-d.  UserId **フィールドは、ObjectId** フィールドで指定された受信トレイ ルールを作成したユーザー **を示** します。 このユーザーは、検索結果ページ **の [ユーザー** ] 列にも表示されます。
+d. UserId **フィールドは、ObjectId** フィールドで指定された受信トレイ ルールを作成したユーザー **を示** します。 このユーザーは、検索結果ページ **の [ユーザー** ] 列にも表示されます。
 
 ## <a name="investigate-why-there-was-a-successful-login-by-a-user-outside-your-organization"></a>組織外のユーザーによるログインが成功した理由を調査する
 
@@ -219,9 +219,9 @@ d.  UserId **フィールドは、ObjectId** フィールドで指定された�
 
    c. **ApplicationId プロパティ** は、ログオン要求をトリガーしたアプリケーションを識別します。 この監査レコードの ApplicationId プロパティに表示される 00000003-000003-00000-0ff1-ce00-000000000 の値は、SharePoint Online を示します。 OneDrive for Business ApplicationId も同じです。
 
-   d.  これは、パススルー認証が成功したかどうかを示します。 つまり、ユーザーが Azure サーバーによって正常に認証AD。 
+   d. これは、パススルー認証が成功したかどうかを示します。 つまり、ユーザーが Azure サーバーによって正常に認証AD。 
 
-   e.  **RecordType 値** **15** は、監査されたアクティビティ (UserLoggedIn) が Azure AD の Secure Token Service (STS) ログオン イベントAD。
+   e. **RecordType 値** **15** は、監査されたアクティビティ (UserLoggedIn) が Azure AD の Secure Token Service (STS) ログオン イベントAD。
 
 UserLoggedIn 監査レコードに表示されるその他のプロパティの詳細については、「AD 管理アクティビティ API スキーマ」の「Azure AD Office 365 関連スキーマ情報」を[参照してください](/office/office-365-management-api/office-365-management-activity-api-schema#azure-active-directory-base-schema)。
 

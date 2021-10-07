@@ -12,14 +12,14 @@ ms.collection:
 - m365initiative-viva-topics
 ms.service: ''
 search.appverid: ''
-localization_priority: medium
+ms.localizationpriority: medium
 description: 新しいトピックを作成する方法については、Microsoft Viva トピック。
-ms.openlocfilehash: a66fa4e3b278187df266ddcdd69dd8a6f15a365a
-ms.sourcegitcommit: d1a93f25323a0e6ce3b898bf9dc57dcef27eda67
+ms.openlocfilehash: cfc0eabb13af569c603de231a5e8b5e1750c8c1e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60126856"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60214167"
 ---
 # <a name="create-a-new-topic-in-microsoft-viva-topics"></a>新しいトピックを作成Microsoft Viva トピック
 

@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3ea951e35555721a989001b2a5235df5b89a8a55
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f472b42a5ce967e67c4b4cbe3511e493ac86d42c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164774"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208471"
 ---
 # <a name="devicefromip"></a>DeviceFromIP()
 
@@ -43,10 +43,10 @@ ms.locfileid: "59164774"
 
 この関数は、次の列を持つテーブルを返します。
 
-| 列 | データ型 | 説明 |
+| Column | データ型 | 説明 |
 |------------|-------------|-------------|
 | `IP` | string | IP アドレス  |
-| `DeviceId` | 文字列 | サービス内のデバイスの一意の識別子 |
+| `DeviceId` | string | サービス内のデバイスの一意の識別子 |
 
 
 ## <a name="syntax"></a>構文
@@ -74,7 +74,7 @@ DeviceNetworkEvents
 | invoke DeviceFromIP()
 ```
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)

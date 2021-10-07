@@ -6,17 +6,17 @@ author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: ad85439d817013fa394fcb80bd5d47dbf391601f
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: b051ea3c1ea04eb90584654389f335ad6ecedefc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59484121"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213927"
 ---
 # <a name="register-new-devices-yourself"></a>新しいデバイスを自分で登録する
 

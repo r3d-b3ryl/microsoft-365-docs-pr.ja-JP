@@ -7,7 +7,7 @@ ms.date: 09/30/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: ディレクトリ同期を使用してユーザーにMicrosoft 365準備する方法と、このメソッドを使用する長期的な利点について説明します。
-ms.openlocfilehash: 389f0ca682538baed21432220c16ad7cb269daa0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4bd244edfa11df315f83e78c97ec7fe63b5c2d9d
+ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220746"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60216888"
 ---
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Prepare for directory synchronization to Microsoft 365 (Microsoft 365 へのディレクトリ同期を準備する)
 
@@ -48,6 +48,9 @@ ms.locfileid: "59220746"
 ただし、ディレクトリ同期では、Active Directory ドメイン サービス (AD DS) が最小エラーで Microsoft 365 サブスクリプションの Azure AD テナントと同期するように計画と準備が必要です。
 
 最適な結果を得るには、次の手順に従います。
+
+> [!NOTE]
+> ASCII 以外の文字は、DS ユーザー アカウントの属性AD同期しません。
 
 ## <a name="1-directory-cleanup-tasks"></a>1. ディレクトリのクリーンアップ タスク
 
@@ -76,7 +79,7 @@ DS でADライセンスが割り当てられる各ユーザー アカウント�
    - 携帯電話番号
    - FAX 番号
    - 番地
-   - 市区町村
+   - 都市
    - 都道府県
    - 郵便番号
    - 国または地域

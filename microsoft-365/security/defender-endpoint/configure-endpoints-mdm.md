@@ -8,18 +8,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6cb99f300c7d87497f31729507695a9a633b345a
-ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
+ms.openlocfilehash: 6aaa510df9b3155015979f4d3a5278c601b56223
+ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60124699"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60217128"
 ---
 # <a name="onboard-the-windows-devices-using-mobile-device-management-tools"></a>モバイル デバイス管理ツールWindowsデバイスをオンボードする
 
@@ -85,7 +85,7 @@ Defender for Endpoint CSP の使用の詳細については [、「WindowsAdvanc
    - 日付の種類: 文字列
    - 値: [ファイルのコンテンツから値をコピーして貼りWindowsDefenderATP_valid_until_YYYY-MM-DD.offboarding ファイル]
 
-ポリシー設定の詳細については、「Microsoft Intuneのポリシー設定[Windows 10」を参照Microsoft Intune。](/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune)
+ポリシー設定の詳細については、「Microsoft Intune」の[「Windows 10ポリシー設定」を参照Microsoft Intune。](/mem/intune/configuration/custom-settings-windows-10)
 
 > [!NOTE]
 > オフ **ボードデバイスの正常性状態** ポリシーでは、読み取り専用プロパティが使用され、修復できません。

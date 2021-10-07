@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 電話で多要素認証 (2 要素認証とも呼ばれる) をセットアップする方法について学習します。
-ms.openlocfilehash: 7709585c21b22ee3fece6daec4660cf87faa6819
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c70c353cb352eb3cb9130a1cea9ec5a4d181ea4f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212793"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202095"
 ---
 # <a name="set-up-multifactor-authentication-on-your-phone"></a>電話で多要素認証を設定する
 
@@ -38,7 +38,7 @@ ms.locfileid: "59212793"
 
 ## <a name="try-it"></a>お試しください!
 
-1. サインインすると、[必要な情報] プロンプト [https://office.com](https://office.com) **が表示** されます。 **[次へ]** を選択します。
+1. サインインすると、[必要な情報] プロンプト [https://office.com](https://office.com) **が表示** されます。 [**次へ**]を選択します。
 1. [ **手順 1] で**、[ **認証電話]** ドロップダウン リストから **[モバイル** アプリ] を選択します。
 1. [モバイル アプリの使い方] で、サインインに使用する方法を選択します。
     - [ **検証用の通知の受信]** を選択して、指紋認証を含む可能性があるモバイル アプリから直接認証します。

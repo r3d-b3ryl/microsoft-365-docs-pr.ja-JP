@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 hideEdit: true
 ms.technology: mde
-ms.openlocfilehash: 9dd5eea4a0a05a063cd5eb130af956dee33921be
-ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
+ms.openlocfilehash: 2751da63a023793c8935ae8fb673b6eb97378e1c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "60088427"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194083"
 ---
 # <a name="microsoft-defender-preview-application-license-terms"></a>Microsoft Defender Preview アプリケーション ライセンス条項
 

@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: Admin
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -20,12 +20,12 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) の送信スパム コントロールと、大量メールを送信する必要がある場合の処理について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0fb6bfe5d83c551c0a93cc7b453b27a2d7b476bc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 26be514584a8fb2f8c024c0f4db208018d951868
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214313"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202395"
 ---
 # <a name="outbound-spam-protection-in-eop"></a>EOP の送信スパム保護
 

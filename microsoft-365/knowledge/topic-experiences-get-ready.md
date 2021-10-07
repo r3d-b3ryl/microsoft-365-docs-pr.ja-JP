@@ -9,13 +9,13 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.custom: Adopt
 search.appverid: ''
-localization_priority: Normal
-ms.openlocfilehash: 8e1da50c120d333812014f6720f1168d4afb9741
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.localizationpriority: medium
+ms.openlocfilehash: a2e6ffc768f52d3738b9389d460ddba2a156152e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218463"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60214071"
 ---
 # <a name="get-your-environment-ready-for-microsoft-viva-topics"></a>環境の準備を整Microsoft Viva トピック
 

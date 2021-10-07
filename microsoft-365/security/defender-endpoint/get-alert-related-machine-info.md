@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0e0a250981d0e3a6e0fec2eb782ef492a4e0bd89
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b983c930173145a8bb1bb23932e711c5112040fa
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221561"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194215"
 ---
 # <a name="get-alert-related-machine-information-api"></a>アラート関連のコンピューター情報 API を取得する
 
@@ -56,8 +56,8 @@ ms.locfileid: "59221561"
 :---|:---|:---
 アプリケーション|Machine.Read.All|'すべてのコンピューター情報を読み取る'
 アプリケーション|Machine.ReadWrite.All|'すべてのコンピューター情報の読み取りと書き込み'
-委任 (職場または学校アカウント)|Machine.Read|'コンピューター情報の読み取り'
-委任 (職場または学校アカウント)|Machine.ReadWrite|'コンピューター情報の読み取りおよび書き込み'
+委任 (職場または学校のアカウント)|Machine.Read|'コンピューター情報の読み取り'
+委任 (職場または学校のアカウント)|Machine.ReadWrite|'コンピューター情報の読み取りおよび書き込み'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
@@ -75,7 +75,7 @@ GET /api/alerts/{id}/machine
 
 名前|型|説明
 :---|:---|:---
-Authorization|文字列|ベアラー {token}。 **必須**
+Authorization|String|ベアラー {token}。 **必須**
 
 ## <a name="request-body"></a>要求本文
 

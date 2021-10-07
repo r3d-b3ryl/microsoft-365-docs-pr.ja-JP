@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.date: 06/11/2020
 ms.collection:
 - Strat_O365_IP
@@ -16,16 +16,16 @@ ms.collection:
 search.appverid:
 - MET150
 description: 管理者として、およびメッセージ送信者として、ユーザーが暗号化された特定の電子メールを取り消Office 365 Advanced Message Encryption。
-ms.openlocfilehash: b49915b6ef72d366a4b2718319150d2d5b640b9f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 86231857b01cc4f505f19063fe59cd58b75e263b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59210873"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201819"
 ---
 # <a name="revoke-email-encrypted-by-advanced-message-encryption"></a>高度なメッセージ暗号化によって暗号化された電子メールを取り消す
 
-電子メールの失効は、電子メールの一部Office 365 Advanced Message Encryption。 Office 365 Advanced Message Encryptionは[、Microsoft 365 Enterprise E5、Office 365 E5、Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise/home)(非営利スタッフ価格)、Office 365 Enterprise E5 (非営利スタッフ価格)、および Office 365 Education A5 に含まれています。 組織に Office 365 Advanced Message Encryption を含めないサブスクリプションがある場合は、Microsoft 365 E3、Microsoft 365 E3 (非営利スタッフ価格) の Microsoft 365 E5 Compliance SKU アドオン、または Microsoft 365 E3、Microsoft 365 E3 (非営利スタッフ価格)、または Office 365 SKU の Office 365 Advanced Compliance SKU アドオンを使用して購入できます。
+電子メールの失効は、電子メールの一部Office 365 Advanced Message Encryption。 Office 365 Advanced Message Encryptionは[、Microsoft 365 Enterprise E5、Office 365 E5、Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise/home)(非営利スタッフ価格)、Office 365 Enterprise E5 (非営利スタッフ価格)、および Office 365 Education A5 に含まれています。 組織に Office 365 Advanced Message Encryption を含めないサブスクリプションがある場合は、Microsoft 365 E5 Compliance SKU アドオンを使用して Microsoft 365 E3、Microsoft 365 E3 (Nonprofit)スタッフの価格設定Office 365 Advanced Compliance SKU アドオン(Microsoft 365 E3、Microsoft 365 E3(非営利スタッフ価格)、または SKU のOffice 365します。
 
 この記事は、この記事に関する一連の[記事の一](ome.md)部Office 365 Message Encryption。
 
@@ -97,7 +97,7 @@ Microsoft 365管理者は、次の一般的な手順に従って、適格な暗�
 
 3. メッセージをダブルクリックして、メッセージ ID を含む詳細を表示します。
 
-### <a name="step-2-verify-that-the-mail-is-revocable"></a>手順 2。 メールが失効可能な場合の確認
+### <a name="step-2-verify-that-the-mail-is-revocable"></a>手順 2. メールが失効可能な場合の確認
 
 メッセージを取り消すかどうかを確認するには、セキュリティ コンプライアンス センターの [詳細] テーブルの [暗号化]レポートに [失効の状態] フィールドが表示されているかどうかを &amp; 確認します。
 

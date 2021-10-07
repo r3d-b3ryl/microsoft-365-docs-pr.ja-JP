@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 10ec4562063c7352b337cdb6f5d11b76985ae19d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3bc58ec36775065b03ab368b65b833bc4ccaad5c
+ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159224"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60217080"
 ---
 # <a name="troubleshoot-subscription-and-portal-access-issues"></a>サブスクリプションとポータル アクセスの問題のトラブルシューティング
 
@@ -74,7 +74,7 @@ Microsoft 365 Defender にアクセス中にサブスクリプションが見つ
 
 ![現在、データの画像は使用できません。](images/atp-data-not-available.png)
 
-その下のすべてのサブドメインを許可 `security.windows.com` する必要があります。 たとえば、`*.security.windows.com` などです。
+Web ブラウザーで、その下のすべてのサブドメインを許可 `security.windows.com` する必要があります。 たとえば、`*.security.windows.com` などです。
 
 ## <a name="portal-communication-issues"></a>ポータル通信の問題
 

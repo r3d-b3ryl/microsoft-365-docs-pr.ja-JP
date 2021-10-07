@@ -1,5 +1,5 @@
 ---
-title: データ損失Exchange Onlineポリシーをコンプライアンス センターに移行する
+title: Exchange Online データ損失防止ポリシーをコンプライアンス センターへ移行する
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -11,21 +11,21 @@ ms.topic: article
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
-localization_priority: normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - SPO_Content
 search.appverid:
 - MET150
 description: オンライン データ損失防止ポリシーを計画し、Exchange DLP に移行するMicrosoft 365します。
-ms.openlocfilehash: 2cf06b7aee9adb63ff85259427bcac818807cc7c
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: c1929af423259de770d561421945d471c9022ab4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400524"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201879"
 ---
-# <a name="migrate-exchange-online-data-loss-prevention-policies-to-compliance-center"></a>データ損失Exchange Onlineポリシーをコンプライアンス センターに移行する
+# <a name="migrate-exchange-online-data-loss-prevention-policies-to-compliance-center"></a>Exchange Online データ損失防止ポリシーをコンプライアンス センターへ移行する
 
 [Exchange Onlineデータ損失防止 (DLP) ポリシーは](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)非推奨です。 [DLP を含む、](dlp-learn-about-dlp.md)より豊富Exchange Online DLP 機能は、コンプライアンス センター [Microsoft 365提供されます](https://compliance.microsoft.com/datalossprevention?viewid=policies)。 DLP ポリシー移行ウィザードを使用して、DLP ポリシーを管理Exchange Onlineコンプライアンス センターに移行するのに役立ちます。
 
@@ -84,7 +84,7 @@ DLP ライセンス要件の詳細な一覧については、「セキュリテ�
 1. 次の質問Exchangeして、DLP とコンプライアンス センター のポリシーを評価します。
 
 
-|質問  |操作  | 移行手順|
+|質問  |アクション  | 移行手順|
 |---------|---------|---------|
 |ポリシーは引き続き必要ですか?    |削除しない場合は、削除または非アクティブ化する |移行しない|
 |他のポリシーまたはコンプライアンス センター DLP Exchange重複していますか?     |はいの場合、重複するポリシーを統合できますか?         |- 別のポリシーと重複するExchange、Exchange 管理センターで統合 DLP ポリシーを手動で作成し、移行ウィザードを使用します。 </br> - 既存のコンプライアンス センター ポリシーと重複している場合は、既存のコンプライアンス センター ポリシーを一致する変更できます。コンプライアンス センター のExchangeしません。|

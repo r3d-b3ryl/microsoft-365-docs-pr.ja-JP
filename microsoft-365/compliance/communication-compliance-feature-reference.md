@@ -11,19 +11,19 @@ ms.topic: article
 f1_keywords:
 - ms.o365.cc.SupervisoryReview
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: ce17ef1f76b7311dc9e0c10bcde1554954b6639d
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: bdc91a8e2f503efaed574d861adfbe7e94d7c852
+ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043025"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60216960"
 ---
 # <a name="communication-compliance-feature-reference"></a>通信コンプライアンス機能リファレンス
 
@@ -333,7 +333,7 @@ OCR が有効になっているポリシーの保留中のアラートを確認�
 |:-----|:-----|:-----|
 |**テンプレート名** | はい | 修復中に通知ワークフローで選択する通知テンプレートの表示名は、テキスト文字をサポートします。 |
 | **[送信者のアドレス]** | はい | サブスクリプションの Active Directory から選択された、ポリシーの一致を持つユーザーにメッセージを送信する 1 つ以上のユーザーまたはグループのアドレス。 |
-| **CC アドレスと BCC アドレス** | 不要 | サブスクリプションの Active Directory から選択したポリシー一致の通知を受け取るオプションのユーザーまたはグループ。 |
+| **CC アドレスと BCC アドレス** | いいえ | サブスクリプションの Active Directory から選択したポリシー一致の通知を受け取るオプションのユーザーまたはグループ。 |
 | **Subject** | はい | メッセージの件名に表示される情報は、テキスト文字をサポートします。 |
 | **メッセージ本文** | はい | メッセージ本文に表示される情報は、テキスト値または HTML 値をサポートします。 |
 
@@ -559,7 +559,7 @@ OCR が有効になっているポリシーの保留中のアラートを確認�
 場合によっては、ユーザーアクティビティとコミュニケーションの監督を証明するために、規制またはコンプライアンス監査人に情報を提供する必要があります。 この情報は、定義済みの組織ポリシーに関連付けられているすべてのアクティビティの概要、または通信コンプライアンス ポリシーが変更された場合にいつでも使用できます。 通信コンプライアンス ポリシーには、内部または外部の監査に対する完全な準備を行う組み込みの監査証跡があります。 作成、編集、および削除の各アクションの詳細な監査履歴は、監督手順の証明を提供するために、通信ポリシーによってキャプチャされます。
 
 > [!IMPORTANT]
-> 通信コンプライアンス イベントが記録される前に、組織で監査を有効にする必要があります。 監査を有効にするには、「監査ログ [を有効にする」を参照してください](communication-compliance-configure.md#step-2-required-enable-the-audit-log)。 アクティビティが Microsoft 365 監査ログにキャプチャされたイベントをトリガーする場合、これらのイベントを通信コンプライアンス ポリシーで表示するには、最大で 48 時間かかる場合があります。
+> 通信コンプライアンス イベントが記録される前に、組織で監査を有効にする必要があります。 監査を有効にするには、「監査ログ [を有効にする」を参照してください](communication-compliance-configure.md#step-2-required-enable-the-audit-log)。 アクティビティが Microsoft 365 監査ログにキャプチャされたイベントをトリガーする場合、通信コンプライアンス ポリシーでこれらのイベントを表示するには、最大で 48 時間かかる場合があります。
 
 通信コンプライアンス ポリシー更新アクティビティを表示するには、任意の **ポリシーのメイン** ページで [ポリシー更新プログラムのエクスポート] コントロールを選択します。 更新アクティビティをエクスポートするには、 *グローバル管理者* または *通信コンプライアンス管理者* の役割を割り当てる必要があります。 このアクションは、次の情報を含む.csv形式で監査ファイルを生成します。
 

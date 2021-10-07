@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 詳細を表示し、編集し、一括編集する方法については、Advanced eDiscoveryしてください。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e542a76e55e0ed9d75a1756026ff9a4f8c1d59ac
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e5616b74fd8fb3a5667244d3fa5c97b5a4fbd57f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179879"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201843"
 ---
 # <a name="manage-custodians-in-an-advanced-ediscovery-case"></a>管理ケースで保管担当者をAdvanced eDiscoveryする
 
@@ -113,7 +113,7 @@ ms.locfileid: "59179879"
 
 保管担当者データの再インデックスは、長時間実行されるプロセスです。作成された対応するジョブの名前は、保管 **担当者データの再インデックス化です**。 [ジョブ] タブまたは[カストディアン]タブで進行状況を追跡するには、[インデックスジョブの状態] 列の状態 **を監視** します。
 
-詳しくは、次のトピックを参照してください。
+詳細については、以下を参照してください。
 
 - [処理中のエラーの操作](processing-data-for-case.md)
 

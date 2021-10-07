@@ -8,19 +8,19 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+ms.localizationpriority: ''
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 ms.custom:
 - seo-marvel-mar2020
 description: この記事では、管理および構成できる暗号化テクノロジについて、Microsoft 365。
-ms.openlocfilehash: 6a693c512100c59eef47414fdd6eab4a2924e835
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 80a0726e112324a673fc964a9fabdbc3ba0ac42e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216713"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201807"
 ---
 # <a name="customer-managed-encryption-features"></a>顧客により管理される暗号化機能
 

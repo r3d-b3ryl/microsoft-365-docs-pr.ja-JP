@@ -9,15 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-localization_priority: Normal
+ms.localizationpriority: medium
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4151df013ffd1116a65740dc44aed1707c6f3950
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3d606c04e4e03ecf32e8b8465bacc381a63d1b92
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59217673"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202251"
 ---
 # <a name="contact-support-for-el-salvador"></a>エルサルバドルのサポートに問い合わせ
 

@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: e207978dbb65863764c66c5afc5c467552100461
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 89ff7984e009f022984f4004a0195176c68a9bad
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220314"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194023"
 ---
 # <a name="advanced-hunting-using-powershell"></a>PowerShell を使用した高度な追求
 
@@ -40,7 +40,7 @@ PowerShell を使用して高度なクエリを実行する方法については
 
 このセクションでは、PowerShell サンプルを共有してトークンを取得し、それを使用してクエリを実行します。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 最初にアプリを [作成する必要があります](apis-intro.md)。
 
 ## <a name="preparation-instructions"></a>準備手順
@@ -120,7 +120,7 @@ $query = [IO.File]::ReadAllText("C:\myQuery.txt"); # Replace with the path to yo
 $results | ConvertTo-Csv -NoTypeInformation | Set-Content file1.csv
 ```
 
-クエリの結果を JSON 形式でファイル形式で出力するには、file1.jsを実行します。
+file1.json で JSON 形式でクエリの結果を出力するには、次の操作を行います。
 
 ```
 $results | ConvertTo-Json | Set-Content file1.json

@@ -9,15 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-localization_priority: Normal
+ms.localizationpriority: medium
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d9ecbf1cfcca1da61339dfabc18fe186bac50147
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 658c8dc02fb473412852c7a6d3fdfbba9738e068
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164422"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202227"
 ---
 # <a name="contact-support-for-libya"></a>リビアのサポートに問い合わせ
 

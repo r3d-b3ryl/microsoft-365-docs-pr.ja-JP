@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: キャンペーンMicrosoft 365情報を取得して、電子メール、データ、通信に対するサイバーセキュリティの脅威からキャンペーンを保護できます。
-ms.openlocfilehash: 3d70fef721417dd823dc272bbb7b08c04c037f98
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e89be7c15cd00279a0b78323f992c1d3e2195f89
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180544"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202083"
 ---
 # <a name="get-microsoft-365-for-campaigns"></a>キャンペーンMicrosoft 365を取得する
 

@@ -9,7 +9,7 @@ ms.date: 05/22/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+ms.localizationpriority: ''
 search.appverid:
 - MET150
 ms.assetid: 5986b9e1-c824-4f8f-9b7d-a2b0ae2a7fe9
@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: 従来のファイルを組織Office 365 Message Encryption (OME) に移行する方法について説明します。
-ms.openlocfilehash: a8f165aa9fde70cfc448e999dbc7abc8818e8cd5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b21522b16a5bca6c5271149927b16dea5fd238e4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179911"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201867"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Office 365 Message Encryption の古い情報
 
@@ -211,8 +211,8 @@ Office 365 Message Encryptionは、Microsoft Azure Rights Management (Azure RMS)
    |:-----|:-----|
    |暗号化された電子メール メッセージに付けられる既定のテキスト  <br/> 暗号化メッセージの表示手順の上に表示される既定のテキスト  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<empty string>"` <br/> **例:** `Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""` <br/> |
    |暗号化メッセージを含む電子メールの免責文  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<empty string>"` <br/> **例:** `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""` <br/> |
-   |暗号化メールの表示ポータルの最上部に表示されるテキスト  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<empty string>"` <br/> **既定に戻す例:**`Set-OMEConfiguration -Identity "OME Configuration" -PortalText ""` <br/> |
-   |ロゴ  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <"$null">` <br/> **既定に戻す例:**`Set-OMEConfiguration -Identity "OME configuration" -Image $null` <br/> |
+   |暗号化メールの表示ポータルの最上部に表示されるテキスト  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<empty string>"` <br/> **既定に戻す例:** `Set-OMEConfiguration -Identity "OME Configuration" -PortalText ""` <br/> |
+   |ロゴ  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <"$null">` <br/> **既定に戻す例:** `Set-OMEConfiguration -Identity "OME configuration" -Image $null` <br/> |
 
 ## <a name="service-information-for-legacy-office-365-message-encryption-prior-to-the-release-of-the-new-ome-capabilities"></a>新しい OME 機能Office 365 Message Encryption以前のレガシ サービスのサービス情報
 <a name="LegacyServiceInfo"> </a>
@@ -306,7 +306,7 @@ EHE のすべてのお客様は、Office 365 Message Encryption にアップグ�
   
  **Q. 特定の受信者に送信されたメッセージを取り消すことは可能ですか。**
   
-いいえ。 送信後に特定のユーザーにメッセージを取り消す事はできない。
+その必要はありません。 送信後に特定のユーザーにメッセージを取り消す事はできない。
   
  **Q. 受信されて既読になった暗号化メッセージのレポートを表示することはできますか。**
   
