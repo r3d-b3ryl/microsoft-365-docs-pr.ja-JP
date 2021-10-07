@@ -4,18 +4,18 @@ description: 2 つのツール、実行するチェック、および結果の�
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: cc06faa8a5a18f8f63a984e6ce3f7b6bfb6cbc4b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c584632a625ecb8597aa0c9319063e6f9198bec3
+ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215514"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60216936"
 ---
 # <a name="readiness-assessment-tools"></a>準備状況評価ツール
 
@@ -30,7 +30,10 @@ Microsoft マネージド デスクトップ に登録する際に最もスム�
 オンライン[ツールは](https://aka.ms/mmdart)、Microsoft エンドポイント マネージャー (具体的には Microsoft Intune)、Azure Active Directory (Azure AD)、Microsoft 365 の設定をチェックして、Microsoft マネージド デスクトップ で動作するようにします。 Microsoft マネージド デスクトップ組織 (テナント) で前回チェックを実行した後、これらのチェックに関連付けられたデータAD保持されます。 12 か月後、識別されていない形式で保持されます。 収集したデータを削除できます。
 
 少なくともグローバル リーダーまたは Intune 管理者の役割を持つユーザーは、このツールを実行できますが、2 つのチェック[](readiness-assessment-fix.md#multifactor-authentication)[(条件付](readiness-assessment-fix.md#conditional-access-policies)きアクセス ポリシーと多要素認証には追加のアクセス許可が必要です)。
- 
+
+> [!IMPORTANT]  
+> オンラインの準備状況評価ツールを使用すると、初めてMicrosoft マネージド デスクトップ準備を確認できます。 組織が既に組織に登録されているMicrosoft マネージド デスクトップ、このツールを使用しない。
+
 評価ツールは、次の項目をチェックします。
 
 ## <a name="microsoft-intune-settings"></a>Microsoft Intune設定
@@ -43,13 +46,13 @@ Microsoft マネージド デスクトップ に登録する際に最もスム�
 |デバイス コンプライアンス ポリシー     | Intune コンプライアンス ポリシーがすべてのユーザーに割り当てられていないMicrosoft マネージド デスクトップします。     |
 |デバイス構成プロファイル     | 構成プロファイルがすべてのユーザーまたはすべてのデバイスに割り当てられていないMicrosoft マネージド デスクトップします。      |
 |デバイスの種類の制限     | 組織内のWindows 10 Intune への登録が許可されているチェック        |
-|[登録の状態] ページ     | [登録の状態] ページが有効になっていないか確認する      |
+|登録ステータス ページ     | [登録の状態] ページが有効になっていないか確認する      |
 |Intune の登録     | Azure 組織Windows 10デバイスが自動的AD Intune に登録されるのを確認します。         |
 |ビジネス向け Microsoft Store     | Intune でビジネス向け Microsoft Store同期が有効になっているか確認する        |
 |多要素認証 | 複数要素認証がサービス アカウントに適用Microsoft マネージド デスクトップします。
 |PowerShell スクリプト     | デバイスをWindows PowerShell *する方法で*、スクリプトが割り当てられていないMicrosoft マネージド デスクトップします。    |
 |地域     | 地域がユーザーによってサポートMicrosoft マネージド デスクトップ        |
-|セキュリティベースライン     | セキュリティ 基準プロファイルがすべてのユーザーまたはすべてのデバイスを対象としていないMicrosoft マネージド デスクトップします。        |
+|セキュリティ基本計画     | セキュリティ 基準プロファイルがすべてのユーザーまたはすべてのデバイスを対象としていないMicrosoft マネージド デスクトップします。        |
 |Windowsアプリ     | デバイスに割り当てるアプリをMicrosoft マネージド デスクトップする      |
 |Windows Hello for Business     | Business のWindows Helloが有効になっているか確認する        |
 |Windows 10更新リング     | Intune の "Windows 10 更新リング" ポリシーがすべてのユーザーまたはすべてのデバイスを対象としていないMicrosoft マネージド デスクトップします。      |

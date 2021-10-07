@@ -12,7 +12,7 @@ f1.keywords:
 ms.author: macapara
 author: mjcaparas
 ms.date: 07/09/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: e4c3f6d96c1b161274c1ae00c8e372e1f93bcdb7
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: ddf7af50edd8f86ec7bc176d851ae2ba98b8fa51
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043049"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60181153"
 ---
 # <a name="enable-microsoft-defender-for-endpoint-evaluation-environment"></a>エンドポイント評価環境で Microsoft Defender を有効にする
 

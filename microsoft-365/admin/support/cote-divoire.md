@@ -9,15 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-localization_priority: Normal
+ms.localizationpriority: medium
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 44681fc2496bd67d71056c692772c906cdbd6859
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b0ed810a288c41811fe5eb1385e98c3dc270c8a0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59190750"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193795"
 ---
 # <a name="contact-support-for-cte-divoire"></a>Côte d'Ivoire のサポートにお問い合わせください
 

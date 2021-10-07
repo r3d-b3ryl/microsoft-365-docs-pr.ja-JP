@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ビジネス向けサービスの管理者Microsoft 365を確認します。
-ms.openlocfilehash: 47fe5628bb8464053111078891fc1038fcdd8fa6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d63a8728ef3f4989d2753238d749371abff587ba
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180567"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193579"
 ---
 # <a name="what-is-a-microsoft-365-admin"></a>管理者とはMicrosoft 365ですか?
 
@@ -59,8 +59,8 @@ IT 担当者またはサービス用の専用の管理者アカウントを作�
 1. 左側のナビゲーション ウィンドウで、[ユーザーがアクティブな **ユーザー]**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**を選択します**</a>。
 1. [ユーザー **の追加] を選択します**。
 1. ユーザーの名 **と名、** 表示名、およびユーザー名を入力し、[次へ] を **選択します**。 
-1. [製品 **ライセンスなしでユーザーを作成する] を選択します**。 これにより、新しいユーザーが追加されますが、月次サブスクリプションの支払いは必要ない。 [**次へ**] を選択します。
+1. [製品 **ライセンスなしでユーザーを作成する] を選択します**。 これにより、新しいユーザーが追加されますが、月次サブスクリプションの支払いは必要ない。 **[次へ]** を選択します。
 1. ロールを **開きます**。
-1. チェック ボックスをオフにし、管理者の役割のいずれかを選択します。 [**次へ**] を選択します。
+1. チェック ボックスをオフにし、管理者の役割のいずれかを選択します。 **[次へ]** を選択します。
 1. 情報を確認し、[追加の完了] **を選択します**。
 1. **[閉じる]** を選択します。

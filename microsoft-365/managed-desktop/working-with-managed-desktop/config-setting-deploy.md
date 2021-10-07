@@ -4,17 +4,17 @@ description: 構成可能な設定の変更を展開し、Microsoft マネージ
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント、展開、ステージ展開、構成可能な設定
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: aad4995f9c329b0fd8fcbcc8b1d13379453c2a76
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9a541ccf5a7bcd4197e1b24a2a6667995c08ea7f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191031"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60177017"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>構成可能な設定の展開と追跡 - Microsoft マネージド デスクトップ
 

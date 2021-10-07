@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 MS.technology: mde
-ms.openlocfilehash: 29a369c2813cfe3c9c17b6b11f765d4d6162f8bf
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ce8f931f0d400c967b3312fe6cfafcadb3a715c7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189311"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60181237"
 ---
 # <a name="configure-your-event-hub"></a>イベント ハブを構成する
 
@@ -38,7 +38,7 @@ ms.locfileid: "59189311"
 
 ## <a name="set-up-the-required-resource-provider-in-the-event-hub-subscription"></a>Event Hub サブスクリプションで必要なリソース プロバイダーを設定する
 
-1. [Azure portal](https://portal.azure.com)にサインインします。
+1. Azure portal
 1. [**サブスクリプション]** を選択します 。 イベント ハブが } リソース プロバイダーに展開されるサブスクリプション \>  \> **を選択します**。
 1. **Microsoft.インサイト プロバイダーが登録** されているを確認します。 それ以外の場合は、登録します。
 
@@ -99,7 +99,7 @@ ms.locfileid: "59189311"
 > [!NOTE]
 > イベント ハブ クラスターの一部ではないイベントハブ名前空間を使用している場合は、Azure のイベント ハブ名前空間あたり 10 イベント ハブの制限により、定義した各エクスポート 設定 でエクスポートするイベント の種類 (テーブル) を最大 10 つまで選択できます。
 
-例:
+次に例を示します。
 
 ![イベント ハブの例のイメージ。](../../media/005c1f6c10c34420d387f594987f9ffe.png)
 

@@ -8,7 +8,7 @@ ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.topic: article
 ms.author: deniseb
@@ -17,12 +17,12 @@ ms.date: 06/16/2021
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: e5c0f042c81d493c420c7bb576e79b31e3e3de09
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: c5b651dba1cf6b4e1af2e02e21f18f5663c21d1e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59490981"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201410"
 ---
 # <a name="configure-microsoft-defender-antivirus-notifications-that-appear-on-endpoints"></a>エンドポイントMicrosoft Defender ウイルス対策通知を構成する
 
@@ -95,7 +95,7 @@ ms.locfileid: "59490981"
 
 5. [すべての通知を **非表示にする] をダブルクリック** し、オプションを [有効] に **設定します**。 
 
-6. [**OK**] を選択します。 これにより、追加の通知が表示されません。
+6. **[OK]** を選択します。 これにより、追加の通知が表示されません。
 
 ### <a name="use-group-policy-to-hide-reboot-notifications"></a>グループ ポリシーを使用して再起動通知を非表示にする
 
@@ -111,5 +111,5 @@ ms.locfileid: "59490981"
 
 5. [再起動通知を **抑制する] をダブルクリックし** 、オプションを [有効] に **設定します**。 
 
-5. [**OK**] を選択します。 これにより、追加の通知が表示されません。
+5. **[OK]** を選択します。 これにより、追加の通知が表示されません。
 

@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -20,12 +20,12 @@ ms.custom:
 description: 管理者は、攻撃シミュレーション トレーニングを使用して、Microsoft 365 E5 または Microsoft Defender でシミュレートされたフィッシング攻撃とパスワード攻撃を実行して、Office 365プラン 2 組織に対して実行する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c994d00066d5379d1f38a5dd774045ef679993df
-ms.sourcegitcommit: d1a93f25323a0e6ce3b898bf9dc57dcef27eda67
+ms.openlocfilehash: e3a1be88cb1666f689b4482684823ff09fc39fed
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60127000"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60180993"
 ---
 # <a name="get-started-using-attack-simulation-training"></a>攻撃シミュレーション トレーニングの使用を開始する
 

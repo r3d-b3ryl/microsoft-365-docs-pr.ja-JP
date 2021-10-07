@@ -15,14 +15,14 @@ ms.collection:
 - SPO_Content
 - m365solution-scenario
 - m365solution-spintranet
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 複数地域でのTeamsのMicrosoft 365について説明します。
-ms.openlocfilehash: 6df7d20b8541ec6aefca1f30d7fbfe6bf7c3f6c9
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: e561332052f226fe98d0304bd6a76d6b76cfd1c4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043013"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60177281"
 ---
 # <a name="multi-geo-capabilities-in-microsoft-teams"></a>複数地域の機能 (Microsoft Teams
 

@@ -7,7 +7,7 @@ ms.date: 11/9/2018
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -17,12 +17,12 @@ ms.custom:
 search.appverid: MOM160
 ms.assetid: afdae969-4046-44b9-9adb-f1bab216414b
 description: この記事では、アプリケーションがアクセスしようとするエンドポイントOffice for Mac URL、および提供されるサービスについて説明します。
-ms.openlocfilehash: abb744d4ee75b06e66ac6a9aa43c7fd18d8a452f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 37071b0aaf9e6f172d99a10cb4a1506f1627ef03
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177751"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60177077"
 ---
 # <a name="network-requests-in-office-for-mac"></a>Office for Mac でのネットワーク要求
 
@@ -96,7 +96,7 @@ URL の種類は次のように定義されます。
   
  **サインイン**
   
-クラウド ベースのストレージにサインインするときに、次のネットワーク エンドポイントに接続されます。 アカウントの種類に応じて、さまざまなサービスに連絡する場合があります。 例:
+クラウド ベースのストレージにサインインするときに、次のネットワーク エンドポイントに接続されます。 アカウントの種類に応じて、さまざまなサービスに連絡する場合があります。 次に例を示します。
   
 - **MSA: Microsoft アカウント** - 一般消費者および小売シナリオで使用される 
     

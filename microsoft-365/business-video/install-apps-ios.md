@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: iOS デバイスにアプリをOfficeする方法について学習します。
-ms.openlocfilehash: 0cb7cae3a4569d83a1b2e6b27ca42de2142f30e5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 26a507122d86f16a48d5a96593607e7fd8002a0a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191860"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193591"
 ---
 # <a name="install-outlook-and-office-apps-on-ios-devices"></a>iOS OutlookにOfficeアプリをインストールする
 

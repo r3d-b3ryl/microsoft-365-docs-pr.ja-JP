@@ -9,19 +9,19 @@ ms.date: ''
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: この記事では、レビュー セット内のドキュメントのメタデータ フィールドを、レビュー セット内の Advanced eDiscovery定義Microsoft 365。
-ms.openlocfilehash: ed7652ecf720e32a7ddfaffbd0ff2db29b582b69
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0dd0c11360a1e815c950e6e01448d95a79a8e266
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219014"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60177545"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Advanced eDiscovery のドキュメントメタデータフィールド
 
@@ -51,7 +51,7 @@ ms.locfileid: "59219014"
 |CC|Cc|Email_cc|メッセージの種類の Cc フィールド。 形式は **DisplayName です \<SMTPAddress\>**。|
 |コンプライアンス ラベル|ComplianceLabels|Compliance_labels|[コンテンツに](retention.md)適用される保持ラベルは、Office 365。|
 |複合パス|CompoundPath|Compound_path|アイテムのソースを記述する人間が読み取り可能なパス。|
-|Content*|コンテンツ||アイテムの抽出されたテキスト。|
+|Content*|Content||アイテムの抽出されたテキスト。|
 |会話本文|ConversationBody||アイテムの会話本文。|
 |会話 ID|ConversationId|Conversation_ID|メッセージの会話 ID。 1:1 Teamsグループ チャットでは、同じ会話内のすべてのトランスクリプト ファイルとその家族アイテムが同じ会話 ID を共有します。 詳細については、「Advanced eDiscovery[のコンテンツのワークフロー」を参照Microsoft Teams。](teams-workflow-in-advanced-ediscovery.md)|
 |会話インデックス||Conversation_index|メッセージからの会話インデックス。|
@@ -117,7 +117,7 @@ ms.locfileid: "59219014"
 |アイテム クラス|ItemClass|Item_class|Exchange サーバーによって提供されるアイテム クラス。たとえば **、IPM などです。メモ**|
 |Last modified date|LastModifiedDate|Doc_date_modified|ドキュメント のメタデータから最後に変更された日付。|
 |読み込み ID|LoadId|Load_ID|アイテムがレビュー セットに追加された読み込みセットの ID。|
-|場所|場所|場所|ドキュメントのソース元の場所の種類を示す文字列。<p>**インポートされたデータ**- 非Office 365データ<br>**Teams** - Microsoft Teams<br>**Exchange** - Exchange メールボックス<br>**SharePoint** - SharePoint サイト<br>**OneDrive** - OneDrive アカウント|
+|Location|Location|Location|ドキュメントのソース元の場所の種類を示す文字列。<p>**インポートされたデータ**- 非Office 365データ<br>**Teams** - Microsoft Teams<br>**Exchange** - Exchange メールボックス<br>**SharePoint** - SharePoint サイト<br>**OneDrive** - OneDrive アカウント|
 |場所名|LocationName|Location_name|アイテムのソースを識別する文字列。 交換の場合、これはメールボックスの SMTP アドレスです。サイト SharePointおよびOneDrive、サイト コレクションの URL を指定します。|
 |||Marked_as_pivot|このファイルは、ほぼ重複したセット内のピボットです。|
 |代理人としてマーク|MarkAsRepresentative||正確な重複の各セットから 1 つのドキュメントが代表者としてマークされます。|
@@ -167,12 +167,12 @@ ms.locfileid: "59219014"
 |ID の設定||Set_ID|同じメール スレッド (ND_set) 内の類似コンテンツ (ND_set) または電子メールのドキュメントは、同じEmail_set共有Set_ID。|
 |SimilarityPercent||Similarity_percent|近くの重複セットのピボットに対するドキュメントの類似点を示します。|
 |ネイティブ ファイル サイズ|Size|Native_size|ネイティブ アイテムのバイト数。|
-|件名|件名|Email_subject|メッセージの件名。|
+|Subject|Subject|Email_subject|メッセージの件名。|
 |件名/タイトル|SubjectTitle||アイテムの件名またはタイトルで構成される計算フィールド。|
 |タグ|タグ|タグ|レビュー セットに適用されるタグ。|
 |Teamsチャネル名|TeamsChannel|Channel_Name|チャネルの名前は、Microsoft Teams。|
 |テーマリスト|ThemesList|Themes_list|分析用に計算されたテーマの一覧。|
-|タイトル|タイトル|Doc_title|ドキュメント メタデータのタイトル。 ドキュメント メタデータのタイトル。 コンテンツTeamsおよびYammer、これは ConversationName プロパティの値です。|
+|Title|Title|Doc_title|ドキュメント メタデータのタイトル。 ドキュメント メタデータのタイトル。 コンテンツTeamsおよびYammer、これは ConversationName プロパティの値です。|
 |へ|へ|Email_to|メッセージの種類をフィールドに指定します。 Format is **DisplayName \<SmtpAddress>**|
 |メール セットで一意|UniqueInEmailSet||**メール** セットに添付ファイルが重複している場合は False。|
 |バージョン グループ ID||Version_Group_Id|同じドキュメントの異なるバージョンをグループ分けします。|

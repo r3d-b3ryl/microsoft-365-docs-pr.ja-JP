@@ -12,7 +12,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.date: 07/09/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 6a89c0e9d9b8b66048ddd50ab967520987a152a9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 966ccb0437f47b35c376c5ad4926464610871c92
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192540"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60181129"
 ---
 # <a name="enable-the-evaluation-environment-for-microsoft-defender-for-identity"></a>Microsoft Defender for Identity の評価環境を有効にする
 
@@ -44,7 +44,7 @@ ms.locfileid: "59192540"
 - [手順 3.センサーを使用してコンピューターのイベント ログとプロキシ設定を構成する](#step-3-configure-event-log-and-proxy-settings-on-machines-with-the-sensor)
 - [手順 4.Defender for Identity で他のコンピューター上のローカル管理者を識別する許可](#step-4-allow-defender-for-identity-to-identify-local-admins-on-other-computers)
 
-## <a name="step-1-set-up-the-defender-for-identity-instance"></a>手順 1。 Id インスタンスの Defender をセットアップする
+## <a name="step-1-set-up-the-defender-for-identity-instance"></a>手順 1. Id インスタンスの Defender をセットアップする
 
 Defender for Identity ポータルにサインインしてインスタンスを作成し、このインスタンスを Active Directory 環境に接続します。 
 

@@ -11,10 +11,10 @@ metadata:
   author: twerner
   ms.author: twernermsft
   ms.date: 12/16/2020
-  localization_priority: Priority
+  ms.localizationpriority: high
 productDirectory:
   items:
-    - title: 開始する
+    - title: 作業の開始
       imageSrc: 'https://docs.microsoft.com/office/media/icons/get-started-blue.svg'
       summary: ビジネス向けサービスへの移行Microsoft 365計画します。
       url: what-is-microsoft-365.md

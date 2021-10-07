@@ -7,7 +7,7 @@ ms.date: 6/29/2018
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: この記事には、ネットワークの計画、テスト、および移行に関する情報へのリンクが含Office 365。
-ms.openlocfilehash: aed8bacd4dc08aa6d77ad0c530e721ac9d383bf5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 21bd36395f6ceb6a13b3180a26f8dbf7f197f134
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59210623"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60177089"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Office 365 のネットワークと移行の計画
 

@@ -7,7 +7,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -17,12 +17,12 @@ ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
 description: メールボックス使用率サービスアラートを使用して、メールボックスクォータに達している保留状態のメールボックスを監視します。
-ms.openlocfilehash: 32536cf8a034867ecb82e44487f34280a9b591ac
-ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
+ms.openlocfilehash: c131ef58cbad2e2f57c1e97de6c2da6b3b52a707
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60011466"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60177305"
 ---
 # <a name="service-alerts-for-mailbox-utilization-in-exchange-online-monitoring"></a>Exchange Online 監視でのメールボックス使用率サービスのアラート
 
@@ -115,7 +115,7 @@ ms.locfileid: "60011466"
 
 クォータの問題を解決するためのアクションを実行しない場合は、この種類のサービス アラートが 4 日ごとに表示される可能性があります。 後続のサービス通知には、クォータに近い他のメールボックスのメールボックス数が多くなる場合があります。 クォータの問題を解決するためのアクションを実行すると、クォータの問題を持つ別のメールボックスが特定された場合にのみ、このサービス アラートが発生します。
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 - アーカイブ メールボックスの問題のトラブルシューティングと解決の詳細については、「コンプライアンス[Microsoft 365を参照してください](/office365/troubleshoot/microsoft-365-compliance-welcome)。
 

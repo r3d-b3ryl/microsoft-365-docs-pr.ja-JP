@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ビジネス向けアプリでユーザーをMicrosoft 365する方法について学習します。
-ms.openlocfilehash: 8b2f0db242197aecb04df2261caac3688ad4f1b2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1577e8f52161ab5190f89d65a1af2a8a893d9ce1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180671"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193663"
 ---
 # <a name="delete-a-user"></a>ユーザーを削除する
 

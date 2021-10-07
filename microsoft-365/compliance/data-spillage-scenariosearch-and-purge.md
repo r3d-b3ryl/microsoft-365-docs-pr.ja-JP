@@ -8,18 +8,18 @@ manager: laurawi
 audience: ITPro
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: 電子情報開示と検索ツールを使用して、組織内のデータ流出インシデントを管理して対応します。
-ms.openlocfilehash: 340bf10dc57737c024d1ffcb3a441ba53bc917d6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 51fe6119acff7007f879b2ef323f263865458dfa
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213913"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60177617"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>電子情報開示ソリューション シリーズ: データ流出シナリオ - 検索と削除
 
@@ -205,7 +205,7 @@ Contoso のリード情報セキュリティ担当者です。 従業員が知�
 
 ### <a name="auditing-the-data-spillage-investigation-process"></a>データ流出調査プロセスの監査
 
-監査ログで、調査中に実行された電子情報開示アクティビティを検索できます。 監査ログを検索して、手順 7 で実行した **New-ComplianceSearchAction -Purge** コマンドの監査レコードを返して、こぼれたデータを削除することもできます。 詳しくは、次のトピックを参照してください。
+監査ログで、調査中に実行された電子情報開示アクティビティを検索できます。 監査ログを検索して、手順 7 で実行した **New-ComplianceSearchAction -Purge** コマンドの監査レコードを返して、こぼれたデータを削除することもできます。 詳細については、以下を参照してください。
 
 - [監査ログを検索する](search-the-audit-log-in-security-and-compliance.md)
 

@@ -7,20 +7,20 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: 管理者は、セキュリティ コンプライアンス センターのメール フロー ダッシュボードで利用可能な分析情報とレポート&できます。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 060cbc7a55257a0fbb1510fd8b2f5d325a396a86
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: 81313744f8c5f14abed59b77182f64e410f9d588
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988945"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60180879"
 ---
-# <a name="mail-flow-insights-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターのメール追跡の分析情報
+# <a name="mail-flow-insights-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センター のメール フロー インサイト
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "59988945"
 
 利用可能な分析情報は次のとおりです。
 
-- [自動転送されたメッセージの分析情報](mfi-auto-forwarded-messages-report.md)
+- [自動転送されたメッセージのインサイト](mfi-auto-forwarded-messages-report.md)
 
 - [メール ループの分析情報を修正](mfi-mail-loop-insight.md)<sup>する 1</sup>
 
@@ -53,9 +53,9 @@ ms.locfileid: "59988945"
 
 - [送信および受信メール フローのインサイト](mfi-outbound-and-inbound-mail-flow.md)
 
-- [キューの分析情報](mfi-queue-alerts-and-queues.md)
+- [キューのインサイト](mfi-queue-alerts-and-queues.md)
 
-- [SMTP Auth クライアントの分析情報とレポート](mfi-smtp-auth-clients-report.md)
+- [SMTP Auth クライアントのインサイトとレポート](mfi-smtp-auth-clients-report.md)
 
 - [トップドメインのメール フローの状態洞察](mfi-domain-mail-flow-status-insight.md)　
 

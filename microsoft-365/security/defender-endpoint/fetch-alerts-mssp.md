@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: a8e67bda0a33699f3d1934d943dd52db5a3354be
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 51e0f8dacff3eb7a1e360fd999913f33619c4a56
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213684"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201423"
 ---
 # <a name="fetch-alerts-from-mssp-customer-tenant"></a>MSSP カスタマー テナントからのアラートの取得
 

@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 91a4e2cd0d0a19fcbceb36560fea5c49ad904237
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 09e7cb8f05796994e1b68d59ceea312b8735a3cc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042905"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201447"
 ---
 # <a name="get-live-response-results"></a>ライブ応答の結果を取得する
 
@@ -93,7 +93,7 @@ id}/GetLiveResponseResultDownloadLink(index={command-index})
 
 |名前|型|説明|
 |---|---|---|
-|Authorization|String|ベアラー {トークン}。必須。|
+|Authorization|String|ベアラー {token}。必須。|
 
 ## <a name="request-body"></a>要求本文
 
@@ -149,7 +149,7 @@ C:\\windows\\TEMP\\OfficeClickToRun.dmp.zip\n51 MB\n\u0000\u0000\u0000",
 }
 ```
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [コンピューター アクション API の取得](get-machineaction-object.md)
 - [マシン アクションのキャンセル](cancel-machine-action.md)

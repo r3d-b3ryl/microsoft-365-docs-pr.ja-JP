@@ -4,7 +4,7 @@ description: 組織内のデバイスのリスクと露出レベルを表示し�
 keywords: セキュリティ、マルウェア、Microsoft 365、M365、Microsoft 365 Defender、セキュリティ センター、Microsoft Defender for Endpoint、microsoft Defender for Office 365、Microsoft Defender for Identity、デバイス ページ、デバイス プロファイル、コンピューター ページ、コンピューター プロファイル
 ms.prod: m365-security
 ms.mktglfcycl: deploy
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.author: v-maave
 author: martyav
 manager: dansimp
@@ -13,12 +13,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: f33b16cb08f7573a579f46327f126071ed726e42
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9838d7f3ffed46c62891822c6e3761e36d49baf5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192551"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60181213"
 ---
 # <a name="device-profile-page"></a>[デバイス プロファイル] ページ
 
@@ -178,7 +178,7 @@ Microsoft Defender for Endpoint に登録されているデバイスには、タ
 
 アイテムを選択すると、更新プログラムにリンクするフライアウトが開きます。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 * [Microsoft 365 Defender概要](microsoft-365-defender.md)
 * [Microsoft 365 Defender を有効にする](m365d-enable.md)

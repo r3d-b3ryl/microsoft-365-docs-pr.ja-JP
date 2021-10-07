@@ -7,7 +7,7 @@ ms.date: 1/24/2017
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: 170e96ea-d65d-4e51-acac-1de56abe39b9
 description: この記事では、NAT を使用して組織内の IP アドレスごとに使用できるクライアント数を概算する方法の詳細を示します。
-ms.openlocfilehash: f48874853c3acb80927933761862b14379b6d4bd
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5335ac87bb579b6cb00e1387da97dd5a1d4f6c7f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59210644"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60177113"
 ---
 # <a name="nat-support-with-office-365"></a>Office 365 の NAT サポート
 

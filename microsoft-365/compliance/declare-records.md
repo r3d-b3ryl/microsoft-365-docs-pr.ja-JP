@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ラベルを使用してレコードを宣言する。
-ms.openlocfilehash: 53db42de769600de3a6190ee4b7f0de2d9e5505e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 212c3ac6228efdaacd5bc84883c0059ca954c674
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59193220"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60177557"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>保持ラベルを使用してレコードを宣言する
 

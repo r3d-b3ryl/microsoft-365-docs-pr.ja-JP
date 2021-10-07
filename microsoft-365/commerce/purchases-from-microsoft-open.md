@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid: MET150
 ROBOTS: NOINDEX
 description: ビジネス サブスクリプションのライセンスをアクティブ化、更新、または追加する方法Microsoft 365確認します。
 ms.date: 10/21/2020
-ms.openlocfilehash: 78524b47b32d1b827cc6d525e4aa8e3feb499557
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7e93638bfc8a5f88ff3575a2f0bccc2ab75171fe
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59193280"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60177629"
 ---
 # <a name="enter-your-product-key-purchased-from-microsoft-open"></a>Microsoft Open から購入したプロダクト キーを入力する
 
