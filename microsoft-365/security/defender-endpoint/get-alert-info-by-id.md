@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a9a4505ec4609dc42ec75159c2d905d16e01b559
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a7d2574cf97d6eb2c38348d2e291fee82d0adb43
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177647"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213685"
 ---
 # <a name="get-alert-information-by-id-api"></a>ID API によるアラート情報の取得
 
@@ -53,8 +53,8 @@ ID によって特定 [のアラート](alerts.md) を取得します。
 :---|:---|:---
 アプリケーション|Alert.Read.All|'すべてのアラートの読み取り'
 アプリケーション|Alert.ReadWrite.All|'すべてのアラートの読み取りと書き込み'
-委任 (職場または学校アカウント)|Alert.Read|'アラートの読み取り'
-委任 (職場または学校アカウント)|Alert.ReadWrite|'アラートの読み取りと書き込み'
+委任 (職場または学校のアカウント)|Alert.Read|'アラートの読み取り'
+委任 (職場または学校のアカウント)|Alert.ReadWrite|'アラートの読み取りと書き込み'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
@@ -72,7 +72,7 @@ GET /api/alerts/{id}
 
 名前|型|説明
 :---|:---|:---
-Authorization|String|ベアラー {token}。 **必須**
+Authorization|String|ベアラー {token}。 **必須**。
 
 ## <a name="request-body"></a>要求本文
 

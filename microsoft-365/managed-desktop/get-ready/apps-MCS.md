@@ -7,17 +7,17 @@ author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: db48122ea5551fe3e9f8cd676785bbd3eef81d0b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2b68d9d36e52e84867bf6411f4e723e7551fa55b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163815"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211551"
 ---
 # <a name="working-with-microsoft-consulting-services"></a>Microsoft コンサルティング サービスを使用する
 

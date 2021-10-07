@@ -7,7 +7,7 @@ ms.date: 12/3/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: この記事では、Azure ExpressRoute ルーティング要件、回線、およびルーティング ドメインについて説明します。Office 365。
-ms.openlocfilehash: d157515f60a68a46b033571a0fd39e6a5711b884
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c6bcdd6f8d8dffc9ae71458e0ca167f281212a05
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215694"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211647"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Office 365 向け ExpressRoute でのルーティング
 
@@ -195,7 +195,7 @@ Humongous Insuranceは地理的に世界中のオフィスに分散していま�
   
 Microsoft のデータセンター、ネットワーク、およびアプリケーション アーキテクチャは、可能な限り最も効率的な方法で、グローバルに分散した通信を行い、サービスを提供するように設計されています。 これは、世界最大のネットワークの 1 つです。 顧客ネットワークにOffice 365に必要以上に長く残るユーザー宛ての要求は、このアーキテクチャを利用できないでしょう。
   
-Humongous Insurance の状況では、ExpressRoute で使用するアプリケーションに応じて処理を進める必要があります。 たとえば、Skype for Business Online のお客様である場合や、外部の Skype for Business Online 会議に接続するときに ExpressRoute 接続を使用する予定の場合、Skype for Business Online メディア品質とネットワーク接続ガイドで推奨される設計は、3 番目の場所に ExpressRoute 回線を追加で準備する方法です。 これは、ネットワークの観点から見るとコストが高い場合があります。ただし、Microsoft データセンターに配信する前に、1 つの大陸から別の大陸に要求をルーティングすると、オンラインの会議や通信中に、Skype for Businessエクスペリエンスが低下する可能性があります。
+Humongous Insurance の状況では、ExpressRoute で使用するアプリケーションに応じて処理を進める必要があります。 たとえば、Skype for Business Online のお客様の場合、または外部 Skype for Business Online 会議への接続時に ExpressRoute 接続を使用する予定の場合、Skype for Business Online メディア品質とネットワーク接続ガイドで推奨される設計は、3 番目の場所に ExpressRoute 回線を追加で準備する方法です。. これは、ネットワークの観点から見るとコストが高い場合があります。ただし、Microsoft データセンターに配信する前に、1 つの大陸から別の大陸に要求をルーティングすると、オンラインの会議や通信中に、Skype for Businessエクスペリエンスが低下する可能性があります。
   
 Humongous Insurance を使用しない場合や、Skype for Business Online を使用する予定がない場合は、Office 365 宛てのネットワーク トラフィックを ExpressRoute 接続で大陸にルーティングし戻す可能性があります。しかし、不必要な遅延や TCP 輻輳を引き起こす可能性があります。 どちらの場合も、インターネット宛てのトラフィックをローカル サイトでインターネットにルーティングして、ユーザーが依存するコンテンツ配信ネットワークOffice 365勧めします。
   
@@ -251,6 +251,6 @@ ExpressRoute を使用した選択的ルーティングは、テスト、ユー�
   
 [Office 365 のパフォーマンスに関するトラブルシューティングの計画](performance-troubleshooting-plan.md)
   
-[Office 365 の URL と IP アドレスの範囲](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[Office 365 の URL および IP アドレスの範囲](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
 [Office 365 のネットワークとパフォーマンスのチューニング](network-planning-and-performance.md)

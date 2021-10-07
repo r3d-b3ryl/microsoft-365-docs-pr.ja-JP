@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b54159cfd7e7a8f6d970db1bc7fcb64539061dbd
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c00eb81e3c442b0957b8c2ea176a75942cfa32d6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221346"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212979"
 ---
 # <a name="get-investigation-api"></a>調査 API の取得
 
@@ -55,8 +55,8 @@ ID によって特定 [の調査](investigation.md) を取得します。
 :---|:---|:---
 アプリケーション|Alert.Read.All|'すべてのアラートの読み取り'
 アプリケーション|Alert.ReadWrite.All|'すべてのアラートの読み取りと書き込み'
-委任 (職場または学校アカウント) | Alert.Read | 'アラートの読み取り'
-委任 (職場または学校アカウント) | Alert.ReadWrite | 'アラートの読み取りと書き込み'
+委任 (職場または学校のアカウント) | Alert.Read | 'アラートの読み取り'
+委任 (職場または学校のアカウント) | Alert.ReadWrite | 'アラートの読み取りと書き込み'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
@@ -73,7 +73,7 @@ GET https://api.securitycenter.microsoft.com/api/investigations/{id}
 
 名前|型|説明
 :---|:---|:---
-Authorization | String | ベアラー {token}。 **必須**
+Authorization | String | ベアラー {token}。 **必須**。
 
 ## <a name="request-body"></a>要求本文
 

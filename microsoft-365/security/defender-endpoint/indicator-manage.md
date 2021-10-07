@@ -3,26 +3,24 @@ title: インジケーターの管理
 ms.reviewer: ''
 description: エンティティの検出、防止、除外を定義するファイル ハッシュ、IP アドレス、URL、またはドメインのインジケーターを管理します。
 keywords: インポート、インジケーター、リスト、ioc、csv、manage、許可、ブロック、ブロック、クリーン、悪意のある、ファイル ハッシュ、IP アドレス、URL、ドメイン
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7463ea7cd8a6d458e467ab213560be7d0f16a394
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 69f96b4393a25e57fcbfd2e9adfbd652a5aa191d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215103"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211122"
 ---
 # <a name="manage-indicators"></a>インジケーターの管理
 
@@ -70,8 +68,8 @@ description|String| インジケーターの説明。 **必須**
 expirationTime|DateTimeOffset|次の形式の YYYYY-MM-DDTHH:MM:SS.0Z のインジケーターの有効期限。 **Optional**
 severity|列挙|インジケーターの重大度。 指定できる値は、"Informational"、"Low"、"Medium"、"High" です。 **Optional**
 recommendedActions|String|TI インジケーターアラート推奨アクション。 **Optional**
-rbacGroupNames|文字列|インジケーターが適用される RBAC グループ名のコンマ区切りのリスト。 **Optional**
-category|文字列|アラートのカテゴリ。 例として、実行アクセスと資格情報アクセスが含まれます。 **Optional**
+rbacGroupNames|String|インジケーターが適用される RBAC グループ名のコンマ区切りのリスト。 **Optional**
+category|String|アラートのカテゴリ。 例として、実行アクセスと資格情報アクセスが含まれます。 **Optional**
 mitretechniques|String|MITRE の手法 code/id (コンマ区切り)。 詳細については[、「Enterprise」を参照してください](https://attack.mitre.org/tactics/enterprise/)。 **省略可能** MITRE 手法を使用する場合は、カテゴリに値を追加する必要があります。
 
 詳細については [、「Microsoft Defender for Endpoint alert categories are aligned with MITRE ATT&CK! 」を参照してください](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-atp-alert-categories-are-now-aligned-with/ba-p/732748)。

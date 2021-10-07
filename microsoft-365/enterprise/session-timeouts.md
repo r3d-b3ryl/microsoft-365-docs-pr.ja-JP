@@ -7,7 +7,7 @@ ms.date: 6/29/2018
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
@@ -23,12 +23,12 @@ ms.assetid: 37a5c116-5b07-4f70-8333-5b86fd2c3c40
 ms.collection:
 - M365-security-compliance
 description: セッション タイムアウトを使用して、クライアント アプリのセキュリティとアクセスの容易性のバランスをMicrosoft 365します。
-ms.openlocfilehash: 84acda4b3433c68698f6460e5205c79b18b89045f1775587fc8785ddf64ebef8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f5b7c87cabfd6f80061c2795568cd53955caa10f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53904445"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213267"
 ---
 # <a name="session-timeouts-for-microsoft-365"></a>ユーザーのセッション タイムアウトMicrosoft 365
 

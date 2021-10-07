@@ -4,17 +4,17 @@ description: この記事では、ユーザーに関連するコンプライア�
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: cf17b631f8c9f4b6c332fe147ca14d126b8c0146
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b2200a649394c750aaaee76ce736934410affa5e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165174"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212751"
 ---
 # <a name="compliance"></a>コンプライアンス
 

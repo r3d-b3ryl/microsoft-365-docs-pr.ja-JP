@@ -2,26 +2,24 @@
 title: Microsoft Defender for Endpoint の高度な機能を構成する
 description: Microsoft Defender for Endpoint のブロック ファイルなどの高度な機能を有効にする。
 keywords: 高度な機能、設定、ファイルのブロック、自動調査、自動解決、skype、id の microsoft Defender、Office 365、Azure 情報保護、intune
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f9fbeb7d0fbaee05e86c89749ffc62695e8ff9e9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 432819930a1472d6241c62b275a940cb35c3cb37
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179440"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211431"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Defender for Endpoint で高度な機能を構成する
 
@@ -118,7 +116,7 @@ Windows 10 Version 1809 以降に作成されたテナントの場合、自動�
 
 この機能を有効にすることで、IP アドレス、ドメイン、または URL のインジケーターを作成し、カスタム インジケーター リストに基づいて許可またはブロックするかどうかを決定できます。
 
-この機能を使用するには、デバイスがバージョン 1709 以降Windows 10実行している必要があります。 また、ブロック モードでネットワーク保護を行い、マルウェア対策プラットフォームのバージョン 4.18.1906.3 以降は KB 4052623 を参照 [してください](https://go.microsoft.com/fwlink/?linkid=2099834)。
+この機能を使用するには、デバイスがバージョン 1709 以降Windows 10バージョン 11 以降でWindows必要があります。 また、ブロック モードでネットワーク保護を行い、マルウェア対策プラットフォームのバージョン 4.18.1906.3 以降は KB 4052623 を参照 [してください](https://go.microsoft.com/fwlink/?linkid=2099834)。
 
 詳細については、「指標の管理 [」を参照してください](manage-indicators.md)。
 
@@ -181,7 +179,7 @@ Microsoft Defender for Identity との統合により、別の Microsoft Identit
 この設定を有効にすると、Defender for Endpoint シグナルMicrosoft Cloud App Securityに転送され、クラウド アプリケーションの使用状況を詳細に確認できます。 転送されたデータは、ユーザーのデータと同じ場所にCloud App Securityされます。
 
 > [!NOTE]
-> この機能は、E5 ライセンスを使用して[、Enterprise Mobility + Securityを実行](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)しているWindows 10 バージョン 1709 [(KB4493441](https://support.microsoft.com/help/4493441)の OS ビルド 16299.1085)、Windows 10 バージョン 1803 (OS ビルド 17134.704 [KB449364)、Windows 10 Version 1809](https://support.microsoft.com/help/4493464)(OS ビルド 17763.379 および[KB4489899)、](https://support.microsoft.com/help/4489899)または Windows 10 以降のバージョン。
+> この機能は[、Windows 10](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)バージョン 1709 (OS ビルド 16299.1085 および[KB4493441)](https://support.microsoft.com/help/4493441)を実行しているデバイスで Enterprise Mobility + Security の E5 ライセンスで使用できますWindows 10 バージョン 1803 (KB4493464 の OS ビルド 17134.704)、Windows 10 Version 1809 (OS ビルド 17763.379 および[KB4489899)、](https://support.microsoft.com/help/4489899)以降の Windows 10 バージョン、または Windows 11。 [](https://support.microsoft.com/help/4493464)
 
 ## <a name="microsoft-secure-score"></a>Microsoft セキュア スコア
 
@@ -220,7 +218,7 @@ Defender for Endpoint は、デバイス リスクベースの条件付[Microsof
 この機能は、次の場合にのみ使用できます。
 
 - E5 (または E5) Enterprise Mobility + Security E3およびWindowsライセンスMicrosoft 365 Enterpriseテナント
-- アクティブなMicrosoft Intune環境で、Intune が管理するデバイスWindows 10 Azure AD[参加しています](/azure/active-directory/devices/concept-azure-ad-join/)。
+- アクティブなMicrosoft Intune環境で、Intune が管理するデバイスWindows Azure AD[参加しています](/azure/active-directory/devices/concept-azure-ad-join/)。
 
 ### <a name="conditional-access-policy"></a>条件付きアクセス ポリシー
 
@@ -246,7 +244,7 @@ Defender for Endpoint プレビュー リリースの新機能について説明
 
 検疫済みファイルを安全で準拠した場所にバックアップし、検疫から直接ダウンロードできます。 [ **ファイルのダウンロード]** ボタンは常にファイル ページで使用できます。 この設定は既定でオンになっています。 [要件の詳細](respond-file-alerts.md#download-quarantined-files)
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [データ保持設定の更新](data-retention-settings.md)
 - [アラート通知を構成する](configure-email-notifications.md)

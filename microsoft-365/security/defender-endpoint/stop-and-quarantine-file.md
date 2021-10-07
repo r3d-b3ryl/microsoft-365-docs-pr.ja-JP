@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d4ed33a26bcc7583146d810db7625ed3164d7544
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2c89aa8951cce3ba5c66528a66b3ff9e463d2b88
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179199"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210903"
 ---
 # <a name="stop-and-quarantine-file-api"></a>ファイル API の停止と検疫
 
@@ -62,7 +62,7 @@ ms.locfileid: "59179199"
 アプリケーション|Machine.StopAndQuarantine|'Stop and Quarantine'
 アプリケーション|Machine.Read.All|'すべてのコンピューター プロファイルを読み取る'
 アプリケーション|Machine.ReadWrite.All|'すべてのコンピューター情報の読み取りと書き込み'
-委任 (職場または学校アカウント)|Machine.StopAndQuarantine|'Stop and Quarantine'
+委任 (職場または学校のアカウント)|Machine.StopAndQuarantine|'Stop and Quarantine'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
@@ -81,7 +81,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/StopAndQuarantin
 名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**
-Content-Type|string|application/json. **必須**
+Content-Type|string|application/json. **必須**。
 
 ## <a name="request-body"></a>要求本文
 要求本文で、JSON オブジェクトに次のパラメーターを指定します。
@@ -89,7 +89,7 @@ Content-Type|string|application/json. **必須**
 パラメーター|型|説明
 :---|:---|:---
 コメント|文字列|アクションに関連付けるコメント。 **必須**
-Sha1|String|デバイスで停止して検疫するファイルの Sha1。 **必須**
+Sha1|String|デバイスで停止して検疫するファイルの Sha1。 **必須**。
 
 ## <a name="response"></a>応答
 

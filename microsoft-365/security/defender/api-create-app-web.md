@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 715e3eff39fc4575efdfc236876fdd7c8bc20245
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 39d746b3df6b751845bdcdf0769f6874182b76aa
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220084"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213627"
 ---
 # <a name="create-an-app-to-access-microsoft-365-defender-without-a-user"></a>ユーザーなしでアプリを作成してMicrosoft 365 Defenderにアクセスする
 
@@ -223,7 +223,7 @@ aadToken = jsonResponse["access_token"]
 
 1. アプリTENANT_IDを使用してユーザーにアクセスする顧客の Azure テナント ID に設定Microsoft 365 Defender。
 
-1. 次のコマンドを実行します:
+1. 次のコマンドを実行します。
 
    ```bash
    curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=https://api.security.microsoft.com/.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID%/oauth2/v2.0/token" -k

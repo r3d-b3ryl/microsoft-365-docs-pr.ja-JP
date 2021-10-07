@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d87efcd940fd9e19c9f28250f85e0f7915febc05
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8206592585544b2a4ef1d3a8acf2d9a27247b92f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177584"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212523"
 ---
 # <a name="get-user-related-machines-api"></a>ユーザー関連のコンピューター API を取得する
 
@@ -53,8 +53,8 @@ ms.locfileid: "59177584"
 :---|:---|:---
 アプリケーション |Machine.Read.All|'すべてのコンピューター プロファイルを読み取る'
 アプリケーション |Machine.ReadWrite.All |'すべてのコンピューター情報の読み取りと書き込み'
-委任 (職場または学校アカウント) | Machine.Read | 'コンピューター情報の読み取り'
-委任 (職場または学校アカウント) | Machine.ReadWrite | 'コンピューター情報の読み取りおよび書き込み'
+委任 (職場または学校のアカウント) | Machine.Read | 'コンピューター情報の読み取り'
+委任 (職場または学校のアカウント) | Machine.ReadWrite | 'コンピューター情報の読み取りおよび書き込み'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
@@ -74,7 +74,7 @@ GET /api/users/{id}/machines
 
 名前|型|説明
 :---|:---|:---
-Authorization | String | ベアラー {token}。 **必須**
+Authorization | String | ベアラー {token}。 **必須**。
 
 ## <a name="request-body"></a>要求本文
 

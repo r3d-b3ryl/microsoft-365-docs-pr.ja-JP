@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 03/27/2020
 ms.technology: mde
-ms.openlocfilehash: bf92c1764ed2b81b1f4409efc2e7bc7fae94185d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: cf035e6799a70bc0fa81328ce85e97bfed1a08b8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179407"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211323"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-alerts-queue"></a>Microsoft Defender for Endpoint アラート キューを表示して整理する
 
@@ -58,9 +58,9 @@ ms.locfileid: "59179407"
 
 アラートの重大度|説明
 ---|---
-高 <br> (赤)|高度な永続的な脅威 (APT) に関連付けられている一般的なアラート。 これらのアラートは、デバイスに与える損害の重大度が高いので、高いリスクを示します。 例として、資格情報の盗難ツールアクティビティ、グループに関連付けされていないランサムウェア アクティビティ、セキュリティ センサーの改ざん、または人間の敵を示す悪意のあるアクティビティがあります。
+高い <br> (赤)|高度な永続的な脅威 (APT) に関連付けられている一般的なアラート。 これらのアラートは、デバイスに与える損害の重大度が高いので、高いリスクを示します。 例として、資格情報の盗難ツールアクティビティ、グループに関連付けされていないランサムウェア アクティビティ、セキュリティ センサーの改ざん、または人間の敵を示す悪意のあるアクティビティがあります。
 中 <br> (オレンジ)|高度な永続的脅威 (APT) の一部である可能性がある侵害後の動作に対するエンドポイント検出と応答からのアラート。 これには、攻撃段階に典型的な観察された動作、異常なレジストリの変更、疑わしいファイルの実行などがあります。 一部は内部セキュリティ テストの一部ですが、高度な攻撃の一部である可能性も考え、調査が必要です。
-低 <br> (黄色)|一般的なマルウェアに関連する脅威に関するアラート。 たとえば、ハッキング ツール、マルウェア以外のハッキング ツール (探索コマンドの実行、ログのクリアなど) は、組織を対象とする高度な脅威を示す場合が多くはありません。 また、組織内のユーザーによる分離されたセキュリティ ツールのテストから行う場合があります。
+低い <br> (黄色)|一般的なマルウェアに関連する脅威に関するアラート。 たとえば、ハッキング ツール、マルウェア以外のハッキング ツール (探索コマンドの実行、ログのクリアなど) は、組織を対象とする高度な脅威を示す場合が多くはありません。 また、組織内のユーザーによる分離されたセキュリティ ツールのテストから行う場合があります。
 情報 <br> (灰色)|ネットワークに悪影響を及ぼすとは見なされない可能性があるが、潜在的なセキュリティ問題に関する組織のセキュリティ認識を推進する可能性があるアラート。
 
 #### <a name="understanding-alert-severity"></a>アラートの重大度について
@@ -90,7 +90,7 @@ Defender for Endpoint アラートの重大度は、検出された動作の重�
 |コマンドとコントロール|CommandAndControl|攻撃者が制御するネットワーク インフラストラクチャに接続して、データを中継したり、コマンドを受信したりします。|
 |資格情報へのアクセス|CredentialAccess|ネットワーク内のデバイスや他のリソースに対する制御を拡張するための有効な資格情報を取得します。|
 |防御回避|DefenseEvasion|たとえば、セキュリティ アプリのオフ、インプラントの削除、ルートキットの実行によるセキュリティ制御の回避。|
-|Discovery|Discovery|管理者コンピューター、ドメイン コントローラー、ファイル サーバーなど、重要なデバイスとリソースに関する情報を収集します。|
+|検出|検出|管理者コンピューター、ドメイン コントローラー、ファイル サーバーなど、重要なデバイスとリソースに関する情報を収集します。|
 |実行|実行|攻撃者ツールと悪意のあるコード (RAT やバックドアを含む) を起動する。|
 |流出|流出|ネットワークから外部の攻撃者が制御する場所へのデータの抽出。|
 |Exploit|Exploit|コードの悪用と悪用の可能性があるアクティビティ。|
@@ -151,7 +151,7 @@ Defender for Endpoint アラートの重大度は、検出された動作の重�
 
 このフィルターを使用して、注目度の高い脅威に関連するアラートに集中します。 詳細な脅威の一覧については、「Threat [analytics」を参照してください](threat-analytics.md)。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [エンドポイント通知の Microsoft Defender の管理](manage-alerts.md)
 - [Microsoft Defender for Endpoint アラートの調査](investigate-alerts.md)

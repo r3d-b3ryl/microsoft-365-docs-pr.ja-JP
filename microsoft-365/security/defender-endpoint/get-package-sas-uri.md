@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2a3a1817b1a56ed5c3b529179a6f5253677211de
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b18d62b7fe5279c7655144c228fe155e36b89007
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221310"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212955"
 ---
 # <a name="get-package-sas-uri-api"></a>パッケージ SAS URI API の取得
 
@@ -54,7 +54,7 @@ ms.locfileid: "59221310"
 :---|:---|:---
 アプリケーション|Machine.Read.All|''すべてのコンピューター プロファイルを読み取る'
 アプリケーション|"Machine.ReadWrite.All|'すべてのコンピューター情報の読み取りと書き込み'
-委任 (職場または学校アカウント)|Machine.CollectForensics|'collect forensics'
+委任 (職場または学校のアカウント)|Machine.CollectForensics|'collect forensics'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
@@ -72,7 +72,7 @@ GET https://api.securitycenter.microsoft.com/api/machineactions/{machine action 
 
 名前|型|説明
 :---|:---|:---
-Authorization|文字列|ベアラー {token}。 **必須**
+Authorization|String|ベアラー {token}。 **必須**。
 
 ## <a name="request-body"></a>要求本文
 

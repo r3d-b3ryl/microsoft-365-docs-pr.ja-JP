@@ -8,14 +8,14 @@ ms.author: jaimeo
 manager: laurawi
 audience: ITpro
 ms.topic: article
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 83681c2258a140c4e7bc4757e0d4f9f63c9991db
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 375357e52e7aedf416b4a0d9988da18f39bda5ec
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179504"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211527"
 ---
 # <a name="get-started-with-app-control"></a>アプリ制御の使用を開始する
 

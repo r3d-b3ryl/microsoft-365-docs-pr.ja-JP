@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 09/22/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 85c3aee098786d75a7a2f17d1c9c4d11c0c87aeb
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 55f2ca89c04fb35c853ef39255ef97a9e811138a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59490909"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213111"
 ---
 # <a name="common-mistakes-to-avoid-when-defining-exclusions"></a>除外を定義する際に避ける必要のある一般的な間違い
 

@@ -1,5 +1,5 @@
 ---
-title: API のMicrosoft 365 Defender概要
+title: Microsoft 365 Defender API の概要
 description: アプリ内で使用可能な API についてMicrosoft 365 Defender
 keywords: api, apis, 概要, インシデント, インシデント, 脅威の検出, microsoft 365 defender
 search.product: eADQiWindows 10XVcnh
@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ef8a5e1b833bc1184132469f8c3b358e907974e4
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 2ce2e6e1efc87f0bcbfdbe6d650f35ea91da8422
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491267"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213567"
 ---
-# <a name="overview-of-microsoft-365-defender-apis"></a>API のMicrosoft 365 Defender概要
+# <a name="overview-of-microsoft-365-defender-apis"></a>Microsoft 365 Defender API の概要
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 

@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
@@ -17,12 +17,12 @@ ms.collection:
 description: Microsoft は、さまざまなポリシー、手順を開発し、ユーザーを悪用、望ましくない、または悪意のあるメールから保護するために、いくつかの業界のベスト プラクティスを採用しています。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f1a71b891829a2c9ea31502342c855db4126a6b5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 21b1918155755d7786f7b797ae7c705ca8c0ec39
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213274"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211995"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>リファレンス: ポリシー、プラクティス、ガイドライン
 

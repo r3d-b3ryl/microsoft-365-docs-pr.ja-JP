@@ -4,17 +4,17 @@ description: このサイトで使用できるさまざまなレポートMicroso
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 5bb575efa9c7e18f20025d7840d3ddc86aefb330
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: 1fb29ef7555bb3e7ff2024090b3b7cf953a2de10
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59444285"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213171"
 ---
 # <a name="work-with-reports"></a>レポートを操作する
 
@@ -31,7 +31,7 @@ Microsoft マネージド デスクトップ、組織の IT 管理者がデバ�
 - [ **[Windowsセキュリティ更新プログラム]** レポート](security-updates-report.md)*(プレビュー*) には、Windowsデバイス間でセキュリティ更新プログラムがMicrosoft マネージド デスクトップされます。
 - [**アプリケーションの使用状況] レポートには**、デバイス間での一般的なアプリの使用状況Microsoft マネージド デスクトップ表示されます。 デバイスがデータをこのレポートに提供するには、オプションの診断データ レベルに設定する必要があります。
 
-## <a name="endpoint-analytics"></a>エンドポイント分析
+## <a name="endpoint-analytics"></a>エンドポイントの分析
 Microsoft マネージド デスクトップエンドポイント分析と[統合されました](/mem/analytics/overview)。 これらのレポートは、組織の動作状況とユーザーに提供されるエクスペリエンスの品質を測定するための分析情報を提供します。 エンドポイント分析は、エンドポイントの **[レポート**] メニュー [Microsoft エンドポイント マネージャー。](https://endpoint.microsoft.com/) スコアをピボットして、任意のレポートに移動Microsoft マネージド デスクトップ管理されているデバイスのみを含めるには、[フィルター]ドロップダウンを選択し、[デバイス] **Microsoft マネージド デスクトップします**。
 
 登録中に Azure AD組織 ("tenant") に対してエンドポイント分析が自動的に構成されていない場合は、自分で行います。 詳細については [、「Onboard in the Endpoint analytics portal」を参照してください](/mem/analytics/enroll-intune#bkmk_onboard)。 すべてのデバイスを登録するか、Microsoft マネージド デスクトップ デバイスのみを含める場合は、Test、First、Fast、およびBroad のモダン ワークプレース デバイス グループを選択します。 これらのレポートでは、さまざまなアクセス許可が必要になる場合があります。 詳細については、「アクセス許可」 [を参照](/mem/analytics/overview#permissions) して、役割が適切に割り当てられているか確認してください。
@@ -43,7 +43,7 @@ Microsoft マネージド デスクトップエンドポイント分析と[統�
 Microsoft Intuneは、お客様に代わってデバイスを管理するために使用するサービスの 1 つです。 場合によっては、Intune レポートを使用して、デバイスの管理を具体的に監視Microsoft マネージド デスクトップがあります。 または、他のデバイスの管理に使用するレポートから、管理するデバイスを除外することもできます。 次のレポートでは、デバイスを含めるか除外する機能Microsoft マネージド デスクトップできます。
 
 - [すべてのデバイス](/mem/intune/remote-actions/device-management#get-to-your-devices)
-- [デバイスのポリシー準拠](/mem/intune/fundamentals/reports#device-compliance-report-organizational)
+- [デバイスのコンプライアンス](/mem/intune/fundamentals/reports#device-compliance-report-organizational)
 - [非準拠デバイス](/mem/intune/fundamentals/reports#noncompliant-devices-report-operational)
 
 > [!NOTE]

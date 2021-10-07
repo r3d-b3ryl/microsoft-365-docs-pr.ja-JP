@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: maccruz
 author: lomayor
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/20/2018
 ms.technology: mde
-ms.openlocfilehash: 2d60897d00b2b0228fd1a716dd9b4b7bb12a7bb9
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 73a226d83e46cf06aa9d3cceb903a2b142604179
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60041674"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213159"
 ---
 # <a name="experience-microsoft-defender-for-endpoint-through-simulated-attacks"></a>シミュレートされた攻撃を通じて Microsoft Defender for Endpoint を体験する 
 
@@ -66,7 +66,7 @@ ms.locfileid: "60041674"
 >
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-attacksimulations-belowfoldlink)
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [デバイスのオンボード](onboard-configure.md)
-- [オンボード Windows デバイス](configure-endpoints.md)
+- [Windows デバイスのオンボード](configure-endpoints.md)

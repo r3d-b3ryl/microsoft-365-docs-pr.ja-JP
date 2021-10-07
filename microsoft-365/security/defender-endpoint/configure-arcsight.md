@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 41d07ae2c6acc4bdbe828bc98d8bdfecdbf45f2e
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: ce8c28a76ffc3348d5500f25820f4632ee862782
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401724"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211287"
 ---
 # <a name="configure-micro-focus-arcsight-to-pull-defender-for-endpoint-detections"></a>エンドポイント検出用の Defender をプルする Micro Focus ArcSight の構成
 
@@ -193,7 +193,7 @@ Defender for Endpoint detections は個別のイベントとして表示され�
 > [!NOTE]
 > もう一度プロセスを停止して、コネクタが実行されている状態を確認します。 次に、コネクタを再度起動すると、ブラウザー ウィンドウは表示されません。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [Defender for Endpoint で SIEM 統合を有効にする](enable-siem-integration.md)
 - [SIEM ツールへの検出のプル](/windows/security/threat-protection/microsoft-defender-atp/configure-siem)

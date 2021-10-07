@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dolmont
 author: DulceMontemayor
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 8325f848281a37099e7a89eeda05d738c686b011
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b74a5e4861e068bca7c31465c4ba7c8f4169a983
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177599"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212915"
 ---
 # <a name="list-vulnerabilities-by-recommendation"></a>推奨事項による脆弱性の一覧表示
 
@@ -46,7 +46,7 @@ ms.locfileid: "59177599"
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
 アプリケーション|Vulnerability.Read.All  |'脅威と脆弱性管理のセキュリティに関する推奨事項情報の読み取り'
-委任 (職場または学校アカウント)|脆弱性。読み取り|'脅威と脆弱性管理のセキュリティに関する推奨事項情報の読み取り'
+委任 (職場または学校のアカウント)|脆弱性。読み取り|'脅威と脆弱性管理のセキュリティに関する推奨事項情報の読み取り'
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -58,7 +58,7 @@ GET /api/recommendations/{id}/vulnerabilities
 
 名前|型|説明
 :---|:---|:---
-Authorization|String|ベアラー {token}。 **必須**
+Authorization|String|ベアラー {token}。 **必須**。
 
 ## <a name="request-body"></a>要求本文
 
@@ -106,7 +106,7 @@ GET https://api.securitycenter.microsoft.com/api/recommendations/va-_-google-_-c
 }
 ```
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [リスクベースの脅威&の管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [脅威&脆弱性のセキュリティに関する推奨事項](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)

@@ -5,7 +5,7 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+ms.localizationpriority: medium
 ms.author: deniseb
 author: denisebmsft
 ms.reviewer: dansimp
@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 8d9a853309c03b635896dc124c86787ae07ddafe
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 952363dfa689ea20e1ca1fcd97da4a79cfa66062
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59490179"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212996"
 ---
 # <a name="protect-your-organizations-data-with-device-control"></a>デバイスコントロールを使用して組織のデータを保護する
 

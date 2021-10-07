@@ -13,7 +13,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 03973595f68c56ac57f22d8d68c9f37f04fb6bb8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1bb51bf30aad8ab03d0ec2723df781034288b8c6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211793"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212039"
 ---
 # <a name="understand-the-analyst-report-in-threat-analytics-in-microsoft-365-defender"></a>脅威分析のアナリスト レポートについてMicrosoft 365 Defender
 
@@ -35,7 +35,7 @@ ms.locfileid: "59211793"
 **適用対象:**
 - Microsoft 365 Defender
 
-> Microsoft 365 Defender を体験してみませんか? [ラボ環境で評価する](m365d-evaluation.md?ocid=cx-docs-MTPtriallab)ことも、[実稼働環境でパイロット プロジェクトを実行する](m365d-pilot.md?ocid=cx-evalpilot)こともできます。
+> Microsoft 365 Defender を体験しますか? [ラボ環境で評価](m365d-evaluation.md?ocid=cx-docs-MTPtriallab)、または[運用でパイロット プロジェクトを実行](m365d-pilot.md?ocid=cx-evalpilot)することができます。
 >
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
@@ -54,10 +54,10 @@ _脅威分析レポートのアナリスト レポート セクション_
 | エグゼクティブの概要 | 脅威の概要 (最初に見られた場合を含む)、その動機、重要なイベント、主要なターゲット、および個別のツールとテクニック。 この情報を使用して、業界、地理的位置、ネットワークのコンテキストで脅威に優先順位を付ける方法をさらに評価できます。 |
 | 分析 | 攻撃の詳細、攻撃者が新しい手法または攻撃表面を利用する方法など、脅威に関する技術情報 | 
 | MITRE ATT&CK 技術の観察 | CK 攻撃フレームワークの[MITRE ATT](https://attack.mitre.org/)に&方法 | 
-| [緩和策](#apply-additional-mitigations) | 脅威の影響を停止または軽減する可能性がある推奨事項。 このセクションには、脅威分析レポートの一部として動的に追跡されない軽減策も含まれています。 |
+| [軽減策](#apply-additional-mitigations) | 脅威の影響を停止または軽減する可能性がある推奨事項。 このセクションには、脅威分析レポートの一部として動的に追跡されない軽減策も含まれています。 |
 | [検出の詳細](#understand-how-each-threat-can-be-detected) | 脅威に関連付けられたアクティビティやコンポーネントを表面化できる Microsoft セキュリティ ソリューションによって提供される特定の一般的な検出。 | 
 | [高度な追求](#find-subtle-threat-artifacts-using-advanced-hunting) | [脅威の可能性のあるアクティビティ](advanced-hunting-overview.md) を事前に特定するための高度な検索クエリ。 ほとんどのクエリは、特に悪意のある可能性のあるコンポーネントや、悪意のあると動的に評価できなかった動作を見つけ出す場合に、検出を補完するために提供されます。 | 
-| 関連情報 | レポートの作成中にアナリストが参照する Microsoft およびサードパーティの文書。 脅威分析コンテンツは、Microsoft の研究者によって検証されたデータに基づいて行います。 一般に公開されているサードパーティのソースからの情報は、その情報として明確に識別されます。 | 
+| 参照 | レポートの作成中にアナリストが参照する Microsoft およびサードパーティの文書。 脅威分析コンテンツは、Microsoft の研究者によって検証されたデータに基づいて行います。 一般に公開されているサードパーティのソースからの情報は、その情報として明確に識別されます。 | 
 | 変更ログ | レポートが発行された時刻と、レポートに大幅な変更が加えた時刻。 |
 
 ## <a name="apply-additional-mitigations"></a>追加の軽減策を適用する
@@ -103,7 +103,7 @@ Microsoft Defender for Office 365 からの電子メール関連の検出と軽�
 > 脅威分析は [、Microsoft Defender for Endpoint でも利用できます](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics)。 ただし、Microsoft Defender for Officeエンドポイントと脅威分析が持つ Microsoft Defender Microsoft 365 Defender統合はありません。
 
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [脅威の分析の概要](threat-analytics.md)
 - [高度な検索で脅威を事前に検出する](advanced-hunting-overview.md) 
 - [カスタム検出ルール](custom-detection-rules.md)

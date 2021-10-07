@@ -10,7 +10,7 @@ audience: Admin
 ms.topic: how-to
 f1_keywords:
 - ms.o365.cc.PermissionsHelp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Strat_O365_IP
 search.appverid:
 - MOE150
@@ -20,12 +20,12 @@ description: セキュリティ機能またはコンプライアンス機能を�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2123cad54bcb1a608447d53a08e61211052e3cca
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2dcab8a14df6266bea87b3ae876ed9bac8eea1d7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214423"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213471"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>ユーザーにセキュリティ/コンプライアンス センターへのアクセス権を付与する
 
@@ -40,7 +40,7 @@ ms.locfileid: "59214423"
 
 セキュリティ & コンプライアンス センターでユーザーに付与できるさまざまなアクセス許可の詳細については、「セキュリティ & コンプライアンス センター」 [を参照してください](permissions-in-the-security-and-compliance-center.md)。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
 - この記事の手順を完了するには、グローバル管理者またはセキュリティ & コンプライアンス センターの OrganizationManagement 役割グループのメンバーである必要があります。
 
@@ -64,7 +64,7 @@ ms.locfileid: "59214423"
 
 ## <a name="use-security--compliance-center-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>セキュリティ & コンプライアンス センター PowerShell を使用して、別のユーザーにコンプライアンス センターのセキュリティ &アクセス権を与える
 
-1. [セキュリティ/コンプライアンス センター PowerShell に接続します](/powershell/exchange/connect-to-scc-powershell)。
+1. [セキュリティ/コンプライアンス センターの PowerShell に接続する](/powershell/exchange/connect-to-scc-powershell)。
 
 2. 次の構文を使用してください。
 

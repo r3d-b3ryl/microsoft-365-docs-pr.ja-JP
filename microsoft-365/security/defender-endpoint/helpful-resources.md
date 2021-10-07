@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b9b90cd953499733aa2afe30c7407a4527d5cd1b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3eea8d2f0a33dfaa49b4020285d9a7362a2e253c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59190891"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213663"
 ---
 # <a name="helpful-microsoft-defender-for-endpoint-resources"></a>エンドポイントのリソースに役立つ Microsoft Defender
 

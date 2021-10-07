@@ -7,7 +7,7 @@ ms.date: 04/14/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -18,12 +18,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: Project Server 2010 のサポートは 2021 年 4 月 13 日に終了します。 この記事をガイドとして使用して、Project Onlineまたは新しいバージョンの Projectサーバーにアップグレードします。
-ms.openlocfilehash: 1c5b942e50a137c1ecc32f08c481811ef4edf779
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9d04df22af0a0614270907f4ad4026324b026211
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220709"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213327"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Project Server 2010 のサポート終了のロードマップ
 
@@ -233,7 +233,7 @@ Office 2010 サーバー/クライアント、および Windows 7のアップグ
 
 また、この [ポスター](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf) をダウンロードして、レター、リーガル、またはタブロイド (11 x 17) 形式で印刷することもできます。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [SharePoint 2010 からのアップグレード](upgrade-from-sharepoint-2010.md)
 

@@ -6,17 +6,17 @@ author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: c817805994662b080f530b76b76cbb111ee36795
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f7e729659cf96845646f3f3c3e8f03c650a244e2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165206"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212715"
 ---
 # <a name="register-existing-devices-yourself"></a>既存のデバイスをj自分で登録する
 
@@ -157,7 +157,7 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 | 登録保留中 | 登録はまだ行っていません。 後で確認してください。 |
 | 登録に失敗しました | 登録を完了する必要があります。 詳細については [、「デバイス登録のトラブルシューティング](#troubleshooting-device-registration) 」を参照してください。 |
 | ユーザーの準備ができました | 登録が成功し、デバイスをユーザーに配信する準備が整いました。 Microsoft マネージド デスクトップセットアップをガイドしますので、それ以上の準備をする必要はありません。 |
-| Active | デバイスがユーザーに配信され、テナントに登録されています。 これは、デバイスを定期的に使用している場合も示します。 |
+| 有効 | デバイスがユーザーに配信され、テナントに登録されています。 これは、デバイスを定期的に使用している場合も示します。 |
 | 非アクティブ | デバイスがユーザーに配信され、テナントに登録されています。 ただし、最近デバイスを使用していない (過去 7 日間)。  | 
 
 ### <a name="troubleshooting-device-registration"></a>デバイス登録のトラブルシューティング

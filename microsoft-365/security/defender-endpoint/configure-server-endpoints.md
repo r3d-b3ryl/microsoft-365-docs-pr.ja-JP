@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
 ms.author: macapara
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 49c307bc2a68ae750e7ac9c54fd52b3b2b5f45ad
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 13356a3276fd6a95f18591e92f459bbb2d28f9f7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043205"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213147"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Microsoft Defender Windowsエンドポイント サービスへのオンボード サーバー
 
@@ -374,7 +374,7 @@ Server 2008 R2 のオンボーディングに関するドキュメントで特�
 
 Windows Server 2008 R2 をオンボーディングする前に、KB が存在する必要があります。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [Windows 10 デバイスのオンボード](configure-endpoints.md)
 - [Windows 以外のデバイスをオンボードする](configure-endpoints-non-windows.md)

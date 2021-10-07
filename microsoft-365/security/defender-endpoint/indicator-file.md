@@ -3,26 +3,24 @@ title: 'ファイルのインジケーターを作成 '
 ms.reviewer: ''
 description: エンティティの検出、防止、除外を定義するファイル ハッシュのインジケーターを作成します。
 keywords: ファイル、ハッシュ、管理、許可、ブロック、ブロック、クリーン、悪意のある、ファイル ハッシュ、IP アドレス、URL、ドメイン
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 34c2e3a797dd463ad44fbc5d8576bc2b77b75f5c
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 493a76d430f508976ba261d9e78bb4b8087be15e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042652"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211167"
 ---
 # <a name="create-indicators-for-files"></a>ファイルのインジケーターを作成 
 
@@ -52,7 +50,7 @@ ms.locfileid: "60042652"
 
 - マルウェア対策クライアントのバージョンは、4.18.1901.x 以降である必要があります。 「 [月次プラットフォームとエンジンのバージョン」を参照してください。](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 
-- Windows 10、バージョン 1703 以降、Windows Server 2016、2019、および Windows Server 2022 のデバイスでサポートされます。
+- Windows 11、Windows 10 バージョン 1703 以降、Windows Server 2016、2019、Windows Server 2022 のデバイスでサポートされます。
 
 - ファイルのブロックを開始するには、まず、ファイルのブロックまたは許可 [機能](advanced-features.md)を有効にする設定。
 

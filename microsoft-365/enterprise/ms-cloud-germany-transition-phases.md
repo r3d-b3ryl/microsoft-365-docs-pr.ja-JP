@@ -7,7 +7,7 @@ ms.date: 05/12/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -18,18 +18,18 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター地域の Office 365 サービスへの移行フェーズのアクションと影響について説明します。'
-ms.openlocfilehash: 73b50d52094526857e3787c29b764f55976bde12
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 93d639b5d917bfa22a08f0c756236158e8334932
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177783"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212847"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>移行フェーズアクションと Microsoft Cloud Deutschland からの移行に対する影響
 
 Microsoft Cloud Deutschland (MCD) から Microsoft の Office 365 Global サービスの地域 "ドイツ" へのテナント移行は、一連のフェーズと、ワークロードごとに構成されたアクションとして実行されます。 この図は、新しいドイツのデータセンターへの移行の 10 フェーズを示しています。
 
-[![新しいドイツのデータセンターへの移行の 10 フェーズ。 ](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)](../media/ms-cloud-germany-migration-opt-in/migration-organization.png#lightbox)
+[![新しいドイツのデータセンターへの移行の 10 フェーズ。 ](../media/ms-cloud-germany-migration-opt-in/migration-organization.png) ](../media/ms-cloud-germany-migration-opt-in/migration-organization.png#lightbox)
 
 移行プロセスは、組織の全体的な規模と複雑さによって、何週間にも渡って完了します。 移行が進行中の間、ユーザーと管理者は、このドキュメントで詳しく説明されている変更点を使用して、サービスを引き続き利用できます。 グラフィックとテーブルは、移行中のフェーズと手順を定義します。
 
@@ -40,10 +40,10 @@ Microsoft Cloud Deutschland (MCD) から Microsoft の Office 365 Global サー�
 
 ****
 
-|Step(s)|Duration|責任ある当事者|説明|
+|Step(s)|期間|責任ある当事者|説明|
 |---|---|---|---|
 |Opt-In|時間|顧客|組織に移行を選択します。|
-|プレワーク|日数|顧客|ユーザー、ワークステーション、およびネットワークを移行用に準備するために必要な作業を完了します。|
+|プレワーク|Days|顧客|ユーザー、ワークステーション、およびネットワークを移行用に準備するために必要な作業を完了します。|
 |Azure Active Directory (Azure AD)|1~ 2 日|Microsoft|Azure AD組織を世界中に移行します。|
 |Azure|週|顧客|新しい世界中の Azure サブスクリプションを作成し [、Azure サービスを移行します](/azure/azure-resource-manager/management/move-resource-group-and-subscription)。|
 |サブスクリプション&ライセンス移行|1~ 2 日|Microsoft|世界中のサブスクリプションを購入し、Microsoft Cloud Deutschland サブスクリプションをキャンセルし、ユーザー ライセンスを移行します。|
@@ -197,7 +197,7 @@ CNAME を指す既存の DNS エントリは、autodiscover-outlook.office.de �
 
 **PowerShell を使用Exchange Online** 管理者Exchange Online適用されます。
 
-移行フェーズ中に、PowerShell コマンドレット **New-MigrationEndpoint、Set-MigrationEndpoint、** および **Test-MigrationsServerAvailability** を使用すると、エラー (プロキシでエラー) が発生する可能性があります。  これは、調停メールボックスが世界中に移行されたが、管理者メールボックスが移行または逆の場合に発生します。 これを解決するには、テナント PowerShell セッションの作成中に **、ConnectionUri** のルーティング ヒントとして調停メールボックスを使用します。 例:
+移行フェーズ中に、PowerShell コマンドレット **New-MigrationEndpoint、Set-MigrationEndpoint、** および **Test-MigrationsServerAvailability** を使用すると、エラー (プロキシでエラー) が発生する可能性があります。  これは、調停メールボックスが世界中に移行されたが、管理者メールボックスが移行または逆の場合に発生します。 これを解決するには、テナント PowerShell セッションの作成中に **、ConnectionUri** のルーティング ヒントとして調停メールボックスを使用します。 次に例を示します。
 
 ```powershell
 New-PSSession
@@ -324,7 +324,7 @@ Dynamics 365 をお持ちのお客様は、組織の Dynamics 組織を個別に
 
 このフェーズでは、すべてのクライアント アプリケーションと Office Online がクライアント カットオーバーを実行しています。 Azure ADサービスと関連するエンドポイントをポイントOffice 365テナント スコープを終了します。
 
-Office 365 地域 "ドイツ" に移行するテナントでは、テナント移行がフェーズ 9 に達した後、すべての Office デスクトップ アプリケーション (Word、Excel、PowerPoint、Outlook など) および OneDrive for Business クライアントを閉じて、Office 365 からサインアウトし、戻す必要があります。 サインアウトしてサインインすると、Officeサービスは、グローバル Azure AD サービスから新しい認証トークンをADできます。
+Office 365 "ドイツ" に移行するテナントでは、すべてのユーザーが Office 365 からサインアウトし、Office デスクトップ アプリケーション (Word、Excel、PowerPoint、Outlook など) および OneDrive for Business デスクトップ アプリケーションに戻る必要があります。テナントの移行がフェーズ 9 に達した後のクライアント。 サインアウトしてサインインすると、Officeサービスは、グローバル Azure AD サービスから新しい認証トークンをADできます。
 
 Office デスクトップ アプリケーションがアプリケーションからサインアウトしてサインインした後で動作しない場合は、影響を受けるコンピューターで[Office Client Cutover Tool (OCCT)](https://github.com/microsoft/OCCT)を実行して問題を解決することを強く推奨します。
 

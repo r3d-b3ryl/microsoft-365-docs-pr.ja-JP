@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: v-jweston
 author: jweston-1
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: d98b231d4d2c0b415a3c76aa18d23402f19e8b06
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a5870f91bd154ddf344c7914c44c96e438fc9f99
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191001"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211191"
 ---
 # <a name="export-assessment-methods-and-properties-per-device"></a>デバイスごとの評価方法とプロパティのエクスポート
 
@@ -118,7 +118,7 @@ DeviceName|string|デバイスの完全修飾ドメイン名 (FQDN)。
 DiskPaths|Array[string]|製品がデバイスにインストールされていることを示すディスク証拠。
 EndOfSupportDate|string|このソフトウェアのサポートが終了または終了する日付。
 EndOfSupportStatus|string|サポートの状態の終了。 これらの可能な値を含めることができます。 なし、EOS バージョン、今後の EOS バージョン、EOS ソフトウェア、今後の EOS ソフトウェア。
-NumberOfWeaknesses|int|このデバイス上のこのソフトウェアの弱点の数。
+NumberOfWeaknesses|整数|このデバイス上のこのソフトウェアの弱点の数。
 OSPlatform|string|デバイスで実行されているオペレーティング システムのプラットフォーム。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。 詳細については、「tvm でサポートされるオペレーティング システムとプラットフォーム」を参照してください。
 RbacGroupName|string|役割ベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "割り当てられていない" になります。 組織に RBAC グループが含まれている場合、値は "None" になります。
 rbacGroupId|string|役割ベースのアクセス制御 (RBAC) グループ ID。

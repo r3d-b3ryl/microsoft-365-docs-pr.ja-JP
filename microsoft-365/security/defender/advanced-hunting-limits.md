@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d7563a8299bbe7d543b065bb25eeb3bc90a854b9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bd9ad3186b5bb8d65d0dd712fece2bee0ce4e020
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163623"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212247"
 ---
 # <a name="advanced-hunting-quotas-and-usage-parameters"></a>高度な検索クォータと使用状況パラメーター
 
@@ -49,7 +49,7 @@ ms.locfileid: "59163623"
 >[!NOTE] 
 >API を介して実行される高度な検索クエリには、個別のクォータとパラメーターのセットが適用されます。 [高度な狩猟 API について読む](./api-advanced-hunting.md)
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [高度な狩猟のベスト プラクティス](advanced-hunting-best-practices.md)
 - [高度なハンティング エラーの処理](advanced-hunting-errors.md)

@@ -6,18 +6,18 @@ manager: dansimp
 audience: ITPro
 ms.topic: how-to
 ms.prod: m365-security
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: 管理者は、Microsoft Defender for Office 365 の攻撃シミュレーション トレーニングを使用して、フィッシング攻撃をシミュレートし、フィッシング防止に関するユーザーをトレーニングする方法を学Office 365。
 ms.technology: mdo
-ms.openlocfilehash: 304baf82d2b951ada35dc6cb97add1ac85b27236
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: fec06f65c67f0ec4c470660689a1f3fc1d9bfbcd
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988717"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213507"
 ---
 # <a name="simulate-a-phishing-attack"></a>フィッシング攻撃をシミュレートする
 
@@ -59,6 +59,7 @@ microsoft Defender for Office 365 の攻撃シミュレーション トレーニ
 
 ペイロードには、次の選択に役立つデータ ポイントが多数含まれています。
 
+- **言語** は、ペイロード コンテンツの言語を表示します。 Microsoft のペイロード カタログ (グローバル) は、10 以上の言語でペイロードを提供し、フィルター処理も可能です。
 - **クリック率は** 、このペイロードをクリックしたユーザーの数をカウントします。
 - **予測された妥協** 率は、このペイロードによって侵害される人の割合を、Microsoft Defender 全体のユーザーのペイロードの履歴データに基づいてOffice 365します。
 - **起動されたシミュレーションは** 、このペイロードが他のシミュレーションで使用された回数をカウントします。

@@ -6,17 +6,17 @@ author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 64686f84d8e4cc7dca40a875d8b54508ea9a1fc9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2849857b2196a863c236352ca4c7fd3c0dda1e6f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212374"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211491"
 ---
 # <a name="steps-for-partners-to-register-devices"></a>デバイスを登録するためのパートナー向け手順
 

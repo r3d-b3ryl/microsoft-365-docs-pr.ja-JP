@@ -6,7 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: normal
+ms.localizationpriority: medium
 ms.topic: article
 author: denisebmsft
 ms.author: deniseb
@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 61766babf6da4b0e564a85bf37c9bf7222afbf34
-ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
+ms.openlocfilehash: 590842462f4c757ba16c90ef641382801d79bcab
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59497641"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212367"
 ---
 # <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策ソフトウェアの問題をトラブルシューティングするため、イベント ログとエラー コードをレビューする
 
@@ -360,9 +360,9 @@ Microsoft Defender ウイルス対策ログにイベントのWINDOWSを記録し
 <dt>名前: &lt;脅威名 &gt; </dt>
 <dt>ID: &lt; 脅威 ID &gt; </dt> 
 <dt> の重大度: &lt; 重大度 &gt; (たとえば、<ul>
-<li>低</li>
+<li>低い</li>
 <li>中</li>
-<li>高</li>
+<li>高い</li>
 <li>重大</li>
 </ul>
 </dt>
@@ -432,9 +432,9 @@ Microsoft Defender ウイルス対策、マルウェアなどの望ましくな�
 <dt>名: &lt; 脅威 &gt; 名</dt>
 <dt>ID: &lt; Threat ID &gt; </dt> 
 <dt> Severity: &lt; Severity (次 &gt; に示す場合)<ul>
-<li>低</li>
+<li>低い</li>
 <li>中</li>
-<li>高</li>
+<li>高い</li>
 <li>重大</li>
 </ul>
 </dt>
@@ -484,9 +484,9 @@ Microsoft Defender ウイルス対策その他の望ましくない可能性の�
 <dt>名: &lt; 脅威 &gt; 名</dt>
 <dt>ID: &lt; Threat ID &gt; </dt> 
 <dt> Severity: &lt; Severity (次 &gt; に示す場合)<ul>
-<li>低</li>
+<li>低い</li>
 <li>中</li>
-<li>高</li>
+<li>高い</li>
 <li>重大</li>
 </ul>
 </dt>
@@ -538,9 +538,9 @@ Microsoft Defender ウイルス対策アイテムを検疫から復元しまし�
 <dt>名前: &lt;脅威名 &gt; </dt>
 <dt>ID: &lt; 脅威 ID &gt; </dt> 
 <dt> の重大度: &lt; 重大度 &gt; (たとえば、<ul>
-<li>低</li>
+<li>低い</li>
 <li>中</li>
-<li>高</li>
+<li>高い</li>
 <li>重大</li>
 </ul>
 </dt>
@@ -580,9 +580,9 @@ Microsoft Defender ウイルス対策アイテムを検疫から復元しよう�
 <dt>名前: &lt;脅威名 &gt; </dt>
 <dt>ID: &lt; 脅威 ID &gt; </dt> 
 <dt> の重大度: &lt; 重大度 &gt; (たとえば、<ul>
-<li>低</li>
+<li>低い</li>
 <li>中</li>
-<li>高</li>
+<li>高い</li>
 <li>重大</li>
 </ul>
 </dt>
@@ -624,9 +624,9 @@ Microsoft Defender ウイルス対策アイテムを検疫から削除しまし�
 <dt>名前: &lt;脅威名 &gt; </dt>
 <dt>ID: &lt; 脅威 ID &gt; </dt> 
 <dt> の重大度: &lt; 重大度 &gt; (たとえば、<ul>
-<li>低</li>
+<li>低い</li>
 <li>中</li>
-<li>高</li>
+<li>高い</li>
 <li>重大</li>
 </ul>
 </dt>
@@ -667,9 +667,9 @@ Microsoft Defender ウイルス対策アイテムを検疫から削除しよう�
 <dt>名前: &lt;脅威名 &gt; </dt>
 <dt>ID: &lt; 脅威 ID &gt; </dt> 
 <dt> の重大度: &lt; 重大度 &gt; (たとえば、<ul>
-<li>低</li>
+<li>低い</li>
 <li>中</li>
-<li>高</li>
+<li>高い</li>
 <li>重大</li>
 </ul>
 </dt>
@@ -773,9 +773,9 @@ Microsoft Defender ウイルス対策疑わしい動作が検出されました�
 <dt>名前: &lt;脅威名 &gt; </dt>
 <dt>ID: &lt; 脅威 ID &gt; </dt> 
 <dt> の重大度: &lt; 重大度 &gt; (たとえば、<ul>
-<li>低</li>
+<li>低い</li>
 <li>中</li>
-<li>高</li>
+<li>高い</li>
 <li>重大</li>
 </ul>
 </dt>
@@ -848,9 +848,9 @@ Microsoft Defender ウイルス対策または他の望ましくない可能性�
 <dt>名前: &lt;脅威名 &gt; </dt>
 <dt>ID: &lt; 脅威 ID &gt; </dt> 
 <dt> の重大度: &lt; 重大度 &gt; (たとえば、<ul>
-<li>低</li>
+<li>低い</li>
 <li>中</li>
-<li>高</li>
+<li>高い</li>
 <li>重大</li>
 </ul>
 </dt>
@@ -927,9 +927,9 @@ Microsoft Defender ウイルス対策、マルウェアなどの望ましくな�
 <dt>名前: &lt;脅威名 &gt; </dt>
 <dt>ID: &lt; 脅威 ID &gt; </dt> 
 <dt> の重大度: &lt; 重大度 &gt; (たとえば、<ul>
-<li>低</li>
+<li>低い</li>
 <li>中</li>
-<li>高</li>
+<li>高い</li>
 <li>重大</li>
 </ul>
 </dt>
@@ -1049,9 +1049,9 @@ Microsoft Defender ウイルス対策その他の望ましくない可能性の�
 <dt>名前: &lt;脅威名 &gt; </dt>
 <dt>ID: &lt; 脅威 ID &gt; </dt> 
 <dt> の重大度: &lt; 重大度 &gt; (たとえば、<ul>
-<li>低</li>
+<li>低い</li>
 <li>中</li>
-<li>高</li>
+<li>高い</li>
 <li>重大</li>
 </ul>
 </dt>
@@ -1141,9 +1141,9 @@ Microsoft Defender ウイルス対策その他の望ましくない可能性の�
 <dt>名前: &lt;脅威名 &gt; </dt>
 <dt>ID: &lt; 脅威 ID &gt; </dt> 
 <dt> の重大度: &lt; 重大度 &gt; (たとえば、<ul>
-<li>低</li>
+<li>低い</li>
 <li>中</li>
-<li>高</li>
+<li>高い</li>
 <li>重大</li>
 </ul>
 </dt>
@@ -1205,7 +1205,7 @@ UAC </dt>
 クライアントMicrosoft Defender ウイルス対策、重大な問題が原因でこのエラーが発生しました。 エンドポイントが保護されていない可能性があります。 エラーの説明を確認し、以下の関連する <b>ユーザー アクションの手順に</b> 従います。
 <table>
 <tr>
-<th>Action</th>
+<th>アクション</th>
 <th>ユーザー操作</th>
 </tr>
 <tr>
@@ -1469,7 +1469,7 @@ Microsoft Defender ウイルス対策更新中にエラーが発生しました�
 <ul>
 <li>検索</li>
 <li>ダウンロード</li>
-<li>Install</li>
+<li>インストール</li>
 </ul>
 </dt>ソース パス: ユニバーサル名前付け規則 (UNC) のファイル共有名、Windows Server Update Services 
 <dt>(WSUS)/Microsoft Update/ADL のサーバー名。</dt> 
@@ -1769,7 +1769,7 @@ Microsoft Defender ウイルス対策動的<i>署名サービスを使用して<
 <ul>
 <li>バージョン</li>
 <li>Timestamp</li>
-<li>無制限</li>
+<li>制限なし</li>
 <li>期間</li>
 </ul>
 </dt>
@@ -1780,7 +1780,7 @@ Microsoft Defender ウイルス対策動的<i>署名サービスを使用して<
 <ul>
 <li>VDM バージョン</li>
 <li>Timestamp</li>
-<li>無制限</li>
+<li>制限なし</li>
 </ul>
 </dt>
 <dt>永続性の制限: 高速パス署名の永続性の制限。</dt>
@@ -1825,7 +1825,7 @@ Microsoft Defender ウイルス対策使用<i>して、古い</i>署名を破棄
 <ul>
 <li>バージョン</li>
 <li>Timestamp</li>
-<li>無制限</li>
+<li>制限なし</li>
 <li>期間</li>
 </ul>
 </dt>
@@ -1837,7 +1837,7 @@ Microsoft Defender ウイルス対策使用<i>して、古い</i>署名を破棄
 <ul>
 <li>VDM バージョン</li>
 <li>Timestamp</li>
-<li>無制限</li>
+<li>制限なし</li>
 </ul>
 </dt>
 <dt>永続性の制限: 高速パス署名の永続性の制限。</dt>
@@ -1892,7 +1892,7 @@ Microsoft Defender ウイルス対策署名サービスを使用しようとし�
 <ul>
 <li>バージョン</li>
 <li>Timestamp</li>
-<li>無制限</li>
+<li>制限なし</li>
 <li>期間</li>
 </ul>
 </dt>
@@ -1903,7 +1903,7 @@ Microsoft Defender ウイルス対策署名サービスを使用しようとし�
 <ul>
 <li>VDM バージョン</li>
 <li>Timestamp</li>
-<li>無制限</li>
+<li>制限なし</li>
 </ul>
 </dt>
 <dt>永続性の制限: 高速パス署名の永続性の制限。</dt>
@@ -3115,7 +3115,7 @@ Microsoft Defender ウイルス対策内で検出された脅威を修復でき�
 </tr>
 </table>
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [保護に関するMicrosoft Defender ウイルス対策レポート](report-monitor-microsoft-defender-antivirus.md)
 - [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)

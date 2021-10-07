@@ -11,14 +11,14 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
-localization_priority: None
+ms.localizationpriority: medium
 description: トピック センターの詳細については、Microsoft Viva トピック。
-ms.openlocfilehash: 5456ef27b23ff36cd1919274424c179f8ec3d683
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 928152a2b11b2bb25d0e70f12e39277400c9a4e1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218493"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213255"
 ---
 # <a name="topic-center-overview-in-microsoft-viva-topics"></a>トピック センターの概要 (Microsoft Viva トピック
 

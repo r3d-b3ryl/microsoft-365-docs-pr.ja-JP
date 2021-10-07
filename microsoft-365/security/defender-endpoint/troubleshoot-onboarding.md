@@ -2,26 +2,24 @@
 title: Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング
 description: デバイスのオンボーディング中または Microsoft Defender for Endpoint サービスで発生する可能性のある問題のトラブルシューティングを行います。
 keywords: オンボーディング、オンボーディングの問題、イベント ビューアー、データ収集とプレビュー ビルド、センサー データ、診断のトラブルシューティング
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 3fe7610d35114200a5bed515f82bb7a4453cf4fa
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 9c9d731fa8a1632ab6804ebed9fdb2594564eaf8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042977"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212427"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング
 
@@ -119,9 +117,9 @@ Intune でポリシーを構成し、デバイスに反映されない場合は�
 
 |エラー コード 16 進数|エラー コード 12 月|エラーの説明|OMA-URI|考えられる原因とトラブルシューティングの手順|
 |:---:|---|---|---|---|
-|0x87D1FDE8|-2016281112|修復に失敗しました|オンボード <p> オフボード|**考えられる原因:** 誤った BLOB でオンボーディングまたはオフボードが失敗しました。署名が間違っていたり、PreviousOrgIds フィールドが見つからない場合。 <p> **トラブルシューティングの手順:** <p> [デバイス イベント ログのエージェントオンボーディング エラーの表示] セクション [でイベントの ID を確認](#view-agent-onboarding-errors-in-the-device-event-log) します。 <p> 次の表の MDM イベント ログを確認するか、「MDM エラーの診断」の手順に従[Windows 10。](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)|
+|0x87D1FDE8|-2016281112|修復に失敗しました|オンボード <p> オフボード|**考えられる原因:** 誤った BLOB でオンボーディングまたはオフボードが失敗しました。署名が間違っていたり、PreviousOrgIds フィールドが見つからない場合。 <p> **トラブルシューティングの手順:** <p> [デバイス イベント ログのエージェントオンボーディング エラーの表示] セクション [でイベントの ID を確認](#view-agent-onboarding-errors-in-the-device-event-log) します。 <p> 次の表の MDM イベント ログを確認するか、「MDM エラーの診断」の手順に[従](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)Windows。|
 ||||オンボード <p> オフボード <p> SampleSharing|**考えられる原因:** Microsoft Defender for Endpoint Policy レジストリ キーが存在しないか、OMA DM クライアントに書き込み権限が付与されていない。 <p> **トラブルシューティングの手順:** 次のレジストリ キーが存在することを確認します。 `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection` <p> 存在しない場合は、管理者特権でコマンドを開き、キーを追加します。|
-||||SenseIsRunning <p> OnboardingState <p> OrgId|**考えられる原因:** 読み取り専用プロパティによる修復の試行。 オンボーディングに失敗しました。 <p> **トラブルシューティングの手順:** 「デバイスでのオンボードの問題の [トラブルシューティング」のトラブルシューティング手順を確認します](#troubleshoot-onboarding-issues-on-the-device)。 <p> 次の表の MDM イベント ログを確認するか、「MDM エラーの診断」の手順に従[Windows 10。](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)|
+||||SenseIsRunning <p> OnboardingState <p> OrgId|**考えられる原因:** 読み取り専用プロパティによる修復の試行。 オンボーディングに失敗しました。 <p> **トラブルシューティングの手順:** 「デバイスでのオンボードの問題の [トラブルシューティング」のトラブルシューティング手順を確認します](#troubleshoot-onboarding-issues-on-the-device)。 <p> 次の表の MDM イベント ログを確認するか、「MDM エラーの診断」の手順に[従](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)Windows。|
 ||||すべて|**考えられる原因:** Microsoft Defender for Endpoint をサポートされていない SKU/プラットフォーム (特に Holographic SKU) に展開します。 <p> 現在サポートされているプラットフォーム: <p> Enterprise、教育、およびProfessional。<p> サーバーはサポートされていません。|
 |0x87D101A9|-2016345687|SyncML(425): 要求されたコマンドは、送信者が受信者に適切なアクセス制御アクセス許可 (ACL) を持たないので失敗しました。|すべて|**考えられる原因:** Microsoft Defender for Endpoint をサポートされていない SKU/プラットフォーム (特に Holographic SKU) に展開します。<p> 現在サポートされているプラットフォーム: <p> Enterprise、教育、およびProfessional。|
 |
@@ -218,13 +216,13 @@ MDM イベント ログを表示して、オンボーディング中に発生す
 
 ### <a name="ensure-the-diagnostic-data-service-is-enabled"></a>診断データ サービスが有効になっているか確認する
 
-デバイスが正しく報告されていない場合は、Windows 10 診断データ サービスが自動的に開始するように設定され、デバイスで実行されていることを確認する必要があります。 このサービスは、他のプログラムやユーザー構成の変更によって無効になっている可能性があります。
+デバイスが正しく報告されていない場合は、Windows 診断データ サービスが自動的に開始するように設定され、デバイスで実行されていることを確認する必要があります。 このサービスは、他のプログラムやユーザー構成の変更によって無効になっている可能性があります。
 
 最初に、Windows の開始時にサービスが自動的に開始されるのを確認してから、サービスが現在実行されている (実行されていない場合は開始する) 必要があります。
 
 ### <a name="ensure-the-service-is-set-to-start"></a>サービスが開始に設定されているのを確認する
 
-**コマンド ラインを使用して、診断データ サービスWindows 10の種類を確認します**。
+**コマンド ラインを使用して、診断データ サービスWindowsの種類を確認します**。
 
 1. デバイスで管理者特権のコマンド ライン プロンプトを開きます。
 
@@ -244,7 +242,7 @@ MDM イベント ログを表示して、オンボーディング中に発生す
 
    に設定されていない場合は、自動的に開始するサービス `START_TYPE` `AUTO_START` を設定する必要があります。
 
-**コマンド ラインを使用して、診断データ Windows 10を自動的に開始する設定を行います。**
+**コマンド ラインを使用して、診断データ Windowsを自動的に開始する設定を行います。**
 
 1. デバイスで管理者特権のコマンド ライン プロンプトを開きます。
 
@@ -484,7 +482,7 @@ WinHTTP は、インターネット閲覧プロキシ設定や他のユーザー
 
     ![configuration30 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-30.png)
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [Microsoft Defender for Endpoint のトラブルシューティング](troubleshoot-mdatp.md)
 - [デバイスのオンボード](onboard-configure.md)

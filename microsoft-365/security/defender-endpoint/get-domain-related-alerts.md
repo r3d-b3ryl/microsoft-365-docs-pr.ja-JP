@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 7712500caf2e30d6ecdb8146ecfa4173e087f154
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 176daff75e39f8ed4dda2854d3448cb9fbaa5dad
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221466"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211152"
 ---
 # <a name="get-domain-related-alerts-api"></a>ドメイン関連のアラート API を取得する
 
@@ -54,8 +54,8 @@ ms.locfileid: "59221466"
 :---|:---|:---
 アプリケーション|Alert.Read.All|'すべてのアラートの読み取り'
 アプリケーション|Alert.ReadWrite.All|'すべてのアラートの読み取りと書き込み'
-委任 (職場または学校アカウント)|Alert.Read|'アラートの読み取り'
-委任 (職場または学校アカウント)|Alert.ReadWrite|'アラートの読み取りと書き込み'
+委任 (職場または学校のアカウント)|Alert.Read|'アラートの読み取り'
+委任 (職場または学校のアカウント)|Alert.ReadWrite|'アラートの読み取りと書き込み'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
@@ -73,7 +73,7 @@ GET /api/domains/{domain}/alerts
 
 |ヘッダー|値|
 |---|---|
-|Authorization|文字列|
+|Authorization|String|
 
 ## <a name="request-body"></a>要求本文
 

@@ -6,7 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.reviewer: mkaminska
@@ -16,12 +16,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 09/21/2021
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 11b45edc944cb60c476a79dc921bd211e04514ef
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: acf0f5fdd3741e99fda82cf91bc8d2f615d25602
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491447"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212295"
 ---
 # <a name="why-cloud-protection-should-be-enabled-for-microsoft-defender-antivirus"></a>クラウド保護を有効にする必要Microsoft Defender ウイルス対策
 
@@ -48,7 +48,7 @@ Microsoft Defender ウイルス対策クラウド保護は、エンドポイン�
 | 侵害の指標 (IoC) | Microsoft 365 E5  | Defender for Endpoint の IoC は、エンティティの検出、防止、および除外を定義するように構成できます。 たとえば、"許可" インジケーターを使用して、Defender for Endpoint のスキャンMicrosoft Defender ウイルス対策修復アクションに対する例外を定義できます。 別の例として、"アラートとブロック" インジケーターを使用して、ファイルまたはプロセスの実行を防止し、Microsoft 365 Defender ポータルで表示可能なアラートを使用してこれらのアクティビティを追跡できます。 <br/><br/>詳細については、「インジケーターの作成 [」を参照してください](manage-indicators.md)。    |
 
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 クラウド保護とクラウド保護の役割の概要を説明し、次Microsoft Defender ウイルス対策手順を次に示します。
 

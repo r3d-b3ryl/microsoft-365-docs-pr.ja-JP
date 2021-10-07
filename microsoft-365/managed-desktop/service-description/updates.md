@@ -9,14 +9,14 @@ f1.keywords:
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: f817831cda584dc1aa6c968d7332939c68f48e8b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 992ad102e07dbbca5aa0e1e4243ebade268906b1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179480"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211371"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>更新プログラムの処理方法は、Microsoft マネージド デスクトップ
 

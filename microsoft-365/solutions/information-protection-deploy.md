@@ -9,7 +9,7 @@ ms.date: 06/22/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 description: GDPR、Microsoft 365消費者プライバシー法 (CCPA) などのデータプライバシー規制 (Microsoft Teams、SharePoint、電子メールなど) に関する情報保護を構成します。
-ms.openlocfilehash: 1cf58564938efafb0b711680cf7260222c514864
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 49d5848c6b81dcd6a81377cc3ff83cb242354690
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213183"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213375"
 ---
 # <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>データプライバシーに関する規制に関する情報保護を、Microsoft 365
 
@@ -118,7 +118,7 @@ Microsoft Learn のトレーニング モジュールは、情報保護に重要
 
 #### <a name="information-protection"></a>情報保護
 
-|トレーニング:|Microsoft 365 で企業情報を保護する|
+|トレーニング: |Microsoft 365 で企業情報を保護する|
 |:---|:---|
 |![Teamsのトレーニング アイコンをクリックします。](../media/protect-enterprise-information-microsoft-365.svg)|組織の情報を保護することは、かつてないほど困難になっています。 「Microsoft 365 で社内の情報を保護する」のラーニング パスでは、機密情報を不用意な共有や誤用から保護する方法、データを検出して分類する方法、秘密度ラベルを使用して保護する方法、損失から保護するために機密情報を監視および分析する方法について説明します。 この学習パスは、セキュリティ管理者の認定:セキュリティ管理者アソシエMicrosoft 365 Microsoft 365認定: Enterpriseエキスパート認定の準備に役立ちます。<br><br>1 時間 - ラーニング パス - 5 モジュール|
 
@@ -127,7 +127,7 @@ Microsoft Learn のトレーニング モジュールは、情報保護に重要
 
 #### <a name="identity-and-access"></a>ID とアクセス
 
-|トレーニング:|Azure Active Directory で ID とアクセスを保護する|
+|トレーニング: |Azure Active Directory で ID とアクセスを保護する|
 |:---|:---|
 |![ID とアクセスのトレーニング アイコン。](../media/protect-identity-and-access-with-microsoft-365.svg)|ID とアクセスのラーニングパスは、最新の ID およびアクセステクノロジ、認証を強化するためのツール、組織内での ID 保護のガイダンスについて説明しています。 Microsoft ID およびアクセステクノロジを使用すると、組織のIDをオンプレミスでもクラウドでも保護し、ユーザーがどこからでも安全に作業できるようになります。 このラーニングパスはMicrosoft 365 認定: セキュリティ管理者 と Microsoft 365 認定: エンタープライズ管理エキスパート の認定のための準備を行うことが出来ます。<br><br>2 時間 52 分 - ラーニング パス - 6 モジュール|
 

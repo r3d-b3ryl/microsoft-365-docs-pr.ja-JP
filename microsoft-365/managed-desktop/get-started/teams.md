@@ -4,18 +4,18 @@ description: デバイスTeamsインストールされ、その後更新され�
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント、アプリ、line-of-business アプリ、LOB アプリ
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: ITPro
-ms.openlocfilehash: 01a3adc7829bbb94f36649f69ba6ef15dbe6b3c2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 525dc7b89e302cdc076336daa7a98c6317855e73
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165190"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212739"
 ---
 # <a name="microsoft-teams"></a>Microsoft Teams
 

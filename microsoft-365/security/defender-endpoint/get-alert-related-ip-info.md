@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a317e197c425750c8db0592f1e2f1e4d6d90a142
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: abe2e0f2252918afdec88b77cf266d9b5d5e7a09
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177616"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212547"
 ---
 # <a name="get-alert-related-ips-information-api"></a>アラート関連の AP 情報 API を取得する
 
@@ -54,7 +54,7 @@ ms.locfileid: "59177616"
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
 アプリケーション|Ip.Read.All|'IP アドレス プロファイルの読み取り'
-委任 (職場または学校アカウント)|Ip.Read.All|'IP アドレス プロファイルの読み取り'
+委任 (職場または学校のアカウント)|Ip.Read.All|'IP アドレス プロファイルの読み取り'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
@@ -72,7 +72,7 @@ GET /api/alerts/{id}/ips
 
 名前|型|説明
 :---|:---|:---
-Authorization|String|ベアラー {token}。 **必須**
+Authorization|String|ベアラー {token}。 **必須**。
 
 ## <a name="request-body"></a>要求本文
 

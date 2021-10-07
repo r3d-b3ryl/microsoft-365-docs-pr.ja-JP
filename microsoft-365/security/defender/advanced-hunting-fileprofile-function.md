@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 67295529cdb7b8a3e93e663f2a8a28d27a8f6737
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 97db42060d694168edbd6ed7e86c67706bf62ddb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220123"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212259"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
@@ -37,22 +37,22 @@ ms.locfileid: "59220123"
 
 この `FileProfile()` 関数は、高度な検索の[](advanced-hunting-overview.md)エンリッチメント関数で、クエリで見つかったファイルに次のデータを追加します。
 
-| 列 | データ型 | 説明 |
+| Column | データ型 | 説明 |
 |------------|---------------|-------------|
 | `SHA1` | string | 記録されたアクションが適用されたファイルの SHA-1 |
 | `SHA256` | 文字列 | 記録されたアクションが適用されたファイルの SHA-256 |
 | `MD5` | string | 記録されたアクションが適用されたファイルの MD5 ハッシュ |
-| `FileSize` | int | ファイルのサイズ (バイト単位) |
-| `GlobalPrevalence` | int | Microsoft がグローバルに観察したエンティティのインスタンス数 |
+| `FileSize` | 整数 | ファイルのサイズ (バイト単位) |
+| `GlobalPrevalence` | 整数 | Microsoft がグローバルに観察したエンティティのインスタンス数 |
 | `GlobalFirstSeen` | 日付型 | エンティティが最初に Microsoft によってグローバルに観察された日時 |
 | `GlobalLastSeen` | 日付型 | エンティティが Microsoft によってグローバルに最後に観察された日時 |
 | `Signer` | string | ファイルの署名者に関する情報 |
 | `Issuer` | string | 発行元証明機関 (CA) に関する情報 |
 | `SignerHash` | string | 署名者を識別する一意のハッシュ値 |
-| `IsCertificateValid` | boolean | ファイルの署名に使用する証明書が有効かどうか |
-| `IsRootSignerMicrosoft` | boolean | ルート証明書の署名者が Microsoft であるかどうかを示します。 |
+| `IsCertificateValid` | ブール値 | ファイルの署名に使用する証明書が有効かどうか |
+| `IsRootSignerMicrosoft` | ブール値 | ルート証明書の署名者が Microsoft であるかどうかを示します。 |
 | `SignatureState` | string | ファイル署名の状態: SignedValid - ファイルは有効な署名で署名されています。SignedInvalid - ファイルは署名されますが、証明書は無効です。Signeded - ファイルは署名されていない、不明 - ファイルに関する情報を取得できません
-| `IsExecutable` | boolean | ファイルがポータブル実行可能ファイル (PE) ファイルかどうか |
+| `IsExecutable` | ブール値 | ファイルがポータブル実行可能ファイル (PE) ファイルかどうか |
 | `ThreatName` | string | マルウェアまたは検出された他の脅威の検出名 |
 | `Publisher` | string | ファイルを発行した組織の名前 |
 | `SoftwareName` | string | ソフトウェア製品の名前 |
@@ -94,7 +94,7 @@ DeviceFileEvents
 | where GlobalPrevalence < 15
 ```
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)

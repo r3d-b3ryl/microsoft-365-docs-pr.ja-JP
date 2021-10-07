@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: how-to
 ms.date: ''
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -20,12 +20,12 @@ description: 管理者は、セーフ SharePoint、OneDrive、Microsoft Teams、
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8a1020193a49dd7b4871b9b9fec53d21073b03e6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 546c714d76807f828845b3c0ef0c8fe3ef94169c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211554"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211887"
 ---
 # <a name="turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>SharePoint、OneDrive、Microsoft Teams 用の ATP を有効にする
 
@@ -85,7 +85,7 @@ Set-AtpPolicyForO365 -EnableATPForSPOTeamsODB $true
 Set-SPOTenant -DisallowInfectedFileDownload $true
 ```
 
-**注**:
+**注意**:
 
 - この設定は、ユーザーと管理者の両方に影響します。
 - ユーザーは引き続き悪意のあるファイルを削除できます。
@@ -142,7 +142,7 @@ New-ActivityAlert -Name "Malicious Files in Libraries" -Description "Notifies ad
 
 - SharePoint、OneDrive、および Microsoft Teams の セーフ 添付ファイルが正常に有効になっていることを確認するには、次のいずれかの手順を実行します。
 
-  - Microsoft 365 Defender ポータルで、[ポリシー & **rules** Threat \>  \> **Policies Policies]** セクション \> **セーフ Attachments** に移動し、[グローバル設定] を選択し、[SharePoint、OneDrive、および Microsoft Teams の Office 365 の Defender を有効にする] 設定の値を確認します。
+  - Microsoft 365 Defender ポータルで、[ポリシー **& rules** Threat \>  \> **Policies Policies]** セクション \> **セーフ Attachments** に移動し、[グローバル設定] を選択し、SharePoint、OneDrive、および Office 365 の Defender を有効にするの値を **確認します。Microsoft Teams** 設定。
 
   - PowerShell Exchange Onlineで、次のコマンドを実行してプロパティ設定を確認します。
 

@@ -8,7 +8,7 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 recommendations: false
 description: ユーザー グループの名前付けポリシーを作成するMicrosoft 365します。
-ms.openlocfilehash: 8c13e946644d25fc76745dc2c9f286bf204f6ba1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9fb75feb255ee6d58313f4cfaf3486c4a8cd63b4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192250"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213411"
 ---
 # <a name="microsoft-365-groups-naming-policy"></a>Microsoft 365グループの名前付けポリシー
 
@@ -130,7 +130,7 @@ Microsoft 365 グループに Azure AD 名前付けポリシーを使用する�
 
 ![グループの名前付けポリシー設定のスクリーンショットをAzure Active Directory。](../media/groups-naming-policy-azure.png)
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [コラボレーション ガバナンス計画のステップ バイ ステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 

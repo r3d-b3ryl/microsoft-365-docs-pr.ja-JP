@@ -8,7 +8,7 @@ author: schmurky
 manager: dansimp
 audience: ITPro
 ms.topic: article
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 description: ハードウェア ベースの分離の最新情報を取得します。 悪用や悪意のあるリンクのような現在および新しい攻撃が従業員の生産性と企業のセキュリティを妨げるのを防ぐ。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f734a4ee22984bdc716a9897624f21396c8b7c1d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9c8484d6e30db242933477bd77a0351578db5f94
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218024"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213459"
 ---
 # <a name="application-guard-for-office-for-admins"></a>管理者向け Application Guard for Office
 

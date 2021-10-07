@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7cdf2aad5c57e2f25ff26d3e7eac3e2194f00c52
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: aae3ad6e57ff672e3c27041f4cd60298381dd17b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043073"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213651"
 ---
 # <a name="supported-operating-systems-platforms-and-capabilities---for-threat-and-vulnerability-management"></a>サポートされているオペレーティング システム、プラットフォーム、および機能 - 脅威と脆弱性の管理
 
@@ -48,9 +48,9 @@ ms.locfileid: "60043073"
 
 サポートされている OS またはプラットフォーム|OS の脆弱性|ソフトウェア製品の脆弱性|OS 構成の評価|セキュリティ制御の構成評価|ソフトウェア製品構成の評価
 :---|:---|:---|:---|:---|:---
-Windows 7|はい|非サポート|非サポート|非サポート|非サポート
+Windows 7|はい|非サポート|サポート対象外|非サポート|非サポート
 Windows 8.1|はい|はい|はい|はい|はい
-Windows 10バージョン 1607-1703|はい|非サポート|非サポート|非サポート|非サポート
+Windows 10バージョン 1607-1703|はい|サポート対象外|非サポート|サポート対象外|非サポート
 Windows 10バージョン 1709 以降|はい|はい|はい|はい|はい
 Windows Server 2008 R2|はい|はい|はい|はい|はい
 Windows Server 2012 R2|はい|はい|はい|はい|はい

@@ -7,7 +7,7 @@ ms.date: 11/19/2019
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: ネットワーク接続の概要やエンドポイントの一覧など、Microsoft 365の設定に役立つ情報を含む記事へのリンクを検索します。
-ms.openlocfilehash: 52de26081b4e61346ab584e1600893349b47fd17
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0608fed03721a12d89fdac7d9bdd1574e34471b0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215673"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213231"
 ---
 # <a name="set-up-your-network-for-microsoft-365"></a>ネットワークをセットアップMicrosoft 365
 

@@ -2,26 +2,24 @@
 title: Microsoft Defender for Endpoint (Linux) でスキャンをスケジュールする方法
 description: 組織の資産をよりよく保護するために、Microsoft Defender for Endpoint (Linux) の自動スキャン時間をスケジュールする方法について説明します。
 keywords: microsoft、 defender、 Microsoft Defender for Endpoint, Linux, スキャン, ウイルス対策, microsoft Defender for endpoint (linux)
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d1f6f004738dc50238b0941f7c7182400117fb50
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 89e4c7fa5462f65d11b36cad205e18ccbee8542b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179280"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211035"
 ---
 # <a name="schedule-scans-with-microsoft-defender-for-endpoint-linux"></a>Microsoft Defender for Endpoint (Linux) でのスキャンのスケジュール設定
 
