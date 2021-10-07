@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 author: dansimp
 ms.author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: e39a1833157210e3d5e4c6a5bcc77deede295f3c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 03d3535ec972522313bbabeebc1743db3fb55009
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59210313"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209851"
 ---
 # <a name="list-exposure-score-by-device-group"></a>デバイス グループ別の露出スコアの一覧表示
 
@@ -103,7 +103,7 @@ GET https://api.securitycenter.microsoft.com/api/exposureScore/ByMachineGroups
 }
 ```
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [リスクベースの脅威&の管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [脅威&脆弱性の暴露スコア](/microsoft-365/security/defender-endpoint/tvm-exposure-score)

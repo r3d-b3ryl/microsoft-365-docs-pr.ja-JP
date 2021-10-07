@@ -4,24 +4,24 @@ description: デバイスがデバイスで動作する最小ハードウェア�
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: f51208b8376ef160fe83a41e5a2ac74eb843c2f3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1ce5f0c3782b8e8082d0e1ede53339a190b7259f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215354"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209467"
 ---
 # <a name="device-requirements"></a>デバイスの要件
 
-Microsoft マネージド デスクトップに含めるデバイス要件を定期的に評価します。 この記事では、デバイスがデバイスで動作するために満たす必要があるハードウェア要件とソフトウェア要件Microsoft マネージド デスクトップ。 これらの要件に基づいて、サービスでの使用が既に承認されている特定のデバイスの一覧を確認できます。 ビジネス デバイス サイトMicrosoft マネージド デスクトップ[のサイトWindows 10 Proフィルター](https://www.microsoft.com/en-us/windowsforbusiness/view-all-devices)
+Microsoft マネージド デスクトップに含めるデバイス要件を定期的に評価します。 この記事では、デバイスがデバイスで動作するために満たす必要があるハードウェア要件とソフトウェア要件Microsoft マネージド デスクトップ。 これらの要件に基づいて、サービスでの使用が既に承認されている特定のデバイスの一覧を確認できます。 ビジネス デバイス Microsoft マネージド デスクトップ[ショップ サイトのWindows Proフィルター](https://www.microsoft.com/en-us/windows/business/devices)
 
 > [!NOTE]
-> これらの要件は、いつでも変更できますが、ハードウェア要件の変更に関する 30 日間の通知を提供します。 最近変更された要件は、 でマークされます **\*** 。 
+> これらの要件は、いつでも変更できますが、ハードウェア要件の変更に関する 30 日間の通知を提供します。 最近変更された要件は、 でマークされます <b>\*</b> 。 
 
 ## <a name="check-hardware-requirements"></a>ハードウェア要件の確認
 
@@ -45,13 +45,11 @@ Microsoft マネージド デスクトップに含めるデバイス要件を定
 
 デバイスには、次のソフトウェアがプレインストールされている必要があります。
 
-- Windows 10 Enterprise、Pro、または Pro ワークステーション エディション
+- <b>\*</b>Windows 10またはWindows 11: Enterprise、Pro、Pro ワークステーション エディション
 - 64 ビット バージョンの Microsoft 365 Apps for enterprise 
 - 適用可能なすべてのデバイス ドライバー
 
-> [!NOTE]
-> Windows 11 は、一般提供に達すると、プレインストールされたソフトウェアの追加オプションになります。
->
+
 ### <a name="physical-features"></a>物理機能
 
 デバイスには、次の機能が必要です。
@@ -65,7 +63,7 @@ Microsoft マネージド デスクトップに含めるデバイス要件を定
 
 > [!NOTE]
 >- ARMプロセッサはサポートされていません。
->- Windows 11 には追加の[ハードウェア要件があります](/windows/whats-new/windows-11-requirements)。
+>- <b>\*</b>Windows 11 には追加の[ハードウェア要件があります](/windows/whats-new/windows-11-requirements)。
 
 デバイスは、ストレージとメモリの次の制限を満たすか、または超える必要があります。
 

@@ -12,13 +12,13 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.article: article
-ms.localizationpriority: normal
-ms.openlocfilehash: 6b12451a3c64384d46ad53af14ff17761d515251
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.localizationpriority: medium
+ms.openlocfilehash: 42ee6668c4a38a446e06732fdefdd1f26cf4ef62
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215574"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209515"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Microsoft マネージド デスクトップのドキュメントの変更履歴
 
@@ -120,10 +120,10 @@ ms.locfileid: "59215574"
 --- | ---
 [Microsoft マネージド デスクトップとは](./intro/index.md) | 更新された記事
 [レポートを操作する](working-with-managed-desktop/reports.md) | 更新された記事
-[プライバシーと個人データ](service-description/privacy-personal-data.md) | 更新された記事
+[プライバシーおよび個人データ](service-description/privacy-personal-data.md) | 更新された記事
 [コンプライアンス](intro/compliance.md) | 更新された記事
 [前提条件](get-ready/prerequisites.md) | 更新された記事
-[ネットワーク構成](get-ready/network.md) | 更新された記事
+[ネットワークの構成](get-ready/network.md) | 更新された記事
 
 
 ## <a name="november-2020"></a>2020 年 11 月
@@ -152,7 +152,7 @@ ms.locfileid: "59215574"
 ## <a name="september-2020"></a>2020 年 9 月
 新しい記事または変更された記事 | 説明
 --- | ---
-[プライバシーと個人データ](service-description/privacy-personal-data.md) | 新しい記事
+[プライバシーおよび個人データ](service-description/privacy-personal-data.md) | 新しい記事
 [Microsoft マネージド デスクトップ用に、マップされたドライブを準備する](get-ready/mapped-drives.md) | 更新された記事
 [ユーザーのヘルプ](working-with-managed-desktop/end-user-support.md) | 更新された記事
 [構成可能な設定リファレンス - Microsoft マネージド デスクトップ](working-with-managed-desktop/config-setting-ref.md) | 更新された記事
@@ -178,9 +178,9 @@ ms.locfileid: "59215574"
 [セキュリティ操作 (Microsoft マネージド デスクトップ](service-description/security-operations.md) | 新しい記事
 [管理ポータルへのアクセス](get-started/access-admin-portal.md) | 更新された記事
 [Microsoft 365 Apps for enterprise](get-started/m365-apps.md) | 新しい記事
-[プライバシーと個人データ](service-description/privacy-personal-data.md) | 新しい記事
+[プライバシーおよび個人データ](service-description/privacy-personal-data.md) | 新しい記事
 
-## <a name="july-2020"></a>2020 年 7 月
+## <a name="july-2020"></a>2020 年7 月
 新しい記事または変更された記事 | 説明
 --- | ---
 [Microsoft マネージド デスクトップの要件](service-description/mmd-app-requirements.md) | 更新された記事

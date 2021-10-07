@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: lomayor
 author: lomayor
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4a3aac06f19c7ed86af67f3b72bac8bf367628a8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2014b28635076c11179284b7d90d09707aafa2c1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214564"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206651"
 ---
 # <a name="deploy-supported-services"></a>サポートされているサービスを展開する
 
@@ -84,7 +84,7 @@ Microsoft 365 Defenderサポートされているサービスを展開する場�
 
 サポートされているサービスを展開したら、[次の](m365d-enable.md)Microsoft 365 Defender。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [Microsoft 365 Defender概要](microsoft-365-defender.md)
 - [Microsoft 365 Defender を有効にする](m365d-enable.md)

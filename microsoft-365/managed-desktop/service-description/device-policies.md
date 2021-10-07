@@ -4,17 +4,17 @@ description: デバイスに適用される既定のポリシー Microsoft マ�
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: e4f07adb051dde24d374055d206955ad61df432a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ec545a54988c2634c651ec07084c005467afd565
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218413"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210151"
 ---
 # <a name="device-configuration"></a>デバイス構成
 
@@ -40,7 +40,7 @@ ms.locfileid: "59218413"
 Microsoft マネージド デスクトップ推奨されるセキュリティ テンプレート | ユーザー エクスペリエンスを最適化するセキュリティ 基準に対する推奨される変更のセット。  これらの変更は、Security [Addendum に記載されています](#security-addendum)。 ポリシーの追加に対する更新は、必要に応じて行われます。  
 展開の更新 | ソフトウェア更新Windows段階的な展開を実行するには、「Update for Business」を使用します。 IT 管理者は、展開グループ ポリシーの設定を変更できない。 グループ ベースの展開の詳細については、「[更新](updates.md)プログラムの処理方法」を参照Microsoft マネージド デスクトップ。
 メーター接続 | 既定では、メーター接続 (LTE ネットワークなど) での更新は無効になっていますが、各ユーザーは 設定 > Updates > Advanced オプションでこの機能を個別 **に有効にできます**。 すべてのユーザーがメーター接続を使用して更新を有効にしたい場合は[](../working-with-managed-desktop/admin-support.md)、すべてのデバイスに対してこの設定を有効にする変更要求を送信します。
-| デバイスのポリシー準拠 | これらのポリシーは、すべてのデバイスにMicrosoft マネージド デスクトップされます。 デバイスが必要なセキュリティ構成から離れた場合、デバイスは非準拠として報告されます。
+| デバイスのコンプライアンス | これらのポリシーは、すべてのデバイスにMicrosoft マネージド デスクトップされます。 デバイスが必要なセキュリティ構成から離れた場合、デバイスは非準拠として報告されます。
 
 ## <a name="windows-diagnostic-data"></a>Windows 診断データ
 

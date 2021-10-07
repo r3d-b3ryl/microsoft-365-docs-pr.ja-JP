@@ -13,14 +13,14 @@ ms.custom: seo-marvel-apr2020
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 管理者は、複数地域の環境でSharePointサービスOneDrive管理する方法について学習できます。
-ms.openlocfilehash: 5089a63f4c4f3406c146188151a145cf4b6aa7f2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 347968820e297d9d88e9338af07a5eea1e72d676
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59210783"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205847"
 ---
 # <a name="administering-a-multi-geo-environment"></a>複数地域環境の管理
 

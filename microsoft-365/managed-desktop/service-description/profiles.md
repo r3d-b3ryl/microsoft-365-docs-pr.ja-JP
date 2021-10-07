@@ -7,17 +7,17 @@ author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: e1806a0a21dc5f3fc300442f31da5016ffcf99e7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9f2d0d20d9df68cb10a5a84d6f2ba07d11a4e478
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215273"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210115"
 ---
 # <a name="device-profiles"></a>デバイス プロファイル
 
@@ -48,10 +48,10 @@ ms.locfileid: "59215273"
 
 ****
 
-|特徴|機密データ|Power User|Standard|
+|機能|機密データ|Power User|Standard|
 |---|:---:|:---:|:---:|
 |**外部ファイルのブロックStorage**|はい|はい|いいえ|
-|**[クラウド ブロック レベル](/graph/api/resources/intune-deviceconfig-defendercloudblockleveltype)**|高|高|高|
+|**[クラウド ブロック レベル](/graph/api/resources/intune-deviceconfig-defendercloudblockleveltype)**|高い|高い|高い|
 |**Microsoft アカウントを無効にする**|はい|はい|いいえ|
 |**個人用アカウントを無効OneDrive**|はい|はい|いいえ|
 |**昇格のためのデスクトップのセキュリティ保護に切り替える**|いいえ|はい|いいえ|
@@ -59,7 +59,7 @@ ms.locfileid: "59215273"
 |**デバイスの管理者**|いいえ|はい|いいえ|
 |**Autopilot プロファイル**|MMD 標準|MMD Power User|MMD 標準|
 |**AppLocker**|はい|いいえ|いいえ|
-|**パブリック ストアのブロック**|はい|はい|なし|
+|**パブリック ストアのブロック**|はい|はい|いいえ|
 |
 
 各デバイス プロファイルには、次の項目も含まれます。

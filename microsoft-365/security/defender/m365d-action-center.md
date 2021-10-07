@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 52da535c376af5775f2c75d9259529d2a011791a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d1d3a6cb3b861641fde2c3f6455cf9bbe84ff7e9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218173"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210629"
 ---
 # <a name="the-action-center"></a>アクション センター
 
@@ -49,7 +49,7 @@ ms.locfileid: "59218173"
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="[統合アクション] センター (Microsoft 365 Defender)。":::
 
-例: 
+次に例を示します。 
 
 - 以前にコンプライアンス センター ( ) Office 365 セキュリティ &を使用していた場合は、Microsoft 365 Defender ポータル ( ) で統合 [https://protection.office.com](https://protection.office.com) アクション センターを試してください [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) 。
 - [アクション センター] を [Microsoft Defender セキュリティ センター ] で使用していた場合は、Microsoft 365 Defender ポータル ( ) [https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) で統合アクション センターを試してください [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) 。

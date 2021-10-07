@@ -7,7 +7,7 @@ ms.date: 1/31/2018
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - SPO_Content
@@ -27,12 +27,12 @@ f1.keywords:
 ms.custom:
 - seo-marvel-apr2020
 description: この記事では、アップグレードの計画に役立SharePointサーバー 2007 を使用しているユーザー向け情報を示します。
-ms.openlocfilehash: 38c4713b7dfb705c99d970c5f68a37b031c951a5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9f374e3e4f2282a7740575c60eb52e7095321c92
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59210543"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210199"
 ---
 # <a name="sharepoint-2007-migration-options-to-consider"></a>SharePoint 2007 の移行オプションを検討する
 
@@ -77,7 +77,7 @@ SharePoint サイトの一部またはすべてをクラウドの Microsoft 365 
   
 1. データベース接続を使用して、サーバー 2007 データベースMicrosoft Office SharePointバックアップを取って個別にアップグレードする場所があります。
     
-2. Microsoft Office SharePoint Server 2007 ファームで使用されている重要なドキュメント ライブラリや他の情報の数が少ない場合は、Microsoft Office SharePoint Server 2007 から SharePoint Server 2010 に手動でデータを移動するか、特定のサイトと Web のみを次のバージョンに移動するか (作業を容易にすることができます)。
+2. Microsoft Office SharePoint Server 2007 ファームで使用されている重要なドキュメント ライブラリや他の情報の数が少ない場合は、Microsoft Office SharePoint Server 2007 から SharePoint Server 2010 に手動でデータを移動するか、またはのみ使用できます。特定のサイトと Web を次のバージョンに移動します (作業が容易になる可能性があります)。
     
 3. サーバー 2007 サーバー Microsoft Office SharePointに対して行う操作が少なMicrosoft Office SharePoint、アップグレード時にファームに含まれるデータが安全になります。
     

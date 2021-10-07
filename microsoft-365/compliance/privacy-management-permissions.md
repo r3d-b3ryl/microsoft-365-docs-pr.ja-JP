@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - M365-privacy-management
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: プライバシー管理のアクセス許可を設定し、ユーザーを役割グループに割り当てる方法について説明します。
-ms.openlocfilehash: 6caf786a99e08c2f5c6abfd4c2dbabc438151d06
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b1db7a9fd0bef1429172fe9afef262be4808c164
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216594"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206015"
 ---
 # <a name="set-user-permissions-and-assign-roles-in-privacy-management-preview"></a>プライバシー管理でユーザーのアクセス許可を設定し、役割を割り当てる (プレビュー)
 

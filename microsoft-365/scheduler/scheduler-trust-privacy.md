@@ -6,14 +6,14 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: scheduler
-localization_priority: Normal
+ms.localizationpriority: medium
 description: スケジューラの信頼とプライバシーについて Microsoft 365 AI モデルと人間が支援する AI で使用されます。
-ms.openlocfilehash: 07a15c4f911c577f65ca139c555ad24892221667
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fda3a11ef6195b42f027c360ff91c5cea30bb4ff
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179488"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210103"
 ---
 # <a name="trust-and-privacy-in-scheduler-for-microsoft-365"></a>スケジューラの信頼とプライバシー Microsoft 365
 

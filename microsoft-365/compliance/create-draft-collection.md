@@ -10,18 +10,18 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: 下書きコレクションは、コレクションの検索クエリに一致する検索見積もりを返す Advanced eDiscovery ケース内の保管データ ソースと非保管データ ソースの電子情報開示検索です。 検索結果をレビュー セットにコミットする前に、検索統計を確認し、アイテムのサンプリングをプレビューし、コレクションを修正して再実行できます。
-ms.openlocfilehash: 0354f2a04dfff82f995fe74663633f42ed01e677
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5a65bc97f44b2b5bf32f57f52000e66d68dc428a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163974"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206171"
 ---
 # <a name="create-a-draft-collection-in-advanced-ediscovery"></a>下書きコレクションを作成Advanced eDiscovery
 
@@ -29,7 +29,7 @@ ms.locfileid: "59163974"
 
 ## <a name="before-you-create-a-draft-collection"></a>下書きコレクションを作成する前に
 
-- 下書きコレクションを作成する前に、保管担当者と非保管データ ソースをケースに追加します。 これは、下書きコレクションの作成時にデータ ソースを選択するために必要です。 詳しくは、次のトピックを参照してください。
+- 下書きコレクションを作成する前に、保管担当者と非保管データ ソースをケースに追加します。 これは、下書きコレクションの作成時にデータ ソースを選択するために必要です。 詳細については、以下を参照してください。
 
   - [ケースにカストディアンを追加する](add-custodians-to-case.md)
 

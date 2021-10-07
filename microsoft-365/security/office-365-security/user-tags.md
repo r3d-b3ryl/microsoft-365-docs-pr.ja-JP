@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: 04/21/2021
 audience: ITPro
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -16,12 +16,12 @@ ms.collection:
 description: 管理者は、プラン 2 の Microsoft Defender でユーザー タグを持つユーザーの特定のグループOffice 365学習できます。 タグ フィルターは、Microsoft Defender のアラート、レポート、および調査で、タグ付けされたユーザーをすばやく識別Office 365に使用できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d224718502725e760c6a844f3bfd289bf3dd179c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7659ac6e6d53213deb30d37fc53afbb028e6058e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211534"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206459"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Microsoft Defender のユーザー タグ (Office 365
 
@@ -40,7 +40,7 @@ ms.locfileid: "59211534"
 
 システム タグまたはカスタム タグをユーザーに適用した後、これらのタグをアラート、レポート、調査のフィルターとして使用できます。
 
-- [Alerts](alerts.md)
+- [アラート](alerts.md)
 - [カスタムアラート ポリシー](../../compliance/alert-policies.md#viewing-alerts)
 - [脅威エクスプローラーとリアルタイム検出](threat-explorer.md)
 - [[メール エンティティ] ページ](mdo-email-entity-page.md#other-innovations)
@@ -66,7 +66,7 @@ ms.locfileid: "59211534"
 
   > [!NOTE]
   >
-  > - Microsoft 365 管理センター の対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 Defender ポータルで必要なアクセス許可と、Microsoft 365の他の機能に対するアクセス許可が付与されます。 詳細については、[「管理者の役割について」](../../admin/add-users/about-admin-roles.md) を参照してください。
+  > - Microsoft 365 管理センター の対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 Defender ポータルで必要なアクセス許可と、Microsoft 365の他の機能に対するアクセス許可が付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
   >
   > - ユーザー タグ管理は、タグ リーダーと **タグ マネージャー** の **役割によって制御** されます。
 
@@ -127,7 +127,7 @@ ms.locfileid: "59211534"
 
 3. 表示される詳細フライアウトでは、この記事の「Microsoft 365 Defender ポータルを使用してユーザー タグ[](#use-the-microsoft-365-defender-portal-to-create-user-tags)を作成する」セクションで説明したように、同じウィザードと設定を使用できます。
 
-   **注**:
+   **注意**:
 
    - [ **タグの定義** ] ページは組み込みの **Priority アカウント** システム タグでは使用できないので、このタグの名前を変更したり、説明を変更したりすることはできません。
    - カスタム タグの名前は変更できますが、説明は変更できます。

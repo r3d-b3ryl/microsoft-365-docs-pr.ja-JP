@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 79a8c8f20b2db4f1b3604c5e652c98a6c9898868
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b73103dee0b20abbebc9c10834ba918c71f9c01b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163603"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210653"
 ---
 # <a name="prepare-your-security-posture-for-your-first-incident"></a>最初のインシデントのセキュリティ態勢を準備する
 
@@ -45,7 +45,7 @@ Microsoft 365 Defender、インシデント防止のいくつかの側面に対�
 - 脅威と脆弱性管理の脆弱性評価による [脅威の防止](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)
 - 最新のセキュリティ脅威を理解して、セキュリティ脅威に備える
 
-## <a name="step-1-implement-zero-trust"></a>手順 1。 ゼロ信頼の実装
+## <a name="step-1-implement-zero-trust"></a>手順 1. ゼロ信頼の実装
 
 [ゼロトラスト](/security/zero-trust/) は、モバイルワークフォース、ユーザー、デバイス、アプリケーション、データなど、モダンな環境の複雑な性質を考慮した統合セキュリティ哲学とエンドツーエンド戦略です。 Microsoft 365 Defender では、すべての検出を一貫した方法で管理するための単一のウィンドウを提供することで、セキュリティ運用チームがゼロトラストの指針を簡単に[](/security/zero-trust/#guiding-principles-of-zero-trust)実装できます。 
 

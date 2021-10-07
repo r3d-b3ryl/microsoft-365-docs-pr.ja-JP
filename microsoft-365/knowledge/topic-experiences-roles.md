@@ -12,14 +12,14 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
-localization_priority: None
+ms.localizationpriority: medium
 description: ビバ トピックのユーザー ロールについて説明します。
-ms.openlocfilehash: e26f47e5826ac6db6c41e1b0648dd23398f51c43
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bf245cfc41fa3ad08af74dd2f2efbb8c0ddfef37
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215613"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205799"
 ---
 # <a name="roles-in-microsoft-viva-topics"></a>ユーザーの役割Microsoft Viva トピック
 

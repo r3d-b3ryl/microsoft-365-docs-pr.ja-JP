@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 18f7436c974ab9b976980861ae93bd4b3ea1fc2e
-ms.sourcegitcommit: e001934654119e15149ed29b3079b1019849f59c
+ms.openlocfilehash: cde5f6e00260710416266fd6f4113def9c7baf6f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59934691"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206603"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>[アラートの調査] Microsoft 365 Defender
 
@@ -141,9 +141,10 @@ Microsoft Cloud App Security |`ca{GUID}` <br> 例: `ca123a456b-c789-1d2e-12f1g33
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="ポータル内のアラートの概要ウィンドウのMicrosoft 365 Defenderします。":::
 
-[ **警告の管理]** ウィンドウでは、次の項目を指定できます。
+[ **警告の管理]** ウィンドウでは、次の項目を表示または指定できます。
 
 - アラートの状態 (新規、解決済み、進行中)。
+- アラートが割り当てられているユーザー アカウント
 - アラートの分類 (設定されていない、True アラート、False Alert)。
 - 真のアラートとして分類する場合は、[決定] フィールドのアラートの脅威の種類 **を指定** します。
 - アラートに関するコメント。

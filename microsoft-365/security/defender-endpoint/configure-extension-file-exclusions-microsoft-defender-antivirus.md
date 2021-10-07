@@ -7,21 +7,21 @@ ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.date: 09/14/2021
+ms.date: 10/05/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: e629cfa55467bc7f5f0a021e52cc8ade5118c8c4
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 7936c7023801a5eab75b9b39c69ad0d0568281de
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491591"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205657"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>ファイル拡張子とフォルダーの場所に基づいて除外を構成および検証する
 
@@ -136,7 +136,7 @@ PowerShell を使用して、拡張子、場所、またはファイル名に基
 
 次の表に、PowerShell コマンドレットの部分で使用 `<cmdlet>` できるコマンドレットを示します。
 
-<br>
+<br/><br/>
 
 |構成アクション|PowerShell コマンドレット|
 |:---|:---|
@@ -146,7 +146,7 @@ PowerShell を使用して、拡張子、場所、またはファイル名に基
 
 次の表に、PowerShell コマンドレットの部分で使用できる `<exclusion list>` 値を示します。
 
-<br>
+<br/><br/>
 
 |除外の種類|PowerShell パラメーター|
 |---|---|
@@ -220,7 +220,8 @@ ExclusionPath
 
 ### <a name="system-environment-variables"></a>システム環境変数
 
-次の表に、システム アカウント環境変数の一覧と説明を示します。<br/><br/>
+次の表に、システム アカウント環境変数の一覧と説明を示します。
+    <br/><br/>
     
 |このシステム環境変数...|リダイレクト先|
 |---|---|
@@ -280,10 +281,10 @@ ExclusionPath
 |`%PUBLIC%\RecordedTV.library-ms`|`C:\Users\Public\RecordedTV.library-ms`|
 |`%PUBLIC%\Videos`|`C:\Users\Public\Videos`|
 |`%PUBLIC%\Videos\Sample Videos`|`C:\Users\Public\Videos\Sample Videos`|
-|`%USERPROFILE%`|`C:\Windows\System32\config\systemprofile`|
-|`%USERPROFILE%\AppData\Local`|`C:\Windows\System32\config\systemprofile\AppData\Local`|
-|`%USERPROFILE%\AppData\LocalLow`|`C:\Windows\System32\config\systemprofile\AppData\LocalLow`|
-|`%USERPROFILE%\AppData\Roaming`|`C:\Windows\System32\config\systemprofile\AppData\Roaming`|
+|`%USERPROFILE%`|`C:\Users\UserName`|
+|`%USERPROFILE%\AppData\Local`|`C:\Users\UserName\AppData\Local`|
+|`%USERPROFILE%\AppData\LocalLow`|`C:\Users\UserName\AppData\LocalLow`|
+|`%USERPROFILE%\AppData\Roaming`|`C:\Users\UserName\AppData\Roaming`|
 
 ## <a name="review-the-list-of-exclusions"></a>除外の一覧を確認する
 

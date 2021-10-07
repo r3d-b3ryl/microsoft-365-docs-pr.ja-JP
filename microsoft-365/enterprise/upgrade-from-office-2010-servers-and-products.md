@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 search.appverid:
 - MET150
@@ -23,12 +23,12 @@ f1.keywords:
 - NOCSH
 description: サポートが間もなく終了し、カスタム サポート契約が利用できないので、Office 2010 サーバーとクライアント アプリケーションからアップグレードの計画を開始します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f4f90a34bd4f6c4585cc8900b11808a11f4a2947
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2211df824335e0c9172f21e8ac02c45b72e19c51
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215644"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209551"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Office 2010 サーバー/クライアントからのアップグレードに役立つリソース
 

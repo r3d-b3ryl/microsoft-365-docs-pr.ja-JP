@@ -7,7 +7,7 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 - m365solution-collabgovernance
@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: コラボレーション ガバナンス 計画を作成する方法について説明します。
-ms.openlocfilehash: cd6da85f43d3dc72ee7b9ccd763872dbccfbeb78
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: cce044aecfdc8c905ecd7aa9d87236db5c8f07ea
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213193"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206423"
 ---
 # <a name="create-your-collaboration-governance-plan"></a>コラボレーション ガバナンス 計画の作成
 
@@ -133,7 +133,7 @@ Microsoft 365 への投資は、可能なコンテンツとエクスペリエン
 
 - 組織用にMicrosoft 365チャンピオン プログラムを作成できますか? さらに、世界中の[Microsoft 365](https://aka.ms/O365Champions)チャンピオン プログラムに参加して、独自のチャンピオン プログラムのアイデアとアプローチを取得し、Microsoft 内および周辺の同じ考え方の人々や思考リーダーと接続する方法を検討してください。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [コラボレーション ガバナンス計画のステップ バイ ステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 

@@ -7,14 +7,14 @@ author: jaimeo
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: ec56158a8ccf0c1014b847b04a62db6a14fe992b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ea2e6e95ec76965e01d73bb1ecbd53c798eeca71
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215213"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205715"
 ---
 # <a name="user-support"></a>ユーザー サポート
 

@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2a336a571c33820d289eed9d4d6cd20e56cdfa20
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5573f9da541b62242ad5686672bedc86c7f9e6ac
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211794"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210523"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-storage-account"></a>高度Microsoft 365 Defenderイベントを自分のアカウントにストリーミングするStorage構成する
 
@@ -33,7 +33,7 @@ ms.locfileid: "59211794"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 1. テナントに[Storageアカウント](/azure/storage/common/storage-account-overview)を作成します。
 
@@ -99,7 +99,7 @@ ms.locfileid: "59211794"
 
   ![イベント ハブ リソース ID3 のイメージ。](../defender-endpoint/images/machine-info-datatype-example.png)
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [高度なハンティングの概要](../defender/advanced-hunting-overview.md)
 - [Microsoft 365 Defenderストリーミング API](streaming-api.md)

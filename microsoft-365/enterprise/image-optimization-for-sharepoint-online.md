@@ -7,7 +7,7 @@ ms.date: 9/18/2019
 audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - SPO_Content
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: c7edb02a-fdab-4f91-9a20-cba01dad28ef
 description: Renditions とスプライトを使用して、オンライン の従来の発行サイトでの画像SharePoint向上させる方法について学習します。
-ms.openlocfilehash: 1400b3f3bd78f6c3fda4b587b6974e3aaef18199
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fe3c698dda06559bf6e104650b6b8bb8d81172fa
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165318"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209731"
 ---
 # <a name="image-optimization-for-sharepoint-online-classic-publishing-sites"></a>オンラインクラシック発行サイトSharePointの画像の最適化
 

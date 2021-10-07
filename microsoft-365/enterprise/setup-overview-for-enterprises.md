@@ -7,7 +7,7 @@ ms.date: 11/19/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
 description: これらの概要手順は、ネットワークのセットアップ、ID の作成、id の展開、Microsoft 365 Apps移行を行うのに役立ちます。
-ms.openlocfilehash: ce19d135b46bb848aecb557610bc1ed1703fc686
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 9ace2ce08a48600f20b5e04111a4b2e67d82e8d4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58355870"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205823"
 ---
 # <a name="deploy-microsoft-365-enterprise-for-your-organization"></a>組織Microsoft 365 Enterpriseを展開する
 

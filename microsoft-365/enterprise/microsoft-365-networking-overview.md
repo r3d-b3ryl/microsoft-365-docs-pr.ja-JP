@@ -7,7 +7,7 @@ ms.date: 08/27/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: SaaS サービスにとってネットワークの最適化が重要である理由、ネットワークのMicrosoft 365、SaaS が他のワークロードとは異なるネットワークを必要とする方法について説明します。
-ms.openlocfilehash: c5794f9312ba098d27beb65bfbb272701ac3927f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e5dcbae5a1fbac3b0b4fd4472fdcac2380b84382
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165287"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209707"
 ---
 # <a name="microsoft-365-network-connectivity-overview"></a>Microsoft 365接続の概要
 
@@ -91,7 +91,7 @@ Microsoft 365は、エンドポイント セキュリティと暗号化された
 
 ネットワーク接続の原則の理解と適用Microsoft 365については、「ネットワーク接続[Microsoft 365」を参照してください](microsoft-365-network-connectivity-principles.md)。
 
-## <a name="conclusion"></a>まとめ
+## <a name="conclusion"></a>終わりに
 
 ネットワークパフォーマンスMicrosoft 365最適化すると、不要な障害が取り除かされます。 ネットワーク接続Microsoft 365信頼できるトラフィックとして処理することで、パケット検査やプロキシ帯域幅の競合によって遅延が発生するのを防ぐことが可能です。 クライアント コンピューターとエンドポイント間のローカル接続Office 365、トラフィックを Microsoft グローバル ネットワーク経由で動的にルーティングできます。
 

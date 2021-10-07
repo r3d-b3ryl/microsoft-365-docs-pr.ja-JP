@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c1c8e5fa990e37f4812b8e5429fdbf2fcbfa7b71
-ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
+ms.openlocfilehash: 775db5f94cacbca08993b0cb9aac67019515174a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60124735"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210031"
 ---
 # <a name="onboard-non-windows-devices"></a>Windows 以外のデバイスをオンボードする
 
@@ -63,17 +63,13 @@ Defender for Endpoint は、セキュリティ プラットフォームと非プ
 
 ## <a name="offboard-non-windows-devices"></a>オフボードの非Windowsデバイス
 
-1. サード パーティのドキュメントに従って、Microsoft Defender for Endpoint からサード パーティ製ソリューションを切断します。
+macOS および Linux デバイスの場合は、Microsoft Defender for Endpoint からオフボードを選択できます。 ナビゲーション ウィンドウで、[オフボードの選択 **設定** オペレーティング システムの選択] を選択 \>  \> **して、オフボード プロセスを開始します**。
 
-2. Azure のサードパーティ ソリューションのアクセス許可を削除し、ADします。
-   1. Azure portal
-   2. [アプリケーション **Azure Active Directory > Enterprise] を選択します**。
-   3. オフボードするアプリケーションを選択します。
-   4. [削除] **ボタンを** 選択します。
+サードパーティの統合を無効にすることで、Windows以外のデバイスをオフボードすることもできます。 サードパーティのソリューションを統合することで、Windowsプラットフォームを実行しているデバイスのカバレッジ[を有効にします](https://securitycenter.windows.com/interoperability/partners)。 
 
 ## <a name="related-topics"></a>関連トピック
 
-- [オンボード Windows デバイス](configure-endpoints.md)
+- [Windows デバイスのオンボード](configure-endpoints.md)
 - [オンボード サーバー](configure-server-endpoints.md)
 - [プロキシとインターネット接続の設定を構成する](configure-proxy-internet.md)
 - [Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング](troubleshoot-onboarding.md)

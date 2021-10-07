@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c46ee9cda0ca8bf52a6d62a2be215070eb20856a
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 9539a65af64aa6da24b046402e9720a26dbe5f3e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59356731"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209276"
 ---
 # <a name="turn-on-the-preview-experience-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint のプレビュー エクスペリエンスを有効にする
 
@@ -43,7 +43,7 @@ ms.locfileid: "59356731"
 
 2. [オン] と [オフ]**の間で設定を****切り替え**、[基本設定の保存]**を選択します**。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [Microsoft Defender for Endpoint の一般的な設定を更新する](data-retention-settings.md)
 - [Microsoft Defender for Endpoint の高度な機能を有効にする](advanced-features.md)
 - [Microsoft Defender for Endpoint で電子メール通知を構成する](configure-email-notifications.md)

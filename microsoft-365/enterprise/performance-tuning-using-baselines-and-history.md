@@ -7,7 +7,7 @@ ms.date: 07/08/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
@@ -23,12 +23,12 @@ ms.collection:
 - Ent_O365
 - SPO_Content
 description: クライアント コンピューター接続の履歴を確認して、新しい問題を早期に検出する方法について説明します。
-ms.openlocfilehash: 460bde30a0b292569b045c339066df2860c50989
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3a294bd00f1fdfd6fb8d04130193658c4eeea2d4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59210593"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209599"
 ---
 # <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>ベースラインとパフォーマンス履歴を使用して、Office 365 のパフォーマンスをチューニングする
 
@@ -307,7 +307,7 @@ Office 365、オートメーションと実際のユーザーによって監視�
   
 ![クライアントからクライアントの横のプロキシへの ping をミリ秒単位で表示Office 365値を減算できます。](../media/cd764e77-5154-44ba-a5cd-443a628eb2d9.PNG)
   
-トラブルシューティングの点では、これらのベースラインを維持するだけで興味深いものが見つからかもしれません。 たとえば、通常、プロキシまたは出力ポイントから Office 365 URL に約 40 ~ 59 ミリ秒の待機時間があり、クライアントがプロキシまたは出力ポイントの待機時間が約 3 ~ 7 ミリ秒である場合 (その期間中に表示されるネットワーク トラフィックの量に応じて)、最後の 3 つのクライアントがプロキシまたは出力ベースラインに 45 ミリ秒の待機時間を示している場合は、問題が発生します。
+トラブルシューティングの点では、これらのベースラインを維持するだけで興味深いものが見つからかもしれません。 たとえば、通常、プロキシまたは出力ポイントから Office 365 URL に約 40 ~ 59 ミリ秒の待機時間があり、クライアントがプロキシまたはエグレス ポイントの待機時間が約 3 ~ 7 ミリ秒である場合 (その期間中に表示されるネットワーク トラフィックの量に応じて)、最後の 3 つのクライアントがプロキシまたは出力ベースラインを表示する場合に問題が発生する可能性があります。待機時間は 45 ミリ秒です。
   
 ### <a name="advanced-methods"></a>高度なメソッド
 

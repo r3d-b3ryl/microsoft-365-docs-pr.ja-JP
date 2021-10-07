@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: d7982e8a8c320336a47cd64152b5477be7ae51f5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0520b5dde6cd2cd1d3b59fe05ce32df6412bb7fd
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177488"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210581"
 ---
 # <a name="microsoft-365-defender-integration-with-azure-sentinel"></a>Microsoft 365 Defender と Azure Sentinel との統合
 
@@ -38,7 +38,7 @@ ms.locfileid: "59177488"
 
 Azure Sentinel (プレビュー) の Microsoft 365 Defender コネクタは、すべての Microsoft 365 Defender インシデントとアラート情報を Azure Sentinel に送信し、インシデントの同期を維持します。 
 
-コネクタを追加すると &mdash; 、Microsoft Defender for Endpoint、Microsoft Defender for Identity、Microsoft Defender for Office 365、および Microsoft Cloud App Security から受信した関連するすべてのアラート、エンティティ、関連情報を含む Microsoft 365 Defender インシデントがセキュリティ情報およびイベント管理 (SIEM) データとして Azure Sentinel にストリーミングされ、Azure Sentinel でトリアージとインシデント対応を実行するためのコンテキストが提供されます。 &mdash; 
+コネクタを追加すると &mdash; 、Microsoft Defender for Endpoint、Microsoft Defender for Identity、Microsoft Defender for Office 365、および Microsoft Cloud App Security から受信した関連するすべてのアラート、エンティティ、関連情報を含む Microsoft 365 Defender インシデントが Azure Sentinel にストリーミングされます。 &mdash;セキュリティ情報およびイベント管理 (SIEM) データとして、Azure Sentinel でトリアージおよびインシデント対応を実行するためのコンテキストを提供します。 
 
 Azure Sentinel では、インシデントは Microsoft 365 Defender と双方向に同期されたままであり、インシデントの調査と対応のために Azure ポータルの Microsoft 365 Defender ポータルと Azure Sentinel の両方の利点を利用できます。
 

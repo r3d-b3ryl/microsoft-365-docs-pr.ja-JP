@@ -10,17 +10,17 @@ ms.service: o365-solutions
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 description: 複数地域の環境内SharePoint別の地域の場所にサイトを移動し、ユーザーに変更の期待を伝える方法について学習します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9c7ad267dcb32e055038e5186595db5776999263
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 44f6b8323f99419706378ff963259cf5c5fa85e9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212504"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209671"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>別の地域の場所に SharePoint サイトを移動する
 
@@ -219,7 +219,7 @@ SharePoint 2013 ワークフローは、サイトの移動後に再発行する�
 
 ほとんどの場合、フローは SharePoint サイトの地域移動後に引き続き操作することができるようになります。 移動が完了したらテストすることをお勧めします。
 
-### <a name="power-apps"></a>Power Apps
+### <a name="power-apps"></a>Power アプリ
 
 Power Apps場所に再作成する必要があります。
 

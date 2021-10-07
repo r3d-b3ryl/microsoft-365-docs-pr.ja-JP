@@ -10,13 +10,13 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.custom: Adopt
 search.appverid: ''
-localization_priority: Normal
-ms.openlocfilehash: a8e95586dc5e3d2da2cbd6ace9369e4b2d17afed
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.localizationpriority: medium
+ms.openlocfilehash: 9d33687f23954216371f4e827e92246b3d63e61c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215584"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205787"
 ---
 # <a name="get-started-driving-adoption-of-microsoft-viva-topics"></a>ユーザーの導入を促進するMicrosoft Viva トピック
 
@@ -87,7 +87,7 @@ Viva トピックを最大限に活用するため、この前提条件のリス
 
 人事マネージャーは、新入社員に情報を提供する必要があります。 これらのユーザーは、迅速かつ効率的にオンボードする必要がある適切なリソース、ドキュメント、およびチーム メンバーを指し示す必要があります。 新入社員は、複数のリポジトリ間で検索したり、既に使用しているアプリケーションを離れることなく、必要な情報をすばやく見つけ出すソリューションを探しています。
 
-例:
+次に例を示します。
 
 - 従業員 (ヨルダン) が新しい役割を引き受け、または新しく採用され、役割から始まるばかりです。 ヨルダンは、可能な限り迅速に関与し、生産性を高めてほしいと考えています。 しかし、ヨルダンでは、開始場所を見つける際の支援も必要です。
 - ヨルダンがトピック ページを作成する前に役割を果たした同僚 (Kim) は、新入社員や、その情報を探している他の誰かを助けることができるトピック ページを作成しました。

@@ -8,19 +8,19 @@ manager: laurawi
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: テキスト、注釈、変換、ネイティブ Advanced eDiscoveryなど、コンテンツの表示方法を選択します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 1aab4f5e2f5674392fd5577afdb12865b9405380
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1fd0d6a5001a2d01b542a276aad142e6d52821c2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216164"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205967"
 ---
 # <a name="view-documents-in-a-review-set-in-advanced-ediscovery"></a>[ドキュメント] でレビュー セット内のドキュメントを表示Advanced eDiscovery
 

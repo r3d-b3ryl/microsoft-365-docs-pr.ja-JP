@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 3ff62265783be846a95964164e372100fe1ef662
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2752de976329f3fbef047557e6a626afd05a520f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220113"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206639"
 ---
 # <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender高度なハンティング API
 
@@ -61,7 +61,7 @@ ms.locfileid: "59220113"
 アクセス許可の種類 | アクセス許可 | アクセス許可の表示名
 -|-|-
 アプリケーション | AdvancedHunting.Read.All | 高度なクエリを実行する
-委任 (職場または学校アカウント) | AdvancedHunting.Read | 高度なクエリを実行する
+委任 (職場または学校のアカウント) | AdvancedHunting.Read | 高度なクエリを実行する
 
 >[!Note]
 > ユーザー資格情報を使用してトークンを取得する場合:
@@ -88,7 +88,7 @@ Content-Type | application/json
 
 パラメーター | 型 | 説明
 -|-|-
-クエリ | テキスト | 実行するクエリ。 **注: 必須**
+Query | テキスト | 実行するクエリ。 **注: 必須**
 
 ## <a name="response"></a>応答
 
@@ -104,7 +104,7 @@ Content-Type | application/json
 
 次の例では、ユーザーが以下のクエリを送信し、、 、および を含む API 応答オブジェクト `Stats` `Schema` を受け取ります `Results` 。
 
-### <a name="query"></a>クエリ
+### <a name="query"></a>Query
 
 ```json
 {

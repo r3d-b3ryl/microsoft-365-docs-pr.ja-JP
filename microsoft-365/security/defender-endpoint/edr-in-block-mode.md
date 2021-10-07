@@ -11,7 +11,7 @@ ms.reviewer: shwetaj
 audience: ITPro
 ms.topic: article
 ms.prod: m365-security
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.custom:
 - next-gen
 - edr
@@ -20,12 +20,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: e58d98f059dc723b06a65bfad36d6e72807e2f63
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 41c51657d748ef1503c5540b1162d7ea43722b9f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042917"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205549"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>ブロック モードのエンドポイントでの検出と対応 (EDR)
 
@@ -126,7 +126,7 @@ Windows 10、Windows Server、バージョン 1803 以降、Windows Server 2019�
 
 <br/><br/>
 
-|Method|Procedure|
+|メソッド|Procedure|
 |---|---|
 |PowerShell|<ol><li>選択したスタート メニュー入力を開始し、結果 `PowerShell` でWindows PowerShellを開きます。</li><li>種類`Get-MpComputerStatus`</li><li>結果の一覧の **[AMRunningMode]** 行で、次のいずれかの値を探します。<ul><li>`Normal`</li><li>`Passive Mode`</li></ul></li></ol> <p> 詳細については [、「Get-MpComputerStatus」を参照してください](/powershell/module/defender/get-mpcomputerstatus)。|
 |コマンド プロンプト|<ol><li>コマンド プロンプトをスタート メニューし、入力を開始し、結果 `Command Prompt` Windowsコマンド プロンプトを開きます。</li><li>種類`sc query windefend`</li><li>結果の一覧の STATE **行で、** サービスが実行されているのを確認します。</li></ol>|

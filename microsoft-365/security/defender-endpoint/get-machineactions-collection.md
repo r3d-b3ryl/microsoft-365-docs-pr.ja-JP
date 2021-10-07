@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 68583eeb7daaf755f3e095ef80e0a221f54f0766
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a3e2c33deff18f4cd509fddbc113605ab411ddc1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59210263"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209803"
 ---
 # <a name="list-machineactions-api"></a>MachineActions API の一覧表示
 
@@ -79,9 +79,9 @@ GET https://api.securitycenter.microsoft.com/api/machineactions
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
-Authorization|String|ベアラー {token}。 **必須**
+Authorization|String|ベアラー {token}。 **必須**。
 
 ## <a name="request-body"></a>要求本文
 
@@ -207,6 +207,6 @@ Content-type: application/json
 }
 ```
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [エンドポイント用 Microsoft Defender を使用した OData クエリ](exposed-apis-odata-samples.md)

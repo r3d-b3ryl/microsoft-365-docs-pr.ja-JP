@@ -2,27 +2,25 @@
 title: Microsoft Intune を使用した Android 用 Microsoft Defender for Endpoint の展開
 description: Microsoft Defender for Endpoint を Android に展開する方法について説明Microsoft Intune
 keywords: microsoft、 defender、 Microsoft Defender for Endpoint, mde, android, installation, deploy, uninstallation,
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f24e7242f56e91853e14cf91d3c97df239b625ee
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: b1b445f902445244f98c5dc8768c76a554098f73
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59934229"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210163"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-android-with-microsoft-intune"></a>Microsoft Intune を使用した Android 用 Microsoft Defender for Endpoint の展開
 
@@ -262,7 +260,7 @@ Defender for Endpoint は、Intune 経由で管理対象デバイスのデバイ
 
     :::image type="content" alt-text="エンドポイント ポータル用 Microsoft Defender のイメージ。" source="images/9fe378a1dce0f143005c3aa53d8c4f51.png" lightbox="images/9fe378a1dce0f143005c3aa53d8c4f51.png":::
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [Android 用 Microsoft Defender for Endpoint の概要](microsoft-defender-endpoint-android.md)
 - [Android 機能用に Microsoft Defender for Endpoint を構成する](android-configure.md)

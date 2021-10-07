@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -16,12 +16,12 @@ ms.collection:
 description: 管理者は、セキュリティ ポータルのテナント許可/ブロック一覧で許可とブロックを管理する方法について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 511dde8921f9406f753c857e2d813ccd80976c40
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 8411ca98b48b19c7ecf3085c450fbf40e5185474
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59353636"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210391"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>テナントの許可/禁止リストを管理する
 
@@ -121,19 +121,19 @@ Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Pro
      - **Action**: 値 Allow **or** **Block**.
      - **最終更新日時**
      - **Remove on**
-     - **メモ**
+     - **注**
    - **URL**:
      - **値**: URL。
      - **Action**: 値 Allow **or** **Block**.
      - **最終更新日時**
      - **Remove on**
-     - **メモ**
+     - **注**
    - **Files**
      - **値**: ファイル ハッシュ。
      - **Action**: 値 Allow **or** **Block**.
      - **最終更新日時**
      - **Remove on**
-     - **メモ**
+     - **注**
    - 「**スプーフィング**」
      - **スプーフィングされたユーザー**
      - **インフラストラクチャの送信**

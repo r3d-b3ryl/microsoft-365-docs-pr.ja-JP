@@ -9,18 +9,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 33df420b8b480b6957e2ec71b3bb5494f61fce63
-ms.sourcegitcommit: 7be84e7940c63b4c958b9da875d323bead9aae95
+ms.openlocfilehash: 0d2da96b421dfa594836698f2849f615e8f0ccf5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2021
-ms.locfileid: "59453618"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209443"
 ---
 # <a name="machineaction-resource-type"></a>MachineAction リソースの種類
 
@@ -40,7 +40,7 @@ ms.locfileid: "59453618"
 
 - 詳細については、「応答アクション [」を参照してください](respond-machine-alerts.md)。
 
-|メソッド|戻り値の型|Description|
+|メソッド|戻り値の型|説明|
 |---|---|---|
 |[MachineActions の一覧表示](get-machineactions-collection.md)|[マシン アクション](machineaction.md)|[ [マシン アクション] エンティティを](machineaction.md) 一覧表示します。|
 |[MachineAction の取得](get-machineaction-object.md)|[マシン アクション](machineaction.md)|単一の [Machine Action エンティティを取得](machineaction.md) します。|
@@ -61,7 +61,7 @@ ms.locfileid: "59453618"
 
 ## <a name="properties"></a>プロパティ
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |---|---|---|
 |ID|Guid|Machine [Action エンティティの](machineaction.md) ID。|
 |type|列挙|アクションの種類。 指定できる値は、「RunAntiVirusScan」、"Offboard"、"Live Response"、"CollectInvestigationPackage"、"Isolate"、"Unisolate"、"StopAndQuarantineFile"、"RestrictCodeExecution"、"UnrestrictCodeExecution"です。|

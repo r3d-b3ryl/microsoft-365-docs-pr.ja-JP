@@ -2,14 +2,13 @@
 title: Microsoft Defender for Endpoint をリングに展開する
 description: リングに Microsoft Defender for Endpoint を展開する方法について説明します。
 keywords: 展開、リング、評価、パイロット、インサイダーファースト、インサイダースロー、セットアップ、オンボード、フェーズ、展開、展開、導入、構成
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +17,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a9b7d78893f91242f5570a0df9fcbc3cab55bd4b
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 5894fa9fea9a6970981f1d1171af9097daa697e0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59399300"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209979"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-in-rings"></a>Microsoft Defender for Endpoint をリングに展開する
 
@@ -88,7 +87,7 @@ Microsoft Defender for Endpoint は、サービスにオンボードできるさ
 
 ****
 
-|Endpoint|展開ツール|
+|エンドポイント|展開ツール|
 |---|---|
 |**Windows**|[ローカル スクリプト (最大 10 台のデバイス)](configure-endpoints-script.md) <p> **注**: 10 台を超えるデバイスを実稼働環境に展開する場合は、代わりに Group Policy メソッドを使用するか、以下に示す他のサポートされているツールを使用します。 <p> [グループ ポリシー](configure-endpoints-gp.md) <p> [Microsoft エンドポイント マネージャー/ モバイル デバイス マネージャー](configure-endpoints-mdm.md) <p> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <p> [VDI スクリプト](configure-endpoints-vdi.md) <p> [Azure Defender との統合](configure-server-endpoints.md#integration-with-azure-defender)|
 |**macOS**|[ローカル スクリプト](mac-install-manually.md) <p> [Microsoft エンドポイント マネージャー](mac-install-with-intune.md) <p> [JAMF Pro](mac-install-with-jamf.md) <p> [モバイル デバイス管理](mac-install-with-other-mdm.md)|
@@ -103,7 +102,7 @@ Microsoft Defender for Endpoint は、サービスにオンボードできるさ
 
 次の資料を使用して、組織に最適な Microsoft Defender for Endpoint アーキテクチャを選択します。
 
-|**アイテム**|**説明**|
+|**項目**|**説明**|
 |:-----|:-----|
 |[![Microsoft Defender for Endpoint 展開戦略のサム イメージ。](images/mde-deployment-strategy.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  \| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) | アーキテクチャ教材は、次のアーキテクチャの展開を計画するのに役立ちます。 <ul><li> クラウド-ネイティブ </li><li> 共同管理 </li><li> オンプレミス</li><li>評価とローカル オンボード</li></ul>
 
@@ -132,4 +131,4 @@ macOS と Linux を使用すると、いくつかのシステムを使用して�
 新機能をプレビューし、早期のフィードバックを提供するには、ベータ版またはプレビュー版を使用する一部のデバイスをエンタープライズで構成する必要があります。
 
 > [!WARNING]
-> 初期インストール後にチャネルを切り替えるには、製品を再インストールする必要があります。 製品チャネルを切り替えるには: 既存のパッケージをアンインストールし、新しいチャネルを使用するようにデバイスを再構成し、このドキュメントの手順に従って新しい場所からパッケージをインストールします。
+> 初期インストール後にチャネルを切り替えるには、製品を再インストールする必要があります。製品チャネルを切り替えるには: 既存のパッケージをアンインストールし、新しいチャネルを使用するようにデバイスを再構成し、このドキュメントの手順に従って新しい場所からパッケージをインストールします。

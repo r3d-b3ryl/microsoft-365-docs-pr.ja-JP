@@ -4,17 +4,17 @@ description: デバイスの注文方法
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 693ee9e6c9835c73c10ced059b627a902daa523e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 807d3ea5fa6abed91c54395bd855c89595460370
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215464"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205727"
 ---
 # <a name="order-microsoft-managed-desktop-devices"></a>デバイスMicrosoft マネージド デスクトップ注文する
 

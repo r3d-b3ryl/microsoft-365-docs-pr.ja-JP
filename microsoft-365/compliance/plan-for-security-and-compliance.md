@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
@@ -17,12 +17,12 @@ ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: このランディング ページには、セキュリティとコンプライアンスに関するリンクと計画情報がOffice 365。
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6300d254e67cad466dc25a902fc70f43ec0b776a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 446452c457dcf0ed56fb4b5c453a57c44662fad0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177919"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206051"
 ---
 # <a name="plan-for-security-amp-compliance"></a>セキュリティコンプライアンスを &amp; 計画する
 

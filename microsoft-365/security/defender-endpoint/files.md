@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9dffc5d2b7badba0a2f0e0b986973841ad488683
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4e7cbc65971c2f916d362e6a997d73e5581c9022
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220553"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205501"
 ---
 # <a name="file-resource-type"></a>ファイル リソースの種類
 
@@ -52,20 +52,20 @@ Defender for Endpoint のファイル エンティティを表します。
 
 |プロパティ | 型 | 説明 |
 |:---|:---|:---|
-|sha1 | 文字列 | ファイル コンテンツの Sha1 ハッシュ |
-|sha256 | 文字列 | ファイル コンテンツの Sha256 ハッシュ |
+|sha1 | String | ファイル コンテンツの Sha1 ハッシュ |
+|sha256 | String | ファイル コンテンツの Sha256 ハッシュ |
 |globalPrevalence | Null 許容長 | 組織全体でのファイルの普及率 |
 |globalFirstObserved | DateTimeOffset | ファイルが初めて観察された場合 |
 |globalLastObserved | DateTimeOffset | ファイルが最後に観察された時刻 |
 |size | Null 許容長 | ファイルのサイズ |
-|fileType | 文字列 | ファイルの種類 |
+|fileType | String | ファイルの種類 |
 |isPeFile | ブール値 | ファイルが移植可能な実行可能ファイルの場合は true ("DLL"、"EXE"など) |
-|filePublisher | 文字列 | ファイル発行元 |
-|fileProductName | 文字列 | 製品名 |
+|filePublisher | String | ファイル発行元 |
+|fileProductName | String | 製品名 |
 |署名者 | String | ファイル署名者 |
 |issuer | String | ファイル発行者 |
 |signerHash | String | 署名証明書のハッシュ |
-|isValidCertificate | Boolean | Microsoft Defender for Endpoint エージェントによって証明書の署名が正常に確認されました |
+|isValidCertificate | ブール値 | Microsoft Defender for Endpoint エージェントによって証明書の署名が正常に確認されました |
 |determinationType | String | ファイルの決定の種類 |
 |determinationValue | String | 判定値 |
 

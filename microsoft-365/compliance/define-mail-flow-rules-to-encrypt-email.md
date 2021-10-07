@@ -8,7 +8,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkMAC
 description: 管理者は、メール フロー ルール (トランスポート ルール) を作成して、メール フロー ルールを使用してメッセージを暗号化および復号化Office 365 Message Encryption。
-ms.openlocfilehash: fe08753f3d0e12091a71cc3882dcca80380d82ca
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 73ff2ae12d6d0857760909c43cf12c4bbd84c13b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59193210"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206147"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages"></a>メール メッセージを暗号化するメール フロー ルールを定義する
 
