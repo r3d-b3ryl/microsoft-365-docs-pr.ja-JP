@@ -9,7 +9,7 @@ ms.reviewer: sinakassaw, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -25,12 +25,12 @@ ms.custom:
 search.appverid: MET150
 description: 製品ライセンスを特定のユーザーに割り当てるのか、またはユーザー ライセンスを特定の製品に割り当てるのかによって、ライセンスを割り当てます。
 ms.date: 09/16/2021
-ms.openlocfilehash: b9fb8a670b649437a894619369731a5085c36804
-ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
+ms.openlocfilehash: eb122a7bce8aba070bf50e4654a54db6c40a1157
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59785941"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164550"
 ---
 # <a name="assign-licenses-to-users"></a>ユーザーにライセンスを割り当てる
 
@@ -45,7 +45,7 @@ ms.locfileid: "59785941"
 
 ## <a name="before-you-begin"></a>はじめに
 
-- ライセンスを割り当てるには、グローバル、ライセンス、またはユーザー管理者である必要があります。 詳細については、「[Microsoft 365 の管理者の役割](../add-users/about-admin-roles.md)」を参照してください。
+- ライセンスを割り当てるには、グローバル管理者、ライセンス管理者、またはユーザー管理者である必要があります。詳細については「[Microsoft 365 の管理者ロールについて](../add-users/about-admin-roles.md)」を参照してください。
 - [Office 365 PowerShell を使用してライセンスをユーザー アカウントに割り当てる](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md)ことができます。
 - グループ ベースのライセンスを使用するには、「[Azure Active Directory でのグループ メンバーシップによるユーザーへのライセンスの割り当て](/azure/active-directory/users-groups-roles/licensing-groups-assign)」を参照してください。
 - Sway などの一部のサービスでは、ユーザーに自動的に割り当てられるため、個別に割り当てる必要はありません。
@@ -77,7 +77,7 @@ ms.locfileid: "59785941"
 
 3. 製品の詳細ページで、[**ライセンスの割り当て**] を選択します。
 
-4. [**ユーザーにライセンスを割り当てる**] ウィンドウで、名前の入力を開始し、結果から名前を選択して一覧に追加します。 最大 20 人のユーザーを同時に追加することができます。
+4. **[ユーザーにライセンスを割り当てる]** ウィンドウで、名前の入力を開始し、結果から名前を選択して一覧に追加します。一度に最大 20 ユーザーまで追加できます。
 
 4. 特定のアイテムへのアクセス権を割り当てまたは削除するには、[**アプリとサービスをオンまたはオフにする**] を選択します。
 

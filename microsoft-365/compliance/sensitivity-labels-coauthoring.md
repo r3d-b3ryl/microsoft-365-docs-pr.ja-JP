@@ -8,17 +8,17 @@ manager: laurawi
 audience: Admin
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: デスクトップ アプリで共同編集と自動保存を有効にする設定をオンにして、SharePoint、OneDrive でドキュメントのラベル付けと暗号化が行えます。
-ms.openlocfilehash: 3a538f866be9d43088ab22923b41c6b070855ea3
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: fc519ea7a8d76135b4d536a64e6a411844bd3e47
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59356127"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151052"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>機密度ラベルを使用して暗号化されたファイルの共同編集を有効にする
 
@@ -112,7 +112,7 @@ Office デスクトップ アプリの共同編集をサポートする設定を
 - iOS 用 Office アプリと Android 用 Office アプリは現在サポートされていません。
 
 - 共同編集と自動保存は、次の [暗号化用の構成](encryption-sensitivity-labels.md#configure-encryption-settings) のどれかを使用する Office ドキュメントのラベル付けと暗号化へはサポートされず、使用もできません。
-    - **ラベルを適用する場合にユーザーがアクセス許可を割り当てられ**、**Word、PowerPoint、Excel でユーザーにアクセス許可を指定するように求める** のチェックボックスが選択されています。 この構成は、"ユーザー定義のアクセス許可" と呼ばれる場合があります。
+    - **[ラベルの適用時にユーザーがアクセス許可を割り当てる]** と、チェックボックス **[Word、PowerPoint、Excel で、ユーザーにアクセス許可の指定を求めるプロンプトを表示する]** が選択されています。この構成は、"ユーザー定義のアクセス許可" と呼ばれることもあります。
     - **コンテンツへのユーザー アクセスは有効期限が切れています** は、**[使用しない]** 以外の値が設定されています。
     - **二重キー暗号化** が選択されています。
     
@@ -123,7 +123,7 @@ Office デスクトップ アプリの共同編集をサポートする設定を
 ## <a name="how-to-enable-co-authoring-for-files-with-sensitivity-labels"></a>機密度ラベルを使用したファイルの共同編集を有効にする方法
 
 > [!CAUTION]
-> この設定をオンにできるのは、一方向の操作によります。 メタデータの変更、前提条件、制限事項、およびこのページに記載されている既知の問題を確認して理解した上で、有効にします。
+> この設定をオンにすることは一方向のアクションです。この機能がプレビュー中は、メタデータの変更、前提条件、制限事項、このページに記載されている既知の問題をすべて確認して理解した上で実行してください。
 
 プレビュー期間中に既にこの設定を有効にしている場合は、それ以上の操作は必要ないので、この手順を省略できます。
 

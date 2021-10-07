@@ -7,7 +7,7 @@ manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection:
@@ -22,12 +22,12 @@ ms.custom:
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 recommendations: false
 description: セキュリティと共同作業の簡便さのバランスを取りながら、3 つの階層の保護を使用して、ファイル共有セキュリティを強化するために、Teams を構成する方法について説明します。
-ms.openlocfilehash: 5cd06f540ba96f55aa52a1cc9b5e6e7c54c7bbab
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 279e338af6db4d82291209deb66e1ea1eef74630
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59217883"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202335"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>3 層の保護を使ってチームを構成する
 
@@ -52,7 +52,7 @@ ms.locfileid: "59217883"
 
 |-|ベースライン (パブリック)|ベースライン (プライベート)|機密|高機密|
 |:-----|:-----|:-----|:-----|:-----|
-|プライベート チームまたはパブリック チーム|パブリック|Kirkland|Kirkland|Kirkland|
+|プライベート チームまたはパブリック チーム|パブリック|プライベート|プライベート|プライベート|
 |誰にアクセス権が与えられるか|B2B のユーザーを含む組織の全員。|チームのメンバーのみ。 他のユーザーが関連するサイトに対するアクセスを要求できる。|チームのメンバーのみ。|チームのメンバーのみ。|
 |プライベート チャネル|所有者とメンバーがプライベート チャネルを作成できる|所有者とメンバーがプライベート チャネルを作成できる|所有者のみがプライベート チャネルを作成できる|所有者のみがプライベート チャネルを作成できる|
 |サイトレベルのゲスト アクセス|**新規および既存のゲスト** (既定値)。|**新規および既存のゲスト** (既定値)。|チームのニーズに応じて、**新規および既存のゲスト** または **組織内のユーザーのみ**。|チームのニーズに応じて、**新規および既存のゲスト** または **組織内のユーザーのみ**。|
@@ -122,7 +122,7 @@ Teams のゲスト共有は既定ではオンになっていますが、機密�
 
 ![Azure Active Directory 条件付きアクセス ポリシーにある Office 365 クラウド アプリのスクリーンショット。](/sharepoint/sharepointonline/media/azure-ca-office365-policy.png)
 
-すべての Microsoft 365 サービスに関連するポリシーを使用すれば、セキュリティが向上し、ユーザー環境を改善することができるようになります。 たとえば、SharePoint だけで管理対象ではないデバイスへのアクセスをブロックすると、ユーザーは管理対象ではないデバイスを使用してチーム内のチャットにアクセスできますが、**[ファイル]** タブにアクセスしようとするとアクセスできなくなります。Office 365 クラウド アプリを使用すると、[サービスの依存関係](/azure/active-directory/conditional-access/service-dependencies) に関する問題を回避できます。
+すべての Microsoft 365 サービスに影響を与えるポリシーを使用すると、セキュリティが向上し、ユーザーのエクスペリエンスが向上する可能性があります。たとえば、SharePoint でのみ管理されていないデバイスへのアクセスをブロックすると、ユーザーは管理されていないデバイスを使用してチーム内のチャットにアクセスできますが、**Files** タブにアクセスしようとするとアクセスできなくなります。Office 365 クラウド アプリを使用すると、[サービスの依存関係](/azure/active-directory/conditional-access/service-dependencies)に関する問題を回避できます。
 
 ## <a name="next-step"></a>次の手順
 

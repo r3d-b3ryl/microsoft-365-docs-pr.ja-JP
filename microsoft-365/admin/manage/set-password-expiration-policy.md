@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
@@ -24,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: Microsoft 365 管理センターで、管理者がビジネス、学校、または非営利団体のパスワード有効期限ポリシーを設定する方法について説明します。
-ms.openlocfilehash: 48c4df727527000cf5e2676b52fd9b39e5da733d
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 53c4e1ac80606e4f2a895a4f008206070cafe3c5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775854"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60171785"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>組織のパスワード有効期限ポリシーを設定します。
 
@@ -59,7 +60,7 @@ ms.locfileid: "59775854"
   
 1. パスワードの有効期限が切れる頻度を入力します。14 〜 730 の日数を選択します。
   
-6. 2 つ目のボックスに、パスワードが期限切れになる前にユーザーに通知する日数を入力して、[ **保存** ] を選択します。 日数を 1 から 30 から選びます。
+6. 2 つ目のボックスに、パスワードが期限切れになる前にユーザーに通知する日数を入力して、**[保存]** をクリックします。日数を 1 から 30 のうちから選びます。
 
 > [!NOTE]
 > 基本認証をご利用の場合、Office 365 ポータルまたは Outlook 以外の Office アプリでは、パスワードの有効期限の通知はサポートされなくなりました。先進認証を使用した Outlook では、パスワードの有効期限通知はサポートされていません。
@@ -70,7 +71,7 @@ Outlook アプリのみを使用するユーザーには、キャッシュで有
 
 ## <a name="prevent-last-password-from-being-used-again"></a>最後に使用したパスワードの再使用を禁止する
 
-ユーザーが古いパスワードを再使用できないようにするには、オンプレミスの Active Directory (AD) でパスワードの履歴の記録を適用します。 詳細については、[「カスタムパスワードポリシーを作成する 」](/azure/active-directory-domain-services/password-policy#create-a-custom-password-policy)を参照してください。
+ユーザーが古いパスワードを再使用できないようにするには、オンプレミスの Active Directory (AD) でパスワードの履歴の記録を適用します。「[カスタム パスワード ポリシーの作成](/azure/active-directory-domain-services/password-policy#create-a-custom-password-policy)」をご覧ください。
 
 Azure AD では、ユーザーがパスワードを変更する場合、前回のパスワードは使用できません。 パスワード ポリシーは、Azure AD で直接作成および管理されるすべてのユーザーアカウントに適用されます。 このパスワード ポリシーは変更できません。 詳細については、「[Azure AD のパスワード ポリシー](/azure/active-directory/authentication/concept-sspr-policy#password-policies-that-only-apply-to-cloud-user-accounts)」を参照してください。
 

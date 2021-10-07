@@ -9,19 +9,19 @@ ms.date: 08/14/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
 ms.custom: ''
 description: 従業員がいつでもどこからでもリモートで作業できるようにするセキュリティとインフラストラクチャを構成します。
-ms.openlocfilehash: 38dc7110c44b3b9acf20283a4156b3eccc0f2165
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 29b97c570972527ef30f3333797a213bf2722932
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163425"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176321"
 ---
 # <a name="configure-a-team-with-security-isolation-in-a-devtest-environment"></a>開発/テスト環境でセキュリティの分離を使用してチームを構成する
 
@@ -46,7 +46,7 @@ ms.locfileid: "59163425"
 
 まず、Azure ポータルでセキュリティ グループを作成します。
 
-1. ブラウザーで新しいタブを開き、Azure portal ([https://portal.azure.com](https://portal.azure.com)) に移動します。 必要に応じて、Microsoft 365 E5 の試用版または有料サブスクリプション用の全体管理者アカウントの資格情報でサインインします。
+1. ブラウザーで別のタブを作成し、Azure portal ([https://portal.azure.com](https://portal.azure.com)) に移動します。必要に応じて、Microsoft 365 E5 の試用版または有料サブスクリプション用のグローバル管理者アカウントの資格情報でサインインします。
 
 2. Azure Portal で **[Azure Active Directory] > [グループ]** の順にクリックします。
 
@@ -145,11 +145,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 4. ラベル名に **会社戦略** と入力します。
 5. ツール ヒントに **シニア リーダーシップの会社戦略文書** と入力し、[**次へ**] をクリックします。
 6. **[暗号化]** ページの **[暗号化]** ドロップダウンで、**[適用]** を選びます。
-7. チームのアクセス許可を追加するには:<br>
-  a. **[アクセス許可の割り当て]** をクリックします。<br>
-  b. **[ユーザーまたはグループの追加]** をクリックして、**会社戦略** を選択してから [**追加**] をクリックします。<br>
-  c.  **[アクセス許可の選択]** をクリックします。<br>
-  d.  ドロップダウン リストから **[共同編集者]** を選択し、**[保存]** をクリックします。<br>
+7. チームのアクセス許可を追加するには:<br> a. **[アクセス許可の割り当て]** をクリックします。<br> b. **[ユーザーまたはグループの追加]** をクリックして、**[会社戦略]** を選択してから **[追加]** をクリックします。<br> c. **[アクセス許可の選択]** をクリックします。<br> d. ドロップダウン リストから **[共同編集者]** を選択し、**[保存]** をクリックします。<br>
 8. [**次へ**] をクリックします。
 9. **[コンテンツのマーキング]** ページで、**[次へ]** をクリックします。
 10. **[サイトとグループの設定]** ページで、**[サイトとグループの設定]** を **[オン]** に設定します。

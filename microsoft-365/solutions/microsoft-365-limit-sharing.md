@@ -19,15 +19,15 @@ f1.keywords: NOCSH
 ms.custom:
 - admindeeplinkMAC
 - admindeeplinkTEAMS
-localization_priority: Priority
+ms.localizationpriority: high
 recommendations: false
 description: Microsoft 365 で共有を制限または無効にするオプションについて説明します。
-ms.openlocfilehash: 500d2dd8aa1a657cd3a71cb87b30a2faf63bb4c4
-ms.sourcegitcommit: dd4214a309c71292490743752da728cec7bffe88
+ms.openlocfilehash: 9d1784e4520b59aedc53a71110f1c7ab0e9d8914
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59479767"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154160"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>Microsoft 365 の共有を制限する
 
@@ -48,7 +48,7 @@ ms.locfileid: "59479767"
 
 ユーザーが共有コンテンツにアクセスする条件を制限することもできます。 詳細については、この記事で後述する [条件付きアクセス](#conditional-access) を参照してください。
 
-組織内の共有は、この記事で説明する管理者コントロールを使用して制限できますが、安全な共有環境を作成するために Microsoft 365 で使用可能なセキュリティとコンプライアンスの機能を使用することを検討するようお勧めします。 詳細については、「[Microsoft 365 による SharePoint のファイルの共同作業](/sharepoint/deploy-file-collaboration)」および「[セキュリティの分離を使用してチームを構成する](secure-teams-security-isolation.md)」を参照してください。
+組織内の共有は、この記事で説明する管理者コントロールを使用して制限できますが、安全な共有環境を作成するために Microsoft 365 で使用可能なセキュリティとコンプライアンスの機能を使用することを検討するようお勧めします。詳細については、「[Microsoft 365 による SharePoint のファイルの共同作業](/sharepoint/deploy-file-collaboration)」および「[セキュリティの分離を使用してチームを構成する](secure-teams-security-isolation.md)」を参照してください。
 
 組織内で使用されている共有方法を理解するには、[ファイルとフォルダーの共有に関するレポートを実行](/sharepoint/sharing-reports)してください。
 
@@ -121,7 +121,7 @@ SharePoint サイトの共有は、サイト所有者のみに制限できます
 
 ### <a name="block-access-to-a-site"></a>サイトへのアクセスの禁止
 
-サイトのロック状態を変更することで、サイトへのアクセスをブロックしたり、サイトを読み取り専用にすることができます。 詳細については、「[サイトのロックとロック解除](/sharepoint/manage-lock-status)」を参照してください。
+サイトのロック状態を変更することで、サイトへのアクセスをブロックしたり、サイトを読み取り専用にすることができます。詳細については、「[サイトのロックとロック解除](/sharepoint/manage-lock-status)」を参照してください。
 
 ### <a name="permissions-inheritance"></a>アクセス許可の継承
 
@@ -180,7 +180,7 @@ Microsoft 365 管理センターでユーザーをクリックし、**[OneDrive]
 
 ## <a name="people-in-your-organization-sharing-links"></a>*組織内のユーザー* 共有リンク
 
-既定では、サイトのメンバーは組織外のユーザーとファイルおよびフォルダーを共有するために、*組織外のユーザー* リンクを使用できます。 *組織外のユーザー* リンクは、PowerShell を使用して無効化できます
+既定では、サイトのメンバーは組織外のユーザーとファイルおよびフォルダーを共有するために、*組織内のユーザー* リンクを使用できます。*組織内ユーザー* リンクを無効にするには、PowerShell を使用します。
 
 ```powershell
 Set-SPOSite -Identity <site> -DisableCompanyWideSharingLinks
@@ -212,7 +212,7 @@ Microsoft 365 のファイルとフォルダーにアクセスできるユーザ
 
 ## <a name="conditional-access"></a>条件付きアクセス
 
-Azure Active Directory の条件付きアクセスは、ネットワークの場所、デバイスの正常性、サインイン リスク、およびその他の要因に基づいて、ユーザーとの共有を制限または防止するオプションを提供します。 「[条件付きアクセスとは?](/azure/active-directory/conditional-access/overview)」を参照してください。
+Azure Active Directory の条件付きアクセスは、ネットワークの場所、デバイスの正常性、サインイン リスク、およびその他の要因に基づいて、ユーザーとの共有を制限または防止するオプションを提供します。「[条件付きアクセスとは](/azure/active-directory/conditional-access/overview)」を参照してください。
 
 SharePoint は、非管理対象デバイスとネットワークの場所の両方に対して、Azure AD の条件付きアクセスとの直接統合を提供します。詳細については、次の参考資料を参照してください。
 

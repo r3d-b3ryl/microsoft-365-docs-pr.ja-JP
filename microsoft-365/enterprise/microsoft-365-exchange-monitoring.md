@@ -6,7 +6,7 @@ manager: scotv
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection:
@@ -16,12 +16,12 @@ ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
 description: Exchange Online の監視を使用して、Microsoft 365 でのメールのインシデントや勧告の情報について確認します。
-ms.openlocfilehash: 2c97e161c46998f9a78e14b1efc2eb0e701e5b01
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: e6b6749b88644b65768a04696a6e6363661ceec8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988249"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197331"
 ---
 # <a name="exchange-online-monitoring-for-microsoft-365"></a>Microsoft 365 の Exchange Online の監視
 
@@ -37,7 +37,7 @@ ms.locfileid: "59988249"
 
 **[組織の問題]** は、組織レベルの監視と優先アカウントの監視によって識別され、使用されます。
 
-**[組織の問題]** の **[正常性]** の列の値は、組織のインフラストラクチャまたはサードパーティ製のソフトウェアが Exchange Online で組織のユーザーや優先アカウントのサービス正常性エクスペリエンスに影響を与えるかどうかを示します。 勧告やインシデントを解決するには、*ユーザー* のアクションが必要です。
+**[組織の問題]** の **[正常性]** の列の値は、組織のインフラストラクチャまたはサード パーティ製ソフトウェアが、組織のユーザーのサービス正常性エクスペリエンスや Exchange Online の優先アカウントに影響を与えるかどうかを示します。アドバイザリまたはインシデントを解決するには、*ユーザーの* アクションが必要です。
 
 **[Microsoft サービス正常性]** の **[正常性]** 列の値は、サービスが正常な状態にあるか、Microsoft が維持するクラウド サービスに基づいて勧告やインシデントがあるかどうかを示します。
 
@@ -76,7 +76,7 @@ Exchange Online の監視は次のシナリオをサポートしています。
    >[!Note]
    > アクティブ ユーザー数は、ユーザーがメールを読むときなど、1 つのアクティビティによって測定されます。 過去 30 分間のアクティビティだけを把握しています。
 
-- **アプリ接続**: 推定接続は、組織のデバイスと Exchange Online 間の成功した代理接続の割合に基づいており、Microsoft の管理外の問題が含まれる場合があります。 詳細については、「[Microsoft 365 接続光学](microsoft-365-connectivity-optics.md)」を参照してください。
+- **アプリ接続**: 推定接続は、組織のデバイスと Exchange Online 間の成功した合成接続の割合に基づいており、Microsoft の管理外の問題が含まれる場合があります。詳しくは、「[Microsoft 365 Connectivity Optics](microsoft-365-connectivity-optics.md)」を参照してください。
 
 - **基本認証と先進認証**: Exchange Online サービスで正常に検証されたユーザー数。
 

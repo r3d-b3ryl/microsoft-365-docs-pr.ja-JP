@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'すべての Microsoft Information Protection ソリューションの要件: 組織のデータを分類し、保護するための秘密度ラベルを作成、構成、発行します。'
-ms.openlocfilehash: 2851fd356efe4405d4355547f364f4a147cb26d0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1ce355b2780016dfd7732399546567696e7c2301
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213923"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170813"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>秘密度ラベルとそのポリシーを作成して構成する
 
@@ -73,7 +73,7 @@ ms.locfileid: "59213923"
 
     ラベル設定の詳細については、「概要」の「[秘密度ラベルでできること](sensitivity-labels.md#what-sensitivity-labels-can-do)」を参照してください。また、個々の設定については、ウィザードのヘルプを参照してください。
 
-5. さらにラベルを作成するには、これらの手順を繰り返します。 ただし、サブ ラベルを作成する場合は、まず親ラベルを選択してから、[**その他のアクション**] の [**...**] を選択し、[**サブ ラベルの追加**] を選択ます。
+5. これらの手順を繰り返して、さらにラベルを作成します。ただし、サブラベルを作成する場合は、まず親ラベルを選択してから、**[その他のアクション]** の [**...**] を選択し、**[サブラベルの追加]** を選択します。
 
 6. 必要なすべてのラベルを作成したら、ラベルの順序を確認し、必要に応じて上下に移動します。 ラベルの順序を変更するには、[**その他のアクション**] の [**...**] を選択して、[**上へ移動**] または [**下へ移動**] を選択します。 詳細については、概要の「[ラベルの優先度 (順序の問題)](sensitivity-labels.md#label-priority-order-matters)」を参照してください。
 
@@ -157,7 +157,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
     > [!IMPORTANT]
     > サブラベルを選択する場合は、必ず親ラベルも選択してください。
 
-4. 選択したラベルを確認し、変更する場合は [**編集**] を選択します。 それ以外の場合は、[**次へ**] を選択します。
+4. 選択したラベルを確認し、変更を加えるには、**[編集]** を選択します。それ以外の場合 **[次へ]** を選択します。
 
 5. 指示に従ってポリシー設定を構成します。
 

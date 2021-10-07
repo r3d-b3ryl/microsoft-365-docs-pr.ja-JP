@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX
 description: ドメイン レジストラーの中には、限定的なサービスを提供するものもあり、すべての Microsoft 機能がすべてのドメインで使えるわけではありません。
-ms.openlocfilehash: 7fe6b047773e47964b5a00728b8c1443bdeef36e
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 2d192f03c5a586e4355c1f9a08d312a07af3d501
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774594"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164737"
 ---
 # <a name="domain-registrars-with-setup-limitations"></a>セットアップ制限のあるドメイン レジストラー
 
@@ -84,7 +84,7 @@ Google Apps for Work アカウントへのサインアップ中に Google 経由
 
 1.  最初に、Autodiscover サブドメインを作成します。 [**Subdomain Overview**] セクションで、[**Create Subdomain**] を選択します。
 
-1.  新しいサブドメインの [**Create Subdomain**] ボックスに、次の表の **Create Subdomain** 値のみを入力するか、コピーして貼り付けます。 (**Alias** 値は後の手順で追加します。)
+1.  新しいサブドメインの **[Create Subdomain]** ボックスに、次の表の **Create Subdomain** 値のみを入力するか、コピーして貼り付けます (**Alias** 値は後の手順で追加します)。
 
     |Create Subdomain|Alias|
     |:----|:----|
@@ -116,7 +116,7 @@ Google Apps for Work アカウントへのサインアップ中に Google 経由
 
 1.  [**Subdomain Overview**] セクションで、[**Create Subdomain**] を選択します。
 
-1.  新しいサブドメインの [**Create Subdomain**] ボックスに、次の表の **Create Subdomain** 値のみを入力するか、コピーして貼り付けます。 (**Alias** 値は後の手順で追加します。)
+1.  新しいサブドメインの **[Create Subdomain]** ボックスに、次の表の **Create Subdomain** 値のみを入力するか、コピーして貼り付けます (**Alias** 値は後の手順で追加します)。
 
     |Create Subdomain|Alias|
     |:----|:----|
@@ -126,7 +126,7 @@ Google Apps for Work アカウントへのサインアップ中に Google 経由
 
 1.  [Domain Center] ページで、[**Manage Subdomains**] を選びます。
 
-1.  [**Subdomain Overview**] セクションで、作成した [lyncdiscover] サブドメインを見つけます。次に、このサブドメインの [Panel (v)] コントロールを選びます。 [**Subdomain Settings**] 領域で、[**Edit DNS Settings**] を選択します。
+1.  **[Subdomain Overview]** セクションで、先ほど作成した lyncdiscover サブドメインを見つけて、そのサブドメインの Panel (v) コントロールを選択します。**[Subdomain Settings]** 領域で、**[EDIT DNS Settings]** を選択します。
 
 1.  [**A/AAAA Records (IP Addresses)**] セクションの [**IP address (A Record)**] 領域で、[**CNAME**] を選びます。
 
@@ -144,7 +144,7 @@ Google Apps for Work アカウントへのサインアップ中に Google 経由
 
 1.  [**Subdomain Overview**] セクションで、[**Create Subdomain**] を選択します。
 
-1.  新しいサブドメインの [**Create Subdomain**] ボックスに、次の表の **Create Subdomain** 値のみを入力するか、コピーして貼り付けます。 (**Alias** 値は後の手順で追加します。)
+1.  新しいサブドメインの **[Create Subdomain]** ボックスに、次の表の **Create Subdomain** 値のみを入力するか、コピーして貼り付けます (**Alias** 値は後の手順で追加します)。
 
     |Create Subdomain|Alias|
     |:----|:----|

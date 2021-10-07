@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9f518a6d-1e2c-4d44-93f3-e19013a1552b
 description: '会議室メールボックスまたは備品用メールボックスを作成すると、組織の全ユーザーが Outlook を使用して会議やイベント用にそのメールボックスを予約できます。 '
-ms.openlocfilehash: 2255d6b509e56f5a8e573ee8e88766c4ad59ada0
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 38df6be558c3f590e851460f8065712d73dbf4b0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776034"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173081"
 ---
 # <a name="room-and-equipment-mailboxes"></a>会議室メールボックスと備品用メールボックス
 
@@ -65,7 +65,7 @@ ms.locfileid: "59776034"
     
 8. 他のユーザーがオンラインまたは電話で会議に参加できるようにするには、[**Skype 会議**] を選択します。
     
-9. 招待した会議室、備品、ユーザーの空き状況を確認するには、上部の [**スケジュール アシスタント**] を選択します。 予定表で空き時間を選びます。
+9. 招待した会議室、備品、ユーザーの空き状況を確認するには、上部の **[スケジュール アシスタント]** をクリックします。予定表で空き時間を選びます。
 
    ![会議室の設備が利用できるか確認します。](../../media/eb0097c6-4263-4b63-bfca-f7c03ad99b4f.png)
 

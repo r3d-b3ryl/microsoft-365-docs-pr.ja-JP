@@ -8,11 +8,12 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 monikerRange: o365-worldwide
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -20,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 生産性スコアには、ユーザーやテクノロジのエクスペリエンス測定がどのように反映されているか、同規模の組織との比較をご覧ください。
-ms.openlocfilehash: 0c0d260ebea02d57e099c84acdbc8960d58f3638
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: a8d5ae03b624fd451e86d7b993479359fce2603c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774173"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197835"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft 生産性スコア 
 
@@ -70,7 +71,7 @@ ms.locfileid: "59774173"
 
 生産性スコアのロールベースのアクセス制御のモデルは、組織内の IT 担当に柔軟な役割の割り当てを提供することで、組織の Microsoft 365 を使用したさらなるデジタル変革の道のりをサポートします。
 
-Microsoft は個々のユーザーのプライバシーを保護します。 この[プライバシー ドキュメント](privacy.md)では、Microsoft に寄せていただいている信頼を損なうことなく、組織の IT 管理者に実践的な情報を確実に提供するために Microsoft が提供する管理策について説明しています。
+Microsoft は、個人のプライバシーの保護に取り組んでいます。この「[プライバシーに関するドキュメント](privacy.md)」では、組織の IT 管理者に Microsoft が提供するコントロールについて説明します。これにより、Microsoft の信頼を損なうことなく、情報が実行可能であることを確認できます。
 
 Microsoft 365 管理ホームの **[レポート]** > **[生産性スコア]** からエクスペリエンスにアクセスできます。
   

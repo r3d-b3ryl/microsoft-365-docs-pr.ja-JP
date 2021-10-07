@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを使用して、SharePoint サイト、Microsoft Teams サイト、Microsoft 365 グループのコンテンツを保護します。
-ms.openlocfilehash: 5e8e18d85a0161542d988107c450a6abb9f7c7d4
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: fff0326df591ad5cd414be73afe9f365b1bc04b0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60010331"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151004"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>秘密度ラベルを使用して、Microsoft Teams、Microsoft 365 グループ、SharePoint サイトのコンテンツを保護する
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
-[秘密度ラベル](sensitivity-labels.md) を使用して、ドキュメントやメールを分類および保護するだけでなく、Microsoft Teams サイト、Microsoft 365 グループ ([以前は Office 365 グループ](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601))、およびSharePoint サイトなどのコンテナーにあるコンテンツを保護するために、秘密度ラベルを使用することもできます。 コンテナー レベルの分類と保護を設定するには、次のラベル設定を使用します。
+[秘密度ラベル](sensitivity-labels.md) を使用して、ドキュメントやメールを分類および保護するだけでなく、Microsoft Teams サイト、Microsoft 365 グループ ([以前は Office 365 グループ](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601))、およびSharePoint サイトなどのコンテナーにあるコンテンツを保護するために、秘密度ラベルを使用することもできます。コンテナー レベルの分類と保護を設定するには、次のラベル設定を使用します。
 
 - チーム サイトおよび Microsoft 365 グループのプライバシー (パブリックまたはプライベート)
 - 外部ユーザーのアクセス
@@ -106,7 +106,7 @@ ms.locfileid: "60010331"
     
     - **[ラベル付き SharePoint サイトからの外部共有を制御]**: このオプションを選択して、すべてのユーザー、新規および既存のゲストを選択するか、組織内のユーザのみを選択します。 この構成と設定の詳細については、「SharePoint ドキュメント」で [サイトへのの外部共有を有効または無効にする](/sharepoint/change-external-sharing-site) を参照します。
     
-    - **Azure AD 条件付きアクセスを使用して、ラベル付き SharePoint サイトを保護**: [Azure Active Directory の条件付きアクセス](/azure/active-directory/conditional-access/overview)を構成して使用している場合のみ、このオプションを選択します。 次に、次のいずれかの設定を選択します。
+    - **Azure AD 条件付きアクセスを使用して、ラベル付き SharePoint サイトを保護**: [Azure Active Directory の条件付きアクセス](/azure/active-directory/conditional-access/overview)を構成して使用している場合のみ、このオプションを選択します。次に、次のいずれかの設定を選択します。
     
         - **ユーザーが管理外のデバイスから SharePoint サイトにアクセスできるかどうかを決定する**: このオプションでは、Azure ADの条件付きアクセスを使用して、管理されていないデバイスからの SharePoint および OneDrive コンテンツへのアクセスをブロックまたは制限する SharePoint 機能を使用します。 詳細については、SharePoint ドキュメントの「[非管理対象デバイスからのアクセスの制御](/sharepoint/control-access-from-unmanaged-devices)」を参照してください。 このラベル設定を指定するオプションは、SharePoint の手順から「[特定の SharePoint サイトまたは OneDrive からのアクセスをブロックまたは制限する](/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive)」セクションの手順 3 - 5 で説明しているように、サイトの PowerShell コマンドを実行することと同じです。
             
@@ -209,7 +209,7 @@ PowerShell の例、秘密度ラベル GUID は **8faca7b8-8d20-48a3-8ea2-0f9631
 
 #### <a name="powershell-tips-for-specifying-the-advanced-settings"></a>詳細設定を指定するための PowerShell のヒント
 
-秘密度ラベルは名前で指定できますが、ラベル名または表示名を指定する際の混乱を避けるために、ラベル GUID を使用することをお勧めします。 GUID を調べるには:
+秘密度ラベルは名前で指定できますが、ラベル名または表示名を指定する際の混乱を避けるために、ラベル GUID を使用することをお勧めします。GUID を検索するには、以下の手順に従います。
 
 ````powershell
 Get-Label | Format-Table -Property DisplayName, Name, Guid
@@ -317,7 +317,7 @@ Outlook on the web では、新しいグループを作成するときに、公�
 
 ### <a name="use-powershell-to-apply-a-sensitivity-label-to-multiple-sites"></a>PowerShell を使用して、複数のサイトに秘密度ラベルを適用する
 
-[Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) と [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) コマンドレットを使用して、現在の [SharePoint Online 管理シェル](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)の *SensitivityLabel* パラメーターによって、多くのサイトに秘密度ラベルを適用できます。 サイトには、任意の SharePoint サイトコレクション、または OneDrive サイトを使用できます。
+[Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) と [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) コマンドレットを使用して、現在の [SharePoint Online 管理シェル](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)の *SensitivityLabel* パラメーターによって、多くのサイトに秘密度ラベルを適用できます。サイトには、任意の SharePoint サイトコレクション、または OneDrive サイトを使用できます。
 
 SharePoint Online 管理シェルのバージョン16.0.19418.12000 以降があることを確認します。
 
@@ -329,7 +329,7 @@ SharePoint Online 管理シェルのバージョン16.0.19418.12000 以降があ
    Get-Label |ft Name, Guid
    ```
 
-3. ここでは、[SharePoint Online PowerShellに接続して](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)、ラベルの GUID を変数として保存します。 例:
+3. ここでは、[SharePoint Online PowerShellに接続して](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)、ラベルの GUID を変数として保存します。以下に例を示します。
 
    ```powershell
    $Id = [GUID]("e48058ea-98e8-4940-8db0-ba1310fd955e")
@@ -351,7 +351,7 @@ SharePoint Online 管理シェルのバージョン16.0.19418.12000 以降があ
 
 ## <a name="view-and-manage-sensitivity-labels-in-the-sharepoint-admin-center"></a>SharePoint 管理センターで秘密度ラベルを表示し管理する
 
-適用された秘密度ラベルを表示、並べ替え、および検索するには、新しい SharePoint 管理センターの [**アクティブなサイト**] ページを使用します。 最初に、[**機密**] 列を追加する必要がある場合があります。
+適用された秘密度ラベルを表示、並べ替え、および検索するには、新しい SharePoint 管理センターの [**アクティブなサイト**] ページを使用します。最初に **[秘密度]** 列を追加する必要がある場合があります。
 
 ![[アクティブなサイト] ページの [機密] 列。](../media/manage-site-sensitivity-labels.png)
 

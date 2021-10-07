@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,20 +22,19 @@ ms.custom:
 - AdminTemplateSet
 description: 販売店から Microsoft 365 Business Standard 購入した場合は、プロダクト キーを引き換え、サブスクリプションをアクティブ化する方法を説明します。
 ms.date: 11/13/2020
-ms.openlocfilehash: 5c9a1bba30f6c1b55688d2a36166651fe0b16a05
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d872a61de9f2d704f6cee92234d3358ca0d1c26f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59190361"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195871"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Microsoft 365 Business Standard のプロダクト キーを入力する
 
 小売店から Microsoft 365 Business Standard を購入した場合、この記事はサブスクリプションのライセンス認証を行うのに役立ちます。
   
- **他のヘルプが必要な場合**
- **Microsoft 365 Family または Microsoft 365 Personal** のヘルプについては、「[Office でのプロダクト キーを使用する](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx)」を参照してください。  
- **ボリューム ライセンスをお持ちの場合** [Microsoft Open ライセンス プログラム](https://go.microsoft.com/fwlink/p/?LinkID=613298)を通じて Microsoft 365 for Businessを 購入した場合は、「[Microsoft Open から購入したプロダクト キーを入力する](purchases-from-microsoft-open.md)」の記事を参照してください。
+ **他にヘルプが必要な場合**、**Microsoft 365 Family または Microsoft 365 Personal のヘルプについては**、「[Office でのプロダクト キーを使用する](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx)」を参照してください。  
+ **ボリューム ライセンスをお持ちの場合**、[Microsoft Open ライセンス プログラム](https://go.microsoft.com/fwlink/p/?LinkID=613298)を利用して一般法人向け Microsoft 365 を購入した場合、「[Microsoft Open から購入したプロダクト キーを入力する](purchases-from-microsoft-open.md)」 を参照してください。
   
 ## <a name="activate-a-new-subscription"></a>新しいサブスクリプションのライセンス認証
 

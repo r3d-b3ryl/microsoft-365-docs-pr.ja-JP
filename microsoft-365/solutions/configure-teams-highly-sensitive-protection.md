@@ -7,7 +7,7 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection:
@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: 機密データに対する保護機能を使用してチームを展開する方法について説明します。
-ms.openlocfilehash: 3e98b1a52e698d52eba16d4296c062d7347759d0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 27d2183a3f6f5f43f4461bc83fe3b33ac9f4f56e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219753"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60169361"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>機密データに対する保護機能を使用してチームを構成する
 
@@ -71,7 +71,7 @@ Teams の秘密度ラベルを有効にしたら、次の手順ではラベル�
 1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com)を開きます。
 2. **[ソリューション]** で、**[情報保護]** をクリックします。
 3. **[ラベルの作成]** をクリックします。
-4. ラベルに名前を付けます。 [**高機密性**] をお勧めしますが、既に使用されている別の名前を選択することもできます。
+4. ラベルに名前を付けます。**[Highly sensitive]** をお勧めしますが、それが既に使用されている場合は別の名前を選択することもできます。
 5. 表示名と説明を追加し、**[次へ]** をクリックします。
 6. **Define the scope for this label** (このラベルの範囲の定義) ページで、**[Files & emails]** (ファイルとメール) と **[Groups & sites]** (グループとサイト) を選択し、**[次へ]** をクリックします。
 7. **[ファイルとメールの保護設定の選択]** ページで、**[ファイルとメールの暗号化]** を選択し、**[次へ]** をクリックします。
@@ -87,7 +87,7 @@ Teams の秘密度ラベルを有効にしたら、次の手順ではラベル�
 17. **[次へ]** をクリックします。
 18. **[Define external sharing and device access settings]** (外部共有とデバイス アクセス設定の定義) ページで、**[Control external sharing from labeled SharePoint sites]** (ラベル付き SharePoint サイトからの外部共有の制御) を選択します。
 19. **[Content can be shared with]** (コンテンツの共有先) で、ゲスト アクセスを許可する場合には **[新規および既存のゲスト]** を選択し、許可しない場合には **[組織内のユーザーのみ]** を選択します。
-20. **[非管理対象デバイスからのアクセス]** で、**[アクセスをブロックする]** を選びます。 (ゲストを許可し、管理されているデバイスを持たない場合は、**[制限された、Web のみのアクセスを許可する]** を選択できます。)
+20. **アンマネージド デバイスからのアクセス** で、**Block access** を選択します。(ゲストを許可していて、そのゲストにマネージド デバイスがない場合は、**[制限された Web のみのアクセスを許可する**] を選択できます)。
 21. **[次へ]** をクリックします。
 22. **[Auto-labeling for database columns]** (データベースの列の自動ラベル付け) ページで、**[次へ]** をクリックします。
 23. **[ラベルの作成]** をクリックし、**[完了]** をクリックします。

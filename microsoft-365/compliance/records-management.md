@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - m365initiative-compliance
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Microsoft 365 のレコード管理を使用すると、保持スケジュールをファイル計画に適用し、保持、レコード宣言、廃棄を管理することができます。
-ms.openlocfilehash: 466b346501f9ee4e02a4a254ebeb2dfdf6e23eca
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 410fa890e159d18e3aacedbf08be44ee047ee189
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775602"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60158168"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Microsoft 365 でのレコード管理について説明します。
 
@@ -35,11 +35,11 @@ ms.locfileid: "59775602"
 
 Microsoft 365 のレコード管理ソリューションをサポートするには、次の機能を使用します。
 
-- **コンテンツをレコードとして分類する**。 コンテンツを[レコード](#records)としてマークする保持ラベルを作成および構成します。レコードは、ユーザーが適用することも、機密情報、キーワード、またはコンテンツ タイプを識別することにより自動的に適用することもできます。
+- **コンテンツをレコードとして分類する**。コンテンツを[レコード](#records)としてマークする保持ラベルを作成および構成します。レコードは、ユーザーが適用することも、機密情報、キーワード、またはコンテンツ タイプを識別することにより自動的に適用することもできます。
 
-- **ファイル計画を使用して、保持期間に関する要件を移行して管理します**。 [ファイル計画](file-plan-manager.md)を使用して、既存の保持プランを Microsoft 365 に持ち込んだり、新しいプランを構築して管理機能を強化したりすることができます。
+- **ファイル計画を使用して、保持期間に関する要件を移行して管理します**。[ファイル計画](file-plan-manager.md)を使用して、既存の保持プランを Microsoft 365 に持ち込んだり、新しいプランを構築して管理機能を強化したりすることができます。
 
-- **保持ラベルを使用して、保持と削除の設定を構成します**。 保持期間を使用して[保持ラベル](retention.md#retention-labels)を構成したり、最終更新日や作成日などのさまざまな要因に基づきアクションを構成したりします。
+- **保持ラベルを使用して、保持と削除の設定を構成します**。保持期間を使用して [保持ラベル](retention.md#retention-labels)を構成したり、最終更新日や作成日などのさまざまな要因に基づきアクションを構成したりします。
 
 - [イベントベースの保持](event-driven-retention.md)を使って、**イベントが発生したときに、別の保持期間を開始する**。
 
@@ -111,4 +111,4 @@ Microsoft 365 のレコード管理ソリューションをサポートするに
 
 ## <a name="configuration-guidance"></a>構成ガイダンス
 
-詳細については、「[レコード管理の概要](get-started-with-records-management.md)」を参照してください。 この記事には、サブスクリプション、アクセス許可についての説明、およびレコード管理を行う際のエンド ツー エンド構成を行う方法についてのリンクがあります。
+「[レコード管理の概要](get-started-with-records-management.md)」を参照してください。この記事には、サブスクリプション、アクセス許可についての説明、およびレコード管理を行う際のエンド ツー エンド構成を行う方法についてのリンクがあります。

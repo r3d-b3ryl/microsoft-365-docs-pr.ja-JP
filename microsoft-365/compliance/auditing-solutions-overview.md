@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - m365-security-compliance
 - m365solution-audit
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Microsoft 365 組織内のユーザーや管理者のアクティビティを監査する方法をご紹介します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: afed2a8a12f158ff7e283e7d82d1abe7c35a0732
-ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
+ms.openlocfilehash: fbd00bdff46bebb73535f2b24c1b0bfa997dd55a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59498114"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163434"
 ---
 # <a name="auditing-solutions-in-microsoft-365"></a>Microsoft 365 での監査ソリューション
 
@@ -46,7 +46,7 @@ Microsoft 365 には、基本的な監査と高度な監査の 2 つの監査ソ
 
    ![Microsoft 365 コンプライアンス センターの監査ログ検索ツール。](../media/AuditLogSearchToolMCC.png)
 
-- **Search-UnifiedAuditLog コマンドレット**。 Exchange Online PowerShell の **Search-UnifiedAuditLog** コマンドレット (検索ツールの基礎となるコマンドレット) を使用して、監査イベントを検索したり、スクリプトで使用したりすることができます。 詳細については、以下を参照してください。
+- **Search-UnifiedAuditLog cmdlet**。Exchange Online PowerShell の **Search-UnifiedAuditLog** コマンドレット (検索ツールの基礎となるコマンドレット) を使用して、監査イベントを検索したり、スクリプトで使用したりすることができます。詳しくは以下を参照してください:
 
   - [Search-UnifiedAuditLog コマンドレットのリファレンス](/powershell/module/exchange/search-unifiedauditlog)
   - [PowerShell スクリプトを使用して監査ログを検索する](audit-log-search-script.md)

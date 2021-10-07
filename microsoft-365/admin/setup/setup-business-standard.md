@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 - Adm_O365_Setup
 - TRN_SMB
 ms.custom:
@@ -25,12 +26,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Microsoft 365 Business Standard を購入するときに、所有するドメインを使用するか、サインアップ時に購入するかを選択することができます。
-ms.openlocfilehash: 5161a3db8c61df247e1200914bdc08e3b732b084
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 3144c61b0aa6f329fa4f0159cedbad21c2038169
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776226"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60169349"
 ---
 # <a name="set-up-microsoft-365-business-standard-with-a-new-or-existing-domain"></a>新規ドメインまたは既存のドメインを使用して Microsoft 365 Business Standard を設定する
 
@@ -149,7 +150,7 @@ Microsoft 365 Business Standard を購入するときに、所有するドメイ
 
 ## <a name="set-up-microsoft-teams-and-onedrive-for-business"></a>Microsoft Teams と OneDrive for business の設定
 
-タスク バーで OneDrive クラウド アイコンを選択し、手順に従ってファイルを新しい OneDrive for Business クラウド フォルダーに移動します。 **[次へ]** を選択して、Microsoft Teams を設定します。
+タスク バーで OneDrive クラウド アイコンを選択し、手順に従って新しい OneDrive for Business フォルダーにファイルを移動します。**[次へ]** を選択して、Microsoft Teams を設定します。
 
 1. Microsoft Teams を開き、プロファイル アイコンを選択して、**[職場または学校アカウントを追加する]** を選択します。 手順に従って、新しいアカウントを Teams に追加します。
 

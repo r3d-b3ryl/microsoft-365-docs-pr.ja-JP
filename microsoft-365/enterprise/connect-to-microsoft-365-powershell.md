@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: Microsoft 365 テナントに接続するには、Microsoft 365 用 PowerShell を使用して、コマンド ラインから管理センターのタスクを実行します。
-ms.openlocfilehash: 743f4a7b412f14bc942548c688fc3060fdebf53e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ffbf31415dbdcd3ff9b8261b7f1679989823ecd0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218723"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168640"
 ---
 # <a name="connect-to-microsoft-365-with-powershell"></a>PowerShell を使用して Microsoft 365 に接続する
 
@@ -64,7 +64,7 @@ Microsoft 365 および管理者のユーザー アカウント、グループ�
 - Windows PowerShell 用 Microsoft Azure Active Directory モジュールでは、PowerShell バージョン 5.1 から PowerShell バージョン 6 までを使用する必要があります。PowerShell バージョン 7 は使用できません。
        
 >[!Note]
->これらの手順は、Microsoft 365 の管理者の役割を持つユーザーを対象としています。 詳細については、[「管理者の役割について」](../admin/add-users/about-admin-roles.md) を参照してください。
+>これらの手順は、Microsoft 365 管理者ロールのメンバーであるユーザーを対象としています。詳細については、「[管理者ロールについて](../admin/add-users/about-admin-roles.md)」を参照してください。
 
 
 ## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>Graph 用 Azure Active Directory PowerShell モジュールに接続する
@@ -128,7 +128,7 @@ Are you sure you want to install the modules from 'PSGallery'?
 
 PowerShell バージョン 7 以降は、Windows PowerShell 用 Microsoft Azure Active Directory モジュールと、名前に *Msol* が含まれるコマンドレットをサポートしていません。 PowerShell バージョン 7 以降では、Graph 用 Azure Active Directory PowerShell モジュールか Azure PowerShell を使用する必要があります。
 
-PowerShell Core は、Windows PowerShell 用 Microsoft Azure Active Directory モジュールと、名前に *Msol* が含まれるコマンドレットをサポートしていません。 これらのコマンドレットは、Windows PowerShell から実行します。
+PowerShell Core は、Windows PowerShell 用 Microsoft Azure Active Directory モジュールと、名前に *Msol* が含まれるコマンドレットをサポートしていません。
     
 ### <a name="step-1-install-the-required-software"></a>手順 1: 必要なソフトウェアをインストールする
 
@@ -165,9 +165,9 @@ PowerShell Core は、Windows PowerShell 用 Microsoft Azure Active Directory �
   
 エラー メッセージが表示される場合は、次の点を確認します。
   
-- **よくある原因は、正しくないパスワードです**。 [手順 2](#step-2-connect-to-azure-ad-for-your-microsoft-365-subscription) をもう一度実行し、その際入力するユーザー名とパスワードには特に注意します。
+- **よくある問題は、パスワードの間違いです**。[手順 2](#step-2-connect-to-azure-ad-for-your-microsoft-365-subscription) をもう一度実行して、ユーザー名とパスワードの入力に細心の注意を払ってください。
     
-- **Windows PowerShell 用 Microsoft Azure Active Directory モジュールには、Microsoft .NET Framework 3.5 が必要です。お使いのコンピューターで* x* が有効になっています**。コンピューターにより新しいバージョンがインストールされている可能性があります (4 または 4.5.* x* など)。 ただし、以前の .NET Framework のバージョンとの下位互換性を有効または無効にすることができます。 詳細については、次の記事を参照してください。
+- **Windows PowerShell 用 Microsoft Azure Active Directory モジュールでは、Microsoft .NET Framework 3.5.* x* がお使いのコンピューターで有効になっている必要があります**。お使いのコンピューターに、より新しいバージョン (たとえば、4 または 4.5.* x*) がインストールされている場合でも、以前のバージョンの .NET Framework との下位互換性を有効または無効にすることができます。詳細については、以下の記事を参照してください。
     
   - Windows Server 2012 または Windows Server 2012 R2 の場合は、「[役割と機能の追加ウィザードを使用して .NET Framework 3.5 を有効にする](/previous-versions/windows/it-pro/windows-8.1-and-8/dn482071(v=win.10))」を参照してください。
     
@@ -176,7 +176,7 @@ PowerShell Core は、Windows PowerShell 用 Microsoft Azure Active Directory �
   - Windows 10、Windows 8.1、および Windows 8 の場合は、「[Windows 8、Windows 8.1、および Windows 10 への .NET Framework 3.5 のインストール](/dotnet/framework/install/dotnet-35-windows-10)」を参照してください。
 
   
-- **お使いの Windows PowerShell 用 Microsoft Azure Active Directory モジュールのバージョンは期限切れの可能性があります。** Microsoft 365用または PowerShell または Windows PowerShell 用 Microsoft Azure Active Directory モジュールで、次のコマンドを実行して確認します。
+- **お使いのバージョンの Windows PowerShell 用 Microsoft Azure Active Directory モジュールが古い可能性があります。** Microsoft 365 用 PowerShell または Windows PowerShell 用 Microsoft Azure Active Directory モジュールで、次のコマンドを実行して確認します。
     
   ```powershell
   (Get-Item C:\Windows\System32\WindowsPowerShell\v1.0\Modules\MSOnline\Microsoft.Online.Administration.Automation.PSModule.dll).VersionInfo.FileVersion
@@ -195,7 +195,7 @@ PowerShell Core は、Windows PowerShell 用 Microsoft Azure Active Directory �
 
 ## <a name="connect-with-the-azure-cloud-shell"></a>Azure Cloud Shell との接続
 
-Microsoft 365 管理センターで Azure Cloud Shell に接続して使用するには、タスク バーの右上にある PowerShell ウィンドウ アイコンを選択します。 **[Azure Cloud Shell へようこそ]** ウィンドウで、**PowerShell** を選択します。
+Microsoft 365 管理センターから Azure Cloud Shell に接続して使用するには、タスク バーの右上隅にある PowerShell ウィンドウ アイコンを選択します。**[Azure Cloud Shell へようこそ]** ウィンドウで、**PowerShell** を選択します。
 
 Microsoft 365 サブスクリプションに関連付けられた、組織のアクティブな Azure サブスクリプションが必要です。 まだお持ちでない場合は、作成できます。 Azure サブスクリプションを取得すると、PowerShell ウィンドウが開き、PowerShell のコマンドやスクリプトを実行することができます。
 

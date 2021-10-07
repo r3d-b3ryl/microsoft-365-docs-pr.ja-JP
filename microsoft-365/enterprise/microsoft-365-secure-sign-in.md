@@ -9,19 +9,19 @@ ms.date: 09/30/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 ms.custom: ''
 description: ユーザーが多要素認証（MFA）およびその他の機能を使用して安全にサインインすることを要求します。
-ms.openlocfilehash: d00ca7a39b05e5364a49a6300ef9ee24c3dd0bd1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9c29bddee33ee7e06fcaf24bfff8649a12320e9c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165262"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200103"
 ---
 # <a name="secure-user-sign-ins-to-your-microsoft-365-tenant"></a>Microsoft 365 テナントへのユーザー サインインの保護
 
@@ -122,7 +122,7 @@ ID とデバイスのアクセス ポリシーは、3つの層で使用するよ
 
 これらの層とそれに対応する構成は、データ、ID、およびデバイス全体で一貫したレベルの保護を提供します。
 
-マイクロソフトは、Microsoft Teams、Exchange Online、SharePointの特定の設定を含む、組織内のID とデバイスのアクセス ポリシーを構成および展開することを強くお勧めします。 詳細については、[ID とデバイスのアクセス設定](../security/office-365-security/microsoft-365-policies-configurations.md)を参照してください。
+Microsoft では、Microsoft Teams、Exchange Online、SharePoint の特定の設定など、組織内の ID およびデバイス アクセス ポリシーを構成して展開することを強く推奨します。詳細については、「[ID とデバイス アクセスの構成](../security/office-365-security/microsoft-365-policies-configurations.md)」を参照してください。
 
 ## <a name="azure-ad-identity-protection"></a>Azure AD Identity Protection
 

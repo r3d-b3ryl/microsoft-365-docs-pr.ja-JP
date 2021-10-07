@@ -11,19 +11,19 @@ ms.topic: article
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
 search.appverid:
 - MET150
 description: Microsoft 365 エンドポイント データ損失防止 (EPDLP) の場所を使用するようにデータ損失防止 (DLP) ポリシーを構成する方法を説明します。
-ms.openlocfilehash: b8acad4520fc588517083574d41465e277b9c96a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6eef2485379544233db29fe94539c5c07499f9fc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175935"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167260"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>エンドポイント データ損失防止の使用
 
@@ -258,7 +258,7 @@ DLP ポリシー ヒントの通知で、ユーザーによる業務上の正当
 
 - 対象となる AAD ユーザー アカウントと、ローカルの OneDrive フォルダーと OneDrive クラウド ストレージをすでに同期させているオンボード済みの Windows 10 コンピューター。
 - 対象の Windows 10 コンピューターにインストールされた Microsoft Word
-- 構成済みで公開済みの秘密度レベル。 「[秘密度ラベルの使用を開始する](get-started-with-sensitivity-labels.md#get-started-with-sensitivity-labels)」と「[秘密度ラベルとそのポリシーを作成し構成する](create-sensitivity-labels.md#create-and-configure-sensitivity-labels-and-their-policies)」を参照してください。
+- 秘密度ラベルが構成され、発行されました。「[秘密度ラベルの使用を開始する](get-started-with-sensitivity-labels.md#get-started-with-sensitivity-labels)」および「[秘密度ラベルとそのポリシーを作成して構成する](create-sensitivity-labels.md#create-and-configure-sensitivity-labels-and-their-policies)」を参照してください。
 
 3 つの手順があります。
 
@@ -289,7 +289,7 @@ DLP ポリシー ヒントの通知で、ユーザーによる業務上の正当
 > [!NOTE]
 > DLP 自動検疫では、許可されていないアプリごとにファイルのサブフォルダーが作成されます。 つまり、許可されていないアプリの一覧に *Notepad* と *OneDrive* の両方が入っている場合、**\OneDrive** 用のサブフォルダーと **\Notepad** 用のサブフォルダーが作成されます。
 
-8. 「**ファイルを次のテキストを含む .txt ファイルに置き換える**」を選択し、プレースホルダー ファイルに必要なテキストを入力します。 たとえば、「*auto quar 1.docx*」というファイルの場合は、以下のとおりです。
+8. **[次のテキストを含む .txt ファイルでファイルを置き換える]** を選択し、プレースホルダー ファイルに必要なテキストを入力します。たとえば、*auto quar 1.docx* という名前のファイルの場合:
     
 **%%FileName%% には、組織がデータ損失防止 (DLP) ポリシーで保護している %%PolicyName%% が含まれ、検疫フォルダー %%QuarantinePath%% に移動されました。** 
 
@@ -322,7 +322,7 @@ DLP ポリシー ヒントの通知で、ユーザーによる業務上の正当
     
 8. **[保存]**、**[次へ]** を選択します。
 
-9. **[今すぐオンにする]** を選択します。 **[次へ]** を選択します。
+9. **[すぐにオンにする]** を選択します。**[次へ]** を選択します。
 
 10. 設定を確認し、**送信** を選択します。
 

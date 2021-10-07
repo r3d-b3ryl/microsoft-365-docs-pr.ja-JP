@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 - Adm_O365_Setup
 search.appverid:
 - MET150
@@ -21,12 +22,12 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
-ms.openlocfilehash: f9af8ccf5a6a8cadfa192fdac5706de6c9d0890b
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: ae8dc1c1d2f603e81d2affd723df2be460a873de
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775554"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164814"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>DNS レコードを追加して自分のドメインを接続する
 
@@ -170,7 +171,7 @@ SPF はスプーフィングの防止に役立ちますが、SPF では保護で
 
 ホスティング プロバイダーが SRV レコードにこれらのフィールドを用意していない場合は、レコードの **Target** フィールドにそれらの値を指定する必要があります。 (注: ホスティング プロバイダーによっては、**Target** フィールドが **Content**、**IP Address**、**Target Host** など、他の名称になっている場合があります)。
 
-これらの値を追加するには、値をスペースで区切って単一の文字列を作成します。*末尾にドットを付加することもあります* (不明な場合は、プロバイダーに問い合わせてください)。 値は、Priority、Weight、Port、Target の順で含める必要があります。
+これらの値を追加するには、1 つの文字列を作成し、値をスペースで区切り、*場合によってはをドットで終えます* (不明な場合はプロバイダーに問い合わせてください)。値は、Priority、Weight、Port、Target の順に含まれている必要があります。
 
 - 例 1: `100 1 443 sipdir.online.lync.com.`
 - 例 2: `100 1 443 sipdir.online.lync.com`
@@ -179,4 +180,4 @@ SPF はスプーフィングの防止に役立ちますが、SPF では保護で
 
 [任意のドメイン レジストラーで Microsoft 365 をセットアップするためにネームサーバーを変更する](change-nameservers-at-any-domain-registrar.md) (記事)\
 [ドメインまたは DNS レコードを追加後に問題を特定して解決する](find-and-fix-issues.md) (記事)\
-[ドメインの管理](index.yml) (リンク ページ)
+[ドメインの管理](/admin) (リンク ページ)

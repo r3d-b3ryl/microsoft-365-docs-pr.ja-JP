@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 組織のデータを保護するために秘密度ラベルを展開する準備はできていますが、どこから始めればよいかわかりませんか? ラベル付けの移行に役立つ実用的なガイダンスをお読みください。
-ms.openlocfilehash: 0a3d4e1446b984bd0f7f9fad997e1ecc3882ac12
-ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
+ms.openlocfilehash: bd26fed7a7af874cc664f280a32ee504847e8099
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59498054"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189407"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>秘密度ラベルの使用を開始する
 
@@ -60,7 +60,7 @@ Microsoft 365 コンプライアンス機能のメリットを得られるよう
 
 既定では、テナントのグローバル管理者はこの管理センターへのアクセス権を所有し、コンプライアンス責任者や他のユーザーにアクセス権を付与できます (テナント管理者が持つすべての権限を付与する必要はありません)。この委任された制限付き管理者アクセス許可については、ユーザーを **[コンプライアンス データ管理者]**、**[コンプライアンス管理者]**、または **[セキュリティ管理者]** 役割グループに追加します。 
 
-既定の役割を使用する代わりに、新しい役割グループを作成し、**秘密度ラベル管理者** の役割または **組織の構成** の役割をこのグループに追加できます。 読み取り専用の役割の場合は、**秘密度ラベルリーダー** を使用します。 
+既定の役割を使用する代わりに、新しい役割グループを作成し、 **秘密度ラベル管理者** または **組織の構成** の役割をこのグループに追加することもできます。読み取り専用の役割の場合は、**秘密度ラベル リーダー** を使用します。 
 
 ユーザーを既定の役割に追加する手順、または独自の役割グループを作成する手順については、「[Microsoft 365 コンプライアンス センターのアクセス許可](microsoft-365-compliance-center-permissions.md)」を参照してください。
 
@@ -87,6 +87,7 @@ Microsoft 365 コンプライアンス機能のメリットを得られるよう
 |秘密度ラベルをドキュメントとメールに自動的に適用する | [機密ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md)|
 |秘密度ラベルを使用して、Teams や SharePoint のコンテンツを保護する |[Microsoft Teams、Microsoft 365 グループ、SharePoint サイトで秘密度ラベルを使用する](sensitivity-labels-teams-groups-sites.md)|
 |特定の感度ラベルを持つファイルまたはメールをユーザーが共有しないように、または警告します。 |[DLP ポリシーで秘密度ラベルを条件として使用する](dlp-sensitivity-label-as-condition.md) |
+|保持ラベルを適用して、特定の秘密度ラベルを持つファイルまたはメールを保持または削除する|[保持ラベルを自動的に適用してコンテンツを保持または削除する](apply-retention-labels-automatically.md) |
 |オンプレミスのデータ ストアに保存されているファイルを検出、ラベル付け、保護する |[ファイルを自動的に分類および保護するための Azure Information Protection スキャナーを展開する](/azure/information-protection/deploy-aip-scanner)|
 |クラウドのデータ ストアに保存されているファイルを検出、ラベル付け、保護する|[クラウドに保存されている規制対象および機密データを検出、分類、ラベル付け、保護する](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
 |Power BI でラベルの適用と表示をし、サービスの外部に保存されたデータを保護する|[Power BI の秘密度ラベル](/power-bi/admin/service-security-sensitivity-label-overview)|

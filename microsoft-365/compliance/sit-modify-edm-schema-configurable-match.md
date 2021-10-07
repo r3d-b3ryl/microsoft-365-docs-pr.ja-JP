@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 構成可能な一致を使用するために、完全一致スキーマを変更する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7d470b986d4a94206935efb832deec7171f8e404
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ce02113cd8e6b0d0e2b2b5b950a78e2958b95004
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218844"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167212"
 ---
 # <a name="modify-exact-data-match-schema-to-use-configurable-match"></a>構成可能な一致を使用するために完全一致スキーマを変更する
 
@@ -66,7 +66,7 @@ ms.locfileid: "59218844"
 
 上記の例では、`caseInsensitive`と`ignoredDelimiters`の両方が追加された場合、元の `PolicyNumber` 列のバリエーションは不要になります。
 
-EDM が構成可能な一致を使用するようにこのスキーマを更新するには、`caseInsensitive` および `ignoredDelimiters` フラグを使用します。  外観は以下の通りです。
+EDM が構成可能な一致を使用するようにこのスキーマを更新するには、`caseInsensitive` フラグと `ignoredDelimiters` フラグを使用します。 その方法を次に示します:
 
 ```xml
 <EdmSchema xmlns="http://schemas.microsoft.com/office/2018/edm">
@@ -104,7 +104,7 @@ EDM が構成可能な一致を使用するようにこのスキーマを更新�
 6. [セキュリティ/コンプライアンス センター PowerShellに接続する](/powershell/exchange/connect-to-scc-powershell)の手順を使用して、セキュリティ/コンプライアンス センターに接続します。
 
 > [!NOTE]
-> 組織が[テナント レベル (パブリック プレビュー) で Microsoft 365 のカスタマー キー](customer-key-tenant-level.md#overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview)を設定している場合、完全一致では暗号化機能が自動的に使用されます。 この機能を利用できるのは、商用クラウド内の E5 ライセンスが割り当てられたテナントのみです。
+> 組織が [テナント レベル (パブリック プレビュー) で Microsoft 365 のカスタム キー](customer-key-tenant-level.md#overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview) を設定している場合、完全なデータ一致によって暗号化機能が自動的に使用されます。これは、商用クラウドの E5 ライセンステナントでのみ使用できます。
 
 7. 以下のコマンドレットを一度に 1 つずつ実行して、スキーマを更新します。
 

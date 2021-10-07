@@ -14,16 +14,16 @@ ms.collection:
 - m365initiative-externalcollab
 ms.custom:
 - seo-marvel-apr2020
-localization_priority: Priority
+ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: この記事では、認証されていないユーザーとファイルおよびフォルダーを共有するためのベスト プラクティスを説明します。
-ms.openlocfilehash: 19791a532b6ea9a7167ac85dfe1eb1b58b9f8f1b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 40bf61820f28656e6f038e76f066e9b122b30177
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59217903"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60149636"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>認証されていないユーザーとファイルおよびフォルダーを共有するためのベスト プラクティス
 
@@ -64,7 +64,7 @@ ms.locfileid: "59217903"
 
 ## <a name="set-link-permissions"></a>リンクのアクセス許可を設定する
 
-既定では、ファイルに対して *[すべてのユーザー]* リンクを使用すると、ユーザーはそのファイルを編集することができます。また、フォルダーに対して *[すべてのユーザー]* リンクを使用すると、ユーザーはファイルの編集と表示に加えて、そのフォルダーに新しいファイルをアップロードすることもできます。 ファイルやフォルダーに対するこれらのアクセス許可は、表示のみに個別に変更できます。
+既定では、ファイルに対して *[すべてのユーザー]* リンクを使用すると、ユーザーはそのファイルを編集することができます。また、フォルダーに対して *[すべてのユーザー]* リンクを使用すると、ユーザーはファイルの編集と表示に加えて、そのフォルダーに新しいファイルをアップロードすることもできます。ファイルやフォルダーに対するこれらのアクセス許可は、個別に表示のみに変更できます。
 
 認証されていない共有を許可したい一方で、認証されていない人によって組織のコンテンツが変更されることへの懸念がある場合は、ファイルとフォルダーのアクセス許可を [**表示**] に設定することをご検討ください。
 
@@ -166,4 +166,4 @@ Microsoft 365 コンプライアンス管理センターで秘密度ラベルを
 
 [ゲストと共有するときにファイルの偶発的な公開を制限する](share-limit-accidental-exposure.md)
 
-[セキュリティで保護されたゲスト共有環境を作成する](create-secure-guest-sharing-environment.md)
+[セキュリティで保護されたゲスト共有の環境を作成する](create-secure-guest-sharing-environment.md)

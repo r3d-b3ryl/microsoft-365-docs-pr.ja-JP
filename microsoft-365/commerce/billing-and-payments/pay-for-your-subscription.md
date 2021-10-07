@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ ms.custom:
 - commerce_billing
 - AdminTemplateSet
 ms.date: 05/04/2021
-ms.openlocfilehash: 128107630580bb1594d61313c6469bb83a4adfc1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9add2523eeedb9accdbc864979721fa7a3b99ac5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219154"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60158636"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>サブスクリプションの支払い方法
 
@@ -40,7 +40,7 @@ ms.locfileid: "59219154"
 
 ## <a name="before-you-begin"></a>はじめに
 
-- この記事で説明されている手順を実行するには、全体管理者または課金管理者である必要があります。 詳細については、「[管理者ロールについて](../../admin/add-users/about-admin-roles.md)」を参照してください。
+- この記事で説明する手順を実行するには、グローバル管理者または課金管理者である必要があります。詳細については、「[管理者ロールについて](../../admin/add-users/about-admin-roles.md)」を参照してください。
 - チェックアウト時に選択するお支払い方法は、今後のすべての請求期間に使用されるお支払い方法です。いつでも変更できます。
 
 ## <a name="paying-by-credit-or-debit-card-or-bank-account"></a>クレジット カード、デビット カード、または銀行口座引き落としでの支払い
@@ -74,7 +74,7 @@ ms.locfileid: "59219154"
 延滞金額のあるお支払い方法を個人的に追加した場合は、**決済残高** を使用して支払いを行うことができます。 延滞金額の支払いに使用する支払い方法は、拒否された支払い方法を使用したすべてのサブスクリプションの新しい支払い方法になります。
 
 1. 管理センターで、**[課金]** > **[請求と支払い]** ページに移動し、<a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">[支払い方法]</a> タブを選択します。
-1. 警告メッセージは、どの支払い方法が拒否されたかを示します。 **[残高の決済]** を選択します。
+1. 拒否された支払い方法を示す警告メッセージ。「**Settle balance**」を選択します。
 1. 右側のウィンドウで、別の支払い方法を選択するか、**[新しい支払い方法を追加する]** を選択します。
 1. お支払い方法の情報を更新したら、**[保存]** を選択します。
 

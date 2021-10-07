@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: noindex,nofollow
 description: Microsoft Defender for Office 365 の新しいアラート ポリシーをリリースします。 また、新しいものに置き換えられた 2 つの既存のアラート ポリシーを廃止します。
-ms.openlocfilehash: 130bcb9c8511de1f18a8711561bbe6a15544f810
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2983ab2affe3c938062442e53a8f14c5bb0caa57
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59210943"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190727"
 ---
 # <a name="new-alert-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の新しいアラート ポリシー
 
@@ -99,7 +99,7 @@ Microsoft Defender for Office 365 のゼロ時間自動パージ (ZAP) が受信
 
 ## <a name="what-you-need-to-do-to-prepare-for-these-changes"></a>これらの変更に備えるために必要なこと
 
-組織がこれらのアラートをどのように利用するかによって、準備のために何をする必要があるかが決まります。 アラートを操作可能にし、API、アラート メール通知、Microsoft 365 コンプライアンス センター (`https://compliance.mmicrosoft.com/viewalerts`) または Microsoft セキュリティ センター (`https://security.microsoft.com/viewalerts`) のいずれかを介してアラートを使用または消費している場合は、ワークフローを変更する必要があります。
+組織がこれらのアラートをどのように利用するかによって、準備に必要な作業が決まります。アラートを運用化し、API、アラート メール通知、または Microsoft 365 コンプライアンス センター (`https://compliance.mmicrosoft.com/viewalerts`) または Microsoft セキュリティ センター (`https://security.microsoft.com/viewalerts`) を使用している場合は、ワークフローを変更する必要があります。
 
 **これらのアラートを運用していない場合は、次のいずれかを実行できます。**
 

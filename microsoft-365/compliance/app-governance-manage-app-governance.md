@@ -9,17 +9,17 @@ audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
 description: Microsoft アプリ ガバナンス機能を実装し、アプリを管理します。
-ms.openlocfilehash: 379da2e2ff894b2f6355c14db93b339518dfca02
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ca1a77c4f5a1543a000b563dde98238136b3115d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59190021"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189551"
 ---
 # <a name="app-governance-add-on-to-microsoft-cloud-app-security-in-preview"></a>Microsoft Cloud App Security へのアプリ ガバナンス アドオン (プレビュー版)
 
@@ -50,7 +50,7 @@ The scale of ongoing cybersecurity incidents affecting large enterprises and sma
 
 ## <a name="a-first-glimpse-at-app-governance"></a>アプリ ガバナンスを一目見る
 
-アプリ ガバナンスのダッシュボードを表示するには、[https://compliance.microsoft.com/appgovernance](https://compliance.microsoft.com/appgovernance) にアクセスします。 アプリ ガバナンス データを表示するには、サインイン アカウントに[管理者の役割](app-governance-get-started.md#administrator-roles)のいずれかが必要であることに注意してください。
+アプリ ガバナンス データを表示するには、 [https://compliance.microsoft.com/appgovernance](https://compliance.microsoft.com/appgovernance) に移動します。サインイン アカウントには、アプリ ガバナンス データを表示するために[管理者ロール](app-governance-get-started.md#administrator-roles)のいずれかが必要であることに注意してください。
 
 ## <a name="app-governance-integration-with-azure-ad-and-microsoft-cloud-app-security"></a>Azure AD と Microsoft Cloud App Security を使用したアプリ ガバナンスの統合
 

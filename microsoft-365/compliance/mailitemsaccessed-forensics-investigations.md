@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: MailItemsAccessed メールボックス監査アクションを使用して、侵害されたユーザー アカウントのフォレンシック調査を実行します。
-ms.openlocfilehash: b0fac6e4ac5d6cc4bb20b6853cb67cf301c6295a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: eeb52058a9937b9ba59b53c7491ccf652cac5288
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177975"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152972"
 ---
 # <a name="use-advanced-audit-to-investigate-compromised-accounts"></a>高度な監査を使用して、侵害されたアカウントを調査する
 
@@ -31,7 +31,7 @@ ms.locfileid: "59177975"
 
 ## <a name="the-mailitemsaccessed-mailbox-auditing-action"></a>MailItemsAccessed メールボックス監査アクション
 
-新しい MailItemsAccessed アクションは、新しい[高度な監査](advanced-audit.md)機能の一部です。 [Exchange メールボックス監査](/office365/securitycompliance/enable-mailbox-auditing#mailbox-auditing-actions)の一部であり、Office 365 または Microsoft 365 E5 ライセンスが割り当てられているユーザー、または Microsoft 365 E5 コンプライアンス アドオンのサブスクリプションを持つ組織に対して既定で有効になっています。
+新しい MailItemsAccessed アクションは、新しい[高度な監査](advanced-audit.md)機能の一部です。[Exchange メールボックス監査](/office365/securitycompliance/enable-mailbox-auditing#mailbox-auditing-actions)の一部であり、Office 365 または Microsoft 365 E5 ライセンスが割り当てられているユーザー、または Microsoft 365 E5 Compliance アドオンのサブスクリプションを持つ組織に対して既定で有効になっています。
 
 MailItemsAccessed メールボックス監査アクションは、POP、IMAP、MAPI、EWS、Exchange ActiveSync、および REST のすべてのメール プロトコルを対象としています。 また、*同期* と *バインド* の両方の種類のメールへのアクセスもカバーしています。
 
@@ -149,7 +149,7 @@ Search-MailboxAuditLog -Identity <user> -StartDate 01/06/2020 -EndDate 01/20/202
    Search-MailboxAuditLog -StartDate 01/06/2020 -EndDate 01/20/2020 -Identity <user> -Operations MailItemsAccessed -ResultSize 10000 -ShowDetails | Where {$_.OperationProperties -like "*MailAccessType:Bind*"} | FL
    ```
 
-   アクセスされたメール メッセージは、インターネット メッセージ ID によって識別されます。 任意の監査レコードに、他の攻撃者のアクティビティのコンテキストと同じコンテキストがあるかどうかを確認することもできます。 詳細については、[さまざまな監査レコードのアクセス コンテキストの特定](#identifying-the-access-contexts-of-different-audit-records)セクションを参照してください。
+   アクセスされたメール メッセージは、インターネット メッセージ ID によって識別されます。 任意の監査レコードに、他の攻撃者のアクティビティのコンテキストと同じコンテキストがあるかどうかを確認することもできます。詳細については、「[さまざまな監査レコードのアクセス コンテキストの特定](#identifying-the-access-contexts-of-different-audit-records)」セクションを参照してください。
 
    バインド操作に監査データを使用するには、次の 2 つの方法があります。
 

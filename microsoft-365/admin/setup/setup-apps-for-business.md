@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 - Adm_O365_Setup
 - TRN_SMB
 ms.custom:
@@ -23,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Microsoft 365 Apps for business サブスクリプションのセットアップ方法について説明します。
-ms.openlocfilehash: a40c623448b8af526be0ef16be15efcde22aedca
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: e33bc36170200e5650b09bfcb51015ad301f4140
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773152"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188735"
 ---
 # <a name="set-up-microsoft-365-apps-for-business"></a>Microsoft 365 Apps for business をセットアップする
 
@@ -104,7 +105,7 @@ Microsoft では、ファイルを簡単にオンラインで保存できます�
   
 1. コンピューター上で、エクスプローラーを使用して OneDrive を開きます。 または、[Office 365](https://www.office.com) からアプリ起動ツールで [**OneDrive**] を開きます。
 
-2. 個人用ファイルを表示およびアップロードしたり、[**共有**] を選択して、ドキュメントを表示する他のユーザーを招待するか、リンクを送信することで、ドキュメントやフォルダーを共有したりします。 詳細については、「[OneDrive のファイルとフォルダーの共有](https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07#OS_Type=OneDrive_-_Business)」を参照してください。
+2. 個人用ファイルの表示とアップロード、または **[共有]** を選択し、他のユーザーを招待してドキュメントを表示するか、リンクを送信して、ドキュメントまたはフォルダーを共有します。詳細については、「[OneDrive のファイルとフォルダー共有する](https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07#OS_Type=OneDrive_-_Business)」を参照してください。
   
 詳細については、「[ファイルをライブラリにアップロードする](https://support.microsoft.com/office/da549fb1-1fcb-4167-87d0-4693e93cb7a0)」を参照してください。
   

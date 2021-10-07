@@ -9,16 +9,16 @@ ms.date: 02/01/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Microsoft 365 for Enterprise のコンポーネント、計画、および展開パスの概要を説明します。
-ms.openlocfilehash: 404670e42f46b249b748d0a54f882c631c6f91ee
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: baa31d972a4722390e72798c582f41df5133a98b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165278"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152732"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 for Enterprise の概要
 
@@ -106,7 +106,7 @@ Microsoft 365 for Enterprise の製品、機能、コンポーネントの展開
 
 - FastTrack との提携
 
-   Microsoft のエンジニアは FastTrack を使用して、自分のペースでクラウドに移行できます。 「[Microsoft 365 の FastTrack](https://fasttrack.microsoft.com/microsoft365)」を参照してください。
+   FastTrack を使用すると、Microsoft のエンジニアがお客様のペースでクラウドに移行する支援を行います。「[FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365)」を参照してください。
 
 - Microsoft コンサルティング サービスまたは [Microsoft パートナー](https://partner.microsoft.com/)を使用する場合
 

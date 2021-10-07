@@ -9,18 +9,18 @@ ms.topic: reference
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection: m365initiative-syntex
-localization_priority: Priority
+ms.localizationpriority: high
 description: REST API を使い、トレーニング済みの文書理解モデルを使用して 1 つ以上のファイルを分類する要求を作成します。
-ms.openlocfilehash: 50aa406d25e6d598b568d7c21db6f56e04e111da
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 9f57799a9d1b631be5586dd285dc02cff1237b98
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776730"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60186995"
 ---
 # <a name="create-file-classification-request"></a>ファイル分類要求の作成
 
-適用された文書理解モデルを使用して 1 つ以上のファイルを分類する要求を作成します。 (詳細については、[例](rest-createclassificationrequest.md#examples)を参照してください。)
+適用された文書理解モデルを使用して 1 つ以上のファイルを分類する要求を作成します (詳しくは、[例](rest-createclassificationrequest.md#examples) を参照してください。)
 
 SharePoint Online (および SharePoint 2016 以降のオンプレミス) のREST サービスでは、複数の要求の組み合わせがサポートされています。 要求は、OData $batch クエリ オプションを使用して、サービスへの 1 回の呼び出しに結合されます。 この方法を使用すると、一度に数百のドキュメントの分類作業項目をキューに入れられます。
 

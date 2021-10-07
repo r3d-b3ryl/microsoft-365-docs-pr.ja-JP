@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 でのレコード管理ソリューションの実装に役立つレコードについて説明します。
-ms.openlocfilehash: 5e77d38ed6e3b122ceb85a6cff901a09dbe782d1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 77a6cb185b599c6e96f3ff19331b233c9f28a318
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177816"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60177389"
 ---
 # <a name="use-record-versioning-to-update-records-stored-in-sharepoint-or-onedrive"></a>SharePoint または OneDrive に保存されているレコードを更新するためにレコードのバージョン管理を使用する
 
@@ -31,7 +31,7 @@ ms.locfileid: "59177816"
 > [!NOTE]
 > 規制レコードは編集をブロックしているため、規制レコードのレコードのバージョン管理は利用できません。
 
-ドキュメントを [レコード](records-management.md#records)としてマークし、レコードに対して実行できるアクションを制限する機能は、あらゆるレコード管理ソリューションに不可欠な目標です。 ただし、後進のバージョンを作成するためには、他のユーザーと共同作業を行うことも必要になる場合があります。
+ドキュメントを[[レコード]](records-management.md#records) としてマークし、レコードに対して実行できるアクションを制限する機能は、レコード管理ソリューションにとって不可欠な目標です。ただし、ユーザーが後続のバージョンを作成するためにコラボレーションが必要になる場合もあります。
 
 たとえば、販売契約をレコードとしてマークする場合、新しい条件で契約を更新し、そして前のレコード バージョンを保持したまま最新バージョンを新しいレコードとしてマークする必要があります。 これらのタイプのシナリオでは、SharePoint と OneDrive が *レコードのバージョン管理* をサポートしています。 OneNote ノートブックのフォルダーは、レコードのバージョン管理をサポートしていません。
 

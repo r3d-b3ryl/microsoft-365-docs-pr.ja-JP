@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: ランサムウェア、人が操作するランサムウェア、人工的に操作するランサムウェア、HumOR、強要攻撃、ランサムウェア攻撃、暗号化、暗号ウイルス学
 description: セキュリティ ベースラインを使用して、ランサムウェア攻撃から Microsoft 365 リソースを保護します。
-ms.openlocfilehash: c2e461e5b4236738909a61c30d5bfde060f372cb
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: 662e4097f4d6fd868810ba889c99d58fd0dc2f75
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59444696"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202311"
 ---
 # <a name="step-1-configure-security-baselines"></a>手順 1. セキュリティ 基準を構成する
 
@@ -38,7 +38,7 @@ ms.locfileid: "59444696"
 
 まず [Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score) を使用してセキュリティ態勢を評価および測定し、指示に従って必要に応じて改善します。
 
-次に、[攻撃表面の縮小ルール](/microsoft-365/security/defender-endpoint/attack-surface-reduction)を使用して、疑わしいアクティビティと脆弱なコンテンツをブロックします。 これらのルールには、次の防止が含まれます。
+次に、[攻撃表面の縮小ルール](/microsoft-365/security/defender-endpoint/attack-surface-reduction)を使用して、疑わしいアクティビティと脆弱なコンテンツをブロックします。これらのルールには以下を防止するものが含まれています:
 
 - すべての Office アプリケーションによる子プロセスの作成
 - メール クライアントと Web メールからの実行可能なコンテンツ

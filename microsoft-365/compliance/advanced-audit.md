@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 の高度な監査では、組織におけるフォレンシックおよびコンプライアンスの調査に役立つ新しい監査機能を提供します。
-ms.openlocfilehash: 5892932bc3fe35cfc6739c266db9f6379d08ee6b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bca5495b60bcd3fe84c7faf05ec124f2eb037994
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191601"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151292"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 の高度な監査
 
@@ -135,7 +135,7 @@ SearchQueryInitiatedExchange 監査レコードを検索するには、コンプ
 また、Exchange Online PowerShell で [Search-UnifiedAuditLog -Operations SearchQueryInitiatedExchange](/powershell/module/exchange/search-unifiedauditlog) を実行することもできます。
 
 > [!NOTE]
-> 監査ログでこのイベントを検索するには、SearchQueryInitiatedExchange を有効にして記録する必要があります。 方法については、[高度な監査の設定](set-up-advanced-audit.md#step-2-enable-advanced-audit-events) を参照してください。
+> 監査ログでこのイベントを検索するには、SearchQueryInitiatedExchange を有効にして記録する必要があります。手順については、「[高度な監査の設定](set-up-advanced-audit.md#step-2-enable-advanced-audit-events)」を参照してください。
 
 ### <a name="searchqueryinitiatedsharepoint"></a>SearchQueryInitiatedSharePoint
 
@@ -158,7 +158,7 @@ SearchQueryInitiatedSharePoint 監査レコードを検索するには、コン�
 また、Exchange Online PowerShell で [Search-UnifiedAuditLog -Operations SearchQueryInitiatedSharePoint](/powershell/module/exchange/search-unifiedauditlog) を実行することもできます。
 
 > [!NOTE]
-> 監査ログでこのイベントを検索するには、SearchQueryInitiatedSharePoint を有効にして記録する必要があります。 方法については、[高度な監査の設定](set-up-advanced-audit.md#step-2-enable-advanced-audit-events) を参照してください。
+> 監査ログでこのイベントを検索するには、SearchQueryInitiatedSharePoint を有効にして記録する必要があります。手順については、「[高度な監査の設定](set-up-advanced-audit.md#step-2-enable-advanced-audit-events)」を参照してください。
 
 ### <a name="other-advanced-audit-events-in-microsoft-365"></a>Microsoft 365 のその他の高度な監査イベント
 

@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -25,12 +26,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 組織向けに多要素認証を設定する方法について説明します。
 monikerRange: o365-worldwide
-ms.openlocfilehash: c0e623c0cfda4208b79d64a9acf88e2d75fc8595
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 0dddf5cbc1bcf921d239c7a93031be6cce419eb6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59772748"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178085"
 ---
 # <a name="set-up-multifactor-authentication"></a>多要素認証を設定する
 
@@ -83,7 +84,7 @@ Azure ポータル内の Azure Active Directory (Azure AD) の **プロパティ
 > [!IMPORTANT]
 > 条件付きアクセス ポリシーを有効にする前に、ユーザーごとの MFA とセキュリティの既定値をオフにします。
 
-条件付きアクセスを利用できるのは、Azure AD Premium P1 を購入したお客様、またはこの機能を含むライセンス (Microsoft 365 Business Premium、Microsoft 365 E3 など) を購入したお客様です。 詳細については、[「条件付きアクセス ポリシーを作成する」](/azure/active-directory/authentication/tutorial-enable-azure-mfa) を参照してください。
+条件付きアクセスは、Azure AD Premium P1 を購入したお客様、またはこれを含むライセンス (Microsoft 365 Business Premium、Microsoft 365 E3 など) で利用できます。詳細については、「[条件付きアクセス ポリシーを作成する](/azure/active-directory/authentication/tutorial-enable-azure-mfa)」を参照してください。
 
 リスクベースの条件付きアクセスは、Azure AD Premium P2 ライセンスを通して、またはこの機能を含むライセンス (Microsoft 365 E5 など) を通じて利用できます。 詳細については、[「リスクベースの条件付きアクセス」](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk) を参照してください。
 
@@ -95,7 +96,7 @@ Azure AD P1 および P2 の詳細については、「[Azure Active Directory �
 
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a> で、左側のナビゲーションの **[設定]** \> **[組織の設定]** の順に選択します。
-2. **[サービス]** タブで、**[先進認証]** を選択し、**[先進認証]** ウィンドウで、**[先進認証を有効にする]** が選択されていることを確認します。 **[変更の保存]** を選びます。
+2. **[サービス]** タブで、**[先進認証]** を選択し、**[先進認証]** ウィンドウで、**[先進認証を有効にする]** が選択されていることを確認します。**[変更を保存]** を選択します。
 
 
 ### <a name="turn-off-legacy-per-user-mfa"></a>従来のユーザーごとの MFA をオフにする

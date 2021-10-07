@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: アイテム保持ポリシーおよび保持ラベル ポリシーのポリシーおよびポリシーごとの項目の最大数を把握する
-ms.openlocfilehash: 322a0c711ed1838dfd5349d43b1c3bcbf656618e
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 881aa208036bab4fe476bb424e42ff16dbb5344f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59399864"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195571"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>アイテム保持ポリシーとアイテム保持ラベルの制限
 
@@ -81,7 +81,7 @@ Skype for Business は特定のユーザーにスコープを設定する必要�
 
 - **ソリューション**: Exchange メールの保持期間が 7 年のアイテム保持ポリシーを 1 つ作成し、ユーザーのサブセットを除外します。 次に、Exchange メールの第 2 のアイテム保持ポリシーを作成し、保持期間を 5 年として、ユーザーのサブセットを含めます。 
     
-    どちらの場合も、対象となる数と除外される数が 1 つのポリシーの指定メールボックスの最大数を下回っており、ユーザーのサブセットは、第二のポリシーよりも[保持期間](retention.md#the-principles-of-retention-or-what-takes-precedence)が長いため、最初のポリシーから明示的に除外されなければなりません。 ユーザーのサブセットが保存期間のより長いアイテム保持ポリシーを必要とする場合は、最初のポリシーから除外する必要はありません。
+    どちらの場合も、含まれる数と除外される数は、1 つのポリシーに対して指定されたメールボックスの最大数を下回っており、ユーザーのサブセットは、最初のポリシーから明示的に除外する必要があります。というのは、2 番目のポリシーよりも [長い保持期間](retention.md#the-principles-of-retention-or-what-takes-precedence) があるからです。ユーザーのサブセットに長いアイテム保持ポリシーが必要な場合は、最初のポリシーから除外する必要はありません。
      
     このソリューションでは、新規に組織に加入したユーザーがいる場合は、そのユーザーのメールボックスは自動的に 7 年間最初のポリシーに含まれ、サポートされている最大数に影響はありません。 しかし、5 年間の保持期間を必要とする新規ユーザーは、対象数と除外数に追加され、この制限は最大 1,000 です。
 

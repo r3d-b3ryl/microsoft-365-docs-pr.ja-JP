@@ -7,7 +7,7 @@ ms.date: 02/02/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -18,16 +18,16 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: '概要: 単一の PowerShell ウィンドウですべての Microsoft 365 サービスに接続します。'
-ms.openlocfilehash: 82d623c0074a7cdb3b61d0e6380b779d55354809
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d7684debae5ba0cc6679acf7a0cb6f590cca11c5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218753"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201711"
 ---
 # <a name="connect-to-all-microsoft-365-services-in-a-single-powershell-window"></a>単一の PowerShell ウィンドウですべての Microsoft 365 サービスに接続する
 
-PowerShell を使用して Microsoft 365 を管理する場合は、同時に複数の PowerShell セッションを開くことができます。 ユーザー アカウント、SharePoint Online、Exchange Online、Skype for Business Online、Microsoft Teams、セキュリティ &amp; コンプライアンス センターを管理するために、異なる PowerShell ウィンドウが必要な場合があります。
+PowerShell を使用して Microsoft 365 を管理する場合は、同時に複数の PowerShell セッションを開くことができます。ユーザー アカウント、SharePoint Online、Exchange Online、Skype for Business Online、Microsoft Teams、セキュリティ &amp; コンプライアンス センターを管理するのに別々の PowerShell ウィンドウが開く場合があります。
   
 このシナリオでは、サービス間管理のためにウィンドウ間でデータを交換できないため、Microsoft 365 の管理に最適な状況ではありません。 この記事では、Microsoft 365 アカウント、Skype for Business Online、Exchange Online、SharePoint Online、Microsoft Teams、セキュリティ &amp; コンプライアンス センターを管理する PowerShell の単一のインスタンスを使用する方法について説明します。
 
@@ -99,7 +99,7 @@ PowerShell の単一のインスタンスからすべての Microsoft 365 を管
    ```
 
    > [!Note]
-   > PowerShell Core は、Windows PowerShell 用 Microsoft Azure Active Directory モジュールと、名前に *Msol* が含まれるコマンドレットをサポートしていません。 これらのコマンドレットは、PowerShell から実行する必要があります。
+   > PowerShell Core は、Windows PowerShell 用 Microsoft Azure Active Directory モジュールと、名前に *Msol* が含まれるコマンドレットをサポートしていません。これらのコマンドレットは PowerShell から実行する必要があります。
 
 4. 次のコマンドを実行して、SharePoint Online に接続します。 ドメインの組織名を指定します。 たとえば、"litwareinc\.onmicrosoft.com" の場合、組織名の値は "litwareinc" です。
     

@@ -9,14 +9,14 @@ ms.topic: reference
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection: m365initiative-syntex
-localization_priority: Priority
+ms.localizationpriority: high
 description: REST API を使い、トレーニング済みの文書理解モデルを使用してフォルダー全体を分類する要求を作成します。
-ms.openlocfilehash: 44e1969628fb61b797f59a7378b95403c94dda8a
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: ea5748b5eb376872738d30b142927314abfe9d3e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59777133"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60186875"
 ---
 # <a name="create-folder-classification-request"></a>フォルダー分類要求の作成
 
@@ -64,7 +64,7 @@ POST /_api/machinelearning/workItems HTTP/1.1
 
 | 名前   | 型  | 説明|
 |--------|-------|------------|
-|StatusCode |整数 |HTTP 状態コード。 200 または 201 でない場合、API は失敗しているはずです。|
+|StatusCode |整数 |HTTP 状態コード。200 または 201 でない場合、API は失敗しているはずです。|
 |ErrorMessage |文字列 |モデルをドキュメント ライブラリに適用するときに何が問題になっているのかを示すエラー メッセージ。|
 
 ## <a name="examples"></a>例

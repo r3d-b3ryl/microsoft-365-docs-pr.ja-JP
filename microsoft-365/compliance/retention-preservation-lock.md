@@ -10,17 +10,17 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーと保持ラベル ポリシーとともに保管ロックを使用して、規制要件を満たし、不正な管理者から保護します。
-ms.openlocfilehash: eb842a3d5add719338773f088b07dcf4c32ede53
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 71cd5aaa4b868d85f94f92370c50ef57253cc084
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216554"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179009"
 ---
 # <a name="use-preservation-lock-to-restrict-changes-to-retention-policies-and-retention-label-policies"></a>保管ロックを使用して、アイテム保持ポリシーと保持ラベル ポリシーへの変更を制限する
 
@@ -58,7 +58,7 @@ ms.locfileid: "59216554"
 
 1. [セキュリティ/コンプライアンス センター PowerShell に接続します](/powershell/exchange/connect-to-scc-powershell)。
 
-2. [Get-RetentionCompliancePolicy](/powershell/module/exchange/get-retentioncompliancepolicy) を実行してロックするポリシーの名前を検索します。 以下に例を示します。
+2. [Get-RetentionCompliancePolicy](/powershell/module/exchange/get-retentioncompliancepolicy) を実行してロックするポリシーの名前を検索します。例えば:
     
    ![PowerShell のアイテム保持ポリシーの一覧。](../media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
 
@@ -82,7 +82,7 @@ ms.locfileid: "59216554"
 Get-RetentionCompliancePolicy -Identity "<Name of Policy>" |Fl
 ```
 
-**RestrictiveRetention** が **True** に設定されていることを確認する必要があります。 例:
+**RestrictiveRetention** が **True** に設定されていることを確認する必要があります。
 
 ![PowerShell に表示されるすべてのパラメーターを含むロックされたポリシー。](../media/retention-policy-preservation-lock-locked-policy.PNG)
 

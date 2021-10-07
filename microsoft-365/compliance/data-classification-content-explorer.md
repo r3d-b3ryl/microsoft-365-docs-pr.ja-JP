@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - m365solution-mip
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コンテンツ エクスプローラーにより、ラベル付きアイテムをネイティブに表示することができます。
-ms.openlocfilehash: e1cae053c7b13ceec9c7f3274122cf004c7277e5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ed0eb21f5c97c4028395b6d85a01e6855a46e028
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176007"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168688"
 ---
 # <a name="get-started-with-content-explorer"></a>コンテンツ エクスプローラーの使用を開始する
 
@@ -71,7 +71,7 @@ ms.locfileid: "59176007"
 
 - **コンテンツ エクスプローラーのリスト ビューアー**: この役割のグループのメンバーシップにより、ユーザーは各アイテムおよびその場所をリスト ビューで確認することができます。 この役割グループには、`data classification list viewer` 役割が事前に割り当てられています。
 
-- **コンテンツ エクスプローラーのコンテンツ ビューアー**: この役割のグループのメンバーシップにより、ユーザーはリスト内の各アイテムのコンテンツを表示することができます。 この役割グループには、`data classification content viewer` 役割が事前に割り当てられています。
+- **Content Explorer コンテンツ ビューアー**: この役割グループのメンバーシップを使用すると、リスト内の各項目の内容を表示できます。この役割グループには、`data classification content viewer` の役割が事前に割り当てられています。
 
 コンテンツ エクスプローラーにアクセスするために使用するアカウントには、1 つまたは両方の役割のグループがある必要があります。 独立した役割のグループがあり、累積ではありません。 たとえば、アイテムおよびそれらの場所のみ表示する機能をアカウントに付与する場合は、コンテンツ エクスプローラーのリスト ビューアーの権利を付与します。 その同じアカウントでリスト内のアイテムのコンテンツも表示できるようにするには、コンテンツ エクスプローラーのコンテンツ ビューアーの権利も付与します。
 
@@ -85,7 +85,7 @@ ms.locfileid: "59176007"
 
 ### <a name="sensitive-information-types"></a>機密情報の種類
 
-[DLP ポリシー](dlp-learn-about-dlp.md)は、**機密情報の種類** として定義されている機密情報を保護するのに役立ちます。 Microsoft 365 には、さまざまな地域にわたる[多くの一般的な機密情報の種類に対する定義](sensitive-information-type-entity-definitions.md)が含まれていて、すぐに使用できる状態になっています。 たとえば、クレジットカード番号、銀行口座番号、国民識別番号、Windows Live ID サービス番号などです。
+[DLP ポリシー](dlp-learn-about-dlp.md)は、機密情報の保護に役立ちます。これは、**機密の種類** として定義されます。Microsoft 365 には、ユーザーが使用できるさまざまなリージョンをまたいだ [多くの一般的な機密の種類の定義](sensitive-information-type-entity-definitions.md)が含まれています。たとえば、クレジット カード番号、銀行口座番号、国民 ID 番号、Windows Live ID サービス番号などです。
 
 > [!NOTE]
 > 現在、コンテンツ エクスプローラーは、Exchange Online の機密情報の種類をスキャンしません。

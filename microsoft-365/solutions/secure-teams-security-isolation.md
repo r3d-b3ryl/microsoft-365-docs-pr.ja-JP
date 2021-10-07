@@ -6,7 +6,7 @@ author: MikePlumleyMSFT
 manager: serdars
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: セキュリティ固有の秘密度ラベルを使用してチームを作成する方法について説明します。
-ms.openlocfilehash: 2a6285b63c67572ec363303e1d850c08d9c8e0c5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 83672c1d723103c3b6b72db7b9c67374a2223593
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192180"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206399"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>セキュリティの分離を使用してチームを構成する
 
@@ -86,7 +86,7 @@ ms.locfileid: "59192180"
 3. **[初めからチームを作成する]** を選びます。
 4. **[秘密度]**] リストで、既定のままにします。
 5. **[プライバシー]** で、**[プライベート]** をクリックします。
-6. 機密プロジェクトに関連するチームの名前を入力します。 たとえば、**Project Saturn**。
+6. 機密プロジェクトに関連するチームの名前を入力します。たとえば、**Project Saturn**。
 7. **[作成]** をクリックします。
 8. チームにユーザーを追加し、**[閉じる]** をクリックします。
 
