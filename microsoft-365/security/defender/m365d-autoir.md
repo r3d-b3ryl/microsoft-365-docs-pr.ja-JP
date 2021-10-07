@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: ceaba46bbff3f63af8b7571660919d6c10959907
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 5ca23f61b2843f582ed704b69f702559afdeeffa
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59484016"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199479"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Microsoft 365 Defender での自動調査と応答
 
@@ -40,7 +40,7 @@ ms.locfileid: "59484016"
 この記事では、AIR の概要を説明し、次の手順と追加のリソースへのリンクを含みます。
 
 > [!TIP]
-> Microsoft 365 Defender を体験してみませんか? [ラボ環境で評価する](m365d-evaluation.md?ocid=cx-docs-MTPtriallab)ことも、[実稼働環境でパイロット プロジェクトを実行する](m365d-pilot.md?ocid=cx-evalpilot)こともできます。
+> Microsoft 365 Defender を体験しますか? [ラボ環境で評価](m365d-evaluation.md?ocid=cx-docs-MTPtriallab)、または[運用でパイロット プロジェクトを実行](m365d-pilot.md?ocid=cx-evalpilot)することができます。
 
 ## <a name="how-automated-investigation-and-self-healing-works"></a>自動調査と自己修復の仕組み
 
@@ -79,7 +79,7 @@ Imagine第 1 層または第 2 層のセキュリティ運用チームに仮想�
 - プロセスの停止
 - デバイスの分離
 - URL のブロック 
-- その他のアクション
+- その他の操作
 
 詳細については、「修復アクション」を[参照Microsoft 365 Defender。](m365d-remediation-actions.md)
 
@@ -113,7 +113,7 @@ Microsoft Learn のこの学習モジュールを使用して、Microsoft 365 De
 > [!div class="nextstepaction"]
 > [スタート>](/learn/modules/defender-self-healing/)
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - [自動調査と対応の前提条件を確認する](m365d-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender)
 - [組織の自動調査と対応を構成する](m365d-configure-auto-investigation-response.md)

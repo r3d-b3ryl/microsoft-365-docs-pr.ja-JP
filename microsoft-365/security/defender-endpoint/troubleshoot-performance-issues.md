@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: maccruz
 author: schmurky
-localization_priority: normal
+ms.localizationpriority: medium
 manager: dansimp
 ms.date: 04/14/2021
 audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: df841029c95c66a64c63ef1040bd033e5a74d27c
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: 6bfd4f42a6fcc43d7eec6c378cb1cdc25b186991
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60009447"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196887"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>リアルタイム保護に関連するパフォーマンスの問題のトラブルシューティング
 
@@ -127,7 +127,7 @@ Microsoft Defender for Endpoint のリアルタイム保護サービスに関連
         >
         > ![Procmon を最小化します。](images/procmon-minimize.png)
 
-7. 手順 6 の手順の 1 つを実行すると、次にフィルターを設定するオプションが表示されます。 [**OK**] を選択します。 キャプチャが完了したら、いつでも結果をフィルター処理できます。
+7. 手順 6 の手順の 1 つを実行すると、次にフィルターを設定するオプションが表示されます。 **[OK]** を選択します。 キャプチャが完了したら、いつでも結果をフィルター処理できます。
 
     ![[フィルター処理名] は [システム除外] です。](images/procmon-filter-options.png)
 

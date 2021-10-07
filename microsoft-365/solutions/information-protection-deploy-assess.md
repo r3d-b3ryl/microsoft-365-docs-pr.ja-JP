@@ -9,7 +9,7 @@ ms.date: 07/13/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: データのプライバシーに関する規制、関連するシナリオ、準備状況、および機密情報の種類を特定し、Microsoft 365します。
-ms.openlocfilehash: eefa80d85a9b03317b2021c73152e2e63f772cea
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ebad5531ddd0343bb262fde1569811fcc02b993b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192211"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199287"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>データプライバシーリスクを評価し、機密アイテムを特定Microsoft 365
 
@@ -60,7 +60,7 @@ ISO 27001 などの他の標準への準拠は、複数のヨーロッパの監�
 
 |規制|記事/セクション|抜粋|適用可能な技術制御カテゴリ|
 |---|---|---|---|
-|GDPR|記事 5(1)(f)|個人データは、不正または違法な処理に対する保護、偶発的な損失、破壊または損害に対する保護を含む、個人データの適切なセキュリティを確保する方法で、適切な技術的または組織的手段 ('整合性と機密性') を使用して処理されます。|(すべて) <br> ID <br> Device <br> 脅威の防止 <br> 情報を保護する <br> 情報の統制 <br> 検出と対応|
+|GDPR|記事 5(1)(f)|個人データは、不正または違法な処理に対する保護、偶発的な損失、破壊または損害に対する保護を含む、個人データの適切なセキュリティを確保する方法で、適切な技術的または組織的手段 ('整合性と機密性') を使用して処理されます。|(すべて) <br> ID <br> デバイス <br> 脅威保護 <br> 情報を保護する <br> 情報の統制 <br> 検出と対応|
 ||記事 (32)(1)(a)|最新の技術、実装のコスト、処理の性質、範囲、コンテキスト、および目的、および自然人の権利と自由に対するさまざまな可能性と重大度のリスクを考慮して、管理者とプロセッサは、リスクに適したレベルのセキュリティを確保するための適切な技術的および組織的措置を実施します。 (a) 個人データの仮名化と暗号化を含む。|情報を保護する|
 ||記事 (13)(2)(a)|"...管理者は、個人データが取得された時点で、(a) 個人データが保存される期間、またはそれができない場合は、その期間を決定するために使用される条件という、公正で透明な処理を確保するために必要な次の情報をデータ主体に提供します。|情報の統制|
 ||記事 (15)(1)(e)|データ主体は、管理者の確認から、自分に関する個人データが処理されているかどうかを確認する権利を有し、その場合、個人データへのアクセスおよび次の情報:(e) 個人データの削除または消去を要求する権利の存在、またはデータ主体に関する個人データの処理の制限、またはそのような対象に対するオブジェクトに対する個人データの処理の制限処理|検出と対応|

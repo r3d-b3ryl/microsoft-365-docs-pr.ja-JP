@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: クラウド ベースのアプリによって作成されたコンテンツは、Microsoft 365のメールボックスに格納または関連付Exchange Onlineされます。 このコンテンツは、Microsoft 電子情報開示ツールを使用して検索できます。
-ms.openlocfilehash: 975f4ac8be8c2cdeed8dea1d73699607662a1ce9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f7db327d21928df925bfd6451226ab96782d715b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216143"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198567"
 ---
 # <a name="content-stored-in-exchange-online-mailboxes-for-ediscovery"></a>電子情報開示用のExchange Onlineメールボックスに格納されているコンテンツ
 
@@ -38,11 +38,11 @@ ms.locfileid: "59216143"
 |フォーム<sup>*</sup>|フォームとフォームへの応答は、電子メール メッセージに添付され、フォームを作成したユーザーのメールボックス内の非表示のフォルダーに格納されるファイルに格納されます。 2020 年 4 月より前に作成されたフォームは、PDF ファイルとして保存されます。 2020 以降に作成されたフォームは、JSON ファイルとして保存されます。 フォームへの応答は CSV ファイルに格納されます。 PST ファイル内のフォームからコンテンツをエクスポートする場合、このデータは、グローバルに一意に識別される (GUID) **c9a559d2-7aab-4f13-a6ed-e7e9c52aec87** という名前のサブフォルダーの **ApplicationDataRoot** フォルダーにあります。|
 |Microsoft 365 グループ|電子メール メッセージ、予定表アイテム、連絡先 (人)、メモ、タスクは、ユーザー グループに関連付けられているメールボックスMicrosoft 365されます。|
 |Outlook/Exchange Online|電子メール メッセージ、予定表アイテム、連絡先 (People)、メモ、およびタスクは、ユーザーのメールボックスに格納されます。|
-|連絡先|People アプリの連絡先 (この連絡先は、Outlook でアクセスできる連絡先と同じ) は、ユーザーのメールボックスに格納されます。|
+|ユーザー|People アプリの連絡先 (この連絡先は、Outlook でアクセスできる連絡先と同じ) は、ユーザーのメールボックスに格納されます。|
 |クラス スケジュール|クラス スケジュールで作成されたプランは、新しいプランの作成時にMicrosoft 365グループのメールボックスに格納されます。 グループ メールボックスのエイリアスは、プランの名前です。|
 |Skype for Business|ユーザーのSkype for Businessは、ユーザーのメールボックスの [会話履歴] フォルダーに格納されます。 Skype 会議の参加者のメールボックスが訴訟ホールドに配置されている場合、または保持ポリシーに割り当てられている場合、会議に添付されているファイルは参加者メールボックスに保持されます。|
 |Sway<sup>*</sup>|Sways は、電子メール メッセージに添付され、スウェイを作成したユーザーのメールボックス内の非表示フォルダーに格納される HTML ファイルとして格納されます。 PST ファイル内の Sway からコンテンツをエクスポートする場合、このデータは、GUID **905fcf26-4eb7-48a0-9ff0-8dcc7194b5ba** という名前のサブフォルダーの **ApplicationDataRoot** フォルダーにあります。|
-|Tasks|タスク アプリ内のタスク (このタスクは、Outlook でアクセスできるタスクと同じタスク) がユーザーのメールボックスに格納されます。|
+|タスク|タスク アプリ内のタスク (このタスクは、Outlook でアクセスできるタスクと同じタスク) がユーザーのメールボックスに格納されます。|
 |Teams|チャネルの一部である会話はTeamsメールボックスにTeamsされます。 Teams のチャット リストの一部である会話 *(1 x N* チャットとも呼ばれる) は、チャットに参加するユーザーのメールボックスに関連付けられる。 また、会議チャネル内の会議と通話Teams情報は、会議または通話にダイヤルしたユーザーのメールボックスに関連付けされます。 そのため、Teams コンテンツを検索する場合は、チャネル会話のコンテンツを Teams メールボックスで検索し、1 x N チャット内のコンテンツをユーザー メールボックスで検索します。|
 |To-Do|タスク *(to-dos* と呼ばれる、to-do リストに保存される) は、To-Doのメールボックスに格納されます。|
 |Yammer|Yammer コミュニティ内の会話とコメントは、Microsoft 365 グループ メールボックス、作成者のユーザー メールボックス、および任意の名前付き受信者 (@mentioned または Cc'ed ユーザー) に関連付けます。 プライベート メッセージの外部から送信Yammerプライベート メッセージは、プライベート メッセージに参加するユーザーのメールボックスに格納されます。|

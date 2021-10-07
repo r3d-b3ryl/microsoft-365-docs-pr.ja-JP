@@ -9,7 +9,7 @@ ms.reviewer: tugu, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ ms.custom:
 - commerce_billing
 - AdminTemplateSet
 ms.date: 03/17/2021
-ms.openlocfilehash: 2ea5db8cbd68a6c0dd600730fac408dc4bb75e2a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1d0c8c007a9e1e06980f06c7db0add1830c28ae0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219153"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198939"
 ---
 # <a name="tax-information"></a>税金情報
 
@@ -148,7 +148,7 @@ Microsoft 地域販売オフィスから請求される場合は、「Microsoft 
 
 売上税は単価に対して計算され、集計されます。
 
-以下に例を示します。
+次に例を示します。
 
 >*(単価 X 税率)X 数量 = 売上税の合計*
 

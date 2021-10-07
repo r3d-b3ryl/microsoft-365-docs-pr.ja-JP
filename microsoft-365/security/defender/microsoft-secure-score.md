@@ -4,7 +4,7 @@ description: Microsoft Secure Score について、Microsoft 365 Defenderポー�
 keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, Microsoft 365 Defender ポータル, 改善アクション
 ms.prod: m365-security
 ms.mktglfcycl: deploy
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 8b81671d2421400dd1b168b67b323d38fb85b19f
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: bfe3718a6e8c82c516a395e2d2c7f43d21ceda04
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59933269"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196671"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft セキュア スコア
 

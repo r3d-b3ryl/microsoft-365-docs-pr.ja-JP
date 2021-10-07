@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 720707ab58ff5de8ddc64ac1df717d9812227735
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e97ed3b7b11eeded5919e963a3175782d3a7d088
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220094"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60184379"
 ---
 # <a name="create-an-app-to-access-microsoft-365-defender-apis-on-behalf-of-a-user"></a>ユーザーに代わって API にMicrosoft 365 Defenderするアプリを作成する
 
@@ -75,7 +75,7 @@ Microsoft 365 Defender一連のプログラム API を使用して、そのデ�
    ![[アプリケーションの作成] ウィンドウのイメージ。](../../media/nativeapp-create2.PNG)
 
    - **アプリケーションの種類:** パブリック クライアント
-   - **リダイレクト URI:**https://portal.azure.com
+   - **リダイレクト URI:** https://portal.azure.com
 
 4. アプリケーション ページで **、[API アクセス** 許可] [アクセス許可の追加] を選択し、組織で使用するアクセス許可 API > Microsoft Threat Protection と入力し  >    >  **、[Microsoft** Threat **Protection] を選択します**。 これで、アプリはアプリにアクセスMicrosoft 365 Defender。
 

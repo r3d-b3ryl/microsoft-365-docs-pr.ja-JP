@@ -2,27 +2,25 @@
 title: Android 機能用に Microsoft Defender for Endpoint を構成する
 description: Android のエンドポイント用 Microsoft Defender を構成する方法について説明します。
 keywords: microsoft、 defender、 Microsoft Defender for Endpoint, mde, android, configuration
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: afff05ac0e18ac41b1e2ba70b59ed4dfd0c6a22a
-ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
+ms.openlocfilehash: 4db57a39d6270608a5107a77f41ce11fdd139c78
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/21/2021
-ms.locfileid: "59460318"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60186634"
 ---
 # <a name="configure-defender-for-endpoint-on-android-features"></a>Android の機能でエンドポイント用 Defender を構成する
 
@@ -78,7 +76,7 @@ Defender for Endpoint on Android では、IT 管理者は Web 保護機能を構
 
 上記のプライバシー制御を有効にすると、デバイスコンプライアンスチェックや条件付きアクセスには影響を与えず、たとえば悪意のあるアプリを持つデバイスは常にリスク レベルが "中" になります。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [Android 用 Microsoft Defender for Endpoint の概要](microsoft-defender-endpoint-android.md)
 - [Microsoft Intune を使用した Android 用 Microsoft Defender for Endpoint の展開](android-intune.md)

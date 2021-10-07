@@ -8,14 +8,14 @@ audience: admin
 ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
-localization_priority: medium
+ms.localizationpriority: medium
 description: 詳しくは、アプリをセットアップするMicrosoft Viva トピック。
-ms.openlocfilehash: ba0bf7c9bec785f359e3a5f9a43ee0f7063b25dd
-ms.sourcegitcommit: d1a93f25323a0e6ce3b898bf9dc57dcef27eda67
+ms.openlocfilehash: 2a662640c765cc970483e73ed42971e73067e614
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60126844"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197259"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>設定Microsoft Viva トピック
 

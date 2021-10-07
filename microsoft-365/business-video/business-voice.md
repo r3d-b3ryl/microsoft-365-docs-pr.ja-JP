@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 詳細については、Microsoft 365 Business Voice。
-ms.openlocfilehash: edffbbe615b7098377297f96a6015929d5825694
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ef3c0d08ac2a419e8d15b825272f6689f6cd3eaf
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221273"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199059"
 ---
 # <a name="overview-of-business-voice"></a>Business Voice の概要
 
@@ -43,7 +43,7 @@ Business Voice では、すべての機能をMicrosoft 365 電話システム簡
 
 Business Voice は、ユーザーの一部なので、あらゆる場所にMicrosoft Teams。 したがって、携帯電話、タブレット、またはコンピューターに Teams アプリがある場合は、そのデバイスを使用して、オフィスの物理的な電話である場合と同じ方法で通話を行い、受信できます。
 
-## <a name="how-to-set-up"></a>セットアップ方法
+## <a name="how-to-set-up"></a>設定方法
 
 :::image type="content" source="../media/rework_M365_BusinessVoice_Setup1.png" alt-text="Business Voice セットアップの概要。":::
 
@@ -56,7 +56,7 @@ Business Voice は、ユーザーの一部なので、あらゆる場所にMicro
 1. 最後に、既存の電話番号を別の電話番号にMicrosoft Teams。
 1. 電話番号が利用可能になったら、従業員Teams主なビジネス番号に割り当てる必要があります。 これで、コンピューター、電話、タブレットで新しいビジネスTeamsアプリを使用する準備ができました。
 
-## <a name="how-to-use"></a> の使用法
+## <a name="how-to-use"></a>使用方法
 
 電話を行う場合は、コンピューター、タブレット、Teamsのアプリを開き、[通話] を選択します。 割り当てられた電話番号とダイヤル パッドが表示され、任意の番号に通話できます。 または、連絡先または電話から連絡先Outlookを選択し、直接呼び出します。
 

@@ -2,15 +2,13 @@
 title: Jamf の macOS ポリシーで Microsoft Defender for Endpoint をセットアップPro
 description: Jamf サーバーで macOS ポリシーで Microsoft Defender for Endpoint をセットアップするPro
 keywords: ポリシー、microsoft、Defender、Microsoft Defender for Endpoint、Mac、インストール、展開、アンインストール、intune、jamfpro、macos、catalina、mojave、high sierra
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cecc6cd9be841043c2f3cc55977c56f14386cd2d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0bc0b09bcb834c67cb5da13469139875037440b0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177583"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198687"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Jamf の macOS ポリシーで Microsoft Defender for Endpoint をセットアップPro
 
@@ -134,7 +132,7 @@ JAMF Pro GUI を使用して Microsoft Defender 構成の個々の設定を編�
 
 ### <a name="gui-method"></a>GUI メソッド
 
-1. Defender schema.jsリポジトリからファイルにGitHub[し](https://github.com/microsoft/mdatp-xplat/tree/master/macos/schema)、ローカル ファイルに保存します。
+1. Defender のリポジトリから schema.json ファイルをGitHub[ローカル](https://github.com/microsoft/mdatp-xplat/tree/master/macos/schema)ファイルに保存します。
 
     ```bash
     curl -o ~/Documents/schema.json https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/schema/schema.json
@@ -154,7 +152,7 @@ JAMF Pro GUI を使用して Microsoft Defender 構成の個々の設定を編�
 
     ![カスタム スキーマを追加します。](images/4137189bc3204bb09eed3aabc41afd78.png)
 
-4. [ `com.microsoft.wdav` 基本設定ドメイン] として入力し、[スキーマの追加] をクリックし **アップロード** 手順 1 でschema.jsを選択します。 **[保存]** をクリックします。
+4. [ `com.microsoft.wdav` 基本設定ドメイン] として入力し、[スキーマの追加] をクリック **アップロード** 手順 1 でダウンロードした schema.json ファイルを選択します。 **[保存]** をクリックします。
 
     ![アップロードスキーマ。](images/a6f9f556037c42fabcfdcb1b697244cf.png)
 

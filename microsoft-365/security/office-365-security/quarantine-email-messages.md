@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: Admin
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MED150
@@ -22,12 +22,12 @@ ms.custom:
 description: 管理者は、潜在的に危険なメッセージまたは望ましくないメッセージExchange Online Protection (EOP) の検疫について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cf9de0ba85c0e1612d29f7842da4bc74af14bf00
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 48509dbc6f422a8de2ab0ee2e75fd5456087fc6f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483563"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199419"
 ---
 # <a name="quarantined-email-messages-in-eop"></a>EOP で検疫された電子メール メッセージ
 
@@ -46,7 +46,7 @@ Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Pro
 
 ユーザーと管理者の両方が検疫済みメッセージを処理できます。
 
-- _検疫ポリシーは、_ メッセージが検疫された理由 (サポートされている機能の場合) に基づいて、検疫されたメッセージに対してユーザーが許可される操作または実行しない操作を定義します。 既定の検疫ポリシーは、以下で説明するように履歴機能を適用します。 管理者は、ユーザーの制限が少ない、または制限の厳しい機能を定義するカスタム検疫ポリシーを作成して適用できます。 詳細については、「検疫ポリシー [」を参照してください](quarantine-policies.md)。
+- _検疫ポリシーは、_ メッセージが検疫された理由 (サポートされている機能の場合) に基づいて、検疫されたメッセージに対してユーザーが許可される操作または実行しない操作を定義します。 既定の検疫ポリシーは、以下で説明するように履歴機能を適用します。 管理者は、ユーザーの制限が少ない、または制限の厳しい機能を定義するカスタム検疫ポリシーを作成して適用できます。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。
 
 - 管理者は、すべてのユーザーのすべての種類の検疫済みメッセージを処理できます。 既定では、マルウェア、高信頼フィッシング、またはメール フロー ルール (トランスポート ルールとも呼ばれる) の結果として検疫されたメッセージを管理者だけが処理できます。 詳細については、「[EOP の管理者として検疫済みのメッセージやファイルを管理する](manage-quarantined-messages-and-files.md)」を参照してください。
 

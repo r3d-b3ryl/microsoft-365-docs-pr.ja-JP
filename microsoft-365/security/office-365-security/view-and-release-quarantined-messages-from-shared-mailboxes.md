@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: ''
@@ -17,12 +17,12 @@ ROBOTS: NOINDEX
 description: ユーザーは、アクセス許可を持つ共有メールボックスに送信された検疫済みメッセージを表示および処理する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fae8ad995f5edb4735ecd62ba04a358da2769157
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: d98e228bc966dd95210276ad3ad86543c3ac711f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59484085"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196275"
 ---
 # <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>共有メールボックスから検疫済みメッセージを表示および解放する
 
@@ -46,7 +46,7 @@ ms.locfileid: "59484085"
 
 ## <a name="things-to-keep-in-mind"></a>留意すべき点
 
-- _検疫ポリシーは、_ メッセージが検疫された理由 (サポートされている機能の場合) に基づいて、検疫されたメッセージに対してユーザーが許可される操作または実行しない操作を定義します。 既定の検疫ポリシーでは、受信者がメッセージを表示および処理できる履歴機能が適用されます。 管理者は、ユーザーの制限が少ない、または制限の厳しい機能を定義するカスタム検疫ポリシーを作成して適用できます。 詳細については、「検疫ポリシー [」を参照してください](quarantine-policies.md)。
+- _検疫ポリシーは、_ メッセージが検疫された理由 (サポートされている機能の場合) に基づいて、検疫されたメッセージに対してユーザーが許可される操作または実行しない操作を定義します。 既定の検疫ポリシーでは、受信者がメッセージを表示および処理できる履歴機能が適用されます。 管理者は、ユーザーの制限が少ない、または制限の厳しい機能を定義するカスタム検疫ポリシーを作成して適用できます。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。
 
 - 検疫済みメッセージに対して最初に行動するユーザーは、共有メールボックスを使用するすべてのユーザーに対するメッセージの運命を決定します。 たとえば、共有メールボックスに 10 人のユーザーがアクセスし、ユーザーが検疫メッセージを削除する場合、メッセージは 10 人のユーザー全員に対して削除されます。 同様に、ユーザーがメッセージを解放すると判断した場合は、共有メールボックスに解放され、共有メールボックスの他のすべてのユーザーがアクセスできます。
 

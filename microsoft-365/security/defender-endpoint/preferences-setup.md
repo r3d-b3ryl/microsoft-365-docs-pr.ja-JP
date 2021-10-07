@@ -2,26 +2,24 @@
 title: ユーザー設定Microsoft Defender セキュリティ センター構成する
 description: '[設定] ページを使用して、一般的な設定、アクセス許可、API、およびルールを構成します。'
 keywords: 設定、一般的な設定、アクセス許可、API、ルール
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c032c54f8b80114e00fcff432a0da37a9d836f35
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: aa6c7b8b0235be3304e7f941864e4a0928eb4ab6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189401"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196837"
 ---
 # <a name="configure-microsoft-defender-security-center-settings"></a>ユーザー設定Microsoft Defender セキュリティ センター構成する
 
@@ -43,5 +41,5 @@ ms.locfileid: "59189401"
 アクセス許可 | RBAC とデバイス グループを使用してポータル アクセスを管理します。
 API | 脅威の Intel と SIEM の統合を有効にする。
 ルール | 抑制ルールとオートメーション設定を構成します。
-デバイスの管理 | オンボードデバイスとオフボード デバイス。
+デバイス管理 | オンボードデバイスとオフボード デバイス。
 ネットワーク評価 | 定期的にスキャンしてデバイス インベントリに追加するデバイスを選択します。

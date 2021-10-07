@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 事前に構成されたセキュリティ設定を提供することで、セキュリティの既定値が ID 関連の攻撃から組織を保護する方法について学習します。
-ms.openlocfilehash: ea36ba45af26a767b08ee1e75931dca54dacea64
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 49b20e4880774ce97d99dc95e60c0cb417b213bc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180511"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198981"
 ---
 # <a name="turn-on-security-defaults"></a>セキュリティの既定値を有効にする
 

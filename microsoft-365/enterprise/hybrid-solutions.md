@@ -7,7 +7,7 @@ ms.date: 09/30/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: Ent_O365
@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
 description: サーバー ワークロードの展開に役立つ情報へのリンクOffice一覧をMicrosoft Azure。
-ms.openlocfilehash: c7b3997464a6834da0471f3b879da4daafe3908d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a7891e05da6af23f5847d91c21c25f8c9d73cee5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165334"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197391"
 ---
 # <a name="hybrid-solutions"></a>ハイブリッド ソリューション
 
@@ -48,7 +48,7 @@ Azure Microsoft 365 ID インフラストラクチャの場合:
 - [SharePoint Server 2013 を使用した Microsoft Azure のインターネット サイト](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
   
   
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [Microsoft 365 ソリューションおよびアーキテクチャ センター](../solutions/index.yml)
   

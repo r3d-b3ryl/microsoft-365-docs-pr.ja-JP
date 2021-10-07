@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5d7fe37cfb4dc923bd7ddc73db9ff8443bca0a0a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 96f5f043ba49e01bd03f23c8eb430e56f88a5856
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179400"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197151"
 ---
 # <a name="alert-resource-type"></a>アラート リソースの種類
 
@@ -66,7 +66,7 @@ ms.locfileid: "59179400"
 |---|---|---|
 |id|String|アラート ID。|
 |title|String|警告タイトル。|
-|説明|String|警告の説明。|
+|description|String|警告の説明。|
 |alertCreationTime|Null 許容の DateTimeOffset|アラートが作成された日付と時刻 (UTC)。|
 |lastEventTime|Null 許容の DateTimeOffset|同じデバイスでアラートをトリガーしたイベントの最後の発生。|
 |firstEventTime|Null 許容の DateTimeOffset|そのデバイスでアラートをトリガーしたイベントの最初の発生。|

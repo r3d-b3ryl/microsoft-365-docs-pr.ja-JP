@@ -9,15 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-localization_priority: Normal
+ms.localizationpriority: medium
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d199b2f4f2c0bdad218b54fdd443bdeac5c4c43c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c644de6735e5466ec9467bf55555015357d5754a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178351"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199047"
 ---
 # <a name="contact-support-for-virgin-islands-us"></a>米国領バージン諸島のサポートに問い合わせ
 

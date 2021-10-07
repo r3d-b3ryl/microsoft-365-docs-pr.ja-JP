@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - OWC150
 - MET150
@@ -19,12 +19,12 @@ description: 管理者は、Exchange Online Protection (EOP) および Outlook.c
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5a02313bf8c36fe0be91340e421c69a8dc5c0842
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 412b6eb7045051c21a88c8b4b2ba5e80a06832dd
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164671"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199431"
 ---
 # <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>EOP がフィッシングを防止するために From アドレスを検証する方法
 
@@ -37,7 +37,7 @@ ms.locfileid: "59164671"
 
 フィッシング攻撃は、メール組織にとって絶え間ない脅威です。 攻撃者は、ス [プーフィングされた (偽造された)](anti-spoofing-protection.md)送信者の電子メール アドレスの使用に加えて、インターネット標準に違反する差出人アドレスの値を使用する場合が多い。 この種類のフィッシングを防止するために、Exchange Online Protection (EOP) と Outlook.com では、この記事で説明するように RFC 準拠の From アドレスを含める受信メッセージが必要になります。 この適用は 2017 年 11 月に有効になっています。
 
-**注**:
+**注意**:
 
 - この記事の説明に従って、不正な形式のアドレスを持つ組織から定期的にメールを受信する場合は、これらの組織に最新のセキュリティ標準に準拠するように電子メール サーバーを更新するようお勧めします。
 
@@ -118,7 +118,7 @@ From アドレスは、複数の RFC (たとえば、RFC 5322 セクション 3.
 
 - このドメインの NULL MX レコードは、1 つの期間で構成されます。
 
-例:
+次に例を示します。
 
 ```text
 noreply.contoso.com IN MX .

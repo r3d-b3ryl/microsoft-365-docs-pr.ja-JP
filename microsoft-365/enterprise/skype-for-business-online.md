@@ -7,7 +7,7 @@ ms.date: 6/29/2018
 audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 4307bdbf-6097-458d-9a6a-048112695c59
 description: 管理者は、ネットワーク、会議、IM、ユーザーの外部アクセスなど、Skype for Business Online の一部をセットアップするためのヘルプを見つける。
-ms.openlocfilehash: 3464f137459544d521fdbe43a2a6e590ed11b904
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 00ddd9072fccf07d7d0d5d2c148950112d40e075
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58355858"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197223"
 ---
 # <a name="skype-for-business-online-in-office-365---admin-help"></a>Office 365 の Skype for Business Online - 管理ヘルプ
 

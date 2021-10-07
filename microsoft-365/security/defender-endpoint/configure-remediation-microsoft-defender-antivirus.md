@@ -8,7 +8,7 @@ ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.topic: article
@@ -17,12 +17,12 @@ ms.date: 03/16/2021
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3bb844437bde35e202b177aeba3439f50bf14766
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 3392653aab996ef62f05664a33c82f55639003c4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59490131"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196965"
 ---
 # <a name="configure-remediation-for-microsoft-defender-antivirus-detections"></a>Microsoft Defender ウイルス対策検出の修復を構成する
 
@@ -47,11 +47,11 @@ PowerShell コマンドレットまたは WMI クラス[ `Set-MpPreference` を�
 
 4. 次の表を使用して場所を選択し、必要に応じてポリシーを編集します。
 
-5. [**OK**] を選択します。
+5. **[OK]** を選択します。
 
 <br/><br/>
 
-|Location|設定|説明|既定の設定 (構成されていない場合)|
+|Location|Setting|説明|既定の設定 (構成されていない場合)|
 |---|---|---|---|
 |スキャン|システム復元ポイントの作成|クリーニングまたはスキャンが試行される前に、システムの復元ポイントが毎日作成されます|無効|
 |スキャン|スキャン履歴フォルダーからのアイテムの削除を有効にする|スキャン履歴に保持する日数を指定する|30 日間|

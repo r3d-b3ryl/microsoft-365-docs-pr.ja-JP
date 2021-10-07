@@ -9,15 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-localization_priority: Normal
+ms.localizationpriority: medium
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6d7bc7485ae66ad249a81b56592358507cffb539
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c3bae24cf6aef1e442c2e0dd235b4563f1626ab4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59217754"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199131"
 ---
 # <a name="contact-support-for-cayman-islands"></a>ケイマン諸島のサポートに問い合わせ
 

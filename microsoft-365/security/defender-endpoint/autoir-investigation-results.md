@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
 ms.author: josephd
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 49c5dcacc12e6811fa692aade9cf6d462fc963fe
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.openlocfilehash: e089a38d0a9abc6a6713b82a77d3678d781ed456
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58509883"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197079"
 ---
 # <a name="view-the-details-and-results-of-an-automated-investigation"></a>自動調査の詳細と結果を表示する
 
@@ -51,7 +51,7 @@ Microsoft Defender for Endpoint[](automated-investigations.md)では、自動調
 
 ### <a name="select-an-item-in-the-action-center"></a>アクション センターでアイテムを選択する
 
-改善された[アクション センターでは](auto-investigation-action-center.md)、デバイス[](manage-auto-investigation.md#remediation-actions)全体の修復アクション、電子メール、コラボレーション & ID がまとめされます。 リストされているアクションには、自動的または手動で実行された修復アクションが含まれます。 アクション センターでは、承認を待っているアクションと、既に承認または完了したアクションを表示できます。 調査ページなどの詳細に移動することもできます。
+改善された[アクション センターでは](auto-investigation-action-center.md)、デバイス[](manage-auto-investigation.md#remediation-actions)全体の修復アクション、電子メール、コラボレーション & ID がまとめされます。 リストされているアクションには、自動的または手動で実行された修復アクションが含まれます。 アクション センターでは、承認待ちのアクションと、既に承認または完了したアクションを表示できます。 調査ページなどの詳細に移動することもできます。
 
 1. <https://security.microsoft.com> に移動し、サインインします。
 2. ナビゲーション ウィンドウで、[**アクション センター**] を選択します。
@@ -84,10 +84,10 @@ Microsoft Defender for Endpoint[](automated-investigations.md)では、自動調
 |タブ|説明|
 |---|---|
 |**Investigation graph (調査グラフ)**|調査を視覚的に表します。 エンティティと検出された脅威のほか、警告、承認を待っているアクションがあるかどうかが示されます。 <p> グラフ上のアイテムを選択すると、詳細を表示できます。 たとえば、[証拠]**アイコンを** 選択すると、[証拠]タブに移動し、検出されたエンティティとその評決を確認できます。|
-|**Alerts**|調査に関連する警告を一覧表示します。 アラートは、ユーザーのデバイス上の脅威保護機能、アプリ、Office、その他のCloud App Security機能Microsoft 365 Defenderがあります。|
+|**アラート**|調査に関連する警告を一覧表示します。 アラートは、ユーザーのデバイス上または Office アプリ内の脅威対策機能、Cloud App Security、その他の Microsoft 365 Defender 機能により出されます。|
 |**Devices**|調査に含まれるデバイスとその修復レベルを一覧表示します。 (修復レベルは、デバイス グループ [のオートメーション レベルに対応します](automation-levels.md)。)|
 |**メールボックス**|検出された脅威の影響を受けたメールボックスを一覧表示します。|
-|**Users**|検出された脅威の影響を受けたユーザー アカウントを一覧表示します。|
+|**ユーザー**|検出された脅威の影響を受けたユーザー アカウントを一覧表示します。|
 |**証拠**|アラート/調査によって発生した証拠の一部を一覧表示します。 評決 (悪意のある、疑 *わしい、* または脅威が見 *つからない*) と修復の状態が含まれます。|
 |**Entities**|各エンティティの種類 (悪意のある、疑わしい、または脅威が見つからない)の評決を含む、分析された各エンティティの詳細 *を提供します*。|
 |**Log**|アラートがトリガーされた後に行ったすべての調査アクションの時系列的で詳細なビューを提供します。|

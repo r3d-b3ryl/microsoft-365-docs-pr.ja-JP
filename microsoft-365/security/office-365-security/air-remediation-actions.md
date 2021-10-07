@@ -8,7 +8,7 @@ ms.author: josephd
 manager: dansimp
 audience: ITPro
 ms.topic: article
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -21,12 +21,12 @@ ms.custom:
 - air
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 71c8ca842d9c88086dee041316899bbc08f943fe
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c994783506f1ba8bc2807b7261d98303cc72f76b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177392"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196659"
 ---
 # <a name="remediation-actions-in-microsoft-defender-for-office-365"></a>Microsoft Defender の修復アクション (Office 365
 
@@ -60,12 +60,12 @@ Microsoft Defender for Office 365さまざまな脅威に対処するための�
 |メール|ユーザーが報告した [フィッシングメール](enable-the-report-message-add-in.md) が見つからない|[ユーザーのレポートによってトリガーされる自動調査](automated-investigation-response-office.md#example-a-user-reported-phish-message-launches-an-investigation-playbook)|
 |メール|ボリューム異常 <br> (最近の電子メールの数量は、一致する条件の前の 7 ~ 10 日間を超えている)。|自動調査では、特定の保留中のアクションは発生しない。 <p>ボリューム異常は明確な脅威ではなく、過去 7 ~ 10 日間と比較して、最近の数日間のメール量の増加を示しているに過言ではありません。 <p>電子メールの量が多い場合は潜在的な問題を示しますが、悪意のある評決または電子メール メッセージ/クラスターの手動レビューの観点から確認が必要です。 「 [配信された疑わしいメールを検索する」を参照してください](investigate-malicious-email-that-was-delivered.md#find-suspicious-email-that-was-delivered)。|
 |メール|脅威は検出されませんでした <br> (システムは、ファイル、URL、または電子メール クラスターの評決の分析に基づく脅威を見つけなかった。|自動調査では、特定の保留中のアクションは発生しない。 <p>調査が完了 [した](zero-hour-auto-purge.md) 後に検出され、座り込みされた脅威は、調査の数値結果には反映されませんが、そのような脅威は Threat Explorer で [表示できます](threat-explorer.md)。|
-|User|ユーザーが悪意のある URL をクリックした <br> (ユーザーは、後で悪意のあるページに移動するか、悪意のあるページにアクセスするために セーフ[リンク](safe-links.md#warning-pages-from-safe-links)の警告ページをバイパスしました)。|自動調査では、特定の保留中のアクションは発生しない。 <p> URL のブロック (クリック時) <p> 脅威エクスプローラーを使用して [URL に関するデータを表示し、[評決] をクリックします](threat-explorer.md#view-phishing-url-and-click-verdict-data)。 <p> 組織で Microsoft [Defender for Endpoint](/windows/security/threat-protection/)[](/microsoft-365/security/defender-endpoint/investigate-user)を使用している場合は、ユーザーの調査を検討して、アカウントが侵害されたかどうかを判断してください。|
-|User|ユーザーがマルウェア/フィッシングを送信している|自動調査では、特定の保留中のアクションは発生しない。 <p> ユーザーがマルウェア/フィッシングを報告している場合や、攻撃の[](anti-spoofing-protection.md)一部としてユーザーをスプーフィングしている可能性があります。 脅威[エクスプローラーを使用して](threat-explorer.md)、マルウェアやフィッシングを含むメール[を表示および](threat-explorer-views.md#email--malware)[処理します](threat-explorer-views.md#email--phish)。|
-|User|メールの転送 <br> (メールボックス転送ルールが構成されている場合、chch をデータの取り出しに使用できます)。|転送ルールの削除 <p> 自動 [転送されたメッセージ レポート](mail-flow-insights-v2.md)を含 [むメール](mfi-auto-forwarded-messages-report.md)フローの分析情報を使用して、転送されたメールの詳細を表示します。|
-|User|電子メール委任ルール <br> (ユーザーのアカウントに委任が設定されています)。|委任ルールの削除 <p> 組織で Microsoft Defender for Endpoint[](/microsoft-365/security/defender-endpoint/investigate-user)を[使用している場合](/windows/security/threat-protection/)は、委任のアクセス許可を取得しているユーザーの調査を検討してください。|
-|User|データ流出 <br> (電子メールまたはファイル共有 DLP ポリシーに違反 [したユーザー](../../compliance/dlp-learn-about-dlp.md) |自動調査では、特定の保留中のアクションは発生しない。 <p> [DLP レポートを表示し、アクションを実行します](../../compliance/view-the-dlp-reports.md)。|
-|User|異常なメール送信 <br> (ユーザーが最近送信したメールの数が、過去 7 ~ 10 日間よりも多かった)。|自動調査では、特定の保留中のアクションは発生しない。 <p> 大量の電子メールの送信は、それ自体が悪意のあるものではありません。ユーザーがイベントの受信者の大規模なグループにメールを送信しただけである可能性があります。 調査するには、メール[フロー マップ レポート](mail-flow-insights-v2.md)を[](mfi-mail-flow-map-report.md)含むメール フロー分析情報を使用して、何が起こっているのかを判断し、アクションを実行します。|
+|ユーザー|ユーザーが悪意のある URL をクリックした <br> (ユーザーは、後で悪意のあるページに移動するか、悪意のあるページにアクセスするために セーフ[リンク](safe-links.md#warning-pages-from-safe-links)の警告ページをバイパスしました)。|自動調査では、特定の保留中のアクションは発生しない。 <p> URL のブロック (クリック時) <p> 脅威エクスプローラーを使用して [URL に関するデータを表示し、[評決] をクリックします](threat-explorer.md#view-phishing-url-and-click-verdict-data)。 <p> 組織で Microsoft [Defender for Endpoint](/windows/security/threat-protection/)[](/microsoft-365/security/defender-endpoint/investigate-user)を使用している場合は、ユーザーの調査を検討して、アカウントが侵害されたかどうかを判断してください。|
+|ユーザー|ユーザーがマルウェア/フィッシングを送信している|自動調査では、特定の保留中のアクションは発生しない。 <p> ユーザーがマルウェア/フィッシングを報告している場合や、攻撃の[](anti-spoofing-protection.md)一部としてユーザーをスプーフィングしている可能性があります。 脅威[エクスプローラーを使用して](threat-explorer.md)、マルウェアやフィッシングを含むメール[を表示および](threat-explorer-views.md#email--malware)[処理します](threat-explorer-views.md#email--phish)。|
+|ユーザー|メールの転送 <br> (メールボックス転送ルールが構成されている場合、chch をデータの取り出しに使用できます)。|転送ルールの削除 <p> 自動 [転送されたメッセージ レポート](mail-flow-insights-v2.md)を含 [むメール](mfi-auto-forwarded-messages-report.md)フローの分析情報を使用して、転送されたメールの詳細を表示します。|
+|ユーザー|電子メール委任ルール <br> (ユーザーのアカウントに委任が設定されています)。|委任ルールの削除 <p> 組織で Microsoft Defender for Endpoint[](/microsoft-365/security/defender-endpoint/investigate-user)を[使用している場合](/windows/security/threat-protection/)は、委任のアクセス許可を取得しているユーザーの調査を検討してください。|
+|ユーザー|データ流出 <br> (電子メールまたはファイル共有 DLP ポリシーに違反 [したユーザー](../../compliance/dlp-learn-about-dlp.md) |自動調査では、特定の保留中のアクションは発生しない。 <p> [DLP レポートを表示し、アクションを実行します](../../compliance/view-the-dlp-reports.md)。|
+|ユーザー|異常なメール送信 <br> (ユーザーが最近送信したメールの数が、過去 7 ~ 10 日間よりも多かった)。|自動調査では、特定の保留中のアクションは発生しない。 <p> 大量の電子メールの送信は、それ自体が悪意のあるものではありません。ユーザーがイベントの受信者の大規模なグループにメールを送信しただけである可能性があります。 調査するには、メール[フロー マップ レポート](mail-flow-insights-v2.md)を[](mfi-mail-flow-map-report.md)含むメール フロー分析情報を使用して、何が起こっているのかを判断し、アクションを実行します。|
 
 ## <a name="next-steps"></a>次の手順
 

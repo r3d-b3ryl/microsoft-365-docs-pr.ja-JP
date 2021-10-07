@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 author: dansimp
 ms.author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 903176b8c163dcd47e1e11c6c5a82c1ff7363540
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4cd7bc06a7a541278d305547bd3f9446b6bedcbc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221430"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196971"
 ---
 # <a name="get-exposure-score"></a>暴露スコアを取得する
 
@@ -48,7 +48,7 @@ ms.locfileid: "59221430"
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 ---|---|---
 アプリケーション|Score.Read.All|'Read Threat and Vulnerability Management score'
-委任 (職場または学校アカウント)|Score.Read|'Read Threat and Vulnerability Management score'
+委任 (職場または学校のアカウント)|Score.Read|'Read Threat and Vulnerability Management score'
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -60,7 +60,7 @@ GET /api/exposureScore
 
 名前|型|説明
 ---|---|---
-Authorization|String|ベアラー {token}。 **必須**
+Authorization|String|ベアラー {token}。 **必須**。
 
 ## <a name="request-body"></a>要求本文
 

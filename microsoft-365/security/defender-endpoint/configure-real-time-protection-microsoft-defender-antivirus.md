@@ -8,7 +8,7 @@ ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.topic: article
@@ -16,12 +16,12 @@ ms.date: 07/29/2021
 manager: dansimp
 ms.custom: nextgen
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f3f2a2bb49900a65f89925b5cc6aab94db42ad50
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: f2e1945f3fce3445c6bbed18aaf676c5df1e2486
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59489531"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60185003"
 ---
 # <a name="enable-and-configure-microsoft-defender-antivirus-always-on-protection-in-group-policy"></a>グループ ポリシーで Microsoft Defender ウイルス対策を常時保護を有効にして構成する
 
@@ -56,7 +56,7 @@ ms.locfileid: "59489531"
 
       <br/><br/>
 
-      |設定|既定の設定|
+      |Setting|既定の設定|
       |---|---|
       |マルウェア対策サービスが通常の優先度で起動を許可する <p> エンジンの優先度を下Microsoft Defender ウイルス対策できます。 優先度を下げることは、可能な限りスタートアップ プロセスを無駄にしたい場合に役立ちます。ただし、このアクションを実行すると、エンドポイント保護に影響を与える可能性があります。 慎重に進みます。|Enabled
       |マルウェア対策サービスの実行を常に許可する <p> 保護更新プログラムが無効になっている場合は、引き続き実行Microsoft Defender ウイルス対策設定できます。 保護更新プログラムを無効にすると、エンドポイント保護が低下します。|無効|
@@ -86,7 +86,7 @@ ms.locfileid: "59489531"
    2. 右側の **[スキャン** の詳細] ウィンドウで、次の表で指定したポリシー設定をダブルクリックします。
       <br/><br/>
 
-      |設定|既定の設定|
+      |Setting|既定の設定|
       |---|---|
       |ヒューリスティックを有効にする <p> ヒューリスティック保護は、アクティビティの検出を求Microsoft Defender ウイルス対策される直前に、疑わしいアクティビティを無効またはブロックします。|Enabled|
 
@@ -97,7 +97,7 @@ ms.locfileid: "59489531"
 
 ### <a name="real-time-protection-policy-settings"></a>リアルタイムの保護ポリシー設定
 
-|設定|既定の設定|
+|Setting|既定の設定|
 |---|---|
 |動作の監視を有効にする <p> ウイルス対策エンジンは、ファイル プロセス、ファイルとレジストリの変更、およびその他のイベントをエンドポイントで監視し、疑わしい、既知の悪意のあるアクティビティを検出します。|Enabled|
 |ダウンロードしたファイルと添付ファイルをスキャンする <p> ダウンロードしたファイルと添付ファイルは自動的にスキャンされます。 このスキャンは、ダウンロード前とダウンロード中Windows Defenderスキャンする SmartScreen フィルターに加えて動作します。|Enabled|

@@ -9,7 +9,7 @@ metadata:
   ms.date: 
   audience: ITPro
   ms.topic: troubleshooting
-  localization_priority: Normal
+  ms.localizationpriority: medium
   search.appverid:
   - MET150
   ms.assetid: 
@@ -19,12 +19,12 @@ metadata:
   description: 管理者は、ユーザー設定 (EOP) でスプーフィング防止に関するよく寄せられる質問と回答Exchange Online Protection表示できます。
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: cab4af2dd359b878cdf417a2378c05d2aa706107
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.openlocfilehash: 5b3aea341b9b8c44329a614fbebb17d7656aa3f4
+  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59218073"
+  ms.lasthandoff: 10/06/2021
+  ms.locfileid: "60196611"
 title: スプーフィング対策保護に関する FAQ
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -90,7 +90,7 @@ sections:
   - question: >
       スプーフィング対策を有効にした場合でも、高度なスパム フィルター設定 "SPF レコード: hard fail" ('MarkAsSpamSpfRecordHardFail') を有効にする必要がありますか?
     answer: >
-      いいえ。 この ASF 設定は不要です。 スプーフィング防止保護では、SPF ハード障害と、より広範な条件の両方が考慮されます。 スプーフィング対策を有効にしているときに、**SPF レコード: Hard Fail** (_MarkAsSpamSpfRecordHardFail_) も有効にすると、誤検出が多くなる可能性があります。
+      その必要はありません。 この ASF 設定は不要です。 スプーフィング防止保護では、SPF ハード障害と、より広範な条件の両方が考慮されます。 スプーフィング対策を有効にしているときに、**SPF レコード: Hard Fail** (_MarkAsSpamSpfRecordHardFail_) も有効にすると、誤検出が多くなる可能性があります。
 
 
       スパムやフィッシング メッセージを検出する利点はほとんど提供されないので、この機能を無効にし、その代わりにほとんど誤検知を生成することをお勧めします。 詳細については [、「EOP の高度なスパム フィルター (ASF) 設定」を参照してください](advanced-spam-filtering-asf-options.md)。

@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 description: 21Vianet がMicrosoft Officeする Android Office 365アプリと、中国の顧客向けアプリをダウンロードする方法について説明します。
 monikerRange: o365-21vianet
-ms.openlocfilehash: af66123ecee91e6c8f5ddd7cd1b441494ce8ca97
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7351fb9c63250a0207d45f767a409e7953c93103
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176288"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199251"
 ---
 # <a name="office-app-for-android-for-office-365-operated-by-21vianet"></a>Office アプリ 21Vianet Office 365 Android 用のアプリ
 

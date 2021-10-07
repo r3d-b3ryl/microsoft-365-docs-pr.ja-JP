@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -18,12 +18,12 @@ description: メール内の悪意のあるファイルセーフ組織を保護�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8fcfb578f69062d39caa44886b63a84e926f9635
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 2eefdbdfd9121bdc778425fe63ea35d3f97a4adc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483365"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196443"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender セーフの添付ファイル ポリシーをセットアップOffice 365
 
@@ -70,10 +70,10 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
 
   詳細については、「Microsoft 365 Defender[](permissions-microsoft-365-security-center.md)ポータルのアクセス許可」および「Exchange Online」[を参照してください](/exchange/permissions-exo/permissions-exo)。
 
-  **注**:
+  **注意**:
 
   - Microsoft 365 管理センター の対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 Defender ポータルで必要なアクセス許可と、Microsoft 365の他の機能に対するアクセス許可が付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
-  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
+  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
 
 - 添付ファイル ポリシーの推奨設定セーフ、添付ファイルの設定[セーフ参照してください](recommended-settings-for-eop-and-office365.md#safe-attachments-settings)。
 
@@ -119,7 +119,7 @@ Microsoft 365 Defender ポータルでカスタム セーフ 添付ファイル 
 
      これらの値については、「添付ファイルポリシー[セーフ」で説明します](safe-attachments.md#safe-attachments-policy-settings)。
 
-   - **検疫ポリシー**: [添付ファイル] ([ブロック]、[置換]、または [動的配信]) によって検疫セーフに適用される検疫ポリシー **を選択します**。  検疫ポリシーは、検疫されたメッセージに対してユーザーが実行できる操作を定義します。 詳細については、「検疫ポリシー [」を参照してください](quarantine-policies.md)。
+   - **検疫ポリシー**: [添付ファイル] ([ブロック]、[置換]、または [動的配信]) によって検疫セーフに適用される検疫ポリシー **を選択します**。  検疫ポリシーは、検疫されたメッセージに対してユーザーが実行できる操作を定義します。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。
 
      空白の値は、既定の検疫ポリシーが使用セーフします。 [添付ファイル] ポリシーを後セーフ編集するか、設定を表示すると、既定の検疫ポリシー名が表示されます。
 
@@ -226,7 +226,7 @@ PowerShell でセーフ添付ファイル ポリシーを作成するには、�
 1. 安全な添付ファイル ポリシーを作成します。
 2. ルールが適用される安全な添付ファイル ポリシーを指定する安全な添付ファイル ルールを作成します。
 
- **注**:
+ **注意**:
 
 - 新しい安全な添付ファイル ルールを作成し、関連付けされていない既存の安全な添付ファイル ポリシーを割り当てできます。 安全な添付ファイル ルールを複数の安全な添付ファイル ポリシーに関連付けできない。
 

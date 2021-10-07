@@ -9,7 +9,7 @@ metadata:
   ms.date: 
   audience: ITPro
   ms.topic: troubleshooting
-  localization_priority: Normal
+  ms.localizationpriority: medium
   search.appverid:
   - MET150
   ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
@@ -20,12 +20,12 @@ metadata:
   ms.custom: seo-marvel-apr2020
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: 640a019c86e5313b81003136b2d9842d8784e29a
-  ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+  ms.openlocfilehash: 149fd46d21626dbed91bd2a94490169123fc5acb
+  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/23/2021
-  ms.locfileid: "59483569"
+  ms.lasthandoff: 10/06/2021
+  ms.locfileid: "60199407"
 title: 検疫済みメッセージに関するよく寄せられる質問
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -59,7 +59,7 @@ sections:
       既定では、マルウェアに対して検疫されたメッセージを管理できるのは管理者のみです。 詳細については、「検疫済み [メッセージとファイルを管理者として管理する」を参照してください](manage-quarantined-messages-and-files.md)。
 
 
-      ただし、管理者は検疫ポリシーを作成し、ユーザーに対してより多くの機能を定義するマルウェア対策ポリシーに適用できます。 詳細については、「検疫ポリシー [」を参照してください](quarantine-policies.md)。
+      ただし、管理者は検疫ポリシーを作成し、ユーザーに対してより多くの機能を定義するマルウェア対策ポリシーに適用できます。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。
   - question: >
       スパムを検疫する方法
     answer: >
@@ -71,7 +71,7 @@ sections:
   - question: >
       検疫でエンド ユーザーがアクセスできるメッセージ
     answer: >
-      検疫ポリシーは、メッセージが検疫された理由 (サポートされている機能の場合) に基づいて、ユーザーが検疫されたメッセージにアクセスできるかどうか [を定義します](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)。 詳細については、「検疫ポリシー [」を参照してください](quarantine-policies.md)。
+      検疫ポリシーは、メッセージが検疫された理由 (サポートされている機能の場合) に基づいて、ユーザーが検疫されたメッセージにアクセスできるかどうか [を定義します](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。
 
 
       既定では、ユーザーは受信者である検疫済みメッセージの次の種類にアクセスできます。
