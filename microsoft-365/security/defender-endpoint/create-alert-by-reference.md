@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: ab53061a7880d5ba35c16203cffc7d6eb8e7b718
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fb30a5dbc2d5a6859343a1b382cdbd0106819cd2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222884"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191949"
 ---
 # <a name="create-alert-api"></a>アラート API の作成
 
@@ -59,7 +59,7 @@ ms.locfileid: "59222884"
 アクセス許可の種類 | アクセス許可 | アクセス許可の表示名
 :---|:---|:---
 アプリケーション | Alert.ReadWrite.All | 'すべてのアラートの読み取りと書き込み'
-委任 (職場または学校アカウント) | Alert.ReadWrite | 'アラートの読み取りと書き込み'
+委任 (職場または学校のアカウント) | Alert.ReadWrite | 'アラートの読み取りと書き込み'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
@@ -78,7 +78,7 @@ POST https://api.securitycenter.microsoft.com/api/alerts/CreateAlertByReference
 名前|型|説明
 :---|:---|:---
 Authorization | String | ベアラー {token}。 **必須**
-Content-Type | 文字列 | application/json. **必須**
+Content-Type | 文字列 | application/json. **必須**。
 
 ## <a name="request-body"></a>要求本文
 
@@ -88,12 +88,12 @@ Content-Type | 文字列 | application/json. **必須**
 :---|:---|:---
 eventTime | DateTime(UTC) | 高度な検索から取得したイベントの正確な時刻を文字列として指定します。 例: ```2018-08-03T16:45:21.7115183Z``` **必須です**。
 reportId | String | 高度な狩猟から取得したイベントの reportId。 **必須**
-machineId | 文字列 | イベントが識別されたデバイスの ID。 **必須**
-severity | String | アラートの重大度。 プロパティの値は、'Low'、'Medium'、および 'High' です。 **必須**
-title | String | アラートのタイトル。 **必須**
-description | String | アラートの説明。 **必須**
-recommendedAction| 文字列 | アラートの分析時にセキュリティ担当者が実行するアクションを推奨します。 **必須**
-category| 文字列 | アラートのカテゴリ。 プロパティの値は、"General"、"CommandAndControl"、"Collection"、"CredentialAccess"、"DefenseEvasion"、"Discovery"、"エクスプロイト"、"Exploit"、"Execution"、"InitialAccess"、"LateralMovement"、"Malware"、"Persistence"、"PrivilegeEscalation"、"Ransomware"、"SuspiciousActivity" が必要です。
+machineId | String | イベントが識別されたデバイスの ID。 **必須**。
+severity | String | アラートの重大度。 プロパティの値は、'Low'、'Medium'、および 'High' です。 **必須**。
+title | String | アラートのタイトル。 **必須**。
+description | String | アラートの説明。 **必須**。
+recommendedAction| String | アラートの分析時にセキュリティ担当者が実行するアクションを推奨します。 **必須**。
+category| String | アラートのカテゴリ。 プロパティの値は、"General"、"CommandAndControl"、"Collection"、"CredentialAccess"、"DefenseEvasion"、"Discovery"、"エクスプロイト"、"Exploit"、"Execution"、"InitialAccess"、"LateralMovement"、"Malware"、"Persistence"、"PrivilegeEscalation"、"Ransomware"、"SuspiciousActivity" が必要です。
 
 ## <a name="response"></a>応答
 

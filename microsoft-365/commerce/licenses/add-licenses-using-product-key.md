@@ -9,7 +9,7 @@ ms.reviewer: argani, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid: MET150
 description: プロダクト キーを使用してサブスクリプションにライセンスを追加または拡張する方法について学習します。
 ROBOTS: NOINDEX
 ms.date: 04/07/2021
-ms.openlocfilehash: 7f1a1977eb5e20d09a22ef616937abdc483c431e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a3d6f2d87952a9601a422854c1df2f96f497efdf
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59190360"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194719"
 ---
 # <a name="add-licenses-to-or-extend-a-subscription-paid-for-using-a-product-key"></a>プロダクト キーを使用して支払われたサブスクリプションにライセンスを追加または拡張する
 
@@ -44,13 +44,13 @@ ms.locfileid: "59190360"
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[お使いの製品]</a> ページの順に移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">お使いの製品</a>] ページの順に移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[お使いの製品]</a> ページの順に移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">お使いの製品</a>] ページの順に移動します。
 ::: moniker-end
 
 2. **[製品]** タブで、ライセンスを追加するサブスクリプションを選択します。
@@ -70,7 +70,7 @@ ms.locfileid: "59190360"
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[お使いの製品]</a> ページの順に移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">お使いの製品</a>] ページの順に移動します。
 
 ::: moniker-end
 

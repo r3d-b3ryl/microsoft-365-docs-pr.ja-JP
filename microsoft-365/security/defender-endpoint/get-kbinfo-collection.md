@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: leonidzh
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ROBOTS: NOINDEX
 ms.technology: mde
-ms.openlocfilehash: 98b731329561b3a0bca599743934b164bc1b47a49558f43c11a4ab02a1869347
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 866ece7467d3889778a434231b4a40a9bcdf02c2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884777"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191853"
 ---
 # <a name="get-kb-collection-api"></a>KB コレクション API の取得
 
@@ -40,7 +40,7 @@ ms.locfileid: "53884777"
 
 KB と KB の詳細のコレクションを取得します。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>アクセス許可
 
 ユーザーには読み取りアクセス許可が必要です。
 
@@ -54,7 +54,7 @@ GET /testwdatppreview/kbinfo
 
 ヘッダー|値 
 :---|:---
-Authorization|ベアラー {token}。 **必須**
+Authorization|ベアラー {token}。 **必須**。
 コンテンツ タイプ|application/json
 
 ## <a name="request-body"></a>要求本文

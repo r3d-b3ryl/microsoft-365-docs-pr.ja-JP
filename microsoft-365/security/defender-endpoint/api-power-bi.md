@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 04c95cffec8f0c5bde417526d6b0cbc8dbe760ee
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3e8c9918856b1b84dd5d0795f69b40e9aaf98226
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59223027"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192045"
 ---
 # <a name="create-custom-reports-using-power-bi"></a>ユーザー設定を使用してカスタム レポートをPower BI
 
@@ -142,7 +142,7 @@ ms.locfileid: "59223027"
 
 レポート サンプルの Microsoft Defender for Endpoint Power BI表示します。 詳細については、「Browse [code samples 」を参照してください](/samples/browse/?products=mdatp)。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [エンドポイント API の Defender](apis-intro.md)
 - [高度な追求 API](run-advanced-query-api.md)

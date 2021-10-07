@@ -11,19 +11,19 @@ ms.topic: article
 f1_keywords:
 - ms.o365.cc.SupervisoryReview
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: d64edc9d80722080db18c45127bfc82110d1ea9e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b26d983bf73a968a06566f18c20d4df24b7763a8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163991"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179321"
 ---
 # <a name="plan-for-communication-compliance"></a>通信コンプライアンスの計画
 

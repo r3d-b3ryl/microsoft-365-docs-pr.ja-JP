@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
@@ -29,16 +29,16 @@ search.appverid:
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: ユーザーにWindowsデバイスWindows 10 ProをMicrosoft 365 Business Premium、一元的な管理とセキュリティ制御を有効にします。
-ms.openlocfilehash: 8fa14a7505e197c0e60f0ccceeb74c350a8b25b8
-ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
+ms.openlocfilehash: 46357074752e1715fdcdcd8be841e53f85475ddf
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59786277"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191291"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>ユーザーのWindowsデバイスをMicrosoft 365 Business Premiumする
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 Microsoft 365 Business Premium ユーザー用に Windows デバイスをセットアップする前に、Windows のすべてのデバイスが Windows 10 Pro バージョン 1703 (Creators Update) を実行している必要があります。 Windows 10 Proは、Windows 10 Pro を補完し、Microsoft 365 Business Premium の一元的な管理とセキュリティ制御を可能にする一連のクラウド サービスとデバイス管理機能である Windows 10 Business を展開する前提条件です。
   
@@ -126,7 +126,7 @@ Azure に参加しているADデバイスWindows 10サブスクリプション�
     
     ![Verify that Windows edition is Windows 10 Business.](../../media/ff660fc8-d3ba-431b-89a5-f5abded96c4d.png)
   
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 モバイル デバイスをセットアップするには、「Microsoft 365 Business Premium ユーザー用のモバイル デバイスをセットアップする[」、](set-up-mobile-devices.md)デバイス保護ポリシーまたはアプリ保護ポリシーを設定するには、「ビジネス向けモバイル デバイスの管理Microsoft 365」を参照[してください](/admin/index.yml)。
   

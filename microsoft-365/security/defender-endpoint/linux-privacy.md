@@ -2,26 +2,24 @@
 title: Linux 上のエンドポイント用 Microsoft Defender のプライバシー
 description: プライバシー制御、プライバシーに影響を与えるポリシー設定を構成する方法、および Microsoft Defender for Endpoint on Linux で収集された診断データに関する情報。
 keywords: microsoft、defender、Microsoft Defender for Endpoint、Linux、プライバシー、診断
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3d6ce59ec83e8271ff0c665386bd33942084d9ad
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1c15e5ba5b48380e20ddfd6c291df5c5afafa251
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218383"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191757"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 上のエンドポイント用 Microsoft Defender のプライバシー
 

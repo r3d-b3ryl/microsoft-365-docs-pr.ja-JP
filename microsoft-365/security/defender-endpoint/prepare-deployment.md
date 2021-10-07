@@ -2,15 +2,13 @@
 title: Microsoft Defender for Endpoint 展開の準備
 description: Microsoft Defender for Endpoint を展開するために、関係者の承認、タイムライン、環境に関する考慮事項、導入順序を準備する
 keywords: 展開、準備、関係者、タイムライン、環境、エンドポイント、サーバー、管理、導入
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -19,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2fe6fa150967973cce58dec9cc47c625305462fc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0e577108f92abe0c704cd812e61445f8d0f83f13
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213484"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191745"
 ---
 # <a name="prepare-microsoft-defender-for-endpoint-deployment"></a>Microsoft Defender for Endpoint 展開の準備
 
@@ -60,7 +58,7 @@ Defender for Endpoint の展開は、次の 3 フェーズプロセスです。
 
 ****
 
-|名前|Role|Action|
+|名前|役割|アクション|
 |---|---|---|
 |名前とメールを入力する|**最高情報セキュリティ責任者 (CISO)** 新しいテクノロジ展開の組織の内部でスポンサーを務め、役員 *の代表者。*|だから|
 |名前とメールを入力する|**サイバー防御運用センター (CDOC)** の代表は *、CDOC* チームの担当者で、この変更が顧客のセキュリティ運用チームのプロセスとどのように一致するのか定義します。|だから|
@@ -146,7 +144,7 @@ Defender for Endpoint では、アクセス許可を管理する 2 つの方法�
 |脅威&脆弱性管理 (TVM)|脅威&脆弱性管理は、Microsoft Defender for Endpoint のコンポーネントであり、セキュリティ管理者とセキュリティ運用チームの両方に、次の固有の値を提供します。 <ul><li>エンドポイントの脆弱性に関連したリアルタイムのエンドポイント検出と応答（EDR）の分析</li><li>インシデント調査中の貴重なデバイスの脆弱性コンテキスト</li><li>組み込みの修復プロセスは、Microsoft Intuneおよび Microsoft System Center Configuration Manager</li></ul> <p> [詳細情報](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/Introducing-a-risk-based-approach-to-threat-and-vulnerability/ba-p/377845) を参照してください。|2|
 |次世代保護 (NGP)|Microsoft Defender ウイルス対策は、デスクトップ、ポータブル コンピューター、およびサーバーに次世代の保護を提供する組み込みのマルウェア対策ソリューションです。 Microsoft Defender ウイルス対策には、次のものが含まれます。 <ul><li>新たに出現する脅威をほぼ瞬時に検出し、ブロックするためのクラウドによる保護。 機械学習やインテリジェント セキュリティ グラフに加えて、クラウドによる保護は Microsoft Defender ウイルス対策を強化する次世代テクノロジの一部です。</li><li>高度なファイルとプロセスの動作の監視、その他のヒューリスティック ("リアルタイム保護" とも呼ばれる) を使用した常時スキャン。</li><li>機械学習、手動および自動のビッグデータ分析、徹底した脅威耐性調査に基づいた専用の保護の更新。</li></ul> <p> [詳細情報](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) を参照してください。|3|
 |攻撃表面の縮小 (ASR)|Microsoft Defender for Endpoint の攻撃表面の縮小機能は、新しい脅威や新たな脅威から組織内のデバイスとアプリケーションを保護するのに役立ちます。 <br> [詳細情報](/windows/security/threat-protection/windows-defender-atp/overview-attack-surface-reduction)|4 |
-|自動調査&修復 (AIR)|Microsoft Defender for Endpoint では、自動調査を使用して、個別に調査する必要があるアラートの量を大幅に削減します。 自動調査機能は、さまざまな検査アルゴリズムと、アナリストが使用するプロセス (プレイブックなど) を活用してアラートを調べ、違反を解決するために直ちに修復アクションを実行します。 これにより、アラート量が大幅に削減され、セキュリティ運用の専門家は、より高度な脅威やその他の価値の高い業務に集中できるようになります。 <p> [詳細情報](/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection)|該当なし|
+|自動調査&修復 (AIR)|Microsoft Defender for Endpoint では、自動調査を使用して、個別に調査する必要があるアラートの量を大幅に削減します。 自動調査機能は、さまざまな検査アルゴリズムと、アナリストが使用するプロセス (プレイブックなど) を活用してアラートを調べ、違反を解決するために直ちに修復アクションを実行します。 これにより、アラート量が大幅に削減され、セキュリティ運用の専門家は、より高度な脅威やその他の価値の高い業務に集中できるようになります。 <p> [詳細情報](/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection)|該当しない|
 |Microsoft 脅威エキスパート (MTE)|Microsoft 脅威エキスパートは、セキュリティ オペレーション センター (SOC) にエキスパート レベルの監視と分析を提供するマネージ ハンティング サービスで、固有の環境における重大な脅威を見逃すのを防いでお手伝いします。 <p> [詳細情報](/windows/security/threat-protection/windows-defender-atp/microsoft-threat-experts)|該当なし|
 
 ## <a name="next-step"></a>次の手順

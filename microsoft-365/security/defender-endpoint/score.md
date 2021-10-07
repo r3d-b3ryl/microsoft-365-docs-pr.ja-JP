@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9a8b87a7cee3bb03a0946773012ed6f18bbd75b9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6cb0fdb8b2fec03c616b1c0607e4f8be6476b96e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214794"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191709"
 ---
 # <a name="score-resource-type"></a>スコア リソースの種類
 
@@ -52,7 +52,7 @@ ms.locfileid: "59214794"
 
 プロパティ|型|説明
 :---|:---|:---
-スコア|Double|現在のスコア。
+スコア|倍精度浮動小数点数|現在のスコア。
 Time|DateTime|この API の呼び出しが行われた日時。
 RbacGroupName|String|デバイス グループ名。
 RbacGroupId|String|デバイス グループ ID。

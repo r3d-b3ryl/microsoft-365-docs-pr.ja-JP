@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: この記事では、さまざまなバージョンのバージョンの違いについて説明Office 365 Message Encryption。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 161415dfafc28bbb82043b0ecefea4dcb15d144b
-ms.sourcegitcommit: 0166442bb1f9922f627bc34e97bd74c609aa9507
+ms.openlocfilehash: 508a129cd472c8843e2af4a012560b17a44c49aa
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59482151"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194347"
 ---
 # <a name="compare-versions-of-ome"></a>OME のバージョンを比較する
 

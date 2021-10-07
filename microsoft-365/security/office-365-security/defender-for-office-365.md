@@ -6,7 +6,7 @@ manager: dansimp
 ms.date: ''
 audience: Admin
 ms.topic: conceptual
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MET150
 - MOE150
@@ -19,12 +19,12 @@ ms.custom:
 description: Microsoft Defender for Office 365 には、安全な添付ファイル、安全なリンク、高度なフィッシング詐欺対策ツール、レポート ツール、および脅威インテリジェンス機能が含まれています。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8651adb37640d68d0eace7aa23a134ba3b892bbd
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b865725c39b6b21fe8963fe227e59658feefb813
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211734"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60180891"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
@@ -35,7 +35,7 @@ ms.locfileid: "59211734"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!IMPORTANT]
-> この記事は、[Microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) をご利用の法人のお客様を対象としています。 Outlook.com、Microsoft 365 Family、または Microsoft 365 Personal を使用していて、Outlook の安全なリンクまたは添付ファイルに関する情報を探している場合は、「[Microsoft 365 サブスクライバー用の Outlook.com の高度なセキュリティ](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)」を参照してください。
+> この記事は、[Microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) をお持ちのビジネスのお客様を対象としています。Outlook.com、Microsoft 365 Family、または Microsoft 365 Personal を使用していて、Outlook で安全なリンクまたは安全な添付ファイルに関する情報を探している場合は、「[Microsoft 365サブスクライバー向けの高度な Outlook.com セキュリティ](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)」を参照してください。
 
 Microsoft Defender for Office 365 は、メール メッセージ、リンク (URL)、コラボレーション ツールによってもたらされる悪意のある脅威から組織を保護します。Defender for Office 365 には次のものが含まれます。
 
@@ -130,7 +130,7 @@ Microsoft Defender for Office 365 プラン 2 には、組織のセキュリテ�
 
 - **[脅威トラッカー](threat-trackers.md)** は、一般的なサイバーセキュリティの問題に関する最新のインテリジェンスを提供します。 たとえば、最新のマルウェアに関する情報を表示し、組織に対する実際の脅威になる前に対策を講じることができます。 使用可能な脅威トラッカーには、[[注目のトラッカー](threat-trackers.md#noteworthy-trackers)]、[[急上昇中のトラッカー](threat-trackers.md#trending-trackers)]、[[追跡されたクエリ](threat-trackers.md#tracked-queries)]、[[保存されたクエリ](threat-trackers.md#saved-queries)] があります。
 
-- **[脅威エクスプローラー (またはリアルタイムの検出)](threat-explorer.md)** (エクスプローラーとも呼ばれます) は、最近発生した脅威を特定して分析できるリアルタイムのレポートです。 カスタム期間のデータを表示するようにエクスプローラーを構成することができます。
+- **[Threat Explorer (またはリアルタイム検出)](threat-explorer.md)** (エクスプローラーとも呼ばれます) は、最近の脅威を特定して分析できるリアルタイム レポートです。カスタム期間のデータを表示するようにエクスプローラーを構成できます。
 
 - **[攻撃シミュレーションのトレーニング](attack-simulation-training.md)** を使用すると、現実的な攻撃シナリオを組織で実行して、脆弱性を特定することができます。 スピア フィッシング資格情報獲得と添付ファイルの攻撃、パスワード スプレーとブルート フォース パスワード攻撃など、現在の種類の攻撃のシミュレーションを利用できます。
 

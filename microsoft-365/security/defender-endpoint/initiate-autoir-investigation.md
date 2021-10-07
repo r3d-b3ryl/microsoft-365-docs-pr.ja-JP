@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 336fc335b5008445e19464bb09cdaa6312e6b334
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: e7a1b776ba4c627e12ebfde26f35a3e3b75fbda5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042640"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191769"
 ---
 # <a name="start-investigation-api"></a>調査 API の開始
 
@@ -84,7 +84,7 @@ POST https://api.security.microsoft.com/api/machines/{id}/startInvestigation
 
 名前|型|説明
 :---|:---|:---
-Authorization|String|ベアラー {token}。 **必須**。
+Authorization|String|ベアラー {token}。 **必須**
 Content-Type|string|application/json. **必須**。
 
 ## <a name="request-body"></a>要求本文
@@ -93,7 +93,7 @@ Content-Type|string|application/json. **必須**。
 
 パラメーター|型|説明
 :---|:---|:---
-コメント|文字列|アクションに関連付けるコメント。 **必須**。
+コメント|文字列|アクションに関連付けるコメント。 **必須**
 
 ## <a name="response"></a>応答
 

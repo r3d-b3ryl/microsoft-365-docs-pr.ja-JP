@@ -6,7 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: normal
+ms.localizationpriority: medium
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: f0e7d008d7a51666a4d9a27c187b74b609f38577
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 13d3714f1d5843597e19f04a4f94e63f4adf09cb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491471"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192873"
 ---
 # <a name="evaluate-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策を評価する
 
@@ -58,7 +58,7 @@ ms.locfileid: "59491471"
 >
 > ネットワーク全体での実際の展開と監視に関する最新の推奨事項については、「deploy Microsoft Defender ウイルス対策」を[参照Microsoft Defender ウイルス対策。](deploy-manage-report-microsoft-defender-antivirus.md)
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)
 - [展開Microsoft Defender ウイルス対策](deploy-manage-report-microsoft-defender-antivirus.md)

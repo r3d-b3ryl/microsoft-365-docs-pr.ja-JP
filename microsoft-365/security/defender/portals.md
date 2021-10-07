@@ -1,10 +1,10 @@
 ---
 title: Microsoft セキュリティ ポータルと管理センター
 description: セキュリティに関連するさまざまなサービスを管理するための適切な Microsoft 管理センターまたはポータルMicrosoft 365見つける
-keywords: セキュリティ、ポータル、Microsoft 365、M365、セキュリティ センター、管理センター、URL、リンク、Microsoft 365 Defender、Microsoft Defender for Endpoint、Microsoft Defender セキュリティ センター、Microsoft Defender for Identity、Office 365 MCAS、WDSI、SCC、Intune、MDM、MEM、ASC、Cloud App Security 、Azure AD、セキュリティ & コンプライアンス センター
+keywords: セキュリティ、ポータル、Microsoft 365、M365、セキュリティ センター、管理センター、URL、リンク、Microsoft 365 Defender、Microsoft Defender for Endpoint、Microsoft Defender セキュリティ センター、Microsoft Defender for Identity、Microsoft Defender for Office 365、MCAS、WDSI、SCC、Intune、MDM、MEM、ASC、Cloud App Security 、Azure AD、セキュリティ & コンプライアンス センター
 ms.prod: m365-security
 ms.mktglfcycl: deploy
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.author: lomayor
@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 81fe9d058a1144c67a1d95d02a3e8b47e3c2104b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 873753f1802fce9480c16d6df33092284156a820
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211834"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191441"
 ---
 # <a name="microsoft-security-portals-and-admin-centers"></a>Microsoft セキュリティ ポータルと管理センター
 

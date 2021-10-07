@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+ms.localizationpriority: medium
 ms.topic: article
 author: denisebmsft
 ms.author: deniseb
@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 23e89bd4aee02299e0710ff65fbe496fd8535b8f
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 234e79a599e24a3b3a0905e1cbba9848aec261fc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59490119"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195213"
 ---
 # <a name="microsoft-defender-antivirus-in-the-windows-security-app"></a>Microsoft Defender ウイルス対策アプリでWindows セキュリティする
 

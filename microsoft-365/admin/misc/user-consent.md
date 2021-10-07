@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
 description: アプリに対するユーザーの同意、およびアプリを有効にし、サード パーティ製アプリがユーザーの情報にアクセスMicrosoft 365します。
-ms.openlocfilehash: 629e64494c6d72a13c3b155370a8f47505e9fa20
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d9a07eb333b0abdb3cb6a890ac2de3d19ad3685b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178752"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192645"
 ---
 # <a name="managing-user-consent-to-apps-in-microsoft-365"></a>アプリに対するユーザーの同意を管理Microsoft 365
 

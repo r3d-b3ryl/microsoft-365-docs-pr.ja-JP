@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 調査または法的ケースに関連するコンテンツを保持するために、Microsoft 365電子情報開示ケースに関連付けられている保留リストを作成できます。
-ms.openlocfilehash: 57e825822ac622d224a402d677d4951ad9fa444a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0a5ac38afb649ab1972e7b7aee525dac9ab3b00e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163966"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195655"
 ---
 # <a name="create-an-ediscovery-hold"></a>電子情報開示保留リストを作成する
 
@@ -218,9 +218,9 @@ Teamsグループに基Office 365されます。 したがって、電子情報�
 
 次の表に、電子情報開示ケースとケースホールドの制限を示します。
 
-  | 制限の説明 | 制限 |
+  | 制限の説明 | 極限 |
   |:-----|:-----|
-  |組織のケースの最大数。  <br/> |無制限  <br/> |
+  |組織のケースの最大数。  <br/> |制限なし  <br/> |
   |組織の電子情報開示ホールドの最大数。  <br/> |10,000  <br/> |
   |1 つの電子情報開示ホールド内のメールボックスの最大数。 この制限には、ユーザー メールボックスの合計と、グループ、グループ、およびグループに関連Microsoft 365メールボックスMicrosoft TeamsがYammerされます。  <br/> |1,000  <br/> |
   |1 つの電子情報開示ホールド内のサイトの最大数。 この制限には、OneDrive for Business サイト、SharePoint サイト、および Microsoft 365 グループ、Microsoft Teams、および Yammer グループに関連付けられたサイトの合計が含まれます。  <br/> |100  <br/> |

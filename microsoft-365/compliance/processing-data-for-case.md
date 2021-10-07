@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -18,12 +18,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: さまざまな形式のデータを処理する方法の概要をAdvanced eDiscovery。
-ms.openlocfilehash: ad723195ab0ae8a8d1200428bde00e2fcb0094ae
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9f44593983256079150ad48954c5f1883f836083
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221141"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179033"
 ---
 # <a name="work-with-processing-errors-in-advanced-ediscovery"></a>エラーの処理を処理Advanced eDiscovery
 
@@ -33,7 +33,7 @@ ms.locfileid: "59221141"
 
 Advanced eDiscovery の [**処理**] タブでは、さまざまな処理シナリオの高度なインデックスの状態を把握できます。
 
-詳細については、次の記事を参照してください。
+詳細については、次の資料を参照してください。
 
 - [カストディアン データの詳細なインデックス処理](indexing-custodian-data.md)
 

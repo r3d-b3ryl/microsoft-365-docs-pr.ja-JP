@@ -8,7 +8,7 @@ manager: pamgreen
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - Adm_NonTOC
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: d3adf0cf-d581-4452-a5b3-6e0d16a34daa
 ROBOTS: NOINDEX
 description: ロシアの Microsoft Cloud Solutions プロバイダーの一覧を取得します。
-ms.openlocfilehash: 76151f9016d797b5015e71df9d8cc35add1eaa8f653b5e0601892fbc335ba4c4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0765efaaa8ab5f786cafe62e28ee534fbe617ffb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53823581"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192669"
 ---
 # <a name="microsoft-cloud-solution-provider-partners-in-russia"></a>ロシアのマイクロソフト クラウド ソリューション プロバイダー パートナー
 []ロシアのマイクロソフト クラウド ソリューション プロバイダーの一覧を示します。

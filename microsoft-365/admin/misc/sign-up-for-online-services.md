@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4f374dc7-b96c-49c7-80ed-554716ba0138
 description: 'IT 部門を含めずに、仕事や学校のメールを使用して Microsoft オンライン サービスにサインアップする方法について説明します。 '
-ms.openlocfilehash: ce1c8ec579f8d60bb68921c9e03ae1efbb48e8c5fb2a345ae85d94c7921d8371
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: eaae0c10f818e6fdd1cd702b84b2826bf2f5b7ea
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53823677"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192681"
 ---
 # <a name="your-domain-may-be-in-use-if-someone-else-signed-up-with-it"></a>他のユーザーがサインアップした場合、ドメインが使用されている可能性があります
 

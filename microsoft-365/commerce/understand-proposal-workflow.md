@@ -9,7 +9,7 @@ ms.reviewer: presharm, jmueller
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid: MET150
 description: Microsoft 製品とサービスの購入に役立つ提案について説明します。
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: 165843edcd890f4f7fc743a2b4c4181638409ff7
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 159c56240d62cd3e1abce58f4fa6d82320e76017
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58599399"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179477"
 ---
 # <a name="understand-the-proposal-workflow"></a>提案ワークフローの理解
 
@@ -125,7 +125,7 @@ Microsoft カスタマー 契約 (MCA) を使用すると、組織は Microsoft 
 | 通貨 | 提案内のアイテムのコストを計算するために使用される通貨。 |
 | 準備 | 提案を要求したユーザーの請求アカウント名、住所、連絡先メール アドレス、電話番号。 |
 | によって準備される | 提案を作成した Microsoft 担当者の電子メール アドレス。 |
-| 概要 | 提案に関連付けられた小計を表示します。 必要に応じて、コストの計算に使用される外国為替 (FX) レートも表示されます。 |
+| 要約 | 提案に関連付けられた小計を表示します。 必要に応じて、コストの計算に使用される外国為替 (FX) レートも表示されます。 |
 | 提案の広告申込情報 | このセクションには、提案に含まれるすべてのアイテムの数量、単価、小計が含まれます。 |
 | 次の手順 | このセクションでは、必要なアクションを示します。 |
 
@@ -158,7 +158,7 @@ Tax IDs の詳細と、免税ステータスを申請する方法については
 - **割引 (将来の料金に適用)** 提案の一部として受け取る割引の一覧。
 - **含まれるもの** プロポーザル パッケージの一部として追加の料金で含まれるアイテムの一覧。 これらの一部のアイテムには、将来関連付けられるコストが含まれます。
 
-### <a name="summary"></a>概要
+### <a name="summary"></a>要約
 
 このセクションには、支払われるアイテムの数、小計、推定税、注文の合計金額が表示されます。
 

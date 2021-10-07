@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -21,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Microsoft 365 Government Community Cloud (GCC) テナントの Microsoft 365 Usage Analytics テンプレート アプリを使用してデータに接続するPower BI。
-ms.openlocfilehash: a57d536d7210e0ba927824d5403792a3e5090f98
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 3930ffe82c998797aade84e92145adac5fa2ea98
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776706"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179807"
 ---
 # <a name="connect-to-microsoft-365-government-community-cloud-gcc-data-with-usage-analytics"></a>Connect分析でMicrosoft 365 Government Community Cloud (GCC) データを取得する方法
 
@@ -35,7 +36,7 @@ ms.locfileid: "59776706"
 > [!NOTE]
 > これらの手順は、特にテナントMicrosoft 365 GCCです。 
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 最初に Usage Analytics Microsoft 365構成するには、次の手順を実行します。 
 

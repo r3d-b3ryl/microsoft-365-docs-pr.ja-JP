@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 3dc075caccc5724ed3ea76e5d3c06f3a5b6f7f2e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d7805ad7a2c1aae750b6588a6dd2c4141c9b93c3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164895"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191637"
 ---
 # <a name="indicator-resource-type"></a>インジケーター リソースの種類
 
@@ -58,7 +58,7 @@ indicatorType|列挙|インジケーターの種類。 指定できる値は、"
 action|列挙|インジケーターが組織内で検出される場合に実行されるアクション。 指定できる値は、"Warn"、"Block"、"Audit"、"Alert"、"AlertAndBlock"、"BlockAndRemediate"、"Allowed" です。
 |externalID|String|カスタム相関関係の要求で顧客が送信できる ID。|
 sourceType|列挙|"User" (ポータルからなど) ユーザーが作成したインジケーターの場合、API を介して自動アプリケーションを使用して送信された場合は "AadApp"。
-createdBySource|文字列|インジケーターを送信したユーザー/アプリケーションの名前。
+createdBySource|string|インジケーターを送信したユーザー/アプリケーションの名前。
 createdBy|String|インジケーターを送信したユーザー/アプリケーションの一意の ID。
 lastUpdatedBy|String|インジケーターを最後に更新したユーザー/アプリケーションの ID。
 creationTimeDateTimeUtc|DateTimeOffset|インジケーターが作成された日時。
@@ -66,7 +66,7 @@ expirationTime|DateTimeOffset|インジケーターの有効期限。
 lastUpdateTime|DateTimeOffset|インジケーターが最後に更新された時刻。
 severity|列挙|インジケーターの重大度。 指定できる値は、"Informational"、"Low"、"Medium"、"High" です。
 title|String|インジケーター のタイトル。
-説明|String|インジケーターの説明。
+description|String|インジケーターの説明。
 recommendedActions|String|インジケーターの推奨アクション。
 rbacGroupNames|文字列の一覧|インジケーターが公開され、アクティブな RBAC デバイス グループ名。 すべてのデバイスに公開されている場合の空のリスト。
 rbacGroupIds|文字列の一覧|RBAC デバイス グループ ID は、インジケーターが公開され、アクティブな場所です。 すべてのデバイスに公開されている場合の空のリスト。

@@ -1,27 +1,25 @@
 ---
 title: Microsoft Defender for Endpoint でアラート通知を構成する
 description: Microsoft Defender for Endpoint を使用すると、重大度や他の条件に基づいて、セキュリティアラートの電子メール通知設定を構成できます。
-keywords: 電子メール通知、構成アラート通知、Microsoft Defender for Endpoint、Microsoft Defender for Endpoint 通知、Microsoft Defender for Endpoint アラート、Windows 10 enterprise、Windows 10 Education
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
+keywords: 電子メール通知、アラート通知の構成、Microsoft Defender for Endpoint、Microsoft Defender for Endpoint 通知、Microsoft Defender for Endpoint アラート、Windows Enterprise、Windows Education
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 857df1a9f088c316349fbbe02618a7345df5a075
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d598687edbb4268bc02a4f0bd8c752405cf22dee
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222005"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192969"
 ---
 # <a name="configure-alert-notifications-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint でアラート通知を構成する
 
@@ -100,7 +98,7 @@ Defender for Endpoint を構成して、新しい通知のために指定した�
 2. メール セキュリティ製品が Defender for Endpoint からの電子メール通知をブロックされていないことを確認します。
 3. Defender for Endpoint の電子メール通知をキャッチして移動する可能性がある電子メール アプリケーションルールを確認します。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [データ保持設定の更新](data-retention-settings.md)
 - [高度な機能を構成する](advanced-features.md)

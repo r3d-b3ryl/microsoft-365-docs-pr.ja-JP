@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: troubleshooting
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: ''
 search.appverid:
 - MOE150
@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: ''
 description: 調査中に、[再試行] ボタンを使用して、コンテンツの場所にエラーがあるコンテンツ検索を解決できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ee60ab8aa5dad32360303f31924995f110ed99cc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3c433dfa6bf842f1d62350e3b518177d1bdca6d7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59210914"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192165"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>コンテンツ検索を再試行してコンテンツの場所のエラーを解決する
 

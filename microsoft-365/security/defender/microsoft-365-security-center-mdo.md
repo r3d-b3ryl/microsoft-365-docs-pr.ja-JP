@@ -8,7 +8,7 @@ author: msfttracyp
 manager: dansimp
 audience: Admin
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: e65d7e869011cbbc6a55828f693782a6b7e0dfd6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 77aa51e80cd339878c5d07d38e71cab810ee130f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177455"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191529"
 ---
 # <a name="microsoft-defender-for-office-365-in-microsoft-365-defender"></a>Microsoft Defender for Office 365 Microsoft 365 Defender
 
@@ -51,7 +51,7 @@ ms.locfileid: "59177455"
 |アクセス許可|[ロール&アクセス許可](https://security.microsoft.com/emailandcollabpermissions)|詳細[については、「Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/homepage)||
 |メール フロー|||「[管理Exchange」を参照してください。](https://admin.exchange.microsoft.com/#/)|
 |データのプライバシー||詳細[については、「Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/homepage)||
-|検索|[Audit](https://security.microsoft.com/auditlogsearch?viewid=Async%20Search)|検索 (コンテンツ検索)||
+|検索|[監査](https://security.microsoft.com/auditlogsearch?viewid=Async%20Search)|検索 (コンテンツ検索)||
 |レポート|[Report](https://security.microsoft.com/emailandcollabreport)|||
 |サービス アシュアランス||詳細[については、「Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/homepage)||
 |監督||詳細[については、「Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/homepage)||

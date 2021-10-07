@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 0b64c38ac19e692fd0580c42aa89116f8c0f3421
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 14caf0b2e0467d0f9e844a2dd996c6ccb4cfab30
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59353670"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191601"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-live-response-issues"></a>Microsoft Defender for Endpoint のライブ応答の問題のトラブルシューティング
 

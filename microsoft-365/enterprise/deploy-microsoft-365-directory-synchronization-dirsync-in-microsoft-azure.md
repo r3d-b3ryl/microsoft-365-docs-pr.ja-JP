@@ -7,7 +7,7 @@ ms.date: 11/05/2018
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
 description: Azure の仮想マシンに Azure AD Connectを展開して、オンプレミス ディレクトリと Azure サーバー テナントの間でアカウントを同期するADします。
-ms.openlocfilehash: f3e296c7401cfc20a2f7165888825adf58528c68
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6535b46fb360cf326d8daf07662cb7fa366ae6c2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165431"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178817"
 ---
 # <a name="deploy-microsoft-365-directory-synchronization-in-microsoft-azure"></a>ディレクトリMicrosoft 365を展開するMicrosoft Azure
 

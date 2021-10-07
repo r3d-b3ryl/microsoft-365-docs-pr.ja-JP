@@ -9,7 +9,7 @@ ms.reviewer: seemg, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: Microsoft Microsoft 365、Microsoft Power Apps、Microsoft Power Automate、Dynamics 365 for Finance などのセルフサービス プログラムについて説明します。
 ms.date: 03/17/2021
-ms.openlocfilehash: 7c4986beb1c920865cee28f2729859e426944f3f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 87f432be0659d03a1e8f77b682997dc32d1dc111
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178760"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192693"
 ---
 # <a name="using-self-service-sign-up-in-your-organization"></a>組織でのセルフサービス サインアップの使用
 
@@ -47,7 +47,7 @@ ms.locfileid: "59178760"
 | プログラム <br/> | 説明 <br/> | 追加情報 <br/> | セルフサービス サインアップ用の Web サイト <br/> |
 |:-----|:-----|:-----|:-----|
 |Office 365 A1**** <br/> |学生または教師は、学校の電子メール アドレスを使用して無料の Office 365 にサインアップし、Office アプリを web 用に取得し、OneDrive クラウド ストレージを 1 TB、クラス、チーム、プロジェクト サイト用に SharePoint Online を取得できます。  <br/> |[Office 365 Education についてよく寄せられる技術的な質問](/microsoft-365/education/deploy/office-365-education-self-sign-up) <br/> |[Office 365 Education](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
-|**Office 365 A1Plus** <br/> |対象となる学生と教師は、上記のOffice 365 A1と他のユーザーを含む、Office 365 A1 Plus にサインアップMicrosoft 365 Apps for enterprise。 Microsoft 365 Apps for enterpriseは、デスクトップまたはラップトップ コンピューターにインストールされている Word、PowerPoint、Excel、Outlook、OneNote、Publisher、Access、Skype for Business などの生産性ソフトウェアです。  <br/> |[Office 365 Education についてよく寄せられる技術的な質問](/microsoft-365/education/deploy/office-365-education-self-sign-up) <br/> |[Office 365 Education](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
+|**Office 365 A1Plus** <br/> |対象となる学生と教師は、上記のOffice 365 A1と他のユーザーを含む、Office 365 A1 Plus にサインアップMicrosoft 365 Apps for enterprise。 Microsoft 365 Apps for enterpriseには、Word、PowerPoint、Excel、Outlook、OneNote、Publisher、Access、Skype for Business などの生産性ソフトウェアがインストールされています。デスクトップまたはノート PC を使用します。  <br/> |[Office 365 Education についてよく寄せられる技術的な質問](/microsoft-365/education/deploy/office-365-education-self-sign-up) <br/> |[Office 365 Education](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
 |**Power BI** <br/> |Power BIユーザーは、直感的な新しい方法でデータの視覚化、発見の共有、共同作業を行うことができます。 <br/> 組織が既に購読している場合は、ユーザーに制限された高度な機能への無料アクセスを提供する「Power BI Pro 個人ユーザー試用版」のライセンスが追加で表示される場合があります。  <br/> |[組織内の Power BI](./power-bi-in-your-organization.md) <br/> |[Microsoft Power BI](https://go.microsoft.com/fwlink/p/?LinkId=536629) <br/> |
 |**RMS (Rights Management Services)** <br/> |個人用の RMS は、Azure Rights Management (Azure RMS) で保護された機密性の高いファイルが送信されているが、IT 部門が Azure Rights Management (Azure RMS)、Active Directory Rights Management Services (AD RMS) のいずれも実装していない組織に所属するユーザーのための無料のセルフサービス サブスクリプションです。  <br/> |[個人用の RMS と Azure Rights Management](/azure/information-protection/rms-for-individuals) <br/> |[Microsoft Rights Management ポータル](https://portal.azure.com/) したがって、お客様は、特定の権利保護されたドキュメントを開くことができるかどうかをチェックできます。  <br/> |
 |**Microsoft Power Apps** <br/> |このPower Apps、作成したアプリ、または他のユーザーが作成して共有したアプリを実行して、組織データを管理できます。 アプリは携帯電話などのモバイル デバイスで実行するか、Dynamics 365 を開いてブラウザーで実行できます。 アプリケーションなどのプログラミング言語を学習せずに、無限に多様なアプリを作成C#。  <br/> |[セルフサービスのアカウントにサインアップPower Apps](/powerapps/maker/signup-for-powerapps) <br/> |[Microsoft Power Apps](https://go.microsoft.com/fwlink/p/?linkid=841462) <br/> |

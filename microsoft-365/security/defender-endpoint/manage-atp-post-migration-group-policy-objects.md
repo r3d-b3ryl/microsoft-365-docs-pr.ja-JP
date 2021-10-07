@@ -2,8 +2,6 @@
 title: グループ ポリシー オブジェクトを使用して Microsoft Defender for Endpoint を管理する
 description: グループ ポリシー オブジェクトを使用して Microsoft Defender for Endpoint を管理する方法について説明します。
 keywords: 移行後、管理、運用、メンテナンス、使用率、PowerShell、Microsoft Defender for Endpoint、edr
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: deploy
@@ -11,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +18,12 @@ ms.collection:
 ms.topic: article
 ms.date: 09/23/2021
 ms.reviewer: chventou
-ms.openlocfilehash: 37dbc72c7a88a2108eb40c29280e346859927baf
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 94eb6e7bf031a9c59fa66eb24b64298ea9a0465c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773765"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191733"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-group-policy-objects"></a>グループ ポリシー オブジェクトを使用して Microsoft Defender for Endpoint を管理する
 
@@ -67,7 +65,7 @@ ms.locfileid: "59773765"
 - [概要 Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/use)
 - [エンドポイント保護: Microsoft 365 Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - [脅威と脆弱性の管理の概要を取得する](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [ポータルのセキュリティMicrosoft 365 Defenderダッシュボードにアクセスする](/microsoft-365/security/defender-endpoint/security-operations-dashboard)

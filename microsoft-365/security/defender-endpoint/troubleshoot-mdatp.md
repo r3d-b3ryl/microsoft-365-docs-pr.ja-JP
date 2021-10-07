@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: a487148601f9565a82f8046019fcf6cb4c2825c1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2d001d8c554738415e1108bd273aef642851e619
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177567"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191577"
 ---
 # <a name="troubleshoot-service-issues"></a>サービスに関する問題のトラブルシューティング
 
@@ -87,7 +87,7 @@ Microsoft [](event-error-codes.md) Defender for Endpoint サービスによっ�
 
 Azure Defender を使用してサーバーを監視すると、Microsoft Defender for Endpoint テナントが自動的に作成されます。 Microsoft Defender for Endpoint データは、既定でヨーロッパに保存されます。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング](troubleshoot-onboarding.md)
 - [イベント ビューアーを使用してイベントとエラーを確認する](event-error-codes.md)

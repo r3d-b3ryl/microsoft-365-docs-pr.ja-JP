@@ -9,18 +9,18 @@ ms.date: ''
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Advanced eDiscoveryジョブを使用すると、さまざまなタスクの実行に関連する長時間実行されるプロセスのAdvanced eDiscoveryできます。
-ms.openlocfilehash: 27ac98d1f98e85800c8ca3dfc91cc5e0803ae2e8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d5b2facdead3be1369cd261392117fc33fa1a4fb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179863"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192201"
 ---
 # <a name="manage-jobs-in-advanced-ediscovery"></a>ジョブを管理Advanced eDiscovery
 
@@ -31,7 +31,7 @@ ms.locfileid: "59179863"
 |レビュー セットへのデータの追加 | ユーザーがレビュー セットにコレクションを追加します。 このジョブは、次の 2 つのサブ ジョブで構成されます。 </br>• **エクスポート** - コレクション内のアイテムの一覧が生成されます。 </br>• イン **ジェスト & インデックス** 作成 - 検索クエリに一致するコレクション内のアイテムが Azure Storage の場所 (インジェストと呼ばれる *プロセスで)* にコピーされ、Azure Storage の場所にあるアイテムが再インデックス化されます。 この新しいインデックスは、データ セット内のアイテムのクエリと分析に使用されます。 </br></br>詳細については、「レビュー セット [に検索結果を追加する」を参照してください](add-data-to-review-set.md)。 |
 |別のレビュー セットへのデータの追加 | ユーザーは、同じケースで 1 つのレビュー セットから別のレビュー セットにドキュメントを追加します。 詳細については、「別のレビュー [セットからレビュー セットにデータを追加する」を参照してください](add-data-to-review-set-from-another-review-set.md)。|
 |レビュー セットにMicrosoft 365データを追加する | ユーザーがレビュー セットにMicrosoft 365データをアップロードします。 データは、このプロセス中にもインデックスが作成されます。 たとえば、オンプレミスのファイル サーバーまたはクライアント コンピューターのファイルがレビュー セットにアップロードされます。 詳細については、「ユーザー以外の[データMicrosoft 365レビュー セットに読み込む」を参照してください](load-non-office-365-data-into-a-review-set.md)。| 
-|レビュー セットへの修復されたデータの追加 | 処理エラーのあるデータは修復され、レビュー セットに読み込まれます。 詳しくは、次のトピックを参照してください。</br>• [データの処理時のエラー修復](error-remediation-when-processing-data-in-advanced-ediscovery.md)</br>• [単一アイテムのエラー修復](single-item-error-remediation.md)| 
+|レビュー セットへの修復されたデータの追加 | 処理エラーのあるデータは修復され、レビュー セットに読み込まれます。 詳細については、以下を参照してください。</br>• [データの処理時のエラー修復](error-remediation-when-processing-data-in-advanced-ediscovery.md)</br>• [単一アイテムのエラー修復](single-item-error-remediation.md)| 
 |負荷セットの比較 | ユーザーは、レビュー セット内の異なる負荷セットの違いを確認します。 ロード セットは、レビュー セットにデータを追加するインスタンスです。 たとえば、2 つの異なる検索の結果を同じレビュー セットに追加すると、それぞれが読み込みセットを表します。 |
 |会話の再構成|ユーザーが検索の結果を会話レビュー セットに追加すると、Microsoft Teams のようなサービスのインスタント メッセージ会話 (スレッド *会話とも呼* ばれる) が PDF ファイルに再構築されます。 このジョブは、ユーザーが [アクション] ボタンをクリックした場合>[会話 **の PDF** をレビュー セットに作成する] をクリックした場合にもトリガーされます。 詳細については、「Review [conversations in Advanced eDiscovery」 を参照してください](conversation-review-sets.md)。
 |編集されたドキュメントを PDF に変換する|ユーザーは、レビュー セット内のドキュメントに注釈を付け、その一部を編集した後、編集したドキュメントを PDF ファイルに変換できます。 これにより、ドキュメントがプレゼンテーション用にエクスポートされた場合、変更された部分が表示されません。 詳細については、「レビュー セット [でドキュメントを表示する」を参照してください](annotating-and-redacting-documents.md)。 |

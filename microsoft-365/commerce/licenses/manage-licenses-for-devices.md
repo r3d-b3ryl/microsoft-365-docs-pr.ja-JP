@@ -9,7 +9,7 @@ ms.reviewer: shegu, nicholak
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ ms.custom:
 - commerce_licensing
 search.appverid: MET150
 ms.date: 08/27/2021
-ms.openlocfilehash: b3d5e5cd3aa6c2531d515d665d10ad01298d0a23
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.openlocfilehash: 674874a6e27afa6e08ca4ee77de4ecac51796de8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58747457"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179633"
 ---
 # <a name="manage-licenses-for-devices"></a>デバイスのライセンスを管理する
 

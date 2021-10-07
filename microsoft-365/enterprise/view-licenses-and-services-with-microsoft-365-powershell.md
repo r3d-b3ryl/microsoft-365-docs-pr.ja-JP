@@ -7,7 +7,7 @@ ms.date: 07/17/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: Ent_O365
@@ -20,12 +20,12 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: PowerShell を使用して、組織で利用可能なライセンス プラン、サービス、ライセンスに関する情報を表示するMicrosoft 365します。
-ms.openlocfilehash: 920bc00dcfa774f7cf157be4a543bf30e18f406e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3b90596c68e3beadcc2b33ef59ff9c3503b84f8a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59210384"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195271"
 ---
 # <a name="view-microsoft-365-licenses-and-services-with-powershell"></a>PowerShell Microsoft 365ライセンスとサービスを表示する
 
@@ -145,7 +145,7 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Microsoft 365 Apps for enterprise *(以前に名前が付Office 365 ProPlus)*  <br/> |
 | `MCOSTANDARD` <br/> |Skype for Business Online  <br/> |
-| `SHAREPOINTWAC` <br/> |事業所  <br/> |
+| `SHAREPOINTWAC` <br/> |Office  <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online プラン 2  <br/> |
    

@@ -8,7 +8,7 @@ ms.date: ''
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - SPO160
 - MET150
@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: データ損失防止 (DLP) ポリシーにポリシー ヒントを追加する方法について、DLP ポリシーと競合するコンテンツを操作しているユーザーに通知する方法について学習します。
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 7c1e61378e4da34c964c4fcdaf87afc25e88b4d0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2537b653b435240e052374e3328e2b94504a8d74
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219044"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195643"
 ---
 # <a name="data-loss-prevention-policy-tips-reference"></a>データ損失防止ポリシーヒントのリファレンス
 
@@ -395,7 +395,7 @@ Outlook Web Access の DLP ポリシー ヒントは、以下を除き、DLP ポ
 |**アプリとプラットフォーム**|**DLP ポリシー ヒントのサポート**|**サポートされる機密情報の種類**|**サポートされる述語とアクション**|**コメント**|
 |:--|:--|:--|:--|:--|
 |**OutlookOn the Web**|:::image type="icon" source="../media/rightmrk.png" border="false":::|すべての|サブセット||
-|**OutlookWin32 (ver. 2105 ビルド 14026.20000 および半期チャネル ver. 2102 ビルド 13801.20862)**|:::image type="icon" source="../media/rightmrk.png" border="false":::|すべての|サブセット|Outlook Win32 での DLP ポリシー ヒントの表示にサポートされる機密情報の種類と DLP の条件とアクションのサポートの詳細については[、「Outlook 2013](#outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions-and-exceptions)以降では、一部の条件と例外に関するポリシー ヒントの表示と[Outlook 2013](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types)以降およびデスクトップ上の Office アプリのサポート」を参照してください。|
+|**OutlookWin32 (ver. 2105 ビルド 14026.20000 および半期チャネル ver. 2102 ビルド 13801.20862)**|:::image type="icon" source="../media/rightmrk.png" border="false":::|すべての|サブセット|Outlook Win32 での DLP ポリシー ヒントの表示にサポートされる機密情報の種類と DLP の条件とアクションのサポートの詳細については[、「Outlook 2013](#outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions-and-exceptions)以降の一部の条件と例外および[Outlook 以降およびデスクトップ](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types)上の Office アプリに関するポリシー ヒントの表示」を参照してください。.|
 |**Outlookモバイル (iOS、Android)/Outlook Mac**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none|DLP ポリシー のヒントは、モバイルではOutlookされません|
 |**SharePointオンライン/OneDrive for Business Web クライアント**|:::image type="icon" source="../media/rightmrk.png" border="false":::|すべての|DLP のすべての SPO/ODB 述語とアクション||
 |**SharePointWin32/ OneDrive for Business Win32 クライアント**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none|DLP ポリシー ヒントは、デスクトップ クライアント アプリSharePoint OneDriveサポートされていません|

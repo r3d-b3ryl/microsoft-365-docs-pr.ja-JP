@@ -11,18 +11,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 75913a539db89bb5377386effb97c8e2a6b3beab
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 49a0b34fb278fbb517bcfecc9d9e524d669029e3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220233"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195187"
 ---
 # <a name="the-analyst-report-in-threat-analytics"></a>脅威分析のアナリスト レポート
 
@@ -53,10 +53,10 @@ _脅威分析レポートのアナリスト レポート セクション_
 |エグゼクティブの概要|脅威の概要 (最初に見られた場合を含む)、その動機、重要なイベント、主要なターゲット、および個別のツールとテクニック。 この情報を使用して、業界、地理的位置、ネットワークのコンテキストで脅威に優先順位を付ける方法をさらに評価できます。|
 |分析|攻撃の詳細、攻撃者が新しい手法または攻撃表面を利用する方法など、脅威に関する技術情報|
 |MITRE ATT&CK 技術の観察|CK 攻撃フレームワークの[MITRE ATT](https://attack.mitre.org/)に&方法|
-|[緩和策](#apply-additional-mitigations)|脅威の影響を停止または軽減する可能性がある推奨事項。 このセクションには、脅威分析レポートの一部として動的に追跡されない軽減策も含まれています。|
+|[軽減策](#apply-additional-mitigations)|脅威の影響を停止または軽減する可能性がある推奨事項。 このセクションには、脅威分析レポートの一部として動的に追跡されない軽減策も含まれています。|
 |[検出の詳細](#understand-how-each-threat-can-be-detected)|脅威に関連付けられたアクティビティやコンポーネントを表面化できる Microsoft セキュリティ ソリューションによって提供される特定の一般的な検出。|
 |[高度な追求](#find-subtle-threat-artifacts-using-advanced-hunting)|[脅威の可能性のあるアクティビティ](advanced-hunting-overview.md) を事前に特定するための高度な検索クエリ。 ほとんどのクエリは、特に悪意のある可能性のあるコンポーネントや、悪意のあると動的に評価できなかった動作を見つけ出す場合に、検出を補完するために提供されます。|
-|関連情報|レポートの作成中にアナリストが参照する Microsoft およびサードパーティの文書。 脅威分析コンテンツは、Microsoft の研究者によって検証されたデータに基づいて行います。 一般に公開されているサードパーティのソースからの情報は、その情報として明確に識別されます。|
+|参照|レポートの作成中にアナリストが参照する Microsoft およびサードパーティの文書。 脅威分析コンテンツは、Microsoft の研究者によって検証されたデータに基づいて行います。 一般に公開されているサードパーティのソースからの情報は、その情報として明確に識別されます。|
 |変更ログ|レポートが発行された時刻と、レポートに大幅な変更が加えた時刻。|
 |
 
@@ -98,7 +98,7 @@ EDRは、Microsoft Defender for Endpoint にオンボードされている[デ�
 
 アナリスト レポートの高度な検索クエリは、Microsoft アナリストによって確認され、高度な検索クエリ エディターで実行 [する準備が整いました](https://securitycenter.windows.com/advanced-hunting)。 クエリを使用して、将来の一致に関するアラート [をトリガー](custom-detection-rules.md) するカスタム検出ルールを作成することもできます。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [脅威の分析の概要](threat-analytics.md)
 - [高度な検索で脅威を事前に検出する](advanced-hunting-overview.md)

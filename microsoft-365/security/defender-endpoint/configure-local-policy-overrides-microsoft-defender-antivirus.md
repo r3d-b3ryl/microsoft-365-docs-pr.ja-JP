@@ -8,7 +8,7 @@ ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.topic: article
@@ -17,12 +17,12 @@ ms.date: 09/14/2021
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 847b2085d6285299cea7f32f98c8c682dcb3fb4d
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: c206d998d1900ef39a0edbfd21c24b2e0cdc0514
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59490155"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192945"
 ---
 # <a name="prevent-or-allow-users-to-locally-modify-microsoft-defender-antivirus-policy-settings"></a>ユーザーがポリシー設定をローカルで変更Microsoft Defender ウイルス対策または許可する
 
@@ -59,7 +59,7 @@ ms.locfileid: "59490155"
 
 <br/><br/>
 
-| Location | 設定 | 記事 |
+| Location | Setting | 記事 |
 |---|---|---|---|
 | MAPS |Microsoft MAPS へのレポート用にローカル設定の上書きを構成する|[クラウドによる保護の有効化](enable-cloud-protection-microsoft-defender-antivirus.md) |
 | 検疫する|検疫フォルダーからアイテムを削除するローカル設定の上書きを構成する|[スキャンの修復を構成する](configure-remediation-microsoft-defender-antivirus.md) |
@@ -98,7 +98,7 @@ ms.locfileid: "59490155"
 > [!NOTE]
 > ローカル リストの結合を無効にすると、フォルダー アクセスの制御設定が上書きされます。 また、ローカル管理者が設定した保護されたフォルダーまたは許可されたアプリも上書きされます。 フォルダー アクセスの制御設定の詳細については、「アプリでブロック[されたアプリ](https://support.microsoft.com/help/4046851/windows-10-allow-blocked-app-windows-security)を許可する」を参照Windows セキュリティ。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)
 - [ユーザーとのエンド ユーザー操作を構成Microsoft Defender ウイルス対策](configure-end-user-interaction-microsoft-defender-antivirus.md)

@@ -9,15 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-localization_priority: Normal
+ms.localizationpriority: medium
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e5a5fbe05515f86869b7d14e6e4860e5e2c641d0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ef0a5962b6c700216a21c54f9547cd835e49684b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59217423"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192537"
 ---
 # <a name="contact-support-for-jersey"></a>ジャージーのサポートに問い合わせ
 

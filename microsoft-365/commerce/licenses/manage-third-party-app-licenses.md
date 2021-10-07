@@ -9,7 +9,7 @@ ms.reviewer: argani
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: 独立したソフトウェア ベンダー (ISV) アプリのライセンスを管理する方法については、Microsoft 365 管理センター。
 ms.date: 06/15/2021
-ms.openlocfilehash: e19277a34c896d918d545cca27b1c435ca221e6f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4738c0fa2c21c189922087e54d8b00260cd68c93
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59190301"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179573"
 ---
 # <a name="manage-isv-app-licenses-in-the-microsoft-365-admin-center"></a>ISV アプリ のライセンスを管理するには、Microsoft 365 管理センター
 
@@ -33,7 +33,7 @@ ms.locfileid: "59190301"
 
 ## <a name="before-you-begin"></a>はじめに
 
-ライセンスを割り当てるには、グローバル、ライセンス、またはユーザー管理者である必要があります。 詳細については、[「管理者の役割について」](../../admin/add-users/about-admin-roles.md) を参照してください。
+ライセンスを割り当てるには、グローバル、ライセンス、またはユーザー管理者である必要があります。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
 
 ## <a name="assign-isv-app-licenses-to-users-or-groups"></a>ISV アプリ ライセンスをユーザーまたはグループに割り当てる
 

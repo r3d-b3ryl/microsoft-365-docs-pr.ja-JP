@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365solution-mip
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アクティビティ エクスプローラーでは、ラベル付きコンテンツを取り扱うユーザーの操作の確認およびフィルター処理を行い、データ分類機能の機能性を完全なものにします。
-ms.openlocfilehash: 8aff58bfd37fbf4e8573546f84f7670424e6b4d8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d44d285959e0529a694b2022d35f2b7e7a575fdc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176015"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192261"
 ---
 # <a name="get-started-with-activity-explorer"></a>アクティビティ エクスプローラーの使用を開始する
 
@@ -93,7 +93,7 @@ ms.locfileid: "59176015"
 - 保護が削除されました
 - 検出されたファイル 
 
-また、アクティビティ エクスプローラーは、Exchange Online、SharePoint Online、OneDrive、Teams チャットとチャネル (プレビュー)、オンプレミスの SharePoint フォルダーとライブラリ、オンプレミスのファイル共有、およびエンドポイント データ損失防止 **(DLP)** を介して Windows 10 デバイスからのイベントに一致するイベントを収集します。 デバイスからのイベントの例Windows 10ファイルです。
+アクティビティ エクスプローラーは、Exchange Online、SharePoint Online、OneDrive、Teams チャットとチャネル (プレビュー)、オンプレミスの SharePoint フォルダーとライブラリ、オンプレミスのファイル共有、およびエンドポイント経由の Windows 10 デバイスからのイベントを収集します。  **データ損失防止 (DLP)**。 デバイスからのイベントの例Windows 10ファイルです。
 
 - 削除
 - creations

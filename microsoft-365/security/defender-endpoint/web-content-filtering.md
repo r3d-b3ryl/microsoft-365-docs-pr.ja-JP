@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a394fadc5728258208abe2e9de5e94f849dd921e
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: feb05a19264564d98b1b7a79993c1be6d61237a3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60009579"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195223"
 ---
 # <a name="web-content-filtering"></a>Web コンテンツ フィルタリング
 

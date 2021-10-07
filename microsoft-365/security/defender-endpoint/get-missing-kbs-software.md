@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 15c3ad6eef732f36a425a54673a694613c0f4b66
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 971bb3946c2a146c61c4b98bc0102e8c52e25c42
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222125"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191841"
 ---
 # <a name="get-missing-kbs-by-software-id"></a>ソフトウェア ID で不足している KB を取得する
 
@@ -44,7 +44,7 @@ ms.locfileid: "59222125"
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
 アプリケーション|Software.Read.All|'脅威と脆弱性管理ソフトウェア情報の読み取り'
-委任 (職場または学校アカウント)|Software.Read|'脅威と脆弱性管理ソフトウェア情報の読み取り'
+委任 (職場または学校のアカウント)|Software.Read|'脅威と脆弱性管理ソフトウェア情報の読み取り'
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -56,7 +56,7 @@ GET /api/Software/{Id}/getmissingkbs
 
 名前|型|説明
 :---|:---|:---
-Authorization|文字列|ベアラー {token}。 **必須**
+Authorization|String|ベアラー {token}。 **必須**
 
 ## <a name="request-body"></a>要求本文
 
@@ -100,7 +100,7 @@ GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge/getmi
 }
 ```
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [リスクベースの脅威&の管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [脅威&ソフトウェア インベントリ](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

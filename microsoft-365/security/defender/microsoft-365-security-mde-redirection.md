@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c678cb8d9eece9ff3a900a7d2b0c6bf95ad8eda9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 444336af04ddf971c4a58e1f12fc296ecf4bc629
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177440"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191469"
 ---
 # <a name="redirecting-accounts-from-microsoft-defender-for-endpoint-to-microsoft-365-defender"></a>Microsoft Defender for Endpoint からアカウントをユーザーにリダイレクトMicrosoft 365 Defender
 
@@ -54,7 +54,7 @@ SIEM と拡張検出と応答 (XDR) による脅威保護に対する Microsoft 
 リンクとルーティングの詳細については、以下の表を参照してください。
 ## <a name="siem-api-routing"></a>SIEM API ルーティング
 
-|**プロパティ**  |**リダイレクトが OFF の場合の宛先**  |**リダイレクトが ON の場合の宛先** | 
+|**Property**  |**リダイレクトが OFF の場合の宛先**  |**リダイレクトが ON の場合の宛先** | 
 |---------|---------|---------|
 | LinkToWDATP | [アラート] ページ (securitycenter.windows.com | [アラート] ページ (security.microsoft.com  |
 | IncidentLinkToWDATP | [インシデント] ページ (securitycenter.windows.com  | [インシデント] ページ (security.microsoft.com  |
@@ -63,7 +63,7 @@ SIEM と拡張検出と応答 (XDR) による脅威保護に対する Microsoft 
 
 ## <a name="email-alert-notifications"></a>電子メールアラート通知
 
-|**プロパティ**  |**リダイレクトが OFF の場合の宛先**  |**リダイレクトが ON の場合の宛先** |
+|**Property**  |**リダイレクトが OFF の場合の宛先**  |**リダイレクトが ON の場合の宛先** |
 |---------|---------|---------|
 | [アラート] ページ  | [アラート] ページ (securitycenter.windows.com  | [アラート] ページ (security.microsoft.com  |
 | インシデント ページ  |[インシデント] ページ (securitycenter.windows.com  | [インシデント] ページ (security.microsoft.com  

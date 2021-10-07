@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -19,12 +19,12 @@ ms.custom:
 search.appverid: MET150
 description: 組織の無料セルフサービス サインアップ サブスクリプションを管理する方法について学習します。
 ms.date: 03/17/2021
-ms.openlocfilehash: b942d21fb3c4a6d6b8ab27fafb2af00a095c2a608909142788e46dbe60cdfa9d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 24f852a1eb9983e211000b59bda32eaa2c6bf0fa
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53852153"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192381"
 ---
 # <a name="manage-self-service-sign-up-subscriptions"></a>セルフサービス サインアップ サブスクリプションの管理
 

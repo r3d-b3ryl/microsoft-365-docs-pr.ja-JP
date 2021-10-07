@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ユーザーに対するこれらのセキュリティ推奨事項Microsoft 365 Business Premiumユーザーに与える影響とデータの保護について学習します。
-ms.openlocfilehash: 8f8ccbbb1f9edb6eb9b1f29078317727b5e9b6e7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e6fc47e0476c063cb7d24bd84a255e279bf84ed3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178272"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194743"
 ---
 # <a name="how-these-security-recommendations-affect-your-users"></a>これらのセキュリティ推奨事項がユーザーに与える影響
 
@@ -72,7 +72,7 @@ ms.locfileid: "59178272"
 
 |**Windows 10**|**Mac**|
 |:-----|:------|
-|BitLocker デバイス保護を有効にする<p><p> [Windows Defenderをオンに維持する <p>ファイアウォールのWindowsする| FileVault を使用して Mac ディスクを暗号化する <p><p>信頼性の高いウイルス対策ソフトウェアを使用する <p>ファイアウォール保護を有効にする|
+|BitLocker デバイス保護を有効にする<p><p> [Windows Defenderをオンに維持する <p>Windows ファイアウォールを有効にする| FileVault を使用して Mac ディスクを暗号化する <p><p>信頼性の高いウイルス対策ソフトウェアを使用する <p>ファイアウォール保護を有効にする|
 
 これらの推奨事項の詳細については、「アカウントとデバイスをハッカーやマルウェアから保護 [する」を参照してください](https://support.office.com/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10)。
 

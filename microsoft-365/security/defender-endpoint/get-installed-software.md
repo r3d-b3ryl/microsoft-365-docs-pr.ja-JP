@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dolmont
 author: DulceMontemayor
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 719f570e6f4b3cdb0afed6caa65a08bfb43cc3db
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 104121ee1a12f55eaecd68c736e9873018e94b8b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221370"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192789"
 ---
 # <a name="get-installed-software"></a>インストールされたソフトウェアを取得する
 
@@ -48,7 +48,7 @@ ms.locfileid: "59221370"
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
 アプリケーション |Software.Read.All|'脅威と脆弱性管理ソフトウェア情報の読み取り'
-委任 (職場または学校アカウント)|Software.Read|'脅威と脆弱性管理ソフトウェア情報の読み取り'
+委任 (職場または学校のアカウント)|Software.Read|'脅威と脆弱性管理ソフトウェア情報の読み取り'
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -60,7 +60,7 @@ GET /api/machines/{machineId}/software
 
 名前|型|説明
 :---|:---|:---
-Authorization|String|ベアラー {token}。 **必須**
+Authorization|String|ベアラー {token}。 **必須**。
 
 ## <a name="request-body"></a>要求本文
 

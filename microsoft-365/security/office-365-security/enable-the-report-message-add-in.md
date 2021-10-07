@@ -7,7 +7,7 @@ author: dansimp
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -17,12 +17,12 @@ ms.collection:
 description: レポート メッセージまたはレポート フィッシング アドインを Outlook および Outlook on the web、個々のユーザーまたは組織全体に対して有効にする方法について学習します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a1481676468ac3ee505da41de91d0eba3b7e55e2
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: 47ba6d4d9f02934f05a98cf8ef01820a9daac8d9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988981"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191457"
 ---
 # <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>メッセージのレポートまたはフィッシング アドインのレポートを有効にする
 

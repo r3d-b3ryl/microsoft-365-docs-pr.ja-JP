@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6a134dced8eb749bebdf7e486c6d06c9cc19048b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5bf6cc1f64cfbc7c4238e01ad7d623e3164639c8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192640"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191553"
 ---
 # <a name="monitor-web-browsing-security"></a>Web 閲覧のセキュリティを監視する
 
@@ -66,7 +66,7 @@ Web 脅威保護の概要カードで特定の Web 脅威カテゴリを **選�
 
 ドメインを選択して、そのドメイン内の URL にアクセスしようとしたデバイスの一覧と URL の一覧を表示します。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [Web 保護の概要](web-protection-overview.md)
 - [Web コンテンツ フィルタリング](web-content-filtering.md)

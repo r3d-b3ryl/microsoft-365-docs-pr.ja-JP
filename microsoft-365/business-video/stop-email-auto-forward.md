@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 独自の情報の盗難を回避するためにメール フロー ルールを作成して、電子メールの自動転送を停止する方法について説明します。
-ms.openlocfilehash: 5c13e43f29b6d49b13daf4eb0aa6e3d6fd8275ae
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2879be5db078ba32ba088e30d1de5e4e062cff25
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180592"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195907"
 ---
 # <a name="stop-email-auto-forward"></a>電子メールの自動転送を停止する
 

@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -22,18 +23,18 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: テナントのデータ収集を開始する方法については、Microsoft 365 Usage Analytics テンプレート アプリを使用Power BI。
-ms.openlocfilehash: 77e4a9bb7953435cd209a2e71ba2a76bc2b916d0
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 805ce4afd5a486b54bf0a441adb0755b95e14237
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776334"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195943"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Microsoft 365 利用状況分析を有効にする
 
 Microsoft 365 Microsoft 365 US Government Community Cloud (GCC) テナントで Microsoft 365 利用状況分析を有効にするには、「Usage Analytics」を使用して Connect から Microsoft 365 Government Community Cloud [(GCC)](connect-to-gcc-data-with-usage-analytics.md)のデータを参照してください。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 使用状況分析をMicrosoft 365するには、まずデータを Microsoft 365 管理センター で使用し、次にテンプレート<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank"></a>アプリを Power BI で開始する必要があります。
 

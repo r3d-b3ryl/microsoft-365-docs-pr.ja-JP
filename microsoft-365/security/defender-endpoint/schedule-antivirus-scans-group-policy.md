@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -17,12 +17,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 364dbb4f3cb077f1428e76251554090c06b0f0cf
-ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
+ms.openlocfilehash: f59c91e75dd573e9f32d05a9673dd3efb5c10af7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59497586"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191704"
 ---
 # <a name="schedule-antivirus-scans-using-group-policy"></a>グループ ポリシーを使用してウイルス対策スキャンをスケジュールする
 
@@ -53,7 +53,7 @@ ms.locfileid: "59497586"
 
 ## <a name="group-policy-settings-for-scheduling-scans"></a>スキャンのスケジュール設定のグループ ポリシー設定
 
-| Location | 設定 | 説明 | 既定の設定 (構成されていない場合) |
+| Location | Setting | 説明 | 既定の設定 (構成されていない場合) |
 |:---|:---|:---|:---|
 | スキャン | スケジュールされたスキャンに使用するスキャンの種類を指定する | クイック スキャン |
 | スキャン | スケジュールされたスキャンを実行する週の日を指定する | スキャンを実行する日 (または実行しない) を指定します。 | Never |
@@ -62,7 +62,7 @@ ms.locfileid: "59497586"
 
 ## <a name="group-policy-settings-for-scheduling-scans-for-when-an-endpoint-is-not-in-use"></a>エンドポイントが使用されていないときにスキャンをスケジュールするグループ ポリシー設定
 
-| Location | 設定 | 説明 | 既定の設定 (構成されていない場合) |
+| Location | Setting | 説明 | 既定の設定 (構成されていない場合) |
 |:---|:---|:---|:---|
 | スキャン | コンピューターがオンで、使用されていない場合にのみ、スケジュールされたスキャンを開始する | コンピューターがオンで使用されていない場合、スケジュールされたスキャンは実行されません。 | Enabled |
 
@@ -71,21 +71,21 @@ ms.locfileid: "59497586"
 
 ## <a name="group-policy-settings-for-scheduling-remediation-required-scans"></a>修復に必要なスキャンをスケジュールするためのグループ ポリシー設定
 
-| Location | 設定 | 説明 | 既定の設定 (構成されていない場合) |
+| Location | Setting | 説明 | 既定の設定 (構成されていない場合) |
 |---|---|---|---|
 | 修復 | スケジュールされたフル スキャンを実行して修復を完了する日を指定する | スキャンを実行する日 (または実行しない) を指定します。 | Never |
 | 修復 | スケジュールされたフル スキャンを実行して修復を完了する時刻を指定する | 午前 0 時以降の分数を指定します (たとえば、 **午前 1 時に 60** と入力します)。 | 2 a.m. |
 
 ## <a name="group-policy-settings-for-scheduling-daily-scans"></a>毎日のスキャンをスケジュールするグループ ポリシー設定
 
-| Location | 設定 | 説明 | 既定の設定 (構成されていない場合) |
+| Location | Setting | 説明 | 既定の設定 (構成されていない場合) |
 |:---|:---|:---|:---|
 | スキャン | 1 日あたりのクイック スキャンを実行する間隔を指定する | 次のクイック スキャンの前に経過する時間を指定します。 たとえば、2 時間ごとに実行するには **、「2」と入力し、1** 日 1 回は **24 と入力します**。 **0 と入力** すると、毎日のクイック スキャンは実行されません。 | Never |
 | スキャン | 毎日のクイック スキャンの時間を指定する | 午前 0 時以降の分数を指定します (たとえば、 **午前 1 時に 60** と入力します)。 | 2 a.m. |
 
 ## <a name="group-policy-settings-for-scheduling-scans-after-protection-updates"></a>保護更新後にスキャンをスケジュールするグループ ポリシー設定
 
-| Location | 設定 | 説明 | 既定の設定 (構成されていない場合)|
+| Location | Setting | 説明 | 既定の設定 (構成されていない場合)|
 |:---|:---|:---|:---|
 | 署名の更新 | セキュリティ インテリジェンスの更新後にスキャンを有効にする | 新しい保護更新プログラムがダウンロードされた直後にスキャンが実行されます | Enabled |
 

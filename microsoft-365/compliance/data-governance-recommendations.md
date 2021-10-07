@@ -11,18 +11,18 @@ ms.topic: overview
 ms.service: O365-seccomp
 ms.collection:
 - SPO_Content
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 365 セキュリティ センターと Microsoft 365 コンプライアンス センターは、組織の現在の設定に基づきデータ ガバナンスのための推奨事項を提供し、ユーザーによる設定作業を簡略化します。これらの推奨事項の一部は組織で特定のコンテンツを検出し、そのコンテンツを管理するための推奨手順を提供します。たとえば、重要な業務コンテンツ (弁護士/依頼人特権や秘密保持契約書に関わる情報など) を含むアイテムが推奨事項によって検出された際に、ユーザーは保持ラベルを自動適用し、必要に応じてアイテムを機密扱いにして保持することができます。このトピックでは、ユーザーに表示される可能性があるデータ ガバナンスの推奨事項を一覧表示し、それぞれの推奨事項をトリガーするコンテンツについて説明します。
-ms.openlocfilehash: ddfb21cae1483a271e159f79f554b55b234ce7241ab9fcd3d3a434802f17ede6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c47b19b7960118e3dee3fd6079adcf59ec22893b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53860801"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179213"
 ---
 # <a name="how-content-is-identified-for-data-governance-recommendations"></a>データ ガバナンスの推奨事項のためのコンテンツの識別方法
 

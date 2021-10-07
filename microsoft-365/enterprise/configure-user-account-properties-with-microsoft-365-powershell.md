@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: Ent_O365
@@ -19,12 +19,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
 description: PowerShell を使用して、Microsoft 365テナント内の個々または複数のユーザー アカウントのプロパティMicrosoft 365します。
-ms.openlocfilehash: b638a3afafd3c1701cf11f5868d0413d3995eadd
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 01b17837e4babc31d385be66f9387129baf87da1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163863"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178913"
 ---
 # <a name="configure-microsoft-365-user-account-properties-with-powershell"></a>PowerShell Microsoft 365ユーザー アカウントのプロパティを構成する
 

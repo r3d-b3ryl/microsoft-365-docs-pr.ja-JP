@@ -9,25 +9,25 @@ ms.date: ''
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: 弁護士クライアントの特権検出モデルを使用して、機械学習ベースの特権コンテンツの検出を使用して、ユーザーのケースでコンテンツをAdvanced eDiscoveryします。
-ms.openlocfilehash: babf0088b7880e614234c0eea0432b0a7fa22db0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4e15f0366da8d860a0e907b82ed4668d7e4d7af4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164190"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179465"
 ---
 # <a name="set-up-attorney-client-privilege-detection-in-advanced-ediscovery"></a>アプリケーションで弁護士とクライアントの特権の検出をAdvanced eDiscovery
 
 電子情報開示プロセスのレビュー フェーズの主要でコストの高い側面は、特権コンテンツのドキュメントを確認する方法です。 Advanced eDiscovery、このプロセスをより効率的にするための、機械学習ベースの特権コンテンツの検出を提供します。 この機能は、弁護士 *とクライアントの特権の検出と呼ばれる。*
 
-## <a name="how-does-it-work"></a>どのような仕組みですか?
+## <a name="how-does-it-work"></a>どのような仕組みなのか。
 
 弁護士クライアント特権の検出が有効になっている場合、レビュー セット内のデータを分析すると、レビュー セット内のすべてのドキュメントが弁護士クライアント特権[](analyzing-data-in-review-set.md)検出モデルによって処理されます。 モデルは、次の 2 つのことを探します。
 

@@ -10,7 +10,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MST160
@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Microsoft 365 の電子情報開示ツールを使用して、Exchange ハイブリッド環境のオンプレミス ユーザーの Teams チャット データを検索してエクスポートします。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1dfd3ebe278f704cc878beaa1711f117d57551bc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2398ff8328b075403906c460f51a738664fec42d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175815"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192153"
 ---
 # <a name="search-for-teams-chat-data-for-on-premises-users"></a>オンプレミス ユーザーの Teams チャット データを検索する
 

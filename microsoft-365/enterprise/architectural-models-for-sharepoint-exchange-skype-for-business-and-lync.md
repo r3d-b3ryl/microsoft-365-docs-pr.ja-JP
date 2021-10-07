@@ -7,7 +7,7 @@ ms.date: 05/16/2018
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -20,12 +20,12 @@ ms.assetid: 5b49fa68-f8f2-4705-af96-5f5475e8539a
 search.appverid:
 - MET150
 description: アーキテクチャ モデル、展開、およびプラットフォーム オプションを説明する IT ポスターを取得し、SharePoint、Exchange、Skype for Business、Lync に関する情報を取得します。
-ms.openlocfilehash: 98558c20c66a808e93cd866b2f676b5f78fde3c1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 813a143d281f85e6cbc9c0456dceaf20c674d13b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59210763"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178973"
 ---
 # <a name="architectural-models-for-sharepoint-exchange-skype-for-business-and-lync"></a>SharePoint、Exchange、Skype for Business、Lync のアーキテクチャ モデル
 
@@ -156,14 +156,14 @@ Azure の IT ポスターには、SharePoint Server 2013 を使用する Azure �
 
 |アイテム|説明|
 |---|---|
-|[![サーバー 2013 のポスターを使用SharePoint Azure のインターネット サイトのイメージ。](../media/MS-AZ-SPInternetSites.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41992) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392552)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392551)  \| [その他の言語](https://www.microsoft.com/download/details.aspx?id=41992)|このポスターでは、Azure のインターネット向けサイトの主要な設計アクティビティと推奨アーキテクチャの概要を示します。  <br/><br/> 詳細については、次の記事を参照してください。  <br/><br/> - [Azure のインターネット サイトでサーバー 2013 SharePointを使用する](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md) <br/> - [2013 年SharePoint Azure アーキテクチャ](microsoft-azure-architectures-for-sharepoint-2013.md)|
+|[![サーバー 2013 のポスターを使用SharePoint Azure のインターネット サイトのイメージ。](../media/MS-AZ-SPInternetSites.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41992) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392552)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392551)  \| [その他の言語](https://www.microsoft.com/download/details.aspx?id=41992)|このポスターでは、Azure のインターネット向けサイトの主要な設計アクティビティと推奨アーキテクチャの概要を示します。  <br/><br/> 詳細については、次の資料を参照してください。  <br/><br/> - [Azure のインターネット サイトでサーバー 2013 SharePointを使用する](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md) <br/> - [2013 年SharePoint Azure アーキテクチャ](microsoft-azure-architectures-for-sharepoint-2013.md)|
    
 <a name="DesignSampleInternetSites"> </a>
 ### <a name="internet-sites-in-azure-for-sharepoint-2013"></a>Azure のインターネット サイト for SharePoint 2013
 
 |アイテム|説明|
 |---|---|
-|[![サーバー 2013 ポスターのMicrosoft AzureのSharePointイメージ。](../media/MS-AZ-InternetSitesDesignSample.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41991) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548)  \| [その他の言語](https://www.microsoft.com/download/details.aspx?id=41991)|この設計サンプルは、Azure のインターネットに接続するサイトの独自のアーキテクチャの開始点として、SharePoint Server 2013 を使用します。 <br/><br/> 詳細については、次の記事を参照してください。  <br/><br/> - [Azure のインターネット サイトでサーバー 2013 SharePointを使用する](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md) <br/> - [2013 年SharePoint Azure アーキテクチャ](microsoft-azure-architectures-for-sharepoint-2013.md)|
+|[![サーバー 2013 ポスターのMicrosoft AzureのSharePointイメージ。](../media/MS-AZ-InternetSitesDesignSample.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41991) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548)  \| [その他の言語](https://www.microsoft.com/download/details.aspx?id=41991)|この設計サンプルは、Azure のインターネットに接続するサイトの独自のアーキテクチャの開始点として、SharePoint Server 2013 を使用します。 <br/><br/> 詳細については、次の資料を参照してください。  <br/><br/> - [Azure のインターネット サイトでサーバー 2013 SharePointを使用する](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md) <br/> - [2013 年SharePoint Azure アーキテクチャ](microsoft-azure-architectures-for-sharepoint-2013.md)|
    
 <a name="sharepoint_recovery_Azure"> </a>
 ### <a name="sharepoint-disaster-recovery-to-microsoft-azure"></a>Microsoft Azure に対する SharePoint の障害復旧

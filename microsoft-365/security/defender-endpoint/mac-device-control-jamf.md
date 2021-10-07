@@ -2,15 +2,13 @@
 title: JAMF のデバイス制御ポリシーの例
 description: JAMF で使用できる例を使用してデバイス制御ポリシーを使用する方法について説明します。
 keywords: microsoft、 defender、 endpoint, Microsoft Defender for Endpoint, mac, device, control, usb, リムーバブル, メディア, jamf
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: security
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e85a3728213af4fdb47dbfb47e40af8894a0effc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c7306782d62f91cea528a70ff0c3754085d0d3c2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179263"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195247"
 ---
 # <a name="examples-of-device-control-policies-for-jamf"></a>JAMF のデバイス制御ポリシーの例
 
@@ -219,6 +217,6 @@ ms.locfileid: "59179263"
 </plist>
 ```
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [macOS のデバイス制御の概要](mac-device-control-overview.md)

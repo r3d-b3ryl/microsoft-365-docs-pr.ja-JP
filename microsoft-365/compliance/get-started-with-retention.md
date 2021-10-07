@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーと保持ラベルを実装して組織のデータを管理しようと思っても、どこから始めればよいかかわりませんか? 開始するのに役立つ実用的なガイダンスをご覧ください。
-ms.openlocfilehash: f3faab08138197535f9305fddef2a9db3d0b6bb9
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 3154388eaf1c677cec00782642de6f83819d0665
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59772760"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195595"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの使用を開始する
 
@@ -39,7 +39,7 @@ ms.locfileid: "59772760"
 
 3. 特定した保持設定とアクションに基づいて、**アイテム保持ポリシーと保持ラベルを作成** します。
     
-    保持ラベルを使用する場合、[ファイル プラン](file-plan-manager.md)を使用して、スプレッドシートで保持ラベルを定義して微調整することが役立つ場合があります。 その場合は、スプレッドシートをインポートしてラベルを作成します。
+    保持ラベルの場合、[ファイル計画](file-plan-manager.md)を使用して、スプレッドシートで保持ラベルを定義および調整すると便利な場合があります。次に、そのスプレッドシートをインポートしてラベルを作成します。
     
 3. **保持ラベルを発行して適用** します。 アイテム保持ポリシーは "一度設定したらそのまま" の構成を想定して設計されています。一方、保持ラベルは複数のポリシーで使用できる再利用可能な文書パーツで、ユーザーのワークフローに組み込むことができます。 保持ラベルの使用方法については、[一般的なシナリオ](#common-scenarios-for-retention-policies-and-retention-labels)の一覧を参照してください。 
 
@@ -53,7 +53,7 @@ Microsoft 365 コンプライアンス機能のメリットを得られるよう
 
 アイテム保持ポリシーと保持ラベルを作成して管理するコンプライアンス チームのメンバーには、[Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)へのアクセス許可が必要です。 既定により、テナント管理者 (グローバル管理者) はこの場所にアクセスでき、コンプライアンス責任者やその他のユーザーにテナント管理者のすべての権限を与えることなくアクセスできます。この制限された管理に権限を付与するには、ユーザーを [**コンプライアンス管理者**] の管理者役割グループに追加することをお勧めします。
 
-この既定の役割を使用する代わりに、新しい役割グループを作成し、このグループに **保持管理** 役割を追加することもできます。 読み取り専用の役割の場合は、**閲覧限定の保持管理** を使用します。 
+この既定の役割を使用する代わりに、新しい役割グループを作成し、**保持管理** の役割をこのグループに追加することもできます。読み取り専用の役割の場合は、**閲覧限定保持管理** を使用します。 
 
 ユーザーを既定の役割に追加する手順、または独自の役割グループを作成する手順については、「[Microsoft 365 コンプライアンス センターのアクセス許可](microsoft-365-compliance-center-permissions.md)」を参照してください。
 
@@ -77,7 +77,7 @@ Microsoft 365 コンプライアンス機能のメリットを得られるよう
 | 保持および削除設定がアイテムに適用される方法と場所を監視する | [保持ラベルの監視](retention.md#monitoring-retention-labels) |
 |ドキュメントとメールに対して 1 つのレコード管理ソリューションを使用する |[レコード管理の詳細](records-management.md) |
 
-レコード管理用の保持ラベルを使用する場合、コンテンツをレコードとしてマークする保持ラベルに固有の追加のシナリオがあります。 「[レコード管理の一般的なシナリオ](get-started-with-records-management.md#common-scenarios-for-records-management)」を参照してください。
+レコード管理用の保持ラベルを使用する場合、コンテンツをレコードとしてマークする保持ラベルに固有の追加のシナリオがあります。「[レコード管理の一般的なシナリオ](get-started-with-records-management.md#common-scenarios-for-records-management)」を参照してください。
 
 ## <a name="end-user-documentation-for-retention"></a>データ保持に関するエンド ユーザー向けのドキュメント
 

@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Yammer に適用されるアイテム保持ポリシーについて説明します。
-ms.openlocfilehash: 352c66ad34508d06d4673dab4ebc2b98a27649d7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ea1638b3dd97c97354eff64d0e33d6a4b84a0313
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216563"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175109"
 ---
 # <a name="learn-about-retention-for-yammer"></a>Yammer の保持の詳細
 
@@ -64,7 +64,7 @@ Yammer で使用するファイルは、Yammer のアイテム保持ポリシー
 > 
 > ただし、元のメッセージのコピーは、コミュニティ グループ メールボックスの隠しフォルダーに引き続き存在し、コンプライアンスの目的で電子情報開示検索を使用してアクセスできます。
 
-Yammer のメッセージは、Exchange メールボックスに対して構成されているアイテム保持ポリシーの影響を受けません。 Yammer のメッセージは Exchange に保存されますが、この Yammer のデータは、**Yammer コミュニティのメッセージ** と **Yammer ユーザーのメッセージ** の場所に対して構成されているアイテム保持ポリシーによってのみ含まれます。
+Yammer メッセージは、Exchange メールボックス用に構成されているアイテム保持ポリシーの影響を受けません。Yammer メッセージは Exchange に保存されますが、この Yammer データは、**Yammer コミュニティ メッセージ** および **Yammer ユーザー メッセージ** の場所に対して構成されているアイテム保持ポリシーにのみ含まれます。
 
 > [!NOTE]
 > ユーザーが Yammer のデータを保持するアクティブなアイテム保持ポリシーに含まれている場合、このポリシーに含まれるユーザーのメールボックスを削除すると、Yammer のデータを保持するためにメールボックスは[非アクティブなメールボックス](inactive-mailboxes-in-office-365.md)に変換されます。 ユーザーのこの Yammer データを保持する必要がない場合は、メールボックスを削除する前に、アイテム保持ポリシーからそのユーザー アカウントを除外します。
@@ -93,7 +93,7 @@ Yammer メッセージのアイテム保持ポリシーが構成されると、E
 
 ### <a name="content-paths-for-retain-only-retention-policy"></a>アイテム保持ポリシーが保持のみのコンテンツ パス
 
-1. **Yammer メッセージが編集または削除された場合**、元のメッセージのコピーは直ちに SubstrateHolds フォルダに作成され、保持期間が満了するまでそこに保持されます。 その後直ちに、メッセージは SubstrateHolds フォルダから完全に削除されます。
+1. **Yammer メッセージが編集または削除された場合**: 元のメッセージのコピーが直ちに SubstrateHolds フォルダーに作成され、保持期間が終了するまで保持されます。その後、メッセージはすぐに SubstrateHolds フォルダーから完全に削除されます。
 
 2. **Yammer メッセージが変更または削除されていない場合**、および保持期間中に編集した後の現在のメッセージの場合は、保持期間の前後には何も起こらず、メッセージは元の場所に残ります。
 

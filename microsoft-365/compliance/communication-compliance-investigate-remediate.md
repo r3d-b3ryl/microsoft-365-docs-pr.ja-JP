@@ -11,19 +11,19 @@ ms.topic: article
 f1_keywords:
 - ms.o365.cc.SupervisoryReview
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 416cd6da85877e2e448e65f3f71b68f8554bf347
-ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
+ms.openlocfilehash: fffa25e39b5622e0ad314a8e7f6ef4b042b7fd26
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/21/2021
-ms.locfileid: "59460270"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192357"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>通信コンプライアンスのアラートを調査して修復する
 

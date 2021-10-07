@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a9397eeaf9edd58903a50cf3f9194b995c56d216
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e74989d85919e0f8c89f28e67c5bbbf7cec7ff04
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164935"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191673"
 ---
 # <a name="event-timeline---threat-and-vulnerability-management"></a>イベントタイムライン - 脅威と脆弱性の管理
 
@@ -84,7 +84,7 @@ ms.locfileid: "59164935"
 
 ![イベント タイムライン ページ。](images/tvm-event-timeline-overview-mixed-type.png)
 
-### <a name="columns"></a>列
+### <a name="columns"></a>段組み
 
 - **日付**: 月、日、年
 - **イベント**: 影響を受けのあるイベント (コンポーネント、種類、影響を受け取ったデバイスの数を含む)
@@ -130,7 +130,7 @@ ms.locfileid: "59164935"
 
 ![[イベント タイムライン] タブを含むソフトウェア ページ。](images/tvm-event-timeline-software-pages.png)
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [ダッシュボード](tvm-dashboard-insights.md)

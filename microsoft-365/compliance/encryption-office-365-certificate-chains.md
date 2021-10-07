@@ -9,7 +9,7 @@ ms.date: 2/1/2021
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: ルート証明書と証明機関 (CA) の完全な一覧を、Microsoft 365。
-ms.openlocfilehash: ab4ca6f92407659b96e177161e0fd0c2847a890c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 65e71ad941c052fecca9d3c3817bbbb0a3a278d5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177984"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194455"
 ---
 # <a name="microsoft-365-encryption-chains"></a>Microsoft 365暗号化チェーン
 
@@ -44,7 +44,7 @@ Microsoft 365さまざまな証明書プロバイダーを活用します。 次
 
 ### <a name="baltimore-cybertrust-root"></a>**Baltimore CyberTrust Root**
 
-| **件名** | CN=ボルチモア サイバートラスト ルート<br>OU=CyberTrust<br>O=ボルチモア<br>C=IE |
+| **[件名]** | CN=ボルチモア サイバートラスト ルート<br>OU=CyberTrust<br>O=ボルチモア<br>C=IE |
 | --- | --- |
 | **シリアル番号** | 02:00:00:B9 |
 | **公開キーの長さ** | RSA 2048 ビット (e 65537) |
@@ -176,7 +176,7 @@ Microsoft 365さまざまな証明書プロバイダーを活用します。 次
 
 ### <a name="entrustnet-certification-authority-2048"></a>**Entrust.net Certification Authority (2048)**
 
-| **件名** | CN=Entrust.net 証明機関 (2048)<br>OU=(c) 1999 Entrust.net Limited<br>OU=www.entrust.net/CPS \_ 2048 incorp. by ref. (limit s liab.)<br>O=Entrust.net |
+| **[件名]** | CN=Entrust.net 証明機関 (2048)<br>OU=(c) 1999 Entrust.net Limited<br>OU=www.entrust.net/CPS \_ 2048 incorp. by ref. (limit s liab.)<br>O=Entrust.net |
 | --- | --- |
 | **シリアル番号** | 38:63:DE:F8 |
 | **公開キーの長さ** | RSA 2048 ビット (e 65537) |
@@ -204,7 +204,7 @@ Microsoft 365さまざまな証明書プロバイダーを活用します。 次
 
 ### <a name="globalsign-root-ca---r3"></a>**GlobalSign ルート CA - R3**
 
-| **件名** | CN=GlobalSign<br>O=GlobalSign<br>OU=GlobalSign ルート CA - R3 |
+| **[件名]** | CN=GlobalSign<br>O=GlobalSign<br>OU=GlobalSign ルート CA - R3 |
 | --- | --- |
 | **発行者** | CN=GlobalSign、O=GlobalSign、OU=GlobalSign ルート CA - R3 |
 | **シリアル番号** | 04:00:00:00:00:01:21:58:53:08:A2 |
@@ -268,7 +268,7 @@ Microsoft 365さまざまな証明書プロバイダーを活用します。 次
 
 ### <a name="d-trust-ssl-class-3-ca-1-2009"></a>**D-TRUST SSL クラス 3 CA 1 2009**
 
-| **[件名]** | CN=D-TRUST SSL クラス 3 CA 1 2009<br>O=D-Trust GmbH<br>C=DE |
+| **件名** | CN=D-TRUST SSL クラス 3 CA 1 2009<br>O=D-Trust GmbH<br>C=DE |
 | --- | --- |
 | **発行者** | CN=D-TRUST ルート クラス 3 CA 2 2009<br>O=D-Trust GmbH<br>C=DE |
 | **サブジェクトの代替名** | RFC822 Name=info@d-trust.net<br>URL=http://www.d-trust.net |
@@ -287,7 +287,7 @@ Microsoft 365さまざまな証明書プロバイダーを活用します。 次
 
 ### <a name="d-trust-ssl-class-3-ca-1-ev-2009"></a>**D-TRUST SSL クラス 3 CA 1 EV 2009**
 
-| **[件名]** | CN=D-TRUST SSL Class 3 CA 1 EV 2009<br>O=D-Trust GmbH<br>C=DE |
+| **件名** | CN=D-TRUST SSL Class 3 CA 1 EV 2009<br>O=D-Trust GmbH<br>C=DE |
 | --- | --- |
 | **発行者** | CN=D-TRUST ルート クラス 3 CA 2 EV 2009<br>O=D-Trust GmbH<br>C=DE |
 | **サブジェクトの代替名** | RFC822 Name=info@d-trust.net<br>URL=http://www.d-trust.net |
@@ -359,7 +359,7 @@ Microsoft 365さまざまな証明書プロバイダーを活用します。 次
 
 ### <a name="digicert-sha2-extended-validation-server-ca"></a>**DigiCert SHA2 拡張検証サーバー CA**
 
-| **[件名]** | CN=DigiCert SHA2 拡張検証サーバー CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
+| **件名** | CN=DigiCert SHA2 拡張検証サーバー CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
 | **発行者** | CN=DigiCert High Assurance EV Root CA, OU=www.digicert.com, O=DigiCert Inc, C=US |
 | **シリアル番号** | 0C:79:A9:44:B0:8C:11:95:20:92:61:5F:E2:6B:1D:83 |
@@ -394,7 +394,7 @@ Microsoft 365さまざまな証明書プロバイダーを活用します。 次
 
 ### <a name="digicert-sha2-secure-server-ca"></a>**DigiCert SHA2 Secure Server CA**
 
-| **件名** | CN=DigiCert SHA2 Secure Server CA<br>O=DigiCert Inc<br>C=US |
+| **[件名]** | CN=DigiCert SHA2 Secure Server CA<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
 | **発行者** | CN=DigiCert グローバル ルート CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
 | **シリアル番号** | 01:FD:A3:EB:6E:CA:75:C8:88:43:8B:72:4B:CF:BC:91 |
@@ -446,7 +446,7 @@ Microsoft 365さまざまな証明書プロバイダーを活用します。 次
 
 ### <a name="entrust-certification-authority---l1c"></a>**証明機関の委託 - L1C**
 
-| **[件名]** | CN=Entrust 証明機関 - L1C<br>OU= &quot; (c) 2009 Entrust, Inc.&quot;<br>OU=www.entrust.net/rpa は参照によって組み込まれる<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
+| **件名** | CN=Entrust 証明機関 - L1C<br>OU= &quot; (c) 2009 Entrust, Inc.&quot;<br>OU=www.entrust.net/rpa は参照によって組み込まれる<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
 | --- | --- |
 | **発行者** | CN=Entrust.net 証明機関 (2048)<br>OU=(c) 1999 Entrust.net Limited<br>OU=www.entrust.net/CPS \_ 2048 incorp. ref. (liab を制限します)。<br>O=Entrust.net |
 | **シリアル番号** | 4C:0E:8C:39 |
@@ -571,7 +571,7 @@ Microsoft 365さまざまな証明書プロバイダーを活用します。 次
 
 ### <a name="globalsign-rsa-ov-ssl-ca-2018"></a>**GlobalSign RSA OV SSL CA 2018**
 
-| **[件名]** | CN=GlobalSign RSA OV SSL CA 2018<br>O=GlobalSign nv-sa<br>C=BE |
+| **件名** | CN=GlobalSign RSA OV SSL CA 2018<br>O=GlobalSign nv-sa<br>C=BE |
 | --- | --- |
 | **発行者** | CN=GlobalSign、O=GlobalSign、OU=GlobalSign ルート CA - R3 |
 | **シリアル番号** | 01:Enterprise Edition:5F:22:1D:FC:62:3B:D4:33:3A:85:57 |
@@ -624,7 +624,7 @@ Microsoft 365さまざまな証明書プロバイダーを活用します。 次
 
 ### <a name="microsoft-azure-tls-issuing-ca-02"></a>**Microsoft AzureTLS 発行 CA 02**
 
-| **[件名]** | CN=Microsoft Azure TLS 発行 CA 02<br>O=Microsoft Corporation<br>C=US |
+| **件名** | CN=Microsoft Azure TLS 発行 CA 02<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
 | **発行者** | CN=DigiCert Global Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US |
 | **シリアル番号** | 0C:6A:E9:7C:CE:D5:99:83:86:90:A0:0A:9E:A5:32:14 |
@@ -641,7 +641,7 @@ Microsoft 365さまざまな証明書プロバイダーを活用します。 次
 
 ### <a name="microsoft-azure-tls-issuing-ca-05"></a>**Microsoft AzureTLS 発行 CA 05**
 
-| **[件名]** | CN=Microsoft Azure TLS 発行 CA 05<br>O=Microsoft Corporation<br>C=US |
+| **件名** | CN=Microsoft Azure TLS 発行 CA 05<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
 | **発行者** | CN=DigiCert Global Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US |
 | **シリアル番号** | 0D:7B:ED:E9:7D:82:09:96:7A:52:63:1B:8B:DD:18:BD |
@@ -693,7 +693,7 @@ Microsoft 365さまざまな証明書プロバイダーを活用します。 次
 
 ### <a name="microsoft-it-tls-ca-2"></a>**Microsoft IT TLS CA 2**
 
-| **件名** | CN=Microsoft IT TLS CA 2<br>OU=Microsoft IT<br>O=Microsoft Corporation<br>L=Redmond<br>S=Washington<br>C=US |
+| **[件名]** | CN=Microsoft IT TLS CA 2<br>OU=Microsoft IT<br>O=Microsoft Corporation<br>L=Redmond<br>S=Washington<br>C=US |
 | --- | --- |
 | **発行者** | CN=ボルチモア サイバートラスト ルート<br>OU=CyberTrust<br>O=ボルチモア<br>C=IE |
 | **シリアル番号** | 0F:2C:10:C9:5B:06:C0:93:7F:B8:D4:49:F8:3E:85:69 |
@@ -711,7 +711,7 @@ Microsoft 365さまざまな証明書プロバイダーを活用します。 次
 
 ### <a name="microsoft-it-tls-ca-4"></a>**Microsoft IT TLS CA 4**
 
-| **[件名]** | CN=Microsoft IT TLS CA 4<br>OU=Microsoft IT<br>O=Microsoft Corporation<br>L=Redmond<br>S=Washington<br>C=US |
+| **件名** | CN=Microsoft IT TLS CA 4<br>OU=Microsoft IT<br>O=Microsoft Corporation<br>L=Redmond<br>S=Washington<br>C=US |
 | --- | --- |
 | **発行者** | CN=ボルチモア サイバートラスト ルート<br>OU=CyberTrust<br>O=ボルチモア<br>C=IE |
 | **シリアル番号** | 0B:6A:B3:B0:B0:3E:B1:A9:F6:C4:60:92:6A:A8:CD:FE:B3 |
@@ -729,7 +729,7 @@ Microsoft 365さまざまな証明書プロバイダーを活用します。 次
 
 ### <a name="microsoft-it-tls-ca-5"></a>**Microsoft IT TLS CA 5**
 
-| **件名** | CN=Microsoft IT TLS CA 5<br>OU=Microsoft IT<br>O=Microsoft Corporation<br>L=Redmond<br>S=Washington<br>C=US |
+| **[件名]** | CN=Microsoft IT TLS CA 5<br>OU=Microsoft IT<br>O=Microsoft Corporation<br>L=Redmond<br>S=Washington<br>C=US |
 | --- | --- |
 | **発行者** | CN=ボルチモア サイバートラスト ルート<br>OU=CyberTrust<br>O=ボルチモア<br>C=IE |
 | **シリアル番号** | 08:88:CD:52:5F:19:24:44:4D:14:A5:82:91:DE:B9:52 |
@@ -800,7 +800,7 @@ Microsoft 365さまざまな証明書プロバイダーを活用します。 次
 
 ### <a name="symantec-class-3-secure-server-ca---g4"></a>**Symantec クラス 3 Secure Server CA - G4**
 
-| **件名** | CN=Symantec Class 3 Secure Server CA - G4<br>OU=Symantec Trust Network<br>O=Symantec Corporation<br>C=US |
+| **[件名]** | CN=Symantec Class 3 Secure Server CA - G4<br>OU=Symantec Trust Network<br>O=Symantec Corporation<br>C=US |
 | --- | --- |
 | **発行者** | CN=VeriSign クラス 3 パブリックプライマリ証明機関 - G5<br>OU= &quot; (c) 2006 VeriSign, Inc. - 承認された使用のみ&quot;<br>OU=VeriSign Trust Network<br>O= &quot; VeriSign, Inc.&quot;<br>C=US |
 | **サブジェクトの代替名** | ディレクトリ アドレス: CN=SymantecPKI-1-534 |
@@ -819,7 +819,7 @@ Microsoft 365さまざまな証明書プロバイダーを活用します。 次
 
 ### <a name="thawte-sha256-ssl-ca"></a>**SHA256 SSL CA を解凍する**
 
-| **件名** | CN=解凍 SHA256 SSL CA<br>O= &quot; thawte, Inc.&quot;<br>C=US |
+| **[件名]** | CN=解凍 SHA256 SSL CA<br>O= &quot; thawte, Inc.&quot;<br>C=US |
 | --- | --- |
 | **発行者** | CN=thawte プライマリ ルート CA - G3<br>OU= &quot; (c) 2008 thawte, Inc. - 承認された使用のみ&quot;<br>OU=認定サービス部門<br>O= &quot; thawte, Inc.&quot;<br>C=US |
 | **サブジェクトの代替名** | ディレクトリ アドレス: CN=VeriSignMPKI-2-415 |

@@ -7,7 +7,7 @@ ms.date: 09/28/2021
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -20,12 +20,12 @@ search.appverid: MET150
 ms.assetid: cbd2369c-fd96-464c-bf48-c99826b459ee
 description: この記事では、米国政府機関の高いプランを使用しているOffice 365エンドポイントGCC見つける予定です。
 hideEdit: true
-ms.openlocfilehash: ff4681d3b6c880482a6c1aa685f2c413138f05ea
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: a2546f4a6c1f28d7203f76fb8c7f44d4d7364279
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60008835"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195391"
 ---
 # <a name="office-365-us-government-gcc-high-endpoints"></a>Office 365 米国政府機関の高 GCC エンドポイント
 
@@ -41,7 +41,7 @@ Office 365 にはインターネットへの接続が必要です。 以下の�
 
 |備考|ダウンロード|
 |---|---|
-|**最終更新日:** 09/28/2021 - ![ RSS。](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [ログ サブスクリプションの変更](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**ダウンロード:** JSON 形式の完全な [リスト](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|
+|**最終更新日:** 2021 年 9 月 28 日 - ![RSS](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [ログ サブスクリプションの変更](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**ダウンロード:** JSON 形式の完全な [リスト](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|
 |
 
  [Office 365 エンドポイントの管理](managing-office-365-endpoints.md)から始めて、このデータを使用してネットワーク接続を管理するための推奨事項を理解してください。 エンドポイントのデータは、毎月初めに必要に応じて更新され、アクティブになる 30 日前に新しい IP アドレスと URL が公開されます。 これにより、新しい接続が必要になる前に、まだ自動更新プログラムを持っていないお客様がプロセスを完了できます。 サポートの拡大、セキュリティ上の問題、その他の緊急な運用要件に対処する為に必要な場合にも、その月の間にエンドポイントを更新する可能性があります。 以下のこのページに示されているデータはすべて、REST ベースの Web サービスから生成されています。 スクリプトまたはネットワーク デバイスを使用してこのデータにアクセスしている場合は、[Web サービス](microsoft-365-ip-web-service.md)に直接アクセスする必要があります。

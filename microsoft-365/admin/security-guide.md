@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.custom:
 - SMB_SuccessCenter
 - seo-marvel-mar
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ビジネスが直面するセキュリティ上の脅威と、ユーザーと従業員がデータ、アカウント、デバイスを簡単に保護する方法について学ぶ。
-ms.openlocfilehash: f5b31fe2056e95ae4477480ac16e80222beeb565
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 625fe763a8e1d2c6e0d4748fd96185d9bf654ee3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566906"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191231"
 ---
 # <a name="security-info-graphic-for-small-businesses"></a>中小企業向けセキュリティ情報グラフィック
 

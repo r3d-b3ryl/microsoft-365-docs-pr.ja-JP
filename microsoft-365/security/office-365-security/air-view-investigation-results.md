@@ -8,7 +8,7 @@ ms.author: josephd
 manager: dansimp
 audience: ITPro
 ms.topic: article
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -19,12 +19,12 @@ description: ワークフローの自動調査中およびMicrosoft 365結果と
 ms.date: 01/29/2021
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ef91a3b218c2dda671bf7d07bf2615001bd20ebc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 80c58c0e4c084199537dcfbb9097541a0cba71a0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192400"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191421"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>自動調査の詳細と結果Microsoft 365
 

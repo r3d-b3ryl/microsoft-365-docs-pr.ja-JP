@@ -8,25 +8,25 @@ ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
 description: Configuration Manager を使用してデバイスに構成パッケージを展開し、サービスにオンボードします。
-ms.openlocfilehash: 309f6b7ee396baba0fcec0061d48f062510d7350
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 15561e21dd93f8742dea48cf8c2eac2eef7e13fe
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59193061"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194515"
 ---
 # <a name="onboard-windows-10-devices-using-configuration-manager"></a>Configuration Manager を使用した Windows 10 デバイスのオンボード
 
 **適用対象:**
 
 - [Microsoft 365エンドポイント データ損失防止 (DLP)](./endpoint-dlp-learn-about.md)
-- System Center 2012 R2 構成マネージャー
+- System Center 2012 R2 Configuration Manager
 
 ### <a name="onboard-devices-using-system-center-configuration-manager"></a>デバイスを使用したオンボード System Center Configuration Manager
 
@@ -201,7 +201,7 @@ Value: “1”
 ```
 詳細については[、「2012 R2](/previous-versions/system-center/system-center-2012-R2/gg682139(v=technet.10))Configuration Manager のコンプライアンスSystem Center概要」を参照してください。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [グループ ポリシー Windows 10デバイスのオンボード](dlp-configure-endpoints-gp.md)
 - [モバイル デバイス管理ツールを使用した Windows 10 デバイスのオンボード](dlp-configure-endpoints-mdm.md)
 - [ローカル スクリプトを使用した Windows 10 デバイスのオンボード](dlp-configure-endpoints-script.md)

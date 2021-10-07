@@ -11,14 +11,14 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
-localization_priority: Priority
+ms.localizationpriority: medium
 description: Microsoft SharePoint Syntex で抽出子の名前を変更する方法および理由について説明します。
-ms.openlocfilehash: a34420872b6dfdf684a1a640dd8b98261e86ae22
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
-ms.translationtype: HT
+ms.openlocfilehash: 0b5c52e00b287b6f4b41e7c8c3070261bccfda96
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221766"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195451"
 ---
 # <a name="rename-an-extractor-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex で抽出子の名前を変更する
 

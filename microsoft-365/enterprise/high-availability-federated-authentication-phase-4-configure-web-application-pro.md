@@ -7,19 +7,19 @@ ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
 description: '概要: 高可用性フェデレーション認証用に Web アプリケーション プロキシ サーバーを構成し、Microsoft 365をMicrosoft Azure。'
-ms.openlocfilehash: 17efeb414208afac9ce9dcb0b7136a4c962a0268
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ea50a48fe4bebd997ecf6b472a60e57772bf2b0f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165359"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195403"
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>高可用性フェデレーション認証のフェーズ 4: Web アプリケーション プロキシを構成する
 

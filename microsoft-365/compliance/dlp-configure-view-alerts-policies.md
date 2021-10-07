@@ -11,7 +11,7 @@ ms.topic: article
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: データ損失防止ポリシーのアラートを定義および管理する方法について説明します。
-ms.openlocfilehash: ee04f6080edcde86dc39c7f4aa43130223fee8bf
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1692467ac882b563cedd51ad3770312ba883ccd9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59193011"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194503"
 ---
 # <a name="configure-and-view-alerts-for-data-loss-prevention-polices"></a>データ損失防止ポリシーのアラートを構成および表示する
 
@@ -46,7 +46,7 @@ ms.locfileid: "59193011"
     -   デバイス
 -   **高度なアラート構成オプション**: これらのオプションは、DLP ポリシー作成フローの一部です。 それらを使用して、リッチ アラート構成を作成します。 イベントの数または漏洩したデータのサイズに基づいて、単一イベントアラートまたは集約アラートを作成できます。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 開始する前に、必要な前提条件が満たされていることを確認してください。
 
@@ -117,10 +117,10 @@ DLP アラート管理ダッシュボードを操作するには、次の操作�
     |-------------------|-------------------------------|----------------------------------------------------------------------------|------------------------------------------|
     |*イベントの詳細*||
     |      | ID                            | イベントに関連付けられた一意の ID                                        | すべてのイベント                               |
-    |                   | 場所                      | イベントが検出されたワークロード                                      | すべてのイベント                               |
+    |                   | Location                      | イベントが検出されたワークロード                                      | すべてのイベント                               |
     |                   | アクティビティの時間              | DLP 違反を引き起こしたユーザー アクティビティの時間                    | すべてのイベント                               |
     |*影響を受け取ったエンティティ*||
-    |  | User                          | DLP 違反を引き起こしたユーザー                                          | すべてのイベント                               |
+    |  | ユーザー                          | DLP 違反を引き起こしたユーザー                                          | すべてのイベント                               |
     |                   | ホスト名                      | DLP 違反が検出されたコンピューターのホスト名              | デバイス イベント                           |
     |                   | IP アドレス                    | コンピューターの IP アドレス                                                  | デバイス イベント                           |
     |                   | ファイル パス                     | 違反に関連するファイルの絶対パス                        | SharePoint、OneDrive、デバイスイベント |

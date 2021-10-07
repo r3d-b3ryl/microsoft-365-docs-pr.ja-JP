@@ -9,15 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-localization_priority: Normal
+ms.localizationpriority: medium
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: bd7c571787ed37aa30f08ff44f16298dd1ab7914
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4d1cfff07a5d97f22cd48b5508f375d195b0568e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178399"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194851"
 ---
 # <a name="contact-support-for-vanuatu"></a>バヌアツのサポートに問い合わせ
 

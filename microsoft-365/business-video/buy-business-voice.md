@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 新しいアドオンを購入Microsoft 365 Business Voiceする方法について学習します。
-ms.openlocfilehash: 90d0aae474fa3bd95ffeb1d0ec104268af5edc27
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: cf563026eea82d5c0b4ad6af7855644bdac8ff60
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221250"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179765"
 ---
 # <a name="buy-business-voice"></a>ビジネスボイスの購入
 
@@ -45,7 +45,7 @@ ms.locfileid: "59221250"
 1. [ **自動再充電] を選択** して、必要に応じて通信クレジットを購入し、サービスの中断を回避します。
 
     通信クレジットは、国際通話、フリーダイヤル番号、追加通話分に使用されます。
-1. [**次へ**] を選択します。
+1. **[次へ]** を選択します。
 1. 支払い方法を確認します。
 1. [注文 **の配置] と [続行]** **の順に選択します**。
 

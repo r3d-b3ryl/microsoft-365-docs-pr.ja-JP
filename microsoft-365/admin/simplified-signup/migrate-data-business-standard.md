@@ -8,17 +8,18 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
-ms.collection: ''
+ms.localizationpriority: medium
+ms.collection:
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 description: データをOutlook、OneDrive、Teamsに移行Microsoft 365 Business Standard
-ms.openlocfilehash: 2cec4a98172fe472d48c7726cb8b0c1887d88a6f
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: fcd3047014204c1115481dfd411be502a7409fb9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775950"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196163"
 ---
 # <a name="migrate-data-to-my-microsoft-365-business-standard-subscription"></a>データを Microsoft 365 Business Standard サブスクリプションに移行する
 

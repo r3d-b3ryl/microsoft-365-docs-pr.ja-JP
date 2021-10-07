@@ -7,7 +7,7 @@ ms.date: 6/26/2018
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - SPO_Content
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099
 description: Azure ExpressRoute で BGP コミュニティを使用して、複数のシナリオで必要な IP プレフィックスと必要な帯域幅の数を管理するOffice 365します。
-ms.openlocfilehash: 9cb6980c1d8cc120f99cac087602856aeacf1adf
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: afcbbbebda8dcc7c9425831b44f0d95f0eca5a18
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177800"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195415"
 ---
 # <a name="using-bgp-communities-in-expressroute-for-office-365-scenarios"></a>ExpressRoute での BGP コミュニティの使用によるOffice 365シナリオ
 
@@ -42,7 +42,7 @@ Azure ExpressRoute Office 365を使用したネットワークへの接続は、
 > [!NOTE]
 > 他のアプリケーションに関連付けられている一部のネットワーク トラフィックがコミュニティ値に含まれると予想する必要があります。 これは、共有サービスとデータセンターを備えたグローバル なソフトウェア as a Service オファリングに対して期待される動作です。 これは、上記の 2 つの目標で可能な限り最小限に抑え、プレフィックス数や帯域幅を管理します。
 
-|**サービス**|**BGP Community値**|**メモ**|
+|**サービス**|**BGP Community値**|**注**|
 |:-----|:-----|:-----|
 |Exchange Online\*  <br/> |12076:5010  <br/> |サービスExchange EOP サービスを含む\*  <br/> |
 |SharePoint Online\*  <br/> |12076:5020  <br/> |SharePoint Online  <br/> |
@@ -63,7 +63,7 @@ Contoso Corporation は 50,000 人の会社で、現在はオンラインおよ�
 |SharePoint  <br/> (12076:5020)  <br/> |SharePointオンライン &amp; OneDrive for Business  <br/> | &amp;DNS、CRL、CDN要求  <br/>  Azure ExpressRoute でOffice 365サポートされていない他のすべてのサービス  <br/>  その他のすべての Microsoft クラウド サービス  <br/>  Office 365ポータル、Office 365認証、Office &amp; ブラウザーでの認証  <br/>  Exchange Online、Exchange Online Protection、および Skype for Business Online  <br/> |
 
 > [!NOTE]
-> 各サービスのプレフィックス数を削減するために、サービス間の重複は最小限に抑えられます。 これは想定された動作です。
+> 各サービスのプレフィックス数を削減するために、サービス間の重複は最小限に抑えられます。 この動作は仕様です。
   
 ### <a name="scenario-2-scoping-expressroute-and-internal-bandwidth-use-to-some-office-365-services"></a>シナリオ 2: ExpressRoute と内部帯域幅の使用を一部のサービスにOffice 365する
 

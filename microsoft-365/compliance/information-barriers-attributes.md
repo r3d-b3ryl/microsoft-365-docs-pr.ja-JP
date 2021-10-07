@@ -1,5 +1,5 @@
 ---
-title: 情報バリア属性
+title: 情報バリアの属性
 description: この記事は、情報バリア Azure Active Directory定義するために使用できるユーザー アカウント属性のリファレンスです。
 ms.author: robmazz
 author: robmazz
@@ -9,18 +9,18 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
-localization_priority: None
+ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e4309b7973b3f74ba43d178b6761449c91856d06
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: 33143e85bf17a707ade6dd0d6d0c66886fd85373
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59443949"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179153"
 ---
-# <a name="information-barriers-attributes"></a>情報バリア属性
+# <a name="information-barriers-attributes"></a>情報バリアの属性
 
 ユーザーをセグメント化Azure Active Directory特定の属性を使用できます。 セグメントを定義すると、これらのセグメントを情報バリア ポリシーのフィルターとして使用できます。 たとえば、部門を使用して組織内の部署別にユーザーのセグメントを定義できます (2 つの部門で同時に 1 人の従業員が働かされていないと仮定します)。
 
@@ -82,7 +82,7 @@ ms.locfileid: "59443949"
 | MSExchExtensionCustomAttribute3 | ExtensionCustomAttribute3 |
 | MSExchExtensionCustomAttribute4 | ExtensionCustomAttribute4 |
 | MSExchExtensionCustomAttribute5 | ExtensionCustomAttribute5 |
-| MailNickname | エイリアス |
+| MailNickname | Alias |
 | PhysicalDeliveryOfficeName | Office |
 | PostalCode | PostalCode |
 | ProxyAddresses | EmailAddresses |

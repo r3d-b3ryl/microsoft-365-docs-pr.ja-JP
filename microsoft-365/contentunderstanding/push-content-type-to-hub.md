@@ -11,13 +11,13 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
-localization_priority: Priority
-ms.openlocfilehash: 22d146b1d376bab134e82ad7d1313cb7881ca45b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.localizationpriority: high
+ms.openlocfilehash: bf16a9700cd2d171486caacf7037f34e9fbacf7f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221789"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195439"
 ---
 # <a name="push-content-types-to-a-hub"></a>コンテンツ タイプをハブにプッシュする
 

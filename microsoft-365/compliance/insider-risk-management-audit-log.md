@@ -2,7 +2,7 @@
 title: Insider リスク管理監査ログ
 description: インサイダー リスク管理監査ログの詳細については、Microsoft 365
 keywords: Microsoft 365, インサイダー リスク管理, リスク管理, コンプライアンス
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 6fa7ab5b30a4cfad8ec4305c0ddf8fcda1c6f284
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9355c3e41025ae8002bc9d40fc4ff06333c72e94
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191331"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179081"
 ---
 # <a name="insider-risk-management-audit-log"></a>Insider リスク管理監査ログ
 
@@ -32,7 +32,7 @@ ms.locfileid: "59191331"
 - ポリシー
 - ケース
 - アラート
-- 設定
+- Settings
 - ユーザー
 - 通知テンプレート
 

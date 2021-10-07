@@ -4,17 +4,17 @@ description: アプリをデバイスに追加および展開Microsoft マネー
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント、アプリ、line-of-business アプリ、LOB アプリ
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: bcb1c85e533ae691c34d41bd6694e58c49617738
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a84f6e13a7c189ce4cd33f308e765e5c59dae374
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215483"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195235"
 ---
 # <a name="deploy-apps-to-devices"></a>アプリをデバイスに展開する
 アプリのオンボーディングのMicrosoft マネージド デスクトップユーザーのデバイスへのアプリの追加と展開が含まれます。 アプリ ポータルを使用Microsoft マネージド デスクトップ、アプリを追加して展開できます。 
@@ -50,7 +50,7 @@ ms.locfileid: "59215483"
 
 <span id="msfb-apps">
 
-### <a name="microsoft-store-for-business-apps"></a>ビジネス向け Microsoft Storeアプリ
+### <a name="microsoft-store-for-business-apps"></a>ビジネス向け Microsoft Store アプリ
 アプリにサインアップしていないビジネス向け Microsoft Store、アプリを購入するときにサインアップできます。 アプリを作成した後、アプリとアプリを同期Microsoft マネージド デスクトップ。 
 
 **アプリをアプリから購入ビジネス向け Microsoft Store**
@@ -79,7 +79,7 @@ ms.locfileid: "59215483"
 
 アプリの割り当ての種類 |    グループの使用    | Azure の名前AD例
 --- | --- | ---
-Available |  アプリは、アプリまたは web サイトポータル サイト利用できます。 | MMD – *アプリ名* – 使用可能
+使用可能 |  アプリは、アプリまたは web サイトポータル サイト利用できます。 | MMD – *アプリ名* – 使用可能
 必須 |  アプリは、選択したグループ内のデバイスにインストールされます。 | MMD – *アプリ名* – 必須
 アンインストール |  アプリは、選択したグループ内のデバイスからアンインストールされます。 | MMD – *アプリ名* – アンインストール
 

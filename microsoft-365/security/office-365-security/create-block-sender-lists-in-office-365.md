@@ -8,18 +8,18 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150s
 description: 管理者は、受信メッセージ (EOP) をブロックするための使用可能なオプションと優先Exchange Online Protectionできます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c844378a19ba7995cbd616f615e8a84994f9bf26
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 551e017abc864e82c9d81f710cebbd9da54595ca
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211774"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191409"
 ---
 # <a name="create-blocked-sender-lists-in-eop"></a>EOP で受信拒否リストを作成する
 

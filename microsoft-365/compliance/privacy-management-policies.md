@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - M365-privacy-management
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 組織の個人データを処理するためのポリシーを作成および管理する方法について説明します。Microsoft 365通知への対応、および問題の修復を行います。
-ms.openlocfilehash: 49f772119cfc25284fecd66b2f3a79e063f11c09
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: dec7fd3692330dc267bace22451f1dc65ccd8fd9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177856"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179021"
 ---
 # <a name="create-and-manage-policies-in-privacy-management-preview"></a>プライバシー管理でポリシーを作成および管理する (プレビュー)
 

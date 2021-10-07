@@ -9,19 +9,19 @@ audience: Admin
 ms.topic: tutorial
 ms.prod: m365-security
 ms.technology: m365d
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
 - remotework
 description: ランサムウェア、フィッシング、悪意のある添付ファイルなどのサイバー脅威からビジネス メールとデータを保護します。
-ms.openlocfilehash: 8eccf38756a8f9d3686c8d1f3c05ac6065a54aca
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 1c3dc7f06a8fbb214ffc12bcf506da7df4c0422a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59355993"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191385"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>自宅での作業をサポートするセキュリティ チームの上位 12 のタスク
 
@@ -47,7 +47,7 @@ Microsoft のエンタープライズ プランを使用しているお客様は
 |2|[脅威からの保護](#2-protect-against-threats)|![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |3|[Microsoft Defender for Office 365](#3-configure-microsoft-defender-for-office-365)|||![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |4 |[Id の Microsoft Defender を構成する](#4-configure-microsoft-defender-for-identity)|||![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|5 |[Microsoft 365 Defender を有効にする](#5-turn-on-microsoft-365-defender)|||![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|5|[Microsoft 365 Defender を有効にする](#5-turn-on-microsoft-365-defender)|||![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |6 |[電話とタブレットの Intune モバイル アプリ保護を構成する](#6-configure-intune-mobile-app-protection-for-phones-and-tablets)||![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |7 |[Intune アプリ保護を含む、ゲストの MFA と条件付きアクセスを構成する](#7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection)||![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |8 |[デバイス管理に PC を登録し、準拠している PC を必要とする](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)||![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
@@ -71,7 +71,7 @@ Microsoft のエンタープライズ プランを使用しているお客様は
 
 ****
 
-|プラン|推奨事項|
+|計画|推奨事項|
 |---|---|
 |Microsoft 365プラン (Azure AD P1 または P2 なし)|[Azure AD でセキュリティの既定値を有効にします](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。 Azure AD のセキュリティの既定値には、ユーザーと管理者用の MFA が含まれています。|
 |Microsoft 365 E3 (Azure AD P1)|[一般的な条件付きアクセス ポリシー](/azure/active-directory/conditional-access/concept-conditional-access-policy-common)を使用して、次のポリシーを構成します。 <br/>- [管理者に MFA を要求する](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br/>- [すべてのユーザーに MFA を要求する](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br/> - [従来の認証をブロックする](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)|
@@ -121,7 +121,7 @@ Microsoft Defender for Office 365:
 
 ## <a name="5-turn-on-microsoft-365-defender"></a>5: 電源を入Microsoft 365 Defender
 
-Microsoft Defender for Office 365および Microsoft Defender for Identity が構成されたので、これらの機能からの結合された信号を 1 つのダッシュボードで表示できます。 [Microsoft 365 Defender](./defender/microsoft-365-defender.md)では、アラート、インシデント、自動調査と応答、およびワークロード全体の高度な検出 (Microsoft Defender for Identity、Defender for Office 365、Microsoft Defender for Endpoint、および Microsoft Cloud App Security) を security.microsoft.com の 1 つのウィンドウ[にまとめ](https://security.microsoft.com)ます。
+Microsoft Defender for Office 365および Microsoft Defender for Identity が構成されたので、これらの機能からの結合された信号を 1 つのダッシュボードで表示できます。 [Microsoft 365 Defender](./defender/microsoft-365-defender.md)では、アラート、インシデント、自動調査と応答、およびワークロード全体の高度な検索 (Microsoft Defender for Identity、Defender for Office 365、Microsoft Defender for Endpoint、および Microsoft Cloud App Security) を、security.microsoft.com の 1 つのウィンドウにまとめ[ます。](https://security.microsoft.com).
 
 ![MTP ダッシュボードの図。](../media/top-ten-security-remote-work-mtp-dashboard.png)
 

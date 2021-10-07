@@ -2,26 +2,24 @@
 title: デバイスが正しく構成されていることを確認する
 description: デバイスを適切に構成して、脅威に対する全体的な回復力を高め、攻撃を検出して対応する機能を強化します。
 keywords: オンボード、Intune 管理、Microsoft Defender for Endpoint、Microsoft Defender、Windows Defender、攻撃表面の縮小、ASR、セキュリティ ベースライン
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: lomayor
 author: lomayor
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b9d00ec13a08751882e7c699a4e029083dc08bc6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 06fa097275453e3ae7b64f0e0cb142fe7592c88b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221669"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191961"
 ---
 # <a name="ensure-your-devices-are-configured-properly"></a>デバイスが正しく構成されていることを確認する
 
@@ -56,9 +54,9 @@ Microsoft Intune および Microsoft 365 セキュリティ センターのデ�
 
 ## <a name="enroll-devices-to-intune-management"></a>Intune 管理へのデバイスの登録
 
-デバイス構成管理は、Intune デバイス管理と密接に関係して、組織内のデバイスのインベントリとベースライン セキュリティ構成を確立します。 Intune で管理されているデバイス上の構成の問題を追跡およびWindows 10できます。
+デバイス構成管理は、Intune デバイス管理と密接に関係して、組織内のデバイスのインベントリとベースライン セキュリティ構成を確立します。 Intune で管理されているデバイス上の構成の問題を追跡およびWindowsできます。
 
-デバイスが適切に構成されていることを確認する前に、デバイスを Intune 管理に登録します。 Intune の登録は堅牢で、デバイスに対して複数Windows 10があります。 Intune 登録オプションの詳細については、「デバイスの登録の設定」[を参照Windowsしてください](/intune/windows-enroll)。
+デバイスが適切に構成されていることを確認する前に、デバイスを Intune 管理に登録します。 Intune の登録は堅牢で、複数のデバイスに対してWindowsがあります。 Intune 登録オプションの詳細については、「デバイスの登録の設定」[を参照Windowsしてください](/intune/windows-enroll)。
 
 > [!NOTE]
 > Intune にWindows登録するには、管理者にライセンスが既に割り当てられている必要があります。 [デバイス登録のライセンスの割り当てに関する記事をご覧ください](/intune/licenses-assign)。

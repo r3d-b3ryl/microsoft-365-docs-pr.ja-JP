@@ -9,7 +9,7 @@ ms.reviewer: micurn, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 description: 新しい機能が必要な場合に、ユーザーを別のサブスクリプションに移動する方法について学習します。
 ms.date: 09/16/2021
-ms.openlocfilehash: 436df4d563dea3717e463dab71c3a8b7e465dd70
-ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
+ms.openlocfilehash: a04532747b2685826bf7a7a07c6930a40c57ccde
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59477553"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179741"
 ---
 # <a name="move-users-to-different-subscriptions"></a>ユーザーを別のサブスクリプションに移動する
 
@@ -41,7 +41,7 @@ ms.locfileid: "59477553"
 ユーザーが役割を変更すると、現在のサブスクリプションで使用できない機能が必要Microsoft 365 Business Premiumがあります。 この場合、これらの機能を含む新しいサブスクリプションを追加し、必要なユーザーにライセンスを割り当てできます。
 
 > [!NOTE]
-> 一部のサブスクリプションでは、サブスクリプションを購入または更新した後に限られた期間だけキャンセルできます。 キャンセル ウィンドウが過ぎた場合は、定期的な請求をオフにし、期間の最後にサブスクリプションをキャンセルします。
+> 一部のサブスクリプションでは、サブスクリプションを購入または更新した後、限られた時間内にのみキャンセルできます。 キャンセル期間が過ぎた場合は、定期的な請求をオフにして、期間の終了時にサブスクリプションをキャンセルします。
 
 ## <a name="try-it"></a>お試しください!
 
