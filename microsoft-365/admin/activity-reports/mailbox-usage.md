@@ -6,7 +6,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: beffbe01-ce2d-4614-9ae5-7898868e2729
 description: ユーザー メールボックスを持つユーザーのアクティビティを知るメールボックス使用状況レポートを取得する方法について説明します。
-ms.openlocfilehash: 76d0d77afea7393286867686b44d95f430188ba8
-ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
+ms.openlocfilehash: e3c6508148db6d3a28ef8af42c223b1c75858733
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60011262"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157496"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---mailbox-usage"></a>Microsoft 365管理センターのレポート - メールボックスの使用状況
 

@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 0497ac31c11d04d812e9d8aca81304369ef459fb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 763add69e0512f9fe092dccf453d58cf3907118d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214623"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60162388"
 ---
 # <a name="list-incidents-api-in-microsoft-365-defender"></a>インシデント API をリストMicrosoft 365 Defender
 
@@ -62,8 +62,8 @@ API では、次の **OData 演算子がサポート** されています。
 ---|---|---
 アプリケーション|Incident.Read.All|すべてのインシデントを読み取る
 アプリケーション|Incident.ReadWrite.All|すべてのインシデントの読み取りおよび書き込み
-委任 (職場または学校アカウント)|Incident.Read|インシデントの読み取り
-委任 (職場または学校アカウント)|Incident.ReadWrite|インシデントの読み取りおよび書き込み
+委任 (職場または学校のアカウント)|Incident.Read|インシデントの読み取り
+委任 (職場または学校のアカウント)|Incident.ReadWrite|インシデントの読み取りおよび書き込み
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
@@ -106,7 +106,7 @@ assignedTo|インシデントの所有者、または所有者 *が割り当* �
 classification|インシデントの仕様。 プロパティの値は次 *のとおりです。不明**、FalsePositive、TruePositive* |不明
 決定|インシデントの決定を指定します。 プロパティの値は次 *のとおりです。 NotAvailable*、 *Apt*、 *Malware*、 *SecurityPersonnel*、 *SecurityTesting*、 *UnwantedSoftware*、*その* 他|NotAvailable
 detectionSource|検出元を指定します。|MCAS
-status|インシデント (アクティブ *、または解決* 済み) *を分類します*。 インシデントに対する対応を整理および管理するのに役立ちます。|Active
+status|インシデント (アクティブ *、または解決* 済み) *を分類します*。 インシデントに対する対応を整理および管理するのに役立ちます。|有効
 severity|アセットへの影響の可能性を示します。 重大度が高いほど、影響は大きくなります。 通常、重要度の高い項目では、最も迅速な注意が必要です。 <p> 次のいずれかの値: Informational、Low、*Medium、High です。  |中
 tags|インシデントに関連付けられたカスタム タグの配列 。たとえば、共通の特性を持つインシデントのグループにフラグを設定します。|\[\]
 comments|インシデントの管理時に secops によって作成されたコメントの配列 (分類の選択に関する追加情報など)。|\[\]
@@ -129,7 +129,7 @@ category|キル チェーンに沿って攻撃がどこまで進んでいるか�
 status|アラートを分類する (*新規、**アクティブ*、*または解決済み*)。 アラートに対する応答を整理および管理するのに役立ちます。|新規
 severity|アセットへの影響の可能性を示します。 重大度が高いほど、影響は大きくなります。 通常、重要度の高い項目では、最も迅速な注意が必要です。<br>次のいずれかの値: *Informational 、Low、Medium、**および* *High* です。 |中
 investigationId|このアラートによってトリガーされる自動調査 ID。|1234
-investigationState|調査の現在の状態に関する情報。 次の値の 1 つ:不明、終了 、正常に修復された、良性、失敗、*部分的* に修復された、*実行中**、PendingApproval 、PendingApproval* *、PendingResource* *、PartiallyInvestigated 、TerminatedByUser 、TerminatedBySystem*、キューに入れられ *、InnerFailure 、PreexistingAlert*   *、UnsupportedOs* *、UnsupportedAlertType* *、SuppressedAlert*。 |サポートされていないAlertType
+investigationState|調査の現在の状態に関する情報。 次のいずれかの値: Unknown 、 Terminated 、 *SuccessfullyRemediated*、*良* 性 、 Failed *、* *PartiallyRemediated*、 *Running*、 *PendingApproval 、 PendingApproval*、 *PartiallyInvestigated*、 *TerminatedByUser*、 *TerminatedBySystem*、 *Queueed*、 *InnerFailure*、  *PreexistingAlert*、 *UnsupportedAlertType*  *、SuppressedAlert*.|サポートされていないAlertType
 classification|インシデントの仕様。 プロパティの値は、*不明**、FalsePositive、TruePositive、* または *null です。* |不明
 決定|インシデントの決定を指定します。 プロパティの値は次 *のとおりです。 NotAvailable*、 *Apt*、 *Malware*、 *SecurityPersonnel*、 *SecurityTesting* *、* *UnwantedSoftware*、 Other or *null*|Apt
 assignedTo|インシデントの所有者、または所有者 *が割り当* てられていない場合は null。|secop2@contoso.com
@@ -149,15 +149,15 @@ osPlatform|デバイスが実行されている OS プラットフォーム。|W
 osBuild|デバイスが実行されている OS のビルド バージョン。|14393
 rbacGroupName|デバイス [に関連付けられた役割ベース](/azure/role-based-access-control/overview) のアクセス制御 (RBAC) グループ。|WDATP-Ring0
 firstSeen|デバイスが最初に表示された時刻。|2020-02-06T14:16:01.9330135Z
-healthStatus|デバイスの正常性状態。|Active
-riskScore|デバイスのリスク スコア。|高
+healthStatus|デバイスの正常性状態。|有効
+riskScore|デバイスのリスク スコア。|高い
 エンティティ|特定のアラートの一部として、または関連付けと識別されたすべてのエンティティ。|\[\] (以下のエンティティ フィールドの詳細を参照してください)
 
 ### <a name="entity-format"></a>エンティティの形式
 
 フィールド名|説明|値の例
 ---|---|---
-entityType|特定のアラートの一部または関連付けと識別されたエンティティ。<br>プロパティの値は次 *のとおりです*。 ユーザー 、 *Ip*、 *Url*、*ファイル*、*プロセス*、 MailBox 、 *MailMessage*、  *MailCluster*、*レジストリ*|User
+entityType|特定のアラートの一部または関連付けと識別されたエンティティ。<br>プロパティの値は次 *のとおりです*。 ユーザー 、 *Ip*、 *Url*、*ファイル*、*プロセス*、 MailBox 、 *MailMessage*、  *MailCluster*、*レジストリ*|ユーザー
 sha1|entityType が File の場合に *使用できます*。<br>ファイルまたはプロセスに関連付けられたアラートのファイル ハッシュ。|5de839186691aa96ee2ca6d74f0a38fb8d1bd6dd
 sha256|entityType が File の場合に *使用できます*。<br>ファイルまたはプロセスに関連付けられたアラートのファイル ハッシュ。|28cb017dfc99073aa1b47c1b30f413e3ce774c4991eb4158de50f9dbb36d8043
 fileName|entityType が File の場合に *使用できます*。<br>ファイルまたはプロセスに関連付けられたアラートのファイル名|Detector.UnitTests.dll

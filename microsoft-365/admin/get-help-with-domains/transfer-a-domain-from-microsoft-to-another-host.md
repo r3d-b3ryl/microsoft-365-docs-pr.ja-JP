@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 - Adm_O365_Setup
 ms.custom:
 - AdminSurgePortfolio
@@ -21,12 +22,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: 'Microsoft から別のレジストラーにドメインを転送する手順については、こちらを参照してください。 '
-ms.openlocfilehash: f36203326f3b6cdd6a1b1bcfc52bfcee01ad1a80
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: c6e74f654c1bbd35f69b071a2076c95cb651f476
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774438"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164622"
 ---
 # <a name="transfer-a-domain-from-microsoft-to-another-host"></a>Microsoft から別のホストにドメインを転送する
 

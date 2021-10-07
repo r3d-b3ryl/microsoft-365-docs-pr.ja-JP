@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
 description: ビジネス向け Microsoft 365を使用して、管理Windows 10デバイスを工場出荷時の状態にリセットし、購入時に元の設定に戻す方法について学習します。
-ms.openlocfilehash: 64f0ea1f6b39ec4ea6cc817bbe96ee78b3b96cdb
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: eeacb9cbfb6e6f4ea7ccc9db9b3f387070bce37e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59933329"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165366"
 ---
 # <a name="reset-windows-10-devices-to-their-factory-settings"></a>Windows 10 デバイスを出荷時の設定にリセットする
 

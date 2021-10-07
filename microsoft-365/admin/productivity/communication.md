@@ -8,22 +8,23 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom: AdminSurgePortfolio
 monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
 description: コミュニケーションの詳細 - ユーザーエクスペリエンスの生産性スコア。
-ms.openlocfilehash: b4cbc2fec73b22f55a75b05292d9c3a9b857554e
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 96303783afd9a77d4f490e412f0c182dc040d079
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776502"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157160"
 ---
 # <a name="communication--people-experiences"></a>コミュニケーション – ユーザー エクスペリエンス
 

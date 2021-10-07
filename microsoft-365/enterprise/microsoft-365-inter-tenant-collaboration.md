@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 - M365-subscription-management
@@ -19,12 +19,12 @@ f1.keywords:
 - NOCSH
 description: テナントと組織Microsoft 365コラボレーションがどのように機能し、さまざまな組織が安全に連携できるのかについて説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 05a1756d4707ba51d1175f0f5f5701f89fd7f5a4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9cb91b6bcaac212eeaf0ef4051f466751d8dbbd9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215873"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163338"
 ---
 # <a name="microsoft-365-inter-tenant-collaboration"></a>Microsoft 365間のコラボレーション
 
@@ -100,7 +100,7 @@ Microsoft 365間のコラボレーション オプションには、ファイル
 
 ### <a name="can-we-share-domain-namespaces-across-microsoft-365-tenants"></a>ドメイン名前空間を複数のテナントMicrosoft 365できますか?
 
-いいえ。 組織のドメイン名 (fabrikam.com、tailspintoys.com など) は、1 つのテナントにのみ関連付け、Microsoft 365できます。 各テナントには、独自の名前空間が必要です。 UPN、SMTP、および SIP 名前空間は、テナント間で共有できません。
+その必要はありません。 組織のドメイン名 (fabrikam.com、tailspintoys.com など) は、1 つのテナントにのみ関連付け、Microsoft 365できます。 各テナントには、独自の名前空間が必要です。 UPN、SMTP、および SIP 名前空間は、テナント間で共有できません。
 
 ### <a name="what-about-hybrid-components-and-microsoft-365-inter-tenant-collaboration"></a>ハイブリッド コンポーネントとテナント間のMicrosoft 365についてはどうでしょうか。
 

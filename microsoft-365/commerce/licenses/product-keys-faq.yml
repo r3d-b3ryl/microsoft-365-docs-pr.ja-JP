@@ -10,18 +10,18 @@ metadata:
   ms.topic: article
   ms.service: o365-administration
   ms.custom: commerce_vl
-  localization_priority: Normal
+  ms.localizationpriority: medium
   description: プロダクト キーに関するよく寄せられる質問
-  ms.openlocfilehash: 9da77700bb949fb72467516f3f195d87152d91ea
-  ms.sourcegitcommit: 095e23ba4181c86a301a25d8c898d25d1befec97
+  ms.openlocfilehash: 3a1ca8e666ab710cfd0554a4050ab69d750936d3
+  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/09/2021
-  ms.locfileid: "58951160"
+  ms.lasthandoff: 10/06/2021
+  ms.locfileid: "60156776"
 title: プロダクト キーに関するよく寄せられる質問
 summary: ''
 sections:
-- name: 全般
+- name: 一般
   questions:
   - question: >
       プロダクト キーとは
@@ -73,7 +73,7 @@ sections:
   - question: >
       ボリュームライセンス認証とは
     answer: >
-      ボリューム ライセンス認証は、ボリューム ライセンス プログラムでライセンスされているオペレーティング システムを実行しているコンピューターでWindowsのライセンス認証プロセスを自動化および管理するのに役立つ構成可能なソリューションです。 ボリューム ライセンス認証は、ボリューム ライセンス契約に基Officeボリューム ライセンス認証をサポートする、Microsoft の他のソフトウェアでも使用されます。 詳しくは、次のトピックを参照してください。
+      ボリューム ライセンス認証は、ボリューム ライセンス プログラムでライセンスされているオペレーティング システムを実行しているコンピューターでWindowsのライセンス認証プロセスを自動化および管理するのに役立つ構成可能なソリューションです。 ボリューム ライセンス認証は、ボリューム ライセンス契約に基Officeボリューム ライセンス認証をサポートする、Microsoft の他のソフトウェアでも使用されます。 詳細については、以下を参照してください。
         - [ユーザーのボリューム ライセンス認証を管理Office](/deployoffice/vlactivation/tools-to-manage-volume-activation-of-office)
         - [ユーザーのボリューム ライセンス認証Windows 10](/windows/deployment/volume-activation/volume-activation-windows-10)
 

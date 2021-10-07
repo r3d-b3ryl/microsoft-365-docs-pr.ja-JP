@@ -8,7 +8,7 @@ audience: Admin
 ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdo
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: ''
@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX
 description: 管理者は、管理者向け Microsoft Defender の試用版モードについてOffice 365
-ms.openlocfilehash: 21cff6ecd695ef95173149eed211b40989fa47ce
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: a7e8efc38722b3dc6342255a0193634f307eec27
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59402108"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60162184"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>Microsoft Defender for Office 365試用版
 
@@ -76,11 +76,11 @@ Defender for Office 365試用版は 90 日間利用可能で、すべてのユ�
 
 ## <a name="permissions"></a>アクセス許可
 
-試用版を開始または終了するには、グローバル管理者またはセキュリティ管理者の役割のメンバーである必要Azure Active Directory。 詳細については、「管理役割 [について」を参照してください](../../admin/add-users/about-admin-roles.md)。
+試用版を開始または終了するには、グローバル管理者またはセキュリティ管理者の役割のメンバーである必要Azure Active Directory。 詳細については、「[管理者ロールについて](../../admin/add-users/about-admin-roles.md)」を参照してください。
 
-## <a name="additional-information"></a>追加情報
+## <a name="additional-information"></a>その他の情報
 
-試用版に登録した後、変更と更新プログラムが利用可能になるには、最大 2 時間かかる場合があります。 また、管理者はログアウトしてログインし、変更を確認する必要があります。
+試用版に登録してから、変更や更新プログラムが利用できるようになるまで、最大で 2 時間かかる場合があります。 また、管理者はログアウトしてログインし、変更を確認する必要があります。
 
 管理者は、管理者カードに移動して、任意の時点で試用版を <> できます。
 

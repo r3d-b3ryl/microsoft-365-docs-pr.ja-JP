@@ -8,17 +8,18 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
-ms.collection: ''
+ms.localizationpriority: medium
+ms.collection:
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 description: 組織Microsoft 365 Business Standardを購入してセットアップします。
-ms.openlocfilehash: a809dcabe26a24231e12e4d3d14d544f83bb2c91
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: cf19c2f07129eb064368c1efd6eea09af0870b93
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775938"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164250"
 ---
 # <a name="sign-up-for-a-microsoft-365-business-standard-subscription"></a>Microsoft 365 Business Standard サブスクリプションにサインアップする
 
@@ -75,7 +76,7 @@ ms.locfileid: "59775938"
 - Microsoft Planner と Microsoft Lists
 - Microsoft 以外のアプリ (Salesforce、Adobe など) の統合の最も広い範囲は、TeamsおよびOffice。
 
-#### <a name="next-steps"></a>次のステップ
+#### <a name="next-steps"></a>次の手順
 
 ドメインを追加してビジネス メール アカウントを作成する場合は、以下の記事の手順に従います。
 

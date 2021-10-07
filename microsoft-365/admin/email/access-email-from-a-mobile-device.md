@@ -8,7 +8,7 @@ manager: scotv
 audience: End User
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - Adm_NonTOC
@@ -17,12 +17,12 @@ search.appverid: MET150
 ms.assetid: ba780859-0297-4114-a258-2b2809bab9e6
 ROBOTS: NOINDEX, NOFOLLOW
 description: モバイル デバイスからメールにアクセスする方法について学習します。
-ms.openlocfilehash: c003b90e704a51adcaca6d3887d1fc7286f40168
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c6ed0685dcb26dcb74bff3ccf8a28a6b9233afc3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176624"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165234"
 ---
 # <a name="options-for-accessing-email-from-your-mobile-device"></a>モバイル デバイスからメールにアクセスするためのオプション
 
@@ -30,7 +30,7 @@ ms.locfileid: "59176624"
 
 Android Outlookおよび iOS Outlookアプリ用のアプリは、仕事や学校のメール用に設計されています。 これらのアプリは、重要[](https://support.microsoft.com/office/f445ad7f-02f4-4294-a82e-71d8964e3978)なメールをフロントとセンターに保持するフォーカス受信トレイ、および[スケジュール アシスタント](https://support.microsoft.com/office/scheduling-made-easy-in-outlook-mobile-11c5bee5-d78a-4a2b-80c2-2b386ddb4470)のような機能を備え、同僚と仕事をする会議の時間を見つけ、利用可能な会議室を簡単に見つけるのに役立ちます。
   
-## <a name="end-user-experience"></a>エンド ユーザー エクスペリエンス
+## <a name="end-user-experience"></a>エンド ユーザーのエクスペリエンス
 
 ### <a name="outlook-only"></a>Outlookのみ
 

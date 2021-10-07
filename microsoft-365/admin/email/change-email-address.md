@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 - Adm_O365_Setup
 ms.custom:
 - MSStore_Link
@@ -25,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
 description: ドメイン名を購入し、ドメイン名に追加して、tom@fourthcoffee.com のような使いMicrosoft 365。
-ms.openlocfilehash: f14bc47950c18aeccdc0c73fbee498be6bf32f3f
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 71269513bce69ec81cf6e4a3030fb3327c32c88d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774828"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165138"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>カスタム ドメインを使うように電子メール アドレスを変更する
 
@@ -94,5 +95,5 @@ ms.locfileid: "59774828"
 ## <a name="related-content"></a>関連コンテンツ
 
 [カスタム ドメインを購入するには、Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (記事)\
-[ドメインの管理](../get-help-with-domains/index.yml) (リンク ページ)\
+[ドメインの管理](/admin) (リンク ページ)\
 [ドメインの FAQ](../setup/domains-faq.yml) (記事)

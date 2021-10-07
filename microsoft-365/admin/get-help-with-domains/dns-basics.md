@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -25,12 +25,12 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: ドメイン ネーム システムは、コンピューターのホスト名を IP アドレスにマップします。DNS とドメイン レジストラーの基礎を理解することはドメインを管理するうえで役立ちます。
-ms.openlocfilehash: 42c93ba7c0edd76b1371015ea9c3b2dd1e4f8bbb
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 3195e6ba1e8483a5444eb0f8046add1e3e7725f3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774606"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164778"
 ---
 # <a name="dns-basics"></a>DNS の基本
 
@@ -208,4 +208,4 @@ Microsoft 365 では、ドメイン名をメール、一般向け Web サイト�
 
 [ドメインの FAQ](../setup/domains-faq.yml) (記事)\
 [ドメインまたは DNS レコードを追加後に問題を特定して解決する](find-and-fix-issues.md) (記事)\
-[ドメインの管理](index.yml) (リンク ページ)
+[ドメインの管理](/admin) (リンク ページ)

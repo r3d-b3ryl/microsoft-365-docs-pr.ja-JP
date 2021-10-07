@@ -6,15 +6,15 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e3c0a4ee-e3d8-4fbe-bd8f-16d1c712d1f4
 description: 指定された時間に従業員が予約に使用できないとマークされるように、予約カレンダーからオフィスの休業日と従業員の休み時間をスケジュールします。
-ms.openlocfilehash: bdd00d2bc97de1e981b2de7f5f21325de6967aa7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 30f43af083da6a41ab8458e377bdc9fc99690678
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59190571"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164070"
 ---
 # <a name="schedule-business-closures-time-off-and-vacation-time"></a>休業、休暇、休暇期間のスケジュール
 

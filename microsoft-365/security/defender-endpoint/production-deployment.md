@@ -2,15 +2,13 @@
 title: Microsoft Defender for Endpoint の展開をセットアップする
 description: Microsoft Defender for Endpoint の展開をセットアップする方法について説明します。
 keywords: 展開、セットアップ、ライセンス検証、テナント構成、ネットワーク構成
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -19,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ab7007143fd472757f8f6489cb14babc8cda1129
-ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
+ms.openlocfilehash: 22b4e1c1609264a5eef17e2149b4b6e50d707999
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/21/2021
-ms.locfileid: "59460198"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60162568"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>Microsoft Defender for Endpoint の展開をセットアップする
 
@@ -49,7 +47,7 @@ Defender for Endpoint の展開は、次の 3 フェーズプロセスです。
 
 - ライセンスの検証
 - テナント構成
-- ネットワーク構成
+- ネットワークの構成
 
 > [!NOTE]
 > 一般的な展開を案内する目的で、このシナリオでは、このシナリオでは、ユーザーの使用のみをMicrosoft Endpoint Configuration Manager。 Defender for Endpoint は、他のオンボーディング ツールの使用をサポートしていますが、展開ガイドではこれらのシナリオについては説明しません。 詳細については、「デバイスを [Microsoft Defender for Endpoint にオンボードする」を参照してください](onboard-configure.md)。
@@ -84,7 +82,7 @@ Defender for Endpoint の展開は、次の 3 フェーズプロセスです。
 
 Web ブラウザーから、[セキュリティ センター] Microsoft 365[に移動します](https://security.microsoft.com)。
 
-## <a name="network-configuration"></a>ネットワーク構成
+## <a name="network-configuration"></a>ネットワークの構成
 
 組織がプロキシを使用してインターネットにアクセスするためにエンドポイントを必要としない場合は、このセクションをスキップします。
 
@@ -163,7 +161,7 @@ Down-Level には、Windows 7 SP1 および Windows 8.1 ワークステーショ
 
 ### <a name="proxy-service-urls"></a>プロキシ サービスの URL
 
-v20 を含む URL は、バージョン 1803 以降のデバイスWindows 10場合にのみ必要です。 たとえば、 `us-v20.events.data.microsoft.com` デバイスがバージョン 1803 以降Windows 10場合にのみ必要です。
+v20 を含む URL は、Windows 10バージョン 1803 または 11 デバイスWindows必要です。 たとえば、 `us-v20.events.data.microsoft.com` デバイスがバージョン 1803 またはバージョン 11 上Windows 10場合にのみWindowsされます。
 
 プロキシまたはファイアウォールが匿名トラフィックをブロックしている場合、Microsoft Defender for Endpoint センサーがシステム コンテキストから接続している場合は、一覧の URL で匿名トラフィックが許可されている必要があります。
 
@@ -173,7 +171,7 @@ v20 を含む URL は、バージョン 1803 以降のデバイスWindows 10場�
 
 ****
 
-|ドメインリストのスプレッドシート|Description|
+|ドメインリストのスプレッドシート|説明|
 |---|---|
 |![Microsoft Defender for Endpoint URL スプレッドシートのサム イメージ。](images/mdatp-urls.png)|サービスの場所、地理的な場所、および OS の特定の DNS レコードのスプレッドシート。 <p> [ここにスプレッドシートをダウンロードします。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
 |

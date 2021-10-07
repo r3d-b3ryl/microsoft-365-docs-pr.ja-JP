@@ -4,7 +4,7 @@ description: Microsoft 365 Defenderでの利点は、Microsoft Defender for Offi
 keywords: セキュリティ、マルウェア、Microsoft 365、M365、セキュリティ センター、モニター、レポート、ID、データ、デバイス、アプリ
 ms.prod: m365-security
 ms.mktglfcycl: deploy
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.date: 04/21/2021
@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 7f129f3ba1650403b23aa7e849a7b74f8220871f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a0dce3a61847924043a10df4c13c963f279ea011
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211874"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60162292"
 ---
 # <a name="microsoft-365-defender-overview"></a>Microsoft 365 Defender概要
 
@@ -36,7 +36,7 @@ ms.locfileid: "59211874"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
 
-> Microsoft 365 Defender を体験してみませんか? [ラボ環境で評価する](m365d-evaluation.md?ocid=cx-docs-MTPtriallab)ことも、[実稼働環境でパイロット プロジェクトを実行する](m365d-pilot.md?ocid=cx-evalpilot)こともできます。
+> Microsoft 365 Defender を体験しますか? [ラボ環境で評価](m365d-evaluation.md?ocid=cx-docs-MTPtriallab)、または[運用でパイロット プロジェクトを実行](m365d-pilot.md?ocid=cx-evalpilot)することができます。
 
 **Microsoft 365 Defender** ( ) は、中央ポータルの電子メール、コラボレーション、ID、およびデバイスの脅威に対する保護、検出、調査、および応答を [https://security.microsoft.com](https://security.microsoft.com) 組み合わせたものになります。    
 

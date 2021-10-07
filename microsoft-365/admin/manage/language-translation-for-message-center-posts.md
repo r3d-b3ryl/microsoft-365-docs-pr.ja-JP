@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,18 +22,18 @@ search.appverid:
 - MOE150
 ms.assetid: 9f7c2ff2-af65-4557-8840-0b84ce96d9bc
 description: メッセージ センターの投稿は英語のみですが、ユーザーが指定した言語で自動的に表示Microsoft 365。
-ms.openlocfilehash: 84d88c507b16e81fd63f28261cc27be4883584c3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0afdd98b56b6cb13a5f4bef014d8612c30dfbf11
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176319"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164334"
 ---
 # <a name="language-translation-for-message-center-posts"></a>メッセージ センターの投稿の言語の翻訳
 
 メッセージ センターの投稿は、情報のタイムラインを Microsoft が投稿しているため、英語のみで記述されています。ただし、投稿は Microsoft 365 の個人用の言語設定で指定した言語で自動表示できます。 優先する言語を英語以外の言語に設定した場合、メッセージ センターに投稿を自動翻訳するオプションが表示されます。 メッセージは、コンピューターが優先する言語に翻訳され、コンピューターが翻訳を行ったことを意味します。 既定のビューは、このオプションによって制御されますが、ドロップダウン メニューを使用すると、翻訳をサポートしている任意の言語で、投稿を翻訳して表示することができます。 英語を選択すると、メッセージは元の英語バージョンに戻されます。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
   
 > [!IMPORTANT]
 > メッセージ センターで言語設定を選択する前に、優先する言語を設定する必要があります。 英語を言語に設定した場合、翻訳オプションは表示されません。 他のユーザーの優先する言語は設定することができません。ユーザーが自分自身で設定する必要があります。 

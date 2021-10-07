@@ -6,15 +6,15 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 94af3e22-aca6-4e91-8b91-1cd5a02a9ea8
 description: Microsoft Bookings で言語とタイム ゾーンの設定を変更します。 予約が間違った時刻に作成された場合、間違ったタイム ゾーンに対して予約が設定されている可能性があります。
-ms.openlocfilehash: 2ccea0446d168476961294ba5800ad3899bd24eb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 420988dc480f4e9669281dd5e38ba7de1cfd0496
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219453"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164058"
 ---
 # <a name="set-language-and-time-zones-in-microsoft-bookings"></a>Microsoft Bookings で言語とタイム ゾーンを設定する
 

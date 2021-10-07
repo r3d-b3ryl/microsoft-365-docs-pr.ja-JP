@@ -4,18 +4,18 @@ description: ツールが見つけた各問題に対して実行する詳細な�
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 32e750dc824484624a5f0d953b75f242639c3e23
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: d2e055b553e3358107283236d634d9d46d33de4d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60009507"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163158"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>準備評価ツールで見つかった問題を修正する
 
@@ -285,6 +285,14 @@ Microsoft マネージド デスクトップ設定では、ディレクトリ内
 **アドバイザリ**
 
 **特定の管理者ロールに割り当** てられたメンバー ユーザーとユーザーは、メンバーアクセス許可を持つゲストを含むゲスト ユーザーを招待できます。有効にする必要があります。 手順については、「ゲスト アカウント [の前提条件」を参照してください](/microsoft-365/managed-desktop/get-ready/guest-accounts)。
+
+### <a name="guest-user-access"></a>ゲスト ユーザー アクセス
+
+Microsoft マネージド デスクトップ設定を使用すると、ディレクトリ内のすべてのゲスト ユーザーがメンバーと同じアクセス権を持つ可能性があります。
+
+**アドバイザリ**
+
+**ゲスト ユーザーは、プロパティへのアクセスが制限され、ディレクトリ オブジェクトのメンバーシップを** 有効にする必要があります。 手順については、「ゲスト アカウント [の前提条件」を参照してください](/microsoft-365/managed-desktop/get-ready/guest-accounts)。
 
 ### <a name="licenses"></a>ライセンス
 

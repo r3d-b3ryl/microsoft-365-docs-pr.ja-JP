@@ -9,14 +9,14 @@ ms.topic: reference
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection: m365initiative-syntex
-localization_priority: Priority
+ms.localizationpriority: high
 description: SharePoint Syntex ドキュメント理解モデル REST API の概要。
-ms.openlocfilehash: b77e882163810a389e734f63b45418a4e682dd88
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 882dcdbe3561803d20d698e5d1510dd5232fbbe5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775686"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163375"
 ---
 # <a name="sharepoint-syntex-document-understanding-model-rest-api"></a>SharePoint Syntex ドキュメント理解モデル REST API
 

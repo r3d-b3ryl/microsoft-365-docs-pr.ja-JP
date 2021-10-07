@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
@@ -21,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 共有メールボックスを作成し、電子メール転送や自動返信など、ユーザーの設定を構成します。
-ms.openlocfilehash: 8cc5b59222e5a14c55ba20e087090f876cfef650
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 201291adddf588bde955cbba7e2c0075e5ca7c88
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774834"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165114"
 ---
 # <a name="configure-shared-mailbox-settings"></a>共有メールボックスの設定を構成する
 

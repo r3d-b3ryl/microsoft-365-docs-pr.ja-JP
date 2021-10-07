@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: キャンペーンのユーザー向けMicrosoft 365手順を実行します。 メール、データ、コミュニケーションに対するサイバーセキュリティの脅威からキャンペーンを保護します。
-ms.openlocfilehash: deaf91850ae5dbd3ed2a4637e0eb157d29215992
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7ef49e686a152cd4bc56d39e7edff107dfbb2ea7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178279"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60156884"
 ---
 # <a name="sign-up-for-microsoft-365-for-campaigns"></a>キャンペーンにMicrosoft 365サインアップする 
 
@@ -49,7 +49,7 @@ ms.locfileid: "59178279"
 1. [キャンペーン] メールMicrosoft 365招待で、[組織の登録] を選択 **>。** これにより、サインアップMicrosoft 365にアクセスできます。
     > [!NOTE]
     > ビジネス サブスクリプション用の既存の Microsoft 365 を既に持ち、Microsoft 365 for Campaigns オファーを追加する場合は、「Microsoft 365 [for Campaigns」](#steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription)を既存のサブスクリプションに追加します。
-1. **[ビジネスMicrosoft 365] ページで**、ビジネスの詳細を入力します。 [ **ビジネス用メール アドレス] では**、現在のメール アドレスを使用します。 このアドレスは、セットアップ プロセス中に連絡を取り合う場合にのみ必要です。 [**次へ**] を選択します。
+1. **[ビジネスMicrosoft 365] ページで**、ビジネスの詳細を入力します。 [ **ビジネス用メール アドレス] では**、現在のメール アドレスを使用します。 このアドレスは、セットアップ プロセス中に連絡を取り合う場合にのみ必要です。 **[次へ]** を選択します。
 1. **[ユーザー ID の作成] ページで、次の情報を使用します**。
     1. [ **ユーザー名**] に、メール アドレスに使用する名前またはエイリアスを入力します。 たとえば、Alice または Rob と呼ばれる場合があります。 大規模なキャンペーンでは、AliceC または AliceChavez の方が理にかなっている可能性があります。
     2. [ **会社]** に、作業するキャンペーンの名前を入力します。 たとえば、ContosoCampaign。 既にドメインを所有している場合は、ここでその名前を使用します。 
@@ -62,7 +62,7 @@ ms.locfileid: "59178279"
     1. 電話を準備し、[テキスト] **を** 選択します (必要に応じて[ **電話** ] を選択します)。 次に、電話番号を入力します。 
     2. [テキスト] **を選択すると**、確認コードが送信されます。 または、[自分を呼び出す] を選択した場合は、コードを使用 **して電話します**。
     3. テキスト メッセージ (または呼び出し) からコードを入力し、[次へ] を **選択します**。 短い待ち時間が必要です。 
-5. **このページを使用する場所**: キャンペーンの主要な作業場所の詳細と電話番号を入力します。 [**次へ**] を選択します。
+5. **このページを使用する場所**: キャンペーンの主要な作業場所の詳細と電話番号を入力します。 **[次へ]** を選択します。
 6. **この外観ページの動作**:
     1. ユーザーあたりのコストが $5.00 です。 
     2. 今のところ自分だけを設定する場合は、[次へ] を **選択します**。 

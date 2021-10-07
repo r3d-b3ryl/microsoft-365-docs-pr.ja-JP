@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - Adm_NonTOC
@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: d00b6b83-1f14-4e9c-a2c5-dbd9a92816f4
 ROBOTS: NOINDEX, NOFOLLOW
 description: ユーザーがメール、予定表、連絡先にアクセスするために使用できるモバイル アプリを選択する方法について学習します。
-ms.openlocfilehash: d38730df158758ceb310ba25f45f222d7893afe2d0aefc601a17663e85787552
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 44991f9d84b421b77dd9923377b2db50b2772687
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53825981"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164970"
 ---
 # <a name="manage-email-app-access-in-the-microsoft-365-admin-center"></a>メール アプリのアクセスを管理するには、Microsoft 365 管理センター
 

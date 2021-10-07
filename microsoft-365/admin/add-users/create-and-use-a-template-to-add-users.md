@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
@@ -19,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: テンプレートを作成して使用すると、時間を節約し、複数のユーザーを追加するときに設定を標準化できます。
-ms.openlocfilehash: 6ef35bb395417597d10b8b33c042e1baceeb40db
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: cacb3fc6ef2a145cbfe4c4131b2e5e38eca2c257
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773489"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60161848"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>テンプレートを作成して使用し、ユーザーを追加する
 

@@ -12,7 +12,7 @@ f1_keywords:
 - O365E_Win10AppPolicy
 - BCS365_Win10AppPolicy
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
@@ -30,12 +30,12 @@ search.appverid:
 - MOE150
 ms.assetid: 02e74022-44af-414b-9d74-0ebf5c2197f0
 description: アプリ管理ポリシーを作成または編集し、ユーザーの個人用デバイスで作業ファイルを保護するWindows 10します。
-ms.openlocfilehash: 7525cf1194022e5712f1a661c7176c8066de84e8
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: 6370f2c21ce9f8de1223d5445c87abf197c0cf89
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59933749"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165486"
 ---
 # <a name="set-or-edit-application-protection-settings-for-windows-10-devices"></a>デバイスのアプリケーション保護設定を設定またはWindows 10する
 

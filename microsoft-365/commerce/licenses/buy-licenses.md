@@ -9,7 +9,7 @@ ms.reviewer: argani, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_o365
@@ -22,21 +22,21 @@ ms.custom:
 search.appverid: MET150
 description: 以下の手順を使用して、ライセンスを購入したり、ビジネス サブスクリプションのライセンス数Microsoft 365減らしたりします。
 ms.date: 09/16/2021
-ms.openlocfilehash: 77c1547b279cc5367ef23106e15dc2eee0c5a471
-ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
+ms.openlocfilehash: 6cdcad3c37db8475bcb64fa7a33e287f502dcd66
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59480750"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163650"
 ---
 # <a name="buy-or-remove-licenses"></a>ライセンスの購入または削除
 
 次の手順を使用して、サブスクリプションのライセンス数を増やしたり、ライセンス数を減らしたりできます。
 
 > [!NOTE]
-> 一部のサブスクリプションでは、サブスクリプションを購入または更新した後に限られた期間だけキャンセルできます。 キャンセル ウィンドウが過ぎた場合は、定期的な請求をオフにし、期間の最後にサブスクリプションをキャンセルします。
+> 一部のサブスクリプションでは、サブスクリプションを購入または更新した後、限られた時間内にのみキャンセルできます。 キャンセル期間が過ぎた場合は、定期的な請求をオフにして、期間の終了時にサブスクリプションをキャンセルします。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 - この記事で説明するタスクを実行するには、グローバル管理者または課金管理者である必要があります。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
 - ユーザーを [追加し、同時にライセンスを割り当てできます](../../admin/add-users/add-users.md)。
@@ -69,7 +69,7 @@ ms.locfileid: "59480750"
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[お使いの製品]</a> ページの順に移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">お使いの製品</a>] ページの順に移動します。
 ::: moniker-end
 
 2. **[製品]** タブで、ライセンスを購入または削除するサブスクリプションを見つけます。 3 つのドット (その他の操作) を選択してから、**[ライセンスの購入]** を選択します。 [[ライセンスの購入] または [ライセンスの削除] ボタンが表示できない場合は、](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
@@ -105,7 +105,7 @@ ms.locfileid: "59480750"
 - 請求期間の途中で追加されたライセンスは、次の請求書に表示されます。 毎年支払う場合は、これらの変更に対して 1 か月以内に請求されます。
 - 次の請求明細書では、元のライセンス数に対する以前の料金が差し引かされます。 ライセンスの元の数で期間の日割り料金を追加し、新しいライセンス数の料金を追加します。 また、請求期間の残りの期間の現在のライセンス数に対する料金も発生します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 サブスクリプションのライセンスを購入した場合、次に行う必要があるのは、組織内のユーザーにライセンスを割 [り当てることです](../../admin/manage/assign-licenses-to-users.md)。
 

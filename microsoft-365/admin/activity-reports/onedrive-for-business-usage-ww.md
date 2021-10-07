@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: '組織全体OneDrive for Businessのファイルと記憶域の総数を確認するには、使用状況レポートを参照してください。 '
-ms.openlocfilehash: 1dd5e595e1e7766bb3f4a4a3e67af02605bb7768
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5e69791057eae44ec2b9565c73b61c4b8c2131a1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177216"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157256"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-usage"></a>Microsoft 365管理センターのレポート - OneDrive for Business使用状況
 
@@ -55,8 +55,8 @@ Microsoft 365 の [**レポート**] ダッシュボードには、組織内で�
 |:-----|:-----|
 |**測定基準**|**定義**|
 |URL  <br/> |ユーザーのアカウントの web OneDrive。 <br/> |
-|Deleted  <br/> |ファイルの削除OneDrive。 アカウントを削除済みとしてマークするには、少なくとも 7 日かかります。  <br/> |
-|Owner  <br/> |管理者のプライマリ管理者のOneDrive。   <br/> |
+|削除済み  <br/> |ファイルの削除OneDrive。 アカウントを削除済みとしてマークするには、少なくとも 7 日かかります。  <br/> |
+|所有者  <br/> |管理者のプライマリ管理者のOneDrive。   <br/> |
 |所有者プリンシパル名  <br/> |ユーザーの所有者の電子メール OneDrive。 <br/> |
 |最終アクティビティ日 (UTC)  <br/> | ファイル アクティビティがレポート で実行された最新のOneDrive。 OneDrive にファイル アクティビティがなかった場合、値は空白になります。  <br/> |
 |ファイル  <br/> |ファイル内のファイルのOneDrive。 <br/>|

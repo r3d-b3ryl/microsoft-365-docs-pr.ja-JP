@@ -7,7 +7,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 管理サービス プロバイダー (MSP) で Microsoft 365 Lighthouse 365 (クラウド PC) ページWindowsを参照してください。
-ms.openlocfilehash: b71beb0315c15929b20e1afd32a96bfd811a9ea9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a0d828a382000502f6700d585624b967a740ff36
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211723"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163182"
 ---
 # <a name="windows-365-cloud-pcs-page-overview"></a>Windows 365 (クラウド PC) ページの概要  
 
@@ -30,7 +30,7 @@ ms.locfileid: "59211723"
   
 Windows 365 は、Microsoft エンドポイント マネージャー (MEM) 管理者が、Windows 365 ライセンスを持つユーザーに対してクラウド PC をプロビジョニングおよび管理できるクラウドベースのサービスです。 Windows 365 は、デバイス管理用の MEM と完全に統合され、Microsoft 365 Lighthouse は顧客のすべてのテナントでクラウド PC のパートナー管理を行います。
 
-365 の詳細については、「Windows [365 のWindows参照してください。](/windows-365/overview) 365 の要件のWindowsについては[、「Requirements for Windows 365」を参照してください](/windows-365/requirements)。
+365 の詳細については、「Windows [365 のWindows参照してください。](/windows-365/overview) 365 の要件のWindowsについては[、「Requirements for Windows 365」を参照してください](/windows-365/enterprise/requirements)。
 
 > [!IMPORTANT]
 > ライトハウスでクラウド PC を管理するには [、MEM](https://go.microsoft.com/fwlink/p/?linkid=2150463) に移動して顧客テナントごとにクラウド PC をプロビジョニングする必要があります。 ライトハウス内からプロビジョニングを行う必要があります。
@@ -77,7 +77,7 @@ Windows 365 は、Microsoft エンドポイント マネージャー (MEM) 管�
 - **検索:** キーワードを入力して、リスト内の特定のクラウド PC をすばやく見つける。
 - **プロビジョニングの再試行:** 状態が [プロビジョニングに失敗しました] の一覧から 1 ~ 20 のクラウド PC を選択し、このオプションを選択して、それらのクラウド PC のプロビジョニングを再試行します。
 
-クラウド PC の状態と、その意味の完全な一覧については、「クラウド[PC](/windows-365/device-management-overview#cloud-pc-overview-page)の概要」ページの「Windows 365 ドキュメント ライブラリ」を参照してください。
+クラウド PC プロビジョニングの状態と、その意味の完全な一覧については、「Windows 365 ドキュメント ライブラリ」を参照してください。 [](/windows-365/enterprise/device-management-overview#column-details)
 
 :::image type="content" source="../media/m365-lighthouse-win365-page-overview/all-cloud-pcs-tab.png" alt-text="[365 Windowsクラウド PC] タブのスクリーンショット。":::
 
@@ -101,6 +101,6 @@ Windows 365 は、Microsoft エンドポイント マネージャー (MEM) 管�
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[365 Windowsとは](/windows-365/overview) (記事)\
-[Windows PC の 365 デバイス](/windows-365/device-management-overview)管理の概要 (記事)\
+[Windows 365 とは](/windows-365/overview) (記事)\
+[Windows PC の 365 デバイス](/windows-365/enterprise/device-management-overview)管理の概要 (記事)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (記事)

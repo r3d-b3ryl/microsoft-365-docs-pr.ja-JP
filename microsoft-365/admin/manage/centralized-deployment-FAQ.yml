@@ -9,7 +9,7 @@ metadata:
   audience: Admin
   ms.topic: article
   ms.service: o365-administration
-  localization_priority: Normal
+  ms.localizationpriority: medium
   ms.collection:
   - M365-subscription-management
   - Adm_O365
@@ -21,12 +21,12 @@ metadata:
   - MET150
   - MOE150
   description: 一元的な展開に関するよくある質問に対する回答を、Microsoft 365 管理センター。
-  ms.openlocfilehash: 1d9eb681412d3934c55eacc938a36dee276313ac
-  ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+  ms.openlocfilehash: 72e57729d13a1d78c2589f942b09bc4779e21db7
+  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/27/2021
-  ms.locfileid: "59933497"
+  ms.lasthandoff: 10/06/2021
+  ms.locfileid: "60164490"
 title: 一元展開に関する FAQ
 summary: Office 365 管理者が組織内のユーザーとグループに Office アドイン (Word、Excel、PowerPoint、および Outlook) を展開する場合は、この記事で説明した集中展開を使用するためのすべての要件を満たしている場合に、集中展開が推奨されます。
 sections:
@@ -63,6 +63,6 @@ sections:
       管理者はアドインを削除または削除できますか?
     answer: "はい。 管理者は、Microsoft 管理センターからすべてのユーザーに展開したアドインを削除できます。\n\n詳細については、「Delete [an add-in」を参照してください](./manage-addins-in-the-admin-center.md#delete-an-add-in)。 \n  \n"
   - question: "管理者は、集中展開を使用して、Officeストアから有料アドインを展開できますか? \n"
-    answer: "いいえ。 現時点では、集中展開を使用して、Officeストアから有料アドインを展開できます。 \n \nマニフェスト ファイルまたは URL を要求するには、有料アドインの ISV 開発者に手を差し伸べることです。 テナント管理者は、集中展開を使用して、アドインを LOB アドインとして展開できます。\n   \n"
+    answer: "その必要はありません。 現時点では、集中展開を使用して、Officeストアから有料アドインを展開できます。 \n \nマニフェスト ファイルまたは URL を要求するには、有料アドインの ISV 開発者に手を差し伸べることです。 テナント管理者は、集中展開を使用して、アドインを LOB アドインとして展開できます。\n   \n"
   - question: "組織のアドインを管理するために必要な管理者の役割は何ですか? \n"
     answer: "グローバル管理者は、アドイン管理ライフサイクルへの完全なアクセス権を持つ推奨される役割です。 ビジネス サブスクリプションを購入したユーザー Microsoft 365、グローバル管理者です。\n\nサブスクリプションには、組織内の他のユーザーに割り当て可能な一連の管理者ロールが付属しています。 各管理者の役割は、一般的なビジネス機能にマップされ、組織内のユーザーに対して、組織内のユーザーが特定のタスクを実行するためのアクセス許可をMicrosoft 365 管理センター。  \n \n詳細については、「管理者ロールの割り [当て」を参照してください](../add-users/assign-admin-roles.md?view=o365-worldwide)。"

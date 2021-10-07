@@ -6,7 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 8bfccfba0dbe3d00829c6e668830551c66d3f893
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 7fe31fe2e8e982c1ba8b8bff1aa3e08ce4f94fca
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491375"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163050"
 ---
 # <a name="view-attack-surface-reduction-events"></a>攻撃面の減少イベントを表示する
 
@@ -82,7 +82,7 @@ E5 サブスクリプションを持っている場合は、Windows セキュリ
 
 4. イベントをフィルター処理する機能の XML コードを XML セクションに貼り付けます。
 
-5. [**OK**] を選択します。 フィルターの名前を指定します。 これにより、その機能に関連するイベントのみを表示するためにフィルター処理するカスタム ビューが作成されます。
+5. **[OK]** を選択します。 フィルターの名前を指定します。 これにより、その機能に関連するイベントのみを表示するためにフィルター処理するカスタム ビューが作成されます。
 
 ### <a name="xml-for-attack-surface-reduction-rule-events"></a>攻撃表面の縮小ルール イベントの XML
 
@@ -170,7 +170,7 @@ E5 サブスクリプションを持っている場合は、Windows セキュリ
 |エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|13|EAF の監査|
 |エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|14 |EAF の実施|
 |エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|15 |EAF+ の監査|
-|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|16 |EAF+ の実施|
+|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|16|EAF+ の実施|
 |エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|17 |IAF の監査|
 |エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|18 |IAF の実施|
 |エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|19|ROP StackPivot の監査|

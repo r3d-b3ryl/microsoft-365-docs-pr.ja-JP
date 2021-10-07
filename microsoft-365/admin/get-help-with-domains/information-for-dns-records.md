@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
 description: ドメインをサブスクリプションに接続するために DNS レコードを作成するために必要な値Microsoft 365します。
-ms.openlocfilehash: c56120e446ccde93d353bd4e36fd03493cda4688
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 52d3dfdf0e964c750a0aecd67d2fb6064eb0625e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774450"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164682"
 ---
 # <a name="gather-the-information-you-need-to-create-dns-records"></a>DNS レコードを作成するために必要な情報を収集する
 
@@ -103,4 +103,4 @@ ms.locfileid: "59774450"
 
 [ドメインの FAQ](../setup/domains-faq.yml) (記事)\
 [ドメインまたは DNS レコードを追加後に問題を特定して解決する](find-and-fix-issues.md) (記事)\
-[ドメインの管理](index.yml) (リンク ページ)
+[ドメインの管理](/admin) (リンク ページ)

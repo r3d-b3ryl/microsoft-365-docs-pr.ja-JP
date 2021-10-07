@@ -6,15 +6,15 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4b2c84ec-64d3-4027-af4c-40f69e7b37c9
 description: ビジネスのスケジュール ポリシーを設定する方法について説明します。 スケジュール ポリシーには、予定の長さ、および受け入れ可能なリードとキャンセルの時間が含まれます。
-ms.openlocfilehash: 82cc9a66e82665040a1f0d08635cae10cd413d4b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e2d59feec2cb50bd51f4b6d2a411b48183a5d549
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219474"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164009"
 ---
 # <a name="set-your-scheduling-policies"></a>スケジュール ポリシーを設定する
 

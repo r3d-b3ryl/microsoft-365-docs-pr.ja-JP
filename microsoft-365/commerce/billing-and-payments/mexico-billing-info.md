@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ ms.custom:
 - commerce_billing
 monikerRange: o365-worldwide
 ms.date: 11/20/2020
-ms.openlocfilehash: 15b29887fcfd301e303d0918e5f3efc2acd7e908
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b60bbf3cd626b81f03c4b0706247d8ada03a8246
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219164"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163661"
 ---
 # <a name="billing-information-for-microsoft-365-for-business-in-mexico"></a>メキシコのビジネスMicrosoft 365請求情報
 

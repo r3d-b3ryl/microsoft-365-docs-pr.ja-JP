@@ -10,18 +10,18 @@ metadata:
   ms.topic: article
   ms.service: o365-administration
   ms.custom: commerce_vl
-  localization_priority: Normal
+  ms.localizationpriority: medium
   description: ダウンロードに関してよく寄せられるMicrosoft 365 管理センター質問です。
-  ms.openlocfilehash: c9ac712e84fd60e96ba3fa8749cacda76aa0c354
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.openlocfilehash: 5ac5fb32f968902e772c5f98beb425d74f154ac8
+  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59190351"
+  ms.lasthandoff: 10/06/2021
+  ms.locfileid: "60163638"
 title: よく寄せられる質問のダウンロード
 summary: ''
 sections:
-- name: 全般
+- name: 一般
   questions:
   - question: >
       アプリケーションからソフトウェアをダウンロードするための要件Microsoft 365 管理センター?

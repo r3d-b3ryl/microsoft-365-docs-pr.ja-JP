@@ -6,7 +6,7 @@ manager: serdars
 ms.audience: ITPro
 ms.topic: article
 ms.service: msteams
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 - m365solution-overview
@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-jun2020
 f1.keywords: NOCSH
 description: 組織に適切な音声ソリューションを選択Teams展開する方法について学習します。
-ms.openlocfilehash: 359242ea66fc1be9af18ff10cb7e33fe26ddd83e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c221dc4258dbb6a2f91814c69f0efec405bde38f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163441"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60162100"
 ---
 # <a name="plan-and-deploy-a-teams-voice-solution"></a>Teams 音声ソリューションを計画し展開する
 

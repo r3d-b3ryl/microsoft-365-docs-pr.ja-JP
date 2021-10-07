@@ -8,14 +8,14 @@ audience: admin
 ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
-localization_priority: medium
+ms.localizationpriority: medium
 description: 詳しくは、アプリの計画を立Microsoft Viva トピック。
-ms.openlocfilehash: c237717d50dfda5b89f7b12b1222e59ed5bc16d4
-ms.sourcegitcommit: d1a93f25323a0e6ce3b898bf9dc57dcef27eda67
+ms.openlocfilehash: dd7b56342a3881c25be65a62028d024aa55c35ce
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60126988"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163194"
 ---
 # <a name="plan-for-microsoft-viva-topics"></a>計画を立Microsoft Viva トピック
 

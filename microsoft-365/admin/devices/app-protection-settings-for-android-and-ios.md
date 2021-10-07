@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -26,12 +26,12 @@ search.appverid:
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: アプリ管理ポリシーを作成、編集、または削除し、Android デバイスまたは iOS デバイス上の作業ファイルを保護する方法について説明します。
-ms.openlocfilehash: f11782a4a2671f1a5e5dc467f181421817634880
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: 716995861963480b2d9fbf019db1bd80cfa5cff4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59933281"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165630"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>Android または iOS デバイスのアプリ保護設定を設定する
 
@@ -84,7 +84,7 @@ ms.locfileid: "59933281"
 次の設定は、ユーザーのデバイスが紛失したり盗難された場合に、作業ファイルを保護するために使用できます。
 
 
-|設定値  <br/> |説明  <br/> |
+|Setting  <br/> |説明  <br/> |
 |:-----|:-----|
 |この日数後、非アクティブなデバイスから作業ファイルを削除する  <br/> |ここで指定した日数のデバイスを使用しない場合、デバイスに保存されている作業ファイルは自動的に削除されます。  <br/> |
 |ユーザーにすべての作業ファイルを OneDrive for Business に強制的に保存させる  <br/> |この設定が **[オン] の場合**、作業ファイルに使用できる保存場所は、OneDrive for Business。  <br/> |
@@ -95,7 +95,7 @@ ms.locfileid: "59933281"
 次の設定は、ユーザーが Office 作業ファイルにアクセスする方法を管理するために使用できます。
 
 
-|設定値  <br/> |説明  <br/> |
+|Setting  <br/> |説明  <br/> |
 |:-----|:-----|
 |Office アプリにアクセスするのに暗証番号 (PIN) または指紋認証を使用する必要がある  <br/> |この設定が **[オン] の** 場合、ユーザーはモバイル デバイスでアプリを使用する前に、ユーザー名とパスワードに加えて、別の形式の認証Office必要があります。<br/> |
 |ログインに指定の回数失敗した場合に PIN をリセットする  <br/> |承認されていないユーザーが PIN をランダムに推測するのを防ぐため、指定した回数、エントリを間違うと、PIN がリセットされます。  <br/> |

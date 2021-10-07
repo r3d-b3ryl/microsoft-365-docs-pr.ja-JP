@@ -10,18 +10,18 @@ search.appverid: met150
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8f842c46f87e51d026f1e1793e3cc73d25b0739c
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: ff3fa21735649b0c90bd2f9d07aa2c3307024f5a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400644"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60162508"
 ---
 # <a name="microsoft-defender-for-endpoint-and-other-microsoft-solutions"></a>エンドポイント向け Microsoft Defender および他の Microsoft ソリューション
 
@@ -79,7 +79,7 @@ Microsoft 365 Defender では、Microsoft Defender for Endpoint およびさま�
 
 [詳細については、Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [統合などの高度な機能を構成する](advanced-features.md)
 - [Microsoft 365 Defender概要](/microsoft-365/security/defender/microsoft-threat-protection)

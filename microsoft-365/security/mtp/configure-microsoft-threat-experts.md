@@ -10,16 +10,16 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: v-maave
 author: martyav
-localization_priority: normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.openlocfilehash: 1137ef50c5e3fb72b6bc0532b021de05c7eff1ce
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b62f847a1a8b7bef15c33f97d5d64a9ec58dd7cb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164702"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60162264"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities-through-microsoft-365-defender"></a>管理を通じてMicrosoft 脅威エキスパート機能を構成Microsoft 365 Defender
 
@@ -32,7 +32,7 @@ ms.locfileid: "59164702"
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 > [!IMPORTANT]
 > 適用する前に、microsoft Technical Service プロバイダーとアカウント チームと一緒に、Microsoft 脅威エキスパート - ターゲット攻撃通知管理脅威検出サービスの適格性要件について説明してください。

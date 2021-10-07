@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
 description: ユーザーが自分のデバイスMicrosoft 365 PC に持っている会社のデータを削除するには、ビジネス向けアプリをWindowsしてください。
-ms.openlocfilehash: bd3995b97803725c3d7d91e420387ff114876f26
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: ec5734154913148945e3c37d80e6a5c994af85f9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59933257"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165378"
 ---
 # <a name="remove-company-data-from-devices"></a>デバイスから会社のデータを削除する
 

@@ -11,7 +11,7 @@ metadata:
   author: kwekua
   ms.author: kwekua
   ms.date: 11/08/2019
-  localization_priority: Priority
+  ms.localizationpriority: high
   ms.custom: AdminSurgePortfolio
   ms.collection: Adm_TOC
 highlightedContent:
@@ -32,7 +32,7 @@ productDirectory:
     - title: 作業の開始
       imageSrc: 'https://docs.microsoft.com/office/media/icons/sign-up-blue.svg'
       summary: Microsoft 365 にサインアップしてセットアップします。
-      url: setup/index.yml
+      url: /admin
     - title: データの移行
       imageSrc: 'https://docs.microsoft.com/office/media/icons/migration-blue.svg'
       summary: 別のサービスから Microsoft 365 にデータを移動します。
@@ -55,16 +55,16 @@ additionalContent:
           url: admin-overview/about-the-admin-center.md
         - title: ユーザーとグループ
           summary: パスワードの管理、ユーザーの追加と削除、グループのセットアップと管理、ゲスト アクセスの管理、およびユーザー ライセンスの割り当てを行います。
-          url: add-users/index.yml
+          url: /admin
         - title: メールと予定表
           summary: メール設定、配布グループ、セキュリティ設定、および共有メールボックスの設定を管理します。
-          url: email/index.yml
+          url: /admin
         - title: ドメイン
           summary: ドメインの概要、ドメインのセットアップと管理、DNS レコードの更新について説明します。
           url: setup/add-domain.md
         - title: データとサービス
           summary: サービスの状態を監視し、データをバックアップし、アドインをインストールして、最新のアプリに更新します。
-          url: manage/index.yml
+          url: /admin
         - title: サブスクリプションと課金
           summary: '[課金]、[サブスクリプション]、[製品のライセンス] を管理し、支払方法を更新し、追加のサービスやストレージを購入します。'
           url: ../commerce/index.yml
@@ -73,7 +73,7 @@ additionalContent:
           url: security-and-compliance/secure-your-business-data.md
         - title: 顧客と連携する
           summary: ドキュメントを共有し、Teams を使用して共同作業と打ち合わせを行います。
-          url: work-with-customers/index.yml
+          url: /admin
         - title: トラブルシューティング
           summary: Office の製品またはサービスに関する問題のトラブルシューティングと修正に役立つリソースにアクセスします。
           url: 'https://docs.microsoft.com/office/troubleshoot/'

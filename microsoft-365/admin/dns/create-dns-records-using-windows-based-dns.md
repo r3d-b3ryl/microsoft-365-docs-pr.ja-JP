@@ -1,5 +1,5 @@
 ---
-title: Microsoft の DNS レコードを作成するには、Windowsベースの DNS を使用します。
+title: Windows ベースの DNS を使って Microsoft の DNS レコードを作成する
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -23,14 +23,14 @@ search.appverid:
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
 description: ドメインを確認し、Microsoft の電子メール、Skype for Business、その他のサービスWindows DNS レコードを設定する方法について説明します。
-ms.openlocfilehash: 3a1b11eb9663a68f7787b026c7c7402db8ef4a854e4b9ecdb3356bb1074e2610
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 43cc3679f33a929545ed3d9deec388126aec853c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826209"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165294"
 ---
-# <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Microsoft の DNS レコードを作成するには、Windowsベースの DNS を使用します。
+# <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Windows ベースの DNS を使って Microsoft の DNS レコードを作成する
 
  探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.yml)** を参照してください。 
    
@@ -41,7 +41,7 @@ Windows ベースの DNS を使用して独自の DNS レコードをホスト�
 DNS レコードを追加した後のメール フローなどの問題に関する問題については、「ドメイン名または DNS レコードを変更した後の問題のトラブルシューティング [」を参照してください](../get-help-with-domains/find-and-fix-issues.md)。 
   
 ## <a name="find-your-dns-records-in-windows-based-dns"></a>Windows ベース DNS 内の DNS レコードを検索する
-<a name="BKMK_find_your_dns_1"></a>ドメインの DNS レコードがあるページに移動します。 サーバー 2008 で作業している場合Windows[実行の開始]**に移動**  >  **します**。 作業している場合は、Windows Server 2012キーを押Windows r を **押します**。 **「dnsmgmnt.msc」と** 入力し **、[OK] を選択します**。 DNS マネージャーで、[前方参照領域 **\<DNS server name\> \> ] を展開します**。 ドメインを選択します。 これで、DNS レコードを作成する準備ができました。
+<a name="BKMK_find_your_dns_1"></a>ドメインの DNS レコードがあるページに移動します。 サーバー 2008 で作業している場合Windows[実行の開始]**に移動**  >  **します**。 Windows Server 2012 を使っている場合は、Windows キーを押して、**R** キーを押します。 「**dnsmgmnt.msc**」と入力して、[**OK**] を選択します。 DNS マネージャーで、[前方参照領域 **\<DNS server name\> \> ] を展開します**。 ドメインを選択します。 これで DNS レコードを作成する準備が整いました。
    
 ## <a name="add-mx-record"></a>MX レコードの追加
 <a name="BKMK_add_MX"> </a>
@@ -51,7 +51,7 @@ DNS レコードを追加した後のメール フローなどの問題に関す
 - Microsoft の [DNS レコードの追加] Exchange Onlineの [MX] 行から、[ポイント先アドレス] の下に一覧表示されている値をコピーします。 この値は、このタスクで作成するレコードで使用します。 
 - ドメインの [DNS マネージャー] ページで、[アクション メール エクスチェンジャー  >  **( MX) ] に移動します**。 ドメインのこのページを見つけるには、「DNS レコードを検索する」を参照[Windowsベースの DNS を参照してください](#find-your-dns-records-in-windows-based-dns)。  
 - [新しい **リソース レコード]** ダイアログ ボックスで、フィールドが次の値に正確に設定されている必要があります。 
-    - ホスト名: 
+    - Host Name:  
     - @Address: ここで、Microsoft からコピーしたアドレス値にポイントを貼り付けます。  
     - Pref: 
 - [**変更を保存**] を選択します。
@@ -78,14 +78,14 @@ SIP CNAME レコードを追加します。
     - ホスト名: sip
     - 種類: CNAME
     - アドレス: sipdir.online.lync.com
-- **[OK]** をクリックします。
+- **[OK]** を選択します。
 
 オンライン自動Skype for Business CNAME レコードを追加します。  
 - ドメインの [DNS マネージャー] ページで、[アクション \> **CNAME] (CNAME) に移動します**。 [新しい **リソース レコード]** ダイアログ ボックスで、フィールドが次の値に正確に設定されている必要があります。  
     - ホスト名: lyncdiscover
     - 種類: CNAME
     - アドレス: webdir.online.lync.com
-- **[OK]** をクリックします。
+- **[OK]** を選択します。
    
 ### <a name="add-two-cname-records-for-mobile-device-management-mdm-for-microsoft"></a>Microsoft のモバイル デバイス管理 (MDM) に 2 つの CNAME レコードを追加する
 
@@ -99,7 +99,7 @@ MDM Enterpriseregistration CNAME レコードを追加します。
 - ホスト名: enterpriseregistration
 - 種類: CNAME
 - アドレス: enterpriseregistration.windows.net
-- **[OK]** をクリックします。 
+- **[OK]** を選択します。 
 
 MDM Enterpriseenrollment CNAME レコードを追加します。 
 -  ドメインの [DNS マネージャー] ページで、[アクション \> **CNAME] (CNAME) に移動します**。 
@@ -107,7 +107,7 @@ MDM Enterpriseenrollment CNAME レコードを追加します。
     - ホスト名: enterpriseenrollment
     - 種類: CNAME
     - アドレス: enterpriseenrollment-s.manage.microsoft.com
-- **[OK]** をクリックします。
+- **[OK]** を選択します。
    
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>迷惑メールの防止に役立つ、SPF の TXT レコードを追加する
 <a name="BKMK_add_TXT"> </a>
@@ -127,7 +127,7 @@ MDM Enterpriseenrollment CNAME レコードを追加します。
 -  レコードの種類: TXT
 -  アドレス: v=spf1 include:spf.protection.outlook.com -all 
          
--  **[OK]** をクリックします。
+-  **[OK]** を選択します。
    
 ## <a name="add-srv-records"></a>SRV レコードの追加
 <a name="BKMK_add_SRV"> </a>
@@ -144,7 +144,7 @@ Microsoft に必要な 2 つの SRV レコードを追加します。
     -  重み: 1
     -  ポート: 443
     -  ターゲット (ホスト名): sipdir.online.lync.com
--  **[OK]** をクリックします。 
+-  **[OK]** を選択します。 
 
 
 オンライン フェデレーションの SIP SRV レコードSkype for Business追加します。  
@@ -157,7 +157,7 @@ Microsoft に必要な 2 つの SRV レコードを追加します。
     -  重み: 1
     -  ポート: 5061
     -  ターゲット (ホスト名): sipfed.online.lync.com
--  **[OK]** をクリックします。 
+-  **[OK]** を選択します。 
    
 ## <a name="add-a-record-to-verify-that-you-own-the-domain-if-you-havent-already"></a>まだドメインを所有していない場合は、レコードを追加してドメインを所有している必要があります。
 <a name="BKMK_verify"> </a>

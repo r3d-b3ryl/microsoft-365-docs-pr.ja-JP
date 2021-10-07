@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -17,12 +17,12 @@ search.appverid:
 - GEA150
 ms.assetid: 6f70de1b-a64d-4498-bfbd-be8c83a9c0fc
 description: 組織の連絡先情報を更新し、受信Microsoft 365製品関連の通信を選択します。
-ms.openlocfilehash: afb69c52ba89c2a9e6ff7af014a74b0abfda4e5e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: eeda3d78dcc4b33995a78e1dc5763fee07109caa
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176343"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164454"
 ---
 # <a name="change-your-contact-preferences-for-communications-from-microsoft"></a>Microsoft からの連絡を受け取る連絡先の設定を変更する
 
@@ -45,7 +45,7 @@ ms.locfileid: "59176343"
 
 5. **[保存]** を選択します。
   
-Office 365 Enterprise、Microsoft 365 Business Standard、および Microsoft 365 Business Basic の場合、Microsoft 365 の管理者として初めてサインアップした場合、組織のユーザーの国または地域によっては、製品関連の通信を受信するためにユーザーが自動的にサインアップされる場合があります。
+Office 365 Enterprise、Microsoft 365 Business Standard、Microsoft 365 Business Basic の場合、Microsoft 365 の管理者として初めてサインアップした場合は、組織内のユーザーの国または地域に応じて、ユーザー製品関連の通信を受信するために自動的にサインアップされる場合があります。
   
 請求に関する質問の答えについては、以下を参照してください。
   

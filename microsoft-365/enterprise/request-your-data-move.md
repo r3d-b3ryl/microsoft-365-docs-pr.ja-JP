@@ -7,7 +7,7 @@ ms.date: 12/10/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: 既存のOffice 365ユーザーは、その国のサービス データを新しい地域に移動Microsoft 365前に要求を提出する必要があります。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fa3464a33143f442a38adb8693bb77b9d174114d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 18e21343eacaf9201ac65c4c1ff9c5b935d2c3fe
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215704"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163278"
 ---
 # <a name="how-to-request-your-data-move"></a>データ移行をリクエストする方法
 
@@ -70,7 +70,7 @@ ms.locfileid: "59215704"
 
 2020 年 1 月の現在、対象となるOffice 365のお客様は、チャット サービス データの移行Microsoft Teamsオプトインできます。  以前に移行を選択したお客様Data Residency、ローカル データセンター geo Teams移行する必要があります。  これらの顧客は追加のアクションを必要とします。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [コア データを新しい Office 365 データ センター geo に移行する](moving-data-to-new-datacenter-geos.md)
 

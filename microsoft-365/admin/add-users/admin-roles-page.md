@@ -8,7 +8,7 @@ manager: svidican
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 管理者の役割は、ビジネス機能にマップされ、管理センターで特定のタスクを実行するためのアクセス許可を提供します。 たとえば、サービス管理者が Microsoft のサポート チケットを開きます。
-ms.openlocfilehash: b6e787fe4eb72ef5a6d8da78391839509a38b446
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 8232e95649ac894e8a024a2d2ac4e7b4261cb1f2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773645"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60161920"
 ---
 # <a name="get-started-with-the-roles-page"></a>[役割] ページの使用を開始する
 
@@ -64,7 +64,7 @@ ms.locfileid: "59773645"
 
 Microsoft オンライン サービス全体のほとんどの管理機能とデータへのグローバル アクセスが必要なユーザーにグローバル管理者の役割を割り当てる。 グローバルなアクセスを多くのユーザーに許可することはセキュリティ上のリスクであるため、2 〜 4 人のグローバル管理者を配置することをお勧めします。 すべてのユーザーのパスワードをリセットし、ドメインを追加および管理できるのは、グローバル管理者のみです。 また、Microsoft サポートに対するサポート要求を開いて管理できます。 Microsoft オンライン サービスにサインアップしたユーザーが自動的にグローバル管理者になります。詳細 [については、以下を参照してください。](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
-### <a name="global-reader"></a>グローバルリーダー
+### <a name="global-reader"></a>グローバル閲覧者
 
 グローバル管理者が表示できるすべての管理センターで管理機能と設定を表示する必要があるユーザーに、グローバル リーダー管理者の役割を割り当てる。 グローバル リーダー管理者の役割は、設定を編集できない。 [詳細情報](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 

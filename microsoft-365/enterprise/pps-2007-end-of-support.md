@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 search.appverid:
 - PSV120
@@ -16,12 +16,12 @@ ms.assetid: 89d9feee-2285-419c-8c14-0f7f583536e0
 f1.keywords:
 - NOCSH
 description: PerformancePoint Server 2007、ProClarity、および SharePoint Server 2007 はサポートの終了に達しました。 この記事を読んで、BI ソリューションのアップグレードを計画する方法についてお読みください。
-ms.openlocfilehash: 88818fe4ecc0a2be7a63abe615bd4206c50ead3b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f4e0662109cc5bdbdfbf922086715a0de4d91c37
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220781"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163314"
 ---
 # <a name="performancepoint-server-2007-end-of-support-roadmap"></a>PerformancePoint Server 2007 のサポート終了ロードマップ
 
@@ -151,6 +151,6 @@ PerformancePoint Server 2007 は、サーバー 2007 からSharePoint販売さ�
 
 オンプレミスにアップグレードする場合も、Microsoft 365に移行する場合も、Microsoft パートナーと一緒に作業することをお勧めします。 認定パートナーは、ビジネス ニーズに最適なソリューションを特定し、展開に役立ちます。 Microsoft パートナー [センターにアクセスし](https://go.microsoft.com/fwlink/?linkid=841249)、検索フィルターを使用してソリューション プロバイダーを検索します。
   
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [Office 2007 のサーバーとクライアントからのアップグレードに役立つリソース](upgrade-from-office-2007-servers-and-products.md)

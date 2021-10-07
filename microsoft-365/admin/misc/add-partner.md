@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
 description: サブスクリプションからパートナーを購入、変更、またはMicrosoft 365の時点でレコードのパートナーを追加します。
-ms.openlocfilehash: 78419dd6d1370475c0565c0ad072a7b54639ce43
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2347fc6f90032e07c5c09021194f725e82d27249
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178864"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157184"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>サブスクリプション アドバイザー パートナーを追加、変更、または削除する
 
@@ -51,7 +51,7 @@ ms.locfileid: "59178864"
 
 ::: moniker-end
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 ::: moniker range="o365-worldwide"
 
@@ -103,7 +103,7 @@ Office 365 の管理者は、ユーザーの作成または編集、ユーザー
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
 2. [製品 **] タブ** で、編集するサブスクリプションを選択します。
 3. [サブスクリプションの詳細] ページの [パートナー情報] **で**、パートナー ネットワーク **ID を入力します**。 パートナーの Microsoft パートナー ネットワーク ID を取得するには、パートナーに確認を求める必要があります。
 4. **[追加]** を選択します。
@@ -137,7 +137,7 @@ Office 365 の管理者は、ユーザーの作成または編集、ユーザー
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
 ::: moniker-end
 
 ::: moniker range="o365-germany"
@@ -148,7 +148,7 @@ Office 365 の管理者は、ユーザーの作成または編集、ユーザー
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[お使いの製品]</a> ページの順に移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">お使いの製品</a>] ページの順に移動します。
 ::: moniker-end
 2. [サブスクリプションの詳細] ページの [パートナー情報] **で**、[削除] を **選択します**。
 3. 新しい **パートナーの Microsoft パートナー ネットワーク ID** を入力します。 パートナーに Microsoft パートナー ID についてたずね、パートナー ID を取得します。
@@ -169,7 +169,7 @@ Office 365 の管理者は、ユーザーの作成または編集、ユーザー
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[お使いの製品]</a> ページの順に移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">お使いの製品</a>] ページの順に移動します。
 
 ::: moniker-end
 

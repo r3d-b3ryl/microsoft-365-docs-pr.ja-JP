@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: ビジネス アプリ保護の設定Microsoft 365ユーザーのデバイスに適用されたことを確認するWindows 10します。
-ms.openlocfilehash: c0d5ded2eeda022984f86c33429572fa4a8671bb
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: 311da3efec8cd3ad57e722aea5a8c3888d1af7b0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59933377"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165330"
 ---
 # <a name="validate-device-protection-settings-for-windows-10-pcs"></a>PC のデバイス保護設定Windows 10する
 
@@ -62,5 +62,5 @@ ms.locfileid: "59933377"
   
 ## <a name="related-content"></a>関連コンテンツ
 
-[Microsoft 365ドキュメントとリソースの詳細](./index.yml)\
+[Microsoft 365ドキュメントとリソースの詳細](/admin)\
 [Windows 10 の PC のデバイス構成を設定する](protection-settings-for-windows-10-pcs.md)

@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 ms.custom: AdminSurgePortfolio
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
 description: ライセンスのないユーザーにライセンスを追加して、アカウントが無効になっているエラーを修正する方法について説明します。
-ms.openlocfilehash: e99072dda2ea5be12402cd0674cb4e8c8f53f22ac2cdaa6545b07ee9bd5e2cfe
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 314c58b3ca0f2b0ba949e99cd078c1311d29f5e3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53824349"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157196"
 ---
 # <a name="getting-an-account-disabled-error-in-outlook-on-the-web"></a>アカウントでアカウントが無効になっているエラーをOutlook on the web
 

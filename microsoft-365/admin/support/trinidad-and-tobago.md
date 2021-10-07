@@ -9,15 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-localization_priority: Normal
+ms.localizationpriority: medium
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9d841987299746b7c9dc7a0801a833f734316e11
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 28d33e4b44bfb7e090fb1c9fb941b1b710de6a71
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219633"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60156943"
 ---
 # <a name="contact-support-for-trinidad-amp-tobago"></a>トリニダード トバゴ &amp; のサポートに問い合わせ
 
