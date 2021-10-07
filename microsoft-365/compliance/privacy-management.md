@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - M365-privacy-management
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft のプライバシー管理は、組織が保管している個人データをMicrosoft 365、プライバシー リスクの特定と修復に役立つソリューションを提供します。
-ms.openlocfilehash: 9eddf65236befb35df7927e1ff3f7e4ddf6f03e7
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: d760e8a943086fb33395e0d5a8544616ee2f8be3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988669"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207201"
 ---
 # <a name="microsoft-privacy-management-preview"></a>Microsoft プライバシー管理 (プレビュー)
 

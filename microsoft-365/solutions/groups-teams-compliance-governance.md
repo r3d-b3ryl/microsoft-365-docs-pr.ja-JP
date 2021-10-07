@@ -7,7 +7,7 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 - m365solution-collabgovernance
@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: グループ、グループ、グループMicrosoft 365、およびTeamsのコンプライアンス オプションSharePointします。
-ms.openlocfilehash: 93bf2830d29f21f2239a17b9c2e381c46e85eea1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: acc32d6cff18e9535a29eeec773a5034480a3595
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179039"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207417"
 ---
 # <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>グループ、グループ、Microsoft 365、およびTeamsのコンプライアンス SharePointオプション
 
@@ -29,7 +29,7 @@ Microsoft 365共同作業時にコンプライアンスを維持するための�
 
 次の表に、コンプライアンス コントロールのクイック リファレンスを示します。Microsoft 365。 詳細については、次のセクションで説明します。
 
-|カテゴリ|説明|Reference|
+|カテゴリ|説明|リファレンス|
 |:-------|:----------|:--------|
 |情報の保持|||
 ||グループのメールとコンテンツSharePoint保持する|[SharePoint と OneDrive のアイテム保持ポリシーの詳細](../compliance/retention-policies-sharepoint.md)|
@@ -124,7 +124,7 @@ DLP ポリシーを使用すると、ユーザー、およびユーザー間でS
 
 - [Microsoft 365 Multi-Geo の計画](/microsoft-365/enterprise/plan-for-multi-geo)
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [コラボレーション ガバナンス計画のステップ バイ ステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
@@ -132,4 +132,4 @@ DLP ポリシーを使用すると、ユーザー、およびユーザー間でS
 
 [セキュリティとコンプライアンスのExchange Online](/exchange/security-and-compliance/security-and-compliance)
 
-[情報を保護する](../compliance/information-protection.md)
+[情報の保護](../compliance/information-protection.md)

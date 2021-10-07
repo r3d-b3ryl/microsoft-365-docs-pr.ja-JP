@@ -11,7 +11,7 @@ ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,19 +21,19 @@ search.appverid: MET150
 description: '[無料] からビジネス サブスクリプションMicrosoft Teams新しいMicrosoft 365アップグレードする方法について学習します。'
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 07/08/2020
-ms.openlocfilehash: ea80492344f76ead19aa5db1e504c2c52a9746c1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1382ec4e272b7bede184f47ebbaf64780907b40e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59167553"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200631"
 ---
 # <a name="upgrade-from-microsoft-teams-free-to-microsoft-365-for-business"></a>ビジネス向けMicrosoft Teams無料Microsoft 365アップグレード
 
 > [!IMPORTANT]
 > この記事は、インドのMicrosoft Teams組織にのみ適用されます。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 無料の組織をアップグレードするにはMicrosoft Teams無料の管理者Microsoft Teams必要があります。 無料の組織を作成した場合は、自動的に管理者Microsoft Teamsされます。
 

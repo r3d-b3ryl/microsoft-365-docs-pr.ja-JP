@@ -2,15 +2,13 @@
 title: Microsoft Defender for Endpoint on Mac の除外を構成および検証する
 description: Microsoft Defender for Endpoint on Mac の除外を指定して検証します。 除外は、ファイル、フォルダー、およびプロセスに対して設定できます。
 keywords: microsoft、 defender、 Microsoft Defender for Endpoint, mac, 除外, スキャン, ウイルス対策
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 96f7693e83bf4c3f4a1f14f39d99de55f7ef1979
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d779ee570e310a2d8a07154d73fe353db8bce907
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212183"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207885"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上のエンドポイント用 Microsoft Defender の除外を構成および検証する
 

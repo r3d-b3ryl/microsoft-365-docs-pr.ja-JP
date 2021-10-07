@@ -6,7 +6,7 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: テナントに適切な ID モデルMicrosoft 365展開し、強力なユーザー サインインを適用します。
-ms.openlocfilehash: cd67db1c70c4f3aaa4ec9784e1de6992dd40300a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 10757c2fd88df9b9e30905f067432a1034c24421
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192131"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176285"
 ---
 # <a name="step-3-identity-for-your-microsoft-365-for-enterprise-tenants"></a>手順 3. エンタープライズ テナントのMicrosoft 365 ID
 

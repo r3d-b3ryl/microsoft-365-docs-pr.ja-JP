@@ -12,7 +12,7 @@ ms.pagetype: security
 author: JoeDavies-MSFT
 ms.author: josephd
 ms.date: 02/02/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: a8e506e75c0eb9a42ab2a460fcc8c3370ffafbb2
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 7b1ce14e1ec01041ea9b3a298f4f794978054e5f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042676"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193053"
 ---
 # <a name="overview-of-automated-investigations"></a>自動調査の概要
 

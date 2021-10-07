@@ -10,18 +10,18 @@ metadata:
   ms.topic: article
   ms.service: o365-administration
   ms.custom: commerce_vl
-  localization_priority: Normal
+  ms.localizationpriority: medium
   description: Open プログラムのオンライン サービスのアクティブ化に関するよく寄せられる質問
-  ms.openlocfilehash: b00a5a06ba4f936811426d150542761ed4c5c08b
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.openlocfilehash: b8570097a056a574a638f2d3c6ed7a7dfe78fa99
+  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59190321"
+  ms.lasthandoff: 10/06/2021
+  ms.locfileid: "60193521"
 title: Open プログラムのオンライン サービスのアクティブ化に関するよく寄せられる質問
 summary: ''
 sections:
-- name: 全般
+- name: 一般
   questions:
   - question: >
       Open プログラム (Open、Open Value、Open Value Subscription) を通じて購入したオンライン サービスをアクティブ化する方法

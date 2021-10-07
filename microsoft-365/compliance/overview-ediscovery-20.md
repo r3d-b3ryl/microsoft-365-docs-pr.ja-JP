@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - m365-security-compliance
 - m365solution-aed
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: 詳細については、Advanced eDiscoveryのソリューションMicrosoft 365。 この記事では、内部および外部Advanced eDiscovery Microsoft 365を管理するためのツールである、Microsoft 365の概要を説明します。 また、法的調査を管理するために、Advanced eDiscoveryを使用するビジネス上の理由も枠に入ります。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b2806bb7c0043a9e47b07e96ab53a62725673247
-ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
+ms.openlocfilehash: 40ff0b39f71dd124f641a60e4431aebbc2c08793
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59498330"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201015"
 ---
 # <a name="overview-of-microsoft-365-advanced-ediscovery"></a>概要 Microsoft 365 Advanced eDiscovery
 

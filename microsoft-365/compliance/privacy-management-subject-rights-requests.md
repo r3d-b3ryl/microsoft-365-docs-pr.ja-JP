@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - M365-privacy-management
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft プライバシー管理のサブジェクト権限要求領域は、個人データを検索し、コンテンツのレビューとレポートの作成に関して共同作業を行う際に役立ちます。
-ms.openlocfilehash: 76c35bd7ad4ef557db75b61939ac5ebbaa001384
-ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
+ms.openlocfilehash: deb5bc50aa047cd336684e586ee3bf86286417c1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59481026"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207213"
 ---
 # <a name="manage-subject-rights-requests-in-privacy-management-preview"></a>プライバシー管理で件名の権利要求を管理する (プレビュー)
 

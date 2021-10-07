@@ -8,19 +8,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/22/2021
 ms.technology: mde
-ms.openlocfilehash: ae560e7072884d19f224df1af15e90d507826812
-ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
+ms.openlocfilehash: ff1863a24e352823fce6d1c9e57f228528cda016
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60124711"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176885"
 ---
 # <a name="onboard-the-windows-devices-using-configuration-manager"></a>Configuration Manager をWindowsデバイスのオンボード
 

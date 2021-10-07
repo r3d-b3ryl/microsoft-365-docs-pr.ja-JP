@@ -9,7 +9,7 @@ ms.date: 06/09/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: ユーザー Microsoft 365保持ラベルとポリシーを使用して、ユーザー環境で個人Microsoft 365管理します。
-ms.openlocfilehash: 62c2386ac8f9c5b31650df8be2c2a411d8b75959
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b131c90e83a2ce211d51af444dd570f71f3b8263
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192200"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176309"
 ---
 # <a name="govern-information-subject-to-data-privacy-regulation"></a>データプライバシー規制の対象となる情報を管理する
 
@@ -72,7 +72,7 @@ ms.locfileid: "59192200"
 
 ### <a name="develop-data-retention-schedules-for-containers-email-and-content"></a>コンテナー、電子メール、およびコンテンツのデータ保持スケジュールを開発する
 
-以下の点にご注意ください。
+以下の点にご注意ください:
 
 - 定義された情報の種類のデータ保持スケジュールを確立するには、保持または削除のスキームを実装するための前提条件と見なす必要があります。
 

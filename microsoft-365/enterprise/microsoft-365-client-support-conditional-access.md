@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: この記事では、条件付きアプリケーションをサポートするプラットフォーム、クライアント、および PowerShell モジュールAccess for Microsoft 365。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 763380429b8643c5dd01971117fccb040a9a0210
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: af2d5976b2026f837a8f5198f5ee8033117c2f0f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215953"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200127"
 ---
 # <a name="microsoft-365-client-app-support-conditional-access"></a>Microsoft 365クライアント アプリのサポート: 条件付きアクセス
 

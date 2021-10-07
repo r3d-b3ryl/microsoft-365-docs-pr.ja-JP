@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
 ms.custom: seo-marvel-apr2020
 description: PST ファイルをインポートする際に、Microsoft 365 インポート サービスのインテリジェント インポート機能を使用してデータをフィルター処理するMicrosoft 365。
-ms.openlocfilehash: b893c0678d2821855bfc09ee703e3aa4cb8119cb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0c321c4bcdb413c42c5a3edff1f19e2a34c093d1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191491"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200511"
 ---
 # <a name="filter-data-when-importing-pst-files"></a>PST ファイルをインポートするときに、データをフィルター処理する
 
@@ -113,11 +113,11 @@ PST インポート ジョブを作成した後、次の手順に従ってデー
   
     ![データ分析情報は、フィルター設定に基づいて更新されます。](../media/897e20fb-3b13-44c3-9d56-9f330750f2a3.png)
   
-    d.  [**次へ**] をクリックします。
+    d. [**次へ**] をクリックします。
   
     フィルター設定を示す状態ページが表示されます。 繰り返しますが、任意のフィルター設定を編集できます。
   
-    e.  [データ **のインポート] を** クリックしてインポートを開始します。 インポートされるデータの合計量が表示されます。 
+    e. [データ **のインポート] を** クリックしてインポートを開始します。 インポートされるデータの合計量が表示されます。 
   
     または
   
@@ -138,8 +138,8 @@ PST インポート ジョブを作成した後、次の手順に従ってデー
     |**メッセージ クラス ID**|**このメッセージ クラスを使用するメールボックス アイテム**|
     |:-----|:-----|
     |IPM。アクティビティ  <br/> |履歴項目  <br/> |
-    |IPM.Document  <br/> |ドキュメントとファイル (電子メール メッセージに添付されていない)  <br/> |
-    |IPM。ファイル  <br/> |(ument とIPM.Doc)  <br/> |
+    |IPM。ドキュメント  <br/> |ドキュメントとファイル (電子メール メッセージに添付されていない)  <br/> |
+    |IPM。ファイル  <br/> |(IPM と同じです。ドキュメント)  <br/> |
     |IPM。Note.IMC.Notification  <br/> |インターネット へのゲートウェイConnectであるインターネット メール Exchange Server送信されるレポート  <br/> |
     |IPM。Note.Microsoft.Fax  <br/> |FAX メッセージ  <br/> |
     |IPM。Note.Rules.Oof.Template.Microsoft  <br/> |アウトオブオフィスの自動表示メッセージ  <br/> |

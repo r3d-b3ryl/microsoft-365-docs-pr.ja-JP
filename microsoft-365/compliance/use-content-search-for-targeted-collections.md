@@ -12,19 +12,19 @@ ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 - SPO_Content
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
 description: 特定のメールボックスまたはサイト フォルダー内Microsoft 365 コンプライアンス センターを検索する対象となるコレクションを実行するには、フォルダー内のコンテンツ検索を使用します。
-ms.openlocfilehash: e5da234d78d2f26af70f3e69ff6a1917f9d99b34
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 51989a87d3ba402923f0c5dcaba74d73cb80448d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216273"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60187175"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>対象のコレクションにコンテンツ検索を使用する
 

@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - Adm_TOC
@@ -16,12 +16,12 @@ ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 description: ビジネスに大きな影響を与えるアカウントとの間で送信される、失敗したメールメッセージと遅延メール メッセージを監視します。
-ms.openlocfilehash: 95d5e703570b3a399335a0c26d7e953a277ccddf
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: b8762885cc54859cf927653abb14858c0094ea12
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59934205"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201351"
 ---
 # <a name="manage-and-monitor-priority-accounts"></a>優先アカウントを管理および監視する
 
@@ -94,6 +94,6 @@ ms.locfileid: "59934205"
 
 4. [優先度アカウント **] ページ** で、リストから削除するユーザーまたはユーザーを選択し、[アカウントの削除] **を選択します**。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
-[サーバーでの優先度アカウントのMicrosoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/using-priority-accounts-in-microsoft-365/ba-p/1873314)
+[Microsoft 365 での優先アカウント使用](https://techcommunity.microsoft.com/t5/microsoft-365-blog/using-priority-accounts-in-microsoft-365/ba-p/1873314)

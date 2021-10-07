@@ -2,26 +2,24 @@
 title: Android 用 Microsoft Defender for Endpoint - プライバシー情報
 description: プライバシー制御、プライバシーに影響を与えるポリシー設定を構成する方法、および Android 上の Microsoft Defender for Endpoint で収集された診断データに関する情報。
 keywords: microsoft、 defender、 Microsoft Defender for Endpoint, android, privacy, diagnostic
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6079c0d4a92f17c9c00fc3b3f060fec6858cb996
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 185ffab8d4fb67040d11dbf8b36459b94341a0d2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59223063"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176909"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android---privacy-information"></a>Android 用 Microsoft Defender for Endpoint - プライバシー情報
 

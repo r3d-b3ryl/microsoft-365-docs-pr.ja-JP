@@ -6,14 +6,14 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: scheduler
-localization_priority: Normal
+ms.localizationpriority: medium
 description: スケジューラの設定 Microsoft 365。
-ms.openlocfilehash: bebb2befa6a24f8913b70aa77ca66ef7e664e9d2
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 3315c362a6e6ae1eb4fa9bf54d388a89dd667136
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042568"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208039"
 ---
 # <a name="setting-up-scheduler-for-microsoft-365"></a>Scheduler for Microsoft 365 を設定する
 

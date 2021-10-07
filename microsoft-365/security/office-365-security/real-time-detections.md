@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.date: 05/05/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
@@ -16,12 +16,12 @@ description: エクスプローラーまたはリアルタイム検出を使用�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4d0a9ba7ee40c8ad97df745a20d6b5b3314bb3d8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9cced68d084bb5f4625f745dfd0f19db16cece9c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192290"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176381"
 ---
 # <a name="explorer-and-real-time-detections-basics"></a>エクスプローラーとリアルタイム検出の基本
 

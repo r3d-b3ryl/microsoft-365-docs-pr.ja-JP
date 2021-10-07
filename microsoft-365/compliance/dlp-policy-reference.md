@@ -8,7 +8,7 @@ ms.date: ''
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - SPO160
 - MET150
@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: DLP ポリシー コンポーネントと構成リファレンス
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 972b5a628f434bdfb989191cf5fcd8ca9bfcc2d0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b2cfc2e9387b9c29fd7bd6141046436254f88704
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219054"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201243"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>データ損失防止ポリシーリファレンス
 
@@ -107,12 +107,12 @@ DLP ポリシー テンプレートは、次の 4 つのカテゴリに事前に
 DLP ポリシーは、複数の場所にわたって機密情報を含むアイテムを検索して保護できます。
 
 
-|場所  |範囲を含める/除外する  |データ状態  |追加の前提条件 |
+|Location  |範囲を含める/除外する  |データ状態  |追加の前提条件 |
 |---------|---------|---------|---------|
-|Exchangeメールをオンラインで送信する |配布グループ | data-in-motion| いいえ |
-|SharePointサイト   |sites       | data-at-rest </br> data-in-use | いいえ|
-|OneDrive for Business アカウント| アカウントまたは配布グループ |data-at-rest </br> data-in-use|いいえ|
-|Teams チャットおよびチャネル メッセージ     | アカウントまたは配布グループ |data-in-motion </br> data-in-use |  いいえ       |
+|Exchangeメールをオンラインで送信する |配布グループ | data-in-motion| no |
+|SharePointサイト   |sites       | data-at-rest </br> data-in-use | no|
+|OneDrive for Business アカウント| アカウントまたは配布グループ |data-at-rest </br> data-in-use|no|
+|Teams チャットおよびチャネル メッセージ     | アカウントまたは配布グループ |data-in-motion </br> data-in-use |  no       |
 |Microsoft Cloud App Security (MCAS)   | クラウド アプリ インスタンス       |data-at-rest         | - [Microsoft 以外のクラウド アプリでデータ損失防止ポリシーを使用する](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
 |デバイス  |ユーザーまたはグループ         |data-at-rest </br>  data-in-use </br>  data-in-motion         |- [エンドポイントデータ損失Microsoft 365の詳細](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention) </br>- [エンドポイントのデータ損失防止の使用を開始する](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention) </br>- [エンドポイント DLP のデバイス プロキシとインターネット接続の設定を構成する](endpoint-dlp-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-endpoint-dlp)        |
 |オンプレミスリポジトリ (ファイル共有とSharePoint)    |リポジトリ         | data-at-rest         | - [データ損失防止Microsoft 365オンプレミス スキャナーの詳細](dlp-on-premises-scanner-learn.md#learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner) </br> - [データ損失防止オンプレミス スキャナーの使用を開始する](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
@@ -132,13 +132,13 @@ DLP ポリシーは、機密情報の種類 (SIT)、機密ラベル、または�
 
 |location|  コンテンツは SIT で定義できます|  コンテンツは、感度ラベルを定義できます|   コンテンツは保持ラベルで定義できます|
 |---------|---------|---------|---------|
-|Exchangeメールをオンラインで送信する|はい| はい|    いいえ|
+|Exchangeメールをオンラインで送信する|はい| はい|    no|
 |SharePointサイト|   はい|    はい|    はい|
 |OneDrive for Business アカウント|    はい|    はい|    はい|
-|Teamsチャットメッセージとチャネル メッセージ |  はい|    いいえ| no|
-|デバイス    |はい |  はい|    いいえ|
+|Teamsチャットメッセージとチャネル メッセージ |  はい|    no| no|
+|デバイス    |はい |  はい|    no|
 |Microsoft Cloud App Security|  はい|    はい|    はい|
-|オンプレミス リポジトリ|  はい|    はい|    いいえ|
+|オンプレミス リポジトリ|  はい|    はい|    no|
 
 > [!NOTE]
 > DLP では、電子メールおよび attachemnets の感度ラベルの検出がサポートされています。「DLP ポリシーで感度ラベルを条件[として使用する」を参照してください](dlp-sensitivity-label-as-condition.md#use-sensitivity-labels-as-conditions-in-dlp-policies)。
@@ -332,7 +332,7 @@ SIT には事前に定義された信頼 [**度が設定されています**](ht
 
 - **コンテンツが含** まれている場合を除く 
 
-### <a name="actions"></a>アクション 
+### <a name="actions"></a>Actions 
 
 包括的な ***conditions** _ および排他例外 _**_ フィルターを介してそれを行 _**_ うアイテムには、ルールで定義されているアクションが適用されます。 アクションをサポートするために必要なオプションを構成する必要があります。 たとえば、[アクセスを制限する] Exchangeを使用して [アクセスを制限する] を選択するか、Microsoft 365 *場所のコンテンツ* を暗号化する * アクションを選択する場合は、次のオプションから選択する必要があります。
 

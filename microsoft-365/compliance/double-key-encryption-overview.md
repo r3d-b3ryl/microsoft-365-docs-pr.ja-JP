@@ -9,15 +9,15 @@ ms.topic: conceptual
 ms.service: information-protection
 audience: Admin
 ms.reviewer: esaggese
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: ed07361f8c433a318342ae3c8ad750549992c285
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8cdc4d71609430dd7bcb19edc3b55c49a3b9401d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212664"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200535"
 ---
 # <a name="double-key-encryption-frequently-asked-questions"></a>二重キー暗号化に関するよく寄せられる質問
 
@@ -69,7 +69,7 @@ DKE ラベルは、他の感度ラベルと同じ言語にローカライズMicr
 
 ## <a name="can-i-convert-a-non-dke-label-to-a-dke-label"></a>DKE 以外のラベルを DKE ラベルに変換できますか?
 
-いいえ。 ラベルを作成した後は、DKE をラベルに追加できない。 代わりに、[ダブル キー暗号化を **使用する** ] を選択し、ラベルを作成するときに、ダブル キー暗号化サービスの URL を指定する必要があります。
+その必要はありません。 ラベルを作成した後は、DKE をラベルに追加できない。 代わりに、[ダブル キー暗号化を **使用する** ] を選択し、ラベルを作成するときに、ダブル キー暗号化サービスの URL を指定する必要があります。
 
 ## <a name="how-do-i-roll-my-dke-keys"></a>DKE キーをロールする方法
 

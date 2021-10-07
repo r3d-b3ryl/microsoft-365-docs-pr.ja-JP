@@ -7,7 +7,7 @@ ms.author: josephd
 manager: dansimp
 audience: ITPro
 ms.topic: article
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 79867d5d22a78fda9f5b2049688a8bc0b63e9feb
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: e0b93d3da939b8b6138033510f38cbc42f2818ec
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483257"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176561"
 ---
 # <a name="email-analysis-in-investigations-for-microsoft-defender-for-office-365"></a>Microsoft Defender for microsoft Defender for Office 365
 
@@ -95,6 +95,6 @@ ms.locfileid: "59483257"
 
 この例では、電子メールは悪意がありますが、メールボックスには含めではありません。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - [保留中または完了した修復アクションの表示](air-review-approve-pending-completed-actions.md)

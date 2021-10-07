@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
@@ -18,12 +18,12 @@ description: 管理者とエンド ユーザーは、分析のために Microsof
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ea2aa0fd8d325113a1891d40e392ac5e3be6e35b
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: 42c384966b5ba5b1f7e52e26212f60c446d9bc58
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988225"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60180665"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>分析のために、メッセージを手動で Microsoft に送信する
 

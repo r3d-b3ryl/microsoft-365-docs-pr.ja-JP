@@ -4,7 +4,7 @@ description: ServiceNow でチケットを作成および追跡する方法に�
 keywords: セキュリティ、Microsoft 365、M365、コンプライアンス、コンプライアンス センター、セキュリティ センター、ServiceNow、チケット、タスク、SNOW、接続
 ms.prod: m365-security
 ms.mktglfcycl: deploy
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: 1803d4408d50ecfd0e4f0a3c78016cd8914760f1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 89ceeb3b702e2c8f98a6270907f9c759833601f2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177416"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176633"
 ---
 # <a name="integrate-servicenow-tickets-into-the-microsoft-365-defender-portal-and-compliance-center"></a>ServiceNow チケットをポータルとコンプライアンス センター Microsoft 365 Defender統合する
 

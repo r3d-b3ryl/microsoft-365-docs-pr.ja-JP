@@ -5,17 +5,17 @@ keywords: Microsoft マネージド デスクトップ、Microsoft 365、サー�
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 20af244d14f8f29e0175fb5e8efdabff94ff9a2b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c10d7f59f31b3cfbd8baf34247e9fc4288751dd9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215244"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208087"
 ---
 # <a name="service-changes-and-communication"></a>サービスの変更とコミュニケーション
 

@@ -10,15 +10,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.custom: commerce_billing_payinfo
-localization_priority: Normal
+ms.localizationpriority: medium
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 393edf6470f651a17843a76cb139e47a1d3dfd83
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7bc8dd77b2fe2158ba328d0b48bc3472e1a92f4d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211094"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200667"
 ---
 # <a name="payment-information-for-tanzania"></a>タンザニアのお支払い情報
 

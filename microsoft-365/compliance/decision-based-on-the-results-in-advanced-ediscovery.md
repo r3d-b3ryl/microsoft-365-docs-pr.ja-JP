@@ -9,7 +9,7 @@ titleSuffix: Office 365
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
@@ -17,12 +17,12 @@ ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
 description: ケース ファイルのレビュー セットのAdvanced eDiscoveryを決定するのに役立つデータを提供する方法について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: deb47c0c795a828804722085f8cfa3b002580307
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 32682690c6febac247d67e3b78f56d1f71b9a2fb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571364"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207357"
 ---
 # <a name="decisions-based-on-relevance-results-in-advanced-ediscovery"></a>関連性に基づく決定は、データのAdvanced eDiscovery
   

@@ -10,7 +10,7 @@ ms.topic: how-to
 f1_keywords:
 - ms.o365.cc.CustomizeExportReport
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: コンテンツ検索の実際の結果をエクスポートする代わりに、Microsoft 365 コンプライアンス センターレポートをエクスポートできます。 レポートには、検索結果の概要と、エクスポートされる各アイテムに関する詳細情報を含むドキュメントが含まれる。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 715476f71a480555d9559165d997eb57f7c79abd
-ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
+ms.openlocfilehash: d5bef65905d6a93ab1eba51c7550824baca0e8ee
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59497814"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201183"
 ---
 # <a name="export-a-content-search-report"></a>コンテンツ検索のレポートをエクスポートする
 

@@ -9,17 +9,17 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: コンテンツを保存、収集、レビュー、エクスポートする方法については、Microsoft TeamsのAdvanced eDiscovery。
-ms.openlocfilehash: 462442d2319c2c199d39795b77b67c6dcefdb758
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1c52a3ea0c803af89f9529d6529bd7610ff05d80
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216354"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200295"
 ---
 # <a name="advanced-ediscovery-workflow-for-content-in-microsoft-teams-using-large-cases-preview"></a>Advanced eDiscoveryケースを使用して、Microsoft Teamsのワークフローを確認する (プレビュー)
 
@@ -271,7 +271,7 @@ Advanced eDiscovery で使用されるロジックは、Teams コンテンツの
 |FamilyId|チャット会話のトランスクリプト ファイルを識別する GUID。 添付ファイルには、ファイルが添付されたメッセージを含むトランスクリプト ファイルと同じ値がこのプロパティに設定されます。|
 |FileClass     |コンテンツの種類を示します。 チャットのTeamsは値です `Conversation` 。 これに対し、Exchangeメッセージの値はです `Email` 。|          |
 |MessageKind     | メッセージの種類プロパティ。 Teamsコンテンツに値があります `microsoftteams , im` 。 |
-|受信者     | トランスクリプト会話内でメッセージを受け取ったすべてのユーザーの一覧。|
+|Recipients     | トランスクリプト会話内でメッセージを受け取ったすべてのユーザーの一覧。|
 |TeamsChannelName     | トランTeamsのチャネル名またはプライベート チャネル名を指定します。|
 |||
 

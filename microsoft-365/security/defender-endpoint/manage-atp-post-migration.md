@@ -2,8 +2,6 @@
 title: 移行後の Microsoft Defender for Endpoint の管理
 description: Microsoft Defender for Endpoint への切り替えが行われたので、次に、脅威保護機能を管理します。
 keywords: 移行後、管理、運用、メンテナンス、使用率、Microsoft Defender for Endpoint、edr
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: deploy
@@ -11,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +18,12 @@ ms.collection:
 ms.topic: conceptual
 ms.date: 09/23/2021
 ms.reviewer: chventou
-ms.openlocfilehash: f55dababb3fe0a98f8be8594d453bc3b943c22af
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 1b0dfbb7996cde595fc4d133f1a946e8692d8941
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776898"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206901"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-post-migration"></a>Microsoft Defender for Endpoint の管理、移行後
 

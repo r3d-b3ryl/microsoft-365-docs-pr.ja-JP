@@ -11,18 +11,18 @@ ms.reviewer: shwetaj
 audience: ITPro
 ms.topic: article
 ms.prod: m365-security
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.custom:
 - next-gen
 - edr
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: adff178601ea5db452c94c3e2c1255e9820a8246
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: c5ef1b39856a8f54432789566355875a7b256fcb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59490789"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176861"
 ---
 # <a name="feedback-loop-blocking"></a>フィードバック ループのブロック
 

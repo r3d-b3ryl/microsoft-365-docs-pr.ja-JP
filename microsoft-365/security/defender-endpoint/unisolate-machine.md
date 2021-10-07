@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 848d422828a4c0a8c8e5c7aa63c31f0727ea12f4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a6a0247703ad72360d6409b38047ca42301a456d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164790"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207765"
 ---
 # <a name="release-device-from-isolation-api"></a>分離 API からデバイスを解放する
 
@@ -60,7 +60,7 @@ ms.locfileid: "59164790"
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
 アプリケーション|Machine.Isolate|'分離マシン'
-委任 (職場または学校アカウント)|Machine.Isolate|'分離マシン'
+委任 (職場または学校のアカウント)|Machine.Isolate|'分離マシン'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:

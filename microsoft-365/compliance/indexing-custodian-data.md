@@ -9,19 +9,19 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: 保管担当者を Advanced eDiscovery ケースに追加すると、部分的にインデックスが作成されたと見なされたコンテンツが再処理され、完全に検索可能になります。
-ms.openlocfilehash: 8a43b0cd9b7fcac1745b917dc5a1c198fa2a1e61
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 205594031bcfb65b882d10217ccdcd10e4ed014d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175848"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201051"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>カストディアン データの詳細なインデックス処理
 
@@ -41,7 +41,7 @@ ms.locfileid: "59175848"
 
 高度なインデックス作成プロセスが完了したら、再処理の有効性を理解できます。  ケースの [処理] タブの[高度なインデックス作成結果] ビューで、ハイブリッド インデックスに追加されたアイテムの数が *グラフに一覧表示されます*。  ハイブリッドインデックスは、Advanced eDiscovery が再処理されたコンテンツを保存する場所です。
 
-このビューには、修復が必要なアイテムの数と、ファイルの種類別のエラーの別のグラフも含まれます。 詳しくは、次のトピックを参照してください。
+このビューには、修復が必要なアイテムの数と、ファイルの種類別のエラーの別のグラフも含まれます。 詳細については、以下を参照してください。
 
 - [データ処理中のエラー修復](error-remediation-when-processing-data-in-advanced-ediscovery.md)
 

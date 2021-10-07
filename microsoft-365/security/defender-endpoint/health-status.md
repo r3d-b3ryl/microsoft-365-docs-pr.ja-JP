@@ -2,26 +2,24 @@
 title: エージェントの正常性に関する問題の調査
 description: mdatp 正常性コマンドを実行するときに返される値について説明します。
 keywords: mdatp の正常性、コマンド、正常性、状態、コマンド、オンボーディングの状態
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1480e4322c59d841e4f24fecb55f2e5453471798
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f43905fe3487f44d3736e098c19964eaad3bf126
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221874"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206973"
 ---
 # <a name="investigate-agent-health-issues"></a>エージェントの正常性に関する問題の調査
 
@@ -41,7 +39,7 @@ ms.locfileid: "59221874"
 |---|---|
 |automatic_definition_update_enabled|True の場合は、自動ウイルス対策定義の更新プログラムが有効になっている場合は false。それ以外の場合は false。|
 |cloud_automatic_sample_submission_consent|現在のサンプル申請レベル。 次のどちらかの値にすることができます。 <ul><li>**なし**: 疑わしいサンプルは Microsoft に送信されません。</li><li>**セーフ**: 個人を特定できる情報 (PII) を含む疑わしいサンプルだけが自動的に送信されます。 これは、この設定の既定値です。</li><li>**All**: すべての疑わしいサンプルが Microsoft に送信されます。</li></ul>|
-|cloud_diagnostic_enabled|オプションの診断データ収集が有効な場合は True、それ以外の場合は false。 Defender for Endpoint および他の製品およびサービス (Microsoft Defender ウイルス対策 および Windows 10に関する詳細については[、「Microsoft Privacy Statement」を参照してください](https://go.microsoft.com/fwlink/?linkid=827576)。|
+|cloud_diagnostic_enabled|オプションの診断データ収集が有効な場合は True、それ以外の場合は false。 Defender for Endpoint および他の製品およびサービス (Microsoft Defender ウイルス対策 および Windowsに関する詳細については[、「Microsoft Privacy Statement」を参照してください](https://go.microsoft.com/fwlink/?linkid=827576)。|
 |cloud_enabled|True の場合は、クラウド配信の保護が有効になっている場合、それ以外の場合は false。|
 |conflicting_applications|Microsoft Defender for Endpoint と競合している可能性があるアプリケーションの一覧。 このリストには、互換性の問題が発生することが知られている他のセキュリティ製品や他のアプリケーションが含まれますが、これらに限定されません。|
 |definitions_status|ウイルス対策定義の状態。|

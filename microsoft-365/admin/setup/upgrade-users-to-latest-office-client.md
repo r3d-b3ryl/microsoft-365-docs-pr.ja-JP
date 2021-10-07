@@ -7,9 +7,10 @@ author: kwekuako
 manager: scotv
 audience: Admin
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
+- Adm_TOC
 search.appverid:
 - BCS160
 - MET150
@@ -23,12 +24,12 @@ ms.custom:
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: 組織のユーザー向けMicrosoft OfficeクライアントにOfficeアップグレードする方法について学習します。
 ms.topic: article
-ms.openlocfilehash: 7e4b8ce182ff2eefea514fc8621e23e308658e47
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 0dad3c22e9011dd0453f719178d94ef67138220c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776250"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200955"
 ---
 # <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>ビジネス ユーザー Microsoft 365最新のクライアントにアップグレードOfficeする
 

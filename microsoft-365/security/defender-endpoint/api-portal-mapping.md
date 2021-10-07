@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3f3eef756d37bf1552120a05e351c844b37b863b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4a9539d075c5428374972e8f7398ff2f326a587f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177743"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207153"
 ---
 # <a name="microsoft-defender-for-endpoint-detections-api-fields"></a>Microsoft Defender for Endpoint detections API フィールド
 
@@ -54,21 +54,21 @@ ms.locfileid: "59177743"
 > |ポータル ラベル|SIEM フィールド名|ArcSight フィールド|値の例|説明|
 > |---|---|---|---|---|
 > |1|AlertTitle|name|Microsoft Defender AV が 「ミカッツ」 の重大度の高いマルウェアを検出しました|すべての検出で使用可能な値。|
-> |2|重要度|deviceSeverity|高|すべての検出で使用可能な値。|
+> |2|重要度|deviceSeverity|高い|すべての検出で使用可能な値。|
 > |3|カテゴリ|deviceEventCategory|マルウェア|すべての検出で使用可能な値。|
 > |4 |検出ソース|sourceServiceName|ウイルス対策|Microsoft Defender ウイルス対策または Defender for Endpoint。 すべての検出で使用可能な値。|
-> |5 |MachineName|sourceHostName|desktop-4a5ngd6|すべての検出で使用可能な値。|
+> |5|MachineName|sourceHostName|desktop-4a5ngd6|すべての検出で使用可能な値。|
 > |6 |FileName|fileName|Robocopy.exe|ファイルまたはプロセスに関連付けられた検出に使用できます。|
 > |7 |FilePath|filePath|C:\Windows\System32\Robocopy.exe|ファイルまたはプロセスに関連付けられた検出に使用できます。|
 > |8 |UserDomain|sourceNtDomain|CONTOSO|Defender for Endpoint の動作ベースの検出に使用できる、アクティビティを実行しているユーザー コンテキストのドメイン。|
 > |9 |UserName|sourceUserName|liz.Bean|Defender for Endpoint の動作ベースの検出に使用できる、アクティビティを実行しているユーザー コンテキスト。|
-> |10 |Sha1|fileHash|3da065e07b990034e9db7842167f70b63aa5329|ファイルまたはプロセスに関連付けられた検出に使用できます。|
+> |10|Sha1|fileHash|3da065e07b990034e9db7842167f70b63aa5329|ファイルまたはプロセスに関連付けられた検出に使用できます。|
 > |11|Sha256|deviceCustomString6|ebf54f745dc81e1958f75e4ca91dd0ab989fc9787bb6b0bf993e2f5|Microsoft Defender AV 検出に使用できます。|
 > |12 |Md5|deviceCustomString5|db979c04a99b96d370988325bb5a8b21|Microsoft Defender AV 検出に使用できます。|
 > |13|ThreatName|deviceCustomString1|HackTool:Win32/ミカッツ!dha|Microsoft Defender AV 検出に使用できます。|
 > |14 |IpAddress|sourceAddress|218.90.204.141|ネットワーク イベントに関連付けられた検出に使用できます。 たとえば、「悪意のあるネットワーク宛先への通信」などです。|
 > |15 |Url|requestUrl|down.esales360.cn|ネットワーク イベントに関連付けられた検出に使用できます。 たとえば、「悪意のあるネットワーク宛先への通信」などです。|
-> |16 |RemediationIsSuccess|deviceCustomNumber2|TRUE|Microsoft Defender AV 検出に使用できます。 ArcSight の値は、TRUE の場合は 1、FALSE の場合は 0 です。|
+> |16|RemediationIsSuccess|deviceCustomNumber2|TRUE|Microsoft Defender AV 検出に使用できます。 ArcSight の値は、TRUE の場合は 1、FALSE の場合は 0 です。|
 > |17 |WasExecutingWhileDetected|deviceCustomNumber1|FALSE|Microsoft Defender AV 検出に使用できます。 ArcSight の値は、TRUE の場合は 1、FALSE の場合は 0 です。|
 > |18 |AlertId|外部ID|636210704265059241_673569822|すべての検出で使用可能な値。|
 > |19|LinkToWDATP|flexString1|`https://securitycenter.windows.com/alert/636210704265059241_673569822`|すべての検出で使用可能な値。|
@@ -101,7 +101,7 @@ ms.locfileid: "59177743"
 
 :::image type="content" alt-text="イメージ アクターアラート。" source="images/atp-mapping7.png" lightbox="images/atp-mapping7.png":::
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [エンドポイント向け Microsoft Defender で SIEM 統合を有効にする](enable-siem-integration.md)
 - [エンドポイント検出用の Microsoft Defender をプルする ArcSight の構成](configure-arcsight.md)

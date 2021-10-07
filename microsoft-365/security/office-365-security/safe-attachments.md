@@ -8,7 +8,7 @@ manager: dansimp
 audience: Admin
 ms.date: ''
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -20,12 +20,12 @@ ms.collection:
 description: 管理者は、Microsoft Defender の セーフ添付ファイル機能について説明Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c80428c59f4ff8621be2d9f62ac8c650ea9d41ce
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 10b3d46d2cd2fd123c790ccb5af556510d911350
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59484001"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60180709"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>セーフMicrosoft Defender の添付ファイル (Office 365
 
@@ -80,7 +80,7 @@ ms.locfileid: "59484001"
   |**動的配信**|メッセージを即座に配信しますが、添付ファイルのスキャンが完了するまでセーフプレースホルダーに置き換える。 <p> 悪意のある添付ファイルを含むメッセージは検疫されます。 既定では、メッセージを確認、解放、または削除できるのは管理者 (ユーザーではない) のみです。<sup>\*</sup> <p> 詳細については、この記事の[後半の「セーフ添付](#dynamic-delivery-in-safe-attachments-policies)ファイル ポリシーの動的配信」セクションを参照してください。|悪意のあるファイルから受信者を保護しながら、メッセージの遅延を回避します。|
   |
 
-  <sup>\*</sup>管理者は、検疫されたメッセージに対してユーザーがセーフ許可する操作を定義する添付ファイル ポリシーに検疫ポリシーを作成して割り当てできます。 詳細については、「検疫ポリシー [」を参照してください](quarantine-policies.md)。
+  <sup>\*</sup>管理者は、検疫されたメッセージに対してユーザーがセーフ許可する操作を定義する添付ファイル ポリシーに検疫ポリシーを作成して割り当てできます。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。
 
 - **検出時** に添付ファイルをリダイレクトする: リダイレクトを有効にし、添付ファイルを次の電子メールアドレスに送信 **します。[** ブロック]、[監視]、または [置換] アクションの場合は、マルウェアの添付ファイルを含むメッセージを、指定された内部または外部の電子メール アドレスに送信して、分析と調査を行います。 
 

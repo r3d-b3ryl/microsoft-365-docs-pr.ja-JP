@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/28/2018
 ms.technology: mde
-ms.openlocfilehash: 2d290352006b09be0d15a5df55533500db2fadb0
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 7ea8fd8a87e15291f0f65e6f21bb452efe72383c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507772"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207105"
 ---
 # <a name="assign-user-access-to-microsoft-defender-security-center"></a>ユーザー アクセスをユーザー に割り当Microsoft Defender セキュリティ センター
 
@@ -49,7 +49,7 @@ Defender for Endpoint では、アクセス許可を管理する 2 つの方法�
 > - 読み取り専用アクセス権 (Security Readers) を持つユーザーは、役割が割り当てられるまでポータルへのアクセスを失います。 RBAC の下で役割AD割り当てできるのは Azure ユーザー グループのみです。
 > - RBAC に切り替えても、基本的なアクセス許可管理を使用して切り替えすることはできません。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [基本的なアクセス許可を使用してポータルにアクセスする](basic-permissions.md)
 - [RBAC を使用してポータル アクセスを管理する](rbac.md)

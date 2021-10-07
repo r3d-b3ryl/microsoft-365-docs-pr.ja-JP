@@ -8,19 +8,19 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 description: QR コードを使用して Outlook Mobile を認証し、ダウンロードする方法について学習します。
-ms.openlocfilehash: 0b47e60f29d3730701750a1b122f782c53122603
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: cd3467816649c0111cfa8c34d9c1d90dc8cfa8e7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775812"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176141"
 ---
 # <a name="use-a-qr-code-to-sign-in-to-the-outlook-mobile-apps"></a>QR コードを使用して Outlook Mobile アプリにサインインする
 

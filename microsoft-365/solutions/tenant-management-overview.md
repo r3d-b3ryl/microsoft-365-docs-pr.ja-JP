@@ -6,7 +6,7 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: ユーザーのテナントの計画、展開、および継続的なMicrosoft 365概要。
-ms.openlocfilehash: 5d98f715b9233a29c8710966099667075eae0020
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 915f71e6a8ab1f6f346940fccc0e15c5f8ce8d65
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163428"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176165"
 ---
 # <a name="tenant-management-for-microsoft-365-for-enterprise"></a>エンタープライズ向けMicrosoft 365テナント管理
 

@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 組織にMicrosoft 365サブスクリプションを確認します。
-ms.openlocfilehash: 4c1bd7ac67cd44baa8317295ade0e5525764b523
-ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
+ms.openlocfilehash: ecc3a494412fa8f1da1be16a55d3f7093d0fe2d3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60011406"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200763"
 ---
 # <a name="choose-a-microsoft-365-subscription"></a>サブスクリプションをMicrosoft 365する
 
@@ -53,7 +53,7 @@ ms.locfileid: "60011406"
 | **ファイルの記憶域** | OneDrive for Business | ユーザーあたり 1 TB | ユーザーあたり 1 TB | 無制限 |
 | **ソーシャル、ビデオ、サイト** | Stream, Yammer, Planner, SharePoint Online \* , Power Apps \* , Power Automate\* | はい | はい | はい |
 | **ビジネス アプリ** | アプリのスケジュール設定 - 予約\*\* | はい | はい | はい |
-| **脅威の保護** | Office 365 Advanced Threat Protection | いいえ | はい | いいえ |
+| **脅威保護** | Office 365 Advanced Threat Protection | いいえ | はい | いいえ |
  | WindowsExploit Guard の適用| | いいえ | はい | いいえ |
 | **ID 管理** | ハイブリッド アカウントのセルフサービス パスワードのリセットAzure Active Directoryする | いいえ | はい | いいえ |
  | Azure 多要素認証、条件付きアクセス ポリシー | | いいえ | はい | いいえ |

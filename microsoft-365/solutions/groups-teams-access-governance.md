@@ -7,7 +7,7 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 - m365solution-collabgovernance
@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: グループ、グループ、グループ、Microsoft 365、およびTeamsアクセスの管理SharePoint。
-ms.openlocfilehash: 3e0485813a264fe9042e0de9596ba07e50ef72a3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2a0da02385e3fc325bb4f25b4ac8a538f950d820
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214204"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207453"
 ---
 # <a name="governing-access-in-microsoft-365-groups-teams-and-sharepoint"></a>グループ、グループ、Microsoft 365、およびTeamsのアクセスを管理SharePoint
 
@@ -29,7 +29,7 @@ ms.locfileid: "59214204"
 
 次の表は、次の表で使用できるアクセス制御のクイック リファレンスを示Microsoft 365。 詳細については、次のセクションで説明します。
 
-|カテゴリ|説明|Reference|
+|カテゴリ|説明|リファレンス|
 |:-------|:----------|:--------|
 |メンバーシップ|||
 ||プライベート チームの検出|[プライベート チームの検出を管理Microsoft Teams](/microsoftteams/manage-discovery-of-private-teams)|
@@ -89,7 +89,7 @@ SharePointサイトでは、グループまたはチームのメンバーシッ�
 
 - [条件付きアクセスの展開を計画する](/azure/active-directory/conditional-access/plan-conditional-access)
 
-- [Microsoft Intune概要](/mem/intune/fundamentals/what-is-intune)
+- [Microsoft Intune の概要](/mem/intune/fundamentals/what-is-intune)
 
 - [管理SharePointデバイスからのアクセスを制御する](/sharepoint/control-access-from-unmanaged-devices)
 
@@ -162,7 +162,7 @@ Microsoft 365は、情報を共有するさまざまな方法を提供します�
 
 - [Azure Active DirectoryID ガバナンス](/azure/active-directory/governance)
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [コラボレーション ガバナンス計画のステップ バイ ステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 

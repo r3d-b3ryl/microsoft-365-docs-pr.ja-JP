@@ -8,23 +8,23 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: ''
 ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
 description: ビジネス アシスト プログラムと、ビジネス向けサービスのヘルプと使用状況の向上に組織がどのように役立Microsoft 365します。
-ms.openlocfilehash: f6c5b1ddfa6028d0748d3f01237e91dd4ac8507e
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 01d4353fa24e5c9ace8e9e1d43853c5cbc3935e6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774197"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60180509"
 ---
 # <a name="business-assist-for-microsoft-365"></a>Microsoft 365 のビジネスサポート
 
-小規模ビジネスの専門家からの専門的なアドバイスを受け、サブスクリプションを有効に利用できます。
+小規模ビジネスの専門家からの専門的なアドバイスを受け、サブスクリプションを最大限に活用できます。
 
 **Microsoft 365** のビジネス アシストは、小規模企業向けで、オンボーディングから日常使用まで、ビジネスの成長に合わせ、中小企業のスペシャリストに 24 時間アクセスできます。
 

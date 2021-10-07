@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 168c686ab1d14cb3489d9f2c19f8fa59065d4236
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5442c27c1899994547a42acf6aebec4df6cbf697
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177631"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176837"
 ---
 # <a name="get-alert-related-files-information-api"></a>アラート関連ファイル情報 API の取得
 
@@ -53,7 +53,7 @@ ms.locfileid: "59177631"
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
 アプリケーション|File.Read.All|'ファイル プロファイルの読み取り'
-委任 (職場または学校アカウント)|File.Read.All|'ファイル プロファイルの読み取り'
+委任 (職場または学校のアカウント)|File.Read.All|'ファイル プロファイルの読み取り'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
@@ -71,7 +71,7 @@ GET /api/alerts/{id}/files
 
 名前|型|説明
 :---|:---|:---
-Authorization|String|ベアラー {token}。 **必須**
+Authorization|String|ベアラー {token}。 **必須**。
 
 ## <a name="request-body"></a>要求本文
 

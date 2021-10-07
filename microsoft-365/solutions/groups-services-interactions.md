@@ -7,7 +7,7 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 - m365solution-collabgovernance
@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: グループ サービスのやり取り
-ms.openlocfilehash: 54d8cd0ff31bad9af4269b3a4d8af23ccb618e16
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f20f8199811b8b34b4cb74ac18a989a79dde7759
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192240"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207465"
 ---
 # <a name="groups-services-interactions"></a>グループ サービスのやり取り
 
@@ -83,7 +83,7 @@ SharePointサイトは、所有者、メンバー、および訪問者のセキ�
 
 - Outlook
 - Planner
-- Project for the web
+- Web 用 Project
 - SharePoint
 - Stream
 - Microsoft Teams
@@ -126,7 +126,7 @@ SharePointサイトは、所有者、メンバー、および訪問者のセキ�
 |Power Automate|ワークフロー|はい|いいえ|いいえ|
 |Power BI (クラシック)|ワークスペース|いいえ|はい|はい|
 |Power BI (新しい)|ワークスペース|はい|いいえ|はい|
-|Project for the web|Project plan|はい|はい|いいえ|
+|Web 用 Project|Project plan|はい|はい|いいえ|
 |ロードマップ|ロードマップ|はい|はい|いいえ|
 |SharePoint|Site|はい|はい|はい|
 |Stream|チャネル、ビデオ|はい|はい|はい|
@@ -181,7 +181,7 @@ Teamsは、さまざまな Microsoft およびサード パーティのサービ
 
 - 会話
 - チャネル&タブ
-- Meetings
+- 会議
 
 **グループTeams作成できますか?**
 
@@ -340,7 +340,7 @@ Planner は、軽量なグループ タスク管理サービスです。
 
 はい、プランを削除すると、グループとグループに関連付けられたサービスとコンテンツが削除されます。
 
-## <a name="power-apps"></a>Power Apps
+## <a name="power-apps"></a>Power アプリ
 
 Power Appsコードなしでアプリ開発用のキャンバスを提供します。
 
@@ -475,7 +475,7 @@ Power BI で新しいワークスペースを作成しても Microsoft 365 グ�
 
 はい、グループ内のワークスペースPower BIグループとグループに関連付けられたサービスとコンテンツが削除されます。
 
-## <a name="project-for-the-web"></a>Project for the web
+## <a name="project-for-the-web"></a>Web 用 Project
 
 Projectは、プロジェクト 計画、ガント チャート、ロードマップを作成する機能を提供します。
 グループに提供される主な機能。
@@ -646,7 +646,7 @@ Yammer プラットフォームが Microsoft 365 グループに接続されて�
 
 はい、グループを削除すると、Yammer関連する Microsoft グループとグループ関連のサービスとコンテンツが削除されます。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [コラボレーション ガバナンス計画のステップ バイ ステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 

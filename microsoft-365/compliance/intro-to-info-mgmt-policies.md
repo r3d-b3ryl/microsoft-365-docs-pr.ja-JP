@@ -9,7 +9,7 @@ ms.date: 5/16/2014
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - WSU150
 - SPO160
@@ -21,12 +21,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 情報管理ポリシーを使用して、コンテンツの保持期間やユーザーがコンテンツに対して実行できるアクションを制御および追跡する方法について説明します。
-ms.openlocfilehash: fc3bfe1c0da54ccf4cb2c59589647cb396a5081e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 98eae2a08aa246a1f0ebe7d037103a82c132d060
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216813"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193293"
 ---
 # <a name="introduction-to-information-management-policies"></a>情報管理ポリシー入門
 

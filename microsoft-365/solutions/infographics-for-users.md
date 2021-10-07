@@ -8,16 +8,16 @@ audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.date: 04/21/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365solutions
 f1.keywords: NOCSH
-ms.openlocfilehash: 94191ebf12609eafb45f6f4fb19de2a6b072aa23
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 82ab205d5228ae4283eb2ab291a586b6d73429ba
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214144"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176333"
 ---
 # <a name="microsoft-365-infographics-for-your-users"></a>Microsoft 365のインフォグラフィック
 

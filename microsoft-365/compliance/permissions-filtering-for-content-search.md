@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 description: 電子情報開示マネージャーが組織内のメールボックスとサイトのサブセットのみを検索するには、検索アクセス許可フィルターを使用します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6452f2dd17d93ce30065aa5636d6cacf2818b05d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 785fd1237cab66a898307724c5142a6baf4d6120
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177936"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200427"
 ---
 # <a name="configure-permissions-filtering-for-ediscovery"></a>電子情報開示のアクセス許可フィルターを構成する
 
@@ -139,7 +139,7 @@ _Filters_ パラメーターはコンプライアンス セキュリティ フ�
 
 - ユーザーが特定のサービス内のコンテンツの場所を明示的に検索し(ユーザーが Exchange メールボックスまたは任意の SharePoint サイトを検索しないなど)、検索アクセス許可フィルターを作成する必要があります。 つまり、組織内のすべての SharePoint サイトをユーザーが検索できるようにする検索権限フィルターを作成しても、そのユーザーはメールボックスを検索できてしまいます。 たとえば、管理者SharePointサイトのみをSharePointするには、メールボックスの検索を妨げるフィルターを作成する必要があります。 同様に、管理者Exchangeメールボックスのみを検索するには、サイトの検索を妨げるフィルターを作成する必要があります。
 
-### <a name="users"></a>*Users*
+### <a name="users"></a>*ユーザー*
 
 _Users パラメーター_ は、このフィルターを検索に適用するユーザーを指定します。 ユーザーのエイリアスまたはプライマリ SMTP アドレスでユーザーを特定します。 カンマで区切って複数の値を指定することも、値 **All** を使用してすべてのユーザーにフィルターを割り当てることもできます。
 
@@ -266,7 +266,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
 
 _FilterName_ パラメーターは、アクセス許可フィルターの名前を指定します。
 
-### <a name="users"></a>*Users*
+### <a name="users"></a>*ユーザー*
 
 _Users パラメーター_ は、このフィルターを検索に適用するユーザーを指定します。 これは複数値プロパティなので、このパラメーターを使用してユーザーまたはユーザーのグループを指定すると、既存のユーザーの一覧が上書きされます。 選択したユーザーを追加および削除する構文については、次の例を参照してください。
 

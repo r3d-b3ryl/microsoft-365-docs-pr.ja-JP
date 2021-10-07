@@ -9,19 +9,19 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
 description: カスタム コネクタをセットアップして、Salesforce Chatter、Yahoo Messenger、またはデータ ソースなどのデータ ソースからサードパーティのデータをインポートするYammer。
-ms.openlocfilehash: 7e82f114138a8f1f8ac9eb4563ce1434e6c26167
-ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
+ms.openlocfilehash: 5b6bbab9ff6ad54440fc84213d3e810c863ebef4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60011238"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200187"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data"></a>パートナーと共同作業して、サード パーティのデータをアーカイブする
 
@@ -557,7 +557,7 @@ Microsoft 365 でサード パーティのデータをアーカイブするた�
 
 サード パーティのデータ コネクタの同意を取り消す場合は、Azure portal の **Enterprise** アプリケーション ブレードを使用するか、Microsoft 365 PowerShell の [Remove-MsolServicePrincipal](/powershell/module/msonline/remove-msolserviceprincipal)を使用して、Azure Active Directory から (対応するサービス プリンシパルを削除して) アプリケーションを削除できます。 また、PowerShell で[Remove-AzureADServicePrincipal](/powershell/module/azuread/remove-azureadserviceprincipal)コマンドレットAzure Active Directoryできます。
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 - 前述のように、サード パーティのデータ ソースのアイテムは、メール メッセージとして Exchange メールボックスにインポートされます。 パートナー コネクタは、API で必要なスキーマを使用してアイテムMicrosoft 365します。 次の表では、メール メッセージとして Exchange メールボックスにインポートされた後の、サード パーティのデータ ソースのアイテムのメッセージのプロパティについて説明します。 この表では、メッセージのプロパティが必須かどうかも示します。 必須プロパティは設定されている必要があります。 アイテムに必須プロパティが存在しない場合、アイテムは必須プロパティにインポートMicrosoft 365。 インポート プロセスは、アイテムがインポートされていない理由と、不足しているプロパティを説明するエラー メッセージを返します。<br/><br/>
 

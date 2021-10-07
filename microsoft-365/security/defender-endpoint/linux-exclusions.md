@@ -2,27 +2,25 @@
 title: Linux 上のエンドポイント向け Microsoft Defender の除外を構成および検証する
 description: Linux 上のエンドポイント用 Microsoft Defender の除外を指定して検証します。 除外は、ファイル、フォルダー、およびプロセスに対して設定できます。
 keywords: microsoft、defender、Microsoft Defender for Endpoint、Linux、除外、スキャン、ウイルス対策
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 269f74b0df2b0c51217d44bdb0cc2001d0f8a34d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: db2e25cb2d1690adeb581ece309e4a368471f192
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189500"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206949"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 上のエンドポイント向け Microsoft Defender の除外を構成および検証する
 

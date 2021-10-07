@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365solution-audit
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: この記事では、組織のユーザーと管理者が実行する監査アクティビティの検索を開始できるよう、基本監査を設定する方法について説明します。
-ms.openlocfilehash: caa87a34234597e36949a1a2c47b695a02b5c2b7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9190383fdfab8e4207186ca93895ec9ce23ec6d4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216403"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200319"
 ---
 # <a name="set-up-basic-audit-in-microsoft-365"></a>[基本監査] を [Microsoft 365
 

@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: ce1a3d5153d324d008d2d46048838351eb7bc047
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3ca15e29d18e910377a797bec4c78109d7509ef4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163650"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207633"
 ---
 # <a name="identityinfo"></a>IdentityInfo
 
@@ -48,20 +48,20 @@ ms.locfileid: "59163650"
 | `AccountUpn` | string | アカウントのユーザー プリンシパル名 (UPN) |
 | `OnPremSid` | string | アカウントのオンプレミスセキュリティ識別子 (SID) |
 | `CloudSid` | string | アカウントのクラウド セキュリティ識別子 |
-| `GivenName` | 文字列 | アカウント ユーザーの名前または名を指定する |
+| `GivenName` | string | アカウント ユーザーの名前または名を指定する |
 | `Surname` | string | アカウント ユーザーの姓、ファミリ名、または姓 |
 | `AccountDisplayName` | string | アドレス帳に表示されるアカウント ユーザーの名前。 通常、指定または名、ミドル イニシエーション、姓または姓の組み合わせ。 |
 | `Department` | string | アカウント ユーザーが属する部署の名前 |
-| `JobTitle` | 文字列 | アカウント ユーザーの役職 |
+| `JobTitle` | string | アカウント ユーザーの役職 |
 | `AccountName` | string | アカウントのユーザー名 |
 | `AccountDomain` | string | アカウントのドメイン |
 | `EmailAddress` | string | アカウントの SMTP アドレス |
 | `SipProxyAddress` | string | アカウントのボイス オーバー IP (VOIP) セッション開始プロトコル (SIP) アドレス |
 | `City` | string | アカウント ユーザーが保存されている都市 |
 | `Country` | string | アカウント ユーザーが保存されている国/地域 |
-| `IsAccountEnabled` | boolean | アカウントが有効になっているかどうかを示します。 |
+| `IsAccountEnabled` | ブール値 | アカウントが有効になっているかどうかを示します。 |
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)

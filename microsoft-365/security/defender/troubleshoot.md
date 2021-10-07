@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c4bbc9cd47d3ceb8110a6a2f0e3136a364458abc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d2d26b58ad26b461f668e4d75f6d4504297ae50c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189151"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176609"
 ---
 # <a name="troubleshoot-microsoft-365-defender-service-issues"></a>サービスMicrosoft 365 Defenderのトラブルシューティング
 

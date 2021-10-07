@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0a0be19a974f7a065333ff0a5045512a2eb98a85
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 75b74024b7f4e94d1b24b2f926bfe488a8e594b1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222979"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192993"
 ---
 # <a name="configure-conditional-access-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint で条件付きアクセスを構成する
 
@@ -35,7 +35,7 @@ ms.locfileid: "59222979"
 
 このセクションでは、条件付きアクセスを適切に実装するために必要なすべての手順について説明します。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 > [!WARNING]
 > このシナリオでは、登録されているデバイスAD Azure がサポートされていない点に注意することが重要です。</br>
@@ -74,7 +74,7 @@ Intune ポータル、Intune ポータル、および Azure Microsoft 365 Defend
 
 ### <a name="step-2-turn-on-the-defender-for-endpoint-integration-in-intune"></a>手順 2: Intune で Defender for Endpoint 統合を有効にする
 
-1. [Azure portal](https://portal.azure.com)にサインインします。
+1. Azure portal
 2. [デバイス **コンプライアンス** \> **] [Microsoft Defender ATP] を選択します**。
 3. Microsoft Defender advanced threat protection **Connect Windows 10.0.15063+** デバイスを On に設定 **します**。
 4. **[保存]** をクリックします。

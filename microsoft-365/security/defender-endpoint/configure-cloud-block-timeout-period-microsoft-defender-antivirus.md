@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 06/04/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 87b8325473762e0578f35fef355eb8344bb5635f
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 104f385a48def9a62d668f6ef6c3f79a37fd5335
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59490861"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207057"
 ---
 # <a name="configure-the-cloud-block-timeout-period"></a>クラウド ブロックのタイムアウト期間の構成
 

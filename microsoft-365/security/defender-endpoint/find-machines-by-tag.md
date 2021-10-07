@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f8c6c289cca61e5a0891af04ef97831a27b341f3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5875568c21fb9128e6d3edc8db31721f20d19b4b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177663"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176897"
 ---
 # <a name="find-devices-by-tag-api"></a>タグ API でデバイスを検索する
 
@@ -54,8 +54,8 @@ ms.locfileid: "59177663"
 :---|:---|:---
 アプリケーション|Machine.Read.All|'すべてのコンピューター プロファイルを読み取る'
 アプリケーション|Machine.ReadWrite.All|'すべてのコンピューター情報の読み取りと書き込み'
-委任 (職場または学校アカウント)|Machine.Read|'コンピューター情報の読み取り'
-委任 (職場または学校アカウント)|Machine.ReadWrite|'コンピューター情報の読み取りおよび書き込み'
+委任 (職場または学校のアカウント)|Machine.Read|'コンピューター情報の読み取り'
+委任 (職場または学校のアカウント)|Machine.ReadWrite|'コンピューター情報の読み取りおよび書き込み'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
@@ -74,11 +74,11 @@ GET /api/machines/findbytag?tag={tag}&useStartsWithFilter={true/false}
 
 名前|型|説明
 :---|:---|:---
-Authorization|String|ベアラー {token}。 **必須**
+Authorization|String|ベアラー {token}。 **必須**。
 
 ## <a name="request-uri-parameters"></a>要求 URI パラメーター
 
-Name|型|説明
+名前|型|説明
 :---|:---|:---
 tag|String|タグ名。 **必須**
 useStartsWithFilter|ブール値|true に設定すると、クエリ内の指定されたタグで始まるタグ名を持つすべてのデバイスが検索されます。 既定は false です。 **オプション**。

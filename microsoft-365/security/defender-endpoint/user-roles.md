@@ -2,26 +2,24 @@
 title: 役割ベースのアクセス制御の役割を作成および管理する
 description: 役割を作成し、役割に割り当てられたアクセス許可を、役割ベースのアクセス制御の実装の一部として定義Microsoft 365 Defender
 keywords: ユーザー の役割、役割、アクセスの rbac
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1f8ab38d3e224155fc6af311e7dde42410a07823
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: 34b9327debf5adc207e29b482ea1f33939d0d977
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60009591"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207729"
 ---
 # <a name="create-and-manage-roles-for-role-based-access-control"></a>役割ベースのアクセス制御の役割を作成および管理する
 

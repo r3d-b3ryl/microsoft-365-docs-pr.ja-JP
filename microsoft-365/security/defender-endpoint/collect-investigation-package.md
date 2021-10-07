@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: cb4de76bacc794805a79597c9088491f057e3ce0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1813ccdedb58efcaef491cb0242417121e937c15
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221730"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193041"
 ---
 # <a name="collect-investigation-package-api"></a>調査パッケージ API の収集
 
@@ -57,7 +57,7 @@ ms.locfileid: "59221730"
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
 アプリケーション|Machine.CollectForensics|'collect forensics'
-委任 (職場または学校アカウント)|Machine.CollectForensics|'collect forensics'
+委任 (職場または学校のアカウント)|Machine.CollectForensics|'collect forensics'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
@@ -76,7 +76,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/collectInvestiga
 名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**
-Content-Type|string|application/json. **必須**
+Content-Type|string|application/json. **必須**。
 
 ## <a name="request-body"></a>要求本文
 
@@ -84,7 +84,7 @@ Content-Type|string|application/json. **必須**
 
 パラメーター|型|説明
 :---|:---|:---
-コメント|文字列|アクションに関連付けるコメント。 **必須**
+コメント|文字列|アクションに関連付けるコメント。 **必須**。
 
 ## <a name="response"></a>応答
 

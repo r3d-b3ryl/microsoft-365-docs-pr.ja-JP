@@ -8,7 +8,7 @@ manager: laurawi
 ms.date: 08/20/2021
 audience: Admin
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - Strat_O365_IP
@@ -19,12 +19,12 @@ ms.assetid: 28c86a1c-e4dd-4aad-a2a6-c768a21cb352
 description: セキュリティ機能を実装してセキュリティ環境を保護するための Microsoft のサイバーセキュリティ チームからのMicrosoft 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1a2e982f1da196185d466dfddfbbc61e98100070
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 7c3128482e9c8974ebb8938639ff3e27d400a418
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042796"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176405"
 ---
 # <a name="security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>セキュリティロードマップ - 最初の 30 日間、90 日間、それ以降の最優先事項
 

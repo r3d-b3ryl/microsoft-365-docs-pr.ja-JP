@@ -8,19 +8,19 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、セキュリティ & コンプライアンス センターで [低速メール フロー ルールの修正] 分析情報を使用して、組織内の非効率的または壊れたメール フロー ルール (トランスポート ルールとも呼ばれる) を特定して修正する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 31c755c2d5412840def5a47f464042bce9a8202e
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: c26e19c732b33ea8c51b17eb592964cecd1c234d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988453"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176441"
 ---
 # <a name="fix-slow-mail-flow-rules-insight-in-the-security--compliance-center"></a>セキュリティ コンプライアンス センターでメール フロー ルールの分析情報が遅&修正する
 

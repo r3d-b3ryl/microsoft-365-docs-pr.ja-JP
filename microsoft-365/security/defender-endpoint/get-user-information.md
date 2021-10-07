@@ -9,17 +9,17 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 91a9ed478ad44d71612ae4a4c7bb7ec727ce65514514089e052c64be943db329
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 58e7502d4b5dce4714f71438a6c0645497623743
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53800284"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206985"
 ---
 # <a name="get-user-information-api"></a>ユーザー情報 API の取得
 
@@ -33,7 +33,7 @@ ms.locfileid: "53800284"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 キー (ユーザー名) で User エンティティを取得します。
 
 ## <a name="permissions"></a>アクセス許可
@@ -52,9 +52,9 @@ GET /api/users/{id}/
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
-Authorization | String | ベアラー {token}。 **必須**
+Authorization | String | ベアラー {token}。 **必須**。
 
 ## <a name="request-body"></a>要求本文
 

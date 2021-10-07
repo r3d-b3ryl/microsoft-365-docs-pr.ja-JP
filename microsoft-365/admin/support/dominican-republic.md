@@ -9,15 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-localization_priority: Normal
+ms.localizationpriority: medium
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 66be529b6a300dfd57a59e755311e28c167beffb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: af85958e03ffa0756a0c494f6d5f2145b97956d4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59217684"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60180379"
 ---
 # <a name="contact-support-for-dominican-republic"></a>ドミニカ共和国のサポートに問い合わせ
 

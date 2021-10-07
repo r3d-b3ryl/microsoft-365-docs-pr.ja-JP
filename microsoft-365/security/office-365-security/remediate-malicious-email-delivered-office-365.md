@@ -7,7 +7,7 @@ ms.topic: article
 audience: admin
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 MS.collection: ''
 search.appverid: MET150
 description: 脅威の修復
@@ -15,12 +15,12 @@ appliesto:
 - Microsoft 365 Defender
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 01369b574dcb3b5a23b22cb662b59479c308de33
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 0de692b0363508ba59713c182e91980939ef8b00
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483545"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60180785"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>メールで配信される悪意のある電子メールを修復Office 365
 
