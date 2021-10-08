@@ -11,7 +11,7 @@ ms.topic: how-to
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - m365solution-mip
@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 365 のデータ損失防止のオンプレミス スキャナーを設定する
-ms.openlocfilehash: fbaf28c1a88f1654154cc53ce731d2f56bfae382
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 28453a3791677b1923a6d72dbf8d59d2620ea139
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192980"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60158179"
 ---
 # <a name="get-started-with-the-data-loss-prevention-on-premises-scanner"></a>データ損失防止のオンプレミス スキャナーの使用を開始する
 
@@ -56,7 +56,7 @@ Endpoint DLP からのデータは、[アクティビティ エクスプロー�
 ### <a name="dlp-on-premises-scanner-prerequisites"></a>DLP オンプレミス スキャナーの前提条件
 
 - Azure Information Protection (AIP) スキャナーは、DLP ポリシーの一致とポリシーの適用を実装します。スキャナーは AIP クライアントの一部としてインストールされるため、インストールは AIP、AIP クライアント、および AIP 統合ラベル スキャナーのすべての前提条件を満たしている必要があります。
-- AIP クライアントとスキャナーを展開します。 [AIP 統合ラベル クライアントのインストール](/azure/information-protection/rms-client/install-unifiedlabelingclient-app)と [] の詳細については、「[Azure Information Protection 統合ラベルスキャナーの構成とインストール](/azure/information-protection/deploy-aip-scanner-configure-install)」を参照してください。
+- [AIP 統合ラベル クライアントのインストール](/azure/information-protection/rms-client/install-unifiedlabelingclient-app)と [] の詳細については、「[Azure Information Protection 統合ラベルスキャナーの構成とインストール](/azure/information-protection/deploy-aip-scanner-configure-install)」を参照してください。
 - すべての検出ルールが機密情報タイプのみに基づいている場合でも、テナントには少なくとも 1 つのラベルとポリシーが公開されている必要があります。
 
 ## <a name="deploy-the-dlp-on-premises-scanner"></a>DLP オンプレミス スキャナーを展開する
@@ -76,7 +76,7 @@ Endpoint DLP からのデータは、[アクティビティ エクスプロー�
     1. または、**Start-AIPScan** PowerShell コマンドレットを実行します
 
    > [!IMPORTANT]
-   > スキャナーはデフォルトでリポジトリのデルタ スキャンを実行し、ファイルが変更されたか、完全な再スキャンを開始しない限り、前のスキャン サイクルですでにスキャンされたファイルはスキップされることに注意してください。 完全な再スキャンは、UI の **[すべてのファイルを再スキャンする]** オプションを使用するか、**Start-AIPScan-Reset** を実行することで開始できます。
+   > スキャナーはデフォルトでリポジトリのデルタ スキャンを実行し、ファイルが変更されたか、完全な再スキャンを開始しない限り、前のスキャン サイクルですでにスキャンされたファイルはスキップされることに注意してください。完全な再スキャンは、UI の **[すべてのファイルを再スキャンする]** オプションを使用するか、**Start-AIPScan-Reset** を実行することで開始できます。
 
 6.  Microsoft 365 コンプライアンス センターの [[データ損失防止]](https://compliance.microsoft.com/datalossprevention?viewid=policies) ページを開きます。
 

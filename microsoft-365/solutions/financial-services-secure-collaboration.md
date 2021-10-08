@@ -9,15 +9,15 @@ ms.collection:
 - M365-security-compliance
 ms.prod: microsoft-365-enterprise
 ms.custom: seo-marvel-jun2020
-localization_priority: Priority
+ms.localizationpriority: high
 description: 金融サービス機関が、Microsoft 365 と Teams を使用して、財務的なセキュリテとコンプライアンスを維持し、効果的に共同作業を行う方法について説明します。
 f1.keywords: NOCSH
-ms.openlocfilehash: 0e3fada6a74776e4edf2c8c41ef9026ce17871ad
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 073f24bc751bcb9f11a415d4ef142172fd5387ed
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189030"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207525"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>米国の銀行業および資本市場のための、コンプライアンスとセキュリティの重要な検討事項
 
@@ -83,7 +83,7 @@ Microsoft 365 では、基盤となるメンバーシップ サービスとし�
 
 **Microsoft 365 グループの名前付けポリシー** により、Microsoft 365 グループおよびチームに、会社のポリシーに従った名前を付けることができます。 名前が適切でないと、問題を引き起こすことがあります。 たとえば、名前が適切に付けられていないと、従業員はどのチームと協力したり情報を共有したりすればよいかがわかりません。 グループの名前付けポリシー (接頭語/接尾語に基づくポリシーや独自の禁止単語のサポートを含む) では、優れた "予防策" を実施し、予約された単語や不適切な用語など、特定の単語の使用を防止することができます。
   
-**Microsoft 365 グループの有効期限ポリシー** では、Microsoft 365 グループおよびチームが、組織で必要とされている (または望ましい) 期間を超えて保持されることを回避できます。 この機能では、2 つの重要な情報管理の問題を防止できます。
+**Microsoft 365 グループの有効期限ポリシー** では、Microsoft 365 グループおよびチームが、組織で必要とされている (または望ましい) 期間を超えて保持されることを回避できます。この機能では、2 つの重要な情報管理の問題を防止できます。
 
 * 必要ではない、または使用されていないチームの増加。
 * 組織が既に必要としていない、または使用していないデータの不必要な保持 (法的ホールド/保持の場合を除く)。
@@ -256,7 +256,7 @@ Microsoft 365 が提供するセキュリティ サービスは、インテリ�
  
 組織が必要とする場合、Microsoft は要請に応じて SEC 17a-4 へのコンプライアンスの証明書を提供します。
 
-さらにこれらの機能により、Microsoft 365 は **米商品先物取引委員会** の [CFTC Rule 1.31(c)-(d)](https://www.cftc.gov/sites/default/files/opa/press99/opa4266-99-attch.htm) と、**金融取引業規制機構** の [FINRA Rule Series 4510](https://www.finra.org/rules-guidance/rulebooks/finra-rules/4511) で定められているストレージ要件を満たすことができます。 これらの規則は集合として、金融機関による記録の保持に関する世界的な規範的ガイダンスとなっています。
+さらにこれらの機能により、Microsoft 365 は **米商品先物取引委員会** の [CFTC Rule 1.31(c)-(d)](https://www.cftc.gov/sites/default/files/opa/press99/opa4266-99-attch.htm) と、**金融取引業規制機構** の [FINRA Rule Series 4510](https://www.finra.org/rules-guidance/rulebooks/finra-rules/4511) で定められているストレージ要件を満たすことができます。これらの規則は集合として、金融機関による記録の保持に関する世界的な規範的ガイダンスとなっています。
 
 Microsoft 365 による SEC Rule 17a-4 や他の規制の遵守に関する追加の詳細については、[Cohasset Associates による Office 365 Exchange Online SEC 17a-4(f) / CTFC 1.31(c)-(d) の評価](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)に関する資料をご覧ください。
 
@@ -284,7 +284,7 @@ Microsoft 365 での情報バリアは、Teams の会話やファイルをサポ
 
 金融機関には通常、従業員の活動を監視し、適用される証券関連の法令を遵守できるようにするために、組織内に監督機能を確立して維持することが求められます。特に FINRA は、これらの監督要件を確立しました。
  
-* [FINRA Rule 3110 (監督)](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3110) は、企業が監督手順書類 (written supervisory procedures, WSP) を作成し、従業員の活動と、行っている事業の種類を監督することを要求しています。 他の要件に加えて、手順には次が含まれている必要があります。
+* [FINRA Rule 3110 (監督)](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3110) は、企業が監督手順書類 (written supervisory procedures, WSP) を作成し、従業員の活動と、行っている事業の種類を監督することを要求しています。他の要件に加えて、手順には次が含まれている必要があります。
    - 監督人員の監督
    - 企業による投資銀行業務、証券業務、内部通信、内部調査のレビュー
    - 内部関係者による取引のレビュー

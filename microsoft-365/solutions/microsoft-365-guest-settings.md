@@ -16,15 +16,15 @@ f1.keywords: NOCSH
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkTEAMS
-localization_priority: Priority
+ms.localizationpriority: high
 recommendations: false
 description: 組織外のユーザーとの共有に影響を与える可能性がある、Microsoft 365 で使用できるゲスト共有設定について説明します。
-ms.openlocfilehash: d3db87c0c01a9bddead9b7367b6ac64a7633e107
-ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
+ms.openlocfilehash: 8028258b1b5a7ec13c2a9c9e2e89e52756c97d38
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59477625"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202347"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Microsoft 365 ゲストの共有設定のリファレンス
 
@@ -81,7 +81,7 @@ Microsoft 365 管理センターには、共有および Microsoft 365 グルー
 |組織の外部のグループ メンバーがグループのコンテンツにアクセスできるようにする|オン|**[オン]** に設定すると、ゲストはグループのコンテンツにアクセスできます。**[オフ]** に設定するとアクセスできません。 この設定は、ゲストが Microsoft 365 グループまたは Teams と連携している場合に **[オン]** にしてください。|
 |グループ所有者が組織外のユーザーをグループに追加できるようにする|オン|**[オン]** の場合、Microsoft 365 グループ または Teams の所有者は新しいゲストをグループに招待できます。 **[オフ]** の場合、所有者はディレクトリ内にすでに存在しているゲストのみを招待できます。|
 
-これらを、組織レベルで設定できます。 PowerShell を使用し、グループ レベルでこれらの設定を変更する方法の詳細については、「[特定のグループに対する設定を作成する](/azure/active-directory/users-groups-roles/groups-settings-cmdlets#create-settings-for-a-specific-group)」を参照してください。
+これらを、組織レベルで設定できます。PowerShell を使用し、グループ レベルでこれらの設定を変更する方法の詳細については、「[特定のグループに対する設定を作成する](/azure/active-directory/users-groups-roles/groups-settings-cmdlets#create-settings-for-a-specific-group)」を参照してください。
 
 ## <a name="teams"></a>Teams
 
@@ -167,10 +167,10 @@ OneDrive はSharePoint のサイトの階層であるため、組織レベルの
 |:-----|:-----|:-----|
 |ドメインごとに外部共有を制限する|オフ|この設定では、共有するドメインの許可またはブロックのリストを指定できます。 許可されたドメインを指定すると、共有の招待をそのドメインにのみ送信できます。 拒否されたドメインを指定すると、共有の招待はそのドメインに送信できません。 <p> この設定は、組織内のすべての SharePoint サイトと OneDrive サイトに影響します。|
 |特定のセキュリティ グループ内のユーザーにのみ、外部との共有を許可する|オフ|SharePoint と OneDrive のゲストと共有できるユーザーを制限する場合は、指定したセキュリティ グループ内のユーザーへの共有を制限することで行うことができます。 これらの設定は、Microsoft 365 グループまたは Teams による共有には影響しません。 グループまたはチーム経由で招待されたゲストも、関連サイトにアクセスできます。ただし、ドキュメントとフォルダーの共有は、指定したセキュリティ グループのユーザーのみが行うことができます。 <p> 指定したグループごとに、[すべてのユーザー] リンクと共有できるユーザーを選択できます。|
-|ゲストは共有への招待が送信されたアカウントと同じアカウントを使用してサインインする必要がある|オフ|招待の送信先とは別のメールアドレスを使用して、ゲストがサイト共有の招待を交換しないようにします。 <p> [SharePoint および OneDrive の Azure AD B2B (プレビュー) との統合](/sharepoint/sharepoint-azureb2b-integration-preview)では、招待の送信先のメールアドレスに基づいてすべてのゲストがディレクトリに追加されるため、この設定は使用されません。 代わりのメールアドレスは、サイトにアクセスする際に使用できません。|
+|ゲストは共有への招待が送信されたアカウントと同じアカウントを使用してサインインする必要がある|オフ|招待の送信先とは別のメールアドレスを使用して、ゲストがサイト共有の招待を交換しないようにします。 <p> [SharePoint および OneDrive の Azure AD B2B (プレビュー) との統合](/sharepoint/sharepoint-azureb2b-integration-preview)では、招待の送信先のメールアドレスに基づいてすべてのゲストがディレクトリに追加されるため、この設定は使用されません。代わりのメールアドレスは、サイトにアクセスする際に使用できません。|
 |ゲストに所有していないアイテムの共有を許可する|オン|**[オン]** の場合、ゲストは他のユーザーやゲストと自分が所有していないアイテムを共有できます。**[オフ]** の場合は共有できません。 ゲストは常にフル コントロールのあるアイテムを共有できます。|
 |認証コードを使用するユーザーに、再認証を要求するまでの日数|オフ|この設定により、ワンタイム パスコードで認証するユーザーが特定の日数後に再認証する必要があることを要求できます。|
-|サイトまたは OneDrive へのゲスト アクセスは、この数日後に自動的に期限切れになります|オン|管理者がゲスト アクセスの有効期限を設定している場合、サイトに招待したゲスト、または個別のファイルとフォルダーを共有している各ゲストには、特定の日数のアクセスが許可されます。 詳細については、「[サイトのゲストの有効期限を管理する](https://support.microsoft.com/en-us/office/manage-guest-expiration-for-a-site-25bee24f-42ad-4ee8-8402-4186eed74dea)」 をご覧ください。
+|サイトまたは OneDrive へのゲスト アクセスは、この数日後に自動的に期限切れになります|オン|管理者がゲスト アクセスの有効期限を設定している場合、サイトに招待したゲスト、または個別のファイルとフォルダーを共有している各ゲストには、特定の日数のアクセスが許可されます。詳細については、「[サイトのゲストの有効期限を管理する](https://support.microsoft.com/en-us/office/manage-guest-expiration-for-a-site-25bee24f-42ad-4ee8-8402-4186eed74dea)」 をご覧ください。
 
 ### <a name="sharepoint-and-onedrive-file-and-folder-link-settings"></a>SharePoint と OneDrive のファイルとフォルダーのリンク設定
 

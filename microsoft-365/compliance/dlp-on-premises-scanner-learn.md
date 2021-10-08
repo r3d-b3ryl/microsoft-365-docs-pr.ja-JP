@@ -11,7 +11,7 @@ ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - m365solution-mip
@@ -19,16 +19,16 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 365 データ損失防止オンプレミス スキャナーは、ファイル アクティビティの監視とそれらのファイルの保護アクションを、オンプレミスのファイル共有と SharePoin tフォルダーおよびドキュメント ライブラリに拡張します。 ファイルは、Azure Information Protection (AIP) スキャナーによってスキャンおよび保護されます
-ms.openlocfilehash: c59c6b90f6c219528cbff8a4aadc6472a48ecd23
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c696d4c4e8504d07ce69554c6ff52f264b8ba491
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192971"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207345"
 ---
 # <a name="learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner"></a>Microsoft 365 のエンドポイントのデータ損失防止について説明します
 
-Microsoft Data Loss Prevention (オンプレミス スキャナー) は、Microsoft 365 サービス全体で機密アイテムを検出して保護する Microsoft 365 Data Loss Prevention (DLP) スイートの機能の一部です。 MicrosoftのすべてのDLP製品の詳細については、「[データ損失防止の概要](dlp-learn-about-dlp.md)」を参照してください。
+Microsoft Data Loss Prevention (オンプレミス スキャナー) は、Microsoft 365 サービス全体で機密アイテムを検出して保護する Microsoft 365 Data Loss Prevention (DLP) スイートの機能の一部です。MicrosoftのすべてのDLP製品の詳細については、「[データ損失防止の概要](dlp-learn-about-dlp.md)」を参照してください。
 
 **DLP オンプレミス スキャナー** は、ファイル共有と SharePoint ドキュメント ライブラリおよびフォルダー内のオンプレミスの保存データをクロールして、漏洩した場合に組織にリスクをもたらしたり、コンプライアンス ポリシー違反のリスクをもたらしたりする機密アイテムを探します。 これにより、機密性の高いアイテムが適切に使用および保護されていることを確認し、危険にさらされる可能性のある動作を防止するために必要な可視性と制御を得ることができます。 DLP オンプレミス スキャナーは、[組み込み](sensitive-information-type-entity-definitions.md)または[カスタムの機密情報](create-a-custom-sensitive-information-type.md)タイプ、[機密ラベル](sensitivity-labels.md)、またはファイル プロパティを使用して機密情報を検出します。 機密アイテムを使用してユーザーが行っていることに関する情報が[Activity Explorer](data-classification-activity-explorer.md)に表示され、[DLPポリシー](create-test-tune-dlp-policy.md)を通して、それらのアイテムに保護アクションを適用できます。
 
@@ -56,7 +56,7 @@ DLP オンプレミス スキャナーは、次の 4 つの方法のいずれか
 
 |アクション |説明  |
 |---------|---------|
-|**これらの人々がオンプレミス スキャナーに保存されているファイルにアクセスするのをブロックします - 全員** | 適用されると、このアクションは、コンテンツ所有者、アイテムを変更した最後のアカウント、および管理者を除くすべてのアカウントへのアクセスをブロックします。 これは、ファイル所有者、リポジトリ所有者 ([[コンテンツ スキャン ジョブのリポジトリ所有者設定の設定]](/azure/information-protection/deploy-aip-scanner-configure-install#use-a-data-loss-prevention-dlp-policy-public-preview) で設定)、最後の修飾子 (SharePoint でのみ識別可能)、および管理者を除く、ファイルレベルで NTFS/SharePoint アクセス許可からすべてのアカウントを削除することによって行われます。 スキャナー アカウントには、ファイルに対する FC 権限も付与されます。|
+|**これらの人々がオンプレミス スキャナーに保存されているファイルにアクセスするのをブロックします - 全員** | 適用されると、このアクションは、コンテンツ所有者、アイテムを変更した最後のアカウント、および管理者を除くすべてのアカウントへのアクセスをブロックします。これは、ファイル所有者、リポジトリ所有者 ([[コンテンツ スキャン ジョブのリポジトリ所有者設定の設定]](/azure/information-protection/deploy-aip-scanner-configure-install#use-a-data-loss-prevention-dlp-policy-public-preview) で設定)、最後の修飾子 (SharePoint でのみ識別可能)、および管理者を除く、ファイルレベルで NTFS/SharePoint アクセス許可からすべてのアカウントを削除することによって行われます。 スキャナー アカウントには、ファイルに対する FC 権限も付与されます。|
 |**これらの人々がオンプレミス スキャナーに保存されているファイルにアクセスするのをブロックします - 組織全体の (パブリック) アクセスをブロック**    |このアクションを実行すると、**_Everyone_*_、_*_NT AUTHORITY\authentication users_*_、および_*_Domain Users_** SIDがファイルアクセス制御リスト (ACL) から削除されます。 ファイルまたは親フォルダへの権限が明示的に付与されているユーザーとグループのみがファイルにアクセスできます。|
 |**ファイルに権限を設定する**|適用されると、このアクションはファイルにその親フォルダーのアクセス許可を継承させます。 デフォルトでは、このアクションは、親フォルダーのアクセス許可が、ファイルに既に存在するアクセス許可よりも制限されている場合にのみ適用されます。 たとえば、ファイルの ACL が **_特定のユーザー_*_のみを許可するように設定されており、親フォルダーが_*_Domain Users_*_グループを許可するように構成されている場合、親フォルダーのアクセス許可はファイルに継承されません。* 親のアクセス許可の制限が緩い場合でも、[継承]を選択すると、この動作を上書きできます**。|
 |**不適切な場所からファイルを削除する**|強制されると、このアクションは元のファイルを .txt 拡張子の付いたスタブ ファイルに置き換え、元のファイルのコピーを検疫フォルダーに配置します。 

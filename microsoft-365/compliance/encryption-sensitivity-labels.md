@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: アクセスと使用を制限してデータを保護する暗号化のための秘密度ラベルを構成します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 64957adeb242d14b2f4c986d3cffc282379c93f3
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: ba6e8e44a3f41bcd64257faf62c597d3b019e359
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59444141"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206183"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する
 
@@ -167,7 +167,7 @@ ms.locfileid: "59444141"
 
 - 組織内のすべてのユーザー (すべてのテナント メンバー)。この設定ではゲスト アカウントが除外されます。
 
-- すべての認証されたユーザー。 選択する前に、この設定の[要件と制限事項](#requirements-and-limitations-for-add-any-authenticated-users)を理解しておいてください。
+- 認証されたすべてのユーザー。選択する前に、この設定の[要件と制限事項](#requirements-and-limitations-for-add-any-authenticated-users)を理解しておいてください。
 
 - Azure AD で、特定のユーザーまたは電子メールが有効なセキュリティ グループ、配布グループ、または Microsoft 365 グループ ([以前の Office 365 グループ](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601))。 Microsoft 365 グループは、静的メンバーシップまたは[動的メンバーシップ](/azure/active-directory/users-groups-roles/groups-create-rule)を持つことができます。 このグループの種類は Azure AD に同期されていないため、また、メールが有効になっていないセキュリティグループを使用できないため、[Exchange からの動的配布グループ](/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups) を使用することはできません。
 
@@ -273,7 +273,7 @@ Outlook では、ユーザーがメッセージにアクセス許可を割り当
 
 これらのオプションのいずれかがメールに適用される場合、電子メールは暗号化され、受信者は認証を受ける必要があります。受信者には自動的に使用権限が制限されます。
 
-- **[転送不可]**：受信者はそれを転送したり、印刷したり、コピーしたりすることができなくなります。 たとえば、Outlook クライアントでは、[転送] ボタン、[名前を付けて保存] および [印刷] メニュー オプションは使用できず、[宛先]、[CC]、または [BCC] ボックスで受信者を追加または変更することはできません。
+- **[転送不可]**：受信者はそれを転送したり、印刷したり、コピーしたりすることができなくなります。たとえば、Outlook クライアントでは、[転送] ボタン、[名前を付けて保存] および [印刷] メニュー オプションは使用できず、[宛先]、[CC]、または [BCC] ボックスで受信者を追加または変更することはできません。
     
     このオプションの機能の詳細については、[メールで[転送しない] オプションを使ってを転送しないでください](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails)を参照してください。
 
@@ -335,7 +335,7 @@ Word、PowerPoint、および Excel では、ドキュメントにアクセス�
 
 4. **[アクセス許可の割り当て]** ウィンドウで、**[特定のメール アドレスまたはドメインを追加]** を選択します。
 
-5. テキスト ボックスに、他の組織のドメイン名を入力します (例: **fabrikam.com**)。 次に **[追加]** を選択します。
+5. テキスト ボックスに、他の組織のドメイン名を入力します (例: **fabrikam.com**)。次に、**[追加]** を選択します。
 
 6. **[アクセス許可の選択]** を選択します。
 
@@ -361,7 +361,7 @@ Word、PowerPoint、および Excel では、ドキュメントにアクセス�
 
 6. **[アクセス許可の選択]** ウィンドウで、このユーザー (またはグループ) のアクセス許可の選択し、**[保存]** を選択します。
 
-7. **[アクセス許可の割り当て]** ウィンドウに戻り、このラベルに追加するユーザー (またはグループ) ごとに手順 3 から 6 を繰り返します。 **[保存]** をクリックします。
+7. **[アクセス許可の割り当て]** ウィンドウに戻り、このラベルに追加するユーザー (またはグループ) ごとに手順 3 から 6 を繰り返します。次に、**[保存]** をクリックします。
 
 8. **[暗号化]** ページで、**[次へ]** を選択して構成を完了します。
 
@@ -369,7 +369,7 @@ Word、PowerPoint、および Excel では、ドキュメントにアクセス�
 
 この構成には、メールまたはドキュメントを暗号化するためにユーザー、グループ、またはドメインを指定する必要がないという利点があります。 コンテンツは引き続き暗号化され、使用権限、有効期限、オフライン アクセスを指定できます。
 
-保護されたドキュメントまたはメールを開くことができるユーザーを制限する必要がない場合にのみ、この構成を使用してください。 [この設定の詳細情報](#requirements-and-limitations-for-add-any-authenticated-users)
+保護されたドキュメントまたはメールを開くことができるユーザーを制限する必要がない場合にのみ、この構成を使用してください。[この設定の詳細情報](#requirements-and-limitations-for-add-any-authenticated-users)
 
 1. **[暗号化]** ページで: **[アクセス許可を今すぐ割り当てるか、それともユーザーに決定させますか?]** で、**[アクセス許可を今すぐ割り当てる]** が選択されていることを確認します。
 
@@ -397,16 +397,16 @@ Word、PowerPoint、および Excel では、ドキュメントにアクセス�
 
   - 暗号化されたファイルに対して、検索、電子情報開示、Delve は動作しません。
   - DLP ポリシーは、これらの暗号化されたファイルのメタデータ (保持ラベルの情報など) に対しては機能しますが、これらのファイルのコンテンツ (ファイル内のクレジット カード番号など) に対しては機能しません。
-  - ユーザーは、暗号化されたファイルを Web 用 Office で開くことはできません。 SharePoint および OneDrive 内の Office ファイルの秘密度ラベルが有効化されている場合、ユーザーは有効化されたファイルを Web 用 Office で開くことができますが、次のようないつくつかの[制限](sensitivity-labels-sharepoint-onedrive-files.md#limitations)があります: オンプレミス キー ("Hold Your Own Key" または HYOK と呼ばれます)を使用して適用された暗号化、[二重キー暗号化](#double-key-encryption)、秘密度ラベルとは別に適用された暗号化。
+  - ユーザーは、暗号化されたファイルを Web 用 Office で開くことはできません。SharePoint および OneDrive 内の Office ファイルの秘密度ラベルが有効化されている場合、ユーザーは有効化されたファイルを Web 用 Office で開くことができますが、次のようないつくつかの[制限](sensitivity-labels-sharepoint-onedrive-files.md#limitations)があります: オンプレミス キー ("Hold Your Own Key" または HYOK と呼ばれます)を使用して適用された暗号化、[二重キー暗号化](#double-key-encryption)、秘密度ラベルとは別に適用された暗号化。
 
-- 暗号化されたドキュメントを組織外のユーザーと共有する場合は、ゲスト アカウントを作成し、条件付きアクセス ポリシーを変更する必要がある場合があります。 詳細については、「[外部ユーザーと暗号化されたドキュメントを共有する](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content)」を参照してください。
+- 暗号化されたドキュメントを組織外のユーザーと共有する場合は、ゲスト アカウントを作成し、条件付きアクセス ポリシーを変更する必要がある場合があります。詳細については、「[外部ユーザーと暗号化されたドキュメントを共有する](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content)」を参照してください。
 
 - 承認されたユーザーが Office アプリで暗号化されたドキュメントを開くと、アプリの上部にある黄色のメッセージ バーにラベル名と説明が表示されます。 暗号化アクセス許可が組織外のユーザーに拡張されている場合は、ドキュメントを開いたときにこのメッセージ バーに表示されるラベル名と説明を慎重に確認します。
 
 - 暗号化されたファイルを複数のユーザーが同時に編集するには、全員が Office for the web を使用する必要があります。  または、Windows と Mac の場合は、[秘密度ラベルのある暗号化されたファイルの共同編集を有効に](sensitivity-labels-coauthoring.md)して、ユーザーは Word、Excel、PowerPoint の[必要な最小バージョン](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint)を持っていることが必要です。 この状況が当てはまらず、ファイルが既に開かれている場合、次のことが起こります。
 
   - Office アプリ (Windows、Mac、Android、iOS)で、[**使用中のファイル**] メッセージがファイルをチェック アウトしているユーザーの名前とともにユーザーに表示されます。 その場合、ユーザーは読み取り専用コピーの閲覧またはそのコピーの保存と編集を行うことが可能で、他のユーザーによるファイルの使用が終了したときに通知を受け取ることができます。
-  - Web 用 Office では、他のユーザーと同時にドキュメントを編集することはできないというメッセージがユーザーに表示されます。 その場合は、[**閲覧表示で開く**] を選択できます。
+  - Web 用 Office では、他のユーザーと同時にドキュメントを編集することはできないというメッセージがユーザーに表示されます。その場合は、[**閲覧表示で開く**] を選択できます。
 
 - iOS および Android 用の Office アプリの[自動保存](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5)機能は、暗号化されたファイルに対して無効になっています。 [機密ラベルで暗号化されたファイルの共同編集を有効](sensitivity-labels-coauthoring.md)にしていない場合、この機能は Windows および Mac の暗号化ファイルでも無効になります。 自動保存を有効にする前に削除する必要があるアクセスの制限がファイルに適用されているというメッセージがユーザーに表示されます。
 
@@ -416,8 +416,8 @@ Word、PowerPoint、および Excel では、ドキュメントにアクセス�
 
 - 暗号化されたファイルに対する次の操作は Office アプリ (Windows、Mac、Android、iOS) ではサポートされておらず、問題が発生したことを示すエラー メッセージがユーザーに表示されます。ただし、SharePoint 機能を代替手段として使用できます。
 
-  - 以前のバージョンのコピーの表示、復元、および保存。 代替方法として、[リストまたはライブラリのバージョン管理を有効にして構成する](https://support.office.com/article/enable-and-configure-versioning-for-a-list-or-library-1555d642-23ee-446a-990a-bcab618c7a37)と、Web 用 Office でこれらの操作を行えます。
-  - ファイルの名前または場所の変更。 代替方法として、[ドキュメント ライブラリ内のファイル、フォルダー、またはリンクの名前を SharePoint で変更](https://support.microsoft.com/office/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185)することができます。
+  - 以前のバージョンのコピーの表示、復元、および保存。代替方法として、[リストまたはライブラリのバージョン管理を有効にして構成する](https://support.office.com/article/enable-and-configure-versioning-for-a-list-or-library-1555d642-23ee-446a-990a-bcab618c7a37)と、Web 用 Office でこれらの操作を行えます。
+  - ファイルの名前または場所の変更。代替方法として、[ドキュメント ライブラリ内のファイル、フォルダー、またはリンクの名前を SharePoint で変更](https://support.microsoft.com/office/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185)することができます。
 
 秘密度ラベルを使用して暗号化されたファイルでの共同作業環境を最適化するには、[SharePoint および OndeDrive 内の Office ファイル用秘密度ラベル](sensitivity-labels-sharepoint-onedrive-files.md)および Web 用 Office を使用することをお勧めします。
 

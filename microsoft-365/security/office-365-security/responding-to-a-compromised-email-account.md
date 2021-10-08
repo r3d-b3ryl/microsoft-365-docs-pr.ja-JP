@@ -14,18 +14,18 @@ ms.collection:
 ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MET150
 description: Microsoft 365 で利用可能なツールを使用して、侵害された電子メール アカウントを認識して対処する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 193afd61509b7361ac18dd32d827182752fb61ed
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e2b38179556c8658cf6619e40f87bb803fec80e4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214244"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208396"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>侵害された電子メール アカウントへの対応
 
@@ -59,11 +59,11 @@ Microsoft 365 のメールボックス、データ、およびその他のサー
 - メールの転送が最近追加された。
 - 偽の銀行署名や処方薬署名など、通常とは異なる署名が最近追加された。
 
-ユーザーが上記の兆候のいずれかを報告してきた場合は、詳しい調査を実施する必要があります。 [Microsoft 365 Defender](https://security.microsoft.com) と Azure ポータルには、侵害が疑われるユーザー アカウントの活動を調査するためのツールが用意されています。
+ユーザーが上記の兆候のいずれかを報告してきた場合は、詳しい調査を実施する必要があります。[Microsoft 365 Defender](https://security.microsoft.com) と Azure ポータルに、侵害が疑われるユーザー アカウントの活動を調査するためのツールが用意されています。
 
 - **Microsoft 365 Defender ポータルの統合監査ログ**: 不審な活動が発生する直前から現在の日付までの範囲で結果をフィルター処理することにより、疑わしいアカウントのすべての活動を確認します。検索中にアクティビティをフィルター処理しないでください。
 
-- **EAC の管理監査ログ**: Exchange Online では、Exchange 管理センター (EAC) を使用して管理者監査ログ内のエントリを検索および表示できます。 管理者監査ログには、管理者や管理者特権を割り当てられたユーザーが実行する、Exchange Online PowerShell コマンドレットに基づく特定の操作が記録されます。 管理者監査ログのエントリは、実行されたコマンドレット、使われたパラメーター、コマンドレットを実行したユーザー、および影響を受けたオブジェクトに関する情報を提供します。
+- **EAC の管理監査ログ**: Exchange Online では、Exchange 管理センター (EAC) を使用して管理者監査ログ内のエントリを検索および表示できます。管理者監査ログには、管理者や管理者特権を割り当てられたユーザーが実行する、Exchange Online PowerShell コマンドレットに基づく特定の操作が記録されます。管理者監査ログのエントリは、実行されたコマンドレット、使われたパラメーター、コマンドレットを実行したユーザー、および影響を受けたオブジェクトに関する情報を提供します。
 
 - **Azure AD ポータルの Azure AD サインイン ログおよびその他のリスク レポート**: 次の列の値を調査します。
   - IP アドレスの確認

@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: ファイルプランでは、アイテム保持ラベルに高度な管理機能が提供されます。
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 5c270e3b03c8c8373cc3fcb204f5f5a654eeb001
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6c77268133440e4f067d42d66f4c99f76034e735
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191510"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201147"
 ---
 # <a name="use-file-plan-to-manage-retention-labels"></a>ファイルプランを使用して保持ラベルを管理する
 
@@ -70,25 +70,25 @@ Microsoft 365 コンプライアンスセンターで、もしも既に **情報
 
 - **状態** は、ラベルポリシーにラベルが含まれているかどうか、或いは自動適用ポリシー (**アクティブ**) もしくはそうではない(**非アクティブ**).かを識別します。
 
-- **基づき** どのように、もしくはいつ保持期間が開始するのかを識別します。 有効な値:
+- **基準** は、どのように、もしくはいつ保持期間が開始するのかを識別します。有効な値は以下の通りです。
     - イベント
     - 作成日時
     - 最終更新日時
     - ラベルが付けられた日時
 
-- **レコード** は、ラベルが適用されたときに、アイテムがレコードとしてマークされているかどうかを識別します。 有効な値:
-    - 不要
+- **レコード** は、ラベルが適用されたときに、アイテムがレコードとしてマークされているかどうかを識別します。有効な値は以下の通りです。
+    - いいえ
     - はい
     - はい (法的)
 
-- **保持期間** は、保持期間を識別します。 有効な値:
+- **保持期間** は、保持期間を識別します。有効な値は以下の通りです。
     - 日数
     - 月
     - 年数
     - 無期限
     - なし
 
-- [**廃棄の種類**] は、保持期間終了時に何が起こるのかを識別します。 有効な値:
+- [**廃棄の種類**] は、保持期間終了時に何が起こるのかを識別します。有効な値は以下の通りです。
     - アクションなし
     - 自動削除
     - 確認が必要
@@ -109,7 +109,7 @@ Microsoft 365 コンプライアンスセンターで、もしも既に **情報
 
 ![保持ラベルを作成または編集する場合のファイル計画記述子。](../media/file-plan-descriptors.png)
 
-これらのオプションの記述子ごとに **[選択]** を選択すると、すぐに使用できる値の 1 つを選択するか、独自の値を作成して選択することができます。 次に例を示します。 
+これらのオプションの記述子ごとに **[選択]** を選択すると、すぐに使用できる値の 1 つを選択するか、独自の値を作成して選択することができます。以下のような例があります: 
 
 ![プロビジョニング/引用用の新しいファイル プラン記述子を作成する。](../media/file-plan-descriptors-create.png)
 
@@ -161,10 +161,10 @@ A *.csv ファイルは既存の全ての保持ラベルを開く、を含みま
    |カテゴリ|文字列|いいえ|このプロパティは、**カテゴリ** ファイル計画記述子に表示される値を指定します。|
    |下位カテゴリ|文字列|いいえ|このプロパティは、**サブカテゴリ** ファイル計画記述子に表示される値を指定します。|
    |AuthorityType|文字列|いいえ|このプロパティは、**管理組織の種類** ファイル計画記述子に表示される値を指定します。|
-   |CitationName|String|いいえ|このプロパティは、**プロビジョニング/引用** ファイル計画記述子に表示される引用の名前を指定します。 例として、「2002 年米国企業改革法」。 |
+   |CitationName|String|いいえ|このプロパティは、**規定/引用** ファイル計画記述子に表示される引用の名前を指定します。例: "Sarbanes-Oxley Act of 2002"。 |
    |CitationUrl|文字列|いいえ|このプロパティは、**規定/引用** ファイル計画記述子に表示される URL を指定します。|
    |CitationJurisdiction|String|いいえ|このプロパティは、**規定/引用** ファイル計画記述子に表示される管理規則または機関を指定します (例: 「米国証券取引委員会 (SEC)」)。|
-   |Regulatory|文字列|いいえ|このプロパティでは、ラベルがコンテンツをレコードより[制限された](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked) Regulatory レコードとしてマークするかどうかを指定します。 このラベル構成を使用するには、[コンテンツを Regulatory レコードとしてマークするオプションを表示する](declare-records.md#how-to-display-the-option-to-mark-content-as-a-regulatory-record)ようにテナントを構成する必要があり、そうでない場合はインポートの検証が失敗します。 有効な値は次のとおりです。 </br>**TRUE**: ラベルは、Regulatory レコードとしてアイテムをマークします。 また、**IsRecordLabel** プロパティを TRUE に設定する必要があります。</br>**FALSE**: ラベルは、コンテンツを Regulatory レコードとしてマークしません。 これが既定値です。|
+   |Regulatory|文字列|いいえ|このプロパティでは、ラベルがコンテンツをレコードより[制限された](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked) Regulatory レコードとしてマークするかどうかを指定します。 このラベル構成を使用するには、[コンテンツを Regulatory レコードとしてマークするオプションを表示する](declare-records.md#how-to-display-the-option-to-mark-content-as-a-regulatory-record)ようにテナントを構成する必要があり、そうでない場合はインポートの検証が失敗します。 有効な値は次のとおりです。 </br>**TRUE**: ラベルは、Regulatory レコードとしてアイテムをマークします。 また、**IsRecordLabel** プロパティを TRUE に設定する必要があります。</br>**FALSE**: このラベルは、コンテンツを Regulatory レコードとしてマークしません。これは既定値です。|
    |EventType|文字列|いいえ、**RetentionType** が **EventAgeInDays** ではない場合です|このプロパティは、[イベントベースの保持](event-driven-retention.md)に使用するイベントの種類を指定します。 **[レコード管理]**、 > **[イベント]**、 > **[イベントの種類の管理]** に表示されている既存のイベントの種類を指定します。 または、[Get-CompianceRetentionEventType](/powershell/module/exchange/get-complianceretentioneventtype) コマンドレットを使用して、利用可能なイベントの種類を表示します。 **従業員活動** や **製品ライフタイム** など、いくつかの組み込みのイベントの種類がありますが、独自のイベントの種類を作成することもできます。 </br> </br> 独自のイベントの種類を指定する場合、インポート プロセスの一環として名前が検証されるため、そのイベントの種類がインポート前に存在している必要があります。|
    |||
 

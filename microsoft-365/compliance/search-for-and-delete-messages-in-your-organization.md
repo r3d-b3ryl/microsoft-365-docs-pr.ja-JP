@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Microsoft 365 コンプライアンス センターの検索と消去機能を使って、組織のすべてのメールボックスからメール メッセージを検索し、削除できます。
-ms.openlocfilehash: f543a3239b7390e2cd449c0209a512735df2f52e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 33c65cb61be14d72631fd3a272b68f2dad2ffea6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175807"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204229"
 ---
 # <a name="search-for-and-delete-email-messages"></a>メール メッセージを検索して削除する
 
@@ -43,7 +43,7 @@ ms.locfileid: "59175807"
 
 - この記事で説明されている検索と消去のワークフローでは、Microsoft Teams からチャット メッセージやその他のコンテンツは削除されません。 手順 2 で作成したコンテンツ検索で Microsoft Teams からアイテムが返された場合、手順 3 でアイテムを消去しても、それらのアイテムは削除されません。
 
-- コンテンツ検索を作成して実行するには、**電子情報開示マネージャー** ロール グループのメンバーであるか、Microsoft 365 コンプライアンス センターの **コンプライアンス検索** ロールが割り当てられている必要があります。 メッセージを削除するには、**組織の管理** ロール グループのメンバーであるか、コンプライアンス センターの **検索と消去** ロールが割り当てられている必要があります。ユーザーのロール グループへの追加に関する情報は、[電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)を参照してください。
+- コンテンツ検索を作成して実行するには、**電子情報開示マネージャー** ロール グループのメンバーであるか、Microsoft 365 コンプライアンス センターの **コンプライアンス検索** ロールが割り当てられている必要があります。メッセージを削除するには、**組織の管理** 役割グループのメンバーであるか、Microsoft 365 コンプライアンス センターで **検索と消去** の役割が割り当てられている必要があります。ユーザーを役割グループに追加する方法の詳細については、「[電子情報開示権限を割り当てる](assign-ediscovery-permissions.md)」をご覧ください。
 
   > [!NOTE]
   > **組織の管理** ロール グループは、Exchange Online と Microsoft 365 コンプライアンス センターの両方にあります。 これらは、異なる権限を持つ個別の役割グループです。 Exchange Online で **組織の管理** のメンバーであっても、メール メッセージを削除するために必要なアクセス許可は付与されません。 Microsoft 365 コンプライアンス センターで **検索と消去** の役割が (直接、または **組織の管理** などの役割グループを通じて) 割り当てられていない場合、手順 3 で **New-ComplianceSearchAction** コマンドレットを実行し、"パラメーター名 'Purge' と一致するパラメーターが見つかりません" というエラー メッセージが表示されます。
@@ -64,7 +64,7 @@ ms.locfileid: "59175807"
 
 ## <a name="step-2-create-a-content-search-to-find-the-message-to-delete"></a>手順 2: コンテンツ検索を作成して、削除するメッセージを探す
 
-2 番目の手順は、組織のメールボックスから削除するメッセージを見つけるコンテンツ検索を作成し、実行することです。 Microsoft 365 コンプライアンス センターを使用するか、セキュリティ/コンプライアンス PowerShell の **New-ComplianceSearch** コマンドレットと **Start-ComplianceSearch** コマンドレットを実行すると、検索を作成できます。 [手順 3](#step-3-delete-the-message) で **New-ComplianceSearchAction -Purge** コマンドを実行すると、この検索のクエリに一致するメッセージは削除されます。 コンテンツ検索を作成し、検索クエリを構成する方法については、次のトピックを参照してください。
+2 番目の手順は、組織のメールボックスから削除するメッセージを見つけるコンテンツ検索を作成し、実行することです。Microsoft 365 コンプライアンス センターを使用するか、セキュリティ/コンプライアンス PowerShell の **New-ComplianceSearch** コマンドレットと **Start-ComplianceSearch** コマンドレットを実行すると、検索を作成できます。[手順 3](#step-3-delete-the-message) で **New-ComplianceSearchAction** コマンドを実行すると、この検索のクエリに一致するメッセージは削除されます。コンテンツ検索を作成し、検索クエリを構成する方法については、次のトピックを参照してください。
 
 - [Office 365 のコンテンツ検索](content-search.md)
 
@@ -145,13 +145,13 @@ New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeTy
 
 - **検索と削除の操作の状態を取得するにはどうすればよいですか?**
 
-  **Get-ComplianceSearchAction** を実行すると、その削除操作の状態を取得できます。 **New-ComplianceSearchAction** コマンドレットを実行したときに作成されるオブジェクトは、`<name of Content Search>_Purge` という形式で名前付けされます。
+  **Get-ComplianceSearchAction** を実行して、削除操作の状態を取得します。**New-ComplianceSearchAction** コマンドレットを実行したときに作成されるオブジェクトは、`<name of Content Search>_Purge` という形式を使って名前が付けられます。
 
 - **メッセージを削除するとどうなりますか?**
 
   `New-ComplianceSearchAction -Purge -PurgeType HardDelete` コマンドを使用して削除されたメッセージは、Purges フォルダーに移動され、ユーザーはアクセスできなくなります。 Purges フォルダーに移動されたメッセージは、そのメールボックスで単一アイテムの回復が有効になっている場合、削除済みアイテムの保持期間が切れるまで保持されます。 (Microsoft 365 では、新しいメールボックスを作成すると、既定で単一アイテムの回復が有効になります)。削除済みアイテムの保持期間を過ぎると、そのメッセージは完全に削除するようにマークされ、管理フォルダー用アシスタントによって次回そのメールボックスが処理される際に Microsoft 365 から消去されます。
 
-  `New-ComplianceSearchAction -Purge -PurgeType SoftDelete` コマンドを使用すると、メッセージは、ユーザーの回復可能なアイテム フォルダーの Deletions フォルダーに移動されます。 Microsoft 365 から直ちに削除されることはありません。 ユーザーは、メールボックスに構成されている削除したアイテムの保持期間に基づき、その期間は削除済みアイテム フォルダーのメッセージを復元できます。 この保持期間を過ぎるか、過ぎる前にユーザーがメッセージを消去すると、メッセージは Purges フォルダーに移動され、ユーザーはアクセスできなくなります。 Purges フォルダーに移動されたメッセージは、そのメールボックスで単一アイテムの回復が有効になっている場合、メールボックスに構成されている削除済みアイテムの保持期間が切れるまで保持されます。 (Microsoft 365 では、新しいメールボックスを作成すると、既定で単一アイテムの回復が有効になります)。削除済みアイテムの保持期間を過ぎると、そのメッセージは完全に削除するようにマークされ、管理フォルダー用アシスタントによって次回そのメールボックスが処理される際に Microsoft 365 から消去されます。
+  `New-ComplianceSearchAction -Purge -PurgeType SoftDelete` コマンドを使用すると、メッセージは、ユーザーの回復可能なアイテム フォルダーの Deletions フォルダーに移動されます。すぐに Microsoft 365 から削除されることはありません。ユーザーは、メールボックス用に構成された削除済みアイテムの保持期間に基づく期間、[削除済みアイテム] フォルダーにあるメッセージを回復できます。この保持期間が過ぎると (または過ぎる前にユーザーがメッセージを削除すると)、メッセージは Purges (消去) フォルダーに移動し、ユーザーはアクセスできなくなります。Purges (消去) フォルダーに移動すると、メールボックスで単一アイテムの回復が利用できれば、メールボックス用に構成された削除済みアイテムの保持期間に基づく期間、再度保持できます。(Microsoft 365 では、新しいメールボックスが作成されると、単一アイテムの回復が既定で利用できます。) 削除済みアイテムの保持期間が過ぎると、メッセージが完全な削除対象としてマークされ、次回管理フォルダー アシスタントによってメールボックスが処理されたときに Microsoft 365 から削除されます。
 
 - **50,000 を超えるメールボックスからメッセージを削除するにはどうすればよいですか?**
 
