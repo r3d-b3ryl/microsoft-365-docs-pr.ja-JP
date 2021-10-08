@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0a92cf747142dbb01908b1ea3931d9b7a6bfa115
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ac6aa01877b7b4968b01b5a16c931079e2b4360e
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159164"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60239578"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の新機能
 
@@ -34,7 +34,7 @@ ms.locfileid: "60159164"
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
-次の機能は、Microsoft Defender for Endpoint の最新リリースのプレビューまたは一般公開 (GA) と、Windows 10 および Windows Server のセキュリティ機能です。
+次の機能は、Microsoft Defender for Endpoint の最新リリースのプレビュー機能または一般公開 (GA) です。
 
 プレビュー機能の詳細については、「プレビュー機能」 [を参照してください](preview.md)。
 
@@ -59,7 +59,10 @@ ms.locfileid: "60159164"
 - [iOS の Defender for Endpoint の新機能](ios-whatsnew.md)
 - [Defender for Endpoint on Linux の新機能](linux-whatsnew.md)
 
+
 ## <a name="october-2021"></a>2021 年 10 月
+
+- [R2 と R2 のオンボーディングと機能のパリティWindows Server 2012更新Windows Server 2016 (プレビュー)](configure-server-endpoints.md)<br> 新しい統合ソリューション パッケージを使用すると、依存関係とインストール手順を削除することで、サーバーのオンボードが容易になります。 さらに、この統合ソリューション パッケージには、多くの新機能が追加されています。
 
 - Windows 11 のサポートが Microsoft Defender for Endpoint および Microsoft 365 Defender に追加されました。
 

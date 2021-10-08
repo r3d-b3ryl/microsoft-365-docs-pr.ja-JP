@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: how-to
 ms.date: 08/17/2021
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 2b399e306e766a4bb1d723bd93ed22d88a72c55b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5ef41d825b8f375377a6307a0a4de8f69c5737df
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174893"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240586"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>攻撃面の減少ルールを有効にする
 
@@ -46,6 +46,8 @@ ms.locfileid: "60174893"
 - Windows 10 Enterpriseバージョン[1709](/windows/whats-new/whats-new-windows-10-version-1709)以降
 - Windowsサーバー、[バージョン 1803 (半期チャネル)](/windows-server/get-started/whats-new-in-windows-server-1803)以降
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
+- [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2) 
 - Windows Server 2022
 
 攻撃表面の縮小ルールの機能セット全体を使用するには、以下が必要です。
@@ -133,7 +135,7 @@ ASR ルールを有効にする次の手順には、ファイルとフォルダ�
    > [!div class="mx-imgBorder"]
    > ![MEM の基本的な属性。](images/mem03-1-basics.png)
 
-4. [**次へ**] をクリックします。 手順 **2 構成設定が開** きます。 [OMA-URI] の設定をクリック **します**。 2 つのオプションが表示 **されます。**
+4. **[次へ]** をクリックします。 手順 **2 構成設定が開** きます。 [OMA-URI] の設定をクリック **します**。 2 つのオプションが表示 **されます。**
 
    > [!div class="mx-imgBorder"]
    > ![MEM 構成の設定。](images/mem04-2-configuration-settings.png)
@@ -174,7 +176,7 @@ ASR ルールを有効にする次の手順には、ファイルとフォルダ�
    > [!div class="mx-imgBorder"]
    > ![MEM 適用性ルール。](images/mem07-5-applicability-rules.png)
 
-10. [**次へ**] をクリックします。 手順 **6 [レビュー] + [作成**] で、選択して入力した設定と情報を確認し、[作成] を **クリックします**。
+10. **[次へ]** をクリックします。 手順 **6 [レビュー] + [作成**] で、選択して入力した設定と情報を確認し、[作成] を **クリックします**。
 
     > [!div class="mx-imgBorder"]
     > ![MEM レビューと作成。](images/mem08-6-review-create.png)

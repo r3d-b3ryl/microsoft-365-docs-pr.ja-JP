@@ -17,12 +17,12 @@ manager: dansimp
 ms.technology: mde
 ms.date: 09/14/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 769c8519fa2967b317bd266d143153c28b269b98
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: baf8114372d86a995483c61802462bd94597f147
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60169709"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240082"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>Microsoft Defender ウイルス対策の他のセキュリティ製品との互換性
 
@@ -84,7 +84,12 @@ Microsoft Defender ウイルス対策のバージョンを実行しているエ�
 > [!TIP]
 > Windows Server インストールの主な相違点と管理オプションについては、「[Windows Server 上の Microsoft Defender ウイルス対策](microsoft-defender-antivirus-on-windows-server.md)」 を参照します。 このWindows Server 2016の代 *わりに、Windows Defender ウイルス対策**が表示* Microsoft Defender ウイルス対策。
 
-### <a name="why-run-microsoft-defender-antivirus-in-passive-mode"></a>パッシブ モードでMicrosoft Defender ウイルス対策実行する理由
+> [!IMPORTANT]
+> Microsoft Defender ウイルス対策は、Windows 10、Windows Server 2012 R2、Windows Server 2016、Windows Server、バージョン 1803 以降、および Windows Server 2019 を実行しているデバイスでのみ使用できます。
+>
+> このWindows 8.1、エンタープライズ レベルのエンドポイントウイルス対策保護は、System Center Endpoint Protectionによって[](/previous-versions/system-center/system-center-2012-R2/hh508760(v=technet.10))管理されるMicrosoft Endpoint Configuration Manager。
+>
+> Windows Defenderは、エンタープライズ レベルの管理[を](/previous-versions/windows/it-pro/windows-8.1-and-8/dn344918(v=ws.11)#BKMK_WindowsDefender)提供Windows 8.1、Windows 8.1コンシューマー デバイスにも提供されます。
 
 Defender for Endpoint には、エンドポイントにインストールされているウイルス対策保護をさらに拡張する機能が含まれています。 別のウイルス対策ソリューションとMicrosoft Defender ウイルス対策を実行するメリットがあります。
 

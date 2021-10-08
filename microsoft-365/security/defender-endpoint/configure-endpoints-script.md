@@ -15,14 +15,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c00130dba6dcb742ff3f321d7a51edcbfb378f62
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 74e0289c2233a4df1a4e9810a31e960a49078177
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205681"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60239842"
 ---
-# <a name="onboard-the-windows-devices-using-a-local-script"></a>ローカル スクリプトをWindowsデバイスにオンボードする
+# <a name="onboard-windows-devices-using-a-local-script"></a>ローカル Windowsを使用してデバイスをオンボードする
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -37,7 +37,13 @@ ms.locfileid: "60205681"
 >
 > 大規模に展開するには、他の [展開オプションを使用します](configure-endpoints.md)。 たとえば、オンボーディング スクリプトを 10 台以上のデバイスに展開し、グループ ポリシーを使用したオンボード Windows デバイスで使用[できます](configure-endpoints-gp.md)。
 
-## <a name="onboard-devices"></a>デバイスのオンボード
+[[](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)エンドポイント用 Defender [Visio展開](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx)] のさまざまなパスを確認するには、PDF またはドキュメントを参照してください。 
+
+## <a name="onboard-devices"></a>デバイスのオンボード 
+
+1.  サービス オンボーディング ウィザードから.zipした gp 構成 *パッケージ*(WindowsDefenderATPOnboardingPackage.zip) を開きます。 Defender ポータルからパッケージを取得[Microsoft 365することもできます](https://security.microsoft.com/)。
+
+    1. ナビゲーション ウィンドウで、[エンドポイント **デバイス設定**  >    >  **オンボーディング]**  >  **を選択します**。
 
 
 [[](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)エンドポイント用 Defender [Visio展開](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx)] のさまざまなパスを確認するには、PDF またはドキュメントを参照してください。
@@ -130,8 +136,7 @@ Name 型は D-WORD です。 使用可能な値は次のとおりです。
 2. [デバイス **インベントリ] をクリックします**。
 3. デバイスが表示されているのを確認します。
 
-## <a name="related-topics"></a>関連トピック
-
+## <a name="related-topics"></a>関連項目
 - [グループ ポリシー Windowsデバイスのオンボード](configure-endpoints-gp.md)
 - [デバイスWindowsデバイスのオンボードMicrosoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [モバイル Windowsツールを使用してデバイスをオンボードする](configure-endpoints-mdm.md)

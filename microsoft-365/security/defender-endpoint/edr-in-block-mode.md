@@ -20,12 +20,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 41c51657d748ef1503c5540b1162d7ea43722b9f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 25b5aa85bc11cf7819c6a878aebdf2cbcdeeb237
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205549"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60239866"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>ブロック モードのエンドポイントでの検出と対応 (EDR)
 
@@ -149,15 +149,14 @@ PowerShell を使用して、パッシブ モードでEDRでブロック モー�
 アクティブ Microsoft Defender ウイルス対策またはパッシブ モードで実行されている場合、ブロック モードEDR次のバージョンのデバイスがサポートWindows。
 
 - Windows 10 (すべてのリリース)
-- Windows Server バージョン 1803 以降
-- Windows Server 2019
+- Windows Server バージョン 1803 以降 
 - Windows Server 2022
+- Windows Server 2019 
+- Windows Server 2016
+- Windows Server 2012 R2
 
-#### <a name="what-about-windows-server-2016"></a>何をWindows Server 2016?
-
-アクティブ Windows Server 2016でMicrosoft Defender ウイルス対策し、エンドポイントが Defender for Endpoint にオンボードされている場合は、ブロック モードの EDRが技術的にサポートされます。 ただし、EDRモードのユーザーは、エンドポイントのプライマリ ウイルス対策ソリューションMicrosoft Defender ウイルス対策保護を強化することを目的とします。 このような場合、Microsoft Defender ウイルス対策モードで実行されます。
-
-現在、パッシブ モードMicrosoft Defender ウイルス対策の実行は、パッシブ モードではサポートWindows Server 2016。 詳細については、「Passive [mode and Windows Server」](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server)および[「Microsoft Defender ウイルス対策」を参照してください](microsoft-defender-antivirus-compatibility.md)。
+>[!NOTE]
+>Windows Server 2016および Windows Server 2012 R2 は、この機能を動作するには、「オンボード サーバー Windows[](configure-server-endpoints.md)を使用してオンボードする必要があります。 
 
 ### <a name="how-much-time-does-it-take-for-edr-in-block-mode-to-be-disabled"></a>ブロック モードで無効にEDRにどのくらいの時間が必要ですか?
 

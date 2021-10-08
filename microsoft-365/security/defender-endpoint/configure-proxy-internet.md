@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 68d69f45820dd014ead07a7a9f2f6bbcb82a7d3a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 42f21f27e30cc4a2bc4af5a2ecefd07c7353d96a
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60186622"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240226"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>デバイス プロキシとインターネット接続の設定を構成する
 
@@ -186,7 +186,7 @@ Defender for Endpoint センサーがシステム コンテキストから接続
 
 ### <a name="microsoft-monitoring-agent-mma---proxy-and-firewall-requirements-for-older-versions-of-windows-client-or-windows-server"></a>Microsoft Monitoring Agent (MMA) - クライアントまたはサーバーの古いバージョンのプロキシおよびファイアウォールWindows要件Windowsします。
 
-以下の情報は、Windows 7 SP1、Windows 8.1、Windows Server 2008 R2、Windows Server 2012 R2、Windows Server 2016 など、以前のバージョンの Windows の Log Analytics エージェント (多くの場合、Microsoft Monitoring Agent と呼ばれます) と通信するために必要なプロキシとファイアウォールの構成情報を示しています。
+以下の情報は、Windows 7 SP1、Windows 8.1、Windows Server 2008 R2* などの以前のバージョンの Windows の Log Analytics エージェント (Microsoft Monitoring Agent と呼ばれる) と通信するために必要なプロキシおよびファイアウォール構成情報を示しています。
 
 <br>
 
@@ -199,6 +199,9 @@ Defender for Endpoint センサーがシステム コンテキストから接続
 |*.blob.core.windows.net|ポート 443|送信|はい|
 |*.azure-automation.net|ポート 443|送信|はい|
 
+>[!NOTE]
+>*これらの接続要件は、MMA を必要とする以前の Microsoft Defender for Endpoint Windows Server 2016および Windows Server 2012 R2 にも適用されます。 新しい統合ソリューションを使用してこれらのオペレーティング システムをオンボードする手順は、オンボード[Windows](configure-server-endpoints.md)サーバーにあるか[、Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/server-migration)のサーバー移行シナリオで新しい未確認ソリューションに移行する手順です。
+
 > [!NOTE]
 > クラウドベースのソリューションとして、IP 範囲が変更される可能性があります。 DNS 解決設定に移動する必要があります。
 
@@ -206,7 +209,7 @@ Defender for Endpoint センサーがシステム コンテキストから接続
 
  以前のバージョンのアプリケーションに対して Microsoft Monitoring Agent (MMA) を使用する場合は、特定の環境のワイルドカード (*) 要件を排除するには、次のガイダンスを参照Windows。
 
-1. Microsoft Monitoring Agent (MMA) を使用して以前のオペレーティング システムを Defender for Endpoint にオンボードします (詳細については、「Defender for Endpoint および Onboard Windows サーバーでの以前のバージョンの[Windows](https://go.microsoft.com/fwlink/p/?linkid=2010326)のオンボード」[を参照](configure-server-endpoints.md#windows-server-2008-r2-sp1-windows-server-2012-r2-and-windows-server-2016)してください。
+1.  Microsoft Monitoring Agent (MMA) を使用して以前のオペレーティング システムを Defender for Endpoint にオンボードします (詳細については、「Defender for Endpoint および Onboard Windows サーバーでの以前のバージョンの[Windows](https://go.microsoft.com/fwlink/p/?linkid=2010326)のオンボード」[を参照](configure-server-endpoints.md)してください。
 
 2. コンピューターがポータルに正常に報告Microsoft 365 Defenderします。
 
@@ -271,7 +274,7 @@ Defender for Endpoint センサーがシステム コンテキストから接続
 >
 > TelemetryProxyServer がレジストリまたはグループ ポリシーを介して設定されている場合、Defender for Endpoint は、定義されたプロキシにアクセスできない場合、直接に戻されます。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [Microsoft Defender ウイルス対策 ネットワーク接続を構成および検証する](configure-network-connections-microsoft-defender-antivirus.md)
 - [グループ ポリシー設定を使用して、グループ ポリシーの構成とMicrosoft Defender ウイルス対策](use-group-policy-microsoft-defender-antivirus.md)

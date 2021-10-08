@@ -1,6 +1,6 @@
 ---
 title: モバイル Windowsツールを使用してデバイスをオンボードする
-description: モバイル デバイス管理ツールを使用してデバイスに構成パッケージを展開し、サービスにオンボードします。
+description: モバイル デバイス管理ツールを使用して、デバイスに構成パッケージを展開して、Defender for Endpoint サービスにオンボードします。
 keywords: mdm を使用したオンボード デバイス、デバイス管理、オンボード Microsoft Defender for Endpoint デバイス、mdm
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,14 +14,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6aaa510df9b3155015979f4d3a5278c601b56223
-ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
+ms.openlocfilehash: a92b663eeddfcfb8ccf17bad204074764711685d
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60217128"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60239878"
 ---
-# <a name="onboard-the-windows-devices-using-mobile-device-management-tools"></a>モバイル デバイス管理ツールWindowsデバイスをオンボードする
+# <a name="onboard-windows-devices-using-mobile-device-management-tools"></a>モバイル Windowsツールを使用してデバイスをオンボードする
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,11 +31,12 @@ ms.locfileid: "60217128"
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointsmdm-abovefoldlink)
 
-モバイル デバイス管理 (MDM) ソリューションを使用してデバイスを構成できます。 Defender for Endpoint は、デバイスを管理OMA-URIsポリシーを作成するためのユーザー情報を提供することで、MDM をサポートします。
+モバイル デバイス管理 (MDM) ソリューションを使用して、デバイスを構成Windows 10できます。 Defender for Endpoint は、デバイスを管理OMA-URIsポリシーを作成するためのユーザー情報を提供することで、MDM をサポートします。
+
 
 Defender for Endpoint CSP の使用の詳細については [、「WindowsAdvancedThreatProtection CSP」](https://msdn.microsoft.com/library/windows/hardware/mt723296(v=vs.85).aspx) および [「WindowsAdvancedThreatProtection DDF ファイル」を参照してください](https://msdn.microsoft.com/library/windows/hardware/mt723297(v=vs.85).aspx)。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 デバイスを使用している場合Microsoft Intune MDM が登録されている必要があります。 それ以外の場合、設定は正常に適用されません。
 
@@ -93,8 +94,7 @@ Defender for Endpoint CSP の使用の詳細については [、「WindowsAdvanc
 > [!IMPORTANT]
 > Offboarding を使用すると、デバイスはポータルへのセンサー データの送信を停止しますが、デバイスからのデータ (通知への参照を含む) は最大 6 か月間保持されます。
 
-## <a name="related-topics"></a>関連トピック
-
+## <a name="related-topics"></a>関連項目
 - [グループ ポリシー Windowsデバイスのオンボード](configure-endpoints-gp.md)
 - [デバイスWindowsデバイスのオンボードMicrosoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [ローカル Windowsを使用してデバイスをオンボードする](configure-endpoints-script.md)

@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 9c9d731fa8a1632ab6804ebed9fdb2594564eaf8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8f6a4278918dc364f160aea1665c56878a05a41a
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212427"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240046"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング
 
@@ -232,7 +232,7 @@ MDM イベント ログを表示して、オンボーディング中に発生す
 
 2. 次のコマンドを入力し、Enter キーを **押します**。
 
-   ```text
+   ```console
    sc qc diagtrack
    ```
 
@@ -252,21 +252,19 @@ MDM イベント ログを表示して、オンボーディング中に発生す
 
 2. 次のコマンドを入力し、Enter キーを **押します**。
 
-   ```text
+   ```console
    sc config diagtrack start=auto
    ```
 
 3. 成功メッセージが表示されます。 次のコマンドを入力して変更を確認し、Enter キーを **押します**。
 
-   ```text
+   ```console
    sc qc diagtrack
    ```
 
-4. サービスを開始します。
+4. サービスを開始します。 コマンド プロンプトで、次のコマンドを入力し **、Enter** キーを押します。
 
-   a. コマンド プロンプトで、次のコマンドを入力し **、Enter** キーを押します。
-
-   ```text
+   ```console
    sc start diagtrack
    ```
 
@@ -304,7 +302,7 @@ WinHTTP は、インターネット閲覧プロキシ設定や他のユーザー
   - `<Key Path="SOFTWARE\Policies\Microsoft\Windows Defender"><KeyValue Value="0" ValueKind="DWord" Name="DisableAntiVirus"/></Key>`
 
 > [!IMPORTANT]
-> この `disableAntiSpyware` 設定は中止され、2020 年 8 月 (バージョン 4.18.2007.8) の Microsoft Defender ウイルス対策 への更新時に、すべてのクライアント デバイスで無視されます。
+> この設定は `disableAntiSpyware` 中止され、2020 年 8 月 (バージョン 4.18.2007.8) 更新プログラムが Microsoft Defender ウイルス対策 に更新された現在、すべての Windows 10 デバイスでは無視されます。
 
 - ポリシーをクリアした後、オンボーディング手順を再度実行します。
 
@@ -320,12 +318,13 @@ WinHTTP は、インターネット閲覧プロキシ設定や他のユーザー
    > - `<Key Path="SYSTEM\CurrentControlSet\Services\WdBoot"><KeyValue Value="0" ValueKind="DWord" Name="Start"/></Key>`
    > - `<Key Path="SYSTEM\CurrentControlSet\Services\WdFilter"><KeyValue Value="0" ValueKind="DWord" Name="Start"/></Key>`
 
-## <a name="troubleshoot-onboarding-issues-on-a-server"></a>サーバーでのオンボーディングの問題のトラブルシューティング
+## <a name="troubleshoot-onboarding-issues"></a>オンボーディングに関する問題のトラブルシューティング 
 
 > [!NOTE]
 > 次のトラブルシューティング ガイダンスは、以下のユーザーにのみWindows Server 2016適用されます。
 
 サーバーのオンボード中に問題が発生した場合は、次の検証手順を実行して、考えられる問題に対処します。
+
 
 - [センサー Microsoft Monitoring Agentをサービスに報告するように、コンピューター (MMA) がインストールおよび構成されていることを確認する](configure-server-endpoints.md)
 - [サーバー プロキシとインターネット接続の設定が正しく構成されていることを確認する](configure-server-endpoints.md)
@@ -482,7 +481,7 @@ WinHTTP は、インターネット閲覧プロキシ設定や他のユーザー
 
     ![configuration30 Microsoft Endpoint Configuration Managerイメージ。](images/mecm-30.png)
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [Microsoft Defender for Endpoint のトラブルシューティング](troubleshoot-mdatp.md)
 - [デバイスのオンボード](onboard-configure.md)

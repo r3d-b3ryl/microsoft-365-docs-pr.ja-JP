@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 069fb6b29021f8008be9752dedd12ba81dcfef51
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b7aedad0c66544c24e572987c0d777aa0e02a92c
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60156200"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240562"
 ---
 # <a name="take-response-actions-on-a-device"></a>デバイスの対応措置を講じる
 
@@ -133,10 +133,9 @@ ms.locfileid: "60156200"
 
 調査または対応プロセスの一環として、リモートからウイルス対策スキャンを開始して、侵害されたデバイスに存在する可能性のあるマルウェアを特定して修復できます。
 
-> [!IMPORTANT]
->
-> - このアクションは、バージョン 1709 以降Windows 10デバイスで使用できます。
-> - Microsoft Defender AV Microsoft Defender ウイルス対策(Microsoft Defender AV) スキャンは、アクティブなウイルス対策ソリューションかどうかに関して、他のウイルス対策ソリューションと一緒に実行できます。 Microsoft Defender AV はパッシブ モードにできます。 詳細については、「互換性」[をMicrosoft Defender ウイルス対策してください](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md)。
+>[!IMPORTANT]
+>- このアクションは、Windows 10 バージョン 1709 以降、Windows Server 2019、Windows Server 2016、および Windows Server 2012 R2 のデバイスで使用できます。
+>- Microsoft Defender AV Microsoft Defender ウイルス対策(Microsoft Defender AV) スキャンは、アクティブなウイルス対策ソリューションかどうかに関して、他のウイルス対策ソリューションと一緒に実行できます。 Microsoft Defender AV はパッシブ モードにできます。 詳細については、「互換性」[をMicrosoft Defender ウイルス対策してください](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md)。
 
 [ウイルス対策スキャンの **実行**] を選択した 1 つは、実行するスキャンの種類 (クイックまたはフル) を選択し、コメントを追加してからスキャンを確認します。
 
@@ -155,9 +154,8 @@ ms.locfileid: "60156200"
 
 悪意のあるプロセスを停止して攻撃を含めるだけでなく、デバイスをロックダウンして、悪意のある可能性のあるプログラムの後続の試みを実行することもできます。
 
-> [!IMPORTANT]
->
-> - このアクションは、バージョン 1709 以降Windows 10デバイスで使用できます。
+>[!IMPORTANT]
+> - このアクションは、Windows 10バージョン 1709 以降のデバイスWindows Server 2016。 
 > - この機能は、組織で使用している機能がMicrosoft Defender ウイルス対策。
 > - このアクションは、アプリケーションコントロールのコード整合性Windows Defenderの形式と署名要件を満たす必要があります。 詳細については、「コード整合性 [ポリシーの形式と署名」を参照してください](/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing)。
 
@@ -176,15 +174,17 @@ ms.locfileid: "60156200"
 
 ![アプリの制限のイメージ。](images/atp-app-restriction.png)
 
+>[!NOTE]
+>通知は、R2 のWindows Server 2016 Windows Server 2012できません。
+
 ## <a name="isolate-devices-from-the-network&quot;></a>ネットワークからデバイスを分離する
 
 攻撃の重大度とデバイスの感度に応じて、ネットワークからデバイスを分離できます。 このアクションは、攻撃者が侵害されたデバイスを制御し、データの漏洩や横方向の移動などの追加のアクティビティを実行するのを防ぐのに役立ちます。
 
-> [!IMPORTANT]
->
-> - 完全な分離は、Windows 10、バージョン 1703、Windows Server 2019、および Windows Server 2022 のデバイスで使用できます。
-> - 選択的な分離は、Windows 10 バージョン 1709 以降、Windows Server 2019、および Windows Server 2022 のデバイスで使用できます。
-> - デバイスを分離する場合は、特定のプロセスと宛先だけが許可されます。 したがって、完全な VPN トンネルの背後にあるデバイスは、デバイスが分離された後、Microsoft Defender for Endpoint クラウド サービスに到達できません。 Microsoft Defender for Endpoint にスプリット トンネリング VPN を使用し、クラウド ベースMicrosoft Defender ウイルス対策トラフィックを使用することをお勧めします。
+>[!IMPORTANT]
+>- 完全な分離は、Windows 10、バージョン 1703、Windows Server 2019、Windows Server 2016、Windows Server 2012 R2、および Windows Server 2022 のデバイスで使用できます。
+>- 選択的分離は、バージョン 1709 以降Windows 10デバイスで使用できます。
+>- デバイスを分離する場合は、特定のプロセスと宛先だけが許可されます。 したがって、完全な VPN トンネルの背後にあるデバイスは、デバイスが分離された後、Microsoft Defender for Endpoint クラウド サービスに到達できません。 Microsoft Defender for Endpoint にスプリット トンネリング VPN を使用し、クラウド ベースMicrosoft Defender ウイルス対策トラフィックを使用することをお勧めします。
 
 このデバイス分離機能は、デバイスを監視し続ける Defender for Endpoint サービスへの接続を維持しながら、侵害されたデバイスをネットワークから切断します。
 

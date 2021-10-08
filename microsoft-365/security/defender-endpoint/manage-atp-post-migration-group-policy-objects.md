@@ -18,16 +18,18 @@ ms.collection:
 ms.topic: article
 ms.date: 09/23/2021
 ms.reviewer: chventou
-ms.openlocfilehash: 94eb6e7bf031a9c59fa66eb24b64298ea9a0465c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 88225337d0c9edbae8185a34bd7d98378007c72a
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191733"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240574"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-group-policy-objects"></a>グループ ポリシー オブジェクトを使用して Microsoft Defender for Endpoint を管理する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+[!include[Prerelease information](../../includes/prerelease.md)]
 
 **適用対象:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -41,6 +43,9 @@ ms.locfileid: "60191733"
 ドメイン サービスのグループ ポリシー オブジェクトをAzure Active Directory、Microsoft Defender for Endpoint のいくつかの設定を管理できます。
 
 ## <a name="configure-microsoft-defender-for-endpoint-with-group-policy-objects"></a>グループ ポリシー オブジェクトを使用して Microsoft Defender for Endpoint を構成する
+
+> [!NOTE]
+> Windows Server 2012 R2 および[2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)の新しい統合 Microsoft Defender for Endpoint ソリューションを使用している場合は、中央ストアで最新の ADMX ファイルを使用して、正しい Microsoft Defender ポリシー オプションにアクセスしていることを確認してください。 「グループ [ポリシー管理](/troubleshoot/windows-client/group-policy/create-and-manage-central-store)用中央ストア管理用テンプレートを作成および管理する方法」を参照し、Windows で使用する最新のファイルをダウンロード **Windows 10。** 
 
 次の表に、グループ ポリシー オブジェクトを使用して Microsoft Defender for Endpoint を構成するために実行できるさまざまなタスクを示します。
 

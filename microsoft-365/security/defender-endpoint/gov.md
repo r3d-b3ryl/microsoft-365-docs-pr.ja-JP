@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7fd686c21003a467c4d2d5c5d7326feda4c1045d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1eec095110378c74cd0a5aa8279ca591e2a15e47
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162628"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60239660"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>米国政府のお客様向けの Microsoft Defender for Endpoint
 
@@ -115,7 +115,7 @@ iOS|![その必要はありません。](images/svg/check-no.svg) 開発中|![�
 > [!NOTE]
 > パッチが指定されている場合、Defender for Endpoint を正しい環境に構成するには、デバイスオンボーディングの前に展開する必要があります。
 >
-> Windows Server 2019 または Windows 10 Windows Server 2019 または Windows Server 2022 より古いデバイスをオンボード[Microsoft Monitoring Agent?](configure-server-endpoints.md#option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma) セットアップ ウィザードを使用する場合、またはコマンド ラインまたはスクリプトを使用する場合は、[Azure Cloud] で[](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line)[Azure [](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) US Government] を選択する必要があります。"OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" パラメーターを 1 に設定します。 [](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)
+> Windows 10 または Windows Windows Server 2019 [(KB4586839](https://support.microsoft.com/help/4586839))より古いデバイスをオンボード| ![はい。 ](images/svg/check-yes.svg) | ![は ](images/svg/check-yes.svg) | ![ い は ](images/svg/check-yes.svg) い、Windowsを使用してサーバー 2022 [Microsoft Monitoring Agent?](configure-server-endpoints.md) セットアップ ウィザードを使用する場合、またはコマンド ラインまたはスクリプトを使用する場合は、[Azure Cloud] で[](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line)[Azure [](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) US Government] を選択する必要があります。"OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" パラメーターを 1 に設定します。 [](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)
 
 ### <a name="os-versions-when-using-azure-defender-for-servers"></a>Azure Defender for Servers を使用する場合の OS のバージョン
 

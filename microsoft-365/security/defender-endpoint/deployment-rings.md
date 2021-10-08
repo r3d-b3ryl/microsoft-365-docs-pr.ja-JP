@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5894fa9fea9a6970981f1d1171af9097daa697e0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bb1bf8d55cc2d4dfd1c2fd29a40641e8da159d9e
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209979"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240214"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-in-rings"></a>Microsoft Defender for Endpoint をリングに展開する
 
@@ -83,18 +83,13 @@ Microsoft Defender for Endpoint は、サービスにオンボードできるさ
 
 次の表に、サポートされているエンドポイントと、サービスにデバイスをオンボードするために使用できる対応するツールを示します。
 
-<br>
-
-****
-
-|エンドポイント|展開ツール|
-|---|---|
-|**Windows**|[ローカル スクリプト (最大 10 台のデバイス)](configure-endpoints-script.md) <p> **注**: 10 台を超えるデバイスを実稼働環境に展開する場合は、代わりに Group Policy メソッドを使用するか、以下に示す他のサポートされているツールを使用します。 <p> [グループ ポリシー](configure-endpoints-gp.md) <p> [Microsoft エンドポイント マネージャー/ モバイル デバイス マネージャー](configure-endpoints-mdm.md) <p> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <p> [VDI スクリプト](configure-endpoints-vdi.md) <p> [Azure Defender との統合](configure-server-endpoints.md#integration-with-azure-defender)|
-|**macOS**|[ローカル スクリプト](mac-install-manually.md) <p> [Microsoft エンドポイント マネージャー](mac-install-with-intune.md) <p> [JAMF Pro](mac-install-with-jamf.md) <p> [モバイル デバイス管理](mac-install-with-other-mdm.md)|
-|**Linux Server**|[ローカル スクリプト](linux-install-manually.md) <p> [Puppet](linux-install-with-puppet.md) <p> [Ansible](linux-install-with-ansible.md)|
-|**iOS**|[アプリベース](ios-install.md)|
-|**Android**|[Microsoft エンドポイント マネージャー](android-intune.md)|
-|
+| エンドポイント     | 展開ツール                       |
+|--------------|------------------------------------------|
+| **Windows**  |  [ローカル スクリプト (最大 10 台のデバイス)](configure-endpoints-script.md) <br> 注: 10 台を超えるデバイスを実稼働環境に展開する場合は、代わりに Group Policy メソッドを使用するか、以下に示す他のサポートされているツールを使用します。<br>  [グループ ポリシー](configure-endpoints-gp.md) <br>  [Microsoft エンドポイント マネージャー/ モバイル デバイス マネージャー](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI スクリプト](configure-endpoints-vdi.md) <br> [Azure Defender との統合](configure-server-endpoints.md#integration-with-azure-defender)  |
+| **macOS**    | [ローカル スクリプト](mac-install-manually.md) <br> [Microsoft エンドポイント マネージャー](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [モバイル デバイス管理](mac-install-with-other-mdm.md) |
+| **Linux Server** | [ローカル スクリプト](linux-install-manually.md) <br> [Puppet](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
+| **iOS**      | [Microsoft エンドポイント マネージャー](ios-install.md)                                |
+| **Android**  | [Microsoft エンドポイント マネージャー](android-intune.md)               |
 
 ### <a name="full-deployment"></a>完全な展開
 
@@ -112,7 +107,7 @@ Microsoft Defender for Endpoint は、サービスにオンボードできるさ
 
 サーバー Windowsおよび/または Windows サーバーの場合は、セキュリティ更新プログラム検証プログラム **(SUVP)** を使用して、(パッチ火曜日の前に) テストする複数のコンピューターを選択します。
 
-詳細については、以下を参照してください。
+詳しくは、次のトピックを参照してください。
 
 - [セキュリティ更新プログラムの検証プログラムとは](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/what-is-the-security-update-validation-program/ba-p/275767)
 - [ソフトウェア更新プログラムの検証プログラムとMicrosoft マルウェア プロテクション センター設定 - TwC 対話型タイムライン パート 4](https://www.microsoft.com/security/blog/2012/03/28/software-update-validation-program-and-microsoft-malware-protection-center-establishment-twc-interactive-timeline-part-4/)

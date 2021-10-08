@@ -17,12 +17,12 @@ ms.topic: article
 ms.custom: nextgen
 ms.date: 09/17/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 4650bb23cd7b486ba608a47f99cdfa6cf5b05045
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2432677f1e4bb5faa8de7255e766124660fb7bbb
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213735"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240455"
 ---
 # <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>サーバー Microsoft Defender ウイルス対策の除外をWindowsする
 
@@ -32,7 +32,24 @@ ms.locfileid: "60213735"
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 - Microsoft Defender ウイルス対策
 
-## <a name="summary"></a>要約
+Microsoft Defender ウイルス対策サーバー 2019 Windows Server 2016および Windowsサーバー 2019 では、指定したサーバーの役割で定義されている特定の除外に自動的に登録されます。 これらの除外は、アプリに表示される標準の除外リスト[にはWindows セキュリティされません](microsoft-defender-security-center-antivirus.md)。
+
+> [!NOTE]
+> 自動除外は、リアルタイム保護 (RTP) スキャンにのみ適用されます。 フル/クイック スキャンまたはオンデマンド スキャンでは、自動除外は適用されません。
+
+サーバーの役割定義の自動除外に加えて、カスタム除外を追加または削除できます。 これを行うには、次の記事を参照してください。
+- [ファイル名、拡張子、フォルダーの場所に基づいて除外を構成および検証する](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
+- [プロセスによって開いたファイルの除外を構成および検証する](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
+
+## <a name="a-few-points-to-keep-in-mind"></a>いくつかの点に気を付ける必要があります
+
+次の重要な点に注意してください。
+
+- カスタム除外は、自動除外よりも優先されます。
+- 自動除外は、リアルタイム保護 (RTP) スキャンにのみ適用されます。 フル/クイック スキャンまたはオンデマンド スキャンでは、自動除外は適用されません。
+- カスタム除外と重複除外は、自動除外と競合しない。
+- Microsoft Defender ウイルス対策展開イメージのサービスと管理 (DISM) ツールを使用して、コンピューターにインストールされている役割を特定します。
+- サーバー ロールの自動除外は、R2 ではWindows Server 2012されません。
 
 この記事では、このページ以降のMicrosoft Defender ウイルス対策のWindows Server 2016説明します。
 

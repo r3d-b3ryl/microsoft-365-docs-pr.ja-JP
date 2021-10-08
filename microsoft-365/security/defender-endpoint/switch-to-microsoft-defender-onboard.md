@@ -21,12 +21,12 @@ ms.custom: migrationguides
 ms.topic: article
 ms.date: 10/06/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 47a698d2e0832ed477808be379a6ad99b932b702
-ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
+ms.openlocfilehash: 52c1c4ba86f596e7832b5cb3feaaa65688ba452d
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60217092"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60239590"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>エンドポイント向け Microsoft Defender への切り替え - フェーズ 3: オンボード
 
@@ -64,17 +64,21 @@ ms.locfileid: "60217092"
 
 展開方法は、オペレーティング システムと優先する方法によって異なります。 次の表に、Defender for Endpoint へのオンボードに役立つリソースの一覧を示します。
 
-<br/><br/>
+|オペレーティング システム  |メソッド  |
+|---------|---------|
+|<ul><li> Windows 10</li> <li>WindowsServer 1803 および 2019</li> <li>Windows Server 2012R2 と 2016 <sup> [[1](#fn1)]<sup></li></ul>  |   [ローカル スクリプト (最大 10 台のデバイス)](configure-endpoints-script.md)<br>   [グループ ポリシー](configure-endpoints-gp.md)<br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Microsoft エンドポイント マネージャー/ モバイル デバイス管理 (Intune)](configure-endpoints-mdm.md)<br>    [VDI スクリプト](configure-endpoints-vdi.md) <br><br> **注**: ローカル スクリプトは概念実証に適していますが、実稼働環境での展開には使用できません。 実稼働展開の場合は、グループ ポリシー、グループ ポリシー、Microsoft Endpoint Configuration Manager Intune を使用することをお勧めします。
+|<ul><li> Windows Server 2008 R2 SP1 </li></ul>| [Microsoft Monitoring Agent (MMA) または](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) [Azure Defender](/azure/security-center/security-center-wdatp) <br><br> **注**: Microsoft Monitoring Agent Azure Log Analytics エージェントです。 詳細については [、「Log Analytics エージェントの概要」を参照してください](/azure/azure-monitor/platform/log-analytics-agent)。  
+|<ul><li> Windows 7 SP1 </li> <li>  Windows 7 SP1 Pro </li> <li>  Windows 8.1 Pro </li> <li> Windows 8.1 Enterprise</li></ul>  | [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md) <br><br> **注**: Microsoft Monitoring Agent Azure Log Analytics エージェントです。 詳細については [、「Log Analytics エージェントの概要」を参照してください](/azure/azure-monitor/platform/log-analytics-agent)。  
+| <ul><li> macOS:<p>11.3.1 (Big Sur) <p>10.15 (Catalina)<p>10.14 (Mojave) | [ローカル スクリプト](mac-install-manually.md) <br> [Microsoft エンドポイント マネージャー](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [モバイル デバイス管理](mac-install-with-other-mdm.md)   |
+| <ul><li>Linux:<p>RHEL 7.2+<p>CentOS Linux 7.2+<p>Ubuntu 16 LTS 以上の LTS<p>SLES 12+<p>Debian 9+<p>Oracle Linux 7.2 |  [ローカル スクリプト](linux-install-manually.md) <br> [Puppet](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|  
+| <ul><li>iOS | [Microsoft エンドポイント マネージャー](ios-install.md)     |
+|<ul><li> Android  | [Microsoft エンドポイント マネージャー](android-intune.md)               | 
 
-|オペレーティング システム|メソッド|
-|---|---|
-|Windows 10|[グループ ポリシー](configure-endpoints-gp.md) <br/><br/> [構成マネージャー](configure-endpoints-sccm.md) <br/><br/> [モバイル デバイス管理 (Intune)](configure-endpoints-mdm.md) <br/><br/> [ローカル スクリプト](configure-endpoints-script.md) <br/><br/> **注**: ローカル スクリプトは概念実証に適していますが、実稼働環境での展開には使用できません。 実稼働展開の場合は、グループ ポリシー、グループ ポリシー、Microsoft Endpoint Configuration Manager Intune を使用することをお勧めします。|
-|Windows 8.1 Enterprise <br/><br/> Windows 8.1 Pro <br/><br/> Windows 7 SP1 Enterprise <br/><br/> Windows 7 SP1 Pro|[Microsoft Monitoring Agent](onboard-downlevel.md) <br/><br/> **注**: Microsoft Monitoring Agent Azure Log Analytics エージェントです。 詳細については [、「Log Analytics エージェントの概要」を参照してください](/azure/azure-monitor/platform/log-analytics-agent)。|
-|Windows Server 2019 以降 <br/><br/> Windows Server 2019 Core Edition <br/><br/> Windowsサーバー バージョン 1803 以降|[ローカル スクリプト](configure-endpoints-script.md) <br/><br/> [グループ ポリシー](configure-endpoints-gp.md) <br/><br/> [構成マネージャー](configure-endpoints-sccm.md) <br/><br/> [System Center Configuration Manager](configure-endpoints-sccm.md) <br/><br/> [永続的でないデバイスの VDI オンボーディング スクリプト](configure-endpoints-vdi.md) <br/><br/> **注**: ローカル スクリプトは概念実証に適していますが、実稼働環境での展開には使用できません。 実稼働展開の場合は、グループ ポリシー、グループ ポリシー、Microsoft Endpoint Configuration Manager Intune を使用することをお勧めします。|
-|Windows Server 2016 <br/><br/> Windows Server 2012 R2 <br/><br/> Windows Server 2008 R2 SP1|[Microsoft 365 Defender ポータル](configure-server-endpoints.md) <br/><br/> [Azure Defender](/azure/security-center/security-center-wdatp)|
-|macOS: 11.3.1 (Big Sur);10.15 (Catalina);10.14 (Mojave)|[Windows 以外のデバイスをオンボードする](configure-endpoints-non-windows.md)|
-|iOS|[Windows 以外のデバイスをオンボードする](configure-endpoints-non-windows.md)|
-|Linux: RHEL 7.2+;CentOS Linux 7.2+;Ubuntu 16 LTS 以上の LTS。SLES 12+;Debian 9+;Oracle Linux 7.2|[Windows 以外のデバイスをオンボードする](configure-endpoints-non-windows.md)|
+
+
+
+(<a id="fn1">1</a>) Windows Server 2016および Windows Server 2012 R2 は、オンボード サーバーの指示に従ってオンボード[Windowsがあります](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)。
+
 
 ## <a name="run-a-detection-test"></a>検出テストを実行する
 

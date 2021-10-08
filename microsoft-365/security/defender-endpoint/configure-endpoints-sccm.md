@@ -1,6 +1,6 @@
 ---
 title: Configuration Manager をWindowsデバイスのオンボード
-description: Configuration Manager を使用してデバイスに構成パッケージを展開し、デバイスがサービスにオンボードされます。
+description: Configuration Manager を使用してデバイスに構成パッケージを展開し、Defender for Endpoint サービスにオンボードします。
 keywords: sccm を使用したオンボード デバイス、デバイス管理、エンドポイント デバイス用 Microsoft Defender の構成
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,14 +15,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/22/2021
 ms.technology: mde
-ms.openlocfilehash: ff1863a24e352823fce6d1c9e57f228528cda016
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0faeb2039f0a66c014d0bb63e6bbc657206e3e16
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176885"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240202"
 ---
-# <a name="onboard-the-windows-devices-using-configuration-manager"></a>Configuration Manager をWindowsデバイスのオンボード
+# <a name="onboard-windows-devices-using-configuration-manager"></a>Configuration Manager をWindowsデバイスのオンボード
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -35,43 +35,16 @@ ms.locfileid: "60176885"
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
 
-## <a name="supported-client-operating-systems"></a>サポートされているクライアント オペレーティング システム
 
-実行している Configuration Manager のバージョンに基づいて、次のクライアント オペレーティング システムをオンボードできます。
+Configuration Manager を使用して、エンドポイントを Microsoft Defender for Endpoint サービスにオンボードできます。 
 
-- **Configuration Manager バージョン 1910 以前**:
-  - クライアント を実行しているWindows 10
-- **Configuration Manager バージョン 2002 以降**:
+Configuration Manager を使用してデバイスをオンボードするために使用できるいくつかのオプションがあります。
+- [デバイスを使用したオンボード System Center Configuration Manager](/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection)
+- [テナントのアタッチ](/mem/configmgr/tenant-attach/)
 
-  Configuration Manager バージョン 2002 から、次のオペレーティング システムをオンボードできます。
 
-  - Windows 8.1
-  - Windows 10
-  - Windows 11
-  - Windows Server 2012 R2
-  - Windows Server 2016
-  - Windows Server 2016バージョン 1803 以降
-  - Windows Server 2019
-  - Windows Server 2022
 
-> [!NOTE]
-> Windows Server 2012 R2、Windows Server 2016、Windows Server 2019、Windows Server 2022 をオンボードする方法の詳細については、「オンボード Windows[サーバー」を参照](configure-server-endpoints.md)してください。
-
-### <a name="onboard-devices-using-system-center-configuration-manager"></a>デバイスを使用したオンボード System Center Configuration Manager
-
-[MICROSOFT](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf) Defender for Endpoint[の展開](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx)Visioパスを確認するには、PDF またはドキュメントを参照してください。
-
-1. サービス オンボーディング ウィザードからダウンロード *.zipファイル*(WindowsDefenderATPOnboardingPackage.zip) の Configuration Manager 構成パッケージを開きます。 また、次のポータルから[パッケージをMicrosoft 365 Defenderすることもできます](https://security.microsoft.com/)。
-    1. ナビゲーション ウィンドウで、[エンドポイント **デバイス設定** \>  \> **オンボーディング]** \> **を選択します**。
-    2. オペレーティング Windows 10としてWindows 11 を選択します。
-    3. [展開方法 **] フィールド** で、[System Center Configuration Manager **2012/2012 R2/1511/1602] を選択します**。
-    4. [ **パッケージのダウンロード]** を選択し、ファイルを.zipします。
-
-2. パッケージを展開するネットワーク管理者がアクセスできる共有の読み取り専用の場所に、.zip ファイルの内容を抽出します。 *WindowsDefenderATPOnboardingScript.cmd という名前のファイルが必要です*。
-
-3. [2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg699369\(v=technet.10\))の「パッケージとプログラム」の記事の手順に従ってSystem Centerパッケージを展開します。
-
-   パッケージを展開する定義済みのデバイス コレクションを選択します。
+R2 Windows Server 2012および Windows Server 2016 - オンボーディングの手順を完了した後、クライアントを構成および[更新するSystem Center Endpoint Protectionがあります](onboard-downlevel.md#configure-and-update-system-center-endpoint-protection-clients)。
 
 > [!NOTE]
 > Defender for Endpoint は、アウトオブボックス エクスペリエンス [(OOBE)](https://answers.microsoft.com/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) フェーズ中のオンボーディングをサポートしない。 インストールまたはアップグレードの実行後にユーザーが OOBE をWindows確認します。
@@ -225,8 +198,7 @@ Value: "1"
 
 詳細については[、「2012 R2](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\))Configuration Manager のコンプライアンスSystem Center概要」を参照してください。
 
-## <a name="related-topics"></a>関連トピック
-
+## <a name="related-topics"></a>関連項目
 - [グループ ポリシー Windowsデバイスのオンボード](configure-endpoints-gp.md)
 - [モバイル Windowsツールを使用してデバイスをオンボードする](configure-endpoints-mdm.md)
 - [ローカル Windowsを使用してデバイスをオンボードする](configure-endpoints-script.md)

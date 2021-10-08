@@ -1,6 +1,6 @@
 ---
-title: デバイスを Microsoft Defender for Endpoint サービスにオンボードする
-description: オンボード Windows、サーバー、非デバイスWindows、検出テストを実行する方法について学習します。
+title: デバイスをオンボードし、Microsoft Defender for Endpoint の機能を構成する
+description: オンボード Windows 10、サーバー、非デバイスWindows検出テストを実行する方法について学習します。
 keywords: オンボーディング、Microsoft Defender for Endpoint オンボーディング、sccm、グループ ポリシー、mdm、ローカル スクリプト、検出テスト
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,14 +14,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 52083cbd8b7e94c09c21ef434634376966102df6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7d029e2b896a194adce743a678e10c366ce71341
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60178325"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60239610"
 ---
-# <a name="onboard-devices-to-the-microsoft-defender-for-endpoint-service"></a>デバイスを Microsoft Defender for Endpoint サービスにオンボードする
+# <a name="onboard-devices-and-configure-microsoft-defender-for-endpoint-capabilities"></a>デバイスをオンボードし、Microsoft Defender for Endpoint の機能を構成する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,7 +33,15 @@ ms.locfileid: "60178325"
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
-Defender for Endpoint ポータルのオンボーディング セクションに移動して、サポートされているデバイスをオンボードする必要があります。 デバイスに応じて、適切な手順と、デバイスに適した管理および展開ツールのオプションが提供されます。
+Microsoft Defender for Endpoint の展開は、2 段階のプロセスです。
+
+- デバイスをサービスにオンボードする
+- サービスの機能を構成する
+
+![オンボーディングと構成プロセスの図](images/deployment-steps.png)
+
+## <a name="onboard-devices-to-the-service"></a>デバイスをサービスにオンボードする
+Defender for Endpoint ポータルのオンボーディング セクションに移動して、サポートされているデバイスをオンボードする必要があります。 デバイスに応じて、適切な手順と、デバイスに適した管理および展開ツールのオプションが提供されます。 
 
 一般に、デバイスをサービスにオンボードするには、次の情報を使用します。
 
@@ -44,28 +52,65 @@ Defender for Endpoint ポータルのオンボーディング セクションに
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bGqr]
 
-## <a name="onboarding-tool-options"></a>オンボーディング ツールのオプション
+
+
+
+## <a name="onboarding-and-configuration-tool-options"></a>オンボーディングと構成ツールのオプション
+次の表に、オンボードする必要があるエンドポイントに基づいて使用可能なツールを示します。
+
+| エンドポイント     | ツール オプション                       |
+|--------------|------------------------------------------|
+| **Windows**  |  [ローカル スクリプト (最大 10 台のデバイス)](configure-endpoints-script.md) <br>  [グループ ポリシー](configure-endpoints-gp.md) <br>  [Microsoft エンドポイント マネージャー/ モバイル デバイス マネージャー](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI スクリプト](configure-endpoints-vdi.md) <br> [Azure Defender との統合](configure-server-endpoints.md#integration-with-azure-defender)  |
+| **macOS**    | [ローカル スクリプト](mac-install-manually.md) <br> [Microsoft エンドポイント マネージャー](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [モバイル デバイス管理](mac-install-with-other-mdm.md) |
+| **Linux Server** | [ローカル スクリプト](linux-install-manually.md) <br> [Puppet](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
+| **iOS**      | [Microsoft エンドポイント マネージャー](ios-install.md)               |
+| **Android**  | [Microsoft エンドポイント マネージャー](android-intune.md)            | 
+
 
 次の表に、オンボードする必要があるエンドポイントに基づいて使用可能なツールを示します。
 
-|エンドポイント|ツール オプション|
-|---|---|
-|**Windows**|[ローカル スクリプト (最大 10 台のデバイス)](configure-endpoints-script.md) <p> [グループ ポリシー](configure-endpoints-gp.md) <p> [Microsoft エンドポイント マネージャー/ モバイル デバイス マネージャー](configure-endpoints-mdm.md) <p> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <p> [VDI スクリプト](configure-endpoints-vdi.md) <p> [Azure Defender との統合](configure-server-endpoints.md#integration-with-azure-defender)|
-|**macOS**|[ローカル スクリプト](mac-install-manually.md) <p> [Microsoft エンドポイント マネージャー](mac-install-with-intune.md) <p> [JAMF Pro](mac-install-with-jamf.md) <p> [モバイル デバイス管理](mac-install-with-other-mdm.md)|
-|**Linux Server**|[ローカル スクリプト](linux-install-manually.md) <p> [Puppet](linux-install-with-puppet.md) <p> [Ansible](linux-install-with-ansible.md)|
-|**iOS**|[アプリベース](ios-install.md)|
-|**Android**|[Microsoft エンドポイント マネージャー](android-intune.md)|
+## <a name="configure-capabilities-of-the-service"></a>サービスの機能を構成する
+オンボード デバイスは、Micorosft Defender for Endpoint のエンドポイント検出および応答機能を効果的に有効にします。
 
-## <a name="in-this-section"></a>このセクションの内容
+デバイスのオンボード後、サービスの他の機能を構成する必要があります。 次の表に、環境に最適な保護を取得するために構成できる機能の一覧を示します。
 
-トピック|説明
-:---|:---
-[以前のバージョンの Windows をオンボードする](onboard-downlevel.md)|Defender for Endpoint Windows 7 および Windows 8.1デバイスをオンボードします。
-[Windows デバイスのオンボード](configure-endpoints.md)|Defender for Endpoint サービスに報告するには、デバイスをオンボードする必要があります。 エンタープライズでデバイスを構成するために使用できるツールと方法について説明します。
-[オンボード サーバー](configure-server-endpoints.md)|Windows Server 2008 R2 SP1、Windows Server 2012 R2、Windows Server 2016、Windows Server (SAC) バージョン 1803 以降、Windows Server 2019 以降、Windows Server 2019 コア エディションを Defender for Endpoint に搭載します。
-[Windows 以外のデバイスをオンボードする](configure-endpoints-non-windows.md)|Defender for Endpoint は、セキュリティ プラットフォームだけでなく、Windowsプラットフォームにも一元的なセキュリティWindows提供します。 サポートされているさまざまなオペレーティング システム (OS) からのアラートを、組織のネットワークMicrosoft Defender セキュリティ センター保護することができます。 このエクスペリエンスは、サードパーティのセキュリティ製品のセンサー データを活用します。
-[新しくオンボードされたデバイスで検出テストを実行する](run-detection-test.md)|新しくオンボードされたデバイスでスクリプトを実行して、Defender for Endpoint サービスに適切に報告されていることを確認します。
-[プロキシとインターネットの設定を構成する](configure-proxy-internet.md)|プロキシとインターネット接続の設定を構成して、Defender for Endpoint クラウド サービスとの通信を有効にします。
-[オンボーディングに関する問題のトラブルシューティング](troubleshoot-onboarding.md)|オンボーディング中に発生する可能性のある問題の解決について説明します。
+| 機能 | 説明 |
+|-|-|
+| [脅威の脆弱性&管理 (TVM) の構成](tvm-prerequisites.md) | 脅威&脆弱性管理は、Microsoft Defender for Endpoint のコンポーネントであり、セキュリティ管理者とセキュリティ運用チームの両方に、次の固有の値を提供します。 <br><br> - リアルタイムのエンドポイント検出と応答 (EDR) の分析情報は、エンドポイントの脆弱性と関連しています。 <br><br> - インシデント調査中の貴重なデバイスの脆弱性コンテキスト。 <br><br> - 組み込みの修復プロセスは、Microsoft Intune Microsoft System Center Configuration Manager。  |
+| [次世代保護 (NGP) の構成](configure-microsoft-defender-antivirus-features.md) | Microsoft Defender ウイルス対策は、デスクトップ、ポータブル コンピューター、およびサーバーに次世代の保護を提供する組み込みのマルウェア対策ソリューションです。 Microsoft Defender ウイルス対策には、次のものが含まれます。<br> <br>-クラウドによって提供される、新しい脅威や新しい脅威のほぼ瞬時の検出とブロックに対する保護。 機械学習やインテリジェント セキュリティ グラフに加えて、クラウドによる保護は Microsoft Defender ウイルス対策を強化する次世代テクノロジの一部です。<br> <br> - 高度なファイルとプロセスの動作監視、その他のヒューリスティック ("リアルタイム保護" とも呼ばれる) を使用した常時スキャン。<br><br> - 機械学習、人間および自動化されたビッグ データ分析、および詳細な脅威耐性の調査に基づく専用の保護更新プログラム。 |
+| [攻撃表面の縮小を構成する (ASR)](overview-attack-surface-reduction.md) | Microsoft Defender for Endpoint の攻撃表面の縮小機能は、新しい脅威や新たな脅威から組織内のデバイスとアプリケーションを保護するのに役立ちます。 |
+| [自動調査と修復& (AIR) 機能の構成](configure-automated-investigations-remediation.md) | Microsoft Defender for Endpoint では、自動調査を使用して、個別に調査する必要があるアラートの量を大幅に削減します。 自動調査機能は、さまざまな検査アルゴリズムと、アナリストが使用するプロセス (プレイブックなど) を活用してアラートを調べ、違反を解決するために直ちに修復アクションを実行します。 これにより、アラート量が大幅に削減され、セキュリティ運用の専門家は、より高度な脅威やその他の価値の高い業務に集中できるようになります。 |
+| [[Microsoft 脅威エキスパート (MTE) 機能を構成する](configure-microsoft-threat-experts.md) | Microsoft 脅威エキスパートは、セキュリティ オペレーション センター (SOC) にエキスパート レベルの監視と分析を提供するマネージ ハンティング サービスで、固有の環境における重大な脅威を見逃すのを防いでお手伝いします。      |
 
-> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
+
+## <a name="supported-capabilities-for-windows-devices"></a>デバイスでサポートされているWindows機能
+
+|オペレーティング システム  |Windows 10 & 11  |Windows Server 2012R2 <sup> [[1](#fn1)]<sup></sup>  |<sup>Windows Server 2016[[1](#fn1)]<sup></sup>   |WindowsServer 2019 & 2022|WindowsServer 1803+|
+|---------|---------|---------|---------|---------|---------|
+|**予防**    |         |         |         |         |         |
+|攻撃表面の縮小ルール     |    Y     |   Y      |    Y     |    Y     |    Y     |
+|デバイス コントロール     |     Y    |    N     |    ×     |    ×     |    ×     |  
+|ファイアウォール     |      Y   |    Y     |     Y    |    Y    |    Y   |
+|ネットワーク保護     |      Y   |    Y     |     Y    |    Y    |    Y   |
+|次世代の保護     |      Y   |    Y     |     Y    |    Y    |    Y   |
+|タンパープロテクション     |        Y   |    Y     |     Y    |    Y    |    Y   |
+|Web 保護     |       Y   |    Y     |     Y    |    Y    |    Y   |
+|||||||
+|**検出**     |         |         |         |||
+|高度なハンティング     |      Y   |    Y     |     Y    |    Y    |    Y   |
+|カスタム ファイル インジケーター     |      Y   |    Y     |     Y    |    Y    |    Y   |
+|カスタム ネットワーク インジケーター     |      Y   |    Y     |     Y    |    Y    |    Y   |
+|EDRパッシブ &ブロック     |      Y   |    Y     |     Y    |    Y    |    Y   |
+|検出センサー     |      Y   |    Y     |     Y    |    Y    |    Y   |
+|ネットワーク &検出のエンドポイント     |      Y   |    N     |     ×    |    ×    |    ×   |
+|||||||
+|**Response**     |         |         |         |||
+|自動調査&応答 (AIR)    |      Y   |    Y     |     Y    |    Y    |    Y   |
+|デバイス応答機能: 分離、調査パッケージの収集、AV スキャンの実行     |      Y   |    Y     |     Y    |    Y    |    Y   |
+|ファイル応答機能: ファイルの収集、深い分析、ファイルのブロック、停止、検疫プロセス     |      Y   |    Y     |     Y    |    Y    |    Y   |
+|ライブ応答    |      Y   |    Y     |     Y    |    Y    |    Y   |
+
+(<a id="fn1">1</a>) 2016 年と 2016 年の最新の統合ソリューションWindows Server 2012します。 詳細については、「Defender [for Endpoint サービスへのオンボード Windows サーバー」を参照してください](configure-server-endpoints.md)。
+
+>[!NOTE]
+>Windows 7、8.1、Windows Server 2008 R2 には、EDR センサーのサポートと、System Center Endpoint Protection (SCEP) を使用した AV が含まれます。

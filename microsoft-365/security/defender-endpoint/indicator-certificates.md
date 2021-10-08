@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0e74fd5a0ffc62d077f9110b014af5d3b0813afd
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b87c249fad5f3d6e2dd4f5ce7076a7f1b00506c7
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154844"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240094"
 ---
 # <a name="create-indicators-based-on-certificates"></a>証明書に基づいてインジケーターを作成する
 
@@ -38,13 +38,17 @@ ms.locfileid: "60154844"
 - 攻撃表面の縮小ルールやフォルダー アクセスの制御[](attack-surface-reduction.md)など、ブロック テクノロジ[](controlled-folders.md)を展開する必要があるが、許可リストに証明書を追加して署名済みアプリケーションからの動作を許可する必要があるシナリオ。
 - 組織全体で特定の署名付きアプリケーションの使用をブロックする。 アプリケーションの証明書をブロックするインジケーターを作成すると、Windows Defender AV はファイルの実行 (ブロックと修復) を防止し、自動調査と修復は同じように動作します。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 証明書のインジケーターを作成する前に、次の要件を理解することが重要です。
 
 - この機能は、組織でクラウド ベースのWindows Defender ウイルス対策が有効になっている場合に使用できます。 詳細については、「クラウドベースの保護 [を管理する」を参照してください](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)。
 - マルウェア対策クライアントのバージョンは、4.18.1901.x 以降である必要があります。
-- Windows 11、Windows 10、バージョン 1703 以降、Windows サーバー 2016、2019、および Windows Server 2022 のコンピューターでサポートされます。
+- Windows 10 バージョン 1703 以降、Windows Server 2019、Windows Server 2016、Windows Server 2012 R2、Windows Server 2022 のコンピューターでサポートされます。
+    
+    >[!NOTE]
+    >Windows Server 2016および Windows Server 2012 R2 は、この機能を動作するには、「オンボード サーバー Windows[](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)を使用してオンボードする必要があります。 
+
 - ウイルスおよび脅威保護の定義は最新である必要があります。
 - この機能は現在、 の入力をサポートしています。CER または .PEM ファイル拡張子。
 
@@ -70,7 +74,7 @@ ms.locfileid: "60154844"
 
 4. [概要] タブで詳細を確認し、[保存] を **クリックします**。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [インジケーターの作成](manage-indicators.md)
 - [ファイルのインジケーターを作成 ](indicator-file.md)

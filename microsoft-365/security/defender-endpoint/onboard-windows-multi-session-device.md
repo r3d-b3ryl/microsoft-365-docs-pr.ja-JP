@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b6b39dfe3a080b339ca5f4bbaf91c3db7d84c8d9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 709cd408d548e8a7c16973c08b0369616f3b91d1
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209335"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240538"
 ---
 # <a name="onboard-windows-multi-session-devices-in-azure-virtual-desktop"></a>Azure 仮想Windowsマルチセッション デバイスのオンボード
 
@@ -32,7 +32,7 @@ ms.locfileid: "60209335"
 
 Microsoft Defender for Endpoint では、VDI セッションと Azure Virtual Desktop セッションの両方の監視がサポートされています。 組織のニーズに応じて、従業員が管理されていないデバイス、リモートの場所、または類似のシナリオから企業データやアプリにアクセスするために、VDI または Azure Virtual Desktop セッションを実装する必要がある場合があります。 Microsoft Defender for Endpoint を使用すると、これらの仮想マシンで異常なアクティビティを監視できます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 非永続的な [VDI の考慮事項について理解してください](/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1)。 [Azure Virtual Desktop には](/azure/virtual-desktop/overview)非永続化オプションは用意されませんが、新しいホストのプロビジョニングやマシンの再展開に使用できるゴールデン Windows イメージを使用する方法が提供されます。 これにより、環境の変動性が高まるため、Microsoft Defender for Endpoint ポータルで作成および管理されるエントリに影響が及び、セキュリティ アナリストの可視性が低下する可能性があります。
 
@@ -55,14 +55,13 @@ WVD ホスト コンピューターをオンボードする方法は次のとお
 
 - 起動時に、ゴールデン イメージ (または共有の場所から) でスクリプトを実行します。
 - 管理ツールを使用してスクリプトを実行します。
-- [Azure Defender との統合による](configure-server-endpoints.md#integration-with-azure-defender)
+- [Azure Defender との統合による](azure-server-integration.md)
 
 #### <a name="scenario-1-using-local-group-policy"></a>*シナリオ 1: ローカル グループ ポリシーの使用*
 
 このシナリオでは、スクリプトをゴールデン イメージに配置する必要があります。ローカル グループ ポリシーを使用して、起動プロセスの早い段階で実行します。
 
-「非永続的仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード」 [の手順を使用します](configure-endpoints-vdi.md#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices)。
-
+「非永続的仮想デスクトップ インフラストラクチャ [(VDI) デバイスのオンボード」の手順を使用します](configure-endpoints-vdi.md)。
 
 デバイスごとに 1 つのエントリの指示に従います。
 

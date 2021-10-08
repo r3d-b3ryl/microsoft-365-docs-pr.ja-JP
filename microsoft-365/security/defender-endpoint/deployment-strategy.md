@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 23d668751548205b6cef18bf0d73d14079b7c6d6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ca64c56d2e99bc0539b9c0e0cef8eb04f9a1b9b6
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205585"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240114"
 ---
 # <a name="plan-your-microsoft-defender-for-endpoint-deployment"></a>Microsoft Defender for Endpoint 展開の計画
 
@@ -52,7 +52,13 @@ Microsoft Defender for Endpoint の展開を計画して、スイート内のセ
 
 ## <a name="step-2-select-deployment-method"></a>手順 2: 展開方法の選択
 
-Defender for Endpoint は、サービスにオンボードできるさまざまなエンドポイントをサポートします。
+| エンドポイント     | 展開ツール                       |
+|--------------|------------------------------------------|
+| **Windows**  |  [ローカル スクリプト (最大 10 台のデバイス)](configure-endpoints-script.md) <br>  [グループ ポリシー](configure-endpoints-gp.md) <br>  [Microsoft エンドポイント マネージャー/ モバイル デバイス マネージャー](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI スクリプト](configure-endpoints-vdi.md) <br> [Azure Defender との統合](configure-server-endpoints.md#integration-with-azure-defender)  |
+| **macOS**    | [ローカル スクリプト](mac-install-manually.md) <br> [Microsoft エンドポイント マネージャー](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [モバイル デバイス管理](mac-install-with-other-mdm.md) |
+| **Linux Server** | [ローカル スクリプト](linux-install-manually.md) <br> [Puppet](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
+| **iOS**      | [Microsoft エンドポイント マネージャー](ios-install.md)                                |
+| **Android**  | [Microsoft エンドポイント マネージャー](android-intune.md)               | 
 
 次の表に、サポートされているエンドポイントと、適切に展開を計画するために使用できる対応する展開ツールの一覧を示します。
 
@@ -72,6 +78,6 @@ Defender for Endpoint は、サービスにオンボードできるさまざま�
 - 次世代の保護
 - 攻撃面の縮小
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [展開フェーズ](deployment-phases.md)

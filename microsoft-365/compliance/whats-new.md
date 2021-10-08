@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: コンプライアンス センターに新しいソリューションを追加する場合、フィードバックに基づいて既存の機能を更新する場合、新しく更新されたドキュメントを展開する場合でも、Microsoft 365 を使用すると、変化し続けるコンプライアンス環境の上に立ち続けるのに役立ちます。 今月までの予定を確認します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: c341034169def6627d0b03c043bc32aa399f70c4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: cbe868ea7f5418b9013719caa9858317d1fd6ba3
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60167080"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240346"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 コンプライアンス センターの新機能
 
@@ -45,12 +45,29 @@ Microsoft 365 コンプライアンス センター に新しいソリューシ�
 
 ### <a name="app-governance"></a>アプリのガバナンス
 
-- [合理化されたアプリ ガバナンスの開始情報に](https://docs.microsoft.com/microsoft-365/compliance/app-governance-get-started) ワークフローが変更され、パブリック プレビューサインアップへの新しいリンクが追加されました
-- [新しい検出アラート定義](https://docs.microsoft.com/microsoft-365/compliance/app-governance-anomaly-detection-alerts#app-made-high-volume-of-importance-mail-read-and-created-inbox-rule) が追加されました (更新されました。コレクションアラートの新しい定義が追加されました)
+- [合理化されたアプリ ガバナンスの開始情報に](app-governance-get-started.md) ワークフローが変更され、パブリック プレビューサインアップへの新しいリンクが追加されました
+- [新しい検出アラート定義](app-governance-anomaly-detection-alerts.md#app-made-high-volume-of-importance-mail-read-and-created-inbox-rule) が追加されました (更新されました。コレクションアラートの新しい定義が追加されました)
 
 ### <a name="auditing"></a>監査
 
 - [組織の監査状態](turn-audit-log-search-on-or-off.md)に対する変更自体が監査される方法に関する新しいセクションを追加して、監査を有効またはオフにします。つまり、監査が有効または無効になっていると、監査レコードがログに記録されます。管理者監査ログExchangeこれらの監査レコードを検索できます。
+
+### <a name="communication-compliance"></a>コミュニケーション コンプライアンス
+
+- [SIEM ソリューションとの通信コンプライアンス統合](communication-compliance-siem.md) のための SIEM ソリューション ガイダンスとの通信コンプライアンス)
+
+### <a name="compliance-offerings"></a>コンプライアンス認証
+
+- [多層クラウド セキュリティ (MTCS)](/compliance/regulatory/offering-mtcs-singapore) Dynamics 365 カバレッジのシンガポール更新プログラムの標準
+- [ペイメント カード 業界 (PCI)](/compliance/regulatory/offering-pci-dss)オンライン カバレッジのデータ セキュリティ標準 (DSS) SharePoint更新
+- [米国セクション 508 の新しい](/compliance/regulatory/offering-section-508-vpats) クライアント ソフトウェア ガイダンス
+- [Web コンテンツ アクセシビリティ ガイドラインの新しい](/compliance/regulatory/offering-wcag-2-1) クライアント ソフトウェア ガイダンス
+
+### <a name="compliance--service-assurance"></a>コンプライアンス&サービス アシュアランス
+
+- [サービス アシュア](/compliance/) ランスは、認定および適用性に関する声明に関するコンテンツ更新プログラムを四半期ごとに確認します。
+  - データを有するデバイスの破棄
+  - DDOS 攻撃
 
 ### <a name="data-connectors"></a>データ コネクタ
 
@@ -60,6 +77,19 @@ Microsoft 365 コンプライアンス センター に新しいソリューシ�
 ### <a name="ediscovery"></a>電子情報開示
 
 - [KQL エディターを使用して](ediscovery-kql-editor.md)、コンテンツ検索、Core 電子情報開示、およびコンテンツ検索で検索クエリを作成する新しい方法の検索クエリパブリック プレビューをAdvanced eDiscovery。KQL エディターは、サポートされている検索可能なプロパティと条件のオートコンプリートを提供し、標準のプロパティと条件でサポートされている値の一覧を表示します。KQL エディターは、検索クエリの潜在的なエラーの修正に関するエラー検出と提案も提供します。
+
+### <a name="information-barriers"></a>情報バリア
+
+- [情報バリア モードの情報バリア](information-barriers-policies.md#step-6-information-barriers-modes-preview) の新しいプレビュー機能の使用を開始する
+- [情報バリア モードMicrosoft Teams](/microsoftteams/information-barriers-in-teams)新しいプレビュー機能を備える情報バリア
+- [情報バリア モードOneDrive](/onedrive/information-barriers)新しいプレビュー機能を備える情報バリア
+- [情報バリア モードSharePointオンライン](/sharepoint/information-barriers)の新しいプレビュー機能を使用した情報バリア
+
+### <a name="insider-risk-management"></a>インサイダー リスクの管理
+
+- [インサイダー リスク管理の新しい](insider-risk-management-configure.md#recommended-actions-preview) プレビュー機能を使用して、推奨されるアクションを開始する方法を説明します。
+- [インサイダーリスクアクティビティの新](insider-risk-management-activities.md#get-help-managing-your-insider-risk-alert-queue) しい「インサイダーリスクアラートキューの管理に関するヘルプを取得する」のガイダンスセクションを調査する
+- [Insider リスク管理設定の新しい管理者通知設定](insider-risk-management-settings.md#admin-notifications) プレビュー機能の使用を開始する
 
 ### <a name="retention-and-records-management"></a>保持とレコードの管理
 - [複数段階の廃棄レビューが](disposition.md) 一般に利用可能 (GA) で、新しい [監査イベントが追加されました](search-the-audit-log-in-security-and-compliance.md#disposition-review-activities)。 複数ステージの廃棄レビューを使用すると、保持ラベルに対して最大 5 つの連続した廃棄レビュー段階を指定し、レビュー担当者は他のユーザーを廃棄レビュー ステージに追加できます。 メールの通知とアラームをカスタマイズすることもできます。
@@ -238,7 +268,7 @@ Microsoft 365 コンプライアンス センター に新しいソリューシ�
 
 ### <a name="data-classification"></a>データ分類
 
-- [アクティビティ エクスプローラーで使用できるアクティビティのラベル付け](/microsoft-365/compliance/data-classification-activity-explorer-available-events)
+- [アクティビティ エクスプローラーで利用可能なラベル付けアクティビティ](/microsoft-365/compliance/data-classification-activity-explorer-available-events)
 
 ### <a name="data-connectors"></a>データ コネクタ
 

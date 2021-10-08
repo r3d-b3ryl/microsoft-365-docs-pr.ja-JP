@@ -16,12 +16,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 08/05/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: df73543f0aaf5ac03508e6239e850f7a8d3034c9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2b2545205af25a07fc8addab4818e603c18ff846
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210951"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240070"
 ---
 # <a name="microsoft-defender-antivirus-on-windows-server"></a>Windows Server 上の Microsoft Defender ウイルス対策
 
@@ -36,9 +36,10 @@ Microsoft Defender ウイルス対策は、次のエディション/バージョ
 - Windows Server 2019
 - Windows Server 2022
 - Windows Server バージョン 1803 以降
-- Windows Server 2016。
+- Windows Server 2016
+- Windows Server 2012R2 (エンドポイントに Microsoft Defender が必要)
 
-場合によっては、Microsoft Defender ウイルス対策は *Endpoint Protection* と呼ばることもありますが、保護エンジンは同じです。 機能、構成、および管理は、[Windows 10 の Microsoft Defender ウイルス対策](microsoft-defender-antivirus-in-windows-10.md) とほとんど同じですが、Windows Server には一部の重要な違いがあります。
+場合によっては、Microsoft Defender ウイルス対策は *Endpoint Protection* と呼ばることもありますが、保護エンジンは同じです。 機能、構成、および管理は、[Windows 10 の Microsoft Defender ウイルス対策](microsoft-defender-antivirus-windows.md) とほとんど同じですが、Windows Server には一部の重要な違いがあります。
 
 - Windows Server では、[自動除外](configure-server-exclusions-microsoft-defender-antivirus.md) が定義によるサーバー ロールに基づいて適用されます。
 
@@ -61,6 +62,11 @@ Microsoft Defender ウイルス対策は、次のエディション/バージョ
 既定では、Microsoft Defender ウイルス対策が Windows Server にインストールされており機能することになっています。 場合によっては、ユーザー インターフェイス (GUI) が既定でインストールされていることがありますが、GUI は必要ありません。 PowerShell、グループ ポリシー、またはその他のメソッドを使用して、Microsoft Defender ウイルス対策を管理できます。
 
 GUI がサーバーにインストールされておらず、インストールを希望する場合は、 **役割と機能の追加ウィザード** または PowerShell コマンドレットを使用します。
+
+
+
+>[!NOTE]
+>このオプションは、R2 のWindows Server 2012できません。 詳細については [、「Options to install Microsoft Defender for Endpoint」を参照してください](configure-server-endpoints.md#options-to-install-microsoft-defender-for-endpoint)。
 
 ### <a name="turn-on-the-gui-using-the-add-roles-and-features-wizard"></a>役割と機能の追加ウィザードを使用して GUI を有効にする
 
@@ -182,6 +188,10 @@ sc query Windefend
 |**3** - **すべてのサンプルを自動的に送信する**|Microsoft Defender ウイルス対策 サービスでは確認を行うプロンプトが表示されず、すべてのファイルが送信されます。|
 |
 
+>[!NOTE]
+>このオプションは、R2 のWindows Server 2012できません。 
+
+
 ## <a name="configure-automatic-exclusions"></a>自動除外を構成する
 
 セキュリティとパフォーマンスを確保するために、Microsoft Defender ウイルス対策 on Windows Server 2016 または 2019、または Windows Server 2022 を使用するときにインストールする役割と機能に基づいて、特定の除外が自動的に追加されます。
@@ -192,21 +202,20 @@ sc query Windefend
 
 Windows Server 上のプライマリ ウイルス対策ソリューションとして Microsoft 以外のウイルス対策製品を使用している場合は、Microsoft Defender ウイルス対策をパッシブ モードまたは無効モードに設定する必要があります。
 
-- Windows サーバー、バージョン 1803 以降、または Windows Server 2019、または Windows Server 2022 では、Microsoft Defender ウイルス対策 をパッシブ モードに設定できます。 次のセクションを参照してください。
-  - [レジストリ キーを使用して Microsoft Defender ウイルス対策をパッシブ モードに設定する](#set-microsoft-defender-antivirus-to-passive-mode-using-a-registry-key)
-  - [役割と機能の削除ウィザードを使用して Microsoft Defender ウイルス対策を無効にする](#disable-microsoft-defender-antivirus-using-the-remove-roles-and-features-wizard)
-  - [PowerShell を使用して Microsoft Defender ウイルス対策ユーザー インターフェイスをオフにする](#turn-off-the-microsoft-defender-antivirus-user-interface-using-powershell)
+詳細については、「Install [Microsoft Defender ウイルス対策 on Windows」を参照してください](microsoft-defender-antivirus-on-windows-server.md#install-microsoft-defender-antivirus-on-windows-server)。
 
-- Windows Server 2016 では、Microsoft Defender ウイルス対策は Microsoft 以外のウイルス対策/マルウェア対策製品と一緒にサポートできません。 このような場合は、Microsoft Defender ウイルス対策を無効モードに設定する必要があります。 「[アンインストールまたは無効化」を参照Microsoft Defender ウイルス対策Windows Server 2016](#uninstalling-or-disabling-microsoft-defender-antivirus-on-windows-server-2016)
 
 ### <a name="set-microsoft-defender-antivirus-to-passive-mode-using-a-registry-key"></a>レジストリ キーを使用して Microsoft Defender ウイルス対策をパッシブ モードに設定する
 
-Windows Server、バージョン 1803、Windows Server 2019、または Windows Server 2022 を使用している場合は、次のレジストリ キーを設定して、Microsoft Defender ウイルス対策 をパッシブ モードに設定できます。
-
+次のレジストリ Microsoft Defender ウイルス対策をパッシブ モードに設定できます。
 - パス: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
 - 名前: `ForceDefenderPassiveMode`
 - 種類`REG_DWORD`
 - 値: `1`
+
+
+
+
 
 ### <a name="disable-microsoft-defender-antivirus-using-the-remove-roles-and-features-wizard"></a>役割と機能の削除ウィザードを使用して Microsoft Defender ウイルス対策を無効にする
 
@@ -226,9 +235,10 @@ Microsoft Defender ウイルス対策 GUI をオフにするには、次の Powe
 Uninstall-WindowsFeature -Name Windows-Defender-GUI
 ```
 
-### <a name="uninstalling-or-disabling-microsoft-defender-antivirus-on-windows-server-2016"></a>アンインストールまたは無効にする方法は、Microsoft Defender ウイルス対策でWindows Server 2016
+### <a name="are-you-using-windows-server-2012-r2-or-windows-server-2016"></a>R2 または Windows Server 2012を使用Windows Server 2016?
 
-Microsoft 以外のマルウェアWindows Server 2016ウイルス対策製品と一緒に使用している場合は、ユーザー設定を無効またはアンインストールするMicrosoft Defender ウイルス対策。 次のいずれかの方法を使用できます。
+これで、R2 および Microsoft Defender ウイルス対策のパッシブ モードでWindows Server 2012を実行Windows Server 2016。 詳細については [、「Options to install Microsoft Defender for Endpoint」を参照してください](configure-server-endpoints.md#options-to-install-microsoft-defender-for-endpoint)。
+
 
 <br>
 
@@ -242,7 +252,8 @@ Microsoft 以外のマルウェアWindows Server 2016ウイルス対策製品と
 |PowerShell をMicrosoft Defender ウイルス対策をアンインストールする|次の PowerShell コマンドレットを使用します。 `Uninstall-WindowsFeature -Name Windows-Defender`|
 |
 
-## <a name="see-also"></a>関連項目
 
-- [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)
+## <a name="see-also"></a>関連項目
+- [Windows Server 上の Microsoft Defender ウイルス対策をインストールする]()
+- [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-windows.md)
 - [Microsoft Defender ウイルス対策互換性](microsoft-defender-antivirus-compatibility.md)

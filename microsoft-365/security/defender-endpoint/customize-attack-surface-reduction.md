@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 6f5cc7bb514001666bc1223630738faa2f94e8df
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 393dbcf19232a0a27197a781c1c7b71b4aa2683e
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60204037"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240178"
 ---
 # <a name="customize-attack-surface-reduction-rules"></a>攻撃面の減少ルールをカスタマイズする
 
@@ -44,6 +44,8 @@ ms.locfileid: "60204037"
 - Windows 10 Enterpriseバージョン[1709](/windows/whats-new/whats-new-windows-10-version-1709)以降
 - Windowsサーバー、[バージョン 1803 (半期チャネル)](/windows-server/get-started/whats-new-in-windows-server-1803)以降
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+-  [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
+- [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2) 
 - Windows Server 2022
 
 グループ ポリシー、PowerShell、およびモバイル デバイス管理 (MDM) 構成サービス プロバイダー (CSP) を使用して、これらの設定を構成できます。
@@ -131,7 +133,7 @@ ms.locfileid: "60204037"
 
 ルールがトリガーされた場合の通知をカスタマイズし、アプリまたはファイルをブロックできます。 詳しくは[、Windows セキュリティをご覧](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center#customize-notifications-from-the-windows-defender-security-center)ください。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [攻撃表面の縮小ルールを使用して攻撃表面を削減する](attack-surface-reduction.md)
 - [攻撃面の減少ルールを有効にする](enable-attack-surface-reduction.md)

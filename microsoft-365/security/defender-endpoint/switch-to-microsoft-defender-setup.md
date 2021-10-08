@@ -21,12 +21,12 @@ ms.topic: article
 ms.custom: migrationguides
 ms.date: 09/23/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 5d4e81f78d0ad3f692fcce64f397914eb61d56e2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 15dfa857187ef83d7fb5a297b4e83d4d97fafb2c
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159356"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60239638"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-2-setup"></a>エンドポイントの Microsoft Defender に切り替える - フェーズ 2: セットアップ
 
@@ -88,7 +88,7 @@ Defender for Endpoint に切り替える場合は、一定の手順を実行し�
 > - Windows Server 2019
 > - Windows Server 2022
 > - Windowsサーバーバージョン 1803 (コア専用モード)
-> - Windows Server 2016 (次のセクションを参照[Windows Server 2016](#are-you-using-windows-server-2016)してください。
+> - Windows Server 2016 (次のセクションを参照[Windows Server 2016](#are-you-using-windows-server-2012-r2-or-windows-server-2016)してください。
 
 1. エンドポイントまたはデバイスのローカル管理者として、サーバーを開Windows PowerShell。
 
@@ -128,35 +128,9 @@ Defender for Endpoint に切り替える場合は、一定の手順を実行し�
 > [!NOTE]
 > Defender for Endpoint にオンボーディングした後、サーバーのパッシブ モードMicrosoft Defender ウイルス対策設定する必要Windowsがあります。 パッシブ モードが予想通り設定された状態を検証するには **、Microsoft-Windows-Windows Defender** の運用ログ (にある) でイベント *5007* を検索し `C:\Windows\System32\winevt\Logs` **、ForceDefenderPassiveMode** レジストリ キーまたは **PassiveMode** レジストリ キーが 0x1 に設定されている **のを確認** します。
 
-### <a name="are-you-using-windows-server-2016"></a>Windows Server 2016 を使用していますか?
+### <a name="are-you-using-windows-server-2012-r2-or-windows-server-2016"></a>R2 または Windows Server 2012を使用Windows Server 2016?
 
-現時点では、Microsoft Defender ウイルス対策でパッシブ モードでWindows Server 2016。 Microsoft 以外のウイルス対策/マルウェア対策ソリューションをアンインストールし、インストールおよび有効化Microsoft Defender ウイルス対策。 デバイスでデバイスを有効にMicrosoft Defender ウイルス対策問題Windows Server 2016、次の手順を実行します。
-
-1. デバイスで、管理者として PowerShell を開きます。
-
-2. 次の PowerShell コマンドレットを入力します `mpcmdrun -wdenable` 。
-
-> [!TIP]
-> 詳細については、次の資料を参照してください。
->
-> - [Windows Server 上の Microsoft Defender ウイルス対策](microsoft-defender-antivirus-on-windows-server.md)
-> - [Microsoft Defender ウイルス対策の他のセキュリティ製品との互換性](microsoft-defender-antivirus-compatibility.md)
-
-### <a name="confirm-that-microsoft-defender-antivirus-is-enabled"></a>有効になっているMicrosoft Defender ウイルス対策確認する
-
-次の表で説明するように、いくつかの方法のいずれかを使用して、Microsoft Defender ウイルス対策の状態を確認できます。
-
-<br/><br/>
-
-|メソッド|Procedure|
-|---|---|
-|Windows セキュリティアプリ| 1. デバイスでWindowsアプリをWindows セキュリティします。<br/><br/>2. [ **ウイルス対策] &を選択します**。<br/><br/>3. [プロバイダー **Who保護しますか?** [プロバイダーの管理 **] を選択します**。 [セキュリティ **プロバイダー] ページの**[ウイルス対策]**の下** に、[セキュリティ プロバイダー **Microsoft Defender ウイルス対策がオンになっている必要があります**。|
-|タスク マネージャー|1. デバイスWindowsタスク マネージャー アプリを開きます。<br/><br/>2. [詳細] タブ **を選択** します。<br/><br/>3. リストで **MsMpEng.exe** を探します。|
-|Windows PowerShell <br/><br/> (ユーザーが実行Microsoft Defender ウイルス対策確認するには)|1. デバイスで、Windowsを開Windows PowerShell。<br/><br/>2. 次の PowerShell コマンドレットを実行します `Get-Process` 。<br/><br/>3. 結果を確認します。 有効になっている場合 **MsMpEng.exe** がMicrosoft Defender ウイルス対策表示されます。|
-|Windows PowerShell <br/> (ウイルス対策保護が実行されているのを確認するには)|[Get-MpComputerStatus PowerShell コマンドレットを使用できます](/powershell/module/defender/get-mpcomputerstatus)。 <br/><br/>1. デバイスで、Windowsを開Windows PowerShell。<br/><br/>2. 次の PowerShell コマンドレットを実行します `Get-MpComputerStatus|select AMRunningMode` 。<br/><br/>3. 結果を確認します。 エンドポイントで有効になっている場合は **、[** 標準] または **[パッシブ** Microsoft Defender ウイルス対策が表示されます。|
-
-> [!TIP]
-> [詳細については、Microsoft Defender ウイルス対策を参照してください](microsoft-defender-antivirus-compatibility.md#more-details-about-microsoft-defender-antivirus-states)。
+上記の方法を使用Microsoft Defender ウイルス対策 R2 および 2016 のパッシブ モードでWindows Server 2012を実行できます。 詳細については [、「Options to install Microsoft Defender for Endpoint」を参照してください](configure-server-endpoints.md#options-to-install-microsoft-defender-for-endpoint)。
 
 ## <a name="configure-defender-for-endpoint"></a>Android 機能用に Microsoft Defender for Endpoint を構成する
 
@@ -183,13 +157,10 @@ Defender for Endpoint に切り替える場合は、一定の手順を実行し�
 
 構成する特定の除外は、エンドポイントまたはデバイスWindowsのバージョンによって異なり、次の表に示します。
 
-<br><br/>
-
-|OS|除外|
-|---|---|
-|Windows 10バージョン[1803](/windows/release-health/status-windows-10-1803)または Windows 11 (リリース情報Windows 10[参照)](/windows/release-health/release-information) <p> Windows 10バージョン 1703 または[KB4493441](https://support.microsoft.com/help/4493441)がインストールされている 1709 <p> [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)、Windows Server 2022 <p> [Windowsサーバー、バージョン 1803](/windows-server/get-started/whats-new-in-windows-server-1803)|`C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe` <p> `C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe` <p> `C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe` <p> `C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe`|
-|[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2) <p> [Windows 7](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) <p> [Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016) <p> [Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2) <p> [Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)|`C:\Program Files\Microsoft Monitoring Agent\Agent\Health Service State\Monitoring Host Temporary Files 6\45\MsSenseS.exe` <p> **注**: ホスト一時ファイル 6\45 の監視には、番号が付くサブフォルダーが異なる場合があります。 <p> `C:\Program Files\Microsoft Monitoring Agent\Agent\AgentControlPanel.exe` <p> `C:\Program Files\Microsoft Monitoring Agent\Agent\HealthService.exe` <p> `C:\Program Files\Microsoft Monitoring Agent\Agent\HSLockdown.exe` <p> `C:\Program Files\Microsoft Monitoring Agent\Agent\MOMPerfSnapshotHelper.exe` <p> `C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe` <p> `C:\Program Files\Microsoft Monitoring Agent\Agent\TestCloudConnection.exe`|
-
+|OS |除外 |
+|--|--|
+|Windows 10バージョン[1803](/windows/release-health/status-windows-10-1803)以降 (リリース[情報Windows 10参照](/windows/release-health/release-information))<br/>Windows 10バージョン 1703 または[KB4493441](https://support.microsoft.com/help/4493441)がインストールされている 1709 <br/> Windows 11<br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019) <br/> Windows Server 2022 <br/>[Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016)<br/>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/>[Windowsサーバー、バージョン 1803](/windows-server/get-started/whats-new-in-windows-server-1803) |`C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe`<br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe`<br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe`<br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe`<br/>  |
+|[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2) <br/>[Windows 7](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/>[WindowsServer 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |`C:\Program Files\Microsoft Monitoring Agent\Agent\Health Service State\Monitoring Host Temporary Files 6\45\MsSenseS.exe`<br/>**注**: ホスト一時ファイル 6\45 の監視には、番号が付くサブフォルダーが異なる場合があります。 <br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\AgentControlPanel.exe`<br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\HealthService.exe`<br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\HSLockdown.exe`<br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\MOMPerfSnapshotHelper.exe`<br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe`<br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\TestCloudConnection.exe` |
 
 ## <a name="add-your-existing-solution-to-the-exclusion-list-for-microsoft-defender-antivirus"></a>既存のソリューションをユーザーの除外リストに追加Microsoft Defender ウイルス対策
 

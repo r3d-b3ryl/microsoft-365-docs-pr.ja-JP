@@ -17,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: d84a234a07edddf22f560bc55b5efb5f5dbb62de
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c19d2bc64ffda9e6b101af170bb836a434e993d0
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201519"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240358"
 ---
 # <a name="attack-surface-reduction-rules"></a>攻撃面の減少ルール
 
@@ -35,15 +35,50 @@ ms.locfileid: "60201519"
   - GUID
   - 構成管理システムのルール名
 
-## <a name="supported-operating-systems"></a>サポートされているオペレーティング システム 
+## <a name="public-preview-supported-operating-systems"></a>パブリック プレビュー: サポートされているオペレーティング システム
 
-次の表に、攻撃表面の縮小ルールをアルファベット順に示します。 チェック マークは、ルールが、その列に一覧表示されているオペレーティング システムでサポートされている状態を示します。
+> [!IMPORTANT]
+> 一部の情報は、市販される前に大幅に変更される可能性があるプレリリース製品に関するものです。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
+
+次の表に、現在プレリリース製品である攻撃表面縮小ルールでサポートされているオペレーティング システムの一覧を示します。 ルールはアルファベット順に表示されます。
 
 > [!Note]
 >
 > - 特に指定しない限り、最小 Windows 10 ビルドはバージョン &nbsp; 1709 (RS3、ビルド 16299) 以降です。Windows Server の最小ビルドは &nbsp; バージョン 1809 以降です。
 >
-> - \* 特に明記されていない限り、すべてのルールでファイルとフォルダーの除外がサポートされます。
+
+| ルールの名前 | &nbsp;WindowsServer 2016 <sup> [[1](#fn1)]<sup></sup> | &nbsp;WindowsServer 2012 R2 <sup> [[1](#fn1)]<sup></sup> |
+|---|:---:|:---:|
+|[悪用された脆弱な署名済みドライバーの悪用をブロックする](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y | Y |
+|[Adobe Reader の子プロセスの作成をブロックする](#block-adobe-reader-from-creating-child-processes) | Y | Y |
+|[すべてのアプリケーションOffice子プロセスの作成をブロックする](#block-all-office-applications-from-creating-child-processes) | Y | Y |
+|[ローカル セキュリティ機関サブシステムからの資格情報のWindowsをブロックする (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Y | Y |
+|[メール クライアントと Web メールから実行可能なコンテンツをブロックする](#block-executable-content-from-email-client-and-webmail) | Y | Y |
+|[有病率、年齢、または信頼できるリスト条件を満たしない限り、実行可能ファイルの実行をブロックする](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | Y | Y |
+|[難読化される可能性のあるスクリプトの実行をブロックする](#block-execution-of-potentially-obfuscated-scripts) | Y | Y |
+|[JavaScript または VBScript のダウンロード済み実行可能コンテンツの起動をブロックする](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | Y | N |
+|[実行可能Office作成するアプリケーションのブロック](#block-office-applications-from-creating-executable-content) | Y | Y |
+|[アプリケーションOffice他のプロセスへのコードの挿入をブロックする](#block-office-applications-from-injecting-code-into-other-processes)  | Y | Y |
+|[通信Officeプロセスの作成をブロックする](#block-office-communication-application-from-creating-child-processes) | Y | Y |
+|[WMI イベント サブスクリプションによる永続化のブロック](#block-persistence-through-wmi-event-subscription) \*_ファイルとフォルダーの除外はサポートされていません。_ | × | × |
+|[PSExec および WMI コマンドから発生するプロセス作成をブロックする](#block-process-creations-originating-from-psexec-and-wmi-commands) | Y | Y |
+|[USB から実行される信頼されていないプロセスと署名されていないプロセスをブロックする](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y | Y |
+|[Win32 API 呼び出しをブロックOfficeマクロ](#block-win32-api-calls-from-office-macros) | × | × |
+|[ランサムウェアに対する高度な保護の使用](#use-advanced-protection-against-ransomware) | Y | Y |
+| **ルール名** | **Windows &nbsp;Server 2016** <sup> [[1](#fn1)]<sup></sup> | **Windows &nbsp;Server 2012 R2** <sup> [[1](#fn1)]<sup></sup> |
+
+(<a id="fn1">1</a>) 2016 年と 2016 年の最新の統合ソリューションWindows Server 2012します。 詳細については、「Defender [for Endpoint サービスへのオンボード Windows サーバー」を参照してください](configure-server-endpoints.md)。
+
+_パブリック プレビューの終了: サポートされているオペレーティング システム_
+
+## <a name="supported-operating-systems"></a>サポートされているオペレーティング システム 
+
+次の表に、現在一般提供にリリースされているルールでサポートされているオペレーティング システムの一覧を示します。 ルールはアルファベット順に表示されます。
+
+> [!Note]
+>
+> - 特に指定しない限り、最小 Windows 10 ビルドはバージョン &nbsp; 1709 (RS3、ビルド 16299) 以降です。Windows Server の最小ビルドは &nbsp; バージョン 1809 以降です。
+>
 
 |ルールの名前|&nbsp;Windows10|&nbsp;WindowsServer 2019|&nbsp;Windowsサーバー|&nbsp;WindowsServer 2016|&nbsp;WindowsServer 2012 R2|
 |---|:---:|:---:|:---:|:---:|:---:|

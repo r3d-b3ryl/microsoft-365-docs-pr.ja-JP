@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c2d590445265d1189463312f969f7b8b57b5eed5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e490123a06c2384568e4aabe9119936ed618b2c2
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210891"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240485"
 ---
 # <a name="onboard-devices-without-internet-access-to-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint へのインターネット アクセスのないオンボード デバイス
 
@@ -54,7 +54,9 @@ ms.locfileid: "60210891"
 
 - プロキシまたはハブとして機能するように Azure Log Analytics (以前は OMS Gateway と呼ばれる) をセットアップします。
   - [Azure Log Analytics エージェント](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
-  - エンドポイント ワークスペースキー id Microsoft Monitoring Agent Defender をポイントするコンピューター [(MMA)](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint)ポイントをインストール&する
+  - エンドポイント ワークスペースキー id Microsoft Monitoring Agent Defender をポイントするコンピューター [(MMA)](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma)ポイントをインストール&する
+
+[以前のバージョンの Windows をオンボードする](onboard-downlevel.md)
 
 - Azure Log Analytics の同じネットワーク内のオフライン デバイス
   - 次の点を示す MMA を構成します。
@@ -63,15 +65,14 @@ ms.locfileid: "60210891"
 
 ## <a name="azure-virtual-machines"></a>Azure 仮想マシン
 
-- [Azure Log Analytics ワークスペースの構成と有効化](/azure/azure-monitor/platform/gateway)
-  - プロキシまたはハブとして機能するように Azure Log Analytics Gateway (以前は OMS ゲートウェイと呼ばれる) をセットアップします。
+- プロキシまたはハブとして機能するように Azure Log Analytics Gateway (以前は OMS ゲートウェイと呼ばれる) をセットアップします。
     - [Azure Log Analytics Gateway](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
-    - エンドポイント ワークスペースキー id Microsoft Monitoring Agent Defender をポイントするコンピューター [(MMA)](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint)ポイントをインストール&する
-    - OMS ゲートウェイの同じネットワーク内のオフライン Azure VM
-      - Azure Log Analytics IP をプロキシとして構成する
-      - Azure Log Analytics Workspace Key & ID
-    - Azure Defender
-      - [セキュリティ ポリシー \> ログ分析ワークスペース](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
-      - [脅威検出 \> エンドポイントの Defender が自分のデータにアクセスできる](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
+    - エンドポイント ワークスペースキー id Microsoft Monitoring Agent Defender をポイントするコンピューター [(MMA)](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma)ポイントをインストール&する
+- OMS ゲートウェイの同じネットワーク内のオフライン Azure VM
+    - Azure Log Analytics IP をプロキシとして構成する
+    - Azure Log Analytics Workspace Key & ID
+- Azure Defender
+    - [セキュリティ ポリシー \> ログ分析ワークスペース](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
+    - [脅威検出 \> エンドポイントの Defender が自分のデータにアクセスできる](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
 
-        詳細については、「セキュリティ ポリシーの [操作」を参照してください](/azure/security-center/tutorial-security-policy)。
+    詳細については、「セキュリティ ポリシーの [操作」を参照してください](/azure/security-center/tutorial-security-policy)。
