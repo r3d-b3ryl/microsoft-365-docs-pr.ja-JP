@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -17,21 +17,21 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なものを保持し、必要でないものを削除するためにラベルを自動的に適用できるように、保持ラベルと自動ラベル付けポリシーを作成します。
-ms.openlocfilehash: c6aede6ba25ebd7f28008e4c52450bd3e4b74c2d
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: eeeda9a41f35f6380d2d20adf80b00bc80ba4c4e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60009459"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198771"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>保持ラベルを自動的に適用してコンテンツを保持または削除する
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 > [!NOTE]
-> このシナリオは、Microsoft Office SharePoint Online のドキュメント セットやライブラリ、Exchange のフォルダーなどの組織構造の[規制レコード](records-management.md#records)や既定のラベルではサポートされていません。 これらのシナリオでは、[発行済みアイテム保持ラベル ポリシー](create-apply-retention-labels.md#step-2-publish-retention-labels)が必要です。
+> このシナリオは、Microsoft Office SharePoint Online のドキュメント セットやライブラリ、Exchange のフォルダーなどの組織構造の[規制レコード](records-management.md#records)や既定のラベルではサポートされていません。これらのシナリオには、[発行済み保持ラベル ポリシー](create-apply-retention-labels.md#step-2-publish-retention-labels)が必要です。
 
-[保持ラベル](retention.md)の最も強力な機能の 1 つは、指定した条件に一致したコンテンツに自動的にラベルを適用することです。 この場合、組織内のユーザーが保持ラベルを適用する必要はありません。 Microsoft 365 が行います。
+[保持ラベル](retention.md)の最も強力な機能の 1 つは、指定の条件に一致したコンテンツにラベルを自動的に適用する機能です。この場合、保持ラベルは Microsoft 365 によって適用されるため、組織内のユーザーがラベルを適用する必要はありません。
   
 自動適用アイテム保持ラベルが強力な機能である理由は次のとおりです。
   
@@ -44,7 +44,7 @@ ms.locfileid: "60009459"
 コンテンツに機密情報、キーワード、検索可能なプロパティ、または[トレーニング可能な分類子](classifier-get-started-with.md)のマッチが含まれている場合、保持ラベルをコンテンツに自動的に適用できます。
 
 > [!TIP]
-> 検索可能なプロパティを使用して [Teams 会議のレコーディング](#microsoft-teams-meeting-recordings)を特定できます。
+> 検索可能なプロパティを使用して、[Teams 会議のレコーディング](#microsoft-teams-meeting-recordings)と[秘密度ラベルを適用済みのアイテム](#identify-files-and-emails-that-have-a-sensitivity-label)を識別します。
 
 保持ラベルを自動的に適用するプロセスは、次の条件に基づいています。
 
@@ -115,7 +115,7 @@ ms.locfileid: "60009459"
 
 既存の自動適用ポリシーを編集するには、ポリシーを選択して、アイテム保持ポリシーの編集ウィザードを起動します。このウィザードでは、手順 2 で選択した保持ラベルと[有効な設定](#updating-retention-labels-and-their-policies)を変更できます。
 
-自動適用ラベル ポリシーを使用してコンテンツにラベル付けをした後で、コンテンツやポリシーを変更したり、新しい自動適用ラベル ポリシーを使用したりして、適用されているラベルを自動的に削除したり変更したりすることはできません。 詳細については、「[一度に 1 つの保持ラベルのみ](retention.md#only-one-retention-label-at-a-time)」を参照してください。
+自動適用ラベル ポリシーを使用してコンテンツにラベル付けをした後で、コンテンツやポリシーを変更したり、新しい自動適用ラベル ポリシーを使用したりして、適用されているラベルを自動的に削除したり変更したりすることはできません。詳細については、「[一度に 1 つの保持ラベルのみ](retention.md#only-one-retention-label-at-a-time)」を参照してください。
 
 ### <a name="configuring-conditions-for-auto-apply-retention-labels"></a>自動適用の保持ラベルの条件の構成
 
@@ -150,7 +150,7 @@ ms.locfileid: "60009459"
 #### <a name="auto-apply-labels-to-content-with-specific-types-of-sensitive-information"></a>特定の種類の機密情報によるコンテンツへのラベルの自動適用
 
 > [!IMPORTANT]
-> 機密情報を識別して自動適用するメールの場合、特定の受信者を含めたり除外したりするようにポリシーをスコープすることはサポートされていません。このポリシー構成は、**[すべての受信者]** 設定のみをサポートします。 このポリシー構成に固有の **[すべての受信者]** には、Microsoft 365 グループのメールボックスが含まれます。
+> 機密情報を識別して自動適用するメールの場合、特定の受信者を含めたり除外したりするようにポリシーをスコープすることはサポートされていません。このポリシー構成は、**[すべての受信者]** 設定のみをサポートします。この固有のポリシー構成では、**すべての受信者** に Microsoft 365 グループのメールボックスがあります。
 > 
 > また、このポリシー構成に固有で、**Microsoft 365 グループ** の場所を選択する場合、Microsoft 365 グループに接続されている SharePoint サイトのみが含まれ、Microsoft 365 グループのメールボックスは含まれません。
 
@@ -162,7 +162,7 @@ ms.locfileid: "60009459"
 
 ポリシー テンプレートを選択すると、すべての種類の機密情報を追加または削除したり、信頼度やインスタンス数を変更したりすることができます。以前のスクリーンショットの例では、これらのオプションを変更し、保持ラベルは次の場合にのみ自動的に適用されます。
   
-- 一致精度 (または [信頼度](sensitive-information-type-learn-about.md#more-on-confidence-levels)) が検出された機密情報の種類は、2 種類の機密情報については少なくとも **中程度の精度**、1 種類の機密情報については **高い確度** があります。 機密情報の種類の多くは、複数のパターンで定義されています。高い一致精度が指定されたパターンにはより多くの証拠 (キーワード、日付、アドレスなど) が見つかることが必要とされるのに対して、低い一致精度が指定されたパターンでは必要とされる証拠は少なくなります。 信頼度が低いほど、コンテンツが条件に一致しやすくなりますが、誤認識が増える可能性があります。
+- 一致精度 (または [信頼度](sensitive-information-type-learn-about.md#more-on-confidence-levels)) が検出された機密情報の種類は、2 種類の機密情報については少なくとも **中程度の精度**、1 種類の機密情報については **高い確度** があります。機密情報の種類の多くは、複数のパターンで定義されています。高い一致精度が指定されたパターンにはより多くの証拠 (キーワード、日付、アドレスなど) が見つかることが必要とされるのに対して、低い一致精度が指定されたパターンでは必要とされる証拠は少なくなります。信頼度が低いほど、コンテンツが条件に一致しやすくなりますが、誤認識が増える可能性があります。
 
 - 3 種類の機密情報のうち、1 から 9 個のインスタンスを含むコンテンツ。 **範囲の終了値 (To)** の既定値は、**任意** です。
 
@@ -198,7 +198,7 @@ ms.locfileid: "60009459"
 
 - 後方一致ワイルドカード検索 (`*cat` など) や部分文字列ワイルドカード検索 (`*cat*` など) はサポートされていません。 ただし、プレフィックス ワイルドカード検索 (`cat*` など) はサポートされています。
 
-- 部分的にインデックス付けされたアイテムは、想定するアイテムにラベルを付けない、または NOT 演算子を使用するときにラベル付けから除外されると想定するアイテムにラベルを付ける責任があることに注意してください。 詳細については、「[コンテンツ検索で部分的にインデックスが作成されたアイテム](partially-indexed-items-in-content-search.md)」を参照してください。
+- 部分的にインデックス付けされたアイテムは、想定するアイテムにラベルを付けない、または NOT 演算子を使用するときにラベル付けから除外されると想定するアイテムにラベルを付ける責任があることに注意してください。詳細については、「[コンテンツ検索で部分的にインデックスが作成されたアイテム](partially-indexed-items-in-content-search.md)」を参照してください。
 
 
 クエリの例:
@@ -258,6 +258,19 @@ ProgID:Media AND ProgID:Meeting
 
 会議のレコーディングは OneDrive に保存されている場合がほとんどですが、チャネル会議の場合は SharePoint に保存されています。
 
+##### <a name="identify-files-and-emails-that-have-a-sensitivity-label"></a>秘密度ラベルの付いたファイルやメールを識別する
+
+特定の [秘密度ラベル](sensitivity-labels.md)が適用された SharePoint または OneDrive 内のファイルと Exchange メールを識別するには、**キーワード クエリ エディター** に以下のように指定します。
+
+```
+InformationProtectionLabelId:<GUID>
+```
+
+GUID を見つけるには、[セキュリティ/コンプライアンス センター PowerShell](/powershell/exchange/scc-powershell) で [Get-Label](/powershell/module/exchange/get-label) コマンドレットを使用します。
+
+````powershell
+Get-Label | Format-Table -Property DisplayName, Name, Guid
+````
 
 #### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>トレーニング可能な分類子を使用して、ラベルをコンテンツに自動的に適用する
 
@@ -291,9 +304,9 @@ ProgID:Media AND ProgID:Meeting
 
 2. 次のコマンドを実行します。
     
-    ``` PowerShell
+    ```PowerShell
     Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
-   ```
+    ```
 
 ## <a name="updating-retention-labels-and-their-policies"></a>保持ラベルとそのポリシーの更新
 

@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: ユーザー ライセンスが 25 未満の場合は、いつでも管理センターから一般法人向け Microsoft 365 の試用版または有料版サブスクリプションをキャンセルできます。
 ms.date: 09/16/2021
-ms.openlocfilehash: 932cac44b9bf1b8632116d544cf4b33c0cb19a27
-ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
+ms.openlocfilehash: 942953f586a65659609660363593c0f6e86c8ca6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59481038"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204577"
 ---
 # <a name="cancel-your-subscription"></a>サブスクリプションをキャンセルする
 
@@ -43,21 +43,21 @@ ms.locfileid: "59481038"
 
 ## <a name="before-you-begin"></a>開始する前に
 
-この記事で説明されている手順を実行するには、全体管理者または課金管理者である必要があります。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
+この記事で説明されている手順を実行するには、全体管理者または課金管理者である必要があります。詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」をご覧ください。
 
 ## <a name="steps-to-cancel-your-subscription"></a>サブスクリプションをキャンセルする手順
 
-サブスクリプションで使用する独自のドメイン名を追加した場合、サブスクリプションをキャンセルする前に、そのドメインを削除する必要があります。 詳細については、「[ドメインを削除する](../../admin/get-help-with-domains/remove-a-domain.md)」を参照してください。
+サブスクリプションで使用する独自のドメイン名を追加した場合、サブスクリプションをキャンセルする前に、ドメインを削除する必要があります。詳細については、「[ドメインを削除する](../../admin/get-help-with-domains/remove-a-domain.md)」を参照してください。
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">お使いの製品</a>] ページの順に移動します。
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[お使いの製品]</a> ページの順に移動します。
 
 ::: moniker-end
 
@@ -73,22 +73,22 @@ ms.locfileid: "59481038"
 
 4. **[保存]** を選択します。
 
-これでサブスクリプションは **[無効]** 状態で表示され、削除されるまで機能が制限されます。 一般法人向け Microsoft 365 の有料サブスクリプションをキャンセルした場合に予期される動作の詳細については、「[一般法人向け Microsoft 365 のサブスクリプションが終了したとき、データとアクセスはどうなりますか?](what-if-my-subscription-expires.md)」を参照してください。
+これでサブスクリプションは **[無効]** 状態で表示され、削除されるまで機能が制限されます。一般法人向け Microsoft 365 の有料サブスクリプションをキャンセルした場合に予期される動作の詳細については、「[一般法人向け Microsoft 365 のサブスクリプションが終了したとき、データとアクセスはどうなりますか?](what-if-my-subscription-expires.md)」を参照してください。
 
 > [!NOTE]
 > サブスクリプションを明示的に削除すると、期限切れや無効なステージはスキップされ、OneDrive を含む SharePoint Online のデータやコンテンツは直ちに削除されます。
 
 ## <a name="what-happens-when-you-cancel-a-subscription"></a>サブスクリプションをキャンセルした場合
 
-有効期限が終了する前にサブスクリプションをキャンセルすると、サブスクリプションは無効状態に直接移行します。 無効状態は、ほとんどのサブスクリプションおよびほとんどの国と地域で 90 日間です。 サブスクリプションが無効な状態でも、管理者は引き続き組織のデータにアクセスしてバックアップすることができます。ただし、特にお持ちのサブスクリプションが 1 つしかない場合は、サブスクリプションをキャンセルする前に、[データをバックアップする](back-up-data-before-switching-plans.md)ことをお勧めします。 管理者は、サブスクリプションが無効状態の場合でも再度有効にすることもできます。
+有効期限が終了する前にサブスクリプションをキャンセルすると、サブスクリプションは無効状態に直接移行します。無効状態は、ほとんどのサブスクリプションおよびほとんどの国と地域で 90 日間です。サブスクリプションが無効な状態でも、管理者は引き続き組織のデータにアクセスしてバックアップすることができます。ただし、特にお持ちのサブスクリプションが 1 つしかない場合は、サブスクリプションをキャンセルする前に、[データをバックアップする](back-up-data-before-switching-plans.md)ことをお勧めします。管理者は、サブスクリプションが無効状態の場合でも再度有効にすることもできます。
 
 90 日後、サブスクリプションの状態は削除済みになります。 残されたデータは 90 日後に削除され、キャンセル後、180 日以内に削除されます。 削除済みの状態になるまで、キャンセルしたサブスクリプションから支払い方法を削除することはできません。
 
 ### <a name="what-to-expect-for-you-and-your-users-if-you-cancel-a-subscription"></a>サブスクリプションをキャンセルした場合に想定される動作
   
-- **管理者アクセス** 管理者は、サインインして管理センターにアクセスでき、必要に応じて、他のサブスクリプションを購入できます。 全体管理者または課金管理者の場合は、すべてのデータを維持したまま[サブスクリプションを再アクティブ化する](reactivate-your-subscription.md)ことができる期間が 90 日間あります。
+- **管理者アクセス:** 管理者は、サインインして管理センターにアクセスでき、必要に応じて、他のサブスクリプションを購入できます。全体管理者または課金管理者の場合は、すべてのデータを維持したまま [サブスクリプションを再アクティブ化](reactivate-your-subscription.md)できる期間が 90 日間あります。
 
-- **ユーザー アクセス** ユーザーは、OneDrive for Business などのサービスの使用や、顧客データ (チーム サイトのメール、ドキュメントなど) へのアクセスができなくなります。 Word、Excel などの Office アプリケーションは、最終的に読み取り専用の機能制限モードになり、[ライセンスのない製品という通知](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)が表示されます。
+- **ユーザー アクセス** ユーザーは、OneDrive for Business などのサービスの使用や、顧客データ (チーム サイトのメール、ドキュメントなど) へのアクセスができなくなります。Word、Excel などの Office アプリケーションは、最終的に読み取り専用の機能制限モードになり、 [ライセンスのない製品通知](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)が表示されます。
 
 詳細については、「[サブスクリプションが終了したとき、データとアクセスはどうなりますか?](what-if-my-subscription-expires.md)」を参照してください。
 
@@ -99,7 +99,7 @@ ms.locfileid: "59481038"
 
 ### <a name="change-custom-domain-settings"></a>カスタム ドメインの設定を変更する
 
-サブスクリプションでカスタム ドメインを使用している場合、サブスクリプションをキャンセルする前に、いくつかの追加手順を実行する必要があります。 カスタム ドメインがない場合は、先に進んで[データを保存](#save-your-data)します。
+サブスクリプションでカスタム ドメインを使用している場合、サブスクリプションをキャンセルする前に、いくつかの追加手順を実行する必要があります。カスタム ドメインがない場合は、先に進んで[データを保存](#save-your-data)します。
 
 #### <a name="change-your-domain-nameserver-records-if-needed"></a>ドメインのネームサーバー レコードを変更する (必要な場合)
 
@@ -131,7 +131,7 @@ NS レコードを変更する方法については、「[ドメインを削除�
 
 ### <a name="uninstall-office-optional"></a>Office をアンインストールする (省略可能)
 
-サブスクリプションをキャンセルし、Microsoft 365 を含む[別のサブスクリプションにユーザーを移動](move-users-different-subscription.md)しなかった場合、Microsoft 365 は機能制限モードで実行されます。 このような場合、ユーザーはドキュメントの読み取りおよび印刷だけを実行でき、Microsoft 365 アプリケーションで[ライセンスのない製品という通知](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)が表示されます。 混乱を避けるために、ユーザーのコンピューターから [Office をアンインストール](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx)させます。
+サブスクリプションをキャンセルし、Microsoft 365 を含む[別のサブスクリプションにユーザーを移動](move-users-different-subscription.md)しなかった場合、Microsoft 365 は機能制限モードで実行されます。このような場合、ユーザーはドキュメントの読み取りおよび印刷だけを実行でき、Microsoft 365 アプリケーションに[ライセンスのない製品通知](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)が表示されます。混乱を避けるために、ユーザーのコンピューターから [Office をアンインストールする](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx)よう伝えます。
 
 ## <a name="next-steps"></a>次の手順
 

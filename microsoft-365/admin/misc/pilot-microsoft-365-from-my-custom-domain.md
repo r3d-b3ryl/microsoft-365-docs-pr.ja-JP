@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
 - Adm_TOC
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 2つのテストアカウントのみを使用して、カスタムドメインから Microsoft 365 メールボックスに電子メール機能をパイロットする方法について説明します。
-ms.openlocfilehash: 95939aa0ae967ba74861e631d6abfc6ecd50dbaf
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: c428d070d0d4c20034a5a2a6ab94c8896549ea90
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59934013"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176129"
 ---
 # <a name="pilot-microsoft-365-from-my-custom-domain"></a>カスタムドメインから Microsoft 365 をパイロットする
 
@@ -117,11 +117,11 @@ Microsoft 365 では、スパム保護に Exchange Online Protection（EOP） �
 
 Microsoft 365 または Office365 で次の手順が完了したことを確認してください。
 
-1. コネクタを設定するには、開始する前にアクセス許可を割り当てる必要があります。 必要なアクセス許可を確認するには、「[Exchange Online の機能のアクセス許可](/exchange/permissions-exo/feature-permissions)」トピックの「Microsoft 365 および Office 365 コネクタ」の項目を参照してください。
+1. コネクタを設定するには、開始する前にアクセス許可を割り当てる必要があります。必要なアクセス許可を確認するには、「[Exchange Online の機能のアクセス許可](/exchange/permissions-exo/feature-permissions)」トピックの「Microsoft 365 および Office 365 コネクタ」の項目を参照してください。
 
 2. EOP か ExchangeOnline でメール サーバーからインターネットにメールを中継する場合は、次のいずれかの方法を実行します。
 
-   - Microsoft 365 または Office 365 の承認済みドメインと一致するサブジェクト名で構成されている証明書を使用します。 証明書の共通名、またはサブジェクトの別名を組織のプライマリ SMTP ドメインと一致させることをお勧めします。 詳細については、「[オンプレミスのメール環境の前提条件](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#prerequisites-for-your-on-premises-email-environment)」を参照してください。
+   - Microsoft 365 または Office 365 の承認済みドメインと一致するサブジェクト名で構成されている証明書を使用します。証明書の共通名、またはサブジェクトの別名を組織のプライマリ SMTP ドメインと一致させることをお勧めします。詳細については、「[オンプレミスのメール環境の前提条件](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#prerequisites-for-your-on-premises-email-environment)」を参照してください。
 
    または
 
@@ -132,17 +132,17 @@ Microsoft 365 または Office365 で次の手順が完了したことを確認�
 3. Microsoft 365 または Office 365 からメール サーバーへとメールを配信するのに、メール フロー ルール (トランスポート ルールとも呼ばれます) を使用するか、ドメイン名を使用するかを決定します。 ほとんどの企業は、すべての承認済みドメインにメールを配信することを選択します。 詳細については、「[シナリオ: Exchange Online での条件付きメール ルーティング](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/conditional-mail-routing)」を参照してください。
 
 > [!NOTE]
-> 「[Exchange Online でのメール フロー ルールの処理](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)」の説明に従って、メール フロー ルールを設定できます。 たとえば、現在メールが配布リストを介して複数のサイトに送信されている場合は、コネクタ付きのメール フロー ルールを使用できます。
+> 「[Exchange Online でのメール フロー ルールの処理](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)」の説明に従って、メール フロー ルールを設定できます。たとえば、現在メールが配布リストを介して複数のサイトに送信されている場合は、コネクタ付きのメール フロー ルールを使用できます。
 
 ### <a name="2-set-up-a-connector-from-microsoft-365-or-office-365-to-your-email-server"></a>2. Microsoft 365 または Office 365 からメール サーバーへのコネクタを設定します。
 
-Microsoft 365 または Office 365 にコネクタを作成するには、**[管理者]** をクリックし、そして **[Exchange]** をクリックして Exchange 管理センターへ移動します。 次に、**[メール フロー]** をクリックし、**[コネクタ]** をクリックします。
+Microsoft 365 または Office 365 にコネクタを作成するには、**[管理者]** をクリックし、そして **[Exchange]** をクリックして Exchange 管理センターへ移動します。次に、**[メール フロー]** をクリックし、**[コネクタ]** をクリックします。
 
 ウィザードを使用してコネクタを設定します。
 
 ウィザードを起動するには、プラス記号 **+** をクリックします。 最初の画面で、**From** Office 365 および **To** 組織のメール サーバーを選択します。
 
-**[次へ]** をクリックして、ウィザードの指示に従います。 詳細情報については、**[ヘルプ]** または **[詳細情報]** リンクをクリックします。 ウィザードに従って設定を行います。 最後に、コネクタが検証されたことを確認します。 コネクタが検証されない場合は、表示されているメッセージをダブルクリックして詳細を表示させ、問題の解決のために「[コネクタを検証する](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors)」を参照します。
+**[次へ]** をクリックして、ウィザードの指示に従います。詳細な情報が必要な場合は、**[ヘルプ]** または **[詳細情報]** のリンクをクリックします。ウィザードに従って設定を行います。最後に、コネクタが検証されたことを確認します。コネクタが検証されない場合は、表示されているメッセージをダブルクリックして詳細を表示させ、問題の解決のために「[コネクタの検証](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors)」を参照します。
 
 
 
@@ -189,6 +189,6 @@ DNS ホスティングプロバイダーの Web サイトにサインインし�
 
 ### <a name="step-10-move-mailbox-contents"></a>手順 10: メールボックスのコンテンツを移動する
 
-2 名のテストユーザーのみを移動し、ユーザー A とユーザー B の両方が Outlook を使用しているため、新しいOutlookプロファイルで古い .PST ファイルを開き、メッセージ、カレンダーアイテム、連絡先などをコピーすることで、電子メールを移動できます。  詳細については、「[Outlook の .pst ファイルからメール、連絡先、カレンダーをインポートする](https://support.microsoft.com/office/import-email-contacts-and-calendar-from-an-outlook-pst-file-431a8e9a-f99f-4d5f-ae48-ded54b3440ac)」をご覧ください。
+2 名のテストユーザーのみを移動し、ユーザー A とユーザー B の両方が Outlook を使用しているため、新しいOutlookプロファイルで古い .PST ファイルを開き、メッセージ、カレンダーアイテム、連絡先などをコピーすることで、電子メールを移動できます。詳細については、「[Outlook の .pst ファイルからメール、連絡先、カレンダーをインポートする](https://support.microsoft.com/office/import-email-contacts-and-calendar-from-an-outlook-pst-file-431a8e9a-f99f-4d5f-ae48-ded54b3440ac)」をご覧ください。
 
 それらが Microsoft 365 メールボックスの適切な場所にインポートされると、アイテムはどこのどのデバイスからでもアクセスできるようになります。
