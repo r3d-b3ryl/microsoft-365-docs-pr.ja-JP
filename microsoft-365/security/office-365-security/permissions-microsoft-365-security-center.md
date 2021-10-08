@@ -9,7 +9,7 @@ ms.date: ''
 ms.audience: Admin
 ms.topic: article
 audience: Admin
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -19,12 +19,12 @@ description: 管理者は、セキュリティに関連するすべてのタス�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6e5980249d3df0dc94a83b8250f3be55298de5bd
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 629cb9e4ab275d1af6f218df4f6e1b0e60dee201
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59482861"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60180855"
 ---
 # <a name="permissions-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルのアクセス許可
 
@@ -52,7 +52,7 @@ Microsoft 365 Defender ポータルのアクセス許可は、役割ベースの
 
 **役割グループ** は、ユーザーが Microsoft 365 Defender ポータルで仕事を行えるようにする一連の役割です。
 
-Microsoft 365 Defender ポータルには、割り当てる必要がある最も一般的なタスクと機能に対する既定の役割グループが含まれます。 通常、個々のユーザーを既定の役割グループの **メンバー** として追加することをお勧めします。
+Microsoft 365 Defender ポータルには、割り当てる必要がある最も一般的なタスクと機能の既定の役割グループが含まれています。通常では、この既定の役割グループに (個人ユーザーまたはグループを) **メンバー** として追加することをお勧めします。
 
 ![役割グループと、ロールおよびメンバーとの関係を示す図。](../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
 
@@ -83,13 +83,13 @@ Microsoft 365 Defender ポータルの **[アクセス許可と役割]** では�
 |役割|内容|
 |---|---|
 |**全体管理者**|Microsoft 365 サービスのすべての管理機能にアクセスできます。 他の管理者ロールを割り当てることができるのは全体管理者だけです。 詳細については、「[グローバル管理者または会社の管理者](/azure/active-directory/roles/permissions-reference#global-administrator--company-administrator)」を参照してください。|
-|**コンプライアンス データ管理者**|Microsoft 365 全体の組織のデータを追跡し、保護されていることを確認し、あらゆる問題を把握して分析しリスクを軽減する手伝いをします。 詳細については、「[コンプライアンス データ管理者](/azure/active-directory/roles/permissions-reference#compliance-data-administrator)」を参照してください。|
-|**コンプライアンス管理者**|組織が規制要件を遵守し続けること、電子情報開示ケースを管理すること、および Microsoft 365 の使用場所、ID、アプリ全体のデータ ガバナンス ポリシーを維持します。 詳細については、「[コンプライアンス管理者](/azure/active-directory/roles/permissions-reference#compliance-administrator)」を参照してください。|
+|**コンプライアンス データ管理者**|Microsoft 365 全体の組織のデータを追跡し、保護されていることを確認し、あらゆる問題を把握してリスクを軽減することができます。詳細については、「[コンプライアンス データ管理者](/azure/active-directory/roles/permissions-reference#compliance-data-administrator)」を参照してください。|
+|**コンプライアンス管理者**|組織が規制要件を遵守し続けること、電子情報開示ケースを管理すること、および Microsoft 365 の場所、ID、アプリ全体のデータ ガバナンス ポリシーを維持することを支援できます。詳細については、「[コンプライアンス管理者](/azure/active-directory/roles/permissions-reference#compliance-administrator)」を参照してください。|
 |**セキュリティ オペレーター**|このロールを持つユーザーは、Microsoft 365 のユーザー、デバイス、コンテンツに対するアクティブな脅威を表示、調査、および対処します。 詳細については、「[セキュリティ オペレーター](/azure/active-directory/roles/permissions-reference#security-operator)」を参照してください。|
-|**セキュリティ閲覧者**|このロールを持つユーザーは、Microsoft 365 のユーザー、デバイス、コンテンツに対するアクティブな脅威を表示、調査ができますが、セキュリティ オペレーターとは異なり、アクションを実行するアクセス許可はありません。 詳細については、「[セキュリティ 閲覧者](/azure/active-directory/roles/permissions-reference#security-reader)」を参照してください。|
-|**セキュリティ管理者**|このロールを持つユーザーは、セキュリティ ポリシーを管理し、Microsoft 365 製品全体のセキュリティ分析とレポートを確認し、脅威の情勢を十分に把握し迅速に対処して、組織の全体的なセキュリティを制御します。 詳細については、「[セキュリティ 管理者](/azure/active-directory/roles/permissions-reference#security-administrator)」を参照してください。|
+|**セキュリティ閲覧者**|Microsoft 365 のユーザー、デバイス、コンテンツに対するアクティブな脅威を表示と調査ができますが、セキュリティ オペレーターとは異なり、アクションを実行するアクセス許可はありません。詳細については、「[セキュリティ 閲覧者](/azure/active-directory/roles/permissions-reference#security-reader)」を参照してください。|
+|**セキュリティ管理者**|セキュリティ ポリシーを管理し、Microsoft 365 製品全体のセキュリティ分析とレポートを確認し、脅威の情勢を十分に把握し続けることで、組織の全体的なセキュリティを制御できます。詳細については、「[セキュリティ 管理者](/azure/active-directory/roles/permissions-reference#security-administrator)」を参照してください。|
 |**グローバル閲覧者**|読み取り専用バージョンの **グローバル閲覧者** のロール。 Microsoft 365 のすべての設定と管理情報を表示します。 詳細については、「[グローバル閲覧者](/azure/active-directory/roles/permissions-reference#global-reader)」を参照してください。|
-|**攻撃のシミュレーションの管理者**|[攻撃シミュレーション](attack-simulation-training.md)の作成、シミュレーションの開始/スケジューリング、シミュレーション結果の確認のすべての側面を作成および管理します。 詳細については、「[攻撃のシミュレーションの管理者](/azure/active-directory/roles/permissions-reference#attack-simulation-administrator)」を参照してください。|
+|**攻撃のシミュレーションの管理者**|[攻撃シミュレーション](attack-simulation-training.md)の作成、シミュレーションの開始/スケジューリング、シミュレーション結果のレビューのすべての側面を作成および管理します。詳細については、「[攻撃シミュレーション管理者](/azure/active-directory/roles/permissions-reference#attack-simulation-administrator)」を参照してください。|
 |**攻撃のペイロードの作成者**|攻撃のペイロードを作成しますが、実際に起動することやスケジュールすることはしません。 詳細については、「[攻撃のペイロードの作成者](/azure/active-directory/roles/permissions-reference#attack-payload-author)」を参照してください。|
 |
 

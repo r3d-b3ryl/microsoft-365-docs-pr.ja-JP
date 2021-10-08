@@ -12,19 +12,19 @@ ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 - SPO_Content
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
 ms.custom:
 - seo-marvel-apr2020
 description: PowerShell を使用して、Microsoft 365 コンプライアンス センターとは別に、コマンド ラインから保持ラベルを作成および発行する方法について説明します。
-ms.openlocfilehash: 6dc008784d46567bfa76b5bbcf9b3fa6ee8155a1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3f64fc7aede06e512d735908b8f06b7a8cb3e032
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164134"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170897"
 ---
 # <a name="create-and-publish-retention-labels-by-using-powershell"></a>PowerShell を使用して保持ラベルを作成および発行する
 
@@ -32,7 +32,7 @@ ms.locfileid: "59164134"
 
 Microsoft 365 のドキュメントやメールを保持または削除するために[保持ラベル](retention.md)を使用することを決定した後で、非常に多くの、時には数百個もの保持ラベルを作成して発行することが必要であることが判明する場合があります。 大量に保持ラベルを作成する場合、Microsoft 365 コンプライアンス センターから[ファイル プラン](file-plan-manager.md)を使用して保持ラベルを作成することをお勧めします。 ただし、[PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels) も使用できます。
   
-この記事の情報、テンプレート ファイルと例、およびスクリプトを参考にすると、保持ラベルを一括作成し、保持ラベル ポリシーでそれらを発行することができます。 そのようにすると、それらの保持ラベルを[管理者とユーザーが適用する](create-apply-retention-labels.md#how-to-apply-published-retention-labels)ことができるようになります。
+この記事の情報、テンプレート ファイルと例、およびスクリプトを参考にすると、保持ラベルを一括作成し、保持ラベル ポリシーでそれらを発行することができます。そうすると、それらの保持ラベルを[管理者とユーザーが適用](create-apply-retention-labels.md#how-to-apply-published-retention-labels)できるようになります。
 
 説明されている手順では、自動適用される保持ラベルはサポートされません。
 
@@ -54,7 +54,7 @@ Microsoft 365 のドキュメントやメールを保持または削除するた
 
 2. 例を、実際に使用する保持ラベルと設定のエントリに置き換えます。 パラメーター値の詳細については、「[New-ComplianceTag](/powershell/module/exchange/new-compliancetag)」を参照してください。
 
-3. 後の手順で見つけやすい場所に、このワークシートを .csv ファイルとして保存します。 例: C:\>Scripts\Labels.csv
+3. 後の手順で見つけやすい場所に、このワークシートを .csv ファイルとして保存します。例: C:\>Scripts\Labels.csv
 
   
 注:
@@ -81,7 +81,7 @@ LabelName_t_4,Record label tag - financial,$true,Keep,730,CreationAgeInDays,
 
 2. 例を、実際に使用する保持ラベル ポリシーとそれらの設定のエントリに置き換えます。 このコマンドレットのパラメーター値の詳細については、「[New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy)」を参照してください。
 
-3. 後の手順で見つけやすい場所に、このワークシートを .csv ファイルとして保存します。 例: `<path>Policies.csv`
+3. 後の手順で見つけやすい場所に、このワークシートを .csv ファイルとして保存します。例: `<path>Policies.csv`
 
 
 注:
@@ -103,7 +103,7 @@ Publishing Policy Yellow1,"LabelName_t_3, LabelName_t_4",N/A,$false,All,,,,,,,,,
 
 1. 次の PowerShell スクリプトをコピーして、メモ帳に貼り付けます。
 
-2. ファイル名拡張子として **.ps1** を使用して、見つけやすい場所にファイルを保存します。 例: `<path>CreateRetentionSchedule.ps1`
+2. ファイル名拡張子として **.ps1** を使用して、見つけやすい場所にファイルを保存します。例: `<path>CreateRetentionSchedule.ps1`
 
 注:
 
@@ -741,7 +741,7 @@ if ($ResultCSV)
 
 次に、保持ラベルを作成および発行するスクリプトを実行します。
   
-1. セキュリティ/コンプライアンス センターの PowerShell セッションで、パスを入力し、その後ろに文字「`.\`」とスクリプトのファイル名を入力し、Enter キーを押してスクリプトを実行します。 例:
+1. セキュリティ/コンプライアンス センターの PowerShell セッションで、パスを入力し、その後ろに文字 `.\` とスクリプトのファイル名を入力し、Enter キーを押してスクリプトを実行します。例:
     
     ```powershell
     <path>.\CreateRetentionSchedule.ps1

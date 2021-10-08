@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -22,12 +22,12 @@ description: Microsoft 情報保護 (MIP) の秘密度ラベルを使用して�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: fa496e976f0d023960b6d2e633347931b7456ac3
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: cc83349a1c4fda3b95665ce13cb3e82bbf8610b3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401124"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192129"
 ---
 # <a name="learn-about-sensitivity-labels"></a>秘密度ラベルの詳細
 
@@ -59,7 +59,7 @@ Microsoft Information Protection ソリューションの秘密度ラベルを�
 
 - **さまざまなプラットフォームやデバイスで Office アプリのコンテンツを保護する。** Office デスクトップアプリと Office on the web では、Word、Excel、PowerPoint、Outlook でサポートされています。 Windows、macOS、iOS、Android でサポートされています。
 
-- Microsoft Cloud App Security を使用して **サード パーティ製アプリおよびサービスのコンテンツを保護する**。 Cloud App Security を使用すると、サード パーティ製アプリおよびサービス (SalesForce、Box、Dropbox など) のコンテンツを検出、分類、ラベル適用、および保護できます (サード パーティ製のアプリやサービスが機密ラベルを認識しない場合やサポートしない場合でも可能です)。
+- Microsoft Cloud App Security を使用して **サードパーティ製アプリおよびサービスのコンテンツを保護します**。Cloud App Security を使用すると、サードパーティ製アプリおよびサービス (SalesForce、Box、Dropbox など) のコンテンツを検出、分類、ラベル付け、および保護できます。これは、サードパーティ製のアプリやサービスが秘密度ラベルを認識またはサポートしない場合でも可能です。
 
 - Teams、Microsoft 365 グループ、SharePoint サイトを含む **コンテナーを保護します**。 たとえば、プライバシー設定、外部ユーザー アクセスと外部共有、および管理されていないデバイスからのアクセスを設定します。
 
@@ -81,7 +81,7 @@ Microsoft Information Protection ソリューションの秘密度ラベルを�
 
 - **カスタマイズ可能。** 組織やビジネスのニーズに特化していますが、組織内のさまざまなレベルの機密コンテンツに対してカテゴリを作成できます。 たとえば、個人用、公開用、一般、社外秘、極秘などのラベルがあります。
 
-- **クリア テキスト:**  ラベルはファイルやメールのメタデータにクリア テキストとして保存されるため、サードパーティ製のアプリやサービスはラベルを読み取り、必要に応じてそれぞれの保護アクションを適用することができます。
+- **クリア テキスト。** ラベルはファイルやメールのメタデータにクリア テキストとして保存されるため、サードパーティ製のアプリやサービスはラベルを読み取り、必要に応じてそれぞれの保護アクションを適用することができます。
 
 - **永続性。** ラベルがファイルおよびメールのメタデータに保存されているため、ラベルは、保存または格納場所に関係なく、コンテンツと共に移動します。 固有のラベル識別は、構成するポリシーを適用して実施するための基礎となります。
 
@@ -114,7 +114,7 @@ Microsoft Information Protection ソリューションの秘密度ラベルを�
     
     この機能を有効にするまで、グループおよびサイトの保護設定を構成することはできません。 このラベル構成では、ドキュメントやメールに自動的にラベルが付けられることはありませんが、代わりに、ラベル設定は、コンテンツを保存できるコンテナーへのアクセスを制御することによってコンテンツを保護します。 これらの設定には、プライバシー設定、外部ユーザー アクセスと外部共有、および非管理対象デバイスからのアクセスが含まれます。
 
-- **ファイルやメールでラベルを自動的に適用するか、ラベルを推奨します。** ラベルを付ける機密情報を識別する方法を選択すると、ラベルを自動的に適用するか、ユーザーに推奨するラベルを適用するように求めることができます。 ラベルを推奨すると、選択したテキストがプロンプトに表示されます。 次に例を示します。
+- **ファイルやメールでラベルを自動的に適用するか、ラベルを推奨します。** ラベルを付ける機密情報を識別する方法を選択すると、ラベルを自動的に適用するか、ユーザーに推奨するラベルを適用するように求めることができます。ラベルを推奨すると、選択したテキストがプロンプトに表示されます。例:
     
     ![必要なラベルを割り当てるかを確認するダイアログ。](../media/Sensitivity-label-Prompt-for-required-label.png)
     
@@ -144,7 +144,7 @@ Microsoft Information Protection ソリューションの秘密度ラベルを�
 
 ### <a name="label-priority-order-matters"></a>ラベルの優先度 (順序の問題)
 
-秘密度ラベルを管理センターで作成すると、そのラベルは [**ラベル**] ページの [**秘密度**] タブにあるリストに表示されます。 このリストでは、ラベルの順序が重要になります。その理由は、この順序がラベルの優先度を反映しているためです。 最も厳密な機密ラベル (「極秘」など) はリストの **下側** に表示されるようにして、最も厳密でない機密ラベル (「公開」など) はリストの **上側** に表示されるようにします。
+管理センターで秘密度ラベルを作成すると、そのラベルは **[ラベル]** ページの **[秘密度]** タブにリスト表示されます。このリストでは、ラベルの順序が重要になります。その理由は、この順序がラベルの優先度を反映しているからです。最も制限の厳しい秘密度ラベル (「極秘」など) はリストの **末尾** に表示されるようにして、制限の緩い秘密度ラベルはリストの **先頭** に表示されるようにします。
 
 ドキュメント、メール、コンテナーなどのアイテムに適用できる秘密度ラベルは 1 つだけです。 ラベルの分類を低く変更する場合の正当性を示すようユーザーに要求するオプションを選択する場合は、より低い分類はこの一覧の順序によって特定されます。 ただし、このオプションは、親ラベルの優先度を共有するサブラベルには適用されません。
 
@@ -178,7 +178,7 @@ Microsoft Information Protection ソリューションの秘密度ラベルを�
 
 ラベル ポリシーを構成すると、次のことができます。
 
-- **ラベルを表示させるユーザーとグループを選択する。** Azure AD の特定のユーザーまたは電子メールが有効なセキュリティ グループ、配布グループ、または Microsoft 365 グループ ([動的メンバーシップ](/azure/active-directory/users-groups-roles/groups-create-rule)を使用できる) にラベルを発行することができます。
+- **ラベルを表示させるユーザーとグループを選択する。** Azure AD の特定のユーザーまたは電子メールが有効なセキュリティ グループ、配布グループ、または Microsoft 365 グループ ([ダイナミック メンバーシップ](/azure/active-directory/users-groups-roles/groups-create-rule)を使用できる) にラベルを発行することができます。
 
 - ラベル付けされていないドキュメントとメール、新しいコンテナー ([Microsoft Teams、Microsoft 365 グループおよび SharePoint サイトの秘密度ラベルを有効](sensitivity-labels-teams-groups-sites.md)にした場合)、の **既定のラベルを指定します**。また、[Power BI コンテンツ](/power-bi/admin/service-security-sensitivity-label-default-label-policy)に既定のラベルをしてします。 4 種類のアイテムすべてに同じラベルを指定することも、異なるラベルを指定することもできます。 ユーザーは、適用された既定の秘密度ラベルを、コンテンツまたはコンテナーの秘密度に合わせて変更できます。
     
@@ -256,7 +256,7 @@ Azure Information Protection の初心者、またはラベルを最近移行し
 ### <a name="azure-information-protection-labels"></a>Azure Information Protection のラベル
 
 > [!NOTE]
-> Azure ポータルでの Azure Information Protection ラベルのラベル管理は、**2021 年 3 月 31 日** に廃止されます。 詳細については、公式の「[廃止のお知らせ](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179)」を参照してください。
+> Azure Portal での Azure Information Protection ラベルのラベル管理は、**2021 年 3 月 31 日** に廃止されます。詳細については、公式の「[非推奨通知](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179)」を参照してください。
 
 テナントがまだ[統合ラベル付けプラットフォーム](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)を使用していない場合は、機密ラベルを使用する前に、まず統合ラベルを有効化する必要があります。 手順については、、「[Azure Information Protection ラベルを統合秘密度ラベルに移行する方法](/azure/information-protection/configure-policy-migrate-labels)」を参照してください。 
 

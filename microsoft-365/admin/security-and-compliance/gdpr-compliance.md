@@ -8,22 +8,23 @@ manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
 description: 一般データ保護規則 (GDPR) プロセスで 一般法人向け Microsoft 365 がどのように役立つかについて説明します。
-ms.openlocfilehash: a32c31f0acd072d7c30eb7639b7f700a7f06048a
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 50ee497d57438994a4a5f839ff5a2afb103cd59b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776286"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174029"
 ---
 # <a name="gdpr-simplified-a-guide-for-your-small-business"></a>GDPR の簡略化: 小規模ビジネス向けのガイド
 
@@ -125,7 +126,7 @@ GDPR によりデータ主体の権利が確立されます。つまり、個人
 IT システムに個人データを保存する場合は、強力なパスワードなどで、データを含むファイルへのアクセスを制限します。システムのセキュリティ設定を定期的に更新します。
 
 > [!NOTE]
-> GDPR には、特定の IT システムの使用に関する規定はありませんが、システムに適切なレベルのセキュリティがあることを要求しています。 詳細については [GDRP 第 32 条: 処理のセキュリティ](https://gdpr.eu/article-32-security-of-processing/) を参照してください。
+> GDPR には、特定の IT システムの使用に関する規定はありませんが、システムに適切なレベルのセキュリティがあることを要求しています。詳細については [GDRP 第 32 条: 処理のセキュリティ](https://gdpr.eu/article-32-security-of-processing/) を参照してください。
 
 個人データを含む物理的なドキュメントを保存する場合は、権限のない者がアクセスできないようにしてください。
 
@@ -165,7 +166,7 @@ GDPR に関するマイクロソフトの契約上のコミットメントは、
  
 個人情報をより適切に保護するために、組織は <b>データ保護責任者r (DPO)</b>を任命する必要がある場合があります。 ただし、個人データの処理がビジネスの中核的な部分ではない場合や、小規模ビジネスの場合は、データ保護責任者を指定する必要がない場合があります。 たとえば、お客様の顧客に関するデータのみを自宅配送用に収集する場合は、DPO を指定する必要はありません。 DPO を利用する必要がある場合でも、これらの職務は、他のタスクに加えて既存の従業員に割り当てることができます。 または、必要に応じて、この職務のために外部コンサルタントを採用することもできます。
 
-通常、[データ保護影響評価](https://gdpr.eu/article-35-impact-assessment/)を実行する必要はありません。 これは、個人情報により多大なリスクをもたらし得る企業などに限定されたものです (たとえば、ビデオ監視などの公共のアクセス可能なエリアを大規模に監視する場合)。
+通常、[データ保護影響評価](https://gdpr.eu/article-35-impact-assessment/)を実行する必要はありません。これは、個人情報により多大なリスクをもたらし得る企業などに限定されたものです (たとえば、ビデオ監視などの公共のアクセス可能なエリアを大規模に監視する場合)。
 
 従業員の従業の給与や顧客のリストを管理しているだけの小規模企業では、通常、データ保護影響評価を行う必要はありません。  
  

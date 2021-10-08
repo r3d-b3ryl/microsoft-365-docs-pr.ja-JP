@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
 - Adm_TOC
@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 for Business サブスクリプションのオンラインまたは電話によるサポートを受ける方法を説明します。 これらのサポート方法を使用するには、一般法人向けサブスクリプションの管理者である必要があります。
-ms.openlocfilehash: e224b5a6224dc182d36a99f0b7943a586c64b08a
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: 965038e883378aa754a5a4b3957644340feaca8b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988609"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179729"
 ---
 # <a name="get-support"></a>サポートを受ける
 
@@ -48,9 +48,9 @@ ms.locfileid: "59988609"
 
 オンラインでのお問い合わせを開始すると、時間が節約されます。ここでは、解決策の検索やテクニカル サポートへの連絡をお手伝いします。
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">https://admin.microsoft.com</a> から管理センターにアクセスします。 このページへのアクセスまたはこのアクションの実行が許可されていないというメッセージが表示される場合、ユーザーは管理者ではありません。詳細については、「[社内の管理者アカウントをお持ちの場合](admin-center-overview.md#who-has-admin-permissions-in-my-business)」を参照してください。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">https://admin.microsoft.com</a> で管理センターにアクセスします。このページへのアクセスまたはこのアクションの実行が許可されていないというメッセージが表示される場合、ユーザーは管理者ではありません。詳細については、「[社内の管理者アカウントをお持ちの場合](admin-center-overview.md#who-has-admin-permissions-in-my-business)」を参照してください。
 2. ページの右下で、**[ヘルプとサポート]** を選択します。
-3. テキスト ボックスに質問またはキーワードを入力します。 ドロップダウン リストが表示された場合は、質問に最も近いものを選択するか、質問の入力を続けてから、**Enter** キーを押します。
+3. テキスト ボックスに質問またはキーワードを入力します。ドロップダウン リストが表示された場合は、質問に最も近いものを選択するか、質問の入力を続けてから、**Enter** キーを押します。
 4. 結果に問題が生じなかった場合は、下部にある **[サポートに問い合わせ]** を選択します。
 5. 問題の説明を入力し、自分の連絡先番号とメール アドレスを確認し、希望する連絡方法を選択し、[**連絡を希望する**] を選択します。 予想される待機時間は、**[連絡先]** サポート ウィンドウに表示されます。
 
@@ -82,7 +82,7 @@ ms.locfileid: "59988609"
 
 小規模ビジネスの専門家からの専門的なアドバイスを受け、サブスクリプションを最大限に活用できます。
 
-Microsoft 365 のビジネスサポートでは、小規模ビジネス向けに設計されており、オンボーディングから日常の使用まで、ビジネスの成長に合わせて、小規模ビジネスのスペシャリストに 24 時間アクセスできます。 詳細については、「[ビジネスサポート](../admin/misc/business-assist.md)」を参照してください。
+Microsoft 365 のビジネスサポートでは、小規模ビジネス向けに設計されており、オンボーディングから日常の使用まで、ビジネスの成長に合わせて、小規模ビジネスのスペシャリストに 24 時間アクセスできます。詳細については、「[Business Assist](../admin/misc/business-assist.md)」を参照してください。
 
 ::: moniker-end
 
@@ -164,7 +164,7 @@ Microsoft 365 のビジネスサポートでは、小規模ビジネス向けに
 
 ### <a name="open-an-online-request"></a>オンライン リクエストの登録
 
-オンラインでのお問い合わせを開始すると、時間が節約されます。 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>に移動し、**[サポート]** \> **[新しいサービス リクエスト]** の順に選択します。
+サービス リクエストをオンラインで開始すると時間を節約できます。<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>に移動し、**[サポート]** \> **[新しいサービス リクエスト]** を選択してください。
 
 ### <a name="call-support"></a>電話でのお問い合わせ
 
@@ -232,7 +232,7 @@ Office 365 Germany の管理者は、知識の豊富なサポート担当者に�
 
 支援付きサポート オプションでは、Office 365 Germany サブスクリプションを利用している組織の管理者向けに限定されています。Office 365 Germany を職場または学校で使用していても管理者でない場合には、コミュニティ フォーラムでサポートを受けるか、管理者または IT 部門へ問い合わせることができます。
 
-- **オンライン リクエストの登録** オンラインでのお問い合わせを開始すると、時間が節約されます。 管理センターで、[**サポート**] \> [**新しいサービス リクエスト**] の順に選択します。 電話またはメールで、解決方法の検索、または専門家への連絡をお手伝いします。
+- **オンライン リクエストを登録します。** サービス リクエストをオンラインで開始して時間を節約します。管理センターで、**[サポート]** \> **[新しいサービス リクエスト] を選択します。** ソリューションの検索をお手伝い、またはエキスパートから電子メールまたは電話で連絡するよう手配いたします。
 
 - **サポートに電話します。** 担当者が電話で話しますので、管理者がサポートに連絡する際はアカウントの詳細を手元に準備してください。
 

@@ -18,16 +18,16 @@ ms.collection:
 ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
-localization_priority: Priority
+ms.localizationpriority: high
 description: 管理者は、Exchange Online Protection (EOP) で利用できるスプーフィング対策機能について学ぶことができます。この機能を使用すると、なりすましの送信者とドメインからのフィッシング攻撃を軽減できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1d9980240f0c45eb708a668dfea028ce5259fcab
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d0ea3c4a9749219060de10bdc988d8a2ba8cf02c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189141"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196635"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>EOP のスプーフィング対策保護
 
@@ -50,7 +50,7 @@ EOP では、次のスプーフィング対策テクノロジを使用できま�
 
   ![EOP のスプーフィング対策チェック。](../../media/eop-anti-spoofing-protection.png)
 
-- **スプーフィング インテリジェンス分析**: 7 日間で内部および外部ドメインの送信者からのスプーフィングされたメッセージを確認し、その送信者を許可またはブロックします。 詳細については、「[EOP でのスプーフィング インテリジェンス分析](learn-about-spoof-intelligence.md)」を参照してください。
+- **スプーフィング インテリジェンス分析情報**: 7 日間で内部および外部ドメインの送信者からのスプーフィングされたメッセージを確認し、その送信者を許可またはブロックします。詳細については、「[EOP のスプーフィング インテリジェンス分析情報](learn-about-spoof-intelligence.md)」を参照してください。
 
 - **テナント許可/ブロック リストでなりすましされた送信者を許可またはブロックする**: スプーフィング インテリジェンス分析の判定を上書きすると、なりすましされた送信者は、手動で許可またはブロックするエントリとなり、「テナント許可/ブロックリスト」の **[なりすまし]** タブにのみ表示されます。 また、スプーフィング インテリジェンスで検出される前に、手動でなりすまし送信者の許可またはブロック エントリを作成することもできます。 詳細については、「[EOP でテナント許可/ブロック リストを管理する](tenant-allow-block-list.md)」を参照してください。
 
@@ -65,7 +65,7 @@ EOP では、次のスプーフィング対策テクノロジを使用できま�
 
 - **スプーフィング検出レポート**: 詳細については、「[スプーフィング検出レポート](view-email-security-reports.md#spoof-detections-report)」を参照してください。
 
-  **注**: Microsoft Defender for Office 365 の組織は、「リアルタイム検出」(プラン 1) または「Threat Explorer」(プラン 2) を使用して、フィッシングの試行に関する情報を表示することもできます。 詳細については、「[Microsoft 365 脅威の調査と対応](office-365-ti.md)」をご覧ください。
+  **注**: Microsoft Defender for Office 365 の組織は、リアルタイム検出 (プラン 1) または Threat Explorer (プラン 2) を使用して、フィッシングの試行に関する情報を表示することもできます。詳細については、「[Microsoft 365 の脅威の調査と対応](office-365-ti.md)」を参照してください。
 
 ## <a name="how-spoofing-is-used-in-phishing-attacks"></a>フィッシング攻撃でスプーフィングが使用される方法
 
@@ -97,7 +97,7 @@ EOP では、次のスプーフィング対策テクノロジを使用できま�
 
 Microsoft では、2 種類のスプーフィングされたメッセージを区別しています。
 
-- **組織内スプーフィング**: _自己完結型_ スプーフィングとも呼ばれます。 以下に例を示します。
+- **組織内スプーフィング**: _自己完結型_ スプーフィングとも呼ばれます。例:
 
   - 送信者と受信者は同じドメインにあります。
     > From: chris@contoso.com <br> To: michelle@contoso.com
@@ -120,7 +120,7 @@ Microsoft では、2 種類のスプーフィングされたメッセージを�
 
   - SFTY はメッセージの安全レベルです。 9 はフィッシング詐欺、11 は組織内スプーフィングを示します。
 
-- **クロスドメイン スプーフィング**: 送信者ドメインと受信者ドメインは異なり、互いに関係がありません (外部ドメインとも呼ばれます)。 以下に例を示します。
+- **クロスドメイン スプーフィング**: 送信者ドメインと受信者ドメインは異なり、互いに関係がありません (外部ドメインとも呼ばれます)。例
     > From: chris@contoso.com <br> To: michelle@tailspintoys.com
 
   クロスドメイン スプーフィングのために[複合認証](email-validation-and-authentication.md#composite-authentication)に失敗したメッセージには、次のヘッダー値が含まれます。
@@ -134,7 +134,7 @@ Microsoft では、2 種類のスプーフィングされたメッセージを�
   - `SFTY` はメッセージの安全レベルです。 9 はフィッシング詐欺、22 はクロスドメイン スプーフィングを示します。
 
 > [!NOTE]
-> ***compauth=fail reason=###** _ のようなメッセージが表示され、複合認証 (compauth) とスプーフィングに関する値について知る必要がある場合、[_Microsoft 365 のスパム対策メッセージ ヘッダー*](anti-spam-message-headers.md) をご確認ください。 または、 [*reason*](anti-spam-message-headers.md) コードに直接移動します。
+> ***compauth=fail reason=###** _ のようなメッセージが表示され、複合認証 (compauth) とスプーフィングに関する値について知る必要がある場合、「[_Microsoft 365 のスパム対策メッセージ ヘッダー*](anti-spam-message-headers.md)」 をご確認ください。または、[*理由*](anti-spam-message-headers.md)コードに直接移動します。
 
 DMARC の詳細については、「[DMARC を使用して Microsoft 365 でメールを検証する](use-dmarc-to-validate-email.md)」を参照してください。
 
@@ -144,11 +144,11 @@ DMARC の詳細については、「[DMARC を使用して Microsoft 365 でメ�
 
 たとえば、Gabriela Laureano (glaureano @ contoso.com) はバード ウォッチングに興味があり、メーリングリスト birdwatchers @ fabrikam.com に参加し、リストに次のメッセージを送信します。
 
-> **差出人:** "Gabriela Laureano" \<glaureano@contoso.com\> <br> **宛先:** Birdwatcher のディスカッション リスト\<birdwatchers@fabrikam.com\> <br> **件名:** 今週、レーニア山からアオカケス を見ることができます <p> 今週のレーニア山からの風景を眺めてみませんか?
+> **差出人:** "Gabriela Laureano" \<glaureano@contoso.com\> <br> **宛先:** Birdwatcher のディスカッション リスト\<birdwatchers@fabrikam.com\> <br> **Subject:** 今週レーニア山頂から望むアオカケスの美しい風景<p> 今週のレーニア山からの風景を眺めてみませんか?
 
 メーリングリスト サーバーはメッセージを受信し、その内容を変更して、リストのメンバーにリプレイします。 リプレイされたメッセージの From アドレス (glaureano @ contoso.com) は同じですが、件名行にタグを追加して、メッセージの下側にフッターを追加します。 この種の変更は、メーリング リストでは一般的なものですが、スプーフィングの誤検出の原因になることがあります。
 
-> **差出人:** "Gabriela Laureano" \<glaureano@contoso.com\> <br> **宛先:** Birdwatcher のディスカッション リスト\<birdwatchers@fabrikam.com\> <br> **件名:** [BIRDWATCHERS] 今週、レーニア山からアオカケス を見ることができます <p> 今週のレーニア山からの風景を眺めてみませんか? <p> このメッセージは、Birdwatchers ディスカッション リストに送信されました。 いつでも購読を解除できます。
+> **差出人:** "Gabriela Laureano" \<glaureano@contoso.com\> <br> **宛先:** Birdwatcher のディスカッション リスト\<birdwatchers@fabrikam.com\> <br> **Subject:** [BIRDWATCHERS] 今週レーニア山頂から望むアオカケスの美しい風景<p> 今週のレーニア山からの風景を眺めてみませんか? <p> このメッセージは、Birdwatchers ディスカッション リストに送信されました。 いつでも購読を解除できます。
 
 メーリング リストのメッセージがスプーフィング対策チェックにパスできるようにするには、メーリングリストを制御するかどうかに応じて、次の手順を実行します。
 
@@ -178,6 +178,6 @@ DMARC の詳細については、「[DMARC を使用して Microsoft 365 でメ�
 
 現在、Microsoft 365 にメッセージを送信している管理者である場合は、メールが正しく認証されていることを確認する必要があります。 それ以外の場合は、スパムまたはフィッシング詐欺としてマークされる可能性があります。 詳細については、「[認証されていないメールを送信している正当な送信者のためのソリューション](email-validation-and-authentication.md#solutions-for-legitimate-senders-who-are-sending-unauthenticated-email)」をご覧ください。
 
-個人ユーザー (または管理者) の [信頼できる差出人のリスト] に含まれる送信者は、スプーフィング保護を含む、フィルター処理スタックの一部をバイパスします。 詳細については、「[Outlook の信頼できる差出人](create-safe-sender-lists-in-office-365.md#use-outlook-safe-senders)」を参照してください。
+個人ユーザー (または管理者) の [信頼できる差出人のリスト] に含まれる送信者は、スプーフィング保護を含む、フィルター処理スタックの一部をバイパスします。詳細については、「[Outlook の信頼できる差出人](create-safe-sender-lists-in-office-365.md#use-outlook-safe-senders)」を参照してください。
 
 管理者は、可能な場合、許可された送信者リストまたは許可されたドメイン リストを使用して回避する必要があります。 これらの送信者は、迷惑メール、スプーフィング、およびフィッシング詐欺保護をすべてバイパスします。また、送信者認証 (SPF、DKIM、DMARC) も使用できません。 詳細については、「[許可された送信者リストまたは許可されたドメイン リストを使用する](create-safe-sender-lists-in-office-365.md#use-allowed-sender-lists-or-allowed-domain-lists)」を参照してください。

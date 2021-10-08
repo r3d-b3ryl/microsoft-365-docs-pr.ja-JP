@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -21,12 +21,12 @@ description: Microsoft 365 コンプライアンス センターを使用して�
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 08f3089433769960d7765ce5dfd096a971de0640
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: b50e320752f64360132410c50f454fbfbfd27a82
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483761"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195619"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>コンプライアンス センターで監査ログを検索する
 
@@ -43,14 +43,14 @@ ms.locfileid: "59483761"
 | コミュニケーション コンプライアンス|ComplianceSuperVisionExchange|
 | コンテンツ エクスプローラー|LabelContentExplorer|
 | データ損失防止 (DLP)|ComplianceDLPSharePoint、ComplianceDLPExchange|
-| Defender for Endpoint|DLPEndpoint|
+| Defender for Endpoint|DLPEndpoint、MSDEResponseActions、MSDEGeneralSettings、MSDEIndicatorsSettings、MSDERolesSettings|
 | Dynamics 365|CRM|
 | 電子情報開示|検出、AeD|
 | 完全に一致するデータ|MipExactDataMatch|
 | Exchange Online|ExchangeAdmin、ExchangeItem、ExchangeItemAggregated |
 | フォーム|MicrosoftForms|
 | 情報バリア|InformationBarrierPolicyApplication|
-| Microsoft 365 Defender|MDATPAudit、AirInvestigation、AirManualInvestigation、AirAdminActionInvestigation|
+| Microsoft 365 Defender|AirInvestigation、AirManualInvestigation、AirAdminActionInvestigation、MS365DCustomDetection|
 | Microsoft Teams|MicrosoftTeams|
 | MyAnalytics|MyAnalyticsSettings|
 | OneDrive for Business|OneDrive|
@@ -154,7 +154,7 @@ ms.locfileid: "59483761"
 
 - Azure Active Directory (Azure AD) は、Microsoft 365 のディレクトリ サービスです。 統合監査ログには、<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>または Azure 管理ポータルで実行されたユーザー、グループ、アプリケーション、ドメイン、およびディレクトリのアクティビティが記録されます。 Azure AD のイベントの全リストについては、「[Azure Active Directory 監査レポートのイベント](/azure/active-directory/reports-monitoring/concept-audit-logs)」を参照してください。
 
-- Power BI の監査ログは、既定では有効になっていません。 監査ログ内の Power BI アクティビティを検索するには、Power BI 管理ポータルで監査を有効にする必要があります。 手順については、[Power BI 管理ポータル](/power-bi/service-admin-portal#audit-logs)の「監査ログ」セクションをご覧ください。
+- Power BI の監査ログは、既定で有効になりません。監査ログで Power BI アクティビティを検索するには、Power BI 管理ポータルで監査を有効にする必要があります。手順については、[Power BI 管理ポータル](/power-bi/service-admin-portal#audit-logs)の [監査ログ] セクションを参照してください。
 
 ## <a name="search-the-audit-log"></a>監査ログの検索
 
@@ -180,7 +180,7 @@ ms.locfileid: "59483761"
     ![検索条件を設定し、[検索] をクリックしてレポートを実行する。](../media/AuditLogSearchPage1.png)
 
     > [!NOTE]
-    > [**ユーザーと管理者のアクティビティの記録を開始する**] リンクが表示される場合は、クリックして監査を有効にします。 このリンクが表示されない場合、組織の監査機能は有効です。
+    > **[ユーザーと管理者のアクティビティの記録を開始する]** リンクが表示される場合は、クリックして監査を有効にします。このリンクが表示されない場合、組織の監査機能は有効です。
 
 3. **[検索]** タブで、次の検索条件を設定します。
 
@@ -215,7 +215,7 @@ ms.locfileid: "59483761"
 
 - Exchange 管理者監査ログのイベントを表示するには、[**アクティビティ**] リストの [**すべてのアクティビティの結果を表示**] を選択する必要があります。 この監査ログのイベントには、結果の [**アクティビティ**] 列にコマンドレット名 (**Set-Mailbox** など) が表示されます。 詳細については、 このトピックの [**監査されるアクティビティ**] タブをクリックし、[**Exchange 管理者アクティビティ**] をクリックします。
 
-  同様に、[**アクティビティ**] 一覧に対応する項目がない一部の監査アクティビティがあります。 これらのアクティビティ向けの操作の名前がわかっている場合は、すべてのアクティビティを検索し、検索結果を CSV ファイルにエクスポートしてから操作をフィルター処理します。
+  同様に、**[アクティビティ]** のリストに対応する項目がない監査アクティビティがいくつかあります。これらのアクティビティの操作の名前がわかっている場合は、すべてのアクティビティを検索し、検索結果を CSV ファイルにエクスポートした後に操作をフィルター処理できます。
 
 - 現在の検索条件をクリアするには、[**クリア**] をクリックします。日付の範囲は、既定の過去 7 日間に戻ります。[**すべてをクリアしてすべてのアクティビティの結果を表示する**] をクリックして、選択したすべてのアクティビティを取り消すこともできます。
 
@@ -240,7 +240,7 @@ ms.locfileid: "59483761"
 
 - **項目**: 対応するアクティビティの結果として作成または変更されたオブジェクト。たとえば、表示または変更されたファイルや、更新されたユーザー アカウントなど。すべてのアクティビティについて、この列の値が表示されるとは限りません。
 
-- [**詳細**]: アクティビティに関する追加の詳細。 ここでも、すべてのアクティビティに値があるとは限りません。
+- **詳細**: アクティビティに関する追加情報。この列の値も、すべてのアクティビティについて表示されるとは限りません。
 
 > [!TIP]
 > 検索結果を並べ替えるには、[**結果**] の列見出しをクリックします。検索結果を昇順または降順で並べ替えることができます。検索結果を日付の古い順または新しい順に並べ替える場合は、[**日付**] ヘッダーをクリックします。
@@ -809,11 +809,11 @@ FilePreviewed イベントと FileAccessed イベントの両方が、ユーザ�
 
 監査ログで Power BI のアクティビティを検索できます。 Power BI アクティビティについては、「[組織内での監査の使用](/power-bi/service-admin-auditing#activities-audited-by-power-bi)」の「Power BI の監査対象アクティビティ」セクションを参照してください。
 
-Power BI の監査ログは、既定では有効になっていません。 監査ログ内の Power BI アクティビティを検索するには、Power BI 管理ポータルで監査を有効にする必要があります。 手順については、[Power BI 管理ポータル](/power-bi/service-admin-portal#audit-logs)の「監査ログ」セクションをご覧ください。
+Power BI の監査ログは、既定で有効になりません。監査ログで Power BI アクティビティを検索するには、Power BI 管理ポータルで監査を有効にする必要があります。手順については、[Power BI 管理ポータル](/power-bi/service-admin-portal#audit-logs)の [監査ログ] セクションを参照してください。
 
 ### <a name="workplace-analytics-activities"></a>Workplace Analytics アクティビティ
 
-Workplace Analytics は、グループが組織全体でどのように共同作業するかに関する分析情報を提供します。 次の表に、Workplace Analytics で管理者の役割またはアナリストの役割が割り当てられているユーザーが実行するアクティビティを示します。 アナリストの役割が割り当てられたユーザーは、すべてのサービス機能に完全なアクセス権を持ち、製品を使用して分析を行います。 管理者の役割を割り当てられたユーザーは、プライバシー設定とシステム既定を構成でき、Workplace Analytics で組織データを準備、アップロード、および検証できます。 詳細については、「[Workplace Analytics](/workplace-analytics/index-orig)」を参照してください。
+Workplace Analytics では、組織において各グループが共同作業を行う方法に関する洞察が得られます。次の表に、Microsoft Workplace Analytics での管理者役割とアナリスト役割を割り当てられたユーザーによって実行されるアクティビティを一覧表示しています。アナリスト役割を割り当てられたユーザーはすべてのサービス機能への完全なアクセス権を持ち、この製品を使用して分析を行うことができます。管理者役割を割り当てられたユーザーはプライバシーの設定とシステムの既定値を構成し、Workplace Analytics で組織データを準備、アップロード、検証することができます。詳細は、「[Workplace Analytics](/workplace-analytics/index-orig)」を参照してください。
 
 |フレンドリ名|操作​​|説明|
 |:-----|:-----|:-----|
@@ -891,7 +891,7 @@ Power Apps では、アプリ関連のアクティビティの監査ログを検
 
 ### <a name="microsoft-stream-activities"></a>Microsoft Stream アクティビティ
 
-監査ログで Microsoft Stream のアクティビティを検索できます。 これらのアクティビティには、ユーザーが実行するビデオ アクティビティ、グループ チャネル アクティビティ、管理アクティビティ (ユーザーの管理、組織の設定の管理、レポートのエクスポートなど) が含まれます。 これらのアクティビティの詳細については、「[Microsoft Stream の監査ログ](/stream/audit-logs#actions-logged-in-stream)」の「Stream に記録されたアクション」を参照してください。
+監査ログで Microsoft Stream 内のアクティビティを検索できます。これらのアクティビティには、ユーザーによって実行される動画関連アクティビティ、グループ チャネル アクティビティ、管理アクティビティ (ユーザーの管理、組織設定の管理、レポートのエクスポートなど) が含まれます。これらのアクティビティについては、「[Microsoft Stream の監査ログ](/stream/audit-logs#actions-logged-in-stream)」の「Stream に記録されるアクション」セクションを参照してください。
 
 ### <a name="content-explorer-activities"></a>コンテンツ エクスプローラー アクティビティ
 
@@ -1051,7 +1051,7 @@ Microsoft 365 監査ログに記録される情報バリアのアクティビテ
 
 ### <a name="disposition-review-activities"></a>処理確認アクティビティ
 
-次の表では、アイテムが構成済みの保持期間が終了した場合に処理レビュー担当者が行ったアクティビティを一覧表示しています。 詳細については、「[コンテンツの表示と処理](disposition.md#viewing-and-disposing-of-content)」を参照してください。
+次の表では、アイテムが構成済みの保持期間が終了した場合に処理レビュー担当者が行ったアクティビティを一覧表示しています。詳細については、「[コンテンツの表示と処理](disposition.md#viewing-and-disposing-of-content)」を参照してください。
 
 |**フレンドリ名**|**操作名**|**説明**|
 |:-----|:-----|:-----|
@@ -1111,7 +1111,7 @@ Exchange Online、SharePoint Online、OneDrive for Business、Azure Active Direc
 
 **イベント発生後、監査レコードが使用できるようになるまでどのくらいの時間がかかりますか?**
 
-ほとんどの監査データは 30 分以内に利用可能になりますが、イベントが発生してから対応する監査ログ エントリが検索結果に表示されるまでに最大 24 時間かかる場合があります。 この記事の「[監査ログを検索する前に](#before-you-search-the-audit-log)」セクションの表に、さまざまなサービスのイベントが利用可能になるまでの時間を示します。
+ほとんどの監査データは 30 分以内に利用可能になりますが、イベントが発生してから対応する監査ログ エントリが検索結果に表示されるまでに最大 24 時間かかる場合があります。この記事の「[監査ログを検索する前に](#before-you-search-the-audit-log)」セクションの表に、さまざまなサービスのイベントが利用可能になるまでの時間を示します。
 
 **監査レコードの保持期間はどのくらいですか?**
 

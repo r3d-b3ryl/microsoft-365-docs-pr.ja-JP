@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: PowerShell スクリプトを使用して、Exchange Online で Search-UnifiedAuditLog コマンドレットを実行し、監査ログを検索します。 このスクリプトは、大規模なセット (最大 50,000 件) の監査レコードを返すように最適化されています。 これらのレコードはスクリプトによって CSV ファイルにエクスポートされ、ユーザーは Excel の Power Query を使用して表示および変換することができます。
-ms.openlocfilehash: 8abea51bb1e7e1fa7bd513bea78708b06da62def
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7f54924cf0f90b976c52c8ee7c53e151f50111b0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164183"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173549"
 ---
 # <a name="use-a-powershell-script-to-search-the-audit-log"></a>PowerShell スクリプトを使用して監査ログを検索する
 
@@ -48,7 +48,7 @@ ms.locfileid: "59164183"
 
   **UnifiedAuditLogIngestionEnabled** プロパティの値 `True`は、監査ログ検索が有効になっていることを示します。
 
-- スクリプトを正常に実行するには、Exchange Online で閲覧限定の監査ログまたは監査ログの役割が割り当てられている必要があります。 既定では、これらの役割は Exchange 管理センターの [アクセス許可] ページでコンプライアンス管理役割グループまたは組織管理役割グループに割り当てられています。 詳細については、「[コンプライアンス センターで監査ログを検索する](search-the-audit-log-in-security-and-compliance.md#before-you-search-the-audit-log)」の「監査ログを検索するための要件」セクションを参照してください。
+- スクリプトを正常に実行するには、Exchange Online で監査ログの役割、または監査ログ表示専用の役割を与えられている必要があります。既定で、これらの役割は Exchange 管理センターの [アクセス許可] ページで「コンプライアンス管理」および「組織の管理」役割グループに割り当てられます。詳細については、「[コンプライアンス センターで監査ログを検索する](search-the-audit-log-in-security-and-compliance.md#before-you-search-the-audit-log)」の「監査ログを検索するための要件」セクションを参照してください。
 
 - スクリプトが完了するまでに長い時間がかかる場合があります。 実行にかかる時間は、スクリプトで監査レコードを取得するために構成する日付範囲と間隔のサイズによって異なります。 日付範囲を大きくして間隔を短くすると、実行時間が長くなります。 日付範囲と間隔の詳細については、手順 2 の表を参照してください。
 
@@ -165,7 +165,7 @@ Exchange Online PowerShell に接続した後、次の手順は、スクリプ�
    .\SearchAuditLog.ps1
    ```
 
-スクリプトの実行中は、進行状況メッセージが表示されます。 スクリプトの実行が終了すると、監査レコードを含むログ ファイルと CSV ファイルが作成され、`$logFile` 変数と `$outputFile` 変数で定義されたフォルダーに保存されます。
+スクリプトの実行中は、進行状況メッセージが表示されます。スクリプトの実行が終了すると、監査レコードを含むログ ファイルと CSV ファイルが作成され、`$logFile` 変数と `$outputFile` 変数で定義されたフォルダーに保存されます。
 
 > [!IMPORTANT]
 > このスクリプトを実行するたびに返される監査レコードの最大数には、50,000 の制限があります。 このスクリプトを実行して 50,000 件の結果が返される場合は、日付範囲内に発生したアクティビティの監査レコードが含まれていない可能性があります。 その場合は、日付範囲をより短い期間に分割してから、日付範囲ごとにスクリプトを再実行することをお勧めします。 たとえば、90 日間の日付範囲で 50,000 件の結果が返される場合、スクリプトを 2 回再実行できます。1 回目は日付範囲の最初の 45 日間、2 回目は残りの 45 日間です。
