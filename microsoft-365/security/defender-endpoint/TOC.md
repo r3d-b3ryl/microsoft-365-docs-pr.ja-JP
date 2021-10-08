@@ -31,32 +31,46 @@
 #### [展開リング](deployment-rings.md)
 #### [Microsoft Endpoint Configuration Manager を使用したオンボーディング](onboarding-endpoint-configuration-manager.md)
 #### [Microsoft エンドポイント マネージャーを使用したオンボーディング](onboarding-endpoint-manager.md)
-#### [サポート対象デバイスのオンボード](onboard-configure.md)
 
 ## [移行ガイド](migration-guides.md)
 ### [Microsoft 以外のエンドポイント保護から Microsoft Defender for Endpoint に切り替える](switch-to-microsoft-defender-migration.md)
 #### [フェーズ 1: 準備](switch-to-microsoft-defender-prepare.md)
 #### [フェーズ 2: セットアップ](switch-to-microsoft-defender-setup.md)
 #### [フェーズ 3: オンボード](switch-to-microsoft-defender-onboard.md)
+
+
+
 ### [移行後の Defender for Endpoint の管理](manage-atp-post-migration.md)
 #### [Intune (推奨) を使用する](manage-atp-post-migration-intune.md)
 #### [構成マネージャーを使用する](manage-atp-post-migration-configuration-manager.md)
 #### [グループ ポリシーを使用する](manage-atp-post-migration-group-policy-objects.md)
 #### [PowerShell、WMI、MPCmdRun.exe を使用する](manage-atp-post-migration-other-tools.md)
+#### [サーバー移行シナリオ](server-migration.md)
 
 ## [デバイスの構成とオンボード]()
+### [デバイスにオンボードして、Microsoft Defender for Endpoint 機能 を構成します](onboard-configure.md)
+
+
 ### [Windows および Windows Server 上の Microsoft Defender for Endpoint]()
-#### [デバイスを Microsoft Defender for Endpoint にオンボードする](onboard-configure.md)
-#### [以前のバージョンの Windows をオンボードする](onboard-downlevel.md)
-#### [Windows デバイスのオンボード]()
-##### [オンボーディング ツールとメソッド](configure-endpoints.md)
-##### [グループ ポリシーを使用してデバイスをオンボードする](configure-endpoints-gp.md)
-##### [Microsoft Endpoint Configuration Manager を使用したデバイスのオンボード](configure-endpoints-sccm.md)
-##### [モバイル デバイス管理ツールを使用したデバイスのオンボード](configure-endpoints-mdm.md)
-##### [ローカル スクリプトを使用したデバイスのオンボード](configure-endpoints-script.md)
-##### [非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード](configure-endpoints-vdi.md)
-##### [Windows Virtual Desktop の Windows マルチセッション デバイスのオンボード](onboard-windows-multi-session-device.md)
-#### [Windows サーバーのオンボード](configure-server-endpoints.md)
+#### [Windows エンドポイント用のオンボード ツールと各種方法](configure-endpoints.md)
+#### [Windows デバイスと Windows サーバーのオンボード]()
+
+##### [以前のバージョンの Windows をオンボードする](onboard-downlevel.md)
+
+
+##### [Windows デバイスと Windows サーバーのオンボード]()
+###### [Windows Server 2012 R2、2016、半期チャネル、2019、および 2022](configure-server-endpoints.md)をオンボードする
+###### [ローカル スクリプトを使用した Windows デバイスのオンボード](configure-endpoints-script.md)
+###### [グループ ポリシーを使用してデバイスをオンボードする](configure-endpoints-gp.md)
+###### [Microsoft Endpoint Configuration Manager を使用した Windows デバイスのオンボード](configure-endpoints-sccm.md)
+###### [モバイル デバイス管理ツールを使用した Windows デバイスのオンボード](configure-endpoints-mdm.md)
+###### [非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード](configure-endpoints-vdi.md)
+###### [Windows Virtual Desktop の Windows 10 マルチセッション デバイスのオンボード](onboard-windows-multi-session-device.md)
+
+
+
+
+#### [Azure Defender との統合](azure-server-integration.md)
 
 #### [インターネット アクセスなしでデバイスをオンボードする](onboard-offline-machines.md)
 #### [新しくオンボードされたデバイスで検出テストを実行する](run-detection-test.md)

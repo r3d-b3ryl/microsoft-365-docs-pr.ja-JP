@@ -146,7 +146,7 @@
               href: investigate-users.md
             - name: 最初のインシデントに対応する
               items:
-                - name: はじめに
+                - name: 概要
                   href: first-incident-overview.md
                 - name: 準備
                   href: first-incident-prepare.md
@@ -166,6 +166,8 @@
               href: /security/compass/incident-response-playbooks
             - name: インシデントのメール通知を取得する
               href: get-incident-notifications.md
+            - name: Power Automate を使用して脅威をトリアージする
+              href: use-power-automate.md
         - name: 自動調査と応答
           items:
             - name: 概要
@@ -306,24 +308,22 @@
               href: ../mtp/microsoft-threat-experts.md
             - name: Microsoft 脅威エキスパートの機能を構成および管理する
               href: ../mtp/configure-microsoft-threat-experts.md
-        - name: Microsoft 365 Defender の SecOps 統合
-          items:
-            - name: 概要
-              href: integrate-microsoft-365-defender-secops.md
-            - name: 手順 1. 運用の前提条件
-              href: integrate-microsoft-365-defender-secops-plan.md
-            - name: 手順 2. ゼロ トラストを使用した準備評価
-              href: integrate-microsoft-365-defender-secops-readiness.md
-            - name: 手順 3. SOC サービスとの統合
-              href: integrate-microsoft-365-defender-secops-services.md
-            - name: 手順 4. 役割、責任、および監視
-              href: integrate-microsoft-365-defender-secops-roles.md
-            - name: 手順 5.  テストのユース ケース
-              href: integrate-microsoft-365-defender-secops-use-cases.md
-            - name: 手順 6. SOC メンテナンス タスク
-              href: integrate-microsoft-365-defender-secops-tasks.md
-        - name: Power Automate を使用して脅威をトリアージする
-          href: use-power-automate.md
+    - name: SecOps 統合
+      items:
+        - name: 概要
+          href: integrate-microsoft-365-defender-secops.md
+        - name: 手順 1. 運用の前提条件
+          href: integrate-microsoft-365-defender-secops-plan.md
+        - name: 手順 2. ゼロ トラストを使用した準備評価
+          href: integrate-microsoft-365-defender-secops-readiness.md
+        - name: 手順 3. SOC サービスとの統合
+          href: integrate-microsoft-365-defender-secops-services.md
+        - name: 手順 4. 役割、責任、および監視
+          href: integrate-microsoft-365-defender-secops-roles.md
+        - name: 手順 5.  テストのユース ケース
+          href: integrate-microsoft-365-defender-secops-use-cases.md
+        - name: 手順 6. SOC メンテナンス タスク
+          href: integrate-microsoft-365-defender-secops-tasks.md
     - name: 使い方ガイド
       items:
         - name: 試用版ラボまたはパイロット環境を作成する

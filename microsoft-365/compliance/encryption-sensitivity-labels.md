@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: アクセスと使用を制限してデータを保護する暗号化のための秘密度ラベルを構成します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ba6e8e44a3f41bcd64257faf62c597d3b019e359
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 05e09bbd07bb8b4d15ce9bb82b64f49b49d88ffd
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206183"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60239962"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する
 
@@ -52,6 +52,29 @@ ms.locfileid: "60206183"
 暗号化では、Azure Information Protection の Azure Rights Management サービス (Azure RMS) が使用されます。 この保護ソリューションでは、暗号化ポリシー、ID ポリシー、および認識ポリシーが使用されます。 詳細については、 Azure Information Protection ドキュメントの「[Azure Rights Management とは](/azure/information-protection/what-is-azure-rms)」を参照してください。 
 
 暗号化ソリューションを使用すると、**スーパー ユーザー** 機能により、認証されたユーザーとサービスが、組織のために暗号化されたデータの閲覧と検査を常に行えるようにできます。 必要に応じて、暗号化を削除または変更することができます。 詳細については、「[Azure Information Protection および検索サービスまたはデータ回復用のスーパー ユーザーの構成](/azure/information-protection/configure-super-users)」を参照してください。
+
+## <a name="important-prerequisites"></a>重要な前提条件
+
+暗号化を使用するには、構成作業をいくつか行う必要がある場合があります。 暗号化設定を構成する場合、これらの前提条件が満たされていることを検証するチェックはありません。
+
+- Azure Information Protection の保護を有効にする
+    
+    秘密度ラベルが暗号化を適用するには、Azure Information Protection の保護サービス (Azure Rights Management) をテナントに対して有効にする必要があります。  新しいテナントの場合はこれが既定の設定になっていますが、サービスを手動で有効にする必要がある場合があります。 詳細については、「[Azure Information Protection の保護サービスのアクティブ化](/azure/information-protection/activate-service)」を参照してください。
+
+- ネットワーク エラーを確認
+    
+    ファイアウォールなど、ネットワーク デバイスへ一部の変更を加える必要があることがあります。 詳細については、Azure Information Protection ドキュメントにある [ファイアウォールとネットワーク インフラストラクチャ](/azure/information-protection/requirements#firewalls-and-network-infrastructure) を参照してください。
+
+- Azure Information Protection 用に Exchange を構成する
+    
+    ユーザーが Outlook で電子メールの暗号化のためにラベルを適用するまでは、Azure Information Protection 用に Exchange を構成する必要はありません。ただし、Exchange が Azure Information Protection 用に構成されるまで、Exchange には Azure Rights Management 保護の使用よる完全な機能が備わりません。
+    
+    たとえば、暗号化された電子メールを携帯電話や Outlook on the web で表示すること、暗号化された電子メールの検索用インデックスの作成、Rights Management 保護用に Exchange Online DLP を構成することなどは行えません。 
+    
+    このような追加のシナリオを Exchange でサポートする場合は、次の項目を参照してください。
+    
+    - Exchange Online の場合は、「[Exchange Online: IRM 構成](/azure/information-protection/configure-office365#exchangeonline-irm-configuration)」の説明を参照してください。
+    - Exchange On-Premises の場合は、[RMS コネクタを展開して Exchange サーバーを構成する](/azure/information-protection/deploy-rms-connector)必要があります。 
 
 ## <a name="how-to-configure-a-label-for-encryption"></a>暗号化のラベルを構成する方法
 
@@ -422,28 +445,6 @@ Word、PowerPoint、および Excel では、ドキュメントにアクセス�
 秘密度ラベルを使用して暗号化されたファイルでの共同作業環境を最適化するには、[SharePoint および OndeDrive 内の Office ファイル用秘密度ラベル](sensitivity-labels-sharepoint-onedrive-files.md)および Web 用 Office を使用することをお勧めします。
 
 
-## <a name="important-prerequisites"></a>重要な前提条件
-
-暗号化を使用するには、構成作業をいくつか行う必要がある場合があります。
-
-- Azure Information Protection の保護を有効にする
-    
-    秘密度ラベルが暗号化を適用するには、Azure Information Protection の保護サービス (Azure Rights Management) をテナントに対して有効にする必要があります。  新しいテナントの場合はこれが既定の設定になっていますが、サービスを手動で有効にする必要がある場合があります。 詳細については、「[Azure Information Protection の保護サービスのアクティブ化](/azure/information-protection/activate-service)」を参照してください。
-
-- ネットワーク エラーを確認
-    
-    ファイアウォールなど、ネットワーク デバイスへ一部の変更を加える必要があることがあります。 詳細については、Azure Information Protection ドキュメントにある [ファイアウォールとネットワーク インフラストラクチャ](/azure/information-protection/requirements#firewalls-and-network-infrastructure) を参照してください。
-
-- Azure Information Protection 用に Exchange を構成する
-    
-    ユーザーが Outlook で電子メールの暗号化のためにラベルを適用するまでは、Azure Information Protection 用に Exchange を構成する必要はありません。ただし、Exchange が Azure Information Protection 用に構成されるまで、Exchange には Azure Rights Management 保護の使用よる完全な機能が備わりません。
-    
-    たとえば、暗号化された電子メールを携帯電話や Outlook on the web で表示すること、暗号化された電子メールの検索用インデックスの作成、Rights Management 保護用に Exchange Online DLP を構成することなどは行えません。 
-    
-    このような追加のシナリオを Exchange でサポートする場合は、次の項目を参照してください。
-    
-    - Exchange Online の場合は、「[Exchange Online: IRM 構成](/azure/information-protection/configure-office365#exchangeonline-irm-configuration)」の説明を参照してください。
-    - Exchange On-Premises の場合は、[RMS コネクタを展開して Exchange サーバーを構成する](/azure/information-protection/deploy-rms-connector)必要があります。 
 
 ## <a name="next-steps"></a>次の手順
 

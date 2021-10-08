@@ -7,7 +7,7 @@ ms.date: 8/6/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Office 365 の IP アドレスと URL web サービスを使用して、Office 365 のネットワークトラフィックをより簡単に識別、差別化する方法について説明します。
-ms.openlocfilehash: 62e9b638b0f767aef3b7f52bb3d129310d2bcbd5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c9d888a175b5e070acfd3a9be7b428ee2404ec0d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220901"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197295"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>Office 365 IP アドレスと URL の Web サービス
 
@@ -63,8 +63,8 @@ Office 365 IP アドレスと URL の Web サービスは、Office 365 ネット
 
 これらのパラメーターは、すべての Web サービス メソッドで共通です。
 
-- **format=\<JSON \| CSV\>** — 既定では、返されるデータ形式は JSON です。 コンマ区切り値 (CSV) 形式でデータを返すには、このオプションのパラメーターを使用します。
-- **ClientRequestId=\<guid\>**— クライアントの関連付けのためにユーザーが作成することが必要な GUID です。 Web サービスを呼び出すコンピューターごとに一意の GUID を生成します (このページに含まれるスクリプトでは、GUID が自動的に生成されます)。 次の例に示す GUID は、今後この Web サービスによってブロックされる可能性があるため使用しないでください。 GUID 形式は _xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx_ で、x は 16 進数を表します。
+- **format=CSV\<JSON \| CSV\>** — 既定では、返されるデータ形式は JSON です。コンマ区切り値 (CSV) 形式でデータを返すには、このオプションのパラメーターを使用します。
+- **ClientRequestId=\<guid\>** — クライアントの関連付けのために生成する必要がある GUID。Web サービスを呼び出すマシンごとに一意の GUID を生成します (このページに含まれているスクリプトが GUID を生成します)。今後、この Web サービスによってブロックされる可能性があるため、次の例に示す GUID は使用しないでください。GUID 形式 _xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx_、x は 16 進数。
 
   GUID を作成するには、[New-Guid](/powershell/module/microsoft.powershell.utility/new-guid) PowerShell コマンドを使用することも、[Online GUID Generator
 ](https://www.guidgenerator.com/) などのオンライン サービスを利用することもできます。
@@ -78,8 +78,8 @@ Microsoft は、Office 365 の IP アドレスと FQDN エントリを毎月初�
 バージョン Web メソッドのパラメーターは次のとおりです。
 
 - **AllVersions=\<true \| false\>** — 既定では、返されるバージョンは最新のものです。 Web サービスの最初のリリース以降のすべての公開済みバージョンを要求するには、この省略可能なパラメーターを含めます。
-- **Format=\<JSON \| CSV \| RSS\>** — JSON 形式と CSV 形式に加えて、このバージョン Web メソッドでは RSS もサポートされます。 このパラメーターのオプションは、_AllVersions=true_ パラメーターと共に使用でき、Outlook や その他の RSS リーダーで使用できる RSS フィードを要求できます。
-- **Instance=\<Worldwide \| China \| Germany \| USGovDoD \| USGovGCCHigh\>** — この省略可能なパラメーターはバージョンを返すインスタンスを指定します。 省略する場合は、すべてのインスタンスが返されます。 有効なインスタンスは次の通りです。Worldwide、China、Germany、USGovDoD、USGovGCCHigh。
+- **Format=\<JSON \| CSV \| RSS\>** — JSON 形式および CSV 形式に加えて、バージョン Web メソッドは RSS もサポートしています。このオプションのパラメーターを _AllVersions=true_ パラメーターと共に使用して、Outlook や他の RSS リーダーで使用できる RSS フィードを要求できます。
+- **Instance=\<Worldwide \| China \| Germany \| USGovDoD \| USGovGCCHigh\>** — この省略可能なパラメーターは、バージョンを返すインスタンスを指定します。省略した場合は、すべてのインスタンスが返されます。有効なインスタンスは次のとおりです。Worldwide、China、Germany、USGovDoD、USGovGCCHigh。
 
 バージョン Web メソッドはレート制限がなく、429 HTTP 応答コードも返しません。バージョン Web メソッドへの応答には、1 時間のデータのキャッシュを推奨する cache-control ヘッダーが含まれます。バージョン Web メソッドからの結果は、単一のレコードの場合も、レコードの配列の場合もあります。各レコードの要素は、次のとおりです。
 
@@ -181,10 +181,10 @@ Worldwide,2018063000
 
 エンドポイント Web メソッドのパラメーターは次のとおりです。
 
-- **ServiceAreas=\<Common \| Exchange \| SharePoint \| Skype\>** — サービス エリアのコンマ区切りのリストです。 有効な項目は、_Common_、_Exchange_、_SharePoint_、および _Skype_ です。 _Common_ サービス エリア項目はその他のすべてのサービス エリアの前提条件であるため、Web サービスに常に含まれます。 このパラメーターを含めない場合は、すべてのサービス エリアが返されます。
-- **TenantName=\<tenant_name\>** — Office 365 のテナント名です。 この web サービスでは、指定した名前を テナント名を含む URL の一部に挿入します。 テナント名を指定しない場合、URL のそれらの部分にワイルドカード文字が使用されます (\*)。
+- **ServiceAreas=\<Common \| Exchange \| SharePoint \| Skype\>** — サービス エリアのコンマ区切りリスト。有効な項目は、_Common_、_Exchange_、_SharePoint_、_Skype_ です。_Common_ サービス エリア項目は、他のすべてのサービス エリアの前提条件であるため、この Web サービスに常に含まれます。このパラメーターを含めない場合は、すべてのサービス エリアが返されます。
+- **TenantName=\<tenant_name\>** — お使いの Office 365 テナント名。この Web サービスでは、指定された名前を、テナント名を含む URL の一部に挿入します。テナント名を指定しない場合、URL のこれらの部分にはワイルドカード文字 (\*) が使用されます。
 - **NoIPv6=\<true \| false\>** — お使いのネットワークで IPv6 を使用しない場合は、値を _true_ に設定して出力から IPv6 アドレスを除外します。
-- **Instance=\<Worldwide \| China \| Germany \| USGovDoD \| USGovGCCHigh\>** — この必須のパラメーターはエンドポイントを返すインスタンスを指定します。 有効なインスタンスは、_Worldwide_、_China_、_Germany_、_USGovDoD_、_USGovGCCHigh_ です。
+- **Instance=\<Worldwide \| China \| Germany \| USGovDoD \| USGovGCCHigh\>** — この必須パラメーターは、エンドポイントを返すインスタンスを指定します。有効なインスタンスは次のとおりです。_Worldwide_、_China_、_Germany_、_USGovDoD_、_USGovGCCHigh_。
 
 同じクライアント IP アドレスからのエンドポイント Web メソッドの呼び出し回数が多すぎる場合、 HTTP Response Code _429 (要求が多すぎます)_ の応答コードが返される場合があります。 この応答コードを受け取った場合、リクエストを再度行うまでに 1 時間待つか、リクエスト用に新しい GUID を生成します。 一般的なベスト プラクティスとして、バージョン Web メソッドで新しいバージョンのデータが使用可能だと示された場合にのみ、エンドポイント Web メソッドを呼び出すようにします。
 
@@ -196,7 +196,7 @@ Worldwide,2018063000
 - tcpPorts - エンドポイント セットの TCP ポート。すべてのポート要素は、ポートのカンマ区切りのリストまたはダッシュ文字 (-) で区切られたポート範囲により書式設定されています。特定のカテゴリのポートは、すべての IP アドレスおよびエンド ポイント セット内のすべての URL に適用されます。空白の場合は省略します。
 - udpPorts - このエンドポイント セット内の IP アドレス範囲の UDP ポート。空白の場合は省略します。
 - ips - 一覧表示された TCP ポートまたは UDP ポートに関連付けられたものとして、このエンドポイントセットに関連付けられている IP アドレスの範囲。IP アドレス範囲の JSON 配列。空白の場合は省略します。
-- category — エンドポイント セットの接続性カテゴリです。 有効な値は、_Optimize_、_Allow_、および _Default_ です。 特定の IP アドレスまたは URL についてエンドポイント Web メソッドの出力を検索する場合、クエリで複数のカテゴリが返される場合があります。 最優先のカテゴリの推奨事項に従ってください。 たとえば、エンドポイントが _Optimize_ と _Allow_ の両方に表示される場合は、_Optimize_ の要件に従う必要があります。 必須です。
+- category — エンドポイント セットの接続のカテゴリ。有効な値は、_Optimize_、_Allow_、_Default_ です。エンドポイント Web メソッド出力で特定の IP アドレスまたは URL のカテゴリを検索する場合、クエリが複数のカテゴリを返す可能性があります。その場合は、最も優先度の高いカテゴリの推奨事項に従ってください。たとえば、エンドポイントが _Optimize_ と _Allow_ の両方に表示される場合は、_Optimize_ の要件に従う必要があります。必須です。
 - expressRoute — このエンドポイント セットが ExpressRoute を経由してルーティングされる場合は _True_ で、されない場合は _False_ です。
 - required - Office 365 のサポートを受けるためにこのエンドポイント セットの接続性が必要な場合は _True_。このエンドポイント セットが省略可能な場合は _False_。
 - notes — このテキストは、省略可能のエンドポイントについて、ネットワーク層でこのエンドポイント セットの IP アドレスまたは URL にアクセスできない場合に利用できなくなる Office 365 の機能について説明します。空白の場合は省略します。
@@ -270,7 +270,7 @@ Worldwide,2018063000
   — RemovedDuplicateIpOrUrl – 重複する IP アドレスまたは URL を削除しましたが、引き続き Office 365 用に公開されています。 通常、必要なアクションはありません。
   — OtherNonPriorityChanges – メモ フィールドなど、その他のすべてのオプションよりも重要度が低いものを変更しました。
 - version - 変更が導入された公開エンドポイント セットのバージョン。バージョン番号は _YYYYMMDDNN_ の形式で、複数のバージョンを 1 日のうちに発行する必要がある場合、_NN_ が自然数として増分されます。
-- previous — エンドポイント セットで変更された要素の以前の値を詳述するサブストラクチャです。 これは、新しく追加されたエンドポイント セットには含まれません。 _ExpressRoute_、_serviceArea_、_category_、_required_、_tcpPorts_、_udpPorts_、および _notes_ が含まれます。
+- previous — エンドポイント セット上の変更された要素の以前の値を詳述したサブストラクチャ。これは、新しく追加されたエンドポイント セットには含まれません。_ExpressRoute_、_serviceArea_、_category_、_required_、_tcpPorts_、_udpPorts_、_notes_.が含まれます。
 - current — エンドポイント セットで変更された要素の変更後の値を詳述するサブストラクチャです。 _ExpressRoute_、_serviceArea_、_category_、_required_、_tcpPorts_、_udpPorts_、および _notes_ が含まれます。
 - add — エンドポイント セット コレクションに追加する項目の詳細を示すサブストラクチャです。 追加がない場合は省略します。
   — effectiveDate — 追加がサービス内で有効になる時点を示すデータを定義します。
@@ -359,7 +359,7 @@ Worldwide,2018063000
 
 - Web サービスの REST API を呼び出して、現在の Office 365 ワールドワイド インスタンスのエンドポイントのバージョン番号を確認します。
 - _$Env:TEMP\O365_endpoints_latestversion.txt_ で現在のバージョンのファイルを確認します。 通常、グローバル変数 **$Env:TEMP** のパスは、_C:\Users\\<ユーザー名\>\AppData\Local\Temp_ です。
-- このスクリプトの実行が今回が初めての場合、スクリプトは現在のバージョンとすべての現在の IP アドレスおよび URL を返し、エンドポイント バージョンを _$Env:TEMP\O365_endpoints_latestversion.txt_ に書き込み、エンドポイント データ出力をファイル _$Env:TEMP\O365_endpoints_data.txt_ に書き込みます。 出力ファイルのパスまたは名前を変更するには、次の行を編集します。
+- このスクリプトの実行が今回が初めての場合、スクリプトは現在のバージョンとすべての現在の IP アドレスおよび URL を返し、エンドポイント バージョンを _$Env:TEMP\O365_endpoints_latestversion.txt_ に書き込み、エンドポイント データ出力をファイル _$Env:TEMP\O365_endpoints_data.txt_ に書き込みます。出力ファイルのパスまたは名前を変更するには、次の行を編集します。
 
     ``` powershell
     $versionpath = $Env:TEMP + "\O365_endpoints_latestversion.txt"
@@ -369,7 +369,7 @@ Worldwide,2018063000
 - これ以降のスクリプト実行では、最新の Web サービス バージョンが _O365_endpoints_latestversion.txt_ ファイルのバージョンと同じである場合、スクリプトは何も変更せずに終了します。
 - 最新の Web サービスのバージョンが _O365_endpoints_latestversion.txt_ ファイル内でのバージョンよりも新しい場合、スクリプトはエンドポイントを返し、**Allow** カテゴリおよび **Optimize** カテゴリのエンドポイントをフィルタリングし、_O365_endpoints_latestversion.txt_ ファイル内でバージョンを更新し、更新されたデータを _O365_endpoints_data.txt_ ファイルに書き込みます。
 
-スクリプトは、スクリプトが実行されるコンピューター用に一意の _ClientRequestId_ を生成し、複数の呼び出しでこの ID を再利用します。 この ID は _O365_endpoints_latestversion.txt_ ファイルに格納されます。
+スクリプトは、スクリプトが実行されるコンピューター用に一意の _ClientRequestId_ を生成し、複数の呼び出しでこの ID を再利用します。このIDは、_O365_endpoints_latestversion.txt_ ファイルに保存されます。 
 
 ### <a name="to-run-the-powershell-script"></a>PowerShell スクリプトを実行するには
 

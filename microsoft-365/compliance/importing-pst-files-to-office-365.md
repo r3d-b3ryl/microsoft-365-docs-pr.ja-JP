@@ -11,7 +11,7 @@ ms.topic: article
 f1_keywords:
 - ms.o365.cc.IngestionHelp
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Microsoft 365 コンプライアンス センターのインポート サービスを使用して、メール データ (PSTファイル) をユーザーのメールボックスに一括でインポートする方法について説明します。
-ms.openlocfilehash: da5d795c2b2babb2f2ff89bb1cdd5531d4818b1b
-ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
+ms.openlocfilehash: ba757f55e226d436250efa4da3340253dc017be6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60011274"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190847"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>組織の PST ファイルのインポートの概要
 
@@ -132,7 +132,7 @@ Office 365 インポート サービスを使用して PST ファイルを Micro
 
 #### <a name="what-permissions-are-required-to-create-import-jobs-in-the-office-365-import-service-using-network-upload"></a>Office 365 インポート サービスでネットワーク アップロードを使用してインポート ジョブを作成するにはどのようなアクセス許可が必要ですか?
 
-PST ファイルを Microsoft 365 メールボックスにインポートするには、Exchange Online で Mailbox Import Export の役割が割り当てられている必要があります。 既定では、この役割は Exchange Online のどの役割グループにも割り当てられていません。 "Mailbox Import Export/メールボックスのインポートとエクスポート" 役割は "Organization Management/組織の管理" 役割グループに追加できます。 または、新しい役割グループを作成し、Mailbox Import Export 役割を割り当て、自分や他のユーザーをメンバーとして追加できます。 詳細については、「[Manage role groups in Exchange Online](/Exchange/permissions-exo/role-groups)」 (Exchange Online の役割グループの管理) の "Add a role to a role group" (役割グループに役割を追加する) または "Create a role group" (役割グループを作成する) を参照してください。
+PST ファイルを Microsoft 365 メールボックスにインポートするには、Exchange Online で Mailbox Import Export 役割が割り当てられている必要があります。既定では、Exchange Online では、この役割はいずれの役割グループにも割り当てられていません。Mailbox Import Export 役割は Organization Management 役割グループに追加できます。または、新しい役割グループを作成し、Mailbox Import Export 役割を割り当て、自分や他のユーザーをメンバーとして追加できます。詳細については、「[Exchange Online の役割グループの管理](/Exchange/permissions-exo/role-groups)」の "役割グループに役割を追加する" または "役割グループを作成する" を参照してください。
 
 さらに、Microsoft 365 コンプライアンス センターでインポート ジョブを作成するには、次のいずれかを満たす必要があります。
 
@@ -153,11 +153,11 @@ PST ファイルを Microsoft 365 メールボックスにインポートする�
 
 Using network upload to import PST files is free.
 
-つまり、PST ファイルが Azure Storage 領域から削除されると、[Microsoft 365 管理センター](https://go.microsoft.com/fwlink/p/?linkid=2024339)では、完了済みインポート ジョブのファイル一覧から PST ファイルの表示が消えます。 インポート ジョブは引き続き [**Office 365 へのデータのインポート**] ページに表示されることがありますが、古いインポート ジョブの詳細を表示すると、PST ファイルの一覧は空になっている可能性があります。
+つまり、PST ファイルが Azure 記憶域から削除されると、[Microsoft 365 管理センター](https://go.microsoft.com/fwlink/p/?linkid=2024339)では、完了済みインポート ジョブのファイル一覧から PST ファイルの表示が消えます。インポート ジョブは依然として **[Office 365 へのデータのインポート]** ページに表示されることがありますが、古いインポート ジョブの詳細を表示すると、PST ファイルの一覧は空になっている可能性があります。
 
 #### <a name="what-version-of-the-pst-file-format-is-supported-for-importing-to-office-365"></a>What version of the PST file format is supported for importing to Office 365?
 
-There are two versions of the PST file format: ANSI and Unicode. Unicode PST ファイル形式を使用したファイルをインポートすることをお勧めします。 ただし、2 バイト文字セット (DBCS) を使用する言語のファイルのように、ANSI PST ファイル形式を使用したファイルも Office 365 にインポートできます。 ANSI PST ファイルをインポートする方法の詳細については、「[ネットワーク アップロードを使用して PST ファイルを Office 365 にインポートする](./use-network-upload-to-import-pst-files.md)」の手順 4 を参照してください。
+PST ファイル形式には、ANSI と Unicode という 2 つのバージョンがあります。Unicode PST ファイル形式を使用したファイルをインポートすることをお勧めします。ただし、2 バイト文字セット (DBCS) を使用する言語のファイルのように、ANSI PST ファイル形式を使用したファイルも Office 365 にインポートできます。ANSI PST ファイルをインポートする方法の詳細については、「[ネットワーク アップロードを使用して PST ファイルを Office 365 にインポートする](./use-network-upload-to-import-pst-files.md)」の手順 4 を参照してください。
 
 また、Outlook 2007 以降のバージョンの PST ファイルを Office 365 にもインポートできます。
 
@@ -165,7 +165,7 @@ There are two versions of the PST file format: ANSI and Unicode. Unicode PST フ
 
 ネットワーク アップロードの方法を使用して PST ファイルをインポートする場合、ファイルは `ingestiondata` という Azure の blob コンテナーにアップロードします。 Microsoft 365 コンプライアンス センター の [**PST ファイルのインポート**] ページで進捗中のインポート ジョブがない場合、一番新しいインポート ジョブが Microsoft 365 コンプライアンス センター で作成されてから 30 日後に、Azure の `ingestiondata` コンテナーにあるすべての PST ファイルが削除されます。 つまり、ユーザーは PST ファイルを Azure にアップロードしてから 30 日以内に、(ネットワークのアップロード手順の手順 5 で示すように) Microsoft 365 コンプライアンス センター で新しいインポート ジョブを作成する必要があります。
 
-つまり、PST ファイルが Azure Storage 領域から削除されると、Microsoft 365 コンプライアンス センターでは、完了済みインポート ジョブのファイル一覧から PST ファイルの表示が消えます。 インポート ジョブが Microsoft 365 コンプライアンス センター の [**PST ファイルのインポート**] ページの一覧に引き続き表示されていても、以前のインポート ジョブの詳細を表示すると、PST ファイルの一覧は空になっている可能性があります。
+つまり、PST ファイルが Azure Storage 領域から削除されると、Microsoft 365 コンプライアンス センターでは、完了済みインポート ジョブのファイルのリストから PST ファイルの表示が消えます。インポート ジョブは依然として Microsoft 365 コンプライアンス センターの **[PST ファイルのインポート]** ページに表示されることがありますが、古いインポート ジョブの詳細を表示すると、PST ファイルのリストは空になっている可能性があります。
 
 #### <a name="how-long-does-it-take-to-import-a-pst-file-to-a-mailbox-using-network-upload"></a>ネットワーク アップロードを使用してメールボックスに PST ファイルをインポートするには、どれぐらい時間がかかりますか?
 
@@ -207,7 +207,7 @@ Yes, this capability is now available.
 
 #### <a name="what-permissions-are-required-to-create-import-jobs-in-the-office-365-import-service-using-drive-shipping"></a>Office 365 インポート サービスでドライブ送付を使用してインポート ジョブを作成するにはどのようなアクセス許可が必要ですか?
 
-PST ファイルを Microsoft 365 メールボックス にインポートするには、Mailbox Import Export の役割を割り当てる必要があります。 既定では、この役割は Exchange Online のどの役割グループにも割り当てられていません。 "Mailbox Import Export/メールボックスのインポートとエクスポート" 役割は "Organization Management/組織の管理" 役割グループに追加できます。 または、新しい役割グループを作成し、Mailbox Import Export 役割を割り当て、自分や他のユーザーをメンバーとして追加できます。 詳細については、「[Manage role groups in Exchange Online](/Exchange/permissions-exo/role-groups)」 (Exchange Online の役割グループの管理) の "Add a role to a role group" (役割グループに役割を追加する) または "Create a role group" (役割グループを作成する) を参照してください。
+PST ファイルを Microsoft 365 メールボックスにインポートするには、Mailbox Import Export 役割が割り当てられている必要があります。既定では、Exchange Online では、この役割はいずれの役割グループにも割り当てられていません。Mailbox Import Export 役割は Organization Management 役割グループに追加できます。または、新しい役割グループを作成し、Mailbox Import Export 役割を割り当て、自分や他のユーザーをメンバーとして追加できます。詳細については、「[Exchange Online の役割グループの管理](/Exchange/permissions-exo/role-groups)」の "役割グループに役割を追加する" または "役割グループを作成する" を参照してください。
 
 さらに、Microsoft 365 コンプライアンス センターでインポート ジョブを作成するには、次のいずれかを満たす必要があります。
 
@@ -233,7 +233,7 @@ Microsoft 365 に PST ファイルをインポートするためのドライブ�
 
 #### <a name="what-is-the-pricing-for-using-drive-shipping-to-import-pst-files-to-microsoft-365"></a>ドライブの発送を使用して PST ファイルを Microsoft 365 にインポートすると、料金はいくらですか?
 
-ドライブの発送を使用して PST ファイルを Microsoft 365 メールボックスにインポートするコストは、1 GB のデータあたり 2 米ドルです。 たとえば、1,000 GB (1 TB) の PST ファイルを含むハード ディスク ドライブを発送する場合のコストは、2,000 米ドルです。 インポート手数料は、パートナーと分担して支払うことができます。 パートナーを探す方法については、「[Microsoft パートナーまたは販売店を探す](../admin/manage/find-your-partner-or-reseller.md)」を参照してください。
+ドライブ送付を利用し、Microsoft 365 メールボックスに PST ファイルをインポートする場合のコストは、1 GB データあたり 2 米ドルです。たとえば、1,000 GB (1 TB) の PST ファイルを含むハード ディスク ドライブを送付する場合のコストは、2,000 米ドルです。パートナーを通じてインポート料を支払うことができます。パートナーを探す方法については、「[Microsoft 365 パートナーまたは販売店を探す](../admin/manage/find-your-partner-or-reseller.md)」を参照してください。
 
 #### <a name="what-kind-of-hard-drives-are-supported-for-drive-shipping"></a>ドライブ発送では、どのような種類のハード ドライブがサポートされていますか。
 
@@ -252,7 +252,7 @@ You can ship a maximum of 10 hard drives for a single import job.
 
 #### <a name="after-my-hard-drive-arrives-at-the-microsoft-datacenter-how-long-does-it-take-to-upload-my-pst-files-to-azure"></a>Microsoft データセンターにハード ドライブが到着してから PST ファイルが Azure にアップロードされるまで、どれくらいかかりますか?
 
-Microsoft データ センターにハード ドライブが到着した後、PST ファイルが組織の Azure Storage 領域にアップロードされるまで、7 から 10 営業日かかります。 PST ファイルは、`ingestiondata` と呼ばれる Azure blob コンテナーにアップロードされます。
+Microsoft データ センターにハード ドライブが到着した後、PST ファイルが組織の Azure Storage の場所にアップロードされるまで、7 から 10 営業日かかります。PST ファイルは、`ingestiondata` と呼ばれる Azure blob コンテナーにアップロードされます。
 
 #### <a name="how-long-does-it-take-to-import-a-pst-file-to-a-mailbox-using-drive-shipping"></a>ドライブ送付を使用してメールボックスに PST ファイルをインポートするには、どれぐらい時間がかかりますか?
 
@@ -264,11 +264,11 @@ PST ファイルが Azure Storage 領域にアップロードされると、Micr
 
 組織の Azure Storage の保存場所 (`ingestiondata` と呼ばれる blob コンテナー) にあるすべての PST ファイルは、最新のインポート ジョブが Microsoft 365 コンプライアンス センターの [**PST ファイルのインポート**] ページで作成されてから 30 日後に削除されます。
 
-つまり、PST ファイルが Azure Storage 領域から削除されると、Microsoft 365 コンプライアンス センターでは、完了済みインポート ジョブのファイル一覧から PST ファイルの表示が消えます。 インポート ジョブが Microsoft 365 コンプライアンス センター の [**PST ファイルのインポート**] ページの一覧に引き続き表示されていても、以前のインポート ジョブの詳細を表示すると、PST ファイルの一覧は空になっている可能性があります。
+つまり、PST ファイルが Azure Storage 領域から削除されると、Microsoft 365 コンプライアンス センターでは、完了済みインポート ジョブのファイルのリストから PST ファイルの表示が消えます。インポート ジョブは依然として Microsoft 365 コンプライアンス センターの **[PST ファイルのインポート]** ページに表示されることがありますが、古いインポート ジョブの詳細を表示すると、PST ファイルのリストは空になっている可能性があります。
 
 #### <a name="what-version-of-the-pst-file-format-is-supported-for-importing-to-microsoft-365"></a>Microsoft 365 へのインポートがサポートされている PST ファイル形式のバージョンは何ですか?
 
-PST ファイル形式には、ANSI と Unicode という 2 つのバージョンがあります。 Unicode PST ファイル形式を使用したファイルをインポートすることをお勧めします。 ただし、2 バイト文字セット (DBCS) を使用する言語のファイルのように、ANSI PST ファイル形式を使用したファイルも Microsoft 365 にインポートできます。 ANSI PST ファイルをインポートする方法の詳細については、「[ドライブの発送を使用して組織の PST ファイルを Microsoft 365 にインポートする](use-drive-shipping-to-import-pst-files-to-office-365.md#step-3-create-the-pst-import-mapping-file)」の手順 3 を参照してください。
+PST ファイル形式には、ANSI と Unicode という 2 つのバージョンがあります。Unicode PST ファイル形式を使用したファイルをインポートすることをお勧めします。ただし、2 バイト文字セット (DBCS) を使用する言語のファイルのように、ANSI PST ファイル形式を使用したファイルも Microsoft 365 にインポートできます。ANSI PST ファイルをインポートする方法の詳細については、「[ドライブの発送を使用して組織の PST ファイルを Microsoft 365 にインポートする](use-drive-shipping-to-import-pst-files-to-office-365.md#step-3-create-the-pst-import-mapping-file)」の手順 3 を参照してください。
 
 また、Outlook 2007 以降のバージョンの PST ファイルを Microsoft 365 にもインポートできます。
 

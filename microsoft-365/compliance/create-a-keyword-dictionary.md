@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 セキュリティ/コンプライアンス センターでキーワード ディクショナリを作成する基本的な手順について説明します。
-ms.openlocfilehash: ef54a45157ab73662ddb15ad46f12ef510ad28cd
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f585009ee54c03b0417f5aa74fd0b7d2fa0d5e7e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189860"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167332"
 ---
 # <a name="create-a-keyword-dictionary"></a>キーワード ディクショナリを作成する
 
@@ -75,9 +75,9 @@ Remove-Item $rawFile
   
 1. **コンプライアンス センター** ([https://compliance.microsoft.com](https://compliance.microsoft.com)) を使用するか、**セキュリティ &amp; コンプライアンス センター PowerShell** に接続します。
     
-2. **目的のソースからキーワードを定義または読み込みます**。 ウィザードとコマンドレットの両方でコンマ区切りキーワード リストを使ってカスタム キーワード ディクショナリを作成できるので、この手順はキーワードがどこから得られるかによって多少異なります。 いったん読み込まれたキーワードは、インポートされる前にエンコードされてバイト配列に変換されます。
+2. **該当するソースからキーワードを定義する、または読み込む**。ウィザードとコマンドレットの両方でコンマ区切りキーワード リストを使ってカスタム キーワード辞書を作成できるので、この手順はキーワードがどこから得られるかによって多少異なります。いったん読み込まれたキーワードは、インポートされる前にエンコードされてバイト配列に変換されます。
     
-3. **ディクショナリを作成します**。 名前と説明を選択し、ディクショナリを作成します。
+3. **ディクショナリを作成する**。名前と説明を選択し、ディクショナリを作成します。
 
 ## <a name="create-a-keyword-dictionary-using-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターを使用してキーワード ディクショナリを作成する
 
@@ -109,7 +109,7 @@ Remove-Item $rawFile
     
 ## <a name="create-a-keyword-dictionary-from-a-file-using-powershell"></a>PowerShell を使用してファイルからキーワード ディクショナリを作成する
 
-大きなディクショナリを作成する必要がある場合、それは他のソースからエクスポートされたファイルやリストからのキーワードを使用するためであることが多いです。 この場合、外部メールの画面に対する不適切な言語のリストを含めて、キーワード ディクショナリを作成します。 まず、[セキュリティ &amp; コンプライアンス センター PowerShell](/powershell/exchange/connect-to-scc-powershell) に接続します。
+大きなディクショナリを作成する必要がある場合はたいてい、ファイルからのキーワードや、その他のソースからエクスポートしたリストを使うことになります。その場合、外部電子メールでスクリーニングを行うための不適切な言語のリストを含むキーワード ディクショナリを作成します。まず[セキュリティ &amp; コンプライアンス センター PowerShell に接続する](/powershell/exchange/connect-to-scc-powershell)必要があります。
   
 1. キーワードをテキスト ファイルにコピーし、各キーワードが別個の行にあるかどうかを確認します。
     
@@ -129,7 +129,7 @@ Remove-Item $rawFile
   
 ## <a name="using-keyword-dictionaries-in-custom-sensitive-information-types-and-dlp-policies"></a>カスタムの機密情報の種類と DLP ポリシーでキーワード ディクショナリを使う
 
-キーワード ディクショナリは、カスタムの機密情報の種類に一致する要件の一部として、または機密情報の種類自体として使用できます。 どちらも、[カスタムの機密情報の種類](create-a-custom-sensitive-information-type-in-scc-powershell.md) を作成する必要があります。 リンク先の記事の手順に従って、機密情報の種類を作成します。 XML がある場合は、それを使用するディクショナリの GUID 識別子が必要になります。
+キーワード ディクショナリは、カスタムの機密情報の種類の合致要件の一部として、または機密情報の種類そのものとして使用することができます。どちらの場合も、[カスタムの機密情報の種類](create-a-custom-sensitive-information-type-in-scc-powershell.md)を作成する必要があります。リンク先の記事にある手順に従って、機密情報の種類を作成できます。XML ができたら、それを使うためにディクショナリの GUID 識別子が必要になります。
   
 ```xml
 <Entity id="9e5382d0-1b6a-42fd-820e-44e0d3b15b6e" patternsProximity="300" recommendedConfidence="75">
