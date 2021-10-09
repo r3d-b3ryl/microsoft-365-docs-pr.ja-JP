@@ -14,21 +14,21 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
-ms.date: 08/31/2021
+ms.date: 10/05/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f23ff6ccbde512b8c8b3f1da36e86ede1c2d0324
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ffb8ccb40a6fcbe90d8dd0636402f8e9a40f058b
+ms.sourcegitcommit: 166bf635c0905ae12c04b1865cb17aadef81e82a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208567"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60245783"
 ---
 # <a name="cloud-protection-and-sample-submission-in-microsoft-defender-antivirus"></a>クラウド保護とサンプル申請 (Microsoft Defender ウイルス対策
 
 **適用対象:**
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
-- Microsoft Defender ウイルス対策
+- [Microsoft Defender ウイルス対策](microsoft-defender-antivirus-windows.md)
 
 Microsoft Defender ウイルス対策は、マルウェアを検出するために多くのインテリジェントなメカニズムを使用します。 最も強力な機能の 1 つは、クラウドの機能を適用してマルウェアを検出し、迅速な分析を実行する機能です。 クラウド保護と自動サンプル申請は、新しい脅威やMicrosoft Defender ウイルス対策保護するために、ユーザーと共に機能します。 
 
@@ -103,7 +103,7 @@ Intune、Configuration Manager、GPO、または PowerShell を使用した構�
 
 ## <a name="examples-of-metadata-sent-to-the-cloud-protection-service"></a>クラウド保護サービスに送信されるメタデータの例
 
-:::image type="content" source="images/cloud-protection-metadata-sample.png" alt-text="図 2.Microsoft Defender Cloud Protection に送信されるメタデータの例":::
+:::image type="content" source="images/cloud-protection-metadata-sample.png" alt-text="Microsoft Defender Cloud Protection に送信されるメタデータの例を示す画像":::
 
 次の表に、クラウド保護によって分析のために送信されるメタデータの例を示します。
 

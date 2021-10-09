@@ -19,12 +19,12 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: DLP ポリシーで使用できる機密情報の種類は 200 種類です。 この記事では、これらすべての機密情報の種類を一覧表示し、DLP ポリシーが各種類を検出するときに検索する情報漏えい対策ポリシーを示します。
-ms.openlocfilehash: 80c0c0fa2a916b44204ea930a282c5b2e6402a85
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9d018833f6dd6d63ff32e8a3d77209177d7709f6
+ms.sourcegitcommit: 166bf635c0905ae12c04b1865cb17aadef81e82a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159732"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60245683"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>機密情報の種類のエンティティ定義
 
@@ -48,7 +48,7 @@ ms.locfileid: "60159732"
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -160,7 +160,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -317,7 +317,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -377,7 +377,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -579,7 +579,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -691,7 +691,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -1112,7 +1112,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -1190,7 +1190,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -1890,7 +1890,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -2089,7 +2089,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 
 ### <a name="definition"></a>定義
@@ -2151,7 +2151,7 @@ Unformatted:
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -2214,7 +2214,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -2291,7 +2291,7 @@ Registro de Identidade (RIC) (新しい形式):
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -2513,7 +2513,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -3170,7 +3170,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -3254,7 +3254,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -3318,6 +3318,8 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - チリの ID いいえ。
 - チリの ID 番号
 - チリの ID#
+- R.U.T
+- R.U.N
 
 
 ## <a name="china-resident-identity-card-prc-number"></a>中国在住の ID カード (PRC) 番号
@@ -3336,7 +3338,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -3382,7 +3384,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="format"></a>フォーマット
 
-14 ~ 16 桁の数字 (dddddddd
+書式設定または書式設定されていない 14 ~ 19 桁の数字 (dddddddd
 
 ### <a name="pattern"></a>パターン
 
@@ -3390,7 +3392,7 @@ Visa、MasterCard、Discover Card、JCB、American Express、ギフト カード
 
 ### <a name="checksum"></a>チェックサム
 
-あり (Luhn のチェックサム)
+はい、Luhn チェック
 
 ### <a name="definition"></a>定義
 
@@ -4000,7 +4002,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -5027,12 +5029,12 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 10 桁の数字:
 - DDMMYY 形式の 6 桁の数字 (生年月日)
-- ハイフン
+- オプションのスペースまたはハイフン
 - 最後の数字がチェック桁である 4 桁の数字
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -5149,7 +5151,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -5382,7 +5384,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -5532,7 +5534,7 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -6288,7 +6290,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -6899,7 +6901,7 @@ no. d'identite
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -6979,7 +6981,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -7037,7 +7039,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -7212,37 +7214,58 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="format"></a>フォーマット
 
-2010 年 11 月 1 日以降: 9 文字と数字
+2010 年 11 月 1 日以降: 9 から 11 の文字と数字
 
 1987 年 4 月 1 日から 2010 年 10 月 31 日まで: 10 桁
 
 ### <a name="pattern"></a>パターン
 
-2010 年 11 月 1 日以降:
-- 1 文字 (大文字と小文字は区別されません)
-- 8 桁
+2010 年 11 月 1 日以降: 9 ~ 11 文字の英数字パターン
+- 1 L、M、N、P、R、T、V、W、X、Y (大文字と小文字を区別しない)
+- C、F、G、H、J、K、L、M、P、R、T、V、W、X、Y、Z の 8 桁の数字 (大文字と小文字を区別しない)
+- オプションのチェックディジット
+- オプションの d/D
 
 1987 年 4 月 1 日から 2010 年 10 月 31 日まで:
 - 10 桁の数字
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+必要
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという信頼性が低いです。
-- 正規表現は、Regex_germany_id_card一致するコンテンツを検索します。
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
+- この関数 `Func_german_id_card_with_check` は、パターンに一致するコンテンツを検索します。
+- キーワードが `Keyword_germany_id_card` 見つかりました。
+- チェックサムが渡される。
+
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
+- 正規表現は、パターンに一致するコンテンツを検索します (2010 年より前に発行されたチェック桁または 10 桁のパターンが 2010 年より前に発行された `Regex_germany_id_card` 9 文字)。
 - ユーザーからのキーワードKeyword_germany_id_card見つかりました。
 
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという信頼性が低いです。
+- この関数 `Func_german_id_card_with_check` は、パターンに一致するコンテンツを検索します。
+- チェックサムが渡される。
+
+
 ```xml
-<!-- Germany Identity Card Number -->
-<Entity id="e577372f-c42e-47a0-9d85-bebed1c237d4" recommendedConfidence="65" patternsProximity="300">
-  <Pattern confidenceLevel="65">
-     <IdMatch idRef="Regex_germany_id_card"/>
-     <Match idRef="Keyword_germany_id_card"/>
-  </Pattern>
-</Entity>
+      <!-- Germany Identity Card Number -->
+      <Entity id="e577372f-c42e-47a0-9d85-bebed1c237d4" patternsProximity="300" recommendedConfidence="75"> 
+        <Pattern confidenceLevel="75">
+         <IdMatch idRef="Regex_germany_id_card" /> 
+         <Match idRef="Keyword_germany_id_card" /> 
+        </Pattern>
+        <Version minEngineVersion="15.20.4545.000"> 
+          <Pattern confidenceLevel="85">
+           <IdMatch idRef="Func_german_id_card_with_check" />
+            <Match idRef="Keyword_germany_id_card" /> 
+          </Pattern> 
+          <Pattern confidenceLevel="65">
+           <IdMatch idRef="Func_german_id_card_with_check" /> 
+          </Pattern> 
+        </Version>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
@@ -7266,53 +7289,58 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ## <a name="germany-passport-number"></a>ドイツのパスポート番号
 
-このエンティティは、EU Passport Number 機密情報の種類に含まれており、スタンドアロンの機密情報の種類エンティティとして使用できます。
-
 ### <a name="format"></a>フォーマット
 
-10 桁の数字または文字
+9 ~ 11 文字
 
 ### <a name="pattern"></a>パターン
 
-パターンには、以下のすべてが含まれる必要があります。
-- 最初の文字は、このセットの数字または文字です (C、F、G、H、J、K)
-- 3 桁の数字
-- このセットから 5 桁の数字または文字 (C、-H、J-N、P、R、T、V-Z)
-- 数字
+- C、F、G、H、J、K の 1 文字 (大文字と小文字を区別しない)
+- C、F、G、H、J、K、L、M、P、R、T、V、W、X、Y、Z の 8 桁の数字 (大文字と小文字を区別しない)
+- オプションのチェックディジット
+- オプションの d/D
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたと高い信頼性を持っています。
-- 関数 Func_german_passport がパターンに一致するコンテンツを検出した。
+- この関数 `Func_german_passport_checksum` は、パターンに一致するコンテンツを検索します。
 - キーワードが見 `Keyword_german_passport` `Keywords_eu_passport_number_common` つかったか、検索されます。
 - チェックサムが渡される。
 
 DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
-- 関数 Func_german_passport_data がパターンに一致するコンテンツを検出した。
+- この関数は、9 文字のパターンに一致するコンテンツを検索します (チェックディジットと `Func_german_passport` オプションの d/D なし)。
 - キーワードが見 `Keyword_german_passport` `Keywords_eu_passport_number_common` つかったか、検索されます。
+
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという信頼性が低いです。
+- この関数 `Func_german_passport_checksum` は、パターンに一致するコンテンツを検索します。
 - チェックサムが渡される。
 
 ```xml
     <!-- German Passport Number -->
     <Entity id="2e3da144-d42b-47ed-b123-fbf78604e52c" patternsProximity="300" recommendedConfidence="75">
-      <Pattern confidenceLevel="85">
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_german_passport" />
         <Any minMatches="1">
           <Match idRef="Keyword_german_passport" />
           <Match idRef="Keywords_eu_passport_number_common" />
         </Any>
       </Pattern>
-      <Pattern confidenceLevel="75">
-        <IdMatch idRef="Func_german_passport_data" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_german_passport" />
-          <Match idRef="Keywords_eu_passport_number_common" />
-        </Any>
-      </Pattern>
+      <Version minEngineVersion="15.20.4570.0">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_german_passport_checksum" />
+          <Any minMatches="1">
+            <Match idRef="Keyword_german_passport" />
+            <Match idRef="Keywords_eu_passport_number_common" />
+          </Any>
+        </Pattern>
+        <Pattern confidenceLevel="65">
+          <IdMatch idRef="Func_german_passport_checksum" />
+        </Pattern>
+      </Version>
     </Entity>
 ```
 
@@ -7365,7 +7393,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -7445,7 +7473,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -7797,7 +7825,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -7919,7 +7947,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -8178,7 +8206,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -8308,7 +8336,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -8379,7 +8407,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -8460,7 +8488,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -8692,7 +8720,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -8796,7 +8824,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -9548,7 +9576,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -9922,7 +9950,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -10090,7 +10118,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -10320,7 +10348,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -10384,7 +10412,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -10822,7 +10850,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -11519,7 +11547,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+○
 
 ### <a name="definition"></a>定義
 
@@ -11681,7 +11709,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -12008,7 +12036,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-該当しない
+該当なし
 
 ### <a name="definition"></a>定義
 
@@ -12357,7 +12385,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -12746,7 +12774,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -12809,7 +12837,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -12865,7 +12893,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -12983,7 +13011,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -13023,17 +13051,16 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="format"></a>フォーマット
 
-3 文字、スペース (省略可能)、および 4 桁の数字
+3 文字と 4 桁の数字
 
 ### <a name="pattern"></a>パターン
 
 - 'I' と 'O' 以外の 3 文字 (大文字と小文字は区別されません)
-- スペース (オプション)
 - 4 桁
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -13065,14 +13092,8 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 - NHI
 - New Zealand
-- 正常性
-- 治療
-- 国民の健康インデックス番号
-- nhi 番号
-- nhi no.
+- 国民健康指数
 - NHI#
-- 国民健康指数 No.
-- 国民の健康インデックス ID
 - 国民健康指数#
 
 ## <a name="new-zealand-social-welfare-number"></a>ニュージーランドのソーシャル 福利厚生番号
@@ -13151,7 +13172,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -13413,7 +13434,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -13460,7 +13481,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -13514,7 +13535,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -13612,7 +13633,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -14063,7 +14084,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -14304,7 +14325,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -14634,7 +14655,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -14861,7 +14882,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -15201,7 +15222,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -15358,7 +15379,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -15426,7 +15447,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -15471,7 +15492,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -15522,7 +15543,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -15885,7 +15906,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -15967,7 +15988,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -16299,7 +16320,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -16465,7 +16486,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -16621,7 +16642,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -16839,7 +16860,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -16936,7 +16957,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -17145,7 +17166,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -17712,7 +17733,8 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="pattern"></a>パターン
 
-9 桁の連続する数字
+- 1 文字または数字
+- 8 桁
 
 ### <a name="checksum"></a>チェックサム
 

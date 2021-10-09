@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Microsoft ドキュメント ライブラリのドキュメント ライブラリに発行SharePointを適用する方法について説明SharePoint Syntex。
-ms.openlocfilehash: 23a885194a1bfa6c0f468188944dd00d309f3a09
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f8e6cc20b010df5deafe478bbd718946f328a6af
+ms.sourcegitcommit: 166bf635c0905ae12c04b1865cb17aadef81e82a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60194407"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60245731"
 ---
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntexのドキュメント理解モデルを適用する
 
@@ -38,7 +38,7 @@ ms.locfileid: "60194407"
 
 モデルをSharePointドキュメントライブラリに適用するには、次の操作を行います。
 
-1. モデル ホーム ページの [ライブラリにモデル **を適用]** タイルで、[モデルの適用] **を選択します**。 または、[モデルの適用 **先] セクションで** 、[+ライブラリの追加]  **を選択します** 。
+1. モデル ホーム ページの [ライブラリにモデル **を適用]** タイルで、[モデルの適用] **を選択します**。 または、[モデルの適用 **先] セクションで** 、[+ライブラリの追加] **を選択します**。
 
     ![[ライブラリの追加] オプションが強調表示された [モデルの適用場所] セクションのスクリーンショット。](../media/content-understanding/apply-to-library.png)
 

@@ -23,13 +23,13 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: b6c18a9b-2aed-4c84-9d75-af709160258c
-description: '新しいパートナーを見つけるMicrosoft 365、過去に作業したパートナーの連絡先情報を取得する方法について学習します。 '
-ms.openlocfilehash: be68ea0f270a974951b59309139db7773addad62
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 新しいパートナーを見つけるMicrosoft 365、過去に作業したパートナーの連絡先情報を取得する方法について学習します。
+ms.openlocfilehash: d50c829281654842079a2124be4f8a8e16e993bf
+ms.sourcegitcommit: 166bf635c0905ae12c04b1865cb17aadef81e82a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164370"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60245651"
 ---
 # <a name="find-your-partner-or-reseller"></a>パートナーまたは販売店を検索する
 
@@ -41,7 +41,7 @@ ms.locfileid: "60164370"
 
 Open Volume Licensing を使用して Microsoft 365を購入または更新する準備ができている場合や、パートナーとの作業に関する詳細が必要な場合は、以下のオプションを選択してください。 
   
-- [Microsoft PinPoint を使用してパートナーを検索する](https://go.microsoft.com/fwlink/p/?LinkId=613304)
+- [Microsoft 認定サービス パートナーの検索](https://go.microsoft.com/fwlink/p/?LinkId=613304)
     
 - [マイクロソフト ボリューム ライセンスに連絡する](https://go.microsoft.com/fwlink/p/?LinkId=613305)
     

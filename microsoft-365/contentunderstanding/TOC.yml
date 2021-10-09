@@ -78,25 +78,5 @@
       href: push-content-type-to-hub.md
     - name: 用語ストア レポート
       href: term-store-analytics.md
-- name: REST API
-  items:
-    - name: 概要
-      href: rest-api/syntex-model-rest-api.md
-    - name: モデルを作成する
-      href: rest-api/rest-createmodel-method.md
-    - name: GetByUniqueId
-      href: rest-api/rest-getbyuniqueid-method.md
-    - name: GetByTitle
-      href: rest-api/rest-getbytitle-method.md
-    - name: モデルを適用する
-      href: rest-api/rest-applymodel-method.md
-    - name: モデルとライブラリの情報を取得する
-      href: rest-api/rest-getmodelandlibraryinfo.md
-    - name: UpdateModelSettings
-      href: rest-api/rest-updatemodelsettings-method.md
-    - name: BatchDelete
-      href: rest-api/rest-batchdelete-method.md
-    - name: ファイル分類要求の作成
-      href: rest-api/rest-createclassificationrequest.md
-    - name: フォルダー分類要求の作成
-      href: rest-api/rest-createfolderclassificationrequest.md
+- name: 拡張性
+  href: /sharepoint/dev/apis/syntex/syntex-model-rest-api.md

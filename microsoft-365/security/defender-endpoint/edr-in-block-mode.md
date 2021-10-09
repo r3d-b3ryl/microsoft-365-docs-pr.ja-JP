@@ -15,17 +15,17 @@ ms.localizationpriority: medium
 ms.custom:
 - next-gen
 - edr
-ms.date: 08/31/2021
+ms.date: 10/07/2021
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 25b5aa85bc11cf7819c6a878aebdf2cbcdeeb237
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: 9ab524d58e318625773291a9d206ff32753eca91
+ms.sourcegitcommit: 166bf635c0905ae12c04b1865cb17aadef81e82a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/08/2021
-ms.locfileid: "60239866"
+ms.locfileid: "60245695"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>ブロック モードのエンドポイントでの検出と対応 (EDR)
 
@@ -80,7 +80,7 @@ EDRモードのデータは、脅威の検出[と統合& 脆弱性の管理。](
 |要件|詳細|
 |---|---|
 |アクセス許可|[グローバル管理者] または [セキュリティ管理者] ロールが [管理者] に割り当てられている必要[Azure Active Directory。](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal) 詳細については、「基本アクセス許可 [」を参照してください](basic-permissions.md)。|
-|オペレーティング システム|デバイスは、次のいずれかのバージョンのデバイスを実行している必要Windows。 <ul><li>Windows 10 (すべてのリリース)</li><li>Windows Server バージョン 1803 以降</li><li>Windows Server 2019</li><li>Windows Server 2022</li><li>Windows Server 2016 (Microsoft Defender ウイルス対策モードの場合のみ)</li></ul>|
+|オペレーティング システム|デバイスは、次のいずれかのバージョンのデバイスを実行している必要Windows。 <br/>- Windows 10 (すべてのリリース)<br/>- Windows Server バージョン 1803 以降<br/>- Windows Server 2019<br/>- Windows Server 2022<br/>- Windows Server 2016 (Microsoft Defender ウイルス対策モードの場合のみ)|
 |Microsoft Defender for Endpoint|デバイスは Defender for Endpoint にオンボードされている必要があります。 「 [エンドポイント用 Microsoft Defender の最小要件」を参照してください](minimum-requirements.md)。|
 |Microsoft Defender ウイルス対策|デバイスには、アクティブ Microsoft Defender ウイルス対策パッシブ モードでインストールおよび実行されている必要があります。 [アクティブMicrosoft Defender ウイルス対策パッシブ モードの状態を確認します](#how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode)。|
 |クラウドによる保護|Microsoft Defender ウイルス対策保護を有効にするように[構成する必要があります](enable-cloud-protection-microsoft-defender-antivirus.md)。|
@@ -128,8 +128,8 @@ Windows 10、Windows Server、バージョン 1803 以降、Windows Server 2019�
 
 |メソッド|Procedure|
 |---|---|
-|PowerShell|<ol><li>選択したスタート メニュー入力を開始し、結果 `PowerShell` でWindows PowerShellを開きます。</li><li>種類`Get-MpComputerStatus`</li><li>結果の一覧の **[AMRunningMode]** 行で、次のいずれかの値を探します。<ul><li>`Normal`</li><li>`Passive Mode`</li></ul></li></ol> <p> 詳細については [、「Get-MpComputerStatus」を参照してください](/powershell/module/defender/get-mpcomputerstatus)。|
-|コマンド プロンプト|<ol><li>コマンド プロンプトをスタート メニューし、入力を開始し、結果 `Command Prompt` Windowsコマンド プロンプトを開きます。</li><li>種類`sc query windefend`</li><li>結果の一覧の STATE **行で、** サービスが実行されているのを確認します。</li></ol>|
+|PowerShell|1. 選択したスタート メニュー入力を開始し、結果 `PowerShell` でWindows PowerShellを開きます。<br/><br/>2. と入力します `Get-MpComputerStatus` 。<br/><br/>3. 結果の一覧の **[AMRunningMode]** 行で、次のいずれかの値を探します。<br/>- `Normal`<br/>- `Passive Mode`<br/><br/>詳細については [、「Get-MpComputerStatus」を参照してください](/powershell/module/defender/get-mpcomputerstatus)。|
+|コマンド プロンプト|1. コマンド を選択スタート メニュー入力を開始し、結果 `Command Prompt` Windowsコマンド プロンプトを開きます。<br/><br/>2. と入力します `sc query windefend` 。<br/><br/>3. 結果の一覧の **STATE** 行で、サービスが実行されているのを確認します。 |
 
 ### <a name="how-do-i-confirm-that-edr-in-block-mode-is-turned-on-with-microsoft-defender-antivirus-in-passive-mode"></a>パッシブ モードでブロック モードEDRがオンになっていることを確認するには、Microsoft Defender ウイルス対策確認する方法を示します。
 

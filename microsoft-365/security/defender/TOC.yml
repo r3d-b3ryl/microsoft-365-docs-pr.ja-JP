@@ -138,12 +138,6 @@
               href: incident-queue.md
             - name: インシデントを管理する
               href: manage-incidents.md
-            - name: インシデントを調査する
-              href: investigate-incidents.md
-            - name: アラートを調査する
-              href: investigate-alerts.md
-            - name: ユーザーの調査
-              href: investigate-users.md
             - name: 最初のインシデントに対応する
               items:
                 - name: 概要
@@ -162,6 +156,14 @@
                       href: first-incident-path-phishing.md
                     - name: ID
                       href: first-incident-path-identity.md
+            - name: インシデントを調査する
+              items:
+                - name: インシデント
+                  href: investigate-incidents.md
+                - name: アラート
+                  href: investigate-alerts.md
+                - name: ユーザー
+                  href: investigate-users.md
             - name: インシデント対応プレイブック
               href: /security/compass/incident-response-playbooks
             - name: インシデントのメール通知を取得する
@@ -324,14 +326,6 @@
           href: integrate-microsoft-365-defender-secops-use-cases.md
         - name: 手順 6. SOC メンテナンス タスク
           href: integrate-microsoft-365-defender-secops-tasks.md
-    - name: 使い方ガイド
-      items:
-        - name: 試用版ラボまたはパイロット環境を作成する
-          href: eval-overview.md
-        - name: パイロット プレイブックを実行する
-          href: eval-overview.md
-        - name: よくあるご質問 (FAQ) をオンにする
-          href: m365d-enable-faq.md
     - name: 参照
       items:
         - name: アクセス許可と設定

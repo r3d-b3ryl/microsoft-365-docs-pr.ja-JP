@@ -978,8 +978,16 @@
           href: compliance-manager-setup.md
         - name: 評価の作成と管理
           href: compliance-manager-assessments.md
-        - name: 評価テンプレートの使用
+        - name: 評価テンプレートの詳細情報
           href: compliance-manager-templates.md
+        - name: 評価テンプレートの作成
+          href: compliance-manager-templates-create.md
+        - name: 評価テンプレートの拡張
+          href: compliance-manager-templates-extend.md
+        - name: 評価テンプレートの変更
+          href: compliance-manager-templates-modify.md
+        - name: Excel の書式テンプレート データ
+          href: compliance-manager-templates-format-excel.md
         - name: コンプライアンスマネージャーテンプレートの一覧
           href: compliance-manager-templates-list.md
         - name: 改善アクションの割り当てと完了

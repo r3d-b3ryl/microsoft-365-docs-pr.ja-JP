@@ -18,12 +18,12 @@ manager: dansimp
 ms.technology: mde
 ms.date: 10/07/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: ea87ef0acbcd0cda0fb9d4861042ac1e181ff7fb
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: a5f5428ce3c710cc99c7c86306a64501419ae60f
+ms.sourcegitcommit: 166bf635c0905ae12c04b1865cb17aadef81e82a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/08/2021
-ms.locfileid: "60239626"
+ms.locfileid: "60245671"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>更新Microsoft Defender ウイルス対策を管理し、基準計画を適用する
 
@@ -84,8 +84,26 @@ Microsoft Defender ウイルス対策プラットフォーム更新 [プログ�
 - パフォーマンスの向上。
 - サービスの改善。そして
 - 統合の改善 (クラウド[、Microsoft 365 Defender)。](/microsoft-365/security/defender/microsoft-365-defender)
-<br/>
+<br/><br/>
 <details>
+<summary> 2021 年 9 月 (プラットフォーム: 4.18.2109.6 |エンジン: 1.1.18600.4)</summary>
+
+&ensp;セキュリティ インテリジェンス更新プログラムのバージョン: **1.351.7.0**<br/>
+&ensp;リリース: **2021 年 10 月 7 日**<br/>
+&ensp;プラットフォーム: **4.18.2109.6**<br/>
+&ensp;エンジン: **1.1.18600.4**<br/>
+&ensp;サポート フェーズ: **セキュリティと重要な更新プログラム**<br/>
+
+エンジンのバージョン: 1.1.18600.4 セキュリティ インテリジェンス更新プログラムのバージョン: 更新プログラム
+
+### <a name="whats-new"></a>新機能
+- エンジンとプラットフォームの更新プログラムMicrosoft Defender ウイルス対策新しい遅延リング。 このリングをオプトインするデバイスは、48 時間の遅延で更新プログラムを受信します。 新しい遅延リングは、重要な環境にのみ推奨されます。 [「Microsoft Defender 更新プログラムの段階的なロールアウト プロセスの管理」を参照してください](manage-gradual-rollout.md)。
+- Microsoft Defender 更新プログラムの段階的なロールアウト プロセスの改善
+
+### <a name="known-issues"></a>既知の問題
+既知の問題はありません
+<br/>
+</details><details>
 <summary> 2021 年 8 月 (プラットフォーム: 4.18.2108.7 |エンジン: 1.1.18500.10)</summary>
 
 &ensp;セキュリティ インテリジェンス更新プログラムのバージョン: **1.349.22.0**<br/>
@@ -123,14 +141,19 @@ Microsoft Defender ウイルス対策プラットフォーム更新 [プログ�
 ### <a name="known-issues"></a>既知の問題
 既知の問題はありません
 <br/>
-</details><details>
+</details>
+
+### <a name="previous-version-updates-technical-upgrade-support-only"></a>以前のバージョンの更新プログラム: 技術アップグレードのサポートのみ
+
+新しいパッケージ バージョンがリリースされると、以前の 2 つのバージョンのサポートはテクニカル サポートにのみ縮小されます。 このセクションに記載されているバージョンより古いバージョンで、テクニカル アップグレード のサポートにのみ提供されます。
+<details>
 <summary> 2021 年 6 月 (プラットフォーム: 4.18.2106.5 |エンジン: 1.1.18300.4)</summary>
 
 &ensp;セキュリティ インテリジェンス更新プログラムのバージョン: **1.343.17.0**<br/>
 &ensp;リリース: **2021 年 6 月 28 日**<br/>
 &ensp;プラットフォーム: **4.18.2106.5**<br/>
 &ensp;エンジン: **1.1.18300.4**<br/>
-&ensp;サポート フェーズ: **セキュリティと重要な更新プログラム**<br/>
+&ensp;サポート フェーズ: **テクニカル アップグレード のサポート (のみ)**<br/>
 
 ### <a name="whats-new"></a>新機能
 - Microsoft Defender 更新プログラムの段階的なロールアウト プロセスを管理するための新しいコントロール。 [「Microsoft Defender 更新プログラムの段階的なロールアウト プロセスの管理」を参照してください](manage-gradual-rollout.md)。
@@ -141,12 +164,7 @@ Microsoft Defender ウイルス対策プラットフォーム更新 [プログ�
 ### <a name="known-issues"></a>既知の問題
 既知の問題はありません
 <br/>
-</details>
-
-### <a name="previous-version-updates-technical-upgrade-support-only"></a>以前のバージョンの更新プログラム: 技術アップグレードのサポートのみ
-
-新しいパッケージ バージョンがリリースされると、以前の 2 つのバージョンのサポートはテクニカル サポートにのみ縮小されます。 このセクションに記載されているバージョンより古いバージョンで、テクニカル アップグレード のサポートにのみ提供されます。
-<details>
+</details><details>
 <summary> May-2021 (プラットフォーム: 4.18.2105.4 |エンジン: 1.1.18200.4)</summary>
 
 &ensp;セキュリティ インテリジェンス更新プログラムのバージョン: **1.341.8.0**<br/>

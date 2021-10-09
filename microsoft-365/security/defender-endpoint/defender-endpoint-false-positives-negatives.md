@@ -20,14 +20,15 @@ ms.collection:
 - m365solution-scenario
 - m365scenario-fpfn
 ms.topic: how-to
+ms.date: 10/07/2021
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: 3182c8360628ab7227840951cb69cc7fc38bdc55
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 17fac205740fca442489ae0608e7998b894128d1
+ms.sourcegitcommit: 166bf635c0905ae12c04b1865cb17aadef81e82a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60163110"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60245753"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint での誤検出/検出漏れに対処する
 
@@ -79,7 +80,7 @@ ms.locfileid: "60163110"
    |アラートの状態|操作|
    |---|---|
    |アラートは正確です|アラートを割り当て、さらに [調査](investigate-alerts.md) します。|
-   |アラートは誤検知です|<ol><li>[アラートを誤検知](#classify-an-alert) として分類します。</li><li>[アラートを抑制します](#suppress-an-alert)。</li><li>[Microsoft](#indicators-for-microsoft-defender-for-endpoint) Defender for Endpoint のインジケーターを作成します。</li><li>[分析のためにファイルを Microsoft に提出します](#part-4-submit-a-file-for-analysis)。</li></ol>|
+   |アラートは誤検知です|1. [アラートを誤検知](#classify-an-alert) として分類します。<br/><br/>2. [アラートを抑制します](#suppress-an-alert)。<br/><br/>3. [Microsoft](#indicators-for-microsoft-defender-for-endpoint) Defender for Endpoint のインジケーターを作成します。<br/><br/>4. [分析のためにファイルを Microsoft に提出します](#part-4-submit-a-file-for-analysis)。|
    |アラートは正確ですが、良性 (重要ではない)|[アラートを正の](#classify-an-alert) 値として分類し、アラート [を抑制します](#suppress-an-alert)。|
 
 ### <a name="classify-an-alert"></a>アラートの分類
