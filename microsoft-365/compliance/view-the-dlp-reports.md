@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: Office 365 の DLP レポートを使用して、DLP ポリシーの一致、上書き、または誤検知の数を表示し、時間の流れによって上昇または下向きかどうかを確認します。
-ms.openlocfilehash: c585d65a9ce91ca0fae3881efc107efdd4537889
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 711ed74ca53ec09be6b2fd5738246dffab332307
+ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198579"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60264938"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>データ損失防止のレポートの表示
 
@@ -88,7 +88,7 @@ DLP ポリシーでユーザーがそれを上書きすることを許可して�
 
 セキュリティ &amp; コンプライアンス センターのほとんどのコマンドレットを使用するには、次のようにする必要があります。
   
-1. [Connect PowerShell を使用 &amp; してセキュリティ コンプライアンス センターにアクセスする](/powershell/exchange/connect-to-scc-powershell&amp;clcid=0x409)
+1. [Connect PowerShell を使用 &amp; してセキュリティ コンプライアンス センターにアクセスする](/powershell/exchange/connect-to-scc-powershell)
     
 2. これらのセキュリティ コンプライアンス センター [のコマンドレット &amp; を使用する](/powershell/exchange/exchange-online-powershell)
     

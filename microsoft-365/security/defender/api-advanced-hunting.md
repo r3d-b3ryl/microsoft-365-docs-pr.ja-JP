@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 2752de976329f3fbef047557e6a626afd05a520f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a7be2c43a2ff97fddfa9db0a6d02bcc611e13173
+ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206639"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60264866"
 ---
 # <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender高度なハンティング API
 
@@ -46,7 +46,7 @@ ms.locfileid: "60206639"
 
 1. クエリは、過去 30 日間のデータを探索して返します。
 2. 結果は、最大 100,000 行を返す場合があります。
-3. テナントごとに 1 分あたり最大 15 回の呼び出しを行います。
+3. テナントごとに 1 分あたり最大 45 回の通話を行います。
 4. テナントが 100% に達した場合、次の 15 分のサイクル終了までクエリはブロックされます。
 5. 1 つの要求が 10 分以上実行された場合、その要求はタイム アウトし、エラーを返します。
 6. HTTP 応答コードは、送信された要求の数または割り当てられた実行時間のいずれかによって、クォータに達 `429` したかどうかを示します。 応答本文を読んで、到達した制限を理解します。 
@@ -86,9 +86,9 @@ Content-Type | application/json
 
 要求本文で、JSON オブジェクトに次のパラメーターを指定します。
 
-パラメーター | 型 | 説明
+パラメーター | 種類 | 説明
 -|-|-
-Query | テキスト | 実行するクエリ。 **注: 必須**
+クエリ | テキスト | 実行するクエリ。 **注: 必須**
 
 ## <a name="response"></a>応答
 
@@ -104,7 +104,7 @@ Query | テキスト | 実行するクエリ。 **注: 必須**
 
 次の例では、ユーザーが以下のクエリを送信し、、 、および を含む API 応答オブジェクト `Stats` `Schema` を受け取ります `Results` 。
 
-### <a name="query"></a>Query
+### <a name="query"></a>クエリ
 
 ```json
 {

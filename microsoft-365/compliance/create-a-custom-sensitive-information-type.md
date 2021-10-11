@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: セキュリティ コンプライアンス センターで DLP のカスタム機密情報の種類を作成、変更、削除、およびテストする&説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6fa6527c2c33eb4bf245f6e1a54a1d6995d074b1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9d1856d0019a95f200b6be33f3f29ae3e471685e
+ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60167404"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60264926"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>カスタムの機密情報の種類を使用する前に
 
@@ -57,7 +57,7 @@ ms.locfileid: "60167404"
 
 完全に定義した新しい機密情報の種類を作成するには、次の手順を実行します。 
 
-1. コンプライアンス センターで、**[データの分類]** \> **[機密情報の種類]** の順に移動し、**[情報の種類を作成]** を選択します。
+1. コンプライアンス センターで、[データ分類] [機密情報の種類] \> **に移動し、[** 機密情報の **種類の作成] を選択します**。
 2. **[名前]** および **[説明]** の値を入力し、**[次へ]** を選択します。
 3. **[パターンの作成]** を選択します。 新しい機密情報の種類を定義するときに、それぞれ異なる要素と信頼度レベルを持つ複数のパターンを作成できます。
 4. パターンの既定の信頼度レベルを選択します。 値は、**[低い信頼度]**、**[中程度の信頼度]**、および **[高い信頼度]** です。

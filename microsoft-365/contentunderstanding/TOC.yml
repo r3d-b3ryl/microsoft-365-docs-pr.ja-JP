@@ -79,4 +79,4 @@
     - name: 用語ストア レポート
       href: term-store-analytics.md
 - name: 拡張性
-  href: /sharepoint/dev/apis/syntex/syntex-model-rest-api.md
+  href: /sharepoint/dev/apis/syntex/syntex-model-rest-api

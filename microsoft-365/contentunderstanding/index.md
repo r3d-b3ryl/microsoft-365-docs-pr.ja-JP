@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Microsoft SharePoint Syntex に関するリソースの検索方法について説明します。
-ms.openlocfilehash: 0b81da28d587b9041e6a59e183926f4486282d36
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6e738a90486b0aa1d37c483a6e369a84a2196a9d
+ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195487"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60264710"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex の概要
 
@@ -70,6 +70,7 @@ SharePoint Syntex は、次のような組織支援をする Microsoft 365 サ�
 | この情報を探している場合: | 参照先: |
 |:-----|:-----|
 |SharePoint Syntex の設定と構成|[SharePoint Syntex の設定](./set-up-content-understanding.md)|
+|SharePoint Syntex のライセンスの詳細|[SharePoint Syntex のライセンス](./syntex-licensing.md)|
 |画像のタグ付けとを無効にする方法|[SharePoint Syntex での画像のタグ付け](./image-tagging.md)|
 
 ## <a name="models"></a>モデル
@@ -95,3 +96,10 @@ SharePoint Syntex ライセンスでは、ユーザーにプレミアム コン�
 |SharePoint のライブラリとリストでコンテンツタイプの一貫性をさらに向上させる方法について説明します。|[コンテンツタイプをハブにプッシュする](./push-content-type-to-hub.md)|
 |使用できる用語ストア レポートについての詳細情報|[用語ストア レポート](./term-store-analytics.md)|
 
+## <a name="extensibility"></a>拡張性
+
+REST API を使用して、ドキュメント理解モデルを作成し、1 つ以上のライブラリにモデルを適用または削除し、モデルに関する情報を取得または更新します。
+
+| この情報を探している場合: | 参照先: |
+|:-----|:-----|
+|ドキュメント理解モデルに REST API を使用する|[SharePoint Syntex ドキュメント理解モデル REST API](/sharepoint/dev/apis/syntex/syntex-model-rest-api)|

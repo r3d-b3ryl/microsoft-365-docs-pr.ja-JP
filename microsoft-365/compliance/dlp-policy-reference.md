@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: DLP ポリシー コンポーネントと構成リファレンス
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: b2cfc2e9387b9c29fd7bd6141046436254f88704
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d5b4c4f99d146ceff683a4fbf6dcb36018d40a16
+ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201243"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60264773"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>データ損失防止ポリシーリファレンス
 
@@ -107,7 +107,7 @@ DLP ポリシー テンプレートは、次の 4 つのカテゴリに事前に
 DLP ポリシーは、複数の場所にわたって機密情報を含むアイテムを検索して保護できます。
 
 
-|Location  |範囲を含める/除外する  |データ状態  |追加の前提条件 |
+|場所  |範囲を含める/除外する  |データ状態  |追加の前提条件 |
 |---------|---------|---------|---------|
 |Exchangeメールをオンラインで送信する |配布グループ | data-in-motion| no |
 |SharePointサイト   |sites       | data-at-rest </br> data-in-use | no|
@@ -322,7 +322,7 @@ SIT には事前に定義された信頼 [**度が設定されています**](ht
 
 ![除外を含む HIPPA ポリシー](../media/dlp-rule-exceptions.png)
 
-場所でサポートされる例外条件は、すべての包含条件と同じです。唯一の違いは、サポートされている各条件に対して "If を除く" の事前保留です。
+場所でサポートされる例外条件は、すべての包含条件と同じです。唯一の違いは、サポートされている各条件に対して "If を除く" の事前保留です。 ルールに例外だけが含まれている場合、除外条件を満たしていないすべての電子メールまたはファイルに適用されます。
 
 すべての場所が包括的な条件をサポートしているのと同じ方法です。
 
@@ -332,7 +332,7 @@ SIT には事前に定義された信頼 [**度が設定されています**](ht
 
 - **コンテンツが含** まれている場合を除く 
 
-### <a name="actions"></a>Actions 
+### <a name="actions"></a>アクション 
 
 包括的な ***conditions** _ および排他例外 _**_ フィルターを介してそれを行 _**_ うアイテムには、ルールで定義されているアクションが適用されます。 アクションをサポートするために必要なオプションを構成する必要があります。 たとえば、[アクセスを制限する] Exchangeを使用して [アクセスを制限する] を選択するか、Microsoft 365 *場所のコンテンツ* を暗号化する * アクションを選択する場合は、次のオプションから選択する必要があります。
 

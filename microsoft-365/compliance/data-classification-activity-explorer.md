@@ -18,16 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: アクティビティ エクスプローラーでは、ラベル付きコンテンツを取り扱うユーザーの操作の確認およびフィルター処理を行い、データ分類機能の機能性を完全なものにします。
-ms.openlocfilehash: d44d285959e0529a694b2022d35f2b7e7a575fdc
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 113fd3ec196ec6b16c49435e14ed213cd193e5db
+ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192261"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60264746"
 ---
 # <a name="get-started-with-activity-explorer"></a>アクティビティ エクスプローラーの使用を開始する
 
-データ[分類の概要と](data-classification-overview.md)[コンテンツ エクスプローラーの](data-classification-content-explorer.md)タブを使用すると、どのコンテンツが検出され、ラベル付けされ、そのコンテンツがどこに表示されるのかを確認できます。 アクティビティ エクスプローラーでは、ラベル付きコンテンツに対して実行される内容を監視できるようにすることで、こうした一連の機能性を完全なものにします。 アクティビティ エクスプローラーは、ラベル付きコンテンツのアクティビティの履歴ビューを提供します。 アクティビティ情報は、統合監査ログMicrosoft 365収集され、アクティビティ エクスプローラー UI で変換され、使用可能になります。 
+データ[分類の概要と](data-classification-overview.md)[コンテンツ エクスプローラーの](data-classification-content-explorer.md)タブを使用すると、どのコンテンツが検出され、ラベル付けされ、そのコンテンツがどこに表示されるのかを確認できます。 アクティビティ エクスプローラーでは、ラベル付きコンテンツに対して実行される内容を監視できるようにすることで、こうした一連の機能性を完全なものにします。 アクティビティ エクスプローラーは、ラベル付きコンテンツのアクティビティの履歴ビューを提供します。 アクティビティ情報は、統合監査Microsoft 365ログから収集され、変換され、アクティビティ エクスプローラー UI で使用できます。 アクティビティ エクスプローラーは、最大 30 日分のデータについて報告します。
 
 ![プレースホルダー スクリーンショットの概要アクティビティ エクスプローラー。](../media/data-classification-activity-explorer-1.png)
 
@@ -74,6 +74,7 @@ ms.locfileid: "60192261"
 
 - コンプライアンス管理者
 - セキュリティ管理者
+- セキュリティ閲覧者
 
 ## <a name="activity-types"></a>アクティビティの種類
 

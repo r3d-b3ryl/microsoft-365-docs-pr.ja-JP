@@ -11,23 +11,20 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 09/23/2021
+ms.date: 10/11/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 6c9b334f2da04c3ad55f8c1faedad5f823c2571a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9aecf89ca654bb4f1896fb8f632a72da83f2f1e9
+ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60151904"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60264698"
 ---
 # <a name="report-on-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策のレポート
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **適用対象:**
 
@@ -36,8 +33,6 @@ ms.locfileid: "60151904"
 Microsoft Defender ウイルス対策は、Windows 10 Server 2019、Windows Server 2022、および Windows に組み込Windows Server 2016。 Microsoft Defender ウイルス対策は、Microsoft Defender for Endpoint の次世代保護です。 次世代の保護は、電子メール、アプリ、クラウド、Web 全体のウイルス、マルウェア、スパイウェアなどのソフトウェアの脅威からデバイスを保護するのに役立ちます。
 
 このMicrosoft Defender ウイルス対策、保護状態とアラートを確認するためのいくつかのオプションがあります。 メール通知を監視[Microsoft エンドポイント マネージャー、またはMicrosoft Defender ウイルス対策](/configmgr/protect/deploy-use/monitor-endpoint-protection)を[作成するために使用できます](/configmgr/protect/deploy-use/endpoint-configure-alerts)。 または、 を使用して保護を[監視Microsoft Intune。](/intune/introduction-intune)
-
-Microsoft Operations Management [](/windows/deployment/update/update-compliance-get-started) Suite には、保護更新プログラムやリアルタイム保護設定など、Microsoft Defender ウイルス対策に関する重要な問題を報告する更新コンプライアンス アドインがあります。
 
 サードパーティのセキュリティ情報とイベント管理 (SIEM) サーバーがある場合は、クライアント イベントWindows Defender[使用することもできます](/windows/win32/events/windows-events)。
 
@@ -49,7 +44,7 @@ Windowsイベントは、セキュリティ アカウント マネージャー (
 
 PowerShell、WMI、またはサーバーを使用して状態を監視または決定Microsoft Azure、(展開、管理、およびレポートオプションの表)[を参照してください](deploy-manage-report-microsoft-defender-antivirus.md#ref2)。
 
-## <a name="related-articles"></a>関連記事
+## <a name="see-also"></a>関連項目
 
 - [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)
 - [Windows Server 2016 および 2019 上の Microsoft Defender ウイルス対策](microsoft-defender-antivirus-on-windows-server.md)

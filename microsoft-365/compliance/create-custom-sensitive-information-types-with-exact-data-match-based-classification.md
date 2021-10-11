@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 完全なデータ一致に基づく分類で、カスタムの機密情報の種類を作成する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 141178db0ba221d6e8ef9c5f3d4d85bb90607fb1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 98dae682c8837a87d7c757b25111f4985e6e6489
+ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60160066"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60264806"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Exact Data Match に基づく分類で、カスタムの機密情報の種類を作成する
 
@@ -37,12 +37,12 @@ ms.locfileid: "60160066"
 
 しかし、汎用的なパターンに基づいて一致を検出するカスタムの機密情報の種類 (SIT) ではなく、正確なデータ値を使用するカスタムの機密情報の種類が必要な場合はどうでしょう。 Exact Data Match (EDM) ベースの分類では、次の目的で設計されたカスタムの機密情報の種類を作成できます。
 
-- 動的に、簡単に更新する
-- 拡張性の高いものにする
-- 結果的に誤検知の数を減らす
-- 構造化された機密データを操作する
-- 機密情報をより安全に処理する
-- さまざまな Microsoft クラウド サービスで使用する
+- 動的で簡単に更新できます。
+- 拡張性が高い。
+- 誤検知の数が少なめになります。
+- 構造化された機密データを扱います。
+- 機密情報を安全に処理します。
+- さまざまな Microsoft クラウド サービスで使用する。
 
 ![EDM ベースの分類。](../media/EDMClassification.png)
 
@@ -62,7 +62,7 @@ EDM ベースの分類を使用すると、機密情報のデータベース内�
 
 この記事で説明されているタスクを実行するには、全体管理者、コンプライアンス管理者、または Exchange Online の管理者である必要があります。 DLP アクセス許可の詳細については、「[アクセス許可](data-loss-prevention-policies.md#permissions)」を参照してください。
 
-これらのサブスクリプションには、EDM ベースの分類が含まれています
+これらのサブスクリプションには、EDM ベースの分類が含まれています。
 
 - Office 365 E5
 - Microsoft 365 E5
@@ -89,9 +89,9 @@ EDM ベースの分類を使用すると、機密情報のデータベース内�
 
 EDM ベースの分類の設定と構成には、次のものが含まれます。
 
-1. [機密データを .csv .tsv 形式で保存する](#save-sensitive-data-in-csv-or-tsv-format)
-2. [機密情報データベース スキーマを定義する](#define-the-schema-for-your-database-of-sensitive-information)
-3. [ルール パッケージを作成する](#set-up-a-rule-package)
+1. [機密データを、.csv .tsv 形式で保存します](#save-sensitive-data-in-csv-or-tsv-format)。
+2. [機密情報データベース スキーマを定義します](#define-the-schema-for-your-database-of-sensitive-information)。
+3. [ルール パッケージを作成します](#set-up-a-rule-package)。
 
 #### <a name="save-sensitive-data-in-csv-or-tsv-format"></a>機密データを .csv .tsv 形式で保存する
 
@@ -269,21 +269,21 @@ EDM ベースの分類の設定と構成には、次のものが含まれます�
 
 ```xml
 <ExactMatch id = "E1CC861E-3FE9-4A58-82DF-4BD259EAB371" patternsProximity = "300" dataStore ="PatientRecords" recommendedConfidence = "65" >
-      <Pattern confidenceLevel="65">
-        <idMatch matches = "SSN" classification = "U.S. Social Security Number (SSN)" />
-      </Pattern>
-      <Pattern confidenceLevel="75">
-        <idMatch matches = "SSN" classification = "U.S. Social Security Number (SSN)" />
-        <Any minMatches ="3" maxMatches ="100">
-          <match matches="PatientID" />
-          <match matches="MRN"/>
-          <match matches="FirstName"/>
-          <match matches="LastName"/>
-          <match matches="Phone"/>
-          <match matches="DOB"/>
-        </Any>
-      </Pattern>
-    </ExactMatch>
+  <Pattern confidenceLevel="65">
+    <idMatch matches = "SSN" classification = "U.S. Social Security Number (SSN)" />
+  </Pattern>
+  <Pattern confidenceLevel="75">
+    <idMatch matches = "SSN" classification = "U.S. Social Security Number (SSN)" />
+    <Any minMatches ="3" maxMatches ="100">
+      <match matches="PatientID" />
+      <match matches="MRN"/>
+      <match matches="FirstName"/>
+      <match matches="LastName"/>
+      <match matches="Phone"/>
+      <match matches="DOB"/>
+    </Any>
+  </Pattern>
+</ExactMatch>
 ```
 
 このサンプルでは、次の点にご注意ください。
@@ -376,14 +376,14 @@ EDM ベースの分類に使用するフィールドの変更など、**edm.xml*
 
 #### <a name="prerequisites"></a>前提条件
 
-- **EDM\_DataUploaders** セキュリティ グループに追加される Microsoft 365 の職場または学校のアカウント
-- EDMUploadAgent を実行するための .NET バージョン 4.6.2 が搭載された Windows 10 または Windows Server 2016 マシン
+- **EDM \_ DataUploaders** セキュリティ Microsoft 365に追加される、ユーザーの仕事用または学校用のアカウント。
+- EDMUploadAgent Windows 10実行Windows Server 2016 .NET バージョン 4.6.2 のコンピューターを使用するコンピューター。
 - 以下のためのアップロード マシン上のディレクトリ。
-  - EDMUploadAgent
-  - この例では、.csv .tsv 形式の機密アイテム **PatientRecords.csv** ファイル
-  - 出力ハッシュファイルとソルト ファイル
-  - **edm.xml** ファイルのデータストア名 (このサンプルでは `PatientRecords`)
-- [完全一致スキーマと機密情報の種類ウィザード](sit-edm-wizard.md)を使用している場合は、それをダウンロードする ***必要が あります***
+  - EDMUploadAgent。
+  - この例では、.csv .tsv 形式の機密アイテム **PatientRecords.csv** ファイルを使用します。
+  - 出力ハッシュ ファイルとソルト ファイルを使用します。
+  - ファイルのデータストア **名** edm.xmlします。この例では、 です `PatientRecords` 。
+- 完全一致スキーマ [と機密情報](sit-edm-wizard.md)の種類ウィザードを使用した場合は、そのスキーマ ***をダウンロード*** する必要があります。
 
 #### <a name="set-up-the-security-group-and-user-account"></a>セキュリティ グループとユーザー アカウントをセットアップする
 
@@ -433,25 +433,25 @@ EDM ベースの分類に使用するフィールドの変更など、**edm.xml*
 
    オプション: 完全一致スキーマと機密情報の種類ウィザードを使ってスキーマ ファイルおよびパターン ファイルを作成した場合は、コマンド プロンプト ウィンドウで次のコマンドを実行します。
 
-   ```dos
+   ```console
    EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>
    ```
 
 5. 機密データをハッシュ化してアップロートするには、コマンド プロンプト ウィンドウで次のコマンドを実行します。
 
-   ```dos
+   ```console
    EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] /ColumnSeparator ["{Tab}"|"|"] /AllowedBadLinesPercentage [value]
    ```
 
    例: **EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml /AllowedBadLinesPercentage 5**
 
    機密データ ファイルの既定の形式はコンマ区切りの値です。 タブ区切りファイルを指定するには、/ColumnSeparator パラメーターで "{Tab}" オプションを指定するか、"|" オプションを指定してパイプ区切りファイルを指定します。
-   機密情報テーブルに正しくない形式の値が含まれているが、無効な行を無視しながら残りのデータをインポートする場合は、コマンドで /AllowedBadLinesPercentage パラメーターを使用できます。 上記の例では、5 パーセントのしきい値を指定します。 つまり、最大 5% の行が無効な場合でも、ツールは機密情報テーブルをハッシュしてアップロードします。 この設定の既定値は 1 パーセントです。 
+   機密情報テーブルに正しくない形式の値が含まれているが、無効な行を無視しながら残りのデータをインポートする場合は、コマンドで **/AllowedBadLinesPercentage** パラメーターを使用できます。 上記の例では、5 パーセントのしきい値を指定します。 つまり、最大 5% の行が無効な場合でも、ツールは機密情報テーブルをハッシュしてアップロードします。 このパラメーターをサポートするツールのバージョンでは、既定のしきい値は 0% です。 したがって、誤った行はエラーの原因になります。 
    このコマンドは、ランダムに生成されたソルト値をハッシュに自動的に追加し、セキュリティを強化します。 オプションで独自のソルト値を使用する場合は、コマンドに **/Salt<saltvalue>** を追加します。 この値は 64 文字の長さにする必要があり、a-z 文字と 0-9 文字のみを使用することができます。
 
 6. 次のコマンドを実行してアップロードの状態を確認します。
 
-   ```dos
+   ```console
    EdmUploadAgent.exe /GetSession /DataStoreName \<DataStoreName\>
    ```
 
@@ -465,23 +465,23 @@ EDM ベースの分類に使用するフィールドの変更など、**edm.xml*
 
 オプション: 完全一致スキーマと機密情報の種類ウィザードを使ってスキーマ ファイルおよびパターン ファイルを作成した場合は、コマンド プロンプト ウィンドウで次のコマンドを実行します。
 
-```dos
+```console
 EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>
 ````
 
 1. コマンド プロンプト ウィンドウで、次のコマンドを実行します。
 
-   ```dos
+   ```console
    EdmUploadAgent.exe /CreateHash /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] /AllowedBadLinesPercentage [value]
    ```
 
    例:
 
-   ```dos
+   ```console
    EdmUploadAgent.exe /CreateHash /DataFile C:\Edm\Data\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml /AllowedBadLinesPercentage 5
    ```
 
-   **/Salt<saltvalue>** オプションを指定しなかった場合、このコマンドは次の拡張子を持つハッシュ化されたファイルとソルト ファイルを出力します。
+   **/Salt\<saltvalue\>** オプションを指定しなかった場合、このコマンドは次の拡張子を持つハッシュ化されたファイルとソルト ファイルを出力します。
 
    - .EdmHash
    - .EdmSalt
@@ -490,19 +490,19 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
 
    ハッシュされたデータをアップロードするには、Windows コマンド プロンプトで次のコマンドを実行します。
 
-   ```dos
+   ```console
    EdmUploadAgent.exe /UploadHash /DataStoreName \<DataStoreName\> /HashFile \<HashedSourceFilePath\>
    ```
 
    例:
 
-   ```dos
+   ```console
    EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\PatientRecords.EdmHash**
    ```
 
    機密データがアップロードされたことを確認するには、コマンド プロンプト ウィンドウで次のコマンドを実行します。
 
-   ```dos
+   ```console
    EdmUploadAgent.exe /GetDataStore
    ```
 
@@ -510,7 +510,7 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
 
    特定のストアへのデータのアップロードをすべて表示する場合は、Windows コマンドプロンプトで次のコマンドを実行します。
 
-   ```dos
+   ```console
    EdmUploadAgent.exe /GetSession /DataStoreName <DataStoreName>
    ```
 
@@ -526,8 +526,8 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
 
 2. 機密データをアプリ (Microsoft Excel など) に再エクスポートし、ファイルを .csv .tsv 形式で保存します。 「[機密データをハッシュしアップロードする](#part-2-hash-and-upload-the-sensitive-data)」で説明した手順の実行時に使用したものと同じファイル名と場所を使用してください。
 
-      > [!NOTE]
-      > .csv または .tsv ファイルの構造 (フィールド名) に変更がない場合は、データを更新するときにデータベース スキーマ ファイルを変更する必要はありません。 ただし、変更が必要な場合は、必要に応じてデータベース スキーマとルール パッケージを編集してください。
+    > [!NOTE]
+    > .csv または .tsv ファイルの構造 (フィールド名) に変更がない場合は、データを更新するときにデータベース スキーマ ファイルを変更する必要はありません。 ただし、変更が必要な場合は、必要に応じてデータベース スキーマとルール パッケージを編集してください。
 
 3. 「[機密データをハッシュしアップロードする](#part-2-hash-and-upload-the-sensitive-data)」の手順の、手順 2 と 3 を自動化するには、[タスク スケジューラ](/windows/desktop/TaskSchd/task-scheduler-start-page) を使用します。 タスクのスケジュールを設定するにはいくつかの方法があります。
 
@@ -650,7 +650,7 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 
 10. **[条件]** セクションの **[+ 条件の追加]** リストで、**[コンテンツに機密情報の種類を含む]** を選択します。
 
-      ![コンテンツには、機密情報の種類が含まれる。](../media/edm-dlp-newrule-conditions.png)
+    ![コンテンツには、機密情報の種類が含まれる。](../media/edm-dlp-newrule-conditions.png)
 
 11. ルール パッケージのセットアップ時に作成した機密情報の種類を検索し、**[+ 追加]** を選択します。
     次に、**[完了]** を選択します。

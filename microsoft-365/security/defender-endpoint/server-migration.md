@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6d40ed80bdbf77e6cbc2c9489462c734840755cd
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: 50077baad1bb028e9686cf29105ec2c05eb25024
+ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240608"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60264782"
 ---
 # <a name="server-migration-scenarios-from-the-previous-mma-based-microsoft-defender-for-endpoint-solution"></a>以前の MMA ベースの Microsoft Defender for Endpoint ソリューションからのサーバー移行シナリオ
 
@@ -49,19 +49,23 @@ ms.locfileid: "60240608"
 
 アップグレードを実行するために、Microsoft Endpoint Configuration Managerまたは Azure Defender が使用されていないか、まだ使用できない場合にアップグレードを容易にするために、このアップグレード スクリプトを[使用できます](https://github.com/microsoft/mdefordownlevelserver)。 これは、次の必要な手順を自動化するのに役立ちます。
 
-1. エンドポイント用 Microsoft Defender の OMS ワークスペースを削除する (省略可能)
-2. インストールされているSystem Center Endpoint Protectionクライアントを削除する
-3. 必要に応じて、(Windows Server 2012 R2)[の前提条件](configure-server-endpoints.md#prerequisites)をダウンロードしてインストールする
-4. エンドポイント用 Microsoft Defender のインストール
+1. エンドポイント用 Microsoft Defender の OMS ワークスペースを削除します (省略可能)。
+2. インストールされているSystem Center Endpoint Protectionクライアントを削除します。
+3. 必要に応じて、(Windows Server 2012 R2)[の前提条件を](configure-server-endpoints.md#prerequisites)ダウンロードしてインストールします。
+4. Microsoft Defender for Endpoint をインストールします。
 5. [グループ ポリシー] からダウンロードしたグループ **ポリシーで使用** するオンボーディング [スクリプト](https://securitycenter.microsoft.com)をMicrosoft Defender セキュリティ センター。
 
-スクリプトを使用するには、インストール パッケージとオンボーディング パッケージを配置したインストール ディレクトリにスクリプトをダウンロードします (「サーバー エンドポイントの構成 [」を参照してください](configure-server-endpoints.md))。
+スクリプトを使用するには、インストール パッケージとオンボーディング パッケージも配置したインストール ディレクトリにダウンロードします (「サーバー エンドポイントの構成」 [を参照](configure-server-endpoints.md))。
 
 例: .\install.ps1 -RemoveMMA <YOUR_WORKSPACE_ID> -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd"
 
 ## <a name="microsoft-endpoint-configuration-manager-migration-scenarios"></a>Microsoft Endpoint Configuration Manager移行シナリオ 
 
 ### <a name="you-are-currently-using-microsoft-endpoint-configuration-manager-to-manage-your-servers-including-system-center-endpoint-protection-scep-and-are-running-the-microsoft-monitoring-agent-mma-based-sensor-you-want-to-upgrade-to-the-microsoft-defender-for-endpoint-unified-solution-preview"></a>現在、MICROSOFT ENDPOINT CONFIGURATION MANAGER System Center Endpoint Protection (SCEP) を含むサーバーを管理するためにMicrosoft Monitoring Agentを使用しています。このセンサーは MMA ベースのセンサーを実行しています。 Microsoft Defender for Endpoint 統合ソリューション プレビューにアップグレード **する** 場合。
+
+>[!NOTE]
+>バージョン 2107 Microsoft Endpoint Configuration Managerが必要です。
+
 
 移行手順: 
 
