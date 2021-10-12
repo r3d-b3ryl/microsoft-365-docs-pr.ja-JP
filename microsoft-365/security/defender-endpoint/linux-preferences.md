@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 15dd2d09746ad934e50376c1d4a9172011983cde
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 704c9c11ee12d9e08d5ede73440f5fde7de3d51b
+ms.sourcegitcommit: df1ad7118c4a95a310a4f17124322a6ae6ace26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154820"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60268715"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 上のエンドポイント用 Microsoft Defender の基本設定を設定する
 
@@ -113,9 +113,41 @@ ms.locfileid: "60154820"
 |---|---|
 |**Key**|scanAfterDefinitionUpdate|
 |**データ型**|Boolean|
-|**指定可能な値**|false (既定) <p> true|
-|**コメント**|Defender for Endpoint version 101.41.51 以上で使用できます。|
+|**指定可能な値**|true (既定) <p> false|
+|**コメント**|Defender for Endpoint version 101.45.00 以上で使用できます。|
 |
+
+#### <a name="scan-archives-on-demand-antivirus-scans-only"></a>アーカイブのスキャン (オンデマンド ウイルス対策スキャンのみ)
+
+オンデマンドウイルス対策スキャン中にアーカイブをスキャンするかどうかを指定します。
+
+<br>
+
+****
+
+|説明|値|
+|---|---|
+|**Key**|scanArchives|
+|**データ型**|Boolean|
+|**指定可能な値**|true (既定) <p> false|
+|**コメント**|エンドポイント バージョン 101.45.00 以上の Microsoft Defender で使用できます。|
+|||
+
+#### <a name="degree-of-parallelism-for-on-demand-scans"></a>オンデマンド スキャンの並列処理の程度
+
+オンデマンド スキャンの並列処理の程度を指定します。 これは、スキャンの実行に使用されるスレッドの数に対応し、CPU 使用率とオンデマンド スキャンの期間に影響します。
+
+<br>
+
+****
+
+|説明|値|
+|---|---|
+|**Key**|maximumOnDemandScanThreads|
+|**データ型**|整数|
+|**指定可能な値**|2 (既定)。 使用できる値は、1 ~ 64 の整数です。|
+|**コメント**|エンドポイント バージョン 101.45.00 以上の Microsoft Defender で使用できます。|
+|||
   
 
 #### <a name="exclusion-merge-policy"></a>除外マージ ポリシー
@@ -398,7 +430,7 @@ ms.locfileid: "60154820"
 |---|---|
 |**Key**|diagnosticLevel|
 |**データ型**|String|
-|**指定可能な値**|省略可能 (既定) <p> 必須出席者|
+|**指定可能な値**|省略可能 (既定) <p> 必須|
 |
 
 #### <a name="enable--disable-automatic-sample-submissions"></a>自動サンプル申請を有効または無効にする
@@ -485,7 +517,9 @@ ms.locfileid: "60154820"
 {
    "antivirusEngine":{
       "enableRealTimeProtection":true,
-      "maximumOnDemandScanThreads":1,
+      "scanAfterDefinitionUpdate":true,
+      "scanArchives":true,
+      "maximumOnDemandScanThreads":2,
       "passiveMode":false,
       "scanAfterDefinitionUpdate":false,
       "exclusionsMergePolicy":"merge",

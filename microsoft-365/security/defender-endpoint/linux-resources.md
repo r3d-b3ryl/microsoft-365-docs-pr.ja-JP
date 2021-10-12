@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 89178fc9c8ec44da0f9f51e2c4bfc6b1dfbab138
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8d7de5d6b897d93b0112745ed566879a451e5448
+ms.sourcegitcommit: df1ad7118c4a95a310a4f17124322a6ae6ace26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60211071"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60268556"
 ---
 # <a name="resources"></a>リソース
 
@@ -106,7 +106,7 @@ Linux で Defender for Endpoint をアンインストールするには、いく
 
 ****
 
-|Group|シナリオ|コマンド|
+|グループ|シナリオ|コマンド|
 |---|---|---|
 |構成|リアルタイム保護のオン/オフ|`mdatp config real-time-protection --value [enabled\|disabled]`|
 |構成|動作監視のオン/オフを切り替えます|`mdatp config behavior-monitoring --value [enabled\|disabled]`
@@ -125,6 +125,9 @@ Linux で Defender for Endpoint をアンインストールするには、いく
 |構成|PUA 保護を有効にする|`mdatp threat policy set --type potentially_unwanted_application --action block`|
 |構成|PUA 保護をオフにする|`mdatp threat policy set --type potentially_unwanted_application --action off`|
 |構成|PUA 保護の監査モードを有効にする|`mdatp threat policy set --type potentially_unwanted_application --action audit`|
+|構成|オンデマンド スキャンの並列処理の程度を構成する|`mdatp config maximum-on-demand-scan-threads --value [numerical-value-between-1-and-64]`|
+|構成|セキュリティ インテリジェンスの更新後にスキャンをオン/オフにする|`mdatp config scan-after-definition-update --value [enabled/disabled]`|
+|構成|アーカイブ スキャンのオン/オフ (オンデマンド スキャンのみ)|`mdatp config scan-archives --value [enabled/disabled]`|
 |Diagnostics|ログ レベルの変更|`mdatp log level set --level verbose [error|warning|info|verbose]`|
 |Diagnostics|診断ログの生成|`mdatp diagnostic create --path [directory]`|
 |正常性|製品の正常性を確認する|`mdatp health`|
@@ -145,34 +148,3 @@ Linux で Defender for Endpoint をアンインストールするには、いく
 |エンドポイントの検出と応答|タグの設定と削除、 `GROUP` サポートのみ|`mdatp edr tag set --name GROUP --value [tag]`|
 |エンドポイントの検出と応答|リストの除外 (ルート)|`mdatp edr exclusion list [processes|paths|extensions|all]`|
 |
-
-## <a name="microsoft-defender-for-endpoint-portal-information"></a>Microsoft Defender for Endpoint ポータル情報
-
-Defender for Endpoint ポータルには、次の 2 つのカテゴリの情報が表示されます。
-
-- 次のウイルス対策アラートを含む。
-  - 重要度
-  - スキャンの種類
-  - デバイス情報 (ホスト名、デバイス識別子、テナント識別子、アプリのバージョン、OS の種類)
-  - ファイル情報 (名前、パス、サイズ、ハッシュ)
-  - 脅威情報 (名前、種類、状態)
-- 次のデバイス情報を含むデバイス情報。
-  - デバイス識別子
-  - テナント識別子
-  - アプリのバージョン
-  - ホスト名
-  - OS の種類
-  - OS のバージョン
-  - コンピューター モデル
-  - プロセッサアーキテクチャ
-  - デバイスが仮想マシンかどうか
-
-### <a name="known-issues"></a>既知の問題
-
-- 製品が期待通り動作している場合でも、Microsoft 365 Defender ポータルのコンピューター情報ページに「センサー データなし、通信障害」が表示される場合があります。 この問題の解決に取り組み中です。
-- ログオンしているユーザーは、ポータルにMicrosoft 365 Defenderされません。
-- SUSE ディストリビューションで *、libatomic1* のインストールが失敗した場合は、OS が登録されているのを検証する必要があります。
-
-   ```bash
-   sudo SUSEConnect --status-text
-   ```

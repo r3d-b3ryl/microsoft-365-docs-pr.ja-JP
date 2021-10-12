@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 事前に構成されたセキュリティ設定を提供することで、セキュリティの既定値が ID 関連の攻撃から組織を保護する方法について学習します。
-ms.openlocfilehash: 49b20e4880774ce97d99dc95e60c0cb417b213bc
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ce8cd568fa452aa6c4ff9b03cf2a17ed57d959b6
+ms.sourcegitcommit: df1ad7118c4a95a310a4f17124322a6ae6ace26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198981"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60268696"
 ---
 # <a name="turn-on-security-defaults"></a>セキュリティの既定値を有効にする
 
@@ -41,7 +41,7 @@ ms.locfileid: "60198981"
 
 セキュリティの既定値を Azure Active Directory (Azure AD) で有効にするか、既に有効になっているか確認するには、次の方法を使用します。
 
-1. グローバル管理者資格情報を<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">使用してMicrosoft 365 管理センター</a>にサインインします。
+1. セキュリティ管理者、条件付<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">きアクセスMicrosoft 365 管理センター</a>グローバル管理者の資格情報を使用して、管理者にサインインします。
 
 2. 左側のウィンドウで、[すべて表示]**を選択し、[** 管理センター] の下の **[表示****]** をAzure Active Directory。
 
@@ -79,7 +79,7 @@ ms.locfileid: "60198981"
 - [Azure 管理に MFA を要求する](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management)
 - [従来の認証をブロックする](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
 - [すべてのユーザーに対して MFA を要求する](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
-- [Azure AD MFA の登録](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)を要求する - Azure AD ID 保護が必要です(これは、AZURE の一部Azure Active Directory Premium P2
+- [MFA Azure ADを要求](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)する - Azure AD ID 保護が必要です。これは、AZURE ACTIVE DIRECTORY PREMIUM P2
 
 条件付きアクセスの詳細については、「条件付きアクセス [とは」を参照してください。](/azure/active-directory/conditional-access/overview) 条件付きアクセス ポリシーの作成の詳細については、「条件付きアクセス ポリシー [の作成」を参照してください](/azure/active-directory/authentication/tutorial-enable-azure-mfa#create-a-conditional-access-policy)。
 

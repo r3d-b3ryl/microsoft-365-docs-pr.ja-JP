@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: キャンバスMicrosoft Teamsクラスを統合する
-ms.openlocfilehash: 91cca1611cc6e84dd3844d68e5e87fe7012048dc
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 77f17e8d64fe2bf565eff6c66aa00e9b566cf796
+ms.sourcegitcommit: df1ad7118c4a95a310a4f17124322a6ae6ace26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150500"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60268732"
 ---
 # <a name="use-microsoft-teams-classes-with-canvas"></a>Canvas でMicrosoft Teamsクラスを使用する
 
@@ -27,75 +27,70 @@ Microsoft Teamsクラスは、ラーニング ツール相互運用性 (LTI) ア
 ## <a name="prerequisites-before-deployment"></a>展開前の前提条件
 
 > [!NOTE]
-> LTI の現在Teamsクラスは、キャンバス ユーザーと制限されたスコープ内Microsoft Azure Active Directory (AAD) の同期のみをサポートします。 
-> - テナントに Microsoft Education ライセンスが必要です。
+> 現在のTeamsクラス LTI では、Canvas ユーザーと制限されたスコープ内Microsoft Azure Active Directory (AAD) の同期のみをサポートします。 
+> - テナントに Microsoft Education ライセンス (A1 以上) が必要です。
 > - Canvas と Microsoft の間でユーザーをマッピングするには、1 つの Microsoft テナントのみを使用できます。
-> - グループの重複を回避するには、学校データ同期 LTI を使用する前に、Teams (SDS) をオフにする必要があります。
+> - テナントは、キャンバス フィールド (電子メール、一意のユーザー ID、SIS ID、または統合 ID) と AAD (ユーザー プリンシパル名 (UPN)、プライマリ 電子メール アドレス (Mail)、または電子メール エイリアス (mailNickname)) のフィールドと完全に一致している必要があります。
+> - SDS を使用してクラスとグループを作成する場合は、SDS でチーム作成オプションを無効にし[](/schooldatasync/group-cleanup)、クラスの重複を避けるためにグループ クリーンアップを実行することをお勧めします。 SDS を使用して、組織とユーザー データを同期できます。
 
-## <a name="grant-admin-consent"></a>管理者の同意を付与する
 
-Instructure Canvas 内で Microsoft Teams 統合を管理する前に、Canvas の **microsoft-Teams-Sync-for-Canvas** Azure アプリを、Microsoft Azure テナントの教育機関の Microsoft Office 365 管理者によって承認してから、Canvas 管理者のセットアップを完了することが重要です。 これらの手順を実行するには、グローバル管理者である必要があります。
+## <a name="enable-the-microsoft-teams-app-in-canvas"></a>Canvas でMicrosoft Teamsアプリを有効にする
+統合を開始するには、開発者キーを有効にし、Microsoft Teams Sync を有効にし、Microsoft-Teams-Sync-for-Canvas アプリを承認することで、Canvas でアプリを有効にする必要があります。 アプリの承認は、アプリを承認できる Microsoft テナント管理者によってのみ実行できます。
 
-1. [ページ] にAzure Active Directory。
+**アプリのMicrosoft Teamsの同期と承認を有効にするには**
 
-2. アプリケーションEnterprise開き **、Microsoft-Teams-Sync-for-Canvas アプリケーションを選択** します。
-
-3. [アクセス **許可] を** 選択し、[管理者の **同意を付与する] を選択します**。
-
-4. アプリケーションに必要なアクセス許可に同意し、同意を与える。
-
-## <a name="microsoft-office-365-admin"></a>Microsoft Office 365管理者
-
-1. Canvas にサインインします。
+1. 管理者として Canvas にサインインします。
 
 2. グローバル ナビゲーション **で [管理者** ] リンクを選択し、アカウントを選択します。
+3. 管理ナビゲーションで、[開発者キー] リンク **を選択** し、[継承] **タブを選択** します。
+4. 展開する LTI アプリを有効にするには、該当する各アプリの **ON** 状態を選択します。
 
-3. 管理ナビゲーションで、[リンク]**リンクを** 設定、[統合]**タブを選択** します。
+5. 管理ナビゲーションで、[リンク]**リンクを** 設定、[統合]**タブを選択** します。
 
-4. トグルMicrosoft Teamsして同期を有効にします。
+6. トグルMicrosoft Teamsして同期を有効にします。 この同期により、コースの登録に基Teamsにクラスを作成できます。
    
    ![Canvas Teams更新された png を同期します。](https://user-images.githubusercontent.com/87142492/128225881-abdfc52d-dc9e-48ad-aec5-f6617c6436f3.png)
 
-5. Microsoft テナント名、login 属性、ドメイン サフィックス、および AAD 参照属性を入力します。
+7. 次のフィールドに適切な情報を入力します。 これらのフィールドは、キャンバス内のユーザーとユーザーを一致AAD。 
+   * テナント **名は** 、Microsoft テナント名です。
+   * Login **Attribute は、** マッピングに使用される次の Canvas ユーザー属性の 1 つです。
+      * **メール** は、Canvas ユーザーの既定のメール アドレスです。 ユーザーが Canvas で既定のメール アドレスを変更した場合、コースへの登録がユーザーの同期をブロックTeams。
+      * **一意のユーザー ID** は、ユーザーの Canvas ログイン ID です。
+      * **SIS ユーザー ID** は、学生情報システム (SIS) から入力され、ユーザーのプロファイル ページで表示できる ID 値です。
+      * **統合 ID** は SIS インポートによってのみ設定され、ユーザーのプロファイル ページで表示できます。 通常、この一意の識別子は教育機関によって提供され、複数のアカウント間でユーザーを識別するためにアカウントの信頼またはコンソートの状況で使用されます。
 
-   これらのフィールドは、キャンバス内のユーザーとユーザーの照合に使用Microsoft Azure Active Directory。 
-   * Login Attribute は、照合に使用される Canvas ユーザー属性です。
-   * サフィックス フィールドは省略可能で、Canvas 属性と Microsoft AAD フィールドの間に正確なマッピングが設定されていない場合にドメインを指定できます。 たとえば、Microsoft AAD の UPN が 'name' の場合、Canvas メールが 'name@example.edu' の場合は、接尾辞フィールドに 「example.edu」 と入力してユーザーを一致できます。
-   * Active Directory Lookup Attribute は、Canvas 属性が一致する Microsoft 側のフィールドです。 UPN、プライマリ メール アドレス、または電子メール エイリアスの間で選択します。
+   * サフィックス **フィールド** は省略可能で、Canvas 属性と Microsoft のフィールドの間に正確なマッピングが含AADできます。 たとえば、Microsoft AAD の UPN が 'name' の場合、キャンバスメールが 'name@example.edu' の場合は、接尾辞フィールドに '@example.edu' と入力してユーザーを一致できます。 ドメインは、前の @でこのフィールドに入力する必要があります。
+   * Active Directory Lookup Attribute は、Canvas 属性AAD一致するフィールドです。 UPN、プライマリ メール アドレス、または電子メール エイリアスの間で選択します。
 
-6. [完了 **したら設定** 更新] を選択します。
+8. [更新 **] を設定** します。
 
-7. Canvas の **Microsoft-Teams-Sync-for-Canvas** Azure アプリへのアクセスを承認するには、[テナント アクセスを **許可する] リンクを選択** します。 Microsoft Identity Platform Admin Consent Endpoint にリダイレクトされます。
+9. Canvas の **Microsoft-Teams-Sync-for-Canvas** Azure アプリへのアクセスを承認するには、[テナント アクセスを **許可する] リンクを選択** します。 Microsoft Identity Platform Admin Consent Endpoint にリダイレクトされます。
 
    ![アクセス許可。](media/permissions.png)
+> [!NOTE] 
+> この手順は、アプリを承認できる Microsoft テナント管理者によって実行する必要があります。
 
-8. **[同意する]** を選択します。
+10. **[同意する]** を選択します。
 
-## <a name="canvas-admin"></a>Canvas Admin
+## <a name="integrate-teams-classes-lti-in-canvas"></a>キャンバスTeams LTI クラスを統合する
 
-LTI 1.3 Microsoft Teamsをセットアップします。
+同期を有効にし、Azure アプリを承認すると、Canvas 管理者は Teams クラス LTI アプリをキャンバス環境に追加して、キャンバス ユーザー インターフェイスのナビゲーションに表示されます。
 
-Canvas 管理者として、環境内に LTI Microsoft Teamsクラスを追加する必要があります。 メイン アカウントの開発者キーの一覧にアクセスし、継承されたキーに切り替えて、LTI ツールTeams有効にします。 アプリの LTI クライアント ID をメモします。
+**キャンバス環境に Teams LTI アプリを追加するには**
 
- - Microsoft Teamsクラス - 170000000000570
-
-1. Access **Admin settings**  >  **Apps**.
-
-2. [+**アプリ] を** 選択して、LTI Teamsを追加します。
+1. [管理設定 **] の**[アプリ]**タブで****、[+ アプリ**] を選択して、LTI Teamsを追加します。
 
    ![外部アプリ。](media/external-apps.png)
 
-3. 構成 **の種類として [クライアント ID 別** ] を選択します。
+3. [構成 **の種類] で**、[クライアント **ID 別] を選択します**。
 
    ![アプリを追加します。](media/add-app.png)
 
-4. 指定されたクライアント ID を入力し、[送信] を **選択します**。
+4. [**クライアント ID]****に、170000000000570** LTI Microsoft Teamsを入力し、[送信] を **選択します**。
 
-   確認のためにクライアント ID Microsoft Teamsクラス LTI アプリ名が表示されます。
+5. 表示される確認で、アプリ名 (Microsoft Teams) を確認し、[インストール] を **選択します**。
 
-5. **[インストール]** を選択します。
-
-   LTI Microsoft Teamsクラスは、外部アプリの一覧に追加されます。
+   LTI Microsoft Teamsクラスが外部アプリの一覧に追加されました。
    
 ## <a name="enabling-the-lti-app-for-canvas-courses"></a>キャンバス コースの LTI アプリを有効にする
 
