@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 異常検出アラートを調査する。
-ms.openlocfilehash: 5d19a5c5dc1b07b0851ec70ada5111ecf5166ab5
-ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
+ms.openlocfilehash: bc82c0a8145b783ea914dd7eec32f3a5f7c6d05e
+ms.sourcegitcommit: df1ad7118c4a95a310a4f17124322a6ae6ace26f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/11/2021
-ms.locfileid: "60264722"
+ms.locfileid: "60268876"
 ---
 # <a name="investigate-anomaly-detection-alerts"></a>異常検出アラートを調査する
 
@@ -38,7 +38,7 @@ ms.locfileid: "60264722"
 - 防御回避
 - 資格情報へのアクセス
 - 検出
-- その後の動き
+- 横方向の移動
 - コレクション
 - 流出
 - 影響
