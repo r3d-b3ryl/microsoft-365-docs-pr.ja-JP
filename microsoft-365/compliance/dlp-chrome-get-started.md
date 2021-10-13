@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft Compliance Extension の準備と導入。
-ms.openlocfilehash: acfadd7ad57b12f4dabf2719457f96e96a5c3f69
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e89edb32e3af5fc661a8f22870e8b7097faf82e2
+ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60175229"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60264914"
 ---
 # <a name="get-started-with-microsoft-compliance-extension"></a>Microsoft Compliance Extension を開始する
 
@@ -115,7 +115,7 @@ Microsoft Compliance Extension の展開は、多段階のプロセスです。�
 
 この設定方法は、組織全体の展開に使用します。
 
-##### <a name="enabling-required-registry-key-via-microsoft-endpoint-manager"></a>Microsoft エンドポイント マネージャーで必要なレジストリ キーを有効にする
+##### <a name="enabling-required-registry-value-via-microsoft-endpoint-manager"></a>Microsoft エンドポイント マネージャーで必要なレジストリ値を有効にする
 
 1. 次のコンテンツを使用して PowerShell スクリプトを作成します。
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: feb05a19264564d98b1b7a79993c1be6d61237a3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3afc71b226bb7858caed439f13c55aee44d81a63
+ms.sourcegitcommit: 11855e904e7f4e57aff302852546a93526cad4dc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195223"
+ms.lasthandoff: 10/12/2021
+ms.locfileid: "60275690"
 ---
 # <a name="web-content-filtering"></a>Web コンテンツ フィルタリング
 
@@ -248,6 +248,8 @@ Web サイトのカテゴリを確認するには、[エンドポイント検索
 ### <a name="known-issues-and-limitations"></a>既知の問題と制限事項
 
 デバイスMicrosoft Edgeの OS 構成が Server **(cmd** \> **Systeminfo** \> **OS Configuration)** の場合にのみサポートされます。 ネットワーク保護は、サポートされているサード パーティ製ブラウザー間のトラフィックのセキュリティ保護を担当するサーバー デバイスの検査モードでのみサポートされます。
+
+ネットワーク保護は現在 SSL 検査をサポートしていないので、通常はブロックされる Web コンテンツ フィルターによって一部のサイトが許可される場合があります。 TLS ハンドシェイクが実行された後に暗号化されたトラフィックの可視性が不足し、特定のリダイレクトを解析しきれなかからサイトが許可されます。  これには、Web ベースのメール ログイン ページからメールボックス ページへのリダイレクトが含まれます。 受け入れられる回避策として、ログイン ページのカスタム ブロック インジケーターを作成して、ユーザーがサイトにアクセスできないか確認できます。 これは、同じ Web サイトに関連付けられている他のサービスへのアクセスをブロックする可能性があります。 
 
 ## <a name="see-also"></a>関連項目
 

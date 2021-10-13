@@ -21,12 +21,12 @@ description: Microsoft 365 コンプライアンス センターを使用して�
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: b50e320752f64360132410c50f454fbfbfd27a82
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5fa3ad73ffbc869a700776319477c5ab3128cae5
+ms.sourcegitcommit: df1ad7118c4a95a310a4f17124322a6ae6ace26f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195619"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60268756"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>コンプライアンス センターで監査ログを検索する
 
@@ -127,8 +127,9 @@ ms.locfileid: "60195619"
 
 - プログラムを使用して監査ログからデータをダウンロードする場合、PowerShell スクリプトを使用する代わりに、Office 365 マネージメント アクティビティ API を使用することをお勧めします。Office 365 マネージメント アクティビティ API は、組織の運用、セキュリティ、コンプライアンス監視ソリューションの開発に使用する REST Web サービスです。詳細については、「[Office 365 マネージメント アクティビティ API リファレンス](/office/office-365-management-api/office-365-management-activity-api-reference)」を参照してください。
 
-- イベントが発生してから対応する監査ログ レコードが監査ログ検索の結果に返されるまで最長 30 分または最長 24 時間かかる場合があります。次の表は、Microsoft 365 のさまざまなサービスで、この処理に要する時間を示しています。
+- Azure Active Directory (Azure AD) は、Microsoft 365 のディレクトリ サービスです。 統合監査ログには、<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>または Azure 管理ポータルで実行されたユーザー、グループ、アプリケーション、ドメイン、およびディレクトリのアクティビティが記録されます。 Azure AD のイベントの全リストについては、「[Azure Active Directory 監査レポートのイベント](/azure/active-directory/reports-monitoring/concept-audit-logs)」を参照してください。
 
+- イベントが発生してから対応する監査ログ レコードが監査ログ検索の結果に返されるまで最長 30 分または最長 24 時間かかる場合があります。次の表は、Microsoft 365 のさまざまなサービスで、この処理に要する時間を示しています。
 
   |Microsoft 365 サービスまたは機能|30 分|24 時間|
   |---|:---:|:---:|
@@ -151,8 +152,6 @@ ms.locfileid: "60195619"
   |Yammer||![チェック マーク。](../media/checkmark.png)|
   |Microsoft Forms|![チェック マーク。](../media/checkmark.png)||
   ||||
-
-- Azure Active Directory (Azure AD) は、Microsoft 365 のディレクトリ サービスです。 統合監査ログには、<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>または Azure 管理ポータルで実行されたユーザー、グループ、アプリケーション、ドメイン、およびディレクトリのアクティビティが記録されます。 Azure AD のイベントの全リストについては、「[Azure Active Directory 監査レポートのイベント](/azure/active-directory/reports-monitoring/concept-audit-logs)」を参照してください。
 
 - Power BI の監査ログは、既定で有効になりません。監査ログで Power BI アクティビティを検索するには、Power BI 管理ポータルで監査を有効にする必要があります。手順については、[Power BI 管理ポータル](/power-bi/service-admin-portal#audit-logs)の [監査ログ] セクションを参照してください。
 
@@ -425,7 +424,6 @@ ms.locfileid: "60195619"
         
     :::column-end:::
 :::row-end:::
-
 
 ### <a name="file-and-page-activities"></a>ファイル アクティビティとページ アクティビティ
 
@@ -826,8 +824,13 @@ Workplace Analytics では、組織において各グループが共同作業を
 |データ アクセス設定の更新|UpdatedDataAccessSetting|管理者はデータ アクセス設定を更新しました。|
 |プライバシー設定の更新|UpdatedPrivacySetting|管理者は、プライバシーの設定 (最小グループ サイズなど) を更新しました。|
 |組織データのアップロード|UploadedOrgData|管理者は組織データのファイルをアップロードしました。|
+|ユーザーが<sup>*</sup>にログインしました| UserLoggedIn |ユーザーが自分の Microsoft 365 ユーザー アカウントにサインインしました。|
+|ユーザーが<sup>*</sup>からログオフしました| UserLoggedOff |ユーザーが Microsoft 365 ユーザー アカウントからサインアウトしました。
 |参照の表示|ViewedExplore|アナリストは、1 つまたは複数の参照ページ タブで視覚エフェクトを表示しました。|
 ||||
+
+> [!NOTE]
+> <sup>*</sup>これらは Azure Active Directory のサインインとサインオフ アクティビティです。 これらのアクティビティは、組織内で Workplace Analytics が有効になっていない場合でもログに記録されます。 ユーザー サインイン アクティビティの詳細については「[Azure Active Directory のサインイン ログ](/azure/active-directory/reports-monitoring/concept-sign-ins)」を参照してください。
 
 ### <a name="microsoft-teams-activities"></a>Microsoft Teams アクティビティ
 

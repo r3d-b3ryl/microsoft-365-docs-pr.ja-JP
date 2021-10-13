@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1ccd9982f387fb5af984bf2b381053d786cc5615
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c67ceb51de8084727d03cb37f69c27b034eef707
+ms.sourcegitcommit: 11855e904e7f4e57aff302852546a93526cad4dc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191997"
+ms.lasthandoff: 10/12/2021
+ms.locfileid: "60275678"
 ---
 # <a name="access-the-microsoft-defender-for-endpoint-apis"></a>Microsoft Defender for Endpoint API にアクセスする
 
@@ -42,7 +42,7 @@ Defender for Endpoint の API の概要については、このビデオをご�
 
 一般に、API を使用するには、次の手順を実行する必要があります。
 
-- [AAD アプリケーションの作成](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-nativeapp)
+- アプリケーションの作成AAD[する](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-nativeapp)
 - このアプリケーションを使用してアクセス トークンを取得する
 - トークンを使用して Defender for Endpoint API にアクセスする
 
@@ -54,7 +54,7 @@ Defender for Endpoint の API の概要については、このビデオをご�
 
   アプリケーション コンテキストを使用して Defender for Endpoint API にアクセスするために必要な手順は次のとおりです。
 
-  1. AAD Web-Application を作成します。
+  1. Web アプリケーションAAD作成します。
   2. 目的のアクセス許可をアプリケーションに割り当てる (たとえば、「アラートの読み取り」、"コンピューターの分離" など)。
   3. このアプリケーションのキーを作成します。
   4. キーを使用してアプリケーションを使用してトークンを取得します。
@@ -66,16 +66,16 @@ Defender for Endpoint の API の概要については、このビデオをご�
 
   ユーザーに代わって API でアクションを実行するために使用します。
 
-  アプリケーション コンテキストを使用して Defender for Endpoint API にアクセスするための手順は次のとおりです。
+  ユーザー コンテキストを使用して Defender for Endpoint API にアクセスするための手順は次のとおりです。
 
-  1. AAD ネイティブ アプリケーションを作成します。
+  1. ネイティブ アプリケーションAAD作成します。
   2. 目的のアクセス許可をアプリケーションに割り当てる (「アラートの読み取り」、"コンピューターの分離" など)。
   3. ユーザー資格情報を使用してアプリケーションを使用してトークンを取得します。
   4. トークンを使用して Microsoft Defender for Endpoint API にアクセスする
 
      詳細については、「ユーザー コンテキストで [アクセスを取得する」を参照してください](exposed-apis-create-app-nativeapp.md)。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [エンドポイント API 用 Microsoft Defender](exposed-apis-list.md)
 - [アプリケーション コンテキストを使用して Microsoft Defender for Endpoint にアクセスする](exposed-apis-create-app-webapp.md)

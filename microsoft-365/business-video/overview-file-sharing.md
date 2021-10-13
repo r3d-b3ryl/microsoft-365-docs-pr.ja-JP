@@ -1,5 +1,5 @@
 ---
-title: ビジネス ファイルを共有する - 概要
+title: ビジネス ファイルの共有 - 概要
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -22,53 +22,53 @@ search.appverid:
 description: ビジネス ファイルを共有する方法の概要。
 ms.openlocfilehash: 7c4dde8f3ce19a2f7c443efffbbc780a746ba174
 ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/06/2021
 ms.locfileid: "60155684"
 ---
 # <a name="overview-of-sharing-business-files"></a>ビジネス ファイルの共有の概要
 
-ビジネスのクライアント、顧客、パートナー、サプライヤー、その他のユーザーとファイルを共有する必要があります。 すべてのユーザーがファイルを検索、開き、編集できるよう、ファイルを共有する方法を説明します。
+クライアント、顧客、パートナー、サプライヤーなど、ビジネスに関わるすべてのユーザーとファイルを共有する必要があります。 すべてのユーザーがファイルを検出し、開いて編集できるようにファイルを共有する方法はどのようなものですか?
 
-|![安全に共有します。](../media/securely-share-file.png)<br/>[会社外のユーザーとファイルを共有する](#share-a-file-with-someone-outside-of-your-company)|![クライアントとの共同作業](../media/share-and-collab-with-partner.png) <br/>[クライアントまたはビジネス パートナーとの共有と共同作業](#share-and-collaborate-with-a-client-or-business-partner) | ![組織内で共有する](../media/share-inside-your-org.png) <br/>[ビジネス内で共有する](#share-inside-your-business) |
+|![安全に共有する](../media/securely-share-file.png)<br/>[社外の他のユーザーとファイルを共有する](#share-a-file-with-someone-outside-of-your-company)|![クライアントと共同で作業する](../media/share-and-collab-with-partner.png) <br/>[クライアントやビジネス パートナーとの共有と共同作業](#share-and-collaborate-with-a-client-or-business-partner) | ![組織内での共有](../media/share-inside-your-org.png) <br/>[ビジネス内での共有](#share-inside-your-business) |
 |--|--|--|
 
-インフォグラフィックをダウンロードして、ビジネス ファイルを共有する方法の概要を簡単に確認できます。 
+インフォグラフィックをダウンロードして、ビジネス ファイルを共有する方法の簡単な概要をご覧ください。 
 
-[PDF](https://go.microsoft.com/fwlink/?linkid=2079435)  | [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438)
+[PDF](https://go.microsoft.com/fwlink/?linkid=2079435) | [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438)
 
-## <a name="share-a-file-with-someone-outside-of-your-company"></a>会社外のユーザーとファイルを共有する
+## <a name="share-a-file-with-someone-outside-of-your-company"></a>社外の他のユーザーとファイルを共有する
 
-- 1 つの方法でのみ必要な場合は、メールで会社外のユーザー (クライアントや顧客など) とファイルを共有します。
-- 応答が必要な場合や、情報を入力して送信する場合は、SharePoint または Microsoft Teams を使用して編集リンクと共有できます。
+- 社外のユーザー (クライアントや顧客など) とメールを介してファイルを共有するのは、一方通行の通信で済む必要がある場合です。
+- 返信が必要な場合や、情報を記入して返信してもらう必要がある場合は、SharePoint や Microsoft Teams を使用し、編集リンクを付けて共有することができます。
 
-セキュリティで保護されたリンク [を使用](securely-share-files-externally.md) して組織外のファイルを共有する方法と、誰でもファイルを共有する [方法について説明します](share-files-externally.md)。
+安全なリンクを使用して[組織外のユーザーとファイルを共有する](securely-share-files-externally.md)方法や、[リンクを知っている全員とファイルを共有する](share-files-externally.md)方法について詳しく説明します。
 
-## <a name="share-and-collaborate-with-a-client-or-business-partner"></a>クライアントまたはビジネス パートナーとの共有と共同作業
+## <a name="share-and-collaborate-with-a-client-or-business-partner"></a>クライアントやビジネス パートナーとの共有と共同作業
 
-プロジェクトの一部として共有する または、ビジネス パートナーまたはサプライヤーとの継続的な関係の一部として? もう少し時間を入れて、チームをチームMicrosoft Teams共有し、一緒に作業することができます。 ビジネスの外部のユーザーと簡単に作業できます。また、追加のサプライヤーやパートナー向けに個別のチャネルを設定して、すべてまっすぐに維持できます。
+プロジェクトの一環として共有しますか? あるいは、ビジネス パートナーやサプライヤーとの継続的な関係の一環として共有しますか? もう少し時間をかけて、Microsoft Teams でチームを設定すると、継続的な共有と共同作業を行う場所を設定することができます。 ビジネス以外のユーザーとの連携も簡単で、追加のサプライヤーやパートナー用に別のチャネルを設定して、すべてを把握することもできます。
 
-1. チームを作成します。
+1. チームを作成する。
 1. ファイルをアップロードします。
-1. パートナーまたはサプライヤーを "ゲスト" ユーザーとしてチームに招待し、アクセス権を与えます。
+1. パートナーやサプライヤーを "ゲスト" ユーザーとしてチームに招待し、アクセス許可を付与します。
 
-セキュリティで保護されたリンクを使用して組織 [外のファイルを共有する方法について説明します](securely-share-files-externally.md)。
+[セキュリティ保護されたリンクでファイルを組織外で共有する](securely-share-files-externally.md)方法について詳しく説明します。
 
-## <a name="share-inside-your-business"></a>ビジネス内で共有する
+## <a name="share-inside-your-business"></a>ビジネス内での共有
 
-ビジネス内で共有するファイルを操作する場合は、ビジネスでチームを設定Microsoft Teams。 そこでファイルを共有し、ビジネスのすべてのユーザーが簡単にファイルを見つけて編集し、同じページで作業しているのが分かっています。
+ビジネス内で共有するファイルで作業を行う場合は、Microsoft Teams でチームを設定するのも良い方法です。 ビジネス内でファイルを共有すると、ビジネスに係るすべてのユーザーが簡単にファイルを見つけて編集でき、全員が同じページで作業していることがわかります。
 
-1. チームを作成し、チームを招待します。
+1. チームを作成し、そこに自分のチームを招待します。
 1. ファイルをアップロードします。
 
-会社のファイルストレージ [と従業員ファイルストレージ](files-to-sharepoint.md) の [詳細については、次のリンクを参照してください](files-to-onedrive.md)。
+[社内ファイル ストレージ](files-to-sharepoint.md)と[従業員ファイル ストレージ](files-to-onedrive.md)の詳細についてはこちらをご覧ください。
 
-## <a name="how-to-get-it-done"></a>完了する方法
+## <a name="how-to-get-it-done"></a>実現方法
 
-少しの助けを必要としますか? 方法はこちら: 
+簡単なサポートが必要な場合は? 方法はこちら: 
 
-- [添付ファイルの送受信](https://support.microsoft.com/office/sending-and-receiving-attachments-d32cd5ad-c7c5-49df-814d-4c17a5d3beb0)
-- [ファイルとフォルダーを共有OneDrive](https://support.microsoft.com/office/share-files-and-folders-with-microsoft-365-business-72f26d6c-bf9e-432c-8b96-e3c2437f5b65)
+- [添付ファイルを送受信する](https://support.microsoft.com/office/sending-and-receiving-attachments-d32cd5ad-c7c5-49df-814d-4c17a5d3beb0)
+- [Onedrive でファイルとフォルダーを共有する](https://support.microsoft.com/office/share-files-and-folders-with-microsoft-365-business-72f26d6c-bf9e-432c-8b96-e3c2437f5b65)
 - [会社全体のチームを作成する](org-wide-team.md)
 - [チームにゲストを追加する](https://support.microsoft.com/office/add-guests-to-a-team-in-teams-fccb4fa6-f864-4508-bdde-256e7384a14f)
