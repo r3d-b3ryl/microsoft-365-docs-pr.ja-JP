@@ -9,18 +9,21 @@ audience: Admin
 ms.topic: article
 ms.custom: admindeeplinkMAC
 ms.service: O365-seccomp
-localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.localizationpriority: medium
+ms.collection:
+- M365-security-compliance
+- m365solution-compliancemanager
+- m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンス マネージャーで評価テンプレートを変更する方法について説明します。
-ms.openlocfilehash: 846c3bc02105a50863afa7caca6041d9f72a5d95
-ms.sourcegitcommit: 81533e5d3e1aee0823539a7c9bdc20dba6541a02
+ms.openlocfilehash: 539da4118843e8d72ead07b06a351d2245c2f6d9
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60223527"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335468"
 ---
 # <a name="modify-assessment-templates-in-microsoft-compliance-manager"></a>Microsoft コンプライアンス マネージャーで評価テンプレートを変更する
 

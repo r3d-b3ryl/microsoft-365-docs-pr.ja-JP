@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 46ba59bc1e9e2d137c254939847c5de8a68a861a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 71dfd68ce690491497e6926eb1046d1c31f41408
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60153224"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335940"
 ---
 # <a name="learn-about-communication-compliance-in-microsoft-365"></a>通信コンプライアンスの詳細については、Microsoft 365
 
@@ -118,7 +118,7 @@ Microsoft 365 のコミュニケーション コンプライアンス ポリシ�
 - **Skype for Business : コミュニケーション コンプライアンス** ポリシーは、オンラインでのチャット通信と関連する添付ファイルのスキャン [をSkype for Businessします](/SkypeForBusiness/skype-for-business-online)。
 - **サード パーティのソース**: サードパーティソースからのメッセージ [](archiving-third-party-data.md)をスキャンして、組織のメールボックスにインポートMicrosoft 365できます。 通信コンプライアンスは、インスタント ブルームバーグなど、いくつかの一般的なプラットフォームへの接続をサポートします。
 
-通信コンプライアンス ポリシーでのメッセージング チャネルのサポートの詳細については、「サポートされる通信の [種類」を参照してください](communication-compliance-feature-reference.md#supported-communication-types)。
+通信コンプライアンス ポリシーでのメッセージング チャネルサポートの詳細については、「通信コンプライアンスを使用してチャネル信号を検出する」 [を参照してください](communication-compliance-channels.md)。
 
 ## <a name="workflow"></a>ワークフロー
 

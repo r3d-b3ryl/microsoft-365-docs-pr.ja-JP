@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 組織の個人データを処理するためのポリシーを作成および管理する方法について説明します。Microsoft 365通知への対応、および問題の修復を行います。
-ms.openlocfilehash: dec7fd3692330dc267bace22451f1dc65ccd8fd9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 78a446851a0ce964e5685b8cfab760214cdf3536
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60179021"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335976"
 ---
 # <a name="create-and-manage-policies-in-privacy-management-preview"></a>プライバシー管理でポリシーを作成および管理する (プレビュー)
 
@@ -64,7 +64,7 @@ ms.locfileid: "60179021"
 
 ポリシーを使用してすぐ開始するには、3 つの事前設定されたポリシーの種類のいずれかを選択します。 これらの詳細を確認するには、[設定の表示] を選択して、データ型、データの場所、ポリシーが一致するトリガー条件など、ポリシーを構成する特定のプロパティを確認できます。
 
-テンプレートからポリシーを直接作成する場合、多くの設定が自動的に選択されます。 これには、既定でポリシーを有効にする必要があります。 ポリシーを完全にアクティブ化する前にアクションでプレビューする場合は、作成後にリストでポリシーを検索し、ポリシーを編集し、テスト モードに切り替えます。 詳細については、「ポリシーを [テストする」を参照してください](#test-your-policy)。
+テンプレートからポリシーを直接作成する場合、多くの設定が自動的に選択されます。 テスト モードで開始され、アクティブな状態全体に切り替わります。 詳細については、「ポリシーを [テストする」を参照してください](#test-your-policy)。
 
 ### <a name="create-custom-policy"></a>カスタム ポリシーの作成
 

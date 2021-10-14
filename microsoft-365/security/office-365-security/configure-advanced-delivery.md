@@ -17,12 +17,12 @@ ms.custom: ''
 description: 管理者は、Exchange Online Protection (EOP) の高度な配信ポリシーを使用して、サポートされている特定のシナリオ (サード パーティのフィッシング シミュレーションとセキュリティ操作 (SecOps) メールボックスに配信されるメッセージ) でフィルター処理すべきではないメッセージを識別する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2133c6139c737b8a0080bfdf60e3a2c5bc8b320d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b8d5aba4974bf4ac179f88a08ae5f8c037fa0a71
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210451"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335540"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>サードパーティのフィッシング シミュレーションをユーザーに配信し、フィルター処理されていないメッセージを SecOps メールボックスに配信する構成
 
@@ -71,7 +71,7 @@ ms.locfileid: "60210451"
   詳細については、「Microsoft 365 Defender[](permissions-microsoft-365-security-center.md)ポータルのアクセス許可」および「Exchange Online」[を参照してください](/exchange/permissions-exo/permissions-exo)。
 
   > [!NOTE]
-  > ユーザーを対応する Azure Active Directory ロールに追加すると、ユーザーは Microsoft 365 Defender ポータルで必要なアクセス許可と、Microsoft 365 の他の機能に対するアクセス許可を与Microsoft 365。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
+  > ユーザーを対応する Azure Active Directory ロールに追加すると、ユーザーは Microsoft 365 Defender ポータルで必要なアクセス許可と、Microsoft 365 の他の機能に対するアクセス許可を与Microsoft 365。 詳細については、[「管理者の役割について」](../../admin/add-users/about-admin-roles.md) を参照してください。
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy"></a>高度な配信Microsoft 365 Defender SecOps メールボックスを構成するには、次のポータルを使用します。
 
@@ -103,7 +103,7 @@ ms.locfileid: "60210451"
 
 3. 開く **[サード パーティ製フィッシング シミュレーションの編集] フライ** アウトで、次の設定を構成します。
 
-   - **ドメイン**: この設定を展開し、ボックスをクリックして値を入力し、Enter キーを押するか、ボックスの下に表示される値を選択して、少なくとも 1 つの電子メール アドレス ドメイン (contoso.com など) を入力します。 必要な回数だけこの手順を繰り返します。 最大 10 のエントリを追加できます。
+   - **ドメイン**: この設定を展開し、ボックスをクリックして値を入力し、Enter キーを押するか、ボックスの下に表示される値を選択して、少なくとも 1 つの電子メール アドレス ドメイン (contoso.com など) を入力します。 必要な回数だけこの手順を繰り返します。 最大 20 のエントリを追加できます。
 
      > [!NOTE]
      > フィッシング シミュレーション ベンダーによって指定されたメッセージまたは `5321.MailFrom` DomainKeys Identified Mail (DKIM) ドメインの SMTP 送信で使用されるアドレス **(MAIL FROM** アドレス、P1 送信者、封筒送信者とも呼ばれる) のドメインを使用します。 

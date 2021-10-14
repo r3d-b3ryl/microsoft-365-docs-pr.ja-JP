@@ -15,16 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: アプリを管理するためのアプリ ガバナンス機能の使用を開始します。
-ms.openlocfilehash: 74a9a9ad29e9d99740500d7dd249fd69cbbc6547
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bb5fa0e54eadec89124c39a350b7591be82b7583
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189575"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335880"
 ---
 # <a name="get-started-with-app-governance-in-preview"></a>アプリ ガバナンスの使用を開始する (プレビュー版)
 
-[![アプリ ガバナンスの無料試用版にサインアップする](../media/manage-app-protection-governance/large-app-governance-banner.png)](https://admin.microsoft.com/Commerce/Trial.aspx?OfferId=20be85b6-b196-402c-82b4-36b4e72862dc)
+[![アプリ ガバナンスの無料試用版にサインアップする](../media/manage-app-protection-governance/large-app-governance-banner.png)](https://aka.ms/appgovernancetrial)
 
 Microsoft Cloud App Security に対してアプリ ガバナンス アドオンの使用を開始するには、次の 3 つの手順を実行する必要があります:
 
@@ -37,7 +37,7 @@ Microsoft Cloud App Security に対してアプリ ガバナンス アドオン�
 
 既存の Microsoft 365 のお客様の場合:
 
-1. [無料試用版のサインアップ ページ](https://admin.microsoft.com/Commerce/Trial.aspx?OfferId=20be85b6-b196-402c-82b4-36b4e72862dc)に移動します。
+1. [無料試用版のサインアップ ページ](https://aka.ms/appgovernancetrial)に移動します。
 1. アプリ ガバナンスを追加する手順を完了します。 次の図に示すように、サインアップは簡単です。
 
 <!--

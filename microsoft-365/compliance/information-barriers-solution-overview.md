@@ -3,7 +3,7 @@ title: データの情報Microsoft 365
 description: 情報バリアを構成する方法については、Microsoft 365。
 keywords: Microsoft 365、インサイダー リスク、コンプライアンス
 ms.localizationpriority: medium
-ms.prod: microsoft-365-enterprise
+ms.service: O365-seccomp
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: 93314cd4dd9dfd9ab208b371985d2e483f34c742
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e4116550336756fe9248a4a28dfa0f809c4012bb
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198735"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335856"
 ---
 # <a name="information-barriers-in-microsoft-365"></a>データの情報Microsoft 365
 

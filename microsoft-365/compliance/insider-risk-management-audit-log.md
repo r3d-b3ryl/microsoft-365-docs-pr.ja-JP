@@ -3,7 +3,7 @@ title: Insider リスク管理監査ログ
 description: インサイダー リスク管理監査ログの詳細については、Microsoft 365
 keywords: Microsoft 365, インサイダー リスク管理, リスク管理, コンプライアンス
 ms.localizationpriority: medium
-ms.prod: microsoft-365-enterprise
+ms.service: O365-seccomp
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 9355c3e41025ae8002bc9d40fc4ff06333c72e94
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3024c0861f0530c59fb5f620959a2b28f3078ea0
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60179081"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60334652"
 ---
 # <a name="insider-risk-management-audit-log"></a>Insider リスク管理監査ログ
 

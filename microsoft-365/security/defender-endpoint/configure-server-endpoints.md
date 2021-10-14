@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 31f8d4343f425369f842122c3dfd483edeefe3d9
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: b180cedbad90082fa548e0dbd41af7313bc9e5b8
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60239898"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335780"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Microsoft Defender Windowsエンドポイント サービスへのオンボード サーバー
 
@@ -242,23 +242,6 @@ Windows Server 2019 および Windows Server 2022 Microsoft エンドポイン�
 
 デバイスのオンボード後、検出テストを実行して、デバイスがサービスに適切にオンボードされていることを確認できます。 詳細については、「新しくオンボードされた Microsoft Defender for Endpoint デバイスで検出テストを実行する [」を参照してください](run-detection-test.md)。
 
-## <a name="offboard-windows-servers"></a>オフボード Windows サーバー
-
-Windows 10 クライアント デバイスで使用できるのと同じ方法で、Windows Server 2012 R2、Windows Server 2016、Windows Server (SAC)、Windows Server 2019、Windows Server 2019 Core edition のオフボードを使用できます。
-
-- [グループ ポリシーを使用したオフボード](configure-endpoints-gp.md#offboard-devices-using-group-policy)
-- [Configuration Manager を使用したオフボード デバイス](configure-endpoints-sccm.md#offboard-devices-using-configuration-manager)
-- [モバイル デバイス管理ツールを使用したオフボードデバイスと監視デバイス](configure-endpoints-mdm.md#offboard-and-monitor-devices-using-mobile-device-management-tools)
-- [ローカル スクリプトを使用してデバイスをオフボードする](configure-endpoints-script.md#offboard-devices-using-a-local-script)
-
-他のサーバー Windowsの場合は、サービスからサーバーをオフボードWindows 2 つのオプションがあります。
-
-- MMA エージェントのアンインストール
-- Defender for Endpoint ワークスペース構成を削除する
-
->[!NOTE]
->*他の Windows サーバー バージョンのこれらのオフボード手順は、MMA を必要とする Windows Server 2016 および Windows Server 2012 R2 用の以前の Microsoft Defender for Endpoint を実行している場合にも適用されます。 新しい未確認ソリューションに移行する手順は [、Microsoft Defender for Endpoint のサーバー移行シナリオにあります](/microsoft-365/security/defender-endpoint/server-migration)。
-
 > [!NOTE]
 > このMicrosoft Defender ウイルス対策は必要ありませんが、お勧めします。 別のウイルス対策ベンダー製品がプライマリ エンドポイント保護ソリューションである場合は、パッシブ モードで Defender ウイルス対策を実行できます。 パッシブ モードがオンの状態を確認できるのは、Microsoft Defender for Endpoint センサー (SENSE) が実行されている状態を確認した後のみです。 
 
@@ -285,6 +268,24 @@ Windows 10 クライアント デバイスで使用できるのと同じ方法�
 
 ## <a name="next-steps"></a>次の手順
 デバイスをサービスに正常にオンボーディングした後、Microsoft Defender for Endpoint の個々のコンポーネントを構成する必要があります。 さまざまなコンポーネント [を有効にする](prepare-deployment.md#adoption-order) 方法について説明する導入の順序に従います。
+
+
+## <a name="offboard-windows-servers"></a>オフボード Windows サーバー
+
+Windows 10 クライアント デバイスで使用できるのと同じ方法で、Windows Server 2012 R2、Windows Server 2016、Windows Server (SAC)、Windows Server 2019、Windows Server 2019 Core edition のオフボードを使用できます。
+
+- [グループ ポリシーを使用したオフボード](configure-endpoints-gp.md#offboard-devices-using-group-policy)
+- [Configuration Manager を使用したオフボード デバイス](configure-endpoints-sccm.md#offboard-devices-using-configuration-manager)
+- [モバイル デバイス管理ツールを使用したオフボードデバイスと監視デバイス](configure-endpoints-mdm.md#offboard-and-monitor-devices-using-mobile-device-management-tools)
+- [ローカル スクリプトを使用してデバイスをオフボードする](configure-endpoints-script.md#offboard-devices-using-a-local-script)
+
+他のサーバー Windowsの場合は、サービスからサーバーをオフボードWindows 2 つのオプションがあります。
+
+- MMA エージェントのアンインストール
+- Defender for Endpoint ワークスペース構成を削除する
+
+>[!NOTE]
+>*他の Windows サーバー バージョンのこれらのオフボード手順は、MMA を必要とする Windows Server 2016 および Windows Server 2012 R2 用の以前の Microsoft Defender for Endpoint を実行している場合にも適用されます。 新しい未確認ソリューションに移行する手順は [、Microsoft Defender for Endpoint のサーバー移行シナリオにあります](/microsoft-365/security/defender-endpoint/server-migration)。
 
 ## <a name="related-topics"></a>関連項目
 - [以前のバージョンの Windows をオンボードする](onboard-downlevel.md)

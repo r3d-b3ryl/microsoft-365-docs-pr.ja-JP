@@ -18,22 +18,22 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 54c2cffe50c8f0943595e90fd8bf66c63a6f5027
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9eb45699e2224df770752895ca13b17565606c7b
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60179297"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335516"
 ---
 # <a name="communication-compliance-with-siem-solutions"></a>SIEM ソリューションのコミュニケーション コンプライアンス
 
 [コミュニケーション コンプライアンスは](communication-compliance.md)、組織内の不適切なメッセージMicrosoft 365検出、キャプチャ、および操作を支援することで、コミュニケーション リスクを最小限に抑える、コミュニケーション コンプライアンスのインサイダー リスク ソリューションです。 [Azure Sentinel](https://azure.microsoft.com/services/azure-sentinel)や[Splunk](https://www.splunk.com/)などのセキュリティ情報とイベント管理 (SIEM) ソリューションは、組織内の脅威を集約および追跡するためによく使用されます。
 
-組織の一般的なニーズは、コミュニケーション コンプライアンスアラートとこれらの SIEM ソリューションを統合する必要があります。 この統合により、組織は SIEM ソリューションで通信コンプライアンスアラートを表示し、通信コンプライアンス ワークフローとユーザー エクスペリエンス内でアラートを修復できます。 たとえば、従業員が別の従業員に不快なメッセージを送信し、そのメッセージは不快な言語の通信コンプライアンス ポリシー監視によって検出されます。 これらのイベントは、通信コンプライアンス ソリューションMicrosoft 365監査 ("統合監査ログ" とも呼ばれる) で追跡され、SIEM ソリューションにインポートされます。 その後、組織の SIEM ソリューションで、通信コンプライアンスアラートに関連付けられている Microsoft 365 監査で監視されるイベントからアラートがトリガーされます。 調査担当者は、SIEM ソリューションでアラートの通知を受け取り、通信コンプライアンス ソリューションでアラートを調査して修復します。
+組織の一般的なニーズは、コミュニケーション コンプライアンスアラートとこれらの SIEM ソリューションを統合する必要があります。 この統合により、組織は SIEM ソリューションで通信コンプライアンスアラートを表示し、通信コンプライアンス ワークフローとユーザー エクスペリエンス内でアラートを修復できます。 たとえば、従業員が別の従業員に不快なメッセージを送信し、そのメッセージは不快な言語の通信コンプライアンス ポリシー監視によって検出されます。 これらのイベントは、Microsoft 365 コンプライアンス ソリューションによって監査 ("統合監査ログ" とも呼ばれる) で追跡され、SIEM ソリューションにインポートされます。 その後、組織の SIEM ソリューションで、通信コンプライアンス通知に関連付けられている監査で監視Microsoft 365イベントからアラートがトリガーされます。 調査担当者は、SIEM ソリューションでアラートの通知を受け取り、通信コンプライアンス ソリューションでアラートを調査して修復します。
 
-## <a name="communication-compliance-alerts-in-the-microsoft-365-audit"></a>[監査] の通信コンプライアンスMicrosoft 365通知
+## <a name="communication-compliance-alerts-in-microsoft-365-audit"></a>[監査] での通信コンプライアンスMicrosoft 365通知
 
-すべての通信コンプライアンス ポリシーの一致は、[監査] Microsoft 365されます。 次の例は、選択した通信コンプライアンス ポリシーの一致アクティビティで使用可能な詳細を示しています。
+すべての通信コンプライアンス ポリシーの一致は、監査にMicrosoft 365されます。 次の例は、選択した通信コンプライアンス ポリシーの一致アクティビティで使用可能な詳細を示しています。
 
 **不快な言語ポリシー テンプレートの一致の監査ログ エントリの例:**
 
@@ -68,7 +68,7 @@ ObjectState: Unchanged
 ```
 
 > [!NOTE]
-> 現在、ポリシーの一致が Microsoft 365 監査に記録される時間と、通信コンプライアンスでポリシーの一致を調査できる時間の間に最大 24 時間の遅延が発生する可能性があります。
+> 現在、ポリシーの一致が Microsoft 365 Audit に記録される時間と、通信コンプライアンスでポリシーの一致を調査できる時間の間に最大 24 時間の遅延が発生する可能性があります。
 
 ## <a name="configure-communication-compliance-and-azure-sentinel-integration"></a>通信コンプライアンスと Azure Sentinel 統合の構成
 
@@ -91,7 +91,7 @@ Azure Sentinel によって収集されるMicrosoft 365監査ログOffice 365詳
 通信コンプライアンスアラートを Splunk と統合するには、次の手順を実行します。
 
 1. ユーザー向[け Splunk アドオンをインストールMicrosoft Office 365](https://docs.splunk.com/Documentation/AddOns/released/MSO365/ConfigureinputsmanagementAPI)
-2. Splunk アドオン用に Azure AD統合アプリケーションを構成するMicrosoft Office 365
+2. Splunk アドオンのAzure AD統合アプリケーションを構成するMicrosoft Office 365
 3. Splunk ソリューションで検索クエリを構成します。 次の検索例を使用して、すべての通信コンプライアンスアラートを識別します。
 
     *index= \* sourcetype="o365:management:activity" Workload=Exchange Operation=SupervisionRuleMatch*
@@ -111,7 +111,7 @@ Azure Sentinel によって収集されるMicrosoft 365監査ログOffice 365詳
 
 ## <a name="configure-communication-compliance-with-other-siem-solutions"></a>他の SIEM ソリューションとの通信コンプライアンスを構成する
 
-監査から通信コンプライアンス ポリシーの一致を取得Microsoft 365、PowerShell または Office 365[管理 API を使用できます](/office/office-365-management-api/office-365-management-activity-api-reference)。
+監査から通信コンプライアンス ポリシーの一致Microsoft 365取得するには、PowerShell または Office 365 管理[API を使用します](/office/office-365-management-api/office-365-management-activity-api-reference)。
 
 PowerShell を使用する場合は **、Search-UnifiedAuditLog** コマンドレットでこれらのパラメーターのいずれかを使用して、通信コンプライアンス アクティビティの監査ログ イベントをフィルター処理できます。
 
@@ -132,6 +132,6 @@ Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType Compl
 ```
 ## <a name="resources"></a>リソース
 
-- [コミュニケーション コンプライアンス監査](communication-compliance-feature-reference.md#audit)
+- [コミュニケーション コンプライアンス監査](communication-compliance-reports-audits.md#audit)
 - [Microsoft 365 の高度な監査](advanced-audit.md)
 - [Office 365 管理アクティビティ API リファレンス](/office/office-365-management-api/office-365-management-activity-api-reference)

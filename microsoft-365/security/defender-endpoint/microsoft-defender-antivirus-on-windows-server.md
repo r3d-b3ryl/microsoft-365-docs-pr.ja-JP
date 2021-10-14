@@ -14,14 +14,14 @@ ms.reviewer: pahuijbr, shwjha
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 08/05/2021
+ms.date: 10/13/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 2b2545205af25a07fc8addab4818e603c18ff846
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: 8f5ae71ecc602a7bc588ff62036be20b883087db
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240070"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335480"
 ---
 # <a name="microsoft-defender-antivirus-on-windows-server"></a>Windows Server 上の Microsoft Defender ウイルス対策
 
@@ -31,11 +31,11 @@ ms.locfileid: "60240070"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-Microsoft Defender ウイルス対策は、次のエディション/バージョンの Windows Server で利用できます。
+Microsoft Defender ウイルス対策サーバーの次のエディション/バージョンでWindowsできます。
 
-- Windows Server 2019
 - Windows Server 2022
-- Windows Server バージョン 1803 以降
+- Windows Server 2019
+- Windowsサーバー、バージョン 1803 以降
 - Windows Server 2016
 - Windows Server 2012R2 (エンドポイントに Microsoft Defender が必要)
 
@@ -65,8 +65,8 @@ GUI がサーバーにインストールされておらず、インストール�
 
 
 
->[!NOTE]
->このオプションは、R2 のWindows Server 2012できません。 詳細については [、「Options to install Microsoft Defender for Endpoint」を参照してください](configure-server-endpoints.md#options-to-install-microsoft-defender-for-endpoint)。
+> [!NOTE]
+> このオプションは、R2 のWindows Server 2012できません。 詳細については [、「Options to install Microsoft Defender for Endpoint」を参照してください](configure-server-endpoints.md#options-to-install-microsoft-defender-for-endpoint)。
 
 ### <a name="turn-on-the-gui-using-the-add-roles-and-features-wizard"></a>役割と機能の追加ウィザードを使用して GUI を有効にする
 
@@ -138,11 +138,11 @@ sc query Windefend
 
 <br/><br/>
 
-|メソッド|説明|
+| メソッド | 説明 |
 |---|---|
-|コントロール パネルにある **Windows Update**|**更新プログラムを自動的にインストールする** と、Windows Defender セキュリティ インテリジェンス更新プログラムを含むすべての更新プログラムが自動的にインストールされます。 <p> **更新プログラムをダウンロードし、自分でインストールを決定する** に設定すると、Windows Defender でセキュリティ インテリジェンス更新プログラムを自動的にダウンロードしてインストールできますが、他の更新プログラムが自動的にインストールされることはありません。|
-|**グループ ポリシー**|次のパスでグループ ポリシー内で使用できる設定を利用して、Windows Updateを設定、管理できます: **Administrative Templates\Windows Components\Windows Update\Configure Automatic Updates**|
-|**AUOptions** レジストリ キー|次の 2 つの値を使用すると、Windows Update でセキュリティ インテリジェンス更新プログラムを自動的にダウンロードしてインストールできます。 <p> **4** - **更新プログラムを自動的にインストールします**。 この値を使用すると、Windows Defender セキュリティ インテリジェンス更新プログラムを含むすべての更新プログラムを自動的にインストールできます。 <p> **3** - **更新プログラムをダウンロードし、自分でインストールを決定します**。 この値を使用すると Windows Defender でセキュリティ インテリジェンス更新プログラムを自動的にダウンロードしてインストールできますが、他の更新プログラムが自動的にインストールされることはありません。|
+| コントロール パネルにある **Windows Update** | **更新プログラムを自動的にインストールする** と、Windows Defender セキュリティ インテリジェンス更新プログラムを含むすべての更新プログラムが自動的にインストールされます。 <br/><br/> **更新プログラムをダウンロードし、自分でインストールを決定する** に設定すると、Windows Defender でセキュリティ インテリジェンス更新プログラムを自動的にダウンロードしてインストールできますが、他の更新プログラムが自動的にインストールされることはありません。 |
+| **グループ ポリシー** | 次のパスでグループ ポリシー内で使用できる設定を利用して、Windows Updateを設定、管理できます: **Administrative Templates\Windows Components\Windows Update\Configure Automatic Updates** |
+| **AUOptions** レジストリ キー | 次の 2 つの値を使用すると、Windows Update でセキュリティ インテリジェンス更新プログラムを自動的にダウンロードしてインストールできます。 <br/><br/> **4** - **更新プログラムを自動的にインストールします**。 この値を使用すると、Windows Defender セキュリティ インテリジェンス更新プログラムを含むすべての更新プログラムを自動的にインストールできます。 <br/><br/> **3** - **更新プログラムをダウンロードし、自分でインストールを決定します**。 この値を使用すると Windows Defender でセキュリティ インテリジェンス更新プログラムを自動的にダウンロードしてインストールできますが、他の更新プログラムが自動的にインストールされることはありません。 |
 
 マルウェアからの保護を維持できるようにするには、次のサービスを有効にすることをお勧めします。
 
@@ -151,17 +151,15 @@ sc query Windefend
 
 次の表は、Microsoft Defender ウイルス対策のサービスと依存サービスの一覧です。
 
-<br>
+<br/><br/>
 
-****
 
-|サービス名|[ファイルの場所]|説明|
+| サービス名 | [ファイルの場所] | 説明 |
 |---|---|---|
-|Windows Defender サービス (WinDefend)|`C:\Program Files\Windows Defender\MsMpEng.exe`|これは、常に実行する必要がある主な Microsoft Defender ウイルス対策 サービスです。|
-|Windows エラー報告サービス (Wersvc)|`C:\WINDOWS\System32\svchost.exe -k WerSvcGroup`|このサービスは、エラー レポートを Microsoft に返送します。|
-|Windows Defender ファイアウォール (MpsSvc)|`C:\WINDOWS\system32\svchost.exe -k LocalServiceNoNetwork`|Windows Defender ファイアウォール サービスは有効のままにしておくことをお勧めします。|
-|Windows Update (Wuauserv)|`C:\WINDOWS\system32\svchost.exe -k netsvcs`|セキュリティ インテリジェンスの更新プログラムとマルウェア対策エンジンの更新プログラムを取得するには、Windows Update が必要です|
-|
+| Windows Defender サービス (WinDefend) | `C:\Program Files\Windows Defender\MsMpEng.exe` | これは、常に実行する必要がある主な Microsoft Defender ウイルス対策 サービスです。|
+| Windows エラー報告サービス (Wersvc) | `C:\WINDOWS\System32\svchost.exe -k WerSvcGroup` | このサービスは、エラー レポートを Microsoft に返送します。 |
+| Windows Defender ファイアウォール (MpsSvc) | `C:\WINDOWS\system32\svchost.exe -k LocalServiceNoNetwork` | Windows Defender ファイアウォール サービスは有効のままにしておくことをお勧めします。 |
+| Windows Update (Wuauserv) | `C:\WINDOWS\system32\svchost.exe -k netsvcs`| セキュリティ インテリジェンスの更新プログラムとマルウェア対策エンジンの更新プログラムを取得するには、Windows Update が必要です |
 
 ## <a name="submit-samples"></a>サンプルを送信する
 
@@ -176,20 +174,17 @@ sc query Windefend
 
 サンプルの自動送信を有効にするには、管理者として Windows PowerShell コンソールを起動し、次のいずれかの設定に従って **SubmitSamplesConsent** 値データを設定します。
 
-<br>
-
-****
+<br/><br/>
 
 |Setting|説明|
 |---|---|
-|**0** - **常にプロンプトを表示する**|Microsoft Defender ウイルス対策 サービスで、必要なすべてのファイルの送信を確認するプロンプトが表示されます。 これは Microsoft Defender ウイルス対策 の既定の設定ですが、Windows Server 2016 または 2019、または Windows Server 2022 のインストールでは GUI を使用しない場合は推奨されません。|
-|**1**  - **安全なサンプルを自動的に送信する**|Microsoft Defender ウイルス対策 サービスで "安全" とマークされたすべてのファイルが送信され、その他のファイルにはプロンプトが表示されます。|
-|**2** - **送信しない**|Microsoft Defender ウイルス対策 サービスではプロンプトが表示されず、すべてのファイルが送信されません。|
-|**3** - **すべてのサンプルを自動的に送信する**|Microsoft Defender ウイルス対策 サービスでは確認を行うプロンプトが表示されず、すべてのファイルが送信されます。|
-|
+| **0** - **常にプロンプトを表示する** | Microsoft Defender ウイルス対策 サービスで、必要なすべてのファイルの送信を確認するプロンプトが表示されます。 これは Microsoft Defender ウイルス対策 の既定の設定ですが、Windows Server 2016 または 2019、または Windows Server 2022 のインストールでは GUI を使用しない場合は推奨されません。 |
+| **1**  - **安全なサンプルを自動的に送信する** | Microsoft Defender ウイルス対策 サービスで "安全" とマークされたすべてのファイルが送信され、その他のファイルにはプロンプトが表示されます。 |
+| **2** - **送信しない** | Microsoft Defender ウイルス対策 サービスではプロンプトが表示されず、すべてのファイルが送信されません。 |
+| **3** - **すべてのサンプルを自動的に送信する** | Microsoft Defender ウイルス対策 サービスでは確認を行うプロンプトが表示されず、すべてのファイルが送信されます。 |
 
->[!NOTE]
->このオプションは、R2 のWindows Server 2012できません。 
+> [!NOTE]
+> このオプションは、R2 のWindows Server 2012できません。 
 
 
 ## <a name="configure-automatic-exclusions"></a>自動除外を構成する
@@ -213,10 +208,6 @@ Windows Server 上のプライマリ ウイルス対策ソリューションと�
 - 種類`REG_DWORD`
 - 値: `1`
 
-
-
-
-
 ### <a name="disable-microsoft-defender-antivirus-using-the-remove-roles-and-features-wizard"></a>役割と機能の削除ウィザードを使用して Microsoft Defender ウイルス対策を無効にする
 
 1. 「[役割のインストールまたはアンインストール、役割サービス、または機能](/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features#remove-roles-role-services-and-features-by-using-the-remove-roles-and-features-wizard)」 を参照してから、**役割と機能の削除ウィザード** を使用します。
@@ -239,21 +230,17 @@ Uninstall-WindowsFeature -Name Windows-Defender-GUI
 
 これで、R2 および Microsoft Defender ウイルス対策のパッシブ モードでWindows Server 2012を実行Windows Server 2016。 詳細については [、「Options to install Microsoft Defender for Endpoint」を参照してください](configure-server-endpoints.md#options-to-install-microsoft-defender-for-endpoint)。
 
+<br/><br/>
 
-<br>
-
-****
-
-|プロシージャ|説明|
+| プロシージャ | 説明 |
 |---|---|
-|グループ ポリシー Microsoft Defender ウイルス対策使用して無効にする|ローカル グループ ポリシー エディターで、[グループポリシー] に移動し、[Windows Defenderをオフにする]**をWindows Defender ウイルス対策。**|
-|レジストリ Microsoft Defender ウイルス対策を使用して無効にする|[DisableAntiSpyware レジストリ](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware)キーを使用するには、に移動し、という DWORD エントリを設定または `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender` 作成します `DisableAntiSpyware` 。 その値を `1` (レジストリ キーの値を true に設定する) に *設定します*。|
-|PowerShell をMicrosoft Defender ウイルス対策する方法を無効にする|次の PowerShell コマンドレットを使用します。 `Set-MpPreference -DisableRealtimeMonitoring $true`|
-|PowerShell をMicrosoft Defender ウイルス対策をアンインストールする|次の PowerShell コマンドレットを使用します。 `Uninstall-WindowsFeature -Name Windows-Defender`|
-|
+| グループ ポリシー Microsoft Defender ウイルス対策使用して無効にする | ローカル グループ ポリシー エディターで、[グループポリシー] に移動し、[Windows Defenderをオフにする]**をWindows Defender ウイルス対策。** |
+| レジストリ Microsoft Defender ウイルス対策を使用して無効にする | [DisableAntiSpyware レジストリ](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware)キーを使用するには、に移動し、という DWORD エントリを設定または `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender` 作成します `DisableAntiSpyware` 。 その値を `1` (レジストリ キーの値を true に設定する) に *設定します*。 |
+| PowerShell をMicrosoft Defender ウイルス対策する方法を無効にする | 次の PowerShell コマンドレットを使用します。 `Set-MpPreference -DisableRealtimeMonitoring $true` |
+| PowerShell をMicrosoft Defender ウイルス対策をアンインストールする | 次の PowerShell コマンドレットを使用します。 `Uninstall-WindowsFeature -Name Windows-Defender` |
 
 
 ## <a name="see-also"></a>関連項目
-- [Windows Server 上の Microsoft Defender ウイルス対策をインストールする]()
-- [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-windows.md)
+
+- [Windows の Microsoft Defender ウイルス対策](microsoft-defender-antivirus-windows.md)
 - [Microsoft Defender ウイルス対策互換性](microsoft-defender-antivirus-compatibility.md)

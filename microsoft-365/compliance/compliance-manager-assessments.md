@@ -9,17 +9,20 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365solution-compliancemanager
+- m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager で評価を構築し、組織にとって重要な規制と認定の要件を満たすのに役立ちます。
-ms.openlocfilehash: a425f144e2c98866d32f14d7a16829342c14ef74
-ms.sourcegitcommit: 81533e5d3e1aee0823539a7c9bdc20dba6541a02
+ms.openlocfilehash: 536b153a847ef038c4dee25d3dcd23aa638049ee
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60223438"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335928"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>コンプライアンス マネージャーでの評価の作成と管理
 

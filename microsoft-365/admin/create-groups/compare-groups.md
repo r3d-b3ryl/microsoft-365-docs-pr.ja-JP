@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Microsoft 365 グループでは、メンバーは会話用のグループ メールおよび共有ワークスペース、ファイル、カレンダー イベント、ストリーム、Planner を利用できます。
-ms.openlocfilehash: f62fd8f05231589edefdc131e35bd2113a129e8b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 655b90ca13631c1df7937443e37d1bf904814e14
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165810"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335420"
 ---
 # <a name="compare-groups"></a>グループを比較する
 
@@ -72,7 +72,7 @@ Microsoft 365 グループは、他の Microsoft 365 グループ、または配
 
 配布グループは、[Microsoft 365 グループにアップグレード](../manage/upgrade-distribution-lists.md)できます。
 
-配布グループは、Microsoft Teams のチームに追加できます。
+配布グループは Microsoft Teams のチームに追加できますが、グループ自体ではなくメンバーのみが追加されます。
 
 Microsoft 365 グループは、配布グループのメンバーにすることはできません。
 

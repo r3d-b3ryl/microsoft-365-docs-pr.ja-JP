@@ -59,7 +59,7 @@
 
 
 ##### [Windows デバイスと Windows サーバーのオンボード]()
-###### [Windows Server 2012 R2、2016、半期チャネル、2019、および 2022 をオンボードする](configure-server-endpoints.md)
+###### [Windows Server 2012 R2、2016、半期チャネル、2019、および 2022](configure-server-endpoints.md)をオンボードする
 ###### [ローカル スクリプトを使用した Windows デバイスのオンボード](configure-endpoints-script.md)
 ###### [グループ ポリシーを使用してデバイスをオンボードする](configure-endpoints-gp.md)
 ###### [Microsoft Endpoint Configuration Manager を使用した Windows デバイスのオンボード](configure-endpoints-sccm.md)
@@ -176,6 +176,7 @@
 
 ##### [構成]()
 ###### [Android 機能用に Microsoft Defender for Endpoint を構成する](android-configure.md)
+###### [アプリ保護ポリシーを使用して、Microsoft Defender for Endpoint リスク シグナルを構成する](android-configure-mam.md)
 
 ##### [プライバシー]()
 ###### [Android 用 Microsoft Defender for Endpoint - プライバシー情報](android-privacy.md)

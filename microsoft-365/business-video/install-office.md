@@ -19,10 +19,10 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: アプリをインストールするMicrosoft Officeします。
+description: Microsoft Office アプリのインストール方法について説明します。
 ms.openlocfilehash: 55f384350db4763d7e93aa887191691583c7b421
 ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/06/2021
 ms.locfileid: "60173897"
@@ -33,23 +33,23 @@ ms.locfileid: "60173897"
 
 ## <a name="try-it"></a>お試しください!
 
-Microsoft Officeスタート メニューに **アプリがあります。** 表示しない&#39;、自分でインストールできます。
+Microsoft Office アプリは、**[スタート]** メニューから見つけることができます。 表示されない場合は、自分でインストールできます。
 
-1. [次へ] office.com。 作業用アカウントでサインインする必要がある場合があります。
-2. [アプリ **の実行**   >   **Office Microsoft 365をインストールする] を**   >   選択し、[はい] を **選択します**。
-3. アプリOfficeインストールされます。 プロセスには数分かかる場合があります。 完了したら、[閉じる] を  **選択します**。
-4. インストールするにはMicrosoft Teamsページに移動し **、[office.com]** を選択Teams。
-5. アプリをWindowsし、[実行] を **選択します**。 Teams完了すると、プロンプトが表示されます。
+1. Office.com にアクセスします。 職場のアカウントでサインインする必要があるかもしれません。
+2. **[Office のインストール]**  >  **[Microsoft 365 Apps]**  >  **[実行]** の順に選択し、**[はい]** を選択します。
+3. Office アプリがインストールされます。 このプロセスには数分かかる場合があります。 完了したら、**[閉じる]** を選択します。
+4. Microsoft Teams をインストールするには、office.com ページに移動し、**[Teams]** を選択します。
+5. Windows アプリを入手してから、**[実行]** を選択します。 インストールが完了すると、Teams のダイアログが表示されます。
 
-インストールOfficeアプリが [スタート] メニューに **表示** されます。
+インストールした Office アプリが、**[スタート]** メニューに表示されるようになりました。
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[コンテンツをユーザーに移行Microsoft 365](/sharepointmigration/migrate-to-sharepoint-online.md)する (記事)
+[Microsoft 365 にコンテンツを移行する](/sharepointmigration/migrate-to-sharepoint-online.md) (記事)
 
-[スマートフォンにMicrosoft 365 管理アプリをインストールする](admin-mobile.md)(ビデオ)
+[スマートフォンに Microsoft 365 管理モバイル アプリをインストールする](admin-mobile.md) (ビデオ)
 
-[小規模ビジネスのMicrosoft Teamsを開始する](get-started-teams-small-business.md)(ビデオ)
+[小規模ビジネスで Microsoft Teams を開始する](get-started-teams-small-business.md) (ビデオ)
 
-[ファイルを外部で簡単に共有](share-files-externally.md) する (ビデオ)
+[ファイルを外部と簡単に共有する](share-files-externally.md) (ビデオ)
 

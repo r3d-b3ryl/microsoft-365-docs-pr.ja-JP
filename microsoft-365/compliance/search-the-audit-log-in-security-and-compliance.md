@@ -21,12 +21,12 @@ description: Microsoft 365 コンプライアンス センターを使用して�
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 5fa3ad73ffbc869a700776319477c5ab3128cae5
-ms.sourcegitcommit: df1ad7118c4a95a310a4f17124322a6ae6ace26f
+ms.openlocfilehash: 3edb4307937bcf76a87f9bbdf8930a646794156e
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60268756"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335832"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>コンプライアンス センターで監査ログを検索する
 
@@ -418,10 +418,10 @@ ms.locfileid: "60268756"
         [コミュニケーション コンプライアンス アクティビティ](#communication-compliance-activities)
     :::column-end:::
     :::column:::
-        [Exchange 管理アクティビティ](#exchange-admin-audit-log)
+        [アクティビティを報告する](#report-activities)
     :::column-end:::
     :::column:::
-        
+        [Exchange 管理アクティビティ](#exchange-admin-audit-log)
     :::column-end:::
 :::row-end:::
 
@@ -1026,7 +1026,7 @@ Microsoft 365 監査ログに記録されるブリーフィング メールの�
 - [ブリーフィング メールの構成](/Briefing/be-admin)
 
 |**フレンドリ名**|**操作名**|**説明**|
-|:-----|:-----|:-----|
+|:----|:-----|:-----|
 |更新された組織のプライバシー設定|UpdatedOrganizationBriefingSettings|管理者が、ブリーフィング メールの組織のプライバシー設定を更新します。 |
 |更新されたユーザー プライバシーの設定|UpdatedUserBriefingSettings|管理者が、ブリーフィング メールのユーザー プライバシー設定を更新します。
 ||||
@@ -1073,6 +1073,15 @@ Microsoft 365 監査ログに記録されるコミュニケーション コン�
 |ポリシーの更新|SupervisionPolicyCreated, SupervisionPolicyUpdated, SupervisionPolicyDeleted|コミュニケーション コンプライアンス管理者がポリシーの更新を実行しました。|
 |ポリシーとの一致|SupervisionRuleMatch|ユーザーがポリシーの条件に一致するメッセージを送信しました。|
 |メッセージに適用されるタグ|SupervisoryReviewTag|タグがメッセージに適用されるか、またはメッセージが解決されます。|
+||||
+
+### <a name="report-activities"></a>アクティビティを報告する
+
+次の表に、Microsoft 365 監査ログに記録される使用状況レポートのアクティビティを示します。
+
+|**フレンドリ名**|**操作名**|**説明**|
+|:-----|:-----|:-----|
+|使用状況レポートのプライバシー設定が更新されました|UpdateUsageReportsPrivacySetting|管理者が使用状況レポートのプライバシー設定を更新しました。 |
 ||||
 
 ### <a name="exchange-admin-audit-log"></a>Exchange 管理者監査ログ

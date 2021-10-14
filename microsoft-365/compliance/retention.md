@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なコンテンツを保持し不要なコンテンツを削除するのに役立つ、アイテム保持ポリシーと保持ラベルについて説明します。
-ms.openlocfilehash: 858149ce169d335924a643e3c90b895906d28d9b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1c06cdf9492fa18797bfbf25f8153fa347137ced
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60170633"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335600"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの詳細
 
@@ -209,7 +209,7 @@ Exchange パブリックフォルダー、Skype、Teams、Yammer メッセージ
 
 - 管理者とエンド ユーザーは、コンテンツに適用されている既存の保持ラベルを手動で変更または削除できます。 
 
-- コンテンツに既に保持ラベルが適用されている場合、既存のラベルが自動的に削除されたり、別の保持ラベルに置き換えられたりすることはありません。ただし、例外が 1 つあり、既存のラベルが既定のラベルとして適用されている場合です。
+- コンテンツに既に保持ラベルが適用されている場合、既存のラベルが自動的に削除されたり、別の保持ラベルに置き換えられたりすることはありません。ただし、例外が 1 つあり、既存のラベルが既定のラベルとして適用されている場合です。 既定のラベルを使用する場合、別の既定のラベルに置き換えるか、自動的に削除できるシナリオがいくつかあります。 
     
     既定のラベルを使用して適用した場合のラベルの動作については、以下を参照してください。
     - SharePoint の既定のラベル: [SharePoint の既定のラベルを使用した場合のラベルの動作](create-apply-retention-labels.md#label-behavior-when-you-use-a-default-label-for-sharepoint)
@@ -526,4 +526,4 @@ Microsoft 365 コンプライアンス センターから、[**データの分�
 
 ## <a name="configuration-guidance"></a>構成ガイダンス
 
-[アイテム保持ポリシーおよび保持ラベルの使用をはじめる](get-started-with-retention.md)をご参照ください。 この記事には、サブスクリプション、アクセス許可についての説明、および保持を行う際のエンド ツー エンド構成を行う方法についてのリンクがあります。
+「[アイテム保持ポリシーおよび保持ラベルの使用をはじめる](get-started-with-retention.md)」をご参照ください。この記事には、サブスクリプション、アクセス許可についての説明、および保持を行う際のエンド ツー エンド構成を行う方法についてのリンクがあります。

@@ -36,10 +36,14 @@
           href: communication-compliance-plan.md
         - name: 通信コンプライアンスを使用して開始する
           href: communication-compliance-configure.md
+        - name: 通信コンプライアンスでチャネル信号を検出する
+          href: communication-compliance-channels.md
+        - name: 通信コンプライアンス ポリシーを作成および管理する
+          href: communication-compliance-policies.md
         - name: 通信コンプライアンスのアラートを調査して修復する
           href: communication-compliance-investigate-remediate.md
-        - name: 通信コンプライアンスの機能のリファレンス
-          href: communication-compliance-feature-reference.md
+        - name: 通信コンプライアンス レポートと監査の詳細
+          href: communication-compliance-reports-audits.md
         - name: SIEM ソリューションのコミュニケーション コンプライアンス
           href: communication-compliance-siem.md
         - name: ケース スタディ - Contoso は不快な言葉ポリシーをすばやく構成します
@@ -343,16 +347,6 @@
               href: dlp-migrate-exo-policy-to-unified-dlp.md
             - name: データ損失防止ポリシーヒントのリファレンス
               href: dlp-policy-tips-reference.md
-        - name: DLP のトラブルシューティング
-          items:
-            - name: DLP ポリシー ヒントのトラブルシューティング
-              href: /office365/troubleshoot/data-loss-prevention/data-loss-prevention-policy-tips.md
-            - name: DLP ポリシーへの変更は Office 365 の Outlook 2013 では有効になりません
-              href: /office365/troubleshoot/data-loss-prevention/data-loss-prevention-not-work.md
-            - name: コンプライアンス センターの DLP ポリシー ヒントは OWA または Outlook では機能しません
-              href: /office365/troubleshoot/data-loss-prevention/dlp-tips-not-work.md
-            - name: Office 365 の Exchange Online Protection での DLP ポリシー ヒントをトラブルシューティングする方法
-              href: /office365/troubleshoot/data-loss-prevention/data-loss-prevention-tips.md
 - name: 情報ガバナンスの管理
   items:
     - name: データを統制する
@@ -629,6 +623,8 @@
           href: app-governance-detect-remediate-overview.md
         - name: 開始する
           href: app-governance-detect-remediate-get-started.md
+        - name: 異常なデータ使用量のアプリを監視して対応する
+          href: app-governance-monitor-apps-unusual-data-usage.md
         - name: 異常検出アラートを調査する
           href: app-governance-anomaly-detection-alerts.md
         - name: アプリの脅威を修復する

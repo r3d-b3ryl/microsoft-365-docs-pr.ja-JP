@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ウイルス対策
+title: Windows の Microsoft Defender ウイルス対策
 description: 組み込みのマルウェア対策とウイルス対策の保護機能である Microsoft Defender ウイルス対策を管理、構成、使用する方法について説明します。
 keywords: Microsoft Defender ウイルス対策, windows defender, マルウェア対策, scep, システム センター エンドポイント保護, システム センター構成マネージャー, ウイルス, マルウェア, 脅威, 検出, 保護, セキュリティ
 search.product: eADQiWindows 10XVcnh
@@ -16,18 +16,21 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 585fa260452a69572f6498429f3675af22ca8479
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7de844673c12b1bc72853f07683da47deaa5aae1
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174641"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335892"
 ---
 # <a name="microsoft-defender-antivirus-in-windows"></a>Windows の Microsoft Defender ウイルス対策
 
 **適用対象:**
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- Microsoft Defender ウイルス対策
+
+Microsoft Defender ウイルス対策は、Windows 10 と Windows 11、および Windows Server のバージョンで利用できます。
 
 Microsoft Defender ウイルス対策は、Microsoft Defender for Endpoint の次世代保護の主要コンポーネントです。 この保護は、機械学習、ビッグデータ分析、脅威耐性に関する詳細な調査、Microsoft のクラウド インフラストラクチャを組み合わせて、組織内のデバイス (または、エンドポイント) を保護します。 Windows Defender ウイルス対策は Windows に組み込まれており、Microsoft Defender for Endpoint と連携して、デバイスとクラウドを保護します。
 
@@ -39,16 +42,13 @@ Microsoft Defender ウイルス対策は、Microsoft Defender for Endpoint の�
 
 次の表は、Microsoft Defender ウイルス対策がアクティブ モード、パッシブ モード、または無効である場合に期待される内容を示しています。
 
-<br>
+<br/><br/>
 
-****
-
-|モード|動作|
+| モード | 動作 |
 |---|---|
-|アクティブ モード|アクティブ モードでは、Microsoft Defender ウイルス対策はデバイス上の主要なウイルス対策アプリとして使用されます。 ファイルがスキャンされ、脅威が修正され、検出された脅威が組織のセキュリティ レポートと Windows セキュリティ アプリに一覧表示されます。|
-|パッシブ モード|パッシブ モードでは、Microsoft Defender ウイルス対策はデバイス上の主要なウイルス対策アプリとして使用されません。 ファイルがスキャンされ、検出された脅威が報告されますが、脅威は Microsoft Defender ウイルス対策によって修正されません。 <p> **重要**: Microsoft Defender ウイルス対策は、Microsoft Defender for Endpoint にオンボードされているエンドポイントでのみパッシブ モードで実行できます。 「[Microsoft Defender ウイルス対策をパッシブ モードで実行するための要件](microsoft-defender-antivirus-compatibility.md#requirements-for-microsoft-defender-antivirus-to-run-in-passive-mode)」を参照してください。|
-|無効またはアンインストール済み|無効にするかアンインストールすると、Microsoft Defender ウイルス対策は使用されません。 ファイルのスキャン、脅威の修復は行われません。 一般に、Microsoft Defender ウイルス対策を無効にしたりアンインストールしたりすることはお勧めしません。|
-|
+| アクティブ モード | アクティブ モードでは、Microsoft Defender ウイルス対策はデバイス上の主要なウイルス対策アプリとして使用されます。 ファイルがスキャンされ、脅威が修正され、検出された脅威が組織のセキュリティ レポートと Windows セキュリティ アプリに一覧表示されます。 |
+| パッシブ モード | パッシブ モードでは、Microsoft Defender ウイルス対策はデバイス上の主要なウイルス対策アプリとして使用されません。 ファイルがスキャンされ、検出された脅威が報告されますが、脅威は Microsoft Defender ウイルス対策によって修正されません。 <br/><br/> **重要**: Microsoft Defender ウイルス対策は、Microsoft Defender for Endpoint にオンボードされているエンドポイントでのみパッシブ モードで実行できます。 「[Microsoft Defender ウイルス対策をパッシブ モードで実行するための要件](microsoft-defender-antivirus-compatibility.md#requirements-for-microsoft-defender-antivirus-to-run-in-passive-mode)」を参照してください。 |
+| 無効またはアンインストール済み | 無効にするかアンインストールすると、Microsoft Defender ウイルス対策は使用されません。 ファイルのスキャン、脅威の修復は行われません。 一般に、Microsoft Defender ウイルス対策を無効にしたりアンインストールしたりすることはお勧めしません。 |
 
 詳細については、「[Microsoft Defender ウイルス対策互換性](microsoft-defender-antivirus-compatibility.md)」を参照してください。
 

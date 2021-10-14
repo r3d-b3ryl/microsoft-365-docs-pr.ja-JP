@@ -3,7 +3,7 @@ title: Insider リスク管理 ユーザー ダッシュボード
 description: インサイダーリスク管理について詳しくは、Microsoft 365
 keywords: Microsoft 365, インサイダー リスク管理, リスク管理, コンプライアンス
 ms.localizationpriority: medium
-ms.prod: microsoft-365-enterprise
+ms.service: O365-seccomp
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 3fa0a9a44c8083c62d30bd7e7aeca02b60046eea
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: dcddcebcdf70f02f84c2dbbceb61ef97488369aa
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60204253"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335288"
 ---
 # <a name="insider-risk-management-users-dashboard"></a>Insider リスク管理 ユーザー ダッシュボード
 

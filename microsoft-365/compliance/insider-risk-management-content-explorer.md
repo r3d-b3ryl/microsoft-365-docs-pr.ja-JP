@@ -3,7 +3,7 @@ title: Insider リスク管理 コンテンツ エクスプローラー
 description: インサイダー リスク管理について詳しくは、Microsoft 365
 keywords: Microsoft 365, インサイダー リスク管理, リスク管理, コンプライアンス
 ms.localizationpriority: medium
-ms.prod: microsoft-365-enterprise
+ms.service: O365-seccomp
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 30600241881ccb4203c3ea1015d8c54a680458ff
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d60726b7fbf68ecbeb8af2d40c4c18e2bb9aaa7c
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190739"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335904"
 ---
 # <a name="insider-risk-management-content-explorer"></a>Insider リスク管理 コンテンツ エクスプローラー
 

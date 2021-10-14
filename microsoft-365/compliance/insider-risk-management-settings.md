@@ -3,7 +3,7 @@ title: Insider リスク管理の設定
 description: インサイダー リスク管理の設定について詳しくは、Microsoft 365
 keywords: Microsoft 365, インサイダー リスク管理, リスク管理, コンプライアンス
 ms.localizationpriority: medium
-ms.prod: microsoft-365-enterprise
+ms.service: O365-seccomp
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: ea91263cf6f466f718d30d8cfdc303611bf755ad
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 89a6947aa9ada34df0e60ed2d552254edb6719a5
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60204301"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335312"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>インサイダーリスク管理設定の使用を開始する
 
@@ -87,7 +87,7 @@ Insider リスク ポリシー テンプレートは、検出して調査する�
 インサイダー リスク管理Windows 10計画しているデバイスが、これらの要件を満たしていることを確認します。
 
 1. Windows 10 x64 ビルド 1809 以降を実行し、2020 年 2 月 20 日から Windows 10 更新プログラム[(OS ビルド 17763.1075)](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)をインストールしている必要があります。
-2. デバイスへのログインに使用するユーザー アカウントWindows 10アクティブなアカウント (AAD) Azure Active Directoryである必要があります。 デバイスWindows 10 [AAD、](/azure/active-directory/devices/concept-azure-ad-join)ハイブリッド AAD、または Active Directory に参加している場合、または AAD が登録されている場合があります。
+2. デバイスへのログインに使用するユーザー アカウントWindows 10アクティブなアカウント (Azure Active Directory) AAD必要があります。 デバイスWindows 10、ハイブリッド AAD、または[](/azure/active-directory/devices/concept-azure-ad-join)Active Directory にAAD、または登録されている場合AADがあります。
 3. Microsoft Chromium エッジ ブラウザーをエンドポイント デバイスにインストールして、クラウド アップロード アクティビティのアクションを監視します。 「[Chromium ベースの新しい Microsoft Edge をダウンロードする](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)」を参照してください。
 
 #### <a name="step-2-onboarding-devices"></a>手順 2: デバイスのオンボーディング
@@ -249,7 +249,7 @@ API を使用してインサイダー リスクアラート情報を確認する
 | AlertType | アラートの種類は Custom *です*。  |
 | AlertId | アラートの GUID。 Insider リスク管理アラートは変更可能です。 アラートの状態が変更されると、同じ AlertID を持つ新しいログが生成されます。 この AlertID を使用して、アラートの更新プログラムを関連付けできます。 |
 | カテゴリ | アラートのカテゴリは *InsiderRiskManagement です*。 このカテゴリを使用して、これらのアラートを他のセキュリティ アラートとコンプライアンス &区別できます。 |
-| コメント | アラートの既定のコメント。 値は *、新しいアラート* (アラートの作成時にログに記録される) とアラート *の* 更新 (アラートの更新時にログに記録される) です。 AlertID を使用して、アラートの更新プログラムを関連付ける。 |
+| Comments | アラートの既定のコメント。 値は *、新しいアラート* (アラートの作成時にログに記録される) とアラート *の* 更新 (アラートの更新時にログに記録される) です。 AlertID を使用して、アラートの更新プログラムを関連付ける。 |
 | データ | アラートのデータには、一意のユーザー ID、ユーザー プリンシパル名、およびユーザーがポリシーにトリガーされた日時 (UTC) が含まれます。 |
 | 名前 | アラートを生成したインサイダー リスク管理ポリシーのポリシー名。 |
 | PolicyId | アラートをトリガーしたインサイダー リスク管理ポリシーの GUID。 |
@@ -264,7 +264,7 @@ API を使用してインサイダー リスクアラート情報を確認する
 - ID
 - RecordType
 - CreationTime
-- 操作
+- Operation
 - OrganizationId
 - UserType
 - UserKey

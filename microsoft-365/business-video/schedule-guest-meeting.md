@@ -1,5 +1,5 @@
 ---
-title: 外部ユーザーとのTeams会議をスケジュールする
+title: 外部ユーザーとの Teams 会議をスケジュールする
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -20,29 +20,29 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 外部ユーザーとの会議をスケジュールTeamsする方法について学習します。
+description: 外部ユーザーとの Teams 会議をスケジュールする方法について説明します。
 ms.openlocfilehash: c725738fd53ac53c148facb3f2e41118de56cb01
 ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/06/2021
 ms.locfileid: "60200727"
 ---
-# <a name="schedule-a-teams-meeting-with-external-users"></a>外部ユーザーとのTeams会議をスケジュールする
+# <a name="schedule-a-teams-meeting-with-external-users"></a>外部ユーザーとの Teams 会議をスケジュールする
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOhP?autoplay=false]
 
-組織外のユーザーを会議に招待する場合は、会議にユーザーを追加Microsoft Teams。 顧客またはパートナーが会議に参加する際に、ユーザーアカウントを使用せずに会議に参加する場合の仕組Teams[します](https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508)。
+組織外のユーザーを Microsoft Teams に追加せずに会議に招待できます。 [Teams アカウントなしで会議に参加する](https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508)場合、顧客またはパートナーから見てどのように機能するかを次に示します。
 
 ## <a name="try-it"></a>お試しください!
 
-従業員、クライアント、外部ユーザー、その他のゲストとの会議をスケジュールするには、Microsoft Teams。 
+社内会議や、クライアントや外部ユーザー、その他のゲストとの会議のスケジュールの設定をするため、Microsoft Teams を利用できます。 
 
-1. [Microsoft Teams左側のナビゲーションで、[会議] を **選択します**。
-2. [会議 **のスケジュール] を選択します**。
-3. [新しい **会議] ボックスに**、会議の **タイトルと****場所** を入力します。
-4. [開始]**と [****終了] の時刻と** 日付を入力します。
-5. [詳細 **] ボックス** に、会議の説明と、会議の議題など、追加するその他の詳細を入力します。
-6. [ **ユーザーの招待]** で、招待する従業員またはクライアントの名前を入力します。
-7. 名前の下 **に [仮] または** **[** ビジー]が表示される場合は、[空き時間] を選択するか、[スケジュール アシスタント] をクリックしてその他のオプションを選択します。
-8. [会議 **のスケジュール] を選択します**。
+1. Microsoft Teams で、左側のナビゲーションから [**会議**] を選択します。 
+2. [**会議の予約**] を選択します。
+3. [**新しい会議**] ボックスに、会議の [**タイトル**] と [**場所**] を入力します。 
+4. [**開始**] と [**終了**] の日付と時刻を入力します。
+5. 会議の説明やアジェンダなど詳細な説明を追加したい場合、[**詳細**] ボックスに入力します。
+6. [**ユーザーを招待**] で、社内の参加者や招待するクライアントの名前を入力します。
+7. [**仮の予定**] または [**予定あり**] と名前の下に表示されていた場合、[**空き時間**] から選択するか、[**スケジュール アシスタント**] をクリックして詳細オプションを表示します。
+8. [**会議の予約**] を選択します。

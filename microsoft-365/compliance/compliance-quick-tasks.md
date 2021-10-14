@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-compliance
 ms.localizationpriority: medium
 description: コンプライアンスを迅速に開始するのに役立つタスクについては、Microsoft 365。
-ms.openlocfilehash: d60a9f589b6dc0c29d60c96fac9a8e30fbc4a3e0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 422459bb9831fff265e67c3887fab4288f468f0f
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60156548"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335444"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Microsoft 365 コンプライアンスを開始するためのクイック タスク
 
@@ -88,7 +88,7 @@ Exchange メール、SharePoint サイト、OneDrive アカウント、Microsoft
 
 ## <a name="task-7-configure-sensitive-information-and-offensive-language-policies"></a>タスク 7: 機密情報と不快な言語ポリシーを構成する
 
-機密情報を保護し、職場のハラスメント インシデントを検出して行動することが、内部のポリシーと標準の遵守の重要な部分です。 [電子メールや](communication-compliance-feature-reference.md)Microsoft 365の修復アクションを迅速に検出、キャプチャ、実行することで、これらのリスクを最小限に抑えるために、Microsoft Teams役立ちます。 これには、組織の内部および外部で機密情報を共有する不適切な情報、脅威、ハラスメントやコミュニケーションを含む不適切なコミュニケーションが含まれます。
+機密情報を保護し、職場のハラスメント インシデントを検出して行動することが、内部のポリシーと標準の遵守の重要な部分です。 [電子メールや](communication-compliance.md)Microsoft 365の修復アクションを迅速に検出、キャプチャ、実行することで、これらのリスクを最小限に抑えるために、Microsoft Teams役立ちます。 これには、組織の内部および外部で機密情報を共有する不適切な情報、脅威、ハラスメントやコミュニケーションを含む不適切なコミュニケーションが含まれます。
 
 定義済みの不快な *言語と* ハラスメント対策ポリシー テンプレートを使用すると、ポリシーの一致について内部および外部の通信をスキャンして、指定されたレビュー担当者が確認できます。 レビュー担当者は、組織内のスキャンされた電子メール、Microsoft Teams、Yammer、またはサードパーティの通信を調査し、組織の標準に準拠しているか確認するために適切な修復アクションを実行できます。
 

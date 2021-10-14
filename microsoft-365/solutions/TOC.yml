@@ -289,7 +289,7 @@
         - name: ID とデバイスのアクセス構成
           href: ../security/office-365-security/microsoft-365-policies-configurations.md
         - name: Microsoft Defender for Endpoint を展開する
-          href: /windows/security/threat-protection/microsoft-defender-atp/deployment-phases.md
+          href: /microsoft-365/security/defender-endpoint/deployment-phases.md
         - name: Symantec から Microsoft Defender for Endpoint に移行する
           href: ../security/defender-endpoint/symantec-to-microsoft-defender-endpoint-migration.md
         - name: McAfee から Microsoft Defender for Endpoint に移行する

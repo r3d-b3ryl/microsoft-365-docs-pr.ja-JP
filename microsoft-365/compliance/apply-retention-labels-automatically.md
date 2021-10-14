@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なものを保持し、必要でないものを削除するためにラベルを自動的に適用できるように、保持ラベルと自動ラベル付けポリシーを作成します。
-ms.openlocfilehash: eeeda9a41f35f6380d2d20adf80b00bc80ba4c4e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ed123a772d3c3db23f4519beeb32903bb43267a7
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198771"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335768"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>保持ラベルを自動的に適用してコンテンツを保持または削除する
 
@@ -41,7 +41,7 @@ ms.locfileid: "60198771"
     
 - ユーザーはデータ ガバナンス ポリシーについて把握する必要がなくなるので、仕事に集中できる。
     
-コンテンツに機密情報、キーワード、検索可能なプロパティ、または[トレーニング可能な分類子](classifier-get-started-with.md)のマッチが含まれている場合、保持ラベルをコンテンツに自動的に適用できます。
+コンテンツに保持ラベルがまだ適用されておらず、コンテンツに機密情報、キーワード、検索可能なプロパティ、または[トレーニング可能な分類子](classifier-get-started-with.md)のマッチが含まれている場合、保持ラベルをコンテンツに自動的に適用できます。
 
 > [!TIP]
 > 検索可能なプロパティを使用して、[Teams 会議のレコーディング](#microsoft-teams-meeting-recordings)と[秘密度ラベルを適用済みのアイテム](#identify-files-and-emails-that-have-a-sensitivity-label)を識別します。
@@ -83,15 +83,16 @@ ms.locfileid: "60198771"
     
     すぐにオプションが表示されませんか? 最初に [**すべて表示**] を選択します。 
 
-2. ウィザードでプロンプトに従います。 レコード管理を使用している場合:
+2. 構成の指示に従います。 レコード管理を使用している場合:
     
     - ファイル計画記述子については、「[Use file plan to manage retention labels (ファイル計画を使用して保持ラベルを管理する)](file-plan-manager.md)」を参照してください。
     
     - 保持ラベルを使用してレコードを宣言するには、**アイテムをレコードとしてマーク**、または **アイテムを規制レコードとしてマーク** を選択します。 詳細については、「 [保持ラベルを構成してレコードを宣言する](declare-records.md#configuring-retention-labels-to-declare-records)」を参照してください。
 
-3. ラベルを作成し、ラベルの公開、ラベルの自動適用、またはラベルの保存のオプションが表示されたら、[**このラベルを特定の種類のコンテンツに自動適用する**] を選択してから、[**完了**] を選択すると、次の手順の手順 2 に直接進む自動ラベル作成ウィザードが起動します。
+3. ラベルを作成し、ラベルの公開、ラベルの自動適用、または単にラベルを保存するオプションが表示されたら、[**特定の種類のコンテンツにこのラベルを自動適用する**] を選択し、[**完了**] を選択します。 
+4.  次の行程の手順 2 に直接移動する構成。
 
-既存のラベルを編集するには、そのラベルを選択してから [**ラベルの編集**] オプションを選択し、手順 2 からラベルの説明や [有効な設定](#updating-retention-labels-and-their-policies)を変更するための保持の編集ウィザードを開始します。
+既存のラベルを編集するには、そのラベルを選択してから [**ラベルの編集**] オプションを選択し、手順 2 からラベルの説明や [有効な設定](#updating-retention-labels-and-their-policies)を変更するための [**保持ラベルの編集**] 構成を開始します。
 
 ### <a name="step-2-create-an-auto-apply-policy"></a>手順 2: 自動適用ポリシーを作成する
 
@@ -107,15 +108,18 @@ ms.locfileid: "60198771"
     
     すぐにオプションが表示されませんか? 最初に [**すべて表示**] を選択します。 
 
-2. 自動ラベル作成ウィザードの指示に従います。
+2. 自動ラベル付け構成の作成の指示に従います。
     
     保持ラベルを自動的に適用する条件の構成については、このページの「[自動適用の保持ラベルの条件の構成](#configuring-conditions-for-auto-apply-retention-labels)」セクションをご覧ください。
     
     保持ラベルでサポートされている場所については、「[保持ラベルと場所](retention.md#retention-label-policies-and-locations)」のセクションをご覧ください。
 
-既存の自動適用ポリシーを編集するには、ポリシーを選択して、アイテム保持ポリシーの編集ウィザードを起動します。このウィザードでは、手順 2 で選択した保持ラベルと[有効な設定](#updating-retention-labels-and-their-policies)を変更できます。
+既存の自動適用ポリシーを編集するには、ポリシーを選択して、[**アイテム保持ポリシーの編集**] 構成を起動します。このウィザードでは、手順 2 で選択した保持ラベルと[有効な設定](#updating-retention-labels-and-their-policies)を変更できます。
 
 自動適用ラベル ポリシーを使用してコンテンツにラベル付けをした後で、コンテンツやポリシーを変更したり、新しい自動適用ラベル ポリシーを使用したりして、適用されているラベルを自動的に削除したり変更したりすることはできません。詳細については、「[一度に 1 つの保持ラベルのみ](retention.md#only-one-retention-label-at-a-time)」を参照してください。
+
+> [!NOTE]
+> 保持ラベルの自動適用ポリシーは、コンテンツに適用されている既存の保持ラベルを置き換えることはありません。 構成した条件を使用してコンテンツにラベルを付け直す場合は、既存のコンテンツから現在の保持ラベルを手動で削除する必要があります。
 
 ### <a name="configuring-conditions-for-auto-apply-retention-labels"></a>自動適用の保持ラベルの条件の構成
 

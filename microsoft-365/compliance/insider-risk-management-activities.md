@@ -3,7 +3,7 @@ title: インサイダーリスク管理活動の調査
 description: インサイダーリスク管理活動の調査についてMicrosoft 365
 keywords: Microsoft 365、インサイダー リスク、リスク管理、コンプライアンス
 ms.localizationpriority: medium
-ms.prod: microsoft-365-enterprise
+ms.service: O365-seccomp
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: d97ddce798a043f2f73bf3f6bf62fdb890fdfee1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5f52b9391940204e53af03aaee3d5776da67b219
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190811"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60334544"
 ---
 # <a name="investigate-insider-risk-management-activities"></a>インサイダーリスク管理活動の調査
 

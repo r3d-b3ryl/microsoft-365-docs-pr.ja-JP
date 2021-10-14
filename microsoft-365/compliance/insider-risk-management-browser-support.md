@@ -3,7 +3,7 @@ title: 内部リスク管理ブラウザーのシグナル検出 (プレビュ�
 description: インサイダー リスク管理ブラウザーのシグナル検出について詳しくは、Microsoft 365
 keywords: Microsoft 365, インサイダー リスク管理, リスク管理, コンプライアンス
 ms.localizationpriority: medium
-ms.prod: microsoft-365-enterprise
+ms.service: O365-seccomp
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: f25664c0ca9cffa3a54e0bb9fb734bb506dfdf5b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a89393a2e420948a126ec5503a16ce981ed9652a
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190763"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60334504"
 ---
 # <a name="learn-about-and-configure-insider-risk-management-browser-signal-detection-preview"></a>内部リスク管理ブラウザーのシグナル検出 (プレビュー) について説明し、構成する
 

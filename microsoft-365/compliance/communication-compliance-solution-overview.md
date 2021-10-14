@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: a59954ba862122b27f2c2fb4bc87f1cff73eacc8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5333b198413c25aed4b894721803c5fa4772b439
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60155060"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60334692"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Microsoft 365 での通信コンプライアンス
 
@@ -35,9 +35,8 @@ ms.locfileid: "60155060"
 
 1. コミュニケーション コンプライアンス[の詳細については](communication-compliance.md)、Microsoft 365
 2. 通信コンプライアンス [を計画し](communication-compliance-plan.md) 、 [ライセンスを確認する](communication-compliance-configure.md#subscriptions-and-licensing)
-3. 機能 [参照とソリューションの機能を確認する](communication-compliance-feature-reference.md)
-4. 前提条件 [とアクセス](communication-compliance-configure.md#step-2-required-enable-the-audit-log) 許可 [を構成する](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)
-5. 通信コンプライアンス ポリシー [の作成と構成](communication-compliance-configure.md#step-5-required-create-a-communication-compliance-policy)
+3. 前提条件 [とアクセス](communication-compliance-configure.md#step-2-required-enable-the-audit-log) 許可 [を構成する](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)
+4. 通信コンプライアンス ポリシー [の作成と構成](communication-compliance-configure.md#step-5-required-create-a-communication-compliance-policy)
 
 ## <a name="more-information-about-communication-compliance"></a>通信コンプライアンスの詳細
 

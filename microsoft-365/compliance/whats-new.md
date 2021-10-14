@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: コンプライアンス センターに新しいソリューションを追加する場合、フィードバックに基づいて既存の機能を更新する場合、新しく更新されたドキュメントを展開する場合でも、Microsoft 365 を使用すると、変化し続けるコンプライアンス環境の上に立ち続けるのに役立ちます。 今月までの予定を確認します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: cbe868ea7f5418b9013719caa9858317d1fd6ba3
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: 94f5f0be4a0498107217cfc0b88e21c64d8acb3f
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240346"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60336036"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 コンプライアンス センターの新機能
 
@@ -95,7 +95,7 @@ Microsoft 365 コンプライアンス センター に新しいソリューシ�
 - [複数段階の廃棄レビューが](disposition.md) 一般に利用可能 (GA) で、新しい [監査イベントが追加されました](search-the-audit-log-in-security-and-compliance.md#disposition-review-activities)。 複数ステージの廃棄レビューを使用すると、保持ラベルに対して最大 5 つの連続した廃棄レビュー段階を指定し、レビュー担当者は他のユーザーを廃棄レビュー ステージに追加できます。 メールの通知とアラームをカスタマイズすることもできます。
 - アイテム保持ポリシー Teams[プライベート チャネル](create-retention-policies.md#retention-policy-for-teams-locations)が一般提供 (GA) されました。
 
-### <a name="sensitivity-labels"></a>秘密度ラベル
+### <a name="sensitivity-labels"></a>機密ラベル
 - [](sensitivity-labels-coauthoring.md) Windows (現在のチャネルまたは月次 Enterprise チャネルから 2107 の最小バージョン) と macOS (16.51 の最小バージョン) の共同編集と自動保存が一般に利用可能になります。
 - 組み込Officeを使用するアプリの展開: 既定のラベル設定では、既存のドキュメントと新しいドキュメントがサポートされます。 この動作の変更は、Azure Information Protection の統合ラベル付けクライアントとのパリティを提供します。 アプリごとのロールアウトと最小バージョンの詳細については、Word、Excel、PowerPoint の [機能表](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) を参照してください。
 - コンテナー ラベルは [、PowerShell の詳細設定を使用して既定の共有リンク設定をサポートしています](sensitivity-labels-teams-groups-sites.md#configure-settings-for-the-default-sharing-link-for-a-site-by-using-powershell-advanced-settings)。
@@ -107,7 +107,7 @@ Microsoft 365 コンプライアンス センター に新しいソリューシ�
 - [アラートインサイト用の拡張エントリ](app-governance-anomaly-detection-alerts.md#collection-alerts)。 新しいエントリが追加され、アプリガバナンスで利用可能なアラートインサイトが追加されました。
 
 ### <a name="communication-compliance"></a>コミュニケーション コンプライアンス
-- [通信コンプライアンス機能リファレンスでは](communication-compliance-feature-reference.md)、プライベート チャットやチャネルでの最新の添付ファイルのスキャンに関するTeams機能のサポートが追加されました。
+- [通信コンプライアンス チャネルでは、](communication-compliance-channels.md)プライベート チャットやチャネルでの最新の添付ファイルのスキャンにTeams機能が追加されました。
 
 ### <a name="compliance--service-assurance"></a>コンプライアンス&サービス アシュアランス
 
@@ -136,7 +136,7 @@ Microsoft 365 コンプライアンス センター に新しいソリューシ�
 ### <a name="retention-and-records-management"></a>保持とレコードの管理
 - [アイテムが保持または完全](retention-flowchart.md) に削除される期間を決定するフローチャートで、保持の原則の概念と例を補足します。
 
-### <a name="sensitivity-labels"></a>秘密度ラベル
+### <a name="sensitivity-labels"></a>機密ラベル
 - [](apply-sensitivity-label-automatically.md#recent-enhancements-for-auto-labeling-policies)サイトとポリシーでサポートされる番号の増加、すべての OneDrive サイトと SharePoint サイトのサポート、URL で各サイトを入力する代わりに使用可能な SharePoint サイトを選択する機能、およびシミュレーションの改善を含む自動ラベル付けポリシーの機能強化。
 - アプリの感度ラベル設定Officeラベル付けは、完全データ一致[(EDM) をサポートしています](apply-sensitivity-label-automatically.md#custom-sensitive-information-types-with-exact-data-match)。
 - 既定のラベルが (プレビューで) Power BI[に拡張されました](/power-bi/admin/service-security-sensitivity-label-default-label-policy)。
@@ -207,7 +207,7 @@ Microsoft 365 コンプライアンス センター に新しいソリューシ�
 - [PowerShell を使用してカスタム機密情報の種類を変更する](sit-modify-a-custom-sensitive-information-type-in-powershell.md)
 - [PowerShell を使用してカスタム機密情報の種類を削除する](sit-remove-a-custom-sensitive-information-type-in-powershell.md)
 
-### <a name="sensitivity-labels"></a>秘密度ラベル
+### <a name="sensitivity-labels"></a>機密ラベル
 - トレーニング可能な分類子は、Windows および web (Office Online) 用の[Office](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)アプリで自動ラベル付けOfficeできます。
 - 必須のラベル付けは、(プレビューで) Power BI[に拡張されました。](/power-bi/admin/service-security-sensitivity-label-mandatory-label-policy)
 - 感度 [ラベルで]( sensitivity-labels-coauthoring.md)暗号化されたファイルの共同編集 : 条件として感度ラベルを使用する DLP ポリシーと電子メールの暗号化されていない添付ファイルのサポートを展開する
@@ -229,7 +229,7 @@ Microsoft 365 コンプライアンス センター に新しいソリューシ�
 - [Advanced eDiscovery](tagging-documents.md)のレビュー セット内のドキュメントにタグを付け (新しいタグ機能と UX を使用して、レビュー セット内のタグ付けドキュメントをより迅速かつ簡単に作成できます。クエリを使用してドキュメントにタグを付け、フィルターを使用してアイテムのタグ付け方法に基づいてレビュー セットアイテムをすばやく検索または除外する新しい機能が含まれています)
 - 電子情報開示調査のコンプライアンス境界を設定する[(Microsoft](set-up-compliance-boundaries.md)は、コンプライアンス属性を OneDrive アカウントに同期する要求を MS サポートに問い合わせる要件を削除しました。メールボックス検索のアクセス許可フィルターを使用して、OneDrive のコンプライアンス境界を適用しました)
 
-### <a name="sensitivity-labels"></a>秘密度ラベル
+### <a name="sensitivity-labels"></a>機密ラベル
 
 - 感度ラベル ポリシー ウィザードでは、既定[の](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling)ラベルOutlook固有のオプションがサポートされ、必須のラベル付けは PowerShell の詳細設定よりも簡単に構成できます。
 - 変数を[使用した動的マーキング](sensitivity-labels-office-apps.md#dynamic-markings-with-variables )のサポートが、Word、Excel、およびPowerPoint on the web
@@ -254,9 +254,9 @@ Microsoft 365 コンプライアンス センター に新しいソリューシ�
 
 - キーワード ディクショナリの変更に役立つ [新しい情報が追加されました](sit-modify-keyword-dictionary.md)。
 
-### <a name="sensitivity-labels"></a>秘密度ラベル
+### <a name="sensitivity-labels"></a>機密ラベル
 
-- プレビューでは、グループとサイトの感度ラベルを構成するときに、認証コンテキストの新しい設定[を使用できます](sensitivity-labels-teams-groups-sites.md)。 このオプションは、Azure AD条件付きアクセス ポリシーと組み合わせて機能し、ユーザーがラベルが適用されているサイトにアクセスするときにSharePoint厳しい条件を適用します。 この設定を構成する前 [に、依存関係と制限](sensitivity-labels-teams-groups-sites.md#more-information-about-the-dependencies-for-the-authentication-context-option) を必ず確認してください。
+- プレビューでは、グループとサイトの感度ラベルを構成するときに、認証コンテキストの新しい設定[を使用できます](sensitivity-labels-teams-groups-sites.md)。 このオプションは、ユーザーがラベルが適用Azure AD SharePointサイトにアクセスするときに、より厳しい条件を適用するために、Azure AD条件付きアクセス ポリシーと組み合わせて機能します。 この設定を構成する前 [に、依存関係と制限](sensitivity-labels-teams-groups-sites.md#more-information-about-the-dependencies-for-the-authentication-context-option) を必ず確認してください。
 - [](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) Exchange 用に構成された自動ラベル付けポリシーは、暗号化を適用する感度ラベルをサポートし、[転送しない] オプションまたは [転送しない] オプションに対するアクセス許可をユーザーに割り当てEncrypt-Onlyしました。
 - [必須のラベル付](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents)けは、すべてのプラットフォームで、Officeアプリで一般に使用できます。
 
@@ -285,7 +285,7 @@ Microsoft 365 コンプライアンス センター に新しいソリューシ�
 
 - Microsoft 365 グループの場所では *、Applications* パラメーターで [Set-RetentionCompliancePolicy PowerShell](/powershell/module/exchange/set-retentioncompliancepolicy)コマンドレットを使用して、保持設定を Microsoft 365 メールボックスまたは接続された SharePoint サイトに適用できます。
 
-### <a name="sensitivity-labels"></a>秘密度ラベル
+### <a name="sensitivity-labels"></a>機密ラベル
 
 Outlookと更新プログラム:
 

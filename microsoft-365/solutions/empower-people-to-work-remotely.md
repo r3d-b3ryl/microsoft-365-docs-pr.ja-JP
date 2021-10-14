@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: 在宅勤務、在宅勤務、ハイブリッド、リモート ワーカー、ハイブリッド ワーク、リモート従業員、ハイブリッド接続、リモート アクセス、在宅勤務、テレワーク、テレワーク、モバイル ワーク、リモート ジョブ、どこからでも作業、柔軟な職場
 description: ハイブリッド ワーカーがオンプレミスおよび Microsoft 365 のリソースに安全にアクセスできるように、インフラストラクチャのレイヤーをステップ スルーします。
-ms.openlocfilehash: b93469fe1cb60dd1f0b86d34e23c49faa5c9e373
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ae6d9ab0017ed4d4a33fc57be74ac0ea4aa955a4
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205033"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335952"
 ---
 # <a name="set-up-your-infrastructure-for-hybrid-work-with-microsoft-365"></a>Microsoft 365 を使用したハイブリッドワーク用のインフラストラクチャを設定する
 
@@ -91,7 +91,7 @@ Microsoft 365 には、ハイブリッド ワーカーがオンサイトまた�
 |Azure AD アプリケーション プロキシ|イントラネット サーバーでホストされている Web ベースのアプリケーションに安全なリモート アクセスを提供します。|別の有料 Azure サブスクリプションが必要|
 |Azure ポイント対サイト VPN|Azure 仮想ネットワークを介してリモート ワーカーのデバイスからイントラネットへの安全な接続を作成します。|別の有料 Azure サブスクリプションが必要|
 |Windows Virtual Desktop|Azure で実行されている仮想デスクトップで、個人の管理されていないデバイスのみを使用できるリモート ワーカーをサポートします。|別の有料 Azure サブスクリプションが必要|
-|リモート デスクトップ サービス (RDS)|従業員によるイントラネット上の Windows ベースのコンピューターへの接続を許可します。|Microsoft 365 E3 または E5|
+|リモート デスクトップ |従業員によるイントラネット上の Windows ベースのコンピューターへの接続を許可します。|Microsoft 365 E3 または E5|
 |リモート デスクトップ サービス ゲートウェイ|通信を暗号化し、RDS ホストがインターネットに直接公開されないようにします。|別の Windows サーバー ライセンスが必要|
 |Microsoft Intune|デバイスとアプリケーションを管理します。|Microsoft 365 E3 または E5|
 |構成マネージャーを使用するための|デバイスでのソフトウェアのインストール、更新、設定を管理します|別の Configuration Manager ライセンスが必要|

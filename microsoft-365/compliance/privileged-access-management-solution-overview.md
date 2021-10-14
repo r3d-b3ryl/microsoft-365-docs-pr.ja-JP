@@ -3,7 +3,7 @@ title: Microsoft 365 での特権アクセス管理
 description: インサイダー リスク機能を構成する方法については、Microsoft 365。
 keywords: Microsoft 365、インサイダー リスク、コンプライアンス
 ms.localizationpriority: medium
-ms.prod: microsoft-365-enterprise
+ms.service: O365-seccomp
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: 542c9814522eff056e236b9ac8c260c06524461b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fe229318d3eaabfe9a20fb83d9c42d06651a5f85
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203041"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335276"
 ---
 # <a name="privileged-access-management-in-microsoft-365"></a>Microsoft 365 での特権アクセス管理
 
