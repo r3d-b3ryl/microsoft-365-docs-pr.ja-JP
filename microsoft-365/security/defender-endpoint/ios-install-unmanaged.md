@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 32063caceaf74a3924585aac0142958736dcc5c8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f5743cecab5e6a1bd0ab51b5a984a49e04f80184
+ms.sourcegitcommit: 1e990628d72b6d392500ea564859543e7c8bc632
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192705"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60386210"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-unenrolled-ios-devices"></a>登録されていない iOS デバイスに Microsoft Defender for Endpoint を展開する
 
@@ -37,21 +37,58 @@ ms.locfileid: "60192705"
 
 ## <a name="configure-microsoft-defender-for-endpoint-risk-signals-in-app-protection-policy-mam"></a>アプリ保護ポリシー (MAM) で Microsoft Defender for Endpoint リスクシグナルを構成する
 
-Microsoft Defender for Endpoint は、iOS/iPadOS のアプリ保護ポリシー (APP、 MAM とも呼ばれる) で使用される脅威信号を送信するように構成できます。 この機能を使用すると、Microsoft Defender for Endpoint を使用して、登録されていないデバイスから企業データへのアクセスを保護することもできます。
+モバイル デバイス管理 (MDM) シナリオでエンタープライズ ユーザーを既に保護している Android 上の Microsoft Defender for Endpoint は、Intune モバイル デバイス管理 (MDM) を使用して登録されていないデバイスのモバイル アプリ管理 (MAM) のサポートを拡張しました。 また、このサポートは、他のエンタープライズ モビリティ管理ソリューションを使用しているお客様にも拡張しますが、モバイル アプリケーション管理 (MAM) には Intune を使用します。この機能を使用すると、アプリケーション内で組織のデータを管理および保護できます。
+
+Microsoft Defender for Endpoint on Android の脅威情報は、Intune アプリ保護ポリシーによってこれらのアプリを保護するために活用されます。 アプリ保護ポリシー (APP) は、組織のデータを安全に保つか、管理アプリに含まれるか確認するルールです。 管理アプリケーションにはアプリ保護ポリシーが適用され、Intune で管理できます。  
+
+Android 上のエンドポイント用 Microsoft Defender は、MAM の両方の構成をサポートしています
+- **Intune MDM + MAM**: IT 管理者は、Intune モバイル デバイス管理 (MDM) に登録されているデバイスでアプリ保護ポリシーを使用してアプリのみを管理できます。
+- **デバイス登録なしの** MAM : デバイス登録なしの MAM、または MAM-WE を使用すると [](/mem/intune/app/app-protection-policy)、IT 管理者は Intune MDM に登録されていないデバイスでアプリ保護ポリシーを使用してアプリを管理できます。 つまり、サードパーティの EMM プロバイダーに登録されているデバイスでは、Intune によってアプリを管理できます。 上記の両方の構成を使用してアプリを管理するには、管理者センターで Intune[をMicrosoft エンドポイント マネージャーする必要があります。](https://go.microsoft.com/fwlink/?linkid=2109431)
+
+この機能を有効にするには、管理者が Microsoft Defender for Endpoint と Intune 間の接続を構成し、アプリ保護ポリシーを作成し、対象のデバイスとアプリケーションにポリシーを適用する必要があります。 
+ 
+エンド ユーザーは、デバイスに Microsoft Defender for Endpoint をインストールし、オンボーディング フローをアクティブ化するための手順を実行する必要があります。
 
 ### <a name="pre-requisites"></a>前提条件
 
 1. **コネクタが有効になっているか確認します**。 <br> 統合セキュリティ [コンソールで](https://security.microsoft.com)、[エンドポイントの高度な **機能** 設定に移動し、接続が有効Microsoft Intune  >    >  **確認** します。
+
+  ![Defender for Endpoint -Intune コネクタのイメージ](images/enable-intune-connection.png)
+  
 2. **Intune ポータルでコネクタが有効になっているか確認します**。 <br> [Microsoft Endpoint manager 管理センターで、[](https://go.microsoft.com/fwlink/?linkid=2109431)エンドポイント セキュリティ] [エンドポイント用 Microsoft Defender] に移動し、[接続] 状態  >  が有効になっているか確認します。
 
-Microsoft Defender for Endpoint を使用してアプリ保護ポリシーをセットアップするには、次の手順を使用します。
+  ![アプリの設定](images/app-settings.png)
 
-1. Microsoft Defender for Endpoint への Microsoft エンドポイント マネージャーテナントからの接続を設定します。 [Microsoft Endpoint](https://go.microsoft.com/fwlink/?linkid=2109431)Manager 管理センターで、[テナント管理コネクタとトークン Microsoft Defender for Endpoint (クロス プラットフォーム) またはエンドポイント セキュリティ Microsoft Defender for Endpoint (セットアップ] の下) に移動し、[アプリ保護ポリシー 設定 for \>  \>   \>  **iOS]** のトグルをオンにします。
-1. **[保存]** を選択します。 [接続の状態 **] が [有効]** に設定されている必要 **があります**。
-1. アプリ保護ポリシーを作成する: Microsoft Defender for Endpoint Connector のセットアップが完了したら、[アプリアプリ保護ポリシー] ([ポリシー] の下) に移動して、新しいポリシーを作成するか、既存のポリシーを \> 更新します。
-1. 組織がポリシーに必要とするプラットフォーム、 **アプリ、データ** 保護、アクセス要件の設定を選択します。
-1. [ **条件付き起動** \> **デバイスの条件**] で、[最大許可デバイスの脅威レベル **] という設定が表示されます**。 これは、Low、Medium、High、または Secured のどちらかに構成する必要があります。 使用できるアクションは、[アクセスのブロック] **または [** データの **ワイプ] になります**。 この設定を有効にする前に、コネクタをセットアップする情報ダイアログが表示される場合があります。 コネクタが既にセットアップされている場合は、このダイアログは無視できます。
-1. [割り当て] で終了し、ポリシーを保存します。
+### <a name="create-an-app-protection-policy"></a>アプリ保護ポリシーを作成する
+ 
+アプリ保護ポリシーを作成して、Microsoft Defender for Endpoint リスクシグナルに基づいて管理アプリのデータへのアクセスをブロックまたはワイプします。
+Microsoft Defender for Endpoint は、アプリ保護ポリシー (APP、 MAM とも呼ばれる) で使用される脅威信号を送信するように構成できます。 この機能を使用すると、Microsoft Defender for Endpoint を使用して管理対象アプリを保護できます。
+
+1. ポリシーを作成する <br>
+アプリ保護ポリシー (APP) は、組織のデータを安全に保つか、管理アプリに含まれるか確認するルールです。 ポリシーには、ユーザーが "企業" データにアクセスまたは移動しようとするときに適用されるルール、またはユーザーがアプリ内に入っているときに禁止または監視される一連のアクションを指定できます。 
+
+![ポリシー作成のイメージ](images/create-policy.png)
+
+2. アプリを追加する <br>
+    a. このポリシーをさまざまなデバイス上のアプリに適用する方法を選択します。 次に、少なくとも 1 つのアプリを追加します。 <br>
+    このポリシーが管理されていないデバイスに適用されるかどうかを指定するには、このオプションを使用します。 また、任意の管理状態のデバイス上のアプリにポリシーをターゲットにすることもできます。
+モバイル アプリの管理ではデバイス管理が必要ではないので、管理デバイスと管理されていないデバイスの両方で会社のデータを保護できます。 管理はユーザー ID を中心とします。デバイス管理の要件は削除されます。 企業は、MDM を使用する場合と使用しない場合でも、アプリ保護ポリシーを同時に使用できます。 たとえば、会社が発行した電話と自分の個人用タブレットの両方を使用する従業員を考えます。 会社の電話は MDM に登録され、アプリ保護ポリシーによって保護され、個人用デバイスはアプリ保護ポリシーでのみ保護されます。
+
+    b. [アプリの選択]<br>
+    管理アプリは、アプリ保護ポリシーが適用され、Intune で管理できるアプリです。 [Intune SDK](/mem/intune/developer/app-sdk)に統合されたアプリ、または Intune アプリによってラップされたアプリは、Intune アプリ[App Wrapping Tool](/mem/intune/developer/apps-prepare-mobile-application-management)ポリシーを使用して管理できます。 これらのツールを使用して[構築](/mem/intune/apps/apps-supported-intune-apps)Microsoft Intune、パブリックに使用できる保護されたアプリの公式リストを参照してください。
+
+    *例: Outlookアプリとして使用する*
+
+    ![管理Outlookイメージ](images/managed-app.png)
+
+ 3. 保護ポリシーのサインイン セキュリティ要件を設定します。 <br>
+[ **デバイスの条件>最大許容** デバイス脅威レベルの設定] を選択 **し、値** を入力します。 次に、[  **アクション] を選択します。[アクセスをブロックする] を選択します**。 Android 上のエンドポイント用 Microsoft Defender は、このデバイス脅威レベルを共有します。
+
+    ![条件付き起動のイメージ](images/conditional-launch.png)
+
+4. ポリシーを適用する必要があるユーザー グループを割り当てる。<br>
+  [含 **まれるグループ] を選択します**。 次に、関連するグループを追加します。 
+
 
 MAM またはアプリ保護ポリシーの詳細については [、「iOS アプリ保護ポリシー設定」を参照してください](/mem/intune/apps/app-protection-policy-settings-ios)。
 

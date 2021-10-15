@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 詳細については、Microsoft 365 Business Voice。
-ms.openlocfilehash: ef3c0d08ac2a419e8d15b825272f6689f6cd3eaf
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e95a472ee70e38851dc0552968d2494304be1df4
+ms.sourcegitcommit: 1e990628d72b6d392500ea564859543e7c8bc632
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199059"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60386172"
 ---
 # <a name="overview-of-business-voice"></a>Business Voice の概要
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4C56M?autoplay=false]
 
-Microsoft 365 Business Voice、ビジネスとその従業員に対してエンドツーエンドのクラウドベースの電話システムを提供します。
+Microsoft 365 Business Voiceは、ビジネスとその従業員にエンドツーエンドのクラウドベースの電話システムを提供します。
 
 ## <a name="what-is-business-voice"></a>Business Voice とは
 
@@ -49,7 +49,7 @@ Business Voice は、ユーザーの一部なので、あらゆる場所にMicro
 
 1. 既存のMicrosoft 365 Business Voiceサブスクリプションに対して、Microsoft 365購入します。
 1. ビジネス外のユーザーと通話を行い、受け取るビジネス電話番号を必要としているすべての従業員のライセンスを取得してください。
-1. Business Voice を設定すると、ビジネスと従業員の新しい電話番号が届く。 後で既存のビジネス番号をインポートする場合でも、これを行う必要があります。
+1. Business Voice を設定すると、ビジネスと従業員の新しい電話番号が届く。 これは、後で既存のビジネス番号をインポートする場合でも行います。
 1. フリーダイヤル番号または任意の番号を国際的に呼び出す機能が必要な場合は、ビジネス用の通信クレジットを購入します。これは、Business Voice に含まれる通話時間を超える分数を提供します。
 1. 録音をアップロードするか、メッセージを入力して顧客の案内応答を作成し、テキストを音声に変換します。
 1. 次に、メインの電話番号から通話ルーティング メニューを作成し、顧客を音声または電話のキーで適切な人物または部署に移動します。 休日や時間外に別の案内応答とメニューをスケジュールできます。
@@ -60,4 +60,4 @@ Business Voice は、ユーザーの一部なので、あらゆる場所にMicro
 
 電話を行う場合は、コンピューター、タブレット、Teamsのアプリを開き、[通話] を選択します。 割り当てられた電話番号とダイヤル パッドが表示され、任意の番号に通話できます。 または、連絡先または電話から連絡先Outlookを選択し、直接呼び出します。
 
-通話が入ると、通常の電話でのエクスペリエンスと同様に、通話を受け入れるか無視するように求めるメッセージが表示されます。 必要に応じて、通話を転送するか、複数のデバイスを呼び出して、顧客からの重要な通話を見逃しなくしてください。
+通話が入ると、通常の電話のエクスペリエンスと同様に、通話を受け入れるか無視するように求めるメッセージが表示されます。 必要に応じて、通話を転送するか、複数のデバイスを呼び出して、顧客からの重要な通話を見逃しなくしてください。

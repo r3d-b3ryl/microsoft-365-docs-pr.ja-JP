@@ -16,16 +16,20 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 1692c80d400cbae3ebaefd2a6995cba9c362c580
-ms.sourcegitcommit: df1ad7118c4a95a310a4f17124322a6ae6ace26f
+ms.openlocfilehash: 722d446a9b8dcde216c8dd26b51ca3a4d13fe54d
+ms.sourcegitcommit: 1e990628d72b6d392500ea564859543e7c8bc632
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60268898"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60386218"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender for Endpoint on Linux の新機能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+## <a name="1014513-30121082145130"></a>101.45.13 (30.121082.14513.0)
+
+- バグ修正
 
 ## <a name="1014500-30121072145000"></a>101.45.00 (30.121072.14500.0)
 
