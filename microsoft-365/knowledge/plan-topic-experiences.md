@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 ms.localizationpriority: medium
 description: 詳しくは、アプリの計画を立Microsoft Viva トピック。
-ms.openlocfilehash: dd7b56342a3881c25be65a62028d024aa55c35ce
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 61729eeaa4a30a3f7e0faf50ab40320d88f3d78a
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60163194"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364581"
 ---
 # <a name="plan-for-microsoft-viva-topics"></a>計画を立Microsoft Viva トピック
 
@@ -71,9 +71,7 @@ Site name,URL
 
 ### <a name="multi-geo"></a>Multi-Geo
 
-組織が[Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo)を展開している場合、トピック センターは中央の場所にプロビジョニングされ、中央の場所にある SharePoint サイトだけがトピックのソースとして使用できます。 ([すべてのサイト] **を選択した** 場合、Viva Topics は中央の場所のすべてのサイトを使用します)。
-
-コンテンツのすべての処理と保存は、中央の場所で行われます。
+組織が複数地域にMicrosoft 365[している](/microsoft-365/enterprise/microsoft-365-multi-geo)場合は、トピック データが常に正しい地域の場所に保存されていることを確認することで、データの主権を尊重します。 トピック センターは中央の場所に準備され、すべての地域の場所のコンテンツがそこで処理されます。 結果として検出されたトピックは、ソース コンテンツと同じ地域の場所に格納されます。 トピック ソース データが地域の場所間で移動すると、説明などの対応するトピック プロパティも移動します。
 
 ## <a name="user-permissions"></a>ユーザーのアクセス許可
 

@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アプリを管理するためのアプリ ガバナンス機能の使用を開始します。
-ms.openlocfilehash: bb5fa0e54eadec89124c39a350b7591be82b7583
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 8998a0e4f6cf01a7394e44695cd06f0b60915c7e
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335880"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364737"
 ---
 # <a name="get-started-with-app-governance-in-preview"></a>アプリ ガバナンスの使用を開始する (プレビュー版)
 
@@ -101,7 +101,6 @@ MCAS との統合がアクティブであることを確認するには、MCAS �
 - 社内管理者
 - コンプライアンス管理者
 - コンプライアンス データ管理者
-- コンプライアンス リーダー (読み取り専用)
 - グローバル閲覧者
 - セキュリティ管理者
 - セキュリティ オペレーター

@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 のエンドポイントのデータ損失防止は、ファイル アクティビティの監視と、それらのファイルに対する保護アクションをエンドポイントに拡張します。 Microsoft 365 のコンプライアンスソリューションでファイルが表示されます '
-ms.openlocfilehash: be83c796312a61e4411d8cd7107d0330678f95de
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9d1577cff0cc06589c833a568af214c99059e829
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159816"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364533"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Microsoft 365 のエンドポイントのデータ損失防止について説明する
 
@@ -74,6 +74,10 @@ Microsoft エンドポイント DLP を使用すると、Windows 10 デバイス
 
 > [!NOTE]
 > **デバイスのファイル アクティビティを常に監査する** の設定がオンの場合、デバイスがポリシーの対象になっていない場合でも、Word、PowerPoint、Excel、PDF、および .csv ァイルでのアクティビティは常に監査されます。
+
+> [!TIP]
+> サポートされているすべてのファイルの種類についてアクティビティが監査されるようにするには、既定のポリシーと一緒に[カスタム DLP ポリシー](create-test-tune-dlp-policy.md)を作成します。
+
 
 エンドポイント DLP は MIME の種類に基づいてアクティビティを監視するため、ファイルの拡張子が変更されてもアクティビティはキャプチャされます。
 

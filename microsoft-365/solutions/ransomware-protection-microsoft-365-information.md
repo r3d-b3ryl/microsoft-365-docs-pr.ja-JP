@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: ランサムウェア、人が操作するランサムウェア、人間が操作するランサムウェア、HumOR、強要攻撃、ランサムウェア攻撃、暗号化、暗号ウイルス学
 description: 制御されたフォルダー アクセス、MIP、DLP、および Microsoft Cloud App Security を使用して、Microsoft 365 の機密データを保護します。
-ms.openlocfilehash: 392a86ef736adb258f131515a855d21ca29fe438
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3085afe91449c8c368a0f8622c26ceb1581b331a
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60149540"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364810"
 ---
 # <a name="step-5-protect-information"></a>手順 5. 情報を保護する
 
@@ -117,7 +117,7 @@ Microsoft の主な情報:
 - [ランサムウェアの脅威の増大](https://blogs.microsoft.com/on-the-issues/2021/07/20/the-growing-threat-of-ransomware/)、2021 年 7月 20 日付け Microsoft On the Issues のブログ投稿
 - [人が操作するランサムウェア](/security/compass/human-operated-ransomware)
 - [ランサムウェアや強要から迅速に保護する](/security/compass/protect-against-ransomware)
-- [最新の Microsoft セキュリティ インテリジェンス レポート](https://www.microsoft.com/securityinsights/)( 22-24 ページを参照してください)
+- [2021 Microsoft Digital Defense Report](https://www.microsoft.com/security/business/microsoft-digital-defense-report) (10- 19 ページを参照ください)
 - **ランサムウェア: Microsoft 365 Defender ポータルの **脅威分析** ノードの蔓延する継続的な脅威** に関するレポート (これらの「[ライセンス要件](/microsoft-365/security/defender/prerequisites#licensing-requirements)」 を参照ください)
 
 Microsoft 365:

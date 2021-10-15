@@ -21,20 +21,23 @@
           href: service-description/regions-languages.md
         - name: 製品のライフサイクル
           href: service-description/device-lifecycle.md
-        - name: デバイスの要件
-          href: service-description/device-requirements.md
-        - name: デバイスの画像
-          href: service-description/device-images.md
-        - name: デバイス名
-          href: service-description/device-names.md
-        - name: デバイス サービス
-          href: service-description/device-services.md
-        - name: デバイス プロファイル
-          href: service-description/profiles.md
-        - name: デバイス展開グループ
-          href: service-description/deployment-groups.md
-        - name: デバイス構成
-          href: service-description/device-policies.md
+        - name: デバイス
+          href: null
+          items:
+            - name: デバイスの要件
+              href: service-description/device-requirements.md
+            - name: デバイスの画像
+              href: service-description/device-images.md
+            - name: デバイス名
+              href: service-description/device-names.md
+            - name: デバイス サービス
+              href: service-description/device-services.md
+            - name: デバイス プロファイル
+              href: service-description/profiles.md
+            - name: デバイス展開グループ
+              href: service-description/deployment-groups.md
+            - name: デバイス構成
+              href: service-description/device-policies.md
         - name: セキュリティ技術
           href: service-description/security.md
         - name: セキュリティ運用
@@ -154,6 +157,8 @@
               href: working-with-managed-desktop/device-status-report.md
             - name: Windows セキュリティ更新プログラム レポート
               href: working-with-managed-desktop/security-updates-report.md
+            - name: アプリの使用状況レポート
+              href: working-with-managed-desktop/app-usage-report.md
         - name: 管理者サポート
           href: working-with-managed-desktop/admin-support.md
         - name: ユーザー サポート

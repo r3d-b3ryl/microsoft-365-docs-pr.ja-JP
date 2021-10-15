@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 Defenderストリーミング API でサポートされているイベントの種類
-description: ストリーミング API でサポートされているハンティング イベントの種類 (テーブル) について説明します。
+title: Microsoft 365 Defender API でサポートされるストリーミング イベントの種類の一覧
+description: ストリーミング API でサポートされているストリーミング イベントの種類 (テーブル) について説明します。
 keywords: raw data export, Streaming API, API, Event hubs, Azure storage, storage account, Hunting, raw data sharing
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 780cac298206127d52e14b3888a0a8d7f05ae0c5
-ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
+ms.openlocfilehash: e8264ccb9e3181f6b58a6206417eb2b842bec6e7
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60216972"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364798"
 ---
-# <a name="supported-microsoft-365-defender-event-types-in-event-streaming-api"></a>イベント ストリーミング API Microsoft 365 Defenderイベントの種類のサポート
+# <a name="supported-microsoft-365-defender-streaming-event-types-in-event-streaming-api"></a>イベント ストリーミング API Microsoft 365 Defenderストリーミング イベントの種類のサポート
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,11 +38,13 @@ ms.locfileid: "60216972"
 
 ## <a name="hunting-tables-support-status-in-event-streaming-api"></a>イベント ストリーミング API でのハンティング テーブルのサポート状態
 
+次の表には、ストリーミング API でサポートされているテーブルの一覧だけが含まれていますが、すべての AH スキーマが含まれるとは言えな。 API の完全な一覧については、「 [スキーマ テーブルについて」を参照してください](advanced-hunting-schema-tables.md#learn-the-schema-tables)。
+
+
 | テーブル名 | 状態 |
 |------------|-------------|
 | **[AlertEvidence](advanced-hunting-alertevidence-table.md)** | GA |
 | **[AlertInfo](advanced-hunting-alertinfo-table.md)** | GA  |
-| **[CloudAppEvents](advanced-hunting-cloudappevents-table.md)** | まだサポートされていません |
 | **[DeviceEvents](advanced-hunting-deviceevents-table.md)** |GA |
 | **[DeviceFileCertificateInfo](advanced-hunting-DeviceFileCertificateInfo-table.md)** |GA |
 | **[DeviceFileEvents](advanced-hunting-devicefileevents-table.md)** | GA |
@@ -57,7 +59,5 @@ ms.locfileid: "60216972"
 | **[EmailEvents](advanced-hunting-emailevents-table.md)** | GA |
 | **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | GA |
 | **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | GA |
-| **[IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md)** | まだサポートされていません |
-| **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | まだサポートされていません |
-| **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | まだサポートされていません |
+
 

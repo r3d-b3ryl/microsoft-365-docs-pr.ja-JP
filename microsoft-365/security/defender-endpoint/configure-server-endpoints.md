@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b180cedbad90082fa548e0dbd41af7313bc9e5b8
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 041f4840f3c06439c37043e0779d7acf0173c56c
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335780"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60363992"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Microsoft Defender Windowsエンドポイント サービスへのオンボード サーバー
 
@@ -31,7 +31,7 @@ ms.locfileid: "60335780"
 
 - Windows Server 2012 R2
 - Windows Server 2016
-- Windowsサーバー Semi-Annual チャネル
+- Windowsサーバー Semi-Annual Enterprise チャネル
 - Windows Server 2019 以降
 - Windows Server 2019 Core Edition
 - Windows Server 2022
@@ -61,7 +61,7 @@ Defender for Endpoint では、サポートを拡張して、サーバー オペ
 - アプリケーションのインストール
 - 対応するツールのオンボーディング手順に従う
 
-**WindowsServer Semi-Annual チャネルと Windows Server 2019**
+**WindowsServer Semi-Annual Enterprise チャネルと Windows Server 2019**
 
 - オンボーディング パッケージをダウンロードする
 - 対応するツールのオンボーディング手順に従う
@@ -90,19 +90,19 @@ R2 および R2 および Windows Server 2012の以前Windows Server 2016実装�
 
 #### <a name="known-issues-and-limitations"></a>既知の問題と制限事項
 次の詳細は、R2 および 2016 の新しい統合ソリューション パッケージWindows Server 2012適用されます。
-- 「プロキシ サーバー内の Microsoft [Defender for Endpoint](/microsoft-365/security/defender-endpoint/configure-proxy-internet?enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server) Service URL へのアクセスを有効にする」で指定されている接続要件が満たされている必要があります。 これらは、サーバー 2019 Windowsと同じです。 
+- 「プロキシ サーバー内の Microsoft Defender for Endpoint サービス URL へのアクセスを有効にする」で指定されている接続要件が [満たされている必要があります](/microsoft-365/security/defender-endpoint/configure-proxy-internet?enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server) 。 これらは、サーバー 2019 Windowsと同じです。 
 - 以前は、OMS ゲートウェイが Defender クラウド サービスへの接続を提供するために、Windows Server 2016 以下の Microsoft Monitoring Agent (MMA) を使用する必要がありました。 Windows Server 2019、Windows Server 2022、Windows 10 の Microsoft Defender for Endpoint のような新しいソリューションは、このゲートウェイをサポートしません。
 - このWindows Server 2016、インストールMicrosoft Defender ウイルス対策アクティブで最新の状態に設定されていることを確認します。 Update を使用して、最新のプラットフォーム バージョンをダウンロードWindowsできます。 または、Microsoft Update Catalog または[](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623)MMPC から更新プログラム パッケージを手動[でダウンロードします](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64)。  
-- R2 Windows Server 2012では、ユーザー インターフェイスがMicrosoft Defender ウイルス対策。 さらに、ユーザー インターフェイスは、Windows Server 2016操作のみを許可します。 デバイスでローカルで操作を実行するには [、「PowerShell、WMI、 ](/microsoft-365/security/defender-endpoint/manage-atp-post-migration-other-tools)およびデバイスを使用して Microsoft Defender for Endpoint を管理する」を参照MPCmdRun.exe。 その結果、ユーザーの操作に特に依存する機能 (ユーザーに決定の指示や特定のタスクの実行を求めるメッセージが表示される場所など) は、期待した通りに機能しない可能性があります。 一般に、保護機能に影響を与える可能性があるとして、ユーザー インターフェイスを無効にするか無効にするか、管理サーバーでユーザーの操作を必要としません。
-- すべての攻撃表面縮小ルールがすべてのオペレーティング システムで使用できる場合があります。 攻撃表面 [の縮小 (ASR) ルールを確認してください](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules)。
+- R2 Windows Server 2012では、ユーザー インターフェイスがMicrosoft Defender ウイルス対策。 さらに、ユーザー インターフェイスは、Windows Server 2016操作のみを許可します。 デバイスの操作をローカルで実行するには [、「PowerShell、WMI、 ](/microsoft-365/security/defender-endpoint/manage-atp-post-migration-other-tools)およびデバイスを使用して Microsoft Defender for Endpoint を管理する」を参照MPCmdRun.exe。 その結果、ユーザーの操作に特に依存する機能 (ユーザーに決定の指示や特定のタスクの実行を求めるメッセージが表示される場所など) は、期待した通りに機能しない可能性があります。 保護機能に影響を与える可能性がある場合は、ユーザー インターフェイスを無効にするか、無効にするか、管理サーバーでユーザーの操作を必要としません。
+- すべての攻撃表面縮小ルールがすべてのオペレーティング システムで使用できる場合があります。 「 [攻撃表面の縮小 (ASR) ルール」を参照してください](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules)。
 - ネットワーク保護 [を有効にするには、](/microsoft-365/security/defender-endpoint/network-protection)追加の構成が必要です。   
     -- Set-MpPreference -EnableNetworkProtection Enabled  
     -- Set-MpPreference -AllowNetworkProtectionOnWinServer 1  
     -- Set-MpPreference -AllowNetworkProtectionDownLevel 1  
     -- Set-MpPreference -AllowDatagramProcessingOnWinServer 1  
   さらに、ネットワーク トラフィックが多いコンピューターでは、この機能を広く有効にする前に、環境でのパフォーマンス テストを強くお勧めします。 追加のリソース消費を考慮する必要がある場合があります。
- - R2 Windows Server 2012、ネットワーク イベントがタイムラインに設定されない場合があります。 この問題には、火曜日Windows 10 月 12 日パッチの一部としてリリースされた更新プログラム KB4645768 が必要です。
- - オペレーティング システムのアップグレードはサポートされていません。 アップグレードする前にオフボードしてからアンインストールしてください。
+ - R2 Windows Server 2012、ネットワーク イベントがタイムラインに設定されない場合があります。 この問題には、2021 Windows 10 月 12 日の更新プログラムの一部としてリリースされた更新プログラム KB4645768 が必要です。
+ - オペレーティング システムのアップグレードはサポートされていません。 アップグレードする前にオフボードをアンインストールします。
 
 ## <a name="integration-with-azure-defender"></a>Azure Defender との統合
 Microsoft Defender for Endpoint は、Azure Defender とシームレスに統合されます。 サーバーを自動的にオンボードし、Azure Defender によって監視されるサーバーを Defender for Endpoint に表示し、Azure Defender のお客様として詳細な調査を行います。 
@@ -133,7 +133,7 @@ Microsoft Defender for Endpoint は、Azure Defender とシームレスに統合
 
 **R2 および 2016 の Microsoft Defender for Endpoint Windows Server 2012更新プログラム パッケージ**
 
-EDR センサー コンポーネントの製品の定期的な改善と修正を受け取る場合は、Windows [KB5005292](https://go.microsoft.com/fwlink/?linkid=2168277)の更新プログラムが適用または承認されます。 さらに、保護コンポーネントを更新し続ける場合は、「更新プログラムの管理Microsoft Defender ウイルス対策ベースラインを適用する」を[参照してください](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions)。
+EDR センサー コンポーネントの製品の定期的な改善と修正を受け取る場合は、Windows [KB5005292](https://go.microsoft.com/fwlink/?linkid=2168277)の更新プログラムが適用または承認されます。 さらに、保護コンポーネントを更新し続けるには、「更新プログラムの管理と基準[Microsoft Defender ウイルス対策適用する」を参照してください](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions)。
 
 ### <a name="download-installation-and-onboarding-packages"></a>インストール パッケージとオンボーディング パッケージのダウンロード 
 
@@ -188,7 +188,7 @@ Msiexec /x md4ws.msi /quiet
 
 インストーラー スクリプトを使用 [して、](server-migration.md#installer-script) インストール、アンインストール、オンボーディングを自動化することもできます。
 
-## <a name="windows-server-semi-annual-channel-and-windows-server-2019-and-windows-server-2022"></a>WindowsServer Semi-Annual チャネルと Windows Server 2019 および Windows Server 2022
+## <a name="windows-server-semi-annual-enterprise-channel-and-windows-server-2019-and-windows-server-2022"></a>WindowsServer Semi-Annual Enterprise チャネルと Windows Server 2019 および Windows Server 2022
 
 Windows Server 2019 および Windows Server 2022 Microsoft エンドポイント マネージャーのオンボーディング パッケージは、現在スクリプトを出荷しています。 Configuration Manager でスクリプトを展開する方法の詳細については、「Configuration Manager の [パッケージとプログラム」を参照してください](/configmgr/apps/deploy-use/packages-and-programs)。
 
@@ -223,14 +223,22 @@ Windows Server 2019 および Windows Server 2022 Microsoft エンドポイン�
     ```
         
     > [!NOTE]
-    > Azure Defender for Servers と Microsoft Defender for Endpoint の統合は、Windows Server 2022、Windows [Server 2019、および Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)をサポートするように拡張されました。
+    >
+    > - Azure Defender for Servers と Microsoft Defender for Endpoint の統合は、Windows Server 2022、Windows [Server 2019、および Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)をサポートするように拡張されました。
+    > - この統合を利用したサーバー エンドポイントの監視は、ユーザーのOffice 365 GCCされています。
 
       
 
     3. パッシブ モード イベントを含む最近のイベントが見つかったこと確認します。
+    
+     ![パッシブ モード検証結果のイメージ](images/atp-verify-passive-mode.png)
 
-       ![パッシブ モード検証結果のイメージ](images/atp-verify-passive-mode.png)
-
+> [!IMPORTANT]
+>
+> - Azure Defender を使用してサーバーを監視すると、Defender for Endpoint テナントが自動的に作成されます (米国のユーザーの場合は米国、欧州ユーザーの場合は EU、英国のユーザーは英国)。
+Defender for Endpoint によって収集されたデータは、プロビジョニング中に特定されたテナントの地理的位置に格納されます。
+> - Azure Defender を使用する前に Defender for Endpoint を使用する場合、後で Azure Defender と統合した場合でも、テナントの作成時に指定した場所にデータが格納されます。
+> - 構成が完了すると、データの保存場所を変更できません。 データを別の場所に移動する必要がある場合は、Microsoft サポートに問い合わせ、テナントをリセットする必要があります。
 
 
 ## <a name="verify-the-onboarding-and-installation"></a>オンボーディングとインストールを確認する

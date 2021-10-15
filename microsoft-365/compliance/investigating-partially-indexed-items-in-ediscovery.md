@@ -18,18 +18,18 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: 部分的にインデックスが作成されたアイテム (インデックスのないアイテムとも呼ばれる) を、Exchange、SharePoint、OneDrive for Businessから管理する方法について学習します。
-ms.openlocfilehash: 9e5930cb54d3903053bb09384d29a3134b243da6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4b919500c929c4bc92c6ef090442b737ecadf212
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201063"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364641"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>電子情報開示で部分的にインデックス付きアイテムを調査する
 
 検索を実行すると、Microsoft 365 コンプライアンス センター検索結果に部分的にインデックス付きアイテムが自動的に含まれます。 部分的にインデックス付けされたExchangeは、SharePoint サイトおよび OneDrive for Business サイト上のメールボックス アイテムとドキュメントに基OneDrive for Business で、何らかの理由で検索用に完全にインデックスが作成されたのではなかっています。 ほとんどの電子メール メッセージとサイト ドキュメントは、電子メール メッセージのインデックスの制限に含まれますので、インデックス作成 [に成功しています](limits-for-content-search.md#indexing-limits-for-email-messages)。 ただし、一部のアイテムは、これらのインデックスの制限を超える可能性があります。部分的にインデックスが作成されます。 電子情報開示検索を実行すると、アイテムを検索用にインデックス化できない理由と、部分的にインデックス付きアイテムとして返されるその他の理由を次に示します。
   
-- 電子メール メッセージには、イメージ ファイルなどの有効なハンドラーのない添付ファイルがあります。これは、部分的にインデックスが作成された電子メール アイテムの最も一般的な原因です。
+- 電子メール メッセージには、イメージ ファイルなど、開くことができませんが添付されたファイルがあります。これは、部分的にインデックスが作成された電子メール アイテムの最も一般的な原因です。
 
 - 電子メール メッセージに添付されているファイルが多すぎます。
 

@@ -17,12 +17,12 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) と Microsoft Defender で使用できるフィッシング対策ポリシーについてOffice 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f4b845f9a34eecde953d3736b1a82f37b54b05d6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a146c08834d0b7c4dc6d184a09176d986af1913f
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205045"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364822"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>アプリ内のフィッシング対策Microsoft 365
 
@@ -169,6 +169,9 @@ EOP および Defender のフィッシング対策ポリシーでは、次のス
 
 - ドメイン contoso.com のなりすまし例は óntoso.com です。
 - ユーザー michelle@contoso.com のなりすまし例は、michele@contoso.com です。
+
+> [!NOTE]
+> 偽装保護では、類似するドメインが見えます。 たとえば、ドメインが contoso.com の場合は、偽装の試みとして異なるトップ レベル ドメイン (.com、.biz など) がチェックされますが、多少似ているドメインもチェックします。 たとえば、contosososo.com または contoabcdef.com が偽装の試みと見な contoso.com。
 
 なりすましされたドメインは、受信者を欺くことを目的とする場合を除いて、正規のドメイン（登録済みドメイン、構成済みの電子メール認証レコードなど）と見なされる場合があります。
 

@@ -1,5 +1,5 @@
 ---
-title: デバイスをセットアップMicrosoft マネージド デスクトップ
+title: Microsoft Managed Desktop のデバイスをセットアップする
 description: 新しいデバイスを取得する方法、または対象となる既存のデバイスを再利用する方法
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
@@ -10,29 +10,29 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: db373ad60782de8bcf925107b5b8b773eb10a482
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 98adf2e8d6faeb089b74a2ec4050b7ec53620e0f
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60166716"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364629"
 ---
 # <a name="set-up-microsoft-managed-desktop-devices"></a>Microsoft マネージド デスクトップのデバイスをセットアップする
 
-新しいデバイスと既存のデバイスの両方をMicrosoft マネージド デスクトップ。
+Microsoft Managed Desktop では、新しいデバイスと既存のデバイスの両方を使用できます。
 
 ## <a name="to-obtain-new-devices"></a>新しいデバイスを取得するには
 
 承認済みのデバイス パートナーの 1 つを操作することをお勧めします。 Microsoft アカウントの連絡先と連携して、デバイスパートナーシップの設定に関する詳細なヘルプを確認できます。 ただし、本質的には、このプロセスは次のような処理になります。
 
-1. 現在推奨されているデバイスの一覧を確認するには、ビジネス Microsoft マネージド デスクトップサイトでWindows 10 Pro[フィルターを適用](https://www.microsoft.com/windowsforbusiness/view-all-devices)します。
+1. 現在推奨されているデバイスの一覧を確認するには、ビジネス デバイス サイトの Shop サイトで Microsoft Managed Desktop[をWindows Proします](https://www.microsoft.com/windows/business/devices)。
 2. 準拠するイメージで使用するデバイスの 1 つ以上の例を注文します。 順序付けには、特定 [の順序付け手順が必要になる場合があります](../service-description/device-images.md)。
 3. [デバイスの](validate-device.md) 例を検証します。
 5. 検証が成功したら、承認されたデバイス パートナーと作業して、デバイスを注文します。
 6. 到着したら、次のいずれかの操作を行います。
     - [新しいデバイスをユーザー自身が登録する](register-devices-self.md)
     - パートナーと一緒にデバイスを登録する
-7. [ユーザーがデバイスを使用](get-started-devices.md)するMicrosoft マネージド デスクトップする
+7. [ユーザーが Microsoft Managed](get-started-devices.md) Desktop デバイスを使用する準備を整える
 
 ## <a name="to-reuse-existing-devices"></a>既存のデバイスを再利用するには
 
@@ -42,9 +42,9 @@ ms.locfileid: "60166716"
 4. 検証が成功したら、次のいずれかの操作を行います。
     - [既存のデバイスをユーザー自身が登録する](register-reused-devices-self.md)
     - パートナーと一緒にデバイスを登録する
-5. [ユーザーがデバイスを使用](get-started-devices.md)するMicrosoft マネージド デスクトップする
+5. [ユーザーが Microsoft Managed](get-started-devices.md) Desktop デバイスを使用する準備を整える
 
-## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>データの使用を開始するMicrosoft マネージド デスクトップ
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Microsoft Managed Desktop の使用を開始する手順
 
 1. [管理ポータル](access-admin-portal.md)にアクセスします。
 1. [管理ポータルで管理者の連絡先を追加および確認する](add-admin-contacts.md)。

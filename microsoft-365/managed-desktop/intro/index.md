@@ -10,12 +10,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: c1e2b871c8b8dfb8229482d43ca02898f6adb852
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fc76ad5e41610c23f60392c2f13655049018a1eb
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208135"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364593"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップとは
 
@@ -56,7 +56,7 @@ IT 管理者は、次の機能を利用できます。
 ## <a name="device-management"></a>デバイス管理
 Microsoft マネージド デスクトップは、登録済みのデバイスやそれらが使用する Microsoft ソフトウェアを管理する負担を軽減します。
 
-- **ハードウェア:** 企業の IT 部門が特定のハードウェアやソフトウェアの要件、ツール、およびプロセスを調査してサービスと互換性があるかどうか判断しなくともいいよう、ハードウェアとソフトウェアの特定の要件を公開しています。安心してデバイスをお選びいただけます。 お勧めのデバイスは、[企業向け Windows 10 Pro デバイス ](https://www.microsoft.com/windowsforbusiness/view-all-devices)のサイトで「Microsoft Managed Desktop」でフィルターをかけて検索してください。 デバイスは、自分で、もしくはパートナーと協力して仕入れても、あるいは所有しているデバイスを再利用することもできます。 デバイスの登録は簡単でわかりやすく、さらに、展開する前にユーザー向けにデバイス操作の特定の側面を [カスタマイズ](../working-with-managed-desktop/config-setting-overview.md) することもできます。
+- **ハードウェア:** 企業の IT 部門が特定のハードウェアやソフトウェアの要件、ツール、およびプロセスを調査してサービスと互換性があるかどうか判断しなくともいいよう、ハードウェアとソフトウェアの特定の要件を公開しています。安心してデバイスをお選びいただけます。 Microsoft Managed Desktop のフィルター処理によって推奨されるデバイスは、ビジネス デバイス サイトの[ショップWindows Pro確認](https://www.microsoft.com/windows/business/devices)できます。 デバイスは、自分で、もしくはパートナーと協力して仕入れても、あるいは所有しているデバイスを再利用することもできます。 デバイスの登録は簡単でわかりやすく、さらに、展開する前にユーザー向けにデバイス操作の特定の側面を [カスタマイズ](../working-with-managed-desktop/config-setting-overview.md) することもできます。
 
 - **更新:** Microsoft マネージド デスクトップは、Windows 10 の品質更新プログラムおよび機能更新プログラム、ドライバー、ファームウェア、ウイルス対策定義、Microsoft 365 Apps for enterprise の [展開グループ](../service-description/updates.md)のすべての側面をセットアップおよび管理します。 これには、すべての更新プログラムの広範なテストと検証が含まれ、登録済みのデバイスが常に最新であることを保証し、中断を最小限に抑えて、IT 部門を継続的なタスクから解放します。
 

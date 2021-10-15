@@ -17,12 +17,12 @@ ROBOTS: NOINDEX
 description: ユーザーは、アクセス許可を持つ共有メールボックスに送信された検疫済みメッセージを表示および処理する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d98e228bc966dd95210276ad3ad86543c3ac711f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e78a46bca97ea58a88195c9d05e11332528cf3af
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196275"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364870"
 ---
 # <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>共有メールボックスから検疫済みメッセージを表示および解放する
 
@@ -36,13 +36,7 @@ ms.locfileid: "60196275"
 これで、ユーザーが共有メールボックスに送信された検疫済みメッセージを管理するために、自動マッピングは不要になります。 動作します。 共有メールボックスに送信された検疫済みメッセージにアクセスするには、次の 2 つの方法があります。
 
 - 管理者が検疫通知[](quarantine-policies.md)(以前はエンド ユーザースパム通知と呼ばれる) を許可するように検疫ポリシーを構成している場合、共有メールボックス内の検疫通知にアクセスできるユーザーは、通知の [確認] ボタンをクリックして、Microsoft 365 Defender ポータルの検疫に移動できます。 この方法では、ユーザーが共有メールボックスに送信された検疫済みメッセージのみを管理できます。 ユーザーは、このコンテキストで独自の検疫メッセージを管理できません。
-- ユーザーは、[ポータルの検疫にMicrosoft 365 Defenderできます](find-and-release-quarantined-messages-as-a-user.md)。 既定では、ユーザーに送信されたメッセージだけが表示されます。 ただし、ユーザーは[結果の並べ替え] (既定では [メッセージ **ID]** ボタン) を [受信者の電子メール アドレス] に変更し、共有メールボックスの電子メール アドレスを入力し、[更新] をクリックして、共有メールボックスに送信された検疫済みメッセージを確認できます。 
-
-  ![検疫済みメッセージを受信者の電子メール アドレスで並べ替える。](../../media/quarantine-sort-results-by-recipient-email-address.png)
-
-方法に関係なく、ユーザーは検疫済みメッセージの **[受信者** ] 列を含め、混乱を回避できます。 表示する列の最大数は 7 なので、ユーザーは [列の変更] をクリックし、既存の列 (ポリシーの種類など) を削除し、[受信者] を選択し、[保存] または [既定で保存] をクリックする必要があります。 
-
-  ![[ポリシーの種類] 列を削除し、[受信者] 列を検疫に追加します。](../../media/quarantine-add-recipient-column.png)
+- ユーザーは、Microsoft 365 Defender ポータルで検疫に [移動し、[](find-and-release-quarantined-messages-as-a-user.md)フィルター]をクリックして、受信者アドレス **(共有** メールボックスの電子メール アドレス) で結果をフィルター処理できます。 メインの [**検疫] ページ** で、[受信者] 列をクリックして、共有メールボックスに送信されたメッセージで並べ替えを行います。
 
 ## <a name="things-to-keep-in-mind"></a>留意すべき点
 
@@ -54,7 +48,7 @@ ms.locfileid: "60196275"
 
 - 共有メールボックスの検疫操作について、入れ子になったセキュリティ グループを使用して共有メールボックスへのアクセスを許可する場合は、入れ子になったグループのレベルを 2 つ以下にすることをお勧めします。 たとえば、グループ A はグループ B のメンバーで、グループ C のメンバーです。共有メールボックスにアクセス許可を割り当てるには、ユーザーをグループ A に追加してから、グループ C を共有メールボックスに割り当てない。  
 
-- [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)で共有メールボックスの検疫済みメッセージを管理するには、エンド ユーザーが _RecipientAddress_ パラメーターの値に対して共有メールボックスの電子メール アドレスを持つ [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage)コマンドレットを使用してメッセージを識別する必要があります。 次に例を示します。
+- [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)で共有メールボックスの検疫済みメッセージを管理するには、エンド ユーザーが _RecipientAddress_ パラメーターの値に対して共有メールボックスの電子メール アドレスを持つ [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage)コマンドレットを使用してメッセージを識別する必要があります。 例:
 
   ```powershell
   Get-QuarantinedMessage -RecipientAddress officeparty@contoso.com

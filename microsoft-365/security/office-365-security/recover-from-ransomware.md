@@ -15,12 +15,12 @@ ms.collection:
 description: Microsoft 365管理者は、ランサムウェア攻撃から回復する方法を学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d2bb99111142be683c6504010576253784d3cd68
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 898456075cd0298973b94ab8b8ea700fe52f5c08
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210403"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364545"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>ユーザーのランサムウェア攻撃から回復Microsoft 365
 
@@ -81,7 +81,7 @@ ms.locfileid: "60210403"
 
 環境からランサムウェア ペイロードを削除する前の手順を完了したら (ランサムウェアによるファイルの暗号化または削除を防ぐ)、Windows 11、Windows 10、Windows 8.1 のファイル履歴を使用し、Windows 7 の System Protection を使用してローカル ファイルとフォルダーの回復を試みることもできます。 [](https://support.microsoft.com/help/17128)
 
-**注意**:
+**注**:
 
 - また、一部のランサムウェアはバックアップ バージョンを暗号化または削除します。そのため、ファイルの履歴やシステム保護を使用してファイルを復元することはできません。 その場合は、次のセクションで説明するように、ランサムウェアやマルウェアの影響を受けOneDriveデバイスでバックアップを使用する必要があります。
 
@@ -148,13 +148,13 @@ Microsoft の主な情報:
 - [ランサムウェアの脅威の増大](https://blogs.microsoft.com/on-the-issues/2021/07/20/the-growing-threat-of-ransomware/)、2021 年 7月 20 日付け Microsoft On the Issues のブログ投稿
 - [人が操作するランサムウェア](/security/compass/human-operated-ransomware)
 - [ランサムウェアや強要から迅速に保護する](/security/compass/protect-against-ransomware)
-- [最新の Microsoft セキュリティ インテリジェンス レポート](https://www.microsoft.com/securityinsights/)( 22-24 ページを参照してください)
+- [2021 Microsoft Digital Defense Report](https://www.microsoft.com/security/business/microsoft-digital-defense-report) (P. 10-19)
 - **ランサムウェア: Microsoft 365 Defender ポータルの **脅威分析** ノードの蔓延する継続的な脅威** に関するレポート (これらの「[ライセンス要件](/microsoft-365/security/defender/prerequisites#licensing-requirements)」 を参照ください)
 
 Microsoft 365:
 
 - [Microsoft 365 テナントにランサムウェア保護を展開する](/microsoft-365/solutions/ransomware-protection-microsoft-365)
-- [Azure とクラウド を使用してランサムウェアの復元を最大化Microsoft 365](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
+- [Azure と Microsoft 365 を使用してランサムウェアの回復性を最大化する](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
 - [マルウェアと ランサムウェアからの保護](/compliance/assurance/assurance-malware-and-ransomware-protection)
 - [ランサムウェアからWindows PC を保護する](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
 - [SharePoint Online でのランサムウェアの処理](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
@@ -166,7 +166,7 @@ Microsoft 365 Defender:
 Microsoft Azure
 
 - [ランサムウェア攻撃に対する Azure 防御](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/)
-- [Azure とクラウド を使用してランサムウェアの復元を最大化Microsoft 365](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
+- [Azure と Microsoft 365 を使用してランサムウェアの回復性を最大化する](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
 - [ランサムウェアから保護するためのバックアップと復元の計画](/security/compass/backup-plan-to-protect-against-ransomware)
 - [Microsoft Azure によるランサムウェアからの](https://www.youtube.com/watch?v=VhLOr2_1MCg)保護 (26 分のビデオ)
 - [体系的な ID 侵害からの回復](/azure/security/fundamentals/recover-from-identity-compromise)

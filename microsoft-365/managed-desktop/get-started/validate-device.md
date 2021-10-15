@@ -11,16 +11,16 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: e07b5fda65a457ab38cf5d2387bbec0aaa039248
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2b3ba016e5a205ddb6eaccc4df71bdc4ad612085
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60211383"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364617"
 ---
 # <a name="validate-new-devices"></a>新しいデバイスを検証する
 
-Microsoft マネージド デスクトップ を初めて使用する場合でも、長時間の購読者でも、サービスに初めて登録するデバイス モデルの例をテストしてください。 これは、ブランドの新しいデバイスを注文する場合でも、既存のデバイスを再利用する場合でも当てはめ、ビジネス デバイス サイトの shop Microsoft マネージド デスクトップに推奨Windows 10 Proデバイスを含むデバイスも[含](https://www.microsoft.com/en-us/windowsforbusiness/view-all-devices)めて有効です。 そのサイトで、[フィルター] 領域で [機能] を展開し、[サービス] を選択して、サービスで使用する推奨 **デバイスMicrosoft マネージド デスクトップ。** デバイスを検証すると、期待するユーザー エクスペリエンスが確実に提供されます。
+Microsoft Managed Desktop を初めて使用する場合でも、長時間の購読者の場合も、サービスに初めて登録するデバイス モデルの例をテストする必要があります。 これは、新しいデバイスを注文する場合でも、既存のデバイスを再利用する場合でも当てはめ、ビジネス デバイス サイトの Microsoft Managed Desktop に推奨されるデバイスも[含Windows Proです](https://www.microsoft.com/en-us/windowsforbusiness/view-all-devices)。 そのサイトで、[フィルター] 領域で [機能] を展開し **、[Microsoft Managed Desktop]** を選択して、サービスで使用する推奨デバイスを表示します。 デバイスを検証すると、期待するユーザー エクスペリエンスが確実に提供されます。
 
 ## <a name="validate-devices"></a>デバイスの検証
 

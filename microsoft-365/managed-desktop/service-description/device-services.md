@@ -1,6 +1,6 @@
 ---
-title: Microsoft マネージド デスクトップデバイス サービス
-description: このトピックでは、デバイス サービスと制限の一覧をMicrosoft マネージド デスクトップ。
+title: Microsoft Managed Desktop デバイス サービス
+description: このトピックでは、Microsoft Managed Desktop のデバイス サービスと制限について説明します。
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
@@ -9,26 +9,26 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 256598a1eb7a51c0e07bd7be9ebf616d2d1ce4ec
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0e90d4fd51c0e25a20b6ef985d7a15edc001bfb5
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198267"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364136"
 ---
-# <a name="microsoft-managed-desktop-device-services"></a>Microsoft マネージド デスクトップデバイス サービス
+# <a name="microsoft-managed-desktop-device-services"></a>Microsoft Managed Desktop デバイス サービス
 
-このトピックでは、デバイスのサービスとサービスのMicrosoft マネージド デスクトップします。
+このトピックでは、Microsoft Managed Desktop デバイスのサービスとサービスの制限について説明します。
 
 ## <a name="device-services"></a>デバイス サービス
 
-Microsoft は、これらのサービスを他のデバイスMicrosoft マネージド デスクトップします。 推奨されるプログラム デバイスの一覧Microsoft マネージド デスクトップ、ビジネス デバイス サイトの [ショップ Microsoft マネージド デスクトップ] Windows 10 Pro[フィルターします](https://www.microsoft.com/windowsforbusiness/view-all-devices)。
+Microsoft は、Microsoft Managed Desktop デバイスに対してこれらのサービスを提供します。 推奨される Microsoft Managed Desktop プログラム デバイスの一覧については、[ビジネス デバイス] サイトの [ショップ] ページの [Microsoft Managed Desktop [Windows Proフィルター](https://www.microsoft.com/windows/business/devices)します。
 
 サービス | 説明
 --- | ---
 サポート | サポート エージェントは、デバイスの機能に直接関連する質問に回答し、デバイスの問題を診断します。
-インベントリ | すべてのデバイスは、インベントリと状態Microsoft マネージド デスクトップ管理ポータルで追跡されます。
-ファームウェアとドライバーの更新 | 既定では、デバイスMicrosoft マネージド デスクトップ更新プログラムからファームウェアとドライバーの更新Windowsされます。 すべてのハードウェア パートナーが更新プログラムを更新プログラム経由で展開Windowsではありません。 自動として公開されていない更新プログラムには例外が必要であり、お客様が展開する必要があります。
+インベントリ | すべてのデバイスは、インベントリと状態追跡用の Microsoft Managed Desktop Admin ポータルで追跡されます。
+ファームウェアとドライバーの更新 | 既定では、Microsoft Managed Desktop デバイスは、Microsoft Update からファームウェアとドライバーの更新Windowsされます。 すべてのハードウェア パートナーが更新プログラムを更新プログラム経由で展開Windowsではありません。 自動として公開されていない更新プログラムには例外が必要であり、お客様が展開する必要があります。
 アクセサリ | デバイスに付属するアクセサリは、デバイス自体と同じサービスでカバーされますが、保証条件が異なる場合があります。 デバイスを選択する際に選択した保証条項を参照してください。 
 デバイスのセットアップ | デバイスは、現在のバージョンのデバイスで事前構成されWindows、クラウド経由でアプリと構成を受信します。
 

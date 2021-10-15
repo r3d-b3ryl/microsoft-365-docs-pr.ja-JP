@@ -20,12 +20,12 @@ description: 電子情報開示関連のタスクを実行するために必要�
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 2ff6a589ce8b4db6adf00a820eaf00b20f9f7bcc
-ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
+ms.openlocfilehash: d6515dc213fe6b89a9a638c9df8dcad63785967c
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60217152"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364557"
 ---
 # <a name="assign-ediscovery-permissions-in-the-microsoft-365-compliance-center"></a>電子情報開示のアクセス許可をユーザーに割り当Microsoft 365 コンプライアンス センター
 
@@ -43,6 +43,8 @@ ms.locfileid: "60217152"
   
   - 自分自身をケースのメンバーとして追加した後、すべての電子情報開示のケースを管理する。
   
+  - 電子情報開示ケースからメンバーを削除します。 ケースからメンバーを削除できるのは、電子情報開示管理者のみです。 電子情報開示マネージャー サブグループのメンバーであるユーザーは、ユーザーがケースを作成した場合でも、ケースからメンバーを削除できません。
+  
   組織内で電子情報開示管理者が必要になる理由については、「詳細」 [を参照してください](#more-information)。
 
 > [!NOTE]
@@ -52,7 +54,7 @@ ms.locfileid: "60217152"
 
 - 組織の管理役割グループのメンバーになるか、役割の管理役割を割り当てる必要があります。電子情報開示のアクセス許可を割り当てるには、Microsoft 365 コンプライアンス センター。
 
-- セキュリティ/コンプライアンス センターの PowerShell で [Add-RoleGroupMember](/powershell/module/exchange/Add-RoleGroupMember) コマンドレットを使用して、メールが有効なセキュリティ グループを電子情報開示管理者のサブグループのメンバーとして、電子情報開示管理者の役割グループに追加できます。 ただし、メールが有効なセキュリティ グループを電子情報開示管理者のサブグループに追加することはできません。 詳細については、「詳細情報 [」を参照してください](#more-information)。 
+- セキュリティ/コンプライアンス センターの PowerShell で [Add-RoleGroupMember](/powershell/module/exchange/Add-RoleGroupMember) コマンドレットを使用して、メールが有効なセキュリティ グループを電子情報開示管理者のサブグループのメンバーとして、電子情報開示管理者の役割グループに追加できます。 ただし、メールが有効なセキュリティ グループを電子情報開示管理者のサブグループに追加することはできません。 詳細については、「詳細情報 [」を参照してください](#more-information)。
   
 ## <a name="assign-ediscovery-permissions"></a>電子情報開示のアクセス許可を割り当てる
 
@@ -79,7 +81,7 @@ Microsoft 365 コンプライアンス センターの [アクセス許可] ペ�
 
 次の表に、Microsoft 365 コンプライアンス センター の電子情報開示関連の RBAC ロールを示し、各役割が既定で割り当てられている組み込みの役割グループを示します。
   
-| 役割 | コンプライアンス管理者 | 電子情報開示マネージャー &管理者 | 組織管理 | レビュー担当者 |
+| Role | コンプライアンス管理者 | 電子情報開示マネージャー &管理者 | 組織管理 | レビュー担当者 |
 |:-----|:-----:|:-----:|:-----:|:-----:|
 |ケース管理 <br/> |![チェック マーク。](../media/checkmark.png) <br/> |![チェック マーク。](../media/checkmark.png) <br/> |![チェック マーク。](../media/checkmark.png) <br/> | <br/> |
 |コミュニケーション <br/> | <br/> |![チェック マーク。](../media/checkmark.png) <br/> | <br/> | <br/> |
@@ -171,13 +173,13 @@ Microsoft 365 コンプライアンス センターの [アクセス許可] ペ�
 
 電子情報開示ケースのメンバーである可能性がある役割グループに役割を追加または削除する前に [、Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) で次のコマンドを実行して、役割グループがメンバーであるケースの一覧を取得できます。 役割グループを更新した後、それらのケースのメンバーとして役割グループを追加し戻します。
 
-### <a name="get-a-list-of-role-groups-assigned-to-core-ediscovery-cases"></a>コア電子情報開示ケースに割り当てられた役割グループの一覧を取得する
+### <a name="get-a-list-of-core-ediscovery-cases-a-role-group-is-assigned-to"></a>役割グループが割り当てられているコア電子情報開示ケースの一覧を取得する
 
 ```powershell
 Get-ComplianceCase -RoleGroup "Name of role group"
 ```
 
-### <a name="get-a-list-of-role-groups-assigned-to-advanced-ediscovery-cases"></a>ケースに割り当てられた役割グループの一覧Advanced eDiscoveryする
+### <a name="get-a-list-of-advanced-ediscovery-cases-a-role-group-is-assigned-to"></a>役割グループが割り当Advanced eDiscoveryケースの一覧を取得する
 
 ```powershell
 Get-ComplianceCase -RoleGroup "Name of role group" -CaseType AdvancedEdiscovery

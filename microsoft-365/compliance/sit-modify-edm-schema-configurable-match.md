@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 構成可能な一致を使用するために、完全一致スキーマを変更する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a409b8bad43b6a6ade81c96ae14f691289e11cec
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: a7d401c89ccff96615c4b367341542bf0ab5c697
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60336048"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364701"
 ---
 # <a name="modify-exact-data-match-schema-to-use-configurable-match"></a>構成可能な一致を使用するために完全一致スキーマを変更する
 
@@ -48,81 +48,81 @@ ms.locfileid: "60336048"
 
 5. 各列が “caseInsensitive” または “ignoredDelimiters” を利用するようにスキーマをカスタマイズします。  “caseInsensitive“ の既定値は “false“ で、“ignoredDelimiters“ の場合は空の文字列です。 
 
-> [!NOTE]
-> 一般的な正規表現パターンの検出に使用される、基になるカスタム機密情報タイプまたは組み込みの機密情報タイプは、ignoredDelimiters でリストされたバリエーション入力の検出をサポートする必要があります。 たとえば、組み込みの米国社会保障番号 (SSN) の機密情報タイプは、SSNを構成するグループ化された番号間のダッシュ、スペース、またはスペースの不足を含むデータの変動を検出できます。 その結果、ESN データの EDM の ignoredDelimiters に含めるのに関連する区切り文字は、ダッシュとスペースのみです。
-
-これは、機密データの大文字と小文字の違いを認識するために必要な追加の列を作成することにより、大文字と小文字を区別しない一致をシミュレートするサンプル スキーマです。
-
-```xml
-<EdmSchema xmlns="http://schemas.microsoft.com/office/2018/edm">
-  <DataStore name="PatientRecords" description="Schema for patient records policy" version="1">
-           <Field name="PolicyNumber" searchable="true" />
-           <Field name="PolicyNumberLowerCase" searchable="true" />
-           <Field name="PolicyNumberUpperCase" searchable="true" />
-           <Field name="PolicyNumberCapitalLetters" searchable="true" />
-  </DataStore>
-</EdmSchema>
-```
-
-上記の例では、`caseInsensitive`と`ignoredDelimiters`の両方が追加された場合、元の `PolicyNumber` 列のバリエーションは不要になります。
-
-EDM が構成可能な一致を使用するようにこのスキーマを更新するには、`caseInsensitive` フラグと `ignoredDelimiters` フラグを使用します。 その方法を次に示します:
-
-```xml
-<EdmSchema xmlns="http://schemas.microsoft.com/office/2018/edm">
-  <DataStore name="PatientRecords" description="Schema for patient records policy" version="1">
-         <Field name="PolicyNumber" searchable="true" caseInsensitive="true" ignoredDelimiters="-,/,*,#,^" />
-  </DataStore>
-</EdmSchema>
-```
-
-`ignoredDelimiters` フラグは英数字以外の文字をサポートします。次にいくつかの例を示します。
-- \.
-- \-
-- \/
-- \_
-- \*
-- \^
-- \#
-- \!
-- \?
-- \[
-- \]
-- \{
-- \}
-- \\
-- \~
-- \;
-
-`ignoredDelimiters`フラグは以下をサポートしていません:
-- 0 から 9 の文字
-- A から Z
-- a から z
-- \"
-- \,
-- |
+    > [!NOTE]
+    > 一般的な正規表現パターンの検出に使用される、基になるカスタム機密情報タイプまたは組み込みの機密情報タイプは、ignoredDelimiters でリストされたバリエーション入力の検出をサポートする必要があります。 たとえば、組み込みの米国社会保障番号 (SSN) の機密情報タイプは、SSNを構成するグループ化された番号間のダッシュ、スペース、またはスペースの不足を含むデータの変動を検出できます。 その結果、ESN データの EDM の ignoredDelimiters に含めるのに関連する区切り文字は、ダッシュとスペースのみです。
+    
+    これは、機密データの大文字と小文字の違いを認識するために必要な追加の列を作成することにより、大文字と小文字を区別しない一致をシミュレートするサンプル スキーマです。
+    
+    ```xml
+    <EdmSchema xmlns="http://schemas.microsoft.com/office/2018/edm">
+      <DataStore name="PatientRecords" description="Schema for patient records policy" version="1">
+               <Field name="PolicyNumber" searchable="true" />
+               <Field name="PolicyNumberLowerCase" searchable="true" />
+               <Field name="PolicyNumberUpperCase" searchable="true" />
+               <Field name="PolicyNumberCapitalLetters" searchable="true" />
+      </DataStore>
+    </EdmSchema>
+    ```
+    
+    上記の例では、`caseInsensitive`と`ignoredDelimiters`の両方が追加された場合、元の `PolicyNumber` 列のバリエーションは不要になります。
+    
+    EDM が構成可能な一致を使用するようにこのスキーマを更新するには、`caseInsensitive` フラグと `ignoredDelimiters` フラグを使用します。 その方法を次に示します:
+    
+    ```xml
+    <EdmSchema xmlns="http://schemas.microsoft.com/office/2018/edm">
+      <DataStore name="PatientRecords" description="Schema for patient records policy" version="1">
+             <Field name="PolicyNumber" searchable="true" caseInsensitive="true" ignoredDelimiters="-,/,*,#,^" />
+      </DataStore>
+    </EdmSchema>
+    ```
+    
+    `ignoredDelimiters` フラグは英数字以外の文字をサポートします。次にいくつかの例を示します。
+    - \.
+    - \-
+    - \/
+    - \_
+    - \*
+    - \^
+    - \#
+    - \!
+    - \?
+    - \[
+    - \]
+    - \{
+    - \}
+    - \\
+    - \~
+    - \;
+    
+    `ignoredDelimiters`フラグは以下をサポートしていません:
+    - 0 から 9 の文字
+    - A から Z
+    - a から z
+    - \"
+    - \,
+    - |
 
 6. [セキュリティ/コンプライアンス センター PowerShellに接続する](/powershell/exchange/connect-to-scc-powershell)の手順を使用して、セキュリティ/コンプライアンス センターに接続します。
 
-> [!NOTE]
-> 組織が [テナント レベル (パブリック プレビュー) で Microsoft 365 のカスタム キー](customer-key-tenant-level.md#overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview) を設定している場合、完全なデータ一致によって暗号化機能が自動的に使用されます。これは、商用クラウドの E5 ライセンステナントでのみ使用できます。
+    > [!NOTE]
+    > 組織が [テナント レベル (パブリック プレビュー) で Microsoft 365 のカスタム キー](customer-key-tenant-level.md#overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview) を設定している場合、完全なデータ一致によって暗号化機能が自動的に使用されます。これは、商用クラウドの E5 ライセンステナントでのみ使用できます。
 
 7. 以下のコマンドレットを一度に 1 つずつ実行して、スキーマを更新します。
 
-`$edmSchemaXml=Get-Content .\\edm.xml -Encoding Byte -ReadCount 0`
-
-`Set-DlpEdmSchema -FileData $edmSchemaXml -Confirm:$true`
+    `$edmSchemaXml=Get-Content .\\edm.xml -Encoding Byte -ReadCount 0`
+    
+    `Set-DlpEdmSchema -FileData $edmSchemaXml -Confirm:$true`
 
 8. 必要に応じて、新しいスキーマ バージョンと一致するようにデータ ファイルを更新します
 
-> [!TIP]
-> オプションとして、アップロードする前に、以下を実行して csv ファイルに対して検証を実行することもできます。
->
->`EdmUploadAgent.exe /ValidateData /DataFile [data file] [schema file]`
->
->すべての EdmUploadAgent.exe > サポートされているパラメータの詳細情報については
->
-> `EdmUploadAgent.exe /?`
+    > [!TIP]
+    > オプションとして、アップロードする前に、以下を実行して csv ファイルに対して検証を実行することもできます。
+    >
+    >`EdmUploadAgent.exe /ValidateData /DataFile [data file] [schema file]`
+    >
+    >すべての EdmUploadAgent.exe > サポートされているパラメータの詳細情報については
+    >
+    > `EdmUploadAgent.exe /?`
 
 9. (管理者として) コマンドプロンプト ウィンドウを開き、次のコマンドを実行して機密データをハッシュおよびアップロードします。
 
