@@ -16,14 +16,14 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 10/07/2021
+ms.date: 10/15/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a5f5428ce3c710cc99c7c86306a64501419ae60f
-ms.sourcegitcommit: 166bf635c0905ae12c04b1865cb17aadef81e82a
+ms.openlocfilehash: de1ab0bc8f58123bb24bd9d9d6d855f924c54986
+ms.sourcegitcommit: 53a4ee148348010444f7deb0590d34e6a298adb8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60245671"
+ms.lasthandoff: 10/16/2021
+ms.locfileid: "60400025"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>更新Microsoft Defender ウイルス対策を管理し、基準計画を適用する
 
@@ -74,6 +74,7 @@ Microsoft Defender ウイルス対策プラットフォーム更新 [プログ�
 > - この記事では、広範なリリース チャネルに含まれる変更の一覧を示します。 [最新の広範なチャネル リリースについては、こちらを参照してください](https://www.microsoft.com/security/encyclopedia/adlpackages.aspx?action=info)。
 > - 段階的なロールアウト プロセスの詳細、および次のリリースの詳細については、「Microsoft Defender 更新プログラムの段階的なロールアウト プロセスの管理」 [を参照してください](manage-gradual-rollout.md)。
 > - セキュリティ インテリジェンスの更新プログラムの詳細については、「セキュリティ インテリジェンスの更新プログラム 」および「Microsoft Defender ウイルス対策 Microsoft マルウェア対策」[を参照してください](https://www.microsoft.com/wdsi/defenderupdates)。
+> - Microsoft Defender プロセスの一覧を探している場合は **[、mde-urls](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)** ブックをダウンロードし **、[Microsoft Defender プロセス** ] ワークシートを選択します。 mde-urls ブックには、「プロキシ サーバーで [Microsoft Defender for Endpoint](configure-proxy-internet.md)Service URL へのアクセスを有効にする」の説明に従って、ネットワークが接続できる必要があるサービスと関連付けられた URL も一覧表示されます。
 
 ## <a name="monthly-platform-and-engine-versions"></a>月次プラットフォームとエンジンのバージョン
 
@@ -572,7 +573,7 @@ Windows 10 (Enterprise、Pro、およびホーム エディション)、Windows 
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>その他の情報
+### <a name="additional-information"></a>追加情報
 - なし
 <br/>
 </details><details>
@@ -586,7 +587,7 @@ Windows 10 (Enterprise、Pro、およびホーム エディション)、Windows 
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>その他の情報
+### <a name="additional-information"></a>追加情報
 - なし
 <br/>
 </details><details>
@@ -600,7 +601,7 @@ Windows 10 (Enterprise、Pro、およびホーム エディション)、Windows 
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>その他の情報
+### <a name="additional-information"></a>追加情報
 - なし
 <br/>
 </details><details>
@@ -614,7 +615,7 @@ Windows 10 (Enterprise、Pro、およびホーム エディション)、Windows 
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>その他の情報
+### <a name="additional-information"></a>追加情報
 - なし
 <br/>
 </details><details>
@@ -628,7 +629,7 @@ Windows 10 (Enterprise、Pro、およびホーム エディション)、Windows 
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>その他の情報
+### <a name="additional-information"></a>追加情報
 - なし
 <br/>
 </details><details>
@@ -642,7 +643,7 @@ Windows 10 (Enterprise、Pro、およびホーム エディション)、Windows 
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>その他の情報
+### <a name="additional-information"></a>追加情報
 - なし
 <br/>
 </details><details>
@@ -656,7 +657,7 @@ Windows 10 (Enterprise、Pro、およびホーム エディション)、Windows 
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>その他の情報
+### <a name="additional-information"></a>追加情報
 - なし
 <br/>
 </details><details>
@@ -670,7 +671,7 @@ Windows 10 (Enterprise、Pro、およびホーム エディション)、Windows 
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>その他の情報
+### <a name="additional-information"></a>追加情報
 - なし
 <br/>
 </details><details>
@@ -684,7 +685,7 @@ Windows 10 (Enterprise、Pro、およびホーム エディション)、Windows 
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>その他の情報
+### <a name="additional-information"></a>追加情報
 - なし
 <br/>
 </details><details>
@@ -698,7 +699,7 @@ Windows 10 (Enterprise、Pro、およびホーム エディション)、Windows 
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>その他の情報
+### <a name="additional-information"></a>追加情報
 - なし
 <br/>
 </details><details>
@@ -712,7 +713,7 @@ Windows 10 (Enterprise、Pro、およびホーム エディション)、Windows 
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>その他の情報
+### <a name="additional-information"></a>追加情報
 - なし
 <br/>
 </details><details>
@@ -726,7 +727,7 @@ Windows 10 (Enterprise、Pro、およびホーム エディション)、Windows 
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>その他の情報
+### <a name="additional-information"></a>追加情報
 - 更新されたMicrosoft Defender ウイルス対策署名
 <br/>
 </details><details>
@@ -740,7 +741,7 @@ Windows 10 (Enterprise、Pro、およびホーム エディション)、Windows 
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>その他の情報
+### <a name="additional-information"></a>追加情報
 - なし
 <br/>
 </details><details>
@@ -754,7 +755,7 @@ Windows 10 (Enterprise、Pro、およびホーム エディション)、Windows 
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>その他の情報
+### <a name="additional-information"></a>追加情報
 - RS1 以降の OS Windows 10インストール イメージのサポートが追加されました。
 <br/>
 </details>
