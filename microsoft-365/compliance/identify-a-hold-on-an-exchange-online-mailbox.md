@@ -17,12 +17,12 @@ ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 ms.custom:
 - seo-marvel-apr2020
 description: ユーザーのメールボックスに配置できるさまざまな種類の保留リストを特定するExchange OnlineをMicrosoft 365。
-ms.openlocfilehash: 8696ab52fdb0826dddd9f1a186f56f853b6fae3d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 05c169bd8ac7e3fdb71a6ee474f723a62df6da41
+ms.sourcegitcommit: f6fff04431d632db02e7bdbf12f691091a30efad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201855"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60432663"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Exchange Online メールボックスに保存されている保留の種類を特定する方法
 
@@ -43,9 +43,9 @@ Microsoft 365は、組織がメールボックスコンテンツが完全に削�
 
   メールボックスに割り当てMicrosoft 365保持ポリシーには、次の 2 種類があります。
 
-    - **特定の場所保持ポリシー:** これらは、特定のユーザーのコンテンツの場所に割り当てられるポリシーです。 PowerShell の **Get-Mailbox** コマンドレットをExchange Online特定のメールボックスに割り当てられた保持ポリシーに関する情報を取得します。 この種類のアイテム保持ポリシーの詳細については、「アイテム保持ポリシー[](create-retention-policies.md#a-policy-with-specific-inclusions-or-exclusions)のドキュメントから特定の包含または除外を含むポリシー」セクションを参照してください。
+    - **特定の場所保持ポリシー:** これらは、特定のユーザーのコンテンツの場所に割り当てられるポリシーです。 PowerShell の **Get-Mailbox** コマンドレットをExchange Online特定のメールボックスに割り当てられた保持ポリシーに関する情報を取得します。 この種類のアイテム保持ポリシーの詳細については、「アイテム保持ポリシー[](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions)のドキュメントから特定の包含または除外を含むポリシー」セクションを参照してください。
 
-    - **組織全体の保持ポリシー:** これらは、組織内のすべてのコンテンツの場所に割り当てられるポリシーです。 PowerShell の **Get-OrganizationConfig** コマンドレットをExchange Online組織全体の保持ポリシーに関する情報を取得します。 この種類のアイテム保持ポリシーの詳細については、アイテム保持ポリシーのドキュメントのセクション [「](create-retention-policies.md#a-policy-that-applies-to-entire-locations) 場所全体に適用されるポリシー」を参照してください。
+    - **組織全体の保持ポリシー:** これらは、組織内のすべてのコンテンツの場所に割り当てられるポリシーです。 PowerShell の **Get-OrganizationConfig** コマンドレットをExchange Online組織全体の保持ポリシーに関する情報を取得します。 この種類のアイテム保持ポリシーの詳細については、アイテム保持ポリシーのドキュメントのセクション [「](retention-settings.md#a-policy-that-applies-to-entire-locations) 場所全体に適用されるポリシー」を参照してください。
 
 - **[Microsoft 365](retention.md)** 保持ラベル : ユーザーがメールボックス内の任意のフォルダーまたはアイテムに Microsoft 365 保持ラベル (コンテンツを保持または保持し、コンテンツを削除するように構成されているラベル) を適用すると、メールボックスが訴訟ホールドに置かれたか、Microsoft 365 アイテム保持ポリシーに割り当てられているかのようにメールボックスに保持が配置されます。 詳細については、この [記事の「](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item) 保持ラベルがフォルダーまたはアイテムに適用されたため、保持中のメールボックスを識別する」セクションを参照してください。
 
@@ -119,7 +119,7 @@ InPlaceHolds プロパティ内のアイテムを Microsoft 365 アイテム保�
 | **2** | アイテムを保持するようにアイテム保持ポリシーが構成されていることを示します。 保持期間が過ぎると、ポリシーはアイテムを削除しません。 |
 | **3** | アイテムを保持し、アイテム保持期間が経過した後にアイテムを削除するようにアイテム保持ポリシーが構成されていることを示します。             |
 
-保持アクションの詳細については、「特定の期間のコンテンツ [を保持する」セクションを参照](create-retention-policies.md#retaining-content-for-a-specific-period-of-time) してください。
+保持アクションの詳細については、「特定の期間のコンテンツ [を保持する」セクションを参照](retention-settings.md#retaining-content-for-a-specific-period-of-time) してください。
    
 ## <a name="step-2-use-the-guid-to-identify-the-hold"></a>手順 2: GUID を使用して保留を特定する
 
@@ -282,7 +282,7 @@ $ht.MailboxLog | Convertfrom-Json
 
 アイテム保持ポリシーがメールボックスに適用されなくなった場合、コンテンツの削除を防ぐために、ユーザーに一時的な遅延ホールドを設定します。 コマンドを実行すると、遅延ホールドを無効 `Set-Mailbox -RemoveDelayHoldApplied` にできます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 メールボックスに適用される保留リストを特定した後、保留期間の変更、保留期間の一時的または完全な削除、Microsoft 365 アイテム保持ポリシーから非アクティブなメールボックスの除外などのタスクを実行できます。 保留リストに関連するタスクの実行の詳細については、次のいずれかのトピックを参照してください。
 
