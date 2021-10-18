@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Microsoft 365 の顧客データの保存場所を世界全体で確認する
-ms.openlocfilehash: a48afdceef482a124131495d3f1148f9e8da4d9f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 430ec1fe58f8b62ce558f2367e0dac67972e8868
+ms.sourcegitcommit: 1e990628d72b6d392500ea564859543e7c8bc632
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201591"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60386244"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Microsoft 365 顧客データの保存場所
 
@@ -102,7 +102,7 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
    
   - 通常、顧客データは米国に保存されますが、プレビュー、ベータ、およびその他のプレリリース サービスについては、グローバルに保存することができます。
 
-いずれにしても、Microsoft は、顧客やそのエンドユーザーが顧客データにアクセスできるような地域機能を制御したり制限したりすることはありません。 
+いずれにしても、Microsoft は、顧客やそのエンドユーザーが顧客データにアクセスできるような地域機能を制御したり制限したりすることはありません。 同様に、他のサービスの顧客データがその後 Intune に統合される場合、元の顧客データは、他のサービス独自の Geo コミットメント (存在する場合) に従って引き続き保存されます。Intune に統合された顧客データのコピーのみが、Intune の指定された Geo に保存されます。  
 
 ## <a name="data-center-locations"></a>データ センターの場所
 
