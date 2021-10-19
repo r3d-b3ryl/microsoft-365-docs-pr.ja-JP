@@ -21,12 +21,12 @@ description: Microsoft 365 コンプライアンス センターを使用して�
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: dd79e0c74e2313855e2bf698053c99a50e5aaefd
-ms.sourcegitcommit: 53a4ee148348010444f7deb0590d34e6a298adb8
+ms.openlocfilehash: b1cb482b478259177044a1af84bf865b8f8ec882
+ms.sourcegitcommit: f6fff04431d632db02e7bdbf12f691091a30efad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2021
-ms.locfileid: "60400061"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60432711"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>コンプライアンス センターで監査ログを検索する
 
@@ -1006,13 +1006,17 @@ Forms は、フォームの設計時および回答の分析時の協同作業�
 
 |フレンドリ名|操作​​|説明|
 |:-----|:-----|:-----|
+| 変更済みのアダプティブ スコープ メンバーシップ |ApplicableAdaptiveScopeChange |ユーザー、サイト、またはグループがアダプティブ スコープに追加または削除されました。 これらの変更は、スコープのクエリを実行したものです。 変更はシステムで行われたため、報告されたユーザーはユーザー アカウントではなく GUID で表示されます。|
 | アイテム保持ポリシーの構成された設定 |NewRetentionComplianceRule |管理者が新しいアイテム保持ポリシーの保持設定を構成しました。 保持設定には、アイテムを保持する期間、保持期間が終了した際のアイテムへの処理 （アイテムの削除、保持、またはアイテムの保持と削除など）が含まれます。 このアクティビティは、[New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule) コマンドレットの実行にも対応します。|
+| 作成されたアダプティブ スコープ |NewAdaptiveScope |管理者がアダプティブ スコープを作成しました。|
 | 作成された保持ラベル |NewComplianceTag |管理者が新しい保持ラベルを作成しました。|
 | アイテム保持ポリシーが作成されました |NewRetentionCompliancePolicy|管理者が新しいアイテム保持ポリシーを作成しました。|
+| 削除されたアダプティブ スコープ | RemoveAdaptiveScope| 管理者がアダプティブ スコープを削除しました。|
 | アイテム保持ポリシーから削除された設定| RemoveRetentionComplianceRule<br/>| 管理者がアイテム保持ポリシーの構成設定を削除しました。 ほとんどの場合、このアクティビティは、管理者がアイテム保持ポリシーを削除した場合、または [Remove-RetentionComplianceRule](/powershell/module/exchange/Remove-RetentionComplianceRule) コマンドレット を実行した場合に記録されます。|
 | 削除された保持ラベル |RemovecomplianceTag | 管理者が保持ラベルを削除しました。|
 | 削除されたアイテム保持ポリシー |RemoveRetentionCompliancePolicy<br/> |管理者がアイテム保持ポリシーを削除しました。 |
 | 保持ラベルの規制レコード オプションを有効にする<br/> |SetRestrictiveRetentionUI |管理者が [Set-RegulatoryComplianceUI](/powershell/module/exchange/set-regulatorycomplianceui) コマンドレットを実行したため、管理者は保持ラベルの UI 構成オプションを選択して、コンテンツを規制レコードとしてマークできます。|
+| 更新済みのアダプティブ スコープ | SetAdaptiveScope | 管理者が既存のアダプティブ スコープの説明またはクエリを変更しました。 |
 | アイテム保持ポリシーの更新された設定 | SetRetentionComplianceRule | 管理者が既存のアイテム保持ポリシーの保持設定を変更しました。 保持設定には、アイテムを保持する期間、保持期間が終了した際のアイテムへの処理 （アイテムの削除、保持、またはアイテムの保持と削除など）が含まれます。 このアクティビティは、[Set-RetentionComplianceRule](/powershell/module/exchange/set-retentioncompliancerule) コマンドレットの実行にも対応しています。 |
 | 更新された保持ラベル |SetComplianceTag  | 管理者が既存の保持ラベルを更新しました。|
 | 更新アイテム保持ポリシー |SetRetentionCompliancePolicy |管理者が既存のアイテム保持ポリシーを更新しました。 このイベントをトリガーする更新には、アイテム保持ポリシーが適用されるコンテンツの場所の追加または除外が含まれます。|

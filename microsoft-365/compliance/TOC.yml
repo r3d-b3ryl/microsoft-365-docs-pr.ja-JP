@@ -367,6 +367,8 @@
               href: retention-policies-yammer.md
             - name: Exchange の保持
               href: retention-policies-exchange.md
+            - name: 一般的な保持の設定
+              href: retention-settings.md
             - name: 保持の制限
               href: retention-limits.md
         - name: 保持の概要
