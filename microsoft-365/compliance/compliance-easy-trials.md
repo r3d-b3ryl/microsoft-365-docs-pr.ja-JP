@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 コンプライアンス無料試用版について。
-ms.openlocfilehash: 1bfa20edb486f910b3643e5bad67b1bd7d207a40
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 930ee1f35a5453722139bc283eb20b43f5f209b8
+ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60151208"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60478927"
 ---
 # <a name="about-the-free-trial-for-microsoft-365-compliance"></a>Microsoft 365 コンプライアンスの無料試用版について
 
@@ -96,7 +96,7 @@ Microsoft 365 コンプライアンス ソリューション試用版は、特�
 <!--
 - **privacy management**
 
-    Privacy management helps your organization understand and manage the personal data in your Microsoft 365 environment, remediate potential privacy risks, and fulfill subject rights requests. [Learn more](privacy-management.md)
+    Privacy management helps your organization understand and manage the personal data in your Microsoft 365 environment, remediate potential privacy risks, and fulfill subject rights requests. [Learn more](/privacy/solutions/privacymanagement/privacy-management)
 -->
 
 - **レコード管理**

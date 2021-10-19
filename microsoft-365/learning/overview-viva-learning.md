@@ -15,22 +15,22 @@ ms.collection:
 - m365initiative-viva-learning
 ms.localizationpriority: ''
 description: ユーザー環境でのMicrosoft Viva ラーニング (プレビュー) についてMicrosoft 365します。
-ms.openlocfilehash: 41a10fe0e4179e9d56fbf8eca3793d0c41ad339b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 563b808a55efcbdba08119d721e52f73873cd9ea
+ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205775"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60478855"
 ---
-# <a name="overview-of-microsoft-viva-learning-preview"></a>プレビュー (Microsoft Viva ラーニング) の概要 
+# <a name="overview-of-microsoft-viva-learning-preview"></a>プレビュー (Microsoft Viva ラーニング) の概要
 
 > [!NOTE]
-> この記事の情報は、商用リリース前に大幅に変更される可能性があるプレビュー製品に関連しています。 
+> この記事の情報は、商用リリース前に大幅に変更される可能性があるプレビュー製品に関連しています。 プレビューは現在、新しい参加者には開かれません。
 
 ビバ ラーニング (プレビュー) は、学習と構築のスキルをシームレスに一日に統合できる、Microsoft Teamsの集中学習ハブです。 ビバ ラーニング (プレビュー) では、チームは組織とパートナーの両方が提供するコンテンツ ライブラリを検出、共有、割り当て、学習できます。 これらの操作は、すべての操作を行う必要Microsoft Teams。
 
    ![[ビバ] ページラーニング (プレビュー) ホームページのスクリーンショットをTeams。](../media/learning/learning-home-teams.png)
- 
+
 従業員は、学習と成長の機会が与えられると、満足を報告し、組織に長く残る可能性が高くなります。 Viva ラーニング (プレビュー) を使用すると、既に使用しているコミュニケーション ツールから離れることなく、組織にこれらの機会を簡単に作成できます。
 
 ## <a name="learn-while-working"></a>作業中に学習する
@@ -61,11 +61,11 @@ Viva ラーニング (プレビュー) を使用すると、学習を 1 日に�
 
 ### <a name="knowledge-admin"></a>知識管理者
 
-ナレッジ管理者は、組織内Azure Active Directoryに割りADできる、Microsoft 365 管理センター (Azure AD) ロールです。 この役割は、組織のラーニング コンテンツ ソースを管理するMicrosoft 365 管理センター。 詳細については [、「Azure AD組み込みロール」を参照してください](/azure/active-directory/roles/permissions-reference#knowledge-administrator)。
+ナレッジ管理者は、組織内Azure Active DirectoryにAzure ADできるMicrosoft 365 管理センター (Microsoft 365 管理センター) ロールです。 この役割は、組織のラーニング コンテンツ ソースを管理するMicrosoft 365 管理センター。 詳細については、「組み込[Azure ADロール」を参照してください](/azure/active-directory/roles/permissions-reference#knowledge-administrator)。
 
 ナレッジ管理者は、適度に技術的で、管理者の資格情報にSharePoint必要があります。 ナレッジ管理者は、組織の教育、学習、トレーニング、または従業員エクスペリエンスの一部に精通している必要があります。
 
-## <a name="get-started"></a>作業の開始
+## <a name="get-started"></a>概要
 
 特定の環境で Viva ラーニング (プレビュー) をMicrosoft 365します。
 

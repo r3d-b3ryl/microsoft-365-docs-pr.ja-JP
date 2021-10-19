@@ -16,17 +16,20 @@ ms.collection:
 ms.custom: admindeeplinkTEAMS
 ms.localizationpriority: ''
 description: 管理センターでMicrosoft Viva ラーニング (プレビュー) を構成Teamsします。
-ms.openlocfilehash: 4a54bc478c22d7a7ba3cb64c7efe69153882e308
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 98dc352de2196ff557a1cbc0ae3bc899ebee868d
+ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198327"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60478999"
 ---
 # <a name="set-up-microsoft-viva-learning-preview-in-the-teams-admin-center"></a>管理センター Microsoft Viva ラーニング (プレビュー) のTeams設定する
 
 > [!NOTE]
-> この記事の情報は、商用リリース前に大幅に変更される可能性があるプレビュー製品に関連しています。 
+> この記事の情報は、商用リリース前に大幅に変更される可能性があるプレビュー製品に関連しています。
+
+> [!NOTE]
+> [プレビューは現在、新しい参加者に対して閉じられます。
 
 管理者Teams、テナント内のユーザーに対して Viva ラーニング (プレビュー) を有効にするには、特定の手順を実行する必要があります。 これらの手順は、テナントの有効化方法 (パブリック [](set-up-teams-admin-center.md#public-preview-tenants)プレビューまたは [*プライベート* プレビュー (またはベータ) によって異なります](set-up-teams-admin-center.md#private-preview-tenants)。
 
@@ -34,19 +37,19 @@ ms.locfileid: "60198327"
 
 ### <a name="administrator-steps-for-public-preview-tenants"></a>パブリック プレビュー テナントの管理者の手順
 
-ビバ ラーニング (Preview) はまだ一般に利用できないので、特定のユーザーまたはグループの機能を有効にしてアクセス許可を設定するには、特定の手順が必要です。 
+ビバ ラーニング (Preview) はまだ一般に利用できないので、特定のユーザーまたはグループの機能を有効にしてアクセス許可を設定するには、特定の手順が必要です。
 
 1. ビバ ユーザー (プレビュー) ユーザーラーニングパブリック プレビュー機能を有効にする。
 
-    a. パブリック Teams機能を有効にするには、更新ポリシーを変更します。 「パブリック[Microsoft Teams」を参照してください](/microsoftteams/public-preview-doc-updates)。
+   1. パブリック Teams機能を有効にするには、更新ポリシーを変更します。 「パブリック[Microsoft Teams」を参照してください](/microsoftteams/public-preview-doc-updates)。
 
-    b. ビバ テスト (プレビュー) テストを実行するユーザーまたはラーニングポリシーを有効にする。 「ユーザー [とグループにポリシーを割り当てる」を参照してください](/microsoftteams/assign-policies-users-and-groups)。
+   1. ビバ テスト (プレビュー) テストを実行するユーザーまたはラーニングポリシーを有効にする。 「ユーザー [とグループにポリシーを割り当てる」を参照してください](/microsoftteams/assign-policies-users-and-groups)。
 
 2. Viva ユーザー (プレビュー) ユーザーのアプリラーニングポリシーを変更します。
 
-    a. 現在グローバル ポリシーの一部である場合をしない限り、アプリのアクセス許可ポリシーですべての Microsoft アプリを許可します。 「[アプリのアクセス許可ポリシーを管理する」を参照Microsoft Teams。](/microsoftteams/teams-app-permission-policies) 
+   1. 現在グローバル ポリシーの一部である場合をしない限り、アプリのアクセス許可ポリシーですべての Microsoft アプリを許可します。 「[アプリのアクセス許可ポリシーを管理する」を参照Microsoft Teams。](/microsoftteams/teams-app-permission-policies) 
 
-    b. ビバ テスト (プレビュー) テストを実行するユーザーまたはラーニングポリシーを有効にする。 「ユーザー [とグループにポリシーを割り当てる」を参照してください](/microsoftteams/assign-policies-users-and-groups)。
+   1. ビバ テスト (プレビュー) テストを実行するユーザーまたはラーニングポリシーを有効にする。 「ユーザー [とグループにポリシーを割り当てる」を参照してください](/microsoftteams/assign-policies-users-and-groups)。
 
 3. Viva ラーニング (Preview) をテストするユーザーに対して、ビルド クライアントをパブリック プレビューに切り替[Teams。](set-up-teams-admin-center.md#user-steps-for-public-preview-tenants)
 

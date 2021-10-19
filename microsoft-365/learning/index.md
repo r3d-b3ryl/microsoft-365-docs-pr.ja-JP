@@ -14,23 +14,23 @@ ms.collection:
 - m365initiative-viva-learning
 ms.localizationpriority: ''
 description: '[プレビュー] (プレビュー) のリソースをMicrosoft Viva ラーニングする方法について学習します。'
-ms.openlocfilehash: 0979d9e2a5b8f0f04565ccc8d2089e85eb6f8411
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 00ce845dcb5cc5dd8b86620c7e7aafddaab334f5
+ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213987"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60478843"
 ---
 # <a name="introduction-to-microsoft-viva-learning-preview"></a>概要 (Microsoft Viva ラーニング)
 
 > [!NOTE]
-> この記事の情報は、商用リリース前に大幅に変更される可能性があるプレビュー製品に関連しています。 
+> この記事の情報は、商用リリース前に大幅に変更される可能性があるプレビュー製品に関連しています。 プレビューは現在、新しい参加者には開かれません。
 
 Microsoft Viva ラーニング (プレビュー) を使用すると、組織内のチームや個人が一日の自然な部分で学習できます。 このアプリは、従業員が組織Microsoft Teamsコンテンツ ライブラリを共有、割り当て、学習できる中央ハブを作成します。
 
 このページのリソースは、組織でのビバ の概要と使用を開始ラーニング(プレビュー) を使用するように設計されています。
 
-## <a name="get-started"></a>作業の開始
+## <a name="get-started"></a>概要
 
 このセクションのリソースは、Viva ラーニング (Preview) の概要と、組織に役立つ方法について説明します。
 

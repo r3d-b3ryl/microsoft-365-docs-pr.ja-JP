@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c90841ac9312fcc5f36ae9807ce757d9268b4cea
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a8f30a42fac3cc52de38e06b4193ab4098258262
+ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60173093"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60478903"
 ---
 # <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender for Endpoint on Linux のインストールに関する問題のトラブルシューティング
 
@@ -34,7 +34,7 @@ ms.locfileid: "60173093"
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-## <a name="verify-if-installation-succeeded"></a>インストールが成功した場合の確認
+## <a name="verify-that-the-installation-succeeded"></a>インストールが成功したと確認する
 
 インストール時にエラーが発生した場合と、パッケージ マネージャーによる意味のあるエラー メッセージが表示されない場合があります。 インストールが成功した場合は、以下を使用してインストール ログを取得して確認します。
 
@@ -56,7 +56,7 @@ ms.locfileid: "60173093"
 
 ## <a name="make-sure-you-have-the-correct-package"></a>正しいパッケージがインストールされていることを確認する
 
-インストールするパッケージがホストの配布とバージョンと一致している場合に注意してください。
+インストールするパッケージがホストの配布とバージョンと一致する必要があります。
 
 <br>
 
@@ -65,8 +65,8 @@ ms.locfileid: "60173093"
 |package|配布|
 |---|---|
 |mdatp-rhel8。Linux.x86_64.rpm|Oracle、RHEL、CentOS 8.x|
-|mdatp-sles12.Linux.x86_64.rpm|SuSE Linux Enterprise サーバー 12.x|
-|mdatp-sles15.Linux.x86_64.rpm|SuSE Linux Enterprise サーバー 15.x|
+|mdatp-sles12.Linux.x86_64.rpm|SUSE Linux Enterprise サーバー 12.x|
+|mdatp-sles15.Linux.x86_64.rpm|SUSE Linux Enterprise サーバー 15.x|
 |mdatp。Linux.x86_64.rpm|Oracle、RHEL、CentOS 7.x|
 |mdatp。Linux.x86_64.deb|Debian と Ubuntu 16.04、18.04、20.04|
 |
@@ -75,10 +75,10 @@ ms.locfileid: "60173093"
 
 ## <a name="installation-failed"></a>インストールに失敗しました
 
-mdatp サービスが実行されている場合は、次のチェックを行います。
+Defender for Endpoint サービスが実行されている場合は、次の点を確認します。
 
 ```bash
-systemctl status mdatp
+service mdatp status
 ```
 
 ```Output
@@ -93,7 +93,7 @@ systemctl status mdatp
            └─1968 /opt/microsoft/mdatp/sbin/wdavdaemon
  ```
 
-## <a name="steps-to-troubleshoot-if-mdatp-service-isnt-running"></a>mdatp サービスが実行されていない場合のトラブルシューティング手順
+## <a name="steps-to-troubleshoot-if-the-mdatp-service-isnt-running"></a>mdatp サービスが実行されていない場合のトラブルシューティング手順
 
 1. "mdatp" ユーザーが存在するかどうかを確認します。
 
@@ -110,21 +110,20 @@ systemctl status mdatp
 2. 次のコマンドを使用して、サービスを有効にし、再起動してみてください。
 
     ```bash
-    sudo systemctl enable mdatp
+    sudo service mdatp start
     ```
 
     ```bash
-    sudo systemctl restart mdatp
+    sudo service mdatp restart
     ```
 
 3. 前のコマンドを実行した際に mdatp.service が見つからない場合は、次のコマンドを実行します。
 
     ```bash
-    sudo cp /opt/microsoft/mdatp/conf/mdatp.service <systemd_path>
+    sudo cp /opt/microsoft/mdatp/conf/mdatp.service <systemd_path> 
     ```
 
-    Ubuntu `<systemd_path>` `/lib/systemd/system` と Debian の配布と `/usr/lib/systemd/system` 、Rhel、CentOS、Oracle、SLES の場合です。
-   次に、手順 2 を再実行します。
+    ここで `<systemd_path>` `/lib/systemd/system` 、Rhel、CentOS、Oracle、SLES の Ubuntu および Debian ディストリビューションおよび /usr/lib/systemd/system' 用です。 次に、手順 2 を再実行します。
 
 4. 上記の手順が機能しない場合は、SELinux がインストールされ、エンフォースモードになっているか確認してください。 その場合は、これを制限モード (できれば) または無効モードに設定してみてください。 これは、パラメーターをファイル内で "permissive" または "disabled" に設定し、その後再起動 `SELINUX` `/etc/selinux/config` することで実行できます。 詳細については、selinux のマン ページを確認してください。
 次に、手順 2 を使用して mdatp サービスを再起動します。 試して再起動した後、セキュリティ上の理由から、構成の変更を直ちに元に戻します。
@@ -151,7 +150,7 @@ systemctl status mdatp
 
 7. wdavdaemon を含むファイル システムが "noexec" でマウントされていないか確認します。
 
-## <a name="if-mdatp-service-is-running-but-eicar-text-file-detection-doesnt-work"></a>mdatp サービスが実行されているが、EICAR テキスト ファイルの検出が機能しない場合
+## <a name="if-the-defender-for-endpoint-service-is-running-but-the-eicar-text-file-detection-doesnt-work"></a>Defender for Endpoint サービスが実行されているが、EICAR テキスト ファイルの検出が機能しない場合
 
 1. 次を使用してファイル システムの種類を確認します。
 

@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 電子メール アカウントの一般的なMicrosoft 365のトラブルシューティングに役立つ監査ログ検索ツールを使用する方法について説明します。
-ms.openlocfilehash: 026a0d86d1f8d4dd6dbe3d1f93eae167c817e5dc
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0ac1bbb2ff0a9c09b661abd8f60fd960d33fd774
+ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201951"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60478579"
 ---
 # <a name="search-the-audit-log-to-investigate-common-support-issues"></a>監査ログを検索して、一般的なサポートの問題を調査する
 
@@ -180,7 +180,11 @@ Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null
 
 このシナリオで監査ログの検索クエリを構成する方法は次のとおりです。
 
-**アクティビティ:**[メールボックス **Exchange] で****、[New-InboxRule] [受信トレイルールの作成/変更/有効化/無効化] を選択します**。
+**アクティビティ:**[**メールボックスExchange] で**、次のアクティビティの 1 つまたは両方を選択します。
+
+- **New-InboxRule 新しい受信トレイ ルールを作成します。Outlook Web App。** このアクティビティは、受信トレイ ルールが Web アプリまたは PowerShell を使用して作成Outlook監査レコードExchange Onlineします。
+
+- **クライアントから受信トレイ ルールOutlook更新しました**。 このアクティビティは、受信トレイ ルールがデスクトップ クライアントで作成、変更、または削除された場合に監査レコードOutlookします。
 
 **開始日と****終了日:** 調査に適用できる日付範囲を選択します。
 
@@ -204,26 +208,26 @@ d. UserId **フィールドは、ObjectId** フィールドで指定された受
 
 監査ログで監査レコードを確認すると、外部ユーザーが Azure Active Directory によって認証され、組織に正常にログインされたことを示すレコードが表示される場合があります。 たとえば、contoso.onmicrosoft.com の管理者に、別の組織のユーザー (fabrikam.onmicrosoft.com など) が正常に contoso.onmicrosoft.com にログインしたという監査レコードが表示される場合があります。 同様に、microsoft アカウント (MSA) を持つユーザー (Outlook.com や Live.com など) を持つユーザーが組織に正常にログインされたことを示す監査レコードが表示される場合があります。 このような状況では、監査されたアクティビティは User **logged In です**。 
 
-この動作は仕様です。 Azure Active Directory (Azure AD) は、外部ユーザーが組織内の SharePointサイトまたは OneDrive の場所にアクセスしようとするときに、パススルー認証と呼ばれるものを許可します。 外部ユーザーがこれを実行しようとすると、資格情報の入力を求めるメッセージが表示されます。 Azure ADは、資格情報を使用してユーザーを認証します。つまり、Azure ADユーザーが自分の資格情報を確認する必要があります。 監査レコードで正常にログインされたことを示すのは、Azure がユーザーを認証AD結果です。 ログインが成功しても、ユーザーが組織内のリソースにアクセスしたり、その他の操作を実行できたという意味で、ユーザーは実行できるとは言えなかねない。 これは、ユーザーが Azure サーバーによって認証されたAD。 パススルー ユーザーが SharePoint または OneDrive リソースにアクセスするには、組織内のユーザーが共有の招待または匿名共有リンクを送信して、リソースを外部ユーザーと明示的に共有する必要があります。 
+この動作は仕様です。 Azure Active Directory (Azure AD) は、外部ユーザーが組織内の SharePointサイトまたは OneDrive の場所にアクセスしようとすると、パススルー認証と呼ばれる何かを許可します。 外部ユーザーがこれを実行しようとすると、資格情報の入力を求めるメッセージが表示されます。 Azure AD資格情報を使用してユーザーを認証します。つまり、ユーザー Azure ADユーザーが誰だと言うのか確認する必要があります。 監査レコードで正常にログインされたことを示すのは、ユーザーが認証Azure AD結果です。 ログインが成功しても、ユーザーが組織内のリソースにアクセスしたり、その他の操作を実行できたという意味で、ユーザーは実行できるとは言えなかねない。 これは、ユーザーがユーザーによって認証されたAzure AD。 パススルー ユーザーが SharePoint または OneDrive リソースにアクセスするには、組織内のユーザーが共有の招待または匿名共有リンクを送信して、リソースを外部ユーザーと明示的に共有する必要があります。 
 
 > [!NOTE]
-> Azure ADでは、ファースト パーティ アプリケーション (オンラインやオンライン など) に対SharePointパススルー認証OneDrive for Business。 他のサード パーティ製アプリケーションでは許可されません。
+> Azure ADを使用すると、オンラインやサーバーなどのファーストパーティ アプリケーションSharePointパススルー認証OneDrive for Business。 他のサード パーティ製アプリケーションでは許可されません。
 
 パススルー認証の結果であるユーザーログインの監査レコード内の関連プロパティの例と説明を次に示します。 監査レコードを選択して [ **詳細]** フライアウト ページを表示し、[詳細情報] **を選択します**。
 
 ![成功したパススルー認証の監査レコードの例。](../media/PassThroughAuth1.png)
 
-   a. このフィールドは、組織内のリソースにアクセスしようとしたユーザーが組織の Azure リソースに見つからなかったAD。
+   a. このフィールドは、組織内のリソースにアクセスしようとしたユーザーが組織のリソースに見つからなかったAzure AD。
 
    b. このフィールドには、組織内のリソースにアクセスしようとした外部ユーザーの UPN が表示されます。 このユーザー ID は、監査レコードの **User** プロパティと **UserId** プロパティでも識別されます。
 
    c. **ApplicationId プロパティ** は、ログオン要求をトリガーしたアプリケーションを識別します。 この監査レコードの ApplicationId プロパティに表示される 00000003-000003-00000-0ff1-ce00-000000000 の値は、SharePoint Online を示します。 OneDrive for Business ApplicationId も同じです。
 
-   d. これは、パススルー認証が成功したかどうかを示します。 つまり、ユーザーが Azure サーバーによって正常に認証AD。 
+   d. これは、パススルー認証が成功したかどうかを示します。 つまり、ユーザーがユーザーによって正常に認証Azure AD。 
 
-   e. **RecordType 値** **15** は、監査されたアクティビティ (UserLoggedIn) が Azure AD の Secure Token Service (STS) ログオン イベントAD。
+   e. **RecordType 値** **15** は、監査されたアクティビティ (UserLoggedIn) がセキュリティで保護されたトークン サービス (STS) ログオン イベントAzure AD。
 
-UserLoggedIn 監査レコードに表示されるその他のプロパティの詳細については、「AD 管理アクティビティ API スキーマ」の「Azure AD Office 365 関連スキーマ情報」を[参照してください](/office/office-365-management-api/office-365-management-activity-api-schema#azure-active-directory-base-schema)。
+UserLoggedIn 監査レコードに表示されるその他のプロパティの詳細については、「Azure AD 管理アクティビティ API スキーマ」の「Office 365関連スキーマ情報」を[参照してください](/office/office-365-management-api/office-365-management-activity-api-schema#azure-active-directory-base-schema)。
 
 パススルー認証により、ユーザーが監査アクティビティにログインし成功するシナリオの例を次に 2 つ示します。 
 

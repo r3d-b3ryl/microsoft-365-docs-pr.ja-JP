@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: 詳細については、Advanced eDiscoveryのソリューションMicrosoft 365。 この記事では、内部および外部Advanced eDiscovery Microsoft 365を管理するためのツールである、Microsoft 365の概要を説明します。 また、法的調査を管理するために、Advanced eDiscoveryを使用するビジネス上の理由も枠に入ります。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 40ff0b39f71dd124f641a60e4431aebbc2c08793
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 769f88b6bd2f3348061a759655c8169e9a8310f5
+ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201015"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60478823"
 ---
 # <a name="overview-of-microsoft-365-advanced-ediscovery"></a>概要 Microsoft 365 Advanced eDiscovery
 
@@ -71,9 +71,9 @@ Advanced eDiscoveryは、信頼する必要がある電子情報開示ソリュ�
 
 電子情報開示リファレンス モデル (EDRM) Advanced eDiscovery Microsoft 365電子情報開示プロセスと一致する、Advanced eDiscoveryの組み込みワークフロー。
 
-![電子探索参照モデル (EDRM)。](../media/EDRMv1.png)
+![電子探索参照モデル (EDRM)。](../media/EDRMv2.png)
 
-(画像ソース提供:edrm.net。 ソース イメージは、クリエイティブ コモンズ アトリビューション 3.0 [報告されていないライセンス] で利用できます。
+(画像は EDRM モデルに基 edrm.net)
 
 Advanced eDiscovery が、いかに高いレベルで EDRM ワークフローをサポートするかについて説明します。
 

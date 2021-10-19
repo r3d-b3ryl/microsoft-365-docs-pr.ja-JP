@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint on Linux のクラウド接続の問題のトラブルシューティング
 ms.reviewer: ''
-description: Microsoft Defender for Endpoint on Linux のクラウド接続の問題のトラブルシューティング
+description: Microsoft Defender for Endpoint on Linux のクラウド接続の問題をトラブルシューティングする方法について説明します。
 keywords: microsoft、 defender、 Microsoft Defender for Endpoint, Linux, cloud, connectivity, communication
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cbd0e45a44f3053e48b3714bb526e70d5d634502
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4f547e6701e0b22c2d55d0fa68a236f85b821a11
+ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210996"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60478915"
 ---
 # <a name="troubleshoot-cloud-connectivity-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender for Endpoint on Linux のクラウド接続の問題のトラブルシューティング
 
@@ -94,22 +94,12 @@ curl -x http://proxy_address:port -w ' %{url_effective}\n' 'https://x.cp.wd.micr
 
 ファイルで構成されているのと同じプロキシ アドレスとポートを使用してください `/lib/system/system/mdatp.service` 。 上記のコマンドでエラーが発生した場合は、プロキシ構成を確認します。
 
-> [!WARNING]
-> 静的プロキシは、システム全体の環境変数を使用して `HTTPS_PROXY` 構成できません。 代わりに、ファイルに `HTTPS_PROXY` 正しく設定されていることを確認 `/lib/system/system/mdatp.service` します。
-
-静的プロキシを使用するには、ファイル `mdatp.service` を変更する必要があります。 先頭が削除 `#` され、次の行のアンコメントが解除されます `/lib/systemd/system/mdatp.service` 。
+mdatp のプロキシを設定するには、次のコマンドを使用します。
 
 ```bash
-#Environment="HTTPS_PROXY=http://address:port"
+mdatp config proxy set --value http://address:port 
 ```
 
-また、置換するために正しい静的プロキシ アドレスが入力されていることを確認します `address:port` 。
-
-このファイルが正しい場合は、ターミナルで次のコマンドを実行して、Defender for Endpoint on Linux を再読み込みし、設定を伝達してください。
-
-```bash
-sudo systemctl daemon-reload; sudo systemctl restart mdatp
-```
 
 成功した場合は、コマンド ラインから別の接続テストを試してください。
 
