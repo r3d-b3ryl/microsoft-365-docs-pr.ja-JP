@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンス マネージャーは、国内、地域、業界の規制、標準、および法律に合わせて評価を構築するテンプレートを提供します。
-ms.openlocfilehash: b0ed861380b365cfeb20d5bdbe9e929f64c0b3e4
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 858442e54277c32c6510d211f225f73feaf7c4d3
+ms.sourcegitcommit: 3260d47a29c35e90ed7b1d14d400b39baa741873
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60334520"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60462215"
 ---
 # <a name="compliance-manager-templates-list"></a>コンプライアンスマネージャーテンプレートの一覧
 
@@ -171,6 +171,7 @@ ms.locfileid: "60334520"
 - カリフォルニア州 - プライバシー権利法 (CPRA) (Microsoft 365)
 - カリフォルニア州 - SB-327 Information Privacy: Connected Devices (Microsoft 365)
 - カリフォルニア州消費者信用報告機関法 (Microsoft 365)
+- コロラド州プライバシー法 (CPA) (Microsoft 365)
 - [カリフォルニア州消費者プライバシー法 (CCPA)](/compliance/regulatory/offering-ccpa) (Microsoft 365)
 - 消費者データプライバシーのためのコロラド州の保護 (Microsoft 365)
 - コロラド州改訂統計、セクション 6-1-716、 セキュリティ侵害の通知 (Microsoft 365)
@@ -234,6 +235,7 @@ ms.locfileid: "60334520"
 - ユタ州の電子情報またはデータプライバシー (Microsoft 365)
 - バーモント州 - データプライバシーと消費者保護に関する法律 (Microsoft 365)
 - バージニア州の個人情報侵害法 (Microsoft 365)
+- バージニア州消費者データプライバシー法 (CDPA) (Microsoft 365)
 - ワシントン DC - コンシューマー セキュリティ侵害通知標準 (Microsoft 365)
 - West Virginia - 消費者情報のセキュリティ侵害 (Microsoft 365)
 - Wisconsin セキュリティ侵害通知 (Microsoft 365)
@@ -244,6 +246,9 @@ ms.locfileid: "60334520"
 
 - アジア太平洋経済協力 (APEC) プライバシー フレームワーク
 - オーストラリア - ASD Essential 8 (Microsoft 365)
+- オーストラリア - ASD Essential 8 成熟度レベル 1
+- オーストラリア - ASD Essential 8 満期日レベル 2
+- オーストラリア - ASD Essential 8 満期日レベル 3
 - オーストラリア - 国立公文書館法
 - オーストラリア - パブリック レコード Officeレコード標準 (Microsoft 365)
 - オーストラリア - スパム法 2003 (Microsoft 365)
@@ -326,6 +331,7 @@ ms.locfileid: "60334520"
 - Dubai - Health Data Protection Regulation (Microsoft 365)
 - Dubai Consumer Protection Regulations (Telecommunications Regulatory Authority)(Microsoft 365)
 - Dubai ISR (Microsoft 365)
+- エジプト - データ保護法 (Microsoft 365)
 - エストニア - 個人データ保護法 (Microsoft 365)
 - エストニア - 情報システムのセキュリティ対策のシステム (Microsoft 365)
 - EU - ディレクティブ 2006/24/EC (Microsoft 365)

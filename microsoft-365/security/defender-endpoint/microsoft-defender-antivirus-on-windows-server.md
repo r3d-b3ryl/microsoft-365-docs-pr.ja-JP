@@ -14,14 +14,14 @@ ms.reviewer: pahuijbr, shwjha
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 10/13/2021
+ms.date: 10/18/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 8f5ae71ecc602a7bc588ff62036be20b883087db
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 9e92096ab6b1b291094781fed9ee994ca1fd7358
+ms.sourcegitcommit: 3260d47a29c35e90ed7b1d14d400b39baa741873
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335480"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60462227"
 ---
 # <a name="microsoft-defender-antivirus-on-windows-server"></a>Windows Server 上の Microsoft Defender ウイルス対策
 
@@ -62,8 +62,6 @@ Microsoft Defender ウイルス対策サーバーの次のエディション/バ
 既定では、Microsoft Defender ウイルス対策が Windows Server にインストールされており機能することになっています。 場合によっては、ユーザー インターフェイス (GUI) が既定でインストールされていることがありますが、GUI は必要ありません。 PowerShell、グループ ポリシー、またはその他のメソッドを使用して、Microsoft Defender ウイルス対策を管理できます。
 
 GUI がサーバーにインストールされておらず、インストールを希望する場合は、 **役割と機能の追加ウィザード** または PowerShell コマンドレットを使用します。
-
-
 
 > [!NOTE]
 > このオプションは、R2 のWindows Server 2012できません。 詳細については [、「Options to install Microsoft Defender for Endpoint」を参照してください](configure-server-endpoints.md#options-to-install-microsoft-defender-for-endpoint)。
@@ -234,7 +232,7 @@ Uninstall-WindowsFeature -Name Windows-Defender-GUI
 
 | プロシージャ | 説明 |
 |---|---|
-| グループ ポリシー Microsoft Defender ウイルス対策使用して無効にする | ローカル グループ ポリシー エディターで、[グループポリシー] に移動し、[Windows Defenderをオフにする]**をWindows Defender ウイルス対策。** |
+| グループ ポリシー Microsoft Defender ウイルス対策使用して無効にする | ローカル グループ ポリシー エディターで、[管理用テンプレート] Windows コンポーネント Endpoint Protectionを無効Endpoint Protectionし、[OK を有効にする  >    >    >  ]**を**  >  **選択します**。 |
 | レジストリ Microsoft Defender ウイルス対策を使用して無効にする | [DisableAntiSpyware レジストリ](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware)キーを使用するには、に移動し、という DWORD エントリを設定または `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender` 作成します `DisableAntiSpyware` 。 その値を `1` (レジストリ キーの値を true に設定する) に *設定します*。 |
 | PowerShell をMicrosoft Defender ウイルス対策する方法を無効にする | 次の PowerShell コマンドレットを使用します。 `Set-MpPreference -DisableRealtimeMonitoring $true` |
 | PowerShell をMicrosoft Defender ウイルス対策をアンインストールする | 次の PowerShell コマンドレットを使用します。 `Uninstall-WindowsFeature -Name Windows-Defender` |

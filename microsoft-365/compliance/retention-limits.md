@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: アイテム保持ポリシーおよび保持ラベル ポリシーのポリシーおよびポリシーごとの項目の最大数を把握する
-ms.openlocfilehash: 881aa208036bab4fe476bb424e42ff16dbb5344f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 52318fb2f8ae81022734bb1f620b220830214ad7
+ms.sourcegitcommit: f6fff04431d632db02e7bdbf12f691091a30efad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195571"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60432651"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>アイテム保持ポリシーとアイテム保持ラベルの制限
 
@@ -47,11 +47,25 @@ ms.locfileid: "60195571"
 
 Microsoft Teams と Yammer のデータ保持ポリシーでは、データ保持目的でメールボックスを使用しますが、Exchange Online のポリシーの最大数は、Teams と Yammer のデータ保持ポリシーを含みません。
 
+## <a name="maximums-for-adaptive-policy-scopes"></a>アダプティブ ポリシー スコープの最大数
+
+保持のためにポリシーに追加できる[アダプティブ ポリシー スコープ](retention.md#adaptive-or-static-policy-scopes-for-retention)の数に制限はありません。ただし、各アダプティブ スコープを定義するクエリには、以下のとおり最大数にいくつかの制限があります。
+
+- 属性値またはプロパティ値の文字列の長さ: 200
+- グループのない場合またはグループ内の属性またはプロパティの数: 10
+- グループの数: 10
+- 高度なクエリの文字数: 10,000
+
+グループ内の属性またはプロパティのグループ化はサポートされていません。 つまり、単一のアダプティブ スコープでサポートされるプロパティまたは属性の最大数は 100 です。
+
 ## <a name="maximum-number-of-items-per-policy"></a>ポリシーごとのアイテムの最大数
 
-省略可能な構成を使用して、特定のユーザー、特定の Microsoft 365 グループ、特定のサイトに保持設定を適用する場合に、ポリシーごとに注意すべき制限事項がいくつかあります。 
+> [!IMPORTANT]
+> [アダプティブ ポリシー スコープではなく静的ポリシー スコープ](retention.md#adaptive-or-static-policy-scopes-for-retention)を使用する場合にのみ適用できます。
 
-保持するポリシーごとのアイテムの最大数:
+静的スコープと省略可能な構成を使用して、特定のユーザー、特定の Microsoft 365 グループ、特定のサイトを含めるか、または除外する場合に、ポリシーごとに注意すべき制限事項がいくつかあります。 
+
+静的スコープに保持するポリシーごとのアイテムの最大数は以下のとおりです。
 
 - Exchange メールボックス: 1,000
 - Microsoft 365 グループ: 1,000
@@ -66,14 +80,11 @@ Skype for Business は特定のユーザーにスコープを設定する必要�
 
 ポリシーごとにこれらの制限があるので、これらの数を超える結果となる特定の対象または除外を使用する必要がある場合は、同じ保持設定を持つ追加の保持ポリシーを作成することができます。 このために複数の保持ポリシーを使用するいくつかの[シナリオ例とソリューション](#examples-of-using-multiple-policies-to-avoid-exceeding-maximum-numbers)については、次のセクションを参照してください。
 
-ただし、複数の保持ポリシーを所有すると管理費が高くなるので、本当に対象や除外が必要かどうかを常に確認する必要があります。 場所全体に適用される既定値の構成には制限がなく、この構成の選択は、複数のポリシーを作成して維持するよりも良い解決策になるかもしれないことに留意してください。
-
-> [!TIP]
-> このシナリオで複数のポリシーを作成して維持する必要がある場合は、[PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels) を使用してより効率的な構成を検討してください。
+ただし、複数のポリシー結果を所有すると管理費が高くなります。 包含と除外を使用して複数のポリシーを作成して管理するよりも、アダプティブ スコープを使用することを検討してください。
 
 ### <a name="examples-of-using-multiple-policies-to-avoid-exceeding-maximum-numbers"></a>最大数を超えないようにするために複数のポリシーを使用する例
 
-以下の例では、保持ポリシーの場所だけを指定できず、前のセクションで説明した最大数を考慮しなければならない場合の設計ソリューションをいくつか提供しています。
+以下の例は静的スコープの場合であり、保持ポリシーの場所だけを指定できず、前のセクションで説明した最大数を考慮しなければならない場合の設計ソリューションをいくつか提供しています。
 
 交換例は、以下のとおりです。
 

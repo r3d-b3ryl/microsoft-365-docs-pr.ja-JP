@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なものを保持し、必要でないものを削除するためにラベルを自動的に適用できるように、保持ラベルと自動ラベル付けポリシーを作成します。
-ms.openlocfilehash: ed123a772d3c3db23f4519beeb32903bb43267a7
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 6edeea09798781d08b34566c469bead3aea22356
+ms.sourcegitcommit: f6fff04431d632db02e7bdbf12f691091a30efad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335768"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60432627"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>保持ラベルを自動的に適用してコンテンツを保持または削除する
 
@@ -65,6 +65,8 @@ ms.locfileid: "60335768"
 
 組織のグローバル管理者には、保持ラベルとそれらのポリシーを作成および編集できる完全な権限があります。 グローバル管理者としてサインインしていない場合は、「[アイテム保持ポリシーと保持ラベルを作成して管理するために必要なアクセス許可](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels)」を参照してください。
 
+保持ラベル ポリシーを作成する前に、**アダプティブ** か **静的** にするかどうかを決定します。 詳細については、「[保持用のアダプティブ ポリシー スコープまたは静的ポリシー スコープ](retention.md#adaptive-or-static-policy-scopes-for-retention)」を参照してください。 アダプティブ ポリシーの使用を決定する場合は、保持ラベル ポリシーの作成前に 1 つ以上のアダプティブ スコープを作成し、保持ラベル ポリシーの作成プロセス中に選択する必要があります。 手順については、「[アダプティブ スコープの構成情報](retention-settings.md#configuration-information-for-adaptive-scopes)」を参照してください。
+
 ## <a name="how-to-auto-apply-a-retention-label"></a>保持ラベルを自動適用する方法
 
 まず、保持ラベルを作成します。 次に、そのラベルを適用する自動ポリシーを作成します。 保持ラベルを既に作成してある場合は、[自動ポリシーの作成](#step-2-create-an-auto-apply-policy)に進んでください。
@@ -81,9 +83,13 @@ ms.locfileid: "60335768"
     - レコード管理を使用していない場合:
        - [**ソリューション**] > [**情報ガバナンス**] > [**ラベル**] タブ > + [**ラベルを作成**]
     
-    すぐにオプションが表示されませんか? 最初に [**すべて表示**] を選択します。 
+    ナビゲーション ウィンドウにすぐに解決方法が表示されない場合 最初に [**すべて表示**] を選択します。 
 
-2. 構成の指示に従います。 レコード管理を使用している場合:
+2. 構成の指示に従います。
+    
+    保持設定の詳細については、「[コンテンツを保持および削除するための設定](retention-settings.md#settings-for-retaining-and-deleting-content)」を参照してください。
+    
+    レコード管理を使用している場合:
     
     - ファイル計画記述子については、「[Use file plan to manage retention labels (ファイル計画を使用して保持ラベルを管理する)](file-plan-manager.md)」を参照してください。
     
@@ -106,15 +112,25 @@ ms.locfileid: "60335768"
     - レコード管理を使用していない場合:
         - [**ソリューション**] > [**情報ガバナンス**] > [**ラベル ポリシー**] タブ > [**自動適用ラベル**]
     
-    すぐにオプションが表示されませんか? 最初に [**すべて表示**] を選択します。 
+    ナビゲーション ウィンドウにすぐに解決方法が表示されない場合 最初に [**すべて表示**] を選択します。 
 
-2. 自動ラベル付け構成の作成の指示に従います。
-    
-    保持ラベルを自動的に適用する条件の構成については、このページの「[自動適用の保持ラベルの条件の構成](#configuring-conditions-for-auto-apply-retention-labels)」セクションをご覧ください。
-    
-    保持ラベルでサポートされている場所については、「[保持ラベルと場所](retention.md#retention-label-policies-and-locations)」のセクションをご覧ください。
+2. この自動ラベル付けポリシーに名前と説明を入力して、[**次へ**] を選択します。
 
-既存の自動適用ポリシーを編集するには、ポリシーを選択して、[**アイテム保持ポリシーの編集**] 構成を起動します。このウィザードでは、手順 2 で選択した保持ラベルと[有効な設定](#updating-retention-labels-and-their-policies)を変更できます。
+3. [**このラベルを適用するコンテンツの種類を選択する**] で、使用可能な条件のいずれかを選択します。 その選択に関する詳細については、このページの「[自動適用の保持ラベルの条件の構成](#configuring-conditions-for-auto-apply-retention-labels)」セクションをご覧ください。
+
+4. [**作成するアイテム保持ポリシーの種類を選択する**] ページで、[[開始する前に](#before-you-begin)] で行った選択に従って、[**アダプティブ**] または [**静的**]を選択します。 アダプティブ スコープをまだ作成していない場合は、[**アダプティブ**] を選択できますが、選択するアダプティブ スコープがないため、このオプションを使用してウィザードを終了することはできません。
+
+5. 選択したスコープに応じて、次の項目を実行します。
+    
+    - [**アダプティブ**] を選択した場合: [**アダプティブ ポリシー スコープと場所の選択**] ページで、[**スコープの追加**] を選択し、作成された 1 つ以上のアダプティブ スコープを選択します。 次に、1 つ以上の場所を選択します。 選択できる場所は、追加された[スコープの種類](retention-settings.md#configuration-information-for-adaptive-scopes)によって異なります。 たとえば、[**ユーザー**] のスコープの種類のみを追加した場合は、[**Exchange メール**] を選択できますが、[**SharePoint サイト**] は選択できません。 
+    
+    - [**静的**] を選択した場合: [**場所の選択**] ページで、場所のオンとオフを切り替えます。 場所ごとに、既定のままにして、[ポリシーを場所全体に適用する](retention-settings.md#a-policy-that-applies-to-entire-locations)か、[包含と除外を指定する](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions)ことができます。
+    
+    場所の選択に関する詳細については、「[場所](retention-settings.md#locations)」を参照してください。
+
+6. ウィザードの指示に従って保持ラベルを選択し、構成の選択肢を確認して送信します。
+
+既存の自動適用ポリシーを編集するには、ポリシーを選択して、[**アイテム保持ポリシーの編集**] 構成を起動します。このウィザードでは、手順 2 で選択した保持ラベルと [有効な設定](#updating-retention-labels-and-their-policies)を変更できます。
 
 自動適用ラベル ポリシーを使用してコンテンツにラベル付けをした後で、コンテンツやポリシーを変更したり、新しい自動適用ラベル ポリシーを使用したりして、適用されているラベルを自動的に削除したり変更したりすることはできません。詳細については、「[一度に 1 つの保持ラベルのみ](retention.md#only-one-retention-label-at-a-time)」を参照してください。
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ラベルを作成して発行し、それをアプリに適用することで、必要なものを保持し、必要でないものを削除する手順。
-ms.openlocfilehash: bfe4fa129488595e6e9713d909c2c4020a2b5bb6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f86692d07f7636f35ba700b9750510219a6ef380
+ms.sourcegitcommit: f6fff04431d632db02e7bdbf12f691091a30efad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60175361"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60432639"
 ---
 # <a name="create-retention-labels-and-apply-them-in-apps"></a>保持ラベルを作成してアプリに適用する
 
@@ -47,7 +47,9 @@ ms.locfileid: "60175361"
 
 ## <a name="before-you-begin"></a>はじめに
 
-組織のグローバル管理者には、保持ラベルとそれらのポリシーを作成および編集できる完全な権限があります。 グローバル管理者としてサインインしていない場合は、「[保持ポリシーおよび保持ラベルの作成と管理に必要なアクセス許可](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels)」を参照してください。
+組織のグローバル管理者には、保持ラベルとそれらのポリシーを作成および編集できる完全な権限があります。 グローバル管理者としてサインインしていない場合は、「[アイテム保持ポリシーと保持ラベルを作成して管理するために必要なアクセス許可](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels)」を参照してください。
+
+保持ラベル ポリシーを作成する前に、**アダプティブ** か **静的** にするかどうかを決定します。 詳細については、「[保持用のアダプティブ ポリシー スコープまたは静的ポリシー スコープ](retention.md#adaptive-or-static-policy-scopes-for-retention)」を参照してください。 アダプティブ ポリシーの使用を決定する場合は、保持ラベル ポリシーの作成前に 1 つ以上のアダプティブ スコープを作成し、保持ラベル ポリシーの作成プロセス中に選択する必要があります。 手順については、「[アダプティブ スコープの構成情報](retention-settings.md#configuration-information-for-adaptive-scopes)」を参照してください。
 
 ## <a name="how-to-create-and-publish-retention-labels"></a>保持ラベルを作成して発行する方法
 
@@ -65,9 +67,13 @@ ms.locfileid: "60175361"
     - レコード管理を使用していない場合:
        - [**ソリューション**] > [**情報ガバナンス**] > [**ラベル**] タブ > + [**ラベルを作成**]
     
-    すぐにオプションが表示されませんか? 最初に [**すべて表示**] を選択します。 
+    ナビゲーション ウィンドウにすぐに解決方法が表示されない場合 最初に [**すべて表示**] を選択します。 
 
-2. ウィザードでプロンプトに従います。 レコード管理を使用している場合:
+2. ウィザードでプロンプトに従います。
+    
+    保持設定の詳細については、「[コンテンツを保持および削除するための設定](retention-settings.md#settings-for-retaining-and-deleting-content)」を参照してください。
+    
+    レコード管理を使用している場合:
     
     - ファイル計画記述子については、「[ファイル計画を使用して保持ラベルを管理する](file-plan-manager.md)」を参照してください。
     
@@ -91,14 +97,25 @@ SharePoint や Outlook などのアプリでユーザーが適用できるよう
     - レコード管理を使用していない場合:
         - [**ソリューション**] > [**情報ガバナンス**] > [**ラベル ポリシー**] タブ > [**ラベルの発行**]
     
-    すぐにオプションが表示されませんか? 最初に [**すべて表示**] を選択します。 
+    ナビゲーション ウィンドウにすぐに解決方法が表示されない場合 最初に [**すべて表示**] を選択します。 
 
-2. ウィザードでプロンプトに従います。
+2. リンクを使用して発行する保持ラベルを選択し、[**次へ**] を 選択します。
+
+3. [**作成するアイテム保持ポリシーの種類を選択する**] ページで、[[開始する前に](#before-you-begin)] で行った選択に従って、[**アダプティブ**] または [**静的**]を選択します。 アダプティブ スコープをまだ作成していない場合は、[**アダプティブ**] を選択できますが、選択するアダプティブ スコープがないため、このオプションを使用してウィザードを終了することはできません。
+
+4. 選択したスコープに応じて、次の項目を実行します。
     
-    保持ラベルでサポートされている場所については、「[保持ラベルと場所](retention.md#retention-label-policies-and-locations)」を参照してください。 
+    - [**アダプティブ**] を選択した場合: [**アダプティブ ポリシー スコープと場所の選択**] ページで、[**スコープの追加**] を選択し、作成された 1 つ以上のアダプティブ スコープを選択します。 次に、1 つ以上の場所を選択します。 選択できる場所は、追加された[スコープの種類](retention-settings.md#configuration-information-for-adaptive-scopes)によって異なります。 たとえば、[**ユーザー**] のスコープの種類のみを追加した場合は、[**Exchange メール**] を選択できますが、[**SharePoint サイト**] は選択できません。 
+    
+    - [**静的**] を選択した場合: [**場所の選択**] ページで、場所のオンとオフを切り替えます。 場所ごとに、既定のままにして、[ポリシーを場所全体に適用する](retention-settings.md#a-policy-that-applies-to-entire-locations)か、[包含と除外を指定する](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions)ことができます。
+    
+    場所の選択に関する詳細については、「[場所](retention-settings.md#locations)」を参照してください。
 
-既存の保持ラベル ポリシー (ポリシーの種類は [**公開**]) を編集するには、それを選択してから、[**編集**] オプションを選択して、[保持ポリシーの編集] を開始します。 このウィザードでは、手順 2 のポリシーの説明と[有効な設定](#updating-retention-labels-and-their-policies)を変更できます。
+5.  ウィザードの指示に従ってポリシーに名前を付け、構成の選択肢を確認して送信します。
+    
+    場所の選択に関する詳細については、「[場所](retention-settings.md#locations)」を参照してください。 
 
+既存の保持ラベル ポリシー (ポリシーの種類は [**公開**]) を編集するには、それを選択してから、[**編集**] オプションを選択して、[保持ポリシーの編集] を開始します。 このウィザードでは、ポリシーの説明と[有効な設定](#updating-retention-labels-and-their-policies)を変更できます。
 
 ## <a name="when-retention-labels-become-available-to-apply"></a>保持ラベルが適用できるようになったとき
 
