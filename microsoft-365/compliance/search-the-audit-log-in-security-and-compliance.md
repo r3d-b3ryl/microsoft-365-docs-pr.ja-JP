@@ -21,12 +21,12 @@ description: Microsoft 365 コンプライアンス センターを使用して�
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: b1cb482b478259177044a1af84bf865b8f8ec882
-ms.sourcegitcommit: f6fff04431d632db02e7bdbf12f691091a30efad
+ms.openlocfilehash: 87df624f35231a43cd8d9e2d34912d2bc48a5252
+ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60432711"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60478963"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>コンプライアンス センターで監査ログを検索する
 
@@ -685,7 +685,7 @@ FilePreviewed イベントと FileAccessed イベントの両方が、ユーザ�
 |送信済メッセージ|Send|メッセージが送信、返信、または転送されました。 このアクティビティは、Office 365 または Microsoft 365 E5 ライセンスを持つユーザーのみに記録されます。 詳細については、[[高度な監査]](advanced-audit.md#advanced-audit-events) の「高度な監査イベント」セクションを参照してください。|
 |送信者権限を使ったメッセージの送信|SendAs|メッセージが、メールボックス所有者として送信するアクセス許可を使用して送信されました。これは、メールボックスの所有者から送信されているかのように、別のユーザーがメッセージを送信したことを意味します。|
 |代理送信権限を使ったメッセージの送信|SendOnBehalf|SendOnBehalf アクセス許可を使用してメッセージが送信されました (他のユーザーがこのメールボックスの所有者の代理人としてメッセージを送信しました)。この場合は、メッセージの名目上の送信者と実際の送信者が受信者に示されます。|
-|Outlook クライアントの受信トレイ ルールの更新|UpdateInboxRules|メールボックスの所有者またはメールボックスにアクセスできる別のユーザーが、Outlook クライアントで受信トレイ ルールを変更しました。|
+|Outlook クライアントの受信トレイ ルールの更新|UpdateInboxRules|メールボックスの所有者またはメールボックスにアクセスできる他のユーザーが、Outlook クライアントを使用して受信トレイ ルールを作成、変更、または削除しました。|
 |メッセージの更新|Update|メッセージまたはそのプロパティが変更されました。|
 |メールボックスへのユーザーのサインイン|MailboxLogin|ユーザーが自分のメールボックスにサインインしました。|
 |メッセージをレコードとしてラベル付けする||ユーザーがメール メッセージに保持ラベルを適用しました。このラベルは、アイテムをレコードとしてマークするように構成されています。 |

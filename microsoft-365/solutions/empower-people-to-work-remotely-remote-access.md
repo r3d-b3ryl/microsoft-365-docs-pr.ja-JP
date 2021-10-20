@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Microsoft 365 クラウド サービスへのアクセスを最適化しながら、リモート ワーカーがオンプレミスのリソースにアクセスできることを確認します。
-ms.openlocfilehash: e9f5bbe04120cd2e49a56ec0fbe47e4ecdb0778e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7266db5ba0149caaeb5057ad2ca1c3d082760c15
+ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190187"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60478771"
 ---
 # <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>手順 2: オンプレミスのアプリとサービスへのリモート アクセスを提供する
 
@@ -91,16 +91,16 @@ P2S VPN 接続は、Azure 仮想ネットワークを介してリモート ワ�
 > [!NOTE]
 > Azure P2S VPN は、Microsoft 365 のサブスクリプションには含まれていません。 別の Azure サブスクリプションで使用する場合は、支払う必要があります。
 
-## <a name="deploy-windows-virtual-desktop-to-provide-remote-access-for-remote-workers-using-personal-devices"></a>リモート ワーカーが個人用デバイスを使用してリモート アクセスできるように、Windows Virtual Desktop を展開する
+## <a name="deploy-azure-virtual-desktop-to-provide-remote-access-for-remote-workers-using-personal-devices"></a>リモート ワーカーが個人用デバイスを使用してリモート アクセスできるように、Azure Virtual Desktop を展開する
 
-個人用デバイスや管理されていないデバイスのみを使用できるリモート ワーカーをサポートするには、Azure の Windows Virtual Desktop を使用して、ユーザーが自宅から使用する仮想デスクトップを作成して割り当てます。仮想化された PC は、組織のネットワークに接続されている PC と同じように動作します。
+個人用デバイスや管理されていないデバイスのみを使用できるリモート ワーカーをサポートするには、Azure Virtual Desktop を使用して、ユーザーが自宅から使用する仮想デスクトップを作成して割り当てます。仮想化された PC は、組織のネットワークに接続されている PC と同じように動作します。
 
-![Azure Windows Virtual Desktop のコンポーネント。](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-windows-virtual-desktop.png)
+![Azure Virtual Desktop のコンポーネント。](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-windows-virtual-desktop.png)
 
-詳細については、「[Windows Virtual Desktop の概要](/azure/virtual-desktop/overview)」をご覧ください。
+詳細については、「[Azure Virtual Desktop の概要](/azure/virtual-desktop/overview)」をご覧ください。
 
 > [!NOTE]
->Windows Virtual Desktop は、Microsoft 365 のサブスクリプションには含まれていません。 別の Azure サブスクリプションで使用する場合は、支払う必要があります。
+> Azure Virtual Desktop は、Microsoft 365 のサブスクリプションには含まれていません。 別の Azure サブスクリプションで使用する場合は、支払う必要があります。
 
 ## <a name="protect-your-remote-desktop-services-connections-with-the-remote-desktop-services-gateway"></a>リモートデスクトップサービスゲートウェイを使用して、リモートデスクトップサービス接続を保護する
 
@@ -124,7 +124,7 @@ P2S VPN 接続は、Azure 仮想ネットワークを介してリモート ワ�
 | リモート アクセス VPN ソリューションが導入されている | リモート アクセス VPN クライアントをスプリット トンネリング用と Microsoft 365 エンドポイントの最適化カテゴリ用に構成しました。 |
 | リモート アクセス VPN ソリューションはなく、オンプレミスの Web ベースのアプリへのリモート アクセスのみが必要です | Azure アプリケーション プロキシを構成しました。 |
 | リモート アクセス VPN ソリューションはなく、オンプレミス アプリへのアクセスが必要であり、その一部は Web ベースではありません | Azure P2S VPN を構成しました。 |
-| リモート ワーカーは自宅から個人用デバイスを使用しています | Windows Virtual Desktop を構成しました。 |
+| リモート ワーカーは自宅から個人用デバイスを使用しています | Azure Virtual Desktop を構成しました。 |
 | リモートワーカーがオンプレミスシステムへの RDS 接続を使用している | 境界ネットワークにリモートデスクトップサービスゲートウェイを展開しました。 |
 |||
 

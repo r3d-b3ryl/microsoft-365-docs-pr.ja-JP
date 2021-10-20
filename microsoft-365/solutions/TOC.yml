@@ -139,6 +139,8 @@
                   href: ../admin/add-users/remove-former-employee-step-6.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
                 - name: 手順 7. 元従業員のユーザー アカウントを削除する
                   href: ../admin/add-users/remove-former-employee-step-7.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+        - name: Microsoft 365 にコンテンツを移行する
+          href: /sharepointmigration/migrate-to-sharepoint-online?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
         - name: ファイル共有を Microsoft 365 に移行する
           items:
             - name: 概要
@@ -268,6 +270,8 @@
           href: ../compliance/insider-risk-solution-overview.md
         - name: 監査ソリューション
           href: ../compliance/auditing-solutions-overview.md
+        - name: Microsoft 365 の電子情報開示ソリューション
+          href: ../compliance/ediscovery.md
         - name: Microsoft 365 Advanced eDiscovery
           href: ../compliance/overview-ediscovery-20.md
         - name: 法令遵守アクション プラン
@@ -288,14 +292,18 @@
           href: ../security/microsoft-365-security-for-bdm.md
         - name: ID とデバイスのアクセス構成
           href: ../security/office-365-security/microsoft-365-policies-configurations.md
+        - name: Microsoft 365 Defender の評価とパイロット
+          href: ../security/defender/eval-overview.md
+        - name: 最初のインシデントに対応する
+          href: ../security/defender/first-incident-overview.md
         - name: Microsoft Defender for Endpoint を展開する
           href: /microsoft-365/security/defender-endpoint/deployment-phases.md
-        - name: Symantec から Microsoft Defender for Endpoint に移行する
-          href: ../security/defender-endpoint/symantec-to-microsoft-defender-endpoint-migration.md
-        - name: McAfee から Microsoft Defender for Endpoint に移行する
-          href: ../security/defender-endpoint/mcafee-to-microsoft-defender-migration.md
         - name: Microsoft 以外のエンドポイント保護から Microsoft Defender for Endpoint に切り替える
           href: ../security/defender-endpoint/switch-to-microsoft-defender-migration.md
+        - name: Microsoft 365 の優先アカウントのセキュリティに関する推奨事項
+          href: ../security/office-365-security/security-recommendations-for-priority-accounts.md
+        - name: 元従業員を削除してデータを保護する
+          href: /admin/add-users/remove-former-employee?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
     - name: Contoso の事例
       items:
         - name: Contoso Corporation 向けの Microsoft 365 ソリューション
