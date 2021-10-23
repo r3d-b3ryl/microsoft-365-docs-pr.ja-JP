@@ -17,12 +17,12 @@ ms.collection:
 description: 管理者が、Exchange Online Protection (EOP) で迷惑メール対策ポリシーを表示、作成、変更、削除する方法を説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 91549fcbc4c528c0aeebe107d2f97b3bb8b52d41
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ff568ffb32a6feb3ef8eba46cad1127dcead0465
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176628"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553894"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>EOP でのスパム対策ポリシーの構成
 
@@ -158,9 +158,9 @@ Microsoft 365 Defender ポータルでカスタムのスパム対策ポリシー
      |**アクションなし**|||||![チェック マーク](../../media/checkmark.png)|
      |
 
-     > <sup>1</sup> Exchange Online では、受信トレイで迷惑メール ルールが有効になっている場合、メッセージは [迷惑メール] フォルダーに移動されます (既定では有効)。詳細については、「[Exchange Online メールボックスで迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)」を参照してください。
+     > <sup>1</sup> EOP は、独自のメール フロー配信エージェントを使用して、迷惑メール ルールを使用するのではなく、メッセージを迷惑メール フォルダーにルーティングするようになりました。 **Set-MailboxJunkEmailConfiguration** コマンドレットの _Enabled_ パラメーターは、メール フローに影響を与えなくなりました。 詳細については、「[Exchange Online のメールボックスの迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)」を参照してください。
      >
-     > EOP がオンプレミスの Exchange メールボックスを保護するハイブリット環境では、オンプレミスの Exchange のメール フロー ルール (トランスポート ルールとも言う) を構成して、迷惑メール ルールによりメッセージが [迷惑メール] フォルダーに移動できるように、EOP スパム対策フィルター判定を解釈する必要があります。詳細については、「[迷惑メール フォルダーにスパムを配信するように EOP を構成する](/exchange/standalone-eop/configure-eop-spam-protection-hybrid)」を参照してください。
+     > EOP がオンプレミスの Exchange メールボックスを保護するハイブリット環境では、オンプレミスの Exchange でメール フロー ルール (トランスポート ルールとも言う) を構成する必要があります。これらのメール フロー ルールは、メールボックス内の迷惑メール ルールがメッセージを[迷惑メール] フォルダーに移動できるように、EOP スパム フィルター判定を解釈します。詳細については、「[迷惑メール フォルダーにスパムを配信するように EOP を構成する](/exchange/standalone-eop/configure-eop-spam-protection-hybrid)」を参照してください。
      >
      > <sup>2</sup> この値をメール フロー ルールの条件として、フィルターやルールに使用することができます。
      >

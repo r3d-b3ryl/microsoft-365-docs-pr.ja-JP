@@ -2,7 +2,6 @@
 title: 事前ブロックを有効にして、マルウェアを数秒で検出する
 description: 事前ブロック機能を有効にして、数秒以内にマルウェアを検出してブロックします。
 keywords: スキャン、事前ブロック、マルウェア、事前、クラウド、ディフェンダー、アンチウイルス
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -12,16 +11,16 @@ ms.author: deniseb
 ms.reviewer: marcmcc
 manager: dansimp
 ms.custom: nextgen
-ms.date: 07/29/2021
+ms.date: 10/18/2021
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: fe20298dbfbea1b81f82864beb5d2ccb66ef66d7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 53ef056a61da1dca83c1c6bdf611e37a50dc9008
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60193005"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60552838"
 ---
 # <a name="turn-on-block-at-first-sight"></a>事前ブロックを有効にする
 
@@ -199,7 +198,7 @@ Windows セキュリティ アプリを使用して、個々のクライアン�
 
 組織によって管理されていない個人用デバイスを使用している場合、事前ブロックを有効または無効にする方法を疑問に思うかもしれません。 Windows　セキュリティ　アプリを使用して、事前ブロックを管理できます。
 
-1. Windows 10 コンピューターで、Windows セキュリティ アプリを開きます。
+1. Windows 10 または Windows 11 コンピューターで、Windows セキュリティ アプリを開きます。
 
 2. **[ウイルスと脅威の防止]** を選択します。
 

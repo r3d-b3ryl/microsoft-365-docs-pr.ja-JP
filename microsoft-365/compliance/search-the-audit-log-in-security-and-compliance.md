@@ -21,12 +21,12 @@ description: Microsoft 365 コンプライアンス センターを使用して�
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 87df624f35231a43cd8d9e2d34912d2bc48a5252
-ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
+ms.openlocfilehash: 5840368c8d73bcafd486db9c3aa982fa03896b5e
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60478963"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555034"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>コンプライアンス センターで監査ログを検索する
 
@@ -544,6 +544,7 @@ FilePreviewed イベントと FileAccessed イベントの両方が、ユーザ�
 |リスト アイテムの更新|ListItemUpdated|ユーザーが 1 つ以上のプロパティを変更して SharePoint リスト アイテムを更新しました。|
 |サイト列の更新|SiteColumnUpdated|ユーザーが 1 つ以上のプロパティを変更して SharePoint サイト列を更新しました。|
 |サイト コンテンツ タイプの更新|SiteContentTypeUpdated|ユーザーが 1 つ以上のプロパティを変更してサイト コンテンツ タイプを更新しました。|
+|リスト アイテムの表示|ListItemViewed|ユーザーが SharePoint リスト アイテムを表示しました。|
 ||||
 
 ### <a name="sharing-and-access-request-activities"></a>共有アクティビティとアクセス要求アクティビティ
@@ -589,10 +590,10 @@ FilePreviewed イベントと FileAccessed イベントの両方が、ユーザ�
 |:-----|:-----|:-----|
 |コンピューターによってファイルの同期が許可されました|ManagedSyncClientAllowed|ユーザーがサイトとの同期関係を正常に確立しました。ユーザーのコンピューターは、組織のドキュメント ライブラリにアクセスできるドメインのリスト (*信頼できる宛先のリスト* と呼ばれる) に追加されているドメインのメンバーであるため、同期関係は正常に確立されています。<br/><br/> この機能の詳細については、「[Windows PowerShell コマンドレットを使用して宛先セーフ リスト上のドメインに対して OneDrive 同期を有効にする](/powershell/module/sharepoint-online/)」を参照してください。|
 |コンピューターに対するファイル同期のブロック|UnmanagedSyncClientBlocked|ユーザーが、組織のドメインのメンバーではないか、組織のドキュメント ライブラリにアクセスできるドメインのリスト (*信頼できる宛先のリスト* と呼ばれる) に追加されていないドメインのメンバーであるコンピューターから、サイトとの同期関係を確立しようとしました。同期関係は許可されず、ユーザーのコンピューターは、ドキュメント ライブラリのファイルの同期、ダウンロード、またはアップロードを行うことができません。 <br/><br/> この機能については、「[Windows PowerShell コマンドレットを使用して宛先セーフ リスト上のドメインに対して OneDrive 同期を有効にする](/powershell/module/sharepoint-online/)」を参照してください。|
-|コンピューターへのファイルのダウンロード|FileSyncDownloadedFull|ユーザーが同期関係を確立して、ドキュメント ライブラリからコンピューターに初めてファイルを正常にダウンロードしました。|
-|コンピューターへのファイル変更のダウンロード|FileSyncDownloadedPartial|ユーザーがドキュメント ライブラリのファイルへの変更を正常にダウンロードしました。このアクティビティは、ドキュメント ライブラリ内のファイルに加えられた変更がユーザーのコンピューターにダウンロードされたことを示します。ドキュメント ライブラリは、(**ファイルがコンピューターにダウンロードされました** というアクティビティに示されているように) 以前にユーザーによってダウンロードされているため、変更のみがダウンロードされました。|
-|ファイルがドキュメント ライブラリにアップロードされました|FileSyncUploadedFull|ユーザーが同期関係を確立して、コンピューターからドキュメント ライブラリに初めてファイルを正常にアップロードしました。|
-|ドキュメント ライブラリへのファイル変更のアップロード|FileSyncUploadedPartial|ユーザーがドキュメント ライブラリのファイルに変更を正常にアップロードしました。このイベントは、ドキュメント ライブラリのファイルのローカル バージョンに加えた変更が、ドキュメント ライブラリに正常にアップロードされたことを示します。それらのファイルは、(**ドキュメント ライブラリへのファイルのアップロード** アクティビティで示されているように) 以前にユーザーによってアップロードされているため、変更のみがアップロードされます。|
+|コンピューターへのファイルのダウンロード|FileSyncDownloadedFull|ユーザーは、OneDrive 同期アプリ (OneDrive.exe) を使用して、SharePoint ドキュメント ライブラリまたは OneDrive for Business からコンピューターにファイルをダウンロードします。|
+|コンピューターへのファイル変更のダウンロード|FileSyncDownloadedPartial|このイベントは、古い OneDrive for Business 同期アプリ (Groove.exe) とともに非推奨になりました。|
+|ファイルがドキュメント ライブラリにアップロードされました|FileSyncUploadedFull|ユーザーは、OneDrive 同期アプリ (OneDrive.exe) を使用して、SharePoint ドキュメント ライブラリまたは OneDrive for Business に新しいファイルまたはファイルへの変更をアップロードします。|
+|ドキュメント ライブラリへのファイル変更のアップロード|FileSyncUploadedPartial|このイベントは、古い OneDrive for Business 同期アプリ (Groove.exe) とともに非推奨になりました。|
 ||||
 
 ### <a name="site-permissions-activities"></a>サイトの権限のアクティビティ

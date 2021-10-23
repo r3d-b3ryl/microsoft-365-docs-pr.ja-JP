@@ -122,22 +122,6 @@
 ##### [リソース](mac-resources.md)
 ##### [アプリケーション ライセンス条項](mde-terms-mac.md)
 
-#### [iOS 用 Microsoft Defender for Endpoint API]()
-##### [iOS 用 Microsoft Defender for Endpoint の概要](microsoft-defender-endpoint-ios.md)
-##### [新機能](ios-whatsnew.md)
-
-##### [展開]()
-###### [Intune を介した iOS 用 Microsoft Defender for Endpoint の展開](ios-install.md)
-###### [未登録のデバイスに対する iOS 用 Microsoft Defender for Endpoint の展開](ios-install-unmanaged.md)
-
-##### [構成]()
-###### [iOS 機能の構成](ios-configure-features.md)
-
-##### [FAQ およびトラブルシューティング](ios-troubleshoot.md)
-
-##### [プライバシー](ios-privacy.md)
-
-
 #### [Linux 用 Microsoft Defender for Endpoint]()
 ##### [Linux 用 Microsoft Defender for Endpoint の概要](microsoft-defender-endpoint-linux.md)
 ##### [新機能](linux-whatsnew.md)
@@ -169,21 +153,38 @@
 ##### [プライバシー](linux-privacy.md)
 ##### [リソース](linux-resources.md)
 
-#### [Android 用 Microsoft Defender for Endpoint]()
-##### [Android 用 Microsoft Defender for Endpoint の概要](microsoft-defender-endpoint-android.md)
+#### [モバイル脅威防御]()
+##### [モバイル脅威防御の概要](mtd.md)
 
-##### [展開]()
-###### [Microsoft Intune を使用した Android 用 Microsoft Defender for Endpoint の展開](android-intune.md)
+##### [Android 用 Microsoft Defender for Endpoint]()
+###### [Android 用 Microsoft Defender for Endpoint の概要](microsoft-defender-endpoint-android.md)
 
-##### [構成]()
-###### [Android 機能用に Microsoft Defender for Endpoint を構成する](android-configure.md)
-###### [アプリ保護ポリシーを使用して、Microsoft Defender for Endpoint リスク シグナルを構成する](android-configure-mam.md)
+###### [展開]()
+####### [Microsoft Intune を使用した Android 用 Microsoft Defender for Endpoint の展開](android-intune.md)
 
-##### [プライバシー]()
-###### [Android 用 Microsoft Defender for Endpoint - プライバシー情報](android-privacy.md)
+###### [構成]()
+####### [Android 機能用に Microsoft Defender for Endpoint を構成する](android-configure.md)
+####### [アプリ保護ポリシーを使用して、Microsoft Defender for Endpoint リスク シグナルを構成する](android-configure-mam.md)
 
-##### [トラブルシューティング]()
-###### [問題のトラブルシューティング](android-support-signin.md)
+###### [プライバシー]()
+####### [Android 用 Microsoft Defender for Endpoint - プライバシー情報](android-privacy.md)
+
+###### [トラブルシューティング]()
+####### [問題のトラブルシューティング](android-support-signin.md)
+
+##### [iOS 用 Microsoft Defender for Endpoint API]()
+###### [iOS 用 Microsoft Defender for Endpoint の概要](microsoft-defender-endpoint-ios.md)
+###### [新機能](ios-whatsnew.md)
+
+###### [展開]()
+####### [Intune を介した iOS 用 Microsoft Defender for Endpoint の展開](ios-install.md)
+####### [未登録のデバイスに対する iOS 用 Microsoft Defender for Endpoint の展開](ios-install-unmanaged.md)
+
+###### [iOS 機能の構成](ios-configure-features.md)
+
+###### [FAQ およびトラブルシューティング](ios-troubleshoot.md)
+
+###### [プライバシー](ios-privacy.md)
 
 ##### [Microsoft Defender for Endpoint アプリケーション ライセンス条項](mde-terms-mobile.md) 
 
