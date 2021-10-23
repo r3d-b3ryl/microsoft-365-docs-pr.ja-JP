@@ -2,7 +2,6 @@
 title: Microsoft Defender ウイルス対策で望ましくない可能性のあるアプリケーションをブロックする
 description: 望ましくない可能性のあるアプリケーション (PUA) のウイルス対策機能を有効にして、アドウェアなどの不要なソフトウェアをブロックします。
 keywords: PUA、有効化、不要なソフトウェア、不要なアプリ、アドウェア、ブラウザー ツール バー、検出、ブロック、Microsoft Defender ウイルス対策
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: detect
 ms.sitesec: library
@@ -15,14 +14,14 @@ ms.reviewer: mimilone, julih
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 06/02/2021
+ms.date: 10/18/2021
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 3202ccd469cf27d188a48bcbd09224f573134344
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: de5b108c3e7a3fbd0831f4bb02385611a1c6ae3c
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60166542"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555886"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>望ましくない可能性のあるアプリケーションを検出してブロックする
 
@@ -42,7 +41,7 @@ ms.locfileid: "60166542"
 > [!TIP]
 > セキュリティ機能から特別な注意を払うアプリケーションにラベルを付けるために使用するその他の例と基準の説明については、「[Microsoft がマルウェアと望ましくない可能性のあるアプリケーションを識別する方法](/windows/security/threat-protection/intelligence/criteria)」を参照してください。
 
-望ましくない可能性のあるアプリケーションは、ネットワークが実際のマルウェアに感染するリスクを高めたり、マルウェア感染の特定を困難にしたり、IT リソースを浪費してそれらをクリーンアップしたりする可能性があります。 PUA 保護は、Windows 10、Windows Server 2019、Windows Server 2022 および Windows Server 2016 でサポートされています。 Windows 10 (バージョン 2004 以降) では、Microsoft Defender ウイルス対策は、既定で Enterprise (E5) デバイスの PUA と見なされるアプリをブロックします。
+望ましくない可能性のあるアプリケーションは、ネットワークが実際のマルウェアに感染するリスクを高めたり、マルウェア感染の特定を困難にしたり、IT リソースを浪費してそれらをクリーンアップしたりする可能性があります。 PUA 保護は、Windows 10、Windows 11、Windows Server 2019、Windows Server 2022 および Windows Server 2016 でサポートされています。 Windows 10 (バージョン 2004 以降) では、Microsoft Defender ウイルス対策は、既定で Enterprise (E5) デバイスの PUA と見なされるアプリをブロックします。
 
 ## <a name="microsoft-edge"></a>Microsoft Edge
 
@@ -74,7 +73,7 @@ Microsoft Defender for Endpoint には、Microsoft が管理するデータ セ�
 Microsoft Defender ウイルス対策の望ましくない可能性のあるアプリケーション (PUA) 保護機能は、ネットワーク内のエンドポイント上の PUA を検出してブロックできます。
 
 > [!NOTE]
-> この機能は、Windows 10、Windows Server 2019、Windows Server 2022 および Windows Server 2016 で使用できます。
+> この機能は、Windows 10、Windows 11、Windows Server 2019、Windows Server 2022 および Windows Server 2016 で使用できます。
 
 Windows Defender ウイルス対策は、検出された PUA ファイルと、それらのダウンロード、移動、実行、またはインストールの試行をブロックします。 ブロックされた PUA ファイルは、検疫に移動されます。 エンドポイントで PUA ファイルが検出されると、Microsoft Defender ウイルス対策は、他の脅威の検出と同じ形式でユーザーに通知を送信します ([通知が無効になっていない場合](configure-notifications-microsoft-defender-antivirus.md))。 通知の前には、その内容を示す `PUA:` が付いています。
 

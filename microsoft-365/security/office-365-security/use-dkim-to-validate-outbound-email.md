@@ -20,12 +20,12 @@ ms.custom:
 description: Microsoft 365 で DomainKeys Identified Mail (DKIM) を使用して、カスタム ドメインから送信されたメッセージが送信先のメール システムから信頼されるようにする方法を説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4a3c08ad2492437ec5b489e8bc8915ef4a402ba9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1906d9bbb7e36c95ed74c7eea2b66d3afb70e5a3
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196311"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555526"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>DKIM を使用して、カスタム ドメインから送信される送信電子メールを検証する
 
@@ -393,7 +393,17 @@ Return-Path: <communication@bulkemailprovider.com>
 ## <a name="next-steps-after-you-set-up-dkim-for-microsoft-365"></a>次の手順: Microsoft 365 に SPF をセットアップした後
 <a name="DKIMNextSteps"> </a>
 
-DKIM はスプーフィングを防止するように設計されていますが、SPF と DMARC を併用すると DKIM はより適切に機能します。DKIM をセットアップした後、まだ SPF を構成していなければ、SPF を構成する必要があります。SPF の概要と簡単な構成方法を確認するには、「[**Microsoft 365 で SPF を設定して、スプーフィングを防止する**](set-up-spf-in-office-365-to-help-prevent-spoofing.md)」を参照してください。Office 365 における SPF の使用方法についての詳細や、ハイブリッド展開などの非標準の展開のトラブルシューティングについて確認する場合は、「[Microsoft 365 で Sender Policy Framework (SPF) を使用してスプーフィングを防止する](how-office-365-uses-spf-to-prevent-spoofing.md)」から読み進めてください。次は、「[**DMARC を使用してメールを検証する**](use-dmarc-to-validate-email.md)」を参照してください。「[迷惑メール対策メッセージ ヘッダー](anti-spam-message-headers.md)」には、Office 365 が DKIM チェックに使用する構文とヘッダー フィールドが含まれています。
+**DKIM はスプーフィングを防止するように設計されていますが、SPF と DMARC を併用すると DKIM はより有効に機能します。**
+
+DKIM を設定したら、SPF をまだ設定していない場合は、設定する必要があります。SPF の簡単な概要と構成をすばやく行う方法については、「[**Microsoft 365 で SPF を設定して、スプーフィングを防止する**](set-up-spf-in-office-365-to-help-prevent-spoofing.md)」を参照してください。Microsoft 365 における SPF の使用方法についての詳細や、ハイブリッド展開などの非標準の展開のトラブルシューティングについて確認する場合は、「[Microsoft 365 において Sender Policy Framework (SPF) を使用して、スプーフィングを防止する方法](how-office-365-uses-spf-to-prevent-spoofing.md)」からお読みください。 
+
+次は、「[**DMARC を使用してメールを検証する**](use-dmarc-to-validate-email.md)」を参照してください。 [スパム対策メッセージ ヘッダー](anti-spam-message-headers.md)には、Microsoft 365 が DKIM チェックに使用する構文とヘッダー フィールドが含まれています。
+
+**このテストで検証するのは**、DKIM 署名構成が正しく構成されていること、適切な DNS エントリが公開されていることです。
+
+<div class="nextstepaction">
+<p><a href="https://aka.ms/diagdkim" data-linktype="external">テストを実行する: DKIM</a></p>
+</div>
 
 ## <a name="more-information"></a>詳細情報
 
