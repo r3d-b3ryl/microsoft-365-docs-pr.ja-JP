@@ -4,6 +4,8 @@
   items:
     - name: Microsoft Viva ラーニング (プレビュー) の概要
       href: overview-viva-learning.md
+    - name: 使用条件を理解する
+      href: terms-and-conditions.md
 - name: セットアップと管理
   items:
     - name: Microsoft Teams 管理センターでセットアップする
