@@ -45,7 +45,7 @@
 > - [中央アフリカ共和国](../support/central-african-republic.md)
 > - [チャド](../support/chad.md)
 > - [チリ](../support/chile.md)
-> - [中華人民共和国](../support/china-prc.md)
+> - [中国](../support/china-prc.md)
 > - [クリスマス島](../support/christmas-island.md)
 > - [ココス (キーリング) 諸島](../support/cocos-keeling-islands.md)
 > - [コロンビア](../support/colombia.md)
