@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: '[レポート] ダッシュボードの [レポート] ダッシュボードを使用して Microsoft Forms アクティビティ Microsoft 365を取得する方法Microsoft 365 管理センター。'
-ms.openlocfilehash: a325cef93eb7ae72127845c778b7fb50726ec771
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b5f654acddf679f0040f0e15a6146f74044a7e45
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60156020"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553318"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>Microsoft 365管理センターのレポート - フォーム アクティビティ
 
@@ -33,9 +33,6 @@ Microsoft 365 の [**レポート**] ダッシュボードには、組織内で�
   
 たとえば、フォームとのやり取りを見て、Microsoft フォームを使用するライセンスを持つすべてのユーザーのアクティビティを理解できます。 また、ユーザーが回答したフォームとフォームの数を確認することで、共同作業のレベルを理解するのにも役立ちます。
   
-> [!NOTE]
-> レポートを表示するには、Microsoft 365 のグローバル管理者、グローバル閲覧者、レポート閲覧者、または Exchange、SharePoint、Skype for Business の管理者である必要があります。  
- 
 ## <a name="how-to-get-to-the-forms-activity-report"></a>フォーム アクティビティ レポートにアクセスする方法
 
 1. 管理センターで、[**レポート**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用状況</a>] ページの順に移動します。 
@@ -48,6 +45,8 @@ Microsoft 365 の [**レポート**] ダッシュボードには、組織内で�
 [列 **の選択]** を選択して、レポートの列を追加または削除します。  <br/> ![フォーム アクティビティ レポート - 列を選択します。](../../media/0c9b0b69-5dc7-43ea-8e2c-54407b6ce2ab.png)
 
 また、[**エクスポート**] リンクを選択して、レポート データを Excel の .csv ファイルにエクスポートすることもできます。 これにより、すべてのユーザーのデータがエクスポートされ、単純な並べ替えとフィルター処理を行ってさらに分析することができます。 ユーザー数が 2000 未満である場合は、レポート自体のテーブル内で並べ替えとフィルター処理を行うことができます。 ユーザー数が 2000 を超える場合は、フィルター処理と並べ替えを行うために、データをエクスポートする必要があります。 
+
+フォーム **アクティビティ レポート** は、過去 7 日間、30 日間、90 日、または 180 日間の傾向を確認できます。 ただし、レポートで特定の日を選択すると、現在の日付から最大 28 日間のデータが表示されます (レポートが生成された日付ではありません)。
   
 |アイテム|説明|
 |:-----|:-----|

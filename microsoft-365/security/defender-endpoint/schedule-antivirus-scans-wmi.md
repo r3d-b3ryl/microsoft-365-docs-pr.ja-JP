@@ -2,7 +2,6 @@
 title: 管理インストルメンテーションを使用してWindowsスキャンをスケジュールする
 description: WMI を使用してウイルス対策スキャンをスケジュールする
 keywords: クイック スキャン、フル スキャン、WMI、スケジュール、ウイルス対策
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,18 +10,18 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 06/09/2021
+ms.date: 10/18/2021
 ms.reviewer: pauhijbr, ksarens
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 31c17cf191565cdae48702568c95599183e7ddf3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 507bcd55dc04c86d98550da19f78486e64abf556
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199623"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555514"
 ---
 # <a name="schedule-antivirus-scans-using-windows-management-instrumentation-wmi"></a>Windows Management Instrumentation (WMI) を使用してウイルス対策スキャンをスケジュールする
 

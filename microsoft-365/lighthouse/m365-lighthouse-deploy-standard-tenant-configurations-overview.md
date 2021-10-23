@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 管理サービス プロバイダー (MSP) の場合は、Microsoft 365 Lighthouseを使用して標準的なテナント構成を展開する方法について説明します。
-ms.openlocfilehash: 793a8f61634660487dc9256d23f0f7d83ff68983
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2818b0e611bad7ae8895a1f44dcf557cb293aba8
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60177041"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554950"
 ---
 # <a name="overview-of-using-baselines-to-deploy-standard-tenant-configurations"></a>基準計画を使用した標準テナント構成の展開の概要 
 
@@ -45,9 +45,9 @@ Microsoft 365 Lighthouse基準は、複数の顧客テナント間でセキュ�
 | 管理者に MFA を要求する | 管理者に多要素認証を必要とするレポート専用の条件付きアクセス ポリシー。 すべてのクラウド アプリケーションに必要です。 |
 | エンド ユーザーに MFA を要求する | ユーザーに多要素認証を必要とするレポート専用の条件付きアクセス ポリシー。 すべてのクラウド アプリケーションに必要です。 |
 | 従来の認証をブロックする | レガシ クライアント認証をブロックするレポート専用の条件付きアクセス ポリシー。 |
-| デバイスをデバイスに登録Microsoft エンドポイント マネージャー – Azure AD参加 | テナント デバイスがデバイスに登録できるデバイスMicrosoft エンドポイント マネージャー。 これは、ユーザーとユーザーの間で自動登録Azure Active Directory設定Microsoft エンドポイント マネージャー。 |
-| ウイルス対策 (AV) ポリシーの構成 | 構成済みのデバイスWindowsデバイスのデバイス構成プロファイルMicrosoft Defender ウイルス対策します。 |
-| ウィンドウ 10 コンプライアンス ポリシーのセットアップ | 基本的Windows要件を満たす、事前に構成された設定を持つデバイス ポリシーです。 |
+| デバイスの登録を設定する | テナント デバイスがデバイスに登録できるデバイスMicrosoft エンドポイント マネージャー。 これは、ユーザーとユーザーの間で自動登録Azure Active Directory設定Microsoft エンドポイント マネージャー。 |
+| デバイスMicrosoft Defender ウイルス対策以降のWindows 10構成する | 構成済みのデバイスWindowsデバイスのデバイス構成プロファイルMicrosoft Defender ウイルス対策します。 |
+| デバイス コンプライアンス ポリシーの構成 (Windows 10以降) | 基本的Windows要件を満たす、事前に構成された設定を持つデバイス ポリシーです。 |
 
 ## <a name="related-content"></a>関連コンテンツ
 

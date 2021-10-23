@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Microsoft Defender for Office 365 E5 P1 および P2 のお客様は、電子メール エンティティ ページを使用して各メールの 360 度のビューを取得できます。
-ms.openlocfilehash: cf63609bf978dd205796d54432e143edbb6c6b87
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b6f4df0dcd8f12b7a2d8475954583573616a6fd9
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174281"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554770"
 ---
 # <a name="the-email-entity-page"></a>メール エンティティ ページ
 
@@ -114,10 +114,6 @@ microsoft Defender for Office 365 E5 および Office P1 と P2 の Defender の
 - Exchange ルール (メール フロー ルールまたは *ETRs とも* 呼ばれる) : これらのルールは、トランスポート層のメッセージに適用され、フィッシングおよびスパムの評決よりも優先されます。 これらは、Exchange 管理センターでのみ作成および変更できますが、ETR がメッセージに適用される場合は、ETR 名と GUID がここに表示されます。 追跡の目的で有用な情報。
 
 - *System Overrides*: これは、システムによって指定された配信場所 (脅威と検出技術による) を上書きして、メッセージを対象とした配信場所に対して例外を作成する手段です。
-
-- *迷惑メールボックス ルール*: 'Junk' は、すべてのメールボックスで既定で有効になっている非表示の受信トレイ ルールです。
-  - メールボックスで迷惑メール ルールが有効になっている場合、Exchange Online Protection (EOP) は、いくつかの条件に従って迷惑メールにメッセージを移動できます。 この移動は、スパム フィルターの評決アクション [メッセージを迷惑メール フォルダーに移動する] またはメールボックスの [送信者のブロック] リストに基づいて行います。 迷惑メール ルールを無効にすると、メールボックスの [送信者] リストに基づいて迷惑 *メール フォルダー* セーフメッセージが配信されません。
-  - メールボックスで迷惑メール ルールが無効になっている場合、EOP はスパム フィルターの評決アクション [迷惑メール フォルダーにメッセージを移動する] またはメールボックスのセーフ リスト コレクションに基づいてメッセージを迷惑メール フォルダーに移動できません。
 
 - *バルク 苦情レベル (BCL)*: メッセージの一括苦情レベル (BCL)。 BCL が高いほど、バルク メール メッセージが苦情を生成する可能性が高くなります (電子メールがスパムである可能性が高い場合、自然な結果)。
 

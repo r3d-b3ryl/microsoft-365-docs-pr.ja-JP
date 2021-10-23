@@ -2,7 +2,6 @@
 title: クラウド ブロックのMicrosoft Defender ウイルス対策期間を構成する
 description: クラウドの決定を待機Microsoft Defender ウイルス対策ファイルの実行をブロックする期間を構成できます。
 keywords: Microsoft Defender ウイルス対策、マルウェア対策、セキュリティ、ディフェンダー、クラウド、タイムアウト、ブロック、期間、秒
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,14 +14,14 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 06/04/2021
+ms.date: 10/18/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 104f385a48def9a62d668f6ef6c3f79a37fd5335
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b00c631a3eeaddb4fa66fe6d58fd40418b188bec
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207057"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60552730"
 ---
 # <a name="configure-the-cloud-block-timeout-period"></a>クラウド ブロックのタイムアウト期間の構成
 

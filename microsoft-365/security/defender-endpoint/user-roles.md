@@ -14,18 +14,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 34b9327debf5adc207e29b482ea1f33939d0d977
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1591862a759b4d1df17d100e80185479c38d868c
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207729"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554506"
 ---
 # <a name="create-and-manage-roles-for-role-based-access-control"></a>役割ベースのアクセス制御の役割を作成および管理する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
+
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -45,9 +46,9 @@ ms.locfileid: "60207729"
 
 4. 役割に割り当てる役割名、説明、およびアクセス許可を入力します。
 
-5. [ **次へ]** を選択して、役割を Azure セキュリティ AD割り当てる。
+5. [**次へ]** を選択して、役割をセキュリティ グループAzure AD割り当てる。
 
-6. このロールに追加する Azure ADグループをフィルターを使用して選択します。
+6. フィルターを使用して、このAzure AD追加するグループを選択します。
 
 7. **保存して閉じます**。
 

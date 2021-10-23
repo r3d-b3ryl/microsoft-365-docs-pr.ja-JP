@@ -2,7 +2,6 @@
 title: Windows Server 上の Microsoft Defender ウイルス対策
 description: サーバー 2019、Microsoft Defender ウイルス対策サーバー 2019、Windows Server 2016 Windowsサーバー 2022 Windows構成する方法について学習します。
 keywords: Windows Defender、サーバー、scep、System Center Endpoint 保護、Server 2016、Current Branch、Server 2012
-search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -16,12 +15,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9e92096ab6b1b291094781fed9ee994ca1fd7358
-ms.sourcegitcommit: 3260d47a29c35e90ed7b1d14d400b39baa741873
+ms.openlocfilehash: a6af3ff71cf6f64fbc548ceb3b333cdf135c70dc
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60462227"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554554"
 ---
 # <a name="microsoft-defender-antivirus-on-windows-server"></a>Windows Server 上の Microsoft Defender ウイルス対策
 
@@ -39,7 +38,7 @@ Microsoft Defender ウイルス対策サーバーの次のエディション/バ
 - Windows Server 2016
 - Windows Server 2012R2 (エンドポイントに Microsoft Defender が必要)
 
-場合によっては、Microsoft Defender ウイルス対策は *Endpoint Protection* と呼ばることもありますが、保護エンジンは同じです。 機能、構成、および管理は、[Windows 10 の Microsoft Defender ウイルス対策](microsoft-defender-antivirus-windows.md) とほとんど同じですが、Windows Server には一部の重要な違いがあります。
+場合によっては、Microsoft Defender ウイルス対策は *Endpoint Protection* と呼ばることもありますが、保護エンジンは同じです。 Windows 10 および Windows 11 の Microsoft Defender ウイルス対策 の機能、構成、および管理は大きく同じですが[、Windows](microsoft-defender-antivirus-windows.md) Server にはいくつかの主な違いがあります。
 
 - Windows Server では、[自動除外](configure-server-exclusions-microsoft-defender-antivirus.md) が定義によるサーバー ロールに基づいて適用されます。
 

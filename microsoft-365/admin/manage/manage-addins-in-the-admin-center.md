@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 集中型アドインを使用して組織内のユーザーとグループにアドインを展開する方法について学習します。
-ms.openlocfilehash: 942cd3b942cc8aa3b51b1eddf40ad238341ea036
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d619438a8fdf2eb0da2a5b2f55b43bb064d3cea4
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60168196"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60552742"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>管理センターでアドインを管理する
 
@@ -54,26 +54,23 @@ Officeアドインを使用すると、ドキュメントをカスタマイズ�
 
 展開されたアドインを削除できます。
 
-1. 管理センターで、[サービス] ページ  >  **設定[&] ページに移動** します。
+1. 管理センターで、[統合アプリ] ページ **設定**  >  **移動** します。
 
-    > [!NOTE]
-    > 統合アプリを使用して管理センターにアドイン [を展開することもできます](test-and-deploy-microsoft-365-apps.md)。 統合アプリは、グローバル管理者および管理者Exchange表示されます。 上記の手順が表示できない場合は、[統合アプリ] に移動して、[集中展開]**セクション設定**  >  **移動します**。 [統合アプリ] ページ **の上部** で、[アドイン] **を選択します**。
+2. 展開されたアドインを選択し、[構成] タブ **を選択** します。
 
-2. 展開されたアドインを選択します。
+3. [構成 **] ウィンドウ** で、[詳細設定]**設定**  >  **に移動します**。
 
-3. [アドインの **削除] をクリックします**。 右下隅にある [アドイン] ボタンを削除します。
+4. リストからアドインを再度選択します。
 
-4. 選択内容を確認し、[**アドインの削除]** を選びます。
+5. [ **アドインの削除] を選択します**。 右下隅にある [アドイン] ボタンを削除します。
+
+6. 選択内容を検証し、[削除] を **選択します**。
 
 ## <a name="edit-add-in-access"></a>アドインのアクセスを編集する
 
 展開後、管理者はアドインへのユーザー アクセスを管理できます。
 
-1. 管理センターで、[サービス] ページ  >  **設定[&] ページに移動** します。
-
-    > [!NOTE]
-    > 統合アプリを使用して管理センターにアドイン [を展開することもできます](test-and-deploy-microsoft-365-apps.md)。 統合アプリは、グローバル管理者および管理者Exchange表示されます。 上記の手順が表示できない場合は、[統合アプリ] に移動して、[集中展開]**セクション設定**  >  **移動します**。 [統合アプリ] ページ **の上部** で、[アドイン] **を選択します**。
-
+1. 管理センターで、[統合アプリ] ページ **設定**  >  **移動** します。
 
 2. 展開されたアドインを選択します。
 
@@ -90,15 +87,11 @@ Officeアドインを使用すると、ドキュメントをカスタマイズ�
   
 **アドインの取得をオフにする**
   
-1. 管理センターで、 [**設定**] \> [[サービス&amp;アドイン](https://go.microsoft.com/fwlink/p/?linkid=2053743)] ページの順に移動します。
+1. 管理センターで、**[設定]** \> [[組織の設定]](https://go.microsoft.com/fwlink/p/?linkid=2053743) のページの順に移動します。
 
-    > [!NOTE]
-    > 統合アプリを使用して管理センターにアドイン [を展開することもできます](test-and-deploy-microsoft-365-apps.md)。 統合アプリは、グローバル管理者および管理者Exchange表示されます。 上記の手順が表示できない場合は、[統合アプリ] に移動して、[集中展開]**セクション設定**  >  **移動します**。 [統合アプリ] ページ **の上部** で、[アドイン] **を選択します**。
-
+2. **[ユーザー所有のアプリとサービス]** を選びます。
     
-3. **[ユーザー所有のアプリとサービス]** を選びます。
-    
-4. ユーザーが Office ストアにアクセスできるようにするオプションをオフにします。
+3. ユーザーが Office ストアにアクセスできるようにするオプションをオフにします。
 
     これにより、すべてのユーザーがストアから次のアドインを取得できます。
       
@@ -106,7 +99,7 @@ Officeアドインを使用すると、ドキュメントをカスタマイズ�
         
       - Windows
       - Mac
-      - Office
+      - 事業所
         
         
     - AppSource 内から **始まる取得**
@@ -165,8 +158,5 @@ Officeアドインを使用すると、ドキュメントをカスタマイズ�
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[管理センターにアドインを展開](./manage-deployment-of-add-ins.md) する (記事)\
-アドインの作成と構築Office[詳細](/office/dev/add-ins/overview/office-add-ins)(記事)\
-[集中展開 PowerShell コマンドレットを使用してアドイン](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) を管理する (記事)\
-[トラブルシューティング: アドインが表示されないユーザー](/office365/troubleshoot/access-management/user-not-seeing-add-ins) (記事)\
-[未成年者とアドインの](./minors-and-acquiring-addins-from-the-store.md)取得 (Microsoft Store)
+[未成年者とアドインをユーザーから取得Microsoft Store](./minors-and-acquiring-addins-from-the-store.md)
+

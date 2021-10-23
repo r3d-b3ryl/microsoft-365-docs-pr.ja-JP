@@ -2,8 +2,6 @@
 title: Microsoft Defender for Endpoint Client Analyzer ツールに関するフィードバックを提供する
 description: Microsoft Defender for Endpoint クライアント アナライザー ツールに関するフィードバックを提供する
 keywords: センサー、センサーの正常性、構成ミス、非アクティブ、センサー データなし、センサー データ、通信障害、通信障害
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -20,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: d0638b6d76c4d2675c98dca1bd28e3b9f26a32fc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 957bf2479a4c9d49532b072a3c18d73b9b5e6966
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179399"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554986"
 ---
 # <a name="provide-feedback-on-the-microsoft-defender-for-endpoint-client-analyzer-tool"></a>Microsoft Defender for Endpoint クライアント アナライザー ツールに関するフィードバックを提供する
 

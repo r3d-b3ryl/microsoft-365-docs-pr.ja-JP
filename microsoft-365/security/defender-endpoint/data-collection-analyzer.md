@@ -2,8 +2,6 @@
 title: Windows で高度なトラブルシューティングを行うためのデータ収集
 description: 複雑なトラブルシューティング シナリオでクライアント アナライザーを使用してデータを収集する方法について説明します。
 keywords: analzyer,データ収集,mdeclientanalyzerのトラブルシューティング,高度なトラブルシューティング
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -20,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 7fa72bc6e96199fb7773e4df385e3527ac14938e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 469e1cd227e83facb678c85bd123f4ea250cd08c
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191020"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555910"
 ---
 # <a name="data-collection-for-advanced-troubleshooting-on-windows"></a>Windows で高度なトラブルシューティングを行うためのデータ収集
 

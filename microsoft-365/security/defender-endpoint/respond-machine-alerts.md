@@ -2,7 +2,6 @@
 title: Microsoft Defender for Endpoint のデバイスで応答アクションを実行する
 description: デバイスの分離、調査パッケージの収集、タグの管理、av スキャンの実行、アプリの実行の制限など、デバイスで応答アクションを実行します。
 keywords: 応答、分離、デバイスの分離、調査パッケージの収集、アクション センター、制限、タグの管理、av スキャン、アプリの制限
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4175fa0131870c3ae661727b23d4358dd05b722d
-ms.sourcegitcommit: 1e990628d72b6d392500ea564859543e7c8bc632
+ms.openlocfilehash: b21090c28fd240e349ec22b078843cf980f3325c
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60386232"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555010"
 ---
 # <a name="take-response-actions-on-a-device"></a>デバイスの対応措置を講じる
 
@@ -87,7 +86,7 @@ ms.locfileid: "60386232"
 
 > [!IMPORTANT]
 >
-> - これらの応答アクションは、バージョン 1703 以降Windows 10デバイスでのみ使用できます。
+>これらのアクションは現在、macOS および Linux ではサポートされていません。 ライブ応答を使用してアクションを実行します。 ライブ応答の詳細については、「ライブ応答を使用してデバイス [上のエンティティを調査する」を参照してください。](live-response.md)
 
 パッケージ (Zip ファイル) をダウンロードし、デバイスで発生したイベントを調査するには
 
@@ -115,7 +114,7 @@ ms.locfileid: "60386232"
 |---|---|
 |自動実行|デバイス上での攻撃者の永続性を識別するために、既知の自動開始エントリ ポイント (ASEP) のレジストリの内容を表す一連のファイルが格納されています。 <p> <div class="alert"><b>注:</b> レジストリ キーが見つからない場合、ファイルには次のメッセージが含まれます。"ERROR: システムは、指定されたレジストリ キーまたは値を見つかりませんでした。<div>|
 |インストールされているプログラム|この.CSVファイルには、デバイスに現在インストールされているプログラムを特定するのに役立つインストール済みプログラムの一覧が含まれている。 詳細については、「Win32_Product [クラス」を参照してください](https://go.microsoft.com/fwlink/?linkid=841509)。|
-|ネットワーク接続|このフォルダーには、疑わしい URL への接続、攻撃者のコマンドと制御 (C&C) インフラストラクチャ、任意の横方向の移動、またはリモート接続への接続を識別するのに役立つ接続情報に関連する一連のデータ ポイントが格納されています。 <ul><li>ActiveNetConnections.txt: プロトコル統計と現在の TCP/IP ネットワーク接続を表示します。 プロセスによって行われた疑わしい接続を探す機能を提供します。</li><li>Arp.txt: すべてのインターフェイスの現在のアドレス解決プロトコル (ARP) キャッシュ テーブルを表示します。 ARP キャッシュでは、ネットワーク上の他のホストが、内部攻撃の実行に使用された可能性があるネットワーク上の侵害または疑わしいシステムを明らかにできます。</il><li>DnsCache.txt: ローカル Hosts ファイルから事前に読み込まれるエントリと、コンピューターによって解決された名前クエリの最近取得したリソース レコードの両方を含む、DNS クライアント リゾルバー キャッシュの内容を表示します。 これは、疑わしい接続を識別するのに役立ちます。</li><li>IpConfig.txt: すべてのアダプターの TCP/IP 構成全体を表示します。 アダプターは、インストールされているネットワーク アダプターなどの物理インターフェイス、またはダイヤルアップ接続などの論理インターフェイスを表します。</li><li>FirewallExecutionLog.txt pfirewall.log</li></ul>|
+|ネットワーク接続|このフォルダーには、疑わしい URL への接続、攻撃者のコマンドと制御 (C&C) インフラストラクチャ、任意の横方向の移動、またはリモート接続への接続を識別するのに役立つ接続情報に関連する一連のデータ ポイントが格納されています。 <ul><li>ActiveNetConnections.txt: プロトコル統計と現在の TCP/IP ネットワーク接続を表示します。 プロセスによって行われた疑わしい接続を探す機能を提供します。</li><li>Arp.txt: すべてのインターフェイスの現在のアドレス解決プロトコル (ARP) キャッシュ テーブルを表示します。 ARP キャッシュでは、ネットワーク上の他のホストが、内部攻撃の実行に使用された可能性があるネットワーク上の侵害または疑わしいシステムを明らかにできます。</il><li>DnsCache.txt: ローカル Hosts ファイルから事前に読み込まれるエントリと、コンピューターによって解決された名前クエリの最近取得したリソース レコードの両方を含む、DNS クライアント リゾルバー キャッシュの内容を表示します。 これは、疑わしい接続を識別するのに役立ちます。</li><li>IpConfig.txt: すべてのアダプターの TCP/IP 構成全体を表示します。 アダプターは、インストールされているネットワーク アダプターなどの物理インターフェイス、またはダイヤルアップ接続などの論理インターフェイスを表します。</li><li>FirewallExecutionLog.txt pfirewall.log</li></ul><p><div class="alert"><b>注:</b> pfirewall.log ファイルは %windir%\system32\logfiles\firewall\pfirewall.log に存在する必要があります。そのため、調査パッケージに含まれます。 ファイアウォール ログ ファイルの作成の詳細については、「高度なセキュリティ ログを使用してファイアウォール[Windows Defender構成する」を参照してください。](/windows/security/threat-protection/windows-firewall/configure-the-windows-firewall-log)<div>|
 |プリフェッチ ファイル|Windowsプリフェッチ ファイルは、アプリケーションの起動プロセスを高速化するように設計されています。 システムで最近使用されたファイルを追跡し、削除された可能性があるがプリフェッチ ファイルの一覧に残っている可能性があるアプリケーションのトレースを検索するために使用できます。 <ul><li>Prefetch フォルダー: からプリフェッチ ファイルのコピーが含まれる `%SystemRoot%\Prefetch` 。 注: プリフェッチ ファイルを表示するには、プリフェッチ ファイル ビューアーをダウンロードしてください。</li><li>PrefetchFilesList.txt: プリフェッチ フォルダーにコピーエラーが発生した場合に追跡するために使用できる、コピーされたファイルの一覧が含まれる。</li></ul>|
 |プロセス|実行中のプロセス.CSVファイルを含み、デバイスで実行中の現在のプロセスを識別する機能を提供します。 これは、疑わしいプロセスとその状態を識別する場合に役立ちます。|
 |スケジュールされたタスク|スケジュールされたタスク.CSVファイルが含まれています。これは、選択したデバイスで自動的に実行されるルーチンを識別して、自動的に実行するために設定された疑わしいコードを検索するために使用できます。|
@@ -134,7 +133,7 @@ ms.locfileid: "60386232"
 調査または対応プロセスの一環として、リモートからウイルス対策スキャンを開始して、侵害されたデバイスに存在する可能性のあるマルウェアを特定して修復できます。
 
 >[!IMPORTANT]
->- このアクションは、Windows 10 バージョン 1709 以降、Windows Server 2019、Windows Server 2016、および Windows Server 2012 R2 のデバイスで使用できます。
+>- このアクションは、macOS および Linux では現在サポートされていません。 ライブ応答を使用してアクションを実行します。 ライブ応答の詳細については、「ライブ応答を使用してデバイス [上のエンティティを調査する」を参照してください。](live-response.md)
 >- Microsoft Defender AV Microsoft Defender ウイルス対策(Microsoft Defender AV) スキャンは、アクティブなウイルス対策ソリューションかどうかに関して、他のウイルス対策ソリューションと一緒に実行できます。 Microsoft Defender AV はパッシブ モードにできます。 詳細については、「互換性」[をMicrosoft Defender ウイルス対策してください](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md)。
 
 [ウイルス対策スキャンの **実行**] を選択した 1 つは、実行するスキャンの種類 (クイックまたはフル) を選択し、コメントを追加してからスキャンを確認します。
@@ -177,18 +176,19 @@ ms.locfileid: "60386232"
 >[!NOTE]
 >通知は、R2 のWindows Server 2016 Windows Server 2012できません。
 
-## <a name="isolate-devices-from-the-network&quot;></a>ネットワークからデバイスを分離する
+## <a name="isolate-devices-from-the-network"></a>ネットワークからデバイスを分離する
 
 攻撃の重大度とデバイスの感度に応じて、ネットワークからデバイスを分離できます。 このアクションは、攻撃者が侵害されたデバイスを制御し、データの漏洩や横方向の移動などの追加のアクティビティを実行するのを防ぐのに役立ちます。
 
 >[!IMPORTANT]
+>- このアクションは、macOS および Linux では現在サポートされていません。 ライブ応答を使用してアクションを実行します。 ライブ応答の詳細については、「ライブ応答を使用してデバイス [上のエンティティを調査する」を参照してください。](live-response.md)
 >- 完全な分離は、Windows 10、バージョン 1703、Windows Server 2019、Windows Server 2016、Windows Server 2012 R2、および Windows Server 2022 のデバイスで使用できます。
 >- 選択的分離は、バージョン 1709 以降Windows 10デバイスで使用できます。
 >- デバイスを分離する場合は、特定のプロセスと宛先だけが許可されます。 したがって、完全な VPN トンネルの背後にあるデバイスは、デバイスが分離された後、Microsoft Defender for Endpoint クラウド サービスに到達できません。 Microsoft Defender for Endpoint にスプリット トンネリング VPN を使用し、クラウド ベースMicrosoft Defender ウイルス対策トラフィックを使用することをお勧めします。
 
 このデバイス分離機能は、デバイスを監視し続ける Defender for Endpoint サービスへの接続を維持しながら、侵害されたデバイスをネットワークから切断します。
 
-バージョン Windows 10 1709 以降では、ネットワーク分離レベルを詳細に制御できます。 また、接続を有効Outlook、Microsoft Teams、Skype for Business接続 (&quot;選択的分離") を有効にできます。
+バージョン Windows 10 1709 以降では、ネットワーク分離レベルを詳細に制御できます。 また、接続を有効Outlook、Microsoft Teams、Skype for Business接続 ("選択的分離") を有効にできます。
 
 > [!NOTE]
 > いつでもデバイスをネットワークに再接続できます。 デバイス ページのボタンが [分離から解放] と表示され、デバイスを分離するのと同じ手順を実行します。

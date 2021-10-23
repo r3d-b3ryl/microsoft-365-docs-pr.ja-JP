@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: 有効な仕事用アカウントまたは学校アカウントを持つCortana、Microsoft 365レベルのセキュリティOffice 365を満たすエクスペリエンスを利用できます。
-ms.openlocfilehash: ea1fc421a099c7fc446dd85c871ad9e508fb3a40
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ddf2eaffff528051e3d7268bfb92618d614439fc
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60188855"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553822"
 ---
 # <a name="cortana-in-microsoft-365"></a>CortanaのMicrosoft 365
 
@@ -83,7 +83,7 @@ Windows 10 バージョン 2004 から、Cortana は Windows でプレインス�
 
 [詳細については、「Cortana」を参照Windows 10](/windows/configuration/cortana-at-work/cortana-at-work-overview)
 
-### <a name="cortana-voice-assistance-in-teams"></a>Cortanaでの音声サポートのTeams
+### <a name="cortana-voice-assistance-in-teams-mobile-and-teams-display"></a>Cortanaディスプレイでの音声TeamsサポートTeamsする
 
 > [!NOTE]
 > Cortanaは、米国、英国、カナダ、インド、オーストラリアのユーザー向け英語の iOS および Android および Microsoft Teams ディスプレイ用の[Microsoft Teams](/microsoftteams/devices/teams-displays)モバイル アプリでサポートされています。  Microsoft TeamsWindowsは、米国のユーザーに対してのみサポートされます。 Cortanaサポートは、現在、GCC-High、DoD、EDU テナントGCC使用できません。 追加の言語と地域への拡張は、今後のリリースの一環として行い、管理者のお客様にはメッセージ センターと新しいロードマップを通[Microsoft 365されます](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=65346)。
@@ -99,9 +99,41 @@ Cortanaは、テナントに対して既定で有効になります。 管理者
 個々のユーザーは、マイク Cortanaをクリックして、Teamsアプリで音声サポートを試してみてください。 &#8220;Cortana.&#8221; &#8220;Cortana.&#8221; と言うだけで、Microsoft Teams ディスプレイ デバイスで音声アシスタンスを試し、Cortana がウェイク ワードの呼び出しに応答するかどうかを制御することもできます。 Cortana 
 
 1. モバイルTeams開く
-2. [設定] に移動する
-3. [Cortana
-4. [音声のアクティブ化] トグルを切り替える
+2. [ファイル] に **移動設定**
+3. [選択 **Cortana**
+4. [音声の **アクティブ化] トグルを切り替** える
+
+[音声サポートを使用する方法の詳細については、Teams](https://support.microsoft.com/office/274bb2f0-d962-4182-b45d-307435cea256)
+
+### <a name="cortana-voice-assistance-in-teams-meeting-room"></a>Cortanaでの音声サポートのTeams ミーティング ルーム
+
+Cortana Teams ミーティング ルームでの音声サポートは、ワンタッチ参加、インテリジェントな方法で会議に物理的なホワイトボードを共有するコンテンツ カメラ、自分の個人用デバイスから会議室を Teams 会議にシームレスに転送する近接機能など、独自の会議室機能を提供することで、個人用デバイス上の Teams で行える機能を超えます。 ユーザーは、マイクを押して 「会議を開始する」とCortanaプッシュして話す (PTT) を使用できます。 キーワード スポット (KWS) を有効にすると、ユーザー Cortanaが 「メッセージ」と表示された場合にCortana。 
+
+#### <a name="admin-control"></a>管理コントロール
+
+Cortanaの音声サポートTeams Office 365、企業レベルのプライバシー、セキュリティ、およびコンプライアンスの約束に完全に準拠するサービスを使用して配信されます。 エンタープライズ サービスでのデータ処理のCortanaについては、「Cortana」をMicrosoft 365。 Cortanaは、テナントの会議室Teams既定で有効になっています。 IT 管理者は、音声サポートをオプトアウトして、Teams ミーティング ルームのMicrosoft 365 管理センター。 
+ 
+会議室のすべての機能をCortanaするTeams方法:
+1.  アカウントにサインイン[Microsoft 365 管理センター](https://admin.microsoft.com/adminportal/home?ref=Domains)
+2.  デバイスの **選択**
+3.  [会議室 **Teams選択]**
+4.  変更するデバイスを 1 つ以上選択する
+5.  [編集 **] を選択設定**
+6.  [既存の値を **Cortana** に移動し、[既存の値を Off に置き換える] を **選択します。**
+7.  [適用] を選択します。
+
+会議室で音声のアクティブ化をTeamsする方法:
+1.  アカウントにサインイン[Microsoft 365 管理センター](https://admin.microsoft.com/adminportal/home?ref=Domains)
+2.  デバイスの **選択**
+3.  [会議室 **Teams選択]**
+4.  変更するデバイスを 1 つ以上選択する
+5.  [編集 **] を選択設定**
+6.  [ウェイク ワード **検出] ボックスのチェックを外** す
+7.  [適用] **を選択します。**
+
+#### <a name="configure-cortana-remotely-using-an-xml-configuration-file"></a>XML 構成Cortanaを使用してリモートで構成する
+XML 構成ファイルを使用してリモートで Microsoft Teams Rooms コンソール設定を管理する方法については、「会議室のデバイス設定をリモートMicrosoft Teamsする」を[参照してください](/microsoftteams/rooms/xml-config-file)。
+
 
 [音声サポートの詳細Cortana詳細については、Teams](/microsoftteams/cortana-in-teams)
 
@@ -179,12 +211,13 @@ Cortanaは、タスクとコミットメントを含む個別のブリーフィ�
 
 2. Windows 10 (バージョン **1909** 以前) の Cortana と iOS と Android の Cortana アプリのチェック ボックスをオフにして、組織内のユーザーに代わって Microsoft ホスト型データにアクセスして Cortana 接続エクスペリエンスを無効にします。
 
-3. [**変更の保存**] を選択します。
+3. **[変更の保存]** を選択します。
 
 Microsoft Services Agreement および [Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=2109174)  [Privacy Statement](https://privacy.microsoft.com/privacystatement)に準拠するサービスの場合、Microsoft はデータ 管理者です。 データ管理者として、Microsoft はデータを使用して、Microsoft プライバシーに関する声明に従って製品および [サービスを改善します](https://privacy.microsoft.com/privacystatement)。
 
 ## <a name="related-content"></a>関連コンテンツ
-
+ 
 [Cortanaの音声サポートのTeams](/microsoftteams/cortana-in-teams) (記事)\
 [[CortanaのWindows 10](/windows/configuration/cortana-at-work/cortana-at-work-overview)構成 (記事)\
 [[メールを再生する] を使用して、Cortana?](https://support.microsoft.com/help/4558256)
+

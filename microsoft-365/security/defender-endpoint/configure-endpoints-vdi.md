@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/22/2021
 ms.technology: mde
-ms.openlocfilehash: 86332ff7e9a5a9dc08d5bb278ea856990e4cb0c6
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: 931edcd890148a828a6d189722e8f29907c15b79
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240322"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553690"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-in-microsoft-365-defender"></a>デバイス内の非永続的仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボードMicrosoft 365 Defender
 
@@ -35,6 +35,9 @@ ms.locfileid: "60240322"
 - Windows 10、Windows 11、Windows Server 2019、Windows Server 2022、Windows Server 2008R2/2012R2/2016
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configvdi-abovefoldlink)
+
+ > [!NOTE]
+  > **永続的な VDI の**  - [永続的な VDI マシンを](configure-endpoints.md)Microsoft Defender for Endpoint にオンボーディングする方法は、デスクトップやラップトップなどの物理マシンをオンボードする場合と同じ方法で処理されます。 グループ ポリシー、Microsoft エンドポイント マネージャー、その他のメソッドを使用して、永続的なコンピューターをオンボードできます。 セキュリティ センターで(オンボーディングの下で、優先するオンボーディング方法を選択し、その種類の https://security.microsoft.com) 指示に従います。 
 
 ## <a name="onboarding-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>非永続的仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード
 
@@ -170,8 +173,8 @@ DISM コマンドとオフライン サービスの詳細については、以�
 5. 通常と同じ方法で、ゴールデン/マスター イメージを再シールします。
 
 ## <a name="related-topics"></a>関連項目
-- [グループ ポリシー Windowsデバイスのオンボード](configure-endpoints-gp.md)
-- [デバイスWindowsデバイスのオンボードMicrosoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
-- [モバイル Windowsツールを使用してデバイスをオンボードする](configure-endpoints-mdm.md)
-- [ローカル Windowsを使用してデバイスをオンボードする](configure-endpoints-script.md)
+- [グループ ポリシーを使用してデバイスをオンボードする](configure-endpoints-gp.md)
+- [Microsoft Endpoint Configuration Manager を使用した Windows デバイスのオンボード](configure-endpoints-sccm.md)
+- [モバイル デバイス管理ツールを使用した Windows デバイスのオンボード](configure-endpoints-mdm.md)
+- [ローカル スクリプトを使用した Windows デバイスのオンボード](configure-endpoints-script.md)
 - [Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング](troubleshoot-onboarding.md)

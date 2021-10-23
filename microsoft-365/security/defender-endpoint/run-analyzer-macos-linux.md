@@ -2,8 +2,6 @@
 title: macOS または Linux でのクライアント アナライザーの実行
 description: macOS または Linux で Microsoft Defender for Endpoint Client Analyzer を実行する方法について説明します。
 keywords: クライアント アナライザー、センサー、アナライザー、mdeanalyzer、macos、Linux、mdeanalyzer のトラブルシューティング
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -20,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 5be8fcb6928588fdc0195bcaffb7a8797fc2bfd9
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: 9207d4aebf3fa729fdf879a52a31103349fac8f8
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364653"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554230"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>macOS または Linux でクライアント アナライザーを実行する
 

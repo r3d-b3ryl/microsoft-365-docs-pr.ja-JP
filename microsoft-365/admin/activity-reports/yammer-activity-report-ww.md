@@ -20,19 +20,16 @@ search.appverid:
 - MET150
 - MOE150
 description: '[アクティビティ] Yammerレポートを取得し、メッセージの投稿、Yammer読み取りを行うユーザー数の詳細を知ります。'
-ms.openlocfilehash: 4de77e432e1b72286d28ae742783f2c5324e35fe
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3b3d99754a7ace6ffbd8b503e4d70f956425e678
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60158888"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553018"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-activity-report"></a>Microsoft 365管理センターのレポート - Yammerレポート
 
 管理者Microsoft 365レポート **ダッシュボードには**、組織内の製品の使用状況に関するデータが表示されます。 管理センター [でアクティビティ レポートを確認します](activity-reports.md)。 **Yammer アクティビティ レポート** では、Yammer を使用してメッセージの投稿、「いいね!」の評価、または閲覧を行った一意のユーザー数や、組織全体で生成されたアクティビティの量を確認することで、Yammer に対する組織の関与レベルを把握することができます。 
-  
-> [!NOTE]
-> レポートを表示するには、Microsoft 365 のグローバル管理者、グローバル閲覧者、レポート閲覧者、または Exchange、SharePoint、Skype for Business の管理者である必要があります。  
  
 ## <a name="how-do-i-get-to-the-yammer-activity-report"></a>アクティビティ レポートにアクセスYammer方法
 
@@ -47,6 +44,8 @@ ms.locfileid: "60158888"
 [列 **の選択]** を選択して、レポートの列を追加または削除します。  <br/> ![Yammerアクティビティ レポート - 列を選択します。](../../media/7ef6351d-f7e9-4504-913d-2c2df9062bf6.png)
 
 また、[**エクスポート**] リンクを選択して、レポート データを Excel の .csv ファイルにエクスポートすることもできます。 これにより、すべてのユーザーのデータがエクスポートされ、単純な並べ替えとフィルター処理を行ってさらに分析することができます。 ユーザー数が 2000 未満である場合は、レポート自体のテーブル内で並べ替えとフィルター処理を行うことができます。 ユーザー数が 2000 を超える場合は、フィルター処理と並べ替えを行うために、データをエクスポートする必要があります。 
+
+**[Yammerアクティビティ** レポートは、過去 7 日間、30 日間、90 日間、または 180 日間の傾向を確認できます。 ただし、レポートで特定の日を選択すると、現在の日付から最大 28 日間のデータが表示されます (レポートが生成された日付ではありません)。
   
 |アイテム|説明|
 |:-----|:-----|

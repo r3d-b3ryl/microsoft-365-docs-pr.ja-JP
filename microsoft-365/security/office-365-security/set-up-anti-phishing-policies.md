@@ -17,12 +17,12 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) と Microsoft Defender で使用できるフィッシング対策ポリシーについてOffice 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a146c08834d0b7c4dc6d184a09176d986af1913f
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: 2628fcd5b53a8f73e471fd17512a790bc6b98fc6
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364822"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554890"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>アプリ内のフィッシング対策Microsoft 365
 
@@ -113,7 +113,7 @@ EOP および Defender のフィッシング対策ポリシーでは、次のス
 
 - **認証されていない送信者通知**: これらの通知は、スプーフィング インテリジェンスが有効になっている場合にのみ使用できます。 次のセクションの情報を参照してください。
 - **アクション**: ブロックされたスプーフィングされた送信者からのメッセージ (スプーフィング インテリジェンスによって自動的にブロックされる、またはテナント許可/ブロックリストで手動でブロックされる) の場合は、メッセージに対して実行するアクションを指定することもできます。
-  - **受信者の迷惑メール フォルダーにメッセージを移動する**: これが既定値です。 メッセージはメールボックスに配信され、迷惑メール フォルダーに移動されます。 このExchange Online、迷惑メール ルールがメールボックスで有効になっている場合 (既定で有効になっている) 場合、メッセージは迷惑メール フォルダーに移動されます。 詳細については、「迷惑メールの[設定を構成する」を参照Exchange OnlineのメールボックスMicrosoft 365。](configure-junk-email-settings-on-exo-mailboxes.md)
+  - **受信者の迷惑メール フォルダーにメッセージを移動する**: これが既定値です。 メッセージはメールボックスに配信され、迷惑メール フォルダーに移動されます。 詳細については、「迷惑メールの[設定を構成する」を参照Exchange OnlineのメールボックスMicrosoft 365。](configure-junk-email-settings-on-exo-mailboxes.md)
   - **メッセージを検疫する**: メッセージを目的の受信者ではなく検疫に送信します。 検疫の詳細については、以下の記事を参照してください。
     - [[検疫] Microsoft 365](quarantine-email-messages.md)
     - [検疫済みメッセージとファイルを管理者として管理Microsoft 365](manage-quarantined-messages-and-files.md)
@@ -202,7 +202,7 @@ EOP および Defender のフィッシング対策ポリシーでは、次のス
 - **アクション**: ポリシー内の保護されたユーザーと保護されたドメインに対する偽装の試行を含む受信メッセージに対して実行するアクションを選択します。 保護されたユーザーの偽装と保護されたドメインの偽装に対して、さまざまなアクションを指定できます。
   - **アクションを適用しない**
   - **メッセージを他の電子メール アドレス** にリダイレクトする: メッセージを、目的の受信者ではなく、指定した受信者に送信します。
-  - **受信者の迷惑メール フォルダーに** メッセージを移動する: メッセージはメールボックスに配信され、迷惑メール フォルダーに移動されます。 このExchange Online、迷惑メール ルールがメールボックスで有効になっている場合 (既定で有効になっている) 場合、メッセージは迷惑メール フォルダーに移動されます。 詳細については、「迷惑メールの[設定を構成する」を参照Exchange OnlineのメールボックスMicrosoft 365。](configure-junk-email-settings-on-exo-mailboxes.md)
+  - **受信者の迷惑メール フォルダーに** メッセージを移動する: メッセージはメールボックスに配信され、迷惑メール フォルダーに移動されます。 詳細については、「迷惑メールの[設定を構成する」を参照Exchange OnlineのメールボックスMicrosoft 365。](configure-junk-email-settings-on-exo-mailboxes.md)
   - **メッセージを検疫する**: メッセージを目的の受信者ではなく検疫に送信します。 検疫の詳細については、以下の記事を参照してください。
     - [[検疫] Microsoft 365](quarantine-email-messages.md)
     - [検疫済みメッセージとファイルを管理者として管理Microsoft 365](manage-quarantined-messages-and-files.md)

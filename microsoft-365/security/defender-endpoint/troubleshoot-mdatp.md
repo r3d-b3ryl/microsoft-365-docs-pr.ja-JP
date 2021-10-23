@@ -2,8 +2,6 @@
 title: Microsoft Defender for Endpoint サービスに関する問題のトラブルシューティング
 description: サービスにアクセスしようとするときにサーバー エラーなどの既知の問題に対する解決策と回避策を見つける。
 keywords: Microsoft Defender for Endpoint のトラブルシューティング、サーバー エラー、アクセス拒否、無効な資格情報、データなし、ダッシュボード ポータル、許可、イベント ビューアー
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 2d001d8c554738415e1108bd273aef642851e619
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d46fb5d456377a3089e5d6cfa45918eb42849227
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191577"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553861"
 ---
 # <a name="troubleshoot-service-issues"></a>サービスに関する問題のトラブルシューティング
 
@@ -87,7 +85,7 @@ Microsoft [](event-error-codes.md) Defender for Endpoint サービスによっ�
 
 Azure Defender を使用してサーバーを監視すると、Microsoft Defender for Endpoint テナントが自動的に作成されます。 Microsoft Defender for Endpoint データは、既定でヨーロッパに保存されます。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング](troubleshoot-onboarding.md)
 - [イベント ビューアーを使用してイベントとエラーを確認する](event-error-codes.md)

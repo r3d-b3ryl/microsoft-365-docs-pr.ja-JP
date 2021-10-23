@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 分類Microsoft 365は、さまざまな種類のコンテンツを認識するトレーニングを行うツールです。 この記事では、カスタム分類子を作成してトレーニングする方法と、それらを再トレーニングして精度を高める方法について説明します。
-ms.openlocfilehash: d67c4a6b3934500e3594b1021ffad7f291af5587
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 89229a8c6f4eb5ac04fcb4f956c233e34b40806d
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60193329"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554866"
 ---
 # <a name="get-started-with-trainable-classifiers"></a>トレーニング可能な分類子の使用を開始する
 
@@ -98,9 +98,6 @@ UI で分類子にアクセスするには、次の操作を行います。
 1. 50 ~ 500 のシード コンテンツ アイテムを収集します。 これらは、トレーニング可能な分類子が分類カテゴリにあると正に識別するコンテンツの種類を強く表すサンプルに限る必要があります。 サポートされている[ファイルの種類については](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)、「既定のクロールされたファイル名の拡張子と解析されたファイルSharePointサーバー」を参照してください。
 
    > [!IMPORTANT]
-   > シードとテストのサンプル アイテムは暗号化し、英語である必要があります。
-
-   > [!IMPORTANT]
    > シード セット内のアイテムがカテゴリの強力 **な** 例である必要があります。 トレーニング可能な分類子は、最初に、シード処理に基づいてモデルを構築します。 分類子は、すべてのシード サンプルが強い陽性であり、サンプルがカテゴリに対して弱い一致か負の一致かを知る方法はありません。
 
 2. シード コンテンツのみを保持SharePointオンライン フォルダーにシード *コンテンツを配置します*。 サイト、ライブラリ、およびフォルダーの URL をメモします。
@@ -128,9 +125,6 @@ UI で分類子にアクセスするには、次の操作を行います。
     > ![テストの準備ができているトレーニング可能な分類子。](../media/classifier-trainable-ready-to-test-detail.png)
 
 11. 最適な結果を得る場合は、少なくとも 200 のテスト コンテンツ アイテム (最大 10,000) を収集します。 これらは、強い肯定的なアイテム、強い否定的なアイテム、およびそれらの性質で少し明白ではないアイテムの組み合わせである必要があります。 サポートされている[ファイルの種類については](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)、「既定のクロールされたファイル名の拡張子と解析されたファイルSharePointサーバー」を参照してください。
-
-    > [!IMPORTANT]
-    > サンプル アイテムは暗号化し、英語である必要があります。
 
 12. テスト コンテンツのみを保持する専用SharePointオンライン フォルダーにテスト *コンテンツを配置します*。 オンライン サイト、ライブラリ、SharePoint URL に注意してください。
 

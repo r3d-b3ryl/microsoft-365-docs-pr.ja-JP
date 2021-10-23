@@ -2,7 +2,6 @@
 title: サードパーティの HIPS から ASR ルールへの移行
 description: サードパーティのホスト侵入防止システム (HIPS) ソリューションから ASR ルールへの移行にアプローチする方法について説明します。
 keywords: 攻撃表面の縮小ルール、asr、asr ルール、ヒップ、ホスト侵入防止システム、保護ルール、悪用防止、脆弱性対策、悪用、感染防止、Microsoft Defender for Endpoint
-search.product: eADQiWindows 10XVcnh
 ms.topic: article
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -16,12 +15,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: ec28153c25b6c9108a62ea7d3c63336d4ff1ddb7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 559b0689a4bf6c5507e37ad228894781f1bccf56
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210915"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555958"
 ---
 # <a name="migrating-from-a-third-party-hips-to-asr-rules"></a>サードパーティの HIPS から ASR ルールへの移行
 
@@ -123,7 +122,7 @@ ms.locfileid: "60210915"
 - **プロセス**- *
 - **操作**- プロセスの終了
 - **ファイル/** フォルダー、レジストリ キー/値、プロセス、サービス - MsSense.exe、MsMpEng.exe、NisSrv.exe、svchost.exe*、services.exe、csrss.exe、smss.exe、wininit.exe など。
-- **攻撃表面の縮小ルール**- ASR ルールは、組み込みのセキュリティ保護で保護Windows 10シナリオをサポートしません。
+- **攻撃表面の縮小ルール**- ASR ルールは、組み込みのセキュリティ保護で保護Windowsこれらのシナリオをサポートしません。
 - **その他の推奨** 機能 - ELAM (早期起動マルウェア対策)、PPL (Protection Process Light)、PPL AntiMalware Light、System Guard。
 
 ### <a name="block-specific-launch-process-attempt"></a>特定の起動プロセスの試行をブロックする

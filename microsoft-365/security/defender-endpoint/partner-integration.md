@@ -3,8 +3,6 @@ title: Microsoft Defender for Endpoint パートナーの機会とシナリオ
 ms.reviewer: ''
 description: 開いているフレームワークと豊富な API の上に既存のセキュリティ サービスを拡張して、Microsoft Defender for Endpoint との拡張機能と統合を構築する方法について説明します。
 keywords: API、パートナー、拡張、オープン フレームワーク、API、拡張機能、統合、検出、管理、応答、脆弱性、インテリジェンス
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2d97cb0ea1a83b5c5c2e3ad6389cbde688e30272
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: baed391128976e8c700d936d7031a721dcb433d4
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196832"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60556246"
 ---
 # <a name="microsoft-defender-for-endpoint-partner-opportunities-and-scenarios"></a>Microsoft Defender for Endpoint パートナーの機会とシナリオ
 

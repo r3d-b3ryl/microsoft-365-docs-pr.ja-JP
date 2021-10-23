@@ -26,7 +26,11 @@
   items:
     - name: '[ユーザー] ページの概要'
       href: m365-lighthouse-users-page-overview.md
-- name: デバイスの管理
+    - name: 多要素認証の管理
+      href: m365-lighthouse-manage-mfa.md
+    - name: セルフサービスパスワードのリセットを管理する
+      href: m365-lighthouse-manage-sspr.md
+- name: デバイスを管理する
   items:
     - name: デバイス コンプライアンス ページの概要
       href: m365-lighthouse-device-compliance-page-overview.md
@@ -36,9 +40,9 @@
   items:
     - name: 脅威管理ページの概要
       href: m365-lighthouse-threat-management-page-overview.md
-- name: ヘルプとサポートを受ける
+- name: ヘルプとサポートを利用する
   items:
-    - name: ヘルプとサポートを受ける
+    - name: ヘルプとサポートを利用する
       href: m365-lighthouse-get-help-and-support.md
     - name: よく寄せられる質問 (FAQ)
       href: m365-lighthouse-faq.yml

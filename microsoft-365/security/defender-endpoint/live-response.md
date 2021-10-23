@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: fdce3a978d79f3ba87455f67d058185f740972ce
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c7a078fdd618cd3b5070063d4fa7529c9c7f6216
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150048"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553798"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>ライブ応答を使用してデバイス上のエンティティを調査する
 
@@ -56,18 +56,27 @@ ms.locfileid: "60150048"
 
   デバイスは、次のいずれかのバージョンのデバイスを実行している必要Windows
 
-  - **Windows 10**
+  - **Windows 10 & 11**
     - [バージョン 1909](/windows/whats-new/whats-new-windows-10-version-1909) 以降
     - [バージョン 1903](/windows/whats-new/whats-new-windows-10-version-1903) [(KB4515384)](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)
     - [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)のバージョン[1809 (RS 5)](/windows/whats-new/whats-new-windows-10-version-1809)
     - [バージョン 1803 (RS 4)](/windows/whats-new/whats-new-windows-10-version-1803) [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
     - [バージョン 1709 (RS 3)](/windows/whats-new/whats-new-windows-10-version-1709) [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
 
-  - **WindowsServer 2019 - パブリック プレビューにのみ適用**
+  - **macOS** - パブリック プレビューにのみ適用されます。最小必須バージョン: 101.43.84 
+  
+  - **Linux** - パブリック プレビューにのみ適用できる最小必須バージョン: 101.45.13 
+    
+  - **Windows Server 2012 R2** - [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
+  
+  - **Windows Server 2016** - [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
+
+  - **Windows Server 2019**
     - バージョン 1903 以降 [(KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)を使用)
     - バージョン 1809 [(KB4537818 付](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)き)
     
   - **Windows Server 2022**
+
        
 
 - **[詳細設定] ページからライブ応答を有効にします**。
@@ -91,6 +100,9 @@ ms.locfileid: "60150048"
   ![エラー メッセージのイメージ。](images/live-response-error.png)
 
 - **ライブ応答の署名されていないスクリプトの実行を有効** にする (オプション)。
+
+  >[!IMPORTANT]
+  >署名の検証は、PowerShell スクリプトにのみ適用されます。 
 
   > [!WARNING]
   > 署名されていないスクリプトの使用を許可すると、脅威にさらされる可能性があります。
@@ -148,28 +160,26 @@ ms.locfileid: "60150048"
 <br>
 
 ****
-
-|コマンド|説明|
-|---|---|
-|`cd`|現在のディレクトリを変更します。|
-|`cls`|コンソール画面をクリアします。|
-|`connect`|デバイスへのライブ応答セッションを開始します。|
-|`connections`|すべてのアクティブな接続を表示します。|
-|`dir`|ディレクトリ内のファイルとサブディレクトリの一覧を表示します。|
-|`drivers`|デバイスにインストールされているすべてのドライバーを表示します。|
-|`fg <command ID>`|指定したジョブをフォアグラウンドのフォアグラウンドに配置し、現在のジョブに設定します。 <p> **メモ**: fg は、PID ではなくジョブから使用できる "コマンド ID" を受け取る|
-|`fileinfo`|ファイルに関する情報を取得します。|
-|`findfile`|デバイス上の特定の名前でファイルを検索します。|
-|`getfile <file_path>`|ファイルをダウンロードします。|
-|`help`|ライブ応答コマンドのヘルプ情報を提供します。|
-|`jobs`|現在実行中のジョブ、その ID、状態を表示します。|
-|`persistence`|デバイス上のすべての既知の永続化メソッドを表示します。|
-|`processes`|デバイスで実行しているすべてのプロセスを表示します。|
-|`registry`|レジストリ値を表示します。|
-|`scheduledtasks`|デバイス上のすべてのスケジュールされたタスクを表示します。|
-|`services`|デバイス上のすべてのサービスを表示します。|
-|`trace`|ターミナルのログ モードをデバッグに設定します。|
-|
+| コマンド  | 説明  | Windowsおよび Windows サーバー  | macOS  | Linux  |
+|---|---|---|---|---|
+| cd  | 現在のディレクトリを変更します。  | Y  | Y | Y |
+| cls  | コンソール画面をクリアします。  | Y  | Y  | Y  |
+| connect  | デバイスへのライブ応答セッションを開始します。  | Y  | Y  | Y  |
+| 接続  | すべてのアクティブな接続を表示します。  | Y  | N | × |
+| dir  | ディレクトリ内のファイルとサブディレクトリの一覧を表示します。  | Y  | Y  |Y  |
+| ドライバー  | デバイスにインストールされているすべてのドライバーを表示します。  | Y |  N | ×  |
+| fg `<command ID>`  | 指定したジョブをフォアグラウンドのフォアグラウンドに配置し、現在のジョブに設定します。  メモ: fg は、PID ではなく、ジョブから使用できる 'コマンド ID' を受け取る  | Y  | Y  | Y  |
+| fileinfo  | ファイルに関する情報を取得します。  |Y  | Y  | Y  |
+| findfile  | デバイス上の特定の名前でファイルを検索します。  | Y | Y  | Y  |
+| getfile <file_path>  | ファイルをダウンロードします。  | Y  | Y  | Y  |
+| ヘルプ  | ライブ応答コマンドのヘルプ情報を提供します。  |Y  | Y | Y  |
+| ジョブ  | 現在実行中のジョブ、その ID、状態を表示します。  | Y  | Y | Y |
+| 永続性  | デバイス上のすべての既知の永続化メソッドを表示します。  | Y  | N | × |
+| processes  | デバイスで実行しているすべてのプロセスを表示します。  | Y  | Y  | Y  |
+| レジストリ  | レジストリ値を表示します。  | Y  | N | × |
+| scheduledtasks  | デバイス上のすべてのスケジュールされたタスクを表示します。  | Y | N | × |
+| サービス  | デバイス上のすべてのサービスを表示します。  | Y  | N | × |
+| trace  | ターミナルのログ モードをデバッグに設定します。  | Y  | Y  |Y  |
 
 ### <a name="advanced-commands"></a>高度なコマンド
 
@@ -179,15 +189,19 @@ ms.locfileid: "60150048"
 
 ****
 
-|コマンド|説明|
-|---|---|
-|`analyze`|さまざまな犯罪エンジンを使用してエンティティを分析し、評決に達します。|
-|`run`|デバイス上のライブラリから PowerShell スクリプトを実行します。|
-|`library`|ライブ応答ライブラリにアップロードされたファイルを一覧表示します。|
-|`putfile`|ライブラリからデバイスにファイルを置く。 ファイルは作業フォルダーに保存され、デバイスが既定で再起動すると削除されます。|
-|`remediate`|デバイス上のエンティティを修復します。 修復アクションは、エンティティの種類によって異なります。 <ul><li>ファイル: 削除</li><li>プロセス: イメージ ファイルを停止、削除する</li><li>サービス: イメージ ファイルの停止、削除</li><li>レジストリ エントリ: 削除</li><li>スケジュールされたタスク: 削除</li><li>スタートアップ フォルダーアイテム: ファイルの削除</li></ul> <p> **注**: このコマンドには、前提条件のコマンドがあります。 このコマンドを組み `-auto` 合わせて使用すると `remediate` 、前提条件コマンドを自動的に実行できます。
-|`undo`|修復されたエンティティを復元します。|
-|
+| コマンド  | 説明  | Windowsおよび Windows サーバー  | macOS  | Linux  |
+|---|---|---|---|---|
+| 分析  | さまざまな犯罪エンジンを使用してエンティティを分析し、評決に達します。  | Y  | N  | ×  |
+| collect  | コンピューターから forensics パッケージを収集する  | ×  | Y  | Y  |
+| 分離  | Defender for Endpoint サービスへの接続を維持しながら、ネットワークからデバイスを切断する  | ×  | Y  | N  |
+| リリース  | ネットワーク分離からデバイスを解放する  | ×  | Y  | N  |
+| run  | デバイス上のライブラリから PowerShell スクリプトを実行します。  | Y  | Y  | Y  |
+| ライブラリ  | ライブ応答ライブラリにアップロードされたファイルを一覧表示します。  | Y  | Y  | Y  |
+| putfile  | ライブラリからデバイスにファイルを置く。 ファイルは作業フォルダーに保存され、デバイスが既定で再起動すると削除されます。  | Y  | Y  | Y  |
+| remediate  | デバイス上のエンティティを修復します。 修復アクションは、エンティティの種類によって異なります。File: delete Process: stop, delete image file Service: stop, delete image file Registry entry: delete Scheduled task: remove Startup folder item: delete file NOTE: this command has a prerequisite command. -auto コマンドを修復と組み合わせて使用すると、前提条件コマンドを自動的に実行できます。  | Y  | Y  | Y  |
+| スキャン  | Defender for Endpoint サービスへの接続を維持しながら、ネットワークからデバイスを切断する  | ×  | Y  | Y  |
+| 元に戻す  | 修復されたエンティティを復元します。  | Y  | Y  | Y  |
+
 
 ## <a name="use-live-response-commands"></a>ライブ応答コマンドの使用
 
@@ -257,13 +271,13 @@ ms.locfileid: "60150048"
 > [!WARNING]
 > このショートカットを使用すると、エージェント側でコマンドが停止しない。 このコマンドは、ポータル内のコマンドのみを取り消します。 したがって、"修復" などの操作を変更すると、コマンドが取り消される間、続行される場合があります。
 
-## <a name="run-a-powershell-script"></a>PowerShell スクリプトを実行する
+## <a name="run-a-script"></a>スクリプトを実行する
 
-PowerShell スクリプトを実行する前に、まずライブラリにアップロードする必要があります。
+PowerShell/Bash スクリプトを実行する前に、まずライブラリにアップロードする必要があります。
 
 スクリプトをライブラリにアップロードした後、コマンド `run` を使用してスクリプトを実行します。
 
-セッションで署名されていないスクリプトを使用する場合は、[高度な機能の設定] ページで設定 [を有効にする必要](advanced-features.md) があります。
+セッションで署名されていない PowerShell スクリプトを使用する場合は、[高度な機能の設定] ページで設定 [を有効にする必要](advanced-features.md) があります。
 
 > [!WARNING]
 > 署名されていないスクリプトの使用を許可すると、脅威にさらされる可能性があります。

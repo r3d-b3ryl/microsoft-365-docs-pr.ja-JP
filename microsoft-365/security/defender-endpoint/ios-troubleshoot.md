@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ad31350c8936b1a7303050397e43f61408fe1be8
-ms.sourcegitcommit: 1e990628d72b6d392500ea564859543e7c8bc632
+ms.openlocfilehash: fab35b6e40d03239d57329128505a31737904a64
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60386225"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555802"
 ---
 # <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>iOS 上の Microsoft Defender for Endpoint で問題のトラブルシューティングを行い、FAQ に対する回答を見つける
 
@@ -56,11 +56,13 @@ ms.locfileid: "60386225"
 > [!NOTE]
 > VPN が無効になっている場合、Web 保護は使用できません。 Web 保護を再び有効にするには、デバイスで Microsoft Defender for Endpoint アプリを開き、[Web 保護を有効にする] をクリックします。
 
+## <a name="issues-with-device-health-card"></a>デバイス正常性カードの問題
+
+デバイス正常性カードに既知の問題が発生し、ユーザーが最新バージョンを使用している場合でも、誤った通知によって iOS バージョンが更新される可能性があります。 Defender for Endpoint からの通知を無視することをお勧めします。 これにより、デバイスのコンプライアンスに影響はありません。 この問題の解決に取り組み、解決が完了したらこの場所を更新します。
+
 ## <a name="coexistence-with-multiple-vpn-profiles"></a>複数の VPN プロファイルとの共存
 
 Apple iOS では、同時にアクティブになる複数のデバイス全体の **VPN** はサポートされていません。 デバイスに複数の VPN プロファイルを存在することができますが、一度にアクティブにできる VPN は 1 つのみです。 デバイスで別の VPN を使用する必要がある場合は、他の VPN を使用している間に Defender for Endpoint VPN を無効にできます。
-
-Microsoft Defender for Endpoint VPN は、アプリ単位または "個人用" として構成されている他の VPN と *共に存在できます*。
 
 ## <a name="battery-consumption"></a>バッテリー消費
 

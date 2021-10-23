@@ -26,12 +26,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 組織向けに多要素認証を設定する方法について説明します。
 monikerRange: o365-worldwide
-ms.openlocfilehash: 0dddf5cbc1bcf921d239c7a93031be6cce419eb6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 824eefed4dbda14edab7608324a317b0f504b7ef
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60178085"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554158"
 ---
 # <a name="set-up-multifactor-authentication"></a>多要素認証を設定する
 
@@ -98,14 +98,6 @@ Azure AD P1 および P2 の詳細については、「[Azure Active Directory �
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a> で、左側のナビゲーションの **[設定]** \> **[組織の設定]** の順に選択します。
 2. **[サービス]** タブで、**[先進認証]** を選択し、**[先進認証]** ウィンドウで、**[先進認証を有効にする]** が選択されていることを確認します。**[変更を保存]** を選択します。
 
-
-### <a name="turn-off-legacy-per-user-mfa"></a>従来のユーザーごとの MFA をオフにする
-
-以前にユーザーごとの MFA をオンにしている場合は、セキュリティの既定値が有効になる前にオフにする必要があります。
-
-1. Microsoft 365 管理センターで、左側のナビゲーションの **[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**[アクティブ ユーザー]**</a> の順に選択します。
-1. **[アクティブ ユーザー]** ページで、**[多要素認証]** を選択します。
-1. 多要素認証ページで、各ユーザーを選択し、その多要素認証ステータスを **[無効]** に設定します。
 
 ## <a name="next-steps"></a>次の手順
 

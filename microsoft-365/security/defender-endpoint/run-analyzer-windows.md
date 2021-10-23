@@ -2,8 +2,6 @@
 title: Windows でクライアント アナライザーを実行する
 description: Microsoft Defender for Endpoint Client Analyzer を実行する方法については、Windows。
 keywords: クライアント アナライザー、センサー、アナライザー、mdeanalyzer、Windows のトラブルシューティング
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -20,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a0d715bd9c51f73eb58e06d68892ba955bdb7d1d
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 29b414ac9dcab9a9c32b5ba09d45d5d9b9ce67de
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400812"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554686"
 ---
 # <a name="run-the-client-analyzer-on-windows"></a>Windows でクライアント アナライザーを実行する
 
@@ -56,7 +54,7 @@ ms.locfileid: "59400812"
 上記に加えて、ライブ応答を使用してアナライザー サポート ログ[を収集するオプションも用意されています。](troubleshoot-collect-support-log.md)
 
 > [!NOTE]
-> Windows 10、Windows Server 2019 以降の OS エディションでは、クライアント アナライザー スクリプトは、クラウド サービス URL への接続テストを実行するために呼び出される実行可能ファイルを呼び出します。 `MDEClientAnalyzer.exe`
+> Windows 10、Windows Server 2019 以降の OS エディション、または Windows 11 では、クライアント アナライザー スクリプトは、クラウド サービス URL への接続テストを実行するために呼び出される実行可能ファイルを呼び出します。 `MDEClientAnalyzer.exe`
 >
 > Windows 8.1、Windows Server 2016、または以前の OS エディションでは、クライアント アナライザー スクリプトは、コマンドとコントロール (CnC) URL の接続テストを実行するために呼び出される実行可能ファイルを呼び出し、サイバー データ チャネル URL の Microsoft Monitoring Agent 接続ツールにも呼び出します。 `MDEClientAnalyzerPreviousVersion.exe` `TestCloudConnection.exe`
 
@@ -91,7 +89,7 @@ ms.locfileid: "59400812"
 
     - dsregcmd.txt
 
-      説明: [dsregcmd の実行からの出力](/azure/active-directory/devices/troubleshoot-device-dsregcmd)。 これにより、コンピューターの Azure AD状態に関する詳細が表示されます。
+      説明: [dsregcmd の実行からの出力](/azure/active-directory/devices/troubleshoot-device-dsregcmd)。 これにより、コンピューターの状態Azure AD詳細が表示されます。
 
     - IFEO.txt
 

@@ -2,7 +2,6 @@
 title: 制限された定期的なスキャン機能Microsoft Defender ウイルス対策有効にする
 description: 定期的なスキャンが制限されている場合は、インストールMicrosoft Defender ウイルス対策 AV プロバイダーに加えて、定期的なスキャンを使用できます。
 keywords: lps、制限付き、定期的、スキャン、スキャン、互換性、サードパーティ、その他の AV、無効化
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,17 +10,17 @@ ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 09/03/2018
+ms.date: 10/18/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: b2ad3b7d1ff4ae2be4aff5e970395a9db2dc42de
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c97947ae081d6b01db2717cfc35a4c328e7c61ec
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174689"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555766"
 ---
 # <a name="use-limited-periodic-scanning-in-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策で限定された定期的なスキャンを使用する
 
@@ -32,7 +31,7 @@ ms.locfileid: "60174689"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-限定的な定期的なスキャンは、特定のデバイスに別のウイルス対策製品をインストールした場合に有効にできる、特別な種類の脅威の検出と修復Windows 10です。
+限定的な定期的なスキャンは、Windows 10 Windows または 11 デバイスに別のウイルス対策製品をインストールした場合に有効にできる特別な種類の脅威の検出と修復です。
 
 特定の状況でのみ有効にできます。 制限付き定期的なスキャンと他のウイルス対策Microsoft Defender ウイルス対策の動作の詳細については、「Microsoft Defender ウイルス対策[を参照してください](microsoft-defender-antivirus-compatibility.md)。
 
@@ -40,7 +39,7 @@ ms.locfileid: "60174689"
 
 ## <a name="how-to-enable-limited-periodic-scanning"></a>制限付き定期的なスキャンを有効にする方法
 
-既定では、Microsoft Defender ウイルス対策 は、他のウイルス対策製品がインストールされていない場合、または他の製品が期限切れ、期限切れ、または正しく動作していない場合、Windows 10 デバイス上でそれ自体を有効にします。
+既定では、Microsoft Defender ウイルス対策 は、他のウイルス対策製品がインストールされていない場合、または他の製品が古い、期限切れになっている、または正しく動作していない場合、Windows 10 または Windows 11 デバイスでそれ自体を有効にします。
 
 有効Microsoft Defender ウイルス対策場合、通常のオプションが表示され、そのデバイスで構成されます。
 

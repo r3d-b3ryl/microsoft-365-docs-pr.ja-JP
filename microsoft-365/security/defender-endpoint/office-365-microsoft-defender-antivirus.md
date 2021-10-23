@@ -2,7 +2,6 @@
 title: より良い一緒に - Microsoft Defender ウイルス対策とOffice 365 (OneDriveを含む) - ランサムウェアやサイバー脅威からのより良い保護
 description: Office 365を含むOneDriveは、他のユーザーとすばらしいMicrosoft Defender ウイルス対策。 詳細については、この記事を参照してください。
 keywords: Windows Defender, ウイルス対策, Office 365, onedrive, 復元, ランサムウェア
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -17,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 2f3fbbe456d67ae60bca22d869258a38f73bce70
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3015dbbc251ec175a648145f202a291ca0c6c1bc
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199695"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60556127"
 ---
 # <a name="better-together-microsoft-defender-antivirus-and-office-365"></a>ベストな組み合わせ: Microsoft Defender ウイルス対策と Office 365
 
@@ -36,7 +35,7 @@ ms.locfileid: "60199695"
 
 次の情報が既にわかっている場合があります。
 
-- **Microsoft Defender ウイルス対策、マルウェアWindows 10** スパイウェアなどのソフトウェアの脅威からデバイスを保護します。 Microsoft Defender ウイルス対策は、完全で継続的な保護であり、Windows 10に組み込み、準備が整いました。 [Microsoft Defender ウイルス対策は、次世代の保護です](./microsoft-defender-antivirus-in-windows-10.md)。 
+- **Microsoft Defender ウイルス対策、マルウェアWindows** スパイウェアなどのソフトウェアの脅威からデバイスを保護します。 Microsoft Defender ウイルス対策は、完全で継続的な保護であり、Windows 10 11 Windowsに組み込み、すぐに使用できます。 [Microsoft Defender ウイルス対策は、次世代の保護です](./microsoft-defender-antivirus-in-windows-10.md)。 
 
 - **Office 365、スパム** 対策、マルウェア対策保護が含まれます。 Office 365 サブスクリプションを使用すると、プレミアム メールと予定表、Office アプリ、1 TB のクラウド ストレージ (OneDrive 経由)、すべてのデバイスの高度なセキュリティを取得できます。 これは、ホーム ユーザーとビジネス ユーザーの場合に当てはまる。 また、ビジネス ユーザーであり、組織が Office 365 E5 を使用している場合は、Microsoft Defender を通じて Office 365 Office 365 を使用して脅威から保護するためのさらに多[くの保護を受Office 365。](/microsoft-365/security/office-365-security/protect-against-threats)
 

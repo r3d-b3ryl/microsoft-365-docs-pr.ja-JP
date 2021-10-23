@@ -19,19 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: ユーザー アクティビティ レポートのMicrosoft Teamsを取得し、組織のアクティビティTeamsを得る方法について学習します。
-ms.openlocfilehash: 0055fda46b3c958d57d66a21d33f2589b6985e30
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6c30575cd333ea1ad161fceefcee4e8ba3737762
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157436"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553138"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>管理センターの Microsoft 365 レポート - Microsoft Teams ユーザー アクティビティ
 
 Microsoft 365 の [**レポート**] ダッシュボードには、組織内での製品全体に関するアクティビティが表示されます。 これにより、個別の製品レベルのレポートを詳細に確認して、各製品内のアクティビティについてより詳しく知ることができます。 [レポートの概要に関するトピック](activity-reports.md)を参照してください。 Microsoft Teams ユーザー アクティビティ レポートで、組織内の Microsoft Teams アクティビティに関する分析情報を取得します。
-  
-> [!NOTE]
-> レポートを表示するには、Microsoft 365 のグローバル管理者、グローバル閲覧者、レポート閲覧者、または Exchange、SharePoint、Skype for Business の管理者である必要があります。  
  
 ## <a name="how-to-get-to-the-microsoft-teams-user-activity-report"></a>Microsoft Teams ユーザー アクティビティ レポートを取得する手順
 
@@ -46,7 +43,7 @@ Microsoft 365 の [**レポート**] ダッシュボードには、組織内で�
 
 また、[**エクスポート**] リンクを選択して、レポート データを Excel の .csv ファイルにエクスポートすることもできます。 これにより、すべてのユーザーのデータがエクスポートされ、単純な並べ替えとフィルター処理を行ってさらに分析することができます。 ユーザー数が 2000 未満である場合は、レポート自体のテーブル内で並べ替えとフィルター処理を行うことができます。 ユーザー数が 2000 を超える場合は、フィルター処理と並べ替えを行うために、データをエクスポートする必要があります。 オーディオ時間、ビデオ **時間、** 画面 **共有** 時間のエクスポート形式は、ISO8601 継続時間形式に従います。
 
-[ **Microsoft Teams ユーザー アクティビティ**] レポートでは、過去 7 日間、30 日間、90 日間、または 180 日間の傾向を確認できます。 ただし、レポートで特定の日を選択すると、表 (7) には、(レポートが生成された日付ではなく) 現在の日付から最大 28 日間のデータが表示されます。
+[ **Microsoft Teams ユーザー アクティビティ**] レポートでは、過去 7 日間、30 日間、90 日間、または 180 日間の傾向を確認できます。 ただし、レポートで特定の日を選択すると、現在の日付から最大 28 日間のデータが表示されます (レポートが生成された日付ではありません)。
 
 データ品質を確保するために、過去 3 日間の毎日のデータ検証チェックを実行し、検出されたギャップを埋めます。 プロセス中に履歴データに違いがある場合があります。
 

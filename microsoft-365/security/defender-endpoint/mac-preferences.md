@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0ac6031e793d36bd51c84b2cd94517f81ab4e649
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: aeb78768db5426c249ab71f01a4e4d5d1fc154e0
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60156272"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60552610"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>macOS のエンドポイント用 Microsoft Defender の基本設定を設定する
 
@@ -34,7 +34,7 @@ ms.locfileid: "60156272"
 > [!IMPORTANT]
 > この記事では、エンタープライズ組織の macOS で Microsoft Defender for Endpoint の基本設定を設定する方法について説明します。 コマンド ライン インターフェイスを使用して macOS 上の Microsoft Defender for Endpoint を構成するには、「Resources」を [参照してください](mac-resources.md#configuring-from-the-command-line)。
 
-## <a name="summary"></a>要約
+## <a name="summary"></a>まとめ
 
 エンタープライズ組織では、macOS 上の Microsoft Defender for Endpoint を、いくつかの管理ツールのいずれかを使用して展開される構成プロファイルを介して管理できます。 セキュリティ運用チームによって管理される基本設定は、デバイス上でローカルに設定されている基本設定よりも優先されます。 構成プロファイルを使用して設定される基本設定を変更するには、エスカレートされた特権が必要であり、管理アクセス許可のないユーザーでは使用できません。
 
@@ -57,7 +57,7 @@ ms.locfileid: "60156272"
 
 ****
 
-|Section|値|
+|Section|Value|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
 |**Key**|antivirusEngine|
@@ -73,11 +73,11 @@ ms.locfileid: "60156272"
 
 ****
 
-|Section|値|
+|Section|Value|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
 |**Key**|enableRealTimeProtection|
-|**データ型**|Boolean|
+|**データ型**|ブール型|
 |**指定可能な値**|true (既定) <p> false|
 |||
 
@@ -95,11 +95,11 @@ ms.locfileid: "60156272"
 
 ****
 
-|Section|値|
+|Section|Value|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
 |**Key**|passiveMode|
-|**データ型**|Boolean|
+|**データ型**|ブール型|
 |**指定可能な値**|false (既定) <p> true|
 |**コメント**|Microsoft Defender for Endpoint version 100.67.60 以上で使用できます。|
 |||
@@ -112,11 +112,11 @@ ms.locfileid: "60156272"
 
 ****
 
-|Section|値|
+|Section|Value|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
 |**Key**|scanAfterDefinitionUpdate|
-|**データ型**|Boolean|
+|**データ型**|ブール型|
 |**指定可能な値**|true (既定) <p> false|
 |**コメント**|Microsoft Defender for Endpoint version 101.41.10 以上で使用できます。|
 |||
@@ -129,11 +129,11 @@ ms.locfileid: "60156272"
 
 ****
 
-|Section|値|
+|Section|Value|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
 |**Key**|scanArchives|
-|**データ型**|Boolean|
+|**データ型**|ブール型|
 |**指定可能な値**|true (既定) <p> false|
 |**コメント**|Microsoft Defender for Endpoint version 101.41.10 以上で使用できます。|
 |||
@@ -146,7 +146,7 @@ ms.locfileid: "60156272"
 
 ****
 
-|Section|値|
+|Section|Value|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
 |**Key**|maximumOnDemandScanThreads|
@@ -163,7 +163,7 @@ ms.locfileid: "60156272"
 
 ****
 
-|Section|値|
+|Section|Value|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
 |**Key**|exclusionsMergePolicy|
@@ -181,7 +181,7 @@ ms.locfileid: "60156272"
 
 ****
 
-|Section|値|
+|Section|Value|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
 |**Key**|除外|
@@ -197,7 +197,7 @@ ms.locfileid: "60156272"
 
 ****
 
-|Section|値|
+|Section|Value|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
 |**Key**|$type|
@@ -213,7 +213,7 @@ ms.locfileid: "60156272"
 
 ****
 
-|Section|値|
+|Section|Value|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
 |**Key**|path|
@@ -233,7 +233,7 @@ ms.locfileid: "60156272"
 |除外|定義|例|
 |---|---|---|
 |ファイル拡張子|拡張子が付いたすべてのファイル(デバイス上の任意の場所)|`.test`|
-|ファイル|完全パスで識別される特定のファイル|`/var/log/test.log` <p> `/var/log/*.log` <p> `/var/log/install.?.log`|
+|File|完全パスで識別される特定のファイル|`/var/log/test.log` <p> `/var/log/*.log` <p> `/var/log/install.?.log`|
 |フォルダー|指定したフォルダーの下のすべてのファイル (再帰的)|`/var/log/` <p> `/var/*/`|
 |プロセス|特定のプロセス (完全なパスまたはファイル名で指定) と、そのプロセスで開くすべてのファイル|`/bin/cat` <p> `cat` <p> `c?t`|
 ||||
@@ -261,11 +261,11 @@ path プロパティが *ファイル* またはディレクトリを参照し�
 
 ****
 
-|Section|値|
+|Section|Value|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
 |**Key**|isDirectory|
-|**データ型**|Boolean|
+|**データ型**|ブール型|
 |**指定可能な値**|false (既定) <p> true|
 |**コメント**|適用 *できるのは、$type**が excludedPath である場合のみです。*|
 |||
@@ -278,7 +278,7 @@ path プロパティが *ファイル* またはディレクトリを参照し�
 
 ****
 
-|Section|値|
+|Section|Value|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
 |**Key**|拡張機能|
@@ -289,13 +289,13 @@ path プロパティが *ファイル* またはディレクトリを参照し�
 
 ### <a name="process-excluded-from-the-scan"></a>スキャンから除外されるプロセス
 
-すべてのファイル アクティビティがスキャンから除外されるプロセスを指定します。 プロセスは、名前 (例: ) または完全 `cat` パス (例: ) で指定できます `/bin/cat` 。
+すべてのファイル アクティビティがスキャンから除外されるプロセスを指定します。 プロセスは、名前 (たとえば) または完全パス `cat` (たとえば) で指定できます `/bin/cat` 。
 
 <br>
 
 ****
 
-|Section|値|
+|Section|Value|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
 |**Key**|name|
@@ -312,7 +312,7 @@ Defender for Endpoint on Mac でブロックされない脅威を名前で指定
 
 ****
 
-|Section|値|
+|Section|Value|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
 |**Key**|allowedThreats|
@@ -327,7 +327,7 @@ Defender for Endpoint on Mac でブロックされない脅威を名前で指定
 
 ****
 
-|Section|値|
+|Section|Value|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
 |**Key**|disallowedThreatActions|
@@ -344,7 +344,7 @@ Defender for Endpoint on Mac でブロックされない脅威を名前で指定
 
 ****
 
-|Section|値|
+|Section|Value|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
 |**Key**|threatTypeSettings|
@@ -360,7 +360,7 @@ Defender for Endpoint on Mac でブロックされない脅威を名前で指定
 
 ****
 
-|Section|値|
+|Section|Value|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
 |**Key**|キー|
@@ -380,7 +380,7 @@ Defender for Endpoint on Mac でブロックされない脅威を名前で指定
 
 ****
 
-|Section|値|
+|Section|Value|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
 |**Key**|値|
@@ -396,7 +396,7 @@ Defender for Endpoint on Mac でブロックされない脅威を名前で指定
 
 ****
 
-|Section|値|
+|Section|Value|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
 |**Key**|threatTypeSettingsMergePolicy|
@@ -413,7 +413,7 @@ Defender for Endpoint on Mac でブロックされない脅威を名前で指定
 
 ****
 
-|Section|値|
+|Section|Value|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
 |**Key**|scanResultsRetentionDays|
@@ -430,7 +430,7 @@ Defender for Endpoint on Mac でブロックされない脅威を名前で指定
 
 ****
 
-|Section|値|
+|Section|Value|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
 |**Key**|scanHistoryMaximumItems|
@@ -447,7 +447,7 @@ macOS 上の Microsoft Defender for Endpoint のクラウド駆動型保護機�
 
 ****
 
-|Section|値|
+|Section|Value|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
 |**Key**|cloudService|
@@ -463,11 +463,11 @@ macOS 上の Microsoft Defender for Endpoint のクラウド駆動型保護機�
 
 ****
 
-|Section|値|
+|Section|Value|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
 |**Key**|enabled|
-|**データ型**|Boolean|
+|**データ型**|ブール型|
 |**可能な値**|true (既定) <p> false|
 |||
 
@@ -479,7 +479,7 @@ macOS 上の Microsoft Defender for Endpoint のクラウド駆動型保護機�
 
 ****
 
-|Section|値|
+|Section|Value|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
 |**Key**|diagnosticLevel|
@@ -495,11 +495,11 @@ macOS 上の Microsoft Defender for Endpoint のクラウド駆動型保護機�
 
 ****
 
-|Section|値|
+|Section|Value|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
 |**Key**|automaticSampleSubmission|
-|**データ型**|Boolean|
+|**データ型**|ブール型|
 |**指定可能な値**|true (既定) <p> false|
 |||
 
@@ -511,10 +511,10 @@ macOS 上の Microsoft Defender for Endpoint のクラウド駆動型保護機�
 
 ****
 
-|Section|値|
+|Section|Value|
 |---|---|
 |**Key**|automaticDefinitionUpdateEnabled|
-|**データ型**|Boolean|
+|**データ型**|ブール型|
 |**指定可能な値**|true (既定) <p> false|
 |||
 
@@ -526,7 +526,7 @@ macOS 上の Microsoft Defender for Endpoint のユーザー インターフェ�
 
 ****
 
-|Section|値|
+|Section|Value|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
 |**Key**|userInterface|
@@ -542,11 +542,11 @@ macOS 上の Microsoft Defender for Endpoint のユーザー インターフェ�
 
 ****
 
-|Section|値|
+|Section|Value|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
 |**Key**|hideStatusMenuIcon|
-|**データ型**|Boolean|
+|**データ型**|ブール型|
 |**指定可能な値**|false (既定) <p> true|
 |||
 
@@ -558,7 +558,7 @@ macOS 上の Microsoft Defender for Endpoint のユーザー インターフェ�
 
 ****
 
-|Section|値|
+|Section|Value|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
 |**Key**|userInitiatedFeedback|
@@ -575,7 +575,7 @@ macOS 上の Microsoft Defender for Endpoint のエンドポイント検出お�
 
 ****
 
-|Section|値|
+|Section|Value|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
 |**Key**|edr|
@@ -593,7 +593,7 @@ macOS 上の Microsoft Defender for Endpoint のエンドポイント検出お�
 
 ****
 
-|Section|値|
+|Section|Value|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
 |**Key**|tags|
@@ -609,7 +609,7 @@ macOS 上の Microsoft Defender for Endpoint のエンドポイント検出お�
 
 ****
 
-|Section|値|
+|Section|Value|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
 |**Key**|キー|
@@ -625,7 +625,7 @@ tag の値を指定します。
 
 ****
 
-|Section|値|
+|Section|Value|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
 |**Key**|値|
@@ -797,7 +797,7 @@ tag の値を指定します。
         <key>scanArchives</key>
         <true/>
         <key>maximumOnDemandScanThreads</key>
-        <integer>1</integer>
+        <integer>2</integer>
         <key>exclusions</key>
         <array>
             <dict>

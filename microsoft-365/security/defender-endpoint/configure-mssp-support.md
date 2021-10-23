@@ -2,8 +2,6 @@
 title: マネージ セキュリティ サービス プロバイダーのサポートを構成する
 description: エンドポイント用 Microsoft Defender との MSSP 統合を構成するために必要な手順を実行する
 keywords: マネージド セキュリティ サービス プロバイダー、mssp、構成、統合
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8f4b63c2c4d1f0205e3a97eec6273c878d866f0d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 95eaf9d6921fa0e238b1c4c703414a6c8e4f4c3b
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213747"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554794"
 ---
 # <a name="configure-managed-security-service-provider-integration"></a>マネージド セキュリティ サービス プロバイダーの統合を構成する
 
@@ -75,7 +73,7 @@ MSSP がこれらのアクションを実行する前に、MSSP のお客様は�
 
 マルチテナント委任アクセスを実装する方法については [、「Managed Security Service Providers](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/multi-tenant-access-for-managed-security-service-providers/ba-p/1533440)のマルチテナント アクセス」を参照してください。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [ポータルへの MSSP アクセスを許可する](grant-mssp-access.md)
 - [MSSP カスタマー ポータルにアクセスする](access-mssp-portal.md)

@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Dynamics 365 Customer Voice アクティビティ レポートを取得する方法については、Microsoft 365 の [レポート] ダッシュボードを使用Microsoft 365 管理センター。
-ms.openlocfilehash: 8bddb423c45e97c147dbc3aa262b7c798d143ae5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2eedcf65e95d2bf85dbf156b4e1ac2d540acdf46
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157484"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553426"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---dynamics-365-customer-voice-activity"></a>Microsoft 365管理センターのレポート - Dynamics 365 Customer Voice アクティビティ
 
@@ -33,9 +33,6 @@ Microsoft 365 の [**レポート**] ダッシュボードには、組織内で�
   
 たとえば、Dynamics 365 Customer Voice との対話を見て、Microsoft Dynamics 365 Customer Voice を使用するライセンスを持つすべてのユーザーのアクティビティを理解できます。 また、作成された Pro サーベイの数と、ユーザーが回答した Pro アンケートの数を確認することで、共同作業のレベルを理解するのにも役立ちます。 
   
-> [!NOTE]
-> レポートを表示するには、Microsoft 365 のグローバル管理者、グローバル閲覧者、レポート閲覧者、または Exchange、SharePoint、Skype for Business の管理者である必要があります。  
- 
 ## <a name="how-to-get-to-the-dynamics-365-customer-voice-activity-report"></a>Dynamics 365 Customer Voice アクティビティ レポートにアクセスする方法
 
 1. 管理センターで、[**レポート**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用状況</a>] ページの順に移動します。 
@@ -48,6 +45,8 @@ Microsoft 365 の [**レポート**] ダッシュボードには、組織内で�
 [列 **の選択]** を選択して、レポートの列を追加または削除します。  <br/> ![Dynamics 365 Customer Voice アクティビティ レポート - 列を選択します。](../../media/5ab66f4b-32eb-4c9b-9683-1157ae9e2c0a.png)
 
 また、[**エクスポート**] リンクを選択して、レポート データを Excel の .csv ファイルにエクスポートすることもできます。 これにより、すべてのユーザーのデータがエクスポートされ、単純な並べ替えとフィルター処理を行ってさらに分析することができます。 ユーザー数が 2000 未満である場合は、レポート自体のテーブル内で並べ替えとフィルター処理を行うことができます。 ユーザー数が 2000 を超える場合は、フィルター処理と並べ替えを行うために、データをエクスポートする必要があります。 
+
+**Dynamics 365 Customer Voice** アクティビティ レポートでは、過去 7 日間、30 日間、90 日間、または 180 日間の傾向を確認できます。 ただし、レポートで特定の日を選択すると、現在の日付から最大 28 日間のデータが表示されます (レポートが生成された日付ではありません)。
   
 |アイテム|説明|
 |:-----|:-----|

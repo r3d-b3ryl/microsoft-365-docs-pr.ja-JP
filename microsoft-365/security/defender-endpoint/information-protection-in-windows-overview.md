@@ -3,7 +3,6 @@ title: Windows における情報保護の概要
 ms.reviewer: ''
 description: 機密情報の特定と保護を行うWindows保護の仕組みについて説明します。
 keywords: 情報、保護、dlp、データ、損失、防止、保護
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4a96296f09a82fe2b2c8d5c4d5d250c48f89ffc4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 878bef057161b8235d6547e2f946c205b4657a69
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60156296"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555022"
 ---
 # <a name="information-protection-in-windows-overview"></a>Windows における情報保護の概要
 
@@ -55,7 +54,7 @@ Defender for Endpoint は、機密ラベルを持つファイルと機密情報�
 データ損失防止 (DLP) Office 365の機密情報の種類は、次の 2 つのカテゴリに分類されます。
 
 - 既定値
-- カスタム
+- Custom
 
 既定の機密情報の種類には、銀行口座番号、社会保障番号、国内の ID などの情報が含まれます。 詳細については、「機密情報の [種類の検索方法」を参照してください](/office365/securitycompliance/what-the-sensitive-information-types-look-for)。
 

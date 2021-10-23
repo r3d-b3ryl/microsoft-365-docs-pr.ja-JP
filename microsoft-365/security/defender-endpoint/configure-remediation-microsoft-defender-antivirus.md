@@ -2,7 +2,6 @@
 title: Microsoft Defender ウイルス対策検出の修復を構成する
 description: 脅威をMicrosoft Defender ウイルス対策するときに実行する必要がある操作と、検疫フォルダーに検疫されたファイルを保持する期間を構成する
 keywords: 修復、修正、削除、脅威、検疫、スキャン、復元
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: manage
@@ -13,16 +12,16 @@ author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.date: 03/16/2021
+ms.date: 10/18/2021
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3392653aab996ef62f05664a33c82f55639003c4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 113b144421d99811afc4ce94965a143f34b2b882
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196965"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555922"
 ---
 # <a name="configure-remediation-for-microsoft-defender-antivirus-detections"></a>Microsoft Defender ウイルス対策検出の修復を構成する
 
@@ -51,7 +50,7 @@ PowerShell コマンドレットまたは WMI クラス[ `Set-MpPreference` を�
 
 <br/><br/>
 
-|Location|Setting|説明|既定の設定 (構成されていない場合)|
+|場所|Setting|説明|既定の設定 (構成されていない場合)|
 |---|---|---|---|
 |スキャン|システム復元ポイントの作成|クリーニングまたはスキャンが試行される前に、システムの復元ポイントが毎日作成されます|無効|
 |スキャン|スキャン履歴フォルダーからのアイテムの削除を有効にする|スキャン履歴に保持する日数を指定する|30 日間|

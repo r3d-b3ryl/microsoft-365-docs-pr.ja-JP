@@ -21,12 +21,12 @@ ms.custom:
 description: 管理者は、スパム対策 (EOP) でスパムを防止するのに役立つスパム対策設定とフィルター Exchange Online Protectionできます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7a6cd11e25a29cd9b3866adb216464e021d15dc0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1d8a004e5eb909399f1340374b80495dcf0b6e9b
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154364"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60552526"
 ---
 # <a name="anti-spam-protection-in-eop"></a>EOP でのスパム対策保護
 
@@ -94,13 +94,11 @@ EOP のスパム対策設定は、次のテクノロジで構成されていま�
 
 - **組織の設定を** 確認する: メッセージがスパム フィルター処理をスキップできる設定に注意してください (たとえば、スパム対策ポリシーで許可されたドメイン リストに自分のドメインを追加する場合)。 推奨される設定については[、「EOP](recommended-settings-for-eop-and-office365.md)と Microsoft Defender のセキュリティに関する推奨設定」および「Office 365リストの作成」[を参照してください](create-safe-sender-lists-in-office-365.md)。
 
-- **ユーザーのメールボックスで** 迷惑メール ルールが有効になっているか確認します。既定では有効になっていますが、無効になっている場合は、迷惑メールとしてマークされたメッセージを迷惑メール フォルダーに移動できません。 詳細については、「迷惑メールの[設定を構成する」を参照Exchange OnlineのメールボックスMicrosoft 365。](configure-junk-email-settings-on-exo-mailboxes.md)
-
 - **使用可能な受信拒否リストを使用する**: 詳細については、「受信拒否リストの作成 [」を参照してください](create-block-sender-lists-in-office-365.md)。
 
 - **バルク メールからの登録解除** メッセージがユーザーがサインアップしたメッセージ (ニュースレター、製品のお知らせなど) で、評判の良いソースからの購読解除リンクが含まれている場合は、単に購読解除を求めるのを検討してください。
 
-- スタンドアロン **EOP: EOP** スパム フィルターの評決に対してオンプレミス Exchange にメール フロー ルールを作成する : EOP がオンプレミスの Exchange メールボックスを保護する EOP 環境では、迷惑メール ルールが迷惑メール フォルダーにメッセージを移動できるよう、EOP スパム フィルター処理の評決を変換するために、オンプレミス Exchange でメール フロー ルール (トランスポート ルールとも呼ばれる) を構成する必要があります。 詳細については、「[迷惑メール フォルダーにスパムを配信するように EOP を構成する](/exchange/standalone-eop/configure-eop-spam-protection-hybrid)」を参照してください。
+- スタンドアロン **EOP: EOP** スパム フィルターの評決のためのオンプレミス Exchange でメール フロー ルールを作成する : EOP がオンプレミスの Exchange メールボックスを保護するハイブリッド環境では、オンプレミス Exchange でメール フロー ルール (トランスポート ルールとも呼ばれる) を構成する必要があります。 これらのメール フロー ルールは、EOP スパム フィルターの評決を変換し、メールボックス内の迷惑メール ルールがメッセージを迷惑メール フォルダーに移動できます。 詳細については、「[迷惑メール フォルダーにスパムを配信するように EOP を構成する](/exchange/standalone-eop/configure-eop-spam-protection-hybrid)」を参照してください。
 
 ### <a name="prevent-good-email-from-being-identified-as-spam"></a>優れたメールがスパムとして識別されるのを防ぐ
 

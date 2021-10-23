@@ -20,12 +20,12 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 ms.date: 04/02/2021
-ms.openlocfilehash: 61409b8c648819ae4782b3f6077873687a43a6e2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 67767a7594d16e9f448e01cad6e58254607968ff
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60160526"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554218"
 ---
 # <a name="how-to-pay-for-your-subscription-with-a-billing-profile"></a>課金プロファイルを使用してサブスクリプションの支払いを行う方法
 
@@ -93,7 +93,7 @@ ms.locfileid: "60160526"
 > - [Cape Verde](../pay/cape-verde.md)
 > - [ケイマン諸島](../pay/cayman-islands.md)
 > - [チリ](../pay/chile.md)
-> - [中華人民共和国](../pay/china-prc.md)
+> - [中国](../pay/china-prc.md)
 > - [コロンビア](../pay/colombia.md)
 > - [コスタリカ](../pay/costa-rica.md)
 > - [Ivory Coast (Côte d'Ivoire)](../pay/cote-divoire.md)

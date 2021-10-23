@@ -15,12 +15,12 @@ ms.collection:
 description: Microsoft 365管理者は、ランサムウェア攻撃から回復する方法を学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 898456075cd0298973b94ab8b8ea700fe52f5c08
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: da9b53aec47231446571a2ae5852bed842311079
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364545"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60552682"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>ユーザーのランサムウェア攻撃から回復Microsoft 365
 
@@ -148,8 +148,9 @@ Microsoft の主な情報:
 - [ランサムウェアの脅威の増大](https://blogs.microsoft.com/on-the-issues/2021/07/20/the-growing-threat-of-ransomware/)、2021 年 7月 20 日付け Microsoft On the Issues のブログ投稿
 - [人が操作するランサムウェア](/security/compass/human-operated-ransomware)
 - [ランサムウェアや強要から迅速に保護する](/security/compass/protect-against-ransomware)
-- [2021 Microsoft Digital Defense Report](https://www.microsoft.com/security/business/microsoft-digital-defense-report) (P. 10-19)
-- **ランサムウェア: Microsoft 365 Defender ポータルの **脅威分析** ノードの蔓延する継続的な脅威** に関するレポート (これらの「[ライセンス要件](/microsoft-365/security/defender/prerequisites#licensing-requirements)」 を参照ください)
+- [2021 Microsoft Digital Defense Report](https://www.microsoft.com/security/business/microsoft-digital-defense-report) (10- 19 ページを参照ください)
+- [ランサムウェア: Microsoft 365 Defender](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview)ポータルの脅威分析レポート
+
 
 Microsoft 365:
 
@@ -158,6 +159,7 @@ Microsoft 365:
 - [マルウェアと ランサムウェアからの保護](/compliance/assurance/assurance-malware-and-ransomware-protection)
 - [ランサムウェアからWindows PC を保護する](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
 - [SharePoint Online でのランサムウェアの処理](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
+- [Microsoft 365 Defender](https://security.microsoft.com/threatanalytics3?page_size=30&filters=tags%3DRansomware&ordering=-lastUpdatedOn&fields=displayName,alertsCount,impactedEntities,reportType,createdOn,lastUpdatedOn,tags,flag)ポータルでのランサムウェアの脅威分析レポート
 
 Microsoft 365 Defender:
 

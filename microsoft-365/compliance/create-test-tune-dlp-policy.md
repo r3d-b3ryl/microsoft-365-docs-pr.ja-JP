@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: この記事では、組織のニーズに応じて DLP ポリシーを作成、テスト、調整する方法について学習します。
-ms.openlocfilehash: a7d7541f90573df4f86b71aa02e377ff20717f85
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 490af48e3279147af31178e809010d6316367d7f
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203293"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554782"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>DLP ポリシーの作成、テスト、調整
 
@@ -111,7 +111,7 @@ Microsoft 365ポリシーの作成に使用できる[さまざまな DLP](what-t
 
 ## <a name="test-a-dlp-policy"></a>DLP ポリシーをテストする
 
-新しい DLP ポリシーは、約 1 時間以内に有効になります。 通常のユーザー アクティビティによってトリガーされるのを待つことも、試しに自分でトリガーすることもできます。 以前は、DLP 一致 [をトリガーする](sensitive-information-type-entity-definitions.md)方法に関する情報を提供する機密情報の種類エンティティ定義にリンクしました。
+通常のユーザー アクティビティによってポリシーがトリガーされるのを待つか、自分でトリガーを試みてください。 以前は、DLP 一致 [をトリガーする](sensitive-information-type-entity-definitions.md)方法に関する情報を提供する機密情報の種類エンティティ定義にリンクしました。
 
 例として、この記事のために作成した DLP ポリシーはオーストラリアのタックス ファイル ナンバー (TFN) を検出します。 ドキュメントによると、一致は以下の基準に基づいています。
 

@@ -2,8 +2,6 @@
 title: 管理セキュリティ サービス プロバイダー (MSSP) へのアクセスを許可する
 description: Microsoft Defender for Endpoint との MSSP 統合を構成するために必要な手順を実行する
 keywords: マネージド セキュリティ サービス プロバイダー、mssp、構成、統合
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 59d4fd4fa2582b925668adc7eb65d37e8f336da6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e262c6b7176ba5c269c086b4a196a685a25bc8ed
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208519"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553882"
 ---
 # <a name="grant-managed-security-service-provider-mssp-access-preview"></a>管理セキュリティ サービス プロバイダー (MSSP) アクセス権の付与 (プレビュー)
 
@@ -30,7 +28,6 @@ ms.locfileid: "60208519"
 **適用対象:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-mssp-support-abovefoldlink)
 
@@ -47,7 +44,7 @@ ms.locfileid: "60208519"
 
 ## <a name="enable-role-based-access-controls-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint で役割ベースのアクセス制御を有効にする
 
-1. **顧客 AAD で MSSP リソースのアクセス グループを作成する: グループ**
+1. **Customer AAD: グループで MSSP リソースのアクセス グループを作成する**
 
     これらのグループは、Defender for Endpoint で作成したロールにリンクされます。 これを行うには、テナントの顧客AD 3 つのグループを作成します。 この例のアプローチでは、次のグループを作成します。
 
@@ -77,13 +74,13 @@ ms.locfileid: "60208519"
 
 ## <a name="configure-governance-access-packages"></a>ガバナンス アクセス パッケージの構成
 
-1. **顧客 AAD の接続組織として MSSP を追加する: ID ガバナンス**
+1. **顧客管理で接続された組織として MSSP を追加AAD: ID ガバナンス**
 
     接続された組織として MSSP を追加すると、MSSP は要求し、アクセスが準備されます。
 
     これを行うには、テナントの顧客AD、Identity Governance: Connected organization にアクセスします。 新しい組織を追加し、テナント ID またはドメインを使用して MSSP Analyst テナントを検索します。 MSSP Analysts 用に個別のADテナントを作成する方法をお勧めします。
 
-2. **顧客 AAD でリソース カタログを作成する: ID ガバナンス**
+2. **Customer AAD: Identity Governance でリソース カタログを作成する**
 
     リソース カタログは、テナントの顧客に作成されたアクセス パッケージADです。
 
@@ -93,7 +90,7 @@ ms.locfileid: "60208519"
 
     詳細については、「リソースのカタログ [を作成する」を参照してください](/azure/active-directory/governance/entitlement-management-catalog-create)。
 
-3. **MSSP リソースのアクセス パッケージを作成する 顧客 AAD: Identity Governance**
+3. **MSSP リソースのアクセス パッケージを作成する カスタマー AAD: Identity Governance**
 
     アクセス パッケージは、承認時に要求者に付与される権限とアクセスのコレクションです。
 
@@ -109,7 +106,7 @@ ms.locfileid: "60208519"
 
     詳細については、「新しいアクセス [パッケージを作成する」を参照してください](/azure/active-directory/governance/entitlement-management-access-package-create)。
 
-4. **顧客 AAD から MSSP リソースへのアクセス要求リンクを提供する: ID ガバナンス**
+4. **Customer AAD から MSSP リソースへのアクセス要求リンクを提供する: Identity Governance**
 
     [マイ アクセス ポータル] リンクは、MSSP SOC アナリストが作成したアクセス パッケージを介してアクセスを要求するために使用されます。 リンクは永続的です。つまり、同じリンクが新しいアナリストのために時間の間に使用される可能性があります。 アナリスト要求は、MSSP アナリスト承認者による承認のためにキュー **に入ります**。
 
@@ -132,7 +129,7 @@ ms.locfileid: "60208519"
 
     この時点で、アナリスト アクセスが準備され、各アナリストが顧客のサービスにアクセスMicrosoft Defender セキュリティ センター。`https://securitycenter.Microsoft.com/?tid=<CustomerTenantId>`
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [MSSP カスタマー ポータルにアクセスする](access-mssp-portal.md)
 - [アラート通知を構成する](configure-mssp-notifications.md)

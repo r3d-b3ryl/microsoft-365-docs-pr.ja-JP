@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: テナントとユーザーが要件を満たしていることを確認し、集中展開を使用してアドインを展開Officeします。
-ms.openlocfilehash: fa2532539a09f74331f4129ab73cde367ed070b6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9f428dc011d98d446f32f009345d5df30337c4f2
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164514"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60552754"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>組織でアドインの集中展開が機能するかどうかを判断する
 
@@ -47,7 +47,7 @@ ms.locfileid: "60164514"
 
 ## <a name="before-you-begin"></a>はじめに
 
-アドインの一元展開では、ユーザーが Microsoft 365 Enterprise SKU E3/E5/F3 または Business SKU: Business Basic、Business Standard、Business プレミアム (および組織 ID を使用して Office にサインイン)を使用し、Exchange Online メールボックスとアクティブな Exchange Online メールボックスを持っている必要があります。 サブスクリプション ディレクトリは、サブスクリプション ディレクトリに存在するか、サブスクリプション ディレクトリにAzure Active Directory。
+アドインの一元的な展開では、ユーザーが Microsoft 365 Enterprise SKU E3/E5/F3、Office 365 Enterprise SKU: E3/E5/F3、または Business SKU: Business Basic、Business Standard、Business プレミアム (組織 ID を使用して Office にサインイン)、Exchange Online およびアクティブな Exchange Online メールボックスを使用している必要があります。 サブスクリプション ディレクトリは、サブスクリプション ディレクトリ内に存在するか、またはサブスクリプション ディレクトリにAzure Active Directory。
 次の手順に従って、OfficeとExchange要件を確認したり、集中展開の互換性チェックを[使用できます](#centralized-deployment-compatibility-checker)。
 
 一元展開は、次の機能をサポートしていません。
@@ -157,7 +157,7 @@ web 用の Office アプリ (Word、Excel など) の使用中にアドインの
 
 | プラットフォーム | デバッグ情報 |
 |:-----|:-----|
-|Office | Charles/Fiddler ログ  <br/>  テナント ID ([方法の詳細](/onedrive/find-your-office-365-tenant-id))  <br/>  CorrelationID。 1 つの Office ページのソースを表示し、相関 ID の値を探してサポートに送信します。  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>` |
+|事業所 | Charles/Fiddler ログ  <br/>  テナント ID ([方法の詳細](/onedrive/find-your-office-365-tenant-id))  <br/>  CorrelationID。 1 つの Office ページのソースを表示し、相関 ID の値を探してサポートに送信します。  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>` |
 |リッチ クライアント (Windows、Mac) | Charles/Fiddler ログ  <br/>  クライアント アプリのビルド番号 (できれば **File/Account** のスクリーンショットとして) |
 
 ## <a name="related-content"></a>関連コンテンツ

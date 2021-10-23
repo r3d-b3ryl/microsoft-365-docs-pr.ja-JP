@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 description: このページを使用して、スタッフ リストを作成し、スタッフ メンバーの詳細 (名前、電話番号、電子メール アドレスなど) を管理します。
-ms.openlocfilehash: ea9025edd20289aa404471f6c1d245e7bf5c7d4e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b76b3e647af6f43f1c8ad7364fe24c895dc86b45
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202155"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553978"
 ---
 # <a name="add-staff-to-bookings"></a>Bookings にスタッフを追加する
 
@@ -28,6 +28,9 @@ Bookings は、Microsoft 365の機能ですが、すべてのスタッフがア�
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuVka]
 
 ## <a name="steps"></a>手順
+
+> [!NOTE]
+> これらの手順は、新しい Bookings エクスペリエンスではまだ利用できません。
 
 1. [スタッフの管理] [ページに移動し、[](https://outlook.office.com/bookings/staff) スタッフの追加 **] を選択します。**
 

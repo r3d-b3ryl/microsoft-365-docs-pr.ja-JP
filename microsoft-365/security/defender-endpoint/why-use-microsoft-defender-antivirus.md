@@ -2,7 +2,6 @@
 title: Microsoft Defender for Endpoint とMicrosoft Defender ウイルス対策を使用する理由
 description: 最適な結果を得る場合は、Microsoft Defender ウイルス対策 Microsoft 製品と組み合わせて使用します。
 keywords: Windows Defender, ウイルス対策, サード パーティ AV
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 4a4fb5a54769522d86b7aa4b25aec4e1b4bf6979
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 76e7c0bc2057b44a46ecefca4ffa73ac8a55b33a
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212283"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555226"
 ---
 # <a name="better-together-microsoft-defender-antivirus-and-microsoft-defender-for-endpoint"></a>ベストな組み合わせ: Microsoft Defender Antivirus および Microsoft Defender for Endpoint
 
@@ -56,4 +55,4 @@ Microsoft Defender for Endpoint では Microsoft 以外のウイルス対策ソ�
 
 [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)
 
-[脅威と脆弱性の管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+[脅威&の管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)

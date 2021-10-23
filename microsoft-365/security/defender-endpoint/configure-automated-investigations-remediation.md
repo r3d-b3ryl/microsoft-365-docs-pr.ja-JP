@@ -2,8 +2,6 @@
 title: 自動調査と修復機能の構成
 description: Microsoft Defender for Endpoint で自動調査および修復機能をセットアップします。
 keywords: 構成、セットアップ、自動化、調査、検出、アラート、修復、応答
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: deploy
@@ -18,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: how-to
 ms.date: 01/27/2021
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
-ms.openlocfilehash: 87e27933d051a0e1ed8b69c9e7e7dbe37a9d11e5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 875e5b929014c4ae442dd4232f73cc45abb9d217
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60211277"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555334"
 ---
 # <a name="configure-automated-investigation-and-remediation-capabilities-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint で自動調査および修復機能を構成する
 

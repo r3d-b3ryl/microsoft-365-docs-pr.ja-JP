@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c4faa3c7edcdbf9e7d4eae7b19746b7aaa43e1d6
-ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
+ms.openlocfilehash: 856fc5b076189e68669c75d740c7320f418597f9
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60264758"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555262"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>米国政府のお客様向けの Microsoft Defender for Endpoint
 
@@ -115,8 +115,8 @@ Windows 7 SP1 Enterprise|![はい。](images/svg/check-yes.svg)|![はい](images
 Windows 7 SP1 Pro|![はい。](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)
 Linux|![はい。](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)
 macOS|![はい。](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)
-Android|![いいえ。](images/svg/check-no.svg) 開発中|![不要](images/svg/check-no.svg) 開発中|![不要](images/svg/check-no.svg) 開発中
-iOS|![いいえ。](images/svg/check-no.svg) 開発中|![不要](images/svg/check-no.svg) 開発中|![不要](images/svg/check-no.svg) 開発中
+Android|![いいえ。](images/svg/check-no.svg) 開発中|![いいえ](images/svg/check-no.svg) 開発中|![いいえ](images/svg/check-no.svg) 開発中
+iOS|![いいえ。](images/svg/check-no.svg) 開発中|![いいえ](images/svg/check-no.svg) 開発中|![いいえ](images/svg/check-no.svg) 開発中
 |
 
 > [!NOTE]
@@ -187,8 +187,8 @@ API ドキュメントに記載されているパブリック URI の代わり�
 
 |フィーチャー名|GCC|GCC High|DoD|
 |---|:---:|:---:|:---:|
-|ネットワーク検出|![はい](images/svg/check-yes.svg)|![不要](images/svg/check-no.svg) 開発中|![不要](images/svg/check-no.svg) 開発中|
-|Web コンテンツ フィルタリング|![不要](images/svg/check-no.svg) 開発中|![不要](images/svg/check-no.svg) 開発中|![不要](images/svg/check-no.svg) 開発中|
+|ネットワーク検出|![はい](images/svg/check-yes.svg)|![いいえ](images/svg/check-no.svg) 開発中|![いいえ](images/svg/check-no.svg) 開発中|
+|Web コンテンツ フィルタリング|![いいえ](images/svg/check-no.svg) 開発中|![いいえ](images/svg/check-no.svg) 開発中|![いいえ](images/svg/check-no.svg) 開発中|
 |統合: Azure Sentinel|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg) アラート <br /> ![はい](images/svg/check-yes.svg) インシデント&生データ: プライベート プレビューで|![はい](images/svg/check-yes.svg) アラート <br /> ![はい](images/svg/check-yes.svg) インシデント&生データ: プライベート プレビューで|
-|統合: Microsoft Power Automate & Azure Logic Apps|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg) Azure Logic Apps <br /> ![不要](images/svg/check-no.svg) Power Automate: 開発中|
+|統合: Microsoft Power Automate & Azure Logic Apps|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|
 |Microsoft 脅威エキスパート|![いいえ](images/svg/check-no.svg) エンジニアリング バックログについて|![いいえ](images/svg/check-no.svg) エンジニアリング バックログについて|![いいえ](images/svg/check-no.svg) エンジニアリング バックログについて|

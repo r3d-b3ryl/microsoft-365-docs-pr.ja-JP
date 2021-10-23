@@ -2,8 +2,6 @@
 title: Microsoft Defender for Endpoint Client Analyzer を使用したセンサーの正常性のトラブルシューティング
 description: デバイスのセンサーの正常性をトラブルシューティングし、センサー のデータまたは機能に影響を与える潜在的な構成、環境、接続、または利用統計情報の問題を特定します。
 keywords: センサー、センサーの正常性、構成ミス、非アクティブ、センサー データなし、センサー データ、通信障害、通信障害
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -20,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: bf37f1229712ba94539a8f493a5661fab61657c2
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 7f816c9762fd884431deb6fd61beeb02657e300b
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59399180"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554566"
 ---
 # <a name="troubleshoot-sensor-health-using-microsoft-defender-for-endpoint-client-analyzer"></a>Microsoft Defender for Endpoint Client Analyzer を使用したセンサーの正常性のトラブルシューティング
 

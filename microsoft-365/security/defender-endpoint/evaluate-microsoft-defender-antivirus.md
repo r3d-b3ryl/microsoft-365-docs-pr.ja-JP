@@ -1,8 +1,7 @@
 ---
 title: Microsoft Defender ウイルス対策を評価する
-description: すべてのサイズの企業は、このガイドを使用して、ユーザーが提供する保護を評価し、Microsoft Defender ウイルス対策テストWindows 10。
+description: すべてのサイズの企業は、このガイドを使用して、ユーザーが提供する保護を評価し、テストMicrosoft Defender ウイルス対策をWindows。
 keywords: Microsoft Defender ウイルス対策、クラウド保護、クラウド、マルウェア対策、セキュリティ、防御者、評価、テスト、保護、比較、リアルタイム保護
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,17 +10,17 @@ ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 09/03/2018
+ms.date: 10/18/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 13d3714f1d5843597e19f04a4f94e63f4adf09cb
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6db826e44ed45f0c99bb7bb671e5f1853fc0294b
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192873"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555718"
 ---
 # <a name="evaluate-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策を評価する
 
@@ -58,7 +57,7 @@ ms.locfileid: "60192873"
 >
 > ネットワーク全体での実際の展開と監視に関する最新の推奨事項については、「deploy Microsoft Defender ウイルス対策」を[参照Microsoft Defender ウイルス対策。](deploy-manage-report-microsoft-defender-antivirus.md)
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)
 - [展開Microsoft Defender ウイルス対策](deploy-manage-report-microsoft-defender-antivirus.md)

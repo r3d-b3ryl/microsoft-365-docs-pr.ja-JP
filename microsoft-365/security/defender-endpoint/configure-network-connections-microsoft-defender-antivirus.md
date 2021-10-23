@@ -2,7 +2,6 @@
 title: Microsoft Defender ウイルス対策 ネットワーク接続を構成および検証する
 description: クラウド保護サービスへの接続を構成Microsoft Defender ウイルス対策テストします。
 keywords: ウイルス対策、 Microsoft Defender ウイルス対策、マルウェア対策、セキュリティ、防御、クラウド、攻撃性、保護レベル
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: manage
@@ -13,16 +12,16 @@ author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.date: 06/17/2021
+ms.date: 10/18/2021
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 1efc4fbb38e27151eb0269a1926b8ae8277f7cc5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4ded08af0dfa0bf904d83eef43a76bed3dd4cc2f
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212596"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60552442"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>Microsoft Defender ウイルス対策 ネットワーク接続を構成および検証する
 
@@ -81,7 +80,7 @@ ms.locfileid: "60212596"
 ```
 
 > [!NOTE]
-> 管理者レベルのバージョンのコマンド プロンプトを開く必要があります。 [管理者] ウィンドウでアイテムを右クリックしスタート メニュー管理者として実行] をクリックし、アクセス許可のプロンプト **で [は** い] をクリックします。 このコマンドは、バージョン 1703 Windows 10上でのみ機能します。
+> 管理者レベルのバージョンのコマンド プロンプトを開く必要があります。 [管理者] ウィンドウでアイテムを右クリックしスタート メニュー管理者として実行] をクリックし、アクセス許可のプロンプト **で [は** い] をクリックします。 このコマンドは、Windows 10バージョン 1703 以上、または 11 Windows動作します。
 
 詳細については、「コマンド ライン ツール[を使用Microsoft Defender ウイルス対策管理mpcmdrun.exeを参照してください](command-line-arguments-microsoft-defender-antivirus.md)。
 

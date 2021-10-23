@@ -5,8 +5,6 @@ author: mjcaparas
 ms.author: macapara
 ms.prod: m365-security
 keywords: microsoft 365 defender, 条件付きアクセス, office, エンドポイント用 Microsoft Defender, id 用 microsoft Defender, microsoft defender for office, Azure Defender, microsoft cloud app security, azure sentinel
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ff3fa21735649b0c90bd2f9d07aa2c3307024f5a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 61b4167b5a801d31e348188aef366487bb23bd11
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162508"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555238"
 ---
 # <a name="microsoft-defender-for-endpoint-and-other-microsoft-solutions"></a>エンドポイント向け Microsoft Defender および他の Microsoft ソリューション
 
@@ -79,7 +77,7 @@ Microsoft 365 Defender では、Microsoft Defender for Endpoint およびさま�
 
 [詳細については、Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [統合などの高度な機能を構成する](advanced-features.md)
 - [Microsoft 365 Defender概要](/microsoft-365/security/defender/microsoft-threat-protection)

@@ -15,13 +15,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 10/05/2021
-ms.openlocfilehash: c42e79317371419367cef5375f7f0aeaeba1fe1f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.date: 10/21/2021
+ms.openlocfilehash: bc73ab308fed1d420815d894c5e8c6fbeb4aaa34
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60184739"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553642"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender for Endpoint Device Control リムーバブル Storage アクセス制御
 
@@ -84,10 +84,10 @@ Microsoft Defender for Endpoint Device Control リムーバブル Storageアク�
 | **IncludedIdList** | ポリシーが適用されるグループ。 複数のグループが追加されている場合、ポリシーは、すべてのグループ内の任意のメディアに適用されます。|このインスタンスでは、グループ ID/GUID を使用する必要があります。 <p> 次の例は、GroupID の使用法を示しています。 <p> `<IncludedIdList> <GroupId> {EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>` |
 | **ExcludedIDList** | ポリシーが適用されないグループ。 | このインスタンスでは、グループ ID/GUID を使用する必要があります。 |
 | **エントリ ID** | 1 つの PolicyRule には複数のエントリを指定できます。一意の GUID を持つ各エントリは、デバイスコントロールに 1 つの制限を指示します。| |
-| **Type** | IncludedIDList のリムーバブル 記憶域グループのアクションを定義します。 <ul><li>適用: 許可または拒否 </li><li>監査: AuditAllowed または AuditDenied</ul></li> | <ul><li>許可</li><li>拒否 </li><li>AuditAllowed: アクセスが許可されている場合の通知とイベントを定義します。</li><li>AuditDenied: アクセスが拒否された場合の通知とイベントを定義します。は、Deny エントリと共 **に動作する必要** があります。</li></ul> <p> 同じメディアに対して競合の種類がある場合、システムはポリシーの最初のメディアを適用します。 競合の種類の例として、[許可] と **[拒否]** **があります**。 |
+| **型** | IncludedIDList のリムーバブル 記憶域グループのアクションを定義します。 <ul><li>適用: 許可または拒否 </li><li>監査: AuditAllowed または AuditDenied</ul></li> | <ul><li>許可</li><li>拒否 </li><li>AuditAllowed: アクセスが許可されている場合の通知とイベントを定義します。</li><li>AuditDenied: アクセスが拒否された場合の通知とイベントを定義します。は、Deny エントリと共 **に動作する必要** があります。</li></ul> <p> 同じメディアに対して競合の種類がある場合、システムはポリシーの最初のメディアを適用します。 競合の種類の例として、[許可] と **[拒否]** **があります**。 |
 | **Sid** | ローカル コンピューター Sid または AD オブジェクトの Sid は、このポリシーを特定のユーザー またはユーザー グループに適用するかどうかを定義します。1 つのエントリには最大 1 つの Sid を含め、Sid を使用しないエントリは、コンピューター上にポリシーを適用する方法を意味します。 |  |
 | **ComputerSid** | ローカル コンピューター Sid または AD オブジェクトの Sid は、このポリシーを特定のコンピューターまたはコンピューター グループに適用するかどうかを定義します。1 つのエントリには最大 1 つの ComputerSid を指定し、ComputerSid を使用しないエントリはコンピューター上にポリシーを適用します。 特定のユーザーと特定のコンピューターにエントリを適用する場合は、Sid と ComputerSid の両方を同じエントリに追加します。 |  |
-| **オプション** | 通知を表示するかどうかを定義します。 |**0-4**: [許可] または [拒否] の種類が選択されている場合。 <ul><li>0: 何も</li><li>4: この **エントリに対して AuditAllowed** と **AuditDenied を** 無効にします。 ブロックが **発生** し、AuditDenied が構成されている場合でも、システムは通知を表示されません。 </li></ul> <p> Type **AuditAllowed または** **AuditDenied が** 選択されている場合: <ul><li>0: 何も</li><li>1: 通知を表示する</li><li>2: 送信イベント</li><li>3: 通知を表示し、イベントを送信する </li></ul>|
+| **オプション** | 通知を表示するかどうかを定義します。 |**0 または 4**: [許可] または [拒否] の種類が選択されている場合。 <ul><li>0: 何も</li><li>4: この **エントリに対して AuditAllowed** と **AuditDenied を** 無効にします。 ブロックが **発生** し、AuditDenied が構成されている場合でも、システムは通知を表示されません。 </li></ul> <p> Type **AuditAllowed が** 選択されている場合: <ul><li>0: 何も</li><li>1: 何も</li><li>2: 送信イベント</li><li>3: イベントの送信 </li></ul><p> Type **AuditDenied が** 選択されている場合: <ul><li>0: 何も</li><li>1: 通知を表示する</li><li>2: 送信イベント</li><li>3: 通知を表示し、イベントを送信する </li></ul>|
 |AccessMask|アクセスを定義します。 | **1~7**: <ol><li>読み取り</li><li>書き込み</li><li>読み取りと書き込み</li><li>実行</li><li>読み取りおよび実行</li><li>書き込みと実行 </li><li>読み取りおよび書き込みおよび実行</li></ol> |
 
 ## <a name="common-removable-storage-access-control-scenarios"></a>一般的なリムーバブル Storage アクセス制御のシナリオ
@@ -170,7 +170,7 @@ Intune でのポリシーの展開では、デバイス構成プロファイル�
 
 - ポリシーとプロファイル マネージャーの役割
 - デバイス構成プロファイルに対してレポートの作成/編集/更新/読み取り/削除/表示権限を有効にしたカスタム ロール
-- グローバル管理者
+- 全体管理者
 
 ### <a name="deploying-policy-via-oma-uri"></a>OMA-URI によるポリシーの展開
 

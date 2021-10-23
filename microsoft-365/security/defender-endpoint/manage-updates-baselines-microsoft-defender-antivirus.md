@@ -16,14 +16,14 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 10/15/2021
+ms.date: 10/19/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: de1ab0bc8f58123bb24bd9d9d6d855f924c54986
-ms.sourcegitcommit: 53a4ee148348010444f7deb0590d34e6a298adb8
+ms.openlocfilehash: 6e6b552bb108785f9f727084609f7a8c873ce6e2
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2021
-ms.locfileid: "60400025"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60556354"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>更新Microsoft Defender ウイルス対策を管理し、基準計画を適用する
 
@@ -770,3 +770,5 @@ Windows 10 (Enterprise、Pro、およびホーム エディション)、Windows 
 |[最新のエンドポイントの更新プログラムを管理する](manage-outdated-endpoints-microsoft-defender-antivirus.md) | エンドポイントが更新またはスケジュールされたスキャンを見逃した場合は、ユーザーが次回サインインする場合に、強制的に更新またはスキャンを実行できます。 |
 |[イベントベースの強制更新プログラムを管理する](manage-event-based-updates-microsoft-defender-antivirus.md) | 保護更新プログラムは、起動時または特定のクラウド配信の保護イベントの後にダウンロードする設定できます。 |
 |[モバイル デバイスと仮想マシン (VM) の更新プログラムを管理する](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)| モバイル デバイスや仮想マシンに特に役立つ、バッテリーの電源で更新を行う必要があるかどうかなどの設定を指定できます。 |
+| [Microsoft Defender for Endpoint update for EDR センサー](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac) | 2021 EDR新しい Microsoft Defender for Endpoint 統合ソリューション パッケージに含まれる MsSense.exe センサー (MsSense.exe) を更新できます。   |
+

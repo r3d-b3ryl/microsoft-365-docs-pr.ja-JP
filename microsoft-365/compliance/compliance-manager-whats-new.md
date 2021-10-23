@@ -17,16 +17,33 @@ search.appverid:
 - MOE150
 - MET150
 description: コンプライアンス管理の新機能と新機能を確認します。 更新された評価、新しい評価テンプレート、新しいアクションなどについて説明します。
-ms.openlocfilehash: 6082f008dd3290ba396796e5d0ae7c3ad940db79
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 4e51063447ba43129b588bfe05650572b7c97e4a
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335552"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554410"
 ---
 # <a name="whats-new-in-microsoft-compliance-manager"></a>Microsoft コンプライアンス マネージャーの新機能
 
 **この記事では、次の情報を参照してください。** コンプライアンス マネージャーの最近の更新プログラムについて学習します。
+
+## <a name="october-2021"></a>2021 年 10 月
+
+### <a name="new-assessment-templates"></a>新しい評価テンプレート
+
+以下を含む新しい評価テンプレートが公開されました。
+
+- コロラド州プライバシー法 (CPA)
+- バージニア州消費者データプライバシー法 (CDPA)
+- エジプト - データ保護法
+- オーストラリア - ASD Essential 8 成熟度レベル 1
+- オーストラリア - ASD Essential 8 満期日レベル 2
+- オーストラリア - ASD Essential 8 満期日レベル 3
+
+### <a name="integration-with-privacy-management"></a>プライバシー管理との統合
+
+コンプライアンス マネージャーは、組織が保存している個人データを保護するソリューションであるプライバシー管理と一緒に作業Microsoft 365。 プライバシー管理は、データを視覚化して理解し、主要なリスク シナリオを管理するためのポリシーを実装し、件名の権利要求を処理するのに役立つツールを提供します。 保存する個人データを保護するためのプライバシー管理の手順を実行すると、コンプライアンス マネージャーでのプライバシー評価に貢献し、コンプライアンス スコアの向上に役立ちます。 プライバシー管理や他のソリューションがどのようにスコアに貢献しているのか、さらに改善される可能性について詳しくは、「コンプライアンス マネージャー」の「ソリューション」タブをご覧ください。 プライバシー管理の詳細については、「プライバシー管理について」 [を参照してください](/privacy/solutions/privacymanagement/privacy-management)。
 
 ## <a name="july-2021"></a>2021 年 7 月
 

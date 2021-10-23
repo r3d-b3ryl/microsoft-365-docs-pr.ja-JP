@@ -22,23 +22,20 @@ search.appverid:
 - MET150
 - MOE150
 description: '組織全体OneDrive for Businessのファイルと記憶域の総数を確認するには、使用状況レポートを参照してください。 '
-ms.openlocfilehash: 5e69791057eae44ec2b9565c73b61c4b8c2131a1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 66e9cb7774f9f35a7d720e71062b90a85c2e6026
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157256"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553054"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-usage"></a>Microsoft 365管理センターのレポート - OneDrive for Business使用状況
 
 Microsoft 365 の [**レポート**] ダッシュボードには、組織内での製品全体に関するアクティビティが表示されます。 これにより、個別の製品レベルのレポートを詳細に確認して、各製品内のアクティビティについてより詳しく知ることができます。 [レポートの概要に関するトピック](activity-reports.md)を参照してください。
   
 たとえば、ダッシュボードの OneDrive カードには、組織内で使用されているファイルの総数とストレージについて OneDrive for Business から得た値の概要が表示されます。これを詳細に調べて、アクティブな OneDrive アカウントの傾向や、ユーザーが操作しているファイル数と使用しているストレージの傾向を把握できます。このレポートには、各ユーザーの OneDrive ごとの詳細も表示されます。
-  
-> [!NOTE]
-> レポートを表示するには、Microsoft 365 のグローバル管理者、グローバル閲覧者、レポート閲覧者、または Exchange、SharePoint、Skype for Business の管理者である必要があります。  
- 
-## <a name="how-do-i-get-to-the-onedrive-activity-report"></a>OneDrive アクティビティ レポートの作成方法
+
+## <a name="how-do-i-get-to-the-onedrive-usage-report"></a>使用状況レポートにアクセスOneDrive方法
 
 1. 管理センターで、[**レポート**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用状況</a>] ページの順に移動します。 
 2. ダッシュボードのホームページで、カードの[その他の表示] OneDriveクリックします。
@@ -50,16 +47,18 @@ Microsoft 365 の [**レポート**] ダッシュボードには、組織内で�
 [列 **の選択]** を選択して、レポートの列を追加または削除します。  <br/> ![OneDriveレポート - 列を選択します。](../../media/9ee80f25-cfe3-411d-8e31-08f1507d18c1.png)
 
 また、[**エクスポート**] リンクを選択して、レポート データを Excel の .csv ファイルにエクスポートすることもできます。 これにより、すべてのユーザーのデータがエクスポートされ、単純な並べ替えとフィルター処理を行ってさらに分析することができます。 ユーザー数が 2000 未満である場合は、レポート自体のテーブル内で並べ替えとフィルター処理を行うことができます。 ユーザー数が 2000 を超える場合は、フィルター処理と並べ替えを行うために、データをエクスポートする必要があります。 
+
+過去 **7** OneDrive for Business、30 日、90 日、または 180 日間の傾向について、使用状況レポートを表示できます。 ただし、レポートで特定の日を選択すると、現在の日付から最大 28 日間のデータが表示されます (レポートが生成された日付ではありません)。
   
 |アイテム|説明|
 |:-----|:-----|
 |**測定基準**|**定義**|
 |URL  <br/> |ユーザーのアカウントの web OneDrive。 <br/> |
-|削除済み  <br/> |ファイルの削除OneDrive。 アカウントを削除済みとしてマークするには、少なくとも 7 日かかります。  <br/> |
-|所有者  <br/> |管理者のプライマリ管理者のOneDrive。   <br/> |
+|Deleted  <br/> |ファイルの削除OneDrive。 アカウントを削除済みとしてマークするには、少なくとも 7 日かかります。  <br/> |
+|Owner  <br/> |管理者のプライマリ管理者のOneDrive。   <br/> |
 |所有者プリンシパル名  <br/> |ユーザーの所有者の電子メール OneDrive。 <br/> |
 |最終アクティビティ日 (UTC)  <br/> | ファイル アクティビティがレポート で実行された最新のOneDrive。 OneDrive にファイル アクティビティがなかった場合、値は空白になります。  <br/> |
-|ファイル  <br/> |ファイル内のファイルのOneDrive。 <br/>|
+|Files  <br/> |ファイル内のファイルのOneDrive。 <br/>|
 |アクティブ ファイル  <br/> | 期間内のアクティブ ファイルの数。<br/> 注: レポートの指定した期間中にファイルが削除された場合、レポートに表示されるアクティブ なファイルの数は、OneDrive の現在のファイル数よりも多い場合があります。 >  削除されたユーザーはレポートに 180 日間表示され続けます。  <br/> |
 |Storage使用 (MB)  <br/> |ユーザーが使用するストレージOneDrive MB 単位で指定します。 |
 |||

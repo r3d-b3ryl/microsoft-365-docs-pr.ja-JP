@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 704c9c11ee12d9e08d5ede73440f5fde7de3d51b
-ms.sourcegitcommit: df1ad7118c4a95a310a4f17124322a6ae6ace26f
+ms.openlocfilehash: 72f8b5e32f02ccef028e6d1bccb7bec942ce5d48
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60268715"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60556330"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 上のエンドポイント用 Microsoft Defender の基本設定を設定する
 
@@ -75,7 +75,7 @@ ms.locfileid: "60268715"
 |説明|値|
 |---|---|
 |**Key**|enableRealTimeProtection|
-|**データ型**|Boolean|
+|**データ型**|ブール型|
 |**指定可能な値**|true (既定) <p> false|
 |
 
@@ -96,7 +96,7 @@ ms.locfileid: "60268715"
 |説明|値|
 |---|---|
 |**Key**|passiveMode|
-|**データ型**|Boolean|
+|**データ型**|ブール型|
 |**指定可能な値**|false (既定) <p> true|
 |**コメント**|Defender for Endpoint version 100.67.60 以上で使用できます。|
 |
@@ -112,7 +112,7 @@ ms.locfileid: "60268715"
 |説明|値|
 |---|---|
 |**Key**|scanAfterDefinitionUpdate|
-|**データ型**|Boolean|
+|**データ型**|ブール型|
 |**指定可能な値**|true (既定) <p> false|
 |**コメント**|Defender for Endpoint version 101.45.00 以上で使用できます。|
 |
@@ -128,7 +128,7 @@ ms.locfileid: "60268715"
 |説明|値|
 |---|---|
 |**Key**|scanArchives|
-|**データ型**|Boolean|
+|**データ型**|ブール型|
 |**指定可能な値**|true (既定) <p> false|
 |**コメント**|エンドポイント バージョン 101.45.00 以上の Microsoft Defender で使用できます。|
 |||
@@ -224,7 +224,7 @@ ms.locfileid: "60268715"
 |説明|値|
 |---|---|
 |**Key**|isDirectory|
-|**データ型**|Boolean|
+|**データ型**|ブール型|
 |**指定可能な値**|false (既定) <p> true|
 |**コメント**|適用 *できるのは、$type**が excludedPath である場合のみです。*|
 |
@@ -287,7 +287,7 @@ ms.locfileid: "60268715"
 |---|---|
 |**Key**|disallowedThreatActions|
 |**データ型**|文字列の配列|
-|**指定可能な値**|allow (ユーザーによる脅威の許可を制限する) <p> 復元 (検疫からの脅威の復元をユーザーに制限する)|
+|**可能な値**|allow (ユーザーによる脅威の許可を制限する) <p> 復元 (検疫からの脅威の復元をユーザーに制限する)|
 |**コメント**|Defender for Endpoint version 100.83.73 以上で使用できます。|
 |
 
@@ -414,7 +414,7 @@ ms.locfileid: "60268715"
 |説明|値|
 |---|---|
 |**Key**|enabled|
-|**データ型**|Boolean|
+|**データ型**|ブール型|
 |**指定可能な値**|true (既定) <p> false|
 |
 
@@ -463,7 +463,7 @@ ms.locfileid: "60268715"
 |説明|値|
 |---|---|
 |**Key**|automaticDefinitionUpdateEnabled|
-|**データ型**|Boolean|
+|**データ型**|ブール型|
 |**指定可能な値**|true (既定) <p> false|
 |
 
@@ -521,7 +521,6 @@ ms.locfileid: "60268715"
       "scanArchives":true,
       "maximumOnDemandScanThreads":2,
       "passiveMode":false,
-      "scanAfterDefinitionUpdate":false,
       "exclusionsMergePolicy":"merge",
       "exclusions":[
          {

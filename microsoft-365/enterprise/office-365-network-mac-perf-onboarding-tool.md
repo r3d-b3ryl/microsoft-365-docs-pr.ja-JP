@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365接続テスト ツール
-ms.openlocfilehash: e19c9863be6e5b827e15dd86fadc55ace7e427e4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4671db1e09713ff6b25ef163a30fb524576d6932
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199959"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554302"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool"></a>Microsoft 365接続テスト ツール
 
@@ -254,13 +254,11 @@ Microsoft によって提供されていない SSL 証明書が見つかった�
 
 よく寄せられる質問の一部に対する回答を次に示します。
 
-### <a name="is-this-tool-released-and-supported-by-microsoft"></a>このツールは Microsoft によってリリースされ、サポートされていますか?
-
-現在はプレビュー版であり、Microsoft からのサポートを受け、一般提供リリースの状態に達するまで定期的に更新プログラムを提供する予定です。 改善に役立つフィードバックをお寄せください。 このツールの一部として、Office 365詳細なネットワーク オンボーディング ガイドを公開する予定です。これは、テスト結果によって組織向けにカスタマイズされます。
-
 ### <a name="what-is-required-to-run-the-advanced-test-client"></a>高度なテスト クライアントを実行するために必要な情報
 
 高度なテスト クライアントには、.NET Core 3.1 デスクトップ ランタイムが必要です。 高度なテスト クライアントをインストールせずに実行すると [、.NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1)インストーラー ページが表示されます。 SDK ではなくデスクトップ ランタイム、またはページの上位の ASP.NET Coreランタイムをインストールしてください。 .NET Core をインストールするには、コンピューターに対する管理者のアクセス許可が必要です。
+
+高度なテスト クライアントは、SignalR を使用して Web ページと通信します。 このためには、TCP ポート 443 への接続が開いている connectivity.service.signalr.net 必要があります。 この URL は、クライアント アプリケーション のユーザーに対して接続が必要Office 365 https://aka.ms/o365ip 公開されません。
 
 ### <a name="what-is-microsoft-365-service-front-door"></a>サービス フロント Microsoft 365とは何ですか?
 
@@ -277,7 +275,7 @@ Microsoft 365サービス フロント ドアは、Microsoft のグローバル 
 
 インターネット出力場所は、ネットワーク トラフィックがエンタープライズ ネットワークから出てインターネットに接続する場所です。 これは、ネットワーク アドレス変換 (NAT) デバイスを持ち、通常はインターネット サービス プロバイダー (ISP) に接続する場所として識別されます。 場所とインターネットの出力場所との距離が長い場合は、WAN バックホールが重要な場合があります。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [Microsoft 365 管理 センターのネットワーク接続 (プレビュー)](office-365-network-mac-perf-overview.md)
 

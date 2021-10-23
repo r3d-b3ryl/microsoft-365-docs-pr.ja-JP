@@ -2,7 +2,6 @@
 title: ブロック モードでのエンドポイントの検出と応答
 description: ブロック モードでのエンドポイントの検出と応答の詳細
 keywords: Microsoft Defender for Endpoint, mde, EDRモード, パッシブ モードのブロック
-search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 author: denisebmsft
 ms.author: deniseb
@@ -20,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 9ab524d58e318625773291a9d206ff32753eca91
-ms.sourcegitcommit: 166bf635c0905ae12c04b1865cb17aadef81e82a
+ms.openlocfilehash: 2c463da937222939586029a970439b05134315a3
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60245695"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554578"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>ブロック モードのエンドポイントでの検出と対応 (EDR)
 
@@ -113,7 +112,7 @@ EDRモードの場合、ユーザーのデバイスで実行されているサ�
 
 ### <a name="what-is-the-difference-between-active-and-passive-mode"></a>アクティブ モードとパッシブ モードの違いは何ですか?
 
-Windows 10、Windows Server、バージョン 1803 以降、Windows Server 2019、または Windows Server 2022 を実行しているエンドポイントでは、Microsoft Defender ウイルス対策 がアクティブ モードの場合、デバイス上のプライマリ ウイルス対策として使用されます。 パッシブ モードで実行する場合、Microsoft Defender ウイルス対策ウイルス対策製品ではありません。 この場合、脅威はリアルタイムでMicrosoft Defender ウイルス対策修復されるのではありません。
+Windows 10、Windows 11、Windows Server、バージョン 1803 以降、Windows Server 2019、Windows Server 2022 を実行しているエンドポイントでは、Microsoft Defender ウイルス対策 がアクティブ モードの場合、デバイス上のプライマリ ウイルス対策として使用されます。 パッシブ モードで実行する場合、Microsoft Defender ウイルス対策ウイルス対策製品ではありません。 この場合、脅威はリアルタイムでMicrosoft Defender ウイルス対策修復されるのではありません。
 
 > [!NOTE]
 > Microsoft Defender ウイルス対策は、デバイスが Microsoft Defender for Endpoint にオンボードされている場合にのみパッシブ モードで実行できます。
@@ -137,7 +136,7 @@ PowerShell を使用して、パッシブ モードでEDRでブロック モー�
 
 1. 選択したスタート メニュー入力を開始し、結果 `PowerShell` でWindows PowerShellを開きます。
 
-2. 種類`Get-MPComputerStatus|select AMRunningMode`
+2. 種類 `Get-MPComputerStatus|select AMRunningMode`。
 
 3. 結果が表示 `EDR Block Mode` されます。
 
@@ -154,6 +153,7 @@ PowerShell を使用して、パッシブ モードでEDRでブロック モー�
 - Windows Server 2019 
 - Windows Server 2016
 - Windows Server 2012 R2
+- Windows 11
 
 >[!NOTE]
 >Windows Server 2016および Windows Server 2012 R2 は、この機能を動作するには、「オンボード サーバー Windows[](configure-server-endpoints.md)を使用してオンボードする必要があります。 

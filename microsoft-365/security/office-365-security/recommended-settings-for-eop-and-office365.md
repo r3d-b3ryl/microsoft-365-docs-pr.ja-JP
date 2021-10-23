@@ -19,12 +19,12 @@ ms.collection:
 description: セキュリティ設定に関する Exchange Online Protection (EOP) と Defender のベスト Office 365は何ですか? 標準保護に関する現在の推奨事項は何ですか? より厳密にしたい場合は、何を使用する必要がありますか? また、Defender をユーザーに使用する場合、どのような追加Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ecb8094c73aedc4d737043f2682bbd1a1258acfa
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9a7942d07297dedb4c414d186898dda7384521c2
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157580"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60556225"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>EOP および Microsoft Defender for Office 365 セキュリティの推奨設定
 
@@ -40,9 +40,6 @@ ms.locfileid: "60157580"
 セキュリティ管理者はセキュリティ設定のカスタマイズを強化しますが、EOP と Microsoft Defender の 2 つのセキュリティ レベルは、推奨Office 365標準と **厳密** です。 各顧客の環境とニーズは異なりますが、これらのレベルのフィルター処理は、ほとんどの状況で望ましくないメールが従業員の受信トレイに届かされるのを防ぐのに役立つと考えています。
 
 標準または厳密な設定をユーザーに自動的に適用するには[、「EOP](preset-security-policies.md)でのセキュリティ ポリシーの事前設定」および「Microsoft Defender for microsoft Defender for Office 365」 を参照してください。
-
-> [!NOTE]
-> フィルター処理が適切に機能するには、メールボックスで迷惑メール ルールを有効にする必要があります。 既定では有効になっていますが、フィルター処理が機能していないように見える場合は、チェックする必要があります。 詳細については、「[Exchange Online のメールボックスの迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)」を参照してください。
 
 この記事では、既定の設定と、ユーザーを保護するために推奨される Standard と Strict の設定について説明します。 この表には、Microsoft 365 Defender ポータルと PowerShell (Exchange Online PowerShell またはスタンドアロン Exchange Online Protection PowerShell の設定が含まれています(Exchange Online)。
 
@@ -169,7 +166,7 @@ ms.locfileid: "60157580"
 |**件名** <p> _CustomInternalSubject_|空白 <p> `$null`|空白 <p> `$null`|空白 <p> `$null`||
 |**Message** <p> _CustomInternalBody_|空白 <p> `$null`|空白 <p> `$null`|空白 <p> `$null`||
 |**外部送信者からのメッセージの通知をカスタマイズする**||||これらの設定は、メッセージがマルウェアとして検疫された場合に外部送信者に通知するか、外部送信者からの配信不能メッセージについて管理者に通知するが選択されている場合にのみ使用されます。|
-|**[件名]** <p> _CustomExternalSubject_|空白 <p> `$null`|空白 <p> `$null`|空白 <p> `$null`||
+|**件名** <p> _CustomExternalSubject_|空白 <p> `$null`|空白 <p> `$null`|空白 <p> `$null`||
 |**Message** <p> _CustomExternalBody_|空白 <p> `$null`|空白 <p> `$null`|空白 <p> `$null`||
 |
 

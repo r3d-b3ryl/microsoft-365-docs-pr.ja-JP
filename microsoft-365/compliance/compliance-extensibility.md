@@ -20,12 +20,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: サード パーティ製のデータ Microsoft 365 API を使用してコンプライアンス ソリューションを拡張する方法Graph説明します。
-ms.openlocfilehash: bc812a6cdc051daf64b14f60db32f360ceee7bd4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 04bffeb43a001ab94ffb96504b64ffbf4bf566c5
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60204409"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555370"
 ---
 # <a name="microsoft-365-compliance-extensibility"></a>Microsoft 365の拡張性
 
@@ -89,7 +89,7 @@ Graphカスタム クエリAdvanced eDiscovery API を使用して、ケース�
 
 Advanced eDiscovery および API のライセンス要件については、「Microsoft 365 ライセンス ガイダンス」の「電子情報開示」セクションを参照&[してください](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#ediscovery)。
 
-### <a name="microsoft-graph-api-for-teams-export-preview"></a>Microsoft Graph API for Teams エクスポート (プレビュー)
+### <a name="microsoft-graph-api-for-teams-export"></a>Microsoft Graph API for Teams エクスポート
 
 Enterprise情報アーカイブ (EIA) Microsoft Teamsは、規制要件を解決できる重要なシナリオです。 Microsoft Teams のコンテンツをアーカイブするための組み込みの機能に加えて、顧客とパートナーは Teams Export API を使用してカスタム アプリケーションと統合のシナリオを解決できます。 この Teams エクスポート API は、メッセージとメッセージの添付ファイルの一括エクスポート (アプリごとに 1 秒/1 テナントあたり最大 200 要求) をサポートTeamsします。 削除されたメッセージは、削除後最大 30 日間 API からアクセスすることもできます。 これらのエクスポート API の詳細Teamsアプリケーションで使用する方法については、「Export content with the Microsoft Teams [API」を参照してください](/microsoftteams/export-teams-content)。
 

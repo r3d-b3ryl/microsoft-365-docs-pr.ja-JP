@@ -2,8 +2,6 @@
 title: Microsoft Defender for Endpoint で問題が発生したセンサーの修正
 description: サービスがデバイスからデータを受信するために、構成が正しく設定されていないか非アクティブとして報告されているデバイス センサーを修正します。
 keywords: 誤構成、非アクティブ、センサーの修正、センサーの正常性、センサー データなし、センサー データ、通信障害、通信障害
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/06/2020
 ms.technology: mde
-ms.openlocfilehash: b9cbdc184dd5759821b738cd4e16e1d27fa2132b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a01fa71e8d52a9e6de522483ee982458f04141af
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205477"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555286"
 ---
 # <a name="fix-unhealthy-sensors-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint で問題が発生したセンサーの修正
 
@@ -84,7 +82,7 @@ ms.locfileid: "60205477"
   プロキシ構成が正常に完了し、WinHTTP が環境内のプロキシ サーバーを介して検出して通信し、プロキシ サーバーが Microsoft Defender for Endpoint サービス URL へのトラフィックを許可することを確認します。
 
 - [診断データ サービスが有効になっているか確認する](troubleshoot-onboarding.md#ensure-the-diagnostics-service-is-enabled)</br>
-デバイスが正しく報告されていない場合は、Windows 10 診断データ サービスが自動的に開始するように設定され、エンドポイントで実行されていることを確認する必要があります。
+デバイスが正しく報告されていない場合は、Windows診断データ サービスが自動的に開始するように設定され、エンドポイントで実行されていることを確認する必要があります。
 
 - [ポリシーによってMicrosoft Defender ウイルス対策が無効にされていないか確認する](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)</br>
 デバイスでサードパーティのマルウェア対策クライアントを実行している場合、Defender for Endpoint エージェントは Microsoft Defender ウイルス対策 早期起動マルウェア対策 (ELAM) ドライバーを有効にする必要があります。

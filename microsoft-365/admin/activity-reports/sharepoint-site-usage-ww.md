@@ -22,21 +22,17 @@ search.appverid:
 - MET150
 - MOE150
 description: ユーザーが SharePoint SharePoint サイトに保存するファイルの数、アクティブに使用されるファイルの数、および使用されたストレージの合計を確認するには、SharePoint サイト使用状況レポートを取得します。
-ms.openlocfilehash: 3b84a31b787e3ccf855e26befcf570e364a9e148
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1adf1175569b1d798b238d4d55037a6461c34558
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162040"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553030"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a>Microsoft 365管理センターのレポート - SharePoint使用状況
 
 管理者としてMicrosoft 365レポート **ダッシュボードには**、組織内のさまざまな製品のアクティビティの概要が表示されます。 これにより、各製品に固有のアクティビティについてより詳しく知ることができます。 たとえば、SharePoint サイトにユーザーが保存するファイルの総数、アクティブに使用されているファイルの数、およびこれらすべてのサイトで使用されるストレージに関して、SharePoint から取得する値の高レベルのビューを取得できます。 その後、[SharePoint サイトの利用状況] レポートを詳細に確認して、すべてのサイトの傾向およびサイトごとのレベル詳細を把握できます。 
-  
-> [!NOTE]
-> レポートを表示するには、Microsoft 365 のグローバル管理者、グローバル閲覧者、レポート閲覧者、または Exchange、SharePoint、Skype for Business の管理者である必要があります。
-Microsoft 365管理センターのレポートは、High テナントと DoD テナントGCCサポートされていません。
- 
+
 ## <a name="how-to-get-to-the-sharepoint-site-usage-report"></a>[SharePoint サイトの利用状況] レポートにアクセスする方法
 
 1. 管理センターで、[**レポート**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用状況</a>] ページの順に移動します。 
@@ -73,7 +69,7 @@ Microsoft 365管理センターのレポートは、High テナントと DoD テ
 |測定基準|内容|
 |:-----|:-----|
 |サイトの URL  |サイトの完全な URL。 |
-|削除済み  |サイトの削除状態。 サイトを削除済みとしてマークするには、少なくとも 7 日かかります。  |
+|Deleted  |サイトの削除状態。 サイトを削除済みとしてマークするには、少なくとも 7 日かかります。  |
 |サイト所有者  |サイトのプライマリ所有者のユーザー名。   |
 |サイト所有者プリンシパル名  |サイトの所有者の電子メール アドレス。 |
 |最終アクティビティ日 (UTC)  | ファイルアクティビティが最後に検出された日付、またはサイトでページが表示された日付。  |
@@ -81,7 +77,7 @@ Microsoft 365管理センターのレポートは、High テナントと DoD テ
 |外部共有  | サイトの外部のsharable設定。  |
 |管理されていないデバイス ポリシー  | 管理されていないデバイスのサイト アクセス ポリシー。  |
 |地域の場所  | サイトの地理的な場所。  |
-|ファイル  |サイト上のファイルの数。 |
+|Files  |サイト上のファイルの数。 |
 |アクティブ ファイル  | サイト上のアクティブ なファイルの数。<br/> 注: レポートの指定された期間中にファイルが削除された場合、レポートに表示されるアクティブ なファイルの数は、サイト上の現在のファイル数よりも多い場合があります。  |
 |Storage使用 (MB)  |サイトで現在使用されている記憶域の量。  |
 |Storage済み (MB)  |サイトに割り当てられた記憶域の最大量。  |

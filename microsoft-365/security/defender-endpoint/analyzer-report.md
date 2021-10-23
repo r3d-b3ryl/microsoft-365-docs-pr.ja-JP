@@ -2,8 +2,6 @@
 title: クライアント アナライザーの HTML レポートについて
 description: Microsoft Defender for Endpoint Client Analyzer HTML レポートを分析する方法について説明します。
 keywords: クライアント アナライザー レポート、HTML レポート、クライアント アナライザー
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -20,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 735b2a0331e399fa7bf3444ff8e5326898c038b4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2c866f6b7cd5c357c7b11db22ef5ecc10a0818ed
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179392"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60556258"
 ---
 # <a name="understand-the-client-analyzer-html-report"></a>クライアント アナライザーの HTML レポートについて
 
@@ -40,19 +38,19 @@ ms.locfileid: "59179392"
 
 ![クライアント アナライザーの結果のイメージ。](images/147cbcf0f7b6f0ff65d200bf3e4674cb.png)
 
-- スクリプトのバージョンとスクリプト ランタイムの一番上に参照用の一覧が表示されます
+- 上に、スクリプトのバージョンとスクリプト ランタイムが参照用に一覧表示されます。
 - [ **デバイス情報]** セクションには、アナライザーが実行されているデバイスを一意に識別するための基本的な OS とデバイス識別子が表示されます。
-- エンドポイント **セキュリティの詳細は**、Microsoft Defender for Endpoint 関連のプロセスに関する一般的な情報を提供します(Microsoft Defender ウイルス対策センサー プロセスを含む)。 重要なプロセスが期待通りオンラインではない場合、色は赤に変わります。
+- エンドポイント **セキュリティの詳細は**、Microsoft Defender for Endpoint 関連のプロセスに関する一般的な情報を提供します(Microsoft Defender ウイルス対策センサー プロセスを含む)。 重要なプロセスが期待通りオンラインでない場合、色は赤に変わります。
 
   ![クライアント アナライザーの詳細な結果のイメージ](images/85f56004dc6bd1679c3d2c063e36cb80.png)
 
--   エンドポイント **セキュリティの詳細は**、Microsoft Defender for Endpoint 関連のプロセスに関する一般的な情報を提供します(Microsoft Defender ウイルス対策センサー プロセスを含む)。 重要なプロセスが期待通りオンラインではない場合、色は赤に変わります。
+-   エンドポイント **セキュリティの詳細は**、Microsoft Defender for Endpoint 関連のプロセスに関する一般的な情報を提供します(Microsoft Defender ウイルス対策センサー プロセスを含む)。 重要なプロセスが期待通りオンラインでない場合、色は赤に変わります。
 
 ![クライアント アナライザーの詳細な結果のイメージ。](images/85f56004dc6bd1679c3d2c063e36cb80.png)
 
--   [ **結果の確認の概要]** で、アナライザーによって検出されたエラー、警告、または情報イベントの集計カウントが表示されます。
+-   [ **結果の確認の** 概要] で、アナライザーによって検出されたエラー、警告、または情報イベントの集計カウントが表示されます。
 
--   [詳細 **な結果] には** 、分析プログラムによって行われた観測値に基づいて、結果とガイダンスを含むリスト (重大度別に並べ替え) が表示されます。
+-   [ **詳細な結果]** には、結果と分析プログラムによる観測値に基づくガイダンスを含むリスト (重大度別に並べ替え) が表示されます。
 
 ## <a name="open-a-support-ticket-to-microsoft-and-include-the-analyzer-results"></a>Microsoft へのサポート チケットを開き、Analyzer の結果を含める
 

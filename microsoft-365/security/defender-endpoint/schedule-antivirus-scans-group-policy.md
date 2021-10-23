@@ -2,7 +2,6 @@
 title: グループ ポリシーを使用してウイルス対策スキャンをスケジュールする
 description: グループ ポリシーを使用してウイルス対策スキャンをセットアップする
 keywords: クイック スキャン、フル スキャン、スケジュール、グループ ポリシー、ウイルス対策
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,18 +10,18 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 09/13/2021
+ms.date: 10/18/2021
 ms.reviewer: pauhijbr, ksarens
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f59c91e75dd573e9f32d05a9673dd3efb5c10af7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 339f98bf8e25fe1795db98739020c36789f8e844
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191704"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555694"
 ---
 # <a name="schedule-antivirus-scans-using-group-policy"></a>グループ ポリシーを使用してウイルス対策スキャンをスケジュールする
 
@@ -53,39 +52,39 @@ ms.locfileid: "60191704"
 
 ## <a name="group-policy-settings-for-scheduling-scans"></a>スキャンのスケジュール設定のグループ ポリシー設定
 
-| Location | Setting | 説明 | 既定の設定 (構成されていない場合) |
+| 場所 | Setting | 説明 | 既定の設定 (構成されていない場合) |
 |:---|:---|:---|:---|
 | スキャン | スケジュールされたスキャンに使用するスキャンの種類を指定する | クイック スキャン |
-| スキャン | スケジュールされたスキャンを実行する週の日を指定する | スキャンを実行する日 (または実行しない) を指定します。 | Never |
+| スキャン | スケジュールされたスキャンを実行する週の日を指定する | スキャンを実行する日 (または実行しない) を指定します。 | なし |
 | スキャン | スケジュールされたスキャンを実行する時刻を指定する | 午前 0 時以降の分数を指定します (たとえば、 **午前 1 時に 60** と入力します)。 | 2 a.m. |
-| ルート | スケジュールされたタスク時間をランダム化する |このMicrosoft Defender ウイルス対策、スキャンの開始時刻を 0 ~ 4 時間の任意の間隔にランダム化します。 <p>[SCEP では](/mem/intune/protect/certificates-scep-configure)、スキャンを任意の間隔にプラスまたはマイナス 30 分にランダム化します。 これは、仮想マシンまたは VDI 展開で役立ちます。 | Enabled |
+| ルート | スケジュールされたタスク時間をランダム化する |このMicrosoft Defender ウイルス対策、スキャンの開始時刻を 0 ~ 4 時間の任意の間隔にランダム化します。 <p>[SCEP では](/mem/intune/protect/certificates-scep-configure)、スキャンを任意の間隔にプラスまたはマイナス 30 分にランダム化します。 これは、仮想マシンまたは VDI 展開で役立ちます。 | 有効 |
 
 ## <a name="group-policy-settings-for-scheduling-scans-for-when-an-endpoint-is-not-in-use"></a>エンドポイントが使用されていないときにスキャンをスケジュールするグループ ポリシー設定
 
-| Location | Setting | 説明 | 既定の設定 (構成されていない場合) |
+| 場所 | Setting | 説明 | 既定の設定 (構成されていない場合) |
 |:---|:---|:---|:---|
-| スキャン | コンピューターがオンで、使用されていない場合にのみ、スケジュールされたスキャンを開始する | コンピューターがオンで使用されていない場合、スケジュールされたスキャンは実行されません。 | Enabled |
+| スキャン | コンピューターがオンで、使用されていない場合にのみ、スケジュールされたスキャンを開始する | コンピューターがオンで使用されていない場合、スケジュールされたスキャンは実行されません。 | 有効 |
 
 > [!NOTE]
 > エンドポイントが使用されていない時間のスキャンをスケジュールする場合、スキャンは CPU 調整構成を尊重し、可能な限り高速にスキャンを完了するために利用可能なリソースを活用します。
 
 ## <a name="group-policy-settings-for-scheduling-remediation-required-scans"></a>修復に必要なスキャンをスケジュールするためのグループ ポリシー設定
 
-| Location | Setting | 説明 | 既定の設定 (構成されていない場合) |
+| 場所 | Setting | 説明 | 既定の設定 (構成されていない場合) |
 |---|---|---|---|
-| 修復 | スケジュールされたフル スキャンを実行して修復を完了する日を指定する | スキャンを実行する日 (または実行しない) を指定します。 | Never |
+| 修復 | スケジュールされたフル スキャンを実行して修復を完了する日を指定する | スキャンを実行する日 (または実行しない) を指定します。 | なし |
 | 修復 | スケジュールされたフル スキャンを実行して修復を完了する時刻を指定する | 午前 0 時以降の分数を指定します (たとえば、 **午前 1 時に 60** と入力します)。 | 2 a.m. |
 
 ## <a name="group-policy-settings-for-scheduling-daily-scans"></a>毎日のスキャンをスケジュールするグループ ポリシー設定
 
-| Location | Setting | 説明 | 既定の設定 (構成されていない場合) |
+| 場所 | Setting | 説明 | 既定の設定 (構成されていない場合) |
 |:---|:---|:---|:---|
-| スキャン | 1 日あたりのクイック スキャンを実行する間隔を指定する | 次のクイック スキャンの前に経過する時間を指定します。 たとえば、2 時間ごとに実行するには **、「2」と入力し、1** 日 1 回は **24 と入力します**。 **0 と入力** すると、毎日のクイック スキャンは実行されません。 | Never |
+| スキャン | 1 日あたりのクイック スキャンを実行する間隔を指定する | 次のクイック スキャンの前に経過する時間を指定します。 たとえば、2 時間ごとに実行するには **、「2」と入力し、1** 日 1 回は **24 と入力します**。 **0 と入力** すると、毎日のクイック スキャンは実行されません。 | なし |
 | スキャン | 毎日のクイック スキャンの時間を指定する | 午前 0 時以降の分数を指定します (たとえば、 **午前 1 時に 60** と入力します)。 | 2 a.m. |
 
 ## <a name="group-policy-settings-for-scheduling-scans-after-protection-updates"></a>保護更新後にスキャンをスケジュールするグループ ポリシー設定
 
-| Location | Setting | 説明 | 既定の設定 (構成されていない場合)|
+| 場所 | Setting | 説明 | 既定の設定 (構成されていない場合)|
 |:---|:---|:---|:---|
-| 署名の更新 | セキュリティ インテリジェンスの更新後にスキャンを有効にする | 新しい保護更新プログラムがダウンロードされた直後にスキャンが実行されます | Enabled |
+| 署名の更新 | セキュリティ インテリジェンスの更新後にスキャンを有効にする | 新しい保護更新プログラムがダウンロードされた直後にスキャンが実行されます | 有効 |
 

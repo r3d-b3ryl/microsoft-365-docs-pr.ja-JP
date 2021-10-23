@@ -3,8 +3,6 @@ title: Microsoft Defender for Endpoint パートナーになる
 ms.reviewer: ''
 description: ソリューションを Microsoft Defender for Endpoint と統合し、パートナーになる手順と要件について説明します。
 keywords: パートナー、統合、ソリューション検証、認定、要件、メンバー、ミス、アプリケーション ポータル
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 75698e7ba0d0fd36459701f13a22ebe70762870e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 59f59ac097cf2c2be3116f67abb4316d17a9ef97
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150027"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60556366"
 ---
 # <a name="become-a-microsoft-defender-for-endpoint-partner"></a>Microsoft Defender for Endpoint パートナーになる
 
@@ -59,7 +57,7 @@ Microsoft Defender for Endpoint は、Microsoft Defender for Endpoint[](partner-
 2. 表示する製品の名前。
 3. 15 語の製品の説明を入力します。
 4. 顧客のための十分な情報を含む統合またはブログ投稿を完了するためのランディング ページへのリンク。 Microsoft Defender for Endpoint 製品名を含むすべてのプレスリリースは、マーケティングチームとエンジニアリング チームによって確認する必要があります。 レビュープロセスが完了するまで、少なくとも 10 日間待ちます。
-5. マルチテナント Azure ADアプローチを使用する場合は、アプリケーションADを追跡するために Azure ADアプリケーション名が必要になります。
+5. マルチテナント の方法を使用Azure AD、アプリケーションの使用状況を追跡Azure ADアプリケーション名が必要になります。
 6. Microsoft Defender for Endpoint User-Agent一連の API またはセキュリティ API に対して行われた各 API 呼び出しに、Graphフィールドを含める。 これは、統計的な目的、トラブルシューティング、およびパートナー認識に使用されます。 さらに、この手順は、Microsoft インテリジェント セキュリティアソシエーション (MISA) のメンバーシップの要件です。
 
    次の手順を実行します。
@@ -80,6 +78,6 @@ Microsoft Defender for Endpoint は、Microsoft Defender for Endpoint[](partner-
 
 Microsoft Defender for Endpoint とのパートナーシップは、相互のお客様が防御をさらに合理化、統合、および調整するのに役立ちます。 Microsoft Defender for Endpoint パートナーになり、最新の脅威を一緒に防止して対応することで、顧客とその資産を効果的に保護する共通の目標を達成することを選んだのは嬉しく思います。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [テクニカル パートナーの機会](partner-integration.md)

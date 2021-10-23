@@ -26,12 +26,12 @@ search.appverid:
 - MET150
 - MOE150
 description: この記事の手順に従って、別の従業員に元従業員のデータとOneDriveアクセスOutlookします。
-ms.openlocfilehash: a87db595ae3191a294e5287d13a68396f64a2426
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 15ad3de7b7493e2c1a6eba99b40c1fd0a9a03c19
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60161680"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60552924"
 ---
 # <a name="step-4---give-another-employee-access-to-onedrive-and-outlook-data"></a>手順 4 - 別の従業員にデータとOneDriveアクセスOutlookする
 
@@ -47,7 +47,7 @@ ms.locfileid: "60161680"
 
 2. ユーザーを選択します。
 
-3. 右側のウィンドウで、[**OneDrive**] を選択します。 [**ファイルへのアクセス**] で、[**ファイルへのリンクの作成**] を選択します。
+3. [ユーザーのプロパティ] ページで、[ユーザーのプロパティ]**をOneDrive。** [**ファイルへのアクセス**] で、[**ファイルへのリンクの作成**] を選択します。
 
 4. リンクを選択してファイルの場所を開きます。 ファイルをコンピューターにダウンロードするか、[**移動先**] または [**指定の場所にコピー**] を選択して、自分の OneDrive または共有ライブラリに移動またはコピーします。
 

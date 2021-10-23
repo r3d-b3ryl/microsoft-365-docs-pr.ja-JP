@@ -22,12 +22,12 @@ ms.custom:
 - commerce_billing
 - AdminTemplateSet
 ms.date: 05/04/2021
-ms.openlocfilehash: 9add2523eeedb9accdbc864979721fa7a3b99ac5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e947a4f73db3832abe4a02178a4e6161c86081bb
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60158636"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554626"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>サブスクリプションの支払い方法
 
@@ -120,7 +120,7 @@ ms.locfileid: "60158636"
 > - [Cape Verde](../pay/cape-verde.md)
 > - [ケイマン諸島](../pay/cayman-islands.md)
 > - [チリ](../pay/chile.md)
-> - [中華人民共和国](../pay/china-prc.md)
+> - [中国](../pay/china-prc.md)
 > - [コロンビア](../pay/colombia.md)
 > - [コスタリカ](../pay/costa-rica.md)
 > - [Ivory Coast (Côte d'Ivoire)](../pay/cote-divoire.md)

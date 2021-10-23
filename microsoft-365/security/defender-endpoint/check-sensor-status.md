@@ -1,9 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint のセンサーの正常性状態を確認する
-description: デバイスのセンサーの正常性を確認して、構成が誤り、非アクティブ、またはセンサー データを報告していないデバイスを特定します。
+description: デバイスのセンサーの正常性を確認して、構成が誤っている、非アクティブである、またはセンサー データを報告していないデバイスを特定します。
 keywords: センサー、センサーの正常性、構成ミス、非アクティブ、センサー データなし、センサー データ、通信障害、通信障害
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: e7794f99b21939c3cf51f4b5afe2b9da50f9b933
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e980cc5dd2f164acf8c63aab5511423d5a38d46b
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207069"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554998"
 ---
 # <a name="check-sensor-health-state-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint のセンサーの正常性状態を確認する
 

@@ -2,8 +2,6 @@
 title: Microsoft Defender for Endpoint サービスの正常性を確認する
 description: Microsoft Defender for Endpoint Service の正常性を確認し、サービスに問題が発生していないかを確認し、解決された以前の問題を確認します。
 keywords: ダッシュボード、サービス、問題、サービス正常性、現在の状態、状態履歴、影響の概要、予備的な根本原因、解決時間、解決時間、予想される解決時間
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7be50f2a0e83b5a69bb0529bf2ba227d0bb2d81d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 728d152d8c755464669d59e11746566472acd737
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206783"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553870"
 ---
 # <a name="check-the-microsoft-defender-for-endpoint-service-health"></a>Microsoft Defender for Endpoint サービスの正常性を確認する
 

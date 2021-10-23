@@ -18,22 +18,18 @@ search.appverid:
 - MOE150
 - GEA150
 description: '[レポート] ダッシュボードの [Microsoft 365 Apps] ダッシュボードを使用して使用状況レポートMicrosoft 365を取得する方法についてMicrosoft 365 管理センター。'
-ms.openlocfilehash: 7c93394233eea83eeb87bf68a508639dc3aee9a6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 21169f47d6066e60c33596aaf21f229dde7dc82e
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157388"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553090"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-apps-usage"></a>Microsoft 365管理センターのレポート - Microsoft 365 Apps使用状況
 
 Microsoft 365 の [**レポート**] ダッシュボードには、組織内での製品全体に関するアクティビティが表示されます。 これにより、個別の製品レベルのレポートを詳細に確認して、各製品内のアクティビティについてより詳しく知ることができます。 [レポートの概要に関するトピック](activity-reports.md)を参照してください。
 
  たとえば、Microsoft 365 Apps アプリを使用するライセンスを持つ各ユーザーのアクティビティを理解するには、アプリ全体でのアクティビティと、プラットフォーム間での利用方法を確認します。
-
-
- > [!NOTE]
- > レポートを表示するには、Microsoft 365 または Exchange、SharePoint、または Skype for Business 管理者のグローバル管理者、グローバル リーダー、またはレポート リーダーである必要があります。 共有コンピューターのライセンス認証は、このレポートには含まれません。
 
 ## <a name="how-to-get-to-the-microsoft-365-apps-usage-report"></a>使用状況レポートにアクセスMicrosoft 365 Apps方法
 
@@ -49,7 +45,7 @@ Microsoft 365 の [**レポート**] ダッシュボードには、組織内で�
 
 |アイテム|説明|
  |:-----|:-----|
- |1. <br/> |**[Microsoft 365 Apps利用状況** レポートは、過去 7 日間、30 日間、90 日間、または 180 日間の傾向を確認できます。 ただし、レポートで特定の日を選択すると、表 (7) には、(レポートが生成された日付ではなく) 現在の日付から最大 28 日間のデータが表示されます。 <br/> |
+ |1. <br/> |**[Microsoft 365 Apps利用状況** レポートは、過去 7 日間、30 日間、90 日間、または 180 日間の傾向を確認できます。 ただし、レポートで特定の日を選択すると、現在の日付から最大 28 日間のデータが表示されます (レポートが生成された日付ではありません)。 <br/> |
  |2. <br/> |各レポートのデータは、通常、過去 2 日間までカバーされます。 6 日ごとに、データの品質を確保するために、マイナーな更新プログラムを使用してレポートを更新します。 <br/> |
  |3。 <br/> |[**ユーザー]** ビューには、アプリ (Outlook、Word、Excel、PowerPoint、OneNote、および Teams のアクティブ ユーザー数の傾向が表示されます。 "アクティブ ユーザー" は、これらのアプリ内で意図的なアクションを実行するユーザーです。 <br/> |
  |4. <br/> |[**プラットフォーム] ビュー** には、各プラットフォームのすべてのアプリ (Windows、Mac、Web、およびモバイル) のアクティブ ユーザーの傾向が表示されます。 <br/> |

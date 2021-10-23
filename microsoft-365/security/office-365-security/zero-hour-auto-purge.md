@@ -22,12 +22,12 @@ ms.custom:
 description: ゼロ時間自動削除 (ZAP) は、Exchange Online メールボックス内の配信されたメッセージを、スパム、フィッシング、または配信後にマルウェアが含まれていると検出された迷惑メール フォルダーまたは検疫にさかのぼって移動します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ebfe8bd2eec176b57cfa55400525c8379f9ef4c8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c2b6e8ce6d15ad652b87e6529f9fd3cb2b3878f7
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197859"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60556342"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>ゼロ時間自動削除 (ZAP) (Exchange Online
 
@@ -64,7 +64,7 @@ ZAP アクションはユーザーにシームレスです。メッセージが�
 
 - **X-Header**、テキスト付 **き** 件名行の先頭に追加 **する、メッセージ** を電子メール アドレスにリダイレクト **する、メッセージ** を削除する: ZAP はメッセージに対してアクションを実行しない。
 
-- **メッセージを迷惑メールに** 移動する: ZAP は、メールボックスで迷惑メール ルールが有効になっている限り、メッセージを迷惑メール フォルダーに移動します (既定で有効になっています)。 詳細については、「迷惑メールの[設定を構成する」を参照Exchange OnlineのメールボックスMicrosoft 365。](configure-junk-email-settings-on-exo-mailboxes.md)
+- **メッセージを迷惑メールに移動** する : ZAP はメッセージを迷惑メール フォルダーに移動します。 詳細については、「迷惑メールの[設定を構成する」を参照Exchange OnlineのメールボックスMicrosoft 365。](configure-junk-email-settings-on-exo-mailboxes.md)
 
 - **検疫メッセージ**: ZAP はメッセージを検疫します。
 
@@ -84,7 +84,7 @@ ZAP アクションはユーザーにシームレスです。メッセージが�
 
 - **X-Header**、テキスト付 **き** 件名行の先頭に追加 **する、メッセージ** を電子メール アドレスにリダイレクト **する、メッセージ** を削除する: ZAP はメッセージに対してアクションを実行しない。
 
-- **メッセージを迷惑メールに** 移動する: ZAP は、メールボックスで迷惑メール ルールが有効になっている限り、メッセージを迷惑メール フォルダーに移動します (既定で有効になっています)。 詳細については、「迷惑メールの[設定を構成する」を参照Exchange OnlineのメールボックスMicrosoft 365。](configure-junk-email-settings-on-exo-mailboxes.md)
+- **メッセージを迷惑メールに移動** する : ZAP はメッセージを迷惑メール フォルダーに移動します。 詳細については、「迷惑メールの[設定を構成する」を参照Exchange OnlineのメールボックスMicrosoft 365。](configure-junk-email-settings-on-exo-mailboxes.md)
 
 - **検疫メッセージ**: ZAP はメッセージを検疫します。 既定では、エンド ユーザーは受信者であるスパム検疫済みメッセージを表示および管理できます。 ただし、管理者は検疫ポリシーを作成して使用して、スパムとして検疫されたメッセージに対してユーザーが実行できる操作を定義できます。 詳細については、「検疫ポリシー [」を参照してください。](quarantine-policies.md)
 

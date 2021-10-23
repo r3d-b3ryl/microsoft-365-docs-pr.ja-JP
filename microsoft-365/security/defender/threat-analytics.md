@@ -3,8 +3,6 @@ title: 脅威分析 (Microsoft 365 Defender
 ms.reviewer: ''
 description: 新たな脅威と攻撃の手法と、それらを停止する方法について説明します。 組織への影響を評価し、組織の回復力を評価します。
 keywords: 脅威分析、リスク評価、Microsoft 365 Defender、M365D、軽減状態、セキュリティで保護された構成、Microsoft Defender for Office 365、Microsoft Defender for Office 365 脅威分析、MDO 脅威分析、統合 MDE および MDO 脅威分析データ、脅威分析データ統合、統合 Microsoft 365 Defender 脅威分析
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -21,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2980eb4d5fe2d16d38237d3166b9c25810985fab
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 869dad3e3b5acd34f27cbac83d2a9ab089bddd41
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205105"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554854"
 ---
 # <a name="threat-analytics-in-microsoft-365-defender"></a>脅威分析 (Microsoft 365 Defender 
 
@@ -222,7 +220,7 @@ _脅威分析レポートの [軽減策] セクション_
 - デバイスは、サービスにデータを送信していない場合は、"使用不可" としてカウントされます。
 - ウイルス対策関連の統計情報は、ユーザー設定Microsoft Defender ウイルス対策されます。 サードパーティのウイルス対策ソリューションを使用するデバイスは、"公開" として表示されます。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [高度な検索で脅威を事前に検出する](advanced-hunting-overview.md) 
 - [[アナリスト レポート] セクションについて](threat-analytics-analyst-reports.md)

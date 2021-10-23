@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: 組織がコミュニケーションと共同作業を行うMicrosoft 365サービスを採用する方法の概要を確認します。
-ms.openlocfilehash: 1db5444c5d7829e5f55a961827122817f4d5885e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: acdd6899a8f555e4deb9f6f2c262c45ca299abff
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60155720"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60552670"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Microsoft 365 利用状況分析
 
@@ -82,6 +82,9 @@ Microsoft 365分析には、次のセクションで詳細なレポートが多�
 
 ユーザー アクティビティ レポートは、特定の個々のサービスで使用できます。 これらのレポートは、Active Directory 属性と結合されたユーザー レベルの詳細使用状況データを提供します。 さらに、部門導入レポートを使用すると、Active Directory 属性でスライスして、すべての個々のサービスでアクティブなユーザーを確認できます。 すべての指標は、最新の完全な月に集計されます。 コンテンツの日付を表示するには、テーブル ページに移動し、TimeFrame の下の値がレポート期間を提供する UserActivity テーブルを選択します。 
 
+> [!NOTE]
+> グローバル 閲覧者と利用状況の概要レポート 閲覧者には、ユーザー アクティビティ レポートを表示する権限が付与されています。 
+
 ## <a name="faq"></a>よくあるご質問 (FAQ)
 
 ### <a name="is-this-template-app-going-to-be-available-through-purchase-or-will-it-be-free"></a>このテンプレート アプリは購入によって利用できるか、それとも無料になるか。
@@ -89,13 +92,10 @@ Microsoft 365分析には、次のセクションで詳細なレポートが多�
 無料ではなく、ライセンスをPower BI Proします。 詳細については、「 [テンプレート アプリの](/power-bi/service-template-apps-install-distribute#prerequisites) インストール、カスタマイズ、配布の前提条件」を参照してください。
 
 ダッシュボードを他のユーザーと共有するには、「Share ダッシュボードとレポート」 [を参照してください](/power-bi/service-how-to-collaborate-distribute-dashboards-reports#share-dashboards-and-reports)。
-### <a name="is-the-usage-summary-reports-reader-role-enough-to-view-the-usage-analytics"></a>利用状況の分析を表示するには、利用状況の概要レポート リーダーの役割が十分ですか?
-
-利用状況の概要レポート 閲覧者の役割では、使用状況分析でテナント レベルの集計Microsoft 365アクセスできます。  変更管理と導入を担当しているが、必ずしも IT 管理者とは限らないすべてのユーザーに対して、レポート リーダーまたは利用状況概要レポート リーダーの役割をお勧めします。
 
 ### <a name="who-can-connect-to-microsoft-365-usage-analytics"></a>誰が Microsoft 365 利用状況分析に接続できますか。
 
-テンプレート アプリへの接続を確立するには、グローバル管理者 **、Exchange** 管理者 **、Skype for Business****管理者、SharePoint 管理者**、グローバル リーダー  、またはレポートリーダーのいずれかである必要があります。 詳細については [、「管理者ロールについて](../add-users/about-admin-roles.md) 」を参照してください。
+テンプレート アプリへの接続を確立するには、グローバル管理者 **、Exchange** 管理者 **、Skype for Business****管理者、SharePoint 管理者**、グローバル リーダー、レポート リーダー、利用状況概要レポート **リーダー** のいずれかである必要があります。 詳細については [、「管理者ロールについて](../add-users/about-admin-roles.md) 」を参照してください。 **注:** グローバル **閲覧** 者と利用状況の概要レポート 閲覧者は、Microsoft 365 利用状況分析でテナント レベルの集計へのアクセスのみを許可し、ユーザー アクティビティ レポートを表示する権限を持つ必要があります。 
 
 ### <a name="who-can-customize-the-usage-analytics-reports"></a>Who分析レポートをカスタマイズできますか?
 

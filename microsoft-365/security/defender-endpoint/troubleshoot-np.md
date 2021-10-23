@@ -2,7 +2,6 @@
 title: ネットワーク保護に関する問題のトラブルシューティング
 description: Microsoft Defender for Endpoint のネットワーク保護に関する問題のトラブルシューティングを行うリソースとサンプル コード。
 keywords: トラブルシューティング、エラー、修正、Windows Defender 例、asr、ルール、ヒップ、トラブルシューティング、監査、除外、誤検知、破損、ブロック、Microsoft Defender for Endpoint
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -16,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: fce2366a155dca3f045497abf2a7a9892180710d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 131021236f5294f10f9abdf6e4ba170e2349b707
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159320"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555754"
 ---
 # <a name="troubleshoot-network-protection"></a>ネットワーク保護のトラブルシューティング
 
@@ -72,7 +71,7 @@ ms.locfileid: "60159320"
 
 3. [ネットワーク保護イベント ログを確認](network-protection.md#review-network-protection-events-in-windows-event-viewer) して、機能が [有効] に設定されている場合に接続がブロックされた可能性を確認 **します**。
 
-   ネットワーク保護がブロックする必要がある接続をブロックしていない場合は、この機能を有効にします。
+   ネットワーク保護がブロックする必要がある接続をブロックしない場合は、機能を有効にします。
 
    ```PowerShell
    Set-MpPreference -EnableNetworkProtection Enabled
@@ -80,7 +79,7 @@ ms.locfileid: "60159320"
 
 ## <a name="report-a-false-positive-or-false-negative"></a>誤検知または偽陰性を報告する
 
-デモ サイトと監査モードで機能をテストし、ネットワーク保護が事前構成されたシナリオで動作しているが、特定の接続で期待通りには動作しない場合は[、Windows Defender Security Intelligence](https://www.microsoft.com/wdsi/filesubmission) Web ベースの申請フォームを使用して、ネットワーク保護に対して誤検知または誤検知を報告します。 E5 サブスクリプションを使用すると、関連 [付けられたアラートへのリンクを提供できます](alerts-queue.md)。
+デモ サイトと監査モードで機能をテストし、ネットワーク保護が事前構成されたシナリオで動作しているが、特定の接続に対して期待通りには機能しない場合は[、Windows Defender Security Intelligence](https://www.microsoft.com/wdsi/filesubmission) Web ベースの申請フォームを使用して、ネットワーク保護に対して誤検知または誤検知を報告します。 E5 サブスクリプションを使用すると、関連 [付けられたアラートへのリンクを提供できます](alerts-queue.md)。
 
 「Address [false positives/negatives in Microsoft Defender for Endpoint」を参照してください](defender-endpoint-false-positives-negatives.md)。
 

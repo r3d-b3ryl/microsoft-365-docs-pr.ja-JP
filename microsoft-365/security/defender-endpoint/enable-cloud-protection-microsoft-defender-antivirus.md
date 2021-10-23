@@ -2,7 +2,6 @@
 title: クラウド保護をオンMicrosoft Defender ウイルス対策
 description: クラウド保護を有効にし、高速かつ高度な保護機能を利用できます。
 keywords: Microsoft Defender ウイルス対策マルウェア対策、セキュリティ、クラウド、一目でブロックする
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -10,18 +9,18 @@ ms.localizationpriority: medium
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
-ms.date: 08/31/2021
+ms.date: 10/18/2021
 ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 68a98b3ddcc12d185d8b06827ed68044ab062257
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b523956d031ee96d8d6a23215bf88661b1995d3a
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196947"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555046"
 ---
 # <a name="turn-on-cloud-protection-in-microsoft-defender-antivirus"></a>クラウド保護をオンMicrosoft Defender ウイルス対策
 
@@ -45,7 +44,7 @@ ms.locfileid: "60196947"
 エンドポイントがクラウド保護サービスに接続できるよう、特定のネットワーク接続要件の詳細については、「ネットワーク接続の構成と検証」を [参照してください](configure-network-connections-microsoft-defender-antivirus.md)。
 
 > [!NOTE]
-> このWindows 10、このトピックで説明する **Basic** レポート オプションと **Advanced** レポート オプションの違いはありません。 これは従来の違いであり、どちらかの設定を選択すると、クラウド保護の同じレベルになります。 共有される情報の種類や量に違いはありません。 収集する情報の詳細については [、「Microsoft Privacy Statement」を参照してください](https://go.microsoft.com/fwlink/?linkid=521839)。
+> 11 Windows 10および Windowsでは、このトピックで説明する基本レポート オプションと **詳細** レポート オプションの違いはありません。 これは従来の違いであり、どちらかの設定を選択すると、クラウド保護の同じレベルになります。 共有される情報の種類や量に違いはありません。 収集する情報の詳細については [、「Microsoft Privacy Statement」を参照してください](https://go.microsoft.com/fwlink/?linkid=521839)。
 
 ## <a name="use-intune-to-turn-on-cloud-protection"></a>Intune を使用してクラウド保護を有効にする
 

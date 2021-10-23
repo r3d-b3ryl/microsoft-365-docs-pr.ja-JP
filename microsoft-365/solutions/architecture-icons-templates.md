@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 9f91f152011d94cc1b12fa21e0ee10878859ec1c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b4fedde7404f8ef274cab90fa87fdd21c093d8eb
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191351"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60556270"
 ---
 # <a name="microsoft-365-architecture-icons-and-templates"></a>Microsoft 365アイコンとテンプレート
 
@@ -48,3 +48,9 @@ Microsoft では、アーキテクチャ図、トレーニング 資料、また
 2. Teamsライフサイクル アーキテクチャ図:
 
     ![Teams保持ライフサイクル。](../media/TeamsRetentionLifecycle.png)
+
+## <a name="more-icon-sets-from-microsoft"></a>Microsoft のその他のアイコン セット
+
+- [Azure アーキテクチャのアイコン](/azure/architecture/icons/)
+- [Dynamics 365 アーキテクチャ アイコン](/dynamics365/get-started/icons)
+- [Microsoft Power Platform のアイコン](/power-platform/guidance/icons)

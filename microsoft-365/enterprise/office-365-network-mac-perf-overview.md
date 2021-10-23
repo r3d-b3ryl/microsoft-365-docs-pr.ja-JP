@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: ネットワーク接続の概要 (Microsoft 365 管理 センター)
-ms.openlocfilehash: 479b779e466f9c3e7168856642be4a129dbbcf1a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 579166cef377810dfe38993bf3736e65d46f8c0c
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150596"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60552850"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理 センターのネットワーク接続
 
@@ -63,7 +63,11 @@ WindowsLocation Service は、コンピューター上で同意する必要が�
 
 このオプションでは、位置情報サービスWindowsも、Wi-Fiも必要ありません。 このOneDriveのWindowsは、最新のバージョンで、その場所にある少なくとも 1 つのコンピューターにインストールされている必要があります。
 
-また、[場所] ページに場所を追加するか **、CSV** ファイルから場所をインポートする必要があります。 追加する場所には、Office LAN サブネット情報が含まれる必要があります。
+場所ページに場所も追加するか、CSVファイルからインポートしてください。 追加する場所には、Office LAN サブネット情報が含まれる必要があります。 場所を追加または編集するダイアログで、複数の LAN サブネットと多数のパブリック出力 IP サブネットを指定できます。 LAN サブネットが必要であり、結果を表示するには、受信したネットワーク評価の LAN サブネット属性と一致する必要があります。 スーパー ネットはサポートされていないので、LAN サブネットは完全に一致する必要があります。
+
+通常、LAN サブネットは RFC1918 で定義されているプライベート IP アドレス範囲で、LAN サブネットとしてのパブリック IP アドレスの使用が正しくない可能性があります。 このダイアログには、組織の最近のネットワーク評価テストで確認された LAN サブネットの候補が表示され、選択できます。
+
+パブリック出力 IP アドレスを追加する場合、これらはセカンダリの差別化要因として使用され、同じ LAN サブネット IP アドレス範囲を使用する複数のサイトがある場合に使用されます。 テスト結果が表示されるのを確認するには、まずパブリック出力 IP アドレスの範囲を空白のままにする必要があります。 テスト結果が含まれている場合、テスト結果は LAN サブネット IP アドレス範囲とパブリック出力 IP アドレス範囲の両方と一致する必要があります。
 
 このオプションを使用すると、都市内で複数のオフィスを定義できます。
 
@@ -224,7 +228,7 @@ Microsoft 365サービス フロント ドアは、Microsoft のグローバル 
 
 ユーザーにアクセスできるライセンスが必要Microsoft 365 管理センター。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [Microsoft 365分析情報 (プレビュー)](office-365-network-mac-perf-insights.md)
 
