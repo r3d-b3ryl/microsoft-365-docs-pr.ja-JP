@@ -42,6 +42,8 @@
       href: topic-experiences-security-trimming.md
     - name: トピックを検索する
       href: search.md
+    - name: 分類法を使用してトピックを作成する
+      href: sharepoint-taxonomy.md
     - name: トピックを規模に応じて管理する
       href: scale-topics.md
 - name: 導入
