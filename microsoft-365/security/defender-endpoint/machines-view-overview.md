@@ -2,8 +2,6 @@
 title: Microsoft Defender for Endpoint デバイスリストの表示と整理
 description: リストの並べ替え、フィルター処理、エクスポートなど、[デバイス] リストから使用できる機能について学習し、調査を強化します。
 keywords: 並べ替え、フィルター、エクスポート、csv、デバイス名、ドメイン、最後に見た、内部 IP、正常性状態、アクティブなアラート、アクティブなマルウェア検出、脅威カテゴリ、確認アラート、ネットワーク、接続、マルウェア、種類、パスワード盗み、ランサムウェア、悪用、脅威、一般的なマルウェア、望ましくないソフトウェア
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: bd3e8a9a265070f3cda61a2c96eb704ed2dc177a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 51b55a92a88dfa5faf89df89bfc3351b97571feb
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60169829"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60588327"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-devices-list"></a>Microsoft Defender for Endpoint Devices リストの表示と整理
 
@@ -82,9 +80,9 @@ ms.locfileid: "60169829"
 
 調査する OS プラットフォームのみを選択します。
 
-### <a name="windows-10-versions"></a>Windows 10バージョン
+### <a name="windows-versions"></a>Windowsバージョン
 
-調査するWindows 10バージョンのみを選択します。
+調査するWindowsのバージョンのみを選択します。
 
 ### <a name="health-state"></a>正常性の状態
 
@@ -122,6 +120,6 @@ ms.locfileid: "60169829"
 
 個々のデバイスに追加したグループ化とタグ付けに基づいてリストをフィルター処理します。 「デバイス [タグの作成と管理」を参照してください](machine-tags.md)。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [Microsoft Defender for Endpoint Devices リストのデバイスを調査する](investigate-machines.md)

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1dc55f9f-5309-450f-acc3-b2b4119c8be3
 description: Microsoft のネットワーク ソリューションで、ドメインを確認し、電子メール、オンライン、Skype for Businessサービスの DNS レコードを設定する方法について説明します。
-ms.openlocfilehash: cc954871488839cbf7879248535362b85bcf2bac
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: f0599ef178e9a3dde097b94e7c3f980f59e88636
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60557032"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586353"
 ---
 # <a name="connect-your-dns-records-at-network-solutions-to-microsoft-365"></a>Connectソリューションで DNS レコードを作成して、Microsoft 365
 
@@ -86,9 +86,13 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
   
 1. 管理センターで、[ドメイン] の **設定** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**します**</a>。
     
-2. [ドメイン] ページで、確認するドメインを選択し、[セットアップの開始] **を選択します**。   
+1. [ドメイン] ページで、確認するドメインを選択し、[セットアップの開始] **を選択します**。 
+
+    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="[セットアップの開始] を選択します。":::
+
+1. **[続行]** を選択します。
   
-3. **[ドメインの確認]** ページで、**[確認]** を選択します。
+1. **[ドメインの確認]** ページで、**[確認]** を選択します。
     
 > [!NOTE]
 > 通常、DNS の変更が有効になるのに 15 分ほどかかります。ただし、インターネットの DNS システム全体を更新する変更の場合、さらに長くかかることもあります。DNS レコードの追加でメール フローなどに問題が発生した場合は、「[ドメイン名または DNS レコードの変更後の問題に関するトラブルシューティング](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。
@@ -140,7 +144,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 
     :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-1.png" alt-text="ドロップダウン リストから [管理] を選択します。":::
   
-1. [高度 **なツール]** を選択し、[高度な DNS レコード] **の横にある**[管理] を **選択します。**
+1. [高度 **なツール] を** 選択し、[高度な DNS レコード] **の横にある**[管理] を **選択します**。
     
     :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-2.png" alt-text="[高度な DNS レコード] の横にある [管理] を選択します。":::
 

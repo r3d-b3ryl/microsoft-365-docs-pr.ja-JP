@@ -2,7 +2,7 @@
 title: Linux 用 Microsoft Defender for Endpoint を手動で展開する
 ms.reviewer: ''
 description: コマンド ラインから手動で Linux 用 Microsoft Defender for Endpoint を展開する方法について説明します。
-keywords: Microsoft、Defender、Microsoft Defender for Endpoint、Linux、インストール、展開、アンインストール、puppet、ansible、linux、redhat、ubuntu、debian、sles、suse、centos
+keywords: microsoft、 defender、 Microsoft Defender for Endpoint, Linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos, fedora, amazon linux 2
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 437669f392f108526670d3eca3aef4071aa8cb02
-ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
+ms.openlocfilehash: ade60ba21b97a22795740cc57971e9b197eb0322
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60478879"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587187"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Linux 用 Microsoft Defender for Endpoint を手動で展開する
 
@@ -39,7 +39,7 @@ ms.locfileid: "60478879"
 - [Linux 用 Microsoft Defender for Endpoint を手動で展開する](#deploy-microsoft-defender-for-endpoint-on-linux-manually)
   - [前提条件とシステム要件](#prerequisites-and-system-requirements)
   - [Linux ソフトウェア リポジトリを構成する](#configure-the-linux-software-repository)
-    - [RHEL とバリエーション (CentOS および Oracle Linux)](#rhel-and-variants-centos-oracle-linux-and-amazon-linux-2)
+    - [RHEL とバリアント (CentOS、Fedora、Oracle Linux、Amazon Linux 2)](#rhel-and-variants-centos-fedora-oracle-linux-and-amazon-linux-2)
     - [SLES とバリエーション](#sles-and-variants)
     - [Ubuntu および Debian システム](#ubuntu-and-debian-systems)
   - [アプリケーションのインストール](#application-installation)
@@ -65,7 +65,7 @@ Linux 用 Defender for Endpoint は、次のチャネル (以下、*[チャネ�
 > [!WARNING]
 > 初期インストール後にチャネルを切り替えるには、製品を再インストールする必要があります。製品チャネルを切り替えるには: 既存のパッケージをアンインストールし、新しいチャネルを使用するようにデバイスを再構成し、このドキュメントの手順に従って新しい場所からパッケージをインストールします。
 
-### <a name="rhel-and-variants-centos-oracle-linux-and-amazon-linux-2"></a>RHEL とバリアント (CentOS、Oracle Linux、Amazon Linux 2)
+### <a name="rhel-and-variants-centos-fedora-oracle-linux-and-amazon-linux-2"></a>RHEL とバリアント (CentOS、Fedora、Oracle Linux、Amazon Linux 2)
 
 - まだインストールされていない場合は、`yum-utils` をインストールします。
 
@@ -85,7 +85,9 @@ Linux 用 Defender for Endpoint は、次のチャネル (以下、*[チャネ�
     |---|---|
     |RHEL/Centos/Oracle 8.0-8.5 の場合|<https://packages.microsoft.com/config/rhel/8/[channel].repo>|
     |RHEL/Centos/Oracle 7.2-7.9 & Linux 2 の場合 |<https://packages.microsoft.com/config/rhel/7/[channel].repo>|
-    | RHEL/Centos/Oracle 6.7-6.10 の場合 | <https://packages.microsoft.com/config/rhel/6/[channel].repo>
+    |RHEL/Centos/Oracle 6.7-6.10 の場合|<https://packages.microsoft.com/config/rhel/6/[channel].repo>|
+    |Fedora 33 の場合|<https://packages.microsoft.com/config/fedora/33/prod.repo>|
+    |Fedora 34 の場合|<https://packages.microsoft.com/config/fedora/34/prod.repo>|
 
     次のコマンドで、*[バージョン]* と *[チャネル]* を特定した情報に置き換えます。
 

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5176feef-36dc-4d84-842f-1f2b5a21ba96
 description: ドメインを確認し、電子メール、オンライン、その他のサービスの DNS レコードSkype for Business OVH for Microsoft で設定する方法について説明します。
-ms.openlocfilehash: c7f5516ba9f50ea25f82d4511c542227d6d98453
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 7da9094a5d4cff2f93ab87251b29fc81bedc51ca
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60557023"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587007"
 ---
 # <a name="connect-your-dns-records-at-ovh-to-microsoft-365"></a>Connectに OVH で DNS レコードをMicrosoft 365
 
@@ -81,13 +81,17 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
     
 これで、ドメイン レジストラーのサイトでレコードが追加されました。Microsoft に戻り、レコードをリクエストします。 Microsoft で正しい TXT レコードが見つかった場合、ドメインは確認済みとなります。
  
-ドメインを確認するには、次Microsoft 365。
- 
+レコードを確認するには、次Microsoft 365。
+  
 1. 管理センターで、[ドメイン] の **設定** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**します**</a>。
     
-2. [ドメイン] ページで、確認するドメインを選択し、[セットアップの開始] **を選択します**。   
+1. [ドメイン] ページで、確認するドメインを選択し、[セットアップの開始] **を選択します**。 
+
+    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="[セットアップの開始] を選択します。":::
+
+1. **[続行]** を選択します。
   
-3. **[ドメインの確認]** ページで、**[確認]** を選択します。
+1. **[ドメインの確認]** ページで、**[確認]** を選択します。
     
 > [!NOTE]
 >  通常、DNS の変更が有効になるのに 15 分ほどかかります。ただし、インターネットの DNS システム全体を更新する変更の場合、さらに長くかかることもあります。DNS レコードの追加でメール フローなどに問題が発生した場合は、「[ドメイン名または DNS レコードの変更後の問題に関するトラブルシューティング](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。 
@@ -195,7 +199,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 1. In the boxes for the new record, type or copy and paste the following values. TTL 値を割り当てるには、ドロップダウン リストから **[カスタム** ] を選択し、テキスト ボックスに値を入力します。 
     
     |**サブドメイン**|**TTL**|**値**|
-    |:-----|:-----|:-----|:-----|
+    |:-----|:-----|:-----|
     |(空白のまま)  <br/> |3600 (秒)  <br/> |v=spf1 include:spf.protection.outlook.com -all <**br/Note:** このエントリをコピーして貼り付け、すべての間隔が正しいままにすることをお勧めします。           |
    
     ![OVH SPF の TXT レコードを追加します。](../../media/f50466e9-1557-4548-8a39-e98978a5ee2e.png)

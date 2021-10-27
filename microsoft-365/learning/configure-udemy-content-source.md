@@ -16,14 +16,17 @@ ms.collection:
 localization_priority: medium
 description: Udemy を学習コンテンツ ソースとして構成する方法についてMicrosoft Viva ラーニング。
 ROBOTS: NOINDEX
-ms.openlocfilehash: edd11ba3a1b3edc8b7019de45261fb9b539a2efb
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 404f70983f1deadfac111829f026bd3ccdbcb633
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60557083"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587947"
 ---
 # <a name="configure-udemy-as-a-content-source-for-microsoft-viva-learning"></a>Udemy をコンテンツ ソースとして構成Microsoft Viva ラーニング
+
+>[!NOTE]
+>この機能はプレビューではサポートされていません。
 
 この記事では、Udemy をサードパーティのラーニング コンテンツ ソースとして構成する方法についてMicrosoft Viva ラーニング。
 

@@ -2,8 +2,6 @@
 title: Microsoft Defender for Endpoint ファイルの調査
 description: 調査オプションを使用して、アラート、動作、またはイベントに関連付けられたファイルの詳細を取得します。
 keywords: 調査、調査、ファイル、悪意のあるアクティビティ、攻撃の動機、深い分析、深い分析レポート
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -19,12 +17,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 99bcf3c3d3381ffe226aeb54a72c7a673b06e88e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: dc0b5326f4f5a0400ea624a85a57bc0cb12b577a
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60166364"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60588091"
 ---
 # <a name="investigate-a-file-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Microsoft Defender for Endpoint アラートに関連付けられたファイルを調査する
 
@@ -108,7 +106,7 @@ ms.locfileid: "60166364"
 
 ![[ファイル名] タブのイメージ。](images/atp-file-names.png)
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [Microsoft Defender for Endpoint キューの表示と整理](alerts-queue.md)
 - [エンドポイント通知の Microsoft Defender の管理](manage-alerts.md)

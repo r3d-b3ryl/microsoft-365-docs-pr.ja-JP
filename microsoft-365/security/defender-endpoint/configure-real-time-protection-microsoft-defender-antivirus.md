@@ -11,16 +11,16 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.topic: article
-ms.date: 10/18/2021
+ms.date: 10/22/2021
 manager: dansimp
 ms.custom: nextgen
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 1861e15ce72bafdafa796463ff41163c338fc8bf
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: b428767dab4a3087c857de389ee8e6b66f3e42ab
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555622"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60588194"
 ---
 # <a name="enable-and-configure-microsoft-defender-antivirus-always-on-protection-in-group-policy"></a>グループ ポリシーで Microsoft Defender ウイルス対策を常時保護を有効にして構成する
 
@@ -49,20 +49,11 @@ ms.locfileid: "60555622"
 
 2. ローカル グループ ポリシー エディターの **左側のウィンドウ** で、ツリーを [コンピューター構成] [管理用テンプレート] Windows \>  \> **展開** \> Microsoft Defender ウイルス対策。
 
-3. 次のようにMicrosoft Defender ウイルス対策マルウェア対策サービス ポリシー設定を構成します。
+3. マルウェア対策サービス Microsoft Defender ウイルス対策設定を構成します。
 
-   1. 右側の **Microsoft Defender ウイルス対策** ウィンドウで、次の表で指定したポリシー設定をダブルクリックします。
+   右側の **[Microsoft Defender ウイルス対策** 詳細] ウィンドウで、[マルウェア対策サービスを通常の優先度で起動する] をダブルクリックし、[有効] に **設定します**。
 
-      <br/><br/>
-
-      |Setting|既定の設定|
-      |---|---|
-      |マルウェア対策サービスが通常の優先度で起動を許可する <p> エンジンの優先度を下Microsoft Defender ウイルス対策できます。 優先度を下げることは、可能な限りスタートアップ プロセスを無駄にしたい場合に役立ちます。ただし、このアクションを実行すると、エンドポイント保護に影響を与える可能性があります。 慎重に進みます。|有効
-      |マルウェア対策サービスの実行を常に許可する <p> 保護更新プログラムが無効になっている場合は、引き続き実行Microsoft Defender ウイルス対策設定できます。 保護更新プログラムを無効にすると、エンドポイント保護が低下します。|無効|
-
-   2. 必要に応じて設定を構成し **、[OK] を選択します**。
-
-   3. 表の各設定について、前の手順を繰り返します。
+   次に [**OK**] を選びます。
 
 4. 次のようにMicrosoft Defender ウイルス対策保護ポリシー設定を構成します。
 
@@ -78,19 +69,9 @@ ms.locfileid: "60555622"
 
     1. 左側のウィンドウ **Microsoft Defender ウイルス対策** から、[スキャン] を **選択します**。
     
-       ![Microsoft Defender ウイルス対策スキャン オプション。](images/gpedit-windows-defender-antivirus-scan.png)
+   2. 右側の **[スキャン** の詳細] ウィンドウで、[ヒューリスティックを有効にする] をダブルクリックし、[有効] に **設定します**。 
 
-      ![Microsoft Defender ウイルス対策スキャン オプション](images/gpedit-windows-defender-antivirus-scan.png)
-
-   2. 右側の **[スキャン** の詳細] ウィンドウで、次の表で指定したポリシー設定をダブルクリックします。
-      <br/><br/>
-
-      |Setting|既定の設定|
-      |---|---|
-      |ヒューリスティックを有効にする <p> ヒューリスティック保護は、アクティビティの検出を求Microsoft Defender ウイルス対策される直前に、疑わしいアクティビティを無効またはブロックします。|有効|
-
-
-   3. 必要に応じて設定を構成し **、[OK] を選択します**。
+   3. **[OK]** を選択します。
 
 6. [ローカル **グループ ポリシー エディターを閉じる] をクリックします**。
 
@@ -129,11 +110,7 @@ ms.locfileid: "60555622"
 
 3. 右側の **[リアルタイム保護の詳細]** ウィンドウで、[リアルタイム保護をオフ **にする] をダブルクリックします**。
 
-   ![リアルタイム保護をオフにします。](images/gpedit-turn-off-real-time-protection.png)
-
 4. [リアルタイム **保護をオフにする] 設定** ウィンドウで、オプションを [有効] に **設定します**。
-
-   ![[リアルタイム保護を有効にする] をオフにします。](images/gpedit-turn-off-real-time-protection-enabled.png)
    
 5. **[OK] を選択します**。
 

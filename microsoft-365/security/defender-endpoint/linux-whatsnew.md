@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 779f77b39eeaf58918c115582f62fb08199f1b91
-ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
+ms.openlocfilehash: ab59d5511037d9b1c1a4b0aa7a6404ab27b8fb56
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60478891"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586103"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender for Endpoint on Linux の新機能
 
@@ -31,7 +31,7 @@ ms.locfileid: "60478891"
 ## <a name="1014513-30121082145130"></a>101.45.13 (30.121082.14513.0)
 
 - このバージョンでは、Microsoft Defender for Endpoint のサポートを次のディストリビューションに追加しています。 
-  -  RHEL6.7-6.10 および CentOS6.7-6.10 バージョン。
+  - RHEL6.7-6.10 および CentOS6.7-6.10 バージョン。
   - Amazon Linux 2
   - Fedora 33 以上
 - バグ修正

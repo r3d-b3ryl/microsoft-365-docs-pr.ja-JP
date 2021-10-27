@@ -3,18 +3,19 @@ title: Microsoft Viva トピックの使用を開始する
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
-audience: admin
+audience: enabler, admin
 ms.topic: article
+ms.custom: intro-get-started
 ms.service: o365-administration
 search.appverid: ''
 ms.localizationpriority: medium
 description: このサイトで情報を検出および探索する新しい方法についてMicrosoft Viva トピック。
-ms.openlocfilehash: 215282cfcaa81b3fa1d4f35782308989c5eb2434
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 46c66a97237415d24d11e885452d91c788063eee
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152540"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60585815"
 ---
 # <a name="get-started-with-microsoft-viva-topics"></a>Microsoft Viva トピックの使用を開始する
 

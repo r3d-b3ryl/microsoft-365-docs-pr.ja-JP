@@ -16,14 +16,17 @@ ms.collection:
 localization_priority: medium
 description: Go1 を学習コンテンツ ソースとして構成する方法についてMicrosoft Viva ラーニング。
 ROBOTS: NOINDEX
-ms.openlocfilehash: 2751a855f663ca47f0e5896b489f4ee9d3055cf5
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: ade44c0cc7607ab1b7a247ee60bdd2ca3505e6e9
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60557295"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586163"
 ---
 # <a name="configure-go1-as-a-content-source-for-microsoft-viva-learning"></a>Go1 をコンテンツ ソースとして構成Microsoft Viva ラーニング
+
+>[!NOTE]
+>この機能はプレビューではサポートされていません。
 
 この記事では、ビバ グループのサードパーティのラーニング コンテンツ ソースとして Go1 を構成するラーニング。
 

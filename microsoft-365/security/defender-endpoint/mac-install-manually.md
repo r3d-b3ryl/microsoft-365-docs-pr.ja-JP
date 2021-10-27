@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5e94467557df7cefc5e1adaddc5a1ae515ef508a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b198cbfe979cc8453db289911ab48de601a3edd2
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152192"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60585967"
 ---
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>macOS での Microsoft Defender for Endpoint の手動展開
 
@@ -92,27 +92,27 @@ ms.locfileid: "60152192"
 
 1. Finder でダウンロードした wdav.pkg に移動し、開きます。
 
-    ![アプリのインストールのスクリーンショット 4.](images/big-sur-install-1.png)
+    ![アプリのインストールのスクリーンショット 4.](images/monterey-install-1.png)
 
 2. [ **続行] を** 選択し、ライセンス条項に同意し、メッセージが表示されたらパスワードを入力します。
 
 3. インストール プロセスの最後に、製品で使用されるシステム拡張機能を承認するように昇格されます。 [Open **Security Preferences] を選択します**。
 
-    ![システム拡張機能の承認。](images/big-sur-install-2.png)
+    ![システム拡張機能の承認。](images/monterey-install-2.png)
 
 4. [セキュリティ] **ウィンドウの [&] ウィンドウで** 、[許可] を **選択します**。
 
-    ![システム拡張機能のセキュリティの基本設定 1.](images/big-sur-install-3.png)
+    ![システム拡張機能のセキュリティの基本設定 1.](images/monterey-install-3.png)
 
 5. Microsoft Defender for Endpoint on Mac で配布&すべてのシステム拡張機能について、手順 3 から 4 を繰り返します。
 
 6. エンドポイント検出と応答機能の一環として、Microsoft Defender for Endpoint on Mac はソケット トラフィックを検査し、この情報をポータルMicrosoft 365 Defenderします。 ネットワーク トラフィックをフィルター処理するための Microsoft Defender for Endpoint アクセス許可の付与を求めるメッセージが表示されたら、[許可] を **選択します**。
 
-    ![システム拡張機能のセキュリティ設定 2.](images/big-sur-install-4.png)
+    ![システム拡張機能のセキュリティ設定 2.](images/monterey-install-4.png)
 
 7. [System **Preferences** Security & プライバシー] を開き、[プライバシー] タブに移動します。Microsoft Defender ATP および Microsoft Defender ATP Endpoint Security Extension にフル ディスク アクセスのアクセス許可を \> **付与します**。   
 
-    ![ディスクへのフル アクセス。](images/big-sur-install-5.png)
+    ![ディスクへのフル アクセス。](images/monterey-install-5.png)
 
 ## <a name="client-configuration"></a>クライアントの構成
 

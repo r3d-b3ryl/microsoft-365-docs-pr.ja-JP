@@ -4,8 +4,10 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: cjtan
-audience: ''
-ms.topic: article
+ms.date: 11/02/2021
+audience: enabler, admin
+ms.topic: landing-page
+ms.custom: intro-hub-or-landing
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
@@ -13,12 +15,12 @@ ms.collection:
 - m365initiative-viva-topics
 ms.localizationpriority: medium
 description: Microsoft Viva トピックに関するリソースの検索方法について説明します。
-ms.openlocfilehash: 384b8ad34f6f9d162a30ba997d0f322e639f3928
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 56fe106b9a7f016287f6a0994882beb2f3626a79
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152504"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586827"
 ---
 # <a name="introduction-to-microsoft-viva-topics"></a>Microsoft Viva トピックの概要
 

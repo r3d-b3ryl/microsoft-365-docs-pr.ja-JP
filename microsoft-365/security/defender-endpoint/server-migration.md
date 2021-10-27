@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 50077baad1bb028e9686cf29105ec2c05eb25024
-ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
+ms.openlocfilehash: b2bf0bd7f1d20e65921a3d5ee503152b3d3940fb
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60264782"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586995"
 ---
 # <a name="server-migration-scenarios-from-the-previous-mma-based-microsoft-defender-for-endpoint-solution"></a>以前の MMA ベースの Microsoft Defender for Endpoint ソリューションからのサーバー移行シナリオ
 
@@ -104,6 +104,14 @@ ms.locfileid: "60264782"
 
 *これらの手順は、Microsoft 以外のウイルス対策ソリューションを置き換える場合にのみ適用されます。 「Better [together: Microsoft Defender ウイルス対策と Microsoft Defender for Endpoint」を参照してください](why-use-microsoft-defender-antivirus.md)。
 
+
+パッシブ モードからコンピューターを移動するには、次のキーを 0 に設定します。 
+
+パス: HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection Name: ForceDefenderPassiveMode Type: REG_DWORD 値: 0
+
+詳細については、「Need [to set Microsoft Defender ウイルス対策パッシブ モード」を参照してください](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server)。
+
+
 ## <a name="other-migration-scenarios"></a>その他の移行シナリオ 
 
 ### <a name="you-have-a-server-that-has-been-onboarded-using-the-mma-based-microsoft-defender-for-endpoint-it-has-scep-installed-windows-server-2012-r2-or-microsoft-defender-antivirus-windows-server-2016-this-machine-is-not-managed-through-azure-defender-microsoft-endpoint-manager-or-microsoft-endpoint-configuration-manager"></a>MMA ベースの Microsoft Defender for Endpoint を使用してオンボードされているサーバーがあります。 SCEP がインストールされている (Windows Server 2012 R2) または Microsoft Defender ウイルス対策 (Windows Server 2016)。 このコンピューターは **、Azure** Defender、Microsoft エンドポイント マネージャー、またはMicrosoft Endpoint Configuration Manager。
@@ -130,9 +138,16 @@ ms.locfileid: "60264782"
 6. グループ ポリシー、PowerShell、またはサードパーティの管理ソリューションを使用してポリシーを作成して適用します。
 
 > [!TIP]
-> インストーラー スクリプトを使用すると [、](server-migration.md#installer-script) 手順 1 ~ 4 の自動化に役立ちます。 パッシブ モードを有効にするには、-Passive フラグを適用します。 例: `.\install.ps1 -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd" -Passive`
+> インストーラー スクリプトを使用すると [、](server-migration.md#installer-script) 手順 1 ~ 4 の自動化に役立ちます。 パッシブ モードを有効にするには、-Passive フラグを適用して、オンボーディングの前に Defender がパッシブ モードに入り、Microsoft 以外のマルウェア対策ソリューションに干渉しないようにします。 その後、EDR ブロックなどの EDR 機能をサポートするためにオンボーディング後に Defender Antivirus がパッシブ モードのままである場合は、必ず "ForceDefenderPassiveMode" レジストリ キーを設定してください。 例: `.\install.ps1 -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd" -Passive` 詳細については、「パッシブ モードに設定[するMicrosoft Defender ウイルス対策必要ですか?」を参照してください](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server)。
 
 *この手順は、Microsoft 以外のウイルス対策ソリューションを置き換える場合にのみ適用されます。 Microsoft Defender for Endpoint にMicrosoft Defender ウイルス対策、完全な一連の機能を提供するために、Microsoft Defender for Endpoint に含まれるアプリを使用することをお勧めします。 「Better [together: Microsoft Defender ウイルス対策と Microsoft Defender for Endpoint」を参照してください](why-use-microsoft-defender-antivirus.md)。 
+
+
+パッシブ モードからコンピューターを移動するには、次のキーを 0 に設定します。 
+
+パス: HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection Name: ForceDefenderPassiveMode Type: REG_DWORD 値: 0
+
+詳細については、「Need [to set Microsoft Defender ウイルス対策パッシブ モード」を参照してください](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server)。
 
 ## <a name="azure-defender-scenarios"></a>Azure Defender のシナリオ
 

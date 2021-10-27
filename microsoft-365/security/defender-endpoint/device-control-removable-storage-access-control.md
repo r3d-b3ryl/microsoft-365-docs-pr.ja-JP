@@ -15,13 +15,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 10/21/2021
-ms.openlocfilehash: bc73ab308fed1d420815d894c5e8c6fbeb4aaa34
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.date: 10/25/2021
+ms.openlocfilehash: b227af391856166fb4a3b35be7355d8030677658
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553642"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587839"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender for Endpoint Device Control リムーバブル Storage アクセス制御
 
@@ -70,7 +70,7 @@ Microsoft Defender for Endpoint Device Control リムーバブル Storageアク�
 
 |プロパティ名|説明|オプション|
 |---|---|---|
-|**GroupId**|[GUID](https://en.wikipedia.org/wiki/Universally_unique_identifier)は、一意の ID で、グループを表し、ポリシーで使用されます。||
+|**GroupId**|一意の ID である GUID は、グループを表し、ポリシーで使用されます。||
 |**DescriptorIdList**|グループでカバーするデバイス のプロパティを一覧表示します。 各デバイス プロパティの詳細については [、「Device Properties」](device-control-removable-storage-protection.md) を参照してください。 すべてのプロパティでは大文字と小文字が区別されます。 |<ul><li>**PrimaryId**: RemovableMediaDevices、CdRomDevices、WpdDevices</li><li>**DeviceId**</li><li>**HardwareId**</li><li>**InstancePathId**: InstancePathId は、たとえば、システム内のデバイスを一意に識別する文字列です `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0` 。 末尾の番号 (たとえば、&0) は使用可能なスロットを表し、デバイス間で変更される場合があります。 最適な結果を得る場合は、末尾にワイルドカードを使用します。 たとえば、`USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*` などです。</li><li>**FriendlyNameId**</li><li>**SerialNumberId**</li><li>**VID**</li><li>**PID**</li><li>**VID_PID**<ul><li>0751_55E0: この完全な VID/PID ペアと一致する</li><li>55E0: PID=55E0 で任意のメディアと一致する </li><li>0751: 任意のメディアを VID=0751 と一致する</li></ul></li></ul>|
 |**MatchType**|DescriptorIDList で複数のデバイス プロパティが使用されている場合、MatchType はリレーションシップを定義します。|**MatchAll**: DescriptorIdList の下の属性は **And** リレーションシップです。たとえば、管理者が DeviceID と InstancePathID を置く場合、接続されている USB ごとに、システムは USB が両方の値を満たするかどうかを確認します。 <p> **MatchAny**: DescriptorIdList の下の属性は **Or リレーションシップ** です。たとえば、管理者が DeviceID と InstancePathID を置く場合、接続されている USB ごとに、USB が同じ **DeviceID** または **InstanceID** 値を持っている限り、システムは強制を実行します。 |
 
@@ -80,13 +80,13 @@ Microsoft Defender for Endpoint Device Control リムーバブル Storageアク�
 
 | プロパティ名 | 説明 | オプション |
 |---|---|---|
-| **PolicyRuleId** | [GUID](https://en.wikipedia.org/wiki/Universally_unique_identifier)は、一意の ID であり、ポリシーを表し、レポートとトラブルシューティングで使用されます。 | |
+| **PolicyRuleId** | 一意の ID である GUID はポリシーを表し、レポートとトラブルシューティングで使用されます。 | |
 | **IncludedIdList** | ポリシーが適用されるグループ。 複数のグループが追加されている場合、ポリシーは、すべてのグループ内の任意のメディアに適用されます。|このインスタンスでは、グループ ID/GUID を使用する必要があります。 <p> 次の例は、GroupID の使用法を示しています。 <p> `<IncludedIdList> <GroupId> {EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>` |
 | **ExcludedIDList** | ポリシーが適用されないグループ。 | このインスタンスでは、グループ ID/GUID を使用する必要があります。 |
 | **エントリ ID** | 1 つの PolicyRule には複数のエントリを指定できます。一意の GUID を持つ各エントリは、デバイスコントロールに 1 つの制限を指示します。| |
 | **型** | IncludedIDList のリムーバブル 記憶域グループのアクションを定義します。 <ul><li>適用: 許可または拒否 </li><li>監査: AuditAllowed または AuditDenied</ul></li> | <ul><li>許可</li><li>拒否 </li><li>AuditAllowed: アクセスが許可されている場合の通知とイベントを定義します。</li><li>AuditDenied: アクセスが拒否された場合の通知とイベントを定義します。は、Deny エントリと共 **に動作する必要** があります。</li></ul> <p> 同じメディアに対して競合の種類がある場合、システムはポリシーの最初のメディアを適用します。 競合の種類の例として、[許可] と **[拒否]** **があります**。 |
-| **Sid** | ローカル コンピューター Sid または AD オブジェクトの Sid は、このポリシーを特定のユーザー またはユーザー グループに適用するかどうかを定義します。1 つのエントリには最大 1 つの Sid を含め、Sid を使用しないエントリは、コンピューター上にポリシーを適用する方法を意味します。 |  |
-| **ComputerSid** | ローカル コンピューター Sid または AD オブジェクトの Sid は、このポリシーを特定のコンピューターまたはコンピューター グループに適用するかどうかを定義します。1 つのエントリには最大 1 つの ComputerSid を指定し、ComputerSid を使用しないエントリはコンピューター上にポリシーを適用します。 特定のユーザーと特定のコンピューターにエントリを適用する場合は、Sid と ComputerSid の両方を同じエントリに追加します。 |  |
+| **Sid** | ローカル ユーザー Sid またはユーザー Sid グループ、または AD オブジェクトの Sid は、このポリシーを特定のユーザー またはユーザー グループに適用するかどうかを定義します。1 つのエントリには最大 1 つの Sid を含め、Sid を使用しないエントリは、コンピューター上にポリシーを適用する方法を意味します。 |  |
+| **ComputerSid** | ローカル コンピューター Sid またはコンピューター Sid グループ、または AD オブジェクトの Sid は、このポリシーを特定のコンピューターまたはコンピューター グループに適用するかどうかを定義します。1 つのエントリには最大 1 つの ComputerSid を指定し、ComputerSid を使用しないエントリはコンピューター上にポリシーを適用します。 特定のユーザーと特定のコンピューターにエントリを適用する場合は、Sid と ComputerSid の両方を同じエントリに追加します。 |  |
 | **オプション** | 通知を表示するかどうかを定義します。 |**0 または 4**: [許可] または [拒否] の種類が選択されている場合。 <ul><li>0: 何も</li><li>4: この **エントリに対して AuditAllowed** と **AuditDenied を** 無効にします。 ブロックが **発生** し、AuditDenied が構成されている場合でも、システムは通知を表示されません。 </li></ul> <p> Type **AuditAllowed が** 選択されている場合: <ul><li>0: 何も</li><li>1: 何も</li><li>2: 送信イベント</li><li>3: イベントの送信 </li></ul><p> Type **AuditDenied が** 選択されている場合: <ul><li>0: 何も</li><li>1: 通知を表示する</li><li>2: 送信イベント</li><li>3: 通知を表示し、イベントを送信する </li></ul>|
 |AccessMask|アクセスを定義します。 | **1~7**: <ol><li>読み取り</li><li>書き込み</li><li>読み取りと書き込み</li><li>実行</li><li>読み取りおよび実行</li><li>書き込みと実行 </li><li>読み取りおよび書き込みおよび実行</li></ol> |
 

@@ -2,7 +2,6 @@
 title: '[アラートの調査] Microsoft 365 Defender'
 description: デバイス、ユーザー、メールボックス間で表示されるアラートを調査します。
 keywords: インシデント、アラート、調査、調査、分析、応答、相関関係、攻撃、コンピューター、デバイス、ユーザー、ID、ID、メールボックス、電子メール、365、microsoft、m365
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -20,14 +19,13 @@ ms.collection:
 ms.topic: conceptual
 search.appverid:
 - MOE150
-- MET150
 ms.technology: m365d
-ms.openlocfilehash: cde5f6e00260710416266fd6f4113def9c7baf6f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 92542fdeebd5e6bbfebd075b178a0c22b08f186e
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206603"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587762"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>[アラートの調査] Microsoft 365 Defender
 
@@ -66,7 +64,7 @@ Microsoft Defender for Endpoint、Microsoft Defender for endpoint、Microsoft De
 
 Microsoft Defender にアクセスして警告を表示するには、次の役割Office 365があります。
 
-- [Azure Active Directory (Azure AD) グローバル ロールの場合:
+- グローバル Azure Active Directory (Azure AD) の場合:
 
    - グローバル管理者
 

@@ -16,12 +16,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4a9539d075c5428374972e8f7398ff2f326a587f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom: api
+ms.openlocfilehash: 8913573f534dcb106ad4310171a90e4099a1ac99
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207153"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587375"
 ---
 # <a name="microsoft-defender-for-endpoint-detections-api-fields"></a>Microsoft Defender for Endpoint detections API フィールド
 
@@ -54,7 +55,7 @@ ms.locfileid: "60207153"
 > |ポータル ラベル|SIEM フィールド名|ArcSight フィールド|値の例|説明|
 > |---|---|---|---|---|
 > |1|AlertTitle|name|Microsoft Defender AV が 「ミカッツ」 の重大度の高いマルウェアを検出しました|すべての検出で使用可能な値。|
-> |2|重要度|deviceSeverity|高い|すべての検出で使用可能な値。|
+> |2|重要度|deviceSeverity|高|すべての検出で使用可能な値。|
 > |3|カテゴリ|deviceEventCategory|マルウェア|すべての検出で使用可能な値。|
 > |4 |検出ソース|sourceServiceName|ウイルス対策|Microsoft Defender ウイルス対策または Defender for Endpoint。 すべての検出で使用可能な値。|
 > |5|MachineName|sourceHostName|desktop-4a5ngd6|すべての検出で使用可能な値。|
@@ -73,7 +74,7 @@ ms.locfileid: "60207153"
 > |18 |AlertId|外部ID|636210704265059241_673569822|すべての検出で使用可能な値。|
 > |19|LinkToWDATP|flexString1|`https://securitycenter.windows.com/alert/636210704265059241_673569822`|すべての検出で使用可能な値。|
 > |20|AlertTime|deviceReceiptTime|2017-05-07T01:56:59.3191352Z|イベントが発生した時刻。 すべての検出で使用可能な値。|
-> | 21|MachineDomain|sourceDnsDomain|contoso.com|AAD 参加デバイスに関連しないドメイン名。 すべての検出で使用可能な値。|
+> | 21|MachineDomain|sourceDnsDomain|contoso.com|参加しているデバイスに関連AADドメイン名。 すべての検出で使用可能な値。|
 > |22|Actor|deviceCustomString4|ボロン|既知のアクター グループに関連するアラートで使用できます。|
 > |21+5|ComputerDnsName|マッピングなし|liz-bean.contoso.com|デバイスの完全修飾ドメイン名。 すべての検出で使用可能な値。|
 > ||LogOnUsers|sourceUserId|contoso\liz-Bean;contoso\jay-hardee|イベント時の対話型ログオン ユーザーのドメインとユーザー。 注: バージョン 1607 Windows 10デバイスの場合、ドメイン情報は使用できません。|
@@ -101,7 +102,7 @@ ms.locfileid: "60207153"
 
 :::image type="content" alt-text="イメージ アクターアラート。" source="images/atp-mapping7.png" lightbox="images/atp-mapping7.png":::
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [エンドポイント向け Microsoft Defender で SIEM 統合を有効にする](enable-siem-integration.md)
 - [エンドポイント検出用の Microsoft Defender をプルする ArcSight の構成](configure-arcsight.md)

@@ -18,12 +18,12 @@ ms.custom:
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: エンタープライズ組織のネットワーク Office 365で動作するエンドポイントを管理する方法について説明します。
-ms.openlocfilehash: 01fb9f067bd94e564deb182338fdcde055edb153
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 96aa778316fcaa5994d408c869e8566e465a07d1
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201699"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587327"
 ---
 # <a name="managing-office-365-endpoints"></a>Office 365 エンドポイントを管理する
 
@@ -99,7 +99,7 @@ PAC ファイルを直接送信トラフィックに使用しない場合でも�
 
 Office 365 IP アドレスと URL の変更は通常、各月の末日近くに公開されます。場合によっては、運用、サポート、またはセキュリティ上の必要により、このスケジュール外に変更が公開されることもあります。
 
-IP アドレスまたは URL が追加されたために、ユーザーによる対応が必要な変更が公開された場合は、30 日前 (変更が公開された時点から、そのエンドポイントで Office 365 サービスが有効になるまでの期間) の通知がユーザーに送信されます。Microsoft ではこの通知期間を確保するよう努めていますが、運用、サポート、またはセキュリティ上の必要性によって、常に確保できるとは限りません。接続を保持するために即時の対応が不要な変更 (IP アドレスまたは URL の削除や、重要度の低い変更など) の場合、事前通知はありません。提供する通知の型にかかわらず、各変更がサービスで有効になる予定日を記載します。
+IP アドレスまたは URL が追加されたため、操作が必要な変更が公開された場合は、変更を公開した後、そのエンドポイントに Office 365 サービスが存在するまで、30 日間の通知を受け取る必要があります。 これは有効日として反映されます。 この通知期間を目指しますが、運用、サポート、またはセキュリティ要件により、常に可能とは限りない場合があります。 削除された IP アドレスや URL、またはそれほど重要ではない変更など、接続を維持するための即時のアクションを必要としない変更には、事前通知は含めずに行います。 これらのインスタンスでは、有効日は指定されます。 どの通知が提供されるに関係なく、変更ごとに予想されるサービスのアクティブな日付が一覧表示されます。
 
 ### <a name="change-notification-using-the-web-service"></a>Web サービスを使用した変更通知
 
@@ -207,16 +207,14 @@ Office 365 を使用しようとして、サード パーティのサービス�
 <a name="bkmk_consumer"> </a>
 ### <a name="how-do-i-block-access-to-microsofts-consumer-services"></a>Microsoft のコンシューマー サービスへのアクセスをブロックするにはどうすればよいですか?
 
-コンシューマー サービスへのアクセス制限はお客様の責任で行っていただく必要があります。 コンシューマー サービスを確実にブロックする唯一の方法は、*login.live.com* FQDN へのアクセスを制限することです。 この FQDN は、MSDN、TechNet などの非コンシューマー サービスを含む幅広いサービスに使用されます。 また、この FQDN は Microsoft サポートの Secure File Exchange プログラムによっても使用され、Microsoft 製品のトラブルシューティングに役立つファイルを転送するために必要です。  この FQDN へのアクセスを制限すると、これらのサービスに関連するネットワーク要求に関するルールの例外を含める必要が生じる場合があります。
-  
-ただし、Microsoft コンシューマー サービスへのアクセスをブロックするだけでは、ネットワーク上の誰かが Office 365 テナントや他のサービスを使用して情報を入手することを防ぐことはできません。
+テナントの制限機能では、Microsoft コンシューマー アプリケーション (MSA アプリ) (OneDrive、Hotmail、Xbox.com など) の使用をブロックする機能がサポートされています。 これは、エンドポイントに個別のヘッダー login.live.com します。 詳細については、「テナント制限を使用して SaaS クラウド アプリケーションへのアクセス [を管理する」を参照してください](/azure/active-directory/manage-apps/tenant-restrictions#blocking-consumer-applications)。
 
 <a name="bkmk_IPOnlyFirewall"> </a>
 ### <a name="my-firewall-requires-ip-addresses-and-cannot-process-urls-how-do-i-configure-it-for-office-365"></a>ファイアウォールには IP アドレスが必要で、URL を処理することはできません。 Office 365 に合わせて構成する方法
 
 Office 365 では、必要なすべてのネットワークエンド ポイント用 IP アドレスは提供されません。 一部は URL としてだけ提供され、既定に分類されます。 必須の既定のカテゴリの URL は、プロキシ サーバー経由で許可する必要があります。 プロキシ サーバーを使用しない場合は、ユーザーが Web ブラウザーのアドレス バーに入力する URL の Web 要求を構成した方法を確認します。ユーザーは IP アドレスも指定しません。 IP Office 365を提供しない既定のカテゴリ URL は、同じ方法で構成する必要があります。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [Office 365 IP アドレスと URL の Web サービス](microsoft-365-ip-web-service.md)
 

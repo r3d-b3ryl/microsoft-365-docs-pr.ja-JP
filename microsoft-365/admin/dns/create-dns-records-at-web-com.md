@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: ドメインを確認し、Microsoft 向けメール、Skype for Business、その他のサービスの DNS レコードを web.com 説明します。
-ms.openlocfilehash: 0a8f3db894ee3171f6b086a1eeefbdaf7a7c841a
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: b95fd5412b7ddc4363e8d5e4ea345c1f551feef8
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60557022"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586803"
 ---
 # <a name="connect-your-dns-records-at-webcom-to-microsoft-365"></a>Connect DNS レコードを web.com にMicrosoft 365
 
@@ -109,9 +109,13 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
   
 1. 管理センターで、[ドメイン] の **設定** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**します**</a>。
     
-2. [ドメイン] ページで、確認するドメインを選択し、[セットアップの開始] **を選択します**。   
+1. [ドメイン] ページで、確認するドメインを選択し、[セットアップの開始] **を選択します**。 
+
+    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="[セットアップの開始] を選択します。":::
+
+1. **[続行]** を選択します。
   
-3. **[ドメインの確認]** ページで、**[確認]** を選択します。
+1. **[ドメインの確認]** ページで、**[確認]** を選択します。
     
 > [!NOTE]
 > 通常、DNS の変更が有効になるのに 15 分ほどかかります。ただし、インターネットの DNS システム全体を更新する変更の場合、さらに長くかかることもあります。DNS レコードの追加でメール フローなどに問題が発生した場合は、「[ドメイン名または DNS レコードの変更後の問題に関するトラブルシューティング](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。
@@ -169,7 +173,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 1. 次の表の値を選択するか、コピーして貼り付けます。 
     
     |**参照先** | **ホスト名** | **Alias to (エイリアス)**|**TTL**|
-    |:-----|:-----|:-----|
+    |:-----|:-----|:-----|:-----|
     | その他のホスト  <br/>| autodiscover  <br/>| autodiscover.outlook.com  <br/> | 1 Hour  <br/>  |
   
 1. [ **追加] を選択します**。

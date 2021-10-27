@@ -2,7 +2,6 @@
 title: Microsoft Defender for Endpoint デバイスのタイムライン イベント フラグ
 description: Microsoft Defender for Endpoint デバイスのタイムライン イベント フラグを使用して、
 keywords: Defender for Endpoint デバイスのタイムライン、イベント フラグ
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 824a284d60964bfbf93743a15b0e3fca3e7543f3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0c6ddeb1507285e4d6c9f253e01c5f15d4c294fd
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213003"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587447"
 ---
 # <a name="microsoft-defender-for-endpoint-device-timeline-event-flags"></a>Microsoft Defender for Endpoint デバイスのタイムライン イベント フラグ
 

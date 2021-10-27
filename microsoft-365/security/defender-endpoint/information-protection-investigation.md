@@ -2,7 +2,6 @@
 title: 秘密度ラベルを使用してインシデント対応に優先順位を付ける
 description: インシデントの優先順位付けと調査に感度ラベルを使用する方法について学習する
 keywords: 情報、保護、データ、損失、防止、ラベル、dlp、インシデント、調査、調査
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: fb21eb0d52f62c49a9406bd92697dccaff290d7e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5b27187530deb8182dea39c8053413a9f70ac4e2
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60156284"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587815"
 ---
 # <a name="use-sensitivity-labels-to-prioritize-incident-response"></a>秘密度ラベルを使用してインシデント対応に優先順位を付ける
 
@@ -41,7 +40,7 @@ Defender for Endpoint は、セキュリティ インシデントの事前設定
 データの感度ラベルを使用してインシデント調査の優先順位を設定する方法について学習します。
 
 > [!NOTE]
-> ラベルは、1 つ以上のWindows 10 Version 1809検出されます。
+> ラベルは、11 以降Windows 10 Version 1809検出され、Windowsされます。
 
 1. [Microsoft 365 Defender] ポータルで、[インシデント]**を選択&インシデント** \> **を通知します**。
 

@@ -2,8 +2,6 @@
 title: 転送プロキシの背後で発生する接続イベントの調査
 description: プロキシではなく、実際のターゲットを表面化する Microsoft Defender for Endpoint のネットワーク保護を通じて高度な HTTP レベルの監視を使用する方法について説明します。
 keywords: プロキシ、ネットワーク保護、転送プロキシ、ネットワーク イベント、監査、ブロック、ドメイン名、ドメイン
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5a5fd36d57a1892189b4a5e9c4d13ad9d0ac6923
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b3cfbfc2e0330ce7b09bc34d379d45fc75dde8ca
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198207"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586115"
 ---
 # <a name="investigate-connection-events-that-occur-behind-forward-proxies"></a>転送プロキシの背後で発生する接続イベントの調査
 
@@ -92,6 +90,6 @@ DeviceNetworkEvents
 | take 10
 ```
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [GP によるネットワーク保護の適用 - ポリシー CSP](/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)

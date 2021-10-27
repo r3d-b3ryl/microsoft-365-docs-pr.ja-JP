@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンス マネージャーで評価を構築するためのテンプレートを使用および管理する方法について説明します。 書式設定されたファイルを使用してテンプレートを作成Excelします。
-ms.openlocfilehash: dd9f2b2f673164bce7f05f7e390b13012247c362
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 74b896f6c0fdd625cf50cc04a31fa79d48dc3a4e
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335988"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587683"
 ---
 # <a name="learn-about-assessment-templates-in-compliance-manager"></a>コンプライアンス マネージャーの評価テンプレートの詳細
 
@@ -89,8 +89,6 @@ GCC高いアカウントと DOD アカウントは、ボリューム ライセ�
 - 組織が評価に **テンプレート** を使用しない場合、テンプレートは非アクティブと見なされます。
 
 購入したプレミアム テンプレートに評価をリンクすると、そのテンプレートは 1 年間アクティブになります。 キャンセルしない限り、購入は自動的に更新されます。
-
-また、プレミアム テンプレートを試用することもできます。 試用版ライセンスは、30 日間、最大 25 のテンプレートに対して良好です。 試用版が開始すると、テンプレートは 48 時間以内にテナントで利用できる必要があります。 試用版は、ライセンスを使用してアクティブ<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター。</a>
 
 #### <a name="activated-templates-counter"></a>アクティブ化されたテンプレート カウンター
 

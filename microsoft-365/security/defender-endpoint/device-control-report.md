@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 952363dfa689ea20e1ca1fcd97da4a79cfa66062
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 16c899ca895e73f51bc0d72f20e008f367cfe731
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212996"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60588354"
 ---
-# <a name="protect-your-organizations-data-with-device-control"></a>デバイスコントロールを使用して組織のデータを保護する
+# <a name="device-control-report"></a>デバイス制御レポート
 
 **適用対象:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
@@ -41,6 +41,7 @@ Microsoft Defender for Endpoint デバイスコントロールは、リムーバ
 
 - **USB ドライブのマウントとマウント解除:** USB ドライブのマウントまたはマウント解除時に生成される監査イベント。
 - **PnP:** プラグ アンド プレイ監査イベントは、リムーバブル 記憶域、プリンター、またはメディアが接続Bluetooth生成されます。
+- **リムーバブル 記憶域アクセス制御:** イベントは、リムーバブル 記憶域アクセス制御ポリシーがトリガーされると生成されます。 監査、ブロック、または許可を指定できます。
 
 ## <a name="monitor-device-control-security"></a>デバイス制御のセキュリティを監視する
 
@@ -49,7 +50,7 @@ Microsoft Defender for Endpoint のデバイス制御により、セキュリテ
 [レポート] ダッシュボードの **[** デバイス保護] カードには、過去 180 日間にメディアの種類によって生成された監査イベントの数が表示されます。
 
 > [!div class="mx-imgBorder"]
-> ![DeviceControlReportCard](images/devicecontrolcard.png)
+> ![DeviceControlReportCard](https://user-images.githubusercontent.com/81826151/138504137-e9a7673e-e988-48cd-820d-2625ec6df352.png)
 
 [ **詳細の表示]** ボタンには、デバイスコントロールレポートページにメディア使用状況 **データが表示** されます。
 
@@ -60,9 +61,9 @@ Microsoft Defender for Endpoint のデバイス制御により、セキュリテ
 
 イベントを選択すると、詳細を示すフライアウトが表示されます。
 
-- **一般的な詳細:** 日付、アクション モード、およびこのイベントのポリシー。
-- **メディア情報:** メディア情報には、メディア名、クラス名、クラス GUID、デバイス ID、ベンダー ID、ボリューム、シリアル番号、バスの種類が含まれます。
-- **場所の詳細:** デバイス名と MDATP デバイス ID。
+- **一般的な詳細:** このイベントの日付、アクション モード、ポリシー、および Access。
+- **メディア情報:** メディア情報には、メディア名、クラス名、クラス GUID、デバイス ID、ベンダー ID、シリアル番号、バスの種類が含まれます。
+- **場所の詳細:** デバイス名、ユーザー、および MDATP デバイス ID。
 
 > [!div class="mx-imgBorder"]
 > ![FilterOnDeviceControlReport](images/devicecontrolreportfilter.png)

@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: このOffice 365コンテンツは、利用可能な最も強力な暗号化、プロトコル、およびテクノロジを使用して、保存時および転送中に暗号化されます。 暗号化の概要については、Office 365。
-ms.openlocfilehash: e250970afa709cdd328506ea350ab2d886a985b0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a1ee73d7ded7a02cd7851081412d2403e0ca8f1d
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60204349"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587303"
 ---
 # <a name="encryption"></a>暗号化
 
@@ -78,14 +78,13 @@ Microsoft 365は、ボリューム暗号化、ファイル暗号化、および�
 
 |**このタスクを実行するには**|**これらのリソースを参照してください。**|
 |:-----|:-----|
-|組織の暗号化を設定する  <br/> |[Office 365 Enterprise で暗号化を設定する](set-up-encryption.md) <br/> |
-|証明書、テクノロジ、TLS 暗号スイートの詳細を表示する <br/> |[暗号化に関する技術的な詳細](technical-reference-details-about-encryption.md) <br/> |
-|モバイル デバイスで暗号化されたメッセージを処理する  <br/> |[暗号化されたメッセージを Android デバイスで表示する](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb) <br/> [iPhone または iPad で暗号化されたメッセージを表示する](https://support.microsoft.com/en-us/office/view-protected-messages-on-your-iphone-or-ipad-4d631321-0d26-4bcc-a483-d294dd0b1caf) <br/> |
-|パスワード保護を使用してドキュメントを暗号化する  <br/><br/>  パスワード保護はブラウザーではサポートされていません。 パスワード保護には、デスクトップ バージョンの Word、Excel、PowerPointを使用します。 |[ドキュメント、ブック、またはプレゼンテーションの保護を追加または削除する](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) <br/> [保護の **追加] セクションを** 選択し、「パスワードで暗号化 **する」を参照してください**。  |
-|ドキュメントから暗号化を削除する  <br/> |[ドキュメント、ブック、またはプレゼンテーションの保護を追加または削除する](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) <br/> [保護の **削除] セクションを** 選択し、「パスワード暗号化の削除 **」を参照してください**。  |
+|組織の暗号化を設定する|[Office 365 Enterprise で暗号化を設定する](set-up-encryption.md)|
+|証明書、テクノロジ、TLS 暗号スイートの詳細を表示する|[暗号化に関する技術的な詳細](technical-reference-details-about-encryption.md)|
+|モバイル デバイスで暗号化されたメッセージを処理する|[Android デバイスで暗号化されたメッセージを表示](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb)する 暗号化されたメッセージをユーザーまたはユーザー iPhone[表示iPad](https://support.microsoft.com/en-us/office/view-protected-messages-on-your-iphone-or-ipad-4d631321-0d26-4bcc-a483-d294dd0b1caf)|
+|パスワード保護を使用してドキュメントを暗号化します。 (パスワード保護はブラウザーではサポートされていません。 パスワード保護には、デスクトップ バージョンの Word、Excel、PowerPointを使用します)。 |[ドキュメント、ブック、またはプレゼンテーションの保護を追加または削除します](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826)。 [保護の **追加] セクションを** 選択し、「パスワードで暗号化 **する」を参照してください**。|
+|ドキュメントから暗号化を削除する|[ドキュメント、ブック、またはプレゼンテーションの保護を追加または削除します](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826)。 [保護の **削除] セクションを** 選択し、「パスワード暗号化の削除 **」を参照してください**。  |
 
-
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [セキュリティとMicrosoft 365機能の計画](plan-for-security-and-compliance.md)
 

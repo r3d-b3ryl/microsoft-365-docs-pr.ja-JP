@@ -2,8 +2,6 @@
 title: 自動調査後の修復アクションの確認
 description: 自動調査の後で修復アクションを確認および承認 (または拒否) します。
 keywords: autoir, 自動, 調査, 検出, 修復, アクション, 保留中, 承認済み
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -19,12 +17,12 @@ ms.collection:
 ms.topic: how-to
 ms.date: 01/29/2021
 ms.technology: mde
-ms.openlocfilehash: 22229d495e9b7694d07f25b60e854240f7c420c8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 371b698dc25a1875c71e7ca942d7e6b7563f40fb
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152036"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587714"
 ---
 # <a name="review-remediation-actions-following-an-automated-investigation"></a>自動調査後の修復アクションの確認
 

@@ -2,8 +2,6 @@
 title: Microsoft Defender for Endpoint アラートの調査
 description: 調査オプションを使用して、ネットワークに影響を与えるアラートの詳細、その意味、解決方法を確認します。
 keywords: 調査、調査、デバイス、デバイス、アラート キュー、ダッシュボード、IP アドレス、ファイル、提出、提出、詳細分析、タイムライン、検索、ドメイン、URL、IP
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -19,12 +17,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: f41be6057f1e66eb13001d4ed7d304d76e895c3d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ae6ae9ac805c2b49273f30b3266496a8c4be4d1b
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198231"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60588079"
 ---
 # <a name="investigate-alerts-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint のアラートを調査する
 
@@ -73,7 +71,7 @@ ms.locfileid: "60198231"
 > 上記に記載されていない問題が発生した場合は、ボタンを使用してフィードバックを提供するか、サポート 🙂 チケットを開きます。
 
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [Microsoft Defender for Endpoint アラート キューを表示して整理する](alerts-queue.md)
 - [エンドポイント通知の Microsoft Defender の管理](manage-alerts.md)
 - [Defender for Endpoint アラートに関連付けられたファイルを調査する](investigate-files.md)

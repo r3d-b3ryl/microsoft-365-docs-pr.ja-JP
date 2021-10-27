@@ -18,12 +18,12 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: 部分的にインデックスが作成されたアイテム (インデックスのないアイテムとも呼ばれる) を、Exchange、SharePoint、OneDrive for Businessから管理する方法について学習します。
-ms.openlocfilehash: 4b919500c929c4bc92c6ef090442b737ecadf212
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: 5160a46e6be825dd858be030fc5cf5941734e65d
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364641"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586315"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>電子情報開示で部分的にインデックス付きアイテムを調査する
 
@@ -67,7 +67,7 @@ ms.locfileid: "60364641"
 
 `(Size of all partially indexed items/Size of all items) x 100`
 
-`(10.27 GB/146.46 MB) x 100 = 7.0%`
+`(10.27 GB/146.46 GB) x 100 = 7.0%`
 
 したがって、前の例では、メールボックス アイテムの合計サイズの 7% が部分的にインデックス付けされたアイテムからのサイズです。 前に述べたように、ほとんどの組織のお客様は、ボリューム別にコンテンツの 1% 未満、部分的にインデックスが作成されたサイズ別のコンテンツの 12% 未満を持っています。
 
@@ -164,7 +164,7 @@ ms.locfileid: "60364641"
      }
    ```
 
-2. [セキュリティ/コンプライアンス センターの PowerShell に接続する](/powershell/exchange/exchange-online-powershell)。
+2. [セキュリティ/コンプライアンス センター PowerShell に接続します](/powershell/exchange/exchange-online-powershell)。
 
 3. [セキュリティ & コンプライアンス センター PowerShell] で、手順 1 でスクリプトを保存したフォルダーに移動し、スクリプトを実行します。例えば：
 

@@ -15,12 +15,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 59f06ebfb75d628bb5e050a8dfd2b93e6714245f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom: api
+ms.openlocfilehash: b8109c71206ee9f689cafb28d7def14ff3122704
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208003"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586139"
 ---
 # <a name="batch-update-alerts"></a>アラートのバッチ更新
 
@@ -72,7 +73,7 @@ POST /api/alerts/batchUpdate
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|型|説明
+名前|種類|説明
 :---|:---|:---
 Authorization | String | ベアラー {token}。 **必須**。
 Content-Type | 文字列 | application/json. **必須**
@@ -85,7 +86,7 @@ Content-Type | 文字列 | application/json. **必須**
 
 最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-プロパティ | 型 | 説明
+プロパティ | 種類 | 説明
 :---|:---|:---
 alertIds | リスト &lt; 文字列&gt;| 更新するアラートの一覧。 **必須**
 status | String | 指定したアラートの更新された状態を指定します。 プロパティの値は、'New'、'InProgress'、および 'Resolved' です。

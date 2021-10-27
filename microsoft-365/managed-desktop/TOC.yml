@@ -62,6 +62,8 @@
           href: service-description/servicechanges.md
         - name: サービス プランの例外
           href: service-description/customizing.md
+        - name: 共有デバイス
+          href: service-description/shared-devices.md
     - name: Microsoft マネージド デスクトップへの登録準備
       href: get-ready/index.md
       items:

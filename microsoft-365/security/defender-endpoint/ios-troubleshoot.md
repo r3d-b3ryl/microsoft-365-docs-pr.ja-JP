@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fab35b6e40d03239d57329128505a31737904a64
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 608746c406ef308636e0a2ffc6f4bb1d69f6bbf7
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555802"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587351"
 ---
 # <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>iOS 上の Microsoft Defender for Endpoint で問題のトラブルシューティングを行い、FAQ に対する回答を見つける
 
@@ -55,10 +55,6 @@ ms.locfileid: "60555802"
 
 > [!NOTE]
 > VPN が無効になっている場合、Web 保護は使用できません。 Web 保護を再び有効にするには、デバイスで Microsoft Defender for Endpoint アプリを開き、[Web 保護を有効にする] をクリックします。
-
-## <a name="issues-with-device-health-card"></a>デバイス正常性カードの問題
-
-デバイス正常性カードに既知の問題が発生し、ユーザーが最新バージョンを使用している場合でも、誤った通知によって iOS バージョンが更新される可能性があります。 Defender for Endpoint からの通知を無視することをお勧めします。 これにより、デバイスのコンプライアンスに影響はありません。 この問題の解決に取り組み、解決が完了したらこの場所を更新します。
 
 ## <a name="coexistence-with-multiple-vpn-profiles"></a>複数の VPN プロファイルとの共存
 

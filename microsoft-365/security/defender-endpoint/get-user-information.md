@@ -14,12 +14,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 58e7502d4b5dce4714f71438a6c0645497623743
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom: api
+ms.openlocfilehash: b87467bb1795ab503e0bc003e3ab9a06e68226b0
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206985"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586043"
 ---
 # <a name="get-user-information-api"></a>ユーザー情報 API の取得
 
@@ -52,9 +53,9 @@ GET /api/users/{id}/
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|型|説明
+名前|種類|説明
 :---|:---|:---
-Authorization | String | ベアラー {token}。 **必須**。
+Authorization | String | ベアラー {token}。 **必須**
 
 ## <a name="request-body"></a>要求本文
 

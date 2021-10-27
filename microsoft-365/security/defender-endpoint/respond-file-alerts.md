@@ -2,8 +2,6 @@
 title: Microsoft Defender for Endpoint のファイルに対して応答アクションを実行する
 description: ファイルを停止して quarantining したり、ファイルをブロックしたり、アクティビティの詳細を確認したりして、ファイル関連のアラートに対して応答アクションを実行します。
 keywords: 応答、停止と検疫、ファイルのブロック、深い分析
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 816e08c4c6ba3b2a50c981401163531d2b5d63c4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6fad903cc5e5839afea6f87f06a7435cadf0eb66
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198165"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587555"
 ---
 # <a name="take-response-actions-on-a-file"></a>ファイルの対応措置を講じる
 
@@ -72,13 +70,13 @@ ms.locfileid: "60198165"
 > [!IMPORTANT]
 > このアクションは、次の場合にのみ実行できます。
 >
-> - アクションを実行しているデバイスがバージョン 1703 以降Windows 10を実行している
+> - アクションを実行しているデバイスは、Windows 10バージョン 1703 以降、および 11 Windowsです。
 > - ファイルが信頼できるサード パーティの発行元に属していないか、Microsoft によって署名されていない
 > - Microsoft Defender ウイルス対策パッシブ モードで実行している必要があります。 詳細については、「互換性」[をMicrosoft Defender ウイルス対策してください](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)。
 
 [ **ファイルの停止と検疫]** アクションには、実行中のプロセスの停止、ファイルの検疫、レジストリ キーなどの永続的なデータの削除が含まれます。
 
-このアクションは、過去 30 日間Windows 10バージョン 1703 以降のデバイスで有効になります。
+このアクションは、Windows 10、バージョン 1703 以降、および過去 30 日間にファイルが観察された Windows 11 のデバイスで有効になります。
 
 > [!NOTE]
 > いつでも検疫からファイルを復元できます。
@@ -175,7 +173,7 @@ ms.locfileid: "60198165"
 > - ウイルス対策エンジンのバージョンは 1.1.17300.4 以降です。 「 [月次プラットフォームとエンジンのバージョン」を参照してください。](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 > - クラウドベースの保護が有効になっています。 「 [クラウドによる保護を有効にする」を参照してください。](enable-cloud-protection-microsoft-defender-antivirus.md)
 > - サンプル提出が有効になっている
-> - デバイスのWindows 10バージョン 1703 以降、または Windows サーバー 2016 または 2019、または Windows Server 2022
+> - デバイスにはWindows 10バージョン 1703 以降、または Windows サーバー 2016 または 2019、Windows Server 2022、または Windows 11 があります。
 
 ### <a name="collect-files"></a>ファイルの収集
 
@@ -193,7 +191,7 @@ ms.locfileid: "60198165"
 >
 > - マルウェア対策クライアントのバージョンは、4.18.1901.x 以降である必要があります。
 > - この機能は、疑わしいマルウェア (または悪意のある可能性のあるファイル) が Web からダウンロードされるのを防ぐために設計されています。 現在、ポータブル実行可能ファイル (PE) ファイルがサポートされています 。このファイルには、.exe _ファイル.dll__があります。_ 対象範囲は時間の長い期間延長されます。
-> - この応答アクションは、バージョン 1703 以降Windows 10デバイスで使用できます。
+> - この応答アクションは、Windows 10バージョン 1703 以降、および 11 のデバイスWindowsできます。
 > - 許可またはブロックアクションの前にファイルの分類がデバイスのキャッシュに存在する場合、許可またはブロック関数をファイルに対して実行することはできません。
 
 > [!NOTE]
@@ -256,9 +254,9 @@ ms.locfileid: "60198165"
 **詳細分析用** の送信は、Defender for Endpoint バックエンド サンプル コレクションでファイルが使用できる場合、またはディープ分析への送信をサポートする Windows 10 デバイスでファイルが観察された場合に有効になります。
 
 > [!NOTE]
-> 自動的に収集できるのはWindows 10のファイルのみです。
+> 自動的に収集できるのは、Windows 10および Windows 11 のファイルのみです。
 
-ファイルが Windows 10 デバイスで観察されなかった場合は[、Microsoft セキュリティ](https://www.microsoft.com/security/portal/submission/submit.aspx)センター ポータルからサンプルを送信し、[詳細な分析]ボタンが使用可能になるのを待ちます。
+ファイルが Windows 10 デバイス (または Windows 11) で観察されなかった場合は[、Microsoft セキュリティ](https://www.microsoft.com/security/portal/submission/submit.aspx)センター ポータルからサンプルを送信し、[詳細な分析] ボタンが使用可能になるのを待ちます。
 
 > [!NOTE]
 > Microsoft Security Center Portal のバックエンド処理フローにより、Defender for Endpoint のディープ分析機能のファイル送信と可用性の間に最大 10 分の待機時間が発生する可能性があります。
@@ -281,7 +279,7 @@ ms.locfileid: "60198165"
    進行状況バーが表示され、分析の異なるステージに関する情報が提供されます。 分析が完了したら、レポートを表示できます。
 
 > [!NOTE]
-> デバイスの可用性に応じて、サンプルの収集時間は異なる場合があります。 サンプル コレクションには 3 時間のタイムアウトがあります。 コレクションは失敗し、その時点でデバイスレポートにオンライン のWindows 10操作が中止されます。 詳細な分析のためにファイルを再送信して、ファイルに新しいデータを取得できます。
+> デバイスの可用性に応じて、サンプルの収集時間は異なる場合があります。 サンプル コレクションには 3 時間のタイムアウトがあります。 コレクションは失敗 Windows 10し、その時点でデバイス (または Windows 11) のオンライン レポートがない場合、操作は中止されます。 詳細な分析のためにファイルを再送信して、ファイルに新しいデータを取得できます。
 
 ### <a name="view-deep-analysis-reports"></a>詳細な分析レポートの表示
 
@@ -324,7 +322,7 @@ ms.locfileid: "60198165"
 
 6. これらの手順で問題が解決しない場合は、 [次の](mailto:winatp@microsoft.com)winatp@microsoft.com。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [デバイスの対応措置を講じる](respond-machine-alerts.md)
 - [ファイルの調査](investigate-files.md)

@@ -17,12 +17,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/24/2018
 ms.technology: mde
-ms.openlocfilehash: db114ab17f5e60b9f7660adc71bdc7dd441242b2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom: api
+ms.openlocfilehash: c0589818e35ef065f41f40f3b101ba0daab060b1
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150176"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60588375"
 ---
 # <a name="microsoft-defender-for-endpoint-apis-using-powershell"></a>PowerShell を使用したエンドポイント API 用 Microsoft Defender
 
@@ -62,8 +63,8 @@ Microsoft Defender for Endpoint の複数の API を使用した完全なシナ�
 以下を実行します。
 
 - $tenantId: クエリを実行する代わりにテナントの ID (つまり、このテナントのデータに対してクエリが実行されます)
-- $appId: AAD アプリの ID (アプリに Defender for Endpoint への 「高度なクエリの実行」 アクセス許可が必要)
-- $appSecret: Azure AD アプリの秘密
+- $appId: アプリの ID (アプリAAD Defender for Endpoint への 「高度なクエリの実行」 アクセス許可が必要です)
+- $appSecret: アプリの秘密Azure AD
 
 - $suspiciousUrl: URL
 

@@ -16,14 +16,17 @@ ms.collection:
 localization_priority: medium
 description: SAP SuccessFactors を学習コンテンツ ソースとして構成する方法については、Microsoft Viva ラーニング。
 ROBOTS: NOINDEX
-ms.openlocfilehash: f7df19cdfa4298c6d5f6b6700c7203205dd1c3de
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 25e5d5df44afcbbf8c3dc11a66cfa8f254290420
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60557043"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60588055"
 ---
 # <a name="configure-sap-successfactors-as-a-content-source-for-microsoft-viva-learning"></a>SAP SuccessFactors をコンテンツ ソースとして構成Microsoft Viva ラーニング
+
+>[!NOTE]
+>この機能はプレビューではサポートされていません。
 
 この記事では、SAP SuccessFactors をサードパーティのコンテンツ ソースとして構成する方法をMicrosoft Viva ラーニング。 まず、SuccessFactors ポータルでシステム構成を編集する必要があります。次に、システム 構成を完了する必要Microsoft 365 管理センター。
 

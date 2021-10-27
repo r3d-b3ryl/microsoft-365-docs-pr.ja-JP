@@ -15,12 +15,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 320f2bfd06f7f01c15419f4bd6dc0eb5536079f0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom: api
+ms.openlocfilehash: af3881a5215871b0405f2f6b42b73c248af0c00c
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176813"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586875"
 ---
 # <a name="get-machines-security-states-collection-api"></a>Get Machines セキュリティ状態コレクション API
 
@@ -66,7 +67,7 @@ Empty
 
 ### <a name="request-example"></a>要求の例
 
-以下は、要求の例です。
+要求の例を次に示します。
 
 ```http
 GET https://graph.microsoft.com/testwdatppreview/machinesecuritystates
@@ -75,7 +76,7 @@ Content-type: application/json
 
 ### <a name="response-example"></a>応答の例
 
-以下は、応答の例です。
+応答の例を下に示します。
 
 フィールド *ID には* デバイス ID が含まれるので、デバイス情報のフィールド *ID** と等しくなります。
 

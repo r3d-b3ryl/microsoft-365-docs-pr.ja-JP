@@ -1,6 +1,6 @@
 ---
 title: CVE-KB マップ API の取得
-description: Get CVE-KB マップ API を使用して、Microsoft Defender for Endpoint の KB および CVE の詳細に対する CVE のマップを取得する方法について説明します。
+description: Get CVE-KB マップ API を使用して、MICROSOFT Defender for Endpoint の CVEs から KB へのマップと CVE の詳細を取得する方法について説明します。
 keywords: apis, graph api, サポートされている api, get, cve, kb
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ROBOTS: NOINDEX
 ms.technology: mde
-ms.openlocfilehash: 3921f79172bbbcc32b8510809b54bec477e44b85
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom: api
+ms.openlocfilehash: d950ce40a97cc024b4ec5776e087e81e4b1eee3d
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192858"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60588399"
 ---
 # <a name="get-cve-kb-map-api"></a>CVE-KB マップ API の取得
 
@@ -38,7 +39,7 @@ ms.locfileid: "60192858"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-KB および CVE の詳細に対する CVE のマップを取得します。
+CVEs から KB へのマップと CVE の詳細を取得します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -69,7 +70,7 @@ Empty
 
 ### <a name="request-example"></a>要求の例
 
-以下は、要求の例です。
+要求の例を次に示します。
 
 ```http
 GET https://graph.microsoft.com/testwdatppreview/CveKbMap
@@ -77,7 +78,7 @@ GET https://graph.microsoft.com/testwdatppreview/CveKbMap
 
 ### <a name="response-example"></a>応答の例
 
-以下は、応答の例です。
+応答の例を次に示します。
 
 ```json
 {

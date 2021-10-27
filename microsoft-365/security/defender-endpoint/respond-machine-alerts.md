@@ -2,7 +2,6 @@
 title: Microsoft Defender for Endpoint のデバイスで応答アクションを実行する
 description: デバイスの分離、調査パッケージの収集、タグの管理、av スキャンの実行、アプリの実行の制限など、デバイスで応答アクションを実行します。
 keywords: 応答、分離、デバイスの分離、調査パッケージの収集、アクション センター、制限、タグの管理、av スキャン、アプリの制限
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b21090c28fd240e349ec22b078843cf980f3325c
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: a992f457bab54ff53f3b134cfeba44f50b66af6e
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555010"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587411"
 ---
 # <a name="take-response-actions-on-a-device"></a>デバイスの対応措置を講じる
 
@@ -56,7 +55,7 @@ ms.locfileid: "60555010"
 
 > [!IMPORTANT]
 >
-> - これらの応答アクションは、Windows 10 バージョン 1703 以降、Windows Server 2019、および Windows Server 2022 のデバイスでのみ使用できます。
+> - これらの応答アクションは、Windows 10 バージョン 1703 以降、Windows 11、Windows Server 2019、Windows Server 2022 のデバイスでのみ使用できます。
 > - 非デバイス プラットフォームWindows応答機能 (デバイスの分離など) は、サード パーティの機能に依存します。
 > - Microsoft ファースト パーティエージェントの場合、OS の最小要件については、各機能の下にある 「詳細」リンクを参照してください。
 
@@ -154,7 +153,7 @@ ms.locfileid: "60555010"
 悪意のあるプロセスを停止して攻撃を含めるだけでなく、デバイスをロックダウンして、悪意のある可能性のあるプログラムの後続の試みを実行することもできます。
 
 >[!IMPORTANT]
-> - このアクションは、Windows 10バージョン 1709 以降のデバイスWindows Server 2016。 
+> - このアクションは、Windows 10バージョン 1709 以降、Windows 11、および Windows Server 2016。 
 > - この機能は、組織で使用している機能がMicrosoft Defender ウイルス対策。
 > - このアクションは、アプリケーションコントロールのコード整合性Windows Defenderの形式と署名要件を満たす必要があります。 詳細については、「コード整合性 [ポリシーの形式と署名」を参照してください](/windows/security/threat-protection/windows-defender-application-control/use-code-signing-to-simplify-application-control-for-classic-windows-applications)。
 
@@ -182,8 +181,8 @@ ms.locfileid: "60555010"
 
 >[!IMPORTANT]
 >- このアクションは、macOS および Linux では現在サポートされていません。 ライブ応答を使用してアクションを実行します。 ライブ応答の詳細については、「ライブ応答を使用してデバイス [上のエンティティを調査する」を参照してください。](live-response.md)
->- 完全な分離は、Windows 10、バージョン 1703、Windows Server 2019、Windows Server 2016、Windows Server 2012 R2、および Windows Server 2022 のデバイスで使用できます。
->- 選択的分離は、バージョン 1709 以降Windows 10デバイスで使用できます。
+>- Windows 10、バージョン 1703、Windows 11、Windows Server 2019、Windows Server 2016、Windows Server 2012 R2、Windows Server 2022 のデバイスで完全な分離を使用できます。
+>- 選択的な分離は、Windows 10バージョン 1709 以降、および 11 のデバイスWindowsできます。
 >- デバイスを分離する場合は、特定のプロセスと宛先だけが許可されます。 したがって、完全な VPN トンネルの背後にあるデバイスは、デバイスが分離された後、Microsoft Defender for Endpoint クラウド サービスに到達できません。 Microsoft Defender for Endpoint にスプリット トンネリング VPN を使用し、クラウド ベースMicrosoft Defender ウイルス対策トラフィックを使用することをお勧めします。
 
 このデバイス分離機能は、デバイスを監視し続ける Defender for Endpoint サービスへの接続を維持しながら、侵害されたデバイスをネットワークから切断します。

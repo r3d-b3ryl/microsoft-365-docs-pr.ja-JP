@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX
 description: 管理者は、管理者向け Microsoft Defender の試用版モードについてOffice 365
-ms.openlocfilehash: 43659c3eb548d31ad3b6d07d7855a5076b843b54
-ms.sourcegitcommit: d38a40db14a0e41e3c1c0f235843968b2746c6c4
+ms.openlocfilehash: cf701be45841f155b825e86b761f5967bc6298f4
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60562179"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60588279"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>Microsoft Defender for Office 365試用版
 
@@ -72,7 +72,7 @@ Microsoft Defender for Office 365 試用版は、数回クリックした後、O
 
 ## <a name="licensing"></a>ライセンス
 
-試用版のセットアップの一環として、ライセンスOffice 365 Defender が組織に自動的に適用されます。 ライセンスは、最初の 30 日間無料です。
+試用版のセットアップの一環として、ライセンスOffice 365 Defender が組織に自動的に適用されます。 ライセンスは、最初の 90 日間は無料です。
 
 試用版のライセンス カードには、次の情報が表示されます。
 
@@ -120,7 +120,7 @@ A: 試用版の有効期限が切れると、30 日間、試用版データ (以
 
 ### <a name="q-how-many-times-can-i-use-the-defender-for-office-365-trial-in-my-organization"></a>Q: 組織内で Defender を試用Office 365何回使用できますか?
 
-A: 最大 2 回。 最初の試用版の有効期限が切れた場合は、有効期限の 30 日以上経過してから、Defender に再び試用版をOffice 365する必要があります。
+A: 最大 2 回。 最初の試用版の有効期限が切れた場合は、有効期限の 30 日以上経過してから、Defender に再び試用版をOffice 365する必要があります。 2 回目の試用版の後、別の試用版に登録できない。
 
 ## <a name="learn-more-about-defender-for-office-365"></a>Defender for Office 365
 

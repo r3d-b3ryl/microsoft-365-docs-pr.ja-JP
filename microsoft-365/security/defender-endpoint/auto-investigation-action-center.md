@@ -2,7 +2,6 @@
 title: アクション センターにアクセスして修復アクションを確認する
 description: アクション センターを使用して、自動調査後の詳細と結果を表示する
 keywords: action, center, autoir, 自動, 調査, 応答, 修復
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -19,12 +18,12 @@ ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.date: 01/28/2021
 ms.technology: mde
-ms.openlocfilehash: ce55054e921d3c97133dc1cdf3660e32f6b73d92
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4b359ee1905081396f382bf762f2c74e89acf5dd
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60163146"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587827"
 ---
 # <a name="visit-the-action-center-to-see-remediation-actions"></a>アクション センターにアクセスして修復アクションを確認する
 
@@ -72,7 +71,7 @@ ms.locfileid: "60163146"
 
 |タブ|説明|
 |---|---|
-|**保留中**|注意が必要なアクションの一覧を表示します。 アクションを一度に 1 つ承認または拒否するか、同じ種類のアクション (検疫ファイルなど) がある場合は複数のアクション **を選択できます**。 <p> **ヒント**: 保留中のアクションをできるだけ早く確認し、承認 (または拒否 [)](manage-auto-investigation.md) して、自動調査が正時に完了するようにします。|
+|**Pending**|注意が必要なアクションの一覧を表示します。 アクションを一度に 1 つ承認または拒否するか、同じ種類のアクション (検疫ファイルなど) がある場合は複数のアクション **を選択できます**。 <p> **ヒント**: 保留中のアクションをできるだけ早く確認し、承認 (または拒否 [)](manage-auto-investigation.md) して、自動調査が正時に完了するようにします。|
 |**履歴**|次のようなアクションの監査ログとして機能します。 <ul><li>自動調査の結果として実行された修復アクション</li><li>セキュリティ運用チームによって承認された修復アクション</li><li>Live Response セッション中に適用された、実行されたコマンドと修復アクション</li><li>脅威保護機能によって実行された修復Microsoft Defender ウイルス対策</li></ul> <p> 特定のアクションを元に戻す方法を提供します (「完了した操作を元に戻[す」を参照)。](manage-auto-investigation.md#undo-completed-actions)|
 
 アクション センターでデータをカスタマイズ、並べ替え、フィルター処理、およびエクスポートできます。

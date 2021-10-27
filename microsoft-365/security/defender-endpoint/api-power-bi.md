@@ -3,7 +3,6 @@ title: Microsoft Defender for Endpoint API 接続とエンドポイント API Po
 ms.reviewer: ''
 description: Microsoft Defender for Endpoint API の上に Power Business Intelligence (BI) レポートを作成します。
 keywords: apis、サポートされている api、Power BI、レポート
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 3e8c9918856b1b84dd5d0795f69b40e9aaf98226
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 738256199ea784109e74b21efc0029f77d1e85eb
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192045"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587743"
 ---
 # <a name="create-custom-reports-using-power-bi"></a>ユーザー設定を使用してカスタム レポートをPower BI
 
@@ -142,7 +141,7 @@ ms.locfileid: "60192045"
 
 レポート サンプルの Microsoft Defender for Endpoint Power BI表示します。 詳細については、「Browse [code samples 」を参照してください](/samples/browse/?products=mdatp)。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [エンドポイント API の Defender](apis-intro.md)
 - [高度な追求 API](run-advanced-query-api.md)

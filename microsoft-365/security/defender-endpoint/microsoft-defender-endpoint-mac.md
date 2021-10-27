@@ -2,7 +2,7 @@
 title: Microsoft Defender for Endpoint on Mac
 ms.reviewer: ''
 description: Mac で Microsoft Defender for Endpoint をインストール、構成、更新、および使用する方法について説明します。
-keywords: microsoft、 defender、 Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamf, macos, big sur, catalina, mojave, mde for mac
+keywords: microsoft、 defender、 Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamf, macos, monterey, big sur, catalina, mojave, mde for mac
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4fe0d1b073a2efb14b8b771a2786889cbaa8e892
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3943c5c9e477dc114b74d7f3f9a76b5b00119dd6
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60149888"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587731"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender for Endpoint on Mac
 
@@ -75,12 +75,9 @@ Defender for Endpoint on Mac のインストールと構成に使用できる方
 macOS の最新の 3 つのメジャー リリースがサポートされています。
 
 > [!IMPORTANT]
-> macOS 11 (Big Sur) では、Microsoft Defender for Endpoint には追加の構成プロファイルが必要です。 以前のバージョンの macOS からアップグレードする既存のお客様の場合は [、macOS Catalina](mac-sysext-policies.md)および macOS の新しいバージョンの新しい構成プロファイルに記載されている追加の構成プロファイルを必ず展開してください。
+> macOS 11 (Big Sur) 以上では、Microsoft Defender for Endpoint には追加の構成プロファイルが必要です。 以前のバージョンの macOS からアップグレードする既存のお客様の場合は [、macOS Catalina](mac-sysext-policies.md)および macOS の新しいバージョンの新しい構成プロファイルに記載されている追加の構成プロファイルを必ず展開してください。
 
-> [!IMPORTANT]
-> macOS 10.13 (High Sierra) のサポートは、2021 年 2 月 15 日より中止されました。
-
-- 11 (Big Sur), 10.15 (Catalina), 10.14 (Mojave)
+- 12 (モントレー), 11 (Big Sur), 10.15 (Catalina), 10.14 (Mojave)
 - ディスク領域: 1 GB
 
 macOS のベータ版はサポートされていません。

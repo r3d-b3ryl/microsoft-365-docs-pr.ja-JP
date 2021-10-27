@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 description: '共有メールボックスからライセンスを削除して、別のユーザーに割り当てるか、ライセンスを返して支払いを行わない。 '
 ms.date: 05/11/2021
-ms.openlocfilehash: 384e5d68d2b964278244fe5c2ec7f87097325540
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ccbab157b810e86a941da519346da621398a4af9
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164910"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586815"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>共有メールボックスからライセンスを削除する
 
@@ -36,12 +36,15 @@ ms.locfileid: "60164910"
 
 > [!NOTE]
 >
-> ライセンスは、次のシナリオで必要です。
+> 次Exchange Onlineシナリオでは、プラン 2 のライセンスが必要です。
 >
-> 1. 共有メールボックスには、50 GB を超えるストレージが使用されます。
-> 2. 共有メールボックスは、インプレイス アーカイブを使用します。
-> 3. 共有メールボックスは訴訟ホールドに配置されます。
-> 4. 共有メールボックスには、Microsoft Defender ライセンスが割り当て済みです。
+> - 共有メールボックスには、50 GB を超えるストレージが使用されます。
+> - 共有メールボックスは、インプレイス アーカイブを使用します。
+> - 共有メールボックスは訴訟ホールドに配置されます。
+> - 共有メールボックスには、Microsoft Defender ライセンスが割り当て済みです。
+> 
+> ライセンスを割り当てる方法の手順については、「ユーザーにライセンスを割り当てる [」を参照してください](/microsoft-365/admin/manage/assign-licenses-to-users)。 
+
 
 ## <a name="remove-the-license"></a>ライセンスを削除する
 
@@ -70,7 +73,7 @@ ms.locfileid: "60164910"
 
 3. [ライセンス **とアプリ] タブの 1** つで、[ライセンス] **を展開** し、削除するライセンスのボックスをオフにします。
 
-4. [**変更の保存**] を選択します。
+4. **[変更の保存]** を選択します。
 
 5. [アクティブ ユーザー] ページ **に戻** った場合、共有メールボックスの状態は [ **ライセンス解除] になります**。
 

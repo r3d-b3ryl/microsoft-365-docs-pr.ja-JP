@@ -16,14 +16,17 @@ ms.collection:
 localization_priority: medium
 description: Cornerstone OnDemand をユーザーの学習コンテンツ ソースとして構成するMicrosoft Viva ラーニング。
 ROBOTS: NOINDEX
-ms.openlocfilehash: 0d4f344b2c5ea6854337bb78013994ae5da16f70
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 6cc77ec25f7297fa2492b5a22d70e60350b8eccc
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60557259"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586127"
 ---
 # <a name="configure-cornerstone-ondemand-as-a-content-source-for-microsoft-viva-learning"></a>Cornerstone OnDemand をコンテンツ ソースとして構成Microsoft Viva ラーニング
+
+>[!NOTE]
+>この機能はプレビューではサポートされていません。
 
 この記事では、Cornerstone OnDemand をサードパーティのラーニング コンテンツ ソースとしてビバ で構成する方法をラーニング。 まず、ビバ の設定を有効にしラーニング、コーナーストーン ポータルから詳細を取得する必要があります。 次に、サーバーで構成を完了する必要Microsoft 365 管理センター。
 

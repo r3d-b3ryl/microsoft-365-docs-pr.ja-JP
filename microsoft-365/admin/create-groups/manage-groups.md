@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: グループ メンバーのMicrosoft 365追加、電子メール アドレス、グループ名、または説明の編集、グループの動作のカスタマイズなど、グループグループの管理について説明します。
-ms.openlocfilehash: 979291cfde3c82bb6e16520f13f51c51e9bd47c2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 89e4ff11ffbb396038dd28c26b1f06762a2b5b21
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165762"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586459"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>グループを管理するMicrosoft 365 管理センター
 
@@ -80,6 +80,9 @@ ms.locfileid: "60165762"
 3. 管理センター グループの一覧で、変更するグループの名前を選択し、[設定] タブ **で、[** このグループにメールを送信する外部送信者を許可する] を **選択します**。
     
 4. **[保存]** を選択します。
+
+> [!NOTE]
+> オーガニック化以外のユーザーがグループにメールを送信するには、最大で 30 分かかる場合があります。
 
 ## <a name="permanently-delete-a-microsoft-365-group"></a>グループを完全Microsoft 365する
 

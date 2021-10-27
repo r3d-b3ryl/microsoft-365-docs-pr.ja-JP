@@ -16,14 +16,17 @@ ms.collection:
 localization_priority: medium
 description: 他のプロバイダーを学習コンテンツ ソースとして構成する方法について説明Microsoft Viva ラーニング。
 ROBOTS: NOINDEX
-ms.openlocfilehash: 006b3e6690df253f80bc8e47d93264b9bf19ea0f
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 1a638131b9bf8cca41f7ee8575e472885929d3c8
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60557271"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60588007"
 ---
 # <a name="add-other-content-providers-for-microsoft-viva-learning"></a>他のコンテンツ プロバイダーを追加Microsoft Viva ラーニング
+
+>[!NOTE]
+>この機能はプレビューではサポートされていません。
 
 一連の学習コンテンツ プロバイダーと学習管理システムは、Viva ラーニング。 このセットは、より多くのプロバイダーがプログラムに参加したり、プログラムの状態を変更したりすると、いつでも変更される可能性があります。
 

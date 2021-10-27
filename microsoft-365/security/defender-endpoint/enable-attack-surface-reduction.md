@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: how-to
 ms.date: 08/17/2021
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 5ef41d825b8f375377a6307a0a4de8f69c5737df
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: 59208058dce036da06d5378efc2539b8f454dead
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240586"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60585911"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>攻撃面の減少ルールを有効にする
 
@@ -54,7 +54,7 @@ ms.locfileid: "60240586"
 
 - Windows Defender ウイルス対策 AV として設定する (リアルタイム保護オン)
 - [Cloud-Delivery Protection on](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) (一部のルールでは必要)
-- Windows 10 EnterpriseE5 または E3 ライセンスまたはMicrosoft 365ビジネス ライセンス
+- Windows 10 EnterpriseE5 または E3 ライセンス
 
 攻撃表面の縮小ルールでは[、Windows E5](/windows/deployment/deploy-enterprise-licenses)ライセンスを使用して Windows E5 ライセンスを必要としますが、Defender for Endpoint で使用できる監視、分析、ワークフロー、および Microsoft 365 セキュリティ センターのレポート機能と構成機能などの高度な管理機能を利用できます。 これらの高度な機能は E3 ライセンスでは使用できませんが、イベント ビューアーを使用して攻撃表面の縮小ルール イベントを確認できます。
 
@@ -101,6 +101,7 @@ ASR ルールを有効にする次の手順には、ファイルとフォルダ�
 
 ## <a name="intune"></a>Intune
 
+**デバイス構成プロファイル**
 1. [デバイス **構成プロファイル** \> **] を選択します**。 既存のエンドポイント保護プロファイルを選択するか、新しいエンドポイント保護プロファイルを作成します。 新しいプロファイルを作成するには、[プロファイルの作成] **を選択し** 、このプロファイルの情報を入力します。 [プロファイル **の種類] で**、[ **エンドポイント保護] を選択します**。 既存のプロファイルを選択した場合は、[プロパティ] を選択 **し、[プロパティ**] を選択 **設定。**
 
 2. [エンドポイント保護 **] ウィンドウで**、[Exploit **Guard] をWindows Defenderし**、[攻撃表面の縮小 **] を選択します**。 各 ASR ルールの目的の設定を選択します。
@@ -110,6 +111,17 @@ ASR ルールを有効にする次の手順には、ファイルとフォルダ�
    `C:\folder`, `%ProgramFiles%\folder\file`, `C:\path`
 
 4. 3 つの構成ウィンドウで **[OK]** を選択します。 次に、**新しい** エンドポイント保護ファイルを作成する場合は[作成] を選択し、既存のエンドポイント保護ファイルを編集する場合は [保存] を選択します。
+
+**エンドポイント セキュリティ ポリシー**
+1. [エンドポイント **セキュリティ攻撃** \> **] サーフェスの縮小を選択します**。 既存の ASR ルールを選択するか、新しい ASR ルールを作成します。 新しいプロファイルを作成するには、[ポリシーの作成] **を選択し** 、このプロファイルの情報を入力します。 [ **プロファイルの種類] で**、[攻撃 **表面の縮小ルール] を選択します**。 既存のプロファイルを選択した場合は、[プロパティ] を選択 **し、[プロパティ**] を選択 **設定。**
+
+2. [構成設定 **] ウィンドウで** 、[ **攻撃表面** の縮小] を選択し、各 ASR ルールの目的の設定を選択します。
+
+3. [**保護する必要** がある追加のフォルダーの一覧]で、保護されたフォルダーにアクセスできるアプリの一覧、および攻撃表面の縮小ルールからファイルとパスを除外し、個々のファイルとフォルダーを **入力** します。 [インポート] を **選択して** 、ASR ルールから除外するファイルとフォルダーを含む CSV ファイルをインポートすることもできます。 CSV ファイルの各行は、次のように書式設定する必要があります。
+
+   `C:\folder`, `%ProgramFiles%\folder\file`, `C:\path`
+
+4. 3 **つの** 構成ウィンドウで [次へ] を選択し、新しいポリシーを作成する場合は [作成] を選択し、既存のポリシーを編集する場合は [保存] を選択します。
 
 ## <a name="mem"></a>MEM
 

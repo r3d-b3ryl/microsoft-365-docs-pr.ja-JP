@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: 移行後のアクティビティは、Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツのデータセンター地域Office 365サービスに移行した後です。'
-ms.openlocfilehash: 234631b9169b29a557ab3b08f29dd67788575eee
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 349b9aa756a67d823e95ec2d999a04b12863d0fb
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201615"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586207"
 ---
 # <a name="post-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>Microsoft Cloud Deutschland からの移行の移行後のアクティビティ
 
@@ -48,12 +48,12 @@ The following table provides an overview about which endpoints will replace the 
 |||
 -->
 
-### <a name="azure-ad-federated-authentication-with-ad-fs"></a>Azure AD FS とのフェデレーションAD認証
+### <a name="azure-ad-federated-authentication-with-ad-fs"></a>Azure AD FS とのフェデレーション認証ADする
 **適用対象:** FS とのフェデレーション認証を使用AD顧客
 
 | Step(s) | 説明 | 影響 |
 |:-------|:-------|:-------|
-| Microsoft Cloud Deutschland および FS から証明書利用者の信頼AD削除します。 | Azure への切りADが完了すると、組織は Office 365 サービスを完全に使用し、Microsoft Cloud Deutschland に接続されなくなりました。 この時点で、顧客は Microsoft Cloud Deutschland エンドポイントに対する証明書利用者の信頼を削除する必要があります。 これは、Azure AD が ID プロバイダー (IdP) として活用されている場合にのみ、お客様のアプリケーションが Microsoft Cloud Deutschland エンドポイントをポイントしない場合にのみ実行できます。 | フェデレーション認証組織 | 
+| Microsoft Cloud Deutschland および FS から証明書利用者の信頼AD削除します。 | サーバーへのカットオーバーがAzure AD、組織は完全に Office 365 サービスを使用し、Microsoft Cloud Deutschland に接続されなくなりました。 この時点で、顧客は Microsoft Cloud Deutschland エンドポイントに対する証明書利用者の信頼を削除する必要があります。 これは、Id プロバイダー (IdP) として Azure AD が活用されている場合に限り、Microsoft Cloud Deutschland エンドポイントをポイントしない場合にのみ実行できます。 | フェデレーション認証組織 | 
 ||||
 
 <!--
@@ -61,11 +61,11 @@ The following table provides an overview about which endpoints will replace the 
     The following paragraph is not clear
 -->
 ### <a name="group-approvals"></a>グループの承認
-**適用対象:** 移行前の過去 30 日間に Azure AD承認要求が承認されなかったエンド ユーザー 
+**適用対象:** 移行前の過去 30 日間Azure ADグループ承認要求が承認されなかったエンド ユーザー 
 
 | Step(s) | 説明 | 影響 |
 |:-------|:-------|:-------|
-| 移行前の過去 30 日間に Azure AD グループに参加する要求は、元の要求が承認されなかった場合は、再度要求する必要があります。 | 移行前の過去 30 日間にこれらの要求が承認されなかった場合、エンドユーザーのお客様は Access パネルを使用して Azure AD グループに再度参加する要求を送信する必要があります。 |  エンド ユーザーとして次の情報を使用します。 <ol><li>[アクセス] [パネルに移動します](https://account.activedirectory.windowsazure.com/r#/joinGroups)。</li><li>移行前 30 ADの間にメンバーシップの承認が保留された Azure ユーザー グループを検索します。</li><li>Azure ADへの参加を要求します。</li></ol> 移行の 30 日未満前にアクティブなグループに参加する要求は、移行後に再度要求されていない限り、承認できません。 |
+| 移行前の過去 30 日間Azure ADグループに参加する要求は、元の要求が承認されなかった場合は、再度要求する必要があります。 | エンドユーザーのお客様は、移行前の過去 30 日間にこれらの要求が承認されなかった場合は、Access パネルを使用して Azure AD グループに再び参加する要求を送信する必要があります。 |  エンド ユーザーとして次の情報を使用します。 <ol><li>[アクセス] [パネルに移動します](https://account.activedirectory.windowsazure.com/r#/joinGroups)。</li><li>移行のAzure AD 30 日間にメンバーシップの承認が保留されたグループを検索します。</li><li>グループに再度参加Azure AD要求します。</li></ol> 移行の 30 日未満前にアクティブなグループに参加する要求は、移行後に再度要求されていない限り、承認できません。 |
 ||||
 
 ## <a name="custom-dns-updates"></a>カスタム DNS 更新プログラム
@@ -75,7 +75,9 @@ The following table provides an overview about which endpoints will replace the 
 |:------|:-------|:-------|
 | サービス エンドポイントのオンプレミス DNS サービスOffice 365更新します。 | Microsoft Cloud Deutschland を指す顧客管理 DNS エントリは、グローバル サービス エンドポイントをポイントOffice 365更新する必要があります。 詳細については、「[ドメイン」を参照しMicrosoft 365 管理センター](https://admin.microsoft.com/Adminportal/Home#/Domains) DNS 構成に変更を適用してください。 | サービスまたはソフトウェア クライアントの障害が発生する可能性があります。 |
 ||||
-
+   > [!NOTE]
+   > このMicrosoft 365 管理センター、移行されたユーザーに対して、新しいドメインのメール 交換 (MX) レコードを、outlook.de します。 例: consoto-com.mail.protection.outlook.de。 新しいドメインの場合、カスタム MX レコードをポイントする予想値または正しい値は、outlook.com 領域にあります。 同じ例を使用して、正しいエントリが consoto-com.mail.protection.outlook.com。 移行された組織のドメインに対してこの動作を修正するための修正が進行中です。
+   
 ## <a name="third-party-services"></a>サード パーティのサービス
 **適用対象:** サービス エンドポイントにサードパーティ サービスを使用Office 365顧客
 

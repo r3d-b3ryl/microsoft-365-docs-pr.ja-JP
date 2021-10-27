@@ -13,13 +13,14 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 localization_priority: medium
+ROBOTS: NOINDEX, NOFOLLOW
 description: 分類を使用して、ビバ トピックのトピックを検索するSharePoint説明します。
-ms.openlocfilehash: ed4fcd97151ebdb14294803fa33c0763f4f0cfda
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: c619684163cc7571e803163b5a036929d700bb94
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60557127"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587399"
 ---
 # <a name="use-sharepoint-taxonomy-terms-to-create-topics-in-microsoft-viva-topics"></a>分類用語SharePoint使用して、分類用語でトピックを作成Microsoft Viva トピック
 

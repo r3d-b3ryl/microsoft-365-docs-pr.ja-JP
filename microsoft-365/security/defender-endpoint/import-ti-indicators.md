@@ -14,12 +14,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 5ad5e942f60f34adb7faf35eb70b1a027124664e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom: api
+ms.openlocfilehash: 222659172b939587a74a2fd34deb53f6140f414b
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157928"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60588366"
 ---
 # <a name="import-indicators-api"></a>インポート インジケーター API
 
@@ -64,7 +65,7 @@ POST https://api.securitycenter.microsoft.com/api/indicators/import
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|型|説明
+名前|種類|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**。
 Content-Type|string|application/json. **必須**。
@@ -73,7 +74,7 @@ Content-Type|string|application/json. **必須**。
 
 要求本文で、JSON オブジェクトに次のパラメーターを指定します。
 
-パラメーター|型|説明
+パラメーター|種類|説明
 :---|:---|:---
 インジケーター|リスト<[インジケーター](ti-indicator.md)>|インジケーターの [一覧](ti-indicator.md)。 **必須**
 

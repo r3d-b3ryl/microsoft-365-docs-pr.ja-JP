@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 72f8b5e32f02ccef028e6d1bccb7bec942ce5d48
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: c8a51358d18edaf4bab680d2c63268638eca3283
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556330"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60585993"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 上のエンドポイント用 Microsoft Defender の基本設定を設定する
 
@@ -100,6 +100,22 @@ ms.locfileid: "60556330"
 |**指定可能な値**|false (既定) <p> true|
 |**コメント**|Defender for Endpoint version 100.67.60 以上で使用できます。|
 |
+
+
+#### <a name="enabledisable-behavior-monitoring"></a>動作監視を有効または無効にする 
+
+デバイスで動作の監視とブロック機能を有効にするかどうかを決定します。セキュリティ保護の有効性を向上させるために、この機能を有効に保つことをお勧めします。
+
+<br>
+
+****
+
+|説明|値|
+|---|---|
+|**Key**|name|
+|**データ型**|String|
+|**指定可能な値**|disabled <p> 有効 (既定)|
+|**コメント**|Defender for Endpoint version 101.45.00 以上で使用できます。|
   
 #### <a name="run-a-scan-after-definitions-are-updated"></a>定義の更新後にスキャンを実行する
 
@@ -145,7 +161,7 @@ ms.locfileid: "60556330"
 |---|---|
 |**Key**|maximumOnDemandScanThreads|
 |**データ型**|整数|
-|**指定可能な値**|2 (既定)。 使用できる値は、1 ~ 64 の整数です。|
+|**可能な値**|2 (既定)。 使用できる値は、1 ~ 64 の整数です。|
 |**コメント**|エンドポイント バージョン 101.45.00 以上の Microsoft Defender で使用できます。|
 |||
   
@@ -287,7 +303,7 @@ ms.locfileid: "60556330"
 |---|---|
 |**Key**|disallowedThreatActions|
 |**データ型**|文字列の配列|
-|**可能な値**|allow (ユーザーによる脅威の許可を制限する) <p> 復元 (検疫からの脅威の復元をユーザーに制限する)|
+|**指定可能な値**|allow (ユーザーによる脅威の許可を制限する) <p> 復元 (検疫からの脅威の復元をユーザーに制限する)|
 |**コメント**|Defender for Endpoint version 100.83.73 以上で使用できます。|
 |
 
@@ -430,7 +446,7 @@ ms.locfileid: "60556330"
 |---|---|
 |**Key**|diagnosticLevel|
 |**データ型**|String|
-|**指定可能な値**|省略可能 (既定) <p> 必須|
+|**指定可能な値**|省略可能 (既定) <p> 必須出席者|
 |
 
 #### <a name="enable--disable-automatic-sample-submissions"></a>自動サンプル申請を有効または無効にする
@@ -480,12 +496,14 @@ ms.locfileid: "60556330"
 - セキュリティ インテリジェンスの自動更新を有効にする
 - クラウドによる保護の有効化
 - レベルで自動サンプル提出を `safe` 有効にする
+- 動作監視を有効にする
 
 ### <a name="sample-profile"></a>サンプル プロファイル
 
 ```JSON
 {
    "antivirusEngine":{
+      "behaviorMonitoring":"enabled",
       "enableRealTimeProtection":true,
       "threatTypeSettings":[
          {
@@ -516,6 +534,7 @@ ms.locfileid: "60556330"
 ```JSON
 {
    "antivirusEngine":{
+      "behaviorMonitoring":"enabled",
       "enableRealTimeProtection":true,
       "scanAfterDefinitionUpdate":true,
       "scanArchives":true,

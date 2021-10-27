@@ -2,7 +2,7 @@
 title: Linux での Microsoft Defender for Endpoint の展開 (Puppet を使用)
 ms.reviewer: ''
 description: Puppet を使用して Microsoft Defender for Endpoint を Linux に展開する方法について説明します。
-keywords: Microsoft、Defender、Microsoft Defender for Endpoint、Linux、インストール、展開、アンインストール、puppet、ansible、linux、redhat、ubuntu、debian、sles、suse、centos
+keywords: microsoft、 defender、 Microsoft Defender for Endpoint, Linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos, fedora, amazon linux 2
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4309155fa078b4a851838e528f4c47f2ef6569eb
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3c3832cb8f5783d7e972fd41f4d9e56a650390e2
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152243"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586035"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-puppet"></a>Linux での Microsoft Defender for Endpoint の展開 (Puppet を使用)
 
@@ -115,12 +115,12 @@ Linux 用 Defender for Endpoint は、次のチャネル (以下、*[チャネ�
 以下のコマンドで *、[distro]* と *[version]* を、特定した情報に置き換える必要があります。
 
 > [!NOTE]
-> RedHat、Oracle EL、CentOS 8 の場合 *、[distro] を 'rhel'* に置き換える。
+> RedHat、Oracle Linux、Amazon Linux 2、CentOS 8 の場合、[ *ディストリビューション]* を 'rhel' に置き換える。
 
 ```puppet
 # Puppet manifest to install Microsoft Defender for Endpoint on Linux.
 # @param channel The release channel based on your environment, insider-fast or prod.
-# @param distro The Linux distribution in lowercase. In case of RedHat, Oracle EL, and CentOS 8, the distro variable should be 'rhel'.
+# @param distro The Linux distribution in lowercase. In case of RedHat, Oracle Linux, Amazon Linux 2, and CentOS 8, the distro variable should be 'rhel'.
 # @param version The Linux distribution release number, e.g. 7.4.
 
 class install_mdatp (

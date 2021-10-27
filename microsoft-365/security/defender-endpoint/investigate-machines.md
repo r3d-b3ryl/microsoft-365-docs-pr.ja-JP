@@ -2,8 +2,6 @@
 title: Defender for Endpoint Devices リストのデバイスを調査する
 description: アラート、ネットワーク接続情報、デバイス タグとグループの追加、サービスの正常性の確認を行って、影響を受けるデバイスを調査します。
 keywords: デバイス、タグ、グループ、エンドポイント、アラート キュー、アラート、デバイス名、ドメイン、最後に表示される、内部 IP、アクティブなアラート、脅威カテゴリ、フィルター、並べ替え、アラートの確認、ネットワーク、接続、種類、パスワードの盗み取り、ランサムウェア、悪用、脅威、重要度の低い、サービスの正常性
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f229aee785066f1cf356a95a3ffd242704c578dc
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 83f025ed8319e74eaa2e908765a1ac1922ac8415
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154856"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587851"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Microsoft Defender for Endpoint Devices リストのデバイスを調査する
 
@@ -202,7 +200,7 @@ Microsoft Defender for Identity 機能を有効にし、アクティブなアラ
 
 ![セキュリティ評価カードのイメージ。](images/security-assessments.png)
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [Microsoft Defender for Endpoint アラート キューを表示して整理する](alerts-queue.md)
 - [エンドポイント通知の Microsoft Defender の管理](manage-alerts.md)

@@ -2,8 +2,6 @@
 title: エンドポイント通知の Microsoft Defender の管理
 description: '[アラートの管理] メニューを使用して、アラートの状態を変更し、抑制ルールを作成して、アラートを非表示にし、コメントを送信し、個々のアラートの変更履歴を確認します。'
 keywords: アラートの管理、管理、アラート、状態、新規、進行中、解決済み、アラートの解決、抑制、抑制、ルール、コンテキスト、履歴、コメント、変更
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d6ce6d8f081141214c8d10ea21898fb66e3e0c10
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1d4df8855e9aea643860d21b07473e82019f2323
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205381"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587163"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-alerts"></a>エンドポイント通知の Microsoft Defender の管理
 
@@ -129,7 +127,7 @@ Defender for Endpoint は、悪意のあるイベント、属性、コンテキ�
 
 追加されたコメントは直ちにウィンドウに表示されます。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [抑制ルールの管理](manage-suppression-rules.md)
 - [Microsoft Defender for Endpoint アラート キューを表示して整理する](alerts-queue.md)

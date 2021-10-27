@@ -2,7 +2,6 @@
 title: インシデントを調査Microsoft 365 Defender
 description: デバイス、ユーザー、メールボックスに関連するインシデントを調査します。
 keywords: インシデント、インシデント、分析、応答、コンピューター、デバイス、ユーザー、ID、メール、メール、メールボックス、調査、グラフ、証拠
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -23,14 +22,13 @@ ms.collection:
 ms.topic: conceptual
 search.appverid:
 - MOE150
-- MET150
 ms.technology: m365d
-ms.openlocfilehash: 31dbc29d2aca019c2b2553bb7ffa3082e410aab9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9037b8f721a33f6709f3beefdac6d294c7125333
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209203"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60588303"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>インシデントを調査Microsoft 365 Defender
 
@@ -60,7 +58,7 @@ Microsoft 365 Defender、デバイス、ユーザー、およびメールボッ�
 
 インシデント キューからインシデント名を選択して、インシデントのメイン ページを開く方法も指定できます。
 
-## <a name="summary"></a>要約
+## <a name="summary"></a>まとめ
 
 [ **概要] ページ** では、インシデントに関する一番上の情報をスナップショットで確認できます。
 
