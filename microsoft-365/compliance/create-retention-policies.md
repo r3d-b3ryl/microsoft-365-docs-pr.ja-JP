@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーを使用して、ユーザーがメール、ドキュメント、および会話で生成するコンテンツを効率的に制御します。 必要なものを保持し、不要なものを取り除きます。
-ms.openlocfilehash: 4a1a0c5334772d9259278d884090c75d8441df22
-ms.sourcegitcommit: f6fff04431d632db02e7bdbf12f691091a30efad
+ms.openlocfilehash: d899b611608642873a84ffe5681719fef0e9581e
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60432603"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586695"
 ---
 # <a name="create-and-configure-retention-policies"></a>アイテム保持ポリシーを作成して構成する
 
@@ -168,11 +168,11 @@ Yammer 向けに機能する保持ポリシーの仕組みに関する詳細情�
 
 Yammer に備わっているのは、コミュニティのメッセージや個人用メッセージだけではありません。 Yammer ネットワークのメール メッセージを保持したり削除したりするには、**Microsoft 365 グループ** の場所を使用して、Yammer で使用されている任意の Microsoft 365 グループを含む追加の保持ポリシーを構成します。 
 
-Yammer に保存されているファイルを保持したり削除したりするためには、**SharePoint サイト** や **OneDrive アカウント** の場所を含むアイテム保持ポリシーが必要です。
+Yammer に保存されているファイルを保持したり削除したりするためには、**Microsoft 365 グループ** や **OneDrive アカウント** の場所を含むアイテム保持ポリシーが必要です。
 
 - 個人用メッセージ内で共有されるファイルは、ファイルを共有したユーザーの OneDrive アカウントに保存されます。 
 
-- コミュニティにアップロードされたファイルは、Yammer コミュニティの SharePoint 内に保存されます。
+- コミュニティにアップロードされたファイルは、Yammer コミュニティのグループ接続された SharePoint サイト内に保存されます。
 
 SharePoint サイトや OneDrive アカウントに適用されているアイテム保持ポリシーにより、Yammer メッセージで参照されているファイルが、それらのメッセージが削除されるよりも先に削除される場合があります。 このような場合、そのファイルは Yammer のメッセージに引き続き表示されますが、ユーザーがファイルをクリックすると、"ファイルが見つかりません" というエラーが表示されます。 この動作はアイテム保持ポリシーに固有のものではなく、ユーザーが SharePoint または OneDrive から手動でファイルを削除した場合にも発生する可能性があります。
 
