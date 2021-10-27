@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: SharePoint と OneDrive の保持のしくみについて説明します。
-ms.openlocfilehash: 9e70ecd26eabad62e93901d0c6a296c068717b73
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ecdb81e5dcb6507a3ef929dce04bfd9aee8d93af
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197499"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60588247"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>SharePoint と OneDrive の保持の詳細
 
@@ -108,7 +108,7 @@ SharePoint と OneDrive では、保持する必要のあるコンテンツを�
 
 ## <a name="how-retention-works-for-onenote-content"></a>OneNote コンテンツの保持のしくみ
 
-OneNote コンテンツを含む場所にアイテム保持ポリシーを適用すると、舞台裏では、異なる OneNote セクションが実際には異なるファイルになります。 つまり、指定した保持設定に従って、各セクションが個別に保持され削除されます。
+OneNote コンテンツを含む場所、または保持ラベルを含む場所にアイテム保持ポリシーを適用すると、OneNote フォルダーのバックグラウンドにある別の OneNote セクションは、保持設定を継承する個々のファイルになります。 つまり、指定した保持設定に従って、各セクションが個別に保持され削除されます。
 
 ## <a name="how-retention-works-with-document-versions"></a>文書のバージョンを保持する方法
 

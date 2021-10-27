@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 異常検出アラートを調査する。
-ms.openlocfilehash: bc82c0a8145b783ea914dd7eec32f3a5f7c6d05e
-ms.sourcegitcommit: df1ad7118c4a95a310a4f17124322a6ae6ace26f
+ms.openlocfilehash: d3876900e1dfa26e80550e699dd00d6034d8e6d7
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60268876"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60588115"
 ---
 # <a name="investigate-anomaly-detection-alerts"></a>異常検出アラートを調査する
 
@@ -31,15 +31,15 @@ ms.locfileid: "60268876"
 
 このガイドでは、次のカテゴリの アプリ ガバナンス アラートの調査と修復に関する情報を提供します。
 
-- 初期アクセス
+- [初期アクセス](#initial-access-alerts)
 - 実行
-- 永続性
+- [永続性](#persistence-alerts)
 - 特権エスカレーション
 - 防御回避
 - 資格情報へのアクセス
-- 検出
+- [検出](#discovery-alerts)
 - 横方向の移動
-- コレクション
+- [コレクション](#collection-alerts)
 - 流出
 - 影響
 
@@ -343,6 +343,29 @@ Azure Active Directory を使用してパスワードをリセットする方法
 
 1. このアプリで実行されるすべてのアクティビティを確認します。
 1. アプリによって付与されたスコープを確認します。
+1. このアプリに関連するユーザー アクティビティを確認します。
+
+### <a name="suspicious-enumeration-activities-performed-using-aad-powershell"></a>PowerShell を使用して実行される疑わしい列挙AADアクティビティ
+
+**重要度**: 中
+
+**MITRE ID**: T1087
+
+この検出では、PowerShell アプリケーションを介して短時間で実行される大量の疑わしい列挙AADを識別します。
+
+**TP または FP?**
+
+- **TP**: 疑わしい/異常な列挙アクティビティが AAD PowerShell アプリケーションによって実行されたことを確認した場合。
+
+  **推奨されるアクション**: アプリを無効にして削除し、パスワードをリセットします。
+
+- **FP**: アプリで通常と異なるアクティビティが実行されていないことが確認できる場合。
+
+  **推奨されるアクション**: アラートを無視します。
+
+**攻撃対象を理解する**
+
+1. このアプリで実行されるすべてのアクティビティを確認します。
 1. このアプリに関連するユーザー アクティビティを確認します。
 
 ## <a name="collection-alerts"></a>コレクションのアラート

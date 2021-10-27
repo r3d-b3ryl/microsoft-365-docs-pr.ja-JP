@@ -21,12 +21,12 @@ description: Microsoft 365 コンプライアンス センターを使用して�
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 5840368c8d73bcafd486db9c3aa982fa03896b5e
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 74c23766bc2780cca0e370940e7fefacdba9d050
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555034"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587543"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>コンプライアンス センターで監査ログを検索する
 
@@ -996,9 +996,10 @@ Forms は、フォームの設計時および回答の分析時の協同作業�
 |:-----|:-----|:-----|
 |サイトに適用された機密ラベル|SensitivityLabelApplied|機密ラベルが SharePoint または Teams サイトに適用されました。|
 |サイトから削除された機密ラベル|SensitivityLabelRemoved|SharePoint または Teams サイトから機密ラベルが削除されました。|
-|ファイルに適用された機密ラベル|FileSensitivityLabelApplied|Office on the web または自動ラベル付けポリシーを使用して、機密ラベルがドキュメントに適用されました。|
-|ファイルに適用された機密ラベルの変更|FileSensitivityLabelChanged|Office on the web または自動ラベル付けポリシーを使用して、異なる機密ラベルがドキュメントに適用されました。|
-|ファイルから削除された機密ラベル|FileSensitivityLabelRemoved|機密ラベルは、Office on the web、自動ラベル付けポリシー、あるいは [Unlock-SPOSensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile) コマンドレットを使用してドキュメントから削除されました。|
+|ファイルに適用された機密ラベル|FileSensitivityLabelApplied|Microsoft 365 Apps、Office on the web または自動ラベル付けポリシー を使用して、 異なる機密ラベルがドキュメントに適用されました。|
+|ファイルに適用された機密ラベルの変更|FileSensitivityLabelChanged<br /><br>SensitivityLabelUpdated|異なる機密ラベルがドキュメントに適用されました。 <br /><br>このアクティビティの操作は、ラベルの変更方法によって異なります。<br /> - Office on the webまたは自動ラベル付けポリシー (FileSensitivityLabelChanged) <br /> - Microsoft 365 Apps (SensitivityLabelUpdated)|
+|サイトで変更された機密ラベル|SensitivityLabelChanged|異なる機密ラベルがSharePoint または Teams サイトに適用されました。|
+|ファイルから削除された機密ラベル|FileSensitivityLabelRemoved|Microsoft 365 Apps、Office on the web、自動ラベル付けポリシー、[または Unlock-SPOSensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile)コマンドレットを使用して、ドキュメントから機密ラベルが削除されました。|
 ||||
 
 ### <a name="retention-policy-and-retention-label-activities"></a>アイテム保持ポリシーと保持ラベルのアクティビティ
