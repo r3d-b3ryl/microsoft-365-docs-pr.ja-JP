@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ポリシーまたは保持ラベル ポリシーで構成できる設定を理解して、必要なものを保持し、不要なものを取り除きます。
-ms.openlocfilehash: 63437f64fe746b2cd664aab75ec42d2b544f9b9c
-ms.sourcegitcommit: f6fff04431d632db02e7bdbf12f691091a30efad
+ms.openlocfilehash: 7b5a6566f9e30d0510dad208ba0dbee503a1e2aa
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60434501"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587995"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>保持ポリシーと保持ラベルの制限
 
@@ -190,7 +190,7 @@ Skype for Business を除き、既定では、選択した場所のすべての�
 
 ## <a name="locations"></a>場所
 
-保持ポリシー内の場所は、Exchange 電子メールや SharePoint サイトなどの保持設定をサポートする特定の Microsoft 365 サービスを識別します。
+保持ポリシー内の場所は、Exchange 電子メールや SharePoint サイトなどの保持設定をサポートする特定の Microsoft 365 サービスを識別します。 ポリシーにそれらを選択するときに知っておくべき構成の詳細と考えられる例外がある場所については、次のセクションを使用してください。
 
 ### <a name="configuration-information-for-exchange-email-and-exchange-public-folders"></a>Exchange メールと Exchange パブリック フォルダーの構成情報
 
@@ -216,7 +216,7 @@ Exchange の保持設定を構成するときに含めるメールボックス�
 
 ### <a name="configuration-information-for-sharepoint-sites-and-onedrive-accounts"></a>SharePoint サイトと OneDrive アカウントの構成情報
 
-**SharePoint sites** の場所を選択すると、保持ポリシーでは、SharePoint​​ コミュニケーション サイト、Microsoft 365 グループによって接続されていないチーム サイト、クラシック サイトのドキュメントを保持および削除することができます。 Microsoft 365 グループによって接続されているチーム サイトは、このオプションでサポートされていないため、代わりにグループのメールボックス、サイト、ファイル内のコンテンツに適用されている [**Microsoft 365 グループ**] の場所を使用します。
+**SharePoint sites** の場所を選択すると、保持ポリシーでは、SharePoint​​ コミュニケーション サイト、Microsoft 365 グループによって接続されていないチーム サイト、クラシック サイトのドキュメントを保持および削除することができます。 **アダプティブ ポリシー スコープ** を使用していない限り、Microsoft 365 グループによって接続されているチーム サイトは、このオプションでサポートされていないため、代わりにグループのメールボックス、サイト、ファイル内のコンテンツに適用されている [[Microsoft 365 グループ](#exceptions-for-adaptive-policy-scopes)] の場所を使用します。
 
 SharePoint と OneDrive の保持設定を構成するときに含めるものと除外するものの詳細については、「[保持と削除に含めるもの](retention-policies-sharepoint.md#whats-included-for-retention-and-deletion)」を参照してください。 
 
@@ -230,6 +230,12 @@ SharePoint サイトまたは OneDrive アカウントの場所を指定する�
 > また、ユーザーのUPNが変更されると、OneDrive の URL が[自動的に変更](/onedrive/upn-changes)されます。  たとえば、結婚などの名前が変わるイベント。 または、組織の名前変更やビジネス再構築をサポートするためのドメイン名の変更。 UPN が変更された場合は、保持設定に指定した OneDrive URL を更新する必要があります。
 > 
 > 静的スコープに含める、または除外する個々のユーザーの URL を確実に指定する必要があるため、[アダプティブ スコープ](retention.md#adaptive-or-static-policy-scopes-for-retention) で **User** スコープの種類を指定するほうがこの目的には適しています。
+
+#### <a name="exceptions-for-adaptive-policy-scopes"></a>アダプティブ ポリシー スコープの例外
+
+アダプティブ ポリシー スコープを使用する保持用のポリシーを構成し、**SharePoint サイト** の場所を選択する場合:
+
+- SharePoint 通信サイト、Microsoft 365 グループによって接続されていないチーム サイト、およびクラシック サイトに加えて、OneDrive サイトとMicrosoft 365 グループに接続されているサイトが含まれています。
 
 ### <a name="configuration-information-for-microsoft-365-groups"></a>Microsoft 365 グループの構成情報
 
@@ -254,6 +260,16 @@ Microsoft 365 グループ (以前の Office 365 グループ) のコンテン�
 機密情報の種類を使用する自動適用ポリシーを構成し、**Microsoft 365 グループ** の場所を選択する場合:
 
 - Microsoft 365 グループ メールボックスは含まれません。 これらのメールボックスをポリシーに含めるには、代わりに **Exchange メール** の場所を選択します。
+
+#### <a name="what-happens-if-a-microsoft-365-group-is-deleted-after-a-policy-is-applied"></a>ポリシーの適用後に Microsoft 365 グループが削除された場合の動作
+
+保持ポリシーを Microsoft 365 グループに適用した後、そのグループは Azure ActiveDirectory から削除されます。
+
+- グループに接続された SharePoint サイトは保持され、**Microsoft 365 グループ** の場所のアイテム保持ポリシーによって引き続き管理されます。 グループが削除される前にサイトにアクセスしていたユーザーは引き続きサイトにアクセスでき、新しいアクセス許可は SharePoint を介して管理する必要があります。
+    
+    この時点では、削除されたグループを指定できないため、Microsoft 365 グループの場所からサイトを除外することはできません。 このサイトからアイテム保持ポリシーを解除する必要がある場合は、Microsoft サポートに連絡してください。 たとえば、[Microsoft 365 管理センターへの問い合わせ](https://admin.microsoft.com/Adminportal/Home#/support)を行います。
+
+- 削除されたグループのメールボックスは非アクティブになり、SharePoint サイトと同様に、保持設定の対象となります。 詳細については、「[Exchange Online の非アクティブなメールボックス](inactive-mailboxes-in-office-365.md)」を参照してください。
 
 ### <a name="configuration-information-for-skype-for-business"></a>Skype for Business の構成情報
 
