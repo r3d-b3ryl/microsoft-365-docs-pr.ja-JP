@@ -10,7 +10,11 @@
   items:
     - name: Microsoft Teams 管理センターでセットアップする
       href: set-up-teams-admin-center.md
-    - name: 学習コンテンツ ソースを構成する
-      href: content-sources-365-admin-center.md
-    - name: Microsoft Office SharePoint Online をコンテンツ ソースとして構成する
-      href: configure-sharepoint-content-source.md
+    - name: 学習コンテンツ ソースを管理する
+      items:
+        - name: 概要
+          href: content-sources-365-admin-center.md
+        - name: Microsoft Office SharePoint Online をコンテンツ ソースとして構成する
+          href: configure-sharepoint-content-source.md
+        - name: 他のプロバイダーを追加する
+          href: configure-other-content-sources.md

@@ -15,40 +15,24 @@ search.appverid:
 - MOE150
 - MET150
 description: アプリを管理するためのアプリ ガバナンス機能の使用を開始します。
-ms.openlocfilehash: 78e9570c1c5a19353eb9868a649eba958d23067b
-ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
+ms.openlocfilehash: d28dec16cad1c54c4b5f8fd0415da3c2811ea989
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60478795"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60585851"
 ---
 # <a name="get-started-with-app-governance-in-preview"></a>アプリ ガバナンスの使用を開始する (プレビュー版)
 
 [![アプリ ガバナンスの無料試用版にサインアップする](../media/manage-app-protection-governance/large-app-governance-banner.png)](https://aka.ms/appgovernancetrial)
 
-Microsoft Cloud App Security に対してアプリ ガバナンス アドオンの使用を開始するには、次の 3 つの手順を実行する必要があります:
-
-1. [ライセンスと管理者の前提条件を確認します](#licensing-and-administrator-role-prerequisites)。
-1. [アプリ ガバナンスにサインアップします](#sign-up-for-app-governance)。
-1. [MCAS 統合を追加します](#add-integration-with-mcas)。
-
+Microsoft Cloud App Security (MCAS) のアプリ ガバナンス アドオンの使用を開始するには、最初に管理者の役割やライセンス要件などの前提条件を確認します。 これで、[アプリ ガバナンスの試用版にサインアップする](#sign-up-for-app-governance)準備が整いました。 最後の手順として、[MCAS との統合のライセンス認証を行います](#add-integration-with-mcas)。
 
 ## <a name="sign-up-for-app-governance"></a>アプリ ガバナンスにサインアップする
 
-既存の Microsoft 365 のお客様の場合:
+既存の Microsoft 365 のお客様の場合は、[無料試用版のサインアップ ページ](https://aka.ms/appgovernancetrial)に移動して、アプリ ガバナンスをテナントに追加する手順を完了することができます。
 
-1. [無料試用版のサインアップ ページ](https://aka.ms/appgovernancetrial)に移動します。
-1. アプリ ガバナンスを追加する手順を完了します。 
-
-<!--
-:::image type="content" source="../media/manage-app-protection-governance/sign-up-page.png" alt-text="Simple steps to add app governance to your account.":::
--->
-
-まだ Microsoft 365 顧客でない場合は、無料試用版にサインアップできます。
-
-1. このページの上部にある  **[無料アカウント]**  ボタンを選択します。
-1.  **[Microsoft 365 for business を試す]** で、**[1 か月の無料試用版を試す]** を選択します。
-1. サインアップの手順を完了します。
+まだ Microsoft 365 をご利用でない場合は、このページの上部にある  **[無料アカウント]**  ボタンを選択することで、無料試用版にサインアップできます。  **[Microsoft 365 for Business を試す]** で **[1 か月無料版]** を選択し、サインアップの手順を完了します。
 
 アプリ ガバナンスのサブスクリプションを購入するには、セールス アカウント チームに連絡してください。
 
@@ -72,11 +56,11 @@ MCAS との統合がアクティブであることを確認するには、MCAS �
 - Microsoft 365 OAuth フィッシング検出
 - Microsoft 365 OAuth アプリ ガバナンス
 
-## <a name="licensing-and-administrator-role-prerequisites"></a>ライセンスと管理者の役割の前提条件
+## <a name="prerequisites"></a>前提条件
 
 1. アカウントが[適正なレベルのライセンス](#licensing-for-app-governance)を保持しているかを検証する。アプリ ガバナンスは、Microsoft Cloud App Security (MCAS) のアドオン機能であり、アカウントに MCAS がスタンドアロン製品または以下の各種ライセンス パッケージの一部として存在している必要があります。
 1. ポータルのアプリ ガバナンス ページにアクセスするには、以下のいずれかの[管理者の役割](#administrator-roles)が必要です。
-1. 無料試用版を有効にするには、所属している組織の請求先住所が、[北米、欧州、アフリカのいずれかのサポート エリア内](app-governance-countries.md)である必要があります。
+1. 無料試用版のライセンス認証を行うには、組織の請求先住所が WW 地域、GBR、CAN、JPN、IND、または AUS Go Local 地域にある必要があります。
 
 ### <a name="licensing-for-app-governance"></a>アプリ ガバナンスのライセンス
 
