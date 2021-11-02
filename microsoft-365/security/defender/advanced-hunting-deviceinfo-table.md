@@ -15,17 +15,15 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 2e71699e35339fe6fcf81b9eeaa93e84737e026d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 25cf4f098d1dd58e86583be17ccbd371a16b128d
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190427"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60643179"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -53,7 +51,7 @@ ms.locfileid: "60190427"
 | `OSPlatform` | string | コンピューターで実行されているオペレーティング システムのプラットフォームです。 これは、特定のオペレーティング システム (同じファミリ内のバリエーション (Windows 11、Windows 10、Windows 7 など) を示します。 |
 | `OSBuild` | string | コンピューターで実行されているオペレーティング システムのバージョンをビルドする |
 | `IsAzureADJoined` | ブール値 | コンピューターがコンピューターに参加しているかどうかを示すブールAzure Active Directory |
-| `AadObjectId` | string | Azure のデバイスの一意の識別子AD |
+| `AadObjectId` | string | ネットワーク内のデバイスの一意Azure AD |
 | `LoggedOnUsers` | string | JSON 配列形式のイベント時にコンピューターにログオンしているすべてのユーザーの一覧 |
 | `RegistryDeviceTag` | string | レジストリを介して追加されたコンピューター タグ |
 | `OSVersion` | string | コンピューターで実行されているオペレーティング システムのバージョンです。 |

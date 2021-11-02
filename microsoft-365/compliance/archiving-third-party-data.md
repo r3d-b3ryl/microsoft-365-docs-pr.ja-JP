@@ -21,12 +21,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: ソーシャル メディア プラットフォーム、インスタント メッセージング プラットフォーム、ドキュメント コラボレーション プラットフォームからサードパーティ のデータをインポートおよびアーカイブして、メールボックスにMicrosoft 365します。
-ms.openlocfilehash: 26b183770599d3c740ad311b759c1bf696e30461
-ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
+ms.openlocfilehash: 92efcffeaf9d85fe0c53cabf477e03cdfa5f5cd6
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60478783"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60647650"
 ---
 # <a name="archive-third-party-data-in-microsoft-365"></a>サードパーティのデータをアーカイブMicrosoft 365
 
@@ -55,8 +55,10 @@ Microsoft 365を使用すると、管理者はデータ コネクタを使用し
 |サードパーティのデータ  |訴訟ホールド|電子情報開示  |保持設定  |レコード管理  |コミュニケーション コンプライアンス  |インサイダー リスクの管理  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
 |[Bloomberg メッセージ](archive-bloomberg-message-data.md)     |![チェック マーク。](../media/checkmark.png)|![チェック マーク。](../media/checkmark.png)|![チェック マーク。](../media/checkmark.png)|![チェック マーク。](../media/checkmark.png)|![チェック マーク。](../media/checkmark.png)||
+|[エピック EHR ヘルスケア](import-epic-data.md) ||||||![チェック マーク](../media/checkmark.png)|
 |[Facebook](archive-facebook-data-with-sample-connector.md)     |![チェック マーク。](../media/checkmark.png)|![チェック マーク。](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|||
-|[人事 (HR)](import-hr-data.md) ||||||![チェック マーク](../media/checkmark.png)
+|[汎用 EHR ヘルスケア](import-healthcare-data.md) ||||||![チェック マーク](../media/checkmark.png)|
+|[人事 (HR)](import-hr-data.md) ||||||![チェック マーク](../media/checkmark.png)|
 |[IceChat](archive-icechat-data.md)     |![チェック マーク。](../media/checkmark.png)|![チェック マーク。](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[Instant Bloomberg](archive-instant-bloomberg-data.md)|![チェック マーク。](../media/checkmark.png)|![チェック マーク。](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[LinkedIn](archive-linkedin-data.md)   |![チェック マーク。](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|||
@@ -94,7 +96,7 @@ Microsoft 365 でサード パーティ製のデータをアーカイブする�
 |[区切られたテキスト](archive-text-delimited-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|||
 |[Webex チーム](archive-webexteams-data.md)|![チェック マーク。](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[Web ページ](archive-webpagecapture-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|||
-|[Facebookからの職場](archive-workplacefromfacebook-data.md)|![チェック マーク。](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
+|[Workplace from Facebook](archive-workplacefromfacebook-data.md)|![チェック マーク。](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[XIP](archive-xip-data.md)|![チェック マーク。](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[XSLT/XML](archive-xslt-xml-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|||
 |[Yieldbroker](archive-yieldbroker-data.md)|![チェック マーク。](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
@@ -153,7 +155,7 @@ Microsoft 365 でサード パーティのデータをアーカイブするに�
 |[余裕期間](archive-17a-4-slack-data.md)    |![チェック マーク。](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[SQL](archive-17a-4-sql-database-data.md)    |![チェック マーク。](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[Symphony](archive-17a-4-symphony-data.md)    |![チェック マーク。](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
-|[Zoom](archive-17a-4-zoom-data.md)    |![チェック マーク。](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
+|[拡大](archive-17a-4-zoom-data.md)    |![チェック マーク。](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 ||||||||
 
 ### <a name="celltrust-data-connectors"></a>CellTrust データ コネクタ
@@ -263,49 +265,49 @@ subject:contoso AND itemclass:ipm.externaldata.facebook*
 
 |データ コネクタ  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
-|Android Archiver | はい | 不要 | 不要 |
-|AT&T SMS/MMS Network Archiver | はい | 不要 | 不要 |
-|Bell SMS/MMS Network Archiver | はい | 不要 | 不要 |
-|Enterprise Number Archiver | はい | 不要 | 不要 |
-|O2 SMS と Voice Network Archiver | はい         | 不要 | 不要 |
-|Rogers Network Archiver | はい         | 不要 | 不要 |
-|Signal Archiver | はい | 不要 | 不要 |
-|Telegram Archiver | はい | 不要 | 不要 |
-|TELUS SMS ネットワーク アーカイブ | はい | 不要 | 不要 |
-|Verizon SMS/MMS Network Archiver | はい | 不要 | 不要 |
-|WeChat Archiver | はい | 不要 | 不要 |
-|WhatsApp Archiver | はい | 不要 | 不要 |
+|Android Archiver | はい | いいえ | いいえ |
+|AT&T SMS/MMS Network Archiver | はい | いいえ | いいえ |
+|Bell SMS/MMS Network Archiver | はい | いいえ | いいえ |
+|Enterprise Number Archiver | はい | いいえ | いいえ |
+|O2 SMS と Voice Network Archiver | はい         | いいえ | いいえ |
+|Rogers Network Archiver | はい         | いいえ | いいえ |
+|Signal Archiver | はい | いいえ | いいえ |
+|Telegram Archiver | はい | いいえ | いいえ |
+|TELUS SMS ネットワーク アーカイブ | はい | いいえ | いいえ |
+|Verizon SMS/MMS Network Archiver | はい | いいえ | いいえ |
+|WeChat Archiver | はい | いいえ | いいえ |
+|WhatsApp Archiver | はい | いいえ | いいえ |
 |||||
 
 ### <a name="celltrust-data-connectors"></a>CellTrust データ コネクタ
 
 |データ コネクタ  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
-|CellTrust SL2 | はい | 不要 | 不要 |
+|CellTrust SL2 | はい | いいえ | いいえ |
 |||||
 
 ### <a name="17a-4-data-connectors"></a>17a-4 データ コネクタ
 
 |データ コネクタ  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
-|BlackBerry DataParser | はい | 不要 | 不要 |
-|Bloomberg DataParser  | はい | 不要 | 不要 |
-|Cisco Jabber DataParser  | はい | 不要 | 不要 |
-|Cisco Webex DataParser  | はい | 不要 | 不要 |
-|FactSet DataParser  | はい | 不要 | 不要 |
-|Fuze DataParser  | はい | 不要 | 不要 |
-|FX Connect DataParser  | はい | 不要 | 不要 |
-|ICE DataParser  | はい | 不要 | 不要 |
-|InvestEdge DataParser  | はい | 不要 | 不要 |
-|LivePerson Conversational Cloud DataParser  | はい | 不要 | 不要 |
-|Quip DataParser  | はい | 不要 | 不要 |
-|Refinitiv Eikon Messenger DataParser  | はい | 不要 | 不要 |
-|ServiceNow DataParser  | はい | 不要 | 不要 |
-|Skype for Business Server DataParser | はい | 不要 | 不要 |
-|Slack DataParser | はい | 不要 | 不要 |
-|SQL DataParser  | はい | 不要 | 不要 |
-|Symphony DataParser | はい | 不要 | 不要 |
-|Zoom DataParser | はい | 不要 | 不要 |
+|BlackBerry DataParser | はい | いいえ | いいえ |
+|Bloomberg DataParser  | はい | いいえ | いいえ |
+|Cisco Jabber DataParser  | はい | いいえ | いいえ |
+|Cisco Webex DataParser  | はい | いいえ | いいえ |
+|FactSet DataParser  | はい | いいえ | いいえ |
+|Fuze DataParser  | はい | いいえ | いいえ |
+|FX Connect DataParser  | はい | いいえ | いいえ |
+|ICE DataParser  | はい | いいえ | いいえ |
+|InvestEdge DataParser  | はい | いいえ | いいえ |
+|LivePerson Conversational Cloud DataParser  | はい | いいえ | いいえ |
+|Quip DataParser  | はい | いいえ | いいえ |
+|Refinitiv Eikon Messenger DataParser  | はい | いいえ | いいえ |
+|ServiceNow DataParser  | はい | いいえ | いいえ |
+|Skype for Business Server DataParser | はい | いいえ | いいえ |
+|Slack DataParser | はい | いいえ | いいえ |
+|SQL DataParser  | はい | いいえ | いいえ |
+|Symphony DataParser | はい | いいえ | いいえ |
+|Zoom DataParser | はい | いいえ | いいえ |
 |||||
 
 ## <a name="working-with-a-microsoft-partner-to-archive-third-party-data"></a>Microsoft パートナーと作業してサード パーティのデータをアーカイブする

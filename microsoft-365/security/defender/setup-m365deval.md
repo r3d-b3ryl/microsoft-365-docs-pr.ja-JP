@@ -8,7 +8,7 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-lsaldanha
+ms.author: dansimp
 author: lovina-saldanha
 ms.localizationpriority: medium
 manager: dansimp
@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: ec6333317297ee83ba4e5869fd92ceea62f2a971
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ca01be03f3243159e6cc105b799731efc094e16e
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212151"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60643245"
 ---
 # <a name="set-up-your-microsoft-365-defender-trial-in-a-lab-environment"></a>ラボ環境でMicrosoft 365 Defender試用版をセットアップする 
 
@@ -71,7 +71,7 @@ ms.locfileid: "60212151"
 
    ![[Go setup] Office 365 E5をクリックするように求める[試用版登録のセットアップ] ページのイメージ。](../../media/mtp-eval-15.png)
 
-8. ConnectドメインをテナントにOffice 365します。 [省略可能]**[Connect所有しているドメインを選択し、** ドメイン名を入力します。 [**次へ**] をクリックします。
+8. ConnectドメインをテナントにOffice 365します。 [省略可能]**[Connect所有しているドメインを選択し、** ドメイン名を入力します。 **[次へ]** をクリックします。
 
    ![Image of_Office 365 E5 セットアップ ページで、サインインとメールをカスタマイズする必要があります。](../../media/mtp-eval-16.png)
  

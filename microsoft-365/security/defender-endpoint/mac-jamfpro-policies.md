@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0bc0b09bcb834c67cb5da13469139875037440b0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 06e87fcb0f9f1521e77d254895ef4fc2c57cf1d5
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198687"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60646945"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Jamf の macOS ポリシーで Microsoft Defender for Endpoint をセットアップPro
 
@@ -124,9 +124,9 @@ ms.locfileid: "60198687"
 
 ## <a name="step-3-configure-microsoft-defender-for-endpoint-settings"></a>手順 3: エンドポイントの Microsoft Defender の設定を構成する
 
-JAMF Pro GUI を使用して Microsoft Defender 構成の個々の設定を編集するか、テキスト エディターで構成 Plist を作成して JAMF Pro にアップロードすることで従来のメソッドを使用できます。
+JAMF Pro GUI を使用して、Microsoft Defender for Endpoint 構成の個々の設定を編集するか、テキスト エディターで構成 Plist を作成して JAMF Pro にアップロードすることで従来の方法を使用できます。
 
-ユーザー設定ドメインとして正確に使用する必要があります。Microsoft Defender では、この名前のみを使用し、管理設定 `com.microsoft.wdav`  `com.microsoft.wdav.ext` を読み込む必要があります。
+Preference Domain として正確に使用する必要があります。Microsoft Defender for Endpoint では、この名前のみを使用し、管理設定 `com.microsoft.wdav`  `com.microsoft.wdav.ext` を読み込む必要があります。
 
 (GUI メソッドを使用する場合はまれにバージョンを使用できますが、スキーマにまだ追加されていない設定を構成する `com.microsoft.wdav.ext` 必要があります)。
 
@@ -156,7 +156,7 @@ JAMF Pro GUI を使用して Microsoft Defender 構成の個々の設定を編�
 
     ![アップロードスキーマ。](images/a6f9f556037c42fabcfdcb1b697244cf.png)
 
-5. サポートされている Microsoft Defender 構成設定はすべて、以下の [基本設定ドメインのプロパティ] **の下に表示されます**。 [ **プロパティの追加と削除]** をクリックして、管理する設定を選択し **、[OK]** をクリックして変更を保存します。 (設定選択されていない場合、エンド ユーザーはそれらの設定を自分のコンピューターで構成できます。
+5. サポートされているすべての Microsoft Defender for Endpoint 構成設定は、以下の [基本設定ドメインのプロパティ **] で確認できます**。 [ **プロパティの追加と削除]** をクリックして、管理する設定を選択し **、[OK]** をクリックして変更を保存します。 (設定選択されていない場合、エンド ユーザーはそれらの設定を自分のコンピューターで構成できます。
 
     ![[管理設定] を選択します。](images/817b3b760d11467abe9bdd519513f54f.png)
 
@@ -180,7 +180,7 @@ JAMF Pro GUI を使用して Microsoft Defender 構成の個々の設定を編�
 
     ![構成設定 - 完了。](images/dd55405106da0dfc2f50f8d4525b01c8.png)
 
-Microsoft Defender は、時間の間に新しい設定を追加します。 これらの新しい設定がスキーマに追加され、新しいバージョンが Github に発行されます。
+Microsoft Defender for Endpoint は、時間の間に新しい設定を追加します。 これらの新しい設定がスキーマに追加され、新しいバージョンが Github に発行されます。
 更新を行う必要があるのは、更新されたスキーマのダウンロード、既存の構成プロファイルの編集、およびスキーマの編集を[アプリケーションの設定] タブで行&**する** 設定です。
 
 ### <a name="legacy-method"></a>従来のメソッド

@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 42f21f27e30cc4a2bc4af5a2ecefd07c7353d96a
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: 4d3dceeea5566b14e9742df77773c3bf07a1bbfc
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240226"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60645801"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>デバイス プロキシとインターネット接続の設定を構成する
 
@@ -91,7 +91,7 @@ WinHTTP 構成設定は、Windows インターネット (WinINet) の参照プ�
 | グループ ポリシー | レジストリ キー | レジストリ エントリ | 値 |
 |:---|:---|:---|:---|
 | 接続されたユーザー エクスペリエンスとテレメトリ サービスの認証されたプロキシ使用状況を構成する | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `DisableEnterpriseAuthProxy` | 1 (REG_DWORD) |
-| 接続されたユーザー エクスペリエンスと利用統計情報を構成する | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `TelemetryProxyServer` | ```http://servername or ip:port``` <br> <br> 例: ```http://10.0.0.6:8080``` (REG_SZ) |
+| 接続されたユーザー エクスペリエンスと利用統計情報を構成する | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `TelemetryProxyServer` | ```servername:port or ip:port``` <br> <br> 例: ```10.0.0.6:8080``` (REG_SZ) |
 
 ## <a name="configure-a-static-proxy-for-microsoft-defender-antivirus"></a>サーバーの静的プロキシを構成Microsoft Defender ウイルス対策
 
@@ -274,7 +274,7 @@ Defender for Endpoint センサーがシステム コンテキストから接続
 >
 > TelemetryProxyServer がレジストリまたはグループ ポリシーを介して設定されている場合、Defender for Endpoint は、定義されたプロキシにアクセスできない場合、直接に戻されます。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [Microsoft Defender ウイルス対策 ネットワーク接続を構成および検証する](configure-network-connections-microsoft-defender-antivirus.md)
 - [グループ ポリシー設定を使用して、グループ ポリシーの構成とMicrosoft Defender ウイルス対策](use-group-policy-microsoft-defender-antivirus.md)

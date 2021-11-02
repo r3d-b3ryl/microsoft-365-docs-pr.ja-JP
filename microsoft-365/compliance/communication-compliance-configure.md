@@ -20,16 +20,16 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 9b1fd596988498a543778b097b2a8a431a200aba
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: c58df514c136c6df2db5d1392a57db1ee6c34bb3
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335756"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60647436"
 ---
 # <a name="get-started-with-communication-compliance"></a>コミュニケーション コンプライアンスの使用を開始する
 
-コミュニケーション コンプライアンス ポリシーを使用して、内部または外部のレビュー担当者による調査用のユーザー コミュニケーションを識別します。 コミュニケーション コンプライアンス ポリシーを使用して組織内のコミュニケーションを監視する方法の詳細については、「[Microsoft 365 のコミュニケーション コンプライアンス ポリシー](communication-compliance.md)」を参照してください。 Contoso が Microsoft Teams、Exchange Online、Yammer のコミュニケーションで攻撃的な言葉を監視するためにコミュニケーション コンプライアンス ポリシーをいかに迅速構成したかを確認するには、この [ケース スタディ](communication-compliance-case-study.md)を参照してください。
+コミュニケーション コンプライアンス ポリシーを使用して、内部または外部のレビュー担当者による調査用のユーザー コミュニケーションを識別します。 コミュニケーション コンプライアンス ポリシーを使用して組織内のコミュニケーションを監視する方法の詳細については、「[Microsoft 365 のコミュニケーション コンプライアンス ポリシー](communication-compliance.md)」を参照してください。 Microsoft Teams、Exchange Online、および Yammer 通信で不適切なコンテンツを監視する通信コンプライアンス ポリシーを Contoso が迅速に構成した方法を確認する場合は、このケース スタディを[](communication-compliance-case-study.md)参照してください。
 
 ## <a name="subscriptions-and-licensing"></a>サブスクリプションとライセンス
 
@@ -54,6 +54,16 @@ ms.locfileid: "60335756"
 > Office 365 Advanced Compliance はスタンドアロン サブスクリプションとして販売されなくなりました。 現在のサブスクリプションの有効期限が切れると、お客様は、同じまたは追加のコンプライアンス機能を含む上記のいずれかのサブスクリプションに移行する必要があります。
 
 既存の Office 365 Enterprise E5 プランがなく、コミュニケーション コンプライアンスをお試しになりたい場合は、[Microsoft 365](/office365/admin/try-or-buy-microsoft-365) を既存のサブスクリプションに追加するか、Office 365 Enterprise E5 の[試用版にサインアップ](https://www.microsoft.com/microsoft-365/enterprise)することができます。
+
+## <a name="recommended-actions-preview"></a>推奨されるアクション (プレビュー)
+
+推奨されるアクションは、組織が通信コンプライアンス機能と既存のポリシーを活用するのに役立ちます。 [概要] **ページに含** まれる推奨アクションは、組織内のコミュニケーションにおける機密情報の種類と不適切なコンテンツ アクティビティに関する分析情報を提供し、要約します。
+
+![通信コンプライアンス推奨アクション。](../media/communication-compliance-recommended-actions.png)
+
+不適切なコンテンツを含むメッセージのアクティビティは、不適切なコンテンツ テンプレートまたは不適切なコンテンツに分類子を使用するカスタム ポリシーを使用する既存のポリシーの分類子の種類によって列挙されます。 ポリシーのアラート ダッシュボードでこれらのメッセージのアラートを調査します。
+
+機密情報の種類に関するアクティビティは、既存のポリシーでカバーされているメッセージ、および既存のポリシーでカバーされていないメッセージで検出されます。 インサイト、組織が既存の通信コンプライアンス ポリシーで定義していない機密情報の種類を含め、すべての機密情報の種類に対して提供されます。 これらの分析情報を使用して、新しい通信コンプライアンス ポリシーを作成するか、既存のポリシーを更新します。
 
 ## <a name="step-1-required-enable-permissions-for-communication-compliance"></a>手順 1 (必須): コミュニケーション コンプライアンスのアクセス許可を有効にする
 
@@ -118,6 +128,8 @@ ms.locfileid: "60335756"
 
 コミュニケーション コンプライアンスでは、監査ログを使用してアラートを表示し、レビュー担当者が実行した修復アクションを追跡する必要があります。 監査ログは、定義済みの組織ポリシーに関連付けられているすべてのアクティビティの概要です。また、コミュニケーション コンプライアンス ポリシーに変更があった場合はいつでもその概要を示します。
 
+監査は、既定で組織Microsoft 365有効になっています。 組織によっては、特定の理由で監査を無効にしている場合があります。 組織の監査が無効になっている場合は、別の管理者が無効にしている可能性があります。 この手順を完了するときに、監査を有効に戻すのが問題ない場合は、確認することをお勧めします。
+
 監査を有効にする詳しい手順については、「[監査ログ検索を有効または無効する](turn-audit-log-search-on-or-off.md)」を参照してください。 監査を有効にすると、監査ログの準備中で、準備が完了してから数時間で検索を実行できるというメッセージが表示されます。 このアクションを行う必要があるのは 1 回だけです。 監査ログの使用の詳細については、「[監査ログを検索する](search-the-audit-log-in-security-and-compliance.md)」を参照してください。
 
 ## <a name="step-3-optional-set-up-groups-for-communication-compliance"></a>手順 3 (省略可能): コミュニケーション コンプライアンスのグループを設定する
@@ -180,8 +192,11 @@ Exchange オンプレミス展開または外部メール プロバイダーを�
 
 ## <a name="step-5-required-create-a-communication-compliance-policy"></a>手順 5 (必須): コミュニケーション コンプライアンス ポリシーを作成する
 
-> [!IMPORTANT]
-> PowerShell を使用したコミュニケーション コンプライアンス ポリシーの作成や管理はサポートされていません。 これらのポリシーを作成して管理するには、[Microsoft 365 コミュニケーション コンプライアンス ソリューション](https://compliance.microsoft.com/supervisoryreview)のポリシー管理コントロールを使用する必要があります。
+>[!IMPORTANT]
+>PowerShell を使用したコミュニケーション コンプライアンス ポリシーの作成や管理はサポートされていません。 これらのポリシーを作成して管理するには、[Microsoft 365 コミュニケーション コンプライアンス ソリューション](https://compliance.microsoft.com/supervisoryreview)のポリシー管理コントロールを使用する必要があります。
+
+>[!TIP]  
+>新しい通信コンプライアンス ポリシーの設定とアラートの修復に関する詳細なチュートリアルを参照してください。 この [15](communication-compliance-plan.md#creating-a-communication-compliance-policy-walkthrough) 分間のビデオを参照して、不適切なメッセージの検出、潜在的な違反の調査、コンプライアンスの問題の修復に関するコミュニケーション コンプライアンス ポリシーがどのように役立つのかのデモンストレーションをご覧ください。
 
 1. Microsoft 365 組織の管理者アカウントの資格情報を使って <https://compliance.microsoft.com> にサインインします。
 

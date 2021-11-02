@@ -20,16 +20,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 組織のOneDriveレポートを取得し、すべてのユーザーのアクティビティ、共有OneDriveファイルの数、およびストレージ使用率を確認します。
-ms.openlocfilehash: e9eee9ed45d397cc976c446f5fe7ceae06567b41
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 8cfd6dfbcff15c118f9ad54ef29e5cec6cf4d6bf
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553066"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60648857"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-activity"></a>Microsoft 365管理センターのレポート - OneDrive for Businessアクティビティ
 
-Microsoft 365 の [**レポート**] ダッシュボードには、組織内での製品全体に関するアクティビティが表示されます。 これにより、個別の製品レベルのレポートを詳細に確認して、各製品内のアクティビティについてより詳しく知ることができます。 [レポートの概要トピック](activity-reports.md)を参照してください。
+Microsoft 365 の [レポート] ダッシュボードには、組織内での製品全体に関するアクティビティが表示されます。 これにより、個別の製品レベルのレポートを詳細に確認して、各製品内のアクティビティについてより詳しく知ることができます。 [レポートの概要トピック](activity-reports.md)を参照してください。
   
 たとえば、OneDrive でのファイルの操作を調べることで、OneDrive を使用するライセンスを持つすべてのユーザーのアクティビティを把握できます。また、共有されているファイルの数を調べると、行われているコラボレーションのレベルを把握できます。
 

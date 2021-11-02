@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b2bf0bd7f1d20e65921a3d5ee503152b3d3940fb
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 10932b96b205e3e73ba6e5363ed2acd301d9cef5
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60586995"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60643221"
 ---
 # <a name="server-migration-scenarios-from-the-previous-mma-based-microsoft-defender-for-endpoint-solution"></a>以前の MMA ベースの Microsoft Defender for Endpoint ソリューションからのサーバー移行シナリオ
 
@@ -138,7 +138,7 @@ ms.locfileid: "60586995"
 6. グループ ポリシー、PowerShell、またはサードパーティの管理ソリューションを使用してポリシーを作成して適用します。
 
 > [!TIP]
-> インストーラー スクリプトを使用すると [、](server-migration.md#installer-script) 手順 1 ~ 4 の自動化に役立ちます。 パッシブ モードを有効にするには、-Passive フラグを適用して、オンボーディングの前に Defender がパッシブ モードに入り、Microsoft 以外のマルウェア対策ソリューションに干渉しないようにします。 その後、EDR ブロックなどの EDR 機能をサポートするためにオンボーディング後に Defender Antivirus がパッシブ モードのままである場合は、必ず "ForceDefenderPassiveMode" レジストリ キーを設定してください。 例: `.\install.ps1 -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd" -Passive` 詳細については、「パッシブ モードに設定[するMicrosoft Defender ウイルス対策必要ですか?」を参照してください](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server)。
+> インストーラー スクリプトを使用すると [、](server-migration.md#installer-script) 手順 1 ~ 4 の自動化に役立ちます。 パッシブ モードを有効にするには、-Passive フラグを適用して、オンボード前に Defender Antivirus がパッシブ モードに入り、Microsoft 以外のマルウェア対策ソリューションに干渉しないようにします。 その後、EDR ブロックなどの EDR 機能をサポートするためにオンボーディング後に Defender Antivirus がパッシブ モードのままである場合は、必ず "ForceDefenderPassiveMode" レジストリ キーを設定してください。 例: `.\install.ps1 -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd" -Passive` 詳細については、「パッシブ モードに設定[するMicrosoft Defender ウイルス対策必要ですか?」を参照してください](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server)。
 
 *この手順は、Microsoft 以外のウイルス対策ソリューションを置き換える場合にのみ適用されます。 Microsoft Defender for Endpoint にMicrosoft Defender ウイルス対策、完全な一連の機能を提供するために、Microsoft Defender for Endpoint に含まれるアプリを使用することをお勧めします。 「Better [together: Microsoft Defender ウイルス対策と Microsoft Defender for Endpoint」を参照してください](why-use-microsoft-defender-antivirus.md)。 
 
@@ -155,5 +155,4 @@ ms.locfileid: "60586995"
 Azure Defender を使用している場合は、自動アップグレード プロセスを利用できます。 「[セキュリティ センターの統合ソリューションを使用してエンドポイントを保護する:エンドポイントEDR Microsoft Defender for Endpoint」を参照してください](/azure/security-center/security-center-wdatp#enable-the-microsoft-defender-for-endpoint-integration)。
 
 ## <a name="group-policy-configuration"></a>グループ ポリシーの構成
-グループ ポリシーを使用した構成については、中央ストアで最新の ADMX ファイルを使用して、正しい Microsoft Defender ポリシー オプションにアクセスしていることを確認してください。 「グループ [ポリシー管理](/troubleshoot/windows-client/group-policy/create-and-manage-central-store)用中央ストア管理用テンプレートを作成および管理する方法」を参照し、Windows で使用する最新のファイルをダウンロード **Windows 10。** 
-
+グループ ポリシーを使用した構成の場合は、中央ストアの最新の ADMX ファイルを使用して、エンドポイント ポリシー オプションの適切な Defender にアクセスしていることを確認します。 「グループ [ポリシー管理](/troubleshoot/windows-client/group-policy/create-and-manage-central-store)用中央ストア管理用テンプレートを作成および管理する方法」を参照し、Windows で使用する最新のファイルをダウンロード **Windows 10。**

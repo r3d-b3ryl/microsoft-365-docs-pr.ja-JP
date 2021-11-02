@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 709cd408d548e8a7c16973c08b0369616f3b91d1
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: d968afeaf484387597d6672bf4db1a01180e52a4
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240538"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60643149"
 ---
 # <a name="onboard-windows-multi-session-devices-in-azure-virtual-desktop"></a>Azure 仮想Windowsマルチセッション デバイスのオンボード
 
@@ -32,7 +32,7 @@ ms.locfileid: "60240538"
 
 Microsoft Defender for Endpoint では、VDI セッションと Azure Virtual Desktop セッションの両方の監視がサポートされています。 組織のニーズに応じて、従業員が管理されていないデバイス、リモートの場所、または類似のシナリオから企業データやアプリにアクセスするために、VDI または Azure Virtual Desktop セッションを実装する必要がある場合があります。 Microsoft Defender for Endpoint を使用すると、これらの仮想マシンで異常なアクティビティを監視できます。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 非永続的な [VDI の考慮事項について理解してください](/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1)。 [Azure Virtual Desktop には](/azure/virtual-desktop/overview)非永続化オプションは用意されませんが、新しいホストのプロビジョニングやマシンの再展開に使用できるゴールデン Windows イメージを使用する方法が提供されます。 これにより、環境の変動性が高まるため、Microsoft Defender for Endpoint ポータルで作成および管理されるエントリに影響が及び、セキュリティ アナリストの可視性が低下する可能性があります。
 
@@ -47,7 +47,7 @@ Microsoft では、Azure Virtual Desktop を仮想デスクトップごとに 1 
 Microsoft では、Microsoft Defender for Endpoint オンボーディング スクリプトを WVD ゴールデン イメージに追加する方法をお勧めします。 この方法で、このオンボーディング スクリプトが最初の起動時にすぐに実行されるのを確認できます。 これは、WVD ゴールデン イメージからプロビジョニングされたすべての WVD コンピューターで最初に起動スクリプトとして実行されます。 ただし、変更せずにギャラリー イメージのいずれかを使用している場合は、スクリプトを共有の場所に配置し、ローカル またはドメイン グループ ポリシーから呼び出します。
 
 > [!NOTE]
-> WVD ゴールデン イメージ上の VDI オンボーディングスタートアップ スクリプトの配置と構成によって、WVD の起動時に実行されるスタートアップ スクリプトとして構成されます。 実際の WVD ゴールデン イメージのオンボードは推奨されません。 もう 1 つの考慮事項は、スクリプトの実行に使用されるメソッドです。 セッションを受信できるコンピューターとサービスへのデバイスオンボーディングの時間を短縮するには、スタートアップ/プロビジョニング プロセスの早い段階で実行する必要があります。 以下のシナリオ 1 & 2 では、これを考慮します。
+> WVD ゴールデン イメージ上の VDI オンボーディングスタートアップ スクリプトの配置と構成によって、WVD の起動時に実行されるスタートアップ スクリプトとして構成されます。 実際の **WVD** ゴールデン イメージのオンボードは推奨されません。 もう 1 つの考慮事項は、スクリプトの実行に使用されるメソッドです。 セッションを受信できるコンピューターとサービスへのデバイスオンボーディングの時間を短縮するには、スタートアップ/プロビジョニング プロセスの早い段階で実行する必要があります。 以下のシナリオ 1 と 2 では、これを考慮します。
 
 ### <a name="scenarios"></a>シナリオ
 
@@ -159,4 +159,4 @@ WVD ホスト コンピューターをオンボードする方法は次のとお
 
 #### <a name="related-links"></a>関連リンク
 
-[PowerShell を使用して Microsoft Defender の除外を追加する](/azure/architecture/example-scenario/wvd/windows-virtual-desktop-fslogix#add-exclusions-for-windows-defender-by-using-powershell)
+[PowerShell 経由で Defender for Endpoint の除外を追加する](/azure/architecture/example-scenario/wvd/windows-virtual-desktop-fslogix#add-exclusions-for-microsoft-defender-by-using-powershell)

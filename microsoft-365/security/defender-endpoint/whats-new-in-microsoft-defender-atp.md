@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ac6aa01877b7b4968b01b5a16c931079e2b4360e
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: d8a3ea4d701c390c7c8505f42fa2440e38965584
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60239578"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60643212"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の新機能
 
@@ -38,14 +38,12 @@ ms.locfileid: "60239578"
 
 プレビュー機能の詳細については、「プレビュー機能」 [を参照してください](preview.md)。
 
-
 > [!TIP]
 > RSS フィード: 次の URL をコピーしてフィード リーダーに貼り付け、このページが更新された場合に通知を受け取ります。
 >
 > ```https
 > https://docs.microsoft.com/api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=
 > ```
-
 
 他の Microsoft Defender セキュリティ製品の新機能の詳細については、以下を参照してください。
 
@@ -55,10 +53,10 @@ ms.locfileid: "60239578"
 - [新しい機能Microsoft Cloud App Security](/cloud-app-security/release-notes)
 
 他のオペレーティング システム上の Microsoft Defender for Endpoint の詳細については、次の手順を実行します。
+
 - [MacOS の Defender for Endpoint の新機能](mac-whatsnew.md)
 - [iOS の Defender for Endpoint の新機能](ios-whatsnew.md)
 - [Defender for Endpoint on Linux の新機能](linux-whatsnew.md)
-
 
 ## <a name="october-2021"></a>2021 年 10 月
 
@@ -88,7 +86,7 @@ ms.locfileid: "60239578"
 
 - [脆弱性とセキュリティで保護された構成の評価をエクスポートする](get-assessment-methods-properties.md) API <br> デバイス単位でデータを取得脅威と脆弱性の管理 API のコレクションを追加します。 さまざまな種類のデータを取得するためのさまざまな API 呼び出しがあります。セキュリティで保護された構成評価、ソフトウェア インベントリ評価、およびソフトウェアの脆弱性評価。 各 API 呼び出しには、組織内のデバイスに必要なデータが含まれる。
 
-- [修復アクティビティ](get-remediation-methods-properties.md) API <br>  テナントで作成された修復アクティビティを脅威と脆弱性の管理応答を含む API のコレクションを追加します。 応答情報の種類には、ID による 1 つの修復アクティビティ、すべての修復アクティビティ、および 1 つの修復アクティビティの公開されたデバイスが含まれます。
+- [修復アクティビティ](get-remediation-methods-properties.md) API <br> テナントで作成された修復アクティビティを脅威と脆弱性の管理応答を含む API のコレクションを追加します。 応答情報の種類には、ID による 1 つの修復アクティビティ、すべての修復アクティビティ、および 1 つの修復アクティビティの公開されたデバイスが含まれます。
 
 - [デバイス検出](device-discovery.md) <br> 追加のアプライアンスや面倒なプロセス変更を必要とせずに、企業ネットワークに接続されている管理されていないデバイスを見つけるのに役立ちます。 オンボード デバイスを使用すると、ネットワーク内の管理されていないデバイスを見つけて、脆弱性とリスクを評価できます。 その後、検出されたデバイスをオンボードして、ネットワークに管理されていないエンドポイントを持つことに関連するリスクを軽減できます。
 

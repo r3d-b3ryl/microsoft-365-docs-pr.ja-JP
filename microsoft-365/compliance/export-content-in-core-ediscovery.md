@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コア電子情報開示ケースからコンテンツをエクスポートおよびダウンロードする方法について説明します。Microsoft 365。
-ms.openlocfilehash: c6b5ac0d8bb6b555dc4720e90e045672cdb2439d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5e7d17c7ddb9060417812cccd45437c30b70e9f3
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190907"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60647368"
 ---
 # <a name="export-content-from-a-core-ediscovery-case"></a>コア電子情報開示ケースからコンテンツをエクスポートする
 
@@ -58,6 +58,9 @@ Core 電子情報開示ケースに関連付けられた検索が正常に実行
 7. 作成したエクスポート ジョブをクリックして、フライアウト ページに状態情報を表示します。 この情報には、ユーザーの場所に転送されたアイテムのAzure Storage含まれます。
 
 8. すべてのアイテムが転送された後、[結果のダウンロード] **をクリックして** 、検索結果をローカル コンピューターにダウンロードします。 検索結果のダウンロードの詳細については、「コンテンツ検索結果のエクスポート」の「手順 [2」を参照してください。](export-search-results.md#step-2-download-the-search-results)
+
+> [!NOTE]
+> エクスポートされた検索結果は、エクスポート ジョブの作成後 14 日以内にダウンロードする必要があります。
 
 ### <a name="more-information-about-exporting-searches-from-a-case"></a>ケースからの検索のエクスポートの詳細
 

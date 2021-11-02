@@ -15,17 +15,15 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-mms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d5bcdac9e292e64c0b45412eb93a03d7d760dd53
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 67768257dc0a43d04fbc10f3c9d97cdd5fc83fa2
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60184427"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60643181"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 
@@ -50,9 +48,9 @@ ms.locfileid: "60184427"
 | `NetworkMessageId` | string | ユーザーが生成する電子メールの一意Microsoft 365 |
 | `SenderFromAddress` | string | 受信者のメール クライアントで受信者に表示される、FROM ヘッダーの送信者メール アドレス |
 | `SenderDisplayName` | string | アドレス帳に表示される送信者の名前(通常は、特定の名前または名、ミドル イニシャル、姓または姓の組み合わせ) |
-| `SenderObjectId` | string | Azure アカウントの送信者のアカウントの一意AD |
+| `SenderObjectId` | string | アカウント内の送信者のアカウントの一意Azure AD |
 | `RecipientEmailAddress` | string | 受信者のメール アドレス、または配布リストの展開後の受信者のメール アドレス |
-| `RecipientObjectId` | string | Azure の電子メール受信者の一意AD |
+| `RecipientObjectId` | string | メール受信者の一意のAzure AD |
 | `FileName` | 文字列 | 記録されたアクションが適用されたファイルの名前 |
 | `FileType` | 文字列型 | ファイル拡張子の種類 |
 | `SHA256` | 文字列型 | 記録されたアクションが適用されたファイルの SHA-256 このフィールドは通常は入力されません。使用可能な場合は、SHA1 列を使用します。 |

@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 組織をフィッシングセーフ悪意のある URL を使用する他の攻撃から組織を保護Office 365 Defender for Defender のリンク保護について学習します。 [Teams セーフリンク] を見て、リンク メッセージのセーフを参照してください。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 11dbd3ef2f2fa2a17d24f769256fe02cd12b4c75
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3e00d5cb4db44b2a741135426cd4a902ef5942b6
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203941"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60646389"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>セーフMicrosoft Defender for Office 365
 
@@ -50,14 +50,14 @@ ms.locfileid: "60203941"
 
 安全なリンクの保護機能は以下の場所で利用できます。
 
-- **メール メッセージ**: メール メッセージ内のリンクに対する安全なリンク保護は、安全なリンク ポリシーで制御されます。 既定のリンク ポリシーセーフないので、電子メール メッセージで セーフ リンクの保護を取得するには、1 つ以上の セーフ **リンク ポリシーを作成する必要があります**。 手順については、「Microsoft Defender for セーフのリンク ポリシーをセットアップする[」を参照Office 365。](set-up-safe-links-policies.md)
+- **電子** メール メッセージ : 既定の セーフ リンク ポリシーはありませんが、組み込みの保護プリセット セキュリティ ポリシーは、すべての受信者 (カスタム セーフ リンク ポリシーで定義されていないユーザー) に セーフ リンク保護を提供します。 詳細については、「EOP でのセキュリティ ポリシーの事前設定」および[「Microsoft Defender for microsoft Defender for Office 365」 を参照してください](preset-security-policies.md)。 特定のユーザー、グループセーフに適用されるリンク ポリシーを作成できます。 手順については、「Microsoft Defender for セーフのリンク ポリシーをセットアップする[」を参照Office 365。](set-up-safe-links-policies.md)
 
   電子メール メッセージのリンク保護セーフ詳細については、この記事の「セーフのリンク[設定](#safe-links-settings-for-email-messages)」セクションを参照してください。
   
   > [!NOTE]
   > セーフメールが有効なパブリック フォルダーでは、リンクは機能しません。
 
-- **Microsoft Teams**: Teams の会話、グループ チャット、またはチャネルからのリンクに対する安全なリンク保護も、安全なリンク ポリシーで制御されます。 既定の セーフ リンク ポリシーはないので、Teams で セーフ リンクの保護を取得するには、1 つ以上の セーフ **リンク ポリシーを作成する必要があります**。
+- **Microsoft Teams**: Teams の会話、グループ チャット、またはチャネルからのリンクに対する安全なリンク保護も、安全なリンク ポリシーで制御されます。
 
   詳細については、セーフのリンク保護Teams後の「セーフのリンク[Microsoft Teams設定」](#safe-links-settings-for-microsoft-teams)を参照してください。
 
@@ -262,7 +262,7 @@ Standard および Strict ポリシー設定の推奨値の詳細については
 
 [リンク] のグローバル設定で URL の一覧をセーフします。 手順については [、「Configure the Configure the following URL」リストを参照してください](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-microsoft-365-defender-portal)。
 
-**注意**:
+**注**:
 
 - あらゆる場所でブロックされている URL の本当に汎用的なリストについては、「Manage [the Tenant Allow/Block List」を参照してください](tenant-allow-block-list.md)。
 - [次の URL を **ブロックする] リストの制限** 。

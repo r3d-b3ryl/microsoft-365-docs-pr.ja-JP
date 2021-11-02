@@ -23,12 +23,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 9037b8f721a33f6709f3beefdac6d294c7125333
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: f4a29a17bc8c3563779b54b9df594548a02acabd
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60588303"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60646413"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>インシデントを調査Microsoft 365 Defender
 
@@ -58,7 +58,7 @@ Microsoft 365 Defender、デバイス、ユーザー、およびメールボッ�
 
 インシデント キューからインシデント名を選択して、インシデントのメイン ページを開く方法も指定できます。
 
-## <a name="summary"></a>まとめ
+## <a name="summary"></a>概要
 
 [ **概要] ページ** では、インシデントに関する一番上の情報をスナップショットで確認できます。
 
@@ -82,7 +82,7 @@ Microsoft 365 Defender、デバイス、ユーザー、およびメールボッ�
 
 - 重大度。
 - アラートに関与したエンティティ。
-- アラートのソース (Microsoft Defender for Identity、 Microsoft Defender for Endpoint、 Microsoft Defender for Office 365)。
+- アラートのソース (Microsoft Defender for Identity、Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Defender for Cloud Apps、およびアプリ ガバナンス)。
 - リンクされた理由。
 
 次に例を示します。

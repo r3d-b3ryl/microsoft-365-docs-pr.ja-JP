@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8de50b9f06f05c012cc2b4c789838612d98abe62
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: c575cc6b235f82c02404f29d33712731609322a2
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60557307"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60646928"
 ---
 # <a name="microsoft-defender-for-endpoint---mobile-threat-defense"></a>Microsoft Defender for Endpoint - Mobile Threat Defense
 
@@ -47,11 +47,15 @@ Microsoft Defender for Endpoint on Android and iOS では、以下の主要な�
 |Web 保護|フィッシング対策、安全でないネットワーク接続のブロック、カスタム インジケーターのサポート。|
 |マルウェア保護 (Android のみ)|悪意のあるアプリのスキャン。|
 |脱獄検出 (iOS 専用)|脱獄されたデバイスの検出。|
+|脅威と脆弱性の管理 (TVM)。 プレビュー。 以下のメモを参照してください*|オンボードモバイル デバイスの脆弱性評価。 Microsoft Defender for Endpoint[脅威と脆弱性の管理の](next-gen-threat-and-vuln-mgt.md)詳細については、このページをご覧ください。 *iOS では、このプレビューでは OS の脆弱性だけがサポートされています。*|
 |統合アラート|統合 M365 セキュリティ コンソールのすべてのプラットフォームからのアラート|
 |条件付きアクセス、条件付き起動|リスクの高いデバイスによる企業リソースへのアクセスをブロックする。 エンドポイントリスク信号の Defender をアプリ保護ポリシー (MAM) に追加することもできます。|
 |アプリケーションとのMicrosoft Tunnel|VPN ゲートウェイ Microsoft Tunnelと統合して、1 つのアプリでセキュリティと接続を有効にできます。 現在 Android でのみ利用可能|
 
 これらすべての機能は、Microsoft Defender for Endpoint ライセンスホルダーで使用できます。 詳細については、「ライセンス要件 [」を参照してください](minimum-requirements.md#licensing-requirements)。
+
+> [!NOTE]
+> Android と iOS の脆弱性評価は現在プレビュー中であり、商用リリース前に大幅に変更される可能性があります。 パブリック プレビュー機能を有効にしている場合は、Android と iOS の TVM 機能を確認できます。 使用しない場合は、Microsoft [](preview.md) Defender for Endpoint のプレビュー機能を有効にし、最新の機能にアクセスできます。
 
 ## <a name="overview-and-deploy"></a>概要と展開
 
@@ -96,7 +100,7 @@ Microsoft Defender for Endpoint を使用したモバイル脅威防御の評価
 - [Android Enterprise - セットアップ Always-on VPN](android-intune.md#auto-setup-of-always-on-vpn)。
 - [iOS - VPN プロファイルの自動セットアップ](ios-install.md#auto-onboarding-of-vpn-profile-simplified-onboarding)
 
-## <a name="configure"></a>Configure
+## <a name="configure"></a>構成
 
 - [Android の機能を構成する](android-configure.md)
 - [iOS 機能の構成](ios-configure-features.md)

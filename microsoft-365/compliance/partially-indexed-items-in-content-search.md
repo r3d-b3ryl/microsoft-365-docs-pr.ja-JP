@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: このページで実行する電子情報開示検索Exchange、SharePointに含めるインデックスのないアイテムについて説明Microsoft 365 コンプライアンス センター。
-ms.openlocfilehash: 09bc5959550a21b27298ea2fb2e0857bcd598381
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: c77c0f13de9d214da4cd6107d1346aa36be1fa25
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364713"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60646353"
 ---
 # <a name="partially-indexed-items-in-ediscovery"></a>電子情報開示の部分的にインデックス付きアイテム
 
@@ -116,9 +116,8 @@ Microsoft 365 コンプライアンス センター の電子情報開示ツー�
 3. 手順 1 で使用したのと同じ検索クエリ (および同じ場所を検索) を使用する 2 番目の検索を作成して実行します。 AND 演算子を使用して、次の句を元のクエリに **追加** します。
 
    ```text
-   ((IndexingErrorCode>0 OR IndexingErrorCode<0) AND Date:date1…date2))
+   <original query> AND ((IndexingErrorCode>0 OR IndexingErrorCode<0) AND sent:date1..date2)
    ```
-  
    この句を追加すると、元の検索クエリに一致し、特定の日付範囲内にある部分的にインデックス付きアイテムが返されます。<sup>2</sup>
 
 4. 手順 3 から検索の結果をエクスポートし、今回は部分的にインデックス付きアイテムをエクスポートに含める。 これを行うには、[認識できない形式のアイテムを含むすべてのアイテムが暗号化されている、または他の理由でインデックスが作成されていないアイテムを含む] エクスポート オプション **を選択します** 。

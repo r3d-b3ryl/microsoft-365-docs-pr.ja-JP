@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7a4438d564fd414d40c6c42b1265b13bcb13b983
-ms.sourcegitcommit: df1ad7118c4a95a310a4f17124322a6ae6ace26f
+ms.openlocfilehash: 1df9efd022f58ef68ed06c8271e140b33dcb0f67
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60268716"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60646929"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上のエンドポイント用 Microsoft Defender のリソース
 
@@ -95,7 +95,7 @@ macOS で Microsoft Defender for Endpoint をアンインストールするに�
 
 製品設定の制御やオンデマンド スキャンのトリガーなどの重要なタスクは、コマンド ラインから実行できます。
 
-|グループ|シナリオ|コマンド|
+|Group|シナリオ|コマンド|
 |---|---|---|
 |構成|リアルタイム保護のオン/オフ|`mdatp config real-time-protection --value [enabled/disabled]`|
 |構成|クラウド保護のオン/オフ|`mdatp config cloud --value [enabled/disabled]`|
@@ -111,8 +111,8 @@ macOS で Microsoft Defender for Endpoint をアンインストールするに�
 |構成|オンデマンド スキャンの並列処理の程度を構成する|`mdatp config maximum-on-demand-scan-threads --value [numerical-value-between-1-and-64]`|
 |構成|セキュリティ インテリジェンスの更新後にスキャンをオン/オフにする|`mdatp config scan-after-definition-update --value [enabled/disabled]`|
 |構成|アーカイブ スキャンのオン/オフ (オンデマンド スキャンのみ)|`mdatp config scan-archives --value [enabled/disabled]`|
-|Diagnostics|ログ レベルの変更|`mdatp log level set --level [error/warning/info/verbose]`|
-|Diagnostics|診断ログの生成|`mdatp diagnostic create --path [directory]`|
+|診断|ログ レベルの変更|`mdatp log level set --level [error/warning/info/verbose]`|
+|診断|診断ログの生成|`mdatp diagnostic create --path [directory]`|
 |正常性|製品の正常性を確認する|`mdatp health`|
 |正常性|spefic 製品属性を確認する|`mdatp health --field [attribute: healthy/licensed/engine_version...]`|
 |保護|パスをスキャンする|`mdatp scan custom --path [path] [--ignore-exclusions]`|
@@ -120,7 +120,7 @@ macOS で Microsoft Defender for Endpoint をアンインストールするに�
 |保護|フル スキャンを実行する|`mdatp scan full`|
 |保護|進行中のオンデマンド スキャンをキャンセルする|`mdatp scan cancel`|
 |保護|セキュリティ インテリジェンス更新プログラムの要求|`mdatp definitions update`|
-|EDR|デバイスにグループ タグを追加します。 EDRタグは、デバイス グループの管理に使用されます。 詳細については、「/microsoft-365/security/defender-endpoint/machine-groups」を参照してください。|`mdatp edr tag set --name GROUP --value [name]`|
+|EDR|タグの設定と削除、サポートされている GROUP のみ|`mdatp edr tag set --name GROUP --value [name]`|
 |EDR|デバイスからグループ タグを削除する|`mdatp edr tag remove --tag-name [name]`|
 |EDR|グループ ID の追加|`mdatp edr group-ids --group-id [group]`|
 

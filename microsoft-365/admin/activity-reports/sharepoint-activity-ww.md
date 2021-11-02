@@ -20,16 +20,16 @@ search.appverid:
 - MET150
 - MOE150
 description: すべてのユーザー SharePointのアクティビティ、共有されているファイルの数、およびストレージ使用率について知SharePointアクティビティ使用状況レポートを取得します。
-ms.openlocfilehash: 2ef2e5f736ec6a178f6cbc107b6884b5dc680986
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: b130ad1cca6e25a939b942ed98910ba10150ab40
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553042"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60648833"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-activity"></a>Microsoft 365管理センターのレポート - SharePointアクティビティ
 
-管理者としてMicrosoft 365レポート ダッシュボードには、組織内のさまざまな製品のアクティビティの概要が表示されます。 これにより、各製品に固有のアクティビティについてより詳しく知ることができます。 [アクティビティ][の [アクティビティ レポート] をMicrosoft 365 管理センター。](activity-reports.md)
+管理者はMicrosoft 365、組織のさまざまな製品のアクティビティの概要をレポート ダッシュボードに表示します。 これにより、各製品に固有のアクティビティについてより詳しく知ることができます。 [アクティビティ][の [アクティビティ レポート] をMicrosoft 365 管理センター。](activity-reports.md)
   
 たとえば、ファイルの操作を調べることで、SharePoint を使用するライセンスを持つすべてのユーザーのアクティビティを把握できます。また、共有されているファイルの数を調べると、行われているコラボレーションのレベルを把握できます。
   

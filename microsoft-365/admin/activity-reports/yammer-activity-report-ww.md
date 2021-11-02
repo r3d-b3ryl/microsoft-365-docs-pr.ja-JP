@@ -20,16 +20,16 @@ search.appverid:
 - MET150
 - MOE150
 description: '[アクティビティ] Yammerレポートを取得し、メッセージの投稿、Yammer読み取りを行うユーザー数の詳細を知ります。'
-ms.openlocfilehash: 3b3d99754a7ace6ffbd8b503e4d70f956425e678
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 42598322c58682e467eba99a7b01a7036fe05581
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553018"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60648757"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-activity-report"></a>Microsoft 365管理センターのレポート - Yammerレポート
 
-管理者Microsoft 365レポート **ダッシュボードには**、組織内の製品の使用状況に関するデータが表示されます。 管理センター [でアクティビティ レポートを確認します](activity-reports.md)。 **Yammer アクティビティ レポート** では、Yammer を使用してメッセージの投稿、「いいね!」の評価、または閲覧を行った一意のユーザー数や、組織全体で生成されたアクティビティの量を確認することで、Yammer に対する組織の関与レベルを把握することができます。 
+管理者Microsoft 365レポート ダッシュボードには、組織内の製品の使用状況に関するデータが表示されます。 管理センター [でアクティビティ レポートを確認します](activity-reports.md)。 **Yammer アクティビティ レポート** では、Yammer を使用してメッセージの投稿、「いいね!」の評価、または閲覧を行った一意のユーザー数や、組織全体で生成されたアクティビティの量を確認することで、Yammer に対する組織の関与レベルを把握することができます。 
  
 ## <a name="how-do-i-get-to-the-yammer-activity-report"></a>アクティビティ レポートにアクセスYammer方法
 

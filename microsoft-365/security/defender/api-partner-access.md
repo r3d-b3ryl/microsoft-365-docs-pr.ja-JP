@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: b2cb41e4696d964f8a732adb56826de20dcdec6d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b3a1925a5d08b13558a312e92270f5703452aa07
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199599"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60643233"
 ---
 # <a name="create-an-app-with-partner-access-to-microsoft-365-defender-apis"></a>パートナーが API にアクセスできるアプリをMicrosoft 365 Defenderする
 
@@ -46,7 +46,7 @@ Microsoft 365 Defender一連のプログラム API を使用して、そのデ�
 
 一般に、これらの API を使用するには、次の手順を実行する必要があります。
 
-- アプリケーション (azure Azure Active Directory) AD作成します。
+- (Azure Active Directory) アプリケーションAzure AD作成します。
 - このアプリケーションを使用してアクセス トークンを取得します。
 - トークンを使用して API にMicrosoft 365 Defenderします。
 
@@ -54,7 +54,7 @@ Microsoft 365 Defender一連のプログラム API を使用して、そのデ�
 
 この記事では、次の方法について説明します。
 
-- マルチテナント **Azure AD** アプリケーションの作成
+- マルチテナント **アプリケーションのAzure AD** する
 - アプリケーションが必要とするリソースにアクセスするために、ユーザー管理者Microsoft 365 Defender同意を得る。
 - アクセス トークンを取得してアクセスMicrosoft 365 Defender
 - トークンを検証する
@@ -63,12 +63,12 @@ Microsoft 365 Defender一連のプログラム API を使用して、そのデ�
 
 一般に、API を使用するには、次の手順を実行する必要があります。
 
-- マルチテナント **Azure AD** 作成します。
+- 複数テナント **のアプリケーションを作成** Azure ADします。
 - アプリケーションが必要とするリソースにアクセスするために、ユーザー管理者から承認 (同意) Microsoft 365 Defender取得します。
 - このアプリケーションを使用してアクセス トークンを取得します。
 - トークンを使用して API にMicrosoft 365 Defenderします。
 
-次の手順では、マルチテナント Azure AD アプリケーションを作成し、アクセス トークンを取得してMicrosoft 365 Defender検証します。
+次の手順では、マルチテナント アプリケーションを作成し、Azure ADトークンを取得して、トークンMicrosoft 365 Defender検証する方法について説明します。
 
 ## <a name="create-the-multi-tenant-app"></a>マルチテナント アプリの作成
 
@@ -81,7 +81,7 @@ Microsoft 365 Defender一連のプログラム API を使用して、そのデ�
 3. 登録フォームで次の情報を入力します。
 
    - アプリケーションの名前を選択します。
-   - [ **サポートされているアカウントの種類] で**、[任意の組織ディレクトリのアカウント ] ([任意の Azure AD **ディレクトリ] - [マルチテナント] を選択します**。
+   - [**サポートされているアカウントの種類] で**、[任意の組織ディレクトリ **のアカウント] ([任意のAzure AD] - [マルチテナント] を選択します**。
    - [リダイレクト URI] **セクションに入力** します。 [Web] **の種類を選択** し、リダイレクト URI をとして指定します **https://portal.azure.com** 。
 
    フォームへの入力が完了したら、[登録] を **選択します**。
@@ -144,7 +144,7 @@ Microsoft 365 Defender一連のプログラム API を使用して、そのデ�
 
 ## <a name="get-an-access-token"></a>アクセス トークンを取得する
 
-Azure AD トークンの詳細については [、「Azure AD」を参照してください](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)。
+トークンの詳細については、Azure ADチュートリアルを[Azure ADしてください](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)。
 
 > [!IMPORTANT]
 > このセクションの例では、テストの目的でシークレット値を貼り付けるのを推奨しますが、実稼働環境で実行されているアプリケーションにシークレットをハードコードする必要があります。 サード パーティは、シークレットを使用してリソースにアクセスできます。 [Azure Key Vault](/azure/key-vault/general/about-keys-secrets-certificates)を使用すると、アプリのシークレットをセキュリティで保護できます。 アプリを保護する方法の実用的な例については、「Azure Key Vault を使用してサーバー アプリのシークレットを管理する」 [を参照してください](/learn/modules/manage-secrets-with-azure-key-vault/)。
@@ -221,7 +221,7 @@ appSecret = '' # Paste your own app secret here to test, then store it in a safe
 
 url = "https://login.windows.net/%s/oauth2/token" % (tenantId)
 
-resourceAppIdUri = 'https://api.securitycenter.windows.com'
+resourceAppIdUri = 'https://api.security.microsoft.com'
 
 body = {
     'resource' : resourceAppIdUri,
