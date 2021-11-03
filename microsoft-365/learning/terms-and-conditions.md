@@ -1,10 +1,10 @@
 ---
-title: 利用規約を理解する
+title: 使用条件を理解する
 ms.author: daisyfeller
 author: daisyfell
 manager: pamgreen
-ms.reviewer: chrisarnoldmsft
-ms.date: ''
+ms.reviewer: shirana
+ms.date: 11/02/2021
 audience: admin
 ms.topic: article
 ms.service: ''
@@ -15,14 +15,14 @@ ms.collection:
 - m365initiative-viva-learning
 ms.localizationpriority: medium
 description: Viva を使用している場合に適用される条件をラーニング。
-ms.openlocfilehash: dcbf25ca555b51feae8e7f38fb47f07704113c06
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 692afdfaba72fec1ce65c7ea2e90be5e883ec5da
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60566803"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60700363"
 ---
-# <a name="understand-terms-and-conditions"></a>利用規約を理解する
+# <a name="understand-terms-and-conditions"></a>使用条件を理解する
 
 ビバ サービスからアクセスラーニングは、Microsoft 製品条項以外の条項に従います。
 

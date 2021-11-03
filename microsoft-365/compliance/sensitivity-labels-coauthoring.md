@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: デスクトップ アプリで共同編集と自動保存を有効にする設定をオンにして、SharePoint、OneDrive でドキュメントのラベル付けと暗号化が行えます。
-ms.openlocfilehash: f5a3f401f17ee71ff78e15f6e1b3e9c7348ac40c
-ms.sourcegitcommit: 96618d21ad0424b7b51090afad5079ad0e955c21
+ms.openlocfilehash: 5b1ad39feeebdbf44a83e09e1daa25794ebc98fa
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60251102"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60698431"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>機密度ラベルを使用して暗号化されたファイルの共同編集を有効にする
 
@@ -90,7 +90,7 @@ Office デスクトップ アプリの共同編集をサポートする設定を
     - **エンドポイント データ損失防止 (Endpoint DLP):**
         - Windows 10 version 1809 (KB 4601383)
         - Windows 10 version 1903, version 1909 (KB 4601380)
-        - Windows 10 version 2004 (KB 46013)
+        - Windows 10 version 2004 (KB 4601382)
         - Windows 10 version 2004 以降の Windows バージョンは、KB の更新なしでサポートされます
     
     - **Microsoft Information Protection SDK を使用するアプリとサービス:** 

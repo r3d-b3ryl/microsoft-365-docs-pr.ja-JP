@@ -22,8 +22,8 @@ ms.openlocfilehash: 8fa111b636026de49c854eb5ec8c17f1aad5c3eb
 ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60700339"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60673097"
 ---
 # <a name="aadsignineventsbeta"></a>AADSignInEventsBeta
 

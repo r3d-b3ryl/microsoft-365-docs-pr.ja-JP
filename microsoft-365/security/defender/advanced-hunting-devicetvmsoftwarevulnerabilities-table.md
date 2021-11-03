@@ -22,8 +22,8 @@ ms.openlocfilehash: c217c060c3d0b570c6da5bfbd47c72cb8cdfca2b
 ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60700327"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60670809"
 ---
 # <a name="devicetvmsoftwarevulnerabilities"></a>DeviceTvmSoftwareVulnerabilities
 

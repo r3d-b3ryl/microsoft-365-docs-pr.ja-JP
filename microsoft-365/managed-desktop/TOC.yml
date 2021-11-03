@@ -19,8 +19,6 @@
       items:
         - name: サポートされる地域
           href: service-description/regions-languages.md
-        - name: 製品のライフサイクル
-          href: service-description/device-lifecycle.md
         - name: デバイス
           href: null
           items:

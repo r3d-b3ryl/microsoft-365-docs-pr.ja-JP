@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: 管理者がユーザーの回復可能なアイテム フォルダー内のアイテムを Exchange Online メールボックスに対して削除する方法について説明します(そのメールボックスが法的に保持されている場合でも)。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: aedd887caed1ffd4484ea55561aa77562869726a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8ef725e841c46c33c037efbc0109b91864af4737
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189431"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60698419"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold"></a>保留中のクラウド ベースのメールボックスの 回復可能なアイテム フォルダーのアイテムを削除する
 
@@ -164,9 +164,9 @@ PowerShell の次の手順をExchange Onlineします。
     ```
 
     > [!NOTE]
-    > 単一アイテムの回復を無効にするには、最大 60 分かかる場合があります。 この期間が経過するまで、[回復可能なアイテム] フォルダー内のアイテムを削除しない。 
+    > 単一アイテムの回復を無効にするには、最大 240 分かかる場合があります。 この期間が経過するまで、[回復可能なアイテム] フォルダー内のアイテムを削除しない。
   
-4. 次のコマンドを実行して、管理フォルダー アシスタントがメールボックスを処理できません。 前に説明したように、保持ロックを持つアイテム保持ポリシーがメールボックスに適用されていない場合にのみ、管理フォルダー アシスタントを無効にできます。 
+4. 次のコマンドを実行して、管理フォルダー アシスタントがメールボックスを処理できません。 前に説明したように、保持ロックを持つアイテム保持ポリシーがメールボックスに適用されていない場合にのみ、管理フォルダー アシスタントを無効にできます。
 
     ```powershell
     Set-Mailbox <username> -ElcProcessingDisabled $true
@@ -188,7 +188,7 @@ Set-Mailbox <username> -LitigationHoldEnabled $false
 ```
 
 > [!NOTE]
-> クライアント アクセス方法の無効化や単一アイテムの回復と同様に、訴訟ホールドを削除するには最大で 60 分かかる場合があります。 この期間が経過するまで、[回復可能なアイテム] フォルダーからアイテムを削除しない。 
+> 単一アイテムの回復を無効にした場合と同様に、訴訟ホールドを削除するには最大で 240 分かかる場合があります。 この期間が経過するまで、[回復可能なアイテム] フォルダーからアイテムを削除しない。
   
 ### <a name="in-place-hold"></a>インプレース ホールド
   
@@ -337,7 +337,7 @@ Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | 
 
 ## <a name="step-6-revert-the-mailbox-to-its-previous-state"></a>手順 6: メールボックスを以前の状態に戻す
 
-最後の手順では、メールボックスを以前の構成に戻します。 つまり、手順 2 で変更したプロパティをリセットし、手順 3 で削除した保留リストを再適用します。 これには、次の内容が含まれます。
+最後の手順では、メールボックスを以前の構成に戻します。 つまり、手順 2 で変更したプロパティをリセットし、手順 3 で削除した保留リストを再適用します。 保持されるデータには以下が含まれます。
   
 - 削除済みアイテムの保持期間を以前の値に戻す。 または、この設定を 30 日に設定したままにしておき、Exchange Online。
 
