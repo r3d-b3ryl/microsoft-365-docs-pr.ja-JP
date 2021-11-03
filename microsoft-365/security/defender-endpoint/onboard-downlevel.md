@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f17f8fe3ccb659f04ab5acac9108d4151a5d1769
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: 5c4936906ba830a660c38b76c7aaf5598ba7724c
+ms.sourcegitcommit: 7791c519bd8b68fc23433e13e1ecbdbeaddbebfa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240526"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60725585"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>以前のバージョンの Windows をオンボードする
 
@@ -76,22 +76,25 @@ Defender for Endpoint は System Center Endpoint Protection と統合し、マ�
 
 ## <a name="install-and-configure-microsoft-monitoring-agent-mma"></a>インストールと構成Microsoft Monitoring Agent (MMA) 
 
-### <a name="before-you-begin"></a>開始する前に
+### <a name="before-you-begin"></a>はじめに
 
 最小システム要件を確認するには、次の詳細を確認します。
 
 - [2018 年 2 月の更新プログラムのロールアップをインストールする](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
 
   > [!NOTE]
-  > 7 SP1 および 7 SP1 Windows 7 SP1 EnterpriseおよびWindowsにのみPro。
+  > Windows Server 2008 R2、Windows 7 SP1 Enterprise、および Windows 7 SP1 Pro。
 
 - カスタマー エクスペリエンス [と診断テレメトリの更新プログラムをインストールする](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
 
 - [.NET framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (以降) または[KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)のいずれかをインストールする
 
     > [!NOTE]
-    > 7 SP1 および 7 SP1 Windows 7 SP1 EnterpriseおよびWindowsにのみPro。
+    > Windows Server 2008 R2、Windows 7 SP1 Enterprise、および Windows 7 SP1 Pro。
+    >
     > 上記のインストールを.NET Framework 4.0.x にはインストールしない。
+    >
+    > .NET 4.5 のインストールでは、インストール後にコンピューターを再起動する必要がある場合があります。
 
 - Azure Log Analytics エージェントの最小システム要件を満たします。 詳細については、「Log Analytics を使用して環境内のコンピューターからデータ [を収集する」を参照してください。](/azure/log-analytics/log-analytics-concept-hybrid#prerequisites)
 
@@ -325,7 +328,7 @@ Server 2008 R2 のオンボード前に、KB がWindows確認してください�
 
     ![プロパティのMicrosoft Monitoring Agent画像](images/atp-mma.png)
 
-#### <a name="run-a-powershell-command-to-remove-the-configuration&quot;></a>PowerShell コマンドを実行して構成を削除する
+#### <a name="run-a-powershell-command-to-remove-the-configuration"></a>PowerShell コマンドを実行して構成を削除する
 
 1. ワークスペース ID を取得します。
 
@@ -339,7 +342,7 @@ Server 2008 R2 のオンボード前に、KB がWindows確認してください�
     ```   
     $AgentCfg = New-Object -ComObject AgentConfigManager.MgmtSvcCfg
     # Remove OMS Workspace
-    $AgentCfg.RemoveCloudWorkspace(&quot;WorkspaceID")
+    $AgentCfg.RemoveCloudWorkspace("WorkspaceID")
     # Reload the configuration and apply changes
     $AgentCfg.ReloadConfiguration()
 

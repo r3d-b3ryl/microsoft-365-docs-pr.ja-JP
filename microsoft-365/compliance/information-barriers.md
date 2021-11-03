@@ -16,12 +16,12 @@ ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3bbcdbcc8dae41d9de2071e90b0bec877cef63ba
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5baff70cb3318b05092e940e8160029bc2be69af
+ms.sourcegitcommit: 7791c519bd8b68fc23433e13e1ecbdbeaddbebfa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198723"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60725613"
 ---
 # <a name="learn-about-information-barriers-in-microsoft-365"></a>情報バリアについて詳しくは、Microsoft 365
 
@@ -82,8 +82,8 @@ Microsoft Teams、SharePointオンライン、およびOneDrive for Businessサ�
 
 情報バリアは現在展開中で、次のようなサブスクリプションに含まれています。
 
-- Microsoft 365 E5/A5
-- Office 365 E5/A5
+- Microsoft 365 E5/A5/A3/A1
+- Office 365 E5/A5/A3/A1
 - Office 365 Advanced Compliance
 - Microsoft 365コンプライアンス E5/A5
 - Microsoft 365 インサイダー リスク管理

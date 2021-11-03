@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 潜在的な脅威、データ損失、およびアクセス許可の問題Microsoft 365 コンプライアンス センター監視するために、Microsoft 365 コンプライアンス センターまたは Microsoft 365 Defender ポータルにアラート ポリシーを作成します。
-ms.openlocfilehash: 3e2e0cdfb90a6ba224fc58b328381cb1da66e850
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2498017d7322de547db57a9106cfb58b42664fec
+ms.sourcegitcommit: 7791c519bd8b68fc23433e13e1ecbdbeaddbebfa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198807"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60725645"
 ---
 # <a name="alert-policies-in-microsoft-365"></a>Microsoft 365 のアラート ポリシー
 
@@ -125,7 +125,7 @@ Microsoft は、管理者のアクセス許可の悪用、マルウェアのExch
 
 また、この表は、Office 365 EnterpriseにOffice 365米国政府機関の計画を示しています。 E1/F1/G1 または E3/F3/G3 サブスクリプションに加えて、組織が適切なアドオン サブスクリプションを持つ場合、一部の既定のアラート ポリシーを使用できます。
 
-| 既定のアラート ポリシー | 説明 | カテゴリ | Enterpriseサブスクリプション |
+| 既定のアラート ポリシー | 説明 | Category | Enterpriseサブスクリプション |
 |:-----|:-----|:-----|:-----|
 |**悪意のある可能性がある URL のクリックが検出されました**|組織のリンクによって保護されたユーザーセーフ[が](../security/office-365-security/safe-links.md)悪意のあるリンクをクリックすると、警告が生成されます。 このイベントは、url の評決の変更が Microsoft Defender によって Office 365 用に識別された場合、またはユーザーが セーフ リンク ページ (組織の Microsoft 365 for business セーフ Links ポリシーに基づいて) を上書きするときにトリガーされます。 このアラート ポリシーには、重大度 **の高** い設定があります。 Defender for Office 365 P2、E5、G5 のお客様に対して、このアラートは自動的に自動調査と応答をトリガー [Office 365。](../security/office-365-security/office-365-air.md) このアラートをトリガーするイベントの詳細については[、「Set up セーフリンク ポリシー」を参照してください](../security/office-365-security/set-up-safe-links-policies.md)。|脅威の管理|E5/G5 または Defender for Office 365 P2 アドオン サブスクリプション|
 |**管理者の提出結果が完了しました**|管理者申請が送信されたエンティティ[](../security/office-365-security/admin-submission.md)の再スキャンを完了すると、アラートを生成します。 管理者申請から再スキャン結果が表示される度に、アラートがトリガーされます。 これらのアラートは、以前の申請の[](https://compliance.microsoft.com/reportsubmission)結果を確認し、ユーザーが報告したメッセージを送信して最新のポリシー チェックと再スキャンの評決を取得し、組織内のフィルター ポリシーが意図した影響を与えているかどうかを判断することを目的とします。 このポリシーには、[ **情報の重大度]** 設定があります。|脅威の管理|E1/F1、E3/F3、または E5|
@@ -259,6 +259,8 @@ Microsoft は、管理者のアクセス許可の悪用、マルウェアのExch
 |DLP コンプライアンス管理||![チェック マーク。](../media/checkmark.png)|||||
 |Export|||||||
 |Hold|||||||
+|情報保護アナリスト||![チェック マーク。](../media/checkmark.png)|||||
+|情報保護調査員||![チェック マーク。](../media/checkmark.png)|||||
 |通知の管理||||||![チェック マーク。](../media/checkmark.png)|
 |組織の構成||||||![チェック マーク。](../media/checkmark.png)|
 |Preview|||||||

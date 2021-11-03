@@ -15,13 +15,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 10/28/2021
-ms.openlocfilehash: 6ae7805ddc762de081b201b1ebafca21eeaf5632
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.date: 11/02/2021
+ms.openlocfilehash: b7dc38ba6b4c1fcc214dfca5d621269a35eaf323
+ms.sourcegitcommit: 7791c519bd8b68fc23433e13e1ecbdbeaddbebfa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/03/2021
-ms.locfileid: "60701659"
+ms.locfileid: "60725560"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender for Endpoint Device Control リムーバブル Storage アクセス制御
 
@@ -88,7 +88,7 @@ Microsoft Defender for Endpoint Device Control リムーバブル Storageアク�
 | **Sid** | ローカル ユーザー Sid またはユーザー Sid グループ、または AD オブジェクトの Sid は、このポリシーを特定のユーザー またはユーザー グループに適用するかどうかを定義します。1 つのエントリには最大 1 つの Sid を含め、Sid を使用しないエントリは、コンピューター上にポリシーを適用する方法を意味します。 |  |
 | **ComputerSid** | ローカル コンピューター Sid またはコンピューター Sid グループ、または AD オブジェクトの Sid は、このポリシーを特定のコンピューターまたはコンピューター グループに適用するかどうかを定義します。1 つのエントリには最大 1 つの ComputerSid を指定し、ComputerSid を使用しないエントリはコンピューター上にポリシーを適用します。 特定のユーザーと特定のコンピューターにエントリを適用する場合は、Sid と ComputerSid の両方を同じエントリに追加します。 |  |
 | **オプション** | 通知を表示するかどうかを定義します。 |**0 または 4**: [許可] または [拒否] の種類が選択されている場合。 <p>0: 何も<p>4: この **エントリに対して AuditAllowed** と **AuditDenied を** 無効にします。 ブロックが **発生** し、AuditDenied が構成されている場合でも、システムは通知を表示されません。 <p> Type **AuditAllowed が** 選択されている場合: <p>0: 何も <p>1: 何も <p>2: 送信イベント<p>3: イベントの送信 <p> Type **AuditDenied が** 選択されている場合: <p>0: 何も <p>1: 通知を表示する <p>2: 送信イベント<p>3: 通知を表示し、イベントを送信する |
-|AccessMask|アクセスを定義します。 | **1~7**: <p>読み取り <p>書き込み <p>読み取りと書き込み <p>実行 <p>読み取りおよび実行<p>書き込みと実行 <p>読み取りおよび書き込みおよび実行 |
+|AccessMask|アクセスを定義します。 | **1~7**: <p>1: 読み取り <p>2: 書き込み <p>3: 読み取りおよび書き込み <p>4: 実行 <p>5: 読み取りおよび実行<p>6: 書き込みと実行 <p>7: 読み取りおよび書き込みと実行 |
 
 ## <a name="common-removable-storage-access-control-scenarios"></a>一般的なリムーバブル Storage アクセス制御のシナリオ
 
