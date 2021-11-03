@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ac26e2528698cc671c5cb45eb507d01900a77ec4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f7f27d772f5b0d68c22bfa57a771cf2d13ca58c6
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162328"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60667016"
 ---
 # <a name="frequently-asked-questions-when-turning-on-microsoft-365-defender"></a>ユーザー設定をオンにするときによく寄せられる質問Microsoft 365 Defender
 
@@ -71,7 +71,7 @@ Microsoft 365 Defenderは次の場所で利用できます <https://security.mic
 
 ## <a name="what-permissions-do-i-need-to-access-microsoft-365-defender"></a>ユーザーにアクセスするために必要なアクセス許可Microsoft 365 Defender。
 
-次の役割 (Azure Azure Active Directory) AD割り当てられたアカウントは、Microsoft 365 Defender機能とデータにアクセスできます。
+次の役割 (Azure Active Directory) Azure AD割り当てられたアカウントは、Microsoft 365 Defender機能とデータにアクセスできます。
 
 - グローバル管理者
 - セキュリティ管理者

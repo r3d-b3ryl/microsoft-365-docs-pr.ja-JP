@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d1f3214efa76759fa9e1a17ed4497c476125a096
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: a5c96f8a3dd96219f58ac667e03b50e03498dcae
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60552596"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60659105"
 ---
 # <a name="supported-operating-systems-platforms-and-capabilities---for-threat-and-vulnerability-management"></a>サポートされているオペレーティング システム、プラットフォーム、および機能 - 脅威と脆弱性の管理
 
@@ -64,6 +64,8 @@ CentOS 7.2 以上|はい|はい|はい|はい|はい
 Ubuntu 16.04 LTS 以上の LTS|はい|はい|はい|はい|はい
 Oracle Linux 7.2 以上|はい|はい|はい|はい|はい
 SUSE Linux Enterprise サーバー 12 以上|はい|はい|はい|はい|はい
+Android 6.0 以上 (プレビュー版)|はい|はい|非サポート|サポート対象外|サポート対象外
+iOS 12.0 以上 (プレビューで)|はい|非サポート|サポート対象外|サポート対象外|非サポート
 
 > [!NOTE]
 > 一部の機能は、ダウンレベルのオペレーティング システムでは使用できません。サポートされている OS の詳細については、「Microsoft 365 Defender ポータル」を参照してください。

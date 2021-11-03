@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: PowerShell を使用して、さまざまな方法でユーザー アカウントMicrosoft 365表示、一覧表示、または表示する方法について説明します。
-ms.openlocfilehash: da1ae30f04ba2c5ee69047361113fe468938c4ad
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5c434825da95fd7d90594b2424cab287305f7d26
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212763"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60667508"
 ---
 # <a name="view-microsoft-365-user-accounts-with-powershell"></a>PowerShell Microsoft 365ユーザー アカウントを表示する
 
@@ -106,19 +106,19 @@ Get-AzureADUser -ObjectID <sign-in name of the user account> | Select DisplayNam
 
 - Windows Server Active Directory (AD) は、オンプレミスのユーザーからクラウドに同期ADアカウントです。
 
-- Azure Active Directory (Azure AD) AD、クラウドに直接作成されるアカウントです。
+- Azure Active Directory (Azure AD) アカウントは、クラウドに直接作成されます。
 
-
-次のコマンドは、属性 *DirSyncEnabled* を True に設定しているすべてのユーザーを取得するように PowerShell に指示 *します*。 この機能を使用して、オンプレミスのアカウントから同期しているアカウントをAD。
+次のコマンドを使用して、オンプレミスのアカウントから同期しているアカウント **を** 検索AD。 属性 *DirSyncEnabled* を True に設定しているすべてのユーザーを取得するように PowerShell に指示 *します*。 
 
 ```powershell
 Get-AzureADUser | Where {$_.DirSyncEnabled -eq $true}
 ```
 
-次のコマンドは、属性 *DirSyncEnabled* を False に設定しているすべてのユーザーを取得するように PowerShell に指示 *します*。 クラウド専用アカウントの検索に使用できます。
+次のコマンドを使用して、クラウド専用 **アカウントを検索** できます。 これは、属性 *DirSyncEnabled* が False に設定されている、または設定されていない *(Null)* を持つすべてのユーザーを取得するように *PowerShell* に指示します。
+*DirSyncEnabled* が Null に設定されている場合、オンプレミスAD同期されたことがない *アカウント。* オンプレミスのサーバーから最初に同期ADが同期されなくなったアカウントでは *、DirSyncEnabled* が False に設定 *されています*。 
 
 ```powershell
-Get-AzureADUser | Where {$_.DirSyncEnabled -ne $false}
+Get-AzureADUser | Where {$_.DirSyncEnabled -ne $true}
 ```
 
 ### <a name="view-accounts-based-on-a-common-property"></a>共通プロパティに基づいてアカウントを表示する
@@ -163,7 +163,7 @@ Get-MsolUser
 ```
 
 >[!Note]
->PowerShell Core は、Windows PowerShell 用 Microsoft Azure Active Directory モジュールと、名前に *Msol* が含まれるコマンドレットをサポートしていません。 これらのコマンドレットは、Windows PowerShell から実行します。
+>PowerShell Core は、Windows PowerShell 用 Microsoft Azure Active Directory モジュールと、名前に *Msol* が含まれるコマンドレットをサポートしていません。
 >
 
 次のような情報を取得する必要があります。

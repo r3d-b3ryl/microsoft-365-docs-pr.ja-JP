@@ -14,12 +14,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: 組織内のユーザーおよびグループ向け Microsoft および Microsoft パートナー アプリを検索、テスト、展開するには、組織の統合アプリ ポータルMicrosoft 365 管理センター。
-ms.openlocfilehash: 08660c4f90a27f4294268aa0fb2204347ad06498
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bc633b2a2541a5c1fd813848cd39c7c6e91420ee
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174149"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60662788"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-by-partners-in-the-integrated-apps-portal"></a>統合アプリ ポータルMicrosoft 365 Appsパートナーによるテストと展開
 
@@ -86,8 +86,8 @@ ms.locfileid: "60174149"
 次のシナリオでは、統合アプリ ポータルからパートナーによって 1 つのストア アプリMicrosoft 365 Apps展開できません。
 
 - 同じアドインが複数の SaaS オファーにリンクされています。
-- SaaS オファーはアドインにリンクされますが、Microsoft Graphと統合されるのではなく、AAD アプリ ID は提供されない。
-- SaaS オファーはアドインにリンクされますが、Microsoft Graphに提供される AAD アプリ ID は、複数の SaaS オファー間で共有されます。
+- SaaS オファーはアドインにリンクされますが、Microsoft Graphと統合されるのではなく、アプリ ID AAD提供されない。
+- SaaS オファーはアドインにリンクされますが、Microsoft AAD統合用にGraphアプリ ID は複数の SaaS オファー間で共有されます。
 
 ## <a name="upload-custom-line-of-business-apps-for-testing-and-full-deployment"></a>アップロードおよび完全展開用のカスタムの業務用アプリを作成する
 
@@ -123,7 +123,7 @@ Officeアドインを使用すると、ドキュメントをカスタマイズ�
 
 ### <a name="before-you-begin"></a>はじめに
 
-アドインの展開では、ユーザーが Microsoft 365 Enterprise ライセンス (E3/E5/F3) または Microsoft 365 Business ライセンス (Business Basic、Business Standard、Business プレミアム) を使用している必要があります。 また、ユーザーは組織 ID を使用してOfficeサインインし、メールボックスにExchange OnlineアクティブExchange Online必要があります。 サブスクリプション ディレクトリは、サブスクリプション ディレクトリに存在するか、サブスクリプション ディレクトリにAzure Active Directory。 
+アドインの展開では、ユーザーが Microsoft 365 Business ライセンス (Business Basic、Business Standard、Business プレミアム)、Office 365 Enterprise ライセンス (E1/E3/E5/F3)、または Microsoft 365 Enterprise ライセンス (E3/E5/F3) を使用している必要があります。 また、ユーザーは組織 ID を使用してOfficeサインインし、メールボックスにExchange OnlineアクティブExchange Online必要があります。 サブスクリプション ディレクトリは、サブスクリプション ディレクトリに存在するか、サブスクリプション ディレクトリにAzure Active Directory。 
 
 展開では、次の機能はサポートされていません。 
 
@@ -136,11 +136,11 @@ Officeアドインを使用すると、ドキュメントをカスタマイズ�
 ### <a name="office-requirements"></a>Office要件 
 
 Word、Excel、PowerPointアドインの場合、ユーザーは次のいずれかを使用している必要があります。 
-- Windows デバイスのバージョン 1704 以降の Microsoft 365 Enterprise ライセンス (E3/E5/F3) または Microsoft 365 Business ライセンス (Business Basic、Business Standard、Business プレミアム)。 
+- Windows デバイスのバージョン 1704 以降の Microsoft 365 Business ライセンス (Business Basic、Business Standard、Business プレミアム)、Office 365 Enterprise ライセンス (E1/E3/E5/F3)、または Microsoft 365 Enterprise ライセンス (E3/E5/F3)。 
 - Mac のバージョン 15.34 以降。 
 
 このOutlook、ユーザーは次のいずれかを使用している必要があります。 
-- バージョン 1701 以降の Microsoft 365 Enterprise ライセンス (E3/E5/F3) または Microsoft 365 Business ライセンス (Business Basic、Business Standard、Business プレミアム)。 
+- Microsoft 365 Business ライセンス (Business Basic、Business Standard、Business プレミアム)、Office 365 Enterprise ライセンス (E1/E3/E5/F3)、または Microsoft 365 Enterprise ライセンス (E3/E5/F3) のバージョン 1701 以降。 
 - バージョン 1808 以降のバージョンOffice Professional Plus 2019 2019 Office Standard。 
 - バージョン 16.0.4494.1000 以降の Office Professional Plus 2016 (MSI) または Office Standard 2016 (MSI)。
     > [!NOTE]
@@ -314,8 +314,8 @@ Office アドインの種類と機能の詳細については [、「Office](/
 
 ### <a name="is-integrated-apps-available-in-sovereign-cloud"></a>統合アプリはソブリン クラウドで利用できますか?
 
-その必要はありません。 統合アプリは、ソブリン クラウドのお客様が利用できません。
+いいえ。 統合アプリは、ソブリン クラウドのお客様が利用できません。
 
 ### <a name="is-integrated-apps-available-in-government-clouds"></a>統合アプリは政府機関のクラウドで利用できますか?
 
-その必要はありません。 統合アプリは、政府機関のクラウド顧客が利用できません。
+いいえ。 統合アプリは、政府機関のクラウド顧客が利用できません。

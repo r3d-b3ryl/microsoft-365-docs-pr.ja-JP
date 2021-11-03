@@ -15,17 +15,15 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 747b299ed391ac8ee4a96903e58a64dba6fb3683
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b070474da884e7cc45e37cf8dbe45e54568d4ca8
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157736"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60659093"
 ---
 # <a name="deviceevents"></a>DeviceEvents
 
@@ -60,7 +58,7 @@ ms.locfileid: "60157736"
 | `AccountSid` | string | アカウントのセキュリティ識別子 (SID) |
 | `RemoteUrl` | 文字列 | に接続されていた URL または完全修飾ドメイン名 (FQDN) |
 | `RemoteDeviceName` | 文字列 | 影響を受けるコンピューターでリモート操作を実行したコンピューターの名前。 報告されるイベントに応じて、この名前には完全修飾ドメイン名 (FQDN)、NetBIOS 名、またはドメイン情報のないホスト名を指定できます。 |
-| `ProcessId` | 整数 | 新しく作成されたプロセスのプロセス ID (PID) |
+| `ProcessId` | int | 新しく作成されたプロセスのプロセス ID (PID) |
 | `ProcessCommandLine` | string | 新しいプロセスの作成に使用するコマンド ライン |
 | `ProcessCreationTime` | 日付型 | プロセスが作成された日時 |
 | `ProcessTokenElevation` | string | 新しく作成されたプロセスに適用されるユーザー アクセス制御 (UAC) 特権昇格の有無を示すトークンの種類 |
@@ -69,9 +67,9 @@ ms.locfileid: "60157736"
 | `RegistryValueName` | string | 記録されたアクションが適用されたレジストリ値の名前 |
 | `RegistryValueData` | string | 記録されたアクションが適用されたレジストリ値のデータ |
 | `RemoteIP` | 文字列 | に接続されていた IP アドレス |
-| `RemotePort` | 整数 | 接続されているリモート デバイスの TCP ポート |
+| `RemotePort` | int | 接続されているリモート デバイスの TCP ポート |
 | `LocalIP` | string | 通信中に使用されるローカル コンピューターに割り当てられた IP アドレス |
-| `LocalPort` | 整数 | 通信中に使用されるローカル コンピューター上の TCP ポート |
+| `LocalPort` | int | 通信中に使用されるローカル コンピューター上の TCP ポート |
 | `FileOriginUrl` | string | ファイルがダウンロードされた URL |
 | `FileOriginIP` | string | ファイルがダウンロードされた IP アドレス |
 | `InitiatingProcessSHA1` | string | イベントを開始したプロセス (イメージ ファイル) の SHA-1 |
@@ -80,7 +78,7 @@ ms.locfileid: "60157736"
 | `InitiatingProcessFileName` | string | イベントを開始したプロセスの名前 |
 | `InitiatingProcessFileSize` | long | イベントの処理を実行したファイルのサイズ |
 | `InitiatingProcessFolderPath` | string | イベントを開始したプロセス (イメージ ファイル) を含むフォルダー |
-| `InitiatingProcessId` | 整数 | イベントを開始したプロセスのプロセス ID (PID) |
+| `InitiatingProcessId` | int | イベントを開始したプロセスのプロセス ID (PID) |
 | `InitiatingProcessCommandLine` | string | イベントを開始したプロセスの実行に使用されるコマンド ライン |
 | `InitiatingProcessCreationTime` | 日付型 | イベントを開始したプロセスが開始された日時 |
 | `InitiatingProcessAccountDomain` | string | イベントを担当するプロセスを実行したアカウントのドメイン |
@@ -94,7 +92,7 @@ ms.locfileid: "60157736"
 |` InitiatingProcessVersionInfoInternalFileName` | string | イベントを担当するプロセスのバージョン情報 (イメージ ファイル) からの内部ファイル名 |
 | `InitiatingProcessVersionInfoOriginalFileName` | string | イベントを担当するプロセスのバージョン情報 (イメージ ファイル) からの元のファイル名 |
 | `InitiatingProcessVersionInfoFileDescription` | string | イベントを担当するプロセス (イメージ ファイル) のバージョン情報の説明 |
-| `InitiatingProcessParentId` | 整数 | イベントを担当するプロセスを生成した親プロセスのプロセス ID (PID) |
+| `InitiatingProcessParentId` | int | イベントを担当するプロセスを生成した親プロセスのプロセス ID (PID) |
 | `InitiatingProcessParentFileName` | string | イベントを担当するプロセスを生成した親プロセスの名前 |
 | `InitiatingProcessParentCreationTime` | 日付型 | イベントを担当するプロセスの親が開始された日時 |
 | `InitiatingProcessLogonId` | string | イベントを開始したプロセスのログオン セッションの識別子。 この識別子は、再起動の間にのみ同じコンピューター上で一意です。 |

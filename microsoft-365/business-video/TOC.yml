@@ -147,8 +147,6 @@
           href: anti-malware.md
         - name: ランサムウェア用のメール ルールを作成する
           href: prevent-ransom-in-email.md
-        - name: メールの自動転送を停止する
-          href: stop-email-auto-forward.md
         - name: フィッシング詐欺対策を設定する
           href: setup-anti-phishing.md
         - name: 安全な添付ファイルを管理する

@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 1fcbdb702035913cf1a3317dd9b3619ef020ebab
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 43207493a33c002d8137ecf3604393b06a15c17e
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208147"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60662441"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップのネットワーク構成
 
@@ -26,33 +26,32 @@ ms.locfileid: "60208147"
 
 ## <a name="proxy-configuration"></a>プロキシ構成
 
-Microsoft マネージド デスクトップはクラウド管理サービスです。 サービスが到達できる必要Microsoft マネージド デスクトップエンドポイントのセットがあります。 このセクションでは、サービスのさまざまな側面に対して許可する必要があるエンドポイントMicrosoft マネージド デスクトップします。 
+Microsoft Managed Desktop はクラウド管理サービスです。 Microsoft Managed Desktop サービスが到達できる必要がある一連のエンドポイントがあります。 このセクションでは、Microsoft Managed Desktop サービスのさまざまな側面で許可する必要があるエンドポイントの一覧を示します。 
 
 お客様は、ファイアウォールまたはプロキシを介してMicrosoft 365ネットワーク要求を直接送信し、認証をバイパスし、追加のパケット レベルの検査または処理を行って、ネットワークを最適化できます。 これにより、待機時間と境界の容量要件が削減されます。 
 
-また、クラウド ベースのサービスMicrosoft マネージド デスクトップパフォーマンスを最適化するには、顧客クライアント ブラウザーとエッジ ネットワーク内のデバイスによる特別な処理が必要です。 これらのデバイスには、ファイアウォール、SSL Break and Inspect、パケット検査デバイス、およびデータ損失防止システムが含まれます。
+また、Microsoft Managed Desktop クラウドベースのサービスに対するパフォーマンスを最適化するには、これらのエンドポイントでは、顧客のクライアント ブラウザーとエッジ ネットワーク内のデバイスによる特別な処理が必要です。 これらのデバイスには、ファイアウォール、SSL Break and Inspect、パケット検査デバイス、およびデータ損失防止システムが含まれます。
 
 ### <a name="proxy-requirement"></a>プロキシ要件
 
 プロキシまたはファイアウォールは TLS 1.2 をサポートしている必要があります。 それ以外の場合は、プロトコル検出を無効にする必要があります。
 
-### <a name="endpoints-allowed-that-are-necessary-for-microsoft-managed-desktop"></a>エンドポイントの使用に必要なエンドポイントMicrosoft マネージド デスクトップ
+### <a name="allowed-endpoints-that-are-necessary-for-microsoft-managed-desktop"></a>Microsoft Managed Desktop に必要な許可エンドポイント
 
-Microsoft マネージド デスクトップ Azure Portal を使用して Web コンソールをホストします。 次の URL は、プロキシとファイアウォールの許可リストに含め、Microsoft マネージド デスクトップが Microsoft Services と通信できる必要があります。  
+Microsoft Managed Desktop は、Azure Portal を使用して Web コンソールをホストします。 Microsoft Managed Desktop デバイスが Microsoft Services と通信するには、プロキシとファイアウォールの許可リストに次の URL が必要です。  
 
-このMicrosoft マネージド デスクトップ URL は、お客様の API でサービスが実行される場合に使用されます。 この URL は、企業ネットワーク上で常にアクセス可能である必要があります。
+Microsoft Managed Desktop URL は、お客様の API でサービスが実行される場合に使用されます。 この URL は、企業ネットワーク上で常にアクセス可能である必要があります。
 
 Microsoft サービス  | 許可リストに必要な URL 
 --- | ---
-Microsoft マネージド デスクトップ | prod-mwaas-services-customerapi.azurewebsites.net
+Microsoft マネージド デスクトップ | prod-mwaas-services-customerapi.azurewebsites.net <br>mmd-support-prod-nam.trafficmanager.net <br>mmdls.microsoft.com
 問い合わせ | \*.support.services.microsoft.com  <br>inprod.support.services.microsoft.com  <br>supportchannels.services.microsoft.com  <br>graph.windows.net  <br>login.windows.net  <br>prod-mwaas-services-customerapi.azurewebsites.net  <br>concierge.live.com
 クイック アシスト | remoteassistance.support.services.microsoft.com <br>relay.support.services.microsoft.com <br>channelwebsdks.azureedge.net  <br>web.vortex.data.microsoft.com  <br>gateway.channelservices.microsoft.com <br>\*.lync.com
 Microsoft サポート/回復アシスタント | \*.apibasic.diagnostics.office.com  <br>\*.api.diagnostics.office.com
  
+### <a name="allowed-endpoints-used-by-other-microsoft-products"></a>他の Microsoft 製品で使用できるエンドポイント
 
-### <a name="endpoints-allowed-used-by-other-microsoft-products"></a>他の Microsoft 製品で使用できるエンドポイント
-
-複数の Microsoft 製品の URL が許可されている一覧に含め、Microsoft マネージド デスクトップデバイスがそれらの Microsoft サービスと通信できる必要があります。 各製品の完全な一覧を表示するには、リンクを使用します。 
+Microsoft Managed Desktop デバイスがそれらの Microsoft サービスと通信するために、許可されているリストに含む必要がある複数の Microsoft 製品の URL があります。 各製品の完全な一覧を表示するには、リンクを使用します。 
 
 Microsoft サービス | ドキュメント
 --- | ---
@@ -76,13 +75,13 @@ OneDrive for Business | onedrive.com <br> <br>\*.onedrive.com <br>onedrive.live.
 Microsoft Defender Advanced Threat Protection (ATP) | \ *.oms.opinsights.azure.com <br>\*.blob.core.windows.net <br>\*.azure-automation.net <br>\*.ods.opinsights.azure.com <br>winatp-gw-cus.microsoft.com <br>winatp-gw-eus.microsoft.com <br>winatp-gw-neu.microsoft.com <br>winatp-gw-weu.microsoft.com <br>winatp-gw-uks.microsoft.com <br>winatp-gw-ukw.microsoft.com <br>winatp-gw-aus.microsoft.com <br>winatp-gw-aue.microsoft.com | [Windows DefenderATP エンドポイント](/windows/security/threat-protection/windows-defender-atp/configure-server-endpoints-windows-defender-advanced-threat-protection)
 問い合わせ | \*.support.services.microsoft.com  <br>inprod.support.services.microsoft.com  <br>supportchannels.services.microsoft.com  <br>graph.windows.net  <br>login.windows.net  <br>prod-mwaas-services-customerapi.azurewebsites.net  <br>concierge.live.com <br>rave.office.net | 
 クイック アシスト | remoteassistance.support.services.microsoft.com <br>relay.support.services.microsoft.com <br>channelwebsdks.azureedge.net  <br>web.vortex.data.microsoft.com  <br>gateway.channelservices.microsoft.com <br>\*.lync.com | 
-SharePoint Online  | \*.sharepoint.com <br>\ *.svc.ms  <br>\<tenant\>.sharepoint.com  <br>\<tenant\>-my.sharepoint.com  <br>\<tenant\>-files.sharepoint.com  <br>\<tenant\>-myfiles.sharepoint.com <br>\*.sharepointonline.com  <br>cdn.sharepointonline.com  <br>static.sharepointonline.com  <br>spoprod-a.akamaihd.net  <br>publiccdn.sharepointonline.com  <br>privatecdn.sharepointonline.com | [Office 365 の URL および IP アドレスの範囲](/microsoft-365/enterprise/urls-and-ip-address-ranges)
-OneDrive for Business | admin.onedrive.com  <br>officeclient.microsoft.com <br>odc.officeapps.live.com  <br>skydrive.wns.windows.com <br>g.live.com <br>oneclient.sfx.ms <br>\*.log.optimizely.com  <br>click.email.microsoftonline.com  <br>ssw.live.com  <br>storage.live.com |  [Office 365 の URL および IP アドレスの範囲](/microsoft-365/enterprise/urls-and-ip-address-ranges)
-Microsoft Teams | \*.teams.skype.com  <br>\*.teams.microsoft.com  <br>teams.microsoft.com <br>\*.asm.skype.com <br>\ *.cc.skype.com  <br>\*.conv.skype.com  <br>\*.dc.trouter.io  <br>\*.msg.skype.com  <br>prod.registrar.skype.com  <br>prod.tpc.skype.com <br>\*.broker.skype.com <br>\*.config.skype.com  <br>\*.pipe.skype.com  <br>\*.pipe.aria.microsoft.com  <br>config.edge.skype.com  <br>pipe.skype.com  <br>s-0001.s-msedge.net  <br>s-0004.s-msedge.net  <br>scsinstrument-ss-us.trafficmanager.net  <br>scsquery-ss- <br>us.trafficmanager.net  <br>scsquery-ss-eu.trafficmanager.net  <br>scsquery-ss-asia.trafficmanager.net <br>\*.msedge.net <br>compass-ssl.microsoft.com  <br>feedback.skype.com <br>\*.secure.skypeassets.com  <br>mlccdnprod.azureedge.net  <br>videoplayercdn.osi.office.net <br>\*.mstea.ms | [Office 365 の URL および IP アドレスの範囲](/microsoft-365/enterprise/urls-and-ip-address-ranges)
+SharePoint Online  | \*.sharepoint.com <br>\ *.svc.ms  <br>\<tenant\>.sharepoint.com  <br>\<tenant\>-my.sharepoint.com  <br>\<tenant\>-files.sharepoint.com  <br>\<tenant\>-myfiles.sharepoint.com <br>\*.sharepointonline.com  <br>cdn.sharepointonline.com  <br>static.sharepointonline.com  <br>spoprod-a.akamaihd.net  <br>publiccdn.sharepointonline.com  <br>privatecdn.sharepointonline.com | [Office 365 URL および IP アドレス範囲](/microsoft-365/enterprise/urls-and-ip-address-ranges)
+OneDrive for Business | admin.onedrive.com  <br>officeclient.microsoft.com <br>odc.officeapps.live.com  <br>skydrive.wns.windows.com <br>g.live.com <br>oneclient.sfx.ms <br>\*.log.optimizely.com  <br>click.email.microsoftonline.com  <br>ssw.live.com  <br>storage.live.com |  [Office 365 URL および IP アドレス範囲](/microsoft-365/enterprise/urls-and-ip-address-ranges)
+Microsoft Teams | \*.teams.skype.com  <br>\*.teams.microsoft.com  <br>teams.microsoft.com <br>\*.asm.skype.com <br>\ *.cc.skype.com  <br>\*.conv.skype.com  <br>\*.dc.trouter.io  <br>\*.msg.skype.com  <br>prod.registrar.skype.com  <br>prod.tpc.skype.com <br>\*.broker.skype.com <br>\*.config.skype.com  <br>\*.pipe.skype.com  <br>\*.pipe.aria.microsoft.com  <br>config.edge.skype.com  <br>pipe.skype.com  <br>s-0001.s-msedge.net  <br>s-0004.s-msedge.net  <br>scsinstrument-ss-us.trafficmanager.net  <br>scsquery-ss- <br>us.trafficmanager.net  <br>scsquery-ss-eu.trafficmanager.net  <br>scsquery-ss-asia.trafficmanager.net <br>\*.msedge.net <br>compass-ssl.microsoft.com  <br>feedback.skype.com <br>\*.secure.skypeassets.com  <br>mlccdnprod.azureedge.net  <br>videoplayercdn.osi.office.net <br>\*.mstea.ms | [Office 365 URL および IP アドレス範囲](/microsoft-365/enterprise/urls-and-ip-address-ranges)
 Power BI | maxcdn.bootstrapcdn.com <br>ajax.aspnetcdn.com <br>netdna.bootstrapcdn.com <br>cdn.optimizely.com <br>google-analytics.com <br>\*.mktoresp.com <br>\*.aadcdn.microsoftonline-p.com <br>\*.msecnd.com <br>\*.localytics.com <br>ajax.aspnetcdn.com <br>\*.localytics.com <br>\*.virtualearth.net <br>platform.bing.com <br>powerbi.microsoft.com <br>c.microsoft.com <br>app.powerbi.com <br>\*.powerbi.com <br>dc.services.visualstudio.com <br>support.powerbi.com <br>powerbi.uservoice.com <br>go.microsoft.com <br>c1.microsoft.com <br>\*.azureedge.net |[Power BI &エクスプレス ルート](/power-bi/service-admin-power-bi-expressroute) 
-OneNote | apis.live.net <br>www.onedrive.com <br>login.microsoft.com  <br>www.onenote.com <br>\*.onenote.com <br>\*.msecnd.net <br>\*.microsoft.com <br>\*.office.net <br>cdn.onenote.net <br>site-cdn.onenote.net <br>cdn.optimizely.com <br>Ajax.aspnetcdn.com <br>officeapps.live.com <br>\\*.onenote.com <br>\*cdn.onenote.net <br>contentstorage.osi.office.net <br>\*onenote.officeapps.live.com <br>\*.microsoft.com | [Office 365 の URL および IP アドレスの範囲](/microsoft-365/enterprise/urls-and-ip-address-ranges)
+OneNote | apis.live.net <br>www.onedrive.com <br>login.microsoft.com  <br>www.onenote.com <br>\*.onenote.com <br>\*.msecnd.net <br>\*.microsoft.com <br>\*.office.net <br>cdn.onenote.net <br>site-cdn.onenote.net <br>cdn.optimizely.com <br>Ajax.aspnetcdn.com <br>officeapps.live.com <br>\\*.onenote.com <br>\*cdn.onenote.net <br>contentstorage.osi.office.net <br>\*onenote.officeapps.live.com <br>\*.microsoft.com | [Office 365 URL および IP アドレス範囲](/microsoft-365/enterprise/urls-and-ip-address-ranges)
 
-## <a name="steps-to-get-ready-for-microsoft-managed-desktop"></a>インストールの準備を行うMicrosoft マネージド デスクトップ
+## <a name="steps-to-get-ready-for-microsoft-managed-desktop"></a>Microsoft Managed Desktop の準備手順
 
 1. [Microsoft マネージド デスクトップの前提条件](prerequisites.md)を確認します。
 2. [準備状況の評価ツール](readiness-assessment-tool.md)を実行します。

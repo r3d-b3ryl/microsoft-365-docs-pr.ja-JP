@@ -18,12 +18,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 0c2d4fad95371f2529fb2c8ec3e430995d1c6627
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a93fb821c69f390bbc6e19034e1dc025b06cd623
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205576"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60665753"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>フォルダーへのアクセス制御で重要なフォルダーを保護する
 
@@ -55,7 +55,7 @@ ms.locfileid: "60205576"
 
 アプリは、その普及率と評判に基づいてリストに追加されます。 組織全体で非常に普及しているアプリで、悪意のあると見なされる動作を一度も表示したことがないアプリは、信頼できると見なされます。 これらのアプリは自動的にリストに追加されます。
 
-アプリは、Configuration Manager または Intune を使用して、信頼できるリストに手動で追加することもできます。 アプリのファイル インジケーター [の追加](respond-file-alerts.md#add-indicator-to-block-or-allow-a-file) などの追加アクションは、セキュリティ センター コンソールから実行できます。
+アプリは、Configuration Manager または Intune を使用して、信頼できるリストに手動で追加することもできます。 追加のアクションは、セキュリティ センター コンソールから実行できます。 
 
 ## <a name="why-controlled-folder-access-is-important"></a>フォルダー アクセスの制御が重要な理由
 

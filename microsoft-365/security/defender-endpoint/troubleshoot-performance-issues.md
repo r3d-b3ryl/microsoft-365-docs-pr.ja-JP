@@ -17,12 +17,12 @@ audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 6bfd4f42a6fcc43d7eec6c378cb1cdc25b186991
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b36d4d46e6a9ab8b705626ab186e06e577f2c46e
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196887"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60665541"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>リアルタイム保護に関連するパフォーマンスの問題のトラブルシューティング
 
@@ -51,7 +51,7 @@ Microsoft Defender for Endpoint のリアルタイム保護サービスに関連
 
 システムのパフォーマンスに影響を与えるソフトウェアを簡単に特定できる場合は、ソフトウェア ベンダーのナレッジ ベースまたはサポート センターにアクセスします。 ウイルス対策の除外に関する推奨事項がある場合は検索します。 ベンダーの Web サイトにサポート チケットが存在しない場合は、サポート チケットを開いて発行を求めできます。
 
-ソフトウェア ベンダーは、「業界とのパートナー」のさまざまなガイドラインに従って誤検知を最小限に [することをお勧めします](https://www.microsoft.com/security/blog/2018/08/16/partnering-with-the-industry-to-minimize-false-positives/)。 ベンダーは、Microsoft Defender セキュリティ インテリジェンス ポータル [(MDSI) を使用してソフトウェアを提出できます](https://www.microsoft.com/wdsi/filesubmission?persona=SoftwareDeveloper)。
+ソフトウェア ベンダーは、「業界とのパートナー」のさまざまなガイドラインに従って誤検知を最小限に [することをお勧めします](https://www.microsoft.com/security/blog/2018/08/16/partnering-with-the-industry-to-minimize-false-positives/)。 ベンダーは、ポータルからソフトウェア[をMicrosoft セキュリティ インテリジェンスできます](https://www.microsoft.com/wdsi/filesubmission?persona=SoftwareDeveloper)。
 
 ## <a name="analyze-the-microsoft-protection-log"></a>Microsoft Protection Log の分析
 
@@ -167,7 +167,7 @@ WPR ユーザー インターフェイスを使用するには、「WPR UI を�
 ### <a name="capture-performance-logs-using-the-wpr-ui"></a>WPR UI を使用してパフォーマンス ログをキャプチャする
 
 > [!TIP]
-> 問題が発生している複数のデバイスがある場合は、RAM の量が最も多いデバイスを使用します。
+> 複数のデバイスでこの問題が発生している場合は、RAM が最も多いデバイスを使用します。
 
 1. WPR をダウンロードしてインストールします。
 

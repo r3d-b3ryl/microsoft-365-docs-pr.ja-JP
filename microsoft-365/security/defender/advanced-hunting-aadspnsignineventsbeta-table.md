@@ -1,7 +1,7 @@
 ---
 title: 高度なハンティング スキーマの AADSpnSignInEventsBeta テーブル
 description: 高度なハンティング スキーマの Azure Active Directory サービス プリンシパルおよびマネージ ID サインイン イベント テーブルに関連付けられている情報について説明します。
-keywords: 高度な検索、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、data type、description、AlertInfo、アラート、エンティティ、証拠、ファイル、IP アドレス、デバイス、コンピューター、ユーザー、アカウント、ID、AAD
+keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、data type、description、AlertInfo、アラート、エンティティ、証拠、ファイル、IP アドレス、デバイス、コンピューター、ユーザー、アカウント、ID、AAD
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -15,17 +15,15 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 82557f955626436236401f622de6f2dc19aba9c2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: acae853032be246184b4f74f83d308fbde1d43b5
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202669"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60667074"
 ---
 # <a name="aadspnsignineventsbeta"></a>AADSpnSignInEventsBeta
 
@@ -33,7 +31,7 @@ ms.locfileid: "60202669"
 - Microsoft 365 Defender
 
 > [!IMPORTANT]
-> このテーブルは現在ベータ版で、Azure Active Directory (AAD) サービス プリンシパルとマネージ ID サインイン イベントをハントするために、短期的に提供されています `AADSpnSignInEventsBeta` 。 最終的に、すべてのサインイン スキーマ情報をテーブルに移動 `IdentityLogonEvents` します。
+> このテーブルは現在ベータ版で、Azure Active Directory (AAD) サインイン イベントをハントするために、短期的に `AADSpnSignInEventsBeta` 提供されています。 このテーブルのアクティビティを収集Azure Active Directory Premium P2表示するには、ユーザーライセンスが必要です。 最終的に、すべてのサインイン スキーマ情報をテーブルに移動 `IdentityLogonEvents` します。
 
 高度 `AADSpnSignInEventsBeta` な検索スキーマの表には、サービス プリンシパルAzure Active Directoryマネージド ID サインインに関する情報が含まれている。さまざまな種類のサインインの詳細については、「Azure Active Directoryアクティビティ レポート - プレビュー」を[参照してください](/azure/active-directory/reports-monitoring/concept-all-sign-ins)。
 
@@ -51,7 +49,7 @@ ms.locfileid: "60202669"
 |`Application`|文字列|記録されたアクションを実行したアプリケーション|
 |`ApplicationId`|string|アプリケーションの一意の識別子|
 |`IsManagedIdentity`|ブール値|マネージ ID によってサインインが開始されたかどうかを示します。|
-|`ErrorCode`|整数|サインイン エラーが発生した場合のエラー コードを格納します。 特定のエラー コードの説明を見つけるには、 を参照してください <https://aka.ms/AADsigninsErrorCodes> 。|
+|`ErrorCode`|int|サインイン エラーが発生した場合のエラー コードを格納します。 特定のエラー コードの説明を見つけるには、 を参照してください <https://aka.ms/AADsigninsErrorCodes> 。|
 |`CorrelationId`|string|サインイン イベントの一意の識別子|
 |`ServicePrincipalName`|string|サインインを開始したサービス プリンシパルの名前|
 |`ServicePrincipalId`|string|サインインを開始したサービス プリンシパルの一意の識別子|

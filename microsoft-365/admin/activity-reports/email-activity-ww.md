@@ -19,16 +19,16 @@ search.appverid:
 - GEA150
 ms.assetid: 1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44
 description: '[レポート] ダッシュボードの [レポート] ダッシュボードを使用してMicrosoft 365アクティビティ レポートを取得する方法についてMicrosoft 365 管理センター。'
-ms.openlocfilehash: 4ea339f01d926c2f008dbeae572f64b143192ab1
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 82d9e7ecd6273f46e378953cf4b6fafffc7abd0f
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553306"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60653415"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---email-activity"></a>Microsoft 365管理センターのレポート - メール アクティビティ
 
-Microsoft 365 の [**レポート**] ダッシュボードには、組織内での製品全体に関するアクティビティが表示されます。 これにより、個別の製品レベルのレポートを詳細に確認して、各製品内のアクティビティについてより詳しく知ることができます。 [レポートの概要に関するトピック](activity-reports.md)を参照してください。
+Microsoft 365 の [レポート] ダッシュボードには、組織内での製品全体に関するアクティビティが表示されます。 これにより、個別の製品レベルのレポートを詳細に確認して、各製品内のアクティビティについてより詳しく知ることができます。 [レポートの概要に関するトピック](activity-reports.md)を参照してください。
   
 たとえば、[レポート] ページで組織内のメール トラフィックの概要ビューを表示し、そこから [メール アクティビティ] ウィジェットに移って組織内のメール アクティビティの傾向とユーザーごとの詳細を把握できます。
 

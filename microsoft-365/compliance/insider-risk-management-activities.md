@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 5f52b9391940204e53af03aaee3d5776da67b219
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 6d5974f1a6fca1a56438317b58d36193cb08a7fc
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60334544"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60662623"
 ---
 # <a name="investigate-insider-risk-management-activities"></a>インサイダーリスク管理活動の調査
 
@@ -206,4 +206,4 @@ ms.locfileid: "60334544"
 
 - **最初に最もリスクの高いアラートにアナリストと調査担当者の取り組みを重点的に取り組む**。 ポリシーによっては、アクティビティをキャプチャし、リスク軽減の取り組みへの影響の程度が異なるアラートを生成している可能性があります。 [重大度別にアラート](insider-risk-management-activities.md#filter-alerts-on-the-alert-dashboard) をフィルター処理し、重要度 *の高いアラートに優先順位を付* ける。
 - **アナリストおよび調査者としてユーザーを割り当てる**。 適切なユーザーを適切な役割に割り当てるのは、インサイダーリスクアラートレビュープロセスの重要な部分です。 Insider リスク管理アナリストおよび Insider Risk *Management Investigators* 役割グループに適切なユーザーを割り当て済 *みである* 必要があります。  
-- **自動インサイダー リスク機能を使用して、リスクの最も高いアクティビティを検出します**。 Insider リスク管理 [シーケンスの検出と](insider-risk-management-policies.md#sequence-detection-preview) 累積的なエクストレーション [検出](insider-risk-management-policies.md#cumulative-exfiltration-detection-preview) 機能を使用すると、組織内でリスクをすばやく見つけにくくすることができます。 リスク スコア ブースター [、ファイルの](insider-risk-management-settings.md#indicators)種類の[](insider-risk-management-settings.md#file-type-exclusions)除外、ドメイン、ポリシー[](insider-risk-management-settings.md#domains-preview)の最小インジケーターしきい値の設定を[微調整してください。](insider-risk-management-settings.md#indicator-level-settings-preview)
+- **自動インサイダー リスク機能を使用して、リスクの最も高いアクティビティを検出します**。 Insider リスク管理 [シーケンスの検出と](insider-risk-management-policies.md#sequence-detection-preview) 累積的なエクストレーション [検出](insider-risk-management-policies.md#cumulative-exfiltration-detection-preview) 機能を使用すると、組織内でリスクをすばやく見つけにくくすることができます。 リスク スコア ブースター [、ファイルの](insider-risk-management-settings.md#indicators)種類の[](insider-risk-management-settings.md#file-type-exclusions)除外、ドメイン、ポリシー[](insider-risk-management-settings.md#domains)の最小インジケーターしきい値の設定を[微調整してください。](insider-risk-management-settings.md#indicator-level-settings-preview)

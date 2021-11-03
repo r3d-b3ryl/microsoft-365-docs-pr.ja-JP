@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 3024c0861f0530c59fb5f620959a2b28f3078ea0
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 2bf453e8856f69e9ddb8c7c7a9264267ef77b4f0
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60334652"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60662542"
 ---
 # <a name="insider-risk-management-audit-log"></a>Insider リスク管理監査ログ
 
@@ -36,7 +36,7 @@ ms.locfileid: "60334652"
 - ユーザー
 - 通知テンプレート
 
-監査ログからデータを表示およびエクスポートするには、ユーザーを Insider リスク管理役割グループまたは *Insider* リスク管理 *監査* 人役割グループに割り当てる必要があります。 インサイダー リスク管理役割グループの詳細については、「インサイダー リスク管理の概要 [手順 1: アクセス許可の有効化」を参照してください](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management)。
+監査ログからデータを表示およびエクスポートするには、ユーザーを Insider リスク管理役割グループまたは *Insider* リスク管理 *監査* 人役割グループに割り当てる必要があります。 インサイダー リスク管理役割グループの詳細については、「インサイダー リスク管理の概要 [手順 1: アクセス許可の有効化」を参照してください](insider-risk-management-configure.md#step-1-required-enable-permissions-for-insider-risk-management)。
 
 > [!NOTE]
 > インサイダー リスク管理監査ログは、監査ログに関連付Microsoft 365、独立した監査システムであり、個別のアクティビティに関する情報を取得します。 監査Microsoft 365無効にしても、インサイダー リスク管理内でのアクティビティ監査には影響を与えかねない。
@@ -64,7 +64,7 @@ Insider Risk *Management* または Insider Risk *Management Auditors* 役割グ
 
 ファイルには、次のフィールドのアクティビティ情報が含まれています。
 
-- **次の操作で実行されるアクティビティ。** アイテム値を変更するユーザーのユーザー名。 ここに記載されているユーザーは、Insider Risk Management 、 [](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management)Insider Risk *Management* Admins 、 Insider Risk Management *Analysts*、 Insider Risk Management *Investigators* の 1 つ以上の役割インサイダー リスク管理役割グループに割り当てされました。  各役割グループには、インサイダー リスク機能を管理するための異なるアクセス許可レベルがあります。
+- **次の操作で実行されるアクティビティ。** アイテム値を変更するユーザーのユーザー名。 ここに記載されているユーザーは、Insider Risk Management 、 [](insider-risk-management-configure.md#step-1-required-enable-permissions-for-insider-risk-management)Insider Risk *Management* Admins 、 Insider Risk Management *Analysts*、 Insider Risk Management *Investigators* の 1 つ以上の役割インサイダー リスク管理役割グループに割り当てされました。  各役割グループには、インサイダー リスク機能を管理するための異なるアクセス許可レベルがあります。
 - **アクティビティ:** アイテムに対して行ったアクティビティ。 値は *表示、削除、追加*、編集済みポリシー、ケース、ユーザー、アラート *、および設定。*
 - **追加:** ユーザー、ファイルの種類、ドメインなど、アクティビティ中に追加されたオブジェクト。
 - **アラートボリューム**: Insider リスク管理設定で定義されたアラート ボリュームのレベル。

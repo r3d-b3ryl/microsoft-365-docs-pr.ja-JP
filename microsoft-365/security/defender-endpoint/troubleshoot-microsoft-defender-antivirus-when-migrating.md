@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 0f2923d03a101d6ec55bfa4090ce22e9d1353e6e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 11590c443c7d466f323075bd2228156492c82ab0
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174605"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60661532"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-while-migrating-from-a-third-party-solution"></a>サード パーティのソリューションからの移行中に Microsoft Defender ウイルスのトラブルシューティングを行う
 
@@ -102,7 +102,7 @@ DisableAntiSpyware|-
 GPO を獲得する|Win10-Workstations
 結果: 成功|
 **全般**|
-アクション|Update
+Action|Update
 **Properties**|
 Hive|HKEY_LOCAL_MACHINE
 キー パス|SOFTWARE\Policies\Microsoft\Windows Defender
@@ -129,7 +129,7 @@ Microsoft Defender ウイルス対策ウイルス対策が現在アクティブ�
 > [!WARNING]
 > HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Servicesの wdboot、wdfilter、wdnisdrv、wdnisdrv、および *windefend* の Windows Defender 開始値を編集する方法はサポートされていないため、システムのイメージを変更する必要があります。  
 
-パッシブ モードは、Microsoft Defender for Endpoint の使用を開始し、サードパーティのウイルス対策と一緒に使用する場合Microsoft Defender ウイルス対策。 パッシブ モードでは、Microsoft Defender はファイルをスキャンしてそれ自体を更新できますが、脅威を修復しません。 さらに、リアルタイム保護による動作[](configure-real-time-protection-microsoft-defender-antivirus.md)監視は、エンドポイント データ損失防止[(DLP)](/microsoft-365/security/defender-endpoint/information-protection-in-windows-overview)が展開されていない限り、パッシブ モードでは使用できません。
+パッシブ モードは、Microsoft Defender for Endpoint の使用を開始し、サードパーティのウイルス対策と一緒に使用する場合Microsoft Defender ウイルス対策。 パッシブ モードではMicrosoft Defender ウイルス対策をスキャンして更新できますが、脅威を修復しません。 さらに、リアルタイム保護による動作[](configure-real-time-protection-microsoft-defender-antivirus.md)監視は、エンドポイント データ損失防止[(DLP)](/microsoft-365/security/defender-endpoint/information-protection-in-windows-overview)が展開されていない限り、パッシブ モードでは使用できません。
 
 制限付き[定期的スキャンと](limited-periodic-scanning-microsoft-defender-antivirus.md)呼ばれる別の機能は、ユーザーが自動的にオフMicrosoft Defender ウイルス対策に設定されている場合に使用できます。 この機能により、Microsoft Defender ウイルス対策を使用して、サードパーティのウイルス対策と一緒に定期的にファイルをスキャンできます。
 

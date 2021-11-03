@@ -12,15 +12,16 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
+- m365solution-ransomware
 description: Microsoft 365管理者は、ランサムウェア攻撃から回復する方法を学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: da9b53aec47231446571a2ae5852bed842311079
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 86ca603b013f95d93ced70faa42f47f0f7b63e8c
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60552682"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60667818"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>ユーザーのランサムウェア攻撃から回復Microsoft 365
 
@@ -81,7 +82,7 @@ ms.locfileid: "60552682"
 
 環境からランサムウェア ペイロードを削除する前の手順を完了したら (ランサムウェアによるファイルの暗号化または削除を防ぐ)、Windows 11、Windows 10、Windows 8.1 のファイル履歴を使用し、Windows 7 の System Protection を使用してローカル ファイルとフォルダーの回復を試みることもできます。 [](https://support.microsoft.com/help/17128)
 
-**注**:
+**注意**:
 
 - また、一部のランサムウェアはバックアップ バージョンを暗号化または削除します。そのため、ファイルの履歴やシステム保護を使用してファイルを復元することはできません。 その場合は、次のセクションで説明するように、ランサムウェアやマルウェアの影響を受けOneDriveデバイスでバックアップを使用する必要があります。
 
@@ -149,8 +150,7 @@ Microsoft の主な情報:
 - [人が操作するランサムウェア](/security/compass/human-operated-ransomware)
 - [ランサムウェアや強要から迅速に保護する](/security/compass/protect-against-ransomware)
 - [2021 Microsoft Digital Defense Report](https://www.microsoft.com/security/business/microsoft-digital-defense-report) (10- 19 ページを参照ください)
-- [ランサムウェア: Microsoft 365 Defender](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview)ポータルの脅威分析レポート
-
+- [ランサムウェア: Microsoft 365 Defender ポータルの脅威分析ノードの蔓延する継続的な脅威](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview)に関するレポート (これらの「ライセンス要件」 を参照ください)
 
 Microsoft 365:
 
@@ -182,6 +182,14 @@ Microsoft Cloud App Security:
 Microsoft Security チームのブログ投稿:
 
 - [ランサムウェアを防止して回復するための 3 つの手順 (2021 年 9 月)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
+- [人が操作するランサムウェア対策ガイド: パート 1 (2021 年 9 月)](https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/)
+
+  Microsoft の検出および応答チーム (DART) がランサムウェア インシデント調査を実施する方法に関する重要な手順。
+
+- [人が操作するランサムウェア対策のガイド: パート 2 (2021 年 9 月)](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/)
+
+  推奨事項とベスト プラクティス。
+
 - [サイバーセキュリティ リスクを理解することで回復力を高める パート 4—現在の脅威をナビゲートする(2021 年 5 月)](https://www.microsoft.com/security/blog/2021/05/26/becoming-resilient-by-understanding-cybersecurity-risks-part-4-navigating-current-threats/)
 
   「**ランサムウェア**」セクションを参照 してください。

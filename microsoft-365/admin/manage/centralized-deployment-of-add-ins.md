@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: テナントとユーザーが要件を満たしていることを確認し、集中展開を使用してアドインを展開Officeします。
-ms.openlocfilehash: 9f428dc011d98d446f32f009345d5df30337c4f2
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 332a2b14bb74363091df8fc18423c347d1d8c6fb
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60552754"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60663030"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>組織でアドインの集中展開が機能するかどうかを判断する
 
@@ -47,7 +47,7 @@ ms.locfileid: "60552754"
 
 ## <a name="before-you-begin"></a>はじめに
 
-アドインの一元的な展開では、ユーザーが Microsoft 365 Enterprise SKU E3/E5/F3、Office 365 Enterprise SKU: E3/E5/F3、または Business SKU: Business Basic、Business Standard、Business プレミアム (組織 ID を使用して Office にサインイン)、Exchange Online およびアクティブな Exchange Online メールボックスを使用している必要があります。 サブスクリプション ディレクトリは、サブスクリプション ディレクトリ内に存在するか、またはサブスクリプション ディレクトリにAzure Active Directory。
+アドインの一元展開では、ユーザーが Microsoft 365 Business ライセンス (Business Basic、Business Standard、Business プレミアム)、Office 365 Enterprise ライセンス (E1/E3/E5/F3)、または Microsoft 365 Enterprise ライセンス (E3/E5/F3) (組織 ID を使用して Office にサインイン)を使用し、Exchange Online およびアクティブな Exchange Online メールボックスを持っている必要があります。 サブスクリプション ディレクトリは、サブスクリプション ディレクトリ内に存在するか、またはサブスクリプション ディレクトリにAzure Active Directory。
 次の手順に従って、OfficeとExchange要件を確認したり、集中展開の互換性チェックを[使用できます](#centralized-deployment-compatibility-checker)。
 
 一元展開は、次の機能をサポートしていません。
@@ -63,11 +63,11 @@ ms.locfileid: "60552754"
 ### <a name="office-requirements"></a>Office要件
 
 - Word、Excel、PowerPointアドインの場合、ユーザーは次のいずれかを使用している必要があります。
-  - Windows デバイスのバージョン 1704 以降の Microsoft 365 Enterprise SKU: E3/E5/F3 または Business SKU: Business Basic、Business Standard、Business プレミアム。
+  - Windows デバイスのバージョン 1704 以降の Microsoft 365 Business ライセンス (Business Basic、Business Standard、Business プレミアム)、Office 365 Enterprise ライセンス (E1/E3/E5/F3)、または Microsoft 365 Enterprise ライセンス (E3/E5/F3)。
   - Mac のバージョン 15.34 以降。
 
 - このOutlook、ユーザーは次のいずれかを使用している必要があります。
-  - バージョン 1701 以降の Microsoft 365 Enterprise SKU: E3/E5/F3 または Business SKU: Business Basic、Business Standard、Business プレミアム。
+  - Microsoft 365 Business ライセンス (Business Basic、Business Standard、Business プレミアム)、Office 365 Enterprise ライセンス (E1/E3/E5/F3)、または Microsoft 365 Enterprise ライセンス (E3/E5/F3) のバージョン 1701 以降。
   - バージョン 1808 以降のバージョンOffice Professional Plus 2019 2019 Office Standard。
   - バージョン 16.0.4494.1000 以降の Office Professional Plus 2016 (MSI) または Office Standard 2016 (MSI)\*
   - バージョン 15.0.4937.1000 以降の Office Professional Plus 2013 (MSI) または Office Standard (MSI)\*

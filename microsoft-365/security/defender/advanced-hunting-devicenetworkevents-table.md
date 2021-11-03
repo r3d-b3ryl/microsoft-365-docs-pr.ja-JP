@@ -15,17 +15,15 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 79f30168cf8b556adca57f2020e776f17bbd0866
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 874a8256506cc5d66b16c3c927faf7794f62ffff
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176789"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60664456"
 ---
 # <a name="devicenetworkevents"></a>DeviceNetworkEvents
 
@@ -52,10 +50,10 @@ ms.locfileid: "60176789"
 | `DeviceName` | string | コンピューターの完全修飾ドメイン名 (FQDN) |
 | `ActionType` | string | イベントをトリガーしたアクティビティの種類。 詳細については [、ポータル内スキーマリファレンス](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) を参照してください。 |
 | `RemoteIP` | 文字列 | に接続されていた IP アドレス |
-| `RemotePort` | 整数 | 接続されているリモート デバイスの TCP ポート |
+| `RemotePort` | int | 接続されているリモート デバイスの TCP ポート |
 | `RemoteUrl` | 文字列 | に接続されていた URL または完全修飾ドメイン名 (FQDN) |
 | `LocalIP` | 文字列 | 通信中に使用されるローカル コンピューターに割り当てられた IP アドレス |
-| `LocalPort` | 整数 | 通信中に使用されるローカル コンピューター上の TCP ポート |
+| `LocalPort` | int | 通信中に使用されるローカル コンピューター上の TCP ポート |
 | `Protocol` | string | 通信中に使用されるプロトコル |
 | `LocalIPType` | string | IP アドレスの種類 (パブリック、プライベート、予約済み、ループバック、Teredo、FourToSixMapping、ブロードキャストなど) |
 | `RemoteIPType` | string | IP アドレスの種類 (パブリック、プライベート、予約済み、ループバック、Teredo、FourToSixMapping、ブロードキャストなど) |
@@ -70,12 +68,12 @@ ms.locfileid: "60176789"
 | `InitiatingProcessVersionInfoInternalFileName` | string | イベントを担当するプロセスのバージョン情報 (イメージ ファイル) からの内部ファイル名 |
 | `InitiatingProcessVersionInfoOriginalFileName` | string | イベントを担当するプロセスのバージョン情報 (イメージ ファイル) からの元のファイル名 |
 | `InitiatingProcessVersionInfoFileDescription` | string | イベントを担当するプロセス (イメージ ファイル) のバージョン情報の説明 |
-| `InitiatingProcessId` | 整数 | イベントを開始したプロセスのプロセス ID (PID) |
+| `InitiatingProcessId` | int | イベントを開始したプロセスのプロセス ID (PID) |
 | `InitiatingProcessCommandLine` | string | イベントを開始したプロセスの実行に使用されるコマンド ライン |
 | `InitiatingProcessCreationTime` | 日付型 | イベントを開始したプロセスが開始された日時 |
 | `InitiatingProcessFolderPath` | string | イベントを開始したプロセス (イメージ ファイル) を含むフォルダー |
 | `InitiatingProcessParentFileName` | string | イベントを担当するプロセスを生成した親プロセスの名前 |
-| `InitiatingProcessParentId` | 整数 | イベントを担当するプロセスを生成した親プロセスのプロセス ID (PID) |
+| `InitiatingProcessParentId` | int | イベントを担当するプロセスを生成した親プロセスのプロセス ID (PID) |
 | `InitiatingProcessParentCreationTime` | 日付型 | イベントを担当するプロセスの親が開始された日時 |
 | `InitiatingProcessAccountDomain` | string | イベントを担当するプロセスを実行したアカウントのドメイン |
 | `InitiatingProcessAccountName` | string | イベントを担当するプロセスを実行したアカウントのユーザー名 |

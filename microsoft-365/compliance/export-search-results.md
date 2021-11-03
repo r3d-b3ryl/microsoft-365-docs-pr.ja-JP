@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 検索結果をローカル コンピューターにエクスポートするには、Microsoft 365 コンプライアンス センター内のコンテンツ検索からエクスポートします。 電子メールの結果は PST ファイルとしてエクスポートされます。 サイトおよびSharePointサイトOneDrive for Businessコンテンツは、ネイティブ ドキュメントとしてOfficeされます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f4a140b933aabbdcf06c9f3c9ab0cbf40d2b05e7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 22f66333a5fa2c5b570b564276c626fa0b41f83d
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60170682"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60662696"
 ---
 # <a name="export-content-search-results"></a>コンテンツ検索結果のエクスポート
 
@@ -138,6 +138,9 @@ ms.locfileid: "60170682"
 ## <a name="step-2-download-the-search-results"></a>手順 2:検索結果をダウンロードする
 
 次の手順では、検索結果をローカル の場所Azure Storageローカル コンピューターにダウンロードします。
+
+> [!NOTE]
+> エクスポートされた検索結果は、手順 1 でエクスポート ジョブを作成した後、14 日以内にダウンロードする必要があります。
   
 1. [コンテンツ **の検索]** ページで、[Microsoft 365 コンプライアンス センター]**タブを選択** します。
   
@@ -172,7 +175,7 @@ ms.locfileid: "60170682"
   
     **電子情報開示エクスポート ツール** には、ダウンロードする残りのアイテムの数とサイズの見積もりなど、エクスポート プロセスの状態に関する情報が表示されます。 エクスポート処理が完了したら、ダウンロードした場所のファイルにアクセスできます。
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 検索結果のエクスポートの詳細については、次の情報を参照してください。
   

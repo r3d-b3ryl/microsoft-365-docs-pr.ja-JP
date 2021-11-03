@@ -1,5 +1,5 @@
 ---
-title: 内部リスク管理ブラウザーのシグナル検出 (プレビュー) について説明し、構成する
+title: インサイダー リスク管理ブラウザーのシグナル検出の詳細と構成
 description: インサイダー リスク管理ブラウザーのシグナル検出について詳しくは、Microsoft 365
 keywords: Microsoft 365, インサイダー リスク管理, リスク管理, コンプライアンス
 ms.localizationpriority: medium
@@ -15,14 +15,14 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: a89393a2e420948a126ec5503a16ce981ed9652a
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 5cde3a6f03c1c876878fc5ddda5ac4a8bc698977
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60334504"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60662530"
 ---
-# <a name="learn-about-and-configure-insider-risk-management-browser-signal-detection-preview"></a>内部リスク管理ブラウザーのシグナル検出 (プレビュー) について説明し、構成する
+# <a name="learn-about-and-configure-insider-risk-management-browser-signal-detection"></a>インサイダー リスク管理ブラウザーのシグナル検出の詳細と構成
 
 Web ブラウザーは、多くの場合、組織内の機密性の高いファイルと機密性の高いファイルの両方にアクセスするために使用されます。 Insider リスク管理を使用すると、組織は、Microsoft Edge および[Google Chrome](https://www.google.com/chrome)ブラウザーで表示される実行可能でない[](https://www.microsoft.com/edge)すべてのファイルに対して、ブラウザーの外へ出るシグナルを検出して処理できます。 これらのシグナルを使用すると、アナリストや調査担当者は、これらのブラウザーを使用する場合、スコープ内のポリシー ユーザーが次のアクティビティを実行した場合に迅速に処理できます。
 

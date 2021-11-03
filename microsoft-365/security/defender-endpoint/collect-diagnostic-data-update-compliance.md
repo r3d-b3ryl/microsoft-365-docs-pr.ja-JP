@@ -1,6 +1,6 @@
 ---
-title: 更新コンプライアンスと更新プログラムの診断データをWindows Defender Microsoft Defender ウイルス対策
-description: ツールを使用してデータを収集し、更新プログラムのコンプライアンスに関する問題のトラブルシューティングを行う場合は、Microsoft Defender ウイルス対策を使用します。
+title: 更新コンプライアンスと更新プログラムの診断データをMicrosoft Defender ウイルス対策
+description: ツールを使用してデータを収集し、評価アドインで更新コンプライアンスMicrosoft Defender ウイルス対策トラブルシューティングします。
 keywords: トラブルシューティング、エラー、修正、更新コンプライアンス、oms、モニター、レポート、Microsoft Defender AV
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -17,12 +17,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 496087a2a66f37537c0638687b4e8503e63bf9f5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b8a0c196373cf0d6ef03b2eccb171d125917a993
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208555"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60665803"
 ---
 # <a name="collect-update-compliance-diagnostic-data-for-microsoft-defender-antivirus-assessment"></a>更新プログラムのコンプライアンス診断データを収集して、Microsoft Defender ウイルス対策する
 
@@ -71,4 +71,4 @@ Update Compliance でレポートまたは表示されていない少なくと�
 
 ## <a name="see-also"></a>関連項目
 
-- [レポートのWindows Defender Microsoft Defender ウイルス対策トラブルシューティング](troubleshoot-reporting.md)
+- [レポートのMicrosoft Defender ウイルス対策トラブルシューティング](troubleshoot-reporting.md)

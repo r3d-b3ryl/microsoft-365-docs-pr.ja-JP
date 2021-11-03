@@ -8,20 +8,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-smandalika
-author: v-smandalika
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7c61f0fa0ac3e8017a96b9d5ed57fe7ec970af8b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fa6206628d8652aef9c8b31dd2ee74d4b6023829
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60193987"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60659227"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>パフォーマンス アナライザー (Microsoft Defender ウイルス対策
 

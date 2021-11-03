@@ -18,12 +18,12 @@ description: メール内の悪意のあるファイルセーフ組織を保護�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2eefdbdfd9121bdc778425fe63ea35d3f97a4adc
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1cc31f00045173202d6404a81b64fdaab791e0c5
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196443"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60673760"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender セーフの添付ファイル ポリシーをセットアップOffice 365
 
@@ -38,7 +38,7 @@ ms.locfileid: "60196443"
 
 セーフ添付ファイルは[、Exchange Online Protection (EOP)](anti-malware-protection.md)でマルウェア対策保護によってスキャンされた後、受信者に配信する前に、仮想環境を使用して受信メール メッセージの添付ファイルを確認する Microsoft Defender for [Office 365](whats-new-in-defender-for-office-365.md)の機能です。 詳細については、「Microsoft [Defender セーフ添付ファイル」を参照Office 365。](safe-attachments.md)
 
-組み込みまたは既定の添付ファイル ポリシーセーフはありません。 電子メール セーフの添付ファイルスキャンを取得するには、この記事で説明するように 1 つ以上セーフ添付ファイル ポリシーを作成する必要があります。
+既定の セーフ 添付ファイル ポリシーは使用できませんが、組み込みの保護プリセット セキュリティ ポリシーは、すべての受信者 (カスタム セーフ 添付ファイル ポリシーで定義されていないユーザー) に セーフ 添付ファイル保護を提供します。 詳細については、「EOP でのセキュリティ ポリシーの事前設定」および[「Microsoft Defender for microsoft Defender for Office 365」 を参照してください](preset-security-policies.md)。 この記事の手順を使用して、特定のセーフ、またはドメインに適用される添付ファイル ポリシーを作成することもできます。
 
 セーフ 添付ファイル ポリシーは、Microsoft 365 Defender ポータルまたは PowerShell (Exchange Online PowerShell で、Exchange Online 内のメールボックスを持つ適格な Microsoft 365 組織に対して構成できます。スタンドアロンの EOP PowerShell は組織に対して構成できます。Exchange Onlineが、Defender を使用して、Office 365サブスクリプションを作成します)。
 
@@ -100,7 +100,7 @@ Microsoft 365 Defender ポータルでカスタム セーフ 添付ファイル 
 
    適正なボックスをクリックし、値の入力を開始し、結果で希望する値を選択します。 必要な回数だけこの処理を繰り返します。 既存の値を削除するには、削除をクリックします ![[削除] アイコン](../../media/m365-cc-sc-remove-selection-icon.png) 値の隣。
 
-   ユーザーやグループには、ほとんどの識別子 (名前、表示名、エイリアス、メールアドレス、アカウント名など) を使用できますが、対応する表示名が結果に表示されます。 ユーザーの場合、アスタリスク (\*) を単独で入力すると、使用可能なすべての値が表示されます。
+   ユーザーやグループには、ほとんどの識別子 (名前、表示名、エイリアス、メールアドレス、アカウント名など) を使用できますが、対応する表示名が結果に表示されます。ユーザーの場合、アスタリスク (\*) を単独で入力すると、使用可能なすべての値が表示されます。
 
    同じ条件に複数の値がある場合、OR ロジック (たとえば、_\<recipient1\>_ または _\<recipient2\>_) が適用されます。 別の条件では、AND ロジック (たとえば、_\<recipient1\>_ かつ _\<member of group 1\>_) を使用します。
 
@@ -184,7 +184,7 @@ Microsoft 365 Defender ポータルでカスタム セーフ 添付ファイル 
 
 **注**: このポータルMicrosoft 365 Defender、添付ファイル ポリシーの優先度を変更できるのは、セーフ後のみです。 PowerShell では、安全な添付ファイル ルールを作成するときに既定の優先度を上書きできます (既存のルールの優先度に影響を与える可能性があります)。
 
-ポリシーの優先度を変更するには、ポリシーのプロパティで **[優先度を上げる]** または **[優先度を下げる]** をクリックします (Microsoft 365 Defender ポータルの **[優先度]** の数値を直接変更することはできません)。 ポリシーの優先度を変更することは、複数のポリシーを所有している場合にのみ意味があります。
+ポリシーの優先度を変更するには、ポリシーのプロパティで [**優先度を上げる**] または [**優先度を下げる**] をクリックします (Microsoft 365 Defender ポータルの [**優先度**] の数値を直接変更することはできません)。ポリシーの優先度を変更することは、複数のポリシーを所有している場合にのみ意味があります。
 
 1. [ポリシー] Microsoft 365 Defenderで、[ポリシー]セクション&の [&脅威ポリシーと添付ファイルセーフメールを送信する] \>  \>  \> **に移動** します。
 

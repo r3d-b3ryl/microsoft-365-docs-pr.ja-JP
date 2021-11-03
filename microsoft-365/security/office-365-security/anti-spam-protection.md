@@ -21,12 +21,12 @@ ms.custom:
 description: 管理者は、スパム対策 (EOP) でスパムを防止するのに役立つスパム対策設定とフィルター Exchange Online Protectionできます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1d8a004e5eb909399f1340374b80495dcf0b6e9b
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 1bc5d81b1221b73bcb701345b8db2f160380ba37
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60552526"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60657115"
 ---
 # <a name="anti-spam-protection-in-eop"></a>EOP でのスパム対策保護
 
@@ -57,7 +57,7 @@ EOP のスパム対策設定は、次のテクノロジで構成されていま�
 
 - **接続フィルター**: IP 許可一覧、IP ブロック一覧、およびセーフ リスト *(Microsoft* が管理する信頼できる送信者の動的で編集できないリスト) を使用して、受信メール接続の初期の良いメール ソース サーバーと悪いメール ソース サーバーを識別します。 接続フィルター ポリシーでこれらの設定を構成します。 詳細については、「 [接続フィルターの構成」を参照してください](configure-the-connection-filter-policy.md)。
 
-- **スパム フィルター (** コンテンツ フィルター) : EOP は、スパム フィルターの評決スパム、高信頼スパム、**バルク** メール、フィッシング メール、高信頼フィッシング メールを使用してメッセージを分類します。 これらの評決に基づいて実行するアクションを構成し、配信ではなく検疫されたメッセージのエンド ユーザー通知オプションを構成し、検疫ポリシーを使用して検疫メッセージに対してユーザーが実行できる操作を構成できます。 [](quarantine-policies.md) 詳細については、「スパム対策ポリシーを[構成する」を参照Microsoft 365。](configure-your-spam-filter-policies.md)
+- **スパム フィルター (** コンテンツ フィルター) : EOP は、スパム フィルターの評決スパム、高信頼スパム、**バルク** メール、フィッシング メール、高信頼フィッシング メールを使用してメッセージを分類します。 これらの評決に基づいて実行するアクションを構成し、検疫されたメッセージに対してユーザーが実行できる操作と、検疫ポリシーを使用してユーザーが検疫通知を受け取るかどうかを [構成できます](quarantine-policies.md)。 詳細については、「スパム対策ポリシーを[構成する」を参照Microsoft 365。](configure-your-spam-filter-policies.md)
 
   > [!NOTE]
   > 既定では、スパムフィルターは、スパムとしてマークされたメッセージを受信者の迷惑メール フォルダーに送信するように構成されています。 ただし、EOP がオンプレミスの Exchange メールボックスを保護するハイブリッド環境では、メッセージに追加される EOP スパム ヘッダーを認識するために、オンプレミス Exchange 組織で 2 つのメール フロー ルール (トランスポート ルールとも呼ばれる) を構成する必要があります。 詳細については、「[迷惑メール フォルダーにスパムを配信するように EOP を構成する](/exchange/standalone-eop/configure-eop-spam-protection-hybrid)」を参照してください。

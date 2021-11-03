@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンス マネージャーで評価を構築するためのテンプレートを使用および管理する方法について説明します。 書式設定されたファイルを使用してテンプレートを作成Excelします。
-ms.openlocfilehash: 74b896f6c0fdd625cf50cc04a31fa79d48dc3a4e
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 99e243e86c66babd9a983ae6df891f4094cdbb83
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587683"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60673646"
 ---
 # <a name="learn-about-assessment-templates-in-compliance-manager"></a>コンプライアンス マネージャーの評価テンプレートの詳細
 
@@ -36,9 +36,9 @@ ms.locfileid: "60587683"
 
 テンプレートは、コンプライアンス マネージャーで評価を作成するためのコントロールのフレームワークです。 当社の包括的なテンプレートセットは、データの収集と使用を管理する国内、地域、および業界固有の要件を組織が遵守するのに役立ちます。
 
-テンプレートは、EU GDPR テンプレートや ISO/IEC 27701:2019 テンプレートなど、基になる認定または規制と同じ名前で参照されます。 コンプライアンス管理はさまざまな種類の製品を評価するために使用できます。各テンプレートには、Microsoft 365 に適用されるバージョンと、選択した製品に合わせてカスタマイズできるユニバーサル バージョンの 2 つのバージョンがあります。
+テンプレートは、EU GDPR テンプレートや ISO/IEC 27701:2019 テンプレートなど、基になる認定または規制と同じ名前で参照されます。 コンプライアンス管理は、さまざまな種類の製品を評価するために使用できます。各テンプレートには、Microsoft 365 などの定義済み製品に適用されるバージョンと、選択した製品に合わせてカスタマイズできるユニバーサル バージョンの 2 つのバージョンがあります。
 
-米国政府Community (GCC) 中程度、GCC 高、および国防総省 (DoD) のお客様は現在、Microsoft 365 テンプレート バージョンを使用できますが、ユニバーサルではありません。
+米国政府機関 (Community) (GCC) 中程度、GCC高、および国防総省 (DoD) のお客様は現在、ユニバーサル テンプレートを使用できないことに注意してください。
 
 ## <a name="template-availability-and-licensing"></a>テンプレートの可用性とライセンス
 
@@ -74,9 +74,10 @@ GCC高いアカウントと DOD アカウントは、ボリューム ライセ�
 
 購入前にプレミアム テンプレートを試す場合は、ライセンスの試用版を入手することもできます。 試用版ライセンスは、90 日間、最大 25 のテンプレートに対して良好です。 試用版ライセンスを取得すると、テンプレートは 48 時間以内にテナントで利用できます。
 
-試用版を開始するには、組織の適切なリンクを選択します。
+組織にコンプライアンス マネージャーの商用ライセンスがある場合は、「Microsoft Compliance Manager プレミアム評価の無料試用版について」で試用版を開始する方法 [について説明します](compliance-easy-trials-compliance-manager-assessments.md)。
 
-- [商用](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/e320704d-b7c9-4012-b6a6-0a2679790360)
+組織がユーザーライセンスまたは DOD ライセンスGCC場合は、組織の適切な試用版リンクを選択します。
+
 - [GCCモデレート](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/87ed2908-0a8d-430a-9635-558ed42b581f)
 - [GCC High](https://portal.office365.us/SubscriptionDetails?OfferId=e14362d7-2c11-4a43-9c92-59f1b499b96a)
 - [DOD](https://portal.apps.mil/Commerce/Trial.aspx?OfferId=17e28290-7de6-41a9-af30-f6497396ab2e)
@@ -98,7 +99,7 @@ GCC高いアカウントと DOD アカウントは、ボリューム ライセ�
 
 カウンターに 5/2 が表示されている場合は、組織が制限を超え、使用しているプレミアム テンプレートの 3 つを購入する必要があります。
 
-Microsoft 365ユニバーサル バージョンのテンプレートには共同ライセンスが適用され、複数の製品で同じ基になる証明書を使用できます。 同じテンプレートのどちらかまたは両方のバージョンを使用すると、アクティブ化されたテンプレートは 1 つのみカウントされます。
+定義済みの製品のテンプレート (Microsoft 365など) には、同じテンプレートのユニバーサル バージョンとの共同ライセンスがあります。 これにより、複数の製品で同じ基になる認定を使用できます。 同じテンプレートのどちらかまたは両方のバージョンを使用すると、アクティブ化されたテンプレートは 1 つのみカウントされます。
 
 詳細については、「コンプライアンス マネージャーの [ライセンス ガイダンス」を参照してください](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)。
 
@@ -118,7 +119,7 @@ Microsoft 365ユニバーサル バージョンのテンプレートには共同
 
 ## <a name="extend-an-assessment-template"></a>評価テンプレートを拡張する
 
-コンプライアンス マネージャーには、独自のコントロールと改善アクションを既存のテンプレートに追加するオプションがあります。 このプロセスは、テンプレートの拡張と呼ばれる。 テンプレートを拡張するには、評価テンプレートまたはユニバーサル評価テンプレートを拡張するかどうかに応じて、テンプレート データに追加する特別な手順Microsoft 365使用します。 詳細については、「評価テンプレートを [拡張する」を参照してください](compliance-manager-templates-extend.md)。
+コンプライアンス マネージャーには、独自のコントロールと改善アクションを既存のテンプレートに追加するオプションがあります。 このプロセスは、テンプレートの拡張と呼ばれる。 テンプレートを拡張するには、Microsoft の評価テンプレートまたはユニバーサル評価テンプレートを拡張するかどうかに応じて、テンプレート データに追加する特別な手順を使用します。 詳細については、「評価テンプレートを [拡張する」を参照してください](compliance-manager-templates-extend.md)。
 
 ## <a name="format-assessment-template-data-in-excel"></a>評価テンプレート のデータの書式を設定Excel
 

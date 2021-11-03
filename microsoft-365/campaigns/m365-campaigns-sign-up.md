@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: キャンペーンのユーザー向けMicrosoft 365手順を実行します。 メール、データ、コミュニケーションに対するサイバーセキュリティの脅威からキャンペーンを保護します。
-ms.openlocfilehash: 7ef49e686a152cd4bc56d39e7edff107dfbb2ea7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1af25933491d4c05d11707f290c584145019602b
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60156884"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60662752"
 ---
 # <a name="sign-up-for-microsoft-365-for-campaigns"></a>キャンペーンにMicrosoft 365サインアップする 
 
@@ -54,6 +54,10 @@ ms.locfileid: "60156884"
     1. [ **ユーザー名**] に、メール アドレスに使用する名前またはエイリアスを入力します。 たとえば、Alice または Rob と呼ばれる場合があります。 大規模なキャンペーンでは、AliceC または AliceChavez の方が理にかなっている可能性があります。
     2. [ **会社]** に、作業するキャンペーンの名前を入力します。 たとえば、ContosoCampaign。 既にドメインを所有している場合は、ここでその名前を使用します。 
     3. [**ドメインの選択] で****、[.onmicrosoft.com]** を選択します。 後でドメインを設定したり、既に所有Microsoft 365に接続したりするのに役立ちます。
+
+       > [!IMPORTANT]
+       > .onmicrosoft.com ドメインに入力した名前は、すべての SharePoint および OneDrive URL に使用され、変更できない場合があります。 ブランド化の観点から名前を検討し、正しくスペルを付けされていることを確認します。
+
     4. パスワードを作成し、[自分のアカウントを **作成する] を選択します**。
     > [!NOTE]
     > キャンペーンまたはパーティーがドメインを所有しない場合に、必要なドメインが決まっている場合は、そのドメインを選択して購入できます。

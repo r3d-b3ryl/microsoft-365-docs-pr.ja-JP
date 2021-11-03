@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d89d98e6e972707266f3b3ed95db3b78b8a5d161
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2e133c9f924b614c8cc34c9a943895736526e6e7
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159440"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60668026"
 ---
 # <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上のエンドポイント用 Microsoft Defender 用の異なるモバイル デバイス管理 (MDM) システムを使用した展開
 
@@ -55,10 +55,10 @@ Microsoft Defender for Endpoint on macOS は、ベンダー固有の機能に依
 
 最新の MDM ソリューションの多くは、これらの機能が含まれますが、呼び出し方が異なる場合があります。
 
-ただし、前のリストから最後の要件を満たさずに Defender を展開できます。
+ただし、前のリストから最後の要件を満たさずに Defender for Endpoint を展開できます。
 
-- 一元的な方法で状態を収集できない
-- Defender をアンインストールする場合は、管理者としてクライアント デバイスにローカルでログオンする必要があります。
+- 一元的な方法で状態を収集できない。
+- Defender for Endpoint をアンインストールする場合は、管理者としてクライアント デバイスにローカルでログオンする必要があります。
 
 ## <a name="deployment"></a>展開
 
@@ -81,7 +81,7 @@ macOS 上の Microsoft Defender for Endpoint は macOS の一部では設定、M
 または、最初にプロパティ リストを別の形式に変換する必要があります。
 
 通常、カスタム プロファイルには ID、名前、またはドメイン属性があります。 この値には、正確に "com.microsoft.wdav.atp" を使用する必要があります。
-MDM はこれを使用して、設定ファイルをクライアント デバイスの **/Library/Managed Preferences/com.microsoft.wdav.atp.plist** に展開し、Defender はこのファイルを使用してオンボーディング情報を読み込む。
+MDM はこれを使用して、設定ファイルをクライアント デバイスの **/Library/Managed Preferences/com.microsoft.wdav.atp.plist** に展開し、Defender for Endpoint はオンボーディング情報の読み込みにこのファイルを使用します。
 
 ### <a name="kernel-extension-policy"></a>カーネル拡張機能ポリシー
 

@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1741eb7226f8ae601b45b73eef5f55ffe9f22ca5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d71bbda27998ed99f6bffbd91ca3b76d9579be78
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60204109"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60662326"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>MacOS での Microsoft Defender for Endpoint の Intune ベースの展開
 
@@ -104,7 +104,7 @@ ms.locfileid: "60204109"
     > [!div class="mx-imgBorder"]
     > ![カスタム構成プロファイルの作成。](images/mdatp-6-systemconfigurationprofiles-1.png)
 
-1. プロファイルの名前を選択します。たとえば、「Defender または Endpoint onboarding for macOS」。 [**次へ**] をクリックします。
+1. プロファイルの名前を選択します。たとえば、「Defender または Endpoint onboarding for macOS」。 **[次へ]** をクリックします。
 
     > [!div class="mx-imgBorder"]
     > ![カスタム構成プロファイル - 名前。](images/mdatp-6-systemconfigurationprofiles-2.png)
@@ -115,7 +115,7 @@ ms.locfileid: "60204109"
     > [!div class="mx-imgBorder"]
     > ![カスタム構成プロファイルのファイルから構成をインポートします。](images/mdatp-6-systemconfigurationprofiles.png)
 
-1. [**次へ**] をクリックします。
+1. **[次へ]** をクリックします。
 1. [割り当て] タブでデバイス **を割り当** てる。[次へ] を **クリックします**。
 
     > [!div class="mx-imgBorder"]
@@ -132,7 +132,7 @@ ms.locfileid: "60204109"
 このプロファイルは、macOS 10.15 (Catalina) 以降に必要です。 古い macOS では無視されます。
 
 1. [構成 **プロファイル] で [****プロファイルの作成] を選択します**。
-1. [**プラットフォーム** = **macOS]**[**プロファイルの種類** = **テンプレート] を選択します**。 **テンプレート名** =**拡張機能**. **[作成]** をクリックします。
+1. [**プラットフォーム** = **macOS]**[**プロファイルの種類** = **テンプレート] を選択します**。 **テンプレート名** =**拡張機能**. [**作成**] をクリックします。
 1. [基本 **] タブ** で、この新しいプロファイルに名前を付きます。
 1. [構成 **設定] タブで** 、[システム拡張機能] **を展開し、[** 許可されたシステム拡張機能] セクションに次 **のエントリを追加** します。
 
@@ -155,7 +155,7 @@ ms.locfileid: "60204109"
 > Apple Silicon (M1) デバイスは KEXT をサポートしていない。 KEXT ポリシーからなる構成プロファイルのインストールは、これらのデバイスで失敗します。
 
 1. [構成 **プロファイル] で [****プロファイルの作成] を選択します**。
-1. [**プラットフォーム** = **macOS]**[**プロファイルの種類** = **テンプレート] を選択します**。 **テンプレート名** =**拡張機能**. **[作成]** をクリックします。
+1. [**プラットフォーム** = **macOS]**[**プロファイルの種類** = **テンプレート] を選択します**。 **テンプレート名** =**拡張機能**. [**作成**] をクリックします。
 1. [基本 **] タブ** で、この新しいプロファイルに名前を付きます。
 1. [構成設定 **] タブで** 、[カーネル拡張機能 **] を展開します**。
 1. チーム **識別子を** **UBF8T346G9** に設定し、[次へ] を **クリックします**。
@@ -231,7 +231,7 @@ Intune の変更が登録済みデバイスに反映された後は、[デバイ
     > [!div class="mx-imgBorder"]
     > ![アプリケーションの一覧。](images/mdatp-12-applications.png)
 
-(詳細については、Intune の Defender 展開用ページ [をご覧ください](/mem/intune/apps/apps-advanced-threat-protection-macos)。)
+詳細については[、「Add Microsoft Defender for Endpoint to macOS](/mem/intune/apps/apps-advanced-threat-protection-macos)devices using Microsoft Intune .)
 
    > [!CAUTION]
    > 上記で説明したように、必要なすべての構成プロファイルを作成し、すべてのコンピューターにプッシュする必要があります。

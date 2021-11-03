@@ -10,21 +10,21 @@ ms.sitesec: library
 ms.localizationpriority: medium
 audience: ITPro
 author: lovina-saldanha
-ms.author: v-lsaldanha
+ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.custom: asr
 ms.topic: article
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: ab8ae8052d2ca68d2fe82dd6ace073a622f8c268
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c54e0fd187adabbba76fd16d4d8f873bc83dc249
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212391"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60667972"
 ---
-# <a name="report-and-troubleshoot-microsoft-defender-for-atp-asr-rules"></a>ATP ASR ルールの Microsoft Defender のレポートとトラブルシューティング
+# <a name="report-and-troubleshoot-microsoft-defender-for-endpoint-asr-rules"></a>エンドポイント ASR ルールの Microsoft Defender のレポートとトラブルシューティング
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -108,7 +108,7 @@ ASR ルール イベントは、ログ内でWindows Defenderできます。
 
 :::image type="content" source="images/eventviewerscrnew.png" lightbox="images/eventviewerscrnew.png" alt-text="イベント ビューアー scr。":::
 
-## <a name="microsoft-defender-malware-protection-logs"></a>Microsoft Defender マルウェア保護ログ
+## <a name="microsoft-defender-antimalware-protection-logs"></a>Microsoft Defender マルウェア対策保護ログ
 
 また、必要に応じてタスクを管理および構成および自動化するために使用できる、Microsoft Defender ウイルス対策 専用のコマンド ライン ツールを使用してルール イベント `*mpcmdrun.exe*` を表示することもできます。
 

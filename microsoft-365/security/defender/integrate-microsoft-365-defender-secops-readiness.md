@@ -22,31 +22,31 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f67d276465bc23306446bc80f1c9e77eaa098b4b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 06b181f3719d9b674098bf5da36938ea181a0dc1
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206579"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60658064"
 ---
-# <a name="step-2-perform-a-soc-integration-readiness-assessment-using-the-zero-trust-framework"></a>手順 2。 ゼロトラスト フレームワークを使用して SOC 統合準備評価を実行する
+# <a name="step-2-perform-a-soc-integration-readiness-assessment-using-the-zero-trust-framework"></a>手順 2. ゼロトラスト フレームワークを使用して SOC 統合準備評価を実行する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **適用対象:**
 - Microsoft 365 Defender
 
-セキュリティ 運用センター (SOC) チームの主要な機能が定義された後、組織の次のステップは、ゼロトラストアプローチを通じて Microsoft Defender の導入に備 [える方法です](/security/zero-trust/)。 導入は、お客様の環境に対する Defender の機能を評価しながらMicrosoft 365 Defender業界をリードする最新のプラクティスを使用してアプリケーションを展開するために必要な要件を判断するのに役立ちます。 
+セキュリティ 運用センター (SOC) チームの主要な機能が定義された後、組織の次のステップは、ゼロトラストアプローチを通じて Microsoft 365 Defender の導入に備[える方法です](/security/zero-trust/)。 導入は、最新の業界をリードするプラクティスを使用して Microsoft 365 Defender を展開するために必要な要件を特定し、Microsoft 365 Defenderの機能を環境に対して評価するのに役立ちます。
 
-このアプローチは、強力な保護基盤に基づいており、ID、エンドポイント (デバイス)、データ、アプリ、インフラストラクチャ、ネットワークなどの主要な分野が含まれます。 準備状況評価チームは、サービスを有効にするための基礎要件がまだ満たされていないMicrosoft 365 Defender修復が必要な領域を決定します。 
+このアプローチは、強力な保護基盤に基づいており、ID、エンドポイント (デバイス)、データ、アプリ、インフラストラクチャ、ネットワークなどの主要な分野が含まれます。 準備状況評価チームは、サービスを有効にするための基礎要件がまだ満たされていないMicrosoft 365 Defender修復が必要な領域を決定します。
 
 SOC が SOC のプロセスを完全に最適化するために修復する必要がある項目の一部を次に示します。
 
-- **ID:**     従来のオンプレミス Active Directory ドメイン サービス (AD DS) ドメイン、MFA プランなし、特権アカウントのインベントリなし、その他。
-- **エンドポイント (デバイス):**  従来のオペレーティング システム、限られたデバイス インベントリなど多数。
-- **データとアプリ:**    データ ガバナンスの標準が不足し、統合しないカスタム アプリのインベントリはありません。
-- **インフラストラクチャ:**   未許可の SaaS ライセンスの数が多く、コンテナー のセキュリティはありません。その他。
-- **ネットワーク:**   低帯域幅、フラット ネットワーク、ワイヤレス セキュリティの問題などによるパフォーマンスの問題。
+- **ID:** 従来のオンプレミス Active Directory ドメイン サービス (AD DS) ドメイン、MFA プランなし、特権アカウントのインベントリなし、その他。
+- **エンドポイント (デバイス):** 従来のオペレーティング システム、限られたデバイス インベントリなど多数。
+- **データとアプリ:**  データ ガバナンスの標準が不足し、統合しないカスタム アプリのインベントリはありません。
+- **インフラストラクチャ:** 未許可の SaaS ライセンスの数が多く、コンテナー のセキュリティはありません。その他。
+- **ネットワーク:** 低帯域幅、フラット ネットワーク、ワイヤレス セキュリティの問題などによるパフォーマンスの問題。
 
 組織は、構成要件の[ベースライン セットをMicrosoft 365 Defender](m365d-enable.md)に関する記事のオンに従う必要があります。 次の手順では、SOC チームが効果的に使用例を開発するために実行する必要がある修復アクティビティを決定します。 
 

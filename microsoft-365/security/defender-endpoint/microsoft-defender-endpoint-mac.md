@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3943c5c9e477dc114b74d7f3f9a76b5b00119dd6
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 2649cf86dbfab3d74b5b28ec78ae161a962a3cab
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587731"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60662288"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender for Endpoint on Mac
 
@@ -103,7 +103,7 @@ Microsoft Defender for Endpoint on Mac では、次のいずれかの Microsoft 
 
 ### <a name="configuring-exclusions"></a>除外の構成
 
-Microsoft Defender に除外を追加する場合は、ユーザーの一般的な除外の間違いを[念頭に置Microsoft Defender ウイルス対策](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus)
+除外を追加する場合は、一般的な除外[ミス](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus)を念頭に置Microsoft Defender ウイルス対策。
 
 ### <a name="network-connections"></a>ネットワーク接続
 

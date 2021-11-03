@@ -1,5 +1,5 @@
 ---
-title: FAQ のMicrosoft 365スケジューラ
+title: スケジューラー Microsoft 365 FAQ
 ms.author: v-aiyengar
 author: AshaIyengar21
 manager: serdars
@@ -7,15 +7,15 @@ audience: Admin
 ms.topic: article
 ms.service: scheduler
 ms.localizationpriority: medium
-description: FAQ のMicrosoft 365スケジューラ
-ms.openlocfilehash: da00bf841c41d1bda589142a680d948796db3b45
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: スケジューラー Microsoft 365 FAQ
+ms.openlocfilehash: 2392c48de3d80cf41d179eb053c46967626b5159
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60178541"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60673302"
 ---
-# <a name="scheduler-for-microsoft-365-faqs"></a>FAQ のMicrosoft 365スケジューラ
+# <a name="scheduler-for-microsoft-365-faq"></a>スケジューラー Microsoft 365 FAQ
 
 **質問:** Scheduler は、Cortana *Cortana、* 毎日のブリーフィンWindows、マイ メールの再生などの他の機能とどのように *統合しますか*。</br>
 Scheduler は、他の機能と独立したサービスCortanaです。 その他Cortana機能はテナント レベルで無効にできます。また、スケジューラは引き続き電子メール アドレスを使用 cortana@yourdomain.com できます。 現時点では、ユーザーは電子メールを介してスケジューラーとのみ対話できます。

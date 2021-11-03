@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 99b17e10cdf3396fc715d83d5ca6de51ae4cb9c9
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: 779b5f29c2bbac542ee1a8f079a2baab8537e689
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364172"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60665247"
 ---
 # <a name="plan-for-communication-compliance"></a>通信コンプライアンスの計画
 
@@ -108,7 +108,7 @@ Office 365 で監督ポリシーを使用している組織では、Microsoft 36
 
 ## <a name="plan-for-policies"></a>ポリシーの計画
 
-通信コンプライアンス ポリシーの作成は、攻撃的な[](communication-compliance-policies.md#policy-templates)言語、機密情報、および規制コンプライアンスに関する定義済みのテンプレートを使用して迅速かつ簡単に作成できます。 カスタム通信コンプライアンス ポリシーを使用すると、組織と要件に固有の問題を柔軟に検出および調査できます。
+不適切なコンテンツ、機密情報、規制遵守のための定義済みの[](communication-compliance-policies.md#policy-templates)テンプレートを使用すると、通信コンプライアンス ポリシーを迅速かつ簡単に作成できます。 カスタム通信コンプライアンス ポリシーを使用すると、組織と要件に固有の問題を柔軟に検出および調査できます。
 
 通信コンプライアンス ポリシーを計画する場合は、次の領域を検討してください。
 
@@ -118,6 +118,15 @@ Office 365 で監督ポリシーを使用している組織では、Microsoft 36
 - ポリシーは、カスタム通信コンプライアンス ポリシーで英語以外の言語の監視をサポートできます。 好きな[言語で](communication-compliance-policies.md#custom-keyword-dictionaries)不快な単語のカスタム キーワード 辞書を作成するか、またはトレーニング可能な分類子を[](classifier-get-started-with.md)使用して独自の機械学習モデルを構築Microsoft 365。
 - すべての組織に異なる通信基準とポリシーのニーズがあります。 通信コンプライアンス ポリシー条件を使用して特定のキーワードを [監視するか、](communication-compliance-policies.md#conditional-settings) カスタムの機密情報の種類を持つ特定の種類の [情報を監視します](create-a-custom-sensitive-information-type.md)。
 
+## <a name="creating-a-communication-compliance-policy-walkthrough"></a>通信コンプライアンス ポリシーのチュートリアルの作成
+
+新しい通信コンプライアンス ポリシーの設定とアラートの修復に関する詳細なチュートリアルを参照してください。 次の 15 分間のビデオを参照して、不適切なメッセージの検出、潜在的な違反の調査、コンプライアンスの問題の修復に関するコミュニケーション コンプライアンス ポリシーがどのように役立つのかのデモンストレーションをご覧ください。
+<br>
+<br>
+
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RWNchy]
+<br>
+
 ## <a name="ready-to-get-started"></a>始める準備はいいですか。
 
-Microsoft 365 組織の通信コンプライアンスを構成するには、「Microsoft 365 の通信コンプライアンスを構成する」を参照するか[、Contoso](communication-compliance-case-study.md)のケース スタディを参照し、Microsoft Teams、Exchange Online、および Yammer の通信で不快な言語を監視するように通信コンプライアンス ポリシーを迅速に構成した方法を確認してください。 [](communication-compliance-configure.md)
+Microsoft 365 組織の通信コンプライアンスを構成するには、「Microsoft 365 の通信コンプライアンスを構成する」を参照するか[、Contoso](communication-compliance-case-study.md)のケース スタディを参照し、Microsoft Teams、Exchange Online、および Yammer 通信で不適切なコンテンツを監視するように通信コンプライアンス ポリシーを迅速に構成した方法を確認してください。 [](communication-compliance-configure.md)

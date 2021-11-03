@@ -18,16 +18,24 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Azure Active Directory Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツのデータセンター地域Office 365サービスに移行する際の追加情報。'
-ms.openlocfilehash: 349df1366c76eb23c8aaaf0447ef90a031e6e52d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f8219bb578655ad504f7182933a21f66723b9208
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189059"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60700375"
 ---
 # <a name="additional-azure-active-directory-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Microsoft Cloud deutschland Azure Active Directory移行に関する追加情報
 
-Azure German クラウドから Azure パブリック クラウドへの移行を完了するには、OpenID Connect (OIDC) エンドポイントが商用クラウド エンドポイントの報告を開始するときに、アプリケーションの認証エンドポイント、Azure Active Directory (Azure AD) Graph、および MS Graph エンドポイントを商用クラウドのエンドポイントに更新することをお勧めします。 `https://login.microsoftonline.com/<TenantIdOrDomain>/.well-known/openid-configuration` 
+> [!WARNING]
+> **Azure Active Directory (Azure AD) Graph非推奨です**。 機能の損失を避けるため、Azure AD Graph API エンドポイントが要求への応答を停止する 2022 年 6 月 30 日より前に、Azure パブリック クラウドのアプリケーションを Microsoft Graph に移行します。
+>
+> Microsoft は、すべての機能とサポートが終了する 2022 年 6 月 30 日Azure AD Graphまで、テクニカル サポートを継続し、セキュリティ修正プログラムを適用します。 2022 年 6 月 30 日より前にアプリケーションを Microsoft Graph に移行できなかった場合は、その機能と安定性が危険にさらされます。
+> 
+>**今すぐ microsoft Azure AD Graphを使用するアプリを更新Graphします。**
+
+
+Azure German クラウドから Azure パブリック クラウドへの移行を完了するには、OpenID Connect (OIDC) エンドポイントが comm のレポートを開始するときに、アプリケーションの認証エンドポイント、Azure Active Directory (Azure AD) Graph、および MS Graph エンドポイントを商用クラウドのエンドポイントに更新することをお勧めします。 `https://login.microsoftonline.com/\<TenantIdOrDomain\>/.well-known/openid-configuration`ercial クラウド エンドポイント。 
  
 **いつこの変更を行う必要がありますか?**
 
@@ -35,11 +43,11 @@ Azure German クラウドから Azure パブリック クラウドへの移行�
  
 サインイン機関の更新には、次の 3 つの条件があります。
 
- - テナントの OIDC 検出エンドポイントは `https://login.microsoftonline.com/<TenantIdOrDomain>/.well-known/openid-configuration` 、Azure ADパブリック クラウド エンドポイントを返します。
+ - テナントの OIDC 検出エンドポイントは、 `https://login.microsoftonline.com/<TenantIdOrDomain>/.well-known/openid-configuration` パブリック Azure ADを返します。
 
- - テナントがフェデレーション用に設定されている場合は、Active Directory フェデレーション サービス (AD FS) が更新され、Azure ADパブリックと同期されます。 この変更を行う手順に従って Azure AD Connect設定を更新できます。
+ - テナントがフェデレーション用に設定されている場合、Active Directory フェデレーション サービス (AD FS) が更新され、パブリック Azure ADされます。 手順に従って、この変更を行Azure AD Connect設定を更新できます。
 
- - アプリケーションで使用されているリソース アプリケーションがある場合は、Azure AD および Azure AD Public の両方によって署名されたトークンを受け入ADされます。
+ - アプリケーションで使用されるリソース アプリケーションがある場合は、ドイツとパブリックの両方で署名されたトークンを受け入Azure AD変更Azure ADされます。
  
 **どのような種類のアプリケーションですか?**
 
@@ -55,16 +63,16 @@ Azure German クラウドから Azure パブリック クラウドへの移行�
 - [モバイル アプリ](/azure/active-directory/develop/scenario-mobile-overview)
  
 > [!NOTE] 
-> アプリケーションが権限として使用に `login.microsoftonline.com` 切り替えた場合、トークンはこの新しい機関によって署名されます。 他のアプリが呼び出すリソース アプリケーションをホストする場合は、時間の少ないトークンの検証を許可する必要があります。 つまり、アプリは、Azure とドイツと Azure の両方のパブリック クラウドADトークンAD必要があります。 この時間の少ないトークン検証は、サービスを呼び出すすべてのクライアント アプリケーションがパブリック クラウドの Azure ADされるまで必要です。 移行後、リソース アプリケーションは、Azure によって署名されたトークンをパブリック クラウドAD受け入れる必要があります。
+> アプリケーションが権限として使用に `login.microsoftonline.com` 切り替えた場合、トークンはこの新しい機関によって署名されます。 他のアプリが呼び出すリソース アプリケーションをホストする場合は、時間の少ないトークンの検証を許可する必要があります。 つまり、アプリは、ドイツとパブリック クラウドの両方Azure ADトークンAzure AD必要があります。 この時間の少ないトークン検証は、サービスを呼び出すすべてのクライアント アプリケーションがパブリック クラウドに完全に移行されるまでAzure AD必要です。 移行後、リソース アプリケーションは、パブリック クラウドによって署名されたトークンAzure AD受け入れる必要があります。
 
 **更新する必要があるもの**
 
 1. Azure Germany または Office 365 ドイツ のユーザーの認証に使用されるアプリケーションを Azure Germany でホストしている場合は、認証コンテキストの機関として使用してください `https://login.microsoftonline.com` 。
 
-    - 「Azure AD認証コンテキスト」を参照してください。
-    - これは、アプリケーションの認証と、アプリケーションが呼び出す可能性がある任意の API (Microsoft Graph、Azure AD Graph、Azure Resource Manager) への認証の両方に適用されます。
+    - 「認証Azure AD」を参照してください。
+    - これは、アプリケーションに対する認証と、アプリケーションが呼び出す可能性がある任意の API (Microsoft Graph、Azure AD Graph、Azure Resource Manager) に対する認証の両方に適用されます。
 
-2. Azure AD Graphエンドポイントを更新します `https://graph.windows.net` 。
+2. エンドポイントAzure AD Graphを更新します `https://graph.windows.net` 。
 
 3. Microsoft Graphエンドポイントを更新します `https://graph.microsoft.com` 。
 
@@ -73,38 +81,34 @@ Azure German クラウドから Azure パブリック クラウドへの移行�
 5. 管理ツールとスクリプトの `AzurePublic` 環境パラメーターを (代わりに) 更新 `AzureGermany` します。
 
     - [Azure PowerShell](/powershell/azure/install-az-ps)
-    - [Azure AD PowerShell (MSOnline)](/powershell/azure/active-directory/overview)
-    - [Azure AD PowerShell (AzureAD)](/powershell/azure/active-directory/install-adv2)
+    - [Azure ADPowerShell (MSOnline)](/powershell/azure/active-directory/overview)
+    - [Azure ADPowerShell (AzureAD)](/powershell/azure/active-directory/install-adv2)
     - [Azure CLI](/cli/azure/install-azure-cli)
  
 **発行するアプリケーションについて**
 
 テナント外のユーザーが利用できるアプリケーションを発行する場合は、継続性を確保するためにアプリケーションの登録を変更する必要があります。 アプリケーションを使用する他のテナントは、テナントとは異なる時刻に移動される可能性があります。 アプリケーションへのアクセスが失われるのを確実に行わないには、アプリが Azure Germany から Azure Public に同期されている状態に同意する必要があります。
 
-**移行中に新しいマルチテナント アプリケーションを追加する方法は?**
-
-別の組織 (マルチテナント アプリケーション) によって発行された新しいアプリケーションを使用する場合は、移行プロセス (フェーズ 2 ~ フェーズ 9) 中にアプリケーションの追加を制限されます。  組織がフェーズ 9 を完了し、Azure パブリック インスタンスに完全に移行するときに、このタスクを実行できます。
-
 ## <a name="additional-considerations"></a>その他の考慮事項
 
-Azure の追加の考慮事項を次に示AD。
+以下に、追加の考慮事項を示Azure AD。
 
 - フェデレーション認証の場合:
 
-  - テナント移行の実行中は、フェデレーション ドメインを作成、昇格、または降格できません。 Azure AD サービスへの移行が完了した後 (テナントが完全に完了)、フェデレーション ドメインの管理を再開できます。
+  - テナント移行の実行中は、フェデレーション ドメインを作成、昇格、または降格できません。 サービスへの移行がAzure AD (テナントが完全に完了)、フェデレーション ドメインの管理を再開できます。
 
-  - Active Directory フェデレーション サービス (AD FS) でフェデレーション認証を使用している場合は、移行中にオンプレミスの Active Directory ドメイン サービス (AD DS) ですべての認証に使用される発行者 URI を変更する必要があります。 発行者 URI を変更すると、ドメイン内のユーザーの認証エラーが発生します。 発行者 URI は、FS またはドメインAD管理からフェデレーションに変換される場合、またはその逆に直接変更できます。 移行する Azure ドメインのフェデレーション ドメインを追加、削除、または変換AD推奨します。 発行者 URI は、移行が完全に完了した後で変更できます。
+  - Active Directory フェデレーション サービス (AD FS) でフェデレーション認証を使用している場合は、移行中にオンプレミスの Active Directory ドメイン サービス (AD DS) ですべての認証に使用される発行者 URI を変更する必要があります。 発行者 URI を変更すると、ドメイン内のユーザーの認証エラーが発生します。 発行者 URI は、FS またはドメインAD管理からフェデレーションに変換される場合、またはその逆に直接変更できます。 移行するテナントにフェデレーション ドメインを追加、削除、または変換Azure AD推奨します。 発行者 URI は、移行が完全に完了した後で変更できます。
 
 - ネットワークの場合:
 
   - IPv6 名前付きネットワークの作成は、Azure portal では機能しません `http://portal.microsoftazure.de/` 。 Azure portal を使用して `https://portal.azure.com` 、IPv6 名前付きネットワークを作成します。
  
-   - Microsoft Cloud Deutschland ポータルから Azure 多要素認証 (MFA) サービス設定の信頼できる IP アドレス範囲を作成できません。 Azure MFA の信頼AD IP アドレスOffice 365作成するには、Azure Office 365 ポータルを使用します。
+   - Microsoft Cloud Deutschland ポータルから Azure 多要素認証 (MFA) サービス設定の信頼できる IP アドレス範囲を作成できません。 Azure MFA 信頼Azure AD IP アドレスOffice 365作成するには、サービスのポータルを使用します。
 
 
 - 条件付きアクセスの場合: 
 
-  - 次の付与制御を持つ条件付きアクセス ポリシーは、Office 365 サービスへの移行が完了するまでサポートされません[(Finalize Azure](ms-cloud-germany-transition.md#how-is-the-migration-organized) AD移行フェーズの後)。
+  - 次の付与制御を持つ条件付きアクセス[ポリシー](ms-cloud-germany-transition.md#how-is-the-migration-organized)は、Office 365 サービスへの移行が完了するまでサポートされません (移行フェーズの最終Azure AD後)。
 
     - 準拠デバイスを要求する
     - 承認済みアプリを要求する
@@ -114,14 +118,14 @@ Azure の追加の考慮事項を次に示AD。
 
 - Intune のシナリオは、テナントの移行が完了した後、すべての Office ワークロードの移行を含む、世界中のエンドポイントに対してのみサポートされます。
 
-- MFA 要求にモバイル アプリ通知メソッドを使用する Microsoft Cloud Deutschland ユーザーには、Microsoft Authenticator アプリのユーザー プリンシパル名 (UPN) の代わりに、ユーザーの ObjectId (GUID) が表示されます。 Azure ADテナントの移行がAD Office 365サービスでホストされた後、新しいライセンス認証Microsoft Authenticatorユーザーの UPN が表示されます。 既存のMicrosoft Authenticatorユーザー ObjectId は引き続き表示されますが、モバイル アプリ通知では引き続き機能します。 
+- MFA 要求にモバイル アプリ通知メソッドを使用する Microsoft Cloud Deutschland ユーザーには、Microsoft Authenticator アプリのユーザー プリンシパル名 (UPN) の代わりに、ユーザーの ObjectId (GUID) が表示されます。 テナントの移行がAzure AD完了し、Office 365 サービスでホストされた後、新Microsoft Authenticatorライセンス認証によってユーザーの UPN が表示されます。 既存のMicrosoft Authenticatorユーザー ObjectId は引き続き表示されますが、モバイル アプリ通知では引き続き機能します。 
 
 - 2019 年 10 月 22 日以降に作成されたテナントの場合、Office 365 サービスに移行するときに、テナントのセキュリティの既定値が自動的に有効になる場合があります。 テナント管理者は、セキュリティの既定値を有効のままにして MFA に登録するか、機能を無効にできます。 詳細については、「セキュリティの既定値 [を無効にする」を参照してください](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults#disabling-security-defaults)。 
 
   > [!NOTE]
   > 移行中に自動有効化されていない組織は、セキュリティの既定値を有効にする機能が Office 365 サービスに展開される場合があります。 セキュリティの既定値を明示的に無効または有効にした管理者は、[プロパティ] の下の機能を更新Azure Active Directory >**があります**。 管理者が機能を明示的に有効にした後は、自動的に有効になりません。
 
-- テナントの移行が完了すると、Office 365 ドイツ のポータルと Office 365 ポータルの Azure AD Connect のバージョンに関する警告が表示されます。 移行の完了後にバージョンの警告が警告を表示しなくなった場合は、これを無視できます。 移行の前または移行後に、いずれかのポータルで警告が表示される場合は、Azure AD Connect更新する必要があります。 警告メッセージには、「古いディレクトリ同期ツールを使用しているのが検出されました。 Microsoft ダウンロード センターにアクセスして、Azure の最新バージョンを取得することをお勧AD Connect。
+- テナントの移行が完了すると、Azure AD Connect ポータルOffice 365、Office 365 ポータルのバージョンに関する警告が表示されます。 移行の完了後にバージョンの警告が警告を表示しなくなった場合は、これを無視できます。 移行の前または移行後に、いずれかのポータルで警告が表示される場合は、Azure AD Connect更新する必要があります。 警告メッセージには、「古いディレクトリ同期ツールを使用しているのが検出されました。 Microsoft ダウンロード センターにアクセスして、最新バージョンのダウンロード を取得することをお勧Azure AD Connect。
 
 ## <a name="more-information"></a>詳細情報
 
@@ -136,10 +140,11 @@ Azure の追加の考慮事項を次に示AD。
 
 - [移行フェーズのアクションと影響](ms-cloud-germany-transition-phases.md)
 - [その他の作業前](ms-cloud-germany-transition-add-pre-work.md)
-- Azure [AD、デバイス](ms-cloud-germany-transition-add-devices.md)[、](ms-cloud-germany-transition-azure-ad.md)[エクスペリエンス](ms-cloud-germany-transition-add-experience.md)、および FS のAD[情報](ms-cloud-germany-transition-add-adfs.md)です。
+- FS の[詳細Azure AD](ms-cloud-germany-transition-azure-ad.md)[デバイス](ms-cloud-germany-transition-add-devices.md)、[エクスペリエンス](ms-cloud-germany-transition-add-experience.md)、およびAD[です](ms-cloud-germany-transition-add-adfs.md)。
 
 クラウド アプリ:
 
 - [Dynamics 365 移行プログラム情報](/dynamics365/get-started/migrate-data-german-region)
 - [Power BI 移行プログラム情報](/power-bi/admin/service-admin-migrate-data-germany)
 - [Microsoft Teams へのアップグレードを開始する](/microsoftteams/upgrade-start-here)
+- 

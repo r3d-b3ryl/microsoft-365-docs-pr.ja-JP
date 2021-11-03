@@ -17,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: overview
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c6540847d6861b5d4f07d3b542afe8ceb3fcf413
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: a00fa0c255156f17f579889e8a399c52d126a6f8
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553462"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60661600"
 ---
 # <a name="protect-your-network"></a>ネットワークを保護する
 
@@ -141,7 +141,7 @@ Azure Windows 10 Enterprise Windows Virtual Desktop で使用されるマルチ�
 
 ## <a name="network-protection-troubleshooting"></a>ネットワーク保護のトラブルシューティング
 
-ネットワーク保護が実行される環境のため、Microsoft はオペレーティング システムのプロキシ設定を検出できない場合があります。 場合によっては、ネットワーク保護クライアントがクラウド サービスにアクセスできない場合があります。 接続の問題を解決するには、E5 ライセンスをお持ちのお客様は、次のいずれかの Defender レジストリ キーを構成する必要があります。
+ネットワーク保護が実行される環境のため、Microsoft はオペレーティング システムのプロキシ設定を検出できない場合があります。 場合によっては、ネットワーク保護クライアントがクラウド サービスにアクセスできない場合があります。 接続の問題を解決するには、E5 ライセンスをお持ちのお客様が次のいずれかのレジストリ キーを構成する必要があります。
 
 ```console
 reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyServer /d "<proxy IP address: Port>" /f

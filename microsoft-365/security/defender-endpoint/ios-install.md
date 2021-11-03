@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b69e093e49bbfd143604f6f1a44e472b29762109
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 022709bf47a52ae6a8763bf36df4e7e0d49c34cd
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60211136"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60668070"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>iOS での Microsoft Defender for Endpoint の展開
 
@@ -55,11 +55,11 @@ iOS 上の Defender for Endpoint を展開するには、Intune ポータル サ
     > [!div class="mx-imgBorder"]
     > ![管理センター 1 Microsoft エンドポイント マネージャーのイメージ。](images/ios-deploy-1.png)
 
-1. [アプリの追加] ページで、[アプリ ストアの検索] をクリック **し** 、検索バーに **「Microsoft Defender Endpoint」** と入力します。 [検索結果] セクションで *、[Microsoft Defender Endpoint]* をクリックし、[選択] を **クリックします**。
+1. [アプリの **追加] ページで** 、[アプリ ストアの検索] をクリック **し** 、検索バーに **「Microsoft Defender Endpoint」** と入力します。 [検索結果] セクションで *、[Microsoft Defender Endpoint]* をクリックし、[選択] を **クリックします**。
 
 1. [ **最小オペレーティング システム] として [iOS 11.0]** を選択します。 アプリに関する残りの情報を確認し、[次へ] を **クリックします**。
 
-1. [割り *当て] セクションで* 、[必須] **セクションに** 移動し、[グループの追加] **を選択します**。 その後、iOS アプリで Defender for Endpoint をターゲットとするユーザー グループを選択できます。 [選択 **] をクリック** し、[次へ] **をクリックします**。
+1. [割り **当て] セクションで** 、[必須] **セクションに** 移動し、[グループの追加] **を選択します**。 その後、iOS アプリで Defender for Endpoint をターゲットとするユーザー グループを選択できます。 [選択 **] をクリック** し、[次へ] **をクリックします**。
 
     > [!NOTE]
     > 選択したユーザー グループは、Intune に登録されたユーザーで構成する必要があります。
@@ -141,13 +141,13 @@ Intune を使用すると、アプリ構成ポリシーを使用して Defender 
     > [!div class="mx-imgBorder"]
     > ![管理センター 6 Microsoft エンドポイント マネージャーのイメージ。](images/ios-deploy-6.png)
 
-1. [次 **へ] を** クリックして [スコープ タグ **] ページを** 開きます。 スコープ タグはオプションです。 続行するには、**[次へ]** をクリックします。
+1. [次 **へ] を** クリックして [スコープ タグ **] ページを** 開きます。 スコープ タグは省略可能です。 続行するには、**[次へ]** をクリックします。
 
-1. [割り **当て] ページ** で、このプロファイルを受け取るグループを選択します。 このシナリオでは、すべてのデバイスをターゲットに設定するベスト **プラクティスです**。 プロファイルの割り当ての詳細については、「Assign [user and device profiles」を参照してください](/mem/intune/configuration/device-profile-assign)。
+1. [割り **当て] ページ** で、このプロファイルを受け取るグループを選択します。 このシナリオでは、すべてのデバイスをターゲットに設定するベスト **プラクティスです**。 プロファイルの割り当ての詳細については、「[ユーザーおよびデバイス プロファイルの割り当て](/mem/intune/configuration/device-profile-assign)」を参照してください。
 
    ユーザー グループに展開する場合、ユーザーはポリシーが適用される前にデバイスにサインインする必要があります。
 
-   [**次へ**] をクリックします。
+   **[次へ]** をクリックします。
 
 1. [レビュー **と作成] ページ** で、完了したら、[作成] を **選択します**。 新しいプロファイルが構成プロファイルの一覧に表示されます。
 

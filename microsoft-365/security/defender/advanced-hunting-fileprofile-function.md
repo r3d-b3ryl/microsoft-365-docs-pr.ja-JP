@@ -15,17 +15,15 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 97db42060d694168edbd6ed7e86c67706bf62ddb
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c7ad9678f797fd3e8df34b40fe39fea5672e13d5
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212259"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60670608"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
@@ -42,8 +40,8 @@ ms.locfileid: "60212259"
 | `SHA1` | string | 記録されたアクションが適用されたファイルの SHA-1 |
 | `SHA256` | 文字列 | 記録されたアクションが適用されたファイルの SHA-256 |
 | `MD5` | string | 記録されたアクションが適用されたファイルの MD5 ハッシュ |
-| `FileSize` | 整数 | ファイルのサイズ (バイト単位) |
-| `GlobalPrevalence` | 整数 | Microsoft がグローバルに観察したエンティティのインスタンス数 |
+| `FileSize` | int | ファイルのサイズ (バイト単位) |
+| `GlobalPrevalence` | int | Microsoft がグローバルに観察したエンティティのインスタンス数 |
 | `GlobalFirstSeen` | 日付型 | エンティティが最初に Microsoft によってグローバルに観察された日時 |
 | `GlobalLastSeen` | 日付型 | エンティティが Microsoft によってグローバルに最後に観察された日時 |
 | `Signer` | string | ファイルの署名者に関する情報 |

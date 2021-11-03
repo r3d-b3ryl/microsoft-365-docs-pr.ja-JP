@@ -20,16 +20,16 @@ search.appverid:
 - MET150
 - MOE150
 description: '[レポート] ダッシュボードの [レポート] ダッシュボードを使用して Microsoft Forms アクティビティ Microsoft 365を取得する方法Microsoft 365 管理センター。'
-ms.openlocfilehash: b5f654acddf679f0040f0e15a6146f74044a7e45
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 900ae6c273d47785296b94622060f2fe3b6dc0ca
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553318"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60652874"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>Microsoft 365管理センターのレポート - フォーム アクティビティ
 
-Microsoft 365 の [**レポート**] ダッシュボードには、組織内での製品全体に関するアクティビティが表示されます。 これにより、個別の製品レベルのレポートを詳細に確認して、各製品内のアクティビティについてより詳しく知ることができます。 [レポートの概要トピック](activity-reports.md)を参照してください。
+Microsoft 365 の [レポート] ダッシュボードには、組織内での製品全体に関するアクティビティが表示されます。 これにより、個別の製品レベルのレポートを詳細に確認して、各製品内のアクティビティについてより詳しく知ることができます。 [レポートの概要トピック](activity-reports.md)を参照してください。
   
 たとえば、フォームとのやり取りを見て、Microsoft フォームを使用するライセンスを持つすべてのユーザーのアクティビティを理解できます。 また、ユーザーが回答したフォームとフォームの数を確認することで、共同作業のレベルを理解するのにも役立ちます。
   

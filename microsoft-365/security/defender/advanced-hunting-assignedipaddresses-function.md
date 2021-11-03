@@ -15,17 +15,15 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 48dda6faf9d0cfc5b301a766dd07f8cb4e15d394
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c60f9ff0b302948d5fd2d8c450e33a12768e8db0
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174557"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60665529"
 ---
 # <a name="assignedipaddresses"></a>AssignedIPAddresses()
 
@@ -44,8 +42,8 @@ ms.locfileid: "60174557"
 | `Timestamp` | 日付型 | IP アドレスを使用してデバイスが観察された最新の時刻 |
 | `IPAddress` | string | デバイスで使用される IP アドレス |
 | `IPType` | string | IP アドレスがパブリック アドレスかプライベート アドレスかを示します。 |
-| `NetworkAdapterType` | 整数 | IP アドレスが割り当てられているデバイスで使用されるネットワーク アダプターの種類。 使用できる値については、この列挙 [を参照してください。](/dotnet/api/system.net.networkinformation.networkinterfacetype) |
-| `ConnectedNetworks` | 整数 | 割り当てられた IP アドレスを持つアダプターが接続されているネットワーク。 各 JSON 配列には、ネットワーク名、カテゴリ (パブリック、プライベート、またはドメイン)、説明、およびインターネットにパブリックに接続されているかどうかを示すフラグが含まれる |
+| `NetworkAdapterType` | int | IP アドレスが割り当てられているデバイスで使用されるネットワーク アダプターの種類。 使用できる値については、この列挙 [を参照してください。](/dotnet/api/system.net.networkinformation.networkinterfacetype) |
+| `ConnectedNetworks` | int | 割り当てられた IP アドレスを持つアダプターが接続されているネットワーク。 各 JSON 配列には、ネットワーク名、カテゴリ (パブリック、プライベート、またはドメイン)、説明、およびインターネットにパブリックに接続されているかどうかを示すフラグが含まれる |
 
 ## <a name="syntax"></a>構文
 

@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 917b3e1d-203e-4439-8539-634e80196687
 description: '[レポート] からアプリMicrosoft Teamsレポートを取得して、組織で使用Microsoft Teamsアプリに関するMicrosoft 365します。'
-ms.openlocfilehash: 03b4969a25fb48c71c06c063d782b8c0cce8c788
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: c1c1440b1dfca30cddea0dea44e82a9e86b0d622
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553150"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60648987"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>Microsoft 365管理センターのレポート - Microsoft Teamsの使用状況
 
-Microsoft 365 の [**レポート**] ダッシュボードには、組織内での製品全体に関するアクティビティが表示されます。 これにより、個別の製品レベルのレポートを詳細に確認して、各製品内のアクティビティについてより詳しく知ることができます。 [レポートの概要に関するトピック](activity-reports.md)を参照してください。 [アプリMicrosoft Teamsレポートでは、組織で使用されているアプリMicrosoft Teamsを把握できます。
+Microsoft 365 の [レポート] ダッシュボードには、組織内での製品全体に関するアクティビティが表示されます。 これにより、個別の製品レベルのレポートを詳細に確認して、各製品内のアクティビティについてより詳しく知ることができます。 [レポートの概要に関するトピック](activity-reports.md)を参照してください。 [アプリMicrosoft Teamsレポートでは、組織で使用されているアプリMicrosoft Teamsを把握できます。
  
 ## <a name="how-to-get-to-the-microsoft-teams-app-usage-report"></a>Microsoft Teams アプリの使用状況レポートを取得する手順
 

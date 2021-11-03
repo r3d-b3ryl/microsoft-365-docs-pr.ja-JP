@@ -23,12 +23,12 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: eef9c82593d75ecebb4d07b5bcaaf39ff59cb350
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7d3c38b3c9ff89bed613413405fec54718ebdd42
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164562"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60659986"
 ---
 # <a name="what-is-a-domain"></a>ドメインとは
 
@@ -51,9 +51,12 @@ Microsoft 365 を使用して新しいドメインを購入します。すべて
 > [!TIP]
 > ドメインが登録されている場所がはっきりしない場合 - [ドメイン レジストラーを探すためのヘルプ](find-your-domain-registrar.md)
   
- **とりあえず既定のドメインを使用する:**
+ **今のところ、Microsoft ドメインを使用します。**
   
-「*yourcompany.onmicrosoft.<span>com*」などの既定のドメインを使用してログインし、カスタム ドメインを後で追加することができます。 既定のドメインやその名前を変更することはできません。そのため、先に進む前に、実行する内容をよくご確認ください。 
+*yourcompany.onmicrosoft のような Microsoft ドメインを使用できます。 <span>com* を使用して、今のところサインインし、後でカスタム ドメインを追加します。 
+  
+> [!IMPORTANT]
+> このオプションを選択すると、.onmicrosoft.com ドメインに入力した名前が、すべてのユーザーのドメイン URL SharePointおよびOneDriveされます。 この名前を変更できない場合があります。正しくスペルがブランド化の観点から使用する名前である必要があります。 
   
 ## <a name="feeling-stuck"></a>困ったときは
 

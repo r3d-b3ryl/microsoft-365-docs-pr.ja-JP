@@ -18,24 +18,24 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 9eb45699e2224df770752895ca13b17565606c7b
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 9b8446ebd646a55e24a8d59d7fa8ac4e003a3a78
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335516"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60665161"
 ---
 # <a name="communication-compliance-with-siem-solutions"></a>SIEM ソリューションのコミュニケーション コンプライアンス
 
 [コミュニケーション コンプライアンスは](communication-compliance.md)、組織内の不適切なメッセージMicrosoft 365検出、キャプチャ、および操作を支援することで、コミュニケーション リスクを最小限に抑える、コミュニケーション コンプライアンスのインサイダー リスク ソリューションです。 [Azure Sentinel](https://azure.microsoft.com/services/azure-sentinel)や[Splunk](https://www.splunk.com/)などのセキュリティ情報とイベント管理 (SIEM) ソリューションは、組織内の脅威を集約および追跡するためによく使用されます。
 
-組織の一般的なニーズは、コミュニケーション コンプライアンスアラートとこれらの SIEM ソリューションを統合する必要があります。 この統合により、組織は SIEM ソリューションで通信コンプライアンスアラートを表示し、通信コンプライアンス ワークフローとユーザー エクスペリエンス内でアラートを修復できます。 たとえば、従業員が別の従業員に不快なメッセージを送信し、そのメッセージは不快な言語の通信コンプライアンス ポリシー監視によって検出されます。 これらのイベントは、Microsoft 365 コンプライアンス ソリューションによって監査 ("統合監査ログ" とも呼ばれる) で追跡され、SIEM ソリューションにインポートされます。 その後、組織の SIEM ソリューションで、通信コンプライアンス通知に関連付けられている監査で監視Microsoft 365イベントからアラートがトリガーされます。 調査担当者は、SIEM ソリューションでアラートの通知を受け取り、通信コンプライアンス ソリューションでアラートを調査して修復します。
+組織の一般的なニーズは、コミュニケーション コンプライアンスアラートとこれらの SIEM ソリューションを統合する必要があります。 この統合により、組織は SIEM ソリューションで通信コンプライアンスアラートを表示し、通信コンプライアンス ワークフローとユーザー エクスペリエンス内でアラートを修復できます。 たとえば、従業員が別の従業員に不快なメッセージを送信し、不適切なコンテンツに対する通信コンプライアンス ポリシーの監視によってそのメッセージが検出されます。 これらのイベントは、Microsoft 365 コンプライアンス ソリューションによって監査 ("統合監査ログ" とも呼ばれる) で追跡され、SIEM ソリューションにインポートされます。 その後、組織の SIEM ソリューションで、通信コンプライアンス通知に関連付けられている監査で監視Microsoft 365イベントからアラートがトリガーされます。 調査担当者は、SIEM ソリューションでアラートの通知を受け取り、通信コンプライアンス ソリューションでアラートを調査して修復します。
 
 ## <a name="communication-compliance-alerts-in-microsoft-365-audit"></a>[監査] での通信コンプライアンスMicrosoft 365通知
 
 すべての通信コンプライアンス ポリシーの一致は、監査にMicrosoft 365されます。 次の例は、選択した通信コンプライアンス ポリシーの一致アクティビティで使用可能な詳細を示しています。
 
-**不快な言語ポリシー テンプレートの一致の監査ログ エントリの例:**
+**不適切なコンテンツ ポリシー テンプレート一致の監査ログ エントリの例:**
 
 ```xml
 RunspaceId: 5c7bc9b0-7672-4091-a112-0635bd5f7732
@@ -76,7 +76,7 @@ Azure Sentinel を使用して通信コンプライアンス ポリシーの一�
 
 1. [Azure Sentinel にオンボードします](/azure/sentinel/quickstart-onboard)。 オンボーディング プロセスの一環として、データ ソースを構成します。
 2. データ コネクタで Azure Sentinel [Microsoft Office 365を構成](/azure/sentinel/data-connectors-reference#microsoft-office-365)し、コネクタ構成の下で [データ の構成]*を* Exchange。
-3. 通信コンプライアンスアラートを取得する検索クエリを構成します。 次に例を示します。
+3. 通信コンプライアンスアラートを取得する検索クエリを構成します。 例:
 
     *|OfficeActivity |ここで、OfficeWorkload == "Exchange" と Operation == "SupervisionRuleMatch" |TimeGenerated による並べ替え*
 
@@ -98,9 +98,9 @@ Azure Sentinel によって収集されるMicrosoft 365監査ログOffice 365詳
 
 特定の通信コンプライアンス ポリシーの結果をフィルター処理するには *、SRPolicyMatchDetails.SRPolicyName パラメーターを使用* できます。
 
-たとえば、次の検索例は、不快な言語という名前の通信コンプライアンス ポリシーに一致するアラート *を返します*。
+たとえば、次の検索例は、不適切なコンテンツという名前の通信コンプライアンス ポリシーに一致するアラート *を返します*。
 
-  *index= \* sourcetype='o365:management:activity' Workload=Exchange Operation=SupervisionRuleMatch SRPolicyMatchDetails.SRPolicyName=\<Offensive language\>*
+  *index= \* sourcetype='o365:management:activity' Workload=Exchange Operation=SupervisionRuleMatch SRPolicyMatchDetails.SRPolicyName=\<Inappropriate content\>*
 
 次の表に、さまざまなポリシーの種類の検索結果の例を示します。
 

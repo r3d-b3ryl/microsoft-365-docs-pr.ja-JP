@@ -40,15 +40,19 @@ additionalContent:
         - title: Microsoft Viva インサイト
           links:
             - text: 開始する
-              url: /insights/viva-teams-app
+              url: /viva/insights/introduction
+            - text: セットアップ
+              url: /viva/insights/setup/setup-intro
             - text: ラーニングパス - 検出Microsoft Viva インサイト
               url: /learn/modules/workplace-analytics-discover/
-        - title: Microsoft Viva Connections
+        - title: Microsoft Viva コネクション
           links:
             - text: 開始する
               url: /sharepoint/viva-connections-overview
             - text: セットアップ
               url: /sharepoint/guide-to-setting-up-viva-connections
+            - text: ラーニングパス - 拡張Microsoft Viva コネクション
+              url: /learn/paths/m365-extend-viva-connections
             - text: 拡張性
               url: /sharepoint/dev/spfx/viva/overview-viva-connections
             - text: エンド ユーザー ヘルプ&トレーニング

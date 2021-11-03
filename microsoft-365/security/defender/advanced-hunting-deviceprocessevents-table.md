@@ -15,17 +15,15 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: b034b4aea611e94268a85b4aa4963b76379b9c09
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5f2f0159fd253ccea6c841510072743813f0c63c
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202657"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60665467"
 ---
 # <a name="deviceprocessevents"></a>DeviceProcessEvents
 
@@ -63,7 +61,7 @@ ms.locfileid: "60202657"
 | `ProcessVersionInfoInternalFileName` | string | 新しく作成されたプロセスのバージョン情報からの内部ファイル名 |
 | `ProcessVersionInfoOriginalFileName` | string | 新しく作成されたプロセスのバージョン情報からの元のファイル名 |
 | `ProcessVersionInfoFileDescription` | string | 新しく作成されたプロセスのバージョン情報からの説明 |
-| `ProcessId` | 整数 | 新しく作成されたプロセスのプロセス ID (PID) |
+| `ProcessId` | int | 新しく作成されたプロセスのプロセス ID (PID) |
 | `ProcessCommandLine` | string | 新しいプロセスの作成に使用するコマンド ライン |
 | `ProcessIntegrityLevel` | string | 新しく作成されたプロセスの整合性レベル。 Windows、ダウンロードしたインターネットから起動した場合など、特定の特性に基づいてプロセスに整合性レベルを割り当てる必要があります。 これらの整合性レベルは、リソースへのアクセス許可に影響を与えます |
 | `ProcessTokenElevation` | string | 新しく作成されたプロセスに適用されるトークン昇格の種類を示します。 指定できる値: TokenElevationTypeLimited (制限あり)、TokenElevationTypeDefault (standard)、TokenElevationTypeFull (昇格) |
@@ -72,7 +70,7 @@ ms.locfileid: "60202657"
 | `AccountName` | string | アカウントのユーザー名 |
 | `AccountSid` | string | アカウントのセキュリティ識別子 (SID) |
 | `AccountUpn` | string | アカウントのユーザー プリンシパル名 (UPN) |
-| `AccountObjectId` | string | Azure アカウントのアカウントの一意AD |
+| `AccountObjectId` | string | アカウントの一意の識別子は、Azure AD |
 | `LogonId` | string | ログオン セッションの識別子。 この識別子は、再起動の間にのみ同じコンピューター上で一意です。 |
 | `InitiatingProcessAccountDomain` | string | イベントを担当するプロセスを実行したアカウントのドメイン |
 | `InitiatingProcessAccountName` | string | イベントを担当するプロセスを実行したアカウントのユーザー名 |
@@ -93,11 +91,11 @@ ms.locfileid: "60202657"
 | `InitiatingProcessVersionInfoInternalFileName` | string | イベントを担当するプロセスのバージョン情報 (イメージ ファイル) からの内部ファイル名 |
 | `InitiatingProcessVersionInfoOriginalFileName` | string | イベントを担当するプロセスのバージョン情報 (イメージ ファイル) からの元のファイル名 |
 | `InitiatingProcessVersionInfoFileDescription` | string | イベントを担当するプロセス (イメージ ファイル) のバージョン情報の説明 |
-| `InitiatingProcessId` | 整数 | イベントを開始したプロセスのプロセス ID (PID) |
+| `InitiatingProcessId` | int | イベントを開始したプロセスのプロセス ID (PID) |
 | `InitiatingProcessCommandLine` | string | イベントを開始したプロセスの実行に使用されるコマンド ライン |
 | `InitiatingProcessCreationTime` | 日付型 | イベントを開始したプロセスが開始された日時 |
 | `InitiatingProcessFolderPath` | string | イベントを開始したプロセス (イメージ ファイル) を含むフォルダー |
-| `InitiatingProcessParentId` | 整数 | イベントを担当するプロセスを生成した親プロセスのプロセス ID (PID) |
+| `InitiatingProcessParentId` | int | イベントを担当するプロセスを生成した親プロセスのプロセス ID (PID) |
 | `InitiatingProcessParentFileName` | string | イベントを担当するプロセスを生成した親プロセスの名前 |
 | `InitiatingProcessParentCreationTime` | 日付型 | イベントを担当するプロセスの親が開始された日時 |
 | `InitiatingProcessSignerType` | string | イベントを開始したプロセス (イメージ ファイル) のファイル 署名者の種類 |

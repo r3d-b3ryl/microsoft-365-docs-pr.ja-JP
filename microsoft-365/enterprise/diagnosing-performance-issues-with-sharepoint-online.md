@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 3c364f9e-b9f6-4da4-a792-c8e8c8cd2e86
 description: この記事では、開発者ツールを使用してオンライン サイトで一般的なSharePointを診断Internet Explorer示します。
-ms.openlocfilehash: 5910e1164ffdf892ffc7252e0e887a6633598c3c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bb12bc6b8b8f95c33ad35aafad760803e927e830
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198519"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60664941"
 ---
 # <a name="diagnosing-performance-issues-with-sharepoint-online"></a>SharePoint Online のパフォーマンスの問題の診断
 
@@ -38,12 +38,12 @@ ms.locfileid: "60198519"
 
 - SharePointオンライン応答ヘッダーのメトリック
 
-このトピックでは、これらの各メソッドを使用してパフォーマンスの問題を診断する方法について説明します。 問題の原因を把握したら、見つけ出すパフォーマンスの向上に関する記事をSharePointソリューションに取り組む必要があります https://aka.ms/tune 。
+このトピックでは、これらの各メソッドを使用してパフォーマンスの問題を診断する方法について説明します。 問題の原因を把握したら、見つけ出すパフォーマンスの向上に関する記事をSharePointソリューションに取り組む必要があります https://aka.ms/tune 。 または、管理者で問題をすばやく診断する場合は、この [診断ツールを実行します](https://aka.ms/PillarSiteandPagePerf)。 
   
 ## <a name="using-the-f12-tool-bar-to-diagnose-performance-in-sharepoint-online"></a>F12 ツール バーを使用してオンラインでのパフォーマンスをSharePointする
 <a name="F12ToolInfo"> </a>
 
-この記事では、11 Internet Explorer使用します。 他のブラウザーの F12 開発者ツールのバージョンは、若干異なって見える場合があります。同様の機能があります。 F12 開発者ツールの詳細については、以下を参照してください。
+この記事では、11 のInternet Explorerします。 他のブラウザーの F12 開発者ツールのバージョンは、若干異なって見える場合があります。同様の機能があります。 F12 開発者ツールの詳細については、以下を参照してください。
   
 - [F12 ツールの新機能](/previous-versions/windows/internet-explorer/ie-developer/dev-guides/bg182632(v=vs.85))
 

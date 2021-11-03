@@ -15,17 +15,15 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: eff066610d87dd637a861906b8f6a4a4c73ae2ae
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3954ef585ee3a4f51677f3e5e26b6309d3b75889
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162400"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60661461"
 ---
 # <a name="cloudappevents"></a>CloudAppEvents
 
@@ -63,13 +61,19 @@ ms.locfileid: "60162400"
 | `Isp` | string | IP アドレスに関連付けられたインターネット サービス プロバイダー (ISP) |
 | `UserAgent` | string | Web ブラウザーまたは他のクライアント アプリケーションからのユーザー エージェント情報 |
 | `ActivityType` | string | イベントをトリガーしたアクティビティの種類 |
-| `ActivityObjects` | string | 記録されたアクティビティに含まれるファイルやフォルダーなどのオブジェクトの一覧 |
+| `ActivityObjects` | 動的 | 記録されたアクティビティに含まれるファイルやフォルダーなどのオブジェクトの一覧 |
 | `ObjectName` | string | 記録されたアクションが適用されたオブジェクトの名前 |
 | `ObjectType` | string | 記録されたアクションが適用されたオブジェクトの種類 (ファイルやフォルダーなど) |
 | `ObjectId` | string | 記録されたアクションが適用されたオブジェクトの一意の識別子 |
 | `ReportId` | string | イベントの一意識別子 |
 | `RawEventData` | string | JSON 形式のソース アプリケーションまたはサービスからの生のイベント情報 |
-| `AdditionalFields` | string | エンティティまたはイベントに関する追加情報 |
+| `AdditionalFields` | 動的 | エンティティまたはイベントに関する追加情報 |
+| `AccountType` | string | ユーザー アカウントの種類(標準、System、Admin、DcAdmin、System、Application など)の一般的な役割とアクセス レベルを示します。 | 
+| `IsExternalUser` | ブール値 | ネットワーク内のユーザーが組織のドメインに属していないかどうかを示します。 | 
+| `IsImpersonated` | ブール値 | アクティビティが別の (偽装された) ユーザーに代わって 1 人のユーザーによって実行されたかどうかを示します。 | 
+| `IPTags` | 動的 | 特定の IP アドレスおよび IP アドレス範囲に適用される顧客定義の情報 | 
+| `IPCategory` | string | IP アドレスに関する追加情報 | 
+| `UserAgentTags` | 動的 | ユーザー エージェント フィールドのMicrosoft Cloud App Securityで提供される詳細。 ネイティブ クライアント、古いブラウザー、古いオペレーティング システム、Robot など、任意の値を指定できます。 | 
 
 ## <a name="apps-and-services-covered"></a>対象となるアプリとサービス
 

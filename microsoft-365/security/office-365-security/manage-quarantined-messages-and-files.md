@@ -19,12 +19,12 @@ ms.custom:
 description: 管理者は、ユーザー (EOP) 内のすべてのユーザーの検疫済みメッセージを表示および管理Exchange Online Protectionできます。 Microsoft Defender for Office 365組織の管理者は、SharePoint Online、OneDrive for Business、およびMicrosoft Teams。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7bf5b4fa2c339e1132efb71c53a5eaf62f9646ad
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5b3192c7531006b16d238899fe6ccbaa5390d815
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174437"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60663669"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>EOP の管理者として検疫済みメッセージとファイルを管理する
 
@@ -59,16 +59,11 @@ microsoft Defender for Office 365 の組織の管理者は、SharePoint、OneDri
 
   **注**:
 
-  - Microsoft 365 管理センターで、対応する Azure Active Directory の役割にユーザーを追加すると、ユーザーには、必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
+  - Microsoft 365 管理センターで、対応する Azure Active Directory のロールにユーザーを追加すると、ユーザーには、必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。詳しくは、「[管理者のロールについて](../../admin/add-users/about-admin-roles.md)」を参照してください。
   - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
   - <sup>\*</sup>Microsoft 365 Defender ポータルのメール **&** コラボレーション ロールの検疫管理者役割グループのメンバーは [、Exchange Online](permissions-microsoft-365-security-center.md#email--collaboration-roles-in-the-microsoft-365-defender-portal)の衛生管理役割グループのメンバーである必要があります [。Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) PowerShell で検疫手順を実行する必要があります。
 
-- 検疫済みメッセージは、自動的に削除される前に既定の期間保持されます。
-  - スパム対策ポリシー (スパム、フィッシング、バルク メール) によって検疫されたメッセージの 30 日間。 これは既定値と最大値です。 この値を (低く) 構成するには、「スパム対策ポリシーを構成 [する」を参照してください](configure-your-spam-filter-policies.md)。
-  - マルウェアを含むメッセージの場合は 15 日間。
-  - Defender セーフ の添付ファイル、SharePoint、OneDrive、Microsoft Teamsによって検疫Office 365。
-
-  検疫からメッセージの有効期限が切れると、メッセージを回復できません。
+- 検疫されたメッセージは、検疫された理由に基づいて既定の期間保持されます。 保持期間が経過すると、メッセージは自動的に削除され、回復できません。 詳細については [、「EOP および Defender for Offie 365](quarantine-email-messages.md)の検疫済み電子メール メッセージ」を参照してください。
 
 ## <a name="use-the-microsoft-365-defender-portal-to-manage-quarantined-email-messages"></a>検疫済みMicrosoft 365 Defenderを管理するには、このポータルを使用します。
 
@@ -153,7 +148,7 @@ microsoft Defender for Office 365 の組織の管理者は、SharePoint、OneDri
 - **[件名]**
 - **検疫の理由**: メッセージがスパム、バルク、フィッシング、メールフロー ルール **(トランスポート** ルール) と一致したと識別された場合、またはマルウェアが含まれていると識別された場合に表示 **されます**。
 - **[ポリシーの種類]**
-- **ポリシー名**
+- **[ポリシー名]**
 - **受信者の数**
 - **[受信者]**: メッセージに複数の受信者が含まれている場合は、**[メッセージのプレビュー]** か **[メッセージ ヘッダーを表示]** をクリックして受信者の完全な一覧を表示する必要があります。
 - **受信者タグ**: 詳細については [、「Microsoft Defender の User tags for Office 365」 を参照してください](user-tags.md)。

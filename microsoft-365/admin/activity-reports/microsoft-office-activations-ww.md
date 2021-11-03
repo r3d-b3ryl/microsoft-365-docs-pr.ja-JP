@@ -19,16 +19,16 @@ search.appverid:
 - GEA150
 ms.assetid: 87c24ae2-82e0-4d1e-be01-c3bcc3f18c60
 description: ライセンス認証レポートを取得して、Officeサブスクリプションをアクティブ化したユーザーを知り、追加のOffice必要なユーザーを特定する方法について学習します。
-ms.openlocfilehash: 27026a1d8507e133a84ac4614d2351abd36097a1
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: e27a097c9071729aea66d3eeb2b47f0d4bc684ca
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553270"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60649205"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-office-activations"></a>Microsoft 365管理センターのレポート - Microsoft Officeアクティブ化
 
-Microsoft 365 の [**レポート**] ダッシュボードには、組織内での製品全体に関するアクティビティが表示されます。 これにより、個別の製品レベルのレポートを詳細に確認して、各製品内のアクティビティについてより詳しく知ることができます。 [レポートの概要に関するトピック](activity-reports.md)を参照してください。
+Microsoft 365 の [レポート] ダッシュボードには、組織内での製品全体に関するアクティビティが表示されます。 これにより、個別の製品レベルのレポートを詳細に確認して、各製品内のアクティビティについてより詳しく知ることができます。 [レポートの概要に関するトピック](activity-reports.md)を参照してください。
   
 [Office ライセンス認証] レポートでは、Office サブスクリプションのライセンス認証を行ったユーザーを少なくとも 1 台のデバイスで確認できます。 このサービスは、Microsoft 365 Apps for enterprise、Project、Visio Pro for Office 365サブスクリプションのライセンス認証の内訳と、デスクトップとデバイス全体のライセンス認証の内訳を提供します。 このレポートは、Office サブスクリプションのライセンス認証について、追加のヘルプやサポートが必要なユーザーを特定するときにも役立ちます。
   

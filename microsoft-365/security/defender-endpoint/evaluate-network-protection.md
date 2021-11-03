@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 2176fd78f5c355dcb734f2a360ba917c6d130c03
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b0a52af9eb9cbc8d1cfc4084d7f137fd5e6975be
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60166506"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60668102"
 ---
 # <a name="evaluate-network-protection"></a>ネットワーク保護を評価する
 
@@ -35,7 +35,7 @@ ms.locfileid: "60166506"
 この記事は、機能を有効にし、テスト サイトに案内することで、ネットワーク保護を評価するのに役立ちます。 この評価記事のサイトは悪意のあるものではない。 悪意のあるふりをする特別に作成された Web サイトです。 サイトは、ユーザーが悪意のあるサイトまたはドメインにアクセスした場合に発生する動作をレプリケートします。
 
 > [!TIP]
-> また、Microsoft Defender Testground の Web サイトを demo.wd.microsoft.com 他 [の保護](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) 機能がどのように機能するのか確認できます。
+> また、Microsoft Defender のデモ シナリオ Web サイトを [参照して](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) 、demo.wd.microsoft.com の保護機能がどのように機能するのか確認することもできます。
 
 ## <a name="enable-network-protection-in-audit-mode"></a>監査モードでネットワーク保護を有効にする
 

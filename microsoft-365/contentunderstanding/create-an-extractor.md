@@ -13,21 +13,21 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Microsoft SharePoint Syntex でエクストラクターを作成する方法について説明します。
-ms.openlocfilehash: d7d4352283645a80844e0dcc8cd2715a8357b5be
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e6598704375aad88efcdbaef700ee0187c4f7e07
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60177317"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60665080"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex でエクストラクターを作成する
 
 
-</br>
+<br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CL2G]
 
-</br> 
+<br/> 
 
 特定のドキュメントの種類の識別および分類を自動化するために、分類子モデルを作成する前または後に、必要に応じて、ドキュメントから特定の情報を抽出するために、エクストラクターをモデルに追加することができます。 たとえば、モデルでドキュメント ライブラリに追加されたすべての *契約更新* ドキュメントを識別するだけでなく、ドキュメント ライブラリの列値として各ドキュメントの *サービス開始日* を表示することもできます。
 
@@ -39,9 +39,12 @@ ms.locfileid: "60177317"
 ## <a name="name-your-extractor"></a>エクストラクターに名前を付ける
 
 1. [モデルのホーム] ページで、[ **エクストラクターの作成とトレーニング**] タイルの [**トレーニングを行う**] をクリックします。
+
 2. [**新しいエンティティエクストラクター** ] 画面で、[ **新しいエクストラクター 名**] フィールドにエクストラクターの名前を入力します。 たとえば、契約更新の各ドキュメントからサービス開始日を抽出する場合は、「**サービスの開始日** と名前を入力します。 以前に作成した列 (例えば[管理されたメタデータ] 列など) を再使用することもできます。
-> [!NOTE]
-> 新しいエクストラクタを作成し、**[新しい列タイプ]** を選択して **[1 行テキスト]** を選択すると、最大文字数制限は 255 になります。 制限を超えて入力した文字はすべて切り捨てられます。 
+
+    > [!NOTE]
+    > 列の種類が 1 行のテキストの抽出子 **の場合、** 最大文字制限は 255 です。 制限を超えて入力した文字はすべて切り捨てられます。
+
 3. 完了したら、[**作成**] をクリックします。
 
 ## <a name="add-a-label"></a>ラベルを追加する
@@ -99,11 +102,11 @@ ms.locfileid: "60177317"
 
 1. [ **の説明] セクション** で、[ **新規**] を選択し、[**説明ライブラリ から**]を選択します。
 2. [説明ライブラリ] で、[ **日付**] を選択します。 認識された日付のあらゆるバリエーションを表示できます。
-3. **[追加]** を選択します。</br>
+3. **[追加]** を選択します。
 
     ![説明ライブラリ。](../media/content-understanding/explanation-library.png) 
 
-4. [**説明を作成する** ページで、説明ライブラリの *日付* 情報がフィールドに自動入力されます。 **[保存]** を選択します。</br>
+4. [**説明を作成する** ページで、説明ライブラリの *日付* 情報がフィールドに自動入力されます。 **[保存]** を選択します。
 
     ![日付。](../media/content-understanding/date-explanation-library.png) 
 

@@ -16,14 +16,14 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 10/19/2021
+ms.date: 11/01/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 6e6b552bb108785f9f727084609f7a8c873ce6e2
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: db11cc6940a26efb03ef906d0ac09e52986969eb
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556354"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60668014"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>更新Microsoft Defender ウイルス対策を管理し、基準計画を適用する
 
@@ -87,6 +87,25 @@ Microsoft Defender ウイルス対策プラットフォーム更新 [プログ�
 - 統合の改善 (クラウド[、Microsoft 365 Defender)。](/microsoft-365/security/defender/microsoft-365-defender)
 <br/><br/>
 <details>
+<summary> 2021 年 10 月 (プラットフォーム: 4.18.xxxx.x|エンジン: 1.1.18700.4)</summary>
+
+&ensp;セキュリティ インテリジェンス更新プログラムのバージョン: **1.353.3.0**<br/>
+&ensp;リリース日: **2021 年 10 月 28 日**<br/>
+&ensp;プラットフォーム: **4.18.xxxx.x**<br/>
+&ensp;エンジン: **1.1.18700.4**<br/>
+&ensp;サポート フェーズ: **セキュリティと重要な更新プログラム**<br/>
+
+エンジンのバージョン: 1.1.18700.4 セキュリティ インテリジェンス更新プログラムのバージョン: 1.353.3.0
+
+### <a name="whats-new"></a>新機能
+- FTP ネットワーク トラフィックカバレッジの改善
+- Exchange サーバーでの Microsoft Defender CPU 使用率を削減する問題を修正Windows Server 2016
+- Defender サービスの改ざん復元の改善
+
+### <a name="known-issues"></a>既知の問題
+既知の問題はありません
+<br/>
+</details><details>
 <summary> 2021 年 9 月 (プラットフォーム: 4.18.2109.6 |エンジン: 1.1.18600.4)</summary>
 
 &ensp;セキュリティ インテリジェンス更新プログラムのバージョン: **1.351.7.0**<br/>
@@ -95,7 +114,7 @@ Microsoft Defender ウイルス対策プラットフォーム更新 [プログ�
 &ensp;エンジン: **1.1.18600.4**<br/>
 &ensp;サポート フェーズ: **セキュリティと重要な更新プログラム**<br/>
 
-エンジンのバージョン: 1.1.18600.4 セキュリティ インテリジェンス更新プログラムのバージョン: 更新プログラム
+エンジンのバージョン: 1.1.18600.4 セキュリティ インテリジェンス更新プログラムのバージョン: 1.351.7.0
 
 ### <a name="whats-new"></a>新機能
 - エンジンとプラットフォームの更新プログラムMicrosoft Defender ウイルス対策新しい遅延リング。 このリングをオプトインするデバイスは、48 時間の遅延で更新プログラムを受信します。 新しい遅延リングは、重要な環境にのみ推奨されます。 [「Microsoft Defender 更新プログラムの段階的なロールアウト プロセスの管理」を参照してください](manage-gradual-rollout.md)。
@@ -124,14 +143,21 @@ Microsoft Defender ウイルス対策プラットフォーム更新 [プログ�
 ### <a name="known-issues"></a>既知の問題
 既知の問題はありません
 <br/>
-</details><details>
+</details>
+
+
+### <a name="previous-version-updates-technical-upgrade-support-only"></a>以前のバージョンの更新プログラム: 技術アップグレードのサポートのみ
+
+新しいパッケージ バージョンがリリースされると、以前の 2 つのバージョンのサポートはテクニカル サポートにのみ縮小されます。 このセクションに記載されているバージョンより古いバージョンで、テクニカル アップグレード のサポートにのみ提供されます。<br/><br/>
+
+<details>
 <summary> 2021 年 7 月 (プラットフォーム: 4.18.2107.4 |エンジン: 1.1.18400.4)</summary>
 
 &ensp;セキュリティ インテリジェンス更新プログラムのバージョン: **1.345.13.0**<br/>
 &ensp;リリース日: **2021** 年 8 月 5 日<br/>
 &ensp;プラットフォーム: **4.18.2107.4**<br/>
 &ensp;エンジン: **1.1.18400.4**<br/>
-&ensp;サポート フェーズ: **セキュリティと重要な更新プログラム**<br/>
+&ensp;サポート フェーズ: **テクニカル アップグレード のサポート (のみ)**<br/>
 
 ### <a name="whats-new"></a>新機能
 - ポータブル デバイスのデバイス制御Windows追加
@@ -141,13 +167,9 @@ Microsoft Defender ウイルス対策プラットフォーム更新 [プログ�
 
 ### <a name="known-issues"></a>既知の問題
 既知の問題はありません
+
 <br/>
-</details>
-
-### <a name="previous-version-updates-technical-upgrade-support-only"></a>以前のバージョンの更新プログラム: 技術アップグレードのサポートのみ
-
-新しいパッケージ バージョンがリリースされると、以前の 2 つのバージョンのサポートはテクニカル サポートにのみ縮小されます。 このセクションに記載されているバージョンより古いバージョンで、テクニカル アップグレード のサポートにのみ提供されます。
-<details>
+</details><details>
 <summary> 2021 年 6 月 (プラットフォーム: 4.18.2106.5 |エンジン: 1.1.18300.4)</summary>
 
 &ensp;セキュリティ インテリジェンス更新プログラムのバージョン: **1.343.17.0**<br/>

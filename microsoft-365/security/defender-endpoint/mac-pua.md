@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender for Endpoint on Mac で望ましくない可能性のあるアプリケーションを検出してブロックする
-description: Microsoft Defender on Endpoint for Mac を使用して、望ましくない可能性があるアプリケーション (PUA) を検出してブロックします。
+description: macOS 上の Microsoft Defender for Endpoint を使用して、望ましくない可能性があるアプリケーション (PUA) を検出してブロックします。
 keywords: microsoft、 defender、 Microsoft Defender for Endpoint, mac, pua, pus
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 61ff0fd32deb6f7fb607be6f723b990da1fa4846
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f372835ebcdd64225f3eb3952dc6b227d1a70627
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60169817"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60699187"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-on-macos"></a>MacOS 上のエンドポイント用 Microsoft Defender を使用して、望ましくない可能性のあるアプリケーションを検出およびブロックする
 
@@ -39,7 +39,7 @@ macOS 上の Microsoft Defender for Endpoint の望ましくない可能性の�
 
 これらのアプリケーションは、ネットワークがマルウェアに感染するリスクを高め、マルウェアの感染を特定しにくくし、アプリケーションのクリーンアップで IT リソースを無駄にする可能性があります。
 
-## <a name="how-it-works"></a>しくみ
+## <a name="how-it-works"></a>メカニズム
 
 Microsoft Defender for Endpoint on macOS では、PUA ファイルを検出して報告できます。 ブロック モードで構成すると、PUA ファイルは検疫に移動されます。
 

@@ -6,7 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-ms.author: v-lsaldanha
+ms.author: dansimp
 author: lovina-saldanha
 ms.reviewer: dansimp
 manager: dansimp
@@ -14,12 +14,12 @@ audience: ITPro
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: e60ca593f9cea750473212daca834b2e63711ace
-ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
+ms.openlocfilehash: da6a875a7d9fc5a3445a18312245ffebdf6503c0
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59497610"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60667116"
 ---
 # <a name="device-control-printer-protection"></a>デバイス制御のプリンター保護
 

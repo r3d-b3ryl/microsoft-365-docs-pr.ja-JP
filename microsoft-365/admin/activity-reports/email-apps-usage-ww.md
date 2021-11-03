@@ -19,16 +19,16 @@ search.appverid:
 - GEA150
 ms.assetid: c2ce12a2-934f-4dd4-ba65-49b02be4703d
 description: メール アプリの使用状況レポートを取得して、ユーザーが使用しているメール アプリと Exchange Onlineに接続Outlookを確認する方法について学習します。
-ms.openlocfilehash: 9da0900723928fe091e7415482ba2cb50ff4f5f1
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 601258d721f817438f0bd6a08d98d73aa22b7afb
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553294"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60653086"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---email-apps-usage"></a>Microsoft 365管理センターのレポート - メール アプリの使用状況
 
-Microsoft 365 の [**レポート**] ダッシュボードには、組織内での製品全体に関するアクティビティが表示されます。 これにより、個別の製品レベルのレポートを詳細に確認して、各製品内のアクティビティについてより詳しく知ることができます。 [レポートの概要に関するトピック](activity-reports.md)を参照してください。 電子メール アプリの使用状況レポートでは、メール アプリの数を確認できます。Exchange Online。 それにより、サポートされていないバージョンを使用しているユーザーを、サポートされているバージョンの Outlook をインストールするようにフォローアップできます。
+Microsoft 365 の [レポート] ダッシュボードには、組織内での製品全体に関するアクティビティが表示されます。 これにより、個別の製品レベルのレポートを詳細に確認して、各製品内のアクティビティについてより詳しく知ることができます。 [レポートの概要に関するトピック](activity-reports.md)を参照してください。 電子メール アプリの使用状況レポートでは、メール アプリの数を確認できます。Exchange Online。 それにより、サポートされていないバージョンを使用しているユーザーを、サポートされているバージョンの Outlook をインストールするようにフォローアップできます。
   
 ## <a name="how-to-get-to-the-email-apps-report"></a>電子メール アプリ レポートにアクセスする方法
 

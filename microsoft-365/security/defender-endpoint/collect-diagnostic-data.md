@@ -17,14 +17,14 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3a4dc0b6a9faafe841efbd976b35631a8ac0febf
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f32300976136c8a7526d62547515d739a681e51c
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60193077"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60665791"
 ---
-# <a name="collect-microsoft-defender-av-diagnostic-data"></a>Microsoft Defender AV 診断データの収集
+# <a name="collect-microsoft-defender-antivirus-diagnostic-data"></a>診断Microsoft Defender ウイルス対策収集する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,7 +33,7 @@ ms.locfileid: "60193077"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-この記事では、Microsoft Defender AV を使用するときに発生する可能性がある問題のトラブルシューティングに役立つ Microsoft サポートチームとエンジニアリング チームが使用できる診断データを収集する方法について説明します。
+この記事では、Microsoft のサポートチームとエンジニアリング チームが使用できる診断データを収集して、ユーザーがソフトウェア を使用するときに発生する可能性がある問題のトラブルシューティングに役立つ方法についてMicrosoft Defender ウイルス対策。
 
 > [!NOTE]
 > 調査または対応プロセスの一環として、デバイスから調査パッケージを収集できます。 次の方法: デバイスから [調査パッケージを収集します](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)。
@@ -48,10 +48,10 @@ ms.locfileid: "60193077"
 
     c. 管理者の資格情報を指定するか、プロンプトを承認します。
 
-2. Microsoft Defender ディレクトリに移動します。 既定では `C:\Program Files\Windows Defender` です。
+2. ディレクトリに移動し、Microsoft Defender ウイルス対策。 既定では `C:\Program Files\Windows Defender` です。
 
    > [!NOTE]
-   > 更新された Microsoft [Defender プラットフォーム](https://support.microsoft.com/help/4052623/update-for-microsoft-defender-antimalware-platform)バージョンを実行している場合は、次の `MpCmdRun` 場所から実行してください `C:\ProgramData\Microsoft\Windows Defender\Platform\<version>` 。
+   > 更新された Microsoft [Defender](https://support.microsoft.com/help/4052623/update-for-microsoft-defender-antimalware-platform)マルウェア対策プラットフォームバージョンを実行している場合は、次の `MpCmdRun` 場所から実行してください `C:\ProgramData\Microsoft\Windows Defender\Platform\<version>` 。
 
 3. 次のコマンドを入力し、Enter キーを **押します。**
 
@@ -62,7 +62,11 @@ ms.locfileid: "60193077"
 4. さまざまな.cabを含むファイルが生成されます。 ファイルの場所は、コマンド プロンプトの出力で指定されます。 既定では、場所は `C:\ProgramData\Microsoft\Microsoft Defender\Support\MpSupportFiles.cab` .
 
    > [!NOTE]
-   > cab ファイルを別のパスまたは UNC 共有にリダイレクトするには、次のコマンドを使用します。 `mpcmdrun.exe -GetFiles -SupportLogLocation <path>`  <br/>詳細については、「診断データ [を UNC 共有にリダイレクトする」を参照してください](#redirect-diagnostic-data-to-a-unc-share)。
+   > cab ファイルを別のパスまたは UNC 共有にリダイレクトするには、次のコマンドを使用します。
+   >
+   > `mpcmdrun.exe -GetFiles -SupportLogLocation <path>`
+   >
+   > 詳細については、「診断データ [を UNC 共有にリダイレクトする」を参照してください](#redirect-diagnostic-data-to-a-unc-share)。
 
 5. これらのファイル.cab、Microsoft サポートからアクセスできる場所にコピーします。 たとえば、パスワードで保護されたフォルダー OneDrive共有できるフォルダーがあります。
 

@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 28868e619fbfd51919ecfba470827b6b9a43eef6
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: e4bee56b3543c4c9286f94d6dc09e264cd092c81
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554098"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60659408"
 ---
 # <a name="supported-managed-security-service-providers"></a>サポート対象マネージド セキュリティ サービス プロバイダー
 
@@ -48,7 +48,7 @@ ms.locfileid: "60554098"
 ![追放ロゴの画像。](images/expel-logo.png)| [Microsoft Defender Endpoint のマネージ検出と応答を削除する](https://go.microsoft.com/fwlink/?linkid=2162430) | Expel は、Microsoft Defender Endpoint でセキュリティ リスクを検出することで、セキュリティを維持するのに役立ちます。
 ![Mandiant ロゴのイメージ。](images/mandiant-logo.png) | [エンドポイント向け Microsoft Defender の Mandiant Managed Defense (MDR)](https://go.microsoft.com/fwlink/?linkid=2164352) | Mandiant の 24 時間 365 日のフロントライン MDR インテリジェンスと専門知識を使用して、Defender for Endpoint を強化します。
 ![NTT セキュリティ ロゴのイメージ。](images/ntt-logo.png)| [NTT セキュリティ](https://go.microsoft.com/fwlink/?linkid=2095320) | NTT の EDR サービスは、エンドポイントとネットワーク全体で 24 時間 365 日&のセキュリティ監視を提供します
-![OneVinn ロゴのイメージ。](images/onevinn-logo.png) | [Onevinn MDR](https://go.microsoft.com/fwlink/?linkid=2155203)| 24 時間 365 日、Microsoft Defender と Azure Sentinel 上に構築されたマネージ検出と応答。Onevinn の脅威インテリジェンスが強化されています。
+![OneVinn ロゴのイメージ。](images/onevinn-logo.png) | [Onevinn MDR](https://go.microsoft.com/fwlink/?linkid=2155203)| 24 時間 365 日、Onevinn の脅威インテリジェンスが強化された、Microsoft 365 Defender および Azure Sentinel 上に構築された Managed Detection and Response。
 ![クォーラム サイバー ロゴのイメージ。](images/quorum-logo.png) | [クォーラム サイバー](https://go.microsoft.com/fwlink/?linkid=2155202)| セキュリティ エンジニアリング サービス&最先端の脅威ハンティング。
 ![赤いカナリアロゴの画像。](images/redcanary-logo.png)| [Red Canary](https://go.microsoft.com/fwlink/?linkid=2103852) | Red Canary は、モダン チームのセキュリティ運用パートナーです。MDR は数分で展開されます
 ![SecureWorks Managed Detection and Response Powered by Red Cloak ロゴの画像。](images/secureworks-logo.png)| [SecureWorks Managed Detection and Response Powered by Red Cloak](https://go.microsoft.com/fwlink/?linkid=2133634) | Secureworks は、脅威インテリジェンスと 20 年以上の経験を SaaS とマネージド セキュリティ ソリューションに組み合わせたもの
@@ -58,5 +58,5 @@ ms.locfileid: "60554098"
 ![Wortell のクラウド SOC ロゴのイメージ。](images/wortell-logo.png)| [Wortell のクラウド SOC](https://go.microsoft.com/fwlink/?linkid=2108415) | 24 時間 365 日のエンドポイント 対応を監視する 24 時間 365 日& Defender
 ![ゼロトラスト分析プラットフォーム (ZTAP) ロゴのイメージ。](images/ztap-logo.png)| [ゼロトラスト分析プラットフォーム (ZTAP)](https://go.microsoft.com/fwlink/?linkid=2090971) | アラートを 99% 削減し、モバイル デバイスからさまざまなセキュリティ機能にアクセスする
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [管理サービス セキュリティ プロバイダーの統合を構成する](configure-mssp-support.md)

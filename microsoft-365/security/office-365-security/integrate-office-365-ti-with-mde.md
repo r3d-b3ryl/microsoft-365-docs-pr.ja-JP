@@ -19,12 +19,12 @@ description: Microsoft Defender for Office 365 Microsoft Defender for Endpoint �
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c0d532f06ce4757e8bca7f337992706480916aba
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 289625785baf6184d1da15d4f241283277dd456b
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60149611"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60660929"
 ---
 # <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint とOffice 365 Microsoft Defender を使用する
 
@@ -39,7 +39,7 @@ Microsoft Defender for Office 365 Microsoft Defender for Endpoint と統合す�
 
 ![Microsoft Defender for Endpoint が有効になっている場合は、通知を含むデバイスの一覧を表示できます。](../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
 
-この例では、検出された電子メール メッセージの受信者が 4 つのデバイスを持ち、1 つはアラートを持っているのを確認できます。 デバイスのリンクをクリックすると、ポータル (以前は Microsoft Defender セキュリティ センター) [Microsoft 365 Defender](../defender-endpoint/microsoft-defender-security-center.md)ページが開きます。
+この例では、検出された電子メール メッセージの受信者が 4 つのデバイスを持ち、1 つはアラートを持っているのを確認できます。 デバイスのリンクをクリックすると、サイト ポータル ([](../defender-endpoint/microsoft-defender-security-center.md)以前は Microsoft 365 Defender) にページがMicrosoft Defender セキュリティ センター。
 
 > [!TIP]
 > 新しいMicrosoft 365 Defenderポータルは、ユーザーを置き換Microsoft Defender セキュリティ センター。 「Microsoft [Defender for Endpoint in Microsoft 365 Defender」を参照してください](../defender/microsoft-365-security-center-mde.md)。

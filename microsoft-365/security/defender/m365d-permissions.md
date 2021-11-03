@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ee78ead64f58cc90f43d556f5c1717753f672656
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5d18e9da81513a27786a0e53bdc296bcb353618b
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60169613"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60666890"
 ---
 # <a name="manage-access-to-microsoft-365-defender-with-azure-active-directory-global-roles"></a>グローバル ロールを使用Microsoft 365 DefenderアクセスAzure Active Directory管理する
 
@@ -48,7 +48,7 @@ ms.locfileid: "60169613"
 
 これらの役割を持つアカウントを確認するには、[ポータルの [アクセス許可Microsoft 365 Defender表示します](https://security.microsoft.com/permissions)。
 
-**カスタム ロール アクセス** は、Microsoft Defender 365 Microsoft 365 Defenderの新しい機能であり、特定のデータ、タスク、および機能へのアクセスを管理できます。 カスタム ロールは、グローバル Azure ADロールよりも多くの制御を提供し、必要な最小限の役割で必要なアクセスのみをユーザーに提供します。  カスタム ロールは、グローバル Azure ロールとカスタム ロールにADできます。 [カスタム ロールの詳細を参照してください](custom-roles.md)。
+**カスタム ロール アクセス** は、Microsoft Defender 365 Microsoft 365 Defenderの新しい機能であり、特定のデータ、タスク、および機能へのアクセスを管理できます。 カスタム ロールは、グローバル な役割Azure AD制御を提供し、必要な最小限の役割で必要なアクセスのみをユーザーに提供します。  カスタム ロールは、グローバル ロールとグローバル ロールAzure ADできます。 [カスタム ロールの詳細を参照してください](custom-roles.md)。
 
 > [!NOTE]
 > この記事は、グローバル ロールの管理にのみAzure Active Directoryします。 カスタムの役割ベースのアクセス制御の使用の詳細については、「役割ベースのアクセス制御のカスタム [ロール」を参照してください。](custom-roles.md)
@@ -69,6 +69,6 @@ Microsoft Defender for Endpoint Microsoft 365 Defenderアクセス制御 (RBAC) 
 
 ## <a name="related-topics"></a>関連トピック
 - [ユーザーの役割ベースのアクセス制御のカスタム ロールMicrosoft 365 Defender](custom-roles.md)
-- [Azure AD組み込みロール](/azure/active-directory/roles/permissions-reference)
+- [Azure AD組み込みの役割](/azure/active-directory/roles/permissions-reference)
 - [エンドポイント RBAC 用 Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/rbac)
 - [Cloud App Security roles](/cloud-app-security/manage-admins)

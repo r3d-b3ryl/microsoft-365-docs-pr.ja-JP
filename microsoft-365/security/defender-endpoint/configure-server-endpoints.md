@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3ea7429e4426c6904539da1d7ee056f9f248cbfe
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 60842a3132f159979a0c5f8798301cf4b530d82f
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587531"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60667342"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Microsoft Defender Windowsエンドポイント サービスへのオンボード サーバー
 
@@ -103,6 +103,7 @@ R2 および R2 および Windows Server 2012の以前Windows Server 2016実装�
   さらに、ネットワーク トラフィックが多いコンピューターでは、この機能を広く有効にする前に、環境でのパフォーマンス テストを強くお勧めします。 追加のリソース消費を考慮する必要がある場合があります。
  - R2 Windows Server 2012、ネットワーク イベントがタイムラインに設定されない場合があります。 この問題には、2021 年 10 月 12 日の月次ロールアップ[(KB5006714)](https://support.microsoft.com/topic/october-12-2021-kb5006714-monthly-rollup-4dc4a2cd-677c-477b-8079-dcfef2bda09e)の一部としてWindows更新プログラムが必要です。
  - オペレーティング システムのアップグレードはサポートされていません。 アップグレードする前にオフボードをアンインストールします。
+ - サーバー ロールの自動除外は、R2 ではWindows Server 2012されません。 除外の追加の詳細については、「現在サポートされているバージョンのコンピューターを実行している Enterprise コンピューターのウイルス スキャンの推奨事項」を[参照](https://support.microsoft.com/topic/virus-scanning-recommendations-for-enterprise-computers-that-are-running-currently-supported-versions-of-windows-kb822158-c067a732-f24a-9079-d240-3733e39b40bc)Windows。
 
 ## <a name="integration-with-azure-defender"></a>Azure Defender との統合
 Microsoft Defender for Endpoint は、Azure Defender とシームレスに統合されます。 サーバーを自動的にオンボードし、Azure Defender によって監視されるサーバーを Defender for Endpoint に表示し、Azure Defender のお客様として詳細な調査を行います。 
@@ -176,7 +177,7 @@ Msiexec /x md4ws.msi /quiet
 スイッチ `/quiet` は、すべての通知を非表示にします。
 
 > [!NOTE]
-> Microsoft Defender ウイルス対策パッシブ モードには自動的には入らない。 Microsoft 以外のウイルス対策/マルウェア対策Microsoft Defender ウイルス対策を実行している場合は、パッシブ モードで実行するアプリケーションを設定できます。 コマンド ライン インストールの場合、オプションでは、干渉を回避するために、Microsoft Defender ウイルス対策 `FORCEPASSIVEMODE=1` コンポーネントをパッシブ モードに直ちに設定します。 次に、EDR Block のような機能をサポートするためにオンボーディング後に Defender がパッシブ モードを維持するには、"ForceDefenderPassiveMode" レジストリ キーを設定します。
+> Microsoft Defender ウイルス対策パッシブ モードには自動的には入らない。 Microsoft 以外のウイルス対策/マルウェア対策Microsoft Defender ウイルス対策を実行している場合は、パッシブ モードで実行するアプリケーションを設定できます。 コマンド ライン インストールの場合、オプションでは、干渉を回避するために、Microsoft Defender ウイルス対策 `FORCEPASSIVEMODE=1` コンポーネントをパッシブ モードに直ちに設定します。 次に、EDR Block のような機能をサポートするためにオンボーディング後に Defender ウイルス対策がパッシブ モードに維持されるのを確認するには、"ForceDefenderPassiveMode" レジストリ キーを設定します。
 >
 > 詳細については、「Need [to set Microsoft Defender ウイルス対策パッシブ モード」を参照してください](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server)。
 > - 現在、Windows Server 2019 および Windows Server 2022 Microsoft エンドポイント マネージャーオンボード パッケージがスクリプトを出荷しています。 Configuration Manager でスクリプトを展開する方法の詳細については、「Configuration Manager の [パッケージとプログラム」を参照してください](/configmgr/apps/deploy-use/packages-and-programs)。
@@ -218,20 +219,18 @@ Windows Server 2019 および Windows Server 2022 Microsoft エンドポイン�
 
     2. 次の PowerShell コマンドを実行して、パッシブ モードが構成されていることを確認します。
     
-    ```PowerShell
-    Get-WinEvent -FilterHashtable @{ProviderName="Microsoft-Windows-Sense" ;ID=84}
-    ```
+        ```PowerShell
+        Get-WinEvent -FilterHashtable @{ProviderName="Microsoft-Windows-Sense" ;ID=84}
+        ```
         
-    > [!NOTE]
-    >
-    > - Azure Defender for Servers と Microsoft Defender for Endpoint の統合は、Windows Server 2022、Windows [Server 2019、および Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)をサポートするように拡張されました。
-    > - この統合を利用したサーバー エンドポイントの監視は、ユーザーのOffice 365 GCCされています。
-
-      
+        > [!NOTE]
+        >
+        > - Azure Defender for Servers と Microsoft Defender for Endpoint の統合は、Windows Server 2022、Windows [Server 2019、および Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)をサポートするように拡張されました。
+        > - この統合を利用したサーバー エンドポイントの監視は、ユーザーのOffice 365 GCCされています。
 
     3. パッシブ モード イベントを含む最近のイベントが見つかったこと確認します。
     
-     ![パッシブ モード検証結果のイメージ](images/atp-verify-passive-mode.png)
+       ![パッシブ モード検証結果のイメージ](images/atp-verify-passive-mode.png)
 
 > [!IMPORTANT]
 >
@@ -295,7 +294,7 @@ Windows 10 クライアント デバイスで使用できるのと同じ方法�
 >[!NOTE]
 >*他の Windows サーバー バージョンのこれらのオフボード手順は、MMA を必要とする Windows Server 2016 および Windows Server 2012 R2 用の以前の Microsoft Defender for Endpoint を実行している場合にも適用されます。 新しい未確認ソリューションに移行する手順は [、Microsoft Defender for Endpoint のサーバー移行シナリオにあります](/microsoft-365/security/defender-endpoint/server-migration)。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [以前のバージョンの Windows をオンボードする](onboard-downlevel.md)
 - [Windows 10 デバイスのオンボード](configure-endpoints.md)
 - [Windows 以外のデバイスをオンボードする](configure-endpoints-non-windows.md)

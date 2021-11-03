@@ -15,12 +15,12 @@ ms.collection:
 description: 管理者は、標準ポリシーと厳密なポリシー設定を、Exchange Online Protection (EOP) と Microsoft Defender の保護機能全体に適用する方法をOffice 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1ff58fb8ebb64c36ab157484fd0dbace9e9c0dfa
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e8058a9165ef97c82c2e600db0c98b14616bc175
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196479"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60666712"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP と Microsoft Defender でセキュリティ ポリシーを事前に設定Office 365
 
@@ -52,19 +52,28 @@ ms.locfileid: "60196479"
 - **標準保護**: ほとんどのユーザーに適したベースライン保護プロファイル。
 - **厳密な保護**: 選択したユーザー (高価値のターゲットまたは優先度の高いユーザー) に対して、より積極的な保護プロファイルを作成します。
 
-プロファイルが適用されるユーザーまたは適用されないユーザーを決定する条件と例外を含むルールを使用します。
+  [ **標準保護]** **および [厳密** な保護] では、プロファイルが適用されるユーザーまたは適用されないユーザーを決定する条件と例外を含むルールを使用します。
 
-使用可能な条件と例外は次のとおりです。
+  使用可能な条件と例外は次のとおりです。
 
-- **ユーザー**: 組織内で指定された 1 つ以上のメールボックス、メール ユーザー、またはメール連絡先。
-- **グループ**: 組織内で指定された配布グループ、メール対応セキュリティ グループ、または Microsoft 365 グループ。
-- **ドメイン**: 組織内で指定された [承認済みドメイン](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)のすべての受信者。
+  - **ユーザー**: 組織内で指定された 1 つ以上のメールボックス、メール ユーザー、またはメール連絡先。
+  - **グループ**: 組織内で指定された配布グループ、メール対応セキュリティ グループ、または Microsoft 365 グループ。
+  - **ドメイン**: 組織内で指定された [承認済みドメイン](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)のすべての受信者。
 
-各条件や例外は 1 回しか使用できませんが、条件や例外には複数の値を含めることができます。 同じ条件や例外に複数の値がある場合、OR ロジック (たとえば、_\<recipient1\>_ または _\<recipient2\>_) が適用されます。 a別の条件や例外がある場合は AND ロジック (たとえば、_\<recipient1\>_ かつ _\<member of group 1\>_) が適用されます。
+  各条件や例外は 1 回しか使用できませんが、条件や例外には複数の値を含めることができます。 同じ条件や例外に複数の値がある場合、OR ロジック (たとえば、_\<recipient1\>_ または _\<recipient2\>_) が適用されます。 a別の条件や例外がある場合は AND ロジック (たとえば、_\<recipient1\>_ かつ _\<member of group 1\>_) が適用されます。
+
+- **組み込みの保護**(Defender for Office 365): リンクと添付ファイルのセーフを有効セーフプロファイル。 この設定は、既定のポリシーを持ってセーフリンクと添付ファイルセーフ既定のポリシーを効果的に提供します。
+
+  > [!NOTE]
+  > 組 **み込みの保護の事前** 設定されたセキュリティ ポリシーは現在プレビューで、すべての組織で使用できるとは言え、変更される可能性があります。
+
+  組 **み込み保護の** 場合、既定では、すべての Defender で既定のセキュリティ ポリシーがオンOffice 365されます。 お勧めしませんが、ユーザー、グループ、およびドメインに基づいて例外を構成して、保護が特定のユーザーに適用されなくすることもできます。 
+
+ユーザーにポリシーを割り当てるまで **、Standard** および **Strict** の事前設定されたセキュリティ ポリシーは誰にも割り当てられていない。 これに対し、 **組み込みの保護** プリセット セキュリティ ポリシーは既定ですべての受信者に割り当てられますが、例外を構成できます。
 
 ### <a name="policies-in-preset-security-policies"></a>事前設定されたセキュリティ ポリシーのポリシー
 
-事前設定されたセキュリティ ポリシーでは、EOP および Microsoft Defender の各種保護機能の対応するポリシーを使用Office 365。 これらのポリシーは、Standard Protection _または_ **Strict Protection** の事前設定されたセキュリティ ポリシーを **ユーザー** に割り当てると作成されます。 これらのポリシーは変更できない。
+事前設定されたセキュリティ ポリシーでは、EOP および Microsoft Defender の各種保護機能の対応するポリシーを使用Office 365。 これらのポリシーは、Standard Protection _または_ **Strict Protection** の事前設定されたセキュリティ ポリシーを **ユーザー** に割り当てると作成されます。 これらのポリシーの設定は変更できない。
 
 - **Exchange Online Protection (EOP)** ポリシー : これには、Microsoft 365メールボックスを持Exchange Onlineスタンドアロンの EOP 組織が含Exchange Onlineされます。
 
@@ -73,22 +82,18 @@ ms.locfileid: "60196479"
   - [標準プリセット セキュリティ ポリシーと](set-up-anti-phishing-policies.md#spoof-settings)厳密な事前設定セキュリティ ポリシー (スプーフィング設定) という EOP フィッシング **対策** ポリシー。
 
 - **Microsoft Defender for Office 365 ポリシー**: これには、アドオン サブスクリプションの Microsoft 365 E5または Defender をOffice 365組織が含まれます。
-
   - Microsoft Defender のフィッシング対策ポリシーは、標準Office 365セキュリティポリシーと厳密な事前設定セキュリティ ポリシーと呼び、次のものが含まれます。
-
     - EOP [フィッシング対策](set-up-anti-phishing-policies.md#spoof-settings) ポリシーで使用できるスプーフィング設定と同じです。
     - [偽装設定](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
     - [高度なフィッシングのしきい値](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
+  - [セーフ セキュリティ ポリシー、](set-up-safe-links-policies.md)**厳密な** 事前設定セキュリティポリシー、組み込みの保護ポリシーという名前のリンク **ポリシー**。
+  - [セーフセキュリティ ポリシー](set-up-safe-attachments-policies.md) 、**厳密な** 事前設定セキュリティ ポリシー、組み込みの保護ポリシーという名前の添付ファイル **ポリシー**。
 
-  - [セーフセキュリティ ポリシーと](set-up-safe-links-policies.md)厳密 **な** 事前設定セキュリティ ポリシーという名前 **のリンク ポリシー**。
-
-  - [セーフセキュリティ ポリシーと](set-up-safe-attachments-policies.md)**厳密な** 事前設定セキュリティ ポリシーという名前の **添付ファイル ポリシー**。
-
-EOP 保護は、Microsoft Defender 以外のユーザーに適用して、保護Office 365注意してください。
+EOP 保護は、Microsoft Defender 以外のユーザーに適用して、Office 365できます。
 
 ### <a name="policy-settings-in-preset-security-policies"></a>事前設定されたセキュリティ ポリシーのポリシー設定
 
-保護プロファイルでポリシー設定を変更できない。 標準 **ポリシーと****厳密なポリシー設定** の値については [、「EOP](recommended-settings-for-eop-and-office365.md)および Microsoft Defender のセキュリティに関する推奨設定Office 365説明されています。
+保護プロファイルでポリシー設定を変更できない。 標準 **、****厳密、および組み** 込みの保護ポリシーの設定値については [、「EOP](recommended-settings-for-eop-and-office365.md)および Microsoft Defender のセキュリティに関する推奨設定Office 365されています。 
 
 ### <a name="order-of-precedence-for-preset-security-policies-and-other-policies"></a>事前設定されたセキュリティ ポリシーおよび他のポリシーの優先順位
 
@@ -97,11 +102,13 @@ EOP 保護は、Microsoft Defender 以外のユーザーに適用して、保護
 1. **厳密な保護事前** 設定のセキュリティ ポリシー
 2. **標準の保護の** 事前設定されたセキュリティ ポリシー
 3. カスタム セキュリティ ポリシー
-4. 既定のセキュリティ ポリシー
+4. **組み込みの保護の事前** 設定されたセキュリティ ポリシーと既定のセキュリティ ポリシー
 
-つまり、厳密な保護ポリシーの設定は、既定のポリシーの設定を上書きするカスタム ポリシーの設定を上書きする標準保護ポリシーの設定を上書きします。
+つまり、厳密な保護ポリシーの設定は、カスタム ポリシーの設定を上書きする標準保護ポリシーの設定を上書きします。これは、組み込みの保護事前設定セキュリティ ポリシー (セーフ Links と セーフ 添付ファイル) と既定のポリシー (スパム対策、マルウェア対策、フィッシング対策) の設定を上書きします。 
 
 たとえば、標準保護にセキュリティ設定が存在し、管理者がユーザーの標準保護を有効にしている場合、標準保護設定は、カスタム ポリシーまたは既定のポリシー (同じユーザーの場合) の設定に対して構成されている設定の代わりに適用されます。  特定のニーズを満たすために組織内の他のユーザーにカスタム ポリシーを適用する際に、標準または厳密な保護ポリシーのみを適用する組織の一部が所属している場合があります。
+
+**組み込みの保護** は、既存のリンクまたは添付ファイル ポリシーセーフ受信者セーフ影響を与えかねない。 標準保護、厳密な保護、またはカスタム セーフ リンクまたは セーフ 添付ファイル ポリシーを既に構成している場合、これらのポリシーは常に組み込み保護の前に適用されます。そのため、既存の事前設定ポリシーまたはカスタム ポリシーで既に定義されている受信者には影響はありません。  
 
 ## <a name="assign-preset-security-policies-to-users"></a>ユーザーに事前設定されたセキュリティ ポリシーを割り当てる
 
@@ -117,40 +124,61 @@ EOP 保護は、Microsoft Defender 以外のユーザーに適用して、保護
 
   詳細については、「[Exchange Online のアクセス許可](/exchange/permissions-exo/permissions-exo)」を参照してください。
 
-  **注**: Azure Active Directory の対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 管理センター 内の他の機能に必要なアクセス許可とアクセス許可がユーザーに付与Microsoft 365。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
+  **注**: Azure Active Directory の対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 管理センター 内の他の機能に必要なアクセス許可とアクセス許可がユーザーに付与Microsoft 365。 詳細については、[「管理者の役割について」](../../admin/add-users/about-admin-roles.md) を参照してください。
 
-### <a name="use-the-microsoft-365-defender-portal-to-assign-preset-security-policies-to-users"></a>ユーザーに事前Microsoft 365 Defenderポリシーを割り当てるには、このポータルを使用します。
+### <a name="use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users"></a>標準および厳密Microsoft 365 Defenderセキュリティ ポリシーをユーザーに割り当てるには、Microsoft 365 Defender ポータルを使用します。
 
 1. このポータルMicrosoft 365 Defender、[テンプレート ポリシー] セクションの&ルール脅威ポリシー&セキュリティ ポリシーの事前設定] に \>  \>  \> **移動** します。
 
-2. [標準 **保護] または [****厳密な保護] で、[** 編集] を **クリックします**。
+2. [事前設定 **されたセキュリティ ポリシー] ページで**、[標準 **保護]** セクションまたは [厳密な保護] セクションの [管理 **] を** クリックします。
 
-3. [ **標準保護の適用] または** **[厳密な保護の適用] ウィザードが** 起動します。 **[EOP 保護] ページで**[、EOP](#policies-in-preset-security-policies)保護が適用される内部受信者 (受信者の条件) を特定します。
+3. [ **標準保護の適用] または** **[厳密な保護の適用]** ウィザードは、フライアウトで開始します。 **[EOP 保護] ページで**[、EOP](#policies-in-preset-security-policies)保護が適用される内部受信者 (受信者の条件) を特定します。
    - **ユーザー**
    - **グループ**
    - **ドメイン**
 
    適正なボックスをクリックし、値の入力を開始し、結果で希望する値を選択します。 必要な回数だけこの処理を繰り返します。 既存の値を削除するには、削除をクリックします ![[削除] アイコン](../../media/m365-cc-sc-remove-selection-icon.png) 値の隣。
 
-   ユーザーやグループには、ほとんどの識別子 (名前、表示名、エイリアス、メールアドレス、アカウント名など) を使用できますが、対応する表示名が結果に表示されます。 ユーザーの場合、アスタリスク (\*) を単独で入力すると、使用可能なすべての値が表示されます。
+   ユーザーやグループには、ほとんどの識別子 (名前、表示名、エイリアス、メールアドレス、アカウント名など) を使用できますが、対応する表示名が結果に表示されます。ユーザーの場合、アスタリスク (\*) を単独で入力すると、使用可能なすべての値が表示されます。
 
-   - **これらのユーザー、グループ、およびドメインを除外する**: ポリシーが適用される内部の受信者に関する例外 (受信者の例外) を追加するには、このオプションを選択して例外を構成します。 設定と動作は、条件とまったく同じです。
+   - **これらのユーザー、グループ、およびドメインを除外する**: ポリシーが適用される内部の受信者に関する例外 (受信者の例外) を追加するには、このオプションを選択して例外を構成します。設定と動作は、条件とまったく同じです。
 
    完了したら、**[次へ]** をクリックします。
 
 4. microsoft Defender for Office 365 組織では **、Office 365** 保護が適用されるページに対して Defender に連れて行き [、microsoft Defender](#policies-in-preset-security-policies) for Office 365 保護が適用される内部受信者 (受信者の条件) を特定します。
 
-   設定と動作は **、EOP 保護がページに適用されるのとまったく同** じです。
+   設定と動作は、前の手順の **ページに適用される EOP** 保護とまったく同じです。
 
    完了したら、**[次へ]** をクリックします。
 
 5. [変更 **の確認と確認] ページで** 、選択内容を確認し、[確認] を **クリックします**。
 
-### <a name="use-the-microsoft-365-defender-portal-to-modify-the-assignments-of-preset-security-policies"></a>事前設定されたMicrosoft 365 Defender割り当てを変更するには、このポータルを使用します。
+### <a name="use-the-microsoft-365-defender-portal-to-modify-the-assignments-of-standard-and-strict-preset-security-policies"></a>標準および厳密Microsoft 365 Defenderセキュリティ ポリシーの割り当てを変更するには、このポータルを使用します。
 
-Standard Protection または **Strict** **Protection** セキュリティ ポリシーの割り当てを変更する手順は、事前設定されたセキュリティ ポリシーをユーザーに最初に割り当てた場合と [同じです](#use-the-microsoft-365-defender-portal-to-assign-preset-security-policies-to-users)。
+標準保護または厳密な保護の事前設定セキュリティポリシーの割り当てを変更する手順は、事前設定されたセキュリティ ポリシーをユーザーに最初に割り当てた場合と[同じです](#use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users)。
 
-既存の条件と例外 **を** 維持しながら、標準保護ポリシーまたは厳密な保護セキュリティ ポリシーを無効にするには、トグルを [無効] トグル オフ **に** ![ スライドします ](../../media/scc-toggle-off.png) 。 ポリシーを有効にするには、トグルを [有効] トグル **オンにスライド** ![ します ](../../media/scc-toggle-on.png) 。
+既存の条件と例外 **を** 維持しながら、標準保護ポリシーまたは厳密な保護事前設定セキュリティ ポリシーを無効にするには、トグルを [無効] トグル オフ **に** ![ スライドします ](../../media/scc-toggle-off.png) 。 ポリシーを有効にするには、トグルを [有効] トグル **オンにスライド** ![ します ](../../media/scc-toggle-on.png) 。
+
+### <a name="use-the-microsoft-365-defender-portal-to-modify-the-assignments-of-the-built-in-protection-preset-security-policy"></a>組み込Microsoft 365 Defenderセキュリティ ポリシーの割り当てを変更するには、このポータルを使用します。
+
+組み込みの保護事前設定のセキュリティ ポリシーは、すべての受信者に割り当てられているので、標準保護ポリシーまたは厳密な保護事前設定セキュリティ ポリシー、またはカスタム セーフ リンクまたは セーフ 添付ファイル ポリシーで定義されている受信者には影響を与えかねない。 
+
+そのため、通常、組み込みの保護の事前設定されたセキュリティ ポリシーに **対する例外は** 推奨しません。
+
+1. このポータルMicrosoft 365 Defender、[テンプレート ポリシー] セクションの&ルール脅威ポリシー&セキュリティ ポリシーの事前設定] に \>  \>  \> **移動** します。
+
+2. [セキュリティ **ポリシーの事前設定** ] ページで、[組み込みの保護] セクションで [除外の追加 (推奨しない **)]** **を選択** します。
+
+3. 表示される **[組** み込み保護から除外する] フライアウトで、組み込みの セーフ リンクと添付ファイルセーフから除外されている内部受信者を特定します。
+   - **ユーザー**
+   - **グループ**
+   - **ドメイン**
+
+   適正なボックスをクリックし、値の入力を開始し、結果で希望する値を選択します。 必要な回数だけこの処理を繰り返します。 既存の値を削除するには、削除をクリックします ![[削除] アイコン](../../media/m365-cc-sc-remove-selection-icon.png) 値の隣。
+
+   ユーザーやグループには、ほとんどの識別子 (名前、表示名、エイリアス、メールアドレス、アカウント名など) を使用できますが、対応する表示名が結果に表示されます。ユーザーの場合、アスタリスク (\*) を単独で入力すると、使用可能なすべての値が表示されます。
+
+   完了したら、**[保存]** をクリックします。
 
 ### <a name="how-do-you-know-these-procedures-worked"></a>正常な動作を確認する方法
 

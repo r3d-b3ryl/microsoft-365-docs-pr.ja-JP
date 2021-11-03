@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: フィッシング、マルウェア、その他のOffice 365から機密データを保護するために Microsoft Defender をセットアップします。
-ms.openlocfilehash: 60a84b972618444fcddc4165235eef909f4341c5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 89405628488d5a8574636025a614a3aac7e20dd9
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60178169"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60667784"
 ---
 # <a name="increase-threat-protection"></a>驚異の保護を強化する
 
@@ -100,7 +100,7 @@ ms.locfileid: "60178169"
 
 ユーザーのメールボックスにアクセスするハッカーは、メールを自動的に転送するメールボックスを設定することでメールを盗む可能性があります。 これは、ユーザーの認識がなくても発生する可能性があります。 これを防止するには、メール フロー ルールを構成します。
 
-メール トランスポート ルールを作成するには、この短い [ビデオを見](../../business-video/stop-email-auto-forward.md) るか、次の手順を実行します。
+メール トランスポート ルールを作成するには、次の手順を実行します。
 
 1. [管理] Microsoft 365 管理センター、[**管理センター] を選択** \> **Exchange。**
 

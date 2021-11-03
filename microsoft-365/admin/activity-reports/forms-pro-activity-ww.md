@@ -20,16 +20,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Dynamics 365 Customer Voice アクティビティ レポートを取得する方法については、Microsoft 365 の [レポート] ダッシュボードを使用Microsoft 365 管理センター。
-ms.openlocfilehash: 2eedcf65e95d2bf85dbf156b4e1ac2d540acdf46
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: d143728f8170ae9c12a6d007e9e256a23f7ff74d
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553426"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60650471"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---dynamics-365-customer-voice-activity"></a>Microsoft 365管理センターのレポート - Dynamics 365 Customer Voice アクティビティ
 
-Microsoft 365 の [**レポート**] ダッシュボードには、組織内での製品全体に関するアクティビティが表示されます。 これにより、個別の製品レベルのレポートを詳細に確認して、各製品内のアクティビティについてより詳しく知ることができます。 [レポートの概要トピック](activity-reports.md)を参照してください。
+Microsoft 365 の [レポート] ダッシュボードには、組織内での製品全体に関するアクティビティが表示されます。 これにより、個別の製品レベルのレポートを詳細に確認して、各製品内のアクティビティについてより詳しく知ることができます。 [レポートの概要トピック](activity-reports.md)を参照してください。
   
 たとえば、Dynamics 365 Customer Voice との対話を見て、Microsoft Dynamics 365 Customer Voice を使用するライセンスを持つすべてのユーザーのアクティビティを理解できます。 また、作成された Pro サーベイの数と、ユーザーが回答した Pro アンケートの数を確認することで、共同作業のレベルを理解するのにも役立ちます。 
   
