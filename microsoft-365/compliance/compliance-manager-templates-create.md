@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンス マネージャーで評価用のテンプレートを作成する方法について説明します。 書式設定されたファイルを使用してテンプレートを作成Excelします。
-ms.openlocfilehash: c2638d2425d505dcb15e1827e54c1a2d6492e6a7
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: be8d3356bd47289e3822133a2f97cf6349fad05c
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60334640"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60701635"
 ---
 # <a name="create-an-assessment-template-in-microsoft-compliance-manager"></a>Microsoft コンプライアンス マネージャーで評価テンプレートを作成する
 

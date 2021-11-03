@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 9b1bf2d20bb9f2084abadbc164bb668c3ebf174f
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 185de1d39f6d10f84ab5409772dbf0c1193544e7
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555994"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60701083"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>デバイスの検出に関するよく寄せられる質問
 
@@ -95,7 +95,7 @@ ms.locfileid: "60555994"
  セキュリティの推奨事項とダッシュボード ウィジェットは、ネットワーク内で安定しているデバイス用です。一時的なデバイス、ゲスト デバイス、その他を除く。 このアイデアは、組織の全体的なセキュリティ スコアを示す永続的なデバイスで推奨する方法です。
 
 ## <a name="can-i-onboard-unmanaged-devices-that-were-found"></a>検出された管理されていないデバイスをオンボードできますか?
- はい。 ネットワーク内の管理されていないエンドポイントは、ネットワークに脆弱性とリスクを導入します。 サービスにオンボーディングすると、セキュリティの可視性が向上します。 
+ はい。 管理されていないデバイスは手動でオンボードできます。 ネットワーク内の管理されていないエンドポイントは、ネットワークに脆弱性とリスクを導入します。 サービスにオンボーディングすると、セキュリティの可視性が向上します。 
 
 ## <a name="ive-noticed-that-unmanaged-device-health-state-is-always-active-why-is-that"></a>管理されていないデバイスの正常性状態が常に "Active" であるのに気付いたのですが、なぜですか?
 一時的に、管理されていないデバイスの正常性状態は、実際の状態に関係なく、デバイス インベントリの標準保持期間中に "Active" になります。

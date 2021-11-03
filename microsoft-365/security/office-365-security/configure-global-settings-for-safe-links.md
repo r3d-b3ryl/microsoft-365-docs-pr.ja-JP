@@ -18,12 +18,12 @@ ms.collection:
 description: 管理者は、Microsoft Defender for Office 365 の セーフ リンクのグローバル設定 ([次の URL をブロックする] リストと Office 365 アプリの保護) を表示および構成する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cc3906f2645c9bdc78caeb5c2535e1b851538982
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4386f0f1b6dee2b877790b3ae715d1fb1e5f535a
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199467"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60701515"
 ---
 # <a name="configure-global-settings-for-safe-links-in-microsoft-defender-for-office-365"></a>Microsoft Defender の [リンク] セーフのグローバル設定を構成するOffice 365
 
@@ -47,9 +47,9 @@ ms.locfileid: "60199467"
 
 Microsoft 365 Defender ポータルまたは PowerShell でグローバル セーフ リンクの設定を構成できます (Exchange Online PowerShell は、Exchange Online でメールボックスを持つ適格な Microsoft 365 組織に対して、組織のスタンドアロン EOP PowerShell を使用せずに構成できます。Exchange Onlineが、Microsoft Defender を使用して、Office 365サブスクリプションを作成します)。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- 組み込みまたは既定の セーフ リンク ポリシーはないので、[次の URL をブロックする] リストをアクティブにするには、少なくとも 1 つの セーフ リンク ポリシーを作成する必要があります。 手順については、「Microsoft Defender for セーフのリンク ポリシーをセットアップする[」を参照Office 365。](set-up-safe-links-policies.md)
+- 既定の セーフ リンク ポリシーは使用されませんが、組み込みの保護プリセット セキュリティ ポリシーは、すべての受信者 (カスタム セーフ リンク ポリシーで定義されていないユーザー) に セーフ リンク保護を提供します。 詳細については、「EOP でのセキュリティ ポリシーの事前設定」および[「Microsoft Defender for microsoft Defender for Office 365」 を参照してください](preset-security-policies.md)。 また、リンク ポリシーセーフ作成して、特定のユーザー、グループ、またはドメインに適用できます。 手順については、「Microsoft Defender for セーフのリンク ポリシーをセットアップする[」を参照Office 365。](set-up-safe-links-policies.md)
 
 - <https://security.microsoft.com> で Microsoft 365 Defender ポータルを開きます。 [リンク] ページに直接 **移動セーフを** 使用します <https://security.microsoft.com/safelinksv2> 。
 
@@ -63,7 +63,7 @@ Microsoft 365 Defender ポータルまたは PowerShell でグローバル セ�
 
   **注**:
 
-  - Microsoft 365 管理センターで、対応する Azure Active Directory の役割にユーザーを追加すると、ユーザーには、必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
+  - Microsoft 365 管理センターで、対応する Azure Active Directory のロールにユーザーを追加すると、ユーザーには、必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。詳しくは、「[管理者のロールについて](../../admin/add-users/about-admin-roles.md)」を参照してください。
   - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
 
 - リンクのグローバル設定の推奨値については、「セーフリンクのセーフ[を参照してください](recommended-settings-for-eop-and-office365.md#safe-links-settings)。

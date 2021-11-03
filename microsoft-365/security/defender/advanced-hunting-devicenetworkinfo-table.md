@@ -15,17 +15,15 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 5b7bd42a8d9cbfd93a45d36a8236fb858eeb0436
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 83441d7e3ce9ccde5297bc7492a0e35684933167
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209251"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60704501"
 ---
 # <a name="devicenetworkinfo"></a>DeviceNetworkInfo
 

@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b1b445f902445244f98c5dc8768c76a554098f73
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c110682e6090c013ffc3d13cd5fa78b1483c8d2d
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210163"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60703453"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-android-with-microsoft-intune"></a>Microsoft Intune を使用した Android 用 Microsoft Defender for Endpoint の展開
 
@@ -75,7 +75,7 @@ Android に Defender for Endpoint を展開する方法について、Intune ポ
 
     しばらくすると、Defender for Endpoint アプリが正常に作成され、ページの右上隅に通知が表示されます。
 
-    :::image type="content" alt-text="Defender Endpoint アプリMicrosoft エンドポイント マネージャー管理センター通知のイメージ。" source="images/86cbe56f88bb6e93e9c63303397fc24f.png" lightbox="images/86cbe56f88bb6e93e9c63303397fc24f.png":::
+    :::image type="content" alt-text="Defender for Endpoint Microsoft エンドポイント マネージャーの管理センター通知のイメージ。" source="images/86cbe56f88bb6e93e9c63303397fc24f.png" lightbox="images/86cbe56f88bb6e93e9c63303397fc24f.png":::
 
 5. 表示されるアプリ情報ページの [モニター]セクションで、[デバイスのインストール状態] を選択して、デバイスのインストールが正常に完了したと確認します。
 
@@ -109,7 +109,7 @@ Intune でサポートされる登録オプションの詳細については、�
 
     :::image type="content" alt-text="管理センター Microsoft エンドポイント マネージャー Google play のイメージ。" source="images/579ff59f31f599414cedf63051628b2e.png" lightbox="images/579ff59f31f599414cedf63051628b2e.png":::
 
-2. その後読み込まれる管理された Google Play ページで、検索ボックスに移動し **、Microsoft Defender を参照します。** 検索では、Managed Google Play に Microsoft Defender for Endpoint アプリが表示されます。 アプリの検索結果から Microsoft Defender for Endpoint アプリをクリックします。
+2. その後読み込まれる管理された Google Play ページで、検索ボックスに移動してと入力します `Microsoft Defender` 。 検索では、Managed Google Play に Microsoft Defender for Endpoint アプリが表示されます。 アプリの検索結果から Microsoft Defender for Endpoint アプリをクリックします。
 
     ![管理センター Microsoft エンドポイント マネージャーアプリ検索の画像。](images/0f79cb37900b57c3e2bb0effad1c19cb.png)
 
@@ -232,7 +232,7 @@ Defender for Endpoint は、Intune 経由で管理対象デバイスのデバイ
 
 4. **割り当て**
 
-   [割 **り当て]** ページで、このアプリ構成ポリシーを割り当てる   ユーザー グループを選択します。 [グループ **の選択]** をクリックして、該当するグループを含め、選択し、[次へ] を **クリックします**。 ここで選択したグループは、通常、エンドポイント Android アプリ用 Microsoft Defender を割り当てるのと同じグループです。
+   [割 **り当て]** ページで、このアプリ構成ポリシーを割り当てるユーザー グループを選択します。 [ **グループを選択** して含める] を選択し、該当するグループを選択し、[次へ] を **選択します**。 ここで選択したグループは、通常、エンドポイント Android アプリ用 Microsoft Defender を割り当てるのと同じグループです。
 
    ![デバイス構成プロファイル割り当てのイメージ。](images/4autosetupofvpn.png)
 

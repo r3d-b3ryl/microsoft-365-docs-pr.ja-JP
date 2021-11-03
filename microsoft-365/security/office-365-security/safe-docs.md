@@ -16,12 +16,12 @@ ms.collection:
 description: 詳細については、「セーフドキュメント」または「Microsoft 365 E5」をMicrosoft 365 E5 Security。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cd1bb71bee6a123ae698f1178e62a521409d4103
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 66093240f6ea9137bb9af361bfabc2598676e390
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60180708"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60703083"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Microsoft 365 E5 の安全なドキュメント
 
@@ -61,7 +61,7 @@ ms.locfileid: "60180708"
 
   > [!NOTE]
   >
-  > - Microsoft 365 管理センターで、対応する Azure Active Directory の役割にユーザーを追加すると、ユーザーには、必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
+  > - Microsoft 365 管理センターで、対応する Azure Active Directory のロールにユーザーを追加すると、ユーザーには、必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。詳しくは、「[管理者のロールについて](../../admin/add-users/about-admin-roles.md)」を参照してください。
   >
   > - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
 
@@ -69,7 +69,7 @@ ms.locfileid: "60180708"
 
 保護を維持するために、セーフドキュメントは分析のために[Microsoft Defender for Endpoint クラウド](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)にファイルを送信します。 Microsoft Defender for Endpoint がデータを処理する方法の詳細については [、Microsoft Defender for Endpoint データストレージとプライバシーを参照してください](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)。
 
-ドキュメントから送信セーフは、分析に必要な時間 (通常は 24 時間未満) を超えて Defender に保持されません。
+セーフドキュメントによって送信されたファイルは、分析に必要な時間 (通常は 24 時間未満) を超えて Defender for Endpoint に保持されません。
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-safe-documents"></a>[ドキュメント] Microsoft 365 Defenderを構成するには、セーフ ポータルを使用します。
 
@@ -109,7 +109,7 @@ Set-AtpPolicyForO365 -EnableSafeDocs $true -AllowSafeDocsOpen $false
 ドキュメント機能へのアクセスを選択的に許可またはブロックするセーフ、次の手順を実行します。
 
 1. この記事セーフ説明したように、Microsoft 365 Defenderまたは PowerShell Exchange Onlineドキュメントを有効にしてください。
-2. Azure AD PowerShell を使用して、「特定のライセンス プランに対して特定の Microsoft 365 サービスを無効にする」の説明に従って、特定のユーザーの セーフ ドキュメントを[無効にします](/microsoft-365/enterprise/disable-access-to-services-with-microsoft-365-powershell#disable-specific-microsoft-365-services-for-specific-users-for-a-specific-licensing-plan)。
+2. PowerShell Azure ADを使用して、特定のセーフの特定のユーザーに対して特定の Microsoft 365 サービスを無効にする」の説明に従って、ドキュメントを無効[にします](/microsoft-365/enterprise/disable-access-to-services-with-microsoft-365-powershell#disable-specific-microsoft-365-services-for-specific-users-for-a-specific-licensing-plan)。
 
   PowerShell で無効にするサービス プランの名前は **SAFEDOCS です**。
 

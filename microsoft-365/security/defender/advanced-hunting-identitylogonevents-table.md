@@ -1,7 +1,7 @@
 ---
 title: 高度なハンティング スキーマの IdentityLogonEvents テーブル
 description: 高度なハンティング スキーマの IdentityLogonEvents テーブルで Active Directory によって記録される認証イベントについて説明します。
-keywords: 高度なハンティング、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、data type、description、IdentityLogonEvents、Azure AD、Active Directory、Microsoft Defender for Identity、IDENTITY
+keywords: 高度な検索、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、data type、description、IdentityLogonEvents、Azure AD、Active Directory、Microsoft Defender for Identity、IDENTITY
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -15,17 +15,15 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 1584fbaa23822af0821228a50f487517f74c02ca
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5ce24bfafe690252535579d81b702db025f69217
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174509"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60704291"
 ---
 # <a name="identitylogonevents"></a>IdentityLogonEvents
 
@@ -41,7 +39,7 @@ ms.locfileid: "60174509"
 > テーブルでサポートされるイベントの種類 (値) の詳細については、セキュリティ センターで使用できる組み込みのスキーマ参照 `ActionType` を使用します。
 
 >[!NOTE]
->次の表はAzure Active Directory (Azure AD) ログオン アクティビティ 、Cloud App Security、特に ActiveSync および他のレガシ プロトコルを使用した対話型サインインと認証アクティビティについて説明します。 この表では使用できない非対話型ログオンは、Azure 監査ログADできます。 [詳細については、「アプリを接続するCloud App Security」をMicrosoft 365](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)
+>次の表は、Cloud App Security Azure Active Directory (Azure AD) ログオン アクティビティ 、特に ActiveSync および他のレガシ プロトコルを使用した対話型サインインと認証アクティビティについて説明します。 この表では使用できない非対話型ログオンは、監査ログAzure AD表示できます。 [詳細については、「アプリを接続するCloud App Security」をMicrosoft 365](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)
 
 高度な捜索スキーマのその他のテーブルの詳細については、「[高度な捜索のリファレンス](advanced-hunting-schema-tables.md)」 を参照してください。
 
@@ -57,7 +55,7 @@ ms.locfileid: "60174509"
 | `AccountDomain` | string | アカウントのドメイン |
 | `AccountUpn` | string | アカウントのユーザー プリンシパル名 (UPN) |
 | `AccountSid` | string | アカウントのセキュリティ識別子 (SID) |
-| `AccountObjectId` | string | Azure アカウントのアカウントの一意AD |
+| `AccountObjectId` | string | アカウントの一意の識別子は、Azure AD |
 | `AccountDisplayName` | string | アドレス帳に表示されるアカウント ユーザーの名前。 通常、指定または名、ミドル イニシエーション、姓または姓の組み合わせ。 |
 | `DeviceName` | string | デバイスの完全修飾ドメイン名 (FQDN) |
 | `DeviceType` | string | デバイスの種類 |

@@ -19,12 +19,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: bf1c7d2e47ef64e1c44744988f33a69898cfd412
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 690e4bf115ba4565a65b0414a763530627a03bbc
+ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209083"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60724454"
 ---
 # <a name="microsoft-defender-for-endpoint-in-microsoft-365-defender"></a>Microsoft Defender for Endpoint in <DICT__Microsoft⚐365⚐Defender>Microsoft 365 Defender</DICT__Microsoft⚐365⚐Defender>
 
@@ -44,7 +44,7 @@ ms.locfileid: "60209083"
 
 | Microsoft Defender セキュリティ センター | Microsoft 365 Defender |
 |---------|---------|
-| ダッシュボード <ul><li>セキュリティ操作</li><li>脅威の分析</li></ul>  |ホーム <ul><li>脅威の分析</li></ul>   |
+| ダッシュボード <ul><li>セキュリティ操作</li><li>脅威の分析</li></ul>  |Home <ul><li>脅威の分析</li></ul>   |
 | インシデント | インシデントとアラート |
 | デバイス一覧 | デバイス一覧 |
 | アラート キュー | インシデントとアラート |
@@ -57,7 +57,7 @@ ms.locfileid: "60209083"
 | 構成管理環境 | 構成管理環境 |
 | Settings | Settings | 
 
-強化[されたMicrosoft 365 Defender機能](overview-security-center.md)は、電子メール、コラボレーション、ID、デバイスの脅威を保護、検出、調査、および対応するセキュリティ機能 [https://security.microsoft.com](https://security.microsoft.com) を組み合わせた機能です。 これにより、既存の Microsoft セキュリティ ポータルの機能が統合され、Microsoft Defender セキュリティ センターコンプライアンス センター Office 365セキュリティ &されます。
+強化[されたMicrosoft 365 Defender機能](microsoft-365-defender.md#the-microsoft-365-defender-portal)は、電子メール、コラボレーション、ID、デバイスの脅威を保護、検出、調査、および対応するセキュリティ機能 [https://security.microsoft.com](https://security.microsoft.com) を組み合わせた機能です。 これにより、既存の Microsoft セキュリティ ポータルの機能が統合され、Microsoft Defender セキュリティ センターコンプライアンス センター Office 365セキュリティ &されます。
 
 この記事では、Microsoft Defender セキュリティ センターの変更点と改善点の一部について説明Microsoft 365 Defender。 ただし、注意が必要な新しい要素と更新された要素があります。
 
@@ -77,7 +77,7 @@ Microsoft Defender for Endpoint in Microsoft 365 Defender では[、Microsoft De
 
 次の情報をMicrosoft 365 Defenderします [https://security.microsoft.com](https://security.microsoft.com) 。
 
-利点の詳細: [Microsoft 365 Defender](overview-security-center.md)概要
+利点の詳細: [Microsoft 365 Defender](microsoft-365-defender.md)概要
 
 ## <a name="whats-changed"></a>変更内容
 
@@ -96,7 +96,7 @@ Microsoft Defender for Endpoint in Microsoft 365 Defender では[、Microsoft De
 
 | 分野 | 変更の説明 |
 |---------|---------|
-|検索   |  見出しの代わりに、Microsoft Defender for Endpoint 検索バーが [エンドポイント] セクションの下を移動しています。 引き続きデバイス、ファイル、ユーザー、URL、IPs、脆弱性、ソフトウェア、推奨事項を検索できます。  |
+|Search   |  見出しの代わりに、Microsoft Defender for Endpoint 検索バーが [エンドポイント] セクションの下を移動しています。 引き続きデバイス、ファイル、ユーザー、URL、IPs、脆弱性、ソフトウェア、推奨事項を検索できます。  |
 |[ダッシュボード](/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard)   |  これは、セキュリティ操作ダッシュボードです。 アクティブなアラートがトリガーされた数、どのデバイスが危険にさらされているか、どのユーザーが危険にさらされているのか、アラート、デバイス、およびユーザーの重大度レベルの概要を参照してください。 また、センサーの問題が発生したデバイス、サービス全体の正常性、未解決のアラートが検出された方法も確認できます。 |
 |デバイス一覧 | 変更はありません。 |
 |[脆弱性管理](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)    |    ナビゲーション ウィンドウに収まる名前が短縮されました。 すべてのページが下にある[脅威と脆弱性の管理]セクションと同じです。     |
@@ -182,6 +182,6 @@ Defender for Endpoint の電子メール 通知は引き続き使用できます
 
 ## <a name="related-information"></a>関連情報
 
-- [Microsoft 365 Defender](overview-security-center.md)
+- [Microsoft 365 Defender](microsoft-365-defender.md)
 - [Microsoft Defender for Endpoint in Microsoft 365 Defender](microsoft-365-security-center-mde.md)
 - [Microsoft Defender for Endpoint からアカウントをユーザーにリダイレクトMicrosoft 365 Defender](microsoft-365-security-mde-redirection.md)

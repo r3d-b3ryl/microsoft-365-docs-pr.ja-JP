@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 7fe31fe2e8e982c1ba8b8bff1aa3e08ce4f94fca
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4ca3058db2f3f2e8ac79c7388d9a68ead1f48d38
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60163050"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60704849"
 ---
 # <a name="view-attack-surface-reduction-events"></a>攻撃面の減少イベントを表示する
 
@@ -158,7 +158,7 @@ E5 サブスクリプションを持っている場合は、Windows セキュリ
 |エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|1|ACG の監査|
 |エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|2|ACG の実施|
 |エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|3|[Do not allow child processes] (子プロセスを許可しない) 監査|
-|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|4 |[Do not allow child processes] (子プロセスを許可しない) ブロック|
+|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|4|[Do not allow child processes] (子プロセスを許可しない) ブロック|
 |エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|5|[Block low integrity images] (整合性が低いイメージのブロック) 監査|
 |エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|6 |[Block low integrity images] (整合性が低いイメージのブロック) ブロック|
 |エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|7 |[Block remote images] (リモート イメージのブロック) 監査|
@@ -192,4 +192,8 @@ E5 サブスクリプションを持っている場合は、Windows セキュリ
 |攻撃面の縮小|Windows Defender (運用)|5007|設定が変更された場合のイベント|
 |攻撃面の縮小|Windows Defender (運用)|1122|監査モードでルールが発生した場合のイベント|
 |攻撃面の縮小|Windows Defender (運用)|1121|ブロック モードでルールが発生した場合のイベント|
-|
+
+>[!NOTE]
+> ユーザーの観点から見ると、ASR Warn モード通知は、攻撃表面の縮小ルールWindowsトースト通知として行います。
+>
+> ASR では、ネットワーク保護は監査モードとブロック モードのみを提供します。

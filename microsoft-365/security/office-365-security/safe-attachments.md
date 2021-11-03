@@ -24,8 +24,8 @@ ms.openlocfilehash: efe1b985a7df7e8066533bf3789e38120dd97787
 ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60668424"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60702877"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>セーフMicrosoft Defender の添付ファイル (Office 365
 

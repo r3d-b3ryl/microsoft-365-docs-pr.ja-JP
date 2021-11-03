@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: bf0341ec4c77b8f3c803d087ff52ad4bde40decd
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: c1a76bb0a82562a7c2a2f96e87b087f6fd09fcea
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60552603"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60701005"
 ---
 # <a name="device-discovery-overview"></a>デバイス検出の概要
 
@@ -115,12 +115,12 @@ Microsoft Defender for Endpoint によって検出されたが、まだオンボ
 
 デバイス検出では、Microsoft Defender for Endpoint オンボード デバイスをネットワーク データ ソースとして活用して、オンボードされていないデバイスにアクティビティを属性付けします。 つまり、Microsoft Defender for Endpoint オンボード デバイスがオンボードされていないデバイスと通信した場合、オンボードされていないデバイス上のアクティビティは、タイムライン上および高度なハンティング DeviceNetworkEvents テーブルで確認できます。
 
-新しいイベントは、伝送制御プロトコル (TCP) 接続ベースであり、現在の DeviceNetworkEvents スキームに適合します。 エンドポイントが有効な Microsoft Defender 以外からの Microsoft Defender for Endpoint 対応デバイスへの TCP 入力。 
+新しいイベントは、伝送制御プロトコル (TCP) 接続ベースであり、現在の DeviceNetworkEvents スキームに適合します。 エンドポイントが有効な Microsoft Defender 以外からの Microsoft Defender for Endpoint 対応デバイスへの TCP 入力。
 
 次のアクションの種類も追加されています。
 
-- ConnectionAttempt - TCP 接続を確立する試み (syn) 
-- ConnectionAcknowledged - TCP 接続が受け入れられたという確認応答 (syn\ack) 
+- ConnectionAttempt - TCP 接続を確立する試み (syn)
+- ConnectionAcknowledged - TCP 接続が受け入れられたという確認応答 (syn\ack)
 
 次のクエリ例を試してみてください。
 
@@ -134,7 +134,7 @@ DeviceNetworkEvents
 
 次のセクションでは、この機能が有効になっているときに Microsoft Defender for Endpoint または Microsoft 365 セキュリティ センターで確認する変更点を示します。
 
-1. Microsoft Defender to Endpoint にオンボードされていないデバイスは、デバイス インベントリ、高度なハンティング、API クエリに表示される必要があります。 これにより、クエリ結果のサイズが大幅に増加する可能性があります。
+1. Microsoft Defender for Endpoint にオンボードされていないデバイスは、デバイス インベントリ、高度な検索、API クエリに表示される必要があります。 これにより、クエリ結果のサイズが大幅に増加する可能性があります。
     1. Advanced Hunting の "DeviceInfo" テーブルと "DeviceNetworkInfo" テーブルには、検出されたデバイスが保持されます。 "OnboardingStatus" 属性を使用して、これらのデバイスをフィルター処理できます。
     2. 検出されたデバイスは、ストリーミング API クエリ結果に表示される予定です。 これらのデバイスは、クエリでフィルターを使用 `OnboardingStatus` してフィルター処理できます。
 2. 管理されていないデバイスは、定義された条件に基づいて既存のデバイス グループに割り当てられます。

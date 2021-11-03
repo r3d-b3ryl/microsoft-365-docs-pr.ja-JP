@@ -21,8 +21,8 @@ ms.openlocfilehash: ec44ec38a76cf0371804df25b698d77ba7b5aa22
 ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60668402"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60702019"
 ---
 # <a name="get-started-with-compliance-manager"></a>コンプライアンス マネージャーの使用を開始する
 

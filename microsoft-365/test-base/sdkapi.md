@@ -18,8 +18,8 @@ ms.openlocfilehash: 9e2c52d23c0e0c949059dc37eee4c1a59b35964e
 ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60677296"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60704945"
 ---
 # <a name="manage-your-resource-with-sdk--apis"></a>SDK および API を使用して&管理する
 オートメーションは、開発とアジャイル開発DevOps重要な側面です。 テスト ベースのリソースを管理しMicrosoft 365テスト結果をプログラムで取得し、CI ツールと統合しますか? テストベース API/SDK は、これらすべての達成に役立ちます。 

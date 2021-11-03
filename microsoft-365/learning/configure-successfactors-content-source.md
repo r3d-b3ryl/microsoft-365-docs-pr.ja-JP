@@ -4,39 +4,35 @@ ms.author: daisyfeller
 author: daisyfell
 manager: pamgreen
 ms.reviewer: chrisarnoldmsft
-ms.date: 10/07/2021
+ms.date: 10/27/2021
 audience: admin
 ms.topic: article
 ms.service: ''
 ms.prod: microsoft-365-enterprise
-search.appverid: ''
+search.appverid: MET150
 ms.collection:
 - enabler-strategic
 - m365initiative-viva-learning
 localization_priority: medium
 description: SAP SuccessFactors を学習コンテンツ ソースとして構成する方法については、Microsoft Viva ラーニング。
-ROBOTS: NOINDEX
-ms.openlocfilehash: 25e5d5df44afcbbf8c3dc11a66cfa8f254290420
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 8e5c8c920934883dec9cd020fbb97a87e546c38c
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60588055"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60703037"
 ---
 # <a name="configure-sap-successfactors-as-a-content-source-for-microsoft-viva-learning"></a>SAP SuccessFactors をコンテンツ ソースとして構成Microsoft Viva ラーニング
-
->[!NOTE]
->この機能はプレビューではサポートされていません。
 
 この記事では、SAP SuccessFactors をサードパーティのコンテンツ ソースとして構成する方法をMicrosoft Viva ラーニング。 まず、SuccessFactors ポータルでシステム構成を編集する必要があります。次に、システム 構成を完了する必要Microsoft 365 管理センター。
 
 >[!NOTE]
 >ビバ サービスからアクセスラーニングは、Microsoft 製品条項以外の条項に従います。 SAP SuccessFactors コンテンツおよび関連するサービスは、SAP SuccessFactors のプライバシーとサービスの条件に従います。
 
-## <a name="configure-the-successfactors-portal"></a>SuccessFactors ポータルを構成する
+## <a name="configure-in-your-successfactors-portal"></a>SuccessFactors ポータルで構成する
 
->[!Note]
-> この機能を有効にする管理者は、管理者アプリケーションの SuccessFactors ラーニング必要があります。
+>[!NOTE]
+>これらの手順を完了するには、SuccessFactors に管理者のアクセス許可が必要です。
 
 1. [システム管理構成システム構成] PARTNER_EXTRACTにアクセスして取得できる、構成を編集するために必要なワークフローを  >    >  **取得**  >  **PARTNER_EXTRACT。**
 
@@ -44,27 +40,30 @@ ms.locfileid: "60588055"
 
 3. 構成の次のパラメーターをPARTNER_EXTRACTします。 SuccessFactors でパートナー抽出構成を編集するには、SuccessFactors の **[システム構成** の編集] ワークフローのアクセス許可が必要です。
 
-- すべてのジョブの状態に関する顧客通知メール
-    - defaultJob.email=
-
-- Partner1
-    - PartnerID の最大長は 10 文字です。 これは、LMS テナント ID です。
-partners1.partnerID=
-
-- EncryptionKey は PGP 公開暗号化キーです。これは BEGIN PGP 公開キー ブロックと END PGP 公開キー ブロックの間のセクション全体です。
-    - partners1.encryptionKey=
-
-- KeyOwner が公開キーの User-ID にマップされる
-    - partners1.keyOwner=
-
-- 有効にできる値は "false" または "true" です。 パートナー抽出を有効にするには、"true" に設定します。
-    - partners1.enabled=
-
-<!--![Image of the PARTNER_EXTRACT configuration settings filled in.](../media/learning/sap-1.png)-->
+    - すべてのジョブの状態に関する顧客通知メール
+        - defaultJob.email=
+    
+    - Partner1
+        - PartnerID の最大長は 10 文字です。 これは、LMS テナント ID です。
+    partners1.partnerID=
+    
+    - EncryptionKey は PGP 公開暗号化キーです。これは BEGIN PGP 公開キー ブロックと END PGP 公開キー ブロックの間のセクション全体です。
+        - partners1.encryptionKey=
+    
+    - KeyOwner が公開キーの User-ID にマップされる
+        - partners1.keyOwner=
+    
+    - 有効にできる値は "false" または "true" です。 パートナー抽出を有効にするには、"true" に設定します。
+        - partners1.enabled=
+    
+    <!--![Image of the PARTNER_EXTRACT configuration settings filled in.](../media/learning/sap-1.png)-->
 
 SuccessFactors ポータルでこれらの手順を完了したら、次の手順でセットアップを完了Microsoft 365 管理センター。
 
-## <a name="configure-the-microsoft-365-admin-center"></a>サーバーを構成Microsoft 365 管理センター
+## <a name="configure-in-your-microsoft-365-admin-center"></a>サーバーで構成Microsoft 365 管理センター
+
+>[!NOTE]
+>これらの手順を実行するには、管理者のアクセス許可Microsoft 365必要があります。
 
 1. ユーザーに移動[Microsoft 365 管理センター。](https://admin.microsoft.com)
 
@@ -72,31 +71,27 @@ SuccessFactors ポータルでこれらの手順を完了したら、次の手�
 
 3. 構成の詳細を入力します。
 
-### <a name="configuration-details"></a>構成の詳細
+    **表示名**: SAP SuccessFactors カルーセルの目的の表示名を入力します。
 
-<!--![Image of the configuration details filled in in the Microsoft 365 admin center.](../media/learning/sap-2.png)-->
+    **SFTP ホスト URL**: **[LMS Admin Application System**  >  **Administration** Configuration  >  **System Configuration**  >    >  **CONNECTORS] に移動します**。 プロパティの値を取得 `connector.ftp.server` します。
 
-**表示名**: SAP SuccessFactors カルーセルの目的の表示名を入力します。
+    **ユーザー名**: SFTP ホスト URL に対して実行したのと同じ手順に従います。 プロパティの値を取得 `connector.ftp.userID` します。
 
-**SFTP ホスト URL**: **[LMS Admin Application System**  >  **Administration** Configuration  >  **System Configuration**  >    >  **CONNECTORS] に移動します**。 プロパティの値を取得 `connector.ftp.server` します。
+    **パスワード**: パスワードを入力します。 LMS アプリケーションの所有者に、パスワードの取得に関するヘルプを確認してください。
 
-**ユーザー名**: SFTP ホスト URL に対して実行したのと同じ手順に従います。 プロパティの値を取得 `connector.ftp.userID` します。
+    **フォルダーパス**: **[LMS Admin Application System**  >  **Administration**  >  **Configuration System**  >  **Configuration] PARTNER_EXTRACT**  >  に **移動** します。 プロパティの値を取得 `defaultFtp.path` します。
 
-**パスワード**: パスワードを入力します。 LMS アプリケーションの所有者に、パスワードの取得に関するヘルプを確認してください。
+    **クライアントのホスト URL**: これは BizX ドメイン URL です。 これを BizX ログイン URL から取得できます。 たとえば、BizX ログイン URL がホスト URL の場合は `organization.successfactors.com/sf/start/#/login` 、 です `organization.successfactors.com` 。
 
-**フォルダーパス**: **[LMS Admin Application System**  >  **Administration**  >  **Configuration System**  >  **Configuration] PARTNER_EXTRACT**  >  に **移動** します。 プロパティの値を取得 `defaultFtp.path` します。
+    **クライアントのラーニング URL**: ラーニング ドメイン モジュールの URL からこれを取得できます。 たとえば、ラーニング ドメイン URL が [宛先 URL] のラーニング `organization.scdemo.successfactors.com/learning/...` 場合です `organization.scdemo.successfactors.com` 。
 
-**クライアントのホスト URL**: これは BizX ドメイン URL です。 これを BizX ログイン URL から取得できます。 たとえば、BizX ログイン URL が "organization.successfactors.com/sf/start/#/login" の場合、ホスト URL は "organization.successfactors.com" です。
+    **PGP 秘密キー**: 暗号化解除用の PGP 秘密キー。これは BEGIN PGP 秘密キー ブロックと END PGP 秘密キー ブロックの間のセクション全体です。 生成されたキーとまったく同じ方法でキーをコピーする必要があります。新しい行の文字は削除しません。
 
-**クライアントのラーニング URL**: ラーニング ドメイン モジュールの URL からこれを取得できます。 たとえば、ラーニング ドメインの URL が "organization.scdemo.successfactors.com/learning/." の場合です。次に、ラーニング URL が "organization.scdemo.successfactors.com" になります。
+    **PGP のプライベート キー パス** フレーズ: IT 管理者または PGP キーを提供するチームからこの値を取得する必要があります。
 
-**PGP 秘密キー**: 暗号化解除用の PGP 秘密キー。これは BEGIN PGP 秘密キー ブロックと END PGP 秘密キー ブロックの間のセクション全体です。 生成されたキーとまったく同じ方法でキーをコピーする必要があります。新しい行の文字は削除しません。
+    **会社 ID**: SuccessFactors ポータルにサインインします。 プロファイル アイコンを選択し、[バージョンを **表示する] を設定。** 会社 ID は、こちらから確認できます。
 
-**PGP のプライベート キー パス** フレーズ: IT 管理者または PGP キーを提供するチームからこの値を取得する必要があります。
-
-**会社 ID**: SuccessFactors ポータルにサインインします。 プロファイル アイコンを選択し、[バージョンを **表示する] を設定。** 会社 ID は、こちらから確認できます。
-
-<!--![Image of the steps to find your company ID.](../media/learning/sap-3.png)-->
+4. [**保存] を** 選択して、次のページで SuccessFactors Microsoft Viva ラーニング。 コンテンツがビバ サービスで利用できるまでに遅れが生ラーニング。
 
 >[!Note]
 > SuccessFactors コースは、セットアップが成功したラーニング 7 日以内にビバ のページに表示されます。
@@ -104,10 +99,8 @@ SuccessFactors ポータルでこれらの手順を完了したら、次の手�
 >[!Note]
 > 組織内のすべてのユーザーは、テナント固有のすべてのコースを検出できますが、アクセスできるコースにのみアクセスおよび使用できます。 ユーザー固有のコンテンツ検出は、今後のリリースに向け計画されています。
 
-## <a name="data-residency"></a>データ所在地
+>[!NOTE]
+>テナント のメタデータは、データ ストアに集中して格納され、地域固有のデータ ストアには格納されません。
 
-テナント のメタデータは、データ ストアに集中して格納され、地域固有のデータ ストアには格納されません。
-
-## <a name="roles-and-permissions"></a>ロールと権限
-
-組織内のユーザーは、組織内で利用可能なすべてのコンテンツを検出できますが、アクセスできるコースのみを使用できます。
+>[!NOTE]
+>現在、組織内のすべてのユーザーは、テナント固有のすべてのコースを検出できますが、アクセスできるコースのみを使用できます。 ロールとアクセス許可に基づくユーザー固有のコンテンツ検出は、今後のリリースに向け計画されています。

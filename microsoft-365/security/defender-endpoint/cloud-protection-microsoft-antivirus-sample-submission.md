@@ -15,12 +15,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 6e86f4c7f311a356d38d5ecee5498e120190d7b9
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 1c7ef9883aacf9af0ee5474795c19adf1694fd9c
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554086"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60701731"
 ---
 # <a name="cloud-protection-and-sample-submission-in-microsoft-defender-antivirus"></a>クラウド保護とサンプル申請 (Microsoft Defender ウイルス対策
 
@@ -102,7 +102,7 @@ Intune、Configuration Manager、GPO、または PowerShell を使用した構�
 
 ## <a name="examples-of-metadata-sent-to-the-cloud-protection-service"></a>クラウド保護サービスに送信されるメタデータの例
 
-:::image type="content" source="images/cloud-protection-metadata-sample.png" alt-text="Microsoft Defender Cloud Protection に送信されるメタデータの例を示す画像":::
+:::image type="content" source="images/cloud-protection-metadata-sample.png" alt-text="イメージは、クラウド保護に送信されるメタデータの例をMicrosoft Defender ウイルス対策":::
 
 次の表に、クラウド保護によって分析のために送信されるメタデータの例を示します。
 
@@ -123,7 +123,7 @@ Intune、Configuration Manager、GPO、または PowerShell を使用した構�
 - SOC I、II、III
 - および PCI
 
-詳細については、以下のリソースをご覧ください。
+詳細については、以下の資料を参照してください。
 
 - [Azure コンプライアンス オファリング](/azure/storage/common/storage-compliance-offerings) 
 - [Service Trust Portal](https://servicetrust.microsoft.com)

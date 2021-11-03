@@ -18,12 +18,12 @@ ms.custom:
 description: 管理者は、Microsoft 365 Defender ポータルの Submits ポータルを使用して、不審なメール、フィッシングメール、スパム、その他有害な可能性のあるメッセージ、URL、および電子メールの添付ファイルを Microsoft に提出して再スキャンする方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1c41f8d06755e5d71143bc94090742079757be4b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 76eb0f56ca5cc5f4554a03fa3e11bbc6f9f684e0
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154532"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60705059"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>申請ポータルを使用して、疑わしいスパム、フィッシング、URL、ファイルを Microsoft に提出する
 
@@ -59,6 +59,11 @@ Exchange Online メールボックスを持つ組織では、管理者は Micros
 
 - 管理者は、メールボックスで引き続き使用できるメッセージであり、ユーザーまたは別の管理者によって削除されない場合は、30 日間の古いメッセージを送信できます。
 
+- 管理者の申請は、次の速度で調整されます。
+  - 15 分間の最大提出数: 150 件
+  - 24 時間の同じ申請: 3 つの申請
+  - 15 分間の同じ提出: 1 つの申請
+  
 - ユーザーがメッセージとファイルを Microsoft に送信する方法の詳細については、「メッセージとファイルを Microsoft に報告する」 [を参照してください](report-junk-email-messages-to-microsoft.md)。
 
 ## <a name="report-suspicious-content-to-microsoft"></a>疑わしいコンテンツを Microsoft に報告する
@@ -170,7 +175,7 @@ Exchange Online メールボックスを持つ組織では、管理者は Micros
 
    - エントリをグループ化するには、[グループ] を **クリック** し、ドロップダウン リストから次のいずれかの値を選択します。
      - **なし**
-     - **Type**
+     - **種類**
      - **理由**
      - **状態**
      - **再スキャンの結果**

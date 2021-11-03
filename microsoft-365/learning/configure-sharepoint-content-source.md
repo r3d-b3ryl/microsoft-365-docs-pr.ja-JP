@@ -1,143 +1,173 @@
 ---
-title: コンテンツ SharePointコンテンツ ソースとして構成する (Microsoft Viva ラーニング プレビュー)
-ms.author: chucked
-author: chuckedmonson
+title: ユーザー SharePointラーニング コンテンツ ソースとして追加Microsoft Viva ラーニング
+ms.author: daisyfeller
+author: daisyfell
 manager: pamgreen
 ms.reviewer: chrisarnoldmsft
-ms.date: ''
+ms.date: 10/27/2021
 audience: admin
 ms.topic: article
 ms.service: ''
 ms.prod: microsoft-365-enterprise
-search.appverid: ''
+search.appverid: MET150
 ms.collection:
 - enabler-strategic
 - m365initiative-viva-learning
-ms.localizationpriority: ''
-description: '[プレビュー] のSharePointコンテンツ ソースとしてMicrosoft Viva ラーニングする方法について学習します。'
-ms.openlocfilehash: c82f802dde29a5c837d9ef477abdddf8e00aac61
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+localization_priority: medium
+description: ユーザーの学習コンテンツ ソースSharePoint追加する方法についてMicrosoft Viva ラーニング。
+ms.openlocfilehash: 64a78979814a4708a6c1471a83d3468c9edb1b72
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60178697"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60701875"
 ---
-# <a name="configure-sharepoint-as-a-learning-content-source-for-microsoft-viva-learning-preview"></a>コンテンツ SharePointコンテンツ ソースとして構成する (Microsoft Viva ラーニング プレビュー)
+# <a name="add-sharepoint-as-a-content-source-for-microsoft-viva-learning"></a>ユーザー SharePointコンテンツ ソースとして追加Microsoft Viva ラーニング
 
-> [!NOTE]
-> この機能は、製品プレビューではまだ使用できません。
+組織独自のコンテンツSharePointビバ のコンテンツを利用できるよう、ラーニング コンテンツ ソースとして構成ラーニング。
 
-<!---
+>[!NOTE]
+> ビバ サービスからアクセスラーニングは、Microsoft 製品条項以外の条項に従います。 ホストされるコンテンツなど、ビバ ラーニングにSharePointコンテンツは、そのコンテンツに関連付けられたプライバシーとサービスの条件に従います。
 
-You can configure SharePoint as a learning content source to make your organization's own content available in Viva Learning (Preview).
+## <a name="overview"></a>概要
 
-## Overview
+ナレッジ管理者 (またはグローバル管理者) は[、ラーニング サービス](configure-sharepoint-content-source.md#learning-service)が構造化された一覧の形式で空の一元的な場所を作成できるサイト URL をSharePointします。 このリストは、アプリ コンテンツ リポジトリラーニング呼び出されます。 組織では、このリストを使用して、学習コンテンツを含むSharePointグループ間のリンクを作成できます。 管理者は、フォルダーの URL の一覧を収集およびキュレーションする責任があります。 これらのフォルダーには、ビバ で使用できるコンテンツのみを含める必要ラーニング。
 
-The knowledge admin (or global administrator) provides a site URL to where the Learning Service can create an empty centralized location—the Learning App Content Repository—in the form of a structured SharePoint list. This list can be used by your organization to house links to cross-company SharePoint folders that contain learning content. Admins are responsible for collecting and curating a list of URLs for folders. These folders should only include content that can be made available in Viva Learning (Preview).
+Viva ラーニングは、次のドキュメントの種類をサポートしています。
 
-Viva Learning (Preview) supports the following document types:
+- Word、PowerPoint、Excel、PDF
+- オーディオ (.m4a)
+- ビデオ (.mov、.mp4、.avi)
 
-- Word, PowerPoint, Excel, PDF
-- Audio (.m4a)
-- Video (.mov, .mp4, .avi)
+詳細については、「制限値[SharePoint参照してください](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits?redirectSourcePath=%252farticle%252fSharePoint-Online-limits-8f34ff47-b749-408b-abc0-b605e1f6d498)。
 
-For more information, see [SharePoint limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits?redirectSourcePath=%252farticle%252fSharePoint-Online-limits-8f34ff47-b749-408b-abc0-b605e1f6d498). 
+## <a name="multi-geo"></a>Multi-Geo
 
-## Permissions
+[Microsoft 365 Multi-geo](/microsoft-365/enterprise/microsoft-365-multi-geo)を使用している場合は、ナレッジ管理者が提供するサイト URL (ラーニング アプリ コンテンツ リポジトリがある場所) は、Microsoft 365 サブスクリプションが最初にプロビジョニングされた中央の場所に属している必要があります。 リポジトリにリンクされているフォルダーも、中央の場所に属している必要があります。 データラーニング要件に準拠するために、この制限が追加されました。
 
-Document library folder URLs can be collected from any SharePoint site in the organization. Viva Learning (Preview) follows all existing content permissions. Therefore, only content for which a user has permission to access is searchable and visible within Viva Learning (Preview). Any content within these folders will be searchable, but only content to which the individual employee has permissions can be used.
+[Microsoft 365複数地域は](/microsoft-365/enterprise/microsoft-365-multi-geo)、データ常駐の要件を満たして設計されています。 詳細については、「オンライン」の[「複数地域機能」をSharePointしてください](/microsoft-365/enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365)。
 
-Content deletion from your organization’s repository is not currently supported.
+## <a name="permissions"></a>アクセス許可
 
-To remove unintentionally surfaced content, follow these steps:
+ドキュメント ライブラリ フォルダー URL は、組織内の任意のSharePointから収集できます。 Viva ラーニング既存のすべてのコンテンツアクセス許可に従います。 したがって、ユーザーがアクセス許可を持つコンテンツだけが検索可能で、ビバ グループ内ラーニング。 これらのフォルダー内のコンテンツは検索可能ですが、個々の従業員がアクセス許可を持つコンテンツのみを使用できます。
 
-1. To restrict access to the document library, select the **Show actions** option, and then select **Manage access**.
+組織のリポジトリからのコンテンツの削除は現在サポートされていません。
 
-     ![Document library page in SharePoint showing Show actions option with Manage access highligted.](../media/learning/learning-sharepoint-permissions2.png)
+意図せずに表示されたコンテンツを削除するには、次の手順を実行します。
 
-2. Delete the original document within the document library.
+1. ドキュメント ライブラリへのアクセスを制限するには、[アクションの表示] オプション **を選択し** 、[アクセスの管理] **を選択します**。
 
-For more information, see [Sharing and permissions in the SharePoint modern experience](/sharepoint/modern-experience-sharing-permissions). 
+     ![[アクセスの管理] が強調表示SharePoint [アクションの表示] オプションを表示するドキュメント ライブラリ ページ。](../media/learning/learning-sharepoint-permissions2.png)
 
-## Learning Service
+2. ドキュメント ライブラリ内の元のドキュメントを削除します。
 
-The Learning Service uses the provided folder URLs to get metadata from all content stored in those folders. Within 24 hours of supplying the folder URL in the centralized repository, employees can search for and use your organization’s content within Viva Learning (Preview). All changes to content, including updated metadata and permissions, will also be applied in the Learning Service within 24 hours.
+詳細については、「最新のエクスペリエンス[での共有とアクセス許可SharePointを参照してください](/sharepoint/modern-experience-sharing-permissions)。
 
-## Configure SharePoint as a source
+## <a name="learning-service"></a>ラーニングサービス
 
-You must be a Microsoft 365 global administrator, SharePoint administrator, or knowledge admin to perform these tasks.
+ラーニングサービスは、指定されたフォルダー URL を使用して、それらのフォルダーに格納されているすべてのコンテンツからメタデータを取得します。 一元化されたリポジトリにフォルダー URL を指定して 24 時間以内に、従業員はビバ グループ内で組織のコンテンツを検索して使用ラーニング。 更新されたメタデータやアクセス許可を含むコンテンツに対する変更はすべて、24 時間以内に ラーニングサービスに適用されます。
 
-To configure SharePoint as a learning content sources in for Viva Learning (Preview), follow these steps:
+## <a name="configure-sharepoint-as-a-source"></a>ソースSharePoint構成する
 
-1. In the left navigation of the Microsoft 365 admin center, go to **Settings** > **Org settings**.
- 
-2. On the **Org settings** page, on the **Services** tab, select **Viva Learning (Preview)**.
+これらのタスクを実行するにはMicrosoft 365管理者、SharePoint管理者である必要があります。
 
-     ![Settings page in the Microsoft 365 admin center showing Viva Learning listed.](../media/learning/learning-sharepoint-configure1.png)
+ビバ SharePointのラーニング コンテンツ ソースとして構成するには、次ラーニング手順を実行します。
 
-3. On the **Viva Learning (Preview)** panel, under SharePoint, provides the site URL to the SharePoint site where you want Viva Learning (Preview) to create a centralized repository.
+1. [組織の設定] の左側Microsoft 365 管理センター[組織の設定]**設定**  >  **移動します**。
 
-     ![Learning panel in the Microsoft 365 admin center showing SharePoint selected.](../media/learning/learning-sharepoint-configure2.png)
+2. [組織の **設定] ページ** の [サービス] タブ **で**、[ビバ] を選択 **ラーニング。**
 
-4. A SharePoint list is created automatically within the provided SharePoint site.
+     ![設定の [ビバ] ページMicrosoft 365 管理センター一覧ラーニング表示されます。](../media/learning/clcs-services.png)
 
-     ![Newly created SharePoint list within the SharePoint site.](../media/learning/learning-sharepoint-configure3.png)
+3. [**ビバ ラーニング]** パネルの [SharePoint] で、サイト URL を SharePoint サイトに提供し、そのサイトにビバ ラーニングを一元的なリポジトリを作成します。 サイトがSharePoint場合は、サイトの作成後 1 時間待ってここに追加する必要があります。
 
-     In the left navigation of the SharePoint site, select **Site contents** > **Learning App Content Repository**. 
+     ![ラーニングを表示するMicrosoft 365 管理センターパネルSharePointします。](../media/learning/sharepoint-1.png)
 
-     ![SharePoint list showing the Site contents navigation and the Learning App Content Repository section.](../media/learning/learning-sharepoint-configure4.png) 
+     組織で複数地域Microsoft 365[使用している](/microsoft-365/enterprise/microsoft-365-multi-geo)場合は、地域または国を複数地域Microsoft 365[で確認できます](/microsoft-365/enterprise/microsoft-365-multi-geo#microsoft-365-multi-geo-availability)。 [**ビバ ラーニング]** パネルには、この情報も表示されます。
 
-5. On the **Learning App Content Repository** page, populate the SharePoint list with URLs to the learning content folders.
+     ![ラーニングのパネルMicrosoft 365 管理センター URL が中央の場所にある必要SharePointメッセージが表示されます。](../media/learning/sharepoint-2.png)
 
-   1. Select **New** to view the **New item** panel. 
+4. 指定SharePointリストは、指定されたサイト内にSharePointされます。
 
-       ![Learning Content Repository page in SharePoint showing the New option.](../media/learning/learning-sharepoint-configure5.png)
- 
-   2. On the **New item** panel, in the **Title** field, add a directory name of your choice. In the **Folder URL** field, add the URL to the learning content folder. Select **Save**.
+     アプリ コンテンツ リポジトリの左側のナビゲーションSharePoint、[サイトコンテンツ] ラーニング  >  **選択します**。
 
-       ![New item panel in SharePoint showing the Title and Folder URL fields.](../media/learning/learning-sharepoint-configure6.png)
+     ![SharePointコンテンツ ナビゲーションと [アプリ コンテンツ リポジトリ] セクションをラーニング一覧を表示します。](../media/learning/learning-sharepoint-configure4.png)
 
-   3. The **Learning App Content Repository** page is updated with the new learning content.
+5. [アプリ **ラーニングリポジトリ]** ページで、url を含むSharePointをラーニング コンテンツ フォルダーに設定します。
 
-       ![Learning Content Repository page in SharePoint showing the updated information.](../media/learning/learning-sharepoint-configure7.png)
+   1. [新規 **] を** 選択して、[新しいアイテム] **パネルを表示** します。
 
-> [!NOTE]
-> To allow for broader access to the Learning App Content Repository, a link to the list soon will be available in the Viva Learning (Preview) interface where users can request access and ultimately help populate the list. Site owners and global administrators will be required to grant access to the list. Access is specific to the list only and does not apply to the site where the list is stored. For more information, see [Provide your own organization's content](#provide-your-own-organizations-content) later in this article.
+       ![ラーニング[新しい] オプションをSharePointコンテンツ リポジトリ] ページが表示されます。](../media/learning/learning-sharepoint-configure5.png)
 
-### Folder URL document library curation
+   2. [新しい **アイテム]** パネルの [ **タイトル** ] フィールドに、選択したディレクトリ名を追加します。 [フォルダー **URL]** フィールドで、URL を学習コンテンツ フォルダーに追加します。 **[保存]** を選択します。 [フォルダー URL を作成する方法について学習します](#folder-url-document-library-curation)。
 
-Default metadata (such as modified date, created by, document name, content type, and organization name) is automatically pulled into Viva Learning (Preview) by the Microsoft Graph API.
- 
-To improve overall discovery and search relevance of the content, we recommend adding a **Description** column.
+       ![[タイトル] フィールドと [SharePoint URL] フィールドが表示される新しいアイテム パネル。](../media/learning/learning-sharepoint-configure6.png)
 
-To add a **Description** column to the document library page, follow these steps:
+   3. **[ラーニングコンテンツ リポジトリ] ページ** が新しい学習コンテンツで更新されます。
 
-1. On the **Documents** page, select **Add column**.
+       ![ラーニング[コンテンツ リポジトリ] ページSharePoint情報が表示されます。](../media/learning/learning-sharepoint-configure7.png)
 
-2. Select the **Show actions** option, and then select **Single line of text**.
+   4. 組織で[Microsoft 365複数](/microsoft-365/enterprise/microsoft-365-multi-geo)地域を使用し、中央の場所に属していないフォルダーへのリンクを追加しようとする場合は、エラー メッセージが表示されます。 すべてのフォルダーが中央の場所に属している必要があります。
+       ![[新しいアイテム] パネルで、アップロードされたフォルダーすべてが中央の場所にある必要があるというエラー メッセージが表示されます。](../media/learning/learning-sharepoint-configure-geo2.png)
 
-     ![Documents page in SharePoint showing the Show actions options with Single line of text highlighted.](../media/learning/learning-sharepoint-curation1.png)
+  > [!NOTE]
+  > ラーニング App Content Repository へのより広範なアクセスを可能にするために、リストへのリンクは、ユーザーがアクセスを要求し、最終的にリストを設定するのに役立つ、ビバ ラーニング インターフェイスですぐに利用できます。 サイト所有者とグローバル管理者は、リストへのアクセスを許可する必要があります。 アクセスはリストにのみ固有であり、リストが保存されているサイトには適用されません。 詳細については、この記事の [後半の「自分の組織のコンテンツを提供](#provide-your-own-organizations-content) する」を参照してください。
 
-3. On the **Create a column** panel, in the **Name** field, add a descriptive name for the column. Select **Save**.
+### <a name="folder-url-document-library-curation"></a>フォルダー URL ドキュメント ライブラリのキュレーション
 
-     ![Create a column panel in SharePoint showing the Name and other fields.](../media/learning/learning-sharepoint-curation2.png)
- 
-4. On the **Documents** page, in the **Description** column, add custom descriptions for each item. If no description is supplied, Viva Learning (Preview) will provide a default message that highlights the content as being from your own SharePoint library. 
+組織の学習コンテンツを格納するフォルダーを作成します。
 
-     ![Documents page in SharePoint showing the descriptions in the Description column.](../media/learning/learning-sharepoint-curation3.png)
- 
-### Provide your own organization's content
+1. ドキュメント ライブラリに移動し、[+ 新規] **を選択します**。
 
-Knowledge admins can access their organization’s Learning App Content Repository in SharePoint, where they can provide references to cross-organization document libraries. Content within these libraries will be then surfaced as learning content in Viva Learning (Preview).
+    ![カーソルが [新規] と [フォルダー] を選択した空のドキュメント ライブラリのイメージ。](../media/learning/spfolder-3.png)
 
-1. In Viva Learning (Preview), select **More options** (**...**), and then select **Settings**.
+2. [フォルダー **] を** 選択し、フォルダー名を入力します。
 
-     ![SharePoint library page showing the More options and Settings option.](../media/learning/learning-sharepoint-library-1.png)
+    ![トレーニング 資料という名前が入力されたフォルダーの作成ウィンドウのイメージ。](../media/learning/spfolder-5.png)
+
+3. **[作成]** を選択します。 これで、フォルダーがドキュメント ライブラリに表示されます。
+
+    ![ドキュメント ライブラリ内のトレーニング 資料と呼ばれるフォルダーのイメージ。](../media/learning/spfolder-6.png)
+
+4. アップロード学習コンテンツとして発行するファイルを作成します。
+5. フォルダーの URL を取得するには、このフォルダーを選択し、[リンクのコピー] **を選択します**。
+
+    ![[リンク] コピーされたポップアップのイメージ。](../media/learning/spfolder-8.png)
+
+既定のメタデータ (変更日、作成日、ドキュメント名、コンテンツ タイプ、組織名など) は、Microsoft ラーニング API によって自動的Graphされます。
+
+コンテンツの全体的な検出と検索の関連性を向上させるために、[説明] 列を追加することをお **勧** めします。 説明列が既に存在する場合は、以下の手順に従って削除して新しい列を追加できます。
+
+ドキュメント ライブラリ ページに **[説明]** 列を追加するには、次の手順を実行します。
+
+1. [ドキュメント] **ページで、[** 列の追加] **を選択します**。
+
+2. [アクションの **表示] オプションを** 選択し、[単一 **行のテキスト] を選択します**。
+
+    :::image type="content" alt-text="[ドキュメント] ページSharePoint[アクションの表示] オプションが表示され、1 行のテキストが強調表示されます。" source="../media/learning/learning-sharepoint-curation1.png":::
+
+3. [列 **の作成] パネル** の [ **名前** ] フィールドに、列のわかりやすい名前を追加します。 **[保存]** を選択します。
+
+    ![[名前] などのフィールドをSharePoint列パネルを作成します。](../media/learning/learning-sharepoint-curation2.png)
+
+4. [ドキュメント **] ページの** [説明] **列** で、アイテムごとにカスタム説明を追加します。 説明が指定されていない場合、ビバ ラーニングは、コンテンツを独自のライブラリからの内容として強調表示する既定のSharePointします。
+
+     ![[説明] 列SharePoint説明を表示するドキュメント ページ。](../media/learning/learning-sharepoint-curation3.png)
+
+### <a name="provide-your-own-organizations-content"></a>独自の組織のコンテンツを提供する
+
+ナレッジ管理者は、ラーニング で組織の ラーニング App Content SharePoint Repository にアクセスし、組織間ドキュメント ライブラリへの参照を提供できます。 次に、これらのライブラリ内のコンテンツは、ビバ のコンテンツとして表示ラーニング。
+
+1. [ビラーニング] で、省略記号 (**...**) を選択し、[省略 **記号]** を設定。
+
+    ![SharePointオプションとオプションを表示するライブラリ ページ設定します。](../media/learning/sharepoint-3.png)
   
-2. Under **Settings**, select **Permissions**.
+2. [アクセス **設定]** で、[アクセス許可]**を選択します**。
 
-     ![Settings option page in SharePoint showing the Permissions and Check access options.](../media/learning/learning-sharepoint-library-2.png)
+    ![設定アクセス許可とアクセスSharePointを表示するページの [オプション] ページを開きます。](../media/learning/learning-sharepoint-library-2.png)
 
-3. Select **Check access** to connect to your organization’s centralized library.
+3. [ **アクセスの確認]** を選択して、組織の一元化されたライブラリに接続します。
 
---->
+## <a name="next-step"></a>次の手順
+
+[Viva ラーニングの学習管理システムを追加](configure-lms.md)[するかMicrosoft Viva ラーニング。](configure-other-content-sources.md)

@@ -6,20 +6,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: lomayor
-author: lomayor
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 06fa097275453e3ae7b64f0e0cb142fe7592c88b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: dca768ea376531d7c9a47cf4425ba65e49911b23
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191961"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60702191"
 ---
 # <a name="ensure-your-devices-are-configured-properly"></a>デバイスが正しく構成されていることを確認する
 
@@ -66,7 +66,7 @@ Microsoft Intune および Microsoft 365 セキュリティ センターのデ�
 
 ## <a name="obtain-required-permissions"></a>必要なアクセス許可を取得する
 
-既定では、Azure AD のグローバル管理者または Intune Service Administrator ロールが割り当てられているユーザーだけが、デバイスのオンボーディングとセキュリティ ベースラインの展開に必要なデバイス構成プロファイルを管理および割り当てることができます。
+既定では、Azure AD のグローバル管理者または Intune Service Administrator の役割が割り当てられているユーザーだけが、デバイスのオンボーディングとセキュリティ ベースラインの展開に必要なデバイス構成プロファイルを管理および割り当てることができます。
 
 他の役割が割り当てられている場合は、必要なアクセス許可を持っている必要があります。
 

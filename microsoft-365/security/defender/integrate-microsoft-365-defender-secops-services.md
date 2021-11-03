@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: e9a915cfb698e80756e0810963e112889bd67a66
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 47e86a19f637278a9e9d82fd0b8fd260a77af6cd
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157688"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60702741"
 ---
 # <a name="step-3-plan-for-microsoft-365-defender-integration-with-your-soc-catalog-of-services"></a>手順 3. サービスの SOC Microsoft 365 Defenderとの統合を計画する
 
@@ -55,7 +55,7 @@ ms.locfileid: "60157688"
 - データ損失防止
 - ブランドの監視
 
-これらのテクノロジMicrosoft 365 Defenderさまざまな機能にまたがるため、SOC チームは、Defender の各コンポーネントを管理し、サービス機能に合わせて調整するために最適な役割と責任を決定する必要があります。
+Microsoft 365 Defenderテクノロジはさまざまな機能にまたがっていますので、SOC チームは、Microsoft 365 Defender の各コンポーネントを管理し、サービス機能に合わせて調整するために最適な役割と責任を決定する必要があります。
 
 次に示すMicrosoft 365 Defenderコンポーネントを示します。
 

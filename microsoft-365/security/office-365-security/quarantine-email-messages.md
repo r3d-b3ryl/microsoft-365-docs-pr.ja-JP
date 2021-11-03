@@ -26,8 +26,8 @@ ms.openlocfilehash: 58097b5dba60c1ea085ea6e78c878982abe24021
 ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60668456"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60703623"
 ---
 # <a name="quarantined-email-messages-in-eop-and-defender-for-office-365"></a>EOP および Defender で検疫された電子メール Office 365
 

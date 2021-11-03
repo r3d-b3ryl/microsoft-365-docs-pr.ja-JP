@@ -16,12 +16,12 @@ ms.date: 05/24/2021
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f377126eb56291f6ea0c43502f42916f8d64adee
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 98831bfff3d38d111c66d16ba150261f8ed148e8
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213123"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60702179"
 ---
 # <a name="configure-and-manage-microsoft-defender-antivirus-with-the-mpcmdrunexe-command-line-tool"></a>コマンド ライン Microsoft Defender ウイルス対策を使用してmpcmdrun.exeを構成および管理する
 
@@ -32,7 +32,7 @@ ms.locfileid: "60213123"
 専用のコマンド ライン ツール を使用して、Microsoft Defender ウイルス対策でさまざまな **機能を実行** mpcmdrun.exe。 このユーティリティは、タスクを自動化する場合Microsoft Defender ウイルス対策です。 ユーティリティは で確認できます `%ProgramFiles%\Windows Defender\MpCmdRun.exe` 。 コマンド プロンプトから実行します。
 
 > [!TIP]
-> 管理者レベルのバージョンのコマンド プロンプトを開く必要がある場合があります。 コマンド プロンプトを **検索するときに**、[管理者として実行スタート メニューを **選択します**。 更新された Microsoft Defender プラットフォーム バージョンを実行している場合は、次 `MpCmdRun` の場所から実行します `C:\ProgramData\Microsoft\Windows Defender\Platform\<antimalware platform version>` 。 マルウェア対策プラットフォームの詳細については、「更新プログラムとベースラインMicrosoft Defender ウイルス対策[を参照してください](manage-updates-baselines-microsoft-defender-antivirus.md)。
+> 管理者レベルのバージョンのコマンド プロンプトを開く必要がある場合があります。 コマンド プロンプトを **検索するときに**、[管理者として実行スタート メニューを **選択します**。 更新された Microsoft Defender マルウェア対策プラットフォームのバージョンを実行している場合は、次 `MpCmdRun` の場所から実行します `C:\ProgramData\Microsoft\Windows Defender\Platform\<antimalware platform version>` 。 マルウェア対策プラットフォームの詳細については、「更新プログラムとベースラインMicrosoft Defender ウイルス対策[を参照してください](manage-updates-baselines-microsoft-defender-antivirus.md)。
 
 MpCmdRun ユーティリティは、次の構文を使用します。
 
@@ -52,7 +52,7 @@ MpCmdRun.exe -Scan -ScanType 2
 
 |コマンド|説明|
 |---|---|
-|`-?` **または** `-h`|MpCmdRun ツールで使用可能なすべてのオプションを表示する|
+|`-?`**または** `-h`|MpCmdRun ツールで使用可能なすべてのオプションを表示する|
 |`-Scan [-ScanType [<value>]] [-File <path> [-DisableRemediation] [-BootSectorScan] [-CpuThrottling]] [-Timeout <days>] [-Cancel]`|悪意のあるソフトウェアをスキャンします。 **ScanType の値は次** のとおりです。<p>**0** 構成に応じて既定<p>**1** クイック スキャン<p>**2** フル スキャン<p>**3** ファイルとディレクトリのカスタム スキャン。<p>CpuThrottling はポリシー構成に従って実行されます|
 |`-Trace [-Grouping #] [-Level #]`|診断トレースを開始する|
 |`-GetFiles [-SupportLogLocation <path>]`|サポート情報を収集します。 「診断[データの収集」を参照](collect-diagnostic-data.md)してください。|

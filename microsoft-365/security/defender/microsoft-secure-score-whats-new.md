@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 59ff0e516bb6b0a5f5c89e07fb972184a5a6c837
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 72bd56905392ff89fbcd3209212029d3b33b9a98
+ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162304"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60724350"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Microsoft Secure Score の新機能
 
@@ -34,7 +34,7 @@ ms.locfileid: "60162304"
 
 Microsoft Secure Score をセキュリティの姿勢をより良くするために、いくつかの変更を加えた。 今後の変更については、「[Microsoft セキュア スコアの新機能](microsoft-secure-score-whats-coming.md)」を参照してください。
 
-Microsoft Secure Score は、ポータルの https://security.microsoft.com/securescore Microsoft 365 Defender[で確認できます](overview-security-center.md)。
+Microsoft Secure Score は、ポータルの https://security.microsoft.com/securescore Microsoft 365 Defender[で確認できます](microsoft-365-defender.md#the-microsoft-365-defender-portal)。
 
 ## <a name="july-2021"></a>2021 年 7 月
 

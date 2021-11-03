@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンス マネージャーは、国内、地域、業界の規制、標準、および法律に合わせて評価を構築するテンプレートを提供します。
-ms.openlocfilehash: 858442e54277c32c6510d211f225f73feaf7c4d3
-ms.sourcegitcommit: 3260d47a29c35e90ed7b1d14d400b39baa741873
+ms.openlocfilehash: 4201dac3b83c73dd61f39a01f7ba2d98b6207bc4
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60462215"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60700867"
 ---
 # <a name="compliance-manager-templates-list"></a>コンプライアンスマネージャーテンプレートの一覧
 
@@ -56,6 +56,21 @@ ms.locfileid: "60462215"
 
 > [!NOTE]
 > 米国政府Community (GCC) モデレート、GCC 高、および国防総省 (DoD) のお客様向け: 上記のテンプレートに加えて、サイバーセキュリティ成熟度モデル認定 (CMMC) レベル 1 ~ 5 のテンプレートが含まれています。
+
+## <a name="preview-templates"></a>プレビュー テンプレート
+
+これらのテンプレートは現在、プレビューで使用できます。 これらのテンプレートを使用して評価を作成すると、使用されるライセンステンプレートの合計にはカウントされません。
+
+- AZURE の ISO 27001:2013 (プレビュー)
+- DYNAMICS 365 の ISO 27001:2013 (プレビュー)
+- FedRAMP モデレート for Dynamics 365 (プレビュー)
+- FedRAMP モデレート for Azure (プレビュー)
+- FedRAMP High for Azure (プレビュー)
+- FedRAMP High for Dynamics 365 (プレビュー)
+- SOC 2 for Azure (プレビュー)
+- SOC 2 for Dynamics 365 (プレビュー)
+- AZURE の ISO 27018:2019 (プレビュー)
+- ISO 27018:2019 for Dynamics 365 (Preview)
 
 ## <a name="premium-templates"></a>プレミアム テンプレート
 

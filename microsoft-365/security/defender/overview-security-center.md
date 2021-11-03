@@ -20,11 +20,11 @@ search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
 ms.openlocfilehash: a0dce3a61847924043a10df4c13c963f279ea011
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162292"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60717636"
 ---
 # <a name="microsoft-365-defender-overview"></a>Microsoft 365 Defender概要
 
@@ -89,7 +89,7 @@ Microsoft 365 Defender、Microsoft Defender  for microsoft Defender for Office 3
 ![Example of the Summary page for an incident in Microsoft 365 Defender.](../../media/converged-incident-info-3.png)
 --> 
 
-インシデント ページの上部には、[概要] タブ、[通知] 、[**デバイス**] 、[**ユーザー**] 、[メールボックス] 、[調査]、および **[証拠**] タブが **表示** されます。 詳細については、次のタブを選択します。 たとえば、[ユーザー]タブには、統合ワークロード (Microsoft Defender for Endpoint、Microsoft Defender for Identity、および Microsoft Cloud App Security) のユーザーの情報と、オンプレミスの Active Directory ドメイン サービス (AD DS)、Azure Active Directory (Azure AD)、サードパーティ ID プロバイダーなどのさまざまなソースが表示されます。 詳細については、「ユーザーの調査 [」を参照してください](investigate-users.md)。
+インシデント ページの上部には、[概要] タブ、[通知] 、[**デバイス**] 、[**ユーザー**] 、[メールボックス] 、[調査]、および **[証拠**] タブが **表示** されます。 詳細については、次のタブを選択します。 たとえば、[ユーザー]タブには、統合ワークロード (Microsoft Defender for Endpoint、Microsoft Defender for Identity、および Microsoft Cloud App Security) のユーザーの情報と、オンプレミスの Active Directory ドメイン サービス (AD DS)、Azure Active Directory (Azure AD)、サードパーティなどのさまざまなソースが表示されます。ID プロバイダー。 詳細については、「ユーザーの調査 [」を参照してください](investigate-users.md)。
 
 環境内のインシデントを確認し、これらのタブをドリルダウンし、さまざまな種類の脅威に対してインシデントに提供された情報にアクセスする方法について理解を深める方法を実践してください。
 

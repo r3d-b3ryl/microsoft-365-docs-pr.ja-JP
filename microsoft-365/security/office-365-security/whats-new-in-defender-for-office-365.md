@@ -21,18 +21,19 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5980d01dfb15a019aec9dd39cf6ceae7a1682753
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: ca0d3e29809b8975f65dc3f12816a6e4f9a19dbe
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555274"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60702405"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の新機能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-**適用対象**
+**適用対象:**
+
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -76,8 +77,8 @@ ms.locfileid: "60555274"
   - フォームにフラグが設定され、フィッシングとして確認される
   - [ZAP の新しいアラート ポリシー](../../compliance/new-defender-alert-policies.md)
 - Microsoft Defender for Office 365アラートは、統合アラート キューと統合Microsoft 365 Defenderおよび統合Microsoft 365 Defenderキュー[に統合されました](../defender/investigate-alerts.md)
-- [](user-tags.md)ユーザー タグは、Office 365 セキュリティ & コンプライアンスのアラート キューと詳細、ユーザー タグへのカスタム アラート ポリシーのスコープ設定など、Office 365 アラート エクスペリエンスのために Microsoft Defender に統合され、対象となるアラート ポリシーを作成できます。 
-  - タグは、Microsoft 365 Defender センターの統合アラート キューでも使用できます (Microsoft Defender for Office 365 プラン 2)
+- [](user-tags.md)ユーザー タグは、Office 365 セキュリティ & コンプライアンスのアラート キューと詳細、ユーザー タグへのカスタム アラート ポリシーのスコープ設定など、Office 365 アラート エクスペリエンスのために Microsoft Defender に統合され、対象となるアラート ポリシーを作成できます。
+  - タグは、Microsoft 365 Defender ポータルの統合アラート キューでも使用できます (Microsoft Defender for Office 365 プラン 2)
 
 ## <a name="june-2021"></a>2021 年 6 月
 

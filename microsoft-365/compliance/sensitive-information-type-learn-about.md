@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: この記事では、機密情報の種類の概要と、機密情報 (社会保障、クレジット カード、銀行口座番号など) を検出して機密情報を識別する方法について説明します。
-ms.openlocfilehash: 4be28abc7f343fa7b396c736255f1c8e15872d0b
-ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
+ms.openlocfilehash: 57f8f74a88749e94f9157d2c890a101256edff3f
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60478951"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60703477"
 ---
 # <a name="learn-about-sensitive-information-types"></a>機密情報の種類に関する詳細情報
 
@@ -38,8 +38,9 @@ ms.locfileid: "60478951"
 - [データ損失防止ポリシー](dlp-learn-about-dlp.md)
 - [機密ラベル](sensitivity-labels.md)
 - [保持ラベル](retention.md)
-- [Insider リスク管理](insider-risk-management.md)
+- [インサイダー リスクの管理](insider-risk-management.md)
 - [通信コンプライアンス](communication-compliance.md)
+- [リスク管理の内部](insider-risk-management-solution-overview.md)
 - [自動ラベル付けポリシー](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 - [プライバシー管理](/privacy/solutions/privacymanagement/privacy-management)
 
@@ -82,7 +83,7 @@ ms.locfileid: "60478951"
 
 ### <a name="checksum"></a>チェックサム
 
-不要
+いいえ
 
 ### <a name="definition"></a>定義
 

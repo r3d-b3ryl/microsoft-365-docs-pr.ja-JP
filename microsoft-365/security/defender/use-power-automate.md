@@ -21,11 +21,11 @@ ms.collection:
 ms.topic: article
 ms.technology: m365d
 ms.openlocfilehash: a707de259897080f8e726aed70618ea6505bdea6
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59444117"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60717528"
 ---
 # <a name="use-power-automate-in-microsoft-365-defender"></a>[Power AutomateでMicrosoft 365 Defender
 
@@ -35,7 +35,7 @@ ms.locfileid: "59444117"
 **適用対象:**
 - Microsoft 365 Defender
 
-> Microsoft 365 Defender を体験してみませんか? [ラボ環境で評価する](m365d-evaluation.md?ocid=cx-docs-MTPtriallab)ことも、[実稼働環境でパイロット プロジェクトを実行する](m365d-pilot.md?ocid=cx-evalpilot)こともできます。
+> Microsoft 365 Defender を体験しますか? [ラボ環境で評価](m365d-evaluation.md?ocid=cx-docs-MTPtriallab)、または[運用でパイロット プロジェクトを実行](m365d-pilot.md?ocid=cx-evalpilot)することができます。
 >
 
 最新のセキュリティ操作 (SecOps) チームは、効果的に機能するために自動化が必要です。 実際の脅威の検出と調査に集中するために、SecOps チームは Power Automate を使用してアラートの一覧をトリアージし、脅威ではない脅威を排除します。  

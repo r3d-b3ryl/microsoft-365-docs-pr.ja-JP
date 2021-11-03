@@ -27,6 +27,9 @@ additionalContent:
         - title: スケジューラを使用してMicrosoft 365
           summary: スケジューラを使用してユーザーにMicrosoft 365。
           url: scheduler-using.md
-        - title: スケジューラに関する FAQ
-          summary: スケジューラでよく寄せられる質問の詳細とMicrosoft 365答えについて説明します。
+        - title: 動的な定期的な会議をスケジュールする
+          summary: 動的な定期的な会議をスケジュールする方法の詳細について説明します。
+          url: scheduler-recurring-meetings.md
+        - title: スケジューラに関するよく寄せられる質問
+          summary: Scheduler for Microsoft 365 でよく寄せられる質問とMicrosoft 365。
           url: scheduler-faqs.md

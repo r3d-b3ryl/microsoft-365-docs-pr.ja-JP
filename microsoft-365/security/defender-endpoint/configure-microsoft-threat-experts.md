@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5a1a8c8eeffaa05e34f7a3216b743540b1e6406f
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 85ef173543b9696a8aa8a0c7505ed30cefc5f932
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553486"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60701743"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities"></a>Microsoft 脅威エキスパートの機能を構成および管理する
 
@@ -144,7 +144,7 @@ Microsoft Services Hub の概要については、このビデオをご覧くだ
 
 ### <a name="threat-intelligence-details"></a>脅威インテリジェンスの詳細
 
-- 悪意のある Word 文書をユーザーに配信したフィッシングメールが検出されました。 悪意のある Word ドキュメントによって、一連の疑わしいイベントが発生し、[マルウェア名] マルウェアに対する複数の Microsoft Defender アラートがトリガーされました。 このマルウェアに関する情報はありますか? はいの場合、リンクを送信できますか?
+- 悪意のある Word 文書をユーザーに配信したフィッシングメールが検出されました。 悪意のある Word ドキュメントによって一連の疑わしいイベントが発生し、複数の Defender for Endpoint アラートが [マルウェア名] マルウェアに対してトリガーされました。 このマルウェアに関する情報はありますか? はいの場合、リンクを送信できますか?
 - 最近、自分の業界を標的にしている脅威に関する [ソーシャル メディア参照( Twitter やブログなど) の投稿を見ました。 この脅威アクターに対して Defender for Endpoint が提供する保護を理解するのに役立ちますか?
 
 ### <a name="microsoft-threat-experts-alert-communications"></a>Microsoft 脅威エキスパートのアラート通信

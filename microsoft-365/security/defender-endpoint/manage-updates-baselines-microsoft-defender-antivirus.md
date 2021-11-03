@@ -16,14 +16,14 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 11/01/2021
+ms.date: 11/02/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: db11cc6940a26efb03ef906d0ac09e52986969eb
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 3982f25f8c2397d59d90777f70354dca1fc0765f
+ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60668014"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60724753"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>更新Microsoft Defender ウイルス対策を管理し、基準計画を適用する
 
@@ -82,25 +82,28 @@ Microsoft Defender ウイルス対策プラットフォーム更新 [プログ�
 
 すべての更新プログラムに含まれるもの
 
-- パフォーマンスの向上。
-- サービスの改善。そして
-- 統合の改善 (クラウド[、Microsoft 365 Defender)。](/microsoft-365/security/defender/microsoft-365-defender)
+- パフォーマンスの強化
+- サービスの改善
+- 統合の改善 (クラウド[、Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
-<summary> 2021 年 10 月 (プラットフォーム: 4.18.xxxx.x|エンジン: 1.1.18700.4)</summary>
+<summary> 2021 年 10 月 (プラットフォーム: 4.18.2110.6|エンジン: 1.1.18700.4)</summary>
 
 &ensp;セキュリティ インテリジェンス更新プログラムのバージョン: **1.353.3.0**<br/>
 &ensp;リリース日: **2021 年 10 月 28 日**<br/>
-&ensp;プラットフォーム: **4.18.xxxx.x**<br/>
+&ensp;プラットフォーム: **4.18.2110.6**<br/>
 &ensp;エンジン: **1.1.18700.4**<br/>
 &ensp;サポート フェーズ: **セキュリティと重要な更新プログラム**<br/>
 
 エンジンのバージョン: 1.1.18700.4 セキュリティ インテリジェンス更新プログラムのバージョン: 1.353.3.0
 
 ### <a name="whats-new"></a>新機能
-- FTP ネットワーク トラフィックカバレッジの改善
-- Exchange サーバーでの Microsoft Defender CPU 使用率を削減する問題を修正Windows Server 2016
-- Defender サービスの改ざん復元の改善
+
+- ファイル転送プロトコル (FTP) ネットワーク トラフィックカバレッジの改善
+- Microsoft Defender CPU 使用率を削減する問題を修正し、Exchange Serverで実行Windows Server 2016
+- スキャンの中断を修正する
+- セキュリティ センターに表示されない改ざんのブロックに関する警告を修正する
+- Microsoft Defender サービスでの改ざん復元の改善
 
 ### <a name="known-issues"></a>既知の問題
 既知の問題はありません

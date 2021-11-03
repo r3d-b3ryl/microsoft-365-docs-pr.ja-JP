@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e421f29ec1723ad724c64991e67bd0da31bb35b6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 36662f61c27019046780ce1f7b5290d280eba7fe
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202491"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60704077"
 ---
 # <a name="how-automated-investigation-and-response-works-in-microsoft-defender-for-office-365"></a>Microsoft Defender での自動調査と対応の仕組みOffice 365
 
@@ -77,7 +77,7 @@ AIR を使用すると、セキュリティ運用チームは、より効率的�
 
 ## <a name="example-a-security-administrator-triggers-an-investigation-from-threat-explorer"></a>例: セキュリティ管理者が脅威エクスプローラーから調査を開始する
 
-アラートによってトリガーされる自動調査に加えて、組織のセキュリティ運用チームは、脅威エクスプローラーのビューから自動調査 [をトリガーできます](threat-explorer.md)。  また、この調査によってアラートが作成され、Microsoft Defender Incidents と外部 SIEM ツールは、この調査がトリガーされたと確認できます。
+アラートによってトリガーされる自動調査に加えて、組織のセキュリティ運用チームは、脅威エクスプローラーのビューから自動調査 [をトリガーできます](threat-explorer.md)。  また、この調査によってアラートが作成され、Microsoft 365 Defenderおよび外部 SIEM ツールは、この調査がトリガーされたのを確認できます。
 
 たとえば、エクスプローラーでマルウェア ビューを **使用すると** します。 グラフの下のタブを使用して、[メール] タブ **を選択** します。リストで 1 つ以上のアイテムを選択すると **、[+ アクション] ボタンが** アクティブ化されます。
 

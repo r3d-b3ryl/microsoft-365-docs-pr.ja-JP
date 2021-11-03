@@ -21,18 +21,18 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: d1f1c36eeaa010981ffd44ccad75e0d73a7159f6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c04d7eed5957fbb5633710ec07af28ca66809356
+ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162364"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60724801"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>Microsoft Secure Score の履歴を追跡し、目標を達成する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-[Microsoft Secure Score](microsoft-secure-score.md) は、組織のセキュリティ体制の測定で、より多くの改善アクションが実行されたことを示す数値が高くなります。 このファイルは、ポータル https://security.microsoft.com/securescore のMicrosoft 365 Defender[表示されます](overview-security-center.md)。
+[Microsoft Secure Score](microsoft-secure-score.md) は、組織のセキュリティ体制の測定で、より多くの改善アクションが実行されたことを示す数値が高くなります。 このファイルは、ポータル https://security.microsoft.com/securescore のMicrosoft 365 Defender[表示されます](microsoft-365-defender.md#the-microsoft-365-defender-portal)。
 
 ## <a name="gain-insights-into-activity-that-has-affected-your-score"></a>スコアに影響を与えたアクティビティに関する分析情報を取得する
 

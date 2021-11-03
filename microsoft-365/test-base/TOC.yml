@@ -16,7 +16,7 @@
       href: testtask.md
     - name: テスト オプションの設定
       href: testoptions.md
-    - name: 確認
+    - name: レビュー
       href: review.md
     - name: パッケージ ガイドライン
       href: contentguideline.md
@@ -32,6 +32,8 @@
       href: memory.md
     - name: CPU 回帰分析
       href: cpu.md
+    - name: SDK & API
+      href: sdkapi.md
 - name: Reference
   items:
     - name: よく寄せられる質問

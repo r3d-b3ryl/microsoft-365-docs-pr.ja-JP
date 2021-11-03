@@ -18,22 +18,22 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンス マネージャーで評価テンプレートを拡張してコントロールを追加および変更する方法について説明します。
-ms.openlocfilehash: 4618c085228c44e3af1aa0b3de9c3b1ebd63424c
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: d47488f578436b1ea8bd865855d681d8778d07bd
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60336061"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60703071"
 ---
 # <a name="extend-assessment-templates-in-microsoft-compliance-manager"></a>Microsoft コンプライアンス マネージャーで評価テンプレートを拡張する
 
 コンプライアンス マネージャーには、独自のコントロールと改善アクションを既存のテンプレートに追加するオプションがあります。 このプロセスは、テンプレートの拡張と呼ばれる。
 
-テンプレートを拡張するには、評価テンプレートまたはユニバーサル評価テンプレートを拡張するかどうかに応じて、テンプレート データを変更する特別なMicrosoft 365使用します。
+テンプレートを拡張するには、Microsoft の評価テンプレートを拡張するか、ユニバーサル評価テンプレートを拡張するかに応じて、テンプレート データを変更する特別な手順を使用します。
 
-## <a name="extend-microsoft-365-assessment-templates"></a>評価Microsoft 365を拡張する
+## <a name="extend-microsoft-assessment-templates"></a>Microsoft の評価テンプレートを拡張する
 
-Microsoft 365 テンプレートを拡張すると、Microsoft がリリースした更新プログラムを引き続き受け取ります。これは、関連する規制または製品に変更がある場合に発生する可能性があります (「評価の更新プログラムを受け入れる」を[参照](compliance-manager-assessments.md#accept-updates-to-assessments))。
+Microsoft テンプレートを拡張する場合 (たとえば、Microsoft テンプレートで使用するために作成Microsoft 365 Microsoft がリリースした更新プログラムを受け取る場合があります。 更新プログラムは、関連する規制または製品に変更がある場合に発生する場合があります (「評価の更新プログラムを受け入れる」 [を参照してください](compliance-manager-assessments.md#accept-updates-to-assessments))。
 
 ### <a name="prepare-template-data-and-create-extension"></a>テンプレート データの準備と拡張機能の作成
 

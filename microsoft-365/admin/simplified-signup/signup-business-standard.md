@@ -14,12 +14,12 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: 組織Microsoft 365 Business Standardを購入してセットアップします。
-ms.openlocfilehash: cf19c2f07129eb064368c1efd6eea09af0870b93
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e84e88fd478209d13fca889010b023a9c10f450b
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164250"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60701493"
 ---
 # <a name="sign-up-for-a-microsoft-365-business-standard-subscription"></a>Microsoft 365 Business Standard サブスクリプションにサインアップする
 
@@ -27,7 +27,7 @@ ms.locfileid: "60164250"
 - **[購入Microsoft 365 Business Standard](https://go.microsoft.com/fwlink/?linkid=2109397)して、独自のセットアップを完了します**:購入するには、次Microsoft 365 Business Standard [手順を実行します](#sign-up-steps)。
 - **Microsoft パートナーの場合**: パートナーの場合は [、「Get Microsoft 365ビジネス」を参照してください](../../business/get-microsoft-365-business.md)。
 
-**何か違う必要がありますか?** 次の操作を実行できます。
+**何か違う必要がありますか?** 次の操作を行うことができます:
 
 - [ビジネスで購入しない場合は、](https://go.microsoft.com/fwlink/?linkid=2109398) ホームプランまたはファミリー プランにサインアップします。
 
@@ -42,10 +42,12 @@ ms.locfileid: "60164250"
 2. 次のページで、月次コストを確認し、ページを下にスクロールして、そのページに含まれる情報の詳細を確認Microsoft 365。 [今Microsoft 365 Business Standard] で、[今すぐ **購入] を選択します**。
 3. [ユーザー **設定を選択してMicrosoft 365 Business Standard** に、情報を入力して開始します。 **[次へ]** を選択します。
 4. 既に使用しているメール アドレスを入力します。 これは、セットアップ中に Microsoft がユーザーと通信するために使用する任意のアドレスを指定できます。 また、請求書と更新に関する情報を送信する住所です。 次に、[アカウント **の設定] を選択します**。
-5. 名前、会社の電話番号、ビジネス サイズ、会社名、および場所を入力します。 お客様の国または地域は、Microsoft から受け取る正確なサービスを決定し、この手順を完了した後は変更できません。 **[次へ]** を選択します。
+5. 名前、会社の電話番号、ビジネス サイズ、会社名、および場所を入力します。 **[次へ]** を選択します。
 
-    > [!NOTE]
-    > 管理センターに会社名を表示します。 ユーザー、ライセンス、その他のMicrosoft 365サービスを管理する場所です。 また、すべての内部サイト URL SharePoint含まれます。
+    > [!IMPORTANT]
+    > サインアップの一環としてカスタム ドメインを追加した場合、ここに入力した会社名は、すべてのユーザーの組織とSharePointおよびOneDriveされます。 変更できない場合があります。正しくスペルが正しく、ブランド化の観点から使用する名前を確認してください。 会社名は管理センターにも表示され、ユーザー、ライセンスMicrosoft 365その他の機能やサービスを管理します。
+    > 
+    > お客様の国または地域は、Microsoft から受け取る正確なサービスを決定し、この手順を完了した後は変更できません。 
 
 6. これがあなたか確認してください。 お客様にアクセスするために使用できる番号を入力し、[検証コードの送信 **] を選択します**。
 

@@ -12,24 +12,22 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ''
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Microsoft 365 E5 または Microsoft Defender for Office 365 プラン 2 組織の攻撃シミュレーションとトレーニングに関する展開に関する考慮事項とよく寄せられる質問について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 19b8997a5f2d1f8df40c740fb996432b13a21d3b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 75b85c637382e2fc508b4c48459d1409b02ec922
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196599"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60704136"
 ---
 # <a name="attack-simulation-training-deployment-considerations-and-faq"></a>攻撃シミュレーション トレーニングの展開に関する考慮事項と FAQ
 
-攻撃シミュレーションのトレーニングが [一般提供されました](https://techcommunity.microsoft.com/t5/microsoft-security-and/attack-simulation-training-in-microsoft-defender-for-office-365/ba-p/2037291)。 Microsoft 365 E5 または Microsoft Defender for Office 365 Plan 2 組織は、実際の武器化されたフィッシング ペイロードを利用したフィッシング シミュレーションの作成と管理を可能にすることで、ソーシャル エンジニアリング リスクを測定および管理できます。 テラノバ のセキュリティと提携して提供されるハイパーターゲットトレーニングは、知識の向上と従業員の行動の変更に役立ちます。
+Microsoft 365 E5 または Microsoft Defender for Office 365 Plan 2 組織は、実際の武器化されたフィッシング ペイロードを利用したフィッシング シミュレーションの作成と管理を可能にすることで、ソーシャル エンジニアリング リスクを測定および管理できます。 テラノバ のセキュリティと提携して提供されるハイパーターゲットトレーニングは、知識の向上と従業員の行動の変更に役立ちます。
 
 攻撃シミュレーション トレーニングの開始方法の詳細については、「攻撃シミュレーション トレーニングの使用を開始する [」を参照してください](attack-simulation-training-get-started.md)。
 
@@ -41,7 +39,7 @@ ms.locfileid: "60196599"
 
 URL レピュテーション サービスは、攻撃シミュレーション トレーニングで使用される 1 つ以上の URL を安全でないと識別する場合があります。 Google セーフ Chrome での閲覧は、詐欺サイトの先行メッセージを使用して、シミュレートされたフィッシング URL の一部 **をブロック** します。 多くの URL レピュテーション ベンダーと一緒にシミュレーション URL を常に許可しますが、必ずしも完全にカバーできるとは限らない。
 
-![Google Chrome のサイト先行警告を欺く。](../../media/attack-sim-chrome-deceptive-site-message.png)
+![Google Chrome のサイト先行警告を欺く。](../../media/attack-sim-training-faq-chrome-deceptive-site-message.png)
 
 この問題は、この問題に影響Microsoft Edge。
 
@@ -51,7 +49,7 @@ URL レピュテーション サービスは、攻撃シミュレーション �
 
 ### <a name="phishing-simulation-and-admin-urls-blocked-by-network-proxy-solutions-and-filter-drivers"></a>ネットワーク プロキシ ソリューションとフィルター ドライバーによってブロックされるフィッシング シミュレーションと管理 URL
 
-フィッシング シミュレーション URL と管理 URL の両方が、中間セキュリティ デバイスまたはフィルターによってブロックまたは削除される可能性があります。 次に例を示します。
+フィッシング シミュレーション URL と管理 URL の両方が、中間セキュリティ デバイスまたはフィルターによってブロックまたは削除される可能性があります。 例:
 
 - ファイアウォール
 - Web アプリケーション ファイアウォール (WAF) ソリューション
@@ -70,7 +68,7 @@ URL レピュテーション サービスは、攻撃シミュレーション �
 
 - 受信者の電子メール アドレスが無効です。
 - ゲスト ユーザー。
-- 現在アクティブでなくなったユーザー (Azure Azure Active Directory) AD。
+- 現在アクティブでなくなったユーザー (Azure Active Directory) Azure AD。
 
 有効なメールボックスを持つゲスト以外のユーザーだけがシミュレーションに含まれます。 配布グループまたはメールが有効なセキュリティ グループを使用してユーザーを対象とする場合は[、Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)の[Get-DistributionGroupMember](/powershell/module/exchange/get-distributiongroupmember)コマンドレットを使用して配布グループメンバーを表示および検証できます。
 
@@ -98,11 +96,11 @@ URL レピュテーション サービスは、攻撃シミュレーション �
 
 シミュレーションがスケジュールされた状態 **の間** 、シミュレーション レポートはほとんどの場合空になります。 この段階では、シミュレーション エンジンはターゲット ユーザーの電子メール アドレスを解決し、配布グループを展開し、リストからゲスト ユーザーを削除します。
 
-![スケジュールされた状態でのレポート。](../../media/attack-sim-empty-reporting.png)
+![スケジュールされた状態のシミュレーションを示すシミュレーションの詳細。](../../media/attack-sim-training-faq-scheduled-state.png)
 
 シミュレーションが進行中のステージ **に入** った後、レポートにトリクルを開始する情報が表示されます。
 
-![進行中の状態でのレポート。](../../media/attack-sim-in-progress.png)
+![進行中の状態のシミュレーションを示すシミュレーションの詳細。](../../media/attack-sim-training-faq-in-progress-state.png)
 
 個々のシミュレーション レポートが進行中の状態に移行した後に更新するには、最大 30 分 **かかる場合** があります。 シミュレーションが完了状態に達するまで、レポート データは引き続 **き作成** されます。 レポートの更新は、次の間隔で行われます。
 
@@ -118,7 +116,7 @@ URL レピュテーション サービスは、攻撃シミュレーション �
 
 ### <a name="messages-reported-as-phishing-by-users-arent-appearing-in-simulation-reports"></a>ユーザーがフィッシングとして報告したメッセージがシミュレーション レポートに表示されない
 
-攻撃シミュレーター トレーニングのシミュレーション レポートでは、ユーザーのアクティビティに関する詳細を提供します。 次に例を示します。
+攻撃シミュレーター トレーニングのシミュレーション レポートでは、ユーザーのアクティビティに関する詳細を提供します。 例:
 
 - メッセージ内のリンクをクリックしたユーザー。
 - 資格情報を渡したユーザー。
@@ -140,9 +138,9 @@ A: ターゲット ユーザーに使用できるオプションは複数あり�
 - すべてのユーザーを含める (現在、40,000 人未満のユーザーを持つ組織で利用可能)。
 - 特定のユーザーを選択します。
 - CSV ファイル (1 行に 1 つのメール アドレス) からユーザーを選択します。
-- Azure ADベースのターゲット設定を使用します。
+- Azure ADベースのターゲット設定。
 
-対象ユーザーが Azure グループによって識別されるキャンペーンは、通常、AD簡単に管理できると分かっています。
+対象となるユーザーがグループによって識別されるキャンペーンは、Azure AD管理しやすいという結果が出ていました。
 
 ### <a name="q-are-there-any-limits-in-targeting-users-while-importing-from-a-csv-or-adding-users"></a>Q: CSV からインポートする場合やユーザーを追加する場合、ユーザーのターゲット設定に制限はありますか?
 
@@ -150,11 +148,11 @@ A: CSV ファイルから受信者をインポートするか、個々の受信�
 
 受信者には、個々のユーザーまたはグループを指定できます。 グループには数百人または数千人の受信者が含まれている可能性があります。したがって、実際の制限は個々のユーザーの数に設定されません。
 
-大きな CSV ファイルを管理したり、多数の個々の受信者を追加したりすると、面倒な場合があります。 Azure ADグループを使用すると、シミュレーションの全体的な管理が簡略化されます。
+大きな CSV ファイルを管理したり、多数の個々の受信者を追加したりすると、面倒な場合があります。 グループAzure AD使用すると、シミュレーションの全体的な管理が簡略化されます。
 
 ### <a name="q-does-microsoft-provide-payloads-in-other-languages"></a>Q: Microsoft は他の言語でペイロードを提供していますか?
 
-A: 現在、5 つのローカライズされたペイロードを使用できます。 既存のペイロードを他の言語に直接翻訳したり機械翻訳したりすると、不正確で関連性が低下する可能性があります。
+A: 現在、5 つのローカライズされたペイロードを使用できます。 既存のペイロードを他の言語に直接翻訳または機械翻訳すると、不正確で関連性が低下する可能性があります。
 
 つまり、カスタム ペイロードの作成エクスペリエンスを使用して、選択した言語で独自のペイロードを作成できます。 また、特定の地域のユーザーをターゲットにするために使用された既存のペイロードを収集することを強く推奨します。 つまり、攻撃者がコンテンツをローカライズします。
 
@@ -168,7 +166,7 @@ A: ユーザー アカウントMicrosoft 365またはOffice 365、言語の構�
 
 A: はい、可能です。 ウィザードの最後 **の [シミュレーションの** 確認] ページで、新しいシミュレーションを作成するには、テストを送信 **するオプションがあります**。 このオプションは、現在ログインしているユーザーにフィッシング シミュレーション メッセージのサンプルを送信します。 受信トレイでフィッシング メッセージを検証した後、シミュレーションを送信できます。
 
-![[シミュレーションの確認] ページの [テスト] ボタンを送信します。](../../media/attack-sim-review-simulation-page.png)
+![[シミュレーションの確認] ページの [テスト] ボタンを送信します。](../../media/attack-sim-training-simulations-review-simulation.png)
 
 ### <a name="q-can-i-target-users-that-belong-to-a-different-tenant-as-part-of-the-same-simulation-campaign"></a>Q: 同じシミュレーション キャンペーンの一環として、別のテナントに属するユーザーをターゲットにできますか?
 

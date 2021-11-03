@@ -19,12 +19,12 @@ description: セキュリティ & コンプライアンス センターで利用
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fb46c3436c48328b02e2937968321c0adce9ffb8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b81e31781ad4105dc5a0ee270ef605ffe96691e7
+ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202419"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60724789"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターのスマート レポートと分析情報
 
@@ -68,6 +68,6 @@ ms.locfileid: "60202419"
 
 ## <a name="related-topics"></a>関連トピック
 
-[Microsoft 365 Defender ポータル](../defender/overview-security-center.md)
+[Microsoft 365 Defender ポータル](../defender/microsoft-365-defender.md#the-microsoft-365-defender-portal)
 
 [脅威から保護Office 365](protect-against-threats.md)

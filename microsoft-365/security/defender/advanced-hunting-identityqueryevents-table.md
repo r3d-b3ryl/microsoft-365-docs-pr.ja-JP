@@ -15,17 +15,15 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 58809ea13b725a7ee7aa9b4098d221b02fe6d35c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ab77bc9e18c3e1ee2f67b2d891ea408bf0b58421
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159128"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60704259"
 ---
 # <a name="identityqueryevents"></a>IdentityQueryEvents
 
@@ -55,7 +53,7 @@ ms.locfileid: "60159128"
 | `AccountDomain` | string | アカウントのドメイン |
 | `AccountUpn` | string | アカウントのユーザー プリンシパル名 (UPN) |
 | `AccountSid` | string | アカウントのセキュリティ識別子 (SID) |
-| `AccountObjectId` | string | Azure アカウントのアカウントの一意AD |
+| `AccountObjectId` | string | アカウントの一意の識別子は、Azure AD |
 | `AccountDisplayName` | string | アドレス帳に表示されるアカウント ユーザーの名前。 通常、指定または名、ミドル イニシエーション、姓または姓の組み合わせ。 |
 | `DeviceName` | string | エンドポイントの完全修飾ドメイン名 (FQDN) |
 | `IPAddress` | string | エンドポイントに割り当て、関連するネットワーク通信中に使用される IP アドレス |

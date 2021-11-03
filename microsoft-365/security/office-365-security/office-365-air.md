@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c1097107aac85edc9a757f42d3502f7cbb51c758
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e3329186d7ec0ece2b3d2261b97f784b3eba50d5
+ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154316"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60724741"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Microsoft Defender の自動調査と応答 (AIR) Office 365
 
@@ -129,7 +129,7 @@ Microsoft 365には、管理者のアクセス許可の悪用、マルウェア�
 
 ## <a name="changes-are-coming-soon-in-your-microsoft-365-defender-portal"></a>変更は、新しいポータルで近日Microsoft 365 Defender予定です。
 
-Microsoft Defender で既に AIR 機能を使用している場合は、Office 365 ポータルでいくつかの変更点を確認[Microsoft 365 Defenderしています](../defender/overview-security-center.md)。
+Microsoft Defender で既に AIR 機能を使用している場合は、Office 365 ポータルでいくつかの変更点を確認[Microsoft 365 Defenderしています](../defender/microsoft-365-defender.md#the-microsoft-365-defender-portal)。
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="統合アクション センター。":::
 
@@ -151,7 +151,7 @@ Microsoft Defender で既に AIR 機能を使用している場合は、Office 3
 
 ****
 
-|Item|何が変わるのか?|
+|アイテム|何が変わるのか?|
 |---|---|
 |**[調査]** ページ|更新された [ **調査] ページ** は、Microsoft Defender for Endpoint に表示 [される情報とより一貫性があります](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)。 統合された新しい [調査] ビューに合わせて、一般的な形式とスタイルの変更 **が表示** されます。 たとえば、調査グラフの形式が統一されています。|
 |**[ユーザー]** タブ|[ **ユーザー]** タブが [ **メールボックス] タブ** です。ユーザーに関する詳細は、[メールボックス] タブ **に表示** されます。|

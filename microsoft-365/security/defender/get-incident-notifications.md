@@ -23,11 +23,11 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.openlocfilehash: 600ff555762112222769fde0372716f4a89a12b9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209179"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60717585"
 ---
 # <a name="get-incident-notifications-by-email"></a>電子メールでインシデント通知を取得する
 

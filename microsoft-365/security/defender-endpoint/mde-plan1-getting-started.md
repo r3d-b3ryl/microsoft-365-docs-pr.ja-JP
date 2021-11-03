@@ -14,12 +14,12 @@ ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f2fe77b6c1760ac4f25031dc78fbd5e0a259f0f8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9946482f9ce5ac268255acd43f7929710a8a9bbd
+ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212464"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60724669"
 ---
 # <a name="get-started-with-microsoft-defender-for-endpoint-plan-1-preview"></a>Microsoft Defender for Endpoint Plan 1 の概要 (プレビュー)
 
@@ -76,8 +76,8 @@ Microsoft 365 Defender ポータル ( ) を使用すると、検出された脅�
 | **正常性** | サービス正常性とメッセージ **センターへの** リンク **が含まれています**。  |
 | **正常性**  > **サービスの正常性** | [サービス正常性] ページの [サービス正常性] ページにMicrosoft 365 管理センター。 このページでは、組織のサブスクリプションで利用可能なすべてのサービスの正常性状態を表示できます。   |
 | **正常性**  > **メッセージ センター** | [メッセージ] ページの [メッセージ] センターに移動Microsoft 365 管理センター。 メッセージ センターは、計画された変更に関する情報を提供します。 各メッセージには、何が来ているか、ユーザーに与える影響、および変更を管理する方法が説明されています。 |  
-| **ロール&アクセス許可** | ポータルを使用するためのアクセス許可を付与Microsoft 365 Defenderします。 アクセス許可は、Azure Active Directory (Azure AD) のロールを通じて付与されます。 役割を選択すると、フライアウト ウィンドウが表示されます。 このフライアウトには、役割グループ内のメンバー AD削除できる Azure サーバーへのリンクが含まれている。 <br/><br/> 詳細については、「役割ベースのアクセス [制御を使用してポータル アクセスを管理する」を参照してください](rbac.md)。  |
-| **設定** | [セキュリティ センター] と [エンドポイントMicrosoft 365 Defender Defender for **Endpoints]** の一般的な設定に **移動します**。 <br/><br/> 詳細については、「設定」[を参照してください](../defender/overview-security-center.md)。 |
+| **ロール&アクセス許可** | ポータルを使用するためのアクセス許可を付与Microsoft 365 Defenderします。 アクセス許可は、アクセス許可 (Azure Active Directory) のAzure AD。 役割を選択すると、フライアウト ウィンドウが表示されます。 このフライアウトには、役割グループ内Azure ADメンバーを追加または削除できる場所へのリンクが含まれる。 <br/><br/> 詳細については、「役割ベースのアクセス [制御を使用してポータル アクセスを管理する」を参照してください](rbac.md)。  |
+| **設定** | [セキュリティ センター] と [エンドポイントMicrosoft 365 Defender Defender for **Endpoints]** の一般的な設定に **移動します**。 <br/><br/> 詳細については、「設定」[を参照してください](../defender/microsoft-365-defender.md#the-microsoft-365-defender-portal)。 |
 | **その他のリソース** | その他のポータルとセンターの一覧を表示します (Azure Active Directory、Microsoft 365 コンプライアンス センター。 <br/><br/> 詳細については、「Microsoft セキュリティ [ポータルと管理センター」を参照してください](../defender/portals.md)。 |
 
 > [!TIP]
@@ -98,7 +98,7 @@ Microsoft 365 Defender ポータル ( ) を使用すると、検出された脅�
 > [!TIP]
 > インシデント ビューの使用の詳細については **、「インシデント** の管理 [」を参照してください](manage-incidents.md)。
 
-## <a name="manage-devices"></a>デバイスを管理する
+## <a name="manage-devices"></a>デバイスの管理
 
 組織のデバイスを表示および管理するには、ナビゲーション バーの [ **エンドポイント**] で、[デバイス インベントリ] **を選択します**。 次の図に示すように、デバイスの一覧が表示されます。
 

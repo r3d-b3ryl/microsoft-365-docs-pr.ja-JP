@@ -1,14 +1,14 @@
 ---
 title: Microsoft セキュリティ ポータルと管理センター
 description: セキュリティに関連するさまざまなサービスを管理するための適切な Microsoft 管理センターまたはポータルMicrosoft 365見つける
-keywords: セキュリティ、ポータル、Microsoft 365、M365、セキュリティ センター、管理センター、URL、リンク、Microsoft 365 Defender、Microsoft Defender for Endpoint、Microsoft Defender セキュリティ センター、Microsoft Defender for Identity、Microsoft Defender for Office 365、MCAS、WDSI、SCC、Intune、MDM、MEM、ASC、Cloud App Security 、Azure AD、セキュリティ & コンプライアンス センター
+keywords: セキュリティ、ポータル、Microsoft 365、M365、セキュリティ センター、管理センター、URL、リンク、Microsoft 365 Defender、Microsoft Defender for Endpoint、Microsoft Defender セキュリティ センター、Microsoft Defender for Identity、Microsoft Defender for Office 365、MCAS、WDSI、SCC、Intune、MDM、MEM、ASC、Cloud App Security 、Azure AD、& コンプライアンス センター
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -17,18 +17,18 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 873753f1802fce9480c16d6df33092284156a820
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6543d2b5dee1b30bcd08e37c4d05499977fc7b40
+ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191441"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60724357"
 ---
 # <a name="microsoft-security-portals-and-admin-centers"></a>Microsoft セキュリティ ポータルと管理センター
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft 365 Defender[ポータル](overview-security-center.md)は、ID、データ、デバイス、およびアプリ全体のセキュリティを監視および管理するための新しいホームですが、特定の特殊なタスクのためにさまざまなポータルにアクセスする必要があります。
+Microsoft 365 Defender[ポータル](microsoft-365-defender.md#the-microsoft-365-defender-portal)は、ID、データ、デバイス、およびアプリ全体のセキュリティを監視および管理するための新しいホームですが、特定の特殊なタスクのためにさまざまなポータルにアクセスする必要があります。
 
 > [!TIP] 
 > さまざまな関連するポータルにアクセスするには、Microsoft 365 Defenderウィンドウで [その他 **のリソース**] を選択します。
@@ -46,7 +46,7 @@ Microsoft 365 Defender[ポータル](overview-security-center.md)は、ID、デ�
 | Azure Defender ポータル | [Azure Defender を使用](/azure/security-center/security-center-intro)して、クラウド内のデータ センターとハイブリッド ワークロードのセキュリティ体制を強化する | [portal.azure.com/#blade/Microsoft_Azure_Security](https://portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0) |
 | Microsoft Defender for Identity ポータル | Microsoft Defender for Identity を使用して Active Directory シグナルを使用して、高度な脅威、侵害された ID、悪意のあるインサイダー アクションを特定、検出、[および調査します](/azure-advanced-threat-protection/what-is-atp)。 | [portal.atp.azure.com](https://portal.atp.azure.com/) |
 | Cloud App Security ポータル | クラウド[サービスMicrosoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)サイバー脅威を特定し、対処するための高度な分析を利用して、豊富な可視性、データ移動の制御、高度な分析を行います。 | [portal.cloudappsecurity.com](https://portal.cloudappsecurity.com/) |
-| Microsoft Defender セキュリティ インテリジェンス ポータル | Microsoft Defender for Endpoint のセキュリティ インテリジェンス更新プログラムを取得し、サンプルを提出し、脅威百科事典を探索する | [microsoft.com/wdsi](https://microsoft.com/wdsi) |
+| Microsoft セキュリティ インテリジェンス ポータル | Microsoft Defender for Endpoint のセキュリティ インテリジェンス更新プログラムを取得し、サンプルを提出し、脅威百科事典を探索する | [microsoft.com/wdsi](https://microsoft.com/wdsi) |
 
 ## <a name="portals-for-other-workloads"></a>他のワークロードのポータル
 

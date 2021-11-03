@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 74656a9f79fba0e81afcb9db207c83162b2dfd81
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 930d9fc489e449effcb61c3224f5695ec835a1a1
+ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176578"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60724705"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender の新機能
 
@@ -46,7 +46,11 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 - [Microsoft Defender for Identity の新機能](/defender-for-identity/whats-new)
 - [新しい機能Microsoft Cloud App Security](/cloud-app-security/release-notes)
 
+## <a name="november-2021"></a>2021 年 11 月
+- (プレビュー)Defender for Cloud Apps のアプリケーション ガバナンス アドオン機能が、Microsoft 365 Defender で利用Microsoft 365 Defender。 アプリ ガバナンスは、Microsoft のセキュリティ API を介してデータにアクセスする OAuth が有効なアプリ用に設計Microsoft 365ポリシー管理機能Graph提供します。 アプリ ガバナンスは、実用的な分析情報と自動化されたポリシー アラートおよびアクションを通して、これらのアプリとそのユーザーが Microsoft 365 に保存されている機密データにアクセスし、使用し、共有する方法について、完全な可視性、修復、およびガバナンスを提供します。 [アプリケーション ガバナンスの詳細を参照してください](/cloud-app-security/app-governance-manage-app-governance)。
 
+## <a name="october-2021"></a>2021 年 10 月
+- (GA)高度な検索では [、CloudAppEvents](advanced-hunting-cloudappevents-table.md) テーブルにさらに列が追加されました。 クエリに `AccountType` `IsExternalUser` `IsImpersonated` `IPTags` 、、、、、 `IPCategory` `UserAgentTags` を追加できます。 
 
 ## <a name="september-2021"></a>2021 年 9 月
 - (GA)Microsoft Defender for Office 365イベント データは、イベント ストリーミング API Microsoft 365 Defender使用できます。 イベントの種類の可用性と状態は、ストリーミング API のサポートされるイベントMicrosoft 365 Defender[で確認できます](supported-event-types.md)。
@@ -78,7 +82,7 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 
 
 ## <a name="april-2021"></a>2021 年 4 月
-- Microsoft 365 Defender<br> 改善[されたMicrosoft 365 Defenderポータル](https://security.microsoft.com)が利用可能になります。 この新しいエクスペリエンスでは、Defender for Endpoint、Defender for endpoint、defender for Office 365 Id、その他を 1 つのポータルにまとめます。 これは、セキュリティコントロールを管理するための新しいホームです。 [新機能について説明します](./overview-security-center.md)。
+- Microsoft 365 Defender<br> 改善[されたMicrosoft 365 Defenderポータル](https://security.microsoft.com)が利用可能になります。 この新しいエクスペリエンスでは、Defender for Endpoint、Defender for endpoint、defender for Office 365 Id、その他を 1 つのポータルにまとめます。 これは、セキュリティコントロールを管理するための新しいホームです。 [新機能について説明します](./microsoft-365-defender.md#the-microsoft-365-defender-portal)。
 
 - [Microsoft 365 Defender分析レポート](threat-analytics.md)<br>
  脅威分析は、アクティブな攻撃に対応し、影響を最小限に抑えるのに役立ちます。 また、セキュリティ ソリューションによってブロックされる攻撃の試みMicrosoft 365 Defender、さらなる暴露のリスクを軽減し、回復性を高める予防措置を講じてください。 統合セキュリティ エクスペリエンスの一環として、Microsoft Defender for Endpoint および Microsoft Defender では、E5 ライセンス所有者向Office利用できます。
@@ -86,5 +90,5 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 ## <a name="march-2021"></a>2021 年 3 月
 - [CloudAppEvents テーブル](advanced-hunting-cloudappevents-table.md) <br>さまざまなクラウド アプリとサービスのイベントに関する情報を、Microsoft Cloud App Security。 この表には、以前に表で使用できる情報も含 `AppFileEvents` まれています。
 ## <a name="february-2021"></a>2021 年 2 月
-- (プレビュー)拡張された[Microsoft 365 Defenderポータル ( https://security.microsoft.com) ](https://security.microsoft.com)がパブリック プレビューで利用可能になります。 この新しいエクスペリエンスにより、Defender for Endpoint と Defender for Office 365が中央に表示されます。 [変更点についての詳細情報](./overview-security-center.md) はこちらを参照してください。
+- (プレビュー)拡張された[Microsoft 365 Defenderポータル ( https://security.microsoft.com) ](https://security.microsoft.com)がパブリック プレビューで利用可能になります。 この新しいエクスペリエンスにより、Defender for Endpoint と Defender for Office 365が中央に表示されます。 [変更点についての詳細情報](microsoft-365-defender.md#the-microsoft-365-defender-portal) はこちらを参照してください。
 - **[(プレビュー) Microsoft 365 Defender](api-overview.md)** API - トップ レベルの Microsoft 365 Defender API を使用すると、共有インシデントテーブルと高度なハンティング テーブルに基づいてワークフローを自動化できます。 

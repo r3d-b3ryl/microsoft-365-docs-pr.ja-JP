@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: f771837dd40bc8a3fbaebeac060c10259395c3fc
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 30a0e3b61e004ffe6c78e3b7a2d15b7b190253d9
+ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/03/2021
-ms.locfileid: "60699067"
+ms.locfileid: "60724657"
 ---
 # <a name="redirecting-accounts-from-microsoft-defender-for-endpoint-to-microsoft-365-defender"></a>Microsoft Defender for Endpoint からアカウントをユーザーにリダイレクトMicrosoft 365 Defender
 
@@ -114,7 +114,7 @@ SIEM と拡張検出および応答 (XDR) による脅威保護に対する Micr
 無効にすると、アカウントは security.microsoft.com にルーティングされ、以前のポータル (securitycenter.windows.com または securitycenter.microsoft.com) に再びアクセスできます。 
 
 ## <a name="related-information"></a>関連情報
-- [Microsoft 365 Defender概要](overview-security-center.md)
+- [Microsoft 365 Defender概要](microsoft-365-defender.md)
 - [Microsoft Defender for Endpoint in Microsoft 365 Defender](microsoft-365-security-center-mde.md)
 - [Microsoft は、セキュリティ操作を最新化するために統合された SIEM と XDR を提供します。](https://www.microsoft.com/security/blog/?p=91813) 
 - [XDR と SIEM のインフォグラフィック](https://afrait.com/blog/xdr-versus-siem/) 

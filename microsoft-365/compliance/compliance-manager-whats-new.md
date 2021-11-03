@@ -17,16 +17,33 @@ search.appverid:
 - MOE150
 - MET150
 description: コンプライアンス管理の新機能と新機能を確認します。 更新された評価、新しい評価テンプレート、新しいアクションなどについて説明します。
-ms.openlocfilehash: 4e51063447ba43129b588bfe05650572b7c97e4a
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 6233cd278e3ca5c445361ae4f50c33d8d00c6b94
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554410"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60701601"
 ---
 # <a name="whats-new-in-microsoft-compliance-manager"></a>Microsoft コンプライアンス マネージャーの新機能
 
 **この記事では、次の情報を参照してください。** コンプライアンス マネージャーの最近の更新プログラムについて学習します。
+
+## <a name="november-2021"></a>2021 年 11 月
+
+### <a name="new-assessment-templates"></a>新しい評価テンプレート
+
+プレビューでは、次の評価テンプレートを使用できます。
+
+- AZURE の ISO 27001:2013 (プレビュー)
+- DYNAMICS 365 の ISO 27001:2013 (プレビュー)
+- FedRAMP モデレート for Dynamics 365 (プレビュー)
+- FedRAMP モデレート for Azure (プレビュー)
+- FedRAMP High for Azure (プレビュー)
+- FedRAMP High for Dynamics 365 (プレビュー)
+- SOC 2 for Azure (プレビュー)
+- SOC 2 for Dynamics 365 (プレビュー)
+- AZURE の ISO 27018:2019 (プレビュー)
+- ISO 27018:2019 for Dynamics 365 (Preview)
 
 ## <a name="october-2021"></a>2021 年 10 月
 

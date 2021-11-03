@@ -7,19 +7,19 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 10/01/2021
+ms.date: 10/29/2021
 ms.prod: m365-security
 ms.technology: mdep1
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 17026088cc10b5ace84cbab31f0a383661e2484b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4881d1ca4d8b6ca12dbb7c6c273328e515a503ac
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60204049"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60704878"
 ---
 # <a name="overview-of-microsoft-defender-for-endpoint-plan-1-preview"></a>Microsoft Defender for Endpoint Plan 1 の概要 (プレビュー)
 
@@ -31,7 +31,7 @@ Microsoft Defender for Endpoint は、高度な脅威を防止、検出、調査
 - **現在プレビュー中で、** この記事で説明されているエンドポイント プラン 1 の Defender。そして 
 - **[Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)**(一般提供)、以前は Defender for Endpoint と [呼ばれる](microsoft-defender-endpoint.md)。
 
-次の図は、Defender for Endpoint Plan 1 (プレビュー) に含まれている情報を示しています。
+次の図の緑色のボックスは、Defender for Endpoint Plan 1 (プレビュー) に含まれている情報を示しています。
 
 :::image type="content" source="../../media/mde-p1/mde-p1-overview-diagram.png" alt-text="Defender for Endpoint Plan 1 ダイアグラム":::
 
@@ -79,8 +79,8 @@ Defender for Endpoint Plan 1 (プレビュー) には、次の機能が含まれ
 |:---|:---|:---|
 | デバイス | ウイルス対策スキャンの実行 | ウイルス対策スキャンを開始します。 デバイスで脅威が検出された場合、ウイルス対策スキャン中にこれらの脅威に対処する場合が多い。 |
 | デバイス | デバイスの分離 | Defender for Endpoint への接続を維持しながら、組織のネットワークからデバイスを切断します。 このアクションを使用すると、デバイスを監視し、必要に応じてさらにアクションを実行できます。 |
-| ファイル | 停止と検疫 |プロセスの実行を停止し、関連ファイルを検疫します。 |
-| ファイル | ファイルをブロックまたは許可するインジケーターを追加する | ブロックインジケーターは、ポータブル実行可能ファイルがデバイスで読み取り、書き込み、または実行されるのを防ぐ。 <p>許可インジケーターは、ファイルがブロックまたは修復されるのを防ぐ。 |
+| File | 停止と検疫 |プロセスの実行を停止し、関連ファイルを検疫します。 |
+| File | ファイルをブロックまたは許可するインジケーターを追加する | ブロックインジケーターは、ポータブル実行可能ファイルがデバイスで読み取り、書き込み、または実行されるのを防ぐ。 <p>許可インジケーターは、ファイルがブロックまたは修復されるのを防ぐ。 |
 
 詳細については、次の記事を参照してください。
 
@@ -168,7 +168,7 @@ Defender for Endpoint Plan 1 (プレビュー) には Microsoft 365 Defender ポ
 
 詳細については、「役割ベースのアクセス [制御を使用してポータル アクセスを管理する」を参照してください](rbac.md)。
 
-### <a name="reporting"></a>レポート
+### <a name="reporting"></a>Reporting
 
 このMicrosoft 365 Defenderポータル ( ) は、検出された脅威に関する情報や、それらの脅威に対処するアクション [https://security.microsoft.com](https://security.microsoft.com) に簡単にアクセスできます。 
 

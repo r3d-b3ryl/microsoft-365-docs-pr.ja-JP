@@ -15,14 +15,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/16/2021
 ms.technology: mde
-ms.openlocfilehash: d0f97dcbde929c7661fd3bf3a2aba8eb9f69c3c1
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: fd6453c245a5d7320518c2dc500ed4718568857c
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60239950"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60703263"
 ---
-# <a name="onboard-windows-devices-using-group-policy"></a>グループ ポリシー Windowsデバイスのオンボード 
+# <a name="onboard-windows-devices-using-group-policy"></a>グループ ポリシーを使用してデバイスをオンボードする 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -42,7 +42,7 @@ ms.locfileid: "60239950"
 > Windows Server 2019 および Windows Server 2022 では、グループ ポリシーの基本設定で作成される XML ファイルの NT AUTHORITY\Well-Known-System-Account を NT AUTHORITY\SYSTEM に置き換える必要があります。
 
 > [!NOTE]
-> Windows Server 2012 R2 および 2016 の新しい統合された Microsoft Defender for Endpoint ソリューションを使用している場合は、中央ストアで最新の ADMX ファイルを使用して、正しい Microsoft Defender ポリシー オプションにアクセスしていることを確認してください。 「グループ [ポリシー管理](/troubleshoot/windows-client/group-policy/create-and-manage-central-store)用中央ストア管理用テンプレートを作成および管理する方法」を参照し、Windows で使用する最新のファイルをダウンロード **Windows 10。** 
+> Windows Server 2012 R2 および 2016 の新しい統合 Microsoft Defender for Endpoint ソリューションを使用している場合は、中央ストアで最新の ADMX ファイルを使用して、適切な Microsoft Defender for Endpoint ポリシー オプションにアクセスしてください。 「グループ [ポリシー管理](/troubleshoot/windows-client/group-policy/create-and-manage-central-store)用中央ストア管理用テンプレートを作成および管理する方法」を参照し、Windows で使用する最新のファイルをダウンロード **Windows 10。** 
 
 [[](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)エンドポイント用 Defender [Visio展開](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx)] のさまざまなパスを確認するには、PDF またはドキュメントを参照してください。
 
@@ -127,7 +127,7 @@ ms.locfileid: "60239950"
 
 **ポリシーの場所:** \Windows コンポーネント\atp Windows Defender
 
-ポリシー|設定
+ポリシー|Setting
 ---|---
 Enable\Disable Sample collection|[有効] - [コンピューターでサンプル コレクションを有効にする] チェック ボックスをオンにします。
 
@@ -135,7 +135,7 @@ Enable\Disable Sample collection|[有効] - [コンピューターでサンプ�
 
 **ポリシーの場所:** \Windows コンポーネント\Microsoft Defender ウイルス対策
 
-ポリシー|設定
+ポリシー|Setting
 ---|---
 望ましくない可能性があるアプリケーションの検出を構成する|有効、ブロック
 
@@ -143,7 +143,7 @@ Enable\Disable Sample collection|[有効] - [コンピューターでサンプ�
 
 **ポリシーの場所:** \Windows コンポーネント\Microsoft Defender ウイルス対策\MAPS
 
-ポリシー|設定
+ポリシー|Setting
 ---|---
 Microsoft MAPS に参加する|有効、高度なマップ
 詳細な分析が必要な場合にファイル サンプルを送信する | 有効、安全なサンプルの送信
@@ -152,7 +152,7 @@ Microsoft MAPS に参加する|有効、高度なマップ
 
 **ポリシーの場所:** \Windows コンポーネント\Microsoft Defender ウイルス対策\リアルタイム保護
 
-ポリシー|設定
+ポリシー|Setting
 ---|---
 リアルタイム保護をオフにする|無効
 動作の監視を有効にする|Enabled
@@ -165,7 +165,7 @@ Microsoft MAPS に参加する|有効、高度なマップ
 
 これらの設定は、エンドポイントの定期的なスキャンを構成します。 毎週のクイック スキャンを実行することをお勧めします。パフォーマンスが許容されます。
 
-ポリシー|設定
+ポリシー|Setting
 ---|---
 スケジュールされたスキャンを実行する前に、最新のウイルスとスパイウェアのセキュリティ インテリジェンスを確認する |Enabled
 
@@ -187,7 +187,7 @@ Microsoft MAPS に参加する|有効、高度なマップ
 
    ![攻撃表面の縮小構成のイメージ。](images/asr-guid.png)
 
-ポリシー|設定
+ポリシー|Setting
 ---|---
 フォルダー アクセスの制御を構成する| 有効、監査モード
 
@@ -248,7 +248,7 @@ Microsoft MAPS に参加する|有効、高度なマップ
 
 ## <a name="setup-defender-av-policies"></a>Defender AV ポリシーのセットアップ
 
-新しいグループ ポリシーを作成するか、他のポリシーでこれらの設定をグループ化します。 これは、お客様の環境と、異なる OU (組織単位) をターゲットにしたサービスの展開方法に依存します。
+新しいグループ ポリシーを作成するか、他のポリシーでこれらの設定をグループ化します。 これは、お客様の環境と、異なる組織単位 (OUs) をターゲットにしたサービスの展開方法に依存します。
 
 1. GP を選択するか、新しい GP を作成した後、GP を編集します。
 
@@ -272,7 +272,7 @@ Microsoft MAPS に参加する|有効、高度なマップ
 
 :::image type="content" source="images/config-monitor-incoming-outgoing-file-act.png" alt-text="受信送信ファイルアクティビティの監視を構成します。":::
 
-### <a name="configure-windows-defender-smart-screen-settings"></a>スマート Windows Defenderの設定を構成する
+### <a name="configure-windows-defender-smartscreen-settings"></a>SmartScreen Windows Defender構成する
 
 1. SmartScreen Explorer **の**[コンピューター構成 \> **ポリシー** \> **]** \> **[管理用WindowsコンポーネントWindows Defender** \> **参照** \> **します**。
 
@@ -319,10 +319,10 @@ Microsoft MAPS に参加する|有効、高度なマップ
 
 :::image type="content" source="images/cloud-protection-level.png" alt-text="config クラウド保護レベル。":::
 
-## <a name="related-topics"></a>関連項目
-- [デバイスWindowsデバイスのオンボードMicrosoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
-- [モバイル Windowsツールを使用してデバイスをオンボードする](configure-endpoints-mdm.md)
-- [ローカル Windowsを使用してデバイスをオンボードする](configure-endpoints-script.md)
+## <a name="related-topics"></a>関連トピック
+- [Microsoft Endpoint Configuration Manager を使用した Windows デバイスのオンボード](configure-endpoints-sccm.md)
+- [モバイル デバイス管理ツールを使用した Windows デバイスのオンボード](configure-endpoints-mdm.md)
+- [ローカル スクリプトを使用した Windows デバイスのオンボード](configure-endpoints-script.md)
 - [非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード](configure-endpoints-vdi.md)
 - [新しくオンボードされた Microsoft Defender for Endpoint デバイスで検出テストを実行する](run-detection-test.md)
 - [Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング](troubleshoot-onboarding.md)

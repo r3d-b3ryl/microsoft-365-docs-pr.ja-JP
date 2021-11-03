@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: 77aa51e80cd339878c5d07d38e71cab810ee130f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 91f80cb79efe7a301bfcefaf7663e13f391b4b1e
+ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191529"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60724334"
 ---
 # <a name="microsoft-defender-for-office-365-in-microsoft-365-defender"></a>Microsoft Defender for Office 365 Microsoft 365 Defender
 
@@ -51,18 +51,18 @@ ms.locfileid: "60191529"
 |アクセス許可|[ロール&アクセス許可](https://security.microsoft.com/emailandcollabpermissions)|詳細[については、「Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/homepage)||
 |メール フロー|||「[管理Exchange」を参照してください。](https://admin.exchange.microsoft.com/#/)|
 |データのプライバシー||詳細[については、「Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/homepage)||
-|検索|[監査](https://security.microsoft.com/auditlogsearch?viewid=Async%20Search)|検索 (コンテンツ検索)||
+|Search|[監査](https://security.microsoft.com/auditlogsearch?viewid=Async%20Search)|検索 (コンテンツ検索)||
 |レポート|[Report](https://security.microsoft.com/emailandcollabreport)|||
 |サービス アシュアランス||詳細[については、「Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/homepage)||
 |監督||詳細[については、「Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/homepage)||
 |電子情報開示||詳細[については、「Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/homepage)||
 |||||
 
-[Microsoft 365 Defender](./overview-security-center.md)既存の Microsoft セキュリティ ポータルのセキュリティ機能 (セキュリティ コンプライアンス センターなど) を& <https://security.microsoft.com> します。 この強化されたセンターは、セキュリティ チームが脅威から組織を効果的かつ効率的に保護するのに役立ちます。
+[Microsoft 365 Defender](./microsoft-365-defender.md)既存の Microsoft セキュリティ ポータルのセキュリティ機能 (セキュリティ コンプライアンス センターなど) を& <https://security.microsoft.com> します。 この強化されたセンターは、セキュリティ チームが脅威から組織を効果的かつ効率的に保護するのに役立ちます。
 
 セキュリティ & コンプライアンス センター (protection.office.com) について理解している場合、この記事では、セキュリティ コンプライアンス センターの変更とMicrosoft 365 Defender。
 
-利点の詳細: [Microsoft 365 Defender](overview-security-center.md)概要
+利点の詳細: [Microsoft 365 Defender](microsoft-365-defender.md)概要
 
 コンプライアンス関連のアイテムをお探しの場合は、「[Microsoft 365 コンプライアンスセンター](https://compliance.microsoft.com/homepage)」へお越しください。
 

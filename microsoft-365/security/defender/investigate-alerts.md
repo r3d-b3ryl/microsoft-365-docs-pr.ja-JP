@@ -20,12 +20,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 92542fdeebd5e6bbfebd075b178a0c22b08f186e
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 3126523fd68afba29e3401533f7de2313f7df65b
+ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587762"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60724765"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>[アラートの調査] Microsoft 365 Defender
 
@@ -54,7 +54,7 @@ Microsoft Defender for Endpoint、Microsoft Defender for endpoint、Microsoft De
 
 - 重要度
 - 状態
-- カテゴリ
+- Category
 - 検出ソース
 - タグ
 - ポリシー
@@ -100,7 +100,7 @@ Microsoft Defender にアクセスして警告を表示するには、次の役�
 アラート ページ全体で、任意のエンティティの横にある省略記号 (**...**) を選択して、アラート ページを開く、またはアラートを別のインシデントにリンクするなどの使用可能なアクションを表示できます。
 
 ### <a name="alert-sources"></a>アラート ソース
-Microsoft 365 Defenderは、Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Cloud App Security。 警告の先頭に文字が付加されたアラートが表示されることがあります。 次の表は、アラートの先頭に付加された文字に基づくアラート ソースのマッピングを理解するのに役立つガイダンスを示しています。
+Microsoft 365 Defenderは、Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Cloud App Security、アプリ ガバナンス アドオンなど、Microsoft Cloud App Security。 警告の先頭に文字が付加されたアラートが表示されることがあります。 次の表は、アラートの先頭に付加された文字に基づくアラート ソースのマッピングを理解するのに役立つガイダンスを示しています。
 
 > [!NOTE]
 > - 付加された GUID は、統合アラート キュー、統合アラート ページ、統合調査、統合インシデントなどの統合エクスペリエンスにのみ固有です。<br>
@@ -171,6 +171,32 @@ Microsoft Cloud App Security |`ca{GUID}` <br> 例: `ca123a456b-c789-1d2e-12f1g33
 アラートの分析が完了し、解決したら、[アラートの管理] ウィンドウに移動し、その状態を [解決済み] としてマークし、False アラートまたは **True** アラートとして分類します。 true アラートの場合は、[決定] フィールドにアラートの脅威の種類 **を指定** します。
 
 アラートを分類し、その決定を指定すると、Microsoft 365 Defenderを調整して、より多くの真のアラートと少ない誤った通知を提供できます。
+
+## <a name="use-power-automate-to-triage-alerts"></a>アラートPower Automateトリアージに使用する
+
+最新のセキュリティ操作 (SecOps) チームは、効果的に機能するために自動化が必要です。 実際の脅威の検出と調査に集中するために、SecOps チームは Power Automate を使用してアラートの一覧をトリアージし、脅威ではない脅威を排除します。  
+
+### <a name="criteria-for-resolving-alerts"></a>アラートを解決するための条件
+
+- ユーザーがアウトオブオフィス メッセージを有効にしている
+
+- ユーザーが高リスクとしてタグ付けされていない
+
+両方が true の場合、SecOps はアラートを正当な移動としてマークし、解決します。 通知は、通知が解決Microsoft Teams後に通知に投稿されます。 
+
+### <a name="connect-power-automate-to-microsoft-cloud-app-security"></a>Connect Power AutomateをMicrosoft Cloud App Security
+
+自動化を作成するには、API トークンを必要としてから、API トークンをPower Automate Microsoft Cloud App Security。 
+
+1. **[設定] をクリック** し **、[セキュリティ拡張機能]** を選択し、[API **トークン**] タブの [トークンの追加 **] をクリック** します。 
+
+2. トークンの名前を指定し、[生成] を **クリックします**。 後で必要に応じてトークンを保存します。
+
+### <a name="create-an-automated-flow"></a>自動フローの作成
+
+詳細な手順については、ビデオを参照 [してください](https://www.microsoft.com/en-us/videoplayer/embed/RWFIRn)。 
+
+このビデオでは、電源の自動化をデバイスに接続する方法Cloud App Security。 
 
 ## <a name="next-steps"></a>次の手順
 

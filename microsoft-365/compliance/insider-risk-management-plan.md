@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 6a915130fe080622d7373e6a0d550606f623dd9b
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 979e1081dd85047286c580907ff9335442ba0b55
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335612"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60701049"
 ---
 # <a name="plan-for-insider-risk-management"></a>インサイダー リスク管理のための計画
 
@@ -75,7 +75,7 @@ ms.locfileid: "60335612"
 
 - ユーザー テンプレートを削除してデータ盗難を使用する場合は、Microsoft 365 HR コネクタを構成して、組織内のユーザーの辞任と終了日の情報を定期的にインポートする必要があります。 組織用の HR コネクタの段階的な構成手順については「[Microsoft 365 HR コネクタでデータをインポートする](import-hr-data.md)」を参照してください。
 - データ 漏え **い** テンプレートを使用する場合は、組織内の機密情報を定義し、重大度の高い DLP ポリシーアラートのインサイダー リスク アラートを受信するために、少なくとも 1 つのデータ損失防止 (DLP) ポリシーを構成する必要があります。 組織の DLP ポリシーを構成する方法については、「[DLP ポリシーの作成、テスト、調整](create-test-tune-dlp-policy.md)」の記事をご覧ください。
-- セキュリティ ポリシー違反 **テンプレートを使用する** 場合は、セキュリティ違反アラートをインポートするために、Defender セキュリティ センターで Microsoft Defender for Endpoint のインサイダー リスク管理統合を有効にする必要があります。 Defender for Endpoint とインサイダー リスク管理の統合を有効にする手順については [、「Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/advanced-features) の高度な機能を構成する」の記事を参照してください。
+- セキュリティ ポリシー違反 **テンプレートを使用する** 場合は、セキュリティ違反アラートをインポートするために、Defender セキュリティ センターで Microsoft Defender for Endpoint のインサイダー リスク管理統合を有効にする必要があります。 Defender for Endpoint とインサイダー リスク管理との統合を有効にする手順については、「Configure Advanced features [in Microsoft Defender for Endpoint」を参照してください](/windows/security/threat-protection/microsoft-defender-atp/advanced-features)。
 - **Disgruntled** ユーザー テンプレートを使用する場合は、組織内のユーザーのパフォーマンスまたは降格状態情報を定期的にインポートする Microsoft 365 HR コネクタを構成する必要があります。 組織用の HR コネクタの段階的な構成手順については「[Microsoft 365 HR コネクタでデータをインポートする](import-hr-data.md)」を参照してください。
 
 ## <a name="test-with-a-small-group-of-users-in-a-production-environment"></a>実稼働環境の小さなユーザー グループでテストする
