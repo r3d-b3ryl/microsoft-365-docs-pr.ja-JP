@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: デスクトップ、モバイル、および Web 用の Office アプリで秘密度ラベルを管理するための IT 管理者向けの情報。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 37838e91003e53df9f7ff3a3318282305236240a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 00844614ea14b668fc3167f20ec2747d995aed17
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192093"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60703411"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office アプリで秘密度ラベルを管理する
 
@@ -115,14 +115,11 @@ Windows コンピューターでのみ実行される Azure Information Protecti
 
 ## <a name="office-built-in-labeling-client-and-other-labeling-solutions"></a>Office 組み込みのラベル付けクライアントおよびその他のラベル付けソリューション
 
-Office 組み込みのラベル付けクライアントは、次の管理センターから秘密度ラベルと秘密度ラベル ポリシー設定をダウンロードします。
+Office 組み込みのラベル付けクライアントは、Microsoft 365 コンプライアンス センターから秘密度ラベルと秘密度ラベル ポリシー設定をダウンロードします。 
 
-- Microsoft 365 コンプライアンス センター
-- Office 365 セキュリティ/コンプライアンス センター (以前の管理ポータル)
+Office 組み込みのラベル付けクライアントを使用するには、コンプライアンス センターと[サポートされているバージョンの Office](#support-for-sensitivity-label-capabilities-in-apps) からユーザーに 1 つ以上の[ラベル ポリシーを公開](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)する必要があります。
 
-Office 組み込みのラベル付けクライアントを使用するには、リストされている管理センターの 1 つと[サポートされているバージョンの Office](#support-for-sensitivity-label-capabilities-in-apps) からユーザーに 1 つ以上の[ラベル ポリシーを公開](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)する必要があります。
-
-これらの条件の両方が満たされているが、Office 組み込みのラベル付けクライアントをオフにする必要がある場合は、次のグループ ポリシー設定を使用します。
+これらの条件の両方が満たされているが、Office アプリの組み込みのラベル付けクライアントをオフにする必要がある場合は、次のグループ ポリシー設定を使用します。
 
 1. **ユーザーの構成/管理用テンプレート/Microsoft Office 2016/セキュリティ設定** に移動します。
 
@@ -132,11 +129,13 @@ Office 組み込みのラベル付けクライアントを使用するには、�
 
 ### <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>Office 組み込みのラベル付けクライアントと Azure Information Protection クライアント
 
-ユーザーが [Azure Information Protection クライアント](/azure/information-protection/rms-client/aip-clientv2)をインストールしている場合、既定では、組み込みのラベル付けクライアントは Office アプリでオフになっています。 
+ユーザーが [Azure Information Protection クライアント](/azure/information-protection/rms-client/aip-clientv2)を Windows コンピューターにインストールしている場合、既定では、組み込みのラベル付けクライアントは[サポートするOffice アプリ](#labeling-client-for-desktop-apps)でオフになっています。 組み込みラベルは、Azure Information Protection クライアントで使用される Office アドインを使用しないため、安定性とパフォーマンスの向上という利点があります。 また、高度な分類子などの最新の機能もサポートしています。
 
-Azure Information Protection client for Office アプリではなく組み込みのラベル機能を使用するには、グループ ポリシー設定 [[Office 2013 および Office 2016 プログラムのグループ ポリシー設定が理由で読み込まれたアドインなし]](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off)に記述された **[管理対象アドインの一覧]** を使用することをお勧めします。
+Azure Information Protection クライアントをアンインストールするのではなく、Azure Information Protection アドインが Office アプリに読み込まれないようにすることをお勧めします。 その後、Office アプリに組み込まれているラベル付けの利点と、Office アプリの外部で Azure Information Protection クライアントラベル付けファイルの利点を得ることができます。 たとえば、Azure Information Protection クライアントは、エクスプローラーと PowerShell を使用して、すべてのファイルの種類にラベルを付けることができます。 Office アプリの外部でサポートされるラベル付け機能の詳細については、「[秘密度ラベルと Azure Information Protection](sensitivity-labels.md#sensitivity-labels-and-azure-information-protection)」 を参照してください。
 
-Microsoft Word 2016、Excel 2016、PowerPoint 2016、Outlook 2016 の場合は、Azure Information Protection クライアント用に次のプログラム識別子 (ProgID) を指定し、オプションを **0 に設定します: アドインは常に無効 (ブロックされます)**
+Office アプリで Azure Information Protection クライアント アドインが読み込まれないようにするには、「[Office 2013 および Office 2016 プログラムのグループ ポリシー設定が原因で読み込まれたアドインがない](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off)」に記載されている 「**管理されたアドインの一覧**」グループ ポリシー設定を使用します。
+
+組み込みのラベル付けをサポートする Office アプリの場合、Microsoft Word 2016、Excel 2016、PowerPoint 2016、Outlook 2016 の構成を使用し、Azure Information Protection クライアントに次のプログラム識別子 (ProgID) を指定し、オプションを [**0: アドインは常に無効 (ブロックされます)**] に設定します
 
 |アプリケーション  |ProgID  |
 |---------|---------|
@@ -146,17 +145,16 @@ Microsoft Word 2016、Excel 2016、PowerPoint 2016、Outlook 2016 の場合は�
 |Outlook | `MSIP.OutlookAddin` |
 | | | 
 
-
 グループ ポリシーを使用するか、[Office クラウド ポリシー サービス](/DeployOffice/overview-office-cloud-policy-service)を使用して、この設定を展開します。
 
-> [!NOTE]
+> [!IMPORTANT]
 > グループ ポリシー設定 **[Office の秘密度機能を使用して、秘密度ラベルを適用し表示する]** を使用して、これを **1** に設定する場合、Azure Information Protection クライアントが Office アプリに読み込まれる可能性があります。アドインが各アプリで読み込まれるのをブロックすると、このような問題が防止されます。
 
 二者択一的に、Word、Excel、PowerPoint、Outlook から office **Microsoft Azure Information Protection** を対話的に無効にしたり、削除したりすることもできます。 このメソッドは、単一のコンピューターおよびアドホック テストに適しています。 手順については、「[Office プログラムでアドインを表示、管理、インストールする](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d)」を参照してください。 
 
-どちらの方法を選択した場合でも、変更は Office アプリの再起動時に有効になります。 この Office アドインを無効にするか、または削除しても、Azure Information Protection クライアントはコンピューターにインストールされたままなので、Office アプリの外部のファイルに引き続きラベルを付けることができます。 たとえば、エクスプローラーまたは PowerShell を使用します。
+どちらの方法を選択した場合でも、変更は Office アプリの再起動時に有効になります。
 
-Azure Information Protection クライアントと Office 組み込みのラベル付けクライアントでサポートされている機能については、Azure Information Protection のドキュメントから「[Windows ラベル付けソリューションを選択する](/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution)」を参照してください。
+Azure Information Protection クライアントと Office 組み込みのラベル付けクライアントでサポートされている機能については、Azure Information Protection のドキュメントから 「[Windows ラベル付けソリューションを選択する](/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution)」 を参照してください。
 
 ## <a name="office-file-types-supported"></a>サポートされる Office ファイルの種類
 
@@ -261,7 +259,7 @@ SharePoint または OneDrive のドキュメントに対して Office on the we
     
     このオプションの利点は、暗号化設定でメール アドレスを指定することにより、特定のユーザーへのアクセスと権利を制限できることです。 欠点は、アカウントの作成とラベル構成の調整のための管理オーバーヘッドです。
 
-- もう 1 つのオプションは、[SharePoint および OneDrive の Azure AD B2B (プレビュー) との統合](/sharepoint/sharepoint-azureb2b-integration-preview)を使用して、ユーザーがリンクを共有したときにゲスト アカウントが自動的に作成されるようにすることです。
+- もう 1 つのオプションは、[SharePoint および OneDrive の Azure AD B2B との統合](/sharepoint/sharepoint-azureb2b-integration)を使用して、ユーザーがリンクを共有したときにゲスト アカウントが自動的に作成されるようにすることです。
     
     このオプションの利点は、アカウントが自動的に作成されるため、管理オーバーヘッドが最小限に抑えられ、ラベルの構成が簡単になることです。 このシナリオでは、事前にメール アドレスがわからないため、暗号化オプション [[認証されたユーザーを追加する]](encryption-sensitivity-labels.md#requirements-and-limitations-for-add-any-authenticated-users) を選択する必要があります。 欠点は、この設定ではアクセス権と使用権を特定のユーザーに制限できないことです。
 
