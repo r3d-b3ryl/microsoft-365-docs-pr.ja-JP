@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 組織内のユーザーがどのように Microsoft 365 サービスを使用しているかの定期的レポートを取得して、各チャートをドリルダウンして詳しい分析情報を得ます。
-ms.openlocfilehash: 10c2fdeae19746358745308d3b5171afb0647ebd
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 6ea5027daad00e6c141bfb53137307113321aa7a
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553354"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60655446"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>管理センターの Microsoft 365 レポート
 
@@ -89,53 +89,37 @@ ms.locfileid: "60553354"
   
 ## <a name="which-activity-reports-are-available-in-the-admin-center"></a>管理センターで利用可能なアクティビティ レポート
 
-サブスクリプションに応じて、以下のレポートを利用できます。
+サブスクリプションに応じて、すべての環境で以下のレポートを利用できます。
 
-- [Microsoft ブラウザーの使用法](browser-usage-report.md) 
-  
-- [メール アクティビティ](email-activity-ww.md)
-    
-- [メールボックス使用状況](mailbox-usage.md)
-    
-- [Office ライセンス認証数](microsoft-office-activations-ww.md)
+|**Report**|**Public**|**GCC**|**GCC-High**|**DoD**|**21Vianet が運用している Office 365**|
+|:-----|:-----|:-----|:-----|:-----|:-----|
+|[Microsoft ブラウザーの使用法](browser-usage-report.md)|はい|いいえ [^1]|いいえ [^1]|いいえ [^1]|いいえ [^1]|
+|[メール アクティビティ](email-activity-ww.md)|はい|はい|はい|はい|はい|
+|[メール アプリの利用状況](email-apps-usage-ww.md)|はい|はい|はい|はい|はい|
+|[メールボックス使用状況](mailbox-usage.md)|はい|はい|はい|はい|はい|
+|[Office ライセンス認証数](microsoft-office-activations-ww.md)|はい|はい|はい|はい|はい|
+|[アクティブなユーザー](active-users-ww.md)|はい|はい|はい|はい|はい|
+|[Microsoft 365 グループ](office-365-groups-ww.md)|はい|はい|はい|はい|はい|
+|[Microsoft 365 Apps の使用法](microsoft365-apps-usage-ww.md)|はい|はい|いいえ [^1]|いいえ [^1]|いいえ [^1]|
+|[OneDrive for Business のユーザー アクティビティ](onedrive-for-business-activity-ww.md)|はい|はい|はい|はい|はい|
+|[OneDrive for Business の利用状況](onedrive-for-business-usage-ww.md)|はい|はい|はい|はい|はい|
+|[SharePoint サイトの利用状況](sharepoint-site-usage-ww.md)|はい|はい|はい|はい|はい|
+|[SharePoint のアクティビティ](sharepoint-activity-ww.md)|はい|はい|はい|はい|はい|
+|[Microsoft Teams ユーザー アクティビティ](microsoft-teams-user-activity-preview.md)|はい|はい|はい|はい|該当なし [^2]|
+|[Microsoft Teams デバイスの利用状況](microsoft-teams-device-usage-preview.md)|はい|はい|はい|はい|該当なし [^2]|
+|[Yammer アクティビティ](yammer-activity-report-ww.md)|はい|はい|該当なし [^2]|該当なし [^2]|該当なし [^2]|
+|[Yammer デバイスの使用状況](yammer-device-usage-report-ww.md)|はい|はい|該当なし [^2]|該当なし [^2]|該当なし [^2]|
+|[Yammer のグループ アクティビティ レポート](yammer-groups-activity-report-ww.md)|はい|はい|該当なし [^2]|該当なし [^2]|該当なし [^2]|
+|[フォームのアクティビティ](forms-activity-ww.md)|はい|はい|いいえ [^1]|いいえ [^1]|いいえ [^1]|
+|[Dynamics 365 顧客音声アクティビティ](forms-pro-activity-ww.md)|はい|はい|該当なし [^2]|該当なし [^2]|該当なし [^2]|
+|[Skype for Business Online のアクティビティ](/SkypeForBusiness/skype-for-business-online-reporting/activity-report)|はい|はい|いいえ [^1]|いいえ [^1]|はい|
+|[Skype for Business Online の電話会議開催者のアクティビティ](/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)|はい|はい|いいえ [^1]|いいえ [^1]|はい|
+|[Skype for Business Online の電話会議参加者のアクティビティ](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)|はい|はい|いいえ [^1]|いいえ [^1]|はい|
+|[Skype for Business Online のピアツーピア アクティビティ](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)|はい|はい|いいえ [^1]|いいえ [^1]|はい|
+|[Viva ラーニング アクティビティ](viva-learning-activity.md)|はい|該当なし|該当なし|該当なし|該当なし|
 
-- [アクティブなユーザー](active-users-ww.md)
-  
-- [メール アプリの利用状況](email-apps-usage-ww.md)
-
-- [フォームのアクティビティ](forms-activity-ww.md)
-
-- [Dynamics 365 顧客音声アクティビティ](forms-pro-activity-ww.md)
-
-- [Microsoft 365 グループ](office-365-groups-ww.md)
-  
-- [OneDrive for Business のユーザー アクティビティ](onedrive-for-business-activity-ww.md)
-
-- [OneDrive for Business の利用状況](onedrive-for-business-usage-ww.md)
-
-- [Microsoft 365 Apps の使用法](microsoft365-apps-usage-ww.md)
-  
-- [SharePoint サイトの利用状況](sharepoint-site-usage-ww.md)
-  
-- [SharePoint のアクティビティ](sharepoint-activity-ww.md)
-  
-- [Skype for Business Online のアクティビティ](/SkypeForBusiness/skype-for-business-online-reporting/activity-report)
-  
-- [Skype for Business Online の電話会議開催者のアクティビティ](/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)
-  
-- [Skype for Business Online の電話会議参加者のアクティビティ](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)
-  
-- [Skype for Business Online のピアツーピア アクティビティ](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)
-
-- [Yammer アクティビティ](yammer-activity-report-ww.md)
-
-- [Yammer デバイスの使用状況](yammer-device-usage-report-ww.md)
-
-- [Yammer のグループ アクティビティ レポート](yammer-groups-activity-report-ww.md)
-
-- [Microsoft Teams ユーザー アクティビティ](microsoft-teams-user-activity-preview.md)
-
-- [Microsoft Teams デバイスの利用状況](microsoft-teams-device-usage-preview.md)
+[^1]: The report is in plan to be released in the future. The <a href="https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=" target="_blank">Microsoft 365 Roadmap</a> will be updated before the release.
+[^2]: The service is not available in the environment so no plan to release the report.
 
 ## <a name="how-to-view-licensing-information"></a>ライセンス情報を表示する方法
 
@@ -163,14 +147,6 @@ ms.locfileid: "60553354"
 レポートの生成時にユーザーレベルの情報を再表示する場合は、**グローバル管理者** が管理センターでその変更をすばやく行うことができます。
 
 レポートで組織の使用状況データに関する情報を入力します。 既定では、レポートにユーザー、グループ、およびサイトの識別可能な名前を持つ情報が表示されます。 2021 年 9 月 1 日より、企業が地域のプライバシー法をサポートするのに役立つ継続的な取り組みの一環として、既定ですべてのレポートのユーザー情報を非表示にしています。
-
-  
-1. 管理センターで、 [**設定**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">サービス&amp;アドイン</a>] ページの順に移動します。
-
-2. [**組織設定**] を選択し、[**サービス**] を選択します。 
-  
-3. [**レポート**] ウィンドウで、[**ユーザー情報の表示方法の選択**] を選択し、[**識別可能なユーザー情報をレポートに表示する**] を選択します。
-  
 
 グローバル管理者は、組織のプライバシー方針で許可されている場合は、テナント用のこの変更を元に戻し、特定可能なユーザー情報を表示することができます。 これは、Microsoft 365 管理センターで以下の手順に従うことで設定できます。
   

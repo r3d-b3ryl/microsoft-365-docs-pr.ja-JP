@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: deea83a515feeec15097613b297f395f39e1ffa1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6d617024f2a09b73b7b944fb34bd2f34d024d3c1
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202539"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60661059"
 ---
 # <a name="top-scoring-in-industry-tests"></a>業界テストでのトップ スコア
 
@@ -39,7 +39,7 @@ Microsoft 365 Defender は、[Microsoft Defender for Endpoint](https://www.micro
 
 ### <a name="mitre-demonstrated-real-world-detection-response-and-protection-from-advanced-attacks"></a>MITRE: 実際の検出、対応、および高度な攻撃から保護する方法を示しました
 
-MITRE のテストアプローチの中心は、現実世界の攻撃をエミュレートして、ソリューションが十分に機能して、攻撃を検出し対応できるかどうかを理解することです。 テストがエンドポイントの検出と応答に重点を置いているのに対して、MITRE のシミュレートした APT29 攻撃は複数の攻撃ドメインにまたがり、単なるエンドポイント保護だけではなく、防御者の強化が行える機会を提供します。 Microsoft は、Microsoft 365 Defender で防御者の可視性をエンドポイント以上に高めしました。
+MITRE のテストアプローチの中心は、現実世界の攻撃をエミュレートして、ソリューションが十分に機能して、攻撃を検出し対応できるかどうかを理解することです。 テストがエンドポイントの検出と応答に重点を置いているのに対して、MITRE のシミュレートした APT29 攻撃は複数の攻撃ドメインにまたがり、単なるエンドポイント保護だけではなく、防御者の強化が行える機会を提供します。 Microsoft は、Microsoft 365 Defender によりエンドポイントを超えて可視性を拡張しました。
 
 - Microsoft 365 Defender の ATT&CK ベースの 評価 - 2020 年 5 月: [現実世界での検出において先導的立場](https://www.microsoft.com/security/blog/2020/05/01/microsoft-threat-protection-leads-real-world-detection-mitre-attck-evaluation/)
 
