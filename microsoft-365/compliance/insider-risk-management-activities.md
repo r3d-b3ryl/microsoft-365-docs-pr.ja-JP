@@ -12,12 +12,13 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 47840e7de14f48a4ae6fee5c134d432accb27e4c
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.custom: admindeeplinkCOMPLIANCE
+ms.openlocfilehash: 7f3e87e7c804793603ac4b5af464c052abcc857e
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60754485"
+ms.locfileid: "60786940"
 ---
 # <a name="investigate-insider-risk-management-activities"></a>インサイダーリスク管理活動の調査
 

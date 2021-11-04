@@ -18,12 +18,12 @@ ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 ms.custom:
 - seo-marvel-apr2020
 description: 非アクティブなメールボックスの内容を保持する必要がなくなったMicrosoft 365、非アクティブなメールボックスを完全に削除できます。
-ms.openlocfilehash: 1f3dee1ab2680445f854d963d8c55cdb3192ac56
-ms.sourcegitcommit: 7791c519bd8b68fc23433e13e1ecbdbeaddbebfa
+ms.openlocfilehash: 69cbe206e040ca1b1f76e846c3b3efbf45c1539e
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60725630"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60786892"
 ---
 # <a name="delete-an-inactive-mailbox"></a>非アクティブなメールボックスを削除する
 
@@ -204,11 +204,11 @@ Set-RetentionCompliancePolicy -Identity <retention policy GUID without prefix or
    Get-MailboxSearch $InPlaceHold.Name | FL Sources
    ```
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 - **非アクティブなメールボックスは、回復可能な削除によって削除されたメールボックスの一種です。** Exchange Onlineで、回復可能な削除によって削除されたメールボックスは、メールボックスが削除されてはいるものの、特定の保持期間内であれば回復することができます。 保留状態でない削除済みメールボックスの場合、メールボックスは 30 日以内に回復可能です。 非アクティブなメールボックス (削除前の保留メールボックス) は、保留が削除されるまで、回復可能な状態で削除されたままです。 非アクティブなメールボックスから保留リストを削除すると、メールボックスは非アクティブな状態ではなくなりました。 その代わりに、その保留が削除された日から 183 日間、Exchange Online に回復可能な状態で残ります。 183 日後、削除されたメールボックスは完全削除のマークが付き、回復できません。
 
-- **非アクティブなメールボックスに対する保留リストを削除した後はどうなりますか。** メールボックスは、他の削除済みメールボックスと同様に処理され、183 日間の回復可能な削除メールボックスの保持期間が経過すると、完全に削除されます。 この保持期間は、非アクティブなメールボックスから保留が削除された日付から始まります。 *InactiveMailboxRetireTime* プロパティは、メールボックスが非アクティブ (保留時のソフト削除) から非アクティブ (保留なしでソフト削除) に移行する場合に設定されます。 その時点で *、InactiveMailboxRetireTime* プロパティは、移行が発生した現在の日付に設定されます。 *InactiveMailboxRetireTime* プロパティが設定されているメールボックスを検索するアシスタント *(MailboxLifeCycle* アシスタントと呼ばれる) があります。 "InactiveMailboxRetireTime + 183 日" が現在の日付より少ない場合、メールボックスは削除されます。
+- **非アクティブなメールボックスに対する保留リストを削除した後はどうなりますか。** メールボックスは、他の削除済みメールボックスと同様に処理され、183 日間の回復可能な削除メールボックスの保持期間が経過すると、完全に削除されます。 この保持期間は、非アクティブなメールボックスから保留が削除された日付から始まります。 *InactiveMailboxRetireTime* プロパティは、メールボックスが非アクティブ (保留時のソフト削除) から非アクティブ (保留なしでソフト削除) に移行する場合に設定されます。 その時点で *、InactiveMailboxRetireTime* プロパティは、移行が発生した現在の日付に設定されます。 *InactiveMailboxRetireTime* プロパティが設定されているメールボックスを検索するアシスタント *(MailboxLifeCycle* アシスタントと呼ばれる) があります。 "InactiveMailboxRetireTime + 183 日" が現在の日付より小さい場合、メールボックスは削除されます。
 
 - **ホールドを解除した直後に、非アクティブなメールボックスは完全に削除されますか。** 以前は非アクティブだったメールボックスは、ソフト削除された状態で 183 日間使用できます。 183 日後、メールボックスは完全な削除のマークが付きます。
 

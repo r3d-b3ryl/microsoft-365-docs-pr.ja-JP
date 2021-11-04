@@ -14,14 +14,15 @@ mscollection: M365-security-compliance
 ms.custom:
 - Adm_O365
 - seo-marvel-apr2020
+- admindeeplinkCOMPLIANCE
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: セキュリティ、プライバシー、コンプライアンスの実践に役立つ Microsoft Service Trust Portal にアクセスして使用する方法について説明します。
-ms.openlocfilehash: c74cd1e12d7ca2d6ac7adeb3ace921f54fe4b5a1
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 2efa7389da9d53d14b833dc31bd84b446ee48f63
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60757193"
+ms.locfileid: "60785920"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Microsoft Service Trust Portal の使用を開始する
 

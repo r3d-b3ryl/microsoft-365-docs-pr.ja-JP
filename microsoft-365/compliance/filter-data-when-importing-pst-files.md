@@ -17,14 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkCOMPLIANCE
 description: PST ファイルをインポートする際に、Microsoft 365 インポート サービスのインテリジェント インポート機能を使用してデータをフィルター処理するMicrosoft 365。
-ms.openlocfilehash: da5b22d79339ad4a4a94bd0db803970c1d66537f
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 593ce847803fdc3529fbe9276721e6bb8cf79069
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60755251"
+ms.locfileid: "60786136"
 ---
 # <a name="filter-data-when-importing-pst-files"></a>PST ファイルをインポートするときに、データをフィルター処理する
 
@@ -129,7 +131,7 @@ PST インポート ジョブを作成した後、次の手順に従ってデー
   
 7. ジョブのインポートをクリックすると、各 PST ファイルの状態や構成したフィルター設定などの詳細情報が表示されます。
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 - 年齢フィルター Microsoft 365増分を決定する方法 PST Microsoft 365分析すると、各アイテムの送信または受信タイムスタンプを確認します (アイテムに送信タイムスタンプと受信タイムスタンプの両方がある場合は、最も古い日付が選択されます)。 次Microsoft 365タイムスタンプの年の値を確認し、現在の日付と比較してアイテムの年齢を決定します。 これらの年齢は、Age フィルターのドロップダウン リストの値として **使用** されます。 たとえば、PST ファイルに 2016、2015、および 2014 からのメッセージがある場合 **、Age** フィルターの値は **1** 年 **、2** 年、 **および 3 年になります**。
   

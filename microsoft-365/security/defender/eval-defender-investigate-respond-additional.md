@@ -22,12 +22,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a075b653e3eeae9287f4fdbf83ed9e5e2133df99
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e412852e7184a4f9b520ed777938836a44b62b5c
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208459"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60786181"
 ---
 # <a name="try-microsoft-365-defender-incident-response-capabilities-in-a-pilot-environment"></a>パイロットMicrosoft 365 Defenderインシデント対応機能を試す
 
@@ -186,7 +186,7 @@ ms.locfileid: "60208459"
       > [!NOTE]
       > データの取得を制限するオプションのフィルター処理については、次の手順を参照してください。
 
-      ![高度な検索クエリの結果の例。](../../media/mtp/fig19.png)
+      ![高度な検索クエリの結果の例。](../../media/advanced-hunting-incident-response-try-1.png)
 
         > [!NOTE]
         > 高度な検索では、クエリ結果が表形式のデータとして表示されます。 グラフなどの他の形式のデータを表示することもできます。
@@ -200,7 +200,7 @@ ms.locfileid: "60208459"
 
    1. クエリの結果の行をクリックして、レコードを検査できます。
 
-      ![高度な検索結果が選択されている場合に開く検査レコード側パネルの例。](../../media/mtp/fig21.png)
+      ![高度な検索結果が選択されている場合に開く検査レコード側パネルの例。](../../media/advanced-hunting-incident-response-try-2.png)
 
 4. メールが表示されるのを確認したので、添付ファイルのフィルターを追加します。 環境内の添付ファイルを含むすべてのメールに焦点を当てる。 このシミュレーションでは、環境から送信されるメールではなく、受信メールに焦点を当てる必要があります。 追加したフィルターを削除して、メッセージを見つけて "メッセージ" を追加|AttachmentCount **> 0** と **EmailDirection**  ==  **"Inbound""**
 
@@ -258,7 +258,7 @@ ms.locfileid: "60208459"
 
 1. クエリ ページで、Go ハンティング手順の手順 7 で追加された行 7 と 8 を削除し、[検出ルールの作成] **をクリックします**。
 
-   ![高度な検索ページで [検出ルールの作成] をクリックできる場所の例。](../../media/mtp/fig22.png)
+   ![高度な検索ページで [検出ルールの作成] をクリックできる場所の例。](../../media/advanced-hunting-incident-response-try-3.png)
 
    > [!NOTE]
    > [検出ルール **の作成] を** クリックし、クエリに構文エラーがある場合、検出ルールは保存されません。 クエリをダブルクリックして、エラーがないか確認します。

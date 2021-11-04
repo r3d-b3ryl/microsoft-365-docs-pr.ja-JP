@@ -13,13 +13,14 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 description: 管理者は、データ コネクタをセットアップして、組織の物理的なバッド システムからデータをインポートして、Microsoft 365。 これにより、内部リスク管理ポリシーでこのデータを使用して、組織に対する内部脅威の可能性を示す可能性のある特定のユーザーによる物理的な建物へのアクセスを検出できます。
-ms.openlocfilehash: cb568836c0f763682cbad5524b41d19b034d02dc
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 80e92f758f12c506e89ceea48ea6facfa9c01c74
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60756165"
+ms.locfileid: "60786880"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>物理的な不良データをインポートするコネクタをセットアップする (プレビュー)
 
@@ -71,7 +72,7 @@ JSON ファイルは、コネクタで必要なスキーマ定義に準拠して
 |AssetId|物理資産または物理アクセス ポイントの参照 ID。|英数字の文字列|
 |AssetName|物理アセットまたは物理アクセス ポイントの表示名。|英数字の文字列|
 |EventTime|アクセスのタイムスタンプ。|日付と時刻 (UTC 形式)|
-|AccessStatus|の値 `Success` または `Failed`|文字列|
+|AccessStatus|の値 `Success` または `Failed`|String|
 |||
 
 必要なスキーマに準拠する JSON ファイルの例を次に示します。

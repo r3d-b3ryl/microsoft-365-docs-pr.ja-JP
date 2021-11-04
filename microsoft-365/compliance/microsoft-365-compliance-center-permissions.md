@@ -11,12 +11,13 @@ ms.topic: article
 ms.localizationpriority: medium
 description: アクセス許可を管理する方法については、Microsoft 365 コンプライアンス センター。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c3c543774de8b4cc8419beed60e60be33976885e
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.custom: admindeeplinkCOMPLIANCE
+ms.openlocfilehash: b19e0ce095fe4b0eb25f8fbf81b3f3e739271e1e
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60757039"
+ms.locfileid: "60786436"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center"></a>Microsoft 365 コンプライアンス センターでのアクセス許可
 

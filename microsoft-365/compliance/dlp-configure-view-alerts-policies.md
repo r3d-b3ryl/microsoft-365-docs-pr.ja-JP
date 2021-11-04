@@ -19,13 +19,14 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkCOMPLIANCE
 description: データ損失防止ポリシーのアラートを定義および管理する方法について説明します。
-ms.openlocfilehash: a2969da8fa782a07063614763da015e74d4826f9
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 629f0e84b1118313d6968a07a24d4e27b12f0bce
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753531"
+ms.locfileid: "60785452"
 ---
 # <a name="configure-and-view-alerts-for-data-loss-prevention-polices"></a>データ損失防止ポリシーのアラートを構成および表示する
 
@@ -46,7 +47,7 @@ ms.locfileid: "60753531"
     -   デバイス
 -   **高度なアラート構成オプション**: これらのオプションは、DLP ポリシー作成フローの一部です。 それらを使用して、リッチ アラート構成を作成します。 イベントの数または漏洩したデータのサイズに基づいて、単一イベントアラートまたは集約アラートを作成できます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 開始する前に、必要な前提条件が満たされていることを確認してください。
 

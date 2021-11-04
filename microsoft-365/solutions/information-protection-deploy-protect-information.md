@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: セキュリティMicrosoft 365コンプライアンス機能を展開し、個人情報を保護します。
-ms.openlocfilehash: f8111f1662a7669dde978d6d41f04fd4b6c50ea6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d605147b24c4f6ef3a12eedab2243bcaa4c6745b
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176345"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60785932"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>データプライバシー規制の対象となる情報を保護する
 
@@ -84,7 +84,7 @@ Microsoft[の情報保護ソリューション](../compliance/information-protec
 - [Microsoft エンドポイント マネージャー](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)
 - [Windows 情報保護](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)
 
-## <a name="sensitivity-labels"></a>秘密度ラベル
+## <a name="sensitivity-labels"></a>機密ラベル
 
 Microsoft Information Protection フレームワークの感度ラベルを使用すると、ユーザーの生産性と共同作業能力を妨げることなく、組織のデータを分類および保護できます。
 
@@ -134,7 +134,7 @@ Microsoft Information Protection フレームワークの感度ラベルを使�
 
 ### <a name="create-and-deploy-sensitivity-labels-for-sites-groups-and-teams"></a>サイト、グループ、およびチームの感度ラベルを作成および展開する
 
-このページで[感度](../compliance/sensitivity-labels-teams-groups-sites.md)ラベルを作成Microsoft 365 コンプライアンス センター、次のコンテナーに適用できます。
+ラベルに感度[ラベル](../compliance/sensitivity-labels-teams-groups-sites.md)を作成<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター、次</a>のコンテナーに適用できます。
 
 - Microsoft Teamsサイト
 - Microsoft 365グループ (以前はOffice 365グループ)
@@ -158,7 +158,7 @@ Microsoft Information Protection フレームワークの感度ラベルを使�
 2. **各ラベルの機能を定義する。** 各ラベルに関連付ける必要がある保護設定を構成します。 たとえば、機密性の低いコンテンツ ("General" ラベルなど) にヘッダーまたはフッターを適用する必要がある一方で、機密性の高いコンテンツ ("Confidential" ラベルなど) は透かしを持ち、暗号化を有効にする必要があります。
 3. **ラベルを発行する。** 秘密度ラベルの構成が完了したら、ラベル ポリシーを使用してラベルを公開します。 ラベルを使用する必要があるユーザーとグループおよび使用するポリシー設定を決定します。 1 つのラベルは再利用可能です。 一度定義した後、別のユーザーに割り当てられた複数のラベル ポリシーに含めできます。
 
-Microsoft 365 コンプライアンス センター から感度ラベルを発行すると、Office アプリに表示され始め、[](../compliance/sensitivity-labels-office-apps.md)ユーザーはコンテンツの作成または編集時にコンテンツを分類および保護できます。
+<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>から感度ラベルを発行すると、Office アプリに表示され始め、[](../compliance/sensitivity-labels-office-apps.md)ユーザーはコンテンツの作成または編集時にコンテンツを分類および保護できます。
 
 ![ラベルの展開フローのMicrosoft 365。](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-label-flow.png)
 
@@ -208,7 +208,7 @@ DLP を使用すると、次の操作を実行できます。
 
 ### <a name="supported-workloads-for-dlp"></a>DLP でサポートされているワークロード
 
-Microsoft 365 コンプライアンス センター の DLP ポリシーを使用すると、Exchange Online、SharePoint、OneDrive、Microsoft Teams など、Microsoft 365 の多くの場所で機密アイテムを識別、監視、および自動的に保護できます。
+<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>の DLP ポリシーを使用すると、Exchange Online、SharePoint、OneDrive、Microsoft Teams など、Microsoft 365 の多くの場所で機密アイテムを識別、監視、および自動的に保護できます。
 
 たとえば、OneDrive サイトに保存されているクレジット カード番号を含むドキュメントを特定したり、特定のユーザーの OneDrive サイトを監視することができます。
 

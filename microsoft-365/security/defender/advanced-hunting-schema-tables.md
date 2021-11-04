@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c0f1a476963a3eed3e1759743f87b1bce2233ffc
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: cd087ef92a261904ce43951f2a29bb64639405ac
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60667050"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60786035"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>高度な捜索スキーマの概要
 
@@ -48,7 +48,7 @@ ms.locfileid: "60667050"
 ### <a name="access-the-schema-reference"></a>スキーマ参照へのアクセス
 スキーマ参照にすばやくアクセスするには、スキーマ表現のテーブル名の横にある [参照の表示] アクションを選択します。 [スキーマ参照] **を選択して** テーブルを検索することもできます。
 
-![ポータル内スキーマ参照にアクセスする方法を示す画像。](../../media/mtp-ah/ah-reference.png)
+![ポータル内スキーマ参照にアクセスする方法を示す画像。](../../media/understand-schema-1.png)
 
 ## <a name="learn-the-schema-tables"></a>スキーマ テーブルの詳細
 次の参照は、スキーマ内のすべてのテーブルを一覧表示します。 各テーブル名は、そのテーブルの列名を説明するページにリンクします。 テーブル名と列名は、高度な検索画面のスキーマ表現の一部としてセキュリティ センターにも表示されます。
@@ -82,7 +82,7 @@ ms.locfileid: "60667050"
 | **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Active Directory および Microsoft オンライン サービスでの認証イベント |
 | **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | ユーザー、グループ、デバイス、ドメインなどの Active Directory オブジェクトのクエリ |
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [クエリ結果を操作する](advanced-hunting-query-results.md)

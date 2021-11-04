@@ -18,18 +18,21 @@ search.appverid:
 - MOE150
 - GEA150
 description: '[レポート] ダッシュボードの [Microsoft 365 Apps] ダッシュボードを使用して使用状況レポートMicrosoft 365を取得する方法についてMicrosoft 365 管理センター。'
-ms.openlocfilehash: 1f714281196ff27404d593c4c65ecec893bbc209
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 5418ea32129a667d198eee7a14e005450105a3ca
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60648888"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60785872"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-apps-usage"></a>Microsoft 365管理センターのレポート - Microsoft 365 Apps使用状況
 
 Microsoft 365 の [レポート] ダッシュボードには、組織内での製品全体に関するアクティビティが表示されます。 これにより、個別の製品レベルのレポートを詳細に確認して、各製品内のアクティビティについてより詳しく知ることができます。 [レポートの概要に関するトピック](activity-reports.md)を参照してください。
 
  たとえば、Microsoft 365 Apps アプリを使用するライセンスを持つ各ユーザーのアクティビティを理解するには、アプリ全体でのアクティビティと、プラットフォーム間での利用方法を確認します。
+ 
+ > [!NOTE]
+ > 共有コンピューターのライセンス認証は、このレポートには含まれません。
 
 ## <a name="how-to-get-to-the-microsoft-365-apps-usage-report"></a>使用状況レポートにアクセスMicrosoft 365 Apps方法
 

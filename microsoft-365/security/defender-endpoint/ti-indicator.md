@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d7805ad7a2c1aae750b6588a6dd2c4141c9b93c3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b4ba3db32004eb9ce80e386d918e470d1361e404
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191637"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60785632"
 ---
 # <a name="indicator-resource-type"></a>インジケーター リソースの種類
 
@@ -49,7 +49,7 @@ ms.locfileid: "60191637"
 
 ## <a name="properties"></a>プロパティ
 
-プロパティ|型|説明
+プロパティ|種類|説明
 :---|:---|:---
 id|String|Indicator エンティティ [の](ti-indicator.md) ID。
 indicatorValue|String|Indicator の [値](ti-indicator.md)です。
@@ -57,7 +57,7 @@ indicatorType|列挙|インジケーターの種類。 指定できる値は、"
 アプリケーション|String|インジケーターに関連付けられているアプリケーション。
 action|列挙|インジケーターが組織内で検出される場合に実行されるアクション。 指定できる値は、"Warn"、"Block"、"Audit"、"Alert"、"AlertAndBlock"、"BlockAndRemediate"、"Allowed" です。
 |externalID|String|カスタム相関関係の要求で顧客が送信できる ID。|
-sourceType|列挙|"User" (ポータルからなど) ユーザーが作成したインジケーターの場合、API を介して自動アプリケーションを使用して送信された場合は "AadApp"。
+sourceType|列挙|"User" ユーザーが作成したインジケーター (ポータルなど) の場合、API を介して自動アプリケーションを使用して送信された場合は"AadApp"。
 createdBySource|string|インジケーターを送信したユーザー/アプリケーションの名前。
 createdBy|String|インジケーターを送信したユーザー/アプリケーションの一意の ID。
 lastUpdatedBy|String|インジケーターを最後に更新したユーザー/アプリケーションの ID。
@@ -70,31 +70,23 @@ description|String|インジケーターの説明。
 recommendedActions|String|インジケーターの推奨アクション。
 rbacGroupNames|文字列の一覧|インジケーターが公開され、アクティブな RBAC デバイス グループ名。 すべてのデバイスに公開されている場合の空のリスト。
 rbacGroupIds|文字列の一覧|RBAC デバイス グループ ID は、インジケーターが公開され、アクティブな場所です。 すべてのデバイスに公開されている場合の空のリスト。
-## <a name="public-preview-indicator-types"></a>パブリック プレビュー: インジケーターの種類
+generateAlert|列挙|**True** の場合は、アラートの生成が必要です。 **このインジケーターが** アラートを生成しない場合は False を指定します。
 
-> [!IMPORTANT]
-> このセクションの情報 (**自動** 調査および修復エンジンのパブリック プレビュー) は、製品の商用リリース前に大幅に変更される可能性がある、事前リリース済みの製品に関連します。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
+## <a name="indicator-types"></a>インジケーターの種類
 
 API でサポートされるインジケーター アクションの種類は次のとおりです。
 
 - 可
-- 通知
-- AlertAndBlock
 - 監査
 - ブロック
 - BlockAndRemediate
-- 警告
+- Warn (MCAS のみ)
 
-アクションの種類の API リストには、新しい応答アクションと、以前の応答アクション (AlertAndBlock、および Alert) が含まれる。 応答アクションの種類の説明の詳細については、「Create indicators 」 [を参照してください](manage-indicators.md)。
-
-許可、警告、ブロック、および BlockAndRemediate の IoC 応答アクションはパブリック プレビューに表示されます。 パブリック プレビューの詳細については、「パブリック プレビュー: カスタム ファイル IoC 拡張機能と API スキーマ[更新プログラム - Microsoft Tech Community」 を参照してください](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/public-preview-custom-file-ioc-enhancements-and-api-schema/ba-p/2676997)。
-
-
-
+応答アクションの種類の説明の詳細については、「Create indicators 」 [を参照してください](manage-indicators.md)。
 
 > [!Note]
 >
-> 機能が GAed に達すると、以前の応答アクション (AlertAndBlock、および Alert) は削除されます。 猶予期間付き GA 日付は 2021 年 10 月の終わりです。  既存のテンプレートまたはスクリプトをできるだけ早く更新してください。
+> 以前の応答アクション (AlertAndBlock、および Alert) は、2022 年 1 月までサポートされます。 この日付以降、すべての顧客は上記のいずれかのアクションの種類を使用する必要があります。
 
 ## <a name="json-representation"></a>Json 表記
 

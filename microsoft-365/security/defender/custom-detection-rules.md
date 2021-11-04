@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: a267921468bfc72513a54b11d9ca58b539848ac8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 48bc7302f8f5e96f35eec70039ec437f602ada2d
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157712"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60786420"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>カスタム検出ルールを作成および管理する
 
@@ -192,7 +192,7 @@ DeviceEvents
 
 ### <a name="view-existing-rules"></a>既存のルールを表示する
 
-既存のすべてのカスタム検出ルールを表示するには、[ハンティングカスタム検出  >  **] に移動します**。 ページには、次の実行情報を含むすべてのルールが一覧表示されます。
+既存のすべてのカスタム検出ルールを表示するには、[ハンティング カスタム検出 **ルール**  >  **] に移動します**。 ページには、次の実行情報を含むすべてのルールが一覧表示されます。
 
 - **Last run**—クエリの一致を確認し、アラートを生成するルールが最後に実行された場合
 - **最終実行の状態**:ルールが正常に実行されたかどうか
@@ -201,9 +201,9 @@ DeviceEvents
 
 ### <a name="view-rule-details-modify-rule-and-run-rule"></a>ルールの詳細の表示、ルールの変更、およびルールの実行
 
-カスタム検出ルールに関する包括的な情報を表示するには、[ハンティング カスタム検出] に移動し、ルールの  >  名前を選択します。 その後、ルールの実行状態と範囲に関する情報など、ルールに関する一般的な情報を確認することができます。 このページには、トリガーされたアラートとアクションの一覧も表示されます。
+カスタム検出ルールに関する包括的な情報を表示するには、[ハンティング カスタム検出ルール] に移動し、ルールの  >  名前を選択します。 その後、ルールの実行状態と範囲に関する情報など、ルールに関する一般的な情報を確認することができます。 このページには、トリガーされたアラートとアクションの一覧も表示されます。
 
-![カスタム検出ルールの詳細ページ。](../../media/custom-detection-details.png)<br>
+![カスタム検出ルールの詳細ページ。](../../media/custom-detect-rules-view.png)<br>
 *カスタム検出ルールの詳細*
 
 また、このページからルールに対して次のアクションを実行することもできます。

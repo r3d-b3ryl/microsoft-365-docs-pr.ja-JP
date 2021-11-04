@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 30e3d3ffbe2bf95def8c2c62906b82abb1356213
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: cd4423ab63019b554157de3a05da3c6c7e7d3d4c
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159104"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60787055"
 ---
 # <a name="take-action-on-advanced-hunting-query-results"></a>高度な検索クエリの結果に対してアクションを実行する
 
@@ -44,7 +44,7 @@ ms.locfileid: "60159104"
 - 検疫ファイル
 
 ## <a name="required-permissions"></a>必要なアクセス許可
-高度な検索を通じてアクションを実行するには、デバイスに修復アクションを送信するためのアクセス許可を持つ Microsoft Defender for Endpoint の役割 [が必要です](/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options)。 アクションを実行できない場合は、次のアクセス許可を取得する方法について、グローバル管理者に問い合わせてください。
+高度な検索を通じてアクションを実行するには、デバイスに修復アクションを送信するためのアクセス許可を持つ Microsoft Defender for Endpoint の [役割が必要です](/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options)。 アクションを実行できない場合は、次のアクセス許可を取得する方法について、グローバル管理者に問い合わせてください。
 
 *脅威と脅威に対>アクティブな脆弱性の管理アクション - 修復処理*
 
@@ -75,7 +75,7 @@ ms.locfileid: "60159104"
 ## <a name="take-action"></a>アクションを行う
 説明されているアクションのいずれかを実行するには、クエリ結果で 1 つ以上のレコードを選択し、[アクションの実行] **を選択します**。 ウィザードを使用すると、優先するアクションを選択して送信するプロセスを案内します。
 
-![選択したレコードのイメージと、レコードを検査するパネル。](../../media/mtp-ah/ah-take-actions.png)
+![選択したレコードのイメージと、レコードを検査するパネル。](../../media/take-action-multiple.png)
 
 ## <a name="review-actions-taken"></a>実行されたアクションを確認する
 各アクションは、アクション センターの[](m365d-action-center.md)[履歴] ([アクション センター履歴] ( [ security.microsoft.com/action-center/history] の下のアクション センター  >  [に個別に記録されます](https://security.microsoft.com/action-center/history)。 アクション センターに移動して、各アクションの状態を確認します。
@@ -83,7 +83,7 @@ ms.locfileid: "60159104"
 >[!NOTE]
 >この記事の一部のテーブルは、Microsoft Defender for Endpoint では使用できない場合があります。 [複数のデータ Microsoft 365 Defender](m365d-enable.md)を使用して脅威を検出するには、このオプションをオンにしてください。 高度なハンティング ワークフローを Microsoft Defender for Endpoint から Microsoft 365 Defenderに移動するには、「Advanced Hunting [queries](advanced-hunting-migrate-from-mde.md)を Microsoft Defender for Endpoint から移行する」の手順に従います。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [クエリ結果を操作する](advanced-hunting-query-results.md)

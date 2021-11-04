@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: fe21093b8849effaf50771f2260d8588a6e68e5d
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: a5d64106d801dfe554fe01290011e2d3e2b7767e
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60756601"
+ms.locfileid: "60786084"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>高度な検索クエリのベスト プラクティス
 
@@ -36,7 +36,11 @@ ms.locfileid: "60756601"
 これらの推奨事項を適用して、結果をより速く取得し、複雑なクエリの実行中にタイムアウトを回避します。 クエリのパフォーマンスを向上させる方法の詳細については、「[Kusto クエリのベスト プラクティス](/azure/kusto/query/best-practices)」を参照してください。
 
 ## <a name="understand-cpu-resource-quotas"></a>CPU リソースクォータの理解
-そのサイズに応じて、各テナントは、高度な検索クエリを実行するために割り当てられた一定の CPU リソースにアクセスできます。 さまざまなサービス制限の詳細については、「高度な検索クォータと使用状況パラメーター」 [を参照してください](advanced-hunting-limits.md)。
+そのサイズに応じて、各テナントは、高度な検索クエリを実行するために割り当てられた一定の CPU リソースにアクセスできます。 さまざまな使用パラメーターの詳細については、「高度な検索クォータと使用状況 [パラメーター」を参照してください](advanced-hunting-limits.md)。
+
+クエリを実行した後、実行時間とそのリソース使用量 (低、中、高) を確認できます。 High は、クエリの実行に必要なリソースが多く、結果を効率的に返すために改善される可能性を示します。
+
+![低リソース インジケーターを示す画像](../../media/resource-usage.png)
 
 複数のクエリを定期的に実行しているお客様は、使用量を追跡し、この記事の最適化ガイダンスを適用して、クォータまたは使用パラメーターの超過による中断を最小限に抑える必要があります。
 
@@ -253,7 +257,7 @@ SHA256,ThreatTypes,DetectionMethods
 ### <a name="parse-strings"></a>文字列の解析
 解析または変換が必要な文字列を効率的に処理するために使用できるさまざまな関数があります。
 
-| 文字列 | 職務 | 使用例 |
+| String | 職務 | 使用例 |
 |--|--|--|
 | コマンド ライン | [parse_command_line()](/azure/data-explorer/kusto/query/parse-command-line) | コマンドとすべての引数を抽出します。 |
 | Paths | [parse_path()](/azure/data-explorer/kusto/query/parsepathfunction) | ファイルパスまたはフォルダー パスのセクションを抽出します。 |
@@ -266,7 +270,7 @@ SHA256,ThreatTypes,DetectionMethods
 >[!NOTE]
 >この記事の一部のテーブルは、Microsoft Defender for Endpoint では使用できない場合があります。 [複数のデータ Microsoft 365 Defender](m365d-enable.md)を使用して脅威を検出するには、このオプションをオンにしてください。 高度なハンティング ワークフローを Microsoft Defender for Endpoint から Microsoft 365 Defenderに移動するには、「Advanced Hunting [queries](advanced-hunting-migrate-from-mde.md)を Microsoft Defender for Endpoint から移行する」の手順に従います。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [Kusto クエリ言語のドキュメント](/azure/data-explorer/kusto/query/)
 - [クォータと使用パラメータ](advanced-hunting-limits.md)
 - [高度なハンティング エラーの処理](advanced-hunting-errors.md)

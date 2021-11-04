@@ -13,20 +13,21 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 ROBOTS: NOINDEX, NOFOLLOW
 description: 米国政府機関クラウドの管理者は、組織の人事 (HR) システムから従業員データをインポートするデータ コネクタをMicrosoft 365。 これにより、内部リスク管理ポリシーで人事データを使用して、組織に内部的な脅威を与える可能性のある特定のユーザーによるアクティビティを検出できます。
-ms.openlocfilehash: 540a652d314aa94a191dccfe672ee7429b3d7f35
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 1797b8b30f47a94673e5c7383fd60a2d6b8e462c
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60755197"
+ms.locfileid: "60786916"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-in-us-government"></a>米国政府機関で人事データをインポートするコネクタをセットアップする
 
 人事 (HR) データを米国政府機関にインポートMicrosoft 365 コンプライアンス センターデータ コネクタをセットアップできます。 人事関連のデータには、従業員が辞職を提出した日付と、従業員の最終日の日付が含まれます。 この人事データは、Microsoft の情報保護 リスク管理ソリューションなどの Microsoft の情報保護 ソリューションで使用[](insider-risk-management.md)して、組織内の悪意のあるアクティビティやデータの盗難から組織を保護できます。 HR コネクタのセットアップは、コネクタによる認証に使用される Azure Active Directory でアプリを作成し、人事データを含む CSV マッピング ファイルを作成し、コンプライアンス センターでデータ コネクタを作成し、CSV ファイル内の HR データを Microsoft クラウドに取り込むスクリプト (スケジュールに基づいて) を実行します。 その後、データ コネクタはインサイダー リスク管理ツールによって使用され、米国政府機関にインポートされた人事データMicrosoft 365アクセスします。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 - 手順 3 で HR コネクタを作成するユーザーには、メールボックスのインポート エクスポートの役割が割り当てられている必要Exchange Online。 既定では、この役割は Exchange Online のどの役割グループにも割り当てられていません。 [メールボックスのインポートエクスポート] 役割は、組織の [組織の管理] 役割グループに追加Exchange Online。 または、新しい役割グループを作成し、メールボックスインポートエクスポートの役割を割り当て、適切なユーザーをメンバーとして追加できます。 詳細については、「グループ内の[役割グループを](/Exchange/permissions-exo/role-groups#create-role-groups)管理[](/Exchange/permissions-exo/role-groups#modify-role-groups)する」の「役割グループの作成」または「役割グループの変更」セクションを参照Exchange Online。
 

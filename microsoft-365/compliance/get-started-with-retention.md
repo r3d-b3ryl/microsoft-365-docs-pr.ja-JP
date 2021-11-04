@@ -14,16 +14,17 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 - m365initiative-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーと保持ラベルを実装して組織のデータを管理しようと思っても、どこから始めればよいかかわりませんか? 開始するのに役立つ実用的なガイダンスをご覧ください。
-ms.openlocfilehash: 5d1566cc5840b93a4d3a994004ea0e1d52e01bb6
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 6d07c487625d610f54e82d3e26b450b079d33e2b
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60757360"
+ms.locfileid: "60785776"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの使用を開始する
 

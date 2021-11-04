@@ -15,12 +15,13 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 38353492f15ad653a1c2d09375c3a004b355337a
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.custom: admindeeplinkCOMPLIANCE
+ms.openlocfilehash: 2ab8d01ab8169e9da11d25f8f118d81ceffcfdd4
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60755113"
+ms.locfileid: "60787144"
 ---
 # <a name="get-started-with-insider-risk-management"></a>インサイダー リスクの管理の概要
 

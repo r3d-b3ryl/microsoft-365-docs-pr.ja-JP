@@ -12,13 +12,14 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 description: In-Placeの電子情報開示とIn-Placeホールド (および対応する PowerShell コマンドレット Exchange Online) は、2020 年前半に廃止されます。 また、Search-Mailbox v1.0 Advanced eDiscoveryおよび v1.0 も同じ期間に廃止されます。
-ms.openlocfilehash: 2d5e058f5fab62249f578d7f138731233bde1091
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: f778a31580bb908205c707c1f613f49bd6a576d1
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60756481"
+ms.locfileid: "60786448"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>従来の電子情報開示ツールの廃止
 

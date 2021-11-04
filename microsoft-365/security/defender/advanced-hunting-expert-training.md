@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 6a7e03dfaf76e7af5dc256d0fdbf904e785346a9
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 1a2fd580a98fc7ac9db9d6592191eb4667ae757f
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60659246"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60786700"
 ---
 # <a name="get-expert-training-on-advanced-hunting"></a>高度な狩猟に関する専門家のトレーニングを受け取る
 
@@ -50,6 +50,7 @@ ms.locfileid: "60659246"
 |--|--|--|--|
 | エピソード 1  | このエピソードでは、高度な検索クエリを実行する場合のさまざまなベスト プラクティスについて説明します。 対象となるトピックの中には、クエリを最適化する方法、ランサムウェアの高度な検索を使用する方法、動的型として JSON を処理する方法、および外部データ演算子を操作する方法があります。 | [YouTube](https://www.youtube.com/watch?v=nMGbK-ALaVg&feature=youtu.be) (56:34) | [テキスト ファイル](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/Performance%2C%20Json%20and%20dynamics%20operator%2C%20external%20data.txt) |
 | エピソード 2 | このエピソードでは、不審なログオン場所や異常なログオン場所や受信トレイ転送ルールを介したデータの侵入を調査して対応する方法について学習します。 Sebastien Molendijk、クラウド セキュリティ CxE のシニア プログラム マネージャーは、高度なハンティングを使用して、Microsoft Cloud App Security データを使用して複数ステージのインシデントを調査する方法をMicrosoft Cloud App Securityしています。 | [YouTube](https://www.youtube.com/watch?v=QaUxdtNfbd8) (57:07) | [テキスト ファイル](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/MCAS%20-%20The%20Hunt.txt)
+| エピソード 3 | このエピソードでは、高度な検索の最新の改善点、外部データ ソースをクエリにインポートする方法、およびパーティション分割を使用して、API の制限に達しないように大きなクエリ結果を小さな結果セットに分割する方法について説明します。 | [YouTube](https://www.youtube.com/watch?v=vd5lgIJKmYs) (40:59) | [テキスト ファイル](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/l33tspeak%2011%20Oct%202021%20-%20externaldata%20and%20query%20partitioning.csl)
 
 
 ## <a name="how-to-use-the-csl-file"></a>CSL ファイルの使い方
@@ -88,7 +89,7 @@ CloudAppEvents
 | sort by Timestamp desc
 ```
      
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [高度な捜索のクエリ言語について学習する](advanced-hunting-query-language.md)
 - [クエリ結果を操作する](advanced-hunting-query-results.md)

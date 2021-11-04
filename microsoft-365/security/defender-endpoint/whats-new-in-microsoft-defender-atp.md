@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d8a3ea4d701c390c7c8505f42fa2440e38965584
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: f4e8cf234cf3fbf84567ecb47e7efc720ae4f873
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60643212"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60787120"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の新機能
 
@@ -58,9 +58,14 @@ ms.locfileid: "60643212"
 - [iOS の Defender for Endpoint の新機能](ios-whatsnew.md)
 - [Defender for Endpoint on Linux の新機能](linux-whatsnew.md)
 
+## <a name="november-2021"></a>2021 年 11 月
+- [セキュリティ構成管理](security-config-management.md) <br/> Microsoft エンドポイント マネージャー または Microsoft Intune または Microsoft Endpoint Configuration Manager によって管理されていないデバイスが、Microsoft Defender のセキュリティ構成を エンドポイント マネージャー から直接受信する機能。
+
+- クロスプラットフォーム サポートの機能強化。
+
 ## <a name="october-2021"></a>2021 年 10 月
 
-- [R2 と R2 のオンボーディングと機能のパリティWindows Server 2012更新Windows Server 2016 (プレビュー)](configure-server-endpoints.md)<br> 新しい統合ソリューション パッケージを使用すると、依存関係とインストール手順を削除することで、サーバーのオンボードが容易になります。 さらに、この統合ソリューション パッケージには、多くの新機能が追加されています。
+- [R2 と R2 のオンボーディングと機能のパリティWindows Server 2012更新Windows Server 2016 (プレビュー)](configure-server-endpoints.md)<br/> 新しい統合ソリューション パッケージを使用すると、依存関係とインストール手順を削除することで、サーバーのオンボードが容易になります。 さらに、この統合ソリューション パッケージには、多くの新機能が追加されています。
 
 - Windows 11 のサポートが Microsoft Defender for Endpoint および Microsoft 365 Defender に追加されました。
 

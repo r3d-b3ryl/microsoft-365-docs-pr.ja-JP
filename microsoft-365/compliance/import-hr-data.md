@@ -13,13 +13,14 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 description: 管理者は、組織の人事 (HR) システムから従業員データをユーザーにインポートするデータ コネクタをMicrosoft 365。 これにより、内部リスク管理ポリシーで人事データを使用して、組織に内部的な脅威を与える可能性のある特定のユーザーによるアクティビティを検出できます。
-ms.openlocfilehash: a6342ec7edc3b044ff5b5c871cd4b80fd4907b7c
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 1fd04bf22038a14b9051fc25109051e227ba1db6
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753095"
+ms.locfileid: "60785595"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>コネクタをセットアップして人事データをインポートする
 
@@ -27,7 +28,7 @@ Microsoft 365 コンプライアンス センター でデータ コネクタを
 
 インサイダーリスク管理ポリシーがリスク指標の生成に使用できる人事データ用のコネクタのセットアップは、HR データを含む CSV ファイルの作成、認証に使用される Azure Active Directory でのアプリの作成、Microsoft 365 コンプライアンス センター での HR データ コネクタの作成、およびスクリプトの実行 (スケジュール済み) で構成されます。ベース) を使用して、CSV ファイル内の HR データを Microsoft クラウドに取り込み、インサイダー リスク管理ソリューションで利用できます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 - ユーザーにインポートする人事シナリオとデータを決定Microsoft 365。 これにより、作成する必要がある CSV ファイルと HR コネクタの数、および CSV ファイルを生成および構成する方法を決定できます。 インポートする HR データは、実装するインサイダー リスク管理ポリシーによって決まります。 詳細については、「手順 1」を参照してください。
 

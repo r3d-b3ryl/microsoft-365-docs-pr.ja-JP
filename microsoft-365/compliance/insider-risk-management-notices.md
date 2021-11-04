@@ -12,12 +12,13 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 47b53814ce3df8c2a8215705521169f27065b5a3
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.custom: admindeeplinkCOMPLIANCE
+ms.openlocfilehash: 1800f8371bebe3a0548196d8b6c1d4119a677058
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753899"
+ms.locfileid: "60786820"
 ---
 # <a name="insider-risk-management-notice-templates"></a>インサイダー リスク管理通知のテンプレート
 

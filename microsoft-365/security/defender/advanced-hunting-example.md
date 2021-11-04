@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 0226be17f475250d5d50d363596bd115f27ce6cd
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e0e5a44811138604abeec4eb6f9b83668a6988ca
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191541"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60787091"
 ---
 # <a name="advanced-hunting-example-for-microsoft-defender-for-office-365"></a>Microsoft Defender for microsoft Defender for Office 365
 
@@ -73,7 +73,7 @@ EmailPostDeliveryEvents
 LogonTime = Timestamp, AccountDisplayName, Application, Protocol, DeviceName, LogonType
 ```
 
-:::image type="content" source="../../media/converge-13-advanced-hunt-an-email-zap-new.png" alt-text="クエリ パネルの上部で [クエリ] を選択し、過去 7 日間の ZAP アクションをキャプチャするために Kusto クエリを実行した [高度な検索] ページ ([ハンティング] の下)。":::
+:::image type="content" source="../../media/ah-query-example-new.png" alt-text="クエリ パネルの上部で [クエリ] を選択し、過去 7 日間の ZAP アクションをキャプチャするために Kusto クエリを実行した [高度な検索] ページ ([ハンティング] の下)。":::
 
 このクエリのデータは、クエリ自体の下の結果パネルに表示されます。 結果には、カスタマイズ可能な結果セットに 'DeviceName', 'AccountDisplayName'、および 'ZapTime' が含まれています。 ユーザーの記録用に、結果をエクスポートすることもできます。 クエリがもう一度必要な場合は、**[保存する]** > **[以下の名前で保存する]** の順に選択し、クエリ、共有クエリ、またはコミュニティ クエリの一覧にそのクエリを追加します。
 

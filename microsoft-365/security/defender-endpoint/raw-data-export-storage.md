@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 02250d5eb75983ad0341f43addc097a26d03d6f1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 49d14074af42437caaca9684cbfa3fc46362d32d
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174665"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60786299"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-storage-account"></a>Microsoft Defender for Endpoint を構成して、高度なハンティング イベントを自分のアカウントStorageする
 
@@ -34,7 +34,7 @@ ms.locfileid: "60174665"
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configuresiem-abovefoldlink)
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 1. テナントに[Storageアカウント](/azure/storage/common/storage-account-overview)を作成します。
 
@@ -91,7 +91,7 @@ ms.locfileid: "60174665"
 
 2. 次のクエリを実行して、各イベントのデータ型マッピングを取得します。
 
-   ```
+   ```kusto
    {EventType}
    | getschema
    | project ColumnName, ColumnType
@@ -99,9 +99,9 @@ ms.locfileid: "60174665"
 
 - デバイス情報イベントの例を次に示します。
 
-  ![イベント ハブ リソース ID3 のイメージ。](images/machine-info-datatype-example.png)
+  ![イベント ハブ リソース ID3 のイメージ。](images/data-types-mapping-query.png)
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [高度なハンティングの概要](advanced-hunting-overview.md)
 - [エンドポイント ストリーミング API 用 Microsoft Defender](raw-data-export.md)

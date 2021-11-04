@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: f78234da247835da0ad9c1ecbdaa9702a206f942
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e127f757b2aaa2865e8cb109699d76ed79f41cb6
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206687"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60785515"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>高度な検索クエリの結果を処理する
 
@@ -71,24 +71,9 @@ AlertInfo
 ```
 結果をレンダリングすると、各重大度値が個別の列として列グラフに表示されます。
 
-![列グラフとして表示される高度な検索クエリ結果のイメージ。 ](../../media/advanced-hunting-column-chart.jpg)
+![列グラフとして表示される高度な検索クエリ結果のイメージ。 ](../../media/advanced-hunting-column-chart-new.png)
 *列グラフとして表示される重大度別のアラートのクエリ結果*
 
-#### <a name="alert-severity-by-operating-system"></a>オペレーティング システムによるアラートの重大度
-演算子を使用して、 `summarize` 複数のフィールドの値をグラフ化する結果を準備することもできます。 たとえば、アラートの重大度がオペレーティング システム (OS) 全体に分散される方法を理解できます。 
-
-次のクエリでは、演算子を使用してテーブルから OS 情報を取得し、列と列の両方の値をカウント `join` `DeviceInfo` `summarize` `OSPlatform` `Severity` します。
-
-```kusto
-AlertInfo
-| join AlertEvidence on AlertId
-| join DeviceInfo on DeviceId
-| summarize Count = count() by OSPlatform, Severity 
-```
-これらの結果は、積み上げ列グラフを使用して最適に視覚化されます。
-
-![積み上げグラフとして表示される高度な検索クエリ結果のイメージ。 ](../../media/advanced-hunting-stacked-chart.jpg)
-*積み上げグラフとして表示される OS と重大度によるアラートのクエリ結果*
 
 #### <a name="phishing-emails-across-top-ten-sender-domains"></a>上位 10 個の送信者ドメインのフィッシングメール
 有限ではない値のリストを扱う場合は、演算子を使用して、最も多くのインスタンスを持つ値のみを `Top` グラフ化できます。 たとえば、フィッシングメールが最も多い上位 10 個の送信者ドメインを取得するには、次のクエリを使用します。
@@ -101,7 +86,7 @@ EmailEvents
 ```
 円グラフ ビューを使用して、上位ドメイン全体の分布を効果的に表示します。
 
-![円グラフとして表示される高度な検索クエリ結果のイメージ。 ](../../media/advanced-hunting-pie-chart.jpg)
+![円グラフとして表示される高度な検索クエリ結果のイメージ。 ](../../media/advanced-hunting-pie-chart-new.png)
 *上位の送信者ドメイン間でのフィッシングメールの配布を示す円グラフ*
 
 #### <a name="file-activities-over-time"></a>時間の間のファイル アクティビティ
@@ -115,7 +100,7 @@ CloudAppEvents
 ```
 以下の線グラフは、以下を含むより多くのアクティビティを含む期間を明確に強調表示します `invoice.doc` 。 
 
-![線グラフとして表示される高度な検索クエリ結果のイメージ。 ](../../media/advanced-hunting-line-chart.jpg)
+![線グラフとして表示される高度な検索クエリ結果のイメージ。 ](../../media/line-chart-a.png)
 *ファイルに関連するイベントの時間の数を示す線グラフ*
 
 
@@ -129,35 +114,27 @@ CloudAppEvents
 クエリ結果のレコードをすばやく検査するには、対応する行を選択して [レコードの検査] パネル **を開** きます。 パネルには、選択したレコードに基づいて次の情報が表示されます。
 
 - **アセット** - レコード内にある主な資産 (メールボックス、デバイス、およびユーザー) の要約ビューで、リスクや露出レベルなどの利用可能な情報が充実しています。
-- **プロセス ツリー** - プロセス情報を含むレコードに対して生成され、利用可能なコンテキスト情報を使用して強化されます。一般に、より多くの列を返すクエリを実行すると、より豊富なプロセス ツリーが生成される可能性があります。
 - **すべての詳細** - レコード内の列のすべての値  
 
-![選択したレコードのイメージと、レコードを検査するパネル。](../../media/mtp-ah/inspect-record.png)
+![選択したレコードのイメージと、レコードを検査するパネル。](../../media/results-inspect-record.png)
 
 コンピューター、ファイル、ユーザー、IP アドレス、URL など、クエリ結果内の特定のエンティティに関する詳細情報を表示するには、エンティティ識別子を選択して、そのエンティティの詳細なプロファイル ページを開きます。
 
 ## <a name="tweak-your-queries-from-the-results"></a>結果からクエリを絞り込む
-結果セットの値を右クリックすると、クエリがすばやく強化されます。 次のようなオプションを使用できます。
+[レコードの検査] パネルで、任意の列の右側にある 3 つのドット **を選択** します。 次のようなオプションを使用できます。
 
 - 選択した値 (`==`) を明示的に検索する
 - 選択した値をクエリ (`!=`) から除外する 
 - クエリに値を追加するためのより高度な演算子 `contains`、`starts with`、および `ends with` を取得する 
 
-![高度な検索結果セットのイメージ。](../../media/advanced-hunting-results-filter.png)
+![高度な検索結果セットのイメージ。](../../media/work-with-query-tweak-query.png)
 
-## <a name="filter-the-query-results"></a>クエリ結果をフィルター処理する
-右に表示されるフィルターは、結果セットの要約を提供します。 各列には、その列で見つかった個別の値とインスタンスの数を一覧表示する独自のセクションがあります。
 
-クエリを絞り込むには、含める値または除外する値のボタンを選択し、[クエリの実行 `+` `-` ] **を選択します**。
-
-![高度なハンティング フィルターのイメージ。](../../media/advanced-hunting-filter.png)
-
-フィルターを適用してクエリを変更し、クエリを実行すると、結果がそれに応じて更新されます。
 
 >[!NOTE]
 >この記事の一部のテーブルは、Microsoft Defender for Endpoint では使用できない場合があります。 [複数のデータ Microsoft 365 Defender](m365d-enable.md)を使用して脅威を検出するには、このオプションをオンにしてください。 高度なハンティング ワークフローを Microsoft Defender for Endpoint から Microsoft 365 Defenderに移動するには、「Advanced Hunting [queries](advanced-hunting-migrate-from-mde.md)を Microsoft Defender for Endpoint から移行する」の手順に従います。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)

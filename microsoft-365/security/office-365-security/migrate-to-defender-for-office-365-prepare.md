@@ -19,12 +19,12 @@ ms.custom: migrationguides
 description: サード パーティ製の保護サービスまたはデバイスから Microsoft Defender に移行して保護を行う場合のOffice 365手順。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c079fbe808b59ef95663ae8a5af6b3913db49eb9
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: f6785e96829256ffe0763eb0f3e84059973d6379
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60779066"
+ms.locfileid: "60785800"
 ---
 # <a name="migrate-to-microsoft-defender-for-office-365---phase-1-prepare"></a>Microsoft Defender に移行して、Office 365 - フェーズ 1: 準備する
 
@@ -118,7 +118,7 @@ Defender for Office 365のネイティブ機能と動作のテストと観察に
 
   今日、Microsoft 365一括メール (ニュースレターなど) は、メッセージ ソースに基づいて安全と見なされています。 これらの "安全な" ソースからのメールは、現在バルクとしてマークされていない (バルク 苦情レベルまたは BCL は 0 または 1) ので、これらのソースからのメールをグローバルにブロックすることは困難です。 ほとんどのユーザーにとって、ソリューションは、これらのバルク メッセージを個別に購読解除するか、送信者をブロックするためにOutlookを使用します。 ただし、一部のユーザーは、バルク メッセージ自体をブロックまたはブロック解除する必要があります。
 
-  バルク メールをフィルター処理するメール フロー ルールは、VIP ユーザーがこれを自分で管理しない場合に役立ちます。 詳細については、「メール フロー ルールを [使用してバルク メールをフィルター処理する」を参照してください](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-filter-bulk-mail.md)。
+  バルク メールをフィルター処理するメール フロー ルールは、VIP ユーザーがこれを自分で管理しない場合に役立ちます。 詳細については、「メール フロー ルールを [使用してバルク メールをフィルター処理する」を参照してください](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-filter-bulk-mail)。
 
 ## <a name="identify-and-designate-priority-accounts"></a>優先度アカウントの特定と指定
 

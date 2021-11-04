@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d6ddd0cbc8a8903ded4f95fc75e4a8ffcde7c5b2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8933c96d96e59f4b1a3c0b5956bf3248f2eb73d2
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159392"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60785624"
 ---
 # <a name="create-indicators"></a>インジケーターの作成
 
@@ -55,12 +55,13 @@ Defender for Endpoint のクラウド検出エンジンは、収集されたデ�
 
 EnableFileHashComputation 設定は、ファイル スキャン時に cert とファイル IoC のファイル ハッシュを計算します。 このポリシーは、信頼できるアプリケーションに属するハッシュと cert の IoC 適用をサポートしています。 ファイル設定の許可またはブロックで、同時に有効化、無効化できます。 EnableFileHashComputation はグループ ポリシーから手動で有効にでき、既定では無効になっています。
 
-現在サポートされているアクションは次のとおりです。
+新しいインジケーター (IoC) を作成する場合、次のアクションの 1 つ以上を使用できます。
 
-- 許可
-- 通知のみ
-- 通知とブロック
-- 警告
+- 許可 – IoC はデバイスで実行できます。
+- 監査 – IoC の実行時にアラートがトリガーされます。
+- 警告 – IoC は、ユーザーがバイパスできるという警告を表示します (MCAS のみ) 
+- 実行をブロックする - IoC の実行は許可されません。
+- ブロックと修復 - IoC の実行は許可されません。修復アクションが IoC に適用されます。
 
 >[!NOTE]
 > 警告モードを使用すると、危険なアプリを開いたユーザーに警告が表示されます。 プロンプトはアプリの使用をブロックしませんが、アプリの適切な使用方法を説明するカスタム メッセージと会社ページへのリンクを提供できます。 ユーザーは警告をバイパスし、必要に応じてアプリを引き続き使用できます。 詳細については、「エンドポイント用 [Microsoft Defender で検出されたアプリを管理する」を参照してください](/cloud-app-security/mde-govern)。
@@ -71,22 +72,6 @@ EnableFileHashComputation 設定は、ファイル スキャン時に cert と�
 - [IP アドレス、URL/ドメイン](indicator-ip-domain.md)
 - [証明書](indicator-certificates.md)
 
-> [!NOTE]
->
-> 1 テナントあたり 15,000 件のインジケーターの制限があります。 ファイルおよび証明書インジケーターは、[Microsoft Defender ウイルス対策ソフトウェア用に定義された例外](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus)をブロックしません。 Microsoft Defender ウイルス対策はパッシブ モードの場合にインジケーターをサポートしません。
-
-## <a name="public-preview-for-automated-investigation-and-remediation-engine"></a>自動調査と修復エンジンのパブリック プレビュー
-
-> [!IMPORTANT]
-> このセクションの情報 (**自動** 調査および修復エンジンのパブリック プレビュー) は、製品の商用リリース前に大幅に変更される可能性がある、事前リリース済みの製品に関連します。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
-
-新しいインジケーター (IoC) を作成するときに、次のアクションの 1 つ以上を使用できます。
-
-- 許可 – IoC はデバイスで実行できます。
-- 監査 – IoC の実行時にアラートがトリガーされます。
-- 実行をブロックする - IoC の実行は許可されません。
-- ブロックと修復 - IoC の実行は許可されません。修復アクションが IoC に適用されます。
-
 次の表は、インジケーター (IoC) の種類ごとに使用できるアクションを正確に示しています。
 
 | IoC の種類 | 使用可能なアクション |
@@ -96,7 +81,7 @@ EnableFileHashComputation 設定は、ファイル スキャン時に cert と�
 | [URL とドメイン](indicator-ip-domain.md) | 許可 <br> 監査 <br> 実行のブロック |
 | [証明書](indicator-certificates.md) | 許可 <br> ブロックと修復 |
 
-たとえば、元の 3 つの IoC 応答アクションは、"許可"、"アラートのみ"、"アラートとブロック" でした。 更新プログラムの一環として、既存の IoC の機能は変更されません。 ただし、インジケーターの名前は、現在サポートされている応答アクションと一致する名前に変更されました。
+既存の IoC の機能は変更されません。 ただし、インジケーターの名前は、現在サポートされている応答アクションと一致する名前に変更されました。
 
 - "アラートのみ" 応答アクションの名前が "audit" に変更されました。アラートの生成設定が有効になっています。
 - "アラートとブロック" 応答の名前は、オプションのアラート生成設定を使用して "ブロックと修復" に変更されました。
@@ -104,9 +89,7 @@ EnableFileHashComputation 設定は、ファイル スキャン時に cert と�
 IoC API スキーマと事前検出の脅威 ID は、IoC 応答アクションの名前変更に合わせて更新されています。 API スキームの変更は、すべての IoC 型に適用されます。
 
 > [!Note]
-> ファイル インジケーターの場合、ブロックアクションに対するアラートの発生はオプションです。
->
-> 1 テナントあたり 15,000 件のインジケーターの制限があります。 ファイルおよび証明書インジケーターは、Microsoft Defender ウイルス対策ソフトウェア用に定義された例外をブロックしません。 Microsoft Defender ウイルス対策はパッシブ モードの場合にインジケーターをサポートしません。
+> 1 テナントあたり 15,000 件のインジケーターの制限があります。 ファイルおよび証明書インジケーターは、[Microsoft Defender ウイルス対策ソフトウェア用に定義された例外](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus)をブロックしません。 Microsoft Defender ウイルス対策はパッシブ モードの場合にインジケーターをサポートしません。
 >
 > 新しいインジケーター (IoC) をインポートする形式は、新しい更新されたアクションとアラート設定に従って変更されました。 インポート パネルの下部にある新しい CSV 形式をダウンロードすることをお勧めします。
 

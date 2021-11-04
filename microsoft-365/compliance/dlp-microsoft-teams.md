@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft Teamsチャネルは、データ損失防止 (DLP) ポリシーをサポートします。
-ms.openlocfilehash: a7db6b951a0522698b2f6b3879fc444825ed2ca1
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 66d451e55d5ee41abb0d43927e56295261bd4c8f
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753967"
+ms.locfileid: "60786064"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>データ損失防止と Microsoft Teams
 
@@ -49,7 +49,7 @@ Office 365およびMicrosoft 365 E3には、オンライン、SharePoint、お�
 ライセンス要件の詳細については、「[Microsoft 365 テナントレベル サービスのライセンスに関するガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)」を参照してください。
 
 > [!IMPORTANT]
-> DLP は、チャットスレッドまたはチャネル スレッドの実際のメッセージにのみ適用されます。 アクティビティ通知 (短いメッセージ プレビューを含み、ユーザーの通知設定に基づいて表示される)は、DLP にTeamsされません。 メッセージの一部に表示される機密情報は、DLP ポリシーが適用され、メッセージ自体の機密情報が削除された後でも、通知に表示されます。
+> DLP は、チャットスレッドまたはチャネル スレッドの実際のメッセージにのみ適用されます。 アクティビティ通知 (短いメッセージ プレビューを含み、ユーザーの通知設定に基づいて表示される) は、DLP にTeamsされません。 メッセージの一部に表示される機密情報は、DLP ポリシーが適用され、メッセージ自体の機密情報が削除された後でも、通知に表示されます。
 
 ## <a name="scope-of-dlp-protection"></a>DLP 保護の範囲
 
@@ -116,7 +116,7 @@ DLP 保護は、エンティティに対してTeamsされます。
 
 このタスクを実行するには、DLP ポリシーを編集する権限を持つロールを割り当てる必要があります。 詳細については、「[アクセス許可](data-loss-prevention-policies.md#permissions)」を参照してください。
 
-1. [パスワード] に<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">移動Microsoft 365 コンプライアンス センター</a>サインインします。
+1. コンプライアンス センター ( ) に移動 [https://compliance.microsoft.com](https://compliance.microsoft.com) し、サインインします。
 
 2. **[データ損失防止]** > **[ポリシー]** の順に選択します。
 
@@ -133,7 +133,7 @@ DLP 保護は、エンティティに対してTeamsされます。
 5. [場所 **の選択] タブ** で、すべてのアカウントの既定の設定を維持するか、[特定の場所を選択する] **を選択します**。 次の情報を指定できます。
 
     1. 最大 1000 個の個別アカウントを含めるか除外する
-    1. 配布リストとセキュリティ グループを含めるか除外します。 
+    1. 含めるまたは除外する配布リストとセキュリティ グループ。 
     <!-- 1. the shared mailbox of a shared channel. **This is a public preview feature.**--> 
     
 6. **[次へ]** を選択します。
@@ -147,7 +147,7 @@ DLP 保護は、エンティティに対してTeamsされます。
 
 このタスクを実行するには、DLP ポリシーを編集する権限を持つロールを割り当てる必要があります。 詳細については、「[アクセス許可](data-loss-prevention-policies.md#permissions)」を参照してください。
 
-1. [パスワード] に<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">移動Microsoft 365 コンプライアンス センター</a>サインインします。
+1. コンプライアンス センター ( ) に移動 [https://compliance.microsoft.com](https://compliance.microsoft.com) し、サインインします。
 
 2. **[データ損失防止]** > **[ポリシー]** > **[+ ポリシーの作成]** の順に選択します。
 
@@ -163,7 +163,7 @@ DLP 保護は、エンティティに対してTeamsされます。
 5. [場所 **の選択] タブ** で、すべてのアカウントの既定の設定を維持するか、[特定の場所を選択する] **を選択します**。 次の情報を指定できます。
 
     1. 最大 1000 個の個別アカウントを含めるか除外する
-    1. 配布リストとセキュリティ グループを含めるか除外します。 **これはパブリック プレビュー機能です。**
+    1. 含めるまたは除外する配布リストとセキュリティ グループ。 **これはパブリック プレビュー機能です。**
     <!-- 1. the shared mailbox of a shared channel. **This is a public preview feature.**-->  
 
     ![DLP ポリシーの場所。](../media/dlp-teams-selectlocationsnewpolicy.png)

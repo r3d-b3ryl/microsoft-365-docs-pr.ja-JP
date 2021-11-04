@@ -21,12 +21,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 2a63f13885311ba4a794ca1c25c5e90d320472f5
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: da06544eaf6f994605189948d771c602dda2c66f
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753519"
+ms.locfileid: "60787156"
 ---
 # <a name="get-started-with-communication-compliance"></a>コミュニケーション コンプライアンスの使用を開始する
 

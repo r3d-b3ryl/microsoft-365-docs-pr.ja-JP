@@ -11,15 +11,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: Configuration Manager を使用してデバイスに構成パッケージを展開し、サービスにオンボードします。
-ms.openlocfilehash: 1d551f0411910f1a8db99ee76a61204c8c475348
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 1c4c21a1375bf2c95f25ebae285a049de89ba10f
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60754757"
+ms.locfileid: "60786388"
 ---
 # <a name="onboard-windows-10-devices-using-configuration-manager"></a>Configuration Manager を使用した Windows 10 デバイスのオンボード
 
@@ -201,7 +202,7 @@ Value: “1”
 ```
 詳細については[、「2012 R2](/previous-versions/system-center/system-center-2012-R2/gg682139(v=technet.10))Configuration Manager のコンプライアンスSystem Center概要」を参照してください。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [グループ ポリシー Windows 10デバイスのオンボード](dlp-configure-endpoints-gp.md)
 - [モバイル デバイス管理ツールを使用した Windows 10 デバイスのオンボード](dlp-configure-endpoints-mdm.md)
 - [ローカル スクリプトを使用した Windows 10 デバイスのオンボード](dlp-configure-endpoints-script.md)

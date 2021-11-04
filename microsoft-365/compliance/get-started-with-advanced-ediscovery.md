@@ -15,16 +15,17 @@ ms.collection:
 - m365solution-aed
 - m365initiative-compliance
 - m365solution-scenario
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
 description: この記事では、ケースの作成と管理を開始Advanced eDiscoveryを設定する方法について説明します。 また、必要な Microsoft サブスクリプションとライセンスも説明します。 いくつかの簡単な手順を完了すると、Advanced eDiscoveryツールを使用する準備が整いました。
-ms.openlocfilehash: ab8f387853be4ee7651cf54772bf59e4b33021b8
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: cf2d7c6bc770dd6125777c895771b3b61c8ee593
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60756961"
+ms.locfileid: "60786964"
 ---
 # <a name="set-up-microsoft-365-advanced-ediscovery"></a>設定Microsoft 365 Advanced eDiscovery
 

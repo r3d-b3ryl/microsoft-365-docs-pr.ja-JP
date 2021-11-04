@@ -19,14 +19,14 @@ ms.collection:
 - m365solution-symantecmigrate
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 10/07/2021
+ms.date: 11/03/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 655886ad0d55c91a9dc961b3c9cdaf983eb472a2
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 8ff011277df4e4bfba16eef169f5f64ba5751b32
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60756129"
+ms.locfileid: "60786712"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-2-setup"></a>エンドポイントの Microsoft Defender に切り替える - フェーズ 2: セットアップ
 
@@ -51,7 +51,7 @@ ms.locfileid: "60756129"
 特定のバージョンのウイルス対策Windows、Microsoft Defender ウイルス対策 Microsoft 以外のウイルス対策/マルウェア対策ソリューションがインストールされている場合、Microsoft Defender ウイルス対策がアンインストールまたは無効になっている可能性があります。 アプリケーションを実行しているWindows Defender for Endpoint にオンボードされている場合、Microsoft Defender ウイルス対策 Microsoft 以外のウイルス対策ソリューションと共にパッシブ モードで実行できます。 詳細については、「Defender [for Endpoint によるウイルス対策保護」を参照してください](microsoft-defender-antivirus-compatibility.md#antivirus-protection-without-defender-for-endpoint)。
 
 Defender for Endpoint に切り替える場合は、一定の手順を実行して、エンドポイントを再インストールまたは有効にする必要Microsoft Defender ウイルス対策。 次の表では、クライアントとサーバーのWindows説明します。
-</br> </br>
+<br/> <br/>
 
 |エンドポイントの種類|操作|
 |---|---|
@@ -136,7 +136,6 @@ Defender for Endpoint に切り替える場合は、一定の手順を実行し�
 ## <a name="configure-defender-for-endpoint"></a>Android 機能用に Microsoft Defender for Endpoint を構成する
 
 移行プロセスのこの手順では、エンドポイントのMicrosoft Defender ウイルス対策構成します。 Intune の使用をお勧めします。ただし、次の表に示すメソッドを使用できます。
-
 <br/><br/>
 
 |メソッド|操作|
@@ -157,17 +156,18 @@ Defender for Endpoint に切り替える場合は、一定の手順を実行し�
 > 除外の構成に関するヘルプについては、ソリューション プロバイダーのドキュメントを参照してください。
 
 構成する特定の除外は、エンドポイントまたはデバイスWindowsのバージョンによって異なり、次の表に示します。
+<br/><br/>
 
 |OS |除外 |
 |--|--|
-|Windows 11 <br/><br/>Windows 10バージョン[1803](/windows/release-health/status-windows-10-1803)以降 (リリース[情報Windows 10参照](/windows/release-health/release-information))<br/><br/>Windows 10バージョン 1703 または[KB4493441](https://support.microsoft.com/help/4493441)がインストールされている 1709 <br/><br/> Windows Server 2022<br/><br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019) <br/><br/>[Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016)<br/><br/>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windowsサーバー、バージョン 1803](/windows-server/get-started/whats-new-in-windows-server-1803) |`C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe`<br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe`<br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe`<br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe`<br/>  |
+|Windows 11 <br/><br/>Windows 10バージョン[1803](/windows/release-health/status-windows-10-1803)以降 (リリース[情報Windows 10参照](/windows/release-health/release-information))<br/><br/>Windows 10バージョン 1703 または[KB4493441](https://support.microsoft.com/help/4493441)がインストールされている 1709 <br/><br/> Windows Server 2022<br/><br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019) <br/><br/>[Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016)<br/><br/>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windowsサーバー、バージョン 1803](/windows-server/get-started/whats-new-in-windows-server-1803) |`C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe`<br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe`<br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe`<br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe`<br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseCM.exe`<br/>
+<br/>さらに、Windows Server 2012 R2 および 2016 では[、KB5005292](https://support.microsoft.com/en-us/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)を使用して Sense EDR コンポーネントを更新した後で、次の除外が必要になります。<br/> |<br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\MsSense.exe`<br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseCnCProxy.exe`<br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseIR.exe`<br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseCE.exe`<br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseSampleUploader.exe`<br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseCM.exe`<br/>
 |[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows 7](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/><br/>[WindowsServer 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |`C:\Program Files\Microsoft Monitoring Agent\Agent\Health Service State\Monitoring Host Temporary Files 6\45\MsSenseS.exe`<br/>**注**: ホスト一時ファイル 6\45 の監視には、番号が付くサブフォルダーが異なる場合があります。 <br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\AgentControlPanel.exe`<br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\HealthService.exe`<br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\HSLockdown.exe`<br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\MOMPerfSnapshotHelper.exe`<br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe`<br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\TestCloudConnection.exe` |
 
 ## <a name="add-your-existing-solution-to-the-exclusion-list-for-microsoft-defender-antivirus"></a>既存のソリューションをユーザーの除外リストに追加Microsoft Defender ウイルス対策
 
 セットアップ プロセスのこの手順では、既存のソリューションを既定の除外リストMicrosoft Defender ウイルス対策追加します。 次の表に示す通り、いくつかの方法から除外Microsoft Defender ウイルス対策を追加できます。
-
-<br><br/>
+<br/><br/>
 
 |メソッド|操作|
 |---|---|
@@ -191,7 +191,6 @@ Defender for Endpoint に切り替える場合は、一定の手順を実行し�
 ## <a name="set-up-your-device-groups-device-collections-and-organizational-units"></a>デバイス グループ、デバイス コレクション、および組織単位を設定する
 
 デバイス グループ、デバイス コレクション、組織単位を使用すると、セキュリティ チームはセキュリティ ポリシーを効率的かつ効率的に管理および割り当てできます。 次の表では、これらの各グループと、それらを構成する方法について説明します。 組織では、3 つのコレクションの種類すべてが使用されない場合があります。
-
 <br/><br/>
 
 |コレクションの種類|操作|

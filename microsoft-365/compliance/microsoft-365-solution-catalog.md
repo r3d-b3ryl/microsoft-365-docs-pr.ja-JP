@@ -11,12 +11,13 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 description: ソリューション カタログMicrosoft 365含まれるもの、取得する方法、および次の手順について説明します。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a0b6d6ac32f9dfcc81a93deddc081dcb77acd973
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom: admindeeplinkCOMPLIANCE
+ms.openlocfilehash: 8a2daf2bf3dd8c3260be24a6b09761e5a6ea3e92
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60158204"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60786052"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Microsoft 365 ソリューション カタログ
 

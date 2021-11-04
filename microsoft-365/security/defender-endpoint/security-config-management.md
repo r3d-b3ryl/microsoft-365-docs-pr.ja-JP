@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 08fae46ce14a74dacefd76fbc8e77511c40609e6
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: a890bf27cb24418faef52a56a29c902ad79fd374
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60677064"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60786148"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-configuration-settings-on-devices-with-microsoft-endpoint-manager"></a>デバイスの Microsoft Defender for Endpoint 構成設定を管理する (Microsoft エンドポイント マネージャー
 
@@ -32,6 +32,10 @@ ms.locfileid: "60677064"
 - [Microsoft Defender for Endpoint on devices on devices with Microsoft エンドポイント マネージャー](/mem/intune/protect/mde-security-integration)
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+
+
+[!include[Prerelease information](../../includes/prerelease.md)]
 
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
@@ -46,6 +50,8 @@ Microsoft Defender for Endpoint のセキュリティ管理は、Microsoft エ�
 
 [!INCLUDE [Prerequisites](../../includes/security-config-mgt-prerequisites.md)]
 
+>[!NOTE]
+>この機能は徐々に展開されています。 
 
 セキュリティ構成管理の詳細については、「Microsoft [Defender for Endpoint on devices on devices with Microsoft エンドポイント マネージャー」 を参照してください](/mem/intune/protect/mde-security-integration)。
 

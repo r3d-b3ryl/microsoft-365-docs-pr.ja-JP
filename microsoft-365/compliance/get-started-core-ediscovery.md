@@ -13,16 +13,17 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 - SPO_Content
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
 description: コア電子情報開示の使用を開始する方法についてMicrosoft 365。 電子情報開示のアクセス許可を割り当て、ケースを作成したら、メンバーの追加、電子情報開示ホールドの作成、調査に関連するコンテンツの検索とエクスポートを行います。
-ms.openlocfilehash: 80b59f1dc2115ebd6c49d7b3bc3ff53f800adfe5
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 0e6e29ced6e6dfb535d169cbf5c41193d5d46cfd
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60755689"
+ms.locfileid: "60786604"
 ---
 # <a name="get-started-with-core-ediscovery-in-microsoft-365"></a>コア電子情報開示の使用をMicrosoft 365
 

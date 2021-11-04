@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 13fb928d9eed0349903d28d0aab55c223f4d3ea6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: cb72c7affc98ed1ac5e74ecddabf7edd13c6a01c
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202621"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60786114"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>高度な捜索のクエリ言語について学習する
 
@@ -115,9 +115,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | top 100 by Timestamp
 ```
 
-[クエリ **の実行] を** 選択して結果を表示します。 クエリ エディターの右上にある展開アイコンを使用して、検索クエリと結果に注目します。 
-
-![高度な検索クエリ エディターの Expand コントロールのイメージ。](../../media/advanced-hunting-expand.png)
+[クエリ **の実行] を** 選択して結果を表示します。
 
 >[!TIP]
 >クエリ結果をグラフとして表示し、フィルターをすばやく調整できます。 ガイダンスについては、「 [クエリ結果の操作」を参照してください。](advanced-hunting-query-results.md)
@@ -167,13 +165,13 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 - 各クエリを空の行で分離します。
 - クエリを実行する前に、クエリの任意の部分にカーソルを置き、そのクエリを選択します。 これにより、選択したクエリだけが実行されます。 別のクエリを実行するには、カーソルを適切に移動し、[クエリの実行] **を選択します**。
 
-![複数のクエリを含むクエリ エディターのイメージ。](../../media/mtp-ah/ah-multi-query.png)
+![複数のクエリを含むクエリ エディターのイメージ。](../../media/learn-work-with-multiple.png)
 
 ## <a name="use-sample-queries"></a>サンプル クエリを使用する
 
 [**はじめに**] セクションでは、一般的に使用されている演算子を使用した簡単なクエリーをいくつか提供します。 これらのクエリを実行して、少し変更してみてください。
 
-![高度な狩猟ウィンドウのイメージ。](../../media/advanced-hunting-get-started.png)
+![高度な狩猟ウィンドウのイメージ。](../../media/get-started-section.png)
 
 >[!NOTE]
 >基本的なクエリ サンプルとは別に、特定の脅威の捜索シナリオの[共有クエリ](advanced-hunting-shared-queries.md)にアクセスすることもできます。 ページの左側またはクエリ リポジトリの共有クエリ[をGitHubします](https://aka.ms/hunting-queries)。
@@ -185,7 +183,7 @@ Kusto クエリ言語およびサポートされる演算子の詳細につい�
 >[!NOTE]
 >この記事の一部のテーブルは、Microsoft Defender for Endpoint では使用できない場合があります。 [複数のデータ Microsoft 365 Defender](m365d-enable.md)を使用して脅威を検出するには、このオプションをオンにしてください。 高度なハンティング ワークフローを Microsoft Defender for Endpoint から Microsoft 365 Defenderに移動するには、「Advanced Hunting [queries](advanced-hunting-migrate-from-mde.md)を Microsoft Defender for Endpoint から移行する」の手順に従います。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ結果を操作する](advanced-hunting-query-results.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)

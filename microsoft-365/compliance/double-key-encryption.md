@@ -12,12 +12,13 @@ ms.reviewer: esaggese
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 1e3629c1d5dfdf32da25a7b89452df0009ad6df7
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.custom: admindeeplinkCOMPLIANCE
+ms.openlocfilehash: 0ee4269c61c4c9e2a9341c3b700db9f65e003114
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60747400"
+ms.locfileid: "60786460"
 ---
 # <a name="double-key-encryption-for-microsoft-365"></a>ユーザーのダブル キー暗号化Microsoft 365
 

@@ -11,15 +11,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: ローカル スクリプトを使用してデバイスに構成パッケージを展開し、サービスにオンボードします。
-ms.openlocfilehash: 9611ff0f787e35e313744fa817e30a5d41b761b6
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 383e811391d0c2ccc7f2d178b39955c5504c78b5
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753507"
+ms.locfileid: "60786904"
 ---
 # <a name="onboard-windows-10-devices-using-a-local-script"></a>ローカル スクリプトを使用した Windows 10 デバイスのオンボード
 
@@ -102,7 +103,7 @@ ms.locfileid: "60753507"
 
 1. デバイスが表示されているのを確認します。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [グループ ポリシー Windows 10デバイスのオンボード](dlp-configure-endpoints-gp.md)
 - [デバイスをWindows 10デバイスをオンボードMicrosoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md)
 - [モバイル デバイス管理ツールを使用した Windows 10 デバイスのオンボード](dlp-configure-endpoints-mdm.md)

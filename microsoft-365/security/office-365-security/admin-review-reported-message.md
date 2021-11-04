@@ -13,12 +13,12 @@ ms.collection:
 description: 報告されたメッセージを確認し、ユーザーにフィードバックを与える方法について学習します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 24954f97169283f9dff5a9e2e70e8ed0a8688a21
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d70e26786e6028e1acf8072c40f15505fb232431
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197967"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60786688"
 ---
 # <a name="admin-review-for-reported-messages"></a>報告されたメッセージの管理者によるレビュー
 
@@ -48,7 +48,7 @@ Microsoft 365メールボックスExchange Online Microsoft Defender for Office 
 
 ## <a name="notify-users-from-within-the-portal"></a>ポータル内からユーザーに通知する
 
-1. このポータルMicrosoft 365 Defender、[提出] ページに直接 **移動** します。 https://security.microsoft.com/reportsubmission}(https://security.microsoft.com/reportsubmission)
+1. このポータルMicrosoft 365 Defender、[申請] ページ **に直接移動** します [https://security.microsoft.com/reportsubmission](https://security.microsoft.com/reportsubmission) 。
 
 2. [ **報告されたメッセージのユーザー**] をクリックし、マークして通知するメッセージを選択します。
 
