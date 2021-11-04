@@ -27,7 +27,7 @@
         - name: SPO、OneDrive、Teams 用の安全な添付ファイル機能
           href: turn-on-mdo-for-spo-odb-and-teams.md
         - name: Microsoft 365 Defender ポータルの概要
-          href: ../defender/overview-security-center.md
+          href: ../defender/microsoft-365-defender.md
         - name: メール エンティティ ページ
           href: mdo-email-entity-page.md
         - name: AIR の概要
