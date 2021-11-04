@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 description: GDPR、Microsoft 365消費者プライバシー法 (CCPA) などのデータプライバシー規制 (Microsoft Teams、SharePoint、電子メールなど) に関する情報保護を構成します。
-ms.openlocfilehash: 49d5848c6b81dcd6a81377cc3ff83cb242354690
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7517faa02ea74d5a9934e22595d61a34e99067a5
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213375"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60756589"
 ---
 # <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>データプライバシーに関する規制に関する情報保護を、Microsoft 365
 
@@ -73,7 +73,7 @@ Microsoft 365 のデータの種類には、Microsoft Teams でのチャット �
 
 ## <a name="track-run-risk-assessments-and-check-your-compliance-score"></a>追跡: リスク評価を実行し、コンプライアンス スコアを確認する
 
-Microsoft 365 コンプライアンス センター で利用できるコンプライアンス マネージャーは、改善アクション全体と、適用される複数のデータ プライバシー規制に関連するアクションを追跡および管理する組み込みの機能を提供します。
+<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>で利用できるコンプライアンス マネージャーは、改善アクション全体と、適用される複数のデータ プライバシー規制に関連するアクションを追跡および管理する組み込みの機能を提供します。
 
 各規制に固有の組み込みの評価テンプレートを使用して、選択した評価テンプレートごとにアクション アイテムを追跡し、特定の規制コントロールを表示し、それらを特定のアクションに関連付けできます。
 

@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d21ee0365d27c990e1e96422a67e201443f73eba
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: df72be4ce5965476801dea9ea804ea9ebf548210
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197007"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60755749"
 ---
 # <a name="cancel-machine-action-api"></a>マシン アクション API のキャンセル
 
@@ -57,7 +57,7 @@ ms.locfileid: "60197007"
 
 |アクセス許可の種類|アクセス許可|アクセス許可の表示名|
 |---|---|---|
-|アプリケーション|Machine.CollectForensics <br> Machine.Isolate <br> Machine.RestrictExecution <br> Machine.Scan <br> Machine.Offboard <br> Machine.StopAndQuarantine <br> Machine.LiveResponse|forensics の収集 <br>マシンの隔離<br>コードの実行制限<br>  スキャン マシン<br>  コンピューターのオフロード<br> 停止と検疫<br> 特定のコンピューターでライブ応答を実行する|
+|Application|Machine.CollectForensics <br> Machine.Isolate <br> Machine.RestrictExecution <br> Machine.Scan <br> Machine.Offboard <br> Machine.StopAndQuarantine <br> Machine.LiveResponse|forensics の収集 <br>マシンの隔離<br>コードの実行制限<br>  スキャン マシン<br>  コンピューターのオフロード<br> 停止と検疫<br> 特定のコンピューターでライブ応答を実行する|
 |委任 (職場または学校のアカウント)|Machine.CollectForensics<br> Machine.Isolate  <br>Machine.RestrictExecution<br> Machine.Scan<br> Machine.Offboard<br> Machine.StopAndQuarantineMachine.LiveResponse|forensics の収集<br> マシンの隔離<br>  コードの実行制限<br> スキャン マシン<br>コンピューターのオフロード<br> 停止と検疫<br> 特定のコンピューターでライブ応答を実行する|
 
 ## <a name="http-request"></a>HTTP 要求
@@ -68,20 +68,20 @@ POST https://api.securitycenter.microsoft.com/api/machineactions/<machineactioni
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-|名前|型|説明|
+|名前|種類|説明|
 |---|---|---|
-|Authorization|String|ベアラー {トークン}。必須。|
+|Authorization|文字列|ベアラー {token}。必須。|
 |Content-Type|string|application/json. Required.|
 
 ## <a name="request-body"></a>要求本文
 
-|パラメーター|型|説明|
+|パラメーター|種類|説明|
 |---|---|---|
 |コメント|文字列|キャンセル アクションに関連付けるコメント。|
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは Machine Action エンティティを持つ 200 Ok 応答コードを返します。 指定した ID を持つコンピューター アクション エンティティが見つからなかった場合 - 404 Not Found。
+成功した場合、このメソッドは Machine Action エンティティを持つ 200 OK 応答コードを返します。 指定した ID を持つコンピューター アクション エンティティが見つからなかった場合 - 404 Not Found。
 
 ## <a name="example"></a>例
 

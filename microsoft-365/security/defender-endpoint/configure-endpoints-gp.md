@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/16/2021
 ms.technology: mde
-ms.openlocfilehash: fd6453c245a5d7320518c2dc500ed4718568857c
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: f9253a01cc1a971f472733f41a92f0b78beba737
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60703263"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753979"
 ---
 # <a name="onboard-windows-devices-using-group-policy"></a>グループ ポリシーを使用してデバイスをオンボードする 
 
@@ -42,22 +42,19 @@ ms.locfileid: "60703263"
 > Windows Server 2019 および Windows Server 2022 では、グループ ポリシーの基本設定で作成される XML ファイルの NT AUTHORITY\Well-Known-System-Account を NT AUTHORITY\SYSTEM に置き換える必要があります。
 
 > [!NOTE]
-> Windows Server 2012 R2 および 2016 の新しい統合 Microsoft Defender for Endpoint ソリューションを使用している場合は、中央ストアで最新の ADMX ファイルを使用して、適切な Microsoft Defender for Endpoint ポリシー オプションにアクセスしてください。 「グループ [ポリシー管理](/troubleshoot/windows-client/group-policy/create-and-manage-central-store)用中央ストア管理用テンプレートを作成および管理する方法」を参照し、Windows で使用する最新のファイルをダウンロード **Windows 10。** 
+> Windows Server 2012 R2 および 2016 の新しい統合 Microsoft Defender for Endpoint ソリューションを使用している場合は、中央ストアで最新の ADMX ファイルを使用して、適切な Microsoft Defender for Endpoint ポリシー オプションにアクセスしてください。 「グループ [ポリシー管理](/troubleshoot/windows-client/group-policy/create-and-manage-central-store)用中央ストア管理用テンプレートを作成および管理する方法」を参照し、Windows で使用する最新のファイルをダウンロード **Windows 10。**
 
 [[](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)エンドポイント用 Defender [Visio展開](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx)] のさまざまなパスを確認するには、PDF またはドキュメントを参照してください。
 
+1. サービス オンボーディング ウィザードからダウンロードした GP 構成パッケージ ファイル ( `WindowsDefenderATPOnboardingPackage.zip` ) を開きます。 また、次のポータルから[パッケージをMicrosoft 365 Defenderすることもできます](https://security.microsoft.com/)。
 
-1. サービス オンボーディング ウィザードから.zipした GP 構成パッケージ ファイル *(WindowsDefenderATPOnboardingPackage. zip)* を開きます。 また、次のポータルから[パッケージをMicrosoft 365 Defenderすることもできます](https://security.microsoft.com/)。
- 
     1. ナビゲーション ウィンドウで、[エンドポイント **デバイス設定**  >    >  **オンボーディング]**   >  **を選択します**。
 
     1. オペレーティング システムを選択します。
-    
+
     1. [展開方法 **] フィールドで** 、[グループ ポリシー] **を選択します**。
 
     1. [パッケージ **のダウンロード] を** クリックし、.zip保存します。
-
-     
 
 2. デバイスからアクセスできる.zipファイルの内容を読み取り専用の共有場所に抽出します。 *OptionalParamsPolicy* というフォルダーと *WindowsDefenderATPOnboardingScript.cmd というファイルが必要です*。
 

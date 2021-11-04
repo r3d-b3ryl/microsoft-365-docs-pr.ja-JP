@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 組み込みのカストディアン管理ツールを使用して、Advanced eDiscoveryを調整し、関連するデータ ソースを特定する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 12a1a6d40706e71043dffdc899847b7d8062430b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d195690493e320407f7c9b1ca0d45da7c78955a7
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60171041"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753552"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-case"></a>管理者をケースに追加Advanced eDiscoveryする
 
@@ -48,11 +48,11 @@ Advanced eDiscovery の組み込みのカストディアン管理ツールを使
 
 1. 適切な [https://compliance.microsoft.com](https://compliance.microsoft.com) 電子情報開示アクセス許可が割り当てられているユーザー アカウントに移動してサインインします。
 
-2. Microsoft 365 コンプライアンス センターの左側のナビゲーション ウィンドウで、[**すべてを表示**] をクリックし、**[eDiscovery] > [Advanced]** をクリックします。
+2. 左側のナビゲーション ウィンドウで、[すべての電子情報開示Microsoft 365 コンプライアンス センターを表示する] をAdvanced eDiscovery、[ケース] タブ  >    >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2173764" target="_blank">**を選択** します</a>。
 
-3. [ユーザーの **Advanced eDiscovery]** ページで、[ケース] タブをクリックし、保管担当者を追加するケースを選択します。
+3. 保管担当者を追加するケースを選択します。
 
-4. [データ ソース **] タブをクリックし**、[データ ソースの追加] **[新しい** 保管  >  **担当者の追加] をクリックします**。
+4. [データ ソース **] タブを選択** し、[データ ソースの追加] **[新** しい保管  >  **担当者の追加] を選択します**。
 
 5. ユーザーの名前またはエイリアスの最初の部分を入力して、組織内の 1 人または複数のユーザーをカストディアンとしてケースに追加します。 正しいユーザーを見つけたら、そのユーザーの名前を選択してリストに追加します。
 

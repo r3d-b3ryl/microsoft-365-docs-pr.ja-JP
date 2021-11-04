@@ -17,13 +17,14 @@ search.appverid:
 ms.assetid: 82c97bb4-2b64-4edc-804d-cedbda525d22
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkCOMPLIANCE
 description: 既存のコンテンツ検索の CSV ファイルを使用して、特定の電子メール アイテムを返す ID リスト検索を作成します。
-ms.openlocfilehash: 574c130f7ec7c4f47569179ca6fc0712d76c395c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6e06a5ba45b7c9b90875ed099e11263c28146998
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60156488"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60755713"
 ---
 # <a name="prepare-a-csv-file-for-an-id-list-content-search"></a>ID リストコンテンツ検索用の CSV ファイルを準備する
 
@@ -80,7 +81,7 @@ CSV ファイルは、サイトおよび SharePoint アカウントOneDrive含�
 > [!IMPORTANT]
 > 検索結果またはレポートをエクスポートした後、2 日以内に ID リスト検索を作成する必要があります。 2 日以上前にエクスポートされた検索結果またはレポートの場合は、検索結果またはレポートを再エクスポートして、更新された CSV ファイルを生成する必要があります。 次に、更新された CSV ファイルのいずれかを準備し、それを使用して ID リスト検索を作成できます。
 
-1. <https://compliance.microsoft.com> に移動し、サインインします。
+1. [パスワード] に<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">移動Microsoft 365 コンプライアンス センター</a>サインインします。
 
 2. Microsoft 365 コンプライアンス センターの左側のナビゲーション ウィンドウで [**すべてを表示**] をクリックし、[**コンテンツ検索**] をクリックします。
 

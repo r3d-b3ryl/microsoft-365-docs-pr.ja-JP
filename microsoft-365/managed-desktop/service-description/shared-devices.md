@@ -9,12 +9,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: c369f070d7dd166ede57bd51d6df4c5dcbba1d51
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 6b022551db4b3ca759ffb6d1f9eae184b64e0683
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60588530"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60756202"
 ---
 # <a name="shared-devices"></a>共有デバイス
 
@@ -47,13 +47,12 @@ Microsoft Managed Desktop への登録時に共有デバイス モードを使�
 
 ユーザーまたはパートナーが登録を処理している場合でも、共有デバイス モードを使用できます。
 
-デバイスを自分で登録する場合は、「新しいデバイスを [](../get-started/register-devices-self.md)自分で登録する」の手順に従い、デバイスをモダン ワークプレース デバイス-共有デバイス モード グループ **に追加** します。 
+デバイスを自分で登録する場合は、「新しいデバイスを [](../get-started/register-devices-self.md)自分で登録する」の手順に従い、デバイスをモダン ワークプレース デバイス-共有デバイス モード グループ **に追加** します。
 
 > [!WARNING]
 > このグループに追加するだけで、既存の Microsoft Managed Desktop デバイスを共有デバイス モードに変換しようとはしません。 適用されるポリシーによって、ファイルが完全OneDrive失われる可能性があります。
 
 パートナーがデバイスを登録する場合は、「デバイスを登録するパートナー [](../get-started/register-devices-partner.md)の手順」の手順に従い、次の表に示すようにグループ タグに **-Shared** を追加します。
-
 
 |デバイス プロファイル  |グループ タグ (標準モード)  |グループ タグ (共有デバイス モード)  |
 |---------|---------|---------|
@@ -112,6 +111,7 @@ Windows Helloカード エミュレーションを使用して、ユーザー [P
 > 共有デバイス モードがパブリック プレビューの場合は、次の手順に従ってプライマリ ユーザーを削除してください:Microsoft エンドポイント マネージャー 管理センターにサインインし、[デバイスすべてのデバイス] を選択し、デバイスを選択し、[プロパティ] [プライマリ ユーザーの削除] を選択し、そこに表示されているユーザーを削除します。 >   > 
 
 ### <a name="deploying-apps-with-company-portal"></a>アプリを使用してアプリを展開ポータル サイト
+
 一部のアプリは、おそらくすべてのデバイスに存在する必要はないので、ユーザーがアプリをインストールする場合は、ユーザーが必要な場合にのみインストール[ポータル サイト。](/mem/intune/user-help/install-apps-cpapp-windows) Microsoft Managed Desktop は、共有ポータル サイトモードのデバイスに対して既定で無効に設定されます。 この機能をポータル サイトする場合は、変更要求を送信できますが[](../working-with-managed-desktop/admin-support.md)、このパブリック プレビューでは、この機能のいくつかの制限に注意する必要があります。
 
 - アプリをユーザーが使用ポータル サイトするには、Intune のその[](/mem/intune/apps/apps-deploy)アプリにユーザー グループを割り当て、そのユーザー グループに各ユーザーを追加します。
@@ -119,13 +119,12 @@ Windows Helloカード エミュレーションを使用して、ユーザー [P
 - ユーザーがアプリをインストールしたアプリをポータル サイト、そのデバイス上のすべてのユーザーからアプリをアンインストールする必要があります。
 
 > [!CAUTION]
-> ポータル サイト利用可能なデバイス グループに割り当てられたアプリケーションはサポートされていません。 
+> ポータル サイト利用可能なデバイス グループに割り当てられたアプリケーションはサポートされていません。
 
 ### <a name="redeployment-of-microsoft-365-apps-for-enterprise"></a>サーバーの再Microsoft 365 Apps for enterprise
+
 パブリック プレビュー中Microsoft 365 Apps再展開する必要がある場合、ユーザーはローカル サポート スタッフに連絡して、そのデバイスでエージェントの昇格と再インストールを要求Microsoft 365 Apps for enterprise必要があります。
 
 ### <a name="microsoft-teams"></a>Microsoft Teams
+
 ユーザーが初めてTeamsを開始すると、アプリを使用する前にアプリの更新を求めるメッセージが表示されます。 更新を許可すると、Teams自体がバックグラウンドで更新されます。
-
-
-

@@ -10,6 +10,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MED150
@@ -18,12 +19,12 @@ search.appverid:
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 ROBOTS: NOINDEX, NOFOLLOW
 description: ユーザーが特定のアクティビティを実行するときにMicrosoft 365 コンプライアンス センター通知Microsoft 365通知を送信するためのアクティビティ通知を追加および管理する
-ms.openlocfilehash: 84f2835d9b409b29042981ff0e1254c686aaf798
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 593c51a9d85ebb6f687a5e8573df32d4de515e6b
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60172529"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60747802"
 ---
 # <a name="create-activity-alerts"></a>アクティビティアラートの作成
 
@@ -42,11 +43,11 @@ ms.locfileid: "60172529"
 
 - 監査ログで検索できるアクティビティと同じアクティビティに対してアラートを作成できます。 アラートを [作成できる一](#more-information) 般的なシナリオ (および監視する特定のアクティビティ) の一覧については、「詳細」セクションを参照してください。
 
-- 組織のアドレス帳 **に** 一覧表示されているユーザー Microsoft 365 コンプライアンス センターアクティビティに対してのみアラートを作成するには、このページの [アクティビティ通知] ページを使用します。 このページを使用して、アドレス帳に記載されていない外部ユーザーが実行するアクティビティのアラートを作成することはできません。
+- 組織のアドレス帳 **に** 一覧表示されているユーザー <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>アクティビティに対してのみアラートを作成するには、このページの [アクティビティ通知] ページを使用します。 このページを使用して、アドレス帳に記載されていない外部ユーザーが実行するアクティビティのアラートを作成することはできません。
 
 ## <a name="create-an-activity-alert"></a>アクティビティアラートを作成する
 
-1. <https://compliance.microsoft.com/managealerts> に移動します。
+1. [次へ]<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">にMicrosoft 365 コンプライアンス センター。</a>
 
 2. 職場または学校のアカウントを使用してサインインします。
 
@@ -85,7 +86,7 @@ ms.locfileid: "60172529"
 
 アクティビティ通知をオフにし、電子メール通知が送信されません。 アクティビティアラートをオフにした後も、組織のアクティビティ通知の一覧に表示され、そのプロパティを表示できます。
 
-1. <https://compliance.microsoft.com/managealerts> に移動します。
+1. [次へ]<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">にMicrosoft 365 コンプライアンス センター。</a>
 
 2. 職場または学校のアカウントを使用してサインインします。
 

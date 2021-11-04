@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: bbb9a5c0465cfce07e46a8efaa2004a3768f5f20
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 8184ca1ad434478040b4a586a1e5f37261aee93a
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60666858"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60755275"
 ---
 # <a name="set-the-time-zone-for-microsoft-365-defender"></a>ユーザーのタイム ゾーンを設定Microsoft 365 Defender
 
@@ -40,6 +40,8 @@ ms.locfileid: "60666858"
 Microsoft 365 Defender、ローカル タイム ゾーンまたは UTC を使用して日付と時刻の情報を表示できます。 選択したタイム ゾーンは、ポータルの次の機能に表示される日付と時刻のすべての情報にMicrosoft 365 Defenderされます。
 - インシデント
 - アクション センターを含む調査と修復の自動化
-- 高度な捜索
 
 これらの機能のタイム ゾーンを設定するには、[タイム **ゾーン]**  >  **設定Microsoft 365 Defender**  >  **移動します**。
+
+> [!NOTE]
+> 高度な検索では、タイム ゾーンの設定に関係なく、クエリ結果の日時情報を UTC で保持します。 

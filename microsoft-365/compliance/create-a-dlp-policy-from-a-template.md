@@ -18,13 +18,14 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-mar2020
+- admindeeplinkCOMPLIANCE
 description: この記事では、データベースに含まれるテンプレートのいずれかを使用して DLP ポリシーを作成する方法についてOffice 365。
-ms.openlocfilehash: 7ea3e320a75953f51315579549a6dd5086706d12
-ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
+ms.openlocfilehash: e581a395e6d817a7d6d0dc9ac79a9b2b7c0327d4
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60264902"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60747240"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>テンプレートから DLP ポリシーを作成する
 
@@ -38,7 +39,7 @@ Microsoft 365、さまざまな一般的な規制およびビジネス ポリシ
 
 ### <a name="create-the-dlp-policy-from-a-template"></a>テンプレートから DLP ポリシーを作成する
 
-1. でサインインします <https://compliance.microsoft.com> 。
+1. ユーザーにサインイン<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター。</a>
 
 2. コンプライアンス センターの左側 \> のナビゲーション \> **ソリューション** \> **データ損失** \> **防止ポリシー** \> **+ ポリシーの作成**。
 

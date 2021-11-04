@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: GEA150
 description: 無料の 30 日間の試用版にサインアップして、Microsoft 365 Business Standard、Microsoft 365 Business Premium、Microsoft 365 Apps for business。
 ms.date: 08/07/2020
-ms.openlocfilehash: cb9d811f014fa0460e5030b794caf687df4ca4ae
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 10ad9f24d7e34da30cfe5b62207e90275a0649c0
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195763"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754399"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>一般法人向け Microsoft 365 サブスクリプションを試用する/購入する
 
@@ -48,7 +48,7 @@ Microsoft 365は、Microsoft が IT の管理を行っている間にクラウ�
 
 ## <a name="before-you-begin"></a>はじめに
 
-無料試用版にサインアップするには、既存の Microsoft アカウントは必要ない。 この記事の他のすべての手順では、組織のグローバル管理者または課金管理者である必要があります。 詳細については、「[管理者の役割について](../admin/add-users/about-admin-roles.md)」を参照してください。
+無料試用版にサインアップするには、既存の Microsoft アカウントは必要ない。 この記事の他のすべての手順では、組織のグローバル管理者または課金管理者である必要があります。 詳細については、[「管理者の役割について」](../admin/add-users/about-admin-roles.md) を参照してください。
 
 ## <a name="try-a-free-trial-subscription"></a>無料試用版サブスクリプションを試す
 
@@ -86,7 +86,7 @@ Microsoft 365は、Microsoft が IT の管理を行っている間にクラウ�
 
 ## <a name="cancel-your-free-trial-subscription"></a>無料試用版サブスクリプションをキャンセルする
 
-無料試用期間が終了する前に試用版サブスクリプションをキャンセルする場合は、[サブスクリプション] に移動しMicrosoft 365 管理センター請求[をオフにします](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on)。 試用版は、月が終了すると自動的に期限切れになります。クレジット カードは \' 課金されません。
+無料試用期間が終了する前に試用版サブスクリプションをキャンセルする場合は、[サブスクリプション] に移動しMicrosoft 365 管理センター請求[をオフにします](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on)。 試用版は、月が終了すると自動的に期限切れになります。クレジット カードは課金されません。
 
 ## <a name="try-a-different-subscription"></a>別のサブスクリプションを試す
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 ServiceNow 構成の概要との統合をサポートする
+title: Microsoft 365 サポートと ServiceNow 構成の統合の概要
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -17,18 +17,18 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: ServiceNow のスコープ認定アプリケーションのインストールと構成ガイド。
-ms.openlocfilehash: c5d0bf57eb037bd19b9666f9b3684249986d8f2e
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 28b156cc9f9062863868550f2aac216b8d92a403
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60661935"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754201"
 ---
-# <a name="microsoft-365-support-integration-with-servicenow-configuration-overview"></a>Microsoft 365 ServiceNow 構成の概要との統合をサポートする
+# <a name="microsoft-365-support-integration-with-servicenow-configuration-overview"></a>Microsoft 365 サポートと ServiceNow 構成の統合の概要
 
 **Microsoft 365統合を使用** すると、ヘルプMicrosoft 365、サービス正常性を ServiceNow インスタンスと統合できます。 Microsoft の既知および報告された問題を調査し、インシデントを解決し、Microsoft 推奨ソリューションを使用してタスクを完了し、必要に応じて Microsoft の人間支援サポートにエスカレートすることができます。
 
-ServiceNow **ストアMicrosoft 365** 統合アプリをサポートするには [、servicenow ストアに移動します](https://store.servicenow.com/sn_appstore_store.do#!/store/application/6d05c93f1b7784507ddd4227cc4bcb9f)。
+ServiceNow **ストアMicrosoft 365** 統合アプリをサポートするには [、ServiceNow ストアに移動します](https://store.servicenow.com/sn_appstore_store.do#!/store/application/6d05c93f1b7784507ddd4227cc4bcb9f)。
 
 ## <a name="key-features"></a>主な機能
 

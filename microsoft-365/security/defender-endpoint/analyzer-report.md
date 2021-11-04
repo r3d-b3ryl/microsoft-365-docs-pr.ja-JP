@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 2c866f6b7cd5c357c7b11db22ef5ecc10a0818ed
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 8cb7e42af129185b2c9c8d7f9c864388661547f3
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556258"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60755829"
 ---
 # <a name="understand-the-client-analyzer-html-report"></a>クライアント アナライザーの HTML レポートについて
 

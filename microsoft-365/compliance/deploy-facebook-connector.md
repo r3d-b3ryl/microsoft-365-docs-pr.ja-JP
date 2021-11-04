@@ -13,14 +13,15 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理者は、Facebook Business ページをインポートおよびアーカイブするネイティブ コネクタを設定して、そのページMicrosoft 365。 このデータを Microsoft 365 にインポートした後、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織の Facebook データのガバナンスを管理できます。
-ms.openlocfilehash: 1707236a889d03f272c5cce527245cf2a83f8949
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0bbe7f65ef6226386911817b40bbaaa418cdabec
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60170837"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60757229"
 ---
 # <a name="deploy-a-connector-to-archive-facebook-business-pages-data"></a>コネクタを展開して Facebook Business ページのデータをアーカイブする
 
@@ -30,7 +31,7 @@ ms.locfileid: "60170837"
 
 1. グローバル管理者 <https://portal.azure.com> アカウントの資格情報を使用して、アクセスしてサインインします。
 
-    ![AAD でアプリを作成します。](../media/FBCimage1.png)
+    ![アプリを作成AAD。](../media/FBCimage1.png)
 
 2. 左側のナビゲーション ウィンドウで **[Azure Active Directory]** をクリックします。
 
@@ -60,7 +61,7 @@ ms.locfileid: "60170837"
 
     ![シークレットを入力し、有効期限を選択します。](../media/FBCimage8.png)
 
-9. シークレットの値をコピーし、テキスト ファイルまたは他の保存場所に保存します。 これは、後の手順で使用する AAD アプリケーション シークレットです。
+9. シークレットの値をコピーし、テキスト ファイルまたは他の保存場所に保存します。 これは、後AADで使用するアプリケーション シークレットの一部です。
 
    ![シークレットの値をコピーして保存します。](../media/FBCimage9.png)
 
@@ -180,15 +181,15 @@ ms.locfileid: "60170837"
 
    - **Facebook Webhooks はトークンを確認します。** 手順 3 で作成した検証トークン。
 
-   - **AAD アプリケーション ID:** 手順 1 で作成Azure Active Directoryアプリのアプリケーション ID。
+   - **AAD ID:** 手順 1 で作成Azure Active Directoryアプリのアプリケーション ID。
 
-   - **AAD アプリケーション シークレット:** 手順 1 で作成した APISecretKey シークレットの値。
+   - **AADシークレット:** 手順 1 で作成した APISecretKey シークレットの値。
 
 5. [保存 **] を** クリックしてコネクタ設定を保存します。
 
 ## <a name="step-5-set-up-a-facebook-connector-in-the-microsoft-365-compliance-center"></a>手順 5: アプリケーションで Facebook コネクタをセットアップMicrosoft 365 コンプライアンス センター
 
-1. に移動 [https://compliance.microsoft.com](https://compliance.microsoft.com) し、左側の **ナビゲーションで [** データ コネクタ] をクリックします。
+1. [データ コネクタ] にMicrosoft 365 コンプライアンス センターし、[データ コネクタ] を選択 <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank"> </a.
 
 2. [データ コネクタ **] ページの [Facebook** Business ページ] で **、[** 表示] を **クリックします**。
 
@@ -206,7 +207,7 @@ ms.locfileid: "60170837"
 
    - [パスワード **] ボックス** に、手順 2 で追加した APISecretKey の値を入力または貼り付けます。
 
-   - [Azure **App ID]** ボックスに、手順 1 で作成した AAD アプリケーション ID とも呼ばれるアプリケーション (クライアント) ID の値を入力または貼り付けます。
+   - [Azure **App ID]** ボックスに、手順 1 で作成したアプリケーション ID AADと呼ばれるアプリケーション (クライアント) ID の値を入力または貼り付けます。
 
 6. 接続が正常に検証された後、[次へ] を **クリックします**。
 

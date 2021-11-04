@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft Teamsチャネルは、データ損失防止 (DLP) ポリシーをサポートします。
-ms.openlocfilehash: f4e4c7b0d25d411fe8aa3d69b1768ed7508b9b6b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a7db6b951a0522698b2f6b3879fc444825ed2ca1
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60168712"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753967"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>データ損失防止と Microsoft Teams
 
@@ -58,14 +58,14 @@ DLP 保護は、エンティティに対してTeamsされます。
 |ポリシーの範囲が次の場合 |これらのエンティティTeamsエンティティ |DLP 保護が利用可能になります|
 |---------|---------|---------|
 |個々のユーザー アカウント     |1:1/n チャット         |はい         |
-|     |一般的なチャット         |no         |
+|     |一般的なチャット         |いいえ         |
 |     |プライベート チャネル         |はい         |
 |セキュリティ グループ/配布リスト  | 1:1/n チャット         |はい         |
-|     |一般的なチャット         |no         |
+|     |一般的なチャット         |いいえ         |
 |     |プライベート チャネル         |はい        |
-|Microsoft 365 グループ    |1:1/n チャット          |no         |
+|Microsoft 365 グループ    |1:1/n チャット          |いいえ         |
 |     |一般的なチャット          |はい        |
-|     |プライベート チャネル|no| 
+|     |プライベート チャネル|いいえ| 
 
 
 ## <a name="policy-tips-help-educate-users"></a>ポリシー ヒントは、ユーザーの教育に役立ちます
@@ -116,7 +116,7 @@ DLP 保護は、エンティティに対してTeamsされます。
 
 このタスクを実行するには、DLP ポリシーを編集する権限を持つロールを割り当てる必要があります。 詳細については、「[アクセス許可](data-loss-prevention-policies.md#permissions)」を参照してください。
 
-1. コンプライアンス センター ( ) に移動 [https://compliance.microsoft.com](https://compliance.microsoft.com) し、サインインします。
+1. [パスワード] に<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">移動Microsoft 365 コンプライアンス センター</a>サインインします。
 
 2. **[データ損失防止]** > **[ポリシー]** の順に選択します。
 
@@ -147,7 +147,7 @@ DLP 保護は、エンティティに対してTeamsされます。
 
 このタスクを実行するには、DLP ポリシーを編集する権限を持つロールを割り当てる必要があります。 詳細については、「[アクセス許可](data-loss-prevention-policies.md#permissions)」を参照してください。
 
-1. コンプライアンス センター ( ) に移動 [https://compliance.microsoft.com](https://compliance.microsoft.com) し、サインインします。
+1. [パスワード] に<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">移動Microsoft 365 コンプライアンス センター</a>サインインします。
 
 2. **[データ損失防止]** > **[ポリシー]** > **[+ ポリシーの作成]** の順に選択します。
 

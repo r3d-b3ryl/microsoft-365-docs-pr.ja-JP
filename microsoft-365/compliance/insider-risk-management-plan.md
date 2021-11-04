@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 979e1081dd85047286c580907ff9335442ba0b55
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 8fcb3826bc40d9959c3f4bfb95e2a5453f8a211f
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60701049"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754387"
 ---
 # <a name="plan-for-insider-risk-management"></a>インサイダー リスク管理のための計画
 
@@ -48,7 +48,7 @@ ms.locfileid: "60701049"
 
 ## <a name="plan-for-the-review-and-investigation-workflow"></a>レビューと調査のワークフローを計画する
 
-専用の関係者を選択して、サーバー内の定期的なケイデンスに関するアラートとケースを監視および[確認Microsoft 365 コンプライアンス センター。](https://compliance.microsoft.com/) インサイダー リスク管理で使用できるさまざまな役割グループに異なる利害関係者を割り当てる方法を理解してください。
+専用の関係者を選択して、サーバー内の定期的なケイデンスに関するアラートとケースを監視および<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">確認Microsoft 365 コンプライアンス センター。</a> インサイダー リスク管理で使用できるさまざまな役割グループに異なる利害関係者を割り当てる方法を理解してください。
 
 >[!IMPORTANT]
 >特定のユーザーが組織を離れた場合、インサイダー リスク管理の構成が 「管理者ゼロ」 シナリオに入らなからなく、常に Insider Risk Management または **Insider** Risk **Management Admin** 役割グループに少なくとも 1 人のユーザーが存在します (選択するオプションに応じて)。

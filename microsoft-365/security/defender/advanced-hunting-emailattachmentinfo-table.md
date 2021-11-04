@@ -18,22 +18,20 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 67768257dc0a43d04fbc10f3c9d97cdd5fc83fa2
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: f810929d254056ee261defa0a7f2a1458145f8f0
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60643181"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753061"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 **適用対象:**
+
 - Microsoft 365 Defender
-
-
 
 高度 `EmailAttachmentInfo` な検索スキーマの[表](advanced-hunting-overview.md)には、Microsoft Defender によって処理された電子メールの添付ファイルに関する情報が含Office 365。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
 
@@ -61,6 +59,7 @@ ms.locfileid: "60643181"
 | `FileSize` | string | ファイルのサイズ (バイト単位) |
 
 ## <a name="related-topics"></a>関連トピック
+
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)

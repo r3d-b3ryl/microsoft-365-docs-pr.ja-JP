@@ -19,17 +19,18 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkCOMPLIANCE
 description: データ損失防止ポリシーのアラートの定義と管理について説明します。
-ms.openlocfilehash: 601442336cb6ba2a913f3c64eb8345030d0f8209
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 442929df84508d99ee9ae3d88bc2297e293ecc73
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60151100"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60747344"
 ---
 # <a name="get-started-with-the-data-loss-prevention-alert-dashboard"></a>データ損失防止の警告ダッシュボードを開始する
 
-データ損失防止 (DLP) ポリシーは、機密アイテムの意図しない共有を防ぐための保護措置を取る場合があります。 機密性の高いアイテムに対してアクションが実行された場合は、DLP のアラートを構成することで通知を受け取る可能性があります。 この記事では、データ損失防止 (DLP) ポリシーにリンクされているリッチ アラート ポリシーを定義する方法について説明します。 DLP ポリシー違反のアラート、イベント、および関連するメタデータを[](https://compliance.microsoft.com/)表示するには、Microsoft 365 コンプライアンス センターで[DLP](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts)アラート管理ダッシュボードを使用する方法について説明します。
+データ損失防止 (DLP) ポリシーは、機密アイテムの意図しない共有を防ぐための保護措置を取る場合があります。 機密性の高いアイテムに対してアクションが実行された場合は、DLP のアラートを構成することで通知を受け取る可能性があります。 この記事では、データ損失防止 (DLP) ポリシーにリンクされているリッチ アラート ポリシーを定義する方法について説明します。 DLP ポリシー違反のアラート、イベント、および関連するメタデータを<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank"></a>表示するには、Microsoft 365 コンプライアンス センターで[DLP](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts)アラート管理ダッシュボードを使用する方法について説明します。
 
 DLP アラートを使用する場合は、「データ損失防止アラート ダッシュボードについて [」を確認する必要があります。](dlp-alerts-dashboard-learn.md)
 
@@ -53,7 +54,7 @@ Teams [DLP](dlp-microsoft-teams.md)の対象となるエンドポイント[DLP](
 - Office 365 (E5)
 - 高度なコンプライアンス (E5) アドオン
 - Microsoft 365 E5/A5 情報の保護とガバナンス
-- Microsft 365 E5/A5 コンプライアンス
+- Microsoft 365 E5/A5 コンプライアンス
 
 ### <a name="licensing-for-alert-configuration-options"></a>アラート構成オプションのライセンス
 
@@ -115,7 +116,7 @@ DLP ポリシーでアラートを構成する方法については、「デー�
 
 DLP アラート管理ダッシュボードを操作するには、次の操作を行います。
 
-1. [データ [損失Microsoft 365 コンプライアンス センター]](https://www.compliance.microsoft.com)**に移動します**。
+1. [データ <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">損失Microsoft 365 コンプライアンス センター]</a>**に移動します**。
 2. [アラート] **タブを** 選択して、DLP アラート ダッシュボードを表示します。
 3. アラートを選択して詳細を表示します。
 

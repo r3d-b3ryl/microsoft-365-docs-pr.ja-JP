@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: インポート ツール d を使用して、複数の保管担当者と関連付けられたデータ ソースをすばやくケースに追加Advanced eDiscovery。
-ms.openlocfilehash: 97eb2337fb49863a19b8d55a6dd396e51f4ee8d2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f0d9290d6014b820008408ea6ab9249c0c5a28f4
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60151232"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60757458"
 ---
 # <a name="import-custodians-to-an-advanced-ediscovery-case"></a>保管担当者をケースにAdvanced eDiscoveryする
 
@@ -54,20 +54,27 @@ CSV カストディアン テンプレートをダウンロードした後、各
 |**Exchange有効** | 保管担当者のメールボックスを含めるか含めない場合の TRUE/FALSE 値。      |
 |**OneDrive有効** | 保管担当者のアカウントを含めるか含めない場合は TRUE/FALSE OneDrive for Businessします。 |
 |**Is OnHold**        | 保管担当者データ ソースを保留にするかどうかを示す TRUE/FALSE 値。 <sup>1</sup>     |
-|**ワークロード 1 の種類**         |保管担当者に関連付けるデータ ソースの種類を示す文字列値。 次の値を指定できます。 <br/>- ExchangeMailbox<br/> - SharePointSite<br/>- TeamsMailbox<br/>- TeamsSite<br/> - YammerMailbox<br/>- YammerSite |
+|**ワークロード 1 の種類**         |保管担当者に関連付けるデータ ソースの種類を示す文字列値。 次の値を指定できます。 <br/>- ExchangeMailbox<br/> - SharePointSite<br/>- TeamsMailbox<sup>2</sup><br/>- YammerMailbox<sup>2</sup>| 
 |**ワークロード 1 の場所**     | ワークロードの種類に応じて、これはデータ ソースの場所です。 たとえば、メールボックスの電子メール アドレスExchangeサイトの URL SharePointします。 |
 |||
 
 > [!NOTE]
 > <sup>1</sup> 保管担当者のインポート プロセスと CSV ファイルを使用して、最大 1,000 のメールボックスと 100 のサイトを保留にできます。 このプロセスを使用して、ケースに 1,000 人を超える保管担当者を追加できますが、保留の制限は引き続き適用されます。 ホールド制限の詳細については、「制限」を参照[Advanced eDiscovery。](limits-ediscovery20.md#hold-limits)
+<br>
+> <sup>2</sup> TEAMSMailbox ワークロードと YammerMailbox ワークロードを CSV ファイルに含める場合、グループ サイト (TeamSite と YammerSite) は既定で自動的に追加されます。 CSV ファイルで TeamsSite と YammerSite を個別に指定する必要があります。
 
 保管担当者情報を含む CSV ファイルの例を次に示します。<br/><br/>
 
 |Custodian contactEmail      | Exchange有効 | OneDrive有効 | Is OnHold | ワークロード 1 の種類 | ワークロード 1 の場所             |
 | ----------------- | ---------------- | ---------------- | --------- | -------------- | ------------------------------ |
-|robinc@onmicrosoft.contoso.com | TRUE             | TRUE             | TRUE      | SharePointSite | https://contoso.sharepoint.com |
-|pillarp@onmicrosoft.contoso.com | TRUE             | TRUE             | TRUE      | |  |
+|robinc@contoso.onmicrosoft.com | TRUE             | TRUE             | TRUE      | SharePointSite | https://contoso.sharepoint.com |
+|pillarp@contoso.onmicrosoft.com | TRUE             | TRUE             | TRUE      | |  |
+|.johnj@contoso.onmicrosoft.com|TRUE|TRUE|TRUE||
+|sarad@contoso.onmicrosoft.com|TRUE|TRUE|TRUE|ExchangeMailbox|.saradavis@contoso.onmicrosoft.com
 ||||||
+
+> [!NOTE]
+> 非アクティブなメールボックスを保管担当者としてインポートしたり、非アクティブなメールボックスを別の保管担当者に関連付ける場合は、非アクティブなメールボックスの UPN アドレスに "." プレフィックスを追加します。
 
 ## <a name="custodian-and-data-source-validation"></a>保管担当者とデータ ソースの検証
 
@@ -79,7 +86,7 @@ CSV カストディアン テンプレートをダウンロードした後、各
 
 ### <a name="custodian-validation"></a>カストディアン検証
 
-現時点では、組織の管理者 (Azure Azure Active Directory) に含まれるカストディアンAD。
+現時点では、組織の管理者 (Azure Active Directory) に含まれるカストディアンAzure AD。
 
 保管担当者のインポート ツールは、CSV ファイルの **[Custodian contactEmail]** 列の UPN 値を使用して、保管担当者を検索して検証します。 検証された保管担当者は、ケースに自動的に追加され、ケースの [データ **ソース]** タブに表示されます。 保管担当者を検証できない場合は、ケースの [ジョブ] タブに表示される BulkAddCustodian ジョブのエラー ログに一覧表示されます。 未確認の保管担当者は、ケースに追加されないか、[データ ソース] タブ **に表示** されません。
 

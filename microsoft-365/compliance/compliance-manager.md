@@ -13,16 +13,17 @@ ms.collection:
 - M365-security-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager は、組織がリスク評価を簡素化および自動化するのに役立ち、リスクに対処するために推奨されるアクションを提案します。
-ms.openlocfilehash: 0b506e184c3ab6e387ac02a203fca0f58bd3f877
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 47040da384c33e853f0c11735053bb8850735c3d
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197667"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60747756"
 ---
 # <a name="microsoft-compliance-manager"></a>Microsoft コンプライアンス マネージャー
 
@@ -30,7 +31,7 @@ ms.locfileid: "60197667"
 
 ## <a name="what-is-compliance-manager"></a>コンプライアンス マネージャーとは?
 
-[Microsoft コンプライアンス マネージャー](https://compliance.microsoft.com/compliancemanager)は、組織[](microsoft-365-compliance-center.md)Microsoft 365 コンプライアンス センターのコンプライアンス要件を簡単に管理し、利便性を高め、管理するのに役立つ機能です。 コンプライアンス マネージャーは、データ保護リスクのインベントリの作成から、複雑な制御の実装の管理、規制や認証の最新情報の入手、監査人への報告まで、コンプライアンスの過程全体を支援します。
+[Microsoft コンプライアンス マネージャー](https://compliance.microsoft.com/compliancemanager)は、組織<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank"></a>Microsoft 365 コンプライアンス センターのコンプライアンス要件を簡単に管理し、利便性を高め、管理するのに役立つ機能です。 コンプライアンス マネージャーは、データ保護リスクのインベントリの作成から、複雑な制御の実装の管理、規制や認証の最新情報の入手、監査人への報告まで、コンプライアンスの過程全体を支援します。
 
 コンプライアンス マネージャーが組織がコンプライアンスを管理する方法を簡略化する方法については、以下のビデオをご覧ください。
 <br>

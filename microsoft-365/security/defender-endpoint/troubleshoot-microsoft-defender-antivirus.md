@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 590842462f4c757ba16c90ef641382801d79bcab
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 59392ebb51bb483393cf657ced400c238852d72c
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212367"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753543"
 ---
 # <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策ソフトウェアの問題をトラブルシューティングするため、イベント ログとエラー コードをレビューする
 
@@ -360,9 +360,9 @@ Microsoft Defender ウイルス対策ログにイベントのWINDOWSを記録し
 <dt>名前: &lt;脅威名 &gt; </dt>
 <dt>ID: &lt; 脅威 ID &gt; </dt> 
 <dt> の重大度: &lt; 重大度 &gt; (たとえば、<ul>
-<li>低い</li>
+<li>低</li>
 <li>中</li>
-<li>高い</li>
+<li>高</li>
 <li>重大</li>
 </ul>
 </dt>
@@ -432,9 +432,9 @@ Microsoft Defender ウイルス対策、マルウェアなどの望ましくな�
 <dt>名: &lt; 脅威 &gt; 名</dt>
 <dt>ID: &lt; Threat ID &gt; </dt> 
 <dt> Severity: &lt; Severity (次 &gt; に示す場合)<ul>
-<li>低い</li>
+<li>低</li>
 <li>中</li>
-<li>高い</li>
+<li>高</li>
 <li>重大</li>
 </ul>
 </dt>
@@ -484,9 +484,9 @@ Microsoft Defender ウイルス対策その他の望ましくない可能性の�
 <dt>名: &lt; 脅威 &gt; 名</dt>
 <dt>ID: &lt; Threat ID &gt; </dt> 
 <dt> Severity: &lt; Severity (次 &gt; に示す場合)<ul>
-<li>低い</li>
+<li>低</li>
 <li>中</li>
-<li>高い</li>
+<li>高</li>
 <li>重大</li>
 </ul>
 </dt>
@@ -538,9 +538,9 @@ Microsoft Defender ウイルス対策アイテムを検疫から復元しまし�
 <dt>名前: &lt;脅威名 &gt; </dt>
 <dt>ID: &lt; 脅威 ID &gt; </dt> 
 <dt> の重大度: &lt; 重大度 &gt; (たとえば、<ul>
-<li>低い</li>
+<li>低</li>
 <li>中</li>
-<li>高い</li>
+<li>高</li>
 <li>重大</li>
 </ul>
 </dt>
@@ -580,9 +580,9 @@ Microsoft Defender ウイルス対策アイテムを検疫から復元しよう�
 <dt>名前: &lt;脅威名 &gt; </dt>
 <dt>ID: &lt; 脅威 ID &gt; </dt> 
 <dt> の重大度: &lt; 重大度 &gt; (たとえば、<ul>
-<li>低い</li>
+<li>低</li>
 <li>中</li>
-<li>高い</li>
+<li>高</li>
 <li>重大</li>
 </ul>
 </dt>
@@ -624,9 +624,9 @@ Microsoft Defender ウイルス対策アイテムを検疫から削除しまし�
 <dt>名前: &lt;脅威名 &gt; </dt>
 <dt>ID: &lt; 脅威 ID &gt; </dt> 
 <dt> の重大度: &lt; 重大度 &gt; (たとえば、<ul>
-<li>低い</li>
+<li>低</li>
 <li>中</li>
-<li>高い</li>
+<li>高</li>
 <li>重大</li>
 </ul>
 </dt>
@@ -667,9 +667,9 @@ Microsoft Defender ウイルス対策アイテムを検疫から削除しよう�
 <dt>名前: &lt;脅威名 &gt; </dt>
 <dt>ID: &lt; 脅威 ID &gt; </dt> 
 <dt> の重大度: &lt; 重大度 &gt; (たとえば、<ul>
-<li>低い</li>
+<li>低</li>
 <li>中</li>
-<li>高い</li>
+<li>高</li>
 <li>重大</li>
 </ul>
 </dt>
@@ -773,9 +773,9 @@ Microsoft Defender ウイルス対策疑わしい動作が検出されました�
 <dt>名前: &lt;脅威名 &gt; </dt>
 <dt>ID: &lt; 脅威 ID &gt; </dt> 
 <dt> の重大度: &lt; 重大度 &gt; (たとえば、<ul>
-<li>低い</li>
+<li>低</li>
 <li>中</li>
-<li>高い</li>
+<li>高</li>
 <li>重大</li>
 </ul>
 </dt>
@@ -848,9 +848,9 @@ Microsoft Defender ウイルス対策または他の望ましくない可能性�
 <dt>名前: &lt;脅威名 &gt; </dt>
 <dt>ID: &lt; 脅威 ID &gt; </dt> 
 <dt> の重大度: &lt; 重大度 &gt; (たとえば、<ul>
-<li>低い</li>
+<li>低</li>
 <li>中</li>
-<li>高い</li>
+<li>高</li>
 <li>重大</li>
 </ul>
 </dt>
@@ -896,7 +896,7 @@ UAC </dt>
 ユーザー アクション:
 </td>
 <td >
-アクションは必要ありません。 Microsoft Defender ウイルス対策、この脅威に対して定期的なアクションを中断して実行できます。 脅威を手動で削除する場合は、Microsoft Defender ウイルス対策をクリック<b>します</b>。
+何もする必要はありません。 Microsoft Defender ウイルス対策、この脅威に対して定期的なアクションを中断して実行できます。 脅威を手動で削除する場合は、Microsoft Defender ウイルス対策をクリック<b>します</b>。
 </td>
 </tr>
 <tr>
@@ -927,9 +927,9 @@ Microsoft Defender ウイルス対策、マルウェアなどの望ましくな�
 <dt>名前: &lt;脅威名 &gt; </dt>
 <dt>ID: &lt; 脅威 ID &gt; </dt> 
 <dt> の重大度: &lt; 重大度 &gt; (たとえば、<ul>
-<li>低い</li>
+<li>低</li>
 <li>中</li>
-<li>高い</li>
+<li>高</li>
 <li>重大</li>
 </ul>
 </dt>
@@ -1049,9 +1049,9 @@ Microsoft Defender ウイルス対策その他の望ましくない可能性の�
 <dt>名前: &lt;脅威名 &gt; </dt>
 <dt>ID: &lt; 脅威 ID &gt; </dt> 
 <dt> の重大度: &lt; 重大度 &gt; (たとえば、<ul>
-<li>低い</li>
+<li>低</li>
 <li>中</li>
-<li>高い</li>
+<li>高</li>
 <li>重大</li>
 </ul>
 </dt>
@@ -1141,9 +1141,9 @@ Microsoft Defender ウイルス対策その他の望ましくない可能性の�
 <dt>名前: &lt;脅威名 &gt; </dt>
 <dt>ID: &lt; 脅威 ID &gt; </dt> 
 <dt> の重大度: &lt; 重大度 &gt; (たとえば、<ul>
-<li>低い</li>
+<li>低</li>
 <li>中</li>
-<li>高い</li>
+<li>高</li>
 <li>重大</li>
 </ul>
 </dt>
@@ -1205,7 +1205,7 @@ UAC </dt>
 クライアントMicrosoft Defender ウイルス対策、重大な問題が原因でこのエラーが発生しました。 エンドポイントが保護されていない可能性があります。 エラーの説明を確認し、以下の関連する <b>ユーザー アクションの手順に</b> 従います。
 <table>
 <tr>
-<th>アクション</th>
+<th>Action</th>
 <th>ユーザー操作</th>
 </tr>
 <tr>
@@ -1467,7 +1467,7 @@ Microsoft Defender ウイルス対策更新中にエラーが発生しました�
 </dt>
 <dt>更新ステージ: &lt; 更新ステージ &gt; (例:
 <ul>
-<li>検索</li>
+<li>Search</li>
 <li>ダウンロード</li>
 <li>インストール</li>
 </ul>

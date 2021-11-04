@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 管理者は、組織の人事 (HR) システムから従業員データをユーザーにインポートするデータ コネクタをMicrosoft 365。 これにより、内部リスク管理ポリシーで人事データを使用して、組織に内部的な脅威を与える可能性のある特定のユーザーによるアクティビティを検出できます。
-ms.openlocfilehash: e7a5bb9a1912aff7d41968bd1c8f6c08333178c0
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: a6342ec7edc3b044ff5b5c871cd4b80fd4907b7c
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60659964"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753095"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>コネクタをセットアップして人事データをインポートする
 
@@ -217,7 +217,7 @@ Performance improvement plan,pillarp@contoso.com,,,2019-04-23T15:18:02.4675041+0
 
 この手順を完了したら、コネクタの作成時に生成されるジョブ ID を必ずコピーしてください。 スクリプトの実行時にジョブ ID を使用します。
 
-1. に移動 [https://compliance.microsoft.com](https://compliance.microsoft.com/) し、左側の **ナビゲーションで [** データ コネクタ] をクリックします。
+1. [データ コネクタ] にMicrosoft 365 コンプライアンス センターし、[データ コネクタ]<a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**を選択します**</a>。
 
 2. [人事]**の [データ コネクタ] ページ****で、[表示**] を **クリックします**。
 
@@ -315,7 +315,7 @@ HR コネクタをセットアップする最後の手順は、CSV ファイル 
 
 HR コネクタを作成し、スクリプトを実行して HR データをアップロードした後、コネクタを表示し、そのコネクタの状態をアップロードMicrosoft 365 コンプライアンス センター。 スクリプトを定期的に自動的に実行するスケジュールを設定した場合は、前回スクリプトを実行した後に現在の状態を表示することもできます。
 
-1. 左側の [https://compliance.microsoft.com](https://compliance.microsoft.com) ナビゲーションで [ **データ コネクタ] に** 移動してクリックします。
+1. [データ コネクタ] にMicrosoft 365 コンプライアンス センターし、[データ コネクタ]<a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**を選択します**</a>。
 
 2. [コネクタ **] タブをクリック** し、HR コネクタを選択して、フライアウト ページを表示します。 このページには、コネクタに関するプロパティと情報が含まれる。
 

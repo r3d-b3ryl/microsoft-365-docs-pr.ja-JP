@@ -13,19 +13,19 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: In-Placeの電子情報開示とIn-Placeホールド (および対応する PowerShell コマンドレット Exchange Online) は、2020 年前半に廃止されます。 また、Search-Mailbox v1.0 Advanced eDiscoveryおよび v1.0 も同じ期間に廃止されます。
-ms.openlocfilehash: 18509476234494633b425765de07dfc163eaabc9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2d5e058f5fab62249f578d7f138731233bde1091
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152996"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60756481"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>従来の電子情報開示ツールの廃止
 
 > [!IMPORTANT]
 > この記事で説明する従来の電子情報開示ツールの機能は、Microsoft 365 サービスから削除されたか、まだ使用できますが、サポートされなくなりました。 引き続き使用可能な機能は、予告なしに削除される可能性があります。 これらのレガシ ツールを引き続き使用している場合は、Microsoft 365 コンプライアンス センター またはこの記事で説明する代替手段の 1 つで、電子情報開示ツールへの移行を検討してください。
 
-長年にわたり、Microsoft は電子情報開示ツールを提供し、電子情報開示ツールを使用して、電子メール コンテンツを検索、プレビュー、およびエクスポートExchange Online。 ただし、これらのツールは、Exchange Online や Microsoft 365 グループなどの他の SharePoint Microsoft 365 サービスで非 Exchange コンテンツを検索する効果的な方法を提供しなくなりました。 この問題に対処するために、Microsoft はさまざまなコンテンツを検索するのに役立つその他の電子情報開示Microsoft 365しています。 また、最新かつ強力な電子情報開示機能を最新の電子情報開示機能に組み込む[Microsoft 365 コンプライアンス センター。](https://compliance.microsoft.com) これにより、組織は、コンテンツに関する法的、内部的、その他のドキュメント要求に、Microsoft 365サービスを含む多くのExchange Online。
+長年にわたり、Microsoft は電子情報開示ツールを提供し、電子情報開示ツールを使用して、電子メール コンテンツを検索、プレビュー、およびエクスポートExchange Online。 ただし、これらのツールは、Exchange Online や Microsoft 365 グループなどの他の SharePoint Microsoft 365 サービスで非 Exchange コンテンツを検索する効果的な方法を提供しなくなりました。 この問題に対処するために、Microsoft はさまざまなコンテンツを検索するのに役立つその他の電子情報開示Microsoft 365しています。 また、最新かつ強力な電子情報開示機能を最新の電子情報開示機能に組み込む<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター。</a> これにより、組織は、コンテンツに関する法的、内部的、その他のドキュメント要求に、Microsoft 365サービスを含む多くのExchange Online。
 
 Microsoft 365 コンプライアンス センター でこの新しく改善された電子情報開示機能の結果、Exchange Online および Microsoft 365 の電子メール コンテンツの検索に関連する次の電子情報開示関連の機能が廃止されました。
 
@@ -345,19 +345,15 @@ Advanced eDiscovery v1.0 は、コアの電子情報開示ケースで使用で�
 
 組織で v1.0 を使用Advanced eDiscoveryするには、次のコマンドを実行します。
 
-1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com) にアクセスします。
+1. [電子情報開示のMicrosoft 365 コンプライアンス センター] に移動し、[**電子情報開示**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank">**コア**</a>] を選択し、コア電子情報開示ケースを開きます。
 
-2. コンプライアンス センターの左側のナビゲーション ウィンドウで、[電子情報開示] >コア] **をクリックし、Core** 電子情報開示ケースを開きます。
-
-3. [デバイスに切り替Advanced eDiscovery] ボタン **が表示** された場合は、クリックすると 1.0 バージョンの Advanced eDiscovery に移動します。これは廃止されます。 Core eDiscovery でケースを作成および管理する機能は影響を受け取らない。 v1.0 でケース データを追加および分析する機能 (Advanced eDiscovery に切り替 **える)** をクリックAdvanced eDiscovery削除されます。
+1. [デバイスに切り替Advanced eDiscovery] ボタン **が表示** された場合は、クリックすると 1.0 バージョンの Advanced eDiscovery に移動します。これは廃止されます。 Core eDiscovery でケースを作成および管理する機能は影響を受け取らない。 v1.0 でケース データを追加および分析する機能 (Advanced eDiscovery に切り替 **える)** をクリックAdvanced eDiscovery削除されます。
 
 Microsoft 365 の新しい Advanced eDiscovery ソリューション *(Advanced eDiscovery v2.0* とも呼ばれる) は、元のソリューションのすべての機能を提供しますが、他の Microsoft 365 サービスのコンテンツを識別し、そのコンテンツを収集するカストディアン ベースのアプローチが含まれています。その後、レビュー担当者が迅速な検索クエリ、タグ付け、分析機能を利用して関連するドキュメントを作成できるレビュー セットに追加します。 Advanced eDiscovery、Microsoft と Microsoft 以外のファイルの種類の両方の処理とネイティブ ビューアーが追加されました。ファイルの種類の完全な一覧は[次](./supported-filetypes-ediscovery20.md)のとおりです。サポートされているメタデータ フィールドは次[のとおりです](./document-metadata-fields-in-advanced-ediscovery.md)。 また、新しい Advanced eDiscovery ソリューションでは、強力な保管担当者が管理機能を提供し、さまざまなサービスのコンテンツにホールドを適用し、保留リストのユーザーに通知し、保管担当者の応答を追跡できます(すべて Advanced eDiscovery ケース内)。
 
 Advanced eDiscovery v2.0 へのアクセス
 
-1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com) にアクセスします。
-
-2. Microsoft 365 コンプライアンス センターの左側のナビゲーション ウィンドウで、[**すべてを表示**] をクリックし、**[eDiscovery] > [Advanced]** をクリックします。
+[電子情報開示] ボックスにMicrosoft 365 コンプライアンス センター[**電子情報開示**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2174006" target="_blank">**の詳細設定**</a>] を選択し、Core 電子情報開示ケースを開きます。
 
 この時点で、電子情報開示ワークフローを新しい電子情報開示機能に移行Advanced eDiscovery勧めします。 必要に応じて、コンテンツをエクスポートAdvanced eDiscoveryオフラインで保存することで、1.0 ケースをアーカイブできます。 2020 年 12 月 31 日まで、既存のケースでは引き続き Advanced eDiscovery v1.0 にアクセスすることができますが、Microsoft サポートは 2020 年 10 月 1 日以降はサポートを提供しない予定です。 詳細については、次のタイムラインを参照してください。
 

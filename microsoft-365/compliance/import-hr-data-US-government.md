@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 米国政府機関クラウドの管理者は、組織の人事 (HR) システムから従業員データをインポートするデータ コネクタをMicrosoft 365。 これにより、内部リスク管理ポリシーで人事データを使用して、組織に内部的な脅威を与える可能性のある特定のユーザーによるアクティビティを検出できます。
-ms.openlocfilehash: bd253ca06b365aab99822aa6245f80e43119a8d9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 540a652d314aa94a191dccfe672ee7429b3d7f35
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60188207"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60755197"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-in-us-government"></a>米国政府機関で人事データをインポートするコネクタをセットアップする
 
@@ -36,15 +36,15 @@ ms.locfileid: "60188207"
 
 ## <a name="step-1-create-an-app-in-azure-active-directory"></a>手順 1: アプリをアプリで作成Azure Active Directory
 
-最初の手順は、新しいアプリを作成し、アプリ (Azure Azure Active Directory) に登録AD。 アプリは、手順 3 で作成した HR コネクタに対応します。 このアプリを作成すると、Azure ADが実行され、組織にアクセスしようとするときに HR コネクタを認証できます。 このアプリは、手順 4 で実行したスクリプトを認証して、人事データを Microsoft クラウドにアップロードするためにも使用されます。 この Azure ADアプリの作成中に、必ず次の情報を保存してください。 これらの値は、後の手順で使用されます。
+最初の手順は、新しいアプリを作成し、アプリに登録Azure Active Directory (Azure AD)。 アプリは、手順 3 で作成した HR コネクタに対応します。 このアプリを作成すると、Azure ADに HR コネクタを認証し、組織にアクセスできます。 このアプリは、手順 4 で実行したスクリプトを認証して、人事データを Microsoft クラウドにアップロードするためにも使用されます。 このアプリの作成中Azure AD情報を保存してください。 これらの値は、後の手順で使用されます。
 
-- Azure ADアプリケーション ID (アプリ *ID* またはクライアント *ID とも呼ばれる*)
+- Azure AD ID (アプリ ID またはクライアント *ID* とも *呼* ばれる)
 
-- Azure AD アプリケーション シークレット (クライアント シークレットとも *呼ばれる*)
+- Azure AD シークレット (クライアント シークレットとも *呼ばれる*)
 
 - テナント ID (ディレクトリ *ID とも呼ばれる*)
 
-Azure AD でアプリを作成する手順については、「アプリケーションをアプリに登録する」[を参照](/azure/active-directory/develop/quickstart-register-app)Microsoft ID プラットフォーム。
+アプリを作成する手順については、「アプリケーションをアプリに登録する」をAzure ADを参照[Microsoft ID プラットフォーム。](/azure/active-directory/develop/quickstart-register-app)
 
 ## <a name="step-2-prepare-a-csv-file-with-your-hr-data"></a>手順 2: 人事データを使用して CSV ファイルを準備する
 
@@ -73,7 +73,7 @@ CSV ファイルの最初の行 (ヘッダー行) には、必要な列名が一
 
 次の手順では、HR コネクタを作成します。Microsoft 365 コンプライアンス センター。 手順 4 でスクリプトを実行すると、作成する HR コネクタが CSV ファイルから組織に HR データMicrosoft 365されます。 この手順では、コネクタの作成時に生成されるジョブ ID を必ずコピーしてください。 スクリプトの実行時にジョブ ID を使用します。
 
-1. に移動 [https://compliance.microsoft.com](https://compliance.microsoft.com) し、左側の **ナビゲーションで [** データ コネクタ] をクリックします。
+1. [データ コネクタ] ページにMicrosoft 365 コンプライアンス センター、[データ コネクタ <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**] ページを選択** します</a>。
 
 2. [人事]**の [データ コネクタ] ページ****で、[表示**] を **クリックします**。
 
@@ -81,7 +81,7 @@ CSV ファイルの最初の行 (ヘッダー行) には、必要な列名が一
 
 4. [認証資格情報 **] ページで、** 次の操作を行い、[次へ] を **クリックします**。
 
-   1. 手順 1 で作成AD Azure アプリの Azure アプリケーション ID を入力または貼り付けます。
+   1. 手順 1 で作成Azure AD Azure アプリのアプリケーション ID を入力または貼り付けます。
 
    1. HR コネクタの名前を入力します。
 
@@ -99,7 +99,7 @@ CSV ファイルの最初の行 (ヘッダー行) には、必要な列名が一
    
    1. **サンプル スクリプトへのリンク。** サンプル スクリプト **にアクセス** するには、GitHubリンクをクリックします (リンクによって新しいウィンドウが開きます)。 手順 4 でスクリプトをコピーできるよう、このウィンドウを開いた状態にしてください。 または、手順 4 でもう一度アクセスできるよう、リンク先をブックマークするか、URL をコピーすることもできます。 このリンクは、コネクタ のフライアウト ページでも使用できます。
 
-7. [ **完了**] をクリックします。
+7. **[完了]** をクリックします。
 
    新しいコネクタが [コネクタ] タブの一覧 **に表示** されます。 
 
@@ -137,9 +137,9 @@ HR コネクタをセットアップする最後の手順は、CSV ファイル 
 
    | パラメーター | 説明 |
    |:-----|:-----|:-----|
-   |`tenantId`|手順 1 で取得Microsoft 365組織の ID。 組織のテナント ID は、Azure 管理センターの [概要] ブレードADすることもできます。 これは、組織を識別するために使用されます。|
-   |`appId` |Azure ADで作成したアプリのアプリケーション ID は、手順 1 AD参照してください。 これは、スクリプトが組織ADアクセスしようとするときに、Azure Microsoft 365によってMicrosoft 365されます。 |
-   |`appSecret`|Azure ADで作成したアプリのアプリケーション シークレットは、手順 1 AD参照してください。 これは、認証にも使用されます。|
+   |`tenantId`|手順 1 で取得Microsoft 365組織の ID。 組織のテナント ID は、管理センターの[概要] ブレードAzure ADすることもできます。 これは、組織を識別するために使用されます。|
+   |`appId` |手順 1 Azure ADで作成したアプリのアプリケーション ID Azure AD ID です。 これは、スクリプトが組織Azure ADアクセスしようとするときに、認証に使用Microsoft 365されます。 |
+   |`appSecret`|手順 1 Azure ADで作成したアプリのアプリケーション Azure ADシークレットです。 これは、認証にも使用されます。|
    |`jobId`|手順 3 で作成した HR コネクタのジョブ ID。 これは、Microsoft クラウドにアップロードされた HR データを HR コネクタに関連付ける場合に使用します。|
    |`csvFilePath`|手順 2 で作成した CSV ファイル (スクリプトと同じシステムに格納されている) のファイル パス。 ファイル パス内のスペースを避けるようにします。それ以外の場合は、単一引用符を使用します。|
    |||
@@ -159,7 +159,7 @@ HR コネクタをセットアップする最後の手順は、CSV ファイル 
 
 HR コネクタを作成し、スクリプトを実行して HR データをアップロードした後、コネクタを表示し、そのコネクタの状態をアップロードMicrosoft 365 コンプライアンス センター。 スクリプトを定期的に自動的に実行するスケジュールを設定した場合は、前回スクリプトを実行した後に現在の状態を表示することもできます。
 
-1. 左側の [https://compliance.microsoft.com](https://compliance.microsoft.com) ナビゲーションで [ **データ コネクタ] に** 移動してクリックします。
+1. [データ コネクタ] にMicrosoft 365 コンプライアンス センターし、[データ コネクタ]<a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**を選択します**</a>。
 
 2. [コネクタ **] タブをクリック** し、HR コネクタを選択して、フライアウト ページを表示します。 このページには、コネクタに関するプロパティと情報が含まれる。
 

@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-viva-learning
 localization_priority: medium
 description: SAP SuccessFactors を学習コンテンツ ソースとして構成する方法については、Microsoft Viva ラーニング。
-ms.openlocfilehash: 8e5c8c920934883dec9cd020fbb97a87e546c38c
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: fafa0d8b610c3964617015ba3d4d1b9771c9e850
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60703037"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60747271"
 ---
 # <a name="configure-sap-successfactors-as-a-content-source-for-microsoft-viva-learning"></a>SAP SuccessFactors をコンテンツ ソースとして構成Microsoft Viva ラーニング
 
@@ -56,7 +56,7 @@ ms.locfileid: "60703037"
     - 有効にできる値は "false" または "true" です。 パートナー抽出を有効にするには、"true" に設定します。
         - partners1.enabled=
     
-    <!--![Image of the PARTNER_EXTRACT configuration settings filled in.](../media/learning/sap-1.png)-->
+    [![構成設定PARTNER_EXTRACTイメージ。 ](../media/learning/sf-focus.png) ](../media/learning/sf-2.png#lightbox)
 
 SuccessFactors ポータルでこれらの手順を完了したら、次の手順でセットアップを完了Microsoft 365 管理センター。
 
@@ -90,6 +90,10 @@ SuccessFactors ポータルでこれらの手順を完了したら、次の手�
     **PGP のプライベート キー パス** フレーズ: IT 管理者または PGP キーを提供するチームからこの値を取得する必要があります。
 
     **会社 ID**: SuccessFactors ポータルにサインインします。 プロファイル アイコンを選択し、[バージョンを **表示する] を設定。** 会社 ID は、こちらから確認できます。
+
+    ![[バージョンの表示] を選択したプロファイル アイコン設定します。](../media/learning/sf-3.png)
+        
+    ![バージョン設定ウィンドウのイメージ。](../media/learning/sf-1.png)
 
 4. [**保存] を** 選択して、次のページで SuccessFactors Microsoft Viva ラーニング。 コンテンツがビバ サービスで利用できるまでに遅れが生ラーニング。
 

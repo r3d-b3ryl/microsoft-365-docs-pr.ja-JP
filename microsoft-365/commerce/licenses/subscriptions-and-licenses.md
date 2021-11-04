@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: 受け取るアプリケーションとサービスは、購入Microsoft 365製品によって異Microsoft 365 Apps for business。
 ms.date: 07/01/2020
-ms.openlocfilehash: 11cda35cdb4326e620d5bedbc49762e868e93efa
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 29a56ecfc1cb2f3cbe3afebec552fff29905675b
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60153656"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60756566"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>ビジネス向けサブスクリプションとライセンスMicrosoft 365理解する
 
@@ -59,7 +59,7 @@ ms.locfileid: "60153656"
 |Exchange Online  <br/> |そのユーザーのメールボックスが作成されます。 <br/> このタスクを完了する SLA の詳細については、「[セットアップ..」を参照してください。のメッセージをMicrosoft 365 管理センター。](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center) |
 |SharePoint Online  <br/> |既定の SharePoint Online チーム サイトの編集権限がそのユーザーに割り当てられます。  <br/> |
 |Skype for Business Online  <br/> |ユーザーは、ライセンスに関連付けられている機能にアクセスできます。  <br/> |
-|Microsoft 365 Apps for enterprise  <br/> |ユーザーは、最大 5 Officeの Mac または PC、5 つのタブレット、および 5 つのスマートフォンでアプリをダウンロードできます。  <br/> |
+|エンタープライズ向け Microsoft 365 アプリ  <br/> |ユーザーは、最大 5 Officeの Mac または PC、5 つのタブレット、および 5 つのスマートフォンでアプリをダウンロードできます。  <br/> |
 
 ## <a name="understand-licenses-for-non-user-mailboxes"></a>ユーザー以外のメールボックスのライセンスについて
 

@@ -1,7 +1,7 @@
 - name: Microsoft 365 管理センターのヘルプ
   href: index.yml
   items:
-    - name: 作業の開始
+    - name: 概要
       items:
         - name: サインアップ
           href: admin-overview/sign-up-for-office-365.md
@@ -311,7 +311,19 @@
             - name: 利用状況分析に関するエラーのトラブルシューティング
               href: usage-analytics/usage-analytics-errors.md
         - name: Microsoft 365 サポートと ServiceNow 構成ガイドとの統合
-          href: manage/microsoft-365-servicenow-support-integration.md
+          items:
+            - name: Microsoft 365 サポートと ServiceNow 構成の統合の概要
+              href: manage/servicenow-overview.md
+            - name: ServiceNow 基本認証とのサポート統合を構成する
+              href: manage/servicenow-basic-authentication.md
+            - name: AAD OAuth トークンによる Microsoft 365 サポート統合を構成する
+              href: manage/servicenow-aad-oauth-token.md
+            - name: サービス正常性インシデントと推奨ソリューションのみを対象とした Microsoft 365 サポート統合
+              href: manage/servicenow-service-health-incidents-solutions-only.md
+            - name: ServiceNow 構成のテスト
+              href: manage/servicenow-testing-the-configuration.md
+            - name: ServiceNow との Microsoft 365 サポート統合のトラブルシューティング
+              href: manage/servicenow-troubleshooting.md
     - name: サブスクリプションと課金を管理する
       href: ../commerce/index.yml
     - name: 組織をセキュリティで保護する

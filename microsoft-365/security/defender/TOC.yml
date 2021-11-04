@@ -4,26 +4,22 @@
   items:
     - name: 概要
       items:
-        - name: Microsoft 365 Defender とは
+        - name: Microsoft 365 Defender
           href: microsoft-365-defender.md
-        - name: Microsoft 365 Defender の概要
-          href: overview-security-center.md
         - name: Microsoft 365 Defender の新機能
           href: whats-new.md
-        - name: Microsoft 365 Defender の Microsoft Defender for Endpoint
-          href: microsoft-365-security-center-mde.md
-        - name: Microsoft 365 Defender の Defender for Office 365
-          href: microsoft-365-security-center-mdo.md
-        - name: Defender for Endpoint を Microsoft 365 Defender にリダイレクトする
-          href: microsoft-365-security-mde-redirection.md
-        - name: Office 365 セキュリティ/コンプライアンス センターを Microsoft 365 Defender にリダイレクトする
-          href: microsoft-365-security-mdo-redirection.md
+        - name: Microsoft 365 Defender サービス
+          items:
+            - name: Microsoft 365 Defender の Microsoft Defender for Endpoint
+              href: microsoft-365-security-center-mde.md
+            - name: Microsoft 365 Defender の Defender for Office 365
+              href: microsoft-365-security-center-mdo.md
+            - name: Defender for Endpoint を Microsoft 365 Defender にリダイレクトする
+              href: microsoft-365-security-mde-redirection.md
+            - name: Office 365 セキュリティ/コンプライアンス センターを Microsoft 365 Defender にリダイレクトする
+              href: microsoft-365-security-mdo-redirection.md
         - name: Microsoft 365 Defender と Azure Sentinel との統合
           href: microsoft-365-defender-integration-with-azure-sentinel.md
-        - name: プレビュー機能
-          href: preview.md
-        - name: 問題のトラブルシューティング
-          href: ./troubleshoot.md
         - name: 業界のテスト
           href: ./top-scoring-industry-tests.md
     - name: プラン
@@ -94,9 +90,9 @@
       items:
         - name: 概要
           href: get-started.md
-        - name: Microsoft 365 Defender を有効にする
+        - name: 1. Microsoft 365 Defender を有効にする
           href: m365d-enable.md
-        - name: サポートされているサービスを展開する
+        - name: 2. サポートされているサービスを展開する
           href: deploy-supported-services.md
         - name: Microsoft 365 Defender の FAQ を有効にする
           href: m365d-enable-faq.md
@@ -130,6 +126,8 @@
               href: ../defender-identity/notifications.md
     - name: 脅威の調査と対応
       items:
+        - name: 概要
+          href: incident-response-overview.md
         - name: インシデントへの対応
           items:
             - name: 概要
@@ -166,10 +164,6 @@
                   href: investigate-users.md
             - name: インシデント対応プレイブック
               href: /security/compass/incident-response-playbooks
-            - name: インシデントのメール通知を取得する
-              href: get-incident-notifications.md
-            - name: Power Automate を使用して脅威をトリアージする
-              href: use-power-automate.md
         - name: 自動調査と応答
           items:
             - name: 概要
@@ -310,7 +304,7 @@
               href: ../mtp/microsoft-threat-experts.md
             - name: Microsoft 脅威エキスパートの機能を構成および管理する
               href: ../mtp/configure-microsoft-threat-experts.md
-    - name: SecOps 統合
+    - name: セキュリティ運用ガイド
       items:
         - name: 概要
           href: integrate-microsoft-365-defender-secops.md
@@ -396,6 +390,10 @@
                       href: api-update-incidents.md
                     - name: インシデントの取得
                       href: api-get-incident.md
+        - name: プレビュー機能
+          href: preview.md
+        - name: 問題のトラブルシューティング
+          href: ./troubleshoot.md
     - name: Microsoft Defender for Office 365
       href: ../office-365-security/index.yml
     - name: Microsoft Defender for Endpoint

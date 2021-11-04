@@ -136,18 +136,22 @@
           href: preset-security-policies.md
         - name: 保護ポリシーの構成アナライザー
           href: configuration-analyzer-for-security-policies.md
-        - name: Defender for Office 365 の攻撃シミュレータ
-          href: attack-simulator.md
-        - name: 攻撃シミュレーション トレーニングの使用を開始する
-          href: attack-simulation-training-get-started.md
-        - name: 攻撃シミュレーション トレーニングでフィッシング攻撃のシュミレーション
-          href: attack-simulation-training.md
-        - name: 攻撃シミュレーショントレーニングのカスタム ペイロードを作成する
-          href: attack-simulation-training-payloads.md
-        - name: 攻撃シミュレーション トレーニングを通して洞察を得る
-          href: attack-simulation-training-insights.md
-        - name: 攻撃シミュレーション トレーニングの展開に関する考慮事項と FAQ
-          href: attack-simulation-training-faq.md
+        - name: Defender for Office 365 の攻撃シミュレーション トレーニング
+          items:
+            - name: 攻撃シミュレーション トレーニングの使用を開始する
+              href: attack-simulation-training-get-started.md
+            - name: 攻撃シミュレーション トレーニングでフィッシング攻撃のシュミレーション
+              href: attack-simulation-training.md
+            - name: 攻撃シミュレーション トレーニングのカスタム ペイロードを作成する
+              href: attack-simulation-training-payloads.md
+            - name: 攻撃シミュレーション トレーニングでのシミュレーションの自動化
+              href: attack-simulation-training-simulation-automations.md
+            - name: 攻撃シミュレーション トレーニングでのペイロードの自動化
+              href: attack-simulation-training-payload-automations.md
+            - name: 攻撃シミュレーション トレーニングでのインサイトとレポート
+              href: attack-simulation-training-insights.md
+            - name: 攻撃シミュレーション トレーニングの展開に関する考慮事項と FAQ
+              href: attack-simulation-training-faq.md
         - name: サード パーティ製のフィッシング詐欺シミュレーションと SecOps メールボックスの配信を構成する
           href: configure-advanced-delivery.md
         - name: EOP および Defender for Office 365 のセキュリティを構成するための推奨設定

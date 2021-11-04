@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 5e0367bf0cf5e180218237fab04a2011cda0abe9
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 38353492f15ad653a1c2d09375c3a004b355337a
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60701579"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60755113"
 ---
 # <a name="get-started-with-insider-risk-management"></a>インサイダー リスクの管理の概要
 
@@ -104,7 +104,7 @@ ms.locfileid: "60701579"
 
 インサイダー リスク管理役割グループにユーザーを追加するには、次の手順を実行します。
 
-1. Microsoft 365 組織の管理者アカウントの資格情報を使って、[https://compliance.microsoft.com/permissions](https://compliance.microsoft.com/permissions) にサインインします。
+1. 組織の<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>アカウントの資格情報を使用してサインインMicrosoft 365します。
 
 2. セキュリティ &amp; コンプライアンス センターで、**[アクセス許可]** に移動します。 Office 365 でロールの表示と管理へのリンクを選択します。
 
@@ -134,7 +134,7 @@ Insider Risk Analytics を有効にするには、Insider リスク管理 *、In
 
 インサイダー リスク分析を有効にするには、次の手順を実行します。
 
-1. [インサイ [ダー Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com)のリスク管理]**に移動します**。
+1. [インサイ <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">ダー Microsoft 365 コンプライアンス センター</a>のリスク管理]**に移動します**。
 2. [ **インサイダー リスク管理** の **概要]** タブの [組織のインサイダー リスクをスキャンする] カードの [スキャンの実行] **を選択** します。このアクションにより、組織の分析スキャンが有効になります。 Insider リスク設定  >  **Analytics (プレビュー)** に移動し、テナントのユーザー アクティビティをスキャンして潜在的なインサイダー リスクを特定することで、組織内のスキャンを有効に **することもできます**。
 3. [分析の **詳細] ウィンドウで** 、[スキャンの実行 **] を選択して組織のスキャンを開始します**。 分析スキャン結果は、分析情報がレポートとして確認できるまで最大 24 時間かかる場合があります。
 
@@ -222,7 +222,7 @@ Defender for Endpoint を [インサイダー](/windows/security/threat-protecti
 
 ポリシーを構成する前に、次の内部リスク設定を定義します。
 
-1. [セキュリティ] [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com) **[Insider** リスク管理] に移動し、任意のページの右上隅にある **[Insider** リスク設定] を選択します。
+1. [セキュリティ] <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a> **[Insider** リスク管理] に移動し、任意のページの右上隅にある **[Insider** リスク設定] を選択します。
 2. [プライバシー **] ページで** 、ポリシー通知のユーザー名を表示するためのプライバシー設定を選択します。
 3. [インジケーター **] ページ** で、すべてのインサイダー リスク ポリシーに適用するアラート インジケーターを選択します。
 
@@ -247,7 +247,7 @@ Defender for Endpoint を [インサイダー](/windows/security/threat-protecti
 
 インサイダー リスク管理ポリシーには、ユーザーが割り当てられており、アラート用に構成されているリスク インジケーターの種類が定義されています。 アクティビティがアラートをトリガーする前に、ポリシーを構成する必要があります。 ポリシー ウィザードを使用して、新しいインサイダー リスク管理ポリシーを作成します。
 
-1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com)で、**インサイダー リスク管理** に移動し、**[ポリシー]** タブ を選択します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>で、**インサイダー リスク管理** に移動し、**[ポリシー]** タブ を選択します。
 2. **[ポリシーの作成]** を選択し、ポリシー ウィザードを開きます。
 3. **[ポリシー テンプレート]** ページで、ポリシー カテゴリを選択し、新しいポリシーのテンプレートを選択します。 これらのテンプレートは、検出および調査するリスク アクティビティを定義する条件とインジケーターで構成されています。 テンプレートの前提条件を確認し、トリガーとなるイベントと検出されたアクティビティを確認し、このポリシー テンプレートがニーズに適していることを確認します。
 

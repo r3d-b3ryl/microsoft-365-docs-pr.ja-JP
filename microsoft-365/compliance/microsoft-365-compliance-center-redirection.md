@@ -11,16 +11,16 @@ ms.topic: article
 ms.localizationpriority: medium
 description: セキュリティ/コンプライアンス センターのユーザーからユーザー Office 365へのユーザーの自動リダイレクトについてMicrosoft 365 コンプライアンス センター。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: dcf589eddc0ede59efd01d7eddbe9ab3685bfa68
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 9e299ee84eb046a1d6c3ae41d80eeb0106fad63e
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60700903"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754791"
 ---
 # <a name="redirection-of-users-from-the-office-365-security-and-compliance-center-to-the-microsoft-365-compliance-center"></a>セキュリティ/コンプライアンス センターからOffice 365へのユーザーのリダイレクトMicrosoft 365 コンプライアンス センター
 
-この記事では、Office 365 セキュリティ とコンプライアンス センター (protection.office.com) から Microsoft 365 コンプライアンス センター (compliance.microsoft.com) へのコンプライアンス ソリューションにアクセスするユーザーの自動リダイレクトのしくみについて説明します。
+この記事では、Office 365 セキュリティ/コンプライアンス センター (protection.office.com) からコンプライアンス ソリューションにアクセスするユーザーが、Microsoft 365 コンプライアンス センター に自動的にリダイレクト<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">する方法について説明します</a>。
 
 ## <a name="what-to-expect"></a>想定される変化
 
@@ -36,7 +36,7 @@ ms.locfileid: "60700903"
 - [情報ガバナンス](manage-information-governance.md)
 - [レコード管理](records-management.md)
 
-ユーザーは自動的に同じコンプライアンス ソリューションにルーティングされます (Microsoft 365 コンプライアンス センター (compliance.microsoft.com)。
+ユーザーは、同じコンプライアンス ソリューションに自動的にルーティング<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター。</a>
 
 この機能と関連付けられたコントロールでは、Microsoft Defender のセキュリティ機能の自動リダイレクトが有効Office 365。 セキュリティ機能のリダイレクトを有効にするには[、「Microsoft Defender](/microsoft-365/security/defender/microsoft-365-security-mdo-redirection)からアカウントをリダイレクトする」を参照Office 365セキュリティ センター Microsoft 365を参照してください。
 

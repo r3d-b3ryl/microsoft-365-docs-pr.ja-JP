@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
 ms.custom: seo-marvel-apr2020
 description: PST ファイルをインポートする際に、Microsoft 365 インポート サービスのインテリジェント インポート機能を使用してデータをフィルター処理するMicrosoft 365。
-ms.openlocfilehash: 0c321c4bcdb413c42c5a3edff1f19e2a34c093d1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: da5b22d79339ad4a4a94bd0db803970c1d66537f
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200511"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60755251"
 ---
 # <a name="filter-data-when-importing-pst-files"></a>PST ファイルをインポートするときに、データをフィルター処理する
 
@@ -64,7 +64,7 @@ ms.locfileid: "60200511"
 
 PST インポート ジョブを作成した後、次の手順に従ってデータをフィルター処理してから、データを別のユーザーにインポートOffice 365。
   
-1. <https://compliance.microsoft.com> に移動し、組織の管理者アカウントの資格情報を使用してサインインします。
+1. [管理者] <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>に移動し、組織内の管理者アカウントの資格情報を使用してサインインします。
     
 2. Microsoft 365 コンプライアンス センターの左のウィンドウで、[**情報ガバナンス**] \> [**インポート**] の順にクリックします。
     
@@ -113,7 +113,7 @@ PST インポート ジョブを作成した後、次の手順に従ってデー
   
     ![データ分析情報は、フィルター設定に基づいて更新されます。](../media/897e20fb-3b13-44c3-9d56-9f330750f2a3.png)
   
-    d. [**次へ**] をクリックします。
+    d. **[次へ]** をクリックします。
   
     フィルター設定を示す状態ページが表示されます。 繰り返しますが、任意のフィルター設定を編集できます。
   

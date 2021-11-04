@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 法的事項、ビジネス、または規制上の義務を有する価値の高いコンテンツを管理する、Microsoft 365 向けのレコード管理ソリューションが必要であるのに、どこから開始すればいいかわからなくなっていませんか? 開始するのに役立つ実用的なガイダンスをご覧ください。
-ms.openlocfilehash: d87d24bce7e0ad24e5b9914fe98379fd9f40f1bc
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f1877330ee502404d28b10cfe04dba96a37211c8
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60167248"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60756949"
 ---
 # <a name="get-started-with-records-management"></a>レコード管理の使用を開始する
 
@@ -49,7 +49,7 @@ Microsoft 365 コンプライアンス機能のメリットを得られるよう
 
 ## <a name="permissions-required-for-records-management"></a>レコード管理に必要なアクセス許可
 
-レコード管理を担当するコンプライアンス チームのメンバーには、[Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)へのアクセス許可が必要です。既定により、テナント管理者 (グローバル管理者) はこの場所にアクセスでき、テナント管理者のすべてのアクセス許可を与えることなく、コンプライアンス責任者やその他のユーザーにアクセス権を付与できます。この制限された管理用にアクセス権を付与するには、[処理確認と検証](disposition.md)など、レコード管理に関するすべての機能に対するアクセス許可を付与する **[レコード管理]** の管理者役割グループにユーザーを追加することをお勧めします。
+レコード管理を担当するコンプライアンス チームのメンバーには、<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>へのアクセス許可が必要です。既定により、テナント管理者 (グローバル管理者) はこの場所にアクセスでき、テナント管理者のすべてのアクセス許可を与えることなく、コンプライアンス責任者やその他のユーザーにアクセス権を付与できます。この制限された管理用にアクセス権を付与するには、[処理確認と検証](disposition.md)など、レコード管理に関するすべての機能に対するアクセス許可を付与する **[レコード管理]** の管理者役割グループにユーザーを追加することをお勧めします。
 
 読み取り専用の役割の場合は、新しい役割グループを作成し、このグループに **閲覧限定レコード管理** の役割を追加することができます。
 

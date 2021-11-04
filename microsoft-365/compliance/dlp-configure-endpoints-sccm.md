@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configuration Manager を使用してデバイスに構成パッケージを展開し、サービスにオンボードします。
-ms.openlocfilehash: 15561e21dd93f8742dea48cf8c2eac2eef7e13fe
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1d551f0411910f1a8db99ee76a61204c8c475348
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60194515"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754757"
 ---
 # <a name="onboard-windows-10-devices-using-configuration-manager"></a>Configuration Manager を使用した Windows 10 デバイスのオンボード
 
@@ -30,9 +30,9 @@ ms.locfileid: "60194515"
 
 ### <a name="onboard-devices-using-system-center-configuration-manager"></a>デバイスを使用したオンボード System Center Configuration Manager
 
-1. サービス オンボーディング ウィザードからダウンロード *.zipファイル*(DeviceComplianceOnboardingPackage.zip) の Configuration Manager 構成パッケージを開きます。 また、Microsoft コンプライアンス センターからパッケージ [を取得できます](https://compliance.microsoft.com/)。
+1. サービス オンボーディング ウィザードからダウンロード *.zipファイル*(DeviceComplianceOnboardingPackage.zip) の Configuration Manager 構成パッケージを開きます。 パッケージは、次のファイルから取得<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター。</a>
 
-2. ナビゲーション ウィンドウで、[デバイス オンボーディング オン **ボーディング] 設定**  >  **を**  >  **選択します**。
+2. ナビゲーション ウィンドウで、[デバイス オンボーディング オン <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**ボーディング] 設定**</a>  >  **を**  >  **選択します**。
 
 3. [展開 **方法] フィールド** で、[Microsoft Endpoint Configuration Manager **2012/2012 R2/1511/1602] を選択します**。
 
@@ -140,9 +140,9 @@ Value: 0 or 1
 
 ### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>2012 R2 Configuration Manager System Centerを使用するオフボード デバイス
 
-1. Microsoft コンプライアンス センターからオフボード パッケージ [を取得します](https://compliance.microsoft.com/)。
+1. 次の方法でオフボード<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">パッケージを取得Microsoft 365 コンプライアンス センター。</a>
 
-2. ナビゲーション ウィンドウで、[デバイスオンボーディング **設定**  >   **オフボード]** >  **を選択します**。
+2. ナビゲーション ウィンドウで、[デバイスオンボーディング <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**設定**</a>  >   **オフボード]** >  **を選択します**。
 
 3. オペレーティング システムWindows 10を選択します。
 

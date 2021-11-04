@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: セキュリティ、プライバシー、コンプライアンスの実践に役立つ Microsoft Service Trust Portal にアクセスして使用する方法について説明します。
-ms.openlocfilehash: bbfc84b2ada1e75407ca8c1c42855bdbf336bbf2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c74cd1e12d7ca2d6ac7adeb3ace921f54fe4b5a1
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207321"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60757193"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Microsoft Service Trust Portal の使用を開始する
 
@@ -69,7 +69,7 @@ Service Trust Portal の機能およびコンテンツはメイン メニュー�
 ### <a name="compliance-manager"></a>コンプライアンス マネージャー
 
 > [!IMPORTANT]
-> コンプライアンス マネージャーは、サービス信頼ポータルから新しい場所に移動[Microsoft 365 コンプライアンス センター。](https://compliance.microsoft.com/) すべての顧客データが新しい場所に移動されたので、コンプライアンス マネージャーを中断することなく使用できます。 セットアップ情報と [新機能については、](compliance-manager.md) コンプライアンス マネージャーのドキュメントを参照してください。 従来のバージョンのコンプライアンス マネージャーはサービス信頼ポータルに残りますが、すべてのユーザーは、コンプライアンス マネージャーを使用して、コンプライアンス マネージャーを使用Microsoft 365 コンプライアンス センター。
+> コンプライアンス マネージャーは、サービス信頼ポータルから新しい場所に移動<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター。</a> すべての顧客データが新しい場所に移動されたので、コンプライアンス マネージャーを中断することなく使用できます。 セットアップ情報と [新機能については、](compliance-manager.md) コンプライアンス マネージャーのドキュメントを参照してください。 従来のバージョンのコンプライアンス マネージャーはサービス信頼ポータルに残りますが、すべてのユーザーは、コンプライアンス マネージャーを使用して、コンプライアンス マネージャーを使用Microsoft 365 コンプライアンス センター。
 
 ### <a name="trust-documents"></a>トラスト ドキュメント
 
@@ -111,7 +111,7 @@ Microsoft クラウドの [セキュリティ、](https://www.microsoft.com/trus
 
 - **ユーザーのプライバシー設定:** このページでは、特定のユーザーのコンプライアンス マネージャー (クラシック) でアクション アイテムの割り当てを含むレポートをエクスポートできます。 また、すべてのアクション アイテムを別のユーザーに再割り当てし、指定したユーザーから割り当てられたアクション アイテムを削除できます。
 
-### <a name="search"></a>検索
+### <a name="search"></a>Search
 
 [サービス信頼ポータル] ページの右上隅にある虫眼鏡をクリックしてボックスを展開し、検索用語を入力し、Enter キーを **押します**。 [ **検索** ] ページが表示され、検索ボックスに検索用語が表示され、検索結果が以下に表示されます。
 

@@ -15,16 +15,17 @@ ms.collection:
 - m365solution-aed
 - m365initiative-compliance
 - m365solution-scenario
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
 description: この記事では、特定のケースを作成および管理するAdvanced eDiscovery説明します。 最初の手順は、ケースを作成し、新しい機能Advanced eDiscovery使用を開始します。
-ms.openlocfilehash: f76d4688ebb0324b1b009f4b98b5ab15b65ec960
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 48e6f255361591f270ac95e525c4a1e33b6b7212
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60172493"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60747790"
 ---
 # <a name="create-and-manage-an-advanced-ediscovery-case"></a>ケースの作成と管理Advanced eDiscoveryする
 
@@ -36,11 +37,11 @@ ms.locfileid: "60172493"
 
 ケースを作成し、メンバーを追加するには、次の手順を実行します。 ケースを作成するユーザーは、メンバーとして自動的に追加されます。 ケースのメンバーは、ケース内のケースにアクセスし、Microsoft 365 コンプライアンス センタータスクAdvanced eDiscovery実行できます。
 
-1. 電子情報開示 <https://compliance.microsoft.com> のアクセス許可が割り当てられているユーザー アカウントの資格情報を使用して、アクセスしてサインインします。 組織の管理役割グループのメンバーは、組織のケースAdvanced eDiscovery作成することもできます。
+1. [電子情報開示<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>アクセス許可が割り当てられているユーザー アカウントの資格情報を使用してサインインします。 組織の管理役割グループのメンバーは、組織のケースAdvanced eDiscovery作成することもできます。
 
-2. Microsoft 365 コンプライアンス センターの左側のナビゲーション ウィンドウで、[**すべてを表示**] をクリックし、**[eDiscovery] > [Advanced]** をクリックします。
+2. ウィンドウの左側のナビゲーション ウィンドウMicrosoft 365 コンプライアンス センター [すべて表示]をクリックし、[**電子** 情報開示の詳細設定] を選択し、[ケース] タブ  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2173764" target="_blank">**を選択** します</a>。
 
-3. [ケースの **Advanced eDiscovery]** ページで、[ケース] タブをクリックし、[ケースの作成 **] をクリックします**。
+1. [**ケースを作成する**] を選択します。
 
 4. [ **新しい電子情報開示ケース] フライ** アウト ページで、ケースに名前 (必須) を付け、オプションのケース番号と説明を入力します。 ケース名は、組織内で一意である必要があります。
 

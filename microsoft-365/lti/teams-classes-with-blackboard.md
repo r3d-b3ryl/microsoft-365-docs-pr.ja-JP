@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: Blackboard learn ultra Microsoft Teamsクラスを使用する
-ms.openlocfilehash: b74aaca3df01b2e6f222605f3700066c980cd9bd
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2cf6c3f3e7c9c8b0004ea08fccdec981c032a491
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60170117"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60757372"
 ---
 # <a name="use-microsoft-teams-classes-with-blackboard-learn-ultra"></a>Blackboard learn ultra Microsoft Teamsクラスを使用する
 
@@ -29,7 +29,7 @@ ms.locfileid: "60170117"
 > [!IMPORTANT]
 > 学生情報システム[(SIS)](https://help.blackboard.com/Learn/Administrator/SaaS/Integrations/Student_Information_System/SIS_Planning)で [教育機関のメール] フィールドが正常に設定されたことを確認する
 >
->Microsoft Teams クラスの統合は、SIS の教育機関の電子メール フィールドに依存して、正しい Microsoft Azure Active Directory (AAD) ユーザー原則名[(UPN) にマップします](/azure/active-directory/hybrid/howto-troubleshoot-upn-changes)。 教育機関の電子メールがプロビジョニングされていない場合、これは既定で既存の電子メールに設定されます。 このフィールドは、データが正しく同期され、AAD と Blackboard Learn Ultra の間で電子メール データが競合しなかからなされるように、すべてのユーザーに対して設定をお勧めします。
+>Microsoft Teams クラスの統合は、SIS の教育機関の電子メール フィールドに依存して、正しい Microsoft Azure Active Directory (AAD) ユーザー原則名[(UPN)](/azure/active-directory/hybrid/howto-troubleshoot-upn-changes)にマップします。 教育機関の電子メールがプロビジョニングされていない場合、これは既定で既存の電子メールに設定されます。 データが正しく同期され、AAD と Blackboard Learn Ultra の間で電子メール データが競合しなかからなされるように、すべてのユーザーに対してこのフィールドを設定してください。
 >
 > SIS マッピングでこのフィールドを適切に設定していない場合、統合は引き続き機能しますが、作成された Teams クラスにはユーザーが表示されない可能性があります。エラーが発生する可能性があります。
 

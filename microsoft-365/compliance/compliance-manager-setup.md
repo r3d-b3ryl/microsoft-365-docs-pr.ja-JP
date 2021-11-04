@@ -13,16 +13,17 @@ ms.collection:
 - M365-security-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンス マネージャーのユーザー アクセス許可と役割を設定し、アクションの自動テストを構成します。 ユーザーの履歴を管理したり、ダッシュボード表示をフィルター処理することができます。
-ms.openlocfilehash: ec44ec38a76cf0371804df25b698d77ba7b5aa22
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 5f8bdec9dd7a6a784ff9eb6e91ab44ffd97fcda0
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60702019"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754891"
 ---
 # <a name="get-started-with-compliance-manager"></a>コンプライアンス マネージャーの使用を開始する
 
@@ -38,7 +39,7 @@ ms.locfileid: "60702019"
 
 ## <a name="sign-in"></a>サインイン
 
-1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)にアクセスし、Microsoft 365 グローバル管理者アカウントで **サインイン** します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>にアクセスし、Microsoft 365 グローバル管理者アカウントで **サインイン** します。
 2. 左側のナビゲーション ウィンドウで、[**コンプライアンス マネージャー**] を選択します。 [コンプライアンス マネージャー ダッシュボード](#understand-the-compliance-manager-dashboard)にアクセスします。
 
 コンプライアンス・マネージャーにアクセスする直接リンクは [https://compliance.microsoft.com/compliancemanager](https://compliance.microsoft.com/compliancemanager) です。
@@ -56,7 +57,7 @@ ms.locfileid: "60702019"
 
 アクセス許可を設定し、ロールを割り当てるには、Microsoft 365 コンプライアンス センター手順に従います。
 
-1. [アクセス許可] [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/compliancemanager)し、左側 **のナビゲーションで**[アクセス許可] を選択します。
+1. [アクセス許可] ボックスにMicrosoft 365 コンプライアンス センターし、[アクセス許可]<a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**を選択します**</a>。
 
 2. [コンプライアンス センター] **ドロップダウンで** 、[役割] を **選択します**。
 
@@ -108,7 +109,7 @@ Microsoft 365 コンプライアンス センターのコンプライアンス �
 
 #### <a name="to-manage-your-automated-testing-settings"></a>自動テストの設定を管理するには、以下のようにします。
 
-1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)のどこからでも、左にあるナビゲーションの **[設定]** を選択します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**[設定]**</a>で [Microsoft 365 コンプライアンス センター] を選択します。
 
 2. 設定ページで **コンプライアンス マネージャー** を選択します。
 
@@ -130,7 +131,7 @@ Microsoft 365 コンプライアンス センターのコンプライアンス �
 
 **ユーザー履歴の設定を確認するには、以下のようにします。**
 
-1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)のどこからでも、左にあるナビゲーションの [設定] を選択します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**[設定]**</a>で [Microsoft 365 コンプライアンス センター] を選択します。
 
 2. 設定ページで **コンプライアンス マネージャー** を選択します。
 
@@ -148,7 +149,7 @@ Microsoft 365 コンプライアンス センターのコンプライアンス �
 
 **ユーザー別にレポートをエクスポートするには、以下の手順に従ってください。**
 
-1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)のどこからでも、左にあるナビゲーションの **[設定]** を選択します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**[設定]**</a>で [Microsoft 365 コンプライアンス センター] を選択します。
 
 2. 設定ページで **コンプライアンス マネージャー** を選択します。
 
@@ -166,7 +167,7 @@ Microsoft 365 コンプライアンス センターのコンプライアンス �
 
 **以下の手順に従って、改善のための処置を別のユーザーに再割り当てします。**
 
-1. **Microsoft 365 コンプライアンス センター** のどこからでも、左にあるナビゲーションの [[設定]](https://compliance.microsoft.com/) を選択します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**[設定]**</a>で [Microsoft 365 コンプライアンス センター] を選択します。
 
 2. 設定ページで **コンプライアンス マネージャー** を選択します。
 
@@ -193,7 +194,7 @@ Microsoft 365 コンプライアンス センターのコンプライアンス �
 
 ユーザーの履歴を削除するには、以下の手順に従います。
 
-1. **Microsoft 365 コンプライアンス センター** のどこからでも、左にあるナビゲーションの [[設定]](https://compliance.microsoft.com/) を選択します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**[設定]**</a>で [Microsoft 365 コンプライアンス センター] を選択します。
 
 2. 設定ページで **コンプライアンス マネージャー** を選択します。
 

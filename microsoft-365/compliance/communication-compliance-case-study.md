@@ -8,7 +8,9 @@ author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.custom: admindeeplinkMAC
+ms.custom:
+- admindeeplinkMAC
+- admindeeplinkCOMPLIANCE
 f1_keywords:
 - ms.o365.cc.SupervisoryReview
 ms.service: O365-seccomp
@@ -20,12 +22,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: ff326544d2485fa3ca7385f9ad8b924514aec1a5
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 3d0a905137ae1f2a55bddb0ae3d9691e68d69bac
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60647560"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60756255"
 ---
 # <a name="case-study---contoso-quickly-configures-an-inappropriate-content-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>ケース スタディ - Contoso は、コミュニケーションの管理、管理、およびMicrosoft Teams、Exchangeに不適切Yammer構成します。
 
@@ -93,7 +95,7 @@ Contoso 社は、コミュニケーション *コンプライアンス役割グ�
 | **コミュニケーション コンプライアンス閲覧者** | このグループを使用して、コミュニケーション レポートを管理するユーザーにアクセス許可を割り当てます。 このロール グループに割り当てられたユーザーは、コミュニケーション コンプライアンス ホーム ページのすべてのレポート ウィジェットにアクセスでき、すべてのコミュニケーション コンプライアンス レポートを表示できます。 |
 
 1. Contoso IT 管理者は、グローバル管理者アカウント[の](https://compliance.microsoft.com/permissions)資格情報を使用して Microsoft 365 コンプライアンス センター アクセス許可ページにサインインし、管理者アカウントの役割を表示および管理するためのリンクをMicrosoft 365。
-2. [アクセス許可 **Microsoft 365 コンプライアンス センター** アクセス許可] に移動し、アクセス許可の役割を表示および管理するリンクをOffice 365。
+2. [アクセス許可Microsoft 365 コンプライアンス センターアクセス許可] に移動<a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank"></a>し、アクセス許可の役割を表示および管理するリンクをOffice 365。
 3. 管理者が [通信コンプライアンス] 役割 *グループを* 選択し、[役割グループの編集 **] を選択します**。
 4. 管理者は、左側の **ナビゲーション ウィンドウから [メンバー** の選択] を選択し、[編集] を **選択します**。
 5. [追加] **を選択** し、通信コンプライアンスの管理、調査、およびアラートの確認を行うすべての Contoso ユーザーのチェック ボックスをオンにします。

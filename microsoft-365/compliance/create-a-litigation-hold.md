@@ -16,12 +16,12 @@ description: 調査中にメールボックスのすべてのコンテンツを�
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: 0bd436106f4bb5dedecd1008aeeb768887dbe599
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b2ae9db50c171bcafd8352dba250202e07ea0d25
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60175349"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753131"
 ---
 # <a name="create-a-litigation-hold"></a>訴訟ホールドの作成
 
@@ -66,9 +66,9 @@ ms.locfileid: "60175349"
 
     3. **ユーザーの詳細を示す** Web ページ : 訴訟ホールドの詳細については、このボックスを使用してユーザーを Web サイトに案内します。 この URL は、Outlook 2010 以降を使用しているユーザーのメールボックスの [アカウント情報] ページに表示されます。 このページにアクセスするには、Outlook で **[ファイル]** をクリックします。
 
-6. [訴訟 **ホールド] フライ** アウト ページの **[変更の** 保存] をクリックして、保留リストを作成します。 
+6. [訴訟 **ホールド] フライ** アウト ページの **[変更の** 保存] をクリックして、保留リストを作成します。
 
-   変更が有効になるには、最大 60 分かかる可能性があるというバナーがシステムに表示されます。
+   変更が有効になるには、最大 240 分かかる可能性があるというバナーがシステムに表示されます。
 
 ### <a name="create-a-litigation-hold-using-powershell"></a>PowerShell を使用して訴訟ホールドを作成する
 

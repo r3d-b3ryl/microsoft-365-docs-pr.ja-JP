@@ -19,12 +19,12 @@ ms.custom:
 description: 特定のアプリのライセンスをユーザーに自動的に割り当てる自動請求ポリシーを作成して管理する方法について説明します。
 search.appverid: MET150
 ms.date: 04/06/2021
-ms.openlocfilehash: 41d11c6c67d35766e61106bd2beefd69462a42ff
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 28d05e0e3b1d1e8692672bf741a612ebee02e39f
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60179681"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753495"
 ---
 # <a name="manage-auto-claim-policies"></a>自動請求ポリシーを管理する
 
@@ -131,8 +131,7 @@ ms.locfileid: "60179681"
 
 ## <a name="change-the-assigning-apps-and-services"></a>割り当て中のアプリとサービスを変更する
 
-各製品には、製品に関連付けられたアプリとサービスのコレクションがあります。
-自動請求ポリシーの製品ごとに、ユーザーに製品のライセンスが自動的に割り当てられるときに含めるアプリとサービスを指定できます。
+各製品には、製品に関連付けられたアプリとサービスのコレクションがあります。 自動請求ポリシーの製品ごとに、ユーザーに製品のライセンスが自動的に割り当てられるときに含めるアプリとサービスを指定できます。
 
 1. 管理センターで、**[課金]** \> **[ライセンス]** のページの順に移動し、<a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">[自動請求ポリシー]</a> のタブを選択します。
 2. 編集するポリシーを選択します。

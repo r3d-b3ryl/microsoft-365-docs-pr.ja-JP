@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7da419a779cb3a58488ca27ea7185262f4001d44
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: baa4294209ddb32a0a531e07b5bf87b0bb10aa9b
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159489"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60756385"
 ---
 # <a name="onboarding-using-microsoft-endpoint-manager"></a>Microsoft エンドポイント マネージャーを使用したオンボーディング
 
@@ -81,7 +81,7 @@ Defender for Endpoint はさまざまなエンドポイントとツールのオ�
 > [!NOTE]
 > Intune では、Azure Active Directory (Azure AD) グループを使用してデバイスとユーザーを管理します。 Intune 管理者は、組織のニーズに合わせてグループを設定できます。
 >
-> 詳細については、「グループを追加して [ユーザーとデバイスを整理する」を参照してください](/mem/intune/fundamentals/groups-add)。
+> 詳細については、「[ユーザーとデバイスを整理するためのグループを追加する](/mem/intune/fundamentals/groups-add)」を参照してください。
 
 ### <a name="create-a-group"></a>グループを作成する
 
@@ -180,7 +180,7 @@ Defender for Endpoint はさまざまなエンドポイントとツールのオ�
     > [!div class="mx-imgBorder"]
     > ![ポータル 12 Microsoft エンドポイント マネージャーイメージ。](images/6b728d6e0d71108d768e368b416ff8ba.png)
 
-3. [**プラットフォーム] - [Windows 10後] - [Windowsとプロファイル] - [Microsoft Defender ウイルス対策] の [作成>選択します**。
+3. [**プラットフォーム] - [Windows 10] と [後] - [Windows] と [プロファイル] を選択Microsoft Defender ウイルス対策 >作成します**。
 
 4. 名前と説明を入力し、[次へ] を  **選択します**。
 
@@ -353,12 +353,12 @@ Defender for Endpoint はさまざまなエンドポイントとツールのオ�
     > [!div class="mx-imgBorder"]
     > [![サービス パネル 1 のイメージ。](images/b418a232a12b3d0a65fc98248dbb0e31.png)](images/b418a232a12b3d0a65fc98248dbb0e31.png#lightbox)
 
-2. 構成が適用された後、Defender for Endpoint Protection Service を開始する必要があります。
+2. 構成を適用した後、Defender for Endpoint Protectionサービスを開始する必要があります。
 
     > [!div class="mx-imgBorder"]
     > [![[サービスのイメージ] パネル 2。](images/a621b699899f1b41db211170074ea59e.png)](images/a621b699899f1b41db211170074ea59e.png#lightbox)
 
-3. サービスがデバイスで実行された後、デバイスは Microsoft Defender セキュリティ センターに表示されます。
+3. サービスがデバイスで実行された後、デバイスはデバイスにMicrosoft Defender セキュリティ センター。
 
     > [!div class="mx-imgBorder"]
     > [![画像のMicrosoft Defender セキュリティ センター。](images/df0c64001b9219cfbd10f8f81a273190.png)](images/df0c64001b9219cfbd10f8f81a273190.png#lightbox)

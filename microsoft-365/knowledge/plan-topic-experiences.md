@@ -3,19 +3,19 @@ title: 計画を立Microsoft Viva トピック
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
-ms.reviewer: nkokoye
+ms.reviewer: cjtan
 audience: admin
 ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
 ms.localizationpriority: medium
 description: 詳しくは、アプリの計画を立Microsoft Viva トピック。
-ms.openlocfilehash: 61729eeaa4a30a3f7e0faf50ab40320d88f3d78a
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: b6dd9373a8bca8b5e3ff310abfe308f7599a4dd4
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364581"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754341"
 ---
 # <a name="plan-for-microsoft-viva-topics"></a>計画を立Microsoft Viva トピック
 
@@ -41,6 +41,9 @@ ms.locfileid: "60364581"
 ビバ トピックに[アクセスして](https://www.microsoft.com/microsoft-viva/topics)トピックを設定するには、ビバ トピックにサブスクライブし、グローバル管理者または管理者SharePoint Microsoft 365 管理センター管理者である必要があります。
 
 Topics を使用するユーザーには、トピック エクスペリエンス ライセンス **が必要** です。 ライセンスの割り当てについては、「[セットアップ」でMicrosoft Viva トピック。](set-up-topic-experiences.md)
+
+> [!Important] 
+> トピックは英語のコンテンツのみをクロールします。
 
 ## <a name="topic-discovery"></a>トピックの検出
 

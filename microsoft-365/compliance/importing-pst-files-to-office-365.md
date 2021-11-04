@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Microsoft 365 コンプライアンス センターのインポート サービスを使用して、メール データ (PSTファイル) をユーザーのメールボックスに一括でインポートする方法について説明します。
-ms.openlocfilehash: ba757f55e226d436250efa4da3340253dc017be6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7f632288b339cbccb99bd07330ebe705471340aa
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190847"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60701951"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>組織の PST ファイルのインポートの概要
 
@@ -147,7 +147,7 @@ PST ファイルを Microsoft 365 メールボックスにインポートする�
 
 #### <a name="where-is-network-upload-available"></a>ネットワーク アップロードはどこで利用できますか? 
 
-現在のところ、ネットワーク アップロードは米国、カナダ、ブラジル、英国、フランス、ドイツ、スイス、ノルウェー、欧州、インド、東アジア、東南アジア、日本、韓国、オーストラリア、アラブ首長国連邦 (UAE) でご利用いただけます。ネットワーク アップロードはその他の地域でも間もなく利用可能になります。
+ネットワーク アップロードは現在、米国、カナダ、ブラジル、英国、フランス、ドイツ、スイス、ノルウェー、ヨーロッパ、インド、東アジア、東南アジア、日本、韓国、オーストラリア、アラブ首長国連邦 (UAE) で利用できます。 今後、ネットワーク アップロードはその他の地域でもご利用いただけるようになります。
 
 #### <a name="what-is-the-pricing-for-importing-pst-files-by-using-network-upload"></a>What is the pricing for importing PST files by using network upload?
 
@@ -222,7 +222,7 @@ PST ファイルを Microsoft 365 メールボックスにインポートする�
 
 #### <a name="where-is-drive-shipping-available"></a>ドライブ発送はどこで利用できますか? 
 
-現在のところ、ドライブ発送は米国、カナダ、ブラジル、英国、欧州、インド、東アジア、東南アジア、日本、韓国、オーストラリア、南アフリカでご利用いただけます。ドライブ発送はその他の地域でも間もなく利用可能になります。
+現在のところ、ドライブ送付は米国、カナダ、ブラジル、イギリス、欧州、インド、東アジア、東南アジア、日本、韓国、オーストラリアでご利用いただけます。 今後、ドライブ送付はその他の地域でもご利用いただけるようになります。
 
 > [!NOTE]
 > 現時点では、PST ファイルをインポートするためのドライブ送付は、ドイツとスイスでは利用できません。 この FAQ は、これらの国でドライブ送付が利用可能になると更新されます。

@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 498cd0c629d294a9b5c4e1501b60641a0deb484c
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 47b53814ce3df8c2a8215705521169f27065b5a3
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335528"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753899"
 ---
 # <a name="insider-risk-management-notice-templates"></a>インサイダー リスク管理通知のテンプレート
 
@@ -57,7 +57,7 @@ Insider リスク管理通知テンプレートを使用すると、ポリシー
 
 新しいインサイダー リスク管理通知テンプレートを作成するには、次の手順を実行します。
 
-1. [通知] [Microsoft 365 コンプライアンス センター[Insider](https://compliance.microsoft.com)リスク管理]**に移動し**、[通知テンプレート **] タブを選択** します。
+1. [通知] <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター[Insider</a>リスク管理]**に移動し**、[通知テンプレート **] タブを選択** します。
 2. [通知 **テンプレートの作成] を** 選択して通知作成ツールを開きます。
 3. [新しい **通知テンプレートの作成] ページで** 、次のフィールドに入力します。
     - **テンプレート名**: 通知の表示名を入力します。 この名前は、ケースから通知を送信するときに、通知ダッシュボードの通知の一覧と通知の選択リストに表示されます。
@@ -71,7 +71,7 @@ Insider リスク管理通知テンプレートを使用すると、ポリシー
 
 既存のインサイダー リスク管理通知テンプレートを更新するには、次の手順を実行します。
 
-1. [通知] [Microsoft 365 コンプライアンス センター[Insider](https://compliance.microsoft.com)リスク管理]**に移動し**、[通知テンプレート **] タブを選択** します。
+1. [通知] <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター[Insider</a>リスク管理]**に移動し**、[通知テンプレート **] タブを選択** します。
 2. 通知ダッシュボードで、管理する通知テンプレートを選択します。
 3. 通知の詳細ページで、[編集] を **選択します。**
 4. [編集 **] ページ** で、次のフィールドを編集できます。
@@ -86,7 +86,7 @@ Insider リスク管理通知テンプレートを使用すると、ポリシー
 
 既存のインサイダー リスク管理通知テンプレートを削除するには、次の手順を実行します。
 
-1. [通知] [Microsoft 365 コンプライアンス センター[Insider](https://compliance.microsoft.com)リスク管理]**に移動し**、[通知テンプレート **] タブを選択** します。
+1. [通知] <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター[Insider</a>リスク管理]**に移動し**、[通知テンプレート **] タブを選択** します。
 2. 通知ダッシュボードで、削除する通知テンプレートを選択します。
 3. ツールバーの **[削除** ] アイコンを選択します。
 4. 通知テンプレートを削除するには、削除ダイアログ **で [は** い] を選択します。 削除を取り消す場合は、[キャンセル] を **選択します**。

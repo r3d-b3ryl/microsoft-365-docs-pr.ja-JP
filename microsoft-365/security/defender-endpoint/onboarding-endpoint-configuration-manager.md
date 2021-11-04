@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9b33db7e4fa0b3cc2fa61c0c7a45d1a9d2f9d3b7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b60aca935af326680165a0ccc8669082b14f299d
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60156332"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753787"
 ---
 # <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager を使用したオンボーディング
 
@@ -120,7 +120,7 @@ Defender for Endpoint はさまざまなエンドポイントとツールのオ�
 
 #### <a name="windows-10-and-windows-11"></a>Windows 10とWindows 11
 
-Microsoft 365 Defender ポータル内から、System Center Configuration Manager でポリシーを作成し、そのポリシーを Windows 10 デバイスおよび Windows デバイスに展開するために使用できる '.onboarding' ポリシーをダウンロードできます。
+Microsoft 365 Defender ポータル内から、System Center Configuration Manager でポリシーを作成するために使用できるポリシーをダウンロードし、そのポリシーを Windows 10 および Windows デバイスに展開できます `.onboarding` 。
 
 1. 新しいポータルMicrosoft 365 Defender、[オンボーディング][設定を選択します](https://security.microsoft.com/preferences2/onboarding)。
 
@@ -147,7 +147,7 @@ Microsoft 365 Defender ポータル内から、System Center Configuration Manag
 
 9. 上記の手順 4 からダウンロードしたファイルの場所に移動します。
 
-10. [**次へ**] をクリックします。
+10. **[次へ]** をクリックします。
 11. 適切なサンプル (None または All ファイルの種類)**を使用****してエージェントを構成します**。
 
     ![構成設定のイメージ 1。](images/configmgr-config-settings.png)
@@ -252,7 +252,7 @@ Windows Defender ウイルス対策は、デスクトップ、ポータブル �
 
 ### <a name="attack-surface-reduction"></a>攻撃面の縮小
 
-Defender for Endpoint の攻撃表面の縮小の柱には、Exploit Guard で使用できる機能セットが含まれています。 攻撃表面の縮小 (ASR) ルール、フォルダー アクセスの制御、ネットワーク保護、エクスプロイト保護。
+Defender for Endpoint の攻撃表面の縮小の柱には、Exploit Guard で使用できる機能セットが含まれています。 攻撃表面の縮小 (ASR) ルール、フォルダー アクセスの制御、ネットワーク保護、およびエクスプロイト保護。
 
 これらの機能はすべて監査モードとブロック モードを提供します。 監査モードでは、エンド ユーザーに影響はありません。 追加のテレメトリを収集し、ポータルで利用Microsoft 365 Defenderです。 展開の目的は、セキュリティ コントロールをブロック モードにステップ バイ ステップで移動する方法です。
 
@@ -330,7 +330,6 @@ ASR ルールがエンドポイントに正しく適用されているかどう�
 
     ![スクリーンショット Microsoft Endpoint Configuration Manager1。](images/8999dd697e3b495c04eb911f8b68a1ef.png)
 
-
 7. 新しく作成したコレクションのポリシーを選択しWindows OK を選択 **します**。
 
     ![スクリーンショット Microsoft Endpoint Configuration Manager2。](images/0ccfe3e803be4b56c668b220b51da7f7.png)
@@ -339,7 +338,7 @@ ASR ルールがエンドポイントに正しく適用されているかどう�
 
 #### <a name="to-set-controlled-folder-access-rules-in-audit-mode"></a>監査モードでフォルダー アクセスの制御ルールを設定するには
 
-1. [セキュリティ コンソールMicrosoft Endpoint Configuration Manager、Exploit Guard の [アセットとコンプライアンスの概要] Endpoint Protection Windows Defender **\> \> \> し、[Exploit Guard** ポリシーの作成]**を選択します**。
+1. このコンソールMicrosoft Endpoint Configuration Manager、Exploit Guard の[アセットとコンプライアンスの概要] Endpoint Protection Windows Defender  >    >    >  **し、[Exploit Guard** ポリシーの作成] を選択します。
 
     ![Microsoft Endpoint Configuration Manager3 のスクリーンショット。](images/728c10ef26042bbdbcd270b6343f1a8a.png)
 

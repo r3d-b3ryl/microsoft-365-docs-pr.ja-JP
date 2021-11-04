@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: dcddcebcdf70f02f84c2dbbceb61ef97488369aa
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: b7dd1df95c3cedc9a2f187f1599003e179024927
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335288"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60747670"
 ---
 # <a name="insider-risk-management-users-dashboard"></a>Insider リスク管理 ユーザー ダッシュボード
 
@@ -98,7 +98,7 @@ Users **ダッシュボードには、** インサイダー リスク管理ワ�
 
 すべてのインサイダー リスク管理ポリシーでスコープ内の状態からユーザーを手動で削除するには、次の手順を実行します。
 
-1. [ユーザー] [Microsoft 365 コンプライアンス センター[Insider](https://compliance.microsoft.com)リスク管理]**に移動し、[** ユーザー] タブ **を選択** します。
+1. [ユーザー] <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター[Insider</a>リスク管理]**に移動し、[** ユーザー] タブ **を選択** します。
 2. [ユーザー **] ダッシュボードで**、インサイダー リスク管理ポリシーでスコープ内から削除するユーザーまたはユーザーを選択します。
 3. [ユーザー **の削除] を選択します**。
 4. [ユーザーの **削除] ウィンドウで****、[削除]** または [キャンセル]**を選択して** 変更を破棄し、ダイアログを閉じます。

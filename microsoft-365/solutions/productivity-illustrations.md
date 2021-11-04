@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 33c4ece2868a893b81db51f809a6e80126e8982e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f5f5a506cb2c9a2cfd3d81fb0f3fca6bcf3710de
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60149648"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60756633"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Microsoft 365 の生産性図
 
@@ -79,7 +79,7 @@ Microsoft 365情報保護とコンプライアンス機能の幅広いセット�
 <a name="BKMK_O365IDP"></a>
 ## <a name="identity-and-device-protection-for-microsoft-365"></a>ユーザーの ID とデバイス保護Microsoft 365
 
-Azure AD アプリケーション プロキシで公開された、Microsoft 365、その他の SaaS サービス、およびオンプレミス アプリケーションにアクセスする ID とデバイスを保護するための推奨機能。
+Microsoft 365 アプリケーション プロキシで公開されている、Microsoft 365、その他の SaaS サービス、およびオンプレミス アプリケーションにアクセスする ID とデバイスを保護するためのAzure AD機能。
 
 | アイテム | 説明 |
 |:-----|:-----|
@@ -110,7 +110,7 @@ Microsoft では、Microsoft クラウド内の Teams の使用を開始する�
 ユーザー Microsoft 365その他の Microsoft クラウド テクノロジを使用すると、従業員に、組織のオンプレミスおよびクラウドベースの情報、ツール、およびリソースへの安全なアクセスを提供できます。
 
 [![ハイブリッド作業ポスターのインフラストラクチャを設定します。](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf) <br/>
-[PDF](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf)  | [PowerPoint](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pptx) <br>
+[PDF](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf) | [PowerPoint](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pptx) <br>
 2021 年 6 月更新
 
 詳細については、このポスターの記事「ハイブリッド作業のためのインフラストラクチャのセットアップ」を参照[Microsoft 365。](empower-people-to-work-remotely.md)
@@ -120,7 +120,7 @@ Microsoft では、Microsoft クラウド内の Teams の使用を開始する�
 Microsoft 365を使用すると、Microsoft Teams でプライベート チームを構成し、SharePoint サイトのセキュリティ設定と一意の秘密度ラベルを使用してファイルを暗号化し、チーム メンバーだけが暗号化を解除できます。
 
 [![セキュリティの分離ポスター を使用した Microsoft Teams。](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf) <br/>
-[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf)  | [PowerPoint](https://download.microsoft.com/download/8/0/5/8057fc16-c044-40b6-a652-7ed555ba2895/team-security-isolation-poster.pptx) <br>
+[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) | [PowerPoint](https://download.microsoft.com/download/8/0/5/8057fc16-c044-40b6-a652-7ed555ba2895/team-security-isolation-poster.pptx) <br>
 2020 年 8 月更新
 
 詳細については、このポスターの記事「セキュリティ分離を使用して [チームを構成する」を参照してください](secure-teams-security-isolation.md)。

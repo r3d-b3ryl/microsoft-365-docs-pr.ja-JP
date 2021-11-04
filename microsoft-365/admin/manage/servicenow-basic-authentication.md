@@ -1,5 +1,5 @@
 ---
-title: ServiceNow 基本認証とのサポート統合を構成する
+title: ServiceNow とのサポート統合を構成する - 基本認証
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -17,14 +17,14 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: ServiceNow のスコープ認定アプリケーションのインストールと構成ガイド。
-ms.openlocfilehash: 4aefd0afa21b3fbb80aa318fbac7b30cf374d924
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: bd19e5fd72e2b21c7ec08e00497444475701817c
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60701275"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754255"
 ---
-# <a name="configure-support-integration-with-servicenow-basic-authentication"></a>ServiceNow 基本認証とのサポート統合を構成する
+# <a name="configure-support-integration-with-servicenow---basic-authentication"></a>ServiceNow とのサポート統合を構成する - 基本認証
 
 ## <a name="prerequisites-basic-authentication"></a>前提条件 (基本認証)
 

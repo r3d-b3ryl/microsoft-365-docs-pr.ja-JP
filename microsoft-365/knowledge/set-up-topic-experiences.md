@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 ms.localizationpriority: medium
 description: 詳しくは、アプリをセットアップするMicrosoft Viva トピック。
-ms.openlocfilehash: 2a662640c765cc970483e73ed42971e73067e614
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7b5411ceea134be56a7d878510729f2d7150dd7d
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197259"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60755667"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>設定Microsoft Viva トピック
 
@@ -23,7 +23,7 @@ ms.locfileid: "60197259"
 
 環境内でトピックをセットアップおよび構成する最善の方法を計画することが重要です。 この記事の手順[を開始する前Microsoft Viva トピック](plan-topic-experiences.md)を必ずお読みください。
 
-ビバ トピックに[アクセスして](https://www.microsoft.com/microsoft-viva/topics)トピックを設定するには、ビバ トピックにサブスクライブし、グローバル管理者または管理者SharePoint Microsoft 365 管理センター管理者である必要があります。
+ビバ トピックにアクセスしてトピックを設定するには、[ビ](https://www.microsoft.com/microsoft-viva/topics)バ トピックをサブスクライブし、グローバル管理者か、SharePoint Microsoft 365 管理センター とグループの両方の管理者である必要があります。
 
 > [!IMPORTANT]
 > 管理対象デバイスを要求SharePoint構成[している](/sharepoint/control-access-from-unmanaged-devices)場合は、管理対象デバイスから Topics を設定する必要があります。

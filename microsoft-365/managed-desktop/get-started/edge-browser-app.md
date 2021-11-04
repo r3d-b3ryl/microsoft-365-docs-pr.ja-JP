@@ -1,7 +1,7 @@
 ---
 title: 新しい Microsoft Edge
 description: 新しいエッジ ブラウザーの展開および更新方法について説明します。
-keywords: ブラウザー、Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
+keywords: ブラウザー, Microsoft Managed Desktop, Microsoft 365, サービス, ドキュメント
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
@@ -10,26 +10,26 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 40ee9f21f94d480ec0cd76a6d145b6d242921614
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2534319ad890fbac20fa106216740f49eb5a3572
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60170045"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60756677"
 ---
 # <a name="new-microsoft-edge-app"></a>新Microsoft Edgeアプリ
 
-新しい[Microsoft Edgeブラウザーは](https://www.microsoft.com/edge)、閲覧中にプライバシーの向上、生産性の向上、価値の向上を実現する、世界クラスのパフォーマンスを提供します。 Microsoft マネージド デスクトップ環境での新しいエッジ ブラウザーの展開のパブリック プレビューを提供しています。
+新しい[Microsoft Edgeブラウザーは](https://www.microsoft.com/edge)、閲覧中にプライバシーの向上、生産性の向上、価値の向上を実現する、世界クラスのパフォーマンスを提供します。 Microsoft Managed Desktop は、環境内の新しいエッジ ブラウザーの展開のパブリック プレビューを提供しています。
 
 ## <a name="initial-deployment"></a>初期展開
 
-デバイスを新Microsoft マネージド デスクトップブラウザーに移行するにはMicrosoft Edgeポータルから IT サポート チケットをMicrosoft マネージド デスクトップします。 チケットをファイルするときにエッジ安定チャネルをテスト グループに展開し、24 時間ごとに後続の各展開グループに展開します。 展開を一時停止するには、Operations に保留を求める別のチケットをファイルします。
+Microsoft Managed Desktop デバイスを新しい Microsoft Edge ブラウザーに移行するには、Microsoft 管理デスクトップ ポータルから IT サポート チケットをファイルします。 チケットをファイルするときにエッジ安定チャネルをテスト グループに展開し、24 時間ごとに後続の各展開グループに展開します。 展開を一時停止するには、Operations に保留を求める別のチケットをファイルします。
 
-ベータ [チャネルは、](/deployedge/microsoft-edge-channels#beta-channel) 組織内の代表的な検証のために要求に応じて利用することもできます。 Microsoft マネージド デスクトップ必要に応じてアプリケーションをテスト グループとファースト グループに展開し、それらのユーザー全員が安定チャネルに加えてベータ チャネルを持つ状態になります。 ベータ チャネルへのアクセスが必要な他のユーザーについては、そのユーザーをモダン ワークプレース **-** エッジ ベータ ユーザー グループに追加し、そのユーザーにベータ 版のページからインストールポータル サイト
+ベータ [チャネルは、](/deployedge/microsoft-edge-channels#beta-channel) 組織内の代表的な検証のために要求に応じて利用することもできます。 Microsoft Managed Desktop は、必要に応じてアプリケーションをテスト グループとファースト グループに展開し、それらのユーザー全員が安定チャネルに加えてベータ チャネルを持つ状態になります。 ベータ チャネルへのアクセスが必要な他のユーザーについては、そのユーザーをモダン ワークプレース **-** エッジ ベータ ユーザー グループに追加し、そのユーザーにベータ 版のページからインストールポータル サイト
 
 ## <a name="updates-to-microsoft-edge"></a>ユーザーの更新Microsoft Edge
 
-Microsoft マネージド デスクトップ、6 週間[](/deployedge/microsoft-edge-channels#stable-channel)ごとに自動更新Microsoft Edgeの Stable チャネルを展開します。 Stable チャネルの更新プログラムは、[](/deployedge/microsoft-edge-update-progressive-rollout)お客様に最適なエクスペリエンスを確実に提供するために、Microsoft Edgeグループによって段階的に展開されます。 
+Microsoft Managed Desktop[](/deployedge/microsoft-edge-channels#stable-channel)は、Microsoft Edgeの Stable チャネルを展開します。これは約 6 週間ごとに自動更新されます。 Stable チャネルの更新プログラムは、[](/deployedge/microsoft-edge-update-progressive-rollout)お客様に最適なエクスペリエンスを確実に提供するために、Microsoft Edgeグループによって段階的に展開されます。 
 
 ベータ [チャネルは、](/deployedge/microsoft-edge-channels#beta-channel) 組織内の代表的な検証のために Test グループと First グループの両方のデバイスに展開されます。 このチャネルは完全にサポートされ、約 6 週間ごとに新機能が自動更新されます。
 
@@ -37,18 +37,18 @@ Microsoft マネージド デスクトップ、6 週間[](/deployedge/microsoft-
 
 
 
-## <a name="settings-managed-by-microsoft-managed-desktop"></a>設定によって管理Microsoft マネージド デスクトップ
+## <a name="settings-managed-by-microsoft-managed-desktop"></a>設定によって管理される Microsoft Managed Desktop
 
-Microsoft マネージド デスクトップをセキュリティで保護するための既定のポリシー セットMicrosoft Edge作成しました。 既定のブラウザー設定は次のとおりです。
+Microsoft Managed Desktop では、ブラウザーをセキュリティで保護するために、Microsoft Edgeポリシーのセットを作成しました。 既定のブラウザー設定は次のとおりです。
 
 ### <a name="microsoft-edge-extensions"></a>Microsoft Edge拡張機能
 
-すべての Chrome 拡張機能を無効Microsoft EdgeセキュリティMicrosoft マネージド デスクトップユーザーを保護するための 2 つのポリシーを設定します。 環境で拡張機能を有効にして展開するには、「管理する設定」を参照してください。 
+Microsoft Managed Desktop デバイスMicrosoft Edgeセキュリティベースラインは、すべての Chrome 拡張機能を無効にし、ユーザーをセキュリティで保護するための 2 つのポリシーを設定します。 環境で拡張機能を有効にして展開するには、「管理する設定」を参照してください。 
 
 #### <a name="extension-installation-blocklist"></a>拡張機能のインストール ブロックリスト
 **既定値:** すべての
 
-Microsoft マネージド デスクトップ、Chrome 拡張機能が管理エンドポイントにインストールされるのを防ぐために、このポリシーを設定します。 データ損失の保護、プライバシー、およびデバイスを侵害する可能性のあるその他のリスクなど、Chromium拡張機能モデルに関連する既知のリスクがあります。 
+Microsoft Managed Desktop は、Chrome 拡張機能が管理エンドポイントにインストールされるのを防ぐために、このポリシーを設定します。 データ損失の保護、プライバシー、およびデバイスを侵害する可能性のあるその他のリスクなど、Chromium拡張機能モデルに関連する既知のリスクがあります。 
 
 #### <a name="allow-user-level-native-messaging-hosts-installed-without-admin-permissions"></a>ユーザー レベルのネイティブ メッセージング ホストを許可する (管理者のアクセス許可なしでインストール)
 
@@ -104,19 +104,22 @@ Microsoft マネージド デスクトップ、Chrome 拡張機能が管理エ�
 
 **既定値:** 無効
 
-パスワード マネージャーは既定で無効になっています。 この機能が有効になっている場合は、サポート要求を送信し、サービス エンジニアが環境で設定を有効にできます。 
+パスワード マネージャーは既定で無効になっています。 この機能を有効にする場合は、サポート要求を送信し、サービス エンジニアが環境内で設定を有効にできます。
 
 ### <a name="internet-explorer-mode-in-microsoft-edge"></a>Internet Explorer モード (Microsoft Edge
-Microsoft Edge で IE モードを利用すると、組織が必要とするすべてのサイトを 1 つのブラウザーで簡単に使用できます。 これは、Chromium レンダリング エンジンと互換性のあるサイトに統合 Chromium エンジンを使用し、IE 機能に依存していないサイトや依存関係を持つサイトに対して、Internet Explorer 11 (IE11) の Trident MSHTML エンジンを使用します。 [詳細情報](/DeployEdge/edge-ie-mode) 
 
-Microsoft マネージド デスクトップデバイスInternet Explorerモードを既定で有効にする 
+Microsoft Edge で IE モードを利用すると、組織が必要とするすべてのサイトを 1 つのブラウザーで簡単に使用できます。 これは、Chromium レンダリング エンジンと互換性のあるサイトに統合 Chromium エンジンを使用し、IE 機能に依存していないサイトや依存関係を持つサイトに対して、Internet Explorer 11 (IE11) の Trident MSHTML エンジンを使用します。 [詳細情報](/DeployEdge/edge-ie-mode)
+
+Microsoft Managed Desktop では、既定Internet Explorerデバイスの管理モードが有効になります。
 
 #### <a name="internet-explorer-mode-integration"></a>Internet Explorerモードの統合
+
 **既定値:** Internet Explorerモード
 
 既定では、デバイスは Internet Explorer モードを使用Internet Explorer設定できます。 この動作を変更するには、サポート要求を送信します。
 
 #### <a name="add-sites-to-the-enterprise-mode-site-list"></a>[モード サイト] リストEnterpriseサイトを追加する
+
 サイトをサイト モードでInternet Explorerするには、[サイト] リストにサイトをEnterprise[する必要があります](/DeployEdge/edge-ie-mode-sitelist)。 サイト一覧のEnterprise展開は、お客様の責任です。 詳細については、「Configure using the Configure using the [Configure using the Configure Enterprise モード サイト リスト ポリシー」を参照してください。](/DeployEdge/edge-ie-mode-policies#configure-using-the-configure-the-enterprise-mode-site-list-policy)
 
 ### <a name="other-settings"></a>その他の設定
@@ -131,7 +134,7 @@ Microsoft マネージド デスクトップデバイスInternet Explorerモー�
 
 **既定値:** NTLM、ネゴシエート
 
-Microsoft マネージド デスクトップ基本認証スキームまたはダイジェスト認証スキームはサポートされていません。
+Microsoft Managed Desktop では、基本認証またはダイジェスト認証スキームはサポートされていません。
 
 #### <a name="automatically-import-another-browsers-data-and-settings-at-first-run"></a>最初の実行時に別のブラウザーのデータと設定を自動的にインポートする
 

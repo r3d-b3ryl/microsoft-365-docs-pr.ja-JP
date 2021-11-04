@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft サポート ケースの電子情報開示診断情報を収集する方法について説明します。
-ms.openlocfilehash: 12ae6b16abe255dce60b9322de875f87420acbe6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 65a54a1d4567d536c19363ad0834e2cdd74078ab
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159874"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754825"
 ---
 # <a name="collect-ediscovery-diagnostic-information"></a>電子情報開示の診断情報を収集する
 
@@ -77,7 +77,7 @@ Get-ComplianceCase "<Core eDiscovery case name>"| %{$_|fl;"`t==Searches==";Get-C
 
 ケース **設定** の [Advanced eDiscovery] タブを使用すると、ケースの診断情報をすばやくコピーできます。 診断情報はクリップボードに保存され、テキスト ファイルに貼り付け、Microsoft サポートに送信できます。
 
-1. [電子情報開示 [https://compliance.microsoft.com](https://compliance.microsoft.com/) ] に移動し、[詳細] > **クリックします**。
+1. [電子情報開示] Microsoft 365 コンプライアンス センターし、[電子情報開示の詳細設定]**を**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2174006" target="_blank">**選択します**</a>。
 
 2. ケースを選択し、[追加] タブ **設定** します。
 

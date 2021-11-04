@@ -11,15 +11,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: グループ ポリシーを使用して、サービスにオンボードWindows 10デバイスに構成パッケージを展開します。
-ms.openlocfilehash: 00befc6d33de8c93b2412d8a9f31a8aabe45f09c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3329d21b4e0ba55c4b91a56a26af890b1199fb56
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60155036"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60755736"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>グループ ポリシー Windows 10デバイスのオンボード 
 
@@ -59,8 +60,8 @@ ms.locfileid: "60155036"
 
 12. **[OK] を** クリックし、開いている GPMC ウィンドウを閉じます。
 
-
 ## <a name="offboard-devices-using-group-policy"></a>グループ ポリシーを使用してデバイスをオフボードする
+
 セキュリティ上の理由から、Offboard デバイスに使用されるパッケージは、ダウンロード日から 30 日後に期限切れになります。 デバイスに送信された期限切れのオフボード パッケージは拒否されます。 オフボード パッケージをダウンロードすると、パッケージの有効期限が通知され、パッケージ名にも含まれます。
 
 > [!NOTE]
@@ -98,7 +99,7 @@ ms.locfileid: "60155036"
 グループ ポリシーでは、デバイス上のポリシーの展開を監視するオプションはありません。 監視は、ポータルまたはさまざまな展開ツールを使用して直接実行できます。
 
 ## <a name="monitor-devices-using-the-portal"></a>ポータルを使用してデバイスを監視する
-1. [Microsoft コンプライアンス [センター] に移動します](https://compliance.microsoft.com/)。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a> にアクセスします。
 2. [デバイス **一覧] を** クリックします。
 3. デバイスが表示されているのを確認します。
 

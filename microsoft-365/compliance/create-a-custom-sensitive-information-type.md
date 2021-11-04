@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: セキュリティ コンプライアンス センターで DLP のカスタム機密情報の種類を作成、変更、削除、およびテストする&説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9d1856d0019a95f200b6be33f3f29ae3e471685e
-ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
+ms.openlocfilehash: e9b080d2837fc14c15987c774770b8bc5e9777eb
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60264926"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754803"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>カスタムの機密情報の種類を使用する前に
 
@@ -118,6 +118,18 @@ ms.locfileid: "60264926"
 12. **[次へ]** を選択します。
 13. この機密情報の種類に対して、**推奨される信頼度レベル** を選択します。
 14. 設定を確認し、**[送信]** を選択します。
+
+> [!NOTE]
+> これらの SIT はコピーされません。
+> - カナダの運転免許証番号
+> - EU の運転免許証番号
+> - EU の国民識別番号
+> - EU パスポート番号
+> - EU 社会保障番号または同等の ID
+> - EU 税の識別番号
+> - 病気の国際分類 (ICD-10-CM)
+> - 病気の国際分類 (ICD-9-CM)
+> - 米国の運転免許証番号
 
 PowerShell および Exact Data Match の機能を使用して、カスタムの機密情報の種類を作成することもできます。 これらの方法の詳細については、次を参照してください。
 - [セキュリティ/コンプライアンス センター PowerShell でカスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type-in-scc-powershell.md)

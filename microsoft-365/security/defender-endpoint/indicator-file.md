@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e6e8d03002675ce3c4b9c1e79f0a340f64633036
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: 5136da918480d2ae9b9543b410e8ae45ade9dc7d
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60239650"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60755595"
 ---
 # <a name="create-indicators-for-files"></a>ファイルのインジケーターを作成 
 
@@ -42,7 +42,7 @@ ms.locfileid: "60239650"
 - ファイルの詳細ページからインジケーターの追加ボタンを使用してコンテキスト インジケーターを作成する
 - インジケーター API を使用してインジケーター [を作成する](ti-indicator.md)
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 ファイルのインジケーターを作成する前に、次の前提条件を理解することが重要です。
 
@@ -85,9 +85,13 @@ ms.locfileid: "60239650"
 > [!IMPORTANT]
 > このセクションの情報 (**自動** 調査および修復エンジンのパブリック プレビュー) は、製品の商用リリース前に大幅に変更される可能性があるプレリリース製品に関連します。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
 
-ファイル IOC でサポートされている現在のアクションは、許可、監査、ブロック、修復です。
-ファイルをブロックする選択をした後、アラートのトリガーが必要かどうかを選択できます。 この方法で、セキュリティ運用チームに通知を受け取るアラートの数を制御し、必要なアラートのみを発生させる必要があります。
-[Microsoft 365 Defender で、[設定 > Endpoints > Indicators > add new File hash Choose to Block and remediate the file Choose if generate on the file block event and define the alerts settings:
+ファイル IOC でサポートされている現在のアクションは、許可、監査、ブロック、修復です。 ファイルをブロックする選択をした後、アラートのトリガーが必要かどうかを選択できます。 この方法で、セキュリティ運用チームに通知を受け取るアラートの数を制御し、必要なアラートのみを発生させる必要があります。
+
+[Microsoft 365 Defenderに移動し、[エンドポイント **インジケーター設定**  >    >  **新しい**  >  **ファイル ハッシュを追加する] に移動します**。
+
+[ファイルをブロックして修復する] を選択します。
+
+[ファイル ブロック イベントでアラートを生成する] を選択し、アラート設定を定義します。
 
 - アラート のタイトル
 - アラートの重大度

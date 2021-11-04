@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: プランをアップグレードする最も簡単な方法は、管理センターの [アップグレード] タブを使用する方法です。 ただし、[アップグレード] タブが常にサポートされているわけではありません。
 ms.date: 04/21/2021
-ms.openlocfilehash: 8d481ec0b5eb64fcc86ca331d9bde3cac746f177
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7e4190fed287033f723be2cd89e800cb2e31e11a
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60167548"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60747322"
 ---
 # <a name="upgrade-to-a-different-plan"></a>別のプランにアップグレードする
 
@@ -120,7 +120,7 @@ ms.locfileid: "60167548"
 
 プランをアップグレードすると、アップグレードできるプランが、現在のプランのサービスに基づいて表示されます。 同じデータ関連サービス (Exchange Online や SharePoint Online など) を持つプラン、または上位バージョンのプランにのみアップグレードできます。 これにより、アップグレード中にユーザー \' がそれらのサービスに関連するデータを失うのを確認できます。
 
-プランを自動的にアップグレードできない場合は、代わりに手動でプラン [を変更できる](change-plans-manually.md)場合があります。 サポートを呼 [び出してヘルプ](../../business-video/get-help-support.md) を呼び出す方法も可能です。
+プランを自動的にアップグレードできない場合は、代わりに手動でプラン [を変更できる](change-plans-manually.md) 場合があります。 サポートを呼 [び出してヘルプ](../../business-video/get-help-support.md) を呼び出す方法も可能です。
 
 #### <a name="your-subscription-has-an-add-on"></a>サブスクリプションにアドオンがある
 
@@ -143,11 +143,10 @@ ms.locfileid: "60167548"
 ### <a name="users-and-licenses"></a>ユーザーとライセンス
 
 古いサブスクリプションのユーザーは、自動的に新しいサブスクリプションに移ります。
-  
+
 古いサブスクリプションに複数のサービスが含まれる場合、ユーザーが割り当てられているサービスを変更した場合は、プランをアップグレードする前にこの点に注意して、後で変更を再作成することができます。 すべてのユーザーには、新しいサブスクリプションのすべてのサービスへのアクセス権が与えられます。 たとえば、以前に 100 人のユーザー全員に対して Microsoft 365 Business Premium を購入したが、SharePoint Online サービスを 50 人から割り当て解除した場合、プランをアップグレードした後も、この変更は保持されません。
-  
+
 プランをアップグレードする前に複数のサブスクリプションを持ち、ユーザーに複数のサブスクリプションにライセンスを割り当てる場合、この割り当てパターンは新しいサブスクリプションで可能な限り保持されます。
-  
 すべてのユーザー データは、アップグレード中に保持されます(メールボックス、Exchangeオンライン ドキュメントSharePoint、その他の情報を含む)。
   
 ### <a name="billing"></a>請求

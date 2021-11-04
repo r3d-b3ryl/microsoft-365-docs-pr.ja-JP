@@ -1,10 +1,16 @@
 - name: Scheduler for Microsoft 365
-  href: scheduler-overview.md
-- name: 信頼とプライバシー
-  href: scheduler-trust-privacy.md
-- name: Scheduler for Microsoft 365 を設定する
-  href: scheduler-setup.md
-- name: Scheduler for Microsoft 365 の利用方法
-  href: scheduler-using.md
-- name: 'Scheduler for Microsoft 365 のFAQ '
-  href: scheduler-faqs.md
+  href: index.yml
+  expanded: true
+  items:
+    - name: Scheduler for Microsoft 365 へようこそ
+      href: scheduler-overview.md
+    - name: 信頼とプライバシー
+      href: scheduler-trust-privacy.md
+    - name: Scheduler for Microsoft 365 を設定する
+      href: scheduler-setup.md
+    - name: Scheduler for Microsoft 365 の利用方法
+      href: scheduler-using.md
+    - name: 定期的な会議のスケジューリング
+      href: scheduler-recurring-meetings.md
+    - name: 'Scheduler for Microsoft 365 の FAQ '
+      href: scheduler-faqs.md

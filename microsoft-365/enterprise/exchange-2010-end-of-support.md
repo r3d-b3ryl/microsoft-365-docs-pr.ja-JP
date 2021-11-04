@@ -12,12 +12,12 @@ ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
 description: Exchange 2010 はサポートの終了に達しました。 この計画ロードマップを使用して、Exchange Onlineまたは新しいバージョンのExchange Server準備します。
-ms.openlocfilehash: b1b4c1244d195f62261f0abc9cfaa4093beeb22f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e49bf68ce2fb9b441ecd40ae4bb89ad88ea568c8
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150836"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60757404"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Exchange 2010 のサポート終了のロードマップ
 
@@ -40,7 +40,7 @@ Exchange Server 2010 年 10 月 **13** 日にサポートが終了しました�
 
 ## <a name="what-are-my-options"></a>使用できるオプション
 
-オプションを確認し、移行計画を準備する最適な時期です。 次の操作を実行できます。
+オプションを確認し、移行計画を準備する最適な時期です。 次の操作を行うことができます:
 
 - 完全に移行してMicrosoft 365。 カットオーバー、最小限のハイブリッド、または完全なハイブリッド移行を使用してメールボックスを移行します。 次に、オンプレミスのサーバー Exchange Active Directory を削除します。
 - オンプレミス サーバー Exchange 2010 Exchange 2016 に移行します。
@@ -156,7 +156,7 @@ Microsoft 365機能とエクスペリエンスを最初に取得し、組織が�
 
 - これらの機能は、すべての組織に適しているのではない。 完全なハイブリッド移行の複雑さから、数百未満のメールボックスを持つ組織では、通常、必要な労力とコストを正当化する利点は見当たらない。 このような場合は、代わりにカットオーバーまたは最小限のハイブリッド移行を検討することをお勧めします。
 - オンプレミスの Active Directory サーバーとサーバー間Azure Active Directory (Azure AD) Connectを使用してディレクトリ同期を設定するMicrosoft 365。
-- ユーザーは、ローカル ネットワークにサインインするときに使用Microsoft 365同じユーザー名とパスワードで自分のメールボックスにサインインできます。 (この機能では、パスワード同期AD Connect Active Directory フェデレーション サービスを使用して Azure サーバーを使用する必要があります)。
+- ユーザーは、ローカル ネットワークにサインインするときに使用Microsoft 365同じユーザー名とパスワードで自分のメールボックスにサインインできます。 (この機能では、パスワードAzure AD Connect Active Directory フェデレーション サービスを使用する必要があります)。
 - 移行する各ユーザー Microsoft 365のExchange Onlineを含むライセンスが必要です。
 - 一部の古い Android 携帯電話では新しいプロファイルが必要になる場合Outlook、ほとんどのデバイスで新しいプロファイルをセットアップする必要があります。 ユーザーは電子メールを再ダウンロードする必要はもう一度行う必要があります。
 

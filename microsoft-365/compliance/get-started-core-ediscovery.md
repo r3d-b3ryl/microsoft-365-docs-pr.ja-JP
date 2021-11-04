@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コア電子情報開示の使用を開始する方法についてMicrosoft 365。 電子情報開示のアクセス許可を割り当て、ケースを作成したら、メンバーの追加、電子情報開示ホールドの作成、調査に関連するコンテンツの検索とエクスポートを行います。
-ms.openlocfilehash: 4245cd391adbaca4284d7861a44f3c41ed3104e4
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: 80b59f1dc2115ebd6c49d7b3bc3ff53f800adfe5
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60363956"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60755689"
 ---
 # <a name="get-started-with-core-ediscovery-in-microsoft-365"></a>コア電子情報開示の使用をMicrosoft 365
 
@@ -56,7 +56,7 @@ ms.locfileid: "60363956"
 
 ライセンスの詳細については、次の情報を参照してください。
 
-- [比較] テーブルの [電子情報開示と監査] セクションをダウンロードMicrosoft 365[参照してください](https://go.microsoft.com/fwlink/?linkid=2139145)。
+- [比較] テーブルの [電子情報開示と監査] セクションをダウンロード[Microsoft 365参照してください](https://go.microsoft.com/fwlink/?linkid=2139145)。
 
 - 「セキュリティ [とコンプライアンス &サービスの説明」を参照してください](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)。
 
@@ -66,9 +66,9 @@ Core 電子情報開示にアクセスしたり、コア電子情報開示ケー
 
 電子情報開示マネージャーの役割グループにユーザーを追加するには、次の手順を実行します。
 
-1. 組織または組織の管理者アカウントの資格情報を使用して、Microsoft 365 <https://compliance.microsoft.com/permissions> サインインOffice 365します。
+1. [管理者] Microsoft 365 コンプライアンス センターに移動し、組織または組織の管理者アカウントの資格情報Microsoft 365サインインOffice 365します。
 
-2. [アクセス許可 **] ページで** 、電子情報開示マネージャー **の役割グループを** 選択します。
+2. [アクセス許可 <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**] ページで**</a> 、電子情報開示マネージャー **の役割グループを** 選択します。
 
 3. [電子情報開示マネージャー] フライアウト ページで、[電子情報開示マネージャー] セクション **の横** にある [ **編集] をクリック** します。
 
@@ -104,9 +104,9 @@ Core 電子情報開示にアクセスしたり、コア電子情報開示ケー
 
 次の手順では、ケースを作成し、コア電子情報開示の使用を開始します。 ケースを作成し、メンバーを追加するには、次の手順を実行します。 ケースを作成するユーザーは、メンバーとして自動的に追加されます。
 
-1. 適切な電子情報開示アクセス許可が割り当てられているユーザー アカウントの資格情報を使用して、アクセスして [https://compliance.microsoft.com](https://compliance.microsoft.com) サインインします。 組織の管理役割グループのメンバーは、コア電子情報開示ケースを作成することもできます。
+1. [電子情報開示<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>に移動し、適切な電子情報開示アクセス許可が割り当てられているユーザー アカウントの資格情報を使用してサインインします。 組織の管理役割グループのメンバーは、コア電子情報開示ケースを作成することもできます。
 
-2. ウィンドウの左側のナビゲーション ウィンドウMicrosoft 365 コンプライアンス センター [すべて表示] をクリックし、[電子情報開示] [コア] **>クリックします**。
+2. 左側のナビゲーション ウィンドウで、[すべて表示Microsoft 365 コンプライアンス センター **をクリックし**、[電子情報開示コア]**をクリック**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank">**します**</a>。
 
 3. [コア電子 **情報開示] ページで** 、[ケースの作成 **] をクリックします**。
 

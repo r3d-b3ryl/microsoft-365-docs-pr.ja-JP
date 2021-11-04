@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 MS.technology: mde
-ms.openlocfilehash: ce8f931f0d400c967b3312fe6cfafcadb3a715c7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bb45a15dd8931c5a7d9866b7b57ea84be0e0581a
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60181237"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60755375"
 ---
 # <a name="configure-your-event-hub"></a>イベント ハブを構成する
 
@@ -38,15 +38,15 @@ ms.locfileid: "60181237"
 
 ## <a name="set-up-the-required-resource-provider-in-the-event-hub-subscription"></a>Event Hub サブスクリプションで必要なリソース プロバイダーを設定する
 
-1. Azure portal
-1. [**サブスクリプション]** を選択します 。 イベント ハブが } リソース プロバイダーに展開されるサブスクリプション \>  \> **を選択します**。
+1. [Azure portal](https://portal.azure.com) にサインインします。
+1. [**サブスクリプション**  >  **] を選択します 。 イベント ハブ** が } リソース プロバイダーに展開されるサブスクリプション  >  **を選択します**。
 1. **Microsoft.インサイト プロバイダーが登録** されているを確認します。 それ以外の場合は、登録します。
 
 ![リソース プロバイダーのMicrosoft Azure。](../../media/f893db7a7b1f7aa520e8b9257cc72562.png)
 
 ## <a name="set-up-azure-active-directory-app-registration"></a>アプリ登録Azure Active Directory設定する
 
-> ![メモ]管理者以外のユーザーがアプリを登録Azure Active Directoryするには、管理者ロールまたは管理者以外のユーザー (AAD) を設定する必要があります。 サービス プリンシパルに役割を割り当てるには、所有者またはユーザー アクセス管理者の役割も必要です。 詳細については、「ポータルで Azure AD アプリ & サービス プリンシパルを作成する - Microsoft Docs Microsoft ID プラットフォーム[ \| を参照してください](/azure/active-directory/develop/howto-create-service-principal-portal)。
+> ![メモ]管理者以外のユーザーがアプリを登録Azure Active Directory許可AAD管理者の役割または管理者 (AAD) を設定する必要があります。 サービス プリンシパルに役割を割り当てるには、所有者またはユーザー アクセス管理者の役割も必要です。 詳細については、「ポータルでアプリ Azure AD サービス &を作成する[- Microsoft Docs Microsoft ID プラットフォーム \| を参照してください](/azure/active-directory/develop/howto-create-service-principal-portal)。
 
 1. [アプリの登録] [新しい登録] で新しい登録 (本質的 **にサービス プリンシパル** をAzure Active Directory \> **作成** \> **します。**
 
@@ -99,7 +99,7 @@ ms.locfileid: "60181237"
 > [!NOTE]
 > イベント ハブ クラスターの一部ではないイベントハブ名前空間を使用している場合は、Azure のイベント ハブ名前空間あたり 10 イベント ハブの制限により、定義した各エクスポート 設定 でエクスポートするイベント の種類 (テーブル) を最大 10 つまで選択できます。
 
-次に例を示します。
+例:
 
 ![イベント ハブの例のイメージ。](../../media/005c1f6c10c34420d387f594987f9ffe.png)
 

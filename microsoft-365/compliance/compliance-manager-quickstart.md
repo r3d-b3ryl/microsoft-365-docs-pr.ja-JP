@@ -13,16 +13,17 @@ ms.collection:
 - M365-security-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
 description: コンプライアンス マネージャーのクイック スタート ガイドを使用して、コンプライアンス マネージャーの理解、セットアップ、および使用に関するジャーニーを支援します。
-ms.openlocfilehash: 40453034c169c5969694425bea25f6f6b3ec4f84
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: e614c8abb46b9562db45afb0c3e67d990f627ce6
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335744"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60747216"
 ---
 # <a name="compliance-manager-quickstart"></a>コンプライアンスマネージャー用クイックスタート
 
@@ -34,7 +35,7 @@ ms.locfileid: "60335744"
 
 ## <a name="first-visit-get-to-know-compliance-manager"></a>最初の訪問: コンプライアンス マネージャーについて知る
 
-コンプライアンス マネージャーは、次のMicrosoft 365 コンプライアンス センターに表示されます https://compliance.microsoft.com 。 コンプライアンス マネージャーの使用を開始する前[](compliance-manager-setup.md#set-user-permissions-and-assign-roles)に、組織のグローバル管理者がユーザーのアクセス許可を設定し、役割を割り当てる必要があります。
+コンプライアンス マネージャーは、コンプライアンス<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">マネージャーの</a>Microsoft 365 コンプライアンス センター。 コンプライアンス マネージャーの使用を開始する前[](compliance-manager-setup.md#set-user-permissions-and-assign-roles)に、組織のグローバル管理者がユーザーのアクセス許可を設定し、役割を割り当てる必要があります。
 
 コンプライアンス マネージャーに初めてアクセスすると、組織のコンプライアンス スコアが表示されます。 コンプライアンス マネージャーは、データ保護基準に対してMicrosoft 365環境を既に評価しています。 コンプライアンス マネージャーを理解し始める最善の方法は、表示される機能、重要な要素、ダッシュボードのカスタマイズ方法を理解する方法です。
 

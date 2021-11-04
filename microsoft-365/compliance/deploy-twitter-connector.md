@@ -13,14 +13,15 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理者は、Twitter データをインポートおよびアーカイブするネイティブ コネクタをセットアップして、ユーザーにMicrosoft 365。 このデータを Microsoft 365 にインポートした後、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織の Twitter データのガバナンスを管理できます。
-ms.openlocfilehash: 478731bc2855b199888311377c21f09aac17fcf1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bd0885c0b9893b79d36981d52f596d1e5d6b8396
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60193449"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60757071"
 ---
 # <a name="deploy-a-connector-to-archive-twitter-data"></a>コネクタを展開して Twitter データをアーカイブする
 
@@ -56,7 +57,7 @@ ms.locfileid: "60193449"
 
    ![シークレットを入力し、[有効期限] を選択します。](../media/TCimage08.png)
 
-8. シークレットの値をコピーし、テキスト ファイルまたは他の保存場所に保存します。 これは、後の手順で使用する AAD アプリケーション シークレットです。
+8. シークレットの値をコピーし、テキスト ファイルまたは他の保存場所に保存します。 これは、後AADで使用するアプリケーション シークレットの一部です。
 
    ![シークレットをコピーして保存します。](../media/TCimage09.png)
 
@@ -152,7 +153,7 @@ ms.locfileid: "60193449"
 
    - **Twitter Access トークン シークレット:** 手順 3 で作成したアクセス トークン シークレット。
 
-   - **AAD アプリケーション ID:** 手順 1 で作成Azure Active Directoryアプリのアプリケーション ID
+   - **AADアプリケーション ID:** 手順 1 で作成Azure Active Directoryアプリのアプリケーション ID
 
    - **AAD アプリケーション シークレット:** 手順 1 で作成した APISecretKey シークレットの値。
 
@@ -160,7 +161,7 @@ ms.locfileid: "60193449"
 
 ## <a name="step-5-set-up-a-twitter-connector-in-the-microsoft-365-compliance-center"></a>手順 5: アプリケーションで Twitter コネクタをセットアップMicrosoft 365 コンプライアンス センター
 
-1. に移動 [https://compliance.microsoft.com](https://compliance.microsoft.com) し、左側の **ナビゲーションで [** データ コネクタ] をクリックします。
+1. [データ コネクタ] Microsoft 365 コンプライアンス センターに移動し、[データ コネクタ] ページの [<<a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">  /a] を選択します。
 
 2. [Twitter]**の [データ コネクタ] ページ****で、[表示**] を **クリックします**。
 

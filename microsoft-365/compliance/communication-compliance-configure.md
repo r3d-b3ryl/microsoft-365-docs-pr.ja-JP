@@ -17,15 +17,16 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: c58df514c136c6df2db5d1392a57db1ee6c34bb3
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 2a63f13885311ba4a794ca1c25c5e90d320472f5
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60647436"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753519"
 ---
 # <a name="get-started-with-communication-compliance"></a>コミュニケーション コンプライアンスの使用を開始する
 
@@ -104,9 +105,9 @@ ms.locfileid: "60647436"
 
 このオプションを使用して、ユーザーを特定のロール グループに割り当てて、組織内のさまざまなユーザー間のコミュニケーション コンプライアンス アクセスと責任をセグメント化します。
 
-1. Microsoft 365 組織の管理者アカウントの資格情報を使って、[https://compliance.microsoft.com/permissions](https://compliance.microsoft.com/permissions) にサインインします。
+1. 組織のMicrosoft 365 コンプライアンス センターアカウントの資格情報を使用して、Microsoft 365にサインインし、[アクセス許可]<a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**に移動します**</a>。
 
-2. セキュリティ &amp; コンプライアンス センターで、**[アクセス許可]** に移動します。 Office 365 でロールの表示と管理へのリンクを選択します。
+2. Office 365 でロールの表示と管理へのリンクを選択します。
 
 3. いずれかのコミュニケーション コンプライアンス ロール グループを選択し、**[ロール グループの編集]** を選択します。
 
@@ -198,7 +199,7 @@ Exchange オンプレミス展開または外部メール プロバイダーを�
 >[!TIP]  
 >新しい通信コンプライアンス ポリシーの設定とアラートの修復に関する詳細なチュートリアルを参照してください。 この [15](communication-compliance-plan.md#creating-a-communication-compliance-policy-walkthrough) 分間のビデオを参照して、不適切なメッセージの検出、潜在的な違反の調査、コンプライアンスの問題の修復に関するコミュニケーション コンプライアンス ポリシーがどのように役立つのかのデモンストレーションをご覧ください。
 
-1. Microsoft 365 組織の管理者アカウントの資格情報を使って <https://compliance.microsoft.com> にサインインします。
+1. 組織の管理者<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>資格情報を使用して、アカウントにサインインMicrosoft 365します。
 
 2. Microsoft 365 コンプライアンス センターで、**[コミュニケーション コンプライアンス]** を選択します。
 
@@ -253,7 +254,7 @@ Exchange オンプレミス展開または外部メール プロバイダーを�
 
 ポリシーの一致を調査し、メッセージに対してアクションを実行するときに、表示されるユーザー名の匿名化を有効にすることもできます。
 
-1. Microsoft 365 組織の管理者アカウントの資格情報を使って、[https://compliance.microsoft.com](https://compliance.microsoft.com) にサインインします。
+1. 組織の管理者<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>資格情報を使用して、アカウントにサインインMicrosoft 365します。
 
 2. Microsoft 365 コンプライアンス センターで、**[コミュニケーション コンプライアンス]** に移動します。
 

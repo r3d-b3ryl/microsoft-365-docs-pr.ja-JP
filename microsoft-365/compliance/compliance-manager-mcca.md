@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンス構成アナライザーを使用して、Microsoft コンプライアンス マネージャーを使用して迅速に立ち上げ、実行する方法について説明します。
-ms.openlocfilehash: 75fb613aa1e0256c6c819336f9bcdd340acdff7d
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 2e0327a11067a4e474831d95b2c74c4c289086ce
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335492"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60747228"
 ---
 # <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>コンプライアンス マネージャー用 Microsoft コンプライアンス構成アナライザー (プレビュー)
 
@@ -42,22 +42,23 @@ MCCA を理解するもう 1 つのリソースは、MCCA の README の手順[�
 
 MCCA ツールは、次のコマンドを使用Windows PowerShell。 ツールをダウンロードしてインストールしたら、レポートを実行するためにこれらの手順を繰り返す必要がなされません。 MCCA を開くごとに、ログイン資格情報を求め、新しい更新されたレポートが生成されます。
 
-#### <a name="step-1-install-windows-powershell"></a>手順 1: インストールWindows PowerShell
+### <a name="step-1-install-windows-powershell"></a>手順 1: インストールWindows PowerShell
+
 まず、PowerShell ギャラリーで使用できる Exchange Online PowerShell モジュール (v2.0.3 以上) が必要です。 [インストール手順を取得します](https://www.powershellgallery.com/packages/ExchangeOnlineManagement/2.0.3)。
 
-#### <a name="step-2-install-mcca"></a>手順 2: MCCA をインストールする
+### <a name="step-2-install-mcca"></a>手順 2: MCCA をインストールする
 
 MCCA をインストールするには、まず管理者モードで PowerShell を使用します。 以下の手順に従います。
 
 1. [スタート] ボタンWindows **選択** します。
-2. **「PowerShell」と** 入力し、[**管理者として実行** Windows PowerShellを選択します **。**
+1. **「PowerShell」と** 入力し、[**管理者として実行** Windows PowerShellを選択します **。**
 1. コマンド プロンプトに次のコマンドを入力します。
 
     ```powershell
     Install-Module -Name MCCAPreview
     ```
 
-#### <a name="step-3-run-a-report"></a>手順 3: レポートを実行する
+### <a name="step-3-run-a-report"></a>手順 3: レポートを実行する
 
 MCCA をインストールした後、MCCA を実行してレポートを生成できます。 レポートを実行するには、次のコマンドを実行します。
 
@@ -68,7 +69,7 @@ MCCA をインストールした後、MCCA を実行してレポートを生成�
     Get-MCCAReport
     ```
 
-   高い顧客の場合GCCレポートを実行するには、追加の入力パラメーターを指定する必要があります。
+    高い顧客の場合GCCレポートを実行するには、追加の入力パラメーターを指定する必要があります。
 
     ```powershell
     Get-MCCAReport -ExchangeEnvironmentName O365USGovGCCHigh
@@ -107,7 +108,7 @@ C:\Users \<username> \AppData\Local\Microsoft\MCCA。
   | 1 | アジア太平洋 |
   | 2 | オーストラリア |
   | 3 | カナダ |
-  | 4  | ヨーロッパ (フランスを除く) / 中東 / アフリカ |
+  | 4 | ヨーロッパ (フランスを除く) / 中東 / アフリカ |
   | 5 | フランス |
   | 6  | インド |
   | 7  | 日本 |

@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 8fa111b636026de49c854eb5ec8c17f1aad5c3eb
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 3c25132cc8743bf791123ae2cc4d29a195faa34a
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60673097"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60755351"
 ---
 # <a name="aadsignineventsbeta"></a>AADSignInEventsBeta
 
@@ -36,7 +36,7 @@ ms.locfileid: "60673097"
 
 高度 `AADSignInEventsBeta` な検索スキーマの表には、対話型および非対話型Azure Active Directoryに関する情報が含まれている。詳細については、「サインイン アクティビティ レポート - プレビュー Azure Active Directory[サインイン」を参照してください](/azure/active-directory/reports-monitoring/concept-all-sign-ins)。 
 
-このテーブルの情報を返すクエリを作成するには、このレファレンスを使用します。 高度な捜索スキーマのその他のテーブルの詳細については、「[高度な捜索のリファレンス](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-reference)」 を参照してください。
+このテーブルの情報を返すクエリを作成するには、このレファレンスを使用します。 高度な検索スキーマの他のテーブルの詳細については、高度な検索 [リファレンスを参照してください](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-reference)。
 
 <br>
 

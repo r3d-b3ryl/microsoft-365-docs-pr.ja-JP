@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7868b57b03a237a3cd65841040ee741b2cdd0c12
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3c769f0ddf3e986f96ff80c0dbf54b23f9b9eafc
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60194311"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753185"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>Android 上の Microsoft Defender for Endpoint の問題のトラブルシューティング
 
@@ -54,7 +54,7 @@ ms.locfileid: "60194311"
 
 **解決方法:**
 
-Google Play ストアから最新バージョン[とMicrosoft Authenticator](https://play.google.com/store/apps/details?androidid=com.azure.authenticator)をインストールし、もう一度やり直してください
+Google Play ストアから最新バージョン[とMicrosoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator)インストールして、もう一度やり直してください。
 
 ## <a name="sign-in-failed---invalid-license"></a>サインインに失敗しました - 無効なライセンス
 
