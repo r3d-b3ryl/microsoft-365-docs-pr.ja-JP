@@ -26,8 +26,10 @@
           href: ./office-365-security/secure-email-recommended-policies.md
         - name: 推奨される SharePoint Online のアクセス ポリシー
           href: ./office-365-security/sharepoint-file-access-policies.md
-        - name: 推奨される SaaS アプリの MCAS ポリシー
+        - name: SaaS アプリに対する推奨クラウド アプリ セキュリティ ポリシー
           href: ./office-365-security/mcas-saas-access-policies.md
+        - name: 継続的アクセス評価
+          href: ./office-365-security/microsoft-365-continuous-access-evaluation.md
     - name: Microsoft 365 Defender
       href: ./defender/index.yml
     - name: Microsoft Defender for Office 365

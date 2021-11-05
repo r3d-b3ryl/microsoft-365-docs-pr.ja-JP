@@ -158,6 +158,7 @@
 
 ##### [Android 用 Microsoft Defender for Endpoint]()
 ###### [Android 用 Microsoft Defender for Endpoint の概要](microsoft-defender-endpoint-android.md)
+###### [新機能](android-whatsnew.md)
 
 ###### [展開]()
 ####### [Microsoft Intune を使用した Android 用 Microsoft Defender for Endpoint の展開](android-intune.md)
@@ -188,10 +189,13 @@
 
 ##### [Microsoft Defender for Endpoint アプリケーション ライセンス条項](mde-terms-mobile.md) 
 
+### [Microsoft エンドポイント マネージャーを使用してデバイス上の Microsoft Defender for Endpoint の構成設定を管理する](security-config-management.md)
 
 ### [オンボーディングに関する問題のトラブルシューティング]()
 #### [オンボーディング中の問題のトラブルシューティング](troubleshoot-onboarding.md)
 #### [サブスクリプションとポータル アクセスの問題のトラブルシューティング](troubleshoot-onboarding-error-messages.md)
+#### [セキュリティ構成管理のオンボーディングに関する問題のトラブルシューティング](troubleshoot-security-config-mgt.md)
+
 
 
 

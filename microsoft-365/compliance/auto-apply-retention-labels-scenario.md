@@ -12,16 +12,17 @@ ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
 description: メタデータを使用してコンテンツを分類し、ラベルを自動的に適用し、イベントベースの保持を使用して保持期間を開始することにより、保持ラベルを使用して SharePoint のドキュメントのライフサイクルを管理する方法。
-ms.openlocfilehash: fe24f13609752dd5a5e73f4631644bd1cf4d4e6c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 586f9074628ed3c4c272715378b1ba413ebdd3ec
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60151352"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753669"
 ---
 # <a name="use-retention-labels-to-manage-the-lifecycle-of-documents-stored-in-sharepoint"></a>保持ラベルを使用して、SharePoint に保存されているドキュメントのライフサイクルを管理する
 
@@ -215,7 +216,7 @@ KQL クエリが機能し、正しい保持ラベルを製品ドキュメント 
 
 KQL クエリが機能していることを確認したので、KQL クエリを使用して適切なドキュメントに製品の仕様の保持ラベルを適切なドキュメントに自動的に適用する自動適用ラベル ポリシーを作成しましょう。
 
-1. [[コンプライアンス センター]](https://compliance.microsoft.com/homepage)で、[**レコード管理**] > [**ラベル ポリシー**] > [**ラベルの自動適用**] の順に移動します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>で、**レコード管理** > **ラベル ポリシー** > **ラベルの自動適用** の順に移動します。
 
    [![[ラベル] ページで [ラベルの自動適用] を選択する](../media/SPRetention16.png)](../media/SPRetention16.png#lightbox)
 
