@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを作成する場合、ファイルまたはメールにラベルを自動的に割り当てるか、あるいは推奨するラベルを選択するようにユーザーに求めることができます。
-ms.openlocfilehash: 1ad7ba8af90a099ccc7d1072397c77ed2de387c0
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: f04044d1c0b951dc62e3d515f951faf8625e1b44
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60647739"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60785644"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>秘密度ラベルをコンテンツに自動的に適用する
 
@@ -418,6 +418,8 @@ OneDrive と SharePoint の自動ラベル付けポリシーの最近の機能�
 ## <a name="tips-to-increase-labeling-reach"></a>ラベル付けの範囲を拡大するためのヒント
 
 自動ラベル付けは、組織が所有する Office ファイルを分類、ラベル付け、および保護するための最も効率的な方法の 1 つですが、ラベル付けの範囲を拡大するための追加の方法のいずれかで補足できるかどうかを確認してください。
+
+- SharePoint Syntex で、[ドキュメント理解モデルに感度ラベルを適用して](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model)、SharePoint ライブラリ内で識別されたドキュメントは自動的にラベル付けされます。
 
 - [Azure Information Protection 統合ラベル付けクライアント](/azure/information-protection/rms-client/aip-clientv2)を使用する場合:
 

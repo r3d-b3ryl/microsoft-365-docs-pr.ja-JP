@@ -13,22 +13,23 @@ ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
 description: 'すべての Microsoft Information Protection ソリューションの要件: 組織のデータを分類し、保護するための秘密度ラベルを作成、構成、発行します。'
-ms.openlocfilehash: 1dfcbc21b84e0d35504f513d6dc1a46b7581f0e2
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: efe24585981451ef91181ecc4caabb82d45d8ea4
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60700855"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753163"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>秘密度ラベルとそのポリシーを作成して構成する
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
-すべての Microsoft Information Protection ソリューション (MIP と略されることもあります) は、[秘密度ラベル](sensitivity-labels.md)を使用して実装されます。 それらのラベルを作成して発行するには、[Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)に移動します。 または以前のポータルである Office 365 セキュリティ/コンプライアンス センターを使用することもできます。
+すべての Microsoft Information Protection ソリューション (MIP と略されることもあります) は、[秘密度ラベル](sensitivity-labels.md)を使用して実装されます。 それらのラベルを作成して発行するには、<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>に移動します。 または以前のポータルである Office 365 セキュリティ/コンプライアンス センターを使用することもできます。
 
 まず、アプリやその他のサービスで使用する秘密度ラベルを作成し、構成します。 たとえば、ユーザーに表示して Office アプリから適用するラベルです。 
 
@@ -40,7 +41,7 @@ ms.locfileid: "60700855"
 
 ## <a name="create-and-configure-sensitivity-labels"></a>秘密度ラベルを作成して構成する
 
-1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)から、**[ソリューション]** > **[Information Protection]** を選択します。
+1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)から、**ソリューション** > **Information Protection** を選択します。
     
     このオプションがすぐに表示されない場合は、まず [**すべてを表示**] を選択します。
 
@@ -127,7 +128,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 ## <a name="publish-sensitivity-labels-by-creating-a-label-policy"></a>ラベル ポリシーを作成して秘密度ラベルを発行する
 
-1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)から、**[ソリューション]** > **[Information Protection]** を選択します。
+1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)から、**ソリューション** > **Information Protection** を選択します。
     
     このオプションがすぐに表示されない場合は、まず [**すべてを表示**] を選択します。
 

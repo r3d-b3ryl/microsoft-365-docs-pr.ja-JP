@@ -22,12 +22,12 @@ description: Microsoft 情報保護 (MIP) の秘密度ラベルを使用して�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: cc83349a1c4fda3b95665ce13cb3e82bbf8610b3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b43ec6b8d529fe0f5c2ed89ed58c8fc122ada66e
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192129"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60668324"
 ---
 # <a name="learn-about-sensitivity-labels"></a>秘密度ラベルの詳細
 
@@ -237,11 +237,13 @@ Microsoft Information Protection ソリューションの秘密度ラベルを�
 
 ## <a name="sensitivity-labels-and-azure-information-protection"></a>秘密度ラベルと Azure Information Protection
 
-Windows コンピューターの Microsoft 365 アプリで機密ラベルを使用する場合、Office アプリに組み込まれているラベルを使用するか、Azure Information Protection クライアントを使用するかを選択できます。
+Windows コンピューターの Microsoft 365 Apps で秘密度ラベルを使用する場合、Office アプリに組み込まれているラベルを使用するか、[Azure Information Protection クライアント](/azure/information-protection/rms-client/aip-clientv2)を使用するかを選択できます。
 
-既定では、Azure Information Protection クライアントがインストールされている場合、組み込みのラベル付け機能はこれらのアプリでオフになっています。 この既定の動作の変更方法などの詳細については、「[Office built-in labeling client and the Azure Information Protection client (Office 組み込みラベル付けクライアントおよび Azure Information Protection クライアント)](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-the-azure-information-protection-client)」を参照してください。
+組み込みラベルは、Azure Information Protection クライアントで使用される Office アドインを使用しないため、安定性とパフォーマンスの向上という利点があります。 また、高度な分類子などの最新の機能もサポートしています。
 
-Office アプリで組み込みのラベル付けを使用する場合でも、Azure Information Protection 統合ラベル付けクライアントを次の秘密度ラベルと共に使用することもできます。
+既定では、Azure Information Protection クライアントがインストールされている場合、組み込みのラベル付け機能はこれらのアプリでオフになっています。 この既定の動作を変更し、Office アプリの組み込みラベルを使用するには、「[Office 組み込みラベル付けクライアントと Azure Information Protection クライアント](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-the-azure-information-protection-client)」を参照してください。
+
+Office アプリで Azure Information Protection クライアントをインストールしたまま無効にしておくと、Azure Information Protection クライアントを次のように機密ラベルと共に使用するという利点が得られます。
 
 - オンプレミスに保存されている機密情報を検出し、オプションでそのコンテンツにラベルを付けるスキャナー
 
@@ -251,7 +253,7 @@ Office アプリで組み込みのラベル付けを使用する場合でも、A
 
 - オンプレミスのファイル内の機密情報を検出し、これらのファイルからラベルおよび暗号化を適用または削除するための PowerShell モジュール。
 
-Azure Information Protection の初心者、またはラベルを最近移行した Azure Information Protection の既存のお客様である場合は、Azure Information Protection のドキュメントから「[Windows ラベリング ソリューションを選択する](/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution)」を参照してください。
+Azure Information Protection を初めて使用する場合は、Azure Information Protection のドキュメント「[Windows のラベル付けソリューションの選択](/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution)」を参照してください。
 
 ### <a name="azure-information-protection-labels"></a>Azure Information Protection のラベル
 

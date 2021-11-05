@@ -14,16 +14,17 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
 description: コンテンツ エクスプローラーにより、ラベル付きアイテムをネイティブに表示することができます。
-ms.openlocfilehash: ed0eb21f5c97c4028395b6d85a01e6855a46e028
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0332584988ab9a88ef7440f6e5fc71ef3c9cbd5d
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60168688"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60747778"
 ---
 # <a name="get-started-with-content-explorer"></a>コンテンツ エクスプローラーの使用を開始する
 
@@ -67,7 +68,7 @@ ms.locfileid: "60168688"
 > [!IMPORTANT]
 > これらのアクセス許可は、アイテムにローカルに割り当てられるアクセス許可の代わりに、コンテンツの表示を許可します。 
 
-コンテンツ エクスプローラーへのアクセスを許可する 2 つの役割があり、[コンプライアンス センター](https://compliance.microsoft.com/permissions)を使用して許可されます。
+コンテンツ エクスプローラーへのアクセスを許可する 2 つの役割があり、<a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">Microsoft 365 コンプライアンス センター</a>を使用して許可されます。
 
 - **コンテンツ エクスプローラーのリスト ビューアー**: この役割のグループのメンバーシップにより、ユーザーは各アイテムおよびその場所をリスト ビューで確認することができます。 この役割グループには、`data classification list viewer` 役割が事前に割り当てられています。
 

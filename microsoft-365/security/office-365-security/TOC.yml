@@ -126,8 +126,16 @@
           href: install-app-guard.md
     - name: 移行
       items:
-        - name: Google Postini、Barracuda Spam、Virus Firewall、Cisco IronPort から EOP に切り替える
-          href: switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md
+        - name: サードパーティの保護サービスまたはデバイスから Defender for Office 365 に移行する
+          items:
+            - name: サードパーティの保護サービスまたはデバイスから Defender for Office 365 に移行する
+              href: migrate-to-defender-for-office-365.md
+            - name: '移行フェーズ 1: 準備'
+              href: migrate-to-defender-for-office-365-prepare.md
+            - name: '移行フェーズ 2: セットアップ'
+              href: migrate-to-defender-for-office-365-setup.md
+            - name: '移行フェーズ 3: オンボード'
+              href: migrate-to-defender-for-office-365-onboard.md
     - name: 防止
       items:
         - name: セキュリティ強化のためにテナントを構成する

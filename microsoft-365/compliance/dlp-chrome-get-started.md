@@ -16,15 +16,16 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: Microsoft Compliance Extension の準備と導入。
-ms.openlocfilehash: e89edb32e3af5fc661a8f22870e8b7097faf82e2
-ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
+ms.openlocfilehash: 1ac08dc558806d47c382db7c3b4a58f43ff3c4f4
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60264914"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754353"
 ---
 # <a name="get-started-with-microsoft-compliance-extension"></a>Microsoft Compliance Extension を開始する
 
@@ -243,13 +244,13 @@ Microsoft エンドポイント マネージャーを使用しない場合は、
 
 ### <a name="use-the-alerts-management-dashboard-to-viewing-chrome-dlp-alerts"></a>アラート管理ダッシュボードを使用して、Chrome DLP アラートを表示する
 
-1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com)の **[データ損失防止]** ページを開き、**[アラート]** を選択します。
+1. **Microsoft 365 コンプライアンス センター** の <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">データ損失防止 ページ</a>を開き、**アラート** を選択します。
 
 2. エンドポイント DLP ポリシーの警告を表示するには、「[DLP ポリシーの警告を構成および表示する方法](dlp-configure-view-alerts-policies.md)」の手順を参照してください。
 
 ### <a name="viewing-chrome-dlp-data-in-activity-explorer"></a>Activity エクスプローラーでのエンドポイント DLP データの表示
 
-1. Microsoft 365 コンプライアンスセンターでドメインの [データ分類ページ](https://compliance.microsoft.com/dataclassification?viewid=overview)を開き、**Activity エクスプローラー** を選択します。
+1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/dataclassification?viewid=overview)で <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">ドメインのデータ分類ページ</a>を開き、**Activity エクスプローラー** を選択します。
 
 2. エンドポイントデバイスのすべてのデータにアクセスしてフィルタリングするには、「[Activity エクスプローラースタートガイド](data-classification-activity-explorer.md)」の手順に従ってください。
 

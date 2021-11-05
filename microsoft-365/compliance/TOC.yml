@@ -3,8 +3,12 @@
 - name: Microsoft 365 コンプライアンス センターの新機能
   href: whats-new.md
 - name: コンプライアンス試用版
-  href: compliance-easy-trials.md
-- name: 作業の開始
+  items:
+    - name: Microsoft 365 コンプライアンスの無料試用版について
+      href: compliance-easy-trials.md
+    - name: Microsoft コンプライアンス マネージャー プレミアム評価の無料試用版について
+      href: compliance-easy-trials-compliance-manager-assessments.md
+- name: 概要
   items:
     - name: コンプライアンスを開始するためのクイック タスク
       href: compliance-quick-tasks.md
@@ -46,7 +50,7 @@
           href: communication-compliance-reports-audits.md
         - name: SIEM ソリューションのコミュニケーション コンプライアンス
           href: communication-compliance-siem.md
-        - name: ケース スタディ - Contoso は不快な言葉ポリシーをすばやく構成します
+        - name: ケース スタディ - Contoso は不適切なコンテンツ ポリシーをすばやく構成します
           href: communication-compliance-case-study.md
     - name: インサイダー リスクの管理
       items:
@@ -112,6 +116,8 @@
   items:
     - name: データの把握、データの保護、データ損失の防止
       href: information-protection.md
+    - name: Microsoft Information Protection の既定のラベルとポリシー
+      href: mip-easy-trials.md
     - name: 機密情報の種類
       items:
         - name: 機密情報の種類に関する詳細情報
@@ -120,6 +126,8 @@
               href: sensitive-information-type-learn-about.md
             - name: ドキュメント フィンガープリンティング
               href: document-fingerprinting.md
+            - name: 名前付きエンティティの詳細 (プレビュー)
+              href: named-entities-learn.md
         - name: 機密情報の種類を使用開始
           items:
             - name: 機密情報の種類を使用開始 - コンプライアンス センター
@@ -146,6 +154,8 @@
               href: create-a-keyword-dictionary.md
             - name: キーワード 辞書を変更する
               href: sit-modify-keyword-dictionary.md
+            - name: データ損失防止ポリシーで名前付きエンティティを使用する (プレビュー)
+              href: named-entities-use.md
         - name: 機密情報の種類のリファレンス
           items:
             - name: 機密情報の種類のエンティティ定義
@@ -301,7 +311,7 @@
               href: dlp-chrome-get-started.md
             - name: データ損失防止の警告ダッシュボードを開始する
               href: dlp-alerts-dashboard-get-started.md
-            - name: Windows 10 デバイスのエンドポイント DLP オンボード ツールと各種方法
+            - name: エンドポイント DLP デバイスのオンボード ツールと各種方法
               items:
                 - name: Windows 10 デバイスのオンボード ツールと各種方法
                   href: dlp-configure-endpoints.md
@@ -315,6 +325,16 @@
                   href: dlp-configure-endpoints-script.md
                 - name: 非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード
                   href: dlp-configure-endpoints-vdi.md
+            - name: Microsoft 365 への macOS デバイスのオンボードに関する概要 (プレビュー)
+              href: device-onboarding-macos-overview.md
+            - name: Microsoft Intune を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)
+              href: device-onboarding-offboarding-macos-intune.md
+            - name: Microsoft Defender for Endpoint のお客様向け Intune を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)
+              href: device-onboarding-offboarding-macos-intune-mde.md
+            - name: JAMF Pro を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)
+              href: device-onboarding-offboarding-macos-jamfpro.md
+            - name: Microsoft Defender for Endpoint のお客様向け JAMF Pro を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)
+              href: device-onboarding-offboarding-macos-jamfpro-mde.md
         - name: DLP を使用する
           items:
             - name: DLP と Microsoft Teams
@@ -411,8 +431,12 @@
           items:
             - name: Bloomberg メッセージ
               href: archive-bloomberg-message-data.md
+            - name: Epic EHR 医療データ (プレビュー)
+              href: import-epic-data.md
             - name: Facebook Business
               href: archive-facebook-data-with-sample-connector.md
+            - name: 包括的 EHR 医療データ (プレビュー)
+              href: import-healthcare-data.md
             - name: 人事データ
               href: import-hr-data.md
             - name: IceChat
@@ -591,46 +615,6 @@
           href: record-versioning.md
         - name: 規制要件の参照資料
           href: retention-regulatory-requirements.md
-- name: アプリ ガバナンスを管理する
-  items:
-    - name: アプリを保護して管理する
-      href: app-governance-manage-app-governance.md
-    - name: アプリ ガバナンスの使用を開始する
-      href: app-governance-get-started.md
-    - name: アプリ ガバナンスに関するフィードバックを送信する
-      href: app-governance-feedback.md
-    - name: 可視性と分析情報を取得する
-      items:
-        - name: 可視性と分析情報に関する詳細情報
-          href: app-governance-visibility-insights-overview.md
-        - name: 開始する
-          href: app-governance-visibility-insights-get-started.md
-        - name: アプリを表示する
-          href: app-governance-visibility-insights-view-apps.md
-        - name: コンプライアンスに対する方針を決定する
-          href: app-governance-visibility-insights-compliance-posture.md
-    - name: アプリ ポリシーを実装する
-      items:
-        - name: アプリ ポリシーに関する詳細情報
-          href: app-governance-app-policies-overview.md
-        - name: 開始する
-          href: app-governance-app-policies-get-started.md
-        - name: アプリ ポリシーを作成する
-          href: app-governance-app-policies-create.md
-        - name: アプリ ポリシーを管理する
-          href: app-governance-app-policies-manage.md
-    - name: アプリの脅威を検出して修復する
-      items:
-        - name: 検出と修復に関する詳細情報
-          href: app-governance-detect-remediate-overview.md
-        - name: 開始する
-          href: app-governance-detect-remediate-get-started.md
-        - name: 異常なデータ使用量のアプリを監視して対応する
-          href: app-governance-monitor-apps-unusual-data-usage.md
-        - name: 異常検出アラートを調査する
-          href: app-governance-anomaly-detection-alerts.md
-        - name: アプリの脅威を修復する
-          href: app-governance-detect-remediate-detect-threats.md
 - name: eDiscovery の管理
   items:
     - name: Microsoft 365 eDiscovery ソリューション
@@ -734,6 +718,10 @@
               href: what-is-stored-in-exo-mailbox.md
             - name: 検索の推定結果と実際の結果の違い
               href: differences-between-estimated-and-actual-ediscovery-search-results.md
+            - name: 部分的にインデックスが作成されたアイテム
+              href: partially-indexed-items-in-content-search.md
+            - name: 部分的にインデックスが作成されたアイテムを調査する
+              href: investigating-partially-indexed-items-in-ediscovery.md
             - name: 電子情報開示検索結果をプレビューする
               href: preview-ediscovery-search-results.md
             - name: 検索レポートをエクスポートする
@@ -823,6 +811,8 @@
               href: ediscovery-kql-editor.md
             - name: キーワード クエリと検索条件
               href: keyword-queries-and-search-conditions.md
+            - name: クラウドの添付ファイルを収集する
+              href: advanced-ediscovery-cloud-attachments.md
         - name: レビュー セットを管理する
           href: managing-review-sets.md
           items:
@@ -890,6 +880,8 @@
               href: supported-filetypes-ediscovery20.md
             - name: ドキュメントのメタデータ フィールド
               href: document-metadata-fields-in-advanced-ediscovery.md
+            - name: 履歴バージョンを設定する
+              href: advanced-ediscovery-historical-versions.md
             - name: 弁護士/依頼人特権の検出を設定する
               href: attorney-privilege-detection.md
             - name: 電子情報開示のアクセス許可を割り当てる

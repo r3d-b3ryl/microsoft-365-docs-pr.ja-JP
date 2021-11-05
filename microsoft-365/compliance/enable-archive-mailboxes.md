@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 ms.custom: seo-marvel-apr2020
 description: コンプライアンス センターを使用して、組織でのメッセージの保持、電子情報開示、保留に関する要件をサポートするためにアーカイブ メールボックスを有効にする方法を説明します。
-ms.openlocfilehash: c62d1d1478b62ac3ba66ccc0fc7fb9d5fc6101b3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7a409dd83d33e1b18ccbb11613b0a5162e0ff4d0
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207333"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60756153"
 ---
 # <a name="enable-archive-mailboxes-in-the-compliance-center"></a>セキュリティ/コンプライアンス センターでアーカイブ メールボックスを有効にする
 
@@ -40,7 +40,7 @@ Microsoft 365 でのアーカイブ (*インプレース アーカイブ* とも
 
 ## <a name="enable-an-archive-mailbox"></a>アーカイブ メールボックスの有効化
 
-1. <https://compliance.microsoft.com> に移動し、サインインします。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>に移動して、サインインしてください。
 
 2. Microsoft 365 コンプライアンス センターの左のウィンドウで、**[情報ガバナンス]** をクリックしてから、**[アーカイブ]** タブをクリックします。
 
@@ -72,7 +72,7 @@ Microsoft 365 コンプライアンス センターの [**アーカイブ**] ペ
 
 アーカイブ メールボックスを無効にするには: 
 
-1. <https://compliance.microsoft.com> に移動し、サインインします。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>に移動して、サインインしてください。
 
 2. Microsoft 365 コンプライアンス センターの左のウィンドウで、**[情報ガバナンス]** をクリックしてから、**[アーカイブ]** タブをクリックします。
 
