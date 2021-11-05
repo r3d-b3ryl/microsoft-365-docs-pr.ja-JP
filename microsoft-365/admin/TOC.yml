@@ -312,17 +312,17 @@
               href: usage-analytics/usage-analytics-errors.md
         - name: Microsoft 365 サポートと ServiceNow 構成ガイドとの統合
           items:
-            - name: Microsoft 365 サポートと ServiceNow 構成の統合の概要
+            - name: 構成の概要
               href: manage/servicenow-overview.md
-            - name: ServiceNow 基本認証とのサポート統合を構成する
+            - name: 基本認証を構成する
               href: manage/servicenow-basic-authentication.md
-            - name: AAD OAuth トークンによる Microsoft 365 サポート統合を構成する
+            - name: AAD OAuth トークンを使用して構成する
               href: manage/servicenow-aad-oauth-token.md
-            - name: サービス正常性インシデントと推奨ソリューションのみを対象とした Microsoft 365 サポート統合
+            - name: サービス正常性インシデントと推奨ソリューションのみ
               href: manage/servicenow-service-health-incidents-solutions-only.md
-            - name: ServiceNow 構成のテスト
+            - name: 構成をテストする
               href: manage/servicenow-testing-the-configuration.md
-            - name: ServiceNow との Microsoft 365 サポート統合のトラブルシューティング
+            - name: トラブルシューティング
               href: manage/servicenow-troubleshooting.md
     - name: サブスクリプションと課金を管理する
       href: ../commerce/index.yml
