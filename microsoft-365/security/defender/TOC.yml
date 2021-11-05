@@ -122,6 +122,8 @@
               href: ../defender-identity/entity-tags.md
             - name: セキュリティ アラートの管理
               href: ../defender-identity/manage-security-alerts.md
+            - name: 検出の除外を構成
+              href: ../defender-identity/exclusions.md
             - name: メールと Syslog の通知
               href: ../defender-identity/notifications.md
     - name: 脅威の調査と対応
