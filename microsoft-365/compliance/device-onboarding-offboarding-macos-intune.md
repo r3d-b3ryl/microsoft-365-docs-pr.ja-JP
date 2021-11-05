@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: macOS デバイスをオンボーディングおよびオフボードで、Microsoft 365コンプライアンス ソリューションにMicrosoft Intuneする方法 (プレビュー)
-ms.openlocfilehash: fb3e89b303c8c17de3eb6826c25d2b54be364b7e
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 7e5692197a05f16326d3fd8b43e37a19186b9926
+ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60717538"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "60792282"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-intune-preview"></a>Intune (プレビュー) を使用して、Microsoft 365コンプライアンス ソリューションへのオンボードおよびオフボードの macOS デバイス
 
@@ -28,16 +28,16 @@ Intune を使用して、コンプライアンス ソリューションに macOS
 > [!IMPORTANT]
 > MacOS デバイスにMicrosoft Defender for Endpoint (MDE) が展開されていない場合は、次の手順を実行します。
 
-## <a name="get-registered"></a>登録を取得する
+## <a name="get-registered"></a>登録する
 
-この機能にアクセスするには、テナントを Microsoft に登録する必要があります。 macOS[のサポートに登録Microsoft 365を参照してください](https://aka.ms/Ignite2021DLP)。
+この機能にアクセスするには、テナントを Microsoft に登録する必要があります。 macOS[のサポートに登録Microsoft 365を参照してください](https://aka.ms/EndpointDLPIgnite21-Previews)。
 
 **適用対象:**
 
 - [Microsoft 365エンドポイント データ損失防止 (DLP)](./endpoint-dlp-learn-about.md)
-- [インサイダー リスクの管理](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [Insider リスク管理](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 - macOS[デバイスが Intune](/mem/intune/fundamentals/deployment-guide-platform-macos)にオンボードされ、アプリに登録ポータル サイト[します](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp)。 
 - サーバー センターにアクセスMicrosoft エンドポイント マネージャー[します](https://endpoint.microsoft.com/#home)。
@@ -155,7 +155,7 @@ Intune を使用して、コンプライアンス ソリューションに macOS
 
 1. [作成 **] を選択します。**
 
-1. この例のアクセシビリティフォーム *acOS* など、プロファイルの名前を選択します。 [**次へ**]を選択します。
+1. この例のアクセシビリティフォーム *acOS* など、プロファイルの名前を選択します。 **次へ** を選択します。
 
 1. 手順 1 **でダウンロードしたアクセシビリティ.mobileconfig** ファイルを構成プロファイル ファイルとして選択します。
 
@@ -199,7 +199,7 @@ Intune を使用して、コンプライアンス ソリューションに macOS
 
 1. [作成 **] を選択します。**
 
-1. この例の *OnboardingPackage など、プロファイルの名前* を選択します。 [**次へ**]を選択します。
+1. この例の *OnboardingPackage など、プロファイルの名前* を選択します。 **次へ** を選択します。
 
 1. 構成プロファイル *DeviceComplianceOnboarding.xml* ファイルを選択します。
 

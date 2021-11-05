@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 452129ac5bb6116f23e9a2791ff7147cd74adee6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d136ae298abdf876a9be6f58634940ec71c07e47
+ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60181009"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "60792342"
 ---
 # <a name="microsoft-365-defender-prerequisites"></a>Microsoft 365 Defender前提条件
 
@@ -60,7 +60,7 @@ ms.locfileid: "60181009"
 [ライセンス] Microsoft 365 管理センター[(](https://admin.microsoft.com/)admin.microsoft.com ) に移動して、既存のライセンスを表示します。 管理センターで、[**課金**]  >  [**ライセンス**] の順に移動します。
 
 >[!NOTE]
-> ライセンス情報を表示するには[、Azure](/azure/active-directory/roles/permissions-reference)サーバーで課金管理者またはグローバル リーダー AD割り当てる必要があります。  アクセスの問題が発生した場合は、グローバル管理者に連絡してください。
+> ライセンス情報を表示するには、課金管理者またはグローバル[](/azure/active-directory/roles/permissions-reference)閲覧Azure ADが割り当てられている必要があります。  アクセスの問題が発生した場合は、グローバル管理者に連絡してください。
 
 ## <a name="required-permissions"></a>必要なアクセス許可
 サーバーを有効に **するには、** グローバル管理者またはセキュリティ管理者Azure Active Directory必要Microsoft 365 Defender。 データへのアクセスを規制する方法Microsoft 365 Defender使用するために必要な役割の一覧については、「データへのアクセスの管理」を[参照](m365d-permissions.md)Microsoft 365 Defender。
@@ -70,7 +70,6 @@ ms.locfileid: "60181009"
 
 ## <a name="availability-to-us-gcc-gcc-high-and-other-us-government-institutions"></a>米国の政府機関GCC、GCC、その他の米国政府機関への可用性
 現在、Microsoft 365 Defender *を使用* できません。
-- US Government Community Cloud (GCC)
 - 米国 Government Community Cloud高 (GCC高)
 - 米国国防総省
 - 商用ライセンスを持つすべての米国政府機関
@@ -87,7 +86,7 @@ ms.locfileid: "60181009"
 - アラブ首長国連邦 
 
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [Microsoft 365 Defender概要](microsoft-365-defender.md)
 - [Microsoft 365 Defender を有効にする](m365d-enable.md)
 - [アクセスとアクセス許可の管理](m365d-permissions.md)

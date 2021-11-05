@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 84cb795ec2ffb8e8a2c2ce0d8d476c841c4438ca
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: c55a91987ffc4823bda61b8b13f38af710181edd
+ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60705259"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "60792378"
 ---
 # <a name="turn-on-microsoft-365-defender"></a>Microsoft 365 Defender を有効にする
 
@@ -47,7 +47,19 @@ Microsoft 365 Defenderアクセス許可を持つ対象ユーザーがポータ�
 
 ### <a name="check-your-role"></a>役割を確認する
 
-サーバーを有効に **するには、** グローバル管理者またはセキュリティ管理者Azure Active Directory必要Microsoft 365 Defender。 [[ロールの表示] Azure AD](/azure/active-directory/users-groups-roles/directory-manage-roles-portal)
+この機能を有効にするには、次のいずれかの役割Microsoft 365 Defender。
+    
+- グローバル管理者
+- セキュリティ管理者
+- セキュリティ オペレーター
+- グローバル閲覧者
+- セキュリティ閲覧者
+- コンプライアンス管理者
+- コンプライアンス データ管理者
+- アプリケーション管理者
+- クラウド アプリケーション管理者
+
+[[ロールの表示] Azure AD](/azure/active-directory/users-groups-roles/directory-manage-roles-portal)
 
 ## <a name="supported-services"></a>サポートされているサービス
 
@@ -89,7 +101,7 @@ Microsoft 365 Defenderは、Microsoft Defender for Endpoint で使用される�
 
 Microsoft サポート スタッフは、テナントのサービスおよび関連リソースのプロビジョニングまたはプロビジョニング解除を支援できます。 サポートについては、ポータルの **[ヘルプが必要ですかMicrosoft 365 Defender** します。 サポートに問い合わせする場合は、Microsoft 365 Defender。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [よく寄せられる質問](m365d-enable-faq.md)
 - [ライセンス要件およびその他の前提条件](prerequisites.md)

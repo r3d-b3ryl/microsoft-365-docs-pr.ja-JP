@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: JAMF ソリューション (プレビュー) を使用して、macOS デバイスをオンボードおよびオフボードMicrosoft 365コンプライアンス ソリューションにProする方法について学習します。
-ms.openlocfilehash: c1fefa8263b2bee9b11156ae18c218520eeae5a8
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 5335ceb47475a633e8f7ba000f8690ca3b9b8b6c
+ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60701316"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "60792510"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-jamf-pro-preview"></a>JAM Pro F を使用したコンプライアンス ソリューションMicrosoft 365オンボードおよびオフボード macOS デバイス (プレビュー)
 
@@ -28,16 +28,16 @@ JAMF デバイスを使用Pro、エンドポイント データ損失防止Micro
 > [!IMPORTANT]
 > MacOS デバイスにMicrosoft Defender for Endpoint (MDE) が展開されていない場合は、次の手順を実行します。
 
-## <a name="get-registered"></a>登録を取得する
+## <a name="get-registered"></a>登録する
 
-この機能にアクセスするには、テナントを Microsoft に登録する必要があります。 macOS[のサポートに登録Microsoft 365を参照してください](https://aka.ms/Ignite2021DLP)。
+この機能にアクセスするには、テナントを Microsoft に登録する必要があります。 macOS[のサポートに登録Microsoft 365を参照してください](https://aka.ms/EndpointDLPIgnite21-Previews)。
 
 **適用対象:**
 
 - [Microsoft 365エンドポイント データ損失防止 (DLP)](./endpoint-dlp-learn-about.md)
-- [インサイダー リスクの管理](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [Insider リスク管理](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 - [macOS デバイスが参加Azure ADする](https://docs.jamf.com/10.30.0/jamf-pro/administrator-guide/Azure_AD_Integration.html)
 - macOS デバイスが JAMF pro [を介して管理されている必要があります。](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/)

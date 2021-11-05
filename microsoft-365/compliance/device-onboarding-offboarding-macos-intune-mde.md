@@ -14,30 +14,30 @@ ms.collection:
 search.appverid:
 - MET150
 description: MDE のお客様向けソリューションを使用して、Microsoft 365コンプライアンス ソリューションに macOS デバイスMicrosoft Intuneオンボードおよびオフボードする方法 (プレビュー)
-ms.openlocfilehash: 94664f0d57f1b702484e27c62f9e80339e04e105
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: c1ed019f6191d930da8c6b1d0674625e9c27d1b6
+ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60701315"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "60792486"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers-preview"></a>Microsoft Defender for Endpoint のお客様向け Intune を使用したコンプライアンス ソリューションへのオンボードおよびオフボード macOS デバイス (プレビュー)
 
 > [!IMPORTANT]
 > Microsoft Defender  for Endpoint (MDE) を macOS デバイスに展開している場合は、次の手順を実行します。
 
-## <a name="get-registered"></a>登録を取得する
+## <a name="get-registered"></a>登録する
 
-この機能にアクセスするには、テナントを Microsoft に登録する必要があります。 macOS[のサポートに登録Microsoft 365を参照してください](https://aka.ms/Ignite2021DLP)。
+この機能にアクセスするには、テナントを Microsoft に登録する必要があります。 macOS[のサポートに登録Microsoft 365を参照してください](https://aka.ms/EndpointDLPIgnite21-Previews)。
 
 **適用対象:**
 
 - MDE を macOS デバイスに展開しているお客様。
 - [Microsoft 365エンドポイント データ損失防止 (DLP)](./endpoint-dlp-learn-about.md)
-- [インサイダー リスクの管理](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [Insider リスク管理](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 - macOS デバイス[が Intune](/mem/intune/fundamentals/deployment-guide-platform-macos)にオンボードされ、アプリに登録ポータル サイト[します](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp)。 
 - サーバー センターにアクセス[Microsoft エンドポイント マネージャーする](https://endpoint.microsoft.com/#home)
@@ -76,7 +76,7 @@ MDE が既に展開されている場合は、以下の手順を使用して mac
 
 1. [作成 **] を選択します。**
 
-1. この例のアクセシビリティフォーム *acOS* など、プロファイルの名前を選択します。 [**次へ**]を選択します。
+1. この例のアクセシビリティフォーム *acOS* など、プロファイルの名前を選択します。 **次へ** を選択します。
 
 1. 手順 1 **でダウンロードしたアクセシビリティ.mobileconfig** ファイルを構成プロファイル ファイルとして選択します。
 

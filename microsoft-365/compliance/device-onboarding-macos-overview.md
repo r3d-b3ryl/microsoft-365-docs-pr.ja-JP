@@ -14,33 +14,33 @@ ms.collection:
 search.appverid:
 - MET150
 description: コンプライアンス ソリューションへの macOS デバイスのオンボーディングについて
-ms.openlocfilehash: b9e04b95a0daa123a7e5a8c7863d6477ab2ccf15
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: b24fd172224e0d1f8080ddd22cb3532dce0afe2b
+ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60661910"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "60792294"
 ---
 # <a name="onboard-macos-devices-into-microsoft-365-overview-preview"></a>macOS デバイスをオンボードMicrosoft 365概要 (プレビュー)
 
 MacOS デバイスは、Intune または JAMF Microsoft 365を使用して、コンプライアンス ソリューションにオンボードPro。 オンボーディング手順は、使用している管理ソリューションによって異なります。 macOS デバイスが Microsoft Defender for Endpoint (MDE) に既にオンボードされている場合は、手順が少なくなっています。 適切 [な手順への](#next-steps) リンクについては、「次の手順」を参照してください。
 
-## <a name="get-registered"></a>登録を取得する
+## <a name="get-registered"></a>登録する
 
-この機能にアクセスするには、テナントを Microsoft に登録する必要があります。 macOS[のサポートに登録Microsoft 365を参照してください](https://aka.ms/Ignite2021DLP)。
+この機能にアクセスするには、テナントを Microsoft に登録する必要があります。 macOS[のサポートに登録Microsoft 365を参照してください](https://aka.ms/EndpointDLPIgnite21-Previews)。
 
 **適用対象:**
 
 - [Microsoft 365エンドポイント データ損失防止 (DLP)](./endpoint-dlp-learn-about.md)
-- [インサイダー リスクの管理](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [Insider リスク管理](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 <!--- [Insider risk management](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)-->
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 macOS デバイス (Catalina 10.15 以降) での Endpoint DLP の使用を開始する前に、次の記事を理解する必要があります。
 
 - [Microsoft 365 のエンドポイントのデータ損失防止についての詳細情報](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention)
-- [エンドポイント データ損失防止の使用を開始する](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention)
+- [エンドポイント データ損失防止を開始する](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention)
 
 DLP に精通していない場合は、次の記事も理解する必要があります。
 
@@ -87,7 +87,7 @@ DLP センサーの利用統計情報をMicrosoft 365データ損失防止ポリ
 - JAMF Pro を介して管理され、Microsoft Defender for Endpoint (MDE) が展開されている macOS デバイスについては、「Microsoft Defender for Endpoint のお客様向け[JAMF Pro](device-onboarding-offboarding-macos-jamfpro-mde.md#onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers-preview)を使用したコンプライアンス ソリューションへのオンボードおよびオフボード macOS デバイス (プレビュー)」を参照してください。
 
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [エンドポイントのデータ損失防止の使用](endpoint-dlp-using.md#using-endpoint-data-loss-prevention)
 - [Microsoft アプリ全体の DLP ポリシー ヒントのサポート マトリックス](dlp-policy-tips-reference.md#support-matrix-for-dlp-policy-tips-across-microsoft-apps)

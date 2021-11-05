@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f7f27d772f5b0d68c22bfa57a771cf2d13ca58c6
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: fce766313b7757712faaa2a2b122730601f137aa
+ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60667016"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "60792522"
 ---
 # <a name="frequently-asked-questions-when-turning-on-microsoft-365-defender"></a>ユーザー設定をオンにするときによく寄せられる質問Microsoft 365 Defender
 
@@ -78,6 +78,11 @@ Microsoft 365 Defenderは次の場所で利用できます <https://security.mic
 - セキュリティ オペレーター
 - グローバル閲覧者
 - セキュリティ閲覧者
+- コンプライアンス管理者
+- コンプライアンス データ管理者
+- アプリケーション管理者
+- クラウド アプリケーション管理者
+
 
 > [!NOTE]
 > Microsoft Defender for Endpoint でのロールベースのアクセス制御設定は、データへのアクセスに影響を与えます。 詳細については、「[Microsoft 365 Defender へのアクセスの管理](m365d-permissions.md)」をお読みください。
@@ -99,7 +104,7 @@ Microsoft は、以下を含むさまざまなチャネルを通じて定期的�
 
 現時点では、使用できません。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [Microsoft 365 Defender概要](microsoft-365-defender.md)
 - [[設定] をオンMicrosoft 365 Defender。](m365d-enable.md)
