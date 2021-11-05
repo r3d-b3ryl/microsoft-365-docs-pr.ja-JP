@@ -18,13 +18,14 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
+ms.custom: admindeeplinkCOMPLIANCE
 description: Microsoft 365 エンドポイントのデータ損失防止を設定して、ファイルアクティビティを監視し、それらのファイルの保護アクションをエンドポイントに実装します。
-ms.openlocfilehash: 22f7e2eb1476543eb1aed9d772333f3ae7843477
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 9a706350be231fa5af794cb2774e3d88fb89dc1b
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60703727"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60786724"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>エンドポイント データ損失防止を開始する
 
@@ -126,7 +127,7 @@ Endpoint DLP からのデータは、[Activity エクスプローラー](data-cl
 
 この導入シナリオでは、まだオンボーディングされていないデバイスをオンボードし、Windows 10 デバイスで意図しない共有から機密アイテムを監視および保護します。
 
-1. [Microsoft コンプライアンスセンター](https://compliance.microsoft.com)を開きます。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>を開きます。
 
 2. コンプライアンスセンターの設定ページを開き、[**オンボードデバイス**]を選択します。
 
@@ -162,7 +163,7 @@ Endpoint DLP からのデータは、[Activity エクスプローラー](data-cl
 
 このシナリオでは、Microsoft Defender for Endpoint は既に導入されており、レポートするエンドポイントがあります。 これらすべてのエンドポイントが管理対象デバイスのリストに表示されます。 新しいデバイスを引き続き Endpoint DLP にオンボーディングして、[オンボーディングデバイスの手順](endpoint-dlp-getting-started.md#onboarding-devices)を使用してカバレッジを拡大します。
 
-1. [Microsoft コンプライアンスセンター](https://compliance.microsoft.com)を開きます。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>を開きます。
 
 2. コンプライアンスセンターの設定ページを開き、[**デバイスの監視を有効にする**]を選択します。
 
@@ -189,7 +190,7 @@ Endpoint DLP からのデータは、[Activity エクスプローラー](data-cl
 
 ### <a name="viewing-endpoint-dlp-alerts-in-dlp-alerts-management-dashboard"></a>DLP 警告管理ダッシュボードでのエンドポイント DLP 警告の表示
 
-1. Microsoft 365 コンプライアンス センターの [データ損失防止] ページを開き、[アラート] を選択します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>の [データ損失防止] ページを開き、[アラート] を選択します。
 
 2. エンドポイント DLP ポリシーの警告を表示するには、「[DLP ポリシーの警告を構成および表示する方法](dlp-configure-view-alerts-policies.md)」の手順を参照してください。
 
