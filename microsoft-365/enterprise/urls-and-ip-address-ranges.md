@@ -3,7 +3,7 @@ title: 'Office 365 の URL と IP アドレスの範囲 '
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 09/28/2021
+ms.date: 10/29/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: '概要: Office 365 には、インターネットへの接続が必要です。Office 365 のプランを利用する予定のお客様は (政府機関コミュニティ クラウド (GCC) を含む)、次のエンドポイントに到達できる必要があります。'
 hideEdit: true
-ms.openlocfilehash: 936c2bd4a981434883f115a932f870a558a7355d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d223ec20be108cdcfa53a2357e95cccdf6474e69
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189011"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60700886"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>Office 365 URL および IP アドレス範囲
 
@@ -39,14 +39,14 @@ Office 365 には、インターネットへの接続が必要です。Office 36
 
 |備考|ダウンロード|使用|
 |---|---|---|
-|**最終更新日:** 2021 年 9 月 28 日 - ![RSS](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [ログ サブスクリプションの変更](https://endpoints.office.com/version/worldwide?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**ダウンロード:** 1 つの [JSON 形式](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)リスト内のすべての必須およびオプションの宛先。|**使用:** プロキシ [PAC ファイル](managing-office-365-endpoints.md#pacfiles)|
+|**最終更新日:** 2021 年 10 月 29 日 - ![RSS。](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [変更ログのサブスクリプション](https://endpoints.office.com/version/worldwide?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**ダウンロード:** 1 つの [JSON 形式](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)リスト内のすべての必須およびオプションの宛先。|**使用:** プロキシ [PAC ファイル](managing-office-365-endpoints.md#pacfiles)|
 |
 
 まずはじめに 「[Office 365 エンドポイントを管理する](managing-office-365-endpoints.md)」を読み、以下のデータを使用してネットワーク接続を管理するための推奨事項を確認するようにしてください。エンドポイント データは毎月月初めに必要に応じて更新され、新しい IP アドレスと URL は、それらがアクティブになる 30 日前に公開されます。これにより、お客様がまだ自動更新の設定を行っていない場合でも、新しい接続が必要になる前にプロセスを完了していただけます。サポートのエスカレーション、セキュリティ インシデント、またはその他の即時の運用要件に対応するために、月の途中にエンドポイントが更新される場合があります。このページの下に表示されるデータは、すべて REST ベースの Web サービスから生成されたものです。スクリプトやネットワーク デバイスを使用してこのデータにアクセスする場合、[[Web サービス](microsoft-365-ip-web-service.md)] に直接移動する必要があります。
 
-次のエンドポイント データは、ユーザーのコンピューターを Office 365 に接続するための必要条件の一覧です。Microsoft からお客様のネットワークへの接続 (“ハイブリッド ネットワーク接続” や ”受信ネットワーク接続” と呼ばれる場合があります) は含まれません。詳細については [追加のエンドポイント](additional-office365-ip-addresses-and-urls.md)を参照してください。
+以下のエンドポイント データは、ユーザーのコンピューターから Office 365 への接続の要件を示しています。 Microsoft から顧客ネットワークへのネットワーク接続 (ハイブリッドまたは受信ネットワーク接続とも呼ばれる) に使用される IP アドレスの詳細については、「[追加エンドポイント](additional-office365-ip-addresses-and-urls.md)」を参照してください。
 
-エンドポイントは 4 つのサービス領域にグループ分けされます。最初の 3 つのサービス領域は個別に接続の選択ができます。4 番目のサービス領域は共通の依存関係 ("Microsoft 365 Common および Office Online" と呼ばれる) で、常時ネットワーク接続されている必要があります。
+エンドポイントは、3 つのプライマリ ワークロードと一連の共通リソースを表す 4 つのサービス領域にグループ化されます。 これらのグループを使用してトラフィック フローを特定のアプリケーションに関連付けることができますが、機能が複数のワークロードにわたってエンドポイントを消費することがよくありますが、これらのグループを効果的に使用してアクセスを制限することはできません。
 
 次のデータ列が表示されます。
 
