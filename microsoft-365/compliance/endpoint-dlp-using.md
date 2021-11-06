@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 365 エンドポイント データ損失防止 (EPDLP) の場所を使用するようにデータ損失防止 (DLP) ポリシーを構成する方法を説明します。
-ms.openlocfilehash: eb42d43db8edf0bad02e66a5ee4e2853b8d42878
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 898acf4e74f6aadb79bf5dfb7e3fc751d6286ecb
+ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60756027"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "60792390"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>エンドポイント データ損失防止の使用
 
@@ -60,7 +60,7 @@ ms.locfileid: "60756027"
 
 ### <a name="endpoint-dlp-windows-10-and-macos-settings"></a>エンドポイント DLP Windows 10 と macOS の設定
 
-macOS サポートにアクセスするには、テナントを Microsoft に登録する必要があります。 まず、[登録](https://aka.ms/Ignite2021DLP)します。
+macOS サポートにアクセスするには、テナントを Microsoft に登録する必要があります。 まず、[登録](https://aka.ms/EndpointDLPIgnite21-Previews)します。
 
 |Setting |Windows 10, 1809 以降  |macOS Catalina 10.15 以降 (プレビュー)  |メモ  |
 |---------|---------|---------|---------|
@@ -136,7 +136,7 @@ Windows デバイスと同様に、macOS アプリが機密データにアクセ
 Mac アプリの完全なパスを検索するには:
 1. macOS デバイスで、**アクティビティ モニター** を開きます。 制限するプロセスを見つけて、ダブルクリックします
 
-2. [**ファイルとポートを開く**] タブを選択します。
+2. [**ファイルとポートを開く]** タブを選択します。
   
 3. アプリ名は、完全なパスの末尾にあります。
 
@@ -212,7 +212,7 @@ DLP ポリシー ヒントの通知で、ユーザーによる業務上の正当
 
 エンドポイント DLP および Microsoft Edge Chromium Web ブラウザーを使用すると、許可されていないクラウドアプリとサービスで意図しない機密アイテムの共有を制限できます。 Microsoft Edge Chromium では、アイテムがエンドポイント DLP ポリシーによって制限される場合を把握して、、アクセス制限を適用しています。
 
-正常に構成されている DLP ポリシーと Microsoft Edge Chromium ブラウザーがある場所としてエンドポイント DLP を使用する場合、これらの設定で定義されている許可されていないブラウザーは、DLP ポリシーコントロールに一致する機密アイテムへアクセスできません。 その代わりに、ユーザーは Microsoft Edge Chromium を使用するようにリダイレクトされます。 DLP ポリシーが適応される制限を把握することで、DLP ポリシーの条件が満たされた場合にアクティビティをブロックまたは制限することができます。
+正常に構成されている DLP ポリシーと Microsoft Edge Chromium ブラウザーがある場所としてエンドポイント DLP を使用する場合、これらの設定で定義されている許可されていないブラウザーは、DLP ポリシーコントロールに一致する機密アイテムへアクセスできません。 その代わりに、ユーザーは Microsoft Edge Chromium を使用するようにリダイレクトされます。DLP ポリシーが適応される制限を把握することで、DLP ポリシーの条件が満たされた場合にアクティビティをブロックまたは制限することができます。
 
 この制限を使用するには、次の 3 つの重要な要素を構成する必要があります。
 
