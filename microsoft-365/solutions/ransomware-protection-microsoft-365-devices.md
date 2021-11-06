@@ -1,5 +1,5 @@
 ---
-title: 手順 4. デバイスの保護
+title: 手順 4. デバイスを保護する
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -15,14 +15,14 @@ ms.collection:
 - ransomware
 - m365solution-ransomware
 ms.custom: seo-marvel-jun2020
-keywords: ランサムウェア、人が操作するランサムウェア、人間が操作するランサムウェア、HumOR、強要攻撃、ランサムウェア攻撃、暗号化、暗号ウイルス学
+keywords: ランサムウェア、人間が操作するランサムウェア、人手によるランサムウェア、HumOR、強要攻撃、ランサムウェア攻撃、暗号化、暗号ウイルス学、ゼロ トラスト
 description: Windows Intune を MDA および MAM プロバイダーとして使用し、Windows 10 セキュリティ機能を使用して、ランサムウェア攻撃からMicrosoft 365 リソースを保護します。
-ms.openlocfilehash: 1ca17604bba09e5df83252d3d65c60561f56e2d1
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: adbefb7ac8ec574a69bc59a67cab61cc69d00568
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59444627"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60702213"
 ---
 # <a name="step-4-protect-devices"></a>手順 4. デバイスの保護
 
