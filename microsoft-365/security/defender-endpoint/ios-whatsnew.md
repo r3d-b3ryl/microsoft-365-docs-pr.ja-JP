@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: e6352992d0aeed9df7e64f331a4936ae4b29c223
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9d29ad4a6d4031200bfb9f58db4ac9bcec7bab31
+ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162616"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "60804876"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>iOS のエンドポイント向け Microsoft Defender の新機能
 
@@ -32,6 +32,15 @@ ms.locfileid: "60162616"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+## <a name="threat-and-vulnerability-management"></a>脅威と脆弱性の管理
+
+2021 年 11 月 2 日、Android と iOS の脅威と脆弱性の管理のパブリック プレビューを発表しました。 詳細については [、techcommunity の投稿を参照してください](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/reduce-risk-across-your-environments-with-the-latest-threat-and/ba-p/2902691)。
+
+## <a name="1123010101"></a>1.1.23010101
+
+- バグ修正とパフォーマンスの向上 
+  - このリリースでは、パフォーマンスの最適化が行われた。 このバージョンでバッテリーのパフォーマンスをテストし、フィードバックをお寄せください。
 
 ## <a name="1120240103"></a>1.1.20240103
 - デバイス正常性カード - デバイス正常性カードは、保留中のソフトウェア更新プログラムについてエンド ユーザーに通知します。

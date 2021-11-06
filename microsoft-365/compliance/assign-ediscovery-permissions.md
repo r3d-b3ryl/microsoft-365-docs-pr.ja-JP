@@ -20,12 +20,12 @@ description: 電子情報開示関連のタスクを実行するために必要�
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: d6515dc213fe6b89a9a638c9df8dcad63785967c
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: f2328c7ea45b842d17260976248fafc28b503998
+ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364557"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "60804967"
 ---
 # <a name="assign-ediscovery-permissions-in-the-microsoft-365-compliance-center"></a>電子情報開示のアクセス許可をユーザーに割り当Microsoft 365 コンプライアンス センター
 
@@ -81,13 +81,13 @@ Microsoft 365 コンプライアンス センターの [アクセス許可] ペ�
 
 次の表に、Microsoft 365 コンプライアンス センター の電子情報開示関連の RBAC ロールを示し、各役割が既定で割り当てられている組み込みの役割グループを示します。
   
-| Role | コンプライアンス管理者 | 電子情報開示マネージャー &管理者 | 組織管理 | レビュー担当者 |
+| ロール | コンプライアンス管理者 | 電子情報開示マネージャー &管理者 | 組織管理 | レビュー担当者 |
 |:-----|:-----:|:-----:|:-----:|:-----:|
 |ケース管理 <br/> |![チェック マーク。](../media/checkmark.png) <br/> |![チェック マーク。](../media/checkmark.png) <br/> |![チェック マーク。](../media/checkmark.png) <br/> | <br/> |
 |コミュニケーション <br/> | <br/> |![チェック マーク。](../media/checkmark.png) <br/> | <br/> | <br/> |
 |コンプライアンス検索 <br/> |![チェック マーク。](../media/checkmark.png) <br/> |![チェック マーク。](../media/checkmark.png) <br/> |![チェック マーク。](../media/checkmark.png) <br/> | <br/> |
 |カストディアン <br/> | <br/> |![チェック マーク。](../media/checkmark.png) <br/> | <br/> | <br/> |
-|Export <br/> | <br/> |![チェック マーク。](../media/checkmark.png) <br/> | <br/> | <br/> |
+|エクスポート <br/> | <br/> |![チェック マーク。](../media/checkmark.png) <br/> | <br/> | <br/> |
 |Hold <br/>  |![チェック マーク。](../media/checkmark.png) <br/> |![チェック マーク。](../media/checkmark.png) <br/> |![チェック マーク。](../media/checkmark.png) <br/> | <br/> |
 |Preview <br/>  | <br/> |![チェック マーク。](../media/checkmark.png) <br/> | <br/> | <br/> |
 |レビュー <br/>  | <br/> |![チェック マーク。](../media/checkmark.png) <br/> | <br/> |![チェック マーク](../media/checkmark.png) <br/> |
@@ -199,7 +199,7 @@ Get-ComplianceCase -RoleGroup "Name of role group" -CaseType AdvancedEdiscovery
   Add-RoleGroupMember "eDiscovery Manager" -Member <name of security group>
   ```
 
-    Exchange配布グループとMicrosoft 365グループはサポートされていません。 メールが有効なセキュリティ グループを使用する必要があります。このグループは、PowerShell で実行Exchange Online作成できます `New-DistributionGroup -Type Security` 。 メールが有効なセキュリティ グループを作成 (およびメンバーを追加する) は、Exchange管理センターまたは管理センターで[行Microsoft 365 管理センター。](https://go.microsoft.com/fwlink/p/?linkid=2024339) 電子情報開示マネージャーの役割グループに新しいメールが有効なセキュリティを追加するには、作成後最大 60 分かかる場合があります。 
+    Exchange配布グループとMicrosoft 365グループはサポートされていません。 メールが有効なセキュリティ グループを使用する必要があります。このグループは、PowerShell で実行Exchange Online作成できます `New-DistributionGroup -Type Security` 。 メールが有効なセキュリティ グループを作成 (およびメンバーを追加する) は、Exchange管理センターまたは管理センターで[行Microsoft 365 管理センター。](https://go.microsoft.com/fwlink/p/?linkid=2024339) メールが有効な新しいセキュリティ グループを電子情報開示マネージャー役割グループに追加するには、作成後最大 60 分かかる場合があります。
 
     また、前述のとおり、セキュリティ/コンプライアンス センターの PowerShell で **Add-eDiscoveryCaseAdmin** コマンドレットを使用して、メールが有効なセキュリティ グループを電子情報開示管理者にすることはできません。 個別のユーザーは、電子情報開示管理者としてのみ追加できます。
 

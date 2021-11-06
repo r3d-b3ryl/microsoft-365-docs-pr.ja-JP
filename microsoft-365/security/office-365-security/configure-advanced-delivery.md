@@ -17,12 +17,12 @@ ms.custom: ''
 description: 管理者は、Exchange Online Protection (EOP) の高度な配信ポリシーを使用して、サポートされている特定のシナリオ (サード パーティのフィッシング シミュレーションとセキュリティ操作 (SecOps) メールボックスに配信されるメッセージ) でフィルター処理すべきではないメッセージを識別する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b8d5aba4974bf4ac179f88a08ae5f8c037fa0a71
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 5d131b150a030ade32e8d8d7f25692c0883c5d4d
+ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335540"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "60804907"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>サードパーティのフィッシング シミュレーションをユーザーに配信し、フィルター処理されていないメッセージを SecOps メールボックスに配信する構成
 
@@ -31,7 +31,7 @@ ms.locfileid: "60335540"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-既定で組織を[](secure-by-default.md)セキュリティで保護するために、Exchange Online Protection (EOP) では、マルウェアまたは高信頼フィッシングとして識別されるメッセージの安全なリストやフィルター バイパスは許可されません。 ただし、フィルター処理されていないメッセージの配信を必要とする特定のシナリオがあります。 次に例を示します。
+既定で組織を[](secure-by-default.md)セキュリティで保護するために、Exchange Online Protection (EOP) では、マルウェアまたは高信頼フィッシングとして識別されるメッセージの安全なリストやフィルター バイパスは許可されません。 ただし、フィルター処理されていないメッセージの配信を必要とする特定のシナリオがあります。 例:
 
 - **サード パーティのフィッシング シミュレーション**: シミュレートされた攻撃は、実際の攻撃が組織に影響を与える前に、脆弱なユーザーを特定するのに役立ちます。
 - **セキュリティ操作 (SecOps)** メールボックス: セキュリティ チームがフィルター処理されていないメッセージ (良いメッセージと悪いメッセージの両方) を収集および分析するために使用する専用のメールボックス。
@@ -138,7 +138,7 @@ ms.locfileid: "60335540"
 
 高度な配信ポリシーが役立つ 2 つのシナリオに加えて、フィルター処理をバイパスする必要がある他のシナリオがあります。
 
-- **サード パーティ製フィルター**: ドメインの MXレコードが Office 365 を指していない場合 (メッセージは最初にどこか別の [](secure-by-default.md)場所にルーティングされます)、既定ではセキュリティで保護 *されません。* 保護を追加する場合は、コネクタの拡張フィルター (スキップ リストとも呼ばれる) を有効にする *必要があります*。 詳細については、「サードパーティのクラウド サービスを使用してメール フローを管理する」を参照[Exchange Online。](/exchange/mail-flow-best-practices/manage-mail-flow-using-third-party-cloud) コネクタの拡張フィルター処理を使用しない場合は、メール フロー ルール (トランスポート ルールとも呼ばれる) を使用して、サード パーティ製のフィルター処理によって既に評価されているメッセージに対して Microsoft のフィルター処理をバイパスします。 詳細については、「メール フロー ルール [を使用してメッセージの SCL を設定する」を参照してください](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl.md)。
+- **サード パーティ製フィルター**: ドメインの MXレコードが Office 365 を指していない場合 (メッセージは最初にどこか別の [](secure-by-default.md)場所にルーティングされます)、既定ではセキュリティで保護 *されません。* 保護を追加する場合は、コネクタの拡張フィルター (スキップ リストとも呼ばれる) を有効にする *必要があります*。 詳細については、「サードパーティのクラウド サービスを使用してメール フローを管理する」を参照[Exchange Online。](/exchange/mail-flow-best-practices/manage-mail-flow-using-third-party-cloud) コネクタの拡張フィルター処理を使用しない場合は、メール フロー ルール (トランスポート ルールとも呼ばれる) を使用して、サード パーティ製のフィルター処理によって既に評価されているメッセージに対して Microsoft のフィルター処理をバイパスします。 詳細については、「メール フロー ルール [を使用してメッセージの SCL を設定する」を参照してください](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)。
 
 - **レビュー中** の誤検知 : 管理者の申請を通じて Microsoft によって分析中の特定の [](admin-submission.md)メッセージを一時的に許可して、Microsoft に不適切とマークされている既知の良いメッセージ (誤検知) を報告することができます。 すべての上書きと同様に、これらの許容量 **_は_** 一時的なものとすることを強くお勧めします。
 

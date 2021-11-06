@@ -18,12 +18,12 @@ ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 ms.custom:
 - seo-marvel-apr2020
 description: 非アクティブなメールボックスの内容を保持する必要がなくなったMicrosoft 365、非アクティブなメールボックスを完全に削除できます。
-ms.openlocfilehash: 69cbe206e040ca1b1f76e846c3b3efbf45c1539e
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 929b3d8a01dd9c88bc12e6e13bf4477a07496b34
+ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786892"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "60804631"
 ---
 # <a name="delete-an-inactive-mailbox"></a>非アクティブなメールボックスを削除する
 
@@ -126,7 +126,7 @@ Set-RetentionCompliancePolicy -Identity <retention policy GUID without prefix or
 
 ### <a name="remove-in-place-holds"></a>インプレース ホールドを削除する
 
- 非アクティブなメールボックスからインプレース ホールドを削除する方法は 2 つあります。 
+ 非アクティブなメールボックスからインプレース ホールドを削除する方法は 2 つあります。
   
 - **Hold オブジェクトIn-Place削除します**。 完全に削除する非アクティブなメールボックスが In-Place Hold の唯一のソース メールボックスである場合は、保持オブジェクトIn-Placeできます。 
 
@@ -204,7 +204,7 @@ Set-RetentionCompliancePolicy -Identity <retention policy GUID without prefix or
    Get-MailboxSearch $InPlaceHold.Name | FL Sources
    ```
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 - **非アクティブなメールボックスは、回復可能な削除によって削除されたメールボックスの一種です。** Exchange Onlineで、回復可能な削除によって削除されたメールボックスは、メールボックスが削除されてはいるものの、特定の保持期間内であれば回復することができます。 保留状態でない削除済みメールボックスの場合、メールボックスは 30 日以内に回復可能です。 非アクティブなメールボックス (削除前の保留メールボックス) は、保留が削除されるまで、回復可能な状態で削除されたままです。 非アクティブなメールボックスから保留リストを削除すると、メールボックスは非アクティブな状態ではなくなりました。 その代わりに、その保留が削除された日から 183 日間、Exchange Online に回復可能な状態で残ります。 183 日後、削除されたメールボックスは完全削除のマークが付き、回復できません。
 

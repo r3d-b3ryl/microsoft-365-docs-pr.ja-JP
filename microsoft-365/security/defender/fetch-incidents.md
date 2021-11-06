@@ -1,6 +1,6 @@
 ---
-title: MSSP カスタマー テナントからのアラートの取得
-description: 顧客テナントからアラートを取得する方法について学習する
+title: インシデントMicrosoft 365 Defenderフェッチ
+description: 顧客テナントからインシデントMicrosoft 365 Defender取得する方法について学習する
 keywords: マネージド セキュリティ サービス プロバイダー、mssp、構成、統合
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -15,16 +15,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 5d5f0e7ec66deabcc037d529676fadabd9999729
+ms.openlocfilehash: 1ea39bfce5303360165a56d6361908d1014d370f
 ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/06/2021
-ms.locfileid: "60804943"
+ms.locfileid: "60805029"
 ---
-# <a name="fetch-alerts-from-mssp-customer-tenant"></a>MSSP カスタマー テナントからのアラートの取得
+# <a name="fetch-microsoft-365-defender-incidents"></a>インシデントMicrosoft 365 Defenderフェッチ 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -41,9 +41,9 @@ ms.locfileid: "60804943"
 - SIEM メソッドの使用
 - API の使用
 
-## <a name="fetch-alerts-into-your-siem"></a>SIEM にアラートをフェッチする
+## <a name="fetch-incidents-into-your-siem"></a>SIEM にインシデントをフェッチする
 
-SIEM システムにアラートをフェッチするには、次の手順を実行する必要があります。
+SIEM システムにインシデントをフェッチするには、次の手順を実行する必要があります。
 
 - 手順 1: サード パーティ製アプリケーションを作成する
 - 手順 2: 顧客のテナントからアクセストークンと更新トークンを取得する
@@ -172,17 +172,11 @@ SIEM システムにアラートをフェッチするには、次の手順を実
 
 5. [アプリケーション **の承認] をクリックします**。
 
-これで、SIEM に関連する構成ファイルをダウンロードし、その API にMicrosoft 365 Defenderできます。 詳細については、「SIEM ツールにアラート [をプルする」を参照してください](configure-siem.md)。
+これで、SIEM に関連する構成ファイルをダウンロードし、その API にMicrosoft 365 Defenderできます。 詳細については、「SIEM ツールにアラート [をプルする」を参照してください](../defender-endpoint/configure-siem.md)。
 
 - ArcSight 構成ファイル / Splunk Authentication Properties ファイルで、シークレット値を設定してアプリケーション キーを手動で記述します。
 - ポータルで更新トークンを取得する代わりに、前の手順のスクリプトを使用して更新トークンを取得 (または他の方法で取得) します。
 
 ## <a name="fetch-alerts-from-mssp-customers-tenant-using-apis"></a>API を使用して MSSP 顧客のテナントからアラートを取得する
 
-REST API を使用してアラートをフェッチする方法については、「REST API を使用 [してアラートをプルする」を参照してください](pull-alerts-using-rest-api.md)。
-
-## <a name="see-also"></a>関連項目
-
-- [ポータルへの MSSP アクセスを許可する](grant-mssp-access.md)
-- [MSSP カスタマー ポータルにアクセスする](access-mssp-portal.md)
-- [アラート通知を構成する](configure-mssp-notifications.md)
+REST API を使用してアラートをフェッチする方法については、「REST API を使用 [してアラートをプルする」を参照してください](../defender-endpoint/pull-alerts-using-rest-api.md)。

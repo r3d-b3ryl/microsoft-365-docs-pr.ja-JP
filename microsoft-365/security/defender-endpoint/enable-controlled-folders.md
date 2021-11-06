@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 9162c0c6fa3afd74a00b9e0ee75b3d0a3fbd2a6d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 527bd73d11a40672839d29a5007298a0807d95b6
+ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174797"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "60804787"
 ---
 # <a name="enable-controlled-folder-access"></a>制御されたフォルダー アクセスを有効にする
 
@@ -33,11 +33,11 @@ ms.locfileid: "60174797"
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-[フォルダー アクセスの制御により](controlled-folders.md) 、悪意のあるアプリやランサムウェアなどの脅威から貴重なデータを保護できます。 フォルダー アクセスの制御は、サーバー 2019 Windows 10およびWindowsに含まれます。
+[フォルダー アクセスの制御により](controlled-folders.md) 、悪意のあるアプリやランサムウェアなどの脅威から貴重なデータを保護できます。 フォルダー アクセスの制御は、サーバー 2019 Windows 10およびWindowsに含まれます。  フォルダー アクセスの制御は、Windows Server [2012R2 および 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)の最新の統合ソリューションの一部として含まれています。
 
 次の方法を使用して、フォルダーアクセスの制御を有効にできます。
 
-- [Windows セキュリティアプリ](#windows-security-app)
+- [Windows セキュリティアプリ *](#windows-security-app)
 - [Microsoft エンドポイント マネージャー](#endpoint-manager)
 - [モバイル デバイス管理 (MDM)](#mobile-device-management-mdm)
 - [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
@@ -62,6 +62,8 @@ ms.locfileid: "60174797"
 3. [フォルダー アクセスの制御] **のスイッチを [オン]** に **設定します**。
 
 > [!NOTE]
+> *このメソッドは、サーバー 2012R2 Windows 2016 では使用できません。
+> 
 > グループ ポリシー、PowerShell、または MDM CSP を使用してフォルダー アクセスの制御が構成されている場合、デバイスの再起動後に Windows セキュリティ アプリで状態が変更されます。
 > これらのツールを使用して機能が **監査** モードに設定されている場合、アプリWindows セキュリティ状態が [オフ] と表示 **されます**。
 > ユーザー プロファイル データを保護する場合は、ユーザー プロファイルをインストール ドライブの既定のWindowsすることをお勧めします。
@@ -106,7 +108,7 @@ ms.locfileid: "60174797"
 4. 変更をブロックまたは監査するか、他のアプリを許可するか、他のフォルダーを追加するか選択し、[次へ] を **選択します**。
 
    > [!NOTE]
-   > Wilcard はアプリケーションでサポートされますが、フォルダーではサポートされません。 サブフォルダーは保護されません。 許可されたアプリは、再起動するまでイベントをトリガーし続ける。
+   > ワイルドカードはアプリケーションでサポートされますが、フォルダーではサポートされません。 サブフォルダーは保護されません。 許可されたアプリは、再起動するまでイベントをトリガーし続ける。
 
 5. 設定を確認し、[次へ] **を選択** してポリシーを作成します。
 

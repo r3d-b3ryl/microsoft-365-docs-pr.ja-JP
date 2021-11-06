@@ -1,8 +1,7 @@
 ---
-title: Microsoft Defender for Endpoint detections API フィールド
-description: '[検出] API フィールドが、アプリ内の値にマップされるMicrosoft 365 Defender'
+title: Microsoft Defender for Endpoint アラート フィールド
+description: アラート フィールドが Microsoft Defender for Endpoint の値にマップされる方法を理解する
 keywords: 検出、検出フィールド、フィールド、API、フィールド、プル検出、rest api、要求、応答
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -17,14 +16,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 8913573f534dcb106ad4310171a90e4099a1ac99
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 08a280130f7bd7566c0ef3998034998b5eff5ef6
+ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587375"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "60804781"
 ---
-# <a name="microsoft-defender-for-endpoint-detections-api-fields"></a>Microsoft Defender for Endpoint detections API フィールド
+# <a name="microsoft-defender-for-endpoint-alert-fields"></a>Microsoft Defender for Endpoint アラート フィールド
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -57,7 +56,7 @@ ms.locfileid: "60587375"
 > |1|AlertTitle|name|Microsoft Defender AV が 「ミカッツ」 の重大度の高いマルウェアを検出しました|すべての検出で使用可能な値。|
 > |2|重要度|deviceSeverity|高|すべての検出で使用可能な値。|
 > |3|カテゴリ|deviceEventCategory|マルウェア|すべての検出で使用可能な値。|
-> |4 |検出ソース|sourceServiceName|ウイルス対策|Microsoft Defender ウイルス対策または Defender for Endpoint。 すべての検出で使用可能な値。|
+> |4|検出ソース|sourceServiceName|ウイルス対策|Microsoft Defender ウイルス対策または Defender for Endpoint。 すべての検出で使用可能な値。|
 > |5|MachineName|sourceHostName|desktop-4a5ngd6|すべての検出で使用可能な値。|
 > |6 |FileName|fileName|Robocopy.exe|ファイルまたはプロセスに関連付けられた検出に使用できます。|
 > |7 |FilePath|filePath|C:\Windows\System32\Robocopy.exe|ファイルまたはプロセスに関連付けられた検出に使用できます。|

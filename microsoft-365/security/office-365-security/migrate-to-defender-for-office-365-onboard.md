@@ -19,12 +19,12 @@ ms.custom: migrationguides
 description: サード パーティ製の保護サービスまたはデバイスから Microsoft Defender に移行する手順を実行して、Office 365します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a218aa1e86bd696079bb2c77b630bcf870bc0c25
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: a40ee22ee843d250c90a8b03526ab61fe3ad56f6
+ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60779190"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "60804643"
 ---
 # <a name="migrate-to-microsoft-defender-for-office-365---phase-3-onboard"></a>Microsoft Defender に移行して、Office 365 - フェーズ 3: オンボード
 
@@ -229,4 +229,4 @@ MX レコードを新しいレコードに切り替える準備ができたら�
 
 - ユーザーの申請、特にユーザーが報告 [したフィッシング メッセージを確認します](/microsoft-365/security/office-365-security/automated-investigation-response-office.md#example-a-user-reported-phish-message-launches-an-investigation-playbook)。
 - 脅威保護の状態レポート [で上書きを確認します](view-email-security-reports.md#threat-protection-status-report)。
-- 高度 [なハンティング クエリ](/microsoft-365/security/defender/advanced-hunting-example.md) を使用して、調整の機会と危険なメッセージを探します。
+- 高度 [なハンティング クエリ](/microsoft-365/security/defender/advanced-hunting-example) を使用して、調整の機会と危険なメッセージを探します。
