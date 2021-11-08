@@ -483,6 +483,7 @@
 
 
 ## 参照
+### [脅威インテリジェンスの概念を理解する](threat-indicator-concepts.md)
 ### [他の Microsoft ソリューションとの統合を構成する]()
 #### [条件付きアクセスを構成する](configure-conditional-access.md)
 #### [Microsoft Cloud App Security との統合を構成する](microsoft-cloud-app-security-config.md)
@@ -496,7 +497,7 @@
 ###### [Hello World](api-hello-world.md)
 ###### [アプリケーション コンテキストでアクセスする](exposed-apis-create-app-webapp.md)
 ###### [ユーザー コンテキストでアクセスする](exposed-apis-create-app-nativeapp.md)
-###### [パートナー アプリケーションへのアクセスを取得する](exposed-apis-create-app-partners.md)
+
 
 
 ##### [Microsoft Defender for Endpoint API スキーマ]()
@@ -645,13 +646,9 @@
 
 
 #### [SIEM 統合]()
-##### [脅威インテリジェンスの概念を理解する](threat-indicator-concepts.md)
-##### [検出をプルするさまざまな方法について](configure-siem.md)
-##### [SIEM 統合を有効にする](enable-siem-integration.md)
-##### [検出をプルするように Micro Focus ArcSight を構成する](configure-arcsight.md)
+##### [Microsoft Defender for Endpoint を使用して SIEM ツールを統合する](configure-siem.md)
 ##### [Microsoft Defender for Endpoint の検出フィールド](api-portal-mapping.md)
 ##### [SIEM REST API を使用した検出のプル](pull-alerts-using-rest-api.md)
-##### [顧客テナントからアラートを取得する](fetch-alerts-mssp.md)
 ##### [SIEM ツール統合に関する問題のトラブルシューティング](troubleshoot-siem.md)
 
 #### [パートナーと API]()
@@ -666,19 +663,24 @@
 ###### [デバイス グループの使用](machine-groups.md)
 ###### [デバイス タグの作成と管理](machine-tags.md)
 
-#### [マネージド セキュリティ サービス プロバイダー (MSSP) の統合]()
-##### [マネージド セキュリティ サービス プロバイダーの統合を構成する](configure-mssp-support.md)
-##### [サポート対象マネージド セキュリティ サービス プロバイダー](mssp-list.md)
-##### [ポータルへの MSSP アクセスを許可する](grant-mssp-access.md)
-##### [MSSP カスタマー ポータルにアクセスする](access-mssp-portal.md)
-##### [アラート通知を構成する](configure-mssp-notifications.md)
-##### [パートナー アプリケーションへのアクセスを取得する](exposed-apis-create-app-partners.md)
 
+
+
+
+
+
+### [マネージド セキュリティ サービス プロバイダー (MSSP) の統合]()
+#### [マネージド セキュリティ サービス プロバイダーの統合を構成する](configure-mssp-support.md)
+#### [サポート対象マネージド セキュリティ サービス プロバイダー](mssp-list.md)
+#### [ポータルへの MSSP アクセスを許可する](grant-mssp-access.md)
+#### [MSSP カスタマー ポータルにアクセスする](access-mssp-portal.md)
+#### [アラート通知を構成する](configure-mssp-notifications.md)
+#### [パートナー アプリケーションへのアクセスを取得する](exposed-apis-create-app-partners.md)
+#### [顧客テナントからアラートを取得する](fetch-alerts-mssp.md)
+#### [マネージド セキュリティ サービス プロバイダーの機会](mssp-support.md)
 ### [パートナー統合シナリオ]()
 #### [テクニカル パートナーの機会](partner-integration.md)
-#### [マネージド セキュリティ サービス プロバイダーの機会](mssp-support.md)
 #### [Microsoft Defender for Endpoint パートナーになる](get-started-partner-integration.md)
-
 ### [統合]()
 #### [Microsoft Defender for Endpoint 統合](threat-protection-integration.md)
 #### [条件付きアクセスでユーザー、データ、デバイスを保護する](conditional-access.md)

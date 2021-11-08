@@ -300,6 +300,8 @@
           href: /microsoft-365/security/defender-endpoint/deployment-phases.md
         - name: Microsoft 以外のエンドポイント保護から Microsoft Defender for Endpoint に切り替える
           href: ../security/defender-endpoint/switch-to-microsoft-defender-migration.md
+        - name: Microsoft 以外の保護ツールから Microsoft Defender for Office 365 に切り替える
+          href: ../security/office-365-security/migrate-to-defender-for-office-365.md
         - name: Microsoft 365 の優先アカウントのセキュリティに関する推奨事項
           href: ../security/office-365-security/security-recommendations-for-priority-accounts.md
         - name: 元従業員を削除してデータを保護する
@@ -324,7 +326,7 @@
           href: team-security-isolation-dev-test.md
 - name: 業界固有のガイダンス
   items:
-    - name: 財務
+    - name: 金融サービス
       items:
         - name: 金融サービスのセキュリティとコンプライアンス
           href: financial-services-secure-collaboration.md

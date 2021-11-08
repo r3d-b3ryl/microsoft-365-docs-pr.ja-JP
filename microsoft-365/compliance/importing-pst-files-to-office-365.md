@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Microsoft 365 コンプライアンス センターのインポート サービスを使用して、メール データ (PSTファイル) をユーザーのメールボックスに一括でインポートする方法について説明します。
-ms.openlocfilehash: 7f632288b339cbccb99bd07330ebe705471340aa
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 721129905d6d0818304972572b1515ff167bffc8
+ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60701951"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "60804931"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>組織の PST ファイルのインポートの概要
 
@@ -171,9 +171,10 @@ PST ファイル形式には、ANSI と Unicode という 2 つのバージョ�
 
 ネットワークの性能によって異なりますが、一般的には組織の Azure Storage 領域にアップロードするデータ 1 TB あたり数時間かかります。 PST ファイルが Azure Storage 領域にコピーされると、各 PST ファイルは 1 日あたり 24 GB 以上の速度で Microsoft 365 のメールボックスにインポートされます<sup>\*</sup>。 この速度ではお客様のニーズが満たされない場合、メール データを Office 365 に移行するための他の方法を検討することをお勧めします。 詳細については、「[複数のメール アカウントを Office 365 に移行する方法](/Exchange/mailbox-migration/mailbox-migration)」を参照してください。
 
-<sup>\*</sup> このレートは保証されません。 サーバー ワークロードと一時的なパフォーマンスの問題により、この速度が低下する可能性があります。
-
 複数の PST ファイルを異なる複数のメールボックスにインポートする場合、インポート プロセスは並行して実行されます。つまり、対になるそれぞれの PST とメールボックスが同時にインポートされます。 複数の PST ファイルを同じメールボックスにインポートする場合も、同時ではなく順次インポートされます (一度に 1 ファイルずつ)。
+
+> [!NOTE]
+> <sup>\*</sup> このレートは保証されません。 サーバー ワークロードと一時的なパフォーマンスの問題により、この速度が低下する可能性があります。
 
 #### <a name="how-does-the-pst-import-process-handle-duplicate-email-items"></a>PST インポート プロセスでは、重複するメールアイテムはどのように処理されますか?
 
@@ -256,9 +257,12 @@ Microsoft データ センターにハード ドライブが到着した後、PS
 
 #### <a name="how-long-does-it-take-to-import-a-pst-file-to-a-mailbox-using-drive-shipping"></a>ドライブ送付を使用してメールボックスに PST ファイルをインポートするには、どれぐらい時間がかかりますか?
 
-PST ファイルが Azure Storage 領域にアップロードされると、Microsoft 365 が (セキュリティで保護された安全な方法で) PST ファイル内のデータを分析して、アイテムの経過時間と、PST ファイルに含まれるさまざまなメッセージの種類を識別します。 この分析が完了したら、PST ファイルのすべてのデータをインポートしたり、フィルターを設定してインポートするデータを制御したりできます。 インポート ジョブを開始した後、PST ファイルは 1 日に少なくとも 24 GB の速さで Microsoft 365 メールボックスにインポートされます。 この速度ではお客様のニーズが満たされない場合、メール データを Microsoft 365 に移行するための他の方法を検討することをお勧めします。 詳細については、「[複数のメール アカウントを Microsoft 365 に移行する方法](/Exchange/mailbox-migration/mailbox-migration)」を参照してください。
+PST ファイルが Azure Storage 領域にアップロードされると、Microsoft 365 が (セキュリティで保護された安全な方法で) PST ファイル内のデータを分析して、アイテムの経過時間と、PST ファイルに含まれるさまざまなメッセージの種類を識別します。 この分析が完了したら、PST ファイルのすべてのデータをインポートしたり、フィルターを設定してインポートするデータを制御したりできます。 ジョブのインポートを開始すると、PST ファイルが 1 日約 24 GB の速度で Microsoft 365 メールボックスにインポートされます。<sup>\*</sup>この速度ではお客様のニーズが満たされない場合、メール データを Microsoft 365 に移行するための他の方法を検討することをお勧めします。 詳細については、「[複数のメール アカウントを Microsoft 365 に移行する方法](/Exchange/mailbox-migration/mailbox-migration)」を参照してください。
 
 複数の PST ファイルを異なる複数のメールボックスにインポートする場合、インポート プロセスは並行して実行されます。つまり、対になるそれぞれの PST とメールボックスが同時にインポートされます。 複数の PST ファイルを同じメールボックスにインポートする場合も、同時ではなく順次インポートされます (一度に 1 ファイルずつ)。
+
+> [!NOTE]
+> <sup>\*</sup> このレートは保証されません。 サーバー ワークロードと一時的なパフォーマンスの問題により、この速度が低下する可能性があります。
 
 #### <a name="after-microsoft-uploads-my-pst-files-to-azure-how-long-are-they-kept-in-azure-before-theyre-deleted"></a>Microsoft が私の PST ファイルを Azure にアップロードした後、削除されるまで、どのくらいの期間 Azure に保持されますか?
 

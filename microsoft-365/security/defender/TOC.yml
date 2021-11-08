@@ -392,10 +392,16 @@
                       href: api-update-incidents.md
                     - name: インシデントの取得
                       href: api-get-incident.md
-        - name: プレビュー機能
-          href: preview.md
-        - name: 問題のトラブルシューティング
-          href: ./troubleshoot.md
+            - name: Microsoft 365 Defender インシデントの取り込み
+              href: fetch-incidents.md
+            - name: SIEM 統合
+              items:
+                - name: Microsoft 365 Defender と SIEM ツールの統合
+                  href: configure-siem-defender.md
+                - name: SIEM ツールの統合における問題のトラブルシューティング
+                  href: ../defender-endpoint/troubleshoot-siem.md
+            - name: 脅威インテリジェンスの概念を理解する
+              href: ../defender-endpoint/threat-indicator-concepts.md
     - name: Microsoft Defender for Office 365
       href: ../office-365-security/index.yml
     - name: Microsoft Defender for Endpoint
