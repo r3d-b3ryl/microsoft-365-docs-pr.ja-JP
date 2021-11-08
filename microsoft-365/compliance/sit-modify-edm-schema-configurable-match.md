@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 構成可能な一致を使用するために、完全一致スキーマを変更する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a7d401c89ccff96615c4b367341542bf0ab5c697
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: 40f7ef0f538fd79c0e8ff44de32a4bdd72254f7a
+ms.sourcegitcommit: 854f20e8b7d3ef8f4c14cf189560f76056552334
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364701"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60825553"
 ---
 # <a name="modify-exact-data-match-schema-to-use-configurable-match"></a>構成可能な一致を使用するために完全一致スキーマを変更する
 
@@ -99,8 +99,7 @@ ms.locfileid: "60364701"
     - A から Z
     - a から z
     - \"
-    - \,
-    - |
+    - \,    
 
 6. [セキュリティ/コンプライアンス センター PowerShellに接続する](/powershell/exchange/connect-to-scc-powershell)の手順を使用して、セキュリティ/コンプライアンス センターに接続します。
 

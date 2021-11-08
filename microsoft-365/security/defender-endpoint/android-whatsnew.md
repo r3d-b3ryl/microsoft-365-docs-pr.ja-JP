@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: c29570668f6fcf542ef3336c8053b395331fcce2
-ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
+ms.openlocfilehash: 416bea849ac493afd96f9c3969f9f9642135d8a1
+ms.sourcegitcommit: 854f20e8b7d3ef8f4c14cf189560f76056552334
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "60792546"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60825601"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-android"></a>Android のエンドポイント向け Microsoft Defender の新機能
 
@@ -34,13 +34,11 @@ ms.locfileid: "60792546"
 Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 ## <a name="upcoming-permission-changes-for-microsoft-defender-for-endpoint-running-android-11-or-later-nov-2021"></a>Android 11 以降を実行しているエンドポイント用 Microsoft Defender の今後のアクセス許可の変更 (2021 年 11 月)
-リリース ビルド: 1.0.3501.0301 リリース月: 2021 年 11 月
+リリース ビルド: 1.0.3501.0301 リリース月: 2021 年 11 月 Microsoft Defender for Endpoint は [、Google](https://developer.android.com/distribute/play-policies#APILevel30) が Android API 30 にアップグレードするために必要なこの更新プログラムをリリースしました。 この変更により、Android 11[](https://developer.android.com/training/data-storage/manage-all-files#all-files-access-google-play)以降を実行しているデバイスの新しいストレージアクセス許可へのアクセスを求めるユーザーにメッセージが表示されます。 ユーザーは、リリース ビルド 1.0.3501.0301 以降で Defender アプリを更新した後、この新しいストレージアクセス許可を受け入れる必要があります。 これにより、Defender の 「アプリセキュリティ」 機能が中断することなく機能します。 詳細については、以下のセクションの詳細を参照してください。
 
-Microsoft Defender for Endpoint は [、Google](https://developer.android.com/distribute/play-policies#APILevel30) によって Android API 30 へのアップグレードを義務付けされています。 この変更により、Android 11 以降 [を](https://developer.android.com/training/data-storage/manage-all-files#all-files-access-google-play) 実行しているデバイスに対する新しい記憶域のアクセス許可を求めるメッセージが表示されます。 ユーザーは、リリース ビルド 1.0.3501.0301 以降で Defender アプリを更新した後、この新しいストレージアクセス許可を受け入れる必要があります。 これにより、Defender の 「アプリセキュリティ」 機能が中断することなく機能します。 詳細については、以下のセクションの詳細を参照してください。
-
-**これは組織にどのような影響を与えるのか。**
-
-これらの変更は、Android 11 以降を実行しているデバイスで Microsoft Defender for Endpoint を使用し、Defender を更新してビルド 1.0.3501.0301 以降をリリースする場合に影響します。 この設定は、管理者が管理者によって構成Microsoft エンドポイント マネージャー。上記の Google API の変更により、ユーザーはアクションを実行する必要があります。
+**これは組織にどのような影響を与えるのか。** これらの変更は、Android 11 以降を実行しているデバイスで Microsoft Defender for Endpoint を使用し、Defender を更新してビルド 1.0.3501.0301 以降をリリースする場合に影響します。
+>[!NOTE]
+> 新しい記憶域のアクセス許可は、管理者が [自動承認] を [自動承認] に構成Microsoft エンドポイント マネージャー。 ユーザーは、このアクセス許可へのアクセスを提供するためにアクションを実行する必要があります。
 
 - **ユーザー エクスペリエンス:** ユーザーは、アプリのセキュリティに対するアクセス許可が見つからないことを示す通知を受け取ります。 ユーザーがこのアクセス許可を拒否すると、デバイスで 'App security' 機能が無効になります。 ユーザーがアクセス許可を受け入れるか拒否しない場合、承認されるまで、デバイスのロックを解除するかアプリを開く際に、引き続きプロンプトが表示されます。
 
