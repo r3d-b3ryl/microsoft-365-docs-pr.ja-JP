@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 ms.custom: admindeeplinkCOMPLIANCE
 description: Microsoft 365 エンドポイントのデータ損失防止を設定して、ファイルアクティビティを監視し、それらのファイルの保護アクションをエンドポイントに実装します。
-ms.openlocfilehash: 9a706350be231fa5af794cb2774e3d88fb89dc1b
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 1ab4eb4ebd1dbba220ca4fea496b1b9c5ea82f43
+ms.sourcegitcommit: 854f20e8b7d3ef8f4c14cf189560f76056552334
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786724"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60825577"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>エンドポイント データ損失防止を開始する
 
 Microsoft Endpoint Data Loss Prevention (Endpoint DLP) は、Microsoft 365 サービス全体で機密アイテムを検出して保護する Microsoft 365 Data Loss Prevention (DLP) スイートの機能の一部です。 MicrosoftのすべてのDLP製品の詳細については、「[データ損失防止の概要](dlp-learn-about-dlp.md)」を参照してください。 エンドポイント DLP の詳細については、「[エンドポイント データ損失防止の説明](endpoint-dlp-learn-about.md)」を参照してください。
 
-Microsoft Endpoint DLP を使用すると、Catalina 10.15 以上を実行する Windows 10 デバイスと macOS デバイス *(プレビュー)* を監視できます。 デバイスがオンボードされると、DLP は機密性の高いアイテムが使用および共有されたことを検出します。 これにより、適切に使用および保護されていることを確認し、危険にさらされる可能性のある動作を防止するために必要な可視性と制御を得ることができます。
+Microsoft Endpoint DLP では、Windows 10、Windows 11、macOS デバイス *(プレビュー)* Catalina 10.15 以上、を監視できます。 デバイスがオンボードされると、DLP は機密性の高いアイテムが使用および共有されたことを検出します。 これにより、適切に使用および保護されていることを確認し、危険にさらされる可能性のある動作を防止するために必要な可視性と制御を得ることができます。
 
 ## <a name="before-you-begin"></a>はじめに
 
@@ -78,18 +78,18 @@ Endpoint DLP からのデータは、[Activity エクスプローラー](data-cl
 - セキュリティ管理者
 - コンプライアンスデータ管理者
 
-### <a name="prepare-your-windows-10-endpoints"></a>Windows 10 エンドポイントを準備する
+### <a name="prepare-your-windows-1011-endpoints"></a>Windows 10/11 エンドポイントを準備する
 
-これらの要件を満たすために、Endpoint DLP の導入を計画している Windows 10 デバイスを確認してください。
+Endpoint DLP を展開する予定の Windows デバイスが、それらの要件を満たしているか、確認してください。
 
-1. Windows 10 x64 ビルド 1809 以降を実行している必要があります。
+1. Windows 10 x64 ビルド 1809、Windows 11 以降が動作している必要があります。
 
 1. マルウェア対策クライアントのバージョンは 4.18.2009.7 以降です。 Windows セキュリティ アプリを開いて現在のバージョンを確認し、[設定] アイコンを選択して、[バージョン情報] を選択します。 バージョン番号は、マルウェア対策クライアントのバージョンの下に表示されます。 Windows Update KB4052623 をインストールして、最新のマルウェア対策クライアントのバージョンに更新します。
 
    > [!NOTE]
    > 注: Windows セキュリティ コンポーネントはいずれもアクティブである必要はなく、Windows セキュリティの状態に関係なくエンドポイント DLP を実行できますが、[リアルタイム保護と動作の監視](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)) を有効にする必要があります。
 
-1. 次の Windows Update がインストールされています。
+1. 次の更新プログラムが Windows 10 デバイスにインストールされています
 
    > [!NOTE]
    > これらの更新プログラムは、デバイスをエンドポイント DLP にオンボードするための前提条件ではありませんが、重要な問題の修正が含まれているため、製品を使用する前にインストールする必要があります。
@@ -125,19 +125,16 @@ Endpoint DLP からのデータは、[Activity エクスプローラー](data-cl
 
 ### <a name="onboarding-devices"></a>オンボーディングデバイス
 
-この導入シナリオでは、まだオンボーディングされていないデバイスをオンボードし、Windows 10 デバイスで意図しない共有から機密アイテムを監視および保護します。
+この展開シナリオでは、まだオンボードされていないデバイスをオンボードし、Windows 10 または Windows 11 デバイスでの意図しない共有から機微なアイテムを監視して保護する必要があります。
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>を開きます。
 
-2. コンプライアンスセンターの設定ページを開き、[**オンボードデバイス**]を選択します。
-
-   > [!div class="mx-imgBorder"]
-   > ![デバイス管理を有効にする。](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
+2. **設定** > **デバイス オンボーディング** を選択します。
 
    > [!NOTE]
    > 通常、デバイスのオンボーディングが有効になるまで約60秒かかりますが、Microsoft サポートに連絡するまでに最大 30 分かかります。
 
-3. [**デバイス管理**]を選択して、[**デバイス**]リストを開きます。 デバイスをオンボードするまで、リストは空になります。
+3. **デバイス** を選択 して **デバイス** リストを開 きます。 デバイスをオンボードするまで、リストは空になります。
 
 4. オンボーディングプロセスを開始するには、[**オンボーディング**]を選択します。
 
@@ -146,12 +143,12 @@ Endpoint DLP からのデータは、[Activity エクスプローラー](data-cl
    > [!div class="mx-imgBorder"]
    > ![導入方法。](../media/endpoint-dlp-getting-started-3-deployment-method.png)
 
-6. 「[Windows 10 マシンのオンボーディングツールと方法](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)」の適切な手順に従います。 このリンクをクリックすると、手順 5 で選択した導入パッケージと一致する Microsoft Defender for Endpoint の手順にアクセスできるランディング ページが表示されます。
+6. 「[Windows マシンのオンボード ツールとメソッド](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)」の適切な手順に従います。 このリンクをクリックすると、手順 5 で選択した導入パッケージと一致する Microsoft Defender for Endpoint の手順にアクセスできるランディング ページが表示されます。
 
-    - グループポリシーを使用した Windows 10 マシンのオンボード
+    - グループ ポリシーを利用した Windows マシンの登録
     - Microsoft Endpoint Configuration Manager を使用した Windows 10 マシンのオンボード
-    - モバイルデバイス管理ツールを使用した Windows 10 マシンのオンボード
-    - ローカルスクリプトを使用した Windows 10 マシンのオンボード
+    - Mobile Device Management ツールを使用した Windows マシンの登録
+    - ローカル スクリプトを使用した Windows マシンの登録
     - シングル セッション シナリオでの非永続的な仮想デスクトップ インフラストラクチャ (VDI) マシンのオンボード
 
 完了後、エンドポイントがオンボードされ、デバイスリストに表示され、監査アクティビティログのActivity エクスプローラーへの報告も開始されます。
@@ -176,11 +173,11 @@ Endpoint DLP からのデータは、[Activity エクスプローラー](data-cl
 
 5. これらの追加デバイスに導入する方法を[**導入方法**]リストから選択し、[**パッケージをダウンロード**]します。
 
-6. 「[Windows 10 マシンのオンボーディングツールと方法](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)」の適切な手順に従います。 このリンクをクリックすると、手順 5 で選択した導入パッケージと一致する Microsoft Defender for Endpoint の手順にアクセスできるランディング ページが表示されます。
-    - グループポリシーを使用した Windows 10 マシンのオンボード
+6. 「[Windows マシンのオンボード ツールとメソッド](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)」の適切な手順に従います。 このリンクをクリックすると、手順 5 で選択した導入パッケージと一致する Microsoft Defender for Endpoint の手順にアクセスできるランディング ページが表示されます。
+    - グループ ポリシーを利用した Windows マシンの登録
     - Microsoft Endpoint Configuration Manager を使用した Windows 10 マシンのオンボード
-    - モバイルデバイス管理ツールを使用した Windows 10 マシンのオンボード
-    - ローカルスクリプトを使用した Windows 10 マシンのオンボード
+    - Mobile Device Management ツールを使用した Windows マシンの登録
+    - ローカル スクリプトを使用した Windows マシンの登録
     - 非永続的な仮想デスクトップインフラストラクチャ (VDI) マシンをオンボーディングします。
 
 完了後、エンドポイントがオンボードされ、[**デバイス**]テーブルの下に表示され、**Activity エクスプローラー** に監査ログのレポートを開始します。
@@ -217,7 +214,7 @@ Endpoint DLP からのデータは、[Activity エクスプローラー](data-cl
 - [DLP ポリシーの作成、テスト、調整](create-test-tune-dlp-policy.md)
 - [Activity Explorer を使い始める](data-classification-activity-explorer.md)
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/)
-- [Windows 10 マシン用のオンボーディングツールとメソッド](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
+- [Windows マシンの登録ツールとメソッド](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
 - [Microsoft 365 サブスクリプション](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
 - [Azure AD に参加しているデバイス](/azure/active-directory/devices/concept-azure-ad-join)
 - [Chromium ベースの新しい Microsoft Edge をダウンロードする](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)

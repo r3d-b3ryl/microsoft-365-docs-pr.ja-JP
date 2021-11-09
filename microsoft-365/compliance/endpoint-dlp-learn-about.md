@@ -19,25 +19,25 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 のエンドポイントのデータ損失防止は、ファイル アクティビティの監視と、それらのファイルに対する保護アクションをエンドポイントに拡張します。 コンプライアンス ソリューションでファイルが表示されます '
-ms.openlocfilehash: 182a86a92d628ce5c67c1bcf4e4d3976ce7fa697
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: afe6b7c2454a52428e633bca55e72055308a1f74
+ms.sourcegitcommit: 854f20e8b7d3ef8f4c14cf189560f76056552334
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60699319"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60825589"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Microsoft 365 のエンドポイントのデータ損失防止について説明する
 
 Microsoft 365 のデータ損失防止 (DLP) を使用すると、機密があると判断されたアイテムに対して、発生しているアクションを監視し、それらのアイテムの意図しない共有を防ぐことができます。 DLP の詳細については、「[データ損失防止ポリシーについて](dlp-learn-about-dlp.md)」を参照してください。
 
-**エンドポイントデータ損失防止** (エンドポイント DLP) は、Windows 10 および macOS (Catalina 10.15 以上) デバイスに物理的に保存されている機密アイテムについて、DLP のアクティビティの監視と保護機能を拡張します。 デバイスが、 Microsoft 365 コンプライアンス ソリューションに オンボードすると、機密アイテムを使用してユーザーが行っていることに関する情報が[Activity Explorer](data-classification-activity-explorer.md)に表示され、[DLPポリシー](create-test-tune-dlp-policy.md)を通して、それらのアイテムに保護アクションを適用できます。
+**エンドポイント データ損失防止** (Endpoint DLP) は、DLP のアクティビティ監視および保護能力を、Windows 10、Windows 11、および macOS (Catalina 10.15 以上) デバイスに物理的に保存される機密アイテムに拡張します。 デバイスが、 Microsoft 365 コンプライアンス ソリューションに オンボードすると、機密アイテムを使用してユーザーが行っていることに関する情報が[Activity Explorer](data-classification-activity-explorer.md)に表示され、[DLPポリシー](create-test-tune-dlp-policy.md)を通して、それらのアイテムに保護アクションを適用できます。
 
 > [!TIP]
 > リムーバブル記憶域のデバイス コントロールを探している場合は、「[Microsoft Defender for Endpoint Device Control のリムーバブル記憶域アクセス制御](../security/defender-endpoint/device-control-removable-storage-access-control.md#microsoft-defender-for-endpoint-device-control-removable-storage-access-control)」 を参照してください。
 
 ## <a name="endpoint-activities-you-can-monitor-and-take-action-on"></a>監視と対処が必要なエンドポイントのアクティビティ
 
-Microsoft エンドポイント DLP を使用すると、Windows 10 デバイスまたは macOS デバイスに物理的に保存されている機密アイテムに対してユーザーが行う次の種類のアクティビティを監査および管理できます。
+Microsoft Endpoint DLP を使用すると、ユーザーが物理的に Windows 10、Windows 11、または macOS デバイスに保存されている機密アイテムに対して行う次の種類のアクティビティを監査および管理できます。
 
 |最新情報 |説明  | 監査可能/制限可能|
 |---------|---------|---------|
