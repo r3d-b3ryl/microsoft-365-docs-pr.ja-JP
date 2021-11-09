@@ -15,12 +15,12 @@ ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 74a16519a6b7e6640c72eb500b1c72d5df494fd9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ec745f46790ee6d230266f010a9311e1cebb12cc
+ms.sourcegitcommit: 6d470e37b2a1c40c7f31c2365ae654a3c35d7674
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60204337"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60834104"
 ---
 # <a name="get-started-with-information-barriers"></a>情報バリアの使用を開始する
 
@@ -283,9 +283,6 @@ SharePoint および OneDriveで情報バリアを有効にするには、「情
 
 モードは、リソースの IB モードに基づいて、Microsoft 365リソースのアクセス、共有、およびメンバーシップを強化するのに役立ちます。 モードは、Microsoft 365 グループ、Microsoft Teams、OneDrive、SharePoint サイトでサポートされ、新規または既存の IB 構成で自動的に有効になります。
 
->[!IMPORTANT]
->2021 年 10 月 15 日より前にテナントで情報バリアを有効にしている場合は、追加の手順は必要ではありません。 2021 年 10 月 15 日以降にテナントで情報バリアをオンボーディングする場合は、Microsoft Teams に接続されている既存のすべての Microsoft 365 グループに IB モードを設定して、グループを情報バリアコンプライアンスに適用する必要があります。
-
 次の IB モードは、リソースでMicrosoft 365されます。
 
 | **Mode** | **Description** | **例** |
@@ -353,7 +350,7 @@ Contoso は、次の表で示すように 3 つのポリシーを定義します
 
 コマンドレットが終了すると、Contoso は法的および業界の要件に準拠しています。
 
-## <a name="resources"></a>リソース
+## <a name="resources"></a>関連情報
 
 - [情報バリアの概要を取得する](information-barriers.md)
 - [詳細については、Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams)
