@@ -14,12 +14,12 @@ audience: ITPro
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 48a813765693c69cff726c6973959ee63200a357
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: bb2c66c8ebb04b32fb409a749b7f1872361dd4a4
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753923"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882239"
 ---
 # <a name="device-control-printer-protection"></a>デバイス制御のプリンター保護
 
@@ -48,7 +48,7 @@ Intune でのポリシー展開では、OMA-URI を使用してポリシーを�
 
 ## <a name="prepare-your-endpoints"></a>エンドポイントを準備する
 
-これらの要件を満Windows 10プリンター保護を展開する予定のデバイスがインストールされている必要があります。
+これらの要件を満Windows 10プリンター Windows 11 台のデバイスがインストールされている必要があります。
 
 1. 次の Windows Update がインストールされています。
     - 1809 Windows: 更新プログラム[KB5003217](https://support.microsoft.com/topic/may-20-2021-kb5003217-os-build-17763-1971-preview-08687c95-0740-421b-a205-54aa2c716b46) Windowsインストールする

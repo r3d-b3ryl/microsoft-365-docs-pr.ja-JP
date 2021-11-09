@@ -2,7 +2,6 @@
 title: 攻撃面の減少イベントを表示する
 description: カスタム ビューをインポートして、攻撃表面の縮小イベントを表示します。
 keywords: イベント ビュー、exploit guard、監査、レビュー、イベント
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,12 +14,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 4ca3058db2f3f2e8ac79c7388d9a68ead1f48d38
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 7dccc8992d808b5f9cea2b190a9b40cdf75f3392
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60704849"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883175"
 ---
 # <a name="view-attack-surface-reduction-events"></a>攻撃面の減少イベントを表示する
 

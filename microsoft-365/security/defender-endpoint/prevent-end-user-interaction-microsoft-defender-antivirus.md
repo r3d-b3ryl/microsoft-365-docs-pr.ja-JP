@@ -2,7 +2,6 @@
 title: インターフェイスをMicrosoft Defender ウイルス対策する
 description: アプリでウイルスと脅威の保護タイルをWindows セキュリティできます。
 keywords: ui lockdown, headless mode, hide app, hide settings, hide interface
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,18 +10,18 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 09/23/2021
+ms.date: 10/18/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9a16abdcbc219a950eff6ddc8bb48018c4ba3279
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c43135ff2743282f4588cbccc0d8a80d17de93bf
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209311"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883091"
 ---
 # <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>ユーザーがユーザー インターフェイスを表示または操作Microsoft Defender ウイルス対策防止する
 
@@ -64,7 +63,7 @@ ms.locfileid: "60209311"
 
 4. ツリーを展開して **、Windowsインターフェイス> Microsoft Defender ウイルス対策 >コンポーネントを表示します**。
 
-5. [ヘッドレス UI モードを有効にする] **設定を** ダブルクリックし、オプションを [有効] に **設定します**。 [**OK**] をクリックします。
+5. [ヘッドレス UI モードを有効にする] **設定を** ダブルクリックし、オプションを [有効] に **設定します**。 **[OK]** をクリックします。
 
 ユーザー [が PC の保護を](configure-local-policy-overrides-microsoft-defender-antivirus.md) 変更する方法の詳細については、「ユーザーがポリシー設定をローカルで変更するのを防ぐ」を参照してください。
 
@@ -85,7 +84,7 @@ ms.locfileid: "60209311"
 
 4. ツリーを展開して、[**スキャン] WindowsコンポーネントMicrosoft Defender ウイルス対策** \>  \> **展開します**。
 
-5. [ユーザーにスキャンの **一時停止を許可する** ] 設定をダブルクリックし、オプションを [無効] に **設定します**。 [**OK**] をクリックします。
+5. [ユーザーにスキャンの **一時停止を許可する** ] 設定をダブルクリックし、オプションを [無効] に **設定します**。 **[OK]** をクリックします。
 
 ## <a name="related-articles"></a>関連記事
 

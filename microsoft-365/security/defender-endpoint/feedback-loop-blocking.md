@@ -2,7 +2,6 @@
 title: フィードバック ループのブロック
 description: フィードバック ループのブロック (高速保護とも呼ばれる) は、Microsoft Defender for Endpoint の動作ブロックおよび格納機能の一部です。
 keywords: 動作ブロック、迅速な保護、フィードバックブロック、Microsoft Defender for Endpoint
-search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 author: denisebmsft
 ms.author: deniseb
@@ -17,12 +16,12 @@ ms.custom:
 - edr
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: c5ef1b39856a8f54432789566355875a7b256fcb
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 30e1fdb8baede9506af52ae844f456baed1097a9
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176861"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882683"
 ---
 # <a name="feedback-loop-blocking"></a>フィードバック ループのブロック
 

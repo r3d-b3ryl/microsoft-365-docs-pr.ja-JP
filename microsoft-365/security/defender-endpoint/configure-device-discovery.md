@@ -2,8 +2,6 @@
 title: デバイス検出の構成
 description: 基本または標準の検出を使用して、Microsoft 365 Defender検出を構成する方法について説明します。
 keywords: 基本、標準、エンドポイント検出の構成、デバイスの検出
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -20,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c1dfbc1fb953a83c3854e7059bba30a069a37c83
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 914e246fe4c276a624989b189a3358c1821194fd
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555214"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882923"
 ---
 # <a name="configure-device-discovery"></a>デバイス検出の構成
 
@@ -51,7 +49,7 @@ ms.locfileid: "60555214"
 1. [デバイスの検出 **設定 >に移動します**。
 2. オンボード デバイスで使用する検出モードを選択します。
 3. 標準検出を使用する場合は、アクティブなプロブに使用するデバイス (すべてのデバイスまたはデバイス タグを指定してサブセット上) を選択します。
-4. **[保存]** をクリックします。
+4. [**保存**] をクリックします。
 
 ## <a name="exclude-devices-from-being-actively-probed-in-standard-discovery"></a>デバイスが標準検出でアクティブにプローブされるのを除外する
 

@@ -2,7 +2,6 @@
 title: オンデマンド スキャンを実行してカスタマイズする方法は、Microsoft Defender ウイルス対策
 description: PowerShell、Windows 管理インストルメンテーション、またはアプリを使用してエンドポイントで個別にオンデマンド スキャンを実行Windows セキュリティする
 keywords: スキャン、オンデマンド、dos、intune、インスタント スキャン
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -12,17 +11,17 @@ ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 06/10/2021
+ms.date: 10/22/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a9e8860129df9f5b91cad8737a595a11296d91c9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1f2f5625eff5b19c47aebf896d6a0398437426aa
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162544"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60881663"
 ---
 # <a name="configure-and-run-on-demand-microsoft-defender-antivirus-scans"></a>オンデマンドの Microsoft Defender ウイルス対策スキャンを構成して実行する
 
@@ -43,7 +42,7 @@ ms.locfileid: "60162544"
 
 2. [エンドポイント **セキュリティウイルス** \> **対策] を選択します**。
 
-3. タブの一覧で、[不健康 **なWindows 10を選択します**。
+3. タブの一覧で **、Windows 10エンドポイント** を選択するかWindows **11** のエンドポイントを選択します。
 
 4. 指定されたアクションの一覧から、[クイック **スキャン** (推奨)] または [フル スキャン] **を選択します**。
 

@@ -2,8 +2,6 @@
 title: Microsoft Defender for Endpoint Device Control リムーバブル Storage保護
 description: ユーザーまたはコンピューター、または両方が未承認のリムーバブル 記憶域メディアを使用できない '機能を理解する
 keywords: リムーバブル 記憶域メディア
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 655ed51ae6ca6110bf86657a32be95a4084f5c9a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9e3e658af5118d7a2d6ff565d52154e7be3f95fa
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60184727"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882695"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-protection"></a>Microsoft Defender for Endpoint Device Control リムーバブル Storage保護
 
@@ -38,14 +36,14 @@ Microsoft Defender for Endpoint のデバイス制御リムーバブル 記憶�
 - *監査* さまざまなデバイス プロパティに基づくリムーバブル 記憶域への読み取りまたは書き込みまたは実行アクセス。除外の付きまたは除外なし。
 - *[防止]* 読み取りまたは書き込みまたは除外なしのアクセスを実行する - さまざまなデバイスプロパティに基づいて特定のデバイスを許可します。
 
-**Windows 10サポートの詳細**:
+**Windows 10およびWindows 11 のサポートの詳細**:
 
 - デバイス レベル、ユーザー レベルのどちらかで適用されます。 または両方を指定します。 特定のコンピューター上の特定のリムーバブル 記憶域への読み取り/書き込み/実行アクセスを実行する特定のユーザーのみを許可します。
 - MEM OMA-URI と GPO をサポートします。
 - 一覧に示[されている [デバイスのプロパティ](#device-properties)] がサポートされています。
 - この機能については、「リムーバブル Windows[アクセス制御」を参照してください](device-control-removable-storage-access-control.md)。
 
-**サポートされているプラットフォーム**- Windows 10
+**サポートされているプラットフォーム**- Windows 10、Windows 11
 
 **macOS サポートの詳細**:
 
@@ -59,14 +57,14 @@ Microsoft Defender for Endpoint のデバイス制御リムーバブル 記憶�
 
 **機能 -** さまざまなデバイスプロパティに基づいて除外の設定または除外なしでインストールを防止します。
 
-**Windows 10サポートの詳細**:
+**Windows 10およびWindows 11 のサポートの詳細**:
 
 - デバイス レベルで適用されます。ログオンしているユーザーに対して同じポリシーが適用されます。
 - グループ ポリシー Microsoft エンドポイント マネージャーオブジェクトをサポートします。
 - 一覧に示[されている [デバイスのプロパティ](#device-properties)] がサポートされています。
 - デバイス の詳細については、「Windows Microsoft Defender for Endpoint を使用して USB デバイスや他のリムーバブル メディアを制御する方法」[を参照してください](control-usb-devices-using-intune.md)。
 
-**サポートされているプラットフォーム**- Windows 10
+**サポートされているプラットフォーム**- Windows 10、Windows 11
 
 **macOS サポートの詳細**:
 
@@ -81,7 +79,7 @@ Microsoft Defender for Endpoint のデバイス制御リムーバブル 記憶�
 
 **説明**- エンドポイントデータ損失防止のWindows詳細 [については、「Microsoft 365」を参照してください](../../compliance/endpoint-dlp-learn-about.md)。
 
-**サポートされているプラットフォーム**- Windows 10
+**サポートされているプラットフォーム**- Windows 10、Windows 11
 
 ### <a name="bitlocker"></a>BitLocker
 
@@ -92,7 +90,7 @@ Microsoft Defender for Endpoint のデバイス制御リムーバブル 記憶�
 
 **説明**- 詳細については [、「BitLocker -](/mem/intune/protect/endpoint-security-disk-encryption-profile-settings)リムーバブル ドライブ Windows」を参照設定。
 
-**サポートされているプラットフォーム**- Windows 10
+**サポートされているプラットフォーム**- Windows 10、Windows 11
 
 ## <a name="device-properties"></a>デバイス プロパティ
 

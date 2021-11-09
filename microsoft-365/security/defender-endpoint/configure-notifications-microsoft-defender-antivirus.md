@@ -2,7 +2,6 @@
 title: 通知Microsoft Defender ウイルス対策構成する
 description: エンドポイントの標準通知と他の通知の両方を構成Microsoft Defender ウイルス対策する方法について説明します。
 keywords: 通知, Defender, ウイルス対策, エンドポイント, 管理, 管理者
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: manage
@@ -13,16 +12,16 @@ author: denisebmsft
 ms.topic: article
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 06/16/2021
+ms.date: 10/18/2021
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c5b651dba1cf6b4e1af2e02e21f18f5663c21d1e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b2b23a52312b3f384122f34b054b65bd6aa486a2
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201410"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60881915"
 ---
 # <a name="configure-microsoft-defender-antivirus-notifications-that-appear-on-endpoints"></a>エンドポイントMicrosoft Defender ウイルス対策通知を構成する
 
@@ -30,7 +29,7 @@ ms.locfileid: "60201410"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-このWindows 10、マルウェアの検出と修復に関するアプリケーション通知は、より堅牢で一貫性があり、簡潔です。 Microsoft Defender ウイルス対策が完了し、脅威が検出されると、エンドポイントに通知が表示されます。 通知は、スケジュールされたスキャンと手動でトリガーされたスキャンの両方に従います。 これらの通知は通知センター **にも表示** され、スキャンと脅威検出の概要は一定の間隔で表示されます。
+11 Windows 10およびWindows、マルウェアの検出と修復に関するアプリケーション通知は、より堅牢で一貫性があり、簡潔です。 Microsoft Defender ウイルス対策が完了し、脅威が検出されると、エンドポイントに通知が表示されます。 通知は、スケジュールされたスキャンと手動でトリガーされたスキャンの両方に従います。 これらの通知は通知センター **にも表示** され、スキャンと脅威検出の概要は一定の間隔で表示されます。
 
 組織のセキュリティ チームの一員である場合は、システムの再起動を求める通知や脅威が検出され修復されたという通知など、エンドポイントへの通知の表示方法を構成できます。
 
@@ -39,7 +38,7 @@ ms.locfileid: "60201410"
 最近の脅威検出の概要など、追加の通知の表示は、Windows セキュリティグループ ポリシー[で](microsoft-defender-security-center-antivirus.md)構成できます。
 
 > [!NOTE]
-> このWindows 10バージョン 1607 では、この機能は拡張通知と呼ばされ、[更新プログラムの更新] Windows 設定で& \> **構成** \> Windows Defender。 すべてのバージョンのグループ ポリシー設定で、Windows 10機能は拡張通知と **呼ばれる。**
+> このWindows 10バージョン 1607 では、この機能は拡張通知と呼ばされ、[更新プログラムの更新] Windows 設定で& \> **構成** \> Windows Defender。 グループ ポリシー設定で、すべてのバージョンの Windows 10および Windows 11 では、通知機能は拡張通知と **呼ばれる。**
 
 ### <a name="use-group-policy-to-disable-additional-notifications"></a>グループ ポリシーを使用して追加の通知を無効にする
 

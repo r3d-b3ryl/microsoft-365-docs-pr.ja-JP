@@ -2,7 +2,6 @@
 title: 攻撃面の減少ルールを評価する
 description: カスタム デモ ツールを使用して攻撃をブロックおよび防止する攻撃表面の縮小方法について説明します。
 keywords: 攻撃表面の縮小、腰、ホスト侵入防止システム、保護ルール、悪用防止、脆弱性対策、悪用、感染防止、評価、テスト、デモ
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 79ba3d241a913ca967c590c856e53d4073e76f3f
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: e16899f831a8c7e937ea1c1600591572f8ecb445
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60239818"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882119"
 ---
 # <a name="evaluate-attack-surface-reduction-rules"></a>攻撃面の減少ルールを評価する
 

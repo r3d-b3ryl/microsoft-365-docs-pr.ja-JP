@@ -2,7 +2,6 @@
 title: スキャンの除外をMicrosoft Defender ウイルス対策する
 description: ファイル (指定されたプロセスによって変更されたファイルを含む) とフォルダーを、ユーザーがスキャンMicrosoft Defender ウイルス対策。 PowerShell を使用して除外を検証します。
 keywords: ''
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.technology: mde
 ms.audience: ITPro
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: e97f720a5004a61687cea6d62afe6fc32481f94f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 78ee4e8beba06c61ee15f76f5e3bdf669c809884
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213836"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883331"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-antivirus-scans"></a>スキャンの除外を構成およびMicrosoft Defender ウイルス対策する
 

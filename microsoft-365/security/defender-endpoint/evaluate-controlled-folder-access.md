@@ -1,8 +1,7 @@
 ---
 title: 制御されたフォルダー アクセスを評価する
 description: フォルダー アクセスの制御によって、悪意のあるアプリによってファイルが変更されるのを保護する方法について説明します。
-keywords: エクスプロイト保護、Windows 10、Windows Defender、ランサムウェア、保護、評価、テスト、デモ、試す
-search.product: eADQiWindows 10XVcnh
+keywords: エクスプロイト保護、Windows 10、Windows 11、Windows Defender、ランサムウェア、保護、評価、テスト、デモ、試す
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: d4c029ee825299202b3d1a128c9fbee5986bf5cc
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4209c48fbf718a14ccdc8faf7f4e859485679bcd
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60166530"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882839"
 ---
 # <a name="evaluate-controlled-folder-access"></a>制御されたフォルダー アクセスを評価する
 
@@ -33,7 +32,7 @@ ms.locfileid: "60166530"
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 
-[フォルダー アクセスの制御は](controlled-folders.md) 、疑わしいアプリや悪意のあるアプリによる変更からドキュメントやファイルを保護する機能です。 フォルダー アクセスの制御は、サーバー 2019、Windows Server 2022、WindowsクライアントでWindows 10されます。
+[フォルダー アクセスの制御は](controlled-folders.md) 、疑わしいアプリや悪意のあるアプリによる変更からドキュメントやファイルを保護する機能です。 フォルダー アクセスの制御は、Windows Server 2019、Windows Server 2022、Windows 10、Windows 11 クライアントでサポートされます。
 
 特に、ファイルを暗号化して人質[](https://www.microsoft.com/wdsi/threats/ransomware)に保持しようとするランサムウェアから保護する場合に役立ちます。
 

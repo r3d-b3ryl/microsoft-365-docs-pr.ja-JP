@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c4c44b62cba02f772f606d13abce7b26270b9613
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 05b714c21a1fdb095457f60a715a6daee677886e
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587151"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883619"
 ---
 # <a name="microsoft-defender-for-endpoint-on-ios"></a>iOS 用 Microsoft Defender for Endpoint API
 
@@ -73,7 +73,7 @@ ms.locfileid: "60587151"
 
 **システム要件**
 
-- iOS 11.0 以上を実行している iOS デバイス。 iPad もサポートされています。 *iOS 11.0 のサポートは廃止されます。サポートされる最小バージョンは、2021 年 10 月 25 日から iOS 12.0 です。*
+- iOS 12.0 以上を実行している iOS デバイス。 iPad もサポートされています。
 
 - デバイスは、アプリに登録するか、Intune ポータル サイト[を](https://apps.apple.com/us/app/intune-company-portal/id719171358)介して Azure Active Directoryに[Microsoft Authenticator。](https://apps.apple.com/app/microsoft-authenticator/id983156458)
 
@@ -84,7 +84,7 @@ iOS での Microsoft Defender for Endpoint の展開は、MICROSOFT エンドポ
 - Microsoft Defender for Endpoint on iOS をMicrosoft エンドポイント マネージャー登録されたデバイスへの展開の詳細については[、「Deploy Microsoft Defender for Endpoint on iOS」を参照してください](ios-install.md)。
 - アプリ保護ポリシー (MAM) で Defender for Endpoint を使用する方法の詳細については、「Defender for Endpoint risk [signals (MAM)](ios-install-unmanaged.md)を含めるアプリ保護ポリシーの構成」を参照してください。
 
-## <a name="resources"></a>リソース
+## <a name="resources"></a>関連情報
 
 - iOS またはブログの Microsoft Defender [for Endpoint](ios-whatsnew.md) の新機能にアクセスして、今後のリリースについて情報を得 [る](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/iOS)。
 

@@ -2,7 +2,6 @@
 title: 保護の監視とMicrosoft Defender ウイルス対策する
 description: Configuration Manager またはセキュリティ情報とイベント管理 (SIEM) ツールを使用してレポートを使用し、PowerShell と WMI を使用して Microsoft Defender AV を監視します。
 keywords: siem, 監視, レポート, Microsoft Defender AV
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,18 +10,18 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 10/11/2021
+ms.date: 10/18/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9aecf89ca654bb4f1896fb8f632a72da83f2f1e9
-ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
+ms.openlocfilehash: 34b5718bb80b1af629edcd18ecc6771fc7a0c8f8
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60264698"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60884039"
 ---
 # <a name="report-on-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策のレポート
 
@@ -30,7 +29,7 @@ ms.locfileid: "60264698"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-Microsoft Defender ウイルス対策は、Windows 10 Server 2019、Windows Server 2022、および Windows に組み込Windows Server 2016。 Microsoft Defender ウイルス対策は、Microsoft Defender for Endpoint の次世代保護です。 次世代の保護は、電子メール、アプリ、クラウド、Web 全体のウイルス、マルウェア、スパイウェアなどのソフトウェアの脅威からデバイスを保護するのに役立ちます。
+Microsoft Defender ウイルス対策は、Windows 10、Windows 11、Windows Server 2019、Windows Server 2022、および Windows Server 2016 に組み込Windows Server 2016。 Microsoft Defender ウイルス対策は、Microsoft Defender for Endpoint の次世代保護です。 次世代の保護は、電子メール、アプリ、クラウド、Web 全体のウイルス、マルウェア、スパイウェアなどのソフトウェアの脅威からデバイスを保護するのに役立ちます。
 
 このMicrosoft Defender ウイルス対策、保護状態とアラートを確認するためのいくつかのオプションがあります。 メール通知を監視[Microsoft エンドポイント マネージャー、またはMicrosoft Defender ウイルス対策](/configmgr/protect/deploy-use/monitor-endpoint-protection)を[作成するために使用できます](/configmgr/protect/deploy-use/endpoint-configure-alerts)。 または、 を使用して保護を[監視Microsoft Intune。](/intune/introduction-intune)
 

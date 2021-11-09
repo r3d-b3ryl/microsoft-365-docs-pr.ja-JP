@@ -2,8 +2,6 @@
 title: 脅威と脆弱性の管理における露出スコア
 description: この脅威と脆弱性の管理は、組織がサイバーセキュリティの脅威に対してどのように脆弱かを反映しています。
 keywords: 露出スコア、Microsoft Defender for Endpoint 露出スコア、Microsoft Defender for Endpoint tvm 露出スコア、組織の露出スコア、tvm 組織の露出スコア、脅威と脆弱性の管理、Microsoft Defender for Endpoint
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8295fee4d0c27b85cc3daf95224b770f3c0fec0c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 56b994513d28c2714aecba05453af5c0a62a3912
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60149876"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60881696"
 ---
 # <a name="exposure-score---threat-and-vulnerability-management"></a>露出スコア - 脅威と脆弱性の管理
 
@@ -47,7 +45,7 @@ ms.locfileid: "60149876"
 
 ![露出スコア カード。](images/tvm_exp_score.png)
 
-## <a name="how-it-works"></a>しくみ
+## <a name="how-it-works"></a>メカニズム
 
 露出スコアは、次のレベルに分割されます。
 
@@ -61,7 +59,7 @@ ms.locfileid: "60149876"
 
 セキュリティに関する推奨事項を修正することで、脅威と脆弱性の暴露 [を削減します](tvm-security-recommendation.md)。 最も重要なセキュリティ推奨事項を修復して、露出スコアに最も大きな影響を与えます。これは、脅威と脆弱性の管理[ダッシュボードで確認できます](tvm-dashboard-insights.md)。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [デバイス向けの Microsoft セキュア スコア](tvm-microsoft-secure-score-devices.md)

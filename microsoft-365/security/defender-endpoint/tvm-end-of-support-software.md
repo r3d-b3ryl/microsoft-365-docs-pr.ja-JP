@@ -2,8 +2,6 @@
 title: サポート終了のソフトウェアとソフトウェアのバージョンを計画する
 description: サポートされなくなった、セキュリティ更新プログラムを受け取らないソフトウェアとソフトウェアのバージョンを検出して計画します。
 keywords: 脅威と脆弱性の管理、Microsoft Defender for Endpoint tvm セキュリティ推奨事項、サイバーセキュリティの推奨事項、アクション可能なセキュリティ推奨事項
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8e705c868dfc4bd5bba71d21d73fc112c6a54673
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: cf09fb75ca14a35f0ca29c9352864329459b3203
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210879"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60881735"
 ---
 # <a name="plan-for-end-of-support-software-and-software-versions-with-threat-and-vulnerability-management"></a>サポート終了のソフトウェアとソフトウェアのバージョンを計画する場合は、脅威と脆弱性の管理
 
@@ -73,7 +71,7 @@ ms.locfileid: "60210879"
 
 サポート終了の状態により脆弱なソフトウェアとソフトウェアのバージョンを特定したら、それらを更新するか、組織から削除するか決定する必要があります。 これにより、組織は脆弱性や高度な永続的な脅威にさらされるリスクを軽減します。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [セキュリティ上の推奨事項](tvm-security-recommendation.md)

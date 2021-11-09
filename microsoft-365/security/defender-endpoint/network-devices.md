@@ -2,8 +2,6 @@
 title: ネットワーク デバイスの検出と脆弱性の管理
 description: スイッチ、ルーター、WLAN コントローラー、ファイアウォールのオペレーティング システムでは、セキュリティに関する推奨事項と脆弱性の検出を利用できます。
 keywords: ネットワーク デバイス、ネットワーク デバイスの脆弱性検出、スイッチ、ルーター、WLAN コントローラー、ファイアウォールのオペレーティング システム
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 87b712bb8c70f9c1f3dad62a156cc4a7a45e2647
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 1ec9863a97d58dd61aaf47da1fcd965aab1fd4d3
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60667262"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60881975"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>ネットワーク デバイスの検出と脆弱性の管理
 
@@ -98,7 +96,7 @@ Defender for Endpoint にはネットワーク デバイス自体にセンサー
     > [!NOTE]
     > すべての URL が Defender for Endpoint で指定されている場合は、許可されるデータ収集の一覧が文書化されています。
 
-## <a name="permissions"></a>アクセス許可
+## <a name="permissions"></a>許可
 
 評価ジョブを構成するには、次のユーザーアクセス許可オプションが必要です。セキュリティ センター **でセキュリティ設定を管理します**。 アクセス許可は、ロールにアクセスして **設定** \> **できます**。 詳細については、「役割ベースの [アクセス制御の役割を作成および管理する」を参照してください](user-roles.md)。
 

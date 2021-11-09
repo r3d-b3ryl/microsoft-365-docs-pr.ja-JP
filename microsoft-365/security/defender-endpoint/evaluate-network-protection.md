@@ -2,7 +2,6 @@
 title: ネットワーク保護を評価する
 description: ネットワーク保護が保護する一般的なシナリオをテストして、ネットワーク保護のしくみを確認します。
 keywords: ネットワーク保護、悪用、悪意のある Web サイト、IP、ドメイン、評価、テスト、デモ
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: b0a52af9eb9cbc8d1cfc4084d7f137fd5e6975be
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 0f26b92d9475daf0c151d18f9ab024e3ad3bb34f
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60668102"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883163"
 ---
 # <a name="evaluate-network-protection"></a>ネットワーク保護を評価する
 
@@ -54,9 +53,9 @@ ms.locfileid: "60668102"
 
 2. [https://smartscreentestratings2.net](https://smartscreentestratings2.net) に移動します。
 
-ネットワーク接続が許可され、テスト メッセージが表示されます。
-
-![[接続がブロックされました] という通知の例: IT 管理者が、このネットワークWindows セキュリティをブロックする原因になります。 IT ヘルプ デスクにお問い合わせください。](images/np-notif.png)
+    ネットワーク接続が許可され、テスト メッセージが表示されます。
+    
+    ![[接続がブロックされました] という通知の例: IT 管理者が、このネットワークWindows セキュリティをブロックする原因になります。 IT ヘルプ デスクにお問い合わせください。](images/np-notif.png)
 
 > [!NOTE]
 > ネットワーク保護によってサイトがブロックされている場合でも、ネットワーク接続は成功する可能性があります。 詳細については、「ネットワーク保護 [」および「TCP 3 ウェイ ハンドシェイク」を参照してください](network-protection.md#network-protection-and-the-tcp-three-way-handshake)。

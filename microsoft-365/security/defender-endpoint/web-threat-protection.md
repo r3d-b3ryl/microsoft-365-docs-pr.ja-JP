@@ -2,7 +2,6 @@
 title: Web 驚異から組織を保護する
 description: Microsoft Defender for Endpoint の Web 保護と、組織を保護する方法について説明します。
 keywords: Web 保護、Web 脅威保護、Web 閲覧、セキュリティ、フィッシング、マルウェア、悪用、Web サイト、ネットワーク保護、エッジ、Internet Explorer、Chrome、Firefox、Web ブラウザー
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 90775af14d78092159d2b92736abce56a961416e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a0c80ca78503cef9d7acce25cf2f18255c0c9f6b
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159176"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883391"
 ---
 # <a name="protect-your-organization-against-web-threats"></a>Web 驚異から組織を保護する
 
@@ -75,7 +74,7 @@ Web 保護は、ネットワーク保護を使用して、ブラウザーおよ�
 
 8. [確認 **と作成] タブで** 、ポリシー設定を確認し、[作成] を **選択します**。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [Web 保護の概要](web-protection-overview.md)
 - [Web の脅威に対する保護](web-threat-protection.md)

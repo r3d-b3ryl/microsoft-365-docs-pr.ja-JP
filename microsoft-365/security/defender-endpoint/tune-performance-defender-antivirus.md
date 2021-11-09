@@ -2,8 +2,6 @@
 title: パフォーマンス アナライザー (Microsoft Defender ウイルス対策
 description: パフォーマンスを調整する手順について説明Microsoft Defender ウイルス対策。
 keywords: tune, performance, microsoft Defender for endpoint, Defender Antivirus
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: fa6206628d8652aef9c8b31dd2ee74d4b6023829
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 40b683a04527eb4a528f2aeaa25071e94fdd62e0
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60659227"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60884015"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>パフォーマンス アナライザー (Microsoft Defender ウイルス対策
 
@@ -89,7 +87,7 @@ ms.locfileid: "60659227"
 
 - **変換するには**: `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:1000). TopScans | ConvertTo-Json -Depth:1`
 
-### <a name="requirements"></a>要件
+### <a name="requirements"></a>Requirements
 Microsoft Defender ウイルス対策アナライザーには、次の前提条件があります。
 
 - サポートされているWindowsバージョン: Windows 10、Windows 11、Windows Server 2016以上

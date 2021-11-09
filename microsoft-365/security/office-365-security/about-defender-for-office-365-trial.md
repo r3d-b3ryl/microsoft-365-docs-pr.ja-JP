@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX
 description: 管理者は、管理者向け Microsoft Defender の試用版モードについてOffice 365
-ms.openlocfilehash: cf701be45841f155b825e86b761f5967bc6298f4
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 5dc374a8fbb305c7e5d9bf63660953cc20b644e3
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60588279"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882191"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>Microsoft Defender for Office 365試用版
 
@@ -66,6 +66,9 @@ Microsoft Defender for Office 365 試用版は、数回クリックした後、O
 
 既定では、これらのポリシーは組織内のすべてのユーザーを対象としますが、試用版のセットアップ中またはセットアップ後に、ポリシーの割り当てを特定のユーザーに変更できます。
 
+> [!NOTE]
+> 既存のスパム対策ポリシーは、スパム対策ポリシーの信頼度の高いスパムの評決に対するメッセージを迷惑メール フォルダーに移動するアクションで構成されている可能性があります。 既定のセキュリティ ポリシーの標準テンプレートは、信頼性の高いスパムに対する検疫メッセージアクションを使用し、事前設定されたセキュリティ ポリシーは、カスタムスパム対策ポリシーまたは既定のスパム対策ポリシーの前に常に適用されます。 既定、標準、および厳密な設定の詳細については、「EOP と Microsoft Defender のセキュリティに関する推奨設定」[をOffice 365してください](recommended-settings-for-eop-and-office365.md)。
+
 他のワークロードも保護に使用できます セーフ (たとえば、SharePoint、OneDrive、Microsoft Teams、Microsoft Teams および[セーフ](mdo-for-spo-odb-and-teams.md)Office 365 アプリの添付[ファイル](safe-links.md#safe-links-settings-for-office-365-apps)など)。
 
 試用版のセットアップ中に、Office 365 プラン 2 の Defender 専用の応答機能[(AIR](office-365-air.md)や脅威[エクスプローラーなど)](threat-explorer.md)も組織全体に対して設定されます。 ポリシースコープは必要ありません。
@@ -92,7 +95,7 @@ Microsoft Defender for Office 365 試用版は、数回クリックした後、O
     - 特定のユーザーを対象にしたカスタム の警察があります。
   - **完全な** 保護: プラン 2 の機能 (AIR、Threat Explorer、攻撃シミュレーション トレーニングなど) Office 365 Defender によって保護されているユーザーの総数。
 
-## <a name="permissions"></a>アクセス許可
+## <a name="permissions"></a>許可
 
 試用版を開始または終了するには、グローバル管理者またはセキュリティ管理者の役割のメンバーである必要Azure Active Directory。 詳細については、「[管理者ロールについて](../../admin/add-users/about-admin-roles.md)」を参照してください。
 

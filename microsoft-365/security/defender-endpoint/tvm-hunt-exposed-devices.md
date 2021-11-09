@@ -2,8 +2,6 @@
 title: 露出したデバイスの追求
 description: セキュリティ管理者脅威と脆弱性の管理 It 管理者、および SecOps の共同作業を支援する方法について学習します。
 keywords: Microsoft Defender for Endpoint-tvm シナリオ、Microsoft Defender for Endpoint、tvm、tvm シナリオ、脅威& の脆弱性の暴露を減らし、脅威と脆弱性を軽減し、セキュリティ構成を改善し、デバイスの Microsoft Secure Score を増やし、デバイスの脅威 & の脆弱性を高める Microsoft Secure Score、Microsoft Secure Score for Devices、露出スコア、セキュリティコントロール
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3e413b511f080c23d76e616d83de0cb70a2f966f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5a7133bcb939bc19e9a705a5be5985e76ebee4fe
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210831"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60881675"
 ---
 # <a name="hunt-for-exposed-devices---threat-and-vulnerability-management"></a>公開されているデバイスのハント - 脅威と脆弱性の管理
 
@@ -61,24 +59,24 @@ ms.locfileid: "60210831"
 
 3. 次のクエリを入力します。
 
-```kusto
-// Search for devices with High active alerts or Critical CVE public exploit
-let DeviceWithHighAlerts = AlertInfo
-| where Severity == "High"
-| project Timestamp, AlertId, Title, ServiceSource, Severity
-| join kind=inner (AlertEvidence | where EntityType == "Machine" | project AlertId, DeviceId, DeviceName) on AlertId
-| summarize HighSevAlerts = dcount(AlertId) by DeviceId;
-let DeviceWithCriticalCve = DeviceTvmSoftwareVulnerabilities
-| join kind=inner(DeviceTvmSoftwareVulnerabilitiesKB) on CveId
-| where IsExploitAvailable == 1 and CvssScore >= 7
-| summarize NumOfVulnerabilities=dcount(CveId),
-DeviceName=any(DeviceName) by DeviceId;
-DeviceWithCriticalCve
-| join kind=inner DeviceWithHighAlerts on DeviceId
-| project DeviceId, DeviceName, NumOfVulnerabilities, HighSevAlerts
-```
+    ```kusto
+    // Search for devices with High active alerts or Critical CVE public exploit
+    let DeviceWithHighAlerts = AlertInfo
+    | where Severity == "High"
+    | project Timestamp, AlertId, Title, ServiceSource, Severity
+    | join kind=inner (AlertEvidence | where EntityType == "Machine" | project AlertId, DeviceId, DeviceName) on AlertId
+    | summarize HighSevAlerts = dcount(AlertId) by DeviceId;
+    let DeviceWithCriticalCve = DeviceTvmSoftwareVulnerabilities
+    | join kind=inner(DeviceTvmSoftwareVulnerabilitiesKB) on CveId
+    | where IsExploitAvailable == 1 and CvssScore >= 7
+    | summarize NumOfVulnerabilities=dcount(CveId),
+    DeviceName=any(DeviceName) by DeviceId;
+    DeviceWithCriticalCve
+    | join kind=inner DeviceWithHighAlerts on DeviceId
+    | project DeviceId, DeviceName, NumOfVulnerabilities, HighSevAlerts
+    ```
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [セキュリティ上の推奨事項](tvm-security-recommendation.md)

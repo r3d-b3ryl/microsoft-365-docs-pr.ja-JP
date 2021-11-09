@@ -3,7 +3,6 @@ metadata:
   title: 攻撃表面の縮小に関するよく寄せられる質問 (FAQ)
   description: Microsoft Defender for Endpoint の攻撃表面縮小ルールに関するよく寄せられる質問に対する回答を見つける。
   keywords: Attack surface reduction rules, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, microsoft defender for endpoint
-  search.product: eADQiWindows 10XVcnh
   ms.pagetype: security
   ms.prod: m365-security
   ms.mktglfcycl: manage
@@ -18,12 +17,12 @@ metadata:
   ms.topic: article
   ms.technology: mde
   ms.collection: M365-security-compliance
-  ms.openlocfilehash: 9f76502b13186c90f1866f5762d88eabea3b249d
-  ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+  ms.openlocfilehash: 29719b023a669463ff7ad0bddca9fc9a569d8ab5
+  ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/03/2021
-  ms.locfileid: "60701017"
+  ms.lasthandoff: 11/09/2021
+  ms.locfileid: "60882467"
 title: 攻撃表面の縮小に関するよく寄せられる質問 (FAQ)
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -44,7 +43,7 @@ sections:
   - question: >
       ASR ルールを実行するには、エンタープライズ ライセンスが必要ですか?
     answer: >
-      ASR ルールと機能の完全なセットは、エンタープライズ ライセンスを使用している場合にのみサポートWindows 10。 限られた数のルールは、エンタープライズ ライセンスなしで動作する場合があります。 Business を使用Microsoft 365、Microsoft Defender ウイルス対策セキュリティ ソリューションとして設定し、PowerShell を使用してルールを有効にしてください。 エンタープライズ ライセンスなしで ASR を使用しても、正式にはサポートされていないので、ASR の完全な機能を使用することはできません。
+      ASR ルールと機能の完全なセットは、エンタープライズ ライセンスが 11 または 11 の場合Windows 10サポートWindowsです。 限られた数のルールは、エンタープライズ ライセンスなしで動作する場合があります。 Business を使用Microsoft 365、Microsoft Defender ウイルス対策セキュリティ ソリューションとして設定し、PowerShell を使用してルールを有効にしてください。 エンタープライズ ライセンスなしで ASR を使用しても、正式にはサポートされていないので、ASR の完全な機能を使用することはできません。
 
 
       ライセンスの詳細については、「Windows ライセンス」を参照し[](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5)Windows 10ボリューム ライセンス ガイド[を](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf)参照Windows 10。
@@ -193,7 +192,7 @@ sections:
   - question: >
       GPO を使用してルールを適用しました。 Microsoft Outlook でルールのインデックス オプションを確認すると、"アクセスが拒否されました" というメッセージが表示されます。
     answer: >
-      インデックス作成オプションを直接開く方法は、Windows 10。
+      インデックス作成オプションを 11 から直接開Windows 10またはWindowsしてください。
 
 
       1. タスク バー **の [** 検索] アイコンWindowsします。

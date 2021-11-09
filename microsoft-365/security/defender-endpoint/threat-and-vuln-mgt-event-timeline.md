@@ -2,8 +2,6 @@
 title: イベントタイムライン (脅威と脆弱性の管理
 description: イベントタイムラインは、リスクが組織に導入される方法と、リスクを軽減するために発生した軽減策を解釈するのに役立つリスクニュースフィードです。
 keywords: イベント タイムライン, Microsoft Defender for Endpoint イベント タイムライン, Microsoft Defender for Endpoint tvm イベント タイムライン, 脅威と脆弱性の管理, Microsoft Defender for Endpoint
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e74989d85919e0f8c89f28e67c5bbbf7cec7ff04
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 393f58020880c6e69813e536cc692590ed1a8368
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191673"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883103"
 ---
 # <a name="event-timeline---threat-and-vulnerability-management"></a>イベントタイムライン - 脅威と脆弱性の管理
 
@@ -130,7 +128,7 @@ ms.locfileid: "60191673"
 
 ![[イベント タイムライン] タブを含むソフトウェア ページ。](images/tvm-event-timeline-software-pages.png)
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [ダッシュボード](tvm-dashboard-insights.md)

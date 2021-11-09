@@ -2,7 +2,6 @@
 title: パフォーマンスに関する問題のトラブルシューティング
 description: Microsoft Defender for Endpoint のリアルタイム保護サービスに関連する CPU 使用率の高いトラブルシューティングを行います。
 keywords: トラブルシューティング、パフォーマンス、CPU 使用率が高い、CPU 使用率が高い、エラー、修正、コンプライアンスの更新、oms、モニター、レポート、Microsoft Defender ウイルス対策
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -12,17 +11,17 @@ ms.author: maccruz
 author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
-ms.date: 04/14/2021
+ms.date: 10/19/2021
 audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: b36d4d46e6a9ab8b705626ab186e06e577f2c46e
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: cf0ca72bb29c47708c497740b9bd3b64a7347136
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60665541"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60884075"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>リアルタイム保護に関連するパフォーマンスの問題のトラブルシューティング
 
@@ -232,7 +231,7 @@ WPR ユーザー インターフェイスを使用するには、「WPR UI を�
 
     ![詳細を入力します。](images/wpr-12.png)
 
-    1. [ **ファイル名:]** を選択して、トレース ファイルの保存場所を決定します。 既定では、1.is に保存されます `%user%\Documents\WPR Files\` 。
+    1. [ **ファイル名:]** を選択して、トレース ファイルの保存場所を決定します。 既定では、 に保存されます `%user%\Documents\WPR Files\` 。
     1. **[保存]** を選択します。
 
 14. トレースが結合されている間待ちます。

@@ -1,8 +1,6 @@
 ---
 title: Microsoft Defender for Endpoint Device Control Device Installation
 description: このトピックでは、Microsoft Defender for Endpoint Device Control Device Installation について説明します。
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,12 +13,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9b56f6ba5cc481de7c295305ab1d5abfbec68cd4
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 07ee57728d93458ca3242fafea1e7514a9e853b3
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60662300"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60881987"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-device-installation"></a>Microsoft Defender for Endpoint Device Control Device Installation 
 
@@ -38,12 +36,12 @@ Microsoft Defender for Endpoint Device Control リムーバブル Storageアク�
 |アクション モード|許可、防止 |
 |CSP サポート|はい|
 |GPO サポート|はい|
-|ユーザー ベースのサポート|いいえ|
+|ユーザー ベースのサポート|不要|
 |コンピューター ベースのサポート|はい|
 
 ## <a name="prepare-your-endpoints"></a>エンドポイントを準備する
 
-デバイス インストールをサーバー 2022 Windows 10デバイスWindows展開します。
+サーバー 2022 Windows 10、Windows 11 台のデバイスWindows展開します。
 
 ## <a name="device-properties"></a>デバイス プロパティ
 
@@ -69,7 +67,7 @@ Microsoft Defender for Endpoint Device Control リムーバブル Storageアク�
 [すべてのデバイスの一致条件ポリシーに対してデバイスのインストール ポリシーを許可および防止する] の評価順序を適用するポリシー設定がこのポリシー設定で有効になっていない場合は、インストールを特に防止する他のポリシー設定が優先されます。 
 
 > [!NOTE]
-> [**他** のポリシー設定で説明されていないデバイスのインストールを防止する] ポリシー設定は、サポートされているターゲット Windows 10 バージョンに対して、すべてのデバイス一致条件ポリシー設定で[デバイスのインストール ポリシーを許可および防止する] の評価のレイヤー順に適用する設定に置き換えられます。 可能な場合は、[許可] ポリシーと [デバイスインストール ポリシーをすべてのデバイス一致条件に適用する] ポリシー設定に対して、層別の評価順序 **を適用する** を使用してください。
+> [**他** のポリシー設定で説明されていないデバイスのインストールを防止する] ポリシー設定は、サポートされているターゲット Windows 10 バージョンおよび Windows 11 のすべてのデバイス一致条件ポリシー設定で[デバイスのインストール ポリシーを許可および防止する] の評価のレイヤー順に置き換えられます。 可能な場合は、[許可] ポリシーと [デバイスインストール ポリシーをすべてのデバイス一致条件に適用する] ポリシー設定に対して、層別の評価順序 **を適用する** を使用してください。
 
 ### <a name="allow-installation-of-devices-that-match-any-of-these-device-instance-ids"></a>これらのデバイス インスタンスの ID に一致するデバイスのインストールを許可する 
 

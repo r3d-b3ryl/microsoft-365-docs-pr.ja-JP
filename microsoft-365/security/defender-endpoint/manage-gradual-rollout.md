@@ -2,8 +2,6 @@
 title: Microsoft Defender 更新プログラムの段階的なロールアウト プロセスを管理する
 description: 段階的な更新プロセスとコントロールの詳細
 keywords: 更新、更新プロセス、コントロール、リリース
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -20,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 0a264f16c35a9fe122c2cb62a56c16334fb162d2
-ms.sourcegitcommit: d1eb1c26609146ff5a59b2a1b005dd7ac43ae64e
+ms.openlocfilehash: ceeae633c85912d4c344ed8a74fe66def168efd5
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60099707"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882587"
 ---
 # <a name="manage-the-gradual-rollout-process-for-microsoft-defender-updates"></a>Microsoft Defender 更新プログラムの段階的なロールアウト プロセスを管理する
 

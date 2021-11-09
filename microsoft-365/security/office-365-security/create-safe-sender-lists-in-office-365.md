@@ -17,12 +17,12 @@ ms.custom:
 description: 管理者は、受信メッセージ (EOP) で受信メッセージを許可するための使用可能なオプションと優先Exchange Online Protectionできます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ac0d6cf4ff2dab75809525e5c49fc5c12eec670b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 376ea1a5c598adce28fb65ee2b2d1fbceceecd34
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157664"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882203"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>EOP で差出人セーフ リストを作成する
 
@@ -57,10 +57,12 @@ Exchange Online のメールボックスまたは Exchange Online メールボ�
 > - EOP と Outlookさまざまなメッセージ プロパティを検査して、メッセージの送信者を特定します。 詳細については、この記事の後半 [の「一括メールに関する](#considerations-for-bulk-email) 考慮事項」セクションを参照してください。
 >
 
-
 これに対し、ブロックされた送信者リストを使用して特定のソースからの電子メールをブロックする _オプションもいくつか用意されています_。 詳細については、「[EOP での受信拒否リストの作成](create-block-sender-lists-in-office-365.md)」を参照してください。
 
 ## <a name="recommended-use-mail-flow-rules"></a>(推奨)メール フロー ルールの使用
+
+> [!NOTE]
+> メッセージ ヘッダーとメール フロー ルールを使用して、内部送信者を安全な送信者として指定することはできません。 このセクションの手順は、外部の送信者にのみ機能します。
 
 EOP およびスタンドアロン EOP Exchange Onlineフロー ルールでは、メッセージを識別するための条件と例外、およびそれらのメッセージに対して実行する必要がある処理を指定します。 詳細については、「[Mail flow rules (transport rules) in Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)」を参照してください。
 
@@ -117,7 +119,7 @@ EOP およびスタンドアロン EOP Exchange Onlineフロー ルールでは�
 
 前述のようにメール フロー ルールを使用できない場合は、接続フィルター ポリシーで送信元メール サーバーまたはサーバーを IP 許可一覧に追加します。 詳細については [、「EOP で接続フィルターを構成する」を参照してください](configure-the-connection-filter-policy.md)。
 
-**注意**:
+**注**:
 
 - 許可される IP アドレスの数を最小限に抑える必要があります。そのため、可能な限り IP アドレス範囲全体を使用しないようにしてください。
 

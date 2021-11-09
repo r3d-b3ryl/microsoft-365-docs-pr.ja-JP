@@ -2,8 +2,6 @@
 title: 組織の脆弱性 - 脅威と脆弱性の管理
 description: 組織で実行されているソフトウェアで見つかった脆弱性の一般的な脆弱性と露出 (CVE) ID を一覧表示します。 Microsoft Defender for Endpoint 脅威と脆弱性の管理検出されました。
 keywords: Microsoft Defender for Endpoint threat & 脆弱性の管理, 脅威と脆弱性の管理, Microsoft Defender for Endpoint tvm の弱点ページ, tvm を通じて弱点を見つける, tvm の脆弱性リスト, tvm の脆弱性の詳細
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5395ae9452dae6ffc170ee294c59fce4942000a0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 801eabd49beae39c4d926b4c370229f5308fb35b
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60193939"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882215"
 ---
 # <a name="vulnerabilities-in-my-organization---threat-and-vulnerability-management"></a>組織の脆弱性 - 脅威と脆弱性の管理
 
@@ -53,7 +51,7 @@ ms.locfileid: "60193939"
 - [Microsoft 365 Defender ポータル]の [脆弱性管理] ナビゲーション メニューから [弱点] を選択する (portal-overview.md)
 - グローバル検索
 
-### <a name="navigation-menu"></a>ナビゲーション メニュー
+### <a name="navigation-menu"></a>[ナビゲーション] メニュー
 
 [脆弱性管理] **ナビゲーション メニューに** 移動し、[弱点] を選択 **して** 、CVEs の一覧を開きます。
 

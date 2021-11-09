@@ -2,7 +2,6 @@
 title: ビジネスMicrosoft Defender ウイルス対策管理する
 description: グループ ポリシー、Configuration Manager、PowerShell、WMI、Intune、およびコマンド ラインを使用して Microsoft Defender AV を管理する方法について説明します。
 keywords: グループ ポリシー、gpo、config manager、sccm、scep、powershell、wmi、intune、Defender、ウイルス対策、マルウェア対策、セキュリティ、保護
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,18 +10,18 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 07/13/2021
+ms.date: 10/18/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 211c450b718414608e9e16890f7e080db5bda111
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 49d61529c966771004ae9c7aed881f98a718bdec
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201459"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60884111"
 ---
 # <a name="manage-microsoft-defender-antivirus-in-your-business"></a>ビジネスMicrosoft Defender ウイルス対策管理する
 

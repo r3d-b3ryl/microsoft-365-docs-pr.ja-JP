@@ -2,8 +2,6 @@
 title: Microsoft Defender for Endpoint の Web 脅威に対応する
 description: 悪意のある Web サイトや望ましくない Web サイトに関連するアラートに応答します。 Web 脅威保護がエンド ユーザーに Web ブラウザーを介して通知し、通知を受け取Windows理解する
 keywords: Web 保護、Web 脅威保護、Web 閲覧、アラート、応答、セキュリティ、フィッシング、マルウェア、悪用、Web サイト、ネットワーク保護、エッジ、Internet Explorer、Chrome、Firefox、Web ブラウザー、通知、エンド ユーザー、Windows 通知、ブロック ページ、
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: db128699fe68ef8728122a7b505e74be1689d38d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0b893c6d823ae2582dfe59122861776023acf026
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159200"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883427"
 ---
 # <a name="respond-to-web-threats"></a>Web の脅威への対応
 
@@ -82,7 +80,7 @@ Microsoft Defender for Endpoint の Web 保護を使用すると、エンド ユ
 ![セキュリティで保護された接続の警告とセキュリティで保護された通知を示す Chrome Windows画像。 ](images/wtp-chrome-browser-blocking-page.png)
 *Chrome でブロックされた Web の脅威*
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [Web 保護の概要](web-protection-overview.md)
 - [Web コンテンツ フィルタリング](web-content-filtering.md)

@@ -2,7 +2,6 @@
 title: サーバーをMicrosoft Defender ウイルス対策構成Microsoft エンドポイント マネージャー
 description: '[Microsoft エンドポイント マネージャーとMicrosoft Intuneを使用して、Microsoft Defender ウイルス対策とEndpoint Protection'
 keywords: scep、intune、エンドポイント保護、構成
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,19 +10,19 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 05/24/2021
+ms.date: 10/18/2021
 ms.reviewer: phuijbr, oogunrinde
 manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 58d3eb41ca3edc14ddc77ed1d6b0feec9feb2ac0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: eed1b0d19efe21d4bb1ba81dfb36964c6d80894c
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157760"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60881716"
 ---
 # <a name="use-microsoft-endpoint-manager-to-configure-and-manage-microsoft-defender-antivirus"></a>[Microsoft エンドポイント マネージャーを使用して、構成および管理Microsoft Defender ウイルス対策
 

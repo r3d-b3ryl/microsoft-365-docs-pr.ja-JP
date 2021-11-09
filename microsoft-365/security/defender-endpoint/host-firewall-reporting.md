@@ -2,7 +2,6 @@
 title: Microsoft Defender for Endpoint でのホスト ファイアウォール レポート
 description: セキュリティ センターでファイアウォールレポートをホストMicrosoft 365表示します。
 keywords: Windows Defender, ファイアウォール
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,12 +14,12 @@ ms.author: dansimp
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 6dc04eb51346b078218117d35f1b7a5b2d1c9268
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4896ffe6b01d87d4e54d6d06867aea3435a1513a
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174737"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883139"
 ---
 # <a name="host-firewall-reporting-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint でのホスト ファイアウォール レポート
 
@@ -30,11 +29,11 @@ ms.locfileid: "60174737"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-管理者の場合は、ファイアウォール レポートをセキュリティ センターにホストMicrosoft 365[できます](https://security.microsoft.com)。 この機能を使用すると、サーバー 2019 Windows 10、Windows、Windows Server 2022 ファイアウォールレポートを一元的な場所から表示できます。
+管理者の場合は、ファイアウォール レポートをセキュリティ センターにホストMicrosoft 365[できます](https://security.microsoft.com)。 この機能を使用すると、Windows 10、Windows 11、Windows Server 2019、Windows Server 2022 ファイアウォール レポートを一元的な場所から表示できます。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- サーバー 2019 Windows 10またはWindowsサーバー 2022 で実行Windows必要があります。
+- サーバー 11 または Windows 10サーバー 20 Windows 19 Windowsまたはサーバー 2022 Windows実行している必要があります。
 - デバイスを Microsoft Defender for Endpoint サービスにオンボードするには、こちらを参照 [してください](onboard-configure.md)。
 - セキュリティ センター Microsoft 365データの受信を開始するには、Advanced **Security** を使用するファイアウォールの監査イベントWindows Defender有効にする必要があります。
   - [監査フィルター プラットフォーム のパケット ドロップ](/windows/security/threat-protection/auditing/audit-filtering-platform-packet-drop)

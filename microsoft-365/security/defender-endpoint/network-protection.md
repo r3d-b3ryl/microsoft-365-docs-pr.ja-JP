@@ -2,7 +2,6 @@
 title: ネットワーク保護を使用して、悪いサイトへの接続を防止する
 description: ユーザーが既知の悪意のあるネットワーク アドレスや疑わしいネットワーク アドレスにアクセスするのを防ぐことで、ネットワークを保護する
 keywords: ネットワーク保護、悪用、悪意のある Web サイト、IP、ドメイン、ドメイン
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -17,12 +16,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: overview
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a00fa0c255156f17f579889e8a399c52d126a6f8
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 13c8591d03bd0c4c6649f6afbdb383ad54089499
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60661600"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883559"
 ---
 # <a name="protect-your-network"></a>ネットワークを保護する
 
@@ -53,7 +52,7 @@ ms.locfileid: "60661600"
 
 |Windows バージョン|Microsoft Defender ウイルス対策|
 |---|---|
-|Windows 10バージョン 1709 以降 <p> Windowsサーバー 1803 以降|[Microsoft Defender ウイルス対策保護とクラウド](configure-real-time-protection-microsoft-defender-antivirus.md)[配信保護を有効](enable-cloud-protection-microsoft-defender-antivirus.md)にする必要があります|
+|Windows 10バージョン 1709 以降 <p> Windows 11 <p> Windowsサーバー 1803 以降|[Microsoft Defender ウイルス対策保護とクラウド](configure-real-time-protection-microsoft-defender-antivirus.md)[配信保護を有効](enable-cloud-protection-microsoft-defender-antivirus.md)にする必要があります|
 |
 
 サービスを有効にした後、サービスとデバイス (エンドポイントとも呼ばれます) 間の接続を許可するために、ネットワークまたはファイアウォールを構成する必要がある場合があります。

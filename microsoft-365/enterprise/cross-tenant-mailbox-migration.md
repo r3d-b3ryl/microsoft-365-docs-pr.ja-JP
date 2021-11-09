@@ -15,288 +15,203 @@ ms.custom:
 - admindeeplinkMAC
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: f4bf0a03db22df2c0e054bea86a8b65c5d77f28b
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 533b48aecec033c8e16e02cbf3db4f8f75a53ef7
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59482811"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60881903"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>テナント間メールボックスの移行 (プレビュー)
 
-以前は、Exchange Online テナントが同じ Exchange Online サービス内の別のテナントにメールボックスを移動する必要がある場合、メールボックスをオンプレミスに完全にオフボードしてから、新しいテナントにオンボードする必要がありました。 新しいクロステナント メールボックス移行機能により、移行元テナントとターゲット テナントの両方のテナント管理者は、オンプレミス システムでのインフラストラクチャの依存関係を最小限に抑えたテナント間でメールボックスを移動できます。 これにより、オフボードメールボックスとオンボードメールボックスが不要になります。
+一般的に、合併または売却の際には、ユーザーのメールボックスを新しいテナントExchange Onlineする機能が必要です。 テナント間メールボックスの移行により、テナント管理者はリモート PowerShell や MRS のような既知のインターフェイスを使用して、ユーザーを新しい組織に移行できます。
 
-一般的に、合併や売却の際には、ユーザーとコンテンツを新しいテナントに移動する機能が必要です。 ターゲット テナント管理者が移動を実行すると、オンプレミスからクラウド オンボーディング移行に似たプル移動と呼ばれる。
-
-クロステナント Exchange メールボックスの移動は、テナント管理者によって完全にセルフサービスされ、ユーザーを新しい組織に移行するために必要な大規模なワークフローにスクリプト化できる既知のインターフェイスを使用します。 管理者は、メールボックスの移動管理役割で使用できるコマンドレットを使用して、テナント `New-MigrationBatch` 間の移動を実行できます。 移動プロセスには、メールボックスの同期と完了時のテナント承認チェックが含まれます。
+管理者は、メールボックスの移動New-MigrationBatch役割を使用して、テナント間の移動を実行するために使用できる、New-MigrationBatch コマンドレットを使用できます。
 
 移行するユーザーは、移行先のテナント Exchange Online MailUsers として存在し、テナント間の移動を有効にするには、特定の属性でマークされている必要があります。 ターゲット テナントで適切に設定されていないユーザーの移動はシステムによって失敗します。
 
-移動が完了すると、ソース システム メールボックスは MailUser に変換され、targetAddress (Exchange の ExternalEmailAddress として表示されます) は、宛先テナントへのルーティング アドレスでスタンプされます。 このプロセスは、従来の MailUser をソース テナントに残し、一時期の共同存在とメール ルーティングを可能にします。 ビジネス プロセスで許可されている場合、ソース テナントはソース MailUser を削除するか、メール連絡先に変換できます。
+移動が完了すると、移行元のユーザー メールボックスが MailUser に変換され、targetAddress (Exchange の ExternalEmailAddress として表示) が宛先テナントへのルーティング アドレスでスタンプされます。 このプロセスは、従来の MailUser をソース テナントに残し、一時期の共同存在とメール ルーティングを可能にします。 ビジネス プロセスで許可されている場合、ソース テナントはソース MailUser を削除するか、メール連絡先に変換できます。
 
 ハイブリッドまたはクラウドExchange、または 2 つの任意の組み合わせのテナントに対して、複数テナント間のメールボックス移行がサポートされます。
 
-この記事では、テナント間メールボックスの移動のプロセスについて説明し、コンテンツ移動のソース テナントとターゲット テナントを準備する方法に関するガイダンスを提供します。
+この記事では、テナント間のメールボックス移動のプロセスについて説明し、メールボックス コンテンツの移動に対してソース テナントとターゲット テナントを準備する方法Exchange Online示します。
+
+   > [!NOTE]
+   > Azure Key Vault を不要にするように、テナント間メールボックスの移行を有効にするためのセットアップ手順が最近更新されました。 このプレビューに初めてオンボーディングを行う場合は、アクションは必要ありません。このドキュメントで説明されている手順に従ってください。 以前の AKV メソッドを使用してテナントの構成を開始した場合は、この新しい方法の使用を開始するために、その構成を停止または削除することを強くお勧めします。 以前の AKV メソッドでメールボックスの移行が進行中の場合は、既存の移行が完了するまで待ち、以下の手順に従って新しい簡略化された方法を有効にしてください。 Azure Key Vault に必要なセットアップ手順はアーカイブされますが、参照のために **[、ここで確認](https://github.com/microsoft/cross-tenant/wiki/V1-Content#cross-tenant-mailbox-migration-preview)** できます。
 
 ## <a name="preparing-source-and-target-tenants"></a>ソーステナントとターゲット テナントの準備
 
-クロステナント 移行機能Exchange移行には、クロステナント移行の承認とスコープが必要です。 Azure Enterprise アプリケーションと Key Vault ストレージ ソリューションを使用して、テナント管理者は、1 つのテナントから別のテナントへの Exchange Online メールボックス移行の承認とスコープの両方を管理する権限を与えました。 テナント間メールボックスの移動は、テナントペア間の認証に使用される Azure Active Directory (Azure AD) アプリケーションを確立するための招待と同意モデルをサポートします。 組織の関係や移行エンドポイントなどの追加コンポーネントも必要です。
+### <a name="prerequisites-for-source-and-target-tenants"></a>ソーステナントとターゲット テナントの前提条件
 
-このセクションには、ターゲット ディレクトリ内の MailUser ユーザー オブジェクトを準備するために必要な具体的な手順は含まれています。また、移行バッチを送信するためのサンプル コマンドも含めありません。 この情報については [、「移行対象のユーザー オブジェクトを準備する」](#prepare-target-user-objects-for-migration) を参照してください。
+開始する前に、Azure、EXO 移行エンドポイント、EXO 組織の関係でメールボックスの移動アプリケーションを構成するために必要なアクセス許可を持っている必要があります。
 
-## <a name="prerequisites"></a>前提条件
+さらに、ソース テナント内のメールが有効なセキュリティ グループが少なくとも 1 つ必要です。 これらのグループは、ソース (またはリソースとも呼ばれる) テナントからターゲット テナントに移動できるメールボックスの一覧の範囲を指定するために使用されます。 これにより、移行元テナント管理者は、移動する必要があるメールボックスの特定のセットを制限または範囲指定し、意図しないユーザーが移行されるのを防ぐことが可能になります。 入れ子になったグループはサポートされていません。
 
-テナント間メールボックス移動機能では [、Azure Key Vault](/azure/key-vault/basic-concepts) がテナントペア固有の Azure アプリケーションを確立して、あるテナントから別のテナントへのメールボックス移行を認証および承認するために使用される証明書/シークレットを安全に保存してアクセスする必要があります。テナント間で証明書/シークレットを共有するための要件は削除されます。
+また、信頼できるパートナー企業 (メールボックスを移動する相手) と通信して、テナント ID を取得Microsoft 365必要があります。 このテナント ID は、[組織リレーションシップ ドメイン名] フィールドで使用されます。
 
-開始する前に、Azure Key Vault、Move Mailbox Application、EXO Migration Endpoint、EXO Organization Relationship を構成するために、展開スクリプトを実行するために必要なアクセス許可を持っている必要があります。 通常 **、Azure AD DC 管理者**、または **グローバル**  管理者には、すべての構成手順を実行するアクセス許可があります。
+サブスクリプションのテナント ID を取得するには、サブスクリプションにサインイン[Microsoft 365 管理センターに](https://go.microsoft.com/fwlink/p/?linkid=2024339)移動します [https://aad.portal.azure.com/\#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties) 。 Tenant ID プロパティのコピー アイコンをクリックしてクリップボードにコピーします。
 
-さらに、セットアップを実行する前に、ソース テナント内のメールが有効なセキュリティ グループが必要です。 これらのグループは、ソース (またはリソースとも呼ばれる) テナントからターゲット テナントに移動できるメールボックスの一覧の範囲を指定するために使用されます。 これにより、移行元テナント管理者は、移動する必要があるメールボックスの特定のセットを制限または範囲指定し、意図しないユーザーが移行されるのを防ぐことが可能になります。 入れ子になったグループはサポートされていません。
-
-また、信頼できるパートナー企業 (メールボックスを移動する相手) と通信して、テナント ID を取得Microsoft 365必要があります。 このテナント ID は、[組織の関係] フィールドで使用 `DomainName` されます。
-
-サブスクリプションのテナント ID を取得するには、サブスクリプションにサインイン<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センターに</a>移動します [https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties) 。 Tenant ID プロパティのコピー アイコンをクリックしてクリップボードにコピーします。
-
-プロセスの動作を次に示します。
-
-:::image type="content" source="../media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png" alt-text="メールボックスの移行のためのテナントの準備。":::
-
-[このイメージのより大きなバージョンを参照してください](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png)。
-
-<!--
-[![Tenant preparation for mailbox migration.](../media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png)
--->
-
-### <a name="prepare-tenants"></a>テナントの準備
-
-高レベルでは、セットアップ スクリプトの実行時に次の構成アクションが実行されます。
-
-ターゲット テナントを準備します。
-
-1. 既存の Azure リソース グループが指定されていない場合は、新しい Azure リソース グループが作成されます (SCRIPT)。
-2. 既存の Key Vault が指定されていない場合は、新しいキー コンテナーが作成されます (SCRIPT)。
-3. メールボックス移行アプリケーション (SCRIPT) のOffice 365 Exchange Onlineアクセス ポリシーが作成されます。
-4. 移行アプリケーション (SCRIPT) にシークレットを保持するために、新しい証明書 (または指定されている場合は既存の証明書) が作成されます。
-5. 新しい Azure ADアプリケーションが作成されます (SCRIPT)。
-6. 証明書/シークレットが移行アプリケーション (SCRIPT) にアップロードされます。
-7. メールボックス移行のアクセス許可は、アプリケーション (SCRIPT) に割り当てられます。
-8. 展開スクリプトは、ターゲット管理者が自分のアプリケーション (SCRIPT) に同意するまで一時停止します。
-9. ターゲット テナント管理者は、アプリケーションに与えられたアクセス許可 (MANUAL) に同意します。
-10. 組織の関係は、ターゲット テナント (SCRIPT) に対して作成されます。
-11. 移行エンドポイントが作成され、メールボックスをターゲット テナント (SCRIPT) にプルします。
-
-ソース テナントを準備します。
-
-1. 移行元テナント管理者は、ターゲット テナント (MANUAL) からのメールボックス移行アプリケーションの招待に対する同意を受け入れる。
-2. 移行元テナント管理者は、移行アプリケーション (MANUAL) によって移動できるメールボックスの一覧を含むメールが有効なセキュリティ グループをテナントに作成します。
-3. OAuth 検証で移動要求 (SCRIPT) を受け入れるには、メールボックス移行アプリケーションを使用する必要があるという組織の関係がターゲット テナントに作成されます。
-
-#### <a name="step-by-step-instructions-for-the-target-tenant-admin"></a>ターゲット テナント管理者の手順
-
-1. ターゲット テナントのSetupCrossTenantRelationshipForTargetTenant.ps1のスクリプトを、新しいリポジトリから[GitHubします](https://aka.ms/LatestRelease)。 
-2. スクリプト (SetupCrossTenantRelationshipForTargetTenant.ps1) を、スクリプトを実行するコンピューターに保存します。
-3. ターゲット テナントへのリモート PowerShell 接続Exchange Online作成します。 繰り返しますが、Azure Key Vault ストレージと証明書、Move Mailbox アプリケーション、EXO Migration Endpoint、EXO Organization Relationship を構成するために、展開スクリプトを実行するために必要なアクセス許可を持っている必要があります。
-4. ファイル フォルダー ディレクトリをスクリプトの場所に変更するか、スクリプトが現在リモート PowerShell セッションの現在の場所に保存されているのを確認します。
-5. 次のパラメーターと値を使用してスクリプトを実行します。
-
-    | パラメーター                                   | 値                                                                                                                                                                                                                                                                               | 必須またはオプション |
-    | ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
-    | -TargetTenantDomain                         | fabrikam ドメインなどのターゲット \. テナント ドメイン onmicrosoft.com。                                                                                                                                                                                                                            | 必須かどうか             |
-    | -ResourceTenantDomain                       | contoso ドメインなどのソース \. テナント ドメイン onmicrosoft.com。                                                                                                                                                                                                                             | 必須かどうか             |
-    | -ResourceTenantAdminEmail                   | ソース テナント管理者の電子メール アドレス。 これは、ターゲット管理者から送信されたメールボックス移行アプリケーションの使用に同意する移行元テナント管理者です。これは、アプリケーションのメール招待を受け取る管理者です。                                    | 必須かどうか             |
-    | -ResourceTenantId                           | ソース テナントのテナント ID。 たとえば、azure は [contoso ADテナントの](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant) テナント ID \. onmicrosoft.com します。                                                                 | 必須かどうか             |
-    | -SubscriptionId                             | リソースの作成に使用する Azure サブスクリプション。                                                                                                                                                                                                                               | 必須かどうか             |
-    | -ResourceGroup                              | キー コンテナーを含む、または含まれる Azure リソース グループ名。                                                                                                                                                                                                              | 必須かどうか             |
-    | -KeyVaultName                               | メールボックス移行アプリケーション証明書/シークレットを格納する Azure Key Vault インスタンス。                                                                                                                                                                                     | 必須かどうか             |
-    | -CertificateName                            | Key Vault で証明書を生成または検索する場合の証明書名。                                                                                                                                                                                                         | 必須かどうか             |
-    | -CertificateSubject                         | AZURE Key Vault 証明書のサブジェクト名 (CN=contoso_fabrikam など)。                                                                                                                                                                                                              | 必須かどうか             |
-    | -AzureResourceLocation                      | Azure リソース グループと Key Vault の場所 (表示名)。 使用可能な名前 `Get-AzResourceProvider -ProviderNamespace Microsoft.KeyVault | Select-Object -ExpandProperty Locations -Unique` を表示するために実行できます。                                                     | 必須かどうか             |
-    | -ExistingApplicationId                      | 既に作成されている場合に使用するメール移行アプリケーション。                                                                                                                                                                                                                       | オプション             |
-    | -AzureAppPermissions                        | メールボックス移行アプリケーションに与える必要があるアクセス許可 (Exchange または MSGraph (メールボックスを移動するための Exchange、このアプリケーションを使用してリソース テナントに同意リンクの招待を送信するための MSGraph)。                                                    | 必須かどうか             |
-    | -UseAppAndCertGeneratedForSendingInvitation | 移行先テナント管理者に同意リンクの招待を送信するために使用する移行用に作成されたアプリケーションを使用するパラメーター。存在しない場合は、ターゲット管理者の資格情報が Azure 招待マネージャーに接続し、招待をターゲット管理者として送信するように求めるメッセージが表示されます。 | オプション             |
-    | -KeyVaultAuditStorageAccountName            | Key Vault の監査ログが格納されるストレージ アカウント。                                                                                                                                                                                                                   | オプション             |
-    | -KeyVaultAuditStorageResourceGroup          | Key Vault 監査ログを格納するためのストレージ アカウントを含むリソース グループ。                                                                                                                                                                                              | オプション             |
-    | -KeyVaultAuditStorageAccountLocation        | `Required if using a KeyVaultAuditStorage Parameter`アカウントの場所をStorageします。                                                                                                                                                                                 | オプション             |
-    | -KeyVaultAuditStorageAccountSKU             | `Required if using a KeyVaultAuditStorage Parameter`アカウントの SKU 名をStorageします。                                                                                                                                                                                 | オプション             |
-    |                                             | Standard_LRS。 ローカル冗長ストレージ。                                                                                                                                                                                                                                            |                      |
-    |                                             | Standard_ZRS。 ゾーン冗長ストレージ。                                                                                                                                                                                                                                               |                      |
-    |                                             | Standard_GRS。 Geo 冗長ストレージ。                                                                                                                                                                                                                                                |                      |
-    |                                             | Standard_RAGRS。 読み取りアクセス geo 冗長ストレージ。                                                                                                                                                                                                                                  |                      |
-    |                                             | Premium_LRS。 プレミアム冗長ストレージを使用します。                                                                                                                                                                                                                                     |                      |
-    |                                             | Premium_ZRS。 プレミアム冗長ストレージ。                                                                                                                                                                                                                                        |                      |
-    |                                             | Standard_GZRS - Geo 冗長ゾーン冗長ストレージ。                                                                                                                                                                                                                               |                      |
-    |                                             | Standard_RAGZRS - 読み取りアクセス geo 冗長ゾーン冗長ストレージ。                                                                                                                                                                                                                 |                      |
-    |                                             |                                                                                                                                                                                                                                                                                     |                      |
-
-    >[!Note]
-    > スクリプトを実行する前に、Azure AD PowerShell モジュールがインストールされていることを確認してください。 インストール手順については ![ ](/powershell/azure/install-az-ps?view=azps-5.1.0) 、こちらを参照してください。
-
-6. スクリプトは一時停止し、このプロセス中に作成されたExchange移行アプリケーションに同意するか、同意を求めるメッセージが表示されます。 次に例を示します。
-
-    ```powershell
-    PS C:\PowerShell\> # Note: the below User.Invite.All permission is optional, and will only be used to retrieve access token to send invitation email to source tenant
-    PS C:\PowerShell\> .\SetupCrossTenantRelationshipForTargetTenant.ps1 -ResourceTenantDomain contoso.onmicrosoft.com -ResourceTenantAdminEmail admin@contoso.onmicrosoft.com -TargetTenantDomain fabrikam.onmicrosoft.com -ResourceTenantId ksagjid39-ede2-4d2c-98ae-874709325b00 -SubscriptionId e4ssd05d-a327-49ss-849a-sd0932439023 -ResourceGroup "Cross-TenantMoves" -KeyVaultName "Cross-TenantMovesVault" -CertificateName "Contoso-Fabrikam-cert" -CertificateSubject "CN=Contoso_Fabrikam" -AzureResourceLocation "Brazil Southeast" -AzureAppPermissions Exchange, MSGraph -UseAppAndCertGeneratedForSendingInvitation -KeyVaultAuditStorageAccountName "t2tstorageaccount" -KeyVaultAuditStorageResourceGroup "Demo"
-
-    cmdlet Get-Credential at command pipeline position 1
-    Supply values for the following parameters:
-    Credential
-    Setting up key vault in the fabrikam.onmicrosoft.com tenant
-
-    Name                                     Account                                 SubscriptionName                        Environment                             TenantId
-        ----                                     -------                                 ----------------                        -----------                             --------
-    Pay-As-You-Go (ewe23423-a3327-34232-343... Admin@fabrikam... Pay-As-You-Go                           AzureCloud                              dsad938432-dd8e-s9034-bf9a-83984293n43
-    Auditing setup successfully for Cross-TenantMovesVault
-    Exchange application given access to KeyVault Cross-TenantMovesVault
-    Application fabrikam_Friends_contoso_2520 created successfully in fabrikam.onmicrosoft.com tenant with following permissions. MSGraph - User.Invite.All. Exchange - Mailbox.Migration
-    Admin consent URI for fabrikam.onmicrosoft.com tenant admin is -
-    https://login.microsoftonline.com/fabrikam.onmicrosoft.com/adminconsent?client_id=6fea6ere-0dwe-404d-ad35-c71a15cers5c&redirect_uri=https://office.com
-    Admin consent URI for contoso.onmicrosoft.com tenant admin is -
-    https://login.microsoftonline.com/contoso.onmicrosoft.com/adminconsent?client_id=6fea6ssd-0753-404d-wer5-c71a154d675c&redirect_uri=https://office.com
-    Application details to be registered in organization relationship: ApplicationId: [ 6fes8en4-sjo3-406d-ad35-sldkfjiew993 ]. KeyVault secret Id: [ https://cross-tenantmovesvault.vault.azure.net:443/certificates/Contoso-Fabrikam-cert/ksdfj843nt8476h84c288c5a3fb8ec5fdb08 ]. These values are available in variables $AppId and $CertificateId respectively
-    Please consent to the application for fabrikam.onmicrosoft.com before sending invitation to admin@contoso.onmicrosoft.com:
-    ```
-
-7. リモート PowerShell セッションに URL が表示されます。 テナントの同意のために提供されたリンクをコピーし、Web ブラウザーに貼り付けます。
-
-8. Azure 管理者または DC 管理者 **ADグローバル管理者** 資格情報 **を使用してサインイン** します。 次の画面が表示された場合は、[同意する] を **選択します**。
-
-    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-dialog.png" alt-text="[アクセス許可を受け入れる] ダイアログ ボックス。":::
-
-9. リモート PowerShell セッションに戻り、Enter キーを押して続行します。
-
-10. スクリプトは、残りのセットアップ オブジェクトを構成します。 次に例を示します。
-
-    ```powershell
-    Successfully sent invitation to admin@contoso.onmicrosoft.com
-    Setting up exchange components on target tenant: fabrikam.onmicrosoft.com
-    MigrationEndpoint created in fabrikam.onmicrosoft.com for target contoso.onmicrosoft.com
-    Exchange setup complete. Migration endpoint details are available in $MigrationEndpoint variable
-    ```
-
-ターゲット管理者のセットアップが完了しました。
-
-#### <a name="step-by-step-instructions-for-the-source-tenant-admin"></a>ソース テナント管理者の手順
-
-1. グローバル管理者の資格情報でサインインします。 セットアップ中にターゲット管理者によって指定された -ResourceTenantAdminEmail としてメールボックスにサインインします。  ターゲット テナントから電子メールの招待状を見つけて、[メールの送信] ボタン **はじめに** します。
-
-    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/invited-by-target-tenant.png" alt-text="[招待された] ダイアログ ボックス":::
-
-2. [承諾 **] を選択** して招待を承諾します。
-
-    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-accept.png" alt-text="アクセス許可を受け入れるダイアログ ボックス。":::
+### <a name="configuration-steps-to-enable-your-tenants-for-cross-tenant-mailbox-migrations"></a>テナント間のメールボックス移行を有効にする構成手順
 
    > [!NOTE]
-   > このメールを受け取らなか、見つからない場合は、ターゲット テナント管理者に直接 URL が提供されたので、招待を受け入れできます。 URL は、ターゲット テナント管理者のリモート PowerShell セッションのトランスクリプト内にある必要があります。
+   > ターゲット (宛先) を最初に構成する必要があります。 これらの手順を完了するには、ソース テナントとターゲット テナントの両方のテナント管理者資格情報を持っている必要はありません。また、テナント管理者の資格情報を知る必要はありません。 手順は、異なる管理者によってテナントごとに個別に実行できます。
 
-3. Microsoft 365 管理センター セッションまたはリモート PowerShell セッションで、1 つ以上のメールが有効なセキュリティ グループを作成して、ターゲット テナントがソース テナントからターゲット テナントにプル (移動) できるメールボックスの一覧を制御します。 このグループを事前に設定する必要はありますが、セットアップ 手順 (スクリプト) を実行するには、少なくとも 1 つのグループを指定する必要があります。 ネスト グループはサポートされていません。
+### <a name="prepare-the-target-destination-tenant-by-creating-the-migration-application-and-secret"></a>移行アプリケーションとシークレットを作成してターゲット (移行先) テナントを準備する
 
-4. ソース テナントのSetupCrossTenantRelationshipForResourceTenant.ps1のスクリプトを、次のリポジトリからGitHubダウンロードします [https://github.com/microsoft/cross-tenant/releases/tag/Preview](https://github.com/microsoft/cross-tenant/releases/tag/Preview) 。
+1. ターゲット テナントのAzure AD資格情報を使用 <https://portal.azure.com> して、ポータル ( ) にログインします。
 
-5. 管理者のアクセス許可を使用して、ソース テナントへのリモート PowerShell 接続Exchange作成します。 **Azure AD DC 管理者**、またはグローバル管理者のアクセス許可は、Azure アプリケーションの作成プロセスのため、ターゲット テナントのみ、ソース テナントを構成するために必要ありません。
+   ![Azure Logon](../media/tenant-to-tenant-mailbox-move/74f26681e12df3308c7823ee7d527587.png)
 
-6. ディレクトリをスクリプトの場所に変更するか、スクリプトが現在リモート PowerShell セッションの現在の場所に保存されているのを確認します。
+2. [Azure のサービス] の下の [アプリ] をAzure Active Directory。
 
-7. 次の必須パラメーターと値を使用してスクリプトを実行します。
+3. 左側のナビゲーション バーで、[アプリケーション] をEnterpriseします。
 
-    | パラメーター                         | 値                                                                                                                                                                                                                 |
-    | --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-    | -SourceMailboxMovePublishedScopes | 移行の対象である ID/メールボックスのソース テナントによって作成されたメールが有効なセキュリティ グループ。                                                                                                    |
-    | -ResourceTenantDomain             | contoso ドメインなどのソース テナント \. ドメイン onmicrosoft.com。                                                                                                                                                          |
-    | -ApplicationId                    | 移行に使用されるアプリケーションの Azure アプリケーション ID (GUID)。 Azure portal (Azure AD、Enterprise アプリケーション、アプリ名、アプリケーション ID) を使用するか、招待メールに含まれるアプリケーション ID。 |
-    | -TargetTenantDomain               | fabrikam ドメインなどのターゲット テナント \. ドメイン onmicrosoft.com。                                                                                                                                                         |
-    | -TargetTenantId                   | ターゲット テナントのテナント ID。 たとえば [、Azure は fabrikam ADテナント ID](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant) を onmicrosoft.com \. します。  |
-    |                                   |                                                                                                                                                                                                                       |
+4. [新しいアプリケーション] の選択
 
-    次に例を示します。
+   ![新しいアプリケーション](../media/tenant-to-tenant-mailbox-move/b36698df128e705eacff4bff7231056a.png)
+
+5. [独自のアプリケーションを作成する] を選択します。
+
+   ![AADギャラリー](../media/tenant-to-tenant-mailbox-move/520912f9ff0b3d61b0b6296788513c89.png)
+
+6. アプリケーションの名前を入力し (組織の名前付け規則に固有の場合があります)、アプリケーションを登録してアプリケーションと統合し、[作成] Azure ADを選択します。
+
+   ![アプリケーションの作成](../media/tenant-to-tenant-mailbox-move/11dfb852b188be5a7e57f9df5836d20e.png)
+
+7. [アプリケーションの登録] ページの [サポートされているアカウントの種類] で、任意の組織の [アカウント] を直接選択します (Any Azure AD ディレクトリ - Multitenant)。 次に、[リダイレクト URI ] (オプション) で [Web] を選択し、と入力します <https://office.com> 。 最後に、[登録] を選択します。
+
+   ![アプリケーション登録](../media/tenant-to-tenant-mailbox-move/edcdf18b9f504c47284fe4afb982c433.png)
+
+8. ページの右上隅に、アプリが正常に作成されたことを示す通知ポップアップが表示されます。
+
+9. [ホーム] に戻り、[アプリAzure Active Directory] をクリックします。
+
+10. [所有アプリケーション] で、作成したアプリを見つけてクリックします。
+
+11. ^Essentials では、ターゲット テナントの URL を作成するために後で必要なアプリケーション (クライアント) ID をコピーダウンする必要があります。
+
+12. 次に、左側のナビゲーション バーで[API のアクセス許可] をクリックして、アプリに割り当てられたアクセス許可を表示します。
+
+13. 既定では、作成したアプリに User.Read アクセス許可が割り当てられますが、メールボックスの移行にはユーザーが必要としないので、そのアクセス許可を削除できます。
+
+    ![アプリケーション アクセス許可](../media/tenant-to-tenant-mailbox-move/6a8c13a36cb3e10964a6920b8138e12b.png)
+
+14. メールボックスの移行に対するアクセス許可を追加する必要があります。[アクセス許可の追加] を選択します。
+
+15. [API アクセス許可の要求] ウィンドウで、[組織のユーザー] で [API] を選択し、Office 365 Exchange をオンラインで検索し、それを選択します。
+
+    ![[API の選択]](../media/tenant-to-tenant-mailbox-move/0b4dc1eea3910e9c475724d9473aca58.png)
+
+16. 次に、[アプリケーションのアクセス許可] を選択します。
+
+17. 次に、[アクセス許可の選択] で [メールボックス] を展開し、[Mailbox.Migration] をオンにし、画面の下部にある [アクセス許可の追加] をオンにします。
+
+    ![API の設定](../media/tenant-to-tenant-mailbox-move/0038a4cf74bb13de0feb51800e078803.png)
+
+18. 次に、アプリケーション&左側のナビゲーション バーで [証明書] を選択します。
+
+19. [クライアント シークレット] で、[新しいクライアント シークレット] を選択します。
+
+    ![クライアント シークレット](../media/tenant-to-tenant-mailbox-move/273dafd5e6c6455695f9baf35ef9977a.png)
+
+20. [クライアント シークレットの追加] ウィンドウで説明を入力し、必要な有効期限設定を構成します。
+
+      > [!NOTE]
+      > これは、移行エンドポイントの作成時に使用されるパスワードです。 このパスワードをクリップボードにコピーするか、このパスワードを安全/秘密のパスワード安全な場所にコピーすることが非常に重要です。 このパスワードを確認できるのは、これが唯一の時間です。 何らかの方法で紛失したり、リセットする必要がある場合は、Azure portal にログインし、アプリ登録に移動し、移行アプリを見つけて、[Secrets & 証明書] を選択し、アプリの新しいシークレットを作成できます。
+
+21. 移行アプリケーションとシークレットが正常に作成されたので、アプリケーションに同意する必要があります。 アプリケーションに同意するには、Azure Active Directory ランディング ページに戻り、左側のナビゲーションで Enterprise アプリケーションをクリックし、作成した移行アプリを見つけて選択し、左側のナビゲーションで [アクセス許可] を選択します。
+
+22. [テナント] ボタンの [管理者の同意を許可する] をクリックします。
+
+23. 新しいブラウザー ウィンドウが開き、[承諾] を選択します。
+
+24. ポータル ウィンドウに戻り、[更新] を選択して受け入れを確認できます。
+
+25. 信頼できるパートナー (ソース テナント管理者) に送信する URL を策定して、メールボックスの移行を有効にするためのアプリケーションを受け入れすることもできます。 作成したアプリのアプリケーション ID が必要な URL の例を次に示します。
 
     ```powershell
-    SetupCrossTenantRelationshipForResourceTenant.ps1 -SourceMailboxMovePublishedScopes "MigScope","MyGroup" -ResourceTenantDomain contoso.onmicrosoft.com -TargetTenantDomain fabrikam.onmicrosoft.com -ApplicationId sdf5e87sa-0753-dd88-ad35-c71a15cs8e44c -TargetTenantId 4sdkfo933-3904-sd93-bf9a-sdi39402834
-    Exchange setup complete.
+    https://login.microsoftonline.com/sourcetenant.onmicrosoft.com/adminconsent?client_id=[application_id_of_the_app_you_just_created]&redirect_uri=https://office.com
     ```
 
-ソース管理のセットアップが完了しました。
+    > [!NOTE]
+    > 作成したメールボックス移行アプリのアプリケーション ID が必要です。
+    >
+    > 上記の例の sourcetenant.onmicrosoft.com ソース テナントに正しい名前を onmicrosoft.com があります。
+    >
+    > [application_id_of_the_app_you_just_created] を、作成したメールボックス移行アプリのアプリケーション ID に置き換える必要があります。
 
-### <a name="verify-setup"></a>セットアップを確認する
+### <a name="prepare-the-target-tenant-by-creating-the-exchange-online-migration-endpoint-and-organization-relationship"></a>移行エンドポイントと組織の関係を作成してExchange Onlineテナントを準備する
 
-移行元テナントとターゲット テナントの両方の組織関係と、ターゲット内の移行エンドポイントが正常に作成されたことを確認します。
+1. ターゲット テナントへのリモート PowerShell 接続Exchange Onlineします。
 
-#### <a name="target-tenant"></a>ターゲット テナント
+2. テナント間メールボックスの移動用に新しい移行エンドポイントを作成する
 
-##### <a name="organization-relationship"></a>組織の関係
+   > [!NOTE]
+   > 作成したメールボックス移行アプリのアプリケーション ID と、このプロセス中に構成したパスワード (シークレット) が必要です。 また、エンドポイントを使用Microsoft 365クラウド インスタンスの種類によっては、異なる場合があります。 [エンドポイントの[Microsoft 365]](/microsoft-365/enterprise/microsoft-365-endpoints)ページを参照し、テナントの適切なインスタンスを選択し、[必須アドレスの最適化] Exchange Onlineを確認し、必要に応じて置き換える必要があります。
 
-組織リレーションシップ オブジェクトが作成され、このコマンドで構成されていることを確認します。
+   ```powershell
+   $AppId = "[guid copied from the migrations app]"
 
-```powershell
-Get-OrganizationRelationship <source tenant organization name> | fl name, DomainNames, MailboxMoveEnabled, MailboxMoveCapability
-```
-次に例を示します：
+   $Credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $AppId, (ConvertTo-SecureString -String "[this is your secret password you saved in the previous steps]" -AsPlainText -Force)
 
-```powershell
-PS C:\PowerShell\> Get-OrganizationRelationship fabrikam_contoso_1178 | fl name, DomainNames, MailboxMoveEnabled, MailboxMoveCapability
+   New-MigrationEndpoint -RemoteServer outlook.office.com -RemoteTenant "sourcetenant.onmicrosoft.com" -Credentials $Credential -ExchangeRemoteMove:$true -Name "[the name of your migration endpoint]" -ApplicationId $AppId
+   ```
 
-Name                  : fabrikam_contoso_1123
-DomainNames           : {sd0933me9f-9304-s903-s093-s093mfi903m4}
-MailboxMoveEnabled    : True
-MailboxMoveCapability : Inbound
-```
+3. ソース テナントに対して、既存の組織リレーションシップ オブジェクトを作成または編集します。
 
-##### <a name="migration-endpoint"></a>移行エンドポイント
+   ```powershell
+   $sourceTenantId="[tenant id of your trusted partner, where the source mailboxes are]"
+   $orgrels=Get-OrganizationRelationship
+   $existingOrgRel = $orgrels | ?{$_.DomainNames -like $sourceTenantId}
+   If ($null -ne $existingOrgRel)
+   {
+       Set-OrganizationRelationship $existingOrgRel.Name -Enabled:$true -MailboxMoveEnabled:$true -MailboxMoveCapability Inbound
+   }
+   If ($null -eq $existingOrgRel)
+   {
+       New-OrganizationRelationship "[name of the new organization relationship]" -Enabled:$true -MailboxMoveEnabled:$true -MailboxMoveCapability Inbound -DomainNames $sourceTenantId
+   }
+   ```
 
-移行エンドポイント オブジェクトが作成され、このコマンドで構成されていることを確認します。
+### <a name="prepare-the-source-current-mailbox-location-tenant-by-accepting-the-migration-application-and-configuring-the-organization-relationship"></a>移行アプリケーションを受け入れ、組織の関係を構成して、移行元 (現在のメールボックスの場所) テナントを準備する
 
-```powershell
-Get-MigrationEndpoint "<fabrikam_contoso_1123> | fl Identity, RemoteTenant, ApplicationId, AppSecretKeyVaultUrl
-```
+1. ブラウザーから、信頼できるパートナーが提供する URL リンクに移動し、メールボックス移行アプリケーションに同意します。 URL は次のように表示されます。
 
-次に例を示します。
+   ```powershell
+   https://login.microsoftonline.com/sourcetenant.onmicrosoft.com/adminconsent?client_id=[application_id_of_the_app_you_just_created]&redirect_uri=https://office.com
+   ```
 
-```powershell
-PS C:\PowerShell\> Get-MigrationEndpoint fabrikam_contoso_1123 | fl Identity, RemoteTenant, ApplicationId, AppSecretKeyVaultUrl
+   > [!NOTE]
+   > 作成したメールボックス移行アプリのアプリケーション ID が必要です。
+   > 上記の例の sourcetenant.onmicrosoft.com ソース テナントに正しい名前を onmicrosoft.com があります。
+   > [application_id_of_the_app_you_just_created] を、作成したメールボックス移行アプリのアプリケーション ID に置き換える必要があります。
 
+2. ポップアップが表示されたら、アプリケーションを受け入れます。 ポータルにログインして、Azure Active Directoryアプリケーションの下にあるアプリケーションEnterpriseすることもできます。
 
-Identity             : fabrikam_contoso_1123
-RemoteTenant         : contoso.onmicrosoft.com
-ApplicationId        : s93mf93-das9-dq24-dq234-dada9033904m
-AppSecretKeyVaultUrl : https://cross-tenantmyvaultformoves.vault.azure.net:443/certificates/Contoso-Fabrikam-cert/ae79348mx94384c288c5a3dfsioepw308
-```
+3. リモート PowerShell ウィンドウから、既存の組織リレーションシップ オブジェクトをターゲット (宛先) テナントに対してExchange Online編集します。
 
-#### <a name="source-tenant"></a>ソース テナント
+   ```powershell
+   $targetTenantId="[tenant id of your trusted partner, where the mailboxes are being moved to]"
+   $appId="[application id of the mailbox migration app you consented to]"
+   $scope="[name of the mail enabled security group that contains the list of users who are allowed to migrate]"
+   $orgrels=Get-OrganizationRelationship
+   $existingOrgRel = $orgrels | ?{$_.DomainNames -like $targetTenantId}
+   If ($null -ne $existingOrgRel)
+   {
+       Set-OrganizationRelationship $existingOrgRel.Name -Enabled:$true -MailboxMoveEnabled:$true -MailboxMoveCapability RemoteOutbound -OAuthApplicationId $appId -MailboxMovePublishedScopes $scope
+   }
+   If ($null -eq $existingOrgRel)
+   {
+       New-OrganizationRelationship "[name of your organization relationship]" -Enabled:$true -MailboxMoveEnabled:$true -MailboxMoveCapability RemoteOutbound -DomainNames $targetTenantId -OAuthApplicationId $appId -MailboxMovePublishedScopes $scope
+   }
+   ```
 
-##### <a name="organization-relationship"></a>組織の関係
+### <a name="how-do-i-know-this-worked"></a>設定が適用されたことを確認する方法
 
-組織リレーションシップ オブジェクトが作成され、このコマンドで構成されていることを確認します。
+ターゲット テナントで作成したクロステナント移行エンドポイントに対して [Test-MigrationServerAvailability](/powershell/module/exchange/Test-MigrationServerAvailability) コマンドレットを実行することで、テナント間メールボックスの移行構成を確認できます。
 
-```powershell
-Get-OrganizationRelationship | fl name, MailboxMoveEnabled, MailboxMoveCapability, MailboxMovePublishedScopes, OAuthApplicationId
-```
-
-次に例を示します。
-
-```powershell
-PS C:\PowerShell\> Get-OrganizationRelationship | fl name, MailboxMoveEnabled, MailboxMoveCapability, MailboxMovePublishedScopes, OAuthApplicationId
-
-
-Name                       : fabrikam_contoso_001
-MailboxMoveEnabled         : True
-MailboxMoveCapability      : RemoteOutbound
-MailboxMovePublishedScopes : {MigScope}
-OAuthApplicationId         : sd9890342-3243-3242-fe3w2-fsdade93m0
-```
-
-#### <a name="verify-setup-script"></a>セットアップ スクリプトの確認
-
-ソーステナントまたはターゲット テナントの構成中にエラーが発生した場合は、VerifySetup.ps1 スクリプトをGitHubし[、](https://github.com/microsoft/cross-tenant/releases/tag/Preview)出力を確認できます。
-
-次に、ターゲット テナントでVerifySetup.ps1例を示します。
-
-```powershell
-VerifySetup.ps1 -PartnerTenantId <SourceTenantId> -ApplicationId <AADApplicationId> -ApplicationKeyVaultUrl <appKeyVaultUrl> -PartnerTenantDomain <PartnerTenantDomain> -Verbose
-```
-
-次に、ソース テナントのVerifySetup.ps1例を示します。
-
-```powershell
-VerifySetup.ps1 -PartnerTenantId <TargetTenantId> -ApplicationId <AADApplicationId>
-```
+   > [!NOTE]
+   > Test-MigrationServerAvailability -Endpoint "[テナント間移行エンドポイントの名前]" -TestMailbox "[移行スコープの一部であるソース メールボックスの電子メール アドレス]"
 
 ### <a name="move-mailboxes-back-to-the-original-source"></a>メールボックスを元のソースに戻す
 
@@ -306,26 +221,26 @@ VerifySetup.ps1 -PartnerTenantId <TargetTenantId> -ApplicationId <AADApplication
 
 移行するユーザーは、テナント間の移動を有効にするには、ターゲット テナントと Exchange Online システム (MailUsers) に特定の属性がマークされている必要があります。 ターゲット テナントで適切に設定されていないユーザーの移動はシステムによって失敗します。 次のセクションでは、ターゲット テナントの MailUser オブジェクト要件について説明します。
 
-### <a name="prerequisites"></a>前提条件
+### <a name="prerequisites-for-target-user-objects"></a>ターゲット ユーザー オブジェクトの前提条件
 
 次のオブジェクトと属性がターゲット組織で設定されている必要があります。
 
 1. 移行元組織から移動するメールボックスの場合は、ターゲット組織で MailUser オブジェクトを準備する必要があります。
 
    - ターゲット MailUser には、ソース メールボックスからの属性、または新しい User オブジェクトが割り当てられている必要があります。
-      - ExchangeGUID (ソースからターゲットへの直接フロー) – メールボックス GUID が一致している必要があります。 移動プロセスは、ターゲット オブジェクトに存在しない場合は続行できません。
-      - ArchiveGUID (ソースからターゲットへの直接フロー) – アーカイブ GUID が一致している必要があります。 移動プロセスは、ターゲット オブジェクトに存在しない場合は続行できません。 (これは、ソース メールボックスがアーカイブが有効になっている場合にのみ必要です)。
-      - LegacyExchangeDN (flow as proxyAddress, "x500: \<LegacyExchangeDN> ") – LegacyExchangeDN は、ターゲット MailUser に x500: proxyAddress として存在する必要があります。 さらに、ソース メールボックスからターゲット メール ユーザーにすべての x500 アドレスをコピーする必要があります。 移動プロセスは、ターゲット オブジェクトに存在しない場合は続行できません。 
-      - UserPrincipalName – UPN は、ユーザーの新しい ID またはターゲット企業 (たとえば、user@northwindtraders.onmicrosoft.com) に合 user@northwindtraders.onmicrosoft.com。
-      - プライマリ SMTPAddress – プライマリ SMTP アドレスは、ユーザーの新しい会社 (たとえば、user@northwind.com) に合 user@northwind.com。
-      - TargetAddress/ExternalEmailAddress – MailUser は、ソース テナントでホストされているユーザーの現在のメールボックスを参照します (たとえば、user@contoso.onmicrosoft.com)。 この値を割り当てる場合は、PrimarySMTPAddress を割り当てまたは割り当て中か、この値によって PrimarySMTPAddress が設定され、移動エラーが発生します。
-      - 移行元メールボックスからターゲット MailUser に従来の smtp プロキシ アドレスを追加することはできません。 たとえば、テナント オブジェクトの MEU contoso.com を維持 fabrikam.onmicrosoft.com できません)。 ドメインは、1 つの Azure ADまたはExchange Onlineにのみ関連付けられる。
+      - ExchangeGUID (ソースからターゲットへの直接フロー): メールボックス GUID が一致している必要があります。 移動プロセスは、ターゲット オブジェクトに存在しない場合は続行できません。
+      - ArchiveGUID (ソースからターゲットへの直接フロー): アーカイブ GUID が一致している必要があります。 移動プロセスは、ターゲット オブジェクトに存在しない場合は続行できません。 (これは、ソース メールボックスがアーカイブが有効になっている場合にのみ必要です)。
+      - LegacyExchangeDN (proxyAddress としてフロー" x500: \<LegacyExchangeDN> "): LegacyExchangeDN は、ターゲット MailUser に x500: proxyAddress として存在する必要があります。 さらに、ソース メールボックスからターゲット メール ユーザーにすべての x500 アドレスをコピーする必要があります。 移動プロセスは、ターゲット オブジェクトに存在しない場合は続行できません。
+      - UserPrincipalName: UPN は、ユーザーの新しい ID またはターゲット企業 (たとえば、ユーザーの ID) に user@northwindtraders.onmicrosoft.com。
+      - プライマリ SMTPAddress: プライマリ SMTP アドレスは、ユーザーの新しい会社 (たとえば、user@northwind.com) に合 user@northwind.com。
+      - TargetAddress/ExternalEmailAddress: MailUser は、ソース テナントでホストされているユーザーの現在のメールボックスを参照します (たとえば、user@contoso.onmicrosoft.com)。 この値を割り当てる場合は、PrimarySMTPAddress を割り当てまたは割り当て中か、この値によって PrimarySMTPAddress が設定され、移動エラーが発生します。
+      - 移行元メールボックスからターゲット MailUser に従来の smtp プロキシ アドレスを追加することはできません。 たとえば、テナント オブジェクトの MEU contoso.com を維持 fabrikam.onmicrosoft.com できません)。 ドメインは、1 つのテナントまたは Azure ADテナントExchange Online関連付けられる。
 
      MailUser **オブジェクト** の例:
- 
+
      | 属性            | 値                                                                                                                   |
      | -------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-     | エイリアス                | LaraN                                                                                                                   |
+     | Alias                | LaraN                                                                                                                   |
      | RecipientType        | MailUser                                                                                                                |
      | RecipientTypeDetails | MailUser                                                                                                                |
      | UserPrincipalName    | LaraN@northwintraders.onmicrosoft.com                                                                                   |
@@ -344,7 +259,7 @@ VerifySetup.ps1 -PartnerTenantId <TargetTenantId> -ApplicationId <AADApplication
 
      | 属性            | 値                                                                   |
      | -------------------- | ----------------------------------------------------------------------- |
-     | エイリアス                | LaraN                                                                   |
+     | Alias                | LaraN                                                                   |
      | RecipientType        | UserMailbox                                                             |
      | RecipientTypeDetails | UserMailbox                                                             |
      | UserPrincipalName    | LaraN@contoso.onmicrosoft.com                                           |
@@ -361,7 +276,7 @@ VerifySetup.ps1 -PartnerTenantId <TargetTenantId> -ApplicationId <AADApplication
    - msExchSafeRecipientsHash – クライアントからオンプレミスの Active Directory にオンラインセーフでブロックされた送信者データを書き込みます。
    - msExchSafeSendersHash – クライアントからオンプレミスの Active Directory にオンラインセーフでブロックされた送信者データを書き込みます。
 
-2. ソース メールボックスが LitigationHold に設定され、ソース メールボックスの回復可能なアイテムのサイズがデータベースの既定値 (30 GB) よりも大きい場合、ターゲット クォータがソース メールボックスのサイズより小さいので、移動は続行されません。 ターゲット MailUser オブジェクトを更新して、ELC メールボックス フラグをソース環境からターゲットに移行できます。これにより、ターゲット システムは MailUser のクォータを 100 GB に拡張し、ターゲットへの移動を許可します。 ELC フラグをスタンプするコマンドはテナント管理者に公開されないので、これらの手順は Azure AD Connect を実行するハイブリッド ID でのみ機能します。
+2. ソース メールボックスが LitigationHold に設定され、ソース メールボックスの回復可能なアイテムのサイズがデータベースの既定値 (30 GB) よりも大きい場合、ターゲット クォータがソース メールボックスのサイズより小さいので、移動は続行されません。 ターゲット MailUser オブジェクトを更新して、ELC メールボックス フラグをソース環境からターゲットに移行できます。これにより、ターゲット システムは MailUser のクォータを 100 GB に拡張し、ターゲットへの移動を許可します。 これらの手順は、ELC フラグをスタンプするコマンドがテナント管理者に公開されないので、Azure AD Connect を実行しているハイブリッド ID でのみ機能します。
 
     > [!NOTE]
     > サンプル – 現在、保証なし
@@ -388,13 +303,13 @@ VerifySetup.ps1 -PartnerTenantId <TargetTenantId> -ApplicationId <AADApplication
     このコマンドを使用して、以前メールボックスだったオブジェクトを検索します。
 
     ```powershell
-    Get-User <identity> | select Name, *recipient* | ft -AutoSize
+    Get-User <identity> | select Name, *recipient* | Format-Table -AutoSize
     ```
 
     次に例を示します。
 
     ```powershell
-    PS demo> get-user John@northwindtraders.com |select name, *recipient*| ft -AutoSize
+    Get-User John@northwindtraders.com |select name, *recipient*| Format-Table -AutoSize
 
     Name       PreviousRecipientTypeDetails     RecipientType RecipientTypeDetails
     ----       ---------------------------- ------------- --------------------
@@ -410,46 +325,42 @@ VerifySetup.ps1 -PartnerTenantId <TargetTenantId> -ApplicationId <AADApplication
     次に例を示します。
 
     ```powershell
-    PS demo> Set-User John@northwindtraders.com -PermanentlyClearPreviousMailboxInfo Confirm
+    Set-User John@northwindtraders.com -PermanentlyClearPreviousMailboxInfo -Confirm
+    
     Are you sure you want to perform this action?
-    Delete all existing information about user “John@northwindtraders.com"?. This operation will clear existing values from Previous home MDB and Previous Mailbox GUID of the user. After deletion, reconnecting to the previous mailbox that existed in the cloud will not be possible and any content it had will be unrecoverable PERMANENTLY.
+    Delete all existing information about user "John@northwindtraders.com"?. This operation will clear existing values from Previous home MDB and Previous Mailbox GUID of the user. After deletion, reconnecting to the previous mailbox that existed in the cloud will not be possible and any content it had will be unrecoverable PERMANENTLY.
     Do you want to continue?
     [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [?] Help (default is "Y"): Y
     ```
 
-## <a name="perform-mailbox-migrations"></a>メールボックスの移行を実行する
+### <a name="perform-mailbox-migrations"></a>メールボックスの移行を実行する
 
-テナント間の移行Exchange移行は、移行バッチとしてターゲット テナントから開始されます。 これは、オンプレミスからオンプレミスへの移行時にオンボーディング移行バッチがExchangeに似Microsoft 365。
+移行バッチとしてExchangeテナント間の移行がターゲット テナントから開始されます。 これは、オンプレミスからオンプレミスへの移行時にオンボーディング移行バッチExchange動作する方法Microsoft 365。
 
 ### <a name="create-migration-batches"></a>移行バッチの作成
 
 移動を開始する移行バッチ コマンドレットの例を次に示します。
 
 ```powershell
-New-MigrationBatch -Name T2Tbatch-testforignitedemo -SourceEndpoint target_source_7977 -CSVData ([System.IO.File]::ReadAllBytes('users.csv')) -Autostart -TargetDeliveryDomain targetformoves.onmicrosoft.com -AutoComplete
+New-MigrationBatch -Name T2Tbatch -SourceEndpoint target_source_7977 -CSVData ([System.IO.File]::ReadAllBytes('users.csv')) -Autostart -TargetDeliveryDomain target.onmicrosoft.com
 
 Identity                   Status  Type               TotalCount
 --------                   ------  ----               ----------
-T2Tbatch-testforignitedemo Syncing ExchangeRemoteMove 1
-
+T2Tbatch                   Syncing ExchangeRemoteMove 1
 ```
 
 > [!NOTE]
 > CSV ファイルの電子メール アドレスは、ソース テナントではなく、ターゲット テナントで指定された電子メール アドレスである必要があります。
-
-:::image type="content" source="../media/tenant-to-tenant-mailbox-move/csv-sample.png" alt-text="CSV サンプル":::
+>
+> [コマンドレットの詳細については、こちらをクリックしてください。](/powershell/module/exchange/new-migrationbatch)
+>
+> [CSV ファイルの例については、ここをクリックしてください](/exchange/csv-files-for-mailbox-migration-exchange-2013-help)
 
 移行バッチの申請は、クロステナント オプションを選択Exchange管理センターからサポートされます。
 
-#### <a name="update-on-premises-mailusers"></a>オンプレミスの MailUsers を更新する
+### <a name="update-on-premises-mailusers"></a>オンプレミスの MailUsers を更新する
 
-メールボックスがソースからターゲットに移動したら、オンプレミスのメール ユーザー (ソースとターゲットの両方) が新しい targetAddress で更新されます。 例では、移動で使用される targetDeliveryDomain **は次** contoso.onmicrosoft.com。 この targetAddress を使用してメール ユーザーを更新します。
-
-### <a name="test-mailbox"></a>テスト メールボックス
-
-`Test-MigrationServerAvailability -Endpoint <EndPoint> -TestMailbox <SMTP ADDRESS>`
-
-TestMailbox パラメーターは、ターゲット サーバー上のメールボックスを指定します。 コマンドレットは、ターゲット サーバーの管理者アカウントの資格情報を使用してこのメールボックスへのアクセスを試みます。 -TestMailbox パラメーターの値としてプライマリ SMTP アドレスを使用します。  
+メールボックスがソースからターゲットに移動したら、ソースとターゲットの両方で、オンプレミスのメール ユーザーが新しい targetAddress で更新されます。 例では、移動で使用される targetDeliveryDomain **は次** contoso.onmicrosoft.com。 この targetAddress を使用してメール ユーザーを更新します。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
@@ -459,7 +370,7 @@ TestMailbox パラメーターは、ターゲット サーバー上のメール�
 
 **会議Teamsテナント間で移行しますか?**
 
-ただし、アイテムがクロステナントを移行Teams場合、会議 URL は更新されません。 URL はターゲット テナントで無効になりますので、会議を削除して再作成Teamsがあります。
+会議は移動しますが、アイテムがクロステナントTeams移行しても、会議の URL は更新されません。 URL はターゲット テナントで無効になりますので、会議を削除して再作成Teamsがあります。
 
 **チャット フォルダー Teamsクロステナントを移行しますか?**
 
@@ -467,7 +378,7 @@ TestMailbox パラメーターは、ターゲット サーバー上のメール�
 
 **オンボーディングとオフボーディングの移動ではなく、テナント間の移動である移動を確認する方法**
 
-パラメーターを `-flags` 使用します。 次に例を示します。
+Flags パラメーター _を使用_ します。 次に例を示します。
 
 ```powershell
 Get-MoveRequest -Flags "CrossTenant"
@@ -476,43 +387,41 @@ Get-MoveRequest -Flags "CrossTenant"
 **テストで使用する属性をコピーするためのスクリプトの例を提供できますか?**
 
 > [!NOTE]
-> サンプル – 現在、保証なし<br/>このスクリプトは、ソース メールボックス (ソース値を取得する) とターゲットのオンプレミス Active Directory ドメイン サービス (ADUser オブジェクトにスタンプを押す) の両方への接続を前提としています。 ソースで訴訟または単一アイテムの回復が有効になっている場合は、コピー先アカウントでこれを設定します。  これにより、宛先アカウントのゴミ箱のサイズが 100 GB に増加します。
+> SAMPLE – AS IS, NO WARRANTY このスクリプトは、ソース メールボックス (ソース値を取得する) とターゲットのオンプレミス Active Directory ドメイン サービス (ADUser オブジェクトにスタンプを押す) の両方への接続を前提としています。 ソースで訴訟または単一アイテムの回復が有効になっている場合は、コピー先アカウントでこれを設定します。  これにより、宛先アカウントのゴミ箱のサイズが 100 GB に増加します。
 
-```powershell
-#Dumps out the test mailboxes from SourceTenant
-#Note, the filter applied on Get-Mailbox is for an attribute set on CustomAttribute1 = "ProjectKermit"
-#These are the ‘target’ users to be moved to the Northwind org tenant #################################################################
-$outFileUsers = "$home\desktop\userstomigrate.txt"
-$outFileUsersXML = "$home\desktop\userstomigrate.xml"
-#output the test objects
-Get-Mailbox -Filter "CustomAttribute1 -like 'ProjectKermit'" -ResultSize Unlimited | Select-Object -ExpandProperty Alias | Out-File $outFileUsers
-$mailboxes = Get-Content $outFileUsers
-$mailboxes | ForEach-Object {Get-Mailbox $_} | Select-Object PrimarySMTPAddress,Alias,SamAccountName,FirstName,LastName,DisplayName,Name,ExchangeGuid,ArchiveGuid,LegacyExchangeDn,EmailAddresses | Export-Clixml $outFileUsersXML
 
-#################################################################
-#Copy the file $outfile to the desktop of the target on-premises
-#then run the below to create MEU in Target
-#################################################################
-$mailboxes = Import-Clixml $home\desktop\userstomigrate.xml
 
-foreach ($m in $mailboxes) {
-    $organization = "@contoso.onmicrosoft.com"
-    $mosi = $m.Alias+$organization
-    $Password = [System.Web.Security.Membership]::GeneratePassword(16,4) | ConvertTo-SecureString -AsPlainText -Force
-    $x500 = "x500:" +$m.LegacyExchangeDn
-    $tmpUser = New-MailUser -MicrosoftOnlineServicesID $mosi -PrimarySmtpAddress $mosi -ExternalEmailAddress $m.PrimarySmtpAddress -FirstName $m.FirstName -LastName $m.LastName -Name $m.Name -DisplayName $m.DisplayName -Alias $m.Alias -Password $Password
-    $tmpUser | Set-MailUser -EmailAddresses @{add=$x500} -ExchangeGuid $m.ExchangeGuid -ArchiveGuid $m.ArchiveGuid -CustomAttribute1 "ProjectKermit"
-    $tmpx500 = $m.EmailAddresses | ?{$_ -match "x500"}
-    $tmpx500 | %{Set-MailUser $m.Alias -EmailAddresses @{add="$_"}}
-    }
+   ```powershell
+   # This will export users from the source tenant with the CustomAttribute1 = "Cross-Tenant-Project"
+   # These are the 'target' users to be moved to the Northwind org tenant
+   $outFileUsers = "$home\desktop\UsersToMigrate.txt"
+   $outFileUsersXML = "$home\desktop\UsersToMigrate.xml"
+   Get-Mailbox -Filter "CustomAttribute1 -like 'Cross-Tenant-Project'" -ResultSize Unlimited | Select-Object -ExpandProperty  Alias | Out-File $outFileUsers
+   $mailboxes = Get-Content $outFileUsers
+   $mailboxes | ForEach-Object {Get-Mailbox $_} | Select-Object PrimarySMTPAddress,Alias,SamAccountName,FirstName,LastName,DisplayName,Name,ExchangeGuid,ArchiveGuid,LegacyExchangeDn,EmailAddresses | Export-Clixml $outFileUsersXML
+   ```
 
-#################################################################
-# On AADSync machine, run AADSync
-#################################################################
-Start-ADSyncSyncCycle
+   ```powershell
+   # Copy the file $outfile to the desktop of the target on-premises then run the below to create MEU in Target
+   $mailboxes = Import-Clixml $home\desktop\UsersToMigrate.xml
+   add-type -AssemblyName System.Web
+   foreach ($m in $mailboxes) {
+       $organization = "@contoso.onmicrosoft.com"
+       $mosi = $m.Alias+$organization
+       $Password = [System.Web.Security.Membership]::GeneratePassword(16,4) | ConvertTo-SecureString -AsPlainText -Force
+       $x500 = "x500:" +$m.LegacyExchangeDn
+       $tmpUser = New-MailUser -MicrosoftOnlineServicesID $mosi -PrimarySmtpAddress $mosi -ExternalEmailAddress $m.PrimarySmtpAddress -FirstName $m.FirstName -LastName $m.LastName -Name $m.Name -DisplayName $m.DisplayName -Alias $m.Alias -Password $Password
+       $tmpUser | Set-MailUser -EmailAddresses @{add=$x500} -ExchangeGuid $m.ExchangeGuid -ArchiveGuid $m.ArchiveGuid -CustomAttribute1 "Cross-Tenant-Project"
+       $tmpx500 = $m.EmailAddresses | ?{$_ -match "x500"}
+       $tmpx500 | %{Set-MailUser $m.Alias -EmailAddresses @{add="$_"}}
+       }
+   ```
 
-#AADSync and FWDSync will create the target MEUs in the Target tenant
-```
+   ```powershell
+   # Now sync the changes from On-Premises to Azure and Exchange Online in the Target tenant
+   # This action should create the target mail enabled users (MEUs) in the Target tenant
+   Start-ADSyncSyncCycle
+   ```
 
 **使用メールボックスの移動後Outlook 1 日目にアクセスする方法**
 
@@ -527,9 +436,9 @@ Start-ADSyncSyncCycle
 
 メールボックスの移動を実行する際の委任された職務の前提に基づく役割のマトリックスがあります。 現在、2 つの役割が必要です。
 
-- 最初の役割は、テナント/組織の境界にコンテンツを移動または外に移動する権限を確立する 1 回のセットアップ タスクです。 組織の管理からデータを移動すると、すべての企業にとって重要な懸念事項となります。組織管理者 (OrgAdmin) の最も高い割り当てられた役割を選択しました。 この役割は、-MailboxMoveCapability をリモート組織で定義する新しい OrganizationRelationship を変更またはセットアップする必要があります。 MailboxMoveCapability 設定を変更できるのは OrgAdmin のみですが、OrganizationRelationhip の他の属性はフェデレーション共有管理者が管理できます。
+- 最初の役割は、テナント/組織の境界にコンテンツを移動または外に移動する権限を確立する 1 回のセットアップ タスクです。 組織の管理からデータを移動すると、すべての企業にとって重要な懸念事項となります。組織管理者 (OrgAdmin) の最も高い割り当てられた役割を選択しました。 この役割は、-MailboxMoveCapability をリモート組織で定義する新しい OrganizationRelationship を変更またはセットアップする必要があります。 MailboxMoveCapability 設定を変更できるのは OrgAdmin のみですが、OrganizationRelationship の他の属性はフェデレーション共有管理者が管理できます。
 
-- 実際の移動コマンドを実行する役割は、下位レベルの関数に委任できます。 メールボックスの移動の役割には、パラメーターを使用してメールボックスを組織の中または外に移動する機能が割り当 `-RemoteTenant` てられます。
+- 実際の移動コマンドを実行する役割は、下位レベルの関数に委任できます。 メールボックスの移動の役割は、組織内または組織外でメールボックスを移動する機能に割り当てられます。
 
 **変換されたメールボックスの targetAddress (TargetDeliveryDomain) に選択されている SMTP アドレスを (MailUser 変換に) ターゲットにする方法を説明します。**
 
@@ -546,20 +455,23 @@ Exchangeのメール アドレス (proxyAddress) を照合して MailUser に変
 移動前のメールボックスアクセス許可の出力例を次に示します。
 
 ```powershell
-PS C:\PowerShell\> Get-SourceMailboxPermission testuser_7 |ft -AutoSize User, AccessRights, IsInherited, Deny
-User                                             AccessRights                                                            IsInherited Deny
-----                                             ------------                                                            ----------- ----
-NT AUTHORITY\SELF                                {FullAccess, ReadPermission}                                            False       False
-TestUser_8@SourceCompany.onmicrosoft.com         {FullAccess}                                                            False       False....
+Get-SourceMailboxPermission TestUser_7 | Format-Table -AutoSize User, AccessRights, IsInherited, Deny
+
+User                                             AccessRights                         IsInherited Deny
+----                                             ------------                         ----------- ----
+NT AUTHORITY\SELF                                {FullAccess, ReadPermission}         False       False
+TestUser_8@SourceCompany.onmicrosoft.com         {FullAccess}                         False       False
 ```
 
 移動後のメールボックスアクセス許可の出力例を次に示します。
 
 ```powershell
-PS C:\PowerShell\> Get-TargetMailboxPermission testuser_7 | ft -AutoSize User, AccessRights, IsInherited, Deny
-User                                             AccessRights                                                            IsInherited Deny
-----                                             ------------                                                            ----------- ----
-NT AUTHORITY\SELF                                {FullAccess, ReadPermission}                                            False       FalseTestUser_8@TargetCompany.onmicrosoft.com         {FullAccess}                                                            False       False
+Get-TargetMailboxPermission TestUser_7 | Format-Table -AutoSize User, AccessRights, IsInherited, Deny
+
+User                                             AccessRights                         IsInherited Deny
+----                                             ------------                         ----------- ----
+NT AUTHORITY\SELF                                {FullAccess, ReadPermission}         False       False
+TestUser_8@TargetCompany.onmicrosoft.com         {FullAccess}                         False       False
 ```
 
 > [!NOTE]
@@ -575,32 +487,16 @@ NT AUTHORITY\SELF                                {FullAccess, ReadPermission}   
 LegacyExchangeDN value on source mailbox is:
 /o=First Organization/ou=Exchange Administrative Group(FYDIBOHF23SPDLT)/cn=Recipients/cn=d11ec1a2cacd4f81858c81907273f1f9Lara
 
-so the x500 email address to be added to target MailUser object would be:
+so, the x500 email address to be added to target MailUser object would be:
 x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=d11ec1a2cacd4f81858c81907273f1f9-Lara
 ```
 
 > [!NOTE]
 > この X500 プロキシに加えて、ソース内のメールボックスからすべての X500 プロキシをターゲットのメールボックスにコピーする必要があります。
 
-**移動が機能しない場合は、どこでトラブルシューティングを開始しますか?**
-
-まず、次のVerifySetup.ps1スクリプトを実行[しGitHub](https://github.com/microsoft/cross-tenant/releases/tag/Preview)を確認します。
-
-次に、ターゲット テナントでVerifySetup.ps1例を示します。
-
-```powershell
-VerifySetup.ps1 -PartnerTenantId <SourceTenantId> -ApplicationId <AADApplicationId> -ApplicationKeyVaultUrl <appKeyVaultUrl> -PartnerTenantDomain <PartnerTenantDomain> -Verbose
-```
-
-次に、ソース テナントで実行VerifySetup.ps1 eExample を示します。
-
-```powershell
-VerifySetup.ps1 -PartnerTenantId <TargetTenantId> -ApplicationId <AADApplicationId>
-```
-
 **ソーステナントとターゲット テナントは同じドメイン名を使用できますか?**
 
-その必要はありません。 ソーステナントとターゲットテナントのドメイン名は一意である必要があります。 たとえば、ユーザーのソース ドメインと contoso.com のターゲット ドメイン fourthcoffee.com。
+いいえ。 ソーステナントとターゲットテナントのドメイン名は一意である必要があります。 たとえば、ユーザーのソース ドメインと contoso.com のターゲット ドメイン fourthcoffee.com。
 
 **共有メールボックスは移動し、引き続き機能しますか?**
 
@@ -610,37 +506,52 @@ VerifySetup.ps1 -PartnerTenantId <TargetTenantId> -ApplicationId <AADApplication
 
 - [Microsoft サポート |専用のメールボックスExchangeアクセスOutlookを付与するOffice 365方法](https://support.microsoft.com/topic/how-to-grant-exchange-and-outlook-mailbox-permissions-in-office-365-dedicated-bac01b2c-08ff-2eac-e1c8-6dd01cf77287)
 
-**Azure Key Vault が必要な場合と、トランザクションが行われた場合**
-
-はい、移行を承認するために Key Vault を使用して証明書を格納するには、Azure サブスクリプションが必要です。 ユーザー名 & パスワードを使用してソースに対する認証を行うオンボード移行とは異なり、テナント間メールボックスの移行では OAuth とこの証明書がシークレット/資格情報として使用されます。 Key Vault へのアクセスは、移行の開始時と終了時に 1 回、増分同期時には 24 時間に 1 回アクセスされるので、すべてのメールボックス移行を通じて維持する必要があります。 AKV のコスト計算の詳細については、こちらを参照 [してください](https://azure.microsoft.com/pricing/details/key-vault/)。
-
 **バッチに関する推奨事項はありますか?**
 
-バッチあたりのメールボックス数は 2000 を超えないようにしてください。 同期中にエンド ユーザーに影響が出ない場合は、カットオーバー日の 2 週間前にバッチを送信することを強く推奨します。50,000 を超えるメールボックスの数量に関するガイダンスが必要な場合は、crosstenantmigrationpreview@service.microsoft.com のエンジニアリング フィードバック配布リストにアクセスできます。
+バッチあたりのメールボックス数は 2000 を超えないようにしてください。 同期中にエンド ユーザーに影響が出ない場合は、カットオーバー日の 2 週間前にバッチを送信することを強く推奨します。 50,000 を超えるメールボックスの数量に関するガイダンスが必要な場合は、crosstenantmigrationpreview@service.microsoft.com のエンジニアリング フィードバック配布リストにアクセスできます。
 
 **顧客キーでサービス暗号化を使用する場合は、**
 
-メールボックスは移動前に復号化されます。 顧客キーがまだ必要な場合は、ターゲット テナントで顧客キーが構成されていることを確認します。 詳細 [については、](../compliance/customer-key-overview.md) こちらを参照してください。
+メールボックスは移動前に復号化されます。 顧客キーがまだ必要な場合は、ターゲット テナントで顧客キーが構成されていることを確認します。 詳細 [については、](/microsoft-365/compliance/customer-key-overview) こちらを参照してください。
 
 **推定移行時間は何ですか?**
 
 移行を計画する際に役立つ、次[](/exchange/mailbox-migration/office-365-migration-best-practices#estimated-migration-times)の表に、メールボックスの一括移行または個々の移行が完了すると予想される場合のガイドラインを示します。 これらの見積もりは、以前の顧客移行のデータ分析に基づいて行います。 すべての環境が一意なので、正確な移行速度は異なる場合があります。
 
-この機能は現在プレビュー中であり、SLA および該当するサービス レベルは、この機能のプレビュー状態の間、パフォーマンスや可用性の問題には適用されません。
+この機能は現在プレビュー中であり、SLA であり、該当するサービス レベルは、この機能のプレビュー状態の間、パフォーマンスや可用性の問題には適用されません。
+
+**移動先テナントのユーザーがソース テナントでドキュメントを保護する。**
+
+テナント間の移行では、メールボックス データだけが移行され、それ以外は移行されません。 次のブログ投稿に記載されている他のオプションは複数あるので、役立つ場合があります。 <https://techcommunity.microsoft.com/t5/security-compliance-and-identity/mergers-and-spinoffs/ba-p/910455>
+
+**移行先テナント内のラベルは、組織間の配置に応じて、移行されたユーザーのラベルのセットまたは追加のラベルのセットとして、移行元テナントと同じラベルを作成できます。**
+
+クロステナント移行ではラベルがエクスポートされないので、テナント間でラベルを共有する方法はありません。これは、移行先テナントでラベルを再作成することでのみ実現できます。
+
+**グループの移動をMicrosoft 365しますか?**
+
+現在、テナント間メールボックスの移行機能では、グループ間の移行Microsoft 365されていません。
+
+**移行元テナント管理者は、メールボックスが新しい/ターゲット テナントに移行された後、メールボックスに対して電子情報開示検索を実行できますか?**
+
+いいえ、テナント間メールボックスの移行後、移行元の移行済みユーザーのメールボックスに対する電子情報開示は機能しません。 これは、メールボックスがターゲット テナントに移行され、ターゲット テナントに属している間に、検索対象のメールボックスがソースに存在しなくなったためです。 電子情報開示では、メールボックスの移行後は、ターゲット テナント (メールボックスが現在存在する場所) でのみ実行できます。 移行後にソース メールボックスのコピーをソース テナントに保持する必要がある場合、ソースの管理者は、データに対する将来の電子情報開示操作のために、移行前の代替メールボックスにコンテンツをコピーできます。
 
 ## <a name="known-issues"></a>既知の問題
+
+- **問題: 移行後のTeamsテナントの機能が制限されます。** メールボックスがターゲット テナントに移行された後、Teamsテナント内のユーザーがユーザーのメールボックスにアクセスできなくなりました。 そのため、ユーザーがソース テナント資格情報を使用して Teams にログインすると、プロファイル画像を更新する機能が失われる、予定表アプリケーションがない、パブリック チームを検索して参加できません。
 
 - **問題: 自動拡張アーカイブを移行できません。** テナント間移行機能は、特定のユーザーのプライマリ メールボックスとアーカイブ メールボックスの移行をサポートします。 ただし、ソース内のユーザーが自動拡張アーカイブ (複数のアーカイブ メールボックスを意味する) を持つ場合、この機能は追加のアーカイブを移行できず、失敗する必要があります。
 
 - **問題: 所有されていない smtp proxyAddress ブロック MRS がバックグラウンドを移動するクラウド MailUsers。** ターゲット テナントの MailUser オブジェクトを作成する場合は、すべての SMTP プロキシ アドレスがターゲット テナント組織に属している必要があります。 ローカル テナントに属していないターゲット メール ユーザーに SMTP proxyAddress が存在する場合、MailUser からメールボックスへの変換は防止されます。 これは、メールボックス オブジェクトが、テナントが権限を持つドメイン (テナントが要求するドメイン) からのみメールを送信できるという保証が原因です。
 
-  - Azure AD Connect を使用してオンプレミスからユーザーを同期する場合は、メールボックスが存在するソース テナント (laran@contoso.onmicrosoft.com) を指す ExternalEmailAddress を使用してオンプレミスの MailUser オブジェクトをプロビジョニングし、PrimarySMTPAddress をターゲット テナント (Lara.Newton@northwind.com) に存在するドメインとしてスタンプします。 これらの値はテナントに同期され、適切なメール ユーザーがプロビジョニングされ、移行の準備が整います。 オブジェクトの例を次に示します。
+  - Azure AD Connect を使用してオンプレミスからユーザーを同期する場合は、メールボックスが存在するソース テナント (LaraN@contoso.onmicrosoft.com) を指す ExternalEmailAddress を使用してオンプレミスの MailUser オブジェクトをプロビジョニングし、PrimarySMTPAddress をターゲット テナント (Lara.Newton@northwind.com) に存在するドメインとしてスタンプします。 これらの値はテナントに同期され、適切なメール ユーザーがプロビジョニングされ、移行の準備が整います。 オブジェクトの例を次に示します。
 
     ```powershell
-    target/AADSynced user] PS C> Get-MailUser laran | select ExternalEmailAddress, EmailAddresses
+    Get-MailUser LaraN | select ExternalEmailAddress, EmailAddresses
+
     ExternalEmailAddress               EmailAddresses
     --------------------               --------------
-    SMTP:laran@contoso.onmicrosoft.com {SMTP:lara.newton@northwind.com}
+    SMTP:LaraN@contoso.onmicrosoft.com {SMTP:lara.newton@northwind.com}
     ```
 
    > [!NOTE]
@@ -650,21 +561,19 @@ VerifySetup.ps1 -PartnerTenantId <TargetTenantId> -ApplicationId <AADApplication
 
   MailUser オブジェクトは、ローカル以外のメールボックスへのポインターです。 テナント間メールボックスの移行の場合、MailUser オブジェクトを使用して、ソース メールボックス (ターゲット組織の観点から) またはターゲット メールボックス (ソース組織の観点から) を表します。 MailUsers には、ディレクトリ内のメールボックス ユーザーの表示される SMTP アドレスを表す、実際のメールボックス (ProxyTest@fabrikam.onmicrosoft.com) の smtp アドレスと primarySMTP アドレスをポイントする ExternalEmailAddress (targetAddress) があります。 一部の組織では、プライマリ SMTP アドレスを外部 SMTP アドレスとして表示し、ローカル テナントが所有/検証したアドレスとしてではなく (fabrikam.com など)、外部 SMTP アドレスとして表示 contoso.com。  ただし、Exchange サービス プラン オブジェクトがライセンス操作を介して MailUser に適用されると、プライマリ SMTP アドレスが変更され、ローカル組織 (contoso.com) によって確認されたドメインとして表示されます。 次の 2 つの潜在的な理由があります。
 
-  - 任意の Exchange サービス プランが MailUser に適用されると、Azure AD プロセスはプロキシ スクラブの適用を開始して、ローカル組織が別のテナントからメール、スプーフィング、またはメールを送信できないか確認します。 これらのサービス プランを持つ受信者オブジェクト上の SMTP アドレスは、ローカル組織によってアドレスが確認されていない場合は削除されます。 例の場合と同様に、Fabikam.com ドメインは contoso.onmicrosoft.com テナントによって検証されないので、スクラブによってそのドメイン fabrikam.com されます。 移行前または移行後にこれらの外部ドメインを MailUser に保持する場合は、移行が完了した後、または移行前に移行プロセスを変更してライセンスを削除し、ユーザーが予期した外部ブランド化を適用する必要があります。 メールボックス オブジェクトがメール サービスに影響を与えずに適切にライセンスされていることを確認する必要があります。<br/><br/>テナント内の MailUser 上のサービス プランを削除するスクリプト Contoso.onmicrosoft.com 次に示します。
+  - Exchange サービス プランが MailUser に適用されると、Azure AD プロセスはプロキシ スクラブの適用を開始して、ローカル組織が別のテナントからメール、スプーフィング、またはメールを送信できないか確認します。 これらのサービス プランを持つ受信者オブジェクト上の SMTP アドレスは、ローカル組織によってアドレスが確認されていない場合は削除されます。 例の場合と同様に、Fabikam.com ドメインは contoso.onmicrosoft.com テナントによって検証されないので、スクラブによってそのドメイン fabrikam.com されます。 移行前または移行後にこれらの外部ドメインを MailUser に保持する場合は、移行が完了した後、または移行前に移行プロセスを変更してライセンスを削除し、ユーザーが予期した外部ブランド化を適用する必要があります。 メールボックス オブジェクトがメール サービスに影響を与えずに適切にライセンスされていることを確認する必要があります。
+  - テナント内の MailUser 上のサービス プランを削除するスクリプト contoso.onmicrosoft.com 次に示します。
 
     ```powershell
-    $LO = New-MsolLicenseOptions -AccountSkuId "contoso:ENTERPRISEPREMIUM" DisabledPlans
-    "LOCKBOX_ENTERPRISE","EXCHANGE_S_ENTERPRISE","INFORMATION_BARRIERS","MIP_S_CLP2","
-    MIP_S_CLP1","MYANALYTICS_P2","EXCHANGE_ANALYTICS","EQUIVIO_ANALYTICS","THREAT_INTE
-    LLIGENCE","PAM_ENTERPRISE","PREMIUM_ENCRYPTION"
-    Set-MsolUserLicense -UserPrincipalName proxytest@contoso.com LicenseOptions $lo
+    $LO = New-MsolLicenseOptions -AccountSkuId "contoso:ENTERPRISEPREMIUM" DisabledPlans "LOCKBOX_ENTERPRISE","EXCHANGE_S_ENTERPRISE","INFORMATION_BARRIERS","MIP_S_CLP2","MIP_S_CLP1","MYANALYTICS_P2","EXCHANGE_ANALYTICS","EQUIVIO_ANALYTICS","THREAT_INTELLIGENCE","PAM_ENTERPRISE","PREMIUM_ENCRYPTION"
+    Set-MsolUserLicense -UserPrincipalName ProxyTest@contoso.com LicenseOptions $lo
     ```
 
        割り当てられた ServicePlans のセットの結果を次に示します。
 
     ```powershell
-    (Get-MsolUser -UserPrincipalName proxytest@contoso.com).licenses |select
-    -ExpandProperty servicestatus |sort ProvisioningStatus -Descending
+    (Get-MsolUser -UserPrincipalName ProxyTest@contoso.com).licenses | Select-Object -ExpandProperty ServiceStatus |sort ProvisioningStatus -Descending
+
     ServicePlan           ProvisioningStatus
     -----------           ------------------
     ATP_ENTERPRISE        PendingProvisioning
@@ -709,43 +618,46 @@ VerifySetup.ps1 -PartnerTenantId <TargetTenantId> -ApplicationId <AADApplication
     次に例を示します。
 
     ```powershell
-    get-recipient proxytest | ft -a userprin*, primary*, external*
-    PrimarySmtpAddress        ExternalDirectoryObjectId               ExternalEmailAddress
-    ------------------        -------------------------               --------------------
-    proxytest@fabrikam.com    e2513482-1d5b-4066-936a-cbc7f8f6f817    SMTP:proxytest@fabrikam.com
+    Get-Recipient ProxyTest | Format-Table -AutoSize UserPrincipalName, PrimarySmtpAddress, ExternalEmailAddress, ExternalDirectoryObjectId
+    UserPrincipalName               PrimarySmtpAddress              ExternalEmailAddress                 ExternalDirectoryObjectId
+    -----------------               ------------------              --------------------                 -------------------------
+    ProxyTest@fabrikam.com          ProxyTest@fabrikam.com          SMTP:ProxyTest@fabrikam.com          e2513482-1d5b-4066-936a-cbc7f8f6f817
     ```
-    
-   - msExchRemoteRecipientType が 8 (DeprovisionMailbox) に設定されている場合、ターゲット テナントに移行されるオンプレミスの MailUser の場合、Azure のプロキシ スクラブ ロジックは所有されていないドメインを削除し、primarySMTP を所有ドメインにリセットします。 オンプレミスの MailUser で msExchRemoteRecipientType をクリアすると、プロキシ スクラブ ロジックは適用されなくなりました。 <br/><br>以下は、サービス プランを含む、可能なサービス プランの完全Exchange Online。
 
-   | 名前                                             |
-   | ------------------------------------------------ |
-   | Advanced eDiscovery Storage (500 GB)              |
-   | 顧客ロックボックス                                 |
-   | データ損失防止                             |
-   | Exchange Enterprise CAL サービス (EOP、DLP)      |
-   | Exchange Essentials                              |
-   | ExchangeFoundation                              |
-   | Exchange Online (P1)                             |
-   | Exchange Online (プラン 1)                         |
-   | Exchange Online (プラン 2)                         |
-   | Exchange Online 用の Exchange Online Archiving    |
-   | Exchange Server 用の Exchange Online Archiving    |
-   | Exchange Online非アクティブなユーザー アドオン             |
-   | Exchange Online Kiosk                            |
-   | Exchange Online Multi-Geo                        |
-   | Exchange Online プラン 1                           |
-   | Exchange Online POP                              |
-   | Exchange Online Protection                       |
-   | 情報バリア                             |
-   | Information Protection for Office 365 - Premium  |
-   | Information Protection for Office 365 - Standard |
-   | インサイト By MyAnalytics                          |
-   | Microsoft 365高度な監査                  |
-   | Microsoft Bookings                               |
-   | Microsoft Business Center                        |
-   | Microsoft MyAnalytics (フル機能)                     |
-   | Office 365 Advanced eDiscovery                   |
-   | Microsoft Defender for Office 365 (プラン 1)       |
-   | Microsoft Defender for Office 365 (プラン 2)       |
-   | Office 365 Privileged Access Management          |
-   | プレミアム暗号化のOffice 365                 |
+    - msExchRemoteRecipientType が 8 (DeprovisionMailbox) に設定されている場合、ターゲット テナントに移行されるオンプレミスの MailUser の場合、Azure のプロキシ スクラブ ロジックは所有されていないドメインを削除し、primarySMTP を所有ドメインにリセットします。 オンプレミスの MailUser で msExchRemoteRecipientType をクリアすると、プロキシ スクラブ ロジックは適用されなくなりました。
+
+      以下に、現在のサービス プランの完全なセットを示Exchange Online。
+
+      | 名前                                             |
+      | ------------------------------------------------ |
+      | Advanced eDiscovery Storage (500 GB)              |
+      | 顧客ロックボックス                                 |
+      | データ損失防止                             |
+      | Exchange Enterprise CAL サービス (EOP、DLP)      |
+      | Exchange Essentials                              |
+      | ExchangeFoundation                              |
+      | Exchange Online (P1)                             |
+      | Exchange Online (プラン 1)                         |
+      | Exchange Online (プラン 2)                         |
+      | Exchange Online 用の Exchange Online Archiving    |
+      | Exchange Server 用の Exchange Online Archiving    |
+      | Exchange Online非アクティブなユーザー アドオン             |
+      | Exchange Online Kiosk                            |
+      | Exchange Online Multi-Geo                        |
+      | Exchange Online プラン 1                           |
+      | Exchange Online POP                              |
+      | Exchange Online Protection                       |
+      | 情報バリア                             |
+      | Information Protection for Office 365 - Premium  |
+      | Information Protection for Office 365 - Standard |
+      | インサイト By MyAnalytics                          |
+      | Microsoft 365高度な監査                  |
+      | Microsoft Bookings                               |
+      | Microsoft Business Center                        |
+      | Microsoft MyAnalytics (フル機能)                     |
+      | Office 365 Advanced eDiscovery                   |
+      | Microsoft Defender for Office 365 (プラン 1)       |
+      | Microsoft Defender for Office 365 (プラン 2)       |
+      | Office 365 Privileged Access Management          |
+      | プレミアム暗号化のOffice 365                 |
+      |                                                  |

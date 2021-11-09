@@ -2,7 +2,6 @@
 title: グループ ポリシー Microsoft Defender ウイルス対策を構成する
 description: グループ ポリシーを使用して、Microsoft Defender for Endpoint のMicrosoft Defender ウイルス対策を構成および管理する方法について説明します。
 keywords: グループ ポリシー、GPO、構成、設定
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -10,19 +9,19 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 05/08/2021
+ms.date: 10/18/2021
 ms.reviewer: ksarens, jtoole, pahuijbr
 manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
 ms.collection: m365-security-compliance
-ms.openlocfilehash: c00ed9b12212cb24cb3ac6e4c7a8ab1577832453
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a8eb8db33a79ccb7d4cc9cd010a689e524746fad
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176801"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883679"
 ---
 # <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>グループ ポリシー設定を使用して、グループ ポリシーの構成とMicrosoft Defender ウイルス対策
 
@@ -62,7 +61,7 @@ ms.locfileid: "60176801"
 
 ****
 
-|Location|Setting|記事|
+|場所|Setting|記事|
 |---|---|---|
 |クライアント インターフェイス|ヘッドレス UI モードを有効にする|[ユーザーがユーザー インターフェイスを表示または操作Microsoft Defender ウイルス対策防止する](prevent-end-user-interaction-microsoft-defender-antivirus.md)|
 |クライアント インターフェイス|アクションを実行する必要がある場合にクライアントに追加のテキストを表示する|[エンドポイントに表示される通知を構成する](configure-notifications-microsoft-defender-antivirus.md)|
@@ -81,8 +80,8 @@ ms.locfileid: "60176801"
 |ネットワーク検査システム|ネットワーク トラフィック検査用の追加の定義セットを指定する|[ネットワーク トラフィック検査用の追加の定義セットを指定する](specify-additional-definitions-network-traffic-inspection-mdav.md)|
 |ネットワーク検査システム|定義の削除を有効にする|[定義の削除を構成する](turn-on-definition-retirement.md)|
 |ネットワーク検査システム|プロトコル認識を有効にする|[プロトコル認識を有効にする](turn-on-protocol-recognition.md)|
-|検疫する|検疫フォルダーからアイテムを削除するローカル設定の上書きを構成する|[ユーザーによるポリシー設定のローカル変更を防止または許可する](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
-|検疫する|検疫フォルダーからのアイテムの削除を構成する|[スキャンの修復をMicrosoft Defender ウイルス対策する](configure-remediation-microsoft-defender-antivirus.md)|
+|Quarantine|検疫フォルダーからアイテムを削除するローカル設定の上書きを構成する|[ユーザーによるポリシー設定のローカル変更を防止または許可する](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
+|Quarantine|検疫フォルダーからのアイテムの削除を構成する|[スキャンの修復をMicrosoft Defender ウイルス対策する](configure-remediation-microsoft-defender-antivirus.md)|
 |リアルタイム保護|コンピューター上のファイルとプログラムのアクティビティを監視するローカル設定の上書きを構成する|[ユーザーによるポリシー設定のローカル変更を防止または許可する](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
 |リアルタイム保護|受信および送信ファイルのアクティビティを監視するローカル設定の上書きを構成する|[ユーザーによるポリシー設定のローカル変更を防止または許可する](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
 |リアルタイム保護|ダウンロードしたファイルと添付ファイルをスキャンするローカル設定の上書きを構成する|[ユーザーによるポリシー設定のローカル変更を防止または許可する](configure-local-policy-overrides-microsoft-defender-antivirus.md)|

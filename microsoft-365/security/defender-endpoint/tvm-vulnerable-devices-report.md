@@ -2,8 +2,6 @@
 title: 脆弱なデバイス レポート - 脅威と脆弱性の管理
 description: 脆弱なデバイスの傾向と現在の統計情報を示すレポート。 目標は、デバイスの露出の呼吸と範囲を理解する目的です。
 keywords: Microsoft Defender for Endpoint-tvm の脆弱なデバイス、Microsoft Defender for Endpoint、tvm、脅威& 脆弱性の暴露を減らす、脅威と脆弱性を軽減する、セキュリティ構成を監視する
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 23e0ab99f2272759e7e1c75f9eb3d36e7da4d925
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 65a218a78641856cb247d7bcf2d1d69de09d8609
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206747"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882947"
 ---
 # <a name="vulnerable-devices-report---threat-and-vulnerability-management"></a>脆弱なデバイス レポート - 脅威と脆弱性の管理
 
@@ -46,7 +44,7 @@ ms.locfileid: "60206747"
 - 傾向 (時間の流れる)。 過去 30 日間、3 か月、6 か月、またはカスタムの日付範囲を表示できます。
 - 状態 (現在の情報)
 
-**フィルター**: 脆弱性の重大度レベル、悪用の可用性、脆弱性の年齢、オペレーティング システム プラットフォーム、Windows 10 バージョン、またはデバイス グループでデータをフィルター処理できます。
+**フィルター**: 脆弱性の重大度レベル、悪用の可用性、脆弱性の年齢、オペレーティング システム プラットフォーム、Windows 10 または Windows 11 バージョン、またはデバイス グループでデータをフィルター処理できます。
 
 **ドリルダウン:** さらに詳しい分析情報がある場合は、関連する棒グラフを選択して、[デバイス インベントリ] ページにフィルター処理されたデバイスの一覧を表示します。 そこからリストをエクスポートできます。
 
@@ -74,13 +72,13 @@ ms.locfileid: "60206747"
 
 :::image type="content" alt-text="オペレーティング システム プラットフォーム別の現在の脆弱なデバイスの 1 つのグラフと、OS プラットフォームによる脆弱なデバイスの時間の経時を示す 1 つのグラフ。" source="images/tvm-report-os.png" lightbox="images/tvm-report-os.png":::
 
-## <a name="vulnerable-devices-by-windows-10-version-graphs"></a>バージョン グラフによるWindows 10デバイス
+## <a name="vulnerable-devices-by-windows-version-graphs"></a>バージョン グラフによるWindowsデバイス
 
-脆弱なアプリケーションまたは OS Windows 10される各バージョンのデバイスの数。
+脆弱なアプリケーションまたは OS によってWindows 10または Windows 11 バージョンのデバイスの数。
 
 ![現在の脆弱なデバイスのバージョン別の 1 つのグラフWindows 10、1 つのグラフは、Windows 10バージョンで脆弱なデバイスを示します。](images/tvm-report-version.png)lightbox="images/tvm-report-version.png"::
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [セキュリティ上の推奨事項](tvm-security-recommendation.md)

@@ -1,8 +1,7 @@
 ---
 title: 制御されたフォルダー アクセスを有効にする
-keywords: フォルダー アクセスの制御、Windows 10、Windows Defender、ランサムウェア、保護、ファイル、フォルダー、有効化、オン、使用
+keywords: フォルダー アクセスの制御, Windows 10, Windows 11, Windows Defender, ランサムウェア, 保護, ファイル, フォルダー, 有効化, オンにする, 使用
 description: フォルダー アクセスの制御を有効にすることで重要なファイルを保護する方法について説明します。
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.topic: article
 ms.mktglfcycl: manage
@@ -16,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 527bd73d11a40672839d29a5007298a0807d95b6
-ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
+ms.openlocfilehash: 6f18bfdc4e8dd4701831ed169684db110a54e154
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2021
-ms.locfileid: "60804787"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882143"
 ---
 # <a name="enable-controlled-folder-access"></a>制御されたフォルダー アクセスを有効にする
 
@@ -33,7 +32,7 @@ ms.locfileid: "60804787"
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-[フォルダー アクセスの制御により](controlled-folders.md) 、悪意のあるアプリやランサムウェアなどの脅威から貴重なデータを保護できます。 フォルダー アクセスの制御は、サーバー 2019 Windows 10およびWindowsに含まれます。  フォルダー アクセスの制御は、Windows Server [2012R2 および 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)の最新の統合ソリューションの一部として含まれています。
+[フォルダー アクセスの制御により](controlled-folders.md) 、悪意のあるアプリやランサムウェアなどの脅威から貴重なデータを保護できます。 フォルダー アクセスの制御は、サーバー 2019 Windows 10、Windows 11、および Windowsに含まれます。 フォルダー アクセスの制御は、Windows Server [2012R2 および 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)の最新の統合ソリューションの一部として含まれています。
 
 次の方法を使用して、フォルダーアクセスの制御を有効にできます。
 

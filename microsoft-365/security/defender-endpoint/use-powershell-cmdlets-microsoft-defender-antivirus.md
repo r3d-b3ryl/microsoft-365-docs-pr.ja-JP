@@ -1,8 +1,7 @@
 ---
 title: PowerShell コマンドレットを使用して、サーバーの構成と実行をMicrosoft Defender ウイルス対策
-description: このWindows 10 PowerShell コマンドレットを使用して、スキャンの実行、セキュリティ インテリジェンスの更新、および設定の変更を行Microsoft Defender ウイルス対策。
+description: 11 Windows 10および Windowsでは、PowerShell コマンドレットを使用して、スキャンの実行、セキュリティ インテリジェンスの更新、および設定の変更を行Microsoft Defender ウイルス対策。
 keywords: scan, コマンドライン, mpcmdrun, defender
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,19 +10,19 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 07/23/2020
+ms.date: 10/18/2020
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 7aba9169a32915d4c77d8096e3b818b9c4c4abda
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: be306fdde4e3b83de323fd769bdc069e2f2958ba
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203929"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882455"
 ---
 # <a name="use-powershell-cmdlets-to-configure-and-manage-microsoft-defender-antivirus"></a>PowerShell コマンドレットを使用して、サーバーの構成とMicrosoft Defender ウイルス対策
 
@@ -66,7 +65,7 @@ Get-Help <cmdlet> -Online
 
 ローカルに `-online` キャッシュされたヘルプを取得するには、パラメーターを省略します。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [管理および構成ツールのリファレンス トピック](configuration-management-reference-microsoft-defender-antivirus.md)
 - [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)

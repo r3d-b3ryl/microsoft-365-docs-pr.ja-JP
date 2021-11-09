@@ -2,7 +2,6 @@
 title: モバイル デバイスの更新方法を定義Microsoft Defender ウイルス対策
 description: ラップトップなどのモバイル デバイスを保護更新プログラムで更新する方法Microsoft Defender ウイルス対策管理します。
 keywords: 更新プログラム、保護、スケジュールの更新、バッテリー、モバイル デバイス、ノート PC、ノートブック、オプトイン、microsoft update、wsus、override
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 5e95167e5493e55e375dc5827531a6f22b139023
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3d39f2de9d1dcfed8b81e2c4aba2350796005daa
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60178337"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883643"
 ---
 # <a name="manage-updates-for-mobile-devices-and-virtual-machines-vms"></a>モバイル デバイスと仮想マシン (VM) の更新プログラムを管理する
 

@@ -2,7 +2,6 @@
 title: レポート ツールに関する問題のトラブルシューティングを行Microsoft Defender ウイルス対策
 description: 更新コンプライアンスで保護状態を報告しようとするときに、一般的なMicrosoft Defender ウイルス対策を特定して解決する
 keywords: トラブルシューティング、エラー、修正、更新コンプライアンス、oms、監視、レポート、Microsoft Defender ウイルス対策
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: dc9ad48614e386c0e61bc6395ad3126247802046
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f1d749eba67696fd2074283cd3c02ffe43330172
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196787"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883451"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-reporting-in-update-compliance"></a>更新プログラムのコンプライアンスでの Microsoft Defender ウイルス対策レポートのトラブルシューティング
 
@@ -75,7 +74,8 @@ ms.locfileid: "60196787"
 > [!div class="nextstepaction"]
 > [更新コンプライアンスのトラブルシューティングの診断データを収集する](collect-diagnostic-data.md)
 
-## <a name="related-topics"></a>関連トピック
+
+## <a name="related-topics"></a>関連項目
 
 - [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)
 - [展開Microsoft Defender ウイルス対策](deploy-manage-report-microsoft-defender-antivirus.md)

@@ -2,8 +2,6 @@
 title: Web コンテンツ フィルタリング
 description: Microsoft Defender for Endpoint の Web コンテンツ フィルターを使用して、コンテンツ カテゴリに基づいて Web サイトへのアクセスを追跡および規制します。
 keywords: Web 保護、Web 脅威保護、Web 閲覧、監視、レポート、カード、ドメイン リスト、セキュリティ、フィッシング、マルウェア、悪用、Web サイト、ネットワーク保護、エッジ、Internet Explorer、Chrome、Firefox、Web ブラウザー
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3afc71b226bb7858caed439f13c55aee44d81a63
-ms.sourcegitcommit: 11855e904e7f4e57aff302852546a93526cad4dc
+ms.openlocfilehash: 65010f13ca5b1605d9bcec672c4e51270913d407
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2021
-ms.locfileid: "60275690"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883439"
 ---
 # <a name="web-content-filtering"></a>Web コンテンツ フィルタリング
 
@@ -56,7 +54,7 @@ Web コンテンツ フィルターは主要な Web ブラウザーで利用で�
 
 - ポータル ( ) へのMicrosoft 365 Defenderがあります [https://security.microsoft.com](https://security.microsoft.com) 。
 
-- 組織のデバイスは、最新Windows 10更新プログラム (バージョン 1607) 以降で実行[されています](manage-updates-baselines-microsoft-defender-antivirus.md)。
+- 組織のデバイスは、Windows 10 Anniversary Update (バージョン 1607) 以降、または最新のウイルス対策/マルウェア対策更新プログラムを使用して Windows 11 を実行[しています](manage-updates-baselines-microsoft-defender-antivirus.md)。
 
 - Windows DefenderSmartScreen とネットワーク保護は、組織のデバイスで有効になっています。
 

@@ -2,7 +2,6 @@
 title: Microsoft Defender ウイルス対策イベントの ID とエラー コード
 description: イベントの原因と解決策を調Microsoft Defender ウイルス対策エラーの原因と解決策
 keywords: イベント、エラー コード、siem、ログ、トラブルシューティング、wef、Windows イベント転送
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,17 +10,17 @@ ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 09/11/2018
+ms.date: 10/19/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 59392ebb51bb483393cf657ced400c238852d72c
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 0bf6b5ed0d59e445eba4f8146d8321cf5bff1bf9
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753543"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60881717"
 ---
 # <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策ソフトウェアの問題をトラブルシューティングするため、イベント ログとエラー コードをレビューする
 
@@ -36,7 +35,7 @@ ms.locfileid: "60753543"
 
 テーブルの一覧:
 
-- [Microsoft Defender ウイルス対策イベントの ID (](#windows-defender-av-ids)これらは、イベントの両方にWindows 10適用Windows Server 2016)
+- [Microsoft Defender ウイルス対策イベントの ID](#windows-defender-av-ids) (これらは、Windows 10、Windows 11、および Windows Server 2016)
 - [Microsoft Defender ウイルス対策エラー コード](#error-codes)
 - [内部Microsoft Defender ウイルス対策クライアント エラー コード (開発およびテスト中に Microsoft が使用)](#internal-error-codes)
 
@@ -393,7 +392,7 @@ Microsoft Defender ウイルス対策ログにイベントのWINDOWSを記録し
 <li>IEPROTECT: IE - IExtensionValidation;これにより、悪意のある Web ページ コントロールから保護されます。</li>
 <li>早期起動マルウェア対策 (ELAM)。 これには、ブート シーケンスによって検出されたマルウェアが含まれます。</li>
 <li>リモート構成証明</li>
-</ul>マルウェア対策スキャン インターフェイス (AMSI)。 主にスクリプト (PS、VBS) を保護するために使用しますが、第三者でも呼び出すことができます。
+</ul>マルウェア対策スキャン インターフェイス (AMSI)。 主にスクリプト (PowerShell、VBS) を保護するために使用しますが、サード パーティでも呼び出すことができます。
 UAC </dt> 
 <dt>状態: &lt; 状態 &gt; </dt>
 <dt>ユーザー: &lt; ドメイン &gt; \& lt;ユーザー &gt; </dt>
@@ -807,7 +806,7 @@ Microsoft Defender ウイルス対策疑わしい動作が検出されました�
 <li>IEPROTECT: IE - IExtensionValidation;これにより、悪意のある Web ページ コントロールから保護されます。</li>
 <li>早期起動マルウェア対策 (ELAM)。 これには、ブート シーケンスによって検出されたマルウェアが含まれます。</li>
 <li>リモート構成証明</li>
-</ul>マルウェア対策スキャン インターフェイス (AMSI)。 主にスクリプト (PS、VBS) を保護するために使用しますが、第三者でも呼び出すことができます。
+</ul>マルウェア対策スキャン インターフェイス (AMSI)。 主にスクリプト (PowerShell、VBS) を保護するために使用しますが、サード パーティでも呼び出すことができます。
 UAC </dt> 
 <dt>状態: &lt; 状態 &gt; </dt>
 <dt>ユーザー: &lt; ドメイン &gt; \& lt;ユーザー &gt; </dt>
@@ -882,7 +881,7 @@ Microsoft Defender ウイルス対策または他の望ましくない可能性�
 <li>IEPROTECT: IE - IExtensionValidation;これにより、悪意のある Web ページ コントロールから保護されます。</li>
 <li>早期起動マルウェア対策 (ELAM)。 これには、ブート シーケンスによって検出されたマルウェアが含まれます。</li>
 <li>リモート構成証明</li>
-</ul>マルウェア対策スキャン インターフェイス (AMSI)。 主にスクリプト (PS、VBS) を保護するために使用しますが、第三者でも呼び出すことができます。
+</ul>マルウェア対策スキャン インターフェイス (AMSI)。 主にスクリプト (PowerShell、VBS) を保護するために使用しますが、サード パーティでも呼び出すことができます。
 UAC </dt> 
 <dt>ユーザー: &lt; ドメイン &gt; \& lt;ユーザー &gt; </dt>
 <dt>プロセス名: &lt; PID &gt; </dt>署名バージョンの
@@ -961,7 +960,7 @@ Microsoft Defender ウイルス対策、マルウェアなどの望ましくな�
 <li>IEPROTECT: IE - IExtensionValidation;これにより、悪意のある Web ページ コントロールから保護されます。</li>
 <li>早期起動マルウェア対策 (ELAM)。 これには、ブート シーケンスによって検出されたマルウェアが含まれます。</li>
 <li>リモート構成証明</li>
-</ul>マルウェア対策スキャン インターフェイス (AMSI)。 主にスクリプト (PS、VBS) を保護するために使用しますが、第三者でも呼び出すことができます。
+</ul>マルウェア対策スキャン インターフェイス (AMSI)。 主にスクリプト (PowerShell、VBS) を保護するために使用しますが、サード パーティでも呼び出すことができます。
 UAC </dt> 
 <dt>ユーザー: &lt; ドメイン &gt; \& lt;ユーザー &gt; </dt>
 <dt>プロセス名: &lt; PID &gt; アクション</dt> 
@@ -1083,7 +1082,7 @@ Microsoft Defender ウイルス対策その他の望ましくない可能性の�
 <li>IEPROTECT: IE - IExtensionValidation;これにより、悪意のある Web ページ コントロールから保護されます。</li>
 <li>早期起動マルウェア対策 (ELAM)。 これには、ブート シーケンスによって検出されたマルウェアが含まれます。</li>
 <li>リモート構成証明</li>
-</ul>マルウェア対策スキャン インターフェイス (AMSI)。 主にスクリプト (PS、VBS) を保護するために使用しますが、第三者でも呼び出すことができます。
+</ul>マルウェア対策スキャン インターフェイス (AMSI)。 主にスクリプト (PowerShell、VBS) を保護するために使用しますが、サード パーティでも呼び出すことができます。
 UAC </dt> 
 <dt>ユーザー: &lt; ドメイン &gt; \& lt;ユーザー &gt; </dt>
 <dt>プロセス名: &lt; PID &gt; アクション</dt> 
@@ -1175,7 +1174,7 @@ Microsoft Defender ウイルス対策その他の望ましくない可能性の�
 <li>IEPROTECT: IE - IExtensionValidation;これにより、悪意のある Web ページ コントロールから保護されます。</li>
 <li>早期起動マルウェア対策 (ELAM)。 これには、ブート シーケンスによって検出されたマルウェアが含まれます。</li>
 <li>リモート構成証明</li>
-</ul>マルウェア対策スキャン インターフェイス (AMSI)。 主にスクリプト (PS、VBS) を保護するために使用しますが、第三者でも呼び出すことができます。
+</ul>マルウェア対策スキャン インターフェイス (AMSI)。 主にスクリプト (PowerShell、VBS) を保護するために使用しますが、サード パーティでも呼び出すことができます。
 UAC </dt> 
 <dt>ユーザー: &lt; ドメイン &gt; \& lt;ユーザー &gt; </dt>
 <dt>プロセス名: &lt; PID &gt; アクション</dt> 
@@ -1467,7 +1466,7 @@ Microsoft Defender ウイルス対策更新中にエラーが発生しました�
 </dt>
 <dt>更新ステージ: &lt; 更新ステージ &gt; (例:
 <ul>
-<li>Search</li>
+<li>検索</li>
 <li>ダウンロード</li>
 <li>インストール</li>
 </ul>
@@ -1769,7 +1768,7 @@ Microsoft Defender ウイルス対策動的<i>署名サービスを使用して<
 <ul>
 <li>バージョン</li>
 <li>Timestamp</li>
-<li>制限なし</li>
+<li>無制限</li>
 <li>期間</li>
 </ul>
 </dt>
@@ -1780,7 +1779,7 @@ Microsoft Defender ウイルス対策動的<i>署名サービスを使用して<
 <ul>
 <li>VDM バージョン</li>
 <li>Timestamp</li>
-<li>制限なし</li>
+<li>無制限</li>
 </ul>
 </dt>
 <dt>永続性の制限: 高速パス署名の永続性の制限。</dt>
@@ -1825,7 +1824,7 @@ Microsoft Defender ウイルス対策使用<i>して、古い</i>署名を破棄
 <ul>
 <li>バージョン</li>
 <li>Timestamp</li>
-<li>制限なし</li>
+<li>無制限</li>
 <li>期間</li>
 </ul>
 </dt>
@@ -1837,7 +1836,7 @@ Microsoft Defender ウイルス対策使用<i>して、古い</i>署名を破棄
 <ul>
 <li>VDM バージョン</li>
 <li>Timestamp</li>
-<li>制限なし</li>
+<li>無制限</li>
 </ul>
 </dt>
 <dt>永続性の制限: 高速パス署名の永続性の制限。</dt>
@@ -1892,7 +1891,7 @@ Microsoft Defender ウイルス対策署名サービスを使用しようとし�
 <ul>
 <li>バージョン</li>
 <li>Timestamp</li>
-<li>制限なし</li>
+<li>無制限</li>
 <li>期間</li>
 </ul>
 </dt>
@@ -1903,7 +1902,7 @@ Microsoft Defender ウイルス対策署名サービスを使用しようとし�
 <ul>
 <li>VDM バージョン</li>
 <li>Timestamp</li>
-<li>制限なし</li>
+<li>無制限</li>
 </ul>
 </dt>
 <dt>永続性の制限: 高速パス署名の永続性の制限。</dt>
@@ -2784,7 +2783,7 @@ Microsoft Defender ウイルス対策内で検出された脅威を修復でき�
 <td>
 このエラーは、Microsoft Defender ウイルス対策が現在のバージョンのプラットフォームをサポートしていないので、新しいバージョンのプラットフォームが必要です。
 </td></tr><tr><td>解決方法</td><td>
-このコマンドは、Microsoft Defender ウイルス対策でのみWindows 10。 Vista Windows 8、Windows 7、Windows Vista の場合は、 を使用<a href="https://www.microsoft.com/server-cloud/system-center/endpoint-protection-2012.aspx">System Center Endpoint Protection。</a><br/></td>
+11 では、Microsoft Defender ウイルス対策および Windows 10でのみWindowsできます。 Vista Windows 8、Windows 7、Windows Vista の場合は、 を使用<a href="https://www.microsoft.com/server-cloud/system-center/endpoint-protection-2012.aspx">System Center Endpoint Protection。</a><br/></td>
 </tr>
 </table>
 
@@ -3115,7 +3114,7 @@ Microsoft Defender ウイルス対策内で検出された脅威を修復でき�
 </tr>
 </table>
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [保護に関するMicrosoft Defender ウイルス対策レポート](report-monitor-microsoft-defender-antivirus.md)
 - [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)

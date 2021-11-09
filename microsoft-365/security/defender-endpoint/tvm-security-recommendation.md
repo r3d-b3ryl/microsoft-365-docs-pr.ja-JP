@@ -2,8 +2,6 @@
 title: ユーザーによるセキュリティ脅威と脆弱性の管理
 description: 脅威、侵害される可能性、および価値によって優先順位付けされた、アクション可能なセキュリティの推奨事項を、脅威と脆弱性の管理。
 keywords: 脅威と脆弱性の管理、Microsoft Defender for Endpoint tvm セキュリティ推奨事項、サイバーセキュリティの推奨事項、アクション可能なセキュリティ推奨事項
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 42552d9b39a50ad924e0514a1f1184fba9f5f865
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 22b5d6382a46eb45bc2365d8c31bb7a00eb5da17
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190511"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882971"
 ---
 # <a name="security-recommendations---threat-and-vulnerability-management"></a>セキュリティに関する推奨事項 - 脅威と脆弱性の管理
 
@@ -44,7 +42,7 @@ ms.locfileid: "60190511"
 > [!TIP]
 > 新しい脆弱性イベントに関する電子メールを取得するには [、「Configure vulnerability email notifications in Microsoft Defender for Endpoint」を参照してください。](configure-vulnerability-email-notifications.md)
 
-## <a name="how-it-works"></a>しくみ
+## <a name="how-it-works"></a>メカニズム
 
 組織内の各デバイスは、3 つの重要な要素に基づいてスコア付けされます。
 
@@ -64,7 +62,7 @@ ms.locfileid: "60190511"
 - [ソフトウェア] ページ
 - [デバイス] ページ
 
-### <a name="navigation-menu"></a>ナビゲーション メニュー
+### <a name="navigation-menu"></a>[ナビゲーション] メニュー
 
 [脆弱性管理] **ナビゲーション メニューに移動し** 、[推奨事項] **を選択します**。 このページには、組織で見つかった脅威と脆弱性に関するセキュリティ推奨事項の一覧が含まれている。
 

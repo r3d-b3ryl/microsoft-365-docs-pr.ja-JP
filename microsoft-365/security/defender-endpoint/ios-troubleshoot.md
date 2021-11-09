@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 608746c406ef308636e0a2ffc6f4bb1d69f6bbf7
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 9245062a0906186ce779383725cecc8209655c6f
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587351"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882755"
 ---
 # <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>iOS 上の Microsoft Defender for Endpoint で問題のトラブルシューティングを行い、FAQ に対する回答を見つける
 
@@ -62,13 +62,11 @@ Apple iOS では、同時にアクティブになる複数のデバイス全体�
 
 ## <a name="battery-consumption"></a>バッテリー消費
 
-Web ベースの脅威からすべての時間を保護するには、Microsoft Defender for Endpoint をバックグラウンドで実行する必要があります。 これにより、デバイスの全体的なバッテリー消費が軽微に増加する可能性があります。
+Web ベースの脅威からすべての時間を保護するには、Microsoft Defender for Endpoint をバックグラウンドで実行する必要があります。 これにより、デバイスの全体的なバッテリー消費が軽微に増加する可能性があります。 バッテリーの消耗が著しい場合は、フィードバック [をお](ios-troubleshoot.md#send-in-app-feedback) 寄せください。調査を行います。
 
 また、設定アプリでは、iOS は、特定の期間、ユーザーに表示されるアプリのバッテリー使用量のみを表示します。 画面に表示されるアプリのバッテリー使用量は、その期間のみであり、CPU やネットワークの使用状況などの多数の要因に基づいて iOS によって計算されます。 Microsoft Defender for Endpoint では、バックグラウンドでローカル/ループバック VPN を使用して、悪意のある Web サイトや接続の Web トラフィックを確認します。 任意のアプリからのネットワーク パケットは、このチェックを通過し、Microsoft Defender for Endpoint のバッテリー使用量が不正確に計算される原因になります。 Microsoft Defender for Endpoint の実際のバッテリー消費量は、デバイスの [バッテリー] ページに表示設定より小さいです。
 
-バックグラウンドで実行されている Microsoft Defender for Endpoint による 1 日あたりの平均バッテリー使用量は、その日に消費されたバッテリー全体の約 **8.81% です**。 この指標は、エンド ユーザー デバイスでの Microsoft Defender for Endpoint の実際の使用状況に基づいて Apple によって報告され、上記の理由により、ネットワーク アクティビティを持つ他のアプリも考慮できます。
-
-また、使用される VPN はローカル VPN であり、従来の VPN とは異なり、ネットワーク トラフィックはデバイスの外部に送信されません。
+使用される VPN はローカル VPN であり、従来の VPN とは異なり、ネットワーク トラフィックはデバイスの外部に送信されません。
 
 ## <a name="data-usage"></a>データの使用状況
 
@@ -76,7 +74,7 @@ Microsoft Defender for Endpoint では、ローカル/ループバック VPN を
 
 他の VPN サービスと同様の観測を行い、これを Apple に報告しています。
 
-さらに、より良い保護を提供するには、Microsoft Defender for Endpoint がバックエンド サービスを最新の状態に更新する必要があります。 ただし、Microsoft Defender for Endpoint によるデータ使用量の最適化に取り組む必要があります。
+さらに、より良い保護を提供するには、Microsoft Defender for Endpoint がバックエンド サービスを最新の状態に更新する必要があります。
 
 ## <a name="report-unsafe-site"></a>安全でないサイトを報告する
 

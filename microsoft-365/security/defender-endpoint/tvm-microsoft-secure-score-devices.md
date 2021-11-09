@@ -1,9 +1,7 @@
 ---
-title: デバイスの Microsoft セキュア スコア
+title: デバイス向けの Microsoft セキュア スコア
 description: デバイスのスコアは、アプリケーション、オペレーティング システム、ネットワーク、アカウント、およびセキュリティ制御全体にわたるデバイスの一括セキュリティ構成状態を示します。
 keywords: Microsoft Secure Score for Devices, Microsoft Defender for Endpoint Microsoft Secure Score for Devices, secure score, configuration score, 脅威と脆弱性の管理, security controls, improvement opportunitis, security configuration score over time, security posture, baseline
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,14 +16,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ec39f07ff653b3c28c645978c0a708da37d348dc
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0cd0dc7a68fc399d46b0a028753c7132df53a468
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206759"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882959"
 ---
-# <a name="microsoft-secure-score-for-devices"></a>デバイスの Microsoft セキュア スコア
+# <a name="microsoft-secure-score-for-devices"></a>デバイス向けの Microsoft セキュア スコア
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -62,7 +60,7 @@ Microsoft Defender for Endpoint シグナルを転送し、Microsoft Secure Scor
 
 3. [基本 **設定の保存] を選択します**。
 
-## <a name="how-it-works"></a>しくみ
+## <a name="how-it-works"></a>メカニズム
 
 > [!NOTE]
 > Microsoft Secure Score for Devices は現在、グループ ポリシーを介して設定された構成をサポートしています。 現在の部分的な Intune のサポートにより、Intune を介して設定されている可能性がある構成が正しく構成されていないと表示される場合があります。 組織が安全な構成管理のために Intune を使用している場合に、IT 管理者に問い合わせて実際の構成状態を確認します。
@@ -111,7 +109,7 @@ Microsoft Secure Score for Devices カードのデータは、細心の注意を
 > 1. [Microsoft Update [Catalog] に移動します](https://www.catalog.update.microsoft.com/home.aspx)。
 > 2. ダウンロードする必要があるセキュリティ更新プログラムの KB 番号をキーインし、[検索] を **クリックします**。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [ダッシュボード](tvm-dashboard-insights.md)

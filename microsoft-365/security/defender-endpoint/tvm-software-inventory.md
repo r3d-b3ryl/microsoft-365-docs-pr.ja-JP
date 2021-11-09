@@ -2,8 +2,6 @@
 title: ソフトウェア インベントリ (脅威と脆弱性の管理
 description: Microsoft Defender for Endpoint のソフトウェア インベントリ ページ脅威と脆弱性の管理ソフトウェアで検出された弱点と脆弱性の数を示します。
 keywords: 脅威と脆弱性の管理、Microsoft Defender for Endpoint、Microsoft Defender for Endpoint ソフトウェア インベントリ、Microsoft Defender for Endpoint Threat & 脆弱性の管理、Microsoft Defender for Endpoint Threat & 脆弱性の管理 ソフトウェア インベントリ、Microsoft Defender for Endpoint tvm ソフトウェア インベントリ、tvm ソフトウェア インベントリ
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 10e5c062af839142db0b12f562739fd2fb603d42
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 63af06a3d7565ede3fb703ccb5aeaacc77d3612d
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157832"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883835"
 ---
 # <a name="software-inventory---threat-and-vulnerability-management"></a>ソフトウェア インベントリ - 脅威と脆弱性の管理
 
@@ -38,7 +36,7 @@ ms.locfileid: "60157832"
 
 ソフトウェア インベントリは、脅威と脆弱性の管理共通プラットフォーム列挙[(CPE)](https://nvd.nist.gov/products/cpe)を使用して組織内の既知のソフトウェアの一覧です。 公式 CPE のないソフトウェア製品には、脆弱性が公開されません。 また、ベンダーの名前、弱点の数、脅威、公開されているデバイスの数などの詳細も含まれています。
 
-## <a name="how-it-works"></a>しくみ
+## <a name="how-it-works"></a>メカニズム
 
 検出の分野では [、Microsoft Defender for Endpoint](overview-endpoint-detection-response.md)の検出および応答機能の検出と脆弱性評価を担当するシグナルの同じセットを活用しています。
 
@@ -51,7 +49,7 @@ ms.locfileid: "60157832"
 デバイスリストから個々のデバイス ページ内の特定のデバイス上のソフトウェア [を表示します](machines-view-overview.md)。
 
 > [!NOTE]
-> Microsoft Defender for Endpoint グローバル検索を使用してソフトウェアを検索する場合は、スペースの代わりにアンダースコアを付けなければなりません。 たとえば、最適な検索結果の場合は、"windows_10" ではなく "Windows 10" と記述します。
+> Microsoft Defender for Endpoint グローバル検索を使用してソフトウェアを検索する場合は、スペースの代わりにアンダースコアを付けなければなりません。 たとえば、最適な検索結果については、"Windows 10" または "Windows 11" ではなく "windows_10" または "windows_11" を記述します。
 
 ## <a name="software-inventory-overview"></a>ソフトウェア インベントリの概要
 

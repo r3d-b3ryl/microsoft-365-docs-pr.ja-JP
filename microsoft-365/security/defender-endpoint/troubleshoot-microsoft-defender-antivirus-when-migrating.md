@@ -2,7 +2,6 @@
 title: サード パーティのソリューションからの移行中に Microsoft Defender ウイルスのトラブルシューティングを行う
 description: 移行時の一般的なエラーのトラブルシューティングMicrosoft Defender ウイルス対策
 keywords: イベント, エラー コード, ログ記録, トラブルシューティング, Microsoft Defender ウイルス対策, Windows Defender ウイルス対策, 移行
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,17 +10,17 @@ ms.topic: article
 author: martyav
 ms.author: v-maave
 ms.custom: nextgen
-ms.date: 09/11/2018
+ms.date: 10/19/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 11590c443c7d466f323075bd2228156492c82ab0
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 3a4fe04d563cd531e1f17916fcb54164e5010b62
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60661532"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882479"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-while-migrating-from-a-third-party-solution"></a>サード パーティのソリューションからの移行中に Microsoft Defender ウイルスのトラブルシューティングを行う
 
@@ -36,13 +35,13 @@ ms.locfileid: "60661532"
 
 ## <a name="review-event-logs"></a>イベント ログの確認
 
-タスク バーの [検索]アイコンを選択し、イベント ビューアーを検索して、イベント ビューアー アプリ *を開きます*。
+1. タスク バーの [検索]アイコンを選択し、イベント ビューアーを検索して、イベント ビューアー アプリ *を開きます*。
 
-アプリケーションにMicrosoft Defender ウイルス対策については **、「Applications and Services Logs** Microsoft Windows \>  \>  \> Windows Defender」**を参照してください**。
+    アプリケーションにMicrosoft Defender ウイルス対策については **、「Applications and Services Logs** Microsoft Windows \>  \>  \> Windows Defender」**を参照してください**。
 
-そこから、[操作] の **下にある [** 開く] **を選択します**。
+1. そこから、[操作] の **下にある [** 開く] **を選択します**。
 
-詳細ウィンドウからイベントを選択すると、[全般] タブと [詳細] タブの下の下部ウィンドウにイベントの詳細 **が****表示** されます。
+    詳細ウィンドウからイベントを選択すると、[全般] タブと [詳細] タブの下の下部ウィンドウにイベントの詳細 **が****表示** されます。
 
 ## <a name="microsoft-defender-antivirus-wont-start"></a>Microsoft Defender ウイルス対策開始しない
 
@@ -58,10 +57,10 @@ ms.locfileid: "60661532"
 
 ### <a name="how-to-tell-if-microsoft-defender-antivirus-wont-start-because-a-third-party-antivirus-is-installed"></a>サードパーティのウイルス対策Microsoft Defender ウイルス対策がインストールされたため、ユーザーが起動しないかを確認する方法
 
-デバイスWindows 10 Microsoft Defender for Endpoint を使用していない場合に、サードパーティのウイルス対策がインストールされている場合は、Microsoft Defender ウイルス対策が自動的にオフになります。 サードパーティのウイルス対策がインストールされている Microsoft Defender for Endpoint を使用している場合、Microsoft Defender ウイルス対策モードで起動し、機能が低下します。
+Windows 10 または Windows 11 デバイスで、Microsoft Defender for Endpoint を使用していない場合、サードパーティのウイルス対策がインストールされている場合、Microsoft Defender ウイルス対策 は自動的にオフになります。 サードパーティのウイルス対策がインストールされている Microsoft Defender for Endpoint を使用している場合、Microsoft Defender ウイルス対策モードで起動し、機能が低下します。
 
 > [!TIP]
-> 説明したシナリオは、次のシナリオにのみWindows 10。 他のバージョンのWindows[サードパーティ](microsoft-defender-antivirus-compatibility.md)のセキュリティ ソフトウェアとMicrosoft Defender ウイルス対策に対する応答が異なります。
+> 説明したシナリオは、11 のWindows 10とWindowsです。 他のバージョンのWindows[サードパーティ](microsoft-defender-antivirus-compatibility.md)のセキュリティ ソフトウェアとMicrosoft Defender ウイルス対策に対する応答が異なります。
 
 #### <a name="use-services-app-to-check-if-microsoft-defender-antivirus-is-turned-off"></a>サービス アプリを使用して、Microsoft Defender ウイルス対策がオフになっているか確認する
 
@@ -77,7 +76,7 @@ ms.locfileid: "60661532"
 
 管理モードでコマンド プロンプトを開き、次のコマンドを入力すると、現在アクティブなグループ ポリシーに関する詳細なレポートを生成できます。
 
-```powershell
+```console
 GPresult.exe /h gpresult.html
 ```
 
@@ -91,7 +90,7 @@ GPResults レポート内の見出し *Windows Components/Windows Defender ウ�
 
 ポリシー|Setting|GPO を獲得する
 ---|---|---
-[オフにする] Windows Defender ウイルス対策|Enabled|Win10-Workstations
+[オフにする] Windows Defender ウイルス対策|有効|Win10-Workstations
 
 ###### <a name="if-security-settings-are-implemented-via-group-policy-preference-gpp"></a>グループ ポリシーの基本設定 (GPP) を使用してセキュリティ設定を実装する場合
 

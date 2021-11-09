@@ -2,7 +2,6 @@
 title: 除外を定義する際に避ける必要のある一般的な間違い
 description: スキャンの除外を定義する際によくある間違いMicrosoft Defender ウイルス対策避ける。
 keywords: 除外、ファイル、拡張子、ファイルの種類、フォルダー名、ファイル名、スキャン
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,14 +14,14 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 09/22/2021
+ms.date: 10/19/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 55f2ca89c04fb35c853ef39255ef97a9e811138a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 625b5dc2743f42d35a652582827454b3178e1786
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213111"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60881939"
 ---
 # <a name="common-mistakes-to-avoid-when-defining-exclusions"></a>除外を定義する際に避ける必要のある一般的な間違い
 

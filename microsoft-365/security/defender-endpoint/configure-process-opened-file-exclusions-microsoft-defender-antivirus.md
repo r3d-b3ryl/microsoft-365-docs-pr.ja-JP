@@ -2,7 +2,6 @@
 title: 特定のプロセスによって開いたファイルの除外を構成する
 description: 特定のプロセスでファイルを開いている場合は、スキャンからファイルを除外できます。
 keywords: Microsoft Defender ウイルス対策、プロセス、除外、ファイル、スキャン
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: manage
@@ -16,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: eb1b28b49bbf684f0f1845eafb1332c7fb00be12
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 44107228cf0e05f43484bfb88a757335fe6c2b86
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205633"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882731"
 ---
 # <a name="configure-exclusions-for-files-opened-by-processes"></a>プロセスによって開いたファイルの除外を構成する
 
@@ -81,7 +80,7 @@ PowerShell コマンドレットと WMI を使用して、リストの確認な�
     2. [オプション] **セクションで** 、[ **表示.... をクリックします**。
     3. [値名] 列の下に、各プロセス **を独自の行に入力** します。 さまざまな種類のプロセスの除外については、例の表を参照してください。 すべての **プロセスの [** 値] **列に 0** を入力します。
 
-5. [**OK**] をクリックします。
+5. **[OK]** をクリックします。
 
 ### <a name="use-powershell-cmdlets-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>PowerShell コマンドレットを使用して、指定したプロセスで開いたファイルをスキャンから除外する
 

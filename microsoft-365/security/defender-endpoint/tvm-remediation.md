@@ -2,8 +2,6 @@
 title: 脆弱性を修復脅威と脆弱性の管理
 description: セキュリティ推奨事項によって検出されたセキュリティの弱点を修復し、必要に応じて例外を作成脅威と脆弱性の管理。
 keywords: エンドポイント tvm 修復用 Microsoft Defender、Microsoft Defender for Endpoint tvm、脅威と脆弱性の管理、脅威 & 脆弱性の管理、脅威& 脆弱性の管理 修復、tvm 修復 intune、tvm 修復 sccm
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 04cc7e89940329985c8596c3654229548aeaba55
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8126021051f939a08fb0ea5ef6bd07d8f67c1662
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199611"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883403"
 ---
 # <a name="remediate-vulnerabilities-with-threat-and-vulnerability-management"></a>脆弱性を修復脅威と脆弱性の管理
 

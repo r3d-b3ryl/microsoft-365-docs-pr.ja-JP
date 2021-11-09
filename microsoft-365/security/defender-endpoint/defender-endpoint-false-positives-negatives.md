@@ -2,8 +2,6 @@
 title: Microsoft Defender for Endpoint での誤検出/検出漏れに対処する
 description: Microsoft Defender for Endpoint で誤検知または誤検知を処理する方法について説明します。
 keywords: ウイルス対策、例外、除外、Microsoft Defender for Endpoint、誤検知、偽陰性、ブロックされたファイル、ブロックされた URL
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: deploy
@@ -20,15 +18,15 @@ ms.collection:
 - m365solution-scenario
 - m365scenario-fpfn
 ms.topic: how-to
-ms.date: 10/07/2021
+ms.date: 10/19/2021
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: eadfdd0245c7a31aa71405a9cf63dfc3eaf90bb1
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 8023bcea4eb12689706790af41ead359e302898d
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60704659"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882863"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint での誤検出/検出漏れに対処する
 
@@ -269,7 +267,7 @@ Microsoft Defender for Endpoint の除外としてエンティティを指定す
 
 - Microsoft Defender ウイルス対策保護が有効になっていると構成されている場合 (「クラウドベースの保護の管理[」を参照)](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)
 - マルウェア対策クライアントのバージョンは 4.18.1901.x 以降です
-- デバイスはバージョン Windows 10 1703 以降で実行されています。Windows Server 2016サーバー 2019 Windows、またはサーバー 2022 Windowsを使用する
+- デバイスは、Windows 10バージョン 1703 以降、または 11 Windows実行されています。Windows Server 2016サーバー 2019 Windows、またはサーバー 2022 Windowsを使用する
 - [ [ブロックまたは許可] 機能がオンになっている](/microsoft-365/security/defender-endpoint/advanced-features)
 
 #### <a name="indicators-for-ip-addresses-urls-or-domains"></a>IP アドレス、URL、またはドメインのインジケーター
@@ -280,7 +278,7 @@ IP アドレス、URL、またはドメインのインジケーターを作成�
 
 - Defender for Endpoint のネットワーク保護がブロック モードで有効になっている (「ネットワーク保護を有効[にする」を参照)](/microsoft-365/security/defender-endpoint/enable-network-protection)
 - マルウェア対策クライアントのバージョンは 4.18.1906.x 以降です
-- デバイスは、Windows 10バージョン 1709 以降で実行されています
+- デバイスは、Windows 10バージョン 1709 以降、または 11 Windowsです。
 
 カスタム ネットワーク インジケーターは、カスタム ネットワーク インジケーターで[オンMicrosoft 365 Defender。](microsoft-defender-security-center.md) 詳細については、「高度な機能 [」を参照してください](/microsoft-365/security/defender-endpoint/advanced-features)。
 
@@ -292,7 +290,7 @@ IP アドレス、URL、またはドメインのインジケーターを作成�
 
 - Microsoft Defender ウイルス対策保護が有効になっていると構成されている場合 (「クラウドベースの保護の管理[」を参照)](deploy-manage-report-microsoft-defender-antivirus.md)
 - マルウェア対策クライアントのバージョンは 4.18.1901.x 以降です
-- デバイスはバージョン Windows 10 1703 以降で実行されています。Windows Server 2016サーバー 2019 Windows、またはサーバー 2022 Windowsを使用する
+- デバイスは、Windows 10バージョン 1703 以降、または 11 Windows実行されています。Windows Server 2016サーバー 2019 Windows、またはサーバー 2022 Windowsを使用する
 - ウイルスと脅威の保護の定義が最新
 
 > [!TIP]
@@ -312,7 +310,7 @@ IP アドレス、URL、またはドメインのインジケーターを作成�
 
 ### <a name="submit-a-fileless-detection-for-analysis"></a>分析用にファイルレス検出を送信する
 
-動作に基づいてマルウェアとして検出され、ファイルを持ってない場合は、ファイルを送信して分析 `Mpsupport.cab` することができます。 Microsoft Malware Command-Line Protection *.cab* ユーティリティ (MPCmdRun.exe) ツールを使用して、.cabファイルを取得Windows 10。
+動作に基づいてマルウェアとして検出され、ファイルを持ってない場合は、ファイルを送信して分析 `Mpsupport.cab` することができます。 Microsoft Malware  Command-Line Protection.cabユーティリティ (MPCmdRun.exe) ツールを使用して、.cabまたは 11 の Windows 10 ファイルWindowsできます。
 
 1. に移動 ` C:\ProgramData\Microsoft\Windows Defender\Platform\<version>` し、管理者 `MpCmdRun.exe` として実行します。
 

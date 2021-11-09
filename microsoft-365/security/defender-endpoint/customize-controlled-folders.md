@@ -1,8 +1,7 @@
 ---
 title: 制御されたフォルダー アクセスをカスタマイズする
 description: フォルダー アクセスを制御して保護する必要がある他のフォルダーを追加するか、重要なファイルへの変更を誤ってブロックしているアプリを許可します。
-keywords: フォルダー アクセスの制御、Windows 10、Windows Defender、ランサムウェア、保護、ファイル、フォルダー、カスタマイズ、フォルダーの追加、アプリの追加、許可、実行可能ファイルの追加
-search.product: eADQiWindows 10XVcnh
+keywords: フォルダー アクセスの制御, Windows 10, Windows 11, Windows Defender, ランサムウェア, 保護, ファイル, フォルダー, カスタマイズ, フォルダーの追加, アプリの追加, 許可, 実行可能ファイルの追加
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -12,16 +11,16 @@ author: denisebmsft
 ms.author: deniseb
 ms.reviewer: jcedola, dbodorin, vladiso, nixanm, anvascon
 manager: dansimp
-ms.date: 05/10/2021
+ms.date: 10/19/2021
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 88ecdbdc5055a954a2bd163697eac144edf0b2bc
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ff4b1f7b5fc271c01ef1d9eee079b4e4b4397ba2
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60178469"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883223"
 ---
 # <a name="customize-controlled-folder-access"></a>制御されたフォルダー アクセスをカスタマイズする
 
@@ -32,7 +31,7 @@ ms.locfileid: "60178469"
 > [!TIP]
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-フォルダー アクセスの制御により、悪意のあるアプリやランサムウェアなどの脅威から貴重なデータを保護できます。 フォルダー アクセスの制御は、サーバー 2019、Windows Server 2022、WindowsクライアントでWindows 10されます。 この記事では、フォルダー アクセスの制御機能をカスタマイズする方法について説明し、次のセクションを示します。
+フォルダー アクセスの制御により、悪意のあるアプリやランサムウェアなどの脅威から貴重なデータを保護できます。 フォルダー アクセスの制御は、Windows Server 2019、Windows Server 2022、Windows 10、Windows 11 クライアントでサポートされます。 この記事では、フォルダー アクセスの制御機能をカスタマイズする方法について説明し、次のセクションを示します。
 
 - [追加のフォルダーを保護する](#protect-additional-folders)
 - [保護されたフォルダーへのアクセスを許可する必要がありますアプリを追加する](#allow-specific-apps-to-make-changes-to-controlled-folders)

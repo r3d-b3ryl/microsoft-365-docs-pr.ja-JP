@@ -4,7 +4,6 @@ ms.reviewer: pahuijbr
 manager: dansimp
 description: Windowsサーバーには、サーバーの役割に基づく自動除外が含まれます。 カスタム除外を追加できます。
 keywords: 除外、サーバー、自動除外、自動、カスタム、スキャン、Microsoft Defender ウイルス対策
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: manage
@@ -15,14 +14,14 @@ author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.date: 09/17/2021
+ms.date: 10/19/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 2432677f1e4bb5faa8de7255e766124660fb7bbb
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: c82b97f1c5799442ca5c857b65f24b9ef8b2e928
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240455"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883199"
 ---
 # <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>サーバー Microsoft Defender ウイルス対策の除外をWindowsする
 

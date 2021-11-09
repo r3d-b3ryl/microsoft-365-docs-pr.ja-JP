@@ -2,8 +2,6 @@
 title: デバイス値の割り当て - 脅威と脆弱性の管理
 description: 低、通常、または高い値をデバイスに割り当て、資産の優先順位を区別する方法について学習します。
 keywords: Microsoft Defender for Endpoint デバイス値、脅威と脆弱性の管理値、高価値デバイス、デバイス値の露出スコア
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a1cc240c1c013468b482533ab00ef498543431fd
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 383001a8beac1f14ab6c1436fa42b28e48dbdc25
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60193927"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60884051"
 ---
 # <a name="assign-device-value---threat-and-vulnerability-management"></a>デバイス値の割り当て - 脅威と脆弱性の管理
 
@@ -45,9 +43,9 @@ ms.locfileid: "60193927"
 
 デバイス値のオプション:
 
-- 低い
+- 低
 - 標準 (既定値)
-- 高い
+- 高
 
 高い値を割り当てる必要があるデバイスの例を次に示します。
 
@@ -76,7 +74,7 @@ ms.locfileid: "60193927"
 - 高い値のデバイスには、NumberOfAssets / 10 の重みがあります。
     - デバイスが 100 台の場合、各高価値デバイスの重みは 10 (100/10) になります。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [露出スコア](tvm-exposure-score.md)

@@ -2,7 +2,6 @@
 title: 動作ブロックと封じ込め
 description: Microsoft Defender for Endpoint での動作のブロックと格納機能について説明します。
 keywords: Microsoft Defender for Endpoint,EDRモードでのサポート、パッシブ モードのブロック
-search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 author: denisebmsft
 ms.author: deniseb
@@ -19,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: af80bd0c8c6bcfab823d3391d99c33f35d3e5557
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6a7ac6e546ab7578ccf914c29304c1a88139094e
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197031"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882131"
 ---
 # <a name="behavioral-blocking-and-containment"></a>動作ブロックと封じ込め
 

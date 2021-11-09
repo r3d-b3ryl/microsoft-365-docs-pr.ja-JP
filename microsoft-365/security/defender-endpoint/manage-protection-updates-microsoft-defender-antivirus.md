@@ -2,7 +2,6 @@
 title: 更新プログラムの受信方法とMicrosoft Defender ウイルス対策管理する
 description: 保護更新プログラムを受け取る方法Microsoft Defender ウイルス対策を管理します。
 keywords: 更新プログラム、セキュリティ 基準、保護、フォールバック順序、ADL、MMPC、UNC、ファイル パス、共有、WSUS
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -16,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 21ff0e12e76dbbc65aa9bcfa26c0f8c07444c7a8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 082b93be0a540e2d51cb81315180876c308b3fad
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196935"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883151"
 ---
 # <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>Microsoft Defender ウイルス対策更新プログラムのソースを管理する
 
@@ -65,9 +64,9 @@ ms.locfileid: "60196935"
 - [ネットワーク ファイル共有](#unc-share)
 - [セキュリティ インテリジェンスの更新プログラム (Microsoft Defender ウイルス対策その他の Microsoft マルウェア対策)](https://www.microsoft.com/wdsi/defenderupdates) <sup>[[2](#fn1)]<sup></sup>
 
-  (<a id="fn1">1</a>) Intune 内部定義更新サーバー - SCCM/SUP を使用して Microsoft Defender ウイルス対策 の定義更新プログラムを取得し、クライアント デバイスでブロックされている Windows Update にアクセスする必要がある場合は、共同管理に移行し、エンドポイント保護ワークロードを Intune にオフロードできます。 Intune で構成されたマルウェア対策ポリシーには、オンプレミスの WSUS を更新ソースとして使用するように構成できる 「内部定義更新サーバー」のオプションがあります。 これにより、企業に対して承認されている公式 WU サーバーからの更新プログラムを制御し、UPdates ネットワークの公式サイトにネットワーク トラフィックをプロキシして保存するのにWindows役立ちます。
+(<a id="fn1">1</a>) Intune 内部定義更新サーバー - SCCM/SUP を使用して Microsoft Defender ウイルス対策 の定義更新プログラムを取得し、クライアント デバイスでブロックされている Windows Update にアクセスする必要がある場合は、共同管理に移行し、エンドポイント保護ワークロードを Intune にオフロードできます。 Intune で構成されたマルウェア対策ポリシーには、オンプレミスの WSUS を更新ソースとして使用するように構成できる 「内部定義更新サーバー」のオプションがあります。 これにより、企業に対して承認されている公式 WU サーバーからの更新プログラムを制御し、UPdates ネットワークの公式サイトにネットワーク トラフィックをプロキシして保存するのにWindows役立ちます。
 
-  (<a id="fn1">2</a>) ポリシーとレジストリには、この情報が以前のMicrosoft マルウェア プロテクション センター (MMPC) セキュリティ インテリジェンスとして一覧表示されている可能性があります。
+(<a id="fn1">2</a>) ポリシーとレジストリには、この情報が以前のMicrosoft マルウェア プロテクション センター (MMPC) セキュリティ インテリジェンスとして一覧表示されている可能性があります。
 
 Microsoft Update では、最高レベルの保護を確保するために、迅速なリリースが可能になります。つまり、頻繁にダウンロードする頻度が少なめになります。 サーバー更新Windowsサービス、Microsoft Endpoint Configuration Manager Microsoft セキュリティ インテリジェンス更新プログラムソースは、更新プログラムの頻度が低い。 したがって、デルタを大きくすると、ダウンロードが大きくなる可能性があります。
 
@@ -80,7 +79,7 @@ Microsoft Update では、最高レベルの保護を確保するために、迅
 
 <br/><br/>
 
-|Location|シナリオ例|
+|場所|シナリオ例|
 |---|---|
 |Windowsサーバー更新サービス|サーバー更新サービスWindows使用して、ネットワークの更新プログラムを管理しています。|
 |Microsoft Update|エンドポイントを Microsoft Update に直接接続する必要があります。 これは、エンタープライズ ネットワークに不定期に接続するエンドポイントや、Windows サーバー更新サービスを使用して更新プログラムを管理しない場合に役立ちます。|
@@ -117,7 +116,7 @@ Microsoft Update では、最高レベルの保護を確保するために、迅
 
    5. ファイル共有ソースを指定します。 複数のソースがある場合は、使用する順序で各ソースを 1 つのパイプで区切って入力します。 パス [を示す標準の UNC](/openspecs/windows_protocols/ms-dtyp/62e862f4-2a51-452e-8eeb-dc4ff5ee33cc) 表記を使用します。たとえば、次のようになります `\\host-name1\share-name\object-name|\\host-name2\share-name\object-name` 。 パスを入力しない場合、VM が更新プログラムをダウンロードすると、このソースはスキップされます。
 
-   6. [**OK**] をクリックします。 これにより、ソースが参照される場合のファイル共有の順序が [ソースの順序の定義 **... グループ** ポリシー設定で設定されます。
+   6. **[OK]** をクリックします。 これにより、ソースが参照される場合のファイル共有の順序が [ソースの順序の定義 **... グループ** ポリシー設定で設定されます。
 
 > [!NOTE]
 > Windows 10 バージョン 1703 から 1809 まで、ポリシー パスは Windows **Components > Microsoft Defender ウイルス対策 >** Signature Updates for Windows 10 バージョン 1903 の場合、ポリシー パスは Windows **コンポーネント > Microsoft Defender ウイルス対策 >** セキュリティ インテリジェンス更新プログラム

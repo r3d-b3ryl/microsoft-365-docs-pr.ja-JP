@@ -2,8 +2,6 @@
 title: 前提条件&アクセス許可 - 脅威と脆弱性の管理
 description: アプリケーションの使用を開始脅威と脆弱性の管理、関連する構成とアクセス許可を持っている必要があります。
 keywords: 脅威& 脆弱性の管理アクセス許可の前提条件、脅威と脆弱性の管理アクセス許可の前提条件、Microsoft Defender for Endpoint TVM アクセス許可の前提条件、脆弱性の管理
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c3bb52686c43afca710dbe8842463c493a15e140
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d3684d8b13020605fbca20e67093c28d3e782da2
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206735"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60881746"
 ---
 # <a name="prerequisites--permissions---threat-and-vulnerability-management"></a>前提条件&アクセス許可 - 脅威と脆弱性の管理
 
@@ -43,7 +41,7 @@ ms.locfileid: "60206735"
 
 - ネットワークに次の必須更新プログラムをインストールして展開し、脆弱性評価の検出率を向上させる必要があります。
 
-  > リリース | セキュリティ更新プログラムの KB 番号とリンク
+  > Release | セキュリティ更新プログラムの KB 番号とリンク
   > :---|:---
   > Windows 10バージョン 1709 | [KB4493441 および](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441) [KB 4516071](https://support.microsoft.com/help/4516071/windows-10-update-kb4516071)
   > Windows 10バージョン 1803 | [KB4493464](https://support.microsoft.com/help/4493464) および [KB 4516045](https://support.microsoft.com/help/4516045/windows-10-update-kb4516045)

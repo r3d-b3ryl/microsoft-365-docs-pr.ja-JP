@@ -2,8 +2,6 @@
 title: ダッシュボードの分析情報 - 脅威と脆弱性の管理
 description: この脅威と脆弱性の管理は、SecOps とセキュリティ管理者がサイバーセキュリティの脅威に対処し、組織のセキュリティの回復力を構築するのに役立ちます。
 keywords: Microsoft Defender for Endpoint-tvm, Microsoft Defender for Endpoint-tvm ダッシュボード, Threat & 脆弱性の管理, 脅威と脆弱性の管理, リスクベースの脅威 & 脆弱性の管理, セキュリティ構成, Microsoft Secure Score for Devices, exposure score
-search.appverid: met150
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 79bae1cdf4ce21ef00f622bfd438238e69f6ff8a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7c5bdc74a214ed76aa791a9ee8331ac2f0a5492a
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60193915"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882983"
 ---
 # <a name="dashboard-insights---threat-and-vulnerability-management"></a>ダッシュボードの分析情報 - 脅威と脆弱性の管理
 
@@ -79,7 +77,7 @@ ms.locfileid: "60193915"
 
 ポータル全体で使用されるアイコンの詳細については [、「Microsoft Defender for Endpoint アイコン」を参照してください](portal-overview.md#microsoft-defender-for-endpoint-icons)。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [暴露スコア](tvm-exposure-score.md)

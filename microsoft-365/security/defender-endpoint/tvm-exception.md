@@ -2,8 +2,6 @@
 title: セキュリティ推奨事項の例外を作成して表示する - 脅威と脆弱性の管理
 description: セキュリティに関する推奨事項に関する例外を作成および監視脅威と脆弱性の管理。
 keywords: エンドポイント tvm 修復用 Microsoft Defender、Microsoft Defender for Endpoint tvm、脅威と脆弱性の管理、脅威 & 脆弱性の管理、脅威& 脆弱性の管理 修復、tvm 修復 intune、tvm 修復 sccm
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 79bf9503b94b6d3c1f1a8bcd9203c381aad9e90f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b837199972f225a44406c7e18a57ae417363d15d
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206855"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883475"
 ---
 # <a name="create-and-view-exceptions-for-security-recommendations---threat-and-vulnerability-management"></a>セキュリティ推奨事項の例外を作成して表示する - 脅威と脆弱性の管理
 
@@ -41,7 +39,7 @@ ms.locfileid: "60206855"
 
 推奨事項に対して例外が作成されると、例外期間が終了するまで、推奨事項はアクティブにされません。 推奨事項の状態が [完全な例外] **または [部分的な** 例外] (デバイス **グループ** 別) に変更されます。
 
-## <a name="permissions"></a>アクセス許可
+## <a name="permissions"></a>許可
 
 "例外処理" 権限を持つユーザーだけが例外を管理できます (作成またはキャンセルを含む)。 [RBAC の役割について詳しくは、次のページを参照してください](user-roles.md)。
 
@@ -137,7 +135,7 @@ ms.locfileid: "60206855"
 
 ![テーブル内の列を表示します。](images/tvm-after-exceptions-table.png)
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [脆弱性を修復する](tvm-remediation.md)

@@ -2,8 +2,6 @@
 title: サポート対象オペレーティング システムのプラットフォームと機能
 description: すべてのデバイスのアクティビティが適切に考慮される脅威と脆弱性の管理のオペレーティング システムまたはプラットフォームの要件を満たしてください。
 keywords: threat & 脆弱性の管理, 脅威と脆弱性の管理, オペレーティング システム, プラットフォーム要件, 前提条件, Microsoft Defender for Endpoint-tvm サポート os, Microsoft Defender for Endpoint-tvm, サポートされるオペレーティング システム, サポートされるプラットフォーム, Linux サポート, mac サポート
-search.appverid: met150
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a5c96f8a3dd96219f58ac667e03b50e03498dcae
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 091ba63ac23342c9423d8989cc2e56f4a1423f76
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60659105"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883379"
 ---
 # <a name="supported-operating-systems-platforms-and-capabilities---for-threat-and-vulnerability-management"></a>サポートされているオペレーティング システム、プラットフォーム、および機能 - 脅威と脆弱性の管理
 
@@ -48,9 +46,9 @@ ms.locfileid: "60659105"
 
 サポートされている OS またはプラットフォーム|OS の脆弱性|ソフトウェア製品の脆弱性|OS 構成の評価|セキュリティ制御の構成評価|ソフトウェア製品構成の評価
 :---|:---|:---|:---|:---|:---
-Windows 7|はい|非サポート|サポート対象外|非サポート|非サポート
+Windows 7|はい|サポート対象外|サポート対象外|サポート対象外|非サポート
 Windows 8.1|はい|はい|はい|はい|はい
-Windows 10バージョン 1607-1703|はい|サポート対象外|非サポート|サポート対象外|非サポート
+Windows 10バージョン 1607-1703|はい|サポート対象外|サポート対象外|サポート対象外|サポート対象外
 Windows 10バージョン 1709 以降|はい|はい|はい|はい|はい
 Windows 11|はい|はい|はい|はい|はい
 Windows Server 2008 R2|はい|はい|はい|はい|はい
@@ -64,8 +62,8 @@ CentOS 7.2 以上|はい|はい|はい|はい|はい
 Ubuntu 16.04 LTS 以上の LTS|はい|はい|はい|はい|はい
 Oracle Linux 7.2 以上|はい|はい|はい|はい|はい
 SUSE Linux Enterprise サーバー 12 以上|はい|はい|はい|はい|はい
-Android 6.0 以上 (プレビュー版)|はい|はい|非サポート|サポート対象外|サポート対象外
-iOS 12.0 以上 (プレビューで)|はい|非サポート|サポート対象外|サポート対象外|非サポート
+Android 6.0 以上 (プレビュー版)|はい|はい|サポート対象外|サポート対象外|サポート対象外
+iOS 12.0 以上 (プレビューで)|はい|サポート対象外|サポート対象外|サポート対象外|サポート対象外
 
 > [!NOTE]
 > 一部の機能は、ダウンレベルのオペレーティング システムでは使用できません。サポートされている OS の詳細については、「Microsoft 365 Defender ポータル」を参照してください。

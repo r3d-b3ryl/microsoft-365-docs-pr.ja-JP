@@ -1,8 +1,7 @@
 ---
-title: Microsoft Defender オフラインのWindows 10
+title: Microsoft Defender オフラインのWindows
 description: アプリから直接Microsoft Defender オフラインを使用Windows Defender ウイルス対策できます。 ネットワークでの展開方法を管理できます。
 keywords: スキャン、ディフェンダー、オフライン
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -16,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 829f908d4b7cde6713cd6443100a15284d305eca
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 12023c7655a8978e5e0ae54b8a2831edda9b9d9e
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209431"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883583"
 ---
 # <a name="run-and-review-the-results-of-a-microsoft-defender-offline-scan"></a>Microsoft Defender オフライン スキャンの結果を実行してレビューする
 
@@ -36,13 +35,13 @@ Microsoft Defender オフラインは、信頼できる環境からスキャン�
 
 マルウェア感染がMicrosoft Defender オフライン疑われる場合、またはマルウェアの発生後にエンドポイントの完全なクリーンを確認する場合は、このツールを使用できます。
 
-このWindows 10、Microsoft Defender オフラインアプリから直接 1 回のクリックで実行Windows セキュリティ[できます](microsoft-defender-security-center-antivirus.md)。 以前のバージョンの Windowsユーザーは、起動可能なメディアにMicrosoft Defender オフラインをインストールし、エンドポイントを再起動し、起動可能なメディアを読み込む必要があります。
+11 Windows 10および Windows 11 では、Microsoft Defender オフラインアプリから直接 1 回のクリックでWindows セキュリティ[できます](microsoft-defender-security-center-antivirus.md)。 以前のバージョンの Windowsユーザーは、起動可能なメディアにMicrosoft Defender オフラインをインストールし、エンドポイントを再起動し、起動可能なメディアを読み込む必要があります。
 
 ## <a name="prerequisites-and-requirements"></a>前提条件と要件
 
-Microsoft Defender オフラインはWindows 10ハードウェア要件と同じWindows 10。
+Microsoft Defender オフライン 11 Windows 10および Windows 11 のハードウェア要件は、ハードウェア要件と同Windows 10。
 
-要件の詳細についてはWindows 10トピックを参照してください。
+11 の要件Windows 10およびWindows詳細については、次のトピックを参照してください。
 
 - [ハードウェアの最小要件](/windows-hardware/design/minimum/minimum-hardware-requirements-overview)
 

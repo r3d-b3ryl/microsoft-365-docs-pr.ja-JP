@@ -2,8 +2,6 @@
 title: 脅威と脆弱性の管理
 description: この新しい機能では、エンドポイントの脆弱性と誤った構成の検出、事前設定、修復に対して、ゲームを変えるリスクベースのアプローチを使用します。
 keywords: threat & 脆弱性の管理, 脅威と脆弱性の管理, Microsoft Defender for Endpoint TVM, Microsoft Defender for Endpoint-TVM, 脆弱性の管理, 脆弱性評価, 脅威と脆弱性スキャン, セキュリティで保護された構成評価, Microsoft Defender for Endpoint, endpoint の脆弱性, 次世代
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: overview
 ms.technology: mde
-ms.openlocfilehash: 44690f586d606ecceebecca65f13b5e337a021c6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 54c198470d7fd3ee0a05ff40c7597018735b4e3b
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212501"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60881695"
 ---
 # <a name="threat-and-vulnerability-management"></a>脅威と脆弱性の管理
 

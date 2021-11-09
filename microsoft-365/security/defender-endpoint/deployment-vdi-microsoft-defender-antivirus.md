@@ -2,7 +2,6 @@
 title: Microsoft Defender ウイルス対策仮想デスクトップ インフラストラクチャの展開ガイド
 description: 仮想デスクトップ環境にMicrosoft Defender ウイルス対策、保護とパフォーマンスの最適なバランスを保つ方法について説明します。
 keywords: vdi、hyper-v、vm、仮想マシン、Windows Defender、ウイルス対策、av、仮想デスクトップ、rds、リモート デスクトップ
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,17 +10,17 @@ ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 08/31/2021
+ms.date: 10/18/2021
 ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 86f2ecdbf263f922d5e271028d28c50b91af31b5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 23ac32508338771b46ccd30b520da53a471be81a
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213723"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882083"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>仮想デスクトップ インフラストラクチャ (VDI) 環境での Microsoft Defender ウイルス対策の展開ガイド
 
@@ -72,7 +71,7 @@ Windows 10 バージョン 1903 では、共有セキュリティ インテリ�
 
 6. Enter `\\<sharedlocation\>\wdav-update` (この値のヘルプについては、「ダウンロードとアンパック [」を参照してください](#download-and-unpackage-the-latest-updates))。
 
-7. [**OK**] をクリックします。
+7. **[OK]** をクリックします。
 
 8. テストする VM に GPO を展開します。
 
@@ -179,7 +178,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 通知を抑制すると、スキャンMicrosoft Defender ウイルス対策修復アクションが実行された場合Windows 10アクション センターに通知が表示されません。 ただし、セキュリティ運用チームは、スキャンの結果をポータルに表示Microsoft 365 Defender[します](microsoft-defender-security-center.md)。
 
 > [!TIP]
-> [アクション センター] を開Windows 10、次のいずれかの手順を実行します。
+> 11 のアクション センターを開Windows 10 Windows、次のいずれかの手順を実行します。
 >
 > - タスク バーの右側にある [アクション センター] アイコンを選択します。
 > - [ロゴ] Windows + A を押します。
@@ -226,7 +225,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 3. ポリシーを [有効] に **設定します**。
 
-4. [**OK**] をクリックします。
+4. **[OK]** をクリックします。
 
 5. 通常と同じ方法でグループ ポリシー オブジェクトを展開します。
 

@@ -2,7 +2,6 @@
 title: フォルダー アクセス制御によるファイルの暗号化から重要なフォルダーをランサムウェアから保護する
 description: 既定のフォルダー内のファイルは、悪意のあるアプリによって変更されるから保護できます。 ランサムウェアによるファイルの暗号化を防止します。
 keywords: フォルダー アクセスの制御, Windows 10, Windows Defender, ランサムウェア, 保護, ファイル, フォルダー
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -18,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a93fb821c69f390bbc6e19034e1dc025b06cd623
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 19a54dca079c8b43110d3140a9ad3543634086e3
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60665753"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883211"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>フォルダーへのアクセス制御で重要なフォルダーを保護する
 
@@ -37,7 +36,7 @@ ms.locfileid: "60665753"
 
 ## <a name="what-is-controlled-folder-access"></a>フォルダー アクセスの制御とは
 
-フォルダー アクセスの制御により、ランサムウェアなどの悪意のあるアプリや脅威から貴重なデータを保護できます。 フォルダー アクセスの制御により、既知の信頼できるアプリの一覧に対してアプリをチェックすることで、データを保護します。 Windows Server 2019、Windows Server 2022、および Windows 10 クライアントでサポートされている場合は、Windows セキュリティ App、Microsoft Endpoint Configuration Manager、Intune (管理対象デバイスの場合) を使用してフォルダー アクセスを制御できます。
+フォルダー アクセスの制御により、ランサムウェアなどの悪意のあるアプリや脅威から貴重なデータを保護できます。 フォルダー アクセスの制御により、既知の信頼できるアプリの一覧に対してアプリをチェックすることで、データを保護します。 Windows Server 2019、Windows Server 2022、Windows 10、および Windows 11 クライアントでサポートされている場合、Windows セキュリティ App、Microsoft Endpoint Configuration Manager を使用してフォルダー アクセスの制御を有効にできます。または Intune (管理対象デバイスの場合)。
 
 > [!NOTE]
 > スクリプト エンジンは信頼されていないので、制御された保護されたフォルダーへのアクセスを許可することはできません。 たとえば、PowerShell は、証明書とファイルインジケーターで許可されている場合でも、フォルダー アクセスの制御 [によって信頼されません](/microsoft-365/security/defender-endpoint/indicator-certificates)。
@@ -68,6 +67,7 @@ ms.locfileid: "60665753"
 フォルダー アクセスの制御は、次のバージョンのフォルダーでサポートWindows。
 
 - [Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709)以降
+- Windows 11
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - Windows Server 2022
 
@@ -129,7 +129,7 @@ DeviceEvents
 
 Windows セキュリティアプリを使用して、フォルダー アクセスの制御によって保護されているフォルダーの一覧を表示できます。
 
-1. デバイスでWindows 10アプリを開Windows セキュリティします。
+1. 11 Windows 10または Windows 11 デバイスで、アプリを開Windows セキュリティします。
 2. **[ウイルスと脅威の防止]** を選択します。
 3. [ **ランサムウェア保護] で、[** ランサムウェア **保護の管理] を選択します**。
 4. フォルダー アクセスの制御がオフになっている場合は、有効にする必要があります。 保護 **されたフォルダーを選択します**。

@@ -19,12 +19,12 @@ ms.custom: ''
 description: Google Postini、Barracuda Spam and Virus Firewall、または Cisco IronPort など、サードパーティの保護サービスまたはデバイスから Microsoft Defender に移行する適切な方法をOffice 365します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6c48de77ff62e21263f4475f0ce5e0bd5f36d221
-ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
+ms.openlocfilehash: c80d9e6005b5f9f329164dbc4ba0ebfed6a05a1b
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "60792498"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883955"
 ---
 # <a name="migrate-from-a-third-party-protection-service-or-device-to-microsoft-defender-for-office-365"></a>サード パーティ製の保護サービスまたはデバイスから Microsoft Defender に移行して、Office 365
 
@@ -87,6 +87,6 @@ Defender for Office 365 が組織にどのような影響を与えるのかよ�
 |[Defender にオンボードしてOffice 365](migrate-to-defender-for-office-365-onboard.md)|<ol><li>[セキュリティ ポリシーのオンボーディングをTeams](migrate-to-defender-for-office-365-onboard.md#step-1-begin-onboarding-security-teams)</li><li>[(省略可能)パイロット ユーザーが既存の保護サービスによるフィルター処理を除外する](migrate-to-defender-for-office-365-onboard.md#step-2-optional-exempt-pilot-users-from-filtering-by-your-existing-protection-service)</li><li>[スプーフィング インテリジェンスの調整](migrate-to-defender-for-office-365-onboard.md#step-3-tune-spoof-intelligence)</li><li>[偽装保護とメールボックス インテリジェンスの調整](migrate-to-defender-for-office-365-onboard.md#step-4-tune-impersonation-protection-and-mailbox-intelligence)</li><li>[ユーザー申請のデータを使用して測定と調整を行う](migrate-to-defender-for-office-365-onboard.md#step-5-use-data-from-user-submissions-to-measure-and-adjust)</li><li>[(省略可能)パイロットにユーザーを追加して反復処理する](migrate-to-defender-for-office-365-onboard.md#step-6-optional-add-more-users-to-your-pilot-and-iterate)</li><li>[すべてのMicrosoft 365保護を拡張し、SCL=-1 メール フロー ルールをオフにする](migrate-to-defender-for-office-365-onboard.md#step-7-extend-microsoft-365-protection-to-all-users-and-turn-off-the-scl-1-mail-flow-rule)</li><li>[MX レコードを切り替える](migrate-to-defender-for-office-365-onboard.md#step-8-switch-your-mx-records)</li></ol>|
 |
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
-- [フェーズ [1: セットアップ] に進みます](migrate-to-defender-for-office-365-prepare.md)。
+- [フェーズ [1: 準備] に進みます](migrate-to-defender-for-office-365-prepare.md)。

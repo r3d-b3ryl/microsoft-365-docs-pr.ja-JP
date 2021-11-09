@@ -2,8 +2,6 @@
 title: 攻撃面の減少機能を構成する
 description: 攻撃Microsoft Intune、Microsoft Endpoint Configuration Manager、PowerShell コマンドレット、およびグループ ポリシーを使用して、攻撃表面の縮小を構成します。
 keywords: asr, 攻撃表面の縮小, Windows Defender, microsoft Defender, ウイルス対策, av
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,13 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 08/11/2021
-ms.openlocfilehash: 1ad1a58b47b6e84366cbaf7bceea19ec9fe6bc52
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.date: 10/14/2021
+ms.openlocfilehash: 0809f300cd1baa139d42ac5e49905add68b5f735
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213841"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882635"
 ---
 # <a name="configure-attack-surface-reduction-capabilities"></a>攻撃面の減少機能を構成する
 
@@ -60,7 +58,7 @@ Defender for Endpoint には、攻撃表面の縮小機能がいくつか含ま�
 
 > [!TIP]
 > ほとんどの場合、攻撃表面の縮小機能を構成する場合、次の方法から選択できます。
-
+>
 > - Microsoft エンドポイント マネージャー (現在は、Microsoft IntuneとMicrosoft Endpoint Configuration Manager)
 > - グループ ポリシー
 > - PowerShell コマンドレット

@@ -2,8 +2,6 @@
 title: デバイスの検出に関するよく寄せられる質問
 description: デバイスの検出に関するよく寄せられる質問 (FAQ) に対する回答を検索する
 keywords: デバイスの検出、検出、パッシブ、プロアクティブ、ネットワーク、可視性、サーバー、ワークステーション、オンボード、管理されていないデバイス
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -20,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 185de1d39f6d10f84ab5409772dbf0c1193544e7
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: df0488f8ae9aad5ab00b39f85d638fae2dc0eabc
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60701083"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882707"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>デバイスの検出に関するよく寄せられる質問
 
@@ -59,13 +57,13 @@ ms.locfileid: "60701083"
 
 
 ## <a name="which-onboarded-devices-can-perform-discovery"></a>検出を実行できるオンボード デバイス
- バージョン 1809 以降Windows 10オンボーディングされたデバイスは、検出を実行できます。 サーバーは、この時点で検出を実行できません。
+ バージョン 1809 以降Windows 10 11 以降で実行されているオンボード デバイスはWindows検出を実行できます。 サーバーは、この時点で検出を実行できません。
 
 ## <a name="what-happens-if-my-onboarded-devices-is-connected-to-my-home-network-or-to-public-access-point"></a>オンボード デバイスがホーム ネットワークまたはパブリック アクセス ポイントに接続されている場合は、どうなるでしょうか。
  検出エンジンは、企業ネットワークで受信されるネットワーク イベントと企業ネットワーク外のネットワーク イベントを区別します。 すべてのテナントのクライアント間でネットワーク識別子を関連付け、プライベート ネットワークから受信したイベントと企業ネットワークの間でイベントが区別されます。 たとえば、組織のデバイスの大部分が、同じ既定のゲートウェイと DHCP サーバー アドレスを持つ同じネットワーク名に接続されていることを報告する場合、このネットワークは企業ネットワークである可能性が高いとみなされます。 プライベート ネットワーク デバイスはインベントリに表示され、アクティブにプローブされません。
 
 ## <a name="what-protocols-are-you-capturing-and-analyzing"></a>キャプチャと分析を行うプロトコルは何ですか?
- 既定では、Windows 10 バージョン 1809 以降で実行されているオンボード デバイスはすべて、ARP、CDP、DHCP、DHCPv6、IP (ヘッダー)、LLDP、LLMNR、mDNS、MNDP、NBNS、SSDP、TCP (ヘッダー)、UDP (ヘッダー)、WSD のプロトコルをキャプチャおよび分析しています。
+ 既定では、Windows 10 バージョン 1809 以降、または Windows 11 で実行されているオンボード デバイスはすべて、ARP、CDP、DHCP、DHCPv6、IP (ヘッダー)、LLDP、LLMNR、mDNS、MNDP、NBNS、SSDP、TCP (SYN ヘッダー)、UDP (ヘッダー)、WSD
 
 ## <a name="which-protocols-do-you-use-for-active-probing-in-standard-discovery"></a>Standard Discovery でアクティブなプロビリングに使用するプロトコルは何ですか?
  デバイスが標準検出を実行するように構成されている場合、公開されたサービスは、ARP、FTP、HTTP、HTTPS、ICMP、LLMNR、NBNS、RDP、SIP、SMTP、SSH、Telnet、UPNP、WSD、SMB、NBSS、IPP、PJL、RPC、mDNS、DHCP、AFP、CrestonCIP、IphoneSync、WinRM、VNC、SLP のプロトコルを使用してプローブされます。
