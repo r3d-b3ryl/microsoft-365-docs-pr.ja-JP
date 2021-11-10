@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: df517e07242bfd15ec0feccbd0de9d682c74d381
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f746f07f20c4a8eddba51bb37d86acf2aafdaa6b
+ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60184703"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60899740"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Microsoft Defender for Endpoint 評価ラボ
 
@@ -103,7 +103,7 @@ Microsoft Defender ATP を試してみたいですか? [無料試用版にサイ
 
 ラボのセットアップ プロセスが完了したら、デバイスを追加してシミュレーションを実行できます。
 
-## <a name="add-devices"></a>デバイスの追加
+## <a name="add-devices"></a>デバイスを追加する
 
 環境にデバイスを追加すると、Defender for Endpoint は接続の詳細を示す構成済みのデバイスをセットアップします。 サーバー 2019 Windows 10、Windowsサーバー 2019、Windowsサーバー 2022 デバイスWindows追加できます。
 
@@ -189,8 +189,6 @@ Microsoft Defender ATP を試してみたいですか? [無料試用版にサイ
 高度な検索を使用[してデータ](advanced-hunting-overview.md)をクエリし[](threat-analytics.md)、脅威分析を使用して、新たな脅威に関するレポートを表示することもできます。
 
 ### <a name="do-it-yourself-attack-scenarios"></a>Do-it-yourself 攻撃のシナリオ
-
-事前に作成されたシミュレーションを探している場合は、"Do It [Yourself" 攻撃シナリオを使用できます](https://security.microsoft.com/tutorials/all)。 これらのスクリプトは安全で文書化され、使いやすいです。 これらのシナリオは、Defender for Endpoint の機能を反映し、調査のエクスペリエンスについて説明します。
 
 事前に作成されたシミュレーションを探している場合は、"Do It [Yourself" 攻撃シナリオを使用できます](https://security.microsoft.com/tutorials/all)。 これらのスクリプトは安全で文書化され、使いやすいです。 これらのシナリオは、Defender for Endpoint の機能を反映し、調査のエクスペリエンスについて説明します。
 

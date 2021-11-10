@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 6dff7d5fc0acbb80500608a887ad00705bd1d2eb
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 66be1b35e98176c8282f52248899aef52b032845
+ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883187"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60899733"
 ---
 # <a name="turn-on-network-protection"></a>ネットワーク保護を有効にする
 
@@ -60,7 +60,7 @@ ms.locfileid: "60883187"
 
 - [PowerShell](#powershell)
 - [モバイル デバイス管理 (MDM)](#mobile-device-management-mdm)
-- [Microsoft エンドポイント マネージャー / Intune](#microsoft-endpoint-manager-formerly-intune)
+- [Microsoft エンドポイント マネージャー](#microsoft-endpoint-manager)
 - [グループ ポリシー](#group-policy)
 - [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
 
@@ -86,13 +86,15 @@ ms.locfileid: "60883187"
 
 [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](/windows/client-management/mdm/policy-csp-defender)構成サービス プロバイダー (CSP) を使用して、ネットワーク保護を有効または無効にするか、監査モードを有効にします。
 
-### <a name="microsoft-endpoint-manager-formerly-intune"></a>Microsoft エンドポイント マネージャー (以前は Intune)
+### <a name="microsoft-endpoint-manager"></a>Microsoft エンドポイント マネージャー
 
 1. 管理センターにサインインMicrosoft エンドポイント マネージャー ( https://endpoint.microsoft.com) .
 
 2. [デバイス構成 **プロファイル**  >  **] [プロファイルの**  >  **作成] に移動します**。
 
-3. [プロファイルの **作成] フライアウト** で、テンプレートの一覧から [ **エンドポイント** 保護] を選択し、[作成] を **選択します**。
+3. [プロファイルの **作成] フライアウト** で **、[プラットフォーム** ] を選択し、[プロファイルの種類] を **[テンプレート** ] **として選択します**。
+
+4. [テンプレート名 **] で**、テンプレート **の** 一覧から [エンドポイント保護] を選択し、[作成] を **選択します**。
 
 4. [エンドポイント保護 **の**  >  **基本] に移動** し、プロファイルの名前を指定し、[次へ] を **選択します**。
 

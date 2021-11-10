@@ -13,14 +13,14 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.date: 11/02/2021
+ms.date: 11/10/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 7c939b43edf206d31cf62678fa0984aa26707fab
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 11d8df5d56999cb4da41c57b8fdd09ebb8847c3e
+ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882407"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60899586"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>ファイル拡張子とフォルダーの場所に基づいて除外を構成および検証する
 
@@ -110,14 +110,16 @@ ms.locfileid: "60882407"
     1. オプションを [有効] に **設定します**。
     2. [オプション] **セクションで** 、[表示] **を選択します**。
     3. [値名] 列の下の各フォルダーを独自 **の行に指定** します。
-    4. ファイルを指定する場合は、ドライブ文字、フォルダー パス、ファイル名、拡張子など、ファイルへの完全修飾パスを入力してください。 [値 **] 列に「0」****と入力** します。
+    4. ファイルを指定する場合は、ドライブ文字、フォルダー パス、ファイル名、拡張子など、ファイルへの完全修飾パスを入力してください。 
+    5. [値 **] 列に「0」****と入力** します。
 
 5. その後で、**[OK]** を選択します。
 
 6. [拡張機能 **の除外] 設定を** 開いて編集し、除外を追加します。
     1. オプションを [有効] に **設定します**。
     2. [オプション] **セクションで** 、[表示] **を選択します**。
-    3. [値] 列の [値名] 列 **[0]** の下に、それぞれのファイル拡張子を独自の行に **入力** します。
+    3. [値名] 列の下に、それぞれのファイル拡張子 **を独自の行に入力** します。
+    4. [値 **] 列に「0」****と入力** します。
 
 7. その後で、**[OK]** を選択します。
 

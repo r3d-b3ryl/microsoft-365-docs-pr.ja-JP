@@ -1,5 +1,5 @@
 ---
-title: 攻撃シミュレーション トレーニング用のカスタム ペイロードを作成する
+title: 攻撃シミュレーション トレーニングのカスタム ペイロードを作成する
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: 管理者は、プラン 2 の Microsoft Defender で攻撃シミュレーション トレーニング用のカスタム ペイロードを作成Office 365できます。
 ms.technology: mdo
-ms.openlocfilehash: bf132e44c458fbe228b6b6e8d2bf7b1a6474e9e9
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 420642bfa8318f44548494b275b0dc617787f46a
+ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60666811"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60899752"
 ---
 # <a name="create-custom-payloads-for-attack-simulation-training-in-defender-for-office-365"></a>Defender で攻撃シミュレーション トレーニング用のカスタム ペイロードを作成Office 365
 
@@ -43,7 +43,7 @@ ms.locfileid: "60666811"
 
 [種類 **の選択] ページ** で、現在選択できる唯一の値は [メール] **です**。
 
-**[次へ]** をクリックします。
+[ **次へ**] をクリックします。
 
 ### <a name="select-a-social-engineering-technique"></a>ソーシャル エンジニアリング手法の選択
 
@@ -158,7 +158,7 @@ ms.locfileid: "60666811"
 
   - [コード **] タブ** では、HTML コードを直接表示および変更できます。 動的タグやフィッシング リンク、 **マルウェア** 添付ファイル リンク **などの** 書式設定などの **コントロール** は使用できません。
 
-  - [**電子メール メッセージ** 内のすべてのリンクをフィッシング リンクに置き換える] トグルは、メッセージ内のすべてのリンクを以前に選択したフィッシング リンクまたは添付ファイル URL のリンクに置き換え、時間を **節約** できます。 これを行うには、設定を [トグルオン] アイコン ![ に切り替える。 ](../../media/scc-toggle-on.png)
+  - [**メール メッセージ内のすべての** リンクをフィッシング リンクに置き換える] トグルは、[Select technique] ページで [資格情報の取得]、[マルウェアへのリンク]、または [ドライブバイ **URL]** を選択した場合にのみ **使用** できます。   このトグルは、メッセージ内のすべてのリンクを以前に選択したフィッシング リンクまたは添付ファイルURL のリンクに置き換え、時間 **を節約** できます。 これを行うには、設定を [トグルオン] アイコン ![ に切り替える。 ](../../media/scc-toggle-on.png)
 
 完了したら、**[次へ]** をクリックします。
 

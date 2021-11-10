@@ -18,12 +18,12 @@ ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
 description: この記事では、ドキュメントのゲストと共同作業を行う方法について、SharePointおよびOneDrive。
-ms.openlocfilehash: e51ec7e9695c564b2994089f0a827ca7ea4b67c6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7c58b9ef4fdc759c5afa1920083dd1875fad17f1
+ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60158960"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60899632"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>ゲストと共同でドキュメントの作業をする
 
@@ -37,7 +37,7 @@ SharePoint または OneDrive のドキュメントで組織外のユーザー�
 
 ## <a name="azure-external-collaboration-settings"></a>Azure の外部コラボレーション設定
 
-Microsoft 365 での共有は、[Azure Active Directory における B2B 外部コラボレーションの設定](/azure/active-directory/external-identities/delegate-invitations) によって最高レベルで管理されます。 Azure AD でゲスト共有が無効または制限されている場合、この設定は、ユーザー設定で構成する共有設定Microsoft 365。
+Microsoft 365 での共有は、[Azure Active Directory における B2B 外部コラボレーションの設定](/azure/active-directory/external-identities/delegate-invitations) によって最高レベルで管理されます。 ゲスト共有が無効または制限されている場合は、Azure AD で構成した共有設定が上書きMicrosoft 365。
 
 B2B 外部コラボレーション設定を確認して、ゲストとの共有がブロックされないか確認します。
 
@@ -49,7 +49,7 @@ B2B 外部コラボレーション設定を確認して、ゲストとの共有�
 2. 左側のナビゲーション ウィンドウで **[Azure Active Directory]** をクリックします。
 3. **[外部 ID]** をクリックします。
 4. **[開始]** 画面で、左側のナビゲーション ウィンドウで **[外部コラボレーション設定]** をクリックします。
-5. **[管理者とゲスト招待者の役割のユーザーが招待できる]** と **[メンバーが招待できる]** を両方とも **[はい]** に設定していることを確認します。
+5. 特定の管理者ロールに割り当てられたメンバー ユーザーとユーザーが、メンバーアクセス許可を持つゲストを含むゲスト ユーザーを招待できるか、組織内のユーザーがゲストを含むゲスト ユーザーを招待し、管理者以外のユーザーを招待できます。
 6. 変更を加えた場合は、**[保存]** をクリックします。
 
 **[共同作業の制限]** セクションの設定に注意してください。 共同作業するゲストのドメインがブロックされていないことを確認します。

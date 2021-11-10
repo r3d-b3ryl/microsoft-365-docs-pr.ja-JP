@@ -14,14 +14,14 @@ author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.date: 10/19/2021
+ms.date: 11/10/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c82b97f1c5799442ca5c857b65f24b9ef8b2e928
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: fad476d132e00dd7e01ab7876ec9bee0224f4e72
+ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883199"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60899577"
 ---
 # <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>サーバー Microsoft Defender ウイルス対策の除外をWindowsする
 
@@ -102,7 +102,7 @@ Microsoft Defender ウイルス対策サーバー 2019 Windows Server 2016およ
 ##### <a name="windows-tempedb-files"></a>Windows"temp.edb" ファイル
 
 - `%windir%\SoftwareDistribution\Datastore\*\tmp.edb`
-- `%ProgramData%\Microsoft\Search\Data\Applications\Windows\*\*.log`
+- `%ProgramData%\Microsoft\Search\Data\Applications\Windows\windows.edb`
 
 ##### <a name="windows-update-files-or-automatic-update-files"></a>Windowsファイルの更新または自動更新ファイル
 
