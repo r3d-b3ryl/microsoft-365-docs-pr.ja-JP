@@ -83,7 +83,11 @@
         - name: マルウェア対策ポリシーを構成する
           href: configure-anti-malware-policies.md
         - name: スパム対策ポリシーの構成
-          href: configure-your-spam-filter-policies.md
+          items:
+            - name: スパム対策ポリシーの構成
+              href: configure-your-spam-filter-policies.md
+            - name: 高度なスパム フィルター (ASF) の設定
+              href: advanced-spam-filtering-asf-options.md
         - name: EOP を構成して、ハイブリッドの迷惑メール フォルダーにスパムを配信する
           href: /exchange/standalone-eop/configure-eop-spam-protection-hybrid
         - name: Exchange Online メールボックスで迷惑メール設定を構成する
@@ -166,8 +170,6 @@
           href: recommended-settings-for-eop-and-office365.md
         - name: AIR をカスタム ソリューションまたはサードパーティのソリューションと統合する
           href: air-custom-reporting.md
-        - name: 高度なスパム フィルター (ASF) の設定
-          href: advanced-spam-filtering-asf-options.md
         - name: テナントの許可/禁止リスト
           items:
             - name: テナントの許可/禁止リストを管理する

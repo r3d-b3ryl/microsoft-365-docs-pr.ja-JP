@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: 管理者がユーザーの回復可能なアイテム フォルダー内のアイテムを Exchange Online メールボックスに対して削除する方法について説明します(そのメールボックスが法的に保持されている場合でも)。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8ef725e841c46c33c037efbc0109b91864af4737
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 8e23c8628fc5985863c206bc3c7589e9cc4d2024
+ms.sourcegitcommit: 16e3a6e6df253de1153e46d058941cd9a2bbf2b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60698419"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60889737"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold"></a>保留中のクラウド ベースのメールボックスの 回復可能なアイテム フォルダーのアイテムを削除する
 
@@ -202,7 +202,7 @@ Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL Name
   
 ### <a name="retention-policies-applied-to-specific-mailboxes"></a>特定のメールボックスに適用されるアイテム保持ポリシー
   
-セキュリティ センター PowerShell で次& [コマンドを](/powershell/exchange/exchange-online-powershell) 実行して、メールボックスに適用されるアイテム保持ポリシーを特定します。 このコマンドは、メールボックスに適用Teams保持ポリシーを返します。 手順 1 で識別したアイテム保持ポリシーの GUID (プレフィックスは含めない `mbx` `skp` ) を使用します。
+セキュリティ センター PowerShell で次& [コマンドを](/powershell/exchange/connect-to-scc-powershell) 実行して、メールボックスに適用されるアイテム保持ポリシーを特定します。 このコマンドは、メールボックスに適用Teams保持ポリシーを返します。 手順 1 で識別したアイテム保持ポリシーの GUID (プレフィックスは含めない `mbx` `skp` ) を使用します。
 
 ```powershell
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
@@ -337,7 +337,7 @@ Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | 
 
 ## <a name="step-6-revert-the-mailbox-to-its-previous-state"></a>手順 6: メールボックスを以前の状態に戻す
 
-最後の手順では、メールボックスを以前の構成に戻します。 つまり、手順 2 で変更したプロパティをリセットし、手順 3 で削除した保留リストを再適用します。 保持されるデータには以下が含まれます。
+最後の手順では、メールボックスを以前の構成に戻します。 つまり、手順 2 で変更したプロパティをリセットし、手順 3 で削除した保留リストを再適用します。 これには、次の内容が含まれます。
   
 - 削除済みアイテムの保持期間を以前の値に戻す。 または、この設定を 30 日に設定したままにしておき、Exchange Online。
 

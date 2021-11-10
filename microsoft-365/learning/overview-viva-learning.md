@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-viva-learning
 ms.localizationpriority: medium
 description: お使Microsoft Viva ラーニング環境でのMicrosoft 365します。
-ms.openlocfilehash: 1747cef7ade83adfc33f369ae5196a0638f918b3
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: c92fc51d11b2d57c7fd051cbd060276d093be019
+ms.sourcegitcommit: 16e3a6e6df253de1153e46d058941cd9a2bbf2b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60645952"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60889761"
 ---
 # <a name="overview-of-microsoft-viva-learning"></a>サービスのMicrosoft Viva ラーニング
 
@@ -59,7 +59,7 @@ Viva ラーニングは、一部のコンテンツが既にMicrosoft Teamsで既
 
 ### <a name="knowledge-admin"></a>知識管理者
 
-ナレッジ管理者は、組織内Azure Active DirectoryにAzure ADできるMicrosoft 365 管理センター (Microsoft 365 管理センター) ロールです。 この役割は、組織のラーニング コンテンツ ソースを管理するMicrosoft 365 管理センター。 詳細については、「組み込[Azure ADロール」を参照してください](/azure/active-directory/roles/permissions-reference#knowledge-administrator)。
+ナレッジ管理者は、組織内Azure Active DirectoryにAzure ADできるMicrosoft 365 管理センター (Microsoft 365 管理センター) ロールです。 この役割は、組織のラーニング コンテンツ ソースを管理するMicrosoft 365 管理センター。 詳細については、「[Azure AD 組み込みロール](/azure/active-directory/roles/permissions-reference#knowledge-administrator)」を参照してください。
 
 ナレッジ管理者は、適度に技術的で、管理者の資格情報にSharePoint必要があります。 ナレッジ管理者は、組織の教育、学習、トレーニング、または従業員エクスペリエンスの一部に精通している必要があります。
 
@@ -69,7 +69,75 @@ Microsoft Learn および Microsoft 365 トレーニングのコンテンツは�
 
 ## <a name="supported-languages"></a>サポートされている言語
 
-Viva ラーニングは、組織の言語設定Microsoft 365に適応します。 ただし、現在ラーニングの言語はサポートされていません。
+Viva ラーニングは、組織の言語設定Microsoft 365に適応します。 ただし、現在ラーニングの言語はサポートされていません。 現在、Viva ラーニングは次の地域でサポートされています。
+
+:::row:::
+   :::column span="":::
+      - az-Latn-AZ
+      - bg-BG
+      - bn-IN
+      - ca-ES
+      - ca-Es-VALENCIA
+      - cs-CZ
+      - cy-GB
+      - da-DK
+      - de-DE
+      - el-GR
+      - en-GB
+      - en-US
+      - es-ES
+      - es-MX
+   :::column-end:::
+   :::column span="":::
+      - et-Enterprise Edition
+      - eu-ES
+      - fi-FI
+      - fil-PH
+      - fr-CA
+      - fr-FR
+      - gl-ES
+      - gu-IN
+      - hi-IN
+      - hr-HR
+      - hu-HU
+      - id-ID
+      - is-IS
+      - it-IT
+   :::column-end:::
+   :::column span="":::
+      - ja-JP
+      - ka-GE
+      - kk-KZ
+      - kn-IN
+      - ko-KR
+      - lt-LT
+      - lv-LV
+      - mk-MK
+      - ml-IN
+      - mr-IN
+      - nb-NO
+      - nl-NL
+      - nn-NO
+      - pl-PL
+   :::column-end:::
+   :::column span="":::
+      - pt-BR
+      - pt-PT
+      - ro-RO
+      - ru-RU
+      - sk-SK
+      - sl-SI
+      - sq-AL
+      - sr-latn-rs
+      - sv-Standard Edition,ta-IN
+      - te-IN,th-TH
+      - tr-TR
+      - uk-UA
+      - vi-VN
+      - zh-CN
+      - zh-TW
+   :::column-end:::
+:::row-end:::
 
 ## <a name="data-and-privacy"></a>データとプライバシー
 

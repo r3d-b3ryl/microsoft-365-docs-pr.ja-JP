@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 には、Exchange メールボックス、SharePoint サイト、OneDrive for Business サイト、Microsoft 365 グループ、Microsoft Teams 会話、Skype for Business 会話など、さまざまな場所にあるコンテンツを検索およびエクスポートするために使用できる 3 つの電子情報開示ツールがあります。 コアの電子情報開示とAdvanced eDiscovery、調査の管理に役立つ多くの追加機能を提供します。
-ms.openlocfilehash: 61a4f02d122a83b3279ebe7701b0a26d27b287de
-ms.sourcegitcommit: 53a4ee148348010444f7deb0590d34e6a298adb8
+ms.openlocfilehash: 61b5345b26684c4cc5161c4b2372460428c6496e
+ms.sourcegitcommit: 16e3a6e6df253de1153e46d058941cd9a2bbf2b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2021
-ms.locfileid: "60400243"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60889809"
 ---
-# <a name="ediscovery-solutions-in-microsoft-365"></a>電子情報開示ソリューション (Microsoft 365
+# <a name="ediscovery-solutions-in-microsoft-365"></a>Microsoft 365 の電子情報開示ソリューション
 
 電子情報開示 (eDiscovery) とは、訴訟で証拠として使用できる電子的情報を特定および提供するプロセスです。 Microsoft 365 の電子情報開示ツールを使用して、Exchange Online、OneDrive for Business、SharePoint Online、Microsoft Teams、Microsoft 365 グループ、Yammer チームのコンテンツを検索できます。 同じ電子情報開示検索でメールボックスとサイトを検索し、検索結果をエクスポートできます。 コア電子情報開示ケースを使用して、メールボックスやサイトにあるコンテンツを識別、保持、およびエクスポートできます。 組織に Office 365 E5 または Microsoft 365 E5 サブスクリプション (または関連する E5 アドオン サブスクリプション) がある場合は、Microsoft 365 の機能豊富な Advanced eDiscovery ソリューションを使用して、保管担当者をさらに管理し、コンテンツを分析できます。
 
@@ -61,14 +61,14 @@ Microsoft 365には、コンテンツ検索、Core 電子情報開示、およ�
 |高度なインデックス作成|||![サポートされています。](../media/check-mark.png)|
 |エラー修復|||![サポートされています。](../media/check-mark.png)|
 |レビュー セット|||![サポートされています。](../media/check-mark.png)|
-|クラウド添付ファイルとクラウド SharePointサポート|||![サポート対象です。](../media/check-mark.png)|
+|クラウド添付ファイルとクラウド SharePointサポート|||![サポートされています。](../media/check-mark.png)|
 |光学式文字認識|||![サポートされています。](../media/check-mark.png)|
 |会話スレッド|||![サポートされています。](../media/check-mark.png)|
 |コレクションの統計とレポート|||![サポートされています。](../media/check-mark.png)|
 |レビュー セットのフィルター処理|||![サポートされています。](../media/check-mark.png)|
 |タグ付け|||![サポートされています。](../media/check-mark.png)|
-|分析|||![サポート対象です。](../media/check-mark.png)|
-|予測コーディング モデル|||![サポート対象です。](../media/check-mark.png)|
+|分析|||![サポートされています。](../media/check-mark.png)|
+|予測コーディング モデル|||![サポートされています。](../media/check-mark.png)|
 |計算されたドキュメント のメタデータ|||![サポートされています。](../media/check-mark.png)|
 |長時間実行されるジョブの透明性|||![サポートされています。](../media/check-mark.png)|
 |顧客所有の場所にAzure Storageする|||![サポートされています。](../media/check-mark.png)|
@@ -131,13 +131,16 @@ Microsoft 365には、コンテンツ検索、Core 電子情報開示、およ�
 - Microsoft 365E1 サブスクリプション
 - Microsoft 365G1 サブスクリプション
 - Microsoft 365 F1 F3 サブスクリプション、または F5 セキュリティ アドオン
+- Microsoft 365 Business Premiumサブスクリプション
 - Office 365 Education A1 サブスクリプション
 - Office 365 E1サブスクリプション
+
 
 ### <a name="core-ediscovery"></a>コア電子情報開示
 
 - Microsoft 365 E3サブスクリプション
 - Microsoft 365 G3サブスクリプション
+- Microsoft 365 Business Premiumサブスクリプション
 - Microsoft 365F5 コンプライアンス アドオンまたは F5 セキュリティ & コンプライアンス アドオン
 - Microsoft 365 EducationA3 または Office 365 Education A3 サブスクリプション
 - Office 365 E3サブスクリプション

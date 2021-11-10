@@ -17,12 +17,12 @@ ms.custom: nextgen
 ms.technology: mde
 ms.date: 10/18/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 6a9903a0867a6d1800fef052bcd3cfe61eeba157
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: ee4ad26b534ff132a00ca07fdd0b55494445c580
+ms.sourcegitcommit: 16e3a6e6df253de1153e46d058941cd9a2bbf2b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555970"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60889773"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>改ざん防止機能を使用してセキュリティ設定を保護する
 
@@ -40,6 +40,8 @@ ms.locfileid: "60555970"
 - Windows Server 2016
 - Windows Server 2012 R2
 
+> [!NOTE]
+> 最新の統合ソリューション Windows Server 2012を使用してオンボードされたデバイスでは、R2 のタンパープロテクションを使用できます。 詳細については[、「R2 および 2016 Preview](/microsoft-365/security/defender-endpoint/configure-server-endpoints?view=o365-worldwide#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)の最新の統合ソリューションの新機能Windows Server 2012を参照してください。
 
 ## <a name="overview"></a>概要
 
@@ -54,7 +56,7 @@ ms.locfileid: "60555970"
 - クラウド配信の保護の無効化
 - セキュリティ インテリジェンスの更新プログラムの削除
 
-### <a name="how-it-works"></a>しくみ
+### <a name="how-it-works"></a>メカニズム
 
 タンパープロテクションMicrosoft Defender ウイルス対策セキュリティで保護された既定値にロックされ、次のようなアプリやメソッドを介してセキュリティ設定が変更されるのを防ぐ。
 
@@ -91,8 +93,8 @@ ms.locfileid: "60555970"
 
 |タンパープロテクションを有効にする方法|クラウドによる保護への依存 (MAPS)|
 |---|---|
-|Microsoft Intune|いいえ|
-|Microsoft Endpoint Configuration Manager + テナント接続|いいえ|
+|Microsoft Intune|不要|
+|Microsoft Endpoint Configuration Manager + テナント接続|不要|
 |Microsoft 365 Defender ポータル ( [https://security.microsoft.com](https://security.microsoft.com) )|はい|
 |
 
@@ -160,7 +162,7 @@ ms.locfileid: "60555970"
 
 ![Intune で改ざん防止を有効にする。](images/turnontamperprotect-MEM.png)
 
-1. 管理センターの[Microsoft エンドポイント マネージャーに移動し](https://endpoint.microsoft.com)、サインインします。
+1. [Microsoft エンドポイント マネージャー管理センター](https://endpoint.microsoft.com)に移動し、サインインします。
 
 2. [ **デバイス** \> **構成プロファイル] を選択します**。
 
