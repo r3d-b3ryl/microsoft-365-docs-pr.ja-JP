@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 79a5b1ea36e6a18d880d7fec7681f826cacac48f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6003488c0244a33a9fa632d081922ebf85dc85c9
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60158984"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60914394"
 ---
 # <a name="step-5-develop-and-test-use-cases"></a>手順 5.  使用例の開発とテスト
 
@@ -46,7 +46,7 @@ SOC は、SOC Oversight チームによって規制される、使用例を開�
 
 使用例の開発に関連する SOC 監視アクティビティには、次のものが含まれます。 
 
-- 要件
+- Requirements
 - スタッフまたはトレーニングのニーズ
 - ソフトウェア ライセンス
 - ベンダー契約
@@ -56,7 +56,7 @@ SOC は、SOC Oversight チームによって規制される、使用例を開�
 
 Runbook とプレイブックの作成プロセスを容易にするために、使用例の決定ツリーを作成します。 次の図は、例を示しています。
 
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/use-case-decision-process.png" alt-text="使用例の決定プロセス。":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/use-case-decision-process.png" alt-text="使用例の決定プロセス。" lightbox="../../media/integrate-microsoft-365-defender-secops/use-case-decision-process.png":::
 
 高レベルの使用例の標準が定義され、承認されると、次に実際の使用例を作成してテストします。 次のセクションでは、フィッシング対策と脅威と脆弱性スキャンのシナリオを例として使用します。
 
@@ -64,13 +64,13 @@ Runbook とプレイブックの作成プロセスを容易にするために、
 
 使用例を作成する最初の手順は、ストーリー ボードを使用してワークフローの概要を説明します。 脅威インテリジェンス チームへの新しいフィッシング攻撃通知のハイレベル ストーリー ボードの例を次に示します。
  
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-phishing.png" alt-text="フィッシング対策キャンペーンの使用例ワークフロー。":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-phishing.png" alt-text="フィッシング対策キャンペーンの使用例ワークフロー。" lightbox="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-phishing.png":::
 
 ### <a name="invoke-the-use-case-workflow-for-example-1"></a>使用例のワークフロー (例 1) を呼び出す
 
 ストーリー ボードが承認されると、次に、使用例ワークフローを呼び出します。 フィッシング対策キャンペーンのプロセス例を次に示します。 
  
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-phishing.png" alt-text="フィッシング対策キャンペーンの詳細な使用例のワークフローの例。":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-phishing.png" alt-text="フィッシング対策キャンペーンの詳細な使用例のワークフローの例。" lightbox="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-phishing.png":::
 
 ## <a name="use-case-example-2-threat-and-vulnerability-scanning"></a>使用例 2: 脅威と脆弱性のスキャン
 
@@ -78,13 +78,13 @@ Runbook とプレイブックの作成プロセスを容易にするために、
 
 アセットの種類に関する概要ストーリーボード脅威と脆弱性の管理次に示します。
  
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-tvm.png" alt-text="ユーザーの使用例のワークフロー脅威と脆弱性の管理。":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-tvm.png" alt-text="ユーザーの使用例のワークフロー脅威と脆弱性の管理。" lightbox="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-tvm.png":::
 
 ### <a name="invoke-the-use-case-workflow-for-example-2"></a>使用例のワークフロー (例 2) を呼び出す
 
 脅威と脆弱性のスキャンのプロセスの例を次に示します。
  
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-tvm.png" alt-text="ユーザーの詳細な使用例のワークフローの脅威と脆弱性の管理。":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-tvm.png" alt-text="ユーザーの詳細な使用例のワークフローの脅威と脆弱性の管理。" lightbox="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-tvm.png":::
  
 ### <a name="analyze-the-use-case-output-and-lessons-learned"></a>使用例の出力と学習した教訓を分析する
 
@@ -147,7 +147,7 @@ NIST の 4 つの手順インシデント対応プロセスには、次の 4 つ
 - コンテインメント、根絶、および回復
 - インシデント後のアクティビティ 
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
 [手順 6.SOC のメンテナンス タスクを特定する](integrate-microsoft-365-defender-secops-tasks.md)
 

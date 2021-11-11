@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 5f8a1be949c922a98d52b7d84ccc19e2ed3f9913
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d3dea119e73da7d0b0e8745ea1f96969f4818ac8
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154616"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60914322"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>グループ内のインシデントに優先順位をMicrosoft 365 Defender
 
@@ -42,7 +42,7 @@ Microsoft 365 Defender関連するアラートと、さまざまな製品から�
 
 インシデント ポータル (security.microsoft.com)の&でインシデント>アラートからインシデント キューに[Microsoft 365 Defender取得します](https://security.microsoft.com)。 次に例を示します。
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="インシデント キューの例。":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="インシデント キューの例。" lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
 [ **最新のインシデントと** 通知] セクションには、過去 24 時間に受信したアラートとインシデントが作成された数のグラフが表示されます。
 
@@ -63,11 +63,11 @@ Microsoft 365 Defender関連するアラートと、さまざまな製品から�
 
 既定のインシデント キューから [フィルター] を **選択して** [フィルター] ウィンドウを表示し、そこからフィルター処理されたインシデントのセットを表示できます。 次に例を示します。
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="インシデント キューのフィルター ウィンドウの例。":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="インシデント キューのフィルター ウィンドウの例。" lightbox="../../media/incidents-queue/incidents-ss-incidents-filters.png":::
 
 次の表に、使用可能なフィルター名を示します。
 
-| フィルター名 | 説明 |
+| フィルター名 | [説明] |
 |:-------|:-----|
 | 割り当て先 | 自分に割り当てられているアラート、または自動化によって処理されたアラートを表示できます。 |
 | Categories | カテゴリを選択して、見られる特定の戦術、テクニック、または攻撃コンポーネントに焦点を当てる。 |

@@ -19,12 +19,12 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: f7145d2668f6c724644bf719dfd6414550af43c4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 165f1ccb1e0a059d61802e9a8e026b9dbef3efc2
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209167"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60914382"
 ---
 # <a name="investigate-users-in-microsoft-365-defender"></a>ユーザーを調査Microsoft 365 Defender
 
@@ -36,11 +36,11 @@ ms.locfileid: "60209167"
 
 インシデント調査の一部には、ユーザー アカウントを含めできます。 インシデントからのインシデント **の [ユーザー** ]タブから開始し、& \> ***_ \> _* Users を通知します**。
 
-:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="インシデントの [ユーザー] ページの例。":::
+:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="インシデントの [ユーザー] ページの例。" lightbox="../../media/investigate-incidents/incident-users.png":::
 
 インシデントのユーザー アカウントの概要を簡単に取得するには、ユーザー アカウント名の横にあるチェック マークを選択します。 次に例を示します。
 
-:::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="ポータル内のインシデントのユーザー アカウントの概要ウィンドウMicrosoft 365 Defender例":::
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="インシデントのユーザー アカウントの概要ウィンドウの例。" lightbox="../../media/investigate-users/incidents-ss-user-pane.png":::
 
 > [!NOTE]
 > [ユーザー] ページにはAzure Active Directory (Azure AD) 組織とグループが表示され、ユーザーに関連付けられているグループとアクセス許可を理解できます。
@@ -51,13 +51,13 @@ ms.locfileid: "60209167"
 
 ここから、[ユーザー に移動] **ページを選択して** 、ユーザー アカウントの詳細を表示できます。 次に例を示します。
 
-:::image type="content" source="../../media/investigate-users/incidents-ss-user-details.png" alt-text="ポータル内のインシデントのユーザー アカウント ページMicrosoft 365 Defender例":::
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-details.png" alt-text="インシデントのユーザー アカウント ページの例。" lightbox="../../media/investigate-users/incidents-ss-user-details.png":::
 
 [ユーザー] ページの一覧からユーザー アカウントの名前を選択すると、このページを **確認** することもできます。
 
 [グループ] で番号を選択すると、ユーザーのグループ メンバーシップを **確認できます**。
 
-:::image type="content" source="../../media/investigate-users/user-group-membership.png" alt-text="ポータル内のユーザーのグループ メンバーシップMicrosoft 365 Defender例":::
+:::image type="content" source="../../media/investigate-users/user-group-membership.png" alt-text="ユーザーのグループ メンバーシップの例。" lightbox="../../media/investigate-users/user-group-membership.png":::
 
 [マネージャー] の下 **のアイコンを** 選択すると、ユーザーが組織ツリー内の場所を確認できます。
 
@@ -70,13 +70,13 @@ ms.locfileid: "60209167"
 - ユーザー アカウントを侵害済みとしてマークする
 - ユーザーにもう一度サインインを要求する
 - ユーザー アカウントを中断する
-- ユーザー アカウントAzure Active Directory (Azure AD) の設定を参照してください。
+- [ユーザー アカウントAzure Active Directory (Azure AD) の設定を参照してください。
 - ユーザー アカウントが所有するファイルを表示する
 - このユーザーと共有されているファイルを表示します。
 
 次に例を示します。
 
-:::image type="content" source="../../media/investigate-users/incidents-ss-user-details-actions.png" alt-text="ポータル内のインシデントに対するユーザー アカウントでのアクションMicrosoft 365 Defender例":::
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-details-actions.png" alt-text="インシデントのユーザー アカウントでのアクションの例。" lightbox="../../media/investigate-users/incidents-ss-user-details-actions.png":::
 
 <!--
 You can access this page from multiple areas in the Microsoft 365 Defender portal. You can access this page from a specific incident in the **Users** tab. Some alerts might include users as a specific affected asset. You can also search for users.  
@@ -93,7 +93,7 @@ Learn more about how to investigate users and potential risk [in this Cloud App 
 
 過去 2 日間にエンティティの潜在的な横方向の移動パスが検出されない場合、グラフは表示されません。 [別の日付を表示する] を使用して別の日付を選択して、このエンティティで検出された前の横方向の移動パスグラフを表示します。 横方向の移動パス レポートは、検出された潜在的な横方向の移動パスに関する情報を提供するために常に使用できます。また、時間によってカスタマイズできます。
 
-:::image type="content" source="../../media/investigate-users/lateral-movement-path.png" alt-text="ポータル内のユーザーの横方向の移動パスMicrosoft 365 Defender例":::
+:::image type="content" source="../../media/investigate-users/lateral-movement-path.png" alt-text="ユーザーの横方向の移動パスの例。" lightbox="../../media/investigate-users/lateral-movement-path.png":::
 
 詳細については、「横方向の移動 [パス」を参照してください](/defender-for-identity/use-case-lateral-movement-path)。
 

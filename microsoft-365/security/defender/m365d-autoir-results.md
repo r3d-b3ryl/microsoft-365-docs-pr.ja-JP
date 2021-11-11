@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 7eaf3c7f1b712bc6b3f0c1d17869ccf434a74d89
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3bfdca63325516394c78626899c6b83e3f3f0e20
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199491"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60914370"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>自動調査の詳細と結果
 
@@ -35,11 +35,9 @@ ms.locfileid: "60199491"
 **適用対象:**
 - Microsoft 365 Defender
 
-このMicrosoft 365 Defender、自動調査が実行されると[](m365d-autoir.md)、その調査に関する詳細は、自動調査プロセスの間と後の両方で利用できます。 [必要なアクセス許可](m365d-action-center.md#required-permissions-for-action-center-tasks)を持っている場合は、調査の詳細ビューでこれらの詳細を表示できます。 このビューでは、最新の状態と保留中のアクションを承認できます。 
+このMicrosoft 365 Defender、自動調査が実行されると[](m365d-autoir.md)、その調査に関する詳細は、自動調査プロセスの間と後の両方で利用できます。 必要な [アクセス許可がある](m365d-action-center.md#required-permissions-for-action-center-tasks)場合は、最新の状態と保留中のアクションを承認する機能を提供する調査の詳細ビューでこれらの詳細を表示できます。 
 
-:::image type="content" source="../../media/mtp-air-investdetails.png" alt-text="調査の詳細。":::
-
-## <a name="new-unified-investigation-page"></a>(NEW!)統合された調査ページ
+## <a name="new-unified-investigation-page"></a>(NEW)統合された調査ページ
 
 調査ページが最近更新され、デバイス、電子メール、およびコラボレーション コンテンツ全体の情報が含まれます。 新しい統合された調査ページでは、共通言語を定義し[、Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)および Microsoft Defender for Office 365 全体で自動調査を行う一元[的なエクスペリエンスを提供します](../office-365-security/defender-for-office-365.md)。 統合調査ページにアクセスするには、次の黄色のバナーにあるリンクを選択します。
 
@@ -89,13 +87,13 @@ ms.locfileid: "60199491"
 
 次に例を示します。
 
-:::image type="content" source="../../media/mtp-incidentdetails-tabs.png" alt-text="インシデントの詳細。":::
+:::image type="content" source="../../media/mtp-incidentdetails-tabs.png" alt-text="調査ページの例。" lightbox="../../media/mtp-incidentdetails-tabs.png":::
 
 ## <a name="investigation-details"></a>調査の詳細
 
 調査の詳細ビューを使用して、調査に関連する過去、現在、保留中のアクティビティを表示します。 次に例を示します。
 
-:::image type="content" source="../../media/mtp-air-investdetails.png" alt-text="調査の詳細。":::
+:::image type="content" source="../../media/mtp-air-investdetails.png" alt-text="調査の詳細の例。" lightbox="../../media/mtp-air-investdetails.png":::
 
 調査の詳細ビューでは、次の表で説明する [**Investigation graph (調査のグラフ)**]、[**Alerts (警告)**]、[**Device (デバイス)**]、[**Identities (ID)**]、[**Key findings (主な検出事項)**]、[**Entities (エンティティ)**]、[**Log (ログ)**]、[**Pending actions (保留中のアクション)**] の各タブに情報が表示されます。
 

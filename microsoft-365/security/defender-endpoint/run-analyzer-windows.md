@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 29b414ac9dcab9a9c32b5ba09d45d5d9b9ce67de
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 172c883ae5572be65903c0b19459c514a39882d0
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554686"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60914117"
 ---
 # <a name="run-the-client-analyzer-on-windows"></a>Windows でクライアント アナライザーを実行する
 
@@ -57,6 +57,24 @@ ms.locfileid: "60554686"
 > Windows 10、Windows Server 2019 以降の OS エディション、または Windows 11 では、クライアント アナライザー スクリプトは、クラウド サービス URL への接続テストを実行するために呼び出される実行可能ファイルを呼び出します。 `MDEClientAnalyzer.exe`
 >
 > Windows 8.1、Windows Server 2016、または以前の OS エディションでは、クライアント アナライザー スクリプトは、コマンドとコントロール (CnC) URL の接続テストを実行するために呼び出される実行可能ファイルを呼び出し、サイバー データ チャネル URL の Microsoft Monitoring Agent 接続ツールにも呼び出します。 `MDEClientAnalyzerPreviousVersion.exe` `TestCloudConnection.exe`
+
+
+アナライザーに含まれるすべての PowerShell スクリプトとモジュールは Microsoft 署名済みです。
+ファイルが何か変更されている場合、アナライザーは次のエラーで終了する必要があります。
+
+![クライアント アナライザー エラーのイメージ](images/sigerror.png)
+
+
+このエラーが表示された場合、issuerInfo.txt出力には、その原因と影響を受けたファイルに関する詳細情報が含まれる。
+
+![発行者情報の画像](images/issuerinfo.png)
+
+
+変更後のMDEClientAnalyzer.ps1例:
+
+![変更された ps1 ファイルのイメージ](images/modified-ps1.png)
+
+
 
 ## <a name="result-package-contents-on-windows"></a>結果パッケージの内容がWindows
 
@@ -140,6 +158,9 @@ ms.locfileid: "60554686"
   - OperationsManager.evtx
 
     説明: イベント ログMicrosoft Monitoring Agentエクスポートする
+
+
+
 
 ## <a name="see-also"></a>関連項目
 

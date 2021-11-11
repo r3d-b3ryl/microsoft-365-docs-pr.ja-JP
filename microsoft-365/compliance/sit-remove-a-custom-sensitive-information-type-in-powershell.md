@@ -15,16 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 description: PowerShell を使用してカスタム機密情報の種類を削除する方法について説明します。
-ms.openlocfilehash: 4bb42bdc80cba64bc8970753b77160afc6720523
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bb3bf67a1493ec232a66b2bdc0c784ea52de32f5
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189263"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60914406"
 ---
 # <a name="remove-a-custom-sensitive-information-type-using-powershell"></a>PowerShell を使用してカスタム機密情報の種類を削除する
-
-
 
 コンプライアンス センターの PowerShell では、カスタムの機密情報の種類を削除する 2 つの方法があります。
 

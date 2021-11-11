@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: a1ef2dde05bd2244ea982cfa2dabd5927484f46b
-ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
+ms.openlocfilehash: 54d80dca5d1f2253aed3995b64097bfb911e45d8
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60724382"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60914430"
 ---
 # <a name="incident-response-with-microsoft-365-defender"></a>インシデント対応とMicrosoft 365 Defender
 
@@ -46,7 +46,7 @@ Microsoft 365 サービスおよびアプリは、疑わしい、または悪意
 
 個々のアラートを組み合わせて攻撃に関する分析情報を取得するのは困難で時間がかかるため、Microsoft 365 Defender はアラートとその関連情報を自動的にインシデントに集約します。
 
-:::image type="content" source="../../media/incidents-overview/incidents.png" alt-text="エンティティMicrosoft 365 Defenderイベントをインシデントに関連付ける方法。":::
+:::image type="content" source="../../media/incidents-overview/incidents.png" alt-text="エンティティMicrosoft 365 Defenderイベントをインシデントに関連付ける方法。" lightbox="../../media/incidents-overview/incidents.png":::
 
 この短いインシデントの概要については、Microsoft 365 Defender (4 分) をご覧ください。
 
@@ -68,11 +68,11 @@ Microsoft 365 サービスおよびアプリは、疑わしい、または悪意
 
 インシデント ポータル **(&)** の&で>インシデントからのインシデントを [security.microsoft.com 管理](https://security.microsoft.com)Microsoft 365 Defenderします。 次に例を示します。
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="ポータルの [インシデント] ページMicrosoft 365 Defenderします。":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="ポータルの [インシデント] ページMicrosoft 365 Defenderします。" lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
 インシデント名を選択すると、インシデントの概要が表示され、追加情報を含むタブにアクセスできます。
 
-:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="ポータル内のインシデントの [概要] ページMicrosoft 365 Defender例":::
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="ポータル内のインシデントの [概要] ページMicrosoft 365 Defender例" lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
 
 インシデントの追加タブは次のとおりです。
 
@@ -106,13 +106,13 @@ Microsoft 365 サービスおよびアプリは、疑わしい、または悪意
 
 インシデントとデータの関係と、インシデントポータルのインシデントのタブMicrosoft 365 Defenderします。
 
-:::image type="content" source="../../media/incidents-overview/incidents-security-center.png" alt-text="インシデントとそのデータと、ポータル内のインシデントのタブとのMicrosoft 365 Defenderします。":::
+:::image type="content" source="../../media/incidents-overview/incidents-security-center.png" alt-text="インシデントとそのデータと、ポータル内のインシデントのタブとのMicrosoft 365 Defenderします。" lightbox="../../media/incidents-overview/incidents-security-center.png":::
 
 ## <a name="example-incident-response-workflow-for-microsoft-365-defender"></a>インシデント対応ワークフローの例Microsoft 365 Defender
 
 次に、ポータルでインシデントに対応するワークフロー Microsoft 365例Microsoft 365 Defender示します。
 
-:::image type="content" source="../../media/incidents-overview/incidents-example-workflow.png" alt-text="インシデント対応ワークフローの例Microsoft 365。":::
+:::image type="content" source="../../media/incidents-overview/incidents-example-workflow.png" alt-text="インシデント対応ワークフローの例Microsoft 365。" lightbox="../../media/incidents-overview/incidents-example-workflow.png":::
 
 継続的に、インシデント キュー内で、分析と解決優先度が最も高いインシデントを特定し、対応の準備をします。 これは、次を組み合わせたものです：
 
@@ -150,7 +150,7 @@ Microsoft 製品全体のインシデント対応の詳細については、こ�
 
 次に、セキュリティ操作 (SecOps) の例を示Microsoft 365 Defender。
 
-:::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="ユーザーのセキュリティ操作のMicrosoft 365 Defender。":::
+:::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="ユーザーのセキュリティ操作のMicrosoft 365 Defender。" lightbox="../../media/incidents-overview/incidents-example-operations.png":::
 
 毎日のタスクには、次のものが含まれます。
 
@@ -212,7 +212,7 @@ Microsoft 製品全体の SecOps の詳細については、次のリソース�
     - [**メールに組織名を含める**] - 組織名をメール通知に表示する場合に選択します。
     - [**テナント固有のポータル リンクを含める**] - 特定の Microsoft 365 テナントにアクセスするため、メール通知にテナント ID を含むリンクを追加する場合、選択してください。
 
-    :::image type="content" source="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png" alt-text="インシデントメール通知の通知設定。":::
+    :::image type="content" source="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png" alt-text="インシデントメール通知の通知設定。" lightbox="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png":::
 
 5. **[次へ]** を選択します。 [受信者 **] ページ** で、インシデント通知を受信する電子メール アドレスを追加します。 新しい **メール アドレスを** 入力した後、[追加] を選択します。 通知をテストし、受信者が受信トレイで受信を確認するには、[テストメールの送信 **] を選択します**。 
 6. **[次へ]** を選択します。 [ルール **の確認] ページ** で、ルールの設定を確認し、[ルールの作成] **を選択します**。 受信者は、設定に基づいて電子メールを介してインシデント通知の受信を開始します。
@@ -251,7 +251,7 @@ Microsoft Learn のこの学習モジュールを使用して、インシデン�
 
 セキュリティ チームの役割に基づいて、次の表に従います。
 
-| 役割 | 手順 |
+| Role | 手順 |
 |:-------|:-----|
 | インシデントレスポンダー (Tier 1) | ポータルの [インシデント] ページからインシデント キューをMicrosoft 365 Defenderします。 グループ プロフィールでは次の操作ができます。 <ul><li> 重大度などの要因に基 [づいて優先順位](incident-queue.md) を付ける必要があるインシデントを確認します。 </li><li> [インシデント管理ワークフローに](manage-incidents.md)基づいて、名前の変更、割り当て、分類、タグとコメントの追加を含むインシデントを管理します。 </li></ul> |
 | セキュリティ調査担当者またはアナリスト (Tier 2) | <ol><li> ポータル[の [](investigate-incidents.md)インシデント] ページからインシデントの調査をMicrosoft 365 Defenderします。 </li><li> フィッシング攻撃 [、パスワード スプレー攻撃](/security/compass/incident-response-playbooks) 、アプリ同意許可攻撃の詳細なガイダンスについては、次のインシデント対応プレイブックを参照してください。 </li></ol> |

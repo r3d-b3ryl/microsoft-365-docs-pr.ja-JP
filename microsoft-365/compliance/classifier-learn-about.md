@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: トレーニングMicrosoft 365分類子は、ラボリングやポリシー アプリケーション用にさまざまな種類のコンテンツを認識するために、正のサンプルと負のサンプルを見てトレーニングできるツールです。
-ms.openlocfilehash: 91944d4d0d958c71232e2c9ea461eab9bf21c0cc
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: b57c8438a7b51fd175286d79a71ea746b72704f0
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335868"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60914346"
 ---
 # <a name="learn-about-trainable-classifiers"></a>トレーニング可能な分類子の詳細
 
@@ -41,7 +41,7 @@ ms.locfileid: "60335868"
 - キーワードまたはメタデータ値 (キーワード クエリ言語)。
 - 社会保障、クレジット カード、銀行口座番号 (機密情報の種類エンティティ定義) などの機密情報の以前に識別されたパターン [を使用する](sensitive-information-type-entity-definitions.md)。
 - アイテムがテンプレートのバリエーション (ドキュメントフィンガー印刷) なので、アイテム [を認識します](document-fingerprinting.md)。
-- 正確な文字列 (完全なデータ一 [致) の存在を使用します](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)。
+- 正確な文字列の存在を使用して、 [完全に一致するデータを使用します](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)。
 
 その後、感度ラベルと保持ラベルを自動的に適用して、「データ損失防止について[](dlp-learn-about-dlp.md)学習する」でコンテンツを使用し、保持ラベルのポリシーを[自動的に適用できます](apply-retention-labels-automatically.md)。
 
@@ -69,7 +69,7 @@ ms.locfileid: "60335868"
 Microsoft 365には、5 つの事前トレーニング済み分類子が付属しています。
 
 > [!CAUTION]
-> 多くの誤 **検知が生成** されたため、攻撃言語の事前トレーニング済み分類子は廃止されています。 使用しないでください。現在使用している場合は、ビジネス プロセスを移動する必要があります。 代わりに **、Threat** **、Profanity、** および **Harassment** の事前トレーニング済みの分類子を使用することをお勧めします。
+> 事前にトレーニングされた [**不快な言葉**] 分類子は、誤検知の数が多いため、廃止予定です。 使用しないでください。現在使用している場合は、ビジネス プロセスを移動する必要があります。 代わりに **、Threat** **、Profanity、** および **Harassment** の事前トレーニング済みの分類子を使用することをお勧めします。
 
 - **履歴書**: 申請者の個人、教育、専門的な資格、職歴、その他の個人を特定する情報のテキスト アカウントであるアイテムを検出します。
 - **ソース コード**: コンピューターで使用されている上位 25 のコンピューター プログラミング言語で記述された一連の命令とステートメントを含むアイテムをGitHub
@@ -146,4 +146,4 @@ Microsoft 365には、5 つの事前トレーニング済み分類子が付属�
 - [秘密度ラベル](sensitivity-labels.md)
 - [機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)
 - [ドキュメントの指の印刷](document-fingerprinting.md)
-- [完全なデータ一致](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [正確なデータ一致に基づく機密情報の種類について説明します。](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)

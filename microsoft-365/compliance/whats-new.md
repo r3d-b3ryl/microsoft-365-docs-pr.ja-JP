@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: コンプライアンス センターに新しいソリューションを追加する場合、フィードバックに基づいて既存の機能を更新する場合、新しく更新されたドキュメントを展開する場合でも、Microsoft 365 を使用すると、変化し続けるコンプライアンス環境の上に立ち続けるのに役立ちます。 今月までの予定を確認します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 694a066efa35743206aaff8a1169014a266164b8
-ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
+ms.openlocfilehash: febd40a6312b794c62339e6b19f5425c2acf9542
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/11/2021
-ms.locfileid: "60907791"
+ms.locfileid: "60914634"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 コンプライアンス センターの新機能
 
@@ -40,6 +40,65 @@ Microsoft 365 コンプライアンス センター に新しいソリューシ�
 > - [Microsoft 365 Defender の新機能](../security/defender/whats-new.md)
 >
 > また、「Microsoft 365[](https://www.microsoft.com/microsoft-365/roadmap)ロードマップ」を参照して、Microsoft 365、展開中、開発中、キャンセル済み、または以前にリリースされた機能について説明します。
+
+## <a name="october-2021"></a>2021 年 10 月
+
+### <a name="app-governance"></a>アプリのガバナンス
+
+- Defender for Cloud Apps のアプリ ガバナンス アドオン[が一般提供にリリースされました](/cloud-app-security/app-governance-manage-app-governance)。 アプリ ガバナンスのドキュメントは、Defender for Cloud Apps のドキュメントに参加するために移動しました。
+
+### <a name="compliance--service-assurance"></a>コンプライアンス&サービス アシュアランス
+
+- [サービスアシュ](/compliance) アランス - 認定および適用性に関する声明のコンテンツ更新プログラムを四半期ごとに確認する) データセンターの資産管理
+  - データセンターのアーキテクチャとインフラストラクチャ
+  - データセンターのビジネス継続性と障害復旧
+  - データセンターの環境保護
+  - データセンターの物理アクセス セキュリティ
+  - Microsoft 365SDL コンプライアンス プログラム
+  - Microsoft 365 サービス エンジニアのアクセスの制御
+  - MS Cloud のリスク評価ガイド
+
+### <a name="data-loss-prevention"></a>データ損失防止
+
+- [macOS のサポートと高度](endpoint-dlp-learn-about.md) な分類のために更新されたデータ損失防止について説明します。サポートされているすべてのファイルの種類のアクティビティを監査するカスタム DLP ポリシーを作成するために更新されました。
+- [macOS のサポートMicrosoft 365高度](endpoint-dlp-getting-started.md)な分類のためにエンドポイント データ損失防止が更新された場合の使用を開始します。
+- [エンドポイント データ損失防止の使用は](endpoint-dlp-using.md) 、macOS のサポートと高度な分類のために更新されました。
+- [macOS のサポートと高度](dlp-policy-tips-reference.md) な分類のために、データ損失防止ポリシー ヒントのリファレンスが更新されました。
+- [macOS デバイスを macOS Microsoft 365 (プレビュー)](device-onboarding-macos-overview.md)にオンボードすると、macOS のサポートと高度な分類が更新されました。
+- オンボード デバイス用の次の新しいページが追加されました。
+  - [Intune (プレビュー) を使用して、Microsoft 365コンプライアンス ソリューションへのオンボードおよびオフボードの macOS デバイス](device-onboarding-offboarding-macos-intune.md)
+  - [Microsoft Defender for Endpoint のお客様向け Intune を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)](device-onboarding-offboarding-macos-intune-mde.md)
+  - [JAM Pro F を使用したコンプライアンス ソリューションMicrosoft 365オンボードおよびオフボード macOS デバイス (プレビュー)](device-onboarding-offboarding-macos-jamfpro.md)
+  - [Microsoft Defender for Endpoint のお客様向け JAMF Pro を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)](device-onboarding-offboarding-macos-jamfpro-mde.md)
+
+### <a name="ediscovery"></a>電子情報開示
+
+- [クラウド添付ファイルの収集Advanced eDiscovery](advanced-ediscovery-cloud-attachments.md)クラウド添付ファイルの最新バージョンの収集に加えて、電子メール メッセージまたはチャット会話で共有されたバージョンTeamsできます。共有バージョンの収集は、クラウド添付ファイルに保持ラベルを自動的に適用する新しい機能によって可能になります。
+- [サイトに保存](advanced-ediscovery-historical-versions.md)Advanced eDiscoveryドキュメントのすべてのバージョンにインデックスを付け、検索用にSharePointバージョンを設定します。つまり、コレクション クエリに一致するコンテンツを含むドキュメント バージョンが検索結果に返されます。
+
+### <a name="encryption"></a>暗号化
+
+- [1 対 1 の](/microsoftteams/teams-end-to-end-encryption)通話でエンドツーエンドの暗号化を使用Microsoft Teams (パブリック プレビュー)パブリック プレビューの新しいコンテンツ。
+
+### <a name="information-governance"></a>情報ガバナンス
+
+- [Epic EHR](import-epic-data.md) 監査データをインポートするコネクタをセットアップすると、エピックの電子医療記録システムからデータをインポートして、インサイダー リスク管理の新しい一般的な患者データ誤用シナリオをサポートできます。
+- [医療 EHR](import-healthcare-data.md) 監査データをインポートするコネクタをセットアップする新しいコネクタを使用すると、電子医療記録システムからデータをインポートして、インサイダー リスク管理の新しい一般的な患者データ誤用シナリオをサポートできます。
+
+### <a name="retention-and-records-management"></a>保持とレコードの管理
+- [アダプティブ ポリシー スコープは](retention.md#adaptive-or-static-policy-scopes-for-retention) 、保持ポリシーと保持ラベル ポリシーのプレビューでリリースされます。
+- これで、感度 [ラベルに基づいて保持ラベルを自動的に適用できます](apply-retention-labels-automatically.md#identify-files-and-emails-that-have-a-sensitivity-label)。
+- ファイル プランに新しいインポート [プロセスがあります](file-plan-manager.md#import-retention-labels-into-your-file-plan)。
+- [アイテム保持ポリシーと保持](retention-settings.md)ラベル ポリシーの一般的な設定 : 保持ポリシーと保持ラベル ポリシーの両方でアダプティブ スコープと他の設定を構成する方法の詳細については、新しい記事を参照してください。
+
+### <a name="sensitive-information-types"></a>機密情報の種類
+
+- [名前付きエンティティの新しいコンテンツの名前付](named-entities-learn.md) きエンティティ (プレビュー) について説明します。
+- [名前付きエンティティの使用に関](named-entities-use.md) するデータ損失防止ポリシー (プレビュー) の新しいコンテンツで名前付きエンティティを使用します。
+
+### <a name="sensitivity-labels"></a>秘密度ラベル
+
+- [既定のラベルと既定のポリシーは](mip-easy-trials.md) 、対象となる顧客に展開されます。
 
 ## <a name="september-2021"></a>2021 年 9 月
 
@@ -259,38 +318,3 @@ Microsoft 365 コンプライアンス センター に新しいソリューシ�
 - プレビューでは、グループとサイトの感度ラベルを構成するときに、認証コンテキストの新しい設定[を使用できます](sensitivity-labels-teams-groups-sites.md)。 このオプションは、ユーザーがラベルが適用Azure AD SharePointサイトにアクセスするときに、より厳しい条件を適用するために、Azure AD条件付きアクセス ポリシーと組み合わせて機能します。 この設定を構成する前 [に、依存関係と制限](sensitivity-labels-teams-groups-sites.md#more-information-about-the-dependencies-for-the-authentication-context-option) を必ず確認してください。
 - [](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) Exchange 用に構成された自動ラベル付けポリシーは、暗号化を適用する感度ラベルをサポートし、[転送しない] オプションまたは [転送しない] オプションに対するアクセス許可をユーザーに割り当てEncrypt-Onlyしました。
 - [必須のラベル付](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents)けは、すべてのプラットフォームで、Officeアプリで一般に使用できます。
-
-## <a name="april-2021"></a>2021 年 4 月
-
-### <a name="advanced-ediscovery"></a>Advanced eDiscovery
-
-- [Advanced eDiscovery](/microsoft-365/compliance/limits-ediscovery20#export-limits---final-export-out-of-review-set)の制限。 組織は、レビュー セットからアイテムを 1 回エクスポートする場合に、最大 500 万アイテムまたは 500 MB をエクスポートできます(小さい方)。
-
-### <a name="data-classification"></a>データ分類
-
-- [アクティビティ エクスプローラーで利用可能なラベル付けアクティビティ](/microsoft-365/compliance/data-classification-activity-explorer-available-events)
-
-### <a name="data-connectors"></a>データ コネクタ
-
-- [Oracle データで Cisco Jabber をアーカイブするコネクタをセットアップする](/microsoft-365/compliance/archive-ciscojabberonoracle-data)
-- [PostgreSQL データで Cisco Jabber をアーカイブするコネクタをセットアップする](/microsoft-365/compliance/archive-ciscojabberonpostgresql-data)
-
-### <a name="data-loss-prevention"></a>データ損失防止
-
-- データ損失防止ポリシー [のヒントリファレンスの新しいトピック](/microsoft-365/compliance/dlp-policy-tips-reference)です。
-- 「データ損失 [防止について」の新しいトピックを参照してください](/microsoft-365/compliance/dlp-learn-about-dlp)。
-- 「データ損失 [防止アラート ダッシュボードの使用を開始する」の新しいトピック](/microsoft-365/compliance/dlp-alerts-dashboard-get-started)です。
-
-### <a name="retention-policies-and-retention-label-policies"></a>アイテム保持ポリシーと保持ラベル ポリシー
-
-- Microsoft 365 グループの場所では *、Applications* パラメーターで [Set-RetentionCompliancePolicy PowerShell](/powershell/module/exchange/set-retentioncompliancepolicy)コマンドレットを使用して、保持設定を Microsoft 365 メールボックスまたは接続された SharePoint サイトに適用できます。
-
-### <a name="sensitivity-labels"></a>秘密度ラベル
-
-Outlookと更新プログラム:
-
-- [既定のラベルと必須のラベル付けの](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling) 設定が、組み込みのラベル付けでサポートされています。 以前は、これらの設定は AIP 統合ラベル 付けクライアントでのみサポートされました。
-- [暗号化のみは](encryption-sensitivity-labels.md#let-users-assign-permissions) 、macOS、iOS、Android でサポートされています。
-- [必須のラベル付](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents) けは、残りのプラットフォームに展開されます。
-- [すべての変数を含む動的なマーキングは](sensitivity-labels-office-apps.md#dynamic-markings-with-variables)、すべてのクライアントでOutlookされます。
-
