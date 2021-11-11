@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ユーザーが Microsoft 製品について Microsoft に送信できるフィードバックについて説明します。
-ms.openlocfilehash: 85eb9d9360026aaa7eb19c626c90f985a12af582
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b276c82687481267a9c1de3a1261786bf2027254
+ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60161536"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60907829"
 ---
 # <a name="learn-about-microsoft-feedback-for-your-organization"></a>組織の Microsoft フィードバックの詳細
 
@@ -31,6 +31,9 @@ ms.locfileid: "60161536"
 このトピックでは、存在するフィードバックの種類、収集方法、収集内容、およびデータの処理方法に関する情報を確認できます。
 
 管理者は、組織のフィードバック信号を管理できます。 新しいポリシー設定のセットが導入され、組織のアプリケーション内でユーザー フィードバック コレクションMicrosoft 365管理できます。 これらのポリシー設定は、組織のAzure Active Directoryグループをターゲットにし、フィードバック コレクション エクスペリエンスを構成するのに役立ちます。 ユーザーからのフィードバックは、エンジニアに直接送信され、すべてのユーザーの Microsoft 製品とサービスの未来を形作るのに役立ちます。 これらのポリシー設定、適用するアプリケーション、およびベスト プラクティスの詳細については、「組織の Microsoft フィードバックの管理」 [を参照してください](../manage/manage-feedback-ms-org.md)。
+
+<!--> [!IMPORTANT]
+> 信頼できるソースからフィードバックが送信されるのを確認することをお勧めします。 ユーザー名またはユーザー ID が組織内の実際のユーザーと一致しているか確認します。-->
 
 ## <a name="feedback-types"></a>フィードバックの種類
 
@@ -50,7 +53,13 @@ ms.locfileid: "60161536"
 
 :::image type="content" source="../../media/feedback-love.png" alt-text="スクリーンショット: 製品内フィードバック要求の例":::
 
-:::image type="content" source="../../media/feedback-excel.png" alt-text="スクリーンショット: 製品内フィードバック要求の例":::
+:::image type="content" source="../../media/feedback-excel.png" alt-text="スクリーンショット: 製品内のフィードバック要求Excel例":::
+
+### <a name="community-feedback"></a>Communityフィードバック
+
+ユーザーは、新しい Microsoft フィードバック[ポータルを利用](https://feedbackportal.microsoft.com/feedback/)して、すべての製品のパブリック コミュニティ フォーラムにMicrosoft 365できます。 新しいフィードバック ポータルを使用すると、ユーザーは一般に送信されたフィードバックを閲覧およびアップヴォットし、サポートされている製品に対して新しいパブリック コミュニティフィードバックを提出できます。 既知のフィードバック項目の上位は、新しいポータルで引き続き利用できます。 このポータルは、ユーザーが Microsoft の公式応答を追跡し、提出したフィードバックについて Microsoft と関わる新しい応答キャンバスです。
+
+:::image type="content" source="../../media/community-feedback1.png" alt-text="スクリーンショット: Microsoft Teams フィードバック ポータル ページ":::
 
 ## <a name="what-kind-of-feedback-is-best"></a>どのような種類のフィードバックが最適ですか?
 

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: コンプライアンス センターに新しいソリューションを追加する場合、フィードバックに基づいて既存の機能を更新する場合、新しく更新されたドキュメントを展開する場合でも、Microsoft 365 を使用すると、変化し続けるコンプライアンス環境の上に立ち続けるのに役立ちます。 今月までの予定を確認します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 2beb65d3f5d73265df72b1d052dec0d1a9c6e512
-ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
+ms.openlocfilehash: 694a066efa35743206aaff8a1169014a266164b8
+ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60478567"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60907791"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 コンプライアンス センターの新機能
 
@@ -80,7 +80,7 @@ Microsoft 365 コンプライアンス センター に新しいソリューシ�
 
 ### <a name="information-barriers"></a>情報バリア
 
-- [情報バリア モードの情報バリア](information-barriers-policies.md#step-6-information-barriers-modes-preview) の新しいプレビュー機能の使用を開始する
+- [情報バリア モードの情報バリア](information-barriers-policies.md#step-6-information-barriers-modes) の新しいプレビュー機能の使用を開始する
 - [情報バリア モードMicrosoft Teams](/microsoftteams/information-barriers-in-teams)新しいプレビュー機能を備える情報バリア
 - [情報バリア モードOneDrive](/onedrive/information-barriers)新しいプレビュー機能を備える情報バリア
 - [情報バリア モードSharePointオンライン](/sharepoint/information-barriers)の新しいプレビュー機能を使用した情報バリア

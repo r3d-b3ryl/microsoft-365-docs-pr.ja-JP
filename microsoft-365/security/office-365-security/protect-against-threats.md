@@ -20,12 +20,12 @@ description: 管理者は、組織の脅威保護Microsoft 365、組織で使用
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e761962f737d717bef42773169fbe9c9c180c7ef
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 86bfbc2f25d6c03acd9f95a3c4b475240532d153
+ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199443"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60907971"
 ---
 # <a name="protect-against-threats"></a>脅威から保護する
 
@@ -43,7 +43,7 @@ ms.locfileid: "60199443"
 >
 > Defender for Office 365のほとんどのポリシーの手動構成をスキップするには、Standard レベルまたは Strict レベルで事前設定されたセキュリティ ポリシーを使用できます。 詳細については、「EOP でのセキュリティ ポリシーの事前設定」および[「Microsoft Defender for microsoft Defender for Office 365」 を参照してください](preset-security-policies.md)。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>Requirements
 
 ### <a name="subscriptions"></a>サブスクリプション
 
@@ -75,7 +75,7 @@ ms.locfileid: "60199443"
 |役割または役割グループ|詳細については、次の情報を参照してください。|
 |---|---|
 |グローバル管理者|[Microsoft 365 管理者ロールについて](../../admin/add-users/about-admin-roles.md)|
-|セキュリティ管理者|[Azure AD組み込みロール](/azure/active-directory/roles/permissions-reference#security-administrator)
+|セキュリティ管理者|[Azure AD組み込みの役割](/azure/active-directory/roles/permissions-reference#security-administrator)
 |Exchange Online 組織の管理|[Exchange Online のアクセス許可](/exchange/permissions-exo/permissions-exo)|
 |
 
@@ -97,7 +97,7 @@ ms.locfileid: "60199443"
    - **[保護の設定** ] セクション:
      - **共通の添付ファイル フィルターを有効にする**: 選択 (オン) します。 [ファイル **の種類のカスタマイズ] を** クリックして、ファイルの種類を追加します。
      - **マルウェアに対して 0 時間自動削除を有効にする**: この設定が選択されているのを確認します。 マルウェアの ZAP の詳細については、「 [マルウェアのゼロ時間自動削除 (ZAP)」を参照してください](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-for-malware)。
-   - **検疫ポリシー**: 既定値 AdminOnlyAccessPolicy を選択したままにします。 検疫ポリシーは、検疫されたメッセージに対してユーザーが実行できる操作を定義します。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。
+   - **検疫ポリシー**: 既定値 AdminOnlyAccessPolicy を選択したままにします。 検疫ポリシーは、検疫されたメッセージに対してユーザーが実行できる操作と、ユーザーが検疫通知を受け取るかどうかを定義します。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。
    - **[通知** ] セクション: 通知設定が選択されなかからなか確認します。
 
    完了したら、**[保存]** をクリックします。
@@ -225,7 +225,7 @@ ms.locfileid: "60199443"
    - **[ユーザーとドメイン**] ページ: これは最初のポリシーであり、カバレッジを最大化する必要がある可能性が高いので [](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)、[ドメイン] ボックスに受け入れドメインを入力する **必要** があります。 それ以外の場合は、[ **ユーザー** とグループ] **ボックスを使用** して、より詳細な制御を行います。 [これらのユーザー、グループ、ドメインを除外する] を選択し、値を入力することで **、例外を** 指定できます。
    - **設定** ページ:
      - **セーフ添付ファイル不明のマルウェア応答**: [ブロック] を **選択します**。
-     - **検疫ポリシー**: 既定値は空白で、AdminOnlyAccessPolicy ポリシーが使用されます。 検疫ポリシーは、検疫されたメッセージに対してユーザーが実行できる操作を定義します。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。
+     - **検疫ポリシー**: 既定値は空白で、AdminOnlyAccessPolicy ポリシーが使用されます。 検疫ポリシーは、検疫されたメッセージに対してユーザーが実行できる操作と、ユーザーが検疫通知を受け取るかどうかを定義します。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。
      - **検出された添付ファイルを含む添付ファイル** を **リダイレクトする:** リダイレクトを有効にする : この設定をオン (選択) し、検出されたメッセージを受信する電子メール アドレスを入力します。
      - **スキャンが完了できないセーフ添付** ファイル検出応答を適用します (タイムアウトまたはエラー) : この設定が選択されているのを確認します。
 

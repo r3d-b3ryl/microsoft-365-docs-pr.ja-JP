@@ -18,12 +18,12 @@ ms.custom:
 description: 管理者は、Microsoft 365 E5 または Microsoft Defender for Office 365 プラン 2 組織の攻撃シミュレーションとトレーニングに関する展開に関する考慮事項とよく寄せられる質問について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 75b85c637382e2fc508b4c48459d1409b02ec922
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 380241d44f667a845c47f85062d877192e1a7802
+ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60704136"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60907995"
 ---
 # <a name="attack-simulation-training-deployment-considerations-and-faq"></a>攻撃シミュレーション トレーニングの展開に関する考慮事項と FAQ
 
@@ -49,7 +49,7 @@ URL レピュテーション サービスは、攻撃シミュレーション �
 
 ### <a name="phishing-simulation-and-admin-urls-blocked-by-network-proxy-solutions-and-filter-drivers"></a>ネットワーク プロキシ ソリューションとフィルター ドライバーによってブロックされるフィッシング シミュレーションと管理 URL
 
-フィッシング シミュレーション URL と管理 URL の両方が、中間セキュリティ デバイスまたはフィルターによってブロックまたは削除される可能性があります。 例:
+フィッシング シミュレーション URL と管理 URL の両方が、中間セキュリティ デバイスまたはフィルターによってブロックまたは削除される可能性があります。 以下に例を示します。
 
 - ファイアウォール
 - Web アプリケーション ファイアウォール (WAF) ソリューション
@@ -116,7 +116,7 @@ URL レピュテーション サービスは、攻撃シミュレーション �
 
 ### <a name="messages-reported-as-phishing-by-users-arent-appearing-in-simulation-reports"></a>ユーザーがフィッシングとして報告したメッセージがシミュレーション レポートに表示されない
 
-攻撃シミュレーター トレーニングのシミュレーション レポートでは、ユーザーのアクティビティに関する詳細を提供します。 例:
+攻撃シミュレーター トレーニングのシミュレーション レポートでは、ユーザーのアクティビティに関する詳細を提供します。 以下に例を示します。
 
 - メッセージ内のリンクをクリックしたユーザー。
 - 資格情報を渡したユーザー。
@@ -152,7 +152,7 @@ A: CSV ファイルから受信者をインポートするか、個々の受信�
 
 ### <a name="q-does-microsoft-provide-payloads-in-other-languages"></a>Q: Microsoft は他の言語でペイロードを提供していますか?
 
-A: 現在、5 つのローカライズされたペイロードを使用できます。 既存のペイロードを他の言語に直接翻訳または機械翻訳すると、不正確で関連性が低下する可能性があります。
+A: 現在、40 以上のローカライズされたペイロードは、中国語 (簡体字)、中国語 (繁体字)、英語、フランス語、ドイツ語、イタリア語、日本語、韓国語、ポルトガル語、ロシア語、スペイン語、オランダ語の 10 以上の言語で利用できます。 既存のペイロードを他の言語に直接翻訳または機械翻訳すると、不正確で関連性が低下する可能性があります。
 
 つまり、カスタム ペイロードの作成エクスペリエンスを使用して、選択した言語で独自のペイロードを作成できます。 また、特定の地域のユーザーをターゲットにするために使用された既存のペイロードを収集することを強く推奨します。 つまり、攻撃者がコンテンツをローカライズします。
 

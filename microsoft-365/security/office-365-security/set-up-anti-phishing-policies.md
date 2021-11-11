@@ -17,12 +17,12 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) と Microsoft Defender で使用できるフィッシング対策ポリシーについてOffice 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2628fcd5b53a8f73e471fd17512a790bc6b98fc6
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: d4e0cb56d6aad0b26bea145439b806080982dfe5
+ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554890"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60907933"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>アプリ内のフィッシング対策Microsoft 365
 
@@ -119,7 +119,7 @@ EOP および Defender のフィッシング対策ポリシーでは、次のス
     - [検疫済みメッセージとファイルを管理者として管理Microsoft 365](manage-quarantined-messages-and-files.md)
     - [検疫済みメッセージをユーザーとして検索して解放Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
-    [メッセージの **検疫] を選択した** 場合は、スプーフィング インテリジェンス保護によって検疫されたメッセージに適用される検疫ポリシーを選択することもできます。 検疫ポリシーは、検疫されたメッセージに対してユーザーが実行できる操作を定義します。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。
+    [メッセージの **検疫] を選択した** 場合は、スプーフィング インテリジェンス保護によって検疫されたメッセージに適用される検疫ポリシーを選択することもできます。 検疫ポリシーは、検疫されたメッセージに対してユーザーが実行できる操作と、ユーザーが検疫通知を受け取るかどうかを定義します。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。
 
 ### <a name="unauthenticated-sender"></a>認証されていない送信者
 
@@ -228,7 +228,7 @@ EOP および Defender のフィッシング対策ポリシーでは、次のス
   - **アクションを適用** しない : この値は、メールボックス インテリジェンスをオンにしたが[インテリジェンス偽装保護を有効にする] をオフにした場合と同じ結果 **になります**。
   - **メッセージを他の電子メール アドレスにリダイレクトする**
   - **受信者の迷惑メール フォルダーにメッセージを移動する**
-  - **メッセージを検疫する**: このアクションを選択した場合は、メールボックス インテリジェンス保護によって検疫されるメッセージに適用される検疫ポリシーを選択することもできます。 検疫ポリシーは、検疫されたメッセージに対してユーザーが実行できる操作を定義します。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。
+  - **メッセージを検疫する**: このアクションを選択した場合は、メールボックス インテリジェンス保護によって検疫されるメッセージに適用される検疫ポリシーを選択することもできます。 検疫ポリシーは、検疫されたメッセージに対してユーザーが実行できる操作と、ユーザーが検疫通知を受け取るかどうかを定義します。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。
   - **メッセージを配信し、他のアドレスを Bcc 行に追加する**
   - **配信前にメッセージを削除する**
 

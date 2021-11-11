@@ -18,12 +18,12 @@ description: メール内の悪意のあるファイルセーフ組織を保護�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1cc31f00045173202d6404a81b64fdaab791e0c5
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 3ae702417d34351c99ccbd8432c2fc29f11a433f
+ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60702167"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60907940"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender セーフの添付ファイル ポリシーをセットアップOffice 365
 
@@ -60,7 +60,7 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- <https://security.microsoft.com> で Microsoft 365 Defender ポータルを開きます。 [添付ファイル] ページに **直接移動セーフを** 使用します <https://security.microsoft.com/safeattachmentv2> 。
+- <https://security.microsoft.com> で Microsoft 365 Defender ポータルを開きます。 **[安全な添付ファイル]** ページに直接移動するには、<https://security.microsoft.com/safeattachmentv2> を使用します。
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
@@ -70,7 +70,7 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
 
   詳細については、「Microsoft 365 Defender[](permissions-microsoft-365-security-center.md)ポータルのアクセス許可」および「Exchange Online」[を参照してください](/exchange/permissions-exo/permissions-exo)。
 
-  **注意**:
+  **注**:
 
   - Microsoft 365 管理センター の対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 Defender ポータルで必要なアクセス許可と、Microsoft 365の他の機能に対するアクセス許可が付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
   - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
@@ -119,7 +119,7 @@ Microsoft 365 Defender ポータルでカスタム セーフ 添付ファイル 
 
      これらの値については、「添付ファイルポリシー[セーフ」で説明します](safe-attachments.md#safe-attachments-policy-settings)。
 
-   - **検疫ポリシー**: [添付ファイル] ([ブロック]、[置換]、または [動的配信]) によって検疫セーフに適用される検疫ポリシー **を選択します**。  検疫ポリシーは、検疫されたメッセージに対してユーザーが実行できる操作を定義します。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。
+   - **検疫ポリシー**: [添付ファイル] ([ブロック]、[置換]、または [動的配信]) によって検疫セーフに適用される検疫ポリシー **を選択します**。  検疫ポリシーは、検疫されたメッセージに対してユーザーが実行できる操作と、ユーザーが検疫通知を受け取るかどうかを定義します。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。
 
      空白の値は、既定の検疫ポリシーが使用セーフします。 [添付ファイル] ポリシーを後セーフ編集するか、設定を表示すると、既定の検疫ポリシー名が表示されます。
 
@@ -156,7 +156,7 @@ Microsoft 365 Defender ポータルでカスタム セーフ 添付ファイル 
 
 3. 表示されるポリシーの詳細ポップアップで、各セクションで **[編集]** を選択して、そのセクション内の設定を変更することができます。 設定の詳細については、この記事の前[](#use-the-microsoft-365-defender-portal-to-create-safe-attachments-policies)の「Microsoft 365 Defenderを使用して添付セーフポリシーを作成する」を参照してください。
 
-ポリシーを有効または無効にするか、ポリシーの優先順位を設定するには、次のセクションを参照してください。
+ポリシーを有効または無効にするか、ポリシーの優先順位を設定するには、次のセクションをご覧ください。
 
 ### <a name="enable-or-disable-safe-attachments-policies"></a>添付ファイル ポリシーのセーフまたは無効にする
 
@@ -226,7 +226,7 @@ PowerShell でセーフ添付ファイル ポリシーを作成するには、�
 1. 安全な添付ファイル ポリシーを作成します。
 2. ルールが適用される安全な添付ファイル ポリシーを指定する安全な添付ファイル ルールを作成します。
 
- **注意**:
+ **注**:
 
 - 新しい安全な添付ファイル ルールを作成し、関連付けされていない既存の安全な添付ファイル ポリシーを割り当てできます。 安全な添付ファイル ルールを複数の安全な添付ファイル ポリシーに関連付けできない。
 

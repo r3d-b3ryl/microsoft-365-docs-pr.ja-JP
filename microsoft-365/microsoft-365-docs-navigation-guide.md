@@ -11,12 +11,12 @@ author: samanro
 ms.author: samanro
 manager: pamgreen
 ms.collection: Adm_TOC
-ms.openlocfilehash: 4e1b03d0424a7d1007e972c6d571fb12560da81f
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: c2c7c73b4f49ab5d8b76b8a7574f900f414d1d1f
+ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59934025"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60907911"
 ---
 # <a name="microsoft-365-docs-navigation-guide"></a>Microsoft 365ドキュメントのナビゲーション ガイド
 
@@ -29,14 +29,6 @@ ms.locfileid: "59934025"
 技術ドキュメント セット内のすべてのページの上部にあるヘッダー  Microsoft 365を選択すると、常にこのページMicrosoft 365移動できます。
 
 ![Microsoft 365ヘッダーに表示されます。](media/m365-header-cursor.png)
-
-## <a name="offline-documentation"></a>オフラインドキュメント
-
-オフライン システムでドキュメントをMicrosoft 365する場合は、技術ドキュメントのどこにいても PDF をMicrosoft 365できます。
-
-PDF を作成する場合は、すべての目次の下部にある **[PDF** のダウンロード] リンクを選択します。
-
-![PDF をダウンロードします。](media/m365-download-pdf-cursor.png)
 
 ## <a name="toc-search"></a>TOC 検索 
 この docs.microsoft.com 上部にあるフィルター検索ボックスを使用して、目次内のコンテンツを検索できます。

@@ -18,12 +18,12 @@ description: 管理者は、Exchange Online Protection (EOP) によってメッ�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0b82826cf650caffa08c0c7435ea4cabf5a19742
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8eaf567e4cbceae66a5acd1fa1a45565f15a4804
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208987"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60884003"
 ---
 # <a name="anti-spam-message-headers-in-microsoft-365"></a>Microsoft 365 のスパム対策メッセージ ヘッダー
 
@@ -85,7 +85,7 @@ ms.locfileid: "60208987"
 |`SFV:SKQ`|メッセージは検疫から解放され、目的の受信者に送信されました。|
 |`SFV:SKS`|メッセージは、スパム フィルタリングによって処理される前にスパムとしてマークされました。たとえば、メッセージは、メール フロー ルールによって SCL 5 から 9 としてマークされました。|
 |`SFV:SPM`|スパム フィルタリングによって、メッセージがスパムとしてマークされました。|
-|`SRV:BULK`|メッセージは、スパムフィルタリングおよび Bulk Complaint Level (BCL) のしきい値により、バルク メールとして識別されました。 _MarkAsSpamBulkMail_ パラメーターが `On` の場合 (既定はオン)、バルク メール メッセージは高確度迷惑メール (SCL 9) としてマークされます。 詳細については、「[スパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。|
+|`SRV:BULK`|メッセージは、スパムフィルタリングおよび Bulk Complaint Level (BCL) のしきい値により、バルク メールとして識別されました。 _MarkAsSpamBulkMail_ パラメーターが `On` の場合 (既定はオン)、バルク メール メッセージは迷惑メール (SCL 6) としてマークされます。 詳細については、「[スパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。|
 |`X-CustomSpam: [ASFOption]`|メッセージは高度なスパム フィルター (ASF) の設定と一致しました。 各 ASF 設定の X ヘッダーの値を確認するには、「[高度なスパム フィルター (ASF) の設定](advanced-spam-filtering-asf-options.md)」を参照してください。|
 |
 

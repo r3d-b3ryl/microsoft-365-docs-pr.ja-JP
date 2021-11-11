@@ -15,12 +15,12 @@ ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ec745f46790ee6d230266f010a9311e1cebb12cc
-ms.sourcegitcommit: 6d470e37b2a1c40c7f31c2365ae654a3c35d7674
+ms.openlocfilehash: 1a9b6a4000b6d96fa8fe60b3abc60ff01676073e
+ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60834104"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60907815"
 ---
 # <a name="get-started-with-information-barriers"></a>情報バリアの使用を開始する
 
@@ -51,7 +51,7 @@ ms.locfileid: "60834104"
 | **手順 3:**[情報バリア ポリシーを定義する](#step-3-define-information-barrier-policies) | - ポリシーを定義する (まだ適用しない)<br/>- 2 つの種類から選択します (ブロックまたは許可) |
 | **手順 4:**[情報バリア ポリシーを適用する](#step-4-apply-information-barrier-policies) | - ポリシーをアクティブな状態に設定する<br/>- ポリシー アプリケーションを実行する<br/>- ポリシーの状態を表示する |
 | **手順 5**:[ユーザーとユーザーの情報SharePointのOneDrive構成 (オプション)](#step-5-configuration-for-information-barriers-on-sharepoint-and-onedrive) | - ユーザーとユーザーの情報バリアSharePoint構成OneDrive |
-| **手順 6**: [情報バリア モード (オプション)](#step-6-information-barriers-modes-preview) | - 該当する場合は情報バリア モードを更新する |
+| **手順 6**: [情報バリア モード (オプション)](#step-6-information-barriers-modes) | - 該当する場合は情報バリア モードを更新する |
 
 ## <a name="step-1-make-sure-prerequisites-are-met"></a>手順 1: 前提条件が満たされていることを確認する
 
@@ -279,7 +279,7 @@ PowerShell を使用すると、次の表に示すユーザー アカウント�
 
 SharePoint および OneDriveで情報バリアを有効にするには、「情報バリアを使用して情報バリアを使用する」の[SharePointしてください。](/sharepoint/information-barriers)
 
-## <a name="step-6-information-barriers-modes-preview"></a>手順 6: 情報バリア モード (プレビュー)
+## <a name="step-6-information-barriers-modes"></a>手順 6: 情報バリア モード
 
 モードは、リソースの IB モードに基づいて、Microsoft 365リソースのアクセス、共有、およびメンバーシップを強化するのに役立ちます。 モードは、Microsoft 365 グループ、Microsoft Teams、OneDrive、SharePoint サイトでサポートされ、新規または既存の IB 構成で自動的に有効になります。
 
@@ -288,7 +288,7 @@ SharePoint および OneDriveで情報バリアを有効にするには、「情
 | **Mode** | **Description** | **例** |
 |:-----|:------------|:--------|
 | **開く** | リソースに関連付けられている IB ポリシーやセグメントMicrosoft 365行う必要があります。 誰でもリソースのメンバーに招待できます。 | 組織のピクニック イベント用に作成されたチーム サイト。 |
-| **所有者モデ評価** | リソースの IB ポリシー Microsoft 365、リソース所有者の IB ポリシーによって決まります。 リソース所有者は、IB ポリシーに基づいて任意のユーザーをリソースに招待できます。 このモードは、会社が所有者がモデ管理している互換性のないセグメント ユーザー間のコラボレーションを許可する場合に便利です。 リソース所有者だけが、IB ポリシーごとに新しいメンバーを追加できます。 | 人事担当の VP は、営業調査の VP と共同作業を行う必要があります。 同じサイトSharePoint販売セグメントユーザーとリサーチ セグメント ユーザーの両方を追加するために IB モードの所有者モデ評価で設定された新しいサイト。 適切なメンバーがリソースに追加されるのは、所有者の責任です。 |
+| **所有者モデ評価 (プレビュー)** | リソースの IB ポリシー Microsoft 365、リソース所有者の IB ポリシーによって決まります。 リソース所有者は、IB ポリシーに基づいて任意のユーザーをリソースに招待できます。 このモードは、会社が所有者がモデ管理している互換性のないセグメント ユーザー間のコラボレーションを許可する場合に便利です。 リソース所有者だけが、IB ポリシーごとに新しいメンバーを追加できます。 | 人事担当の VP は、営業調査の VP と共同作業を行う必要があります。 同じサイトSharePoint販売セグメントユーザーとリサーチ セグメント ユーザーの両方を追加するために IB モードの所有者モデ評価で設定された新しいサイト。 適切なメンバーがリソースに追加されるのは、所有者の責任です。 |
 | **暗黙的** | リソースの IB ポリシーまたはセグメントMicrosoft 365、リソース メンバーの IB ポリシーから継承されます。 所有者は、リソースの既存のメンバーと互換性がある限り、メンバーを追加できます。 これは、アプリケーションの既定の IB モードMicrosoft Teams。 | Sales セグメント のユーザーは、組織内Microsoft Teams互換性のあるセグメントと共同作業を行うチームを作成します。 |
 | **Explicit** | リソースの IB ポリシーはMicrosoft 365に関連付けられたセグメントごとに適用されます。 リソースの所有者またはSharePoint管理者は、リソース上のセグメントを管理できます。  | Sales セグメントをサイトに関連付け、Sales セグメントのメンバーだけが共同作業するために作成したサイト。   |
 
@@ -350,7 +350,7 @@ Contoso は、次の表で示すように 3 つのポリシーを定義します
 
 コマンドレットが終了すると、Contoso は法的および業界の要件に準拠しています。
 
-## <a name="resources"></a>関連情報
+## <a name="resources"></a>リソース
 
 - [情報バリアの概要を取得する](information-barriers.md)
 - [詳細については、Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams)

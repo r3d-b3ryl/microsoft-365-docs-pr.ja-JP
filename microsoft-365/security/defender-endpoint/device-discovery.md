@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 09492c81135c9859b683e2d042e8e4a99cc94c83
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 95f20e1e5ac3c623decb131929d3c27164f3a96b
+ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882179"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60908007"
 ---
 # <a name="device-discovery-overview"></a>デバイス検出の概要
 
@@ -47,6 +47,12 @@ Microsoft Defender for Endpoint は、デバイス検出機能を提供し、追
 - **オンボードで検出されたエンドポイント**
 
   ネットワーク内の管理されていないエンドポイントは、ネットワークに脆弱性とリスクを導入します。 サービスにオンボーディングすると、セキュリティの可視性が向上します。
+
+
+デバイスの検出方法の概要については、次のビデオをご覧ください。
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWORdQ]
+
 
 この機能と組み合わせて、Microsoft Defender for Endpoint にデバイスをオンボードする新しいセキュリティ推奨事項は、既存の脅威と脆弱性管理エクスペリエンスの一環として利用できます。
 
