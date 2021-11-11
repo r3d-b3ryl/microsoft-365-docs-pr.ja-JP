@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: デスクトップ アプリで共同編集と自動保存を有効にする設定をオンにして、SharePoint、OneDrive でドキュメントのラベル付けと暗号化が行えます。
-ms.openlocfilehash: 64d4239eeda905d9b0d924804bed6795b7ca5673
-ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
+ms.openlocfilehash: 5e9bb144330a00f5806f41ae986d7fe3f78d7165
+ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2021
-ms.locfileid: "60804895"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60899596"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>機密度ラベルを使用して暗号化されたファイルの共同編集を有効にする
 
@@ -74,7 +74,7 @@ Office デスクトップ アプリの共同編集をサポートする設定を
 - テナントに対して、[SharePoint、OneDrive で Office ファイル](sensitivity-labels-sharepoint-onedrive-files.md) への秘密度レベルを有効にする必要があります。 この機能が有効になっていない場合、秘密度レベルがあるファイルへの共同編集を有効にする設定を選択すると、自動的に有効になります。
 
 - Microsoft 365 Apps for enterprise:
-    - **Windows**: 最小バージョン 2107
+    - **Windows**: 現在のチャネルまたは月次チャネルからの最小バージョン Enterprise 2107
     - **macOS**: 最小バージョン 16.51
     - **iOS**: まだサポートされていません
     - **Android**: まだサポートされていません

@@ -20,12 +20,12 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: Teams のゲストとのタスク、会話、ドキュメントの共同作業を行うためチームをセットアップするのに必要な Microsoft 365 の構成手順について説明します。
-ms.openlocfilehash: 3c5d5689f676e6fecc6c0251df6ee90f54398238
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4128f6cd5293972dd7383eed0802f7969f488d8a
+ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60169385"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60899644"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>チームでゲストと共同作業する
 
@@ -53,7 +53,7 @@ B2B 外部コラボレーションの設定をチェックして、ゲストと�
 2. 左側のナビゲーション ウィンドウで **[Azure Active Directory]** をクリックします。
 3. **[外部 ID]** をクリックします。
 4. **[開始]** 画面で、左側のナビゲーション ウィンドウで **[外部コラボレーション設定]** をクリックします。
-5. **[メンバー ユーザーおよび特定の管理者の役割に割り当てられたユーザーが、メンバー権限を持つゲストを含むゲスト ユーザーを招待できる]** が選択されていることを確認します。
+5. 特定の **管理者ロールに割り当てられたメンバー ユーザーとユーザーが、メンバーアクセス許可を持つゲストを含むゲスト ユーザーを招待できるか**、**組織内のユーザーがゲストを含むゲスト ユーザーを招待し、管理者以外のユーザー** を招待できます。
 6. 変更を加えた場合は、**[保存]** をクリックします。
 
 **[共同作業の制限]** セクションの設定に注意してください。 共同作業するゲストのドメインがブロックされていないことを確認します。
