@@ -4,8 +4,8 @@ description: 評価モードOffice 365 Defender は、マルウェアなどのOf
 keywords: 評価Office 365、Microsoft Defender for Office 365、office 365 評価、try office 365、Microsoft Defender、Microsoft Defender for Endpoint
 f1.keywords:
 - NOCSH
-ms.author: dansimp
-author: dansimp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 ms.date: 04/21/2021
 audience: ITPro
@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6baa78512b102bae74a242e243c2e4ac023aa4f2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7ba60d7b9f677c653bb2d57760989aeb18a4a1e6
+ms.sourcegitcommit: 6dbf879f769a825ed7039363f3a91d676e355ee0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60149595"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940550"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 を評価する
 
@@ -46,11 +46,11 @@ microsoft Defender for Office 365 をサポートするライセンスをまだ�
 
 評価モードOffice 365 Defender は、マルウェアなどのOffice 365をログに記録するが、メッセージに対して動作しない電子メール ポリシー用の Defender を作成します。 MX レコードの構成を変更する必要はありません。
 
-評価モードでは [、セーフ 、セーフ](safe-attachments.md) [リンク](safe-links.md)、メールボックス インテリジェンス ベース [](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)の偽装ポリシーが代理で設定されます。 すべての Defender for Office 365ポリシーはバックグラウンドで強制不可モードで作成され、表示されません。
+評価モードでは [、セーフポリシー](safe-attachments.md)セーフ [添付](safe-links.md)ファイル、セーフリンク、およびメールボックス [](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)インテリジェンスを使用してセットアップされます。 すべての Defender for Office 365ポリシーはバックグラウンドで強制不可モードで作成され、表示されません。
 
-セットアップの一環として、評価モードではコネクタの [拡張フィルターも構成します](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。 IP アドレスと送信者情報を保持することで、フィルターの精度が向上します。それ以外の場合、メールが Defender for Office 365 の前にあるメール セキュリティ ゲートウェイ (ESG) を通過すると失われます。 また、コネクタのフィルター機能が強化され、既存のスパム対策 (EOP) Exchange Online Protectionフィッシング対策ポリシーのフィルタリング精度も向上します。
+セットアップの一環として、評価モードではコネクタの  [拡張](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) フィルター (スキップ リストとも呼ばれる) _も構成されます_。 IP アドレスと送信者情報を保持することで、フィルターの精度が向上します。それ以外の場合、メールが Defender for Office 365 の前にあるメール セキュリティ ゲートウェイ (ESG) を通過すると失われます。 また、コネクタのフィルター機能が強化され、既存のスパム対策 (EOP) Exchange Online Protectionフィッシング対策ポリシーのフィルタリング精度も向上します。
 
-拡張コネクタのフィルター処理は、フィルター処理の精度が向上しますが、Office 365 の Defender の前に ESG を持ち、現在 EOP フィルター処理をバイパスしていない場合は、特定のメッセージの配信可能性が変わる可能性があります。 影響は EOP ポリシーに制限されます。評価のOffice 365設定されたポリシーの Defender は、強制以外のモードで作成されます。 潜在的な運用への影響を最小限に抑えるために、メール フロー ルール (トランスポート ルールとも呼ばれる) を作成して、メッセージのスパム信頼レベル (SCL) を -1 に設定することで、すべての EOP フィルターをバイパスできます。 詳細[については、「メール フロー ルールを使用して、](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)メッセージ内のスパム信頼レベル (SCL) を設定するExchange Online   参照してください。
+拡張コネクタのフィルター処理は、フィルター処理の精度が向上しますが、Office 365 の Defender の前に ESG を持ち、現在 EOP フィルター処理をバイパスしていない場合は、特定のメッセージの配信可能性が変わる可能性があります。 影響は EOP ポリシーに制限されます。評価のOffice 365設定されたポリシーの Defender は、強制以外のモードで作成されます。 潜在的な運用への影響を最小限に抑えるために、メール フロー ルール (トランスポート ルールとも呼ばれる) を作成して、メッセージのスパム信頼レベル (SCL) を -1 に設定することで、ほとんどの EOP フィルターをバイパスできます。 詳細[については、「メール フロー ルールを使用して、](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)メッセージ内のスパム信頼レベル (SCL) を設定するExchange Online   参照してください。
 
 評価モードが設定されている場合、ポリシーが実装された場合にブロックされたメッセージを定量化する最大 90 日間のデータを含むレポートが毎日更新されます (たとえば、削除、迷惑メールへの送信、検疫など)。 レポートは、すべての Defender に対して、Office 365 EOP 検出用に生成されます。 これらは検出テクノロジ (偽装など) ごとに集計され、時間範囲でフィルター処理できます。 さらに、メッセージ レポートをオンデマンドで作成してカスタム ピボットを作成したり、エクスプローラーを使用して詳細なメッセージを作成することもできます。
 
@@ -91,6 +91,10 @@ Microsoft Defender for microsoft Defender for Office 365を取得するには、
 
 次の役割が必要です。
 
+<br>
+
+****
+
 |タスク|ロール (Exchange Online)|
 |---|---|
 |無料試用版を取得するか、Microsoft Defender for Office 365購入する (プラン 2)|課金管理者ロールまたはグローバル管理者ロール|
@@ -100,11 +104,11 @@ Microsoft Defender for microsoft Defender for Office 365を取得するには、
 |評価レポートの表示|セキュリティ管理者の役割またはセキュリティ 閲覧者の役割|
 |
 
-### <a name="enhanced-filtering"></a>拡張フィルター
+### <a name="enhanced-filtering-for-connectors"></a>コネクタのフィルター処理の強化
 
-バルクExchange Online Protectionスパム保護など、ユーザーのポリシーは同じままです。 ただし、この評価ではコネクタの拡張フィルター処理が有効にされ、バイパスしない限り、メール フローやポリシー Exchange Online Protection影響を与える可能性があります。
+バルクExchange Online Protectionスパム保護など、ユーザーのポリシーは同じままです。 ただし、この評価ではコネクタの拡張フィルター処理が有効になっています。これは、バイパスしない限り、メール フローやExchange Online Protectionに影響を与える可能性があります。
 
-コネクタのフィルター処理が強化され、テナントはスプーフィング防止保護を使用できます。 コネクタの拡張フィルターを有効にせずにメール セキュリティ ゲートウェイ (ESG) を使用している場合、スプーフィング対策はサポートされません。
+コネクタの拡張フィルターを使用すると、テナントはスプーフィング防止保護を使用できます。 コネクタの拡張フィルターを有効にせずにメール セキュリティ ゲートウェイ (ESG) を使用している場合、スプーフィング対策はサポートされません。
 
 ### <a name="urls"></a>URL
 
@@ -132,7 +136,7 @@ URL はメール フロー中にデトナ処理されます。 特定の URL を
 - Mimecast
 - Proofpoint
 - Sophos
-- シマンテック
+- Symantec
 - Trend Micro
 
 ### <a name="scoping"></a>スコープ

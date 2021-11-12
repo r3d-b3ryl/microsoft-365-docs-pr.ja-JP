@@ -9,17 +9,17 @@ audience: ITPro
 ms.topic: overview
 ms.date: 10/29/2021
 ms.prod: m365-security
-ms.technology: mdep1
+ms.technology: mde
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 4881d1ca4d8b6ca12dbb7c6c273328e515a503ac
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: e49ab3b0cfcdf32bd152b7f2a8cc2b3dd7986665
+ms.sourcegitcommit: 6dbf879f769a825ed7039363f3a91d676e355ee0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60704878"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940562"
 ---
 # <a name="overview-of-microsoft-defender-for-endpoint-plan-1-preview"></a>Microsoft Defender for Endpoint Plan 1 の概要 (プレビュー)
 
@@ -77,10 +77,10 @@ Defender for Endpoint Plan 1 (プレビュー) には、次の機能が含まれ
 
 | ファイル/デバイス | アクション | 説明 |
 |:---|:---|:---|
-| デバイス | ウイルス対策スキャンの実行 | ウイルス対策スキャンを開始します。 デバイスで脅威が検出された場合、ウイルス対策スキャン中にこれらの脅威に対処する場合が多い。 |
-| デバイス | デバイスの分離 | Defender for Endpoint への接続を維持しながら、組織のネットワークからデバイスを切断します。 このアクションを使用すると、デバイスを監視し、必要に応じてさらにアクションを実行できます。 |
-| File | 停止と検疫 |プロセスの実行を停止し、関連ファイルを検疫します。 |
-| File | ファイルをブロックまたは許可するインジケーターを追加する | ブロックインジケーターは、ポータブル実行可能ファイルがデバイスで読み取り、書き込み、または実行されるのを防ぐ。 <p>許可インジケーターは、ファイルがブロックまたは修復されるのを防ぐ。 |
+| Device | ウイルス対策スキャンの実行 | ウイルス対策スキャンを開始します。 デバイスで脅威が検出された場合、ウイルス対策スキャン中にこれらの脅威に対処する場合が多い。 |
+| Device | デバイスの分離 | Defender for Endpoint への接続を維持しながら、組織のネットワークからデバイスを切断します。 このアクションを使用すると、デバイスを監視し、必要に応じてさらにアクションを実行できます。 |
+| ファイル | 停止と検疫 |プロセスの実行を停止し、関連ファイルを検疫します。 |
+| ファイル | ファイルをブロックまたは許可するインジケーターを追加する | ブロックインジケーターは、ポータブル実行可能ファイルがデバイスで読み取り、書き込み、または実行されるのを防ぐ。 <p>許可インジケーターは、ファイルがブロックまたは修復されるのを防ぐ。 |
 
 詳細については、次の記事を参照してください。
 
@@ -168,7 +168,7 @@ Defender for Endpoint Plan 1 (プレビュー) には Microsoft 365 Defender ポ
 
 詳細については、「役割ベースのアクセス [制御を使用してポータル アクセスを管理する」を参照してください](rbac.md)。
 
-### <a name="reporting"></a>Reporting
+### <a name="reporting"></a>レポート
 
 このMicrosoft 365 Defenderポータル ( ) は、検出された脅威に関する情報や、それらの脅威に対処するアクション [https://security.microsoft.com](https://security.microsoft.com) に簡単にアクセスできます。 
 

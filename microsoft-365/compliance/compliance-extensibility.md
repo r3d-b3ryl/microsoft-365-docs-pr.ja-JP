@@ -20,12 +20,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: サード パーティ製のデータ Microsoft 365 API を使用してコンプライアンス ソリューションを拡張する方法Graph説明します。
-ms.openlocfilehash: 04bffeb43a001ab94ffb96504b64ffbf4bf566c5
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 0957cb0f874964740697516a1cd8a37a2f8dca27
+ms.sourcegitcommit: 6dbf879f769a825ed7039363f3a91d676e355ee0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555370"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940736"
 ---
 # <a name="microsoft-365-compliance-extensibility"></a>Microsoft 365の拡張性
 
@@ -49,7 +49,7 @@ Microsoft は、サード パーティ製のデータ コネクタを提供し�
 
 Microsoft のパートナー Microsoft 365 コンプライアンス センター提供されるデータ コネクタの場合、コネクタを展開する前に、組織はパートナーとのビジネス関係を必要とします。
 
-サード パーティ製データ コネクタのライセンス要件については、「コンプライアンス ライセンス[Microsoft 365」を参照](/office365/servicedescriptions/downloads/microsoft-365-compliance-licensing-comparison.xlsx)してください。
+サード パーティ製データ コネクタのライセンス要件については、「Microsoft 365 ライセンス ガイダンス」の「データ コネクタ」セクションを参照&[してください](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#data-connectors)。
 
 ## <a name="apis"></a>API
 
@@ -83,7 +83,7 @@ DLP のライセンス要件については、「セキュリティTeamsコン�
 
 [Advanced eDiscovery](overview-ediscovery-20.md)を使用すると、組織は、データが Microsoft 365 のセキュリティとコンプライアンスの境界内にとどまっている間、関連するセットに対するデータを削減するために、インテリジェントな機械学習と分析機能を使用して、データが保存されているデータを検出し、より多くのエンドツーエンドの電子情報開示ワークフローを管理できます。
 
-Graphカスタム クエリAdvanced eDiscovery API を使用して、ケースの作成と管理、セットの確認、およびセット クエリのレビューを、スケーラブルで繰り返し可能な方法で行えます。 これにより、顧客とパートナーはアプリとワークフローを作成して、ケースの作成や保管担当者や法的ホールドの管理など、一般的で繰り返しのプロセスを自動化できます。
+Graph API Advanced eDiscoveryを使用して、ケースの作成と管理、セットのレビュー、およびセット クエリのレビューを、スケーラブルで繰り返し可能な方法で行えます。 これにより、顧客とパートナーはアプリとワークフローを作成して、ケースの作成や保管担当者や法的ホールドの管理など、一般的で繰り返しのプロセスを自動化できます。
 
 電子情報開示用のGraph API の最初のセットは、パブリック プレビューで使用できます。 暦年の終わりまでに、より多くの機能を追加する予定です。 これらの API と他の更新プログラムの詳細については、Advanced eDiscoveryブログを参照[してください](https://aka.ms/Ignite2020AeDAA)。
 
@@ -98,4 +98,3 @@ Enterprise情報アーカイブ (EIA) Microsoft Teamsは、規制要件を解決
 ### <a name="microsoft-graph-connector-apis-preview"></a>Microsoft Graph コネクタ API (プレビュー)
 
 [Microsoft Graphコネクタを使用](/microsoftsearch/connectors-overview)すると、組織はサードパーティのデータをインデックス化して、そのデータが結果にMicrosoft Searchできます。 この機能は、Microsoft 365 の生産性向上アプリと Microsoft の広範なエコシステムで検索可能な、コンテンツ ソースの種類を拡大しています。 サード パーティのデータは、オンプレミスまたはパブリック クラウドまたはプライベート クラウドでホストできます。 このAdvanced eDiscovery、接続されたアプリに組み込みのコンプライアンス値を開発者Microsoft 365しています。 これにより、シームレスなコンプライアンス エクスペリエンスをユーザーに提供Microsoft 365エコシステムに統合するアプリのコンプライアンスが可能となります。 Microsoft Graph コネクタ API をアプリ ビューに組み込む方法の詳細については、「Microsoft Graph で接続を作成、更新、および削除する」[を参照してください](/graph/search-index-manage-connections)。
-

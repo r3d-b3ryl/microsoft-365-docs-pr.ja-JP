@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理者は、Word、Excel、および PowerPoint ファイルのSharePointラベルのOneDrive。
-ms.openlocfilehash: e95b4287fba3994c1e2a3515a038af4f36970202
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a2e2a4ea4e018e9e5eaeedae709b761a63c591be
+ms.sourcegitcommit: 6dbf879f769a825ed7039363f3a91d676e355ee0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60151040"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940762"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>SharePoint および OneDrive で Office ファイルの秘密度ラベルを有効にする
 
@@ -65,7 +65,7 @@ SharePoint および OneDrive の Office ファイルの感度ラベルを有効
 
 SharePoint Information Rights Management (IRM) を使用して SharePoint でドキュメントを現在保護している場合は、このページの SharePoint Information [Rights Management (IRM)](#sharepoint-information-rights-management-irm-and-sensitivity-labels)と感度ラベルセクションを確認してください。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>Requirements
 
 これらの新機能は、感度ラベル [でのみ機能](sensitivity-labels.md) します。 現在 Azure Information Protection ラベルがある場合は、アップロードする新しいファイルに対してこれらの機能を有効にできるよう、最初にラベルを感度ラベルに移行します。 手順については、、「[Azure Information Protection ラベルを統合秘密度ラベルに移行する方法](/azure/information-protection/configure-policy-migrate-labels)」を参照してください。
 
@@ -99,9 +99,9 @@ Windows では OneDrive 同期 アプリ バージョン 19.002.0121.0008 以降
 
 - ユーザーは、次の [名前を付けて保存] シナリオで暗号化されたドキュメントを開くのに遅延が発生する可能性があります。 Office のデスクトップ バージョンを使用すると、暗号化を適用する感度ラベルを持つドキュメントに対して [名前を付けて保存] を選択します。 ユーザーは、SharePointまたはOneDriveを選択し、そのドキュメントをすぐに開Office for the web。 サービスが引き続き暗号化を処理している場合、ユーザーはデスクトップ アプリでドキュメントを開く必要があるというメッセージを表示します。 数分後にもう一度やり直す場合は、ドキュメントが正常に開Office for the web。
 
-- 暗号化されたドキュメントの場合、印刷はサポートされていません。
+- 暗号化されたドキュメントの場合、印刷は暗号化されたドキュメントではOffice for the web。
 
-- ユーザーに編集アクセス許可を付与する暗号化されたドキュメントの場合、コピーは Web バージョンのアプリでブロックOfficeできません。
+- ドキュメント内の暗号化Office for the webクリップボードと画面キャプチャへのコピーは防止されません。 詳細については、「Can [Rights Management prevent screen captures」を参照してください。](/azure/information-protection/faqs-rms#can-rights-management-prevent-screen-captures)
 
 - 既定では、Officeアプリとモバイル アプリは、暗号化でラベル付けされたファイルの共同編集をサポートしません。 これらのアプリは、ラベル付きファイルと暗号化されたファイルを排他的編集モードで引き続き開きます。
     
@@ -118,8 +118,6 @@ Windows では OneDrive 同期 アプリ バージョン 19.002.0121.0008 以降
   - たとえば、Rights Management 保護テンプレートを直接適用することによって、ラベルから個別に適用された暗号化。
 
 - 他の言語 [用に構成されたラベル](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-center-powershell) はサポートされていません。元の言語のみを表示します。
-
-- 暗号化されたドキュメントでは、画面キャプチャを防止できません。 詳細については、「Can [Rights Management prevent screen captures」を参照してください。](/azure/information-protection/faqs-rms#can-rights-management-prevent-screen-captures)
 
 - SharePoint または OneDrive のドキュメントに適用されているラベルを削除した場合、該当するラベル ポリシーからラベルを削除する代わりに、ダウンロードしたドキュメントにはラベルや暗号化は適用されません。 一方、ラベル付きドキュメントが SharePoint または OneDrive の外部に保存されている場合、ラベルが削除された場合、ドキュメントは暗号化されたままです。 テスト フェーズ中にラベルを削除する場合があるが、実稼働環境でラベルを削除する場合は非常にまれです。
 
@@ -198,7 +196,7 @@ SharePoint と OneDrive で感度ラベルを使用する場合は、新しい�
 
 レプリケーションの遅延は新しい感度ラベルの場合は 1 時間だけなので、この例ではシナリオを実行する可能性は低いと考えられます。 ただし、安全対策として、最初に数人のテスト ユーザーに新しいラベルを発行し、1 時間待ち、SharePoint と OneDrive でラベルの動作を確認することをお勧めします。 最後の手順として、既存のラベル ポリシーにユーザーを追加するか、標準ユーザーの既存のラベル ポリシーにラベルを追加して、より多くのユーザーがラベルを使用できます。 標準ユーザーにラベルが表示された時点で、ラベルは既にユーザーとSharePoint同期OneDrive。
 
-## <a name="sharepoint-information-rights-management-irm-and-sensitivity-labels"></a>SharePointInformation Rights Management (IRM) と感度ラベル
+## <a name="sharepoint-information-rights-management-irm-and-sensitivity-labels"></a>SharePoint権限管理 (IRM) と感度ラベル
 
 [SharePoint Information Rights Management (IRM)](set-up-irm-in-sp-admin-center.md)は、ファイルのダウンロード時に暗号化と制限を適用して、リストおよびライブラリ レベルのファイルを保護する古いテクノロジです。 この古い保護テクノロジは、権限のないユーザーがファイルを開く際にファイルが外部にある間に開かSharePoint。
 
@@ -251,7 +249,7 @@ InformationProtectionLabelId:8faca7b8-8d20-48a3-8ea2-0f96310a848e
 
 代わりに、グローバル管理者または[SharePoint](/sharepoint/sharepoint-admin-role)管理者は[Unlock-SPOSensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile)コマンドレットを実行して、感度ラベルと暗号化の両方を削除できます。 このコマンドレットは、管理者がサイトまたはファイルへのアクセス許可を持っていなくても、Azure Rights Management サービスが利用できない場合でも実行されます。
 
-次に例を示します。
+以下に例を示します。
 
 ```powershell
 Unlock-SPOSensitivityLabelEncryptedFile -FileUrl "https://contoso.com/sites/Marketing/Shared Documents/Doc1.docx" -JustificationText "Need to decrypt this file"
@@ -259,7 +257,7 @@ Unlock-SPOSensitivityLabelEncryptedFile -FileUrl "https://contoso.com/sites/Mark
 
 要件:
 
-- SharePointオンライン管理シェル バージョン 16.0.20616.12000 以降。
+- SharePoint管理シェル バージョン 16.0.20616.12000 以降。
 
 - 暗号化は、管理者が定義した暗号化設定 ([アクセス許可の割り当て] ラベル設定) を持つ感度ラベル [によって](encryption-sensitivity-labels.md#assign-permissions-now) 適用されています。 [このコマンドレットでは](encryption-sensitivity-labels.md#double-key-encryption) 、ダブル キー暗号化はサポートされていません。
 

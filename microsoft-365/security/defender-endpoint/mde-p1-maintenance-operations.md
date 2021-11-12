@@ -9,17 +9,17 @@ audience: ITPro
 ms.topic: overview
 ms.date: 09/13/2021
 ms.prod: m365-security
-ms.technology: mdep1
+ms.technology: mde
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 298f63a0df664cada6cf6d2a67a06770b66ea6ea
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 792b5c6f3fa077a4856631d95a68a8fa538778e1
+ms.sourcegitcommit: 6dbf879f769a825ed7039363f3a91d676e355ee0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60194119"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940397"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-plan-1-preview"></a>Microsoft Defender for Endpoint Plan 1 の管理 (プレビュー)
 
