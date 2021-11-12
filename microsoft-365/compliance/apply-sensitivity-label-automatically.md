@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを作成する場合、ファイルまたはメールにラベルを自動的に割り当てるか、あるいは推奨するラベルを選択するようにユーザーに求めることができます。
-ms.openlocfilehash: 2574ad8c9a42c5646bda770a0c5a310548ddc88e
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 8d45308bc9bb4562cc82417ddb8ed762d8ac65b1
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883759"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60914286"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>秘密度ラベルをコンテンツに自動的に適用する
 
@@ -151,7 +151,7 @@ DLP ポリシーを構成する場合と同様に、インスタンス数と一�
 
 #### <a name="custom-sensitive-information-types-with-exact-data-match"></a>Exact Data Match によるカスタムの機密情報の種類
 
-秘密度ラベルは、カスタムの機密情報の種類に [Exact Data Match (EDM) ベースの分類](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) を使用するように構成できます。 ただし、現時点では、EDM を使用しない機密情報の種類を少なくとも 1 つ指定する必要があります。 たとえば、**クレジット カード番号** など、組み込みの機密情報の種類のうちの 1 つ。
+秘密度ラベルを構成して、カスタムの機密情報の種類に [Exact Data Match による機密情報の種類](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types) を使用できます。 ただし、現時点では、EDM を使用しない機密情報の種類を少なくとも 1 つ指定する必要があります。 たとえば、**クレジット カード番号** など、組み込みの機密情報の種類のうちの 1 つ。
 
 機密情報の種類の条件に対して EDM のみを使用して秘密度ラベルを構成した場合、ラベルの自動ラベル付け設定は自動的にオフになります。
 

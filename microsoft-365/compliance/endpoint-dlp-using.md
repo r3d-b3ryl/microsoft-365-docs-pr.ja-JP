@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 365 エンドポイント データ損失防止 (EPDLP) の場所を使用するようにデータ損失防止 (DLP) ポリシーを構成する方法を説明します。
-ms.openlocfilehash: 898acf4e74f6aadb79bf5dfb7e3fc751d6286ecb
-ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
+ms.openlocfilehash: b354e578c40845a89b7bb837854f6dd7fa5bb4d3
+ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "60792390"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60907803"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>エンドポイント データ損失防止の使用
 
@@ -54,6 +54,12 @@ ms.locfileid: "60792390"
 高度な分類では、コンテンツはスキャンと分類のためにローカル デバイスからクラウド サービスに送信されます。 帯域幅の使用率が懸念される場合は、このグローバル設定で、24 時間のローリングで使用できる量に関して、デバイスごとに適用される制限を設定できます。 帯域幅使用率の制限を設定し、それを超えた場合、DLP はユーザー コンテンツのクラウドへの送信を停止し、データ分類はデバイス上でローカルに続行されます。 累積帯域幅使用率がローリング 24 時間の制限を下回ると、クラウド サービスとの通信が再開されます。
 
 帯域幅の使用率が問題でない場合は、制限を設定することはできず、無制限の使用率を許可することになります。
+
+これらの Windows バージョンは、高度な分類スキャンと保護をサポートしています。
+
+- Windows 10 バージョン 20H1/20H2/21H1 (KB 5006738)
+- Windows 10 バージョン 19H1/19H2 (KB 5007189)
+- Windows 10 RS5 (KB 5006744)
 
 > [!NOTE]
 > DLP ポリシーの評価は、ユーザー コンテンツが送信されていない場合でも、常にクラウドで行われます。
