@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-viva-learning
 localization_priority: medium
 description: Udemy を学習コンテンツ ソースとして構成する方法についてMicrosoft Viva ラーニング。
-ms.openlocfilehash: f5cbb140d2bf76fdf03eba5de0e09ad70fbf4afb
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: ea015d6ee0ec1890d56b6f40f928fe96ea44ccbc
+ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883900"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60950583"
 ---
 # <a name="configure-udemy-as-a-content-source-for-microsoft-viva-learning"></a>Udemy をコンテンツ ソースとして構成Microsoft Viva ラーニング
 
@@ -80,6 +80,3 @@ ms.locfileid: "60883900"
     - **クライアント シークレット**: これは、手順 4 の Udemy ポータルから収集されたクライアント シークレットです。
 
 4. [**保存] を** 選択して、ユーザー設定で Udemy Microsoft Viva ラーニング。 コンテンツがビバ で利用可能になるには、最大で 24 時間かかる場合ラーニング。
-
->[!NOTE]
->テナント のメタデータは、データ ストアに集中して格納され、地域固有のデータ ストアには格納されません。

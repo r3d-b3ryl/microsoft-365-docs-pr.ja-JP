@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-viva-learning
 localization_priority: medium
 description: スキルソフトを学習コンテンツ ソースとして構成する方法については、Microsoft Viva ラーニング。
-ms.openlocfilehash: dd01f6e36ec9c9f0c15b1769f24a13359b2177f7
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: ddf2079f799ef9dc9a39547ce8c73c779494632b
+ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60703861"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60950751"
 ---
 # <a name="configure-skillsoft-as-a-content-source-for-microsoft-viva-learning"></a>スキルソフトをコンテンツ ソースとして構成Microsoft Viva ラーニング
 
@@ -31,9 +31,9 @@ ms.locfileid: "60703861"
 
 ## <a name="configure-in-your-skillsoft-portal"></a>Skillsoft ポータルで構成する
 
-Viva アカウントの統合を有効にするには、Skillsoft アカウント チームにラーニングがあります。 アカウント チームは、組織 ID とサービス アカウント キーも提供します。 次の手順では、これらを必要とします。
+Viva アカウントの統合を有効にするには、Skillsoft アカウント チームにラーニングがあります。 アカウント チームは、組織 ID とサービス アカウント キーも提供します。 次の手順では、これらの詳細が必要です。
 
-アカウント チームと連絡を取る方法については [、Skillsoft](https://support.skillsoft.com/percipio/) サポートにお問い合わせください。 まだ顧客ではない場合は、Skillsoft に直接問い合わせ [、オプションについて話し合います](https://www.skillsoft.com/about/contact-us)。
+アカウント チームと連絡を取る方法については [、Skillsoft](https://support.skillsoft.com/percipio/) サポートにお問い合わせください。 まだ顧客でない場合は [、Skillsoft](https://www.skillsoft.com/about/contact-us) に直接問い合わせ、オプションについて話し合います。
 
 ## <a name="configure-in-your-microsoft-365-admin-center"></a>サーバーで構成Microsoft 365 管理センター
 
@@ -47,6 +47,3 @@ Viva アカウントの統合を有効にするには、Skillsoft アカウン�
 3. Skillsoft アカウント チームから取得した構成の詳細を入力します。
 
 4. [ **保存] を** 選択して構成の詳細を保存し、セットアップ プロセスを完了します。
-
->[!NOTE]
->テナント のメタデータは、データ ストアに集中して格納され、地域固有のデータ ストアには格納されません。

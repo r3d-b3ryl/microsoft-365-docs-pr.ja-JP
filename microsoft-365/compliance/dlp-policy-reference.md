@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: DLP ポリシー コンポーネントと構成リファレンス
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: ebf088126b89a94dbae2def79ec9dcc380627b75
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: fbd6ffa3f0e9167c98d6e950a971254e7c21a988
+ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60702775"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60950715"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>データ損失防止ポリシーリファレンス
 
@@ -43,7 +43,7 @@ DLP ポリシー テンプレートは、次の 4 つのカテゴリに事前に
 
 更新日: 2021/06/23
 
-|Category| テンプレート | SIT |
+|カテゴリ| テンプレート | SIT |
 |---------|---------|---------|
 |財務的| オーストラリアの金融データ| - [SWIFT コード](sensitive-information-type-entity-definitions.md#swift-code) </br> - [オーストラリアの税ファイル番号](sensitive-information-type-entity-definitions.md#australia-tax-file-number) </br> - [オーストラリアの銀行口座番号](sensitive-information-type-entity-definitions.md#australia-bank-account-number) </br> - [クレジット カード番号](sensitive-information-type-entity-definitions.md#credit-card-number)|
 |財務的| カナダ 財務データ |- [クレジット カード番号](sensitive-information-type-entity-definitions.md#credit-card-number) </br> -  [カナダの銀行口座番号](sensitive-information-type-entity-definitions.md#canada-bank-account-number)|
@@ -109,7 +109,7 @@ DLP ポリシーは、複数の場所にわたって機密情報を含むアイ�
 |OneDrive for Business アカウント| アカウントまたは配布グループ |data-at-rest </br> data-in-use|いいえ|
 |Teams チャットおよびチャネル メッセージ     | アカウントまたは配布グループ |data-in-motion </br> data-in-use |  いいえ       |
 |Microsoft Cloud App Security (MCAS)   | クラウド アプリ インスタンス       |data-at-rest         | - [Microsoft 以外のクラウド アプリでデータ損失防止ポリシーを使用する](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
-|デバイス  |ユーザーまたはグループ         |data-at-rest </br>  data-in-use </br>  data-in-motion         |- [エンドポイントデータ損失Microsoft 365の詳細](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention) </br>- [エンドポイントのデータ損失防止の使用を開始する](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention) </br>- [エンドポイント DLP のデバイス プロキシとインターネット接続の設定を構成する](endpoint-dlp-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-endpoint-dlp)        |
+|デバイス  |ユーザーまたはグループ         |data-at-rest </br>  data-in-use </br>  data-in-motion         |- [エンドポイントデータ損失Microsoft 365の詳細](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention) </br>- [エンドポイントのデータ損失防止の使用を開始する](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention) </br>- [情報保護のデバイス プロキシとインターネット接続の設定を構成する](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
 |オンプレミスリポジトリ (ファイル共有とSharePoint)    |リポジトリ         | data-at-rest         | - [データ損失防止Microsoft 365オンプレミス スキャナーの詳細](dlp-on-premises-scanner-learn.md#learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner) </br> - [データ損失防止オンプレミス スキャナーの使用を開始する](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
 
 Exchange に特定の配布グループを含めるように選択した場合、DLP ポリシーはそのグループのメンバーにのみ適用されます。 同様に、配布グループを除外すると、その配布グループのすべてのメンバーがポリシー評価から除外されます。 ポリシーを配布リストのメンバー、動的配布グループ、セキュリティ グループの範囲にすることができます。 DLP ポリシーには、このような追加および除外を 50 個まで含めることができます。
@@ -130,7 +130,7 @@ DLP ポリシーは、機密情報の種類 (SIT)、機密ラベル、または�
 |Exchangeメールをオンラインで送信する|はい| はい|    いいえ|
 |SharePointサイト|   はい|    はい|    はい|
 |OneDrive for Business アカウント|    はい|    はい|    はい|
-|Teamsチャットメッセージとチャネル メッセージ |  はい|    いいえ| いいえ|
+|Teamsおよびチャネル メッセージ |  はい|    いいえ| いいえ|
 |デバイス    |はい |  はい|    いいえ|
 |Microsoft Cloud App Security|  はい|    はい|    はい|
 |オンプレミス リポジトリ|  はい|    はい|    いいえ|
@@ -325,7 +325,7 @@ SIT には事前に定義された信頼 [**度が設定されています**](ht
 
 - **コンテンツが含** まれている場合を除く 
 
-### <a name="actions"></a>Actions 
+### <a name="actions"></a>操作 
 
 包括的な ***conditions** _ および排他例外 _**_ フィルターを介してそれを行 _**_ うアイテムには、ルールで定義されているアクションが適用されます。 アクションをサポートするために必要なオプションを構成する必要があります。 たとえば、[アクセスを制限する] Exchangeを使用して [アクセスを制限する] を選択するか、Microsoft 365 *場所のコンテンツ* を暗号化する * アクションを選択する場合は、次のオプションから選択する必要があります。
 
@@ -363,7 +363,7 @@ SIT には事前に定義された信頼 [**度が設定されています**](ht
 
 - アクセスを制限するか、または場所内のコンテンツMicrosoft 365する
 
-#### <a name="teams-chat-and-channel-messages"></a>Teamsチャットメッセージとチャネル メッセージ
+#### <a name="teams-chat-and-channel-messages"></a>Teamsおよびチャネル メッセージ
 
 - アクセスを制限するか、または場所内のコンテンツMicrosoft 365する
 

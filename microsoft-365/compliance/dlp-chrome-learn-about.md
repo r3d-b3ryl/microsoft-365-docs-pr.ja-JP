@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft Compliance Extension は、ファイル アクティビティの監視と制御、および保護措置を Google Chrome ブラウザーに拡張します。
-ms.openlocfilehash: ff0df602e68338315becabd0c5b65f981fe4dd43
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e41343f14e799f354906361fe88f6a99dba12908
+ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60179189"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60950667"
 ---
 # <a name="learn-about-the-microsoft-compliance-extension"></a>Microsoft Compliance Extension の詳細情報
 
@@ -46,7 +46,7 @@ Microsoft Compliance Extension を使用すると、Windows 10 を実行して�
 
 ## <a name="deployment-process"></a>展開プロセス
 1. [エンドポイント データ損失防止を開始する](endpoint-dlp-getting-started.md)
-2. [Windows 10 デバイスのオンボード ツールと各種方法](dlp-configure-endpoints.md)
+2. [Windows 10 デバイスのオンボード ツールと各種方法](device-onboarding-overview.md)
 3. [Windows 10 デバイスに拡張機能をインストール](dlp-chrome-get-started.md)
 4. クラウド サービスへのアップロードや許可されていないブラウザーからのアクセスを制限する [DLP ポリシーを作成または編集](create-test-tune-dlp-policy.md)し、Windows 10 デバイスに適用します。
 

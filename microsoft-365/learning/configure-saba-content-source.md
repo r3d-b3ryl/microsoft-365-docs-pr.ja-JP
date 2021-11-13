@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-viva-learning
 localization_priority: medium
 description: サーバーの学習コンテンツ ソースとして Saba を構成するMicrosoft Viva ラーニング。
-ms.openlocfilehash: 1f8c9610d9c1e747af6e0804bbd7c133de4351cf
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: cb13822e2f4a0a2eccf31e2c03f2ac5e109dd843
+ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60755795"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60950499"
 ---
 # <a name="configure-saba-as-a-content-source-for-microsoft-viva-learning"></a>サーバーのコンテンツ ソースとして Saba を構成Microsoft Viva ラーニング
 
@@ -68,9 +68,6 @@ ms.locfileid: "60755795"
 
 > [!Note]
 > Saba Cloud 統合では、ホスト URL に sabacloud.com ドメインが必要です。 ドメイン名が異なる場合は、ドメイン名を許可するためにサポート チケットを引き上げる必要があります。
-
->[!NOTE]
->テナント のメタデータは、データ ストアに集中して格納され、地域固有のデータ ストアには格納されません。
 
 >[!NOTE]
 >現在、組織内のすべてのユーザーは、テナント固有のすべてのコースを検出できますが、アクセスできるコースのみを使用できます。 ロールとアクセス許可に基づくユーザー固有のコンテンツ検出は、今後のリリースに向け計画されています。
