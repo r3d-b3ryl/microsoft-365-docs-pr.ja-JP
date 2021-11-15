@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: データ分類ダッシュボードを使用すると、組織内で検出、分類された機密データの量を確認できます。
-ms.openlocfilehash: 2e9d9a2581a5a2dd94dbfa32e3105486999f4b6b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 67ceb75fd5062e422121588f7830fcd389202cb5
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60153128"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60914538"
 ---
 # <a name="learn-about-data-classification"></a>データ分類について
 
@@ -39,7 +39,7 @@ Microsoft 365 の管理者またはコンプライアンス管理者は、組織
 
 - [トレーニング可能な分類子](classifier-learn-about.md)
 - [機密情報の種類](sensitive-information-type-learn-about.md)
-- [完全に一致するデータ](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [完全なデータ一致に基づく機密情報の種類の詳細](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 - [コンテンツ エクスプローラー](data-classification-content-explorer.md)
 - [アクティビティ エクスプローラー](data-classification-activity-explorer.md)
 

@@ -271,6 +271,7 @@
 #### [攻撃面の減少機能を構成する](configure-attack-surface-reduction.md)
 #### [攻撃面の減少ルールの詳細](attack-surface-reduction.md)
 #### [攻撃面の減少ルール](attack-surface-reduction-rules.md)
+#### [攻撃面の減少ルールを展開する](attack-surface-reduction-rules-deployment.md)
 #### [攻撃面の減少ルールを評価する](evaluate-attack-surface-reduction.md)
 #### [攻撃面の減少ルールを有効にする](enable-attack-surface-reduction.md)
 #### [攻撃面の減少ルールをカスタマイズする](customize-attack-surface-reduction.md)

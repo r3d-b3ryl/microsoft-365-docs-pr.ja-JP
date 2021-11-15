@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 のエンドポイントのデータ損失防止は、ファイル アクティビティの監視と、それらのファイルに対する保護アクションをエンドポイントに拡張します。 コンプライアンス ソリューションでファイルが表示されます '
-ms.openlocfilehash: afe6b7c2454a52428e633bca55e72055308a1f74
-ms.sourcegitcommit: 854f20e8b7d3ef8f4c14cf189560f76056552334
+ms.openlocfilehash: 77f4e4f0312b68941eb4a7421ea0658d925962d9
+ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60825589"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60950703"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Microsoft 365 のエンドポイントのデータ損失防止について説明する
 
@@ -163,8 +163,9 @@ Microsoft Endpoint DLP を使用すると、ユーザーが物理的に Windows 
 
 ここまでエンドポイント DLP について学びましたので、次のステップの手順は以下になります：
 
-1. [Microsoft エンドポイント データ損失防止を開始する](endpoint-dlp-getting-started.md)
-2. [Microsoft エンドポイント データ損失防止を使用する](endpoint-dlp-using.md)
+1. [Windows 10 または Windows 11 デバイスを Microsoft 365 にオンボードする概要](device-onboarding-overview.md)
+1. [Microsoft 365 への macOS デバイスのオンボードに関する概要 (プレビュー)](device-onboarding-macos-overview.md#onboard-macos-devices-into-microsoft-365-overview-preview)
+1. [Microsoft エンドポイント データ損失防止を使用する](endpoint-dlp-using.md)
 
 ## <a name="see-also"></a>関連項目
 

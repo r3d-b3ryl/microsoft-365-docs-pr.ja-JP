@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なコンテンツを保持し不要なコンテンツを削除するのに役立つ、アイテム保持ポリシーと保持ラベルについて説明します。
-ms.openlocfilehash: a66ef59df6f05ec0e03fa5b9388f2fd3e0fd9a58
-ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
+ms.openlocfilehash: a284ec91151028e30af414b85c4fff66658c23e9
+ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "60792570"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60950595"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの詳細
 
@@ -298,6 +298,8 @@ Microsoft 365 コンプライアンス センターから、[**データの分�
 - クエリ ベースのメンバーシップは、部門間の通信に依存するグループ メンバーシップや外部プロセスに確実に反映されない可能性があるビジネスの変更に対する回復性を提供します。
 
 - 1 つの保持ポリシーには、Microsoft Teams と Yammer の両方の場所を含め、静的スコープを使用する場合、これらの場所には独自の保持ポリシーが必要です。
+    
+- 非アクティブなメールボックスのみに特定の保持設定を適用できます。 ポリシーが割り当てられた時点では、静的スコープは非アクティブなメールボックスを持つ受信者の特定の包含をサポートしていないため、この構成は静的スコープでは不可能です。
 
 静的スコープを使用する利点:
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 構成可能な一致を使用するために、完全一致スキーマを変更する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 40f7ef0f538fd79c0e8ff44de32a4bdd72254f7a
-ms.sourcegitcommit: 854f20e8b7d3ef8f4c14cf189560f76056552334
+ms.openlocfilehash: f41dee9b1ca13f319e5dc05fc5f7512bd98a5186
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60825553"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60914466"
 ---
 # <a name="modify-exact-data-match-schema-to-use-configurable-match"></a>構成可能な一致を使用するために完全一致スキーマを変更する
 
@@ -130,7 +130,7 @@ ms.locfileid: "60825553"
 
 ## <a name="related-articles"></a>関連記事
 
-- 詳細については、「[Exact Data Match に基づく分類で、カスタムの機密情報の種類を作成する](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)」を参照してください。
+- [完全なデータ一致に基づく機密情報の種類の詳細](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 - [機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)
 - [カスタムの機密情報の種類](./sensitive-information-type-learn-about.md)
 - [データ損失防止について](dlp-learn-about-dlp.md)

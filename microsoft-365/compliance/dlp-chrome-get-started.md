@@ -20,12 +20,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: Microsoft Compliance Extension の準備と導入。
-ms.openlocfilehash: 1ac08dc558806d47c382db7c3b4a58f43ff3c4f4
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 295e811e6437bb931e1b735725f3c69016cfae8a
+ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60754353"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60950679"
 ---
 # <a name="get-started-with-microsoft-compliance-extension"></a>Microsoft Compliance Extension を開始する
 
@@ -41,8 +41,8 @@ Microsoft Compliance Extension を使用するには、デバイスがエンド�
 - [テンプレートからの DLP ポリシーの作成](create-a-dlp-policy-from-a-template.md)
 - [エンドポイント データ損失防止について](endpoint-dlp-learn-about.md)
 - [エンドポイント データ損失防止の使用を開始する](endpoint-dlp-getting-started.md)
-- [Windows 10 デバイスのオンボード ツールと各種方法](dlp-configure-endpoints.md)
-- [エンドポイント DLP のデバイス プロキシとインターネット接続の構成](endpoint-dlp-configure-proxy.md)
+- [Windows 10 デバイスのオンボード ツールと各種方法](device-onboarding-overview.md)
+- [情報保護のためにデバイス プロキシとインターネット接続の設定を構成する](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection)
 - [エンドポイントのデータ損失防止の使用](endpoint-dlp-using.md)
 
 ### <a name="skusubscriptions-licensing"></a>SKU /サブスクリプション ライセンス
@@ -95,8 +95,8 @@ Microsoft Compliance Extension の展開は、多段階のプロセスです。�
 
 1. これらのトピックの手順を使用して、デバイスをオンボードします。
     1. [エンドポイント データ損失防止の使用を開始する](endpoint-dlp-getting-started.md)
-    1. [Windows 10 デバイスのオンボード ツールと各種方法](dlp-configure-endpoints.md)
-    1. [エンドポイント DLP のデバイス プロキシとインターネット接続の構成](endpoint-dlp-configure-proxy.md)
+    1. [Windows 10 および Windows 11 デバイスのオンボード](device-onboarding-overview.md)
+    1. [情報保護のためにデバイス プロキシとインターネット接続の設定を構成する](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection)
 
 ### <a name="basic-setup-single-machine-selfhost"></a>基本的なセットアップ シングル マシンのセルフホスト
 

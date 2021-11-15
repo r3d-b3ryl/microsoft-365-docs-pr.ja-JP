@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なものを保持し、必要でないものを削除するためにラベルを自動的に適用できるように、保持ラベルと自動ラベル付けポリシーを作成します。
-ms.openlocfilehash: 72037127bf0b89c51a1ba73193e43646d84d4b08
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: c84add5ddc1b96d2a5ab3dfd713722522211bfa2
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883699"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60914586"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>保持ラベルを自動的に適用してコンテンツを保持または削除する
 
@@ -181,7 +181,7 @@ SharePoint と OneDrive
 
 ![機密情報の種類によるポリシー テンプレート。](../media/sensitive-info-configuration.png)
 
-機密情報の種類の詳細については、「[機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)」を参照してください。 現在、このシナリオでは、[完全なデータ一致](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)と[ドキュメント フィンガープリンティング](document-fingerprinting.md)はサポートされていません。
+機密情報の種類の詳細については、「[機密情報の種類の詳細](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types)」を参照してください。 現在、このシナリオでは、[完全なデータ一致に基づく機密情報の種類の詳細](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)と[ドキュメント フィンガープリンティング](document-fingerprinting.md)はサポートされていません。
 
 ポリシー テンプレートを選択すると、すべての種類の機密情報を追加または削除したり、信頼度やインスタンス数を変更したりすることができます。以前のスクリーンショットの例では、これらのオプションを変更し、保持ラベルは次の場合にのみ自動的に適用されます。
   

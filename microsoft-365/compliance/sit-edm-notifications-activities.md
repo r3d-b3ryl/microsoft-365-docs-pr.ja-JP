@@ -17,22 +17,25 @@ search.appverid:
 - MET150
 description: Exact Data Match アクティビティの通知を作成する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5dfaf1744d2df82df5598da666937ac3365bf0f3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1033b6cd84f84db65f49f95e008e20eada63ca64
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152900"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60914598"
 ---
 # <a name="create-notifications-for-exact-data-match-activities"></a>Exact Data Match アクティビティの通知を作成する
 
-[Exact Data Match (EDM) を使用してカスタムの機密情報の種類を作成する](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)と、[監査ログ](search-the-audit-log-in-security-and-compliance.md#before-you-search-the-audit-log)に作成されるアクティビティが多数あります。 [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert) PowerShell コマンドレットを使用して、次のアクティビティが発生したときに知らせる通知を作成できます。
+[Exact Data Match (EDM) を使用してカスタムの機密情報の種類を作成する](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)と、[監査ログ](search-the-audit-log-in-security-and-compliance.md#before-you-search-the-audit-log)に作成されるアクティビティが多数あります。 [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert) PowerShell コマンドレットを使用して、次のアクティビティが発生したときに知らせる通知を作成できます。
 
 - CreateSchema
 - EditSchema
 - RemoveSchema
 - UploadDataFailed
 - UploadDataCompleted
+
+> [!NOTE]
+ EDM アクティビティの通知を作成できるのは、World Wide クラウドと GCC クラウドだけです。
 
 ## <a name="pre-requisites"></a>前提条件
 
@@ -71,5 +74,5 @@ DLP ライセンスの詳細については、「[セキュリティとコンプ
 
 ## <a name="related-articles"></a>関連記事
 
-- [Exact Data Match (EDM) によりカスタムの機密情報の種類を作成する](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [完全なデータ一致に基づく機密情報の種類の詳細](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 - [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert)

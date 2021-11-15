@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 ms.custom: admindeeplinkCOMPLIANCE
 description: Microsoft 365 エンドポイントのデータ損失防止を設定して、ファイルアクティビティを監視し、それらのファイルの保護アクションをエンドポイントに実装します。
-ms.openlocfilehash: 1ab4eb4ebd1dbba220ca4fea496b1b9c5ea82f43
-ms.sourcegitcommit: 854f20e8b7d3ef8f4c14cf189560f76056552334
+ms.openlocfilehash: e29db57c42081349064fd690c5c9fcebee0f8045
+ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60825577"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60950655"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>エンドポイント データ損失防止を開始する
 
 Microsoft Endpoint Data Loss Prevention (Endpoint DLP) は、Microsoft 365 サービス全体で機密アイテムを検出して保護する Microsoft 365 Data Loss Prevention (DLP) スイートの機能の一部です。 MicrosoftのすべてのDLP製品の詳細については、「[データ損失防止の概要](dlp-learn-about-dlp.md)」を参照してください。 エンドポイント DLP の詳細については、「[エンドポイント データ損失防止の説明](endpoint-dlp-learn-about.md)」を参照してください。
 
-Microsoft Endpoint DLP では、Windows 10、Windows 11、macOS デバイス *(プレビュー)* Catalina 10.15 以上、を監視できます。 デバイスがオンボードされると、DLP は機密性の高いアイテムが使用および共有されたことを検出します。 これにより、適切に使用および保護されていることを確認し、危険にさらされる可能性のある動作を防止するために必要な可視性と制御を得ることができます。
+Microsoft エンドポイント DLP を使用すると、Catalina 10.15 以降を実行している [オンボードの Windows 10、Windows 11](device-onboarding-overview.md)、および [オンボードの macOS デバイス *(プレビュー)*](device-onboarding-macos-overview.md) を監視できます。 デバイスがオンボードされると、DLP は機密性の高いアイテムが使用および共有されたことを検出します。 これにより、適切に使用および保護されていることを確認し、危険にさらされる可能性のある動作を防止するために必要な可視性と制御を得ることができます。
 
 ## <a name="before-you-begin"></a>はじめに
 
@@ -46,175 +46,216 @@ Endpoint DLP を開始する前に、「[Microsoft 365サブスクリプショ�
 - Microsoft 365 E5 の情報保護とガバナンス
 - Microsoft 365 A5 の情報保護とガバナンス
 
-### <a name="permissions"></a>許可
+ライセンスの詳細については、「[情報保護に関する Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business)」を参照してください
 
-デバイス管理を有効にするには、使用するアカウントが次のいずれかの役割のメンバーでなければなりません。
+### <a name="configure-proxy-on-the-windows-10-or-windows-11-device"></a>Windows 10 または Windows 11 デバイスでプロキシを構成する
 
-- グローバル管理者
-- セキュリティ管理者
-- コンプライアンス管理者
+Windows 10 または Windows 11 デバイスをオンボードしている場合は、デバイスがクラウド DLP サービスと通信できることを確認してください。 詳細については、「[情報保護のためにデバイス プロキシとインターネット接続の設定を構成する](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection)」を参照してください。
 
-カスタムアカウントを使用してデバイス管理設定を表示する場合は、次のいずれかの役割でなければなりません。
+## <a name="windows-10-and-windows-11-onboarding-procedures"></a>Windows 10 および Windows 11 のオンボード手順
 
-- グローバル管理者
-- コンプライアンス管理者
-- コンプライアンスデータ管理者
-- グローバルリーダー
+Windows デバイスのオンボードの一般的な概要については、以下を参照してください。
 
-カスタムアカウントを使用してオンボーディング/オフボーディングページにアクセスする場合は、次のいずれかの役割でなければなりません。
+- [Windows 10 および Windows 11 デバイスを Microsoft 365 にオンボードする概要](device-onboarding-overview.md#onboard-windows-10-and-windows-11-devices-into-microsoft-365-overview)
 
-- グローバル管理者
-- コンプライアンス管理者
+Windows デバイスのオンボードに関する具体的なガイダンスについては、以下を参照してください。
 
-カスタムアカウントを使用してデバイスの監視をオン/オフにする場合は、次のいずれかの役割でなければなりません。
+トピック | 説明
+:---|:---
+[グループ ポリシーを使用して Windows 10 または 11 デバイスをオンボードする](device-onboarding-gp.md) | グループ ポリシーを使用して構成パッケージをデバイスに展開します。
+[Microsoft Endpoint Configuration Manager を使用した Windows 10 または 11 デバイスのオンボード](device-onboarding-sccm.md) | Microsoft Endpoint Configuration Manager (現在のブランチ) バージョン 1606 または Microsoft Endpoint Configuration Manager (現在のブランチ) バージョン 1602 以前のいずれかを使用して、構成パッケージをデバイスに展開できます。
+[モバイル デバイス管理ツールを使用した Windows 10 または 11 デバイスのオンボード](device-onboarding-mdm.md) | モバイル デバイス管理ツールまたは Microsoft Intune を使用して、構成パッケージをデバイスに展開します。
+[ローカル スクリプトを使用した Windows 10 または 11 デバイスのオンボード](device-onboarding-script.md) | ローカル スクリプトを使用してエンドポイントに構成パッケージを展開する方法について説明します。
+[非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード](device-onboarding-vdi.md) | 構成パッケージを使用して VDI デバイスを構成する方法について説明します。
 
-- グローバル管理者
-- コンプライアンス管理者
+## <a name="macos-onboarding-procedures"></a>macOS のオンボード手順
 
-Endpoint DLP からのデータは、[Activity エクスプローラー](data-classification-activity-explorer.md)で表示します。 Activity エクスプローラーに権限を付与する役割は4つあります。データへのアクセスに使用するアカウントは、次のいずれかのメンバーでなければなりません。
+macOS デバイスのオンボードの一般的な概要については、以下を参照してください。
+ 
+- [Microsoft 365 への macOS デバイスのオンボードに関する概要 (プレビュー)](device-onboarding-macos-overview.md#onboard-macos-devices-into-microsoft-365-overview-preview)
 
-- グローバル管理者
-- コンプライアンス管理者
-- セキュリティ管理者
-- コンプライアンスデータ管理者
+macOS デバイスのオンボードに関する具体的なガイダンスについては、以下を参照してください。
 
-### <a name="prepare-your-windows-1011-endpoints"></a>Windows 10/11 エンドポイントを準備する
+トピック | 説明
+:---|:---
+|[Intune を使用した Microsoft 365 コンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)](device-onboarding-offboarding-macos-intune.md#onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-intune-preview)|Intune を通じて管理される macOS デバイスの場合
+|[Microsoft Defender for Endpoint のお客様向け Intune を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)](device-onboarding-offboarding-macos-intune-mde.md#onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers-preview) |Intune を通じて管理され、Microsoft Defender for Endpoint (MDE) が展開されている macOS デバイスの場合
+|[JAMF Pro を使用した Microsoft 365 コンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)](device-onboarding-offboarding-macos-jamfpro.md#onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-jamf-pro-preview) | JAMF Pro を通じて管理される macOS デバイスの場合
+|[Microsoft Defender for Endpoint のお客様向け JAMF Pro を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)](device-onboarding-offboarding-macos-jamfpro-mde.md#onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers-preview)|JAMF Pro を通じて管理され、Microsoft Defender for Endpoint (MDE) が展開されている macOS デバイスの場合
 
-Endpoint DLP を展開する予定の Windows デバイスが、それらの要件を満たしているか、確認してください。
+デバイスがオンボードされると、デバイス リストに表示され、アクティビティ エクスプローラーへの監査アクティビティのレポートも開始されます。
 
-1. Windows 10 x64 ビルド 1809、Windows 11 以降が動作している必要があります。
+<!--### Permissions
 
-1. マルウェア対策クライアントのバージョンは 4.18.2009.7 以降です。 Windows セキュリティ アプリを開いて現在のバージョンを確認し、[設定] アイコンを選択して、[バージョン情報] を選択します。 バージョン番号は、マルウェア対策クライアントのバージョンの下に表示されます。 Windows Update KB4052623 をインストールして、最新のマルウェア対策クライアントのバージョンに更新します。
+To enable device management, the account you use must be a member of any one of these roles:
 
-   > [!NOTE]
-   > 注: Windows セキュリティ コンポーネントはいずれもアクティブである必要はなく、Windows セキュリティの状態に関係なくエンドポイント DLP を実行できますが、[リアルタイム保護と動作の監視](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)) を有効にする必要があります。
+- Global admin
+- Security admin
+- Compliance admin
 
-1. 次の更新プログラムが Windows 10 デバイスにインストールされています
+If you want to use a custom account to view the device management settings, it must be in one of these roles:
 
-   > [!NOTE]
-   > これらの更新プログラムは、デバイスをエンドポイント DLP にオンボードするための前提条件ではありませんが、重要な問題の修正が含まれているため、製品を使用する前にインストールする必要があります。
+- Global admin
+- Compliance admin
+- Compliance data admin
+- Global reader
 
-   - Windows 10 1809 の場合 - KB4559003、KB4577069、KB4580390
-   - Windows 10 1903 または 1909 の場合 - KB4559004、KB4577062、KB4580386
-   - Windows 10 2004 の場合 - KB4568831、KB4577063
-   - Office 2016 を実行しているデバイスの場合 (他の Office バージョンではない) - KB4577063
+If you want to use a custom account to access the onboarding/offboarding page, it must be in one of these roles:
 
-1. すべてのデバイスは、次のいずれかを満たしている必要があります。
+- Global admin
+- Compliance admin
 
-   - [Azure Active Directory (Azure AD) への参加](/azure/active-directory/devices/concept-azure-ad-join)
-   - [Hybrid Azure AD への参加](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
-   - [AAD の登録](/azure/active-directory/user-help/user-help-register-device-on-network)
+If you want to use a custom account to turn on/off device monitoring, it must be in one of these roles:
 
-1. エンドポイント デバイスに Microsoft Chromium Edge ブラウザーをインストールして、クラウドへのアップロード アクティビティのポリシー アクションを適用します。 「[Chromium ベースの新しい Microsoft Edge をダウンロードする](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)」を参照してください。 デバイスで Chrome ブラウザーを使用している場合は、[Microsoft Compliance Extension](dlp-chrome-learn-about.md#learn-about-the-microsoft-compliance-extension) をインストールし、クラウド アクティビティへのアップロードに対してポリシー アクションを適用できます。
+- Global admin
+- Compliance admin
 
-1. Microsoft 365 アプリ バージョン 2004 - 2008 の月次エンタープライズ チャネルを使用している場合、Office コンテンツを分類する Endpoint DLP に既知の問題があり、バージョン 2009 以降に更新する必要があります。 現在のバージョンについては「[Microsoft 365 アプリの更新履歴 (日付別の一覧)](/officeupdates/update-history-microsoft365-apps-by-date)」をご覧ください。 この問題の詳細については、[2020 年の最新のチャネル リリースのリリース ノート](/officeupdates/current-channel#version-2010-october-27)の「Office スイート」セクションを参照してください。
+Data from Endpoint DLP can be viewed in [Activity explorer](data-classification-activity-explorer.md). There are four roles that grant permission to activity explorer, the account you use for accessing the data must be a member of any one of them.
 
-1. デバイス プロキシを使用してインターネットに接続するエンドポイントがある場合は、「[エンドポイント DLP のデバイス プロキシとインターネット接続設定の構成](endpoint-dlp-configure-proxy.md)」の手順に従います。
+- Global admin
+- Compliance admin
+- Security admin
+- Compliance data admin -->
 
-## <a name="prepare-your-macos-devices-preview"></a>macOS デバイスを準備する (プレビュー)
+<!-- ### Prepare your Windows 10/11 endpoints
 
-「[Microsoft 365 への macOS デバイスのオンボードに関する概要 (プレビュー)](device-onboarding-macos-overview.md#onboard-macos-devices-into-microsoft-365-overview-preview)」をご覧ください
+Make sure that the Windows devices that you plan on deploying Endpoint DLP to meet these requirements.
 
-## <a name="onboarding-windows-10-devices-into-device-management"></a>デバイス管理への Windows 10 デバイスのオンボーディング
+1. Must be running Windows 10 x64 build 1809, Windows 11, or later.
 
-デバイス上の機密アイテムを監視および保護する前に、デバイスの監視を有効にし、エンドポイントをオンボードしなければなりません。 これらのアクションはどちらも Microsoft 365 コンプライアンスポータルで行われます。
-
-まだオンボードされていないデバイスをオンボードする場合は、適切なスクリプトをダウンロードして、それらのデバイスに展開します。「[デバイスのオンボーディング](endpoint-dlp-getting-started.md#onboarding-devices)」の手順に従ってください。
-
-既に [Microsoft Defender for Endpoint](/windows/security/threat-protection/) にオンボーディングされているデバイスがある場合、それらは管理対象デバイスのリストに表示されます。 [「Microsoft Defender for Endpoint にオンボーディングされているデバイスを使用」の手順](?source=docs&view=o365-worldwide#with-devices-onboarded-into-microsoft-defender-for-endpoint)に従ってください。
-
-### <a name="onboarding-devices"></a>オンボーディングデバイス
-
-この展開シナリオでは、まだオンボードされていないデバイスをオンボードし、Windows 10 または Windows 11 デバイスでの意図しない共有から機微なアイテムを監視して保護する必要があります。
-
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>を開きます。
-
-2. **設定** > **デバイス オンボーディング** を選択します。
+1. Antimalware Client Version is 4.18.2009.7 or newer. Check your current version by opening Windows Security app, select the Settings icon, and then select About. The version number is listed under Antimalware Client Version. Update to the latest Antimalware Client Version by installing Windows Update KB4052623.
 
    > [!NOTE]
-   > 通常、デバイスのオンボーディングが有効になるまで約60秒かかりますが、Microsoft サポートに連絡するまでに最大 30 分かかります。
+   > None of Windows Security components need to be active, you can run Endpoint DLP independent of Windows Security status, but the [Real-time protection and Behavior monitor](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)) must be enabled.
 
-3. **デバイス** を選択 して **デバイス** リストを開 きます。 デバイスをオンボードするまで、リストは空になります。
+1. The following Updates are installed on Windows 10 devices
 
-4. オンボーディングプロセスを開始するには、[**オンボーディング**]を選択します。
+   > [!NOTE]
+   > These updates are not a pre-requisite to onboard a device to Endpoint DLP, but contain fixes for important issues thus must be installed before using the product.
 
-5. これらの追加デバイスに導入する方法を[**導入方法**]リストから選択し、**パッケージをダウンロード** します。
+   - For Windows 10 1809 - KB4559003, KB4577069, KB4580390
+   - For Windows 10 1903 or 1909 - KB4559004, KB4577062, KB4580386
+   - For Windows 10 2004 - KB4568831, KB4577063
+   - For devices running Office 2016 (and not any other Office version) - KB4577063
+
+1. All devices must be one of these:
+
+   - [Azure Active Directory (Azure AD) joined](/azure/active-directory/devices/concept-azure-ad-join)
+   - [Hybrid Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
+   - [AAD registered](/azure/active-directory/user-help/user-help-register-device-on-network)
+
+1. Install Microsoft Chromium Edge browser on the endpoint device to enforce policy actions for the upload to cloud activity. See, [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium). If your devices use the Chrome browser, you can install the [Microsoft Compliance Extension](dlp-chrome-learn-about.md#learn-about-the-microsoft-compliance-extension) to enforce policy actions for the upload to cloud activity.
+
+1. If you are on Monthly Enterprise Channel of Microsoft 365 Apps versions 2004-2008, there is a known issue with Endpoint DLP classifying Office content and you need to update to version 2009 or later. See [Update history for Microsoft 365 Apps (listed by date)](/officeupdates/update-history-microsoft365-apps-by-date) for current versions. To learn more about this issue, see the Office Suite section of [Release notes for Current Channel releases in 2020](/officeupdates/current-channel#version-2010-october-27).
+
+1. If you have endpoints that use a device proxy to connect to the internet, follow the procedures in [Configure device proxy and internet connection settings for Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection).
+
+## Prepare your macOS devices (preview)
+
+See, [Onboard macOS devices into Microsoft 365 overview (preview)](device-onboarding-macos-overview.md#onboard-macos-devices-into-microsoft-365-overview-preview)-->
+
+<!--## Onboarding Windows 10 and Windows 11 devices into device management
+
+You must enable device monitoring and onboard your endpoints before you can monitor and protect sensitive items on a device. Both of these actions are done in the Microsoft 365 Compliance portal.
+
+When you want to onboard devices that haven't been onboarded yet, you'll download the appropriate script and deploy it to those devices. Follow the [Onboarding devices procedure](endpoint-dlp-getting-started.md#onboarding-devices).
+
+If you already have devices onboarded into [Microsoft Defender for Endpoint](/windows/security/threat-protection/), they will already appear in the managed devices list. Follow the [With devices onboarded into Microsoft Defender for Endpoint procedure](?source=docs&view=o365-worldwide#with-devices-onboarded-into-microsoft-defender-for-endpoint).
+
+### Onboarding devices
+
+In this deployment scenario, you'll onboard devices that have not been onboarded yet, and you just want to monitor and protect sensitive items from unintentional sharing on Windows 10 or Windows 11 devices.
+
+1. Open the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>.
+
+2. Choose **Settings** > **Device onboarding**.
+
+   > [!NOTE]
+   > While it usually takes about 60 seconds for device onboarding to be enabled, please allow up to 30 minutes before engaging with Microsoft support.
+
+3. Choose **Devices** to open the **Devices** list. The list will be empty until you onboard devices.
+
+4. Choose **Onboarding** to begin the onboarding process.
+
+5. Choose the way you want to deploy to these additional devices from the **Deployment method** list and then **download package**.
 
    > [!div class="mx-imgBorder"]
-   > ![導入方法。](../media/endpoint-dlp-getting-started-3-deployment-method.png)
+   > ![deployment method.](../media/endpoint-dlp-getting-started-3-deployment-method.png)
 
-6. 「[Windows マシンのオンボード ツールとメソッド](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)」の適切な手順に従います。 このリンクをクリックすると、手順 5 で選択した導入パッケージと一致する Microsoft Defender for Endpoint の手順にアクセスできるランディング ページが表示されます。
+6. Follow the appropriate procedures in [Onboarding tools and methods for Windows machines](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). This link takes you to a landing page where you can access Microsoft Defender for Endpoint procedures that match the deployment package you selected in step 5:
 
-    - グループ ポリシーを利用した Windows マシンの登録
-    - Microsoft Endpoint Configuration Manager を使用した Windows 10 マシンのオンボード
-    - Mobile Device Management ツールを使用した Windows マシンの登録
-    - ローカル スクリプトを使用した Windows マシンの登録
-    - シングル セッション シナリオでの非永続的な仮想デスクトップ インフラストラクチャ (VDI) マシンのオンボード
+    - Onboard Windows machines using Group Policy
+    - Onboard Windows machines using Microsoft Endpoint Configuration Manager
+    - Onboard Windows machines using Mobile Device Management tools
+    - Onboard Windows machines using a local script
+    - Onboard non-persistent virtual desktop infrastructure (VDI) machines in single-session scenarios
 
-完了後、エンドポイントがオンボードされ、デバイスリストに表示され、監査アクティビティログのActivity エクスプローラーへの報告も開始されます。
+Once done and endpoint is onboarded, it should be visible in the devices list and also start reporting audit activity logs to Activity explorer.
 
 > [!NOTE]
-> これは、ライセンス執行時でのエクスペリエンスです。 必要なライセンスがないと、データは表示されず、アクセスできません。
+> This experience is under license enforcement. Without the required license, data will not be visible or accessible.
 
-### <a name="with-devices-onboarded-into-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint にオンボーディングされているデバイスを使用
+### With devices onboarded into Microsoft Defender for Endpoint
 
-このシナリオでは、Microsoft Defender for Endpoint は既に導入されており、レポートするエンドポイントがあります。 これらすべてのエンドポイントが管理対象デバイスのリストに表示されます。 新しいデバイスを引き続き Endpoint DLP にオンボーディングして、[オンボーディングデバイスの手順](endpoint-dlp-getting-started.md#onboarding-devices)を使用してカバレッジを拡大します。
+In this scenario, Microsoft Defender for Endpoint is already deployed and there are endpoints reporting in. All these endpoints will appear in the managed devices list. You can continue to onboard new devices into Endpoint DLP to expand coverage by using the [Onboarding devices procedure](endpoint-dlp-getting-started.md#onboarding-devices).
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>を開きます。
+1. Open the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>.
 
-2. コンプライアンスセンターの設定ページを開き、[**デバイスの監視を有効にする**]を選択します。
+2. Open the Compliance Center settings page and choose **Enable device monitoring**.
 
-3. [**デバイス管理**]を選択して、[**デバイス**]リストを開きます。 既に Microsoft Defender for Endpoint にレポートしているデバイスのリストが表示されます。
+3. Choose **Device management** to open the **Devices** list. You should see the list of devices that are already reporting in to Microsoft Defender for Endpoint.
 
    > [!div class="mx-imgBorder"]
-   > ![デバイス管理。](../media/endpoint-dlp-getting-started-2-device-management.png)
+   > ![device management.](../media/endpoint-dlp-getting-started-2-device-management.png)
 
-4. 追加のデバイスをオンボードする必要がある場合は、[**オンボーディング**]を選択します。
+4. Choose **Onboarding** if you need to onboard additional devices.
 
-5. これらの追加デバイスに導入する方法を[**導入方法**]リストから選択し、[**パッケージをダウンロード**]します。
+5. Choose the way you want to deploy to these additional devices from the **Deployment method** list and then **Download package**.
 
-6. 「[Windows マシンのオンボード ツールとメソッド](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)」の適切な手順に従います。 このリンクをクリックすると、手順 5 で選択した導入パッケージと一致する Microsoft Defender for Endpoint の手順にアクセスできるランディング ページが表示されます。
-    - グループ ポリシーを利用した Windows マシンの登録
-    - Microsoft Endpoint Configuration Manager を使用した Windows 10 マシンのオンボード
-    - Mobile Device Management ツールを使用した Windows マシンの登録
-    - ローカル スクリプトを使用した Windows マシンの登録
-    - 非永続的な仮想デスクトップインフラストラクチャ (VDI) マシンをオンボーディングします。
+6. Follow the appropriate procedures in [Onboarding tools and methods for Windows machines](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). This link takes you to a landing page where you can access Microsoft Defender for Endpoint procedures that match the deployment package you selected in step 5:
+    - Onboard Windows machines using Group Policy
+    - Onboard Windows machines using Microsoft Endpoint Configuration Manager
+    - Onboard Windows machines using Mobile Device Management tools
+    - Onboard Windows machines using a local script
+    - Onboard non-persistent virtual desktop infrastructure (VDI) machines.
 
-完了後、エンドポイントがオンボードされ、[**デバイス**]テーブルの下に表示され、**Activity エクスプローラー** に監査ログのレポートを開始します。
+Once done and endpoint is onboarded, it should be visible under the **Devices** table and also start reporting audit logs to the **Activity Explorer**.
 
 > [!NOTE]
->これは、ライセンス執行時でのエクスペリエンスです。 必要なライセンスがないと、データは表示されず、アクセスできません。
+>This experience is under license enforcement. Without the required license, data will not be visible or accessible.
 
-### <a name="viewing-endpoint-dlp-alerts-in-dlp-alerts-management-dashboard"></a>DLP 警告管理ダッシュボードでのエンドポイント DLP 警告の表示
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>の [データ損失防止] ページを開き、[アラート] を選択します。
+### Viewing Endpoint DLP alerts in DLP Alerts Management dashboard
 
-2. エンドポイント DLP ポリシーの警告を表示するには、「[DLP ポリシーの警告を構成および表示する方法](dlp-configure-view-alerts-policies.md)」の手順を参照してください。
+1. Open the Data loss prevention page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> and choose Alerts.
 
-### <a name="viewing-endpoint-dlp-data-in-activity-explorer"></a>Activity エクスプローラーでのEndpoint DLPデータの表示
+2. Refer to the procedures in [How to configure and view alerts for your DLP policies](dlp-configure-view-alerts-policies.md) to view alerts for your Endpoint DLP policies.
 
-1. Microsoft 365 コンプライアンスセンターでドメインの[データ分類ページ](https://compliance.microsoft.com/dataclassification?viewid=overview)を開き、Activity エクスプローラーを選択します。
+### Viewing Endpoint DLP data in activity explorer
 
-2. エンドポイントデバイスのすべてのデータにアクセスしてフィルタリングするには、「[Activity エクスプローラースタートガイド](data-classification-activity-explorer.md)」の手順に従ってください。
+1. Open the [Data classification page](https://compliance.microsoft.com/dataclassification?viewid=overview) for your domain in the Microsoft 365 Compliance center and choose Activity explorer.
+
+2. Refer to the procedures in [Get started with Activity explorer](data-classification-activity-explorer.md) to access and filter all the data for your Endpoint devices.
 
    > [!div class="mx-imgBorder"]
-   > ![エンドポイント デバイスのアクティビティ エクスプローラー フィルター。](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
+   > ![activity explorer filter for endpoint devices.](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
 
-## <a name="next-steps"></a>次の手順
+## Next steps
 
-デバイスがオンボードされ、Activity Explorer でアクティビティデータを表示できるようになりました。次の手順に進み、機密アイテムを保護する DLP ポリシーを作成します。
+Now that you have onboarded devices and can view the activity data in Activity explorer, you are ready to move on to your next step where you create DLP policies that protect your sensitive items.
 
-- [エンドポイントのデータ損失防止の使用](endpoint-dlp-using.md)
+- [Using Endpoint data loss prevention](endpoint-dlp-using.md)
 
-## <a name="see-also"></a>関連項目
+## See also
 
-- [エンドポイント データ損失防止について](endpoint-dlp-learn-about.md)
-- [エンドポイントのデータ損失防止の使用](endpoint-dlp-using.md)
-- [データ損失防止について](dlp-learn-about-dlp.md)
-- [DLP ポリシーの作成、テスト、調整](create-test-tune-dlp-policy.md)
-- [Activity Explorer を使い始める](data-classification-activity-explorer.md)
+- [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)
+- [Using Endpoint data loss prevention](endpoint-dlp-using.md)
+- [Learn about data loss prevention](dlp-learn-about-dlp.md)
+- [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
+- [Get started with Activity explorer](data-classification-activity-explorer.md)
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/)
-- [Windows マシンの登録ツールとメソッド](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
-- [Microsoft 365 サブスクリプション](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
-- [Azure AD に参加しているデバイス](/azure/active-directory/devices/concept-azure-ad-join)
-- [Chromium ベースの新しい Microsoft Edge をダウンロードする](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)
+- [Onboarding tools and methods for Windows machines](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
+- [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
+- [Azure AD joined devices](/azure/active-directory/devices/concept-azure-ad-join)
+- [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)
+-->

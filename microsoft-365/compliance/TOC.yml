@@ -26,6 +26,34 @@
       href: plan-for-security-and-compliance.md
     - name: コンプライアンス拡張性
       href: compliance-extensibility.md
+- name: クロスソリューション機能
+  items:
+    - name: Windows 10 および Windows 11 デバイスをオンボードする
+      items:
+        - name: Windows 10 および Windows 11 デバイスを Microsoft 365 にオンボードする概要
+          href: device-onboarding-overview.md
+        - name: グループ ポリシーを使用した Windows 10 および Windows 11 デバイスのオンボード
+          href: device-onboarding-gp.md
+        - name: モバイル デバイス管理ツールを使用した Windows 10 および Windows 11 デバイスのオンボード
+          href: device-onboarding-mdm.md
+        - name: Configuration Manager を使用した Windows 10 および Windows 11 デバイスのオンボード
+          href: device-onboarding-sccm.md
+        - name: ローカル スクリプトを使用した Windows 10 および Windows 11 デバイスのオンボード
+          href: device-onboarding-script.md
+        - name: 非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード
+          href: device-onboarding-vdi.md
+    - name: macOS デバイスのオンボード (プレビュー)
+      items:
+        - name: Microsoft 365 への macOS デバイスのオンボードに関する概要 (プレビュー)
+          href: device-onboarding-macos-overview.md
+        - name: Microsoft Intune を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)
+          href: device-onboarding-offboarding-macos-intune.md
+        - name: Microsoft Defender for Endpoint のお客様向け Intune を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)
+          href: device-onboarding-offboarding-macos-intune-mde.md
+        - name: JAMF Pro を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)
+          href: device-onboarding-offboarding-macos-jamfpro.md
+        - name: Microsoft Defender for Endpoint のお客様向け JAMF Pro を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)
+          href: device-onboarding-offboarding-macos-jamfpro-mde.md
 - name: インサイダー リスクを管理する
   items:
     - name: Microsoft 365 インサイダー リスク ソリューション
@@ -124,6 +152,8 @@
           items:
             - name: 機密情報の種類に関する詳細情報
               href: sensitive-information-type-learn-about.md
+            - name: 完全なデータ一致に基づく機密情報の種類の詳細
+              href: sit-learn-about-exact-data-match-based-sits.md
             - name: ドキュメント フィンガープリンティング
               href: document-fingerprinting.md
             - name: 名前付きエンティティの詳細 (プレビュー)
@@ -132,14 +162,22 @@
           items:
             - name: 機密情報の種類を使用開始 - コンプライアンス センター
               href: create-a-custom-sensitive-information-type.md
+            - name: 完全なデータ一致に基づく機密情報の種類の使用を開始する
+              href: sit-get-started-exact-data-match-based-sits-overview.md
+            - name: 完全なデータ一致に基づく機密情報の種類のソース データをエクスポートする
+              href: sit-get-started-exact-data-match-export-data.md
+            - name: 完全なデータ一致に基づく機密情報の種類のスキーマを作成する
+              href: sit-get-started-exact-data-match-create-schema.md
+            - name: 機密情報の種類と完全に一致する機密情報のソース テーブルをハッシュしてアップロードする
+              href: sit-get-started-exact-data-match-hash-upload.md
+            - name: 機密情報の種類/ルール パッケージと完全に一致するデータを作成する
+              href: sit-get-started-exact-data-match-create-rule-package.md
+            - name: 機密情報の種類と完全に一致するデータをテストする
+              href: sit-get-started-exact-data-match-test.md
         - name: 機密情報の種類を使用する
           items:
             - name: 組み込みの機密情報の種類をカスタマイズする
               href: customize-a-built-in-sensitive-information-type.md
-            - name: Exact Data Match によりカスタムの機密情報の種類を作成する
-              href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
-            - name: 完全一致スキーマと機密情報の種類ウィザードを使用する
-              href: sit-edm-wizard.md
             - name: 構成可能な一致を使用するために完全一致スキーマを変更する
               href: sit-modify-edm-schema-configurable-match.md
             - name: Exact Data Match アクティビティの通知を作成する (プレビュー)
@@ -154,6 +192,10 @@
               href: create-a-keyword-dictionary.md
             - name: キーワード 辞書を変更する
               href: sit-modify-keyword-dictionary.md
+            - name: 正確なデータ一致スキーマを管理する
+              href: sit-use-exact-data-manage-schema.md
+            - name: 機密情報のソース テーブル ファイルを更新する
+              href: sit-use-exact-data-refresh-data.md
             - name: データ損失防止ポリシーで名前付きエンティティを使用する (プレビュー)
               href: named-entities-use.md
         - name: 機密情報の種類のリファレンス
@@ -305,36 +347,12 @@
               href: dlp-on-premises-scanner-get-started.md
             - name: エンドポイント データ損失防止を開始する
               href: endpoint-dlp-getting-started.md
-            - name: エンドポイント DLP のデバイス プロキシとインターネット接続の構成
-              href: endpoint-dlp-configure-proxy.md
+            - name: 情報保護のためにデバイス プロキシとインターネット接続の設定を構成する
+              href: device-onboarding-configure-proxy.md
             - name: Microsoft Compliance Extension を開始する
               href: dlp-chrome-get-started.md
             - name: データ損失防止の警告ダッシュボードを開始する
               href: dlp-alerts-dashboard-get-started.md
-            - name: エンドポイント DLP デバイスのオンボード ツールと各種方法
-              items:
-                - name: Windows 10 デバイスのオンボード ツールと各種方法
-                  href: dlp-configure-endpoints.md
-                - name: グループ ポリシーを使用した Windows 10 デバイスのオンボード
-                  href: dlp-configure-endpoints-gp.md
-                - name: モバイル デバイス管理ツールを使用した Windows 10 デバイスのオンボード
-                  href: dlp-configure-endpoints-mdm.md
-                - name: Configuration Manager を使用した Windows 10 デバイスのオンボード
-                  href: dlp-configure-endpoints-sccm.md
-                - name: ローカル スクリプトを使用した Windows 10 デバイスのオンボード
-                  href: dlp-configure-endpoints-script.md
-                - name: 非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード
-                  href: dlp-configure-endpoints-vdi.md
-            - name: Microsoft 365 への macOS デバイスのオンボードに関する概要 (プレビュー)
-              href: device-onboarding-macos-overview.md
-            - name: Microsoft Intune を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)
-              href: device-onboarding-offboarding-macos-intune.md
-            - name: Microsoft Defender for Endpoint のお客様向け Intune を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)
-              href: device-onboarding-offboarding-macos-intune-mde.md
-            - name: JAMF Pro を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)
-              href: device-onboarding-offboarding-macos-jamfpro.md
-            - name: Microsoft Defender for Endpoint のお客様向け JAMF Pro を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)
-              href: device-onboarding-offboarding-macos-jamfpro-mde.md
         - name: DLP を使用する
           items:
             - name: DLP と Microsoft Teams
