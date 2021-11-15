@@ -12,15 +12,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 09/16/2021
 ms.technology: mde
-ms.openlocfilehash: f9253a01cc1a971f472733f41a92f0b78beba737
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 51950846b1e445bf9fecb3111e827e1ca9b6d1e4
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753979"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962965"
 ---
 # <a name="onboard-windows-devices-using-group-policy"></a>グループ ポリシーを使用してデバイスをオンボードする 
 
@@ -46,7 +47,7 @@ ms.locfileid: "60753979"
 
 [[](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)エンドポイント用 Defender [Visio展開](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx)] のさまざまなパスを確認するには、PDF またはドキュメントを参照してください。
 
-1. サービス オンボーディング ウィザードからダウンロードした GP 構成パッケージ ファイル ( `WindowsDefenderATPOnboardingPackage.zip` ) を開きます。 また、次のポータルから[パッケージをMicrosoft 365 Defenderすることもできます](https://security.microsoft.com/)。
+1. サービス オンボーディング ウィザードからダウンロードした GP 構成パッケージ ファイル ( `WindowsDefenderATPOnboardingPackage.zip` ) を開きます。 パッケージは、次のポータルから<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderすることもできます</a>。
 
     1. ナビゲーション ウィンドウで、[エンドポイント **デバイス設定**  >    >  **オンボーディング]**   >  **を選択します**。
 
@@ -199,7 +200,7 @@ Microsoft MAPS に参加する|有効、高度なマップ
 > [!NOTE]
 > オンボーディングポリシーとオフボード ポリシーを同じデバイスに同時に展開し、それ以外の場合は予期しない競合を引き起こす可能性があります。
 
-1. ポータルからオフボード パッケージ[Microsoft 365 Defenderします](https://security.microsoft.com/)。
+1. 次のポータルからオフボード<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">パッケージをMicrosoft 365 Defenderします</a>。
 
     1. ナビゲーション ウィンドウで、[エンドポイント **デバイス** 設定  >  **オフ**  >  **ボード]**  >  **を選択します**。
 
@@ -236,7 +237,7 @@ Microsoft MAPS に参加する|有効、高度なマップ
 
 ## <a name="monitor-devices-using-the-portal"></a>ポータルを使用してデバイスを監視する
 
-1. [ポータル] [Microsoft 365 Defender移動します](https://security.microsoft.com/)。
+1. ポータルに移動<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderします</a>。
 2. [デバイス **インベントリ] をクリックします**。
 3. デバイスが表示されているのを確認します。
 

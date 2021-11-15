@@ -14,15 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
+ms.custom: admindeeplinkDEFENDER
 ms.topic: how-to
 ms.date: 01/29/2021
 ms.technology: mde
-ms.openlocfilehash: 371b698dc25a1875c71e7ca942d7e6b7563f40fb
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: d2f4eda359b64b1fe4f7be300980c15485fb2bf5
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587714"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963397"
 ---
 # <a name="review-remediation-actions-following-an-automated-investigation"></a>自動調査後の修復アクションの確認
 
@@ -60,7 +61,7 @@ ms.locfileid: "60587714"
 
 ## <a name="review-pending-actions"></a>保留中のアクションを確認する
 
-1. セキュリティ センター ( ) Microsoft 365に移動し [https://security.microsoft.com](https://security.microsoft.com) 、サインインします。
+1. セキュリティ センターの<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365サインイン</a>します。
 2. ナビゲーション ウィンドウで、[**アクション センター**] を選択します。
 3. [保留中] タブの **アイテムを確認** します。
 4. アクションを選択して、そのフライアウト ウィンドウを開きます。
@@ -72,7 +73,7 @@ ms.locfileid: "60587714"
 
 ## <a name="review-completed-actions"></a>完了したアクションを確認する
 
-1. セキュリティ センター ( ) Microsoft 365に移動し [https://security.microsoft.com](https://security.microsoft.com) 、サインインします。
+1. セキュリティ センターの<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365サインイン</a>します。
 2. ナビゲーション ウィンドウで、[**アクション センター**] を選択します。
 3. [履歴] タブのアイテム **を確認** します。
 4. アイテムを選択すると、その修復アクションの詳細が表示されます。

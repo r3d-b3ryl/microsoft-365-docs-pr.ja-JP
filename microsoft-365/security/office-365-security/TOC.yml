@@ -276,8 +276,6 @@
               href: enable-the-report-message-add-in.md
             - name: Outlook の誤検出と検出漏れを報告する
               href: report-false-positives-and-false-negatives.md
-            - name: メッセージを手動で Microsoft に送信する
-              href: submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
             - name: メール フロー ルールを使用して、ユーザーが Microsoft に報告する内容を確認する
               href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft
             - name: マルウェアとマルウェアでないファイルを Microsoft に送信する

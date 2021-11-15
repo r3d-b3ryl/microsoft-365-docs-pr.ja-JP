@@ -15,14 +15,15 @@ ms.collection:
 - M365-security-compliance
 - m365solution-endpointprotect
 - m365solution-scenario
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f68bd40afd0094f8a319f10c6e71d0cee94cef28
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 1cee88d872ca7d83b9fbaf391a25cdb21cd10bd6
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60754433"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963385"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>Microsoft Defender for Endpoint の展開をセットアップする
 
@@ -47,7 +48,7 @@ Defender for Endpoint の展開は、次の 3 フェーズプロセスです。
 
 - ライセンスの検証
 - テナント構成
-- ネットワークの構成
+- ネットワーク構成
 
 > [!NOTE]
 > 一般的な展開を案内する目的で、このシナリオでは、このシナリオでは、ユーザーの使用のみをMicrosoft Endpoint Configuration Manager。 Defender for Endpoint は、他のオンボーディング ツールの使用をサポートしていますが、展開ガイドではこれらのシナリオについては説明しません。 詳細については、「デバイスを [Microsoft Defender for Endpoint にオンボードする」を参照してください](onboard-configure.md)。
@@ -80,9 +81,9 @@ Defender for Endpoint の展開は、次の 3 フェーズプロセスです。
 
 エンドポイント用 Microsoft Defender へのオンボーディングは簡単です。 ナビゲーション メニューから、[エンドポイント] セクションの下の任意のアイテムを選択するか、インシデント、ハンティング、アクション センター、脅威分析などの Microsoft 365 Defender 機能を選択してオンボーディング プロセスを開始します。
 
-Web ブラウザーから、[セキュリティ センター] Microsoft 365[に移動します](https://security.microsoft.com)。
+Web ブラウザーから、セキュリティ センター Microsoft 365<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">移動します</a>。
 
-## <a name="network-configuration"></a>ネットワークの構成
+## <a name="network-configuration"></a>ネットワーク構成
 
 組織がプロキシを使用してインターネットにアクセスするためにエンドポイントを必要としない場合は、このセクションをスキップします。
 
@@ -157,7 +158,7 @@ netsh を使用して、システム全体の静的プロキシを構成しま�
 
 ### <a name="proxy-configuration-for-down-level-devices"></a>ダウンレベル デバイスのプロキシ構成
 
-Down-Level には、Windows 7 SP1 および Windows 8.1 ワークステーション、Windows Server 2008 R2、Windows Server 2012、Windows Server 2012 R2、Windows Server 2016 Windows サーバー CB 1803 より前の Windows Server 2016 のバージョンが含まれます。 これらのオペレーティング システムでは、エンドポイントから Azure への通信を処理するために、Microsoft 管理エージェントの一部としてプロキシが構成されます。 これらのデバイスでのプロキシの構成方法については、「Microsoft Management Agent Fast Deployment Guide」を参照してください。
+Down-Level には、Windows 7 SP1 および Windows 8.1 ワークステーション、Windows Server 2008 R2、Windows Server 2012、Windows Server 2012 R2、および Windows Server 2016 のバージョンが含Windows サーバー CB 1803。 これらのオペレーティング システムでは、エンドポイントから Azure への通信を処理するために、Microsoft 管理エージェントの一部としてプロキシが構成されます。 これらのデバイスでのプロキシの構成方法については、「Microsoft Management Agent Fast Deployment Guide」を参照してください。
 
 ### <a name="proxy-service-urls"></a>プロキシ サービスの URL
 

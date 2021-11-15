@@ -13,15 +13,17 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: 脅威の調査と対応を効率的に行うには、Microsoft 365 Defender エクスプローラーまたはリアルタイム検出を使用します。
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 28da09d799b035a79a661eaf28912de29ad2f43f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a12d83e3345936e0eb02e3d5f687dbda67715d00
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196359"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963205"
 ---
 # <a name="threat-hunting-in-threat-explorer-for-microsoft-defender-for-office-365"></a>Microsoft Defender for Microsoft Defender for Microsoft Defender for Threat Explorer での脅威Office 365
 
@@ -42,7 +44,7 @@ ms.locfileid: "60196359"
 
 組織に[Microsoft Defender](defender-for-office-365.md)for Office 365権限がある場合は、エクスプローラー[](#required-licenses-and-permissions)またはリアルタイム検出を使用して脅威を検出および修復できます。 
 
-[ポータル( Microsoft 365 Defender] で、[メール の編集] &に移動し、[エクスプローラー] または [リアルタイム検出] <https://security.microsoft.com> **を選択します**。   ページに直接移動するには、 <https://security.microsoft.com/threatexplorer><https://security.microsoft.com/realtimereports>
+[ポータル] <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender[</a>メール] グループ&**に** 移動し、[**エクスプローラー** ] または [リアルタイム検出]**を選択します**。 ページに直接移動するには、 <https://security.microsoft.com/threatexplorer><https://security.microsoft.com/realtimereports>
 
 これらのツールで以下のことができます。
 
@@ -213,10 +215,10 @@ Threat Explorer では、次のエクスペリエンスでユーザー タグに
 > Exchangeルールの検索と名前の可用性は、割り当てられた特定の役割によって異なっています。 トランスポート ルール名と検索を表示するには、次のいずれかの役割またはアクセス許可が必要です。 ただし、以下の役割やアクセス許可がなくても、アナリストはメールの詳細にトランスポート ルールのラベルと GUID 情報を表示する場合があります。 メール グリッド、電子メール フライアウト、フィルター、およびエクスポートの他のレコード表示エクスペリエンスは影響を受け取ります。
 >
 > - Exchange Onlineのみ - データ損失防止: すべて
-> - Exchange OnlineOnly - O365SupportViewConfig: All
+> - Exchange Onlineのみ - O365SupportViewConfig: All
 > - Microsoft Azure Active DirectoryまたはExchange Online - セキュリティ管理者: すべて
 > - Azure Active DirectoryまたはExchange Online - セキュリティ リーダー: All
-> - Exchange OnlineOnly - トランスポート ルール: All
+> - Exchange Onlineのみ - トランスポート ルール: All
 > - Exchange Onlineのみ - View-Only構成: すべて
 >
 > 電子メール グリッド、詳細フライアウト、およびエクスポート CSV 内で、ETRs には、次に示すように名前/GUID が表示されます。
@@ -243,7 +245,7 @@ Threat Explorer では、次のエクスペリエンスでユーザー タグに
 
 エクスプローラーまたはリアルタイム検出を表示および使用するには、次のアクセス許可が必要です。
 
-- ポータルのMicrosoft 365 Defender:
+- ポータルの<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender:</a>
   - 組織管理
   - セキュリティ管理者 (この管理者は、管理者センター Azure Active Directory割り当てることができます ( <https://aad.portal.azure.com> )
   - セキュリティ閲覧者
@@ -259,7 +261,7 @@ Threat Explorer では、次のエクスペリエンスでユーザー タグに
 - [Exchange Online の機能アクセス許可](/exchange/permissions-exo/feature-permissions)
 - [Exchange Online の PowerShell](/powershell/exchange/exchange-online-powershell)
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 - [配信された悪意のあるメールの検索と調査](investigate-malicious-email-that-was-delivered.md)
 - [オンライン、オンライン、SharePoint、およびOneDriveで検出された悪意のあるMicrosoft Teams](mdo-for-spo-odb-and-teams.md)

@@ -14,12 +14,13 @@ ms.author: dansimp
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 4896ffe6b01d87d4e54d6d06867aea3435a1513a
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.custom: admindeeplinkDEFENDER
+ms.openlocfilehash: 4d06c974f5ccc01326bd574ac1ad1c3fbde00990
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883139"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962544"
 ---
 # <a name="host-firewall-reporting-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint でのホスト ファイアウォール レポート
 
@@ -35,7 +36,7 @@ ms.locfileid: "60883139"
 
 - サーバー 11 または Windows 10サーバー 20 Windows 19 Windowsまたはサーバー 2022 Windows実行している必要があります。
 - デバイスを Microsoft Defender for Endpoint サービスにオンボードするには、こちらを参照 [してください](onboard-configure.md)。
-- セキュリティ センター Microsoft 365データの受信を開始するには、Advanced **Security** を使用するファイアウォールの監査イベントWindows Defender有効にする必要があります。
+- セキュリティ <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">センター Microsoft 365データ</a>の受信を開始するには、Advanced **Security** を使用するファイアウォールの監査イベントWindows Defender有効にする必要があります。
   - [監査フィルター プラットフォーム のパケット ドロップ](/windows/security/threat-protection/auditing/audit-filtering-platform-packet-drop)
   - [監査フィルター プラットフォーム接続](/windows/security/threat-protection/auditing/audit-filtering-platform-connection)
 - グループ ポリシー オブジェクト エディター、ローカル セキュリティ ポリシー、またはグループ ポリシー コマンドを使用して、これらのイベントauditpol.exeします。 詳細については、こちらを参照 [してください](/windows/win32/fwp/auditing-and-logging)。

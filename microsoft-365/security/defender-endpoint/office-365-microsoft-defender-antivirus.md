@@ -11,17 +11,19 @@ audience: ITPro
 ms.topic: article
 author: denisebmsft
 ms.author: deniseb
-ms.custom: nextgen
+ms.custom:
+- nextgen
+- admindeeplinkDEFENDER
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3015dbbc251ec175a648145f202a291ca0c6c1bc
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 569a36a595a53c45dd3d1a24857932523344d7e5
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556127"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962641"
 ---
 # <a name="better-together-microsoft-defender-antivirus-and-office-365"></a>ベストな組み合わせ: Microsoft Defender ウイルス対策と Office 365
 
@@ -73,7 +75,7 @@ Microsoft Defender for Office 365 Microsoft Defender for Endpoint と統合す�
 
     だから
 
-- 統合が有効になると、セキュリティ運用チームは、Microsoft 365 Defender ポータル ( ) で、検出された URL または電子メール メッセージの受信者が使用するデバイスの一覧と、それらのデバイスに関する最近の通知を表示できます。 [https://security.microsoft.com](https://security.microsoft.com)
+- 統合が有効になると、セキュリティ運用チームは、Microsoft 365 Defender ポータルで、検出された URL または電子メール メッセージの受信者が使用するデバイスの一覧と、それらのデバイスに関する最近の通知<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">を表示</a>できます。
 
 まだ行っていない場合は[、Microsoft Defender for Office 365 Microsoft Defender for Endpoint に統合してください](/microsoft-365/security/office-365-security/integrate-office-365-ti-with-wdatp)。
 

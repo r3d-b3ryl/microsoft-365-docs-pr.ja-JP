@@ -6,13 +6,14 @@ ms.topic: how-to
 author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
+ms.custom: admindeeplinkDEFENDER
 manager: raynew
-ms.openlocfilehash: e6b8015cc8b6ac073c689bde3b15a411c859cada
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9f542d2b5a25a8274d74e0ee3dbfc40fdc119926
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177511"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963325"
 ---
 # <a name="defender-for-identity-vpn-integration-in-microsoft-365-defender"></a>Defender for Identity VPN integration in Microsoft 365 Defender
 
@@ -24,7 +25,7 @@ ms.locfileid: "59177511"
 この記事では、VPN を Microsoft [Defender for Identity](/defender-for-identity)に統合する方法について説明[Microsoft 365 Defender。](/microsoft-365/security/defender/overview-security-center)
 
 >[!IMPORTANT]
->Id ポータルの Defender の場所Microsoft 365 Defender一部のオプションと詳細が変更されました。 使い慣れた機能と新機能の両方を見つける場所については、以下の詳細をお読みください。
+>Id ポータルの Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"></a>の場所Microsoft 365 Defenderオプションと詳細が変更されています。 使い慣れた機能と新機能の両方を見つける場所については、以下の詳細をお読みください。
 
 [!INCLUDE [Product long](includes/product-long.md)] VPN ソリューションから会計情報を収集できます。 構成されている場合、ユーザーのプロファイル ページには、接続の発信元の IP アドレスや場所など、VPN 接続からの情報が含まれます。 これにより、ユーザー アクティビティに関する追加情報と、異常な VPN 接続の新しい検出を提供することで、調査プロセスを補完します。 外部 IP アドレスを場所に解決するための呼び出しは匿名です。 この呼び出しでは、個人識別子は送信されません。
 
@@ -70,7 +71,7 @@ RRAS サーバーで次の手順を実行します。
 
 次の手順で VPN データ [!INCLUDE [Product short](includes/product-short.md)] を構成Microsoft 365 Defender。
 
-1. [[Microsoft 365 Defender]](https://security.microsoft.com/)で、[id]**設定** に **移動します**。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">[Microsoft 365 Defender]</a>で、[id]**設定** に **移動します**。
 
     ![[ID] 設定に移動します。](../../media/defender-identity/settings-identities.png)
 

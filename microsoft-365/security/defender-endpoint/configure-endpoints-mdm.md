@@ -1,5 +1,5 @@
 ---
-title: モバイル Windowsツールを使用してデバイスをオンボードする
+title: モバイル デバイス管理ツールを使用した Windows デバイスのオンボード
 description: モバイル デバイス管理ツールを使用して、デバイスに構成パッケージを展開して、Defender for Endpoint サービスにオンボードします。
 keywords: mdm を使用したオンボード デバイス、デバイス管理、オンボード Microsoft Defender for Endpoint デバイス、mdm
 ms.prod: m365-security
@@ -12,16 +12,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a92b663eeddfcfb8ccf17bad204074764711685d
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: 1d0bfb7070f06b94aeaea69f0563e4f5e5d1ca67
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60239878"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963085"
 ---
-# <a name="onboard-windows-devices-using-mobile-device-management-tools"></a>モバイル Windowsツールを使用してデバイスをオンボードする
+# <a name="onboard-windows-devices-using-mobile-device-management-tools"></a>モバイル デバイス管理ツールを使用した Windows デバイスのオンボード
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,7 +37,7 @@ ms.locfileid: "60239878"
 
 Defender for Endpoint CSP の使用の詳細については [、「WindowsAdvancedThreatProtection CSP」](https://msdn.microsoft.com/library/windows/hardware/mt723296(v=vs.85).aspx) および [「WindowsAdvancedThreatProtection DDF ファイル」を参照してください](https://msdn.microsoft.com/library/windows/hardware/mt723297(v=vs.85).aspx)。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 デバイスを使用している場合Microsoft Intune MDM が登録されている必要があります。 それ以外の場合、設定は正常に適用されません。
 
@@ -69,7 +70,7 @@ Defender for Endpoint CSP の使用の詳細については [、「WindowsAdvanc
 > [!NOTE]
 > オンボーディングポリシーとオフボード ポリシーを同じデバイスに同時に展開し、それ以外の場合は予期しない競合を引き起こす可能性があります。
 
-1. ポータルからオフボード パッケージ[Microsoft 365 Defenderします](https://security.microsoft.com/)。
+1. ポータルからオフボード パッケージ<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderします</a>。
 
    1. ナビゲーション ウィンドウで、[エンドポイント **デバイス** 設定 \> **オフ** \> **ボード]** \> **を選択します**。
 
@@ -94,10 +95,10 @@ Defender for Endpoint CSP の使用の詳細については [、「WindowsAdvanc
 > [!IMPORTANT]
 > Offboarding を使用すると、デバイスはポータルへのセンサー データの送信を停止しますが、デバイスからのデータ (通知への参照を含む) は最大 6 か月間保持されます。
 
-## <a name="related-topics"></a>関連項目
-- [グループ ポリシー Windowsデバイスのオンボード](configure-endpoints-gp.md)
-- [デバイスWindowsデバイスのオンボードMicrosoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
-- [ローカル Windowsを使用してデバイスをオンボードする](configure-endpoints-script.md)
+## <a name="related-topics"></a>関連トピック
+- [グループ ポリシーを使用してデバイスをオンボードする](configure-endpoints-gp.md)
+- [Microsoft Endpoint Configuration Manager を使用した Windows デバイスのオンボード](configure-endpoints-sccm.md)
+- [ローカル スクリプトを使用した Windows デバイスのオンボード](configure-endpoints-script.md)
 - [非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード](configure-endpoints-vdi.md)
 - [新しくオンボードされた Microsoft Defender for Endpoint デバイスで検出テストを実行する](run-detection-test.md)
 - [Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング](troubleshoot-onboarding.md)

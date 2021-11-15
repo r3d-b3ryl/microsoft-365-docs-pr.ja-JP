@@ -14,12 +14,13 @@ audience: ITPro
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: bb2c66c8ebb04b32fb409a749b7f1872361dd4a4
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.custom: admindeeplinkDEFENDER
+ms.openlocfilehash: f97a5ae486ff2ebd39a1adedeb008ac675ee9941
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882239"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962821"
 ---
 # <a name="device-control-printer-protection"></a>デバイス制御のプリンター保護
 
@@ -135,7 +136,7 @@ CSP は、'ApprovedUsbPrintDevices' プロパティを使用して承認され�
 
 ## <a name="view-device-control-printer-protection-data-in-microsoft-defender-for-endpoint-portal"></a>Microsoft Defender for Endpoint ポータルでデバイスコントロールプリンター保護データを表示する
 
-この[Microsoft 365は、](https://security.microsoft.com)上記の Device Control Printer Protection ポリシーによってブロックされた印刷を示しています。
+この<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365は、</a>上記の Device Control Printer Protection ポリシーによってブロックされた印刷を示しています。
 
 ```kusto
 DeviceEvents

@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 description: Microsoft Defender の脅威フィルター スタックを通じて受信メッセージのパスに従って、Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d920ed0bfcbe5f341395740b01ad17c7eed4ff77
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6e883d4d6aea6af739a8156027ffa6968638ef4d
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60169457"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962605"
 ---
 # <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 でのステップ バイ ステップの脅威に対する保護
 
@@ -117,7 +117,7 @@ Microsoft Defender for Office 365保護またはフィルター 処理スタッ�
 
 3. **マルウェアの ZAP** は、既に Exchange Online メールボックスに配信されている悪意のあるマルウェア メッセージをさかのぼって検出して無効化します。
 
-4. **フィッシングの ZAP は**、既にメールボックスに配信されている悪意のあるスパム メッセージをさかのぼって検出Exchange Onlineします。
+4. **スパムの ZAP** は、既に Exchange Online メールボックスに配信されている悪意のあるスパム メッセージをさかのぼって検出し無効化します。
 
 5. **キャンペーン ビューを** 使用すると、管理者は自動化を行わずに、どのチームよりも速く、より完全に攻撃の大きな画像を見ることができます。 Microsoft は、サービス全体で膨大な量のフィッシング対策、スパム対策、マルウェア対策データを活用してキャンペーンを特定し、管理者がターゲット、影響、フローなど、ダウンロード可能なキャンペーンの書き込みにも使用できるデータを最初から最後まで調査できます。
 
@@ -135,7 +135,7 @@ Microsoft Defender for Office 365保護またはフィルター 処理スタッ�
 
 :::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png" alt-text="Defender のフィルター処理のすべてのフェーズは、Office 365順に 1 ~ 4 です。":::
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 Microsoft Defender for Office 365 * 今すぐ _を **設定する必要** がありますか? このスタック (_now*) を使用して[](protect-against-threats.md)、組織の保護を開始します。
 

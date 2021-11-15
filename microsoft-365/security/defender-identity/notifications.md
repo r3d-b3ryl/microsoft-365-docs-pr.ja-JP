@@ -6,13 +6,14 @@ ms.topic: how-to
 author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
+ms.custom: admindeeplinkDEFENDER
 manager: raynew
-ms.openlocfilehash: dfb3c5e1edbbf77a95a1e1d5888b070a12bfd7a7
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: b33ee0f59ca02d305ec703ab47aa1d0f2f95b8da
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59353624"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963337"
 ---
 # <a name="defender-for-identity-notifications-in-microsoft-365-defender"></a>Defender for Identity notifications in Microsoft 365 Defender
 
@@ -30,7 +31,7 @@ ms.locfileid: "59353624"
 
 このMicrosoft 365 Defender、Defender for Identity で正常性の問題に関する電子メール通知の受信者を追加できます。
 
-1. [[Microsoft 365 Defender]](https://security.microsoft.com/)で、[id]**設定** に **移動します**。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">[Microsoft 365 Defender]</a>で、[id]**設定** に **移動します**。
 
     ![[ID] 設定に移動します。](../../media/defender-identity/settings-identities.png)
 
@@ -51,7 +52,7 @@ ms.locfileid: "59353624"
 
 このMicrosoft 365 Defender、検出されたアラートの電子メール通知の受信者を追加できます。
 
-1. [[Microsoft 365 Defender]](https://security.microsoft.com/)で、[id]**設定** に **移動します**。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">[Microsoft 365 Defender]</a>で、[id]**設定** に **移動します**。
 
     ![[ID] 設定に移動します。](../../media/defender-identity/settings-identities.png)
 
@@ -65,7 +66,7 @@ ms.locfileid: "59353624"
 
 Defender for Identity は、指名されたセンサーを介して Syslog サーバーにセキュリティと正常性アラートを送信することで、疑わしいアクティビティを検出した場合に通知できます。
 
-1. [[Microsoft 365 Defender]](https://security.microsoft.com/)で、[id]**設定** に **移動します**。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">[Microsoft 365 Defender]</a>で、[id]**設定** に **移動します**。
 
     ![[ID] 設定に移動します。](../../media/defender-identity/settings-identities.png)
 

@@ -16,14 +16,15 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 95f20e1e5ac3c623decb131929d3c27164f3a96b
-ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
+ms.openlocfilehash: 156ddfc6a44074db23369ca20e8d7c3d4471459e
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60908007"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963121"
 ---
 # <a name="device-discovery-overview"></a>デバイス検出の概要
 
@@ -136,7 +137,7 @@ DeviceNetworkEvents
 
 ## <a name="changed-behavior"></a>変更された動作
 
-次のセクションでは、この機能が有効になっているときに Microsoft Defender for Endpoint または Microsoft 365 セキュリティ センターで確認する変更点を示します。
+次のセクションでは、この機能を有効にした場合に Microsoft Defender for Endpoint<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">および</a>/またはセキュリティ センター Microsoft 365変更点を示します。
 
 1. Microsoft Defender for Endpoint にオンボードされていないデバイスは、デバイス インベントリ、高度な検索、API クエリに表示される必要があります。 これにより、クエリ結果のサイズが大幅に増加する可能性があります。
     1. Advanced Hunting の "DeviceInfo" テーブルと "DeviceNetworkInfo" テーブルには、検出されたデバイスが保持されます。 "OnboardingStatus" 属性を使用して、これらのデバイスをフィルター処理できます。

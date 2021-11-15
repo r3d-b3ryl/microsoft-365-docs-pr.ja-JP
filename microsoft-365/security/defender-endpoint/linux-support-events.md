@@ -14,14 +14,15 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d27a3cfb2d3c068a1d2b26ffba6b0061b143503f
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: b3c01215db133f5e39c56596c051e071388b5b80
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60699295"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963277"
 ---
 # <a name="troubleshoot-missing-events-or-alerts-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 上の Microsoft Defender for Endpoint の不足しているイベントまたはアラートの問題のトラブルシューティング
 
@@ -31,7 +32,7 @@ ms.locfileid: "60699295"
 
 - [Linux 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md)
 
-この記事では、ポータルで不足しているイベントやアラートを軽減するための一般的なMicrosoft 365 Defender[します](https://security.microsoft.com/)。
+この記事では、ポータルで不足しているイベントやアラートを軽減するための一般的なMicrosoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">します</a>。
 
 **Microsoft Defender for Endpoint** がデバイスに正しくインストールされると、ポータルにデバイス ページが生成されます。  記録されたイベントはすべて、デバイス ページの [タイムライン] タブ、または高度な検索ページで確認できます。 このセクションでは、一部またはすべての予期されるイベントが見つからない場合のトラブルシューティングを行います。
 たとえば、すべての _CreatedFile_ イベントが見つからない場合です。

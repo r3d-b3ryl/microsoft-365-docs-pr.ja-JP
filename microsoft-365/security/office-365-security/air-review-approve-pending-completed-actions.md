@@ -15,16 +15,17 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
+ms.custom: admindeeplinkDEFENDER
 description: Microsoft Defender for microsoft Defender for Office 365プラン 2 の自動調査および応答機能の修復アクションについて説明します。
 ms.technology: mdo
 ms.prod: m365-security
 ms.date: 06/10/2021
-ms.openlocfilehash: 4d81fe5e2baa4146136d7e55461290a31ef2462b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5321f1cbe35727649c80dc17778dc843630f695e
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196623"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962737"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>修復アクションを確認および管理Office 365
 
@@ -48,7 +49,7 @@ ms.locfileid: "60196623"
 
 ## <a name="incident-queue"></a>インシデント キュー
 
-1. ポータル ( ) Microsoft 365 Defender開 <https://security.microsoft.com> き、サインインします。
+1. ポータルを<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">開Microsoft 365 Defenderサインイン</a>します。
 2. ナビゲーション ウィンドウで、[インシデント] を選択 **し、[インシデント&通知>選択します**。
 3. インシデント名を選択して、概要ページを開きます。
 4. [証拠と **応答] タブを選択** します。
@@ -57,7 +58,7 @@ ms.locfileid: "60196623"
 
 ## <a name="investigation-queue"></a>調査キュー
 
-1. ポータル ( ) Microsoft 365 Defender開 <https://security.microsoft.com> き、サインインします。
+1. ポータルを<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">開Microsoft 365 Defenderサインイン</a>します。
 2. [アラート/インシデント] ページから移動します。
 3. [調査] ページで、[保留中のアクション **] タブに移動** します。
 4. リストからアイテムを選択します。 サイド ウィンドウが開きます。
@@ -65,7 +66,7 @@ ms.locfileid: "60196623"
 
 ## <a name="action-center"></a>アクション センター
 
-1. ポータル ( ) Microsoft 365 Defender開 <https://security.microsoft.com> き、サインインします。
+1. ポータルを<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">開Microsoft 365 Defenderサインイン</a>します。
 2. ナビゲーション ウィンドウで、[アクション センター] **を選択します**。
 3. [保留中 **] タブ** で、承認を待っているアクションの一覧を確認します。
    - [ **調査ページを開く]** を選択して、調査の詳細を表示します。
@@ -74,7 +75,7 @@ ms.locfileid: "60196623"
 
 ## <a name="investigation-and-remediation-investigations-queue"></a>調査と修復の調査キュー
 
-1. ポータル ( ) Microsoft 365 Defender開 <https://security.microsoft.com> き、サインインします。
+1. ポータルを<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">開Microsoft 365 Defenderサインイン</a>します。
 2. 保留中の調査を開きます。
 3. [調査] ページで、[保留中のアクション **] タブに移動** します。
 4. リストからアイテムを選択します。 サイド ウィンドウが開きます。

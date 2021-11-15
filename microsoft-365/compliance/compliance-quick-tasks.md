@@ -11,14 +11,15 @@ ms.service: O365-seccomp
 ms.collection:
 - m365-security-compliance
 - m365initiative-compliance
+ms.custom: admindeeplinkDEFENDER
 ms.localizationpriority: medium
 description: コンプライアンスを迅速に開始するのに役立つタスクについては、Microsoft 365。
-ms.openlocfilehash: 422459bb9831fff265e67c3887fab4288f468f0f
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 640569aef5ed1b632d11523af1d73321579f276e
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335444"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963013"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Microsoft 365 コンプライアンスを開始するためのクイック タスク
 
@@ -47,7 +48,7 @@ ms.locfileid: "60335444"
 > [!IMPORTANT]
 > セキュリティとコンプライアンスは、ほとんどの組織で緊密に統合されています。 セキュリティとコンプライアンスの両方に対する防御の詳細なアプローチを提供するために、組織が基本的なセキュリティ、脅威保護、ID およびアクセス管理領域に対応することが重要です。
 >
-> セキュリティ センター[でMicrosoft 365スコア](../security/defender/microsoft-secure-score.md)を確認Microsoft 365、次の記事で説明されているタスクを完了します。
+> セキュリティ センター[でMicrosoft 365スコア](../security/defender/microsoft-secure-score.md)を確認Microsoft 365、<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"></a>次の記事で説明されているタスクを完了します。
 >
 > - [セキュリティロードマップ - 最初の 30 日間、90 日間、それ以降の最優先事項](../security/office-365-security/security-roadmap.md)
 > - [自宅での作業をサポートするセキュリティ チームの上位 12 のタスク](../security/top-security-tasks-for-remote-work.md)
@@ -156,6 +157,6 @@ DLP ポリシーを構成する手順については、DLP ポリシーの作成
 
 従業員は、幅広いプラットフォームとサービスでデータを作成、管理、共有するためのアクセスを増やしています。 ほとんどの場合、組織には、コンプライアンス要件と従業員のプライバシー基準を満たしながら、組織全体のリスクを特定および軽減するためのリソースとツールが限られています。 これらのリスクには、従業員を退出してデータを盗み、偶発的な過剰共有や悪意のある意図による組織外の情報のデータ漏洩が含まれる場合があります。
 
-[Microsoft 365](insider-risk-management-policies.md)の Insider リスク管理は、サービスとサードパーティのインジケーターの全幅を使用して、リスクの高いユーザー アクティビティをすばやく特定し、トリアージし、行動するのに役立ちます。 Microsoft 365 および Microsoft Graph のログを使用すると、インサイダー リスク管理を使用して、リスク インジケーターを特定し、これらのリスクを軽減するためのアクションを実行するための特定のポリシーを定義できます。
+[Microsoft 365](insider-risk-management-policies.md)の Insider リスク管理は、サービスとサードパーティのインジケーターの全幅を使用して、リスクの高いユーザー アクティビティをすばやく特定し、トリアージし、行動するのに役立ちます。 Microsoft 365 および Microsoft Graph のログを使用することにより、インサイダー リスク管理では、特定のポリシーを定義してリスク指標を特定し、これらのリスクを軽減するためのアクションを実行できます。
 
 インサイダー リスク管理ポリシーを計画および構成する手順については、「インサイダー[](insider-risk-management-plan.md)リスク管理の計画」および「インサイダー リスク管理の概要」を[参照してください](insider-risk-management-configure.md)。 インサイダー リスク管理のライセンス情報については、「セキュリティMicrosoft 365コンプライアンスに関する[ライセンス ガイダンス&参照してください](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#insider-risk-management)。

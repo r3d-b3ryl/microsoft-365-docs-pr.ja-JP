@@ -16,14 +16,15 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 914e246fe4c276a624989b189a3358c1821194fd
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: c481f846b91ee2072f453d4ad8e9df13b4dd534f
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882923"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60960813"
 ---
 # <a name="configure-device-discovery"></a>デバイス検出の構成
 
@@ -42,11 +43,11 @@ ms.locfileid: "60882923"
 
 > [!IMPORTANT]
 > プレビューの場合は、最初にプレビュー機能をオンにする必要Microsoft 365 Defender。
-> その後、セキュリティ センターでデバイス検出Microsoft 365アクセスできます。 管理されていないデバイスとセキュリティに関する推奨事項の一覧は、Microsoft 365 Defender と Microsoft 365 の両方のセキュリティ センターで使用できます。ダッシュボード タイルは Microsoft 365 セキュリティ センターでのみ使用できます。
+> 次に、セキュリティ センターでデバイス検出<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365アクセスできます</a>。 管理されていないデバイスとセキュリティに関する推奨事項の一覧は Microsoft 365 Defender セキュリティ センターと Microsoft 365 セキュリティ センターの両方で使用できます。ダッシュボード タイルは Microsoft 365 セキュリティ センターでのみ使用できます。
 
-セキュリティ センターで次の構成Microsoft 365実行します。
+セキュリティ センターで次の<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">構成Microsoft 365実行します</a>。
 
-1. [デバイスの検出 **設定 >に移動します**。
+1. [デバイスの検出 **設定**  >  **に移動します**。
 2. オンボード デバイスで使用する検出モードを選択します。
 3. 標準検出を使用する場合は、アクティブなプロブに使用するデバイス (すべてのデバイスまたはデバイス タグを指定してサブセット上) を選択します。
 4. [**保存**] をクリックします。

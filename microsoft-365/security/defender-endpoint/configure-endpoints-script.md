@@ -1,5 +1,5 @@
 ---
-title: ローカル Windowsを使用してデバイスをオンボードする
+title: ローカル スクリプトを使用した Windows デバイスのオンボード
 description: ローカル スクリプトを使用してデバイスに構成パッケージを展開し、サービスへのデバイスのオンボーディングを有効にします。
 keywords: ローカル スクリプトを使用してデバイスを構成し、デバイス管理を行い、Microsoft Defender for Endpoint デバイスを構成する
 search.appverid: met150
@@ -13,16 +13,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 74e0289c2233a4df1a4e9810a31e960a49078177
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: ded0c6ac55fbf6265fb77e0391700aa2a70e0756
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60239842"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962941"
 ---
-# <a name="onboard-windows-devices-using-a-local-script"></a>ローカル Windowsを使用してデバイスをオンボードする
+# <a name="onboard-windows-devices-using-a-local-script"></a>ローカル スクリプトを使用した Windows デバイスのオンボード
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -41,14 +42,14 @@ ms.locfileid: "60239842"
 
 ## <a name="onboard-devices"></a>デバイスのオンボード 
 
-1.  サービス オンボーディング ウィザードから.zipした gp 構成 *パッケージ*(WindowsDefenderATPOnboardingPackage.zip) を開きます。 Defender ポータルからパッケージを取得[Microsoft 365することもできます](https://security.microsoft.com/)。
+1.  サービス オンボーディング ウィザードから.zipした gp 構成 *パッケージ*(WindowsDefenderATPOnboardingPackage.zip) を開きます。 また、次のポータルから<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">パッケージをMicrosoft 365 Defenderすることもできます</a>。
 
     1. ナビゲーション ウィンドウで、[エンドポイント **デバイス設定**  >    >  **オンボーディング]**  >  **を選択します**。
 
 
 [[](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)エンドポイント用 Defender [Visio展開](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx)] のさまざまなパスを確認するには、PDF またはドキュメントを参照してください。
 
-1. サービス オンボーディング ウィザードから.zipした gp 構成 *パッケージ*(WindowsDefenderATPOnboardingPackage.zip) を開きます。 Defender ポータルからパッケージを取得[Microsoft 365することもできます](https://security.microsoft.com/)。
+1. サービス オンボーディング ウィザードから.zipした gp 構成 *パッケージ*(WindowsDefenderATPOnboardingPackage.zip) を開きます。 また、次のポータルから<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">パッケージをMicrosoft 365 Defenderすることもできます</a>。
     1. ナビゲーション ウィンドウで、[エンドポイント **デバイス設定** \>  \> **オンボーディング]** \> **を選択します**。
     2. オペレーティング Windows 10としてWindows 11 を選択します。
     3. [展開方法 **] フィールドで** 、[ローカル スクリプト] **を選択します**。
@@ -103,7 +104,7 @@ Name 型は D-WORD です。 使用可能な値は次のとおりです。
 > [!NOTE]
 > オンボーディングポリシーとオフボード ポリシーを同じデバイスに同時に展開し、それ以外の場合は予期しない競合を引き起こす可能性があります。
 
-1. ポータルからオフボード パッケージ[Microsoft 365 Defenderします](https://security.microsoft.com/)。
+1. ポータルからオフボード パッケージ<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderします</a>。
     1. ナビゲーション ウィンドウで、[エンドポイント **デバイス** 設定 \> **オフ** \> **ボード]** \> **を選択します**。
     2. オペレーティング Windows 10としてWindows 11 を選択します。
     3. [展開方法 **] フィールドで** 、[ローカル スクリプト] **を選択します**。
@@ -132,14 +133,14 @@ Name 型は D-WORD です。 使用可能な値は次のとおりです。
 
 ### <a name="monitor-devices-using-the-portal"></a>ポータルを使用してデバイスを監視する
 
-1. [ポータル] Microsoft 365 Defender移動します。
+1. [ポータル] <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender移動します</a>。
 2. [デバイス **インベントリ] をクリックします**。
 3. デバイスが表示されているのを確認します。
 
-## <a name="related-topics"></a>関連項目
-- [グループ ポリシー Windowsデバイスのオンボード](configure-endpoints-gp.md)
-- [デバイスWindowsデバイスのオンボードMicrosoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
-- [モバイル Windowsツールを使用してデバイスをオンボードする](configure-endpoints-mdm.md)
+## <a name="related-topics"></a>関連トピック
+- [グループ ポリシーを使用してデバイスをオンボードする](configure-endpoints-gp.md)
+- [Microsoft Endpoint Configuration Manager を使用した Windows デバイスのオンボード](configure-endpoints-sccm.md)
+- [モバイル デバイス管理ツールを使用した Windows デバイスのオンボード](configure-endpoints-mdm.md)
 - [非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード](configure-endpoints-vdi.md)
 - [新しくオンボードされた Microsoft Defender for Endpoint デバイスで検出テストを実行する](run-detection-test.md)
 - [Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング](troubleshoot-onboarding.md)

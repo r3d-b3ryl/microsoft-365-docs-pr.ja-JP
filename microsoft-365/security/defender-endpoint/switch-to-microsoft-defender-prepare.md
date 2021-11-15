@@ -18,15 +18,17 @@ ms.collection:
 - m365solution-mcafeemigrate
 - m365solution-symantecmigrate
 ms.topic: article
-ms.custom: migrationguides
+ms.custom:
+- migrationguides
+- admindeeplinkDEFENDER
 ms.date: 10/07/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 0b5fb7ee6a10ef6aa0fc1448f805ff14d51c3582
-ms.sourcegitcommit: 166bf635c0905ae12c04b1865cb17aadef81e82a
+ms.openlocfilehash: 44b347248d5f9e42bba72a0aea7c315bf10a4245
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60245719"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60960792"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>エンドポイント用 Microsoft Defender に切り替える - フェーズ 1: 準備
 
@@ -83,14 +85,14 @@ ms.locfileid: "60245719"
 
 4. 組織内のエンドポイント (デバイスなど) がプロキシを使用してインターネットにアクセスする場合は [、「Defender for Endpoint setup: Network configuration」を参照してください](production-deployment.md#network-configuration)。
 
-この時点で、管理者ポータル () を使用するセキュリティ管理者およびセキュリティオペレーターにアクセス権を付与Microsoft 365 Defenderできます [https://security.microsoft.com](https://security.microsoft.com) 。
+この時点で、管理者ポータルを使用するセキュリティ管理者およびセキュリティオペレーターにアクセス権を付与<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderします</a>。
 
 > [!NOTE]
-> ポータルMicrosoft 365 Defender Defender for Endpoint ポータルと呼ばれる場合があります。. [https://security.microsoft.com](https://security.microsoft.com) 以前のMicrosoft Defender セキュリティ センター ( https://securitycenter.windows.com) は、すぐにポータルにMicrosoft 365 Defenderされます。 詳細については、「ポータルの概要[Microsoft 365 Defender」を参照してください](portal-overview.md)。
+> ポータルMicrosoft 365 Defender Defender for Endpoint ポータルと呼ばれる場合があります。. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a> 以前のMicrosoft Defender セキュリティ センター ( https://securitycenter.windows.com) は、すぐにポータルにMicrosoft 365 Defenderされます。 詳細については、「ポータルの概要[Microsoft 365 Defender」を参照してください](portal-overview.md)。
 
 ## <a name="grant-access-to-the-microsoft-365-defender-portal"></a>ポータルへのアクセス権をMicrosoft 365 Defenderする
 
-このMicrosoft 365 Defender ( ) は、Defender for Endpoint の機能にアクセスして [https://security.microsoft.com](https://security.microsoft.com) 構成する場所です。 詳細については、「ポータルの[概要」をMicrosoft 365 Defenderしてください](use.md)。
+この<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderは、Defender</a> for Endpoint の機能にアクセスして構成する場所です。 詳細については、「ポータルの[概要」をMicrosoft 365 Defenderしてください](use.md)。
 
 基本的なアクセス許可Microsoft 365 Defenderロール ベースのアクセス制御 (RBAC) を使用して、ポータルへのアクセス許可を付与できます。 アクセス許可を細かく制御するには、RBAC を使用することをお勧めします。
 
@@ -114,10 +116,10 @@ ms.locfileid: "60245719"
 
 |機能|オペレーティング システム|リソース|
 |---|---|---|
-|[エンドポイントの検出と応答](overview-endpoint-detection-response.md)(EDR)|[Windows 10](/windows/release-health/release-information)<br/><br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/>Windows Server 2022 <br/><br/>[Windowsサーバー 1803 以降](/windows-server/get-started/whats-new-in-windows-server-1803)|[コンピューター プロキシとインターネット接続の設定を構成する](configure-proxy-internet.md)|
-|EDR|[Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016)<br/><br/>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[WindowsServer 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/><br/>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)|[プロキシとインターネット接続の設定を構成する](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings)|
+|[エンドポイントの検出と応答](overview-endpoint-detection-response.md)(EDR)|[Windows 10](/windows/release-health/release-information)<br/><br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/>Windows Server 2022 <br/><br/>[Windows Server 1803 以降](/windows-server/get-started/whats-new-in-windows-server-1803)|[コンピューター プロキシとインターネット接続の設定を構成する](configure-proxy-internet.md)|
+|EDR|[Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016)<br/><br/>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/><br/>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)|[プロキシとインターネット接続の設定を構成する](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings)|
 |EDR|macOS:<br/> 11.3.1 (Big Sur)<br/>10.15 (Catalina)<br/>10.14 (Mojave)|[macOS 上のエンドポイントの Defender: ネットワーク接続](microsoft-defender-endpoint-mac.md#network-connections)|
-|[Microsoft Defender ウイルス対策](microsoft-defender-antivirus-in-windows-10.md)|[Windows 10](/windows/release-health/release-information) <br/><br/> [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/> Windows Server 2022 <br/><br/> [Windowsサーバー 1803 以降](/windows-server/get-started/whats-new-in-windows-server-1803) <br/><br/> [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)|[Microsoft Defender ウイルス対策 ネットワーク接続を構成および検証する](configure-network-connections-microsoft-defender-antivirus.md)|
+|[Microsoft Defender ウイルス対策](microsoft-defender-antivirus-in-windows-10.md)|[Windows 10](/windows/release-health/release-information) <br/><br/> [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/> Windows Server 2022 <br/><br/> [Windows Server 1803 以降](/windows-server/get-started/whats-new-in-windows-server-1803) <br/><br/> [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)|[Microsoft Defender ウイルス対策 ネットワーク接続を構成および検証する](configure-network-connections-microsoft-defender-antivirus.md)|
 |ウイルス対策|macOS:<br/> 11.3.1 (Big Sur)<br/>10.15 (Catalina)<br/>10.14 (Mojave)|[macOS 上のエンドポイントの Defender: ネットワーク接続](microsoft-defender-endpoint-mac.md#network-connections)|
 |ウイルス対策|Linux:<br/> RHEL 7.2+<br/>CentOS Linux 7.2+<br/>Ubuntu 16 LTS 以上の LTS<br/>SLES 12+<br/>Debian 9+<br/>Oracle Linux 7.2|[Defender for Endpoint on Linux: Network connections](microsoft-defender-endpoint-linux.md#network-connections)|
 

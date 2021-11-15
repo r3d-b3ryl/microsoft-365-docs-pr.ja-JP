@@ -14,14 +14,15 @@ ms.collection: M365-security-compliance
 ms.custom:
 - Ent_TLGs
 - admindeeplinkMAC
+- admindeeplinkDEFENDER
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: このテスト ラボ ガイドを使用して、エンタープライズ テスト環境Microsoft 365セキュリティ設定Microsoft 365を有効にします。
-ms.openlocfilehash: 2042148c0738ab1304ec721cdb00ce22b427dc72
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3976ad11b6cac7ae74e0fd2d94ad35b610273052
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200163"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60960864"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-for-enterprise-test-environment"></a>エンタープライズ テストMicrosoft 365のセキュリティMicrosoft 365強化
 
@@ -66,13 +67,13 @@ ms.locfileid: "60200163"
 
 Defender for Office 365、SharePoint、OneDrive、Microsoft Teamsファイルを誤って共有する組織を保護します。
 
-1. コンプライアンス センターの [セキュリティ &に移動し](https://protection.office.com) 、グローバル管理者アカウントでサインインします。
+1. コンプライアンス センターの <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">セキュリティ &に移動し</a> 、グローバル管理者アカウントでサインインします。
 
 2. 左側のナビゲーション ウィンドウの [脅威の管理] で **、[ポリシー**] をクリックし、[添付ファイルセーフ **クリックします**。 
 
 3. [**ファイルの保護] SharePoint、OneDrive、およびMicrosoft Teams。** [ATP **を有効にする] をSharePoint、OneDrive、およびMicrosoft Teams**。
 
-4. **[保存]** をクリックします。
+4. [**保存**] をクリックします。
 
 
 ### <a name="enable-anti-malware"></a>マルウェア対策を有効にする
@@ -96,7 +97,7 @@ Microsoft 365 の脅威管理は、組織のデータへのモバイル デバ�
 
 セキュリティ ダッシュボードを表示するには、次の方法を実行します。
 
-1. 必要に応じて、コンプライアンス センターの [セキュリティ &に移動](https://protection.office.com) し、グローバル管理者アカウントでサインインします。
+1. 必要に応じて、コンプライアンス センターの <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">セキュリティ &に移動</a> し、グローバル管理者アカウントでサインインします。
 
 2. 左側のナビゲーション ウィンドウの [脅威の管理] **で、[ダッシュボード**] を **クリックします**。
 
@@ -123,6 +124,6 @@ Microsoft Secure Score は、サブスクリプションで利用可能な機能
 
 [Microsoft 365 Enterprise のテスト ラボ ガイド](m365-enterprise-test-lab-guides.md)
 
-[Microsoft 365 for Enterprise の概要](microsoft-365-overview.md)
+[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
 
 [Microsoft 365 for enterprise のドキュメント](/microsoft-365-enterprise/)

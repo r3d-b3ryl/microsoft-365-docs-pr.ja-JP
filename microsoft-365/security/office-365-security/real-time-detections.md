@@ -13,15 +13,17 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: エクスプローラーまたはリアルタイム検出を使用して、脅威を効率的に調査して対応します。
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9cced68d084bb5f4625f745dfd0f19db16cece9c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c0a2d76904c7f04974315c92425ca30700b10497
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176381"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962953"
 ---
 # <a name="explorer-and-real-time-detections-basics"></a>エクスプローラーとリアルタイム検出の基本
 
@@ -41,7 +43,7 @@ ms.locfileid: "60176381"
 
 組織に microsoft [Defender for Office 365](defender-for-office-365.md)がある場合、アクセス許可 [](#required-licenses-and-permissions)がある場合は、エクスプローラー **(脅威****エクスプローラーとも呼** ばれる) またはリアルタイム検出を使用して、脅威を検出して修復できます。
 
-[ポータル( Microsoft 365 Defender] で、[電子メール グループ&] に移動し、[エクスプローラー] または [リアルタイム検出] <https://security.microsoft.com> **を選択します**。 
+[ポータル] <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender、[</a>メール] グループ&**に** 移動し、[**エクスプローラー**  ] または [リアルタイム検出]**を選択します**。
 
 これらのツールで以下のことができます。
 
@@ -85,7 +87,7 @@ ms.locfileid: "60176381"
 - [Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)
 - [Exchange Online のアクセス許可](/e/exchange/permissions-exo/permissions-exo)
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 - [脅威エクスプローラーは、電子メール エンティティ ページで電子メールの詳細を収集します。](mdo-email-entity-page.md)
 - [配信された悪意のあるメールの検索と調査](investigate-malicious-email-that-was-delivered.md)

@@ -14,14 +14,15 @@ ms.collection: M365-security-compliance
 ms.custom:
 - Ent_TLGs
 - admindeeplinkMAC
+- admindeeplinkDEFENDER
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: このテスト ラボ ガイドを使用して、エンタープライズ テスト環境のドキュメントに保持ラベルを作成Microsoft 365使用します。
-ms.openlocfilehash: 6f6e57ec31d889fac031caf6cb6be94f483a93e9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 517183ca8e61415ec2817683c4a1ce88c251301b
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198507"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962569"
 ---
 # <a name="data-classification-for-your-microsoft-365-for-enterprise-test-environment"></a>エンタープライズ テスト環境Microsoft 365データ分類
 
@@ -80,7 +81,7 @@ ms.locfileid: "60198507"
 
 まず、オンライン チーム サイトに機密レベルSharePoint作成します。
   
-1. ブラウザーのプライベート インスタンスを使用して、グローバル[管理者アカウントを使用](https://admin.microsoft.com)Microsoft 365 管理センターにサインインします。
+1. ブラウザーのプライベート インスタンスを使用して、グローバル<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理者アカウントを使用</a>Microsoft 365 管理センターにサインインします。
 1. タイルの一覧で、[タイル] を **SharePoint。**
 1. ブラウザーの [新 **SharePoint]** タブで、[サイトの作成]**を選択します**。
 1. **[サイトの作成]** ページで、**[チーム サイト]** を選択します。
@@ -114,6 +115,6 @@ ms.locfileid: "60198507"
 
 [Microsoft 365 Enterprise のテスト ラボ ガイド](m365-enterprise-test-lab-guides.md)
 
-[Microsoft 365 for Enterprise の概要](microsoft-365-overview.md)
+[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
 
 [Microsoft 365 for enterprise のドキュメント](/microsoft-365-enterprise/)

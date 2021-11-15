@@ -14,30 +14,30 @@ ms.collection:
 search.appverid:
 - MET150
 description: MDE のお客様向けソリューションを使用して、Microsoft 365コンプライアンス ソリューションに macOS デバイスMicrosoft Intuneオンボードおよびオフボードする方法 (プレビュー)
-ms.openlocfilehash: c1ed019f6191d930da8c6b1d0674625e9c27d1b6
-ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
+ms.openlocfilehash: a1d647fae55b091b8c12df885ce28aa4f1275a1a
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "60792486"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963001"
 ---
-# <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers-preview"></a>Microsoft Defender for Endpoint のお客様向け Intune を使用したコンプライアンス ソリューションへのオンボードおよびオフボード macOS デバイス (プレビュー)
+# <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers-preview"></a>Microsoft Defender for Endpoint のお客様向け Intune を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)
 
 > [!IMPORTANT]
 > Microsoft Defender  for Endpoint (MDE) を macOS デバイスに展開している場合は、次の手順を実行します。
 
-## <a name="get-registered"></a>登録する
+<!--## Get registered
 
-この機能にアクセスするには、テナントを Microsoft に登録する必要があります。 macOS[のサポートに登録Microsoft 365を参照してください](https://aka.ms/EndpointDLPIgnite21-Previews)。
+To get access to this feature, you must register your tenant with Microsoft. See, [get registered for Microsoft 365 macOS support](https://aka.ms/EndpointDLPIgnite21-Previews).-->
 
 **適用対象:**
 
 - MDE を macOS デバイスに展開しているお客様。
-- [Microsoft 365エンドポイント データ損失防止 (DLP)](./endpoint-dlp-learn-about.md)
-- [Insider リスク管理](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [Microsoft 365 エンドポイントのデータ損失防止 (DLP)](./endpoint-dlp-learn-about.md)
+- [インサイダー リスク管理](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 - macOS デバイス[が Intune](/mem/intune/fundamentals/deployment-guide-platform-macos)にオンボードされ、アプリに登録ポータル サイト[します](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp)。 
 - サーバー センターにアクセス[Microsoft エンドポイント マネージャーする](https://endpoint.microsoft.com/#home)

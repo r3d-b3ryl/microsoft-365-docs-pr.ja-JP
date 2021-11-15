@@ -14,16 +14,17 @@ ms.localizationpriority: medium
 ms.custom:
 - next-gen
 - edr
+- admindeeplinkDEFENDER
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 6a7ac6e546ab7578ccf914c29304c1a88139094e
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 99f9756170345941f38918c5f31336c1e6bc5ad7
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882131"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962785"
 ---
 # <a name="behavioral-blocking-and-containment"></a>動作ブロックと封じ込め
 
@@ -57,13 +58,13 @@ ms.locfileid: "60882131"
 
 ## <a name="components-of-behavioral-blocking-and-containment"></a>動作のブロックと格納のコンポーネント
 
-- **クライアント上のポリシー駆動型攻撃 [表面の縮小ルール](attack-surface-reduction.md)** 定義済みの一般的な攻撃動作は、攻撃表面の縮小ルールに従って実行されません。 このような動作を実行しようとすると、ポータル( ) の情報Microsoft 365 Defender [https://security.microsoft.com](https://security.microsoft.com) として表示されます。 攻撃表面の縮小ルールは既定では有効になっていません。ポリシーは、Microsoft 365 Defender[ポータルで構成します](microsoft-defender-security-center.md)。
+- **クライアント上のポリシー駆動型攻撃 [表面の縮小ルール](attack-surface-reduction.md)** 定義済みの一般的な攻撃動作は、攻撃表面の縮小ルールに従って実行されません。 このような動作を実行しようとすると、通知通知として<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender表示されます</a>。 攻撃表面の縮小ルールは既定では有効になっていません。ポリシーは、Microsoft 365 Defender[ポータルで構成します](microsoft-defender-security-center.md)。
 
 - **[クライアントの動作のブロック](client-behavioral-blocking.md)** エンドポイント上の脅威は機械学習によって検出され、ブロックされ、自動的に修復されます。 (クライアントの動作ブロックは既定で有効になっています)。
 
 - **[フィードバック ループブロック](feedback-loop-blocking.md)** (高速保護とも呼ばれます) 脅威検出は、行動インテリジェンスを通じて観察されます。 脅威は停止され、他のエンドポイントで実行されません。 (フィードバック ループのブロックは既定で有効になっています)。
 
-- **[ブロック モードでのエンドポイントEDR応答 (EDR)](edr-in-block-mode.md)** 侵害後の保護によって観察される悪意のあるアーティファクトや動作はブロックされ、含まれる。 EDRウイルス対策ソリューションではない場合でも、ブロック モードMicrosoft Defender ウイルス対策機能します。 (EDRモードの設定は既定では有効になっていません。既定では有効Microsoft 365 Defender)。
+- **[ブロック モードでのエンドポイントの](edr-in-block-mode.md)** 検出と応答 (EDR) 侵害後の保護によって観察される悪意のあるアーティファクトまたは動作がブロックされ、含まれる。 EDRウイルス対策ソリューションではない場合でも、ブロック モードMicrosoft Defender ウイルス対策機能します。 (EDRモードの設定は既定では有効になっていません。既定では有効Microsoft 365 Defender)。
 
 Microsoft は引き続き脅威保護の機能を向上させるので、行動のブロックと格納の領域でさらに多くのことを期待してください。 今計画されている計画と展開を確認するには、次のロードマップを[Microsoft 365してください](https://www.microsoft.com/microsoft-365/roadmap)。
 

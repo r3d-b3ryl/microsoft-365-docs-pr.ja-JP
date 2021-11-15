@@ -15,13 +15,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - remotework
+ms.custom: admindeeplinkDEFENDER
 description: ランサムウェア、フィッシング、悪意のある添付ファイルなどのサイバー脅威からビジネス メールとデータを保護します。
-ms.openlocfilehash: 071b89bf941bf1c572dc90e9befe6d6c29b33bc5
-ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
+ms.openlocfilehash: 91099106cd9c90b415382619ee9747b02033ff18
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60724717"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962537"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>自宅での作業をサポートするセキュリティ チームの上位 12 のタスク
 
@@ -57,7 +58,7 @@ Microsoft のエンタープライズ プランを使用しているお客様は
 |12 |[脅威を監視し、アクションを実行する](#12-monitor-for-threats-and-take-action)|![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |
 
-開始する前に、セキュリティ[センター Microsoft 365の](./defender/microsoft-secure-score.md)セキュリティ スコアをMicrosoft 365してください。 一元化されたダッシュボードから、ID、データ、アプリ、デバイス、インフラストラクチャMicrosoft 365のセキュリティを監視および改善できます。 推奨されるセキュリティ機能を構成したり、セキュリティ関連のタスク (レポートの表示など) を実行したり、サードパーティのアプリケーションやソフトウェアを使用して推奨事項に対処したりするためのポイントが与えられる。 この記事で推奨されるタスクは、スコアを上げるとします。
+開始する前に、セキュリティ[センター Microsoft 365の](./defender/microsoft-secure-score.md)セキュリティ スコアをMicrosoft 365<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">してください</a>。 一元化されたダッシュボードから、ID、データ、アプリ、デバイス、インフラストラクチャMicrosoft 365のセキュリティを監視および改善できます。 推奨されるセキュリティ機能を構成したり、セキュリティ関連のタスク (レポートの表示など) を実行したり、サードパーティのアプリケーションやソフトウェアを使用して推奨事項に対処したりするためのポイントが与えられる。 この記事で推奨されるタスクは、スコアを上げるとします。
 
 ![Microsoft Secure Score のスクリーンショット。](../media/secure-score.png)
 
@@ -71,7 +72,7 @@ Microsoft のエンタープライズ プランを使用しているお客様は
 
 ****
 
-|計画|推奨事項|
+|プラン|推奨事項|
 |---|---|
 |Microsoft 365プラン (P1 または P2 Azure ADなし)|[Azure AD でセキュリティの既定値を有効にします](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。 Azure AD のセキュリティの既定値には、ユーザーと管理者用の MFA が含まれています。|
 |Microsoft 365 E3 (P1 Azure AD付き)|[一般的な条件付きアクセス ポリシー](/azure/active-directory/conditional-access/concept-conditional-access-policy-common)を使用して、次のポリシーを構成します。 <br/>- [管理者に MFA を要求する](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br/>- [すべてのユーザーに MFA を要求する](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br/> - [従来の認証をブロックする](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)|
@@ -121,7 +122,7 @@ Microsoft Defender for Office 365:
 
 ## <a name="5-turn-on-microsoft-365-defender"></a>5: 電源を入Microsoft 365 Defender
 
-Microsoft Defender for Office 365および Microsoft Defender for Identity が構成されたので、これらの機能からの結合された信号を 1 つのダッシュボードで表示できます。 [Microsoft 365 Defender](./defender/microsoft-365-defender.md)では、アラート、インシデント、自動調査と応答、およびワークロード全体の高度な検索 (Microsoft Defender for Identity、Defender for Office 365、Microsoft Defender for Endpoint、および Microsoft Cloud App Security) を、security.microsoft.com の 1 つのウィンドウにまとめ[ます。](https://security.microsoft.com).
+Microsoft Defender for Office 365および Microsoft Defender for Identity が構成されたので、これらの機能からの結合された信号を 1 つのダッシュボードで表示できます。 [Microsoft 365 Defender](./defender/microsoft-365-defender.md)では、アラート、インシデント、自動調査と応答、およびワークロード全体の高度な検索 (Microsoft Defender for Identity、defender for Office 365、Microsoft Defender for Endpoint、および Microsoft Cloud App Security) を 1 つのウィンドウにまとめます<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">。Microsoft 365 セキュリティ センター</a>.
 
 ![MTP ダッシュボードの図。](../media/top-ten-security-remote-work-mtp-dashboard.png)
 
@@ -133,7 +134,7 @@ Microsoft Defender for Office 365および Microsoft Defender for Identity が�
 
 ## <a name="6-configure-intune-mobile-app-protection-for-phones-and-tablets"></a>6: 電話とタブレットの Intune モバイル アプリ保護を構成する
 
-Microsoft Intuneモバイル アプリケーション管理 (MAM) を使用すると、これらのデバイスを管理することなく、電話やタブレット上の組織のデータを管理および保護できます。 次に、動作のしくみを示します。
+Microsoft Intune アプリケーション管理 (MAM) を使用すると、これらのデバイスを管理することなく、電話やタブレット上の組織のデータを管理および保護できます。 次に、動作のしくみを示します。
 
 - アプリ保護ポリシー (APP) を作成し、デバイス上でどのアプリを管理し、どのような動作を許可できるのかを決定します (管理アプリのデータが管理されていないアプリにコピーされるのを防ぐなど)。 プラットフォームごとに 1 つのポリシー (iOS、Android) を作成します。
 - アプリ保護ポリシーを作成した後、承認済みアプリと APP データ保護を要求する条件付きアクセス Azure ADを作成して、これらを適用します。
@@ -242,13 +243,13 @@ Microsoft では、次の記事で推奨されるアクションを実行して�
 
 ## <a name="12-monitor-for-threats-and-take-action"></a>12: 脅威を監視し、アクションを実行する
 
-Microsoft 365を監視し、適切なアクションを実行する方法がいくつか含まれています。 最適な開始点は、Microsoft 365 セキュリティ センター ( ) で、組織の Microsoft Secure Score、および注意を必要とするアラートまたはエンティティを [https://security.microsoft.com](https://security.microsoft.com) 表示できます。 [](./defender/microsoft-secure-score.md)
+Microsoft 365を監視し、適切なアクションを実行する方法がいくつか含まれています。 最適な開始点は、Microsoft 365<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"></a>セキュリティ センターで、組織の[Microsoft Secure Score、](./defender/microsoft-secure-score.md)および注意を必要とするアラートまたはエンティティを表示できます。
 
 - [新しいポータルのMicrosoft 365 Defenderする](./defender/microsoft-365-defender.md#the-microsoft-365-defender-portal)
 - [「セキュリティ ポータル」を参照Microsoft 365](./defender/portals.md)
 
 ## <a name="next-steps"></a>次の手順
 
-おめでとうございます! 最も重要なセキュリティ保護の一部をすばやく実装し、組織の安全性が高い。 これで、脅威保護機能 (Microsoft Defender for Endpoint を含む)、データ分類と保護機能、および管理アカウントのセキュリティ保護を行う準備ができました。 セキュリティに関する推奨事項の詳細な方法については、「Microsoft 365セキュリティMicrosoft 365意思決定[者 (BDM)」を参照してください](Microsoft-365-security-for-bdm.md)。
+おめでとうございます。 最も重要なセキュリティ保護の一部をすばやく実装し、組織の安全性が高い。 これで、脅威保護機能 (Microsoft Defender for Endpoint を含む)、データ分類と保護機能、および管理アカウントのセキュリティ保護を行う準備ができました。 セキュリティに関する推奨事項の詳細な方法については、「Microsoft 365セキュリティMicrosoft 365意思決定[者 (BDM)」を参照してください](Microsoft-365-security-for-bdm.md)。
 
 また、Microsoft の新しいセキュリティ センター (docs.microsoft.com/security) [にもアクセスしてください](/security)。

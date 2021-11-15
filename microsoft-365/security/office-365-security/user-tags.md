@@ -13,15 +13,16 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 description: 管理者は、プラン 2 の Microsoft Defender でユーザー タグを持つユーザーの特定のグループOffice 365学習できます。 タグ フィルターは、Microsoft Defender のアラート、レポート、および調査で、タグ付けされたユーザーをすばやく識別Office 365に使用できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7659ac6e6d53213deb30d37fc53afbb028e6058e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: db06c2a60ddc0cfb4d6bb2efce4e030eed6386a5
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206459"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962689"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Microsoft Defender のユーザー タグ (Office 365
 
@@ -49,13 +50,13 @@ ms.locfileid: "60206459"
 - [管理者およびユーザーの申請](admin-submission.md)
 - 優先度アカウントの場合は、管理センター [](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) (EAC) の [優先アカウントの電子メールExchangeレポートを使用できます。
 
-この記事では、ポータルでユーザー タグを構成するMicrosoft 365 Defenderします。 ユーザー タグを管理するためのMicrosoft 365 Defenderポータルにはコマンドレットはありません。
+この記事では、ポータルでユーザー タグを構成するMicrosoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">説明します</a>。 ユーザー タグを管理するためのMicrosoft 365 Defenderポータルにはコマンドレットはありません。
 
 影響の大きなユーザー アカウントを保護するための戦略の一部であるユーザー タグの詳細については、「セキュリティに関する推奨事項」を参照[Microsoft 365。](security-recommendations-for-priority-accounts.md)
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- <https://security.microsoft.com/> で Microsoft 365 Defender ポータルを開きます。 [ユーザー タグ] ページに **直接移動するには** 、を開きます <https://security.microsoft.com/securitysettings/userTags> 。
+- [ ] で Microsoft 365 Defenderポータルを開きます <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com/</a> 。 [ユーザー タグ] ページに **直接移動するには** 、を開きます <https://security.microsoft.com/securitysettings/userTags> 。
 
 - この記事の手順を実行するには、Microsoft 365 Defenderポータルでアクセス許可を割り当てる必要があります。
   - ユーザー タグを作成、変更、および削除するには、組織の管理役割グループまたはセキュリティ管理者役割グループ **のメンバーである** 必要があります。
@@ -66,7 +67,7 @@ ms.locfileid: "60206459"
 
   > [!NOTE]
   >
-  > - Microsoft 365 管理センター の対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 Defender ポータルで必要なアクセス許可と、Microsoft 365の他の機能に対するアクセス許可が付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
+  > - Microsoft 365 管理センター の対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 Defender ポータルで必要なアクセス許可と、Microsoft 365の他の機能に対するアクセス許可が付与されます。 詳細については、[「管理者の役割について」](../../admin/add-users/about-admin-roles.md) を参照してください。
   >
   > - ユーザー タグ管理は、タグ リーダーと **タグ マネージャー** の **役割によって制御** されます。
 
@@ -76,7 +77,7 @@ ms.locfileid: "60206459"
 
 ## <a name="use-the-microsoft-365-defender-portal-to-create-user-tags"></a>ユーザー タグを作成Microsoft 365 Defenderポータルを使用する
 
-1. ポータルで、[Microsoft 365 Defenderグループのユーザー タグ設定 \> **メール&] に** \> **移動します**。
+1. [ポータル] <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender[</a>**メール]** \> **設定[&] に** \> **移動します**。
 
 2. [ユーザー タグ **] ページで** 、[タグの作成 ![ ] アイコンをクリックします。](../../media/m365-cc-sc-create-icon.png) **タグを作成します**。
 
@@ -108,7 +109,7 @@ ms.locfileid: "60206459"
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-user-tags"></a>ユーザー タグを表示Microsoft 365 Defenderポータルを使用する
 
-1. ポータルで、[Microsoft 365 Defenderグループのユーザー タグ設定 \> **メール&] に** \> **移動します**。
+1. [ポータル] <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender[</a>**メール]** \> **設定[&] に** \> **移動します**。
 
 2. [ユーザー タグ **] ページ** では、ユーザー タグの一覧に次のプロパティが表示されます。
 
@@ -121,13 +122,13 @@ ms.locfileid: "60206459"
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-user-tags"></a>ユーザー タグを変更Microsoft 365 Defenderポータルを使用する
 
-1. ポータルで、[Microsoft 365 Defenderグループのユーザー タグ設定 \> **メール&] に** \> **移動します**。
+1. [ポータル] <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender[</a>**メール]** \> **設定[&] に** \> **移動します**。
 
 2. [ユーザー タグ **] ページ** で、リストからユーザー タグを選択し、[タグの編集] アイコン ![ をクリックします。](../../media/m365-cc-sc-edit-icon.png) **タグを編集します**。
 
 3. 表示される詳細フライアウトでは、この記事の「Microsoft 365 Defender ポータルを使用してユーザー タグ[](#use-the-microsoft-365-defender-portal-to-create-user-tags)を作成する」セクションで説明したように、同じウィザードと設定を使用できます。
 
-   **注意**:
+   **注**:
 
    - [ **タグの定義** ] ページは組み込みの **Priority アカウント** システム タグでは使用できないので、このタグの名前を変更したり、説明を変更したりすることはできません。
    - カスタム タグの名前は変更できますが、説明は変更できます。
@@ -137,7 +138,7 @@ ms.locfileid: "60206459"
 > [!NOTE]
 > 組み込みの Priority アカウント システム タグ **は** 削除できません。
 
-1. ポータルで、[Microsoft 365 Defenderグループのユーザー タグ設定 \> **メール&] に** \> **移動します**。
+1. [ポータル] <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender[</a>**メール]** \> **設定[&] に** \> **移動します**。
 
 2. [ユーザー タグ **] ページ** で、リストからユーザー タグを選択し、[タグの削除] ![ アイコンをクリックします。](../../media/m365-cc-sc-delete-icon.png) **タグを削除します**。
 

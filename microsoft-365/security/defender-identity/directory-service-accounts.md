@@ -6,13 +6,14 @@ ms.topic: how-to
 author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
+ms.custom: admindeeplinkDEFENDER
 manager: raynew
-ms.openlocfilehash: 7da746ade0e4ec684b97a61524abd5ab1e83c114
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8928441e27215e75dc4456116c9a0e7890073852
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212014"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962617"
 ---
 # <a name="microsoft-defender-for-identity-directory-services-account-in-microsoft-365-defender"></a>Microsoft Defender for Identity Directory Services アカウント (Microsoft 365 Defender
 
@@ -30,7 +31,7 @@ ms.locfileid: "59212014"
 
 センサーを Active Directory [ドメインに](sensor-health.md#add-a-sensor) 接続するには、Directory Services アカウントを構成する必要があります。
 
-1. [[Microsoft 365 Defender]](https://security.microsoft.com/)で、[id]**設定** に **移動します**。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">[Microsoft 365 Defender]</a>で、[id]**設定** に **移動します**。
 
     ![[ID] 設定に移動します。](../../media/defender-identity/settings-identities.png)
 
@@ -46,7 +47,7 @@ ms.locfileid: "59212014"
 
     ![新しいディレクトリ サービス アカウント。](../../media/defender-identity/new-directory-service-account.png)
 
-1. **[保存]** を選択します。
+1. [**保存**] を選択します。
 
 ## <a name="see-also"></a>関連項目
 

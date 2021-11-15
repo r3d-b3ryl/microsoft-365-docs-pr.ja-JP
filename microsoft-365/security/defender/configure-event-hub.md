@@ -18,14 +18,15 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 MS.technology: mde
-ms.openlocfilehash: bb45a15dd8931c5a7d9866b7b57ea84be0e0581a
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 71149412285d7d9540c80ef3ad89dc3b0a6a6208
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60755375"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963061"
 ---
 # <a name="configure-your-event-hub"></a>イベント ハブを構成する
 
@@ -40,7 +41,7 @@ ms.locfileid: "60755375"
 
 1. [Azure portal](https://portal.azure.com) にサインインします。
 1. [**サブスクリプション**  >  **] を選択します 。 イベント ハブ** が } リソース プロバイダーに展開されるサブスクリプション  >  **を選択します**。
-1. **Microsoft.インサイト プロバイダーが登録** されているを確認します。 それ以外の場合は、登録します。
+1. **Microsoft.インサイト** プロバイダーが登録されています。 それ以外の場合は、登録します。
 
 ![リソース プロバイダーのMicrosoft Azure。](../../media/f893db7a7b1f7aa520e8b9257cc72562.png)
 
@@ -119,7 +120,7 @@ ms.locfileid: "60755375"
 
 ### <a name="set-up-microsoft-365-defender-send-email-tables-to-splunk-via-event-hub"></a>イベント ハブをMicrosoft 365 Defender Splunk に電子メール テーブルを送信する方法を設定する
 
-1. 次のすべての役割要件Microsoft 365 Defenderを満たすアカウントを使用して、ログイン <https://security.microsoft.com> してアカウントにアクセスします。
+1. 次のすべての役割要件<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>を満たすアカウントを使用して、ユーザーにログインします。
 
     - エクスポートするイベント ハブの Event Hub *名前空間* リソース レベル以上の共同作成者ロール。 このアクセス許可がない場合は、設定を保存しようとするときにエクスポート エラーが発生します。
 

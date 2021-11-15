@@ -14,14 +14,15 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 936f92b796db275eaaf697a4028e670b902c6e5d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4965936f4619f7fad76df203c97e4674ef408a39
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205081"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963101"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-azure-event-hub"></a>高度Microsoft 365 Defenderイベントを Azure イベント ハブにストリーミングするように構成する
 
@@ -53,7 +54,7 @@ Event Hub 名前空間が作成されると、次の処理が必要になりま�
 
 ## <a name="enable-raw-data-streaming"></a>生データ ストリーミングを有効にする
 
-1. セキュリティ センターに [Microsoft 365 Defender](https://security.microsoft.com) ***グローバル** 管理者 _ または _* セキュリティ管理者 **_としてログイン_ します。
+1. *グローバル管理者 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> _***セキュリティ** 管理者 **として _ログイン_ します。
 
 2. [ストリーミング [API の設定] ページに移動します](https://security.microsoft.com/settings/mtp_settings/raw_data_export)。
 
@@ -103,7 +104,7 @@ Event Hub 名前空間が作成されると、次の処理が必要になりま�
 
 イベント プロパティのデータ型を取得するには、次の操作を行います。
 
-1. ポータルにログインし[Microsoft 365 Defender[](https://security.microsoft.com)高度な検索][ページに移動します](https://security.microsoft.com/hunting-package)。
+1. ログイン<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">して[詳細</a>Microsoft 365 Defender]ページ[に移動します](https://security.microsoft.com/hunting-package)。
 
 2. 次のクエリを実行して、各イベントのデータ型マッピングを取得します。
 

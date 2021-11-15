@@ -15,14 +15,15 @@ ms.collection:
 - M365-security-compliance
 - m365solution-endpointprotect
 - m365solution-scenario
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b60aca935af326680165a0ccc8669082b14f299d
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 0a2923f9e80a5ea5ee92110181af69a874d7fd25
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753787"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963421"
 ---
 # <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager を使用したオンボーディング
 
@@ -122,7 +123,7 @@ Defender for Endpoint はさまざまなエンドポイントとツールのオ�
 
 Microsoft 365 Defender ポータル内から、System Center Configuration Manager でポリシーを作成するために使用できるポリシーをダウンロードし、そのポリシーを Windows 10 および Windows デバイスに展開できます `.onboarding` 。
 
-1. 新しいポータルMicrosoft 365 Defender、[オンボーディング][設定を選択します](https://security.microsoft.com/preferences2/onboarding)。
+1. 新しい<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">ポータルMicrosoft 365 Defender、[</a>オンボーディング][設定を選択します](https://security.microsoft.com/preferences2/onboarding)。
 
 2. [展開方法] で、サポートされているバージョンのファイルを **Microsoft Endpoint Configuration Manager。**
 
@@ -174,7 +175,7 @@ Microsoft 365 Defender ポータル内から、System Center Configuration Manag
 
 以下の手順に従って、以前のバージョンのデバイスのオンボーディングに必要な Defender for Endpoint Workspace ID と Workspace Key を特定Windows。
 
-1. [デバイスのMicrosoft 365 Defender] で、[エンドポイント設定オンボーディング] \>  \> を **選択します**。
+1. [デバイスの <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender] で</a>、[エンドポイント設定オンボーディング] \>  \> を **選択します**。
 
 2. [オペレーティング システム] で **、[Windows 7 SP1 と 8.1] を選択します**。
 
@@ -288,7 +289,7 @@ Defender for Endpoint の攻撃表面の縮小の柱には、Exploit Guard で�
 
 ASR ルールがエンドポイントに正しく適用されているかどうかを確認する追加の手順を次に示します。 (これには数分かかる場合があります)
 
-1. Web ブラウザーからに移動します <https://security.microsoft.com> 。
+1. Web ブラウザーから、[web ブラウザー] に<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">移動Microsoft 365 Defender。</a>
 
 2. 左側 **のメニューから [構成** の管理] を選択します。
 

@@ -17,13 +17,14 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
+- admindeeplinkDEFENDER
 description: '概要: Microsoft Cloud Deutschland からの移行に関する電子情報開示移行手順。'
-ms.openlocfilehash: afea899e06a732ff0ab13bf416410aa94bc3c191
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 08c44374b834796bce5f624008dd2f7493e7c3f7
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60168448"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963073"
 ---
 # <a name="information-about-the-ediscovery-experience-during-the-migration-from-microsoft-cloud-deutschland"></a>Microsoft Cloud Deutschland からの移行中の電子情報開示エクスペリエンスに関する情報
 次のセクションでは、Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター地域の Office 365 サービスに移行する際の電子情報開示エクスペリエンスに関する追加情報を提供します。
@@ -50,7 +51,7 @@ ms.locfileid: "60168448"
 **適用対象:** 電子情報開示を使用しているすべてのユーザー
 
 フェーズ 9 では、新しいドイツのデータセンター領域に移行するための最後の手順が完了します。 このフェーズでは、残りのすべてのサービス コンポーネントが移行されます。
-フェーズ 9 の後、Microsoft Cloud Germany (protection.office.de) のセキュリティとコンプライアンス センターの使用はサポートされなくなりました。 代わりに、新[しいセキュリティ センターまたは](https://security.microsoft.com/)[コンプライアンス センターを](https://compliance.microsoft.com/)使用してください。 すべてのデータが新しい管理ポータルに移行されました。
+フェーズ 9 の後、Microsoft Cloud Germany (protection.office.de) のセキュリティとコンプライアンス センターの使用はサポートされなくなりました。 代わりに、<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">新Microsoft 365セキュリティ センター</a><a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">またはMicrosoft 365 コンプライアンス センター</a>使用します。 すべてのデータが新しい管理ポータルに移行されました。
 
 | Step(s) | 説明 | 影響 |
 |:-------|:-------|:-------|

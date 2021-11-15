@@ -15,13 +15,14 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
+ms.custom: admindeeplinkDEFENDER
 description: Microsoft Defender for Office 365 E5 P1 および P2 のお客様は、電子メール エンティティ ページを使用して各メールの 360 度のビューを取得できます。
-ms.openlocfilehash: b6f4df0dcd8f12b7a2d8475954583573616a6fd9
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 6a742653f5c249da356b9295572085733ecec5bf
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554770"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60960648"
 ---
 # <a name="the-email-entity-page"></a>メール エンティティ ページ
 
@@ -35,7 +36,7 @@ microsoft Defender for Office 365 E5 および Office P1 と P2 の Defender の
 
 ## <a name="reach-the-email-entity-page"></a>電子メール エンティティ ページにアクセスする
 
-[電子メール エンティティ] ページは、[電子メール] Microsoft 365 Defenderエクスプローラー <https://security.microsoft.com> の [& ポータル]**で使用** \> **できます**。 または、エクスプローラー ページに直接移動するには、 **を** 使用します <https://security.microsoft.com/threatexplorer> 。
+[電子メール エンティティ] ページは、[電子メール] Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">コラボレーション</a>エクスプローラー **の &ポータルで** \> **使用できます**。 または、エクスプローラー ページに直接移動するには、 **を** 使用します <https://security.microsoft.com/threatexplorer> 。
 
 エクスプローラー **で**、調査中のメールの件名を選択します。 そのメールのメール のフライアウトの上部にゴールド バーが表示されます。 新しいページへのこの招待には、「新しい電子メール エンティティ ページを強化されたデータで試してみてください。..」と読み上げられます。 新しいページを表示する場合に選択します。
 

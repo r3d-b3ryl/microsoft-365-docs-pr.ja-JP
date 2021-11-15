@@ -12,14 +12,15 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 65010f13ca5b1605d9bcec672c4e51270913d407
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 4c316c09ced5e38b51395faea7a84adccc2c2645
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883439"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962629"
 ---
 # <a name="web-content-filtering"></a>Web コンテンツ フィルタリング
 
@@ -50,13 +51,13 @@ Web コンテンツ フィルターは主要な Web ブラウザーで利用で�
 
 この機能を試す前に、次の要件を満たしていることを確認してください。
 
-- サブスクリプションには、E5、Windows 10 Enterprise、Microsoft 365 E5、Microsoft 365 E5 Security、Microsoft 365 E3 + Microsoft 365 E5 Security アドオン、またはMicrosoft Defender for Endpoint スタンドアロン ライセンス。 
+- サブスクリプションには、E5、Windows 10 Enterprise、Microsoft 365 E5、Microsoft 365 E5 Security、Microsoft 365 E3 + Microsoft 365 E5 Security アドオン、または Microsoft Defender for Endpoint スタンドアロン ライセンスを使用します。 
 
-- ポータル ( ) へのMicrosoft 365 Defenderがあります [https://security.microsoft.com](https://security.microsoft.com) 。
+- ポータルにアクセスMicrosoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">できます</a>。
 
 - 組織のデバイスは、Windows 10 Anniversary Update (バージョン 1607) 以降、または最新のウイルス対策/マルウェア対策更新プログラムを使用して Windows 11 を実行[しています](manage-updates-baselines-microsoft-defender-antivirus.md)。
 
-- Windows DefenderSmartScreen とネットワーク保護は、組織のデバイスで有効になっています。
+- Windows Defenderデバイスで SmartScreen とネットワーク保護が有効になっています。
 
 ## <a name="data-handling"></a>データの処理
 
@@ -64,7 +65,7 @@ Web コンテンツ フィルターは主要な Web ブラウザーで利用で�
 
 ## <a name="turn-on-web-content-filtering"></a>Web コンテンツ フィルターを有効にする
 
-左側のナビゲーション メニューで、[エンドポイント **の** 全般設定 \> **機能** \> **]** \> **を選択します**。 Web コンテンツ フィルターのエントリが表示されるまで **下にスクロールします**。 トグルを [オン] と **[保存****] の基本設定に切り替えます**。
+ポータルの左側のナビゲーションで <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">、[エンドポイント</a>Microsoft 365 Defender高度な設定 \>  \> **を** \> **選択します**。 Web コンテンツ フィルターのエントリが表示されるまで **下にスクロールします**。 トグルを [オン] と **[保存****] の基本設定に切り替えます**。
 
 ### <a name="configure-web-content-filtering-policies"></a>Web コンテンツ フィルター ポリシーの構成
 
@@ -159,7 +160,7 @@ Web コンテンツ フィルター ポリシーは、どのサイト カテゴ�
 
 新しいポリシーを追加するには、次の手順を実行します。
 
-1. [ポータル] Microsoft 365 Defenderで [https://security.microsoft.com](https://security.microsoft.com) 、[Web コンテンツ フィルター **設定**  >  **ポリシー** の追加  >  **] を選択します**。
+1. [Web コンテンツ <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender] ポータル</a>で、[Web コンテンツ フィルター **設定**  >  ポリシーの **追加**  >  **] を選択します**。
 
 2. 名前を指定します。
 
@@ -185,7 +186,7 @@ Web コンテンツ フィルターでブロックされたカテゴリを上書
 
 カスタム インジケーターを定義するには、次の手順を実行します。
 
-1. [エンドポイント] Microsoft 365 Defender ( ) で、[エンドポイントインジケーター <https://security.microsoft.com> **URL/ドメイン** 設定アイテム] \>  \>  \> **に** \> **移動します**。
+1. このポータル <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender、[</a>エンドポイントインジケーター URL/**ドメイン設定** アイテム] に \>  \>  \>  \> **移動します**。
 
 2. サイトのドメインを入力します。
 

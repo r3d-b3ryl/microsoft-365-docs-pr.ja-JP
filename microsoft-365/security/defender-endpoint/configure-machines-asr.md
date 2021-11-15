@@ -12,14 +12,15 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 72385d19e6c734c06a8ac14c2de01a023db28d53
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 7a22d07919aaebc1373c5b330c51d720c25b4f8c
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883343"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963133"
 ---
 # <a name="optimize-asr-rule-deployment-and-detections"></a>ASR ルールの展開と検出を最適化する
 
@@ -38,7 +39,7 @@ ms.locfileid: "60883343"
 <br>
 *攻撃表面管理カード*
 
-攻撃 *表面管理カードは*、セキュリティ センターのツールMicrosoft 365ポイントで、次の場合に使用できます。
+攻撃 *表面管理カードは*、セキュリティ センター内のツール <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"></a>Microsoft 365ポイントで、次の場合に使用できます。
 
 * ASR ルールが現在組織に展開されている方法について説明します。
 * ASR 検出を確認し、誤った検出の可能性を特定します。
@@ -52,7 +53,7 @@ ms.locfileid: "60883343"
 > [!NOTE]
 > セキュリティ センター Microsoft 365アクセスするには、Microsoft 365 E3または E5 ライセンスと、ユーザーに対して特定の役割を持つアカウントAzure Active Directory。 [必要なライセンスとアクセス許可についてお読みください](/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions)。
 
-セキュリティ センターでの ASR ルールの展開のMicrosoft 365、ASR ルールの展開と検出の監視と[管理を参照してください](/office365/securitycompliance/monitor-devices#monitor-and-manage-asr-rule-deployment-and-detections)。
+セキュリティ センターでの ASR ルールの展開の<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">詳細</a>Microsoft 365 ASR ルールの展開と検出の監視と[管理を参照してください](/office365/securitycompliance/monitor-devices#monitor-and-manage-asr-rule-deployment-and-detections)。
 
 **関連トピック**
 

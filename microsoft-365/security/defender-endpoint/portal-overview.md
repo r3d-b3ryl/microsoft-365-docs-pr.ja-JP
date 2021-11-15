@@ -14,14 +14,15 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c53cce4cb12d08d59b09b041883531b4dee11ce9
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 01914a99c627237568cadbc5b5a3f6205ac3ce55
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554938"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963409"
 ---
 # <a name="microsoft-365-defender-portal-overview"></a>Microsoft 365 Defender ポータルの概要
 
@@ -37,7 +38,7 @@ ms.locfileid: "60554938"
 
 Enterpriseチームは、Microsoft 365 Defenderを使用して、潜在的な永続的な脅威アクティビティやデータ侵害の警告を監視および支援できます。
 
-次[のMicrosoft 365 Defender使用](https://security.microsoft.com)できます。
+次<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">のMicrosoft 365 Defender使用</a>できます。
 
 - エンドポイントからのアラートの表示、並べ替え、トリアージ
 - ファイルや IP アドレスなどの観測インジケーターの詳細を検索する
@@ -96,9 +97,9 @@ Enterpriseチームは、Microsoft 365 Defenderを使用して、潜在的な永
 ![Microsoft Defender AV イベント アイコン。](images/atp-windows-defender-av-events-icon.png)|Microsoft Defender ウイルス対策イベント
 ![Application Guard イベント アイコン。](images/atp-Application-Guard-events-icon.png)|Windows Defender Application Guardイベント
 ![Device Guard イベント アイコン。](images/atp-Device-Guard-events-icon.png)|Windows Defender Device Guardイベント
-![Exploit Guard イベント アイコン。](images/atp-Exploit-Guard-events-icon.png)|Windows DefenderExploit Guard イベント
-![SmartScreen イベント アイコン。](images/atp-Smart-Screen-events-icon.png)|Windows DefenderSmartScreen イベント
-![ファイアウォール イベント アイコン。](images/atp-Firewall-events-icon.png)|Windowsファイアウォール イベント
+![Exploit Guard イベント アイコン。](images/atp-Exploit-Guard-events-icon.png)|Windows Defender Exploit Guard イベント
+![SmartScreen イベント アイコン。](images/atp-Smart-Screen-events-icon.png)|Windows Defender SmartScreen イベント
+![ファイアウォール イベント アイコン。](images/atp-Firewall-events-icon.png)|Windows ファイアウォール イベント
 ![応答アクション アイコン。](images/atp-respond-action-icon.png)|応答アクション
 ![プロセス イベント アイコン。](images/atp-process-event-icon.png)|プロセス イベント
 ![ネットワーク通信イベント アイコン。](images/atp-network-communications-icon.png)|ネットワーク イベント
@@ -130,7 +131,7 @@ Enterpriseチームは、Microsoft 365 Defenderを使用して、潜在的な永
 ![可能なアクティブなアラート アイコン。](images/tvm_alert_icon.png)|脅威&の管理 - アクティブなアラートの可能性
 ![推奨事項の分析情報アイコン。](images/tvm_insight_icon.png)|脅威&の管理 - 推奨事項の分析情報
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [概要 Microsoft 365 Defender](use.md)
 - [セキュリティ操作ダッシュボードの表示](security-operations-dashboard.md)

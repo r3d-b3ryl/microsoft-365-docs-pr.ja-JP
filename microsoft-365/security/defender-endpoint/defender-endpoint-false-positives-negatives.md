@@ -20,13 +20,15 @@ ms.collection:
 ms.topic: how-to
 ms.date: 10/19/2021
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
-ms.custom: FPFN
-ms.openlocfilehash: 8023bcea4eb12689706790af41ead359e302898d
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.custom:
+- FPFN
+- admindeeplinkDEFENDER
+ms.openlocfilehash: 8dae7d3ce3c9473f99d8060dd35c3c6c4af1ea39
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882863"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962472"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint での誤検出/検出漏れに対処する
 
@@ -65,7 +67,7 @@ ms.locfileid: "60882863"
 
 アラートを分類または抑制する前に、アラートが正確か、誤検知か良性かを判断します。
 
-1. ポータル ( ) にMicrosoft 365 Defenderサインイン <https://security.microsoft.com> します。
+1. ポータルに移動<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderサインイン</a>します。
 
 2. ナビゲーション ウィンドウで、[通知キュー] **を選択します**。
 
@@ -85,7 +87,7 @@ ms.locfileid: "60882863"
 
 アラートは、誤検知または正陽性に分類Microsoft 365 Defender。 アラートを分類すると、Microsoft Defender for Endpoint のトレーニングに役立ちます。これにより、時間がたつ間に、より多くの真のアラートと少ない誤ったアラートが表示されます。
 
-1. ポータル ( ) にMicrosoft 365 Defenderサインイン <https://security.microsoft.com> します。
+1. ポータルに移動<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderサインイン</a>します。
 
 2. [ **アラート キュー] を** 選択し、アラートを選択します。
 
@@ -100,7 +102,7 @@ ms.locfileid: "60882863"
 
 誤検知または正陽性のアラートがあるが、重要ではないイベントの場合は、これらのアラートを非表示にMicrosoft 365 Defender。 アラートを抑制すると、セキュリティ操作ダッシュボードのノイズを軽減できます。
 
-1. ポータル ( ) にMicrosoft 365 Defenderサインイン <https://security.microsoft.com> します。
+1. ポータルに移動<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderサインイン</a>します。
 
 2. ナビゲーション ウィンドウで、[アラート キュー] **を選択します**。
 
@@ -126,7 +128,7 @@ ms.locfileid: "60882863"
 
 ウイルス対策スキャンの開始や調査パッケージの収集などのその他のアクションは、手動で、または Live Response を介して [実行されます](live-response.md)。 Live Response を使用して実行されるアクションは元に戻すことはできません。
 
-アラートを確認した後、次に修復アクション [を確認します](manage-auto-investigation.md)。 誤検知の結果として何かアクションが実行された場合は、ほとんどの種類の修復アクションを元に戻すことができます。 具体的には、次の方法を使用できます。
+アラートを確認した後、次に修復アクション [を確認します](manage-auto-investigation.md)。 誤検知の結果として何かアクションが実行された場合は、ほとんどの種類の修復アクションを元に戻すことができます。 具体的には次のことができます。
 
 - [アクション センターから検疫済みファイルを復元する](#restore-a-quarantined-file-from-the-action-center)
 - [複数の操作を一度に元に戻す](#undo-multiple-actions-at-one-time)
@@ -137,7 +139,7 @@ ms.locfileid: "60882863"
 
 ### <a name="review-completed-actions"></a>完了したアクションを確認する
 
-1. ポータルの左側のナビゲーション ウィンドウで、[Microsoft 365 Defender]**をクリックします**。
+1. ポータルの左側のナビゲーション ウィンドウで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">アクション Microsoft 365 Defender]</a>**をクリックします**。
 
 2. [履歴] **タブを** 選択して、実行されたアクションの一覧を表示します。
 
@@ -153,7 +155,7 @@ ms.locfileid: "60882863"
 
 ### <a name="undo-multiple-actions-at-one-time"></a>複数の操作を一度に元に戻す
 
-1. ポータルの左側のナビゲーション ウィンドウで、[Microsoft 365 Defender]**をクリックします**。
+1. ポータルの左側のナビゲーション ウィンドウで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">アクション Microsoft 365 Defender]</a>**をクリックします**。
 
 2. [履歴 **] タブ** で、元に戻す操作を選択します。
 
@@ -164,7 +166,7 @@ ms.locfileid: "60882863"
 > [!div class="mx-imgBorder"]
 > ![検疫ファイル。](images/autoir-quarantine-file-1.png)
 
-1. ポータルの左側のナビゲーション ウィンドウで、[Microsoft 365 Defender]**をクリックします**。
+1. ポータルの左側のナビゲーション ウィンドウで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">アクション Microsoft 365 Defender]</a>**をクリックします**。
 
 2. [履歴 **] タブ** で、アクションの種類が [検疫ファイル] のファイルを **選択します**。
 
@@ -208,7 +210,7 @@ Microsoft Defender for Endpoint 全体で除外を定義するには、次のタ
 
 ### <a name="exclusions-for-microsoft-defender-antivirus"></a>ユーザーの除外Microsoft Defender ウイルス対策
 
-一般に、ユーザーの除外を定義する必要Microsoft Defender ウイルス対策。 除外を定義し、誤検知の結果として生じるファイル、フォルダー、プロセス、およびプロセスで開いたファイルのみを含める必要があります。 また、定義済みの除外を定期的に確認してください。 ウイルス対策の除外を[定義Microsoft エンドポイント マネージャー](/mem/endpoint-manager-overview)編集するには、この設定を使用することをお勧めします。ただし、グループ ポリシーなどの他のメソッドを使用[](/azure/active-directory-domain-services/manage-group-policy)できます (「Manage [Microsoft Defender for Endpoint」を参照)。](manage-atp-post-migration.md)
+一般に、ユーザーの除外を定義する必要Microsoft Defender ウイルス対策。 除外を定義し、誤検知の結果として生じるファイル、フォルダー、プロセス、およびプロセスで開いたファイルのみを含める必要があります。 また、定義済みの除外を定期的に確認してください。 ウイルス[対策の除外](/mem/endpoint-manager-overview)Microsoft エンドポイント マネージャー定義または編集する場合は、グループ ポリシーを使用することをお勧めします[](/azure/active-directory-domain-services/manage-group-policy) [(「Manage Microsoft Defender for Endpoint」](manage-atp-post-migration.md)を参照)。
 
 > [!TIP]
 > ウイルス対策の除外に関するヘルプが必要ですか? 詳細については[、「除外の構成と検証」を参照Microsoft Defender ウイルス対策してください](configure-exclusions-microsoft-defender-antivirus.md)。
@@ -352,7 +354,7 @@ Microsoft Defender for Endpoint には、さまざまな機能や機能の設定
 > [!TIP]
 > クラウド配信保護の構成の詳細については、「クラウド配信の保護レベルを指定する [」を参照してください](/windows/security/threat-protection/microsoft-defender-antivirus/specify-cloud-protection-level-microsoft-defender-antivirus)。
 
-クラウド配信の保護[Microsoft エンドポイント マネージャー](/mem/endpoint-manager-overview)設定するには、この設定を使用することをお勧めします。ただし、グループ ポリシーなどの他のメソッドを使用[](/azure/active-directory-domain-services/manage-group-policy)できます (「Manage [Microsoft Defender for Endpoint」を参照)。](manage-atp-post-migration.md)
+クラウド配信の[保護設定Microsoft エンドポイント マネージャー](/mem/endpoint-manager-overview)を使用して編集または設定することをお勧めしますが、グループ[ポリシーなどの他](/azure/active-directory-domain-services/manage-group-policy)の方法を使用できます (「Manage [Microsoft Defender for Endpoint」](manage-atp-post-migration.md)を参照)。
 
 #### <a name="use-microsoft-endpoint-manager-to-review-and-edit-cloud-delivered-protection-settings-for-existing-policies"></a>クラウドMicrosoft エンドポイント マネージャーの保護設定を確認および編集するには、既存のポリシーを使用します。
 
@@ -396,7 +398,7 @@ Microsoft Defender for Endpoint には、さまざまな機能や機能の設定
 
 組織が使用しているアプリによっては、PUA 保護設定の結果として誤検知が発生する可能性があります。 必要に応じて、監査モードで PUA 保護をしばらく実行するか、組織内のデバイスのサブセットに PUA 保護を適用します。 PUA 保護は、ブラウザーとMicrosoft Edge構成Microsoft Defender ウイルス対策。
 
-PUA[保護設定](/mem/endpoint-manager-overview)Microsoft エンドポイント マネージャー設定するには、この設定を使用することをお勧めします。ただし、グループ ポリシーなどの他のメソッドを使用[](/azure/active-directory-domain-services/manage-group-policy)できます (「Manage [Microsoft Defender for Endpoint」を参照)。](manage-atp-post-migration.md)
+PUA 保護設定[Microsoft エンドポイント マネージャー](/mem/endpoint-manager-overview)使用することをお勧めしますが、グループ ポリシーなどの他の方法を使用できます[](/azure/active-directory-domain-services/manage-group-policy) (「Manage Microsoft Defender [for Endpoint」](manage-atp-post-migration.md)を参照)。
 
 #### <a name="use-microsoft-endpoint-manager-to-edit-pua-protection-for-existing-configuration-profiles"></a>PUA Microsoft エンドポイント マネージャー (既存の構成プロファイルの場合) を編集するには、次のコマンドを使用します。
 
@@ -448,7 +450,7 @@ PUA[保護設定](/mem/endpoint-manager-overview)Microsoft エンドポイント
 
 この記事のすべての手順を実行し、引き続きヘルプが必要な場合は、テクニカル サポートにお問い合わせください。
 
-1. [Microsoft 365 Defender ] に <https://security.microsoft.com> 移動し、サインインします。
+1. [ログイン] <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>サインインします。
 
 2. 右上隅で、疑問符 (**?**) を選択し、[Microsoft サポート] **を選択します**。
 

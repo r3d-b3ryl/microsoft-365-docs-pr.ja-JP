@@ -18,13 +18,14 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
+- admindeeplinkDEFENDER
 description: 潜在的な脅威、データ損失、およびアクセス許可の問題Microsoft 365 コンプライアンス センター監視するために、Microsoft 365 コンプライアンス センターまたは Microsoft 365 Defender ポータルにアラート ポリシーを作成します。
-ms.openlocfilehash: afb186d0b0f1eb1073822261dafdb28ef839509d
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: f942420a18a9f0bef947e215754eb1c1164eb08a
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753945"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963037"
 ---
 # <a name="alert-policies-in-microsoft-365"></a>Microsoft 365 のアラート ポリシー
 
@@ -68,7 +69,7 @@ Microsoft 365 コンプライアンス センター または Microsoft 365 Defe
 
 ### <a name="microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータル
 
-[メールの <https://security.microsoft.com> 送信] グループの **[&ポリシー** ] を選択 **し、[&ポリシー**  >  **] の下に移動します**。 または、直接に移動することもできます <https://security.microsoft.com/alertpolicies> 。
+[セキュリティ センター <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365]に</a>移動し、[電子メール **&]で**、[ポリシーと&**アラート ポリシー**  >  **] を選択します**。 または、直接に移動することもできます <https://security.microsoft.com/alertpolicies> 。
 
 ![Defender ポータルで、[電子メール &] の下&ポリシー] を選択し、[アラート ポリシー] を選択してアラート ポリシーを表示および作成します。](../media/LaunchAlertPoliciesDefenderPortal.png)
 
@@ -182,7 +183,7 @@ Microsoft は、管理者のアクセス許可の悪用、マルウェアのExch
 
 ### <a name="microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータル
 
-[インシデント] <https://security.microsoft.com> に移動し、[**インシデント] &を**  >  **選択します**。 または、直接に移動することもできます <https://security.microsoft.com/alerts> 。
+[セキュリティ センター Microsoft 365 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">に移動</a>し、[インシデント]**を選択し、[通知&通知] を**  >  **選択します**。 または、直接に移動することもできます <https://security.microsoft.com/alerts> 。
 
 ![[ポータル] Microsoft 365 Defender[インシデント] を選択&し、[通知] を選択します。](../media/ViewAlertsDefenderPortal.png)
 
@@ -249,7 +250,7 @@ Microsoft は、管理者のアクセス許可の悪用、マルウェアのExch
 
 既定のアラート ポリシーが割り当てられているカテゴリを確認するには、「既定のアラート ポリシー」 [の表を参照してください](#default-alert-policies)。
 
-|ロール|情報ガバナンス|データ損失防止|メール フロー|アクセス許可|脅威の管理|Others|
+|Role|情報ガバナンス|データ損失防止|メール フロー|アクセス許可|脅威の管理|Others|
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |監査ログ|||||||
 |ケース管理|||||||
@@ -327,7 +328,7 @@ Microsoft は、管理者のアクセス許可の悪用、マルウェアのExch
 
 コンプライアンス ポリシーによってトリガー Office 365 Cloud App Securityアラートがコンプライアンス センターの **[アラート**] ページに表示されます。 これには、アクティビティ ポリシーによってトリガーされるアラートと、アクティビティ の異常検出ポリシーによってトリガーされるアラートがOffice 365 Cloud App Security。 つまり、コンプライアンス センターですべての通知を表示できます。 Office 365 Cloud App Security E5 サブスクリプションまたは米国政府機関 G5 サブスクリプションOffice 365 Enterprise組織Office 365でのみ使用できます。 詳細については、「概要」[を参照Cloud App Security。](/cloud-app-security/what-is-cloud-app-security)
 
-Enterprise Mobility + Security E5 サブスクリプションMicrosoft Cloud App Securityスタンドアロン サービスとして使用されている組織は、Microsoft 365 アプリとサービスに関連する Cloud App Security アラートを表示することもできます。Microsoft 365 コンプライアンス センターまたはポータルMicrosoft 365 Defenderします。
+Microsoft Cloud App Security E5 サブスクリプションEnterprise Mobility + Securityスタンドアロン サービスとして使用されている組織は、Cloud App Security アプリとサービスに関連Microsoft 365アラートを表示することもできます。をクリックするかMicrosoft 365 コンプライアンス センターポータルMicrosoft 365 Defenderします。
 
 コンプライアンス センターまたは defender Cloud App Security内の通知のみを表示するには、[ソース] フィルターを使用して [削除]**を** Cloud App Security。
 

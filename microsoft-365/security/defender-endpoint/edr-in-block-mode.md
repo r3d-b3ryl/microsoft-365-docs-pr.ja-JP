@@ -14,17 +14,18 @@ ms.localizationpriority: medium
 ms.custom:
 - next-gen
 - edr
+- admindeeplinkDEFENDER
 ms.date: 10/07/2021
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 2c463da937222939586029a970439b05134315a3
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 82addf4b41ae41c67353a4045c8fdacce7bb8afa
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554578"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963049"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>ブロック モードのエンドポイントでの検出と対応 (EDR)
 
@@ -72,7 +73,7 @@ EDRモードのデータは、脅威の検出[と統合& 脆弱性の管理。](
 3. 下にスクロールし、[ブロック モードでEDR **を有効にする] をオンにします**。
 
 > [!NOTE]
-> EDRモードの場合は、ポータル ( ) または以前の Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) でのみオンMicrosoft Defender セキュリティ センターできます [https://securitycenter.windows.com](https://securitycenter.windows.com) 。 ブロック モードでレジストリ キー、Microsoft Intune、またはグループ ポリシーを使用して、EDRを有効または無効にすることはできません。
+> EDRモードで有効にできるのは、ポータルまたは以前のMicrosoft 365 Defender Microsoft Defender セキュリティ センター <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"></a> ( ) のみです [https://securitycenter.windows.com](https://securitycenter.windows.com) 。 ブロック モードでレジストリ キー、Microsoft Intune、またはグループ ポリシーを使用して、EDRを有効または無効にすることはできません。
 
 ## <a name="requirements-for-edr-in-block-mode"></a>ブロック モードでのEDRの要件
 
@@ -136,7 +137,7 @@ PowerShell を使用して、パッシブ モードでEDRでブロック モー�
 
 1. 選択したスタート メニュー入力を開始し、結果 `PowerShell` でWindows PowerShellを開きます。
 
-2. 種類 `Get-MPComputerStatus|select AMRunningMode`。
+2. 種類`Get-MPComputerStatus|select AMRunningMode`
 
 3. 結果が表示 `EDR Block Mode` されます。
 

@@ -14,15 +14,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 09/22/2021
 ms.technology: mde
-ms.openlocfilehash: 931edcd890148a828a6d189722e8f29907c15b79
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 7475a9efa6cd8059b03e97786b2689fbfec4f5d5
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553690"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962761"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-in-microsoft-365-defender"></a>デバイス内の非永続的仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボードMicrosoft 365 Defender
 
@@ -64,7 +65,7 @@ VDI デバイスは、Defender for Endpoint ポータルに次のように表示
 
 ### <a name="for-windows-10-or-windows-11-or-windows-server-2019-or-windows-server-2022"></a>サーバー 11 Windows 10、Windowsサーバー 2019、Windowsサーバー 2022 Windowsの場合
 
-1.  サービス オンボーディング ウィザードから.zipした VDI *構成パッケージ*(WindowsDefenderATPOnboardingPackage.zip) を開きます。 パッケージは、次のポータルから[Microsoft 365 Defenderすることもできます](https://security.microsoft.com/)。
+1.  サービス オンボーディング ウィザードから.zipした VDI *構成パッケージ*(WindowsDefenderATPOnboardingPackage.zip) を開きます。 パッケージは、次のポータルから<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderすることもできます</a>。
 
     1. ナビゲーション ウィンドウで、[エンドポイント **デバイス設定**  >    >  **オンボーディング]**  >  **を選択します**。
 
@@ -172,7 +173,7 @@ DISM コマンドとオフライン サービスの詳細については、以�
 
 5. 通常と同じ方法で、ゴールデン/マスター イメージを再シールします。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [グループ ポリシーを使用してデバイスをオンボードする](configure-endpoints-gp.md)
 - [Microsoft Endpoint Configuration Manager を使用した Windows デバイスのオンボード](configure-endpoints-sccm.md)
 - [モバイル デバイス管理ツールを使用した Windows デバイスのオンボード](configure-endpoints-mdm.md)

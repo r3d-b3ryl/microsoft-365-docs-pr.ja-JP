@@ -11,16 +11,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 ms.date: 06/10/2021
 description: Microsoft Defender for Office 365 プラン 2 の自動調査と対応機能を使用して、侵害されたユーザー アカウントを検出して対処するプロセスをスピードアップする方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 22531f529834b6d309853e3d219c608e6af03cbb
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8561abc3477ccf0dd627b7d69f2761940972435d
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154592"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962893"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>調査と対応を自動化して、侵害されたユーザー アカウントに対処する
 
@@ -67,7 +68,7 @@ ms.locfileid: "60154592"
 
 制限付きユーザーの一覧に移動するためのいくつかのオプションがあります。 たとえば、ポータルの [Microsoft 365 Defender] に移動して、グループ&**ユーザー** \> **の確認** \> **を行います**。 次の手順では、アラート ダッシュボードを使用したナビゲーションについて説明します。これは、トリガーされた可能性があるさまざまな種類のアラートを確認するための良い方法です。
 
-1. [インシデント] Microsoft 365 Defender ( <https://security.microsoft.com> ) を開き、[インシデント] **&アラートに移動** \> **します**。 または、**[アラート]** ページに直接移動するには、<https://security.microsoft.com/alerts> を使用します。
+1. ポータルを <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">開Microsoft 365 Defender[</a>インシデント] に移動 **し、[&通知] に** \> **移動します**。 または、**[アラート]** ページに直接移動するには、<https://security.microsoft.com/alerts> を使用します。
 
 2. [アラート **] ページ** で、期間別に結果をフィルター処理し、[ユーザーが電子メールの送信を制限する] という名前 **のポリシーをフィルター処理します**。
 

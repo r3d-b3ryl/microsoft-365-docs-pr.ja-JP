@@ -1,7 +1,7 @@
 ---
 title: パイロットMicrosoft 365 Defenderインシデント対応機能を試す
 description: インシデント対応機能を試Microsoft 365 Defender、インシデントの優先順位付けと管理、調査の自動化、脅威検出での高度な検出の使用を行います。
-keywords: Microsoft 365 Defender試し、テストMicrosoft 365 Defender、Microsoft 365 Defender評価ラボMicrosoft 365 Defender、パイロット、サイバー Microsoft 365 Defenderを評価するセキュリティ、高度な永続的脅威、エンタープライズ セキュリティ、デバイス、デバイス、ID、ユーザー、データ、アプリケーション、インシデント、自動調査と修復、高度な検索
+keywords: Microsoft 365 Defender試し、テストMicrosoft 365 Defender、評価Microsoft 365 Defender、Microsoft 365 Defenderラボ、Microsoft 365 Defender パイロット、サイバーセキュリティ、高度な永続的脅威、エンタープライズ セキュリティ、デバイス、デバイス、ID、ユーザー、データ、アプリケーション、インシデント、自動調査と修復、高度な狩猟
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,14 +20,15 @@ ms.collection:
 - M365-security-compliance
 - m365solution-overview
 - m365solution-evalutatemtp
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: e412852e7184a4f9b520ed777938836a44b62b5c
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 0c4e3a2dbaeedc1ebf45e54d29217e9377dca247
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786181"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962773"
 ---
 # <a name="try-microsoft-365-defender-incident-response-capabilities-in-a-pilot-environment"></a>パイロットMicrosoft 365 Defenderインシデント対応機能を試す
 
@@ -48,7 +49,7 @@ ms.locfileid: "60786181"
 
 ## <a name="prioritize-incidents"></a>インシデントの優先度を設定する
 
-インシデント ポータル (security.microsoft.com)の&でインシデント>アラートからインシデント キューに[Microsoft 365 Defender取得します](https://security.microsoft.com)。 次に例を示します。
+インシデント ポータルのクイック 起動でインシデント &**アラート**>インシデント キューに <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderします</a>。 次に例を示します。
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="インシデント キューの例。":::
 
@@ -165,7 +166,7 @@ ms.locfileid: "60786181"
 
 #### <a name="go-hunting"></a>Go hunting
 
-1. ポータルを[開Microsoft 365 Defenderします](https://security.microsoft.com/)。
+1. ポータルを<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">開Microsoft 365 Defenderします</a>。
 
 2. ナビゲーション ウィンドウで、[ハンティング と高度な **>を選択します**。
 

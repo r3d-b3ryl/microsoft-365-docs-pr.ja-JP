@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 432819930a1472d6241c62b275a940cb35c3cb37
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ba613d2368bbb7cbefdaaaea30595bdc235a41ef
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60211431"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963229"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Defender for Endpoint で高度な機能を構成する
 
@@ -156,7 +156,7 @@ Microsoft Defender for Identity との統合により、別の Microsoft Identit
 > [!NOTE]
 > この機能を有効にするには、適切なライセンスが必要です。
 
-## <a name="office-365-threat-intelligence-connection"></a>Office 365脅威インテリジェンス接続
+## <a name="office-365-threat-intelligence-connection"></a>Office 365インテリジェンス接続
 
 この機能は、アクティブなユーザーまたは脅威インテリジェンス Office 365 E5を使用している場合にのみ使用できます。 詳細については、「E5 製品のOffice 365 Enterpriseを参照してください。
 
@@ -179,7 +179,7 @@ Microsoft Defender for Identity との統合により、別の Microsoft Identit
 この設定を有効にすると、Defender for Endpoint シグナルMicrosoft Cloud App Securityに転送され、クラウド アプリケーションの使用状況を詳細に確認できます。 転送されたデータは、ユーザーのデータと同じ場所にCloud App Securityされます。
 
 > [!NOTE]
-> この機能は[、Windows 10](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)バージョン 1709 (OS ビルド 16299.1085 および[KB4493441)](https://support.microsoft.com/help/4493441)を実行しているデバイスで Enterprise Mobility + Security の E5 ライセンスで使用できますWindows 10 バージョン 1803 (KB4493464 の OS ビルド 17134.704)、Windows 10 Version 1809 (OS ビルド 17763.379 および[KB4489899)、](https://support.microsoft.com/help/4489899)以降の Windows 10 バージョン、または Windows 11。 [](https://support.microsoft.com/help/4493464)
+> この機能は、Windows 10 バージョン 1709 (OS ビルド 16299.1085 および[KB4493441)](https://support.microsoft.com/help/4493441)、Windows 10 バージョン 1803 (OS ビルド 17134.704 [KB449344)](https://support.microsoft.com/help/4493464)、Windows 10 Version 1809 [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) (OS ビルド 17763.379[および KB4489899)、Windows 10](https://support.microsoft.com/help/4489899)バージョン、または 11 Windowsします。
 
 ## <a name="microsoft-secure-score"></a>Microsoft セキュア スコア
 
@@ -201,7 +201,6 @@ Microsoft Defender for Identity でコンテキスト デバイスの統合を�
 
 望ましくないコンテンツを含む Web サイトへのアクセスをブロックし、すべてのドメインで Web アクティビティを追跡します。 ブロックする Web コンテンツ カテゴリを指定するには、Web コンテンツ フィルター ポリシー [を作成します](https://security.microsoft.com/preferences2/web_content_filtering_policy)。 Microsoft Defender for Endpoint セキュリティ ベースラインを展開する場合は、ブロック モードでネットワーク保護 [を行う必要があります](https://devicemanagement.microsoft.com/#blade/Microsoft_Intune_Workflows/SecurityBaselineSummaryMenu/overview/templateType/2)。
 
-
 ## <a name="share-endpoint-alerts-with-microsoft-compliance-center"></a>Microsoft コンプライアンス センターとエンドポイント通知を共有する
 
 エンドポイント のセキュリティアラートとそのトリアージの状態を Microsoft コンプライアンス センターに転送し、警告を使用してインサイダーリスク管理ポリシーを強化し、内部リスクを害する前に修復することができます。 転送されたデータは、ユーザーのデータと同じ場所にOffice 365されます。
@@ -218,7 +217,7 @@ Defender for Endpoint は、デバイス リスクベースの条件付[Microsof
 この機能は、次の場合にのみ使用できます。
 
 - E5 (または E5) Enterprise Mobility + Security E3およびWindowsライセンスMicrosoft 365 Enterpriseテナント
-- アクティブなMicrosoft Intune環境で、Intune が管理するデバイスWindows Azure AD[参加しています](/azure/active-directory/devices/concept-azure-ad-join/)。
+- Intune でMicrosoft Intuneデバイスが参加しているアクティブなWindows環境Azure AD[環境です](/azure/active-directory/devices/concept-azure-ad-join/)。
 
 ### <a name="conditional-access-policy"></a>条件付きアクセス ポリシー
 

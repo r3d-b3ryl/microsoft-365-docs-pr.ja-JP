@@ -12,15 +12,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 09/22/2021
 ms.technology: mde
-ms.openlocfilehash: 0faeb2039f0a66c014d0bb63e6bbc657206e3e16
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: bbaf1dbee85ac02c1ad44cff78a7434b611e3c20
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240202"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962593"
 ---
 # <a name="onboard-windows-devices-using-configuration-manager"></a>Configuration Manager をWindowsデバイスのオンボード
 
@@ -143,7 +144,7 @@ Value: 0 or 1
 
 ### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>2012 R2 Configuration Manager System Centerを使用するオフボード デバイス
 
-1. ポータルからオフボード パッケージ[Microsoft 365 Defenderします](https://security.microsoft.com/)。
+1. ポータルからオフボード パッケージ<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderします</a>。
     1. ナビゲーション ウィンドウで、[エンドポイント **デバイス** 設定 \> **オフ** \> **ボード]** \> **を選択します**。  
     1. オペレーティング Windows 10としてWindows 11 を選択します。
     1. [展開方法 **] フィールド** で、[System Center Configuration Manager **2012/2012 R2/1511/1602] を選択します**。
@@ -198,10 +199,10 @@ Value: "1"
 
 詳細については[、「2012 R2](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\))Configuration Manager のコンプライアンスSystem Center概要」を参照してください。
 
-## <a name="related-topics"></a>関連項目
-- [グループ ポリシー Windowsデバイスのオンボード](configure-endpoints-gp.md)
-- [モバイル Windowsツールを使用してデバイスをオンボードする](configure-endpoints-mdm.md)
-- [ローカル Windowsを使用してデバイスをオンボードする](configure-endpoints-script.md)
+## <a name="related-topics"></a>関連トピック
+- [グループ ポリシーを使用してデバイスをオンボードする](configure-endpoints-gp.md)
+- [モバイル デバイス管理ツールを使用した Windows デバイスのオンボード](configure-endpoints-mdm.md)
+- [ローカル スクリプトを使用した Windows デバイスのオンボード](configure-endpoints-script.md)
 - [非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード](configure-endpoints-vdi.md)
 - [新しくオンボードされた Microsoft Defender for Endpoint デバイスで検出テストを実行する](run-detection-test.md)
 - [Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング](troubleshoot-onboarding.md)

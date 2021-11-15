@@ -12,14 +12,15 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1591862a759b4d1df17d100e80185479c38d868c
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 02e2d3249bbec9c4c0c4211a53cae0cee1789c1f
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554506"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60960852"
 ---
 # <a name="create-and-manage-roles-for-role-based-access-control"></a>役割ベースのアクセス制御の役割を作成および管理する
 
@@ -38,7 +39,7 @@ ms.locfileid: "60554506"
 
 次の手順では、ユーザーにロールを作成する方法Microsoft 365 Defender。 ユーザー グループに対して既に作成Azure Active Directory前提とします。
 
-1. セキュリティ管理者またはグローバル[Microsoft 365 Defender](https://security.microsoft.com/)が割り当てられているアカウントを使用して、アカウントにログインします。
+1. セキュリティ管理者またはグローバル<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>が割り当てられているアカウントを使用して、アカウントにログインします。
 
 2. ナビゲーション ウィンドウで、[エンドポイントの役割]**設定** \> **([** \> **アクセス** 許可] の下)**を選択します**。
 
@@ -92,7 +93,7 @@ ms.locfileid: "60554506"
 
 ## <a name="edit-roles"></a>ロールの編集
 
-1. セキュリティ管理者またはグローバル[管理者Microsoft 365 Defender](https://security.microsoft.com/)が割り当てられているアカウントを使用して、アカウントにログインします。
+1. セキュリティ管理者またはグローバル<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">管理者Microsoft 365 Defender</a>が割り当てられているアカウントを使用して、アカウントにログインします。
 
 2. ナビゲーション ウィンドウで、[エンドポイントの役割]**設定** \> **([** \> **アクセス** 許可] の下)**を選択します**。
 
@@ -106,7 +107,7 @@ ms.locfileid: "60554506"
 
 ## <a name="delete-roles"></a>役割の削除
 
-1. セキュリティ管理者またはグローバル[管理者Microsoft 365 Defender](https://security.microsoft.com/)が割り当てられているアカウントを使用して、アカウントにログインします。
+1. セキュリティ管理者またはグローバル<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">管理者Microsoft 365 Defender</a>が割り当てられているアカウントを使用して、アカウントにログインします。
 
 2. ナビゲーション ウィンドウで、[エンドポイントの役割]**設定** \> **([** \> **アクセス** 許可] の下)**を選択します**。
 

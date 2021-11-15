@@ -10,14 +10,15 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
+ms.custom: admindeeplinkDEFENDER
 description: 管理者は、Microsoft 365 Defender ポータルでの攻撃シミュレーション トレーニングがユーザーにどのように影響するかを学習し、シミュレーションとトレーニングの結果から分析情報を得る方法について説明します。
 ms.technology: mdo
-ms.openlocfilehash: f101abfb8d7ebd771ab2d02847f9371d35441ae6
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 362f094d340b4f80a7b6fd54b1325540b812fa3e
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60702616"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962917"
 ---
 # <a name="insights-and-reports-for-attack-simulation-training-in-defender-for-office-365"></a>インサイトの Defender での攻撃シミュレーション トレーニングの詳細とレポートOffice 365
 
@@ -36,7 +37,7 @@ Microsoft Defender for Office プラン 2 または Microsoft 365 E5 の攻撃�
 
 ## <a name="insights-and-reports-on-the-overview-tab-of-attack-simulation-training"></a>インサイトシミュレーション トレーニングの [概要] タブの詳細とレポート
 
-[概要]タブに移動するには、Microsoft 365 Defender ポータルを開き、[メール & コラボレーション攻撃シミュレーション トレーニング] に移動し、[概要] タブが選択されている (既定です) を確認します <https://security.microsoft.com/>  \> 。  攻撃シミュレーション トレーニング ページの **[概要]** タブに直接 **移動するには** 、 を使用します <https://security.microsoft.com/attacksimulator?viewid=overview> 。
+[概要]タブに移動するには、Microsoft 365 Defender ポータルを開き、[メール & コラボレーション攻撃シミュレーション トレーニング] に移動し、[概要] タブが選択されている (既定です) を確認します <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>  \> 。  攻撃シミュレーション トレーニング ページの **[概要]** タブに直接 **移動するには** 、 を使用します <https://security.microsoft.com/attacksimulator?viewid=overview> 。
 
 このセクションの残りの部分では、攻撃シミュレーション トレーニングの [ **概要** ] タブで使用できる情報について説明します。
 
@@ -248,7 +249,7 @@ View ..**をクリックすると、[** 概要] タブから攻撃シミュレ�
 
 ## <a name="insights-and-reports-in-the-simulation-details-of-attack-simulation-training"></a>インサイトシミュレーショントレーニングのシミュレーションの詳細に関する情報とレポート
 
-[シミュレーション]**タブに** 移動するには、Microsoft 365 Defender ポータルを開き、[メール & コラボレーション攻撃シミュレーション トレーニング] に移動し、[シミュレーション] タブ <https://security.microsoft.com/>  \> **をクリック** します。攻撃シミュレーション トレーニング ページの **[シミュレーション**] タブに直接 **移動するには**、 を使用します <https://security.microsoft.com/attacksimulator?viewid=simulations> 。
+[シミュレーション]**タブに** 移動するには、Microsoft 365 Defender ポータルを開き、[メール & コラボレーション攻撃シミュレーション トレーニング] に移動し、[シミュレーション] タブ <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>  \> **をクリック** します。攻撃シミュレーション トレーニング ページの **[シミュレーション**] タブに直接 **移動するには**、 を使用します <https://security.microsoft.com/attacksimulator?viewid=simulations> 。
 
 一覧からシミュレーションを選択すると、詳細ページが開きます。 このページには、予想されるシミュレーションの構成設定 (状態、起動日、使用されるペイロードなど) が含まれています。
 

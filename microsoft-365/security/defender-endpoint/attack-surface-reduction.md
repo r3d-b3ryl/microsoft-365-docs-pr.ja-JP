@@ -12,16 +12,18 @@ author: jweston-1
 ms.author: v-jweston
 ms.reviewer: oogunrinde, sugamar, jcedola
 manager: dansimp
-ms.custom: asr
+ms.custom:
+- asr
+- admindeeplinkDEFENDER
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 5392cf40a0d37e332d7b3bec260ab34e9a3a083e
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 6e42cdaa8ecd464581a786d47a4b2044b2907ca9
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882443"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962496"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>マルウェア感染を防ぐために攻撃面の減少ルールを使用する
 
@@ -97,7 +99,7 @@ Microsoft Defender ウイルス対策モードでリアルタイム保護を実�
 
 また、特定の攻撃表面縮小ルールがトリガーされると、アラートが生成されます。
 
-通知と生成されたアラートは、Microsoft 365 Defender ポータル ( ) (以前は [https://security.microsoft.com](https://security.microsoft.com) Microsoft 365 Defender)[で表示できます](microsoft-defender-security-center.md)。
+通知と生成されるアラートは、ポータルでMicrosoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">できます</a>。
 
 ## <a name="advanced-hunting-and-attack-surface-reduction-events"></a>高度な狩猟と攻撃表面の縮小イベント
 
@@ -113,7 +115,7 @@ Microsoft Defender ウイルス対策モードでリアルタイム保護を実�
 
 - Windows 10 Proバージョン[1709](/windows/whats-new/whats-new-windows-10-version-1709)以降
 - Windows 10 Enterpriseバージョン[1709](/windows/whats-new/whats-new-windows-10-version-1709)以降
-- Windowsサーバー、[バージョン 1803 (半期チャネル)](/windows-server/get-started/whats-new-in-windows-server-1803)以降
+- Windows Server バージョン[1803 (半期チャネル)](/windows-server/get-started/whats-new-in-windows-server-1803)以降
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
 - [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
@@ -154,7 +156,7 @@ DeviceEvents
 
 4. 抽出された場所 *cfa-events.xml* ファイルを選択します。 または [、XML を直接コピーします](event-views.md)。
 
-5. **[OK]** を選択します。
+5. [**OK**] を選択します。
 
 イベントをフィルター処理して、次のイベントのみを表示するカスタム ビューを作成できます。そのすべては、フォルダー アクセスの制御に関連しています。
 
@@ -227,7 +229,7 @@ GUID:  `56a863a9-875e-4185-98a7-b882c64b5ce5`
 サポートされるオペレーティング システム
 
 - [Windows 10 Version 1809](/windows/whats-new/whats-new-windows-10-version-1809)
-- [Windowsサーバー、バージョン 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server バージョン 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
 - [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
@@ -247,7 +249,7 @@ GUID: `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`
 サポートされるオペレーティング システム
 
 - [Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windowsサーバー、バージョン 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server バージョン 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 
@@ -269,7 +271,7 @@ LSASS は、コンピューターにサインインするユーザーをWindows�
 サポートされるオペレーティング システム
 
 - [Windows 10バージョン 1803](/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windowsサーバー、バージョン 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server バージョン 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
 - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
@@ -291,9 +293,9 @@ GUID: `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`
 サポートされるオペレーティング システム
 
 - [Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windowsサーバー、バージョン 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server バージョン 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
-- [Microsoft エンドポイント マネージャーCB 1710](/configmgr/core/servers/manage/updates)
+- [Microsoft エンドポイント マネージャー CB 1710](/configmgr/core/servers/manage/updates)
 - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
 - [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
 
@@ -330,7 +332,7 @@ GUID: `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
 サポートされるオペレーティング システム
 
 - [Windows 10バージョン 1803](/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windowsサーバー、バージョン 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server バージョン 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
 
@@ -349,7 +351,7 @@ GUID: `01443614-cd74-433a-b99e-2ecdc07bfc25`
 サポートされるオペレーティング システム
 
 - [Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windowsサーバー、バージョン 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server バージョン 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
@@ -370,7 +372,7 @@ GUID: `5BEB7EFE-FD9A-4556-801D-275E5FFC04CC`
 サポートされるオペレーティング システム
 
 - [Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windowsサーバー、バージョン 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server バージョン 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
@@ -390,7 +392,7 @@ GUID: `D3E037E1-3EB8-44C8-A917-57927947596D`
 サポートされるオペレーティング システム
 
 - [Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windowsサーバー、バージョン 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server バージョン 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [System Center Configuration Manager](/configmgr/core/servers/manage/updates) (SCCM) CB 1710 (SCCM がMicrosoft Endpoint Configuration Manager)
 
@@ -413,7 +415,7 @@ GUID: `3B576869-A4EC-4529-8536-B80A7769E899`
 サポートされるオペレーティング システム
 
 - [Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windowsサーバー、バージョン 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server バージョン 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 
@@ -435,7 +437,7 @@ GUID: `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`
 サポートされるオペレーティング システム
 
 - [Windows 10 Version 1809](/windows/whats-new/whats-new-windows-10-version-1809)
-- [Windowsサーバー、バージョン 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server バージョン 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 Intune 名: `Process creation from Office communication products (beta)`
@@ -446,17 +448,17 @@ GUID: `26190899-1602-49e8-8b27-eb1d0a1ce869`
 
 ### <a name="block-persistence-through-wmi-event-subscription"></a>WMI イベント サブスクリプションによる永続化のブロック
 
-このルールは、デバイス上で WMI を攻撃して永続化を達成するマルウェアを防止します。
+この規則により、マルウェアが WMI を悪用してデバイスでの永続性を獲得するのを防ぎます。
 
 > [!IMPORTANT]
 > ファイルとフォルダーの除外は、この攻撃表面の縮小ルールには適用されません。
 
-ファイルレスの脅威は、隠し、ファイル システムで見られない、定期的な実行制御を得るために、さまざまな戦術を採用しています。 一部の脅威は、WMI リポジトリとイベント モデルを悪用して非表示にできます。
+ファイルレス脅威は、さまざまな戦術を採用して潜伏し、ファイル システムに見つからないようにして、定期的に実行制御を獲得します。 脅威の中には、WMI リポジトリとイベント モデルを悪用して、潜伏できるものがあります。
 
 サポートされるオペレーティング システム
 
 - [Windows 10バージョン 1903](/windows/whats-new/whats-new-windows-10-version-1903)
-- [Windowsサーバー 1903](/windows-server/get-started-19/whats-new-in-windows-server-1903-1909)
+- [Windows Server 1903](/windows-server/get-started-19/whats-new-in-windows-server-1903-1909)
 
 Intune 名: 使用できません
 
@@ -474,7 +476,7 @@ GUID: `e6db77e5-3df2-4cf1-b95a-636979351e5b`
 サポートされるオペレーティング システム
 
 - [Windows 10バージョン 1803](/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windowsサーバー、バージョン 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server バージョン 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
 - [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
@@ -492,7 +494,7 @@ GUID: `d1e49aac-8f56-4280-b9ba-993a6d77406c`
 サポートされるオペレーティング システム
 
 - [Windows 10バージョン 1803](/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windowsサーバー、バージョン 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server バージョン 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
 
@@ -506,12 +508,12 @@ GUID: `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`
 
 このルールは、VBA マクロが Win32 API を呼び出すのを防止します。
 
-OfficeVBA では、Win32 API 呼び出しが有効です。 マルウェアは [、Win32 API](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/) を呼び出してディスクに直接何も書き込みせずに悪意のあるシェルコードを起動するなど、この機能を悪用する可能性があります。 ほとんどの組織では、他の方法でマクロを使用している場合でも、Win32 API を毎日の機能で呼び出す機能に依存しません。
+Office VBA では、Win32 API 呼び出しが有効です。 マルウェアは [、Win32 API](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/) を呼び出してディスクに直接何も書き込みせずに悪意のあるシェルコードを起動するなど、この機能を悪用する可能性があります。 ほとんどの組織では、他の方法でマクロを使用している場合でも、Win32 API を毎日の機能で呼び出す機能に依存しません。
 
 サポートされるオペレーティング システム
 
 - [Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windowsサーバー、バージョン 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server バージョン 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 
@@ -537,7 +539,7 @@ GUID: `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`
 サポートされるオペレーティング システム
 
 - [Windows 10バージョン 1803](/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windowsサーバー、バージョン 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server バージョン 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
 - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)

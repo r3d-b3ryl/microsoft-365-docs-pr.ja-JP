@@ -1,5 +1,5 @@
 ---
-title: JAM Pro F を使用したコンプライアンス ソリューションMicrosoft 365オンボードおよびオフボード macOS デバイス (プレビュー)
+title: JAMF Pro を使用した Microsoft 365 コンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -14,30 +14,26 @@ ms.collection:
 search.appverid:
 - MET150
 description: JAMF ソリューション (プレビュー) を使用して、macOS デバイスをオンボードおよびオフボードMicrosoft 365コンプライアンス ソリューションにProする方法について学習します。
-ms.openlocfilehash: 5335ceb47475a633e8f7ba000f8690ca3b9b8b6c
-ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
+ms.openlocfilehash: 705882af6ebbc7309fb704e215443f807533c6f1
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "60792510"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962665"
 ---
-# <a name="onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-jamf-pro-preview"></a>JAM Pro F を使用したコンプライアンス ソリューションMicrosoft 365オンボードおよびオフボード macOS デバイス (プレビュー)
+# <a name="onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-jamf-pro-preview"></a>JAMF Pro を使用した Microsoft 365 コンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)
 
 JAMF デバイスを使用Pro、エンドポイント データ損失防止Microsoft 365コンプライアンス ソリューションに macOS デバイスをオンボードできます。
 
 > [!IMPORTANT]
 > MacOS デバイスにMicrosoft Defender for Endpoint (MDE) が展開されていない場合は、次の手順を実行します。
 
-## <a name="get-registered"></a>登録する
-
-この機能にアクセスするには、テナントを Microsoft に登録する必要があります。 macOS[のサポートに登録Microsoft 365を参照してください](https://aka.ms/EndpointDLPIgnite21-Previews)。
-
 **適用対象:**
 
-- [Microsoft 365エンドポイント データ損失防止 (DLP)](./endpoint-dlp-learn-about.md)
-- [Insider リスク管理](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [Microsoft 365 エンドポイントのデータ損失防止 (DLP)](./endpoint-dlp-learn-about.md)
+- [インサイダー リスク管理](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 - [macOS デバイスが参加Azure ADする](https://docs.jamf.com/10.30.0/jamf-pro/administrator-guide/Azure_AD_Integration.html)
 - macOS デバイスが JAMF pro [を介して管理されている必要があります。](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/)
@@ -47,9 +43,9 @@ JAMF デバイスを使用Pro、エンドポイント データ損失防止Micro
 
 1. この手順では、これらのファイルが必要です。
 
-|に必要なファイル |source |
+|必要なファイル |ソース |
 |---------|---------|
-|オンボーディング パッケージ    |コンプライアンス ポータルオンボード パッケージ **からダウンロードされた、** ファイル名 *DeviceComplianceOnboarding.plist* |
+|オンボーディング パッケージ    |コンプライアンス ポータルオンボード パッケージ **、ファイル名** *DeviceComplianceOnboarding.plist からダウンロード* |
 |アクセシビリティ |[アクセシビリティ.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig)|
 フル ディスク アクセス     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)|
 |ネットワーク フィルター| [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig)
@@ -67,7 +63,7 @@ JAMF デバイスを使用Pro、エンドポイント データ損失防止Micro
 >
 >これらの個々のファイルが更新された場合は、結合されたファイルを再度ダウンロードするか、単一の更新されたファイルを個別にダウンロードする必要があります。
 
-コンプライアンス ソリューションへの macOS デバイスのオンボードは、複数フェーズのプロセスです。
+コンプライアンス ソリューションへの macOS デバイスのオンボーディングは、複数フェーズのプロセスです。
 
 ### <a name="get-the-device-onboarding-package"></a>デバイスオンボーディング パッケージの取得
 
@@ -79,7 +75,7 @@ JAMF デバイスを使用Pro、エンドポイント データ損失防止Micro
  
 1. [オンボード **パッケージのダウンロード] を選択する**
  
-1. デバイスオンボーディング パッケージの内容を抽出します。 **JAMF フォルダーに** *DeviceComplainceOnboarding.plist ファイルが表示* されます。
+1. デバイスオンボーディング パッケージの内容を抽出します。 JAMF フォルダーに *DeviceComplainceOnboarding.plist ファイルが表示* されます。
 
 ### <a name="create-a-jamf-pro-configuration-profile-for-the-onboarding-package"></a>オンボード パッケージの JAMF Pro構成プロファイルを作成する
 

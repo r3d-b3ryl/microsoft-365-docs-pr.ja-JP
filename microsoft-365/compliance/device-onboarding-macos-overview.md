@@ -14,32 +14,28 @@ ms.collection:
 search.appverid:
 - MET150
 description: コンプライアンス ソリューションへの macOS デバイスのオンボーディングについて
-ms.openlocfilehash: f7ff900fdbeca59a63c0acd2c2f542c6e96f367b
-ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
+ms.openlocfilehash: fbf29e0d66bf31d058cede69aba9fe0c7814a3a7
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60950691"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963253"
 ---
 # <a name="onboard-macos-devices-into-microsoft-365-overview-preview"></a>Microsoft 365 への macOS デバイスのオンボードに関する概要 (プレビュー)
 
 MacOS デバイスは、Intune または JAMF Microsoft 365を使用して、コンプライアンス ソリューションにオンボードPro。 オンボーディング手順は、使用している管理ソリューションによって異なります。 macOS デバイスが Microsoft Defender for Endpoint (MDE) に既にオンボードされている場合は、手順が少なくなっています。 適切 [な手順への](#next-steps) リンクについては、「次の手順」を参照してください。
 
-## <a name="get-registered"></a>登録する
-
-この機能にアクセスするには、テナントを Microsoft に登録する必要があります。 macOS[のサポートに登録Microsoft 365を参照してください](https://aka.ms/EndpointDLPIgnite21-Previews)。
-
 **適用対象:**
 
-- [Microsoft 365 エンドポイント データ損失防止 (DLP)](./endpoint-dlp-learn-about.md)
-- [Insider リスク管理](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [Microsoft 365 エンドポイントのデータ損失防止 (DLP)](./endpoint-dlp-learn-about.md)
+- [インサイダー リスク管理](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
 ## <a name="before-you-begin"></a>はじめに
 
 macOS デバイス (Catalina 10.15 以降) での Endpoint DLP の使用を開始する前に、次の記事を理解する必要があります。
 
 - [Microsoft 365 のエンドポイントのデータ損失防止についての詳細情報](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention)
-- [エンドポイント データ損失防止を開始する](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention)
+- [エンドポイント データ損失防止の使用を開始する](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention)
 
 DLP に精通していない場合は、次の記事も理解する必要があります。
 
@@ -49,7 +45,7 @@ DLP に精通していない場合は、次の記事も理解する必要があ�
 
 Insider Risk に精通していない場合は、次の記事について理解する必要があります。
 
- - [Insider リスク管理](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+ - [インサイダー リスク管理](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
  - [インサイダー リスク管理のための計画](insider-risk-management-plan.md#plan-for-insider-risk-management)
 
 macOS デバイスは、Intune または JAMF を使用して既に管理されている必要Pro。
@@ -102,13 +98,13 @@ DLP センサーの利用統計情報をMicrosoft 365データ損失防止ポリ
 
 トピック | 説明
 :---|:---
-|[Intune (プレビュー) を使用して、Microsoft 365コンプライアンス ソリューションへのオンボードおよびオフボードの macOS デバイス](device-onboarding-offboarding-macos-intune.md#onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-intune-preview)|Intune を介して管理される macOS デバイスの場合
-|[Microsoft Defender for Endpoint のお客様向け Intune を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)](device-onboarding-offboarding-macos-intune-mde.md#onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers-preview) |Intune を介して管理され、Microsoft Defender for Endpoint (MDE) が展開されている macOS デバイスの場合
-|[JAM Pro F を使用したコンプライアンス ソリューションMicrosoft 365オンボードおよびオフボード macOS デバイス (プレビュー)](device-onboarding-offboarding-macos-jamfpro.md#onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-jamf-pro-preview) | JAMF を介して管理される macOS Pro
-|[Microsoft Defender for Endpoint のお客様向け JAMF Pro を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)](device-onboarding-offboarding-macos-jamfpro-mde.md#onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers-preview)|JAMF を介して管理され、エンドポイントPro Microsoft Defender (MDE) が展開されている macOS デバイスの場合
+|[Intune を使用した Microsoft 365 コンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)](device-onboarding-offboarding-macos-intune.md#onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-intune-preview)|Intune を通じて管理される macOS デバイスの場合
+|[Microsoft Defender for Endpoint のお客様向け Intune を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)](device-onboarding-offboarding-macos-intune-mde.md#onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers-preview) |Intune を通じて管理され、Microsoft Defender for Endpoint (MDE) が展開されている macOS デバイスの場合
+|[JAMF Pro を使用した Microsoft 365 コンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)](device-onboarding-offboarding-macos-jamfpro.md#onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-jamf-pro-preview) | JAMF Pro を通じて管理される macOS デバイスの場合
+|[Microsoft Defender for Endpoint のお客様向け JAMF Pro を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)](device-onboarding-offboarding-macos-jamfpro-mde.md#onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers-preview)|JAMF Pro を通じて管理され、Microsoft Defender for Endpoint (MDE) が展開されている macOS デバイスの場合
 
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [エンドポイントのデータ損失防止の使用](endpoint-dlp-using.md#using-endpoint-data-loss-prevention)
 - [Microsoft アプリ全体の DLP ポリシー ヒントのサポート マトリックス](dlp-policy-tips-reference.md#support-matrix-for-dlp-policy-tips-across-microsoft-apps)

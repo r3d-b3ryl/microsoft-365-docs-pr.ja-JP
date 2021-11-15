@@ -6,13 +6,14 @@ ms.topic: how-to
 author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
+ms.custom: admindeeplinkDEFENDER
 manager: raynew
-ms.openlocfilehash: 7b09c12c1d4c519a47fc60057ab26741a7145469
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e53c14405d3d190715b49e58061aee8ba771180a
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212004"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962845"
 ---
 # <a name="defender-for-identity-entity-tags-in-microsoft-365-defender"></a>Defender for Identity entity tags in Microsoft 365 Defender
 
@@ -30,7 +31,7 @@ ms.locfileid: "59212004"
 
 このMicrosoft 365 Defender、3 種類の Defender for Identity エンティティ タグ(機密タグ **、Honeytoken** タグ、およびサーバー **Exchange) を設定できます**。
 
-これらのタグを設定 [するには、Microsoft 365 Defender](https://security.microsoft.com/)に移動し、[設定 **ID]** **に移動します**。
+これらのタグを設定 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">するには、Microsoft 365 Defender</a>に移動し、[設定 **ID]** **に移動します**。
 
 ![[ID] 設定に移動します。](../../media/defender-identity/settings-identities.png)
 

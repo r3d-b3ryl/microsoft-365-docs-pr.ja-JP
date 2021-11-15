@@ -19,14 +19,16 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: conceptual
-ms.custom: autoir
+ms.custom:
+- autoir
+- admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: e089a38d0a9abc6a6713b82a77d3678d781ed456
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: dd5a8d4db47eb0f26f7bdf7ef992fba18a6c3aa5
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197079"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963193"
 ---
 # <a name="view-the-details-and-results-of-an-automated-investigation"></a>自動調査の詳細と結果を表示する
 
@@ -53,7 +55,7 @@ Microsoft Defender for Endpoint[](automated-investigations.md)では、自動調
 
 改善された[アクション センターでは](auto-investigation-action-center.md)、デバイス[](manage-auto-investigation.md#remediation-actions)全体の修復アクション、電子メール、コラボレーション & ID がまとめされます。 リストされているアクションには、自動的または手動で実行された修復アクションが含まれます。 アクション センターでは、承認待ちのアクションと、既に承認または完了したアクションを表示できます。 調査ページなどの詳細に移動することもできます。
 
-1. <https://security.microsoft.com> に移動し、サインインします。
+1. [ログイン] <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>サインインします。
 2. ナビゲーション ウィンドウで、[**アクション センター**] を選択します。
 3. [**保留中**] タブまたは [**履歴**] タブのいずれかでアイテムを選択します。 そのフライアウト ウィンドウが開きます。
 4. フライアウト ウィンドウで情報を確認し、次のいずれかの手順を実行します。
@@ -66,7 +68,7 @@ Microsoft Defender for Endpoint[](automated-investigations.md)では、自動調
 
 インシデントの詳細ページを使用して、インシデントに関する詳細情報を表示します。これには、影響を受けたデバイス、ユーザー アカウント、またはメールボックスに関する情報がトリガーされた警告が含まれます。
 
-1. <https://security.microsoft.com> に移動し、サインインします。
+1. [ログイン] <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>サインインします。
 2. ナビゲーション ウィンドウで、[インシデント] を選択 **し、[インシデント&通知** \> **します**。
 3. リストでアイテムを選択し、[インシデント ページを開 **く] を選択します**。
 4. [調査 **] タブを** 選択し、一覧で調査を選択します。 そのフライアウト ウィンドウが開きます。

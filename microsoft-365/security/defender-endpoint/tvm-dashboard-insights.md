@@ -14,14 +14,15 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7c5bdc74a214ed76aa791a9ee8331ac2f0a5492a
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 63d994ce521f3915daea6a585f64c407fd241eee
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882983"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963217"
 ---
 # <a name="dashboard-insights---threat-and-vulnerability-management"></a>ダッシュボードの分析情報 - 脅威と脆弱性の管理
 
@@ -41,7 +42,7 @@ ms.locfileid: "60882983"
 - インシデント調査中の貴重なデバイスの脆弱性コンテキスト
 - 組み込みの修復プロセスは、Microsoft IntuneとMicrosoft Endpoint Configuration Manager
 
-このポータルでは、脅威と脆弱性の管理機能[Microsoft 365 Defender使用](https://security.microsoft.com/)できます。
+この機能は、脅威と脆弱性の管理ポータル<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender使用</a>できます。
 
 - 露出スコアと Microsoft Secure Score for Devices を、セキュリティ上の推奨事項、ソフトウェアの脆弱性、修復アクティビティ、公開されたデバイスと共に表示する
 - 分析情報EDRエンドポイントの脆弱性と関連付け、それらを処理する
@@ -77,7 +78,7 @@ ms.locfileid: "60882983"
 
 ポータル全体で使用されるアイコンの詳細については [、「Microsoft Defender for Endpoint アイコン」を参照してください](portal-overview.md#microsoft-defender-for-endpoint-icons)。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [暴露スコア](tvm-exposure-score.md)

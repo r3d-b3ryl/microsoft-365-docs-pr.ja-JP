@@ -33,7 +33,7 @@
       items:
         - name: 概要
           href: setup-secure-collaboration-with-teams.md
-        - name: '手順 1: Microsoft Teamsと 3 層の保護を構成する'
+        - name: Microsoft Teamsと３つのレベル保護の構成
           items:
             - name: 3 層の保護の概要
               href: configure-teams-three-tiers-protection.md
@@ -45,7 +45,7 @@
               href: configure-teams-highly-sensitive-protection.md
             - name: セキュリティの分離を使用してチームを構成する
               href: secure-teams-security-isolation.md
-        - name: 手順 2。 外部共有を構成する
+        - name: 外部共有を構成する
           items:
             - name: 外部共有の概要
               href: collaborate-with-people-outside-your-organization.md

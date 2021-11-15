@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365管理センターのレポート - Microsoft ブラウザーの使用状況
+title: Microsoft 365管理センターの [レポート] - Microsoft ブラウザーの使用状況
 ms.author: waxiaoyu
 author: sarahwxy
 manager: scotv
@@ -18,14 +18,14 @@ search.appverid:
 - MOE150
 - GEA150
 description: '[レポート] ダッシュボードの [レポート] ダッシュボードを使用して Microsoft Microsoft 365利用状況レポートを取得するMicrosoft 365 管理センター。'
-ms.openlocfilehash: ac2eb7af8f89fb3d496d7b2afd8ca66322e20275
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: d653bf1132f461b14644b1ddc04bab2fdceee358
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60654001"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60960960"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---microsoft-browser-usage"></a>Microsoft 365管理センターのレポート - Microsoft ブラウザーの使用状況
+# <a name="microsoft-365-reports-in-the-admin-center---microsoft-browser-usage"></a>Microsoft 365管理センターの [レポート] - Microsoft ブラウザーの使用状況
 
 [Microsoft 365レポート] ダッシュボードには、組織内の製品全体のアクティビティの概要が表示されます。 これにより、個々の製品レベルレポートを掘り下して、各製品内のアクティビティに関するより詳細な分析情報を提供できます。 [レポートの概要に関するトピック](activity-reports.md)を参照してください。 Microsoft ブラウザーの使用状況レポートでは、ユーザーの使用状況、Internet Explorer、Microsoft Edge 従来版に関するMicrosoft Edgeできます。 利用状況レポートは、Microsoft Microsoft 365を使用してアクセスされるオンライン サービスに基づいて行います。
 
@@ -39,9 +39,11 @@ ms.locfileid: "60654001"
 
 :::image type="content" alt-text="Microsoft ブラウザー使用状況レポートのアクション フロー。" source="../../media/1ef4eb08-18b8-4dda-aa15-1aad013ecd70.png" lightbox="../../media/1ef4eb08-18b8-4dda-aa15-1aad013ecd70.png":::
 
-グローバル管理者は、エッジ レガシ (サポートされていない) および Internet Explorer で Microsoft 365 サービスを使用しているユーザーにメッセージを送信することをオプトインできます (すぐにサポートされません)。 この対象となるメッセージは、これらのブラウザーのサポートがすぐに送信され、Microsoft Edge に関する情報とブラウザーを切り替える簡単な手順を含むサポート記事へのリンクがユーザーに通知されます。 
+グローバル管理者は、Internet Explorer から Microsoft 365 サービスにアクセスしているユーザーにメッセージを送信することをオプトインできます (Internet Explorer デスクトップ アプリケーションは 2022 年 6 月 15 日に廃止されます)。 この対象となるメッセージは、これらのブラウザーのサポートがすぐに送信され、Microsoft Edge に関する情報とブラウザーを切り替える簡単な手順を含むサポート記事へのリンクがユーザーに通知されます。 
 
-この機能は、レポート ページで確認できます。 メッセージが作成されると、ユーザーは 2021 年 8 月 17 日まで指定された頻度で通知を受け取ります。 この機能をいつでもオフにし、ユーザーへの通知の送信を停止できます。 通知の送信を再度開始するには、機能をオンに戻します。
+この機能は、組織がレポートに表示される使用状況に基Internet Explorer場合は、[Microsoft ブラウザー使用状況レポート] ページで確認できます (グローバル管理者のアクセス許可が必要)。 メッセージが作成されると、ユーザーは 2022 年 6 月 15 日まで指定された頻度で通知を受け取ります。 この機能は、いつでもオンまたはオフにできます。
+
+これは、現在、米国のグローバル管理者のみ利用可能で、オンラインでのユーザー通知を許可する時間Excelです。
 
 ## <a name="interpret-the-microsoft-browser-usage-report"></a>Microsoft ブラウザー使用状況レポートの解釈
 

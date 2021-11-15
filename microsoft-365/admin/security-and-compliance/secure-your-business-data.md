@@ -18,18 +18,19 @@ ms.custom:
 - okr_smb
 - AdminTemplateSet
 - admindeeplinkMAC
+- admindeeplinkDEFENDER
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: ランサムウェア、フィッシング、悪意のある添付ファイルなどのサイバー脅威からビジネス メールとデータを保護する方法。
-ms.openlocfilehash: a7640dd1fae74bf2a954dc02df14e05e63750fcd
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1923f4a13e2971cf58c83ccfb1444b7446133566
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60178109"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962725"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>ビジネス プランのセキュリティをMicrosoft 365するトップ 10 の方法
 
@@ -42,7 +43,7 @@ Microsoft では、サービス プランに適用される次の表に示すタ
 |1|[多要素認証をセットアップする](secure-your-business-data.md#setup)|![含まれています。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![含まれています。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |2|[ユーザーをトレーニングする](secure-your-business-data.md#train)|![含まれています。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![含まれています。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |3|[専用の管理者アカウントを使用する](secure-your-business-data.md#admin)|![含まれています。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![含まれています。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|4 |[メール内のマルウェアに対する保護のレベルを上げる](secure-your-business-data.md#malware)|![含まれています。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![含まれています。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|4|[メール内のマルウェアに対する保護のレベルを上げる](secure-your-business-data.md#malware)|![含まれています。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![含まれています。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |5|[ランサムウェアから保護する](secure-your-business-data.md#ransomware)|![含まれています。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![含まれています。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |6 |[電子メールの自動転送を停止する](secure-your-business-data.md#forwarding)|![含まれています。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![含まれています。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |7 |[メッセージOfficeを使用する](secure-your-business-data.md#encryption)||![含まれています。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
@@ -52,7 +53,7 @@ Microsoft では、サービス プランに適用される次の表に示すタ
 
 Microsoft Business Premium を使用している場合、以下のライブラリのガイダンスに従うと、最も手早くセキュリティ設定を行い安全に共同作業ができるでしょう: [中小企業向け Microsoft 365 およびキャンペーン ](../../campaigns/index.md)。 このガイダンスは、Microsoft Defending Democracy チームと協力して開発され、高度なハッカーによるサイバー攻撃から中小企業のユーザーを保護します。
 
-開始する前に、セキュリティ[センター Microsoft 365の](../../security/defender/microsoft-secure-score.md)セキュリティ スコアをMicrosoft 365してください。 一元化されたダッシュボードから、ID、データ、アプリ、デバイス、インフラストラクチャMicrosoft 365のセキュリティを監視および改善できます。 推奨されるセキュリティ機能を構成したり、セキュリティ関連のタスク (レポートの表示など) を実行したり、サードパーティのアプリケーションやソフトウェアを使用して推奨事項に対処したりするためのポイントが与えられる。 Microsoft 製品とサービスの広範なセットに対する追加の分析情報と可視性を活用すると、組織のセキュリティ正常性に関する自信を持って報告できます。
+開始する前に、セキュリティ[センター Microsoft 365の](../../security/defender/microsoft-secure-score.md)セキュリティ スコアをMicrosoft 365<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">してください</a>。 一元化されたダッシュボードから、ID、データ、アプリ、デバイス、インフラストラクチャMicrosoft 365のセキュリティを監視および改善できます。 推奨されるセキュリティ機能を構成したり、セキュリティ関連のタスク (レポートの表示など) を実行したり、サードパーティのアプリケーションやソフトウェアを使用して推奨事項に対処したりするためのポイントが与えられる。 Microsoft 製品とサービスの広範なセットに対する追加の分析情報と可視性を活用すると、組織のセキュリティ正常性に関する自信を持って報告できます。
 
 ![Microsoft Secure Score のスクリーンショット。](../../media/secure-score.png)
 
@@ -154,7 +155,7 @@ Microsoft では、次の記事で推奨されるアクションを実行して�
 
 5. ルールごとに次の表の設定を適用します。 これらの設定を変更しない限り、残りの設定は既定のままにします。
 
-6. **[保存]** を選択します。
+6. [**保存**] を選択します。
     
 | Setting | ファイルの添付ファイルを開く前にユーザーにOfficeする | ランサムウェアなどの悪意のあるコードを含む可能性のあるファイルの種類をブロックする |
 |:-----|:-----|:-----|
@@ -167,7 +168,7 @@ Microsoft では、次の記事で推奨されるアクションを実行して�
 > [!TIP]
 > ブロックするファイルを手順 4 のマルウェア対策リスト [に追加することもできます](#4-raise-the-level-of-protection-against-malware-in-mail)。
 
-詳細については、以下を参照してください。
+詳細については、以下を参照してください:
 
 - [ランサムウェア: リスクを軽減する方法](https://www.microsoft.com/security/blog/2020/04/28/ransomware-groups-continue-to-target-healthcare-critical-services-heres-how-to-reduce-risk/)
 
@@ -190,7 +191,7 @@ Microsoft では、次の記事で推奨されるアクションを実行して�
 
 5. 次の表の設定を適用します。 これらの設定を変更しない限り、残りの設定は既定のままにします。
 
-6. **[保存]** を選択します。
+6. [**保存**] を選択します。
 
 |Setting|外部ドメインへのメールの自動転送を拒否する|
 |---|---|
@@ -204,9 +205,9 @@ Microsoft では、次の記事で推奨されるアクションを実行して�
 ## <a name="7-use-office-message-encryption"></a>7: メッセージ暗号化Office使用する
 <a name="encryption"> </a>
 
-Officeメッセージの暗号化は、メッセージの暗号化にMicrosoft 365。 既にセットアップされています。 [Office暗号化] を使用すると、組織は組織内外のユーザー間で暗号化された電子メール メッセージを送受信できます。 Office 365 Message Encryption は、Outlook.com、Yahoo!、Gmail、およびその他のメール サービスで機能します。 メール メッセージの暗号化を使用すると、意図した受信者のみがメッセージの内容を表示できるようになります。
+Officeメッセージ暗号化は、メッセージ暗号化にMicrosoft 365。 既にセットアップされています。 [Office暗号化] を使用すると、組織は組織内外のユーザー間で暗号化された電子メール メッセージを送受信できます。 Office 365 Message Encryption は、Outlook.com、Yahoo!、Gmail、およびその他のメール サービスで機能します。 メール メッセージの暗号化を使用すると、意図した受信者のみがメッセージの内容を表示できるようになります。
 
-Officeメッセージ暗号化は、メールを送信するときに 2 つの保護オプションを提供します。
+Officeメッセージ暗号化では、メールを送信するときに 2 つの保護オプションが提供されます。
 
 - 転送しない
 
@@ -304,7 +305,7 @@ Defender for Office 365でフィッシング対策ポリシーを作成するに
 ## <a name="10-protect-against-phishing-attacks-with-safe-links"></a>10: リンクを使用してフィッシング攻撃からセーフする
 <a name="phishingatp"> </a>
 
-ハッカーは、メールや他のファイルのリンクに悪意のある Web サイトを非表示にしている場合があります。 セーフOffice 365 用 Microsoft Defender の一部であるリンクは、電子メール メッセージおよびドキュメント内の Web アドレス (URL) のクリック時の検証を提供することで、組織を保護Officeできます。 保護は、リンク ポリシーセーフによって定義されます。
+ハッカーは、メールや他のファイルのリンクに悪意のある Web サイトを非表示にしている場合があります。 セーフ Office 365 用 Microsoft Defender の一部であるリンクは、電子メール メッセージおよびドキュメント内の Web アドレス (URL) のクリック時の検証を提供することで、組織を保護Officeできます。 保護は、リンク ポリシーセーフによって定義されます。
 
 次の手順を実行することをお勧めします。
 
@@ -328,7 +329,7 @@ Defender for Office 365でフィッシング対策ポリシーを作成するに
 
 3. **[設定** 以外のコンテンツに適用する場合は **、[Office 365** アプリケーション] を選択し、[ユーザーが安全なリンクをクリックしても追跡しない] を選択し、ユーザーが元の **URL** への安全なリンクをクリックさせない。
 
-4. **[保存]** を選択します。
+4. [**保存**] を選択します。
 
 ドメイン内のすべての受信者を対象とする新しいポリシーを作成するには、次の方法を実行します。
 
@@ -336,7 +337,7 @@ Defender for Office 365でフィッシング対策ポリシーを作成するに
 
 2. 次の表に示す設定を適用します。
 
-3. **[保存]** を選択します。
+3. [**保存**] を選択します。
 
 |設定またはオプション|推奨される設定値|
 |---|---|
