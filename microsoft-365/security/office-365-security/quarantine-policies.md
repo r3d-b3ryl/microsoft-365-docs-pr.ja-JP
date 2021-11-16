@@ -17,17 +17,14 @@ ms.custom: admindeeplinkDEFENDER
 description: 管理者は、検疫ポリシーを使用して、検疫されたメッセージに対してユーザーが実行できる操作を制御する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5bfb89d73649c3607909c6a66d4344b6d63b6470
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 77e24e4c1f4040ee97fbbdfd3b7c0208955c17d9
+ms.sourcegitcommit: d40b8c506c34a661a275f756081a27ef9ad5bf4f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963025"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60972050"
 ---
 # <a name="quarantine-policies"></a>検疫ポリシー
-
-> [!NOTE]
-> この記事で説明する機能は、展開中であり、まだ利用できない場合があります。 ワールドワイド ロールアウトの対象日は、2021 年 10 月 31 日です。
 
 Exchange Online Protection (EOP) およびOffice 365 用 Microsoft Defender の検疫ポリシー (以前は検疫タグと呼ばれる) を使用すると、管理者はメッセージが検疫された理由に基づいて、検疫されたメッセージに対してユーザーが実行できる操作を制御できます。
 
@@ -74,6 +71,8 @@ Microsoft 365 Defender ポータルまたは PowerShell で検疫ポリシーを
 
 > [!NOTE]
 > 検疫済みメッセージの有効期限が切れるまでの期間は、スパム対策ポリシーでこの日数の検疫にスパムを保持 _(QuarantineRetentionPeriod)_ によって制御されます。 詳細については、「[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
+>
+> サポートされている保護機能に割り当てられている検疫ポリシーを変更すると、変更が変更後に検疫されるメッセージに影響します。 その保護機能によって以前に検疫されたメッセージは、新しい検疫ポリシーの割り当ての設定の影響を受け取る必要があります。
 
 ## <a name="full-access-permissions-and-quarantine-notifications"></a>フル アクセスのアクセス許可と検疫通知
 
@@ -294,7 +293,7 @@ New-QuarantinePolicy -Name LimitedAccess -EndUserQuarantinePermissions $LimitedA
 <New-HostedContentFilterPolicy -Name "<Unique name>" | Set-HostedContentFilterPolicy -Identity "<Policy name>"> [-SpamAction Quarantine] [-SpamQuarantineTag <QuarantineTagName>] [-HighConfidenceSpamAction Quarantine] [-HighConfidenceSpamQuarantineTag <QuarantineTagName>] [-PhishSpamAction Quarantine] [-PhishQuarantineTag <QuarantineTagName>] [-HighConfidencePhishQuarantineTag <QuarantineTagName>] [-BulkSpamAction Quarantine] [-BulkQuarantineTag <QuarantineTagName>] ...
 ```
 
-**注**:
+**注意**:
 
 - _PhishSpamAction_ パラメーターと _HighConfidencePhishAction_ パラメーターの既定値は[検疫] なので、PowerShell で新しいスパム フィルター ポリシーを作成するときにこれらのパラメーターを使用する必要はありません。 新しいスパム対策ポリシーまたは既存のスパム対策ポリシーの _SpamAction_ パラメーター _、HighConfidenceSpamAction_ パラメーター、 _および BulkSpamAction_ パラメーターの場合、検疫ポリシーは値が [検疫] の場合にのみ有効です。
 
@@ -502,7 +501,7 @@ New-MalwareFilterPolicy -Identity "Human Resources" -QuarantineTag NoAccess
 <New-SafeAttachmentPolicy -Name "<Unique name>" | Set-SafeAttachmentPolicy -Identity "<Policy name>"> -Enable $true -Action <Block | Replace | DynamicDelivery> [-QuarantineTag <QuarantineTagName>]
 ```
 
-**注**:
+**注意**:
 
 - _Action パラメーターの_ 値 Block、Replace、または DynamicDelivery を指定すると、検疫されたメッセージが発生する可能性があります (値 Allow はメッセージを検疫しません)。 Action パラメーターの _値は、Enable_ パラメーターの値が. `$true`
 

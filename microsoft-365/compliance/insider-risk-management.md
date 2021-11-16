@@ -15,14 +15,14 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 455c60e925fe9563fff26699e6f023b0971bb96c
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 6a1698be8d0221987d3e70ed0004feb1148e03d2
+ms.sourcegitcommit: d40b8c506c34a661a275f756081a27ef9ad5bf4f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60662518"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60972062"
 ---
-# <a name="learn-about-insider-risk-management-in-microsoft-365"></a>インサイダー リスク管理の詳細については、Microsoft 365
+# <a name="learn-about-insider-risk-management-in-microsoft-365"></a>Microsoft 365 のインサイダー リスク管理について
 
 Insider リスク管理は Microsoft 365 のコンプライアンス ソリューションであり、組織内の悪意のある不注意なアクティビティを検出、調査、および処理することで、内部リスクを最小限に抑えるのに役立ちます。 Insider リスク ポリシーを使用すると、ケースに対応し、必要に応じて Microsoft Advanced eDiscovery にケースをエスカレートするなど、組織内で特定および検出するリスクの種類を定義できます。 組織内のリスク アナリストは、適切なアクションを迅速に実行して、ユーザーが組織のコンプライアンス基準に準拠している必要があります。
 
@@ -131,7 +131,7 @@ Insider リスク分析では、インサイダー リスク ポリシーを構�
 
 さらに、新しい [監査ログ (プレビュー)](insider-risk-management-audit-log.md) を使用すると、インサイダー リスク管理機能で実行されたアクションについて情報を得られます。 このリソースを使用すると、1 つ以上のインサイダー リスク管理役割グループに割り当てられたユーザーが実行したアクションを個別に確認できます。
 
-### <a name="action"></a>Action
+### <a name="action"></a>アクション
 
 ケースを調査した後、レビュー担当者は迅速に行動してケースを解決したり、組織内の他のリスク関係者と共同作業を行います。 ユーザーがポリシー条件に誤って違反した場合、組織に合わせてカスタマイズできる通知テンプレートから、簡単な通知通知をユーザーに送信できます。 これらの通知は、簡単なリマインダーとして機能する場合や、将来の危険な動作を防ぐためのトレーニングやガイダンスの更新をユーザーに指示する場合があります。 詳細については、「[インサイダー リスク管理通知テンプレート](insider-risk-management-notices.md)」をご覧ください。
 

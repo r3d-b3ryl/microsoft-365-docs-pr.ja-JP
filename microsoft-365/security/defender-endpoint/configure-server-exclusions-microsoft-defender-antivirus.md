@@ -14,14 +14,14 @@ author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.date: 11/10/2021
+ms.date: 11/15/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: fad476d132e00dd7e01ab7876ec9bee0224f4e72
-ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
+ms.openlocfilehash: 616c2376e8180a74380f1d6569c4e4612269f562
+ms.sourcegitcommit: d40b8c506c34a661a275f756081a27ef9ad5bf4f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60899577"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60972026"
 ---
 # <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>サーバー Microsoft Defender ウイルス対策の除外をWindowsする
 
@@ -33,9 +33,6 @@ ms.locfileid: "60899577"
 
 Microsoft Defender ウイルス対策サーバー 2019 Windows Server 2016および Windowsサーバー 2019 では、指定したサーバーの役割で定義されている特定の除外に自動的に登録されます。 これらの除外は、アプリに表示される標準の除外リスト[にはWindows セキュリティされません](microsoft-defender-security-center-antivirus.md)。
 
-> [!NOTE]
-> 自動除外は、リアルタイム保護 (RTP) スキャンにのみ適用されます。 フル/クイック スキャンまたはオンデマンド スキャンでは、自動除外は適用されません。
-
 サーバーの役割定義の自動除外に加えて、カスタム除外を追加または削除できます。 これを行うには、次の記事を参照してください。
 - [ファイル名、拡張子、フォルダーの場所に基づいて除外を構成および検証する](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [プロセスによって開いたファイルの除外を構成および検証する](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
@@ -45,10 +42,10 @@ Microsoft Defender ウイルス対策サーバー 2019 Windows Server 2016およ
 次の重要な点に注意してください。
 
 - カスタム除外は、自動除外よりも優先されます。
-- 自動除外は、リアルタイム保護 (RTP) スキャンにのみ適用されます。 フル/クイック スキャンまたはオンデマンド スキャンでは、自動除外は適用されません。
+- 自動除外は、リアルタイム保護 (RTP) スキャンにのみ適用されます。 自動除外は、フル スキャン、クイック スキャン、またはオンデマンド スキャン中には適用されません。
 - カスタム除外と重複除外は、自動除外と競合しない。
 - Microsoft Defender ウイルス対策展開イメージのサービスと管理 (DISM) ツールを使用して、コンピューターにインストールされている役割を特定します。
-- サーバー ロールの自動除外は、R2 ではWindows Server 2012されません。
+- サーバーロールの自動除外は、これらのサーバーが Defender for Endpoint にオンボードされていないWindows Server 2012 R2 では機能しません。 (「[オンボード Windows Microsoft Defender for Endpoint サービスへのサーバーのオンボード」を参照](configure-server-endpoints.md)してください。
 
 この記事では、このページ以降のMicrosoft Defender ウイルス対策のWindows Server 2016説明します。
 
@@ -64,18 +61,7 @@ Microsoft Defender ウイルス対策サーバー 2019 Windows Server 2016およ
 |[自動除外のオプトアウト](#opting-out-of-automatic-exclusions)|自動除外をオプトアウトする方法を説明する重要な考慮事項と手順が含まれています|
 |[カスタム除外の定義](#defining-custom-exclusions)|カスタム除外の定義に関する情報へのリンクを提供します。|
 
-> [!IMPORTANT]
-> 次の点に注意してください。
->
-> - カスタム除外は、自動除外よりも優先されます。
-> - 自動除外は、リアルタイム保護 (RTP) スキャンにのみ適用されます。 フル スキャン、クイック スキャン、またはオンデマンド スキャンでは、自動除外は適用されません。
-> - カスタム除外と重複除外は、自動除外と競合しない。
-> - Microsoft Defender ウイルス対策展開イメージのサービスと管理 (DISM) ツールを使用して、コンピューターにインストールされている役割を特定します。
-
 ## <a name="automatic-exclusions-on-windows-server-2016-or-later"></a>ユーザーの自動除外Windows Server 2016以降
-
-> [!NOTE]
-> 自動除外は、リアルタイム保護 (RTP) スキャンにのみ適用されます。 フル スキャン、クイック スキャン、またはオンデマンド スキャンでは、自動除外は適用されません。
 
 このWindows Server 2016以降は、次の除外を定義する必要があります。
 
@@ -86,7 +72,9 @@ Microsoft Defender ウイルス対策サーバー 2019 Windows Server 2016およ
 
 オペレーティング システムの除外とサーバーの役割の除外は、アプリに表示される標準の除外[リストにはWindows セキュリティされません](microsoft-defender-security-center-antivirus.md)。
 
-サーバーの役割とオペレーティング システム ファイルの自動除外は、R2 のWindows Server 2012またはWindows Server 2012されません。
+> [!NOTE]
+> サーバーの役割とオペレーティング システム ファイルの自動除外は、サーバー ロールおよびオペレーティング システム ファイルWindows Server 2012。 自動除外は、R2 を実行しているサーバー Windows Server 2012 Defender for Endpoint にオンボードされている場合に適用できます。 (「[オンボード Windows Microsoft Defender for Endpoint サービスへのサーバーのオンボード」を参照](configure-server-endpoints.md)してください。
+
 
 ### <a name="the-list-of-automatic-exclusions"></a>自動除外の一覧
 
@@ -99,7 +87,7 @@ Microsoft Defender ウイルス対策サーバー 2019 Windows Server 2016およ
 > [!NOTE]
 > 既定の場所は、この記事に記載されている場所とは異なる場合があります。
 
-##### <a name="windows-tempedb-files"></a>Windows"temp.edb" ファイル
+##### <a name="windows-tempedb-files"></a>Windows "temp.edb" ファイル
 
 - `%windir%\SoftwareDistribution\Datastore\*\tmp.edb`
 - `%ProgramData%\Microsoft\Search\Data\Applications\Windows\windows.edb`
@@ -186,7 +174,7 @@ Microsoft Defender ウイルス対策サーバー 2019 Windows Server 2016およ
 |除外の種類|詳細|
 |---|---|
 |ファイルの種類|`*.vhd` <br/> `*.vhdx` <br/> `*.avhd` <br/> `*.avhdx` <br/> `*.vsv` <br/> `*.iso` <br/> `*.rct` <br/> `*.vmcx` <br/> `*.vmrs`|
-|Folders|`%ProgramData%\Microsoft\Windows\Hyper-V` <br/> `%ProgramFiles%\Hyper-V` <br/> `%SystemDrive%\ProgramData\Microsoft\Windows\Hyper-V\Snapshots` <br/> `%Public%\Documents\Hyper-V\Virtual Hard Disks`|
+|フォルダー|`%ProgramData%\Microsoft\Windows\Hyper-V` <br/> `%ProgramFiles%\Hyper-V` <br/> `%SystemDrive%\ProgramData\Microsoft\Windows\Hyper-V\Snapshots` <br/> `%Public%\Documents\Hyper-V\Virtual Hard Disks`|
 |プロセス|`%systemroot%\System32\Vmms.exe` <br/> `%systemroot%\System32\Vmwp.exe`|
 
 ##### <a name="sysvol-files"></a>SYSVOL ファイル
@@ -380,7 +368,7 @@ DisableAutoExclusions
 
 詳細と許可されるパラメーターについては、以下を参照してください。
 
-- [Windows DefenderWMIv2 API](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+- [Windows Defender WMIv2 API](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 ## <a name="defining-custom-exclusions"></a>カスタム除外の定義
 

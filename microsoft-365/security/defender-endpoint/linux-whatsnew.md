@@ -16,17 +16,21 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: ab59d5511037d9b1c1a4b0aa7a6404ab27b8fb56
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 379fc203c16c319b293f29d396f121dc81148bd9
+ms.sourcegitcommit: d40b8c506c34a661a275f756081a27ef9ad5bf4f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60586103"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60972038"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender for Endpoint on Linux の新機能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+## <a name="1014776-30121092147760"></a>101.47.76 (30.121092.14776.0)
+
+- コマンド ライン ツールに新しいスイッチを追加し、オンデマンド スキャン中にアーカイブをスキャンするかどうかを制御しました。 これは、 を使用して構成できます `mdatp config scan-archives --value [enabled/disabled]` 。 既定では、 に設定されています `enabled` 。
+- バグ修正
 
 ## <a name="1014513-30121082145130"></a>101.45.13 (30.121082.14513.0)
 
@@ -42,7 +46,6 @@ ms.locfileid: "60586103"
 - コマンド ライン ツールに新しいスイッチを追加しました。
   - オンデマンド スキャンの並列処理の程度を制御します。 これは、 を使用して構成できます `mdatp config maximum-on-demand-scan-threads --value [number-between-1-and-64]` 。 既定では、並列処理の程度が `2` 使用されます。
   - セキュリティ インテリジェンス更新プログラムが有効または無効にされた後のスキャンを制御します。 これは、 を使用して構成できます `mdatp config scan-after-definition-update --value [enabled/disabled]` 。 既定では、 に設定されています `enabled` 。
-  - オンデマンド スキャン中にアーカイブをスキャンするかどうかを制御します。 これは、 を使用して構成できます `mdatp config scan-archives --value [enabled/disabled]` 。 既定では、 に設定されています `enabled` 。
 - 製品ログ レベルを変更するには、昇格が必要になります。
 - バグ修正
 

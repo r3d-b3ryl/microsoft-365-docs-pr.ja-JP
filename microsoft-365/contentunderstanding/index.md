@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Microsoft SharePoint Syntex に関するリソースの検索方法について説明します。
-ms.openlocfilehash: 6e738a90486b0aa1d37c483a6e369a84a2196a9d
-ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
+ms.openlocfilehash: 51904d626b76f9e013952816a1ec9af01856dfca
+ms.sourcegitcommit: d40b8c506c34a661a275f756081a27ef9ad5bf4f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60264710"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60971942"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex の概要
 
@@ -51,10 +51,11 @@ SharePoint Syntex は、次のような組織支援をする Microsoft 365 サ�
 |Microsoft 技術コミュニティ リソース センターのリソースを参照してください。|[SharePoint Syntex - Microsoft 365 のコンテンツ サービス](https://techcommunity.microsoft.com/t5/sharepoint-syntex/bg-p/SharePointSyntex)|
 |Microsoft Tech Community Resource Center に関する SharePoint Syntex FAQ |[SharePoint Syntex - FAQ](https://resources.techcommunity.microsoft.com/sharepoint-syntex/faq/)|
 |SharePoint Syntex の入手方法 |[SharePoint Syntex 製品ページ](https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex)|
+|アプリの使い方SharePoint Syntex |[SharePoint Syntex学習パス](/learn/paths/syntex-get-started)|
 
 ## <a name="adoption"></a>導入
 
-組織で SharePoint Syntex を使用および実装して、ビジネス上の問題を解決する方法の詳細をご覧ください。 
+ビジネス上の問題の解決に役立つ組織SharePoint Syntexを使用して実装する方法について詳しくは、ご覧ください。
 
 | この情報を探している場合: | 参照先: |
 |:-----|:-----|
@@ -79,9 +80,11 @@ SharePoint Syntex は、次のような組織支援をする Microsoft 365 サ�
 
 | この情報を探している場合: | 参照先: |
 |:-----|:-----|
-|モデルの使用方法についての詳細情報|[コンテンツ センターを作成する](./create-a-content-center.md)<br><br>[分類子を作成する](./create-a-classifier.md)<br><br>[エクストラクターを作成する](./create-an-extractor.md)<br><br>[フォーム処理モデルを作成する](./create-a-form-processing-model.md)<br><br>[説明の種類](./explanation-types-overview.md)<br><br>[ドキュメント理解モデルの適用](./apply-a-model.md)<br><br>[サンプル モデルを使用したドキュメント理解モデルについての詳細情報](./learn-about-document-understanding-models-through-the-sample-model.md)<br><br>|
+|モデルの使用方法についての詳細情報|[コンテンツ センターを作成する](./create-a-content-center.md)<br><br>[分類子を作成する](./create-a-classifier.md)<br><br>[モデルを複製する](./duplicate-a-model.md)<br><br>[モデルの名前を変更する](./rename-a-model.md)<br><br>[抽出子を作成する](./create-an-extractor.md)<br><br>[抽出子の名前を変更する](./rename-an-extractor.md)<br><br>[フォーム処理モデルを作成する](./create-a-form-processing-model.md)<br><br>[説明の種類](./explanation-types-overview.md)<br><br>[説明テンプレートを使用する](./explanation-templates.md)<br><br>[ドキュメント理解モデルの適用](./apply-a-model.md)<br><br>[サンプル モデルを使用したドキュメント理解モデルについての詳細情報](./learn-about-document-understanding-models-through-the-sample-model.md)<br><br>|
 |モデルに保持ラベルを適用する|[保持ラベルをドキュメント理解モデルに適用する](./apply-a-retention-label-to-a-model.md)|
 |モデルに秘密度ラベルを適用する|[秘密度ラベルをドキュメント理解モデルに適用する](./apply-a-sensitivity-label-to-a-model.md)|
+|トレーニング済みのモデルを他のコンテンツ センターで使用する |[ドキュメント理解モデルの公開と検出](./model-discovery.md)|
+|ドキュメント ライブラリでメタデータ ベースのクエリを実行する|[ドキュメント ライブラリ内のメタデータを検索する](./metadata-search.md)|
 |エクストラクターの作成時に、 Managed Metadata Service の用語ストアの分類を使用する|[エクストラクターの作成時に用語ストアの分類を活用する](./leverage-term-store-taxonomy.md)|
 |モデルに関するデータを表示する方法|[モデルの利用分析](./model-usage-analytics.md)|
 |モデルのトレーニング時にアクセシビリティ モードを使用する方法についての詳細|[SharePoint Syntex アクセシビリティ モード](./accessibility-mode.md)|
