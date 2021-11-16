@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 description: 機密性の高いコンテンツを分類および保護するための Microsoft Information Protection (MIP) の既定のラベルとポリシーについて説明します。
-ms.openlocfilehash: 55657221c86aef13c9a6a5192a89ffe4f78ef2a3
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: ffa0be4d64218fde0e88da4646d93a57f7a3a0b1
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60677151"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962833"
 ---
 # <a name="default-labels-and-policies-for-microsoft-information-protection"></a>Microsoft Information Protection の既定のラベルとポリシー
 
@@ -31,7 +31,7 @@ ms.locfileid: "60677151"
 
 これらの既定の構成を使用すると、Microsoft 365 コンプライアンスから Microsoft Information Protection をすばやく起動して実行できます。 これらの変更は、現状通り使用したり、わずかに変更を加えたり、ビジネス要件に合わせて完全にカスタマイズしたりすることができます。 
 
-対象となるお客様には、[Microsoft 365 コンプライアンス](compliance-easy-trials.md)の無料試用版をお持ちのお客様と、Microsoft 365 E5 プランを既にお持ちのお客様が含まれます。
+対象となるお客様には、[Microsoft 365 コンプライアンスの無料試用版](compliance-easy-trials.md)をお持ちのお客様と、Microsoft 365 E5 プランを既にお持ちのお客様が含まれます。
 
 - **新しいお客様**: Microsoft 365 コンプライアンスをsh得して 30 日未満の場合、テナントは表示されているすべての既定の構成をアクティブ化できます。 これらはいつでも無効、削除、または編集できます。
 
@@ -55,7 +55,9 @@ ms.locfileid: "60677151"
     
 2. Microsoft Information Protection の既定のラベルとポリシーの対象である場合は、次の情報が表示されるので、既定のラベルとポリシーをアクティブ化できます。 例:
     
-    ポリシーが事前構成された :::image type="content" alt-text="Microsoft Information Protection の試用版。" source="../media/mip-preconfigured.png" lightbox="../media/mip-preconfigured.png":::
+    :::image type="content" alt-text="事前に構成されたラベルとポリシーの Microsoft Information Protection のアクティブ化" source="../media/mip-preconfigured.png" lightbox="../media/mip-preconfigured.png":::
+    
+    ライセンス認証オプションでこの情報が表示されない場合は、現時点では秘密度ラベルと秘密度ポリシーの自動作成をご利用いただけません。 この状態が変更されたか、後でもう一度ご確認ください。または、次の設定情報を使用して手動で同じラベルとポリシーを作成することもできます。
 
 ## <a name="default-sensitivity-labels"></a>既定の秘密度ラベル
 
