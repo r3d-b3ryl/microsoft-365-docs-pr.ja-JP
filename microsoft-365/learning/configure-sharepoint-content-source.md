@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-viva-learning
 localization_priority: medium
 description: ユーザーの学習コンテンツ ソースSharePoint追加する方法についてMicrosoft Viva ラーニング。
-ms.openlocfilehash: 64a78979814a4708a6c1471a83d3468c9edb1b72
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 11cf1375d077acdb72e4a032236a0888d6c98101
+ms.sourcegitcommit: bd43f08b4719ba984ea6712227508d4a281148cf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60701875"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61041903"
 ---
 # <a name="add-sharepoint-as-a-content-source-for-microsoft-viva-learning"></a>ユーザー SharePointコンテンツ ソースとして追加Microsoft Viva ラーニング
 
@@ -63,7 +63,7 @@ Viva ラーニングは、次のドキュメントの種類をサポートして
 
 詳細については、「最新のエクスペリエンス[での共有とアクセス許可SharePointを参照してください](/sharepoint/modern-experience-sharing-permissions)。
 
-## <a name="learning-service"></a>ラーニングサービス
+## <a name="learning-service"></a>ラーニング サービス
 
 ラーニングサービスは、指定されたフォルダー URL を使用して、それらのフォルダーに格納されているすべてのコンテンツからメタデータを取得します。 一元化されたリポジトリにフォルダー URL を指定して 24 時間以内に、従業員はビバ グループ内で組織のコンテンツを検索して使用ラーニング。 更新されたメタデータやアクセス許可を含むコンテンツに対する変更はすべて、24 時間以内に ラーニングサービスに適用されます。
 
@@ -79,7 +79,7 @@ Viva ラーニングは、次のドキュメントの種類をサポートして
 
      ![設定の [ビバ] ページMicrosoft 365 管理センター一覧ラーニング表示されます。](../media/learning/clcs-services.png)
 
-3. [**ビバ ラーニング]** パネルの [SharePoint] で、サイト URL を SharePoint サイトに提供し、そのサイトにビバ ラーニングを一元的なリポジトリを作成します。 サイトがSharePoint場合は、サイトの作成後 1 時間待ってここに追加する必要があります。
+3. [**ビバ ラーニング]** パネルの [SharePoint] で、サイト URL を SharePoint サイトに提供し、そのサイトにビバ ラーニングを一元的なリポジトリを作成します。 サイトがSharePoint場合は、サイトの作成後 1 時間待ってここに追加する必要があります。 また、サイトの所有者SharePointがあります。
 
      ![ラーニングを表示するMicrosoft 365 管理センターパネルSharePointします。](../media/learning/sharepoint-1.png)
 
@@ -97,15 +97,15 @@ Viva ラーニングは、次のドキュメントの種類をサポートして
 
    1. [新規 **] を** 選択して、[新しいアイテム] **パネルを表示** します。
 
-       ![ラーニング[新しい] オプションをSharePointコンテンツ リポジトリ] ページが表示されます。](../media/learning/learning-sharepoint-configure5.png)
+       ![ラーニングの [コンテンツ リポジトリ] ページSharePointを表示します。](../media/learning/learning-sharepoint-configure5.png)
 
-   2. [新しい **アイテム]** パネルの [ **タイトル** ] フィールドに、選択したディレクトリ名を追加します。 [フォルダー **URL]** フィールドで、URL を学習コンテンツ フォルダーに追加します。 **[保存]** を選択します。 [フォルダー URL を作成する方法について学習します](#folder-url-document-library-curation)。
+   2. [新しい **アイテム]** パネルの [ **タイトル** ] フィールドに、選択したディレクトリ名を追加します。 [フォルダー **URL]** フィールドで、URL を学習コンテンツ フォルダーに追加します。 [**保存**] を選択します。 [フォルダー URL を作成する方法について学習します](#folder-url-document-library-curation)。
 
        ![[タイトル] フィールドと [SharePoint URL] フィールドが表示される新しいアイテム パネル。](../media/learning/learning-sharepoint-configure6.png)
 
    3. **[ラーニングコンテンツ リポジトリ] ページ** が新しい学習コンテンツで更新されます。
 
-       ![ラーニング[コンテンツ リポジトリ] ページSharePoint情報が表示されます。](../media/learning/learning-sharepoint-configure7.png)
+       ![ラーニング情報を表示SharePointコンテンツ リポジトリ ページを開きます。](../media/learning/learning-sharepoint-configure7.png)
 
    4. 組織で[Microsoft 365複数](/microsoft-365/enterprise/microsoft-365-multi-geo)地域を使用し、中央の場所に属していないフォルダーへのリンクを追加しようとする場合は、エラー メッセージが表示されます。 すべてのフォルダーが中央の場所に属している必要があります。
        ![[新しいアイテム] パネルで、アップロードされたフォルダーすべてが中央の場所にある必要があるというエラー メッセージが表示されます。](../media/learning/learning-sharepoint-configure-geo2.png)
@@ -146,7 +146,7 @@ Viva ラーニングは、次のドキュメントの種類をサポートして
 
     :::image type="content" alt-text="[ドキュメント] ページSharePoint[アクションの表示] オプションが表示され、1 行のテキストが強調表示されます。" source="../media/learning/learning-sharepoint-curation1.png":::
 
-3. [列 **の作成] パネル** の [ **名前** ] フィールドに、列のわかりやすい名前を追加します。 **[保存]** を選択します。
+3. [列 **の作成] パネル** の [ **名前** ] フィールドに、列のわかりやすい名前を追加します。 [**保存**] を選択します。
 
     ![[名前] などのフィールドをSharePoint列パネルを作成します。](../media/learning/learning-sharepoint-curation2.png)
 

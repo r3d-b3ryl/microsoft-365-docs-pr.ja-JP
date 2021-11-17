@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なものを保持し、必要でないものを削除するためにラベルを自動的に適用できるように、保持ラベルと自動ラベル付けポリシーを作成します。
-ms.openlocfilehash: c84add5ddc1b96d2a5ab3dfd713722522211bfa2
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: 740c1c2a86b089f911fdbed7b8fce667de5e6f5c
+ms.sourcegitcommit: bd43f08b4719ba984ea6712227508d4a281148cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914586"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61036132"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>保持ラベルを自動的に適用してコンテンツを保持または削除する
 
@@ -364,9 +364,9 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 
 ## <a name="how-long-it-takes-for-retention-labels-to-take-effect"></a>保持ラベルが有効になるまでの所要時間
 
-機密情報、キーワード、検索可能なプロパティ、またはトレーニング可能な分類子に基づいて保持ラベルを自動適用する場合、保持ラベルが適用されるまでに最大 7 日かかる場合があります。
+機密情報、キーワード、検索可能なプロパティ、またはトレーニング可能な分類子に基づいて保持ラベルを自動適用する場合、保持ラベルを適用するには最大 8 日かかる場合があります。
   
-![自動適用ラベルが有効になるタイミングの図。](../media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
+![自動適用ラベルが有効になるタイミングの図。](../media/retention-labels-autoapply-timings.png)
 
 予期されるラベルが 7 日経っても表示されない場合は、コンプライアンス センターの **[ラベル ポリシー]** ページから選択して、自動適用ポリシーの **状態** を確認します。 **オフ (エラー)** の状態が表示され、場所の詳細に、ポリシーの展開 (SharePoint の場合) またはポリシーの再展開 (OneDrive の場合) に予想よりも時間がかかっているというメッセージが表示される場合は、[Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell コマンドを実行して、ポリシーの配布を再試行してください:
 

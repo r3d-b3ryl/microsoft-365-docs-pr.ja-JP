@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 365 エンドポイント データ損失防止 (EPDLP) の場所を使用するようにデータ損失防止 (DLP) ポリシーを構成する方法を説明します。
-ms.openlocfilehash: b354e578c40845a89b7bb837854f6dd7fa5bb4d3
-ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
+ms.openlocfilehash: 03f16c9a914ce0a5cd1193919a962307b97435b2
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60907803"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962989"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>エンドポイント データ損失防止の使用
 
@@ -45,10 +45,6 @@ ms.locfileid: "60907803"
 
 ### <a name="advanced-classification-scanning-and-protection"></a>高度な分類のスキャンと保護
 
-#### <a name="get-registered"></a>登録する
-
-この機能にアクセスするには、テナントを Microsoft に登録する必要があります。 まず、[登録](https://aka.ms/Ignite2021DLP)します。
-
 有効にすると、**高度な分類のスキャンと保護** により、高度な Microsoft 365 クラウドベースのデータ分類サービスで項目をスキャンし、分類し、結果をローカル コンピューターに返すことができます。 つまり、DLP ポリシーで [厳密なデータ一致](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) 分類、[名前付きエンティティ (プレビュー)](named-entities-learn.md#learn-about-named-entities-preview) 分類手法を利用できるということです。
 
 高度な分類では、コンテンツはスキャンと分類のためにローカル デバイスからクラウド サービスに送信されます。 帯域幅の使用率が懸念される場合は、このグローバル設定で、24 時間のローリングで使用できる量に関して、デバイスごとに適用される制限を設定できます。 帯域幅使用率の制限を設定し、それを超えた場合、DLP はユーザー コンテンツのクラウドへの送信を停止し、データ分類はデバイス上でローカルに続行されます。 累積帯域幅使用率がローリング 24 時間の制限を下回ると、クラウド サービスとの通信が再開されます。
@@ -65,8 +61,6 @@ ms.locfileid: "60907803"
 > DLP ポリシーの評価は、ユーザー コンテンツが送信されていない場合でも、常にクラウドで行われます。
 
 ### <a name="endpoint-dlp-windows-10-and-macos-settings"></a>エンドポイント DLP Windows 10 と macOS の設定
-
-macOS サポートにアクセスするには、テナントを Microsoft に登録する必要があります。 まず、[登録](https://aka.ms/EndpointDLPIgnite21-Previews)します。
 
 |Setting |Windows 10, 1809 以降  |macOS Catalina 10.15 以降 (プレビュー)  |メモ  |
 |---------|---------|---------|---------|
@@ -89,19 +83,19 @@ DLP うるさすぎ、関心のあるファイルが含まれないので、デ�
 
 このロジックを使用して、Windows 10 デバイスの除外パスを作成できます。
 
-- 有効なファイルパスが ' \ ' で終わっている場合は、フォルダーの直下にあるファイルだけになります。 <br/>例: C:\Temp\
+- 有効なファイルパスが `\` で終わっている場合は、フォルダーの直下にあるファイルだけになります。 <br/>例: `C:\Temp\`
 
-- 有効なファイルパスが ‘\*’で終わっている場合は、そのフォルダーの直下のファイルという以外に、サブフォルダーの直下にあるファイルのみということになります。 <br/>例: C:\Temp\*
+- 有効なファイルパスが `\*`で終わっている場合は、そのフォルダーの直下のファイルという以外に、サブフォルダーの直下にあるファイルのみということになります。 <br/>例: `C:\Temp\*`
 
-- 有効なファイルパスが ‘\’ または ‘\*’以外で終わっている場合は、フォルダーとすべてのサブフォルダーの直下にあるすべてのファイルになります。 <br/>例: C:\Temp
+- 有効なファイルパスが `\` または `\*` 以外で終わっている場合は、フォルダーとすべてのサブフォルダーの直下にあるすべてのファイルになります。 <br/>例: `C:\Temp`
 
-- 両側の ' \ ' の間にあるワイルドカードを使用したパス。 <br/>例: C:\Users\*¥ Desktop\
+- 両側の `\` の間にあるワイルドカードを使用したパス。 <br/>例: `C:\Users\*\Desktop\`
 
-- 両側の ' \ ' の間にあるワイルドカードと' (数値) ' のあるパスは、サブフォルダーの正確な数を指定します。 <br/>例: C:\Users\*(1) \Downloads\
+- 両側の `\` の間にあるワイルドカードと `(number)` のあるパスは、サブフォルダーの正確な数を指定します。 <br/>例: `C:\Users\*(1)\Downloads\`
 
-- システム環境変数を含むパス。 <br/>例: %SystemDrive%\Test\*
+- システム環境変数を含むパス。 <br/>例: `%SystemDrive%\Test\*`
 
-- 上記のすべての組み合わせ。 <br/>例: %SystemDrive%\Users\*\Documents\*(2) ¥ Sub\
+- 上記のすべての組み合わせ。 <br/>例: `%SystemDrive%\Users\*\Documents\*(2)\Sub\`
 
 #### <a name="macos-devices-preview"></a>macOS デバイス (プレビュー)
 
@@ -158,7 +152,7 @@ Mac アプリの完全なパスを検索するには:
 
 有効にした場合、許可されていないアプリが DLP で保護された機密性の高いアイテムにアクセスしようとした場合に、自動検疫が作動します。 自動検疫では、機密性の高いアイテムを管理者が構成済みのフォルダーに移動し、元のファイルの代わりにプレースホルダー **.txt** ファイルを残すことができます。 プレースホルダー ファイルでテキストを構成して、ユーザーにアイテムの移動先やその他の関連情報を伝えることができます。  
 
-自動検疫を使用して、ユーザーや管理者に DLP 通知が無限に連鎖するのを防止することができます。 「[シナリオ 4: 自動検疫を使用して、クラウド同期アプリからの DLP 通知のループを回避する (プレビュー)](#scenario-4-avoid-looping-dlp-notifications-from-cloud-synchronization-apps-with-auto-quarantine-preview)」を参照してください。
+自動検疫を使用して、ユーザーと管理者に対する DLP 通知の無限の連鎖を防ぐことができます。「[シナリオ 4: 自動検疫を使用して、クラウド同期アプリからの DLP 通知のループを回避する (プレビュー)](#scenario-4-avoid-looping-dlp-notifications-from-cloud-synchronization-apps-with-auto-quarantine-preview)」を参照してください。
 
 ### <a name="unallowed-bluetooth-apps"></a>許可されていない Bluetooth アプリ
 
@@ -173,6 +167,9 @@ Mac アプリの完全なパスを検索するには:
 実行可能ファイル名で識別された、クラウド サービスへのアップロードの制限がブロックまたは上書きのブロックに設定されている強制された DLP ポリシーの条件に一致するファイルへのアクセスがブロックされるブラウザーを追加します。 これらのブラウザーがファイルへのアクセスからブロックされている場合、エンドユーザーには、Edge Chromium 経由でファイルを開くように依頼するトースト通知が表示されます。
 
 #### <a name="service-domains"></a>サービスドメイン
+
+> [!NOTE]
+> **サービス ドメイン** 設定は、[Microsoft コンプライアンス拡張機能](dlp-chrome-learn-about.md#learn-about-the-microsoft-compliance-extension)がインストールされた Microsoft Edge または Google Chrome を使用してアップロードされたファイルにのみ適用されます。
 
 ポリシーによって保護されている機密ファイルを Microsoft Edge の特定のサービス ドメインにアップロードできるかどうかを制御できます。
 
@@ -206,7 +203,7 @@ DLP ポリシー ヒントの通知で、ユーザーによる業務上の正当
 |誤検知オプションの表示     |**これらのファイルの情報は機密情報ではありません** または、カスタマイズされたテキストを入力できます          |
 |オプション 5    |**その他** または、カスタマイズされたテキストを入力できます         |
 
-<!--See, [Scenario 5: Configure a policy to use the customized business justification](#scenario-5-configure-a-policy-to-use-the-customized-business-justification)-->
+<!--See [Scenario 5: Configure a policy to use the customized business justification](#scenario-5-configure-a-policy-to-use-the-customized-business-justification)-->
 
 ### <a name="always-audit-file-activity-for-devices"></a>デバイスのファイル アクティビティを常に監査する
 
@@ -238,7 +235,7 @@ DLP ポリシー ヒントの通知で、ユーザーによる業務上の正当
 
 > [!IMPORTANT]
 > これらのエンドポイント DLP シナリオは、DLP ポリシーの作成と調整に関する公式な手順ではありません。 一般的な状況で DLP ポリシーを使用する必要がある場合は、次のトピックを参照してください。
-
+>
 >- [データ損失防止について](dlp-learn-about-dlp.md)
 >- [DLP の既定ポリシーの概要](get-started-with-the-default-dlp-policy.md)
 >- [テンプレートから DLP ポリシーを作成する](create-a-dlp-policy-from-a-template.md)
@@ -268,7 +265,7 @@ DLP ポリシー ヒントの通知で、ユーザーによる業務上の正当
 
 10. 新しい DLP ポリシーがポリシー一覧に表示されます。
 
-11. 監視対象エンドポイントのデータのアクティビティエクスプローラーを確認します。 デバイスがある場所のフィルターを設定し、ポリシーを追加してから、ポリシー名でフィルター処理を行って、このポリシーの影響を確認します。 必要に応じて、[アクティビティ エクスプローラーの使用を開始](data-classification-activity-explorer.md)を参照してください。
+11. 監視対象エンドポイントのデータのアクティビティエクスプローラーを確認します。 デバイスの [場所] フィルターを設定してポリシーを追加してから、ポリシー名でフィルター処理して、このポリシーの影響を確認します。必要な場合は、「[アクティビティ エクスプローラーを使用して作業を開始する](data-classification-activity-explorer.md)」を参照してください。
 
 12. 組織外のユーザーと米国の個人情報 (PII) データの条件をトリガーするコンテンツを含むテストを共有。 これによって、ポリシーがトリガーされます。
 
@@ -361,20 +358,22 @@ DLP ポリシー ヒントの通知で、ユーザーによる業務上の正当
 
 7. オリジナルの機密ファイルを移動させるローカル マシン上のフォルダーへのパスを入力します。次に例を示します。
    
-ユーザー名 *Isaiah langer* 向けの **'%homedrive%%homepath%\Microsoft DLP\Quarantine'** は、移動済みアイテムを配置します 
+    ユーザー名 *Isaiah langer* 向けの **'%homedrive%%homepath%\Microsoft DLP\Quarantine'** は、移動済みアイテムを次の名前のフォルダーに配置します。  
 
-*C:\Users\IsaiahLanger\Microsoft DLP\Quarantine\OneDrive* フォルダーと、元のファイル名への日時スタンプの追加。
+    *C:\Users\IsaiahLanger\Microsoft DLP\Quarantine\OneDrive*
 
-> [!NOTE]
-> DLP 自動検疫では、許可されていないアプリごとにファイルのサブフォルダーが作成されます。 つまり、許可されていないアプリの一覧に *Notepad* と *OneDrive* の両方が入っている場合、**\OneDrive** 用のサブフォルダーと **\Notepad** 用のサブフォルダーが作成されます。
+    元のファイル名に日付とタイム スタンプを追加します。
+    
+    > [!NOTE]
+    > DLP 自動検疫では、許可されていないアプリごとにファイルのサブフォルダーが作成されます。 つまり、許可されていないアプリの一覧に *Notepad* と *OneDrive* の両方が入っている場合、**\OneDrive** 用のサブフォルダーと **\Notepad** 用のサブフォルダーが作成されます。
 
 8. **[次のテキストを含む .txt ファイルでファイルを置き換える]** を選択し、プレースホルダー ファイルに必要なテキストを入力します。たとえば、*auto quar 1.docx* という名前のファイルの場合:
     
-**%%FileName%% には、組織がデータ損失防止 (DLP) ポリシーで保護している %%PolicyName%% が含まれ、検疫フォルダー %%QuarantinePath%% に移動されました。** 
-
-は、以下のメッセージを含む .txt ファイルを残します
-
-*auto quar 1.docx には、組織でデータ損失防止 (DLP) ポリシーで保護されている機密情報が含まれており、検疫フォルダー「C:\Users\IsaiahLanger\Microsoft DLP\Quarantine\OneDrive\auto quar 1_20210728_151541.docx」に移動されました。*
+    > %%FileName%% には、組織がデータ損失防止 (DLP) ポリシーで保護している %%PolicyName%% が含まれ、検疫フォルダー %%QuarantinePath%% に移動されました。
+    
+    は、以下のメッセージを含むテキスト ファイルを残します。
+    
+    > auto quar 1.docx には、組織でデータ損失防止 (DLP) ポリシーで保護されている機密情報が含まれており、検疫フォルダー「C:\Users\IsaiahLanger\Microsoft DLP\Quarantine\OneDrive\auto quar 1_20210728_151541.docx」に移動されました。
 
 9. **[保存]** を選択します。
 
@@ -393,10 +392,10 @@ DLP ポリシー ヒントの通知で、ユーザーによる業務上の正当
 6. 既定の **[高度な DLP ルールの作成またはカスタマイズ]** の選択を承諾し、**[次へ]** を選択します。
 
 7. 以下の値でルールを作成します。
-    1. **[名前]** > *[シナリオ 4 自動検疫]*
-    1. **[条件]** > **[コンテンツに含まれている]** > **[秘密度ラベル]** > **[非常に機密性の高い社外秘]**
+    1. **[名前]** > *[シナリオ 4 自動検疫]*。
+    1. **[条件]** > **[コンテンツに含まれている]** > **[秘密度ラベル]** > **[非常に機密性の高い社外秘]**。
     1.  **[アクション]** > **[Windows デバイス上のアクティビティの監査または制限]** > **[許可されていないアプリでアクセス]** > **[ブロック]**。 このシナリオでは、他のアクティビティをすべてクリアします。
-    1. **[ユーザー通知]** > **[オン]**
+    1. **[ユーザー通知]** > **[オン]**。
     1. **[エンドポイント デバイス]** から、**[アクティビティの場合にユーザーにポリシー ヒント通知を表示する]** がまだ有効になっていない場合は選択します。
     
 8. **[保存]**、**[次へ]** を選択します。
@@ -405,8 +404,8 @@ DLP ポリシー ヒントの通知で、ユーザーによる業務上の正当
 
 10. 設定を確認し、**送信** を選択します。
 
-> [!NOTE]
-> 新しいポリシーが複製され、対象の Windows 10 コンピューターに適用されるまで 1 時間以上かかります。
+    > [!NOTE]
+    > 新しいポリシーが複製され、対象の Windows 10 コンピューターに適用されるまで 1 時間以上かかります。
 
 11. 新しい DLP ポリシーがポリシー一覧に表示されます。
 
@@ -418,23 +417,23 @@ DLP ポリシー ヒントの通知で、ユーザーによる業務上の正当
 
     *C:\auto-quarantine ソース フォルダー*
 
-3. Microsoft Word を開き、自動検疫ソース フォルダーにファイルを作成します。 「**非常に機密性の高い社外秘**」秘密度ラベルを適用します。 「[Office 内のファイルやメールに秘密度ラベルを適用する](https://support.microsoft.com/topic/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)」を参照してください。
+3. Microsoft Word を開き、自動検疫ソース フォルダーにファイルを作成します。 **機密性の高い社外秘** の秘密度ラベルを貼付します。「[Office のファイルとメールに秘密度ラベルを適用する](https://support.microsoft.com/topic/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)」を参照してください。
 
 4. 作成したばかりのファイルを、OneDrive 同期フォルダーにコピーします。 アクションが許可されておらず、ファイルが検疫される予定であることを伝えるユーザー通知トーストが表示されます。 たとえば、ユーザー名「*Isaiah Langer*」、タイトル「*auto-quarantine doc 1.docx*」のドキュメントの場合、次のようなメッセージが表示されます。
 
-![指定されたファイルに OneDrive 同期アクションが許可されておらず、ファイルが検疫されることを示すデータ損失防止ユーザー通知ポップアップ。](../media/auto-quarantine-user-notification-toast.png)
+    ![指定されたファイルに OneDrive 同期アクションが許可されておらず、ファイルが検疫されることを示すデータ損失防止ユーザー通知ポップアップ。](../media/auto-quarantine-user-notification-toast.png)
+    
+    メッセージは以下のとおりです。
+    
+    > autoquarantine doc 1.docx をこのアプリで開くことは許可されていません。 このファイルは 'C:\Users\IsaiahLanger\Microsoft DLP\OneDrive' に検疫されます
 
-メッセージは以下のとおりです。
+5. **[無視]** を選択します。
 
-「autoquarantine doc 1.docx をこのアプリで開くことは許可されていません。 このファイルは 'C:\Users\IsaiahLanger\Microsoft DLP\OneDrive' に検疫されます」
-
-5. **[無視]** を選択します
-
-6. プレース ホルダー .txt ファイルを開きます。 **auto-quarantine doc 1.docx_ *date_time*.txt** という名前が付けられます。 
+6. プレース ホルダー テキスト ファイルを開きます。 **auto-quarantine doc 1.docx_ *date_time*.txt** という名前が付けられます。 
 
 7. 検疫フォルダーを開き、元のファイルがそこにあることを確認します。
  
-8. 監視対象エンドポイントのデータのアクティビティエクスプローラーを確認します。 デバイスがある場所のフィルターを設定し、ポリシーを追加してから、ポリシー名でフィルター処理を行って、このポリシーの影響を確認します。 必要に応じて、[アクティビティ エクスプローラーの使用を開始](data-classification-activity-explorer.md)を参照してください。
+8. 監視対象エンドポイントのデータのアクティビティエクスプローラーを確認します。 デバイスの [場所] フィルターを設定してポリシーを追加してから、ポリシー名でフィルター処理して、このポリシーの影響を確認します。必要な場合は、「[アクティビティ エクスプローラーを使用して作業を開始する](data-classification-activity-explorer.md)」を参照してください。
 
 9. イベントのアクティビティエクスプローラーを確認します。
 

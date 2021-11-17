@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 組織のデータを保護するために秘密度ラベルを展開する準備はできていますが、どこから始めればよいかわかりませんか? ラベル付けの移行に役立つ実用的なガイダンスをお読みください。
-ms.openlocfilehash: 122831c83c7121d91b61c86828634db575208edd
-ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
+ms.openlocfilehash: ef03bd502b0951416ad9e8be27e6da7281f63811
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "60792438"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962677"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>秘密度ラベルの使用を開始する
 
@@ -44,8 +44,8 @@ ms.locfileid: "60792438"
 
 3. **ラベルを発行する。** 秘密度ラベルの構成が完了したら、ラベル ポリシーを使用してラベルを公開します。 ラベルを使用する必要があるユーザーとグループおよび使用するポリシー設定を決定します。 1 つのラベルは再利用できます。 一度定義したラベルは、異なるユーザーに割り当てる複数のラベル ポリシーに含めることができます。 たとえば、ラベル ポリシーをごく少数のユーザーに対して適用して、秘密度ラベルを試験運用することができます。 組織全体に対してラベルを展開する準備ができたら、ラベルの新しいラベル ポリシーを作成し、今回はすべてのユーザーを指定することができます。
 
-> [!TIP]
-> 既定のラベルと、手順 1 ~ 3 の管理を行う既定のラベル ポリシーの対象となる場合があります。 詳細については、「[Microsoft Information Protection の既定のラベルとポリシー](mip-easy-trials.md)」を参照してください。
+
+> 既定のラベルの自動作成と、手順 1 - 3 の管理を行う既定のラベル ポリシーの対象となる場合があります。 詳細については、「[Microsoft Information Protection の既定のラベルとポリシー](mip-easy-trials.md)」を参照してください。
 
 秘密度ラベルを展開して適用するための基本的な流れ:
 

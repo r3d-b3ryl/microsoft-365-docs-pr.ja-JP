@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ポリシーまたは保持ラベル ポリシーで構成できる設定を理解して、必要なものを保持し、不要なものを取り除きます。
-ms.openlocfilehash: 911b80b13d9d091d0161ddce0fff4d1dbd7dbc0b
-ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
+ms.openlocfilehash: 20167d9c1559403f1acbbfee5766ab09a4a1e3ef
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60950511"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962977"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>保持ポリシーと保持ラベルの制限
 
@@ -213,7 +213,7 @@ Skype for Business を除き、既定では、選択した場所のすべての�
 
 - 既定の **すべての受信者** 構成を使用する場合、静的ポリシー スコープには非アクティブなメールボックスが含まれますが、[特定の包含または除外](#a-policy-with-specific-inclusions-or-exclusions)ではサポートされていません。 ただし、ポリシーの適用時にアクティブなメールボックスを持つ受信者を含めたり除外したりして、後でメールボックスが非アクティブになった場合、保持設定は引き続き適用または除外されます。
 
-- アダプティブ ポリシー スコープには、既定で非アクティブなメールボックスが含まれます。 高度なクエリ ビルダーと OPATH プロパティ *IsInactiveMailbox* を使用して、この動作を制御できます。
+- アダプティブ ポリシー スコープには、既定で、スコープのクエリを満たすときに非アクティブなメールボックスが含まれます。 高度なクエリ ビルダーと OPATH プロパティ *IsInactiveMailbox* を使用して、それらを除外できます。
     
     ```console
     (IsInactiveMailbox -eq "False")

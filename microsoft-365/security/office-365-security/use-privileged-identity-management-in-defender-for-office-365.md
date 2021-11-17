@@ -17,15 +17,16 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkDEFENDER
 description: Microsoft Defender for Office 365 で昇格された特権タスクを実行し、データへのリスクを軽減ため、Just-In-Time の時間制限付きアクセスをユーザーに付与するために Azure PIM を統合する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9ea618a24c14aa49973ae05287a65cbb756f5467
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5a5088b72cd7739c5f203293a8ac569af093bf4b
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196287"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60960996"
 ---
 <!--A-->
 # <a name="privileged-identity-management-pim-and-why-to-use-it-with-microsoft-defender-for-office-365"></a>Privileged Identity Management (PIM) と Microsoft Defender for Office 365 で使用する理由
@@ -68,7 +69,7 @@ Defender for Office 365 と連携するように PIM を設定することで、
 
 セキュリティ ポータルで、必要なアクセス許可を含むカスタム役割グループを作成します。
 
-1. Microsoft 365 Defender ポータルを参照します ([https://security.microsoft.com) > **[アクセス許可と役割]** >、[メールとコラボレーション] の **[役割]** > **[作成]** の順に選択します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a> > を参照します。**[アクセス許可と役割]** >、[メールとコラボレーション] の **[役割]** > **[作成]** の順に選択します。
 2. 目的を表すグループ名を付けます (「検索と削除 PIM」など)。
 3. メンバーを追加せずに、グループを保存して次の部分に進みます。
 

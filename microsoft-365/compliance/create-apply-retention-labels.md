@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ラベルを作成して発行し、それをアプリに適用することで、必要なものを保持し、必要でないものを削除する手順。
-ms.openlocfilehash: 8c8fac9d8cfa5ff0a8b2ad8d5c3e42f614a3932b
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 3e0a516155d0b318e8f5d3b022b1546d9fe8e11b
+ms.sourcegitcommit: bd43f08b4719ba984ea6712227508d4a281148cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753107"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61036016"
 ---
 # <a name="create-retention-labels-and-apply-them-in-apps"></a>保持ラベルを作成してアプリに適用する
 
@@ -120,16 +120,13 @@ SharePoint や Outlook などのアプリでユーザーが適用できるよう
 
 ## <a name="when-retention-labels-become-available-to-apply"></a>保持ラベルが適用できるようになったとき
 
-SharePoint または OneDrive に対して保持ラベルを発行する場合、これらのラベルは、通常  1 日以内にエンド ユーザーが選択できるように表示されます。 ただし、最大 7 日かかります。 
+OneDrive と SharePoint の場所の場合、通常、発行されたラベルは、ユーザーが 1 日または 2 日以内に選択できるように表示されます。 ただし、最大 8 日間かかります。
 
-Exchange にラベルを発行する場合、エンド ユーザーにこれら保持ラベルが表示されるまで最大 7 日かかり、少なくとも 10 MB のデータをメールボックスで格納できる必要があります。
+Exchange とMicrosoft 365 グループの場所では、Outlook のユーザーに発行済みの保持ラベルが表示されるまでに最大 8 日かかる場合があり、メールボックスには少なくとも 10 MB のデータが含まれている必要があります。
 
-以下に例を示します。
-  
-![手動ラベルが有効になるタイミングの図。](../media/b19f3a10-f625-45bf-9a53-dd14df02ae7c.png)
-  
+![発行されたラベルが有効になるタイミングの図。](../media/retention-labels-published-timings.png)
 
-ラベルが 7 日経っても表示されない場合は、コンプライアンス センターの **[ラベル ポリシー]** ページから選択して、ラベル ポリシーの **状態** を確認します。 **オフ (エラー)** の状態が表示され、場所の詳細に、ポリシーの展開 (SharePoint の場合) またはポリシーの再展開 (OneDrive の場合) に予想よりも時間がかかっているというメッセージが表示される場合は、[Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell コマンドを実行して、ポリシーの配布を再試行してください:
+ラベルが 8 日後に表示されない場合は、コンプライアンス センターの **[ラベル ポリシー]** ページからラベル ポリシーを選択して、ラベル ポリシーの **状態** を確認します。 **オフ (エラー)** の状態が表示され、場所の詳細に、ポリシーの展開 (SharePoint の場合) またはポリシーの再展開 (OneDrive の場合) に予想よりも時間がかかっているというメッセージが表示される場合は、[Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell コマンドを実行して、ポリシーの配布を再試行してください:
 
 1. [セキュリティ/コンプライアンス センター PowerShell に接続する](/powershell/exchange/connect-to-scc-powershell)
 
@@ -205,7 +202,7 @@ After the retention label is applied, you can view that retention label and what
 
 You can apply retention labels to Outlook folders as a default label that can be inherited by messages in that folder. Right-click the folder, select **Properties**, the **Policy** tab, and select the retention label you want to use as that folder's default retention label.
 
-When you use a a standard retention label as your default label for an Outlook folder:
+When you use a standard retention label as your default label for an Outlook folder:
   
 - All unlabeled items in the folder have this retention label applied.
 

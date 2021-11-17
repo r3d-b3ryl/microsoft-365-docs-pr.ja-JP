@@ -303,9 +303,9 @@
         - name: Microsoft 脅威エキスパートと共同作業する
           items:
             - name: 概要
-              href: ../mtp/microsoft-threat-experts.md
+              href: microsoft-threat-experts.md
             - name: Microsoft 脅威エキスパートの機能を構成および管理する
-              href: ../mtp/configure-microsoft-threat-experts.md
+              href: configure-microsoft-threat-experts.md
     - name: セキュリティ運用ガイド
       items:
         - name: 概要

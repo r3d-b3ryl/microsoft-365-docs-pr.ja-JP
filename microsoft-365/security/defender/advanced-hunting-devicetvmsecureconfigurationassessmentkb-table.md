@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 8372275655c9b4f75feaff8f2f8c8f2aace78d1e
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: bf65634e38d7676eaef20386b3effa828aa46f4b
+ms.sourcegitcommit: bd43f08b4719ba984ea6712227508d4a281148cf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60658696"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61041879"
 ---
 # <a name="devicetvmsecureconfigurationassessmentkb"></a>DeviceTvmSecureConfigurationAssessmentKB
 
@@ -35,8 +35,11 @@ ms.locfileid: "60658696"
 - Microsoft Defender for Endpoint
 
 
+高度 `DeviceTvmSecureConfigurationAssessmentKB` な検索スキーマの表には、Threat &脆弱性管理によってチェックされるさまざまなセキュリティ[で保護された構成に関する情報が含まれている。](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) このテーブルには、リスク情報、関連する業界ベンチマーク、適用される MITRE ATT&CK のテクニックおよび戦術も記載されています。
 
-高度な検索スキーマの `DeviceTvmSecureConfigurationAssessmentKB` テーブルには、自動更新がデバイスでオンになっているかどうかなど、[脅威および脆弱性管理](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)によりチェックされるさまざまなセキュリティ構成に関する情報が含まれています。 このテーブルには、リスク情報、関連する業界ベンチマーク、適用される MITRE ATT&CK のテクニックおよび戦術も記載されています。 このテーブルの情報を返すクエリを作成するには、この参照を使用できます。
+このテーブルは、イベントやレコードを返す必要があります。 このテーブルを [DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md) テーブルに結合して、返される評価のセキュリティ構成に関するテキスト情報を表示することをお `ConfigurationId` 勧めします。
+
+たとえば、テーブルにクエリを実行すると、評価結果に表示されるセキュリティ構成を `DeviceTvmSecureConfigurationAssessment` `ConfigurationDescription` 表示できます。 この情報は、このテーブルを使用してプロジェクトに参加 `DeviceTvmSecureConfigurationAssessment` することで `ConfigurationId` 確認できます `ConfigurationDescription` 。
 
 高度な捜索スキーマのその他のテーブルの詳細については、「[高度な捜索のリファレンス](advanced-hunting-schema-tables.md)」 を参照してください。
 
@@ -52,6 +55,19 @@ ms.locfileid: "60658696"
 | `ConfigurationBenchmarks` | string | 同じ構成または類似した構成を推奨する業界ベンチマークの一覧 |
 | `Tags` | string | セキュリティ構成を識別または分類するために使用されるさまざまな属性を表すラベル |
 | `RemediationOptions` | string | 関連するリスクを軽減または対処するために推奨されるアクション |
+
+次のクエリ例を試して、関連する構成メタデータと、非準拠のウイルス対策構成を持つデバイスに関する情報を表から返 `DeviceTvmSecureConfigurationAssessment` します。
+
+```kusto
+// Get information on devices with antivirus configurations issues
+DeviceTvmSecureConfigurationAssessment
+| where ConfigurationSubcategory == 'Antivirus' and IsApplicable == 1 and IsCompliant == 0
+| join kind=leftouter (
+    DeviceTvmSecureConfigurationAssessmentKB
+    | project ConfigurationId, ConfigurationName, ConfigurationDescription, RiskDescription, Tags, ConfigurationImpact
+) on ConfigurationId
+| project DeviceName, OSPlatform, ConfigurationId, ConfigurationName, ConfigurationCategory, ConfigurationSubcategory, ConfigurationDescription, RiskDescription, ConfigurationImpact, Tags
+```
 
 ## <a name="related-topics"></a>関連項目
 
