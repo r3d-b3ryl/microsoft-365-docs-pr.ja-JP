@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ポリシーまたは保持ラベル ポリシーで構成できる設定を理解して、必要なものを保持し、不要なものを取り除きます。
-ms.openlocfilehash: 20167d9c1559403f1acbbfee5766ab09a4a1e3ef
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 28aa92e7374815404eaffb1abe908aa2fe60343f
+ms.sourcegitcommit: d40b8c506c34a661a275f756081a27ef9ad5bf4f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962977"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60972014"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>保持ポリシーと保持ラベルの制限
 
@@ -156,15 +156,26 @@ PowerShell と SharePoint 検索を使用して、高度なクエリを手動で
 
 PowerShell を使用してクエリを実行するには:
 
-1. グローバル管理者アカウントを使用して、[Exchange Online PowerShell に接続します](/powershell/exchange/connect-to-exchange-online-powershell)。
+1. [適切な Exchange Online 管理者権限](/powershell/exchange/find-exchange-cmdlet-permissions#use-powershell-to-find-the-permissions-required-to-run-a-cmdlet)を持つアカウントを使用して [Exchange Online PowerShell に接続します](/powershell/exchange/connect-to-exchange-online-powershell)。
 
-2. [Get-Recipient](/powershell/module/exchange/get-recipient) または [Get-Mailbox](/powershell/module/exchange/get-mailbox) を *-Filter* パラメータと共に使って [OPATH クエリ](/powershell/exchange/filter-properties) を指定し、アダプティブ スコープの OPATH クエリを二重引用符で囲みます。 属性値にスペースが含まれている場合は、属性値を単一引用符で囲みます。
-    
-    例:
+2. [Get-Recipient](/powershell/module/exchange/get-recipient) または [Get-Mailbox](/powershell/module/exchange/get-mailbox) のいずれかを *-Filter* パラメーターと一緒に使用し、中括弧 (`{`,`}`) で囲まれたアダプティブ スコープの [OPATH クエリ](/powershell/exchange/filter-properties)を使用します。 属性値にスペースが含まれている場合は、属性値を二重引用符または単一引用符で囲みます。 
+
+    **ユーザー** スコープを検証する場合は、コマンドに `-RecipientTypeDetails UserMailbox` を含めます。**Microsoft 365 グループ** スコープの場合は、`-RecipientTypeDetails GroupMailbox` を含めます。
+
+    > [!TIP]
+    > クエリ サポートで使用する [OPATH プロパティ](/powershell/exchange/filter-properties)を選択したコマンドレットに応じて、`Get-Mailbox` または `Get-Recipient` のどちらを使用して検証するかを決定できます。
+
+    たとえば、**ユーザー** スコープを検証するには、次を使用できます。
     
     ````PowerShell
-    Get-Recipient -Filter "Department -eq 'Sales and Marketing'" -ResultSize unlimited
+    Get-Recipient -RecipientTypeDetails UserMailbox -Filter {Department -eq "Sales and Marketing"} -ResultSize Unlimited
     ````
+    
+    **Microsoft 365 グループ** スコープを検証するには、次を使用できます。
+    
+    ```PowerShell
+    Get-Mailbox -RecipientTypeDetails GroupMailbox -Filter {CustomAttribute15 -eq "Sales and Marketing"} -ResultSize Unlimited
+    ```
 
 3. 出力が、アダプティブ スコープの予想されるユーザーまたはグループと一致することを確認します。 そうでない場合は、Azure AD または Exchange の関連する管理者にクエリと値を確認します。
  
