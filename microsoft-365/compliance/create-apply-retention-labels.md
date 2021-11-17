@@ -23,7 +23,7 @@ ms.sourcegitcommit: bd43f08b4719ba984ea6712227508d4a281148cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/16/2021
-ms.locfileid: "61036016"
+ms.locfileid: "61041971"
 ---
 # <a name="create-retention-labels-and-apply-them-in-apps"></a>保持ラベルを作成してアプリに適用する
 
