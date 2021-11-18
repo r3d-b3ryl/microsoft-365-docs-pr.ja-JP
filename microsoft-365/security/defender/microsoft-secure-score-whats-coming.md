@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: fc1bf8ca103a89c78d3b42689ef2d4a640a2d9da
-ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
+ms.openlocfilehash: 3f847cce3079f606925a7ea60f93e836e5d52834
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60724370"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61072417"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Microsoft Secure Score に関する情報
 
@@ -31,9 +31,24 @@ ms.locfileid: "60724370"
 
 Microsoft Secure Score は、ポータルの https://security.microsoft.com/securescore Microsoft 365 Defender[で確認できます](microsoft-365-defender.md#the-microsoft-365-defender-portal)。
 
+この記事では、Microsoft Secure Score の今後の機能強化について説明します。
+
 ## <a name="proposed-changes"></a>Proposed changes
 
-現時点では、今後の変更は予定されています。 後で確認してください。
+### <a name="upcoming-improvement-action-additions-december-2021"></a>今後の改善アクションの追加 (2021 年 12 月)
+
+- ブロック モードでセーフ添付ファイルを有効にする
+- 予定表の詳細Exchange Online外部ユーザーとの共有を防止する
+- クライアントのセーフドキュメントを有効Officeする
+- マルウェア対策ポリシーの共通の添付ファイル フィルター設定を有効にする
+- スパム対策ポリシーに対して許可されている送信者ドメインがないか確認する
+- 電子メール セーフリンク ポリシーを作成する
+- マルウェアの 0 時間自動削除ポリシーを作成する
+- Microsoft Defender を有効にし、Office 365、SharePoint、OneDriveのMicrosoft Teams
+- フィッシング メッセージの 0 時間自動削除ポリシーを作成する
+- スパム メッセージの 0 時間自動削除ポリシーを作成する
+- 悪用された脆弱な署名済みドライバーの悪用をブロックする
+- フル スキャン中にリムーバブル ドライブのスキャンを有効にする
 
 
 ## <a name="related-resources"></a>関連リソース

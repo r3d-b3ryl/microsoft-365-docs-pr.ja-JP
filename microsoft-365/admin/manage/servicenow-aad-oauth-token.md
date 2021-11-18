@@ -1,5 +1,5 @@
 ---
-title: OAuth トークンMicrosoft 365サポート統合AAD構成する
+title: AAD OAuth トークンによる Microsoft 365 サポート統合を構成する
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -17,20 +17,20 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: ServiceNow のスコープ認定アプリケーションのインストールと構成ガイド。
-ms.openlocfilehash: b32f2e4edea590a6002e1568b5a65a2d8c71f703
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: da241452f989ba5f682fd3219e3f3baabf623138
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60661975"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61071452"
 ---
-# <a name="configure-microsoft-365-support-integration-with-aad-oauth-token"></a>OAuth トークンMicrosoft 365サポート統合AAD構成する
+# <a name="configure-microsoft-365-support-integration-with-aad-oauth-token"></a>AAD OAuth トークンによる Microsoft 365 サポート統合を構成する
 
 ## <a name="prerequisites-aad-oauth-token"></a>前提条件 (AAD OAuth トークン)
 
 これらの前提条件は、サポート統合のMicrosoft 365必要です。
 
-1. \[AAD管理者 \] テナントのAAD送信用のアプリケーションを作成Microsoft 365します。
+1. \[AAD管理者 \]テナントAADの [送信用アプリケーション] をMicrosoft 365します。
 
     1. テナント資格情報を使用して Azure Portal にMicrosoft 365し、[アプリの登録][](https://portal.azure.com/?Microsoft_AAD_RegisteredApps=true#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade)ページに移動して新しいアプリケーションを作成します。
 
@@ -44,7 +44,7 @@ ms.locfileid: "60661975"
 
 1. アプリケーション クライアント ID を取得し、クライアント シークレットを作成し、その値を取得します。
 
-1. \[AADAdmin \] Rest API 用のAADアプリケーションを、テナントの下にMicrosoft 365します。
+1. \[AAD管理者 \]Rest API 用AADアプリケーションを、テナントの下にMicrosoft 365します。
 
     1. テナント資格情報を[使用して Azure Portal](https://portal.azure.com/)にMicrosoft 365し、[アプリの登録] ページに移動して新しいアプリケーションを作成します。
 
@@ -54,7 +54,7 @@ ms.locfileid: "60661975"
 
 1. アプリケーション クライアント ID を取得し、クライアント シークレットを作成し、その値を取得します。
 
-1. \[AAD管理者 \] ユーザーテナントのAADの下に Rest ユーザー用のアプリケーションをMicrosoft 365します。
+1. \[AAD管理者 \]テナントのAADで、Rest ユーザー用アプリケーションをMicrosoft 365します。
 
     1. テナント資格情報を[使用して Azure Portal](https://portal.azure.com/)にMicrosoft 365し、[アプリの登録] ページに移動して新しいアプリケーションを作成します。
 
@@ -212,7 +212,7 @@ ms.locfileid: "60661975"
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image16.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image16.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーションの説明が自動的に生成される":::
 
-1. \[Microsoft 365テナント管理者 \] 統合を完了します。
+1. \[Microsoft 365テナント管理者 \]統合を完了します。
 
     以下の情報が正しいか確認します。 この時点で [ **次へ]** を選択しない。
 
@@ -226,7 +226,7 @@ ms.locfileid: "60661975"
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image18.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image18.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、電子メールの説明が自動的に生成される":::
 
-1. [リポジトリ **] タブで** 、[リポジトリの追加] **を選択** して、次の設定で新しいリポジトリを作成します。
+1. [リポジトリ **] タブで** 、[新しいリポジトリ] **を選択** し、次の設定で更新します。
 
     - リポジトリ: " **手順** 6 - 統合を完了する" のリポジトリ ID 値。
 

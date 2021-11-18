@@ -17,18 +17,31 @@ search.appverid:
 - MOE150
 - MET150
 description: コンプライアンス管理の新機能と新機能を確認します。 更新された評価、新しい評価テンプレート、新しいアクションなどについて説明します。
-ms.openlocfilehash: 6233cd278e3ca5c445361ae4f50c33d8d00c6b94
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: c8e17caca15386199725627042c9d382641bfca2
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60701601"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61072262"
 ---
 # <a name="whats-new-in-microsoft-compliance-manager"></a>Microsoft コンプライアンス マネージャーの新機能
 
 **この記事では、次の情報を参照してください。** コンプライアンス マネージャーの最近の更新プログラムについて学習します。
 
 ## <a name="november-2021"></a>2021 年 11 月
+
+### <a name="zero-trust-integration-for-the-data-protection-baseline-template"></a>データ保護基準テンプレートのゼロ信頼統合
+
+ゼロトラストは、すべてのトランザクションを明示的かつ継続的に検証し、最小の特権を主張し、インテリジェンス、高度な検出、および脅威に対するリアルタイム対応に依存する、デジタル資産のすべての層にわたるセキュリティに対する予防的で統合されたアプローチです。 コンプライアンス マネージャーのデータ保護基準テンプレートは、すべてのユーザーに含まれており、57 の新しいコントロールと 36 の新しいアクションを次のコントロール ファミリに統合しました。
+
+- ゼロ信頼アプリケーション
+- ゼロ トラスト アプリの開発ガイダンス
+- ゼロ信頼エンドポイント
+- ゼロ信頼データ
+- ゼロ信頼 ID
+- ゼロトラスト インフラストラクチャ
+- ゼロトラスト ネットワーク
+- ゼロ信頼の可視性、自動化、およびオーケストレーション
 
 ### <a name="new-assessment-templates"></a>新しい評価テンプレート
 

@@ -21,12 +21,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 2c9ecbc07a5523d16d8e3e328f787a11b0c7679b
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: ee9ddb26736ba52b5ddade576d7587f5883931ab
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61063395"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61072703"
 ---
 # <a name="get-started-with-communication-compliance"></a>コミュニケーション コンプライアンスの使用を開始する
 
@@ -52,7 +52,7 @@ ms.locfileid: "61063395"
 
 ## <a name="recommended-actions-preview"></a>推奨されるアクション (プレビュー)
 
-推奨されるアクションは、組織が通信コンプライアンス機能を使い始め、既存のポリシーを活用するのに役立ちます。 [ポリシー] **ページに含まれる** 推奨アクションは、組織内のコミュニケーションにおける機密情報の種類と不適切なコンテンツ アクティビティに関する分析情報と要約を提供します。 これらの分析情報には、組織内のユーザーの個人を特定できる情報 (PII) は含められない。
+推奨されるアクションは、組織が通信コンプライアンス機能を使い始め、既存のポリシーを活用するのに役立ちます。 [ポリシー] **ページに含まれる** 推奨アクションは、組織内のコミュニケーションにおける機密情報の種類と不適切なコンテンツ アクティビティに関する分析情報と要約を提供します。 インサイトは、データ分類と機密ラベル[](data-classification-overview.md)、保持ラベル、機密情報の種類分類の適用によってサポートされます。 これらの分析情報には、組織内のユーザーの個人を特定できる情報 (PII) は含められない。
 
 ![通信コンプライアンス推奨アクション。](../media/communication-compliance-recommended-actions.png)
 

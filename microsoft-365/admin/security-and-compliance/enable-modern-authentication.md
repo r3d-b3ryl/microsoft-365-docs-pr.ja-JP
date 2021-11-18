@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc1c01a-090f-4971-9677-f1b192d6c910
 description: Microsoft Office 2013 がインストールされているデバイスの最新の認証を有効にするレジストリ キーの設定方法を説明します。
-ms.openlocfilehash: eac974571d75c2d0ea1eddf889d3c1b581e98a16
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c5af8daa0538a1eb89521b12d1c85c310df6d012
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60161404"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61071878"
 ---
 # <a name="enable-modern-authentication-for-office-2013-on-windows-devices"></a>Windows デバイスの Office 2013 の先進認証を有効にする
 
@@ -39,16 +39,16 @@ Office 2013 がインストールされている Windows デバイスで先進�
 > [!NOTE]
 > 先進認証は Office 2016 クライアントで既に有効になっているため、Office 2016 のレジストリ キーを設定する必要はありません。 
   
-Microsoft Office 2013 がインストールされている Windows を実行しているデバイス (たとえばノート PC やタブレット) で先進認証を有効にするには、次のレジストリ キーを設定する必要があります。先進認証を有効にするデバイスごとに、次のキーを設定する必要があります。
+Microsoft Office 2013 がインストールされている Windows を実行しているデバイス (たとえばノート PC やタブレット) で先進認証を有効にするには、次のレジストリ キーを設定する必要があります。 最新の認証を有効にする各デバイスでキーを設定する必要があります。
   
 |**レジストリ キー**|**型**|**値** |
 |:-------|:------:|--------:|
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1  |
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1 |
    
-レジストリ キーを設定したら、2013 デバイス アプリで複数要素認証[(MFA)](set-up-multi-factor-authentication.md)を使用Office 2013 デバイス アプリをMicrosoft 365。 
+レジストリ キーを設定したら、2013 デバイス アプリOffice多要素認証[(MFA)](set-up-multi-factor-authentication.md)と一緒に使用Microsoft 365。 
   
-現在、クライアント アプリのいずれかを使ってサインインしている場合、変更を有効にするには、サインアウトしてサインインし直す必要があります。それ以外の場合は、ADAL ID が確立されるまで、MRU とローミングの設定が無効になります。
+現在、クライアント アプリのいずれかを使ってサインインしている場合、変更を有効にするには、サインアウトしてサインインし直す必要があります。 それ以外の場合、MRU とローミングの設定は、ID が確立されるまで使用できません。
   
 ## <a name="disable-modern-authentication-on-devices"></a>デバイスで先進認証を無効にする
 

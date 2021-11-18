@@ -17,12 +17,12 @@ ms.custom: admindeeplinkDEFENDER
 description: 管理者は、Exchange Online Protection (EOP) の高度な配信ポリシーを使用して、サポートされている特定のシナリオ (サード パーティのフィッシング シミュレーションとセキュリティ操作 (SecOps) メールボックスに配信されるメッセージ) でフィルター処理すべきではないメッセージを識別する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bc507bfbfdcb090e61f688def0ee6a7a3922652d
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 3de4e7a468280914854c7cc0b7f68a9cb7965632
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963361"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61072661"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>サードパーティのフィッシング シミュレーションをユーザーに配信し、フィルター処理されていないメッセージを SecOps メールボックスに配信する構成
 
@@ -31,7 +31,7 @@ ms.locfileid: "60963361"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-既定で組織を[](secure-by-default.md)セキュリティで保護するために、Exchange Online Protection (EOP) では、マルウェアまたは高信頼フィッシングとして識別されるメッセージの安全なリストやフィルター バイパスは許可されません。 ただし、フィルター処理されていないメッセージの配信を必要とする特定のシナリオがあります。 例:
+既定で組織を[](secure-by-default.md)セキュリティで保護するために、Exchange Online Protection (EOP) では、マルウェアまたは高信頼フィッシングとして識別されるメッセージの安全なリストやフィルター バイパスは許可されません。 ただし、フィルター処理されていないメッセージの配信を必要とする特定のシナリオがあります。 次に例を示します。
 
 - **サード パーティのフィッシング シミュレーション**: シミュレートされた攻撃は、実際の攻撃が組織に影響を与える前に、脆弱なユーザーを特定するのに役立ちます。
 - **セキュリティ操作 (SecOps)** メールボックス: セキュリティ チームがフィルター処理されていないメッセージ (良いメッセージと悪いメッセージの両方) を収集および分析するために使用する専用のメールボックス。
@@ -44,7 +44,7 @@ ms.locfileid: "60963361"
 - [Defender の AIR とクラスター化では、Office 365](office-365-air.md)メッセージは無視されます。
 - 特に、サード パーティ製のフィッシング シミュレーションの場合:
   - [管理者の申請は](admin-submission.md) 、メッセージがフィッシング シミュレーション キャンペーンの一部であり、実際の脅威ではないという自動応答を生成します。 アラートと AIR はトリガーされません。 管理者の申請エクスペリエンスでは、これらのメッセージがシミュレートされた脅威として表示されます。
-  - [ユーザー](enable-the-report-message-add-in.md)が Outlook のレポート フィッシング アドインを使用してフィッシング シミュレーション メッセージを報告した場合、システムはアラート、調査、インシデントを生成しない。 メッセージは、[申請] ページの [ユーザーが報告したメッセージ] タブにも表示されます。
+  - ユーザーがレポート メッセージまたはレポート フィッシング アドイン[](enable-the-report-message-add-in.md)を使用してフィッシング シミュレーション メッセージを報告した場合、システムはアラート、調査、インシデントを生成されません。 リンクまたはファイルは削除されませんが、メッセージは [申請] ページの [ユーザーが報告したメッセージ] タブ **にも表示** されます。
   - [セーフ Defender for Office 365](safe-links.md)リンクは、クリック時にこれらのメッセージ内で特定された URL をブロックまたは削除しません。 URL はまだラップされますが、ブロックされません。
   - [セーフ Defender Office 365](safe-attachments.md)添付ファイルは、これらのメッセージ内の添付ファイルを削除しません。
 

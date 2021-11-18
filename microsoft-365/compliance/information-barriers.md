@@ -16,12 +16,12 @@ ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 515983182bb5f44c08e7d8531656a7a4fb49d5c6
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: fc3d961b8707ba07febd95022580091618086d7f
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064102"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61071350"
 ---
 # <a name="learn-about-information-barriers-in-microsoft-365"></a>情報バリアについて詳しくは、Microsoft 365
 
@@ -83,11 +83,10 @@ Microsoft Teams、SharePointオンライン、およびOneDrive for Businessサ�
 インサイダー リスク管理を開始する前に、サブスクリプションMicrosoft 365[アドオン](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)を確認する必要があります。 情報バリアにアクセスして使用するには、組織に次のいずれかのサブスクリプションまたはアドオンが必要です。
 
 - Microsoft 365 E5/A5 サブスクリプション (有料または試用版)
-- Office 365 Enterprise E5 サブスクリプション (有料または試用版)
-- Office 365 A5 サブスクリプション (有料または試用版)
+- Office 365 E5/A5/A3/A1 サブスクリプション (有料または試用版)
 - Office 365 Advanced Complianceアドオン (新しいサブスクリプションでは使用できなくなりました)
-- Microsoft 365 E3/A3 サブスクリプション + Microsoft 365 E5/A5 コンプライアンス アドオン
-- Microsoft 365 E3/A3 サブスクリプション + Microsoft 365 E5/A5 Insider リスク管理アドオン
+- Microsoft 365 E3/A3/A1 サブスクリプション + Microsoft 365 E5/A5 コンプライアンス アドオン
+- Microsoft 365 E3/A3/A1 サブスクリプション + Microsoft 365 E5/A5 Insider リスク管理アドオン
 
 詳細については、「セキュリティとコンプライアンス[Microsoft 365ライセンス ガイダンス」を&してください](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)。
 

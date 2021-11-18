@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-overview
-ms.openlocfilehash: d9608db071f347b16b36ca3e749012d8a9955ac0
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: de4fb39219674c23b35672d6d12a8b124e748866
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61063474"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61072809"
 ---
 # <a name="insider-risk-solutions-in-microsoft-365"></a>Microsoft 365 のインサイダー リスク ソリューション
 
@@ -79,11 +79,10 @@ Insider リスク管理は、次のサブスクリプションで利用できま
 情報バリアは、次のサブスクリプションで利用できます。
 
 - Microsoft 365 E5/A5 サブスクリプション (有料または試用版)
-- Office 365 Enterprise E5 サブスクリプション (有料または試用版)
-- Office 365 A5 サブスクリプション (有料または試用版)
+- Office 365 E5/A5/A3/A1 サブスクリプション (有料または試用版)
 - Office 365 Advanced Complianceアドオン (新しいサブスクリプションでは使用できなくなりました)
-- Microsoft 365 E3/A3 サブスクリプション + Microsoft 365 E5/A5 コンプライアンス アドオン
-- Microsoft 365 E3/A3 サブスクリプション + Microsoft 365 E5/A5 Insider リスク管理アドオン
+- Microsoft 365 E3/A3/A1 サブスクリプション + Microsoft 365 E5/A5 コンプライアンス アドオン
+- Microsoft 365 E3/A3/A1 サブスクリプション + Microsoft 365 E5/A5 Insider リスク管理アドオン
 
 ### <a name="privileged-access-management"></a>特権アクセス管理
 

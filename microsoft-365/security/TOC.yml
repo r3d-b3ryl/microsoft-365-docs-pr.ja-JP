@@ -8,8 +8,6 @@
           href: top-security-tasks-for-remote-work.md
         - name: BDM のための Microsoft 365 セキュリティ
           href: Microsoft-365-security-for-bdm.md
-        - name: 優先するアカウントのセキュリティに関する推奨事項
-          href: ./office-365-security/security-recommendations-for-priority-accounts.md
     - name: ID とデバイスのアクセス構成
       items:
         - name: 概要
