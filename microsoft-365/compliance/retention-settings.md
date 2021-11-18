@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ポリシーまたは保持ラベル ポリシーで構成できる設定を理解して、必要なものを保持し、不要なものを取り除きます。
-ms.openlocfilehash: 28aa92e7374815404eaffb1abe908aa2fe60343f
-ms.sourcegitcommit: d40b8c506c34a661a275f756081a27ef9ad5bf4f
+ms.openlocfilehash: d80ae2a6f3fac26acfc5d9f8a324e578677cb962
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60972014"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61063527"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>保持ポリシーと保持ラベルの制限
 
@@ -302,6 +302,9 @@ Microsoft 365 グループ (以前の Office 365 グループ) のコンテン�
 - 削除されたグループのメールボックスは非アクティブになり、SharePoint サイトと同様に、保持設定の対象となります。 詳細については、「[Exchange Online の非アクティブなメールボックス](inactive-mailboxes-in-office-365.md)」を参照してください。
 
 ### <a name="configuration-information-for-skype-for-business"></a>Skype for Business の構成情報
+
+> [!NOTE]
+> Skype for Business は [2021 年 7 月 31 日に廃止](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/skype-for-business-online-to-be-retired-in-2021/ba-p/777833)されました。Microsoft Teams への移行をお勧めします。 ただし、既存の顧客Skype for Business保持ポリシーは引き続きサポートされます。
 
 Exchange メールとは異なり Skype の場所の状態をオンに切り替えて自動的にすべてのユーザーを含めることはできませんが、そのロケーションをオンにしてから、会話を保持するユーザーを手動で選択する必要があります。
 

@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 recommendations: false
 description: グループ メンバーがグループとして電子メールを送信したり、Microsoft 365グループに代わって電子メールを送信Microsoft 365する方法についてMicrosoft 365します。
-ms.openlocfilehash: c06f8aa82f0c112e448e607d7fbc75f13e7d3b6c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 54fe4691f4523934e1850ebbf0711efaa3eb6034
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174197"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064065"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>グループの代理として送信または送信するメンバーを許可する
 
@@ -79,7 +79,7 @@ Send **as** または send onhalf permissions が付与されているMicrosoft 
 
 ## <a name="related-articles"></a>関連記事
 
-[コラボレーション ガバナンス計画のステップ バイ ステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[コラボレーション ガバナンス計画の推奨事項](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
 [コラボレーション ガバナンス 計画の作成](collaboration-governance-first.md)
 

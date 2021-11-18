@@ -17,12 +17,12 @@ ms.custom: admindeeplinkDEFENDER
 description: 管理者は、検疫ポリシーを使用して、検疫されたメッセージに対してユーザーが実行できる操作を制御する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 77e24e4c1f4040ee97fbbdfd3b7c0208955c17d9
-ms.sourcegitcommit: d40b8c506c34a661a275f756081a27ef9ad5bf4f
+ms.openlocfilehash: 9e31d0a75e8b891e4ab0e0293d7c0be98e625134
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60972050"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064309"
 ---
 # <a name="quarantine-policies"></a>検疫ポリシー
 
@@ -62,7 +62,7 @@ Exchange Online Protection (EOP) およびOffice 365 用 Microsoft Defender の�
 |既定の検疫ポリシー|使用されるアクセス許可グループ|検疫通知が有効になっていますか?|
 |---|---|---|
 |AdminOnlyAccessPolicy|アクセスなし|いいえ|
-|DefaultFullAccessPolicy|フル アクセス|不要|
+|DefaultFullAccessPolicy|フル アクセス|いいえ|
 |NotificationEnabledPolicy<sup>\*</sup>|フル アクセス|はい|
 
 事前設定されたアクセス許可グループの既定のアクセス許可が気に入らない場合、または検疫通知を有効にする場合は、カスタム検疫ポリシーを作成して使用します。 各アクセス許可の動作の詳細については、この記事の後半の「 [検疫ポリシーのアクセス許可の詳細](#quarantine-policy-permission-details) 」セクションを参照してください。
@@ -134,15 +134,10 @@ DefaultFullAccessPolicy のアクセス許可を提供しますが、検疫通�
 
 ### <a name="create-quarantine-policies-in-powershell"></a>PowerShell で検疫ポリシーを作成する
 
-PowerShell を使用して検疫ポリシーを作成する場合は、Exchange Online PowerShell または Exchange Online Protection PowerShell に接続し **、New-QuarantinePolicy コマンドレットを使用** します。 次の 2 つの方法から選択できます。
-
-- [ _EndUserQuarantinePermissionsValue パラメーターを使用_ します](#use-the-enduserquarantinepermissionsvalue-parameter)。
-- [ _EndUserQuarantinePermissions パラメーターを使用_ します](#use-the-enduserquarantinepermissions-parameter)。
-
-これらのメソッドについては、次のセクションで説明します。
+PowerShell を使用して検疫ポリシーを作成する場合は、Exchange Online PowerShell または Exchange Online Protection PowerShell に接続し **、New-QuarantinePolicy コマンドレットを使用** します。
 
 > [!NOTE]
-> _ESNEnabled_ パラメーターとポリシーで検疫通知を有効にする値の使用は、両方の方法で `$true` 同じです。 このパラメーターを使用しない場合、検疫通知はオフになります。
+> _ESNEnabled_ パラメーターと値を使用しない場合、 `$true` 検疫通知はオフになります。
 
 #### <a name="use-the-enduserquarantinepermissionsvalue-parameter"></a>EndUserQuarantinePermissionsValue パラメーターを使用する
 
@@ -184,56 +179,6 @@ New-QuarantinePolicy -Name LimitedAccess -EndUserQuarantinePermissionsValue 106 
 ```
 
 カスタムアクセス許可の場合は、前の表を使用して、必要なアクセス許可に対応するバイナリ値を取得します。 バイナリ値を 10 進値に変換し _、EndUserQuarantinePermissionsValue_ パラメーターに 10 進値を使用します。
-
-構文とパラメーターの詳細については [、「New-QuarantinePolicy」を参照してください](/powershell/module/exchange/new-quarantinepolicy)。
-
-#### <a name="use-the-enduserquarantinepermissions-parameter"></a>EndUserQuarantinePermissions パラメーターを使用する
-
-_EndUserQuarantinePermissionsValue_ パラメーターを使用して検疫ポリシーを作成するには、次の手順を実行します。
-
-回答。 **New-QuarantinePermissions** コマンドレットを使用して、検疫アクセス許可オブジェクトを変数に格納します。
-
-<p>
-
-B. **New-QuarantinePolicy** コマンドの _EndUserQuarantinePermissions_ 値として変数を使用します。
-
-##### <a name="step-a-store-a-quarantine-permissions-object-in-a-variable"></a>手順 A: 検疫アクセス許可オブジェクトを変数に格納する
-
-次の構文を使用してください。
-
-```powershell
-$<VariableName> = New-QuarantinePermissions [-PermissionToBlockSender <$true | $False>] [-PermissionToDelete <$true | $False>] [-PermissionToPreview <$true | $False>] [-PermissionToRelease <$true | $False>] [-PermissionToRequestRelease <$true | $False>]
-```
-
-未使用のパラメーターの既定値は、値をに設定するパラメーターのみを使用する `$false` 必要があります `$true` 。
-
-次の例は、制限付きアクセスプリセットアクセス許可グループに対応するアクセス許可オブジェクトを作成する方法を示しています。
-
-```powershell
-$LimitedAccess = New-QuarantinePermissions -PermissionToBlockSender $true -PermissionToDelete $true -PermissionToPreview $true -PermissionToRequestRelease $true
-```
-
-設定した値を表示するには、変数名をコマンドとして実行します (たとえば、コマンドを実行します `$LimitedAccess` )。
-
-カスタムアクセス許可の場合は _、PermissionToRelease_ パラメーターと _PermissionToRequestRelease_ パラメーターの両方をに設定しない `$true` 。 1 つを `$true` に設定し、もう一方を `$false` そのままにするか、両方をとして残します `$false` 。
-
-作成後 **、Set-QuarantinePermissions** コマンドレットを使用して使用する前に、既存のアクセス許可オブジェクト変数を変更することもできます。
-
-構文とパラメーターの詳細については [、「New-QuarantinePermissions」](/powershell/module/exchange/new-quarantinepermissions) および [「Set-QuarantinePermissions」を参照してください](/powershell/module/exchange/set-quarantinepermissions)。
-
-##### <a name="step-b-use-the-variable-in-the-new-quarantinepolicy-command"></a>手順 B: [変数] コマンドで変数New-QuarantinePolicyします。
-
-permissions オブジェクトを変数に作成して格納したら、次の **New-QuarantinePolicy** コマンドの _EndUserQuarantinePermission_ パラメーター値に変数を使用します。
-
-```powershell
-New-QuarantinePolicy -Name "<UniqueName>" -EndUserQuarantinePermissions $<VariableName> [-EsnEnabled $true]
-```
-
-この例では、前の手順で説明および作成した permissions オブジェクトを使用して、LimitedAccess という名前の検疫通知を有効にした新しい検疫ポリシー `$LimitedAccess` を作成します。
-
-```powershell
-New-QuarantinePolicy -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAccess -EsnEnabled $true
-```
 
 構文とパラメーターの詳細については [、「New-QuarantinePolicy」を参照してください](/powershell/module/exchange/new-quarantinepolicy)。
 
@@ -293,7 +238,7 @@ New-QuarantinePolicy -Name LimitedAccess -EndUserQuarantinePermissions $LimitedA
 <New-HostedContentFilterPolicy -Name "<Unique name>" | Set-HostedContentFilterPolicy -Identity "<Policy name>"> [-SpamAction Quarantine] [-SpamQuarantineTag <QuarantineTagName>] [-HighConfidenceSpamAction Quarantine] [-HighConfidenceSpamQuarantineTag <QuarantineTagName>] [-PhishSpamAction Quarantine] [-PhishQuarantineTag <QuarantineTagName>] [-HighConfidencePhishQuarantineTag <QuarantineTagName>] [-BulkSpamAction Quarantine] [-BulkQuarantineTag <QuarantineTagName>] ...
 ```
 
-**注意**:
+**注**:
 
 - _PhishSpamAction_ パラメーターと _HighConfidencePhishAction_ パラメーターの既定値は[検疫] なので、PowerShell で新しいスパム フィルター ポリシーを作成するときにこれらのパラメーターを使用する必要はありません。 新しいスパム対策ポリシーまたは既存のスパム対策ポリシーの _SpamAction_ パラメーター _、HighConfidenceSpamAction_ パラメーター、 _および BulkSpamAction_ パラメーターの場合、検疫ポリシーは値が [検疫] の場合にのみ有効です。
 
@@ -501,7 +446,7 @@ New-MalwareFilterPolicy -Identity "Human Resources" -QuarantineTag NoAccess
 <New-SafeAttachmentPolicy -Name "<Unique name>" | Set-SafeAttachmentPolicy -Identity "<Policy name>"> -Enable $true -Action <Block | Replace | DynamicDelivery> [-QuarantineTag <QuarantineTagName>]
 ```
 
-**注意**:
+**注**:
 
 - _Action パラメーターの_ 値 Block、Replace、または DynamicDelivery を指定すると、検疫されたメッセージが発生する可能性があります (値 Allow はメッセージを検疫しません)。 Action パラメーターの _値は、Enable_ パラメーターの値が. `$true`
 
@@ -728,7 +673,7 @@ Remove-QuarantinePolicy -Identity "<QuarantinePolicyName>"
 
 - **検疫通知**: 次のボタンを使用できます。
   - **差出人をブロックする**
-  - **Release**
+  - **リリース**
   - **確認**
 
   ![検疫ポリシーがユーザーにフル アクセスのアクセス許可を与える場合、検疫通知で使用可能なボタン。](../../media/quarantine-tags-esn-full-access.png)

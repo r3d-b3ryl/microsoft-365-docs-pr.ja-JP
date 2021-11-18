@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なコンテンツを保持し不要なコンテンツを削除するのに役立つ、アイテム保持ポリシーと保持ラベルについて説明します。
-ms.openlocfilehash: a284ec91151028e30af414b85c4fff66658c23e9
-ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
+ms.openlocfilehash: 387dc9074808c6ee463b2402e98358d77cf1d24b
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60950595"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064053"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの詳細
 
@@ -244,7 +244,7 @@ Microsoft 365 コンプライアンス センターから、[**データの分�
 |機能|アイテム保持ポリシー |保持ラベル|
 |:-----|:-----|:-----|:-----|
 |保持してから削除、保持のみ、削除のみを指定できる保持設定 |はい |はい |
-|サポートされるワークロード: <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 グループ <br />- Skype for Business <br />- Teams<br />- Yammer|<br /> はい <br /> はい <br /> はい <br /> はい <br /> はい <br /> はい <br /> はい | <br /> はい (パブリック フォルダーを除く) <br /> はい <br /> はい <br /> はい <br /> いいえ <br /> いいえ <br /> いいえ |
+|サポートされるワークロード: <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 グループ <br />- Skype for Business <br />- Teams<br />- Yammer|<br /> はい <br /> はい <br /> はい <br /> はい <br /> はい <br /> はい <br /> はい | <br /> はい (パブリック フォルダーを除く) <br /> はい <br /> はい <br /> はい <br /> 不要 <br /> 不要 <br /> いいえ |
 |保持の自動適用 | はい | はい |
 |条件に基づいて適用される保持 <br /> - 機密情報の種類、KQL クエリとキーワード、トレーニング可能な分類子、クラウド添付ファイル| いいえ | はい |
 |保持の手動適用 | いいえ | はい |
@@ -256,7 +256,7 @@ Microsoft 365 コンプライアンス センターから、[**データの分�
 |廃棄の証明 (最大 7 年間) | いいえ |はい、処分レビューを使用するか、アイテムがレコードとしてマークされている場合|
 |管理者アクティビティを監査する| はい | はい|
 |保持アクションの監査| いいえ | はい <sup>\*</sup> |
-|保持対象のアイテムの特定 <br /> - コンテンツ検索 <br /> - データ分類ページ、コンテンツ エクスプローラー、アクティビティ エクスプローラー | <br /> 不要 <br /> いいえ | <br /> はい <br /> はい|
+|保持対象のアイテムの特定 <br /> - コンテンツ検索 <br /> - データ分類ページ、コンテンツ エクスプローラー、アクティビティ エクスプローラー | <br /> 不要 <br /> 不要 | <br /> はい <br /> はい|
 
 **脚注:**
 
@@ -582,6 +582,10 @@ Microsoft 365 の場所に対して複数の保持ポリシーと、発行また
     - 指定された期間が経過すると、ユーザーのプライマリ メールボックスからアーカイブ メールボックスにメールを自動的に移動する[アーカイブ メールボックス](enable-archive-mailboxes.md)のアーカイブ ポリシー。 アーカイブ ポリシー (任意の設定) は、ユーザーのプライマリ メールボックスとアーカイブ メールボックスに適用される Microsoft 365 のアイテム保持ポリシーと組み合わせて使用できます。
     
     - 管理者がメールボックス内の特定のフォルダーに適用するアイテム保持ポリシー。 Microsoft 365 のアイテム保持ポリシーは、メールボックス内のすべてのフォルダーに適用されます。 ただし、管理者は、ユーザーが Outlook のフォルダーに[既定の保持ラベル](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)として適用できる保持ラベルを使用して、さまざまな保持設定を構成できます。
+
+- [訴訟ホールド](create-a-litigation-hold.md) (保持のみ)
+    
+   訴訟ホールドは引き続きサポートされています。必要に応じて、Microsoft 365または電子情報開示の保持を[使用することをお勧めします](#when-to-use-retention-policies-and-retention-labels-or-ediscovery-holds)。 
 
 **SharePoint と OneDrive の古い機能:**
 

@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: グループ内のコラボレーション ツールのライフサイクル ガバナンス オプションに関するMicrosoft 365
-ms.openlocfilehash: c1389b7dd787df6b4aab4cd5bb00377e05b99ff6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a0f4622afd1a22b8cd6574865012b7f636fc06c5
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199275"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61063322"
 ---
 # <a name="plan-organization-and-lifecycle-governance-for-microsoft-365-groups-and-microsoft-teams"></a>グループとグループの組織とライフサイクルのガバナンスMicrosoft 365計画Microsoft Teams
 
@@ -57,7 +57,7 @@ Microsoft 365グループには、組織が必要とするガバナンス機能�
 
 グループの名前付けポリシーは、次の 2 つの方法でグループを管理するのに役立ちます。
 
-- プレフィックス/サフィックスの名前付けポリシーを使用して、グループ名とその関連付けられた電子メール アドレスの先頭または末尾に固定文字列または Azure AD 属性を適用できます。 これにより、部署名や地域をグループ名に含めることが可能です。
+- プレフィックス/サフィックスの名前付けポリシーを使用して、グループ名とその関連付けられた電子メール アドレスの先頭または末尾に固定Azure AD属性を適用できます。 これにより、部署名や地域をグループ名に含めることが可能です。
 - ブロックされた単語ポリシーは、役員の名前など、特定の単語がグループ名で使用されない可能性があります。
 
 名前付けポリシーは、グループに接続されたサービスからグループが作成される場合に適用されます。
@@ -78,8 +78,8 @@ Microsoft 365グループには、組織が必要とするガバナンス機能�
 
 ## <a name="related-topics"></a>関連トピック
 
-[コラボレーション ガバナンス計画のステップ バイ ステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[コラボレーション ガバナンス計画の推奨事項](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
 [コラボレーション ガバナンス 計画の作成](collaboration-governance-first.md)
 
-[元従業員を削除し、データをセキュリティで保護する](/microsoft-365/admin/add-users/remove-former-employee)
+[元従業員を削除してデータを保護する](/microsoft-365/admin/add-users/remove-former-employee)

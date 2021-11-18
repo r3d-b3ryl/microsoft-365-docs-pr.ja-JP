@@ -21,12 +21,12 @@ ms.custom:
 description: 管理者は、検疫済みメッセージ (EOP) で検疫されたメッセージに対するエンド Exchange Online Protectionについて学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3a996b3c6f65ed978dda3c5038b522e09b09dbfa
-ms.sourcegitcommit: bd43f08b4719ba984ea6712227508d4a281148cf
+ms.openlocfilehash: 1d3c7296cff3f3f4f2d10a2c4358a889ac428880
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61035996"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064077"
 ---
 # <a name="use-quarantine-notifications-to-release-and-report-quarantined-messages"></a>検疫通知を使用して検疫済みメッセージを解放および報告する
 
@@ -42,6 +42,8 @@ Exchange Online のメールボックスを使用している Microsoft 365 組�
 _検疫ポリシーは、_ メッセージが検疫された理由 (サポートされている機能の場合) に基づいて、検疫されたメッセージに対してユーザーが実行できる操作を定義します。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。 検疫ポリシーは、影響を受ける受信者 (共有メールボックスを含む) が検疫済みメッセージに関する定期的な検疫通知を受け取るかどうかを制御します。 検疫通知は、サポートされている保護機能 (スパム対策ポリシーの評決だけではない) に対するエンド ユーザーのスパム通知に代わるものとなります。
 
 AdminOnlyAccessPolicy または DefaultFullAccessPolicy という名前の組み込みの検疫通知では、検疫通知は有効にされません。 組織に検疫通知がある場合、NotificationEnabledPolicy という名前の組み込みの検疫ポリシーで検疫通知 [が有効になります](quarantine-policies.md#full-access-permissions-and-quarantine-notifications)。 それ以外の場合は、検疫ポリシーで検疫通知を有効にするには、新しい検疫ポリシーを作成 [して構成する必要があります](quarantine-policies.md#step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal)。
+
+さらに、送信者の検疫通知を直接ブロックするには、リモート Powershell でユーザーを有効にする必要があります。 手順については、「PowerShell へのアクセスを有効または無効にするExchange Online[参照してください](/powershell/exchange/disable-access-to-exchange-online-powershell)。
 
 管理者は、検疫ポリシーのグローバル設定を使用して、送信者の表示名、さまざまな言語の免責事項のテキスト、検疫通知で使用される会社のロゴをカスタマイズすることもできます。 手順については、「グローバル検疫通知 [設定の構成」を参照してください](quarantine-policies.md#configure-global-quarantine-notification-settings-in-the-microsoft-365-defender-portal)。
 

@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: グループ、グループ、グループMicrosoft 365、およびTeamsのコンプライアンス オプションSharePointします。
-ms.openlocfilehash: acc32d6cff18e9535a29eeec773a5034480a3595
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ab840ea5652a13087ecc8d505391bac152ca1052
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207417"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61063371"
 ---
 # <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>グループ、グループ、Microsoft 365、およびTeamsのコンプライアンス SharePointオプション
 
@@ -29,15 +29,15 @@ Microsoft 365共同作業時にコンプライアンスを維持するための�
 
 次の表に、コンプライアンス コントロールのクイック リファレンスを示します。Microsoft 365。 詳細については、次のセクションで説明します。
 
-|カテゴリ|説明|リファレンス|
+|カテゴリ|説明|参照|
 |:-------|:----------|:--------|
 |情報の保持|||
 ||グループのメールとコンテンツSharePoint保持する|[SharePoint と OneDrive のアイテム保持ポリシーの詳細](../compliance/retention-policies-sharepoint.md)|
 ||チャットとメッセージを保持する|[Microsoft Teams のアイテム保持ポリシーの詳細](../compliance/retention-policies-teams.md)|
 |情報の分類|||
 ||グループとチームを分類する|[秘密度ラベルを使用して、Microsoft Teams、Microsoft 365 グループ、SharePoint サイトのコンテンツを保護する](../compliance/sensitivity-labels-teams-groups-sites.md)|
-||機密コンテンツを自動的に分類する|[秘密度ラベルをコンテンツに自動的に適用する](../compliance/apply-sensitivity-label-automatically.md)|
-||機密性の高いコンテンツを暗号化する|[秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する](../compliance/encryption-sensitivity-labels.md)|
+||機密コンテンツを自動的に分類する|[機密ラベルをコンテンツに自動的に適用する](../compliance/apply-sensitivity-label-automatically.md)|
+||機密性の高いコンテンツを暗号化する|[機密ラベルを使用して暗号化を適用しコンテンツへのアクセスを制限する](../compliance/encryption-sensitivity-labels.md)|
 |情報保護|||
 ||機密情報の損失を防止する|[データ損失防止について](../compliance/dlp-learn-about-dlp.md)|
 ||チャット内の機密情報を保護します。|[データ損失防止と Microsoft Teams](../compliance/dlp-microsoft-teams.md)|
@@ -79,17 +79,17 @@ Microsoft 365共同作業時にコンプライアンスを維持するための�
 
 機密情報の種類の検出やトレーニング可能な分類子とのパターンマッチングなど、指定した条件に基づいてファイルや電子メールに機密ラベルを自動適用する Microsoft 365 を構成できます。
 
-- [秘密度ラベルをコンテンツに自動的に適用する](../compliance/apply-sensitivity-label-automatically.md)
+- [機密ラベルをコンテンツに自動的に適用する](../compliance/apply-sensitivity-label-automatically.md)
 
 秘密度ラベルを使用してファイルを暗号化し、ファイルの暗号化を解除して読み取る権限を持つユーザーのみを許可できます。
 
-- [秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する](../compliance/encryption-sensitivity-labels.md)
+- [機密ラベルを使用して暗号化を適用しコンテンツへのアクセスを制限する](../compliance/encryption-sensitivity-labels.md)
 
 - [セキュリティの分離を使用してチームを構成する](./secure-teams-security-isolation.md)
 
 追加情報:
 
-- [秘密度ラベルの詳細](../compliance/sensitivity-labels.md)
+- [機密ラベルについて詳しく見る](../compliance/sensitivity-labels.md)
 
 
 ## <a name="information-protection"></a>情報保護
@@ -126,7 +126,7 @@ DLP ポリシーを使用すると、ユーザー、およびユーザー間でS
 
 ## <a name="related-topics"></a>関連トピック
 
-[コラボレーション ガバナンス計画のステップ バイ ステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[コラボレーション ガバナンス計画の推奨事項](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
 [コラボレーション ガバナンス 計画の作成](collaboration-governance-first.md)
 

@@ -18,12 +18,12 @@ ms.collection:
 description: Domain-based Message Authentication, Reporting, and Conformance (DMARC) を構成して、組織から送信されたメッセージを検証する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 242c0e7573c9f5c61ba23b8a99ed27793ea58019
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f80d4521f8d5faf3b126db93b9ad9d3397a12d73
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208951"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064297"
 ---
 # <a name="use-dmarc-to-validate-email"></a>DMARC を使用してメールを検証する
 
@@ -87,10 +87,10 @@ SPF の DNS レコードと同様に、DMARC のレコードは、スプーフ�
 Microsoft の DMARC TXT レコードは、次のような内容になります。
 
 ```console
-_dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=mailto:d@rua.agari.com; ruf=mailto:d@ruf.agari.com; fo=1"
+_dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=mailto:d@rua.contoso.com; ruf=mailto:d@ruf.contoso.com; fo=1"
 ```
 
-Microsoft は、DMARC レポートをサード パーティの [Agari](https://agari.com) に送信します。 Agari では、DMARC レポートを収集して分析します。 Microsoft 365 用の DMARC レポートを提供している他のサードパーティ ベンダーを確認するには、[MISA カタログ](https://www.microsoft.com/misapartnercatalog)を参照してください。
+Microsoft 365 用の DMARC レポートを提供している他のサードパーティ ベンダーについては、[MISA カタログ](https://www.microsoft.com/misapartnercatalog?IntegratedProducts=DMARCReportingforOffice365)を参照してください。
 
 ## <a name="set-up-dmarc-for-inbound-mail"></a>受信メール用に DMARC の設定
 
@@ -181,13 +181,14 @@ _dmarc.domain  TTL  IN  TXT  "v=DMARC1; p=policy; pct=100"
 レコードの作成後には、ドメイン レジストラーでレコードを更新する必要があります。
 
 ## <a name="dmarc-mail-public-preview-feature"></a>DMARC メール (パブリック プレビュー機能)
-> [!CAUTION]
-> メールは毎日配信されるわけではありませんし、レポート自体もパブリック プレビュー中に変更される可能性があります。  DMARC 集約レポートのメールは、Consumer アカウント (hotmail.com、outlook.com、live.com アカウントなど) から送信されます。
 
-DMARC TXTレコード **_dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=mailto:d@rua.agari.com; ruf=mailto:d@ruf.agari.com; fo=1"** のこの例では、*rua* アドレスを表示することができますが、この場合は、サードパーティ企業の Agari が処理しています。 このアドレスは、分析のための 'フィードバックの集約' を送信するために使用され、レポートを作成するために使用されます。
+> [!CAUTION]
+> メールは毎日配信されるわけではありませんし、レポート自体もパブリック プレビュー中に変更される可能性があります。 DMARC 集約レポートのメールは、Consumer アカウント (hotmail.com、outlook.com、live.com アカウントなど) から送信されます。
+
+この DMARC TXT レコードの例では、 `dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=mailto:d@rua.agari.com; ruf=mailto:d@ruf.agari.com; fo=1"`、サード パーティ企業 Agari によって処理された *rua* アドレスを確認できます。 このアドレスは、分析のための 'フィードバックの集約' を送信するために使用され、レポートを作成するために使用されます。
 
 > [!TIP]
-> Microsoft 365 用の DMARC レポートを提供している他のサードパーティ ベンダーを確認するには、[MISA カタログ](https://www.microsoft.com/misapartnercatalog)を参照してください。 DMARC 'rua' アドレスの詳細については、「[IETF.org の 'ドメインベースのメッセージ認証、レポート、適合 (DMARC)'](https://datatracker.ietf.org/doc/html/rfc7489)」を参照してください。
+> Microsoft 365 用の DMARC レポートを提供している他のサードパーティ ベンダーについては、[MISA カタログ](https://www.microsoft.com/misapartnercatalog?IntegratedProducts=DMARCReportingforOffice365)を参照してください。 DMARC 'rua' アドレスの詳細については、[RFC 74890](https://datatracker.ietf.org/doc/html/rfc7489)を参照してください。
 
 ## <a name="best-practices-for-implementing-dmarc-in-microsoft-365"></a>Microsoft 365 で DMARC を実装する際のベスト プラクティス
 

@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 2ab8d01ab8169e9da11d25f8f118d81ceffcfdd4
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 4764243e89fe5c8cc6f699a3ee917fa9ba20a610
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60787144"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064453"
 ---
 # <a name="get-started-with-insider-risk-management"></a>インサイダー リスクの管理の概要
 
@@ -36,15 +36,9 @@ ms.locfileid: "60787144"
 
 インサイダー リスク管理を開始する前に、サブスクリプションMicrosoft 365[アドオン](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)を確認する必要があります。 インサイダー リスク管理にアクセスして使用するには、組織に次のいずれかのサブスクリプションまたはアドオンが必要です。
 
-- Microsoft 365 E5 サブスクリプション (有料または試用版)
-- Microsoft 365 E5 コンプライアンス アドオンが含まれている Microsoft 365 E3 サブスクリプション。
-- Microsoft 365 E5 インサイダー リスク管理アドオンが含まれている Microsoft 365 E3 サブスクリプション。
-- Microsoft 365 A5 サブスクリプション (有料または試用版)
-- Microsoft 365 A5 コンプライアンス アドオンが含まれている Microsoft 365 A3 サブスクリプション。
-- Microsoft 365 A5 インサイダー リスク管理アドオンが含まれている Microsoft 365 A3 サブスクリプション。
-- Microsoft 365 G5 サブスクリプション (有料または試用版)
-- Microsoft 365 G5 コンプライアンス アドオンが含まれている Microsoft 365 G3 サブスクリプション
-- Microsoft 365 G5 インサイダー リスク管理アドオンが含まれている Microsoft 365 G3 サブスクリプション
+- Microsoft 365 E5/A5/G5 サブスクリプション (有料または試用版)
+- Microsoft 365 E3/A3/G3 サブスクリプション + Microsoft 365 E5/A5/G5 コンプライアンス アドオン
+- Microsoft 365 E3/A3/G3 サブスクリプション + Microsoft 365 E5/A5/G5 Insider Risk Management アドオン
 - Office 365 E3 サブスクリプション + Enterprise Mobility and Security E3 + Microsoft 365 E5 Compliance アドオン
 
 インサイダー リスク管理ポリシーに含まれるユーザーには、上記のいずれかのライセンスが割り当てられている必要があります。

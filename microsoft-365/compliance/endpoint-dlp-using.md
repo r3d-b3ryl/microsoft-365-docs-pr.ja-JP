@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 365 エンドポイント データ損失防止 (EPDLP) の場所を使用するようにデータ損失防止 (DLP) ポリシーを構成する方法を説明します。
-ms.openlocfilehash: 03f16c9a914ce0a5cd1193919a962307b97435b2
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 17fda6ff5deb8c5f16513a5b3a823bcf584f2373
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962989"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064537"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>エンドポイント データ損失防止の使用
 
@@ -44,6 +44,10 @@ ms.locfileid: "60962989"
   > ![DLP の設定。](../media/endpoint-dlp-1-using-dlp-settings.png)
 
 ### <a name="advanced-classification-scanning-and-protection"></a>高度な分類のスキャンと保護
+
+## <a name="get-registered"></a>登録する
+
+この機能にアクセスするには、テナントを Microsoft に登録する必要があります。 [Microsoft 365 macOS サポート](https://aka.ms/EndpointDLPIgnite21-Previews)に登録します。
 
 有効にすると、**高度な分類のスキャンと保護** により、高度な Microsoft 365 クラウドベースのデータ分類サービスで項目をスキャンし、分類し、結果をローカル コンピューターに返すことができます。 つまり、DLP ポリシーで [厳密なデータ一致](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) 分類、[名前付きエンティティ (プレビュー)](named-entities-learn.md#learn-about-named-entities-preview) 分類手法を利用できるということです。
 

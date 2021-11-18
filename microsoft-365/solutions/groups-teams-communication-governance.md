@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: コミュニケーション ガバナンスのコラボレーション シナリオについて説明します。
-ms.openlocfilehash: cc90130a9cb841291872898ca0ca53a4b515b4fb
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ace313ce20445aafc06b184a72cc45c2ce0118ef
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207429"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064501"
 ---
 # <a name="communications-governance-for-collaboration-scenarios"></a>コラボレーション シナリオのコミュニケーション ガバナンス
 
@@ -29,7 +29,7 @@ Microsoft 365、メッセージングや会議の設定など、組織内のコ�
 
 次の表は、次の表で使用できる通信コントロールのクイック リファレンスを示Microsoft 365。 詳細については、次のセクションで説明します。
 
-|カテゴリ|説明|リファレンス|
+|カテゴリ|説明|参照|
 |:-------|:----------|:--------|
 |メッセージング|||
 ||ユーザーがメッセージを送信している間に実行できる操作をTeams。|[Teams のメッセージング ポリシーを管理する](/microsoftteams/messaging-policies-in-teams)|
@@ -69,7 +69,7 @@ Microsoft 365、メッセージングや会議の設定など、組織内のコ�
 
 ## <a name="related-topics"></a>関連トピック
 
-[コラボレーション ガバナンス計画のステップ バイ ステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[コラボレーション ガバナンス計画の推奨事項](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
 [コラボレーション ガバナンス 計画の作成](collaboration-governance-first.md)
 

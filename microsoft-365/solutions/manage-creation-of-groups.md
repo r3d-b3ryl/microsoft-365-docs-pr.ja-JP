@@ -18,18 +18,18 @@ search.appverid:
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 recommendations: false
 description: ユーザーがグループを作成できるユーザーを制御Microsoft 365します。
-ms.openlocfilehash: b78ff54c8ff475f96f10592a95a3f83255665727
-ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
+ms.openlocfilehash: cea1529071cce92e2b6fad74d4946d1e4c7f3594
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60217164"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064321"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>Microsoft 365 グループを作成できるユーザーを管理する
 
 既定では、すべてのユーザーがグループMicrosoft 365できます。 IT の支援を必要とせずにユーザーが共同作業を開始できるので、この方法をお勧めします。
 
-ビジネスでグループを作成できるユーザーを制限する必要がある場合は、グループMicrosoft 365グループまたはセキュリティ グループのメンバー Microsoft 365制限できます。
+ビジネスでグループを作成できるユーザーを制限する必要がある場合は、Microsoft 365グループの作成を特定のグループまたはセキュリティ グループのMicrosoft 365制限できます。
 
 ビジネス標準に準拠しないチームまたはグループを作成するユーザーが気になる場合は、ユーザーにトレーニング コースを完了し、許可されたユーザーのグループに追加する必要があります。
 
@@ -44,7 +44,7 @@ ms.locfileid: "60217164"
 - Power BI (クラシック)
 - Projectの詳細 / ロードマップ
 
-この記事の手順を実行しても、特定の役割のメンバーがグループを作成できなくなることはありません。 Office 365グローバル管理者は、オンラインの管理者、Microsoft 365 管理センター、Exchange、SharePointグループをSharePointできます。 他の役割は、以下のような制限付きの方法でグループを作成できます。
+この記事の手順を実行しても、特定の役割のメンバーがグループを作成できなくなることはありません。 Office 365管理者は、[オンライン] 、Microsoft 365 管理センター、Exchange、および SharePointをSharePointできます。 他の役割は、以下のような制限付きの方法でグループを作成できます。
 
 - Exchange 管理者: Exchange 管理センター、Azure AD
 - パートナー レベル 1 のサポート: Microsoft 365 管理センター、Exchange 管理センター、Azure AD
@@ -58,7 +58,7 @@ ms.locfileid: "60217164"
 
 ## <a name="licensing-requirements"></a>ライセンスの要件
 
-グループを作成するユーザーを管理するには、次のユーザーに割りAzure AD Premium基本 EDU ライセンスAD Azure ライセンスが必要です。
+グループを作成するユーザーを管理するには、次のユーザーに割りAzure AD Premium基本 EDU Azure ADライセンスを割り当てる必要があります。
 
 - これらのグループ作成の設定を管理している管理者
 - グループの作成が許可されているグループのメンバー
@@ -168,7 +168,7 @@ Set-AzureADDirectorySetting -Id $settingsObjectID -DirectorySetting $settingsCop
 
 ## <a name="related-topics"></a>関連トピック
 
-[コラボレーション ガバナンス計画のステップ バイ ステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[コラボレーション ガバナンス計画の推奨事項](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
 [コラボレーション ガバナンス 計画の作成](collaboration-governance-first.md)
 

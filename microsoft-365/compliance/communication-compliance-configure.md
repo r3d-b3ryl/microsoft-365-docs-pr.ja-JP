@@ -21,12 +21,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 2b72f61433f9686d8413a560e4c061078a5d7e5c
-ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
+ms.openlocfilehash: 2c9ecbc07a5523d16d8e3e328f787a11b0c7679b
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "60792534"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61063395"
 ---
 # <a name="get-started-with-communication-compliance"></a>コミュニケーション コンプライアンスの使用を開始する
 
@@ -36,15 +36,9 @@ ms.locfileid: "60792534"
 
 コミュニケーション コンプライアンスを開始する前に、[Microsoft 365 サブスクリプション](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)とアドオンを確認する必要があります。 コミュニケーション コンプライアンスにアクセスして使用するには、組織に次のいずれかのサブスクリプションまたはアドオンが必要です。
 
-- Microsoft 365 E5 サブスクリプション (有料または試用版)
-- Microsoft 365 E5 コンプライアンス アドオンが含まれている Microsoft 365 E3 サブスクリプション。
-- Microsoft 365 E5 インサイダー リスク管理アドオンが含まれている Microsoft 365 E3 サブスクリプション。
-- Microsoft 365 A5 サブスクリプション (有料または試用版)
-- Microsoft 365 A5 コンプライアンス アドオンが含まれている Microsoft 365 A3 サブスクリプション。
-- Microsoft 365 A5 インサイダー リスク管理アドオンが含まれている Microsoft 365 A3 サブスクリプション。
-- Microsoft 365 G5 サブスクリプション (有料または試用版)
-- Microsoft 365 G5 コンプライアンス アドオンが含まれている Microsoft 365 G5 サブスクリプション。
-- Microsoft 365 G5 インサイダー リスク管理アドオンが含まれている Microsoft 365 G5 サブスクリプション。
+- Microsoft 365 E5/A5/G5 サブスクリプション (有料または試用版)
+- Microsoft 365 E3/A3/G5 サブスクリプション + Microsoft 365 E5/A5/G5 コンプライアンス アドオン
+- Microsoft 365 E3/A3/G5 サブスクリプション + Microsoft 365 E5/A5/G5 Insider Risk Management アドオン
 - Office 365 Enterprise E5 サブスクリプション (有料または試用版)
 - Office 365 A5 サブスクリプション (有料または試用版)
 - Office 365 Enterprise E3 サブスクリプション + Office 365 Advanced Compliance アドオン (新しいサブスクリプションでは使用できなくなりました。注を参照)
@@ -58,13 +52,13 @@ ms.locfileid: "60792534"
 
 ## <a name="recommended-actions-preview"></a>推奨されるアクション (プレビュー)
 
-推奨されるアクションは、組織が通信コンプライアンス機能と既存のポリシーを活用するのに役立ちます。 [概要] **ページに含** まれる推奨アクションは、組織内のコミュニケーションにおける機密情報の種類と不適切なコンテンツ アクティビティに関する分析情報を提供し、要約します。
+推奨されるアクションは、組織が通信コンプライアンス機能を使い始め、既存のポリシーを活用するのに役立ちます。 [ポリシー] **ページに含まれる** 推奨アクションは、組織内のコミュニケーションにおける機密情報の種類と不適切なコンテンツ アクティビティに関する分析情報と要約を提供します。 これらの分析情報には、組織内のユーザーの個人を特定できる情報 (PII) は含められない。
 
 ![通信コンプライアンス推奨アクション。](../media/communication-compliance-recommended-actions.png)
 
-不適切なコンテンツを含むメッセージのアクティビティは、不適切なコンテンツ テンプレートまたは不適切なコンテンツに分類子を使用するカスタム ポリシーを使用する既存のポリシーの分類子の種類によって列挙されます。 ポリシーのアラート ダッシュボードでこれらのメッセージのアラートを調査します。
+不適切なコンテンツを含むメッセージのアクティビティは、[](/microsoft-365/compliance/communication-compliance-policies#classifiers)不適切なコンテンツ テンプレートまたは不適切なコンテンツに分類子を使用するカスタム ポリシーを使用する既存のポリシーの分類子の種類によって集計されます。 ポリシーのアラート ダッシュボードでこれらのメッセージのアラートを調査します。
 
-機密情報の種類に関するアクティビティは、既存のポリシーでカバーされているメッセージ、および既存のポリシーでカバーされていないメッセージで検出されます。 インサイト、組織が既存の通信コンプライアンス ポリシーで定義していない機密情報の種類を含め、すべての機密情報の種類に対して提供されます。 これらの分析情報を使用して、新しい通信コンプライアンス ポリシーを作成するか、既存のポリシーを更新します。
+機密情報の [種類に関する](/microsoft-365/compliance/communication-compliance-policies#sensitive-information-types) アクティビティは、既存のポリシーでカバーされているメッセージ、および既存のポリシーでカバーされていないメッセージで検出されます。 インサイト、組織が既存の通信コンプライアンス ポリシーで定義していない機密情報の種類を含め、すべての機密情報の種類について集計されます。 これらの分析情報を使用して、新しい通信コンプライアンス ポリシーを作成するか、既存のポリシーを更新します。
 
 ## <a name="step-1-required-enable-permissions-for-communication-compliance"></a>手順 1 (必須): コミュニケーション コンプライアンスのアクセス許可を有効にする
 

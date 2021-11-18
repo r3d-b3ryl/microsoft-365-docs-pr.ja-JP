@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: グループ、グループ、グループ、Microsoft 365、およびTeamsアクセスの管理SharePoint。
-ms.openlocfilehash: 2a0da02385e3fc325bb4f25b4ac8a538f950d820
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e01326093476f341c6c4c75448efbdf8c745779f
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207453"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064333"
 ---
 # <a name="governing-access-in-microsoft-365-groups-teams-and-sharepoint"></a>グループ、グループ、Microsoft 365、およびTeamsのアクセスを管理SharePoint
 
@@ -29,14 +29,14 @@ ms.locfileid: "60207453"
 
 次の表は、次の表で使用できるアクセス制御のクイック リファレンスを示Microsoft 365。 詳細については、次のセクションで説明します。
 
-|カテゴリ|説明|リファレンス|
+|カテゴリ|説明|参照|
 |:-------|:----------|:--------|
 |メンバーシップ|||
 ||プライベート チームの検出|[プライベート チームの検出を管理Microsoft Teams](/microsoftteams/manage-discovery-of-private-teams)|
 ||ルールに基づく動的グループ メンバーシップ|[グループ内で動的グループを作成または更新Azure Active Directory](/azure/active-directory/users-groups-roles/groups-create-rule)|
 ||ファイル、フォルダー、サイトを共有できるユーザーを制御します。|[アクセス要求の設定と管理](https://support.microsoft.com/office/94b26e0b-2822-49d4-929a-8455698654b3)|
 |条件付きアクセス|||
-||多要素認証|[Azure AD 多要素認証](/azure/active-directory/authentication/concept-mfa-howitworks)|
+||多要素認証|[Azure AD多要素認証](/azure/active-directory/authentication/concept-mfa-howitworks)|
 ||グループ、チーム、またはサイトの感度に基づいてデバイス アクセスを制御します。|[秘密度ラベルを使用して、Microsoft Teams、Microsoft 365 グループ、SharePoint サイトのコンテンツを保護する](../compliance/sensitivity-labels-teams-groups-sites.md)|
 ||管理されていないデバイスのサイト アクセスを制限します。|[管理SharePointデバイスからのアクセスを制御する](/sharepoint/control-access-from-unmanaged-devices)|
 ||場所に基づいてサイト アクセスを制御する|[ネットワークの場所に基づいて SharePoint と OneDrive のデータへのアクセスを制御する](/sharepoint/control-access-based-on-network-location)|
@@ -51,8 +51,8 @@ ms.locfileid: "60207453"
 ||情報の感度に基づいて、グループ、チーム、またはサイトへのゲスト アクセスを制御します。|[秘密度ラベルを使用して、Microsoft Teams、Microsoft 365 グループ、SharePoint サイトのコンテンツを保護する](../compliance/sensitivity-labels-teams-groups-sites.md)|
 ||共有オプションをオフにします。|[Microsoft 365 の共有を制限する](./microsoft-365-limit-sharing.md)|
 |ユーザーの管理|||
-||チームとグループのメンバーシップを定期的に確認します。|[Azure ADレビューとは?](/azure/active-directory/governance/access-reviews-overview)|
-||グループとチームへのアクセス管理を自動化します。|[Azure のライセンスADとは?](/azure/active-directory/governance/entitlement-management-overview)|
+||チームとグループのメンバーシップを定期的に確認します。|[アクセス レビュー Azure ADは何ですか?](/azure/active-directory/governance/access-reviews-overview)|
+||グループとチームへのアクセス管理を自動化します。|[エンタイトルメントAzure ADとは?](/azure/active-directory/governance/entitlement-management-overview)|
 ||ユーザーによるプライベート チャネルの作成を許可またはブロックTeams。|[プライベート チャネルのライフ サイクルを管理Microsoft Teams](/MicrosoftTeams/private-channels-life-cycle-management)|
 
 ## <a name="membership"></a>メンバーシップ
@@ -72,9 +72,9 @@ SharePointサイトでは、グループまたはチームのメンバーシッ�
 
 ## <a name="conditional-access"></a>条件付きアクセス
 
-このMicrosoft 365、組織内外の両方のユーザーに多要素認証を要求できます。 ユーザーに認証の第 2 の要素を求めるメッセージが表示される状況には、多くのオプションがあります。 組織に多要素認証を展開することを強くお勧めします。
+このMicrosoft 365、組織内外の両方のユーザーに対して多要素認証を要求できます。 ユーザーに認証の第 2 の要素を求めるメッセージが表示される状況には、多くのオプションがあります。 組織に多要素認証を展開することを強くお勧めします。
 
-- [Azure AD 多要素認証](/azure/active-directory/authentication/concept-mfa-howitworks)
+- [Azure AD多要素認証](/azure/active-directory/authentication/concept-mfa-howitworks)
 
 一部のグループやチームに機密情報がある場合は、グループまたはチームの機密ラベルに基づいてデバイス管理ポリシーを適用できます。 管理されていないデバイスからのアクセスを完全にブロックするか、制限付き Web アクセスのみを許可できます。
 
@@ -96,7 +96,7 @@ SharePointサイトでは、グループまたはチームのメンバーシッ�
 
 ## <a name="guest-access"></a>ゲスト アクセス
 
-電子メール アドレスのドメインに基づいてゲストを制限できます。 SharePointは、組織全体およびサイト固有のドメイン制限設定を提供します。 グループとグループTeams Azure サーバーでドメイン許可リストと拒否リストを使用AD。 望ましくない共有を避け、一貫性のあるユーザー エクスペリエンスを確保するために、両方の設定を必ず構成してください。
+電子メール アドレスのドメインに基づいてゲストを制限できます。 SharePointは、組織全体およびサイト固有のドメイン制限設定を提供します。 グループとグループTeams、ドメインの許可リストまたはブロックリストを使用Azure AD。 望ましくない共有を避け、一貫性のあるユーザー エクスペリエンスを確保するために、両方の設定を必ず構成してください。
 
 - [ドメイン別の SharePoint および OneDrive コンテンツの共有を制限する](/sharepoint/restricted-domains-sharing)
 
@@ -146,11 +146,11 @@ Microsoft 365は、情報を共有するさまざまな方法を提供します�
 
 グループとチームが組織内で進化するにつれて、チームとグループのメンバーシップを定期的に確認する方法をお試しください。 これは、メンバーシップが変更されたチームやグループ、機密情報を含むチーム、またはゲストを含むグループに特に役立ちます。 これらのチームとグループのアクセス レビューを設定する方法を検討してください。
 
-- [Azure ADレビューとは?](/azure/active-directory/governance/access-reviews-overview)
+- [アクセス レビュー Azure ADは何ですか?](/azure/active-directory/governance/access-reviews-overview)
 
 多くの組織は、他の組織や主要ベンダーとビジネス パートナーシップを結び、詳細に共同作業を行っています。 これらのシナリオでは、ユーザー管理とリソースへのアクセスを管理するには困難な場合があります。 ユーザー管理タスクの一部を自動化し、一部をパートナー組織に移行する場合も検討してください。
 
-- [Azure のライセンスADとは?](/azure/active-directory/governance/entitlement-management-overview)
+- [エンタイトルメントAzure ADとは?](/azure/active-directory/governance/entitlement-management-overview)
 
 プライベート チャネルは、Teamsメンバーのサブセット間のスコープ付き会話とファイル共有を可能にします。 特定のビジネス ニーズに応じて、この機能を許可またはブロックできます。
 
@@ -160,11 +160,11 @@ Microsoft 365は、情報を共有するさまざまな方法を提供します�
 
 追加情報:
 
-- [Azure Active DirectoryID ガバナンス](/azure/active-directory/governance)
+- [Azure Active Directory ID ガバナンス](/azure/active-directory/governance)
 
 ## <a name="related-topics"></a>関連トピック
 
-[コラボレーション ガバナンス計画のステップ バイ ステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[コラボレーション ガバナンス計画の推奨事項](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
 [コラボレーション ガバナンス 計画の作成](collaboration-governance-first.md)
 

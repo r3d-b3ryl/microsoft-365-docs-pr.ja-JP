@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9245062a0906186ce779383725cecc8209655c6f
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 144cc0159fbd717015a16251f21ac32d0601fcf4
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882755"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064126"
 ---
 # <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>iOS 上の Microsoft Defender for Endpoint で問題のトラブルシューティングを行い、FAQ に対する回答を見つける
 
@@ -99,6 +99,12 @@ Microsoft Defender for Endpoint は、フィッシングなどの Web ベース�
 ## <a name="data-and-privacy"></a>データとプライバシー
 
 収集されたデータとプライバシーの詳細については、「プライバシー情報 [- Microsoft Defender for Endpoint on iOS」を参照してください](ios-privacy.md)。
+
+## <a name="connectivity-issue-on-cellular-network"></a>携帯電話ネットワークでの接続の問題
+
+携帯電話ネットワークでインターネット接続の問題に直面している場合は、Microsoft Defender for Endpoint でセルラー データが有効になっているか確認します。open 設定 app > MS Defender > で MS Defender に対して "Cellular data" が有効になっているか確認してください。
+
+機内モードのオン/オフが問題の解決に役立つか確認します。 それでも問題が解決しない場合は、 [ログを送信してください](ios-troubleshoot.md#send-in-app-feedback)。
 
 ## <a name="issues-on-supervised-devices-with-content-filter-profile-installed"></a>コンテンツ フィルター プロファイルがインストールされている監視対象デバイスの問題
 

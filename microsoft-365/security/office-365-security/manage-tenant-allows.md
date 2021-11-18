@@ -16,12 +16,12 @@ ms.collection:
 description: 管理者は、セキュリティ ポータルのテナント許可/ブロック一覧で許可を構成する方法について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 98ae7b53ce793809ae93cf32d574d979e5b7c6e5
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: c8bf6f37d837d46bfdcca98296c8ca09747276cc
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335564"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064213"
 ---
 # <a name="add-allows-in-the-tenant-allowblock-list"></a>テナントの許可/禁止リストの許可リストを追加する
 
@@ -32,10 +32,9 @@ ms.locfileid: "60335564"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-管理者は、テナント許可/ブロック一覧に直接許可を追加できません。 代わりに、管理者申請プロセスを使用して、対応する URL、ファイル、送信者がテナント許可/ブロック一覧に追加されるので、ブロックされたメッセージを送信します。 メッセージが誤ってブロックされた誤検知と判断されたほとんどの場合、許可は、システムに自然に許可する時間を与えるために必要な限り保持されます。
+管理者は、テナント許可/ブロック一覧に直接許可を追加できません。 代わりに、管理者申請プロセスを使用して、対応する URL、ファイル、送信者がテナント許可/ブロック一覧に追加されるので、ブロックされたメッセージを送信します。 ファイル、URL、または送信者のブロックが発生していない場合、許可は作成されません。 メッセージが誤ってブロックされた誤検知と判断されたほとんどの場合、許可は、システムに自然に許可する時間を与えるために必要な限り保持されます。
 
 > [!IMPORTANT]
->
 > Microsoft は許可を管理しますので、送信者、URL、またはファイルを使用すると、不要または悪いと見なされる許可は削除されます。 これは、環境を保護し、許可の構成ミスを防ぐためです。 同意が得ない場合は、メッセージが引き続き不良と見なされる理由を判断するためにサポート ケースが必要になる場合があります。
 
 ## <a name="add-allows-using-the-submissions-portal"></a>申請ポータルを使用して許可する追加 

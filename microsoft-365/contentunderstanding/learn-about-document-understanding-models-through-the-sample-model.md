@@ -1,5 +1,5 @@
 ---
-title: サンプル モデルを使用したドキュメント理解モデルについての詳細情報
+title: Microsoft SharePoint Syntex のサンプル モデルを通じてドキュメント理解モデルについてSharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,16 +13,16 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: サンプル モデルを使用したドキュメント理解モデルについて説明します。
-ms.openlocfilehash: f17f768d5c56b036662ea717f394129c28935bcb
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 51eb92a2b6a511dd5b1340c9c435f63dd56299e5
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60172109"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064429"
 ---
-# <a name="learn-about-document-understanding-models-through-a-sample-model"></a>サンプル モデルを通じてドキュメント理解モデルについて学ぶ
+# <a name="learn-about-document-understanding-models-through-the-sample-model-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex のサンプル モデルを通じてドキュメント理解モデルについてSharePoint Syntex
 
-Microsoft SharePoint Syntex は、調査に使用できるサンプル モデルを提供し、独自のモデルを作成する方法をよりよく理解できるようにします。 サンプルモデルでは、分類子、抽出子、説明などのモデル コンポーネントを調べることもできます。 サンプル ファイルを使用して、モデルをトレーニングすることもできます。
+SharePoint Syntexを確認するために使用できるサンプル モデルを提供し、独自のモデルを作成する方法をよりよく理解できます。 サンプルモデルでは、分類子、抽出子、説明などのモデル コンポーネントを調べることもできます。 サンプル ファイルを使用して、モデルをトレーニングすることもできます。
 
 ## <a name="import-the-sample-model"></a>サンプルモ デルをインポートする
 
@@ -42,6 +42,9 @@ Microsoft SharePoint Syntex は、調査に使用できるサンプル モデル
 - 別の抽出子を追加します。 たとえば、*割引料金* を抽出するものを追加します。
 - モデルをドキュメント ライブラリに適用し、トレーニング ファイルの一部をアップロードして、モデルがファイルを分類し、ファイルからデータを抽出する方法を確認します。
 
+## <a name="get-sample-models"></a>サンプル モデルの取得
+
+ドキュメント理解モデルの[異SharePoint Syntex](https://github.com/pnp/syntex-samples)使用パターンを示すコミュニティ サンプルを含むサンプル リポジトリにアクセスできます。 このリポジトリのサンプルには、ドキュメント理解モデル ファイルと、モデルのトレーニングに使用されるファイルの両方が含まれています。 インポートしたら、これらのモデルを使用してファイルを処理し、分類子と抽出器を表示および編集できます。
 
 ## <a name="see-also"></a>関連項目
 [分類子を作成する](create-a-classifier.md)

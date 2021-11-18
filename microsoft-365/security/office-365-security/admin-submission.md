@@ -15,15 +15,16 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkDEFENDER
 description: 管理者は、Microsoft 365 Defender ポータルの Submits ポータルを使用して、不審なメール、フィッシングメール、スパム、その他有害な可能性のあるメッセージ、URL、および電子メールの添付ファイルを Microsoft に提出して再スキャンする方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 76eb0f56ca5cc5f4554a03fa3e11bbc6f9f684e0
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 42cac5be8879b7db49175800b9c2b297bc91c569
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60705059"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064417"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>申請ポータルを使用して、疑わしいスパム、フィッシング、URL、ファイルを Microsoft に提出する
 
@@ -68,7 +69,7 @@ Exchange Online メールボックスを持つ組織では、管理者は Micros
 
 ## <a name="report-suspicious-content-to-microsoft"></a>疑わしいコンテンツを Microsoft に報告する
 
-1. [ポータル] Microsoft 365 Defender[メール]**に移動し、[&]** \> **に移動します**。
+1. [ポータル] <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender、[</a>メールの送信] **&に** \> **移動します**。
 
 2. [申請 **] ページで** 、[分析用に **送信済み** ] タブが選択されているのを確認し、[広告] アイコン ![ をクリックします。](../../media/m365-cc-sc-create-icon.png) **分析のために Microsoft に送信します**。
 
@@ -76,6 +77,19 @@ Exchange Online メールボックスを持つ組織では、管理者は Micros
 
    > [!NOTE]
    > ファイルと URL の申請は、データが環境から離れるのを許可しないクラウドでは使用できません。 [ファイル] または [URL] を選択する機能は灰色で表示されます。
+
+### <a name="notify-users-from-within-the-portal"></a>ポータル内からユーザーに通知する
+
+1. [ポータル] Microsoft 365 Defenderで、[申請] ページ **に移動** します <https://security.microsoft.com/reportsubmission> 。
+
+2. [ **ユーザーが報告したメッセージ**] を選択し、マークして通知するメッセージを選択します。
+
+3. [マークを **付け、通知** する] ドロップダウンを選択し、[フィッシングまたは迷惑メールが検出された脅威なし \> **] を****選択します**。
+
+   > [!div class="mx-imgBorder"]
+   > ![ポータルからメッセージを送信します。](../../media/admin-review-send-message-from-portal.png)
+
+報告されたメッセージは、誤検知または偽陰性としてマークされます。 メール通知は、ポータル内からメッセージを報告したユーザーに自動的に送信されます。
 
 ### <a name="submit-a-questionable-email-to-microsoft"></a>疑いがある電子メールを Microsoft に送信する
 
@@ -134,7 +148,7 @@ Exchange Online メールボックスを持つ組織では、管理者は Micros
 
 ## <a name="view-admin-submissions-to-microsoft"></a>Microsoft への管理者申請の表示
 
-1. [ポータル] Microsoft 365 Defender[メール]**に移動し、[&]** \> **に移動します**。
+1. [ポータル] <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender、[</a>メールの送信] **&に** \> **移動します**。
 
 2. [申請 **] ページで** 、[分析用に送信 **済み] タブ** が選択されているのを確認します。
 
@@ -151,7 +165,7 @@ Exchange Online メールボックスを持つ組織では、管理者は Micros
      - **配信/ブロックの理由**
      - **申請 ID**
      - **ネットワーク メッセージ ID/オブジェクト ID**
-     - **Direction**
+     - **方向**
      - [**Sender IP (送信者の IP)**]
      - **バルク準拠レベル (BCL)**
      - **宛先**
@@ -175,7 +189,7 @@ Exchange Online メールボックスを持つ組織では、管理者は Micros
 
    - エントリをグループ化するには、[グループ] を **クリック** し、ドロップダウン リストから次のいずれかの値を選択します。
      - **なし**
-     - **種類**
+     - **Type**
      - **理由**
      - **状態**
      - **再スキャンの結果**
@@ -197,7 +211,7 @@ Exchange Online メールボックスを持つ組織では、管理者は Micros
 
 レポート メッセージ アドイン、レポート [](enable-the-report-message-add-in.md)フィッシング アドイン、またはユーザー [](enable-the-report-phish-add-in.md)が [Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)の組み込みレポートを使用している場合は、[ユーザーが報告したメッセージ] タブでユーザーが報告している情報を **確認** できます。
 
-1. [ポータル] Microsoft 365 Defender[メール]**に移動し、[&]** \> **に移動します**。
+1. [ポータル] <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender、[</a>メールの送信] **&に** \> **移動します**。
 
 2. [申請 **] ページで** 、[ユーザーが報告した **メッセージ] タブを選択** します。
 

@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: この記事では、ポータル起動スケジューラを使用してポータルを起動する方法について説明します。
-ms.openlocfilehash: 035ed3401323ae1221c7e7afd6f6c7d34b78aea4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 99462adb9deb19ec54d9679451877b5398c9c820
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60172097"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064237"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>ポータル起動スケジューラを使用してSharePointを起動する
 
@@ -40,9 +40,8 @@ ms.locfileid: "60172097"
 
 > [!NOTE]
 >
-> - この機能は、2021 年 5 月からターゲット リリースのお客様向け SharePoint コミュニケーション サイトのホーム ページにある **設定** パネルからアクセス可能になり、2021 年 7 月までにはすべてのお客様が利用できます。
-> - このツールの PowerShell バージョンは現在利用できます。
-> - この機能は、最新の通信サイトでのみSharePoint使用できます。
+> - この機能は、通信サイト **設定ホーム** ページの [SharePoint] パネルからアクセスできます。
+> - この機能は、ポータルに使用する既定SharePoint推奨される種類であり、サイト ページを使用して最新の通信サイトでのみ使用できます。
 > - ポータルの起動をカスタマイズおよびスケジュールするには、サイトのサイト所有者のアクセス許可が必要です。
 > - 起動は少なくとも 7 日前にスケジュールする必要があります。各ウェーブは 1 日から 7 日間続く場合があります。
 > - 必要なウェーブの数は、予想されるユーザー数によって自動的に決定されます。
@@ -55,7 +54,7 @@ ms.locfileid: "60172097"
 
 以前は、ポータルの起動は PowerShell 経由でのみSharePointでした。 これで、ポータルの起動のスケジュールと管理に役立つ 2 つのオプションがあります。 両方のツールの主な違いについて説明します。
 
-**SharePointPowerShell のバージョン:**
+**SharePoint PowerShell のバージョン:**
 
 - PowerShell で管理者資格情報を使用[するにはSharePoint必要](/powershell/sharepoint/sharepoint-online/introduction-sharepoint-online-management-shell)
 - 1 つのウェーブの最小要件
@@ -93,7 +92,7 @@ ms.locfileid: "60172097"
    - 10k 未満のユーザー: 2 つのウェーブ
    - 10k ~ 30k のユーザー: 3 つの波
    - 30k 以上から 100k のユーザー: 5 つのウェーブ
-   - 100,000 人を超えるユーザー: 5 つのウェーブと、100k を超えるユーザーを含むポータルの起動に記載されている手順に従って Microsoft に連絡します。
+   - 100,000 人を超えるユーザー: 5 つのウェーブと、100k を超えるユーザーを含むポータルの起動セクションに記載されている手順に従って Microsoft サポートに問い合わせ。
 
 5. 次に、必要な **リダイレクトの種類を** 決定します。
 
@@ -128,7 +127,7 @@ ms.locfileid: "60172097"
 
 > [!NOTE]
 >
-> - このプロセスは、次の要件を満たしている場合にのみ実行する必要があります。
+> - このプロセスは、次の要件を満たしている場合にのみ従う必要があります:
 > - 起動ページが完成しました。
 > - [ポータルの正常性ガイダンス](https://aka.ms/portalhealth) に従っています。
 > - 起動日は 14 日以内です。
@@ -146,9 +145,10 @@ ms.locfileid: "60172097"
 4. 残りの情報を入力して、[**連絡してください**] を選択します。
 
 5. チケットを作成したら、次の情報をサポート エージェントに提供してください。
-   - ポータル URL の
+   - ポータル URL
    - 予想されるユーザー数
-   - 推定起動スケジュール
+   - 推定起動スケジュール (ウェーブ サイズの詳細)
+   - ページ診断ツールを使用して起動ページの "HAR ファイルをエクスポート" し、ファイルをサポートと共有する
 
 ## <a name="make-changes-to-a-scheduled-portal-launch"></a>スケジュールされたポータルの起動に変更を加える
 
@@ -185,7 +185,7 @@ ms.locfileid: "60172097"
     > 
     > ダウンロード センター ページで言語を選択して、[ダウンロード] ボタンをクリックします。 x64 .msi ファイルまたは x86 .msi ファイルのどちらをダウンロードするかを選択するよう求められます。 Windows の 64 ビット版を実行している場合は x64 ファイルを、32 ビット版を実行している場合は x86 ファイルをそれぞれダウンロードします。 不明な場合には、「[実行している Windows オペレーティング システムの確認方法](https://support.microsoft.com/help/13443/windows-which-operating-system)」を参照してください。 ファイルをダウンロードしたら、それを実行して、セットアップ ウィザードの手順に従います。
 
-2. Microsoft 365 の[グローバル管理者または SharePoint 管理者](/sharepoint/sharepoint-admin-role)として SharePoint Online に接続します。 方法の詳細については、「[SharePoint Online 管理シェルの使用を開始する](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)」を参照してください。
+2. Microsoft 365 の[全体管理者または SharePoint 管理者](/sharepoint/sharepoint-admin-role)として SharePoint に接続します。方法の詳細については、「[SharePoint Online 管理シェルの概要](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)」を参照してください。
 
 ### <a name="view-any-existing-portal-launch-setups"></a>既存のポータル起動セットアップを表示する
 

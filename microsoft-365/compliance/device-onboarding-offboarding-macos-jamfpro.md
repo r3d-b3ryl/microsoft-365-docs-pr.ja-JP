@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: JAMF ソリューション (プレビュー) を使用して、macOS デバイスをオンボードおよびオフボードMicrosoft 365コンプライアンス ソリューションにProする方法について学習します。
-ms.openlocfilehash: 705882af6ebbc7309fb704e215443f807533c6f1
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 94200142a05eeed9e27f53c571afb5ba68d30c82
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962665"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064090"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-jamf-pro-preview"></a>JAMF Pro を使用した Microsoft 365 コンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)
 
@@ -27,6 +27,10 @@ JAMF デバイスを使用Pro、エンドポイント データ損失防止Micro
 
 > [!IMPORTANT]
 > MacOS デバイスにMicrosoft Defender for Endpoint (MDE) が展開されていない場合は、次の手順を実行します。
+
+## <a name="get-registered"></a>登録する
+
+この機能にアクセスするには、テナントを Microsoft に登録する必要があります。 macOS[のサポートに登録Microsoft 365を参照してください](https://aka.ms/EndpointDLPIgnite21-Previews)。
 
 **適用対象:**
 

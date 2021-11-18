@@ -1,5 +1,5 @@
 ---
-title: 共同作業のガバナンスとは?
+title: グループのコラボレーション ガバナンス フレームワークMicrosoft 365
 ms.reviewer: mmclean
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -16,13 +16,13 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 recommendations: false
-description: 関連する機能を管理する方法については、Microsoft 365、Teams、SharePoint、およびYammer。
-ms.openlocfilehash: 31b97403b955cb92a7e4cf4b79bb2cd31927b73b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: グループ、グループ、Microsoft 365、Microsoft 365、およびグループを含むTeamsのSharePointベスト プラクティスYammer。
+ms.openlocfilehash: 62030dcb9b89105f87a0cf50f1b950b816727015
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190235"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064381"
 ---
 # <a name="what-is-collaboration-governance"></a>共同作業のガバナンスとは?
 
@@ -36,17 +36,17 @@ ms.locfileid: "60190235"
 
 ![グループ内のコラボレーション ガバナンス オプションを示Microsoft 365。](../media/collaboration-governance-overview.png)
 
-この一連の記事は、グループ、チーム、および SharePoint 設定の相互作用、使用可能なガバナンス機能、および Microsoft 365 でのコラボレーション機能のガバナンス 計画を作成および実装する方法を理解するのに役立ちます。
+この一連の記事は、グループ、チーム、および SharePoint 設定がどのように相互作用し、どのガバナンス機能を利用できるのか、Microsoft 365 のコラボレーション機能のガバナンス フレームワークを作成および実装する方法を理解するのに役立ちます。
 
 ### <a name="setting-up-secure-collaboration-with-microsoft-365"></a>ユーザーとの安全なコラボレーションのMicrosoft 365
 
-組織で安全なコラボレーションを行うMicrosoft 365グループとTeamsを展開するための多くのオプションがあります。 組織に最適なコラボレーション ソリューションを作成するには、Microsoft 365 および関連記事とのセキュリティで保護されたコラボレーションをセットアップするとともに、[この](setup-secure-collaboration-with-teams.md)ガバナンス コンテンツを使用することをお勧めします。
+組織で安全なコラボレーションを行うMicrosoft 365グループとTeamsを展開するための多くのオプションがあります。 組織に最適なコラボレーション ソリューションを作成するには、Microsoft Teams とその関連記事とのセキュリティで保護されたファイル共有と共同作業をセットアップするとともに[、この](setup-secure-collaboration-with-teams.md)ガバナンス コンテンツを使用することをお勧めします。
 
-### <a name="data-residency"></a>データ所在地
+### <a name="data-residency-governance"></a>データ常駐ガバナンス
 
 組織が複数国間で、さまざまな地域のデータ常駐要件がある場合は、Microsoft 365[複数](/microsoft-365/enterprise/microsoft-365-multi-geo)地域をコラボレーション ガバナンス 計画の一部として含める必要があります。
 
-## <a name="why-microsoft-365-groups-are-important"></a>グループMicrosoft 365重要な理由
+## <a name="why-microsoft-365-groups-are-important-in-collaboration-governance"></a>グループMicrosoft 365ガバナンスで重要な理由
 
 Microsoft 365グループを使用すると、共同作業を行うユーザーのセットを選択し、それらのユーザーが共有するリソースのコレクションを簡単に設定できます。 グループにメンバーを追加すると、グループによって提供されるすべてのアセットに必要なアクセス許可が自動的に付与されます。 ユーザー TeamsとYammer、Microsoft 365グループを使用してメンバーシップを管理します。
 
@@ -60,16 +60,16 @@ Microsoft 365グループには、ユーザーが通信と共同作業に使用�
 |[[Inbox (受信トレイ)](https://support.office.com/article/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22)]|グループ メンバー間の電子メールの会話の場合。 この受信トレイには電子メール アドレスが含まれるので、従来の配布リストと同様に、グループ外のユーザーや組織外のユーザーからのメッセージを受け入れる設定が可能です。|
 |[OneNote ノートブック](https://support.office.com/article/get-started-with-onenote-e768fafa-8f9b-4eac-8600-65aa10b2fe97)|アイデア、研究、情報を収集する|
 |[Planner](https://support.office.com/article/microsoft-planner-help-4a9a13c6-3adf-4a60-a6fc-15c0b15e16fc)|グループ メンバー間でプロジェクト タスクを割り当て、管理する場合|
-|[Power BIワークスペース](/power-bi/collaborate-share/service-new-workspaces)|ダッシュボードとレポートを使用したデータコラボレーションスペース|
+|[Power BI ワークスペース](/power-bi/collaborate-share/service-new-workspaces)|ダッシュボードとレポートを使用したデータコラボレーションスペース|
 |[Projectロードマップ](https://support.microsoft.com/project)|Web ベースのプロジェクト管理ツール|
 |[SharePoint チーム サイト](https://support.office.com/article/what-is-a-sharepoint-team-site-75545757-36c3-46a7-beed-0aaa74f0401e)|グループに関連する情報、リンク、およびコンテンツの中央リポジトリ|
 |[Stream](https://support.microsoft.com/microsoft-stream)|ビデオ ストリーミング サービス|
 |[Teams](https://support.microsoft.com/teams)|チャット ベースのワークスペース (Microsoft 365|
 |[Yammerグループ](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)|会話を行い、情報を共有する一般的な場所|
 
-Microsoft 365グループには、組織内のグループの管理に役立つ、有効期限ポリシー、名前付け規則、ブロックされた単語ポリシーなど、さまざまなガバナンス制御が含まれます。 グループは、このリソース スイートへのメンバーシップとアクセスを制御しますので、グループの管理は、グループの管理の重要な部分Microsoft 365。
+Microsoft 365グループには、組織内のグループを管理するのに役立つ、有効期限ポリシー、名前付け規則、ブロックされた単語ポリシーなど、さまざまなガバナンス制御が含まれています。 グループは、このリソース スイートへのメンバーシップとアクセスを制御しますので、グループの管理は、グループの管理の重要な部分Microsoft 365。
 
-## <a name="define-a-collaboration-strategy-for-your-organization"></a>組織のコラボレーション戦略を定義する
+## <a name="define-collaboration-governance-best-practices-for-your-organization"></a>組織のコラボレーション ガバナンスのベスト プラクティスを定義する
 
 複数の場所で共同作業を行い、会話を行Microsoft 365。 ユーザーが会話を開始できる場所を理解すると、コミュニケーションの戦略を定義するのに役立ちます。
 
@@ -100,8 +100,7 @@ Microsoft 365 でコラボレーション機能を使用する方法を決定す
 > [!NOTE]
 > Yammer または Teams によって作成された新しい Office 365 グループは、そのグループのユーザー間の主なコミュニケーションが各自の個別のクライアントで行われるため、Outlook やアドレス帳には表示されません。 Yammerグループは、グループにTeams。
 
-
-## <a name="best-practices"></a>ベスト プラクティス
+## <a name="collaboration-governance-best-practices-checklist"></a>コラボレーション ガバナンスのベスト プラクティス のチェックリスト
 
 ガバナンス計画プロセスを開始する場合は、以下のベスト プラクティスに注意してください。
 
@@ -138,7 +137,7 @@ Microsoft 365 でコラボレーション機能を使用する方法を決定す
 
 これにより、ユーザーがグループと関連するサービスとの関係に慣れていない場合に混乱を避けるのに役立ちます。 グループについてユーザーと話す方法の詳細については、「グループをユーザーにMicrosoft 365[する」を参照してください](../admin/create-groups/explain-groups-knowledge-worker.md)。
 
-## <a name="key-governance-capabilities-and-licensing-requirements"></a>主なガバナンス機能とライセンス要件
+## <a name="key-collaboration-governance-capabilities-and-licensing-requirements"></a>主要なコラボレーション ガバナンス機能とライセンス要件
 
 グループでの共同作業のためのガバナンス機能には、Microsoft 365、Microsoft 365、Teams、SharePoint、およびAzure Active Directory。
 
@@ -148,12 +147,12 @@ Microsoft 365 でコラボレーション機能を使用する方法を決定す
 |ドメインの許可/ブロック|組織外のユーザーとの共有を、特定のドメインのユーザーに制限します。|Microsoft 365 E5または E3|
 |セルフサービス サイト作成|ユーザーが自分のサイトを作成SharePointします。|Microsoft 365 E5または E3|
 |制限付きサイトとファイル共有|サイト、ファイル、およびフォルダー共有を特定のセキュリティ グループのメンバーに制限します。|Microsoft 365 E5または E3|
-|制限付きグループの作成|チームとグループの作成を特定のセキュリティ グループのメンバーに制限します。|Microsoft 365 E5 EDU ライセンスAzure AD Premium Azure ライセンスAD E3|
-|グループの名前付けポリシー|グループ名とチーム名にプレフィックスまたはサフィックスを適用します。|Microsoft 365 E5 EDU ライセンスAzure AD Premium Azure ライセンスAD E3|
+|制限付きグループの作成|チームとグループの作成を特定のセキュリティ グループのメンバーに制限します。|Microsoft 365 E5 EDU ライセンスをAzure AD PremiumまたはAzure AD E3|
+|グループの名前付けポリシー|グループ名とチーム名にプレフィックスまたはサフィックスを適用します。|Microsoft 365 E5 EDU ライセンスをAzure AD PremiumまたはAzure AD E3|
 |グループの有効期限ポリシー|非アクティブなグループとチームの有効期限を設定し、指定した期間が経過すると削除されます。|Microsoft 365 E5ライセンスを持つ e3 Azure AD Premiumまたは E3|
 |グループごとのゲスト アクセス|グループ単位で組織外のユーザーとのチームとグループの共有を許可または防止します。|Microsoft 365 E5または E3|
 
-## <a name="collaboration-governance-planning-step-by-step"></a>コラボレーション ガバナンス計画のステップ バイ ステップ
+## <a name="collaboration-governance-planning-recommendations"></a>コラボレーション ガバナンス計画の推奨事項
 
 ガバナンス 計画を作成するには、次の基本的な手順に従います。
 
@@ -204,14 +203,14 @@ Microsoft Learn のトレーニング モジュールを使用すると、Micros
 ### <a name="groups-in-microsoft-365-for-it-architects"></a>IT アーキテクト向け Microsoft 365 のグループ
 IT アーキテクトが Microsoft 365 のグループについて知っておくべきこと
 
-|**アイテム**|**説明**|
+|**アイテム**|**Description**|
 |:-----|:-----|
 |[![グループインフォグラフィックのサム イメージ。](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> 更新日: 2019 年 6 月|これらの図は、さまざまな種類のグループがどのように作成および管理されているか、そしていくつかのガバナンスの推奨事項を詳述しています。|
 
 ### <a name="microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects"></a>IT アーキテクト向け Microsoft 365 の Microsoft Teams と関連生産性サービス
 Microsoft Teamsをリードする Microsoft 365 での生産性サービスの論理的なアーキテクチャ。
 
-|**アイテム**|**説明**|
+|**アイテム**|**Description**|
 |:-----|:-----|
 |[![論理アーキテクチャポスター Teams親指画像。](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>更新日: 2019 年 4 月   |マイクロソフトは、連携してデータ ガバナンス、セキュリティ、およびコンプライアンス機能を備えたコラボレーション エクスペリエンスを提供する、一連の生産性サービスを提供しています。 <br/> <br/>この一連の図は、Microsoft Teams をはじめとする、エンタープライ ズアーキテクト向けの生産性サービスの論理アーキテクチャを概説したものです。|
 

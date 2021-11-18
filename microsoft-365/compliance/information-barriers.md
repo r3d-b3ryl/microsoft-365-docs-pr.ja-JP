@@ -16,12 +16,12 @@ ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5baff70cb3318b05092e940e8160029bc2be69af
-ms.sourcegitcommit: 7791c519bd8b68fc23433e13e1ecbdbeaddbebfa
+ms.openlocfilehash: 515983182bb5f44c08e7d8531656a7a4fb49d5c6
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60725613"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064102"
 ---
 # <a name="learn-about-information-barriers-in-microsoft-365"></a>情報バリアについて詳しくは、Microsoft 365
 
@@ -51,7 +51,7 @@ Microsoft Teams、SharePointオンライン、およびOneDrive for Businessサ�
 
 ## <a name="what-happens-with-information-barriers"></a>情報バリアで何が起こるか
 
-情報バリア ポリシーが適用されている場合、他の特定のユーザーとファイルを通信したり共有したりしなき人は、それらのユーザーを見つけたり、選択したり、チャットしたり、呼び出したりできない。 情報バリアにより、不正な通信やコラボレーションを防止するチェックが実施されています。 
+情報バリア ポリシーが適用されている場合、他の特定のユーザーとファイルを通信したり共有したりしなき人は、それらのユーザーを見つけたり、選択したり、チャットしたり、呼び出したりできない。 情報バリアにより、不正な通信やコラボレーションを防止するチェックが実施されています。
 
 情報バリアは、Microsoft Teams(チャットとチャネル)、オンライン、SharePointにOneDrive。 Microsoft Teams では、情報バリア ポリシーは、次の種類の無許可の通信を決定し、防止します。
 
@@ -80,13 +80,14 @@ Microsoft Teams、SharePointオンライン、およびOneDrive for Businessサ�
 
 ## <a name="required-licenses-and-permissions"></a>必要なライセンスとアクセス許可
 
-情報バリアは現在展開中で、次のようなサブスクリプションに含まれています。
+インサイダー リスク管理を開始する前に、サブスクリプションMicrosoft 365[アドオン](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)を確認する必要があります。 情報バリアにアクセスして使用するには、組織に次のいずれかのサブスクリプションまたはアドオンが必要です。
 
-- Microsoft 365 E5/A5/A3/A1
-- Office 365 E5/A5/A3/A1
-- Office 365 Advanced Compliance
-- Microsoft 365コンプライアンス E5/A5
-- Microsoft 365 インサイダー リスク管理
+- Microsoft 365 E5/A5 サブスクリプション (有料または試用版)
+- Office 365 Enterprise E5 サブスクリプション (有料または試用版)
+- Office 365 A5 サブスクリプション (有料または試用版)
+- Office 365 Advanced Complianceアドオン (新しいサブスクリプションでは使用できなくなりました)
+- Microsoft 365 E3/A3 サブスクリプション + Microsoft 365 E5/A5 コンプライアンス アドオン
+- Microsoft 365 E3/A3 サブスクリプション + Microsoft 365 E5/A5 Insider リスク管理アドオン
 
 詳細については、「セキュリティとコンプライアンス[Microsoft 365ライセンス ガイダンス」を&してください](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)。
 

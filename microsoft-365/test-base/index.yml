@@ -11,12 +11,12 @@ metadata:
   author: v-zhifufeng
   ms.author: v-zhifufeng
   ms.date: 03/29/2021
-  ms.openlocfilehash: 3833e05eea8f8598d228e261734fedb1b0cf2647
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.openlocfilehash: 372143027462a20cecf4c7edc7e0eee31a480ba0
+  ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59211724"
+  ms.lasthandoff: 11/17/2021
+  ms.locfileid: "61064477"
 landingContent:
 - title: テスト ベースについて
   linkLists:
@@ -32,13 +32,13 @@ landingContent:
     links:
     - text: 追加リソース
       url: faq.md
-- title: 作業の開始
+- title: 開始する
   linkLists:
   - linkListType: quickstart
     links:
     - text: テストベース アカウントの作成
       url: createAccount.md
-    - text: アップロードの設定
+    - text: パッケージをアップロードする
       url: uploadApplication.md
     - text: アップロードバイナリの作成
       url: binaries.md

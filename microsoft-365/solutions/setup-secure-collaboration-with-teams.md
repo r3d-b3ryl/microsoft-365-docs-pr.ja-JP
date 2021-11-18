@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 とセキュリティで保護された共同作業を設定する
+title: セキュリティで保護されたファイルとドキュメントの共有とグループTeamsをMicrosoft 365
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -16,33 +16,33 @@ ms.custom:
 - seo-marvel-jun2020
 f1.keywords: NOCSH
 recommendations: false
-description: セキュリティで保護されたコンテンツ コラボレーションを設定し、Teamsに基づいてデータを保護する方法について学習します。
-ms.openlocfilehash: f8475cd2f832bf2b634a8e60c819927fb8f2769c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: セキュリティで保護されたファイルの共同作業と共有を設定し、Teamsに基づいてデータを保護するためのベスト プラクティスについて説明します。
+ms.openlocfilehash: 4bf18635b0c345e18c1ed5db8c7072ca6225e33c
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60158996"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064285"
 ---
-# <a name="set-up-secure-collaboration-with-microsoft-365-and-microsoft-teams"></a>ユーザーとユーザーとの安全なMicrosoft 365をMicrosoft Teams
+# <a name="set-up-secure-file-sharing-and-collaboration-with-microsoft-teams"></a>セキュリティで保護されたファイル共有とコラボレーションを設定Microsoft Teams
 
-適切なユーザーと簡単に情報を共有できる一方で、過剰共有を防ぐことが、組織の成功の鍵となります。 これには、機密性の高いデータを、アクセス権を持つ必要があるユーザーと安全に共有できる機能が含まれます。 プロジェクトによっては、機密データを組織外のユーザーと共有する場合があります。
+ファイルやドキュメントを適切なユーザーと簡単に共有できる一方で、過剰共有を防ぐことは、組織の成功の鍵となります。 これには、機密情報や他の機密データを、アクセス権を持つ必要があるユーザーと安全に共有できる機能が含まれます。 プロジェクトによっては、機密データを組織外のユーザーと共有する場合があります。
 
 このコラボレーション ソリューション のガイダンスには、次の 2 つのコンポーネントが含まれています。
 
-- プロジェクトMicrosoft Teams適切なレベルの保護を備え、プロジェクトを展開する
+- プロジェクトTeams適切なレベルの保護を備え、プロジェクトを展開する
 - プロジェクトごとに適切なセキュリティ設定を使用して外部共有を構成する
 
 ![適切なTeamsを展開し、適切なセキュリティ設定を使用して外部共有を構成します。](..\media\solutions-architecture-center\secure-collaboration-overview.png)
 
-多目的で使いやすいコンテンツ コラボレーション ツールが利用できない場合、ユーザーはドキュメントに電子メールを送信して共同作業を行う場合が多い。 これは、時間の多いエラーが発生しやすい共同作業方法であり、情報の不適切な共有のリスクを高める可能性があります。 共有情報が難しすぎると、IT によって管理されていないコンシューマー製品の使用に戻る可能性があります。 これにより、さらに大きなリスクが生じ得る可能性があります。
+汎用性が高く使いやすいファイル コラボレーション ツールが利用できない場合、ユーザーはドキュメントに電子メールを送信して共同作業を行う場合が多い。 これは、時間の多いエラーが発生しやすい共同作業方法であり、情報の不適切な共有のリスクを高める可能性があります。 共有ファイルが難しすぎると、IT によって管理されていないコンシューマー製品の使用に戻る可能性があります。 これにより、さらに大きなリスクが生じ得る可能性があります。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxMmL?autoplay=false]
 
 このMicrosoft 365、次に役立つTeams構成を使用して展開できます。
 
 - 知的財産を保護する
-- 簡単なコラボレーションを有効にする
+- ドキュメントや他のファイルとの簡単な共同作業を有効にする
 - ユーザーの満足度を高め、シャドウ IT のリスクを軽減するセキュリティと使いやすさのバランスを取る
 
 ほとんどの組織は、さまざまな情報を持ち、情報が不適切に共有されている場合は、さまざまな程度の感度とさまざまな程度のビジネス上の影響を与えます。 特定の情報の感度に応じて、次の情報との共有を許可できます。
@@ -68,16 +68,16 @@ ms.locfileid: "60158996"
 
 |製品またはコンポーネント|機能|ライセンス|
 |---|---|---|
-|Microsoft Defender for Office 365|セーフSPO、OneDriveおよびTeams。セーフドキュメント。セーフサイトのリンクTeams|Microsoft 365E1、E3、E5|
-|SharePoint|サイトとファイルの共有ポリシー、サイト共有のアクセス許可、リンクの共有、要求へのアクセス、サイトのゲスト共有設定|Microsoft 365E1、E3、E5|
-|Microsoft Teams|ゲスト アクセス、プライベート チーム、プライベート チャネル|Microsoft 365E1、E3、E5|
+|Microsoft Defender for Office 365|セーフ SPO、OneDrive、Teams。セーフドキュメント;セーフ のリンクTeams|Microsoft 365 E1、E3、E5|
+|SharePoint|サイトとファイルの共有ポリシー、サイト共有のアクセス許可、リンクの共有、要求へのアクセス、サイトのゲスト共有設定|Microsoft 365 E1、E3、E5|
+|Microsoft Teams|ゲスト アクセス、プライベート チーム、プライベート チャネル|Microsoft 365 E1、E3、E5|
 |Microsoft 365 コンプライアンス|秘密度ラベル|Microsoft 365 E3、E5|
 
-## <a name="collaboration-governance"></a>共同作業ガバナンス
+## <a name="collaboration-governance-framework-for-teams-and-microsoft-365"></a>グループと組織のコラボレーション ガバナンス TeamsフレームワークMicrosoft 365
 
 Microsoft 365ソリューションを管理するための多くのオプションが提供されています。 この展開コンテンツをコラボレーション ガバナンス コンテンツと[](collaboration-governance-overview.md)共に使用して、組織に最適なコラボレーション ソリューションを作成することをお勧めします。
 
-### <a name="using-teams-for-all-kinds-of-data"></a>すべてのTeamsに対するデータの使用
+### <a name="securing-teams-for-sensitive-and-highly-sensitive-data"></a>機密性の高Teams機密性の高いデータのセキュリティ保護
 
 異なる感度で情報へのアクセスを管理するために、3 つの異なる層の保護を開発[Teams。](configure-teams-three-tiers-protection.md) これらの層は、ニーズやビジネスに合わせてカスタマイズできます。
 
@@ -186,7 +186,7 @@ Microsoft Learn のこれらのトレーニング モジュールを使用する
 
 IT アーキテクトが Microsoft 365 のグループについて知っておくべきこと
 
-|**アイテム**|**説明**|
+|**アイテム**|**Description**|
 |---|---|
 |[![グループインフォグラフィックのサム イメージ。](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \|[Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> 更新日: 2019 年 6 月|これらの図は、さまざまな種類のグループがどのように作成および管理されているか、そしていくつかのガバナンスの推奨事項を詳述しています。|
 
@@ -194,7 +194,7 @@ IT アーキテクトが Microsoft 365 のグループについて知ってお�
 
 Microsoft Teamsをリードする Microsoft 365 での生産性サービスの論理的なアーキテクチャ。
 
-|**アイテム**|**説明**|
+|**アイテム**|**Description**|
 |---|---|
 |[![論理アーキテクチャポスター Teams親指画像。](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \|[Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>更新日: 2019 年 4 月|マイクロソフトは、連携してデータ ガバナンス、セキュリティ、およびコンプライアンス機能を備えたコラボレーション エクスペリエンスを提供する、一連の生産性サービスを提供しています。 <p>この一連の図は、Microsoft Teams をはじめとする、エンタープライ ズアーキテクト向けの生産性サービスの論理アーキテクチャを概説したものです。|
 

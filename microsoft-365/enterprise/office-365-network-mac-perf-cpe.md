@@ -3,7 +3,7 @@ title: Microsoft 365ネットワーク ルーティング
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/10/2021
+ms.date: 11/12/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,19 +14,16 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365ネットワーク ルーティング
-ms.openlocfilehash: 4781acd78e314592ca33cdad77e1f270e86e002c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 84b16d696c5c99a7f917e8d1dacc6f1f27626f37
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199911"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064405"
 ---
-# <a name="microsoft-365-informed-network-routing-preview"></a>Microsoft 365ネットワーク ルーティング (プレビュー)
+# <a name="microsoft-365-informed-network-routing"></a>Microsoft 365ネットワーク ルーティング
 
 情報に基づいたネットワーク ルーティングは、Microsoft サービス エンドポイントへのネットワーク接続を最適化および改善するために、さまざまな Microsoft 365 アプリケーションとサード パーティ製ソフトウェア定義ネットワーク (SD-WAN) ソリューションを統合する機能です。 最適化された SD-WAN 接続により、ユーザー エクスペリエンスとパフォーマンスが向上する可能性があります。
-
->[!IMPORTANT]
->Microsoft 365ネットワーク ルーティングは現在プレビュー状態です。 サポートを受けるガイダンスを含むこのプレビューの詳細については、「Microsoft 365ネットワーク ルーティングパブリック プレビュー」[を参照してください](https://go.microsoft.com/fwlink/?linkid=2151565)。
 
 ## <a name="overview"></a>概要
 
@@ -75,11 +72,11 @@ Microsoft は、さまざまなパートナーと協力して、情報に基づ�
 
 [ネットワーク] [Microsoft 365 管理センター](https://admin.microsoft.com/)左側のナビゲーション ウィンドウ> **[** 正常性とネットワーク接続] を選択します。
 
-管理センターのこのセクションでは、組織の集約されたネットワーク接続の指標と、接続性を向上させる方法に関するガイダンスを提供します。 管理[センターで使用できるこれらの機能の詳細については、「Microsoft 365 管理 センター (プレビュー)](office-365-network-mac-perf-overview.md)のネットワーク接続」を参照してください。
+管理センターのこのセクションでは、組織の集約されたネットワーク接続の指標と、接続性を向上させる方法に関するガイダンスを提供します。 管理[センターで使用できるこれらの機能の詳細については、「Microsoft 365 管理 センター](office-365-network-mac-perf-overview.md)のネットワーク接続」を参照してください。
 
 **SD-WAN 設定 >を選択** して、情報に基づいたネットワーク ルーティング構成ウィンドウを開きます。 [ネットワーク ルーティング] の下に表示 **設定** は、管理センターの一般的なネットワーク接続ガイダンスに適用され、情報に基づいたネットワーク ルーティングを有効にする必要はありません。
 
-構成ウィンドウで **、[SD-WAN ソリューションの追加 (プレビュー) ] を選択します**。
+構成ウィンドウで **、[SD-WAN ソリューションの追加] を選択します**。
 
 ### <a name="step-2-select-your-sd-wan-solution-and-data-storage-location"></a>手順 2: SD-WAN ソリューションとデータストレージの場所を選択する
 
@@ -95,9 +92,9 @@ Microsoft と選択した SD-WAN ソリューション間のデータ共有に�
 
 ### <a name="step-4-grant-permissions-to-the-sd-wan-solution"></a>手順 4: SD-WAN ソリューションにアクセス許可を付与する
 
-この手順では、アクセス許可付与要求を Azure Active Directory (Azure AD) で開始します。 選択した SD-WAN ソリューションに、情報に基づいたネットワーク ルーティング データ ストレージとテナントに関連付けられたサービス正常性情報へのアクセスを許可するテナント レベルのアクセス許可を付与する必要があります。 このアクションには **、Azure AD DC 管理者**、または **グローバル管理者** ロールのアクセス許可が必要です。
+この手順では、アクセス許可の付与要求を (Azure Active Directory) でAzure AD。 選択した SD-WAN ソリューションに、情報に基づいたネットワーク ルーティング データ ストレージとテナントに関連付けられたサービス正常性情報へのアクセスを許可するテナント レベルのアクセス許可を付与する必要があります。 このアクションには、dc **Azure ADまたはグローバル管理者** の **役割** のアクセス許可が必要です。
 
-[この **アプリケーションにアクセス許可を付与する** ] リンクを選択し、Azure の要求にADします。
+[この **アプリケーションにアクセス許可を与える**] リンクを選択し、要求のAzure ADします。
 
 アクセス許可の付与が完了したら、[次へ] を **選択します**。
 
@@ -162,15 +159,12 @@ SD-WAN ソリューション設定をリセットすると、テナント全体�
 
 Microsoft と SD-WAN ソリューション プロバイダー間で交換されるデータは、情報に基づいたネットワーク ルーティングの初期有効化時に選択されたデータ格納場所に格納されます。 データ格納場所オプションは、データが格納されている地域Microsoft Azure地域を含む地理的領域を表します。
 
->[!NOTE]
->プレビュー フェーズでは、使用可能なデータストレージの場所は北米 **のみです**。 情報に基づいたネットワーク ルーティングの一般的な可用性の前に、追加のデータストレージの場所が利用可能になります。
-
 データは、この場所に最大 30 日間保持されます。 無効にすると、残りのすべてのデータは、この 30 日間の保持ウィンドウ内で削除されます。
 
 この場所のデータは、選択した SD-WAN ソリューションと交換され、構成済みの SD-WAN ソリューションの場所が同じ領域内に含めない場合があります。 お客様は、SD-WAN ソリューション プロバイダーと一緒に、実稼働環境の展開前にデータ格納場所の要件を評価する必要があります。
 
 ## <a name="related-topics"></a>関連トピック
 
-[ネットワーク接続 (プレビュー) Microsoft 365 管理センターネットワーク接続](office-365-network-mac-perf-overview.md)
+[ネットワーク接続Microsoft 365 管理センター](office-365-network-mac-perf-overview.md)
 
-[Microsoft 365ネットワーク接続位置情報サービス (プレビュー)](office-365-network-mac-location-services.md)
+[Microsoft 365接続ロケーション サービス](office-365-network-mac-location-services.md)

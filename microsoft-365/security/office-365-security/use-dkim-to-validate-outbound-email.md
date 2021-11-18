@@ -17,15 +17,16 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkDEFENDER
 description: Microsoft 365 で DomainKeys Identified Mail (DKIM) を使用して、カスタム ドメインから送信されたメッセージが送信先のメール システムから信頼されるようにする方法を説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1906d9bbb7e36c95ed74c7eea2b66d3afb70e5a3
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 9e2ae9e71764895cd87deefad1e01aacf965dcf7
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555526"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064525"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>DKIM を使用して、カスタム ドメインから送信される送信電子メールを検証する
 
@@ -235,7 +236,7 @@ DNS に CNAME レコードを発行したら、Microsoft 365 で DKIM 署名を�
 
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルでカスタム ドメインの DKIM 署名を有効にするには
 
-1. Microsoft 365 Defender ポータルを開くには [職場または学校のアカウントを使用します](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。.
+1. 職場または学校のアカウントを使用して、 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a> を開きます。
 
 2. **[ルール]** セクションの **[メールとコラボレーション]** \> **[ポリシーとルール]** \> **[脅威ポリシー]** \> **[DKIM]** に移動します。 または、DKIM ページに直接移動するには、<https://security.microsoft.com/dkimv2>を使用します。
 
@@ -335,7 +336,7 @@ DNS に CNAME レコードを発行したら、Microsoft 365 で DKIM 署名を�
 ## <a name="default-behavior-for-dkim-and-microsoft-365"></a>DKIM と Microsoft 365 の既定の動作
 <a name="DefaultDKIMbehavior"> </a>
 
-DKIM を有効にしない場合、Microsoft 365 は Microsoft Online Email Routing Address (MOERA)/初期ドメインに対して 1024 ビットの DKIM 公開キーと、それに関連する秘密キー (これはデータセンターに内部的に保存されます) を作成します。既定では、Microsoft 365 は、所定のポリシーを持たないドメインに対して既定の署名構成を使用します。これは、ユーザーが DKIM をセットアップしなければ、Microsoft 365 が、その既定のポリシーと、自らが作成するキーを使用して、そのドメインに対して DKIM を有効にすることを意味しています。
+DKIM を有効にしない場合、Microsoft 365は Microsoft Online Email Routing Address (MOERA)/initial ドメイン用の 2048 ビット DKIM 公開キーと、Microsoft がデータセンターに内部的に格納する関連する秘密キーを自動的に作成します。 既定では、Microsoft 365 は、所定のポリシーを持たないドメインに対して既定の署名構成を使用します。 これは、ユーザーが DKIM をセットアップしなければ、Microsoft 365 が、その既定のポリシーと、自らが作成するキーを使用して、そのドメインに対して DKIM を有効にすることを意味しています。
 
 また、カスタム ドメインで DKIM 署名を有効にしてから無効にした場合にも、一定の期間が過ぎると、Microsoft 365 が自動的にカスタム ドメインに対して MOERA/初期ドメイン ポリシーを適用します。
 
@@ -402,11 +403,11 @@ DKIM を設定したら、SPF をまだ設定していない場合は、設定�
 **このテストで検証するのは**、DKIM 署名構成が正しく構成されていること、適切な DNS エントリが公開されていることです。
 
 <div class="nextstepaction">
-<p><a href="https://aka.ms/diagdkim" data-linktype="external">テストを実行する: DKIM</a></p>
+<p><a href="https://admin.microsoft.com/AdminPortal/?searchSolutions=DKIM#/homepage" data-linktype="external">テストを実行する: DKIM</a></p>
 </div>
 
 ## <a name="more-information"></a>詳細情報
 
 PowerShell を介したキー ローテーション: [Rotate-DkimSigningConfig](/powershell/module/exchange/rotate-dkimsigningconfig)
 
-[DMARC を使用してメールを検証する](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-dmarc-to-validate-email?view=o365-worldwide)
+[DMARC を使用してメールを検証する](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email?view=o365-worldwide)

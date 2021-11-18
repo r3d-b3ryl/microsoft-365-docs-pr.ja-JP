@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 recommendations: false
 description: ユーザー グループの名前付けポリシーを作成するMicrosoft 365します。
-ms.openlocfilehash: 9fb75feb255ee6d58313f4cfaf3486c4a8cd63b4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: acc521dd5be1dcf630b4801eeb914c45e765e00f
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213411"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064513"
 ---
 # <a name="microsoft-365-groups-naming-policy"></a>Microsoft 365グループの名前付けポリシー
 
@@ -42,7 +42,7 @@ ms.locfileid: "60213411"
 
 ## <a name="licensing-requirements"></a>ライセンスの要件
 
-Microsoft 365 グループに Azure AD 名前付けポリシーを使用するには、1 つ以上の Microsoft 365 グループのメンバーである一意のユーザー (ゲストを含む) ごとに Azure Active Directory Premium P1 ライセンスまたは Azure AD Basic EDU ライセンスを割り当てる必要がありますが、必ずしも割り当てる必要があります。
+Microsoft 365 グループに Azure AD 名前付けポリシーを使用するには、1 つ以上のメンバーである一意のユーザー (ゲストを含む) ごとに Azure Active Directory Premium P1 ライセンスまたは Azure AD Basic EDU ライセンスを割り当てる必要がありますが、必ずしも割り当てる必要があります。Microsoft 365グループ。
 
 これは、グループの名前付けポリシーを作成する管理者にも必要です。
 
@@ -64,7 +64,7 @@ Microsoft 365 グループに Azure AD 名前付けポリシーを使用する�
 - User's department = Engineering
 - Created group name = "GRP My Group Engineering"
 
-サポートAzure Active Directory (Azure AD) 属性は、[Department]、[Company]、[Office]、[StateOrProvince]、[CountryOrRegion]、および [Title] です。
+サポートAzure Active Directory (Azure AD) 属性は、[部署]、[会社]、[Office]、[StateOrProvince]、[CountryOrRegion]、および [Title] です。
 
 - サポートされていないユーザー属性は、固定文字列 ([postalCode] など) と見なされます。
 
@@ -132,7 +132,7 @@ Microsoft 365 グループに Azure AD 名前付けポリシーを使用する�
 
 ## <a name="related-topics"></a>関連トピック
 
-[コラボレーション ガバナンス計画のステップ バイ ステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[コラボレーション ガバナンス計画の推奨事項](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
 [コラボレーション ガバナンス 計画の作成](collaboration-governance-first.md)
 

@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: グループとグループ間の設定のMicrosoft 365についてSharePoint
-ms.openlocfilehash: 2978e2f0a450c72d7b4abf71edb208a5d9f364c6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 76f3772685dbf67e61d68a47373f514ab2dabfbc
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208891"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064357"
 ---
 # <a name="settings-interactions-between-microsoft-365-groups-and-sharepoint"></a>設定グループとグループ間Microsoft 365の相互作用SharePoint
 
@@ -34,8 +34,8 @@ Microsoft 365グループとSharePointのMicrosoft 365、特に共有とグル�
 |SharePoint設定|説明|グループへのMicrosoft 365影響|推奨事項|
 |:-----------------|:----------|:-----------------------------|:-------------|
 |組織とサイトの外部共有|サイト、ファイル、フォルダーを組織外のユーザーと共有できるかどうかを指定します。|グループSharePoint設定が一致しない場合は、グループ内のゲストがサイトへのアクセスをブロックされる場合や、サイト内で外部アクセスを利用できますが、グループ内でアクセスできない場合があります。|共有設定を変更する場合は、グループ設定とグループSharePointチーム サイトのサイト設定の両方を確認します。<br><br>「サイト [内のゲストと共同作業する」を参照してください](./collaborate-in-site.md)。|
-|ドメインの許可/ブロック|指定したドメインとコンテンツが共有されるのを許可または防止します。|グループはリストを許可SharePointブロックする機能を認識しない。 グループ内で許可SharePointユーザーは、グループSharePointアクセスできます。|Azure のドメイン許可/ブロック リストを管理し、ADをSharePointします。 ドメインを許可およびブロックする組織全体のガバナンス プロセスを作成します。<br><br>「SharePoint[の設定」および](/sharepoint/restricted-domains-sharing)「Azure ドメイン設定[AD」を参照してください。](/azure/active-directory/b2b/allow-deny-list)|
-|特定のセキュリティ グループ内のユーザーにのみ、外部との共有を許可する|サイト、フォルダー、およびファイルを外部で共有できるセキュリティ グループを指定します。|この設定は、グループの所有者がグループを外部で共有する場合には影響を与えかねない。 グループ ゲストは、関連付けられたサイトにSharePointできます。||
+|ドメインの許可/ブロック|指定したドメインとコンテンツが共有されるのを許可または防止します。|グループは、許可リストSharePointブロックリストを認識しない。 グループ内で許可SharePointユーザーは、グループSharePointアクセスできます。|ドメインの許可リストまたはブロックリストを管理し、Azure AD SharePointします。 ドメインを許可およびブロックする組織全体のガバナンス プロセスを作成します。<br><br>「ドメイン[SharePoint設定とドメイン設定](/sharepoint/restricted-domains-sharing)Azure AD[する」を参照してください。](/azure/active-directory/b2b/allow-deny-list)|
+|特定のセキュリティ グループ内のユーザーにのみ、外部との共有を許可します。|サイト、フォルダー、およびファイルを外部で共有できるセキュリティ グループを指定します。|この設定は、グループの所有者がグループを外部で共有する場合には影響を与えかねない。 グループ ゲストは、関連付けられたサイトにSharePointできます。||
 |SharePoint共有設定|グループ メンバーシップの外部でサイトを直接共有できるユーザーを指定します。 これは、グループまたはサイトの所有者によって構成されます。|この設定はグループに直接影響を与えるものではありませんが、ユーザーがサイトに追加され、他のグループ リソースにアクセスできない場合があります。|この設定を使用して、サイトの共有を直接制限し、グループを通じてサイト アクセスを管理する方法を検討してください。|
 |ユーザーがスタート ページからサイトをSharePointし、サイトを作成OneDrive|ユーザーが新しいサイトを作成SharePointします。|この設定をオフにした場合でも、ユーザーはグループを作成することでグループに接続されたチーム サイトを作成できます。||
 
@@ -50,7 +50,7 @@ Microsoft 365グループとSharePointのMicrosoft 365、特に共有とグル�
 
 ## <a name="related-topics"></a>関連トピック
 
-[コラボレーション ガバナンス計画のステップ バイ ステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[コラボレーション ガバナンス計画の推奨事項](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
 [コラボレーション ガバナンス 計画の作成](collaboration-governance-first.md)
 

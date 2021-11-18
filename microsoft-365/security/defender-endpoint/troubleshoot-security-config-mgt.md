@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 817eb57df116de18e8add5d18eac0ea32f08da7f
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 4540336aeea4283f1b5adcab3164e0405ae075c7
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60677096"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064441"
 ---
 # <a name="troubleshoot-onboarding-issues-related-to-security-management-for-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint のセキュリティ管理に関連するオンボーディングの問題のトラブルシューティング 
 
@@ -32,7 +32,7 @@ ms.locfileid: "60677096"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Microsoft Defender for Endpoint のセキュリティ管理は、Microsoft エンドポイント マネージャー (Microsoft Intune または Microsoft Endpoint Configuration Manager) によって管理されていないデバイスが Microsoft Defender のセキュリティ構成を直接受信する機能です。からエンドポイント マネージャー。
+Microsoft Defender for Endpoint のセキュリティ管理は、Microsoft エンドポイント マネージャー (Microsoft Intune または Microsoft Endpoint Configuration Manager) によって管理されていないデバイスが Microsoft Defender のセキュリティ構成を受け取る機能です。から直接エンドポイント マネージャー。
 Microsoft Defender for Endpoint のセキュリティ管理の詳細については、「Manage Microsoft Defender for Endpoint on devices on devices with Microsoft エンドポイント マネージャー」 を[参照してください](/mem/intune/protect/mde-security-integration)。
 
 Microsoft Defender for Endpoint オンボーディング手順のセキュリティ管理については[、「Microsoft Defender for Endpoint Security Configuration Management」を参照してください](security-config-management.md)。
@@ -122,30 +122,25 @@ AAD または MEM でオンボード デバイスを識別できない場合に�
 次の表に、エラーに対処するために何を試す/チェックする方法に関するエラーと指示を示します。 エラーの一覧は完全ではなく、過去に顧客が発生した一般的なエラーまたは一般的なエラーに基づく点に注意してください。 
 
 
-
-| エラー コード  |管理者の操作                                                                                                                                                                                                                                                                                                  |
-|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ``10``          |このエラーは、OS がハイブリッド参加の実行に失敗したと示します。 OS[レベルのハイブリッド参加Azure Active Directoryトラブルシューティング](/azure/active-directory/devices/troubleshoot-hybrid-join-windows-current)のガイドとして、ハイブリッド デバイスに参加しているデバイスのトラブルシューティングを使用します。                                                            |
-| ``13-14``       |Microsoft エンドポイント マネージャー[の](/microsoft-365/security/defender-endpoint/security-config-management#onboard-devices)オンボード Windows デバイスを Microsoft Defender for Endpoint の前提条件を確認して、エンドポイントが完了し、ハイブリッド Azure Active Directory 参加が利用できます。                   |
-| ``15``          |MDE テナントAADテナント ID が、ドメインの SCP エントリのテナント ID と一致する必要があります。                                                                                                                                                                                                                     |
-| ``16``          |ドキュメントを[Azure Active Directoryします](/azure/active-directory/devices/hybrid-azuread-join-manual#configure-a-service-connection-point)。 組織の ID チームと関わり、HAADJ に必要な構成方法を展開します。                                                                     |
-| ``17``          |Active Directory 環境のデバイス登録構成を確認し、DRS または Azure DRS Enterpriseを使用しているかどうかを確認します。                                                                                                                                                                                 |
-| ``18``          |[構成Azure AD Connect確認し、管理用に構成されているデバイスが同期の範囲内にあるか確認します。                                                                                                                                                                                              |
-| ``25``          |ネットワーク トポロジを確認し、ハイブリッド参加要求を完了するためにドメイン コントローラーを使用できます。                                                                                                                                                                                                                       |
-| ``26-32``       |フェデレーション参加を完了するために必要なクレームのドキュメントを確認します。 環境のエンドポイントを手動で検証できます。                                                                                                                                                                                |
-| ``36``          |ネットワーク トポロジを確認し、ハイブリッド参加要求を完了するために LDAP API を使用できます。                                                                                                                                                                                                                                  |
-| ``37``          |ドメインに参加しているコンピューターの場合、コンピューターがコンピューターの同期のスコープ内にあるAzure AD Connect。                                                                                                                                                                                                                    |
-| ``38``          |ワークステーション側の無効な DNS 設定: Active directory では、ドメイン DNS を使用して (ルーターのアドレスではなく) 正しく動作する必要があります。                                                                                                                                                                                |
-| ``40``          |エラーが発生したデバイスでクロックが正しく設定/同期されていることを確認します。                                                                                                                          |
-| ``41``          |このエラーの一貫性を確認するには、再試行してください。 再試行で問題が解決しない場合は、OS レベル[の](/azure/active-directory/devices/troubleshoot-hybrid-join-windows-current)ハイブリッド参加Azure Active Directoryトラブルシューティングのガイドとして、「ハイブリッド デバイスに参加しているデバイスのトラブルシューティング」を使用します。                                                    |
-| ``42``          |このエラーは、OS がハイブリッド参加の実行に失敗したと示します。 OS[レベルのハイブリッド参加Azure Active Directoryトラブルシューティング](/azure/active-directory/devices/troubleshoot-hybrid-join-windows-current)のガイドとして、ハイブリッド デバイスに参加しているデバイスのトラブルシューティングを使用します。                                                            |
+| エラー コード                    | 登録の状態                     | 管理者の操作                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+|-------------------------------|---------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ``5-9``,``11-12``, ``26-33``  |一般的なエラー                          |デバイスが正常に Microsoft Defender for Endpoint にオンボードされました。 ただし、セキュリティ構成管理フローにエラーが発生しました。 これは、デバイスが Microsoft Defender for Endpoint 管理チャネルの前提条件を満 [たしていない可能性があります](security-config-management.md)。 デバイスで [クライアント アナライザー](https://aka.ms/BetaMDEAnalyzer) を実行すると、問題の根本原因を特定できます。 それでも問題が生じなかった場合は、サポートにお問い合わせください。   |
+| ``13-14``,``20``,``24``,``25``|接続の問題                     |デバイスが正常に Microsoft Defender for Endpoint にオンボードされました。 ただし、セキュリティ構成管理フローにエラーが発生し、接続の問題が原因である可能性があります。 ファイアウォールで[Azure Active Directory Microsoft エンドポイント マネージャーエンドポイント](security-config-management.md#connectivity-requirements)が開いているか確認します。                                                                                       |
+| ``10``,``42``                 |一般的なハイブリッド参加の失敗            |デバイスが正常に Microsoft Defender for Endpoint にオンボードされました。 ただし、セキュリティ構成管理フローにエラーが発生し、OS がハイブリッド参加を実行できなかった。 OS[レベルのハイブリッドAzure Active Directory失敗の](/azure/active-directory/devices/troubleshoot-hybrid-join-windows-current)トラブルシューティングには、ハイブリッド デバイスに参加しているデバイスのトラブルシューティングを使用します。                                                                                                                               |
+| ``15``                        |テナントの不一致                        |デバイスが正常に Microsoft Defender for Endpoint にオンボードされました。 ただし、Microsoft Defender for Endpoint テナント ID が Azure Active Directory テナント ID と一致しないので、セキュリティ構成管理フローにエラーが発生しました。Defender for Endpoint テナントの Azure Active Directory テナント ID がドメインの SCP エントリのテナント ID と一致する必要があります。詳細については、「Microsoft Defender for Endpoint のセキュリティ管理に関連するオンボードの問題[のトラブルシューティング」を参照してください](troubleshoot-security-config-mgt.md)。|
+| ``16``,``17``                 |ハイブリッド エラー - サービス接続ポイント|デバイスが正常に Microsoft Defender for Endpoint にオンボードされました。 ただし、サービス接続ポイント (SCP) レコードが正しく構成されていないので、デバイスをデバイスに参加Azure AD。 これは、SCP が DRS に参加するように構成Enterpriseがあります。 ベスト プラクティスに従って SCP レコードAAD SCP が構成されていることを確認します。 詳細については、「サービス接続ポイント [の構成」を参照してください](/azure/active-directory/devices/hybrid-azuread-join-manual#configure-a-service-connection-point)。                                                      |
+| ``18``                        |証明書エラー                      |デバイスが正常に Microsoft Defender for Endpoint にオンボードされました。 ただし、デバイス証明書エラーが原因でセキュリティ構成管理フローにエラーが発生しました。 デバイス証明書は、別のテナントに属します。 信頼できる証明書プロファイルを作成するときにベスト プラクティスが実行 [されるのを確認します](/mem/intune/protect/certificates-trusted-root#create-trusted-certificate-profiles)。                                                                                                    |
+| ``36``                        |LDAP API エラー                         |デバイスが正常に Microsoft Defender for Endpoint にオンボードされました。 ただし、セキュリティ構成管理フローにエラーが発生しました。 ネットワーク トポロジを確認し、ハイブリッド参加要求を完了するために LDAP API が使用できる必要があります。     |
+| ``37``                        |オンプレミス同期の問題                  |デバイスが正常に Microsoft Defender for Endpoint にオンボードされました。 ただし、セキュリティ構成管理フローにエラーが発生しました。 後でもう一度お試しください。 それでも問題が解決しない場合は、「オブジェクト同期と同期[のトラブルシューティング」をAzure AD Connectしてください](/azure/active-directory/hybrid/tshoot-connect-objectsync)。|
+| ``38``,``41``                 |DNS エラー                              |デバイスが正常に Microsoft Defender for Endpoint にオンボードされました。 ただし、DNS エラーが原因でセキュリティ構成管理フローにエラーが発生しました。 デバイスのインターネット接続や DNS 設定を確認します。 無効な DNS 設定がワークステーション側にある可能性があります。 Active directory では、ドメイン DNS を使用して正しく動作する必要があります (ルーターのアドレスではありません)。 詳細については、「Security Management for Microsoft Defender for Endpoint」に関連するオンボードの問題 [のトラブルシューティングを参照してください](troubleshoot-security-config-mgt.md)。             |
+| ``40``                        |クロック同期の問題                       |デバイスが正常に Microsoft Defender for Endpoint にオンボードされました。 ただし、セキュリティ構成管理フローにエラーが発生しました。 クロックが正しく設定され、エラーが発生したデバイスで同期されていることを確認します。    |
 
 
 ## <a name="azure-active-directory-runtime-troubleshooting"></a>Azure Active Directoryランタイムのトラブルシューティング 
 
 ### <a name="azure-active-directory-runtime"></a>Azure Active Directoryランタイム  
 
-ランタイム (AADRT) のAzure Active Directoryする主なメカニズムは、デバッグ トレースを収集します。 Azure Active DirectoryWindowsランタイムは **、ID bd67e65c-9cc2-51d8-7399-0bb9899e75c1** を持つ ETW プロバイダーを使用します。 ETW トレースは、エラーの再現と一緒にキャプチャする必要があります (たとえば、結合エラーが発生した場合は、参加を実行するために AADRT API の呼び出しをカバーする期間、トレースを有効にする必要があります)。  
+ランタイム (AADRT) のAzure Active Directoryする主なメカニズムは、デバッグ トレースを収集します。 Azure Active Directory ランタイム on Windows は **、ID bd67e65c-9cc2-51d8-7399-0bb9899e75c1** を持つ ETW プロバイダーを使用します。 ETW トレースは、エラーの再現と一緒にキャプチャする必要があります (たとえば、結合エラーが発生した場合は、参加を実行するために AADRT API の呼び出しをカバーする期間、トレースを有効にする必要があります)。  
 
 AADRT ログの一般的なエラーと読み方については、以下を参照してください。 
 

@@ -10,12 +10,12 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 description: Microsoft 製品とサービスに関するフィードバックを Microsoft に提供するさまざまな方法について説明します。
-ms.openlocfilehash: 6e28c41edeffa636b10b4366ee3a98a96ddcd2ef
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 0aba87571f4b4fddb38f9cd5cae526d62d2e2c64
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60588576"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064273"
 ---
 # <a name="learn-about-how-to-provide-feedback-to-microsoft"></a>Microsoft にフィードバックを提供する方法について説明します。
 
@@ -48,7 +48,6 @@ Microsoft にフィードバックを提供できる場所は多数ある。  �
 :::image type="content" source="../../media/sending-feedback-community-portal.png" alt-text="スクリーンショット: フィードバックを送信できる Microsoft 製品の選択":::
 
 フォーラムを選択すると、その製品に関連付けられているすべてのフィードバックを表示し、自分に一致するフィードバックをアップヴォテまたはコメントできます。  自分に似たフィードバックが表示されない場合は、ポータル自体から新しいフィードバックを送信できます。
-スクリーンショットを追加します。
 
 ### <a name="sending-feedback-from-windows-feedback-hub"></a>ユーザーからのフィードバックのWindows フィードバック Hub
 
