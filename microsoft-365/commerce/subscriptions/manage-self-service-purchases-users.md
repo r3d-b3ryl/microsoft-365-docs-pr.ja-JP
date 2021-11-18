@@ -151,7 +151,7 @@ ms.locfileid: "60203353"
 
 ## <a name="manage-your-payment-details"></a>支払いの詳細の管理
 
-1. 管理センターで、**[課金]**、 > **[請求と支払い]**、 > <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">[課金プロファイル]</a> ページの順に移動します。
+1. 管理センターで、**[課金]** > **[請求と支払い]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">[課金プロファイル]</a> ページの順に移動します。
 2. 一覧から課金プロファイルを選択します。
 3. 課金プロファイルの詳細ページの **[支払い方法]** で、次のいずれかのオプションを選択します。
     - 既存の支払方法を更新する場合は、**[編集]** を選択します。
@@ -160,20 +160,20 @@ ms.locfileid: "60203353"
 
 ### <a name="update-an-existing-payment-method"></a>既存の支払い方法を更新する
 
-1. 管理センターで、**[課金]**、 > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">[請求と支払い]</a> ページの順に移動します。
+1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">[請求と支払い]</a> ページの順に移動します。
 2. **[支払い方法]** タブで、一覧から既存の支払い方法を選択します。
 3. 右側のウィンドウで、**[編集]** を選択します。 セキュリティ コード、有効期限、カードの名前、および住所を変更できます。
 4. 必要な変更を行ってから、**[保存]** を選びます。
 
 ### <a name="add-a-new-payment-method"></a>新しい支払方法の追加
 
-1. 管理センターで、**[課金]**、 > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">[請求と支払い]</a> ページの順に移動します。
+1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">[請求と支払い]</a> ページの順に移動します。
 2. **[支払い方法]** タブで、**[支払い方法の追加]** を選択します。
 3. **[支払い方法の追加]** ウィンドウで、新しい支払い方法の情報を入力し、**[追加]** を選択します。
 
 ## <a name="view-your-invoices"></a>請求書を表示する
 
-1. 管理センターで、**[課金]**、 > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">[請求と支払い]</a> ページの順に移動します。
+1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">[請求と支払い]</a> ページの順に移動します。
 2. **[請求書]** タブで、表示する請求書を選択します。 請求書が表示されていない場合は、**過去 3 か月** を **過去 6 か月間** または **日付範囲を指定** に変更します。
 
 ## <a name="need-help-contact-us"></a>お困りの際は、 お問い合わせください。
