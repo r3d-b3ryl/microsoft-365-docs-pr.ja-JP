@@ -17,12 +17,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: ServiceNow のスコープ認定アプリケーションのインストールと構成ガイド。
-ms.openlocfilehash: bd19e5fd72e2b21c7ec08e00497444475701817c
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 3e33deb09628d6b09da79ecf92c9837d7bdad32c
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60754255"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61071464"
 ---
 # <a name="configure-support-integration-with-servicenow---basic-authentication"></a>ServiceNow とのサポート統合を構成する - 基本認証
 
@@ -30,7 +30,7 @@ ms.locfileid: "60754255"
 
 これらの前提条件は、サポート統合のMicrosoft 365 **必要です**。
 
-1. \[AAD管理者 \] テナントのAADアプリケーションをMicrosoft 365します。
+1. \[AAD管理者 \]テナントAADでアプリケーションをMicrosoft 365します。
 
     1. テナント資格情報を使用して Azure Portal にMicrosoft 365し、[アプリの登録][](https://portal.azure.com/?Microsoft_AAD_RegisteredApps=true#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade)ページに移動して新しいアプリケーションを作成します。
 
@@ -168,7 +168,7 @@ ms.locfileid: "60754255"
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image16.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image16.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーションの説明が自動的に生成される":::
 
-1. \[Microsoft 365テナント管理者 \] 統合を完了します。
+1. \[Microsoft 365テナント管理者 \]統合を完了します。
 
     以下の情報が正しいか確認します。 この時点で [ **次へ]** を選択しない。
 
@@ -182,7 +182,7 @@ ms.locfileid: "60754255"
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image18.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image18.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、電子メールの説明が自動的に生成される":::
 
-1. [リポジトリ **] タブで** 、[リポジトリの追加] **を選択** して、次の設定で新しいリポジトリを作成します。
+1. [リポジトリ **] タブで** 、[新しいリポジトリ] **を選択** し、次の設定で更新します。
 
     - リポジトリ: 手順 6 のリポジトリ **ID** 値 – 統合を完了します。
 
