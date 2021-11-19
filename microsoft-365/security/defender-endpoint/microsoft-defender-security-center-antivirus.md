@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 234e79a599e24a3b3a0905e1cbba9848aec261fc
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1f0495adddb5617e61b3a044d97b478d54f17f2e
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195213"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111629"
 ---
 # <a name="microsoft-defender-antivirus-in-the-windows-security-app"></a>Microsoft Defender ウイルス対策アプリでWindows セキュリティする
 
@@ -34,9 +34,9 @@ ms.locfileid: "60195213"
 設定 Windows Defender クライアントとメイン Windows 設定 の一部だったアプリが結合され、新しいアプリに移動され、Windows 10 バージョン 1703 の一部として既定でインストールされます。
 
 > [!IMPORTANT]
-> Windows セキュリティ センター サービスを無効にしても、ファイアウォールMicrosoft Defender ウイルス対策Windows Defender[無効にな](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security) これらは、サードパーティのウイルス対策製品またはファイアウォール製品がインストールされ、最新の状態に保たれ、自動的に無効になります。
+> アプリ サービスで Windows セキュリティを無効にしても、ファイアウォールまたはファイアウォールMicrosoft Defender ウイルス対策無効[Windows Defender無効にしない](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)。 これらは、サードパーティのウイルス対策製品またはファイアウォール製品がインストールされ、最新の状態に保たれ、自動的に無効になります。
 >
-> Windows セキュリティ Center サービスを無効にするか、関連するグループ ポリシー設定を構成して開始または実行を防ぐ場合、Windows セキュリティ アプリはデバイスにインストールしたウイルス対策製品またはファイアウォール製品に関する古い情報や不正確な情報を表示する可能性があります。
+> Windows セキュリティ アプリ サービスを無効にするか、関連するグループ ポリシー設定を構成して開始または実行を防ぐ場合、Windows セキュリティ アプリはデバイスにインストールしたウイルス対策製品またはファイアウォール製品に関する古い情報や不正確な情報を表示する可能性があります。
 > また、古いまたは古いサード パーティ製のウイルス対策を使用している場合、または以前にインストールした可能性のあるサードパーティのウイルス対策製品をアンインストールした場合、Microsoft Defender ウイルス対策がそれ自体を有効にしなくなっている可能性もあります。
 > これにより、デバイスの保護が大幅に低下し、マルウェアの感染につながる可能性があります。
 
@@ -48,7 +48,7 @@ ms.locfileid: "60195213"
 
 :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="アプリ内のウイルスおよび脅威Windows セキュリティ設定。":::
 
-1. タスク バーのWindows セキュリティをクリックするか、Defender のスタート メニューを検索して、アプリを開 **きます**。
+1. タスク バーのWindows セキュリティをクリックするか、Defender for Cloud のスタート メニューを検索して、アプリ **を開きます**。
 
 2. [ウイルス **対策] &タイル** (または左側のメニュー バーのシールド アイコン) を選択します。
 
@@ -110,8 +110,8 @@ ms.locfileid: "60195213"
 ****
 |除外の種類|によって定義される|動作|
 |---|---|---|
-|**ファイル**|Location <br/>例: `c:\sample\sample.test`|特定のファイルは、特定のファイルによってMicrosoft Defender ウイルス対策。|
-|**Folder**|Location <br/>例: `c:\test\sample`|指定したフォルダー内のすべてのアイテムは、指定されたフォルダー Microsoft Defender ウイルス対策。|
+|**ファイル**|場所 <br/>例: `c:\sample\sample.test`|特定のファイルは、特定のファイルによってMicrosoft Defender ウイルス対策。|
+|**Folder**|場所 <br/>例: `c:\test\sample`|指定したフォルダー内のすべてのアイテムは、指定されたフォルダー Microsoft Defender ウイルス対策。|
 |**ファイルの種類**|ファイル拡張子 <br/>例: `.test`|デバイス上の任意 `.test` の場所に拡張子を持つすべてのファイルは、Microsoft Defender ウイルス対策。|
 |**プロセス**|実行可能ファイルのパス <br>例: `c:\test\process.exe`|特定のプロセスと、そのプロセスによって開くファイルは、そのプロセスによってスキップMicrosoft Defender ウイルス対策。|
 |
@@ -121,7 +121,7 @@ ms.locfileid: "60195213"
 - [ファイル拡張子とフォルダーの場所に基づいて除外を構成および検証する](./configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [プロセスによって開いたファイルの除外を構成する](./configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
-## <a name="review-threat-detection-history-in-the-windows-defender-security-center-app"></a>セキュリティ センター アプリで脅威検出Windows Defender確認する
+## <a name="review-threat-detection-history-in-the-windows-defender-for-cloud-app"></a>クラウド アプリの脅威検出履歴Windows Defender確認する
 
 1. [セキュリティ] Windows セキュリティスタート メニューを検索し、[セキュリティ]を選択して、アプリを開 **Windows セキュリティ。**
 

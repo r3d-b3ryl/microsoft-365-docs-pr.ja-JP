@@ -1,6 +1,6 @@
 ---
 title: エンドポイント用 Microsoft Defender を他の Microsoft ソリューションと統合する
-description: Microsoft Defender for Endpoint が、Microsoft Defender for Identity や Azure Defender を含む他の Microsoft ソリューションと統合する方法について説明します。
+description: Microsoft Defender for Endpoint が、Microsoft Defender for Identity や Microsoft Defender for Cloud などの他の Microsoft ソリューションと統合する方法について説明します。
 author: mjcaparas
 ms.author: macapara
 ms.prod: m365-security
@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 61b4167b5a801d31e348188aef366487bb23bd11
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 8da23203a7ab2f8faf86603f6a68700b65cc83e5
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555238"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111557"
 ---
 # <a name="microsoft-defender-for-endpoint-and-other-microsoft-solutions"></a>エンドポイント向け Microsoft Defender および他の Microsoft ソリューション
 
@@ -36,13 +36,13 @@ ms.locfileid: "60555238"
 
 Microsoft Defender for Endpoint は、さまざまな Microsoft ソリューションと直接統合します。
 
-### <a name="azure-defender"></a>Azure Defender
+### <a name="microsoft-defender-for-cloud"></a>Microsoft Defender for Cloud
 
 Microsoft Defender for Endpoint は、エンドポイント検出と応答 (EDR) 機能を含む包括的なサーバー保護ソリューションをWindowsします。
 
-### <a name="azure-sentinel"></a>Azure Sentinel
+### <a name="microsoft-sentinel"></a>Microsoft Sentinel
 
-Microsoft Defender for Endpoint コネクタを使用すると、Microsoft Defender for Endpoint から Azure Sentinel にアラートをストリーミングできます。 これにより、組織全体のセキュリティ イベントをより包括的に分析し、プレイブックを構築して効果的かつ迅速に対応できます。
+Microsoft Defender for Endpoint コネクタを使用すると、Microsoft Defender for Endpoint から Microsoft Sentinel にアラートをストリーミングできます。 これにより、組織全体のセキュリティ イベントをより包括的に分析し、プレイブックを構築して効果的かつ迅速に対応できます。
 
 ### <a name="azure-information-protection"></a>Azure Information Protection
 
@@ -52,9 +52,9 @@ Microsoft Defender for Endpoint コネクタを使用すると、Microsoft Defen
 
 Microsoft Defender for Endpoint の動的デバイス リスク スコアは条件付きアクセス評価に統合され、セキュリティで保護されたデバイスだけがリソースにアクセスできます。
 
-### <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
+### <a name="microsoft-defender-for-cloud-apps"></a>Microsoft Defender for Cloud Apps
 
-Microsoft Cloud App Securityは、Microsoft Defender for Endpoint シグナルを活用して、サポートされていないクラウド サービス (シャドウ IT) をすべての Microsoft Defender for Endpoint 監視対象デバイスから使用するなど、クラウド アプリケーションの使用状況を直接可視化できます。
+Microsoft Defender for Cloud Apps では、Microsoft Defender for Endpoint シグナルを活用して、サポートされていないクラウド サービス (シャドウ IT) をすべての Microsoft Defender for Endpoint 監視対象デバイスから使用するなど、クラウド アプリケーションの使用状況を直接可視化できます。
 
 ### <a name="microsoft-defender-for-identity"></a>Microsoft Defender for Identity
 
@@ -77,7 +77,7 @@ Microsoft 365 Defender では、Microsoft Defender for Endpoint およびさま�
 
 [詳細については、Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [統合などの高度な機能を構成する](advanced-features.md)
 - [Microsoft 365 Defender概要](/microsoft-365/security/defender/microsoft-threat-protection)

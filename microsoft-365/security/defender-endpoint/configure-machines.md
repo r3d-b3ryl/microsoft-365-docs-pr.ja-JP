@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1babfd14883520968af283ed050945950bf3f6e0
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 44492fb0f763f81a743baf5cce72e9f19f86da48
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962581"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111365"
 ---
 # <a name="ensure-your-devices-are-configured-properly"></a>デバイスが正しく構成されていることを確認する
 
@@ -44,7 +44,7 @@ ms.locfileid: "60962581"
 
 *デバイス構成管理ページ*
 
-Microsoft Intune および<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365</a>セキュリティ センターのデバイス管理ページへの直接の深いリンクを通じて、組織レベルで構成状態を追跡し、オンボーディングカバレッジの不備、コンプライアンスの問題、および最適化の不十分な攻撃表面の軽減に対応して迅速にアクションを実行できます。
+Microsoft Intune および Microsoft 365 Defender ポータルのデバイス管理ページへの直接の深いリンクを通じて、組織レベルで構成状態を追跡し、オンボーディングカバレッジの不備、コンプライアンスの問題、および最適化が不十分な攻撃表面の軽減策に対応して迅速<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">に</a>アクションを実行できます。
 
 そうすることで、次の利点があります。
 
@@ -89,6 +89,6 @@ Microsoft Intune および<a href="https://go.microsoft.com/fwlink/p/?linkid=207
 :---|:---
 [Defender for Endpoint にオンボードされているデバイスを取得する](configure-machines-onboarding.md)|Intune で管理されているデバイスのオンボーディング状態を追跡し、Intune を介してその他のデバイスをオンボードします。 
 [Defender for Endpoint セキュリティ ベースラインへのコンプライアンスを強化する](configure-machines-security-baseline.md)|ベースラインのコンプライアンスと非準拠を追跡します。 セキュリティ ベースラインを Intune で管理されるその他のデバイスに展開します。
-[ASR ルールの展開と検出を最適化する](configure-machines-asr.md)|セキュリティ センターで影響分析ツールを使用してルールの展開を確認し<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365調整します</a>。
+[ASR ルールの展開と検出を最適化する](configure-machines-asr.md)|ルールの展開を確認し、ポータルで影響分析ツールを使用して<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender調整します</a>。
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-belowfoldlink)

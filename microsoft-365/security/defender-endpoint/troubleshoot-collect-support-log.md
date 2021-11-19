@@ -1,6 +1,6 @@
 ---
-title: ライブ応答を使用して Microsoft Defender for Endpoints のサポート ログを収集する
-description: ライブ応答を使用してログを収集し、Microsoft Defender for Endpoints の問題のトラブルシューティングを行う方法について説明します。
+title: ライブ応答を使用して Microsoft Defender for Endpoint のサポート ログを収集する
+description: ライブ応答を使用してログを収集し、Microsoft Defender for Endpoint の問題のトラブルシューティングを行う方法について説明します。
 keywords: サポート、ログ、収集、トラブルシューティング、ライブ応答、liveanalyzer、アナライザー、ライブ、応答
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: ad1a7b20aef4ae6073f589738fa0c591b0102463
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: ae2a0b538fffc1644d3eb3e26c5b7cd4b512de1c
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556018"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110705"
 ---
 # <a name="collect-support-logs-in-microsoft-defender-for-endpoint-using-live-response"></a>ライブ応答を使用して Microsoft Defender for Endpoint のサポート ログを収集する
 
@@ -93,4 +93,3 @@ ms.locfileid: "60556018"
 - [macOS または Linux でのクライアント アナライザーの実行](run-analyzer-macos-linux.md)
 - [Windows で高度なトラブルシューティングを行うためのデータ収集](data-collection-analyzer.md)
 - [アナライザー HTML レポートの理解](analyzer-report.md)
-

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 48639d4d30a0cc95275fd0268381b53e60ee0708
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 6512dd38fbcdd0a257635431406f837f713456a6
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60747376"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111569"
 ---
 # <a name="server-migration-scenarios-from-the-previous-mma-based-microsoft-defender-for-endpoint-solution"></a>以前の MMA ベースの Microsoft Defender for Endpoint ソリューションからのサーバー移行シナリオ
 
@@ -43,11 +43,11 @@ ms.locfileid: "60747376"
 > Microsoft Defender for Endpoint がインストールされているオペレーティング システムのアップグレードはサポートされていません。 アップグレードを進む前にオフボードをアンインストールしてください。
 
 > [!NOTE]
-> プレビュー中に、Microsoft Endpoint Configuration Managerアップグレードを実行するための完全な自動化と統合は、MECM の 2111 リリースで利用できます。 2107 リリースでは、Endpoint Protection ノードを構成に使用したり、グループ ポリシー、PowerShell、Microsoft エンドポイント マネージャー テナント接続またはローカル構成を使用できます。 さらに、手動アップグレード手順を自動化するために、Microsoft Endpoint Configuration Manager機能を活用できます。以下に説明するメソッドを指定します。
+> プレビュー中に、Microsoft Endpoint Configuration Managerアップグレードを実行するための完全な自動化と統合は、MECM の 2111 リリースで利用できます。 2107 リリースでは、Endpoint Protection ノードを構成に使用したり、グループ ポリシー、PowerShell、Microsoft エンドポイント マネージャー テナント接続またはローカル構成を使用できます。 さらに、既存の機能を使用して、手動Microsoft Endpoint Configuration Manager手順を自動化できます。この方法については、以下で説明します。
 
 ## <a name="installer-script"></a>インストーラー スクリプト
 
-アップグレードを実行するために、Microsoft Endpoint Configuration Managerまたは Azure Defender が使用されていないか、まだ使用できない場合にアップグレードを容易にするために、このアップグレード スクリプトを[使用できます](https://github.com/microsoft/mdefordownlevelserver)。 これは、次の必要な手順を自動化するのに役立ちます。
+Microsoft Endpoint Configuration Managerまたは Microsoft Defender for Cloud が使用されていないか、まだアップグレードを実行できない場合にアップグレードを容易にするために、このアップグレード スクリプトを[使用できます](https://github.com/microsoft/mdefordownlevelserver)。 これは、次の必要な手順を自動化するのに役立ちます。
 
 1. エンドポイント用 Microsoft Defender の OMS ワークスペースを削除します (省略可能)。
 2. インストールされているSystem Center Endpoint Protectionクライアントを削除します。
@@ -112,7 +112,7 @@ ms.locfileid: "60747376"
 
 ## <a name="other-migration-scenarios"></a>その他の移行シナリオ
 
-### <a name="you-have-a-server-that-has-been-onboarded-using-the-mma-based-microsoft-defender-for-endpoint-it-has-scep-installed-windows-server-2012-r2-or-microsoft-defender-antivirus-windows-server-2016-this-machine-is-not-managed-through-azure-defender-microsoft-endpoint-manager-or-microsoft-endpoint-configuration-manager"></a>MMA ベースの Microsoft Defender for Endpoint を使用してオンボードされているサーバーがあります。 SCEP がインストールされている (Windows Server 2012 R2) または Microsoft Defender ウイルス対策 (Windows Server 2016)。 このコンピューターは **、Azure** Defender、Microsoft エンドポイント マネージャー、またはMicrosoft Endpoint Configuration Manager。
+### <a name="you-have-a-server-that-has-been-onboarded-using-the-mma-based-microsoft-defender-for-endpoint-it-has-scep-installed-windows-server-2012-r2-or-microsoft-defender-antivirus-windows-server-2016-this-machine-is-not-managed-through-microsoft-defender-for-cloud-microsoft-endpoint-manager-or-microsoft-endpoint-configuration-manager"></a>MMA ベースの Microsoft Defender for Endpoint を使用してオンボードされているサーバーがあります。 SCEP がインストールされている (Windows Server 2012 R2) または Microsoft Defender ウイルス対策 (Windows Server 2016)。 このコンピューターは **、Microsoft** Defender for Cloud、Microsoft エンドポイント マネージャー、またはMicrosoft Endpoint Configuration Manager。
 
 1. コンピューターを完全に更新します 。Microsoft Defender ウイルス対策 (Windows Server 2016)。
 2. Microsoft Defender for Endpoint の MMA ワークスペース構成を削除します。 [「PowerShell を使用してワークスペースを削除する」を参照してください](/azure/azure-monitor/agents/agent-manage)。
@@ -126,7 +126,7 @@ ms.locfileid: "60747376"
 > [!TIP]
 > インストーラー スクリプトを使用して、上記の手順を自動化できます。
 
-### <a name="you-have-a-server-on-which-you-want-to-install-microsoft-defender-for-endpoint-it-has-a-non-microsoft-endpoint-protection-or-endpoint-detection-and-response-solution-installed-you-do-not-intend-to-use-microsoft-endpoint-configuration-manager-or-azure-defender-you-use-your-own-deployment-mechanism"></a>Microsoft Defender for Endpoint をインストールするサーバーがあります。 Microsoft 以外のエンドポイント保護またはエンドポイント検出および応答ソリューションがインストールされています。 アプリまたは Azure Defender をMicrosoft Endpoint Configuration Managerする予定ではありません。 独自の展開メカニズムを使用します。 
+### <a name="you-have-a-server-on-which-you-want-to-install-microsoft-defender-for-endpoint-it-has-a-non-microsoft-endpoint-protection-or-endpoint-detection-and-response-solution-installed-you-do-not-intend-to-use-microsoft-endpoint-configuration-manager-or-microsoft-defender-for-cloud-you-use-your-own-deployment-mechanism"></a>Microsoft Defender for Endpoint をインストールするサーバーがあります。 Microsoft 以外のエンドポイント保護またはエンドポイント検出および応答ソリューションがインストールされています。 クラウドまたは Microsoft Defender for Cloud をMicrosoft Endpoint Configuration Managerする予定はない。 独自の展開メカニズムを使用します。 
 
 1. コンピューターを完全に更新します 。Microsoft Defender ウイルス対策 (Windows Server 2016)。
 2. Microsoft Defender for Endpoint for Windows Server 2012 R2 & 2016 パッケージをインストールし、パッシブ **モードを有効にします**。 「コマンド[ラインをMicrosoft Defender ウイルス対策インストールする」を参照してください](configure-server-endpoints.md#install-microsoft-defender-for-endpoint-using-command-line)。
@@ -146,10 +146,10 @@ ms.locfileid: "60747376"
 
 詳細については、「Need [to set Microsoft Defender ウイルス対策パッシブ モード」を参照してください](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server)。
 
-## <a name="azure-defender-scenarios"></a>Azure Defender のシナリオ
+## <a name="microsoft-defender-for-cloud-scenarios"></a>Microsoft Defender for Cloud シナリオ
 
-### <a name="youre-using-azure-defender-the-microsoft-monitoring-agent-mma-andor-microsoft-antimalware-for-azure-scep-are-installed-and-you-want-to-upgrade"></a>Azure Defender を使用しています。 Azure (SCEP) Microsoft Monitoring Agent (MMA) および/または Microsoft Antimalwareがインストールされ、アップグレードする必要があります。
-Azure Defender を使用している場合は、自動アップグレード プロセスを利用できます。 「[セキュリティ センターの統合ソリューションを使用してエンドポイントを保護する:エンドポイントEDR Microsoft Defender for Endpoint」を参照してください](/azure/security-center/security-center-wdatp#enable-the-microsoft-defender-for-endpoint-integration)。
+### <a name="youre-using-microsoft-defender-for-cloud-the-microsoft-monitoring-agent-mma-andor-microsoft-antimalware-for-azure-scep-are-installed-and-you-want-to-upgrade"></a>Microsoft Defender for Cloud を使用しています。 Azure (SCEP) Microsoft Monitoring Agent (MMA) および/または Microsoft Antimalwareがインストールされ、アップグレードする必要があります。
+Microsoft Defender for Cloud を使用している場合は、自動アップグレード プロセスを利用できます。 「Defender [for Cloud の統合アプリケーション ソリューション:Microsoft Defender for Endpoint EDRエンドポイントを保護する」を参照してください](/azure/security-center/security-center-wdatp#enable-the-microsoft-defender-for-endpoint-integration)。
 
 ## <a name="group-policy-configuration"></a>グループ ポリシーの構成
 グループ ポリシーを使用した構成の場合は、中央ストアの最新の ADMX ファイルを使用して、エンドポイント ポリシー オプションの適切な Defender にアクセスしていることを確認します。 「グループ [ポリシー管理](/troubleshoot/windows-client/group-policy/create-and-manage-central-store)用中央ストア管理用テンプレートを作成および管理する方法」を参照し、Windows で使用する最新のファイルをダウンロード **Windows 10。**

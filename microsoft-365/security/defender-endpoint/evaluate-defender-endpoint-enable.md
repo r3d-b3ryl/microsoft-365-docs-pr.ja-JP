@@ -1,7 +1,7 @@
 ---
 title: エンドポイント評価用のパイロット Defender
 description: 試用版ラボMicrosoft 365 Defenderパイロット環境を有効にする。
-keywords: Microsoft 365 Defender試し、テストMicrosoft 365 Defender、Microsoft 365 Defender評価ラボMicrosoft 365 Defender、パイロット、サイバー Microsoft 365 Defenderを評価するセキュリティ、高度な永続的脅威、エンタープライズ セキュリティ、デバイス、デバイス、ID、ユーザー、データ、アプリケーション、インシデント、自動調査と修復、高度な検索
+keywords: Microsoft 365 Defender試し、テストMicrosoft 365 Defender、評価Microsoft 365 Defender、Microsoft 365 Defenderラボ、Microsoft 365 Defender パイロット、サイバーセキュリティ、高度な永続的脅威、エンタープライズ セキュリティ、デバイス、デバイス、ID、ユーザー、データ、アプリケーション、インシデント、自動調査と修復、高度な狩猟
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: cb4ca4720d0671aad45cfa2387dbf9c092f970c8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0f8105c9acf921f024ead3f241f850d58de47ee0
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60194227"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111461"
 ---
 # <a name="pilot-mde-evaluation"></a>パイロット MDE 評価
 
@@ -47,7 +47,7 @@ ms.locfileid: "60194227"
 
     ![課金ライセンスのイメージ。](images/atp-billing-subscriptions.png)
 
-## <a name="step-2-onboard-endpoints-using-any-of-the-supported-management-tools"></a>手順 2. サポートされている管理ツールを使用したオンボード エンドポイント
+## <a name="step-2-onboard-endpoints-using-any-of-the-supported-management-tools"></a>手順 2。 サポートされている管理ツールを使用したオンボード エンドポイント
 
 「 [展開の計画」](deployment-strategy.md) トピックでは、Defender for Endpoint の展開に必要な一般的な手順について説明します。
 
@@ -67,7 +67,7 @@ ms.locfileid: "60194227"
 
 |エンドポイント|ツール オプション|
 |---|---|
-|**Windows**|[ローカル スクリプト (最大 10 台のデバイス)](../defender-endpoint/configure-endpoints-script.md) <p> [グループ ポリシー](../defender-endpoint/configure-endpoints-gp.md) <p> [Microsoft エンドポイント マネージャー/ モバイル デバイス マネージャー](../defender-endpoint/configure-endpoints-mdm.md) <p> [Microsoft Endpoint Configuration Manager](../defender-endpoint/configure-endpoints-sccm.md) <p> [VDI スクリプト](../defender-endpoint/configure-endpoints-vdi.md) <p> [Azure Defender との統合](../defender-endpoint/configure-server-endpoints.md#integration-with-azure-defender)|
+|**Windows**|[ローカル スクリプト (最大 10 台のデバイス)](../defender-endpoint/configure-endpoints-script.md) <p> [グループ ポリシー](../defender-endpoint/configure-endpoints-gp.md) <p> [Microsoft エンドポイント マネージャー/ モバイル デバイス マネージャー](../defender-endpoint/configure-endpoints-mdm.md) <p> [Microsoft Endpoint Configuration Manager](../defender-endpoint/configure-endpoints-sccm.md) <p> [VDI スクリプト](../defender-endpoint/configure-endpoints-vdi.md) <p> [Microsoft Defender for Cloud との統合](../defender-endpoint/configure-server-endpoints.md#integration-with-azure-defender)|
 |**macOS**|[ローカル スクリプト](../defender-endpoint/mac-install-manually.md) <p> [Microsoft エンドポイント マネージャー](../defender-endpoint/mac-install-with-intune.md) <p> [JAMF Pro](../defender-endpoint/mac-install-with-jamf.md) <p> [モバイル デバイス管理](../defender-endpoint/mac-install-with-other-mdm.md)|
 |**Linux Server**|[ローカル スクリプト](../defender-endpoint/linux-install-manually.md) <p> [Puppet](../defender-endpoint/linux-install-with-puppet.md) <p> [Ansible](../defender-endpoint/linux-install-with-ansible.md)|
 |**iOS**|[アプリベース](../defender-endpoint/ios-install.md)|

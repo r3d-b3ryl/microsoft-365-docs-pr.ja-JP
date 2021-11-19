@@ -21,12 +21,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: オンライン アセットの配信をOffice 365 Content Delivery Network (CDN) を使用する方法SharePointします。
-ms.openlocfilehash: 21ef8fd29e53e2c832a518613a3ed44d8f7687cf
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ad4eb1df63e201e49ba0b4c56c9123a04e37c184
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154868"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110165"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>SharePoint Online での Office 365 コンテンツ配信ネットワーク (CDN) の使用
 
@@ -400,7 +400,7 @@ Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder
 <a name="ExamplePrivateOriginSiteCollection"> </a>
 ### <a name="example-configure-a-private-origin-for-a-site-collection-for-sharepoint-online"></a>例: オンラインのサイト コレクションのプライベートオリジンをSharePointする
 
-**Add-SPOTenantCdnOrigin** コマンドレットを使用して、サイト コレクションをプライベートオリジンとして定義します。 次に例を示します。
+**Add-SPOTenantCdnOrigin** コマンドレットを使用して、サイト コレクションをプライベートオリジンとして定義します。 例として以下のようなものがあります。
 
 ```powershell
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
@@ -683,7 +683,7 @@ Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder
 <a name="ExamplePrivateOriginSiteCollectionPnPPosh"> </a>
 ### <a name="example-configure-a-private-origin-for-a-site-collection-for-sharepoint-online"></a>例: オンラインのサイト コレクションのプライベートオリジンをSharePointする
 
-**Add-PnPTenantCdnOrigin** コマンドレットを使用して、サイト コレクションをプライベートオリジンとして定義します。 次に例を示します。
+**Add-PnPTenantCdnOrigin** コマンドレットを使用して、サイト コレクションをプライベートオリジンとして定義します。 例として以下のようなものがあります。
 
 ```powershell
 Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
@@ -951,7 +951,7 @@ https://publiccdn.sharepointonline.com/contoso.sharepoint.com/sites/site/library
 
 ### <a name="using-assets-in-private-origins"></a>プライベートオリジンでのアセットの使用
 
-プライベートオリジンでアセットを使用するには、追加の構成は必要ありません。 SharePointオンラインでは、プライベートオリジン内のアセットの URL が自動的に書き換わるので、それらのアセットの要求は常にサーバーから提供CDN。 これらの URL には、アセットが要求された時点で SharePoint Online によって自動生成する必要があるトークンが含まれているため、プライベート オリジンの CDN アセットに対して URL を手動でビルドすることはできません。
+プライベートオリジンでアセットを使用するには、追加の構成は必要ありません。 SharePoint Online は、プライベートオリジン内のアセットの URL を自動的に書き換えるので、それらのアセットの要求は常にサーバーから提供CDN。 これらの URL には、アセットが要求された時点で SharePoint Online によって自動生成する必要があるトークンが含まれているため、プライベート オリジンの CDN アセットに対して URL を手動でビルドすることはできません。
 
 プライベートオリジンのアセットへのアクセスは、オリジンに対するユーザーのアクセス許可に基づいて動的に生成されたトークンによって保護されます。以下のセクションで説明する注意点があります。 ユーザーがコンテンツをレンダリングするには **、** 少なくとも原点への読み取りアクセスCDN必要があります。
 
@@ -963,7 +963,7 @@ https://publiccdn.sharepointonline.com/contoso.sharepoint.com/sites/site/library
 
 プライベート オリジン内のアセットへのアクセスは、Office 365 CDN Online によって生成されたトークンSharePointされます。 作成元によって指定されたフォルダーまたはライブラリへのアクセス許可を既に持っているユーザーには、アクセス許可レベルに基づいてユーザーがファイルにアクセスできるトークンが自動的に付与されます。 これらのアクセス トークンは、トークン再生攻撃を防止するために生成された後、30 ~ 90 分間有効です。
 
-アクセス トークンが生成されると、SharePoint Online は、2 つの承認パラメーターを含む _クライアントにカスタム_ URI (エッジ承認トークン) と _oat_ (オリジン認証トークン) を返します。 各トークンの構造は _、epoch<_ のセキュリティで保護された署名の>__<の有効期限>。 次に例を示します。
+アクセス トークンが生成されると、SharePoint Online は、2 つの承認パラメーターを含む _クライアントにカスタム_ URI (エッジ承認トークン) と _oat_ (オリジン認証トークン) を返します。 各トークンの構造は _、epoch<_ のセキュリティで保護された署名の>__<の有効期限>。 例として以下のようなものがあります。
 
 ```http
 https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg?eat=1486154359_cc59042c5c55c90b26a2775323c7c8112718431228fe84d568a3795a63912840&oat=1486154359_7d73c2e3ba4b7b1f97242332900616db0d4ffb04312
@@ -976,17 +976,19 @@ https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/libra
 
 重要な点は、SharePoint Online がプライベートオリジンのアセットに対するアイテム レベルのアクセス許可をサポートしていない点に注意してください。 たとえば、場所にあるファイルの場合、ユーザーは次の条件に従って `https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg` ファイルに効果的にアクセスできます。
 
-|ユーザー  |アクセス許可  |有効なアクセス  |
+|User  |アクセス許可  |有効なアクセス  |
 |---------|---------|---------|
 |ユーザー 1     |フォルダー 1 へのアクセス権を持つ         |サーバーからimage1.jpgアクセスCDN         |
 |ユーザー 2     |folder1 にアクセスできない         |サーバーからimage1.jpgにアクセスCDN         |
 |ユーザー 3     |folder1 へのアクセス権は付与されませんが、オンラインでフォルダーにアクセスするための明示的image1.jpgがSharePointされます。         |オンラインから直接image1.jpgアクセスできますが、SharePointからアクセスCDN         |
 |ユーザー 4     |folder1 へのアクセス権を持っていますが、オンラインでフォルダーへのアクセスimage1.jpg明示的SharePointされています         |SharePoint Online からアセットにアクセスすることはできませんが、CDN Online でファイルへのアクセスが拒否されているにもかかわらず、CDN からアセットにSharePointできます。         |
 
-<a name="CDNTroubleshooting"> </a>
+<a name="CDNTroubleshooting"></a>
+
 ## <a name="troubleshooting-the-office-365-cdn"></a>問題のトラブルシューティングOffice 365 CDN
 
-<a name="CDNConfirm"> </a>
+<a name="CDNConfirm"></a>
+
 ### <a name="how-do-i-confirm-that-assets-are-being-served-by-the-cdn"></a>アセットがサービスを受け取っているのを確認CDN。
 
 CDN アセットへのリンクをページに追加したら、CDN からアセットが提供されているのを確認するには、ページを参照し、レンダリング後にイメージを右クリックし、イメージの URL を確認します。
@@ -1052,4 +1054,4 @@ spo cdn origin add --origin */CLIENTSIDEASSETS
 
 [Office 365 のネットワーク計画とパフォーマンス チューニング](./network-planning-and-performance.md)
 
-[SharePointPerformance Series - Office 365 CDN ビデオ シリーズ](https://www.youtube.com/playlist?list=PLR9nK3mnD-OWMfr1BA9mr5oCw2aJXw4WA)
+[SharePoint パフォーマンス シリーズ - Office 365 CDN ビデオ シリーズ](https://www.youtube.com/playlist?list=PLR9nK3mnD-OWMfr1BA9mr5oCw2aJXw4WA)

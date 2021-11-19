@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 弁護士クライアントの特権検出モデルを使用して、機械学習ベースの特権コンテンツの検出を使用して、ユーザーのケースでコンテンツをAdvanced eDiscoveryします。
-ms.openlocfilehash: 31520faef70f58fb2ac623645a50f2fa30336077
-ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
+ms.openlocfilehash: 10a3f78537b17d8b74299e7960234c27fa3089ed
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61071484"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111092"
 ---
 # <a name="set-up-attorney-client-privilege-detection-in-advanced-ediscovery"></a>アプリケーションで弁護士とクライアントの特権の検出をAdvanced eDiscovery
 
@@ -79,7 +79,7 @@ ms.locfileid: "61071484"
 
    [ **弁護士とクライアントの特権]** ページが表示され、[ **弁護士クライアント** 特権の検出] トグルがオンにされます。
 
-   ![弁護士クライアント特権のフライアウト ページ。](../media/AeDUploadAttorneyList.png)
+   ![弁護士-クライアント特権のフライアウト ページ](..\media\AeDUploadAttorneyList1.png)
 
 3. [ **ファイルの選択]** を選択し、手順 1 で作成.csvファイルを検索して選択します。
 

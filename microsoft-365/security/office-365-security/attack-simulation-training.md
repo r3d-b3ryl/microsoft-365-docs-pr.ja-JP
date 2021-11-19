@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 description: 管理者は、Microsoft Defender for microsoft Defender for Office 365 プラン 2 を使用して、フィッシング攻撃をシミュレートし、フィッシング防止に関するユーザーをトレーニングする方法について説明します。
 ms.technology: mdo
-ms.openlocfilehash: 394a37baffb9961511b5a944a774b2083a384a58
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 59a761a9f6925816946cb655e71f5e418d6ca8de
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962460"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111377"
 ---
 # <a name="simulate-a-phishing-attack-in-defender-for-office-365"></a>Defender でフィッシング攻撃をシミュレートOffice 365
 

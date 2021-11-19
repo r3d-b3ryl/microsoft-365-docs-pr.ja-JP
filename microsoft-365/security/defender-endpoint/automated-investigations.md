@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: d9c212cf1c566050b21760ea9434eaba772f7fac
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: abb8bbce480312a799e6360f2f91cca8e31500a0
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556090"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109865"
 ---
 # <a name="overview-of-automated-investigations"></a>自動調査の概要
 
@@ -80,7 +80,7 @@ ms.locfileid: "60556090"
 保留中か完了かの修復アクションはすべて、アクション センターで [追跡されます](auto-investigation-action-center.md)。 必要に応じて、セキュリティ運用チームは修復アクションを元に戻すことができます。 詳細については、「自動調査後 [の修復アクションの確認と承認」を参照してください](/microsoft-365/security/defender-endpoint/manage-auto-investigation)。
 
 > [!TIP]
-> セキュリティ センターの新しい統合調査ページMicrosoft 365確認してください。 詳細については [、「(NEW!)」を参照してください。統合された調査ページ](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page)。
+> このポータルで、新しい統合された調査ページMicrosoft 365 Defenderしてください。 詳細については [、「(NEW!)」を参照してください。統合された調査ページ](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page)。
 
 ## <a name="requirements-for-air"></a>AIR の要件
 

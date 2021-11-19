@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e9c58df0c79479d8dabe8d3a31edd6bfecc5aacd
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 52c99b4c43f17a551929cb657fb4eb9ea3420d51
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60960810"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111287"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>ネットワーク デバイスの検出と脆弱性の管理
 
@@ -39,7 +39,7 @@ ms.locfileid: "60960810"
 > [!NOTE]
 > [](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-device-discovery-and-vulnerability-assessments/ba-p/2267548) \( 04-13-2021 に公開されたネットワーク デバイスの検出と脆弱性評価ブログでは、Defender for Endpoint の新しいネットワーク デバイス検出機能に関する分析情報を \) 提供します。 この記事では、ネットワーク デバイスの検出が対処するように設計されている課題の概要と、これらの新機能の使用を開始する方法に関する詳細な情報を提供します。
 
-ネットワーク検出機能は、セキュリティ センターとネットワーク コンソールの<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365</a>セクションMicrosoft 365 Defender使用できます。
+ネットワーク検出機能は、Microsoft 365 Defenderコンソールの[デバイス インベントリ<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"></a>] セクションMicrosoft 365 Defender使用できます。
 
 指定された Microsoft Defender for Endpoint デバイスは、構成済みのネットワーク デバイスの定期的な認証スキャンを実行するために、各ネットワーク セグメントで使用されます。 検出された Defender for Endpoint の 脅威と脆弱性の管理 機能は、検出されたスイッチ、ルーター、WLAN コントローラー、ファイアウォール、VPN ゲートウェイを保護するための統合ワークフローを提供します。
 
@@ -99,7 +99,7 @@ Defender for Endpoint にはネットワーク デバイス自体にセンサー
 
 ## <a name="permissions"></a>アクセス許可
 
-評価ジョブを構成するには、次のユーザーアクセス許可オプションが必要です。セキュリティ センター **でセキュリティ設定を管理します**。 アクセス許可は、ロールにアクセスして **設定** \> **できます**。 詳細については、「役割ベースの [アクセス制御の役割を作成および管理する」を参照してください](user-roles.md)。
+評価ジョブを構成するには、Defender でセキュリティ設定を管理するというユーザーアクセス許可オプション **が必要です**。 アクセス許可は、ロールにアクセスして **設定** \> **できます**。 詳細については、「役割ベースの [アクセス制御の役割を作成および管理する」を参照してください](user-roles.md)。
 
 ## <a name="install-the-network-scanner"></a>ネットワーク スキャナーのインストール
 
@@ -122,7 +122,7 @@ Defender for Endpoint にはネットワーク デバイス自体にセンサー
     > [!NOTE]
     > URL をコピーするには、コマンド プロンプトの設定を変更する必要があります。
 
-2. コードを入力し、「セキュリティ センターでセキュリティ設定を管理する」と呼ばれる Defender for Endpoint アクセス許可を持つ Microsoft アカウントを使用してサインインします。
+2. コードを入力し、"Defender でセキュリティ設定を管理する" というエンドポイントの Defender アクセス許可を持つ Microsoft アカウントを使用してサインインします。
 
 3. 完了すると、サインインしたというメッセージが表示されます。
 
@@ -189,7 +189,7 @@ Defender for Endpoint にはネットワーク デバイス自体にセンサー
 
 ### <a name="required-threat-and-vulnerability-management-user-permission"></a>必須脅威と脆弱性の管理ユーザーアクセス許可
 
-登録が完了し、エラーが発生しました。"新しいエージェントを追加するための十分なアクセス許可がないように見えます。 必要なアクセス許可は、「セキュリティ センターでセキュリティ設定を管理する」です。
+登録が完了し、エラーが発生しました。"新しいエージェントを追加するための十分なアクセス許可がないように見えます。 必要なアクセス許可は、「Defender のセキュリティ設定を管理する」です。
 
 任意のキーを押して終了します。
 

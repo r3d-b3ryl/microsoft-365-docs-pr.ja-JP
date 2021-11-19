@@ -19,12 +19,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '概要: 新しいドイツのデータセンター リージョンで、Microsoft Cloud Germany (Microsoft Cloud Deutschland) から Office 365 サービスへの移行について理解します。'
-ms.openlocfilehash: 837a92b5ca3950615919392921ce7c37efc9f4bd
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e097a342659bc6d6c7edefae39254dea2bffdb81
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195331"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111413"
 ---
 # <a name="migration-from-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Microsoft Cloud Deutschland から新しいドイツのデータセンター地域Office 365サービスへの移行
 
@@ -75,7 +75,7 @@ Office 365 ビデオは 2021 年 3 月 1 日に廃止されます。 Office 365 
 
 テナント移行が開始される 1 週間前に、すべての前提条件が完了する必要があるという最終警告として、メッセージ センター サービスに通知が届きます。
 
-移行は、Azure AD テナントを主権ドイツの Azure AD サービスから EU 地域の Azure AD の Office 365 サービス インスタンスに移動します。
+移行は、Azure AD テナントを主権ドイツ Azure AD サービスから EU 地域の Office 365 サービス Azure AD インスタンスに移動します。
 
 次のフェーズは、テナントのサブスクリプション&#39;ユーザー ライセンスをドイツ固有の製品からグローバル製品に移行します。
 
@@ -83,7 +83,7 @@ Office 365 ビデオは 2021 年 3 月 1 日に廃止されます。 Office 365 
 
 メッセージ センターの投稿で移行の進行状況が通知されます。 投稿は特定のマイルストーンで実行され、ステップの進捗状況に関するガイダンスと、プロセス要件に基づいて顧客が行動する重要な情報を提供します。 メッセージ センター通知は、次のマイルストーンで提供されます。
 
-- 移行の開始 (Azure の移行が開始AD 5 営業日前)
+- 移行の開始 (移行開始の 5 営業日前Azure AD)
 - Azure AD移行が完了しました
 - サブスクリプションとライセンスの移行の完了
 - SharePoint移行が完了しました
@@ -93,7 +93,7 @@ Office 365 ビデオは 2021 年 3 月 1 日に廃止されます。 Office 365 
 - Power BI完了
 - サービスの最終的なカットオーバーが完了しました
 
-Azure ADがワールドワイド サービスに切り替わると、すべてのクライアントとアプリケーションが適切なエンドポイントを使用するように完全に移行される必要があります。 最終的なカットオーバーの後に 30 日間のウィンドウが表示されます。Microsoft Cloud Deutschland サービスから Azure AD トークンを引き続き取得できます。 30 日間の期間が経過すると、クライアントとアプリケーションは Microsoft Cloud Deutschland の Azure ADエンドポイントにアクセスできなくなりました。 アプリケーションまたはユーザー アクセスは、この時点から失敗します。 このタイム ウィンドウが閉じる前に、すべてのユーザーとアプリケーションが正しいエンドポイントに移行されていることを確認する必要があります。 
+ワールドワイド サービスへのAzure AD切り替えた後、すべてのクライアントとアプリケーションが適切なエンドポイントを使用するために完全に移行される必要があります。 最終的なカットオーバーの後に 30 日間のウィンドウが表示されます。このウィンドウでは、Microsoft Cloud Deutschland サービスから Azure AD トークンを引き続き取得できます。 30 日間のウィンドウの有効期限が切れると、クライアントとアプリケーションは Microsoft Cloud Deutschland の Azure ADエンドポイントにアクセスできなくなりました。 アプリケーションまたはユーザー アクセスは、この時点から失敗します。 このタイム ウィンドウが閉じる前に、すべてのユーザーとアプリケーションが正しいエンドポイントに移行されていることを確認する必要があります。 
 
 ## <a name="moving-to-the-new-german-datacenter-regions"></a>新しいドイツのデータセンター地域への移行
 
@@ -182,7 +182,7 @@ Microsoft Cloud Deutschland クラウド サービスでは、次の 15 のサ�
 23. Web 用 Office
 24. Planner
 25. Sway
-26. Microsoft 365 アプリ
+26. Microsoft 365 Apps
 27. Outlook モバイル
 28. Enterprise Mobility + Security (EMS) E3 (Azure AD Premium P1、Intune、および Rights Management Service)
 29. Yammer Enterprise
@@ -203,7 +203,7 @@ Microsoft Cloud Deutschland クラウド サービスでは、次の 15 のサ�
 
 Azure のお客様のみである場合は、Azure[](/azure/germany/germany-migration-main)リソースの別の地域への移行を今日から開始できます。 
 
-azure に Office 365、Dynamics 365、または Power BI がある場合は、まず Office 365 サービスの移行プロセスに従って、Azure AD の移行を成功に向け、その前に Azure AD の自動移行を開始する必要があります。 Azure の移行を完了してからテナント移行を完了し、Azure のワークロードを Azure AD組織Office 365があります。 詳細については [、「移行フェーズのアクションと Microsoft Cloud Deutschland](ms-cloud-germany-transition-phases.md) からの移行に対する影響」を参照してください。
+azure に Office 365、Dynamics 365、または Power BI がある場合は、まず Office 365 サービスの移行プロセスに従って、Azure AD の移行を成功に向け、Azure の自動移行を開始する必要があります。 テナントの移行を完了する前に Azure 移行を完了し、Azure ワークロードを組織のAzure AD管理Office 365必要があります。 詳細については [、「移行フェーズのアクションと Microsoft Cloud Deutschland](ms-cloud-germany-transition-phases.md) からの移行に対する影響」を参照してください。
 
 **Office 365、Dynamics 365、および Power BI**
 
@@ -226,55 +226,55 @@ Microsoft Cloud Deutschland から Office 365 サービスへの移行中に、�
 | Dynamics 365 for Sales Enterprise Edition \_ DE (DYN365 \_ ENTERPRISE SALES \_ \_ DE) | Dynamics 365 for Sales Enterprise Edition (DYN365 \_ ENTERPRISE \_ SALES) |
 | Dynamics 365 for Team Members Enterprise Edition \_ DE (DYN365 \_ ENTERPRISE TEAM MEMBERS \_ \_ \_ DE) | Dynamics 365 for Team Members Enterprise Edition (DYN365 \_ ENTERPRISE \_ TEAM \_ MEMBERS) |
 | Dynamics 365 Plan 1 Enterprise Edition \_ DE (DYN365 \_ ENTERPRISE \_ PLAN1 \_ DE) | Dynamics 365 Plan 1 Enterprise Edition (DYN365 \_ ENTERPRISE \_ PLAN1) |
-| \_ECAL Services (EOA, EOP, DLP)DE (ECAL \_ SERVICES \_ DE) | ECAL Services (EOA, EOP, DLP) (ECAL \_ SERVICES) |
-| \_Enterprise Mobility + Security E3DE (EMS \_ DE) | Enterprise Mobility + Security E3 (EMS) |
-| \_Exchange Online (プラン 1)DE (EXCHANGESTANDARD \_ DE) | Exchange Online (プラン 1) (EXCHANGESTANDARD) |
-| \_Exchange Online (プラン 2)DE (EXCHANGEENTERPRISE \_ DE) | Exchange Online (プラン 2) (EXCHANGEENTERPRISE) |
-| \_Exchange Online Archiving for Exchange OnlineDE (EXCHANGEARCHIVE \_ ADDON \_ DE) | Exchange Online Archiving for Exchange Online (EXCHANGEARCHIVE \_ ADDON) |
-| \_Exchange Online Archiving for Exchange ServerDE (EXCHANGEARCHIVE \_ DE) | Exchange Online Archiving for Exchange Server (EXCHANGEARCHIVE) |
-| \_Exchange Online EssentialsDE (EXCHANGE \_ S \_ ESSENTIALS \_ DE) | Exchange Online Essentials (EXCHANGE \_ S \_ ESSENTIALS) |
-| \_Exchange Online KioskDE (EXCHANGEDESKLESS \_ DE) | Exchange Online Kiosk (EXCHANGEDESKLESS) |
-| \_Exchange Online ProtectionDE (EOP \_ ENTERPRISE \_ DE) | Exchange Online Protection (EOP \_ ENTERPRISE) |
+| ECAL Services (EOA, EOP, DLP) \_ DE (ECAL \_ SERVICES \_ DE) | ECAL Services (EOA, EOP, DLP) (ECAL \_ SERVICES) |
+| Enterprise Mobility + Security E3 DE \_ (EMS \_ DE) | Enterprise Mobility + Security E3 (EMS) |
+| Exchange Online (プラン 1) DE \_ (EXCHANGESTANDARD \_ DE) | Exchange Online (プラン 1) (EXCHANGESTANDARD) |
+| Exchange Online (プラン 2) DE \_ (EXCHANGEENTERPRISE \_ DE) | Exchange Online (プラン 2) (EXCHANGEENTERPRISE) |
+| Exchange Online Archiving for Exchange Online DE \_ (EXCHANGEARCHIVE \_ \_ ADDON DE) | Exchange Online Archiving for Exchange Online (EXCHANGEARCHIVE \_ ADDON) |
+| Exchange Online Archiving for Exchange Server DE \_ (EXCHANGEARCHIVE \_ DE) | Exchange Online Archiving for Exchange Server (EXCHANGEARCHIVE) |
+| Exchange Online Essentials DE \_ (EXCHANGE \_ S \_ ESSENTIALS \_ DE) | Exchange Online Essentials (EXCHANGE \_ S \_ ESSENTIALS) |
+| Exchange Online Kiosk DE \_ (EXCHANGEDESKLESS \_ DE) | Exchange Online Kiosk (EXCHANGEDESKLESS) |
+| Exchange Online Protection DE \_ (EOP \_ \_ ENTERPRISE DE) | Exchange Online Protection (EOP \_ ENTERPRISE) |
 | Microsoft 365 Business Standard (O365 \_ BUSINESS \_ PREMIUM) | Microsoft 365 Business Standard (O365 \_ BUSINESS \_ PREMIUM) |
-| Microsoft Dynamics CRM Onlineインスタンス \_ DE (CRMINSTANCE \_ DE) | Microsoft Dynamics CRM Onlineインスタンス (CRMINSTANCE) |
-| Office 365 A1 \_ DE (STANDARDWOFFPACK FACULTY \_ \_ DE) | Office 365 A1教員向け情報 (STANDARDWOFFPACK \_ FACULTY) |
-| Office 365 A1 DE \_ (STANDARDWOFFPACK STUDENT \_ \_ DE) | Office 365 A1向け (STANDARDWOFFPACK \_ STUDENT) |
-| \_Office 365 Advanced ComplianceDE (EQUIVIO \_ ANALYTICS \_ DE) | Microsoft 365 E5 Compliance (情報 \_ 保護 \_ コンプライアンス) |
+| Microsoft Dynamics CRM Online インスタンス \_DE (CRMINSTANCE \_ DE) | Microsoft Dynamics CRM Online インスタンス (CRMINSTANCE) |
+| Office 365 A1教員向け \_DE (STANDARDWOFFPACK \_ FACULTY \_ DE) | Office 365 A1教員向け情報 (STANDARDWOFFPACK \_ FACULTY) |
+| Office 365 A1学生向け \_DE (STANDARDWOFFPACK \_ STUDENT \_ DE) | Office 365 A1向け (STANDARDWOFFPACK \_ STUDENT) |
+| Office 365 Advanced Compliance \_ DE (EQUIVIO \_ ANALYTICS \_ DE) | Microsoft 365 E5 Compliance (情報 \_ 保護 \_ コンプライアンス) |
 |Microsoft Defender for Office 365 (プラン 1) \_ DE (ATP \_ ENTERPRISE \_ DE) |Microsoft Defender for Office 365 (プラン 1) (ATP \_ ENTERPRISE) |
-| \_Office 365 Business EssentialsDE (O365 \_ BUSINESS \_ ESSENTIALS \_ DE) | Microsoft 365 Business Basic (O365 \_ BUSINESS \_ ESSENTIALS) |
-| \_Office 365 Business PremiumDE (O365 \_ BUSINESS \_ PREMIUM \_ DE) | Microsoft 365 Business Standard (O365 \_ BUSINESS \_ PREMIUM) |
-| \_Office 365 BusinessDE (O365 \_ BUSINESS \_ DE) | Microsoft 365 Apps for business (O365 \_ BUSINESS) |
-| \_Office 365 E1DE (STANDARDPACK \_ DE) | Office 365 E1 (STANDARDPACK) |
-| Office 365 E3なし \_ (ENTERPRISEPACKWITHOUTPROPLUS \_ DE) | Office 365 E3なし (ENTERPRISEPACKWITHOUTPROPLUS) |
-| \_Office 365 E3DE (ENTERPRISEPACK \_ DE) | Office 365 E3 (ENTERPRISEPACK) |
-| Office 365 EnterpriseE1 \_ DE (STANDARDPACK \_ DE) | Office 365 EnterpriseE1 (STANDARDPACK) |
-| Office 365 EnterpriseE3 \_ DE (ENTERPRISEPACK \_ DE) | Office 365 EnterpriseE3 (ENTERPRISEPACK) |
-| Office 365Extra File Storage \_ DE (SHAREPOINTSTORAGE \_ DE) | Office 365追加のファイル Storage (SHAREPOINTSTORAGE) |
-| \_Office 365 F1DE (DESKLESSPACK \_ DE) | Office 365 F1 (DESKLESSPACK) |
-| Office 365 ProPlus DE \_ (OFFICESUBSCRIPTION \_ FACULTY \_ DE) | Office 365 ProPlus教員向け情報 (OFFICESUBSCRIPTION \_ FACULTY) |
-| Office 365 ProPlus DE \_ (OFFICESUBSCRIPTION Student \_ \_ DE) | Office 365 ProPlus (OFFICESUBSCRIPTION \_ Student) |
-| \_Office 365 ProPlusDE (OFFICESUBSCRIPTION \_ DE) | Office 365 ProPlus (OFFICESUBSCRIPTION) |
-| \_OneDrive for Business (Plan 1)DE (WACONEDRIVESTANDARD \_ DE) | OneDrive for Business (Plan 1) (WACONEDRIVESTANDARD) |
-| \_OneDrive for Business (Plan 2)DE (WACONEDRIVEENTERPRISE \_ DE) | OneDrive for Business (Plan 2) (WACONEDRIVEENTERPRISE) |
-| Power BI Pro DE \_ (POWER \_ BI \_ PRO \_ FACULTY \_ DE) | Power BI Pro教員向け情報 (POWER \_ BI \_ PRO \_ FACULTY) |
-| \_Power BI ProDE (POWER \_ BI \_ PRO \_ DE) | Power BI Pro (POWER \_ BI \_ PRO) |
-| \_Project Online EssentialsDE (PROJECTESSENTIALS \_ DE) | Project Online Essentials (PROJECTESSENTIALS) |
-| \_Project Online PremiumDE (PROJECTPREMIUM \_ DE) | Project Online Premium (PROJECTPREMIUM) |
-| \_Project Online ProfessionalDE (PROJECTPROFESSIONAL \_ DE) | Project Online Professional (PROJECTPROFESSIONAL) |
-| \_Project Plan 3DE (PROJECTPROFESSIONAL \_ DE) | Project Plan 3 (PROJECTPROFESSIONAL) |
-| Office 365E4 \_ DE (ENTERPRISEWITHSCAL \_ DE) | Office 365 E3 (ENTERPRISEPACK) |
-| \_SharePoint Online (プラン 1)DE (SHAREPOINTSTANDARD \_ DE) | SharePoint Online (プラン 1) (SHAREPOINTSTANDARD) |
-| \_SharePoint Online (プラン 2)DE (SHAREPOINTENTERPRISE \_ DE) | SharePoint Online (プラン 2) (SHAREPOINTENTERPRISE) |
-| Skype for Businessオンライン (プラン 1) \_ DE (MCOIMP \_ DE) | Office 365 E1 (STANDARDPACK) |
-| Skype for Businessオンライン (プラン 1) \_ DE (MCOIMP \_ DE) | Skype for Businessオンライン (プラン 1) (MCOIMP) |
-| Skype for Businessオンライン (プラン 2) \_ DE (MCOSTANDARD \_ DE) | Skype for Businessオンライン (プラン 2) (MCOSTANDARD) |
-| Skype for BusinessPlus CAL \_ DE (MCOPLUSCAL \_ DE) | Skype for BusinessPlus CAL (MCOPLUSCAL) |
-| Visioオンライン プラン 1 for faculty \_ DE (VISIOONLINE \_ PLAN1 \_ FAC \_ DE) | Visio教職員向けオンライン プラン 1 (VISIOONLINE \_ PLAN1 \_ FAC) |
-| Visioオンライン プラン 1 \_ DE (VISIOONLINE \_ \_ PLAN1 DE) | Visioオンライン プラン 1 (VISIOONLINE \_ PLAN1) |
-| Visioオンライン プラン 2 for faculty \_ DE (VISIOCLIENT \_ FACULTY \_ DE) | Visio教職員向けオンライン プラン 2 (VISIOCLIENT \_ FACULTY) |
-| Visioオンライン プラン 2 \_ DE (VISIOCLIENT \_ DE) | Visioオンライン プラン 2 (VISIOCLIENT) |
-| \_Visio Plan 1DE (VISIOONLINE \_ PLAN1 \_ DE) | Visio Plan 1 (VISIOONLINE \_ PLAN1) |
-| \_Visio Plan 2DE (VISIOCLIENT \_ DE) | Visio Plan 2 (VISIOCLIENT) |
+| Office 365 Business Essentials \_ DE (O365 \_ \_ BUSINESS ESSENTIALS \_ DE) | Microsoft 365 Business Basic (O365 \_ BUSINESS \_ ESSENTIALS) |
+| Office 365 Business Premium DE \_ (O365 \_ \_ BUSINESS PREMIUM \_ DE) | Microsoft 365 Business Standard (O365 \_ BUSINESS \_ PREMIUM) |
+| Office 365ビジネス \_DE (O365 \_ BUSINESS \_ DE) | Microsoft 365 Apps for business (O365 \_ BUSINESS) |
+| Office 365 E1 \_ DE (STANDARDPACK \_ DE) | Office 365 E1 (STANDARDPACK) |
+| Office 365 E3 ProPlus を使用しない場合 \_DE (ENTERPRISEPACKWITHOUTPROPLUS \_ DE) | Office 365 E3なし (ENTERPRISEPACKWITHOUTPROPLUS) |
+| Office 365 E3 DE \_ (ENTERPRISEPACK \_ DE) | Office 365 E3 (ENTERPRISEPACK) |
+| Office 365 Enterprise E1 \_DE (STANDARDPACK \_ DE) | Office 365 Enterprise E1 (STANDARDPACK) |
+| Office 365 Enterprise E3 \_DE (ENTERPRISEPACK \_ DE) | Office 365 Enterprise E3 (ENTERPRISEPACK) |
+| Office 365 エクストラ ファイル Storage DE \_ (SHAREPOINTSTORAGE \_ DE) | Office 365 ファイルの追加Storage (SHAREPOINTSTORAGE) |
+| Office 365 F1 DE \_ (DESKLESSPACK \_ DE) | Office 365 F1 (DESKLESSPACK) |
+| Office 365 ProPlus教員向け \_DE (OFFICESUBSCRIPTION \_ FACULTY \_ DE) | Office 365 ProPlus教員向け情報 (OFFICESUBSCRIPTION \_ FACULTY) |
+| Office 365 ProPlus学生向け \_DE (OFFICESUBSCRIPTION \_ STUDENT \_ DE) | Office 365 ProPlus (OFFICESUBSCRIPTION \_ Student) |
+| Office 365 ProPlus \_ DE (OFFICESUBSCRIPTION \_ DE) | Office 365 ProPlus (OFFICESUBSCRIPTION) |
+| OneDrive for Business (Plan 1) DE \_ (WACONEDRIVESTANDARD \_ DE) | OneDrive for Business (Plan 1) (WACONEDRIVESTANDARD) |
+| OneDrive for Business (Plan 2) \_ DE (WACONEDRIVEENTERPRISE \_ DE) | OneDrive for Business (Plan 2) (WACONEDRIVEENTERPRISE) |
+| Power BI Pro教員向け \_DE (POWER \_ BI \_ PRO \_ FACULTY \_ DE) | Power BI Pro教員向け情報 (POWER \_ BI \_ PRO \_ FACULTY) |
+| Power BI Pro DE \_ (POWER \_ BI \_ PRO \_ DE) | Power BI Pro (POWER \_ BI \_ PRO) |
+| Project Online Essentials DE \_ (PROJECTESSENTIALS \_ DE) | Project Online Essentials (PROJECTESSENTIALS) |
+| Project Online Premium DE \_ (PROJECTPREMIUM \_ DE) | Project Online Premium (PROJECTPREMIUM) |
+| Project Online Professional DE \_ (PROJECTPROFESSIONAL \_ DE) | Project Online Professional (PROJECTPROFESSIONAL) |
+| Project Plan 3 \_ DE (PROJECTPROFESSIONAL \_ DE) | Project Plan 3 (PROJECTPROFESSIONAL) |
+| Office 365 E4 \_DE (ENTERPRISEWITHSCAL \_ DE) | Office 365 E3 (ENTERPRISEPACK) |
+| SharePoint Online (プラン 1) DE \_ (SHAREPOINTSTANDARD \_ DE) | SharePoint Online (プラン 1) (SHAREPOINTSTANDARD) |
+| SharePoint Online (プラン 2) \_ DE (SHAREPOINTENTERPRISE \_ DE) | SharePoint Online (プラン 2) (SHAREPOINTENTERPRISE) |
+| Skype for Business オンライン (プラン 1) \_DE (MCOIMP \_ DE) | Office 365 E1 (STANDARDPACK) |
+| Skype for Business オンライン (プラン 1) \_DE (MCOIMP \_ DE) | Skype for Business オンライン (プラン 1) (MCOIMP) |
+| Skype for Business オンライン (プラン 2) \_DE (MCOSTANDARD \_ DE) | Skype for Business (プラン 2) (MCOSTANDARD) |
+| Skype for Business Plus CAL \_DE (MCOPLUSCAL \_ DE) | Skype for Business Plus CAL (MCOPLUSCAL) |
+| Visioオンライン プラン 1 (教職員向け) \_DE (VISIOONLINE \_ PLAN1 \_ FAC \_ DE) | Visioオンライン プラン 1 (VISIOONLINE \_ PLAN1 \_ FAC) |
+| Visioオンライン プラン 1 \_DE (VISIOONLINE \_ PLAN1 \_ DE) | Visioオンライン プラン 1 (VISIOONLINE \_ PLAN1) |
+| Visioオンライン プラン 2 (教職員向け) \_DE (VISIOCLIENT \_ FACULTY \_ DE) | Visioオンライン プラン 2 for faculty (VISIOCLIENT \_ FACULTY) |
+| Visioオンライン プラン 2 \_DE (VISIOCLIENT \_ DE) | Visio プラン 2 (VISIOCLIENT) |
+| Visio Plan 1 DE \_ (VISIOONLINE \_ PLAN1 \_ DE) | Visio Plan 1 (VISIOONLINE \_ PLAN1) |
+| Visio Plan 2 \_ DE (VISIOCLIENT \_ DE) | Visio Plan 2 (VISIOCLIENT) |
 |||
 
 ### <a name="how-do-i-get-help-from-microsoft-to-migrate-to-a-new-region-or-answer-support-questions"></a>新しいリージョンに移行したりサポートの質問に答えたりするために、Microsoft からヘルプを得るにはどうすればよいですか ?
@@ -285,7 +285,7 @@ Microsoft Cloud Deutschland から Office 365 サービスへの移行中に、�
 - このOffice 365、ヘルプが必要ですか? リンクを使用して質問 &quot; &quot; を送信[Microsoft 365 管理センター。](https://portal.office.de/)
 - Dynamics 365 Customer Engagement および Power BI のお客様で、Office 365 をお持ちのお客様は、Microsoft 365 管理センター の [ヘルプが必要ですか? ] リンク &quot; &quot; を使用して質問[を送信できます](https://portal.office.de/)。 Dynamics 365 Customer Engagement のサポート オプションは[こちら](/dynamics365/get-started/support/)にあります。 Power BI のサポート オプションは[こちら](https://powerbi.microsoft.com/support/)にあります。
 
-### <a name="my-customer-already-has-a-m365-tenant-in-the-global-microsoft-cloud-in-addition-to-a-microsoft-cloud-deutschland-tenant-can-these-two-tenants-be-merged-into-one-as-part-of-the-migration"></a>お客様は、Microsoft Cloud Deutschland テナントに加えて、グローバル Microsoft クラウドに M365 テナントを既に持っています。 移行の一環として、これら 2 つのテナントを 1 にマージできますか?
+### <a name="my-customer-already-has-a-microsoft-365-tenant-in-the-global-microsoft-cloud-in-addition-to-a-microsoft-cloud-deutschland-tenant-can-these-two-tenants-be-merged-into-one-as-part-of-the-migration"></a>Microsoft Cloud Deutschland テナントMicrosoft 365に加えて、グローバル Microsoft クラウドに顧客が既にテナントを持っています。 移行の一環として、これら 2 つのテナントを 1 にマージできますか?
 
 いいえ、テナントのマージ機能はありません。 テナントは、各テナントに独自の名前空間と一意の ID を持つので、独立した一意の状態を維持します。 Microsoft は、必要に応じて Microsoft Cloud Deutschland テナントをグローバル クラウドに移行するか、それ以外の場合はキャンセルして破棄できます。
 
@@ -348,7 +348,7 @@ For Business Skypeのすべてのユーザーは、ユーザーにMicrosoft Team
 
 - [移行フェーズのアクションと影響](ms-cloud-germany-transition-phases.md)
 - [その他の作業前](ms-cloud-germany-transition-add-pre-work.md)
-- Azure [AD、デバイス](ms-cloud-germany-transition-add-devices.md)[、](ms-cloud-germany-transition-azure-ad.md)[エクスペリエンス](ms-cloud-germany-transition-add-experience.md)、および FS のAD[情報](ms-cloud-germany-transition-add-adfs.md)です。
+- FS の[詳細Azure AD](ms-cloud-germany-transition-azure-ad.md)[デバイス](ms-cloud-germany-transition-add-devices.md)、[エクスペリエンス](ms-cloud-germany-transition-add-experience.md)、およびAD[です](ms-cloud-germany-transition-add-adfs.md)。
 
 クラウド アプリ:
 

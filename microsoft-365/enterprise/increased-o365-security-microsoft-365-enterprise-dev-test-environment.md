@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: このテスト ラボ ガイドを使用して、エンタープライズ テスト環境Microsoft 365セキュリティ設定Microsoft 365を有効にします。
-ms.openlocfilehash: 3976ad11b6cac7ae74e0fd2d94ad35b610273052
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 5d431bba21c02daf2ec5af384e2d4fde53ab6edb
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60960864"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111701"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-for-enterprise-test-environment"></a>エンタープライズ テストMicrosoft 365のセキュリティMicrosoft 365強化
 
@@ -110,7 +110,7 @@ Microsoft 365 の脅威管理は、組織のデータへのモバイル デバ�
 
 Microsoft Secure Score は、サブスクリプションで利用可能な機能に対する現在のレベルを示す、セキュリティの姿勢を数値で示します。 また、スコアを向上させるために実行できる改善アクションの一覧も表示されます。
 
-1. ブラウザーで新しいタブを作成し、セキュリティ センターのMicrosoft 365 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">に</a>移動し、[スコアのセキュリティ保護]**をクリックします**。
+1. ブラウザーで新しいタブを作成し、ポータルの [セキュリティで保護 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender]</a>を **クリックします**。
 2. [概要 **] タブ**  で、現在の Secure Score と、それがグローバル平均とサブスクリプションと同じ数のライセンスと比較する方法をメモします。
 3. [改善アクション **] タブ** で、スコアを上げするために実行できるアクションの一覧を確認します。
 

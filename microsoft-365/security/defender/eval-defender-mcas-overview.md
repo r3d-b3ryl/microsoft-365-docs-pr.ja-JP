@@ -1,5 +1,5 @@
 ---
-title: 概要Microsoft Cloud App Security評価する
+title: Microsoft Defender for Cloud Apps の概要を評価する
 description: 組織のデバイス、ID、データ、およびアプリケーションを保護するように設計されたセキュリティ ソリューションを試して体験するための、Microsoft 365 Defender 試用版ラボまたはパイロット環境をセットアップする手順。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,23 +21,23 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 61b3f7f0e687ca2736180a6a353d90c214ee48db
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 48f315842deadfeda9d8e46b40bf5271b23c4cdb
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210689"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110681"
 ---
-# <a name="evaluate-microsoft-cloud-app-security"></a>評価Microsoft Cloud App Security
+# <a name="evaluate-microsoft-defender-for-cloud-apps"></a>Microsoft Defender for Cloud Apps の評価
 
 **適用対象:**
 - Microsoft 365 Defender
 
 
-この記事では、プロセスの概要を説明し、Microsoft Cloud App Securityと共にMicrosoft 365 Defender。 このプロセスを開始する前に、評価プロセス全体を確認し、Microsoft 365 Defender評価[](eval-overview.md)環境をMicrosoft 365 Defender[してください](eval-create-eval-environment.md)。 
+この記事では、Microsoft Defender for Cloud Apps を有効にしてパイロットするプロセスの概要と、クラウド アプリのMicrosoft 365 Defender。 このプロセスを開始する前に、評価プロセス全体を確認し、Microsoft 365 Defender評価[](eval-overview.md)環境をMicrosoft 365 Defender[してください](eval-create-eval-environment.md)。 
 <br>
 
-Microsoft クラウド アプリのセキュリティを有効にしてパイロットするには、次の手順を使用します。
+次の手順を使用して、Microsoft Defender for Cloud Apps を有効にしてパイロットします。
 
 ![Defender 評価環境に Microsoft Defender を追加Office手順を実行します。](../../media/defender/m365-defender-office-eval-steps.png)
 
@@ -45,9 +45,6 @@ Microsoft クラウド アプリのセキュリティを有効にしてパイロ
 
 |手順  |説明  |
 |---------|---------|
-|[アーキテクチャ要件と主な概念を確認する](eval-defender-mcas-architecture.md)    | セキュリティ アーキテクチャCloud App Security、および Microsoft Defender for Endpoint、および Microsoft 365 Defenderとどのように統合されるかをAzure Active Directory。        |
+|[アーキテクチャ要件と主な概念を確認する](eval-defender-mcas-architecture.md)    | Defender for Cloud Apps のアーキテクチャと、そのアーキテクチャを Microsoft 365 Defender、Microsoft Defender for Endpoint、および Azure Active Directory と統合する方法について説明します。        |
 |[評価環境を有効にする](eval-defender-mcas-enable-eval.md)     | Connectにアクセスし、Defender for Identity や組織のネットワーク デバイスとの統合を構成し、クラウド アプリの表示と管理を開始します。         |
 |[パイロットのセットアップ ](eval-defender-mcas-pilot.md)    | 展開の範囲を特定のユーザー グループに設定し、条件付きアクセス アプリ制御を構成し、環境を保護するためのチュートリアルを試します。       |
-
-
-

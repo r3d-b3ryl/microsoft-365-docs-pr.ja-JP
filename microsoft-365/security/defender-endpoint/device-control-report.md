@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 16c899ca895e73f51bc0d72f20e008f367cfe731
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 88d7750519690717070e090ddc42042866412d33
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60588354"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109841"
 ---
 # <a name="device-control-report"></a>デバイス制御レポート
 
@@ -45,7 +45,7 @@ Microsoft Defender for Endpoint デバイスコントロールは、リムーバ
 
 ## <a name="monitor-device-control-security"></a>デバイス制御のセキュリティを監視する
 
-Microsoft Defender for Endpoint のデバイス制御により、セキュリティ管理者は、レポートを通じて組織のデバイス制御セキュリティを追跡できるツールを使用できます。 [デバイスの保護のレポート] にアクセスして、Microsoft 365セキュリティ センターでデバイス **制御レポート>確認できます**。
+Microsoft Defender for Endpoint のデバイス制御により、セキュリティ管理者は、レポートを通じて組織のデバイス制御セキュリティを追跡できるツールを使用できます。 [デバイス保護のレポート] にアクセスして、Microsoft 365 Defenderポータルでデバイス **制御レポート>確認できます**。
 
 [レポート] ダッシュボードの **[** デバイス保護] カードには、過去 180 日間にメディアの種類によって生成された監査イベントの数が表示されます。
 

@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 09e4b386d61835f4e15e208aaa64c69ddf85e112
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b1b9c6e2dbb414aea8f40ccafacb338e66266bae
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162990"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109061"
 ---
 # <a name="partner-applications-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint のパートナー アプリケーション
 
@@ -51,10 +51,10 @@ Microsoft Defender for Endpoint は、既存のセキュリティ ソリュー�
 
 ### <a name="security-information-and-analytics"></a>セキュリティ情報と分析
 
-ロゴ|パートナー名|説明
+ロゴ|パートナー名|[説明]
 :---|:---|:---
 ![AttackIQ ロゴのイメージ。](images/attackiq-logo.png)|[AttackIQ プラットフォーム](https://go.microsoft.com/fwlink/?linkid=2103502)|AttackIQ プラットフォームは、運用資産に対する継続的な攻撃を安全に起動することにより、Defender for Endpoint が適切に構成されていることを検証します。
-![Azure Sentinel ロゴのイメージ。](images/sentinel-logo.png)|[AzureSentinel](https://go.microsoft.com/fwlink/?linkid=2135705)|Microsoft Defender for Endpoint から Azure Sentinel へのアラートのストリーミング
+![Microsoft Sentinel ロゴの画像。](images/sentinel-logo.png)|[AzureSentinel](https://go.microsoft.com/fwlink/?linkid=2135705)|Microsoft Defender for Endpoint から Microsoft Sentinel へのアラートのストリーミング
 ![Cymulate ロゴのイメージ。](images/cymulate-logo.png)|[Cymulate](https://go.microsoft.com/fwlink/?linkid=2135574)|Defender for Endpoint の結果とシミュレートされた攻撃を関連付けて、正確な検出と効果的な対応アクションを検証する
 ![Elastic セキュリティ ロゴのイメージ。](images/elastic-security-logo.png)|[Elastic Security](https://go.microsoft.com/fwlink/?linkid=2139303)|Elastic Security は、脅威を防止、検出、および対応するための無料でオープンなソリューションです。
 ![IBM QRadar ロゴのイメージ。](images/ibm-qradar-logo.png)|[IBM QRadar](https://go.microsoft.com/fwlink/?linkid=2113903)|Defender for Endpoint から検出を収集する IBM QRadar を構成する
@@ -67,7 +67,7 @@ Microsoft Defender for Endpoint は、既存のセキュリティ ソリュー�
 
 ### <a name="orchestration-and-automation"></a>オーケストレーションと自動化
 
-ロゴ|パートナー名|説明
+ロゴ|パートナー名|[説明]
 :---|:---|:---
 ![CyberSponse CyOps ロゴの画像。](images/cybersponse-logo.png)|[CyberSponse CyOps](https://go.microsoft.com/fwlink/?linkid=2115943)|CyOps は Defender for Endpoint と統合し、お客様の高速インシデント対応プレイブックを自動化します
 ![デルタ リスク ActiveEye ロゴのイメージ。](images/delta-risk-activeeye-logo.png)|[デルタ リスク ActiveEye](https://go.microsoft.com/fwlink/?linkid=2127468)|サービスとしての SOC およびセキュリティ サービスのリーディング プロバイダーであるデルタ リスクは、Defender for Endpoint とクラウドネイティブの SOAR プラットフォーム ActiveEye を統合します。
@@ -79,7 +79,7 @@ Microsoft Defender for Endpoint は、既存のセキュリティ ソリュー�
 
 ### <a name="threat-intelligence"></a>脅威インテリジェンス
 
-ロゴ|パートナー名|説明
+ロゴ|パートナー名|[説明]
 :---|:---|:---
 ![MISP マルウェア情報共有プラットフォーム)ロゴの画像。](images/misp-logo.png)|[MISP (マルウェア情報共有プラットフォーム)](https://go.microsoft.com/fwlink/?linkid=2127543)|オープンソースの脅威インテリジェンス共有プラットフォームからの脅威インジケーターを Defender for Endpoint 環境に統合する
 ![Palo Alto Networks ロゴのイメージ。](images/paloalto-logo.png)|[Palo Alto Networks](https://go.microsoft.com/fwlink/?linkid=2099582)|MineMeld を使用して、Autofocus などの脅威フィードを Defender for Endpoint に拡張することで、エンドポイント保護を強化する
@@ -87,7 +87,7 @@ Microsoft Defender for Endpoint は、既存のセキュリティ ソリュー�
 
 ### <a name="network-security"></a>ネットワーク セキュリティ
 
-ロゴ|パートナー名|説明
+ロゴ|パートナー名|[説明]
 :---|:---|:---
 ![Aruba ClearPass ポリシー マネージャーのロゴのイメージ。](images/aruba-logo.png)|[Aruba ClearPass ポリシー マネージャー](https://go.microsoft.com/fwlink/?linkid=2127544)|ネットワークへのアクセスを許可する前に、Defender for Endpoint が各エンドポイントにインストールされ、更新されていることを確認する
 ![ネットワーク ロゴの青い六角形のイメージ。](images/bluehexagon-logo.png)|[ネットワーク用青い六角形](https://go.microsoft.com/fwlink/?linkid=2104613)|Blue Hexagon は、ネットワーク脅威保護のための業界初のリアルタイムディープ ラーニング プラットフォームを構築しました
@@ -97,7 +97,7 @@ Microsoft Defender for Endpoint は、既存のセキュリティ ソリュー�
 
 ### <a name="cross-platform"></a>クロス プラットフォーム
 
-ロゴ|パートナー名|説明
+ロゴ|パートナー名|[説明]
 :---|:---|:---
 ![Bitdefender ロゴのイメージ。](images/bitdefender-logo.png)|[Bitdefender](https://go.microsoft.com/fwlink/?linkid=860032)|Bitdefender GravityZone は、高度なサイバー脅威の全範囲に対する包括的な保護を提供する、層構造の次世代エンドポイント保護プラットフォームです。
 ![Better Mobile ロゴのイメージ。](images/bettermobile-logo.png)|[より良いモバイル](https://go.microsoft.com/fwlink/?linkid=2086214)|AI ベースの MTD ソリューションを使用して、フィッシングに対するモバイル&を阻止します。 ユーザーのプライバシーを保護するためのプライベート インターネット閲覧
@@ -108,10 +108,10 @@ Microsoft Defender for Endpoint は、既存のセキュリティ ソリュー�
 
 ## <a name="other-integrations"></a>その他の統合
 
-ロゴ|パートナー名|説明
+ロゴ|パートナー名|[説明]
 :---|:---|:---
 ![Cyren Web Filter ロゴのイメージ。](images/cyren-logo.png)|[Cyren Web Filter](https://go.microsoft.com/fwlink/?linkid=2108221)|高度な Web フィルタリングを使用して Defender for Endpoint を強化する
-![Morphisec ロゴのイメージ。](images/morphisec-logo.png)|[Morphisec](https://go.microsoft.com/fwlink/?linkid=2086215)|移動ターゲットの防御機能を備えた高度な脅威防止を提供します。 forensics データを WD Security Center ダッシュボードに直接統合して、アラートの優先順位付け、デバイスの危険度スコアの決定、内部メモリ情報を含む完全な攻撃タイムラインの可視化に役立ちます。
+![Morphisec ロゴのイメージ。](images/morphisec-logo.png)|[Morphisec](https://go.microsoft.com/fwlink/?linkid=2086215)|移動ターゲットの防御機能を備えた高度な脅威防止を提供します。 forensics データを WD Defender for Cloud ダッシュボードに直接統合して、アラートの優先順位付け、デバイスの危険度スコアの決定、内部メモリ情報を含む完全な攻撃タイムラインの可視化に役立ちます。
 ![THOR Cloud ロゴのイメージ。](images/nextron-thor-logo.png)|[THOR クラウド](https://go.microsoft.com/fwlink/?linkid=862988)|永続的な脅威に焦点を当てた署名ベースを使用して、オンデマンドのライブ forensics スキャンを提供します
 
 ## <a name="siem-integration"></a>SIEM 統合

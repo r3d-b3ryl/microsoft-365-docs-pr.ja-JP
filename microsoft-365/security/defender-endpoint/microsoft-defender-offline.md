@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 12023c7655a8978e5e0ae54b8a2831edda9b9d9e
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 4956382717a9b8c5a7856367fa6c3166c64fd1c9
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883583"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110897"
 ---
 # <a name="run-and-review-the-results-of-a-microsoft-defender-offline-scan"></a>Microsoft Defender オフライン スキャンの結果を実行してレビューする
 
@@ -106,7 +106,7 @@ Microsoft Defender オフラインは、他の Microsoft Defender AV 通知と�
 Start-MpWDOScan
 ```
 
-PowerShell[コマンドレットを](use-powershell-cmdlets-microsoft-defender-antivirus.md)構成して実行する方法の詳細については、「powerShell コマンドレットを使用して Microsoft Defender ウイルス対策 および[Defender](/powershell/module/defender/)コマンドレットを構成および実行する」を参照Microsoft Defender ウイルス対策。
+PowerShell コマンドレットを構成して実行する Microsoft Defender ウイルス対策 および[Defender for Cloud](/powershell/module/defender/)コマンドレットの詳細については、「PowerShell コマンドレットとクラウド コマンドレットを使用する」を参照Microsoft Defender ウイルス対策。 [](use-powershell-cmdlets-microsoft-defender-antivirus.md)
 
 ### <a name="use-windows-management-instruction-wmi-to-run-an-offline-scan"></a>オフライン Windowsを実行するには、管理者管理命令 (WMI) を使用します。
 
@@ -120,11 +120,11 @@ wmic /namespace:\\root\Microsoft\Windows\Defender path MSFT_MpWDOScan call Start
 
 詳細については、以下を参照してください。
 
-- [Windows DefenderWMIv2 API](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+- [Windows Defender WMIv2 API](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 ### <a name="use-the-windows-defender-security-app-to-run-an-offline-scan"></a>Windows Defender セキュリティ アプリを使用してオフライン スキャンを実行する
 
-1. タスク バーのWindows セキュリティをクリックするか、Defender のスタート メニューを検索して、アプリを開 **きます**。
+1. タスク バーのWindows セキュリティをクリックするか、Defender for Cloud のスタート メニューを検索して、アプリ **を開きます**。
 
 2. [ウイルス **対策] &タイル** (または左側のメニュー バーのシールド アイコン) をクリックし、[高度なスキャン] **ラベルをクリック** します。
 

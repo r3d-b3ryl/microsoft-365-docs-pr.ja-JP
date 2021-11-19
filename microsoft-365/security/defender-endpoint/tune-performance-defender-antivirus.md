@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 40b683a04527eb4a528f2aeaa25071e94fdd62e0
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 00e03927696d32eb72991a5eaa82643325b59925
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60884015"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110441"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>パフォーマンス アナライザー (Microsoft Defender ウイルス対策
 
@@ -53,7 +53,7 @@ ms.locfileid: "60884015"
 
    `New-MpPerformanceRecording -RecordTo <recording.etl>`
  
-    where `-RecordTo` パラメーターは、トレース ファイルが保存される完全なパスの場所を指定します。 コマンドレットの詳細については [、「Defender」を参照してください](/powershell/module/defender)。
+    where `-RecordTo` パラメーターは、トレース ファイルが保存される完全なパスの場所を指定します。 コマンドレットの詳細については、「Microsoft Defender ウイルス対策[コマンドレット」を参照してください](/powershell/module/defender)。
 
 2. パフォーマンスに影響を与えるプロセスまたはサービスがある場合は、関連するタスクを実行して状況を再現します。
 
@@ -123,7 +123,7 @@ New-MpPerformanceRecording -RecordTo <String >
 
 **サポートされている OS のバージョン**
 
-Windowsバージョン 10 以降。
+Windows 10 以降を参照してください。
 
 > [!NOTE]
 > この機能は、プラットフォーム バージョン 4.18.2108.X 以降で使用できます。
@@ -197,7 +197,7 @@ Get-MpPerformanceReport    [-Path] <String>
 
 **サポートされている OS のバージョン**
 
-Windowsバージョン 10 以降。
+Windows 10 以降を参照してください。
 
 > [!NOTE]
 > この機能は、プラットフォーム バージョン 4.18.2108.X 以降で使用できます。
@@ -457,4 +457,3 @@ Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
-

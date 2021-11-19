@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: ddf7af50edd8f86ec7bc176d851ae2ba98b8fa51
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0d577426477ea0ebc5fc4e6d83fa84fcfc113123
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60181153"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111521"
 ---
 # <a name="enable-microsoft-defender-for-endpoint-evaluation-environment"></a>エンドポイント評価環境で Microsoft Defender を有効にする
 
@@ -80,7 +80,7 @@ Microsoft Defender for Endpoint の評価を行う目的で、評価を実行す
 
 エンドポイント | ツール オプション
 :---|:---
-**Windows** | [ローカル スクリプト (最大 10](../defender-endpoint/configure-endpoints-script.md)台のデバイス) [、](../defender-endpoint/configure-endpoints-gp.md)グループ ポリシー 、 [Microsoft エンドポイント マネージャー/](../defender-endpoint/configure-endpoints-mdm.md)Mobile Device Manager [、](../defender-endpoint/configure-endpoints-sccm.md)Microsoft Endpoint Configuration Manager 、 [VDI スクリプト](../defender-endpoint/configure-endpoints-vdi.md)、 Azure Defender との[統合](../defender-endpoint/configure-server-endpoints.md#integration-with-azure-defender)
+**Windows** | [ローカル スクリプト (最大 10](../defender-endpoint/configure-endpoints-script.md)台のデバイス) [、](../defender-endpoint/configure-endpoints-gp.md)グループ ポリシー 、 [Microsoft エンドポイント マネージャー/](../defender-endpoint/configure-endpoints-mdm.md)Mobile Device Manager 、 [Microsoft Endpoint Configuration Manager](../defender-endpoint/configure-endpoints-sccm.md)、 [VDI スクリプト](../defender-endpoint/configure-endpoints-vdi.md)、 [Microsoft Defender for Cloud](../defender-endpoint/configure-server-endpoints.md#integration-with-azure-defender)との統合
 **macOS** | [ローカル スクリプト](../defender-endpoint/mac-install-manually.md)、 [Microsoft エンドポイント マネージャー](../defender-endpoint/mac-install-with-intune.md)、 [JAMF Pro](../defender-endpoint/mac-install-with-jamf.md)、[モバイル デバイス管理](../defender-endpoint/mac-install-with-other-mdm.md)
 **Linux Server** | [ローカル スクリプト](../defender-endpoint/linux-install-manually.md)、  [Puppet](../defender-endpoint/linux-install-with-puppet.md)、  [Ansible](../defender-endpoint/linux-install-with-ansible.md)
 **iOS** | [アプリベース](../defender-endpoint/ios-install.md)

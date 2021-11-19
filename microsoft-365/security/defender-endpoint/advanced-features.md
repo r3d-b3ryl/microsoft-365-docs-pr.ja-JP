@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ba613d2368bbb7cbefdaaaea30595bdc235a41ef
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: f0b66558e74a0a71ab158621d5b8e9aa703f6d16
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963229"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110141"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Defender for Endpoint で高度な機能を構成する
 
@@ -174,16 +174,16 @@ Microsoft Defender for Identity との統合により、別の Microsoft Identit
 > [!NOTE]
 > Defender for Endpoint Microsoft 脅威エキスパートの機能は、エンドポイントの E5 ライセンスで[Enterprise Mobility + Security。](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
 
-## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
+## <a name="microsoft-defender-for-cloud-apps"></a>Microsoft Defender for Cloud Apps
 
-この設定を有効にすると、Defender for Endpoint シグナルMicrosoft Cloud App Securityに転送され、クラウド アプリケーションの使用状況を詳細に確認できます。 転送されたデータは、ユーザーのデータと同じ場所にCloud App Securityされます。
+この設定を有効にすると、Defender for Endpoint シグナルが Microsoft Defender for Cloud Apps に転送され、クラウド アプリケーションの使用状況を詳細に可視化できます。 転送されたデータは、Defender for Cloud Apps データと同じ場所に格納され、処理されます。
 
 > [!NOTE]
 > この機能は、Windows 10 バージョン 1709 (OS ビルド 16299.1085 および[KB4493441)](https://support.microsoft.com/help/4493441)、Windows 10 バージョン 1803 (OS ビルド 17134.704 [KB449344)](https://support.microsoft.com/help/4493464)、Windows 10 Version 1809 [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) (OS ビルド 17763.379[および KB4489899)、Windows 10](https://support.microsoft.com/help/4489899)バージョン、または 11 Windowsします。
 
 ## <a name="microsoft-secure-score"></a>Microsoft セキュア スコア
 
-Microsoft Defender for Endpoint シグナルをセキュリティ センターの Microsoft Secure Score に転送Microsoft 365します。 この機能を有効にすることで、Microsoft Secure Score でデバイスのセキュリティ状態を確認できます。 転送されたデータは、Microsoft Secure Score データと同じ場所に保存および処理されます。
+Microsoft Defender for Endpoint シグナルを、ポータルの Microsoft Secure Score に転送Microsoft 365 Defenderします。 この機能を有効にすることで、Microsoft Secure Score でデバイスのセキュリティ状態を確認できます。 転送されたデータは、Microsoft Secure Score データと同じ場所に保存および処理されます。
 
 ### <a name="enable-the-microsoft-defender-for-endpoint-integration-from-the-microsoft-defender-for-identity-portal"></a>Microsoft Defender for Identity ポータルから Microsoft Defender for Endpoint の統合を有効にする
 

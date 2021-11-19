@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 144cc0159fbd717015a16251f21ac32d0601fcf4
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: ae1b168418b3a4a7814195f42297ac57622e6c6f
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064126"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111305"
 ---
 # <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>iOS 上の Microsoft Defender for Endpoint で問題のトラブルシューティングを行い、FAQ に対する回答を見つける
 
@@ -82,7 +82,7 @@ Microsoft Defender for Endpoint では、ローカル/ループバック VPN を
 
 ## <a name="malicious-site-detected"></a>悪意のあるサイトが検出されました
 
-Microsoft Defender for Endpoint は、フィッシングなどの Web ベースの攻撃からユーザーを保護します。 悪意のあるサイトが検出されると、接続がブロックされ、組織のセキュリティ センター ポータルにアラートが送信されます。 アラートには、接続のドメイン名、リモート IP アドレス、デバイスの詳細が含まれます。
+Microsoft Defender for Endpoint は、フィッシングなどの Web ベースの攻撃からユーザーを保護します。 悪意のあるサイトが検出されると、接続がブロックされ、組織のポータルに通知がMicrosoft 365 Defenderされます。 アラートには、接続のドメイン名、リモート IP アドレス、デバイスの詳細が含まれます。
 
 さらに、iOS デバイスに通知が表示されます。 通知をタップすると、ユーザーが詳細を確認する次の画面が開きます。
 
@@ -124,6 +124,3 @@ Defender for Endpoint コンテンツ フィルターがインストールされ
   - 指定されたオプションから選択します。 問題を報告するには、[気に入らない **] を選択します**。
   - 直面している問題の詳細を入力し、[診断データの送信 **] をオンにしてください**。 チームからソリューションまたはフォローアップの連絡を受け取る場合は、電子メール アドレスを含める必要があります。
   - [送信 **] を** タップして、フィードバックを正常に送信します。
-
-
-

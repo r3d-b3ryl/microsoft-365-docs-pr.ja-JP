@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fcfce563a177dd90e312da2da3bc578ec39b15b5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a81a83e3e915c4294bd0947bbd989b321fea11ed
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152048"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111581"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>エンドポイント用 Microsoft Defender の最小要件
 
@@ -61,14 +61,14 @@ Microsoft Defender for Endpoint を使用するには、次のいずれかの Mi
 
 Microsoft Defender for Endpoint for servers には、次のいずれかのライセンス オプションが必要です。
 
-- [Azure Defender が有効になっている Azure セキュリティ センター](/azure/security-center/security-center-pricing)
+- [強化されたセキュリティ機能を有効にした Microsoft Defender for Cloud](/azure/security-center/enable-enhanced-security)
 - Microsoft Defender for Endpoint for Server (対象サーバーごとに 1 つ)
 
 > [!NOTE]
 > お客様は、以下のユーザー ライセンスの 1 つ以上に対して最低 50 ライセンスを合計している場合、Microsoft Defender for Endpoint for Servers のサーバー ライセンス (対象サーバーのオペレーティング システム環境 (OSE) ごとに 1 つ) を取得できます。
 >
 > - Microsoft Defender for Endpoint
-> - WindowsE5/A5
+> - Windows E5/A5
 > - Microsoft 365 E5/A5
 > - Microsoft 365 E5/A5 セキュリティ
 
@@ -99,7 +99,7 @@ Defender for Endpoint へのアクセスはブラウザーを介して行われ�
 - Windows 11 Pro
 - Windows 11 Pro Education
 - Windows 10 Enterprise
-- [Windows 10 EnterpriseLTSC 2016 (以降)](/windows/whats-new/ltsc/)
+- [Windows 10 Enterprise LTSC 2016 (以降)](/windows/whats-new/ltsc/)
 - Windows 10 Education
 - Windows 10 Pro
 - Windows 10 Pro Education
@@ -107,7 +107,7 @@ Defender for Endpoint へのアクセスはブラウザーを介して行われ�
   - Windows Server 2008 R2 SP1
   - Windows Server 2012 R2
   - Windows Server 2016
-  - Windowsサーバー、バージョン 1803 以降
+  - Windows Server バージョン 1803 以降
   - Windows Server 2019
   - Windows Server 2022
 - Windows Virtual Desktop
@@ -211,7 +211,7 @@ Defender for Endpoint デバイスでセキュリティ インテリジェンス
 > [!NOTE]
 > 通常のグループ ポリシーはタンパープロテクションには適用されません。タンパープロテクションがオンの場合、Microsoft Defender ウイルス対策設定への変更は無視されます。
 
-## <a name="microsoft-defender-antivirus-early-launch-antimalware-elam-driver-is-enabled"></a>Microsoft Defender ウイルス対策早期起動マルウェア対策 (ELAM) ドライバーが有効になっている
+## <a name="microsoft-defender-antivirus-early-launch-antimalware-elam-driver-is-enabled"></a>Microsoft Defender ウイルス対策起動マルウェア対策 (ELAM) ドライバーが有効になっている場合
 
 デバイスでマルウェア対策Microsoft Defender ウイルス対策として実行している場合、Defender for Endpoint エージェントは正常にオンボードされます。
 

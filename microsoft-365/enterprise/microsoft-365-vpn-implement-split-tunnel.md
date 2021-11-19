@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Office 365 向けに VPN スプリット トンネリングを実装する方法
-ms.openlocfilehash: 1a1b0ecf47e6644db926aae97386a4e5bf0217cf
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ea1c699b7d63b9e57ddf73ce7a44b65c290acba5
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60166996"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111480"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>Office 365 向け VPN スプリット トンネリングの実装
 
@@ -51,17 +51,17 @@ Microsoft は、お客様や幅広い業界と長年にわたって緊密に連�
 
 以下のリストには、企業での環境で最も一般的な VPN のシナリオを表示しています。 ほとんどの企業は、従来モデル 1 (VPN 強制トンネリング) を運用しています。 このセクションでは、比較的少ない労力で達成できるモデル **2** に迅速かつ安全に移行するのに役立ち、ネットワーク パフォーマンスとユーザー エクスペリエンスに大きなメリットがあります。
 
-| モデル | 説明 |
+| モデル | [説明] |
 | --- | --- |
 | [1. VPN 強制トンネリング](#1-vpn-forced-tunnel) | トラフィックの 100% は、オンプレミス、インターネット、およびすべての O365/M365 を含む VPN トンネルに入ります |
 | [2. いくつかの例外を含む VPN 強制トンネリング](#2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions) | VPN トンネルが既定で使用され (既定のルート ポイントが VPNに繋がっている)、直接のアクセスが許可される最も重要な除外シナリオはほとんど使用されない。 |
 | [3. 広範囲な例外を含む VPN 強制トンネリング](#3-vpn-forced-tunnel-with-broad-exceptions) | VPN トンネルが既定で使用されているものの (既定のルートが VPN を指し示している)、直接アクセスが許可されている例外が広範囲にある (すべての Office 365、すべての Salesforce、すべての Zoom など) |
 | [4. VPN 選択的トンネリング](#4-vpn-selective-tunnel) | VPN トンネルは、corpnet ベースのサービスにのみ使用されます。 既定のルート (インターネットとすべてのインターネット ベースのサービス) は直接行きます。 |
-| [5. VPN なし](#5-no-vpn) | 従来の VPN の代わりに、すべてのコープネット サービスが最新のセキュリティ アプローチ (Zscaler ZPA、Azure Active Directory (Azure AD) プロキシ/MCAS など) を通じて公開される #2 のバリエーション。 |
+| [5. VPN なし](#5-no-vpn) | 従来の VPN の代わりに、すべてのコープネット サービスが最新のセキュリティ アプローチ (Zscaler ZPA、Azure Active Directory (Azure AD) プロキシ/MCAS など) を通じて公開される#2 のバリエーション。 |
 
 ### <a name="1-vpn-forced-tunnel"></a>1. VPN 強制トンネリング
 
-これは、ほとんどの企業ユーザーにとっては最も一般的なスタート地点になります。 強制 VPN が使用されます。つまり、エンドポイントが企業ネットワーク内に存在するか存在しないかにかかわらず、トラフィックの 100% が企業ネットワークに送信されます。 外部 (インターネット) にバインドされたトラフィック (Office 365インターネットブラウズなど) は、プロキシなどのオンプレミスのセキュリティ機器からヘア ピン留めされます。 したがって、リモートで作業しているユーザーの 100% 近い現在の環境では、このモデルは VPN インフラストラクチャに大きな負荷を与え、すべての企業トラフィックのパフォーマンスを大幅に低下させる可能性が高く、企業が危機の時に効率的に運用する可能性があります。
+これは、ほとんどの企業ユーザーにとっては最も一般的なスタート地点になります。 強制 VPN が使用されます。つまり、エンドポイントが企業ネットワーク内に存在するか存在しないかにかかわらず、トラフィックの 100% が企業ネットワークに送信されます。 その後、プロキシなどのオンプレミスのセキュリティ機器から、Office 365やインターネットブラウズなどの外部 (インターネット) にバインドされたトラフィックがヘアピンで戻されます。 したがって、リモートで作業しているユーザーの 100% 近い現在の環境では、このモデルは VPN インフラストラクチャに大きな負荷を与え、すべての企業トラフィックのパフォーマンスを大幅に低下させる可能性が高く、企業が危機の時に効率的に運用する可能性があります。
 
 ![VPN 強制Tunnelモデル 1。](../media/vpn-split-tunneling/vpn-model-1.png)
 
@@ -85,7 +85,7 @@ Microsoft は、お客様や幅広い業界と長年にわたって緊密に連�
 
 ### <a name="5-no-vpn"></a>5. VPN なし
 
-モデル番号 2 のより高度なバージョンで、内部サービスは Azure AD Proxy、MCAS、Zscaler ZPA などの最新のセキュリティ アプローチまたは SDWAN ソリューションを通じて公開されます。
+モデル番号 2 のより高度なバージョンで、内部サービスは、Azure AD Proxy、Defender for Cloud Apps、Zscaler ZPA などの最新のセキュリティ アプローチまたは SDWAN ソリューションを通じて公開されます。
 
 ![VPN Tunnel 5 を分割します。](../media/vpn-split-tunneling/vpn-model-5.png)
 
@@ -273,7 +273,7 @@ Teams が音声やセッション トラバーサル ユーティリティ for N
 - **Pulse Secure**: [VPN トンネリング: スプリット](https://kb.pulsesecure.net/articles/Pulse_Secure_Article/KB44417)トンネリングを構成して、アプリケーションからOffice 365する方法
 - **チェック ポイント VPN**:[アプリや他の SaaS アプリケーションTunnel分割Office 365構成する方法](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk167000)
 
-## <a name="faq"></a>よくあるご質問 (FAQ)
+## <a name="faq"></a>FAQ
 
 Microsoft Security Team は、セキュリティ 専門家と [IT](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)担当者が、今日の独自のリモート作業シナリオ (ブログ記事) で最新のセキュリティ制御を実現するための代替方法を公開しました。この記事では、セキュリティ専門家の重要な方法を概説し、IT は今日の独自のリモート作業シナリオで最新のセキュリティ制御を実現できます。 さらに、この件に関してお客様からよく寄せられる質問と回答を以下に示します。
 

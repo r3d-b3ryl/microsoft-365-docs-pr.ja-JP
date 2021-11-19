@@ -15,12 +15,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: f97a5ae486ff2ebd39a1adedeb008ac675ee9941
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 60f59796f585e472673d5c230fcbe303460e7372
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962821"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109889"
 ---
 # <a name="device-control-printer-protection"></a>デバイス制御のプリンター保護
 
@@ -66,7 +66,7 @@ Intune でのポリシー展開では、OMA-URI を使用してポリシーを�
 
 ****
 
-|Title|説明|CSP サポート | GPO サポート | ユーザー ベースのサポート | コンピューター ベースのサポート |
+|Title|[説明]|CSP サポート | GPO サポート | ユーザー ベースのサポート | コンピューター ベースのサポート |
 |---|---|:---:|:---:|:---:|:---:|
 |**デバイスコントロールの印刷制限を有効にする**|企業以外のプリンターを使用してユーザーの印刷をブロックする|はい|はい|はい|はい|
 |**承認済みの USB 接続印刷デバイスの一覧**\*|特定の USB プリンターを許可する|はい|はい|はい|はい|
@@ -136,18 +136,18 @@ CSP は、'ApprovedUsbPrintDevices' プロパティを使用して承認され�
 
 ## <a name="view-device-control-printer-protection-data-in-microsoft-defender-for-endpoint-portal"></a>Microsoft Defender for Endpoint ポータルでデバイスコントロールプリンター保護データを表示する
 
-この<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365は、</a>上記の Device Control Printer Protection ポリシーによってブロックされた印刷を示しています。
+この<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderは、</a>上記の Device Control Printer Protection ポリシーによってブロックされた印刷を示しています。
 
 ```kusto
 DeviceEvents
-| where ActionType == 'PrintJobBlocked'
-| extend parsed=parse_json(AdditionalFields)
-| extend PrintedFile=tostring(parsed.JobOrDocumentName)
-| extend PrintPortName=tostring(parsed.PortName)
-| extend PrinterName=tostring(parsed.PrinterName)
-| extend Policy=tostring(parsed.RestrictionReason) 
-| project Timestamp, DeviceId, DeviceName, ActionType, InitiatingProcessAccountName, Policy, PrintedFile, PrinterName, PrintPortName, AdditionalFields
-| order by Timestamp desc
+| where ActionType == 'PrintJobBlocked'
+| extend parsed=parse_json(AdditionalFields)
+| extend PrintedFile=tostring(parsed.JobOrDocumentName)
+| extend PrintPortName=tostring(parsed.PortName)
+| extend PrinterName=tostring(parsed.PrinterName)
+| extend Policy=tostring(parsed.RestrictionReason) 
+| project Timestamp, DeviceId, DeviceName, ActionType, InitiatingProcessAccountName, Policy, PrintedFile, PrinterName, PrintPortName, AdditionalFields
+| order by Timestamp desc
 ```
 
  :::image type="content" source="../../media/device-control-advanced-hunting.png" alt-text="高度な狩猟。":::
@@ -172,15 +172,3 @@ DeviceEvents
 ```
 
  :::image type="content" source="https://user-images.githubusercontent.com/81826151/128954383-71df3009-77ef-40db-b575-79c73fda332b.png" alt-text="高度な狩猟":::
-
-
-
-
-
-
-
-
- 
- 
- 
- 

@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 - admindeeplinkDEFENDER
 description: '概要: Microsoft Cloud Deutschland からの移行に関する電子情報開示移行手順。'
-ms.openlocfilehash: 08c44374b834796bce5f624008dd2f7493e7c3f7
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 64b026a1349a5945509251eb62d7ccb26ed6f46f
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963073"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111077"
 ---
 # <a name="information-about-the-ediscovery-experience-during-the-migration-from-microsoft-cloud-deutschland"></a>Microsoft Cloud Deutschland からの移行中の電子情報開示エクスペリエンスに関する情報
 次のセクションでは、Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター地域の Office 365 サービスに移行する際の電子情報開示エクスペリエンスに関する追加情報を提供します。
@@ -32,7 +32,7 @@ ms.locfileid: "60963073"
 ## <a name="ediscovery-administration-until-phase-4"></a>フェーズ 4 までの電子情報開示の管理
 フェーズ 4 まで、セキュリティとコンプライアンス センターは完全に利用可能になります。 すべてのコンテンツは引き続き Microsoft Cloud Germany に残り、Microsoft Cloud Germany Security and Compliance Center ( https://protection.office.de/) .
 
-## <a name="ediscovery-experience-between-phase-4-until-the-the-end-of-phase-9"></a>フェーズ 4 からフェーズ 9 の終了までの電子情報開示エクスペリエンス
+## <a name="ediscovery-experience-between-phase-4-until-the-end-of-phase-9"></a>フェーズ 4 からフェーズ 9 の終了までの電子情報開示エクスペリエンス
 フェーズ 4 の初めからフェーズ 9 が完了するまで、電子情報開示の検索は失敗するか、移行された SharePoint Online、OneDrive for Business、および Exchange Online の場所に対して 0 の結果を返します。
 
 > [!NOTE]
@@ -51,9 +51,9 @@ ms.locfileid: "60963073"
 **適用対象:** 電子情報開示を使用しているすべてのユーザー
 
 フェーズ 9 では、新しいドイツのデータセンター領域に移行するための最後の手順が完了します。 このフェーズでは、残りのすべてのサービス コンポーネントが移行されます。
-フェーズ 9 の後、Microsoft Cloud Germany (protection.office.de) のセキュリティとコンプライアンス センターの使用はサポートされなくなりました。 代わりに、<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">新Microsoft 365セキュリティ センター</a><a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">またはMicrosoft 365 コンプライアンス センター</a>使用します。 すべてのデータが新しい管理ポータルに移行されました。
+フェーズ 9 の後、Microsoft Cloud Germany (protection.office.de) のセキュリティとコンプライアンス センターの使用はサポートされなくなりました。 代わりに、<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">新Microsoft 365 Defenderポータル</a><a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">または</a>Microsoft 365 コンプライアンス センター使用します。 すべてのデータが新しい管理ポータルに移行されました。
 
-| Step(s) | 説明 | 影響 |
+| Step(s) | [説明] | 影響 |
 |:-------|:-------|:-------|
 |  すべての SharePoint、OneDrive for Business、およびExchange Onlineの場所は、セキュリティとコンプライアンス センター (SCC) と共に移行されています。 | すべての電子情報開示アクティビティは、世界中のテナントから実行する必要があります。 これで、検索は 100% 成功します。 エラーやエラーは、通常のサポート チャネルに従う必要があります。 | なし |
 ||||
@@ -61,7 +61,7 @@ ms.locfileid: "60963073"
 ### <a name="ediscovery-retention-policy"></a>電子情報開示の保持ポリシー
 **適用対象:**  移行前の手順の一部としてアイテム保持ポリシーを適用したすべての顧客
 
-| Step(s) | 説明 | 影響 |
+| Step(s) | [説明] | 影響 |
 |:-------|:-------|:-------|
 | 移行前の手順で作成された組織全体の保持ポリシーを削除する | 顧客は、移行前の作業中に作成された組織全体の保持ポリシーを削除できます。 | なし |
 ||||

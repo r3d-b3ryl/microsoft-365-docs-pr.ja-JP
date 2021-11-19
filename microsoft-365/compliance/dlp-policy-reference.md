@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: DLP ポリシー コンポーネントと構成リファレンス
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: fbd6ffa3f0e9167c98d6e950a971254e7c21a988
-ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
+ms.openlocfilehash: 3c1b98c3825d783685976d2e56583eccb7ba96b4
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60950715"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111005"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>データ損失防止ポリシーリファレンス
 
@@ -46,7 +46,7 @@ DLP ポリシー テンプレートは、次の 4 つのカテゴリに事前に
 |カテゴリ| テンプレート | SIT |
 |---------|---------|---------|
 |財務的| オーストラリアの金融データ| - [SWIFT コード](sensitive-information-type-entity-definitions.md#swift-code) </br> - [オーストラリアの税ファイル番号](sensitive-information-type-entity-definitions.md#australia-tax-file-number) </br> - [オーストラリアの銀行口座番号](sensitive-information-type-entity-definitions.md#australia-bank-account-number) </br> - [クレジット カード番号](sensitive-information-type-entity-definitions.md#credit-card-number)|
-|財務的| カナダ 財務データ |- [クレジット カード番号](sensitive-information-type-entity-definitions.md#credit-card-number) </br> -  [カナダの銀行口座番号](sensitive-information-type-entity-definitions.md#canada-bank-account-number)|
+|財務的| カナダ 財務データ |- [クレジット カード番号](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [カナダの銀行口座番号](sensitive-information-type-entity-definitions.md#canada-bank-account-number)|
 |財務的| フランス 財務データ |- [クレジット カード番号](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [EU のデビットカード番号](sensitive-information-type-entity-definitions.md#eu-debit-card-number)|
 |財務的| ドイツの金融データ |- [クレジット カード番号](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [EU のデビットカード番号](sensitive-information-type-entity-definitions.md#eu-debit-card-number)|
 |財務的| イスラエルの金融データ |- [イスラエルの銀行口座番号](sensitive-information-type-entity-definitions.md#israel-bank-account-number) </br> - [SWIFT コード](sensitive-information-type-entity-definitions.md#swift-code) </br> - [クレジット カード番号](sensitive-information-type-entity-definitions.md#credit-card-number)|
@@ -101,14 +101,13 @@ DLP ポリシー テンプレートは、次の 4 つのカテゴリに事前に
 
 DLP ポリシーは、複数の場所にわたって機密情報を含むアイテムを検索して保護できます。
 
-
 |場所  |範囲を含める/除外する  |データ状態  |その他の前提条件 |
 |---------|---------|---------|---------|
 |Exchangeメールをオンラインで送信する |配布グループ | data-in-motion| いいえ |
 |SharePointサイト   |sites       | data-at-rest </br> data-in-use | いいえ|
 |OneDrive for Business アカウント| アカウントまたは配布グループ |data-at-rest </br> data-in-use|いいえ|
 |Teams チャットおよびチャネル メッセージ     | アカウントまたは配布グループ |data-in-motion </br> data-in-use |  いいえ       |
-|Microsoft Cloud App Security (MCAS)   | クラウド アプリ インスタンス       |data-at-rest         | - [Microsoft 以外のクラウド アプリでデータ損失防止ポリシーを使用する](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
+|Microsoft Defender for Cloud Apps   | クラウド アプリ インスタンス       |data-at-rest         | - [Microsoft 以外のクラウド アプリでデータ損失防止ポリシーを使用する](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
 |デバイス  |ユーザーまたはグループ         |data-at-rest </br>  data-in-use </br>  data-in-motion         |- [エンドポイントデータ損失Microsoft 365の詳細](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention) </br>- [エンドポイントのデータ損失防止の使用を開始する](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention) </br>- [情報保護のデバイス プロキシとインターネット接続の設定を構成する](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
 |オンプレミスリポジトリ (ファイル共有とSharePoint)    |リポジトリ         | data-at-rest         | - [データ損失防止Microsoft 365オンプレミス スキャナーの詳細](dlp-on-premises-scanner-learn.md#learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner) </br> - [データ損失防止オンプレミス スキャナーの使用を開始する](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
 
@@ -123,17 +122,17 @@ Exchange に特定の配布グループを含めるように選択した場合�
 DLP ポリシーは、機密情報の種類 (SIT)、機密ラベル、または保持ラベルに一致することで、機密アイテムを検出します。 各場所では、機密性の高いコンテンツを定義するさまざまな方法がサポートされています。 ポリシー内の場所を組み合わせると、コンテンツの定義方法が 1 つの場所で定義される方法と異なる場合があります。 
 
 > [!IMPORTANT]
-> ポリシーに複数の場所を選択すると、コンテンツ定義カテゴリの "no" 値が "yes" 値よりも優先されます。 たとえば、サイトのみを選択SharePointポリシーは、1 つ以上の SIT、機密ラベル、または保持ラベルによる機密アイテムの検出をサポートします。 ただし、サイトを選択 ***SharePointチャットTeams*** チャネル メッセージの場所を選択すると、ポリシーは SIT による機密性の高いアイテムの検出のみをサポートします。 
+> ポリシーに複数の場所を選択すると、コンテンツ定義カテゴリの "no" 値が "yes" 値よりも優先されます。 たとえば、サイトのみを選択SharePointポリシーは、1 つ以上の SIT、機密ラベル、または保持ラベルによる機密アイテムの検出をサポートします。 ただし、サイトを選択 ***SharePointチャットTeams*** チャネル メッセージの場所を選択すると、ポリシーは SIT による機密性の高いアイテムの検出のみをサポートします。
 
-|場所|  コンテンツは SIT で定義できます|  コンテンツは、感度ラベルを定義できます|   コンテンツは保持ラベルで定義できます|
+|場所| コンテンツは SIT で定義できます| コンテンツは、感度ラベルを定義できます| コンテンツは保持ラベルで定義できます|
 |---------|---------|---------|---------|
-|Exchangeメールをオンラインで送信する|はい| はい|    いいえ|
-|SharePointサイト|   はい|    はい|    はい|
-|OneDrive for Business アカウント|    はい|    はい|    はい|
-|Teamsおよびチャネル メッセージ |  はい|    いいえ| いいえ|
-|デバイス    |はい |  はい|    いいえ|
-|Microsoft Cloud App Security|  はい|    はい|    はい|
-|オンプレミス リポジトリ|  はい|    はい|    いいえ|
+|Exchangeメールをオンラインで送信する|はい| はい| いいえ|
+|SharePointサイト| はい| はい| はい|
+|OneDrive for Business アカウント| はい| はい| はい|
+|Teamsおよびチャネル メッセージ | はい| いいえ| いいえ|
+|デバイス |はい | はい|  いいえ|
+|Microsoft Defender for Cloud Apps | はい| はい| はい|
+|オンプレミス リポジトリ| はい| はい| いいえ|
 
 > [!NOTE]
 > DLP では、電子メールおよび attachemnets の感度ラベルの検出がサポートされています。「DLP ポリシーで感度ラベルを条件として [使用する」を参照してください](dlp-sensitivity-label-as-condition.md#use-sensitivity-labels-as-conditions-in-dlp-policies)。
@@ -276,7 +275,7 @@ SIT には事前に定義された信頼 [**度が設定されています**](ht
 - コンテンツが含まれている
 - 「監視 [およびアクションを実行できるエンドポイント アクティビティ」を参照してください。](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)
 
-##### <a name="conditions-microsoft-cloud-app-security-support"></a>サポートMicrosoft Cloud App Security条件
+##### <a name="conditions-microsoft-defender-for-cloud-apps-support"></a>Microsoft Defender for Cloud Apps のサポート条件
 
 - コンテンツが含まれている
 - コンテンツは、ユーザーから共有Microsoft 365
@@ -325,7 +324,7 @@ SIT には事前に定義された信頼 [**度が設定されています**](ht
 
 - **コンテンツが含** まれている場合を除く 
 
-### <a name="actions"></a>操作 
+### <a name="actions"></a>Actions 
 
 包括的な ***conditions** _ および排他例外 _**_ フィルターを介してそれを行 _**_ うアイテムには、ルールで定義されているアクションが適用されます。 アクションをサポートするために必要なオプションを構成する必要があります。 たとえば、[アクセスを制限する] Exchangeを使用して [アクセスを制限する] を選択するか、Microsoft 365 *場所のコンテンツ* を暗号化する * アクションを選択する場合は、次のオプションから選択する必要があります。
 
@@ -376,7 +375,7 @@ SIT には事前に定義された信頼 [**度が設定されています**](ht
 
 デバイスの場所には、多くのサブアクティブ (条件) とアクションが提供されます。 詳細については、「監視およびアクションを実行できるエンドポイント [アクティビティ」を参照してください](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)。 
 
-#### <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security:
+#### <a name="microsoft-defender-for-cloud-apps"></a>Microsoft Defender for Cloud Apps:
 
 - アクセスを制限するか、または場所内のコンテンツMicrosoft 365する
 - サード パーティ製アプリの制限
@@ -412,7 +411,7 @@ AND
 - アクセスを制限するか、または場所内のコンテンツMicrosoft 365する
 - デバイスのアクティビティを監査またはWindowsする
 
-[デバイスとデバイス] を選択Microsoft Cloud App Security、次のアクションを使用できます。
+[デバイス] と [Microsoft Defender for Cloud Apps] を選択した場合、次のアクションを使用できます。
 
 - アクセスを制限するか、または場所内のコンテンツMicrosoft 365する
 - デバイスのアクティビティを監査またはWindowsする
@@ -435,9 +434,9 @@ for where they are used/expected behavior-->
 
 <!--You can use notifications and overrides to educate your users about DLP policies and help them remain compliant without blocking their work. For example, if a user tries to share a document containing sensitive information, a DLP policy can both send them an email notification and show them a policy tip in the context of the document library that allows them to override the policy if they have a business justification.-->
 
-ユーザーがルールの条件と例外を満たすコンテキストで機密性の高いアイテムに対してアクションを試みる場合は、ユーザー通知メールとコンテキスト ポリシー ヒント ポップアップを使用して、そのアイテムについて知らせできます。 これらの通知は、意識を高め、組織の DLP ポリシーに関する人々の教育に役立つため便利です。 
+ユーザーがルールの条件と例外を満たすコンテキストで機密性の高いアイテムに対してアクションを試みる場合は、ユーザー通知メールとコンテキスト ポリシー ヒント ポップアップを使用して、そのアイテムについて知らせできます。 これらの通知は、意識を高め、組織の DLP ポリシーに関する人々の教育に役立つため便利です。
 
-たとえば、個人を特定できるExcel (PII) を含み、ゲストと共有される OneDrive for Business サイト上のブックのようなコンテンツ。
+たとえば、個人を特定できる情報 (PII) Excel含み、ゲストと共有される OneDrive for Business サイト上のブックのようなコンテンツ。
 
 ![メッセージ バーに Excel 2016 のポリシー ヒントが表示される](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
 
@@ -452,7 +451,7 @@ for where they are used/expected behavior-->
 - SharePoint
 - OneDrive
 - Teamsチャットとチャネル
-- MCAS
+- Defender for Cloud Apps
 
 
 さまざまな Microsoft アプリのユーザー通知を有効または無効にできます。「データ損失防止ポリシーのヒント [リファレンス」を参照してください。](dlp-policy-tips-reference.md#data-loss-prevention-policy-tips-reference)
@@ -463,9 +462,9 @@ for where they are used/expected behavior-->
 
 をクリックし、電子メール テキスト、件名、ポリシー ヒント テキストをカスタマイズします。
 
-![チャット、チャット、チャネル、MCAS でExchange、SharePoint、OneDrive、Teamsヒント構成オプション](../media/dlp-user-notification-non-devices.png)
+![Exchange、SharePoint、OneDrive、Teams チャットとチャネル、および Defender for Cloud Apps で使用可能なユーザー通知とポリシー ヒントの構成オプション](../media/dlp-user-notification-non-devices.png)
 
-[デバイスのみ] を選択した場合は、Exchange、SharePoint、OneDrive、Teams チャット、チャネル、MCAS で使用可能なすべての同じオプションと、Windows 10 デバイスに表示される通知タイトルとコンテンツをカスタマイズするオプションが表示されます。
+[デバイスのみ] を選択した場合は、Exchange、SharePoint、OneDrive、Teams チャット、チャネル、Defender for Cloud Apps で使用可能なすべての同じオプションと、Windows 10 デバイスに表示される通知タイトルとコンテンツをカスタマイズするオプションが表示されます。
 
 ![デバイスで使用できるユーザー通知とポリシー ヒントの構成オプション](../media/dlp-user-notification-devices.png)  
 

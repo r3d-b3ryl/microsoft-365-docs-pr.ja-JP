@@ -1,6 +1,6 @@
 ---
 title: 評価環境Microsoft 365 Defenderを Production に昇格する
-description: この記事を使用して、MDI、MDO、MDE、MCAS のエバルを、Microsoft 365 Defender または M365D のライブ環境に昇格します。
+description: この記事を使用して、MDI、MDO、MDE、Defender for Cloud Apps のエバルを、Microsoft 365 Defender または M365D のライブ環境に昇格します。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: eb59cc540d2c77f2d4715aa1c6c12f4e36aec8b0
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: e43edc826594d5a9b373139707aaaf6b486591ed
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753049"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111509"
 ---
 # <a name="promote-your-microsoft-365-defender-evaluation-environment-to-production"></a>評価環境Microsoft 365 Defenderを実稼働環境に昇格する
 
@@ -61,6 +61,6 @@ Microsoft Defender for Endpoint に追加のデバイスをオンボードする
 3. デバイスに適切な管理ツールと展開方法を使用します。
 4. 検出テストを実行して、デバイスが適切にオンボードされ、サービスに報告されていることを確認します。
 
-## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
+## <a name="microsoft-defender-for-cloud-apps"></a>Microsoft Defender for Cloud Apps
 
-Microsoft Cloud App Security構成は不要です。 必要なライセンスを購入しただけ。 展開の範囲を特定のユーザー グループに設定した場合は、実稼働規模に達するまで、これらのグループの範囲を広くします。
+Microsoft Defender for Cloud Apps では、追加の構成は不要です。 必要なライセンスを購入しただけ。 展開の範囲を特定のユーザー グループに設定した場合は、実稼働規模に達するまで、これらのグループの範囲を広くします。

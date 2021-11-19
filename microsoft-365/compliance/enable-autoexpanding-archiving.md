@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: '管理者向け: Exchange Online 自動拡張アーカイブを有効にする方法について説明します。 組織全体に対し、または特定のユーザーだけに対し、自動拡張アーカイブを有効にすることができます。'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 65c03e11a047e26363fc00f0e208b542543a9e9e
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: 865a21e27034490b7b9da476d359ce135962d604
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064249"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110885"
 ---
 # <a name="enable-auto-expanding-archiving---admin-help"></a>自動拡張アーカイブを有効にする - 管理者ヘルプ
 
@@ -44,7 +44,7 @@ ms.locfileid: "61064249"
 
 - アーカイブ自動拡張では、共有メールボックスもサポートします。共有メールボックスのアーカイブを有効にするには、ExchangeOnline プラン 2 ライセンスを使用するか、または ExchangeOnline プラン 1 ライセンスを ExchangeOnline Archiving ライセンスと一緒に使用する必要があります。
 
-- アーカイブを自動拡張すると、非アクティブなメールボックスを回復または復元 [できません](inactive-mailboxes-in-office-365.md#what-are-inactive-mailboxes)。 つまり、メールボックスの自動拡張アーカイブを有効にし、後でメールボックスを非アクティブにした場合は、非アクティブな[メールボックスを回復](recover-an-inactive-mailbox.md)したり (アクティブなメールボックスに変換して) 復元したり (コンテンツを既存[](restore-an-inactive-mailbox.md)のメールボックスにマージして) 復元したりすることはできません。 非アクティブなメールボックスで自動拡張アーカイブが有効になっている場合、データを回復する唯一の方法は、Microsoft 365 コンプライアンス センター のコンテンツ検索ツールを使用して、メールボックスからデータをエクスポートし、別のメールボックスにインポートすることです。 詳細については、「非アクティブなメールボックスの概要」の「非アクティブなメールボックスと自動拡張アーカイブ」 [セクションを参照してください](inactive-mailboxes-in-office-365.md#inactive-mailboxes-and-auto-expanding-archives)。
+- アーカイブを自動拡張すると、非アクティブなメールボックスを回復または復元 [できません](inactive-mailboxes-in-office-365.md#what-are-inactive-mailboxes)。 つまり、メールボックスの自動拡張アーカイブを有効にし、後でメールボックスを非アクティブにした場合は、非アクティブな[メールボックスを回復](recover-an-inactive-mailbox.md)したり (アクティブなメールボックスに変換して) 復元したり (コンテンツを既存[](restore-an-inactive-mailbox.md)のメールボックスにマージして) 復元したりすることはできません。 非アクティブなメールボックスで自動拡張アーカイブが有効になっている場合、データを回復する唯一の方法は、Microsoft 365 コンプライアンス センター のコンテンツ検索ツールを使用して、メールボックスからデータをエクスポートし、別のメールボックスにインポートすることです。 詳細については、「非アクティブなメールボックスについて」の「非アクティブなメールボックスと自動拡張アーカイブ」 [セクションを参照してください](inactive-mailboxes-in-office-365.md#inactive-mailboxes-and-auto-expanding-archives)。
 
 - 管理センターまたは管理センター Exchangeを使用してMicrosoft 365 コンプライアンス センターアーカイブを有効にすることはできません。 Exchange Online PowerShell を使用する必要があります。 リモート PowerShell を使って Exchange Online 組織に接続する方法については、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 

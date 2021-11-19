@@ -15,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 082b93be0a540e2d51cb81315180876c308b3fad
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 0a789c87a6e0988c5b5b7ca57233ede1ad1a8408
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883151"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111149"
 ---
 # <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>Microsoft Defender ウイルス対策更新プログラムのソースを管理する
 
@@ -41,7 +41,7 @@ ms.locfileid: "60883151"
 この記事では、更新プログラムをダウンロードする場所を指定する方法について説明します (これはフォールバック順序とも呼ばれています)。 更新[プログラムのMicrosoft Defender ウイルス対策の](manage-updates-baselines-microsoft-defender-antivirus.md)概要、および更新プログラムの他の側面 (更新プログラムのスケジュール設定など) を構成する方法については、「更新プログラムの管理と基準計画の適用」を参照してください。
 
 > [!IMPORTANT]
-> Microsoft Defender ウイルス対策セキュリティ インテリジェンス更新プログラムは Windows Update を通じて配信され、2019 年 10 月 21 日月曜日から開始され、すべてのセキュリティ インテリジェンス更新プログラムは SHA-2 署名専用となります。 セキュリティ インテリジェンスを更新するには、SHA-2 をサポートするためにデバイスを更新する必要があります。 詳細については[、「2019 SHA-2 Code Signing Support requirement for Windows WSUS」を参照してください](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus)。
+> Microsoft Defender ウイルス対策セキュリティ インテリジェンス更新プログラムは Windows Update を通じて配信され、2019 年 10 月 21 日月曜日から配信され、すべてのセキュリティ インテリジェンス更新プログラムは SHA-2 専用に署名されます。 セキュリティ インテリジェンスを更新するには、SHA-2 をサポートするためにデバイスを更新する必要があります。 詳細については[、「2019 SHA-2 Code Signing Support requirement for Windows WSUS」を参照してください](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus)。
 
 <a id="fallback-order"></a>
 
@@ -59,10 +59,10 @@ ms.locfileid: "60883151"
 エンドポイントが更新プログラムを取得する場所を指定できる場所は 5 種類です。
 
 - [Microsoft Update](https://support.microsoft.com/help/12373/windows-update-faq)
-- [Windows サーバー更新サービス](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) <sup>[[1](#fn1)]<sup></sup>  
+- [Windows サーバー更新サービス](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) <sup> [[1](#fn1)]<sup></sup>  
 - [Microsoft Endpoint Configuration Manager](/configmgr/core/servers/manage/updates)
 - [ネットワーク ファイル共有](#unc-share)
-- [セキュリティ インテリジェンスの更新プログラム (Microsoft Defender ウイルス対策その他の Microsoft マルウェア対策)](https://www.microsoft.com/wdsi/defenderupdates) <sup>[[2](#fn1)]<sup></sup>
+- [セキュリティ インテリジェンスの更新プログラム (Microsoft Defender ウイルス対策その他の Microsoft](https://www.microsoft.com/wdsi/defenderupdates)マルウェア <sup> 対策 ) [[2](#fn1)]<sup></sup>
 
 (<a id="fn1">1</a>) Intune 内部定義更新サーバー - SCCM/SUP を使用して Microsoft Defender ウイルス対策 の定義更新プログラムを取得し、クライアント デバイスでブロックされている Windows Update にアクセスする必要がある場合は、共同管理に移行し、エンドポイント保護ワークロードを Intune にオフロードできます。 Intune で構成されたマルウェア対策ポリシーには、オンプレミスの WSUS を更新ソースとして使用するように構成できる 「内部定義更新サーバー」のオプションがあります。 これにより、企業に対して承認されている公式 WU サーバーからの更新プログラムを制御し、UPdates ネットワークの公式サイトにネットワーク トラフィックをプロキシして保存するのにWindows役立ちます。
 
@@ -81,7 +81,7 @@ Microsoft Update では、最高レベルの保護を確保するために、迅
 
 |場所|シナリオ例|
 |---|---|
-|Windowsサーバー更新サービス|サーバー更新サービスWindows使用して、ネットワークの更新プログラムを管理しています。|
+|Windows サーバー更新サービス|サーバー更新サービスWindows使用して、ネットワークの更新プログラムを管理しています。|
 |Microsoft Update|エンドポイントを Microsoft Update に直接接続する必要があります。 これは、エンタープライズ ネットワークに不定期に接続するエンドポイントや、Windows サーバー更新サービスを使用して更新プログラムを管理しない場合に役立ちます。|
 |ファイル共有|インターネットに接続されていないデバイス (VM など) があります。 インターネットに接続された VM ホストを使用して、更新プログラムをネットワーク共有にダウンロードし、そこから VM が更新プログラムを取得できます。 仮想デスクトップ [インフラストラクチャ (VDI)](deployment-vdi-microsoft-defender-antivirus.md) 環境でファイル共有を使用する方法については、VDI 展開ガイドを参照してください。|
 |Microsoft エンドポイント マネージャー|エンドポイントを更新Microsoft エンドポイント マネージャーを使用しています。|
@@ -110,16 +110,16 @@ Microsoft Update では、最高レベルの保護を確保するために、迅
 
       :::image type="content" source="../../media/wdav-order-update-sources.png" alt-text="ソースの順序を示すグループ ポリシー設定。":::
 
-   3. **[OK]** を選択します。 これにより、保護更新プログラムのソースの順序が設定されます。
+   3. [**OK**] を選択します。 これにより、保護更新プログラムのソースの順序が設定されます。
 
    4. [セキュリティ インテリジェンス更新プログラムをダウンロード **するための** ファイル共有の定義] 設定をダブルクリックし、オプションを [有効] に **設定します**。
 
    5. ファイル共有ソースを指定します。 複数のソースがある場合は、使用する順序で各ソースを 1 つのパイプで区切って入力します。 パス [を示す標準の UNC](/openspecs/windows_protocols/ms-dtyp/62e862f4-2a51-452e-8eeb-dc4ff5ee33cc) 表記を使用します。たとえば、次のようになります `\\host-name1\share-name\object-name|\\host-name2\share-name\object-name` 。 パスを入力しない場合、VM が更新プログラムをダウンロードすると、このソースはスキップされます。
 
-   6. **[OK]** をクリックします。 これにより、ソースが参照される場合のファイル共有の順序が [ソースの順序の定義 **... グループ** ポリシー設定で設定されます。
+   6. [**OK**] をクリックします。 これにより、ソースが参照される場合のファイル共有の順序が [ソースの順序の定義 **... グループ** ポリシー設定で設定されます。
 
 > [!NOTE]
-> Windows 10 バージョン 1703 から 1809 まで、ポリシー パスは Windows **Components > Microsoft Defender ウイルス対策 >** Signature Updates for Windows 10 バージョン 1903 の場合、ポリシー パスは Windows **コンポーネント > Microsoft Defender ウイルス対策 >** セキュリティ インテリジェンス更新プログラム
+> Windows 10 バージョン 1703 ~1809 の場合、ポリシー パスは Windows **Components > Microsoft Defender ウイルス対策 >** Signature Updates for Windows 10 バージョン 1903 の場合、ポリシー パスは Windows コンポーネント > **Microsoft Defender ウイルス対策 > インテリジェンス更新プログラム**
 
 ## <a name="use-configuration-manager-to-manage-the-update-location"></a>Configuration Manager を使用して更新場所を管理する
 
@@ -139,7 +139,7 @@ Set-MpPreference -SignatureDefinitionUpdateFileSharesSource {\\UNC SHARE PATH|\\
 - [Set-MpPreference -SignatureFallbackOrder](/powershell/module/defender/set-mppreference)
 - [Set-MpPreference -SignatureDefinitionUpdateFileSharesSource](/powershell/module/defender/set-mppreference#-signaturedefinitionupdatefilesharessources)
 - [PowerShell コマンドレットを使用して、サーバーの構成と実行をMicrosoft Defender ウイルス対策](use-powershell-cmdlets-microsoft-defender-antivirus.md)
-- [Defender コマンドレット](/powershell/module/defender/index)
+- [Defender for Cloud コマンドレット](/powershell/module/defender/index)
 
 ## <a name="use-windows-management-instruction-wmi-to-manage-the-update-location"></a>更新Windows管理命令 (WMI) を使用して管理する
 
@@ -152,7 +152,7 @@ SignatureDefinitionUpdateFileSharesSource
 
 詳細については、次の記事を参照してください。
 
-- [Windows DefenderWMIv2 API](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+- [Windows Defender WMIv2 API](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 ## <a name="use-mobile-device-management-mdm-to-manage-the-update-location"></a>モバイル デバイス管理 (MDM) を使用して更新場所を管理する
 

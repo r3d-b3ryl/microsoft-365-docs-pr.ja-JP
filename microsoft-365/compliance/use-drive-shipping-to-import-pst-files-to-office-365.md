@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 ms.custom: seo-marvel-apr2020
 description: 管理者は、PST ファイルをハード ドライブにコピー Microsoft 365 Microsoft に配布することで、PST ファイルをメールボックスに一括インポートする方法について説明します。
-ms.openlocfilehash: 06449ee6b2ce8df51d65dbf74e15ab583e42fc15
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0cd53d6d82a1052f91c7179f2c6f1dab33a8b125
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206027"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110513"
 ---
 # <a name="use-drive-shipping-to-import-your-organizations-pst-files"></a>ドライブ配布を使用して組織の PST ファイルをインポートする
 
@@ -53,7 +53,7 @@ ms.locfileid: "60206027"
   
 ## <a name="before-you-import-pst-files"></a>PST ファイルをインポートする前に
 
-- PST ファイルを Microsoft 365 メールボックスにインポートするには、Exchange Online で Mailbox Import Export の役割が割り当てられている必要があります。 既定では、この役割は Exchange Online のどの役割グループにも割り当てられていません。 Mailbox Import Export の役割は組織の管理の役割グループに追加できます。 または、役割グループを作成し、Mailbox Import Export の役割を割り当て、ユーザー自身をメンバーとして追加できます。 詳細については、「[役割グループを管理する](/Exchange/permissions-exo/role-groups)」で「役割グループに役割を追加する」または「役割グループを作成する」のセクションを参照してください。
+- PST ファイルを Microsoft 365 メールボックスにインポートするには、Exchange Online で Mailbox Import Export 役割が割り当てられている必要があります。既定では、Exchange Online では、この役割はいずれの役割グループにも割り当てられていません。Mailbox Import Export 役割は Organization Management 役割グループに追加できます。または、役割グループを作成し、Mailbox Import Export 役割を割り当て、自分をメンバーとして追加できます。詳細については、「[役割グループの管理](/Exchange/permissions-exo/role-groups)」の "役割グループに役割を追加する" または "役割グループを作成する" を参照してください。
     
     さらに、Microsoft 365 コンプライアンス センターでインポート ジョブを作成するには、次のいずれかを満たす必要があります。
     
@@ -70,10 +70,10 @@ ms.locfileid: "60206027"
 
 - PST ファイルが大きい場合、PST のインポート プロセスのパフォーマンスに影響を与える場合があります。 したがって、手順 2 でハード ドライブにコピーする各 PST ファイルは、20 GB 以下にすることをお勧めします。
     
-- Office 365 Import サービスで使用できるのは、2.5 インチのソリッド ステート ドライブ (SSD) または 2.5 インチまたは 3.5 インチの SATA II/III の内部ハード ドライブのみです。 最大で 10 TB のハード ドライブを使用できます。 インポート ジョブでは、ハード ドライブの最初のデータ ボリュームのみが処理されます。 このデータ ボリュームは、NTFS でフォーマットする必要があります。 データをハード ドライブにコピーする場合は、2.5 インチ SSD または 2.5 インチまたは 3.5 インチの SATA II/III コネクタを使用して直接接続するか、外部 2.5 インチ SSD または 2.5 インチまたは 3.5 インチの SATA II/III USB アダプターを使用して外部に接続できます。
+- Office 365 Import サービスで使用できるのは、2.5 インチのソリッド ステート ドライブ (SSD) または 2.5 インチまたは 3.5 インチの SATA II/III の内部ハード ドライブのみです。 最大で 10 TB のハード ドライブを使用できます。 インポート ジョブでは、ハード ドライブの最初のデータ ボリュームのみが処理されます。 このデータ ボリュームは、NTFS でフォーマットする必要があります。 データをハード ドライブにコピーする場合は、2.5 インチ SSD または 2.5 インチまたは 3.5 インチ SATA II/III コネクタを使用して直接接続するか、外部の 2.5 インチ SSD または 2.5 インチまたは 3.5 インチの SATA II/III USB アダプターを使用して外部に接続できます。
     
     > [!IMPORTANT]
-    > 組み込みの USB アダプターに付属する外付けハード ドライブは、Office 365 インポート サービスではサポートされていません。また、外付けハード ドライブのケース内のディスクは使用できません。外付けハード ドライブは発送しないでください。 
+    > 組み込みの USB アダプターに付属する外部ハード ドライブは、インポート サービスOffice 365サポートされていません。 また、外部ハード ドライブのケース内にあるディスクは使用できません 外部ハード ドライブは発送しないでください。 
   
 - PST ファイルをコピーするハード ドライブは、BitLocker で暗号化する必要があります。 手順 2 で実行する WAImportExport.exe ツールを使用すると、BitLocker をセットアップできます。 また、Microsoft データ センター担当者がドライブにアクセスして PST ファイルを Microsoft クラウドの Azure Storage 領域にアップロードするために使用する BitLocker 暗号化キーも生成します。
     
@@ -175,7 +175,7 @@ ms.locfileid: "60206027"
     | `/t:` <br/> |ローカル コンピューターに接続されている場合は、ハード ドライブのドライブ文字を指定します。  <br/> | `/t:h` <br/> |
     | `/id:` <br/> |コピー セッションの名前を指定します。WAImportExport.exe ツールを実行してファイルをハード ドライブにコピーするたびに、セッションが定義されます。PST ファイルは、このパラメーターで指定されたセッション名の名前が付けられたフォルダーにコピーされます。   <br/> | `/id:driveship1` <br/> |
     | `/srcdir:` <br/> |セッション中にコピーされる PST ファイルを含む組織内のソース ディレクトリを指定します。 このパラメーターの値は必ず二重引用符 (" ") で囲むようにしてください。  <br/> | `/srcdir:"\\FILESERVER01\PSTs"` <br/> |
-    | `/dstdir:` <br/> |PST がアップロードされる microsoft クラウドAzure Storage領域の保存先ディレクトリを指定します。 値を使用する必要があります  `ingestiondata/` 。 このパラメーターの値は必ず二重引用符 (" ") で囲むようにしてください。  <br/> 必要に応じて、このパラメーターの値に追加のファイル パスを追加することもできます。 たとえば、ハード ドライブ上のソース ディレクトリのファイル パス (URL 形式に変換) を使用できます。このパスはパラメーターで指定  `/srcdir:` します。 たとえば、  `\\FILESERVER01\PSTs` に変更されます  `FILESERVER01/PSTs` 。 この場合も、ファイル パスに  `ingestiondata` 含める必要があります。 したがって、この例では、パラメーターの値  `/dstdir:` は  `"ingestiondata/FILESERVER01/PSTs"` .  <br/> 同じファイル名の PST ファイルがある場合は、追加のファイルのパスを追加する理由の 1 つになります。  <br/> > [!NOTE]> オプションの pathname を含める場合、pst ファイルが Azure Storage 領域にアップロードされた後の PST ファイルの名前空間には、パス名と PST ファイルの名前が含まれます。たとえば、 `FILESERVER01/PSTs/annb.pst` . パス名を含めなかった場合、名前空間は PST ファイル名のみです。たとえば  `annb.pst` .           | `/dstdir:"ingestiondata/"` <br/> または  <br/>  `/dstdir:"ingestiondata/FILESERVER01/PSTs"` <br/> |
+    | `/dstdir:` <br/> |PST がアップロードされる microsoft クラウドAzure Storage領域の保存先ディレクトリを指定します。 値を使用する必要があります  `ingestiondata/` 。 このパラメーターの値は必ず二重引用符 (" ") で囲むようにしてください。  <br/> 必要に応じて、このパラメーターの値に追加のファイル パスを追加することもできます。 たとえば、ハード ドライブ上のソース ディレクトリのファイル パス (URL 形式に変換) を使用できます。このパスはパラメーターで指定  `/srcdir:` します。 たとえば、  `\\FILESERVER01\PSTs` に変更されます  `FILESERVER01/PSTs` 。 この場合も、ファイル パスに  `ingestiondata` 含める必要があります。 したがって、この例では、パラメーターの値  `/dstdir:` は  `"ingestiondata/FILESERVER01/PSTs"` .  <br/> 同じファイル名の PST ファイルがある場合は、追加のファイルのパスを追加する理由の 1 つになります。  <br/> > [!NOTE]> オプションの pathname を含める場合、Azure Storage 領域にアップロードされた後の PST ファイルの名前空間には、パス名と PST ファイルの名前が含まれます。たとえば `FILESERVER01/PSTs/annb.pst` 、 。 パス名を含めなかった場合、名前空間は PST ファイル名のみです。たとえば  `annb.pst` .           | `/dstdir:"ingestiondata/"` <br/> または  <br/>  `/dstdir:"ingestiondata/FILESERVER01/PSTs"` <br/> |
     | `/blobtype:` <br/> |PST ファイルをインポートする領域Azure Storage BLOB の種類を指定します。 PST ファイルをインポートするには、値 **BlockBlob を使用します**。 このパラメーターは必須です。   <br/> | `/blobtype:BlockBlob` <br/> |
     | `/encrypt` <br/> |このスイッチは、ハード ドライブの BitLocker を有効にします。このパラメーターは、WAImportExport.exe ツールを初めて実行する際に必要です。  <br/> BitLocker 暗号化キーは、ジャーナル ファイルと、パラメーターを使用する場合に作成されるログ ファイルにコピー  `/logfile:` されます。 前述のように、ジャーナル ファイルは、WAImportExport.exe ツールがあるフォルダーと同じフォルダーに保存されます。  <br/> | `/encrypt` <br/> |
     | `/logdir:` <br/> |この省略可能なパラメーターは、ログ ファイルの保存先のフォルダーを指定します。 指定しない場合、ログ ファイルは、ログ ファイルツールがあるのと同WAImportExport.exe保存されます。 このパラメーターの値は必ず二重引用符 (" ") で囲むようにしてください。  <br/> | `/logdir:"c:\users\admin\desktop\PstImportLogs"` <br/> |

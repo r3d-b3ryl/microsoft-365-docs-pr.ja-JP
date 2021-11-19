@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: デスクトップ、モバイル、および Web 用の Office アプリで秘密度ラベルを管理するための IT 管理者向けの情報。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 00844614ea14b668fc3167f20ec2747d995aed17
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 3500b43c15d9d239e8db8450fa3204323f52ca5f
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60703411"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109937"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office アプリで秘密度ラベルを管理する
 
@@ -308,7 +308,7 @@ Office アプリの外部に秘密度ラベルを適用することを含むシ�
 
 - Power BI からエクスポートされた、ラベル付けおよび暗号化されたデータ
 
-- Microsoft Cloud App Security
+- Microsoft Defender for Cloud Apps
 
 これらのシナリオでは、Office アプリを使用して、組み込みのラベル付けを持つユーザーは、現在のラベルを一時的に削除または置換してから元のラベルを再適用することで、ラベルのコンテンツ マーキングを適用できます。
 

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender for Endpoint Plan 1 の概要 (プレビュー)
-description: Defender for Endpoint Plan 1 の使用を開始します。 セキュリティ センターを使用し、アラートとデバイスを管理し、レポートを表示する方法について学習します。
+description: Defender for Endpoint Plan 1 の使用を開始します。 Defender for Cloud を使用し、アラートとデバイスを管理し、レポートを表示する方法について学習します。
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -14,12 +14,12 @@ ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 27dcbdde1d52a8a6b072cb1f15cfe2a62d558278
-ms.sourcegitcommit: 6dbf879f769a825ed7039363f3a91d676e355ee0
+ms.openlocfilehash: e361c8a93d35a9e0cc589b8d47adadfe54ef141b
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60940593"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111137"
 ---
 # <a name="get-started-with-microsoft-defender-for-endpoint-plan-1-preview"></a>Microsoft Defender for Endpoint Plan 1 の概要 (プレビュー)
 
@@ -39,7 +39,7 @@ Microsoft 365 Defender ポータル ( ) を使用すると、検出された脅�
 
 :::image type="content" source="../../media/mde-p1/m365-defender-portal.png" alt-text="Microsoft 365 Defender ポータル":::
 
-[ホーム] ページには、検出されたアラート、デバイスの状態、および脅威のスナップショット集計ビューがセキュリティ チームに提供されます。 セキュリティ センターがセットアップされ、セキュリティ運用チームが探している情報を迅速かつ簡単に検索できます。
+[ホーム] ページには、検出されたアラート、デバイスの状態、および脅威のスナップショット集計ビューがセキュリティ チームに提供されます。 Defender for Cloud は、セキュリティ運用チームが探している情報を迅速かつ簡単に検索できるようセットアップされています。
 
 > [!NOTE]
 > この記事に示す例は、ポータルに表示される内容と異なるMicrosoft 365 Defenderがあります。 ポータルに表示される内容は、ライセンスとアクセス許可によって異なります。 さらに、セキュリティ チームは、カードの追加、削除、および並び変更を行って、組織のポータルをカスタマイズできます。
@@ -58,7 +58,7 @@ Microsoft 365 Defender ポータル ( ) を使用すると、検出された脅�
 
 画面の左側のナビゲーション バーを使用すると、インシデント、アラート、アクション センター、レポート、および設定の間を簡単に移動できます。 次の表に、ナビゲーション バーについて説明します。<br/><br/>
 
-| ナビゲーション バーアイテム | 説明 |
+| ナビゲーション バーアイテム | [説明] |
 |:---|:---|
 | **ホーム** | ポータルのホーム ページに移動Microsoft 365 Defender[します](../defender/microsoft-365-security-center-mde.md)。 |
 | **インシデント&アラート** | 展開してインシデントと **アラートを****表示します**。 |
@@ -85,32 +85,32 @@ Microsoft 365 Defender ポータル ( ) を使用すると、検出された脅�
 
 ## <a name="view-and-manage-incidents--alerts"></a>インシデントとアラートの表示と管理&する
 
-ポータルにサインインするMicrosoft 365 Defender、インシデントとアラートを表示および管理してください。 [インシデント] リスト **から開始** します。 次の図は、重大度が高いインシデントと中程度の重大度を持つインシデントの一覧を示しています。 
+ポータルにサインインするMicrosoft 365 Defender、インシデントとアラートを表示および管理してください。 [インシデント] リスト **から開始** します。 次の図は、重大度が高いインシデントと中程度の重大度を持つインシデントの一覧を示しています。
 
 :::image type="content" source="../../media/mde-p1/incidents.png" alt-text="インシデント 一覧":::
- 
+
 インシデントを選択して、インシデントの詳細を表示します。 詳細には、トリガーされたアラート、影響を受けたデバイスとユーザーの数、その他の詳細が含まれます。 次の図は、インシデントの詳細の例を示しています。
 
 :::image type="content" source="../../media/mde-p1/single-incident.png" alt-text="インシデントの詳細":::
- 
-[アラート **]** タブ、[**デバイス**] タブ、および [ユーザー] タブを使用して、トリガーされたアラート、影響を受けたデバイス、影響を受けたユーザー アカウントなどの詳細を表示します。  そこから、デバイスの分離、ファイルの停止と隔離などの手動応答アクションを実行できます。 
+
+[アラート **]** タブ、[**デバイス**] タブ、および [ユーザー] タブを使用して、トリガーされたアラート、影響を受けたデバイス、影響を受けたユーザー アカウントなどの詳細を表示します。  そこから、デバイスの分離、ファイルの停止と隔離などの手動応答アクションを実行できます。
 
 > [!TIP]
 > インシデント ビューの使用の詳細については **、「インシデント** の管理 [」を参照してください](manage-incidents.md)。
 
-## <a name="manage-devices"></a>デバイスの管理
+## <a name="manage-devices"></a>デバイスを管理する
 
 組織のデバイスを表示および管理するには、ナビゲーション バーの [ **エンドポイント**] で、[デバイス インベントリ] **を選択します**。 次の図に示すように、デバイスの一覧が表示されます。
 
-:::image type="content" source="../../media/mde-p1/device-inventory.png" alt-text="デバイス一覧"::: 
+:::image type="content" source="../../media/mde-p1/device-inventory.png" alt-text="デバイス一覧":::
 
 一覧には、アラートが生成されたデバイスが含まれます。 既定では、表示されるデータは過去 30 日間で、最新のアイテムが最初に一覧表示されます。 デバイスを選択して、デバイスの詳細を表示します。 次の図に示すように、フライアウト ウィンドウが開きます。
 
 :::image type="content" source="../../media/mde-p1/device-inventory-selecteddevice.png" alt-text="選択したデバイスの詳細":::
 
-フライアウト ウィンドウには、デバイスのアクティブなアラートなどの詳細が表示され、デバイスの分離などのアクションを実行するリンクが含まれます。 
+フライアウト ウィンドウには、デバイスのアクティブなアラートなどの詳細が表示され、デバイスの分離などのアクションを実行するリンクが含まれます。
 
-デバイスにアクティブなアラートがある場合は、それらをフライアウト ウィンドウで表示できます。 個別のアラートを選択して、詳細を表示します。 または、デバイスの分離などのアクションを実行して、他のデバイスに感染するリスクを最小限に抑えながら、デバイスをさらに調査できます。 
+デバイスにアクティブなアラートがある場合は、それらをフライアウト ウィンドウで表示できます。 個別のアラートを選択して、詳細を表示します。 または、デバイスの分離などのアクションを実行して、他のデバイスに感染するリスクを最小限に抑えながら、デバイスをさらに調査できます。
 
 > [!TIP]
 > 詳細については、「Defender [for Endpoint devices list」の「デバイスを調査する」を参照してください](investigate-machines.md)。
@@ -119,9 +119,9 @@ Microsoft 365 Defender ポータル ( ) を使用すると、検出された脅�
 
 Defender for Endpoint Plan 1 では、ポータルでいくつかのレポートをMicrosoft 365 Defenderできます。 レポートにアクセスするには、次の手順を実行します。
 
-1. ポータル ( ) にMicrosoft 365 Defenderサインイン [https://security.microsoft.com](https://security.microsoft.com) します。 
+1. ポータル ( ) にMicrosoft 365 Defenderサインイン [https://security.microsoft.com](https://security.microsoft.com) します。
 
-2. ナビゲーション バーで、[レポート] を **選択します**。 
+2. ナビゲーション バーで、[レポート] を **選択します**。
 
 3. 一覧でレポートを選択します。 次の 3 つのレポートが表示されます。
 
@@ -130,26 +130,26 @@ Defender for Endpoint Plan 1 では、ポータルでいくつかのレポート
    - Web 保護レポート
 
 > [!TIP]
-> 詳細については、「脅威保護レポート [」を参照してください](threat-protection-reports.md)。 
+> 詳細については、「脅威保護レポート [」を参照してください](threat-protection-reports.md)。
 
 ### <a name="threat-protection-report"></a>脅威に対する保護のレポート
 
 脅威保護レポートにアクセスするには、Microsoft 365 Defenderポータルで [レポート] を選択し、[脅威保護]**を選択します**。 脅威保護レポートには、アラートの傾向、状態、カテゴリなどが表示されます。 ビューは、次の図に示 **すように、アラート** の傾向と **アラート** の状態の 2 つの列に配置されます。
- 
+
 :::image type="content" source="../../media/mde-p1/threat-protection-report.png" alt-text="脅威に対する保護のレポート":::
 
-下にスクロールすると、各リストのすべてのビューが表示されます。 
+下にスクロールすると、各リストのすべてのビューが表示されます。
 
-- 既定では、[アラートの傾向]列のビューには過去 30 日間のデータが表示されますが、過去 3 か月、過去 6 か月、またはユーザー設定の時間範囲 (最大 180 日間) のデータを表示するビューを設定できます。 
-- [アラートの状態] **列のビュー** は、前の営業日のスナップショットです。 
+- 既定では、[アラートの傾向]列のビューには過去 30 日間のデータが表示されますが、過去 3 か月、過去 6 か月、またはユーザー設定の時間範囲 (最大 180 日間) のデータを表示するビューを設定できます。
+- [アラートの状態] **列のビュー** は、前の営業日のスナップショットです。
 
 > [!TIP]
 > 詳細については、「Defender [for Endpoint の脅威保護レポート」を参照してください](threat-protection-reports.md)。
 
 ### <a name="device-health-report"></a>デバイス正常性レポート
 
-デバイス正常性レポートにアクセスするには、Microsoft 365 Defenderポータルで [レポート]を選択し、[デバイスの正常性]**を選択します**。 [デバイスの正常性] レポートには、組織内のデバイス全体の正常性状態とウイルス対策が表示されます。 脅威保護レポート[と](#threat-protection-report)同様に、ビューは次の図に示すように、デバイスの傾向とデバイスの概要の 2 つの列に配置されます。 
- 
+デバイス正常性レポートにアクセスするには、Microsoft 365 Defenderポータルで [レポート]を選択し、[デバイスの正常性]**を選択します**。 [デバイスの正常性] レポートには、組織内のデバイス全体の正常性状態とウイルス対策が表示されます。 脅威保護レポート[と](#threat-protection-report)同様に、ビューは次の図に示すように、デバイスの傾向とデバイスの概要の 2 つの列に配置されます。
+
 :::image type="content" source="../../media/mde-p1/device-health-report.png" alt-text="デバイス正常性レポート":::
 
 下にスクロールすると、各リストのすべてのビューが表示されます。 既定では、[デバイスの傾向]列のビューには過去 30 日間のデータが表示されますが、過去 3 か月、過去 6 か月、またはユーザー設定の時間範囲 (最大 180 日間) のデータを表示するビューを変更できます。 [ **デバイスの概要]** ビューは、前の営業日のスナップショットです。
@@ -159,8 +159,8 @@ Defender for Endpoint Plan 1 では、ポータルでいくつかのレポート
 
 ### <a name="web-protection-report"></a>Web 保護レポート
 
-デバイス正常性レポートにアクセスするには、Microsoft 365 Defenderポータルで [レポート] を選択し、[Web 保護]**を選択します**。 Web 保護レポートには、次の図に示すように、悪意のある URL やブロックされた URL へのアクセス試行など、時間のかかる検出が表示されます。 
- 
+デバイス正常性レポートにアクセスするには、Microsoft 365 Defenderポータルで [レポート] を選択し、[Web 保護]**を選択します**。 Web 保護レポートには、次の図に示すように、悪意のある URL やブロックされた URL へのアクセス試行など、時間のかかる検出が表示されます。
+
 :::image type="content" source="../../media/mde-p1/web-protection-report.png" alt-text="Web 保護レポート":::
 
 下にスクロールすると、Web 保護レポートのすべてのビューが表示されます。 一部のビューには、詳細の表示、脅威保護機能の構成、Defender for Endpoint の例外として機能するインジケーターの管理を行えるリンクが含まれます。

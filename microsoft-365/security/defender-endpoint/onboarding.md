@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7266a92c43e87b6ccf1bda5d78451c54066297cd
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: dca17763bb04ef8e362a98967140d3ab17636b7c
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240192"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109049"
 ---
 # <a name="onboard-to-the-microsoft-defender-for-endpoint-service"></a>Microsoft Defender for Endpoint サービスへのオンボード
 
@@ -63,7 +63,7 @@ Defender for Endpoint を展開するために必要な手順は次のとおり�
 
 | エンドポイント     | ツール オプション                       |
 |--------------|------------------------------------------|
-| **Windows**  |  [ローカル スクリプト (最大 10 台のデバイス)](configure-endpoints-script.md) <br>  [グループ ポリシー](configure-endpoints-gp.md) <br>  [Microsoft エンドポイント マネージャー/ モバイル デバイス マネージャー](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI スクリプト](configure-endpoints-vdi.md) <br> [Azure Defender との統合](azure-server-integration.md) |
+| **Windows**  |  [ローカル スクリプト (最大 10 台のデバイス)](configure-endpoints-script.md) <br>  [グループ ポリシー](configure-endpoints-gp.md) <br>  [Microsoft エンドポイント マネージャー/ モバイル デバイス マネージャー](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI スクリプト](configure-endpoints-vdi.md) <br> [Microsoft Defender for Cloud との統合](azure-server-integration.md) |
 | **macOS**    | [ローカル スクリプト](mac-install-manually.md) <br> [Microsoft エンドポイント マネージャー](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [モバイル デバイス管理](mac-install-with-other-mdm.md) |
 | **Linux Server** | [ローカル スクリプト](linux-install-manually.md) <br> [Puppet](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
 | **iOS**      | [Microsoft エンドポイント マネージャー](ios-install.md)                                |
@@ -76,7 +76,7 @@ Defender for Endpoint を展開するために必要な手順は次のとおり�
 | 機能 | 説明 |
 |-|-|
 | [エンドポイント検出&応答 (EDR)](overview-endpoint-detection-response.md) | Defender for Endpoint endpoint detection and response capabilitis provide advanced attack detections are near real-time and actionable. セキュリティ アナリストは、効率的にアラートの優先順位を設定し、違反の全容を可視化して、脅威に対処する対応策を講じることができます。 |
-| [脅威&脆弱性管理 (TVM)](next-gen-threat-and-vuln-mgt.md) | Threat & Vulnerability Management は、Microsoft Defender for Endpoint のコンポーネントであり、セキュリティ管理者とセキュリティ運用チームの両方に、エンドポイントの脆弱性と関連するリアルタイムエンドポイント検出と応答 (EDR) の分析情報 ( インシデント調査中の貴重なデバイスの脆弱性コンテキスト ) - Microsoft Intune と Micr による組み込みの修復プロセスを提供します。osoft System Center Configuration Manager。  |
+| [脅威&脆弱性管理 (TVM)](next-gen-threat-and-vuln-mgt.md) | Threat & Vulnerability Management は、Microsoft Defender for Endpoint のコンポーネントであり、セキュリティ管理者とセキュリティ運用チームの両方に、エンドポイントの脆弱性と関連するリアルタイムエンドポイント検出と応答 (EDR) インサイト - インシデント調査中の貴重なデバイスの脆弱性コンテキスト - Microsoft Intune による組み込みの修復プロセスを提供します。 および Microsoft System Center Configuration Manager。  |
 | [次世代保護 (NGP)](microsoft-defender-antivirus-windows.md) | Microsoft Defender ウイルス対策は、デスクトップ、ポータブル コンピューター、およびサーバーに次世代の保護を提供する組み込みのマルウェア対策ソリューションです。 Microsoft Defender ウイルス対策には、次のものが含まれます。<br> <br>-クラウドによって提供される、新しい脅威や新しい脅威のほぼ瞬時の検出とブロックに対する保護。 機械学習やインテリジェント セキュリティ グラフに加えて、クラウドによる保護は Microsoft Defender ウイルス対策を強化する次世代テクノロジの一部です。<br> <br> - 高度なファイルとプロセスの動作監視、その他のヒューリスティック ("リアルタイム保護" とも呼ばれる) を使用した常時スキャン。<br><br> - 機械学習、人間および自動化されたビッグ データ分析、および詳細な脅威耐性の調査に基づく専用の保護更新プログラム。 |
 | [攻撃表面の縮小 (ASR)](overview-attack-surface-reduction.md) | Microsoft Defender for Endpoint の攻撃表面の縮小機能は、新しい脅威や新たな脅威から組織内のデバイスとアプリケーションを保護するのに役立ちます。 |
 | [自動調査&修復 (AIR)](automated-investigations.md) | Microsoft Defender for Endpoint では、自動調査を使用して、個別に調査する必要があるアラートの量を大幅に削減します。 自動調査機能は、さまざまな検査アルゴリズムと、アナリストが使用するプロセス (プレイブックなど) を活用してアラートを調べ、違反を解決するために直ちに修復アクションを実行します。 これにより、アラート量が大幅に削減され、セキュリティ運用の専門家は、より高度な脅威やその他の価値の高い業務に集中できるようになります。 |
@@ -99,7 +99,7 @@ Defender for Endpoint を展開するために必要な手順は次のとおり�
 - 次世代の保護構成
 - 攻撃表面の縮小構成
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [Microsoft Endpoint Configuration Manager を使用したオンボーディング](onboarding-endpoint-configuration-manager.md)
 - [Microsoft エンドポイント マネージャーを使用したオンボーディング](onboarding-endpoint-manager.md)

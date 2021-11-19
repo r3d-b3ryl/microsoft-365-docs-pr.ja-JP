@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/14/2020
 ms.technology: mde
-ms.openlocfilehash: 20f6a92f414de9b6cb451a2bd5bb19ac2d15baec
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 562a62f04b673d29269c291a336f3ce72ce36f51
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556186"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110129"
 ---
 # <a name="understand-the-advanced-hunting-schema-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の高度なハンティング スキーマを理解する
 
@@ -35,7 +35,7 @@ ms.locfileid: "60556186"
 
 高度 [な検索スキーマ](advanced-hunting-overview.md) は、イベント情報またはデバイスや他のエンティティに関する情報を提供する複数のテーブルで構成されます。 複数のテーブルにまたがるクエリを効果的にビルドするには、高度な追求スキーマのテーブルと列を理解する必要があります。
 
-## <a name="get-schema-information-in-the-security-center"></a>セキュリティ センターでスキーマ情報を取得する
+## <a name="get-schema-information-in-the-defender-for-cloud"></a>Defender for Cloud でスキーマ情報を取得する
 
 クエリを作成する場合は、組み込みのスキーマ参照を使用して、スキーマ内の各テーブルに関する次の情報をすばやく取得します。
 
@@ -81,11 +81,11 @@ ms.locfileid: "60556186"
 |
 
 > [!TIP]
-> エンドポイント[の Defender、Microsoft 365 Defender、Microsoft](/microsoft-365/security/defender/advanced-hunting-overview) Defender for Office 365、Microsoft Cloud App Security、および Microsoft Defender for Identity のデータを使用して脅威を検出するには、Microsoft 365 Defender で高度な検索を使用します。 [[設定] をオンMicrosoft 365 Defender。](/microsoft-365/security/defender/m365d-enable)
+> Microsoft 365 Defender で高度な検索[を](/microsoft-365/security/defender/advanced-hunting-overview)使用して、Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Defender for Cloud Apps、Microsoft Defender for Identity のデータを使用して脅威を検出します。 [[設定] をオンMicrosoft 365 Defender。](/microsoft-365/security/defender/m365d-enable)
 
 高度なハンティング ワークフローを Microsoft Defender for Endpoint から Microsoft 365 Defender に移動する方法については、「Advanced Hunting [queries](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde)を Microsoft Defender for Endpoint から移行する」を参照してください。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)

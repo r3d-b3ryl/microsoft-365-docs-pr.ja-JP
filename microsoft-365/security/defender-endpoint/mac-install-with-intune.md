@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d71bbda27998ed99f6bffbd91ca3b76d9579be78
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 59c00d1e34cf97ce2012c3052283453dc23e38a1
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60662326"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110597"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>MacOS での Microsoft Defender for Endpoint の Intune ベースの展開
 
@@ -104,7 +104,7 @@ ms.locfileid: "60662326"
     > [!div class="mx-imgBorder"]
     > ![カスタム構成プロファイルの作成。](images/mdatp-6-systemconfigurationprofiles-1.png)
 
-1. プロファイルの名前を選択します。たとえば、「Defender または Endpoint onboarding for macOS」。 **[次へ]** をクリックします。
+1. プロファイルの名前を選択します。たとえば、「Defender for Cloud or Endpoint onboarding for macOS」などです。 **[次へ]** をクリックします。
 
     > [!div class="mx-imgBorder"]
     > ![カスタム構成プロファイル - 名前。](images/mdatp-6-systemconfigurationprofiles-2.png)
@@ -132,7 +132,7 @@ ms.locfileid: "60662326"
 このプロファイルは、macOS 10.15 (Catalina) 以降に必要です。 古い macOS では無視されます。
 
 1. [構成 **プロファイル] で [****プロファイルの作成] を選択します**。
-1. [**プラットフォーム** = **macOS]**[**プロファイルの種類** = **テンプレート] を選択します**。 **テンプレート名** =**拡張機能**. [**作成**] をクリックします。
+1. [**プラットフォーム** = **macOS]**[**プロファイルの種類** = **テンプレート] を選択します**。 **テンプレート名** =**拡張機能**. **[作成]** をクリックします。
 1. [基本 **] タブ** で、この新しいプロファイルに名前を付きます。
 1. [構成 **設定] タブで** 、[システム拡張機能] **を展開し、[** 許可されたシステム拡張機能] セクションに次 **のエントリを追加** します。
 
@@ -155,7 +155,7 @@ ms.locfileid: "60662326"
 > Apple Silicon (M1) デバイスは KEXT をサポートしていない。 KEXT ポリシーからなる構成プロファイルのインストールは、これらのデバイスで失敗します。
 
 1. [構成 **プロファイル] で [****プロファイルの作成] を選択します**。
-1. [**プラットフォーム** = **macOS]**[**プロファイルの種類** = **テンプレート] を選択します**。 **テンプレート名** =**拡張機能**. [**作成**] をクリックします。
+1. [**プラットフォーム** = **macOS]**[**プロファイルの種類** = **テンプレート] を選択します**。 **テンプレート名** =**拡張機能**. **[作成]** をクリックします。
 1. [基本 **] タブ** で、この新しいプロファイルに名前を付きます。
 1. [構成設定 **] タブで** 、[カーネル拡張機能 **] を展開します**。
 1. チーム **識別子を** **UBF8T346G9** に設定し、[次へ] を **クリックします**。

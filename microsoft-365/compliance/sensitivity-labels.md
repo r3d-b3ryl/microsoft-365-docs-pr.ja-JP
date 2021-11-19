@@ -22,12 +22,12 @@ description: Microsoft 情報保護 (MIP) の秘密度ラベルを使用して�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: b43ec6b8d529fe0f5c2ed89ed58c8fc122ada66e
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 2614512499c9ded8952ab5a071e7d1cf56d1d9ec
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60668324"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109949"
 ---
 # <a name="learn-about-sensitivity-labels"></a>秘密度ラベルの詳細
 
@@ -59,13 +59,13 @@ Microsoft Information Protection ソリューションの秘密度ラベルを�
 
 - **さまざまなプラットフォームやデバイスで Office アプリのコンテンツを保護する。** Office デスクトップアプリと Office on the web では、Word、Excel、PowerPoint、Outlook でサポートされています。 Windows、macOS、iOS、Android でサポートされています。
 
-- Microsoft Cloud App Security を使用して **サードパーティ製アプリおよびサービスのコンテンツを保護します**。Cloud App Security を使用すると、サードパーティ製アプリおよびサービス (SalesForce、Box、Dropbox など) のコンテンツを検出、分類、ラベル付け、および保護できます。これは、サードパーティ製のアプリやサービスが秘密度ラベルを認識またはサポートしない場合でも可能です。
+- Microsoft Defender for Cloud Apps を使用して **サード パーティ製アプリおよびサービスのコンテンツを保護する**。 Defender for Cloud Apps を使用すると、サード パーティ製アプリおよびサービス (SalesForce、Box、Dropbox など) のコンテンツを検出、分類、ラベル適用、および保護できます (サード パーティ製のアプリやサービスが機密ラベルを認識しない場合やサポートしない場合でも可能です)。
 
 - Teams、Microsoft 365 グループ、SharePoint サイトを含む **コンテナーを保護します**。 たとえば、プライバシー設定、外部ユーザー アクセスと外部共有、および管理されていないデバイスからのアクセスを設定します。
 
 - **Power BI に感度ラベルを拡張する**: この機能を有効にすると、Power BI にラベルを適用して表示したり、サービスの外部に保存するときにデータを保護したりすることができます。
 
-- **Azure Purview の資産に秘密度ラベルを拡張する**: 現在プレビュー中のこの機能をオンにすると、SQL 列や Azure Blob Storage のファイルなどの資産に秘密度ラベルを適用することができます。 
+- **Azure Purview の資産に秘密度ラベルを拡張する**: 現在プレビュー中のこの機能をオンにすると、Azure Purview のファイルやスキーマ化されたデータ アセットに秘密度ラベルを適用することができます。 スキーマ化されたデータ資産には、SQL、Azure SQL、Azure Synapse、Azure Cosoms、AWS RDS が含まれます。
 
 - **秘密度ラベルの適用をサード パーティ製アプリやサービスに拡大する。** Microsoft Information Protection SDK を使用すると、秘密度ラベルの読み取りと保護設定の適用をサード パーティ製アプリで行えるようになります。
 
@@ -118,7 +118,7 @@ Microsoft Information Protection ソリューションの秘密度ラベルを�
     
     ![必要なラベルを割り当てるかを確認するダイアログ。](../media/Sensitivity-label-Prompt-for-required-label.png)
     
-    機密ラベルを作成または編集するときの **ファイルと電子メールの自動ラベル設定** の詳細については、「[Office アプリのコンテンツに機密ラベルを自動的に適用する](apply-sensitivity-label-automatically.md)」および「[Azure Purview でデータに自動的にラベルを付ける](/azure/purview/create-sensitivity-label)」を参照してください。
+    機密ラベルを作成または編集するときの **ファイルとメールの自動ラベル** の設定の詳細については、「Office アプリの[コンテンツに機密ラベルを自動的に適用する](apply-sensitivity-label-automatically.md)」および「[Azure Purview でラベルを付ける](/azure/purview/create-sensitivity-label)」を参照してください。
 
 ### <a name="label-scopes"></a>ラベル スコープ
 
@@ -126,7 +126,7 @@ Microsoft Information Protection ソリューションの秘密度ラベルを�
 - そのラベルに構成できるラベル設定
 - ラベルがユーザーに表示される場所
 
-このスコープ構成により、ドキュメントとメール専用で、コンテナー用に選択できない秘密度ラベルを作成できます。 同様に、コンテナー専用で、ドキュメントやメールには選択できない秘密度ラベル。 現在プレビュー中の新機能ですが、Azure Purview assets の範囲を選択することもできます。
+このスコープ構成により、ドキュメントとメール専用で、コンテナー用に選択できない秘密度ラベルを作成できます。 同様に、コンテナー専用で、ドキュメントやメールには選択できない秘密度ラベル。 Azure Purview 資産のスコープを選択することもできます。
 
 ![秘密度ラベルの範囲オプション。](../media/sensitivity-labels-scopes.png)
 
@@ -134,7 +134,7 @@ Microsoft Information Protection ソリューションの秘密度ラベルを�
 
 - **グループとサイト**: [コンテナーの秘密度ラベルを有効化してラベルを同期する](sensitivity-labels-teams-groups-sites.md#how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels)
 
-- **Azure Purview assets (プレビュー)**: [Azure Purview のコンテンツに自動的にラベルを付ける](/azure/purview/create-sensitivity-label)
+- **スキーマ化されたデータ アセット**: [Azure Purview のコンテンツに自動的にラベルを付ける](/azure/purview/create-sensitivity-label)
 
 すべての範囲が選択されないように既定値を変更すると、選択していない範囲の構成設定の最初のページが表示されますが、設定を構成することはできません。 たとえば、ファイルとメールのスコープが選択されていない場合、次のページでオプションを選択することはできません。
 

@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 31f8c9dd4e2d7fc1dac79eea22ede9836df6606a
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 8e2a2555969da5b293a843732bbe333336e86b6e
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60667028"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61106517"
 ---
 # <a name="evaluate-and-pilot-microsoft-365-defender"></a>Microsoft 365 Defender の評価とパイロット
 
@@ -54,7 +54,7 @@ Microsoft 365 Defenderは、クラウドベースの統合型、侵害前およ�
 - **Office 365** 安全な添付ファイルの Defender は添付ファイルをテストし、有害と判断します。そのため、受信したメールはユーザーが操作できないか、ポリシーによってメールが届かないので、メールが全く届かないので、問題ありません。
 - **Defender for Endpoint は** 、企業ネットワークに接続し、悪用される可能性のあるデバイスとネットワークの脆弱性を検出するデバイスを管理します。
 - **Defender for Identity は** 、特権エスカレーションやリスクの高い横方向の移動など、アカウントの突然の変更に注意します。 また、セキュリティ チームによる修正のために、拘束されていない Kerberos 委任など、簡単に悪用された ID の問題について報告します。
-- **Microsoft Cloud App Security、** 移動不可能、資格情報へのアクセス、異常なダウンロード、ファイル共有、メール転送のアクティビティなど、異常な動作に気付き、セキュリティ チームに報告します。
+- **Microsoft Defender for Cloud Apps** は、不可能な移動、資格情報へのアクセス、異常なダウンロード、ファイル共有、メール転送アクティビティのような異常な動作に気付き、セキュリティ チームに報告します。
 
 ### <a name="microsoft-365-defender-components"></a>Microsoft 365 Defenderコンポーネント
 
@@ -66,8 +66,8 @@ Microsoft 365 Defenderは、これらのセキュリティ テクノロジで構
 |Exchange Online Protection     |      Exchange Online Protectionは、スパムやマルウェアから組織を保護するのに役立つネイティブのクラウドベースの SMTP リレーおよびフィルター サービスです。      |   [Exchange Online Protection (EOP) の概要 - Office 365](../office-365-security/overview.md)     |
 |Microsoft Defender for Office 365     |     Microsoft Defender for Office 365、電子メール メッセージ、リンク (URL)、およびコラボレーション ツールによる悪意のある脅威から組織を保護します。      |    [Microsoft Defender for Office 365 - Office 365](../office-365-security/overview.md)    |
 |Microsoft Defender for Endpoint     |     Microsoft Defender for Endpoint は、デバイス保護、侵害後の検出、自動調査、推奨される対応のための統合プラットフォームです。      |   [Microsoft Defender for Endpoint - Windows セキュリティ](../defender-endpoint/microsoft-defender-endpoint.md)    |
-|Microsoft Cloud App Security     |      Microsoft Cloud App セキュリティは、クラウド アプリに深い可視性、強力なデータ制御、強化された脅威保護をもたらす包括的なクロス SaaS ソリューションです。       |    [Cloud App Security とは](/cloud-app-security/what-is-cloud-app-security)    |
-|Azure AD Identity Protection|Azure ADIdentity Protection は、数十億回のサインイン試行からのリスク データを評価し、このデータを使用して、各サインインが環境に対するリスクを評価します。 このデータは、条件付Azure AD構成方法に応じて、アカウント アクセスを許可または防止するために、ユーザーが使用します。 Azure ADIDENTITY Protection は、ユーザーのライセンスとは別にMicrosoft 365 Defender。 このファイルは、Azure Active Directory Premium P2。|[Identity Protection とは](/azure/active-directory/identity-protection/overview-identity-protection)|
+|Microsoft Defender for Cloud Apps     |      Microsoft Defender for Cloud Apps は、クラウド アプリに深い可視性、強力なデータ制御、強化された脅威保護をもたらす包括的なクロス SaaS ソリューションです。       |    [Defender for Cloud Appsとは?](/cloud-app-security/what-is-cloud-app-security)    |
+|Azure AD Identity Protection|Azure AD Id Protection は、数十億回のサインイン試行からのリスク データを評価し、このデータを使用して、各サインインが環境に対するリスクを評価します。 このデータは、条件付Azure AD構成方法に応じて、アカウント アクセスを許可または防止するために、ユーザーが使用します。 Azure AD Id Protection は、ユーザーのライセンスとは別にMicrosoft 365 Defender。 このファイルは、Azure Active Directory Premium P2。|[Identity Protection とは](/azure/active-directory/identity-protection/overview-identity-protection)|
 | | | |
 
 ## <a name="microsoft-365-defender-architecture"></a>Microsoft 365 Defenderアーキテクチャ
@@ -82,12 +82,12 @@ Microsoft 365 Defenderは、これらのセキュリティ テクノロジで構
 - Microsoft 365 Defenderメッセージ、リンク (URL)、およびコラボレーション ツールによって生じうる悪意のある脅威から組織を保護します。 これらのアクティビティに起因するシグナルを、Microsoft 365 Defender。 Exchange Online Protection (EOP) は、受信メールと添付ファイルに対するエンドツーエンドの保護を提供するために統合されています。
 - Microsoft Defender for Identity は、Active Directory フェデレーション サービス (AD FS) およびオンプレミスの Active Directory ドメイン サービス (AD DS) を実行しているサーバーからの信号を収集します。 これらのシグナルを使用して、侵害されたアカウントを使用してオンプレミス環境のワークステーション間を横方向に移動するハッカーからの保護など、ハイブリッド ID 環境を保護します。
 - Microsoft Defender for Endpoint は、組織で使用されているデバイスからの信号を収集し、保護します。
-- Microsoft Cloud App Security組織によるクラウド アプリの使用から信号を収集し、環境とこれらのアプリの間を流れるデータ (認可されたクラウド アプリと認可されていないクラウド アプリの両方を含む) を保護します。
-- Azure ADIdentity Protection は、数十億回のサインイン試行からのリスク データを評価し、このデータを使用して、各サインインが環境に対するリスクを評価します。 このデータは、条件付Azure AD構成方法に応じて、アカウント アクセスを許可または防止するために、ユーザーが使用します。 Azure ADIDENTITY Protection は、ユーザーのライセンスとは別にMicrosoft 365 Defender。 このファイルは、Azure Active Directory Premium P2。  
+- Microsoft Defender for Cloud Apps は、組織によるクラウド アプリの使用からのシグナルを収集し、環境とこれらのアプリの間で流れるデータ (認可されたクラウド アプリと認可されていないクラウド アプリの両方を含む) を保護します。
+- Azure AD Id Protection は、数十億回のサインイン試行からのリスク データを評価し、このデータを使用して、各サインインが環境に対するリスクを評価します。 このデータは、条件付Azure AD構成方法に応じて、アカウント アクセスを許可または防止するために、ユーザーが使用します。 Azure AD Id Protection は、ユーザーのライセンスとは別にMicrosoft 365 Defender。 このファイルは、Azure Active Directory Premium P2。  
 
 この図に含まれていないその他のオプションのアーキテクチャ コンポーネント:
 
-- すべての Microsoft 365 Defender コンポーネントの詳細な信号データを Azure Sentinel に統合し、他のログ ソースと組み合わせて SIEM と SOAR の機能と洞察を提供できます。
+- すべての Microsoft 365 Defender コンポーネントの詳細な信号データを Microsoft Sentinel に統合し、他のログ ソースと組み合わせて、SIEM と SOAR の機能と洞察を提供できます。
 
 ## <a name="the-evaluation-process"></a>評価プロセス
 
@@ -103,7 +103,7 @@ Microsoft 365 Defenderは、これらのセキュリティ テクノロジで構
 |2     | [Id の Defender を有効にする](eval-defender-identity-overview.md)        | アーキテクチャ要件を確認し、評価を有効にし、さまざまな攻撃の種類を特定して修復するためのチュートリアルを説明します。   |
 |3     | [[Defender for Office 365 ](eval-defender-office-365-overview.md)       | アーキテクチャ要件を満たしていることを確認し、評価を有効にしてから、パイロット環境を作成します。 このコンポーネントには、Exchange Online Protectionが含まれるので、ここで両方を実際に *評価* します。      |
 |4     | [エンドポイントの Defender を有効にする ](eval-defender-endpoint-overview.md)       | アーキテクチャ要件を満たしていることを確認し、評価を有効にしてから、パイロット環境を作成します。         |
-|5     | [[有効Microsoft Cloud App Security](eval-defender-mcas-overview.md)        |  アーキテクチャ要件を満たしていることを確認し、評価を有効にしてから、パイロット環境を作成します。        |
+|5     | [クラウド アプリの Microsoft Defender を有効にする](eval-defender-mcas-overview.md)        |  アーキテクチャ要件を満たしていることを確認し、評価を有効にしてから、パイロット環境を作成します。        |
 |6      | [脅威の調査と対応](eval-defender-investigate-respond.md)        |   攻撃をシミュレートし、インシデント対応機能の使用を開始します。      |
 |7      | [試用版を製品版に昇格する](eval-defender-promote-to-production.md)        | 1 Microsoft 365コンポーネントを 1 つ 1 つ生産に昇格します。        |
 | | | |

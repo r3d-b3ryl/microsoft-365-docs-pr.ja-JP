@@ -20,12 +20,12 @@ description: 電子情報開示関連のタスクを実行するために必要�
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: f2328c7ea45b842d17260976248fafc28b503998
-ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
+ms.openlocfilehash: 040d47123c789fba7aacc1b120eecdab8a7f210e
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2021
-ms.locfileid: "60804967"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61106664"
 ---
 # <a name="assign-ediscovery-permissions-in-the-microsoft-365-compliance-center"></a>電子情報開示のアクセス許可をユーザーに割り当Microsoft 365 コンプライアンス センター
 
@@ -81,13 +81,13 @@ Microsoft 365 コンプライアンス センターの [アクセス許可] ペ�
 
 次の表に、Microsoft 365 コンプライアンス センター の電子情報開示関連の RBAC ロールを示し、各役割が既定で割り当てられている組み込みの役割グループを示します。
   
-| ロール | コンプライアンス管理者 | 電子情報開示マネージャー &管理者 | 組織管理 | レビュー担当者 |
+| 役割 | コンプライアンス管理者 | 電子情報開示マネージャー &管理者 | 組織管理 | レビュー担当者 |
 |:-----|:-----:|:-----:|:-----:|:-----:|
 |ケース管理 <br/> |![チェック マーク。](../media/checkmark.png) <br/> |![チェック マーク。](../media/checkmark.png) <br/> |![チェック マーク。](../media/checkmark.png) <br/> | <br/> |
 |コミュニケーション <br/> | <br/> |![チェック マーク。](../media/checkmark.png) <br/> | <br/> | <br/> |
 |コンプライアンス検索 <br/> |![チェック マーク。](../media/checkmark.png) <br/> |![チェック マーク。](../media/checkmark.png) <br/> |![チェック マーク。](../media/checkmark.png) <br/> | <br/> |
 |カストディアン <br/> | <br/> |![チェック マーク。](../media/checkmark.png) <br/> | <br/> | <br/> |
-|エクスポート <br/> | <br/> |![チェック マーク。](../media/checkmark.png) <br/> | <br/> | <br/> |
+|Export <br/> | <br/> |![チェック マーク。](../media/checkmark.png) <br/> | <br/> | <br/> |
 |Hold <br/>  |![チェック マーク。](../media/checkmark.png) <br/> |![チェック マーク。](../media/checkmark.png) <br/> |![チェック マーク。](../media/checkmark.png) <br/> | <br/> |
 |Preview <br/>  | <br/> |![チェック マーク。](../media/checkmark.png) <br/> | <br/> | <br/> |
 |レビュー <br/>  | <br/> |![チェック マーク。](../media/checkmark.png) <br/> | <br/> |![チェック マーク](../media/checkmark.png) <br/> |
@@ -115,7 +115,7 @@ Microsoft 365 コンプライアンス センターの [アクセス許可] ペ�
 
 ### <a name="compliance-search"></a>コンプライアンス検索
 
-この役割を使用すると、ユーザーは Microsoft 365 コンプライアンス センター でコンテンツ検索ツールを実行して、メールボックスとパブリック フォルダー、SharePoint Online サイト、OneDrive for Business サイト、Skype for Business 会話、Microsoft 365 グループ、Microsoft Teams グループ、および Yammer グループを検索できます。 この役割を使用すると、ユーザーは検索結果の見積もりを取得してエクスポート レポートを作成できますが、検索結果のプレビュー、エクスポート、削除などのコンテンツ検索アクションを開始するには、他の役割が必要です。
+この役割を使用すると、ユーザーは Microsoft 365 コンプライアンス センター でコンテンツ検索ツールを実行して、メールボックスとパブリック フォルダー、SharePoint Online サイト、OneDrive for Business サイト、Skype for Business 会話、Microsoft 365 グループ、およびMicrosoft TeamsグループYammerします。 この役割を使用すると、ユーザーは検索結果の見積もりを取得してエクスポート レポートを作成できますが、検索結果のプレビュー、エクスポート、削除などのコンテンツ検索アクションを開始するには、他の役割が必要です。
 
 コンテンツ検索とコア電子情報開示では、コンプライアンス検索役割が割り当てられているが、プレビュー ロールを持たなかったユーザーは、プレビュー ロールが割り当てられているユーザーによってプレビュー アクションが開始された検索の結果をプレビューできます。 プレビュー ロールのないユーザーは、最初のプレビュー アクションが作成された後、最大 2 週間の結果をプレビューできます。
 

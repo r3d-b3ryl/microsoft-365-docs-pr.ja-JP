@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: データ損失防止ポリシーで名前付きエンティティを利用するには、次の手順を使用します。
-ms.openlocfilehash: c1ee219594cc5406fc559ab9e9a489b1d6285af6
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: eec82365e6fb4af4b6ca23896addd491637ec022
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60661900"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110813"
 ---
 # <a name="use-named-entities-in-your-data-loss-prevention-policies-preview"></a>データ損失防止ポリシーで名前付きエンティティを使用する (プレビュー)
 
@@ -69,7 +69,7 @@ DLP ポリシーを作成または編集するには、「DLP ポリシーの作
 
 
 - **Microsoft 3655 電子情報開示は、Substrate サービス** での名前付きエンティティの使用をサポートしています。
-- **Microsoft Cloud App Security (MCAS) は、MCAS** ポリシーでの名前付きエンティティの使用をサポートします。
+- **Microsoft Defender for Cloud Apps では、Defender** for Cloud Apps ポリシーでの名前付きエンティティの使用がサポートされています。
 - **Insider Risk Management は、Substrate** サービスでの名前付きエンティティの使用をサポートします。
 - **通信コンプライアンス** は、トランスポート ルールとデータ保存時のExchangeエンティティの使用をサポートしています。
 - **Microsoft Information Governance** (MIG) は、トランスポート ルールと保存データのExchange名前付きエンティティの使用をサポートしています。
@@ -78,26 +78,26 @@ DLP ポリシーを作成または編集するには、「DLP ポリシーの作
 
 |ワークロード/サービス  |名前付きエンティティのパブリック プレビューのサポート  |
 |---------|---------|
-|OfficeWin32 クライアント ポリシーヒント    |サポートなし  |
-|OfficeWAC クライアント ポリシーヒント    |サポート対象         |
+|Office Win32 クライアント ポリシーヒント    |サポートなし  |
+|Office WAC クライアント ポリシーヒント    |サポート対象         |
 |OWA ポリシーヒント     |サポートなし         |
 |Outlookポリシーヒント     |サポートなし |
 |エンドポイント (Windows 10デバイス)     |サポートなし  |
-|Exchangeトランスポート ルール     |サポートなし |
+|Exchange トランスポート ルール     |サポートなし |
 |OneDrive for Business保存時のデータ     |サポート対象         |
 |SharePointオンライン データの保存     |サポート対象         |
 |Teams保存時のデータ     |サポート対象         |
 |電子メール メッセージの保存時のデータ     |サポートなし         |
-|Microsoft Cloud App Security (MCAS)     |サポート対象         |
+|Microsoft Defender for Cloud Apps     |サポート対象         |
 
 ### <a name="autolabeling"></a>自動ラベル付け
 
 |ワークロード/サービス |名前付きエンティティのパブリック プレビューのサポート  |
 |---------|---------|
-|OfficeWin32 クライアントのオフライン   |サポートされている場合、ユーザーはラベルを選択して手動で適用する必要があります |
+|Office Win32 クライアントをオフラインにする   |サポートされている場合、ユーザーはラベルを選択して手動で適用する必要があります |
 |オンライン Office Win32 クライアント|古い信頼度スキームでサポートされる |
 |Outlookオンライン   |古い信頼度スキームでサポートされる  |
-|OfficeWAC クライアント     |サポート対象 |
+|Office WAC クライアント     |サポート対象 |
 |OWA     |サポート対象 |
 |Exchangeトランスポート     |サポートなし |
 |OneDrive for Business保存時のデータ     |サポート対象 |

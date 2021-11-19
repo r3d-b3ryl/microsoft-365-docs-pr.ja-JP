@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e490123a06c2384568e4aabe9119936ed618b2c2
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: e5f76505191b552450440917bf616f7678464524
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240485"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110453"
 ---
 # <a name="onboard-devices-without-internet-access-to-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint へのインターネット アクセスのないオンボード デバイス
 
@@ -71,7 +71,7 @@ ms.locfileid: "60240485"
 - OMS ゲートウェイの同じネットワーク内のオフライン Azure VM
     - Azure Log Analytics IP をプロキシとして構成する
     - Azure Log Analytics Workspace Key & ID
-- Azure Defender
+- Microsoft Defender for Cloud
     - [セキュリティ ポリシー \> ログ分析ワークスペース](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
     - [脅威検出 \> エンドポイントの Defender が自分のデータにアクセスできる](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
 

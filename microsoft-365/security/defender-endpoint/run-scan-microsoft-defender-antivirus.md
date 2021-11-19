@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 1f2f5625eff5b19c47aebf896d6a0398437426aa
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: d056c1addb428d63fa855d09fcce54d8e5ca5994
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60881663"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110717"
 ---
 # <a name="configure-and-run-on-demand-microsoft-defender-antivirus-scans"></a>オンデマンドの Microsoft Defender ウイルス対策スキャンを構成して実行する
 
@@ -81,7 +81,7 @@ mpcmdrun.exe -scan -scantype 1
 Start-MpScan
 ```
 
-PowerShell を Microsoft Defender ウイルス対策と一緒に使用する方法の詳細については[、「Use PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md)コマンドレットを使用して、PowerShell コマンドレットと Defender コマンドレットを構成およびMicrosoft Defender ウイルス対策実行する」を[参照してください](/powershell/module/defender/)。
+PowerShell を Microsoft Defender ウイルス対策 と一緒に使用する方法の詳細については[、「Use PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md)コマンドレットを使用して Microsoft Defender ウイルス対策と Defender for Cloud コマンドレットを構成および実行する」を[参照してください](/powershell/module/defender/)。
 
 ## <a name="use-windows-management-instruction-wmi-to-run-a-scan"></a>スキャンWindows実行するには、管理命令 (WMI) を使用します。
 

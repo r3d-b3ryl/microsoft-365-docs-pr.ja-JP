@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 788a7541c09aa34e15171cd679ff49eff515d0a7
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: a924e53142d6fce9bc66b9bb473e40ce480739cf
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60785812"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111485"
 ---
 # <a name="insider-risk-management-policies"></a>インサイダー リスクの管理。
 
@@ -141,7 +141,7 @@ Insider リスク分析では、インサイダー リスク ポリシーを構�
 | **優先ユーザーによるデータ漏洩** | *重大度 High* のアラートを作成する、または組み込みのデータ流出イベントのトリガーとなるデータ漏洩ポリシー アクティビティ | 重大度の高いアラート *用に構成された* DLP ポリシー <br><br> または <br><br> カスタマイズされたトリガー インジケーター <br><br> インサイダー リスク設定で構成された優先ユーザー グループ |
 | **不満を持つユーザーによるデータ漏洩** | HR コネクタからのパフォーマンスの向上、パフォーマンス低下、またはジョブ レベルの変更に関するインジケーター | 不満インジケーター用に構成された Microsoft 365 HR コネクタ |
 | **一般的なセキュリティ ポリシー違反** | Microsoft Defender for Endpoint によって検出されたセキュリティ制御または望ましくないソフトウェアの防御回避 | アクティブな Microsoft Defender for Endpoint のサブスクリプション <br><br> Microsoft 365 コンプライアンス センターを構成した Microsoft Defender for Endpoint 統合 |
-| **一般的な患者データの誤用** | EMR システムからのセキュリティ制御の防御回避 <br><br> 人事システムからのユーザーと患者のアドレス一致インジケーター | ポリシーまたはインサイダー リスク設定で選択されたヘルスケア アクセスインジケーター <br><br> Microsoft 365アドレス照合用に構成された HR コネクタ <br><br> Microsoft Healthcare または Epic コネクタが構成済み |
+| **一般的な患者データの誤用** | EMR システムからのセキュリティ制御の防御回避 <br><br> 人事システムからのユーザーと患者のアドレス一致インジケーター | ポリシーまたはインサイダー リスク設定で選択されたヘルスケア アクセスインジケーター <br><br> Microsoft 365照合用に構成された HR コネクタ <br><br> Microsoft Healthcare または Epic コネクタが構成済み |
 | **離職するユーザーによるセキュリティ ポリシー違反** | HR コネクタまたは Azure Active Directory アカウントの削除からの辞職または離職日のインジケーター | (オプション) 辞職または離職日のインジケーター用に構成された Microsoft 365 HR コネクタ <br><br> アクティブな Microsoft Defender for Endpoint のサブスクリプション <br><br> Microsoft 365 コンプライアンス センターを構成した Microsoft Defender for Endpoint 統合 |
 | **優先ユーザーによるセキュリティ ポリシー違反** | Microsoft Defender for Endpoint によって検出されたセキュリティ制御または望ましくないソフトウェアの防御回避 | アクティブな Microsoft Defender for Endpoint のサブスクリプション <br><br> Microsoft 365 コンプライアンス センターを構成した Microsoft Defender for Endpoint 統合 <br><br> インサイダー リスク設定で構成された優先ユーザー グループ |
 | **不満を持つユーザーによるセキュリティ ポリシー違反** | HR コネクタからのパフォーマンスの向上、パフォーマンス低下、またはジョブ レベルの変更に関するインジケーター | 不満インジケーター用に構成された Microsoft 365 HR コネクタ <br><br> アクティブな Microsoft Defender for Endpoint のサブスクリプション <br><br> Microsoft 365 コンプライアンス センターを構成した Microsoft Defender for Endpoint 統合 |

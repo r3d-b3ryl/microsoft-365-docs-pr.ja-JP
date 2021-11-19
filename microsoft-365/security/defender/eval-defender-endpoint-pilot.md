@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: cd86f7c958e4e6912c18ddb3c345bfbcc6b6242e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 75abd493e0ec2b80e4ff454ddec39f78169d01d9
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60149804"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110417"
 ---
 # <a name="pilot-microsoft-defender-for-endpoint"></a>エンドポイント向け Microsoft Defender のパイロット
 
@@ -37,7 +37,7 @@ ms.locfileid: "60149804"
 ![Microsoft Defender for Identity を Defender 評価環境に追加する手順。](../../media/defender/m365-defender-endpoint-pilot-steps.png)
 
 - 手順 1. パイロット グループの確認
-- 手順 2. 機能を試す
+- 手順 2。 機能を試す
 
 Microsoft Defender for Endpoint をパイロットする場合は、組織全体をオンボーディングする前に、いくつかのデバイスをサービスにオンボードできます。  
 
@@ -48,7 +48,7 @@ Microsoft Defender for Endpoint をパイロットする場合は、組織全体
 
 オンボードデバイスが表示された場合は、機能の試しに進みます。 
 
-## <a name="step-2-try-out-capabilities"></a>手順 2. 機能を試す
+## <a name="step-2-try-out-capabilities"></a>手順 2。 機能を試す
 一部のデバイスのオンボーディングが完了し、サービスに報告されているのを確認したら、使用可能な強力な機能を試して、製品について理解してください。
 
 パイロットの間は、複雑な構成手順を実行せずに、いくつかの機能を試して製品を実際に確認できます。
@@ -84,7 +84,7 @@ Microsoft Defender for Endpoint には、パイロット デバイスで実行�
 > シミュレーション ファイルまたはスクリプトは攻撃アクティビティを模倣しますが、実際には良性であり、テスト デバイスに害を及ぼしたり、危険にさらしたりしません。
 
 ## <a name="next-steps"></a>次の手順
-[評価Microsoft Cloud App Security](eval-defender-mcas-overview.md)
+[Microsoft Defender for Cloud Apps の評価](eval-defender-mcas-overview.md)
 
 エンドポイントの Microsoft [Defender の評価の概要に戻る](eval-defender-endpoint-overview.md)
 

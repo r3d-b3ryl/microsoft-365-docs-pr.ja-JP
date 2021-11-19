@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 構成可能な一致を使用するために、完全一致スキーマを変更する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f41dee9b1ca13f319e5dc05fc5f7512bd98a5186
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: e546d90c94cc2a4ab349b3de7ba970b94f6491e3
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914466"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110489"
 ---
 # <a name="modify-exact-data-match-schema-to-use-configurable-match"></a>構成可能な一致を使用するために完全一致スキーマを変更する
 
@@ -134,5 +134,5 @@ ms.locfileid: "60914466"
 - [機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)
 - [カスタムの機密情報の種類](./sensitive-information-type-learn-about.md)
 - [データ損失防止について](dlp-learn-about-dlp.md)
-- [Microsoft Cloud App Security](/cloud-app-security)
+- [Microsoft Defender for Cloud Apps](/cloud-app-security)
 - [New-DlpEdmSchema](/powershell/module/exchange/new-dlpedmschema)

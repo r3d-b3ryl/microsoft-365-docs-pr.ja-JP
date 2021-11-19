@@ -19,12 +19,12 @@ ms.custom:
 ms.topic: article
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: fd23f0cdf35a9b7e236a957fed0922192091beb3
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 8103aad218f4e439c5eb3ebf6c76f369715afd84
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963157"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111245"
 ---
 # <a name="report-and-troubleshoot-microsoft-defender-for-endpoint-asr-rules"></a>エンドポイント ASR ルールの Microsoft Defender のレポートとトラブルシューティング
 
@@ -35,10 +35,10 @@ ms.locfileid: "60963157"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-セキュリティ<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365は</a>、Microsoft ID、データ、デバイス、アプリ、インフラストラクチャ全体のセキュリティを監視および管理するための新しいインターフェイスです。 ここでは組織のセキュリティの健全性を簡単に表示したり、デバイス、ユーザー、アプリを構成したり、不審なアクティビティのアラートを取得したりできます。 Microsoft 365 セキュリティ センターは、セキュリティ管理者とセキュリティ運用チームが組織をより適切に管理および保護することを目的としています。 で、Microsoft 365セキュリティ センターにアクセスします <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"><https://security.microsoft.com></a> 。
+この<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderは</a>、Microsoft ID、データ、デバイス、アプリ、インフラストラクチャ全体のセキュリティを監視および管理するための新しいインターフェイスです。 ここでは組織のセキュリティの健全性を簡単に表示したり、デバイス、ユーザー、アプリを構成したり、不審なアクティビティのアラートを取得したりできます。 このMicrosoft 365 Defenderは、セキュリティ管理者とセキュリティ運用チームが組織の管理と保護を強化することを目的としています。 で、Microsoft 365 Defenderポータルにアクセスします <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"><https://security.microsoft.com></a> 。
 
-セキュリティ<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365では</a>、現在の ASR ルールの構成と、資産内のイベントを完全に確認できます。 これらのレポートを設定するには、デバイスを Microsoft Defender for Endpoint サービスにオンボードする必要があります。
-セキュリティ センターのスクリーンショットを次に示Microsoft 365レポート デバイス攻撃表面の縮小] \>  \> **の下に示します**。 デバイス レベルで、[攻撃表面 **縮小ルール]** ウィンドウ **から [構成] を選択** します。 次の画面が表示され、特定のデバイスを選択し、個々の ASR ルール構成を確認できます。
+ポータル<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender、</a>現在の ASR ルールの構成と、資産内のイベントを完全に確認できます。 これらのレポートを設定するには、デバイスを Microsoft Defender for Endpoint サービスにオンボードする必要があります。
+[レポート デバイス攻撃の表面縮小] の下Microsoft 365 Defenderポータルの \>  \> **スクリーンショットを次に示します**。 デバイス レベルで、[攻撃表面 **縮小ルール]** ウィンドウ **から [構成] を選択** します。 次の画面が表示され、特定のデバイスを選択し、個々の ASR ルール構成を確認できます。
 
 :::image type="content" source="images/asrrulesnew.png" lightbox="images/asrrulesnew.png" alt-text="ASR ルール画面。":::
 

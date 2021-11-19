@@ -1,5 +1,5 @@
 ---
-title: デバイスをオンボードし、Microsoft Defender for Endpoint の機能を構成する
+title: デバイスにオンボードして、Microsoft Defender for Endpoint 機能 を構成します
 description: オンボード Windows 10、サーバー、非デバイスWindows検出テストを実行する方法について学習します。
 keywords: オンボーディング、Microsoft Defender for Endpoint オンボーディング、sccm、グループ ポリシー、mdm、ローカル スクリプト、検出テスト
 ms.prod: m365-security
@@ -14,14 +14,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7d029e2b896a194adce743a678e10c366ce71341
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: 5ee4039e2cddc6b071ac8f158d3754899f5d3f7e
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60239610"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110585"
 ---
-# <a name="onboard-devices-and-configure-microsoft-defender-for-endpoint-capabilities"></a>デバイスをオンボードし、Microsoft Defender for Endpoint の機能を構成する
+# <a name="onboard-devices-and-configure-microsoft-defender-for-endpoint-capabilities"></a>デバイスにオンボードして、Microsoft Defender for Endpoint 機能 を構成します
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -60,7 +60,7 @@ Defender for Endpoint ポータルのオンボーディング セクションに
 
 | エンドポイント     | ツール オプション                       |
 |--------------|------------------------------------------|
-| **Windows**  |  [ローカル スクリプト (最大 10 台のデバイス)](configure-endpoints-script.md) <br>  [グループ ポリシー](configure-endpoints-gp.md) <br>  [Microsoft エンドポイント マネージャー/ モバイル デバイス マネージャー](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI スクリプト](configure-endpoints-vdi.md) <br> [Azure Defender との統合](configure-server-endpoints.md#integration-with-azure-defender)  |
+| **Windows**  |  [ローカル スクリプト (最大 10 台のデバイス)](configure-endpoints-script.md) <br>  [グループ ポリシー](configure-endpoints-gp.md) <br>  [Microsoft エンドポイント マネージャー/ モバイル デバイス マネージャー](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI スクリプト](configure-endpoints-vdi.md) <br> [Microsoft Defender for Cloud との統合](configure-server-endpoints.md#integration-with-azure-defender)  |
 | **macOS**    | [ローカル スクリプト](mac-install-manually.md) <br> [Microsoft エンドポイント マネージャー](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [モバイル デバイス管理](mac-install-with-other-mdm.md) |
 | **Linux Server** | [ローカル スクリプト](linux-install-manually.md) <br> [Puppet](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
 | **iOS**      | [Microsoft エンドポイント マネージャー](ios-install.md)               |
@@ -85,11 +85,11 @@ Defender for Endpoint ポータルのオンボーディング セクションに
 
 ## <a name="supported-capabilities-for-windows-devices"></a>デバイスでサポートされているWindows機能
 
-|オペレーティング システム  |Windows 10 & 11  |Windows Server 2012R2 <sup> [[1](#fn1)]<sup></sup>  |<sup>Windows Server 2016[[1](#fn1)]<sup></sup>   |WindowsServer 2019 & 2022|WindowsServer 1803+|
+|オペレーティング システム  |Windows 10 & 11  |Windows Server 2012 R2 <sup> [[1](#fn1)]<sup></sup>  |Windows Server 2016 [ <sup> [1](#fn1)]<sup></sup>   |Windows Server 2019 & 2022|Windows Server 1803+|
 |---------|---------|---------|---------|---------|---------|
 |**予防**    |         |         |         |         |         |
 |攻撃表面の縮小ルール     |    Y     |   Y      |    Y     |    Y     |    Y     |
-|デバイス コントロール     |     Y    |    N     |    ×     |    ×     |    ×     |  
+|デバイス コントロール     |     Y    |    N     |    N     |    N     |    N     |  
 |ファイアウォール     |      Y   |    Y     |     Y    |    Y    |    Y   |
 |ネットワーク保護     |      Y   |    Y     |     Y    |    Y    |    Y   |
 |次世代の保護     |      Y   |    Y     |     Y    |    Y    |    Y   |
@@ -100,9 +100,9 @@ Defender for Endpoint ポータルのオンボーディング セクションに
 |高度なハンティング     |      Y   |    Y     |     Y    |    Y    |    Y   |
 |カスタム ファイル インジケーター     |      Y   |    Y     |     Y    |    Y    |    Y   |
 |カスタム ネットワーク インジケーター     |      Y   |    Y     |     Y    |    Y    |    Y   |
-|EDRパッシブ &ブロック     |      Y   |    Y     |     Y    |    Y    |    Y   |
+|EDR ブロック &パッシブ モード     |      Y   |    Y     |     Y    |    Y    |    Y   |
 |検出センサー     |      Y   |    Y     |     Y    |    Y    |    Y   |
-|ネットワーク &検出のエンドポイント     |      Y   |    N     |     ×    |    ×    |    ×   |
+|ネットワーク &検出のエンドポイント     |      Y   |    N     |     N    |    N    |    N   |
 |||||||
 |**Response**     |         |         |         |||
 |自動調査&応答 (AIR)    |      Y   |    Y     |     Y    |    Y    |    Y   |

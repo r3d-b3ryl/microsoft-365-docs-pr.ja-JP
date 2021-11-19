@@ -14,12 +14,12 @@ ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: e49ab3b0cfcdf32bd152b7f2a8cc2b3dd7986665
-ms.sourcegitcommit: 6dbf879f769a825ed7039363f3a91d676e355ee0
+ms.openlocfilehash: e6f02abb96ff04271cfb84fa333b476b7120115f
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60940562"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111797"
 ---
 # <a name="overview-of-microsoft-defender-for-endpoint-plan-1-preview"></a>Microsoft Defender for Endpoint Plan 1 の概要 (プレビュー)
 
@@ -164,7 +164,7 @@ Defender for Endpoint Plan 1 (プレビュー) には Microsoft 365 Defender ポ
 
 ### <a name="role-based-access-control"></a>役割ベースのアクセス制御
 
-役割ベースのアクセス制御 (RBAC) を使用して、セキュリティ管理者は役割とグループを作成して、管理者ポータル () への適切なアクセスをMicrosoft 365 Defenderできます [https://security.microsoft.com](https://security.microsoft.com) 。 RBAC を使用すると、セキュリティ センターにアクセスできるユーザーと、セキュリティ センターにアクセスできるユーザーの表示と操作を詳細に制御できます。 
+役割ベースのアクセス制御 (RBAC) を使用して、セキュリティ管理者は役割とグループを作成して、管理者ポータル () への適切なアクセスをMicrosoft 365 Defenderできます [https://security.microsoft.com](https://security.microsoft.com) 。 RBAC を使用すると、Defender for Cloud にアクセスできるユーザーと、そのユーザーが見て何を行えるのかを詳細に制御できます。 
 
 詳細については、「役割ベースのアクセス [制御を使用してポータル アクセスを管理する」を参照してください](rbac.md)。
 

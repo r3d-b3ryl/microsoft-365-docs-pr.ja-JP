@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4965936f4619f7fad76df203c97e4674ef408a39
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 5658d2cbb0fd3f8307ceb6cb46057237436271eb
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963101"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111773"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-azure-event-hub"></a>高度Microsoft 365 Defenderイベントを Azure イベント ハブにストリーミングするように構成する
 
@@ -54,7 +54,7 @@ Event Hub 名前空間が作成されると、次の処理が必要になりま�
 
 ## <a name="enable-raw-data-streaming"></a>生データ ストリーミングを有効にする
 
-1. *グローバル管理者 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> _***セキュリティ** 管理者 **として _ログイン_ します。
+1. *グローバル管理者 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> **_*** セキュリティ管理者 **としてポータル _にログイン_ します。
 
 2. [ストリーミング [API の設定] ページに移動します](https://security.microsoft.com/settings/mtp_settings/raw_data_export)。
 

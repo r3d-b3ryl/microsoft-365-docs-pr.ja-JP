@@ -17,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 19a54dca079c8b43110d3140a9ad3543634086e3
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 971c8999f36dc2cdb282371a41c89f46b85ff278
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883211"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111353"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>フォルダーへのアクセス制御で重要なフォルダーを保護する
 
@@ -36,7 +36,7 @@ ms.locfileid: "60883211"
 
 ## <a name="what-is-controlled-folder-access"></a>フォルダー アクセスの制御とは
 
-フォルダー アクセスの制御により、ランサムウェアなどの悪意のあるアプリや脅威から貴重なデータを保護できます。 フォルダー アクセスの制御により、既知の信頼できるアプリの一覧に対してアプリをチェックすることで、データを保護します。 Windows Server 2019、Windows Server 2022、Windows 10、および Windows 11 クライアントでサポートされている場合、Windows セキュリティ App、Microsoft Endpoint Configuration Manager を使用してフォルダー アクセスの制御を有効にできます。または Intune (管理対象デバイスの場合)。
+フォルダー アクセスの制御により、ランサムウェアなどの悪意のあるアプリや脅威から貴重なデータを保護できます。 フォルダー アクセスの制御により、既知の信頼できるアプリの一覧に対してアプリをチェックすることで、データを保護します。 Windows Server 2019、Windows Server 2022、Windows 10、および Windows 11 クライアントでサポートされている場合、Windows セキュリティ アプリを使用してフォルダー アクセスの制御を有効にできます。Microsoft Endpoint Configuration Manager Intune (管理対象デバイスの場合)。
 
 > [!NOTE]
 > スクリプト エンジンは信頼されていないので、制御された保護されたフォルダーへのアクセスを許可することはできません。 たとえば、PowerShell は、証明書とファイルインジケーターで許可されている場合でも、フォルダー アクセスの制御 [によって信頼されません](/microsoft-365/security/defender-endpoint/indicator-certificates)。
@@ -54,7 +54,7 @@ ms.locfileid: "60883211"
 
 アプリは、その普及率と評判に基づいてリストに追加されます。 組織全体で非常に普及しているアプリで、悪意のあると見なされる動作を一度も表示したことがないアプリは、信頼できると見なされます。 これらのアプリは自動的にリストに追加されます。
 
-アプリは、Configuration Manager または Intune を使用して、信頼できるリストに手動で追加することもできます。 追加のアクションは、セキュリティ センター コンソールから実行できます。 
+アプリは、Configuration Manager または Intune を使用して、信頼できるリストに手動で追加することもできます。 追加のアクションは、ポータルからMicrosoft 365 Defenderできます。 
 
 ## <a name="why-controlled-folder-access-is-important"></a>フォルダー アクセスの制御が重要な理由
 
@@ -113,7 +113,7 @@ DeviceEvents
 2. [**イベント ビューアー]** と入力スタート メニューイベント ビューアー Windows開きます。
 3. 左側のパネルの [アクション] **で、[** カスタム ビュー **のインポート... を選択します**。
 4. 抽出した場所に *移動cfa-events.xml選択* します。 または [、XML を直接コピーします](event-views.md)。
-5. **[OK]** を選択します。
+5. [**OK**] を選択します。
 
 次の表に、フォルダー アクセスの制御に関連するイベントを示します。
 

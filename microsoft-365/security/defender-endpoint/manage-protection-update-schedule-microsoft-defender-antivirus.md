@@ -16,12 +16,12 @@ ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 2ef5840efae9572631694289cb53d34f14190264
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 3030cc4f6040a5011db17fe95e62618d942e3cee
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882515"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111617"
 ---
 # <a name="manage-the-schedule-for-when-protection-updates-should-be-downloaded-and-applied"></a>保護更新プログラムをダウンロードして適用するスケジュールを管理する
 
@@ -69,9 +69,9 @@ Microsoft Defender ウイルス対策では、更新プログラムを探して�
 
 4. ツリーを展開して **、[署名インテリジェンスWindows更新** Microsoft Defender ウイルス対策 \>  \> **コンポーネントを追加し**、次の設定を構成します。
 
-    1. [セキュリティ インテリジェンスの更新 **プログラム** を確認する週の日を指定する] 設定をダブルクリックし、オプションを [有効] に **設定します**。 更新プログラムを確認する週の日を入力します。 **[OK]** をクリックします。
-    2. [セキュリティ インテリジェンスの更新 **プログラム** を確認する間隔を指定する] 設定をダブルクリックし、オプションを [有効] に **設定します**。 更新間の時間数を入力します。 **[OK]** をクリックします。
-    3. [セキュリティ インテリジェンスの更新 **プログラム** を確認する時間を指定する] 設定をダブルクリックし、オプションを [有効] に **設定します**。 更新プログラムをチェックする時刻を入力します。 時刻は、エンドポイントのローカル時刻に基づいて行います。 **[OK]** をクリックします。
+    1. [セキュリティ インテリジェンスの更新 **プログラム** を確認する週の日を指定する] 設定をダブルクリックし、オプションを [有効] に **設定します**。 更新プログラムを確認する週の日を入力します。 [**OK**] をクリックします。
+    2. [セキュリティ インテリジェンスの更新 **プログラム** を確認する間隔を指定する] 設定をダブルクリックし、オプションを [有効] に **設定します**。 更新間の時間数を入力します。 [**OK**] をクリックします。
+    3. [セキュリティ インテリジェンスの更新 **プログラム** を確認する時間を指定する] 設定をダブルクリックし、オプションを [有効] に **設定します**。 更新プログラムをチェックする時刻を入力します。 時刻は、エンドポイントのローカル時刻に基づいて行います。 [**OK**] をクリックします。
 
 ## <a name="use-powershell-cmdlets-to-schedule-protection-updates"></a>PowerShell コマンドレットを使用して保護更新プログラムをスケジュールする
 
@@ -83,7 +83,7 @@ Set-MpPreference -SignatureScheduleTime
 Set-MpPreference -SignatureUpdateInterval
 ```
 
-PowerShell[コマンドレットを](use-powershell-cmdlets-microsoft-defender-antivirus.md)構成して実行する方法の詳細については、「powerShell コマンドレットを使用して Microsoft Defender ウイルス対策 および[Defender](/powershell/module/defender/)コマンドレットを構成および実行する」を参照Microsoft Defender ウイルス対策。
+PowerShell コマンドレットを構成して実行する Microsoft Defender ウイルス対策 および[Defender for Cloud](/powershell/module/defender/)コマンドレットの詳細については、「PowerShell コマンドレットとクラウド コマンドレットを使用する」を参照Microsoft Defender ウイルス対策。 [](use-powershell-cmdlets-microsoft-defender-antivirus.md)
 
 ## <a name="use-windows-management-instruction-wmi-to-schedule-protection-updates"></a>保護Windowsスケジュールを設定するには、WMI 管理命令 (WMI) を使用します。
 
@@ -97,7 +97,7 @@ SignatureUpdateInterval
 
 詳細と許可されるパラメーターについては、以下を参照してください。
 
-- [Windows DefenderWMIv2 API](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+- [Windows Defender WMIv2 API](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 ## <a name="related-articles"></a>関連記事
 

@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3fc0d1e927603a28cd622207cc1690e0ba5e413e
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: f7ba446eb074bc04ae4432595022d26f7f84b6e8
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882358"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111785"
 ---
 # <a name="deploy-manage-and-report-on-microsoft-defender-antivirus"></a>アプリの展開、管理、レポートMicrosoft Defender ウイルス対策
 
@@ -36,7 +36,7 @@ ms.locfileid: "60882358"
 
 Microsoft Defender ウイルス対策 クライアントは Windows 10 および Windows 11 のコアパーツとしてインストールされているので、エンドポイントへのクライアントの従来の展開は適用されません。
 
-ただし、ほとんどの場合、Microsoft Intune、Microsoft Endpoint Configuration Manager、Azure Defender、またはグループ ポリシー オブジェクトを使用してエンドポイントで保護サービスを有効にする必要があります。これは次の表で説明します。
+ただし、ほとんどの場合、Microsoft Intune、Microsoft Endpoint Configuration Manager、Microsoft Defender for Cloud、またはグループ ポリシー オブジェクトを使用してエンドポイントで保護サービスを有効にする必要があります。これは次の表で説明します。
 
 次の追加リンクも表示されます。
 
@@ -53,7 +53,7 @@ Microsoft エンドポイント マネージャー ([1](#fn1))|[Endpoint Protect
 グループ ポリシーと Active Directory (ドメイン参加)|グループ ポリシー オブジェクトを使用して構成の変更を展開し、Microsoft Defender ウイルス対策確認します。|グループ ポリシー オブジェクト (GPO) を使用して [Microsoft Defender ウイルス対策][] および [構成Windows Defender機能][]|エンドポイント レポートは、グループ ポリシーでは使用できません。 [グループ ポリシー] の一覧を生成して、設定またはポリシーが適用されていないかどうかを判断できます][]
 PowerShell|グループ ポリシー、グループ ポリシー、Microsoft Endpoint Configuration Manager、または個々のエンドポイントに手動で展開します。|Defender モジュールで使用できる [Set-MpPreference] コマンドレットと [Update-MpSignature] コマンドレットを使用します。|適切な [Defender モジュールで使用可能な Get- コマンドレット][] を使用します。
 Windows Management Instrumentation|グループ ポリシー、グループ ポリシー、Microsoft Endpoint Configuration Manager、または個々のエンドポイントに手動で展開します。|[クラスの Set メソッド][MSFT_MpPreference][] と [クラスの Update メソッド][] をMSFT_MpSignatureします。|[MSFT_MpComputerStatus][] クラスと [wmIv2 Provider][] の関連クラスの get メソッドWindows Defender使用します。
-Microsoft Azure|Azure ポータルMicrosoft Antimalware仮想マシン構成を使用するか、または仮想マシンVisual Studioコマンドレットを使用して Azure Azure PowerShell[展開します](/azure/security/azure-security-antimalware#antimalware-deployment-scenarios)。 Azure [Defender* にエンドポイント保護をインストールできます。](/azure/security-center/security-center-install-endpoint-protection)|仮想[Microsoft Antimalwareクラウド サービス](/azure/security/azure-security-antimalware#enable-and-configure-antimalware-using-powershell-cmdlets)のサーバーを構成するか、Azure PowerShellサンプル[を使用する](https://gallery.technet.microsoft.com/Antimalware-For-Azure-5ce70efe)|監視[Microsoft Antimalware有効にするには、仮想マシンとクラウド](/azure/security/azure-security-antimalware#enable-and-configure-antimalware-using-powershell-cmdlets)サービスのAzure PowerShellコマンドレットを使用します。 Azure Active Directory の利用状況レポートを確認して、[感染している可能性のあるデバイス][] レポートを含む疑わしいアクティビティを特定し、[Microsoft Defender ウイルス対策 イベント][] を報告する SIEM ツールを構成し、そのツールを AAD のアプリとして追加することもできます。
+Microsoft Azure|Azure ポータルMicrosoft Antimalware仮想マシン構成を使用するか、または仮想マシンVisual Studioコマンドレットを使用して Azure Azure PowerShell[展開します](/azure/security/azure-security-antimalware#antimalware-deployment-scenarios)。 Microsoft [Defender for Cloud* にエンドポイント保護をインストールできます。](/azure/security-center/security-center-install-endpoint-protection)|仮想[Microsoft Antimalwareクラウド サービス](/azure/security/azure-security-antimalware#enable-and-configure-antimalware-using-powershell-cmdlets)のサーバーを構成するか、Azure PowerShellサンプル[を使用する](https://gallery.technet.microsoft.com/Antimalware-For-Azure-5ce70efe)|監視[Microsoft Antimalware有効にするには、仮想マシンとクラウド](/azure/security/azure-security-antimalware#enable-and-configure-antimalware-using-powershell-cmdlets)サービスのAzure PowerShellコマンドレットを使用します。 Azure Active Directory の利用状況レポートを確認して、[感染している可能性のあるデバイス][] レポートを含む疑わしいアクティビティを特定し、[Microsoft Defender ウイルス対策 イベント][] を報告する SIEM ツールを構成し、そのツールを AAD のアプリとして追加することもできます。
 
 1. <span id="fn1" />クラウドによる保護に関連する一部の機能と機能の可用性は、Microsoft エンドポイント マネージャー (Current Branch) と System Center Configuration Manager で異なります。 このライブラリでは、11、Windows 10、Windows、Windows Server 2016、Microsoft エンドポイント マネージャー (Current Branch) に焦点を当てました。 主[な違いを説明する表については](cloud-protection-microsoft-defender-antivirus.md)、「Microsoft Defender ウイルス対策で Microsoft クラウド提供の保護を使用する」を参照してください。 [(テーブルに戻る)](#ref2)
 

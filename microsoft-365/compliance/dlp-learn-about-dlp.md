@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: データ損失防止ポリシーとツールを使用Microsoft 365機密情報を保護し、DLP ライフサイクルを通じてツアーを行う方法について説明します。
-ms.openlocfilehash: 2552fe2482ba06fd34403fe2ff690bdf11c7bd20
-ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
+ms.openlocfilehash: 56107d1e7e2b303e6517a2b7f762e2fcf49beac0
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60950559"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61106529"
 ---
 # <a name="learn-about-data-loss-prevention"></a>データ損失防止について
 
@@ -89,7 +89,7 @@ DLP ポリシーは、保存中のデータ、使用されているデータ、�
 - SharePoint Online サイト
 - OneDrive アカウント
 - Teams チャットおよびチャネル メッセージ
-- Microsoft Cloud App Security
+- Microsoft Defender for Cloud Apps
 - Windows 10 デバイス
 - オンプレミス リポジトリ
 
@@ -144,7 +144,7 @@ DLP ポリシーを作成および構成する方法に柔軟性があります�
 |OneDrive アカウント |アカウントまたは配布グループ |
 |Teams チャットおよびチャネル メッセージ |アカウント |
 |Windows 10 デバイス |ユーザーまたはグループ |
-|Microsoft Cloud App Security |インスタンス |
+|Microsoft Defender for Cloud Apps |インスタンス |
 |オンプレミス リポジトリ| リポジトリ ファイルのパス|
 
 3. **アイテムに適用する** ポリシーに一致する必要がある条件を選択します。事前に構成された条件を受け入れるか、カスタム条件を定義できます。 次に例を示します。

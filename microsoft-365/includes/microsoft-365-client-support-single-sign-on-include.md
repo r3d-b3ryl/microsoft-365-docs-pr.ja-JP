@@ -1,5 +1,5 @@
 <!-- This file is generated automatically. Changes made to this file will be overwritten.-->
-|クライアント|Android|iOS|Mac|Windows 10<br>デスクトップ|Windows 10<br>モダン アプリ|
+|クライアント|Android|iOS|Mac|Windows 10<br>Desktop|Windows 10<br>モダン アプリ|
 |:-|:-|:-|:-|:-|:-|
 |ACCESS|該当なし|該当なし|該当なし|✔|該当なし|
 |ポータル サイト|該当なし|✔|計画済み|該当なし|✔|
@@ -20,7 +20,7 @@
 |POWERPOINT|✔|✔|✔|✔|✔|
 |PROJECT|該当なし|該当なし|該当なし|✔|該当なし|
 |PUBLISHER|該当なし|該当なし|該当なし|✔|該当なし|
-|SHAREPOINT|✔|該当なし|該当なし|該当なし|該当なし|
+|SHAREPOINT|✔|計画済み|該当なし|該当なし|該当なし|
 |SKYPE FOR BUSINESS|計画済み|計画済み|該当なし|該当なし|該当なし|
 |付箋|該当なし|該当なし|該当なし|該当なし|✔|
 |STREAM|計画済み|計画済み|該当なし|該当なし|該当なし|

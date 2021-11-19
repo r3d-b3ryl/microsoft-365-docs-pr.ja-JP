@@ -12,12 +12,12 @@ ms.localizationpriority: medium
 description: ソリューション カタログMicrosoft 365含まれるもの、取得する方法、および次の手順について説明します。
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 8a2daf2bf3dd8c3260be24a6b09761e5a6ea3e92
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: d2a21c81ac0753daef94dbcbd169d9bfe6b62bae
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786052"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110861"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Microsoft 365 ソリューション カタログ
 
@@ -94,7 +94,7 @@ ms.locfileid: "60786052"
 - **企業の行動規範ポリシー違反を** 迅速に特定し、修復するためのコミュニケーション コンプライアンス ポリシーについて説明し、作成します。 「 [通信コンプライアンス」を参照してください](communication-compliance.md)。
 
 - **Microsoft Information Protection、** あらゆる場所Microsoft 365機密情報を検出、分類、保護するのに役立つソリューションについて学習します。
-    - **知り合い、設定をMicrosoft Cloud App Security。** 「[クイック スタート: クイック スタート」を参照Microsoft Cloud App Security。](/cloud-app-security/getting-started-with-cloud-app-security)
+    - **クラウド アプリ用 Microsoft Defender** について知り、セットアップします。 「 [クイック スタート: Microsoft Defender for Cloud Apps の使用を開始する」を参照してください](/cloud-app-security/getting-started-with-cloud-app-security)。
     - **分類子の使用を開始します**。 コンテンツを分類し、適切に保護および処理できるようラベルを付け、情報保護分野の開始場所です。 「 [トレーニング可能な分類子の詳細 (プレビュー)」を参照してください](classifier-learn-about.md)。
 
 - **多くの場合Microsoft 365ソリューション** カタログにアクセスし、コンプライアンス ニーズに役立つ新しいソリューションを確認してください。 サインイン時に [https://compliance.microsoft.com](https://compliance.microsoft.com) 、左側のナビゲーション **ウィンドウで [カタログ** ] を選択します。

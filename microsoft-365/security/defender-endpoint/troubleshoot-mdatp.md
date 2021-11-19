@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: d46fb5d456377a3089e5d6cfa45918eb42849227
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: e79fbc82faada816d3499d6f05f285c544002b20
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553861"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111233"
 ---
 # <a name="troubleshoot-service-issues"></a>サービスに関する問題のトラブルシューティング
 
@@ -83,9 +83,9 @@ Microsoft [](event-error-codes.md) Defender for Endpoint サービスによっ�
 
 ## <a name="microsoft-defender-for-endpoint-tenant-was-automatically-created-in-europe"></a>Microsoft Defender for Endpoint テナントがヨーロッパで自動的に作成されました
 
-Azure Defender を使用してサーバーを監視すると、Microsoft Defender for Endpoint テナントが自動的に作成されます。 Microsoft Defender for Endpoint データは、既定でヨーロッパに保存されます。
+Microsoft Defender for Cloud を使用してサーバーを監視すると、Microsoft Defender for Endpoint テナントが自動的に作成されます。 Microsoft Defender for Endpoint データは、既定でヨーロッパに保存されます。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング](troubleshoot-onboarding.md)
 - [イベント ビューアーを使用してイベントとエラーを確認する](event-error-codes.md)

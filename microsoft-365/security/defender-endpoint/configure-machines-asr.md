@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7a22d07919aaebc1373c5b330c51d720c25b4f8c
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 75e17dbeff38fd7e40c9a8f22217407773981c96
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963133"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111821"
 ---
 # <a name="optimize-asr-rule-deployment-and-detections"></a>ASR ルールの展開と検出を最適化する
 
@@ -39,21 +39,21 @@ ms.locfileid: "60963133"
 <br>
 *攻撃表面管理カード*
 
-攻撃 *表面管理カードは*、セキュリティ センター内のツール <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"></a>Microsoft 365ポイントで、次の場合に使用できます。
+攻撃 *表面管理カードは*、次の方法で使用できる Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">ツール</a>のエントリ ポイントです。
 
 * ASR ルールが現在組織に展開されている方法について説明します。
 * ASR 検出を確認し、誤った検出の可能性を特定します。
 * 除外の影響を分析し、除外するファイル パスの一覧を生成します。
 
-[Go **to attack surface management Reports** \> **Attack** surface reduction \> **rules Add** \> **exclusions] を選択します**。 そこから、セキュリティ センターの他のセクションMicrosoft 365移動できます。
+[Go **to attack surface management Reports** \> **Attack** surface reduction \> **rules Add** \> **exclusions] を選択します**。 そこから、ポータルの他のセクションMicrosoft 365 Defenderできます。
 
-![セキュリティ センターの [攻撃表面縮小ルール] ページの [除外Microsoft 365追加します。](images/secconmgmt_asr_m365exlusions.png)<br>
-セキュリティ ***センターの [** 攻撃表面縮小ルール] ページの [除外のMicrosoft 365]*
+![[除外] タブは、ポータルの [攻撃表面の縮小ルール] ページMicrosoft 365 Defenderします。](images/secconmgmt_asr_m365exlusions.png)<br>
+ポータル ***の [攻撃表面縮小** ルール] ページの [除外のMicrosoft 365 Defender]*
 
 > [!NOTE]
-> セキュリティ センター Microsoft 365アクセスするには、Microsoft 365 E3または E5 ライセンスと、ユーザーに対して特定の役割を持つアカウントAzure Active Directory。 [必要なライセンスとアクセス許可についてお読みください](/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions)。
+> ポータルにMicrosoft 365 Defenderするには、Microsoft 365 E3または E5 ライセンスと、ユーザーに対して特定の役割を持つアカウントAzure Active Directory。 [必要なライセンスとアクセス許可についてお読みください](/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions)。
 
-セキュリティ センターでの ASR ルールの展開の<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">詳細</a>Microsoft 365 ASR ルールの展開と検出の監視と[管理を参照してください](/office365/securitycompliance/monitor-devices#monitor-and-manage-asr-rule-deployment-and-detections)。
+ASR ルールの展開の詳細については<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"></a>、「Microsoft 365 Defender ASR ルールの展開と検出の監視と[管理」を参照してください](/office365/securitycompliance/monitor-devices#monitor-and-manage-asr-rule-deployment-and-detections)。
 
 **関連トピック**
 

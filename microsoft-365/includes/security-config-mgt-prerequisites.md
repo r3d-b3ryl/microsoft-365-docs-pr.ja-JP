@@ -1,15 +1,15 @@
 ---
-title: include ファイル
-description: include ファイル
+title: ファイルを含める
+description: ファイルを含める
 author: mjcaparas
 ms.service: microsoft-365-enterprise
 ms.author: macapara
-ms.openlocfilehash: e8d19f8ab5423ccc0441d29efab2ecdb3eb27a04
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 47de6c330e3b6d5ba4cbe460920603e78e126600
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60677071"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61112065"
 ---
 ## <a name="prerequisites"></a>前提条件
 
@@ -47,9 +47,9 @@ Microsoft Defender for Endpoint シナリオのセキュリティ管理の要件
 Microsoft Defender for Endpoint セキュリティ管理のポリシーは、次のデバイス プラットフォームでサポートされています。
 
 - Windows 10 Professional/Enterprise [(KB5006738 )](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541)
-- Windows Server 2012R2 と[Microsoft Defender for Down-Level デバイス](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)
+- Windows Server 2012デバイス向け Microsoft [Defender を使用した R2 Down-Level R2](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)
 - Windows Server 2016[デバイス用 Microsoft Defender Down-Levelする](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)
-- WindowsServer 2019 [(KB5006744 を使用](https://support.microsoft.com/topic/october-19-2021-kb5006744-os-build-17763-2268-preview-e043a8a3-901b-4190-bb6b-f5a4137411c0))
+- Windows Server 2019 [(KB5006744 付](https://support.microsoft.com/topic/october-19-2021-kb5006744-os-build-17763-2268-preview-e043a8a3-901b-4190-bb6b-f5a4137411c0)き)
 - Windows Server 2022
 
 
@@ -84,11 +84,11 @@ Microsoft Defender for Endpoint のセキュリティ構成管理を Microsoft �
 
 1. ポータルにサインイン[しMicrosoft 365 Defenderエンドポイント](https://security.microsoft.com/)構成管理設定スコープに移動し、セキュリティ設定管理のプラットフォーム  >    >    >  を有効にします。
 
-   :::image type="content" source="../media/enable-mde-settings-management-defender.png" alt-text="Defender コンソールで Microsoft Defender for Endpoint の設定管理を有効にします。":::
+   :::image type="content" source="../media/enable-mde-settings-management-defender.png" alt-text="Microsoft Defender for Endpoint の設定管理をポータルで有効Microsoft 365 Defenderします。":::
 
-2. 関連するユーザーが、Defender ポータルで役割を構成することで、Microsoft エンドポイント マネージャーまたはそれらのアクセス許可を付与するエンドポイント セキュリティ設定を管理するアクセス許可を持っている必要があります。 [ロールの追加  >  **設定]**  >  **項目に移動します**。
+2. 関連するユーザーが、Microsoft エンドポイント マネージャー ポータルで役割を構成して、エンドポイント のセキュリティ設定を管理するアクセス許可を持Microsoft 365 Defenderしてください。 [ロールの追加  >  **設定]**  >  **項目に移動します**。
 
-   :::image type="content" source="../media/add-role-in-mde.png" alt-text="Defender ポータルで新しい役割を作成します。":::
+   :::image type="content" source="../media/add-role-in-mde.png" alt-text="ポータルで新しい役割をMicrosoft 365 Defenderします。":::
 
    > [!TIP]
    > 既存の役割を変更し、必要なアクセス許可を追加したり、Microsoft Defender for Endpoint で追加の役割を作成したりすることはできません。
@@ -169,7 +169,7 @@ Microsoft Defender for Endpoint によって管理されるデバイスを含む
 
    設定の構成が完了したら、**[次へ]** を選択します。
 
-7. [割 **り当て]** ページで、このプロファイルAzure ADグループを選択します。 プロファイルの割り当ての詳細については、「[ユーザーおよびデバイス プロファイルの割り当て](/mem/intune/configuration/device-profile-assign)」を参照してください。
+7. [割 **り当て]** ページで、このプロファイルAzure ADグループを選択します。 プロファイルの割り当ての詳細については、[ユーザーおよびデバイス プロファイルの割り当て](/mem/intune/configuration/device-profile-assign)に関するページを参照してください。
 
    [**次へ**] を選んで続行します。
 
@@ -184,4 +184,3 @@ Microsoft Defender for Endpoint によって管理されるデバイスを含む
 9. ポリシーが割り当てられるのを待ち、ポリシーが適用されたという成功の兆候を表示します。
 
 10. [Get-MpPreference](/powershell/module/defender/get-mppreference#examples)コマンド ユーティリティを使用して、設定がクライアント上でローカルに適用されるのを検証できます。
-

@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: 9077e71d26820d23f9a9bfbc049924612d5265dc
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 5d0a864a70603e3d38c903a6799d0a9a5bddd4a0
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60659215"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110657"
 ---
 # <a name="pilot-microsoft-defender-for-office-365"></a>パイロット Microsoft Defender for Office 365
 
@@ -134,7 +134,7 @@ MDO を評価する際に推奨されるベースライン ポリシーから始
 
 ****
 
-|ポリシー|説明|Reference|
+|ポリシー|[説明]|参照|
 |:---:|---|---|
 |接続フィルター|IP アドレスを使用して、適切または悪い送信元メール サーバーを識別します。|[EOP で既定の接続フィルター ポリシーを構成する](../office-365-security/configure-the-connection-filter-policy.md)|
 |マルウェア対策|ユーザーを電子メール マルウェアから保護します。その中には、実行するアクションやマルウェアが検出された場合に通知するユーザーが含されます。|[EOP でマルウェア対策ポリシーを構成する](../office-365-security/configure-anti-malware-policies.md)|
@@ -156,7 +156,7 @@ MDO を評価する際に推奨されるベースライン ポリシーから始
 |機能|説明|詳細情報|
 |---|---|---|
 |脅威エクスプローラー|Threat Explorer は、セキュリティ運用チームが脅威を調査して対応し、Office 365 の電子メールやファイルのマルウェアやフィッシングの疑いについての情報、および組織に対する他のセキュリティ上の脅威やリスクを表示するのに役立つ、リアルタイムに近い強力なツールです。|[脅威エクスプローラーのビューとリアルタイム検出](../office-365-security/threat-explorer-views.md)|
-|攻撃シミュレーター|Microsoft Defender 365 ポータルの攻撃シミュレーション トレーニングを使用して、実際の攻撃が環境に影響を与える前に、脆弱なユーザーを特定して見つけるのに役立つ現実的な攻撃シナリオを組織で実行できます。|[攻撃シミュレーション トレーニングの使用を開始する](../office-365-security/attack-simulation-training-get-started.md)|
+|攻撃シミュレーター|Microsoft 365 Defender ポータルの攻撃シミュレーション トレーニングを使用して、実際の攻撃が環境に影響を与える前に、脆弱なユーザーを特定して見つけるのに役立つ現実的な攻撃シナリオを組織で実行できます。|[攻撃シミュレーション トレーニングの使用を開始する](../office-365-security/attack-simulation-training-get-started.md)|
 |レポート ダッシュボード|左側のナビゲーション メニューで、[レポート] をクリックし、[メール] &を展開します。 電子メール & コラボレーション レポートでは、セキュリティの傾向を特定し、その中には [送信に移動] などのボタンを使用してアクションを実行できるものや、メールフローの状態の概要、トップ マルウェア、スプーフィング検出、侵害されたユーザー、メール遅延、セーフ リンク、セーフ 添付ファイル レポートなどの傾向を表示するアクションを実行できるレポートがあります。 これらの指標は自動的に生成されます。|[レポートの表示](../office-365-security/view-email-security-reports.md)|
 |
 

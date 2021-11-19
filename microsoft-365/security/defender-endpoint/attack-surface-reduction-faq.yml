@@ -17,12 +17,12 @@ metadata:
   ms.topic: article
   ms.technology: mde
   ms.collection: M365-security-compliance
-  ms.openlocfilehash: 29719b023a669463ff7ad0bddca9fc9a569d8ab5
-  ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+  ms.openlocfilehash: 5fbf9c52cdef6541bc66fd2340748aa0d5b7e15d
+  ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/09/2021
-  ms.locfileid: "60882467"
+  ms.lasthandoff: 11/19/2021
+  ms.locfileid: "61110993"
 title: 攻撃表面の縮小に関するよく寄せられる質問 (FAQ)
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -188,7 +188,7 @@ sections:
   - question: >
       E5 ライセンスを持ち、Defender for Endpoint と組み合わせていくつかの ASR ルールを有効にしました。 エンドポイントのイベント タイムラインの Defender に ASR イベントが一向に表示されない可能性はありますか?
     answer: >
-      ASR ルールによって通知がローカルでトリガーされるたびに、イベントに関するレポートも Defender for Endpoint ポータルに送信されます。 イベントを見つけるのに問題がある場合は、検索ボックスを使用してイベントのタイムラインをフィルター処理できます。 [セキュリティ センター] タスク バーの[構成管理] アイコンから、[攻撃表面の管理に移動] にアクセスして ASR イベントを表示することもできます。 攻撃表面の管理ページには、Defender for Endpoint に報告された ASR ルール イベントの完全な一覧を含む、レポート検出用のタブが含まれています。
+      ASR ルールによって通知がローカルでトリガーされるたびに、イベントに関するレポートも Defender for Endpoint ポータルに送信されます。 イベントを見つけるのに問題がある場合は、検索ボックスを使用してイベントのタイムラインをフィルター処理できます。 また、[Defender for Cloud] タスクバーの [構成管理]アイコンから [攻撃表面の管理に移動] にアクセスして、ASR イベントを表示することもできます。 攻撃表面の管理ページには、Defender for Endpoint に報告された ASR ルール イベントの完全な一覧を含む、レポート検出用のタブが含まれています。
   - question: >
       GPO を使用してルールを適用しました。 Microsoft Outlook でルールのインデックス オプションを確認すると、"アクセスが拒否されました" というメッセージが表示されます。
     answer: >

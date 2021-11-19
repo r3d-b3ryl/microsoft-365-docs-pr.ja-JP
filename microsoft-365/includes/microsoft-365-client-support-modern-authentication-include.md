@@ -1,5 +1,5 @@
 <!-- This file is generated automatically. Changes made to this file will be overwritten.-->
-|クライアント|Android|iOS|Mac|Windows 10<br>デスクトップ|Windows 10<br>モダン アプリ|
+|クライアント|Android|iOS|Mac|Windows 10<br>Desktop|Windows 10<br>モダン アプリ|
 |:-|:-|:-|:-|:-|:-|
 |ACCESS|該当なし|該当なし|該当なし|✔|該当なし|
 |AZURE ACTIVE DIRECTORY ADMIN|該当なし|該当なし|該当なし|✔|該当なし|
@@ -26,7 +26,7 @@
 |PROJECT|該当なし|該当なし|該当なし|✔|該当なし|
 |PUBLISHER|該当なし|該当なし|該当なし|✔|該当なし|
 |SHAREPOINT ADMIN|該当なし|該当なし|該当なし|✔|該当なし|
-|SHAREPOINT|✔|該当なし|該当なし|該当なし|該当なし|
+|SHAREPOINT|✔|計画済み|該当なし|該当なし|該当なし|
 |SKYPE FOR BUSINESS ADMIN|該当なし|該当なし|該当なし|✔|該当なし|
 |SKYPE FOR BUSINESS|✔|✔|✔|✔|該当なし|
 |付箋|該当なし|該当なし|該当なし|該当なし|✔|
@@ -38,4 +38,4 @@
 |ホワイトボード|✔|✔|該当なし|該当なし|✔|
 |WORD|✔|✔|✔|✔|✔|
 |WORKPLACE ANALYTICS|該当なし|該当なし|該当なし|該当なし|該当なし|
-|YAMMER|✔|✔|✔|✔|N/A|
+|YAMMER|✔|✔|✔|✔|該当なし|

@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 196c517c20e80b753bf6065c1c4e3014c0e16638
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b1c53dac20e9c45c65064edf5e8169a669f76b28
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154781"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111125"
 ---
 # <a name="overview-of-management-and-apis"></a>管理と API の概要
 
@@ -42,7 +42,7 @@ Defender for Endpoint は、お客様がプラットフォームを簡単に採�
 
 ## <a name="endpoint-onboarding-and-portal-access"></a>エンドポイントのオンボーディングとポータル アクセス
 
-デバイスオンボーディングは、クライアント デバイス用の Microsoft エンドポイント マネージャー と Microsoft Intune、サーバー デバイス用の Azure Defender に完全に統合され、構成、展開、監視の完全なエンドツーエンドエクスペリエンスを提供します。 さらに、Microsoft Defender for Endpoint では、デバイス管理に使用されるグループ ポリシーや他のサード パーティ製ツールもサポートしています。
+デバイスオンボーディングは、クライアント デバイスの Microsoft エンドポイント マネージャー と Microsoft Intune、サーバー デバイス用の Microsoft Defender に完全に統合され、構成、展開、監視の完全なエンドツーエンドエクスペリエンスを提供します。 さらに、Microsoft Defender for Endpoint では、デバイス管理に使用されるグループ ポリシーや他のサード パーティ製ツールもサポートしています。
 
 Defender for Endpoint は、役割ベースのアクセス制御 (RBAC) の柔軟性を通じて、ポータルにアクセスできるユーザーが見て実行できる機能を詳細に制御します。 RBAC モデルは、セキュリティ チーム構造のすべての機能をサポートします。
 
@@ -89,7 +89,7 @@ Defender for Endpoint イベント情報は、長期的なデータ保持のた�
 
 ## <a name="siem-api"></a>SIEM API
 
-セキュリティ情報とイベント管理 (SIEM) 統合を有効にした場合、SIEM ソリューションを使用するか、検出 REST API に直接接続することで、Microsoft Defender セキュリティ センター から検出を取得できます。 これにより、値が事前に設定された SIEM コネクタ アクセスの詳細セクションがアクティブ化され、アプリケーションが Azure Active Directory (Azure AD) テナントの下に作成されます。 詳細については [、「SIEM 統合」を参照してください](enable-siem-integration.md)。
+セキュリティ情報とイベント管理 (SIEM) 統合を有効にした場合、SIEM ソリューションを使用するか、検出 REST API に直接接続することで、Microsoft Defender セキュリティ センター から検出を取得できます。 これにより、値が事前に入力された SIEM コネクタ アクセスの詳細セクションがアクティブ化され、アプリケーションが Azure Active Directory (Azure AD) テナントの下に作成されます。 詳細については [、「SIEM 統合」を参照してください](enable-siem-integration.md)。
 
 ## <a name="related-topics"></a>関連トピック
 

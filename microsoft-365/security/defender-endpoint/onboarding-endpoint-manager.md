@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: baa4294209ddb32a0a531e07b5bf87b0bb10aa9b
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 9e631bc8f35a49ab87237ddfb952af00c68645e9
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60756385"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109901"
 ---
 # <a name="onboarding-using-microsoft-endpoint-manager"></a>Microsoft エンドポイント マネージャーを使用したオンボーディング
 
@@ -44,7 +44,9 @@ ms.locfileid: "60756385"
 
 Defender for Endpoint はさまざまなエンドポイントとツールのオンボーディングをサポートしますが、この記事ではそれらをカバーしません。 サポートされている他の展開ツールと方法を使用した一般的なオンボーディングの詳細については、「オンボードの概要 [」を参照してください](onboarding.md)。
 
-[Microsoft エンドポイント マネージャー](/mem/endpoint-manager-overview)は、複数のサービスを統合するソリューション プラットフォームです。 これには、クラウドベース[Microsoft Intune](/mem/intune/fundamentals/what-is-intune)管理のための機能が含まれています。
+[Microsoft エンドポイント マネージャー](/mem/endpoint-manager-overview)は、複数のサービスを統合するソリューション プラットフォームです。 これには[、Microsoft Intune](/mem/intune/fundamentals/what-is-intune) 
+
+-based device management.
 
 このトピックでは、次のユーザーをガイドします。
 
@@ -63,7 +65,7 @@ Defender for Endpoint はさまざまなエンドポイントとツールのオ�
 プロセスの残りの部分に必要なリンクを次に示します。
 
 - [MEM ポータル](https://aka.ms/memac)
-- [セキュリティ センター](https://securitycenter.windows.com/)
+- [Microsoft Defender for Endpoint](https://securitycenter.windows.com/)
 - [Intune セキュリティのベースライン](/mem/intune/protect/security-baseline-settings-defender-atp#microsoft-defender)
 
 詳細については、次のMicrosoft エンドポイント マネージャーを参照してください。

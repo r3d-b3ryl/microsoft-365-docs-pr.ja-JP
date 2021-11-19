@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.localizationpriority: medium
 description: コンプライアンスを迅速に開始するのに役立つタスクについては、Microsoft 365。
-ms.openlocfilehash: 640569aef5ed1b632d11523af1d73321579f276e
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 621bcbdbbe38be4cbda79e5cf6afcc9846f87e0d
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963013"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111041"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Microsoft 365 コンプライアンスを開始するためのクイック タスク
 
@@ -48,7 +48,7 @@ ms.locfileid: "60963013"
 > [!IMPORTANT]
 > セキュリティとコンプライアンスは、ほとんどの組織で緊密に統合されています。 セキュリティとコンプライアンスの両方に対する防御の詳細なアプローチを提供するために、組織が基本的なセキュリティ、脅威保護、ID およびアクセス管理領域に対応することが重要です。
 >
-> セキュリティ センター[でMicrosoft 365スコア](../security/defender/microsoft-secure-score.md)を確認Microsoft 365、<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"></a>次の記事で説明されているタスクを完了します。
+> ポータルで[Microsoft 365スコア](../security/defender/microsoft-secure-score.md)を確認<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender、</a>次の記事で説明されているタスクを完了します。
 >
 > - [セキュリティロードマップ - 最初の 30 日間、90 日間、それ以降の最優先事項](../security/office-365-security/security-roadmap.md)
 > - [自宅での作業をサポートするセキュリティ チームの上位 12 のタスク](../security/top-security-tasks-for-remote-work.md)

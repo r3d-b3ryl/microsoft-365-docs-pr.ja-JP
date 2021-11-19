@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: JAMF ソリューション (プレビュー) を使用して、macOS デバイスをオンボードおよびオフボードMicrosoft 365コンプライアンス ソリューションにProする方法について学習します。
-ms.openlocfilehash: 94200142a05eeed9e27f53c571afb5ba68d30c82
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: 1c21251b390209d92696a36962705b9f2517a53c
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064090"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111221"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-jamf-pro-preview"></a>JAMF Pro を使用した Microsoft 365 コンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)
 
@@ -30,7 +30,7 @@ JAMF デバイスを使用Pro、エンドポイント データ損失防止Micro
 
 ## <a name="get-registered"></a>登録する
 
-この機能にアクセスするには、テナントを Microsoft に登録する必要があります。 macOS[のサポートに登録Microsoft 365を参照してください](https://aka.ms/EndpointDLPIgnite21-Previews)。
+この機能にアクセスするには、テナントを Microsoft に登録する必要があります。 [Microsoft 365 macOS サポート](https://aka.ms/EndpointDLPIgnite21-Previews)に登録します。
 
 **適用対象:**
 
@@ -106,7 +106,7 @@ JAMF デバイスを使用Pro、エンドポイント データ損失防止Micro
 ### <a name="configure-preference-domain-using-the-jamf-pro-console"></a>JAMF PRO コンソールを使用して基本設定ドメインを構成する
 
 > [!IMPORTANT]
-> 基本設定ドメインの **値として * com.microsoft.wdav** _ を使用する必要があります。 Microsoft Defender では、この名前と _ *_com.microsoft.wdav.ext_** を使用して管理設定を読み込む。
+> 基本設定ドメインの **値として * com.microsoft.wdav** _ を使用する必要があります。 Microsoft Defender for Endpoint では、この名前と _ *_com.microsoft.wdav.ext_** を使用して管理設定を読み込む。
 
 1. JAMF サーバーで新しい構成プロファイルをPro。 [JAMF 管理者ガイドPro参照してください](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/)。 次の値を使用します。
     - 名前: `MDATP MDAV configuration settings`
@@ -286,4 +286,3 @@ JAMF デバイスを使用Pro、エンドポイント データ損失防止Micro
 
 > [!IMPORTANT]
 > Offboarding を使用すると、デバイスはポータルへのセンサー データの送信を停止しますが、デバイスからのデータ (通知への参照を含む) は最大 6 か月間保持されます。
-

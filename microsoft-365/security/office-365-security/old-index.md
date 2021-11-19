@@ -1,5 +1,5 @@
 ---
-title: Office 365セキュリティの概要、 Microsoft Defender for Office 365 EOP、MSDO
+title: Office 365の概要、Microsoft Defender for Office 365 EOP、MSDO
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -16,12 +16,12 @@ ms.collection:
 description: Office 365 におけるセキュリティについて、EOP、Defender for Office 365 プラン 1 およびプラン 2、セキュリティの標準構成と厳格な構成の違いなどを説明します。 持っている情報を理解し、プロパティをセキュリティで保護する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d7c91f4dc28a28b0bab2102dc2a9ec6ec937f6f6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: cbcdf83423b8a6d4e40f34a96282059b44c9df3e
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206507"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110357"
 ---
 # <a name="office-365-security"></a>Office 365 セキュリティ
 
@@ -118,7 +118,7 @@ Microsoft Defender for Office 365 P1 では、調査機能として **リアル�
 
 このように、Microsoft Defender for Office 365 P2 では、***検出/対応*** 面の機能が強化され、新たに 自動化された追及機能が追加されています。
 
-Microsoft Defender for Office 365 P2 のメインの追及ツールは、リアルタイム検出ではなく **脅威エクスプローラー** と呼ばれるツールです。 セキュリティ センターに移動した際に脅威エクスプローラーが表示される場合、Microsoft Defender for Office 365 P2 を使用していることを意味します。
+Microsoft Defender for Office 365 P2 のメインの追及ツールは、リアルタイム検出ではなく **脅威エクスプローラー** と呼ばれるツールです。 Defender for Cloud に移動するときに[脅威エクスプローラー] が表示される場合は、Microsoft Defender Office 365されます。
 
 Microsoft Defender for Office 365 P1 および P2 の詳細については、**[こちらの記事をご覧ください](defender-for-office-365.md)**。
 

@@ -12,12 +12,12 @@ ms.localizationpriority: medium
 description: セキュリティ/コンプライアンス センターのユーザーからユーザー Office 365へのユーザーの自動リダイレクトについてMicrosoft 365 コンプライアンス センター。
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 34965760bf384c1b02f6aafbf24ef83b636ce3c6
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 668891df31636a4975eea4bbaa12d83a8c042f24
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786364"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110621"
 ---
 # <a name="redirection-of-users-from-the-office-365-security-and-compliance-center-to-the-microsoft-365-compliance-center"></a>セキュリティ/コンプライアンス センターからOffice 365へのユーザーのリダイレクトMicrosoft 365 コンプライアンス センター
 
@@ -39,7 +39,7 @@ ms.locfileid: "60786364"
 
 ユーザーは、同じコンプライアンス ソリューションに自動的にルーティング<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター。</a>
 
-この機能と関連付けられたコントロールでは、Microsoft Defender のセキュリティ機能の自動リダイレクトが有効Office 365。 セキュリティ機能のリダイレクトを有効にするには[、「Microsoft Defender](/microsoft-365/security/defender/microsoft-365-security-mdo-redirection)からアカウントをリダイレクトする」を参照Office 365セキュリティ センター Microsoft 365を参照してください。
+この機能と関連付けられたコントロールでは、Microsoft Defender のセキュリティ機能の自動リダイレクトが有効Office 365。 セキュリティ機能のリダイレクトを有効にするには、「Microsoft Defender からアカウントをリダイレクトする」を参照[Office 365、Microsoft 365 Defenderポータルに](/microsoft-365/security/defender/microsoft-365-security-mdo-redirection)移動します。
 
 ## <a name="related-information"></a>関連情報
 

@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 20fc59b0a2a6b614619693050a4ef728fabd7232
-ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
+ms.openlocfilehash: 1f7386d2b35308dbfd6da911e193d6e52fdd12cb
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60899692"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110177"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>インサイダーリスク管理設定の使用を開始する
 
@@ -71,7 +71,7 @@ Insider リスク ポリシー テンプレートは、検出して調査する�
 - **セキュリティ ポリシー違反インジケーター (プレビュー)**: 未承認または悪意のあるソフトウェアのインストールまたはセキュリティ制御のバイパスに関連する Microsoft Defender for Endpoint のインジケーターが含まれます。 インサイダー リスク管理でアラートを受信するには、アクティブな Defender for Endpoint ライセンスとインサイダー リスク統合が有効になっている必要があります。 Insider リスク管理統合のための Defender for Endpoint の構成の詳細については、「Configure Advanced features [in Microsoft Defender for Endpoint」を参照してください](/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center)。
 - **健康記録アクセスインジケーター (プレビュー)**: これには、患者の医療記録アクセスに関するポリシーインジケーターが含まれます。 たとえば、電子医療記録 (EMR) システム ログ内の患者の医療記録へのアクセスの試行は、インサイダー リスク管理の医療ポリシーと共有できます。 インサイダー リスク管理でこれらの種類のアラートを受信するには、ヘルスケア固有のデータ コネクタと HR データ コネクタが構成されている必要があります。
 - **物理アクセス インジケーター (プレビュー)**: 機密資産への物理的なアクセスに関するポリシー インジケーターが含まれます。 たとえば、物理的な不良システム ログ内の制限領域へのアクセスの試行は、インサイダー リスク管理ポリシーと共有できます。 インサイダー リスク管理でこれらの種類のアラートを受信するには、インサイダー リスク管理で有効になっている優先度の物理資産と、構成されている物理不良データ コネクタが [必要](import-physical-badging-data.md) です。 物理アクセスの構成の詳細については、この記事の [「Priority physical access」セクション](#priority-physical-assets-preview) を参照してください。
-- **Microsoft Cloud App Securityインジケーター (プレビュー)**: これらには、共有アラートからのポリシー インジケーターが含Cloud App Security。 ネットワークで自動的に有効にされた異常検出Cloud App Securityすぐに結果の検出と照合が開始され、ユーザーとネットワークに接続されているコンピューターとデバイス全体で多数の異常行動を対象とします。 これらのアクティビティをインサイダー リスク管理ポリシーアラートに含めるには、このセクションで 1 つ以上のインジケーターを選択します。 分析と異常の検出Cloud App Security詳細については[、「Get behavioral analytics and anomaly detection」を参照してください](/cloud-app-security/anomaly-detection-policy)。
+- **Microsoft Defender for Cloud Apps インジケーター (プレビュー)**: これには、Defender for Cloud Apps からの共有アラートからのポリシー インジケーターが含まれます。 Defender for Cloud Apps で自動的に有効にされた異常検出は、すぐに結果の検出と照合を開始し、ユーザーとネットワークに接続されているコンピューターとデバイス全体で多数の異常行動を対象とします。 これらのアクティビティをインサイダー リスク管理ポリシーアラートに含めるには、このセクションで 1 つ以上のインジケーターを選択します。 Defender for Cloud Apps 分析と異常検出の詳細については [、「Get behavioral analytics and anomaly detection」を参照してください](/cloud-app-security/anomaly-detection-policy)。
 - **リスク スコア の向上**: これには、異常なアクティビティや過去のポリシー違反のリスク スコアの引き上げが含まれます。 リスク スコア ブースターを有効にすると、リスク スコアが増加し、これらの種類のアクティビティに対するアラートが発生する可能性が高くなっています。 異常なアクティビティの場合、検出されたアクティビティがユーザーの一般的な動作から離れた場合、スコアがブーストされます。 たとえば、毎日のファイルダウンロードが大幅に増加します。 異常なアクティビティはパーセンテージの増加 (たとえば、通常のアクティビティより 100% 上) として表示され、アクティビティに応じてリスク スコアに異なる影響を与えます。 以前のポリシー違反を持つユーザーの場合、ユーザーが複数のケースを以前に確認済みポリシー違反として解決した場合、スコアが向上します。 リスク スコア ブースターは、1 つ以上のインジケーターが選択されている場合にのみ選択できます。
 
 場合によっては、組織内のインサイダー リスク ポリシーに適用されるインサイダー リスク ポリシー インジケーターを制限できます。 すべてのインサイダー リスク ポリシーから無効にすることで、特定の領域のポリシー インジケーターをオフにできます。 トリガー イベントは、優先ユーザー テンプレートによる一般的なデータ リークまたはデータ リークから作成されたポリシーに対 *して* のみ変更できます。 他のすべてのテンプレートから作成されたポリシーには、カスタマイズ可能なトリガー インジケーターやイベントが含められない。
@@ -237,7 +237,7 @@ Defender for Endpoint からのアラートは毎日インポートされます�
 
 Insider リスク管理アラート情報は、Office 365 Management Activity API スキーマを使用して、セキュリティ情報とイベント管理 (SIEM) およびセキュリティ オーケストレーション自動応答 (SOAR)[ソリューションにエクスポートできます](/office/office-365-management-api/office-365-management-activity-api-schema#security-and-compliance-alerts-schema)。 Office 365管理アクティビティ API を使用して、組織がインサイダー リスク情報の管理または集約に使用する可能性がある他のアプリケーションにアラート情報をエクスポートできます。 アラート情報はエクスポートされ、60 分ごとに管理アクティビティ API Office 365使用できます。
 
-組織で Azure Sentinel を使用している場合は、インサイダー リスク管理データ コネクタを使用して、インサイダー リスクアラート情報を Sentinel にインポートすることもできます。 詳細については、Sentinel[のMicrosoft 365記事の「Insider Risk Management (IRM) (Preview)」](/azure/sentinel/data-connectors-reference#microsoft-365-insider-risk-management-irm-preview)を参照してください。
+組織で Microsoft Sentinel を使用している場合は、インサイダー リスク管理データ コネクタを使用して、インサイダー リスクアラート情報を Sentinel にインポートすることもできます。 詳細については、Microsoft Sentinel[のMicrosoft 365「Insider Risk Management (IRM) (Preview)」](/azure/sentinel/data-connectors-reference#microsoft-365-insider-risk-management-irm-preview)を参照してください。
 
 >[!IMPORTANT]
 >Microsoft 365 または他のシステムでインサイダー リスクアラートまたはケースを持つユーザーの参照整合性を維持するために、エクスポートされたアラートに対してユーザー名の匿名化は保持されません。 エクスポートされたアラートには、各アラートのユーザー名が表示されます。
@@ -254,12 +254,12 @@ API を使用してインサイダー リスクアラート情報を確認する
 
 次のフィールドと値は、セキュリティ およびコンプライアンス アラート スキーマのインサイダー リスク管理&エクスポートされます。
 
-| **Alert パラメーター** | **説明** |
+| **Alert パラメーター** | **Description** |
 |:------------------|:----------------|
 | AlertType | アラートの種類は Custom *です*。  |
 | AlertId | アラートの GUID。 Insider リスク管理アラートは変更可能です。 アラートの状態が変更されると、同じ AlertID を持つ新しいログが生成されます。 この AlertID を使用して、アラートの更新プログラムを関連付けできます。 |
 | カテゴリ | アラートのカテゴリは *InsiderRiskManagement です*。 このカテゴリを使用して、これらのアラートを他のセキュリティ アラートとコンプライアンス &区別できます。 |
-| Comments | アラートの既定のコメント。 値は *、新しいアラート* (アラートの作成時にログに記録される) とアラート *の* 更新 (アラートの更新時にログに記録される) です。 AlertID を使用して、アラートの更新プログラムを関連付ける。 |
+| コメント | アラートの既定のコメント。 値は *、新しいアラート* (アラートの作成時にログに記録される) とアラート *の* 更新 (アラートの更新時にログに記録される) です。 AlertID を使用して、アラートの更新プログラムを関連付ける。 |
 | データ | アラートのデータには、一意のユーザー ID、ユーザー プリンシパル名、およびユーザーがポリシーにトリガーされた日時 (UTC) が含まれます。 |
 | 名前 | アラートを生成したインサイダー リスク管理ポリシーのポリシー名。 |
 | PolicyId | アラートをトリガーしたインサイダー リスク管理ポリシーの GUID。 |
@@ -402,7 +402,7 @@ Microsoft 365 で物理不良データ コネクタを有効にして、物理�
 
 ### <a name="create-a-power-automate-flow-from-insider-risk-management-template"></a>インサイダー リスクPower Automateテンプレートからデータ フローを作成する
 
-推奨されるインサイダー リスク管理テンプレートから Power Automate フローを作成するには、ケースで直接作業する際に、Microsoft 365 コンプライアンス センター の Insider リスク管理ソリューションの設定コントロールまたは [Power Automate フローの管理] オプションを使用します。  または **Users ダッシュボード**。
+推奨されるインサイダー リスク管理テンプレートから Power Automate フローを作成するには、ケースで直接作業する際に、Microsoft 365 コンプライアンス センター の Insider リスク管理ソリューションの設定コントロールまたは [Power Automate フローの管理] オプションを使用します。   または **Users ダッシュボード**。
 
 設定領域にPower Automateを作成するには *、Insider Risk Management* または Insider Risk *Management Admin* 役割グループのメンバーである必要があります。 [フローのPower Automate] オプションを使用してPower Automateを作成するには、少なくとも 1 つのインサイダー リスク管理役割グループのメンバーである必要があります。
 

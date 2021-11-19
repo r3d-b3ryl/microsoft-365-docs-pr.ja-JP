@@ -16,12 +16,12 @@ ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: f47787a137f9397ab8526ed202e60f44a7d52a55
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 8e3237eefdf9f8a9a5419e9d01e32d73eb949360
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883631"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110933"
 ---
 # <a name="manage-event-based-forced-updates"></a>イベントベースの強制更新プログラムを管理する
 
@@ -44,7 +44,7 @@ Microsoft Defender ウイルス対策を使用すると、起動時やクラウ�
 
 2. [スケジュールされたスキャン **] セクションに移動** し、スキャンを実行する前に最新のセキュリティ インテリジェンス更新プログラムのチェックを [は **い** ] に **設定します**。
 
-3. **[OK]** をクリックします。
+3. [**OK**] をクリックします。
 
 4. [更新されたポリシーを通常どおり展開します](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers)。
 
@@ -60,7 +60,7 @@ Microsoft Defender ウイルス対策を使用すると、起動時やクラウ�
 
 5. [スケジュールされたスキャン **を実行する** 前に最新のウイルスとスパイウェアの定義を確認する] をダブルクリックし、オプションを [有効] に **設定します**。
 
-6. **[OK]** をクリックします。
+6. [**OK**] をクリックします。
 
 ### <a name="use-powershell-cmdlets-to-check-for-protection-updates-before-running-a-scan"></a>PowerShell コマンドレットを使用して、スキャンを実行する前に保護更新プログラムを確認する
 
@@ -70,7 +70,7 @@ Microsoft Defender ウイルス対策を使用すると、起動時やクラウ�
 Set-MpPreference -CheckForSignaturesBeforeRunningScan
 ```
 
-詳細については、「[PowerShell コマンドレットを使用して Microsoft Defender ウイルス対策を構成および実行する](use-powershell-cmdlets-microsoft-defender-antivirus.md)」および「[Defender コマンドレット](/powershell/module/defender/index)」を参照してください。
+詳細については[、「Use PowerShell コマンドレットを](use-powershell-cmdlets-microsoft-defender-antivirus.md)使用して、クラウドコマンドレットと Defender for Cloud コマンドレットを構成Microsoft Defender ウイルス対策実行する」[を参照してください](/powershell/module/defender/index)。
 
 ### <a name="use-windows-management-instruction-wmi-to-check-for-protection-updates-before-running-a-scan"></a>スキャンWindows前に保護更新プログラムを確認するには、WMI (管理命令) を使用します。
 
@@ -96,7 +96,7 @@ CheckForSignaturesBeforeRunningScan
 
 5. [起動時に **最新のウイルス** とスパイウェアの定義を確認する] をダブルクリックし、オプションを [有効] に **設定します**。
 
-6. **[OK]** をクリックします。
+6. [**OK**] をクリックします。
 
 また、グループ ポリシー、PowerShell、または WMI を使用して、実行中Microsoft Defender ウイルス対策起動時に更新プログラムを確認するサーバーを構成できます。
 
@@ -112,7 +112,7 @@ CheckForSignaturesBeforeRunningScan
 
 5. [起動時にセキュリティ **インテリジェンス更新プログラムを開始** する] をダブルクリックし、オプションを [有効] に **設定します**。
 
-6. **[OK]** をクリックします。
+6. [**OK**] をクリックします。
 
 ### <a name="use-powershell-cmdlets-to-download-updates-when-microsoft-defender-antivirus-is-not-present"></a>PowerShell コマンドレットを使用して、ユーザーが存在しないMicrosoft Defender ウイルス対策更新プログラムをダウンロードする
 
@@ -122,7 +122,7 @@ CheckForSignaturesBeforeRunningScan
 Set-MpPreference -SignatureDisableUpdateOnStartupWithoutEngine
 ```
 
-詳細については[、「PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md)コマンドレットを使用して powerShell コマンドレットを使用して、Microsoft Defender ウイルス対策 および[Defender](/powershell/module/defender/index)コマンドレットを管理する」を Microsoft Defender ウイルス対策参照してください。
+詳細については[、「PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md)コマンドレットを使用して、Microsoft Defender ウイルス対策 と Defender [for](/powershell/module/defender/index) Microsoft Defender ウイルス対策 Cloud コマンドレットを管理する」を参照してください。
 
 ### <a name="use-windows-management-instruction-wmi-to-download-updates-when-microsoft-defender-antivirus-is-not-present"></a>[Windows管理命令 (WMI) を使用して、インストールされていないMicrosoft Defender ウイルス対策更新プログラムをダウンロードする
 

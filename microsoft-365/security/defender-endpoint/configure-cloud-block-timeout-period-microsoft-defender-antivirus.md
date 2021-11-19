@@ -16,12 +16,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b00c631a3eeaddb4fa66fe6d58fd40418b188bec
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: e3f267218155b7aa503237aaa4e52e2e8637019d
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60552730"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110801"
 ---
 # <a name="configure-the-cloud-block-timeout-period"></a>クラウド ブロックのタイムアウト期間の構成
 
@@ -47,7 +47,7 @@ ms.locfileid: "60552730"
 
 3. ウイルス対策ポリシーを選択 (または作成) します。
 
-4. [構成設定 **] セクションで** 、[クラウド保護] **を展開します**。 次に **、[Defender Cloud Extended Timeout in Seconds]** ボックスで、1 秒から 50 秒の時間を秒単位で指定します。 指定した値は、既定の 10 秒に追加されます。
+4. [構成設定 **] セクションで** 、[クラウド保護] **を展開します**。 次に、[Microsoft Defender ウイルス対策延長タイムアウト (秒) ボックスで、1 秒から 50 秒の時間を秒単位で指定します。 指定した値は、既定の 10 秒に追加されます。
 
 5. (この手順は省略可能です)ウイルス対策ポリシーに他の変更を加えます。 (ヘルプが必要ですか? [「設定ポリシー Microsoft Defender ウイルス対策」を参照Microsoft Intune.)](/mem/intune/protect/antivirus-microsoft-defender-settings-windows)
 

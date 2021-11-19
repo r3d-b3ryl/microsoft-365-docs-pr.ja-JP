@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1cee88d872ca7d83b9fbaf391a25cdb21cd10bd6
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: e81f1b468a01369d308c4585b2ffb82b596a66ce
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963385"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111293"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>Microsoft Defender for Endpoint の展開をセットアップする
 
@@ -81,7 +81,7 @@ Defender for Endpoint の展開は、次の 3 フェーズプロセスです。
 
 エンドポイント用 Microsoft Defender へのオンボーディングは簡単です。 ナビゲーション メニューから、[エンドポイント] セクションの下の任意のアイテムを選択するか、インシデント、ハンティング、アクション センター、脅威分析などの Microsoft 365 Defender 機能を選択してオンボーディング プロセスを開始します。
 
-Web ブラウザーから、セキュリティ センター Microsoft 365<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">移動します</a>。
+Web ブラウザーから、ポータルに移動Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">します</a>。
 
 ## <a name="network-configuration"></a>ネットワーク構成
 
@@ -172,7 +172,7 @@ v20 を含む URL は、Windows 10バージョン 1803 または 11 デバイス
 
 ****
 
-|ドメインリストのスプレッドシート|説明|
+|ドメインリストのスプレッドシート|[説明]|
 |---|---|
 |![Microsoft Defender for Endpoint URL スプレッドシートのサム イメージ。](images/mdatp-urls.png)|サービスの場所、地理的な場所、および OS の特定の DNS レコードのスプレッドシート。 <p> [ここにスプレッドシートをダウンロードします。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
 |

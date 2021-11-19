@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: d968afeaf484387597d6672bf4db1a01180e52a4
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 0681144d09a430d0f4e4a2349f24ba442382cd14
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60643149"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110573"
 ---
 # <a name="onboard-windows-multi-session-devices-in-azure-virtual-desktop"></a>Azure 仮想Windowsマルチセッション デバイスのオンボード
 
@@ -42,7 +42,7 @@ Microsoft Defender for Endpoint では、VDI セッションと Azure Virtual De
 > - 仮想デスクトップごとに 1 つのエントリ
 > - 仮想デスクトップごとに複数のエントリ
 
-Microsoft では、Azure Virtual Desktop を仮想デスクトップごとに 1 つのエントリとしてオンボーディングをお勧めします。 これにより、Microsoft Defender Endpoint ポータルでの調査エクスペリエンスが、コンピューター名に基づいて 1 つのデバイスのコンテキスト内に確実に表示されます。 WVD ホストを頻繁に削除および再展開する組織では、同じコンピューターの複数のオブジェクトが Microsoft Defender for Endpoint ポータルに作成されるのを防ぐため、このメソッドの使用を強く検討する必要があります。 これは、インシデントを調査するときに混乱を招く可能性があります。 テスト環境または非揮発性環境の場合は、別の方法で選択できます。
+Microsoft では、Azure Virtual Desktop を仮想デスクトップごとに 1 つのエントリとしてオンボーディングをお勧めします。 これにより、Microsoft Defender for Endpoint ポータルでの調査エクスペリエンスが、コンピューター名に基づいて 1 つのデバイスのコンテキストに含まれるのが保証されます。 WVD ホストを頻繁に削除および再展開する組織では、同じコンピューターの複数のオブジェクトが Microsoft Defender for Endpoint ポータルに作成されるのを防ぐため、このメソッドの使用を強く検討する必要があります。 これは、インシデントを調査するときに混乱を招く可能性があります。 テスト環境または非揮発性環境の場合は、別の方法で選択できます。
 
 Microsoft では、Microsoft Defender for Endpoint オンボーディング スクリプトを WVD ゴールデン イメージに追加する方法をお勧めします。 この方法で、このオンボーディング スクリプトが最初の起動時にすぐに実行されるのを確認できます。 これは、WVD ゴールデン イメージからプロビジョニングされたすべての WVD コンピューターで最初に起動スクリプトとして実行されます。 ただし、変更せずにギャラリー イメージのいずれかを使用している場合は、スクリプトを共有の場所に配置し、ローカル またはドメイン グループ ポリシーから呼び出します。
 
@@ -55,7 +55,7 @@ WVD ホスト コンピューターをオンボードする方法は次のとお
 
 - 起動時に、ゴールデン イメージ (または共有の場所から) でスクリプトを実行します。
 - 管理ツールを使用してスクリプトを実行します。
-- [Azure Defender との統合による](azure-server-integration.md)
+- [Microsoft Defender for Cloud との統合による](azure-server-integration.md)
 
 #### <a name="scenario-1-using-local-group-policy"></a>*シナリオ 1: ローカル グループ ポリシーの使用*
 
@@ -154,8 +154,8 @@ WVD ホスト コンピューターをオンボードする方法は次のとお
 
 #### <a name="licensing-requirements"></a>ライセンスの要件
 
-ライセンスに関する注意: Windows Enterprise マルチセッションを使用する場合は、要件に応じて、Microsoft Defender for Endpoint (ユーザーあたり)、Windows Enterprise E5、Microsoft 365 セキュリティ、または Microsoft 365 E5 を介してすべてのユーザーにライセンスを取得するか、Azure Defender を介して VM のライセンスを取得するように選択できます。
-エンドポイントの Microsoft Defender のライセンス要件については、「ライセンス要件」 [を参照してください](minimum-requirements.md#licensing-requirements)。
+ライセンスに関する注意: Windows Enterprise マルチセッションを使用する場合、要件に応じて、Microsoft Defender for Endpoint (ユーザーあたり)、Windows Enterprise E5、Microsoft 365 Security、または Microsoft 365 E5をクリックするか、Microsoft Defender for Cloud を通じて VM のライセンスを取得します。
+Microsoft Defender for Endpoint のライセンス要件については、「ライセンス要件」 [を参照してください](minimum-requirements.md#licensing-requirements)。
 
 #### <a name="related-links"></a>関連リンク
 

@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 管理サービス プロバイダー (MSP) の場合は、Microsoft 365 Lighthouseベースラインを展開する方法Microsoft 365 Lighthouseします。
-ms.openlocfilehash: d449a7677e478111590a2fbeedfbd211e07d7027
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c241dae7839c6c0724a397912decc5da74ec556f
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60173201"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111449"
 ---
 # <a name="deploy-microsoft-365-lighthouse-baselines"></a>ベースラインMicrosoft 365 Lighthouse展開する 
 
@@ -33,7 +33,7 @@ Microsoft 365 Lighthouse基準を使用すると、標準的な管理テナン�
 - 管理者に MFA を要求する
 - エンド ユーザーに MFA を要求する
 - 従来の認証をブロックする
-- [デバイス登録の設定] Microsoft エンドポイント マネージャー – Azure AD参加
+- [デバイス登録の設定] - Microsoft エンドポイント マネージャー参加Azure ADする
 - デバイスの Defender ウイルス対策ポリシーをWindowsする
 - デバイスのコンプライアンス ポリシーをWindowsする
 

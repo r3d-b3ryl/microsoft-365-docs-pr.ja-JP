@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso のオンプレミス IT インフラストラクチャの基本的な構造と、企業のビジネス ニーズが企業向けサービスによってどのように満たされるかMicrosoft 365理解します。
-ms.openlocfilehash: 9f7a25a9a3bd23c5725be06af39dbd65a1d3a4e5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 94118a66f7bb1468a8f27816151a3b4d087b5703
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60170357"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111665"
 ---
 # <a name="contoso-it-infrastructure-and-business-needs"></a>Contoso IT インフラストラクチャとビジネス ニーズ
 
@@ -121,10 +121,10 @@ Contoso IT 部門は、展開前に次のビジネス ニーズのマッピン�
 |  | リモート ワーカーとモバイル ワーカーの生産性を向上させる | Microsoft 365 のワークロードとクラウドベースのデータ |
 |  | 独創性と革新性を向上させる | Windows Ink、職場の Cortana、PowerPoint |
 | セキュリティ |  |  |
-|  | ID およびアクセス管理 | Azure AD 多要素認証 (MFA) と Azure AD Privileged Identity Management (PIM) を使用した専用のグローバル管理者アカウント <BR> すべてのユーザー アカウントの MFA <BR> 条件付きアクセス <BR> セキュリティ閲覧者 <BR> Windows Hello <BR> Windows Credential Guard |
-|  | 脅威保護 | Advanced Threat Analytics <BR> Windows Defender <BR> Defender for Office 365 <BR> Microsoft Defender for Office 365 <BR> Microsoft 365の調査と対応 <BR> |
-|  | 情報保護 | Azure Information Protection <BR> データ損失防止 (DLP) <BR> Windows 情報保護 (WIP) <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
-|  | セキュリティ管理 | Azure Defender  <BR> Windows Defender セキュリティ センター |
+|  | ID およびアクセス管理 | 複数要素認証 (MFA) Azure AD (PIM) を使用した専用Azure AD Privileged Identity Management管理者アカウント <br> すべてのユーザー アカウントの MFA <br> 条件付きアクセス <br> セキュリティ閲覧者 <br> Windows Hello <br> Windows Credential Guard |
+|  | 脅威保護 | Advanced Threat Analytics <br> Windows Defender <br> Defender for Office 365 <br> Microsoft Defender for Office 365 <br> Microsoft 365の調査と対応 <br> |
+|  | 情報保護 | Azure Information Protection <br> データ損失防止 (DLP) <br> Windows 情報保護 (WIP) <br> Microsoft Defender for Cloud Apps <br> Microsoft Intune |
+|  | セキュリティ管理 | Microsoft Defender for Cloud  <br> Windows Defender セキュリティ センター |
 | リモート/モバイル アクセスおよびビジネス パートナー |  |  |
 |  | リモート ワーカーとモバイル ワーカーのセキュリティを強化する | Microsoft Intune |
 |  | 従業員のリモート アクセス インフラストラクチャを縮小する | Microsoft 365 のワークロードとクラウドベースのデータ |
@@ -132,7 +132,7 @@ Contoso IT 部門は、展開前に次のビジネス ニーズのマッピン�
 | コンプライアンス |  |  |
 |  | 地域の規制要件に準拠する | GDPR の機能 (Microsoft 365 |
 | 管理 |  |  |
-|  | クライアント更新プログラムのインストールに関する IT オーバーヘッドの削減 | Windows 10 Enterprise の更新プログラム <BR> Microsoft 365 Apps for enterprise の更新プログラム |
+|  | クライアント更新プログラムのインストールに関する IT オーバーヘッドの削減 | Windows 10 Enterprise の更新プログラム <br> Microsoft 365 Apps for enterprise の更新プログラム |
 ||||
 
 ## <a name="next-step"></a>次の手順
@@ -141,6 +141,6 @@ Contoso Corporation のオンプレミス[ネットワーク](contoso-networking
 
 ## <a name="see-also"></a>関連項目
 
-[Microsoft 365 for Enterprise の概要](microsoft-365-overview.md)
+[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
 
 [テスト ラボ ガイド](m365-enterprise-test-lab-guides.md)

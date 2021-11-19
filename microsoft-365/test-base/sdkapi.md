@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 9e2c52d23c0e0c949059dc37eee4c1a59b35964e
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: f7e5edeeac79b417bcb41f8607c46fc8894ea4fc
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60704945"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110381"
 ---
 # <a name="manage-your-resource-with-sdk--apis"></a>SDK および API を使用して&管理する
 オートメーションは、開発とアジャイル開発DevOps重要な側面です。 テスト ベースのリソースを管理しMicrosoft 365テスト結果をプログラムで取得し、CI ツールと統合しますか? テストベース API/SDK は、これらすべての達成に役立ちます。 
@@ -46,7 +46,7 @@ ms.locfileid: "60704945"
 
 ```
 pip install azure-identity 
-pip install azure-mgmt-testbase  
+pip install azure-mgmt-testbase
 ```
 
 - 開発環境での認証 
@@ -104,13 +104,13 @@ SDK および API の詳細については、以下のリンク&してくださ�
 
 **Azure サブスクリプション** 
 
-- [アクティブなサブスクリプションを持つ Azure アカウント](https://azure.microsoft.com/free/?utm_source=campaign&utm_campaign=python-dev-center&mktingSource=environment-setup) 
+- [アクティブなサブスクリプションを持つ Azure アカウント](https://azure.microsoft.com/free/?utm_source=campaign&utm_campaign=python-dev-center&mktingSource=environment-setup)
 
 **Python SDK** 
 
-- [テストベースの Python SDK ドキュメント](/python/api/overview/azure/mgmt-testbase-readme?view=azure-python-preview)
-- [基本 Python SDK のテストサンプル](https://aka.ms/testbase-sample-py) 
-- [Python SDK の Azure の一般的な使用パターン](/azure/developer/python/azure-sdk-overview#provision-and-manage-azure-resources-with-management-libraries) 
+- [テストベースの Python SDK ドキュメント](/python/api/overview/azure/mgmt-testbase-readme)
+- [基本 Python SDK のテストサンプル](https://aka.ms/testbase-sample-py)
+- [Python SDK の Azure の一般的な使用パターン](/azure/developer/python/azure-sdk-overview#provision-and-manage-azure-resources-with-management-libraries)
 
 **REST API**  
 

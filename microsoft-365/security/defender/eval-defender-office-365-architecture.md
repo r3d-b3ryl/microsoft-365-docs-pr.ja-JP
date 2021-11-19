@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 8ff1cf191670dc2345293ebd8aa531b87b090a8a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b5fdfb95b263d38c9b663176fd21b6c43e43db57
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205093"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110309"
 ---
 # <a name="review-microsoft-defender-for-office-365-architecture-requirements-and-key-concepts"></a>Microsoft Defender のアーキテクチャ要件Office 365主な概念について確認する
 
@@ -51,8 +51,8 @@ Defender for Office 365を有効にする前に、アーキテクチャを理解
 |1     | 外部送信者のホスト サーバーは、通常、メッセージを中継するターゲット サーバーを提供する MX レコードのパブリック DNS 参照を実行します。  この参照は、直接Exchange Online (EXO) または EXO に対して中継するように構成された SMTP ゲートウェイのいずれかです。  |
 |2     | Exchange Online Protection接続をネゴシエートして検証し、メッセージ ヘッダーとコンテンツを検査して、必要な追加のポリシー、タグ付け、または処理を決定します。  |
 |3     | Exchange Online、Microsoft Defender と統合Office 365、より高度な脅威保護、軽減、修復を提供します。 |
-|4      | 悪意のある、ブロックされている、または検疫されていないメッセージが処理され、迷惑メール、メールボックス ルール、または他の設定に関連するユーザー設定が評価され、トリガーされる EXO で受信者に配信されます。 |
-|5     | Azure AD Connect を使用すると、オンプレミスの Active Directory との統合を有効にし、メールが有効なオブジェクトとアカウントを Azure Active Directory と最終的にExchange Online。 |
+|4     | 悪意のある、ブロックされている、または検疫されていないメッセージが処理され、迷惑メール、メールボックス ルール、または他の設定に関連するユーザー設定が評価され、トリガーされる EXO で受信者に配信されます。 |
+|5     | オンプレミスの Active Directory との統合は、Azure AD Connect を使用してメールが有効なオブジェクトとアカウントを同期およびプロビジョニングして、Azure Active Directoryと最終的にExchange Online。 |
 |6      | オンプレミス環境を統合する場合は、メール関連の属性、設定、および構成の管理と管理をサポートするために Exchange サーバーを使用する方が強く推奨されます。 |
 |7      | Microsoft Defender for Office 365拡張検出および応答 (XDR) Microsoft 365 Defender信号を共有します。|
 
@@ -70,9 +70,9 @@ Defender for Office 365を有効にする前に、アーキテクチャを理解
 |スパム対策保護     |   EXO のメールボックスを持つ組織は、迷惑メールやスパム ポリシーから自動的に保護されます。      |  [EOP でのスパム対策保護](../office-365-security/anti-spam-protection.md)       |
 |フィッシング対策保護 |  MDO は、スピア フィッシング、捕鯨、ランサムウェア、その他の悪意のあるアクティビティに関連する、より高度なフィッシング対策保護を提供します。   | [Microsoft Defender for Office 365 の追加のフィッシング対策保護](../office-365-security/anti-phishing-protection.md)   |
 |スプーフィング対策保護     |   EOP には、偽装 (偽造) 送信者から組織を保護するための機能が含まれています。      |   [EOP のスプーフィング対策保護](../office-365-security/anti-spoofing-protection.md)      |
-|安全な添付ファイル     |   セーフ添付ファイルは、配信される前に、仮想環境を使用して電子メール メッセージ内の添付ファイルをチェックして "削除" することで、保護の層を追加します。      |   [セーフMicrosoft Defender の添付ファイル (Office 365](../office-365-security/safe-attachments.md)      |
+|安全な添付ファイル     |   セーフ添付ファイルは、配信される前に、仮想環境を使用して電子メール メッセージ内の添付ファイルを確認し、"削除" することで、保護の層を追加します。      |   [セーフ用の Microsoft Defender の添付ファイルOffice 365](../office-365-security/safe-attachments.md)      |
 |セーフ、SharePoint、OneDrive、およびMicrosoft Teams     |    さらに、セーフ SharePoint、OneDrive、Microsoft Teams の添付ファイルは、クラウド ストレージ リポジトリにアップロードされたファイルに対する追加の保護層を提供します。     |  [SharePoint、OneDrive、Microsoft Teams 用の安全な添付ファイル](../office-365-security/mdo-for-spo-odb-and-teams.md)       |
-|安全なリンク     | セーフリンクは、受信メール メッセージ内で URL のスキャンと書き換えを提供し、配信またはクリックする前にそれらのリンクの検証を提供する機能です。        |   [セーフMicrosoft Defender for Office 365](../office-365-security/safe-links.md)      |
+|安全なリンク     | セーフリンクは、受信メール メッセージ内で URL のスキャンと書き換えを提供し、配信またはクリックする前にそれらのリンクの検証を提供する機能です。        |   [セーフ用 Microsoft Defender のリンクOffice 365](../office-365-security/safe-links.md)      |
 |    |         |         |
 
 Microsoft Defender for Officeに含まれる機能の詳細については[、「Microsoft Defender for Office 365」を参照してください](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
@@ -89,7 +89,7 @@ Microsoft Defender for Officeに含まれる機能の詳細については[、�
 
 ## <a name="siem-integration"></a>SIEM 統合
 
-Microsoft Defender for Office 365 Azure Sentinel を統合して、組織全体のセキュリティ イベントをより包括的に分析し、プレイブックを構築して効果的かつ迅速な対応を行います。 詳細については、「Microsoft [Defender Connectアラート」を参照Office 365。](/azure/sentinel/connect-office-365-advanced-threat-protection)
+Microsoft Defender for Office 365 Microsoft Sentinel を統合して、組織全体のセキュリティ イベントをより包括的に分析し、効果的かつ迅速な対応を行うプレイブックを構築できます。 詳細については、「Microsoft [Defender Connectアラート」を参照Office 365。](/azure/sentinel/connect-office-365-advanced-threat-protection)
 
 Microsoft Defender for Office 365アクティビティ管理 API を使用して、他のセキュリティ情報およびイベント管理 (SIEM) ソリューションOffice 365[統合することもできます](/office/office-365-management-api/office-365-management-activity-api-reference)。
 
@@ -100,4 +100,3 @@ Microsoft Defender for Office 365アクティビティ管理 API を使用して
 [Microsoft Defender for Office 365 の評価[] の概要に戻Office 365](eval-defender-office-365-overview.md)
 
 [評価とパイロット][の概要に戻Microsoft 365 Defender](eval-overview.md) 
-

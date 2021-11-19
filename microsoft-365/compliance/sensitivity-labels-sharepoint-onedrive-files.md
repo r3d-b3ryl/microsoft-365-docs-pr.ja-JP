@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理者は、Word、Excel、および PowerPoint ファイルのSharePointラベルのOneDrive。
-ms.openlocfilehash: a2e2a4ea4e018e9e5eaeedae709b761a63c591be
-ms.sourcegitcommit: 6dbf879f769a825ed7039363f3a91d676e355ee0
+ms.openlocfilehash: 1d611820986b5d621aed3bea26f6b8ae4455d0f8
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60940762"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109925"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>SharePoint および OneDrive で Office ファイルの秘密度ラベルを有効にする
 
@@ -93,7 +93,7 @@ Windows では OneDrive 同期 アプリ バージョン 19.002.0121.0008 以降
 
 - [SharePoint](https://support.microsoft.com/office/check-out-check-in-or-discard-changes-to-files-in-a-library-7e2c12a9-a874-4393-9511-1378a700f6de)でチェックアウト中にドキュメントにラベルが付いている場合、ドキュメント ライブラリの[感度] 列には、SharePoint でドキュメントがチェックインされ、次に開くまでラベル名は表示されません。
 
-- ラベル付きおよび暗号化されたドキュメントが、サービス プリンシパル名を使用するアプリまたはサービスによって SharePoint または OneDrive からダウンロードされ、異なる暗号化設定を適用するラベルで再度アップロードされると、アップロードは失敗します。 たとえば、ファイルMicrosoft Cloud App Security機密ラベルを [機密] から [高機密]に、または [機密情報] から [全般]**に** 変更する場合 **があります**。
+- ラベル付きおよび暗号化されたドキュメントが、サービス プリンシパル名を使用するアプリまたはサービスによって SharePoint または OneDrive からダウンロードされ、異なる暗号化設定を適用するラベルで再度アップロードされると、アップロードは失敗します。 たとえば、Microsoft Defender for Cloud Apps では、ファイルの機密ラベルが[機密] から [高機密] に、または [機密情報] から [全般]**に変更****されます**。
     
     「ラベル付きドキュメントの暗号化の削除」セクションで説明したように、アプリまたはサービスが [Unlock-SPOSensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile) コマンドレットを最初に実行しても、アップロードは [失敗](#remove-encryption-for-a-labeled-document) しません。 または、アップロードの前に、元のファイルが削除されたか、ファイル名が変更されます。
 
@@ -249,7 +249,7 @@ InformationProtectionLabelId:8faca7b8-8d20-48a3-8ea2-0f96310a848e
 
 代わりに、グローバル管理者または[SharePoint](/sharepoint/sharepoint-admin-role)管理者は[Unlock-SPOSensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile)コマンドレットを実行して、感度ラベルと暗号化の両方を削除できます。 このコマンドレットは、管理者がサイトまたはファイルへのアクセス許可を持っていなくても、Azure Rights Management サービスが利用できない場合でも実行されます。
 
-以下に例を示します。
+例として以下のようなものがあります。
 
 ```powershell
 Unlock-SPOSensitivityLabelEncryptedFile -FileUrl "https://contoso.com/sites/Marketing/Shared Documents/Doc1.docx" -JustificationText "Need to decrypt this file"

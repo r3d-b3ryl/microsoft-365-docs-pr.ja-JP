@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 4ead5c123920670113a336d92fb98e69fea372b9
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 144003528b322aa86ae0fa22aa40fa7aa934a0c7
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882263"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110909"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-scans-for-endpoints-that-are-out-of-date"></a>Microsoft Defender ウイルス対策の更新プログラムを管理し、古くなったエンドポイントをスキャンする
 
@@ -51,7 +51,7 @@ Microsoft Defender ウイルス対策を使用すると、エンドポイント�
     1. クライアント **コンピューターがオフラインの場合は、2** つ以上の連続したスケジュールされた更新プログラムを [はい] に設定 **します**。
     2. [If  **Configuration Manager]** をセキュリティ インテリジェンス更新プログラムのソースとして使用します。。Configuration Manager によって配信される保護更新プログラムが古いとみなされる時間を指定します。 これにより、定義されたフォールバック ソースの順序に基づいて、次の更新場所 [が使用されます](manage-protection-updates-microsoft-defender-antivirus.md#fallback-order)。
 
-3. **[OK]** をクリックします。
+3. [**OK**] をクリックします。
 
 4. [更新されたポリシーを通常どおり展開します](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers)。
 
@@ -67,7 +67,7 @@ Microsoft Defender ウイルス対策を使用すると、エンドポイント�
 
 5. [キャッチアップ セキュリティ **インテリジェンスの** 更新が必要な日数を定義する] 設定をダブルクリックし、オプションを [有効] に **設定します**。 Microsoft Defender AV で最新の保護更新プログラムを確認してダウンロードする日数を入力します。
 
-6. **[OK]** をクリックします。
+6. [**OK**] をクリックします。
 
 ### <a name="use-powershell-cmdlets-to-configure-catch-up-protection-updates"></a>PowerShell コマンドレットを使用してキャッチアップ保護更新プログラムを構成する
 
@@ -77,7 +77,7 @@ Microsoft Defender ウイルス対策を使用すると、エンドポイント�
 Set-MpPreference -SignatureUpdateCatchupInterval
 ```
 
-PowerShell[コマンドレットを](use-powershell-cmdlets-microsoft-defender-antivirus.md)構成して実行する方法の詳細については、「powerShell コマンドレットを使用して Microsoft Defender ウイルス対策 および[Defender](/powershell/module/defender/)コマンドレットを構成および実行する」を参照Microsoft Defender ウイルス対策。
+PowerShell コマンドレットを構成して実行する Microsoft Defender ウイルス対策 および[Defender for Cloud](/powershell/module/defender/)コマンドレットの詳細については、「PowerShell コマンドレットとクラウド コマンドレットを使用する」を参照Microsoft Defender ウイルス対策。 [](use-powershell-cmdlets-microsoft-defender-antivirus.md)
 
 ### <a name="use-windows-management-instruction-wmi-to-configure-catch-up-protection-updates"></a>管理Windows (WMI) を使用してキャッチアップ保護更新プログラムを構成する
 
@@ -89,7 +89,7 @@ SignatureUpdateCatchupInterval
 
 詳細と許可されるパラメーターについては、以下を参照してください。
 
-- [Windows DefenderWMIv2 API](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+- [Windows Defender WMIv2 API](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 ## <a name="set-the-number-of-days-before-protection-is-reported-as-out-of-date"></a>保護が古いとして報告される前の日数を設定する
 
@@ -107,11 +107,11 @@ SignatureUpdateCatchupInterval
 
     1. [スパイウェア定義 **が** 古いと見なされる日数を定義する] をダブルクリックし、オプションを [有効] に **設定します**。 Microsoft Defender AV でスパイウェア セキュリティ インテリジェンスを古い日付と見なす日数を入力します。
 
-    2. **[OK]** をクリックします。
+    2. [**OK**] をクリックします。
 
     3. [ウイルス定義 **が** 古いと見なされる日数を定義する] をダブルクリックし、オプションを [有効] に **設定します**。 Microsoft Defender AV でウイルス セキュリティ インテリジェンスを古い日付と見なす日数を入力します。
 
-    4. **[OK]** をクリックします。
+    4. [**OK**] をクリックします。
 
 ## <a name="set-up-catch-up-scans-for-endpoints-that-have-not-been-scanned-for-a-while"></a>しばらくスキャンされていないエンドポイントのキャッチアップ スキャンを設定する
 
@@ -138,9 +138,9 @@ SignatureUpdateCatchupInterval
 5. ツリーを展開して **、Windowsスキャン> Microsoft Defender ウイルス対策 >構成** します。
 
     1. スケジュールされたクイック スキャンを設定している場合は、[キャッチアップクイック スキャンを有効にする] 設定をダブルクリックし、オプションを [有効] に **設定します**。
-    2. スケジュールされたフル スキャンを設定している場合は、[キャッチアップフル スキャンを有効にする] 設定をダブルクリックし、オプションを [有効] に **設定します**。 **[OK]** をクリックします。
+    2. スケジュールされたフル スキャンを設定している場合は、[キャッチアップフル スキャンを有効にする] 設定をダブルクリックし、オプションを [有効] に **設定します**。 [**OK**] をクリックします。
     3. [キャッチアップ **スキャンを** 強制する日数を定義する] 設定をダブルクリックし、オプションを [有効] に **設定します**。
-    4. 次にユーザーが PC にログオンするときにスキャンが自動的に実行される前に見逃す可能性があるスキャンの数を入力します。 実行されるスキャンの種類は、[スケジュールされたスキャンに使用するスキャンの種類を指定する] **によって** 決まります (「スキャンのスケジュール」 [トピックを参照](scheduled-catch-up-scans-microsoft-defender-antivirus.md) )。 **[OK]** をクリックします。
+    4. 次にユーザーが PC にログオンするときにスキャンが自動的に実行される前に見逃す可能性があるスキャンの数を入力します。 実行されるスキャンの種類は、[スケジュールされたスキャンに使用するスキャンの種類を指定する] **によって** 決まります (「スキャンのスケジュール」 [トピックを参照](scheduled-catch-up-scans-microsoft-defender-antivirus.md) )。 [**OK**] をクリックします。
 
 > [!NOTE]
 > グループ ポリシー設定のタイトルは、日数を参照します。 ただし、この設定は、キャッチアップ スキャンが実行される前のスキャン数 (日数ではなく) に適用されます。
@@ -155,7 +155,7 @@ Set-MpPreference -DisableCatchupQuickScan
 
 ```
 
-PowerShell[コマンドレットを使用して](use-powershell-cmdlets-microsoft-defender-antivirus.md)、Microsoft Defender ウイルス対策[と Defender](/powershell/module/defender/)コマンドレットを管理する方法の詳細については、「PowerShell コマンドレットを使用する」を参照Microsoft Defender ウイルス対策。
+PowerShell[コマンドレットを使用して](use-powershell-cmdlets-microsoft-defender-antivirus.md)、Microsoft Defender ウイルス対策と Defender [for Cloud](/powershell/module/defender/)コマンドレットを管理するを Microsoft Defender ウイルス対策参照してください。
 
 ### <a name="use-windows-management-instruction-wmi-to-configure-catch-up-scans"></a>[Windows管理命令 (WMI) を使用してキャッチアップ スキャンを構成する
 
@@ -168,7 +168,7 @@ DisableCatchupQuickScan
 
 詳細と許可されるパラメーターについては、以下を参照してください。
 
-- [Windows DefenderWMIv2 API](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+- [Windows Defender WMIv2 API](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 ### <a name="use-configuration-manager-to-configure-catch-up-scans"></a>Configuration Manager を使用してキャッチアップ スキャンを構成する
 
@@ -176,7 +176,7 @@ DisableCatchupQuickScan
 
 2. [スケジュールされたスキャン **] セクションに移動** し、クライアント コンピューターがオフラインの場合は、選択したスキャンの種類を強制的にスキャンします **。[** はい] **に移動します**。
 
-3. **[OK]** をクリックします。
+3. [**OK**] をクリックします。
 
 4. [更新されたポリシーを通常どおり展開します](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers)。
 

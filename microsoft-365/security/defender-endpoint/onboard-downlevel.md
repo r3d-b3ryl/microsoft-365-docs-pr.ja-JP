@@ -14,23 +14,24 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5c4936906ba830a660c38b76c7aaf5598ba7724c
-ms.sourcegitcommit: 7791c519bd8b68fc23433e13e1ecbdbeaddbebfa
+ms.openlocfilehash: 2f1c0c784703cc5458dad5e176db9c35818d1abe
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60725585"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111593"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>以前のバージョンの Windows をオンボードする
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **適用対象:**
+
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 **プラットフォーム**
+
 - Windows 7 SP1 Enterprise
 - Windows 7 SP1 Pro
 - Windows 8.1 Pro
@@ -41,22 +42,15 @@ ms.locfileid: "60725585"
 
 Defender for Endpoint は、ダウンレベルのオペレーティング システムを含むサポートを拡張し、サポートされているバージョンの高度な攻撃検出と調査Windowsします。
 
-
-
 クライアント エンドポイントのダウンレベル Windows Defender for Endpoint にオンボードするには、次の必要があります。
-
 
 - [クライアントの構成と更新System Center Endpoint Protectionする](#configure-and-update-system-center-endpoint-protection-clients)
 - [センサー データをMicrosoft Monitoring Agentレポートするコンピューター (MMA) のインストールと構成](#install-and-configure-microsoft-monitoring-agent-mma)
 
-
-サーバー 2008 R2 SP1 Windows、Azure Defender を使用してオン[ボーディングを行うオプションがあります](#onboard-windows-servers-through-azure-defender)。
-
+サーバー 2008 R2 SP1 Windows、Microsoft Defender for Cloud を使用してオンボーディング[を行うオプションがあります](#onboard-windows-servers-through-microsoft-defender-for-cloud)。
 
 > [!NOTE]
-> Defender for Endpoint スタンドアロン サーバー ライセンスは、ノードごとに必要です(オプション 1) Windowsサーバー Microsoft Monitoring Agentオンボーディングします。 または、Azure Defender (オプション 2) を使用して Windows サーバーをオンボードするには、ノードごとに Azure Defender for Servers ライセンスが必要です[。「Azure Defender](/azure/security-center/security-center-services)で利用可能なサポートされる機能」を参照してください。
-
-
+> Defender for Endpoint スタンドアロン サーバー ライセンスは、ノードごとに必要です(オプション 1) Windowsサーバー Microsoft Monitoring Agentオンボーディングします。 または、Microsoft Defender for Cloud (オプション 2) を介して Windows サーバーをオンボードするには、ノードごとに Microsoft Defender for servers ライセンスが必要です[。「Microsoft Defender for](/azure/security-center/security-center-services)Cloud で利用可能なサポートされる機能」を参照してください。
 
 > [!TIP]
 > デバイスのオンボード後、検出テストを実行して、サービスに適切にオンボードされていることを確認できます。 詳細については、「新しくオンボードされた Defender for Endpoint エンドポイントで検出テストを実行 [する」を参照してください](run-detection-test.md)。
@@ -74,7 +68,7 @@ Defender for Endpoint は System Center Endpoint Protection と統合し、マ�
 - SCEP クライアント Cloud Protection Service メンバーシップを詳細設定に **構成** する
 - クラウドへの接続を許可するネットワークMicrosoft Defender ウイルス対策します。 詳細については、「ネットワーク接続の[構成と検証Microsoft Defender ウイルス対策参照してください。](/microsoft-365/security/defender-endpoint/configure-network-connections-microsoft-defender-antivirus)
 
-## <a name="install-and-configure-microsoft-monitoring-agent-mma"></a>インストールと構成Microsoft Monitoring Agent (MMA) 
+## <a name="install-and-configure-microsoft-monitoring-agent-mma"></a>インストールと構成Microsoft Monitoring Agent (MMA)
 
 ### <a name="before-you-begin"></a>はじめに
 
@@ -97,7 +91,6 @@ Defender for Endpoint は System Center Endpoint Protection と統合し、マ�
     > .NET 4.5 のインストールでは、インストール後にコンピューターを再起動する必要がある場合があります。
 
 - Azure Log Analytics エージェントの最小システム要件を満たします。 詳細については、「Log Analytics を使用して環境内のコンピューターからデータ [を収集する」を参照してください。](/azure/log-analytics/log-analytics-concept-hybrid#prerequisites)
-
 
 ### <a name="installation-steps"></a>インストールの手順
 
@@ -134,22 +127,21 @@ Defender for Endpoint は System Center Endpoint Protection と統合し、マ�
 
 完了すると、1 時間以内にポータルにオンボード Windowsサーバーが表示されます。
 
-
-## <a name="onboard-windows-servers-through-azure-defender"></a>Azure Defender Windowsサーバーのオンボード
+## <a name="onboard-windows-servers-through-microsoft-defender-for-cloud"></a>Microsoft Defender Windowsクラウド経由のオンボード サーバー
 
 1. [デバイス管理] Microsoft Defender セキュリティ センターで、[デバイス管理 **オン** ボーディング] 設定  >  **を**  >  **選択します**。
 
 2. オペレーティング **Windowsサーバー 2008 R2 SP1 を** 選択します。
 
-3. **[Azure セキュリティ センターのオンボード サーバー] をクリックします**。
+3. [クラウド **用 Microsoft Defender のオンボード サーバー] をクリックします**。
 
-4. Microsoft Defender for Endpoint with Azure Defender のオンボーディング手順に従い [、Azure](/azure/security-center/security-center-wdatp) ARC を使用している場合は、「Microsoft Defender for Endpoint 統合を有効にする」のオンボーディング手順に [従います](/azure/security-center/security-center-wdatp#enabling-the-microsoft-defender-for-endpoint-integration)。
+4. [「Microsoft Defender for Endpoint with Microsoft Defender for Cloud」](/azure/security-center/security-center-wdatp)および「Azure ARC を使用している場合は、Microsoft Defender for Endpoint 統合を有効にする」のオンボーディング手順に従います。 [](/azure/security-center/security-center-wdatp#enabling-the-microsoft-defender-for-endpoint-integration)
 
 オンボーディングの手順を完了した後、クライアントの構成と[更新System Center Endpoint Protection必要があります](#configure-and-update-system-center-endpoint-protection-clients)。
 
 > [!NOTE]
 >
-> - Azure Defender for Servers によるオンボーディングが期待通り動作するには、サーバーに適切なワークスペースとキーが構成されている必要があります。Microsoft Monitoring Agent (MMA) の設定で構成します。
+> - サーバーが期待通り動作するように Microsoft Defender 経由でオンボーディングを行う場合、サーバーは適切なワークスペースとキーを Microsoft Monitoring Agent (MMA) の設定で構成する必要があります。
 > - 構成が完了すると、適切なクラウド管理パックがコンピューターに展開され、センサー プロセス (MsSenseS.exe) が展開され、開始されます。
 > - これは、サーバーが OMS ゲートウェイ サーバーをプロキシとして使用するように構成されている場合にも必要です。
 
@@ -201,7 +193,7 @@ Microsoft Defender AV と Microsoft Defender for Endpoint が実行されてい�
 
     2018 年 2 月の月次ロールアップ - KB4074598 (Windows Server 2008 R2)
 
-    [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4074598)<br>
+    [Microsoft Update カタログ](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4074598)<br>
     Windows Server 2008 R2 x64 の更新プログラムをダウンロードする
     
     .NET Framework 3.5.1 (KB315418)<br>

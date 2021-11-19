@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8933c96d96e59f4b1a3c0b5956bf3248f2eb73d2
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 1c15b0fe82e2d6dbadce7fe7a5efaa73c6b45940
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60785624"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110921"
 ---
 # <a name="create-indicators"></a>インジケーターの作成
 
@@ -59,7 +59,7 @@ EnableFileHashComputation 設定は、ファイル スキャン時に cert と�
 
 - 許可 – IoC はデバイスで実行できます。
 - 監査 – IoC の実行時にアラートがトリガーされます。
-- 警告 – IoC は、ユーザーがバイパスできるという警告を表示します (MCAS のみ) 
+- 警告 – IoC は、ユーザーがバイパスできるという警告を表示します (Defender for Cloud Apps のみ)
 - 実行をブロックする - IoC の実行は許可されません。
 - ブロックと修復 - IoC の実行は許可されません。修復アクションが IoC に適用されます。
 

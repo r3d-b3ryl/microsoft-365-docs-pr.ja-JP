@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: このテスト ラボ ガイドを使用して、エンタープライズ テスト環境のドキュメントに保持ラベルを作成Microsoft 365使用します。
-ms.openlocfilehash: 517183ca8e61415ec2817683c4a1ce88c251301b
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 3cb3a07b4f636fcf8770432a825356269ff6d94c
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962569"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111161"
 ---
 # <a name="data-classification-for-your-microsoft-365-for-enterprise-test-environment"></a>エンタープライズ テスト環境Microsoft 365データ分類
 
@@ -53,7 +53,7 @@ ms.locfileid: "60962569"
 
 このフェーズでは、オンライン ドキュメント フォルダーに対するさまざまなレベルの保持SharePoint作成します。
 
-1. グローバル管理者アカウントを<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">使用Microsoft 365セキュリティ センター</a>にサインインします。
+1. グローバル管理者アカウントを<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">使用Microsoft 365 Defenderポータル</a>にサインインします。
 1. ブラウザーの **[ホーム - Microsoft 365セキュリティ**] タブで、[分類の保持ラベル]  >  **を選択します**。
 1. [**ラベルを作成**] を選択します。
 1. [ラベルに **名前を付け] ウィンドウで** 、[ラベルに名前を付け] に **「内部パブリック** 」と **入力** し、[次へ] を **選択します**。

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b4ba3db32004eb9ce80e386d918e470d1361e404
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 4d31bce9aa3cc6c64771e0931c22849aa1d92eec
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60785632"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110081"
 ---
 # <a name="indicator-resource-type"></a>インジケーター リソースの種類
 
@@ -51,23 +51,23 @@ ms.locfileid: "60785632"
 
 プロパティ|種類|説明
 :---|:---|:---
-id|String|Indicator エンティティ [の](ti-indicator.md) ID。
-indicatorValue|String|Indicator の [値](ti-indicator.md)です。
+id|文字列|Indicator エンティティ [の](ti-indicator.md) ID。
+indicatorValue|文字列|Indicator の [値](ti-indicator.md)です。
 indicatorType|列挙|インジケーターの種類。 指定できる値は、"FileSha1"、"FileSha256"、"FileMd5"、"CertificateThumbprint"、"IpAddress"、"DomainName"、"Url" です。
-アプリケーション|String|インジケーターに関連付けられているアプリケーション。
+アプリケーション|文字列|インジケーターに関連付けられているアプリケーション。
 action|列挙|インジケーターが組織内で検出される場合に実行されるアクション。 指定できる値は、"Warn"、"Block"、"Audit"、"Alert"、"AlertAndBlock"、"BlockAndRemediate"、"Allowed" です。
-|externalID|String|カスタム相関関係の要求で顧客が送信できる ID。|
+|externalID|文字列|カスタム相関関係の要求で顧客が送信できる ID。|
 sourceType|列挙|"User" ユーザーが作成したインジケーター (ポータルなど) の場合、API を介して自動アプリケーションを使用して送信された場合は"AadApp"。
 createdBySource|string|インジケーターを送信したユーザー/アプリケーションの名前。
 createdBy|String|インジケーターを送信したユーザー/アプリケーションの一意の ID。
-lastUpdatedBy|String|インジケーターを最後に更新したユーザー/アプリケーションの ID。
+lastUpdatedBy|文字列|インジケーターを最後に更新したユーザー/アプリケーションの ID。
 creationTimeDateTimeUtc|DateTimeOffset|インジケーターが作成された日時。
 expirationTime|DateTimeOffset|インジケーターの有効期限。
 lastUpdateTime|DateTimeOffset|インジケーターが最後に更新された時刻。
 severity|列挙|インジケーターの重大度。 指定できる値は、"Informational"、"Low"、"Medium"、"High" です。
 title|String|インジケーター のタイトル。
-description|String|インジケーターの説明。
-recommendedActions|String|インジケーターの推奨アクション。
+説明|String|インジケーターの説明。
+recommendedActions|文字列|インジケーターの推奨アクション。
 rbacGroupNames|文字列の一覧|インジケーターが公開され、アクティブな RBAC デバイス グループ名。 すべてのデバイスに公開されている場合の空のリスト。
 rbacGroupIds|文字列の一覧|RBAC デバイス グループ ID は、インジケーターが公開され、アクティブな場所です。 すべてのデバイスに公開されている場合の空のリスト。
 generateAlert|列挙|**True** の場合は、アラートの生成が必要です。 **このインジケーターが** アラートを生成しない場合は False を指定します。
@@ -80,7 +80,7 @@ API でサポートされるインジケーター アクションの種類は次
 - 監査
 - ブロック
 - BlockAndRemediate
-- Warn (MCAS のみ)
+- Warn (Defender for Cloud Apps のみ)
 
 応答アクションの種類の説明の詳細については、「Create indicators 」 [を参照してください](manage-indicators.md)。
 

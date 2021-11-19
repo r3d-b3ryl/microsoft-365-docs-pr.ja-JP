@@ -21,19 +21,19 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: テナントのライセンスの機能を計画、移行、および実装するためのステップバイステップのツールを取得します。 サービスまたは実行する必要があるアプリをセットアップするガイドを見つける。
-ms.openlocfilehash: b95437a3aed5409900d5006859b7099b1ff2443e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1f55631cf1687cc18e1e890d72b557ad288021fa
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60170201"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111341"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Microsoft 365 および Office 365 サービスのセットアップ ガイド
 
 Microsoft 365およびOffice 365セットアップ ガイドでは、テナント、アプリ、およびサービスを計画および展開するために、カスタマイズされたガイダンスとリソースを提供します。 これらのガイドは、オンボーディング スペシャリストが個々のやり取[り](https://www.microsoft.com/fasttrack/microsoft-365)でMicrosoft 365 FastTrack共有するのと同じベスト プラクティスを使用して作成され、Microsoft 365 管理センター 内のすべての管理者が利用できます。 製品のセットアップ、セキュリティ機能の有効化、コラボレーション ツールの展開に関する情報を提供し、高度な展開を高速化するためのスクリプトを提供します。
 
 > [!NOTE]
-> グローバル リーダーのような管理者ロールを割り当てる必要があります。この設定ガイドMicrosoft 365アクセスします。 グローバル管理者の役割を持つ管理者だけが、ガイドを使用してテナントの設定を変更できます。 
+> グローバル リーダーのような管理者ロールを割り当てる必要があります。この設定ガイドMicrosoft 365アクセスします。 グローバル管理者の役割を持つ管理者だけが、ガイドを使用してテナントの設定を変更できます。
 
 ## <a name="how-to-access-setup-guides-in-the-microsoft-365-admin-center"></a>ウィザードのセットアップ ガイドにアクセスするMicrosoft 365 管理センター
 
@@ -67,7 +67,7 @@ Gmail ユーザーのメールボックスをユーザーのメールボック�
 
 この[Microsoft 365展開アドバイザーは](https://aka.ms/microsoft365setupguide)、生産性ツール、セキュリティ ポリシー、およびデバイス管理機能をセットアップする際のガイダンスを提供します。 Microsoft 365 Business Premium またはエンタープライズ サブスクリプション版 Microsoft 365 があれば、このアドバイザーを使用して組織のデバイスをセットアップし、構成できます。
 
-クラウド サービスを有効にし、デバイスを最新のサポートされているバージョンの Windows 10 に更新し、デバイスを Azure Active Directory (Azure AD) に参加するリソースへのガイダンスとアクセスを 1 つの中央の場所で受け取る。
+クラウド サービスを有効にし、デバイスを最新のサポートされているバージョンの Windows 10 に更新し、デバイスを Azure Active Directory (Azure AD) に参加する、すべてのリソースへのガイダンスとアクセスを 1 つの中央の場所で受け取る。
 
 ### <a name="remote-work-setup-guide"></a>リモート ワーク セットアップ ガイド
 
@@ -75,7 +75,7 @@ Gmail ユーザーのメールボックスをユーザーのメールボック�
 
 クラウド内の Microsoft 365 リソースと組織のネットワークの両方へのリモート ワーカーのデバイス トラフィックを最適化するためのガイダンスを受け取り、リモート アクセス VPN インフラストラクチャの負荷を軽減します。
 
-### <a name="windows-virtual-desktop-setup-guide"></a>Windows仮想デスクトップのセットアップ ガイド
+### <a name="windows-virtual-desktop-setup-guide"></a>Windowsデスクトップセットアップ ガイド
 
 Windows Virtual Desktop は、クラウドで実行されている包括的なデスクトップおよびアプリの仮想化サービスです。 これは、管理の簡素化、マルチセッション Windows 10、Microsoft 365 Apps の最適化、およびリモート デスクトップ サービス (RDS) 環境のサポートを提供する唯一の仮想デスクトップ インフラストラクチャ (VDI) です。 Azure に Windows デスクトップとアプリを数分で展開および拡張し、組み込みのセキュリティとコンプライアンス機能を利用できます。
 
@@ -105,7 +105,7 @@ Microsoft Search作業を完了するために必要な情報を組織が見つ�
 
 ### <a name="azure-ad-setup-guide"></a>Azure ADセットアップ ガイド
 
-[Azure AD セットアップ ガイド](https://aka.ms/aadpguidance)には、組織の強固なセキュリティ基盤を確保するための情報が記載されています。 このガイドでは、管理者向け Azure Role ベースのアクセス制御 (Azure RBAC)、オンプレミス ディレクトリの Azure AD Connect、Azure AD Connect Health など、初期機能を設定して、自動同期中にハイブリッド ID の正常性を監視できます。
+[Azure AD セットアップ ガイド](https://aka.ms/aadpguidance)には、組織の強固なセキュリティ基盤を確保するための情報が記載されています。 このガイドでは、管理者向け Azure Role ベースのアクセス制御 (Azure RBAC)、オンプレミス ディレクトリの Azure AD Connect、Azure AD Connect Health など、初期機能をセットアップして、自動同期中にハイブリッド ID の正常性を監視できます。
 
 また、セルフサービス パスワードのリセット、条件付きアクセス、オプションの高度な ID 保護、ユーザー プロビジョニングの自動化を含む統合サード パーティ製サインオンの有効化に関する重要な情報も含まれています。
 
@@ -145,8 +145,8 @@ Microsoft Search作業を完了するために必要な情報を組織が見つ�
 
 [Microsoft Defender for Endpoint セットアップ ガイドには](https://aka.ms/mdatpsetup)、高度な脅威を防止、検出、調査、および対応するためのエンタープライズ ネットワークに役立つ手順が記載されています。 組織の脆弱性について十分な情報に基づいて評価し、どの展開パッケージと構成方法が最適かを判断します。
 
->[!NOTE]
->Microsoft Defender for Endpoint には、Microsoft ボリューム ライセンスが必要です。
+> [!NOTE]
+> Microsoft Defender for Endpoint には、Microsoft ボリューム ライセンスが必要です。
 
 ### <a name="exchange-online-protection-setup-guide"></a>Exchange Online Protectionセットアップ ガイド
 
@@ -160,7 +160,7 @@ Exchange Online Protection セットアップ[ガイド](https://aka.ms/EOPguida
 
 ### <a name="microsoft-defender-for-identity-setup-guide"></a>Microsoft Defender for Identity セットアップ ガイド
 
-[Microsoft Defender for Identity セットアップ ガイド](https://aka.ms/DefenderforIdentitysetup)には、ユーザー ID を侵害する可能性のある高度な脅威を特定、検出、および調査するためのセキュリティ ソリューションセットアップ ガイダンスが提供されています。 これには、不審なユーザーアクティビティの検出や、組織に向けられた悪意のあるインサイダーアクションが含まれます。 Defender for Identity インスタンスを作成し、組織の Active Directory に接続し、センサー、アラート、通知を設定し、独自のポータルの基本設定を構成します。 
+[Microsoft Defender for Identity セットアップ ガイド](https://aka.ms/DefenderforIdentitysetup)には、ユーザー ID を侵害する可能性のある高度な脅威を特定、検出、および調査するためのセキュリティ ソリューションセットアップ ガイダンスが提供されています。 これには、不審なユーザーアクティビティの検出や、組織に向けられた悪意のあるインサイダーアクションが含まれます。 Defender for Identity インスタンスを作成し、組織の Active Directory に接続し、センサー、アラート、通知を設定し、独自のポータルの基本設定を構成します。
 
 ### <a name="microsoft-information-protection-setup-guide"></a>Microsoft Information Protection セットアップ ガイド
 
@@ -170,9 +170,9 @@ Exchange Online Protection セットアップ[ガイド](https://aka.ms/EOPguida
 
 [Microsoft 情報ガバナンスの設定ガイド](https://aka.ms/migsetupguide)には、設定した特定のライフサイクルのガイドラインに従ってデータを分類および管理するため、組織のガバナンス戦略の設定と管理に必要な情報が提供されています。 このガイドでは、組織の再利用可能なコンテンツおよびコンプライアンス レコードに適用されるラベル、ラベル ポリシー、アイテム保持ポリシーを作成、自動適用、公開する方法について説明します。 また、一括処理のシナリオ、または個々のドキュメントに手動で適用するために、ファイル計画を使用した CSV ファイルのインポートに関する情報を入手できます。
 
-### <a name="microsoft-cloud-app-security-setup-guide"></a>Microsoft Cloud App Securityセットアップ ガイド
+### <a name="microsoft-defender-for-cloud-apps-setup-guide"></a>Microsoft Defender for Cloud Apps セットアップ ガイド
 
-この[Microsoft Cloud App Securityガイドでは](https://aka.ms/cloudappsecuritysetup)、展開と管理のガイダンスに従ってクラウド探索ソリューションをセットアップできます。 Cloud Discovery を使用すると、サポートされているセキュリティ アプリを統合し、トラフィック ログを使用して組織が使用するクラウド アプリを動的に検出および分析します。 また、リスクの高い使用を識別するための脅威検出ポリシー、アクセスを定義するための情報保護ポリシー、アクティビティを監視するためのリアルタイム セッション制御など、Cloud App Security ソリューションで利用できる機能を設定します。 これらの機能を使用すると、環境の可視性が強化され、データの移動を制御し、分析を行って、Microsoft およびサード パーティのクラウド サービス全体でサイバー脅威を特定して対処できます。
+[Microsoft Defender for Cloud Apps セットアップ ガイドでは](https://aka.ms/cloudappsecuritysetup)、展開と管理のガイダンスに従ってクラウド探索ソリューションをセットアップできます。 Cloud Discovery を使用すると、サポートされているセキュリティ アプリを統合し、トラフィック ログを使用して組織が使用するクラウド アプリを動的に検出および分析します。 また、危険度の高い使用を識別するための脅威検出ポリシー、アクセスを定義する情報保護ポリシー、アクティビティを監視するためのリアルタイム セッション制御など、Defender for Cloud Apps ソリューションで利用できる機能を設定します。 これらの機能を使用すると、環境の可視性が強化され、データの移動を制御し、分析を行って、Microsoft およびサード パーティのクラウド サービス全体でサイバー脅威を特定して対処できます。
 
 ## <a name="guides-for-collaboration"></a>コラボレーションのガイド
 

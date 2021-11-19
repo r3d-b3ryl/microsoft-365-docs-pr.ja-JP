@@ -21,12 +21,12 @@ description: 保管担当者とそのデータ ソースに保留を設定して
 ms.custom:
 - seo-marvel-mar2020
 - admindeeplinkMAC
-ms.openlocfilehash: 4d7e582125455d693459dfd3cef343614415b97e
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: cc149c65391642aebb124a96d0681ab1d99c04d1
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60756493"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111029"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>Advanced eDiscovery の保留を管理する
 
@@ -137,7 +137,7 @@ Microsoft Teamsグループに基Office 365されます。 したがって、そ
     > [!NOTE]
     > Get-UnifiedGroup コマンドレットを実行するには、Exchange Online で View-Only Recipients という役割が割り当てられているか、View-Only Recipients という役割が割り当てられている役割グループに属している必要があります。
 
-  - ユーザーのメールボックスが検索された場合Microsoft 365メンバーであるグループまたは Microsoft チームは検索されません。 同様に、グループまたは Microsoft チームMicrosoft 365を配置すると、グループ メールボックスとグループ サイトだけが保留されます。グループ メンバーのメールボックスとOneDrive for Businessサイトは、明示的に保管担当者として追加するか、データ ソースを保持しない限り、保留にされません。 したがって、特定の保管担当者に対して Microsoft 365 グループまたは Microsoft チームを保留にする必要がある場合は、グループ サイトとグループ メールボックスを保管担当者にマッピングする方法を検討してください (「Advanced eDiscovery の管理保管担当者」を参照)。 管理者グループMicrosoft 365 Microsoft チームが 1 人の保管担当者に帰属しない場合は、ソースを非保管ホールドに追加する方法を検討してください。
+  - ユーザーのメールボックスが検索された場合Microsoft 365メンバーであるグループまたは Microsoft チームは検索されません。 同様に、Microsoft 365 グループまたは Microsoft チームの保留を設定すると、グループ メールボックスとグループ サイトだけが保留されます。グループ メンバーのメールボックスと OneDrive for Business サイトは、明示的に保管担当者として追加するか、データ ソースを保持しない限り保留にされません。 したがって、特定の保管担当者に対して Microsoft 365 グループまたは Microsoft チームを保留にする必要がある場合は、グループ サイトとグループ メールボックスを保管担当者にマッピングする方法を検討してください (「Advanced eDiscovery の管理保管担当者」を参照してください)。 管理者グループMicrosoft 365 Microsoft チームが 1 人の保管担当者に帰属しない場合は、ソースを非保管ホールドに追加する方法を検討してください。
   - Microsoft 365 グループまたは Microsoft チームのメンバーの一覧を取得するには、次のページの [ホームグループ] ページで  >  [](https://go.microsoft.com/fwlink/p/?linkid=2052855)プロパティをMicrosoft 365 管理センター。 または、Exchange Online PowerShell で次のコマンドを実行できます。
 
     ```powershell

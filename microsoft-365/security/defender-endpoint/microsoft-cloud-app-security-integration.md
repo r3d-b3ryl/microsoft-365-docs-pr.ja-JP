@@ -1,7 +1,7 @@
 ---
-title: Microsoft Cloud App Security 統合の概要
+title: Microsoft Defender for Cloud Apps 統合の概要
 ms.reviewer: ''
-description: Microsoft Defender for Endpoint は、すべてのクラウド Cloud App Securityアクティビティを転送することで、ユーザーと統合します。
+description: Microsoft Defender for Endpoint は、すべてのクラウド アプリのネットワーク アクティビティを転送することで、Defender for Cloud Apps と統合します。
 keywords: クラウド、アプリ、ネットワーク、可視性、使用状況
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,14 +16,14 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 10/18/2018
 ms.technology: mde
-ms.openlocfilehash: 40eda96b350a5801c732842c0e9a64f29badcc27
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: a107cd297c7ca80ff7cd740a8195d57badbc4df4
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555586"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111113"
 ---
-# <a name="microsoft-cloud-app-security-in-defender-for-endpoint-overview"></a>Microsoft Cloud App Security Defender for Endpoint の概要の詳細
+# <a name="microsoft-defender-for-cloud-apps-in-defender-for-endpoint-overview"></a>エンドポイント用 Defender の Microsoft Defender for Cloud Apps の概要
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,22 +36,22 @@ ms.locfileid: "60555586"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Microsoft Cloud App Security (Cloud App Security) は、クラウド アプリへのアクセスを制御および制限しながら、クラウドに保存されているデータに対するコンプライアンス要件を適用することで、クラウド アプリとサービスを可視化する包括的なソリューションです。 詳細については、「Cloud App Security」[を参照してください](/cloud-app-security/what-is-cloud-app-security)。
+Microsoft Defender for Cloud Apps は、クラウド アプリへのアクセスを制御および制限しながら、クラウドに保存されたデータに対するコンプライアンス要件を適用することで、クラウド アプリとサービスを可視化する包括的なソリューションです。 詳細については [、「Defender for Cloud Apps」を参照してください](/cloud-app-security/what-is-cloud-app-security)。
 
 > [!NOTE]
 > この機能は、バージョン 1809 以降Enterprise Mobility + Security 11 以降Windows 10デバイスの E5 ライセンスWindows使用できます。 [](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
 
-## <a name="microsoft-defender-for-endpoint-and-cloud-app-security-integration"></a>Microsoft Defender for Endpoint and Cloud App Security統合
+## <a name="microsoft-defender-for-endpoint-and-defender-for-cloud-apps-integration"></a>Microsoft Defender for Endpoint and Defender for Cloud Apps の統合
 
-Cloud App Security検出は、エンタープライズ ファイアウォールおよびプロキシ サーバーから転送されるクラウド トラフィック ログに依存します。 Microsoft Defender for Endpoint は、すべてのクラウド Cloud App Securityアクティビティを収集して転送することで、クラウド アプリの使用状況を他に類を見ない可視性を提供することで、クラウド アプリと統合します。 監視機能はデバイスに組み込み、ネットワーク アクティビティを完全にカバーします。
+Defender for Cloud Apps discovery は、エンタープライズ ファイアウォールおよびプロキシ サーバーからクラウド トラフィック ログに転送されるログに依存します。 Microsoft Defender for Endpoint は、すべてのクラウド アプリ のネットワーク アクティビティを収集および転送することで、Defender for Cloud Apps と統合し、クラウド アプリの使用状況を比類のない可視性を提供します。 監視機能はデバイスに組み込み、ネットワーク アクティビティを完全にカバーします。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4r4yQ]
 
-この統合により、既存の検出に対して次の主なCloud App Security提供されます。
+この統合により、既存の Defender for Cloud Apps 検出に次のような大きな改善点が提供されます。
 
 - すべての場所で利用できる - ネットワーク アクティビティはエンドポイントから直接収集されます。企業ネットワークのオンとオフのデバイスは、エンタープライズ ファイアウォールまたはプロキシ サーバー経由でルーティングされるトラフィックに依存しなくなったので、デバイスがオンまたはオフの場所で利用できます。
 
-- 構成は不要です。クラウド トラフィック ログをファイアウォールとプロキシ サーバーの構成が必要Cloud App Securityクラウド トラフィック ログを転送します。 Defender for Endpoint and Cloud App Security統合により、構成は不要です。 設定でオンにMicrosoft Defender セキュリティ センターし、行くのが良いです。\
+- 構成は不要です。クラウド トラフィック ログを Defender for Cloud Apps に転送するには、ファイアウォールとプロキシ サーバーの構成が必要です。 Defender for Endpoint と Defender for Cloud Apps の統合により、構成は必要ありません。 設定でオンにMicrosoft Defender セキュリティ センターし、行くのが良いです。\
 
 - デバイス コンテキスト - クラウド トラフィック ログにデバイス コンテキストが不足しています。 Defender for Endpoint ネットワーク アクティビティは、デバイス コンテキスト (クラウド アプリにアクセスしたデバイス) で報告されます。そのため、ネットワーク アクティビティが行われた場所 (デバイス) と、ネットワーク アクティビティを実行したユーザー (ユーザー) を正確に理解できます。
 
@@ -59,4 +59,4 @@ Cloud App Security検出は、エンタープライズ ファイアウォール�
 
 ## <a name="related-topic"></a>関連トピック
 
-- [Microsoft Cloud App Security との統合を構成する](microsoft-cloud-app-security-config.md)
+- [Microsoft Defender for Cloud Apps の統合を構成する](microsoft-cloud-app-security-config.md)

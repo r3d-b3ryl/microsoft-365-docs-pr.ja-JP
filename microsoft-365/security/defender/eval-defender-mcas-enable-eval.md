@@ -1,6 +1,6 @@
 ---
-title: ユーザーの評価環境を有効Microsoft Cloud App Security
-description: Microsoft Defender 内の MCAS のアーキテクチャについて説明し、Office 365製品間の相互作用をMicrosoft 365 Defenderします。
+title: Microsoft Defender for Cloud Apps の評価環境を有効にする
+description: Microsoft Defender 内の Defender for Cloud Apps のアーキテクチャについて説明し、Office 365製品間の相互作用Microsoft 365 Defenderします。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,77 +20,86 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 09a1613b82cfd6d88aae76784d59f99d58c48a07
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e62a87188eb3a092399ef03647a9c70318f37197
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60181093"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61106541"
 ---
-# <a name="enable-the-evaluation-environment-for-microsoft-cloud-app-security"></a>ユーザーの評価環境を有効Microsoft Cloud App Security
-
+# <a name="enable-the-evaluation-environment-for-microsoft-defender-for-cloud-apps"></a>Microsoft Defender for Cloud Apps の評価環境を有効にする
 
 **適用対象:**
 
 - Microsoft 365 Defender
 
-この記事は、ユーザーの評価環境をセットアップするプロセスの手順[2/2](eval-defender-mcas-overview.md) Microsoft Cloud App Security。 このプロセスの詳細については、「概要」の記事を [参照してください](eval-defender-mcas-overview.md)。
+この記事は、Microsoft Defender for Cloud Apps の評価環境をセットアップするプロセスの手順 [2/2](eval-defender-mcas-overview.md) です。 このプロセスの詳細については、「概要」の記事を [参照してください](eval-defender-mcas-overview.md)。
 
-この記事では、クラウド アプリのトラフィック データを収集するために、Cloud App Securityポータルにアクセスし、必要な統合を構成するプロセスについて説明します。
+この記事では、Defender for Cloud Apps ポータルにアクセスし、クラウド アプリのトラフィック データを収集するために必要な統合を構成するプロセスについて説明します。
 
 環境で使用されているクラウド アプリを検出するには、次の 1 つまたは両方を実行できます。
 
 - Microsoft Defender for Endpoint と統合することで、クラウド探索を迅速に実行できます。 このネイティブ統合により、ネットワークのオンとオフを切り替えて、Windows 10デバイスWindowsクラウド トラフィックのデータ収集をすぐに開始できます。
-- ネットワークに接続されているすべてのデバイスがアクセスしているすべてのクラウド アプリを検出するには、ファイアウォールや他のプロキシに Cloud App Security ログ コレクターを展開します。 これにより、エンドポイントからデータが収集され、分析Cloud App Security送信されます。 Cloud App Security機能を強化するために、一部のサード パーティ製プロキシとネイティブに統合できます。
+- ネットワークに接続されているすべてのデバイスがアクセスしているすべてのクラウド アプリを検出するには、ファイアウォールや他のプロキシに Defender for Cloud Apps ログ コレクターを展開します。 これにより、エンドポイントからデータが収集され、分析のために Defender for Cloud Apps に送信されます。 Defender for Cloud Apps は、さらに多くの機能を提供するために、一部のサードパーティ プロキシとネイティブに統合されます。
 
 この記事には、両方の方法のガイダンスが含まれています。
 
-次の手順を使用して、Microsoft Cloud App Security。
+Microsoft Defender for Cloud Apps をセットアップするには、次の手順を実行します。
 
-![Microsoft Defender 評価環境で Microsoft Microsoft Cloud App Securityを有効にする手順。](../../media/defender/m365-defender-mcas-eval-enable-steps.png)
+![Microsoft Defender 評価環境で Microsoft Microsoft Defender for Cloud Apps を有効にする手順。](../../media/defender/m365-defender-mcas-eval-enable-steps.png)
 
-- [手順 1.ConnectポータルにCloud App Securityする](#step-1-connect-to-the-cloud-app-security-portal)
-- [手順 2.エンドポイント向け Microsoft Defender との統合](#step-2-integrate-with-microsoft-defender-for-endpoint)
-- [手順 3.ファイアウォールやCloud App Securityプロキシにログ コレクターを展開する](#step-3-deploy-the-cloud-app-security-log-collector-on-your-firewalls-and-other-proxies)
-- [手順 4.クラウド探索ダッシュボードを表示して、組織内で使用されているアプリを確認する](#step-4-view-the-cloud-discovery-dashboard-to-see-what-apps-are-being-used-in-your-organization)
+- [手順 1.Connect Defender for Cloud Apps ポータルへのアクセス](#step-1)
+- [手順 2.エンドポイント向け Microsoft Defender との統合](#step-2)
+- [手順 3.ファイアウォールや他のプロキシに Defender for Cloud Apps ログ コレクターを展開する](#step-3)
+- [手順 4.クラウド探索ダッシュボードを表示して、組織内で使用されているアプリを確認する](#step-4)
 
-## <a name="step-1-connect-to-the-cloud-app-security-portal"></a>手順 1. ConnectポータルにCloud App Securityする
+<a name="step-1"></a>
 
-ライセンスを確認し、Cloud App Security ポータルに接続するには[、「Quickstart: Get started with Microsoft Cloud App Security」 を参照してください](/cloud-app-security/getting-started-with-cloud-app-security)。 
+## <a name="step-1-connect-to-the-defender-for-cloud-apps-portal"></a>手順 1。 Connect Defender for Cloud Apps ポータルへのアクセス
 
-ポータルにすぐに接続できない場合は、ファイアウォールの許可リストに IP アドレスを追加する必要があります。 詳細については[、「基本セットアップ」を参照Cloud App Security。](/cloud-app-security/general-setup)
+ライセンスを確認し、Defender for Cloud Apps ポータルに接続するには [、「Quickstart: Get started with Microsoft Defender for Cloud Apps」を参照してください](/cloud-app-security/getting-started-with-cloud-app-security)。
+
+ポータルにすぐに接続できない場合は、ファイアウォールの許可リストに IP アドレスを追加する必要があります。 「Defender [for Cloud Apps の基本セットアップ」を参照してください](/cloud-app-security/general-setup)。
 
 それでも問題が発生する場合は、「ネットワーク要件 [」を確認してください](/cloud-app-security/network-requirements)。
 
-## <a name="step-2-integrate-with-microsoft-defender-for-endpoint"></a>手順 2. エンドポイント向け Microsoft Defender との統合
+<a name="step-2"></a>
 
-Microsoft Cloud App Security Microsoft Defender for Endpoint とネイティブに統合されます。 この統合により、クラウド探索のロールアウトが簡素化され、クラウド探索機能が企業ネットワークを超えて拡張され、デバイスベースの調査が可能です。 この統合により、11 台のデバイスから IT 管理されたデバイスからアクセスWindows 10クラウド Windowsが明らかになります。 
+## <a name="step-2-integrate-with-microsoft-defender-for-endpoint"></a>手順 2。 エンドポイント向け Microsoft Defender との統合
 
-Microsoft Defender for Endpoint を既にセットアップしている場合は、Cloud App Securityとの統合を構成Microsoft 365 Defender。 統合が有効になったら、ポータルに戻り、Cloud App Securityダッシュボードでリッチ データを表示できます。
+Microsoft Defender for Cloud Apps は、Microsoft Defender for Endpoint とネイティブに統合されます。 この統合により、クラウド探索のロールアウトが簡素化され、クラウド探索機能が企業ネットワークを超えて拡張され、デバイスベースの調査が可能です。 この統合により、11 台のデバイスから IT 管理されたデバイスからアクセスWindows 10クラウド Windowsが明らかになります。
 
-これらのタスクを実行するには[、「Microsoft Defender for Endpoint と](/cloud-app-security/mde-integration)エンドポイントの統合」を参照Microsoft Cloud App Security。 
+Microsoft Defender for Endpoint を既にセットアップしている場合は、Defender for Cloud Apps との統合を構成する方法は、Microsoft 365 Defender。 統合が有効になったら、Defender for Cloud Apps ポータルに戻り、クラウド探索ダッシュボードでリッチ データを表示できます。
 
-## <a name="step-3-deploy-the-cloud-app-security-log-collector-on-your-firewalls-and-other-proxies"></a>手順 3. ファイアウォールやCloud App Securityプロキシにログ コレクターを展開する
+これらのタスクを実行するには [、「Microsoft Defender for Endpoint と Microsoft Defender for Cloud Apps との統合」を参照してください](/cloud-app-security/mde-integration)。
 
-ネットワークに接続されているすべてのデバイスでカバレッジを設定するには、ファイアウォールや他のプロキシに Cloud App Security ログ コレクターを展開して、エンドポイントからデータを収集し、分析のために Cloud App Security に送信します。 
+<a name="step-3"></a>
 
-次のいずれかの Secure Web Gateway (SWG) を使用している場合は、Cloud App Securityの展開と統合が提供されます。
+## <a name="step-3-deploy-the-defender-for-cloud-apps-log-collector-on-your-firewalls-and-other-proxies"></a>手順 3. ファイアウォールや他のプロキシに Defender for Cloud Apps ログ コレクターを展開する
+
+ネットワークに接続されているすべてのデバイスのカバレッジについては、ファイアウォールや他のプロキシに Defender for Cloud Apps ログ コレクターを展開して、エンドポイントからデータを収集し、分析のために Defender for Cloud Apps に送信します。
+
+次のいずれかの Secure Web Gateway (SWG) を使用している場合、Defender for Cloud Apps はシームレスな展開と統合を提供します。
+
 - Zscaler
 - iboss
 - Corrata
 - Menlo Security
 
-これらのネットワーク デバイスとの統合の詳細については [、「Set up Cloud Discovery 」を参照してください](/cloud-app-security/set-up-cloud-discovery)。 
+これらのネットワーク デバイスとの統合の詳細については [、「Set up Cloud Discovery 」を参照してください](/cloud-app-security/set-up-cloud-discovery)。
+
+<a name="step-4"></a>
+
 ## <a name="step-4-view-the-cloud-discovery-dashboard-to-see-what-apps-are-being-used-in-your-organization"></a>手順 4. クラウド探索ダッシュボードを表示して、組織内で使用されているアプリを確認する
 
-クラウド検出ダッシュボードは、組織内でのクラウド アプリの使用方法に関する詳細な情報を提供するように設計されています。 使用されているアプリの種類、開いているアラート、組織内のアプリのリスク レベルの概要を一目で確認できます。 
+クラウド検出ダッシュボードは、組織内でのクラウド アプリの使用方法に関する詳細な情報を提供するように設計されています。 使用されているアプリの種類、開いているアラート、組織内のアプリのリスク レベルの概要を一目で確認できます。
 
 クラウド検出ダッシュボードの使用を開始するには、「検出されたアプリの操作 [」を参照してください](/cloud-app-security/discovered-apps)。
 
 ## <a name="next-steps"></a>次の手順
 
-手順 3/ 3:[パイロット Microsoft Cloud App Security](eval-defender-mcas-pilot.md)
+手順 3 /3: [クラウド アプリ用 Microsoft Defender のパイロット](eval-defender-mcas-pilot.md)
 
-[評価] の概要[に戻Microsoft Cloud App Security](eval-defender-mcas-overview.md)
+「Microsoft Defender [for Cloud Apps の評価」の概要に戻る](eval-defender-mcas-overview.md)
 
 [評価とパイロット][の概要に戻Microsoft 365 Defender](eval-overview.md)

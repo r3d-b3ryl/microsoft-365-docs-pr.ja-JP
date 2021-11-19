@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 42dc7d0c3ce7662cee61754ccced0666f907114f
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 004c3c3617f97fe9b37037a5af7d55ed27bc664c
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963373"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61106645"
 ---
 # <a name="web-protection"></a>Web 保護
 
@@ -81,7 +81,7 @@ Web コンテンツ フィルターには、次の機能が含まれます。
 
 Web 保護は、優先順位の順にリストされた次のコンポーネントで構成されます。 これらの各コンポーネントは、SmartScreen クライアントが Microsoft Edge、その他のすべてのブラウザーとプロセスでネットワーク保護クライアントによって適用されます。
 
-- カスタム インジケーター (IP/URL、Microsoft Cloud App Security (MCAS) ポリシー)
+- カスタム インジケーター (IP/URL、Microsoft Defender for Cloud Apps ポリシー)
   - 許可
   - 警告
   - ブロック
@@ -93,7 +93,7 @@ Web 保護は、優先順位の順にリストされた次のコンポーネン�
 - Web コンテンツ フィルター (WCF)
 
 > [!NOTE]
-> Microsoft Cloud App Security (MCAS) は現在、ブロックされた URL についてのみインジケーターを生成します。
+> Microsoft Defender for Cloud Apps は現在、ブロックされた URL についてのみインジケーターを生成します。
 
 優先順位は、URL または IP が評価される操作の順序に関連します。 たとえば、Web コンテンツ フィルター ポリシーがある場合は、カスタム IP/URL インジケーターを使用して除外を作成できます。 カスタム 侵害のインジケーター (IoC) は、WCF ブロックよりも優先順位が高くなります。
 
@@ -105,7 +105,7 @@ Web 保護は、優先順位の順にリストされた次のコンポーネン�
 
 ****
 
-|カスタム インジケーター ポリシー|Web 脅威ポリシー|WCF ポリシー|MCAS ポリシー|結果|
+|カスタム インジケーター ポリシー|Web 脅威ポリシー|WCF ポリシー|Defender for Cloud Apps ポリシー|結果|
 |---|---|---|---|---|
 |許可|ブロック|ブロック|ブロック|許可 (Web 保護の上書き)|
 |許可|許可|ブロック|ブロック|許可 (WCF 例外)|
@@ -136,7 +136,7 @@ SmartScreen クラウド サービスが応答を許可、ブロック、また�
 |---|---|
 |CustomPolicy|WCF|
 |CustomBlockList|カスタム インジケーター|
-|CasbPolicy|MCAS|
+|CasbPolicy|Defender for Cloud Apps|
 |悪意がある|Web の脅威|
 |フィッシング詐欺|Web の脅威|
 |||
@@ -146,21 +146,21 @@ SmartScreen クラウド サービスが応答を許可、ブロック、また�
 高度な検索の Kusto クエリを使用すると、組織内の Web 保護ブロックを最大 30 日間要約できます。 これらのクエリでは、上記の情報を使用して、ブロックのさまざまなソースを区別し、ユーザーフレンドリーな方法で要約します。 たとえば、次のクエリは、次のクエリから発生する WCF ブロックMicrosoft Edge。
 
 ```kusto
-DeviceEvents 
-| where ActionType == "SmartScreenUrlWarning"
-| extend ParsedFields=parse_json(AdditionalFields)
-| project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, Experience=tostring(ParsedFields.Experience)
-| where Experience == "CustomBlockList"
+DeviceEvents
+| where ActionType == "SmartScreenUrlWarning"
+| extend ParsedFields=parse_json(AdditionalFields)
+| project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, Experience=tostring(ParsedFields.Experience)
+| where Experience == "CustomBlockList"
 ```
 
 同様に、以下のクエリを使用して、ネットワーク保護から発信される WCF ブロック (サードパーティ ブラウザーの WCF ブロックなど) を一覧表示できます。 ActionType が更新され、'Experience' が 'ResponseCategory' に変更された点に注意してください。
 
 ```kusto
-DeviceEvents 
-| where ActionType == "ExploitGuardNetworkProtectionBlocked"
-| extend ParsedFields=parse_json(AdditionalFields)
-| project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, ResponseCategory=tostring(ParsedFields.ResponseCategory)
-| where ResponseCategory == "CustomPolicy"
+DeviceEvents 
+| where ActionType == "ExploitGuardNetworkProtectionBlocked"
+| extend ParsedFields=parse_json(AdditionalFields)
+| project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, ResponseCategory=tostring(ParsedFields.ResponseCategory)
+| where ResponseCategory == "CustomPolicy"
 ```
 
 他の機能 (カスタム インジケーターなど) が原因のブロックを一覧表示するには、上の表を参照して、各機能とそれぞれの応答カテゴリの説明を参照してください。 これらのクエリは、組織内の特定のコンピューターに関連するテレメトリを検索するために変更される場合もあります。 上記の各クエリに示す ActionType には、Web Protection 機能によってブロックされた接続だけが表示され、すべてのネットワーク トラフィックが表示されるという点に注意してください。

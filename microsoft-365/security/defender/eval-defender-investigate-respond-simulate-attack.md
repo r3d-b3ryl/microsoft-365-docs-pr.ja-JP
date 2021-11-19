@@ -22,12 +22,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: fa9f41675c68f4d832c14b2cf1c33dcf1a9d9d6d
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 424a6928c12642b90c44561b92483ef1398f855e
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963289"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109793"
 ---
 # <a name="run-an-attack-simulation-in-a-microsoft-365-defender-pilot-environment"></a>パイロット環境で攻撃シミュレーションMicrosoft 365 Defender実行する
 
@@ -109,7 +109,7 @@ Attack IQ と SafeBreach から追加のシミュレーションがあります�
 
    - Server 2008 R2 Windows以降のバージョンで実行されます。
    - Id の [Microsoft Defender に報告し](/azure/security-center/security-center-wdatp) 、リモート管理 [を有効にしています](/windows-server/administration/server-manager/configure-remote-management-in-server-manager)。
-   - [Microsoft Defender for Identity と Microsoft Cloud App Security有効](/cloud-app-security/mdi-integration)にします。
+   - [Microsoft Defender for Identity と Microsoft Defender for Cloud Apps の統合が有効](/cloud-app-security/mdi-integration)になっています。
    - テスト ドメインにテスト ユーザーが作成されています。 管理者レベルのアクセス許可は必要ではありません。
 
 3. テスト デバイスが次の手順を実行します。
@@ -209,7 +209,7 @@ Microsoft 365 Defender分析を関連付け、異なる製品のすべての関�
 
 3. インシデント名の左側にある円をクリックして、最新のアイテムを選択します。 サイド パネルには、関連するアラートを含むインシデントに関する追加情報が表示されます。 各インシデントには、含まれるアラートの属性に基づいて説明する一意の名前があります。
 
-   ダッシュボードに表示されるアラートは、サービス リソース (Microsoft Defender for Identity、Microsoft Cloud App Security、Microsoft Defender for Endpoint、Microsoft 365 Defender、Microsoft Defender for Office 365) に基づいてフィルター処理できます。
+   ダッシュボードに表示されるアラートは、Microsoft Defender for Identity、Microsoft Defender for Cloud Apps、Microsoft Defender for Endpoint、Microsoft 365 Defender、Microsoft Defender for Office 365 のサービス リソースに基づいてフィルター処理できます。
 
 3. インシデント **の詳細を取得するには、[** インシデント ページを開く] を選択します。
 
@@ -279,13 +279,13 @@ Microsoft Defender for Endpoint の検出は、攻撃手法の最も一般的な
 
 ![選択した PowerShell ファイル作成動作のプロセス ツリーの例。](../../media/mtp/fig12.png)
 
-#### <a name="review-the-user-information-with-microsoft-cloud-app-security"></a>[ユーザー情報] を使用してユーザー Microsoft Cloud App Security
+#### <a name="review-the-user-information-with-microsoft-defender-for-cloud-apps"></a>Microsoft Defender for Cloud Apps を使用してユーザー情報を確認する
 
 インシデント ページで、[ユーザー] **タブを** 選択して、攻撃に関与するユーザーの一覧を表示します。 この表には、各ユーザーの調査優先度スコアを含む、各ユーザーに関する **追加情報が含** まれている。
 
 ユーザー名を選択して、ユーザーのプロファイル ページを開き、詳細な調査を行います。 [リスクの高いユーザーの調査について詳しくは、以下の記事を参照してください](/cloud-app-security/tutorial-ueba#identify)。
 
-![ユーザー ページCloud App Security例。](../../media/mtp/fig13.png)
+![[Defender for Cloud Apps] ユーザー ページの例。](../../media/mtp/fig13.png)
 
 #### <a name="automated-investigation-and-remediation"></a>調査と修復の自動化
 
@@ -322,7 +322,7 @@ Microsoft Defender for Endpoint の検出は、攻撃手法の最も一般的な
 
 ![[インシデントの管理] パネルを開いたインシデント ページの例を示します。スイッチをクリックしてインシデントを解決できます。](../../media/mtp/fig16.png)
 
-インシデントが解決すると、関連付けられているすべてのアラートが、Microsoft 365 Defenderポータルで解決されます。
+インシデントが解決すると、関連付けられているすべてのアラートが、Microsoft 365 Defenderポータルと関連するポータルで解決されます。
 
 これにより、インシデント分析、自動調査、インシデント解決のための攻撃シミュレーションがラップされます。
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4d3dceeea5566b14e9742df77773c3bf07a1bbfc
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: ddcd1c18f3e6e0cd8e929f076a08704a3d116789
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60645801"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111197"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>デバイス プロキシとインターネット接続の設定を構成する
 
@@ -105,9 +105,9 @@ Microsoft Defender ウイルス対策[提供される保護は](cloud-protection
 
    :::image type="content" source="images/proxy-server-mdav.png" alt-text="サーバーのプロキシ サーバー Microsoft Defender ウイルス対策。":::
 
-3. レジストリ キーの下で  `HKLM\Software\Policies\Microsoft\Windows Defender` 、ポリシーはレジストリ値をレジストリ  `ProxyServer`   値として設定REG_SZ。 
+3. レジストリ キーの下で `HKLM\Software\Policies\Microsoft\Windows Defender` 、ポリシーはレジストリ値をレジストリ `ProxyServer` 値としてREG_SZ。 
 
-   レジストリ値は、  `ProxyServer`   次の文字列形式を取ります。
+   レジストリ値は、 `ProxyServer` 次の文字列形式を取ります。
 
     ```text
     <server name or ip>:<port>
@@ -121,7 +121,7 @@ Microsoft Defender ウイルス対策[提供される保護は](cloud-protection
 >
 > Microsoft Defender ウイルス対策更新プログラムまたは Microsoft Update に接続するために静的プロキシを使用Windows更新プログラムをダウンロードすることはできません。 代わりに、Windows Update を使用するように構成されている場合は、システム全体のプロキシを使用するか、構成済みのフォールバック順序に従って構成された内部更新元[を使用します](manage-protection-updates-microsoft-defender-antivirus.md)。 
 >
-> 必要に応じて、複数のプロキシを使用して高度な構成を設定する必要がある場合は、管理用テンプレート > Windows コンポーネント > Microsoft Defender ウイルス対策 > Define proxy **auto-config (.pac)** を使用してネットワークに接続できます。管理用テンプレート **> Windows** コンポーネントを使用> Microsoft Defender ウイルス対策 > これらの宛先のプロキシ サーバーを使用する Microsoft Defender ウイルス対策 を防ぐためにプロキシ サーバーをバイパスするアドレスを定義します。 
+> 必要に応じて、管理用テンプレート > Windows コンポーネント **> Microsoft Defender ウイルス対策 > Define proxy auto-config (.pac)** を使用して、複数のプロキシで高度な構成をセットアップする必要がある場合は、ネットワークに接続できます。[管理用テンプレートの使用] > Windows コンポーネント > **Microsoft Defender ウイルス対策 >プロキシ サーバー** をバイパスするアドレスを定義して、Microsoft Defender ウイルス対策プロキシ サーバーを使用しなけれ。 
 >
 > コマンドレットと一緒に PowerShell を使用 `Set-MpPreference` して、次のオプションを構成することもできます。 
 >
@@ -167,7 +167,7 @@ netsh winhttp reset proxy
 <br>
 
 **** 
-|ドメインリストのスプレッドシート|説明|
+|ドメインリストのスプレッドシート|[説明]|
 |---|---|
 |![Microsoft Defender for Endpoint URL スプレッドシートのサム イメージ。](images/mdatp-urls.png)|サービスの場所、地理的な場所、および OS の特定の DNS レコードのスプレッドシート。 <p> [ここにスプレッドシートをダウンロードします。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
 |
@@ -199,8 +199,8 @@ Defender for Endpoint センサーがシステム コンテキストから接続
 |*.blob.core.windows.net|ポート 443|送信|はい|
 |*.azure-automation.net|ポート 443|送信|はい|
 
->[!NOTE]
->*これらの接続要件は、MMA を必要とする以前の Microsoft Defender for Endpoint Windows Server 2016および Windows Server 2012 R2 にも適用されます。 新しい統合ソリューションを使用してこれらのオペレーティング システムをオンボードする手順は、オンボード[Windows](configure-server-endpoints.md)サーバーにあるか[、Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/server-migration)のサーバー移行シナリオで新しい未確認ソリューションに移行する手順です。
+> [!NOTE]
+> *これらの接続要件は、MMA を必要とする以前の Microsoft Defender for Endpoint Windows Server 2016および Windows Server 2012 R2 にも適用されます。 新しい統合ソリューションを使用してこれらのオペレーティング システムをオンボードする手順は、オンボード[Windows](configure-server-endpoints.md)サーバー、または Microsoft Defender for [Endpoint](/microsoft-365/security/defender-endpoint/server-migration)のサーバー移行シナリオで新しい統合ソリューションに移行する手順です。
 
 > [!NOTE]
 > クラウドベースのソリューションとして、IP 範囲が変更される可能性があります。 DNS 解決設定に移動する必要があります。
@@ -209,7 +209,7 @@ Defender for Endpoint センサーがシステム コンテキストから接続
 
  以前のバージョンのアプリケーションに対して Microsoft Monitoring Agent (MMA) を使用する場合は、特定の環境のワイルドカード (*) 要件を排除するには、次のガイダンスを参照Windows。
 
-1.  Microsoft Monitoring Agent (MMA) を使用して以前のオペレーティング システムを Defender for Endpoint にオンボードします (詳細については、「Defender for Endpoint および Onboard Windows サーバーでの以前のバージョンの[Windows](https://go.microsoft.com/fwlink/p/?linkid=2010326)のオンボード」[を参照](configure-server-endpoints.md)してください。
+1. Microsoft Monitoring Agent (MMA) を使用して以前のオペレーティング システムを Defender for Endpoint にオンボードします (詳細については、「Defender for Endpoint および Onboard Windows サーバーでの以前のバージョンの[Windows](https://go.microsoft.com/fwlink/p/?linkid=2010326)のオンボード」[を参照](configure-server-endpoints.md)してください。
 
 2. コンピューターがポータルに正常に報告Microsoft 365 Defenderします。
 
@@ -224,7 +224,7 @@ Defender for Endpoint センサーがシステム コンテキストから接続
 .blob.core.windows.net URL エンドポイントは、テスト結果の 「ファイアウォール ルール: .blob.core.windows.net」セクションに示されている URL に \* \* 置き換え可能です。
 
 > [!NOTE]
-> Azure Defender 経由でオンボーディングを行う場合、複数のワークスペースが使用されている可能性があります。 上記の TestCloudConnection.exe 手順を、各ワークスペースのオンボード コンピューターで実行する必要があります (ワークスペース間で *.blob.core.windows.net URL に変更が加わるかどうかを判断するには)。
+> Microsoft Defender for Cloud を介してオンボーディングを行う場合、複数のワークスペースが使用されている可能性があります。 上記の TestCloudConnection.exe 手順を、各ワークスペースのオンボード コンピューターで実行する必要があります (ワークスペース間で *.blob.core.windows.net URL に変更が加わるかどうかを判断するには)。
 
 ## <a name="verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls"></a>エンドポイント サービス URL 用 Microsoft Defender へのクライアント接続を確認する
 

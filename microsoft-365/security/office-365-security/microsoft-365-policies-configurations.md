@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-overview
 ms.technology: mdo
-ms.openlocfilehash: 9a44e4fcaff4ff774e0884fb78ec7399049d6d11
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e3d807337cfa2e7fa6a27f63e58bd441d95716d5
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59217963"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110069"
 ---
 # <a name="identity-and-device-access-configurations"></a>ID とデバイスのアクセス構成
 
@@ -36,14 +36,14 @@ ms.locfileid: "59217963"
 
 この決定は、サインインのユーザー アカウント、使用するデバイス、ユーザーがアクセスに使用しているアプリ、アクセス要求の場所、および要求のリスクの評価に基づく必要があります。 この機能により、承認されたユーザーとデバイスのみが重要なリソースにアクセスできるようになります。
 
-この一連の記事では、一連の ID およびデバイス アクセスの前提条件構成と、Azure AD AD アプリケーション プロキシで公開されているエンタープライズ クラウド アプリとサービス、その他の SaaS サービス、およびオンプレミス アプリケーションの Microsoft 365 へのアクセスをセキュリティで保護するための Azure Active Directory (Azure AD) 条件付きアクセス、Microsoft Intune、その他のポリシーについて説明します。
+この一連の記事では、ID およびデバイス アクセスの前提条件構成のセットと、Azure Active Directory (Azure AD) 条件付きアクセス、Microsoft Intune、および Microsoft 365 へのアクセスをセキュリティで保護するためのその他のポリシーのセットについて説明します。 エンタープライズ クラウド アプリとサービス、その他の SaaS サービス、およびアプリケーション プロキシで公開されたオンプレミス アプリケーションAzure ADします。
 
 ID とデバイス アクセスの設定とポリシーは、高度に規制されたデータまたは分類されたデータを持つ環境のベースライン保護、機密性の高い保護、保護の 3 つの層で推奨されます。 これらの層とそれに対応する構成は、データ、ID、およびデバイス全体で一貫したレベルの保護を提供します。
 
 これらの機能とその推奨事項:
 
 - サポートされているのは、Microsoft 365 E3とMicrosoft 365 E5。
-- [Microsoft](/azure/active-directory/fundamentals/identity-secure-score)Secure [Score](../defender/microsoft-secure-score.md)と Azure AD の ID スコアに合わせて調整され、組織のこれらのスコアが増加します。
+- Microsoft Secure [Score](../defender/microsoft-secure-score.md)と ID[](/azure/active-directory/fundamentals/identity-secure-score)スコアが同じAzure AD、組織のこれらのスコアが増加します。
 - この 5 つの手順を [実装して ID インフラストラクチャをセキュリティ保護するのに役立ちます](/azure/security/azure-ad-secure-steps)。
 
 組織に固有の環境要件や複雑さがある場合は、これらの推奨事項を開始点として使用します。 ただし、ほとんどの組織では、所定の手順に従ってこれらの推奨事項を実装できます。
@@ -59,11 +59,11 @@ ID とデバイス アクセスの設定とポリシーは、高度に規制さ�
 
 ## <a name="intended-audience"></a>対象ユーザー
 
-これらの推奨事項は、Azure AD (IDENTITY)、Microsoft Intune (デバイス管理)、および Microsoft Information Protection (データ保護) を含む Microsoft 365 クラウドの生産性とセキュリティ サービスに精通しているエンタープライズ アーキテクトおよび IT 担当者を対象としています。
+これらの推奨事項は、Microsoft 365 Azure AD (IDENTITY)、Microsoft Intune (デバイス管理)、および Microsoft Information Protection (データ保護)。
 
 ### <a name="customer-environment"></a>お客様の環境
 
-推奨されるポリシーは、Microsoft クラウド内で完全に運用されているエンタープライズ組織と、Azure AD テナントと同期されたオンプレミスの Active Directory ドメイン サービス (AD DS) フォレストであるハイブリッド ID インフラストラクチャを持つお客様に適用されます。
+推奨されるポリシーは、Microsoft クラウド内で完全に運用されているエンタープライズ組織と、Azure AD テナントと同期されたオンプレミスの Active Directory ドメイン サービス (AD DS) フォレストであるハイブリッド ID インフラストラクチャを持つ顧客の両方に適用されます。
 
 提供されている推奨事項の多くは、E5 セキュリティ アドオン、EMS E5、または Azure AD Premium P2 ライセンスを使用して Microsoft 365 E5、Microsoft 365 E3 でのみ利用可能なサービスに依存しています。
 
@@ -116,26 +116,26 @@ Microsoft 365企業向けソリューションは、大規模な組織が全員�
 
 ### <a name="azure-ad"></a>Azure AD
 
-Azure ADは、ID 管理機能の完全なスイートを提供します。 これらの機能を使用してアクセスをセキュリティで保護することをお勧めします。
+Azure AD ID 管理機能の完全なスイートを提供します。 これらの機能を使用してアクセスをセキュリティで保護することをお勧めします。
 
 |機能|説明|ライセンス|
 |---|---|---|
-|[多要素認証 (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks)|MFA では、ユーザーパスワードとアプリまたは電話からの通知など、2 つの形式Microsoft Authenticatorを提供する必要があります。 MFA は、盗まれた資格情報を使用して環境にアクセスするリスクを大幅に軽減します。 Microsoft 365 MFA ベースのサインインAD Azure AD多要素認証サービスを使用します。|Microsoft 365 E3 または E5|
-|[条件付きアクセス](/azure/active-directory/conditional-access/overview)|Azure ADは、ユーザー サインインの条件を評価し、条件付きアクセス ポリシーを使用して許可されたアクセスを決定します。 たとえば、このガイダンスでは、機密データへのアクセスにデバイスコンプライアンスを要求する条件付きアクセス ポリシーを作成する方法について説明します。 これにより、自分のデバイスと盗まれた資格情報を持つハッカーが機密データにアクセスするリスクが大幅に軽減されます。 また、デバイスは正常性とセキュリティに関する特定の要件を満たす必要があるため、デバイス上の機密データも保護します。|Microsoft 365 E3 または E5|
-|[Azure AD グループ](/azure/active-directory/fundamentals/active-directory-manage-groups)|条件付きアクセス ポリシー、Intune を使用したデバイス管理、組織内のファイルやサイトに対するアクセス許可でさえ、ユーザー アカウントまたは Azure AD グループへの割り当てに依存します。 実装する保護のレベルAD Azure グループを作成することをお勧めします。 たとえば、エグゼクティブ スタッフは、ハッカーの価値の高いターゲットである可能性が高くなります。 したがって、これらの従業員のユーザー アカウントを Azure AD グループに追加し、このグループを条件付きアクセス ポリシーおよびアクセスに対してより高いレベルの保護を適用する他のポリシーに割り当てるのが理にかなっています。|Microsoft 365 E3 または E5|
-|[デバイスの登録](/azure/active-directory/devices/overview)|デバイスを Azure AD登録して、デバイスの ID を作成します。 この ID は、ユーザーがサインインするときにデバイスを認証し、ドメインに参加している PC または準拠した PC を必要とする条件付きアクセス ポリシーを適用するために使用されます。 このガイダンスでは、デバイスの登録を使用して、ドメインに参加しているコンピューターとコンピューター Windowsします。 デバイスの登録は、Intune を使用してデバイスを管理するための前提条件です。|Microsoft 365 E3 または E5|
+|[多要素認証 (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks)|MFA では、ユーザーパスワードとアプリまたは電話からの通知など、2 つの形式Microsoft Authenticatorを提供する必要があります。 MFA は、盗まれた資格情報を使用して環境にアクセスするリスクを大幅に軽減します。 Microsoft 365 MFA ベースのサインインAzure AD多要素認証サービスを使用します。|Microsoft 365 E3 または E5|
+|[条件付きアクセス](/azure/active-directory/conditional-access/overview)|Azure ADサインインの条件を評価し、条件付きアクセス ポリシーを使用して許可されたアクセスを決定します。 たとえば、このガイダンスでは、機密データへのアクセスにデバイスコンプライアンスを要求する条件付きアクセス ポリシーを作成する方法について説明します。 これにより、自分のデバイスと盗まれた資格情報を持つハッカーが機密データにアクセスするリスクが大幅に軽減されます。 また、デバイスは正常性とセキュリティに関する特定の要件を満たす必要があるため、デバイス上の機密データも保護します。|Microsoft 365 E3 または E5|
+|[Azure ADグループ](/azure/active-directory/fundamentals/active-directory-manage-groups)|条件付きアクセス ポリシー、Intune を使用したデバイス管理、組織内のファイルやサイトに対するアクセス許可でさえ、ユーザー アカウントまたはユーザー グループへの割り当Azure ADします。 実装する保護Azure AD対応するグループを作成することをお勧めします。 たとえば、エグゼクティブ スタッフは、ハッカーの価値の高いターゲットである可能性が高くなります。 したがって、これらの従業員のユーザー アカウントを Azure AD グループに追加し、このグループを条件付きアクセス ポリシーおよびアクセスに対してより高いレベルの保護を適用する他のポリシーに割り当てるのが理にかなっています。|Microsoft 365 E3 または E5|
+|[デバイスの登録](/azure/active-directory/devices/overview)|デバイスをデバイスに登録Azure ADデバイスの ID を作成します。 この ID は、ユーザーがサインインするときにデバイスを認証し、ドメインに参加している PC または準拠した PC を必要とする条件付きアクセス ポリシーを適用するために使用されます。 このガイダンスでは、デバイスの登録を使用して、ドメインに参加しているコンピューターとコンピューター Windowsします。 デバイスの登録は、Intune を使用してデバイスを管理するための前提条件です。|Microsoft 365 E3 または E5|
 |[Azure AD Identity Protection](/azure/active-directory/identity-protection/overview)|組織の ID に影響を与える潜在的な脆弱性を検出し、自動修復ポリシーを低、中、高のサインイン リスクとユーザー リスクに構成できます。 このガイダンスは、多要素認証に条件付きアクセス ポリシーを適用するために、このリスク評価に依存します。 このガイダンスには、アカウントのリスクの高いアクティビティが検出された場合に、ユーザーがパスワードを変更する必要がある条件付きアクセス ポリシーも含まれています。|Microsoft 365 E5、Microsoft 365 E3 E5 セキュリティ アドオン、EMS E5、またはライセンスを使用Azure AD Premium P2する|
 |[セルフサービス パスワードのリセット (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks)|管理者が制御できる複数の認証方法の検証を提供することで、ユーザーがヘルプ デスクの介入なしに安全にパスワードをリセットできます。|Microsoft 365 E3 または E5|
 |[Azure ADパスワード保護](/azure/active-directory/authentication/concept-password-ban-bad)|既知の脆弱なパスワードとそのバリアント、および組織に固有の追加の弱い用語を検出してブロックします。 既定のグローバル禁止パスワード リストは、Azure AD テナントのすべてのユーザーに自動的に適用されます。 カスタムの禁止パスワード リストに追加のエントリを定義できます。 ユーザーがパスワードを変更またはリセットすると、これらの禁止パスワード リストがチェックされ、強力なパスワードの使用が強制されます。|Microsoft 365 E3 または E5|
 |
 
-Intune と Azure の各オブジェクト、設定、およびサブサービスを含む、id とデバイス ADコンポーネントを次に示します。
+Intune やアプリのオブジェクト、設定、およびサブサービスなど、id とAzure ADアクセスのコンポーネントを次に示します。
 
 ![ID とデバイス アクセスのコンポーネント。](../../media/microsoft-365-policies-configurations/identity-device-access-components.png)
 
 ### <a name="microsoft-intune"></a>Microsoft Intune
 
-[Intune](/intune/introduction-intune) は、Microsoft のクラウドベースのモバイル デバイス管理サービスです。 このガイダンスでは、Intune を使用Windows PC のデバイス管理を推奨し、デバイス コンプライアンス ポリシーの構成を推奨します。 Intune は、デバイスが準拠するかどうかを決定し、条件付きアクセス ポリシーを適用するときにADする Azure データを Azure サーバーに送信します。
+[Intune](/intune/introduction-intune) は、Microsoft のクラウドベースのモバイル デバイス管理サービスです。 このガイダンスでは、Intune を使用Windows PC のデバイス管理を推奨し、デバイス コンプライアンス ポリシーの構成を推奨します。 Intune は、デバイスが準拠するかどうかを判断し、条件付きアクセス ポリシーを適用するときにAzure ADにこのデータを送信します。
 
 #### <a name="intune-app-protection"></a>Intune アプリ保護
 
@@ -157,7 +157,7 @@ Intune と Azure の各オブジェクト、設定、およびサブサービス
 
 ### <a name="windows-10-and-microsoft-365-apps-for-enterprise"></a>Windows 10 および Microsoft 365 Apps for enterprise
 
-Windows 10のMicrosoft 365 Apps for enterpriseは、PC に推奨されるクライアント環境です。 Azure はWindows 10、オンプレミスと Azure の両方で可能な限りスムーズなエクスペリエンスを提供するように設計AD。 Windows 10 Intune を通じて管理できる高度なセキュリティ機能も含まれています。 Microsoft 365 Apps for enterpriseアプリケーションの最新バージョンOffice含まれます。 これらは、より安全で条件付きアクセスの要件である最新の認証を使用します。 これらのアプリには、強化されたコンプライアンスとセキュリティ ツールも含まれています。
+Windows 10のMicrosoft 365 Apps for enterpriseは、PC に推奨されるクライアント環境です。 Azure はWindows 10、オンプレミスとクラウドの両方で可能な限りスムーズなエクスペリエンスを提供するように設計Azure AD。 Windows 10 Intune を通じて管理できる高度なセキュリティ機能も含まれています。 Microsoft 365 Apps for enterpriseアプリケーションの最新バージョンOffice含まれます。 これらは、より安全で条件付きアクセスの要件である最新の認証を使用します。 これらのアプリには、強化されたコンプライアンスとセキュリティ ツールも含まれています。
 
 ## <a name="applying-these-capabilities-across-the-three-tiers-of-protection"></a>これらの機能を 3 つの保護層に適用する
 
@@ -179,7 +179,7 @@ Windows 10のMicrosoft 365 Apps for enterpriseは、PC に推奨されるクラ�
 
 ## <a name="deployment-and-your-apps"></a>展開とアプリ
 
-Azure 統合アプリの ID およびデバイス アクセス構成を構成および展開する前に、ADする必要があります。
+統合アプリの ID とデバイス アクセス構成を構成および展開する前に、Azure ADする必要があります。
 
 - 保護する組織で使用するアプリを決定します。
 - アプリのこの一覧を分析して、適切なレベルの保護を提供するポリシーのセットを決定します。
@@ -203,9 +203,9 @@ Azure 統合アプリの ID およびデバイス アクセス構成を構成お
 1. 前提条件の ID 機能とその設定を構成します。
 2. 共通 ID を構成し、条件付きアクセス ポリシーにアクセスします。
 3. ゲストおよび外部ユーザーの条件付きアクセス ポリシーを構成します。
-4. Microsoft Teams、Exchange Online、Exchange Online ポリシーなど、Microsoft 365 クラウド アプリの条件付きアクセス ポリシー SharePoint構成Microsoft Cloud App Securityします。
+4. Microsoft Teams、Exchange Online、SharePoint、Microsoft Defender for Cloud Apps ポリシーなど、Microsoft 365 クラウド アプリの条件付きアクセス ポリシーを構成します。
 
-ID とデバイス アクセスを構成した後は [、Azure AD](/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2) 機能の展開ガイドを参照して、考慮すべき追加機能の段階的なチェックリストと、アクセスの保護、監視、および監査を行う [Azure AD Identity Governance](/azure/active-directory/governance/) を参照してください。
+ID とデバイス アクセスを構成した後は[、Azure AD](/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2)機能展開ガイドを参照して、考慮すべき追加機能の段階的なチェックリストと、アクセスの保護、監視、および監査を行う[Azure AD Identity Governance](/azure/active-directory/governance/)を参照してください。
 
 ## <a name="next-step"></a>次の手順
 

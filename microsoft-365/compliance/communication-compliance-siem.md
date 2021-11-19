@@ -18,16 +18,16 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 9b8446ebd646a55e24a8d59d7fa8ac4e003a3a78
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: d957b5fec4341cd7335f5c5a49b6654ffaf51f68
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60665161"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111437"
 ---
 # <a name="communication-compliance-with-siem-solutions"></a>SIEM ソリューションのコミュニケーション コンプライアンス
 
-[コミュニケーション コンプライアンスは](communication-compliance.md)、組織内の不適切なメッセージMicrosoft 365検出、キャプチャ、および操作を支援することで、コミュニケーション リスクを最小限に抑える、コミュニケーション コンプライアンスのインサイダー リスク ソリューションです。 [Azure Sentinel](https://azure.microsoft.com/services/azure-sentinel)や[Splunk](https://www.splunk.com/)などのセキュリティ情報とイベント管理 (SIEM) ソリューションは、組織内の脅威を集約および追跡するためによく使用されます。
+[コミュニケーション コンプライアンスは](communication-compliance.md)、組織内の不適切なメッセージMicrosoft 365検出、キャプチャ、および操作を支援することで、コミュニケーション リスクを最小限に抑える、コミュニケーション コンプライアンスのインサイダー リスク ソリューションです。 [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel)や[Splunk](https://www.splunk.com/)などのセキュリティ情報とイベント管理 (SIEM) ソリューションは、組織内の脅威を集約および追跡するためによく使用されます。
 
 組織の一般的なニーズは、コミュニケーション コンプライアンスアラートとこれらの SIEM ソリューションを統合する必要があります。 この統合により、組織は SIEM ソリューションで通信コンプライアンスアラートを表示し、通信コンプライアンス ワークフローとユーザー エクスペリエンス内でアラートを修復できます。 たとえば、従業員が別の従業員に不快なメッセージを送信し、不適切なコンテンツに対する通信コンプライアンス ポリシーの監視によってそのメッセージが検出されます。 これらのイベントは、Microsoft 365 コンプライアンス ソリューションによって監査 ("統合監査ログ" とも呼ばれる) で追跡され、SIEM ソリューションにインポートされます。 その後、組織の SIEM ソリューションで、通信コンプライアンス通知に関連付けられている監査で監視Microsoft 365イベントからアラートがトリガーされます。 調査担当者は、SIEM ソリューションでアラートの通知を受け取り、通信コンプライアンス ソリューションでアラートを調査して修復します。
 
@@ -70,13 +70,13 @@ ObjectState: Unchanged
 > [!NOTE]
 > 現在、ポリシーの一致が Microsoft 365 Audit に記録される時間と、通信コンプライアンスでポリシーの一致を調査できる時間の間に最大 24 時間の遅延が発生する可能性があります。
 
-## <a name="configure-communication-compliance-and-azure-sentinel-integration"></a>通信コンプライアンスと Azure Sentinel 統合の構成
+## <a name="configure-communication-compliance-and-microsoft-sentinel-integration"></a>通信コンプライアンスと Microsoft Sentinel 統合の構成
 
-Azure Sentinel を使用して通信コンプライアンス ポリシーの一致を集約する場合、Sentinel はデータ ソースとして Microsoft 365監査を使用します。 通信コンプライアンスアラートを Sentinel に統合するには、次の手順を実行します。
+Microsoft Sentinel を使用して通信コンプライアンス ポリシーの一致を集約する場合、Sentinel はデータ ソースとして Microsoft 365監査を使用します。 通信コンプライアンスアラートを Sentinel に統合するには、次の手順を実行します。
 
-1. [Azure Sentinel にオンボードします](/azure/sentinel/quickstart-onboard)。 オンボーディング プロセスの一環として、データ ソースを構成します。
-2. データ コネクタで Azure Sentinel [Microsoft Office 365を構成](/azure/sentinel/data-connectors-reference#microsoft-office-365)し、コネクタ構成の下で [データ の構成]*を* Exchange。
-3. 通信コンプライアンスアラートを取得する検索クエリを構成します。 例:
+1. [Microsoft Sentinel にオンボードします](/azure/sentinel/quickstart-onboard)。 オンボーディング プロセスの一環として、データ ソースを構成します。
+2. Microsoft Sentinel Microsoft Office 365データ コネクタを構成し [、](/azure/sentinel/data-connectors-reference#microsoft-office-365)コネクタ構成の下で 、[データ の構成]*を* Exchange。
+3. 通信コンプライアンスアラートを取得する検索クエリを構成します。 例として以下のようなものがあります。
 
     *|OfficeActivity |ここで、OfficeWorkload == "Exchange" と Operation == "SupervisionRuleMatch" |TimeGenerated による並べ替え*
 
@@ -84,7 +84,7 @@ Azure Sentinel を使用して通信コンプライアンス ポリシーの一�
 
     *|OfficeActivity |ここで、OfficeWorkload == "Exchange" と Operation == "SupervisionRuleMatch" と UserId == "User1@Contoso.com" |TimeGenerated による並べ替え*
 
-Azure Sentinel によって収集されるMicrosoft 365監査ログOffice 365詳細については[、「Azure Monitor Logs リファレンス」を参照してください](/azure/azure-monitor/reference/tables/OfficeActivity)。
+Microsoft Sentinel によって収集されたMicrosoft 365監査ログOffice 365詳細については[、「Azure Monitor Logs リファレンス」を参照してください](/azure/azure-monitor/reference/tables/OfficeActivity)。
 
 ## <a name="configure-communication-compliance-and-splunk-integration"></a>通信コンプライアンスと Splunk 統合の構成
 
@@ -106,7 +106,7 @@ Azure Sentinel によって収集されるMicrosoft 365監査ログOffice 365詳
 
 | ポリシーの種類 | 検索結果の例 |
 | :------------------ | :--------------------------------------- |
-| カスタムの機密情報の種類のキーワード リストを検出するポリシー | { <br> CreationTime: 2021-09-17T16:29:57 <br> ID: 4b9ce23d-ee60-4f66-f38d-08d979f8631f <br> IsPolicyHit: true <br> ObjectId: <CY1PR05MB27158B96AF7F3AFE62E1F762CFDD9@CY1PR05MB2715.namprd05.prod.outlook.com> <br> 操作: SupervisionRuleMatch <br> OrganizationId: d6a06676-95e8-4632-b949-44bc00f0793f <br> RecordType: 68 <br> ResultStatus: {"ItemClass":"IPM。Note","CcsiResults":"leak"} <br> SRPolicyMatchDetails: { [+] } <br> UserId: user1@contoso。OnMicrosoft.com <br> UserKey: SupervisionStoreDeliveryAgent <br> UserType: 0 <br> バージョン: 1 <br> ワークロード: Exchange <br> } |
+| カスタムの機密情報の種類のキーワード リストを検出するポリシー | { <br> CreationTime: 2021-09-17T16:29:57 <br> ID: 4b9ce23d-ee60-4f66-f38d-08d979f8631f <br> IsPolicyHit: true <br> ObjectId: <CY1PR05MB27158B96AF7F3AFE62E1F762CFDD9@CY1PR05MB2715.namprd05.prod.outlook.com> <br> 操作: SupervisionRuleMatch <br> OrganizationId: d6a06676-95e8-4632-b949-44bc00f0793f <br> RecordType: 68 <br> ResultStatus: {"ItemClass":"IPM。Note","CcsiResults":"leak"} <br> SRPolicyMatchDetails: { [+] } <br> UserId: user1@contoso.OnMicrosoft.com <br> UserKey: SupervisionStoreDeliveryAgent <br> UserType: 0 <br> バージョン: 1 <br> ワークロード: Exchange <br> } |
 | 不適切な言語を検出するポリシー | { <br> CreationTime: 2021-09-17T23:44:35 <br> ID: e0ef6f54-9a52-4e4c-9584-08d97a351ad0 <br> IsPolicyHit: true <br> ObjectId: <BN6PR05MB3571AD9FBB85C4E12C1F66B4CCDD9@BN6PR05MB3571.namprd05.prod.outlook.com> <br> 操作: SupervisionRuleMatch <br> OrganizationId: d6a06676-95e8-4632-b949-44bc00f0793f <br> RecordType: 68 <br> ResultStatus: {"ItemClass":"IPM.Yammer。Message","CcsiResults":""} <br> SRPolicyMatchDetails: { [+] } <br> UserId: user1@contoso.com <br> UserKey: SupervisionStoreDeliveryAgent <br> UserType: 0 <br> バージョン: 1 <br> }  |
 
 ## <a name="configure-communication-compliance-with-other-siem-solutions"></a>他の SIEM ソリューションとの通信コンプライアンスを構成する
@@ -117,7 +117,7 @@ PowerShell を使用する場合は **、Search-UnifiedAuditLog** コマンド�
 
 | 監査ログ パラメーター | 通信コンプライアンス パラメーターの値 |
 | :------------------ | :--------------------------------------- |
-| 操作          | SupervisionRuleMatch                     |
+| 運用          | SupervisionRuleMatch                     |
 | RecordType          | ComplianceSupervisionExchange            |
 
 たとえば、Operations パラメーターと *SupervisionRuleMatch* 値を使用したサンプル検索を次に示します。 

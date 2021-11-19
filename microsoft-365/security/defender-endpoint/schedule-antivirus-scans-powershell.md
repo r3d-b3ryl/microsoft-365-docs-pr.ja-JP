@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 22a3d1459bab688b33834304e09013f88668389e
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 03978feb5a9d0ca98d432fbec91e0fd5ce83724e
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555670"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111257"
 ---
 # <a name="schedule-antivirus-scans-using-powershell"></a>PowerShell を使用してウイルス対策スキャンをスケジュールする
 
@@ -43,7 +43,7 @@ Set-MpPreference -RandomizeScheduleTaskTimes
 
 ```
 
-詳細については[、「PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md)コマンドレットを使用して powerShell コマンドレットを構成し、Microsoft Defender ウイルス対策 コマンドレットと Microsoft Defender ウイルス対策[Defender](/powershell/module/defender/)コマンドレットを実行する」を参照してください。
+詳細については[、「PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md)コマンドレットを使用して Microsoft Defender ウイルス対策 コマンドレットと[Defender for](/powershell/module/defender/) Microsoft Defender ウイルス対策 Cloud コマンドレットを構成および実行する」を参照してください。
 
 ## <a name="powershell-cmdlets-for-scheduling-scans-when-an-endpoint-is-not-in-use"></a>エンドポイントが使用されていないときにスキャンをスケジュールする PowerShell コマンドレット
 
@@ -53,7 +53,7 @@ Set-MpPreference -RandomizeScheduleTaskTimes
 Set-MpPreference -ScanOnlyIfIdleEnabled
 ```
 
-詳細については、「[PowerShell コマンドレットを使用して Microsoft Defender ウイルス対策を構成および実行する](use-powershell-cmdlets-microsoft-defender-antivirus.md)」および「[Defender コマンドレット](/powershell/module/defender/)」を参照してください。
+詳細については[、「Use PowerShell コマンドレットを](use-powershell-cmdlets-microsoft-defender-antivirus.md)使用して、クラウドコマンドレットと Defender for Cloud コマンドレットを構成Microsoft Defender ウイルス対策実行する」[を参照してください](/powershell/module/defender/)。
 
 > [!NOTE]
 > エンドポイントが使用されていない時間のスキャンをスケジュールする場合、スキャンは CPU 調整構成を尊重し、可能な限り高速にスキャンを完了するために利用可能なリソースを活用します。
@@ -67,7 +67,7 @@ Set-MpPreference -RemediationScheduleDay
 Set-MpPreference -RemediationScheduleTime
 ```
 
-PowerShell[コマンドレットを](use-powershell-cmdlets-microsoft-defender-antivirus.md)構成して実行する方法の詳細については、「powerShell コマンドレットを使用して Microsoft Defender ウイルス対策 および[Defender](/powershell/module/defender/)コマンドレットを構成および実行する」を参照Microsoft Defender ウイルス対策。
+PowerShell コマンドレットを構成して実行する Microsoft Defender ウイルス対策 および[Defender for Cloud](/powershell/module/defender/)コマンドレットの詳細については、「PowerShell コマンドレットとクラウド コマンドレットを使用する」を参照Microsoft Defender ウイルス対策。 [](use-powershell-cmdlets-microsoft-defender-antivirus.md)
 
 ## <a name="powershell-cmdlets-for-scheduling-daily-scans"></a>毎日のスキャンをスケジュールする PowerShell コマンドレット
 
@@ -77,6 +77,4 @@ PowerShell[コマンドレットを](use-powershell-cmdlets-microsoft-defender-a
 Set-MpPreference -ScanScheduleQuickScanTime
 ```
 
-PowerShell を Microsoft Defender ウイルス対策 と一緒に使用する方法の詳細については[、「Use PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md)コマンドレットを使用して、PowerShell コマンドレットと Defender コマンドレットを構成Microsoft Defender ウイルス対策実行する」を[参照してください](/powershell/module/defender/)。
-
-
+PowerShell を Microsoft Defender ウイルス対策 と一緒に使用する方法の詳細については[、「Use PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md)コマンドレットを使用して、Microsoft Defender ウイルス対策および Defender for Cloud コマンドレットを構成および実行する」を[参照してください](/powershell/module/defender/)。

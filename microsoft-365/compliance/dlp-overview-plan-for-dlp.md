@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: データ損失防止の計画プロセスの概要
-ms.openlocfilehash: 144f07a75bc7ab2ae5cd06b04328f91f06c9a91f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c695a6a2a4bd21a147e5e81bc73fb65ab1378960
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201903"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109877"
 ---
 # <a name="plan-for-data-loss-prevention-dlp"></a>データ損失防止 (DLP) の計画
 
@@ -72,7 +72,7 @@ ms.locfileid: "60201903"
 - 財務的 
 - 医療と健康に関する情報
 - プライバシー
-- カスタム
+- Custom
 
 関係者は機密情報を「データ 処理者なので、データ主体情報と財務情報に対するプライバシー保護を実装する必要がある」と識別する場合があります。
 
@@ -138,14 +138,14 @@ DLP の導入を開始すると、これらの質問を使用して、ポリシ�
 
 ##### <a name="where-are-the-sensitive-items-and-what-business-processes-are-they-involved-in"></a>機密性の高いアイテムと、どのビジネス プロセスに関わっているか。
 
-組織の機密情報を含むアイテムは、ビジネスの過程で毎日使用されます。 その機密情報のインスタンスがどこで発生する可能性があるのか、どのビジネス プロセスで使用されるのかを知る必要があります。 これにより、DLP ポリシーを適用する適切な場所を選択できます。 Microsoft 365DLP ポリシーは場所に適用されます。
+組織の機密情報を含むアイテムは、ビジネスの過程で毎日使用されます。 その機密情報のインスタンスがどこで発生する可能性があるのか、どのビジネス プロセスで使用されるのかを知る必要があります。 これにより、DLP ポリシーを適用する適切な場所を選択できます。 Microsoft 365 DLP ポリシーは場所に適用されます。
 
 - Exchange メール
 - SharePoint サイト
 - OneDrive アカウント
 - Teams チャットおよびチャネル メッセージ
-- Windows 10デバイス
-- Microsoft Cloud App Security
+- Windows 10 デバイス
+- Microsoft Defender for Cloud Apps
 - オンプレミス リポジトリ
 
 **例** 組織の内部監査人は、一連のクレジット カード番号を追跡しています。 これらのスプレッドシートは、セキュリティで保護されたサイトSharePointします。 従業員の中には、コピーを作成し、自分のサイトOneDrive for Businessに保存します。これは、ユーザーのデバイスWindows 10されます。 そのうちの 1 つは、そのうち 14 件のリストをメールに貼り付け、外部監査人に送信してレビューを行います。 セキュリティで保護された SharePoint サイト、すべての内部監査人 OneDrive for Business アカウント、Windows 10 デバイス、および電子メールExchangeします。
@@ -161,7 +161,7 @@ DLP の導入を開始すると、これらの質問を使用して、ポリシ�
 DLP の場所を監視する前に、満たす必要がある前提条件があります。 「開始 **する前に」のセクション** を参照してください。
 
 - [データ損失防止のオンプレミス スキャナー (プレビュー) を開始する](dlp-on-premises-scanner-get-started.md#before-you-begin)
-- [エンドポイント データ損失防止の使用を開始する](endpoint-dlp-getting-started.md#before-you-begin)
+- [エンドポイント データ損失防止を開始する](endpoint-dlp-getting-started.md#before-you-begin)
 - [Microsoft コンプライアンス拡張機能の使用を開始する (プレビュー)](dlp-chrome-get-started.md#before-you-begin)
 - [Microsoft 以外のクラウド アプリでデータ損失防止ポリシーを使用する (プレビュー)](dlp-use-policies-non-microsoft-cloud-apps.md#before-you-begin)
 

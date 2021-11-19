@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1be1598f1ff960a90e65de13ead5d1fd79b63173
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c8992e6f5f4d4d37de06862675f999891fc4853c
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150110"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111641"
 ---
 # <a name="device-control-for-macos"></a>macOS のデバイスコントロール
 
@@ -33,7 +33,7 @@ ms.locfileid: "60150110"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>Requirements
 
 macOS のデバイスコントロールには、次の前提条件があります。
 
@@ -58,7 +58,7 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
-|**Key**|deviceControl|
+|**キー**|deviceControl|
 |**データ型**|辞書 (入れ子になった基本設定)|
 |**コメント**|辞書の内容の説明については、以下のセクションを参照してください。|
 |
@@ -83,8 +83,8 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
-|**Key**|navigationTarget|
-|**データ型**|String|
+|**キー**|navigationTarget|
+|**データ型**|文字列|
 |**コメント**|定義されていない場合、製品は、製品が実行したアクションを説明する汎用ページを指す既定の URL を使用します。|
 |
 
@@ -102,7 +102,7 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
-|**Key**|removableMediaPolicy|
+|**キー**|removableMediaPolicy|
 |**データ型**|辞書 (入れ子になった基本設定)|
 |**コメント**|辞書の内容の説明については、以下のセクションを参照してください。|
 |
@@ -143,7 +143,7 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
-|**Key**|enforcementLevel|
+|**キー**|enforcementLevel|
 |**データ型**|String|
 |**指定可能な値**|監査 (既定) <p> block|
 |
@@ -172,7 +172,7 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
-|**Key**|アクセス許可|
+|**キー**|アクセス許可|
 |**データ型**|文字列の配列|
 |**指定可能な値**|none <p> read <p> write <p> execute|
 |
@@ -192,7 +192,7 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
-|**Key**|ベンダー|
+|**キー**|ベンダー|
 |**データ型**|辞書 (入れ子になった基本設定)|
 |
 
@@ -205,7 +205,7 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
-|**Key**|アクセス許可|
+|**キー**|アクセス許可|
 |**データ型**|文字列の配列|
 |**指定可能な値**|既定のアクセス [許可レベルと同じ](#default-permission-level)|
 |
@@ -219,7 +219,7 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
-|**Key**|製品|
+|**キー**|製品|
 |**データ型**|辞書 (入れ子になった基本設定)|
 |
 
@@ -232,7 +232,7 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
-|**Key**|アクセス許可|
+|**キー**|アクセス許可|
 |**データ型**|文字列の配列|
 |**指定可能な値**|既定のアクセス [許可レベルと同じ](#default-permission-level)|
 |
@@ -248,7 +248,7 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
-|**Key**|serialNumbers|
+|**キー**|serialNumbers|
 |**データ型**|辞書 (入れ子になった基本設定)|
 |
 
@@ -261,7 +261,7 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
-|**Key**|アクセス許可|
+|**キー**|アクセス許可|
 |**データ型**|文字列の配列|
 |**指定可能な値**|既定のアクセス [許可レベルと同じ](#default-permission-level)|
 |

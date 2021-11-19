@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: e2cb2f915726289474826a3b4aa41da847152212
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9330a312bb00ca72e7a3fbc5e2e80f1521927b3f
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154544"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111065"
 ---
 # <a name="review-microsoft-defender-for-endpoint-architecture-requirements-and-key-concepts"></a>Microsoft Defender for Endpoint アーキテクチャの要件と主な概念を確認する
 
@@ -51,7 +51,7 @@ Microsoft Defender for Endpoint を有効にする前に、アーキテクチャ
 1 | デバイスは、サポートされている管理ツールのいずれかを介してオンボードされます。 
 2 | ボード上のデバイスは、Microsoft Defender for Endpoint シグナル データを提供して応答します。
 3 | 管理対象デバイスは、デバイスに参加または登録Azure Active Directory。
-4  | ドメインに参加しているWindowsデバイスは、デバイスを使用Azure Active DirectoryにAzure Active Directory Connect。
+4 | ドメインに参加しているWindowsデバイスは、デバイスを使用Azure Active DirectoryにAzure Active Directory Connect。
 5 | Microsoft Defender for Endpoint のアラート、調査、および応答は、Microsoft 365 Defender。
 
 ## <a name="understand-key-concepts"></a>主要な概念を理解する
@@ -73,7 +73,7 @@ Microsoft Defender for Endpoint に含まれる機能の詳細については、
 
 ## <a name="siem-integration"></a>SIEM 統合
 
-Microsoft Defender for Endpoint と Azure Sentinel を統合して、組織全体のセキュリティ イベントをより包括的に分析し、効果的かつ迅速な対応を行うプレイブックを構築できます。 
+Microsoft Defender for Endpoint と Microsoft Sentinel を統合して、組織全体のセキュリティ イベントをより包括的に分析し、プレイブックを構築して効果的かつ迅速な対応を行います。 
 
 Microsoft Defender for Endpoint は、他のセキュリティ情報およびイベント管理 (SIEM) ソリューションにも統合できます。 詳細については [、「Enable SIEM integration in Microsoft Defender for Endpoint」を参照してください](/microsoft-365/security/defender-endpoint/enable-siem-integration)。
 

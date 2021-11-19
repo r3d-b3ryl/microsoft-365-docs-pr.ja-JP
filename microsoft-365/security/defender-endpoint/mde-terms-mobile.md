@@ -19,19 +19,19 @@ ms.collection:
 ms.topic: conceptual
 hideEdit: true
 ms.technology: mde
-ms.openlocfilehash: 4b6bcadfa7f6bb51f48790460aeb0d034b1fbf65
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 41ab2a6a03c95e7e14ce1c66e5c85c113d2f6357
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60156232"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110105"
 ---
 # <a name="microsoft-defender-for-endpoint-application-license-terms"></a>Microsoft Defender for Endpoint アプリケーション ライセンス条項
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-MICROSOFT ソフトウェア ライセンス条項 : MICROSOFT DEFENDER for ENDPOINT
+MICROSOFT ソフトウェア ライセンス条項 : Microsoft Defender for Endpoint
 
 米国に住んでいる場合 (または主な事業の場所を持つ企業である場合) は、以下の「拘束力のある仲裁およびクラス訴訟の放棄」セクションをお読みください。 これは、紛争の解決方法に影響します。
 
@@ -73,7 +73,7 @@ These license terms are an agreement between you and Microsoft Corporation (or o
 
     f) ソフトウェアを共有、公開、配布、またはリースしたり、他のユーザーが使用したり、ソフトウェアまたは本契約を第三者に譲渡したりするスタンドアロンの提供としてソフトウェアを提供します。
 
-1. **MICROSOFT 365 商用サブスクリプション。**  ソフトウェアの使用には、商用サブスクリプションMicrosoft 365必要です。 ソフトウェアを通じて提供されるサービスへのアクセスは、サブスクリプションまたは組織のサブスクリプションを通じて適用される Microsoft 365 の既存の条項に準拠している必要があります。 これらのサービスへのアクセスが失われる可能性があります。i) 自分または組織のサブスクリプションの有効期限が切Microsoft 365場合。または ii) 組織は、サービスにアクセスするためにライセンスを終了します。
+1. **MICROSOFT 365 商用サブスクリプション。**  ソフトウェアの使用には、商用サブスクリプションMicrosoft 365必要です。 ソフトウェアを通じて提供されるサービスへのアクセスは、サブスクリプションまたは組織のサブスクリプションを通じて適用される Microsoft 365 の既存の条項に準拠している必要があります。 これらのサービスへのアクセスが失われる可能性があります。i) 組織または組織の Microsoft 365 サブスクリプションの有効期限が切れた場合、または ii) 組織がサービスにアクセスするためにライセンスを終了する場合。
 
 1. **TRANSFER TO ANOTHER DEVICE.** Apple ユーザーの場合は、ソフトウェアをアンインストールし、別のデバイスにインストールして使用できます。 You may not share this license on multiple devices.
 
@@ -124,4 +124,3 @@ Cette limitation concerne:
 
 Elle s’applique également, même si Microsoft connaissait ou devrait connaître l’éventualité d’un tel dommage. Si votre pays n’autorise pas l’exclusion ou la limitation de responsabilité pour les dommages indirects, accessoires ou de quelque nature que ce soit, il se peut que la limitation ou l’exclusion ci-dessus ne s’appliquera pas à votre égard.
 EFFET JURIDIQUE. Le présent contrat décrit certains droits juridiques. Vous pourriez avoir d’autres droits prévus par les lois de votre pays. Le présent contrat ne modifie pas les droits que vous confèrent les lois de votre pays si celles-ci ne le permettent pas.
-

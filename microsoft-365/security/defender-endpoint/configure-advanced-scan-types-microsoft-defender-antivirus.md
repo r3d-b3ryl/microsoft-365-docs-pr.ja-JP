@@ -16,12 +16,12 @@ ms.technology: mde
 ms.date: 10/19/2021
 ms.collection: M365-security-compliance
 ms.topic: how-to
-ms.openlocfilehash: 61092c0656f31bb04dd0f63ff61a55571781c160
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: dc6f8e49cbf23809b7980d15f40b5081af469c44
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882431"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111833"
 ---
 # <a name="configure-microsoft-defender-antivirus-scanning-options"></a>Microsoft Defender ウイルス対策スキャン オプションを構成する
 
@@ -58,9 +58,9 @@ ms.locfileid: "60882431"
 |電子メールのスキャン <p> **スキャン** \>**電子メール スキャンを有効にする**<p>「 [電子メールのスキャンの制限」を](#email-scanning-limitations) 参照してください (この記事で)|無効|`-DisableEmailScanning`|
 |再 [解析ポイントのスキャン](/windows/win32/fileio/reparse-points) <p> **スキャン** \>**再解析ポイントスキャンを有効にする**|無効|使用不可 <p>[「Reparse ポイント」を参照してください。](/windows/win32/fileio/reparse-points)|
 |マップされたネットワーク ドライブをスキャンする <p> **スキャン** \>**マップされたネットワーク ドライブでフル スキャンを実行する**|無効|`-DisableScanningMappedNetworkDrivesForFullScan`|
-|アーカイブ ファイルをスキャンする (.zipファイル.rarします。 <p> **スキャン** \>**アーカイブ ファイルのスキャン**|有効|`-DisableArchiveScanning` <p>拡張機能 [の除外リストは、](configure-extension-file-exclusions-microsoft-defender-antivirus.md) この設定よりも優先されます。|
+|アーカイブ ファイルをスキャンする (.zipファイル.rarします。 <p> **スキャン** \>**アーカイブ ファイルのスキャン**|Enabled|`-DisableArchiveScanning` <p>拡張機能 [の除外リストは、](configure-extension-file-exclusions-microsoft-defender-antivirus.md) この設定よりも優先されます。|
 |ネットワーク上のファイルをスキャンする <p> **スキャン** \>**ネットワーク ファイルのスキャン**|無効|`-DisableScanningNetworkFiles`|
-|パックされた実行可能ファイルをスキャンする <p> **スキャン** \>**パックされた実行可能ファイルをスキャンする**|有効|使用不可|
+|パックされた実行可能ファイルをスキャンする <p> **スキャン** \>**パックされた実行可能ファイルをスキャンする**|Enabled|使用不可|
 |フル スキャン時にのみリムーバブル ドライブをスキャンする <p> **スキャン** \>**リムーバブル ドライブのスキャン**|無効|`-DisableRemovableDriveScanning`|
 |スキャンするアーカイブ フォルダー内のサブフォルダーのレベルを指定する <p>**スキャン** \>**アーカイブ ファイルをスキャンする最大深度を指定する**|0|利用不可|
 |スキャン中の CPU の最大負荷 (パーセンテージ) を指定します。 <p> **スキャン** \>**スキャン中の CPU 使用率の最大割合を指定する**|50|`-ScanAvgCPULoadFactor` <p>**注**: CPU の最大負荷はハード制限ではなく、スキャン エンジンが平均して最大値を超えないようにするガイダンスです。 手動でスキャンを実行すると、この設定は無視され、CPU 制限なしで実行されます。|
@@ -75,7 +75,7 @@ ms.locfileid: "60882431"
 PowerShell を使用して PowerShell を使用する方法の詳細については、「Microsoft Defender ウイルス対策」
 
 - [PowerShell コマンドレットMicrosoft Defender ウイルス対策の管理](use-powershell-cmdlets-microsoft-defender-antivirus.md)
-- [Defender コマンドレット](/powershell/module/defender/)
+- [Microsoft Defender ウイルス対策コマンドレット](/powershell/module/defender/)
 
 ## <a name="use-wmi-to-configure-scanning-options"></a>WMI を使用してスキャン オプションを構成する
 

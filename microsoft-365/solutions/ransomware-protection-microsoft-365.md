@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: ランサムウェア、人が操作するランサムウェア、人間が操作するランサムウェア、HumOR、強要攻撃、ランサムウェア攻撃、暗号化、暗号ウイルス学、ゼロ トラスト
 description: ランサムウェア攻撃から Microsoft 365 リソースを保護する手順を説明します。
-ms.openlocfilehash: bdfb793ef5a86a21abf421addfd9d1e84dfdba61
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 81f97ba6327f5f1803d972ad9e62f2333e65bc2b
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60703519"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110273"
 ---
 # <a name="deploy-ransomware-protection-for-your-microsoft-365-tenant"></a>Microsoft 365 テナントにランサムウェア保護を展開する
 
@@ -115,11 +115,11 @@ OneDrive のファイルと SharePoint のファイルについては、大量�
 
     - 秘密度ラベルに基づく組織の機密情報。
 
-- [Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)
+- [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security)
 
     ファイルなどの機密情報のダウンロードをブロックします。 
 
-    また、[Microsoft Cloud App Security Conditional Access App Control](/cloud-app-security/tutorial-dlp#how-to-discover-and-protect-sensitive-information-in-your-organization)を使用して、ユーザーとアプリケーション間の情報のフローをリアルタイムで監視することもできます。
+    また、[Microsoft Defender for Cloud Apps Conditional Access App Control](/cloud-app-security/tutorial-dlp#how-to-discover-and-protect-sensitive-information-in-your-organization)を使用して、ユーザーとアプリケーション間の情報のフローをリアルタイムで監視することもできます。
 
 ## <a name="whats-in-this-solution"></a>このソリューションの機能
 
@@ -170,7 +170,7 @@ Microsoft 365 テナント用にデプロイされたソリューションの 5 
 | Microsoft Defender for Office 365 | メール メッセージ、リンク (URL)、共同作業ツールによってもたらされる悪意のある脅威から組織を保護します。 <br><br> マルウェア、フィッシング、スプーフィング、その他の攻撃の種類から保護する | フィッシング攻撃。 | Microsoft 365 E5 セキュリティ アドオン付きのMicrosoft 365 E5 または Microsoft 365 E3 |
 | Microsoft Defender for Endpoint | エンドポイント (デバイス) 全体の高度な脅威の検出と対応を可能にします | マルウェアのインストールとデバイスの侵害。 | Microsoft 365 E5 セキュリティ アドオン付きのMicrosoft 365 E5 または Microsoft 365 E3 |
 | Azure Active Directory(Azure AD) ID 保護 | ID ベースのリスクの検出と修復、およびそれらのリスクの調査を自動化します | Azure AD アカウントと特権のエスカレーションに対する資格情報の侵害。 | Microsoft 365 E5 セキュリティ アドオン付きのMicrosoft 365 E5 または Microsoft 365 E3 |
-| Microsoft Cloud App Security | Microsoft およびサード パーティのクラウド サービス全体で検出、調査、ガバナンスを行うクラウド アクセス セキュリティ ブローカー | 横方向の動きとデータ流出。 | Microsoft 365 E5 セキュリティ アドオン付きのMicrosoft 365 E5 または Microsoft 365 E3 |
+| Microsoft Defender for Cloud Apps | Microsoft およびサード パーティのクラウド サービス全体で検出、調査、ガバナンスを行うクラウド アクセス セキュリティ ブローカー | 横方向の動きとデータ流出。 | Microsoft 365 E5 セキュリティ アドオン付きのMicrosoft 365 E5 または Microsoft 365 E3 |
 |
 
 ### <a name="3-identities"></a>3. ID
@@ -208,7 +208,7 @@ Windows 10 デバイス (プレビュー)
 | コントロールされたフォルダー アクセス | 既知の信頼できるアプリの一覧に対してアプリをチェックしてデータを保護する | ファイルがランサムウェアによって変更または暗号化されないようにします。 | Microsoft 365 E3 または Microsoft 365 E5 |
 | Microsoft Information Protection | 身代金要求の対象となっている情報に対して、秘密度ラベルの適用が可能 | 流出した情報の使用を防ぎます。 | Microsoft 365 E3 または Microsoft 365 E5 |
 | データ損失防止 (DLP) | 機密データを保護し、ユーザーによる不適切な共有を防止することでリスクを軽減する | データ流出を防止する | Microsoft 365 E3 または Microsoft 365 E5 |
-| Microsoft Cloud App Security | 検出、調査、ガバナンスのためのクラウド アクセス セキュリティ ブローカー | 横方向の動きを検出し、データ流出を防ぎます。 | Microsoft 365 E5 セキュリティ アドオン付きのMicrosoft 365 E5 または Microsoft 365 E3 |
+| Microsoft Defender for Cloud Apps | 検出、調査、ガバナンスのためのクラウド アクセス セキュリティ ブローカー | 横方向の動きを検出し、データ流出を防ぎます。 | Microsoft 365 E5 セキュリティ アドオン付きのMicrosoft 365 E5 または Microsoft 365 E3 |
 |
 
 ## <a name="impact-on-users-and-change-management"></a>ユーザーへの影響と変更管理
@@ -261,12 +261,12 @@ Microsoft Azure
 - [ランサムウェアから保護するためのバックアップと復元の計画](/security/compass/backup-plan-to-protect-against-ransomware)
 - [Microsoft Azure バックアップを使用してランサムウェアから保護する](https://www.youtube.com/watch?v=VhLOr2_1MCg) (26 分のビデオ)
 - [体系的な ID 侵害からの回復](/azure/security/fundamentals/recover-from-identity-compromise)
-- [Azure Sentinel での高度な多段階攻撃検出](/azure/sentinel/fusion#ransomware)
-- [Azure Sentinel でのランサムウェアのフュージョン検出](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
+- [Microsoft Sentinel での高度な多段階攻撃検出](/azure/sentinel/fusion#ransomware)
+- [Microsoft Sentinel でのランサムウェアのフュージョン検出](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
 
-Microsoft Cloud App Security:
+Microsoft Defender for Cloud Apps
 
--  [Cloud App Security で異常検出ポリシーを作成する](/cloud-app-security/anomaly-detection-policy)
+-  [Defender for Cloud Apps で異常検出ポリシーを作成する](/cloud-app-security/anomaly-detection-policy)
 
 Microsoft Security チームのブログ投稿:
 
@@ -289,4 +289,3 @@ Microsoft Security チームのブログ投稿:
 
 - [ランサムウェアの応答 - 支払うべきか、支払わざるべきか? (2019 年 12 月)](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
 - [Norsk Hydro のランサムウェア攻撃に対する透明性のある対応 (2019 年 12 月)](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
-

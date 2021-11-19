@@ -17,12 +17,12 @@ ms.technology: mde
 audience: ITPro
 ms.topic: how-to
 ms.collection: m365-security-compliance
-ms.openlocfilehash: be306fdde4e3b83de323fd769bdc069e2f2958ba
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: bfcf100d4935895b66e781c7be0fa2e3c9cb829a
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882455"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110693"
 ---
 # <a name="use-powershell-cmdlets-to-configure-and-manage-microsoft-defender-antivirus"></a>PowerShell コマンドレットを使用して、サーバーの構成とMicrosoft Defender ウイルス対策
 
@@ -35,7 +35,7 @@ ms.locfileid: "60882455"
 
 PowerShell を使用して、さまざまな機能を実行Windows Defender。 コマンド プロンプトやコマンド ラインと同様に、PowerShell はタスク ベースのコマンド ライン シェルであり、特にシステム管理用に設計されたスクリプト言語です。 詳細については [、MSDN の PowerShell ハブで確認できます](/previous-versions/msdn10/mt173057(v=msdn.10))。
 
-コマンドレットとその機能と使用可能なパラメーターの一覧については、「Defender コマンドレット」 [を参照](/powershell/module/defender) してください。
+コマンドレットとその機能と使用可能なパラメーターの一覧については [、「Defender for Cloud コマンドレット」を参照](/powershell/module/defender) してください。
 
 PowerShell コマンドレットは、ソフトウェアWindowsグラフィカル ユーザー インターフェイス (GUI) に依存しないサーバー環境で最も役立ちます。
 
@@ -65,7 +65,7 @@ Get-Help <cmdlet> -Online
 
 ローカルに `-online` キャッシュされたヘルプを取得するには、パラメーターを省略します。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [管理および構成ツールのリファレンス トピック](configuration-management-reference-microsoft-defender-antivirus.md)
 - [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)

@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 53eed34cfff6d2318b87e781b32a9963c372b279
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 575df186af15628ec4d7d4162d100ea0d1974146
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60667388"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111401"
 ---
 # <a name="configure-defender-for-endpoint-on-android-features"></a>Android の機能でエンドポイント用 Defender を構成する
 
@@ -91,15 +91,14 @@ Android 上の Microsoft Defender for Endpoint のバージョン 1.0.3425.0303 
 Defender for Endpoint は、作業プロファイル内のアプリの脆弱性評価をサポートします。 ただし、対象ユーザーに対してこの機能をオフにする場合は、次の手順を使用できます。
 
 1. [[Microsoft エンドポイント マネージャー管理センターで、[](https://go.microsoft.com/fwlink/?linkid=2109431)**アプリ** アプリの構成ポリシー] [管理対象  >    >  **デバイス**  >  **の追加] に移動します**。
-2. ポリシーに名前を付け、**プラットフォーム > Android Enterprise;** プロファイルの種類を選択します。
+2. ポリシーに名前を付け、**プラットフォーム > Android Enterprise** プロファイルの種類を選択します。
 3. ターゲット **アプリとして [Microsoft Defender for Endpoint]** を選択します。
 4. [設定] ページで、[構成デザイナーを使用する] を選択し、キーと値の種類として **DefenderTVMPrivacyMode** を整数として追加 **します。**
-   - 作業プロファイル内のアプリの脆弱性を無効にするには、値を 1 と入力し、このポリシーをユーザーに割り当てる必要があります。 既定では、この値は 0 に設定されます。
-   - キーが '0' に設定されているユーザーの場合、Defender はアプリの一覧を作業プロファイルからバックエンド サービスに送信して、脆弱性評価を行います。
+   - 作業プロファイル内のアプリの脆弱性を無効にするには、値を as と入力し `1` 、このポリシーをユーザーに割り当てる必要があります。 既定では、この値はに設定されます `0` 。
+   - キーが [キー] に設定されているユーザーの場合、Defender for Endpoint は、作業プロファイルからバックエンド サービスにアプリの一覧を送信して、脆弱性評価 `0` を行います。
 5. [次 **へ] を** クリックし、このプロファイルを対象のデバイス/ユーザーに割り当てる。
 
 上記のプライバシーコントロールをオンまたはオフにした場合、デバイスコンプライアンスチェックや条件付きアクセスには影響はありません。
-
 
 ## <a name="configure-privacy-for-malware-threat-report"></a>マルウェア脅威レポートのプライバシーを構成する
 

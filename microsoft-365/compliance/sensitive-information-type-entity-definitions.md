@@ -19,12 +19,12 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: DLP ポリシーで使用できる機密情報の種類は 200 種類です。 この記事では、これらすべての機密情報の種類を一覧表示し、DLP ポリシーが各種類を検出するときに検索する情報漏えい対策ポリシーを示します。
-ms.openlocfilehash: 92b6d6720da67274e820a57fec8d2ade338574f2
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 62689bf409dc708f9b360ad2131d6db0e206e75c
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60754167"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109973"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>機密情報の種類のエンティティ定義
 
@@ -302,7 +302,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
 - レコード管理
-- Microsoft クラウド アプリのセキュリティ
+- Microsoft Defender for Cloud Apps
 
 
 ### <a name="format"></a>フォーマット
@@ -364,7 +364,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
 - レコード管理
-- Microsoft クラウド アプリのセキュリティ
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>フォーマット
 
@@ -902,7 +902,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
 - レコード管理
-- Microsoft クラウド アプリのセキュリティ
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>フォーマット
 
@@ -1173,7 +1173,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
 - レコード管理
-- Microsoft クラウド アプリのセキュリティ
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>フォーマット
 
@@ -2073,7 +2073,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
 - レコード管理
-- Microsoft クラウド アプリのセキュリティ
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>フォーマット
 
@@ -2502,7 +2502,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
 - レコード管理
-- Microsoft クラウド アプリのセキュリティ
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>フォーマット
 
@@ -4236,7 +4236,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
 - レコード管理
-- Microsoft クラウド アプリのセキュリティ
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>フォーマット
 
@@ -4368,7 +4368,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
 - レコード管理
-- Microsoft クラウド アプリのセキュリティ
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>フォーマット
 
@@ -5373,7 +5373,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
 - レコード管理
-- Microsoft クラウド アプリのセキュリティ
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>フォーマット
 
@@ -6226,7 +6226,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
 - レコード管理
-- Microsoft クラウド アプリのセキュリティ
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>フォーマット
 
@@ -6621,7 +6621,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
 - レコード管理
-- Microsoft クラウド アプリのセキュリティ
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>フォーマット
 
@@ -6965,7 +6965,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
 - レコード管理
-- Microsoft クラウド アプリのセキュリティ
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>フォーマット
 
@@ -7458,7 +7458,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
 - レコード管理
-- Microsoft クラウド アプリのセキュリティ
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>フォーマット
 
@@ -7817,7 +7817,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
 - レコード管理
-- Microsoft クラウド アプリのセキュリティ
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>フォーマット
 
@@ -7875,7 +7875,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
 - レコード管理
-- Microsoft クラウド アプリのセキュリティ
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>フォーマット
 
@@ -8195,7 +8195,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
 - レコード管理
-- Microsoft クラウド アプリのセキュリティ
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>フォーマット
 
@@ -8397,7 +8397,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
 - レコード管理
-- Microsoft クラウド アプリのセキュリティ
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>フォーマット
 
@@ -8478,7 +8478,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
 - レコード管理
-- Microsoft クラウド アプリのセキュリティ
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>フォーマット
 
@@ -9937,7 +9937,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
 - レコード管理
-- Microsoft クラウド アプリのセキュリティ
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>フォーマット
 
@@ -10107,7 +10107,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
 - レコード管理
-- Microsoft クラウド アプリのセキュリティ
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>フォーマット
 
@@ -10340,7 +10340,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
 - レコード管理
-- Microsoft クラウド アプリのセキュリティ
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>フォーマット
 
@@ -10402,7 +10402,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
 - レコード管理
-- Microsoft クラウド アプリのセキュリティ
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>フォーマット
 
@@ -11214,7 +11214,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
 - レコード管理
-- Microsoft クラウド アプリのセキュリティ
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>フォーマット
 
@@ -11540,7 +11540,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
 - レコード管理
-- Microsoft クラウド アプリのセキュリティ
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>フォーマット
 
@@ -12029,7 +12029,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
 - レコード管理
-- Microsoft クラウド アプリのセキュリティ
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>フォーマット
 
@@ -12679,7 +12679,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
 - レコード管理
-- Microsoft クラウド アプリのセキュリティ
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>フォーマット
 
@@ -12762,7 +12762,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
 - レコード管理
-- Microsoft クラウド アプリのセキュリティ
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>フォーマット
 
@@ -12824,7 +12824,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
 - レコード管理
-- Microsoft クラウド アプリのセキュリティ
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>フォーマット
 
@@ -12886,7 +12886,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
 - レコード管理
-- Microsoft クラウド アプリのセキュリティ
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>フォーマット
 
@@ -13001,7 +13001,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
 - レコード管理
-- Microsoft クラウド アプリのセキュリティ
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>フォーマット
 
@@ -13111,7 +13111,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
 - レコード管理
-- Microsoft クラウド アプリのセキュリティ
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>フォーマット
 
@@ -13624,7 +13624,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
 - レコード管理
-- Microsoft クラウド アプリのセキュリティ
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>フォーマット
 
@@ -13690,7 +13690,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
 - レコード管理
-- Microsoft クラウド アプリのセキュリティ
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>フォーマット
 
@@ -14318,7 +14318,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
 - レコード管理
-- Microsoft クラウド アプリのセキュリティ
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>フォーマット
 
@@ -14490,7 +14490,7 @@ numărul paărul paăaportului numarul pasaportului numerele pa ăaportului Paă
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
 - レコード管理
-- Microsoft クラウド アプリのセキュリティ
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>フォーマット
 
@@ -14552,7 +14552,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
 - レコード管理
-- Microsoft クラウド アプリのセキュリティ
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>フォーマット
 
@@ -14875,7 +14875,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
 - レコード管理
-- Microsoft クラウド アプリのセキュリティ
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>フォーマット
 
@@ -15214,7 +15214,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
 - レコード管理
-- Microsoft クラウド アプリのセキュリティ
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>フォーマット
 
@@ -15374,7 +15374,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
 - レコード管理
-- Microsoft クラウド アプリのセキュリティ
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>フォーマット
 
@@ -15735,7 +15735,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
 - レコード管理
-- Microsoft クラウド アプリのセキュリティ
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>フォーマット
 
@@ -15959,7 +15959,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
 - レコード管理
-- Microsoft クラウド アプリのセキュリティ
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>フォーマット
 
@@ -16477,7 +16477,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
 - レコード管理
-- Microsoft クラウド アプリのセキュリティ
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>フォーマット
 
@@ -16632,7 +16632,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
 - レコード管理
-- Microsoft クラウド アプリのセキュリティ
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>フォーマット
 
@@ -17311,7 +17311,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
 - レコード管理
-- Microsoft クラウド アプリのセキュリティ
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>フォーマット
 
@@ -17806,7 +17806,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
 - レコード管理
-- Microsoft クラウド アプリのセキュリティ
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>フォーマット
 
@@ -17854,7 +17854,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - 通信コンプライアンス ポリシー
 - 情報ガバナンス
 - レコード管理
-- Microsoft クラウド アプリのセキュリティ
+- Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>フォーマット
 

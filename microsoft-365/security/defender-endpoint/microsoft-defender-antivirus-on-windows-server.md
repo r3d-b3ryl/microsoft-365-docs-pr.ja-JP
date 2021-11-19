@@ -15,12 +15,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a6af3ff71cf6f64fbc548ceb3b333cdf135c70dc
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: b98145834eebee80a69846474b3395f90eac7fa6
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554554"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111272"
 ---
 # <a name="microsoft-defender-antivirus-on-windows-server"></a>Windows Server 上の Microsoft Defender ウイルス対策
 
@@ -34,9 +34,9 @@ Microsoft Defender ウイルス対策サーバーの次のエディション/バ
 
 - Windows Server 2022
 - Windows Server 2019
-- Windowsサーバー、バージョン 1803 以降
+- Windows Server バージョン 1803 以降
 - Windows Server 2016
-- Windows Server 2012R2 (エンドポイントに Microsoft Defender が必要)
+- Windows Server 2012 R2 (エンドポイントに Microsoft Defender が必要)
 
 場合によっては、Microsoft Defender ウイルス対策は *Endpoint Protection* と呼ばることもありますが、保護エンジンは同じです。 Windows 10 および Windows 11 の Microsoft Defender ウイルス対策 の機能、構成、および管理は大きく同じですが[、Windows](microsoft-defender-antivirus-windows.md) Server にはいくつかの主な違いがあります。
 
@@ -81,7 +81,7 @@ GUI がサーバーにインストールされておらず、インストール�
 
 次の PowerShell コマンドレットを使用すると、インターフェイスが有効になります。
 
-```PowerShell
+```powershell
 Install-WindowsFeature -Name Windows-Defender-GUI
 ```
 

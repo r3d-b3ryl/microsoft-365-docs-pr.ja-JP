@@ -15,12 +15,12 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: この記事では、クライアントおよびサービス アプリのMicrosoft 365詳細を確認します。
-ms.openlocfilehash: 4ae294865bb506ae9e8a25e8f5ab28fff967171e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: db69da1203138435b22383de145ddde71f763c14
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60173332"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110333"
 ---
 # <a name="microsoft-365-client-and-services-app-support"></a>Microsoft 365サービス アプリのサポート
 
@@ -38,7 +38,7 @@ Microsoft では、お客様のデータを安全に保つ幅広いセキュリ�
 - ユーザーのパスワードが変更またはリセットされる
 - ユーザーに対して多要素認証が有効になっている
 - 管理者がユーザーのすべての更新トークンを明示的に取り消す
-- Azure id Protection によって検出されたユーザー ADリスクの上昇
+- Id Protection によって検出されたユーザー Azure ADリスクの上昇
 
 クライアントおよびサービス アプリのサポートに対する継続的アクセス評価の詳細については、「継続的アクセス評価 [(プレビュー)」を参照してください](/azure/active-directory/conditional-access/concept-continuous-access-evaluation)。
 
@@ -63,7 +63,7 @@ Microsoft では、お客様のデータを安全に保つ幅広いセキュリ�
 - デバイス情報
 - アプリケーション情報
 - リアルタイムおよび計算されたリスク検出
-- Microsoft Cloud App Security (MCAS)
+- Microsoft Defender for Cloud Apps
 
 これらのアクセス決定を行う場合、ポリシーは次の異なるアクションを実行できます。
 
@@ -72,13 +72,13 @@ Microsoft では、お客様のデータを安全に保つ幅広いセキュリ�
 
     - 多要素認証
     - 準拠としてマークするデバイス
-    - デバイスはハイブリッド Azure ADです
+    - デバイスは、ハイブリッド Azure ADです
     - 承認済みクライアント アプリ
     - 構成されたアプリ保護ポリシー (プレビュー)
 
 クライアントおよびサービス アプリのサポートに対する条件付きアクセスの詳細については、以下を参照してください。
 
-- [Microsoft 365クライアント アプリのサポート: デバイス ベースの条件付きアクセス](microsoft-365-client-support-conditional-access.md)
+- [Microsoft 365 クライアント アプリのサポート: デバイス ベースの条件付きアクセス](microsoft-365-client-support-conditional-access.md)
 
 ### <a name="mobile-application-management"></a>モバイル アプリケーション管理
 

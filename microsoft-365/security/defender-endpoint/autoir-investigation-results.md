@@ -23,12 +23,12 @@ ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: dd5a8d4db47eb0f26f7bdf7ef992fba18a6c3aa5
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: b704a64e4428ede9af8992d22485a9d859ca4c98
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963193"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110117"
 ---
 # <a name="view-the-details-and-results-of-an-automated-investigation"></a>自動調査の詳細と結果を表示する
 
@@ -86,7 +86,7 @@ Microsoft Defender for Endpoint[](automated-investigations.md)では、自動調
 |タブ|説明|
 |---|---|
 |**Investigation graph (調査グラフ)**|調査を視覚的に表します。 エンティティと検出された脅威のほか、警告、承認を待っているアクションがあるかどうかが示されます。 <p> グラフ上のアイテムを選択すると、詳細を表示できます。 たとえば、[証拠]**アイコンを** 選択すると、[証拠]タブに移動し、検出されたエンティティとその評決を確認できます。|
-|**アラート**|調査に関連する警告を一覧表示します。 アラートは、ユーザーのデバイス上または Office アプリ内の脅威対策機能、Cloud App Security、その他の Microsoft 365 Defender 機能により出されます。|
+|**アラート**|調査に関連する警告を一覧表示します。 アラートは、ユーザーのデバイス、Office アプリ、Defender for Cloud Apps、その他のセキュリティ機能の脅威保護機能Microsoft 365 Defenderがあります。|
 |**Devices**|調査に含まれるデバイスとその修復レベルを一覧表示します。 (修復レベルは、デバイス グループ [のオートメーション レベルに対応します](automation-levels.md)。)|
 |**メールボックス**|検出された脅威の影響を受けたメールボックスを一覧表示します。|
 |**ユーザー**|検出された脅威の影響を受けたユーザー アカウントを一覧表示します。|

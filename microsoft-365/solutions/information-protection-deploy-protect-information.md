@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: セキュリティMicrosoft 365コンプライアンス機能を展開し、個人情報を保護します。
-ms.openlocfilehash: d605147b24c4f6ef3a12eedab2243bcaa4c6745b
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 856df69d60df7ea255118bd559377e3d54267991
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60785932"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110297"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>データプライバシー規制の対象となる情報を保護する
 
@@ -67,24 +67,24 @@ Microsoft 365 の情報保護スキームの使用を開始するために、以
 Microsoft[の情報保護ソリューション](../compliance/information-protection.md)には、Microsoft 365、Microsoft Azure、および Microsoft Windows。 情報Microsoft 365ソリューションには、次のものが含まれます。
 
 - [機密情報の種類](../compliance/sensitive-information-type-entity-definitions.md)(データプライバシーリスクの評価と機密アイテムの識別に関する記事[で説明)](information-protection-deploy-assess.md)
-- [秘密度ラベル](../compliance/sensitivity-labels.md)
+- [機密ラベル](../compliance/sensitivity-labels.md)
   - サービス/コンテナー レベル
   - クライアント側/コンテンツ レベル
   - ユーザーとユーザーの間でデータを保存SharePoint自動化OneDrive
 - データ損失防止 (DLP)
-- [Microsoft 365エンドポイントのデータ損失防止](../compliance/endpoint-dlp-learn-about.md)
+- [Microsoft 365 エンドポイントのデータ損失防止](../compliance/endpoint-dlp-learn-about.md)
 - [Office 365 Message Encryption機能 (OME) と](../compliance/ome.md)OME [Advanced Message Encryption](../compliance/ome-advanced-message-encryption.md)
 
 さらに、サイトおよびライブラリ レベルの保護は、任意の保護スキームに含める重要なメカニズムです。
 
 外部の他の情報保護機能については、Microsoft 365を参照してください。
 
-- [Microsoft Cloud Application Security (MCAS)](/cloud-app-security/)
+- [Microsoft Cloud Application Security (Defender for Cloud Apps)](/cloud-app-security/)
 - [Azure Information Protection](/azure/information-protection/what-is-information-protection)
 - [Microsoft エンドポイント マネージャー](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)
 - [Windows 情報保護](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)
 
-## <a name="sensitivity-labels"></a>機密ラベル
+## <a name="sensitivity-labels"></a>秘密度ラベル
 
 Microsoft Information Protection フレームワークの感度ラベルを使用すると、ユーザーの生産性と共同作業能力を妨げることなく、組織のデータを分類および保護できます。
 
@@ -114,7 +114,7 @@ Microsoft Information Protection フレームワークの感度ラベルを使�
 
       電子メール保護に最新の感度ラベル付けを使用する予定で、OME のような既存の電子メール暗号化方法を使用する場合は、同じ機能を使用できますが、どちらを適用するかのシナリオを理解する必要があります。 最新Office 365 Message Encryptionタイプの保護と OME ベースの保護を比較する表を含む、新しい機能[(OME)](#office-365-message-encryption-ome-new-capabilities)の詳細については、「OME」を参照してください。
 
-3. より広範な情報保護スキームへの統合を計画します。 OME との共存の上に、Microsoft 365 データ損失防止 (DLP) や Microsoft Cloud App Security のような一Microsoft Cloud App Security。 データ[プライバシー Microsoft Information Protection情報Microsoft 365](../compliance/information-protection.md)目標を達成するには、「データ保護」のページを参照してください。
+3. より広範な情報保護スキームへの統合を計画します。 OME との共存の上に、Microsoft 365 データ損失防止 (DLP) や Microsoft Defender for Cloud Apps など、一方で感度ラベルを使用できます。 データ[プライバシー Microsoft Information Protection情報Microsoft 365](../compliance/information-protection.md)目標を達成するには、「データ保護」のページを参照してください。
 
 4. 感度ラベルの分類と制御スキームを開発します。 「 [データ分類と感度ラベル分類」を参照してください](https://aka.ms/dataclassificationwhitepaper)。
 
@@ -208,7 +208,7 @@ DLP を使用すると、次の操作を実行できます。
 
 ### <a name="supported-workloads-for-dlp"></a>DLP でサポートされているワークロード
 
-<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>の DLP ポリシーを使用すると、Exchange Online、SharePoint、OneDrive、Microsoft Teams など、Microsoft 365 の多くの場所で機密アイテムを識別、監視、および自動的に保護できます。
+<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>の DLP ポリシーを使用すると、Microsoft 365 Exchange Online、SharePoint、OneDrive、およびMicrosoft Teams。
 
 たとえば、OneDrive サイトに保存されているクレジット カード番号を含むドキュメントを特定したり、特定のユーザーの OneDrive サイトを監視することができます。
 

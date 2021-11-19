@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 4764243e89fe5c8cc6f699a3ee917fa9ba20a610
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: cf386bc306bf5ab3b509a6d34a020fae5ddfb2c9
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064453"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109997"
 ---
 # <a name="get-started-with-insider-risk-management"></a>インサイダー リスクの管理の概要
 
@@ -207,7 +207,7 @@ Insider リスク管理は、物理的な制御およびアクセス プラッ�
 
 [Microsoft Defender for Endpoint は](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 、エンタープライズ ネットワークが高度な脅威を防止、検出、調査、および対応するために設計されたエンタープライズ エンドポイント セキュリティ プラットフォームです。 組織内のセキュリティ違反をよりよく可視化するには、インサイダー リスク管理のセキュリティ違反ポリシー テンプレートから作成されたポリシーで使用されるアクティビティについて、Defender for Endpoint アラートをインポートしてフィルター処理できます。
 
-セキュリティ違反ポリシーを作成する場合は、組織内で Microsoft Defender for Endpoint を構成し、Defender セキュリティ センターで Defender for Endpoint for Insider リスク管理統合を有効にしてセキュリティ違反アラートをインポートする必要があります。 要件の詳細については [、「Microsoft Defender for Endpoints](/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements) の最小要件」を参照してください。
+セキュリティ違反ポリシーを作成する場合は、組織内で Microsoft Defender for Endpoint を構成し、Defender セキュリティ センターで Defender for Endpoint for Insider リスク管理統合を有効にしてセキュリティ違反アラートをインポートする必要があります。 要件の詳細については、「Microsoft Defender for Endpoint の最小要件 [」を参照](/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements) してください。
 
 Defender for Endpoint を [インサイダー](/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center) リスク管理統合用に構成する詳細なガイダンスについては、「Defender for Endpoint の高度な機能を構成する」の記事を参照してください。 Microsoft Defender for Endpoint を構成した後、次の構成手順に戻ってください。
 

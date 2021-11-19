@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 02e2d3249bbec9c4c0c4211a53cae0cee1789c1f
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 06b5ecb4b07259392bc0d90465dbc1fa2459bd85
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60960852"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110537"
 ---
 # <a name="create-and-manage-roles-for-role-based-access-control"></a>役割ベースのアクセス制御の役割を作成および管理する
 
@@ -76,7 +76,7 @@ ms.locfileid: "60960852"
     > [!NOTE]
     > この設定は、Microsoft Defender for Endpoint 管理者 (既定) の役割でのみ使用できます。
 
-- **セキュリティ センターでセキュリティ設定** を管理する - アラート抑制設定の構成、オートメーション用のフォルダー除外の管理、オンボードデバイスとオフボード デバイスの管理、電子メール通知の管理、評価ラボの管理
+- **Defender for Cloud** のセキュリティ設定を管理する - アラート抑制設定の構成、オートメーション用のフォルダー除外の管理、オンボードデバイスとオフボード デバイスの管理、電子メール通知の管理、評価ラボの管理
 
 - **ライブ応答機能**
   - **基本的な** コマンド:

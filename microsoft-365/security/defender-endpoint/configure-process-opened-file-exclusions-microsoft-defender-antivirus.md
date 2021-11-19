@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 44107228cf0e05f43484bfb88a757335fe6c2b86
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: d8a83811f29bef94a58047445c85265a0dd1ad9c
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882731"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109721"
 ---
 # <a name="configure-exclusions-for-files-opened-by-processes"></a>プロセスによって開いたファイルの除外を構成する
 
@@ -80,7 +80,7 @@ PowerShell コマンドレットと WMI を使用して、リストの確認な�
     2. [オプション] **セクションで** 、[ **表示.... をクリックします**。
     3. [値名] 列の下に、各プロセス **を独自の行に入力** します。 さまざまな種類のプロセスの除外については、例の表を参照してください。 すべての **プロセスの [** 値] **列に 0** を入力します。
 
-5. **[OK]** をクリックします。
+5. [**OK**] をクリックします。
 
 ### <a name="use-powershell-cmdlets-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>PowerShell コマンドレットを使用して、指定したプロセスで開いたファイルをスキャンから除外する
 
@@ -172,7 +172,7 @@ MpCmdRun.exe -CheckExclusion -path <path>
 Get-MpPreference
 ```
 
-PowerShell[コマンドレットを](use-powershell-cmdlets-microsoft-defender-antivirus.md)構成して実行する方法の詳細については、「powerShell コマンドレットを使用して Microsoft Defender ウイルス対策 および[Defender](/powershell/module/defender)コマンドレットを構成および実行する」を参照Microsoft Defender ウイルス対策。
+PowerShell コマンドレットを構成および実行[するには、「powerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md)コマンドレット[](/powershell/module/defender)を使用Microsoft Defender ウイルス対策および Microsoft Defender ウイルス対策 コマンドレットを構成して実行する」を Microsoft Defender ウイルス対策参照してください。
 
 ### <a name="retrieve-a-specific-exclusions-list-by-using-powershell"></a>PowerShell を使用して特定の除外リストを取得する
 
@@ -183,7 +183,7 @@ $WDAVprefs = Get-MpPreference
 $WDAVprefs.ExclusionProcess
 ```
 
-PowerShell[コマンドレットを](use-powershell-cmdlets-microsoft-defender-antivirus.md)構成して実行する方法の詳細については、「powerShell コマンドレットを使用して Microsoft Defender ウイルス対策 および[Defender](/powershell/module/defender)コマンドレットを構成および実行する」を参照Microsoft Defender ウイルス対策。
+PowerShell コマンドレットを構成および実行[するには、「powerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md)コマンドレット[](/powershell/module/defender)を使用Microsoft Defender ウイルス対策および Microsoft Defender ウイルス対策 コマンドレットを構成して実行する」を Microsoft Defender ウイルス対策参照してください。
 
 ## <a name="related-articles"></a>関連記事
 

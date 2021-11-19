@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 381257ced0dd229ab0a28ea37ac82144e0cb2ec6
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 12a7bbaea045f24080241f092ea583ab051edf82
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60703202"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110249"
 ---
 # <a name="get-devices-onboarded-to-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint にオンボードされているデバイスを取得する
 
@@ -47,7 +47,7 @@ ms.locfileid: "60703202"
 *Intune で管理されているデバイスのデバイスの総数と比較したオンボード デバイスをWindowsするカード*
 
 > [!NOTE]
-> セキュリティ センター構成マネージャー、オンボーディング スクリプト、または Intune プロファイルを使用しないその他のオンボーディング 方法を使用した場合、データの不一致が発生する可能性があります。 これらの不一致を解決するには、Defender for Endpoint オンボーディングに対応する Intune 構成プロファイルを作成し、そのプロファイルをデバイスに割り当てる必要があります。
+> Configuration Manager、オンボーディング スクリプト、または Intune プロファイルを使用しない他のオンボーディング メソッドを使用した場合、データの不一致が発生する可能性があります。 これらの不一致を解決するには、Defender for Endpoint オンボーディングに対応する Intune 構成プロファイルを作成し、そのプロファイルをデバイスに割り当てる必要があります。
 
 ## <a name="onboard-more-devices-with-intune-profiles"></a>Intune プロファイルを使用して他のデバイスをオンボードする
 

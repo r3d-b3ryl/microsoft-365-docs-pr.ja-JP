@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 8dd5b5f94a8c418cc8d077d785c73c968c40c3bc
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 111e8d20f6d01f124b87cf29fac39ac55ffd4e35
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202371"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111737"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>ID とそれ以降の 1 つのアーキテクトの視点
 
@@ -42,7 +42,7 @@ ms.locfileid: "60202371"
 - **多くの場合、** シンプルな方が優れた方法です。テクノロジを使って何でも実行できますが、そうする必要があるという意味ではありません。 特にセキュリティ領域では、多くのお客様がソリューションをオーバーエンジナーします。 この点 [を強調するために](https://www.youtube.com/watch?v=SOQgABDSYZE) 、Google の Stripe 会議のこのビデオが好きです。
 - **人、プロセス、テクノロジ**: [最初に技術ではなく](https://en.wikipedia.org/wiki/Human-centered_design) 、プロセスを強化するユーザー向け設計。 "完全な" ソリューションはありません。 さまざまなリスク要因のバランスを取る必要があります。ビジネスごとに決定が異なります。 ユーザーが後で避けるアプローチを設計する顧客が多すぎます。
 - **最初に 「なぜ」、後で 「方法**」に焦点を当てる: 100万の質問を持つ迷惑な 7-yr 古い子供になります。 正しい質問が分からない場合は、正しい回答を得る必要があります。 多くの顧客は、ビジネス上の問題を定義する代わりに、物事がどのように機能する必要があるのかについて仮定しています。 実行できるパスは常に複数です。
-- **過去のベスト プラクティスの長い尾**: ベスト プラクティスが軽い速度で変化することを認識します。 3 か月以上前に Azure ADを見た場合は、現在の日付が更新されている可能性があります。 ここに記載されている内容はすべて、公開後に変更される場合があります。 今日の "ベスト" オプションは、今から 6 か月後に同じではない可能性があります。
+- **過去のベスト プラクティスの長い尾**: ベスト プラクティスが軽い速度で変化することを認識します。 3 か月以上前にAzure ADを確認した場合は、現在の日付が更新されている可能性があります。 ここに記載されている内容はすべて、公開後に変更される場合があります。 今日の "ベスト" オプションは、今から 6 か月後に同じではない可能性があります。
 
 ## <a name="baseline-concepts"></a>ベースラインの概念
 
@@ -58,10 +58,10 @@ ms.locfileid: "60202371"
 
 図の説明
 
-- テナント = Azure サーバーのインスタンスAD。 これは、階層の "トップ"、または図のレベル 1 です。 これは、他のすべてが発生する["境界](/azure/active-directory/users-groups-roles/licensing-directory-independence)" と見なされます (Azure AD[B2B](/azure/active-directory/b2b/what-is-b2b) は別です)。 すべての Microsoft エンタープライズ クラウド サービスは、これらのテナントの 1 つの一部です。 コンシューマー サービスは別個です。 "Tenant" は、ドキュメントOffice 365 Azure テナント、WVD テナントなどとして表示されます。 多くの場合、これらのバリエーションは、顧客に混乱を引き起こします。
-- 図のレベル 2 であるサービス/サブスクリプションは、1 つのテナントにのみ属します。 ほとんどの SaaS サービスは 1:1 であり、移行なしでは移動できない。 Azure は異なるので、課金 [や](/azure/cost-management-billing/manage/billing-subscription-transfer) サブスクリプションを別の [テナント](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory) に移動できます。 Azure サブスクリプションを移動する必要があるお客様は多数います。 これにはさまざまな意味があります。 サブスクリプションの外部に存在するオブジェクトは移動しません (役割ベースのアクセス制御、Azure RBAC、グループ、アプリ、ポリシーなどの Azure AD オブジェクトなど)。 また、一部のサービス (Azure Key Vault、Data Bricks など)。 ビジネス上の必要のないサービスを移行しない。 移行に役立つ一部のスクリプトは[、GitHub。](https://github.com/lwajswaj/azure-tenant-migration)
-- 特定のサービスには、通常、何らかの種類の "サブレベル" 境界、またはレベル 3 (L3) があります。 これは、セキュリティ、ポリシー、ガバナンスの分離などについて理解する場合に役立ちます。 残念ながら、私が知っている統一された名前はありません。 L3 の名前の例としては、Azure Subscription = [resource があります](/azure/azure-resource-manager/management/manage-resources-portal)。Dynamics 365 CE =[インスタンス](/dynamics365/admin/new-instance-management);Power BI =[ワークスペース](/power-bi/service-create-the-new-workspaces);Power Apps =[環境](/power-platform/admin/environments-overview);などなど。
-- レベル 4 は、実際のデータが保存されている場所です。 この 「データ プレーン」は複雑なトピックです。 一部のサービスは、RBAC AD Azure AD使用しています。他のサービスは使用しない場合があります。 委任に関するトピックが表示される場合は、少し説明します。
+- テナント = テナントのインスタンスAzure AD。 これは、階層の "トップ"、または図のレベル 1 です。 これを"境界" と見な[して](/azure/active-directory/users-groups-roles/licensing-directory-independence)、他のすべてが発生します[(B2B Azure ADします](/azure/active-directory/b2b/what-is-b2b))。 すべての Microsoft エンタープライズ クラウド サービスは、これらのテナントの 1 つの一部です。 コンシューマー サービスは別個です。 "Tenant" は、ドキュメントOffice 365 Azure テナント、WVD テナントなどとして表示されます。 多くの場合、これらのバリエーションは、顧客に混乱を引き起こします。
+- 図のレベル 2 であるサービス/サブスクリプションは、1 つのテナントにのみ属します。 ほとんどの SaaS サービスは 1:1 であり、移行なしでは移動できない。 Azure は異なるので、課金 [や](/azure/cost-management-billing/manage/billing-subscription-transfer) サブスクリプションを別の [テナント](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory) に移動できます。 Azure サブスクリプションを移動する必要があるお客様は多数います。 これにはさまざまな意味があります。 サブスクリプションの外部に存在するオブジェクトは移動しません (たとえば、役割ベースのアクセス制御、Azure RBAC、グループ、アプリ、ポリシーなどの Azure AD オブジェクトなど)。 また、一部のサービス (Azure Key Vault、Data Bricks など)。 ビジネス上の必要のないサービスを移行しない。 移行に役立つ一部のスクリプトは[、GitHub。](https://github.com/lwajswaj/azure-tenant-migration)
+- 特定のサービスには、通常、何らかの種類の "サブレベル" 境界、またはレベル 3 (L3) があります。 これは、セキュリティ、ポリシー、ガバナンスの分離などについて理解する場合に役立ちます。 残念ながら、私が知っている統一された名前はありません。 L3 の名前の例としては、Azure Subscription = [resource があります](/azure/azure-resource-manager/management/manage-resources-portal)。Dynamics 365 CE =[インスタンス](/dynamics365/admin/new-instance-management);Power BI =[ワークスペース](/power-bi/service-create-the-new-workspaces);Power Apps =[環境](/power-platform/admin/environments-overview);など。
+- レベル 4 は、実際のデータが保存されている場所です。 この 「データ プレーン」は複雑なトピックです。 一部のサービスは RBAC Azure ADを使用しています。他のサービスは使用しない場合があります。 委任に関するトピックが表示される場合は、少し説明します。
 
 多くのお客様 (および Microsoft の従業員) が混乱したり、次のような質問がある場合は、いくつかの追加概念を見つける必要があります。
 
@@ -71,18 +71,18 @@ ms.locfileid: "60202371"
 - DNS 名前空間を所有している場合は、テナントにこれらすべての名前空間を追加する必要があります。 それ以外の場合は、[](/azure/active-directory/users-groups-roles/directory-self-service-signup)この名前の管理されていないテナントを作成し、そのテナントを管理[するために中断を引き起こす可能性があります](/azure/active-directory/users-groups-roles/domains-admin-takeover)。
 - DNS 名前空間 (contoso.com など) は、1 つのテナントにのみ属できます。 これは、さまざまなシナリオ (たとえば、合併または買収中に電子メール ドメインを共有するなど) に影響を与えます。 別のテナントに DNS サブ (div.contoso.com など) を登録する方法がありますが、これは避ける必要があります。 トップ レベルのドメイン名を登録すると、すべてのサブドメインが同じテナントに属すると見なされます。 マルチテナントのシナリオ (以下を参照) では、通常、別のトップ レベルのドメイン名 (contoso.ch や ch-contoso.com など) を使用することをお勧めします。
 - Whoテナントを "所有" する必要がありますか? テナントを現在所有しているユーザーを知らないお客様はよく見かけ取ります。 これは大きな赤いフラグです。 Microsoft サポートを ASAP に呼び出します。 同じ問題は、サービス所有者 (多くの場合、管理者Exchange) がテナントの管理に指定されている場合です。 テナントには、将来必要なすべてのサービスが含まれる可能性があります。 テナントの所有者は、組織内のすべてのクラウド サービスの有効化を決定できるグループである必要があります。 もう 1 つの問題は、テナント所有者グループに対してすべてのサービスの管理を求める場合です。 これは大規模な組織では拡大縮小は行わない。
-- サブ/スーパー テナントの概念はありません。 何らかの理由で、この神話は繰り返し続ける。 これは [、Azure AD B2C](/azure/active-directory-b2c/) テナントにも適用されます。 「自分の B2C 環境が XYZ テナントにある」、または「Azure テナントを自分のテナントに移動する方法Office 365です。
+- サブ/スーパー テナントの概念はありません。 何らかの理由で、この神話は繰り返し続ける。 これは[、B2C Azure ADにも](/azure/active-directory-b2c/)適用されます。 「自分の B2C 環境が XYZ テナントにある」、または「Azure テナントを自分のテナントに移動する方法Office 365です。
 - このドキュメントでは、ほとんどのお客様が使用している商用の世界規模のクラウドに主に焦点を当てています。 ソブリン クラウドについて知って [便利な場合があります](/azure/active-directory/develop/authentication-national-cloud)。 ソブリン クラウドには、この議論の対象範囲を超えるものについて議論する追加の意味があります。
 
 ## <a name="baseline-identity-topics"></a>ベースライン ID のトピック
 
-Microsoft の ID プラットフォーム (Azure Azure Active Directory) に関する多くのAD。 始め始めつ間近の人には、多くの場合、圧倒的な気持ちになります。 そのことを学んだ後も、常に革新と変化に取り組むのは難しい場合があります。 顧客とのやり取りでは、多くの場合、ビジネス目標と、これらに対処するための "Good, Better, Best" アプローチ (およびこれらのトピックの人間の "崖のメモ") の間の "翻訳者" として機能しています。 完璧な答えはめったに見当たりませんが、"正しい" 決定はさまざまなリスク要因のバランスです。 以下は、お客様と話し合う傾向がある一般的な質問と混乱の分野の一部です。
+Microsoft の ID プラットフォームに関するドキュメントは、Azure Active Directory (Azure AD)。 始め始めつ間近の人には、多くの場合、圧倒的な気持ちになります。 そのことを学んだ後も、常に革新と変化に取り組むのは難しい場合があります。 顧客とのやり取りでは、多くの場合、ビジネス目標と、これらに対処するための "Good, Better, Best" アプローチ (およびこれらのトピックの人間の "崖のメモ") の間の "翻訳者" として機能しています。 完璧な答えはめったに見当たりませんが、"正しい" 決定はさまざまなリスク要因のバランスです。 以下は、お客様と話し合う傾向がある一般的な質問と混乱の分野の一部です。
 
 ### <a name="provisioning"></a>プロビジョニング
 
-Azure ADは、ID の世界におけるガバナンスの欠如を解決しません。 [ID ガバナンスは](/azure/active-directory/governance/identity-governance-overview) 、クラウド上の決定に依存しない重要な要素である必要があります。 ガバナンス要件は時間の間に変化します。これは、プログラムであり、ツールではない理由です。
+Azure ADのガバナンスの欠如は解決しません。 [ID ガバナンスは](/azure/active-directory/governance/identity-governance-overview) 、クラウド上の決定に依存しない重要な要素である必要があります。 ガバナンス要件は時間の間に変化します。これは、プログラムであり、ツールではない理由です。
 
-[Azure AD Connect](/azure/active-directory/hybrid/whatis-azure-ad-connect)[対Microsoft Identity Manager](/microsoft-identity-manager/microsoft-identity-manager-2016) (MIM) vs. 何か他の (サード パーティまたはカスタム) か。 今も将来も多くの頭痛を自分で保存し、Azure AD Connect。 このツールには、顧客特有の構成や継続的な技術革新に対処するためのあらゆる種類のスマートがあります。
+[Azure AD Connect](/azure/active-directory/hybrid/whatis-azure-ad-connect) (Microsoft Identity Manager)[](/microsoft-identity-manager/microsoft-identity-manager-2016)とMIM (サード パーティまたはカスタム) の場合 今と将来の頭痛の多くを自分で保存し、Azure AD Connect。 このツールには、顧客特有の構成や継続的な技術革新に対処するためのあらゆる種類のスマートがあります。
 
 より複雑なアーキテクチャに向かって動く可能性のあるいくつかのエッジ ケース:
 
@@ -92,7 +92,7 @@ Azure ADは、ID の世界におけるガバナンスの欠如を解決しませ
 
 既定の同期ルール (フィルター オブジェクト、[属性](/azure/active-directory/hybrid/how-to-connect-sync-configure-filtering)[の変更](/azure/active-directory/hybrid/reference-connect-sync-attributes-synchronized)、[代替ログイン ID](/azure/active-directory/hybrid/plan-connect-userprincipalname)など) をカスタマイズする必要がありますか。 それを避ける! ID プラットフォームは、それを使用するサービスと同じ価値があります。 あらゆる種類の構成を行えますが、この質問に答えるには、アプリケーションへの影響を確認する必要があります。 メールが有効なオブジェクトをフィルター処理すると、オンライン サービスの GAL は不完全になります。アプリケーションが特定の属性に依存している場合、これらをフィルター処理すると予期しない影響を受け取る可能性があります。などなど。 ID チームの決定ではありません。
 
-XYZ SaaS は Just-in-Time (JIT) プロビジョニングをサポートしています。なぜ同期が必要なのですか? 上記を参照してください。 多くのアプリケーションでは、機能の "プロファイル" 情報が必要です。 メールが有効なすべてのオブジェクトが使用できない場合は、GAL を使用できません。 Azure アプリケーションと統合 [されたアプリケーションでの](/azure/active-directory/app-provisioning/user-provisioning) ユーザー プロビジョニングにも同様AD。
+XYZ SaaS は Just-in-Time (JIT) プロビジョニングをサポートしています。なぜ同期が必要なのですか? 上記を参照してください。 多くのアプリケーションでは、機能の "プロファイル" 情報が必要です。 メールが有効なすべてのオブジェクトが使用できない場合は、GAL を使用できません。 同じことが、アプリケーション[と](/azure/active-directory/app-provisioning/user-provisioning)統合されたアプリケーションでのユーザー プロビジョニングAzure AD。
 
 ### <a name="authentication"></a>認証
 
@@ -103,7 +103,7 @@ XYZ SaaS は Just-in-Time (JIT) プロビジョニングをサポートしてい
 一部のお客様は、主に次の場合にフェデレーション + PHS を有効にしています。
 
 - フェデレーション サービス [が利用できない](/azure/active-directory/hybrid/plan-migrate-adfs-password-hash-sync) 場合に (障害復旧の場合) に戻るオプション。
-- その他の機能 (例: [Azure AD DS)](/azure/active-directory-domain-services/tutorial-configure-password-hash-sync)とセキュリティ サービス (例: 漏洩 [した資格情報](/azure/active-directory/reports-monitoring/concept-risk-events#leaked-credentials))
+- 追加機能 (例: [Azure AD DS)](/azure/active-directory-domain-services/tutorial-configure-password-hash-sync)とセキュリティ サービス (例: 漏洩[した資格情報](/azure/active-directory/reports-monitoring/concept-risk-events#leaked-credentials))
 - フェデレーション認証を理解していない Azure のサービス [(Azure Files](/azure/storage/files/storage-files-active-directory-overview)など) のサポート。
 
 多くの場合、クライアント認証フローを通じて顧客を見て、誤解を明確にします。 結果は下の図のようになります。これは、そこに行く対話的なプロセスほど良くはない。
@@ -112,17 +112,17 @@ XYZ SaaS は Just-in-Time (JIT) プロビジョニングをサポートしてい
 
 この種類のホワイトボード図面は、認証要求のフロー内でセキュリティ ポリシーが適用される場所を示しています。 この例では、Active Directory フェデレーション サービス (AD FS) を通じて適用されるポリシーは、最初のサービス要求には適用されますが、それ以降のサービス要求には適用されません。 これは、セキュリティコントロールを可能な限りクラウドに移動する少なくとも 1 つの理由です。
 
-覚えている限り、シングル サインオン [(SSO)](/azure/active-directory/manage-apps/what-is-single-sign-on) の夢を追い続け続け続け、 一部のお客様は、"正しい" フェデレーション (STS) プロバイダーを選択することでこれを実現できると考えています。 Azure ADは SSO 機能を有効 [にするのに](/azure/active-directory/manage-apps/plan-sso-deployment) 大きく役立ちますが、STS は魔法にかなっています。 重要なアプリケーションで使用される"レガシ" 認証方法が多すぎます。 パートナー ソリューションで Azure AD [を拡張すると、](/azure/active-directory/saas-apps/tutorial-list) これらの多くのシナリオに対処できます。 SSO は戦略とジャーニーです。 アプリケーションの標準に進む必要がない [場合は、そこに行く必要があります](/azure/active-directory/develop/v2-app-types)。 このトピックに関連する方法は、[](/azure/active-directory/authentication/concept-authentication-passwordless)パスワードレス認証への道のりで、魔法のような答えはありません。
+覚えている限り、シングル サインオン [(SSO)](/azure/active-directory/manage-apps/what-is-single-sign-on) の夢を追い続け続け続け、 一部のお客様は、"正しい" フェデレーション (STS) プロバイダーを選択することでこれを実現できると考えています。 Azure ADは SSO 機能[を有効にするのに](/azure/active-directory/manage-apps/plan-sso-deployment)大きく役立ちますが、STS は魔法のような機能はありません。 重要なアプリケーションで使用される"レガシ" 認証方法が多すぎます。 パートナー ソリューションAzure AD[を拡張すると、](/azure/active-directory/saas-apps/tutorial-list)これらの多くのシナリオに対処できます。 SSO は戦略とジャーニーです。 アプリケーションの標準に進む必要がない [場合は、そこに行く必要があります](/azure/active-directory/develop/v2-app-types)。 このトピックに関連する方法は、[](/azure/active-directory/authentication/concept-authentication-passwordless)パスワードレス認証への道のりで、魔法のような答えはありません。
 
-[多要素認証](/azure/active-directory/authentication/concept-mfa-howitworks) (MFA) は今日不可欠です ([詳細については、こちらを](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/your-pa-word-doesn-t-matter/ba-p/731984) 参照)。 ユーザーの行動 [分析に追加](/azure/active-directory/authentication/tutorial-risk-based-sspr-mfa) すると、最も一般的なサイバー攻撃を防止するソリューションが用意されています。 コンシューマー サービスでさえ、MFA が必要に移行しています。 それでも、最新の認証アプローチに移行したくない多くの顧客と [まだ会](../enterprise/hybrid-modern-auth-overview.md) っています。 私が聞く最大の引数は、ユーザーと従来のアプリケーションに影響を与えるという話です。 場合によっては、お客様が変更を発表した場合、お客様Exchange Online[役立つ場合があります](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-auth-and-exchange-online-february-2020-update/ba-p/1191282)。 多くの Azure AD [レポートが](/azure/active-directory/fundamentals/concept-fundamentals-block-legacy-authentication) 、この移行のお客様を支援するために利用できます。
+[多要素認証](/azure/active-directory/authentication/concept-mfa-howitworks) (MFA) は今日不可欠です ([詳細については、こちらを](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/your-pa-word-doesn-t-matter/ba-p/731984) 参照)。 ユーザーの行動 [分析に追加](/azure/active-directory/authentication/tutorial-risk-based-sspr-mfa) すると、最も一般的なサイバー攻撃を防止するソリューションが用意されています。 コンシューマー サービスでさえ、MFA が必要に移行しています。 それでも、最新の認証アプローチに移行したくない多くの顧客と [まだ会](../enterprise/hybrid-modern-auth-overview.md) っています。 私が聞く最大の引数は、ユーザーと従来のアプリケーションに影響を与えるという話です。 場合によっては、お客様が変更を発表した場合、お客様Exchange Online[役立つ場合があります](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-auth-and-exchange-online-february-2020-update/ba-p/1191282)。 この移行Azure AD[に役立](/azure/active-directory/fundamentals/concept-fundamentals-block-legacy-authentication)つ多数のレポートが利用できます。
 
 ### <a name="authorization"></a>Authorization
 
 Wikipedia [ごとに、"](https://en.wikipedia.org/wiki/Authorization)承認する" のは、アクセス ポリシーを定義する方法です。 多くのユーザーは、オブジェクト (ファイル、サービスなど) へのアクセス制御を定義する機能と見なします。 現在のサイバー脅威の世界では、この概念は、さまざまな脅威ベクトルに対応し、それに応じてアクセス制御をすばやく調整できる動的ポリシーに急速に進化しています。 たとえば、異常な場所から銀行口座にアクセスすると、追加の確認手順が表示されます。 この点に取り組むには、ポリシー自体だけでなく、脅威検出とシグナル相関の手法のエコシステムも考慮する必要があります。
 
-Azure ADのポリシー エンジンは、条件付き [アクセス ポリシーを使用して実装されます](/azure/active-directory/conditional-access/overview)。 このシステムは、動的な意思決定を行うさまざまな他の脅威検出システムからの情報に依存します。 単純なビューは、次の図のようになります。
+条件付きアクセス ポリシーをAzure ADポリシー[エンジンが実装されます](/azure/active-directory/conditional-access/overview)。 このシステムは、動的な意思決定を行うさまざまな他の脅威検出システムからの情報に依存します。 単純なビューは、次の図のようになります。
 
-![Azure のポリシー エンジンAD。](../media/solutions-architecture-center/identity-and-beyond-illustration-3.png)
+![[ポリシー エンジン] Azure AD。](../media/solutions-architecture-center/identity-and-beyond-illustration-3.png)
 
 これらすべての信号を組み合わせることで、次のような動的ポリシーが可能です。
 
@@ -136,17 +136,17 @@ Azure ADのポリシー エンジンは、条件付き [アクセス ポリシ�
 - [Microsoft Defender for Identity](/azure-advanced-threat-protection/)
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
 - [Microsoft Defender for Office 365](../security/office-365-security/defender-for-office-365.md)
-- [Microsoft Cloud App Security](/cloud-app-security/) (MCAS)
+- [Microsoft Defender for Cloud Apps](/cloud-app-security/) (Defender for Cloud Apps)
 - [Microsoft 365 Defender](../security/defender/microsoft-365-defender.md)
 - [Microsoft Intune](/mem/intune/)
 - [Microsoft Information Protection](../compliance/information-protection.md) (MIP)
-- [Azure Sentinel](/azure/sentinel/)
+- [Microsoft Sentinel](/azure/sentinel/)
 
-もちろん、Azure ADに加えて、さまざまなサービスやアプリケーションには独自の承認モデルがあります。 これらのいくつかについては、後の「委任」セクションで説明します。
+もちろん、さまざまなサービスやアプリケーションにはAzure AD固有の承認モデルがあります。 これらのいくつかについては、後の「委任」セクションで説明します。
 
 ### <a name="audit"></a>監査
 
-Azure ADには、詳細 [な監査およびレポート機能](/azure/active-directory/reports-monitoring/) があります。 ただし、セキュリティ上の意思決定に必要な情報のソースは、通常はこれが唯一ではありません。 詳細については、「委任」セクションをご覧ください。
+Azure AD詳細な[監査およびレポート機能があります](/azure/active-directory/reports-monitoring/)。 ただし、セキュリティ上の意思決定に必要な情報のソースは、通常はこれが唯一ではありません。 詳細については、「委任」セクションをご覧ください。
 
 ## <a name="theres-no-exchange"></a>何もExchange
 
@@ -154,7 +154,7 @@ Azure ADには、詳細 [な監査およびレポート機能](/azure/active-dir
 
 ![メールにファイルを添付する。](../media/solutions-architecture-center/modern-attachments.png)
 
-このクライアントOutlook見て、このエクスペリエンスの一部として"接続" されている多くのサービスを確認Exchange。 これには、Azure AD、Microsoft Search、アプリ、プロファイル、コンプライアンス、およびグループOffice 365含まれます。
+このクライアントOutlook見て、このエクスペリエンスの一部として"接続" されている多くのサービスを確認Exchange。 これには、Azure AD、Microsoft Search、プロファイル、コンプライアンス、およびグループOffice 365含まれます。
 
 ![Outlook吹き出し付きインターフェイス。](../media/solutions-architecture-center/identity-and-beyond-conceptual-screenshot.png)
 
@@ -174,7 +174,7 @@ Azure ADには、詳細 [な監査およびレポート機能](/azure/active-dir
 
 ### <a name="single-tenant-vs-multi-tenant"></a>単一テナントとマルチテナント
 
-一般に、ほとんどのお客様は 1 つの実稼働テナントのみを使用する必要があります。 複数のテナントが難しい (検索を行う) 多くのBing理由や、[この](https://www.bing.com/search?q=office%20365%20multiple%20tenants)ホワイトペーパーを[読み取る必要があります](https://aka.ms/multi-tenant-user)。 同時に、私が一緒に働く多くのエンタープライズ顧客には、IT 学習、テスト、実験用の別の (小規模) テナントがあります。 Azure ライトハウスを使用すると、テナント間の Azure アクセス [が容易になります](https://azure.microsoft.com/services/azure-lighthouse/)。 Office 365その他の多くの SaaS サービスには、テナント間のシナリオに制限があります。 Azure の [B2B シナリオでは、AD検討する必要](/azure/active-directory/b2b/what-is-b2b) があります。
+一般に、ほとんどのお客様は 1 つの実稼働テナントのみを使用する必要があります。 複数のテナントが難しい (検索を行う) 多くのBing理由や、[この](https://www.bing.com/search?q=office%20365%20multiple%20tenants)ホワイトペーパーを[読み取る必要があります](https://aka.ms/multi-tenant-user)。 同時に、私が一緒に働く多くのエンタープライズ顧客には、IT 学習、テスト、実験用の別の (小規模) テナントがあります。 Azure ライトハウスを使用すると、テナント間の Azure アクセス [が容易になります](https://azure.microsoft.com/services/azure-lighthouse/)。 Office 365その他の多くの SaaS サービスには、テナント間のシナリオに制限があります。 B2B のシナリオでは[、Azure AD検討する必要](/azure/active-directory/b2b/what-is-b2b)があります。
 
 多くのお客様は、合併および買収 (M&A) の後に複数の生産テナントを終了し、統合を行う必要があります。 今日は単純ではなく、Microsoft Consulting Services (MCS) またはパートナーとサード パーティ製ソフトウェアが必要です。 今後、マルチテナントのお客様とのさまざまなシナリオに対応するエンジニアリング作業が進行中です。
 
@@ -189,53 +189,53 @@ Azure ADには、詳細 [な監査およびレポート機能](/azure/active-dir
 
 ### <a name="multi-geo"></a>Multi-Geo
 
-複数 [地域または複数](../enterprise/microsoft-365-multi-geo.md) 地域にしない場合は、それが問題です。 複数Office 365を使用すると、データ常駐の要件を満たすために選択した地域の場所に保存されているデータをプロビジョニング[および保存できます](../enterprise/o365-data-locations.md)。 この機能には多くの誤解があります。 以下の点にご注意ください:
+複数 [地域または複数](../enterprise/microsoft-365-multi-geo.md) 地域にしない場合は、それが問題です。 複数Office 365を使用すると、データ常駐の要件を満たすために選択した地域の場所に保存されているデータをプロビジョニング[および保存できます](../enterprise/o365-data-locations.md)。 この機能には多くの誤解があります。 以下の点にご注意ください。
 
 - パフォーマンス上の利点を提供する必要はない。 ネットワーク設計が正しく設定されていないと、 [パフォーマンスが](https://aka.ms/office365networking) 低下する可能性があります。 必ずしもデータではなく、Microsoft ネットワークにデバイスを "閉じる" 方法で取得します。
 - GDPR 準拠の [ソリューションではありません](https://www.microsoft.com/trust-center/privacy/gdpr-overview)。 GDPR は、データ主権やストレージの場所に焦点を当てない。 その他のコンプライアンス フレームワークがあります。
 - 管理の委任 (以下を参照) や情報バリア [は解決しません](../compliance/information-barriers.md)。
 - マルチテナントと同じではなく、追加のユーザー プロビジョニング [ワークフローが](https://github.com/MicrosoftDocs/azure-docs-pr/blob/master/articles/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation.md) 必要です。
-- テナント [(Azure アカウント)](../enterprise/moving-data-to-new-datacenter-geos.md) を別ADに移動する必要があります。
+- テナント ([自分の地域)](../enterprise/moving-data-to-new-datacenter-geos.md)を別Azure ADに移動する必要があります。
 
 ## <a name="delegation-of-administration"></a>管理の委任
 
 ほとんどの大規模な組織では、職務と役割ベースのアクセス制御 (RBAC) の分離が必要な現実です。 私は前もって謝るつもりです。 これは、一部の顧客が望むほど簡単ではありません。 顧客、法律、コンプライアンス、その他の要件は異なっています。また、世界中で競合する場合があります。 シンプルさと柔軟性は、多くの場合、互いに反対側に位置します。 私を間違え、これでより良い仕事をすることができます。 時間の長い間、大幅な改善が行なっています(今後も)。 379230 ドキュメントを読むことなく、ビジネス要件に合ったモデルを作成するには、お近くの [Microsoft](https://www.microsoft.com/mtc) テクノロジ センターにアクセスしてください。 ここでは、あなたが考えるべきものに焦点を当て、なぜそれがこの方法なのかに焦点を当てる必要はありません。 以下は、計画する 5 つの異なる領域と、私が遭遇した一般的な質問の一部です。
 
-### <a name="azure-ad-and-microsoft-365-admin-centers"></a>Azure ADおよびMicrosoft 365管理センター
+### <a name="azure-ad-and-microsoft-365-admin-centers"></a>Azure AD管理センター Microsoft 365管理センター
 
 組み込みの役割の長く成長 [しているリストがあります](/azure/active-directory/roles/permissions-reference)。 各役割は、特定のアクションを実行するためにグループ化された役割のアクセス許可の一覧で構成されます。 これらのアクセス許可は、各ロール内の [説明] タブで確認できます。 または、これらのより人間が読み取り可能なバージョンを、Microsoft 365 管理できます。 組み込みロールの定義は変更できません。 一般的に、これらを 3 つのカテゴリにグループ化します。
 
-- **グローバル管理者**: この "すべての強力な"[](../enterprise/protect-your-global-administrator-accounts.md)役割は、他のシステムと同様に高度に保護する必要があります。 一般的な推奨事項には、永続的な割り当てなしと Azure AD Privileged Identity Management (PIM) の使用が含まれます。強力な認証。などなど。 興味深いことに、この役割は既定ではすべてのアクセス権を与えるという意味ではないものです。 通常、コンプライアンス アクセスと Azure アクセスについては、後で説明します。 ただし、この役割では、テナント内の他のサービスへのアクセスを常に割り当てできます。
+- **グローバル管理者**: この "すべての強力な"[](../enterprise/protect-your-global-administrator-accounts.md)役割は、他のシステムと同様に高度に保護する必要があります。 一般的な推奨事項には、永続的な割り当てはAzure AD Privileged Identity Management(PIM)、強力な認証などです。 興味深いことに、この役割は既定ではすべてのアクセス権を与えるという意味ではないものです。 通常、コンプライアンス アクセスと Azure アクセスについては、後で説明します。 ただし、この役割では、テナント内の他のサービスへのアクセスを常に割り当てできます。
 - **特定のサービス** 管理者: 一部のサービス (Exchange、SharePoint、Power BI など) は、Azure AD から高レベルの管理役割を使用します。 これは、すべてのサービスで一貫しているのではないし、後で説明するサービス固有の役割が多い。
 - **機能**: 特定の操作 (ゲスト招待者など) に焦点を当てたロールの長い (および成長している) リストがあります。 定期的に、これらの多くが顧客のニーズに基づいて追加されます。
 
 すべてを委任できません (ただし、ギャップは減少しています)、グローバル管理者の役割を使用する必要がある場合があります。 コードとしての構成と自動化は、この役割のユーザー メンバーシップではなく考慮する必要があります。
 
-**注**: このMicrosoft 365 管理センターインターフェイスはユーザーフレンドリーですが、Azure 管理者エクスペリエンスと比較して機能のサブセットADがあります。 どちらのポータルも同じ Azure ADロールを使用します。そのため、変更は同じ場所で行っています。 ヒント: すべての Azure を煩雑にせずに ID 管理に重点を置いて管理 UI を使用する場合は、 を使用します <https://aad.portal.azure.com> 。
+**注**: Microsoft 365 管理センターインターフェイスはユーザーフレンドリーですが、管理者エクスペリエンスと比較して機能のサブセットAzure ADがあります。 どちらのポータルも同じ役割Azure AD使用します。そのため、変更は同じ場所で行っています。 ヒント: すべての Azure を煩雑にせずに ID 管理に重点を置いて管理 UI を使用する場合は、 を使用します <https://aad.portal.azure.com> 。
 
 名前には何がありますか? 役割の名前を前提としない。 言語は非常に正確なツールではありません。 目標は、必要な役割を確認する前に委任する必要がある操作を定義する必要があります。 "Security Reader" ロールに誰かを追加しても、すべてのユーザーにセキュリティ設定が表示されるという問題はありません。
 
-カスタム ロールを作成 [する機能は](/azure/active-directory/users-groups-roles/roles-custom-overview) 、一般的な質問です。 これは、現在の Azure AD制限されますが (以下を参照)、時間の間に機能が拡大します。 これらは Azure AD の関数に適用できると考え、階層モデル (上記で説明) にまたがって "ダウン" できない可能性があります。 "カスタム" を扱うたびに、"simple is better" のプリンシパルに戻る傾向があります。
+カスタム ロールを作成 [する機能は](/azure/active-directory/users-groups-roles/roles-custom-overview) 、一般的な質問です。 これは、現在のAzure AD制限されますが(以下を参照)、時間の間に機能が拡大します。 これらの機能は、Azure ADの関数に適用できると考え、階層モデル (上で説明) を "ダウン" することはできません。 "カスタム" を扱うたびに、"simple is better" のプリンシパルに戻る傾向があります。
 
-もう 1 つの一般的な質問は、役割をディレクトリのサブセットにスコープ設定する機能です。 1 つの例は、「EU のユーザー専用のヘルプデスク管理者」のようなものです。 [管理単位](/azure/active-directory/users-groups-roles/directory-administrative-units) (AU) は、この問題に対処することを目的とします。 上記と同様に、これらの機能は Azure ADに適用され、"down" に及びない可能性があります。 もちろん、特定の役割はスコープ (グローバル管理者、サービス管理者など) には意味がありません。
+もう 1 つの一般的な質問は、役割をディレクトリのサブセットにスコープ設定する機能です。 1 つの例は、「EU のユーザー専用のヘルプデスク管理者」のようなものです。 [管理単位](/azure/active-directory/users-groups-roles/directory-administrative-units) (AU) は、この問題に対処することを目的とします。 上記と同様に、これらの機能は、Azure ADに適用され、"down" に及びない可能性があります。 もちろん、特定の役割はスコープ (グローバル管理者、サービス管理者など) には意味がありません。
 
-今日では、これらのすべてのロールに直接メンバーシップ (または Azure の PIM を使用する場合は動的割 [り当て) がADされています](/azure/active-directory/privileged-identity-management/)。 つまり、お客様は Azure ADでこれらを直接管理する必要があります。これらはセキュリティ グループ のメンバーシップに基づくものにすることはできません。 昇格された権限で実行する必要がある場合、これらを管理するためのスクリプトを作成するファンではありません。 一般に、ServiceNow のようなプロセス システムとの API 統合や、Saviynt のようなパートナー ガバナンス ツールの使用をお勧めします。 この問題に時間の間に取り組むエンジニアリング作業が行なっています。
+今日、これらのすべての役割には、直接メンバーシップ (または PIM を使用する場合は動的割[り当Azure AD必要です](/azure/active-directory/privileged-identity-management/)。 つまり、ユーザーはセキュリティ グループのメンバーシップに基づいてAzure ADを直接管理する必要があります。 昇格された権限で実行する必要がある場合、これらを管理するためのスクリプトを作成するファンではありません。 一般に、ServiceNow のようなプロセス システムとの API 統合や、Saviynt のようなパートナー ガバナンス ツールの使用をお勧めします。 この問題に時間の間に取り組むエンジニアリング作業が行なっています。
 
-Azure AD [PIM について](/azure/active-directory/privileged-identity-management/) 何度か説明しました。 オンプレミスコントロールに対応Microsoft Identity Manager (MIM) 特権アクセス[管理](/microsoft-identity-manager/pam/privileged-identity-management-for-active-directory-domain-services)(PAM) ソリューションがあります。 また、Privileged Access [Workstations](/windows-server/identity/securing-privileged-access/privileged-access-workstations) (PAWs) と [Azure ADを参照してください](/azure/active-directory/governance/identity-governance-overview)。 また、さまざまなサード パーティ製ツールもあります。このツールを使用すると、Just-in-time、Just-enough、および動的な役割昇格を有効にできます。 これは通常、環境を保護するためのより大きな議論の一部です。
+PIM について[Azure AD何度](/azure/active-directory/privileged-identity-management/)か説明しました。 オンプレミスコントロールに対応Microsoft Identity Manager (MIM) 特権アクセス[管理](/microsoft-identity-manager/pam/privileged-identity-management-for-active-directory-domain-services)(PAM) ソリューションがあります。 また、特権アクセス ワークステーション[](/windows-server/identity/securing-privileged-access/privileged-access-workstations)(PAW) と ID ガバナンスAzure AD[する必要があります](/azure/active-directory/governance/identity-governance-overview)。 また、さまざまなサード パーティ製ツールもあります。このツールを使用すると、Just-in-time、Just-enough、および動的な役割昇格を有効にできます。 これは通常、環境を保護するためのより大きな議論の一部です。
 
-場合によっては、外部ユーザーを役割に追加するシナリオが呼び出される場合があります (上記の「マルチテナント」セクションを参照)。 これはうまく動作します。 [Azure AD B2B は](/azure/active-directory/b2b/) 、おそらく別の記事で、顧客を説明する大きな楽しいトピックです。
+場合によっては、外部ユーザーを役割に追加するシナリオが呼び出される場合があります (上記の「マルチテナント」セクションを参照)。 これはうまく動作します。 [Azure AD B2B は](/azure/active-directory/b2b/)、おそらく別の記事で、顧客を説明する大きな楽しいトピックです。
 
 ### <a name="security-and-compliance-center-scc"></a>セキュリティおよびコンプライアンス センター (SCC)
 
-[Office 365 セキュリティ](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)& コンプライアンス センターのアクセス許可は、Azure の役割とは別の "役割グループ" のADです。 これらの役割グループの中には、Azure AD ロール (セキュリティ リーダーなど) と同じ名前を持ち、異なるメンバーシップを持つ場合があります。 Azure の役割を使用ADします。 各役割グループは、1 つ以上の "ロール" (同じ単語を再利用する方法を参照してください)で構成され、Azure AD のメンバー (電子メールが有効なオブジェクト) があります。 また、役割と同じ名前の役割グループを作成できます。この役割を含む場合と含めない場合があります (この混乱を避けます)。
+[コンプライアンス センターの Office 365 セキュリティ](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)&アクセス許可は、役割とは別の "役割グループ" のAzure ADです。 これらの役割グループの中には、Azure AD ロール (セキュリティ リーダーなど) と同じ名前を持ち、異なるメンバーシップを持つ場合があります。 ロールを使用する方がAzure ADです。 各役割グループは、1 つ以上の "役割" (同じ単語を再利用する場合の意味を参照) で構成され、Azure AD のメンバー (電子メールが有効なオブジェクト) があります。 また、役割と同じ名前の役割グループを作成できます。この役割を含む場合と含めない場合があります (この混乱を避けます)。
 
 ある意味では、これらは役割グループ モデルExchange進化しています。 ただし、Exchange Online独自の役割[グループ管理インターフェイスがあります](/exchange/permissions-exo)。 Exchange Online の一部の役割グループは、Azure AD またはセキュリティ & コンプライアンス センターからロックおよび管理されますが、同じ名前または類似の名前を持ち、Exchange Online で管理される役割グループもあります (混乱を招く)。 管理にスコープが必要Exchange Online場合を限り、ユーザー インターフェイスを使用Exchange勧めします。
 
-カスタム ロールを作成できない。 役割は、Microsoft によって作成されたサービスによって定義され、新しいサービスが導入されるにつれて増加します。 これは概念的には、Azure [のアプリケーションで定義](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps) されたロールと似AD。 新しいサービスを有効にすると、多くの場合、新しい役割グループを作成して、アクセス権を付与または委任する必要があります (インサイダー リスク [管理など](../compliance/insider-risk-management-configure.md))。
+カスタム ロールを作成できない。 役割は、Microsoft によって作成されたサービスによって定義され、新しいサービスが導入されるにつれて増加します。 これは、概念的には、アプリケーション[で定義されたロール](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps)と似Azure AD。 新しいサービスを有効にすると、多くの場合、新しい役割グループを作成して、アクセス権を付与または委任する必要があります (インサイダー リスク [管理など](../compliance/insider-risk-management-configure.md))。
 
-また、これらの役割グループには直接メンバーシップが必要であり、Azure の役割グループADできません。 残念ながら、現在、これらの役割グループは、AZURE および PIM ADされていません。 Azure ADロールと同様に、API や Saviynt のようなパートナー ガバナンス製品を使用してこれらの管理を推奨する傾向があります。
+また、これらの役割グループには直接メンバーシップが必要であり、グループにAzure ADできません。 残念ながら、現在、これらの役割グループは PIM のAzure ADされていません。 役割Azure AD同様に、API や Saviynt のようなパートナー ガバナンス製品を使用して管理することをお勧めします。
 
-セキュリティ & コンプライアンス センターの役割は Microsoft 365 にまたがり、これらの役割グループを環境のサブセット (Azure AD の管理単位と同様に) にスコープ設定することはできません。 多くのお客様は、どのようにサブ代理を行うのかについて質問します。 たとえば、「EU ユーザー専用の DLP ポリシーを作成する」とします。 現在、セキュリティ コンプライアンス センターで特定の機能に対する権限を持っている&、テナント内のこの機能の対象となるすべての機能に対する権限を持っています。 ただし、多くのポリシーには、環境のサブセットを対象とする機能があります (たとえば、「これらのラベルを[](../compliance/create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)これらのユーザーのみが使用できる」など)。 適切なガバナンスとコミュニケーションは、競合を避けるための重要なコンポーネントです。 一部のお客様は、セキュリティ コンプライアンス センターでサブプロジェクトに対処するための "コードとしての構成" アプローチを実装&選択します。 一部の特定のサービスでは、サブプロジェクトがサポートされています (以下を参照)。
+セキュリティ & コンプライアンス センターの役割は Microsoft 365 にまたがり、これらの役割グループを環境のサブセット (Azure AD で管理単位を使用できる場合など) に範囲を設定することはできません。 多くのお客様は、どのようにサブ代理を行うのかについて質問します。 たとえば、「EU ユーザー専用の DLP ポリシーを作成する」とします。 現在、セキュリティ コンプライアンス センターで特定の機能に対する権限を持っている&、テナント内のこの機能の対象となるすべての機能に対する権限を持っています。 ただし、多くのポリシーには、環境のサブセットを対象とする機能があります (たとえば、「これらのラベルを[](../compliance/create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)これらのユーザーのみが使用できる」など)。 適切なガバナンスとコミュニケーションは、競合を避けるための重要なコンポーネントです。 一部のお客様は、セキュリティ コンプライアンス センターでサブプロジェクトに対処するための "コードとしての構成" アプローチを実装&選択します。 一部の特定のサービスでは、サブプロジェクトがサポートされています (以下を参照)。
 
 セキュリティ & コンプライアンス センター (protection.office.com) を通じて現在管理されているコントロールは、security.microsoft.com と compliance.microsoft.com の 2 つの別個の管理ポータルに移行中です。 変更は唯一の定数です。
 
@@ -269,7 +269,7 @@ Azure AD [PIM について](/azure/active-directory/privileged-identity-manageme
 - **MEM/Intune** - (/mem/intune/fundamentals/role-based-access-control)
 - **エンドポイント用 Microsoft Defender** - (/windows/security/threat-protection/microsoft-defender-atp/user-roles)
 - **Microsoft 365 Defender** - (../security/defender/m365d-permissions.md)
-- **Microsoft Cloud App Security** - (/cloud-app-security/manage-admins)
+- **Microsoft Defender for Cloud Apps** - (/cloud-app-security/manage-admins)
 - **Stream** - (/stream/assign-administrator-user-role)
 - **情報バリア** - (../compliance/information-barriers.md)
 
@@ -279,26 +279,26 @@ Office 365監査ログ[が統合されています](../compliance/search-the-aud
 
 他の API Microsoft 365アクセスされるログの例を次に示します。
 
-- [Azure AD](/azure/azure-monitor/platform/diagnostic-settings) (ユーザーに関連しないアクティビティOffice 365)
+- [Azure AD](/azure/azure-monitor/platform/diagnostic-settings) (グループに関連しないOffice 365)
 - [Exchangeメッセージ追跡](/powershell/module/exchange/get-messagetrace)
-- 上記で説明した脅威/UEBA システム (Azure AD Identity Protection、Microsoft Cloud App Security、Microsoft Defender for Endpoint など)
+- 上記で説明した脅威/UEBA システム (Azure AD Identity Protection、Microsoft Defender for Cloud Apps、Microsoft Defender for Endpoint など)
 - [Microsoft の情報保護](../compliance/data-classification-activity-explorer.md)
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/api-power-bi)
 - [Microsoft Graph](https://graph.microsoft.com)
 
 まず、セキュリティとコンプライアンス プログラムに必要なすべてのログ ソースを特定することが重要です。 また、ログごとにオンライン保持制限が異なる点にも注意してください。
 
-管理者委任の観点から見ると、Microsoft 365アクティビティ ログには組み込みの RBAC モデルが含まれます。 ログを表示するアクセス許可がある場合は、ログ内のすべての情報を表示できます。 顧客の要件の一般的な例は、「EU ユーザーに対してのみアクティビティをクエリする」(または他のディメンション)です。 この要件を実現するには、ログを別のサービスに転送する必要があります。 Microsoft クラウドでは、Azure [Sentinel](/azure/sentinel/overview) または Log Analytics に転送 [することをお勧めします](/azure/azure-monitor/learn/quick-create-workspace)。
+管理者委任の観点から見ると、Microsoft 365アクティビティ ログには組み込みの RBAC モデルが含まれます。 ログを表示するアクセス許可がある場合は、ログ内のすべての情報を表示できます。 顧客の要件の一般的な例は、「EU ユーザーに対してのみアクティビティをクエリする」(または他のディメンション)です。 この要件を実現するには、ログを別のサービスに転送する必要があります。 Microsoft クラウドでは、Microsoft [Sentinel](/azure/sentinel/overview) または Log Analytics に転送 [することをお勧めします](/azure/azure-monitor/learn/quick-create-workspace)。
 
 高レベルの図:
 
 ![セキュリティおよびコンプライアンス プログラムのログ ソースの図。](../media/solutions-architecture-center/identity-beyond-illustration-4.png)
 
-上の図は、イベント ハブや Azure Log Analytics にログを送信する組み込Azure Storageを表しています。 一部のシステムには、このアウトオブザボックスがまだ含まれる場合があります。 ただし、これらのログを同じリポジトリに送信する他の方法があります。 たとえば[、「Azure Sentinel を使用してTeams保護する」を参照してください](https://techcommunity.microsoft.com/t5/azure-sentinel/protecting-your-teams-with-azure-sentinel/ba-p/1265761)。
+上の図は、イベント ハブや Azure Log Analytics にログを送信する組み込Azure Storageを表しています。 一部のシステムには、このアウトオブザボックスがまだ含まれる場合があります。 ただし、これらのログを同じリポジトリに送信する他の方法があります。 たとえば[、「Microsoft Sentinel を使用してTeams保護する」を参照してください](https://techcommunity.microsoft.com/t5/azure-sentinel/protecting-your-teams-with-azure-sentinel/ba-p/1265761)。
 
 すべてのログを 1 つの保存場所に組み合わせるには、相互相関、カスタム保持時間、RBAC モデルをサポートするために必要なデータの拡張など、追加の利点があります。 このストレージ システムにデータが含まれると、適切な RBAC モデルPower BIダッシュボード (または別の種類の視覚化) を作成できます。
 
-ログは 1 つの場所にのみ向けられる必要があります。 また、ログを Office 365または[](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)カスタム RBAC モデルMicrosoft Cloud App Securityに統合する場合[Power BI。](../admin/usage-analytics/usage-analytics.md) リポジトリごとに利点と対象ユーザーが異なります。
+ログは 1 つの場所にのみ向けられる必要があります。 また、Microsoft Defender for Cloud Apps またはカスタム RBAC モデル[Office 365ログ](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)と統合する方が[有益](../admin/usage-analytics/usage-analytics.md)Power BI。 リポジトリごとに利点と対象ユーザーが異なります。
 
 Microsoft 365 Defender と呼ばれるサービスには、セキュリティ、脅威、脆弱性などのための非常に豊富な組み込みの分析[システムがあります](../security/defender/microsoft-365-defender.md)。
 
@@ -306,7 +306,7 @@ Microsoft 365 Defender と呼ばれるサービスには、セキュリティ、
 
 ### <a name="azure"></a>Azure
 
-Azure AD、Azure、SaaS の間で高い特権の役割を分離する方法がある場合(たとえば、Azure のグローバル管理者Office 365が、Azure ではない) という質問が頻繁に表示されます。  いやそうではありません。  完全な管理分離が必要な場合は、マルチテナント アーキテクチャが必要ですが、その場合は非常に複雑になります [(上記](https://aka.ms/multi-tenant-user) を参照)。 これらのサービスはすべて、同じセキュリティ/ID 境界の一部です (上記の階層モデルを参照してください)。
+多くの場合、Azure AD、Azure、SaaS の間で高い特権の役割を分離する方法が必要な場合があります (たとえば、Office 365 のグローバル管理者は Azure ではありません)。  いやそうではありません。  完全な管理分離が必要な場合は、マルチテナント アーキテクチャが必要ですが、その場合は非常に複雑になります [(上記](https://aka.ms/multi-tenant-user) を参照)。 これらのサービスはすべて、同じセキュリティ/ID 境界の一部です (上記の階層モデルを参照してください)。
 
 同じテナント内のさまざまなサービス間の関係を理解することが重要です。 Azure、Office 365、Power プラットフォーム (多くの場合はオンプレミスおよびサード パーティのクラウド サービス) にまたがるビジネス ソリューションを構築している多くのお客様と仕事をしています。 一般的な例を次に示します。
 
@@ -320,6 +320,6 @@ Azure Role-Based アクセス制御 (RBAC) を使用すると、Azure の詳細�
 
 上の図から分かっている通り、他の多くのサービスはデザインの一部として考慮する必要があります [(Azure Policies、Azure](/azure/governance/policy/overview) [Blueprints、Management](/azure/governance/blueprints/overview) [Groups](/azure/governance/management-groups/)など)。
 
-## <a name="conclusion"></a>終わりに
+## <a name="conclusion"></a>結論
 
 短い要約として開始され、予想よりも長く終わりました。  組織の委任モデルの作成に関する詳細な説明に取り組む準備が整いました。  この会話は、お客様と非常に一般的です。 すべてのユーザーに対応するモデルは 1 つはありません。 Microsoft エンジニアリングからいくつかの計画的な改善を待ち、お客様に共通のパターンを文書化します。 その間、Microsoft アカウント チームと一緒に、最寄りの Microsoft テクノロジ センターへの訪問 [を手配できます](https://www.microsoft.com/mtc)。  そこでお会いしましょう!

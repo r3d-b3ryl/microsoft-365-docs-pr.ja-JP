@@ -17,12 +17,12 @@ ms.collection:
 - remotework
 ms.custom: admindeeplinkDEFENDER
 description: ランサムウェア、フィッシング、悪意のある添付ファイルなどのサイバー脅威からビジネス メールとデータを保護します。
-ms.openlocfilehash: 91099106cd9c90b415382619ee9747b02033ff18
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: bc45df84ed1f8daa3faf5f042b7f3ca5c64c5625
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962537"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110645"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>自宅での作業をサポートするセキュリティ チームの上位 12 のタスク
 
@@ -54,11 +54,11 @@ Microsoft のエンタープライズ プランを使用しているお客様は
 |8 |[デバイス管理に PC を登録し、準拠している PC を必要とする](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)||![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |9 |[クラウド接続のためにネットワークを最適化する](#9-optimize-your-network-for-cloud-connectivity)|![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |10|[ユーザーのトレーニング](#10-train-users)|![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|11|[Microsoft Cloud App Security の使用を開始する](#11-get-started-with-microsoft-cloud-app-security)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|11|[Microsoft Defender for Cloud Apps の使用を開始する](#11-get-started-with-microsoft-defender-for-cloud-apps)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |12 |[脅威を監視し、アクションを実行する](#12-monitor-for-threats-and-take-action)|![含まれています。](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |
 
-開始する前に、セキュリティ[センター Microsoft 365の](./defender/microsoft-secure-score.md)セキュリティ スコアをMicrosoft 365<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">してください</a>。 一元化されたダッシュボードから、ID、データ、アプリ、デバイス、インフラストラクチャMicrosoft 365のセキュリティを監視および改善できます。 推奨されるセキュリティ機能を構成したり、セキュリティ関連のタスク (レポートの表示など) を実行したり、サードパーティのアプリケーションやソフトウェアを使用して推奨事項に対処したりするためのポイントが与えられる。 この記事で推奨されるタスクは、スコアを上げるとします。
+開始する前に、ポータル[Microsoft 365で](./defender/microsoft-secure-score.md)セキュリティで保護されたスコア<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">をMicrosoft 365 Defenderしてください</a>。 一元化されたダッシュボードから、ID、データ、アプリ、デバイス、インフラストラクチャMicrosoft 365のセキュリティを監視および改善できます。 推奨されるセキュリティ機能を構成したり、セキュリティ関連のタスク (レポートの表示など) を実行したり、サードパーティのアプリケーションやソフトウェアを使用して推奨事項に対処したりするためのポイントが与えられる。 この記事で推奨されるタスクは、スコアを上げるとします。
 
 ![Microsoft Secure Score のスクリーンショット。](../media/secure-score.png)
 
@@ -72,7 +72,7 @@ Microsoft のエンタープライズ プランを使用しているお客様は
 
 ****
 
-|プラン|推奨事項|
+|計画|推奨事項|
 |---|---|
 |Microsoft 365プラン (P1 または P2 Azure ADなし)|[Azure AD でセキュリティの既定値を有効にします](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。 Azure AD のセキュリティの既定値には、ユーザーと管理者用の MFA が含まれています。|
 |Microsoft 365 E3 (P1 Azure AD付き)|[一般的な条件付きアクセス ポリシー](/azure/active-directory/conditional-access/concept-conditional-access-policy-common)を使用して、次のポリシーを構成します。 <br/>- [管理者に MFA を要求する](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br/>- [すべてのユーザーに MFA を要求する](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br/> - [従来の認証をブロックする](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)|
@@ -122,7 +122,7 @@ Microsoft Defender for Office 365:
 
 ## <a name="5-turn-on-microsoft-365-defender"></a>5: 電源を入Microsoft 365 Defender
 
-Microsoft Defender for Office 365および Microsoft Defender for Identity が構成されたので、これらの機能からの結合された信号を 1 つのダッシュボードで表示できます。 [Microsoft 365 Defender](./defender/microsoft-365-defender.md)では、アラート、インシデント、自動調査と応答、およびワークロード全体の高度な検索 (Microsoft Defender for Identity、defender for Office 365、Microsoft Defender for Endpoint、および Microsoft Cloud App Security) を 1 つのウィンドウにまとめます<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">。Microsoft 365 セキュリティ センター</a>.
+Microsoft Defender for Office 365および Microsoft Defender for Identity が構成されたので、これらの機能からの結合された信号を 1 つのダッシュボードで表示できます。 [Microsoft 365 Defender](./defender/microsoft-365-defender.md)では、ワークロード全体にわたるアラート、インシデント、自動調査と対応、高度な検索 (Microsoft Defender for Identity、Office 365 の Defender、Microsoft Defender for Endpoint、および Microsoft Cloud App Security)<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">を 1 つのウィンドウにまとめます。Microsoft 365 Defender ポータル</a>.
 
 ![MTP ダッシュボードの図。](../media/top-ten-security-remote-work-mtp-dashboard.png)
 
@@ -229,21 +229,21 @@ Microsoft では、次の記事で推奨されるアクションを実行して�
 
 - [2 段階認証で Gmail アカウントを保護する](https://go.microsoft.com/fwlink/p/?linkid=2015688)
 
-## <a name="11-get-started-with-microsoft-cloud-app-security"></a>11: ユーザー設定のMicrosoft Cloud App Security
+## <a name="11-get-started-with-microsoft-defender-for-cloud-apps"></a>11: Microsoft Defender for Cloud Apps の使用を開始する
 
-[Microsoft Cloud App Security、](/cloud-app-security)豊富な可視性、データ移動の制御、高度な分析を提供し、すべてのクラウド サービスでサイバー脅威を特定し、対処します。 Cloud App Security の使用を開始すると、異常検出ポリシーは自動的に有効になりますが、Cloud App Security の初期学習期間は 7 日間で、すべての異常検出アラートが発生する必要があります。
+[Microsoft Defender for Cloud Apps は](/cloud-app-security) 、豊富な可視性、データ移動の制御、高度な分析を提供し、すべてのクラウド サービスでサイバー脅威を特定し、対処します。 Defender for Cloud Apps の使用を開始すると、異常検出ポリシーは自動的に有効になりますが、Defender for Cloud Apps の初期学習期間は 7 日間で、すべての異常検出アラートが発生する場合はそうではありません。
 
-今すぐ使用Cloud App Security始めましょう。 後で、より高度な監視と制御を設定できます。
+今すぐ Defender for Cloud Apps を使い始めましょう。 後で、より高度な監視と制御を設定できます。
 
-- [クイック スタート: クイック スタートCloud App Security](/cloud-app-security/getting-started-with-cloud-app-security)
+- [クイック スタート: Defender for Cloud Apps の使用を開始する](/cloud-app-security/getting-started-with-cloud-app-security)
 - [瞬時の行動分析と異常検出を取得する](/cloud-app-security/anomaly-detection-policy)
-- [詳細については、Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)
+- [Microsoft Defender for Cloud Apps の詳細](/cloud-app-security/what-is-cloud-app-security)
 - [新機能と機能を確認する](/cloud-app-security/release-notes)
 - [基本的なセットアップ手順を参照してください。](/cloud-app-security/general-setup)
 
 ## <a name="12-monitor-for-threats-and-take-action"></a>12: 脅威を監視し、アクションを実行する
 
-Microsoft 365を監視し、適切なアクションを実行する方法がいくつか含まれています。 最適な開始点は、Microsoft 365<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"></a>セキュリティ センターで、組織の[Microsoft Secure Score、](./defender/microsoft-secure-score.md)および注意を必要とするアラートまたはエンティティを表示できます。
+Microsoft 365を監視し、適切なアクションを実行する方法がいくつか含まれています。 最適な開始点は、Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"></a>ポータルであり、組織の[Microsoft Secure Score、](./defender/microsoft-secure-score.md)および注意を必要とするアラートまたはエンティティを表示できます。
 
 - [新しいポータルのMicrosoft 365 Defenderする](./defender/microsoft-365-defender.md#the-microsoft-365-defender-portal)
 - [「セキュリティ ポータル」を参照Microsoft 365](./defender/portals.md)
@@ -252,4 +252,4 @@ Microsoft 365を監視し、適切なアクションを実行する方法がい�
 
 おめでとうございます。 最も重要なセキュリティ保護の一部をすばやく実装し、組織の安全性が高い。 これで、脅威保護機能 (Microsoft Defender for Endpoint を含む)、データ分類と保護機能、および管理アカウントのセキュリティ保護を行う準備ができました。 セキュリティに関する推奨事項の詳細な方法については、「Microsoft 365セキュリティMicrosoft 365意思決定[者 (BDM)」を参照してください](Microsoft-365-security-for-bdm.md)。
 
-また、Microsoft の新しいセキュリティ センター (docs.microsoft.com/security) [にもアクセスしてください](/security)。
+また、Microsoft の新しい Defender for Cloud on docs.microsoft.com/security [をご覧ください](/security)。

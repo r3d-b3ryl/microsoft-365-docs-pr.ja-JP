@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3c769f0ddf3e986f96ff80c0dbf54b23f9b9eafc
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 556a76e2305de6137fa16303f9dcbf888384bee5
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753185"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111869"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>Android 上の Microsoft Defender for Endpoint の問題のトラブルシューティング
 
@@ -110,7 +110,7 @@ Defender App は、アプリのオンボーディングの一環としてデバ�
 
 **原因:**
 
-Xiaomi は、Android 11 のバッテリー最適化のアクセス許可を変更しました。 Defender は、バッテリーの最適化を無視するようにこの設定を構成することを許可されません。
+Xiaomi は、Android 11 のバッテリー最適化のアクセス許可を変更しました。 Defender for Endpoint では、バッテリーの最適化を無視するようにこの設定を構成できません。
 
 **解決方法:**
 
@@ -133,11 +133,11 @@ OEM と一緒に、アプリのオンボーディング画面からこのアク�
 
    ![[すべてのアプリ] を表示するドロップダウンを変更するには、手順 2 を実行します。](images/show-all-apps-1.png)
 
-5. [Microsoft Defender Endpoint] を見つけて、[ **最適化しない] を選択します**。
+5. [エンドポイント用 Microsoft Defender] を見つけて、[ **最適化しない] を選択します**。
 
-   ![[Microsoft Defender Endpoint] を見つけて、[最適化しない] を選択します。](images/select-dont-optimise.png)
+   ![[エンドポイント用 Microsoft Defender] を見つけて、[最適化しない] を選択します。](images/select-dont-optimise.png)
 
-[Microsoft Defender Endpoint オンボーディング] 画面に戻り、[ **許可**] を選択すると、ダッシュボード画面にリダイレクトされます。
+Microsoft Defender for Endpoint オンボーディング画面に戻り、[ **許可**] を選択すると、ダッシュボード画面にリダイレクトされます。
 
 ## <a name="send-in-app-feedback"></a>アプリ内フィードバックの送信
 

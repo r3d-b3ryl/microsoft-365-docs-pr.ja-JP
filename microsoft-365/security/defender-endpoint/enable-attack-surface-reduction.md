@@ -17,12 +17,12 @@ ms.topic: how-to
 ms.date: 10/14/2021
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 544d16919f039f7ac4ae7a7234b2b90c925a7329
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 1c5ee1fea543a18208d583b4acc5cc2f52acce7a
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962556"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111809"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>攻撃面の減少ルールを有効にする
 
@@ -36,7 +36,7 @@ ms.locfileid: "60962556"
 
 [攻撃表面の縮小ルール](attack-surface-reduction.md) (ASR ルール) は、マルウェアが頻繁にデバイスやネットワークを侵害するアクションを防ぐのに役立ちます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>Requirements
 
 複数のバージョンの攻撃表面Windows機能
 
@@ -56,7 +56,7 @@ ms.locfileid: "60962556"
 - [Cloud-Delivery Protection on](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) (一部のルールでは必要)
 - Windows 10 Enterprise E5 または E3 ライセンス
 
-攻撃表面の縮小ルールでは[、Windows E5](/windows/deployment/deploy-enterprise-licenses)ライセンスを使用した Windows E5 ライセンスは不要ですが、Defender for Endpoint で使用できる監視、分析、ワークフロー、および Microsoft 365 セキュリティ センターのレポート機能と構成機能などの高度<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">な管理機能</a>を利用できます。 これらの高度な機能は E3 ライセンスでは使用できませんが、イベント ビューアーを使用して攻撃表面の縮小ルール イベントを確認できます。
+攻撃表面の縮小ルールでは[、Windows E5](/windows/deployment/deploy-enterprise-licenses)ライセンスを使用した Windows E5 ライセンスは必要とされませんが、Defender for Endpoint で使用できる監視、分析、ワークフロー、および<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>ポータルのレポート機能と構成機能などの高度な管理機能を利用できます。 これらの高度な機能は E3 ライセンスでは使用できませんが、イベント ビューアーを使用して攻撃表面の縮小ルール イベントを確認できます。
 
 各 ASR ルールには、次の 4 つの設定のいずれかを含む。
 
@@ -158,7 +158,7 @@ ASR ルールを有効にする次の手順には、ファイルとフォルダ�
    - [ **説明]** に簡単な説明を入力します。
    - **OMA-URI で**、追加するルールの特定の OMA-URI リンクを入力または貼り付けます。 このルール例で使用する OMA-URI については、この記事の前の MEM セクションを参照してください。 Azure Site Recovery ルール GUIDS の場合は、「 [ルール](attack-surface-reduction-rules.md#per-rule-descriptions) ごとの説明」のトピック「攻撃表面の縮小ルール」を参照してください。
    - [ **データ型] で**、[文字列] を **選択します**。
-   - [ **値]** で、GUID 値、記号、およびスペースを含む State 値 \= _(GUID=StateValue) を入力または貼り付けます_。 各部分の意味は次のとおりです。
+   - [ **値]** で、GUID 値、記号、およびスペースを含む State 値 \= _(GUID=StateValue) を入力または貼り付けます_。 ここで、
      - 0 : 無効にする (ASR ルールを無効にする)
      - 1 : ブロック (ASR ルールを有効にする)
      - 2 : 監査 (ASR ルールが有効な場合に組織に与える影響を評価する)

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社がエンタープライズ向けサービスのセキュリティMicrosoft 365使用する方法。
-ms.openlocfilehash: f4d35ef3c5b862b42bf0a995f25b29c26eedd408
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 15fd559b6dade63d56647c8f5f3437a57d27a56b
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152744"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109913"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Contoso Corporation のMicrosoft 365セキュリティの概要
 
@@ -56,9 +56,9 @@ Contoso 社は、次の手順に従って、エンタープライズ向けサー
 
 - MFA および PIM を設定した全体管理者専用アカウント
 
-  Contoso 社は、グローバル管理者の役割を日常のユーザー アカウントに割り当てるのではなく、強力なパスワードを持つ 3 つの専用のグローバル管理者アカウントを作成しました。 アカウントは、Azure AD多要素認証 (MFA) と Azure Active Directory (Azure AD) Privileged Identity Management (PIM) によって保護されます。 *PIM は、Microsoft 365 E5 でのみ使用可能です。*
+  Contoso 社は、グローバル管理者の役割を日常のユーザー アカウントに割り当てるのではなく、強力なパスワードを持つ 3 つの専用のグローバル管理者アカウントを作成しました。 アカウントは、多要素認証 (MFA) Azure AD (PIM) と Azure Active Directory (Azure AD) Privileged Identity Managementによって保護されます。 *PIM は、Microsoft 365 E5 でのみ使用可能です。*
 
-  Azure AD **DC 管理者またはグローバル管理者** アカウントでのサインインは、特定の管理タスクに対してのみ実行されます。 パスワードは、指定されたスタッフにのみ知られているので、Azure AD PIM で構成されている期間中にのみ使用できます。
+  DC 管理者またはグローバル **管理者アカウントAzure AD** サインインは、特定の管理タスクに対してのみ実行されます。 パスワードは指定されたスタッフにのみ知られているので、PIM で構成された期間Azure ADできます。
 
   Contoso のセキュリティ管理者は、IT ワーカーのジョブ機能に適したアカウントに、より少ない管理者ロールを割り当てしました。
 
@@ -66,9 +66,9 @@ Contoso 社は、次の手順に従って、エンタープライズ向けサー
 
 - すべてのユーザー アカウントの MFA
 
-  MFA は、サインイン プロセスに追加の保護層を追加します。 ユーザーは、パスワードを正しく入力した後、スマートフォンで電話、テキスト メッセージ、アプリ通知を確認する必要があります。 MFA を使用すると、アカウントADパスワードが侵害された場合でも、Azure ユーザー アカウントは承認されていないサインインから保護されます。
+  MFA は、サインイン プロセスに追加の保護層を追加します。 ユーザーは、パスワードを正しく入力した後、スマートフォンで電話、テキスト メッセージ、アプリ通知を確認する必要があります。 MFA では、Azure ADパスワードが侵害された場合でも、承認されていないサインインからユーザー アカウントが保護されます。
 
-   - サブスクリプションの侵害から保護Microsoft 365 Contoso は、すべての Azure 管理者または DC 管理者、またはグローバル管理者アカウントAD **MFA****を必要** とします。
+   - サブスクリプションの侵害から保護Microsoft 365 Contoso では、すべての管理者または DC 管理者アカウントAzure AD **MFA****が必要** です。
    - 組織内の信頼されている人の資格情報が漏えいし、攻撃者が悪意のある電子メールを送信するというフィッシング攻撃からの保護を目的として、Contoso 社ではマネージャーや経営幹部を含むすべてのユーザー アカウントで MFA を有効にしました。
 
 - 条件付きアクセス ポリシーを使用したデバイスとアプリケーションへの安全なアクセス
@@ -117,9 +117,9 @@ Contoso 社は、次の手順に従って、エンタープライズ向けサー
 
   Contoso 社は[、Windows Information Protection (WIP)](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)を使用して、インターネット ベースのアプリやサービス、企業向けアプリ、および従業員が仕事に持ち込む企業所有のデバイスおよび個人デバイス上のデータを通じてデータ漏洩から保護しています。
 
-- Microsoft Cloud App Security を使用したクラウドの監視
+- Microsoft Defender for Cloud Apps によるクラウド監視
 
-  Contoso 社では [Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security) を使用して、自社のクラウド環境のマップ、使用状況を監視、セキュリティ イベントとインシデントの検出を行っています。 *Microsoft Cloud App Security は、Microsoft 365 E5 でのみ使用可能です。*
+  Contoso 社は [、Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) を使用して、クラウド環境のマップ、使用状況の監視、セキュリティ イベントとインシデントの検出を行っています。 *Microsoft Defender for Cloud Apps は、クラウド アプリでのみMicrosoft 365 E5。*
 
 - Microsoft Intune を使用したデバイス管理
 
@@ -127,9 +127,9 @@ Contoso 社は、次の手順に従って、エンタープライズ向けサー
 
 ## <a name="security-management"></a>セキュリティ管理
 
-- Azure Defender を使用した IT 向け中央セキュリティ ダッシュボード
+- Microsoft Defender for Cloud を使用した IT 向け中央セキュリティ ダッシュボード
 
-  Contoso は [Azure Defender](https://azure.microsoft.com/services/security-center/) を使用して、セキュリティと脅威保護の統合ビューを提示し、ワークロード全体でセキュリティ ポリシーを管理し、サイバー攻撃に対応します。
+  Contoso は [、Microsoft Defender for Cloud](https://azure.microsoft.com/services/security-center/) を使用して、セキュリティと脅威保護の統合ビューを提示し、ワークロード全体でセキュリティ ポリシーを管理し、サイバー攻撃に対応します。
 
 - Windows Defender セキュリティ センターを使用したユーザー向けの中心となるセキュリティ ダッシュボード
 

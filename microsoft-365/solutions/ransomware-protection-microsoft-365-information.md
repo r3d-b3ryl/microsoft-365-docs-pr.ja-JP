@@ -16,13 +16,13 @@ ms.collection:
 - m365solution-ransomware
 ms.custom: seo-marvel-jun2020
 keywords: ランサムウェア、人が操作するランサムウェア、人間が操作するランサムウェア、HumOR、脅迫攻撃、ランサムウェア攻撃、暗号化、暗号ウイルス学、ゼロ トラスト
-description: 制御されたフォルダー アクセス、MIP、DLP、および Microsoft Cloud App Security を使用して、Microsoft 365 の機密データを保護します。
-ms.openlocfilehash: cd2f7526de1b9089c6c2febfb667b4df7d816913
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+description: 制御されたフォルダー アクセス、MIP、DLP、および Microsoft Defender for Cloud Apps を使用して、Microsoft 365 の機密データを保護します。
+ms.openlocfilehash: 4d6218ef32b10f99fcd1836444add49a7c4cb40c
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60666736"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110045"
 ---
 # <a name="step-5-protect-information"></a>手順 5. 情報を保護する
 
@@ -92,7 +92,7 @@ Microsoft 365 テナント内での厳密なアクセス許可の使用は、位
 
 - Microsoft 365 [データ損失防止 (DLP)](/microsoft-365/compliance/dlp-learn-about-dlp) を使用して、秘密度ラベルに基づく個人情報または機密情報を含むデータの危険な、不注意な、または不適切な共有を内部および外部で検出、警告、およびブロックします。
 
-- [Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security) を使用して、ファイルなどの機密情報のダウンロードをブロックします。 [Cloud App Security の異常検出ポリシー](/cloud-app-security/anomaly-detection-policy#ransomware-activity)を使用して、高率のファイル アップロードまたはファイル削除アクティビティを検出することもできます。
+- [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) を使用して、ファイルなどの機密情報のダウンロードをブロックします。 [Defender for Cloud Apps の異常検出ポリシー](/cloud-app-security/anomaly-detection-policy#ransomware-activity)を使用して、高率のファイル アップロードまたはファイル削除アクティビティを検出することもできます。
 
 ## <a name="impact-on-users-and-change-management"></a>ユーザーへの影響と変更管理
 
@@ -141,21 +141,21 @@ Microsoft Azure
 - [ランサムウェアから保護するためのバックアップと復元の計画](/security/compass/backup-plan-to-protect-against-ransomware)
 - [Microsoft Azure バックアップを使用してランサムウェアから保護する](https://www.youtube.com/watch?v=VhLOr2_1MCg) (26 分のビデオ)
 - [体系的な ID 侵害からの回復](/azure/security/fundamentals/recover-from-identity-compromise)
-- [Azure Sentinel での高度な多段階攻撃検出](/azure/sentinel/fusion#ransomware)
-- [Azure Sentinel でのランサムウェアのフュージョン検出](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
+- [Microsoft Sentinel での高度な多段階攻撃検出](/azure/sentinel/fusion#ransomware)
+- [Microsoft Sentinel でのランサムウェアのフュージョン検出](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
 
-Microsoft Cloud App Security:
+Microsoft Defender for Cloud Apps
 
--  [Cloud App Security で異常検出ポリシーを作成する](/cloud-app-security/anomaly-detection-policy)
+-  [Defender for Cloud Apps で異常検出ポリシーを作成する](/cloud-app-security/anomaly-detection-policy)
 
 Microsoft Security チームのブログ投稿:
 
 - [ランサムウェアを防止して回復するための 3 つの手順 (2021 年 9 月)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
-- [人が操作するランサムウェアに対する対策ガイド: パート 1 (2021 年 9 月)](https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/)
+- [人が操作するランサムウェアの対策ガイド: パート 1 (2021 年 9 月)](https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/)
 
-  Microsoft 検出対応チーム (DART) がランサムウェア インシデント調査を実施する方法に関する重要な手順。
+  Microsoft の検出対応チーム (DART) がランサムウェア インシデント調査を実施する方法に関する重要な手順。
 
-- [人が操作するランサムウェアに対する対策ガイド: パート 2 (2021 年 9 月)](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/)
+- [人が操作するランサムウェアの対策ガイド: パート 2 (2021 年 9 月)](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/)
 
   推奨事項とベスト プラクティス。
 
@@ -169,4 +169,3 @@ Microsoft Security チームのブログ投稿:
 
 - [ランサムウェアの応答 - 支払うべきか、支払わざるべきか? (2019 年 12 月)](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
 - [Norsk Hydro のランサムウェア攻撃に対する透明性のある対応 (2019 年 12 月)](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
-
