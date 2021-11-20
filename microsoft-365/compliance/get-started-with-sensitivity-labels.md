@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 組織のデータを保護するために秘密度ラベルを展開する準備はできていますが、どこから始めればよいかわかりませんか? ラベル付けの移行に役立つ実用的なガイダンスをお読みください。
-ms.openlocfilehash: ef03bd502b0951416ad9e8be27e6da7281f63811
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 7287b45a37a5da286a66ffdb2797c3e84746f326
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962677"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61072170"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>秘密度ラベルの使用を開始する
 
@@ -97,7 +97,7 @@ Microsoft 365 コンプライアンス機能のメリットを得られるよう
 |Power BI でラベルの適用と表示をし、サービスの外部に保存されたデータを保護する|[Power BI の秘密度ラベル](/power-bi/admin/service-security-sensitivity-label-overview)|
 |組織で秘密度ラベルがどのように使用されているかを監視し、理解する|[データ分類の説明](data-classification-overview.md)|
 |秘密度ラベルの適用をサード パーティ製アプリやサービスに拡大する|[Microsoft Information Protection SDK](/information-protection/develop/overview#microsoft-information-protection-sdk)|
-|Azure Blob Storage、Azure ファイル、azure Data Lake Storage Gen1、および Azure Data Lake Storage Gen12 のコンテンツに対して、感度ラベルを拡張する|[ Azure Purview のコンテンツに自動的にラベルを付ける](/azure/purview/create-sensitivity-label) |
+|Azure Blob Storage、Azure Files、Azure Data Lake Storage、マルチクラウド データ ソースなど、Azure Purview アセットのコンテンツ全体に秘密度ラベルを拡張する|[Azure Purview でのラベル付け](/azure/purview/create-sensitivity-label) |
 
 
 ## <a name="end-user-documentation-for-sensitivity-labels"></a>機密度ラベルのエンド ユーザー向けのドキュメント

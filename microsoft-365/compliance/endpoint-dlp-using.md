@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 365 エンドポイント データ損失防止 (EPDLP) の場所を使用するようにデータ損失防止 (DLP) ポリシーを構成する方法を説明します。
-ms.openlocfilehash: 17fda6ff5deb8c5f16513a5b3a823bcf584f2373
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: b1365a699f7d69c1ff01e902fa2e97da0aee66fe
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064537"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61073103"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>エンドポイント データ損失防止の使用
 
@@ -60,6 +60,9 @@ ms.locfileid: "61064537"
 - Windows 10 バージョン 20H1/20H2/21H1 (KB 5006738)
 - Windows 10 バージョン 19H1/19H2 (KB 5007189)
 - Windows 10 RS5 (KB 5006744)
+
+> [!NOTE]
+> 高度な分類のサポートは、Office (Word、Excel、PowerPoint) および PDF ファイルの種類で利用できます。
 
 > [!NOTE]
 > DLP ポリシーの評価は、ユーザー コンテンツが送信されていない場合でも、常にクラウドで行われます。

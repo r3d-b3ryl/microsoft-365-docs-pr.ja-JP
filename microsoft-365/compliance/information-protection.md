@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-compliance
 recommendations: false
 description: Microsoft Information Protection (MIP) を実装すれば、機密情報がどこに保存されていても、どこに移動しても、それらの情報を保護できます。
-ms.openlocfilehash: d5a9cbf4aab78c91e9ffbe3897f84b24d46e4f84
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d011877bf31e996144b73978337ad63cb3a22c6a
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60177509"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61071392"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft 365 の Microsoft Information Protection
 
@@ -39,9 +39,6 @@ MIP 機能は Microsoft 365 コンプライアンスに含まれており、[デ
 
 ## <a name="know-your-data"></a>データを把握する
 
-> [!NOTE]
-> Azure Purview でのデータの分類およびラベル付けの詳細については、現在プレビューですが、「[Azure Purviewにあるコンテンツに自動的にラベルを付ける](/azure/purview/create-sensitivity-label)」を参照し てください。
-
 データの状況を把握し、ハイブリッド環境全体にわたって重要なデータを識別するには、次の機能を使用します:
 
 |機能|解決される問題|作業の開始|
@@ -49,6 +46,7 @@ MIP 機能は Microsoft 365 コンプライアンスに含まれており、[デ
 |[機密情報の種類](sensitive-information-type-learn-about.md)| 組み込みまたはカスタムの正規表現または関数を使用して、機密データを識別します。 裏付けとなる証拠には、キーワード、信頼水準、および近接性が含まれます。| [組み込みの機密情報の種類をカスタマイズする](customize-a-built-in-sensitive-information-type.md)|
 |[トレーニング可能な分類子](classifier-learn-about.md)| アイテム内の要素を識別する (パターン マッチング) のではなく、関心のあるデータの例を使用して機密性の高いデータを識別します。 組み込みの分類子を使用することも、独自のコンテンツを使用して分類子をトレーニングすることもできます。| [トレーニング可能な分類子の使用を開始する](classifier-get-started-with.md) |
 |[データの分類](data-classification-overview.md) | 組織内の、秘密度ラベルまたは保持ラベルを有するアイテムまたは分類済みアイテムのグラフィカルな ID です。 この情報を使用して、ユーザーがこれらのアイテムに対して実行しているアクションに関する分析情報を得ることもできます。 | [コンテンツ エクスプローラーの使用を開始する](data-classification-content-explorer.md) <p> [アクティビティ エクスプローラーの使用を開始する](data-classification-activity-explorer.md) |
+|[Azure Purview](/azure/purview/overview) |機密データを識別し、Azure Blob Storage、Azure Files、Azure Data Lake Storage、マルチクラウド データ ソースなどの Azure Purview アセット内のすべてのコンテンツに自動ラベル付けを適用します。 |[Azure Purview でのラベル付け](/azure/purview/create-sensitivity-label) |
 
 ## <a name="protect-your-data"></a>データを保護する
 

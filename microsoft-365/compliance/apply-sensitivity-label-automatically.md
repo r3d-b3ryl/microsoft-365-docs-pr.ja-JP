@@ -17,19 +17,19 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを作成する場合、ファイルまたはメールにラベルを自動的に割り当てるか、あるいは推奨するラベルを選択するようにユーザーに求めることができます。
-ms.openlocfilehash: 8d45308bc9bb4562cc82417ddb8ed762d8ac65b1
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: 3d190db3b3df060075f55adbb2eeaf4cabf64284
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914286"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61071440"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>秘密度ラベルをコンテンツに自動的に適用する
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 > [!NOTE]
-> Azure Purview (プレビュー) での秘密度ラベルの自動適用の詳細については、「[Azure Purview のコンテンツに自動的にラベルを付ける](/azure/purview/create-sensitivity-label)」を参照してください。
+> Azure Purview で秘密度ラベルを自動的に適用する方法については、「[Azure Purview でのラベル付け](/azure/purview/create-sensitivity-label)」を参照してください。
 
 秘密度ラベルを作成する場合、指定した条件に一致したときに、そのラベルをファイルやメールに自動的に割り当てることができます。
 
@@ -78,7 +78,7 @@ Microsoft 365 でコンテンツに秘密度ラベルを自動的に適用する
     - ラベルが表示されない IRM 暗号化を使用しているメールは、自動ラベル付けを使用すると一致する場合は、暗号化設定のあるラベルに置き換えられます。
     - 自動ラベル付け条件と一致すると、受信メールに以下のようにラベルが付けられます。
     - ラベルが[暗号化](encryption-sensitivity-labels.md)用に構成されている場合、その暗号化は適用されません。
-    - ラベルが[動的マーキング](sensitivity-labels-office-apps.md#dynamic-markings-with-variables)を適用するように構成されている場合、これにより組織外の人の名前が表示される可能性があることに注意してください。
+    - ラベルが[動的マーキング](sensitivity-labels-office-apps.md#dynamic-markings-with-variables)を適用するように構成されている場合、この構成により組織外の人の名前が表示される可能性があることに注意してください。
     - ラベルが暗号化を適用する場合、[Rights Management 発行者と Rights Management 所有者](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) は、メールを送信するユーザーです。 現在、自動的に暗号化されるすべての受信メール メッセージに Rights Manager 所有者を設定する方法はありません。
 
 ## <a name="compare-auto-labeling-for-office-apps-with-auto-labeling-policies"></a>Office アプリの自動ラベル付けと自動ラベル付けポリシーを比較する
