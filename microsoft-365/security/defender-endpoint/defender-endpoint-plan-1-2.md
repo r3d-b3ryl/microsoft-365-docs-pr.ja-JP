@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Endpoint Plan 1 (プレビュー) とプラン 2 の比較
+title: Microsoft Defender for Endpoint Plan 1 とプラン 2 の比較
 description: Defender for Endpoint Plan 1 とプラン 2 を比較します。 プランの違いについて説明し、組織のニーズに合ったプランを選択します。
 keywords: Defender for Endpoint, Advanced Threat Protection, endpoint protection
 search.appverid: MET150
@@ -8,21 +8,21 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 10/01/2021
+ms.date: 11/19/2021
 ms.prod: m365-security
 ms.technology: mde
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 10ce49d4729ac58996a0984761f9e6696d3a9845
-ms.sourcegitcommit: 6dbf879f769a825ed7039363f3a91d676e355ee0
+ms.openlocfilehash: 9f04d1a8f9cf0d7a8c85ef21454e89433bcb8c9d
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60940491"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61127802"
 ---
-# <a name="microsoft-defender-for-endpoint-plan-1-preview-and-plan-2"></a>Microsoft Defender for Endpoint Plan 1 (プレビュー) とプラン 2
+# <a name="microsoft-defender-for-endpoint-plan-1-and-plan-2"></a>Microsoft Defender for Endpoint Plan 1 and Plan 2
 
 EndPoint 向け Microsoft Defender は、エンタープライズネットワークによる高度な脅威の防止、検出、調査、および応答を支援するために設計されたエンタープライズエンドポイントセキュリティプラットフォームです。 Defender for Endpoint は、ウイルス対策、マルウェア対策、ランサムウェアの軽減などの高度な脅威保護と、一元的な管理とレポート機能を提供します。 近日、2 つのプランが利用可能になります。   
  
@@ -39,11 +39,8 @@ EndPoint 向け Microsoft Defender は、エンタープライズネットワー
 | [デバイス、Windows 10 iOS、Android OS、および macOS デバイスのサポート](defender-endpoint-plan-1.md#cross-platform-support) | ユーザー (Windowsサーバー) および非プラットフォーム プラットフォームWindowsサポート<br/> (macOS、iOS、Android、Linux) |
 | Defender for Endpoint Plan 1 を試す場合は、 を参照してください [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) 。 | Defender for Endpoint Plan 2 を試す場合は、 を参照してください [https://aka.ms/MDEp2OpenTrial](https://aka.ms/MDEp2OpenTrial) 。 |
 
-> [!IMPORTANT]
-> この記事の一部の情報は、製品リリース前に大幅に変更される可能性がある、事前リリース済みの製品/サービスに関連しています。 Microsoft は、ここに提供される情報について、明示または黙示を問わず一切の保証を行いません。 このコンテンツには、Defender for Endpoint Plan 1 (プレビュー) に含まれていない一部の機能を説明する可能性がある他の記事へのリンクが含まれています。
-
 ## <a name="next-steps"></a>次の手順
 
-- [Microsoft Defender for Endpoint Plan 1 の概要を確認する (プレビュー)](defender-endpoint-plan-1.md)
-- [Defender for Endpoint Plan 1 のセットアップと構成 (プレビュー)](mde-p1-setup-configuration.md)
-- [Defender for Endpoint Plan 1 の使用を開始する (プレビュー)](mde-plan1-getting-started.md)
+- [Microsoft Defender for Endpoint Plan 1 の概要を確認する](defender-endpoint-plan-1.md)
+- [Defender for Endpoint Plan 1 のセットアップと構成](mde-p1-setup-configuration.md)
+- [Defender for Endpoint Plan 1 の使用を開始する](mde-plan1-getting-started.md)

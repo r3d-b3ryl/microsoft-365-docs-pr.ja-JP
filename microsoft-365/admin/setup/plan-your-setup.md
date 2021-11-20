@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: ビジネス向けサービスへの移行に関する要件と考慮事項Microsoft 365説明します。
-ms.openlocfilehash: 7e7d3a56d58c19e36372a4e3d8f32788bf19771d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 070d3d57d998edabb0711ca11c082f8e41a3406f
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60193831"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128666"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>Microsoft 365 for business のセットアップを計画
 
@@ -35,8 +35,12 @@ ms.locfileid: "60193831"
   
 組織を組織を Microsoft 365する前に、満たす必要がある要件、必要な情報、および決定を行う必要があります。
 
+## <a name="overview-of-microsoft-365-business-premium-setup"></a>セットアップのMicrosoft 365 Business Premium概要
 
-  
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg?autoplay=false]
+
+ビジネスをクラウドに移行する決定をおめでとうございます。Microsoft 365! ビジネスに 1 人か 20 人か、少し計画を立て、自分の仕事をMicrosoft 365 Business Premium。
+
 ## <a name="info-to-have-on-hand-before-you-run-the-setup-wizard"></a>セットアップ ウィザードを実行する前に必要な情報
 
 セットアップ ウィザードを実行し、ドメインを Microsoft 365 に移動する準備ができたら、次の情報が必要です。

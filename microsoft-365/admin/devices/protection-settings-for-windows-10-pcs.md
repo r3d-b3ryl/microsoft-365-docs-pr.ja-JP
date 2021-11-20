@@ -19,17 +19,18 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - AdminSurgePortfolio
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: ビジネス向けアプリで使用できるMicrosoft 365デバイスをセキュリティで保護するWindows 10します。
-ms.openlocfilehash: 1217c6ad8be6b74c4b1fa05294f5bc51f275bea2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4019fb5d76824dc33bb5947d1bd3b25072b39bbd
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165474"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128030"
 ---
 # <a name="edit-or-create-device-protection-settings-for-windows-10-pcs"></a>PC のデバイス保護設定を編集またはWindows 10する
 
@@ -37,7 +38,7 @@ ms.locfileid: "60165474"
 
 [セットアップ] ページで既定の Windows保護設定を設定した後、すべてのユーザーまたは一連のユーザーに適用される新しい保護設定を追加できます。 作成した任意のファイルを編集できます。
 
-## <a name="create-protection-settings-for-windows-10-devices"></a>デバイスの保護設定をWindows 10する
+## <a name="watch-create-protection-settings-for-windows-10-devices"></a>ウォッチ: デバイスの保護設定をWindows 10する
 
 次の方法でデバイスをセキュリティで保護するWindows 10ビデオをMicrosoft 365 Business Premium。
   

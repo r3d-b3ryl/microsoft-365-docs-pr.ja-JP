@@ -19,15 +19,16 @@ ms.custom:
 - commerce_purchase
 - AdminTemplateSet
 - admindeeplinkMAC
+- adminvideo
 search.appverid: GEA150
 description: 無料の 30 日間の試用版にサインアップして、Microsoft 365 Business Standard、Microsoft 365 Business Premium、Microsoft 365 Apps for business。
 ms.date: 08/07/2020
-ms.openlocfilehash: 10ad9f24d7e34da30cfe5b62207e90275a0649c0
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: e3ec002ceb47c7e4378ba28d833c2a3032472103
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60754399"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128870"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>一般法人向け Microsoft 365 サブスクリプションを試用する/購入する
 
@@ -39,7 +40,7 @@ Microsoft 365は、Microsoft が IT の管理を行っている間にクラウ�
 ::: moniker range="o365-21vianet"
 
 > [!IMPORTANT]
-> **中国の 21Vianet** Office 365が運営する支払いオプション国際クレジット カードは受け付けていません。 サブスクリプションの支払い方法は、次の方法で行います。
+> **中国国際Office 365 21Vianet** が運営する支払いオプションは受け付けていません。 サブスクリプションの支払い方法は、次の方法で行います。
 >
 > - 請求書
 > - Alipay または China UnionPay の支払いの証明を使用したオンライン支払いは、Fapiaos の形式で提供されます。 Fapiao 要求は、支払い後約 3 日後に [Fapiao](https://go.microsoft.com/fwlink/p/?LinkId=395314) システムに送信できます。 詳細については[、「Apply for a Fapiao for a fapiao for 21Vianet Office 365を参照してください](../admin/services-in-china/apply-for-a-fapiao.md)。
@@ -105,6 +106,15 @@ Microsoft 365は、Microsoft が IT の管理を行っている間にクラウ�
 ## <a name="buy-a-different-subscription"></a>別のサブスクリプションを購入する
 
 既にビジネス サブスクリプションのMicrosoft 365している場合は、組織の別のサブスクリプションMicrosoft 365 管理センターを購入する方法を確認できます。
+
+### <a name="watch-move-users-to-a-different-subscription"></a>ウォッチ: ユーザーを別のサブスクリプションに移動する
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SBE2?autoplay=false]
+
+ユーザーが役割を変更すると、現在のサブスクリプションで使用できない機能が必要Microsoft 365 Business Premiumがあります。 この場合、これらの機能を含む新しいサブスクリプションを追加し、必要なユーザーにライセンスを割り当てできます。
+
+> [!NOTE]
+> 一部のサブスクリプションでは、サブスクリプションを購入または更新した後、限られた時間内にのみキャンセルできます。 キャンセル期間が過ぎた場合は、定期的な請求をオフにして、期間の終了時にサブスクリプションをキャンセルします。
 
 Microsoft 365 管理センター を使用して別のサブスクリプションを購入<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">すると、</a>新しいサブスクリプションは既存のサブスクリプションと同じ組織 (ドメインネームスペース) に関連付けられる。 これにより、組織内のユーザーをサブスクリプション間で移動したり、必要な追加のサブスクリプションのライセンスを割り当てやすくなります。
 

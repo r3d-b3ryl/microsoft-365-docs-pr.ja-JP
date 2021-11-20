@@ -20,6 +20,7 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - AdminTemplateSet
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
@@ -28,12 +29,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: 管理者アカウントでサインインMicrosoft 365、ビジネス サブスクリプションのユーザーのパスワードMicrosoft 365リセットします。
-ms.openlocfilehash: 84bb282f7b86036e2743d4af7998a4ce887e5b11
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f1444513f336cad5423881420d299528a347927c
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157220"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128398"
 ---
 # <a name="reset-passwords"></a>パスワードをリセットする
 
@@ -54,7 +55,12 @@ ms.locfileid: "60157220"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FVVP]
 
-このビデオがお役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](../../business-video/index.yml)」をご覧ください。
+1. ユーザーが新しいパスワードを要求すると、電子メールでパスワードリセット要求を受信します。 パスワードをリセットするには、アプリ起動ツールを開き、[管理者] を **選択します**。
+1. [ユーザー] Microsoft 365 管理センター [ユーザー] **、[アクティブ** なユーザー]<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**の順に**</a>選択し、リセットを要求したユーザーの横にあるキー アイコンを選択します。
+1. [ **パスワードの自動生成] を選択** すると、ランダムなパスワードが自動的に作成されます。
+1. [リセット] **を選択します**。
+
+このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](../../business-video/index.yml)」をご覧ください。
   
 ## <a name="steps-reset-a-business-password-for-a-user"></a>手順: ユーザーのビジネス パスワードをリセットする
 

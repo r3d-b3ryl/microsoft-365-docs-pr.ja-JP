@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Endpoint Plan 1 のセットアップと構成 (プレビュー)
+title: Microsoft Defender for Endpoint Plan 1 のセットアップと構成
 description: Defender for Endpoint Plan 1 を設定および構成する方法について説明します。 要件を確認し、ロールアウトを計画し、環境をセットアップします。
 search.appverid: MET150
 author: denisebmsft
@@ -7,32 +7,32 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 10/01/2021
+ms.date: 11/19/2021
 ms.prod: m365-security
 ms.technology: mde
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 26dbdfa70e05e3c8bb055fa1d18b056ee798c132
-ms.sourcegitcommit: 6dbf879f769a825ed7039363f3a91d676e355ee0
+ms.openlocfilehash: 03f9a8268ac3d1652840a9d99d3493358cf71ee4
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60940574"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128018"
 ---
-# <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1-preview"></a>Microsoft Defender for Endpoint Plan 1 のセットアップと構成 (プレビュー)
+# <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1"></a>Microsoft Defender for Endpoint Plan 1 のセットアップと構成
 
 > [!TIP]
 > ユーザーまたは A3 Microsoft 365 E3が、Microsoft 365 E5 A5 を使用していない場合は、プレビュー プログラムに [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) サインアップしてください。
 
-この記事では、Defender for Endpoint Plan 1 (プレビュー) を設定および構成する方法について説明します。 サポートを受け取っている場合でも、自分で行っている場合でも、この記事を展開全体のガイドとして使用できます。  
+この記事では、Defender for Endpoint Plan 1 をセットアップして構成する方法について説明します。 サポートを受け取っている場合でも、自分で行っている場合でも、この記事を展開全体のガイドとして使用できます。  
 
 ## <a name="the-setup-and-configuration-process"></a>セットアップと構成プロセス
 
 :::image type="content" source="images/mde-p1-deploymentflow.png" alt-text="Microsoft Defender for Endpoint Plan 1 のセットアップと展開フロー":::
 
-Defender for Endpoint Plan 1 (プレビュー) の一般的なセットアップと構成プロセスは次のとおりです。 <br/><br/>
+Defender for Endpoint Plan 1 の一般的なセットアップと構成プロセスは次のとおりです。 <br/><br/>
 
 
 | 番号  | 手順  | 説明  |
@@ -44,17 +44,14 @@ Defender for Endpoint Plan 1 (プレビュー) の一般的なセットアップ
 | 5 | [Defender for Endpoint へのオンボード](#onboard-to-defender-for-endpoint) | Defender for Endpoint Plan 1 にオンボードするオペレーティング システム別のいくつかのメソッドの一覧と、各メソッドの詳細情報へのリンクが含まれています  |
 | 6  | [次世代の保護を構成する](#configure-next-generation-protection) | デバイスで次世代の保護設定を構成する方法についてMicrosoft エンドポイント マネージャー  |
 | 7  | [攻撃表面の縮小機能を構成する](#configure-your-attack-surface-reduction-capabilities)        | 構成できる攻撃表面の縮小機能の種類と、より多くのリソースへのリンクを含む手順を示します。  |
-
-> [!IMPORTANT]
-> この記事の一部の情報は、製品リリース前に大幅に変更される可能性がある、事前リリース済みの製品/サービスに関連しています。 Microsoft は、ここに提供される情報について、明示または黙示を問わず一切の保証を行いません。 この記事には、Defender for Endpoint Plan 1 (プレビュー) に含まれていない一部の機能について説明する可能性があるオンライン コンテンツへのリンクが含まれています。
  
 ## <a name="review-the-requirements"></a>システム要件を確認する
 
-次の表に、Defender for Endpoint Plan 1 (プレビュー) の基本的な要件を示します。<br/><br/>
+次の表に、Defender for Endpoint Plan 1 の基本的な要件を示します。<br/><br/>
 
 | 要件 | 説明 |
 |:---|:---|
-| ライセンスの要件 | Defender for Endpoint プラン 1 <br/><br/>*ユーザーまたは A3 Microsoft 365 E3、プレビュー プログラムに参加できます。* |
+| ライセンスの要件 | Defender for Endpoint Plan 1 <br/><br/>*ユーザーまたは A3 Microsoft 365 E3、プレビュー プログラムに参加できます。* |
 | ブラウザー要件 | Microsoft Edge <br/> Internet Explorerバージョン 11 <br/> Google Chrome |
 | オペレーティング システム | Windows 10バージョン 1709 以降 <br/>macOS: 11.5 (Big Sur), 10.15.7 (Catalina), or 10.14.6 (Mojave) <br/>iOS <br/>Android OS  |
 | Datacenter | 次のいずれかのデータセンターの場所。 <br/>- 欧州連合 <br/>- イギリス <br/>- 米国 |
@@ -103,7 +100,7 @@ Microsoft では、タスクを実行するために必要なレベルのアク�
 
 次の表では、組織内の Defender for Endpoint で考慮する重要な役割について説明します。 <br/><br/>
 
-| Role | 説明 |
+| 役割 | 説明 |
 |:---|:---|
 | グローバル管理者 (グローバル管理者とも呼ばれます) <br/><br/> *ベスト プラクティスとして、グローバル管理者の数を制限します。* | グローバル管理者は、あらゆる種類のタスクを実行できます。 既定では、Microsoft Defender for Endpoint Plan 1 Microsoft 365または Microsoft Defender の会社にサインアップしたユーザーは、グローバル管理者です。 <br/><br/> グローバル管理者は、次のようなすべてのポータルMicrosoft 365設定にアクセス/変更できます。 <br/>- Microsoft 365 管理センター ( [https://admin.microsoft.com](https://admin.microsoft.com) ) <br/>- Microsoft 365 Defender ポータル ( [https://security.microsoft.com](https://security.microsoft.com) ) <br/>- Microsoft エンドポイント マネージャー管理センター ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) )  |
 | セキュリティ管理者 (セキュリティ管理者とも呼ばれます) | セキュリティ管理者は、セキュリティ オペレーターのタスクと次のタスクを実行できます。 <br/>- セキュリティ関連のポリシーを監視する <br/>- セキュリティの脅威とアラートを管理する <br/>- レポートの表示 |
@@ -139,7 +136,7 @@ Microsoft では、タスクを実行するために必要なレベルのアク�
 
 2. [**エンドポイント セキュリティ**  >  **ウイルス対策]** を選択し、既存のポリシーを選択します。 (既存のポリシーを持ってない場合は、新しいポリシーを作成します)。
 
-3. ウイルス対策の構成設定を設定または変更します。 お困りの際は、 次のリソースを参照してください。 <br/>
+3. ウイルス対策の構成設定を設定または変更します。 サポートが必要な場合 次のリソースを参照してください。 <br/>
 
    - [設定のWindows 10 Microsoft Defender ウイルス対策ポリシーのMicrosoft Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-windows)
    - [iOS の機能でエンドポイント用 Defender を構成する](ios-configure-features.md)
@@ -148,7 +145,7 @@ Microsoft では、タスクを実行するために必要なレベルのアク�
 
 ## <a name="configure-your-attack-surface-reduction-capabilities"></a>攻撃表面の縮小機能を構成する
 
-攻撃表面の縮小とは、組織が攻撃を受け入可能な場所と方法を減らすことです。 Defender for Endpoint Plan 1 (プレビュー) には、エンドポイント全体の攻撃表面を減らすのに役立ついくつかの機能が含まれています。 これらの機能を次の表に示します。 <br/><br/>
+攻撃表面の縮小とは、組織が攻撃を受け入可能な場所と方法を減らすことです。 Defender for Endpoint Plan 1 には、エンドポイント全体の攻撃表面を減らすのに役立ついくつかの機能が含まれています。 これらの機能を次の表に示します。 <br/><br/>
 
 | 機能/機能 | 説明 |
 |:---|:---|
@@ -407,4 +404,4 @@ WDAC 展開の計画に役立つ情報については、次のリソースを参
 
 セットアップと構成プロセスが完了したので、次に、Defender for Endpoint の使用を開始します。 
 
-- [Defender for Endpoint Plan 1 の概要 (プレビュー)](mde-plan1-getting-started.md)
+- [Defender for Endpoint Plan 1 の概要](mde-plan1-getting-started.md)

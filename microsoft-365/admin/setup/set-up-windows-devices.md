@@ -24,35 +24,36 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: ユーザーにWindowsデバイスWindows 10 ProをMicrosoft 365 Business Premium、一元的な管理とセキュリティ制御を有効にします。
-ms.openlocfilehash: 46357074752e1715fdcdcd8be841e53f85475ddf
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 250c701a41e9243c81641df2bcc0fd6d6158ec47
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191291"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128654"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>ユーザーのWindowsデバイスをMicrosoft 365 Business Premiumする
 
 ## <a name="before-you-begin"></a>はじめに
 
-Microsoft 365 Business Premium ユーザー用に Windows デバイスをセットアップする前に、Windows のすべてのデバイスが Windows 10 Pro バージョン 1703 (Creators Update) を実行している必要があります。 Windows 10 Proは、Windows 10 Pro を補完し、Microsoft 365 Business Premium の一元的な管理とセキュリティ制御を可能にする一連のクラウド サービスとデバイス管理機能である Windows 10 Business を展開する前提条件です。
+Microsoft 365 Business Premium ユーザー用に Windows デバイスをセットアップする前に、Windows のすべてのデバイスが Windows 10 Pro バージョン 1703 (Creators Update) を実行している必要があります。 Windows 10 Proは、Windows 10 Business を補完し、Windows 10 Pro の一元的な管理とセキュリティ制御を可能にする一連のクラウド サービスとデバイス管理機能である Windows 10 Business を展開する前提条件です。Microsoft 365 Business Premium。
   
 Windows Windows、Pro、Windows 8 Pro、Windows 8.1 Pro を実行しているデバイスがある場合、Microsoft 365 Business Premium サブスクリプションは Windows 10 アップグレードを受Windows 10します。 Windows
   
 Windows デバイスを Windows 10 Pro Creators Update にアップグレードする方法については、「[Windows デバイスを Windows Pro Creators Update にアップグレードする](../../business-video/upgrade.md)」の手順に従います。
   
-「 [デバイスが Azure](#verify-the-device-is-connected-to-azure-ad) AD接続されていることを確認する」を参照し、アップグレードが正常に動作したと確認してください。
+「[デバイスがデバイスに接続されていることを確認](#verify-the-device-is-connected-to-azure-ad)Azure ADアップグレードを確認するか、アップグレードが正常に動作したのを確認する」を参照してください。
 
 ## <a name="watch-connect-your-pc-to-microsoft-365-business"></a>ウォッチ: ConnectをビジネスにMicrosoft 365する
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3yXh3] 
 
-このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](../../business-video/index.yml)」をご覧ください。
+このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](../../business-video/index.yml)」をご覧ください。
   
 ## <a name="join-windows-10-devices-to-your-organizations-azure-ad"></a>Windows 10 デバイスを組織の Azure AD に参加させる
 
@@ -100,7 +101,7 @@ Windows 10 Pro Creators Update が実行されている新しいデバイス、�
   
 6. [組織 **の確認] ページで** 、情報が正しいか確認し、[参加] を **選択します**。
   
-   [ **すべて完了しました。** ページ, chosse **Done**.
+   [ **すべて完了しました。** ページで、[完了] **を選択します**。
   
    ![[組織の構成を確認する] 画面で、[参加] を選択します。](../../media/c749c0a2-5191-4347-a451-c062682aa1fb.png)
   
@@ -118,7 +119,7 @@ Microsoft 365 Business Premium アカウントの使用を開始するには、[
   
 ## <a name="verify-the-pc-is-upgraded-to-windows-10-business"></a>PC がデバイスにアップグレードWindows 10 Business
 
-Azure に参加しているADデバイスWindows 10サブスクリプションの一部Windows 10 BusinessアップグレードMicrosoft 365 Business Premiumします。
+デバイスに参加Azure ADデバイスWindows 10サブスクリプションの一部としてWindows 10 BusinessアップグレードMicrosoft 365 Business Premiumします。
   
 1. Go to **Settings** \> **System** \> **About**.
     

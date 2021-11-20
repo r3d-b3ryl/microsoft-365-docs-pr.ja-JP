@@ -3,7 +3,7 @@ title: SharePoint Online のパフォーマンスの問題の診断
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 7/9/2019
+ms.date: 11/19/2021
 audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
@@ -19,26 +19,35 @@ search.appverid:
 - MET150
 ms.assetid: 3c364f9e-b9f6-4da4-a792-c8e8c8cd2e86
 description: この記事では、開発者ツールを使用してオンライン サイトで一般的なSharePointを診断Internet Explorer示します。
-ms.openlocfilehash: bb12bc6b8b8f95c33ad35aafad760803e927e830
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: acd5fc05f933e5d47b5bb14c2d3317ea3a6e0186
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60664941"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128738"
 ---
 # <a name="diagnosing-performance-issues-with-sharepoint-online"></a>SharePoint Online のパフォーマンスの問題の診断
 
 この記事では、開発者ツールを使用してオンライン サイトで一般的なSharePointを診断Internet Explorer示します。
   
-オンライン サイト上のページにカスタマイズのパフォーマンス上SharePoint、3 つの異なる方法があります。
+オンライン サイト上のページにカスタマイズのパフォーマンス上の問題SharePoint 4 つの異なる方法があります。
+
+- サイトとページのパフォーマンス診断
   
 - F12 ツール バー ネットワーク モニター
 
 - カスタマイズされていないベースラインとの比較
 
-- SharePointオンライン応答ヘッダーのメトリック
+- SharePoint応答ヘッダーの指標
 
-このトピックでは、これらの各メソッドを使用してパフォーマンスの問題を診断する方法について説明します。 問題の原因を把握したら、見つけ出すパフォーマンスの向上に関する記事をSharePointソリューションに取り組む必要があります https://aka.ms/tune 。 または、管理者で問題をすばやく診断する場合は、この [診断ツールを実行します](https://aka.ms/PillarSiteandPagePerf)。 
+このトピックでは、これらの各メソッドを使用してパフォーマンスの問題を診断する方法について説明します。 問題の原因を把握したら、見つけ出すパフォーマンスの向上に関する記事をSharePointソリューションに取り組む必要があります https://aka.ms/tune 。  
+
+## <a name="use-the-site-and-page-performance-diagnostic-from-the-microsoft-365-admin-center"></a>サイトとページのパフォーマンス診断を使用する (Microsoft 365 管理 センター)
+
+> [!NOTE]
+> 管理者で、SharePoint でパフォーマンスに問題がある場合は、[テストの実行] を選択して、Microsoft 365 管理 センターの [サイトとページパフォーマンスの診断] を設定します。  これらのテストでは、構成を確認し、テナントのパフォーマンス向上に役立つSharePoint手順をすばやくお勧めします。
+>> [!div class="nextstepaction"]
+>> [テストの実行: パフォーマンスSharePointする](https://aka.ms/PillarSiteandPagePerf)
   
 ## <a name="using-the-f12-tool-bar-to-diagnose-performance-in-sharepoint-online"></a>F12 ツール バーを使用してオンラインでのパフォーマンスをSharePointする
 <a name="F12ToolInfo"> </a>

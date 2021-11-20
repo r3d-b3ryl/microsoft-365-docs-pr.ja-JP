@@ -20,6 +20,7 @@ ms.custom:
 - seo-marvel-may2020
 - AdminSurgePortfolio
 - AdminTemplateSet
+- adminvideo
 search.appverid:
 - MET150
 - MOE150
@@ -29,12 +30,12 @@ search.appverid:
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
 description: Gmail や他のメール プロバイダーから連絡先、予定表、メールをインポートし、Microsoft 365 に移行する方法について説明します。
-ms.openlocfilehash: 92b36eac50747b7511f334e1a1d1b8fafbd9190e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ccf170862d00984332891cfee294edba1c08a6b7
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60188771"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128822"
 ---
 # <a name="migrate-email-and-contacts-to-microsoft-365"></a>Microsoft 365 へのメールと連絡先の移行
 
@@ -44,7 +45,13 @@ Gmail やその他のメール プロバイダーから Microsoft 365 にメー�
   
 この作業には、デスクトップにインストールされるバージョンの Outlook を使用する必要があります。 Outlook は、大部分の Microsoft 365 の[プラン](https://go.microsoft.com/fwlink/p/?LinkId=723731)に含まれています。
   
-### <a name="migrate-gmail-to-microsoft-365"></a>Gmail から Microsoft 365 への移行。
+## <a name="watch-import-and-redirect-email"></a>注目 : 電子メールをインポートして再配置しましょう。
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/40f7df36-9e24-44e5-8791-e9ed0dd8fd21?autoplay=false]
+
+アカウントにサインアップしたMicrosoft 365、メールが古いアカウントに送信される場合があります。たとえば、Gmail または Outlook アカウントを使用して作業している場合などです。 新しいアカウントと古いアカウントの両方を引き続き使用するか、古いアカウントから新しいアカウントにデータをインポートできます。
+
+## <a name="migrate-gmail-to-microsoft-365"></a>Gmail から Microsoft 365 への移行。
 
 Microsoft 365 でメール、連絡先、予定表を Gmail から Outlook にインポートまたは移行するには、次の手順を実行します。
   
@@ -58,7 +65,7 @@ Microsoft 365 でメール、連絡先、予定表を Gmail から Outlook に�
     
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c1e45708-9a92-475b-910b-f5aa40614d92?autoplay=false]
   
-### <a name="import-outlook-pst-files-to-microsoft-365-desktop"></a>Outlook pst ファイルを Microsoft 365 (デスクトップ) にインポートする
+## <a name="import-outlook-pst-files-to-microsoft-365-desktop"></a>Outlook pst ファイルを Microsoft 365 (デスクトップ) にインポートする
 
 Microsoft 365 を使用してメール、連絡先、予定表を Outlook から .pst ファイルにエクスポートし、そのファイルを Outlook にインポートするには、次の手順を実行します。
   

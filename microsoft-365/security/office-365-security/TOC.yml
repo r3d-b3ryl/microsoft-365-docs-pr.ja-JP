@@ -148,6 +148,8 @@
           href: preset-security-policies.md
         - name: 保護ポリシーの構成アナライザー
           href: configuration-analyzer-for-security-policies.md
+        - name: 優先するアカウントのセキュリティに関する推奨事項
+          href: security-recommendations-for-priority-accounts.md
         - name: Defender for Office 365 の攻撃シミュレーション トレーニング
           items:
             - name: 攻撃シミュレーション トレーニングの使用を開始する
@@ -374,9 +376,13 @@
           href: configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
         - name: 選挙運動用の開発/テスト環境でチーム サイトを作成する
           href: create-team-sites-in-a-political-campaign-dev-test-environment.md
-    - name: Microsoft 365 Defender
-      href: ../defender/index.yml
-    - name: Microsoft Defender for Endpoint
-      href: ../defender-endpoint/index.yml
-    - name: Microsoft Defender for Identity
-      href: /defender-for-identity/
+    - name: Microsoft 365 Defender ドキュメント
+      items:
+        - name: Microsoft 365 Defender
+          href: ../defender/index.yml
+        - name: Defender for Endpoint
+          href: ../defender-endpoint/index.yml
+        - name: Defender for Identity
+          href: /defender-for-identity
+        - name: Defender for Cloud Apps
+          href: /cloud-app-security

@@ -17,16 +17,17 @@ ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 - AdminTemplateSet
+- adminvideo
 search.appverid:
 - MET150
 description: 各チーム メンバーは、一般法人向け Microsoft 365 にサインインしてアクセスする前に、ユーザー アカウントが必要になります。ユーザーを追加して、ライセンスを割り当てる方法について説明します。
 ms.date: 07/01/2020
-ms.openlocfilehash: eee8b2bb9484dfba34a278f7ee2b9b0077dda7e0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: dffe719c5dbd1478cdf23bae2551daa26289d1e4
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60161932"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128510"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>ユーザーを追加して同時にライセンスを割り当てる
 
@@ -35,35 +36,6 @@ ms.locfileid: "60161932"
 ## <a name="before-you-begin"></a>開始する前に
 
 ユーザーを追加してライセンスを割り当てるには、グローバル管理者、ライセンス管理者、またはユーザー管理者である必要があります。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
-
-## <a name="add-a-user-in-the-admin-simplified-view"></a>管理者簡易ビューでユーザーを追加する
-
-管理センターにこのページが表示されている場合は、**管理者簡易ビュー** が表示されています。 以下の手順に従って、ユーザーを追加します。
-
-:::image type="content" source="../../media/vsb-add-user-view.png" alt-text="スクリーンショット: 簡易管理センター ビュー":::
-
-::: moniker range="o365-worldwide"
-
-1. <https://admin.microsoft.com> で管理センターに移動します。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a> から管理センターにアクセスします。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a> から管理センターにアクセスします。
-
-::: moniker-end 
-
-2. [**別のユーザーのアカウントを作成する**] を選択します。
-3. [**ユーザー アカウントの追加**] ページで、サインインに使用する姓名、表示名、ユーザー名を入力します。
-4. [**最大 5 つのメール アドレス...**] テキスト ボックスにユーザーのメール アドレスを追加します。 これにより、新しいユーザーは Microsoft 365 サービスにサインインするために必要な情報を確実に取得できます。
-5. この情報を保存する場合は、[**ユーザーの追加**] と [**サインイン情報のダウンロード**] を選択します。
 
 ## <a name="watch-add-users-in-the-dashboard-view"></a>視聴: ダッシュボード ビューでユーザーを追加する
 
@@ -104,6 +76,35 @@ ms.locfileid: "60161932"
 4. [**製品ライセンスの割り当て**] ウィンドウで、ユーザーの場所と適切なライセンスを選択します。 利用可能なライセンスがない場合でも、ユーザーを追加し、追加のライセンスを購入できます。 [**アプリ**] を展開し、アプリを選択または選択解除して、ユーザーにライセンスが付与されるアプリを制限します。 **[次へ]** を選択します。
 5. [**オプションの設定**] ウィンドウで、このユーザーを管理者にする場合は [**役割**] を展開します。ユーザーに関する追加情報を入力する場合は、[**プロファイル情報**] を展開します。
 6. [**次へ**] を選択し、新しいユーザーの設定を確認し、必要に応じて変更を行い、[**追加の完了**] を選択し、**[閉じる]** をクリックします。
+
+## <a name="add-a-user-in-the-admin-simplified-view"></a>管理者簡易ビューでユーザーを追加する
+
+管理センターにこのページが表示されている場合は、**管理者簡易ビュー** が表示されています。 以下の手順に従って、ユーザーを追加します。
+
+:::image type="content" source="../../media/vsb-add-user-view.png" alt-text="スクリーンショット: 簡易管理センター ビュー":::
+
+::: moniker range="o365-worldwide"
+
+1. <https://admin.microsoft.com> で管理センターに移動します。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a> から管理センターにアクセスします。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a> から管理センターにアクセスします。
+
+::: moniker-end 
+
+2. [**別のユーザーのアカウントを作成する**] を選択します。
+3. [**ユーザー アカウントの追加**] ページで、サインインに使用する姓名、表示名、ユーザー名を入力します。
+4. [**最大 5 つのメール アドレス...**] テキスト ボックスにユーザーのメール アドレスを追加します。 これにより、新しいユーザーは Microsoft 365 サービスにサインインするために必要な情報を確実に取得できます。
+5. この情報を保存する場合は、[**ユーザーの追加**] と [**サインイン情報のダウンロード**] を選択します。
 
 ## <a name="add-multiple-users-at-the-same-time"></a>複数のユーザーを同時に追加する
 

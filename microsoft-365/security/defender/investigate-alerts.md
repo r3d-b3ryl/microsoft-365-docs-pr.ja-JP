@@ -16,16 +16,17 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 3126523fd68afba29e3401533f7de2313f7df65b
-ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
+ms.openlocfilehash: cdc853ff4d22708143a9f23fd9399917e7fe91f6
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60724765"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128004"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>[アラートの調査] Microsoft 365 Defender
 
@@ -38,7 +39,7 @@ ms.locfileid: "60724765"
 
 このMicrosoft 365 Defender関連するアラートは、インシデントを形成するために[まとめて集計されます](incidents-overview.md)。 インシデントは常に攻撃の広範なコンテキストを提供しますが、アラートの分析は、より深い分析が必要な場合に有用です。 
 
-アラート **キューには、** 現在の一連のアラートが表示されます。 インシデント ポータル (&) の&>アラートからアラート キューにMicrosoft 365 Defender取得[security.microsoft.com)。](https://security.microsoft.com)
+アラート **キューには、** 現在の一連のアラートが表示されます。 [インシデント] ポータルのクイック **起動時**&通知>通知キューに <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderされます</a>。
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="ポータル内のアラート キューのMicrosoft 365 Defenderします。":::
 
@@ -54,11 +55,9 @@ Microsoft Defender for Endpoint、Microsoft Defender for endpoint、Microsoft De
 
 - 重要度
 - 状態
-- Category
-- 検出ソース
-- タグ
-- ポリシー
+- サービス ソース
 - 影響を受け取ったアセット
+- 自動調査の状態
 
 ## <a name="required-roles-for-defender-for-office-365-alerts"></a>ユーザー通知の Defender に必要Office 365役割
 
@@ -76,7 +75,7 @@ Microsoft Defender にアクセスして警告を表示するには、次の役�
 
    - セキュリティ閲覧者
 
-- Office 365セキュリティ &コンプライアンス役割グループ
+- Office 365 セキュリティ &コンプライアンス 役割グループ
 
    - コンプライアンス管理者
 
@@ -100,19 +99,19 @@ Microsoft Defender にアクセスして警告を表示するには、次の役�
 アラート ページ全体で、任意のエンティティの横にある省略記号 (**...**) を選択して、アラート ページを開く、またはアラートを別のインシデントにリンクするなどの使用可能なアクションを表示できます。
 
 ### <a name="alert-sources"></a>アラート ソース
-Microsoft 365 Defenderは、Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Cloud App Security、アプリ ガバナンス アドオンなど、Microsoft Cloud App Security。 警告の先頭に文字が付加されたアラートが表示されることがあります。 次の表は、アラートの先頭に付加された文字に基づくアラート ソースのマッピングを理解するのに役立つガイダンスを示しています。
+
+Microsoft 365 Defenderは、Microsoft Defender for Endpoint、microsoft Defender for Office 365、Microsoft Defender for Cloud Apps、Microsoft Defender for Cloud Apps のアプリ ガバナンス アドオンのようなソリューションから発生する場合があります。 警告の先頭に文字が付加されたアラートが表示されることがあります。 次の表は、アラートの先頭に付加された文字に基づくアラート ソースのマッピングを理解するのに役立つガイダンスを示しています。
 
 > [!NOTE]
-> - 付加された GUID は、統合アラート キュー、統合アラート ページ、統合調査、統合インシデントなどの統合エクスペリエンスにのみ固有です。<br>
-> - 先頭に付加された文字は、アラートの GUID を変更しない。 GUID に対する唯一の変更は、先頭に追加されたコンポーネントです。<br>
+> - 付加された GUID は、統合アラート キュー、統合アラート ページ、統合調査、統合インシデントなどの統合エクスペリエンスにのみ固有です。
+> - 先頭に付加された文字は、アラートの GUID を変更しない。 GUID に対する唯一の変更は、先頭に追加されたコンポーネントです。
 
-
-アラート ソース | 先頭文字 
-:---|:---
-Microsoft Defender for Office 365 | `fa{GUID}` <br> 例: `fa123a456b-c789-1d2e-12f1g33h445h6i` 
-Microsoft Defender for Endpoint | `da` または `ed` カスタム検出アラートの場合 <br> 
-Microsoft Defender for Identity | `aa{GUID}` <br> 例: `aa123a456b-c789-1d2e-12f1g33h445h6i` 
-Microsoft Cloud App Security |`ca{GUID}` <br> 例: `ca123a456b-c789-1d2e-12f1g33h445h6i` 
+| アラート ソース | 先頭文字 |
+| :---|:--- |
+| Microsoft Defender for Office 365 | `fa{GUID}` <br> 例: `fa123a456b-c789-1d2e-12f1g33h445h6i` |
+| Microsoft Defender for Endpoint | `da` または `ed` カスタム検出アラートの場合 <br> |
+| Microsoft Defender for Identity | `aa{GUID}` <br> 例: `aa123a456b-c789-1d2e-12f1g33h445h6i` |
+| Microsoft Defender for Cloud Apps |`ca{GUID}` <br> 例: `ca123a456b-c789-1d2e-12f1g33h445h6i` |
 
 ### <a name="analyze-affected-assets"></a>影響を受けるアセットを分析する
 
@@ -182,21 +181,21 @@ Microsoft Cloud App Security |`ca{GUID}` <br> 例: `ca123a456b-c789-1d2e-12f1g33
 
 - ユーザーが高リスクとしてタグ付けされていない
 
-両方が true の場合、SecOps はアラートを正当な移動としてマークし、解決します。 通知は、通知が解決Microsoft Teams後に通知に投稿されます。 
+両方が true の場合、SecOps はアラートを正当な移動としてマークし、解決します。 通知は、通知が解決Microsoft Teams後に通知に投稿されます。
 
-### <a name="connect-power-automate-to-microsoft-cloud-app-security"></a>Connect Power AutomateをMicrosoft Cloud App Security
+### <a name="connect-power-automate-to-microsoft-defender-for-cloud-apps"></a>Connect Power Automate Microsoft Defender for Cloud Apps への移行
 
-自動化を作成するには、API トークンを必要としてから、API トークンをPower Automate Microsoft Cloud App Security。 
+オートメーションを作成するには、Microsoft Defender for Cloud Apps に接続する前Power Automate API トークンが必要です。
 
-1. **[設定] をクリック** し **、[セキュリティ拡張機能]** を選択し、[API **トークン**] タブの [トークンの追加 **] をクリック** します。 
+1. **[設定] をクリック** し **、[セキュリティ拡張機能]** を選択し、[API **トークン**] タブの [トークンの追加 **] をクリック** します。
 
 2. トークンの名前を指定し、[生成] を **クリックします**。 後で必要に応じてトークンを保存します。
 
 ### <a name="create-an-automated-flow"></a>自動フローの作成
 
-詳細な手順については、ビデオを参照 [してください](https://www.microsoft.com/en-us/videoplayer/embed/RWFIRn)。 
+詳細な手順については、ビデオを参照 [してください](https://www.microsoft.com/en-us/videoplayer/embed/RWFIRn)。
 
-このビデオでは、電源の自動化をデバイスに接続する方法Cloud App Security。 
+このビデオでは、電源自動化を Defender for Cloud Apps に接続する方法も説明します。
 
 ## <a name="next-steps"></a>次の手順
 

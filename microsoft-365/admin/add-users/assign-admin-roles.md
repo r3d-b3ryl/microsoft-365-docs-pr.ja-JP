@@ -20,6 +20,7 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - AdminTemplateSet
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
@@ -28,26 +29,30 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: 管理センターで特定のタスクを実行できるよう、管理者の役割をビジネス内のユーザーまたは複数のユーザーに割り当てる方法について説明します。
-ms.openlocfilehash: e06533b70ddd7101f2ba160aa6796ee77e250c17
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4a112f17f253289383353720db8bb3365095d645
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60161908"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128414"
 ---
 # <a name="assign-admin-roles"></a>管理者ロールを割り当てる
 
 Microsoft Business サブスクリプションを購入したユーザーは、グローバル管理者です。つまり、サブスクリプション内の製品を無制限に制御し、ほとんどのデータにアクセスできます。
 
-詳細については、「[管理者の役割について](about-admin-roles.md)」を参照してください。
+詳細については、[「管理者の役割について」](about-admin-roles.md) を参照してください。
 
 新しいユーザーを追加する場合、管理者ロールを割り当てない場合は、ユーザーロールに含め、Microsoft 管理センターに管理者特権はありません。 ただし、ヘルプが必要な場合は、管理者の役割をユーザーに割り当てできます。 たとえば、パスワードのリセットを支援する必要がある場合は、グローバル管理者の役割を割り当ててはいけない場合は、パスワード管理者の役割を割り当てる必要があります。 データやオンライン ビジネスに無制限にアクセスできるグローバル管理者が多すぎると、セキュリティ リスクが生じます。
 
-## <a name="watch-add-an-adminbrbr"></a>ウォッチ: 管理者を追加する<br><br>
+## <a name="watch-add-an-admin"></a>ウォッチ: 管理者を追加する
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
-このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](../../business-video/index.yml)」をご覧ください。
+1. Microsoft 365 Business にサインアップすると、自動的にグローバル管理者になります。ビジネスを管理しやすくするために、他のユーザーを管理者にすることもできます。 
+1. Microsoft 365 管理センターで、**[ユーザー]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**[アクティブなユーザー]**</a> の順に選択します。
+1. 管理者にするユーザーを選択し、**[役割の管理]** を選択します。
+
+このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](../../business-video/index.yml)」をご覧ください。
 
 ## <a name="assign-admin-roles"></a>管理者ロールを割り当てる 
 
@@ -58,7 +63,7 @@ Microsoft Business サブスクリプションを購入したユーザーは、�
 
 ### <a name="assign-admin-roles-to-users-using-roles"></a>ロールを使用して管理者ロールをユーザーに割り当てる
 
-1. 管理センターで、[役割の割り当 <a href="https://go.microsoft.com/fwlink/p/?linkid=2097861" target="_blank">**て] に移動します**</a>。 組織で **使用できるAD** を表示するには、[Azure の管理者] タブまたは **[Intune]** タブを選択します。
+1. 管理センターで、[役割の割り当 <a href="https://go.microsoft.com/fwlink/p/?linkid=2097861" target="_blank">**て] に移動します**</a>。 [管理者] **Azure AD** Intune タブ **を** 選択して、組織で使用できる管理者の役割を表示します。
 2. ユーザーを割り当てる管理者の役割を選択します。
 3. [割 **り当てられた管理者の追加]**  >  **を選択します**。
 4. ユーザーの表示 **名またはユーザー** 名を **入力** し、候補の一覧からユーザーを選択します。
@@ -81,7 +86,7 @@ Microsoft Business サブスクリプションを購入したユーザーは、�
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、**[ユーザー]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> の順に選択します。
+1. 管理センターで、[**ユーザー**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
 ::: moniker-end
 
@@ -107,6 +112,6 @@ PowerShell を知っている場合は [、「PowerShell を使用して役割�
 ## <a name="related-content"></a>関連コンテンツ
 
 [Microsoft 365 管理者ロールについて](about-admin-roles.md) (記事)\
-[Azure AD組み込みロール](/azure/active-directory/roles/permissions-reference) (記事)\
+[Azure AD組み込みの役割](/azure/active-directory/roles/permissions-reference)(記事)\
 [PowerShell を使用してユーザー アカウントに役割を割り当てる](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md) (記事)\
 [パートナー関係の承認または削除](../misc/add-partner.md) (記事)

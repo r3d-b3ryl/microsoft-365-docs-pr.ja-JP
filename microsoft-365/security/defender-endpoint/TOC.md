@@ -70,7 +70,7 @@
 
 
 
-#### [Azure Defender との統合](azure-server-integration.md)
+#### [Microsoft Defender for Cloudとの統合](azure-server-integration.md) 
 
 #### [インターネット アクセスなしでデバイスをオンボードする](onboard-offline-machines.md)
 #### [新しくオンボードされたデバイスで検出テストを実行する](run-detection-test.md)
@@ -282,7 +282,6 @@
 ### 次世代の保護
 #### [次世代保護の概要](next-generation-protection.md)
 ##### [Microsoft Defender ウイルス対策の概要](microsoft-defender-antivirus-windows.md)
-##### [Windows Server 上の Microsoft Defender ウイルス対策](microsoft-defender-antivirus-on-windows-server.md)
 ##### [ベストな組み合わせ: Microsoft Defender Antivirus および Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md)
 ##### [ベストな組み合わせ: Microsoft Defender ウイルス対策と Office 365](office-365-microsoft-defender-antivirus.md)
 #### [Microsoft Defender ウイルス対策を評価する](evaluate-microsoft-defender-antivirus.md)
@@ -487,7 +486,7 @@
 ### [脅威インテリジェンスの概念を理解する](threat-indicator-concepts.md)
 ### [他の Microsoft ソリューションとの統合を構成する]()
 #### [条件付きアクセスを構成する](configure-conditional-access.md)
-#### [Microsoft Cloud App Security との統合を構成する](microsoft-cloud-app-security-config.md)
+#### [Microsoft Defender for Cloud Apps を統合のために構成する](microsoft-cloud-app-security-config.md)
 ### [管理と API]()
 #### [管理と API の概要](management-apis.md)
 #### [API リリースノート](api-release-notes.md)
@@ -645,7 +644,6 @@
 ##### [高度な追求イベントを Azure イベント ハブにストリーミングする](raw-data-export-event-hub.md)
 ##### [高度な追求イベントをストレージ アカウントにストリーミングする](raw-data-export-storage.md)
 
-
 #### [SIEM 統合]()
 ##### [Microsoft Defender for Endpoint を使用して SIEM ツールを統合する](configure-siem.md)
 ##### [Microsoft Defender for Endpoint の検出フィールド](api-portal-mapping.md)
@@ -685,7 +683,7 @@
 ### [統合]()
 #### [Microsoft Defender for Endpoint 統合](threat-protection-integration.md)
 #### [条件付きアクセスでユーザー、データ、デバイスを保護する](conditional-access.md)
-#### [Microsoft Cloud App Security 統合の概要](microsoft-cloud-app-security-integration.md)
+#### [Microsoft Defender for Cloud Apps 統合の概要](microsoft-cloud-app-security-integration.md)
 
 ### [Windows における情報保護の概要]()
 #### [Windows 統合](information-protection-in-windows-overview.md)
@@ -727,6 +725,7 @@
 #### [攻撃面の減少ルール](troubleshoot-asr.md)
 #### [攻撃面の減少ルールに以降する](migrating-asr-rules.md)
 
-# [Microsoft 365 Defender](../defender/index.yml)
-# [Defender for Office 365](../office-365-security/index.yml)
-# [Defender for Identity](/defender-for-identity/)
+# [Microsoft 365 Defender ドキュメント]()
+## [Microsoft 365 Defender](../defender/index.yml)
+## [Defender for Office 365](../office-365-security/index.yml)
+## [Defender for Identity](/defender-for-identity/)

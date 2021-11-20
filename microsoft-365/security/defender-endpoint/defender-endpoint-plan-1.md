@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Endpoint Plan 1 の概要 (プレビュー)
+title: Microsoft Defender for Endpoint Plan 1 の概要
 description: Defender for Endpoint Plan 1 の概要を確認します。 このエンドポイント保護サブスクリプションに含まれる機能について説明します。
 search.appverid: MET150
 author: denisebmsft
@@ -7,21 +7,21 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 10/29/2021
+ms.date: 11/19/2021
 ms.prod: m365-security
 ms.technology: mde
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: e6f02abb96ff04271cfb84fa333b476b7120115f
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 51f6d6e7e1c8d326b9cd2070e2ca79a67cedbd5a
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111797"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61127826"
 ---
-# <a name="overview-of-microsoft-defender-for-endpoint-plan-1-preview"></a>Microsoft Defender for Endpoint Plan 1 の概要 (プレビュー)
+# <a name="overview-of-microsoft-defender-for-endpoint-plan-1"></a>Microsoft Defender for Endpoint Plan 1 の概要
 
 > [!TIP]
 > ユーザーまたは A3 Microsoft 365 E3が、Microsoft 365 E5 A5 を使用していない場合は、プレビュー プログラムに [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) サインアップしてください。
@@ -31,13 +31,13 @@ Microsoft Defender for Endpoint は、高度な脅威を防止、検出、調査
 - **現在プレビュー中で、** この記事で説明されているエンドポイント プラン 1 の Defender。そして 
 - **[Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)**(一般提供)、以前は Defender for Endpoint と [呼ばれる](microsoft-defender-endpoint.md)。
 
-次の図の緑色のボックスは、Defender for Endpoint Plan 1 (プレビュー) に含まれている情報を示しています。
+次の図の緑色のボックスは、Defender for Endpoint Plan 1 に含まれている情報を示しています。
 
 :::image type="content" source="../../media/mde-p1/mde-p1-overview-diagram.png" alt-text="Defender for Endpoint Plan 1 ダイアグラム":::
 
 このガイドを使用して、以下を行います。
 
-- [Defender for Endpoint Plan 1 に含まれる機能の概要を確認する (プレビュー)](#defender-for-endpoint-plan-1-capabilities)
+- [Defender for Endpoint Plan 1 に含まれる機能の概要を確認する](#defender-for-endpoint-plan-1-capabilities)
 - [Defender for Endpoint プラン 1 とプラン 2を比較する](defender-endpoint-plan-1-2.md)
 - [Defender for Endpoint Plan 1 をセットアップして構成する方法について説明します。](mde-p1-setup-configuration.md)
 - [インシデントとアラートの表示、デバイスの管理、検出された脅威に関するレポートの使用が可能な Microsoft 365 Defender ポータルの使用を開始する](mde-plan1-getting-started.md)
@@ -48,7 +48,7 @@ Microsoft Defender for Endpoint は、高度な脅威を防止、検出、調査
 
 ## <a name="defender-for-endpoint-plan-1-capabilities"></a>Defender for Endpoint Plan 1 の機能
 
-Defender for Endpoint Plan 1 (プレビュー) には、次の機能が含まれています。
+Defender for Endpoint Plan 1 には、次の機能が含まれています。
 
 - **[業界をリードする堅牢](#next-generation-protection)** なマルウェア対策とウイルス対策保護を含む次世代の保護
 - **[脅威が検出された](#manual-response-actions)** 場合にセキュリティ チームがデバイスまたはファイルに対して実行できる、検疫にファイルを送信するなどの手動対応アクション
@@ -57,9 +57,6 @@ Defender for Endpoint Plan 1 (プレビュー) には、次の機能が含まれ
 - **[さまざまなプラットフォームの](#cross-platform-support)** 保護 (Windows macOS、iOS、Android デバイスなど)
 
 以下のセクションでは、これらの機能の詳細について説明します。 
-
-> [!IMPORTANT]
-> この記事の一部の情報は、製品リリース前に大幅に変更される可能性がある、事前リリース済みの製品/サービスに関連しています。 Microsoft は、ここに提供される情報について、明示または黙示を問わず一切の保証を行いません。 このガイドには、Defender for Endpoint Plan 1 (プレビュー) に含まれていない一部の機能を説明または表示する可能性があるオンライン コンテンツへのリンクが含まれています。
 
 ## <a name="next-generation-protection"></a>次世代の保護
 
@@ -89,7 +86,7 @@ Defender for Endpoint Plan 1 (プレビュー) には、次の機能が含まれ
 
 ## <a name="attack-surface-reduction"></a>攻撃面の縮小
 
-組織の攻撃表面は、サイバー攻撃に対して脆弱なすべての場所です。 Defender for Endpoint Plan 1 (プレビュー) を使用すると、組織で使用するデバイスとアプリケーションを保護することで、攻撃の表面を軽減できます。 Defender for Endpoint Plan 1 (プレビュー) に含まれる攻撃表面の縮小機能については、以下のセクションで説明します。
+組織の攻撃表面は、サイバー攻撃に対して脆弱なすべての場所です。 Defender for Endpoint Plan 1 を使用すると、組織で使用するデバイスとアプリケーションを保護することで、攻撃の表面を軽減できます。 Defender for Endpoint Plan 1 に含まれる攻撃表面の縮小機能については、以下のセクションで説明します。
 
 - [攻撃面の減少ルール](#attack-surface-reduction-rules)
 - [ランサムウェアの軽減](#ransomware-mitigation)
@@ -119,7 +116,7 @@ Defender for Endpoint の攻撃表面縮小機能の詳細については、「�
 
 詳細については、「フォルダー アクセスを [制御して重要なフォルダーを保護する」を参照してください](controlled-folders.md)。
 
-### <a name="device-control"></a>デバイス制御
+### <a name="device-control"></a>デバイス コントロール
 
 組織のデバイスに対する脅威は、USB ドライブなどのリムーバブル ドライブ上のファイルの形式で受け取る場合があります。 Defender for Endpoint には、承認されていない周辺機器からの脅威がデバイスを侵害するのを防ぐための機能が含まれています。 Defender for Endpoint を構成して、リムーバブル デバイス上のリムーバブル デバイスとファイルをブロックまたは許可できます。 
 
@@ -158,7 +155,7 @@ Web 保護を使用すると、Web の脅威や望ましくないコンテンツ
 
 ## <a name="centralized-management"></a>集中管理
 
-Defender for Endpoint Plan 1 (プレビュー) には Microsoft 365 Defender ポータルが含まれています。これにより、セキュリティ チームは検出された脅威に関する現在の情報を表示し、脅威を軽減するための適切なアクションを実行し、組織の脅威保護設定を一本的に管理できます。
+Defender for Endpoint Plan 1 には Microsoft 365 Defender ポータルが含まれています。これにより、セキュリティ チームは検出された脅威に関する現在の情報を表示し、脅威を軽減するための適切なアクションを実行し、組織の脅威保護設定を一部管理できます。
 
 詳細については、「ポータルの概要[Microsoft 365 Defender」を参照してください](portal-overview.md)。
 
@@ -177,7 +174,7 @@ Defender for Endpoint Plan 1 (プレビュー) には Microsoft 365 Defender ポ
 - アクション **センターには、** 実行された修復アクションが一覧表示されます。 たとえば、ファイルが検疫に送信された場合、または URL がブロックされている場合、各アクションは [履歴] タブの [アクション センター] に **一覧表示** されます。
 - [ **レポート] セクション** には、検出された脅威とその状態を示すレポートが含まれています。 
 
-詳細については [、「Microsoft Defender for Endpoint Plan 1 の概要 (プレビュー)」を参照してください](mde-plan1-getting-started.md)。
+詳細については [、「Microsoft Defender for Endpoint Plan 1 の概要」を参照してください](mde-plan1-getting-started.md)。
 
 ### <a name="apis"></a>API
 
@@ -187,7 +184,7 @@ Defender for Endpoint API を使用すると、ワークフローを自動化し
 
 ## <a name="cross-platform-support"></a>クロスプラットフォームのサポート
 
-ほとんどの組織では、さまざまなデバイスとオペレーティング システムを使用しています。 現在、Defender for Endpoint Plan 1 (プレビュー) は次のオペレーティング システムをサポートしています。
+ほとんどの組織では、さまざまなデバイスとオペレーティング システムを使用しています。 現在、Defender for Endpoint Plan 1 では、次のオペレーティング システムがサポートされています。
 
 - Windows 10バージョン 1709 以降
 - macOS: 11.5 (Big Sur), 10.15.7 (Catalina), or 10.14.6 (Mojave)
@@ -196,7 +193,7 @@ Defender for Endpoint API を使用すると、ワークフローを自動化し
 
 ## <a name="next-steps"></a>次の手順
 
-- [Microsoft Defender for Endpoint Plan 1 (プレビュー) とプラン 2 の比較](defender-endpoint-plan-1-2.md)
-- [Defender for Endpoint Plan 1 のセットアップと構成 (プレビュー)](mde-p1-setup-configuration.md)
-- [Defender for Endpoint Plan 1 の概要 (プレビュー)](mde-plan1-getting-started.md)
-- [エンドポイント プラン 1 の Defender の管理 (プレビュー)](mde-p1-maintenance-operations.md)
+- [Microsoft Defender for Endpoint Plan 1 とプラン 2 の比較](defender-endpoint-plan-1-2.md)
+- [Defender for Endpoint Plan 1 のセットアップと構成](mde-p1-setup-configuration.md)
+- [Defender for Endpoint Plan 1 の概要](mde-plan1-getting-started.md)
+- [エンドポイント プラン 1 の Defender の管理](mde-p1-maintenance-operations.md)

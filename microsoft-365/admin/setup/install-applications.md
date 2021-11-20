@@ -22,18 +22,33 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- adminvideo
 description: 新しいアプリケーションをセットアップMicrosoft 365、Mac、PC、またはモバイル デバイスにOfficeアプリケーションをインストールする方法について学習します。
-ms.openlocfilehash: da2a91d682d5bd565db65b86226a90d47a84d51b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e943e5dd07f51ff6885cbb5f2567643597f360b9
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199215"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128210"
 ---
 # <a name="install-office-applications"></a>Office アプリケーションをインストールする
 
 Microsoft 365 のセットアップが完了しましたので、Mac、PC、モバイル デバイスに個々の Office アプリケーションをインストールできます。
   
+## <a name="watch-install-office-apps"></a>ウォッチ: アプリOfficeインストールする
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/acce002c-0756-4b64-ac5d-2198ee96a9b1?autoplay=false]
+
+Microsoft Office アプリは、**[スタート]** メニューから見つけることができます。 表示しない場合は、自分でインストールできます。
+
+1. Office.com にアクセスします。 職場のアカウントでサインインする必要があるかもしれません。
+2. **[Office のインストール]**  >  **[Microsoft 365 Apps]**  >  **[実行]** の順に選択し、**[はい]** を選択します。
+3. アプリOfficeインストールされます。 このプロセスには数分かかる場合があります。 完了したら、**[閉じる]** を選択します。
+4. Microsoft Teams をインストールするには、office.com ページに移動し、**[Teams]** を選択します。
+5. Windows アプリを入手してから、**[実行]** を選択します。 インストールが完了すると、Teams のダイアログが表示されます。
+
+## <a name="next-steps"></a>次の手順
+
 方法については、次のリンクに従ってください。
   
 - Office アプリケーションのインストール: [Office を PC または Mac にインストールする](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)

@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Endpoint Plan 1 の管理 (プレビュー)
+title: エンドポイント プラン 1 の Microsoft Defender の管理
 description: Defender for Endpoint Plan 1 を維持および更新します。 設定を管理し、更新プログラムを取得し、誤検知/負に対処します。
 search.appverid: MET150
 author: denisebmsft
@@ -7,33 +7,30 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 09/13/2021
+ms.date: 11/19/2021
 ms.prod: m365-security
 ms.technology: mde
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 792b5c6f3fa077a4856631d95a68a8fa538778e1
-ms.sourcegitcommit: 6dbf879f769a825ed7039363f3a91d676e355ee0
+ms.openlocfilehash: c95a674c59e52c7bfe699b670a69fec468361d54
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60940397"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128534"
 ---
-# <a name="manage-microsoft-defender-for-endpoint-plan-1-preview"></a>Microsoft Defender for Endpoint Plan 1 の管理 (プレビュー)
+# <a name="manage-microsoft-defender-for-endpoint-plan-1"></a>エンドポイント プラン 1 の Microsoft Defender の管理
 
 > [!TIP]
 > ユーザーまたは A3 Microsoft 365 E3が、Microsoft 365 E5 A5 を使用していない場合は、プレビュー プログラムに [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) サインアップしてください。
 
-組織内で Defender for Endpoint Plan 1 (プレビュー) を使用する場合、セキュリティ チームはセキュリティ ソリューションを維持するために特定の手順を実行できます。 セキュリティ チームがメンテナンスと運用計画をまとめる場合は、少なくとも次のアクティビティを含める必要があります。
+組織内で Defender for Endpoint Plan 1 を使用する場合、セキュリティ チームはセキュリティ ソリューションを維持するために特定の手順を実行できます。 セキュリティ チームがメンテナンスと運用計画をまとめる場合は、少なくとも次のアクティビティを含める必要があります。
 
 - [セキュリティ インテリジェンスと製品更新プログラムの管理](#manage-security-intelligence-and-product-updates)
 - [エンドポイントの Defender の微調整と調整](#fine-tune-and-adjust-defender-for-endpoint)
 - [誤検知/負のアドレス](#address-false-positivesnegatives)
-
-> [!IMPORTANT]
-> この記事の一部の情報は、製品リリース前に大幅に変更される可能性がある、事前リリース済みの製品/サービスに関連しています。 Microsoft は、ここに提供される情報について、明示または黙示を問わず一切の保証を行いません。 この記事には、Defender for Endpoint Plan 1 (プレビュー) に含まれていない一部の機能について説明する可能性があるオンライン コンテンツへのリンクが含まれています。
 
 ## <a name="manage-security-intelligence-and-product-updates"></a>セキュリティ インテリジェンスと製品更新プログラムの管理
 

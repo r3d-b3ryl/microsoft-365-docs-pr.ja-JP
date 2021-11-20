@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 管理サービス プロバイダー (MSP) が Microsoft 365 Lighthouseを使用する場合は、セルフサービス パスワードのリセットを管理する方法について説明します。
-ms.openlocfilehash: 0444fac94ee4a3037b4387e3ad344b374e6a3f1d
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: b8367d2ed2c088d56425b08c6da5dfd55fcd84b8
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60557246"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128606"
 ---
 # <a name="manage-self-service-password-reset"></a>セルフサービスパスワードのリセットを管理する
 
@@ -36,7 +36,7 @@ Microsoft 365 Lighthouseパートナーは、Azure Active Directory (Azure AD) �
 
 - 顧客テナントには、各ユーザー Azure AD Premiumライセンスが必要です。 SSPR をサポートするライセンスの詳細については、「セルフサービス パスワードのリセットに関するライセンス要件[Azure Active Directoryを参照してください](/azure/active-directory/authentication/concept-sspr-licensing)。
 
-- 顧客テナントは、ライトハウス内でアクティブである必要があります。 テナントがアクティブかどうかを確認する方法については、「テナントリスト[Microsoft 365 Lighthouseを参照してください](m365-lighthouse-tenant-list-overview.md)。
+- 顧客テナントは、ライトハウス内でアクティブである必要があります。 テナントがアクティブかどうかを確認する方法については、「テナントの概要[」Microsoft 365 Lighthouseを参照してください](m365-lighthouse-tenants-page-overview.md)。
 
 ## <a name="view-sspr-tenant-status"></a>SSPR テナントの状態を表示する
 

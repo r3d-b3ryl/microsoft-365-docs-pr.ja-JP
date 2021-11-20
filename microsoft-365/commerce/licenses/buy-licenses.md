@@ -19,15 +19,16 @@ ms.custom:
 - manage_licenses
 - commerce_licensing
 - AdminTemplateSet
+- adminvideo
 search.appverid: MET150
 description: 以下の手順を使用して、ライセンスを購入したり、ビジネス サブスクリプションのライセンス数Microsoft 365減らしたりします。
 ms.date: 09/16/2021
-ms.openlocfilehash: 6cdcad3c37db8475bcb64fa7a33e287f502dcd66
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 10ec13b1b20d386c24390b2bd3172a49c5f7165d
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60163650"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128714"
 ---
 # <a name="buy-or-remove-licenses"></a>ライセンスの購入または削除
 
@@ -38,7 +39,7 @@ ms.locfileid: "60163650"
 
 ## <a name="before-you-begin"></a>開始する前に
 
-- この記事で説明するタスクを実行するには、グローバル管理者または課金管理者である必要があります。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
+- この記事で説明するタスクを実行するには、グローバル管理者または課金管理者である必要があります。 詳細については、[「管理者の役割について」](../../admin/add-users/about-admin-roles.md) を参照してください。
 - ユーザーを [追加し、同時にライセンスを割り当てできます](../../admin/add-users/add-users.md)。
 - ビジネス向けまたはMicrosoft 365プランOffice 365 Enterprise購入した場合は、そのパートナーを通じて追加のライセンスを購入する必要があります。
 
@@ -63,7 +64,7 @@ ms.locfileid: "60163650"
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[お使いの製品]</a> ページの順に移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">お使いの製品</a>] ページの順に移動します。
 
 ::: moniker-end
 

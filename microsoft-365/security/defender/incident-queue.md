@@ -17,17 +17,18 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: d3dea119e73da7d0b0e8745ea1f96969f4818ac8
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: 0705424080f58d58f8c45b4a403fae01beb53373
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914322"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128834"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>グループ内のインシデントに優先順位をMicrosoft 365 Defender
 
@@ -40,7 +41,7 @@ Microsoft 365 Defender関連するアラートと、さまざまな製品から�
 
 インシデント **キューには、** デバイス、ユーザー、メールボックス間で作成されたインシデントのコレクションが表示されます。 これにより、インシデントを分類して優先順位を付け、情報に基づいたサイバーセキュリティ対応の決定を作成できます。 これはインシデント トリアージとも呼ばれる。
 
-インシデント ポータル (security.microsoft.com)の&でインシデント>アラートからインシデント キューに[Microsoft 365 Defender取得します](https://security.microsoft.com)。 次に例を示します。
+インシデント ポータルのクイック 起動でインシデント &**アラート**>インシデント キューに <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderします</a>。 次に例を示します。
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="インシデント キューの例。" lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
@@ -65,22 +66,26 @@ Microsoft 365 Defender関連するアラートと、さまざまな製品から�
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="インシデント キューのフィルター ウィンドウの例。" lightbox="../../media/incidents-queue/incidents-ss-incidents-filters.png":::
 
+既定のフィルターは、[新規] および [進行中] 状態のすべてのアラートと **インシデント****を表示** します。
+
 次の表に、使用可能なフィルター名を示します。
 
-| フィルター名 | [説明] |
+| フィルター名 | 説明 |
 |:-------|:-----|
-| 割り当て先 | 自分に割り当てられているアラート、または自動化によって処理されたアラートを表示できます。 |
+| 状態 | [**新規]、[****進行中]、または**[**解決済み] を選択します**。 |
+| 重要度 | インシデントの重大度は、資産に与える影響を示しています。 重大度が高いほど、影響は大きく、通常は最も迅速な注意が必要です。 [**高]、[****中]、[****低]、または** **[Informational] を選択します**。 |
+| インシデントの割り当て | [すべてのユーザーに割り当て済み]、[自分に割り当て済み]、または [割り当て解除] を選択します。 |
+| 複数のサービス ソース  | フィルターが複数のサービス ソース用であるかどうかを指定します。 |
+| サービス ソース  | フィルターを適用して、アプリ ガバナンス、Microsoft 365 Defender、microsoft Defender for Office 365、Microsoft Defender for Endpoint、Microsoft Defender for Identity、Microsoft Defender for Cloud Apps のアラートを含むインシデントのみを表示します。 |
+| タグ | リストから 1 つ以上のタグ名を選択します。 |
+| 複数のカテゴリ  | フィルターが複数のカテゴリの場合に使用するかどうかを指定します。 |
 | Categories | カテゴリを選択して、見られる特定の戦術、テクニック、または攻撃コンポーネントに焦点を当てる。 |
-| 分類 | 関連するアラートの一連の分類に基づいてインシデントをフィルター処理します。 値には、true アラート、false アラート、または設定されていないが含まれます。 |
-| データの機密性 | 一部の攻撃では、機密データや貴重なデータを排除することを目的としています。 機密データがインシデントに関与しているかどうかを確認するためにフィルター処理を適用することにより、機密情報が侵害されている可能性があるかどうかを迅速に判断し、それらのインシデントへの対処に優先順位を付けることができます。 <br><br> Microsoft Information Protection が有効になっている場合にのみ適用されます。|
-| デバイス グループ | 定義済みのデバイス グループでフィルター処理します。 |
-| 調査の状態 | 自動調査の状態によってインシデントをフィルター処理します。  |
-| 複数のカテゴリ | 複数のカテゴリにマップされたインシデントのみを表示し、より多くの損害を引き起こす可能性がある場合に選択できます。 |
-| 複数のサービス ソース  | フィルターを適用して、さまざまなソースからの通知を含むインシデントのみを表示します (Microsoft Defender for Endpoint、Microsoft Cloud App Security、Microsoft Defender for Identity、Microsoft Defender for Office 365)。 |
 | OS プラットフォーム | オペレーティング システムによってインシデント キュー ビューを制限します。 |
-| サービス ソース | 特定のソースを選択すると、選択したソースから 1 つ以上のアラートを含むインシデントに焦点を当てることができます。 |
-| 重要度 | インシデントの重大度は、資産に与える影響を示しています。 重大度が高いほど、影響は大きく、通常は最も迅速な注意が必要です。 |
-| 状態 | 状態に基づいて表示されるインシデントのリストを制限して、アクティブなインシデントまたは解決されたインシデントを確認できます。 |
+| 分類 | 関連するアラートの一連の分類に基づいてインシデントをフィルター処理します。 [True **alert] 、False** **Alerts 、または** **[Not set] を選択します**。 |
+| 調査の状態 | 自動調査の状態によってインシデントをフィルター処理します。  |
+| 関連する脅威 | 名前付き脅威によってインシデントをフィルター処理します。  |
+| Actors | 名前付き脅威アクターによってインシデントをフィルター処理します。  |
+| データの機密性 | 一部の攻撃では、機密データや貴重なデータを排除することを目的としています。 機密データがインシデントに関与しているかどうかを確認するためにフィルター処理を適用することにより、機密情報が侵害されている可能性があるかどうかを迅速に判断し、それらのインシデントへの対処に優先順位を付けることができます。 <br><br>このフィルターは、有効になっているMicrosoft Information Protection使用できます。|
 |||
 
 ## <a name="save-defined-filters-as-urls"></a>定義されたフィルターを URL として保存する

@@ -17,12 +17,12 @@ metadata:
   - M365-Lighthouse
   search.appverid: MET150
   description: 管理サービス プロバイダー (MSP) で Microsoft 365 Lighthouse に関するよく寄せられる質問 (FAQ) に対する回答をMicrosoft 365 Lighthouse。
-  ms.openlocfilehash: f7e2798305587f8e8d30b566dfdf5eca5b412f4f
-  ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+  ms.openlocfilehash: 834bab4a146b72fc4e4b6598ee54758ad5a55095
+  ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 10/23/2021
-  ms.locfileid: "60552646"
+  ms.lasthandoff: 11/20/2021
+  ms.locfileid: "61127934"
 title: Microsoft 365 Lighthouseよく寄せられる質問 (FAQ)
 summary: >
   > [!NOTE]
@@ -77,7 +77,7 @@ sections:
           > [!NOTE]
           > テナントを非アクティブ化すると、非アクティブ化が完了するまでテナントに対してアクションを実行できません。 非アクティブ化が完了するために最大 48 時間かかる場合があります。
 
-      テナントの詳細については、「テナントリストMicrosoft 365 Lighthouse[概要」を参照してください](m365-lighthouse-tenant-list-overview.md)。
+      テナントの詳細については、「テナントの概要[」Microsoft 365 Lighthouseを参照してください](m365-lighthouse-tenants-page-overview.md)。
   - question: 顧客Microsoft 365 Lighthouseのサブスクリプションが他のサブスクリプションを持っている場合、Microsoft 365 Business Premium機能Microsoft 365 E3。
     answer: >
       ライトハウスは、ユーザーのライセンスがMicrosoft 365 Business PremiumまたはMicrosoft 365 E3顧客テナントを管理するのに役立ちます。 Business プレミアムまたは E3 ライセンスを持プレミアムテナントのユーザーの場合、ライトハウスの機能は制限されます。 たとえば、Intune を含むライセンスがユーザーに不足している場合、そのユーザーのデバイス、デバイスのコンプライアンス状態、および脅威の状態は使用できません。ユーザーに P1 を含むライセンスがAzure AD場合、そのユーザーのパスワードとサインイン管理は使用できません。 詳細については[、「Requirements for Microsoft 365 Lighthouse」 を参照してください](m365-lighthouse-requirements.md)。

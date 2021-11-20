@@ -20,23 +20,35 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: セルフサービス のパスワードリセット ツールを使用して、ユーザーが自分のパスワードをリセットできるポリシーを設定する方法について学習します。
-ms.openlocfilehash: a30c32239cb1c995beaaf725aaf5dc3821beec8e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d36ddc604ca73ab09fc2de8eed6c1c8675c61877
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60161776"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128426"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>ユーザーが自分でパスワードをリセットできるようにする
 
 管理者Microsoft 365、ユーザーがセルフサービス のパスワードリセット ツールを使用[](https://go.microsoft.com/fwlink/p/?LinkId=522677)して、パスワードをリセットする必要がなさそう。 仕事が少ない!
-  
+ 
+## <a name="watch-let-users-reset-their-own-passwords"></a>ウォッチ: ユーザーが自分のパスワードをリセットする
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S]
+
+1. [組織] Microsoft 365 管理センター左側のナビゲーション ウィンドウで、[組織の設定] を選択設定[セキュリティ] を選択&  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**します**</a>。
+1. [**ユーザーが自分のパスワードをリセットする**] で、[管理者センター Azure AD **選択します**。
+1. 左側のナビゲーション ウィンドウで、[ **ユーザー**] を選択し、[ユーザー **-** すべてのユーザー] ページで、[パスワードのリセット] **を選択します**。
+1. [ **すべて] を** 選択してセルフサービス パスワードのリセットを有効にし、[保存] を **選択します**。
+
+このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](../../business-video/index.yml)」をご覧ください。
+ 
 ## <a name="before-you-begin"></a>はじめに
   
 - クラウド ユーザーのセルフサービス パスワード リセットは、ビジネス、教育、または非営利の有料プランMicrosoft 365無料で取得できます。 この機能は、試用版ではMicrosoft 365しません。
@@ -48,12 +60,6 @@ ms.locfileid: "60161776"
 この記事は、職場、学校、または非営利団体のパスワードの有効期限ポリシーを設定する管理者を対象としています。 これらの手順を完了するには、Microsoft 365 の管理者アカウントでサインインする必要があります。 [管理者アカウントとは](../../business-video/admin-center-overview.md)
 
 これらの手順を実行するには [、グローバル管理者またはパスワード](about-admin-roles.md) 管理者である必要があります。
-
-## <a name="watch-let-users-reset-their-own-passwords"></a>ウォッチ: ユーザーが自分のパスワードをリセットする
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S]
-
-このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](../../business-video/index.yml)」をご覧ください。
 
 ## <a name="steps-let-people-reset-their-own-passwords"></a>手順: ユーザーが自分のパスワードをリセットする
 

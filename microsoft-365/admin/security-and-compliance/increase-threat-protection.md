@@ -19,28 +19,37 @@ ms.custom:
 - OKR_SMB_M365
 - seo-marvel-mar
 - AdminSurgePortfolio
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
 description: フィッシング、マルウェア、その他のOffice 365から機密データを保護するために Microsoft Defender をセットアップします。
-ms.openlocfilehash: 89405628488d5a8574636025a614a3aac7e20dd9
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 3aa65b31c3995e39164b6bd5d7aa3aa07e7f6009
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60667784"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128678"
 ---
 # <a name="increase-threat-protection"></a>驚異の保護を強化する
 
 この記事は、フィッシング、マルウェア、その他の脅威Microsoft 365保護するために、サブスクリプションの保護を強化するのに役立ちます。 これらの推奨事項は、法律事務所や医療クリニックなど、セキュリティの必要性が高い組織に適しています。
 
-開始する前に、セキュリティで保護されたスコアOffice 365確認してください。 Office 365Secure Score は、通常のアクティビティとセキュリティ設定に基づいて組織のセキュリティを分析し、スコアを割り当てる。 まず、現在のスコアをメモします。 スコアを上げするには、この記事で推奨されるアクションを完了します。 目標は、最大スコアを達成するのではなく、ユーザーの生産性に悪影響を及ぼしない環境を保護する機会を認識する方法です。
+開始する前に、セキュリティで保護されたスコアOffice 365確認してください。 Office 365スコアは、通常のアクティビティとセキュリティ設定に基づいて組織のセキュリティを分析し、スコアを割り当てる。 まず、現在のスコアをメモします。 スコアを上げするには、この記事で推奨されるアクションを完了します。 目標は、最大スコアを達成するのではなく、ユーザーの生産性に悪影響を及ぼしない環境を保護する機会を認識する方法です。
 
 詳細については [、「Microsoft Secure Score」を参照してください](../../security/defender/microsoft-secure-score.md)。
 
 ## <a name="raise-the-level-of-protection-against-malware-in-mail"></a>メール内のマルウェアに対する保護のレベルを上げる
 
-ユーザーのOffice 365またはMicrosoft 365には、マルウェアに対する保護が含まれます。 マルウェアに一般的に使用されるファイルの種類を含む添付ファイルをブロックすることで、この保護を強化できます。 電子メールのマルウェア保護を強化するには、次の方法を実行します。
+ユーザーのOffice 365またはMicrosoft 365には、マルウェアに対する保護が含まれます。 マルウェアに一般的に使用されるファイルの種類を含む添付ファイルをブロックすることで、この保護を強化できます。 
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OA7Z?autoplay=false]
+
+1. [管理者] <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター、[</a>詳細を **表示する**] 、[**管理センター**] の順に選択し、[セキュリティ と **コンプライアンス&選択します**。
+1. [脅威 **の管理] を** 選択し、[ポリシー] **を選択します**。
+1. 利用可能なポリシーから、[マルウェア対策] **を選択します**。
+
+電子メールのマルウェア保護を強化するには、次の方法を実行します。
 
 1. 管理者アカウント [https://protection.office.com](https://protection.office.com) の資格情報に移動してサインインします。
 
@@ -68,6 +77,13 @@ ms.locfileid: "60667784"
 
 前の手順でブロックしたファイルに加えて、マクロを含む Office ファイル添付ファイルを開く前に、ユーザーに警告するルールを作成することをお試しください。 ランサムウェアはマクロ内に隠される可能性があります。そのため、ユーザーに知らない人からこれらのファイルを開かされないように警告します。
 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrWGt?autoplay=false]
+
+1. [管理センター] で [https://admin.microsoft.com](https://admin.microsoft.com) 、[管理センター]**のExchange** を **選択します**。
+1. 左側のメニューから、[メール フロー] **を選択します**。
+1. [ルール] タブで、プラス記号 (+) の横にある矢印を選択し、[新しいルールの作成] **を選択します**。
+1. 新しい **ルール ページで** 、ルールの名前を入力し、一番下までスクロールし、[その他のオプション] **を選択します**。
+
 メール トランスポート ルールを作成するには、次の方法を実行します。
 
 1. で管理センターに移動し <https://admin.microsoft.com> 、[管理センター]**を選択** \> Exchange。
@@ -80,7 +96,7 @@ ms.locfileid: "60667784"
 
 5. ルールの次の表の設定を適用します。 設定を変更しない限り、残りの設定の既定値を使用します。
 
-6. **[保存]** を選択します。
+6. [**保存**] を選択します。
 
 |Setting|ファイルの添付ファイルを開く前にユーザーにOfficeする|
 |---|---|
@@ -112,7 +128,7 @@ ms.locfileid: "60667784"
 
 5. 次の表の設定を適用します。 設定を変更しない限り、残りの設定の既定値を使用します。
 
-6. **[保存]** を選択します。
+6. [**保存**] を選択します。
 
 |Setting|ファイルの添付ファイルを開く前にユーザーにOfficeする|
 |---|---|
@@ -122,14 +138,13 @@ ms.locfileid: "60667784"
 |次の ..を実行します。|メッセージをブロックします。 . . メッセージを拒否し、説明を含める。|
 |メッセージ テキストを提供する|この組織外の電子メールの自動転送は、セキュリティ上の理由から防止されます。|
 
-
 ## <a name="protect-your-email-from-phishing-attacks"></a>フィッシング攻撃からメールを保護する
 
 1 つ以上のカスタム ドメインを Office 365または Microsoft 365環境に構成した場合は、ターゲットフィッシング対策保護を構成できます。 Microsoft Defender for Office 365 の一部であるフィッシング対策保護は、悪意のある偽装ベースのフィッシング攻撃や他のフィッシング攻撃から組織を保護するのに役立ちます。 カスタム ドメインを構成していない場合は、これを行う必要があります。
 
 最も重要なユーザーとカスタム ドメインを保護するためのポリシーを作成して、この保護を開始することをお勧めします。
 
-Microsoft Defender for Office 365フィッシング対策ポリシーを作成するには、この短いトレーニング[](../../business-video/setup-anti-phishing.md)ビデオを参照するか、次の手順を実行します。
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWvt9r?autoplay=false]
 
 1. [https://protection.office.com](https://protection.office.com) に移動します。
 
@@ -186,7 +201,15 @@ Microsoft Defender for Office 365フィッシング対策ポリシーを作成�
 
 ## <a name="protect-against-phishing-attacks-with-safe-links"></a>リンクを使用したフィッシング攻撃からセーフする
 
-ハッカーは、メールや他のファイルのリンクに悪意のある Web サイトを非表示にしている場合があります。 セーフOffice 365 用 Microsoft Defender の一部であるリンクは、電子メール メッセージおよびドキュメント内の Web アドレス (URL) のクリック時の検証を提供することで、組織を保護Officeできます。 保護は、リンク ポリシーセーフによって定義されます。
+ハッカーは、メールや他のファイルのリンクに悪意のある Web サイトを非表示にしている場合があります。 セーフ Office 365 用 Microsoft Defender の一部であるリンクは、電子メール メッセージおよびドキュメント内の Web アドレス (URL) のクリック時の検証を提供することで、組織を保護Officeできます。 保護は、リンク ポリシーセーフによって定義されます。
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWvdwy?autoplay=false]
+
+Microsoft Defender for Office 365 (以前は Microsoft 365 ATP、または Advanced Threat Protection) は、ユーザーが Office アプリのリンクをクリックすると、悪意のあるサイトからビジネスを保護するのに役立ちます。
+
+1. 管理センターに移動 [し、[セットアップ](https://admin.microsoft.com)] を **選択します**。
+2. 下にスクロールして **高度な脅威からの保護を強化します**。 [管理 **]** を選択し、[**リンクセーフクリックします**。
+3. [**グローバル 設定]** を選択し、[次の URL をブロックする] で、ブロックする URL を入力します。
 
 次の手順を実行することをお勧めします。
 
@@ -208,7 +231,7 @@ Microsoft Defender for Office 365フィッシング対策ポリシーを作成�
 
 2. **[設定以外のコンテンツ** に適用する場合は、[iOS と Android **Microsoft 365 Apps for enterprise] Officeを選択します**。
 
-3. **[保存]** を選択します。
+3. [**保存**] を選択します。
 
 ドメイン内のすべての受信者を対象とする新しいポリシーを作成するには、次の方法を実行します。
 
@@ -216,7 +239,7 @@ Microsoft Defender for Office 365フィッシング対策ポリシーを作成�
 
 2. 次の表に示す設定を適用します。
 
-3. **[保存]** を選択します。
+3. [**保存**] を選択します。
 
 |設定またはオプション|推奨される設定値|
 |---|---|

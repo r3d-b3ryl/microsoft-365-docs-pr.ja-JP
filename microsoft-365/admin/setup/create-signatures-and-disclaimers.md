@@ -20,18 +20,19 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: 組織を入力または退出するすべての電子メール メッセージに関する法的免責事項や開示ステートメントを含む電子メール署名を管理します。
-ms.openlocfilehash: 566cf595365a578f0e92d7e41e8ed7c7764c0cf4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5e2dc52c881bd2dbe87552ab71a369662ade60e5
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197801"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128234"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>組織全体の署名と免責事項を作成する
 
@@ -41,7 +42,12 @@ ms.locfileid: "60197801"
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
 
-このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](../../business-video/index.yml)」をご覧ください。
+1. [ファイル]<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">でMicrosoft 365 管理センター</a>を選択 **Exchange。**
+1. [メール **フロー] を選択します**。
+1. [ **追加+] を選択** し、[免責事項の **適用] を選択します**。
+1. [新しい **ルール] ページ** で、手順を完了します。 
+
+このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](../../business-video/index.yml)」をご覧ください。
 
 ## <a name="create-a-signature-that-applies-to-all-messages"></a>すべてのメッセージに適用される署名を作成する
 

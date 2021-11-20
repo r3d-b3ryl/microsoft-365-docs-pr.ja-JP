@@ -18,12 +18,12 @@ ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 ms.custom:
 - seo-marvel-apr2020
 description: 非アクティブなメールボックスの内容を保持する必要がなくなったMicrosoft 365、非アクティブなメールボックスを完全に削除できます。
-ms.openlocfilehash: 929b3d8a01dd9c88bc12e6e13bf4477a07496b34
-ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
+ms.openlocfilehash: 386e03bd9518f0db9c37a306c71d0cd9c4230e3a
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2021
-ms.locfileid: "60804631"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61127970"
 ---
 # <a name="delete-an-inactive-mailbox"></a>非アクティブなメールボックスを削除する
 
@@ -40,9 +40,9 @@ ms.locfileid: "60804631"
 
 - 非アクティブなメールボックスの内容は、ホールドを解除して、非アクティブなメールボックスを削除する前に別のメールボックスにコピーできます。 詳細については、「非アクティブな[メールボックスを復元する」を参照Office 365。](restore-an-inactive-mailbox.md)
 
-- 非アクティブなメールボックスから保持ポリシーまたは保持ポリシーを削除し、そのメールボックスの回復可能な削除済みメールボックスの保持期間が経過した場合、メールボックスは完全に削除されます。 削除後に回復することはできません。 ホールドを解除する前に、メールボックスの中身が不要かどうかを確認してください。 非アクティブなメールボックスを再アクティブ化する場合は、そのメールボックスを回復できます。 詳細については、「非アクティブな[メールボックスを回復する」を参照Office 365。](recover-an-inactive-mailbox.md)
+- 非アクティブなメールボックスから保持ポリシーまたは保持ポリシーを削除し、メールボックスの回復可能な削除済みメールボックス保持期間が経過した場合、183 日間の回復可能な削除済みメールボックスの保持期間が経過すると、メールボックスは完全に削除されます。 削除済みメールボックスの保存期間の詳細については、この記事の「 [詳細](#more-information) 」セクションを参照してください。 非アクティブなメールボックスが完全に削除された後は、回復できません。 ホールドを解除する前に、メールボックスの中身が不要かどうかを確認してください。 非アクティブなメールボックスを再アクティブ化する場合は、そのメールボックスを回復できます。 詳細については、「非アクティブな[メールボックスを回復する」を参照Office 365。](recover-an-inactive-mailbox.md)
 
-- 非アクティブなメールボックスの詳細については、「非アクティブなメールボックス」[を参照Office 365。](inactive-mailboxes-in-office-365.md)
+- 非アクティブなメールボックスの詳細については、「非アクティブな [メールボックスについて」を参照してください](inactive-mailboxes-in-office-365.md)。
 
 ## <a name="step-1-identify-the-holds-on-an-inactive-mailbox"></a>手順 1: 非アクティブなメールボックスに設定されているホールドを特定する
 
@@ -228,4 +228,3 @@ Set-RetentionCompliancePolicy -Identity <retention policy GUID without prefix or
   ```
 
   上記の例では *、WhenSoftDeleted* プロパティは、ソフト削除された日付 (この例では 2020 年 6 月 16 日) を識別します。 *WasInactiveMailbox* プロパティは、以前は非アクティブなメールボックスだったため `True` と表示されます。 メールボックスは、2020 年 9 月 30 日から 183 日後に完全に削除されます。
-

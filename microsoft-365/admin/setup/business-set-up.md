@@ -26,17 +26,18 @@ ms.custom:
 - OKR_SMB_Videos
 - seo-marvel-mar
 - AdminSurgePortfolio
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: ドメインとユーザーの追加Microsoft 365 Business Premiumセキュリティ ポリシーの設定など、ユーザーのセットアップ手順について説明します。
-ms.openlocfilehash: 9c2c9da3e9427f77f067001c5f244e7c6d4e247f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9fd4189754f11983770a01f8a9eb3e4858f55dec
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196203"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128042"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>セットアップ ウィザードMicrosoft 365 Business Premiumの設定
 
@@ -45,6 +46,13 @@ ms.locfileid: "60196203"
 このビデオでは、セットアップの概要をMicrosoft 365 Business Premiumしてください。<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
+
+## <a name="watch-set-up-microsoft-365-business-premium"></a>ウォッチ: 設定Microsoft 365 Business Premium
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ?autoplay=false]
+
+1. [セットアップに移動 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">]</a>をMicrosoft 365 管理センターにサインインし、[**セットアップに移動] を選択します**。 セットアップ ウィザードが起動します。
+1. セットアップが完了したら、Microsoft 管理センターに戻します。 管理センターでは、[セットアップ] ページで、Windows 10、DLP などの機能を **引き続き設定** できます。
 
 ## <a name="add-your-domain-users-and-set-up-policies"></a>ドメイン、ユーザー、およびポリシーの設定を追加する
 
@@ -86,7 +94,7 @@ ms.locfileid: "60196203"
 
 ![ウィザードの [新しいユーザーの追加] ページのスクリーンショット。](../../media/addnewuserspage.png)
 
-1. サブスクリプションにMicrosoft 365 Business Premiumユーザーが含まれています (たとえば、Azure AD Connect を使用した場合)、ライセンスを今すぐ割り当てるオプションが表示されます。 続行して、これらのユーザーにもライセンスを追加します。
+1. サブスクリプションにMicrosoft 365 Business Premiumユーザーがある場合 (たとえば、Azure AD Connect を使用した場合)、ライセンスを今すぐ割り当てるオプションが表示されます。 続行して、これらのユーザーにもライセンスを追加します。
 
 2. ユーザーを追加した後、資格証明書をそれらの新規ユーザーに共有するオプションが提供されます。それらをプリントアウトや電子メールで通知、またはダウンロードすることができます。
 

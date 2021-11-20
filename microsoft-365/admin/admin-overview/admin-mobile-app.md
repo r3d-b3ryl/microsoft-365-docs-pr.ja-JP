@@ -19,17 +19,18 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - admindeeplinkMAC
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: アプリをMicrosoft 365 管理、携帯電話やタブレットからオンライン組織を管理する方法について学習します。
-ms.openlocfilehash: 404b722861de6885491c95843a7e5058752503cc
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f3d42b899705988efd0beb320e73894a91494010
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154100"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128438"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>管理者Microsoft 365アプリについて
 
@@ -52,6 +53,13 @@ ms.locfileid: "60154100"
 > [!IMPORTANT]
 > iOS または Android の管理モバイル アプリを使用して問題が発生した場合は、feedback365@microsoft.com にお問 [い合](mailto:feedback365@microsoft.com) わせください。
 
+## <a name="watch-install-the-admin-mobile-app"></a>ウォッチ: 管理者モバイル アプリをインストールする
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c]
+
+1. モバイル アプリをMicrosoft 365 管理するには、デバイス **Microsoft 365 管理ストアで** アプリ を検索してインストールします。
+2. グローバル管理者の電子メール アドレスでサインインし、ダッシュボードを表示してサービスの正常性を確認し、ユーザー ライセンスを監視し、メッセージとサービス要求を確認します。
+
 ## <a name="before-you-begin"></a>はじめに
 
 管理者モバイル アプリを使用するには、Microsoft 365組織の管理者である必要があります。
@@ -61,10 +69,6 @@ ms.locfileid: "60154100"
 [Apple App Store](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8) 
 
 [Google Play ストア](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp).
-  
-## <a name="watch-install-the-admin-mobile-app"></a>ウォッチ: 管理者モバイル アプリをインストールする
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c]
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 

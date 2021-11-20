@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Managed Service Providers (MSP) の場合は、Microsoft 365 Lighthouseテナントを 1 つの場所でセキュリティで保護および管理する方法について説明します。
-ms.openlocfilehash: a97ee53ab106eac3db9455d80c02e1411562e090
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 41b5938e2cdacb8db8c0eb6f26220e9d22f38e89
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60645885"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61127814"
 ---
 # <a name="overview-of-microsoft-365-lighthouse"></a>概要 Microsoft 365 Lighthouse
 
@@ -63,6 +63,6 @@ CSP プログラムの詳細については、「CSP プログラムの概要[�
 ## <a name="related-content"></a>関連コンテンツ
 
 [アカウントにサインアップMicrosoft 365 Lighthouse](m365-lighthouse-sign-up.md) (記事)\
-[Microsoft 365 Lighthouseリストの概要](m365-lighthouse-tenant-list-overview.md)(記事)\
+[Microsoft 365 Lighthouseテナント ページの概要](m365-lighthouse-tenants-page-overview.md)(記事)\
 [Microsoft 365 Lighthouse コンプライアンス ページの概要](m365-lighthouse-device-compliance-page-overview.md)(記事)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (記事)

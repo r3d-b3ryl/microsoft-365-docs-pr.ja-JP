@@ -18,6 +18,7 @@ ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
 - AdminTemplateSet
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
@@ -26,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
 description: ドメイン名を購入し、ドメイン名に追加して、tom@fourthcoffee.com のような使いMicrosoft 365。
-ms.openlocfilehash: 71269513bce69ec81cf6e4a3030fb3327c32c88d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bf6de4115b37e6f83da7b924cc41f4d2c13ac427
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165138"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61127982"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>カスタム ドメインを使うように電子メール アドレスを変更する
 
@@ -57,6 +58,26 @@ ms.locfileid: "60165138"
 
 ドメインのメールを Microsoft 365 に変更すると、セットアップ中にドメインの MX レコードを更新すると、そのドメインに送信されたメールはすべて Microsoft 365 に送信されます。 MX レコードを変更する前に、ドメインに電子メールを持Microsoft 365ユーザーと作成したメールボックスをユーザーに追加し、メールボックスを作成してください。 ドメイン上のすべてのユーザーのメールをメールに移動Microsoft 365? 代わりに、いくつかの電子メール[アドレスMicrosoft 365をパイロットする手順を実行できます](../misc/pilot-microsoft-365-from-my-custom-domain.md)。
   
+## <a name="set-up-business-email-with-a-new-domain"></a>新しいドメインを使用してビジネス メールを設定する
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyVVA?autoplay=false]
+
+メールアドレス用に新しいドメイン名を購入し、Microsoft 365 でメールアドレスを設定します。
+
+1. 新しいドメイン名の連絡先情報を入力してメールアドレス用の新しいドメイン名を購入し、支払方法を選択してから注文します。
+1. アドレスの最初の部分 (＠マークの前) を変更するか、そのままにします。 
+1. Microsoft 365 からサインアウトして、新しいメールアドレスでもう一度サインインします。 従業員のメールアドレスが新しいドメインで更新されます。 
+
+## <a name="set-up-business-email-with-an-existing-domain"></a>既存のドメインを使用してビジネス メールを設定する
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxApu?autoplay=false]
+
+既に所有しているドメイン名を、Web サイト アドレスや他のプロバイダーのメール アドレスに使用します。
+
+1. ドメインをホストしている Web サイトにサインインします。 ボタンをクリックして自動的に確認するか、手動でドメインを更新することができます。 
+1. メールアドレスをカスタマイズするか、そのままにします。
+1. Microsoft 365 からサインアウトして、新しいメールアドレスでもう一度サインインします。 従業員のメールアドレスが新しいドメインで更新されます。
+
 ## <a name="change-your-email-address-to-use-your-custom-domain-using-the-microsoft-365-admin-center"></a>ユーザー設定を使用してカスタム ドメインを使用するメール アドレスを変更Microsoft 365 管理センター
 
 これらの手順を実行するには、グローバル管理者である必要があります。
