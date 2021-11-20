@@ -17,19 +17,20 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
+- m365solution-m365dsecops
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 06b181f3719d9b674098bf5da36938ea181a0dc1
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 85798d1b01323a2fee1023bafdbeeb5ae5847e5f
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60658064"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121473"
 ---
-# <a name="step-2-perform-a-soc-integration-readiness-assessment-using-the-zero-trust-framework"></a>手順 2. ゼロトラスト フレームワークを使用して SOC 統合準備評価を実行する
+# <a name="step-2-perform-a-soc-integration-readiness-assessment-using-the-zero-trust-framework"></a>手順 2。 ゼロトラスト フレームワークを使用して SOC 統合準備評価を実行する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 

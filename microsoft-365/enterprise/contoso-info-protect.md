@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社がエンタープライズ向け Microsoft 365の情報保護機能を使用して、クラウド内のデジタル資産をセキュリティで保護する方法について説明します。
-ms.openlocfilehash: 1a1130329f09868d6f235b575ff2d3128f538154
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1dff2cadd5afa66b3b469a2debedddbb347db0e5
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152756"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61122575"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Contoso Corporation の情報保護
 
@@ -34,7 +34,7 @@ Contoso 社はデータの分析を実行し、次の分類レベルを決定し
 
 | レベル 1: ベースライン | レベル 2: 機密 | レベル 3: 厳しく規制 |
 |:-------|:-----|:-----|
-| データは暗号化され、認証されたユーザーのみが使用できます。<BR> <BR> オンプレミスおよびクラウドベースのストレージとワークロードに格納されているすべてのデータに対して提供されます。 データは、サービス内に存在している間、およびサービスとクライアント デバイス間の転送中は暗号化されます。 <BR><BR>レベル 1 のデータの例には、通常のビジネス通信 (電子メール) や、管理、販売、およびサポート ワーカー用のファイルがあります。 | レベル 1 以上の強力な認証とデータ損失保護。<BR> <BR> 強力な認証には、SMS 検証AD多要素認証 (MFA) の Azure 認証が含まれます。 データ損失防止により、機密性の高い情報や重要な情報が Microsoft クラウド外に移動しません。<BR><BR>レベル 2 のデータの例には、財務情報や法的情報、新製品の研究開発データがあります。 | レベル 2 以上の最高レベルの暗号化、認証、監査。<BR><BR>保存データおよびクラウド内のデータに対する最高レベルの暗号化。地域の規制に準拠し、スマート カードや詳細な監査と警告を使用する MFA と組み合わされています。<BR> <BR>レベル 3 データの例は、顧客およびパートナーの個人情報、製品エンジニアリング仕様、および独自の製造技術です。  |
+| データは暗号化され、認証されたユーザーのみが使用できます。<BR> <BR> オンプレミスおよびクラウドベースのストレージとワークロードに格納されているすべてのデータに対して提供されます。 データは、サービス内に存在している間、およびサービスとクライアント デバイス間の転送中は暗号化されます。 <BR><BR>レベル 1 のデータの例には、通常のビジネス通信 (電子メール) や、管理、販売、およびサポート ワーカー用のファイルがあります。 | レベル 1 以上の強力な認証とデータ損失保護。<BR> <BR> 強力な認証には、Azure AD多要素認証 (MFA) と SMS 検証が含まれます。 データ損失防止により、機密性の高い情報や重要な情報が Microsoft クラウド外に移動しません。<BR><BR>レベル 2 のデータの例には、財務情報や法的情報、新製品の研究開発データがあります。 | レベル 2 以上の最高レベルの暗号化、認証、監査。<BR><BR>保存データおよびクラウド内のデータに対する最高レベルの暗号化。地域の規制に準拠し、スマート カードや詳細な監査と警告を使用する MFA と組み合わされています。<BR> <BR>レベル 3 データの例は、顧客およびパートナーの個人情報、製品エンジニアリング仕様、および独自の製造技術です。  |
 ||||
 
 ## <a name="contoso-information-policies"></a>Contoso の情報ポリシー
@@ -82,10 +82,10 @@ Contoso 社は、Exchange Online および SharePoint のロールアウトの�
 
 情報保護のための Contoso ポリシーのセットを次に示します。
 
-![デバイス、Exchange Online、およびSharePointアクセス ポリシー。](../media/contoso-info-protect/contoso-info-protect-fig1.png)
+:::image type="content" alt-text="デバイス、Exchange Online、およびSharePointアクセス ポリシー。" source="../media/contoso-info-protect/contoso-info-protect-fig1.png" lightbox="../media/contoso-info-protect/contoso-info-protect-fig1.png":::
 
 >[!Note]
->Contoso 社は、ID とサインイン用に追加の条件付きアクセス ポリシーも構成しました。 「[Contoso 社の ID](contoso-identity.md#conditional-access-policies-for-identity-and-device-access)」を参照してください。
+>Contoso 社は、ID とサインイン用に追加の条件付きアクセス ポリシーも構成しました。 「[Contoso 社の ID](contoso-identity.md#conditional-access-policies-for-zero-trust-identity-and-device-access)」を参照してください。
 >
 
 これらのポリシーでは、次のことを確実にします。
@@ -109,7 +109,7 @@ Contoso 社は、Exchange Online および SharePoint のロールアウトの�
 
 Contoso の情報保護構成を次に示します。
 
-![Contoso 社の結果として得られる情報保護の構成。](../media/contoso-info-protect/contoso-info-protect-fig2.png)
+:::image type="content" alt-text="Contoso 社の結果として得られる情報保護の構成。" source="../media/contoso-info-protect/contoso-info-protect-fig2.png":::
 
 ## <a name="next-step"></a>次の手順
 
@@ -119,6 +119,6 @@ Contoso 社が ID およびアクセス管理、脅威[保護、情報保護、�
 
 [セキュリティ ロードマップ](../security/office-365-security/security-roadmap.md)
 
-[Microsoft 365 for Enterprise の概要](microsoft-365-overview.md)
+[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
 
 [テスト ラボ ガイド](m365-enterprise-test-lab-guides.md)

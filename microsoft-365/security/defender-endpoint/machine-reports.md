@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: db2b82f1f966946f66a1c23dbe8b1c708549dc8e
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 9efd1b6785c711855e32f80580d567a2d0befa93
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556162"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121197"
 ---
 # <a name="device-health-and-compliance-report-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint のデバイスの正常性とコンプライアンス レポート
 
@@ -30,13 +30,14 @@ ms.locfileid: "60556162"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 デバイスの状態レポートは、組織内のデバイスに関する高レベルの情報を提供します。 このレポートには、センサーの正常性状態、ウイルス対策の状態、OS プラットフォーム、および Windows 10 (および Windows 11) バージョンを示す傾向情報が含まれています。
 
 ダッシュボードは、次の 2 つのセクションに構成されます。
 
-![デバイス レポートのイメージ。](images/device-reports.png)
+:::image type="content" alt-text="デバイス レポートのイメージ。" source="images/device-reports.png" lightbox="images/device-reports.png":::
+
 
 <br>
 
@@ -50,10 +51,10 @@ ms.locfileid: "60556162"
 
 ## <a name="device-trends"></a>デバイスの傾向
 
-既定では、デバイスの傾向には、最新の 1 日で終わる 30 日間の期間のデバイス情報が表示されます。 組織で発生している傾向についてより良い視点を得るために、表示される期間を調整してレポート期間を微調整できます。 期間を調整するには、ドロップダウン オプションから時間範囲を選択します。
+既定では、デバイスの傾向は、最新の 1 日で終了する 30 日間の期間のデバイス情報を表示します。 組織で発生している傾向についてより良い視点を得るために、表示される期間を調整してレポート期間を微調整できます。 期間を調整するには、ドロップダウン オプションから時間範囲を選択します。
 
 - 30 日間
-- 3 か月
+- 3か月
 - 6 か月
 - Custom
 
@@ -62,7 +63,7 @@ ms.locfileid: "60556162"
 
 ## <a name="device-summary"></a>デバイスの概要
 
-デバイスの傾向はデバイス情報の傾向を示しますが、デバイスの概要には、現在の日を対象にしたデバイス情報が表示されます。
+デバイスの傾向にデバイス情報が表示される一方で、デバイスの概要には、現在の日を対象にしたデバイス情報が表示されます。
 
 > [!NOTE]
 > [概要] セクションに反映されるデータの範囲は、現在の日付の 180 日前です。 たとえば、今日の日付が 2019 年 3 月 27 日の場合、概要セクションのデータには、2018 年 9 月 28 日から 2019 年 3 月 27 日の数値が反映されます。

@@ -16,16 +16,17 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 3535e258cb5825a5be4ff97e4bd03a700c80589c
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: 3976ff16d303db93d2ae7929afe1244f8ab1dda5
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914218"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121819"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>インシデントを管理Microsoft 365 Defender
 
@@ -37,7 +38,8 @@ ms.locfileid: "60914218"
 
 インシデント管理は、脅威を確実に含め、対処する上で重要です。
 
-インシデント ポータル **(&)** の&で>インシデントからのインシデントを [security.microsoft.com 管理](https://security.microsoft.com)Microsoft 365 Defenderします。 次に例を示します。
+Ratulac-acrolinx-updates インシデント & アラート **>** インシデントからのインシデントは、Microsoft 365 Defender ポータル (security.microsoft.com) のクイック 起動で [管理できます](https://security.microsoft.com)。 次に例を示します。
+
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="インシデント キューの例。" lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 

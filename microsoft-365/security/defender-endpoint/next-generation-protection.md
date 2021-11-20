@@ -15,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 5bd2fb3fcd09e41b7da5aa6f75ecfd692dbc76fe
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 17b1a57a16c829bbeced091c9a8678e00e5b9735
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553846"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121951"
 ---
 # <a name="next-generation-protection-overview"></a>次世代保護の概要
 
@@ -48,4 +48,4 @@ Microsoft Defender for Endpoint には、ネットワークのセキュリティ
 次世代の保護サービスを構成する方法の詳細については、「[Microsoft Defender ウイルス対策機能を構成する](configure-microsoft-defender-antivirus-features.md)」を参照してください。
 
 > [!NOTE]
-> 構成と管理は、Windows Server と Windows クライアントでほぼ同じです。 ただし、いくつかの違いがあります。 詳細については、「[Windows Server 上の Microsoft Defender ウイルス対策](microsoft-defender-antivirus-on-windows-server.md)」を参照してください。
+> 構成と管理は、Windows Server と Windows クライアントでほぼ同じです。 ただし、いくつかの違いがあります。 

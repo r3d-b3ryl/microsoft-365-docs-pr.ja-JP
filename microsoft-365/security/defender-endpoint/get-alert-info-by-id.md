@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a7d2574cf97d6eb2c38348d2e291fee82d0adb43
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 78e729fb5db90f78febdb970792b959a85df533f
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213685"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61122539"
 ---
 # <a name="get-alert-information-by-id-api"></a>ID API によるアラート情報の取得
 
@@ -42,12 +42,12 @@ ID によって特定 [のアラート](alerts.md) を取得します。
 
 ## <a name="limitations"></a>制限事項
 
-1. 構成済みの保持期間に従って、最後に更新されたアラートを取得できます。
-2. この API のレート制限は、1 分あたり 100 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。
+- 構成済みの保持期間に従って、最後に更新されたアラートを取得できます。
+- この API のレート制限は、1 分あたり 100 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」を参照してください。](apis-intro.md)
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」を参照してください](apis-intro.md)。
 
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
@@ -70,9 +70,9 @@ GET /api/alerts/{id}
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|型|説明
+名前|種類|説明
 :---|:---|:---
-Authorization|String|ベアラー {token}。 **必須**。
+Authorization|文字列|ベアラー {token}。 **必須**。
 
 ## <a name="request-body"></a>要求本文
 
@@ -80,4 +80,4 @@ Empty
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは 200 OK を返し、応答本文の [アラート](alerts.md) エンティティを返します。 指定された ID を持つアラートが見つからなかった場合 - 404 Not Found。
+成功した場合、このメソッドは 200 OK を返し、応答本文の [アラート](alerts.md) エンティティを返します。 指定した ID を持つアラートが見つからない場合は、404 が見つかりません。

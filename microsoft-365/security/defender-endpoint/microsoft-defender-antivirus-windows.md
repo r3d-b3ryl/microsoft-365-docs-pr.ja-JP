@@ -15,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 201f8c57057b1f8a314bdd42ba53042a4f6d00e3
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 465a2775bdec232e248cb6d14a96b86770b64e5c
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60552658"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121640"
 ---
 # <a name="microsoft-defender-antivirus-in-windows"></a>Windows の Microsoft Defender ウイルス対策
 
@@ -90,6 +90,5 @@ Microsoft Defender ウイルス対策、またはウイルス対策/マルウェ
 
 ## <a name="see-also"></a>関連項目
 
-- [Windows Server 上の Microsoft Defender ウイルス対策](microsoft-defender-antivirus-on-windows-server.md)
 - [Microsoft Defender ウイルス対策の管理および構成](configuration-management-reference-microsoft-defender-antivirus.md)
 - [Microsoft Defender ウイルス対策を評価する](evaluate-microsoft-defender-antivirus.md)

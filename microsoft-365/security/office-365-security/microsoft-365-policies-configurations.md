@@ -1,9 +1,9 @@
 ---
-title: ID とデバイス アクセスの構成 - Microsoft 365の構成
-description: セキュリティで保護された電子メール、ドキュメント、アプリのポリシーと構成を展開するための Microsoft の推奨事項とコア概念について説明します。
+title: ゼロ信頼 ID とデバイス アクセス構成 - エンタープライズMicrosoft 365構成
+description: セキュリティで保護されたメール、ドキュメント、アプリのポリシーとゼロトラストの構成を展開するための Microsoft の推奨事項とコア概念について説明します。
 ms.author: josephd
 author: JoeDavies-MSFT
-manager: laurawi
+manager: dansimp
 ms.prod: m365-security
 ms.topic: article
 audience: Admin
@@ -18,27 +18,65 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-overview
+- m365solution-zero-trust
 ms.technology: mdo
-ms.openlocfilehash: e3d807337cfa2e7fa6a27f63e58bd441d95716d5
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 96aeb70da1bf31ca48858bef8db08911157ece71
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110069"
+ms.locfileid: "61121237"
 ---
-# <a name="identity-and-device-access-configurations"></a>ID とデバイスのアクセス構成
+# <a name="zero-trust-identity-and-device-access-configurations"></a>ゼロ信頼 ID とデバイス アクセス構成
 
 **適用対象**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 
-組織の最新のセキュリティ境界は、さまざまなデバイスを使用して任意の場所からクラウドベースのアプリにアクセスするユーザーを含むネットワークを超えて拡張されています。 セキュリティ インフラストラクチャは、特定のアクセス要求を付与する必要があるかどうかを決定する必要があります。また、どのような条件で行う必要があります。
+<!--
+The modern security perimeter of your organization now extends beyond your network to include users accessing cloud-based apps from any location with a variety of devices. Your security infrastructure needs to determine whether a given access request should be granted and under what conditions.
 
-この決定は、サインインのユーザー アカウント、使用するデバイス、ユーザーがアクセスに使用しているアプリ、アクセス要求の場所、および要求のリスクの評価に基づく必要があります。 この機能により、承認されたユーザーとデバイスのみが重要なリソースにアクセスできるようになります。
+This determination should be based on the user account of the sign-in, the device being used, the app the user is using for access, the location from which the access request is made, and an assessment of the risk of the request. This capability helps ensure that only approved users and devices can access your critical resources.
 
-この一連の記事では、ID およびデバイス アクセスの前提条件構成のセットと、Azure Active Directory (Azure AD) 条件付きアクセス、Microsoft Intune、および Microsoft 365 へのアクセスをセキュリティで保護するためのその他のポリシーのセットについて説明します。 エンタープライズ クラウド アプリとサービス、その他の SaaS サービス、およびアプリケーション プロキシで公開されたオンプレミス アプリケーションAzure ADします。
+--> 
 
-ID とデバイス アクセスの設定とポリシーは、高度に規制されたデータまたは分類されたデータを持つ環境のベースライン保護、機密性の高い保護、保護の 3 つの層で推奨されます。 これらの層とそれに対応する構成は、データ、ID、およびデバイス全体で一貫したレベルの保護を提供します。
+組織のテクノロジ リソースとサービスへのアクセスを分離および制限するためにネットワーク ファイアウォールと仮想プライベート ネットワーク (VPN) に依存するセキュリティ アーキテクチャは、従来の企業ネットワーク境界を超えて存在するアプリケーションやリソースへのアクセスを定期的に必要とする従業員には十分ではありません。
+
+この新しいコンピューティングの世界に対処するために、Microsoft では、次の指針に基づくゼロトラスト セキュリティ モデルを強くお勧めします。
+
+- 明示的に確認する
+
+  使用可能なすべてのデータ ポイントに基づいて、常に認証と承認を行います。 ここで、サインインと継続的な検証を行う上で、ゼロトラスト ID とデバイス アクセス ポリシーが重要です。
+
+- 最小特権アクセスを使用する
+
+  Just-In-Time および Just-Enough-Access (JIT/JEA)、リスクベースのアダプティブ ポリシー、およびデータ保護を使用してユーザー アクセスを制限します。  
+
+- 違反を想定する
+
+  ブラスト半径とセグメント アクセスを最小限に抑える。 エンドツーエンドの暗号化を確認し、分析を使用して可視性を高め、脅威検出を推進し、防御を強化します。
+
+ゼロトラストの全体的なアーキテクチャを次に示します。
+
+:::image type="content" source="../../media/microsoft-365-policies-configurations/zero-trust-architecture.png" alt-text="Microsoft Zero Trust アーキテクチャ" lightbox="../../media/microsoft-365-policies-configurations/zero-trust-architecture.png":::
+
+ゼロ信頼 ID とデバイス アクセス ポリシーは、次の検証の明示的 **な** ガイド原則に対処します。
+
+- ID
+
+  ID がリソースにアクセスしようとするときに、強力な認証を使用して ID を確認し、要求されたアクセスが準拠し、一般的なアクセスを確認します。
+
+- デバイス (エンドポイントとも呼ばれる)
+
+  安全なアクセスのためのデバイスの正常性とコンプライアンス要件を監視し、適用します。
+
+- アプリケーション
+
+  コントロールとテクノロジを適用してシャドウ IT を検出し、適切なアプリ内アクセス許可を確保し、リアルタイム分析に基づいてゲート アクセスを行い、異常な動作を監視し、ユーザーの操作を制御し、セキュリティで保護された構成オプションを検証します。
+
+この一連の記事では、ID およびデバイス アクセスの前提条件構成のセットと、Azure Active Directory (Azure AD) の条件付きアクセス、Microsoft Intune、およびゼロトラスト アクセスの他のポリシーについて説明Microsoft 365 エンタープライズ クラウド アプリとサービス、その他の SaaS サービス、およびアプリケーション プロキシで公開されたオンプレミス アプリケーションAzure ADします。
+
+ゼロトラスト ID とデバイス アクセス設定とポリシーは、高度に規制または分類されたデータを持つ環境の開始点、エンタープライズ、および特殊なセキュリティの 3 つの層で推奨されます。 これらの層と対応する構成は、データ、ID、およびデバイス全体で一貫したレベルのゼロトラスト保護を提供します。
 
 これらの機能とその推奨事項:
 
@@ -79,21 +117,24 @@ ID とデバイス アクセスの設定とポリシーは、高度に規制さ�
 
 ほとんどの組織は、セキュリティとデータ保護に関して固有の要件を用意しています。 そのような要件は業種によって、また、組織内の職務によって変わります。 たとえば、法務部門と管理者は、他の部署では必要ない電子メール通信に関するセキュリティと情報保護の制御を追加する必要があります。
 
-また、あらゆる業種が独自の特別な規制を用意しています。 すべての可能なセキュリティ オプションの一覧や、業界セグメントまたはジョブ機能ごとの推奨事項を提供するのではなく、ニーズの細分化に基づいて適用できる 3 つの異なるセキュリティ層と保護層に対して推奨事項が提供されています。
+また、あらゆる業種が独自の特別な規制を用意しています。 すべての可能なセキュリティ オプションの一覧や、業界セグメントまたはジョブ機能ごとの推奨事項を提供するのではなく、ニーズの粒度に基づいて適用できる 3 つの異なるレベルのセキュリティと保護に関する推奨事項が提供されています。
 
-- **ベースライン保護**: データを保護するための最小標準と、データにアクセスする ID とデバイスを確立することをお勧めします。 これらの基準推奨に従って、多くの組織のニーズを満たす強力な既定の保護を提供できます。
-- **機密性の** 高い保護: 一部の顧客は、より高いレベルで保護する必要があるデータのサブセットを持つか、すべてのデータを高いレベルで保護する必要があります。 環境内のすべてのデータ セットまたは特定のデータ セットに対して保護を強化Microsoft 365できます。 機密データにアクセスする ID とデバイスはそれに相応しいレベルのセキュリティで保護することを推奨します。
-- **高度な規制**: 一部の組織では、高度に分類されたデータ、営業秘密を構成するデータ、または規制されたデータが少ない場合があります。 Microsoft は、ID とデバイスの保護を追加するなど、組織がそのような要件を満たすための機能を提供しています。
+- **開始点**: すべてのお客様が、データを保護するための最小標準と、データにアクセスする ID とデバイスを確立して使用することをお勧めします。 これらの推奨事項に従って、すべての組織の開始点として強力な既定の保護を提供できます。
+- **Enterprise**: 一部の顧客は、より高いレベルで保護する必要があるデータのサブセットを持つか、すべてのデータを高いレベルで保護する必要があります。 環境内のすべてのデータ セットまたは特定のデータ セットに対して保護を強化Microsoft 365できます。 機密データにアクセスする ID とデバイスはそれに相応しいレベルのセキュリティで保護することを推奨します。
+- **特殊なセキュリティ**: 必要に応じて、高度に分類されたデータ、営業秘密を構成する、または規制されているデータが少数の顧客に提供されています。 Microsoft では、これらのお客様が ID やデバイスに対する保護の追加など、これらの要件を満たすのに役立つ機能を提供しています。
 
-![セキュリティ コーン - すべての顧客が特定の>一>にアクセスします。 特定のアプリケーションへの幅広いアプリケーション。](../../media/microsoft-365-policies-configurations/M365-idquality-threetiers.png)
+![セキュリティ コーン - すべての顧客が>一部の>一部の顧客](../../media/microsoft-365-policies-configurations/M365-idquality-threetiers.png)
 
-このガイダンスでは、これらの保護層ごとに ID とデバイスの保護を実装する方法を示します。 このガイダンスは、組織の開始点として使用し、組織の特定の要件を満たすためにポリシーを調整します。
+このガイダンスでは、これらの各レベルの保護に対して ID とデバイスに対してゼロトラスト保護を実装する方法を示します。 このガイダンスは、組織の最小要件として使用し、組織の特定の要件を満たすためにポリシーを調整します。
 
-データ、ID、デバイス全体で一貫したレベルの保護を使用することが重要です。 たとえば、このガイダンスを実装する場合は、データを同等のレベルで保護してください。
+ID、デバイス、データ全体で一貫したレベルの保護を使用することが重要です。 たとえば、役員、リーダー、マネージャーなどの優先アカウントを持つユーザーの保護には、ID、デバイス、およびアクセスするデータに対して同じレベルの保護を含める必要 &mdash; &mdash; があります。 
+<!--
 
-この **アーキテクチャ モデルの ID とデバイスMicrosoft 365** は、どの機能が同等か示します。
+The **Zero Trust identity and device protection for Microsoft 365** architecture model shows you which capabilities are comparable.
 
-[![ポスターの ID とデバイス保護の親指Microsoft 365します。](../../media/microsoft-365-policies-configurations/o365-identity-device-protection-thumb.png)](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br> [PDF として表示する](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[PDF としてダウンロードする](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[アプリとしてダウンロードVisio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)  
+[![Thumb image for Zero Trust Identity and device protection for Microsoft 365 poster.](../../media/microsoft-365-policies-configurations/zero-trust-id-device-protection-model-thumbnail.png)](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br> [View as a PDF](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Download as a PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf)  \| [Download as a Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)
+
+--> 
 
 さらに、「データプライバシー規制に関する情報保護を展開する」ソリューションを[参照](../../solutions/information-protection-deploy.md)して、データ に格納されている情報を保護Microsoft 365。
 
@@ -108,11 +149,11 @@ ID とデバイス アクセスの設定とポリシーは、高度に規制さ�
 - ユーザーを知り、セキュリティと機能の要件に柔軟に対応します。
 - セキュリティ ポリシーを時間内に適用し、意味のあるものにしてください。
 
-## <a name="services-and-concepts-for-identity-and-device-access-protection"></a>ID とデバイス アクセス保護のサービスと概念
+## <a name="services-and-concepts-for-zero-trust-identity-and-device-access-protection"></a>ゼロトラスト ID とデバイス アクセス保護のサービスと概念
 
 Microsoft 365企業向けソリューションは、大規模な組織が全員が創造的で安全に協力するように設計されています。
 
-このセクションでは、ID およびデバイス アクセスMicrosoft 365重要なサービスと機能の概要を説明します。
+このセクションでは、ゼロトラスト ID とデバイス アクセスMicrosoft 365重要なサービスと機能の概要を説明します。
 
 ### <a name="azure-ad"></a>Azure AD
 
@@ -129,9 +170,9 @@ Azure AD ID 管理機能の完全なスイートを提供します。 これら�
 |[Azure ADパスワード保護](/azure/active-directory/authentication/concept-password-ban-bad)|既知の脆弱なパスワードとそのバリアント、および組織に固有の追加の弱い用語を検出してブロックします。 既定のグローバル禁止パスワード リストは、Azure AD テナントのすべてのユーザーに自動的に適用されます。 カスタムの禁止パスワード リストに追加のエントリを定義できます。 ユーザーがパスワードを変更またはリセットすると、これらの禁止パスワード リストがチェックされ、強力なパスワードの使用が強制されます。|Microsoft 365 E3 または E5|
 |
 
-Intune やアプリのオブジェクト、設定、およびサブサービスなど、id とAzure ADアクセスのコンポーネントを次に示します。
+Intune やアプリのオブジェクト、設定、およびサブサービスを含む、ゼロトラスト id とデバイス アクセスAzure ADコンポーネントを次に示します。
 
-![ID とデバイス アクセスのコンポーネント。](../../media/microsoft-365-policies-configurations/identity-device-access-components.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-components.png" alt-text="ゼロトラスト ID とデバイス アクセスのコンポーネント。" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-components.png":::
 
 ### <a name="microsoft-intune"></a>Microsoft Intune
 
@@ -145,25 +186,25 @@ Intune やアプリのオブジェクト、設定、およびサブサービス�
 
 ### <a name="microsoft-365"></a>Microsoft 365
 
-このガイダンスでは、Microsoft Teams、Exchange Online、SharePoint Online、OneDrive for Business などの Microsoft 365 クラウド サービスへのアクセスを保護するための一連のポリシーを実装する方法を示します。 これらのポリシーの実装に加えて、次のリソースを使用してテナントの保護レベルを上げすることをお勧めします。
+このガイダンスでは、Microsoft Teams、Exchange、Exchange、SharePoint、および OneDrive などの Microsoft 365 クラウド サービスへのアクセスを保護するための一連のポリシーを実装する方法を示します。 これらのポリシーの実装に加えて、次のリソースを使用してテナントの保護レベルを上げすることをお勧めします。
 
 - [セキュリティ強化のためにテナントを構成する](tenant-wide-setup-for-increased-security.md)
 
-  テナントのベースライン セキュリティに適用される推奨事項。
+  テナントの開始点のセキュリティに適用される推奨事項。
 
 - [セキュリティロードマップ: 最初の 30 日間、90 日、およびそれ以降の最優先事項](security-roadmap.md)
 
   ログ記録、データ ガバナンス、管理者アクセス、脅威保護を含む推奨事項。
 
-### <a name="windows-10-and-microsoft-365-apps-for-enterprise"></a>Windows 10 および Microsoft 365 Apps for enterprise
+### <a name="windows-11-or-windows-10-with-microsoft-365-apps-for-enterprise"></a>Windows 11 または Windows 10 Microsoft 365 Apps for enterprise
 
-Windows 10のMicrosoft 365 Apps for enterpriseは、PC に推奨されるクライアント環境です。 Azure はWindows 10、オンプレミスとクラウドの両方で可能な限りスムーズなエクスペリエンスを提供するように設計Azure AD。 Windows 10 Intune を通じて管理できる高度なセキュリティ機能も含まれています。 Microsoft 365 Apps for enterpriseアプリケーションの最新バージョンOffice含まれます。 これらは、より安全で条件付きアクセスの要件である最新の認証を使用します。 これらのアプリには、強化されたコンプライアンスとセキュリティ ツールも含まれています。
+Windows 11 または Windows 10のMicrosoft 365 Apps for enterpriseは、PC に推奨されるクライアント環境です。 Azure は、WindowsとWindows 10で可能な限りスムーズなエクスペリエンスを提供するように設計されているので、11 または Azure AD をお勧めします。 Windows 11 または Windows 10には、Intune を介して管理できる高度なセキュリティ機能も含まれています。 Microsoft 365 Apps for enterpriseアプリケーションの最新バージョンOffice含まれます。 これらは、より安全で条件付きアクセスの要件である最新の認証を使用します。 これらのアプリには、強化されたコンプライアンスとセキュリティ ツールも含まれています。
 
 ## <a name="applying-these-capabilities-across-the-three-tiers-of-protection"></a>これらの機能を 3 つの保護層に適用する
 
 次の表に、これらの機能を 3 つの保護層で使用する場合の推奨事項を示します。
 
-|保護メカニズム|基準|機密|厳しく規制|
+|保護メカニズム|開始点|大企業|特殊なセキュリティ|
 |---|---|---|---|
 |**MFA の強制**|中程度以上のサインイン リスクで|低以上のサインイン リスクで|すべての新しいセッションで|
 |**パスワードの変更を適用する**|リスクの高いユーザーの場合|リスクの高いユーザーの場合|リスクの高いユーザーの場合|
@@ -179,34 +220,34 @@ Windows 10のMicrosoft 365 Apps for enterpriseは、PC に推奨されるクラ�
 
 ## <a name="deployment-and-your-apps"></a>展開とアプリ
 
-統合アプリの ID とデバイス アクセス構成を構成および展開する前に、Azure ADする必要があります。
+ゼロトラスト ID とデバイス アクセス構成を構成および展開する前に、Azure ADする必要があります。
 
 - 保護する組織で使用するアプリを決定します。
 - アプリのこの一覧を分析して、適切なレベルの保護を提供するポリシーのセットを決定します。
 
   アプリの管理が面倒になるため、アプリごとに個別のポリシー セットを作成する必要はありません。 Microsoft では、同じユーザーに対して同じ保護要件を持つアプリをグループ化する必要があります。
 
-  たとえば、ベースライン保護のためにすべてのユーザーに対してすべての Microsoft 365 アプリを含む 1 つのポリシーセットと、人事部門や財務部門で使用されるアプリなど、すべての機密性の高いアプリのポリシーの 2 番目のセットを使用して、それらのグループに適用できます。
+  たとえば、すべてのユーザーに対して開始ポイント保護用のすべての Microsoft 365 アプリを含む 1 つのポリシーセットと、人事部門や財務部門で使用されるアプリなど、すべての機密性の高いアプリのポリシーの 2 番目のセットを使用して、それらのグループに適用できます。
 
 セキュリティ保護するアプリのポリシーセットを決定したら、ポリシーを段階的にユーザーにロールアウトし、途中で問題に対処します。
 
-たとえば、すべてのアプリで使用するポリシーを構成し、Microsoft 365の追加Exchange Onlineを使用Exchange。 これらのポリシーをユーザーにロールアウトし、問題を解決します。 次に、追加Teamsを追加してユーザーに展開します。 次に、追加SharePointを追加します。 これらの基準ポリシーを自信を持って構成して、すべてのアプリを含めるまで、残りのアプリMicrosoft 365続ける。
+たとえば、すべてのアプリで使用するポリシーを構成し、Microsoft 365の追加Exchangeを使用Exchange。 これらのポリシーをユーザーにロールアウトし、問題を解決します。 次に、追加Teamsを追加してユーザーに展開します。 次に、追加SharePointを追加します。 これらの開始点ポリシーを自信を持って構成し、すべてのアプリにアプリを含めるまで、残りのアプリMicrosoft 365します。
 
 同様に、機密性の高いアプリの場合は、ポリシーのセットを作成し、一度に 1 つのアプリを追加し、機密アプリ ポリシー セットに含まれるまで問題を解決します。
 
 一部の意図しない構成が発生する可能性があるから、すべてのアプリに適用されるポリシー セットを作成しなけことをお勧めします。 たとえば、すべてのアプリをブロックするポリシーによって管理者が Azure ポータルからロックアウトされ、Microsoft Graph などの重要なエンドポイントに対して除外を構成することはできません。
 
-## <a name="steps-to-configure-identity-and-device-access"></a>ID とデバイス アクセスを構成する手順
+## <a name="steps-to-configure-zero-trust-identity-and-device-access"></a>ゼロトラスト ID とデバイス アクセスを構成する手順
 
-![ID とデバイス アクセスを構成する手順。](../../media/microsoft-365-policies-configurations/identity-device-access-steps.png)
+![ゼロトラスト ID とデバイス アクセスを構成する手順。](../../media/microsoft-365-policies-configurations/identity-device-access-steps.png)
 
 1. 前提条件の ID 機能とその設定を構成します。
 2. 共通 ID を構成し、条件付きアクセス ポリシーにアクセスします。
 3. ゲストおよび外部ユーザーの条件付きアクセス ポリシーを構成します。
-4. Microsoft Teams、Exchange Online、SharePoint、Microsoft Defender for Cloud Apps ポリシーなど、Microsoft 365 クラウド アプリの条件付きアクセス ポリシーを構成します。
+4. Microsoft 365 Microsoft Teams、Exchange、microsoft Defender for Cloud Apps ポリシーなどのMicrosoft Teams クラウド アプリSharePoint条件付きアクセス ポリシーを &mdash; &mdash; 構成します。
 
-ID とデバイス アクセスを構成した後は[、Azure AD](/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2)機能展開ガイドを参照して、考慮すべき追加機能の段階的なチェックリストと、アクセスの保護、監視、および監査を行う[Azure AD Identity Governance](/azure/active-directory/governance/)を参照してください。
+ゼロトラスト ID とデバイス アクセスを構成した後は[、Azure AD](/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2)機能展開ガイドを参照して、考慮すべき追加機能の段階的チェックリストと、アクセスの保護、監視、および監査を行う[Azure AD Identity Governance](/azure/active-directory/governance/)を参照してください。
 
 ## <a name="next-step"></a>次の手順
 
-[ID およびデバイス アクセス ポリシーを実装するための前提条件作業](identity-access-prerequisites.md)
+[ゼロトラスト ID とデバイス アクセス ポリシーを実装するための前提条件作業](identity-access-prerequisites.md)

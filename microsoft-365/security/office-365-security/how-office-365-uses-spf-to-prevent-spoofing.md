@@ -19,12 +19,12 @@ ms.custom:
 description: DNS でMicrosoft 365 (SPF) TXT レコードを使用して、宛先電子メール システムがカスタム ドメインから送信されたメッセージを信頼する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ad620c1c1c08cbe92e6ad6b98c6554c4c5cd93b1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 76bc783dc624487b438ca41dcd9fc38bd9bce911
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190331"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121831"
 ---
 # <a name="how-microsoft-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Microsoft 365 において Sender Policy Framework (SPF) を使用して、スプーフィングを防止する方法
 
@@ -42,7 +42,7 @@ SPF TXT レコードは、DNS 形式のレコードです。SPF TXT レコード
 > [!NOTE]
 > SPF レコードの種類は、2014 年にインターネット技術標準化委員会 (IETF) によって廃止されました。代わりに、SPF 情報を公開するには、DNS で TXT レコードを必ず使用してください。この記事の以降の部分では、わかりやすいように SPF TXT レコードという用語を使用します。
 
-ドメイン管理者は DNS の TXT レコードで SPF 情報を公開します。 この SPF 情報は、承認された送信メール サーバーを識別します。 送信先メール システムにより、承認された送信メール サーバーからメッセージが発信されたことが確認されます。 既に SPF に精通している場合、または簡単な展開を行い、Microsoft 365 の DNS の SPF TXT レコードに何を含めるかを知る必要がある場合は、「Microsoft 365 で[SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md)をセットアップする」に移動してスプーフィングを防止できます。 Microsoft 365 で完全にホストされている展開が必要ない場合、または SPF の動作方法や SPF のトラブルシューティング方法に関する詳細が必要な場合は、Microsoft 365 を読んでください。
+ドメイン管理者は DNS の TXT レコードで SPF 情報を公開します。 この SPF 情報は、承認された送信メール サーバーを識別します。 送信先メール システムにより、承認された送信メール サーバーからメッセージが発信されたことが確認されます。 既に SPF に精通している場合、または簡単な展開を行い、Microsoft 365 の DNS の SPF TXT レコードに何を含めるかを知る必要がある場合は、「Microsoft 365 で[SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md)をセットアップする」に移動してスプーフィングを防止できます。 Microsoft 365 で完全にホストされている展開が必要ない場合、または SPF の動作や SPF のトラブルシューティング方法に関する詳細が必要な場合は、Microsoft 365 を読んでください。
 
 > [!NOTE]
 > 以前は、SharePoint Online も使用している場合、カスタム ドメインに別の SPF TXT レコードを追加する必要がありました。 この作業を行う必要はなくなりました。 この変更により、SharePoint Online の通知メッセージが [迷惑メール] フォルダーに振り分けられるリスクが軽減されます。 すぐに変更を加える必要は全く必要ないが、「ルックアップが多すぎる」エラーが表示された場合は、「Microsoft 365 の SPF のセットアップ」の説明に従って[SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md)TXT レコードを変更してスプーフィングを防止します。
@@ -99,7 +99,7 @@ Woodgrovebank.com がメッセージを受け取る際に、IP アドレス # 1 
 
 ![偽装しているサーバーから送信されるときに SPF がメールを認証する方法を示す図。](../../media/235dac3d-cdc5-466e-86e0-37b5979de198.jpg)
 
-ip アドレス #12 contoso.com の SPF TXT レコードに含めなされていないので、メッセージは SPF チェックに失敗し、受信者はスパムとしてマークを付けることができます。
+IP アドレス #12 が contoso.com の SPF TXT レコードに含されていないので、メッセージは SPF チェックに失敗し、受信者はスパムとしてマークを付けることができます。
 
 ### <a name="example-3-spf-and-forwarded-messages"></a>例 3:SPF と転送されたメッセージ
 <a name="spfExample3"> </a>
@@ -108,7 +108,7 @@ SPF の欠点の 1 つは、電子メールが転送された場合に機能し�
 
 ![電子メール メッセージが転送される際に SPF がメールを認証できないことを示す図。](../../media/6e92acd6-463e-4a1b-8327-fb1cf861f356.jpg)
 
-メッセージはもともと woodgrovebank.com で SPF チェックに合格しますが、ip #25 が contoso.com の SPF TXT レコードに含めないので、outlook.com での SPF チェックは失敗します。 このため、Outlook.com はメッセージをスパムとしてマークする可能性があります。 この問題を回避するには、SPF を DKIM や DMARC などの他の電子メールの認証方法と組み合わせて使用します。
+メッセージはもともと woodgrovebank.com で SPF チェックに合格しますが、ip #25 が contoso.com の SPF TXT レコードに含めないので、outlook.com で SPF チェックに失敗します。 このため、Outlook.com はメッセージをスパムとしてマークする可能性があります。 この問題を回避するには、SPF を DKIM や DMARC などの他の電子メールの認証方法と組み合わせて使用します。
 
 ### <a name="spf-basics-including-third-party-domains-that-can-send-mail-on-behalf-of-your-domain"></a>SPF の基本:自分のドメインに代わってメールを送信できるサード パーティのドメインを含める
 <a name="SPFBasicsIncludes"> </a>
@@ -201,7 +201,7 @@ v=spf1 ip4:192.168.0.1 include:spf.protection.outlook.com -all
 ### <a name="example-spf-txt-record-for-multiple-outbound-on-premises-mail-servers-and-microsoft-365"></a>例: 複数の送信オンプレミスメール サーバーとサーバーの SPF TXT レコードMicrosoft 365
 <a name="ExampleSPFMultipleMailServerO365"> </a>
 
-複数の送信メール サーバーがある場合は、SPF TXT レコードに各メール サーバーの IP アドレスを含め、各 IP アドレスをスペースで分離し、その後に "ip4:" ステートメントを指定します。 次に例を示します。
+複数の送信メール サーバーがある場合は、SPF TXT レコードに各メール サーバーの IP アドレスを含め、各 IP アドレスをスペースで分離し、その後に "ip4:" ステートメントを指定します。 例として以下のようなものがあります。
 
 ```text
 v=spf1 ip4:192.168.0.1 ip4:192.168.0.2 ip4:192.168.0.3 include:spf.protection.outlook.com -all
@@ -252,7 +252,7 @@ SPF TXT レコードにサード パーティのドメインを含む場合は�
 ## <a name="how-to-view-your-current-spf-txt-record-and-determine-the-number-of-lookups-that-it-requires"></a>現在の SPF TXT レコードを表示し、それに必要な参照数を決定する方法
 <a name="SPFTroubleshoot"> </a>
 
-nslookup を使用して、SPF TXT レコードなどの DNS レコードを表示できます。また、ご希望に応じて、無料のオンライン ツールを多数入手し、SPF TXT レコードの内容を表示することもできます。SPF TXT を参照し、一連の include ステートメントとリダイレクトに従って、レコードが必要とする DNS 参照数を判断できます。オンライン ツールには、これらの参照数をカウントして表示するものもあります。この数を継続的に追跡することで、組織から送信されたメッセージが、受信側のサーバーからの permerror と呼ばれる永続的なエラーの要因にならないようにできます。
+nslookup を使用して、SPF TXT レコードなどの DNS レコードを表示できます。 SPF TXT レコードの内容を表示するために使用できる無料のオンライン ツールが多数用意されています。 SPF TXT を参照し、一連の include ステートメントとリダイレクトに従って、レコードが必要とする DNS 参照数を判断できます。 オンライン ツールには、これらの参照数をカウントして表示するものもあります。 この番号を追跡すると、組織から送信されたメッセージが、受信サーバーからパーマ エラーと呼ばれる永続的なエラーをトリガーするのを防ぐのに役立ちます。
 
 ## <a name="for-more-information"></a>関連情報
 <a name="SPFTroubleshoot"> </a>

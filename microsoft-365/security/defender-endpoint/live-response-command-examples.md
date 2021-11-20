@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6b234a27ccf011cdc20b7c1c5ab34e4322bfc5fd
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 39afd823c0d51494e5ad6e16f15f6cfc1eac131b
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587719"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121939"
 ---
 # <a name="live-response-command-examples"></a>ライブ応答コマンドの例
 
@@ -34,9 +34,9 @@ ms.locfileid: "60587719"
 
 ライブ応答で使用される一般的なコマンドについて説明し、その一般的な使用例を参照してください。
 
-付与されている役割に応じて、基本的なライブ応答コマンドまたは高度なライブ応答コマンドを実行できます。 基本的なコマンドと高度なコマンドの詳細については、「ライブ応答を使用してデバイス上のエンティティを調査 [する」を参照してください](live-response.md)。
+役割に応じて、基本的なライブ応答コマンドまたは高度なライブ応答コマンドを実行できます。 基本的なコマンドと高度なコマンドの詳細については、「ライブ応答を使用してデバイス上のエンティティを調査 [する」を参照してください](live-response.md)。
 
-## <a name="analyze"></a>分析
+## `analyze`
 
 ```console
 # Analyze the file malware.txt
@@ -48,7 +48,7 @@ analyze file c:\Users\user\Desktop\malware.txt
 analyze process 1234
 ```
 
-## <a name="connections"></a>接続
+## `connections`
 
 ```console
 # List active connections in json format using parameter name
@@ -60,7 +60,7 @@ connections -output json
 connections json
 ```
 
-## <a name="dir"></a>dir
+## `dir`
 
 ```console
 # List files and sub-folders in the current folder
@@ -77,21 +77,21 @@ dir C:\Users\user\Desktop\
 dir -output json
 ```
 
-## <a name="fileinfo"></a>fileinfo
+## `fileinfo`
 
 ```console
 # Display information about a file
 fileinfo C:\Windows\notepad.exe
 ```
 
-## <a name="findfile"></a>findfile
+## `findfile`
 
 ```console
 # Find file by name
 findfile test.txt
 ```
 
-## <a name="getfile"></a>getfile
+## `getfile`
 
 ```console
 # Download a file from a machine
@@ -105,18 +105,18 @@ getfile c:\Users\user\Desktop\work.txt -auto
 
 > [!NOTE]
 >
-> 次のファイルの種類 **は、Live** Response 内からこのコマンドを使用してダウンロードできません。
+> 次のファイルの種類 *は、Live* Response 内からこのコマンドを使用してダウンロードできません。
 >
 > - [Reparse ポイント ファイル](/windows/desktop/fileio/reparse-points/)
 > - [スパース ファイル](/windows/desktop/fileio/sparse-files/)
 > - 空のファイル
 > - 仮想ファイル、またはローカルに完全に存在しないファイル
 >
-> これらのファイルの種類 **は** [PowerShell でサポートされています](/powershell/scripting/overview)。
+> これらのファイルの種類 *は* [PowerShell でサポートされています](/powershell/scripting/overview)。
 >
 > Live Response 内からこのコマンドを使用する際に問題が発生した場合は、PowerShell を代わりに使用します。
 
-## <a name="library"></a>ライブラリ
+## `library`
 
 ```console
 # List files in the library
@@ -128,7 +128,7 @@ library
 library delete script.ps1
 ```
 
-## <a name="processes"></a>processes
+## `processes`
 
 ```console
 # Show all processes
@@ -150,7 +150,7 @@ processes -pid 123
 processes -name notepad.exe
 ```
 
-## <a name="putfile"></a>putfile
+## `putfile`
 
 ```console
 # Upload file from library
@@ -167,7 +167,7 @@ putfile get-process-by-name.ps1 -overwrite
 putfile get-process-by-name.ps1 -keep
 ```
 
-## <a name="registry"></a>レジストリ
+## `registry`
 
 ```console
 # Show information about the values in a registry key
@@ -180,7 +180,7 @@ registry HKEY_CURRENT_USER\Console\\ScreenBufferSize
 ```
 
 
-## <a name="remediate"></a>remediate
+## `remediate`
 
 ```console
 # Remediate file in specific path
@@ -197,7 +197,7 @@ remediate process 7960
 remediate list
 ```
 
-## <a name="run"></a>run
+## `run`
 
 ```console
 # Run PowerShell script from the library without arguments
@@ -214,7 +214,7 @@ run get-process-by-name.ps1 -parameters "-processName Registry"
 > **'** run ' や '**getfile**'などの長時間実行されているコマンドの場合は、コマンドの最後に ' ' 記号を使用して、バックグラウンドでそのアクションを **&** 実行できます。
 > これにより、コンピューターの調査を続行し、'**fg**' basic コマンドを使用して実行すると、バックグラウンド コマンドに [戻る可能性があります](live-response.md#basic-commands)。
 
-## <a name="scheduledtask"></a>scheduledtask
+## `scheduledtask`
 
 ```console
 # Get all scheduled tasks
@@ -231,7 +231,7 @@ scheduledtasks Microsoft\Windows\Subscription\LicenseAcquisition
 scheduledtasks "Microsoft\Configuration Manager\Configuration Manager Health Evaluation"
 ```
 
-## <a name="undo"></a>元に戻す
+## `undo`
 
 ```console
 # Restore remediated registry

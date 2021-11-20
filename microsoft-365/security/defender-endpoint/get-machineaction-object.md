@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 3773e124aa63b5975bf1dc8156e32edb0f3f3c8a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e1072029313915421ce1fe38aa3421701569d455
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60194191"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61122476"
 ---
 # <a name="get-machineaction-api"></a>Get machineAction API
 
@@ -41,11 +41,11 @@ ID によって特定 [の Machine Action](machineaction.md) を取得します�
 
 ## <a name="limitations"></a>制限事項
 
-1. この API のレート制限は、1 分あたり 100 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。
+- この API のレート制限は、1 分あたり 100 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法などの詳細については [、「Use Defender for Endpoint API」を参照してください。](apis-intro.md)
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Defender for Endpoint API」を参照してください](apis-intro.md)。
 
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
@@ -67,9 +67,9 @@ GET https://api.securitycenter.microsoft.com/api/machineactions/{id}
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|型|説明
+名前|種類|説明
 :---|:---|:---
-Authorization|String|ベアラー {token}。 **必須**。
+Authorization|文字列|ベアラー {token}。 **必須**。
 
 ## <a name="request-body"></a>要求本文
 
@@ -77,7 +77,7 @@ Empty
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは Machine Action エンティティを持つ 200 Ok 応答 [コードを返](machineaction.md) します。 指定した ID を持つコンピューター アクション エンティティが見つからなかった場合 - 404 Not Found。
+成功した場合、このメソッドは Machine Action エンティティを持つ 200 Ok 応答 [コードを返](machineaction.md) します。 指定された ID を持つコンピューター アクション エンティティが見つからない場合 - 404 Not Found。
 
 ## <a name="example"></a>例
 
@@ -91,7 +91,7 @@ GET https://api.securitycenter.microsoft.com/api/machineactions/2e9da30d-27f6-42
 
 ### <a name="response-example"></a>応答の例
 
-以下は、応答の例です。
+応答の例を下に示します。
 
 ```json
 HTTP/1.1 200 Ok

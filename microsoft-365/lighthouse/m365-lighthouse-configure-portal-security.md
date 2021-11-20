@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 管理サービス プロバイダー (MSP) の場合は、Microsoft 365 Lighthouseセキュリティを構成する方法について説明します。
-ms.openlocfilehash: fadff316b98b57960179214d3d895ecad6467a69
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c68f2441db5bdac2f2da693ee6c99baa7a9ff213
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152480"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61122515"
 ---
 # <a name="configure-microsoft-365-lighthouse-portal-security"></a>ポータル Microsoft 365 Lighthouseの構成
 
@@ -42,13 +42,13 @@ Managed Service Provider (MSP) がテナントにアクセス許可を委任し�
 
 ライトハウスの顧客テナント データと設定へのアクセスは、クラウド ソリューション プロバイダー (CSP) プログラムの管理エージェントとヘルプデスク エージェントの役割に制限されます。
 
-パートナー テナント内のユーザーが管理エージェントとヘルプデスク エージェントの役割を持っているか確認するには、[Azure AD – すべてのグループ] ページでセキュリティ [グループのメンバーシップを確認](https://portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/AllGroups) します。 CSP プログラムの役割と他のアクセス許可をユーザーに割り当てる方法については、「Assign roles and permissions to users」 [を参照してください](/partner-center/permissions-overview)。 MSP として、顧客テナントへのアクセス権限をまだ委任していない場合は、「顧客のサービスまたはサブスクリプションを管理するためのアクセス許可を取得する」の記事でそれらを取得する方法について [学習](/partner-center/customers-revoke-admin-privileges)します。
+パートナー テナント内のユーザーが管理エージェントとヘルプデスク エージェントの役割を持っているか確認するには、[Azure AD - すべてのグループ] ページでセキュリティ[グループのメンバーシップを確認](https://portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/AllGroups)します。 CSP プログラムの役割と他のアクセス許可をユーザーに割り当てる方法については、「Assign roles and permissions to users」 [を参照してください](/partner-center/permissions-overview)。 MSP として、顧客テナントへのアクセス権限をまだ委任していない場合は、「顧客のサービスまたはサブスクリプションを管理するためのアクセス許可を取得する」の記事でそれらを取得する方法について [学習](/partner-center/customers-revoke-admin-privileges)します。
 
 次の表に、管理エージェントとヘルプデスク エージェントの役割の顧客テナント データと設定を表示および操作するために必要な、さまざまなライトハウス ページとアクセス許可を示します。<br><br>
 
 | [ライトハウス] ページ | 管理者エージェントのアクセス許可 | ヘルプデスク エージェントのアクセス許可 |
 |--|--|--|
-| ホーム | <ul><li>すべて表示する</li></ul> | <ul><li>すべて表示する</li></ul> |
+| Home | <ul><li>すべて表示する</li></ul> | <ul><li>すべて表示する</li></ul> |
 | テナント | <ul><li>すべて表示する</li><li>顧客の連絡先と Web サイトを更新する</li><li>展開計画の表示と適用</li></ul> | <ul><li>すべて表示する</li><li>顧客の連絡先と Web サイトを更新する</li><li>展開計画の表示</li></ul> |
 | ユーザー | <ul><li>すべて表示する</li><li>パスワードのリセット</li><li>サインインをブロックする</li><li>MFA を有効にする</li></ul> | <ul><li>すべて表示する</li><li>パスワードのリセット</li><li>サインインをブロックする</li></ul> |
 | デバイス | <ul><li>すべて表示する</li></ul> | <ul><li>すべて表示する</li></ul> |
@@ -57,22 +57,22 @@ Managed Service Provider (MSP) がテナントにアクセス許可を委任し�
 | サービス正常性 | <ul><li>すべて表示*</li></ul> | <ul><li>すべて表示*</li></ul> |
 
 > [!NOTE]
-> 現在、表に * とマークされたアクションを実行するには、次のプロパティ セットを持つパートナー テナントで Azure AD ロールを持つ必要があります **。microsoft.office365.serviceHealth/allEntities/allTasks**。 Azure ADロールの一覧については、「Azure AD [組み込みロール」を参照してください](/azure/active-directory/roles/permissions-reference)。
+> 現在、表に * でマークされたアクションを実行するには **、microsoft.office365.serviceHealth/allEntities/allTasks** というプロパティセットを持つパートナー テナントで Azure AD ロールを持つ必要があります。 役割の一覧Azure AD組み込[Azure ADを参照してください](/azure/active-directory/roles/permissions-reference)。
 
 管理エージェントの役割に関連する広範なアクセス許可を考えると、パートナー テナント ユーザー[](/azure/active-directory/develop/secure-least-privileged-access)を管理エージェントとヘルプデスク エージェントとして指定する場合は、最小特権アクセスの原則に従う必要があります。 これを行う 1 つの方法は、必要なパートナー テナント ユーザーにヘルプデスク エージェントの役割を割り当てる方法です。 これにより、顧客のデータと設定を表示できますが、大まかな変更は行う必要はありません。 次に、必要に応じて、Azure AD Privileged Identity Management (PIM) の just-in-time アクセス承認機能を使用して、ユーザーに時間範囲の管理エージェントの役割を付与します。
 
-## <a name="set-up-azure-ad-privileged-identity-management-pim"></a>Azure AD Privileged Identity Managementのセットアップ (PIM)
+## <a name="set-up-azure-ad-privileged-identity-management-pim"></a>セットアップ Azure AD Privileged Identity Management (PIM)
 
-MSP は、Azure AD Privileged Identity Management (PIM) を使用して、セキュリティで保護された情報またはリソースにアクセスできるユーザー AD Privileged Identity Managementできます。 PIM は、悪意のあるユーザーがリソースにアクセスしたり、承認されたユーザーが機密性の高いリソースに誤って影響を与える可能性を減らします。 また、MSP は、ユーザーにリソースへの特権アクセス権を与え、指定されたユーザーが特権アクセスで何をしているのかを監視できます。
+MSP は、セキュリティで保護された情報またはリソースにアクセスできるユーザーの数を最小限に抑えるために、AZURE AD PRIVILEGED IDENTITY MANAGEMENT (PIM) を使用します。 PIM は、悪意のあるユーザーがリソースにアクセスしたり、承認されたユーザーが機密性の高いリソースに誤って影響を与える可能性を減らします。 また、MSP は、ユーザーにリソースへの特権アクセス権を与え、指定されたユーザーが特権アクセスで何をしているのかを監視できます。
 
 > [!NOTE]
-> Azure AD PIM を使用するには、パートナー テナントAzure AD Premium P2ライセンスが必要です。
+> PIM Azure AD使用するには、パートナー テナントAzure AD Premium P2ライセンスが必要です。
 
-次の手順では、Azure テナント PIM を使用して、パートナー テナント ユーザーを時間範囲の管理エージェント の役割ADします。
+次の手順では、PIM を使用してパートナー テナント ユーザーを時間範囲の管理エージェントの役割Azure ADします。
 
 1. 「グループに役割を割り当てるグループを作成する」の記事の説明に従って、役割割り当[て可能なグループをAzure Active Directory。](/azure/active-directory/roles/groups-create-eligible)
 
-2. [Azure [AD – すべてのグループ]](https://portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/AllGroups) に移動し、新しいグループを管理者エージェント グループのメンバーとして追加します。
+2. [管理者] [Azure AD [ すべての](https://portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/AllGroups)グループ] に移動し、新しいグループを管理者エージェント グループのメンバーとして追加します。
 
 3. 「特権アクセス グループの対象となる所有者とメンバーを割り当てる」の記事の説明に従って、新しいグループへの特権アクセス [を設定します](/azure/active-directory/privileged-identity-management/groups-assign-member-owner)。
 
@@ -84,11 +84,9 @@ MSP は、Azure AD Privileged Identity Management (PIM) を使用して、セキ
 
 | パートナーテナントの役割 | パートナー テナント内のアクセス許可 |
 |--|--|
-| パートナー テナントのグローバル管理者 | <ul><li>[ライトハウス] にサインアップMicrosoft 365 管理センター。</li><li>初回実行時にパートナー契約の変更を受け入れる。</li><li>[テナント] ページで顧客テナントを表示します。\*</li><li>テナントをアクティブ化して非アクティブ化します。\*</li><li>顧客の連絡先と Web サイトを更新します。\*</li><li>タグを作成、更新、および削除します。\*</li><li>顧客テナントにタグを割り当て、削除します。\*</li></ul> |
-| 少なくとも 1 つのパートナー テナントの管理者<br> Azure ADのプロパティ セットに割り当てられている役割を指定します。<br> **microsoft.office365.supportTickets/allEntities/allTasks**<br> (Azure ADロールの一覧については、「Azure AD [組み込みロール」を参照](/azure/active-directory/roles/permissions-reference)してください。 | <ul><li>ライトハウス サービス要求を作成します。</li></ul> |
+| パートナー テナントのグローバル管理者 | <ul><li>[ライトハウス] にサインアップMicrosoft 365 管理センター。</li><li>初回実行時にパートナー契約の変更を受け入れる。</li><li>[テナント] ページで顧客テナントを表示します。</li><li>テナントをアクティブ化して非アクティブ化します。</li><li>顧客の連絡先と Web サイトを更新します。</li><li>タグを作成、更新、および削除します。</li><li>顧客テナントにタグを割り当て、削除します。</li></ul> |
+| 少なくとも 1 つのパートナー テナントの管理者<br> Azure ADプロパティ セットで割り当てられた役割を指定します。<br> **microsoft.office365.supportTickets/allEntities/allTasks**<br> (役割の一覧Azure AD組み込[Azure ADを参照してください](/azure/active-directory/roles/permissions-reference)。 | <ul><li>ライトハウス サービス要求を作成します。</li></ul> |
 
-> [!NOTE]
-> 現在、表に * とマークされたアクションを実行するには、グローバル管理者が管理エージェントの役割を引き受けなければならない。
 
 ## <a name="related-content"></a>関連コンテンツ
 

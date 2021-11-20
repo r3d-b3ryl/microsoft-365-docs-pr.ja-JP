@@ -14,16 +14,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社で、IDaaS (Identity as a Service) を活用して、従業員向けのクラウド ベース認証や、パートナーと顧客向けのフェデレーション認証を提供している方法を説明します。
-ms.openlocfilehash: 73b58f21ef24465332b902a36bba3d100d06d5b6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: aada3df25fefc99ddf080818ed5930dfb45ecf66
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202921"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61122267"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Contoso 社の ID
 
-Microsoft は、クラウド サービス全体でサービスとしての ID (IDaaS) を提供Azure Active Directory (Azure AD)。 エンタープライズ向Microsoft 365を採用するには、Contoso IDaaS ソリューションでオンプレミス ID プロバイダーを使用し、既存の信頼できるサード パーティ ID プロバイダーとのフェデレーション認証を含める必要がありました。
+Microsoft は、クラウド サービス全体で Id as a Service (IDaaS) を提供Azure Active Directory (Azure AD)。 エンタープライズ向Microsoft 365を採用するには、Contoso IDaaS ソリューションでオンプレミス ID プロバイダーを使用し、既存の信頼できるサード パーティ ID プロバイダーとのフェデレーション認証を含める必要がありました。
 
 ## <a name="the-contoso-active-directory-domain-services-forest"></a>Contoso Active Directory ドメイン サービス フォレスト
 
@@ -31,7 +31,7 @@ Contoso は、7 つのサブドメインを持つ contoso com の単一の Activ
 
 地域ハブを含む世界の各地域の地域ドメインを持つ Contoso フォレストを次に示します。
 
-![Contoso 社のフォレストと世界中のドメイン。](../media/contoso-identity/contoso-identity-fig1.png)
+:::image type="content" alt-text="Contoso 社のフォレストと世界中のドメイン。" source="../media/contoso-identity/contoso-identity-fig1.png" lightbox="../media/contoso-identity/contoso-identity-fig1.png":::
  
 Contoso 社は、contoso com フォレスト内のアカウントとグループを、そのワークロードとサービスの認証と承認Microsoft 365 \. 決定しました。
 
@@ -54,25 +54,25 @@ Contoso 社は、このインフラストラクチャを維持し、顧客とパ
 
 Contoso 社は、オンプレミスの DS フォレストを使用ADクラウド リソースの認証にMicrosoft 365しました。 パスワード ハッシュ同期 (PHS) の使用を決定しました。
 
-PHS は、オンプレミスの AD DS フォレストを、エンタープライズ サブスクリプションの Microsoft 365 の Azure AD テナントと同期し、ユーザー アカウントとグループ アカウント、およびハッシュ化されたバージョンのユーザー アカウント パスワードをコピーします。
+PHS は、オンプレミスの AD DS フォレストを、エンタープライズ サブスクリプション用の Microsoft 365 の Azure AD テナントと同期し、ユーザー アカウントとグループ アカウント、およびハッシュ化されたバージョンのユーザー アカウント パスワードをコピーします。
 
-ディレクトリ同期を実行するために、Contoso 社は Azure AD Connectツールをパリデータセンターのサーバーに展開しました。
+ディレクトリ同期を行うには、Contoso 社はパリのデータセンター Azure AD Connectにこのツールを展開しました。
 
-Azure を実行しているサーバー AD Connect Contoso AD DS フォレストをポーリングし、それらの変更を Azure AD テナントと同期します。
+Contoso Azure AD Connect DS フォレストをポーリングして、ADテナントとそれらの変更を同期するサーバーをAzure ADします。
 
 ![Contoso PHS ディレクトリ同期インフラストラクチャ。](../media/contoso-identity/contoso-identity-fig4.png)
  
-## <a name="conditional-access-policies-for-identity-and-device-access"></a>ID およびデバイス アクセスの条件付きアクセス ポリシー
+## <a name="conditional-access-policies-for-zero-trust-identity-and-device-access"></a>ゼロ信頼 ID とデバイス アクセスの条件付きアクセス ポリシー
 
 Contosoは、3 つの保護レベルに対して Azure AD と Intune の[条件付きアクセス ポリシー](../security/office-365-security/identity-access-policies.md)セットを作成しました。
 
-- *ベースライン* 保護は、すべてのユーザー アカウントに適用されます。
-- *機密性の* 高い保護は、上級リーダーシップとエグゼクティブ スタッフに適用されます。
-- *規制の厳* しい保護は、規制の厳しいデータにアクセスできる財務部門、法務部門、研究部門の特定のユーザーに適用されます。
+- *開始点の保護* は、すべてのユーザー アカウントに適用されます。
+- *Enterprise* の保護は、上級リーダーシップおよびエグゼクティブ スタッフに適用されます。
+- *高度に規制された* データにアクセスできる財務部門、法務部門、研究部門の特定のユーザーには、特殊なセキュリティ保護が適用されます。
 
 Contoso ID ポリシーとデバイス条件付きアクセス ポリシーのセットを次に示します。
 
-![Contoso の ID とデバイスの条件付きアクセス ポリシー。](../media/contoso-identity/contoso-identity-fig5.png)
+:::image type="content" alt-text="Contoso の ID とデバイスの条件付きアクセス ポリシー。" source="../media/contoso-identity/contoso-identity-fig5.png" lightbox="../media/contoso-identity/contoso-identity-fig5.png":::
  
 ## <a name="next-step"></a>次の手順
 
@@ -82,6 +82,6 @@ Contoso 社が組織全体にMicrosoft Endpoint Configuration Managerインフ�
 
 [Microsoft 365 の ID ロードマップ](identity-roadmap-microsoft-365.md)
 
-[Microsoft 365 for Enterprise の概要](microsoft-365-overview.md)
+[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
 
 [テスト ラボ ガイド](m365-enterprise-test-lab-guides.md)

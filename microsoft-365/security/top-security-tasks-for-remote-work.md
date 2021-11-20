@@ -17,12 +17,12 @@ ms.collection:
 - remotework
 ms.custom: admindeeplinkDEFENDER
 description: ランサムウェア、フィッシング、悪意のある添付ファイルなどのサイバー脅威からビジネス メールとデータを保護します。
-ms.openlocfilehash: bc45df84ed1f8daa3faf5f042b7f3ca5c64c5625
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: cca53040dac60664955770f4be0bfc585cfb3405
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110645"
+ms.locfileid: "61122311"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>自宅での作業をサポートするセキュリティ チームの上位 12 のタスク
 
@@ -178,13 +178,13 @@ Microsoft 365 E5 プランを使用し、リスクベースの MFA に Azure Ide
 デバイスを登録した後、共通 ID ポリシーとデバイス アクセス ポリシーのガイダンスを使用して [、次の](./office-365-security/identity-access-policies.md) ポリシーを作成します。
 
 - [デバイス コンプライアンス ポリシーの定義](./office-365-security/identity-access-policies.md#define-device-compliance-policies)- ウイルス対策保護を必要とするWindows 10の推奨設定。 必要な情報があるMicrosoft 365 E5 Microsoft Defender for Endpoint を使用して、従業員のデバイスの正常性を監視します。 他のオペレーティング システムのコンプライアンス ポリシーには、ウイルス対策保護とエンド ポイント保護ソフトウェアが含まれる必要があります。
-- [準拠している PC を要求](./office-365-security/identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)する : デバイス コンプライアンス ポリシーを適用するAzure ADアクセスルールです。
+- [準拠している PC を要求](./office-365-security/identity-access-policies.md#require-compliant-pcs-and-mobile-devices)する : デバイス コンプライアンス ポリシーを適用するAzure ADアクセスルールです。
 
 1 つのデバイスを管理できるのは 1 つの組織のみです。そのため、ゲスト アカウントは、デバイス内の条件付きアクセス ルールからAzure AD。 デバイスコンプライアンスを必要とするポリシーからゲストユーザーと外部ユーザーを除外しない場合、これらのポリシーはこれらのユーザーをブロックします。 詳細については、「ゲストアクセスと外部アクセスを許可および保護するための一般的なポリシー [の更新」を参照してください](./office-365-security/identity-access-policies-guest-access.md)。
 
 ## <a name="9-optimize-your-network-for-cloud-connectivity"></a>9: クラウド接続のためにネットワークを最適化する
 
-従業員の大部分を自宅から迅速に作業できる場合、この突然の接続パターンの切り替えは、企業のネットワーク インフラストラクチャに大きな影響を与える可能性があります。 多くのネットワークは、クラウド サービスが導入される前に拡張および設計されました。 多くの場合、ネットワークはリモート ワーカーに対して寛容ですが、すべてのユーザーが同時にリモートで使用するように設計されたのではありません。
+多くの従業員が自宅で作業を迅速に有効にしている場合、この突然の接続パターンの切り替えは、企業のネットワーク インフラストラクチャに大きな影響を与える可能性があります。 多くのネットワークは、クラウド サービスが導入される前に拡張および設計されました。 多くの場合、ネットワークはリモート ワーカーに対して寛容ですが、すべてのユーザーが同時にリモートで使用するように設計されたのではありません。
 
 VPN コンセントレータ、中央ネットワーク出力機器 (プロキシやデータ損失防止デバイスなど)、中央インターネット帯域幅、バックホール MPLS 回線、NAT 機能などのネットワーク要素は、それらを使用するビジネス全体の負荷により、突然大きな負担を負います。 その結果、パフォーマンスと生産性が低下し、自宅での作業に適応しているユーザーのユーザー エクスペリエンスが低下します。
 

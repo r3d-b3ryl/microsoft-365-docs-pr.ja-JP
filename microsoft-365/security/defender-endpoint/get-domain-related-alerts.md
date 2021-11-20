@@ -1,6 +1,6 @@
 ---
 title: ドメイン関連のアラート API を取得する
-description: Get domain related alerts API を使用して、Microsoft Defender for Endpoint の特定のドメイン アドレスに関連するアラートを取得する方法について説明します。
+description: Get domain 関連のアラート API を使用して、Microsoft Defender for Endpoint の特定のドメイン アドレスに関連するアラートを取得する方法について説明します。
 keywords: apis, graph api, supported apis, get, domain, related, alerts
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 176daff75e39f8ed4dda2854d3448cb9fbaa5dad
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: aef9c876d9c2dc4ca8d68538d0742141525e2cfd
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60211152"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61122227"
 ---
 # <a name="get-domain-related-alerts-api"></a>ドメイン関連のアラート API を取得する
 
@@ -43,8 +43,8 @@ ms.locfileid: "60211152"
 
 ## <a name="limitations"></a>制限事項
 
-1. 構成済みの保持期間に従って、最後に更新されたアラートに対してクエリを実行できます。
-2. この API のレート制限は、1 分あたり 100 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。
+- 構成済みの保持期間に従って、最後に更新されたアラートに対してクエリを実行できます。
+- この API のレート制限は、1 分あたり 100 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -73,7 +73,7 @@ GET /api/domains/{domain}/alerts
 
 |ヘッダー|値|
 |---|---|
-|Authorization|String|
+|Authorization|文字列|
 
 ## <a name="request-body"></a>要求本文
 
@@ -87,7 +87,7 @@ Empty
 
 ### <a name="request"></a>要求
 
-以下は、要求の例です。
+要求の例を次に示します。
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/domains/client.wns.windows.com/alerts

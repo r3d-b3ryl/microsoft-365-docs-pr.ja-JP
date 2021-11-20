@@ -19,18 +19,18 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 610b2959794bfa10faa5eeafb355c9ecb6e4676f
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 090f5a81c624b22298c257fae890691c8e5151ee
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110405"
+ms.locfileid: "61121195"
 ---
 # <a name="policies-for-allowing-guest-access-and-b2b-external-user-access"></a>ゲスト アクセスと B2B 外部ユーザー アクセスを許可するポリシー
 
-この記事では、Azure Active Directory (Azure AD) Business-to-Business (B2B) アカウントを持つゲストと外部ユーザーのアクセスを許可するために、推奨されるデバイスと ID アクセス ポリシーを調整する方法について説明します。 このガイダンスは、共通の [ID ポリシーとデバイス アクセス ポリシーを基にしています](identity-access-policies.md)。
+この記事では、Azure Active Directory (Azure AD) Business-to-Business (B2B) アカウントを持つゲストおよび外部ユーザーに対するアクセスを許可するために、推奨されるゼロトラスト ID とデバイス アクセス ポリシーを調整する方法について説明します。 このガイダンスは、共通の [ID ポリシーとデバイス アクセス ポリシーを基にしています](identity-access-policies.md)。
 
-これらの推奨事項は、ベースラインレベルの保護 **に適用** するように設計されています。 ただし、機密性が高く規制の厳しい保護に関する特定のニーズに基づいて推奨事項 **を調整** することもできます。
+これらの推奨事項は、保護の開始点層に **適用するように** 設計されています。 ただし、エンタープライズおよび特殊なセキュリティ保護に関する特定のニーズに基づいて推奨事項 **を調整** することもできます。
 
 B2B アカウントがテナントで認証するためのパスAzure AD、これらのアカウントに環境全体へのアクセス権を与える必要はありません。 B2B ユーザーとそのアカウントは、条件付きアクセス ポリシーによって共有されるサービスやリソース (ファイルなど) にアクセスできます。
 
@@ -38,15 +38,14 @@ B2B アカウントがテナントで認証するためのパスAzure AD、こ�
 
 次の図は、B2B ゲスト および外部ユーザー アクセスの共通 ID およびデバイス アクセス ポリシー間で追加または更新するポリシーを示しています。
 
-[![ゲスト アクセスを保護するためのポリシー更新プログラムの概要。](../../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png" alt-text="ゲスト アクセスを保護するためのポリシー更新プログラムの概要。" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png":::
 
 次の表に、作成および更新する必要があるポリシーを示します。 共通ポリシーは、「共通 ID とデバイス アクセス ポリシー」の記事に関連付けられた構成 [手順にリンク](identity-access-policies.md) します。
 
 |保護レベル|ポリシー|詳細情報|
 |---|---|---|
-|**Baseline**|[ゲストと外部ユーザーに対して常に MFA を要求する](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|この新しいポリシーを作成し、次の構成を行います。 <ul><li>[**割り>ユーザー** とグループ>含める] で、[ユーザーとグループの選択] を選択し、[すべてのゲストユーザーと外部ユーザー **] を選択します**。</li><li>[ **割り>条件**>サインイン] で、多要素認証 (MFA) を常に適用するには、すべてのオプションをオフのままにします。</li></ul>|
+|**開始点**|[ゲストと外部ユーザーに対して常に MFA を要求する](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|この新しいポリシーを作成し、次の構成を行います。 <ul><li>[**割り>ユーザー** とグループ>含める] で、[ユーザーとグループの選択] を選択し、[すべてのゲストユーザーと外部ユーザー **] を選択します**。</li><li>[ **割り>条件**>サインイン] で、多要素認証 (MFA) を常に適用するには、すべてのオプションをオフのままにします。</li></ul>|
 ||[サインイン リスクが中程度または高の場合に MFA *を* 要求 *する*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|ゲストと外部ユーザーを除外するには、このポリシーを変更します。|
-||[準拠 PC が必要](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|ゲストと外部ユーザーを除外するには、このポリシーを変更します。|
 
 条件付きアクセス ポリシーにゲストと外部ユーザーを含めるか除外するには、[割り当て] > [ユーザーとグループ] > [含める] または **[** 除外] で、[すべてのゲストユーザーと外部ユーザー] をチェック **します**。
 

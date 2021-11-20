@@ -20,18 +20,18 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: b135c6dd691607dd128bfd83e0d2b484bb3a97ae
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ce3ce3c0b6ec948e68bda87d8d70d256b7e3fd3a
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213264"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121141"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>チャット、グループ、ファイルTeamsセキュリティ保護に関するポリシーの推奨事項
 
-この記事では、推奨される ID ポリシーとデバイス アクセス ポリシーを実装して、Microsoft Teams チャット、グループ、およびファイルや予定表などのコンテンツを保護する方法について説明します。 このガイダンスは、一般的な[ID](identity-access-policies.md)とデバイス アクセス ポリシーに基Teamsです。 このTeams他の製品と統合される場合は、「セキュリティ保護に関[](sharepoint-file-access-policies.md)するポリシー SharePoint、電子メールのセキュリティ保護に関するポリシーの推奨事項」も[参照してください](secure-email-recommended-policies.md)。
+この記事では、Microsoft Teams チャット、グループ、およびファイルや予定表などのコンテンツを保護するために、推奨されるゼロトラスト ID とデバイス アクセス ポリシーを実装する方法について説明します。 このガイダンスは、一般的な[ID](identity-access-policies.md)とデバイス アクセス ポリシーに基Teamsです。 このTeams他の製品と統合される場合は、「セキュリティ保護に関[](sharepoint-file-access-policies.md)するポリシー SharePoint、電子メールのセキュリティ保護に関するポリシーの推奨事項」も[参照してください](secure-email-recommended-policies.md)。
 
-これらの推奨事項は、ニーズの細分性に基づいて適用できる Teams のセキュリティと保護の 3 つの層に基づいて行います。ベースライン、機密性の高い、高度に規制されています。 これらのセキュリティ層と、これらの推奨事項で参照される推奨ポリシーの詳細については、「Identity and [device access configurations」を参照してください](microsoft-365-policies-configurations.md)。
+これらの推奨事項は、Teams のセキュリティと保護の 3 つの層に基づいており、ニーズの詳細度 (開始点、エンタープライズ、特殊なセキュリティ) に基づいて適用できます。 これらのセキュリティ層と、これらの推奨事項で参照される推奨ポリシーの詳細については、「Identity and [device access configurations」を参照してください](microsoft-365-policies-configurations.md)。
 
 組織外のユーザーをTeams、特定の認証の状況をカバーするために、この記事では、展開に固有の推奨事項について説明します。 完全なセキュリティ エクスペリエンスを提供するには、このガイダンスに従う必要があります。
 
@@ -47,9 +47,9 @@ ms.locfileid: "59213264"
 
 ## <a name="updating-common-policies-to-include-teams"></a>一般的なポリシーを更新してポリシーを含Teams
 
-チャット、グループ、およびコンテンツを保護するために、Teamsの ID ポリシーとデバイス アクセス ポリシーから更新するポリシーを次の図に示します。 更新するポリシーごとに、クラウド アプリの割りTeamsサービスと依存サービスが含まれているか確認します。
+チャット、グループ、コンテンツを保護するために、Teams ID ポリシーとデバイス アクセス ポリシーから更新するポリシーを次の図に示します。 更新するポリシーごとに、クラウド アプリの割りTeamsサービスと依存サービスが含まれているか確認します。
 
-[![サービスとその依存サービスへのアクセスを保護するためのTeamsの概要。](../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png" alt-text="サービスとその依存サービスへのアクセスを保護するためのTeamsの概要。" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png":::
 
 これらのサービスは、クラウド アプリの割り当てに含める依存サービスTeams。
 
@@ -64,41 +64,38 @@ ms.locfileid: "59213264"
 
 |保護レベル|ポリシー|実装に関するTeams情報|
 |---|---|---|
-|**Baseline**|[サインイン リスクが中程度または高の場合に MFA *を* 要求 *する*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|アプリのTeamsにサービスと依存サービスが含まれているか確認してください。 Teamsゲスト アクセスルールと外部アクセス ルールも考慮する必要がある場合は、この記事の後半でこれらのルールの詳細について説明します。|
+|**開始点**|[サインイン リスクが中程度または高の場合に MFA *を* 要求 *する*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|アプリのTeamsにサービスと依存サービスが含まれているか確認してください。 Teamsゲスト アクセスルールと外部アクセス ルールも考慮する必要がある場合は、この記事の後半でこれらのルールの詳細について説明します。|
 ||[先進認証をサポートしないクライアントはブロックする](identity-access-policies.md#block-clients-that-dont-support-multi-factor)|クラウド Teams割り当てには、サービスと依存サービスを含める。|
 ||[高リスク ユーザーはパスワードを変更する必要がある](identity-access-policies.md#high-risk-users-must-change-password)|アカウントTeamsリスクの高いアクティビティが検出された場合、サインイン時にユーザーにパスワードの変更を強制的に行います。 アプリのTeamsにサービスと依存サービスが含まれているか確認してください。|
 ||[APP データ保護ポリシーの適用](identity-access-policies.md#apply-app-data-protection-policies)|アプリのTeamsにサービスと依存サービスが含まれているか確認してください。 各プラットフォームのポリシーを更新します (iOS、Android、Windows)。|
+|**エンタープライズ**|[サインイン リスクが低い、中程度、または高い場合に MFA *を* 要求 *する*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Teamsゲスト アクセスルールと外部アクセス ルールも考慮する必要がある場合は、この記事の後半でこれらのルールの詳細について説明します。 このポリシー Teamsサービスと依存サービスを含める。|
 ||[デバイス コンプライアンス ポリシーの定義](identity-access-policies.md#define-device-compliance-policies)|このポリシー Teamsサービスと依存サービスを含める。|
-||[準拠 PC が必要](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|このポリシー Teamsサービスと依存サービスを含める。|
-|**機密**|[サインイン リスクが低い、中程度、または高い場合に MFA *を* 要求 *する*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Teamsゲスト アクセスルールと外部アクセス ルールも考慮する必要がある場合は、この記事の後半でこれらのルールの詳細について説明します。 このポリシー Teamsサービスと依存サービスを含める。|
 ||[準拠している PC とモバイル *デバイスを* 要求する](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|このポリシー Teamsサービスと依存サービスを含める。|
-|**厳しく規制**|[*常に* MFA を要求する](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|ユーザー ID に関係なく、MFA は組織で使用されます。 このポリシー Teamsサービスと依存サービスを含める。 |
+|**特殊なセキュリティ**|[*常に* MFA を要求する](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|ユーザー ID に関係なく、MFA は組織で使用されます。 このポリシー Teamsサービスと依存サービスを含める。 |
 |
 
 ## <a name="teams-dependent-services-architecture"></a>Teamsサービスアーキテクチャ
 
 参考までに、次の図は、ユーザーがTeamsを示しています。 詳細と図については、「it アーキテクト向けMicrosoft Teamsの生産性サービス[と関連Microsoft 365を参照してください](../../solutions/productivity-illustrations.md)。
 
-[![ユーザー、Teams、およびSharePoint、OneDrive for Businessの依存関係Exchange。](../../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)
-
-[このイメージのより大きなバージョンを表示する](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png" alt-text="ユーザー、Teams、およびSharePoint、OneDrive for Businessの依存関係Exchange。" lightbox="../../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png":::
 
 ## <a name="guest-and-external-access-for-teams"></a>ユーザーのゲストおよび外部アクセスTeams
 
 Microsoft Teamsアクセスの種類を定義します。
 
-- ゲスト **アクセス** は、チームのメンバーとして追加できるゲストまたは外部ユーザーに対して Azure AD B2B アカウントを使用し、チームの通信とリソースへのすべてのアクセス許可を持っています。
+- ゲスト **アクセス** は、Azure AD B2B アカウントを使用して、チームのメンバーとして追加し、チームの通信とリソースへのアクセス許可を持つゲストまたは外部ユーザーに対して使用します。
 
-- **外部アクセス** は、Azure アカウント B2B アカウントを持ADユーザー用です。 外部アクセスには、招待と通話、チャット、会議への参加を含めできますが、チーム メンバーシップとチームのリソースへのアクセスは含めではありません。
+- **外部アクセス** は、B2B アカウントを持Azure ADユーザー用です。 外部アクセスには、招待と通話、チャット、会議への参加を含めできますが、チーム メンバーシップとチームのリソースへのアクセスは含めではありません。
 
-条件付きアクセス ポリシーは、対応する Azure Teams B2B アカウントが存在ADゲスト アクセスにのみ適用されます。
+条件付きアクセス ポリシーは、B2B アカウントTeamsが存在Azure ADゲスト アクセスにのみ適用されます。
 
 <!--
 In Azure AD, guest and external users are the same. The user type for both of these is Guest. Guest users are B2B users. Microsoft Teams differentiates between guest users and external users in the app. While it's important to understand how each of these are treated in Teams, both types of users are B2B users in Azure AD and the recommended policies for B2B users apply to both.
 
 -->
 
-Azure AD B2B アカウントを持つゲストユーザーと外部ユーザーのアクセスを許可する推奨ポリシーについては、「ゲストアカウントと外部 [B2B](identity-access-policies-guest-access.md)アカウントアクセスを許可するポリシー」を参照してください。
+Azure AD B2B アカウントを持つゲストおよび外部ユーザーのアクセスを許可する推奨ポリシーについては、「ゲストアカウントと外部[B2B](identity-access-policies-guest-access.md)アカウントアクセスを許可するポリシー」を参照してください。
 
 ### <a name="guest-access-in-teams"></a>Teams でのゲスト アクセス
 
@@ -114,7 +111,7 @@ Azure AD B2B アカウントを持つゲストユーザーと外部ユーザー�
 
 外部アクセス ユーザーは、ゲスト アクセスを介して追加された個人よりもアクセスと機能が少ない。 たとえば、外部アクセス ユーザーは内部ユーザーとチャットできますが、Teams、ファイル、その他のリソースにはアクセスできません。
 
-外部アクセスでは、Azure AD B2B ユーザー アカウントは使用されないので、条件付きアクセス ポリシーは使用できません。
+外部アクセスは B2B Azure ADを使用し、条件付きアクセス ポリシーは使用できません。
 
 ## <a name="teams-policies"></a>Teams ポリシー
 

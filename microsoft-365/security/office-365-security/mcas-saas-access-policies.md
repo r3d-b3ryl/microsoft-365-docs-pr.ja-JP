@@ -15,17 +15,18 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: f916aaab4c544b50cc06bfbd4fbb963f1987df03
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 8d94207be88bd7c9e070057ac1790845a3be17ca
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111725"
+ms.locfileid: "61122004"
 ---
 # <a name="recommended-microsoft-defender-for-cloud-apps-policies-for-saas-apps"></a>SaaS アプリに推奨される Microsoft Defender for Cloud Apps ポリシー
+
 Microsoft Defender for Cloud Apps は、Azure AD 条件付きアクセス ポリシーを基に構築され、ダウンロード、アップロード、コピー、貼り付け、印刷のブロックなど、SaaS アプリによる詳細なアクションをリアルタイムで監視および制御できます。 この機能は、企業リソースが管理されていないデバイスやゲスト ユーザーからアクセスされる場合など、固有のリスクを伴うセッションにセキュリティを追加します。
 
-Microsoft Defender for Cloud Apps は、Microsoft Information Protection とネイティブに統合され、機密情報の種類と機密ラベルに基づいて機密データを検索し、適切なアクションを実行するためのリアルタイムコンテンツ検査を提供します。
+また、Defender for Cloud Apps は Microsoft Information Protection とネイティブに統合され、機密情報の種類と機密ラベルに基づいて機密データを検索し、適切なアクションを実行するためのリアルタイムコンテンツ検査を提供します。
 
 このガイダンスには、次のシナリオに関する推奨事項が含まれています。
 
@@ -35,18 +36,18 @@ Microsoft Defender for Cloud Apps は、Microsoft Information Protection とネ�
 
 ## <a name="bring-saas-apps-into-it-management"></a>SaaS アプリを IT 管理に取り込む
 
-Microsoft Defender for Cloud Apps を使用して SaaS アプリを管理する最初の手順は、これらのアプリを検出し、それらをクラウド テナントAzure ADです。 検出に関するヘルプが必要な場合は、「 [ネットワーク内の SaaS アプリを検出して管理する」を参照してください](/cloud-app-security/tutorial-shadow-it)。 アプリを検出した後、これらのアプリを[テナントにAzure ADします](/azure/active-directory/manage-apps/add-application-portal)。
+Defender for Cloud Apps を使用して SaaS アプリを管理する最初の手順は、これらのアプリを検出し、そのアプリをクラウド テナントAzure ADです。 検出に関するヘルプが必要な場合は、「 [ネットワーク内の SaaS アプリを検出して管理する」を参照してください](/cloud-app-security/tutorial-shadow-it)。 アプリを検出した後、これらのアプリを[テナントにAzure ADします](/azure/active-directory/manage-apps/add-application-portal)。
 
 これらを管理するには、次の手順を実行します。
 
 1. 最初に、Azure AD条件付きアクセス ポリシーを作成し、"条件付きアクセス アプリ制御を使用する" に構成します。 これにより、要求が Defender for Cloud Apps にリダイレクトされます。 1 つのポリシーを作成し、すべての SaaS アプリをこのポリシーに追加できます。
 1. 次に、[Defender for Cloud Apps] でセッション ポリシーを作成します。 適用するコントロールごとに 1 つのポリシーを作成します。
 
-SaaS アプリへのアクセス許可は、通常、アプリへのアクセスに関するビジネス上の必要性に基づいて行います。 これらのアクセス許可は、非常に動的な場合があります。 Defender for Cloud Apps ポリシーを使用すると、ベースライン保護、機密性の高い保護、または高度に規制された保護に関連付けられた Azure AD グループにユーザーが割り当てられているかどうかに関係なく、アプリ データを保護できます。
+SaaS アプリへのアクセス許可は、通常、アプリへのアクセスに関するビジネス上の必要性に基づいて行います。 これらのアクセス許可は、非常に動的な場合があります。 Defender for Cloud Apps ポリシーを使用すると、ユーザーが開始点、エンタープライズ、または特殊なセキュリティ保護に関連付けられた Azure AD グループに割り当てられているかどうかに関係なく、アプリ データを保護できます。
 
 SaaS アプリのコレクション全体のデータを保護するために、次の図は、必要な Azure AD 条件付きアクセス ポリシーと、Defender for Cloud Apps で作成できる推奨ポリシーを示しています。 この例では、Defender for Cloud Apps で作成されたポリシーが、管理しているすべての SaaS アプリに適用されます。 これらは、デバイスが管理されるかどうか、およびファイルに既に適用されている感度ラベルに基づいて適切なコントロールを適用するように設計されています。
 
-![Defender for Cloud Apps で SaaS アプリを管理するためのポリシー。](../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png" alt-text="Defender for Cloud Apps で SaaS アプリを管理するためのポリシー。" lightbox="../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png":::
 
 次の表に、新しい条件付きアクセス ポリシーを作成する必要Azure AD。
 
@@ -59,9 +60,9 @@ SaaS アプリのコレクション全体のデータを保護するために、
 
 |保護レベル|ポリシー|
 |---|---|
-|基準|管理されていないデバイスからのトラフィックを監視する <p> 管理されていないデバイスからのファイルダウンロードに保護を追加する|
-|機密|機密または非管理対象デバイスから分類されたラベルが付いたファイルのダウンロードをブロックする (これにより、ブラウザーへのアクセスのみ可能)|
-|厳しく規制|すべてのデバイスから分類されたラベルが付いたファイルのダウンロードをブロックする (これにより、ブラウザーへのアクセスのみ可能)|
+|開始点|管理されていないデバイスからのトラフィックを監視する <p> 管理されていないデバイスからのファイルダウンロードに保護を追加する|
+|大企業|機密または非管理対象デバイスから分類されたラベルが付いたファイルのダウンロードをブロックする (これにより、ブラウザーへのアクセスのみ可能)|
+|特殊なセキュリティ|すべてのデバイスから分類されたラベルが付いたファイルのダウンロードをブロックする (これにより、ブラウザーへのアクセスのみ可能)|
 |||
 
 条件付きアクセス アプリ制御の設定に関するエンドツーエンドの手順については、「Deploy Conditional Access App Control for featured apps」 [を参照してください](/cloud-app-security/proxy-deployment-aad)。 この記事では、SaaS アプリの作成とテストに必要な条件付きアクセス Azure AD手順を説明します。
@@ -95,13 +96,13 @@ Defender for Cloud Apps は、コンプライアンス規制に対する保護�
 
 次の図と表に、一般データ保護規則 (GDPR) に準拠するように構成できるポリシーのいくつかの例を示します。 これらの例では、ポリシーは特定のデータを検索します。 データの感度に基づいて、各ポリシーは適切なアクションを実行するように構成されます。
 
-![データ損失防止のためのクラウド アプリポリシーの例。](../../media/microsoft-365-policies-configurations/mcas-dlp.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/mcas-dlp.png" alt-text="データ損失防止のためのクラウド アプリポリシーの例。" lightbox="../../media/microsoft-365-policies-configurations/mcas-dlp.png":::
 
 |保護レベル|ポリシーの例|
 |---|---|
-|基準|この機密情報の種類を含むファイル ("クレジット カード番号") が組織外で共有されている場合の警告 <p> >この機密情報の種類 ("クレジット カード番号") を含むファイルの管理されていないデバイスへのダウンロードをブロックする|
-|機密|この機密情報の種類 ("クレジット カード番号") を含むファイルのダウンロードを管理対象デバイスに保護する <p> 管理されていないデバイスへのこの機密情報の種類 ("クレジット カード番号") を含むファイルのダウンロードをブロックする <p> これらのラベルがオンのファイルが OneDrive for Business または Box にアップロードされると警告する (顧客データ、人事: 給与データ、人事、従業員データ)|
-|厳しく規制|このラベルを持つファイル ("高度に分類された") が管理対象デバイスにダウンロードされる場合の警告 <p> 管理されていないデバイスへのこのラベル ("高度に分類された") を持つファイルのダウンロードをブロックする|
+|開始点|この機密情報の種類を含むファイル ("クレジット カード番号") が組織外で共有されている場合の警告 <p> >この機密情報の種類 ("クレジット カード番号") を含むファイルの管理されていないデバイスへのダウンロードをブロックする|
+|大企業|この機密情報の種類 ("クレジット カード番号") を含むファイルのダウンロードを管理対象デバイスに保護する <p> 管理されていないデバイスへのこの機密情報の種類 ("クレジット カード番号") を含むファイルのダウンロードをブロックする <p> これらのラベルがオンのファイルが OneDrive for Business または Box にアップロードされると警告する (顧客データ、人事: 給与データ、人事、従業員データ)|
+|特殊なセキュリティ|このラベルを持つファイル ("高度に分類された") が管理対象デバイスにダウンロードされる場合の警告 <p> 管理されていないデバイスへのこのラベル ("高度に分類された") を持つファイルのダウンロードをブロックする|
 |||
 
 ## <a name="next-steps"></a>次の手順

@@ -1,6 +1,6 @@
 ---
 title: アラート関連のユーザー情報を取得する
-description: Get alert related user information API を使用して、Microsoft Defender for Endpoint の特定のアラートに関連するユーザーを取得する方法について説明します。
+description: Get alert 関連のユーザー情報 API を使用して、Microsoft Defender for Endpoint の特定のアラートに関連するユーザーを取得する方法について説明します。
 keywords: apis, graph api, supported apis, get, alert, information, related, user
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 56630e211d5d445e675e4f9af655c062db4ad4b6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5ee59bb41e4c126d13db03fc570de9635c0fe7cf
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60211309"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61122473"
 ---
 # <a name="get-alert-related-user-information-api"></a>アラート関連のユーザー情報 API を取得する
 
@@ -44,8 +44,8 @@ ms.locfileid: "60211309"
 
 ## <a name="limitations"></a>制限事項
 
-1. 構成済みの保持期間に従って、最後に更新されたアラートに対してクエリを実行できます。
-2. この API のレート制限は、1 分あたり 100 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。
+- 構成済みの保持期間に従って、最後に更新されたアラートに対してクエリを実行できます。
+- この API のレート制限は、1 分あたり 100 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -70,9 +70,9 @@ GET /api/alerts/{id}/user
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|型|説明
+名前|種類|説明
 :---|:---|:---
-Authorization|String|ベアラー {token}。 **必須**。
+Authorization|文字列|ベアラー {token}。 **必須**。
 
 ## <a name="request-body"></a>要求本文
 
@@ -86,7 +86,7 @@ Empty
 
 ### <a name="request-example"></a>要求の例
 
-以下は、要求の例です。
+要求の例を次に示します。
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/alerts/636688558380765161_2136280442/user

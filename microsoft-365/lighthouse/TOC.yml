@@ -22,6 +22,8 @@
   items:
     - name: テナント リストの概要
       href: m365-lighthouse-tenant-list-overview.md
+    - name: テナントリストの管理
+      href: m365-lighthouse-manage-tenant-list.md
 - name: テナント内のユーザーを管理する
   items:
     - name: '[ユーザー] ページの概要'
@@ -30,7 +32,7 @@
       href: m365-lighthouse-manage-mfa.md
     - name: セルフサービスパスワードのリセットを管理する
       href: m365-lighthouse-manage-sspr.md
-- name: デバイスを管理する
+- name: デバイスの管理
   items:
     - name: デバイス コンプライアンス ページの概要
       href: m365-lighthouse-device-compliance-page-overview.md

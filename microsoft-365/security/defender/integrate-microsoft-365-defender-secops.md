@@ -17,17 +17,19 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
+- m365solution-m365dsecops
+- m365solution-overview
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 63da2b70153644b19a676f022ae800cafc4998c4
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 5c88d6530fe8316f0297f716d51a28a64ede72f9
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60702517"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121425"
 ---
 # <a name="integrating-microsoft-365-defender-into-your-security-operations"></a>セキュリティMicrosoft 365 Defenderに統合する
 

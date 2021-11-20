@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c217c060c3d0b570c6da5bfbd47c72cb8cdfca2b
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: e8febbf47e8aa7c6d4e78bd783c5274f2b20c9af
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60670809"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121699"
 ---
 # <a name="devicetvmsoftwarevulnerabilities"></a>DeviceTvmSoftwareVulnerabilities
 
@@ -35,12 +35,12 @@ ms.locfileid: "60670809"
 - Microsoft Defender for Endpoint
 
 >[!IMPORTANT]
-> 一部の情報は、市販される前に大幅に変更される可能性があるプレリリース製品に関するものです。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
+> 一部の情報は、製品が市販される前に大幅に変更される可能性があるプレリリース製品に関連しています。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
 
 高度 `DeviceTvmSoftwareVulnerabilities` な検索スキーマの表には、インストールされている [ソフトウェア製品の&](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) の脅威と脆弱性管理の一覧が記載されています。 このテーブルには、オペレーティング システム情報、CVE ID、および脆弱性の重要度の情報も含まれます。 たとえば、この表を使用して、ソフトウェアに重大な脆弱性を持つデバイスに関連するイベントを探します。 このテーブルの情報を返すクエリを作成するには、このレファレンスを使用します。
 
 >[!NOTE]
-> テーブル `DeviceTvmSoftwareInventory` と `DeviceTvmSoftwareVulnerabilities` テーブルがテーブルを置き換 `DeviceTvmSoftwareInventoryVulnerabilities` えました。 最初の 2 つのテーブルには、脆弱な管理アクティビティを通知したり、脆弱なデバイスを探したりするのに役立つ列が追加されています。
+> テーブル `DeviceTvmSoftwareInventory` と `DeviceTvmSoftwareVulnerabilities` テーブルがテーブルを置き換 `DeviceTvmSoftwareInventoryVulnerabilities` えました。 最初の 2 つのテーブルには、ユーザーにアクティビティを通知したり、脆弱なデバイス脆弱性の管理を探したりするために使用できる列が追加されています。
 
 高度な捜索スキーマのその他のテーブルの詳細については、「[高度な捜索のリファレンス](advanced-hunting-schema-tables.md)」 を参照してください。
 
@@ -48,15 +48,15 @@ ms.locfileid: "60670809"
 |-------------|-----------|-------------|
 | `DeviceId` | string | コンピューターの一意識別子 |
 | `DeviceName` | string | コンピューターの完全修飾ドメイン名 (FQDN) |
-| `OSPlatform` | string | コンピューターで実行されているオペレーティング システムのプラットフォームです。 これは、特定のオペレーティング システム (同じファミリ内のバリエーション (Windows 11、Windows 10、Windows 7 など) を示します。 |
+| `OSPlatform` | string | コンピューターで実行されているオペレーティング システムのプラットフォームです。 11、Windows Windows 10、および 7 など、同じファミリ内Windows 10オペレーティング システムWindows示します。 |
 | `OSVersion` | string | コンピューターで実行されているオペレーティング システムのバージョンです。 |
 | `OSArchitecture` | string | コンピューターで実行されているオペレーティング システムのアーキテクチャです。 |
-| `SoftwareVendor` | string | ソフトウェア ベンダーの名前 |
+| `SoftwareVendor` | string | ソフトウェア発行元の名前 |
 | `SoftwareName` | string | ソフトウェア製品の名前 |
 | `SoftwareVersion` | string | ソフトウェア製品のバージョン番号 |
 | `CveId` | string | 共通脆弱性識別子 (CVE) システムでセキュリティの脆弱性に割り当てられている一意の識別子  |
 | `VulnerabilitySeverityLevel` | string | CVSS スコアと脅威の度合いの影響を受ける動的要因に基づいて、セキュリティの脆弱性に割り当てられている重大度レベル |
-| `RecommendedSecurityUpdate` | string | ソフトウェア ベンダーが脆弱性に対処するために提供するセキュリティ更新プログラムの名前または説明 |
+| `RecommendedSecurityUpdate` | string | 脆弱性に対処するためにソフトウェア発行元が提供するセキュリティ更新プログラムの名前または説明 |
 | `RecommendedSecurityUpdateId` | string | 対応するガイダンスまたはナレッジ ベース (KB) 記事の該当するセキュリティ更新プログラムまたは識別子の識別子 |
 
 

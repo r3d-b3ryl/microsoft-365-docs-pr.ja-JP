@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 8219192416bc286714b3fddc3878ce8ed5de949b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a040b42b3d6006e99101596548105701aa36f935
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210677"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121691"
 ---
 # <a name="step-3-perform-a-post-incident-review-of-your-first-incident"></a>手順 3. 最初のインシデントのインシデント後レビューを実行する
 
@@ -38,7 +38,7 @@ ms.locfileid: "60210677"
 
 国立標準技術研究所 (NIST) は、攻撃から回復するためにすべての手順が実行された後、組織はインシデントを確認して、そこから学び、セキュリティの態勢またはプロセスを改善する必要があります。 インシデント処理のさまざまな側面を評価することが、次のインシデントの準備において重要になります。
 
-Microsoft 365 Defender [MITRE ATT](https://attack.mitre.org/)および CK Framework に合ったアラートを組織に提供することで、インシデント後のアクティビティの実行&できます。 すべての Microsoft Defender ソリューションは、CK の戦術または手法に基&攻撃をラベル付けします。 
+[Microsoft 365 Defender、MITRE ATT](https://attack.mitre.org/)および CK Framework に合ったアラートを組織に提供することで、インシデント後のアクティビティを実行&役立ちます。 すべての Microsoft Defender ソリューションは、CK の戦術または手法に基&攻撃をラベル付けします。
 
 この業界フレームワークにアラートをマッピングすると、次の機能を使用できます。
 
@@ -46,7 +46,7 @@ Microsoft 365 Defender [MITRE ATT](https://attack.mitre.org/)および CK Framew
 - 敵対者とキャンペーンの属性を決定します。
 - 傾向分析を実行します。
 - 攻撃方法の認識におけるスキルのギャップを特定します。
-- 修復を高速化Power Automate Playbook を作成します。 
+- 修復を高速化Power Automate Playbook を作成します。
 
 インシデント後のレビュー アクティビティによって、セキュリティ構成とセキュリティ チームのプロセスを微調整し、組織の対応機能を強化することもできます。
 

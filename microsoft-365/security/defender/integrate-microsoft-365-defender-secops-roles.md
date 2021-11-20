@@ -17,17 +17,18 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
+- m365solution-m365dsecops
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 597550afd40f61ad40b52ed8c9651109a523bb1d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1cacdf050c51b97f7ea6acbefcedfb2156814509
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197991"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121461"
 ---
 # <a name="step-4-define-microsoft-365-defender-roles-responsibilities-and-oversight"></a>手順 4. 役割Microsoft 365 Defender監督の定義
 
@@ -38,7 +39,7 @@ ms.locfileid: "60197991"
 
 運用上の役割を定義するには、Microsoft 365 Defender ライセンス、構成、および管理の所有権と説明責任を初期タスクとして確立する必要があります。 通常、Microsoft 365 および Enterprise セキュリティ + モビリティ (EMS) サービス (Microsoft 365 Defender を含む場合があります) のライセンス、サブスクリプション コスト、および管理の所有権は、セキュリティ 運用センター (SOC) チームの外にあります。 SOC チームは、これらの個人と一緒に作業して、ユーザーの適切な監視をMicrosoft 365 Defender。 
 
-多くの最新の SOC は、自分のスキルセットと機能に基づいてチーム メンバーをカテゴリに割り当てる。 次に例を示します。
+多くの最新の SOC は、自分のスキルセットと機能に基づいてチーム メンバーをカテゴリに割り当てる。 例として以下のようなものがあります。
 
 - 脅威と分析機能のライフサイクル管理に関連するタスクに割り当てられた脅威インテリジェンス チーム。
 - ログ、アラート、イベント、および監視機能の管理を担当する SOC アナリストで構成される監視チーム。
@@ -53,7 +54,7 @@ SOC チームの役割と責任Microsoft 365 Defenderこれらのチームに自
 | SOC の監視 | <ul><li>SOC ガバナンスを実行する</li><li>毎日、毎週、毎月のプロセスを確立する</li><li>トレーニングと認識を提供する</li><li>スタッフの採用、ピア グループと会議への参加</li><li>青、赤、紫のチーム演習を実施する</ul>  | <ul><li>Microsoft 365 Defenderアクセス制御</li><li>機能/URL とライセンス更新プログラムの登録を維持する</li><li>IT 関係者、法務関係者、コンプライアンス関係者、プライバシー関係者とのコミュニケーションを維持する</li><li>新しいグループまたはグループの取り組みMicrosoft 365変更Microsoft Azure参加する</ul> |
 | 脅威インテリジェンス & Analytics  | <ul><li>脅威の Intel フィード管理</li><li>ウイルスとマルウェアの属性</li><li>脅威のモデリング&イベントの分類</li><li>Insider Threat Attribute の開発 </li><li>Threat Intel Integration with Risk Management program</li><li>人事、法務、IT、およびセキュリティ チーム全体のデータ サイエンス、BI、分析とデータインサイトを統合する<ul> | <ul><li>Microsoft Defender for Identity の脅威モデリングを維持する</li><li>脅威のモデリングのための Microsoft Defender Office 365維持</li><li>Microsoft Defender for Endpoint の脅威モデリングを維持する</ul> |
 | 監視 | <ul><li>Tier 1、2、3 アナリスト</li><li>ログ ソースのメンテナンスとエンジニアリング</li><li>データ ソースの取り込み </li><li>SIEM の解析、アラート、相関関係、最適化</li><li>イベントとアラートの生成</li><li>イベントとアラートの分析</li><li>イベントとアラートのレポート</li><li>チケット システムのメンテナンス</ul> | 用途: <ul><li>セキュリティ/コンプライアンス センター</li><li>Microsoft 365 Defender ポータル</ul> |
-| エンジニアリング & SecOps | <ul><li>アプリ、システム、およびエンドポイントの脆弱性管理</li><li>XDR/SOAR オートメーション</li><li>コンプライアンス テスト</li><li>フィッシングおよび DLP エンジニアリング</li><li>エンジニアリング</li><li>座標変更コントロール</li><li>Runbook の更新を調整する</li><li>侵入テスト<ul> | <ul><li>Microsoft Cloud App Security</li><li>Defender for Endpoint</li><li>Defender for Identity</ul> |
+| エンジニアリング & SecOps | <ul><li>アプリ、システム、およびエンドポイントの脆弱性管理</li><li>XDR/SOAR オートメーション</li><li>コンプライアンス テスト</li><li>フィッシングおよび DLP エンジニアリング</li><li>エンジニアリング</li><li>座標変更コントロール</li><li>Runbook の更新を調整する</li><li>侵入テスト<ul> | <ul><li>Microsoft Defender for Cloud Apps</li><li>Defender for Endpoint</li><li>Defender for Identity</ul> |
 | コンピューター セキュリティ インシデント対応チーム (CSIRT) | <ul><li>サイバー インシデントの調査と対応</li><li>forensics を実行する</li><li>**SOC から分離される場合が多い**</ul> | インシデント対応プレイブックMicrosoft 365 Defenderし、管理する |
 ||||
 

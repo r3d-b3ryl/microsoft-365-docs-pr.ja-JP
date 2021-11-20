@@ -1,9 +1,9 @@
 ---
 title: ID およびデバイス アクセス ポリシーを実装するための前提条件作業 - エンタープライズ Microsoft 365の|Microsoft Docs
-description: この記事では、ID およびデバイス アクセス ポリシーと構成を使用するために満たす必要がある前提条件について説明します。
+description: この記事では、ゼロトラスト ID とデバイス アクセス ポリシーと構成を使用するために満たす必要がある前提条件について説明します。
 ms.author: josephd
 author: JoeDavies-MSFT
-manager: Laurawi
+manager: dansimp
 ms.prod: m365-security
 ms.topic: article
 audience: Admin
@@ -19,25 +19,25 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: ba6a12036d6d6e0b53b930e2b1683781a474d186
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 564915b6f27f0d4038f4b6c738c377c700b09ab1
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60666724"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121747"
 ---
-# <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>ID およびデバイス アクセス ポリシーを実装するための前提条件作業
+# <a name="prerequisite-work-for-implementing-zero-trust-identity-and-device-access-policies"></a>ゼロトラスト ID とデバイス アクセス ポリシーを実装するための前提条件作業
 
 **適用対象**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - Azure
 
-この記事では、管理者が推奨 ID およびデバイス アクセス ポリシーを使用し、条件付きアクセスを使用するために満たす必要がある前提条件について説明します。 また、最高のシングル サインオン (SSO) エクスペリエンスを得るクライアント プラットフォームを構成するための推奨される既定値について説明します。
+この記事では、管理者が推奨されるゼロトラスト ID とデバイス アクセス ポリシーを使用し、条件付きアクセスを使用するために満たす必要がある前提条件について説明します。 また、最高のシングル サインオン (SSO) エクスペリエンスを得るクライアント プラットフォームを構成するための推奨される既定値について説明します。
 
 ## <a name="prerequisites"></a>前提条件
 
-推奨される ID およびデバイス アクセス ポリシーを使用する前に、組織は前提条件を満たす必要があります。 要件は、次に示すさまざまな ID モデルと認証モデルで異なります。
+推奨されるゼロトラスト ID およびデバイス アクセス ポリシーを使用する前に、組織は前提条件を満たす必要があります。 要件は、次に示すさまざまな ID モデルと認証モデルで異なります。
 
 - クラウド専用
 - パスワード ハッシュ同期 (PHS) 認証を使用したハイブリッド
@@ -51,12 +51,12 @@ ms.locfileid: "60666724"
 |[PHS を構成します](/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)。  漏洩した資格情報を検出し、リスクベースの条件付きアクセスに対応するには、これを有効にする必要があります。 **注:** これは、組織がフェデレーション認証を使用するかどうかに関係なく必要です。|クラウド専用|Microsoft 365 E3 または E5|
 |[シームレスなシングル サインオンを有効](/azure/active-directory/connect/active-directory-aadconnect-sso) にして、組織ネットワークに接続されている組織デバイスでユーザーが自動的にサインインします。|クラウド専用とフェデレーション|Microsoft 365 E3 または E5|
 |[名前付き場所を構成します](/azure/active-directory/reports-monitoring/quickstart-configure-named-locations)。 Azure AD Identity Protection は使用できるすべてのセッション データを収集し、分析してリスク スコアを生成します。 名前付き場所の構成で、ネットワークの組織のパブリック IP Azure AD指定することをお勧めします。 これらの範囲からのトラフィックにはリスク スコアが低下し、組織環境外からのトラフィックにはリスク スコアが高くなります。||Microsoft 365 E3 または E5|
-|[セルフサービス パスワード リセット (SSPR)](/azure/active-directory/authentication/concept-registration-mfa-sspr-converged)および多要素認証 (MFA) に対してすべてのユーザーを登録します。 多要素認証のユーザーをAzure ADに登録することをお勧めします。 Azure ADIDENTITY Protection では、多要素認証Azure ADを使用して、追加のセキュリティ検証を実行します。 さらに、最適なサインイン エクスペリエンスを得る場合は、ユーザーがデバイス[](/azure/active-directory/user-help/microsoft-authenticator-app-how-to)に Microsoft Authenticator アプリと Microsoft ポータル サイト アプリをインストールすることをお勧めします。 これらは、プラットフォームごとにアプリ ストアからインストールできます。||Microsoft 365 E3 または E5|
+|[セルフサービス パスワード リセット (SSPR)](/azure/active-directory/authentication/concept-registration-mfa-sspr-converged)および多要素認証 (MFA) に対してすべてのユーザーを登録します。 多要素認証のユーザーをAzure ADに登録することをお勧めします。 Azure AD Id Protection では、多要素認証Azure ADを使用して、追加のセキュリティ検証を実行します。 さらに、最適なサインイン エクスペリエンスを得る場合は、ユーザーがデバイス[](/azure/active-directory/user-help/microsoft-authenticator-app-how-to)に Microsoft Authenticator アプリと Microsoft ポータル サイト アプリをインストールすることをお勧めします。 これらは、プラットフォームごとにアプリ ストアからインストールできます。||Microsoft 365 E3 または E5|
 |[ドメインに参加しているコンピューターのデバイスの自動登録をWindowsします](/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup)。 条件付きアクセスでは、アプリに接続するデバイスがドメインに参加しているか、準拠しているかが確認されます。 Windows コンピューターでこの方法をサポートするには、デバイスを Azure AD に登録する必要があります。  この記事では、自動デバイス登録を構成する方法について説明します。|クラウド専用|Microsoft 365 E3 または E5|
 |**サポート チームを用意します**。 MFA を完了できないユーザーのための計画を立てます。 ポリシー除外グループに追加したり、新しい MFA 情報を登録したりします。 これらのセキュリティに敏感な変更を行う前に、実際のユーザーが要求を行っている必要があります。 同意を支援するようにユーザーの上司に依頼する方法も効果的です。||Microsoft 365 E3 または E5|
 |[オンプレミス AD へのパスワード ライトバックを構成します](/azure/active-directory/active-directory-passwords-getting-started)。 パスワード ライトバックを使用Azure ADリスクの高いアカウント侵害が検出された場合に、ユーザーがオンプレミスのパスワードを変更する必要があります。 Azure AD Connect を使用してこの機能を有効にするには、Azure AD Connect セットアップのオプション機能画面でパスワード ライトバックを有効にするか、Windows PowerShell 経由で有効にします。|クラウド専用|Microsoft 365 E3 または E5|
 |[パスワード保護Azure AD構成します](/azure/active-directory/authentication/concept-password-ban-bad)。 Azure AD パスワード保護は、既知の脆弱なパスワードとそのバリアントを検出してブロックし、組織固有の脆弱な用語もブロックできます。 既定のグローバル禁止パスワード リストは、Azure AD テナントのすべてのユーザーに自動的に適用されます。 カスタムの禁止パスワード リストに追加のエントリを定義できます。 ユーザーがパスワードを変更またはリセットすると、これらの禁止パスワード リストがチェックされ、強力なパスワードの使用が強制されます。||Microsoft 365 E3 または E5|
-|[[ID Azure Active Directoryを有効にする] をクリックします](/azure/active-directory/identity-protection/overview-identity-protection)。 Azure ADIdentity Protection を使用すると、組織の ID に影響を与える潜在的な脆弱性を検出し、自動修復ポリシーを低、中、高のサインイン リスクとユーザー リスクに構成できます。||Microsoft 365 E5またはMicrosoft 365 E3 E5 セキュリティ アドオンを使用する|
+|[[ID Azure Active Directoryを有効にする] をクリックします](/azure/active-directory/identity-protection/overview-identity-protection)。 Azure AD Id Protection を使用すると、組織の ID に影響を与える潜在的な脆弱性を検出し、自動修復ポリシーを低、中、高のサインイン リスクとユーザー リスクに構成できます。||Microsoft 365 E5またはMicrosoft 365 E3 E5 セキュリティ アドオンを使用する|
 |**[オンライン] と**[[オンライン](/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online)Exchange Online最新の [Skype for Business有効にします](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)。 最新の認証は、MFA を使用する前提条件です。 最新の認証は、2016 および 2019 Officeクライアント、SharePoint、およびOneDrive for Business。||Microsoft 365 E3 または E5|
 |[ユーザーに対して継続的な](microsoft-365-continuous-access-evaluation.md)アクセス評価Azure AD。 継続的なアクセス評価は、アクティブなユーザー セッションを積極的に終了し、ほぼリアルタイムでテナント ポリシーの変更を適用します。||Microsoft 365 E3 または E5|
 |
@@ -67,9 +67,9 @@ ms.locfileid: "60666724"
 
 ### <a name="windows-devices"></a>Windows デバイス
 
-Azure は、オンプレミスとWindows 10の両方で可能な限りスムーズな SSO エクスペリエンスを提供するように設計されているので、Windows 10 (バージョン 2004 以降) をお勧Azure AD。 Azure AD に直接参加するように、または組織がオンプレミスの AD ドメイン参加を使用している場合は、これらのデバイスを自動的にサイレント 登録するように Azure AD に構成する必要[があります](/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup)。
+Azure は、Windowsと Azure AD の両方で可能な最もスムーズな SSO エクスペリエンスを提供するように設計されています。11 または Windows 10 (バージョン 2004 以降) をお勧めします。 Azure AD に直接参加するように、または組織がオンプレミスの AD ドメイン参加を使用している場合は、これらのデバイスを自動的にサイレント 登録するように Azure AD に構成する必要[があります](/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup)。
 
-BYOD デバイスWindows、ユーザーは [仕事または学校の **アカウントの追加] を使用できます**。 デバイス上の Google Chrome ブラウザーのユーザー Windows 10ユーザーと同[](https://chrome.google.com/webstore/detail/windows-10-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji?utm_source=chrome-app-launcher-info-dialog)じスムーズなサインイン エクスペリエンスを得る拡張機能をインストールするMicrosoft Edge注意してください。 また、組織にドメインに参加しているWindows 8 8.1 デバイスがある場合は、Microsoft Workplace Join を非ユーザーのコンピューター Windows 10できます。 [パッケージをダウンロードしてデバイスをデバイス](https://www.microsoft.com/download/details.aspx?id=53554)に登録Azure AD。
+BYOD デバイスWindows、ユーザーは [仕事または学校の **アカウントの追加] を使用できます**。 Windows 11 または Windows 10 デバイスの Google Chrome ブラウザーのユーザーは、Microsoft Edge[](https://chrome.google.com/webstore/detail/windows-10-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji?utm_source=chrome-app-launcher-info-dialog)ユーザーと同じスムーズなサインイン エクスペリエンスを得る拡張機能をインストールする必要があります。 また、組織にドメインに参加しているWindows 8 8.1 デバイスがある場合は、Microsoft Workplace Join を非ユーザーのコンピューター Windows 10できます。 [パッケージをダウンロードしてデバイスをデバイス](https://www.microsoft.com/download/details.aspx?id=53554)に登録Azure AD。
 
 ### <a name="ios-devices"></a>iOS デバイス
 
@@ -100,20 +100,20 @@ BYOD デバイスWindows、ユーザーは [仕事または学校の **アカウ
 
 |プラットフォーム|Word/Excel/PowerPoint|OneNote|OneDrive アプリ|SharePoint アプリ|[OneDrive 同期クライアント](/onedrive/enable-conditional-access)|
 |---|---|---|---|---|---|
+|Windows 11 または Windows 10|サポート|サポート|該当なし|該当なし|サポート|
 |Windows 8.1|サポート|サポート|該当なし|該当なし|サポート|
-|Windows 10|サポート|サポート|該当なし|該当なし|サポート|
 |Android|サポート|サポート|サポート|サポート|N/A|
 |iOS|サポート|サポート|サポート|サポート|N/A|
 |macOS|サポート|サポート|該当なし|該当なし|サポートされていません|
-|Linux|非サポート|非サポート|非サポート|非サポート|非サポート|
+|Linux|サポート対象外|サポート対象外|サポート対象外|サポート対象外|サポート対象外|
 |
 
 ### <a name="microsoft-365-client-support"></a>Microsoft 365 のクライアント サポート
 
 クライアント サポートの詳細については、Microsoft 365記事を参照してください。
 
-- [Microsoft 365クライアント アプリのサポート - 条件付きアクセス](../../enterprise/microsoft-365-client-support-conditional-access.md)
-- [Microsoft 365クライアント アプリのサポート - 多要素認証](../../enterprise/microsoft-365-client-support-multi-factor-authentication.md)
+- [Microsoft 365 クライアント アプリのサポート - 条件付きアクセス](../../enterprise/microsoft-365-client-support-conditional-access.md)
+- [Microsoft 365 クライアント アプリのサポート - 多要素認証](../../enterprise/microsoft-365-client-support-multi-factor-authentication.md)
 
 ## <a name="protecting-administrator-accounts"></a>管理者アカウントの保護
 
@@ -130,6 +130,6 @@ BYOD デバイスWindows、ユーザーは [仕事または学校の **アカウ
 
 ## <a name="next-step"></a>次の手順
 
-[![手順 2: 共通 ID を構成し、条件付きアクセス ポリシーにアクセスします。](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png)](identity-access-policies.md)
+[![手順 2: 共通のゼロ信頼 ID を構成し、条件付きアクセス ポリシーにアクセスします。](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png)](identity-access-policies.md)
 
-[共通 ID とデバイス アクセス ポリシーを構成する](identity-access-policies.md)
+[共通のゼロトラスト ID とデバイス アクセス ポリシーを構成する](identity-access-policies.md)

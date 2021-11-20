@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 組織をフィッシングセーフ悪意のある URL を使用する他の攻撃から組織を保護Office 365 Defender for Defender のリンク保護について学習します。 [Teams セーフリンク] を見て、リンク メッセージのセーフを参照してください。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2f2f1695c10c7b5b9d03db38ab000410c20eb467
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: e0e8bc1dae8ff1d04c32b67ad3cd0e689a7dd264
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064225"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121257"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>セーフ用 Microsoft Defender のリンクOffice 365
 
@@ -80,7 +80,7 @@ ms.locfileid: "61064225"
   - [セーフ アプリのリンクOffice 365設定](#safe-links-settings-for-office-365-apps)
   - [[リンク] の [次の URL をブロックする] セーフします。](#block-the-following-urls-list-for-safe-links)
 
-次の表では、Office 365 の Defender を含む Microsoft 365 および Office 365 組織の セーフ リンクのシナリオについて説明します (つまり、ライセンスの不足は、この例では決して問題ではありません)。
+次の表では、Microsoft 365 および Office 365 の Defender for Office 365 を含む組織の セーフ リンクのシナリオについて説明します (例では、ライセンスの不足は決して問題ではありません)。
 
 <br>
 

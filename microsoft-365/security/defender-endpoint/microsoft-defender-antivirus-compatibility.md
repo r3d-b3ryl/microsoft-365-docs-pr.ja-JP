@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.date: 10/26/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 6a2faec5ec3dca1fcd346aecc73edbbcd2cfa583
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 1624d30eb7e8112e2e8739c6d7cbfdb208f8816e
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110093"
+ms.locfileid: "61122587"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>Microsoft Defender ウイルス対策の他のセキュリティ製品との互換性
 
@@ -67,7 +67,7 @@ Microsoft Defender ウイルス対策のバージョンを実行しているエ�
 (<a id="fn1">1</a>) Windows Server で Microsoft 以外のウイルス対策製品を実行している場合は、グループ ポリシーを使用して Microsoft Defender ウイルス対策 を無効にするか[、DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware)レジストリ キーを使用して Microsoft Defender ウイルス対策 を無効にできます。 レジストリ キーを使用するには、に移動し、 `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender` という名前の DWORD エントリを設定または作成します `DisableAntiSpyware` 。 その値を (レジストリ キーの値を true に設定する) に設定し、ベースに `1` **[16** 進数] を選択します。 
 
 > [!TIP]
-> Windows Server インストールの主な相違点と管理オプションについては、「[Windows Server 上の Microsoft Defender ウイルス対策](microsoft-defender-antivirus-on-windows-server.md)」 を参照します。 このWindows Server 2016の代 *わりに、Windows Defender ウイルス対策**が表示* Microsoft Defender ウイルス対策。
+> このWindows Server 2016の代 *わりに、Windows Defender ウイルス対策**が表示* Microsoft Defender ウイルス対策。
 
 ## <a name="microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions"></a>Microsoft Defender ウイルス対策および Microsoft 以外のウイルス対策/マルウェア対策ソリューション
 
@@ -88,7 +88,7 @@ Microsoft Defender ウイルス対策のバージョンを実行しているエ�
 | Windows Server 2016 <br><br> Windows Server 2012 R2  | Microsoft 以外のウイルス対策/マルウェア対策ソリューション | はい | Microsoft Defender ウイルス対策パッシブ モードに設定する必要があります (手動) <sup> [[2](#fn2)]<sup> |
 |Windows Server 2016 <br><br> Windows Server 2012 R2  | Microsoft 以外のウイルス対策/マルウェア対策ソリューション | いいえ | Microsoft Defender ウイルス対策無効にする必要があります (手動) <sup> [[3](#fn3)]<sup> |
 
-(<a id="fn2">2</a>) Windows Server 2019、Windows Server、バージョン 1803 以降、Windows Server 2016、または Windows Server 2012 R2 では、Microsoft 以外のウイルス対策ソフトウェアをインストールしても、Microsoft Defender ウイルス対策 はパッシブ モードに自動的に入らない製品。 このような場合、[Microsoft Defender ウイルス対策をパッシブ モードに設定](microsoft-defender-antivirus-on-windows-server.md) して、サーバーに複数のウイルス対策製品がインストールされることによる問題を防ぎます。 PowerShell、グループ ポリシー、またはレジストリ キーを使用して Microsoft Defender ウイルス対策をパッシブ モードに設定することができます。 
+(<a id="fn2">2</a>) Windows Server 2019、Windows Server、バージョン 1803 以降、Windows Server 2016、または Windows Server 2012 R2 では、Microsoft 以外のウイルス対策ソフトウェアをインストールしても、Microsoft Defender ウイルス対策 はパッシブ モードに自動的に入らない製品。 このような場合、Microsoft Defender ウイルス対策をパッシブ モードに設定 して、サーバーに複数のウイルス対策製品がインストールされることによる問題を防ぎます。 PowerShell、グループ ポリシー、またはレジストリ キーを使用して Microsoft Defender ウイルス対策をパッシブ モードに設定することができます。 
 
   次のレジストリ Microsoft Defender ウイルス対策をパッシブ モードに設定できます。
 - パス: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
@@ -99,10 +99,10 @@ Microsoft Defender ウイルス対策のバージョンを実行しているエ�
  > [!NOTE]
  > Windows Server 2016 および Windows Server 2012 R2 を実行しているエンドポイントでパッシブ モードが動作するには、オンボード Windows サーバーの指示に従って、これらのエンドポイント[をオンボードする必要があります](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)。 
 
-(<a id="fn3">3</a>) Windows Server 2016 または Windows Server 2012 R2 で、Microsoft 以外のウイルス対策製品を使用している場合、そのエンドポイントが Microsoft Defender for Endpoint にオンボードされていない場合は、手動で無効[またはアンインストール](microsoft-defender-antivirus-on-windows-server.md#are-you-using-windows-server-2012-r2-or-windows-server-2016)Microsoft Defender ウイルス対策 サーバーに複数のウイルス対策製品がインストールされている場合に発生する問題を防止します。
+(<a id="fn3">3</a>) Windows Server 2016 または Windows Server 2012 R2 で、Microsoft 以外のウイルス対策製品を使用している場合、そのエンドポイントが Microsoft Defender for Endpoint にオンボードされていない場合は、エンドポイントを無効またはアンインストールMicrosoft Defender ウイルス対策 サーバーに複数のウイルス対策製品がインストールされている場合に発生する問題を防ぐために手動で実行します。
 
 > [!TIP]
-> Windows Server インストールの主な相違点と管理オプションについては、「[Windows Server 上の Microsoft Defender ウイルス対策](microsoft-defender-antivirus-on-windows-server.md)」 を参照します。 このWindows Server 2016の代 *わりに、Windows Defender ウイルス対策**が表示* Microsoft Defender ウイルス対策。
+> このWindows Server 2016の代 *わりに、Windows Defender ウイルス対策**が表示* Microsoft Defender ウイルス対策。
 
 > [!IMPORTANT]
 > Microsoft Defender ウイルス対策は、Windows 10 および 11、Windows Server 2022、Windows Server 2019、Windows Server、バージョン 1803 以降、Windows Server 2016、およびWindows Server 2012 R2.
@@ -189,6 +189,5 @@ Defender for Endpoint は、パッシブ モードMicrosoft Defender ウイル�
 ## <a name="see-also"></a>関連項目
 
 - [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)
-- [Windows Server 上の Microsoft Defender ウイルス対策](microsoft-defender-antivirus-on-windows-server.md)
 - [ブロック モードの EDR](edr-in-block-mode.md)
 - [Microsoft 365 のエンドポイントのデータ損失防止についての詳細情報](/microsoft-365/compliance/endpoint-dlp-learn-about)

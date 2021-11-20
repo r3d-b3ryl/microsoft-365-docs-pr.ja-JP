@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: この記事では、Microsoft 365 ネットワーク接続を安全に最適化するための最新のガイドについて説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1ad7607fb03aee49fa86adaaf1e8970c864ea310
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1cea07745295f945f472dfeaa7042d3b027eea85
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212883"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111677"
 ---
 # <a name="microsoft-365-network-connectivity-principles"></a>Microsoft 365 ネットワーク接続の原則
 
@@ -206,7 +206,7 @@ Microsoft では、幅広い Microsoft 365 のセキュリティ機能を用意�
   
 - **多要素認証 (MFA) の使用** MFA では強力なパスワード戦略に保護レイヤーを追加して、パスワードを正しく入力した後、スマートフォンで電話、テキスト メッセージ、またはアプリ通知を確認するようユーザーに要求します。
 
-- **Microsoft Cloud App Security の使用** 異常な活動を追跡し、それに対処するためのポリシーを構成します。管理者が、異常なまたはリスクのあるユーザーの活動を確認できるように Microsoft Cloud App Security で通知を設定します。たとえば、大量のデータのダウンロード、複数回のサインイン試行の失敗、不明または危険な IP アドレスからの接続などを確認します。
+- **Microsoft Defender for Cloud Appsの使用** 変則的な活動を追跡し、それに対処するためのポリシーを構成します。 管理者が、変則的またはリスクのあるユーザーの活動 (たとえば、大量のデータのダウンロード、複数回のサインイン試行の失敗、不明または危険な IP アドレスからの接続) を確認できるように、Microsoft Defender for Cloud Apps で通知を設定します。
 
 - **データ損失防止 (DLP) の構成** DLP を使用すると、機密データを特定し、ユーザーが誤ってまたは意図的にデータを共有することを回避するためのポリシーを作成できます。 DLP は、Exchange Online、SharePoint Online、OneDrive を含む Microsoft 365 で動作するので、ユーザーはワークフローを中断させずに準拠を維持できます。
 

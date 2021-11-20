@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3c25132cc8743bf791123ae2cc4d29a195faa34a
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 4df4b12d6b82a4738653485b7c32f954f26dccac
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60755351"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61122503"
 ---
 # <a name="aadsignineventsbeta"></a>AADSignInEventsBeta
 
@@ -32,7 +32,7 @@ ms.locfileid: "60755351"
 - Microsoft 365 Defender
 
 > [!IMPORTANT]
-> このテーブルは現在ベータ版で、Azure Active Directory (AAD) サインイン イベントをハントするために、短期的に `AADSignInEventsBeta` 提供されています。 このテーブルのアクティビティを収集Azure Active Directory Premium P2表示するには、ユーザーライセンスが必要です。 最終的に、すべてのサインイン スキーマ情報をテーブルに移動 `IdentityLogonEvents` します。
+> このテーブルは現在ベータ版で、Azure Active Directory (AAD) サインイン イベントをハントするために、短期的に `AADSignInEventsBeta` 提供されています。 このテーブルのアクティビティを収集Azure Active Directory Premium P2表示するには、ユーザーライセンスが必要です。 すべてのサインイン スキーマ情報は、最終的にテーブルに移動 `IdentityLogonEvents` します。
 
 高度 `AADSignInEventsBeta` な検索スキーマの表には、対話型および非対話型Azure Active Directoryに関する情報が含まれている。詳細については、「サインイン アクティビティ レポート - プレビュー Azure Active Directory[サインイン」を参照してください](/azure/active-directory/reports-monitoring/concept-all-sign-ins)。 
 
@@ -63,7 +63,7 @@ ms.locfileid: "60755351"
 |`ResourceTenantId`|string|アクセスされるリソースのテナントの一意の識別子|
 |`DeviceName`|string|コンピューターの完全修飾ドメイン名 (FQDN)|
 |`AadDeviceId`|string|ネットワーク内のデバイスの一意Azure AD|
-|`OSPlatform`|string|コンピューターで実行されているオペレーティング システムのプラットフォームです。 これは、同じファミリ内のバリエーション (Windows 11、Windows 10、Windowsなど) を示します。|
+|`OSPlatform`|string|コンピューターで実行されているオペレーティング システムのプラットフォームです。 11、Windows Windows 10、および 7 など、同じファミリ内Windows 10オペレーティング システムWindows示します。|
 |`DeviceTrustType`|string|サインインしたデバイスの信頼の種類を示します。 管理対象デバイスのシナリオの場合のみ。 使用できる値は、Workplace、AzureAd、および ServerAd です。|
 |`IsManaged`|int|サインインを開始したデバイスが管理対象デバイス (1) かどうか (0) を示します。|
 |`IsCompliant`|int|サインインを開始したデバイスが準拠 (1) か非準拠 (0) かを示します。|

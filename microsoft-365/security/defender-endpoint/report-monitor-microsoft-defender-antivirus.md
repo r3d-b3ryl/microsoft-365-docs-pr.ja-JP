@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 34b5718bb80b1af629edcd18ecc6771fc7a0c8f8
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 9e2efd5f5354b84f7a10f1a9284ca812014240a1
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60884039"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121963"
 ---
 # <a name="report-on-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策のレポート
 
@@ -46,5 +46,4 @@ PowerShell、WMI、またはサーバーを使用して状態を監視または�
 ## <a name="see-also"></a>関連項目
 
 - [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)
-- [Windows Server 2016 および 2019 上の Microsoft Defender ウイルス対策](microsoft-defender-antivirus-on-windows-server.md)
 - [展開Microsoft Defender ウイルス対策](deploy-manage-report-microsoft-defender-antivirus.md)

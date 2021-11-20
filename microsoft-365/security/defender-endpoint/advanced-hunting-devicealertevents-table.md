@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/22/2020
 ms.technology: mde
-ms.openlocfilehash: 58e0ae53cc679136bca960f05e2eb6cf2c5a09a6
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 692fc5a0f3bee738f9d8a14ad9b51446aed623a7
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554026"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61122215"
 ---
 # <a name="devicealertevents"></a>DeviceAlertEvents
 
@@ -28,8 +28,6 @@ ms.locfileid: "60554026"
 
 **適用対象:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-
-
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
@@ -51,7 +49,7 @@ ms.locfileid: "60554026"
 |`RemoteUrl`|文字列|に接続されていた URL または完全修飾ドメイン名 (FQDN)|
 |`RemoteIP`|文字列|に接続されていた IP アドレス|
 |`AttackTechniques`|string|MITRE ATT&をトリガーしたアクティビティに関連付けられた CK テクニックを使用します。|
-|`ReportId`|long|繰り返しカウンターに基づくイベント識別子。 一意のイベントを識別するには、この列を and 列と組み合わせて `DeviceName` 使用する必要 `Timestamp` があります。|
+|`ReportId`|long|繰り返しカウンターに基づくイベント識別子。 一意のイベントを識別するには、この列を and 列と一緒に `DeviceName` 使用する必要 `Timestamp` があります。|
 |`Table`|文字列|イベントの詳細を含むテーブル|
 
 ## <a name="related-topics"></a>関連項目

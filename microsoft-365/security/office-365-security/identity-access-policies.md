@@ -1,9 +1,9 @@
 ---
-title: 一般的な ID およびデバイス アクセス ポリシー - エンタープライズ Microsoft 365の|Microsoft Docs
-description: 推奨される一般的な ID とデバイス アクセス ポリシーと構成について説明します。
+title: 一般的なゼロトラスト ID とデバイス アクセス ポリシー - エンタープライズ Microsoft 365の|Microsoft Docs
+description: 推奨される一般的なゼロトラスト ID とデバイス アクセス ポリシーと構成について説明します。
 ms.author: josephd
 author: JoeDavies-MSFT
-manager: Laurawi
+manager: dansimp
 ms.prod: m365-security
 ms.topic: article
 audience: Admin
@@ -20,21 +20,21 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: f0d0c372865f15c05e232f1af60a37d98cea582e
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 446bcfc41b0317d5124b98ac828298f49de100d9
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111749"
+ms.locfileid: "61121797"
 ---
-# <a name="common-identity-and-device-access-policies"></a>共通 ID とデバイスのアクセス ポリシー
+# <a name="common-zero-trust-identity-and-device-access-policies"></a>一般的なゼロ信頼 ID とデバイス アクセス ポリシー
 
 **適用対象**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - Azure
 
-この記事では、Microsoft 365 Azure Active Directory (Azure AD) アプリケーション プロキシで公開されたオンプレミス アプリケーションなど、Microsoft 365 クラウド サービスへのアクセスをセキュリティで保護するための一般的な推奨ポリシーについて説明します。
+この記事では、Azure Active Directory (Azure AD) アプリケーション プロキシで公開されたオンプレミス アプリケーションを含む、Microsoft 365 クラウド サービスへのアクセスをセキュリティ保護するための一般的な推奨されるゼロトラスト ID とデバイス アクセス ポリシーについて説明します。
 
 このガイダンスでは、新しくプロビジョニングされた環境に推奨ポリシーを展開する方法について説明します。 これらのポリシーを個別のラボ環境で設定すると、事前運用環境と実稼働環境にロールアウトをステージングする前に、推奨されるポリシーを理解して評価できます。 新しくプロビジョニングされた環境は、評価ニーズを反映するためにクラウド専用またはハイブリッドにできます。
 
@@ -42,36 +42,41 @@ ms.locfileid: "61111749"
 
 次の図は、推奨されるポリシーのセットを示しています。 各ポリシーが適用する保護の層、およびポリシーが PC、電話、タブレット、またはデバイスの両方のカテゴリに適用されるかどうかを示します。 また、これらのポリシーを構成する場所も示します。
 
-[![ID とデバイス アクセスを構成するための一般的なポリシー。](../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png" alt-text="ゼロトラスト ID とデバイス アクセスを構成するための一般的なポリシー。" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png":::
 
-個々のポリシーへのリンクを含む 1 ページの PDF サマリーを次に示します。
 
-[![手引き資料の ID とデバイス保護Microsoft 365イメージ。](../../media/microsoft-365-policies-configurations/MSFT-cloud-architecture-identity-device-protection-handout.png)](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br> [PDF として表示する](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) \|[PDF としてダウンロードする](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)
+<!--
+
+Here's a one-page PDF summary:
+
+[![Thumb image for the Zero Trust identity and device protection for Microsoft 365 handout.](../../media/microsoft-365-policies-configurations/zero-trust-id-device-protection-model-handout-thumbnail.png)](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br> [View as a PDF](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) \| [Download as a PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)
+
+
+--> 
 
 この記事の残りの部分では、これらのポリシーを構成する方法について説明します。
 
 > [!NOTE]
 > Intune にデバイスを登録する前に多要素認証 (MFA) の使用を要求して、デバイスが目的のユーザーを所有することを保証することを推奨します。 デバイス コンプライアンス ポリシーを適用するには、Intune にデバイスを登録する必要があります。
 
-これらのタスクを実行する時間を与えるために、次の表に示す順序でベースライン ポリシーを実装することをお勧めします。 ただし、機密性の高い高度に規制されたレベルの保護に関する MFA ポリシーは、いつでも実装できます。
+これらのタスクを実行する時間を与えるために、次の表に示す順序で開始点ポリシーを実装することをお勧めします。 ただし、エンタープライズおよび特殊なセキュリティ レベルの保護に関する MFA ポリシーは、いつでも実装できます。
 
 |保護レベル|ポリシー|詳細情報|ライセンス|
 |---|---|---|---|
-|**Baseline**|[サインイン リスクが中程度または高の場合に MFA *を* 要求 *する*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5またはMicrosoft 365 E3 E5 セキュリティ アドオンを使用する|
+|**開始点**|[サインイン リスクが中程度または高の場合に MFA *を* 要求 *する*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5またはMicrosoft 365 E3 E5 セキュリティ アドオンを使用する|
 ||[先進認証をサポートしないクライアントはブロックする](#block-clients-that-dont-support-multi-factor)|最新の認証を使用しないクライアントは条件付きアクセス ポリシーをバイパスできます。そのため、これらをブロックすることが重要です。|Microsoft 365 E3 または E5|
 ||[高リスク ユーザーはパスワードを変更する必要がある](#high-risk-users-must-change-password)|リスクの高いアクティビティが自分のアカウントで検出された場合、サインイン時にユーザーにパスワードの変更を強制的に行います。|Microsoft 365 E5またはMicrosoft 365 E3 E5 セキュリティ アドオンを使用する|
 ||[アプリケーション保護ポリシー (APP) データ保護の適用](#apply-app-data-protection-policies)|プラットフォームごとに 1 つの Intune アプリ保護ポリシー (Windows iOS/iPadOS、Android)。|Microsoft 365 E3 または E5|
 ||[承認済みアプリとアプリ保護を要求する](#require-approved-apps-and-app-protection)|iOS、iPadOS、または Android を使用して携帯電話とタブレットに対してモバイル アプリ保護を適用します。|Microsoft 365 E3 または E5|
+|**エンタープライズ**|[サインイン リスクが低い、中程度、または高い場合に MFA *を要求**する*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5またはMicrosoft 365 E3 E5 セキュリティ アドオンを使用する|
 ||[デバイス コンプライアンス ポリシーの定義](#define-device-compliance-policies)|プラットフォームごとに 1 つのポリシー。|Microsoft 365 E3 または E5|
-||[準拠 PC が必要](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|アプリまたは macOS を使用して PC の Intune Windows適用します。|Microsoft 365 E3 または E5|
-|**機密**|[サインイン リスクが低い、中程度、または高い場合に MFA *を要求**する*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5またはMicrosoft 365 E3 E5 セキュリティ アドオンを使用する|
-||[準拠している PC とモバイル *デバイスを* 要求する](#require-compliant-pcs-and-mobile-devices)|Pc (Windows macOS) と電話またはタブレット (iOS、iPadOS、または Android) の両方に Intune 管理を適用します。|Microsoft 365 E3 または E5|
-|**厳しく規制**|[*常に* MFA を要求する](#assigning-policies-to-groups-and-users)||Microsoft 365 E3 または E5|
+||[準拠している PC とモバイル デバイスを要求する](#require-compliant-pcs-and-mobile-devices)|Pc (Windows macOS) と電話またはタブレット (iOS、iPadOS、または Android) の両方に Intune 管理を適用します。|Microsoft 365 E3 または E5|
+|**特殊なセキュリティ**|[*常に* MFA を要求する](#assigning-policies-to-groups-and-users)||Microsoft 365 E3 または E5|
 |
 
 ## <a name="assigning-policies-to-groups-and-users"></a>グループとユーザーへのポリシーの割り当て
 
-ポリシーを構成する前に、保護層Azure AD使用しているグループを特定します。 通常、ベースライン保護は組織内のすべてのユーザーに適用されます。 ベースライン保護と機密性の高い保護の両方に含まれるユーザーには、すべてのベースライン ポリシーと機密ポリシーが適用されます。 保護は累積的であり、最も制限の厳しいポリシーが適用されます。
+ポリシーを構成する前に、保護層Azure AD使用しているグループを特定します。 通常、開始点の保護は組織内のすべてのユーザーに適用されます。 開始点とエンタープライズ保護の両方に含まれるユーザーには、すべての開始点ポリシーとエンタープライズ ポリシーが適用されます。 保護は累積的であり、最も制限の厳しいポリシーが適用されます。
 
 条件付きアクセスの除外用にAzure ADグループを作成する方法をお勧めします。 [割り当て] セクションの [ユーザーとグループ] 設定の [除外] 値で、すべての条件付きアクセス ポリシーにこのグループ **を追加** します。 これにより、アクセスの問題のトラブルシューティング中にユーザーにアクセスを提供する方法が提供されます。 これは一時的なソリューションとしてのみお勧めします。 このグループで変更を監視し、除外グループが意図した方法でのみ使用されている必要があります。
 
@@ -85,13 +90,13 @@ MFA を要求するグループの割り当てと除外の例を次に示しま�
 
 - Executive Staff グループのメンバーは、サインイン リスクが低、中、高の場合に MFA を使用する必要があります。
 
-  この場合、Executive Staff グループのメンバーは、ベースライン ポリシーと機密性の高い条件付きアクセス ポリシーの両方と一致します。 両方のポリシーのアクセス制御が組み合わされ、この場合は機密の条件付きアクセス ポリシーと同じです。
+  この場合、Executive Staff グループのメンバーは、開始点とエンタープライズの条件付きアクセス ポリシーの両方と一致します。 両方のポリシーのアクセス制御が組み合わされ、この場合はエンタープライズ条件付きアクセス ポリシーと同じです。
 
 - X グループのトップ シークレット Projectは常に MFA を使用する必要があります
 
-  この場合、トップ シークレット グループ X グループProject、ベースラインポリシーと高度に規制された条件付きアクセス ポリシーの両方が一致します。 両方のポリシーのアクセス制御が組み合わされます。 高度に規制された条件付きアクセス ポリシーのアクセス制御は制限が厳しいため、使用されます。
+  この場合、トップ シークレット グループ X グループのProjectは、開始点と特殊なセキュリティ条件付きアクセス ポリシーの両方と一致します。 両方のポリシーのアクセス制御が組み合わされます。 特殊なセキュリティ条件付きアクセス ポリシーのアクセス制御は制限が厳しいため、使用されます。
 
-グループとユーザーに高レベルの保護を適用する場合は注意が必要です。 たとえば、トップ シークレット Project X グループのメンバーは、Project X の厳しく規制されたコンテンツで作業していない場合でも、サインインの度に MFA を使用する必要があります。
+グループとユーザーに高レベルの保護を適用する場合は注意が必要です。 たとえば、トップ シークレット Project X グループのメンバーは、Project X の特殊なセキュリティ コンテンツで作業していない場合でも、サインインの度に MFA を使用する必要があります。
 
 これらのAzure ADの一部として作成されたすべてのグループは、グループとしてMicrosoft 365があります。 これは、ドキュメントをセキュリティで保護する際に、Microsoft Teamsラベルを展開SharePoint。
 
@@ -127,9 +132,9 @@ MFA を要求するグループの割り当てと除外の例を次に示しま�
 
 |保護のレベル|必要なリスク レベルの値|Action|
 |---|---|---|
-|基準|高、中|両方を確認します。|
-|機密|高、中、低|3 つすべてがチェックされます。|
-|厳しく規制||MFA を常に適用するには、すべてのオプションをオフのままにします。|
+|開始点|高、中|両方を確認します。|
+|大企業|高、中、低|3 つすべてがチェックされます。|
+|特殊なセキュリティ||MFA を常に適用するには、すべてのオプションをオフのままにします。|
 |
 
 [アクセス制御 **] セクションで、次の操作を** 行います。
@@ -221,13 +226,13 @@ APP データ保護フレームワークは 3 つの異なる構成レベルに�
 
 各構成レベルおよび、最低限保護する必要のあるアプリに関する具体的な推奨事項については、「[アプリ保護ポリシーを使用するデータ保護フレームワーク](/mem/intune/apps/app-protection-framework)」を参照してください。
 
-「Identity and device [access configurations」](microsoft-365-policies-configurations.md)で概説されている原則を使用して、ベースラインおよび機密保護層は、レベル 2 エンタープライズ拡張データ保護設定と密接にマップされます。 高度に規制された保護層は、レベル 3 エンタープライズの高データ保護設定に密接にマップされます。
+[ゼロ](microsoft-365-policies-configurations.md)トラスト ID とデバイス アクセス構成で概説されている原則を使用して、開始点と Enterprise 保護層は、レベル 2 エンタープライズ拡張データ保護設定と密接にマップされます。 特殊なセキュリティ保護層は、レベル 3 エンタープライズの高データ保護設定に密接にマップされます。
 
 |保護レベル|アプリ保護ポリシー|詳細情報|
 |---|---|---|
-|基準|[レベル 2 の拡張データ保護](/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|レベル 2 で適用されるポリシー設定には、レベル 1 に推奨されるポリシー設定すべてが含まれています。以下のポリシー設定に追加または更新して、レベル 1 よりも多くのコントロールとより高度な構成を実装します。|
-|機密|[レベル 2 の拡張データ保護](/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|レベル 2 で適用されるポリシー設定には、レベル 1 に推奨されるポリシー設定すべてが含まれています。以下のポリシー設定に追加または更新して、レベル 1 よりも多くのコントロールとより高度な構成を実装します。|
-|規制の厳しい|[レベル 3 エンタープライズの高データ保護](/mem/intune/apps/app-protection-framework#level-3-enterprise-high-data-protection)|レベル 3 で適用されるポリシー設定には、レベル 1 とレベル 2 に推奨されるポリシー設定すべてが含まれます。以下のポリシー設定に追加または更新して、レベル 2 よりも多くのコントロールとより高度な構成を実装します。|
+|開始点|[レベル 2 の拡張データ保護](/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|レベル 2 で適用されるポリシー設定には、レベル 1 に推奨されるポリシー設定すべてが含まれています。以下のポリシー設定に追加または更新して、レベル 1 よりも多くのコントロールとより高度な構成を実装します。|
+|大企業|[レベル 2 の拡張データ保護](/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|レベル 2 で適用されるポリシー設定には、レベル 1 に推奨されるポリシー設定すべてが含まれています。以下のポリシー設定に追加または更新して、レベル 1 よりも多くのコントロールとより高度な構成を実装します。|
+|特殊なセキュリティ|[レベル 3 エンタープライズの高データ保護](/mem/intune/apps/app-protection-framework#level-3-enterprise-high-data-protection)|レベル 3 で適用されるポリシー設定には、レベル 1 とレベル 2 に推奨されるポリシー設定すべてが含まれます。以下のポリシー設定に追加または更新して、レベル 2 よりも多くのコントロールとより高度な構成を実装します。|
 |
 
 データ保護フレームワークの設定を使用して、Microsoft エンドポイント マネージャープラットフォーム (iOS と Android) ごとに新しいアプリ保護ポリシーを作成するには、次の方法を実行します。
@@ -309,13 +314,13 @@ iOS/iPadOS セキュリティ構成フレームワークは、いくつかの異
 - セキュリティの強化 (レベル 2) – ユーザーが機密情報や機密情報にアクセスするデバイスに対して、この構成をお勧めします。 この構成は、データ共有コントロールを制定し、USB デバイスへのアクセスをブロックします。 この構成は、デバイス上の仕事または学校のデータにアクセスするほとんどのモバイル ユーザーに適用されます。
 - セキュリティの高い (レベル 3) – 一意にリスクが高い特定のユーザーまたはグループが使用するデバイス (権限のない開示によって組織に大いなる損失が発生する機密性の高いデータを処理するユーザー) に対して、この構成をお勧めします。 この構成は、より強力なパスワード ポリシーを制定し、特定のデバイス機能を無効にし、追加のデータ転送制限を適用し、Apple のボリューム購入プログラムを通じてアプリをインストールする必要があります。
 
-「Identity and device [access configurations」](microsoft-365-policies-configurations.md)で説明されている原則を使用して、基準計画と機密性の高い保護層は、レベル 2 の強化されたセキュリティ設定と密接にマップされます。 高度に規制された保護層は、レベル 3 の高セキュリティ設定に密接にマップされます。
+ゼロトラスト ID とデバイス[](microsoft-365-policies-configurations.md)アクセス構成で概説されている原則を使用して、開始点と Enterprise 保護層は、レベル 2 の強化されたセキュリティ設定と密接にマップされます。 特殊なセキュリティ保護層は、レベル 3 の高セキュリティ設定に密接にマップされます。
 
 |保護レベル  |デバイス ポリシー |詳細情報  |
 |---------|---------|---------|
-|基準     |セキュリティの強化 (レベル 2)         |レベル 2 で適用されるポリシー設定には、レベル 1 に推奨されるポリシー設定すべてが含まれています。以下のポリシー設定に追加または更新して、レベル 1 よりも多くのコントロールとより高度な構成を実装します。         |
-|機密     |セキュリティの強化 (レベル 2)         |レベル 2 で適用されるポリシー設定には、レベル 1 に推奨されるポリシー設定すべてが含まれています。以下のポリシー設定に追加または更新して、レベル 1 よりも多くのコントロールとより高度な構成を実装します。         |
-|規制の厳しい     |高セキュリティ (レベル 3)         |レベル 3 で適用されるポリシー設定には、レベル 1 とレベル 2 に推奨されるポリシー設定すべてが含まれます。以下のポリシー設定に追加または更新して、レベル 2 よりも多くのコントロールとより高度な構成を実装します。         |
+|開始点     |セキュリティの強化 (レベル 2)         |レベル 2 で適用されるポリシー設定には、レベル 1 に推奨されるポリシー設定すべてが含まれています。以下のポリシー設定に追加または更新して、レベル 1 よりも多くのコントロールとより高度な構成を実装します。         |
+|大企業     |セキュリティの強化 (レベル 2)         |レベル 2 で適用されるポリシー設定には、レベル 1 に推奨されるポリシー設定すべてが含まれています。以下のポリシー設定に追加または更新して、レベル 1 よりも多くのコントロールとより高度な構成を実装します。         |
+|特殊なセキュリティ     |高セキュリティ (レベル 3)         |レベル 3 で適用されるポリシー設定には、レベル 1 とレベル 2 に推奨されるポリシー設定すべてが含まれます。以下のポリシー設定に追加または更新して、レベル 2 よりも多くのコントロールとより高度な構成を実装します。         |
 
 各構成レベルの特定のデバイスコンプライアンスとデバイス制限の推奨事項を確認するには [、iOS/iPadOS セキュリティ構成フレームワークを確認してください](/mem/intune/enrollment/ios-ipados-configuration-framework)。
 
@@ -339,17 +344,17 @@ Android Enterprise のフル マネージド デバイスの場合:
 - 完全に管理された拡張セキュリティ (レベル 2) – ユーザーが機密情報または機密情報にアクセスするデバイスに対して、この構成をお勧めします。 この構成は、より強力なパスワード ポリシーを制定し、ユーザー/アカウント機能を無効にします。
 - 完全に管理された高セキュリティ (レベル 3) - 一意にリスクが高い特定のユーザーまたはグループが使用するデバイス (権限のない開示によって組織に大いなる損失が発生する機密性の高いデータを処理するユーザー) に対して、この構成をお勧めします。 この構成により、Android の最小バージョンが増加し、モバイル脅威防御または Microsoft Defender for Endpoint が導入され、追加のデバイス制限が適用されます。
 
-[「Identity](microsoft-365-policies-configurations.md)and device access configurations」で概説されている原則を使用して、Baseline および Sensitive protection tiers は、個人所有デバイスのレベル 2 の強化されたセキュリティと、完全に管理されたデバイスのレベル 2 拡張セキュリティ設定と密接にマップされます。 高度に規制された保護層は、レベル 3 の高セキュリティ設定に密接にマップされます。
+[ゼロ](microsoft-365-policies-configurations.md)トラスト ID とデバイス アクセス構成で概説されている原則を使用して、開始点と Enterprise 保護層は、個人所有デバイスのレベル 1 の基本的なセキュリティと、完全に管理されたデバイスのレベル 2 の強化されたセキュリティ設定と密接にマップされます。 特殊なセキュリティ保護層は、レベル 3 の高セキュリティ設定に密接にマップされます。
 
 Android Enterpriseプロファイル デバイスの場合:
 
 |保護レベル  |デバイス ポリシー |詳細情報  |
 |---------|---------|---------|
-|基準     |作業プロファイル: セキュリティの強化 (レベル 2)      |該当なし         |
-|機密     |作業プロファイル: セキュリティの強化 (レベル 2)         |該当なし         |
-|基準     |完全管理: 拡張セキュリティ (レベル 2)       |レベル 2 で適用されるポリシー設定には、レベル 1 に推奨されるポリシー設定すべてが含まれています。以下のポリシー設定に追加または更新して、レベル 1 よりも多くのコントロールとより高度な構成を実装します。         |
-|機密     |完全管理: 拡張セキュリティ (レベル 2)         |レベル 2 で適用されるポリシー設定には、レベル 1 に推奨されるポリシー設定すべてが含まれています。以下のポリシー設定に追加または更新して、レベル 1 よりも多くのコントロールとより高度な構成を実装します。         |
-|規制の厳しい     |高セキュリティ (レベル 3)         |レベル 3 で適用されるポリシー設定には、レベル 1 とレベル 2 に推奨されるポリシー設定すべてが含まれます。以下のポリシー設定に追加または更新して、レベル 2 よりも多くのコントロールとより高度な構成を実装します。         |
+|開始点     |作業プロファイル: 基本セキュリティ (レベル 1)      |該当なし         |
+|大企業     |作業プロファイル: 基本セキュリティ (レベル 1)         |該当なし         |
+|開始点     |完全管理: 拡張セキュリティ (レベル 2)       |レベル 2 で適用されるポリシー設定には、レベル 1 に推奨されるポリシー設定すべてが含まれています。以下のポリシー設定に追加または更新して、レベル 1 よりも多くのコントロールとより高度な構成を実装します。         |
+|大企業     |完全管理: 拡張セキュリティ (レベル 2)         |レベル 2 で適用されるポリシー設定には、レベル 1 に推奨されるポリシー設定すべてが含まれています。以下のポリシー設定に追加または更新して、レベル 1 よりも多くのコントロールとより高度な構成を実装します。         |
+|特殊なセキュリティ     |高セキュリティ (レベル 3)         |レベル 3 で適用されるポリシー設定には、レベル 1 とレベル 2 に推奨されるポリシー設定すべてが含まれます。以下のポリシー設定に追加または更新して、レベル 2 よりも多くのコントロールとより高度な構成を実装します。         |
 
 各構成レベルの特定のデバイスコンプライアンスとデバイス制限の推奨事項を確認するには[、Android Enterpriseセキュリティ構成フレームワークを確認してください](/mem/intune/enrollment/android-configuration-framework)。
 
@@ -389,7 +394,7 @@ Android Enterpriseプロファイル デバイスの場合:
 |クラウド用 Defender|Microsoft Defender マルウェア対策|必須|選択|
 ||Microsoft Defender マルウェア対策の最小バージョン||種類 <p> デスクトップでのみWindows 10されます。 Microsoft では、最新バージョンから 5 つ以下のバージョンをお勧めします。|
 ||Microsoft Defender マルウェア対策の署名を最新の情報に更新する|必須|選択|
-||リアルタイム保護|必須|選択 <p> デスクトップでのみWindows 10|
+||リアルタイム保護|必須|選択 <p> デスクトップおよび以降のデスクトップWindows 10のみサポート|
 |
 
 #### <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint
@@ -399,35 +404,38 @@ Android Enterpriseプロファイル デバイスの場合:
 |Microsoft Defender for Endpoint rules in the Microsoft エンドポイント マネージャー センター|[デバイスがコンピューター リスク スコアの下にあるか、または下にある必要がある](/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)|中|選択|
 |
 
-## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>準拠している PC を必要とします (ただし、準拠していない電話とタブレット)
+<!--
+## Require compliant PCs (but not compliant phones and tablets)
 
-準拠している PC を要求するポリシーを追加する前に、Intune で管理用にデバイスを登録してください。 デバイスが意図したユーザーを所有しているという保証のために、デバイスを Intune に登録する前に、多要素認証を使用することを推奨します。
+Before adding a policy to require compliant PCs, be sure to enroll your devices for management in Intune. Using multi-factor authentication is recommended before enrolling devices into Intune for assurance that the device is in the possession of the intended user.
 
-準拠している PC を要求するには、次の操作を行います。
+To require compliant PCs:
 
-1. [Azure Portal](https://portal.azure.com) に移動し、資格情報でサインインします。
-2. Azure サービスの一覧で、[次へ]**をAzure Active Directory。**
-3. [管理] **リストで** 、[セキュリティ] **を選択し**、[条件付きアクセス] **を選択します**。
-4. [ **新しいポリシー] を** 選択し、新しいポリシーの名前を入力します。
+1. Go to the [Azure portal](https://portal.azure.com), and sign in with your credentials.
+2. In the list of Azure services, choose **Azure Active Directory**.
+3. In the **Manage** list, choose **Security**, and then choose **Conditional Access**.
+4. Choose **New policy** and type the new policy's name.
 
-5. [ **割り当て]** で、[ **ユーザーとグループ]** を選択し、ポリシーを適用するユーザーを含める。 条件付きアクセス除外グループも除外します。
+5. Under **Assignments**, choose **Users and groups** and include who you want the policy to apply to. Also exclude your Conditional Access exclusion group.
 
-6. [割 **り当て] で**、[ **クラウド アプリまたはアクション] を選択します**。
+6. Under **Assignments**, choose **Cloud apps or actions**.
 
-7. [ **含める**] で、[アプリの選択 **>選択**] を選択し、[クラウド アプリ] リストから目的のアプリ **を選択** します。 たとえば、[設定] をOffice 365。 [完了 **時に選択** ] を選択します。
+7. For **Include**, choose **Select apps > Select**, and then select the desired apps from the **Cloud apps** list. For example, select Office 365. Choose **Select** when done.
 
-8. 準拠している PC (ただし、準拠していない電話とタブレット)を要求するには、[割り当て] で、[デバイス プラットフォームの>**を選択します**。 [構成 **] で [はい** ] **を選択します**。 [  **デバイス プラットフォームの選択]** を選択し、[ **は** い] を選択して [任意のデバイス] **を選択し** 、[除外] で **[iOS** と **Android** の選択] を選択し、[完了] を **選択します**。
+8. To require compliant PCs (but not compliant phones and tablets), under **Assignments**, choose **Conditions > Device platforms**. Select **Yes** for **Configure**. Choose  **Select device platforms**, select **Yes** and select **Any device** and under Exclude select **iOS** and **Android**, and then choose **Done**.
 
-9. [アクセス **制御] で、[** 許可] **を選択します** 。
+9. Under **Access controls**, choose **Grant** .
 
-10. [ **アクセスを許可する] を** 選択し、[デバイスを **準拠としてマークする] をオンにします**。 複数のコントロールの場合は、[すべての **選択したコントロールを要求する] を選択します**。 完了したら、[選択] **を選択します**。
+10. Choose **Grant access** and then check **Require device to be marked as compliant**. For multiple controls, select **Require all the selected controls**. When complete, choose **Select**.
 
-11. [ポリシー **の有効化** ] **で [オン]** を選択し、[作成] を **選択します**。
+11. Select **On** for **Enable policy**, and then choose **Create**.
 
 > [!NOTE]
-> このポリシーを有効にする前に、デバイスが準拠している必要があります。 それ以外の場合は、ユーザー アカウントが条件付きアクセス除外グループに追加されるまで、ロックアウトされ、このポリシーを変更できません。
+> Make sure that your device is compliant before enabling this policy. Otherwise, you could get locked out and will be unable to change this policy until your user account has been added to the Conditional Access exclusion group.
 
-## <a name="require-compliant-pcs-and-mobile-devices"></a>準拠している PC とモバイル *デバイスを* 要求する
+--> 
+
+## <a name="require-compliant-pcs-and-mobile-devices"></a>準拠している PC とモバイル デバイスを要求する
 
 すべてのデバイスのコンプライアンスを要求するには、次の操作を行います。
 

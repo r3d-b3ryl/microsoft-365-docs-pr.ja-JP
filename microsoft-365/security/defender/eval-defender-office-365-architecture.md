@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: b5fdfb95b263d38c9b663176fd21b6c43e43db57
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: ee1275f61f23fbca73f319d90dff7e9edfadb23b
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110309"
+ms.locfileid: "61122285"
 ---
 # <a name="review-microsoft-defender-for-office-365-architecture-requirements-and-key-concepts"></a>Microsoft Defender のアーキテクチャ要件Office 365主な概念について確認する
 
@@ -48,7 +48,7 @@ Defender for Office 365を有効にする前に、アーキテクチャを理解
 
 |コールアウト  |説明  |
 |---------|---------|
-|1     | 外部送信者のホスト サーバーは、通常、メッセージを中継するターゲット サーバーを提供する MX レコードのパブリック DNS 参照を実行します。  この参照は、直接Exchange Online (EXO) または EXO に対して中継するように構成された SMTP ゲートウェイのいずれかです。  |
+|1     | 外部送信者のホスト サーバーは、通常、MX レコードのパブリック DNS 参照を実行します。これは、メッセージを中継するターゲット サーバーを提供します。  この参照は、直接Exchange Online (EXO) または EXO に対して中継するように構成された SMTP ゲートウェイのいずれかです。  |
 |2     | Exchange Online Protection接続をネゴシエートして検証し、メッセージ ヘッダーとコンテンツを検査して、必要な追加のポリシー、タグ付け、または処理を決定します。  |
 |3     | Exchange Online、Microsoft Defender と統合Office 365、より高度な脅威保護、軽減、修復を提供します。 |
 |4     | 悪意のある、ブロックされている、または検疫されていないメッセージが処理され、迷惑メール、メールボックス ルール、または他の設定に関連するユーザー設定が評価され、トリガーされる EXO で受信者に配信されます。 |
@@ -56,7 +56,7 @@ Defender for Office 365を有効にする前に、アーキテクチャを理解
 |6      | オンプレミス環境を統合する場合は、メール関連の属性、設定、および構成の管理と管理をサポートするために Exchange サーバーを使用する方が強く推奨されます。 |
 |7      | Microsoft Defender for Office 365拡張検出および応答 (XDR) Microsoft 365 Defender信号を共有します。|
 
-オンプレミスの統合は一般的ですが、オプションです。 環境がクラウド専用の場合は、このガイダンスも機能します。
+オンプレミスの統合は一般的ですが、オプションです。 環境がクラウド専用の場合は、このガイダンスも役立ちます。
 
 ## <a name="understand-key-concepts"></a>主要な概念を理解する
 
@@ -82,7 +82,7 @@ Microsoft Defender for Officeに含まれる機能の詳細については[、�
 - すべての受信者メールボックスは現在、Exchange Online。
 - パブリック MX レコードは EOP またはサード パーティの SMTP ゲートウェイに直接解決し、受信外部メールを EOP に直接中継します。
 - プライマリ 電子メール ドメインは、管理者の *権限* としてExchange Online。
-- 必要に応じて、ディレクトリ ベース *エッジ* ブロック (DBEB) を正常に展開して構成しました。 詳細については、「[ディレクトリ ベースのエッジ ブロックを使用して無効な受信者に送信されたメッセージを拒否する](/exchange/mail-flow-best-practices/use-directory-based-edge-blocking)」を参照してください。
+- 必要に応じて、ディレクトリ ベースの *エッジ* ブロック (DBEB) を正常に展開して構成しました。 詳細については、「無効な受信者に送信Directory-Based拒否するには、エッジ ブロックを使用する [」を参照してください](/exchange/mail-flow-best-practices/use-directory-based-edge-blocking)。
 
 > [!IMPORTANT]
 > これらの要件が該当しない場合、またはハイブリッド共存シナリオに残っている場合、microsoft Defender for Office 365 評価では、このガイダンスで完全に説明されていない、より複雑な構成または高度な構成が必要になります。

@@ -1,5 +1,5 @@
 ---
-title: Id でソフトウェアを取得する
+title: ID でソフトウェアを取得する
 description: ソフトウェアの詳細の一覧を ID で取得します。
 keywords: apis, graph api, supported api, get, software, Microsoft Defender for Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
@@ -16,20 +16,20 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 098edd5b0857e7bd771be7d28fee965934b9bc67
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d980bca8584bbd99cdc695e24a5a1d7a476ff8c9
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205453"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61122092"
 ---
-# <a name="get-software-by-id"></a>Id でソフトウェアを取得する
+# <a name="get-software-by-id"></a>ID でソフトウェアを取得する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -56,9 +56,9 @@ GET /api/Software/{Id}
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|型|説明
+名前|種類|説明
 ---|---|---
-Authorization|String|ベアラー {token}。**必須**。
+Authorization|文字列|ベアラー {token}。**必須**。
 
 ## <a name="request-body"></a>要求本文
 
@@ -72,7 +72,7 @@ Empty
 
 ### <a name="request-example"></a>要求の例
 
-以下は、要求の例です。
+要求の例を次に示します。
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge
@@ -80,7 +80,7 @@ GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge
 
 ### <a name="response-example"></a>応答の例
 
-以下は、応答の例です。
+応答の例を下に示します。
 
 ```json
 {
@@ -96,7 +96,7 @@ GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge
 }
 ```
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [リスクベースの脅威&の管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [脅威&ソフトウェア インベントリ](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

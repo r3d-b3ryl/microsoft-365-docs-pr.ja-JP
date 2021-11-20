@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: f5f5a506cb2c9a2cfd3d81fb0f3fca6bcf3710de
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: a3d576b5b507ea7a3468a472c3690495114d2410
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60756633"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61122563"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Microsoft 365 の生産性図
 
@@ -76,17 +76,22 @@ Microsoft 365情報保護とコンプライアンス機能の幅広いセット�
 |[![Microsoft Defender for Endpoint 展開戦略のサム イメージ。](../media/solutions-architecture-center/mde-deployment-strategy.png)](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  \| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) <br>2021 年 9 月更新| アーキテクチャ教材は、次のアーキテクチャの展開を計画するのに役立ちます。 <ul><li> クラウド-ネイティブ </li><li> 共同管理 </li><li> オンプレミス</li><li>評価とローカル オンボード</li>
 
 
+<!--
+
 <a name="BKMK_O365IDP"></a>
-## <a name="identity-and-device-protection-for-microsoft-365"></a>ユーザーの ID とデバイス保護Microsoft 365
+## Zero Trust identity and device protection for Microsoft 365
 
-Microsoft 365 アプリケーション プロキシで公開されている、Microsoft 365、その他の SaaS サービス、およびオンプレミス アプリケーションにアクセスする ID とデバイスを保護するためのAzure AD機能。
+Recommended Zero Trust capabilities for protecting identities and devices that access Microsoft 365, other SaaS services, and on-premises applications published with Azure AD Application Proxy.
 
-| アイテム | 説明 |
+| Item | Description |
 |:-----|:-----|
-|[![モデルポスター: ID とデバイス保護のMicrosoft 365。](../media/microsoft-365-policies-configurations/o365-identity-device-protection-thumb.png)](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [PDF として表示する](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[PDF としてダウンロードする](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[アプリとしてダウンロードVisio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)   <br/> 2020 年 9 月更新|データ、ID、デバイス全体で一貫したレベルの保護を使用することが重要です。 このモデルは、ID とデバイスを保護する機能の詳細と比較できる機能を示します。  <br/> |
+|[![Model poster: Zero Trust identity and device protection for Microsoft 365.](../media/microsoft-365-policies-configurations/zero-trust-id-device-protection-model-thumbnail.png)](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [View as a PDF](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Download as a PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf)  \| [Download as a Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx) <br/> Updated November 2021|It's important to use consistent levels of protection across your data, identities, and devices. This model shows you which Zero Trust capabilities are comparable with more information on capabilities to protect identities and devices.  <br/> |
+
+--> 
+
 
 <a name="BKMK_ediscovery"></a>
-## <a name="advanced-ediscovery-architecture-in-microsoft-365"></a>Advanced eDiscoveryのアーキテクチャMicrosoft 365
+##Advanced eDiscoveryのアーキテクチャMicrosoft 365
 
 Advanced eDiscovery環境内を含む、エンドツーエンドのワークフローとMicrosoft 365フローを提供します。
 

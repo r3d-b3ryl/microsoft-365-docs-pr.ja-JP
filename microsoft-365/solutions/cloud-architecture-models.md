@@ -13,16 +13,16 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 9e4899aa2e1719139c211a00c247a19023d109ea
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: 9cb74a007f1d1ce10eb331767ee9cd86c60ef849
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60239681"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61122277"
 ---
 # <a name="microsoft-cloud-for-it-architects-illustrations"></a>IT アーキテクト向け Microsoft クラウドのイラスト
 
-これらのクラウド アーキテクチャ ポスターでは、Microsoft 365、Azure Active Directory (Azure AD)、Microsoft Intune、Microsoft Dynamics 365、ハイブリッドオンプレミスおよびクラウド ソリューションなど、Microsoft クラウド サービスに関する情報を提供します。 
+これらのクラウド アーキテクチャ ポスターでは、Microsoft 365、Azure Active Directory (Azure AD)、Microsoft Intune、Microsoft Dynamics 365、ハイブリッドオンプレミスおよびクラウド ソリューションなどの Microsoft クラウド サービスに関する情報を提供します。 
 
 IT 意思決定者とアーキテクトは、これらのリソースを使用して、ワークロードに最適なソリューションを決定し、ネットワーク、ID、セキュリティなどのコア インフラストラクチャ コンポーネントに関する意思決定を行えます。
 
@@ -32,7 +32,7 @@ IT 意思決定者とアーキテクトは、これらのリソースを使用�
 
 | 項目 | 説明 |
 |:-----|:-----|
-|[![一般的な攻撃のポスターの図。 ](../media/solutions-architecture-center/common-attacks-model-thumb.png) ](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) <br/> [PDF](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) \| [Visio](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.vsdx) <br/> 2021 年 9 月更新 | このポスターは、一般的な攻撃の経路を示し、攻撃の各段階で攻撃者を阻止する機能について説明します。 <br/><br/>**関連するソリューション ガイド** <br/> <ul><li>[評価とパイロットMicrosoft 365 Defender](../security/defender/eval-overview.md)</li><li>[推奨される ID およびデバイス アクセス構成](../security/office-365-security/microsoft-365-policies-configurations.md)</li><li>[データプライバシーに関する規制に関する情報保護を、Microsoft 365](information-protection-deploy.md)</li><li>[Microsoft 365 テナントにランサムウェア保護を展開する](ransomware-protection-microsoft-365.md)</li><li>[Microsoft 365 のインサイダー リスク ソリューション](../compliance/insider-risk-solution-overview.md)</li></ul>
+|[![一般的な攻撃のポスターの図。 ](../media/solutions-architecture-center/common-attacks-model-thumb.png) ](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) <br/> [PDF](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) \| [Visio](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.vsdx) <br/> 2021 年 9 月更新 | このポスターは、一般的な攻撃の経路を示し、攻撃の各段階で攻撃者を阻止する機能について説明します。 <br/><br/>**関連するソリューション ガイド** <br/> <ul><li>[Microsoft 365 Defender の評価とパイロット](../security/defender/eval-overview.md)</li><li>[推奨される ID およびデバイス アクセス構成](../security/office-365-security/microsoft-365-policies-configurations.md)</li><li>[データプライバシーに関する規制に関する情報保護を、Microsoft 365](information-protection-deploy.md)</li><li>[Microsoft 365 テナントにランサムウェア保護を展開する](ransomware-protection-microsoft-365.md)</li><li>[Microsoft 365 のインサイダー リスク ソリューション](../compliance/insider-risk-solution-overview.md)</li></ul>
 
 <a name="identity"></a>
 ### <a name="microsoft-cloud-identity-for-it-architects"></a>IT アーキテクト向け Microsoft クラウド ID
@@ -41,7 +41,7 @@ Microsoft クラウド サービスおよびプラットフォームを使用し
   
 | 項目 | 説明 |
 |:-----|:-----|
-|[![Microsoft クラウド ID モデルのサム イメージ。](../media/solutions-architecture-center/msft-cloud-identity-model-thumb.png)](../downloads/MSFT_cloud_architecture_identity.pdf) <br/> [PDF として表示する](../downloads/MSFT_cloud_architecture_identity.pdf) \|[PDF としてダウンロードする](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity.pdf)  <br/>2020 年 9 月更新 | このモデルには次のものが含まれています。  <ul> <li> Microsoft のクラウド ID の概要 </li><li> Azure AD IDaaS 機能 </li><li> オンプレミスの Active Directory ドメイン サービス (AD DS) アカウントを Azure サーバーと統合AD </li><li> ディレクトリ コンポーネントを Azure IaaS に置く </li><li> AD IaaS のワークロードの DS オプションの詳細 </li></ul><br/>  <br/>|
+|[![Microsoft クラウド ID モデルのサム イメージ。](../media/solutions-architecture-center/msft-cloud-identity-model-thumb.png)](../downloads/MSFT_cloud_architecture_identity.pdf) <br/> [PDF として表示する](../downloads/MSFT_cloud_architecture_identity.pdf) \|[PDF としてダウンロードする](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity.pdf)  <br/>2020 年 9 月更新 | このモデルには次のものが含まれています。  <ul> <li> Microsoft のクラウド ID の概要 </li><li> Azure AD IDaaS 機能 </li><li>ゼロ信頼 ID とデバイス アクセス ポリシー</li><li> オンプレミスの Active Directory ドメイン サービス (AD DS) アカウントとAzure AD </li><li> ディレクトリ コンポーネントを Azure IaaS に置く </li><li> AD IaaS のワークロードの DS オプションの詳細 </li></ul><br/>  <br/>|
 
 <a name="security"></a>
 ### <a name="microsoft-cloud-security-for-it-architects"></a>IT アーキテクト向け Microsoft クラウド セキュリティ
@@ -50,7 +50,7 @@ Microsoft クラウド サービスおよびプラットフォームにおける
   
 | 項目 | 説明 |
 |:-----|:-----|
-|[![エンタープライズ アーキテクト モデルのサムネイルの Microsoft クラウド セキュリティ。](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security.pdf) <br/> [PDF](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security.pdf)  \| <br/>2021 年 10 月更新 | このモデルには次のものが含まれています。 <ul><li>Microsoft および顧客のセキュリティ責任</li><li>ID と デバイス アクセス</li><li>脅威保護</li><li>情報保護 </ul><br/>|
+|[![エンタープライズ アーキテクト モデルのサムネイルの Microsoft クラウド セキュリティ。](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security.pdf) <br/> [PDF](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security.pdf)  \| <br/>2021 年 11 月更新 | このモデルには次のものが含まれています。 <ul><li>Microsoft および顧客のセキュリティ責任</li><li>ID と デバイス アクセス</li><li>脅威保護</li><li>情報保護 </ul><br/>|
    
 <a name="networking"></a>
 ### <a name="microsoft-cloud-networking-for-it-architects"></a>IT アーキテクト向け Microsoft クラウド ネットワーク

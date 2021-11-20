@@ -22,12 +22,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 424a6928c12642b90c44561b92483ef1398f855e
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 6cc1735182a91819d38bc18ecb60de7d29085d28
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/19/2021
-ms.locfileid: "61109793"
+ms.locfileid: "61122023"
 ---
 # <a name="run-an-attack-simulation-in-a-microsoft-365-defender-pilot-environment"></a>パイロット環境で攻撃シミュレーションMicrosoft 365 Defender実行する
 
@@ -71,6 +71,8 @@ Microsoft 365 サービスおよびアプリは、疑わしい、または悪意
 3. 分析情報の取得
 
    レポートで分析情報を得る方法の手順については、「攻撃シミュレーション トレーニングを通じてインサイトを得る [」を参照してください](/microsoft-365/security/office-365-security/attack-simulation-training-insights)。
+
+   > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWMhvB]
 
 詳細については [、「Simulations」を参照してください](/microsoft-365/security/office-365-security/attack-simulation-training-get-started#simulations)。
 

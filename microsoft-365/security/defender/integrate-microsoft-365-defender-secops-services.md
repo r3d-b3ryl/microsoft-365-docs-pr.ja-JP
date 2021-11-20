@@ -17,17 +17,18 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
+- m365solution-m365dsecops
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 47e86a19f637278a9e9d82fd0b8fd260a77af6cd
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 7053616ebee7a0c8a63394e2db98704910d1ff10
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60702741"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121449"
 ---
 # <a name="step-3-plan-for-microsoft-365-defender-integration-with-your-soc-catalog-of-services"></a>手順 3. サービスの SOC Microsoft 365 Defenderとの統合を計画する
 
@@ -65,7 +66,7 @@ Microsoft 365 Defenderテクノロジはさまざまな機能にまたがって�
 
  - **Microsoft Defender for Office 365** は、堅牢なゼロデイ保護を提供することで未知のマルウェアやウイルスから組織を保護し、組織を有害なリンクからリアルタイムで保護する機能を備えるクラウドベースの電子メール フィルター サービスです。 また、調査と狩猟、対応と修復、認識とトレーニング、安全な姿勢機能の包括的なスレートも提供します。
 
-- **Microsoft Cloud App Security** は、ログ 収集、API コネクタ、リバース プロキシなど、さまざまな展開モードをサポートするクラウド アクセス セキュリティ ブローカー (CASB) です。 豊富な可視性、データ移動の制御、高度な分析を提供し、Microsoft およびサード パーティのクラウド サービス全体でサイバー脅威を特定し、対処します。
+- **Microsoft Defender for Cloud Apps** は、ログ 収集、API コネクタ、リバース プロキシなど、さまざまな展開モードをサポートするクラウド アクセス セキュリティ ブローカー (CASB) です。 豊富な可視性、データ移動の制御、高度な分析を提供し、Microsoft およびサード パーティのクラウド サービス全体でサイバー脅威を特定し、対処します。
 
 Microsoft 365 Defenderコンポーネントとテクノロジはさまざまな機能にまたがるため、SOC チームは、Microsoft 365 Defender の各コンポーネントを管理し、サービス機能に合わせて調整するために最適な役割と責任を決定する必要があります。
 
@@ -74,9 +75,8 @@ Microsoft 365 Defenderコンポーネントとテクノロジはさまざまな�
 - [Microsoft Defender for Endpoint とは](/defender-endpoint/microsoft-defender-endpoint)
 - [Microsoft Defender for Identity とは?](/defender-for-identity/what-is)
 - [Defender for Office 365 とは](/office-365-security/defender-for-office-365)
-- [Microsoft Cloud App Security とは](/cloud-app-security/what-is-cloud-app-security)
+- [Microsoft Defender for Cloud Apps とは](/cloud-app-security/what-is-cloud-app-security)
 
 ## <a name="next-step"></a>次の手順
 
 [手順 4.役割Microsoft 365 Defender監督の定義](integrate-microsoft-365-defender-secops-roles.md)
-

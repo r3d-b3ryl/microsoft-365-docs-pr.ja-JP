@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6512dd38fbcdd0a257635431406f837f713456a6
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 9e4381063d872a097423fed4a3cb47b05b42bf38
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111569"
+ms.locfileid: "61122359"
 ---
 # <a name="server-migration-scenarios-from-the-previous-mma-based-microsoft-defender-for-endpoint-solution"></a>以前の MMA ベースの Microsoft Defender for Endpoint ソリューションからのサーバー移行シナリオ
 
@@ -100,7 +100,8 @@ Microsoft Endpoint Configuration Managerまたは Microsoft Defender for Cloud �
 6. 更新プログラムを適用します。
 7. Microsoft 以外のウイルス対策コンソールを使用するか、必要に応じて Microsoft 以外のウイルス対策Microsoft Endpoint Configuration Manager削除します。 パッシブ モード構成を削除してください。*
 
-ヒント: 上記の手順を自動化 [するには](server-migration.md#installer script) 、アプリケーションの一部としてインストーラー スクリプトを使用できます。 パッシブ モードを有効にするには、-Passive フラグを適用します。 例: .\install.ps1 -RemoveMMA <YOUR_WORKSPACE_ID> -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd" -Passive
+> [!TIP]
+> インストーラー スクリプトを [アプリケーションの一部](server-migration.md#installer script) として使用して、上記の手順を自動化できます。 パッシブ モードを有効にするには、-Passive フラグを適用します。 たとえば、.\install.ps1 -RemoveMMA <YOUR_WORKSPACE_ID> -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd" -Passive
 
 *これらの手順は、Microsoft 以外のウイルス対策ソリューションを置き換える場合にのみ適用されます。 「Better [together: Microsoft Defender ウイルス対策と Microsoft Defender for Endpoint」を参照してください](why-use-microsoft-defender-antivirus.md)。
 
@@ -108,7 +109,6 @@ Microsoft Endpoint Configuration Managerまたは Microsoft Defender for Cloud �
 
 パス: HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection Name: ForceDefenderPassiveMode Type: REG_DWORD 値: 0
 
-詳細については、「Need [to set Microsoft Defender ウイルス対策パッシブ モード」を参照してください](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server)。
 
 ## <a name="other-migration-scenarios"></a>その他の移行シナリオ
 
@@ -136,7 +136,8 @@ Microsoft Endpoint Configuration Managerまたは Microsoft Defender for Cloud �
 6. グループ ポリシー、PowerShell、またはサードパーティの管理ソリューションを使用してポリシーを作成して適用します。
 
 > [!TIP]
-> インストーラー スクリプトを使用すると [、](server-migration.md#installer-script) 手順 1 ~ 4 の自動化に役立ちます。 パッシブ モードを有効にするには、-Passive フラグを適用して、オンボード前に Defender Antivirus がパッシブ モードに入り、Microsoft 以外のマルウェア対策ソリューションに干渉しないようにします。 その後、EDR ブロックなどの EDR 機能をサポートするためにオンボーディング後に Defender Antivirus がパッシブ モードのままである場合は、必ず "ForceDefenderPassiveMode" レジストリ キーを設定してください。 例: `.\install.ps1 -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd" -Passive` 詳細については、「パッシブ モードに設定[するMicrosoft Defender ウイルス対策必要ですか?」を参照してください](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server)。
+> インストーラー スクリプトを使用すると [、](server-migration.md#installer-script) 手順 1 ~ 4 の自動化に役立ちます。 パッシブ モードを有効にするには、-Passive フラグを適用して、オンボード前に Defender Antivirus がパッシブ モードに入り、Microsoft 以外のマルウェア対策ソリューションに干渉しないようにします。 その後、EDR ブロックなどの EDR 機能をサポートするためにオンボーディング後に Defender Antivirus がパッシブ モードのままである場合は、必ず "ForceDefenderPassiveMode" レジストリ キーを設定してください。 例: `.\install.ps1 -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd" -Passive`
+
 
 *この手順は、Microsoft 以外のウイルス対策ソリューションを置き換える場合にのみ適用されます。 Microsoft Defender for Endpoint にMicrosoft Defender ウイルス対策、完全な一連の機能を提供するために、Microsoft Defender for Endpoint に含まれるアプリを使用することをお勧めします。 「Better [together: Microsoft Defender ウイルス対策と Microsoft Defender for Endpoint」を参照してください](why-use-microsoft-defender-antivirus.md)。
 
@@ -144,7 +145,6 @@ Microsoft Endpoint Configuration Managerまたは Microsoft Defender for Cloud �
 
 パス: HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection Name: ForceDefenderPassiveMode Type: REG_DWORD 値: 0
 
-詳細については、「Need [to set Microsoft Defender ウイルス対策パッシブ モード」を参照してください](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server)。
 
 ## <a name="microsoft-defender-for-cloud-scenarios"></a>Microsoft Defender for Cloud シナリオ
 

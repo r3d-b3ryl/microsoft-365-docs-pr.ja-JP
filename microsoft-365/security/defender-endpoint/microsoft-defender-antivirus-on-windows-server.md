@@ -15,12 +15,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b98145834eebee80a69846474b3395f90eac7fa6
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: d06793cbc0742e3f24ac09d1f9dd64680013eecd
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111272"
+ms.locfileid: "61121664"
 ---
 # <a name="microsoft-defender-antivirus-on-windows-server"></a>Windows Server 上の Microsoft Defender ウイルス対策
 
@@ -99,7 +99,7 @@ Windows Server に Microsoft Defender ウイルス対策をインストールま
 
 PowerShell を使用して Microsoft Defender ウイルス対策をインストールするには、次のコマンドレットを実行します。
 
-```PowerShell
+```powershell
 Install-WindowsFeature -Name Windows-Defender
 ```
 
@@ -109,13 +109,13 @@ Microsoft Defender ウイルス対策に含まれるマルウェア対策エン�
 
 Microsoft Defender ウイルス対策をインストールしたら、次のステップで実行できることを確認します。 Windows Server エンドポイントで、次の PowerShell コマンドレットを実行します。
 
-```PowerShell
+```powershell
 Get-Service -Name windefend
 ```
 
 ファイアウォール保護が有効になっていることを確認するには、次の PowerShell コマンドレットを実行します。
 
-```PowerShell
+```powershell
 Get-Service -Name mpssvc
 ```
 
@@ -219,7 +219,7 @@ Windows Server 上のプライマリ ウイルス対策ソリューションと�
 
 Microsoft Defender ウイルス対策 GUI をオフにするには、次の PowerShell コマンドレットを使用します。
 
-```PowerShell
+```powershell
 Uninstall-WindowsFeature -Name Windows-Defender-GUI
 ```
 
