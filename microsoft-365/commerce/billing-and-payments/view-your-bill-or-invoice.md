@@ -22,14 +22,15 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 - AdminTemplateSet
+- adminvideo
 description: 請求書または請求明細書は、Microsoft 365 管理センターで確認できます。 また、課金内容を保存したり印刷したりすることもできます。
 ms.date: 07/31/2020
-ms.openlocfilehash: d0b0f75615b7d1110d1a0366b96f32807a033fd7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0124f9c2f1375da162975f808138f24a8dead4fd
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189671"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128198"
 ---
 # <a name="view-your-bill-or-invoice"></a>課金内容または請求書を表示する
 
@@ -43,6 +44,14 @@ ms.locfileid: "60189671"
 
 この記事で説明されている手順を実行するには、全体管理者または課金管理者である必要があります。
   
+## <a name="watch-view-download-or-print-your-bill"></a>ウォッチ: 請求書の表示、ダウンロード、印刷
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FGmo?autoplay=false]
+
+1. Microsoft 365 管理センターで、左側のナビゲーション ウィンドウの [**請求**] を選択して、<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">[**請求書**] タブ</a>を選択します。
+1. 請求書を選択して表示します。 請求書が表示されない場合は、ドロップダウン リストの **フィルター:過去 6 か月間** を選択します。
+1. 請求書の詳細を表示するには、請求書の右上隅にある [**PDF のダウンロード**] を選択します。
+
 ## <a name="view-a-bill-or-invoice"></a>課金内容または請求書を表示する
 
 ::: moniker range="o365-worldwide"

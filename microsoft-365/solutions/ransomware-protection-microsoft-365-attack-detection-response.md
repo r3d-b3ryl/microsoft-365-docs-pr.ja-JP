@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: ランサムウェア、人間が操作するランサムウェア、人手によるランサムウェア、HumOR、強要攻撃、ランサムウェア攻撃、暗号化、暗号ウイルス学、ゼロ トラスト
 description: Microsoft 365 Defender とそのセキュリティ信号ソースを使用して、ランサムウェアの攻撃から Microsoft 365 リソースを保護します。
-ms.openlocfilehash: 16e9f2add4b064a3091a836efe23f7fcd2299f22
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 5336cdf3bca17cfdffa6c56ff3a29dbfacc1a539
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60666700"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111689"
 ---
 # <a name="step-2-deploy-attack-detection-and-response"></a>手順 2. 攻撃検出および対応を展開する
 
@@ -37,7 +37,7 @@ Microsoft 365 テナントでのランサムウェア攻撃の検出と対応の
 | [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security) | メール メッセージ、リンク (URL)、共同作業ツールによってもたらされる悪意のある脅威から組織を保護します。 <br><br> マルウェア、フィッシング、スプーフィング、その他の攻撃の種類に対する保護  | [概要](/microsoft-365/security/office-365-security/overview) | [脅威の捜索](/microsoft-365/security/office-365-security/threat-hunting-in-threat-explorer) |
 | [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint) | エンドポイント (デバイス) 全体での高度な脅威の検出および対応を有効にする | [概要](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)  | [エンドポイントでの検出と対応](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) |
 | [Azure Active Directory (Azure AD) Identity Protection](/azure/active-directory/identity-protection/) | ID ベースのリスクの検出と修復、およびそれらのリスクの調査を自動化する | [概要](/azure/active-directory/identity-protection/overview-identity-protection) | [調査リスク](/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk) |
-| [Microsoft Cloud App Security](/cloud-app-security) | Microsoft とサードパーティのすべてのクラウド サービスを対象に、検出、調査、ガバナンスを行うクラウド アクセス セキュリティ ブローカー。 | [概要](/cloud-app-security/what-is-cloud-app-security) | [調査](/cloud-app-security/investigate) |
+| [Microsoft Defender for Cloud Apps](/cloud-app-security) | Microsoft とサードパーティのすべてのクラウド サービスを対象に、検出、調査、ガバナンスを行うクラウド アクセス セキュリティ ブローカー。 | [概要](/cloud-app-security/what-is-cloud-app-security) | [調査](/cloud-app-security/investigate) |
 
 >[!Note]
 >これらすべてのツールに、Microsoft 365 E5 Security アドオンを備えた Microsoft 365 E5 または Microsoft 365 E3 が必要です。
@@ -59,23 +59,23 @@ Microsoft 365 テナントでのランサムウェア攻撃の検出と対応の
 - 特権のエスカレーション
 
    - Azure AD Identity Protection
-   - Microsoft Cloud App Security
+   - Microsoft Defender for Cloud Apps
 
 - 悪意のあるアプリの振る舞い
 
-   - Microsoft Cloud App Security
+   - Microsoft Defender for Cloud Apps
 
 - データ放出、削除、またはアップロード
 
    - Microsoft Defender for Office 365
-   - [異常検出ポリシー](/cloud-app-security/anomaly-detection-policy#ransomware-activity)を備えた Microsoft Cloud App Security
+   - Microsoft Defender for Cloud Apps の [異常検出ポリシー](/cloud-app-security/anomaly-detection-policy#ransomware-activity)
 
 以下のツールでは Microsoft 365 Defender とそのポータル (共通の脅威コレクションおよび分析ポイントとしての https://security.microsoft.com)) を使用します。
 
 - Microsoft Defender for Identity
 - Microsoft Defender for Office 365
 - Microsoft Defender for Endpoint
-- Microsoft Cloud App Security
+- Microsoft Defender for Cloud Apps
 
 Microsoft 365 Defender は、脅威のシグナルをアラートにまとめ、接続されたアラートをインシデントにまとめることで、セキュリティ アナリストがランサムウェア攻撃のフェーズをより迅速に検出し、調査して修復できるようにします。
 

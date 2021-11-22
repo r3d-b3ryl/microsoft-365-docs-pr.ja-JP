@@ -15,12 +15,12 @@ ms.date: 10/18/2021
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 53ef056a61da1dca83c1c6bdf611e37a50dc9008
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 1fcd154c3cd769cc7c721cf49f2d16b90a213e25
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60552838"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110837"
 ---
 # <a name="turn-on-block-at-first-sight"></a>事前ブロックを有効にする
 
@@ -105,7 +105,7 @@ Microsoft Defender ウイルス対策は、複数の検出および防止テク�
 
    - **クラウドによる保護を有効にする**: はい
    - **クラウドによる保護レベル**: 高
-   - **Defender クラウドの延長タイムアウト (秒単位)**: 50
+   - **Microsoft Defender ウイルス対策 拡張タイムアウト 秒単位**: 50
 
    :::image type="content" source="images/endpointmgr-antivirus-cloudprotection.png" alt-text="EndpointManagerでの事前ブロックの設定。":::
 
@@ -173,7 +173,7 @@ Windows セキュリティ アプリを使用して、個々のクライアン�
 
    - **[クラウドで配信される保護を有効にする]** を **[いいえ]** または **[未構成]** に設定します。
    - **[クラウド配信の保護レベル]** を **[未構成]** に設定します。
-   - **Defender クラウドの延長タイムアウト (秒単位)** のチェック ボックスをオフにします。
+   - **Microsoft Defender ウイルス対策 拡張タイムアウト（秒単位）** のチェック ボックスをオフにします。
 
 6. 設定を確認して保存します。
 

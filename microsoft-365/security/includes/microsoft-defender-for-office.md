@@ -5,12 +5,12 @@ author: dansimp
 ms.prod: m365-security
 ms.topic: include
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 97e90cb53416554a489d0cbe7cd60083026d76a4
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 61f523ab72091644c5feeb52c946d3328d666cac
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60970981"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61112082"
 ---
 > [!IMPORTANT]
-> 改善された <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>が利用できるようになりました。 この新しいエクスペリエンスにより、Defender for Endpoint、Defender for Office 365、Microsoft 365 Defender などが Microsoft 365 セキュリティ センターに導入されます。 [新機能について説明します](/microsoft-365/security/defender/overview-security-center)。
+> 改善された <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>が利用できるようになりました。 この新しいエクスペリエンスにより、Defender for Endpoint、Defender for Office 365、Microsoft 365 Defender などが Microsoft 365 Defender ポータルに導入されます。 [新機能について説明します](/microsoft-365/security/defender/overview-security-center)。

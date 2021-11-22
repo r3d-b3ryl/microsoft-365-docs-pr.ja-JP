@@ -18,24 +18,34 @@ ms.custom:
 - okr_smb
 - AdminTemplateSet
 - admindeeplinkMAC
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: サービス管理者などの管理者ロールはビジネス機能にマップされ、管理センターで特定のタスクを実行するための権限を付与します。
-ms.openlocfilehash: 644e03fcfd5cfdc2997793097b26a3ca6a494d50
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ff4c4053760ad8f4810ea1c92a0d7ba4ecbaa61d
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60158828"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128126"
 ---
 # <a name="about-admin-roles"></a>管理者ロールについて
 
 Microsoft 365 または Office 365 のサブスクリプションには、<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>を使用して組織内のユーザーに割り当てることができる一連の管理者役割があります。各管理者ロールは一般的なビジネス機能に対応し、組織のユーザーに、管理センターで特定のタスクを実行するためのアクセス許可を付与します。
 
 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>では、Azure AD の役割およびMicrosoft Intune の役割を管理できます。 ただし、これらの役割は、Azure ポータルおよびIntune 管理センターで使用可能な役割のサブセットです。
+
+## <a name="watch-what-is-an-admin"></a>ビデオ: 管理者とは
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SRc0]
+
+1. Microsoft 365 にサインインして、アプリ起動ツールを選択します。 [管理者] ボタンが表示されている場合は、あなたが管理者です。
+1. [**管理者**] を選択して、Microsoft 365 管理センターに移動します。
+1. 左側のナビゲーション ウィンドウで、[**ユーザー**] > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[**アクティブなユーザー**]</a> を選択します。
+1. 管理者にしたいユーザーを選択します。ユーザーの詳細が右側のダイアログ ボックスに表示されます。
 
 ## <a name="before-you-begin"></a>はじめに
 
@@ -44,10 +54,6 @@ Microsoft 365 または Office 365 のサブスクリプションには、<a hre
 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>で管理できる Intune 役割の詳細な説明の完全なリストをお探しですか?  「[Microsoft Intune の役割ベースのアクセス制御 (RBAC)](/mem/intune/fundamentals/role-based-access-control)」を確認してください。
 
 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>での役割を割り当てる方法の詳細については、「[管理者役割を割り当てる](assign-admin-roles.md)」を参照してください。
-
-## <a name="watch-what-is-an-admin"></a>ビデオ: 管理者とは
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SRc0]
 
 ## <a name="security-guidelines-for-assigning-roles"></a>役割を割り当てるためのセキュリティ ガイドライン
 

@@ -19,15 +19,16 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 - AdminTemplateSet
+- adminvideo
 search.appverid: MET150
 description: Microsoft 365 管理センターでは、既存の支払方法を使用したり、新しい支払方法を追加したりして、Microsoft からビジネス製品やサービスを購入できます。
 ms.date: 04/02/2021
-ms.openlocfilehash: 1008beb9caf42b68e741406bef3be9efbe2fa2de
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6e155b483082ceee938bf5861e84beeb0a245d55
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190966"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128630"
 ---
 # <a name="manage-payment-methods"></a>支払方法を管理する
 
@@ -44,6 +45,12 @@ Microsoft からビジネス製品またはサービスを購入する場合、�
 > 一部の国または地域では、銀行口座引き落としによる支払いを利用できません。
 >
 > テナントと同じ国から発行された支払方法を使用する必要があります。
+
+## <a name="watch-update-your-payment-method"></a>ウォッチ: 支払い方法を更新する
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AVxy?autoplay=false]
+
+Microsoft 365 Business サブスクリプションのお支払い方法を簡単に更新できます。 使用するクレジットカード、名前、住所などの詳細を変更できます。
 
 ## <a name="before-you-begin"></a>開始する前に
 

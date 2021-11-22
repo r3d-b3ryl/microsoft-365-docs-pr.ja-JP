@@ -29,6 +29,24 @@
           href: empower-people-to-work-remotely-teams-productivity-apps.md
         - name: 手順 6. 従業員をトレーニングする
           href: empower-people-to-work-remotely-train-monitor-usage.md
+    - name: Intune と Microsoft 365 でエンドポイントを管理する
+      items:
+        - name: 概要
+          href: manage-devices-with-intune-overview.md
+        - name: 手順 1. レベル 2 のアプリ保護ポリシーを実装する
+          href: manage-devices-with-intune-app-protection.md
+        - name: 手順 2。 デバイスを管理に登録する
+          href: manage-devices-with-intune-enroll.md
+        - name: 手順 3. コンプライアンス ポリシーを設定する
+          href: manage-devices-with-intune-compliance-policies.md
+        - name: 手順 4. 正常で準拠したデバイスを要求する
+          href: manage-devices-with-intune-require-compliance.md
+        - name: 手順 5.  デバイス プロファイルを展開する
+          href: manage-devices-with-intune-configuration-profiles.md
+        - name: 手順 6. デバイスのリスクとセキュリティ ベースラインへのコンプライアンスを監視する
+          href: manage-devices-with-intune-monitor-risk.md
+        - name: 手順 7. 情報保護機能を備えたデータ損失防止 (DLP) を実装する
+          href: manage-devices-with-intune-dlp-mip.md
     - name: Microsoft 365 とセキュリティで保護された共同作業を設定する
       items:
         - name: 概要

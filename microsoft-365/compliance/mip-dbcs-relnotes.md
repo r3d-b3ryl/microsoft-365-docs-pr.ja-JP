@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 2 バイト文字セットをサポートするためのリリース ノートです。
-ms.openlocfilehash: 3731e32594461df29a9cc5ec3f21bf3eb17ee79c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e87e88b63bf44c7ea4154fa24c05c0e8e252a446
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190679"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111497"
 ---
 # <a name="support-for-double-byte-character-set-release-notes"></a>2 バイト文字セットのリリース ノート向けサポート
 
@@ -30,7 +30,7 @@ ms.locfileid: "60190679"
 - 韓国語
 - 日本語
 
-このサポートは、機密情報の種類とキーワード ディクショナリで使用でき、データ損失防止 (Exchange Online、SharePoint Online、OneDrive for Business、および Teams)、 コミュニケーション コンプライアンス、Office アプリの自動ラベル付け、および Microsoft Cloud App Security に反映されます。
+このサポートは、機密情報の種類とキーワード ディクショナリで使用でき、データ損失防止 (Exchange Online、SharePoint Online、OneDrive for Business、および Teams 用)、 コミュニケーション コンプライアンス、Office アプリの自動ラベル付け、および Microsoft Defender for Cloud Apps に反映されます。
 
 ## <a name="known-issues"></a>既知の問題
 
@@ -47,5 +47,3 @@ ms.locfileid: "60190679"
   - 「添付ファイルに次のいずれかの単語が含まれている」
 
 代わりに、ユーザー設定の機密情報の種類 (SIT) を作成することをお勧めします。これは、メッセージと添付ファイル全体のパターンを検出し、通信コンプライアンス ポリシーの条件として使用します。
-
-

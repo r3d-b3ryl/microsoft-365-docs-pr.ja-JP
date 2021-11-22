@@ -609,7 +609,7 @@
           href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
     - name: 非アクティブなメールボックスを管理する
       items:
-        - name: 非アクティブなメールボックスの概要
+        - name: 非アクティブなメールボックスの詳細情報
           href: inactive-mailboxes-in-office-365.md
         - name: 非アクティブなメールボックスを作成および管理する
           href: create-and-manage-inactive-mailboxes.md

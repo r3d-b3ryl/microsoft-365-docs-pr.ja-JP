@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: データ分類ダッシュボードを使用すると、組織内で検出、分類された機密データの量を確認できます。
-ms.openlocfilehash: f6446fb61d0c38855a040da75a57ae85faafbb9f
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: e3f621b3ab6ec6d095e5ba8687cf06734cfa0170
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962857"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110009"
 ---
 # <a name="learn-about-data-classification"></a>データ分類について
 
@@ -44,7 +44,7 @@ Microsoft 365 の管理者またはコンプライアンス管理者は、組織
 - [コンテンツ エクスプローラー](data-classification-content-explorer.md)
 - [アクティビティ エクスプローラー](data-classification-activity-explorer.md)
 
-データ分類は、<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>または <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 セキュリティ センター</a>  >  [**分類**]  >  [**データ分類**] で確認することができます。
+データ分類は、<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a> または <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>  >  [**分類**]  >  [**データ分類**] で確認することができます。
 
 データ分類機能についてのビデオ ツアーを開始します。
 

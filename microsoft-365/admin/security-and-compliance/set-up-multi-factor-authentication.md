@@ -17,6 +17,7 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
@@ -26,19 +27,28 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 組織向けに多要素認証を設定する方法について説明します。
 monikerRange: o365-worldwide
-ms.openlocfilehash: 824eefed4dbda14edab7608324a317b0f504b7ef
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: ba8e0794c1918095d029e862cbd8c860066ed51e
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554158"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128246"
 ---
 # <a name="set-up-multifactor-authentication"></a>多要素認証を設定する
 
-[多要素認証 (MFA) および Microsoft 365 のサポート](multi-factor-authentication-microsoft-365.md)を理解して、多要素認証を組織に設定し、展開します。
+多要素認証とは、Microsoft 365 にサインインするために、あなたとあなたの従業員が複数の方法を提供する必要があることを意味します。これは、ビジネスを保護する最も簡単な方法の 1 つです。 [多要素認証 (MFA) および Microsoft 365 のサポート](multi-factor-authentication-microsoft-365.md)を理解して、多要素認証を組織に設定し、展開します。 
 
 > [!IMPORTANT]
 > 2019 年 10 月 21 日以降にサブスクリプションまたは試用版を購入した場合、サインインすると MFA を要求するメッセージが表示され、[セキュリティの既定](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)の設定は、サブスクリプションに対して自動的に有効になります。
+
+## <a name="watch-turn-on-multifactor-authentication"></a>ウォッチ: 多要素認証を有効にする
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MuO3?autoplay=false]
+
+1. <a href="https://admin.microsoft.com/ " target="_blank">https://admin.microsoft.com</a> の Microsoft 365 管理センターに移動します。
+1. **[すべて表示]** を選択してから、**Azure Active Directory 管理センター** を選択します。
+1. **[Azure Active Directory]**、**[プロパティ]**、**[セキュリティの既定値の管理]** の順に選択します。
+1. **[セキュリティの既定値群の有効化]** で **[はい]**、**[保存]** の順に選択します。
 
 ## <a name="before-you-begin"></a>はじめに
 

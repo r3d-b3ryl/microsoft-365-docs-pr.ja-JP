@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Microsoft 365 の顧客データの保存場所を世界全体で確認する
-ms.openlocfilehash: adab62809b8533c255ce390cd40818b8373b3a6b
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 2779290e2f338be9128e0fad8ab8a1b4aa8c51bd
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60552622"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128858"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Microsoft 365 顧客データの保存場所
 
@@ -139,6 +139,7 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | 韓国 | 釜山、ソウルl |
 | ノルウェー | オスロ、スタヴァンゲル |
 | 南アフリカ | ケープタウン、ヨハネスブルグ |
+| スウェーデン | Gävle、Sandviken、Staffanstorp |
 | スイス | ジュネーブ、ズリック |
 | アラブ首長国連邦 | ドバイ、アブダビ |
 | 英国 | ダーラム、ロンドン、カーディフ |
@@ -5239,19 +5240,19 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 
 | サービス | 場所 |
 | --- | --- |
-| Exchange Online | 欧州連合 |
-| OneDrive for Business | 欧州連合 |
-| SharePoint Online | 欧州連合 |
+| Exchange Online | スウェーデン |
+| OneDrive for Business | スウェーデン |
+| SharePoint Online | スウェーデン |
 | Skype for Business | 欧州連合 |
-| Microsoft Teams | 欧州連合 |
-| Office Online &amp; Mobile | 欧州連合 |
-| EOP | 欧州連合 |
+| Microsoft Teams | スウェーデン |
+| Office Online &amp; Mobile | スウェーデン |
+| EOP | スウェーデン |
 | Intune | 欧州連合 |
-| MyAnalytics | 欧州連合 |
+| MyAnalytics | スウェーデン |
 | Planner | 欧州連合 |
 | Sway | 米国 |
 | Yammer | 欧州連合  |
-| OneNote サービス | 欧州連合 |
+| OneNote サービス | スウェーデン |
 | Stream | 欧州連合 |
 | Whiteboard | 欧州連合 |
 | Forms | 欧州連合 |

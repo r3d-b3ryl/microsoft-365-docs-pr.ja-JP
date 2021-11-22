@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 860f43fe8bf82a9aed7983085b2b5d774229e2d0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ad4da096240b1c2d547eca1b2415dca0dbc056c9
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159428"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110465"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint
 
@@ -137,10 +137,10 @@ Microsoft Defender for Endpoint を既存のワークフローに統合します
 
 EndPoint 向け Microsoft Defender は、次のようなさまざまな Microsoft ソリューションと直接統合します。
 
-- Azure Defender
-- Azure Sentinel
+- Microsoft Defender for Cloud
+- Microsoft Sentinel
 - Intune
-- Microsoft Cloud App Security
+- Microsoft Defender for Cloud Apps
 - Microsoft Defender for Identity
 - Microsoft Defender for Office
 - Skype for Business
@@ -160,4 +160,3 @@ Microsoft Learn のこの学習パスを使用すると、Defender for Endpoint 
 
 > [!div class="nextstepaction"]
 > [スタート>](/learn/paths/defender-endpoint-fundamentals/)
-

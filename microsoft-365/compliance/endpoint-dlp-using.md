@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 365 エンドポイント データ損失防止 (EPDLP) の場所を使用するようにデータ損失防止 (DLP) ポリシーを構成する方法を説明します。
-ms.openlocfilehash: b1365a699f7d69c1ff01e902fa2e97da0aee66fe
-ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
+ms.openlocfilehash: fef221ce23ac04d156084ebad7b837840004f066
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61073103"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111857"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>エンドポイント データ損失防止の使用
 
@@ -355,7 +355,7 @@ DLP ポリシー ヒントの通知で、ユーザーによる業務上の正当
 
 2. **[許可されていないアプリ]** を展開します。
 
-3. **[許可されていないアプリの追加または編集]** を選択し、表示名に *[OneDrive]*、実行名に *[onedrive.exe]* を追加して、onedrive.exe が「**非常に機密性の高い社外秘**」ラベルのアイテムにアクセスできないようにします。
+3. **[許可されていないアプリの追加または編集]** を選択し、表示名に *[OneDrive]*、実行名に *[onedrive.exe]*  を追加して、onedrive.exe による「**非常に機密性の高い社外秘**」ラベルのアイテムへのアクセスを禁止します。
 
 4. **[自動検疫]** を選んでから **[保存]** を選びます。
 

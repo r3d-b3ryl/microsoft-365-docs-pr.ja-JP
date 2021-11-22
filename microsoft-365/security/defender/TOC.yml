@@ -18,7 +18,7 @@
               href: microsoft-365-security-mde-redirection.md
             - name: Office 365 セキュリティ/コンプライアンス センターを Microsoft 365 Defender にリダイレクトする
               href: microsoft-365-security-mdo-redirection.md
-        - name: Microsoft 365 Defender と Azure Sentinel との統合
+        - name: Microsoft 365 Defender と Microsoft Sentinel の統合
           href: microsoft-365-defender-integration-with-azure-sentinel.md
         - name: 業界のテスト
           href: ./top-scoring-industry-tests.md
@@ -66,7 +66,7 @@
               href: eval-defender-endpoint-enable-eval.md
             - name: Pilot Defender for Endpoint
               href: eval-defender-endpoint-pilot.md
-        - name: Microsoft Cloud App Security
+        - name: Microsoft Defender for Cloud Apps
           items:
             - name: 概要
               href: eval-defender-mcas-overview.md
@@ -74,7 +74,7 @@
               href: eval-defender-mcas-architecture.md
             - name: 評価を有効にする
               href: eval-defender-mcas-enable-eval.md
-            - name: Pilot Microsoft Cloud App Security
+            - name: Microsoft Defender for Cloud Apps のパイロット
               href: eval-defender-mcas-pilot.md
         - name: 調査と対応
           items:

@@ -619,7 +619,7 @@
           href: assign-per-user-skype-for-business-online-policies-with-microsoft-365-powershell.md
     - name: 一元展開 PowerShell を使用してアドインを管理する
       href: use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md
-- name: Windows 10 と Office 365 展開ラボ キット
+- name: Windows と Office 365 展開ラボ キット
   href: modern-desktop-deployment-and-management-lab.md
 - name: テスト ラボ ガイド
   href: m365-enterprise-test-lab-guides.md

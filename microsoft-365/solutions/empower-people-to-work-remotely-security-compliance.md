@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Microsoft 365 のセキュリティ センターとコンプライアンスのサービスを使用して、ハイブリッド ワーカー向けにご使用のアプリケーション、データ、およびデバイスを保護します。
-ms.openlocfilehash: 063b8dd4db66c93a4ed4433cae66e8112c182bed
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: cfa2c8fa8725e96326faac4cbe4b83cd1b039641
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190163"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110285"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-hybrid-workers"></a>手順 3: ハイブリッド ワーカーのためのセキュリティとコンプライアンスの展開
 
@@ -52,7 +52,7 @@ Microsoft 365 のこれらのセキュリティ機能を使用して、アプリ
 |Microsoft Defender for Office 365|メール メッセージ、Office ドキュメント、共同作業のツールなど、Microsoft 365 のアプリやデータを攻撃から保護します。 <p> Microsoft Defender for Office 365 は、セキュリティ リスクの検出、調査、修復のためにアプリからのシグナルを収集して分析し、電子メール メッセージ、リンク (URL)、コラボレーション ツールによってもたらされる悪意のある脅威から組織を保護します。また、標準および厳格なセキュリティ体制のための自動化されたテナント構成評価と構成ツールも提供します。|Microsoft 365 E3 または E5|
 |マルウェア対策|Microsoft Defender ウイルス対策と Device Guard は、デバイス ベースのマルウェア対策を提供します。 <p> SharePoint Online では、既知のマルウェアについてファイル アップロードを自動的にスキャンします。 <p> Exchange Online Protection (EOP) は、クラウド メールボックスをセキュリティで保護します。|Microsoft 365 E3 または E5|
 |Microsoft Defender for Endpoint|サイバー攻撃の脅威やデータ侵害から組織のデバイスを保護し、高度な脅威を検出し、調査し、それらに対応します。|Microsoft 365 E5|
-|Cloud App Security|Microsoft 365 やその他の SaaS アプリなどのクラウドベースのサービスを攻撃から保護します。|Microsoft 365 E5 または個別のクラウド アプリのセキュリティ ライセンス|
+|Defender for Cloud Apps|Microsoft 365 やその他の SaaS アプリなどのクラウドベースのサービスを攻撃から保護します。|Microsoft 365 E5 または個々の Defender for Cloud Apps ライセンス|
 |Azure AD Identity Protection|ID ベースのリスクを自動的に検出して修正します。 <p>リスクベースの条件付きアクセス ポリシーを作成し、危険なサインインに対して多要素認証 (MFA) を要求します。|Azure AD Premium P2 ライセンスを含む Microsoft 365 E5 または E3|
 ||||
 
