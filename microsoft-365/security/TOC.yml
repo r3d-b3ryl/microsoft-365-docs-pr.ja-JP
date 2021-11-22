@@ -8,7 +8,9 @@
           href: top-security-tasks-for-remote-work.md
         - name: BDM のための Microsoft 365 セキュリティ
           href: Microsoft-365-security-for-bdm.md
-    - name: ID とデバイスのアクセス構成
+        - name: 優先するアカウントのセキュリティに関する推奨事項
+          href: ./office-365-security/security-recommendations-for-priority-accounts.md
+    - name: ゼロ トラスト ID とデバイスのアクセス構成
       items:
         - name: 概要
           href: ./office-365-security/microsoft-365-policies-configurations.md
@@ -20,11 +22,11 @@
           href: ./office-365-security/identity-access-policies-guest-access.md
         - name: 推奨されるチーム アクセス ポリシー
           href: ./office-365-security/teams-access-policies.md
-        - name: 推奨される Exchange Online のアクセス ポリシー
+        - name: 推奨される Exchange のアクセス ポリシー
           href: ./office-365-security/secure-email-recommended-policies.md
-        - name: 推奨される SharePoint Online のアクセス ポリシー
+        - name: 推奨される SharePoint のアクセス ポリシー
           href: ./office-365-security/sharepoint-file-access-policies.md
-        - name: 推奨される SaaS アプリ用 Microsoft Defender for Cloud Apps ポリシー
+        - name: 推奨される SaaS アプリ用 Defender for Cloud Apps ポリシー
           href: ./office-365-security/mcas-saas-access-policies.md
         - name: 継続的アクセス評価
           href: ./office-365-security/microsoft-365-continuous-access-evaluation.md
