@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 保管担当者を Advanced eDiscovery ケースに追加すると、部分的にインデックスが作成されたと見なされたコンテンツが再処理され、完全に検索可能になります。
-ms.openlocfilehash: 205594031bcfb65b882d10217ccdcd10e4ed014d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9209732925c87277755c89381791154bf9dbe953
+ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201051"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61148904"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>カストディアン データの詳細なインデックス処理
 
@@ -49,7 +49,7 @@ ms.locfileid: "60201051"
 
 ## <a name="updating-the-advanced-index-for-custodians"></a>保管担当者の高度なインデックスの更新
 
-保管担当者がケースに追加Advanced eDiscovery、部分的にインデックスが作成されたアイテムはすべて再処理されます。 ただし、時間が経過すると、部分的にインデックスが作成されたアイテムがユーザーのメールボックスまたはアカウントに追加OneDriveがあります。  必要に応じて、特定の保管担当者のインデックスを更新できます。 詳細については、「Manage [custodians in an Advanced eDiscovery ケース」を参照してください](manage-new-custodians.md#re-index-custodian-data)。 [処理] タブの [更新] インデックスをクリックすると、ケース内のすべての保管担当者の **インデックス** を **更新** することもできます。
+保管担当者がケースに追加Advanced eDiscovery、部分的にインデックスが作成されたアイテムはすべて再処理されます。 ただし、時間が経過すると、部分的にインデックスが作成されたアイテムがユーザーのメールボックスまたはアカウントに追加OneDriveがあります。  必要に応じて、特定の保管担当者のインデックスを更新できます。 詳細については、「Manage [custodians in an Advanced eDiscovery ケース」を参照してください](manage-new-custodians.md#reindex-custodian-data)。 [処理] タブの [更新] インデックスをクリックすると、ケース内のすべての保管担当者の **インデックス** を **更新** することもできます。
 
 > [!NOTE]
 > 保管担当者インデックスの更新は、長時間実行されるプロセスです。 1 つのケースで 1 日に 2 回以上インデックスを更新しない方が推奨されます。

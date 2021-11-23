@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ba63747b93bab97a987f2ab8b400bea9583d332d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 10c6522a2c6ca612636a91e8a730c903912e49c7
+ms.sourcegitcommit: a15ea6bc8f60895e791a08a5a88d346c6581ea38
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157748"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61144922"
 ---
 # <a name="overview-of-microsoft-defender-security-center"></a>Microsoft Defender セキュリティ センターの概要
 
@@ -37,8 +37,6 @@ ms.locfileid: "60157748"
 
 Microsoft Defender セキュリティ センターは、Microsoft Defender for Endpoint の機能にアクセスできるポータルです。
 
-セキュリティ操作 **ダッシュボードを使用** して、ネットワーク内のデバイスとユーザーに関するさまざまなアラートを把握します。
-
 [脅威 **の検出&管理** ] ダッシュボードを使用して、組織の全体的なセキュリティ体制の可視性を拡大します。 組織の攻撃表面を減らすのに役立つ注意と推奨事項が必要なデバイスが表示されます。
 
 脅威分析 **ダッシュボードを使用して** 、Spectre と Meltdown へのリスクエクスポージャーを継続的に評価および制御します。
@@ -53,6 +51,5 @@ Microsoft Defender セキュリティ センターは、Microsoft Defender for E
 トピック | 説明
 :---|:---
 [ポータルの概要](portal-overview.md) | ポータルのレイアウトとエリアの説明について理解します。
-[セキュリティ操作ダッシュボードの表示](security-operations-dashboard.md) | Microsoft Defender for Endpoint  **Security 操作ダッシュボードは** 、ネットワークのスナップショットを提供します。 アラートの集計、ネットワーク上のデバイスのサービスの全体的な状態を表示し、デバイス、ファイル、URL を調査し、デバイスで見られる脅威のスナップショットを確認できます。
 [[脅威の管理] &のダッシュボードを表示する](tvm-dashboard-insights.md) | 脅威 **&** 脆弱性管理ダッシュボードを使用すると、セキュリティに関する推奨事項、ソフトウェアの脆弱性、修復アクティビティ、公開されたデバイスを使用して、露出と Microsoft Secure Score for Devices を並べて表示できます。
 [脅威分析ダッシュボードを表示し、推奨される軽減アクションを実行する](threat-analytics.md) | 脅威 **分析ダッシュボードは** 、脅威に対するリスクエクスポージャーを継続的に評価および制御するのに役立ちます。 グラフを使用して、軽減策の有無に関するデバイスをすばやく特定します。

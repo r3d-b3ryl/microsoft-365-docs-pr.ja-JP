@@ -16,12 +16,12 @@ ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 8e3237eefdf9f8a9a5419e9d01e32d73eb949360
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: d206b41e6aa4ff2bcac74aa0eb229b50f1fae2ee
+ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110933"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61148661"
 ---
 # <a name="manage-event-based-forced-updates"></a>イベントベースの強制更新プログラムを管理する
 
@@ -70,7 +70,7 @@ Microsoft Defender ウイルス対策を使用すると、起動時やクラウ�
 Set-MpPreference -CheckForSignaturesBeforeRunningScan
 ```
 
-詳細については[、「Use PowerShell コマンドレットを](use-powershell-cmdlets-microsoft-defender-antivirus.md)使用して、クラウドコマンドレットと Defender for Cloud コマンドレットを構成Microsoft Defender ウイルス対策実行する」[を参照してください](/powershell/module/defender/index)。
+詳細については[、「Use PowerShell コマンドレットを使用](use-powershell-cmdlets-microsoft-defender-antivirus.md)して、ウイルス対策コマンドレットと Defender ウイルス対策コマンドレットを構成Microsoft Defender ウイルス対策[実行する」を参照してください](/powershell/module/defender/index)。
 
 ### <a name="use-windows-management-instruction-wmi-to-check-for-protection-updates-before-running-a-scan"></a>スキャンWindows前に保護更新プログラムを確認するには、WMI (管理命令) を使用します。
 
@@ -122,7 +122,7 @@ CheckForSignaturesBeforeRunningScan
 Set-MpPreference -SignatureDisableUpdateOnStartupWithoutEngine
 ```
 
-詳細については[、「PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md)コマンドレットを使用して、Microsoft Defender ウイルス対策 と Defender [for](/powershell/module/defender/index) Microsoft Defender ウイルス対策 Cloud コマンドレットを管理する」を参照してください。
+詳細については[、「PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md)コマンドレットを使用して Microsoft Defender ウイルス対策 および Defender Microsoft Defender ウイルス対策[ウイルス](/powershell/module/defender/index)対策コマンドレットを管理する」を参照してください。
 
 ### <a name="use-windows-management-instruction-wmi-to-download-updates-when-microsoft-defender-antivirus-is-not-present"></a>[Windows管理命令 (WMI) を使用して、インストールされていないMicrosoft Defender ウイルス対策更新プログラムをダウンロードする
 

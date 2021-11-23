@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 組み込みのカストディアン管理ツールを使用して、Advanced eDiscoveryを調整し、関連するデータ ソースを特定する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d195690493e320407f7c9b1ca0d45da7c78955a7
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: b0a15610c84c9e1142cd1afa6ebf121f387ce807
+ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753552"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61148846"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-case"></a>管理者をケースに追加Advanced eDiscoveryする
 
@@ -38,8 +38,6 @@ Advanced eDiscovery の組み込みのカストディアン管理ツールを使
 
 4. 保管担当者を確認し、プロセスを完了します。
 
-   [![[ソース] タブ (Advanced eDiscovery) ](../media/AeD-Sources-Tab.png) ](../media/AeD-Sources-Tab.png#lightbox)
-
 ## <a name="make-sure-you-have-the-necessary-permissions"></a>必要なアクセス許可を持っている必要があります。
 
 ケースに保管担当者を追加するには、電子情報開示マネージャーの役割グループのメンバーである必要があります。 これにより、カストディアンをケースに追加し、保管データ ソースを保持するために必要なアクセス許可が提供されます。 詳細については、「[電子情報開示のアクセス許可を割り当てる](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions)」を参照してください。電子情報開示のアクセス許可を割り当てる」を参照してください。
@@ -48,7 +46,7 @@ Advanced eDiscovery の組み込みのカストディアン管理ツールを使
 
 1. 適切な [https://compliance.microsoft.com](https://compliance.microsoft.com) 電子情報開示アクセス許可が割り当てられているユーザー アカウントに移動してサインインします。
 
-2. 左側のナビゲーション ウィンドウで、[すべての電子情報開示Microsoft 365 コンプライアンス センターを表示する] をAdvanced eDiscovery、[ケース] タブ  >    >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2173764" target="_blank">**を選択** します</a>。
+2. 左側のナビゲーション ウィンドウで、[電子情報開示Microsoft 365 コンプライアンス センター] を選択Advanced eDiscovery[ケース  >  ][**タブを選択**](https://go.microsoft.com/fwlink/p/?linkid=2173764)します。
 
 3. 保管担当者を追加するケースを選択します。
 
@@ -83,7 +81,7 @@ Advanced eDiscovery の組み込みのカストディアン管理ツールを使
    - **Yammer**: 保管担当者が現在メンバー Yammerグループを割り当てる場合に使用します。 保管担当者に割り当てるグループを選択し、[追加] を **クリックします**。 チームを追加すると、そのグループに関連付けられた SharePoint およびグループ メールボックスが自動的に識別され、見つけ出され、そのメールボックスが保管担当者に割り当てされます。
 
    > [!NOTE]
-   > Exchange および **SharePoint** 場所ピッカーを使用して、他のチームまたは Yammer グループ (保管担当者がメンバーではない) を保管担当者に関連付けられます。 これを行うには、各チームまたはグループに関連付けられているメールボックスとサイトの両方を追加Yammerがあります。
+   > 場所の **選択Exchange SharePoint** を使用して、組織内 **の** メールボックスまたはサイトを保管担当者に関連付けできます。 、これには、保管担当者がメンバーではない Microsoft Team または Yammerグループのメールボックスとサイトの関連付けが含まれます。 これを行うには、各チームまたはグループに関連付けられているメールボックスとサイトの両方を追加Yammerがあります。
 
 2. 各保管担当者に割り当てられたメールボックス、サイト、Teams、Yammer グループの総数を表示するには、テーブル内の各保管担当者を展開します。 各保管担当者に割り当てられたデータの場所を確定すると、これらの関連付けは、Advanced eDiscovery ワークフローの収集、処理、およびレビューの段階で維持および使用されます。
 

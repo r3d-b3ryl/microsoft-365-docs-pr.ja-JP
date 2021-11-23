@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f746f07f20c4a8eddba51bb37d86acf2aafdaa6b
-ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
+ms.openlocfilehash: 0728c633b87b18d1bc4cec04d1ea6aeacab764d5
+ms.sourcegitcommit: a15ea6bc8f60895e791a08a5a88d346c6581ea38
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60899740"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61144954"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Microsoft Defender for Endpoint 評価ラボ
 
@@ -43,7 +43,7 @@ Microsoft Defender for Endpoint 評価ラボは、プラットフォームの機
 
 自動調査、高度な狩猟、脅威分析など、プラットフォームの強力な機能に完全にアクセスでき、Defender for Endpoint が提供する包括的な保護スタックをテストできます。
 
-Windows 10、Windows 11、Windows Server 2019、または Windows Server 2022 デバイスを追加して、最新の OS バージョンと適切なセキュリティ コンポーネントと Office 2019 Standard をインストールするように事前構成できます。
+Windows 10、Windows 11、Windows Server 2019、Windows Server 2016、および Linux (Ubuntu) デバイスを追加して、最新の OS バージョンと適切なセキュリティ コンポーネントをインストールし、Office 2019 Standard をインストールするように事前に構成できます。
 
 また、脅威シミュレーターをインストールできます。 Defender for Endpoint は、業界をリードする脅威シミュレーション プラットフォームと提携し、ポータルから出ることなく Defender for Endpoint の機能をテストするのに役立ちます。
 

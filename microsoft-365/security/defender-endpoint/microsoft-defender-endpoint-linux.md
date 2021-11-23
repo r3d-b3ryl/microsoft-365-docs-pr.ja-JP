@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1b8fceed1e749a21323ade7ee87ab54a7fcffde8
-ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
+ms.openlocfilehash: 045f3ed99f119ff744d7c8e3cbed8a5cdab88fee
+ms.sourcegitcommit: a15ea6bc8f60895e791a08a5a88d346c6581ea38
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60478987"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61145036"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 用 Microsoft Defender for Endpoint
 
@@ -68,6 +68,9 @@ Linux での Microsoft Defender for Endpoint のインストールと構成に�
     - [Chef 構成管理ツールを使用した展開](linux-deploy-defender-for-endpoint-with-chef.md)
 
 インストールエラーが発生した場合は、「Microsoft Defender for Endpoint on Linux でのインストールエラーのトラブルシューティング [」を参照してください](linux-support-install.md)。
+
+> [!NOTE]
+> 既定のインストール パス以外の場所に Microsoft Defender for Endpoint をインストールする場合はサポートされていません。 
 
 ### <a name="system-requirements"></a>システム要件
 

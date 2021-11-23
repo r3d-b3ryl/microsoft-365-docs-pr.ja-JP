@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 144003528b322aa86ae0fa22aa40fa7aa934a0c7
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 1cddc1fd238c31f8e3f8f2646875fd1539b8723a
+ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110909"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61148856"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-scans-for-endpoints-that-are-out-of-date"></a>Microsoft Defender ウイルス対策の更新プログラムを管理し、古くなったエンドポイントをスキャンする
 
@@ -77,7 +77,7 @@ Microsoft Defender ウイルス対策を使用すると、エンドポイント�
 Set-MpPreference -SignatureUpdateCatchupInterval
 ```
 
-PowerShell コマンドレットを構成して実行する Microsoft Defender ウイルス対策 および[Defender for Cloud](/powershell/module/defender/)コマンドレットの詳細については、「PowerShell コマンドレットとクラウド コマンドレットを使用する」を参照Microsoft Defender ウイルス対策。 [](use-powershell-cmdlets-microsoft-defender-antivirus.md)
+PowerShell[コマンドレットを](use-powershell-cmdlets-microsoft-defender-antivirus.md)構成して実行する方法の詳細については、「powerShell コマンドレットを使用して Microsoft Defender ウイルス対策 および[Defender ウイルス](/powershell/module/defender/)対策コマンドレットを構成および実行する」を参照Microsoft Defender ウイルス対策。
 
 ### <a name="use-windows-management-instruction-wmi-to-configure-catch-up-protection-updates"></a>管理Windows (WMI) を使用してキャッチアップ保護更新プログラムを構成する
 
@@ -155,7 +155,7 @@ Set-MpPreference -DisableCatchupQuickScan
 
 ```
 
-PowerShell[コマンドレットを使用して](use-powershell-cmdlets-microsoft-defender-antivirus.md)、Microsoft Defender ウイルス対策と Defender [for Cloud](/powershell/module/defender/)コマンドレットを管理するを Microsoft Defender ウイルス対策参照してください。
+PowerShell[コマンドレットを使用して](use-powershell-cmdlets-microsoft-defender-antivirus.md)、Microsoft Defender ウイルス対策と Defender[ウイルス](/powershell/module/defender/)対策のコマンドレットを管理するを Microsoft Defender ウイルス対策参照してください。
 
 ### <a name="use-windows-management-instruction-wmi-to-configure-catch-up-scans"></a>[Windows管理命令 (WMI) を使用してキャッチアップ スキャンを構成する
 

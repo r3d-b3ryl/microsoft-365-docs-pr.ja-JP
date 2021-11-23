@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8c35f6c399e7668883b5b276fffd56f162984669
-ms.sourcegitcommit: f6cb10b1dc4b679b7890d059f7242870fc40b9f5
+ms.openlocfilehash: baedfaf23ed8012a04eb25407ac614efd51fd882
+ms.sourcegitcommit: a15ea6bc8f60895e791a08a5a88d346c6581ea38
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60225022"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61145000"
 ---
 # <a name="manage-indicators"></a>インジケーターの管理
 
@@ -56,9 +56,12 @@ ms.locfileid: "60225022"
 
 5. [**完了**] を選択します。
 
+> [!NOTE]
+> バッチごとにアップロードできるインジケーターは 500 件のみです。
+
 次の表に、サポートされているパラメーターを示します。
 
-パラメーター|種類|説明
+パラメーター|型|説明
 :---|:---|:---
 indicatorType|列挙|インジケーターの種類。 指定できる値は、"FileSha1"、"FileSha256"、"IpAddress"、"DomainName" および "Url" です。 **必須**
 indicatorValue|String|Indicator エンティティ [の](ti-indicator.md) ID。 **必須**

@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.date: 11/15/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: d50e770ac126789d0e48d36e25199a280df9e623
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 307896b583fe3c0e9999afaa789646dc7fafa550
+ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110777"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61148673"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>ファイル拡張子とフォルダーの場所に基づいて除外を構成および検証する
 
@@ -88,7 +88,7 @@ ms.locfileid: "61110777"
 
 次の記事をご覧ください。
 
-- [デバイス制限の設定を構成Microsoft Intune](/intune/device-restrictions-configure)
+- [Microsoft Intune でデバイスの制限設定を構成する](/intune/device-restrictions-configure)
 - [Microsoft Defender ウイルス対策 Intune のデバイス制限Windows 10設定](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
 
 ### <a name="use-configuration-manager-to-configure-file-name-folder-or-file-extension-exclusions"></a>Configuration Manager を使用してファイル名、フォルダー、またはファイル拡張子の除外を構成する
@@ -164,7 +164,7 @@ Add-MpPreference -ExclusionExtension ".test"
 ```
 
 > [!TIP]
-> 詳細については[、「Use PowerShell コマンドレットを](use-powershell-cmdlets-microsoft-defender-antivirus.md)使用して、クラウドコマンドレットと Defender for Cloud コマンドレットを構成Microsoft Defender ウイルス対策実行する」[を参照してください](/powershell/module/defender/)。
+> 詳細については[、「Use PowerShell コマンドレットを使用](use-powershell-cmdlets-microsoft-defender-antivirus.md)して、ウイルス対策コマンドレットと Defender ウイルス対策コマンドレットを構成Microsoft Defender ウイルス対策[実行する」を参照してください](/powershell/module/defender/)。
 
 ### <a name="use-windows-management-instruction-wmi-to-configure-file-name-folder-or-file-extension-exclusions"></a>[Windows管理命令 (WMI) を使用して、ファイル名、フォルダー、またはファイル拡張子の除外を構成する
 
@@ -334,7 +334,7 @@ Get-MpPreference
 
 :::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="Get-MpPreference の PowerShell 出力。":::
 
-詳細については[、「Use PowerShell コマンドレットを](use-powershell-cmdlets-microsoft-defender-antivirus.md)使用して、クラウドコマンドレットと Defender for Cloud コマンドレットを構成Microsoft Defender ウイルス対策実行する」[を参照してください](/powershell/module/defender/)。
+詳細については[、「Use PowerShell コマンドレットを使用](use-powershell-cmdlets-microsoft-defender-antivirus.md)して、ウイルス対策コマンドレットと Defender ウイルス対策コマンドレットを構成Microsoft Defender ウイルス対策[実行する」を参照してください](/powershell/module/defender/)。
 
 ### <a name="retrieve-a-specific-exclusions-list-by-using-powershell"></a>PowerShell を使用して特定の除外リストを取得する
 
@@ -350,7 +350,7 @@ $WDAVprefs.ExclusionPath
 
 :::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="除外リスト内のエントリのみを表示する PowerShell 出力。":::
 
-詳細については[、「Use PowerShell コマンドレットを](use-powershell-cmdlets-microsoft-defender-antivirus.md)使用して、クラウドコマンドレットと Defender for Cloud コマンドレットを構成Microsoft Defender ウイルス対策実行する」[を参照してください](/powershell/module/defender/)。
+詳細については[、「Use PowerShell コマンドレットを使用](use-powershell-cmdlets-microsoft-defender-antivirus.md)して、ウイルス対策コマンドレットと Defender ウイルス対策コマンドレットを構成Microsoft Defender ウイルス対策[実行する」を参照してください](/powershell/module/defender/)。
 
 <a id="validate"></a>
 

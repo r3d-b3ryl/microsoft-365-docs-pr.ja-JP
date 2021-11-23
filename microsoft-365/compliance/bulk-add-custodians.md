@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: インポート ツール d を使用して、複数の保管担当者と関連付けられたデータ ソースをすばやくケースに追加Advanced eDiscovery。
-ms.openlocfilehash: f0d9290d6014b820008408ea6ab9249c0c5a28f4
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 5e2ce53a227462a1fddd7785faf83355ca70611c
+ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60757458"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61148733"
 ---
 # <a name="import-custodians-to-an-advanced-ediscovery-case"></a>保管担当者をケースにAdvanced eDiscoveryする
 
@@ -59,7 +59,7 @@ CSV カストディアン テンプレートをダウンロードした後、各
 |||
 
 > [!NOTE]
-> <sup>1</sup> 保管担当者のインポート プロセスと CSV ファイルを使用して、最大 1,000 のメールボックスと 100 のサイトを保留にできます。 このプロセスを使用して、ケースに 1,000 人を超える保管担当者を追加できますが、保留の制限は引き続き適用されます。 ホールド制限の詳細については、「制限」を参照[Advanced eDiscovery。](limits-ediscovery20.md#hold-limits)
+> <sup>1</sup> 1,000 以上のメールボックスまたは 100 のサイトを保留にした場合、システムは必要に応じて電子情報開示ホールドを自動的にスケーリングします。 つまり、システムはデータの場所を 1 つのホールドに追加するのではなく、複数のホールドに自動的に追加します。 ただし、1 組織につき 10,000 件のケースホールドの制限が適用されます。 ホールド制限の詳細については、「制限」を参照[Advanced eDiscovery。](limits-ediscovery20.md#hold-limits)
 <br>
 > <sup>2</sup> TEAMSMailbox ワークロードと YammerMailbox ワークロードを CSV ファイルに含める場合、グループ サイト (TeamSite と YammerSite) は既定で自動的に追加されます。 CSV ファイルで TeamsSite と YammerSite を個別に指定する必要があります。
 
@@ -94,7 +94,7 @@ CSV カストディアン テンプレートをダウンロードした後、各
 
 保管担当者が検証され、ケースに追加された後、保管担当者に関連付けられている各プライマリ メールボックスと OneDrive アカウントが追加されます。
 
-ただし、保管担当者に関連付けられた他のデータ ソース (SharePoint サイト、Microsoft Teams、Microsoft 365 グループ、Yammer グループなど) が見つからない場合、それらのデータ ソースはいずれも保管担当者に割り当てられていないので、データ ソースの保管担当者の横にある [状態]列に値が表示されます。 タブ。
+ただし、保管担当者に関連付けられた他のデータ ソース (SharePoint サイト、Microsoft Teams、Microsoft 365 グループ、Yammer グループなど) が見つからない場合、それらのデータ ソースはいずれも保管担当者に割り当てられていないので、データ ソースの保管担当者の横にある [状態]列に値が表示されます。  タブ。
 
 カストディアンの検証済みデータ ソースを追加するには、次の方法を実行します。
 

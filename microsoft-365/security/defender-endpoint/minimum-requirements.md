@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a81a83e3e915c4294bd0947bbd989b321fea11ed
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 62cc53910cb5f2c618a45f3ea755c6be7a49c853
+ms.sourcegitcommit: a15ea6bc8f60895e791a08a5a88d346c6581ea38
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111581"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61145012"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>エンドポイント用 Microsoft Defender の最小要件
 
@@ -49,7 +49,9 @@ Microsoft Defender for Endpoint を使用するには、次のいずれかの Mi
 - Windows 10 Enterprise E5
 - Windows 10 Education A5
 - Microsoft 365 E5 E5 または E5 Windows 10 Enterprise 11 をWindowsする Enterprise (M365 E5)
-- Microsoft 365 A5 (M365 A5)
+- Microsoft 365 A5 (M365 A5) 
+- Microsoft 365 E3 E5 アドオンを使用したEnterprise Mobility + Security (M365 E3)
+- Microsoft 365 Business Premiumから購入[した場合の](https://partner.microsoft.com/membership/cloud-solution-provider/find-a-provider)Microsoft クラウド ソリューション プロバイダー
 - Microsoft 365 E5 Security
 - Microsoft 365 A5 Security
 - Microsoft Defender for Endpoint

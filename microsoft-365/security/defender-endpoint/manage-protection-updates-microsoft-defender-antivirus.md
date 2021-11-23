@@ -15,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 0a789c87a6e0988c5b5b7ca57233ede1ad1a8408
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: db3bdb7fc7c4dec7697fc8881687f70ad21e0642
+ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111149"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61148880"
 ---
 # <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>Microsoft Defender ウイルス対策更新プログラムのソースを管理する
 
@@ -110,7 +110,7 @@ Microsoft Update では、最高レベルの保護を確保するために、迅
 
       :::image type="content" source="../../media/wdav-order-update-sources.png" alt-text="ソースの順序を示すグループ ポリシー設定。":::
 
-   3. [**OK**] を選択します。 これにより、保護更新プログラムのソースの順序が設定されます。
+   3. **[OK]** を選択します。 これにより、保護更新プログラムのソースの順序が設定されます。
 
    4. [セキュリティ インテリジェンス更新プログラムをダウンロード **するための** ファイル共有の定義] 設定をダブルクリックし、オプションを [有効] に **設定します**。
 
@@ -139,7 +139,7 @@ Set-MpPreference -SignatureDefinitionUpdateFileSharesSource {\\UNC SHARE PATH|\\
 - [Set-MpPreference -SignatureFallbackOrder](/powershell/module/defender/set-mppreference)
 - [Set-MpPreference -SignatureDefinitionUpdateFileSharesSource](/powershell/module/defender/set-mppreference#-signaturedefinitionupdatefilesharessources)
 - [PowerShell コマンドレットを使用して、サーバーの構成と実行をMicrosoft Defender ウイルス対策](use-powershell-cmdlets-microsoft-defender-antivirus.md)
-- [Defender for Cloud コマンドレット](/powershell/module/defender/index)
+- [Defender ウイルス対策コマンドレット](/powershell/module/defender/index)
 
 ## <a name="use-windows-management-instruction-wmi-to-manage-the-update-location"></a>更新Windows管理命令 (WMI) を使用して管理する
 

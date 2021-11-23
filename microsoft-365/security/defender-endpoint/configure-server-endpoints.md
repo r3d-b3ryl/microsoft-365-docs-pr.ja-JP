@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3109b4665142dd5825a088d66c63673459aec9f9
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: e1dd5958893669012b78e57c57bd6b32c0e94d0c
+ms.sourcegitcommit: a15ea6bc8f60895e791a08a5a88d346c6581ea38
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61129554"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61145058"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Microsoft Defender Windowsエンドポイント サービスへのオンボード サーバー
 
@@ -113,7 +113,7 @@ R2 および R2 および Windows Server 2012の以前Windows Server 2016実装�
 
 <a name="integration-with-azure-defender"></a>
 
-## <a name="integration-with-microsoft-defender-for-cloud"></a>Microsoft Defender for Cloud との統合
+## <a name="integration-with-microsoft-defender-for-cloud"></a>Microsoft Defender for Cloudとの統合
 
 Microsoft Defender for Endpoint は、Microsoft Defender for Cloud とシームレスに統合されます。 サーバーを自動的にオンボードし、Azure Defender によって監視されるサーバーを Defender for Endpoint に表示し、Microsoft Defender for Cloud のお客様として詳細な調査を行います。
 
@@ -132,6 +132,7 @@ Microsoft Defender for Endpoint は、Microsoft Defender for Cloud とシーム�
 **R2 のWindows Server 2012前提条件**
 
 最新の月次ロールアップ パッケージを使用してコンピューターを [](/troubleshoot/windows-client/deployment/standard-terminology-software-updates.md#monthly-rollup)完全に更新した場合、追加 **の前提条件** はありません。
+
 
 インストーラー パッケージは、次のコンポーネントが更新プログラムを介して既にインストールされていることを確認します。
 
@@ -304,7 +305,7 @@ Windows 10 クライアント デバイスで使用できるのと同じ方法�
 >[!NOTE]
 >*他の Windows サーバー バージョンのこれらのオフボード手順は、MMA を必要とする Windows Server 2016 および Windows Server 2012 R2 用の以前の Microsoft Defender for Endpoint を実行している場合にも適用されます。 新しい未確認ソリューションに移行する手順は [、Microsoft Defender for Endpoint のサーバー移行シナリオにあります](/microsoft-365/security/defender-endpoint/server-migration)。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [以前のバージョンの Windows をオンボードする](onboard-downlevel.md)
 - [Windows 10 デバイスのオンボード](configure-endpoints.md)
