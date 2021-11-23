@@ -15,12 +15,12 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 description: QR コードを使用して Outlook Mobile を認証し、ダウンロードする方法について学習します。
-ms.openlocfilehash: cd3467816649c0111cfa8c34d9c1d90dc8cfa8e7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 736628fb97cf2a6f4f6c6d175384a30c41bf642d
+ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176141"
+ms.lasthandoff: 11/22/2021
+ms.locfileid: "61137041"
 ---
 # <a name="use-a-qr-code-to-sign-in-to-the-outlook-mobile-apps"></a>QR コードを使用して Outlook Mobile アプリにサインインする
 
@@ -51,6 +51,9 @@ Outlook on the web または他のデスクトップ Outlook アプリケーシ�
 ```powershell
 Set-OrganizationConfig -MobileAppEducationEnabled <Boolean>
 ```
+
+> [!NOTE]
+> Exchange PowerShell コマンドを使用している場合、変更が反映されるまでに最大 8 時間かかる場合があります。
 
 ## <a name="related-content"></a>関連コンテンツ
 

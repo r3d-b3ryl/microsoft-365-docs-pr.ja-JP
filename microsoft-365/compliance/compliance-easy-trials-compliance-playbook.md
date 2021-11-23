@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 コンプライアンス ソリューション試用版プレイブック。
-ms.openlocfilehash: 1a4d7c69114821e10f301fda0ee408eef7389f9f
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: ca791a4be3c199527bae3b75c0b529198cef9f4a
+ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61129409"
+ms.lasthandoff: 11/22/2021
+ms.locfileid: "61137149"
 ---
 # <a name="trial-playbook-microsoft-365-compliance-solutions"></a>試用版プレイブック: Microsoft 365 コンプライアンス ソリューション
 
@@ -235,7 +235,7 @@ Advanced eDiscovery にアクセスしたり、Advanced eDiscovery ケースの�
 より多くの企業が、重要な電子情報開示プロセスに Microsoft 365 の Advanced eDiscovery ソリューションを使用しています。 これには、規制の要求、調査、訴訟への対応などがあります。
 
 1. Advanced eDiscovery を管理する - [Advanced eDiscovery の構成、セキュリティ/コンプライアンス センターを使用したケースの管理、Advanced eDiscovery でのワークフローの管理、Advanced eDiscovery の検索結果の分析などの方法を説明します](/learn/modules/manage-advanced-ediscovery)。
-1. [Advance eDiscovery の大規模ケース機能を使用して電子情報開示ケースを作成する](advanced-ediscovery-large-cases.md)
+1. [Advanced eDiscovery の新しいケース形式を使用して電子情報開示ケースを作成する](advanced-ediscovery-new-case-format.md)
 1. [ケースを閉じるかまたは削除する](close-or-delete-case.md) - 訴訟事例や調査が完了した場合は、閉じるか削除できます。 閉じたケースを再度開くことも可能です。
 
 ### <a name="step-3-optional-settings"></a>手順 3 (省略可能): 設定

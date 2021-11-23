@@ -774,9 +774,9 @@
           items:
             - name: ケースの作成と管理
               href: create-and-manage-advanced-ediscoveryv2-case.md
-            - name: 大規模なケースを使用する (プレビュー)
-              href: advanced-ediscovery-large-cases.md
-        - name: Teams コンテンツの Advanced 3Discovery ワークフロー (プレビュー)
+            - name: 新しいケース形式を使用する
+              href: advanced-ediscovery-new-case-format.md
+        - name: Teams コンテンツの Advanced eDiscovery ワークフロー
           href: teams-workflow-in-advanced-ediscovery.md
         - name: カストディアンおよび非カストディアンのデータ ソースを使用する
           href: managing-custodians.md

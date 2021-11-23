@@ -16,12 +16,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: m365-security-compliance
-ms.openlocfilehash: ea8df5216464feb0cd1807e7f64d8adbdde3f2e7
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 7e6bebd01ba3740efcf99677f83006e2d26c2157
+ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110201"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61148868"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>望ましくない可能性のあるアプリケーションを検出してブロックする
 
@@ -153,7 +153,7 @@ Set-MpPreference -PUAProtection Disabled
 
 このコマンドレットの値を `Disabled` に設定すると、機能が有効になっている場合にオフになります。
 
-詳細については、「[PowerShell コマンドレットを使用して Microsoft Defender ウイルス対策を構成および実行する](use-powershell-cmdlets-microsoft-defender-antivirus.md)」および「[Defender for Cloudr コマンドレット ](/powershell/module/defender/index)」を参照してください。
+詳細については、「[PowerShell コマンドレットを使用して Microsoft Defender ウイルス対策を構成および実行する](use-powershell-cmdlets-microsoft-defender-antivirus.md)」および「[Defender ウイルス対策 コマンドレット ](/powershell/module/defender/index)」を参照してください。
 
 ## <a name="view-pua-events-using-powershell"></a>PowerShell を使用して PUA イベントを表示する
 
