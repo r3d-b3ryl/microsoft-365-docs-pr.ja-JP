@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: この記事では、特定のケースを作成および管理するAdvanced eDiscovery説明します。 最初の手順は、ケースを作成し、新しい機能Advanced eDiscovery使用を開始します。
-ms.openlocfilehash: 48e6f255361591f270ac95e525c4a1e33b6b7212
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 9969f0afa63094f2a7bf49df921f61dd0d3da2a3
+ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60747790"
+ms.lasthandoff: 11/22/2021
+ms.locfileid: "61137137"
 ---
 # <a name="create-and-manage-an-advanced-ediscovery-case"></a>ケースの作成と管理Advanced eDiscoveryする
 
@@ -41,7 +41,7 @@ ms.locfileid: "60747790"
 
 2. ウィンドウの左側のナビゲーション ウィンドウMicrosoft 365 コンプライアンス センター [すべて表示]をクリックし、[**電子** 情報開示の詳細設定] を選択し、[ケース] タブ  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2173764" target="_blank">**を選択** します</a>。
 
-1. [**ケースを作成する**] を選択します。
+3. [**ケースを作成する**] を選択します。
 
 4. [ **新しい電子情報開示ケース] フライ** アウト ページで、ケースに名前 (必須) を付け、オプションのケース番号と説明を入力します。 ケース名は、組織内で一意である必要があります。
 

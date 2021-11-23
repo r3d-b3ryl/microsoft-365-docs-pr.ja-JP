@@ -15,12 +15,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 533b48aecec033c8e16e02cbf3db4f8f75a53ef7
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 1948a426e7f7088af92f734385d3b47565537151
+ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60881903"
+ms.lasthandoff: 11/22/2021
+ms.locfileid: "61137173"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>テナント間メールボックスの移行 (プレビュー)
 
@@ -72,7 +72,7 @@ ms.locfileid: "60881903"
 
 5. [独自のアプリケーションを作成する] を選択します。
 
-   ![AADギャラリー](../media/tenant-to-tenant-mailbox-move/520912f9ff0b3d61b0b6296788513c89.png)
+   ![AAD ギャラリー](../media/tenant-to-tenant-mailbox-move/520912f9ff0b3d61b0b6296788513c89.png)
 
 6. アプリケーションの名前を入力し (組織の名前付け規則に固有の場合があります)、アプリケーションを登録してアプリケーションと統合し、[作成] Azure ADを選択します。
 
@@ -420,7 +420,7 @@ Get-MoveRequest -Flags "CrossTenant"
    ```powershell
    # Now sync the changes from On-Premises to Azure and Exchange Online in the Target tenant
    # This action should create the target mail enabled users (MEUs) in the Target tenant
-   Start-ADSyncSyncCycle
+   Start-ADSyncCycle
    ```
 
 **使用メールボックスの移動後Outlook 1 日目にアクセスする方法**
@@ -635,13 +635,13 @@ x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn
       | データ損失防止                             |
       | Exchange Enterprise CAL サービス (EOP、DLP)      |
       | Exchange Essentials                              |
-      | ExchangeFoundation                              |
+      | Exchange財団                              |
       | Exchange Online (P1)                             |
       | Exchange Online (プラン 1)                         |
       | Exchange Online (プラン 2)                         |
       | Exchange Online 用の Exchange Online Archiving    |
       | Exchange Server 用の Exchange Online Archiving    |
-      | Exchange Online非アクティブなユーザー アドオン             |
+      | Exchange Online非アクティブ ユーザー アドオン             |
       | Exchange Online Kiosk                            |
       | Exchange Online Multi-Geo                        |
       | Exchange Online プラン 1                           |
@@ -659,5 +659,5 @@ x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn
       | Microsoft Defender for Office 365 (プラン 1)       |
       | Microsoft Defender for Office 365 (プラン 2)       |
       | Office 365 Privileged Access Management          |
-      | プレミアム暗号化のOffice 365                 |
+      | プレミアムの暗号化Office 365                 |
       |                                                  |

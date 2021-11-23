@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 調査またはケースのレビュー Advanced eDiscoveryクラウド添付ファイルを収集するには、クラウド のコレクションを使用します。
-ms.openlocfilehash: 22986c8f844f035f4da57ccdfa3ee523e39118ec
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: bdf30fea0e168d4b36175296f524ade13539970b
+ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60717558"
+ms.lasthandoff: 11/22/2021
+ms.locfileid: "61137161"
 ---
 # <a name="collect-cloud-attachments-in-advanced-ediscovery-preview"></a>クラウドの添付ファイルをAdvanced eDiscoveryする (プレビュー)
 
@@ -40,7 +40,7 @@ ms.locfileid: "60717558"
 ![コレクションをレビュー セットにコミットするときにクラウド添付ファイルを含めるオプション](../media/CollectCloudAttachments1.png)
 
 > [!NOTE]
->- 大きなケース形式[](advanced-ediscovery-large-cases.md)を Advanced eDiscovery で使用する場合、レビュー セットにクラウド添付ファイルを含めるオプションは既定で選択され、選択解除できません。<br/>
+>- Advanced eDiscovery で新[](advanced-ediscovery-new-case-format.md)しいケース形式を使用する場合、レビュー セットにクラウド添付ファイルを含めるオプションは既定で選択され、選択解除できません。<br/>
 >- また、クラウド添付ファイルのすべてのバージョン (共有されたバージョンに加えて) をレビュー セットに含めるオプションも用意されています。  
 コレクションをレビュー セットにコミットする手順については、「下書きコレクションをレビュー セットにコミット [する」を参照してください](commit-draft-collection.md)。
 

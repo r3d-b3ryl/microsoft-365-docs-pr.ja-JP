@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: ケースの分析時にドキュメント セットを整理するために使用できるツールAdvanced eDiscoveryします。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: dc1bd7b8a717d5f53514209fe50499844644f27b
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: 0beee7a458d7cf1e6094ccf856399882c55addf1
+ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064465"
+ms.lasthandoff: 11/22/2021
+ms.locfileid: "61137077"
 ---
 # <a name="analyze-data-in-a-review-set-in-advanced-ediscovery"></a>レビュー セット内のデータを分析Advanced eDiscovery
 
@@ -75,7 +75,7 @@ For Review フィルター クエリの構文 **を次に** 示します。
 包括的な型とドキュメントの一意性の詳細については、「メール スレッド」を参照[Advanced eDiscovery。](email-threading-in-advanced-ediscovery.md)
 
 > [!NOTE]
-> Advanced eDiscovery の大きなケース形式のパブリック プレビュー中に [、For](advanced-ediscovery-large-cases.md) **Review** フィルター クエリは、2021 年 11 月 4 日より前に作成されたレビュー セット (大きなケース形式を使用する場合) の Teams または Yammer の会話を返しません。 この問題は解決されました。 つまり、大きなケース形式を使用する場合にレビュー セットに対して For **Review** クエリを再適用すると、すべての Teams または Yammer 会話が含まれているため、フィルター クエリに一致するアイテムが多く表示される可能性があります。
+> Advanced eDiscovery の新しい [](advanced-ediscovery-new-case-format.md)ケース形式のパブリック プレビュー中に、For **Review** フィルター クエリは、2021 年 11 月 4 日より前に作成されたレビュー セット (大きなケース形式を使用する場合) の Teams または Yammer 会話を返しません。 この問題は解決されました。 つまり、大きなケース形式を使用する場合にレビュー セットに対して For **Review** クエリを再適用すると、すべての Teams または Yammer 会話が含まれているため、フィルター クエリに一致するアイテムが多く表示される可能性があります。
 
 ## <a name="analytics-report"></a>分析レポート
 

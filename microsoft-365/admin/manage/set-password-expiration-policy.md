@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: Microsoft 365 管理センターで、管理者がビジネス、学校、または非営利団体のパスワード有効期限ポリシーを設定する方法について説明します。
-ms.openlocfilehash: 9a9c01b292fcc4162e79b899b23f082e4f6413e2
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 59d5469eb798b6bf93de34c6659c999e84b27ea5
+ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60785788"
+ms.lasthandoff: 11/22/2021
+ms.locfileid: "61137065"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>組織のパスワード有効期限ポリシーを設定します。
 
@@ -57,10 +57,10 @@ ms.locfileid: "60785788"
 1. [**パスワードの有効期限ポリシー**] を選択します。
   
 1. ユーザーがパスワードを変更する必要がないようにするには、[**数日後にユーザーのパスワードが期限切れになるように設定する**] の横にあるチェックボックスをオフにします。
-  
+
 1. パスワードの有効期限が切れる頻度を入力します。14 〜 730 の日数を選択します。
   
-6. 2 つ目のボックスに、パスワードが期限切れになる前にユーザーに通知する日数を入力して、**[保存]** をクリックします。日数を 1 から 30 のうちから選びます。
+1. 2 つ目のボックスに、パスワードが期限切れになる前にユーザーに通知する日数を入力して、**[保存]** をクリックします。日数を 1 から 30 のうちから選びます。
 
 > [!IMPORTANT]
 > パスワードの有効期限の通知は、Microsoft 365 管理センターまたは Office アプリではサポートされなくなりました。

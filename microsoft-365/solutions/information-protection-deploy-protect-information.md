@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: セキュリティMicrosoft 365コンプライアンス機能を展開し、個人情報を保護します。
-ms.openlocfilehash: 856df69d60df7ea255118bd559377e3d54267991
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: c1223dac804e1a9e514f3a5d0effad9f138e403a
+ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110297"
+ms.lasthandoff: 11/22/2021
+ms.locfileid: "61137125"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>データプライバシー規制の対象となる情報を保護する
 
@@ -67,7 +67,7 @@ Microsoft 365 の情報保護スキームの使用を開始するために、以
 Microsoft[の情報保護ソリューション](../compliance/information-protection.md)には、Microsoft 365、Microsoft Azure、および Microsoft Windows。 情報Microsoft 365ソリューションには、次のものが含まれます。
 
 - [機密情報の種類](../compliance/sensitive-information-type-entity-definitions.md)(データプライバシーリスクの評価と機密アイテムの識別に関する記事[で説明)](information-protection-deploy-assess.md)
-- [機密ラベル](../compliance/sensitivity-labels.md)
+- [秘密度ラベル](../compliance/sensitivity-labels.md)
   - サービス/コンテナー レベル
   - クライアント側/コンテンツ レベル
   - ユーザーとユーザーの間でデータを保存SharePoint自動化OneDrive
@@ -79,7 +79,7 @@ Microsoft[の情報保護ソリューション](../compliance/information-protec
 
 外部の他の情報保護機能については、Microsoft 365を参照してください。
 
-- [Microsoft Cloud Application Security (Defender for Cloud Apps)](/cloud-app-security/)
+- [Microsoft Defender for Cloud Apps](/cloud-app-security/)
 - [Azure Information Protection](/azure/information-protection/what-is-information-protection)
 - [Microsoft エンドポイント マネージャー](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)
 - [Windows 情報保護](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)

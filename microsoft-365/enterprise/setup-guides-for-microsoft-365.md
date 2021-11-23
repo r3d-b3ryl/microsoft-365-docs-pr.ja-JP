@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: テナントのライセンスの機能を計画、移行、および実装するためのステップバイステップのツールを取得します。 サービスまたは実行する必要があるアプリをセットアップするガイドを見つける。
-ms.openlocfilehash: 1f55631cf1687cc18e1e890d72b557ad288021fa
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 2cce47f32e74039aa30cc95e8cce2f90b44e2df5
+ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111341"
+ms.lasthandoff: 11/22/2021
+ms.locfileid: "61137089"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Microsoft 365 および Office 365 サービスのセットアップ ガイド
 
@@ -195,6 +195,12 @@ Microsoft Teams[セットアップ](https://aka.ms/teamsguidance)ガイドでは
 ### <a name="microsoft-teams-for-education-setup-guide"></a>Microsoft Teams for Educationセットアップ ガイド
 
 この[Microsoft Teams for Educationセットアップ](https://aka.ms/teamsedusetup)ガイドでは、学校に、共同作業の教室、会話、会議、ファイル、アプリを 1 か所にまとめるガイダンスを提供します。 また、このガイドでは、学校の準備、計画、および構成Teams説明します。 展開が完了したら、組み込みのツールを使用してチームを作成できるユーザーを構成し、必要に応じてチームを作成し、必要に応じてメンバーにファイルを設定.csvします。
+
+### <a name="integrate-microsoft-lti-apps-with-your-lms"></a>Microsoft LTI アプリを LMS と統合する
+
+教師が効果的に働き、学生が組織化を行うには、すべての学習教材、課題、およびアプリケーションと簡単に共同作業を行う 1 つの場所へのシングル サインオンが必要です。 Microsoft ラーニング ツール相互運用性 (LTI) アプリは、学習管理システム (LMS) に Microsoft ツールのベストを直接取り入れ、学生と教師は、ファイルを見つけたり、ツールを構築したりではなく、学習に集中できます。
+
+LMS の管理者であり、LMS 内から Microsoft ツールに直接アクセスする場合は、MICROSOFT LTI アプリを LMS に統合する [LMS](https://aka.ms/lmsintegrationguide) との統合ガイドを使用して、作業を開始します。 これらのツールには、現在、Microsoft Teamsおよび会議Microsoft Teams含まれています。
 
 ### <a name="sharepoint-setup-guide"></a>SharePointセットアップ ガイド
 

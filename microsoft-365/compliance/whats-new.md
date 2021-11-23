@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: コンプライアンス センターに新しいソリューションを追加する場合、フィードバックに基づいて既存の機能を更新する場合、新しく更新されたドキュメントを展開する場合でも、Microsoft 365 を使用すると、変化し続けるコンプライアンス環境の上に立ち続けるのに役立ちます。 今月までの予定を確認します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: febd40a6312b794c62339e6b19f5425c2acf9542
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: 047cc8e50e502d30cdeb13bbde5ebc2ff6621922
+ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914634"
+ms.lasthandoff: 11/22/2021
+ms.locfileid: "61137029"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 コンプライアンス センターの新機能
 
@@ -54,7 +54,7 @@ Microsoft 365 コンプライアンス センター に新しいソリューシ�
   - データセンターのビジネス継続性と障害復旧
   - データセンターの環境保護
   - データセンターの物理アクセス セキュリティ
-  - Microsoft 365SDL コンプライアンス プログラム
+  - Microsoft 365 SDL コンプライアンス プログラム
   - Microsoft 365 サービス エンジニアのアクセスの制御
   - MS Cloud のリスク評価ガイド
 
@@ -66,19 +66,19 @@ Microsoft 365 コンプライアンス センター に新しいソリューシ�
 - [macOS のサポートと高度](dlp-policy-tips-reference.md) な分類のために、データ損失防止ポリシー ヒントのリファレンスが更新されました。
 - [macOS デバイスを macOS Microsoft 365 (プレビュー)](device-onboarding-macos-overview.md)にオンボードすると、macOS のサポートと高度な分類が更新されました。
 - オンボード デバイス用の次の新しいページが追加されました。
-  - [Intune (プレビュー) を使用して、Microsoft 365コンプライアンス ソリューションへのオンボードおよびオフボードの macOS デバイス](device-onboarding-offboarding-macos-intune.md)
+  - [Intune を使用した Microsoft 365 コンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)](device-onboarding-offboarding-macos-intune.md)
   - [Microsoft Defender for Endpoint のお客様向け Intune を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)](device-onboarding-offboarding-macos-intune-mde.md)
-  - [JAM Pro F を使用したコンプライアンス ソリューションMicrosoft 365オンボードおよびオフボード macOS デバイス (プレビュー)](device-onboarding-offboarding-macos-jamfpro.md)
+  - [JAMF Pro を使用した Microsoft 365 コンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)](device-onboarding-offboarding-macos-jamfpro.md)
   - [Microsoft Defender for Endpoint のお客様向け JAMF Pro を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)](device-onboarding-offboarding-macos-jamfpro-mde.md)
 
 ### <a name="ediscovery"></a>電子情報開示
 
-- [クラウド添付ファイルの収集Advanced eDiscovery](advanced-ediscovery-cloud-attachments.md)クラウド添付ファイルの最新バージョンの収集に加えて、電子メール メッセージまたはチャット会話で共有されたバージョンTeamsできます。共有バージョンの収集は、クラウド添付ファイルに保持ラベルを自動的に適用する新しい機能によって可能になります。
-- [サイトに保存](advanced-ediscovery-historical-versions.md)Advanced eDiscoveryドキュメントのすべてのバージョンにインデックスを付け、検索用にSharePointバージョンを設定します。つまり、コレクション クエリに一致するコンテンツを含むドキュメント バージョンが検索結果に返されます。
+- [Advanced eDiscovery](advanced-ediscovery-cloud-attachments.md)でクラウド添付ファイルを収集すると、最新バージョンのクラウド添付ファイルの収集に加えて、電子メール メッセージまたは Teams チャット会話で共有されたバージョンを収集できます。共有バージョンの収集は、クラウド添付ファイルに保持ラベルを自動的に適用する新しい機能によって可能になります。
+- [Advanced eDiscovery](advanced-ediscovery-historical-versions.md)の新しい機能で履歴バージョンを設定し、SharePoint サイトに保存されているドキュメントのバージョンをすべてインデックス化して検索します。つまり、コレクション クエリに一致するコンテンツを含むドキュメント バージョンが検索結果に返されます。
 
 ### <a name="encryption"></a>暗号化
 
-- [1 対 1 の](/microsoftteams/teams-end-to-end-encryption)通話でエンドツーエンドの暗号化を使用Microsoft Teams (パブリック プレビュー)パブリック プレビューの新しいコンテンツ。
+- [1 対 1](/microsoftteams/teams-end-to-end-encryption)の通話にエンドツーエンドの暗号化を使用Microsoft Teams (パブリック プレビュー) パブリック プレビュー用の新しいコンテンツ。
 
 ### <a name="information-governance"></a>情報ガバナンス
 
@@ -135,7 +135,7 @@ Microsoft 365 コンプライアンス センター に新しいソリューシ�
 
 ### <a name="ediscovery"></a>電子情報開示
 
-- [KQL エディターを使用して](ediscovery-kql-editor.md)、コンテンツ検索、Core 電子情報開示、およびコンテンツ検索で検索クエリを作成する新しい方法の検索クエリパブリック プレビューをAdvanced eDiscovery。KQL エディターは、サポートされている検索可能なプロパティと条件のオートコンプリートを提供し、標準のプロパティと条件でサポートされている値の一覧を表示します。KQL エディターは、検索クエリの潜在的なエラーの修正に関するエラー検出と提案も提供します。
+- [KQL](ediscovery-kql-editor.md)エディターを使用して、コンテンツ検索、コア電子情報開示、および Advanced eDiscovery で検索クエリを作成する新しい方法の検索クエリパブリック プレビューを作成します。KQL エディターは、サポートされている検索可能なプロパティと条件のオートコンプリートを提供し、標準のプロパティと条件でサポートされている値の一覧を表示します。KQL エディターは、検索クエリの潜在的なエラーの修正に関するエラー検出と提案も提供します。
 
 ### <a name="information-barriers"></a>情報バリア
 
@@ -206,8 +206,8 @@ Microsoft 365 コンプライアンス センター に新しいソリューシ�
 
 ### <a name="advanced-ediscovery"></a>Advanced eDiscovery
 
-- [Advanced eDiscoveryケースを](teams-workflow-in-advanced-ediscovery.md)使用してMicrosoft Teamsコンテンツのワークフローを作成すると、コンテンツを管理するためのエンド Teams ワークフローが追加Advanced eDiscovery。には、新しい会話トランスクリプト機能のプレビューに関する詳細が含まれます。
-- [大規模なケース](advanced-ediscovery-large-cases.md)を使用Advanced eDiscovery、レビュー セットとケースの制限を拡張し、Teams および Yammer チャット会話の会話トランスクリプトをサポートする新しい大きなケース形式のプレビューを追加しました。
+- Advanced eDiscovery Microsoft Teams のコンテンツのワークフローでは[、Advanced eDiscovery](teams-workflow-in-advanced-ediscovery.md)で Teams コンテンツを管理するエンドツーエンドのワークフローが追加されました。新しい会話トランスクリプト機能のプレビューに関する詳細が含まれています。
+- [Advanced eDiscovery](advanced-ediscovery-new-case-format.md)の新しいケース形式を使用して、レビュー セットとケースの制限を拡張し、Teams および Yammer チャット会話の会話トランスクリプトをサポートする新しいケース形式のプレビューを追加しました。
 
 ### <a name="app-governance"></a>アプリのガバナンス
 
@@ -292,7 +292,7 @@ Microsoft 365 コンプライアンス センター に新しいソリューシ�
 
 - 感度ラベル ポリシー ウィザードでは、既定[の](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling)ラベルOutlook固有のオプションがサポートされ、必須のラベル付けは PowerShell の詳細設定よりも簡単に構成できます。
 - 変数を[使用した動的マーキング](sensitivity-labels-office-apps.md#dynamic-markings-with-variables )のサポートが、Word、Excel、およびPowerPoint on the web
-- ユーザー[の自動ラベル](apply-sensitivity-label-automatically.md)付けポリシー Exchangeラベルが暗号化用に構成されている場合、その暗号化は適用されません。 さらに、Exchangeラベル付けポリシーの場合は、例外を構成し、サブジェクト、受信者アドレス、または送信者アドレスがパターンと一致する新しい条件を構成できます。受信者アドレスには単語が含まれる。送信者ドメインは、受信者がメンバーです。送信者は次の場合です。
+- ユーザー[の自動ラベル](apply-sensitivity-label-automatically.md)付けポリシー Exchangeラベルが暗号化用に構成されている場合、その暗号化は適用されません。 Exchange 自動ラベル付けポリシーの場合は、例外を構成し、件名、受信者アドレス、送信者アドレスの一致パターン、受信者アドレスに単語が含まれます。送信者ドメインは、受信者がメンバーです。送信者は次の新しい条件を構成できます。
 - チーム、グループ、およびサイトで感度ラベルを使用する場合は、BlockSendLabelMismatchEmail パラメーターと一緒に Set-SPOTenant を使用して、監査イベントの検出されたドキュメントの感度の不一致がログに記録される際に自動的に生成される電子メールを防ぐのに使用できます。  詳細については、「監査の感度 [ラベルアクティビティ」を参照してください](sensitivity-labels-teams-groups-sites.md#auditing-sensitivity-label-activities)。
 - 認証 [コンテキスト設定が](sensitivity-labels-teams-groups-sites.md#more-information-about-the-dependencies-for-the-authentication-context-option) 、感度ラベルのプレビューで完全に展開されました。 さらに、この構成は現在、ユーザーがサポートMicrosoft Teams。
 - サービス原則名 (Microsoft Cloud App Security など) でラベル付けおよび暗号化され、SharePoint および OneDrive にアップロードされたファイルは、Office ファイルの感度ラベルを有効にした場合に Office for the web[で開けるSharePointとOneDrive](sensitivity-labels-sharepoint-onedrive-files.md).

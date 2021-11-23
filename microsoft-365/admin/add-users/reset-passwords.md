@@ -29,12 +29,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: 管理者アカウントでサインインMicrosoft 365、ビジネス サブスクリプションのユーザーのパスワードMicrosoft 365リセットします。
-ms.openlocfilehash: f1444513f336cad5423881420d299528a347927c
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: 9a74eaf1524058d5a5c92e057290a37f2d812fee
+ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128398"
+ms.lasthandoff: 11/22/2021
+ms.locfileid: "61136957"
 ---
 # <a name="reset-passwords"></a>パスワードをリセットする
 
@@ -107,7 +107,7 @@ ms.locfileid: "61128398"
 
 2. [**表示名**] の横にある、社内のすべてのユーザーを選択するオプションを選択します。 自分の選択を解除します。 自分以外のユーザーのパスワードをリセットするのと同時に、自分のパスワードをリセットすることはできません。
 
-3. [**パスワードのリセット**] を選択します。 
+3. [**パスワードのリセット**] を選択します。
 
 4. [**パスワードのリセット**] ページの指示に従って操作し、[**リセット**] を選択します。  パスワードの自動生成を選択した場合、新しい一時パスワードが表示されます。
 
