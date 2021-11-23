@@ -4,12 +4,12 @@ description: ファイルを含める
 author: mjcaparas
 ms.service: microsoft-365-enterprise
 ms.author: macapara
-ms.openlocfilehash: 47de6c330e3b6d5ba4cbe460920603e78e126600
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: e4ac49ce9e10e8a6e9c1a7536c310e003ab67ba4
+ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61112065"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61149574"
 ---
 ## <a name="prerequisites"></a>前提条件
 
@@ -108,6 +108,9 @@ Microsoft Defender for Endpoint のセキュリティ構成管理を Microsoft �
 ## <a name="onboard-devices-to-microsoft-defender-for-endpoint"></a>デバイスを Microsoft Defender for Endpoint にオンボードする
 
 Microsoft Defender for Endpoint では、オンボード デバイスに対して複数のオプションがサポートされています。 現在のガイダンスについては[、「Defender](/microsoft-365/security/defender-endpoint/security-config-management) for Endpoint」のドキュメントの「Windowsデバイスのオンボード ツールとメソッド」を参照してください。
+
+> [!IMPORTANT]
+> デバイスが Microsoft Defender for Endpoint にオンボードされた後、Microsoft Defender for Endpoint のセキュリティ管理に登録する前に **、MDE-Management** にタグ付けする必要があります。 MDE でのデバイス タグ付けの詳細については、「デバイス タグの作成と [*管理」を参照してください*](/microsoft-365/security/defender-endpoint/machine-tag)。
 
 Intune または Configuration Manager で管理するデバイスは、このシナリオではサポートされていません。
 

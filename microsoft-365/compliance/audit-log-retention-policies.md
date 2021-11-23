@@ -49,7 +49,7 @@ Microsoft 365 の高度な監査には、すべての組織の既定の監査ロ
 
 - 組織によって作成されるすべてのカスタム監査ログの保持ポリシーは、既定の保持ポリシーよりも優先されます。 たとえば、保持期間が 1 年未満の Exchange メールボックス アクティビティに対して監査ログの保持ポリシーを作成すると、Exchange メールボックス アクティビティの監査レコードは、カスタム ポリシーで指定されている短い期間保持されます。
 
-## <a name="create-an-audit-log-retention-policy"></a>PowerShell で監査ログの保持ポリシーを作成する
+## <a name="create-an-audit-log-retention-policy"></a>監査ログの保持ポリシーを作成する
 
 1. <https://compliance.microsoft.com> に移動し、Microsoft 365 コンプライアンス センターの [アクセス許可] ページで組織構成の役割が割り当てられているユーザー アカウントでサインインします。
 
