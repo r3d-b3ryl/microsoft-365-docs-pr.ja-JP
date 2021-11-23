@@ -7,19 +7,19 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 11/19/2021
+ms.date: 11/23/2021
 ms.prod: m365-security
 ms.technology: mde
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 51f6d6e7e1c8d326b9cd2070e2ca79a67cedbd5a
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: b21c72c44f19e4f9aede5a72c4860cbd6fac1c5c
+ms.sourcegitcommit: b19e54b3888a0b07d08dbd23172daec303c7c95b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61127826"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61152396"
 ---
 # <a name="overview-of-microsoft-defender-for-endpoint-plan-1"></a>Microsoft Defender for Endpoint Plan 1 の概要
 
@@ -28,7 +28,7 @@ ms.locfileid: "61127826"
 
 Microsoft Defender for Endpoint は、高度な脅威を防止、検出、調査、および対応するための組織を支援するために設計されたエンタープライズ エンドポイント セキュリティ プラットフォームです。 Defender for Endpoint が次の 2 つのプランで利用可能になります。 
 
-- **現在プレビュー中で、** この記事で説明されているエンドポイント プラン 1 の Defender。そして 
+- **エンドポイント プラン 1 の Defender** は、この記事で説明します。そして 
 - **[Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)**(一般提供)、以前は Defender for Endpoint と [呼ばれる](microsoft-defender-endpoint.md)。
 
 次の図の緑色のボックスは、Defender for Endpoint Plan 1 に含まれている情報を示しています。
@@ -165,7 +165,7 @@ Defender for Endpoint Plan 1 には Microsoft 365 Defender ポータルが含ま
 
 詳細については、「役割ベースのアクセス [制御を使用してポータル アクセスを管理する」を参照してください](rbac.md)。
 
-### <a name="reporting"></a>レポート
+### <a name="reporting"></a>Reporting
 
 このMicrosoft 365 Defenderポータル ( ) は、検出された脅威に関する情報や、それらの脅威に対処するアクション [https://security.microsoft.com](https://security.microsoft.com) に簡単にアクセスできます。 
 

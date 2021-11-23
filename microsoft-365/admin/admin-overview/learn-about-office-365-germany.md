@@ -20,19 +20,19 @@ search.appverid:
 - BEA160
 ms.assetid: 8a5a4bbc-667a-4cac-8769-d8ac9015db4c
 description: ドイツのOffice 365を学ぶ。
-ms.openlocfilehash: 0496eae485f3be8298f0ab77d066a23fa87f9389
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 065cd97397bbc68adb281fca734c5398158be691
+ms.sourcegitcommit: b19e54b3888a0b07d08dbd23172daec303c7c95b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154088"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61152384"
 ---
 # <a name="learn-about-office-365-germany"></a>Office 365 Germany の詳細
 
 > [!NOTE]
-> Office 365ドイツは、新しい顧客を受け入れるか、新しいサービスを展開しなくなりました。 Microsoft 365 と Office 365 の 2020 年第 1 四半期に利用可能なドイツの新しいクラウド地域は、ドイツ内の主要な顧客データ常駐と Microsoft グローバル クラウド ネットワークへの完全な接続の両方を提供します。
+> Office 365ドイツでは、新しい顧客の受け入れや新しいサービスの展開が行えなくなりました。 Microsoft 365 と Office 365 の 2020 年第 1 四半期に利用可能なドイツの新しいクラウド地域は、ドイツ内の主要な顧客データ常駐と Microsoft グローバル クラウド ネットワークへの完全な接続の両方を提供します。
 
-Office 365ドイツは、ヨーロッパ全体で利用可能なサービスOffice 365の差別化されたオプションでした。 ドイツで最も規制の厳しい顧客、EU(EU)、欧州自由貿易協会 (EFTA) のニーズに対応するために、ドイツのデータセンターから、ドイツのデータ常駐、およびドイツの法律に準拠した独自のデータトラスティ モデルを通じて、業界をリードする生産性サービスを提供しました。
+Office 365ドイツは、ヨーロッパ全体で利用可能なサービスOffice 365差別化されたオプションでした。 ドイツで最も規制の厳しい顧客、EU(EU)、欧州自由貿易協会 (EFTA) のニーズに対応するために、ドイツのデータセンターから、ドイツのデータ常駐、およびドイツの法律に準拠した独自のデータトラスティ モデルを通じて、業界をリードする生産性サービスを提供しました。
   
 データ受託者として、Deutsche Telekom の子会社である、ドイツの独立企業 T-Systems International が、顧客データへの物理的および論理的アクセスを制御します。 顧客データには、ドイツの法律に準拠するデータ トラスティの承認や監督なしにアクセスできない。
   
@@ -88,10 +88,9 @@ Office 365ドイツのプラン製品は、この分離された環境で可能�
   
 ## <a name="general-information"></a>一般情報
 
-|Item|情報|
+|アイテム|情報|
 |-----|-----|
-|ポータルにサインインする  <br/> |[https://portal.office.de](https://portal.office.de)  <br/> |
-|サブスクリプション、課金、技術サポート  <br/> |ドイツ語と英語で利用可能なドイツベースのサポート 詳細については、「ビジネス製品のサポートにお問い合わせ - 管理者向け [ヘルプ」を参照してください](../../business-video/get-help-support.md)。  <br/> |
+|サブスクリプション、課金、技術サポート  <br/> |ドイツベースのサポートはドイツ語と英語で利用できます。 詳細については、「ビジネス製品 [のサポートにお問い合わせ - 管理者向けヘルプ」を参照してください](../../business-video/get-help-support.md)。  <br/> |
 |IP アドレスと URL  <br/> |「[Office 365 Germany のエンドポイント](../../enterprise/microsoft-365-germany-endpoints.md)」を参照してください。  <br/> |
 |Yammer  <br/> |使用できません。  <br/> |
 |2013 Office 2013 または Office<sup>1</sup>より古いMicrosoft 365 Apps for enterpriseバージョン <br/> |サポートされません。  <br/> |

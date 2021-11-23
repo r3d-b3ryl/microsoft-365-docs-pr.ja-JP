@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 詳細を表示し、編集し、一括編集する方法については、Advanced eDiscoveryしてください。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 43181a7e2e40da6209025d06baaa404952afe66d
-ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
+ms.openlocfilehash: 794677c8675f044bafb1c9a441e6c2bbee3e1c86
+ms.sourcegitcommit: b19e54b3888a0b07d08dbd23172daec303c7c95b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/23/2021
-ms.locfileid: "61148709"
+ms.locfileid: "61152420"
 ---
 # <a name="manage-custodians-in-an-advanced-ediscovery-case"></a>管理ケースで保管担当者をAdvanced eDiscoveryする
 
@@ -58,7 +58,7 @@ ms.locfileid: "61148709"
 
   - **保管場所**. 保管担当者に関連付けられたデータ ソース (メールボックス、サイト、および Teams) の数と種類を表示し、ケースの一部です。
 
-    - 各データの場所には、保持状態が表示されます。 保留統計に使用できる値:**保留 、****保留ではない**、および **進行中です**。
+    - 各データの場所には、保持状態が表示されます。 保留状態で使用できる値: **保留** 状態 、 **保留ではない**、および **進行中です**。
 
     - データ ソースの保留状態が表示されていない場合は、ケースの [保留] タブに表示されている保管担当者の保留状態を確認してください。 保管担当者の保留は、保持されている特定のデータ ソースを識別します。
 
