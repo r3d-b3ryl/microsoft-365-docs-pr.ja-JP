@@ -6,6 +6,7 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
+ms.customer: intro-overview
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
@@ -13,12 +14,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Microsoft SharePoint Syntex のドキュメント理解について説明します。
-ms.openlocfilehash: dab209fc47db18875f0bc48d3b2816cd9d1927b8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fe09298e32ce76cab3c8ea16e3d1075a0925f60f
+ms.sourcegitcommit: b51bfed24a9e3b7adf82d4918b76462cd40dffaf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60172211"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61153702"
 ---
 # <a name="document-understanding-overview-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex のドキュメント理解の概要
 
@@ -39,11 +40,11 @@ ms.locfileid: "60172211"
 > [!NOTE]
 > 読み取り専用、またはシールされたコンテンツ タイプは更新できないため、モデルに使用することはできません。
 
-*分類子* と *抽出子* をドキュメント理解モデルに追加して、以下を実行します。 
+次 *のアクションを実行するには**、分類* 子と抽出器をドキュメント理解モデルに追加します。 
 
 - 分類子は、ドキュメント ライブラリにアップロードされたドキュメントを識別および分類するために使用されます。 たとえば、分類子を "トレーニング" して、ライブラリにアップロードされているすべての契約 *更新ドキュメント* を識別させることができます。 契約更新コンテンツ タイプは、分類子を作成するときにユーザーが定義します。
 
-- 抽出子は、これらのドキュメントから情報を引き出します。 たとえば、ドキュメント ライブラリで識別されたすべての契約更新ドキュメントについて、各契約更新ドキュメントの *サービス開始日* と *クライアント* を示す列がビューに表示されます。 
+- 抽出子は、これらのドキュメントから情報を引き出します。 たとえば、ドキュメント ライブラリで識別された契約更新ドキュメントごとに、各ドキュメントのサービス開始日と *クライアント* を示す列が表示されます。 
 
 サンプルファイルを使用して、モデル内の分類子と抽出子をトレーニングおよびテストできます。 サンプルファイルは、ファイルからデータを識別して抽出しようとするときに何を探すべきかについてのモデル例を提供します。 たとえば、会社が使用している契約更新ドキュメントの例を使用して、契約更新の分類子と抽出子をトレーニングします。 サンプルファイルを使用して、モデルの有効性をテストすることもできます。
 
@@ -51,9 +52,9 @@ ms.locfileid: "60172211"
 
 ## <a name="file-limitations"></a>ファイルの制限事項
 
-ドキュメント理解モデルは、光学式文字認識 (OCR) テクノロジーを使用して、PDF、画像、および TIFF ファイルをスキャンします。これは、サンプル ファイルを使用してモデルをトレーニングする場合と、ドキュメント ライブラリ内のファイルに対してモデルを実行する場合の両方です。
+ドキュメント理解モデルでは、光学式文字認識 (OCR) テクノロジを使用して PDF、画像、TIFF ファイルをスキャンします。 ファイルは、サンプル ファイルを含むモデルをトレーニングするときに、およびドキュメント ライブラリ内のファイルに対してモデルを実行するときにスキャンされます。
 
-Microsoft Office のテキストベース ファイルと OCR スキャン ファイル (PDF、画像、または TIFF) に関して、次の違いに注意してください。
+テキスト ベースのファイルと OCR スキャンMicrosoft Office (PDF、イメージ、または TIFF) に関する次の違いに注意してください。
 
 - Office ファイル: 64,000 文字を切り捨てます (トレーニング時およびドキュメント ライブラリ内のファイルに対して実行する場合)。
 

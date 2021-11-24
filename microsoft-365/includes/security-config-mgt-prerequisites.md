@@ -4,12 +4,12 @@ description: ファイルを含める
 author: mjcaparas
 ms.service: microsoft-365-enterprise
 ms.author: macapara
-ms.openlocfilehash: e4ac49ce9e10e8a6e9c1a7536c310e003ab67ba4
-ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
+ms.openlocfilehash: 3a71ae9b77e49ff88c12383b00faf17d5a52b10d
+ms.sourcegitcommit: b51bfed24a9e3b7adf82d4918b76462cd40dffaf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61149574"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61155426"
 ---
 ## <a name="prerequisites"></a>前提条件
 
@@ -33,6 +33,7 @@ Microsoft Defender for Endpoint シナリオのセキュリティ管理の要件
 - ハイブリッド Azure Active Directory参加は、環境で構成する必要があります (フェデレーションまたは同期AAD Connect)
 - AAD Connect同期には、デバイス オブジェクトをスコープ内に含める必要があります (Azure Active Directoryに必要な場合)
 - AAD Connect 2012 R2 の同期ルールを変更する必要があります (Server 2012 R2 のサポートが必要な場合)
+- すべてのデバイスは、Microsoft Defender for Endpoint をAzure Active Directoryテナントのデバイスに登録する必要があります。 テナント間のシナリオはサポートされていません。 
 
 ### <a name="connectivity-requirements"></a>接続要件
 

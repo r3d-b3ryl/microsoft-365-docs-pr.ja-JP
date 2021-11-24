@@ -1,21 +1,25 @@
 ---
 title: 環境の準備を整Microsoft Viva トピック
-description: ユーザーに可能な限り多くのコンテンツを提供できるよう、環境を準備Microsoft Viva トピック。
-ms.author: samanro
-author: samanro
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
-ms.custom: Adopt
+ms.custom: intro-get-started
+ms.service: viva
+ms.subservice: viva-topics
 search.appverid: ''
+ms.collection:
+- enabler-strategic
+- m365initiative-viva-topics
 ms.localizationpriority: medium
-ms.openlocfilehash: a2e6ffc768f52d3738b9389d460ddba2a156152e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: ユーザーに可能な限り多くのコンテンツを提供できるよう、環境を準備Microsoft Viva トピック。
+ms.openlocfilehash: 73395e0e4e12daeb68618fba4d694aa9f1b23ae4
+ms.sourcegitcommit: b51bfed24a9e3b7adf82d4918b76462cd40dffaf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60214071"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61153714"
 ---
 # <a name="get-your-environment-ready-for-microsoft-viva-topics"></a>環境の準備を整Microsoft Viva トピック
 
@@ -113,17 +117,17 @@ ms.locfileid: "60214071"
 
 ## <a name="5-identify-knowledge-managers-and-topics"></a>5. ナレッジ マネージャーとトピックを特定する
 
-トピックの管理には、ナレッジ管理者とナレッジ マネージャーの 2 つの新しいAzure Active Directory (AAD) ロールを含む 3 つの主要な役割が含まれます。
+トピックの管理には、ナレッジ管理者とナレッジ マネージャーの 2 つの新Azure Active Directory (AAD) 役割を含む 3 つの主要な役割が含まれます。
 
 - ナレッジ管理者 (KA) は、一般に IT における技術的な役割です。 この役割により、M365 管理センターでのビバ トピックのセットアップと、トピックの検出と表示の構成が可能です。
 - ナレッジ マネージャー (KM) は、トピック自体と一緒に動作し、その品質と完成度を監督します。
-- トピック投稿者 (TCs) は、AAD ロールに基づくのではなく、管理センターのアクセス許可に基づいて行います。 テーマの専門家は、トピックに関するコンテンツを管理し、リソースと人を追加できます。
+- トピック投稿者 (TC) は、管理者の役割AADではなく、管理センターのアクセス許可に基づいて行います。 テーマの専門家は、トピックに関するコンテンツを管理し、リソースと人を追加できます。
 
 組織によっては、これらの役割に対して少数または多数のユーザーが行動している場合があります。 一部の組織では、これらは同じユーザーである可能性があります。
 
 | 知識管理者 | 知識マネージャー | トピック投稿者 |
 |:-------|:-------|:-------|:-------|
-| AAD の役割 | AAD の役割 | SME |
+| AADロール | AADロール | SME |
 | 管理センターへのアクセス権を持つ | 管理センターへのアクセス権を持つ | 管理センターへのアクセスなし |
 | ビバ のトピックを設定する | トピックの管理と品質を所有する | 専門知識に基づいてトピックに貢献します。 |
 | セキュリティとコンプライアンスの標準が適用され、ライセンス契約を理解します。| トピックの作成、編集、削除、拒否などのトピック管理タスクを実行します。 トピック投稿者のタスクをサポートします。 | トピック ページの情報とコンテンツ (そのトピックにピン留めされているユーザーとリソースを含む) を管理します。 |

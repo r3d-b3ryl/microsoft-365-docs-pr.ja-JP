@@ -1,5 +1,5 @@
 ---
-title: ユーザーとユーザーを使用Outlook共同作業Teams
+title: Outlook と Teams を使用して共同作業する
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -19,39 +19,39 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: コラボレーションに使用するOutlookとMicrosoft Teamsについて学習します。
+description: Outlook と Microsoft Teams を使用して共同作業を行う方法について説明します。
 ms.openlocfilehash: bc1416ebdb7e828301b1c08562d427ad4a582485
 ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/06/2021
 ms.locfileid: "60160945"
 ---
 # <a name="use-outlook-and-teams-together"></a>Outlook と Teams を同時に使用する
 
-小規模ビジネスの従業員、パートナー、クライアント、その他のユーザーとコミュニケーションを取る場合は、OutlookとTeamsをMicrosoft 365。 Outlookでは、電子メール、予定表、連絡先、タスクを見つけ、Teams には会話、ファイル、会議、Microsoft およびサード パーティ製アプリへのクイック アクセスがあります。 ビジネスでそれぞれの使い方の概要を次に示します。
+中小企業の従業員、パートナー、クライアント、およびその他のユーザーと通信する場合は、Microsoft 365で Outlook と Teams を使用します。 Outlook にはメール、予定表、連絡先、タスクが表示されますが、Teams では会話、ファイル、会議、Microsoft アプリやサード パーティ製アプリへのクイック アクセスが表示されます。 ビジネスでそれぞれを使用する方法の概要を次に示します。
 
 ## <a name="microsoft-outlook"></a>Microsoft Outlook
 
-- ビジネスの新しいリードを含む、ビジネスの内部および外部からのメッセージを確認します。
-- 予定表を確認し、予定を追加し、会議をスケジュールします。
-- 連絡先として作業するユーザーの名前、番号、電子メールを追加します。
-- タスク、メモ、その他の方法を作成して、短期的および長期的なプロジェクトの上に滞在します。
+- ビジネスの新しい潜在顧客を含む、社内外からのメッセージを確認します。
+- 予定表の確認、予定の追加、会議のスケジュール設定を行います。
+- 連絡先として共同作業するユーザーの名前、番号、メールを追加します。
+- タスク、メモ、その他の方法を作成して、短期的および長期的なプロジェクトを常に把握します。
 
-:::image type="content" source="../media/outlook-model.png" alt-text="Outlook のホーム ページのスタイライズされたイメージ。":::
+:::image type="content" source="../media/outlook-model.png" alt-text="Outlook ホーム ページの定型化された画像。":::
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-- チームとリッチでリアルタイムの会話を行い、クライアントまたはゲストを会話に招待します。
-- プライベート チャットや通話を行い、画面を共有します。
-- 従業員とゲストとの会議をスケジュールし、参加します。
-- 関連付けられたサイトまたはサイトからファイルをSharePointまたは共有OneDrive for Business。
-- Planner、Power BI、GitHubなど、Teams。
+- チームと豊富なリアルタイムの会話を行い、クライアントやゲストを会話に招待します。
+- プライベート チャットや通話を行い、画面を互いに共有します。
+- 従業員やゲストとの会議をスケジュールして参加します。
+- 関連付けられている SharePoint サイトまたはOneDrive for Business からファイルを追加または共有します。
+- Planner、Power BI、GitHub などのアプリを Teams に追加します。
 
-:::image type="content" source="../media/teams-model.png" alt-text="ホーム ページのMicrosoft Teams画像。"::: 
+:::image type="content" source="../media/teams-model.png" alt-text="Microsoft Teams ホーム ページの定型化された画像。"::: 
 
 ## <a name="related-articles"></a>関連記事
 
-[何がOutlook?](https://support.microsoft.com/office10f1fa35-f33a-4cb7-838c-a7f3e6228b20)
+[Outlook とは?](https://support.microsoft.com/office10f1fa35-f33a-4cb7-838c-a7f3e6228b20)
 
-[Teams概要](/MicrosoftTeams/Teams-overview)
+[Teams の概要](/MicrosoftTeams/Teams-overview)

@@ -4,23 +4,23 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: cjtan
-ms.date: 10/10/2021
 audience: enabler, admin
 ms.topic: landing-page
 ms.custom: intro-hub-or-landing
-ms.prod: microsoft-365-enterprise
+ms.service: viva
+ms.subservice: viva-topics
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 ms.localizationpriority: medium
 description: Microsoft Viva トピックに関するリソースの検索方法について説明します。
-ms.openlocfilehash: a5e5d688a3838da95dde92e0adf27c1d1c833430
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: ea158b266154cee1f911a40983c352d1f7b4cc43
+ms.sourcegitcommit: b51bfed24a9e3b7adf82d4918b76462cd40dffaf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60668278"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61153678"
 ---
 # <a name="introduction-to-microsoft-viva-topics"></a>Microsoft Viva トピックの概要
 
@@ -54,8 +54,9 @@ Viva Topics は、組織がMicrosoft 365情報を知識に変換するのに役�
 
 | この情報を探している場合: | 参照先: |
 |:-----|:-----|
-|ビバ トピックの使用計画を開始する方法について説明します。 |[概要](topics-adoption-getstarted.md)|  
+|ビバ トピックの使用計画を開始する方法について説明します。 |[はじめに](topics-adoption-getstarted.md)|  
 |ビバ トピックの試用版パイロット プログラムをセットアップして実行する |[試用版を実行する](trial-topics.md)|
+|ビバ トピックを使用して導入ジャーニーを通じて組織を支援するリソースを見つける |[導入リソース](adoption-resources.md)|
 
 ## <a name="set-up-and-administration"></a>設定と管理
 

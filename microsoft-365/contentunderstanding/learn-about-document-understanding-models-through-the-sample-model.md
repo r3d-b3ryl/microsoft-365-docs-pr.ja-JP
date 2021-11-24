@@ -6,6 +6,7 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
+ms.custom: intro-get-started
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
@@ -13,12 +14,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: サンプル モデルを使用したドキュメント理解モデルについて説明します。
-ms.openlocfilehash: 51eb92a2b6a511dd5b1340c9c435f63dd56299e5
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: 6fffb4bf9ab30059696dc158ac9e6d91690fb83a
+ms.sourcegitcommit: b51bfed24a9e3b7adf82d4918b76462cd40dffaf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064429"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61153726"
 ---
 # <a name="learn-about-document-understanding-models-through-the-sample-model-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex のサンプル モデルを通じてドキュメント理解モデルについてSharePoint Syntex
 
