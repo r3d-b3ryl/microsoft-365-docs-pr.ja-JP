@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: bcd09c1a2f828545243d1f4d56c9e2cab49356ab
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 747397d8baee103a311a6aec842af189403ef0fc
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190559"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168740"
 ---
 # <a name="use-microsoft-defender-for-endpoint-apis"></a>エンドポイント API で Microsoft Defender を使用する
 
@@ -30,7 +30,7 @@ ms.locfileid: "60190559"
 
 
 **適用対象:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -48,11 +48,11 @@ Microsoft Defender for Endpoint は、一連のプログラム API を通じて�
 
 一般に、API を使用するには、次の手順を実行する必要があります。
 
-- AAD アプリケーションの作成
+- アプリケーションのAADする
 - このアプリケーションを使用してアクセス トークンを取得する
 - トークンを使用して Defender for Endpoint API にアクセスする
 
-このページでは、AAD アプリケーションを作成し、Microsoft Defender for Endpoint へのアクセス トークンを取得し、トークンを検証する方法について説明します。
+このページでは、アプリケーションを作成しAAD、エンドポイント用 Microsoft Defender へのアクセス トークンを取得し、トークンを検証する方法について説明します。
 
 > [!NOTE]
 > ユーザーに代わって Microsoft Defender for Endpoint API にアクセスする場合は、適切なアプリケーションアクセス許可とユーザーアクセス許可が必要です。
@@ -125,7 +125,7 @@ Microsoft Defender for Endpoint は、一連のプログラム API を通じて�
 
 ## <a name="get-an-access-token"></a>アクセス トークンを取得する
 
-AAD トークンの詳細については [、「Azure AD」を参照してください。](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
+トークンの詳細については、「AADチュートリアル[」をAzure ADしてください。](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 
 ### <a name="using-c"></a>C の使用\#
 

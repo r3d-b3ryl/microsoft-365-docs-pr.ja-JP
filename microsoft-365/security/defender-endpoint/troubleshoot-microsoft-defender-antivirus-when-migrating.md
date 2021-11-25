@@ -15,20 +15,20 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3a4fe04d563cd531e1f17916fcb54164e5010b62
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: c1b60b66977c4f93591bce20a5cf6ace0b7fc567
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882479"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168008"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-while-migrating-from-a-third-party-solution"></a>サード パーティのソリューションからの移行中に Microsoft Defender ウイルスのトラブルシューティングを行う
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
-
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 
 サードパーティのセキュリティ ソリューションからセキュリティ ソリューションへの移行中に問題が発生した場合は、ここでMicrosoft Defender ウイルス対策。
@@ -90,7 +90,7 @@ GPResults レポート内の見出し *Windows Components/Windows Defender ウ�
 
 ポリシー|Setting|GPO を獲得する
 ---|---|---
-[オフにする] Windows Defender ウイルス対策|有効|Win10-Workstations
+[オフにする] Windows Defender ウイルス対策|Enabled|Win10-Workstations
 
 ###### <a name="if-security-settings-are-implemented-via-group-policy-preference-gpp"></a>グループ ポリシーの基本設定 (GPP) を使用してセキュリティ設定を実装する場合
 
@@ -101,7 +101,7 @@ DisableAntiSpyware|-
 GPO を獲得する|Win10-Workstations
 結果: 成功|
 **全般**|
-Action|Update
+アクション|Update
 **Properties**|
 Hive|HKEY_LOCAL_MACHINE
 キー パス|SOFTWARE\Policies\Microsoft\Windows Defender

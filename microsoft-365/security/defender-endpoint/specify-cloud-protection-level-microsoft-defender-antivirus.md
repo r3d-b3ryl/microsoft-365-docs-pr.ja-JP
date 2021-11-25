@@ -16,18 +16,18 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 2c0f342c62409e8bfcf782c22714d9fd707c24a7
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: deb4da81114e90d7bffbcc9642fef71c30a07f0d
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555538"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165848"
 ---
 # <a name="specify-the-cloud-protection-level"></a>クラウド保護レベルを指定する
 
 **適用対象:**
-
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - Microsoft Defender ウイルス対策
 
 クラウド保護は、従来のセキュリティ インテリジェンスMicrosoft Defender ウイルス対策よりはるかに高速にエンドポイントに保護を提供するために、クラウド保護と共に機能します。 クラウド保護のレベルを構成するには、Microsoft エンドポイント マネージャー (推奨) またはグループ ポリシーを使用します。

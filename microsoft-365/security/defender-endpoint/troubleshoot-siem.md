@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 9218ba1c104f2792362f566850c584f0cf5dc795
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 59db066644a549cf52252602f494dd1267e216f9
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196786"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165572"
 ---
 # <a name="troubleshoot-siem-tool-integration-issues"></a>SIEM ツール統合に関する問題のトラブルシューティング
 
@@ -29,7 +29,8 @@ ms.locfileid: "60196786"
 
 
 **適用対象:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -45,7 +46,7 @@ SIEM ツールで検出を引き出す際に問題のトラブルシューティ
 
 1. Azure 管理ポータル [にログインします](https://portal.azure.com)。
 
-2. [**Azure Active Directory**] を選択します。
+2. **Azure Active Directory** を選択します。
 
 3. テナントを選択します。
 
@@ -63,7 +64,7 @@ SIEM ツールで検出を引き出す際に問題のトラブルシューティ
 
 1. Azure 管理ポータル [にログインします](https://ms.portal.azure.com)。
 
-2. [**Azure Active Directory**] を選択します。
+2. **Azure Active Directory** を選択します。
 
 3. テナントを選択します。
 

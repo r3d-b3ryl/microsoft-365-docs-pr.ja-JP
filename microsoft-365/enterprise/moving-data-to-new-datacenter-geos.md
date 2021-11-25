@@ -3,7 +3,7 @@ title: コア データを新しいデータ センター geos にMicrosoft 365�
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 12/10/2019
+ms.date: 11/16/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: データセンターの新Office 365地域について、およびデータ常駐オプションを使用してコア データの新しい geo への移行を要求する方法について学習します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 724021bc3fb5fd8a0946bcf5f460e4848c44bf9f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 590d1b7e72f79e0e6cfd4e29a0a78560f6c13433
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209647"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168848"
 ---
 # <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>コア データを新しいデータ センター geos にMicrosoft 365する
 
@@ -34,7 +34,7 @@ ms.locfileid: "60209647"
   
 既存のデータセンター geo に保存されるコア カスタマー データを持つ既存のお客様は、新しいデータセンター geo の導入による影響を受けません。 新しいデータセンター geo では、独自機能や準拠証明書を導入していません。 これら 2 つの任意の geo のお客様として、サービスの品質、パフォーマンス、およびセキュリティ コントロールに関して、これまでと同様のエクスペリエンスを得ることができます。 次の表に示した従来のお客様には、お客様組織のコア カスタマー データの保存場所を新しいデータセンター geo に早期移行するための申請オプションを用意しています。
   
-|**テナントのサインアップ国を使用しているお客様**|**以前のデータ センター geo**|**新しいデータセンター geo**|**以降は geo が利用可能**|
+| テナントのサインアップ国を使用しているお客様 | 以前のデータ センター geo | 新しいデータ センター geo | 以降は geo が利用可能 |
 |:-----|:-----|:-----|:-----|
 |**日本**| アジア/太平洋地域 | 日本 | 2014 年 12 月 |
 |**オーストラリア、ニュージーランド、フィジー**| アジア/太平洋地域 | オーストラリア | 2015 年 3 月 |
@@ -49,6 +49,7 @@ ms.locfileid: "60209647"
 |**Germany**| 欧州連合 | ドイツ | 2019 年 12 月 |
 |**ノルウェー**| 欧州連合 | ノルウェー | 2020 年 4 月 |
 |**ブラジル**| 南北アメリカ | ブラジル | 2020 年 11 月 |
+|**スウェーデン**| 欧州連合 | スウェーデン | 2021 年 11 月 |
 
 2020 年 10 月 1 日現在、テナントにOffice 365 Educationサブスクリプションをお持ちのお客様は移行の対象ではありません。
 

@@ -16,19 +16,19 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: overview
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 13c8591d03bd0c4c6649f6afbdb383ad54089499
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: f6429afa9b5e038b44a60c35754a0a3db93c4c2b
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883559"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164930"
 ---
 # <a name="protect-your-network"></a>ネットワークを保護する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -52,7 +52,7 @@ ms.locfileid: "60883559"
 
 |Windows バージョン|Microsoft Defender ウイルス対策|
 |---|---|
-|Windows 10バージョン 1709 以降 <p> Windows 11 <p> Windowsサーバー 1803 以降|[Microsoft Defender ウイルス対策保護とクラウド](configure-real-time-protection-microsoft-defender-antivirus.md)[配信保護を有効](enable-cloud-protection-microsoft-defender-antivirus.md)にする必要があります|
+|Windows 10バージョン 1709 以降 <p> Windows 11 <p> Windows Server 1803 以降|[Microsoft Defender ウイルス対策保護とクラウド](configure-real-time-protection-microsoft-defender-antivirus.md)[配信保護を有効](enable-cloud-protection-microsoft-defender-antivirus.md)にする必要があります|
 |
 
 サービスを有効にした後、サービスとデバイス (エンドポイントとも呼ばれます) 間の接続を許可するために、ネットワークまたはファイアウォールを構成する必要がある場合があります。
@@ -112,7 +112,7 @@ DeviceNetworkEvents
 
 1. ユーザーがデバイス上の Web サイトにアクセスしようとしたとします。 サイトは危険なドメインでホストされ、ネットワーク保護によってブロックされる必要があります。  
 
-2. TCP/IP による 3 ウェイ ハンドシェイクが開始されます。 完了する前に、アクション `NetworkConnectionEvents` がログに記録され、そのアクション `ActionType` がとして表示されます `ConnectionSuccess` 。 ただし、3 ウェイ ハンドシェイク プロセスが完了すると、ネットワーク保護によってサイトへのアクセスがブロックされます。 このすべてが非常に迅速に発生します。 同様のプロセスは[、Microsoft Defender SmartScreen。](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)3 者ハンドシェイクが完了すると、決定が完了し、サイトへのアクセスがブロックまたは許可されます。
+2. TCP/IP による 3 ウェイ ハンドシェイクが開始されます。 完了する前に、アクション `NetworkConnectionEvents` がログに記録され、そのアクション `ActionType` がとして表示されます `ConnectionSuccess` 。 ただし、3 ウェイ ハンドシェイク プロセスが完了すると、ネットワーク保護によってサイトへのアクセスがブロックされます。 このすべてが非常に迅速に発生します。 [Microsoft Defender SmartScreen でも](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)同様のプロセスが発生します。これは、3 者間ハンドシェイクで決定が完了し、サイトへのアクセスがブロックまたは許可された場合です。
 
 3. このポータルMicrosoft 365 Defender、アラートがアラート キューに[一覧表示されます](alerts-queue.md)。 このアラートの詳細には、 と `NetworkConnectionEvents` の両方が含まれます `AlertEvents` 。 ActionType のアイテムがある場合でも、サイトがブロック `NetworkConnectionEvents` されているのを確認できます `ConnectionSuccess` 。
 

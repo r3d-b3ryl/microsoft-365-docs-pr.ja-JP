@@ -1,7 +1,7 @@
 ---
 title: シミュレートされた攻撃を通じて Microsoft Defender for Endpoint (MDE) を体験する
 description: テスト ラボまたはMicrosoft 365 Defender環境をパイロットします。
-keywords: Microsoft 365 Defender試し、テストMicrosoft 365 Defender、Microsoft 365 Defender評価ラボMicrosoft 365 Defender、パイロット、サイバー Microsoft 365 Defenderを評価するセキュリティ、高度な永続的脅威、エンタープライズ セキュリティ、デバイス、デバイス、ID、ユーザー、データ、アプリケーション、インシデント、自動調査と修復、高度な検索
+keywords: Microsoft 365 Defender試し、テストMicrosoft 365 Defender、評価Microsoft 365 Defender、Microsoft 365 Defenderラボ、Microsoft 365 Defender パイロット、サイバーセキュリティ、高度な永続的脅威、エンタープライズ セキュリティ、デバイス、デバイス、ID、ユーザー、データ、アプリケーション、インシデント、自動調査と修復、高度な狩猟
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,14 +21,18 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 93e5b0cb5a152868749a68d34ac476660b41cc92
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 832d7095f635c51aefe17b1fa82f9e3b42e9e2d4
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152408"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61163988"
 ---
 # <a name="experience-microsoft-defender-for-endpoint-mde-through-simulated-attacks"></a>シミュレートされた攻撃を通じて Microsoft Defender for Endpoint (MDE) を体験する
+
+**適用対象:**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+
 
 > [!TIP]
 >

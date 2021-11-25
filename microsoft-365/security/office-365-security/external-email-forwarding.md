@@ -1,26 +1,26 @@
 ---
-title: 外部メール転送の構成と制御、自動転送、5.7.520 Access Denied、外部転送の無効化、管理者が外部転送、送信スパム対策ポリシーを無効にしました
+title: 外部メール転送の構成と制御を行Microsoft 365。
 f1.keywords:
 - NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: ''
+ms.date: 11/17/2021
 audience: ITPro
 ms.topic: overview
 ms.localizationpriority: medium
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: .
+description: この記事では、外部メール転送、自動転送、5.7.520 Access Denied メッセージ、外部転送の無効化、"管理者が外部転送を無効にしました" メッセージ、および送信スパム対策ポリシーなどのトピックについて説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e68526f4a7e83295d8d0748651b07e35cfdaf5c6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: db9c790c91e1335853b6647de63edb7ca6ee9a25
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176549"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168968"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>外部メールの自動転送を制御Microsoft 365
 
@@ -58,12 +58,12 @@ ms.locfileid: "60176549"
 
 ## <a name="how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls"></a>送信スパム フィルター ポリシー設定が他の自動メール転送コントロールとどのように機能する
 
-管理者は、電子メールの自動転送を許可またはブロックするように他のコントロールを既に構成している可能性があります。 次に例を示します。
+管理者は、電子メールの自動転送を許可またはブロックするように他のコントロールを既に構成している可能性があります。 例:
 
 - [一部またはすべての](/exchange/mail-flow-best-practices/remote-domains/remote-domains) 外部ドメインへの自動メール転送を許可またはブロックするリモート ドメイン。
 - メール フロー ルール (トランスポート[Exchangeとも](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)呼ばれる) で、自動的に転送されたメッセージを検出して外部受信者にブロックする条件とアクション。
 
-リモート ドメイン設定とメール フロー ルールは、送信スパム フィルター ポリシーの設定とは独立しています。 次に例を示します。
+リモート ドメイン設定とメール フロー ルールは、送信スパム フィルター ポリシーの設定とは独立しています。 例:
 
 - リモート ドメインの自動転送を許可しますが、送信スパム フィルター ポリシーでの自動転送をブロックします。 この例では、自動的に転送されたメッセージがブロックされます。
 - 送信スパム フィルター ポリシーで自動転送を許可しますが、メール フロー ルールまたはリモート ドメイン設定を使用して、自動的に転送されるメールをブロックします。 この例では、メール フロー ルールまたはリモート ドメイン設定によって、自動的に転送されるメッセージがブロックされます。

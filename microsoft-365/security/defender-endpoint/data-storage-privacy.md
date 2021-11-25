@@ -14,19 +14,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a435dc0f0fb1858edcc86291c0c4c7b5ef7c565f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7e6e530406b4211c62d315f26b8f956cf6bf1bde
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60166554"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165068"
 ---
 # <a name="microsoft-defender-for-endpoint-data-storage-and-privacy"></a>Microsoft Defender for Endpoint データストレージとプライバシー
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
@@ -86,7 +87,7 @@ Microsoft Azure Government データ センターに展開されるサービス�
 
 ## <a name="is-data-shared-with-other-customers"></a>データは他の顧客と共有されていますか?
 
-その必要はありません。 顧客データは他の顧客から分離され、共有されません。 ただし、Microsoft の処理に起因するデータ、および顧客固有のデータを含むデータに関する分析情報は、他の顧客と共有される場合があります。 各顧客は、Microsoft が提供する独自の組織および汎用データから収集されたデータにのみアクセスできます。
+いいえ。 顧客データは他の顧客から分離され、共有されません。 ただし、Microsoft の処理に起因するデータ、および顧客固有のデータを含むデータに関する分析情報は、他の顧客と共有される場合があります。 各顧客は、Microsoft が提供する独自の組織および汎用データから収集されたデータにのみアクセスできます。
 
 ## <a name="how-long-will-microsoft-store-my-data-what-is-microsofts-data-retention-policy"></a>Microsoft は自分のデータを保存する期間を指定します。 Microsoft のデータ保持ポリシーとは
 

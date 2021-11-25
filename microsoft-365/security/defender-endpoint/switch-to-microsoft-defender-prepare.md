@@ -23,17 +23,17 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.date: 10/07/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 44b347248d5f9e42bba72a0aea7c315bf10a4245
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 84b7f7c971fa745a9603868181dddf6a6b38a7cc
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60960792"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164744"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>エンドポイント用 Microsoft Defender に切り替える - フェーズ 1: 準備
 
 **適用対象:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 | ![フェーズ 1: 準備します。](images/phase-diagrams/prepare.png)<br/>フェーズ 1: 準備 | [![フェーズ 2: 設定](images/phase-diagrams/setup.png)](switch-to-microsoft-defender-setup.md)<br/>[フェーズ 2: 設定](switch-to-microsoft-defender-setup.md) | [![フェーズ 3: オンボード](images/phase-diagrams/onboard.png)](switch-to-microsoft-defender-onboard.md)<br/>[フェーズ 3: オンボード](switch-to-microsoft-defender-onboard.md) |
@@ -57,7 +57,7 @@ ms.locfileid: "60960792"
 
 既存のエンドポイント保護ソリューションを最新の状態に保ち、組織のデバイスに最新のセキュリティ更新プログラムが含まれています。
 
-お困りの際は、 ソリューション プロバイダーのドキュメントを参照してください。
+サポートが必要な場合 ソリューション プロバイダーのドキュメントを参照してください。
 
 ### <a name="make-sure-your-organizations-devices-are-up-to-date"></a>組織のデバイスが最新の情報を提供する
 
@@ -104,7 +104,7 @@ ms.locfileid: "60960792"
 
     - [構成マネージャー](/mem/configmgr/core/servers/deploy/configure/configure-role-based-administration)
     - [高度なグループ ポリシーの管理](/microsoft-desktop-optimization-pack/agpm)
-    - [Windows管理センター](/windows-server/manage/windows-admin-center/overview)
+    - [Windows Admin Center](/windows-server/manage/windows-admin-center/overview)
 
 3. ポータルへのアクセス権をMicrosoft 365 Defenderします。 (ヘルプが必要ですか? 「RBAC [を使用したポータル アクセスの管理」を参照](rbac.md)してください。
 

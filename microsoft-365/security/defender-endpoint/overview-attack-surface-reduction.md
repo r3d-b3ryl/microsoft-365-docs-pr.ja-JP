@@ -17,12 +17,12 @@ ms.custom: asr
 ms.topic: conceptual
 ms.technology: mde
 ms.date: 10/14/2021
-ms.openlocfilehash: 5da8e3bf024745ed38142779e982e17b59c26439
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: f1f7888b216f0c94241f5249c82e952cdaf294fd
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60884063"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164379"
 ---
 # <a name="overview-of-attack-surface-reduction-capabilities"></a>攻撃表面の縮小機能の概要
 
@@ -30,7 +30,8 @@ ms.locfileid: "60884063"
 
 **適用対象:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]

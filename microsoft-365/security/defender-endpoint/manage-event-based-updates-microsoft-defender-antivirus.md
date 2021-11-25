@@ -16,12 +16,12 @@ ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: d206b41e6aa4ff2bcac74aa0eb229b50f1fae2ee
-ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
+ms.openlocfilehash: c99e4e085de32ac4e7ec77a2155182f1a930d432
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61148661"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168500"
 ---
 # <a name="manage-event-based-forced-updates"></a>イベントベースの強制更新プログラムを管理する
 
@@ -29,8 +29,8 @@ ms.locfileid: "61148661"
 
 
 **適用対象:**
-
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Microsoft Defender ウイルス対策を使用すると、起動時やクラウド配信の保護サービスから特定のレポートを受信した後など、特定のイベントの後に更新プログラムが発生する必要があるかどうかを判断できます。
 
@@ -70,7 +70,7 @@ Microsoft Defender ウイルス対策を使用すると、起動時やクラウ�
 Set-MpPreference -CheckForSignaturesBeforeRunningScan
 ```
 
-詳細については[、「Use PowerShell コマンドレットを使用](use-powershell-cmdlets-microsoft-defender-antivirus.md)して、ウイルス対策コマンドレットと Defender ウイルス対策コマンドレットを構成Microsoft Defender ウイルス対策[実行する」を参照してください](/powershell/module/defender/index)。
+詳細については、「[PowerShell コマンドレットを使用して Microsoft Defender ウイルス対策を構成および実行する](use-powershell-cmdlets-microsoft-defender-antivirus.md)」および「[Defender ウイルス対策 コマンドレット ](/powershell/module/defender/index)」を参照してください。
 
 ### <a name="use-windows-management-instruction-wmi-to-check-for-protection-updates-before-running-a-scan"></a>スキャンWindows前に保護更新プログラムを確認するには、WMI (管理命令) を使用します。
 

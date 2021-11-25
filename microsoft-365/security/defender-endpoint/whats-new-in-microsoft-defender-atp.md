@@ -17,19 +17,20 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f4e8cf234cf3fbf84567ecb47e7efc720ae4f873
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 49f7ddad712b02725da6b97fc0ea8fb7aa4e5fe2
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60787120"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164696"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の新機能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
@@ -39,7 +40,7 @@ ms.locfileid: "60787120"
 プレビュー機能の詳細については、「プレビュー機能」 [を参照してください](preview.md)。
 
 > [!TIP]
-> RSS フィード: 次の URL をコピーしてフィード リーダーに貼り付け、このページが更新された場合に通知を受け取ります。
+> RSS フィード: ご自身のフィード リーダーに次の URL をコピーして貼り付けると、このページの更新時に通知を受け取ることができます。
 >
 > ```https
 > https://docs.microsoft.com/api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=
@@ -59,7 +60,7 @@ ms.locfileid: "60787120"
 - [Defender for Endpoint on Linux の新機能](linux-whatsnew.md)
 
 ## <a name="november-2021"></a>2021 年 11 月
-- [セキュリティ構成管理](security-config-management.md) <br/> Microsoft エンドポイント マネージャー または Microsoft Intune または Microsoft Endpoint Configuration Manager によって管理されていないデバイスが、Microsoft Defender のセキュリティ構成を エンドポイント マネージャー から直接受信する機能。
+- [セキュリティ構成管理](security-config-management.md) <br/> Microsoft エンドポイント マネージャー または Microsoft Intune または Microsoft Endpoint Configuration Manager によって管理されていないデバイスが、Microsoft Defender のセキュリティ構成を直接受信する機能エンドポイント マネージャー。
 
 - クロスプラットフォーム サポートの機能強化。
 
@@ -102,7 +103,7 @@ ms.locfileid: "60787120"
 
 - [モバイル アプリケーション管理のサポート](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> この機能強化により、Intune がモバイル アプリケーションの管理に使用されている場合に、Microsoft Defender for Endpoint が管理アプリケーション内で組織のデータを保護できます。 モバイル アプリケーション管理の詳細については、このドキュメントを [参照してください](/microsoft-365/mem/intune/apps/mam-faq)。
 
-- [Microsoft TunnelVPN 統合](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Microsoft TunnelVPN 機能は、Android 用 Microsoft Defender for Endpoint アプリと統合されました。 この統合により、組織は 1 つのセキュリティ アプリでエンド ユーザー エクスペリエンスを簡素化できます。モバイル脅威防御とモバイル デバイスからプレムリソースにアクセスする機能の両方を提供し、セキュリティチームと IT チームは、使い慣れた管理者エクスペリエンスを維持できます。
+- [Microsoft Tunnel VPN 統合](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Microsoft Tunnel VPN 機能は、Android 用 Microsoft Defender for Endpoint アプリと統合されました。 この統合により、組織は 1 つのセキュリティ アプリでエンド ユーザー エクスペリエンスを簡素化できます。モバイル脅威防御とモバイル デバイスからプレムリソースにアクセスする機能の両方を提供し、セキュリティチームと IT チームは、使い慣れた管理者エクスペリエンスを維持できます。
 
 - [iOS での脱獄の検出](/microsoft-365/security/defender-endpoint/ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios) <br> iOS 上の Microsoft Defender for Endpoint の脱獄検出機能が一般提供されました。 これにより、既に存在するフィッシング保護が追加されます。  詳細については、「デバイス リスク信号 [に基づく条件付きアクセス ポリシーのセットアップ」を参照してください](/microsoft-365/security/defender-endpoint/ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios)。
 

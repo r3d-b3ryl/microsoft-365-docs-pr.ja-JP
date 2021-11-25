@@ -19,18 +19,17 @@ ms.custom:
 ms.technology: mde
 ms.date: 10/18/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 34f46ea019dfeb86667635a1d1252447168a4f81
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: b812ffc9e3e476f05cd272a622f1a78a7ef9b93c
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60960780"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61163340"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>改ざん防止機能を使用してセキュリティ設定を保護する
 
 **適用対象:**
-
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 タンパープロテクションは、次のバージョンのデバイスを実行しているデバイスWindows。
 
@@ -58,7 +57,7 @@ ms.locfileid: "60960780"
 - クラウド配信の保護の無効化
 - セキュリティ インテリジェンスの更新プログラムの削除
 
-### <a name="how-it-works"></a>メカニズム
+### <a name="how-it-works"></a>しくみ
 
 タンパープロテクションMicrosoft Defender ウイルス対策セキュリティで保護された既定値にロックされ、次のようなアプリやメソッドを介してセキュリティ設定が変更されるのを防ぐ。
 
@@ -95,8 +94,8 @@ ms.locfileid: "60960780"
 
 |タンパープロテクションを有効にする方法|クラウドによる保護への依存 (MAPS)|
 |---|---|
-|Microsoft Intune|不要|
-|Microsoft Endpoint Configuration Manager + テナント接続|不要|
+|Microsoft Intune|いいえ|
+|Microsoft Endpoint Configuration Manager + テナント接続|いいえ|
 |Microsoft 365 Defender ポータル ( [https://security.microsoft.com](https://security.microsoft.com) )|はい|
 |
 

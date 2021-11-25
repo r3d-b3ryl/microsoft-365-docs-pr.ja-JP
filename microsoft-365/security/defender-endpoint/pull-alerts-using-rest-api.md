@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2ca1f3d257e40fab340972b3b0d96ce0f7b9977b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 616327185025e79b5e09dad05a5526312d40251c
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60194047"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164816"
 ---
 # <a name="pull-microsoft-defender-for-endpoint-detections-using-siem-rest-api"></a>SIEM REST API を使用したエンドポイント検出用の Microsoft Defender のプル
 
@@ -30,7 +30,8 @@ ms.locfileid: "60194047"
 
 
 **適用対象:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
@@ -55,7 +56,7 @@ Microsoft Defender for Endpoint は、API から検出を引き出す OAuth 2.0 
 
 OAuth 仕様の詳細については [、「OAuth Web サイト」を参照してください](http://www.oauth.net)。
 
-Microsoft Defender for  Endpoint では、承認許可フローとクライアント資格情報フローがサポートされ、認証サーバーとして Azure Active Directory (AAD) を使用してプル検出へのアクセスを取得できます。
+Microsoft Defender for  Endpoint は、承認サーバーとして Azure Active Directory (AAD) を使用してプル検出へのアクセスを取得するための承認付与フローとクライアント資格情報フローをサポートします。
 
 承認 _付与フローは、_ ユーザー資格情報を使用して承認コードを取得し、アクセス トークンを取得するために使用されます。
 
@@ -68,7 +69,7 @@ Microsoft Defender for Endpoint API の次のメソッドを使用して、JSON 
 
 ## <a name="before-you-begin"></a>はじめに
 
-- 検出をプルするために Microsoft Defender for Endpoint エンドポイントを呼び出す前に、デバイス (AAD) で SIEM 統合アプリケーションAzure Active Directory必要があります。 詳細については [、「Enable SIEM integration in Microsoft Defender for Endpoint」を参照してください](enable-siem-integration.md)。
+- 検出をプルするために Microsoft Defender for Endpoint エンドポイントを呼び出す前に、SIEM 統合アプリケーションを Azure Active Directory (AAD) で有効にする必要があります。 詳細については [、「Enable SIEM integration in Microsoft Defender for Endpoint」を参照してください](enable-siem-integration.md)。
 
 - Azure アプリケーション登録の次の値をメモしてください。サービスまたはデーモンアプリ内に OAuth フローを構成するにはこれらの値が必要です。
   - アプリケーション ID (アプリケーションで一意)
@@ -116,13 +117,13 @@ Defender for Endpoint API への要求 *access_tokenフィールドの* 値を�
 
 メソッド|要求 URI
 ---|---
-取得|地域に適用可能な URI を使用します。 <p> **EU の場合**: `https://wdatp-alertexporter-eu.windows.com/api/alerts` <p> **米国の場合**: `https://wdatp-alertexporter-us.windows.com/api/alerts` <p> **英国の場合**: `https://wdatp-alertexporter-uk.windows.com/api/alerts`
+GET|地域に適用可能な URI を使用します。 <p> **EU の場合**: `https://wdatp-alertexporter-eu.windows.com/api/alerts` <p> **米国の場合**: `https://wdatp-alertexporter-us.windows.com/api/alerts` <p> **英国の場合**: `https://wdatp-alertexporter-uk.windows.com/api/alerts`
 
 ### <a name="request-header"></a>要求ヘッダー
 
-ヘッダー|型|説明|
+ヘッダー|種類|説明|
 ---|---|---
-Authorization|string|必須です。 Azure ADベアラー トークンという形式の **アクセス トークンです** &lt;  &gt; 。|
+Authorization|string|必須です。 ベアラー Azure ADフォームのアクセス トークン **を使用** &lt; *します* &gt; 。|
 
 ### <a name="request-parameters"></a>要求パラメーター
 
@@ -133,7 +134,7 @@ Authorization|string|必須です。 Azure ADベアラー トークンという�
 sinceTimeUtc|DateTime|フィールドに基づいて、取得される下限時間のアラートを定義します。 <p> `LastProcessedTimeUtc` <p> 時間範囲は次の値です。sinceTimeUtc 時刻から現在の時刻までです。 <p> **注**: 指定しない場合、過去 2 時間に生成されたアラートはすべて取得されます。
 untilTimeUtc|DateTime|取得される上限時間のアラートを定義します。 <p> 時間範囲は、次の場合に `sinceTimeUtc` 指定 `untilTimeUtc` します。 <p> **注**: 指定しない場合、既定値は現在の時刻になります。
 前|string|次の時間範囲のアラートを引き `(current_time - ago)` 出 `current_time` します。 <p> 値は ISO **8601 期間形式に従って** 設定する必要があります <p> 例: `ago=PT10M` 過去 10 分間に受信したアラートをプルします。
-limit|整数|取得するアラートの数を定義します。 最新のアラートは、定義された番号に基づいて取得されます。<p> **注**: 指定しない場合、時間範囲内で使用可能なすべてのアラートが取得されます。
+limit|int|取得するアラートの数を定義します。 最新のアラートは、定義された番号に基づいて取得されます。<p> **注**: 指定しない場合、時間範囲内で使用可能なすべてのアラートが取得されます。
 machinegroups|string|アラートをプルするデバイス グループを指定します。 <p> **注**: 指定しない場合、すべてのデバイス グループからのアラートが取得されます。 <p> 例: <br><br> `https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts/?machinegroups=UKMachines&machinegroups=FranceMachines`
 DeviceCreatedMachineTags|string|レジストリからの単一のデバイス タグ。
 CloudCreatedMachineTags|string|このページで作成されたデバイス Microsoft Defender セキュリティ センター。

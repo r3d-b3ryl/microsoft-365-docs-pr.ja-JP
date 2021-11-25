@@ -14,14 +14,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: c19189ab33fca3c537347c0d20d14d602fe99da3
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 41e027f910f46ec7aacbda7a34dac2ce8c171160
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61109037"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61163352"
 ---
 # <a name="threat-protection"></a>脅威保護
+
+**適用対象**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection) は、予防的な保護、侵害後の検出、自動調査、対応のための統一されたプラットフォームです。 Defender for Endpoint は、エンドポイントをサイバー脅威から保護し、高度な攻撃とデータ侵害を検出し、セキュリティ インシデントを自動化し、セキュリティの態勢を改善します。
 
@@ -56,7 +59,7 @@ ms.locfileid: "61109037"
 この組み込み機能は、画期的なリスクベースのアプローチを使用してエンドポイントの脆弱性や構成ミスの検出、優先順位付け、および修復を行います。
 
 - [脅威& 脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
-- [概要](tvm-prerequisites.md)
+- [はじめに](tvm-prerequisites.md)
 - [セキュリティの姿勢にアクセスする](tvm-dashboard-insights.md)
 - [セキュリティの状態の改善とリスクの軽減](tvm-security-recommendation.md)
 - [デバイスの脆弱性を理解する](tvm-software-inventory.md)

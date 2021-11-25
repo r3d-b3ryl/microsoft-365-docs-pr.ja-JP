@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8d7de5d6b897d93b0112745ed566879a451e5448
-ms.sourcegitcommit: df1ad7118c4a95a310a4f17124322a6ae6ace26f
+ms.openlocfilehash: e20b993d577f144e80c99479bac7bf70e484f785
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60268556"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168884"
 ---
 # <a name="resources"></a>リソース
 
@@ -30,7 +30,7 @@ ms.locfileid: "60268556"
 
 **適用対象:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
@@ -106,7 +106,7 @@ Linux で Defender for Endpoint をアンインストールするには、いく
 
 ****
 
-|グループ|シナリオ|コマンド|
+|Group|シナリオ|コマンド|
 |---|---|---|
 |構成|リアルタイム保護のオン/オフ|`mdatp config real-time-protection --value [enabled\|disabled]`|
 |構成|動作監視のオン/オフを切り替えます|`mdatp config behavior-monitoring --value [enabled\|disabled]`
@@ -128,8 +128,8 @@ Linux で Defender for Endpoint をアンインストールするには、いく
 |構成|オンデマンド スキャンの並列処理の程度を構成する|`mdatp config maximum-on-demand-scan-threads --value [numerical-value-between-1-and-64]`|
 |構成|セキュリティ インテリジェンスの更新後にスキャンをオン/オフにする|`mdatp config scan-after-definition-update --value [enabled/disabled]`|
 |構成|アーカイブ スキャンのオン/オフ (オンデマンド スキャンのみ)|`mdatp config scan-archives --value [enabled/disabled]`|
-|Diagnostics|ログ レベルの変更|`mdatp log level set --level verbose [error|warning|info|verbose]`|
-|Diagnostics|診断ログの生成|`mdatp diagnostic create --path [directory]`|
+|診断|ログ レベルの変更|`mdatp log level set --level verbose [error|warning|info|verbose]`|
+|診断|診断ログの生成|`mdatp diagnostic create --path [directory]`|
 |正常性|製品の正常性を確認する|`mdatp health`|
 |保護|パスをスキャンする|`mdatp scan custom --path [path] [--ignore-exclusions]`|
 |保護|クイック スキャンを実行する|`mdatp scan quick`|

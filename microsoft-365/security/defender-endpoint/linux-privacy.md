@@ -1,6 +1,6 @@
 ---
 title: Linux 上のエンドポイント用 Microsoft Defender のプライバシー
-description: プライバシー制御、プライバシーに影響を与えるポリシー設定を構成する方法、および Microsoft Defender for Endpoint on Linux で収集された診断データに関する情報。
+description: プライバシー制御、プライバシーに影響を与えるポリシー設定を構成する方法、および Microsoft Defender for Endpoint on Linux で収集される診断データに関する情報。
 keywords: microsoft、defender、Microsoft Defender for Endpoint、Linux、プライバシー、診断
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,26 +14,26 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1c15e5ba5b48380e20ddfd6c291df5c5afafa251
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d2da0f15b392da9a461c8a2e50e7110610fcc5a2
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191757"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168896"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 上のエンドポイント用 Microsoft Defender のプライバシー
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Microsoft は、Defender for Endpoint on Linux を使用する場合に、データの収集方法と使用方法について選択する必要がある情報とコントロールを提供します。
 
-このトピックでは、製品内で使用できるプライバシーコントロール、ポリシー設定を使用してこれらのコントロールを管理する方法、および収集されるデータ イベントの詳細について説明します。
+この記事では、製品内で使用できるプライバシーコントロール、ポリシー設定を使用してこれらのコントロールを管理する方法、および収集されるデータ イベントの詳細について説明します。
 
 ## <a name="overview-of-privacy-controls-in-microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender for Endpoint on Linux のプライバシー制御の概要
 
@@ -43,12 +43,12 @@ Microsoft は、Defender for Endpoint on Linux を使用する場合に、デー
 
 診断データは、Defender for Endpoint を安全かつ最新の状態に保ち、問題を検出、診断、修正し、製品の改善を行う場合に使用されます。
 
-診断データには、必須のものとオプションのものがあります。 組織のポリシー設定などのプライバシー コントロールを使用することで、必須の診断データとオプションの診断データのどちらを Microsoft に送信するかを選択することができます。
+診断データには、必須のものとオプションのものがあります。 組織のポリシー設定などのプライバシーコントロールを使用して、必要な診断データまたはオプションの診断データを送信するかどうかを選択できます。
 
 Defender for Endpoint クライアント ソフトウェアの診断データには、次の 2 つのレベルから選択できます。
 
 - **必須**: Defender for Endpoint をセキュリティで保護し、最新の状態に保ち、インストールされているデバイスで期待通り実行するために必要な最小データ。
-- **オプション**: Microsoft が製品の改善を行い、問題の検出、診断、修復に役立つ拡張情報を提供する追加データ。
+- **オプション**: Microsoft が製品の改善を行い、問題の検出、診断、修復に役立つ拡張情報を提供するその他のデータ。
 
 既定では、必要な診断データだけが Microsoft に送信されます。
 
@@ -65,14 +65,14 @@ Defender for Endpoint クライアント ソフトウェアの診断データに
 サンプル申請を制御するには、次の 3 つのレベルがあります。
 
 - **なし**: 疑わしいサンプルは Microsoft に送信されません。
-- **セーフ**: 個人を特定できる情報 (PII) を含む疑わしいサンプルだけが自動的に送信されます。 これは、この設定の既定値です。
+- **セーフ**: 個人を特定できる情報 (PII) を含む疑わしいサンプルだけが自動的に送信されます。 これは既定の値です。
 - **すべて**: すべての疑わしいサンプルが Microsoft に送信されます。
 
 ## <a name="manage-privacy-controls-with-policy-settings"></a>ポリシーの設定でプライバシー コントロールを管理します
 
 IT 管理者の場合は、エンタープライズ レベルでこれらのコントロールを構成できます。
 
-前のセクションで説明した各種データのプライバシー制御については、「Defender for Endpoint on Linux の設定」 [で詳しく説明します](linux-preferences.md)。
+前のセクションで説明するさまざまな種類のデータのプライバシー制御については、「Defender for Endpoint on Linux での設定」 [で詳しく説明します](linux-preferences.md)。
 
 新しいポリシー設定と同様に、組織でポリシー設定を広く実装する前に、構成する設定が望ましい効果を得られるか確認するために、制限された制御された環境で慎重にテストする必要があります。
 
@@ -232,7 +232,7 @@ IT 管理者の場合は、エンタープライズ レベルでこれらのコ�
 |フィールド|説明|
 |---|---|
 |sha256|サポート ログの SHA256 識別子。|
-|size|サポート ログのサイズ。|
+|サイズ|サポート ログのサイズ。|
 |original_path|サポート ログへのパス (常に */var/opt/microsoft/mdatp/wdavdiag/ の下*)。|
 |format|サポート ログの形式。|
 

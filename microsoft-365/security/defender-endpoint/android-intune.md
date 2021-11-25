@@ -15,20 +15,20 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3b2094be06dd9d5f2543738082f9f76bb292609d
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: f08cf9ddc80e35d1c070fae5eef783496d38f208
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60754967"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164708"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-android-with-microsoft-intune"></a>Microsoft Intune を使用した Android 用 Microsoft Defender for Endpoint の展開
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
-
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -207,7 +207,7 @@ Defender for Endpoint は、Intune 経由で管理対象デバイスのデバイ
 
    :::image type="content" alt-text="デバイス構成プロファイルのイメージを作成します。" source="images/1autosetupofvpn.png":::
 
-2. **構成設定** 構成プロファイル **を一** 意 **に識別するための名前** と説明を指定します。
+2. **構成設定** 構成プロファイル **を一** 意に識別するための **名前** と説明を指定します。
 
    :::image type="content" alt-text="デバイス構成プロファイルのイメージ 名前と説明。" source="images/2autosetupofvpn.png":::
 

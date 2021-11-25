@@ -18,17 +18,19 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.topic: conceptual
-ms.openlocfilehash: 843a818ffd3507b55cff3c16d881c5e086efe90d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: cba3594fb70db560f2463dbf0fe778091a61e2b3
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60151979"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166112"
 ---
 # <a name="manage-endpoint-detection-and-response-capabilities"></a>エンドポイントの検出および応答機能の管理
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+**適用対象:**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 高度な検索を使用して、アラート キューの管理、デバイス リスト内のデバイスの調査、応答アクションの実行、組織内で発生する可能性がある脅威の検出を行います。
 

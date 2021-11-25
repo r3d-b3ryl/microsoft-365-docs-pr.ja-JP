@@ -2,8 +2,8 @@
 title: 単一の PowerShell ウィンドウですべての Microsoft 365 サービスに接続する
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
-ms.date: 02/02/2021
+manager: scotv
+ms.date: 11/23/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -18,12 +18,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: '概要: 単一の PowerShell ウィンドウですべての Microsoft 365 サービスに接続します。'
-ms.openlocfilehash: d7684debae5ba0cc6679acf7a0cb6f590cca11c5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4df9a16aba22587adbe289bca2d74e78a64db4ba
+ms.sourcegitcommit: b51bfed24a9e3b7adf82d4918b76462cd40dffaf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201711"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61153750"
 ---
 # <a name="connect-to-all-microsoft-365-services-in-a-single-powershell-window"></a>単一の PowerShell ウィンドウですべての Microsoft 365 サービスに接続する
 
@@ -236,10 +236,10 @@ Connect-MicrosoftTeams
 
 ## <a name="close-the-powershell-window"></a>PowerShell ウィンドウを閉じる
 
-PowerShell ウィンドウを閉じるために、次のコマンドを実行して Skype for Business Online、および Teams に対するアクティブなセッションを削除します。
+PowerShell ウィンドウを閉じるために、次のコマンドを実行して SharePoint Online および Teams に対するアクティブなセッションを削除します。
   
 ```powershell
-Remove-PSSession $sfboSession ; Disconnect-SPOService ; Disconnect-MicrosoftTeams 
+Disconnect-SPOService ; Disconnect-MicrosoftTeams 
 ```
 
 ## <a name="see-also"></a>関連項目

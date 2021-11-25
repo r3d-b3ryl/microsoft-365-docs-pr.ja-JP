@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 05/21/2018
 ms.technology: mde
-ms.openlocfilehash: 92a9a1f01ad8747719ecf41f16e1fb1f1c4f8625
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: a09f034ac35aa3380ea834eafc149eaad9a7cb3d
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60552694"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61169052"
 ---
 # <a name="review-events-and-errors-using-event-viewer"></a>イベント ビューアーを使用してイベントとエラーを確認する
 
@@ -29,7 +29,8 @@ ms.locfileid: "60552694"
 
 **適用対象:**
 - イベント ビューアー
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
@@ -55,12 +56,12 @@ ms.locfileid: "60552694"
 
    ****
 
-   |イベント ID|メッセージ|説明|Action|
+   |イベント ID|メッセージ|説明|アクション|
    |---|---|---|---|
    |1|Microsoft Defender for Endpoint service が開始されました (バージョン `variable` )。|システムの起動時、シャットダウン中、オンボーディング中に発生します。|通常の動作通知。アクションは必要ありません。|
    |2|Microsoft Defender for Endpoint service shutdown.|デバイスがシャットダウンまたはオフボードされている場合に発生します。|通常の動作通知。アクションは必要ありません。|
    |3|Microsoft Defender for Endpoint service の開始に失敗しました。 エラー コード: `variable` .|サービスが開始しなかった。|他のメッセージを確認して、考えられる原因とトラブルシューティングの手順を確認します。|
-   |4 |Microsoft Defender for Endpoint service がでサーバーに連絡しました `variable` 。|Variable = Defender for Endpoint 処理サーバーの URL。 <p> この URL は、ファイアウォールまたはネットワーク アクティビティに表示される URL と一致します。|通常の動作通知。アクションは必要ありません。|
+   |4|Microsoft Defender for Endpoint service がでサーバーに連絡しました `variable` 。|Variable = Defender for Endpoint 処理サーバーの URL。 <p> この URL は、ファイアウォールまたはネットワーク アクティビティに表示される URL と一致します。|通常の動作通知。アクションは必要ありません。|
    |5|Microsoft Defender for Endpoint service でサーバーへの接続に失敗しました `variable` 。|Variable = Defender for Endpoint 処理サーバーの URL。 <p> サービスは、その URL の外部処理サーバーに接続できません。|URL への接続を確認します。 「Configure [proxy and Internet connectivity」を参照してください](configure-proxy-internet.md)。|
    |6 |Microsoft Defender for Endpoint Service はオンボードされていないので、オンボーディング パラメーターが見つかりませんでした。|デバイスが正しくオンボードされていないので、ポータルに報告されません。|サービスを開始する前にオンボーディングを実行する必要があります。 <p> オンボーディング設定とスクリプトが適切に展開されていることを確認します。 構成パッケージを再展開してみてください。 <p> 「[オンボード デバイスWindows 10」を参照してください](configure-endpoints.md)。|
    |7 |Microsoft Defender for Endpoint service では、オンボーディング パラメーターの読み取りが失敗しました。 失敗: `variable` .|変数 = 詳細なエラーの説明。 デバイスが正しくオンボードされていないので、ポータルに報告されません。|オンボーディング設定とスクリプトが適切に展開されていることを確認します。 構成パッケージを再展開してみてください。 <p> 「[オンボード デバイスWindows 10」を参照してください](configure-endpoints.md)。|

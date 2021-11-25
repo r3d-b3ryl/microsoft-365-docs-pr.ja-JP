@@ -16,19 +16,21 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5e1364b19ac29f7d753c6d5b479303b8c0ef355b
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: cc935bd3d05c3a4f0e42b1382a94a5d744e27959
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61122455"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168440"
 ---
 # <a name="recommendation-resource-type"></a>おすすめリソースの種類
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**適用対象:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**適用対象:**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -61,26 +63,26 @@ Defender for Endpoint を試す場合は、 [無料試用版にサインアッ�
 
 |プロパティ|種類|説明|
 |---|---|---|
-|id|文字列|推奨事項 ID|
+|id|String|推奨事項 ID|
 |productName|文字列型 (String)|関連するソフトウェア名|
-|recommendationName|文字列|おすすめ名|
+|recommendationName|String|おすすめ名|
 |弱点|Long|検出された脆弱性の数|
-|ベンダー|文字列|関連ベンダー名|
-|recommendedVersion|文字列|推奨バージョン|
-|recommendedProgram|文字列|推奨プログラム|
-|recommendedVendor|文字列|推奨ベンダー|
-|recommendationCategory|文字列|おすすめカテゴリ。 使用できる値は、"Accounts"、"Application"、"Network"、"OS"、"SecurityControls" です。|
-|subCategory|文字列|おすすめサブカテゴリ|
+|ベンダー|String|関連ベンダー名|
+|recommendedVersion|String|推奨バージョン|
+|recommendedProgram|String|推奨プログラム|
+|recommendedVendor|String|推奨ベンダー|
+|recommendationCategory|String|おすすめカテゴリ。 使用できる値は、"Accounts"、"Application"、"Network"、"OS"、"SecurityControls" です。|
+|subCategory|String|おすすめサブカテゴリ|
 |severityScore|倍精度浮動小数点数|組織の Microsoft Secure Score for Devices に対する構成の潜在的な影響 (1-10)|
-|publicExploit|ブール値|パブリックエクスプロイトが利用可能|
-|activeAlert|ブール値|アクティブなアラートは、この推奨事項に関連付けられている|
+|publicExploit|Boolean|パブリックエクスプロイトが利用可能|
+|activeAlert|Boolean|アクティブなアラートは、この推奨事項に関連付けられている|
 |associatedThreats|String collection|脅威分析レポートは、この推奨事項に関連付けられている|
-|remediationType|文字列|修復の種類。 指定できる値は、"ConfigurationChange"、"Update"、"Upgrade"、"Uninstall" です。|
+|remediationType|String|修復の種類。 指定できる値は、"ConfigurationChange"、"Update"、"Upgrade"、"Uninstall" です。|
 |状態|列挙|推奨事項の例外の状態。 指定できる値は、"Active" と "Exception" です。|
 |configScoreImpact|倍精度浮動小数点数|デバイスの Microsoft Secure Score の影響|
 |exposureImpact|倍精度浮動小数点数|露出スコアの影響|
 |totalMachineCount|Long|インストールされているデバイスの数|
 |exposedMachinesCount|Long|脆弱性にさらされるインストール済みデバイスの数|
 |nonProductivityImpactedAssets|Long|影響を受けないデバイスの数|
-|relatedComponent|文字列|関連するソフトウェア コンポーネント|
+|relatedComponent|String|関連するソフトウェア コンポーネント|
 |

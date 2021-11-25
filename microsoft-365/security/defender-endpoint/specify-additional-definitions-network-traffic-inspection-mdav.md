@@ -17,20 +17,20 @@ ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a9deaa216de6cc8c744c6f8eca94dbf8868be0d6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f7b940604272035dc37b170eb759fa0ec45582b6
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60166256"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165872"
 ---
 # <a name="specify-additional-definition-sets-for-network-traffic-inspection"></a>ネットワーク トラフィック検査用の追加の定義セットを指定する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
-
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 グループ ポリシーを使用して、ネットワーク トラフィック検査の追加の定義セットを指定できます。
 

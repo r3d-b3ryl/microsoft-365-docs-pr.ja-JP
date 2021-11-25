@@ -15,19 +15,20 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 575df186af15628ec4d7d4162d100ea0d1974146
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: debb16afb5e9edbdac0b31916bf39fc72dd38220
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111401"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167888"
 ---
 # <a name="configure-defender-for-endpoint-on-android-features"></a>Android の機能でエンドポイント用 Defender を構成する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ## <a name="conditional-access-with-defender-for-endpoint-on-android"></a>Android 上のエンドポイント用 Defender を使用した条件付きアクセス
@@ -81,7 +82,7 @@ Android 上の Microsoft Defender for Endpoint のバージョン 1.0.3425.0303 
 
    - **名前**: この OMA-URI 設定の一意の名前と説明を入力して、後で簡単に見つけ出すことができるようにします。
    - OMA-URI: **./Vendor/MSFT/DefenderATP/DefenderTVMPrivacyMode**
-   - データ型: ドロップダウン リストで [整数] を選択します。
+   - [データ型]: ドロップダウン リストから [整数] を選択します。
    - 値: プライバシー設定を無効にするには 0 を入力します (既定では、値は 1 です)
 
 4. [次 **へ] を** クリックし、このプロファイルを対象のデバイス/ユーザーに割り当てる。
@@ -120,7 +121,7 @@ Defender for Endpoint は、作業プロファイル内のアプリの脆弱性�
 
    - **名前**: この OMA-URI 設定の一意の名前と説明を入力して、後で簡単に見つけ出すことができるようにします。
    - OMA-URI: **./Vendor/MSFT/DefenderATP/DefenderExcludeAppInReport**
-   - データ型: ドロップダウン リストで [整数] を選択します。
+   - [データ型]: ドロップダウン リストから [整数] を選択します。
    - 値: プライバシー設定を有効にするには 1 を入力します (既定では、値は 0 です)
 
 4. [次 **へ] を** クリックし、このプロファイルを対象のデバイス/ユーザーに割り当てる。

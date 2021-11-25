@@ -21,19 +21,19 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4b7c2b79892874fad37be382ba7eecea1b761fe7
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 0301b43aa950969867f408c2cfcfa961a2a1d039
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753567"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61163904"
 ---
 # <a name="get-live-response-results"></a>ライブ応答の結果を取得する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -55,20 +55,20 @@ ms.locfileid: "60753567"
 
 デバイスでセッションを開始する前に、次の要件を満たしていることを確認してください。
 
-- **サポートされているバージョンのファイルを** 実行Windows。
+- **サポートされているバージョンの Windows** を実行していることを確認します。
 
-  デバイスは、次のいずれかのバージョンのデバイスを実行している必要Windows
+  デバイスは、次のいずれかのバージョンの Windows を実行している必要があります
 
   - **Windows 10**
     - [バージョン 1909](/windows/whats-new/whats-new-windows-10-version-1909) 以降
-    - [バージョン 1903](/windows/whats-new/whats-new-windows-10-version-1903) [(KB4515384)](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)
-    - [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)のバージョン[1809 (RS 5)](/windows/whats-new/whats-new-windows-10-version-1809)
-    - [バージョン 1803 (RS 4)](/windows/whats-new/whats-new-windows-10-version-1803) [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
-    - [バージョン 1709 (RS 3)](/windows/whats-new/whats-new-windows-10-version-1709) [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
+    - [バージョン 1903](/windows/whats-new/whats-new-windows-10-version-1903)と[KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)
+    - [バージョン1809 (RS 5)](/windows/whats-new/whats-new-windows-10-version-1809)と [kb4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
+    - [ 1803 (バージョンRS 4)](/windows/whats-new/whats-new-windows-10-version-1803) と [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
+    - [バージョン1709 (RS 3)](/windows/whats-new/whats-new-windows-10-version-1709) と[KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
 
-  - **WindowsServer 2019 - パブリック プレビューにのみ適用**
-    - バージョン 1903 以降 [(KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)を使用)
-    - バージョン 1809 [(KB4537818 付](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)き)
+  - **Windows Server 2019 - パブリック プレビューにのみ適用**
+    - バージョン 1903 以降 ( [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) 以降
+    - バージョン 1809 ( [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818))
     
   - **Windows Server 2022**  
 
@@ -78,8 +78,8 @@ ms.locfileid: "60753567"
 
 |アクセス許可の種類|アクセス許可|アクセス許可の表示名|
 |---|---|---|
-Application|Machine.Read.All|''すべてのコンピューター プロファイルを読み取る'
-Application|"Machine.ReadWrite.All|'すべてのコンピューター情報の読み取りと書き込み'
+アプリケーション|Machine.Read.All|''すべてのコンピューター プロファイルを読み取る'
+アプリケーション|"Machine.ReadWrite.All|'すべてのコンピューター情報の読み取りと書き込み'
 |委任 (職場または学校のアカウント)|Machine.LiveResponse|特定のコンピューターでライブ応答を実行する|
 
 ## <a name="http-request"></a>HTTP 要求
@@ -93,7 +93,7 @@ id}/GetLiveResponseResultDownloadLink(index={command-index})
 
 |名前|種類|説明|
 |---|---|---|
-|Authorization|文字列|ベアラー {token}。必須。|
+|Authorization|String|ベアラー {token}。必須。|
 
 ## <a name="request-body"></a>要求本文
 

@@ -16,24 +16,25 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c8992e6f5f4d4d37de06862675f999891fc4853c
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 7f9f51e9ce31881d66ca8a8e72fa128c458229aa
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111641"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166172"
 ---
 # <a name="device-control-for-macos"></a>macOS のデバイスコントロール
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要件
 
 macOS のデバイスコントロールには、次の前提条件があります。
 
@@ -84,7 +85,7 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
 |**キー**|navigationTarget|
-|**データ型**|文字列|
+|**データ型**|String|
 |**コメント**|定義されていない場合、製品は、製品が実行したアクションを説明する汎用ページを指す既定の URL を使用します。|
 |
 

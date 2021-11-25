@@ -16,12 +16,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 09/22/2021
 ms.technology: mde
-ms.openlocfilehash: bbaf1dbee85ac02c1ad44cff78a7434b611e3c20
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: b506cf15e2d08568633533ba29af5e2f809c2134
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962593"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166520"
 ---
 # <a name="onboard-windows-devices-using-configuration-manager"></a>Configuration Manager をWindowsデバイスのオンボード
 
@@ -29,7 +29,8 @@ ms.locfileid: "60962593"
 
 **適用対象:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Microsoft Endpoint Configuration Manager現在のブランチ
 - System Center 2012 R2 Configuration Manager

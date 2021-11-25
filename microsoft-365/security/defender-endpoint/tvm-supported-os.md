@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8135ce430773eae051f1214e685638073ef07809
-ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
+ms.openlocfilehash: dffae27148d91ccedfd0009b1ce2942f75430824
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60899726"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164204"
 ---
 # <a name="supported-operating-systems-platforms-and-capabilities---for-threat-and-vulnerability-management"></a>サポートされているオペレーティング システム、プラットフォーム、および機能 - 脅威と脆弱性の管理
 
@@ -29,7 +29,7 @@ ms.locfileid: "60899726"
 
 **適用対象:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [脅威と脆弱性の管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -48,7 +48,7 @@ ms.locfileid: "60899726"
 :---|:---|:---|:---|:---|:---
 Windows 7|はい|サポート対象外|サポート対象外|サポート対象外|非サポート
 Windows 8.1|はい|はい|はい|はい|はい
-Windows 10バージョン 1607-1703|はい|サポート対象外|サポート対象外|サポート対象外|サポート対象外
+Windows 10バージョン 1607-1703|はい|非サポート|サポート対象外|サポート対象外|サポート対象外
 Windows 10バージョン 1709 以降|はい|はい|はい|はい|はい
 Windows 11|はい|はい|はい|はい|はい
 Windows Server 2008 R2|はい|はい|はい|はい|はい
@@ -63,8 +63,8 @@ Ubuntu 16.04 LTS 以上の LTS|はい|はい|はい|はい|はい
 Oracle Linux 7.2 以上|はい|はい|はい|はい|はい
 SUSE Linux Enterprise サーバー 12 以上|はい|はい|はい|はい|はい
 Linux Debian 9 以上 (プレビュー版)|はい|はい|はい|はい|はい
-Android 6.0 以上 (プレビュー版)|はい|はい|サポート対象外|サポート対象外|サポート対象外
-iOS 12.0 以上 (プレビューで)|はい|サポート対象外|サポート対象外|サポート対象外|サポート対象外
+Android 6.0 以上 (プレビュー版)|はい|はい|非サポート|サポート対象外|サポート対象外
+iOS 12.0 以上 (プレビューで)|はい|非サポート|サポート対象外|サポート対象外|サポート対象外
 
 > [!NOTE]
 > 一部の機能は、ダウンレベルのオペレーティング システムでは使用できません。サポートされている OS の詳細については、「Microsoft 365 Defender ポータル」を参照してください。

@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 76e7c0bc2057b44a46ecefca4ffa73ac8a55b33a
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 0e2103bbb26d84ef941efbd9aaf119c64d74c6d3
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555226"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164684"
 ---
 # <a name="better-together-microsoft-defender-antivirus-and-microsoft-defender-for-endpoint"></a>ベストな組み合わせ: Microsoft Defender Antivirus および Microsoft Defender for Endpoint
 
@@ -29,7 +29,8 @@ ms.locfileid: "60555226"
 
 **適用対象:**
 
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Microsoft Defender ウイルス対策は[、Microsoft Defender for Endpoint (Microsoft Defender for](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint) Endpoint) の次世代保護コンポーネントです。
 
@@ -42,7 +43,7 @@ Microsoft Defender for Endpoint では Microsoft 以外のウイルス対策ソ�
 |1|ウイルス対策信号の共有|Microsoft のアプリケーションとサービスは、企業組織全体で信号を共有し、より強力な単一プラットフォームを提供します。 「インサイト MICROSOFT Defender for Endpoint の[MITRE ATT&CK ベースの評価」を参照してください](https://www.microsoft.com/security/blog/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/)。|
 |2|デバイスの脅威分析とスコア|Microsoft Defender ウイルス対策分析と Microsoft Secure Score for [](/microsoft-365/security/defender-endpoint/threat-analytics) Devices で使用される基になるシステム[データを収集します](/microsoft-365/security/defender-endpoint/tvm-microsoft-secure-score-devices)。 これにより、組織のセキュリティ チームは、組織のセキュリティ体制を改善するための推奨事項や機会など、より有意義な情報を提供します。|
 |3|パフォーマンス|Microsoft Defender for Endpoint は、これらのサービスを一緒に使用Microsoft Defender ウイルス対策パフォーマンスが向上するように設計されています。 [エンドポイントMicrosoft Defender ウイルス対策](evaluate-microsoft-defender-antivirus.md)Microsoft [Defender を評価します](/microsoft-365/security/defender-endpoint/evaluate-mde)。|
-|4 |ブロックされたマルウェアの詳細|ブロックされたマルウェアの詳細とアクションは、Microsoft Defender ウイルス対策 Microsoft Defender for Endpoint で利用できます。 [マルウェアと他&を理解します](/windows/security/threat-protection/intelligence/understanding-malware)。|
+|4|ブロックされたマルウェアの詳細|ブロックされたマルウェアの詳細とアクションは、Microsoft Defender ウイルス対策 Microsoft Defender for Endpoint で利用できます。 [マルウェアと他&を理解します](/windows/security/threat-protection/intelligence/understanding-malware)。|
 |5|ネットワーク保護|組織のセキュリティ チームは、特定の URL と IP アドレスをブロックしてネットワークを保護できます。 [ネットワークを保護します](/microsoft-365/security/defender-endpoint/network-protection)。|
 |6 |ファイルのブロック|組織のセキュリティ チームは、特定のファイルをブロックできます。 [ネットワーク内のファイルを停止して検疫します](/microsoft-365/security/defender-endpoint/respond-file-alerts#stop-and-quarantine-files-in-your-network)。|
 |7 |攻撃表面の縮小|組織のセキュリティ チームは、脆弱性 (攻撃表面) を軽減し、攻撃者が攻撃を実行する方法を少なくすることができます。 攻撃表面の縮小では、複数のルールに対してクラウド保護が使用されます。 [攻撃表面の縮小の概要を確認します](/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction)。|
@@ -51,8 +52,8 @@ Microsoft Defender for Endpoint では Microsoft 以外のウイルス対策ソ�
 |10|ファイルを使用したファイルのOneDrive|Microsoft Defender ウイルス対策とMicrosoft Defender ウイルス対策[Office 365、デバイスが](/Office365/Enterprise)ランサムウェアによって攻撃されている場合、ファイルは保護および回復可能です。 [OneDrive ファイルの復元とWindows Defender、ランサムウェア保護をさらに一歩進めます](https://techcommunity.microsoft.com/t5/Microsoft-OneDrive-Blog/OneDrive-Files-Restore-and-Windows-Defender-takes-ransomware/ba-p/188001)。|
 |11|テクニカル サポート|Microsoft Defender for Endpoint と Microsoft Defender ウイルス対策を使用して、テクニカル サポートを呼び出す 1 つの会社があります。 [サービスの問題をトラブルシューティングし](/microsoft-365/security/defender-endpoint/troubleshoot-mde)[、イベント ログと](troubleshoot-microsoft-defender-antivirus.md)エラー コードを確認Microsoft Defender ウイルス対策。|
 
-## <a name="learn-more"></a>さらに詳しくは
+## <a name="learn-more"></a>詳細情報
 
 [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)
 
-[脅威&の管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+[脅威と脆弱性の管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)

@@ -16,21 +16,23 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4e7cbc65971c2f916d362e6a997d73e5581c9022
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: aa1eaf1cf26af415d134c6a8f0faed5643e787b5
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205501"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167804"
 ---
 # <a name="file-resource-type"></a>ファイル リソースの種類
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**適用対象:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**適用対象:** 
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -50,14 +52,14 @@ Defender for Endpoint のファイル エンティティを表します。
 
 ## <a name="properties"></a>プロパティ
 
-|プロパティ | 型 | 説明 |
+|プロパティ | 種類 | 説明 |
 |:---|:---|:---|
 |sha1 | String | ファイル コンテンツの Sha1 ハッシュ |
 |sha256 | String | ファイル コンテンツの Sha256 ハッシュ |
 |globalPrevalence | Null 許容長 | 組織全体でのファイルの普及率 |
 |globalFirstObserved | DateTimeOffset | ファイルが初めて観察された場合 |
 |globalLastObserved | DateTimeOffset | ファイルが最後に観察された時刻 |
-|size | Null 許容長 | ファイルのサイズ |
+|サイズ | Null 許容長 | ファイルのサイズ |
 |fileType | String | ファイルの種類 |
 |isPeFile | ブール値 | ファイルが移植可能な実行可能ファイルの場合は true ("DLL"、"EXE"など) |
 |filePublisher | String | ファイル発行元 |
@@ -65,7 +67,7 @@ Defender for Endpoint のファイル エンティティを表します。
 |署名者 | String | ファイル署名者 |
 |issuer | String | ファイル発行者 |
 |signerHash | String | 署名証明書のハッシュ |
-|isValidCertificate | ブール値 | Microsoft Defender for Endpoint エージェントによって証明書の署名が正常に確認されました |
+|isValidCertificate | Boolean | Microsoft Defender for Endpoint エージェントによって証明書の署名が正常に確認されました |
 |determinationType | String | ファイルの決定の種類 |
 |determinationValue | String | 判定値 |
 

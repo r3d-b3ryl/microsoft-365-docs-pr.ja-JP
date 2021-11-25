@@ -18,17 +18,18 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 957bf2479a4c9d49532b072a3c18d73b9b5e6966
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 774bad728b8cac0eadf71c3b97ceff0b1f9aabc8
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554986"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165188"
 ---
 # <a name="provide-feedback-on-the-microsoft-defender-for-endpoint-client-analyzer-tool"></a>Microsoft Defender for Endpoint クライアント アナライザー ツールに関するフィードバックを提供する
 
 **適用対象:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 Microsoft Defender for Endpoint クライアント アナライザーの改善に役立つフィードバックや提案がある場合は、次のいずれかのオプションを使用してフィードバックを送信してください。
 

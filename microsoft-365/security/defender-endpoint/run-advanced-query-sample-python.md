@@ -17,20 +17,21 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 260e191a2948544ee98223c8b7f1563719693c9c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fbd8c802ac528407a40249b553c76374d057369d
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154736"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165956"
 ---
 # <a name="advanced-hunting-using-python"></a>Python を使用した高度な追求
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**適用対象:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**適用対象:** 
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-- Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -44,7 +45,7 @@ Python を使用して高度なクエリを実行するには [、「Advanced Hu
 
 ## <a name="get-token"></a>トークンの取得
 
-- 次のコマンドを実行します。
+- 以下のコマンドを実行します。
 
 ```python
 import json
@@ -77,8 +78,8 @@ aadToken = jsonResponse["access_token"]
 どこ
 
 - tenantId: クエリを実行するテナントの ID (つまり、このテナントのデータに対してクエリが実行されます)
-- appId: Azure AD アプリの ID (アプリには、Microsoft Defender for Endpoint への 「高度なクエリの実行」 アクセス許可が必要です)
-- appSecret: Azure アプリAD秘密
+- appId: アプリの ID (Azure AD Microsoft Defender for Endpoint に対する 「高度なクエリの実行」 アクセス許可がアプリに必要です)
+- appSecret: アプリのAzure AD秘密
 
 ## <a name="run-query"></a>クエリの実行
 

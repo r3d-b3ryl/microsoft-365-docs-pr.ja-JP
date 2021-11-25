@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b9e6247a8bf17f047eade35fc1b2597fe8072ac4
-ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
+ms.openlocfilehash: 79c435618f03a8bdbd69638c66b728597cd63cab
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61148892"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165992"
 ---
 # <a name="review-microsoft-defender-antivirus-scan-results"></a>スキャンMicrosoft Defender ウイルス対策確認する
 
@@ -29,8 +29,8 @@ ms.locfileid: "61148892"
 
 
 **適用対象:**
-
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 オンデマンドスキャンMicrosoft Defender ウイルス対策、スケジュールされたスキャンの実行が完了すると、結果が[](run-scan-microsoft-defender-antivirus.md)記録され、結果[](scheduled-catch-up-scans-microsoft-defender-antivirus.md)を表示できます。 
 

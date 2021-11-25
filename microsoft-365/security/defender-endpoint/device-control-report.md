@@ -14,16 +14,17 @@ manager: dansimp
 audience: ITPro
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 88d7750519690717070e090ddc42042866412d33
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: f066610fec75b9c8f32e021460ae2f4b3471503c
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61109841"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165428"
 ---
 # <a name="device-control-report"></a>デバイス制御レポート
 
-**適用対象:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**適用対象:** 
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Microsoft Defender for Endpoint デバイスコントロールは、リムーバブル ストレージ デバイスや USB ドライブの使用など、組織内のデバイスによるメディアの使用を監視および制御することで、データ損失から保護します。
 

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: aa40768a2ed11c112bd6fc57575dce3e4db1146a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: cbd37d48477cdd9b0a0dc7c6c5703b96ffb4b89e
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152264"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168584"
 ---
 # <a name="remediation-activity-methods-and-properties"></a>修復アクティビティのメソッドとプロパティ
 
@@ -29,16 +29,16 @@ ms.locfileid: "60152264"
 
 **適用対象:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
+[!Include[Prerelease information](../../includes/prerelease.md)]
 
-[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+[!Include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
+[!Include[Improve request performance](../../includes/improve-request-performance.md)]
 
 API 応答には、テナント [& 脆弱性の管理](next-gen-threat-and-vuln-mgt.md)   された脅威と修復アクティビティが含まれる。
 
@@ -56,19 +56,19 @@ API 応答には、テナント [& 脆弱性の管理](next-gen-threat-and-vul
 
 プロパティ ID|データ型|説明
 :---|:---|:---
-category|String|修復アクティビティのカテゴリ (ソフトウェア/セキュリティ構成)
+カテゴリ|文字列|修復アクティビティのカテゴリ (ソフトウェア/セキュリティ構成)
 completerEmail|String|修復アクティビティが手動で誰かが完了した場合、この列には自分のメールが含まれる
 completerId|String|修復アクティビティが手動で誰かが完了した場合、この列にはオブジェクト ID が含まれる
 completionMethod|String|修復アクティビティは、"完了済みとしてマーク" を選択したユーザーが "自動的に" (すべてのデバイスにパッチが適用されている場合) または "手動" で完了できます。
 createdOn|DateTime|この修復アクティビティが作成された時刻
-description|String|この修復アクティビティの説明
+説明|String|この修復アクティビティの説明
 dueOn|DateTime|この修復アクティビティの作成者セットの期限
 fixedDevices||固定されているデバイスの数
-id|String|この修復アクティビティの ID
+ID|String|この修復アクティビティの ID
 nameId|String|関連する製品名
-priority|String|この修復アクティビティの作成者セットの優先度 (High\Medium\Low)
+優先度|String|この修復アクティビティの作成者セットの優先度 (High\Medium\Low)
 productId|String|関連する製品 ID
-productivityImpactRemediationType|String|いくつかの構成変更は、ユーザーに影響がないデバイスに対してだけ要求できます。 この値は、「すべての公開デバイス」または「ユーザーに影響を与えないデバイスのみ」の選択を示します。
+productivityImpactRemediationType|String|ユーザーに影響を与えないデバイスに対してだけ、いくつかの構成変更を要求できます。 この値は、「すべての公開デバイス」または「ユーザーに影響を与えないデバイスのみ」の選択を示します。
 rbacGroupNames|String|関連するデバイス グループ名
 recommendedProgram|String|にアップグレードする推奨プログラム
 recommendedVendor|String|アップグレードの推奨ベンダー
@@ -77,12 +77,12 @@ relatedComponent|String|この修復アクティビティの関連コンポー�
 requesterEmail|String|作成者の電子メール アドレス
 requesterId|String|Creator オブジェクト ID
 requesterNotes|String|この修復アクティビティに作成者が追加したメモ (フリー テキスト)
-scid|String|関連するセキュリティ推奨事項の SCID
-status|String|修復アクティビティの状態 (アクティブ/完了)
+Scid|String|関連するセキュリティ推奨事項の SCID
+状態|String|修復アクティビティの状態 (アクティブ/完了)
 statusLastModifiedOn|DateTime|状態フィールドが更新された日付
 targetDevices|Long|この修復が適用される公開デバイスの数
-title|String|この修復アクティビティのタイトル
-type|String|修復の種類
+Title|String|この修復アクティビティのタイトル
+型|String|修復の種類
 vendorId|String|関連ベンダー名
 
 ## <a name="see-also"></a>関連項目

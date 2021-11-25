@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6bae723100c0b465265c51e18bc60855ef41e6c2
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: db844645088806551231b8d26b9825340cf3a5ab
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554254"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164480"
 ---
 # <a name="helpful-microsoft-defender-for-endpoint-resources"></a>エンドポイントのリソースに役立つ Microsoft Defender
 
@@ -27,7 +27,7 @@ ms.locfileid: "60554254"
 
 
 **適用対象:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -51,7 +51,7 @@ ms.locfileid: "60554254"
 
 - [Defender for Endpoint Threat &脆弱性管理が一般公開されました!](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/MDATP-Threat-amp-Vulnerability-Management-now-publicly-available/ba-p/460977)
 
-## <a name="operational"></a>運用
+## <a name="operational"></a>運用中
 
 - [ゴールデン アワーのリメイク - 成功したセキュリティ操作の指標を定義する](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/The-Golden-Hour-remake-Defining-metrics-for-a-successful/ba-p/782014)
 

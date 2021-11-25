@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 10c6522a2c6ca612636a91e8a730c903912e49c7
-ms.sourcegitcommit: a15ea6bc8f60895e791a08a5a88d346c6581ea38
+ms.openlocfilehash: cfb1e69f050db2279d2994e46377dc36f2bd224b
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61144922"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167924"
 ---
 # <a name="overview-of-microsoft-defender-security-center"></a>Microsoft Defender セキュリティ センターの概要
 
@@ -29,7 +29,7 @@ ms.locfileid: "61144922"
 
 
 **適用対象:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 

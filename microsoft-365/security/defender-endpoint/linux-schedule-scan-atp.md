@@ -14,14 +14,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 89e4c7fa5462f65d11b36cad205e18ccbee8542b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ddb02d67866e675febda59fac15e8e494188a47f
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60211035"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166364"
 ---
 # <a name="schedule-scans-with-microsoft-defender-for-endpoint-linux"></a>Microsoft Defender for Endpoint (Linux) でのスキャンのスケジュール設定
+
+**適用対象:**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
 
 Linux のスキャンを実行するには、「サポートされている [コマンド」を参照してください](/microsoft-365/security/defender-endpoint/linux-resources#supported-commands)。
 
@@ -137,7 +141,7 @@ Puppet による自動化: Cron ジョブとスケジュールされたタスク
 
 詳細については、「[https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/](https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/)」を参照してください。
 
-## <a name="additional-information"></a>ページの先頭へ
+## <a name="additional-information"></a>追加情報
 
 ### <a name="to-get-help-with-crontab"></a>crontab のヘルプを表示するには
 

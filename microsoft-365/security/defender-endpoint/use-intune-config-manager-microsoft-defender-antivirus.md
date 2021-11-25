@@ -17,12 +17,12 @@ ms.technology: mde
 audience: ITPro
 ms.topic: how-to
 ms.collection: m365-security-compliance
-ms.openlocfilehash: eed1b0d19efe21d4bb1ba81dfb36964c6d80894c
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 74814304460c33b108b6216db853504f1956e59b
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60881716"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168380"
 ---
 # <a name="use-microsoft-endpoint-manager-to-configure-and-manage-microsoft-defender-antivirus"></a>[Microsoft エンドポイント マネージャーを使用して、構成および管理Microsoft Defender ウイルス対策
 
@@ -31,7 +31,8 @@ ms.locfileid: "60881716"
 
 **適用対象:**
 
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 このオプションを使用[Microsoft エンドポイント マネージャー](/mem/endpoint-manager-overview)スキャンをMicrosoft Defender ウイルス対策できます。 [Microsoft Intune](/mem/intune/fundamentals/what-is-intune)[構成マネージャーは](/mem/configmgr/core/understand/introduction)、このページの一部エンドポイント マネージャー。
 
@@ -54,7 +55,7 @@ ms.locfileid: "60881716"
 8. [レビュー **] + [保存] の選択**
 
 > [!TIP]
-> お困りの際は、 「Manage [endpoint security in Microsoft Intune」 を参照してください](/mem/intune/protect/endpoint-security)。
+> サポートが必要な場合 「Manage [endpoint security in Microsoft Intune」 を参照してください](/mem/intune/protect/endpoint-security)。
 
 ## <a name="related-articles"></a>関連記事
 

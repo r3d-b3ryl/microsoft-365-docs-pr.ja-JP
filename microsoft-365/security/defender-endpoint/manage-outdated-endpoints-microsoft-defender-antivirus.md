@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 1cddc1fd238c31f8e3f8f2646875fd1539b8723a
-ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
+ms.openlocfilehash: a708bf6ef34767b338c40cf8004e4c497658fc36
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61148856"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164444"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-scans-for-endpoints-that-are-out-of-date"></a>Microsoft Defender ウイルス対策の更新プログラムを管理し、古くなったエンドポイントをスキャンする
 
@@ -29,8 +29,8 @@ ms.locfileid: "61148856"
 
 
 **適用対象:**
-
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Microsoft Defender ウイルス対策を使用すると、エンドポイントが更新を回避できる期間や、更新およびスキャンが必要になる前に見逃す可能性があるスキャンの数を定義できます。 これは、デバイスが企業ネットワークや外部ネットワークに接続されがちな環境、または毎日使用されていないデバイスで特に役立ちます。
 

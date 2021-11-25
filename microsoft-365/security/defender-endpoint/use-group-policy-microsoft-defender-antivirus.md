@@ -16,12 +16,12 @@ ms.technology: mde
 audience: ITPro
 ms.topic: how-to
 ms.collection: m365-security-compliance
-ms.openlocfilehash: a8eb8db33a79ccb7d4cc9cd010a689e524746fad
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 0f9fa31ebe6b0eb5aced0aad2187adbd5a93db0d
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883679"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167936"
 ---
 # <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>グループ ポリシー設定を使用して、グループ ポリシーの構成とMicrosoft Defender ウイルス対策
 
@@ -30,7 +30,8 @@ ms.locfileid: "60883679"
 
 **適用対象:**
 
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 グループ ポリシーを[使用して](/windows/win32/srvnodes/group-policy)、エンドポイントのMicrosoft Defender ウイルス対策管理できます。
 
@@ -80,8 +81,8 @@ ms.locfileid: "60883679"
 |ネットワーク検査システム|ネットワーク トラフィック検査用の追加の定義セットを指定する|[ネットワーク トラフィック検査用の追加の定義セットを指定する](specify-additional-definitions-network-traffic-inspection-mdav.md)|
 |ネットワーク検査システム|定義の削除を有効にする|[定義の削除を構成する](turn-on-definition-retirement.md)|
 |ネットワーク検査システム|プロトコル認識を有効にする|[プロトコル認識を有効にする](turn-on-protocol-recognition.md)|
-|Quarantine|検疫フォルダーからアイテムを削除するローカル設定の上書きを構成する|[ユーザーによるポリシー設定のローカル変更を防止または許可する](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
-|Quarantine|検疫フォルダーからのアイテムの削除を構成する|[スキャンの修復をMicrosoft Defender ウイルス対策する](configure-remediation-microsoft-defender-antivirus.md)|
+|検疫する|検疫フォルダーからアイテムを削除するローカル設定の上書きを構成する|[ユーザーによるポリシー設定のローカル変更を防止または許可する](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
+|検疫する|検疫フォルダーからのアイテムの削除を構成する|[スキャンの修復をMicrosoft Defender ウイルス対策する](configure-remediation-microsoft-defender-antivirus.md)|
 |リアルタイム保護|コンピューター上のファイルとプログラムのアクティビティを監視するローカル設定の上書きを構成する|[ユーザーによるポリシー設定のローカル変更を防止または許可する](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
 |リアルタイム保護|受信および送信ファイルのアクティビティを監視するローカル設定の上書きを構成する|[ユーザーによるポリシー設定のローカル変更を防止または許可する](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
 |リアルタイム保護|ダウンロードしたファイルと添付ファイルをスキャンするローカル設定の上書きを構成する|[ユーザーによるポリシー設定のローカル変更を防止または許可する](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
@@ -98,7 +99,7 @@ ms.locfileid: "60883679"
 |修復|スケジュールされたフル スキャンを実行して修復を完了するために、時刻のローカル設定の上書きを構成する|[ユーザーによるポリシー設定のローカル変更を防止または許可する](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
 |修復|スケジュールされたフル スキャンを実行して修復を完了する日を指定する|[スケジュールされたスキャンMicrosoft Defender ウイルス対策構成する](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
 |修復|スケジュールされたフル スキャンを実行して修復を完了する時刻を指定する|[スケジュールされたスキャンMicrosoft Defender ウイルス対策構成する](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
-|レポート|拡張通知を無効にする|[エンドポイントに表示される通知を構成する](configure-notifications-microsoft-defender-antivirus.md)
+|Reporting|拡張通知を無効にする|[エンドポイントに表示される通知を構成する](configure-notifications-microsoft-defender-antivirus.md)
 |ルート|[オフにする] Microsoft Defender ウイルス対策|使用しない (インストールされているサード パーティ製ウイルス対策アプリが正しく動作するように、この設定を [構成されていない] に設定する必要があります)
 |ルート|プロキシ サーバーをバイパスするアドレスを定義する|[デバイス プロキシとインターネット接続の設定を構成する](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus)|
 |ルート|ネットワークに接続するためのプロキシの自動構成 (.pac) を定義する|[デバイス プロキシとインターネット接続の設定を構成する](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus)|

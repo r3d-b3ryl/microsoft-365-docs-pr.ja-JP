@@ -21,19 +21,19 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a81fa60b1b66c8eb735da72e1e2108df804b2ef1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1a986bf129361954953e3b29e5906c71a0f482ed
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206807"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61163124"
 ---
 # <a name="run-live-response-commands-on-a-device"></a>デバイスでライブ応答コマンドを実行する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 
 [!include[Prerelease information](../../includes/prerelease.md)]
@@ -68,20 +68,20 @@ ms.locfileid: "60206807"
 
 デバイスでセッションを開始する前に、次の要件を満たしていることを確認してください。
 
-- **サポートされているバージョンのファイルを** 実行Windows。
+- **サポートされているバージョンの Windows** を実行していることを確認します。
 
-  デバイスは、次のいずれかのバージョンのデバイスを実行している必要Windows
+  デバイスは、次のいずれかのバージョンの Windows を実行している必要があります
 
   - **Windows 10**
     - [バージョン 1909](/windows/whats-new/whats-new-windows-10-version-1909) 以降
-    - [バージョン 1903](/windows/whats-new/whats-new-windows-10-version-1903) [(KB4515384)](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)
-    - [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)のバージョン[1809 (RS 5)](/windows/whats-new/whats-new-windows-10-version-1809)
-    - [バージョン 1803 (RS 4)](/windows/whats-new/whats-new-windows-10-version-1803) [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
-    - [バージョン 1709 (RS 3)](/windows/whats-new/whats-new-windows-10-version-1709) [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
+    - [バージョン 1903](/windows/whats-new/whats-new-windows-10-version-1903)と[KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)
+    - [バージョン1809 (RS 5)](/windows/whats-new/whats-new-windows-10-version-1809)と [kb4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
+    - [ 1803 (バージョンRS 4)](/windows/whats-new/whats-new-windows-10-version-1803) と [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
+    - [バージョン1709 (RS 3)](/windows/whats-new/whats-new-windows-10-version-1709) と[KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
 
-  - **WindowsServer 2019 - パブリック プレビューにのみ適用**
-    - バージョン 1903 以降 [(KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)を使用)
-    - バージョン 1809 [(KB4537818 付](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)き)
+  - **Windows Server 2019 - パブリック プレビューにのみ適用**
+    - バージョン 1903 以降 ( [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) 以降
+    - バージョン 1809 ( [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818))
     
   - **Windows Server 2022**
 
@@ -102,14 +102,14 @@ POST https://api.securitycenter.microsoft.com/API/machines/{machine_id}/runliver
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-|名前|型|説明|
+|名前|種類|説明|
 |---|---|---|
 |Authorization|String|ベアラー\<token>\. 必須です。|
 |Content-Type|string|application/json. Required.|
 
 ## <a name="request-body"></a>要求本文
 
-|パラメーター|型|説明|
+|パラメーター|種類|説明|
 |---|---|---|
 |コメント|文字列|アクションに関連付けるコメント。|
 |コマンド|配列|実行するコマンド。 使用できる値は PutFile、RunScript、GetFile です。|
@@ -118,7 +118,7 @@ POST https://api.securitycenter.microsoft.com/API/machines/{machine_id}/runliver
 
 |コマンドの種類|パラメーター|説明|
 |---|---|---|
-|PutFile|キー: FileName <p> 値: \<file name\>|ライブラリからデバイスにファイルを置く。 ファイルは作業フォルダーに保存され、デバイスが既定で再起動すると削除されます。
+|PutFile|キー: FileName <p> 値: \<file name\>|ライブラリからデバイスにファイルを書き込みます。 ファイルは作業フォルダーに保存され、デバイスが既定で再起動すると削除されます。
 |RunScript|キー: ScriptName <br> 値: \<Script from library\> <p> キー: Args <br> 値: \<Script arguments\>|デバイス上のライブラリからスクリプトを実行します。 <p>  Args パラメーターはスクリプトに渡されます。 <p> 10 分後のタイムアウト。|
 |GetFile|キー: パス <br> 値: \<File path\>|デバイスからファイルを収集します。 注: パス内の円記号はエスケープする必要があります。|
 

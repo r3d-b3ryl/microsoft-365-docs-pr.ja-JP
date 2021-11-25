@@ -14,14 +14,21 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cf57eb6e08278625ac8887985a39d355266f47d5
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: cc1c2a5fc05b795c0fc69ebc8a3b50dbf556960b
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962929"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165476"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-protection"></a>Microsoft Defender for Endpoint Device Control リムーバブル Storage保護
+
+
+**適用対象:**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+[!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 Microsoft Defender for Endpoint のデバイス制御リムーバブル 記憶域保護により、ユーザー、エンドポイント、または両方が未承認のリムーバブル 記憶域メディアを使用できません。
 

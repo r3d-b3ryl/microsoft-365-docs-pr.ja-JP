@@ -16,18 +16,18 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 0b840da9ad0bda3360265f997c0473c4b70fadae
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 91e3acee5fb3ab2542c2beed4681f07959e9fe05
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556030"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167996"
 ---
 # <a name="configure-scheduled-quick-or-full-microsoft-defender-antivirus-scans"></a>スケジュールされたクイックまたは完全な Microsoft Defender ウイルス スキャンを構成する
 
 **適用対象:**
-
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 常時オン、リアルタイム保護、オンデマンドウイルス対策スキャンに加[](run-scan-microsoft-defender-antivirus.md)えて、定期的にスケジュールされたウイルス対策スキャンを設定できます。 スキャンの種類、スキャンが実行される場合、および保護更新後にスキャンが実行される場合、または[](manage-protection-updates-microsoft-defender-antivirus.md)エンドポイントが使用されていない場合に構成できます。 必要に応じて、特別なスキャンを設定して修復アクションを完了することもできます。
 

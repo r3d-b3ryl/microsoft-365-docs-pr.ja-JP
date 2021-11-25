@@ -1,7 +1,7 @@
 ---
 title: エンドポイントMicrosoft 365 Defenderの概要を評価する
 description: 試用版ラボまたはMicrosoft 365 Defender環境をセットアップします。 組織のデバイス、ID、データ、アプリを保護するようにセキュリティ ソリューションがどのように設計されているのかテストして体験します。
-keywords: Microsoft 365 Defender試し、テストMicrosoft 365 Defender、Microsoft 365 Defender評価ラボMicrosoft 365 Defender、パイロット、サイバー Microsoft 365 Defenderを評価するセキュリティ、高度な永続的脅威、エンタープライズ セキュリティ、デバイス、デバイス、ID、ユーザー、データ、アプリケーション、インシデント、自動調査と修復、高度な検索
+keywords: Microsoft 365 Defender試し、テストMicrosoft 365 Defender、評価Microsoft 365 Defender、Microsoft 365 Defenderラボ、Microsoft 365 Defender パイロット、サイバーセキュリティ、高度な永続的脅威、エンタープライズ セキュリティ、デバイス、デバイス、ID、ユーザー、データ、アプリケーション、インシデント、自動調査と修復、高度な狩猟
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,17 +21,17 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 948ebe7de82b4c187e5674bf5ed7042dedf7beb9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5101f17bef65f20cf537ad9526c6acbb4d567c2b
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157988"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168708"
 ---
 # <a name="evaluate-microsoft-365-defender-for-endpoint-overview"></a>エンドポイントMicrosoft 365 Defenderの概要を評価する
 
 **適用対象:**
-
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - Microsoft 365 Defender
 
 ![Microsoft 365 Defender評価およびパイロット プロセス。](../../media/defender/m365-defender-eval-process.png)

@@ -18,19 +18,20 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4713621ab19f54d77c79fcd86aaebedf5a5be6a4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: cc7af267b7512f3eeefcacaf0ca3a228e9749591
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199659"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164348"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Microsoft Defender for Endpoint プレビュー機能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -44,15 +45,15 @@ Defender for Endpoint プレビュー リリースの新機能について説明
 
 一般に利用可能な新機能の詳細については、「Defender for Endpoint の新機能 [」を参照してください](whats-new-in-microsoft-defender-atp.md)。
 
-## <a name="what-you-need-to-know"></a>知る必要があるもの
+## <a name="what-you-need-to-know"></a>知っておく必要があること
 
-パブリック プレビューで機能を操作する場合は、次の機能を使用します。
+パブリック プレビューの機能を使用する場合、その機能について次の点を理解している必要があります。
 
-- 機能が制限または制限されている可能性があります。 たとえば、この機能は 1 つのプラットフォームにのみ適用できます。
-- 通常、機能の変更は、一般に利用できる (GA) 前に行います。
-- Microsoft で完全にサポートされています。
-- 選択した地域またはクラウド環境でのみ使用できます。 たとえば、この機能が政府機関のクラウドに存在しない可能性があります。
-- プレビューの個々の機能には、使用およびサポートの制限が多い場合があります。 その場合、この情報は通常、機能のドキュメントに示されています。
+- 機能が制限されている可能性がある。 たとえば、その機能が 1 つのプラットフォームにのみ適用される場合があります。
+- 通常、その機能の一般提供 (GA) が開始される前に機能変更が行われる。
+- Microsoft によって完全にサポートされている。
+- 一部の地理的リージョンまたはクラウド環境でのみ利用可能な場合がある。 たとえば、その機能が政府機関向けクラウドには存在しない場合があります。
+- プレビュー段階の個々の機能には、使用とサポートに関してさらに制限がある場合があります。 そのような場合、通常は、制限に関する情報が機能ドキュメントに記載されています。
 - プレビュー バージョンは標準のサポート レベルで提供され、実稼働環境で使用できます。
 
 ## <a name="turn-on-preview-features"></a>プレビュー機能を有効にする

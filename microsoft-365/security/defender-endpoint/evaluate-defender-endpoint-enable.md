@@ -21,14 +21,17 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 0f8105c9acf921f024ead3f241f850d58de47ee0
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 39af377ce71cf1ba8e5e19e8fa786ef9498ab96f
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111461"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167828"
 ---
 # <a name="pilot-mde-evaluation"></a>パイロット MDE 評価
+
+**適用対象:**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > [!NOTE]
 > 一般的な展開を案内する目的で、このシナリオでは、このシナリオでは、ユーザーの使用のみをMicrosoft Endpoint Configuration Manager。 Defender for Endpoint は、他のオンボーディング ツールの使用をサポートしていますが、展開ガイドではこれらのシナリオについては説明しません。 詳細については、「デバイスを [Microsoft Defender for Endpoint にオンボードする」を参照してください](onboard-configure.md)。
@@ -67,7 +70,7 @@ ms.locfileid: "61111461"
 
 |エンドポイント|ツール オプション|
 |---|---|
-|**Windows**|[ローカル スクリプト (最大 10 台のデバイス)](../defender-endpoint/configure-endpoints-script.md) <p> [グループ ポリシー](../defender-endpoint/configure-endpoints-gp.md) <p> [Microsoft エンドポイント マネージャー/ モバイル デバイス マネージャー](../defender-endpoint/configure-endpoints-mdm.md) <p> [Microsoft Endpoint Configuration Manager](../defender-endpoint/configure-endpoints-sccm.md) <p> [VDI スクリプト](../defender-endpoint/configure-endpoints-vdi.md) <p> [Microsoft Defender for Cloud との統合](../defender-endpoint/configure-server-endpoints.md#integration-with-azure-defender)|
+|**Windows**|[ローカル スクリプト (最大 10 台のデバイス)](../defender-endpoint/configure-endpoints-script.md) <p> [グループ ポリシー](../defender-endpoint/configure-endpoints-gp.md) <p> [Microsoft エンドポイント マネージャー/ モバイル デバイス マネージャー](../defender-endpoint/configure-endpoints-mdm.md) <p> [Microsoft Endpoint Configuration Manager](../defender-endpoint/configure-endpoints-sccm.md) <p> [VDI スクリプト](../defender-endpoint/configure-endpoints-vdi.md) <p> [Microsoft Defender for Cloudとの統合](../defender-endpoint/configure-server-endpoints.md#integration-with-azure-defender) |
 |**macOS**|[ローカル スクリプト](../defender-endpoint/mac-install-manually.md) <p> [Microsoft エンドポイント マネージャー](../defender-endpoint/mac-install-with-intune.md) <p> [JAMF Pro](../defender-endpoint/mac-install-with-jamf.md) <p> [モバイル デバイス管理](../defender-endpoint/mac-install-with-other-mdm.md)|
 |**Linux Server**|[ローカル スクリプト](../defender-endpoint/linux-install-manually.md) <p> [Puppet](../defender-endpoint/linux-install-with-puppet.md) <p> [Ansible](../defender-endpoint/linux-install-with-ansible.md)|
 |**iOS**|[アプリベース](../defender-endpoint/ios-install.md)|

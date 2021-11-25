@@ -16,18 +16,19 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 15eef9097687e794c8aa88d8625fd481adb117af
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 355b3360fd4a36e762cd834c3460b7884fe37f87
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208615"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166556"
 ---
 # <a name="add-or-remove-machine-tags-api"></a>マシン タグ API の追加と削除
 
 **適用対象:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1 ](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2 ](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -70,7 +71,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/tags
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|型|説明
+名前|種類|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**。
 Content-Type|string|application/json. **必須**。
@@ -79,10 +80,10 @@ Content-Type|string|application/json. **必須**。
 
 要求本文で、JSON オブジェクトに次のパラメーターを指定します。
 
-パラメーター|型|説明
+パラメーター|種類|説明
 :---|:---|:---
 値|String|タグ名。 **必須**。
-アクション|列挙|追加または削除。 使用できる値は、'Add' または 'Remove' です。 **必須**
+アクション|列挙|追加または削除。 使用できる値は、'Add' または 'Remove' です。 **必須**。
 
 ## <a name="response"></a>応答
 

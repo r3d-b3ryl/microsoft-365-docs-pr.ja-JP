@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 49d61529c966771004ae9c7aed881f98a718bdec
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 4c73936bd32381988a03ad527a83847497eab71d
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60884111"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168320"
 ---
 # <a name="manage-microsoft-defender-antivirus-in-your-business"></a>ビジネスMicrosoft Defender ウイルス対策管理する
 
@@ -30,8 +30,10 @@ ms.locfileid: "60884111"
 
 **適用対象:**
 
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
-- [Microsoft Defender ウイルス対策](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- Microsoft Defender ウイルス対策
 
 次のツールを使用してMicrosoft Defender ウイルス対策を管理および構成できます。
 
@@ -39,7 +41,7 @@ ms.locfileid: "60884111"
 - [Microsoft Endpoint Configuration Manager](/mem/configmgr/protect/deploy-use/endpoint-protection-configure) (現在は一部Microsoft エンドポイント マネージャー)
 - [グループ ポリシー](./use-group-policy-microsoft-defender-antivirus.md)
 - [PowerShell コマンドレット](./use-powershell-cmdlets-microsoft-defender-antivirus.md)
-- [Windows管理インストルメンテーション (WMI)](./use-wmi-microsoft-defender-antivirus.md)
+- [Windows Management Instrumentation (WMI)](./use-wmi-microsoft-defender-antivirus.md)
 - [Microsoft Malware Protection コマンド ライン ユーティリティ](./command-line-arguments-microsoft-defender-antivirus.md)(このユーティリティとmpcmdrun.exeされます。 
 
 次の記事では、これらのツールを使用してこれらのツールを管理および構成するための詳細な情報、リンク、およびリソースMicrosoft Defender ウイルス対策。

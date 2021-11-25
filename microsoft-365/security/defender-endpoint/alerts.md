@@ -16,21 +16,21 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: e0d7649c4e39651cec8cdf293177abf66709964e
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 9171fe01cfe03769cac29110352cf4d0d9fe0061
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121377"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168824"
 ---
 # <a name="alert-resource-type"></a>アラート リソースの種類
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+>Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -64,7 +64,7 @@ Microsoft Defender ATP を試してみたいですか? [無料試用版にサイ
 
 |プロパティ|種類|説明|
 |---|---|---|
-|id|文字列|アラート ID。|
+|id|String|アラート ID。|
 |title|String|警告タイトル。|
 |説明|String|警告の説明。|
 |alertCreationTime|Null 許容の DateTimeOffset|アラートが作成された日付と時刻 (UTC)。|
@@ -76,21 +76,21 @@ Microsoft Defender ATP を試してみたいですか? [無料試用版にサイ
 |investigationId|Null 許容長|アラート [に](automated-investigations.md) 関連する調査 ID。|
 |investigationState|Null 許容列挙|調査の現在の [状態](automated-investigations.md)です。 指定できる値は、'Unknown'、'Terminated'、 'SuccessfullyRemediated', '良性', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallyInvestigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'unsupportedAlertType', 'unsupportedAlertType''|
 |assignedTo|String|アラートの所有者。|
-|rbacGroupName|文字列|RBAC デバイス グループ名。|
-|mitreTechniques|文字列|Mitre Enterprise ID。|
-|relatedUser|文字列|特定のアラートに関連するユーザーの詳細。|
+|rbacGroupName|String|RBAC デバイス グループ名。|
+|mitreTechniques|String|Mitre Enterprise ID。|
+|relatedUser|String|特定のアラートに関連するユーザーの詳細。|
 |severity|列挙|アラートの重大度。 指定できる値は、'UnSpecified'、'Informational'、'Low'、'Medium' および 'High' です。|
 |status|列挙|アラートの現在の状態を指定します。 指定できる値は、'Unknown'、'New'、'InProgress'、'Resolved' です。|
 |classification|Null 許容列挙|アラートの仕様。 指定できる値は、'Unknown'、'FalsePositive'、'TruePositive'です。|
 |決定|Null 許容列挙|アラートの決定を指定します。 指定できる値は、'NotAvailable'、'Apt'、'Malware'、'SecurityPersonnel'、'SecurityTesting'、'UnwantedSoftware'、'Other' です。|
-|category|文字列|アラートのカテゴリ。|
-|detectionSource|文字列|検出ソース。|
-|threatFamilyName|文字列|脅威ファミリ。|
-|threatName|文字列|脅威の名前。|
-|machineId|文字列|アラートに [関連付](machine.md) けられているコンピューター エンティティの ID。|
-|computerDnsName|文字列|[コンピューター](machine.md) の完全修飾名。|
-|aadTenantId|文字列|ユーザー ID Azure Active Directory ID。|
-|detectorId|文字列|アラートをトリガーした検出器の ID。|
+|category|String|アラートのカテゴリ。|
+|detectionSource|String|検出ソース。|
+|threatFamilyName|String|脅威ファミリ。|
+|threatName|String|脅威の名前。|
+|machineId|String|アラートに [関連付](machine.md) けられているコンピューター エンティティの ID。|
+|computerDnsName|String|[コンピューター](machine.md) の完全修飾名。|
+|aadTenantId|String|ユーザー ID Azure Active Directory ID。|
+|detectorId|String|アラートをトリガーした検出器の ID。|
 |comments|アラートコメントの一覧|Alert Comment オブジェクトには、コメント文字列、createBy 文字列、createTime 日付時刻が含まれます。|
 |証拠|アラート証拠の一覧|アラートに関連する証拠。 次の例を参照してください。|
 |

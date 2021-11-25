@@ -1,6 +1,6 @@
 ---
-title: Get domain related machines API
-description: Get domain related machines API を使用して、Microsoft Defender for Endpoint のドメインと通信するコンピューターを取得する方法について説明します。
+title: ドメイン関連のコンピューター API を取得する
+description: Get domain-related machines API を使用して、Microsoft Defender for Endpoint のドメインと通信したコンピューターを取得する方法について説明します。
 keywords: apis, graph api, supported apis, get, domain, related, devices
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,26 +16,27 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: df82c3c36ba4abf128eb11166e946f98d90e670d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c36094dcbd8367f54d07b9d672fc46b1d617592b
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191865"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168128"
 ---
-# <a name="get-domain-related-machines-api"></a>Get domain related machines API
+# <a name="get-domain-related-machines-api"></a>ドメイン関連のコンピューター API を取得する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+[!Include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
+[!Include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## <a name="api-description"></a>API の説明
 
@@ -60,8 +61,8 @@ ms.locfileid: "60191865"
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
 >
-> - ユーザーは、少なくとも次の役割のアクセス許可を持っている必要があります。 'データの表示' (詳細については、「 [役割](user-roles.md) の作成と管理」を参照してください)
-> - 応答には、デバイス グループの設定に基づいて、ユーザーがアクセスできるデバイスだけが含まれます (詳細については、「 [デバイス](machine-groups.md) グループの作成と管理」を参照してください)
+> - ユーザーには、少なくとも次の役割のアクセス許可が必要です。'データの表示' (詳細については、「役割の作成と [管理」を参照してください](user-roles.md))
+> - 応答には、デバイス グループの設定に基づいて、ユーザーがアクセスできるデバイスだけが含まれます (詳細については、「デバイス グループの作成と管理」 [を参照してください](machine-groups.md))
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -71,9 +72,9 @@ GET /api/domains/{domain}/machines
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|型|説明
+名前|種類|説明
 :---|:---|:---
-Authorization|String|ベアラー {token}。 **必須**
+Authorization|String|ベアラー {token}。 **必須**。
 
 ## <a name="request-body"></a>要求本文
 
@@ -87,7 +88,7 @@ Empty
 
 ### <a name="request"></a>要求
 
-以下は、要求の例です。
+要求の例を次に示します。
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/domains/api.securitycenter.microsoft.com/machines

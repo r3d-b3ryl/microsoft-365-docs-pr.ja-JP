@@ -18,17 +18,17 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 7f816c9762fd884431deb6fd61beeb02657e300b
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 6386ea1e0cd25db1b13d763d618b4ced315b858b
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554566"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168068"
 ---
 # <a name="troubleshoot-sensor-health-using-microsoft-defender-for-endpoint-client-analyzer"></a>Microsoft Defender for Endpoint Client Analyzer を使用したセンサーの正常性のトラブルシューティング
 
 **適用対象:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Microsoft Defender for Endpoint Client Analyzer (MDECA) は、Windows、Linux、または[](/microsoft-365/security/defender-endpoint/onboard-configure)macOS のいずれかを実行しているオンボード デバイスでセンサーの正常性または信頼性の問題を診断するときに役立ちます。 たとえば、セキュリティ ポータルに表示されるセンサーの正常性状態 [(非](/microsoft-365/security/defender-endpoint/fix-unhealthy-sensors) アクティブ、センサー データなし、または通信障害) に従って、異常と思われるコンピューターでアナライザーを実行できます。
 

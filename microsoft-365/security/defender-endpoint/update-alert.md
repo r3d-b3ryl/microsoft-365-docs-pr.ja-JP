@@ -16,37 +16,38 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b04abf5b0051d4b0849d88e30c8e5e31ee174a57
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b6154c4ed2374fd75416fee1107444ec72c15ddd
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60169649"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164192"
 ---
 # <a name="update-alert"></a>アラートを更新する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+[!Include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
+[!Include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## <a name="api-description"></a>API の説明
 既存の Alert のプロパティを [更新します](alerts.md)。
 
 コメントの **提出は** 、プロパティを更新する場合と更新しない場合に使用できます。
 
-更新可能なプロパティは `status` `determination` 、、、、 `classification` です `assignedTo` 。
+更新可能なプロパティは `status` `determination` 、、、 `classification` です `assignedTo` 。
 
 ## <a name="limitations"></a>制限事項
 
-1. API で使用可能なアラートを更新できます。 詳細については [、「アラートの一](get-alerts.md) 覧」を参照してください。
+1. API で使用可能なアラートを更新できます。 詳細については、「List [Alerts 」を参照してください](get-alerts.md)。
 2. この API のレート制限は、1 分あたり 100 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。
 
 ## <a name="permissions"></a>アクセス許可
@@ -61,8 +62,8 @@ ms.locfileid: "60169649"
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
 >
-> - ユーザーは、少なくとも次の役割のアクセス許可を持っている必要があります。 'アラートの調査' (詳細については、「 [役割](user-roles.md) の作成と管理」を参照してください)
-> - ユーザーは、デバイス グループ設定に基づいて、アラートに関連付けられたデバイスにアクセスできる必要[](machine-groups.md)があります (詳細については、「デバイス グループの作成と管理」を参照してください)
+> - ユーザーは、少なくとも次の役割のアクセス許可を持っている必要があります。 'アラートの調査' (詳細については、「役割の作成と [管理」を参照してください](user-roles.md) )
+> - ユーザーは、デバイス グループ設定に基づいて、アラートに関連付けられたデバイスにアクセスする必要があります (詳細については、「デバイス グループの作成と管理」 [を参照してください](machine-groups.md))
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -72,36 +73,36 @@ PATCH /api/alerts/{id}
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|型|説明
+名前|種類|説明
 :---|:---|:---
-Authorization|String|ベアラー {token}。 **必須**
+Authorization|String|ベアラー {token}。 **必須**。
 Content-Type|文字列|application/json. **必須**。
 
 ## <a name="request-body"></a>要求本文
 
 要求本文で、更新する必要がある関連フィールドの値を指定します。
 
-要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。
+要求本文に含まれていない既存のプロパティは、以前の値を維持するか、他のプロパティ値の変更に基づいて再計算されます。
 
 最適なパフォーマンスを得る場合は、変更していない既存の値を含めてはならない。
 
-プロパティ|型|説明
+プロパティ|種類|説明
 :---|:---|:---
-status|String|アラートの現在の状態を指定します。 プロパティの値は、'New'、'InProgress'、および 'Resolved' です。
+状態|String|アラートの現在の状態を指定します。 プロパティの値は、'New'、'InProgress'、および 'Resolved' です。
 assignedTo|String|アラートの所有者
-classification|String|アラートの仕様を指定します。 プロパティの値は、'Unknown'、'FalsePositive'、'TruePositive'です。
+分類|String|アラートの仕様を指定します。 プロパティの値は、'Unknown'、'FalsePositive'、'TruePositive'です。
 決定|String|アラートの決定を指定します。 プロパティの値は、'NotAvailable'、'Apt'、'Malware'、'SecurityPersonnel'、'SecurityTesting'、'UnwantedSoftware'、'Other' です。
-comment|String|警告に追加するコメント。
+コメント|文字列|警告に追加するコメント。
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは 200 OK[](alerts.md)を返し、更新されたプロパティを持つ応答本文のアラート エンティティを返します。 指定された ID を持つアラートが見つからなかった場合 - 404 Not Found。
+成功した場合、このメソッドは 200 OK[](alerts.md)を返し、更新されたプロパティを持つ応答本文のアラート エンティティを返します。 指定した ID を持つアラートが見つからなかった場合 - 404 Not Found。
 
 ## <a name="example"></a>例
 
 ### <a name="request"></a>要求
 
-以下は、要求の例です。
+要求の例を次に示します。
 
 ```http
 PATCH https://api.securitycenter.microsoft.com/api/alerts/121688558380765161_2136280442

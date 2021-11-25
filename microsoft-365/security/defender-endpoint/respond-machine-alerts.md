@@ -14,19 +14,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a992f457bab54ff53f3b134cfeba44f50b66af6e
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 6e2a55fb1dc924ba278510f6a379240cb9fba39e
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587411"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164792"
 ---
 # <a name="take-response-actions-on-a-device"></a>デバイスの対応措置を講じる
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-respondmachine-abovefoldlink)
 
@@ -73,7 +73,7 @@ ms.locfileid: "60587411"
 
 ## <a name="initiate-live-response-session"></a>ライブ応答セッションの開始
 
-ライブ応答は、リモート シェル接続を使用してデバイスに瞬時にアクセスできる機能です。 これにより、詳細な調査作業を行い、迅速に特定された脅威をリアルタイムに含める即時対応アクションを実行できます。
+ライブ応答は、リモート シェル接続を使用してデバイスに瞬時にアクセスできる機能です。 これにより、詳細な調査作業を行い、即座に対応アクションを実行して、特定された脅威をリアルタイムで迅速に含めることができるようになります。
 
 ライブ応答は、法医学データの収集、スクリプトの実行、分析のための疑わしいエンティティの送信、脅威の修復、および新たな脅威の予防的な捜しを可能にすることで、調査を強化するように設計されています。
 
@@ -119,7 +119,7 @@ ms.locfileid: "60587411"
 |スケジュールされたタスク|スケジュールされたタスク.CSVファイルが含まれています。これは、選択したデバイスで自動的に実行されるルーチンを識別して、自動的に実行するために設定された疑わしいコードを検索するために使用できます。|
 |セキュリティ イベント ログ|ログインまたはログアウトアクティビティのレコード、またはシステムの監査ポリシーで指定された他のセキュリティ関連イベントを含むセキュリティ イベント ログが含まれます。 <p><div class="alert"><b>注:</b> イベント ビューアーを使用してイベント ログ ファイルを開きます。</div>|
 |サービス|サービスとその状態.CSV一覧を示すファイルを格納します。|
-|Windowsサーバー メッセージ ブロック (SMB) セッション|ファイル、プリンター、シリアル ポートへの共有アクセスと、ネットワーク上のノード間のその他の通信を一覧表示します。 これは、データの外ろ過や横方向の動きを特定するのに役立ちます。 <p> SMBInboundSessions および SMBOutboundSession 用のファイルが含まれる。 <p> <div class="alert"><b>注:</b> セッション (受信または送信) がない場合は、SMB セッションが見つからないことを示すテキスト ファイルが表示されます。</div>|
+|Windows メッセージ ブロック (SMB) セッション|ファイル、プリンター、シリアル ポートへの共有アクセスと、ネットワーク上のノード間のその他の通信を一覧表示します。 これは、データの外ろ過や横方向の動きを特定するのに役立ちます。 <p> SMBInboundSessions および SMBOutboundSession 用のファイルが含まれる。 <p> <div class="alert"><b>注:</b> セッション (受信または送信) がない場合は、SMB セッションが見つからないことを示すテキスト ファイルが表示されます。</div>|
 |システム情報|OS のバージョンSystemInformation.txtネットワーク カードなどのシステム情報を一覧表示するファイルを格納します。|
 |一時ディレクトリ|システム内のすべてのユーザーの %Temp% にあるファイルを一覧表示する一連のテキスト ファイルが含まれる。 <p> これにより、攻撃者がシステムにドロップした疑わしいファイルを追跡するのに役立ちます。 <p> <div class="alert"><b>注:</b> ファイルに次のメッセージが含まれている場合は、"システムが指定したパスを見つけ"、このユーザーの一時ディレクトリが存在しないという意味であり、ユーザーがシステムにログインしなかったためである可能性があります。</div>|
 |ユーザーとグループ|グループとそのメンバーを表すファイルの一覧を提供します。|

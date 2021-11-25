@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4d31bce9aa3cc6c64771e0931c22849aa1d92eec
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 1d66221b1cdea7bd5a0399bb43663f024baa6374
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110081"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165635"
 ---
 # <a name="indicator-resource-type"></a>インジケーター リソースの種類
 
@@ -29,7 +29,8 @@ ms.locfileid: "61110081"
 
 **適用対象:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -51,23 +52,23 @@ ms.locfileid: "61110081"
 
 プロパティ|種類|説明
 :---|:---|:---
-id|文字列|Indicator エンティティ [の](ti-indicator.md) ID。
-indicatorValue|文字列|Indicator の [値](ti-indicator.md)です。
+id|String|Indicator エンティティ [の](ti-indicator.md) ID。
+indicatorValue|String|Indicator の [値](ti-indicator.md)です。
 indicatorType|列挙|インジケーターの種類。 指定できる値は、"FileSha1"、"FileSha256"、"FileMd5"、"CertificateThumbprint"、"IpAddress"、"DomainName"、"Url" です。
-アプリケーション|文字列|インジケーターに関連付けられているアプリケーション。
+アプリケーション|String|インジケーターに関連付けられているアプリケーション。
 action|列挙|インジケーターが組織内で検出される場合に実行されるアクション。 指定できる値は、"Warn"、"Block"、"Audit"、"Alert"、"AlertAndBlock"、"BlockAndRemediate"、"Allowed" です。
-|externalID|文字列|カスタム相関関係の要求で顧客が送信できる ID。|
+|externalID|String|カスタム相関関係の要求で顧客が送信できる ID。|
 sourceType|列挙|"User" ユーザーが作成したインジケーター (ポータルなど) の場合、API を介して自動アプリケーションを使用して送信された場合は"AadApp"。
 createdBySource|string|インジケーターを送信したユーザー/アプリケーションの名前。
 createdBy|String|インジケーターを送信したユーザー/アプリケーションの一意の ID。
-lastUpdatedBy|文字列|インジケーターを最後に更新したユーザー/アプリケーションの ID。
+lastUpdatedBy|String|インジケーターを最後に更新したユーザー/アプリケーションの ID。
 creationTimeDateTimeUtc|DateTimeOffset|インジケーターが作成された日時。
 expirationTime|DateTimeOffset|インジケーターの有効期限。
 lastUpdateTime|DateTimeOffset|インジケーターが最後に更新された時刻。
 severity|列挙|インジケーターの重大度。 指定できる値は、"Informational"、"Low"、"Medium"、"High" です。
 title|String|インジケーター のタイトル。
 説明|String|インジケーターの説明。
-recommendedActions|文字列|インジケーターの推奨アクション。
+recommendedActions|String|インジケーターの推奨アクション。
 rbacGroupNames|文字列の一覧|インジケーターが公開され、アクティブな RBAC デバイス グループ名。 すべてのデバイスに公開されている場合の空のリスト。
 rbacGroupIds|文字列の一覧|RBAC デバイス グループ ID は、インジケーターが公開され、アクティブな場所です。 すべてのデバイスに公開されている場合の空のリスト。
 generateAlert|列挙|**True** の場合は、アラートの生成が必要です。 **このインジケーターが** アラートを生成しない場合は False を指定します。

@@ -15,14 +15,18 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 60f59796f585e472673d5c230fcbe303460e7372
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 3a9ca21c6cc59e2516220dd04e659d22df0a74e6
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61109889"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164864"
 ---
 # <a name="device-control-printer-protection"></a>デバイス制御のプリンター保護
+
+**適用対象**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Microsoft Defender for Endpoint Device Control Printer Protection は、企業以外のプリンターまたは承認されていない USB プリンターを介してユーザーが印刷をブロックします。
 
@@ -66,7 +70,7 @@ Intune でのポリシー展開では、OMA-URI を使用してポリシーを�
 
 ****
 
-|Title|[説明]|CSP サポート | GPO サポート | ユーザー ベースのサポート | コンピューター ベースのサポート |
+|Title|説明|CSP サポート | GPO サポート | ユーザー ベースのサポート | コンピューター ベースのサポート |
 |---|---|:---:|:---:|:---:|:---:|
 |**デバイスコントロールの印刷制限を有効にする**|企業以外のプリンターを使用してユーザーの印刷をブロックする|はい|はい|はい|はい|
 |**承認済みの USB 接続印刷デバイスの一覧**\*|特定の USB プリンターを許可する|はい|はい|はい|はい|
