@@ -16,14 +16,17 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/19/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 625b5dc2743f42d35a652582827454b3178e1786
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 73234fd929406da475455baf21fbbf463216c660
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60881939"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61170298"
 ---
 # <a name="common-mistakes-to-avoid-when-defining-exclusions"></a>除外を定義する際に避ける必要のある一般的な間違い
+
+**適用対象:**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 スキャンしないアイテムの除外リストをMicrosoft Defender ウイルス対策できます。 このような除外されたアイテムには、デバイスを脆弱にする脅威が含まれている可能性があります。 この記事では、除外を定義するときに回避する必要がある一般的な間違いについて説明します。
 
@@ -289,6 +292,6 @@ ms.locfileid: "60881939"
 
 ## <a name="using-incorrect-environment-variables-as-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists"></a>ファイル名とフォルダー パスまたは拡張子の除外リストで不適切な環境変数をワイルドカードとして使用する
 
-Microsoft Defender ウイルス対策サービスは LocalSystem アカウントを使用してシステム コンテキストで実行されます。つまり、ユーザー環境変数ではなく、システム環境変数から情報を取得します。 除外リストでのワイルドカードとしての環境変数の使用は、システム変数と、NT AUTHORITY\SYSTEM アカウントとして実行されているプロセスに適用される変数に制限されます。 したがって、ユーザーの環境変数をワイルドカードとして使用しない場合は、フォルダー Microsoft Defender ウイルス対策除外を追加してください。 システム環境変数の完全 [な一覧については、「System 環境変数](configure-extension-file-exclusions-microsoft-defender-antivirus.md#system-environment-variables) 」の表を参照してください。
+Microsoft Defender ウイルス対策は、LocalSystem アカウントを使用してシステム コンテキストで実行されます。つまり、ユーザー環境変数ではなく、システム環境変数から情報を取得します。 除外リストでのワイルドカードとしての環境変数の使用は、システム変数と、NT AUTHORITY\SYSTEM アカウントとして実行されているプロセスに適用される変数に制限されます。 したがって、ユーザーの環境変数をワイルドカードとして使用しない場合は、フォルダー Microsoft Defender ウイルス対策除外を追加してください。 システム環境変数の完全 [な一覧については、「System 環境変数](configure-extension-file-exclusions-microsoft-defender-antivirus.md#system-environment-variables) 」の表を参照してください。
 
 除外 [リストでワイルドカードを使用する](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) 方法については、「ファイル名とフォルダー パスまたは拡張子の除外リストでワイルドカードを使用する」を参照してください。
