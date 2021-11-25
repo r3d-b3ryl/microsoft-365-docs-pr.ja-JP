@@ -16,19 +16,20 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2e2b3cc41d5baddaa5314a493dfeee07e20a8f72
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5f500c43aad99d36e2e40e0968f6093943c7f199
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205393"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61171187"
 ---
 # <a name="machine-resource-type"></a>コンピューター リソースの種類
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -45,7 +46,7 @@ ms.locfileid: "60205393"
 
 ****
 
-|メソッド|戻り値の型|説明|
+|メソッド|戻り値の型|Description|
 |---|---|---|
 |[マシンの一覧表示](get-machines.md)|[machine](machine.md) コレクション|組織のコンピューター [エンティティ](machine.md) のセットを一覧表示します。|
 |[コンピューターの取得](get-machine-by-id.md)|[コンピューター](machine.md)|コンピューターの [ID を](machine.md) 使用してコンピューターを取得します。|
@@ -68,7 +69,7 @@ ms.locfileid: "60205393"
 
 ****
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |---|---|---|
 |id|String|[マシン](machine.md) ID。|
 |computerDnsName|String|[コンピューター](machine.md) の完全修飾名。|
@@ -85,8 +86,8 @@ ms.locfileid: "60205393"
 |rbacGroupName|String|コンピューター グループ名。|
 |rbacGroupId|String|コンピューター グループ ID。|
 |riskScore|Null 許容列挙|Microsoft Defender for Endpoint によって評価されるリスク スコア。 指定できる値は、'None'、'Informational'、'Low'、'Medium'、および 'High' です。|
-|aadDeviceId|Null 許容表現 Guid|AAD デバイス ID ( [コンピューターが](machine.md) AAD 参加している場合)。|
-|machineTags|String コレクション|コンピューター タグ [の](machine.md) セット。|
+|aadDeviceId|Null 許容表現 Guid|AADデバイス ID ([コンピューターが参加](machine.md)している場合AAD)。|
+|machineTags|String collection|コンピューター タグ [の](machine.md) セット。|
 |exposureLevel|Null 許容列挙|Microsoft Defender for Endpoint によって評価される露出レベル。 指定できる値は、'None'、'Low'、'Medium'、および 'High' です。|
 |deviceValue|Null 許容列挙|デバイス [の値](tvm-assign-device-value.md)です。 指定できる値は、'Normal'、'Low'、および 'High' です。|
 |ipAddresses|IpAddress コレクション|***IpAddress オブジェクトの*** セット。 「Get [machines API」を参照してください](get-machines.md)。|

@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 654de92a89c85bb696aea8cc5ea88797d79b0726
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 36713496b5885866dd21a3402dcfe66b4af5b76e
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199743"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166772"
 ---
 # <a name="create-a-notification-rule-when-a-local-onboarding-or-offboarding-script-is-used"></a>ローカル オンボーディングスクリプトまたはオフボード スクリプトを使用する場合に通知ルールを作成する
 
@@ -28,7 +28,8 @@ ms.locfileid: "60199743"
 
 
 **適用対象:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -62,7 +63,7 @@ ms.locfileid: "60199743"
 
     ![通知フローのイメージ。](images/build-flow.png)
 
-4. +ボタンを選択して新しいアクションを追加します。 新しいアクションは、Defender for Endpoint セキュリティ センター デバイス API への HTTP 要求です。 また、既定の "WDATP Connector&quot; (アクション: &quot;Machines - Get list of machines") に置き換えすることもできます。
+4. +ボタンを選択して新しいアクションを追加します。 新しいアクションは、Defender for Endpoint セキュリティ センター デバイス API への HTTP 要求です。 また、既定の "WDATP Connector" (アクション: "Machines - Get list of machines") に置き換えすることもできます。
 
     ![繰り返しのイメージとアクションの追加。](images/recurrence-add.png)
 
@@ -201,7 +202,7 @@ ms.locfileid: "60199743"
   - 60 分ごとに:
     - 過去 7 日間に最後に見られたすべてのデバイスを使用します。
 
-- デバイスごとに次の値を指定します。
+- デバイスごとに:
   - 最後に表示されたプロパティが [-7 日、 -7days + 60 分] の 1 時間間隔にある場合は、-> オフボードの可能性を警告します。
   - 最初に表示された場合は、過去 1 時間のオンボーディング>アラートを表示します。
 

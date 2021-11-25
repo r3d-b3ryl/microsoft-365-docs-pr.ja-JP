@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 05e9eadb9047fd4a2c8a4d01ecefc3ec2f73f9db
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 27c480a0d4c95e79619e10f8fa42efb2c268b18c
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207991"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61171715"
 ---
 # <a name="use-basic-permissions-to-access-the-portal"></a>基本的なアクセス許可を使用してポータルにアクセスする
 
@@ -27,7 +27,8 @@ ms.locfileid: "60207991"
 
 **適用対象:**
 - Azure Active Directory
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-basicaccess-abovefoldlink)
@@ -48,7 +49,7 @@ ms.locfileid: "60207991"
 - フル アクセス (読み取りおよび書き込み)
 - 読み取り専用アクセス
 
-### <a name="before-you-begin"></a>はじめに
+### <a name="before-you-begin"></a>開始する前に
 
 - Azure PowerShell をインストールします。 詳細については、「How to install and configure Azure PowerShell」[を参照してください](https://azure.microsoft.com/documentation/articles/powershell-install-configure/)。
 
@@ -57,12 +58,12 @@ ms.locfileid: "60207991"
 
 - ConnectにAzure Active Directory。 詳細については[、「Connect-MsolService」を参照してください](/powershell/module/msonline/connect-msolservice)。
 
-  - **フル アクセス**: フル アクセスのユーザーは、ログイン、すべてのシステム情報の表示、アラートの解決、詳細な分析のためのファイルの送信、オンボーディング パッケージのダウンロードを行うことができます。 フル アクセス権を割り当てるには、ユーザーを "セキュリティ管理者" または "グローバル管理者" AAD 組み込みロールに追加する必要があります。
+  - **フル アクセス**: フル アクセスのユーザーは、ログイン、すべてのシステム情報の表示、アラートの解決、詳細な分析のためのファイルの送信、オンボーディング パッケージのダウンロードを行うことができます。 フル アクセス権を割り当てるには、ユーザーを組み込みの役割の "セキュリティ管理者" または "グローバル管理者" AAD追加する必要があります。
   - **読み取り専用アクセス**: 読み取り専用アクセス権を持つユーザーは、ログイン、すべての通知、および関連情報を表示できます。
 
     アラートの状態を変更したり、詳細な分析のためにファイルを送信したり、状態の変更操作を実行したりできない。
 
-    読み取り専用アクセス権を割り当てるには、ユーザーを "Security Reader" Azure AD組み込みロールに追加する必要があります。
+    読み取り専用アクセス権を割り当てるには、ユーザーを組み込みロールの "Security Reader" Azure AD追加する必要があります。
 
 セキュリティ ロールを割り当てるには、次の手順を使用します。
 

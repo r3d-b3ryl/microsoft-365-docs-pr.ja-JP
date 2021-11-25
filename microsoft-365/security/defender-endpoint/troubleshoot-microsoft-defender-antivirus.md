@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 0bf6b5ed0d59e445eba4f8146d8321cf5bff1bf9
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 3a6f6d9d88abec09fceb88fe2523df6a89750fb7
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60881717"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166652"
 ---
 # <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策ソフトウェアの問題をトラブルシューティングするため、イベント ログとエラー コードをレビューする
 
@@ -28,8 +28,7 @@ ms.locfileid: "60881717"
 
 
 **適用対象:**
-
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 問題が発生した場合Microsoft Defender ウイルス対策、このトピックの表を検索して、一致する問題と潜在的な解決策を見つける可能性があります。
 
@@ -359,9 +358,9 @@ Microsoft Defender ウイルス対策ログにイベントのWINDOWSを記録し
 <dt>名前: &lt;脅威名 &gt; </dt>
 <dt>ID: &lt; 脅威 ID &gt; </dt> 
 <dt> の重大度: &lt; 重大度 &gt; (たとえば、<ul>
-<li>低</li>
+<li>低い</li>
 <li>中</li>
-<li>高</li>
+<li>高い</li>
 <li>重大</li>
 </ul>
 </dt>
@@ -431,9 +430,9 @@ Microsoft Defender ウイルス対策、マルウェアなどの望ましくな�
 <dt>名: &lt; 脅威 &gt; 名</dt>
 <dt>ID: &lt; Threat ID &gt; </dt> 
 <dt> Severity: &lt; Severity (次 &gt; に示す場合)<ul>
-<li>低</li>
+<li>低い</li>
 <li>中</li>
-<li>高</li>
+<li>高い</li>
 <li>重大</li>
 </ul>
 </dt>
@@ -483,9 +482,9 @@ Microsoft Defender ウイルス対策その他の望ましくない可能性の�
 <dt>名: &lt; 脅威 &gt; 名</dt>
 <dt>ID: &lt; Threat ID &gt; </dt> 
 <dt> Severity: &lt; Severity (次 &gt; に示す場合)<ul>
-<li>低</li>
+<li>低い</li>
 <li>中</li>
-<li>高</li>
+<li>高い</li>
 <li>重大</li>
 </ul>
 </dt>
@@ -537,9 +536,9 @@ Microsoft Defender ウイルス対策アイテムを検疫から復元しまし�
 <dt>名前: &lt;脅威名 &gt; </dt>
 <dt>ID: &lt; 脅威 ID &gt; </dt> 
 <dt> の重大度: &lt; 重大度 &gt; (たとえば、<ul>
-<li>低</li>
+<li>低い</li>
 <li>中</li>
-<li>高</li>
+<li>高い</li>
 <li>重大</li>
 </ul>
 </dt>
@@ -579,9 +578,9 @@ Microsoft Defender ウイルス対策アイテムを検疫から復元しよう�
 <dt>名前: &lt;脅威名 &gt; </dt>
 <dt>ID: &lt; 脅威 ID &gt; </dt> 
 <dt> の重大度: &lt; 重大度 &gt; (たとえば、<ul>
-<li>低</li>
+<li>低い</li>
 <li>中</li>
-<li>高</li>
+<li>高い</li>
 <li>重大</li>
 </ul>
 </dt>
@@ -623,9 +622,9 @@ Microsoft Defender ウイルス対策アイテムを検疫から削除しまし�
 <dt>名前: &lt;脅威名 &gt; </dt>
 <dt>ID: &lt; 脅威 ID &gt; </dt> 
 <dt> の重大度: &lt; 重大度 &gt; (たとえば、<ul>
-<li>低</li>
+<li>低い</li>
 <li>中</li>
-<li>高</li>
+<li>高い</li>
 <li>重大</li>
 </ul>
 </dt>
@@ -666,9 +665,9 @@ Microsoft Defender ウイルス対策アイテムを検疫から削除しよう�
 <dt>名前: &lt;脅威名 &gt; </dt>
 <dt>ID: &lt; 脅威 ID &gt; </dt> 
 <dt> の重大度: &lt; 重大度 &gt; (たとえば、<ul>
-<li>低</li>
+<li>低い</li>
 <li>中</li>
-<li>高</li>
+<li>高い</li>
 <li>重大</li>
 </ul>
 </dt>
@@ -772,9 +771,9 @@ Microsoft Defender ウイルス対策疑わしい動作が検出されました�
 <dt>名前: &lt;脅威名 &gt; </dt>
 <dt>ID: &lt; 脅威 ID &gt; </dt> 
 <dt> の重大度: &lt; 重大度 &gt; (たとえば、<ul>
-<li>低</li>
+<li>低い</li>
 <li>中</li>
-<li>高</li>
+<li>高い</li>
 <li>重大</li>
 </ul>
 </dt>
@@ -847,9 +846,9 @@ Microsoft Defender ウイルス対策または他の望ましくない可能性�
 <dt>名前: &lt;脅威名 &gt; </dt>
 <dt>ID: &lt; 脅威 ID &gt; </dt> 
 <dt> の重大度: &lt; 重大度 &gt; (たとえば、<ul>
-<li>低</li>
+<li>低い</li>
 <li>中</li>
-<li>高</li>
+<li>高い</li>
 <li>重大</li>
 </ul>
 </dt>
@@ -926,9 +925,9 @@ Microsoft Defender ウイルス対策、マルウェアなどの望ましくな�
 <dt>名前: &lt;脅威名 &gt; </dt>
 <dt>ID: &lt; 脅威 ID &gt; </dt> 
 <dt> の重大度: &lt; 重大度 &gt; (たとえば、<ul>
-<li>低</li>
+<li>低い</li>
 <li>中</li>
-<li>高</li>
+<li>高い</li>
 <li>重大</li>
 </ul>
 </dt>
@@ -977,15 +976,15 @@ UAC </dt>
 <dt>アクションの状態: &lt;追加のアクションの &gt; 説明</dt>
 <dt>エラー コード: &lt; エラー コード &gt; 脅威の状態に関連付けられた結果コード。標準の HRESULT 値。</dt>
 <dt>エラーの説明: &lt;エラーの &gt; 説明 エラーの説明。</dt>
-<dt>署名バージョン: &lt;定義 &gt; </dt>バージョン エンジンのバージョン
-<dt>: &lt; マルウェア対策エンジン &gt; </dt>バージョン NOTE: Microsoft Defender ウイルス対策、Microsoft Security Essentials、悪意のあるソフトウェアの削除ツール、または System Center Endpoint Protection がマルウェアを検出すると、マルウェアが変更された可能性のある次のシステム設定とサービスが復元されます。<ul>
+<dt>署名バージョン: &lt;定義バージョン &gt; </dt>
+<dt>エンジンのバージョン: &lt; マルウェア対策エンジン &gt; </dt>バージョン NOTE: Microsoft Defender ウイルス対策、Microsoft Security Essentials、悪意のあるソフトウェアの削除ツール、またはSystem Center Endpoint Protection検出されると、マルウェアが変更した可能性のある次のシステム設定とサービスが復元されます。<ul>
 <li>既定Internet ExplorerまたはMicrosoft Edge設定</li>
 <li>ユーザー アクセス制御の設定</li>
 <li>Chrome の設定</li>
 <li>ブート コントロール データ</li>
 <li>Regedit と Task Manager のレジストリ設定</li>
-<li>Windows更新、バックグラウンド インテリジェント転送サービス、およびリモート プロシージャ 通話サービス</li>
-<li>Windowsオペレーティング システム ファイル</li></ul>
+<li>Windows、バックグラウンド インテリジェント転送サービス、およびリモート プロシージャ 通話サービス</li>
+<li>Windows オペレーティング システム ファイル</li></ul>
 上記のコンテキストは、次のクライアントとサーバーのバージョンに適用されます。
 <table>
 <tr>
@@ -997,7 +996,7 @@ UAC </dt>
 クライアント オペレーティング システム
 </td>
 <td>
-WindowsVista (Service Pack 1、または Service Pack 2) Windows 7 以降
+Windows Vista (Service Pack 1、または Service Pack 2)、Windows 7 以降
 </td>
 </tr>
 <tr>
@@ -1005,7 +1004,7 @@ WindowsVista (Service Pack 1、または Service Pack 2) Windows 7 以降
 サーバー オペレーティング システム
 </td>
 <td>
-WindowsServer 2008、Windows Server 2008 R2、Windows Server 2012、およびWindows Server 2016
+Windows Server 2008、Windows Server 2008 R2、Windows Server 2012、およびWindows Server 2016
 </td>
 </tr>
 </table>
@@ -1048,9 +1047,9 @@ Microsoft Defender ウイルス対策その他の望ましくない可能性の�
 <dt>名前: &lt;脅威名 &gt; </dt>
 <dt>ID: &lt; 脅威 ID &gt; </dt> 
 <dt> の重大度: &lt; 重大度 &gt; (たとえば、<ul>
-<li>低</li>
+<li>低い</li>
 <li>中</li>
-<li>高</li>
+<li>高い</li>
 <li>重大</li>
 </ul>
 </dt>
@@ -1140,9 +1139,9 @@ Microsoft Defender ウイルス対策その他の望ましくない可能性の�
 <dt>名前: &lt;脅威名 &gt; </dt>
 <dt>ID: &lt; 脅威 ID &gt; </dt> 
 <dt> の重大度: &lt; 重大度 &gt; (たとえば、<ul>
-<li>低</li>
+<li>低い</li>
 <li>中</li>
-<li>高</li>
+<li>高い</li>
 <li>重大</li>
 </ul>
 </dt>
@@ -1204,7 +1203,7 @@ UAC </dt>
 クライアントMicrosoft Defender ウイルス対策、重大な問題が原因でこのエラーが発生しました。 エンドポイントが保護されていない可能性があります。 エラーの説明を確認し、以下の関連する <b>ユーザー アクションの手順に</b> 従います。
 <table>
 <tr>
-<th>Action</th>
+<th>アクション</th>
 <th>ユーザー操作</th>
 </tr>
 <tr>
@@ -1356,13 +1355,13 @@ Microsoft Defender ウイルス対策は正常な状態で稼働しています�
 <dt> &lt; 現在 &gt; </dt>のプラットフォームバージョン エンジンバージョン: マルウェア対策エンジン バージョン ネットワークリアルタイム検査エンジンバージョン
 <dt>: &lt; &gt; </dt>ネットワークリアルタイム検査エンジンバージョン ウイルス対策署名バージョン
 <dt>: &lt; &gt; </dt>ウイルス対策署名バージョン
-<dt> &lt; &gt; Antispyware</dt>署名バージョン: スパイウェア対策署名バージョン ネットワークリアルタイム検査署名バージョン
-<dt>: &lt; ネットワークリアルタイム&gt;</dt>検査署名バージョン RTP 状態: リアルタイム保護状態 (有効または無効
+<dt> &lt; &gt; Antispyware</dt>署名バージョン: スパイウェア対策署名バージョン ネットワークリアルタイム検査署名
+<dt>バージョン: &lt;ネットワークリアルタイム &gt; </dt>検査署名バージョン RTP 状態: リアルタイム保護状態 (有効または無効
 <dt> &lt; &gt; )</dt>OA 状態: On Access 状態 (有効または無効
-<dt> &lt; &gt; )</dt>IOAV 状態: IE のダウンロードと Outlook Express Attachments 状態 (有効または無効) BM 状態: 動作監視状態 (有効または無効
-<dt> &lt; &gt; </dt>
-<dt> &lt; &gt; )</dt>ウイルス対策署名の年齢: ウイルス対策署名の年齢
-<dt> &lt; &gt; (日)</dt>
+<dt> &lt; &gt; )</dt>IOAV 状態: IE のダウンロードと Outlook Express Attachments 状態 (有効または無効
+<dt> &lt; &gt; )</dt>BM 状態: 動作監視状態
+<dt> &lt; &gt; (有効</dt>または無効)
+<dt> &lt; &gt; ウイルス対策署名の年齢: ウイルス対策署名の年齢 (日数)</dt>
 <dt>スパイウェア対策の署名の年齢: &lt;&gt;Antispyware</dt>署名の年齢 (日) 最後のクイック スキャンの時間: 最後のクイック スキャンの時間
 <dt>(日 &lt; &gt; )</dt>最後のフル スキャンの時間: 最後のフル スキャンの年齢
 <dt>(日 &lt; &gt; )</dt>ウイルス対策署名の作成
@@ -2225,7 +2224,7 @@ Microsoft Defender ウイルス対策 Real-Time保護機能でエラーが発生
 説明:
 </td>
 <td >
-Microsoft Defender ウイルス対策リアルタイム保護が機能を再起動しました。 完全なシステム スキャンを実行して、このエージェントがダウンしている間に見つからない可能性があるアイテムを検出してください。
+Microsoft Defender ウイルス対策保護が機能を再起動しました。 完全なシステム スキャンを実行して、このエージェントがダウンしている間に見つからない可能性があるアイテムを検出してください。
 <dl>
 <dt>フィーチャー: &lt; フィーチャー &gt; (例:
 <ul>
@@ -3114,7 +3113,7 @@ Microsoft Defender ウイルス対策内で検出された脅威を修復でき�
 </tr>
 </table>
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [保護に関するMicrosoft Defender ウイルス対策レポート](report-monitor-microsoft-defender-antivirus.md)
 - [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)

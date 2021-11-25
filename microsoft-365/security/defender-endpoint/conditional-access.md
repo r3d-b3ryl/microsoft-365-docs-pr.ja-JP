@@ -16,19 +16,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 93b547718bca2fb157c3b4e0a4b08d383ec92e4f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8ee1b1542eb2e737da509ce12ad9c2a605a4ffa5
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196995"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61170552"
 ---
 # <a name="enable-conditional-access-to-better-protect-users-devices-and-data"></a>条件付きアクセスを有効にして、ユーザー、デバイス、およびデータをより良く保護する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-conditionalaccess-abovefoldlink)
@@ -55,7 +56,7 @@ Intune でポリシーを構成する方法に応じて、条件付きアクセ�
 
 たとえば、リスクが高いデバイスに条件付きアクセスを適用する Intune を構成できます。
 
-Intune では、デバイス コンプライアンス ポリシーが Azure AD条件付きアクセスと組み合わせて使用して、アプリケーションへのアクセスをブロックします。 並行して、自動調査と修復プロセスが開始されます。
+Intune では、デバイス コンプライアンス ポリシーは、アプリケーションへのアクセスをブロックAzure AD条件付きアクセスと組み合わせて使用されます。 並行して、自動調査と修復プロセスが開始されます。
 
  自動調査と修復が行なっている間も、ユーザーはデバイスを使用できますが、脅威が完全に修復されるまでエンタープライズ データへのアクセスはブロックされます。
 
@@ -75,7 +76,7 @@ Intune では、デバイス コンプライアンス ポリシーが Azure AD�
 
 1. ユーザーが悪意のあるファイルを開き、Defender for Endpoint はデバイスにリスクの高いフラグを設定します。
 2. 高リスク評価は Intune に渡されます。 並行して、特定された脅威を修復するために自動調査が開始されます。 また、特定された脅威を修復するために手動で修復することもできます。
-3. Intune で作成されたポリシーに基づいて、デバイスは準拠していないとマークされます。 その後、評価は Intune 条件付きアクセス ADによって Azure サーバーに伝達されます。 Azure ADでは、対応するポリシーが適用され、アプリケーションへのアクセスがブロックされます。
+3. Intune で作成されたポリシーに基づいて、デバイスは準拠していないとマークされます。 その後、Intune 条件付きアクセス ポリシー Azure ADに評価が伝達されます。 このAzure AD、対応するポリシーが適用され、アプリケーションへのアクセスがブロックされます。
 4. 手動または自動化された調査と修復が完了し、脅威が削除されます。 Defender for Endpoint では、デバイスにリスクがないと見なされ、Intune はデバイスが準拠状態にあると評価します。 Azure ADアプリケーションへのアクセスを許可するポリシーを適用します。
 5. これで、ユーザーはアプリケーションにアクセスできます。
 

@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8371129ff1b64681aee018802205a5f5a359fd86
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 52fdf612ac86c1a0cc99220793461507f86a6fe3
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209479"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61170553"
 ---
 # <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-macos"></a>macOS での Microsoft Defender for Endpoint のインストールの問題のトラブルシューティング
 
@@ -31,14 +31,15 @@ ms.locfileid: "60209479"
 **適用対象:**
 
 - [macOS 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 ## <a name="installation-failed"></a>インストールに失敗しました
 
-手動インストールの場合、インストール ウィザードの [概要] ページには、「インストール中にエラーが発生しました。 インストーラーでエラーが発生し、インストールに失敗しました。 ソフトウェア製造元にお問い合わせください。" MDM の展開では、一般的なインストールエラーとして表示されます。
+手動インストールの場合、インストール ウィザードの [概要] ページには、「インストール中にエラーが発生しました。 インストーラーでエラーが発生し、インストールに失敗しました。 ソフトウェア発行元に問い合わせてサポートを受けてください。 MDM の展開では、一般的なインストールエラーとして表示されます。
 
 エンド ユーザーに正確なエラーは表示されませんが、インストールの進行状況を示すログ ファイルを保持します `/Library/Logs/Microsoft/mdatp/install.log` 。 このログ ファイルには、各インストール セッションが追加されます。 最後のインストール `sed` セッションのみを出力するために使用できます。
 
@@ -59,7 +60,7 @@ preinstall com.microsoft.wdav end [2020-03-11 13:08:49 -0700] 804 => 1
 ## <a name="mdatp-install-log-missing-or-not-updated"></a>MDATP インストール ログが見つからないか更新されない
 
 まれに、インストールは MDATP の /Library/Logs/Microsoft/mdatp/install.log ファイルにトレースを残しません。
-macOS ログを照会することで、インストールが発生したことを確認し、エラーを分析できます (クライアント UI がない場合、MDM の展開に役立ちます)。 膨大な量の情報が含むので、狭いタイム ウィンドウを使用してクエリを実行し、ログ プロセス名でフィルター処理することをお勧めします。
+最初に、インストールが発生したことを確認します。 次に、macOS ログを照会して、考えられるエラーを分析します。 クライアント UI がない場合は、MDM 展開でこれを行うのが便利です。 膨大な量の情報が含むので、狭いタイム ウィンドウを使用してクエリを実行し、ログ プロセス名でフィルター処理することをお勧めします。
 
 ```bash
 grep '^2020-03-11 13:08' /var/log/install.log

@@ -16,19 +16,20 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 08a280130f7bd7566c0ef3998034998b5eff5ef6
-ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
+ms.openlocfilehash: 2bb199a8ca0f8734da6562304b15cbf2cb4170cf
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2021
-ms.locfileid: "60804781"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167420"
 ---
 # <a name="microsoft-defender-for-endpoint-alert-fields"></a>Microsoft Defender for Endpoint アラート フィールド
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-apiportalmapping-abovefoldlink)
@@ -54,7 +55,7 @@ ms.locfileid: "60804781"
 > |ポータル ラベル|SIEM フィールド名|ArcSight フィールド|値の例|説明|
 > |---|---|---|---|---|
 > |1|AlertTitle|name|Microsoft Defender AV が 「ミカッツ」 の重大度の高いマルウェアを検出しました|すべての検出で使用可能な値。|
-> |2|重要度|deviceSeverity|高|すべての検出で使用可能な値。|
+> |2|重要度|deviceSeverity|高い|すべての検出で使用可能な値。|
 > |3|カテゴリ|deviceEventCategory|マルウェア|すべての検出で使用可能な値。|
 > |4|検出ソース|sourceServiceName|ウイルス対策|Microsoft Defender ウイルス対策または Defender for Endpoint。 すべての検出で使用可能な値。|
 > |5|MachineName|sourceHostName|desktop-4a5ngd6|すべての検出で使用可能な値。|
@@ -101,7 +102,7 @@ ms.locfileid: "60804781"
 
 :::image type="content" alt-text="イメージ アクターアラート。" source="images/atp-mapping7.png" lightbox="images/atp-mapping7.png":::
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [エンドポイント向け Microsoft Defender で SIEM 統合を有効にする](enable-siem-integration.md)
 - [エンドポイント検出用の Microsoft Defender をプルする ArcSight の構成](configure-arcsight.md)

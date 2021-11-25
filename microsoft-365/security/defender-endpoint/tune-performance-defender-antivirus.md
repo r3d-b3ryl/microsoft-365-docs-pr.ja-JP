@@ -14,14 +14,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 00e03927696d32eb72991a5eaa82643325b59925
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: ec7fb61d548cd5f214a52eed5ff49b454a40a743
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110441"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167660"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>パフォーマンス アナライザー (Microsoft Defender ウイルス対策
+
+**適用対象**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 **パフォーマンス アナライザー Microsoft Defender ウイルス対策とは**
 
@@ -87,7 +91,7 @@ ms.locfileid: "61110441"
 
 - **変換するには**: `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:1000). TopScans | ConvertTo-Json -Depth:1`
 
-### <a name="requirements"></a>Requirements
+### <a name="requirements"></a>要件
 Microsoft Defender ウイルス対策アナライザーには、次の前提条件があります。
 
 - サポートされているWindowsバージョン: Windows 10、Windows 11、Windows Server 2016以上

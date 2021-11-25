@@ -16,20 +16,19 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 383001a8beac1f14ab6c1436fa42b28e48dbdc25
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: cb8c0bd0870ea240e64c33dfac2fd6c00156def8
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60884051"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166640"
 ---
 # <a name="assign-device-value---threat-and-vulnerability-management"></a>デバイス値の割り当て - 脅威と脆弱性の管理
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
-
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [脅威と脆弱性の管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -43,9 +42,9 @@ ms.locfileid: "60884051"
 
 デバイス値のオプション:
 
-- 低
+- 低い
 - 標準 (既定値)
-- 高
+- 高い
 
 高い値を割り当てる必要があるデバイスの例を次に示します。
 
@@ -74,7 +73,7 @@ ms.locfileid: "60884051"
 - 高い値のデバイスには、NumberOfAssets / 10 の重みがあります。
     - デバイスが 100 台の場合、各高価値デバイスの重みは 10 (100/10) になります。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [露出スコア](tvm-exposure-score.md)

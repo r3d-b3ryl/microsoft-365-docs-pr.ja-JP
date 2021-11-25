@@ -16,12 +16,12 @@ audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: cf0ca72bb29c47708c497740b9bd3b64a7347136
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: fd8b4e021ce99bc5b048a2379cf5be2ac9f82e06
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60884075"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167732"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>リアルタイム保護に関連するパフォーマンスの問題のトラブルシューティング
 
@@ -30,8 +30,7 @@ ms.locfileid: "60884075"
 
 
 **適用対象:**
-
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Microsoft Defender for Endpoint のリアルタイム保護サービスに関連する CPU 使用率やパフォーマンスの問題がシステムで高い場合は、Microsoft サポートにチケットを提出できます。 「診断データの収集[」のMicrosoft Defender ウイルス対策に従います](collect-diagnostic-data.md)。
 
@@ -214,7 +213,7 @@ WPR ユーザー インターフェイスを使用するには、「WPR UI を�
     > [!TIP]
     > トレースを 1 秒で開始してみてください。 たとえば、01:30:00 です。 これにより、データの分析が容易になります。 また、問題が再現された正確なタイムスタンプを追跡してみてください。
 
-10. [**開始**] を選択します。
+10. [**スタート**] を選択します。
 
     ![[トレースの開始] を選択します。](images/wpr-09.png)
 

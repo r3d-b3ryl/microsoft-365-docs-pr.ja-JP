@@ -16,12 +16,12 @@ ms.topic: article
 ms.technology: mde
 ms.date: 10/14/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: fd5966380b23b13ab43b3e0e0c6583db03971541
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 4c96f7a0f2788f1ed43d06e35c13896600a98b74
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882935"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61170604"
 ---
 # <a name="test-attack-surface-reduction-in-microsoft-defender-for-endpoint"></a>エンドポイント向け Microsoft Defender の攻撃表面の縮小をテストする
 
@@ -29,7 +29,8 @@ ms.locfileid: "60882935"
 
 **適用対象:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 組織のセキュリティ チームの一部として、監査モードで実行する攻撃表面の縮小機能を構成して、その動作を確認できます。 監査モードでは、次の機能を有効にできます。
@@ -41,13 +42,13 @@ ms.locfileid: "60882935"
 
 監査モードでは、機能を有効にした場合に何が起こったかの記録を確認できます。
 
-機能の動作をテストするときに監査モードを有効にできます。 これにより、一行のアプリが影響を受けずに行うのに役立ちます。 また、一定の期間に発生する疑わしいファイル変更の試行回数を確認できます。
+機能の動作をテストするときに監査モードを有効にできます。 テスト専用の監査モードを有効にすると、監査モードが業務用アプリに影響を与えなくるのを防ぐのに役立ちます。 また、一定の期間に発生する疑わしいファイル変更の試行回数を確認できます。
 
 この機能は、アプリ、スクリプト、またはファイルが変更されるのをブロックまたは防止できません。 ただし、イベント ログWindows機能が完全に有効になっている場合と同様にイベントが記録されます。 監査モードを使用すると、イベント ログを確認して、機能が有効になっている場合の影響を確認できます。
 
 監査されたエントリを見つけるには、「Applications and Services Microsoft **Windows Windows Defender** \>  \>  \>  \> **します**。
 
-Defender for Endpoint を使用して、特に攻撃表面の縮小ルールを調査するために、各イベントの詳細を取得します。 Defender for Endpoint コンソールを使用すると、アラートタイムラインと調査シナリオの一部として問題 [を調査できます](investigate-alerts.md)。
+Defender for Endpoint を使用して、各イベントの詳細を取得します。 これらの詳細は、攻撃表面の縮小ルールを調査する場合に特に役立ちます。 Defender for Endpoint コンソールを使用すると、アラートタイムラインと調査シナリオの一部として問題 [を調査できます](investigate-alerts.md)。
 
 グループ ポリシー、PowerShell、および構成サービス プロバイダー (CSP) を使用して監査モードを有効にできます。
 

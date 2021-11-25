@@ -14,19 +14,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 38b5d3f2ddcab56fc712c771019982d05a18e20e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d4e429ca851a21c3ad4863d11dd90d7223d9c6b3
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199755"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61170587"
 ---
 # <a name="create-and-manage-device-tags"></a>デバイス タグの作成と管理
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -80,7 +80,7 @@ API を使用してデバイス タグを追加するには、「[デバイス �
 >
 > - Windows 11
 > - Windows 10バージョン 1709 以降
-> - Windowsサーバー、バージョン 1803 以降
+> - Windows Server バージョン 1803 以降
 > - Windows Server 2016
 > - Windows Server 2012 R2
 > - Windows Server 2008 R2 SP1

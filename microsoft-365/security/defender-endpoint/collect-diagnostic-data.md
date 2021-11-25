@@ -17,12 +17,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f32300976136c8a7526d62547515d739a681e51c
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 73f07a7346edbaebe7e53cd4e17e29a5e6764073
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60665791"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61170564"
 ---
 # <a name="collect-microsoft-defender-antivirus-diagnostic-data"></a>診断Microsoft Defender ウイルス対策収集する
 
@@ -31,7 +31,8 @@ ms.locfileid: "60665791"
 
 **適用対象:**
 
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 この記事では、Microsoft のサポートチームとエンジニアリング チームが使用できる診断データを収集して、ユーザーがソフトウェア を使用するときに発生する可能性がある問題のトラブルシューティングに役立つ方法についてMicrosoft Defender ウイルス対策。
 
@@ -103,7 +104,7 @@ SupportLogLocation パラメーターを使用すると、次のようなフォ�
 
 ****
 
-|フィールド|説明|
+|フィールド|Description|
 |---|---|
 |path|コマンド ラインで指定されたパス、または構成から取得されたパス|
 |MMDD|診断データが収集された月と日 (たとえば、0530)|

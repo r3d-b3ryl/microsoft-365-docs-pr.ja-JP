@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: コンテンツ検索とこの記事のスクリプトを使用して、メールボックスを検索し、OneDrive for Businessのサイトを検索します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 12a97cddaa26fbd6f63f9af60bcebe9105b970ec
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2fdf749511cc859c0aec2ea947c3a53cb800cf8c
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197463"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61170431"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>コンテンツ検索を使用してメールボックスと OneDrive for Business サイトでユーザーのリストを探す
 
@@ -75,7 +75,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
 
 **このスクリプトを実行するには、以下の手順を実行します。**
     
-1. ファイル名のサフィックスを使用してWindows PowerShellスクリプト ファイルに次のテキストを保存.ps1。たとえば、 `SearchEXOOD4B.ps1` . 手順 2 でユーザーの一覧を保存したのと同じフォルダーにファイルを保存します。
+1. 次のテキストを、Windows PowerShell のファイル名のサフィックスを使用して、.ps1 スクリプト ファイルに保存します `SearchEXOOD4B.ps1` 。 手順 2 でユーザーの一覧を保存したのと同じフォルダーにファイルを保存します。
     
   ```powershell
   # This PowerShell script will prompt you for the following information:
@@ -101,17 +101,13 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
   $searchName = Read-Host "Enter the name for the new search"
   $searchQuery = Read-Host "Enter the search query you want to use"
   $emailAddresses = Get-Content $inputfile | where {$_ -ne ""}  | foreach{ $_.Trim() }
-  # Connect to Office 365
+  # Connect to Security & Compliance Center PowerShell
   if (!$s -or !$a)
   {
-      $s = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://ps.compliance.protection.outlook.com/powershell-liveid" -Credential $credentials -Authentication Basic -AllowRedirection -SessionOption (New-PSSessionOption -SkipCACheck -SkipCNCheck -SkipRevocationCheck)
-      $a = Import-PSSession $s -AllowClobber
-      if (!$s)
-      {
-          Write-Error "Could not create PowerShell session."
-          return;
-      }
+      Import-Module ExchangeOnlineManagement
+      Connect-IPPSSession
   }
+  
   # Load the SharePoint assemblies from the SharePoint Online Management Shell
   # To install, go to https://go.microsoft.com/fwlink/p/?LinkId=255251
   if (!$SharePointClient -or !$SPRuntime -or !$SPUserProfile)

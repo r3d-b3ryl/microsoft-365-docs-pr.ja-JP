@@ -15,19 +15,19 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 03/27/2020
 ms.technology: mde
-ms.openlocfilehash: 39c456b3f7ad31181d47318570176710840ad8b2
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: b4606eb25f2cea9c18db8c13beba0e107d0e7950
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587983"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167024"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-alerts-queue"></a>Microsoft Defender for Endpoint アラート キューを表示して整理する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
-- [Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-alertsq-abovefoldlink)
 
@@ -56,9 +56,9 @@ ms.locfileid: "60587983"
 
 アラートの重大度|説明
 ---|---
-高 <br> (赤)|高度な永続的な脅威 (APT) に関連付けられている一般的なアラート。 これらのアラートは、デバイスに与える損害の重大度が高いので、高いリスクを示します。 例として、資格情報の盗難ツールアクティビティ、グループに関連付けされていないランサムウェア アクティビティ、セキュリティ センサーの改ざん、または人間の敵を示す悪意のあるアクティビティがあります。
+高い <br> (赤)|高度な永続的な脅威 (APT) に関連付けられている一般的なアラート。 これらのアラートは、デバイスに与える損害の重大度が高いので、高いリスクを示します。 例として、資格情報の盗難ツールアクティビティ、グループに関連付けされていないランサムウェア アクティビティ、セキュリティ センサーの改ざん、または人間の敵を示す悪意のあるアクティビティがあります。
 中 <br> (オレンジ)|高度な永続的脅威 (APT) の一部である可能性がある侵害後の動作に対するエンドポイント検出と応答からのアラート。 これには、攻撃段階に典型的な観察された動作、異常なレジストリの変更、疑わしいファイルの実行などがあります。 一部は内部セキュリティ テストの一部ですが、高度な攻撃の一部である可能性も考え、調査が必要です。
-低 <br> (黄色)|一般的なマルウェアに関連する脅威に関するアラート。 たとえば、ハッキング ツール、マルウェア以外のハッキング ツール (探索コマンドの実行、ログのクリアなど) は、組織を対象とする高度な脅威を示す場合が多くはありません。 また、組織内のユーザーによる分離されたセキュリティ ツールのテストから行う場合があります。
+低い <br> (黄色)|一般的なマルウェアに関連する脅威に関するアラート。 たとえば、ハッキング ツール、マルウェア以外のハッキング ツール (探索コマンドの実行、ログのクリアなど) は、組織を対象とする高度な脅威を示す場合が多くはありません。 また、組織内のユーザーによる分離されたセキュリティ ツールのテストから行う場合があります。
 情報 <br> (灰色)|ネットワークに悪影響を及ぼすとは見なされない可能性があるが、潜在的なセキュリティ問題に関する組織のセキュリティ認識を推進する可能性があるアラート。
 
 #### <a name="understanding-alert-severity"></a>アラートの重大度について
@@ -88,7 +88,7 @@ Defender for Endpoint アラートの重大度は、検出された動作の重�
 |コマンドとコントロール|CommandAndControl|攻撃者が制御するネットワーク インフラストラクチャに接続して、データを中継したり、コマンドを受信したりします。|
 |資格情報へのアクセス|CredentialAccess|ネットワーク内のデバイスや他のリソースに対する制御を拡張するための有効な資格情報を取得します。|
 |防御回避|DefenseEvasion|たとえば、セキュリティ アプリのオフ、インプラントの削除、ルートキットの実行によるセキュリティ制御の回避。|
-|Discovery|Discovery|管理者コンピューター、ドメイン コントローラー、ファイル サーバーなど、重要なデバイスとリソースに関する情報を収集します。|
+|検出|検出|管理者コンピューター、ドメイン コントローラー、ファイル サーバーなど、重要なデバイスとリソースに関する情報を収集します。|
 |実行|実行|攻撃者ツールと悪意のあるコード (RAT やバックドアを含む) を起動する。|
 |流出|流出|ネットワークから外部の攻撃者が制御する場所へのデータの抽出。|
 |Exploit|Exploit|コードの悪用と悪用の可能性があるアクティビティ。|
@@ -149,7 +149,7 @@ Defender for Endpoint アラートの重大度は、検出された動作の重�
 
 このフィルターを使用して、注目度の高い脅威に関連するアラートに集中します。 詳細な脅威の一覧については、「Threat [analytics」を参照してください](threat-analytics.md)。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [エンドポイント通知の Microsoft Defender の管理](manage-alerts.md)
 - [Microsoft Defender for Endpoint アラートの調査](investigate-alerts.md)

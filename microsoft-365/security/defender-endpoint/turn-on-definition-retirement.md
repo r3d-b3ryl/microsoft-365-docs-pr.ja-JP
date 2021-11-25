@@ -17,20 +17,20 @@ ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 07248f2945e817dc7bdca6240d1de30830abd1e4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: dd9cd313dec962547acef85c6da326d3b6e5c58f
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207741"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167636"
 ---
 # <a name="turn-on-definition-retirement"></a>定義の削除を有効にする
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
-
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 グループ ポリシーを使用して定義の削除を構成できます。 定義の削除は、特定の脆弱性からコンピューターを保護するために必要なセキュリティ更新プログラムがコンピューターに存在する場合にチェックします。 システムが定義によって検出された悪用に対して脆弱ではない場合、その定義は "廃止" されます。 特定のプロトコルのすべてのセキュリティ インテリジェンスが廃止された場合、そのプロトコルは解析されなくなりました。 この機能を有効にすると、パフォーマンスが向上します。 最新のセキュリティ更新プログラムが適用されているコンピューターでは、ネットワーク保護はネットワークのパフォーマンスに影響を与えかねない。
 

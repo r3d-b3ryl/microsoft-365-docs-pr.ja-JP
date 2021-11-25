@@ -16,19 +16,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c102583b2e3d8abc7995821870252946e48ccac6
-ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
+ms.openlocfilehash: f94bbd6da16d7c0cdffe2b5f49085ab4b774e03c
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60217140"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166976"
 ---
 # <a name="enable-siem-integration-in-microsoft-defender-for-endpoint"></a>エンドポイント向け Microsoft Defender で SIEM 統合を有効にする
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
@@ -42,7 +43,7 @@ ms.locfileid: "60217140"
 
 ## <a name="prerequisites"></a>前提条件
 
-- この設定をアクティブ化するユーザーには、アプリを作成するためのアクセス許可が必要です(AAD Azure Active Directory)。 これは、次の役割を持つユーザーです。
+- この設定をアクティブ化するユーザーには、アプリを作成するためのアクセス許可が必要です(Azure Active Directory (AAD)。 これは、次の役割を持つユーザーです。
 
   - セキュリティ管理者とグローバル管理者
   - クラウド アプリケーション管理者
@@ -84,7 +85,7 @@ ms.locfileid: "60217140"
    > [!NOTE]
    > 90 日ごとに新しい更新トークンを生成する必要があります。
 
-6. [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-webapp)の Azure ADアプリ登録を作成する手順に従い、適切なアクセス許可を割り当て、アラートを読み取ってください。
+6. Microsoft Defender for Endpoint のアプリ登録[を作成](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-webapp)Azure AD手順に従って、適切なアクセス許可を割り当て、アラートを読み取ってください。
 
 これで、SIEM ソリューションの構成またはプログラムによるアクセスを通じて検出 REST API への接続を続行できます。 SIEM ソリューションを構成するときにトークンを使用して、ユーザーからの検出を受信Microsoft 365 Defender。
 

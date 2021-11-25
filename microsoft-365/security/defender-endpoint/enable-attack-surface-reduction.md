@@ -17,18 +17,18 @@ ms.topic: how-to
 ms.date: 10/14/2021
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 1c5ee1fea543a18208d583b4acc5cc2f52acce7a
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 1632a0e04ce232c7daed42b86cde0f9053d6aadf
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111809"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167180"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>攻撃面の減少ルールを有効にする
 
 **適用対象:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
@@ -36,7 +36,7 @@ ms.locfileid: "61111809"
 
 [攻撃表面の縮小ルール](attack-surface-reduction.md) (ASR ルール) は、マルウェアが頻繁にデバイスやネットワークを侵害するアクションを防ぐのに役立ちます。
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要件
 
 複数のバージョンの攻撃表面Windows機能
 
@@ -167,7 +167,7 @@ ASR ルールを有効にする次の手順には、ファイルとフォルダ�
    > [!div class="mx-imgBorder"]
    > ![MEM OMA URI 構成。](images/mem05-add-row-oma-uri.png)
 
-6. [**保存**] をクリックします。 **[行の追加]** が閉じます。 [カスタム **] で**、[次へ] **をクリックします**。 手順 **3 スコープ タグでは、** スコープ タグは省略可能です。 次のいずれかの操作を行います。
+6. **[保存]** をクリックします。 **[行の追加]** が閉じます。 [カスタム **] で**、[次へ] **をクリックします**。 手順 **3 スコープ タグでは、** スコープ タグは省略可能です。 次のいずれかの操作を行います。
 
    - [ **スコープ タグの選択]** をクリックし、スコープ タグ (オプション) を選択し、[次へ] を **クリックします**。
    - または、[次へ] **をクリックします。**

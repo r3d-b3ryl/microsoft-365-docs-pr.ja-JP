@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 62cc53910cb5f2c618a45f3ea755c6be7a49c853
-ms.sourcegitcommit: a15ea6bc8f60895e791a08a5a88d346c6581ea38
+ms.openlocfilehash: 82e9a72752b61856d74c5c82b1557e82b6f0e416
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61145012"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166784"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>エンドポイント用 Microsoft Defender の最小要件
 
@@ -117,6 +117,8 @@ Defender for Endpoint へのアクセスはブラウザーを介して行われ�
 ネットワーク上のデバイスで、これらのエディションのいずれかを実行している必要があります。
 
 デバイス上の Defender for Endpoint のハードウェア要件は、サポートされているエディションで同じです。
+
+サポートされているバージョンの Windows 10については、「(/windows/release-health/release-information)」を参照してください。
 
 > [!NOTE]
 > モバイル バージョンのモバイル Windows (Windows CE、Windows 10 Mobileなど) はサポートされていません。

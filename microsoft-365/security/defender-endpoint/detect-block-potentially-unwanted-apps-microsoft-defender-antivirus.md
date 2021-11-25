@@ -16,18 +16,18 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 7e6bebd01ba3740efcf99677f83006e2d26c2157
-ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
+ms.openlocfilehash: 6610fbc770e8a4d9e6119c417f4419919362515f
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61148868"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166436"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>望ましくない可能性のあるアプリケーションを検出してブロックする
 
 **適用対象:**
 
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Edge](/microsoft-edge/deploy/microsoft-edge)
 
 望ましくない可能性のあるアプリケーション (PUA) は、マシンの実行速度が低下したり、予期しない広告が表示されたり、最悪の場合、予期しないまたは望ましくない可能性のある他のソフトウェアをインストールしたりする可能性のあるソフトウェアのカテゴリです。 PUA は、ウイルス、マルウェア、またはその他の種類の脅威とは見なされませんが、エンドポイントのパフォーマンスまたは使用に悪影響を与えるアクションをエンドポイントで実行する可能性があります。 *PUA* という用語は、特定の種類の望ましくない動作が原因で、Microsoft Defender for Endpoint によって評価された、評判の悪いアプリケーションを指す場合もあります。

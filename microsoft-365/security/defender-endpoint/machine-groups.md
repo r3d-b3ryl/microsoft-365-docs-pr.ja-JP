@@ -14,21 +14,21 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 95f377992c745045667a016fcf7dae1b391f2323
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: ad66a651406706d0e2730f9913839540418bb02b
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554074"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61170647"
 ---
 # <a name="create-and-manage-device-groups"></a>デバイス グループの作成と管理
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
-
 - Azure Active Directory
 - Office 365
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -56,7 +56,7 @@ Microsoft Defender for Endpoint では、デバイス グループを作成し�
 > [!NOTE]
 > デバイス グループにグループを割り当てない場合は、すべてのユーザー Azure ADアクセスできます。
 
-## <a name="create-a-device-group"></a>デバイス グループの作成
+## <a name="create-a-device-group"></a>デバイス グループを作成する
 
 1. ナビゲーション ウィンドウで、[エンドポイントのアクセス許可 **設定** \>  \> **グループ]** \> **を選択します**。
 
@@ -104,7 +104,7 @@ Microsoft Defender for Endpoint では、デバイス グループを作成し�
 
 デバイス グループ定義へのリンクの詳細については[、「Device groups - Microsoft 365」を参照してください](https://sip.security.microsoft.com/homepage)。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [役割ベースのアクセス制御を使用したポータル アクセスの管理](rbac.md)
 - [デバイス タグの作成と管理](machine-tags.md)

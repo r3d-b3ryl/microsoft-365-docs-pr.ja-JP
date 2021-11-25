@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 59c00d1e34cf97ce2012c3052283453dc23e38a1
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 63453b772123e9fe8440da3372d166503cee21e1
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110597"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61171103"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>MacOS での Microsoft Defender for Endpoint の Intune ベースの展開
 
@@ -30,6 +30,8 @@ ms.locfileid: "61110597"
 **適用対象:**
 
 - [macOS 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 このトピックでは、Intune を介して macOS に Microsoft Defender for Endpoint を展開する方法について説明します。 展開が成功するには、次のすべての手順を完了する必要があります。
 
@@ -54,10 +56,10 @@ ms.locfileid: "61110597"
 |手順|サンプル ファイル名|BundleIdentifier|
 |---|---|---|
 |[オンボーディング パッケージをダウンロードする](#download-the-onboarding-package)|WindowsDefenderATPOnboarding__MDATP_wdav.atp.xml|com.microsoft.wdav.atp|
-|[エンドポイント用 Microsoft Defender のシステム拡張機能を承認する](#approve-system-extensions)|MDATP_SysExt.xml|該当なし|
-|[Microsoft Defender for Endpoint のカーネル拡張機能の承認](#download-the-onboarding-package)|MDATP_KExt.xml|該当なし|
+|[エンドポイント用 Microsoft Defender のシステム拡張機能を承認する](#approve-system-extensions)|MDATP_SysExt.xml|N/A|
+|[Microsoft Defender for Endpoint のカーネル拡張機能の承認](#download-the-onboarding-package)|MDATP_KExt.xml|N/A|
 |[Microsoft Defender for Endpoint へのフル ディスク アクセスを許可する](#full-disk-access)|MDATP_tcc_Catalina_or_newer.xml|com.microsoft.wdav.tcc|
-|[ネットワーク拡張ポリシー](#network-filter)|MDATP_NetExt.xml|該当なし|
+|[ネットワーク拡張ポリシー](#network-filter)|MDATP_NetExt.xml|N/A|
 |[Microsoft AutoUpdate (MAU) の構成](mac-updates.md#intune)|MDATP_Microsoft_AutoUpdate.xml|com.microsoft.autoupdate2|
 |[Microsoft Defender for Endpoint 構成設定](mac-preferences.md#intune-full-profile) <p> **注:** macOS 用のサード パーティ製 AV の実行を計画している場合は、 に設定 `passiveMode` します `true` 。|MDATP_WDAV_and_exclusion_settings_Preferences.xml|com.microsoft.wdav|
 |[エンドポイントおよび MS AutoUpdate (MAU) 通知の Microsoft Defender の構成](mac-updates.md)|MDATP_MDAV_Tray_and_AutoUpdate2.mobileconfig|com.microsoft.autoupdate2 または com.microsoft.wdav.tray|

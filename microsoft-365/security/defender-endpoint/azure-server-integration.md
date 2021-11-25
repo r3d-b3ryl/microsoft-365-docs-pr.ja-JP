@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Cloud との統合
+title: Microsoft Defender for Cloudとの統合
 description: Microsoft Defender for Endpoint と Microsoft Defender for Cloud との統合について説明します。
 keywords: 統合、サーバー、azure、2012r2、2016、2019、サーバーオンボーディング、デバイス管理、エンドポイント サーバー用 Microsoft Defender の構成、Microsoft Defender for Endpoint サーバーのオンボード、Microsoft Defender for Endpoint サーバーのオンボード
 search.product: eADQiWindows 10XVcnh
@@ -16,19 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 248b9aaf8affb3fc575b6624bef8cce18f14358d
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 4364855120524f7b6e993a3827a03a3bd5f79d96
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61109853"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61170546"
 ---
-# <a name="integration-with-microsoft-defender-for-cloud"></a>Microsoft Defender for Cloud との統合
+# <a name="integration-with-microsoft-defender-for-cloud"></a>Microsoft Defender for Cloudとの統合
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
-- Microsoft Defender for Endpoint
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender for Cloud
 
 Microsoft Defender for Endpoint は、Microsoft Defender for Cloud と統合して、包括的なサーバー保護ソリューションWindows提供できます。 この統合により、Microsoft Defender for Cloud は Defender for Endpoint の機能を使用して、セキュリティ サーバーの脅威検出を強化Windowsできます。

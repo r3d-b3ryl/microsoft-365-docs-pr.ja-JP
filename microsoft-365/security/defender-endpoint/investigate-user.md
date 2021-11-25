@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 96b1ca9e6a54675418e556d495635d3f689c8fed
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: aa158c38661ff3f3277594e222ef6648a1731fce
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60586028"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167252"
 ---
 # <a name="investigate-a-user-account-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint のユーザー アカウントを調査する
 
@@ -65,6 +65,11 @@ ms.locfileid: "60586028"
 
 組織の概要、アラート、および監視は、ユーザー アカウントに関するさまざまな属性を表示するさまざまなタブです。
 
+
+>[!NOTE]
+>Linux デバイスの場合、ログインしているユーザーに関する情報は表示されません。
+
+
 ### <a name="overview"></a>概要
 
 [ **概要]** タブには、インシデントの詳細と、ユーザーがログオンしたデバイスの一覧が表示されます。 これらを展開すると、各デバイスのログオン イベントの詳細を確認できます。
@@ -95,7 +100,7 @@ ms.locfileid: "60586028"
 - 30 日間
 - 6 か月
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [Microsoft Defender for Endpoint アラート キューを表示して整理する](alerts-queue.md)
 - [エンドポイント通知の Microsoft Defender の管理](manage-alerts.md)

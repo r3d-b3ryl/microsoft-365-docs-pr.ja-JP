@@ -13,24 +13,25 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 11/06/2020
+ms.date: 11/23/2020
 ms.technology: mde
-ms.openlocfilehash: a01fa71e8d52a9e6de522483ee982458f04141af
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 71b0ca22a7a040aaa49fc160038a89292c20019c
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555286"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167348"
 ---
 # <a name="fix-unhealthy-sensors-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint で問題が発生したセンサーの修正
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-- Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-fixsensor-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-fixsensor-abovefoldlink)
 
 構成ミスまたは非アクティブとして分類されたデバイスは、さまざまな原因によりフラグが設定される可能性があります。 このセクションでは、デバイスが非アクティブまたは正しく構成されていないと分類された原因について説明します。
 
@@ -43,13 +44,13 @@ ms.locfileid: "60555286"
 何らかの理由でデバイスが 7 日間以上使用されていない場合は、ポータルの [非アクティブ] 状態のままです。
 
 ### <a name="device-was-reinstalled-or-renamed"></a>デバイスが再インストールまたは名前の変更された
-再インストールまたは名前の変更されたデバイスは、新しいデバイス エンティティを新しいデバイス エンティティMicrosoft Defender セキュリティ センター。 前のデバイス エンティティは、ポータルの "非アクティブ" 状態のままです。 デバイスを再インストールして Defender for Endpoint パッケージを展開した場合は、新しいデバイス名を検索して、デバイスが正常に報告されているのを確認します。
+再インストールまたは名前の変更されたデバイスは、新しいデバイス エンティティを新しいデバイス エンティティで生成Microsoft Defender セキュリティ センター。 前のデバイス エンティティは、ポータルの "非アクティブ" 状態のままです。 デバイスを再インストールして Defender for Endpoint パッケージを展開した場合は、新しいデバイス名を検索して、デバイスが正常に報告されているのを確認します。
 
 ### <a name="device-was-offboarded"></a>デバイスがオフボードされた
 デバイスがオフボードされている場合は、デバイスの一覧に表示されます。 7 日後、デバイスの正常性状態は非アクティブに変更されます。
 
 ### <a name="device-is-not-sending-signals"></a>デバイスが信号を送信していない
-デバイスが、構成が正しく設定されていないデバイス分類に該当する条件を含む何らかの理由で、Microsoft Defender for Endpoint チャネルに 7 日間以上信号を送信していない場合、デバイスは非アクティブと見なされます。 
+デバイスが何らかの理由で Microsoft Defender for Endpoint チャネルに 7 日間以上信号を送信していない場合(デバイスの分類が正しく構成されていない状態を含む)、デバイスは非アクティブと見なされます。 
 
 デバイスが 'Active' 状態にあると思いますか? [サポート チケットを開きます](https://support.microsoft.com/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636206786382823561)。
 
@@ -73,6 +74,7 @@ ms.locfileid: "60555286"
 
 ### <a name="no-sensor-data"></a>センサー データなし
 "センサー データなし" の状態の誤った構成済みデバイスは、サービスとの通信を持っていますが、部分的なセンサー データのみを報告できます。
+
 これらのアクションに従って、誤って構成されたデバイスに関連する既知の問題を修正し、状態が "センサー データなし" になります。
 
 - [デバイスにインターネット接続が確立されている](troubleshoot-onboarding.md#troubleshoot-onboarding-issues-on-the-device)</br>

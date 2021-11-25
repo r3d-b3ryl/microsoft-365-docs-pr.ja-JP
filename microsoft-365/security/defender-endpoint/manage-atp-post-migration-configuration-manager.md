@@ -18,23 +18,23 @@ ms.collection:
 ms.topic: article
 ms.date: 06/11/2021
 ms.reviewer: chventou
-ms.openlocfilehash: 8bde033068af23e3e3187a79114d9c8fabbbcdab
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fb5392a69e00d4acdf1e0c41f281611642c4be92
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205345"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167408"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-configuration-manager"></a>Configuration Manager を使用して Microsoft Defender for Endpoint を管理する
 
 **適用対象:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
-使用することをお勧めします Microsoft エンドポイント マネージャー [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) [(Intune)](/mem)と[Microsoft Endpoint Configuration Manager](/mem/configmgr/core/understand/introduction) (Configuration Manager) を含む Microsoft エンドポイント マネージャー を使用して、組織の脅威保護機能を管理することをお勧めします。デバイス (エンドポイントとも呼ばれます)。
+デバイス[(Microsoft エンドポイント マネージャー](/mem)の脅威保護機能を管理[](/mem/intune/fundamentals/what-is-intune)するには、Microsoft Intune (Intune) と[Microsoft Endpoint Configuration Manager](/mem/configmgr/core/understand/introduction) (Configuration Manager) を含む Microsoft エンドポイント マネージャー を使用することをお勧めします。エンドポイントと呼ばれます)。
 
 - [詳細については、エンドポイント マネージャー](/mem/endpoint-manager-overview)
 - [Configuration Manager と Intune を使用して 11 Windows 10デバイスWindows Microsoft Defender for Endpoint を共同管理する](manage-atp-post-migration-intune.md)

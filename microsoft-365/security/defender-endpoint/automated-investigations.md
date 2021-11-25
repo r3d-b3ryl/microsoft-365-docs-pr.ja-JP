@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: JoeDavies-MSFT
 ms.author: josephd
-ms.date: 02/02/2021
+ms.date: 11/24/2021
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -19,19 +19,19 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: abb8bbce480312a799e6360f2f91cca8e31500a0
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 83a0f7828b5a0ef9e598b416a9f3b105cdf391d7
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61109865"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61171535"
 ---
 # <a name="overview-of-automated-investigations"></a>自動調査の概要
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 どのように動作するのかを確認したいですか? 次のビデオをご覧ください。
@@ -105,4 +105,4 @@ ms.locfileid: "61109865"
 
 - [PUA 保護](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
 - [Microsoft Defender での自動調査と対応が可能Office 365](/microsoft-365/security/office-365-security/office-365-air)
-- [Microsoft 365 Defender での自動調査と応答](/microsoft-365/security/defender/mtp-autoir)
+- [Microsoft 365 Defender での自動調査と応答](/microsoft-365/security/defender/m365d-autoir)

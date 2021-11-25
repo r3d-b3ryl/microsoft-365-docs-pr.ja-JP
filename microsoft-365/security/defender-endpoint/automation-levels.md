@@ -19,17 +19,17 @@ ms.collection:
 ms.topic: conceptual
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: 01b57b0ad376758363e3ce515c53f503d7c409ae
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 61c09938d0fece07d313898a7256bee8ed8c6e16
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555430"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61171463"
 ---
 # <a name="automation-levels-in-automated-investigation-and-remediation-capabilities"></a>自動調査および修復機能の自動化レベル
 
 **適用対象:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Microsoft Defender for Endpoint の自動調査および修復 (AIR) 機能は、いくつかのレベルの自動化に構成できます。 自動化レベルは、AIR 調査後の修復アクションが自動的に実行されるのか、承認時にのみ実行されるのかに影響します。
@@ -49,7 +49,7 @@ Microsoft Defender for Endpoint の自動調査および修復 (AIR) 機能は�
 
 ****
 
-|オートメーション レベル|説明|
+|オートメーション レベル|Description|
 |---|---|
 |**完全 - 脅威を自動的に修復する** <br> (フル オートメーションとも *呼ばれます*)|完全な自動化により、修復アクションは自動的に実行されます。 実行される修復アクションはすべて、[履歴] タブの [[アクション](auto-investigation-action-center.md) センター] で **表示** できます。必要に応じて、修復アクションを元に戻すことができます。 <p> **_完全な自動化は推奨_* され、Microsoft Defender for Endpoint で 2020 年 8 月 16 日以降に作成されたテナントでは既定で選択され、デバイス グループがまだ定義されていません。*|
 |**Semi - 修復の承認が必要** <br> (セミオートメーション *とも呼ばれます*)|このレベルのセミオートメーションでは、修復アクションに対して承認 *が* 必要です。 このような保留中のアクションは、[保留中] タブの [[](auto-investigation-action-center.md)アクション センター] で表示および **承認** できます。 <p> *このレベルのセミオートメーションは、Microsoft Defender for Endpoint で 2020 年 8 月 16 日より前に作成されたテナントに対して既定で選択され、デバイス グループは定義されていません。*|

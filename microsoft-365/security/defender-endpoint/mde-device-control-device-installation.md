@@ -13,14 +13,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 07ee57728d93458ca3242fafea1e7514a9e853b3
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 5f0828d24ddb4c02d533d0fced2389ca3cb61ce4
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60881987"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167072"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-device-installation"></a>Microsoft Defender for Endpoint Device Control Device Installation 
+
+**適用対象**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Microsoft Defender for Endpoint Device Control リムーバブル Storageアクセス制御を使用すると、次のタスクを実行できます。
 
@@ -36,7 +40,7 @@ Microsoft Defender for Endpoint Device Control リムーバブル Storageアク�
 |アクション モード|許可、防止 |
 |CSP サポート|はい|
 |GPO サポート|はい|
-|ユーザー ベースのサポート|不要|
+|ユーザー ベースのサポート|いいえ|
 |コンピューター ベースのサポート|はい|
 
 ## <a name="prepare-your-endpoints"></a>エンドポイントを準備する

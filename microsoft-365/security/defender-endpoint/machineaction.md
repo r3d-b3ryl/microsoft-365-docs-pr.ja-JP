@@ -15,19 +15,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0d2da96b421dfa594836698f2849f615e8f0ccf5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 79503f4089f1ff19bc9f47c6032b6ebc33b244d8
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209443"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61171163"
 ---
 # <a name="machineaction-resource-type"></a>MachineAction リソースの種類
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -40,7 +41,7 @@ ms.locfileid: "60209443"
 
 - 詳細については、「応答アクション [」を参照してください](respond-machine-alerts.md)。
 
-|メソッド|戻り値の型|説明|
+|メソッド|戻り値の型|Description|
 |---|---|---|
 |[MachineActions の一覧表示](get-machineactions-collection.md)|[マシン アクション](machineaction.md)|[ [マシン アクション] エンティティを](machineaction.md) 一覧表示します。|
 |[MachineAction の取得](get-machineaction-object.md)|[マシン アクション](machineaction.md)|単一の [Machine Action エンティティを取得](machineaction.md) します。|
@@ -61,7 +62,7 @@ ms.locfileid: "60209443"
 
 ## <a name="properties"></a>プロパティ
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |---|---|---|
 |ID|Guid|Machine [Action エンティティの](machineaction.md) ID。|
 |type|列挙|アクションの種類。 指定できる値は、「RunAntiVirusScan」、"Offboard"、"Live Response"、"CollectInvestigationPackage"、"Isolate"、"Unisolate"、"StopAndQuarantineFile"、"RestrictCodeExecution"、"UnrestrictCodeExecution"です。|
@@ -69,7 +70,7 @@ ms.locfileid: "60209443"
 |requestor|String|アクションを実行したユーザーの ID。|
 |externalID|String|カスタム相関関係の要求で顧客が送信できる ID。|
 |requestSource|string|アクションを送信したユーザー/アプリケーションの名前。|
-| コマンド|配列|実行するコマンド。 使用できる値は PutFile、RunScript、GetFile です。|
+|コマンド|配列|実行するコマンド。 使用できる値は PutFile、RunScript、GetFile です。|
 |cancellationRequestor|String|アクションをキャンセルしたユーザーの ID。|
 |requestorComment|String|アクションを発行するときに書き込まれたコメント。|
 |cancellationComment|String|アクションをキャンセルするときに書き込まれたコメント。|

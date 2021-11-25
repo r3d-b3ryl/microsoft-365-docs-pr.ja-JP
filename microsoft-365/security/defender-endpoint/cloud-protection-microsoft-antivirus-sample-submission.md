@@ -15,19 +15,18 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 1c7ef9883aacf9af0ee5474795c19adf1694fd9c
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 3ffd18a0b2a0e81f2f3a425434f5e786d8dc598d
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60701731"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61171550"
 ---
 # <a name="cloud-protection-and-sample-submission-in-microsoft-defender-antivirus"></a>クラウド保護とサンプル申請 (Microsoft Defender ウイルス対策
 
 **適用対象:**
-
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
-- [Microsoft Defender ウイルス対策](microsoft-defender-antivirus-windows.md)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Microsoft Defender ウイルス対策
 
 Microsoft Defender ウイルス対策は、マルウェアを検出するために多くのインテリジェントなメカニズムを使用します。 最も強力な機能の 1 つは、クラウドの機能を適用してマルウェアを検出し、迅速な分析を実行する機能です。 クラウド保護と自動サンプル申請は、新しい脅威やMicrosoft Defender ウイルス対策保護するために、ユーザーと共に機能します。 
 
@@ -133,7 +132,7 @@ Intune、Configuration Manager、GPO、または PowerShell を使用した構�
 
 Defender for Endpoint が、クラウド保護に関連しないファイル サンプルを要求するシナリオは、さらに 2 Microsoft Defender ウイルス対策。 これらのシナリオについては、次の表で説明します。
 
-| シナリオ | 説明 |
+| シナリオ | Description |
 |:---|:---|
 |ポータル内の手動ファイル サンプル コレクションMicrosoft 365 Defenderします。 | デバイスを Defender for Endpoint にオンボーディングする場合は、エンドポイント検出と応答[(EDR) の設定を構成できます](overview-endpoint-detection-response.md)。 たとえば、デバイスからのサンプル コレクションを有効にする設定があります。これは、この記事で説明するサンプル提出設定と簡単に混同できます。 <br/><br/>このEDR設定は、Microsoft 365 Defender ポータルから要求されたデバイスからのファイル サンプル コレクションを制御し、既に確立されている役割とアクセス許可の対象になります。 この設定では、エンドポイントからのファイルコレクションを許可またはブロックして、ポータルでの詳細な分析などの機能Microsoft 365 Defenderできます。 この設定が構成されていない場合、既定ではサンプル コレクションを有効にします。 <br/><br/>Defender for Endpoint 構成設定の詳細については、「Defender for Endpoint でのデバイスのオンボード ツール[とメソッドWindows 10」を参照してください。](configure-endpoints.md) |
 | 自動調査と応答のコンテンツ分析 | 自動 [調査が](automated-investigations.md) デバイスで実行されている場合 (アラートに応答して自動的に実行するか、手動で実行するように構成されている場合)、疑わしいと識別されたファイルをエンドポイントから収集して、詳細な検査を行うことができます。 必要に応じて、自動調査用のファイル コンテンツ分析機能を、Microsoft 365 Defenderできます。 <br/><br/> ファイル拡張子の名前を変更して、自動調査中に自動的に提出される他のファイルの種類の拡張子を追加または削除することもできます。 <br/><br/> 詳細については、「オートメーション ファイルの [アップロードを管理する」を参照してください](manage-automation-file-uploads.md)。 |

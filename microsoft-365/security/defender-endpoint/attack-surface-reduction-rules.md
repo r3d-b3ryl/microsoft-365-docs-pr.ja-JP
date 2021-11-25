@@ -16,14 +16,19 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9db0543a8d6c68c74b2ae6eba98a14bffb3411f7
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 4941f2aa207cfedffdb7dc9687023c3bdaa47ab2
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882671"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61171655"
 ---
 # <a name="attack-surface-reduction-rules"></a>攻撃面の減少ルール
+
+**適用対象:**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 この記事では、攻撃の軽減ルールに関する情報を提供します。
 
@@ -46,7 +51,7 @@ ms.locfileid: "60882671"
 > - 特に指定しない限り、最小 Windows 10 ビルドはバージョン &nbsp; 1709 (RS3、ビルド 16299) 以降です。Windows Server の最小ビルドは &nbsp; バージョン 1809 以降です。
 >
 
-| ルールの名前 | &nbsp;WindowsServer 2016 <sup> [[1](#fn1)]<sup></sup> | &nbsp;WindowsServer 2012 R2 <sup> [[1](#fn1)]<sup></sup> |
+| ルールの名前 | Windows Server &nbsp; 2016 <sup> [[1](#fn1)]<sup></sup> | Windows &nbsp; Server 2012 R2 <sup> [[1](#fn1)]<sup></sup> |
 |---|:---:|:---:|
 |[悪用された脆弱な署名済みドライバーの悪用をブロックする](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y | Y |
 |[Adobe Reader の子プロセスの作成をブロックする](#block-adobe-reader-from-creating-child-processes) | Y | Y |
@@ -59,18 +64,18 @@ ms.locfileid: "60882671"
 |[実行可能Office作成するアプリケーションのブロック](#block-office-applications-from-creating-executable-content) | Y | Y |
 |[アプリケーションOffice他のプロセスへのコードの挿入をブロックする](#block-office-applications-from-injecting-code-into-other-processes)  | Y | Y |
 |[通信Officeプロセスの作成をブロックする](#block-office-communication-application-from-creating-child-processes) | Y | Y |
-|[WMI イベント サブスクリプションによる永続化のブロック](#block-persistence-through-wmi-event-subscription) \*_ファイルとフォルダーの除外はサポートされていません。_ | × | × |
+|[WMI イベント サブスクリプションによる永続化のブロック](#block-persistence-through-wmi-event-subscription) \*_ファイルとフォルダーの除外はサポートされていません。_ | N | N |
 |[PSExec および WMI コマンドから発生するプロセス作成をブロックする](#block-process-creations-originating-from-psexec-and-wmi-commands) | Y | Y |
 |[USB から実行される信頼されていないプロセスと署名されていないプロセスをブロックする](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y | Y |
-|[Win32 API 呼び出しをブロックOfficeマクロ](#block-win32-api-calls-from-office-macros) | × | × |
+|[Win32 API 呼び出しをブロックOfficeマクロ](#block-win32-api-calls-from-office-macros) | N | N |
 |[ランサムウェアに対する高度な保護の使用](#use-advanced-protection-against-ransomware) | Y | Y |
-| **ルール名** | **Windows &nbsp;Server 2016** <sup> [[1](#fn1)]<sup></sup> | **Windows &nbsp;Server 2012 R2** <sup> [[1](#fn1)]<sup></sup> |
+| **ルール名** | **Windows Server &nbsp; 2016** <sup> [[1](#fn1)]<sup></sup> | **Windows &nbsp; Server 2012 R2** <sup> [[1](#fn1)]<sup></sup> |
 
 (<a id="fn1">1</a>) 2016 年と 2016 年の最新の統合ソリューションWindows Server 2012します。 詳細については、「Defender [for Endpoint サービスへのオンボード Windows サーバー」を参照してください](configure-server-endpoints.md)。
 
 _パブリック プレビューの終了: サポートされているオペレーティング システム_
 
-## <a name="supported-operating-systems"></a>サポートされているオペレーティング システム 
+## <a name="supported-operating-systems"></a>サポートされるオペレーティング システム
 
 次の表に、現在一般提供にリリースされているルールでサポートされているオペレーティング システムの一覧を示します。 ルールはアルファベット順に表示されます。
 
@@ -79,7 +84,7 @@ _パブリック プレビューの終了: サポートされているオペレ�
 > - 特に指定しない限り、最小 Windows 10 ビルドはバージョン &nbsp; 1709 (RS3、ビルド 16299) 以降です。Windows Server の最小ビルドは &nbsp; バージョン 1809 以降です。
 >
 
-|ルールの名前|&nbsp;Windows10|&nbsp;WindowsServer 2019|&nbsp;Windowsサーバー|&nbsp;WindowsServer 2016|&nbsp;WindowsServer 2012 R2|
+|ルールの名前|Windows &nbsp; 10|Windows &nbsp; Server 2019|Windows &nbsp; サーバー|Windows Server &nbsp; 2016|Windows Server &nbsp; 2012 R2|
 |---|:---:|:---:|:---:|:---:|:---:|
 |[悪用された脆弱な署名済みドライバーの悪用をブロックする](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y | Y | Y バージョン 1803 (半期チャネル) 以降 |  |  |
 |[Adobe Reader の子プロセスの作成をブロックする](#block-adobe-reader-from-creating-child-processes) | Y バージョン 1809 以降 | Y | Y  <br><br> |  |  |
@@ -97,7 +102,7 @@ _パブリック プレビューの終了: サポートされているオペレ�
 |[USB から実行される信頼されていないプロセスと署名されていないプロセスをブロックする](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y | Y <br><br> | Y <br><br> |  |  |
 |[Win32 API 呼び出しをブロックOfficeマクロ](#block-win32-api-calls-from-office-macros) | Y | Y <br><br> | Y <br><br> |  |  |
 |[ランサムウェアに対する高度な保護の使用](#use-advanced-protection-against-ransomware) | Y バージョン 1803 以降 | Y <br><br> | Y <br><br> |  |  |
-| **ルール名** |  **&nbsp;Windows10** | **&nbsp;WindowsServer 2019** | **&nbsp;Windowsサーバー** | **&nbsp;WindowsServer 2016** | **&nbsp;WindowsServer 2012 R2** |
+| **ルール名** |  **Windows &nbsp; 10** | **Windows &nbsp; Server 2019** | **Windows &nbsp; サーバー** | **Windows Server &nbsp; 2016** | **Windows Server &nbsp; 2012 R2** |
 
 ## <a name="supported-configuration-management-systems"></a>サポートされている構成管理システム
 
@@ -126,7 +131,7 @@ _パブリック プレビューの終了: サポートされているオペレ�
 
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 - [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
-- [Microsoft エンドポイント マネージャーCB 1710](/configmgr/core/servers/manage/updates)
+- [Microsoft エンドポイント マネージャー CB 1710](/configmgr/core/servers/manage/updates)
 - [System Center Configuration Manager (SCCM) CB 1710](/configmgr/core/servers/manage/updates) <br>_SCCM がMicrosoft Endpoint Configuration Manager。_
 
 ## <a name="per-rule-descriptions"></a>ルールごとの説明
@@ -380,12 +385,12 @@ GUID: `26190899-1602-49e8-8b27-eb1d0a1ce869`
 
 ### <a name="block-persistence-through-wmi-event-subscription"></a>WMI イベント サブスクリプションによる永続化のブロック
 
-このルールは、デバイス上で WMI を攻撃して永続化を達成するマルウェアを防止します。
+この規則により、マルウェアが WMI を悪用してデバイスでの永続性を獲得するのを防ぎます。
 
 > [!IMPORTANT]
 > ファイルとフォルダーの除外は、この攻撃表面の縮小ルールには適用されません。
 
-ファイルレスの脅威は、隠し、ファイル システムで見られない、定期的な実行制御を得るために、さまざまな戦術を採用しています。 一部の脅威は、WMI リポジトリとイベント モデルを悪用して非表示にできます。
+ファイルレス脅威は、さまざまな戦術を採用して潜伏し、ファイル システムに見つからないようにして、定期的に実行制御を獲得します。 脅威の中には、WMI リポジトリとイベント モデルを悪用して、潜伏できるものがあります。
 
 Intune 名: 使用できません
 
@@ -441,12 +446,12 @@ GUID: `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`
 
 このルールは、VBA マクロが Win32 API を呼び出すのを防止します。
 
-OfficeVBA では、Win32 API 呼び出しが有効です。 マルウェアは [、Win32 API](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/) を呼び出してディスクに直接何も書き込みせずに悪意のあるシェルコードを起動するなど、この機能を悪用する可能性があります。 ほとんどの組織では、他の方法でマクロを使用している場合でも、Win32 API を毎日の機能で呼び出す機能に依存しません。
+Office VBA では、Win32 API 呼び出しが有効です。 マルウェアは [、Win32 API](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/) を呼び出してディスクに直接何も書き込みせずに悪意のあるシェルコードを起動するなど、この機能を悪用する可能性があります。 ほとんどの組織では、他の方法でマクロを使用している場合でも、Win32 API を毎日の機能で呼び出す機能に依存しません。
 
 サポートされるオペレーティング システム
 
 - [Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windowsサーバー、バージョン 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server バージョン 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: a5870f91bd154ddf344c7914c44c96e438fc9f99
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e394513cdb3170eaa3f347d018bcc13382797271
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60211191"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167127"
 ---
 # <a name="export-assessment-methods-and-properties-per-device"></a>デバイスごとの評価方法とプロパティのエクスポート
 
@@ -29,7 +29,7 @@ ms.locfileid: "60211191"
 
 **適用対象:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -49,7 +49,7 @@ ms.locfileid: "60211191"
 
 エクスポート情報の種類に対応する API については、セクション 1、2、および 3 で説明します。
 
-メソッドごとに、異なる種類のデータを取得する異なる API 呼び出しがあります。 データの量が多い場合は、次の 2 つの方法で取得できます。
+各メソッドには、さまざまな種類のデータを取得する異なる API 呼び出しがあります。 データの量が多い場合は、次の 2 つの方法で取得できます。
 
 - **JSON 応答**  API は、組織内のすべてのデータを JSON 応答として取得します。 この方法は _、100 K_ 未満のデバイスを持つ小規模な組織に最適です。 応答がページ分割されたので、応答から \@ odata.nextLink フィールドを使用して次の結果を取得できます。
 
@@ -57,7 +57,7 @@ ms.locfileid: "60211191"
   - API を呼び出して、すべての組織データを含むダウンロード URL の一覧を取得します。
   - ダウンロード URL を使用してすべてのファイルをダウンロードし、必要に合ったデータを処理します。
 
-(JSON 応答またはファイルを使用 _して)_ 収集されるデータは、現在の状態の現在のスナップショットであり、歴史的なデータは含まれておりません。 過去のデータを収集するには、ユーザーがデータを独自のデータ ストレージに保存する必要があります。
+'_JSON_ 応答またはファイルを使用して収集される _データは、_ 現在の状態の現在のスナップショットです。 これは、歴史的なデータを含む必要があります。 過去のデータを収集するには、データを自分のデータ ストレージに保存する必要があります。
 
 ## <a name="1-export-secure-configurations-assessment"></a>1. セキュリティで保護された構成の評価をエクスポートする
 
@@ -74,29 +74,29 @@ ms.locfileid: "60211191"
 
 プロパティ (ID)|データ型|説明
 :---|:---|:---
-configurationCategory|string|構成が属するカテゴリまたはグループ化: アプリケーション、OS、ネットワーク、アカウント、セキュリティコントロール。
-configurationId|string|特定の構成の一意の識別子。
-configurationImpact|string|構成が全体的な構成スコア (1 ~ 10) に及ぼす影響を評価します。
-configurationName|string|構成の表示名。
-configurationSubcategory|string|構成が属するサブカテゴリまたはサブグループ。 多くの場合、これは特定の機能または機能を説明します。
-deviceId|string|サービス内のデバイスの一意の識別子。
-deviceName|string|デバイスの完全修飾ドメイン名 (FQDN)。
-isApplicable|bool|構成またはポリシーが適用可能かどうかを示します。
-isCompliant|bool|構成またはポリシーが適切に構成されているかどうかを示します。
-isExpectedUserImpact|bool|構成が適用される場合にユーザーに影響を与えるかどうかを示します。
-osPlatform|string|デバイスで実行されているオペレーティング システムのプラットフォーム。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。 詳細については、「TVM でサポートされるオペレーティング システムとプラットフォーム」を参照してください。
-osVersion|string|デバイスで実行されているオペレーティング システムの特定のバージョン。
-rbacGroupName|string|役割ベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "割り当てられていない" になります。 組織に RBAC グループが含まれている場合、値は "None" になります。
-rbacGroupId|string|役割ベースのアクセス制御 (RBAC) グループ ID。
-recommendationReference|string|このソフトウェアに関連する推奨事項 ID への参照。
-timestamp|string|デバイスで構成が最後に表示された時刻。
+configurationCategory|String|構成が属するカテゴリまたはグループ化: アプリケーション、OS、ネットワーク、アカウント、セキュリティコントロール。
+configurationId|String|特定の構成の一意の識別子。
+configurationImpact|String|構成が全体的な構成スコア (1 ~ 10) に及ぼす影響を評価します。
+configurationName|String|構成の表示名。
+configurationSubcategory|String|構成が属するサブカテゴリまたはサブグループ。 多くの場合、特定の機能または機能。
+deviceId|String|サービス内のデバイスの一意の識別子。
+deviceName|String|デバイスの完全修飾ドメイン名 (FQDN)。
+isApplicable|ブール|構成またはポリシーが適用可能かどうかを示します。
+isCompliant|ブール|構成またはポリシーが適切に構成されているかどうかを示します。
+isExpectedUserImpact|ブール|構成が適用される場合、ユーザーが影響を受けるかどうかを示します。
+osPlatform|String|デバイスで実行されているオペレーティング システムのプラットフォーム。 同じファミリ内にバリエーションがある特定のオペレーティング システム (Windows 10および Windows 7)。 詳細については、「TVM でサポートされるオペレーティング システムとプラットフォーム」を参照してください。
+osVersion|String|デバイスで実行されているオペレーティング システムの特定のバージョン。
+rbacGroupName|String|役割ベースのアクセス制御 (RBAC) グループ。 デバイスが RBAC グループに割り当てられていない場合、値は "割り当てられていない" になります。 組織に RBAC グループが含まれている場合、値は "None" になります。
+rbacGroupId|String|役割ベースのアクセス制御 (RBAC) グループ ID。
+recommendationReference|String|ソフトウェアに関連する推奨事項 ID への参照。
+timestamp|String|デバイスで構成が最後に表示された時刻。
 
 ### <a name="13-properties-via-files"></a>1.3 プロパティ (ファイル経由)
 
 プロパティ (ID)|データ型|説明
 :---|:---|:---
 ファイルのエクスポート|配列 \[ 文字列\]|組織の現在のスナップショットを保持するファイルのダウンロード URL の一覧。
-GeneratedTime|string|エクスポートが生成された時刻。
+GeneratedTime|String|エクスポートが生成された時刻。
 
 ## <a name="2-export-software-inventory-assessment"></a>2. ソフトウェア インベントリ評価のエクスポート
 
@@ -104,36 +104,36 @@ GeneratedTime|string|エクスポートが生成された時刻。
 
 ### <a name="21-methods"></a>2.1 メソッド
 
-メソッド|データ型|説明
-:---|:---|:---
-ソフトウェア インベントリ評価のエクスポート **(JSON 応答)**|デバイス コレクション別のソフトウェア インベントリ。 参照: [2.2 プロパティ (JSON 応答)](#22-properties-json-response)|DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion のすべての一意の組み合わせのエントリを含むテーブルを返します。 API は、組織内のすべてのデータを JSON 応答として取得します。 この方法は、100 K 未満のデバイスを持つ小規模な組織に最適です。 応答がページ分割されたので、応答から @odata.nextLink フィールドを使用して次の結果をフェッチできます。
-ソフトウェア インベントリ評価のエクスポート **(ファイル経由)**|デバイス ファイル別のソフトウェア インベントリ。 参照: [2.3 プロパティ (ファイル経由)](#23-properties-via-files)|DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion のすべての一意の組み合わせのエントリを含むテーブルを返します。 この API ソリューションを使用すると、大量のデータを高速かつ確実に取得できます。 そのため、100 K を超えるデバイスを使用する大規模な組織に推奨されます。 この API は、組織内のすべてのデータをダウンロード ファイルとして取得します。 応答には、すべてのデータをダウンロードする URL が含Azure Storage。 この API を使用すると、すべてのデータを次のようにAzure Storageダウンロードできます。 <ol><li>API を呼び出して、すべての組織データを含むダウンロード URL の一覧を取得する</li><li>ダウンロード URL を使用してすべてのファイルをダウンロードし、必要に合ったデータを処理します。</li></ol>
+|メソッド|データ型|説明|
+|:---|:---|:---|
+|ソフトウェア インベントリ評価のエクスポート **(JSON 応答)**|デバイス コレクション別のソフトウェア インベントリ。 参照: [2.2 プロパティ (JSON 応答)](#22-properties-json-response)|DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion のすべての一意の組み合わせのエントリを含むテーブルを返します。 API は、組織内のすべてのデータを JSON 応答として取得します。 この方法は、100 K 未満のデバイスを持つ小規模な組織に最適です。 応答がページ分割されたので、応答から @odata.nextLink フィールドを使用して次の結果をフェッチできます。 |
+| ソフトウェア インベントリ評価のエクスポート **(ファイル経由)**|デバイス ファイル別のソフトウェア インベントリ。 参照: [2.3 プロパティ (ファイル経由)](#23-properties-via-files)|DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion のすべての一意の組み合わせのエントリを含むテーブルを返します。 この API ソリューションを使用すると、大量のデータを高速かつ確実に取得できます。 そのため、100 K を超えるデバイスを使用する大規模な組織に推奨されます。 この API は、組織内のすべてのデータをダウンロード ファイルとして取得します。 応答には、すべてのデータをダウンロードする URL が含Azure Storage。 この API を使用すると、次のように、Azure Storageをダウンロードできます。 <ol><li>API を呼び出して、組織データを含むダウンロード URL の一覧を取得する</li><li>ダウンロード URL を使用してファイルをダウンロードし、必要に合ったデータを処理します。</li></ol> |
 
 ### <a name="22-properties-json-response"></a>2.2 プロパティ (JSON 応答)
 
 プロパティ (ID)|データ型|説明
 :---|:---|:---
-DeviceId|string|サービス内のデバイスの一意の識別子。
-DeviceName|string|デバイスの完全修飾ドメイン名 (FQDN)。
+DeviceId|String|サービス内のデバイスの一意の識別子。
+DeviceName|String|デバイスの完全修飾ドメイン名 (FQDN)。
 DiskPaths|Array[string]|製品がデバイスにインストールされていることを示すディスク証拠。
-EndOfSupportDate|string|このソフトウェアのサポートが終了または終了する日付。
-EndOfSupportStatus|string|サポートの状態の終了。 これらの可能な値を含めることができます。 なし、EOS バージョン、今後の EOS バージョン、EOS ソフトウェア、今後の EOS ソフトウェア。
-NumberOfWeaknesses|整数|このデバイス上のこのソフトウェアの弱点の数。
-OSPlatform|string|デバイスで実行されているオペレーティング システムのプラットフォーム。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。 詳細については、「tvm でサポートされるオペレーティング システムとプラットフォーム」を参照してください。
-RbacGroupName|string|役割ベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "割り当てられていない" になります。 組織に RBAC グループが含まれている場合、値は "None" になります。
-rbacGroupId|string|役割ベースのアクセス制御 (RBAC) グループ ID。
+EndOfSupportDate|String|このソフトウェアのサポートが終了または終了する日付。
+EndOfSupportStatus|String|サポートの状態の終了。 これらの可能な値を含めることができます。 なし、EOS バージョン、今後の EOS バージョン、EOS ソフトウェア、今後の EOS ソフトウェア。
+NumberOfWeaknesses|Int|このデバイス上のこのソフトウェアの弱点の数。
+OSPlatform|String|デバイスで実行されているオペレーティング システムのプラットフォーム。7 など、同じファミリ内のバリエーションを持つWindows 10オペレーティング Windows。 詳細については、「tvm でサポートされるオペレーティング システムとプラットフォーム」を参照してください。
+RbacGroupName|String|役割ベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "割り当てられていない" になります。 組織に RBAC グループが含まれている場合、値は "None" になります。
+rbacGroupId|String|役割ベースのアクセス制御 (RBAC) グループ ID。
 RegistryPaths|Array[string]|製品がデバイスにインストールされていることを示すレジストリ証拠。
-SoftwareFirstSeenTimestamp|string|このソフトウェアがデバイスで初めて見られた。
-SoftwareName|string|ソフトウェア製品の名前。
-SoftwareVendor|string|ソフトウェア ベンダーの名前。
-SoftwareVersion|string|ソフトウェア製品のバージョン番号。
+SoftwareFirstSeenTimestamp|String|このソフトウェアがデバイスで初めて見られた。
+SoftwareName|String|ソフトウェア製品の名前。
+SoftwareVendor|String|ソフトウェア ベンダーの名前。
+SoftwareVersion|String|ソフトウェア製品のバージョン番号。
 
 ### <a name="23-properties-via-files"></a>2.3 プロパティ (ファイル経由)
 
 プロパティ (ID)|データ型|説明
 :---|:---|:---
 ファイルのエクスポート|配列 \[ 文字列\]|組織の現在のスナップショットを保持するファイルのダウンロード URL の一覧。
-GeneratedTime|string|エクスポートが生成された時刻。
+GeneratedTime|String|エクスポートが生成された時刻。
 
 ## <a name="3-export-software-vulnerabilities-assessment"></a>3. ソフトウェアの脆弱性評価のエクスポート
 
@@ -145,65 +145,65 @@ GeneratedTime|string|エクスポートが生成された時刻。
 :---|:---|:---
 ソフトウェアの脆弱性評価のエクスポート **(JSON 応答)**|調査コレクション 参照: [3.2 プロパティ (JSON 応答)](#32-properties-json-response)|DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId のすべての一意の組み合わせのエントリを含むテーブルを返します。 API は、組織内のすべてのデータを JSON 応答として取得します。 この方法は、100 K 未満のデバイスを持つ小規模な組織に最適です。 応答がページ分割されたので、応答から @odata.nextLink フィールドを使用して次の結果をフェッチできます。
 ソフトウェアの脆弱性評価のエクスポート **(ファイル経由)**|調査エンティティ参照: [3.3 プロパティ (ファイル経由)](#33-properties-via-files)|DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId のすべての一意の組み合わせのエントリを含むテーブルを返します。 この API ソリューションを使用すると、大量のデータを高速かつ確実に取得できます。 そのため、100 K を超えるデバイスを使用する大規模な組織に推奨されます。 この API は、組織内のすべてのデータをダウンロード ファイルとして取得します。 応答には、すべてのデータをダウンロードする URL が含Azure Storage。 この API を使用すると、すべてのデータを次のようにAzure Storageダウンロードできます。 <ol><li>API を呼び出して、すべての組織データを含むダウンロード URL の一覧を取得します。</li><li>ダウンロード URL を使用してすべてのファイルをダウンロードし、必要に合ったデータを処理します。</li></ol>
-**デルタ エクスポート ソフトウェア** の脆弱性評価 **(JSON 応答)**|調査コレクション 参照: [3.4 Properties Delta エクスポート (JSON 応答)](#34-properties-delta-export-json-response)|DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId、EventTimestamp の各一意の組み合わせのエントリを含むテーブルを返します。 <p> API は、JSON 応答として組織内のデータをプルします。 応答がページ分割されたので、応答から @odata.nextLink フィールドを使用して次の結果をフェッチできます。 デバイス別に組織のソフトウェア脆弱性評価のスナップショット全体を取得するために使用される完全なソフトウェア脆弱性評価 (JSON 応答) とは異なり、デルタ エクスポート API 呼び出しは、選択した日付と現在の日付 ("デルタ" API 呼び出し) の間に発生した変更のみを取得するために使用されます。 毎回大量のデータを含む完全なエクスポートを取得する代わりに、新規、固定、および更新された脆弱性に関する特定の情報のみを取得します。 デルタ エクスポート API 呼び出しを使用して、「修正された脆弱性の数」など、さまざまな KPI を計算することもできます。 または "組織に追加された新しい脆弱性の数" <p> ソフトウェアの脆弱性に対するデルタ エクスポート API 呼び出しは、対象の日付範囲のデータのみを返すので、完全なエクスポートとは _見なされません_。
+**デルタ エクスポート ソフトウェア** の脆弱性評価 **(JSON 応答)**|調査コレクション 参照: [3.4 Properties Delta エクスポート (JSON 応答)](#34-properties-delta-export-json-response)|DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId、EventTimestamp の各一意の組み合わせのエントリを含むテーブルを返します。 <p> API は、JSON 応答として組織内のデータをプルします。 応答がページ分割されたので、応答から @odata.nextLink フィールドを使用して次の結果をフェッチできます。 完全なソフトウェア脆弱性評価 (JSON 応答) を使用して、デバイス別に組織のソフトウェア脆弱性評価のスナップショット全体を取得します。 ただし、デルタ エクスポート API 呼び出しは、選択した日付と現在の日付 ("デルタ" API 呼び出し) の間に発生した変更のみを取得するために使用されます。 毎回大量のデータを含む完全なエクスポートを取得する代わりに、新規、固定、および更新された脆弱性に関する特定の情報のみを取得します。 デルタ エクスポート API 呼び出しを使用して、「修正された脆弱性の数」など、さまざまな KPI を計算することもできます。 または "組織に追加された新しい脆弱性の数" <p> ソフトウェアの脆弱性に対するデルタ エクスポート API 呼び出しは、対象の日付範囲のデータのみを返すので、完全なエクスポートとは _見なされません_。
 
 ### <a name="32-properties-json-response"></a>3.2 プロパティ (JSON 応答)
 
 プロパティ (ID)|データ型|説明
 :---|:---|:---
-CveId|string|共通の脆弱性と露出 (CVE) システムのセキュリティの脆弱性に割り当てられた一意の識別子。
-CvssScore|string|CVE の CVSS スコア。
-DeviceId|string|サービス内のデバイスの一意の識別子。
-DeviceName|string|デバイスの完全修飾ドメイン名 (FQDN)。
+CveId|String|共通の脆弱性と露出 (CVE) システムのセキュリティの脆弱性に割り当てられた一意の識別子。
+CvssScore|String|CVE の CVSS スコア。
+DeviceId|String|サービス内のデバイスの一意の識別子。
+DeviceName|String|デバイスの完全修飾ドメイン名 (FQDN)。
 DiskPaths|配列 \[ 文字列\]|製品がデバイスにインストールされていることを示すディスク証拠。
-ExploitabilityLevel|string|この脆弱性の悪用レベル (NoExploit、ExploitIsPublic、ExploitIsVerified、ExploitIsInKit)
-FirstSeenTimestamp|string|この製品の CVE がデバイスで初めて表示された場合。
-ID|string|レコードの一意の識別子。
-LastSeenTimestamp|string|デバイスで CVE が最後に表示された時刻。
-OSPlatform|string|デバイスで実行されているオペレーティング システムのプラットフォーム。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。 詳細については、「tvm でサポートされるオペレーティング システムとプラットフォーム」を参照してください。
-RbacGroupName|string|役割ベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "割り当てられていない" になります。 組織に RBAC グループが含まれている場合、値は "None" になります。
-rbacGroupId|string|役割ベースのアクセス制御 (RBAC) グループ ID。
-RecommendationReference|string|このソフトウェアに関連する推奨事項 ID への参照。
-RecommendedSecurityUpdate|string|ソフトウェア ベンダーが脆弱性に対処するために提供するセキュリティ更新プログラムの名前または説明。
-RecommendedSecurityUpdateId|string|対応するガイダンスまたはナレッジ ベース (KB) 記事の該当するセキュリティ更新プログラムまたは識別子の識別子。
+ExploitabilityLevel|String|この脆弱性の悪用レベル (NoExploit、ExploitIsPublic、ExploitIsVerified、ExploitIsInKit)
+FirstSeenTimestamp|String|この製品の CVE がデバイスで初めて表示された場合。
+Id|String|レコードの一意の識別子。
+LastSeenTimestamp|String|デバイスで CVE が最後に表示された時刻。
+OSPlatform|String|デバイスで実行されているオペレーティング システムのプラットフォーム。7 など、同じファミリ内のバリエーションを持つWindows 10オペレーティング Windows。 詳細については、「tvm でサポートされるオペレーティング システムとプラットフォーム」を参照してください。
+RbacGroupName|String|役割ベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "割り当てられていない" になります。 組織に RBAC グループが含まれている場合、値は "None" になります。
+rbacGroupId|String|役割ベースのアクセス制御 (RBAC) グループ ID。
+RecommendationReference|String|このソフトウェアに関連する推奨事項 ID への参照。
+RecommendedSecurityUpdate|String|ソフトウェア ベンダーが脆弱性に対処するために提供するセキュリティ更新プログラムの名前または説明。
+RecommendedSecurityUpdateId|String|対応するガイダンスまたはナレッジ ベース (KB) 記事の該当するセキュリティ更新プログラムまたは識別子の識別子。
 レジストリ パス配列 \[ の文字列\]|製品がデバイスにインストールされていることを示すレジストリ証拠。
-SoftwareName|string|ソフトウェア製品の名前。
-SoftwareVendor|string|ソフトウェア ベンダーの名前。
-SoftwareVersion|string|ソフトウェア製品のバージョン番号。
-VulnerabilitySeverityLevel|string|CVSS スコアに基づくセキュリティ脆弱性に割り当てられた重大度レベルと、脅威の状況の影響を受ける動的要因。
+SoftwareName|String|ソフトウェア製品の名前。
+SoftwareVendor|String|ソフトウェア ベンダーの名前。
+SoftwareVersion|String|ソフトウェア製品のバージョン番号。
+VulnerabilitySeverityLevel|String|CVSS スコアと脅威の状況の影響を受ける動的要因に基づいてセキュリティの脆弱性に割り当てられる重大度レベル。
 
 ### <a name="33-properties-via-files"></a>3.3 プロパティ (ファイル経由)
 
 プロパティ (ID)|データ型|説明
 :---|:---|:---
 ファイルのエクスポート|配列 \[ 文字列\]|組織の現在のスナップショットを保持するファイルのダウンロード URL の一覧。
-GeneratedTime|string|エクスポートが生成された時刻。
+GeneratedTime|String|エクスポートが生成された時刻。
 
 ### <a name="34-properties-delta-export-json-response"></a>3.4 プロパティ (デルタ エクスポート JSON 応答)
 
 プロパティ (ID)|データ型|説明
 :---|:---|:---
-CveId |string|共通の脆弱性と露出 (CVE) システムのセキュリティの脆弱性に割り当てられた一意の識別子。
-CvssScore|string|CVE の CVSS スコア。
-DeviceId|string|サービス内のデバイスの一意の識別子。
-DeviceName|string|デバイスの完全修飾ドメイン名 (FQDN)。
+CveId |String|共通の脆弱性と露出 (CVE) システムのセキュリティの脆弱性に割り当てられた一意の識別子。
+CvssScore|String|CVE の CVSS スコア。
+DeviceId|String|サービス内のデバイスの一意の識別子。
+DeviceName|String|デバイスの完全修飾ドメイン名 (FQDN)。
 DiskPaths|Array[string]|製品がデバイスにインストールされていることを示すディスク証拠。
-EventTimestamp|String|このデルタ イベントが見つかった時刻。
-ExploitabilityLevel|string|この脆弱性の悪用レベル (NoExploit、ExploitIsPublic、ExploitIsVerified、ExploitIsInKit)
-FirstSeenTimestamp|string|この製品の CVE がデバイスで初めて表示された場合。
-ID|string|レコードの一意の識別子。  
-LastSeenTimestamp|string|デバイスで CVE が最後に表示された時刻。
-OSPlatform|string|デバイスで実行されているオペレーティング システムのプラットフォーム。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。 詳細については、「tvm でサポートされるオペレーティング システムとプラットフォーム」を参照してください。
-RbacGroupName|string|役割ベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "割り当てられていない" になります。 組織に RBAC グループが含まれている場合、値は "None" になります。
-RecommendationReference|string|このソフトウェアに関連する推奨事項 ID への参照。
-RecommendedSecurityUpdate |string|ソフトウェア ベンダーが脆弱性に対処するために提供するセキュリティ更新プログラムの名前または説明。
-RecommendedSecurityUpdateId |string|対応するガイダンスまたはナレッジ ベース (KB) 記事の該当するセキュリティ更新プログラムまたは識別子の識別子
+EventTimestamp|String|デルタ イベントが見つかった時刻。
+ExploitabilityLevel|String|脆弱性の悪用レベル (NoExploit、ExploitIsPublic、ExploitIsVerified、ExploitIsInKit)
+FirstSeenTimestamp|String|デバイスで製品の CVE が初めて表示された場合。
+Id|String|レコードの一意の識別子。  
+LastSeenTimestamp|String|デバイスで CVE が最後に表示された時刻。
+OSPlatform|String|デバイスで実行されているオペレーティング システムのプラットフォーム。7 など、同じファミリ内のバリエーションを持つWindows 10オペレーティング Windows。 詳細については、「tvm でサポートされるオペレーティング システムとプラットフォーム」を参照してください。
+RbacGroupName|String|役割ベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "割り当てられていない" になります。 組織に RBAC グループが含まれている場合、値は "None" になります。
+RecommendationReference|String|このソフトウェアに関連する推奨事項 ID への参照。
+RecommendedSecurityUpdate |String|ソフトウェア ベンダーが脆弱性に対処するために提供するセキュリティ更新プログラムの名前または説明。
+RecommendedSecurityUpdateId |String|対応するガイダンスまたはナレッジ ベース (KB) 記事の該当するセキュリティ更新プログラムまたは識別子の識別子
 RegistryPaths |Array[string]|製品がデバイスにインストールされていることを示すレジストリ証拠。
-SoftwareName|string|ソフトウェア製品の名前。
-SoftwareVendor|string|ソフトウェア ベンダーの名前。
-SoftwareVersion|string|ソフトウェア製品のバージョン番号。
-状態|String|**New**  (デバイスに導入された新しい脆弱性の場合)。 **固定**  (デバイス上にもう存在しない脆弱性の場合は、修復されたという意味です)。 **更新**  (変更されたデバイスの脆弱性の場合)。 変更の可能性は、CVSS スコア、悪用可能性レベル、重大度レベル、DiskPaths、RegistryPaths、RecommendedSecurityUpdate などです。
-VulnerabilitySeverityLevel|string|CVSS スコアに基づくセキュリティ脆弱性に割り当てられた重大度レベルと、脅威の状況の影響を受ける動的要因。
+SoftwareName|String|ソフトウェア製品の名前。
+SoftwareVendor|String|ソフトウェア ベンダーの名前。
+SoftwareVersion|String|ソフトウェア製品のバージョン番号。
+状態|String|**新機能**  (デバイスに導入された新しい脆弱性の場合)。 **固定**  (デバイス上にもう存在しない脆弱性の場合は、修復されたという意味です)。 **更新**  (変更されたデバイスの脆弱性の場合)。 変更の可能性は、CVSS スコア、悪用可能性レベル、重大度レベル、DiskPaths、RegistryPaths、RecommendedSecurityUpdate などです。
+VulnerabilitySeverityLevel|String|CVSS スコアに基づくセキュリティ脆弱性に割り当てられた重大度レベルと、脅威の状況の影響を受ける動的要因。
 
 ## <a name="see-also"></a>関連項目
 

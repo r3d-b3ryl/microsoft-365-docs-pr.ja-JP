@@ -18,19 +18,19 @@ ms.collection:
 ms.topic: article
 ms.date: 10/07/2021
 ms.reviewer: chventou
-ms.openlocfilehash: 255f63d500272694f196e3ea08fe6e09cc06ae09
-ms.sourcegitcommit: 166bf635c0905ae12c04b1865cb17aadef81e82a
+ms.openlocfilehash: bb3ef2957c0d1d01d24809702bba5208b65e1999
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60245748"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167096"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-intune"></a>Intune を使用してエンドポイント用 Microsoft Defender を管理する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -53,7 +53,7 @@ ms.locfileid: "60245748"
 4. 既存のプロファイルを選択するか、新しいプロファイルを作成します。
 
 > [!TIP]
-> お困りの際は、 「Intune **[での Microsoft Defender for Endpoint の使用」を参照してください](/mem/intune/protect/advanced-threat-protection#example-of-using-microsoft-defender-atp-with-intune)**。
+> サポートが必要な場合 「Intune **[での Microsoft Defender for Endpoint の使用」を参照してください](/mem/intune/protect/advanced-threat-protection#example-of-using-microsoft-defender-atp-with-intune)**。
 
 ## <a name="configure-microsoft-defender-for-endpoint-with-intune"></a>Intune を使用してエンドポイント用 Microsoft Defender を構成する
 
@@ -64,7 +64,7 @@ ms.locfileid: "60245748"
 |タスク|追加情報|
 |---|---|
 |**Intune を使用して組織のデバイスを管理** して、それらのデバイスとデバイスに保存されているデータを保護する|[Microsoft Intune でデバイスを保護する](/mem/intune/protect/device-protect)|
-|**Microsoft Defender for Endpoint と Intune をモバイル** 脅威防御ソリューションとして統合する <br/>*(Android デバイスおよびデバイスが 11 Windows 10またはWindows)*|[Intune で条件付きアクセスを使用して Microsoft Defender for Endpoint のコンプライアンスを適用する](/mem/intune/protect/advanced-threat-protection)|
+|**Microsoft Defender for Endpoint と Intune をモバイル** 脅威防御ソリューションとして統合する <br/>*(Android デバイスおよびデバイスが 11 Windows 10またはWindows)*|[Intune で条件付きアクセスによる Microsoft Defender for Endpoint のコンプライアンスを強制する](/mem/intune/protect/advanced-threat-protection)|
 |**条件付きアクセスを** 使用して、電子メールや会社のリソースに接続できるデバイスとアプリを制御する|[Microsoft Defender for Endpoint で条件付きアクセスを構成する](/microsoft-365/security/defender-endpoint/configure-conditional-access)|
 |**ポリシー Microsoft Defender ウイルス対策サービス** プロバイダー (ポリシー CSP) を使用して、ポリシー設定 [を構成します](/windows/client-management/mdm/policy-configuration-service-provider)。|[デバイスの制限: Microsoft Defender ウイルス対策](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus) <br/><br/> [ポリシー CSP - Microsoft Defender for Endpoint](/windows/client-management/mdm/policy-csp-defender)|
 |**必要に応じて、ユーザーの除外を指定Microsoft Defender ウイルス対策** <br/><br/> *一般に、除外を適用する必要はない必要があります。Microsoft Defender ウイルス対策には、既知のオペレーティング システムの動作や一般的な管理ファイル (エンタープライズ管理、データベース管理、その他のエンタープライズ シナリオで使用されるファイルなど) に基づく多数の自動除外が含まれます。*|[現在サポートされているバージョンの Enterpriseを実行しているコンピューターのウイルス スキャンの推奨事項Windows](https://support.microsoft.com/help/822158/virus-scanning-recommendations-for-enterprise-computers) <br/><br/> [デバイスの制限: Microsoft Defender ウイルス対策 11 デバイスWindows 10およびWindows除外](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus-exclusions) <br/><br/> [2019 Microsoft Defender ウイルス対策 2022 でWindows Server 2016除外を構成する](/windows/security/threat-protection/microsoft-defender-antivirus/configure-server-exclusions-microsoft-defender-antivirus)|
