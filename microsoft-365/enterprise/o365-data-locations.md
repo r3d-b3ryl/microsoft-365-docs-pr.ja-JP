@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Microsoft 365 の顧客データの保存場所を世界全体で確認する
-ms.openlocfilehash: 2779290e2f338be9128e0fad8ab8a1b4aa8c51bd
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: 374e8c92a4694b81b6b6eb4cff52e6f2024afe93
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128858"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167036"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Microsoft 365 顧客データの保存場所
 
@@ -108,6 +108,20 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 
 にも関わらず、Microsoft は、顧客やそのエンド ユーザーによる顧客データへのアクセス元の場所 (Geo) について、統制や制限をしません。同様に、他のサービスの顧客データが引き続いて Intune に統合される場合、元の顧客データは、元のサービス独自の Geo コミットメント (存在する場合) に従って引き続き保存されます; Intune に統合された顧客データのコピーのみが、Intune の指定された Geo に保存されます。  
 
+### <a name="what-are-the-considerations-for-microsoft-viva-data-locations"></a>Microsoft Viva 用のデータの場所についてはどのような配慮が必要ですか?
+
+- Viva コネクション
+
+  - ダッシュボード、リソース、デスクトップ アプリのデータは、SharePoint Online に保存されます。 
+  
+  - フィードには、SharePoint Online (ニュース)、ストリーム (SharePoint Online に静止画として保存)、Yammer (Yammer に静止画として保存) のコンテンツがあります。  
+  
+- Viva インサイト
+
+  - 個人用アプリのデータ所在地は、ユーザーのメールボックスの場所に基づくものです。
+  
+  - マネージャー/リーダー データ領域は、個々のユーザーではなく、テナントのプライマリ リージョンによって決定されます。
+
 ## <a name="data-center-locations"></a>データ センターの場所
 
 次の表では、さまざまなサービスのデータの場所を定義します。 サービスの場所を決定する場合は、次の表を参照してください。
@@ -155,12 +169,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
-| Skype for Business | グローバル地域 2 – アジア太平洋 |
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -168,7 +180,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 2 – アジア太平洋 |
+| Viva トピック | グローバル地域 2 – アジア太平洋 |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="aland-islands"></a>オーランド諸島
@@ -179,12 +197,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -192,7 +208,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
 | Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="albania"></a>アルバニア
@@ -203,12 +225,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -216,7 +236,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
 | Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="algeria"></a>アルジェリア
@@ -227,20 +253,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="american-samoa"></a>米領サモア
@@ -251,12 +281,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
-| Skype for Business | グローバル地域 2 – アジア太平洋 |
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -264,7 +292,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 2 – アジア太平洋 |
+| Viva トピック | グローバル地域 2 – アジア太平洋 |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="andorra"></a>アンドラ
@@ -275,12 +309,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -288,7 +320,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
 | Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="angola"></a>アンゴラ
@@ -299,20 +337,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="anguilla"></a>アンギラ
@@ -323,12 +365,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | Intune | 米国 |
-| MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -336,7 +376,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 米国 |
+| Viva トピック | 米国 |
+| Viva ラーニング | 米国 |
+| Viva インサイト - 個人用 | 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="antarctica"></a>南極大陸
@@ -347,12 +393,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | Intune | 米国 |
-| MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -360,7 +404,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 米国 |
+| Viva トピック | 米国 |
+| Viva ラーニング | 米国 |
+| Viva インサイト - 個人用 | 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="antigua-and-barbuda"></a>アンティグア バーブーダ
@@ -371,12 +421,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | Intune | 米国 |
-| MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -384,7 +432,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 米国 |
+| Viva トピック | 米国 |
+| Viva ラーニング | 米国 |
+| Viva インサイト - 個人用 | 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="argentina"></a>アルゼンチン
@@ -395,12 +449,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 3 - 米国 |
 | OneDrive for Business | グローバル地域 3 - 米国 |
 | SharePoint Online | グローバル地域 3 - 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | グローバル地域 3 - 米国 |
 | EOP | グローバル地域 3 - 米国 |
 | Intune | 米国 |
-| MyAnalytics | グローバル地域 3 - 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -408,7 +460,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 3 - 米国 |
+| Viva トピック | グローバル地域 3 - 米国 |
+| Viva ラーニング | グローバル地域 3 - 米国 |
+| Viva インサイト - 個人用 | グローバル地域 3 - 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 3 - 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="armenia"></a>アルメニア
@@ -419,12 +477,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -432,7 +488,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
 | Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="aruba"></a>アルバ
@@ -443,12 +505,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | Intune | 米国 |
-| MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -456,7 +516,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 米国 |
+| Viva トピック | 米国 |
+| Viva ラーニング | 米国 |
+| Viva インサイト - 個人用 | 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="australia"></a>オーストラリア
@@ -467,12 +533,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | オーストラリア |
 | OneDrive for Business | オーストラリア |
 | SharePoint Online | オーストラリア |
-| Skype for Business | オーストラリア |
 | Microsoft Teams | オーストラリア |
 | Office Online &amp; Mobile | オーストラリア |
 | EOP | オーストラリア |
 | Intune | オーストラリア |
-| MyAnalytics | オーストラリア |
 | Planner | オーストラリア |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -480,7 +544,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | オーストラリア |
 | Whiteboard | オーストラリア |
 | フォーム | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | オーストラリア |
+| Viva トピック | オーストラリア |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | オーストラリア |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="austria"></a>オーストリア
@@ -491,12 +561,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 欧州連合 |
 | OneDrive for Business | 欧州連合 |
 | SharePoint Online | 欧州連合 |
-| Skype for Business | 欧州連合 |
 | Microsoft Teams | 欧州連合 |
 | Office Online &amp; Mobile | 欧州連合 |
 | EOP | 欧州連合 |
 | Intune | 欧州連合 |
-| MyAnalytics | 欧州連合 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
 | Yammer | 欧州連合  |
@@ -504,7 +572,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 欧州連合 |
 | Whiteboard | 欧州連合 |
 | Forms | 欧州連合 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 欧州連合 |
+| Viva トピック | 欧州連合 |
+| Viva ラーニング | 欧州連合 |
+| Viva インサイト - 個人用 | 欧州連合 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 欧州連合 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="azerbaijan"></a>アゼルバイジャン
@@ -515,20 +589,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner |  グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
 | Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="bahamas"></a>バハマ
@@ -539,12 +617,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | Intune | 米国 |
-| MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -552,7 +628,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 米国 |
+| Viva トピック | 米国 |
+| Viva ラーニング | 米国 |
+| Viva インサイト - 個人用 | 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="bahrain"></a>バーレーン
@@ -563,12 +645,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -576,7 +656,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
 | Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="bangladesh"></a>バングラデシュ
@@ -587,12 +673,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
-| Skype for Business | グローバル地域 2 – アジア太平洋 |
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -600,7 +684,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 2 – アジア太平洋 |
+| Viva トピック | グローバル地域 2 – アジア太平洋 |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="barbados"></a>バルバドス
@@ -611,12 +701,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | Intune | 米国 |
-| MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -624,8 +712,15 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 米国 |
+| Viva トピック | 米国 |
+| Viva ラーニング | 米国 |
+| Viva インサイト - 個人用 | 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
+
 
 ## <a name="belarus"></a>ベラルーシ
 <details><summary>クリックして展開</summary><p>
@@ -635,12 +730,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -648,7 +741,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
 | Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="belgium"></a>ベルギー
@@ -659,12 +758,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 欧州連合 |
 | OneDrive for Business | 欧州連合 |
 | SharePoint Online | 欧州連合 |
-| Skype for Business | 欧州連合 |
 | Microsoft Teams | 欧州連合 |
 | Office Online &amp; Mobile | 欧州連合 |
 | EOP | 欧州連合 |
 | Intune | 欧州連合 |
-| MyAnalytics | 欧州連合 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
 | Yammer | 欧州連合  |
@@ -672,7 +769,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 欧州連合 |
 | Whiteboard | 欧州連合 |
 | Forms | 欧州連合 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 欧州連合 |
+| Viva トピック | 欧州連合 |
+| Viva ラーニング | 欧州連合 |
+| Viva インサイト - 個人用 | 欧州連合 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 欧州連合 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="belize"></a>ベリーズ
@@ -683,12 +786,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | Intune | 米国 |
-| MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -696,7 +797,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 米国 |
+| Viva トピック | 米国 |
+| Viva ラーニング | 米国 |
+| Viva インサイト - 個人用 | 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="benin"></a>ベナン
@@ -707,20 +814,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="bermuda"></a>バミューダ諸島
@@ -731,12 +842,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | Intune | 米国 |
-| MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -744,7 +853,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 米国 |
+| Viva トピック | 米国 |
+| Viva ラーニング | 米国 |
+| Viva インサイト - 個人用 | 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="bhutan"></a>ブータン
@@ -755,12 +870,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
-| Skype for Business | グローバル地域 2 – アジア太平洋 |
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -768,7 +881,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 2 – アジア太平洋 |
+| Viva トピック | グローバル地域 2 – アジア太平洋 |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="bolivia"></a>ボリビア
@@ -779,12 +898,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 3 - 米国 |
 | OneDrive for Business | グローバル地域 3 - 米国 |
 | SharePoint Online | グローバル地域 3 - 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | グローバル地域 3 - 米国 |
 | EOP | グローバル地域 3 - 米国 |
 | Intune | 米国 |
-| MyAnalytics | グローバル地域 3 - 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -792,7 +909,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 3 - 米国 |
+| Viva トピック | グローバル地域 3 - 米国 |
+| Viva ラーニング | グローバル地域 3 - 米国 |
+| Viva インサイト - 個人用 | グローバル地域 3 - 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 3 - 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="bonaire"></a>ボネール島
@@ -803,12 +926,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 3 - 米国 |
 | OneDrive for Business | グローバル地域 3 - 米国 |
 | SharePoint Online | グローバル地域 3 - 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | グローバル地域 3 - 米国 |
 | EOP | グローバル地域 3 - 米国 |
 | Intune | 米国 |
-| MyAnalytics | グローバル地域 3 - 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -816,7 +937,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 3 - 米国 |
+| Viva トピック | グローバル地域 3 - 米国 |
+| Viva ラーニング | グローバル地域 3 - 米国 |
+| Viva インサイト - 個人用 | グローバル地域 3 - 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 3 - 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="bosnia-and-herzegovina"></a>ボスニア・ヘルツェゴビナ
@@ -827,20 +954,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner |  グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
 | Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="botswana"></a>ボツワナ
@@ -851,20 +982,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="bouvet-island"></a>ブーベ島
@@ -875,12 +1010,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | Intune | 米国 |
-| MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -888,7 +1021,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 米国 |
+| Viva トピック | 米国 |
+| Viva ラーニング | 米国 |
+| Viva インサイト - 個人用 | 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="brazil"></a>ブラジル
@@ -899,20 +1038,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | ブラジル |
 | OneDrive for Business | ブラジル |
 | SharePoint Online | ブラジル |
-| Skype for Business | 米国 |
 | Microsoft Teams | ブラジル |
 | Office Online &amp; Mobile | ブラジル |
 | EOP | ブラジル |
 | Intune | 米国 |
-| MyAnalytics | ブラジル |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
 | OneNote サービス | ブラジル |
-| Stream | 米国 |
+| Stream | ブラジル |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | ブラジル |
+| Viva トピック | ブラジル |
+| Viva ラーニング | グローバル地域 3 - 米国 |
+| Viva インサイト - 個人用 | ブラジル |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 3 - 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="british-indian-ocean-territory"></a>イギリス領インド洋地域
@@ -923,12 +1066,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
-| Skype for Business | グローバル地域 2 – アジア太平洋 |
-| Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -936,7 +1077,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 2 – アジア太平洋 |
+| Viva トピック | グローバル地域 2 – アジア太平洋 |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="british-virgin-islands"></a>英領バージン諸島
@@ -947,12 +1094,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | Intune | 米国 |
-| MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -960,7 +1105,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 米国 |
+| Viva トピック | 米国 |
+| Viva ラーニング | 米国 |
+| Viva インサイト - 個人用 | 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="brunei"></a>ブルネイ
@@ -971,12 +1122,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
-| Skype for Business | グローバル地域 2 – アジア太平洋 |
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -984,7 +1133,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 2 – アジア太平洋 |
+| Viva トピック | グローバル地域 2 – アジア太平洋 |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="bulgaria"></a>ブルガリア
@@ -995,12 +1150,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 欧州連合 |
 | OneDrive for Business | 欧州連合 |
 | SharePoint Online | 欧州連合 |
-| Skype for Business | 欧州連合 |
 | Microsoft Teams | 欧州連合 |
 | Office Online &amp; Mobile | 欧州連合 |
 | EOP | 欧州連合 |
 | Intune | 欧州連合 |
-| MyAnalytics | 欧州連合 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
 | Yammer | 欧州連合  |
@@ -1008,7 +1161,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 欧州連合 |
 | Whiteboard | 欧州連合 |
 | Forms | 欧州連合 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 欧州連合 |
+| Viva トピック | 欧州連合 |
+| Viva ラーニング | 欧州連合 |
+| Viva インサイト - 個人用 | 欧州連合 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 欧州連合 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="burkina-faso"></a>ブルキナファソ
@@ -1019,20 +1178,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="burundi"></a>ブルンジ
@@ -1043,20 +1206,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="cambodia"></a>カンボジア
@@ -1067,12 +1234,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
-| Skype for Business | グローバル地域 2 – アジア太平洋 |
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -1080,7 +1245,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 2 – アジア太平洋 |
+| Viva トピック | グローバル地域 2 – アジア太平洋 |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="cameroon"></a>カメルーン
@@ -1091,20 +1262,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="canada"></a>カナダ
@@ -1115,12 +1290,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | カナダ |
 | OneDrive for Business | カナダ |
 | SharePoint Online | カナダ |
-| Skype for Business | カナダ |
 | Microsoft Teams | カナダ |
 | Office Online &amp; Mobile | カナダ |
 | EOP | カナダ |
 | Intune | 米国 |
-| MyAnalytics | カナダ |
 | Planner | カナダ |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -1128,7 +1301,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | カナダ |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | カナダ |
+| Viva トピック | カナダ |
+| Viva ラーニング | 米国 |
+| Viva インサイト - 個人用 | カナダ |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="cape-verde"></a>カーボベルデ
@@ -1139,20 +1318,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="cayman-islands"></a>ケイマン諸島
@@ -1163,12 +1346,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | Intune | 米国 |
-| MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -1176,7 +1357,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 米国 |
+| Viva トピック | 米国 |
+| Viva ラーニング | 米国 |
+| Viva インサイト - 個人用 | 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="central-african-republic"></a>中央アフリカ共和国
@@ -1187,20 +1374,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="chad"></a>チャド
@@ -1211,20 +1402,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="chile"></a>チリ
@@ -1235,12 +1430,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 3 - 米国 |
 | OneDrive for Business | グローバル地域 3 - 米国 |
 | SharePoint Online | グローバル地域 3 - 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | グローバル地域 3 - 米国 |
 | EOP | グローバル地域 3 - 米国 |
 | Intune | 米国 |
-| MyAnalytics | グローバル地域 3 - 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -1248,7 +1441,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 3 - 米国 |
+| Viva トピック | グローバル地域 3 - 米国 |
+| Viva ラーニング | グローバル地域 3 - 米国 |
+| Viva インサイト - 個人用 | グローバル地域 3 - 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 3 - 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="china"></a>中国
@@ -1259,12 +1458,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
-| Skype for Business | グローバル地域 2 – アジア太平洋 |
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -1272,7 +1469,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 2 – アジア太平洋 |
+| Viva トピック | グローバル地域 2 – アジア太平洋 |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="christmas-island"></a>クリスマス島
@@ -1283,12 +1486,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
-| Skype for Business | グローバル地域 2 – アジア太平洋 |
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -1296,7 +1497,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 2 – アジア太平洋 |
+| Viva トピック | グローバル地域 2 – アジア太平洋 |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="cocos-keeling-islands"></a>ココス諸島
@@ -1307,12 +1514,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
-| Skype for Business | グローバル地域 2 – アジア太平洋 |
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -1320,7 +1525,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 2 – アジア太平洋 |
+| Viva トピック | グローバル地域 2 – アジア太平洋 |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="colombia"></a>コロンビア
@@ -1331,12 +1542,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | Intune | 米国 |
-| MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -1344,7 +1553,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 米国 |
+| Viva トピック | 米国 |
+| Viva ラーニング | 米国 |
+| Viva インサイト - 個人用 | 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="comoros"></a>コモロ
@@ -1355,21 +1570,26 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
+
 
 ## <a name="congo-brazzaville"></a>コンゴ民主共和国 (ブラザビル)
 <details><summary>クリックして展開</summary><p>
@@ -1379,21 +1599,26 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
+
 
 ## <a name="congo-kinshasa"></a>コンゴ共和国、(キンシャサ)
 <details><summary>クリックして展開</summary><p>
@@ -1403,21 +1628,26 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
+
 
 ## <a name="cook-islands"></a>クック諸島
 <details><summary>クリックして展開</summary><p>
@@ -1427,12 +1657,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
-| Skype for Business | グローバル地域 2 – アジア太平洋 |
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -1440,7 +1668,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 2 – アジア太平洋 |
+| Viva トピック | グローバル地域 2 – アジア太平洋 |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="costa-rica"></a>コスタリカ
@@ -1451,12 +1685,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | Intune | 米国 |
-| MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -1464,7 +1696,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 米国 |
+| Viva トピック | 米国 |
+| Viva ラーニング | 米国 |
+| Viva インサイト - 個人用 | 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="cote-divoire"></a>コートジボワール
@@ -1475,20 +1713,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="croatia"></a>クロアチア
@@ -1499,12 +1741,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 欧州連合 |
 | OneDrive for Business | 欧州連合 |
 | SharePoint Online | 欧州連合 |
-| Skype for Business | 欧州連合 |
 | Microsoft Teams | 欧州連合 |
 | Office Online &amp; Mobile | 欧州連合 |
 | EOP | 欧州連合 |
 | Intune | 欧州連合 |
-| MyAnalytics | 欧州連合 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
 | Yammer | 欧州連合  |
@@ -1512,7 +1752,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 欧州連合 |
 | Whiteboard | 欧州連合 |
 | Forms | 欧州連合 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 欧州連合 |
+| Viva トピック | 欧州連合 |
+| Viva ラーニング | 欧州連合 |
+| Viva インサイト - 個人用 | 欧州連合 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 欧州連合 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="curacao"></a>キュラソー島
@@ -1523,12 +1769,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 3 - 米国 |
 | OneDrive for Business | グローバル地域 3 - 米国 |
 | SharePoint Online | グローバル地域 3 - 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | グローバル地域 3 - 米国 |
 | EOP | グローバル地域 3 - 米国 |
 | Intune | 米国 |
-| MyAnalytics | グローバル地域 3 - 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -1536,7 +1780,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 3 - 米国 |
+| Viva トピック | グローバル地域 3 - 米国 |
+| Viva ラーニング | グローバル地域 3 - 米国 |
+| Viva インサイト - 個人用 | グローバル地域 3 - 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 3 - 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="cyprus"></a>キプロス
@@ -1547,12 +1797,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 欧州連合 |
 | OneDrive for Business | 欧州連合 |
 | SharePoint Online | 欧州連合 |
-| Skype for Business | 欧州連合 |
 | Microsoft Teams | 欧州連合 |
 | Office Online &amp; Mobile | 欧州連合 |
 | EOP | 欧州連合 |
 | Intune | 欧州連合 |
-| MyAnalytics | 欧州連合 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
 | Yammer | 欧州連合  |
@@ -1560,7 +1808,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 欧州連合 |
 | Whiteboard | 欧州連合 |
 | Forms | 欧州連合 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 欧州連合 |
+| Viva トピック | 欧州連合 |
+| Viva ラーニング | 欧州連合 |
+| Viva インサイト - 個人用 | 欧州連合 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 欧州連合 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="czech-republic"></a>チェコ共和国
@@ -1571,12 +1825,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 欧州連合 |
 | OneDrive for Business | 欧州連合 |
 | SharePoint Online | 欧州連合 |
-| Skype for Business | 欧州連合 |
 | Microsoft Teams | 欧州連合 |
 | Office Online &amp; Mobile | 欧州連合 |
 | EOP | 欧州連合 |
 | Intune | 欧州連合 |
-| MyAnalytics | 欧州連合 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
 | Yammer | 欧州連合  |
@@ -1584,7 +1836,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 欧州連合 |
 | Whiteboard | 欧州連合 |
 | Forms | 欧州連合 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 欧州連合 |
+| Viva トピック | 欧州連合 |
+| Viva ラーニング | 欧州連合 |
+| Viva インサイト - 個人用 | 欧州連合 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 欧州連合 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="denmark"></a>デンマーク
@@ -1595,12 +1853,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 欧州連合 |
 | OneDrive for Business | 欧州連合 |
 | SharePoint Online | 欧州連合 |
-| Skype for Business | 欧州連合 |
 | Microsoft Teams | 欧州連合 |
 | Office Online &amp; Mobile | 欧州連合 |
 | EOP | 欧州連合 |
 | Intune | 欧州連合 |
-| MyAnalytics | 欧州連合 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
 | Yammer | 欧州連合  |
@@ -1608,7 +1864,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 欧州連合 |
 | Whiteboard | 欧州連合 |
 | Forms | 欧州連合 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 欧州連合 |
+| Viva トピック | 欧州連合 |
+| Viva ラーニング | 欧州連合 |
+| Viva インサイト - 個人用 | 欧州連合 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 欧州連合 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="djibouti"></a>ジブチ
@@ -1619,20 +1881,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="dominica"></a>ドミニカ
@@ -1643,12 +1909,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | Intune | 米国 |
-| MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -1656,7 +1920,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 米国 |
+| Viva トピック | 米国 |
+| Viva ラーニング | 米国 |
+| Viva インサイト - 個人用 | 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="dominican-republic"></a>ドミニカ共和国
@@ -1667,12 +1937,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | Intune | 米国 |
-| MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -1680,7 +1948,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 米国 |
+| Viva トピック | 米国 |
+| Viva ラーニング | 米国 |
+| Viva インサイト - 個人用 | 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="ecuador"></a>エクアドル
@@ -1691,12 +1965,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 3 - 米国 |
 | OneDrive for Business | グローバル地域 3 - 米国 |
 | SharePoint Online | グローバル地域 3 - 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | グローバル地域 3 - 米国 |
 | EOP | グローバル地域 3 - 米国 |
 | Intune | 米国 |
-| MyAnalytics | グローバル地域 3 - 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -1704,7 +1976,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 3 - 米国 |
+| Viva トピック | グローバル地域 3 - 米国 |
+| Viva ラーニング | グローバル地域 3 - 米国 |
+| Viva インサイト - 個人用 | グローバル地域 3 - 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 3 - 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="egypt"></a>エジプト
@@ -1715,20 +1993,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="el-salvador"></a>エルサルバドル
@@ -1739,12 +2021,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | Intune | 米国 |
-| MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -1752,7 +2032,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 米国 |
+| Viva トピック | 米国 |
+| Viva ラーニング | 米国 |
+| Viva インサイト - 個人用 | 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="equatorial-guinea"></a>赤道ギニア
@@ -1763,20 +2049,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="eritrea"></a>エリトリア
@@ -1787,20 +2077,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="estonia"></a>エストニア
@@ -1811,12 +2105,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 欧州連合 |
 | OneDrive for Business | 欧州連合 |
 | SharePoint Online | 欧州連合 |
-| Skype for Business | 欧州連合 |
 | Microsoft Teams | 欧州連合 |
 | Office Online &amp; Mobile | 欧州連合 |
 | EOP | 欧州連合 |
 | Intune | 欧州連合 |
-| MyAnalytics | 欧州連合 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
 | Yammer | 欧州連合  |
@@ -1824,7 +2116,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 欧州連合 |
 | Whiteboard | 欧州連合 |
 | Forms | 欧州連合 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 欧州連合 |
+| Viva トピック | 欧州連合 |
+| Viva ラーニング | 欧州連合 |
+| Viva インサイト - 個人用 | 欧州連合 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 欧州連合 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="ethiopia"></a>エチオピア
@@ -1835,20 +2133,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner |  米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="falkland-islands-malvinas"></a>フォークランド (マルビナス) 諸島
@@ -1859,12 +2161,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 3 - 米国 |
 | OneDrive for Business | グローバル地域 3 - 米国 |
 | SharePoint Online | グローバル地域 3 - 米国 |
-| Skype for Business | 米国 |
-| Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | グローバル地域 3 - 米国 |
 | EOP | グローバル地域 3 - 米国 |
 | Intune | 米国 |
-| MyAnalytics | グローバル地域 3 - 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -1872,7 +2172,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 3 - 米国 |
+| Viva トピック | グローバル地域 3 - 米国 |
+| Viva ラーニング | グローバル地域 3 - 米国 |
+| Viva インサイト - 個人用 | グローバル地域 3 - 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 3 - 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="faroe-islands"></a>フェロー諸島
@@ -1883,12 +2189,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -1896,7 +2200,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
 | Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="federated-states-of-micronesia"></a>ミクロネシア連邦
@@ -1907,12 +2217,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
-| Skype for Business | グローバル地域 2 – アジア太平洋 |
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -1920,7 +2228,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 2 – アジア太平洋 |
+| Viva トピック | グローバル地域 2 – アジア太平洋 |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="fiji"></a>フィジー
@@ -1931,20 +2245,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | オーストラリア |
 | OneDrive for Business | オーストラリア |
 | SharePoint Online | オーストラリア |
-| Skype for Business | オーストラリア |
 | Microsoft Teams | オーストラリア |
 | Office Online &amp; Mobile | オーストラリア |
 | EOP | オーストラリア |
-| Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | オーストラリア |
-| Planner | グローバル地域 2 – アジア太平洋 |
+| Intune | オーストラリア |
+| Planner | オーストラリア |
 | Sway | 米国 |
 | Yammer | 米国 |
 | OneNote サービス | オーストラリア |
 | Stream | オーストラリア |
-| Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Whiteboard | オーストラリア |
+| フォーム | 米国 |
+| Viva コネクション | オーストラリア |
+| Viva トピック | オーストラリア |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | オーストラリア |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="finland"></a>フィンランド
@@ -1955,12 +2273,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 欧州連合 |
 | OneDrive for Business | 欧州連合 |
 | SharePoint Online | 欧州連合 |
-| Skype for Business | 欧州連合 |
 | Microsoft Teams | 欧州連合 |
 | Office Online &amp; Mobile | 欧州連合 |
 | EOP | 欧州連合 |
 | Intune | 欧州連合 |
-| MyAnalytics | 欧州連合 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
 | Yammer | 欧州連合  |
@@ -1968,7 +2284,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 欧州連合 |
 | Whiteboard | 欧州連合 |
 | Forms | 欧州連合 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 欧州連合 |
+| Viva トピック | 欧州連合 |
+| Viva ラーニング | 欧州連合 |
+| Viva インサイト - 個人用 | 欧州連合 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 欧州連合 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="france"></a>フランス
@@ -1979,12 +2301,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | フランス |
 | OneDrive for Business | フランス |
 | SharePoint Online | フランス |
-| Skype for Business | 欧州連合 |
 | Microsoft Teams | フランス |
 | Office Online &amp; Mobile | フランス |
 | EOP | フランス |
 | Intune | 欧州連合 |
-| MyAnalytics | フランス |
 | Planner | 欧州連合 |
 | Sway | 米国 |
 | Yammer | 欧州連合 |
@@ -1992,7 +2312,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 欧州連合 |
 | Whiteboard | 欧州連合 |
 | Forms | 欧州連合 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | フランス |
+| Viva トピック | フランス |
+| Viva ラーニング | 欧州連合 |
+| Viva インサイト - 個人用 | フランス |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 欧州連合 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="french-guiana"></a>フランス領ギアナ
@@ -2003,12 +2329,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 3 - 米国 |
 | OneDrive for Business | グローバル地域 3 - 米国 |
 | SharePoint Online | グローバル地域 3 - 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | グローバル地域 3 - 米国 |
 | EOP | グローバル地域 3 - 米国 |
 | Intune | 米国 |
-| MyAnalytics | グローバル地域 3 - 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -2016,7 +2340,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 3 - 米国 |
+| Viva トピック | グローバル地域 3 - 米国 |
+| Viva ラーニング | グローバル地域 3 - 米国 |
+| Viva インサイト - 個人用 | グローバル地域 3 - 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 3 - 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="french-polynesia"></a>フランス領ポリネシア
@@ -2027,12 +2357,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
-| Skype for Business | グローバル地域 2 – アジア太平洋 |
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -2040,7 +2368,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 2 – アジア太平洋 |
+| Viva トピック | グローバル地域 2 – アジア太平洋 |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="french-southern-territories"></a>フランス領極南諸島
@@ -2051,12 +2385,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | Intune | 米国 |
-| MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -2064,7 +2396,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 米国 |
+| Viva トピック | 米国 |
+| Viva ラーニング | 米国 |
+| Viva インサイト - 個人用 | 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="gabon"></a>ガボン
@@ -2075,20 +2413,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="gambia"></a>ガンビア
@@ -2099,20 +2441,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="georgia"></a>ジョージア
@@ -2123,12 +2469,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -2136,7 +2480,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
 | Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="germany"></a>ドイツ
@@ -2147,12 +2497,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | ドイツ |
 | OneDrive for Business | ドイツ |
 | SharePoint Online | ドイツ |
-| Skype for Business | 欧州連合 |
 | Microsoft Teams | ドイツ |
 | Office Online &amp; Mobile | ドイツ |
 | EOP | ドイツ |
 | Intune | 欧州連合 |
-| MyAnalytics | ドイツ |
 | Planner | 欧州連合 |
 | Sway | 米国 |
 | Yammer | 欧州連合 |
@@ -2160,7 +2508,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 欧州連合 |
 | Whiteboard | 欧州連合 |
 | Forms | 欧州連合 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | ドイツ |
+| Viva トピック | ドイツ |
+| Viva ラーニング | 欧州連合 |
+| Viva インサイト - 個人用 | ドイツ |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 欧州連合 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="ghana"></a>ガーナ
@@ -2171,20 +2525,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="gibraltar"></a>ジブラルタル
@@ -2195,12 +2553,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -2208,7 +2564,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
 | Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="greece"></a>ギリシャ
@@ -2219,12 +2581,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 欧州連合 |
 | OneDrive for Business | 欧州連合 |
 | SharePoint Online | 欧州連合 |
-| Skype for Business | 欧州連合 |
 | Microsoft Teams | 欧州連合 |
 | Office Online &amp; Mobile | 欧州連合 |
 | EOP | 欧州連合 |
 | Intune | 欧州連合 |
-| MyAnalytics | 欧州連合 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
 | Yammer | 欧州連合  |
@@ -2232,8 +2592,15 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 欧州連合 |
 | Whiteboard | 欧州連合 |
 | Forms | 欧州連合 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 欧州連合 |
+| Viva トピック | 欧州連合 |
+| Viva ラーニング | 欧州連合 |
+| Viva インサイト - 個人用 | 欧州連合 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 欧州連合 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
+
 
 ## <a name="greenland"></a>グリーンランド
 <details><summary>クリックして展開</summary><p>
@@ -2243,12 +2610,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
-| Skype for Business | 米国 |
-| Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | Intune | 米国 |
-| MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -2256,7 +2621,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 米国 |
+| Viva トピック | 米国 |
+| Viva ラーニング | 米国 |
+| Viva インサイト - 個人用 | 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="grenada"></a>グレナダ
@@ -2267,12 +2638,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | Intune | 米国 |
-| MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -2280,7 +2649,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 米国 |
+| Viva トピック | 米国 |
+| Viva ラーニング | 米国 |
+| Viva インサイト - 個人用 | 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="guadeloupe"></a>グアドループ
@@ -2291,12 +2666,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | Intune | 米国 |
-| MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -2304,7 +2677,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 米国 |
+| Viva トピック | 米国 |
+| Viva ラーニング | 米国 |
+| Viva インサイト - 個人用 | 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="guam"></a>グアム
@@ -2315,12 +2694,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
-| Skype for Business | グローバル地域 2 – アジア太平洋 |
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -2328,7 +2705,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 2 – アジア太平洋 |
+| Viva トピック | グローバル地域 2 – アジア太平洋 |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="guatemala"></a>グアテマラ
@@ -2339,12 +2722,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | Intune | 米国 |
-| MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -2352,7 +2733,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 米国 |
+| Viva トピック | 米国 |
+| Viva ラーニング | 米国 |
+| Viva インサイト - 個人用 | 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="guernsey"></a>ガーンジー島
@@ -2363,12 +2750,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -2376,7 +2761,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
 | Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="guinea"></a>ギニア
@@ -2387,20 +2778,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="guinea-bissau"></a>ギニアビサウ
@@ -2411,20 +2806,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="guyana"></a>ガイアナ
@@ -2435,12 +2834,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 3 - 米国 |
 | OneDrive for Business | グローバル地域 3 - 米国 |
 | SharePoint Online | グローバル地域 3 - 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | グローバル地域 3 - 米国 |
 | EOP | グローバル地域 3 - 米国 |
 | Intune | 米国 |
-| MyAnalytics | グローバル地域 3 - 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -2448,7 +2845,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 3 - 米国 |
+| Viva トピック | グローバル地域 3 - 米国 |
+| Viva ラーニング | グローバル地域 3 - 米国 |
+| Viva インサイト - 個人用 | グローバル地域 3 - 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 3 - 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="haiti"></a>ハイチ
@@ -2459,12 +2862,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | Intune | 米国 |
-| MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -2472,7 +2873,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 米国 |
+| Viva トピック | 米国 |
+| Viva ラーニング | 米国 |
+| Viva インサイト - 個人用 | 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="heard-and-mcdonald-islands"></a>ハード・マクドナルド諸島
@@ -2483,12 +2890,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | Intune | 米国 |
-| MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -2496,7 +2901,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 米国 |
+| Viva トピック | 米国 |
+| Viva ラーニング | 米国 |
+| Viva インサイト - 個人用 | 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="herzegovina"></a>ヘルツェゴビナ
@@ -2507,12 +2918,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -2520,7 +2929,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
 | Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="holy-see-vatican-city-state"></a>バチカン市国
@@ -2531,12 +2946,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -2544,7 +2957,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
 | Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="honduras"></a>ホンジュラス
@@ -2555,12 +2974,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | Intune | 米国 |
-| MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -2568,7 +2985,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 米国 |
+| Viva トピック | 米国 |
+| Viva ラーニング | 米国 |
+| Viva インサイト - 個人用 | 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="hong-kong-sar"></a>香港
@@ -2579,12 +3002,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
-| Skype for Business | グローバル地域 2 – アジア太平洋 |
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -2592,7 +3013,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 2 – アジア太平洋 |
+| Viva トピック | グローバル地域 2 – アジア太平洋 |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="hungary"></a>ハンガリー
@@ -2603,12 +3030,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 欧州連合 |
 | OneDrive for Business | 欧州連合 |
 | SharePoint Online | 欧州連合 |
-| Skype for Business | 欧州連合 |
 | Microsoft Teams | 欧州連合 |
 | Office Online &amp; Mobile | 欧州連合 |
 | EOP | 欧州連合 |
 | Intune | 欧州連合 |
-| MyAnalytics | 欧州連合 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
 | Yammer | 欧州連合  |
@@ -2616,7 +3041,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 欧州連合 |
 | Whiteboard | 欧州連合 |
 | Forms | 欧州連合 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 欧州連合 |
+| Viva トピック | 欧州連合 |
+| Viva ラーニング | 欧州連合 |
+| Viva インサイト - 個人用 | 欧州連合 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 欧州連合 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="iceland"></a>アイスランド
@@ -2627,12 +3058,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -2640,8 +3069,15 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
 | Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
+
 
 ## <a name="india"></a>インド
 <details><summary>クリックして展開</summary><p>
@@ -2651,12 +3087,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | インド |
 | OneDrive for Business | インド |
 | SharePoint Online | インド |
-| Skype for Business | インド |
 | Microsoft Teams | インド |
 | Office Online &amp; Mobile | インド |
 | EOP | インド |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | インド |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -2664,7 +3098,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | インド |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | インド |
+| Viva トピック | インド |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | インド |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="indonesia"></a>インドネシア
@@ -2675,12 +3115,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
-| Skype for Business | グローバル地域 2 – アジア太平洋 |
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -2688,7 +3126,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 2 – アジア太平洋 |
+| Viva トピック | グローバル地域 2 – アジア太平洋 |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="iraq"></a>イラク
@@ -2699,12 +3143,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -2712,7 +3154,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
 | Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="ireland"></a>アイルランド
@@ -2723,12 +3171,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 欧州連合 |
 | OneDrive for Business | 欧州連合 |
 | SharePoint Online | 欧州連合 |
-| Skype for Business | 欧州連合 |
 | Microsoft Teams | 欧州連合 |
 | Office Online &amp; Mobile | 欧州連合 |
 | EOP | 欧州連合 |
 | Intune | 欧州連合 |
-| MyAnalytics | 欧州連合 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
 | Yammer | 欧州連合  |
@@ -2736,7 +3182,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 欧州連合 |
 | Whiteboard | 欧州連合 |
 | Forms | 欧州連合 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 欧州連合 |
+| Viva トピック | 欧州連合 |
+| Viva ラーニング | 欧州連合 |
+| Viva インサイト - 個人用 | 欧州連合 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 欧州連合 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="isle-of-man"></a>マン島
@@ -2747,12 +3199,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -2760,7 +3210,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
 | Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="israel"></a>イスラエル
@@ -2771,12 +3227,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -2784,7 +3238,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
 | Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="italy"></a>イタリア
@@ -2795,12 +3255,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 欧州連合 |
 | OneDrive for Business | 欧州連合 |
 | SharePoint Online | 欧州連合 |
-| Skype for Business | 欧州連合 |
 | Microsoft Teams | 欧州連合 |
 | Office Online &amp; Mobile | 欧州連合 |
 | EOP | 欧州連合 |
 | Intune | 欧州連合 |
-| MyAnalytics | 欧州連合 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
 | Yammer | 欧州連合  |
@@ -2808,7 +3266,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 欧州連合 |
 | Whiteboard | 欧州連合 |
 | Forms | 欧州連合 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 欧州連合 |
+| Viva トピック | 欧州連合 |
+| Viva ラーニング | 欧州連合 |
+| Viva インサイト - 個人用 | 欧州連合 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 欧州連合 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="jamaica"></a>ジャマイカ
@@ -2819,12 +3283,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | Intune | 米国 |
-| MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -2832,7 +3294,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 米国 |
+| Viva トピック | 米国 |
+| Viva ラーニング | 米国 |
+| Viva インサイト - 個人用 | 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="japan"></a>日本
@@ -2843,12 +3311,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 日本 |
 | OneDrive for Business | 日本 |
 | SharePoint Online | 日本 |
-| Skype for Business | 日本 |
 | Microsoft Teams | 日本 |
 | Office Online &amp; Mobile | 日本 |
 | EOP | 日本 |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | 日本 |
 | Planner | 日本 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -2856,7 +3322,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 日本 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 日本 |
+| Viva トピック | 日本 |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | 日本 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="jersey"></a>ジャージー島
@@ -2867,20 +3339,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
-| Yammer |  グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
 | Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="jordan"></a>ヨルダン
@@ -2891,12 +3367,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -2904,7 +3378,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
 | Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="kazakhstan"></a>カザフスタン
@@ -2915,12 +3395,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -2928,7 +3406,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
 | Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="kenya"></a>ケニア
@@ -2939,20 +3423,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="kiribati"></a>キリバス
@@ -2963,12 +3451,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
-| Skype for Business | グローバル地域 2 – アジア太平洋 |
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -2976,7 +3462,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 2 – アジア太平洋 |
+| Viva トピック | グローバル地域 2 – アジア太平洋 |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="south-korea"></a>韓国
@@ -2987,12 +3479,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 韓国 |
 | OneDrive for Business | 韓国 |
 | SharePoint Online | 韓国 |
-| Skype for Business | 韓国 |
 | Microsoft Teams | 韓国 |
 | Office Online &amp; Mobile | 韓国 |
 | EOP | 韓国 |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | 韓国 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -3000,7 +3490,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 韓国 |
+| Viva トピック | 韓国 |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | 韓国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="kosovo"></a>コソボ
@@ -3011,12 +3507,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -3024,7 +3518,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
 | Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="kuwait"></a>クウェート
@@ -3035,12 +3535,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -3048,7 +3546,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
 | Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="kyrgyzstan"></a>キルギスタン
@@ -3059,12 +3563,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -3072,7 +3574,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
 | Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="laos"></a>ラオス
@@ -3083,12 +3591,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
-| Skype for Business | グローバル地域 2 – アジア太平洋 |
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -3096,7 +3602,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 2 – アジア太平洋 |
+| Viva トピック | グローバル地域 2 – アジア太平洋 |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="latvia"></a>ラトビア
@@ -3107,12 +3619,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 欧州連合 |
 | OneDrive for Business | 欧州連合 |
 | SharePoint Online | 欧州連合 |
-| Skype for Business | 欧州連合 |
 | Microsoft Teams | 欧州連合 |
 | Office Online &amp; Mobile | 欧州連合 |
 | EOP | 欧州連合 |
 | Intune | 欧州連合 |
-| MyAnalytics | 欧州連合 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
 | Yammer | 欧州連合  |
@@ -3120,7 +3630,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 欧州連合 |
 | Whiteboard | 欧州連合 |
 | Forms | 欧州連合 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 欧州連合 |
+| Viva トピック | 欧州連合 |
+| Viva ラーニング | 欧州連合 |
+| Viva インサイト - 個人用 | 欧州連合 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 欧州連合 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="lebanon"></a>レバノン
@@ -3131,21 +3647,26 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
-| Yammer |  グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
 | Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
+
 
 ## <a name="lesotho"></a>レソト
 <details><summary>クリックして展開</summary><p>
@@ -3155,21 +3676,26 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
+
 
 ## <a name="liberia"></a>リベリア
 <details><summary>クリックして展開</summary><p>
@@ -3179,20 +3705,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="libya"></a>リビア
@@ -3203,21 +3733,26 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
+
 
 ## <a name="liechtenstein"></a>リヒテンシュタイン
 <details><summary>クリックして展開</summary><p>
@@ -3227,20 +3762,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | スイス |
 | OneDrive for Business | スイス |
 | SharePoint Online | スイス |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | スイス |
 | Office Online &amp; Mobile | スイス |
 | EOP | スイス |
-| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | スイス |
-| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | 欧州連合 |
+| Planner | 欧州連合 |
 | Sway | 米国 |
-| Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Yammer | 欧州連合 |
 | OneNote サービス | スイス |
-| Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Whiteboard | 米国 |
-| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Workplace Analytics | 米国 |
+| Stream | 欧州連合 |
+| Whiteboard | 欧州連合 |
+| Forms | 欧州連合 |
+| Viva コネクション | スイス |
+| Viva トピック | スイス |
+| Viva ラーニング | 欧州連合 |
+| Viva インサイト - 個人用 | スイス |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 欧州連合 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="lithuania"></a>リトアニア
@@ -3251,12 +3790,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 欧州連合 |
 | OneDrive for Business | 欧州連合 |
 | SharePoint Online | 欧州連合 |
-| Skype for Business | 欧州連合 |
 | Microsoft Teams | 欧州連合 |
 | Office Online &amp; Mobile | 欧州連合 |
 | EOP | 欧州連合 |
 | Intune | 欧州連合 |
-| MyAnalytics | 欧州連合 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
 | Yammer | 欧州連合  |
@@ -3264,7 +3801,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 欧州連合 |
 | Whiteboard | 欧州連合 |
 | Forms | 欧州連合 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 欧州連合 |
+| Viva トピック | 欧州連合 |
+| Viva ラーニング | 欧州連合 |
+| Viva インサイト - 個人用 | 欧州連合 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 欧州連合 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="luxembourg"></a>ルクセンブルク
@@ -3275,12 +3818,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 欧州連合 |
 | OneDrive for Business | 欧州連合 |
 | SharePoint Online | 欧州連合 |
-| Skype for Business | 欧州連合 |
 | Microsoft Teams | 欧州連合 |
 | Office Online &amp; Mobile | 欧州連合 |
 | EOP | 欧州連合 |
 | Intune | 欧州連合 |
-| MyAnalytics | 欧州連合 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
 | Yammer | 欧州連合  |
@@ -3288,7 +3829,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 欧州連合 |
 | Whiteboard | 欧州連合 |
 | Forms | 欧州連合 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 欧州連合 |
+| Viva トピック | 欧州連合 |
+| Viva ラーニング | 欧州連合 |
+| Viva インサイト - 個人用 | 欧州連合 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 欧州連合 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="madagascar"></a>マダガスカル
@@ -3299,20 +3846,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="malawi"></a>マラウイ
@@ -3323,20 +3874,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="malaysia"></a>マレーシア
@@ -3347,12 +3902,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
-| Skype for Business | グローバル地域 2 – アジア太平洋 |
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -3360,7 +3913,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 2 – アジア太平洋 |
+| Viva トピック | グローバル地域 2 – アジア太平洋 |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="maldives"></a>モルディブ
@@ -3371,12 +3930,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
-| Skype for Business | グローバル地域 2 – アジア太平洋 |
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -3384,7 +3941,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 2 – アジア太平洋 |
+| Viva トピック | グローバル地域 2 – アジア太平洋 |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="mali"></a>マリ
@@ -3395,20 +3958,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="malta"></a>マルタ
@@ -3419,12 +3986,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 欧州連合 |
 | OneDrive for Business | 欧州連合 |
 | SharePoint Online | 欧州連合 |
-| Skype for Business | 欧州連合 |
 | Microsoft Teams | 欧州連合 |
 | Office Online &amp; Mobile | 欧州連合 |
 | EOP | 欧州連合 |
 | Intune | 欧州連合 |
-| MyAnalytics | 欧州連合 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
 | Yammer | 欧州連合  |
@@ -3432,7 +3997,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 欧州連合 |
 | Whiteboard | 欧州連合 |
 | Forms | 欧州連合 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 欧州連合 |
+| Viva トピック | 欧州連合 |
+| Viva ラーニング | 欧州連合 |
+| Viva インサイト - 個人用 | 欧州連合 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 欧州連合 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="marshall-islands"></a>マーシャル諸島
@@ -3443,12 +4014,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
-| Skype for Business | グローバル地域 2 – アジア太平洋 |
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -3456,7 +4025,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 2 – アジア太平洋 |
+| Viva トピック | グローバル地域 2 – アジア太平洋 |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="martinique"></a>マルティニーク島
@@ -3467,12 +4042,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | Intune | 米国 |
-| MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -3480,7 +4053,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 米国 |
+| Viva トピック | 米国 |
+| Viva ラーニング | 米国 |
+| Viva インサイト - 個人用 | 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="mauritania"></a>モーリタニア
@@ -3491,20 +4070,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="mauritius"></a>モーリシャス
@@ -3515,20 +4098,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="mayotte"></a>マイヨット
@@ -3539,20 +4126,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="mexico"></a>メキシコ
@@ -3563,12 +4154,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | Intune | 米国 |
-| MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -3576,7 +4165,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 米国 |
+| Viva トピック | 米国 |
+| Viva ラーニング | 米国 |
+| Viva インサイト - 個人用 | 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="moldova"></a>モルドバ
@@ -3587,12 +4182,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -3600,7 +4193,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
 | Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="monaco"></a>モナコ
@@ -3611,12 +4210,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -3624,7 +4221,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
 | Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="mongolia"></a>モンゴル
@@ -3635,12 +4238,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
-| Skype for Business | グローバル地域 2 – アジア太平洋 |
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -3648,7 +4249,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 2 – アジア太平洋 |
+| Viva トピック | グローバル地域 2 – アジア太平洋 |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="montenegro"></a>モンテネグロ
@@ -3659,12 +4266,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -3672,7 +4277,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
 | Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="montserrat"></a>モントセラト
@@ -3683,12 +4294,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | Intune | 米国 |
-| MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -3696,7 +4305,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 米国 |
+| Viva トピック | 米国 |
+| Viva ラーニング | 米国 |
+| Viva インサイト - 個人用 | 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="morocco"></a>モロッコ
@@ -3707,20 +4322,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="mozambique"></a>モザンビーク
@@ -3731,20 +4350,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="myanmar"></a>ミャンマー
@@ -3755,12 +4378,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
-| Skype for Business | グローバル地域 2 – アジア太平洋 |
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -3768,7 +4389,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 2 – アジア太平洋 |
+| Viva トピック | グローバル地域 2 – アジア太平洋 |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="namibia"></a>ナミビア
@@ -3779,20 +4406,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="nauru"></a>ナウル
@@ -3803,12 +4434,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
-| Skype for Business | グローバル地域 2 – アジア太平洋 |
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -3816,8 +4445,15 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 2 – アジア太平洋 |
+| Viva トピック | グローバル地域 2 – アジア太平洋 |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
+
 
 ## <a name="nepal"></a>ネパール
 <details><summary>クリックして展開</summary><p>
@@ -3827,12 +4463,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
-| Skype for Business | グローバル地域 2 – アジア太平洋 |
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -3840,8 +4474,15 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 2 – アジア太平洋 |
+| Viva トピック | グローバル地域 2 – アジア太平洋 |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
+
 
 ## <a name="netherlands"></a>オランダ
 <details><summary>クリックして展開</summary><p>
@@ -3851,12 +4492,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 欧州連合 |
 | OneDrive for Business | 欧州連合 |
 | SharePoint Online | 欧州連合 |
-| Skype for Business | 欧州連合 |
 | Microsoft Teams | 欧州連合 |
 | Office Online &amp; Mobile | 欧州連合 |
 | EOP | 欧州連合 |
 | Intune | 欧州連合 |
-| MyAnalytics | 欧州連合 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
 | Yammer | 欧州連合  |
@@ -3864,7 +4503,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 欧州連合 |
 | Whiteboard | 欧州連合 |
 | Forms | 欧州連合 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 欧州連合 |
+| Viva トピック | 欧州連合 |
+| Viva ラーニング | 欧州連合 |
+| Viva インサイト - 個人用 | 欧州連合 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 欧州連合 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="netherlands-antilles"></a>オランダ領アンティル
@@ -3875,12 +4520,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | Intune | 米国 |
-| MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -3888,8 +4531,15 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 米国 |
+| Viva トピック | 米国 |
+| Viva ラーニング | 米国 |
+| Viva インサイト - 個人用 | 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
+
 
 ## <a name="new-caledonia"></a>ニューカレドニア
 <details><summary>クリックして展開</summary><p>
@@ -3899,12 +4549,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
-| Skype for Business | グローバル地域 2 – アジア太平洋 |
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -3912,7 +4560,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 2 – アジア太平洋 |
+| Viva トピック | グローバル地域 2 – アジア太平洋 |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="new-zealand"></a>ニュージーランド
@@ -3923,20 +4577,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | オーストラリア |
 | OneDrive for Business | オーストラリア |
 | SharePoint Online | オーストラリア |
-| Skype for Business | オーストラリア |
 | Microsoft Teams | オーストラリア |
 | Office Online &amp; Mobile | オーストラリア |
 | EOP | オーストラリア |
-| Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | オーストラリア |
-| Planner | グローバル地域 2 – アジア太平洋 |
+| Intune | オーストラリア |
+| Planner | オーストラリア |
 | Sway | 米国 |
 | Yammer | 米国 |
 | OneNote サービス | オーストラリア |
 | Stream | オーストラリア |
-| Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Whiteboard | オーストラリア |
+| フォーム | 米国 |
+| Viva コネクション | オーストラリア |
+| Viva トピック | オーストラリア |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | オーストラリア |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="nicaragua"></a>ニカラグア
@@ -3947,12 +4605,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | Intune | 米国 |
-| MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -3960,7 +4616,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 米国 |
+| Viva トピック | 米国 |
+| Viva ラーニング | 米国 |
+| Viva インサイト - 個人用 | 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="niger"></a>ニジェール
@@ -3971,20 +4633,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
 | Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="nigeria"></a>ナイジェリア
@@ -3995,20 +4661,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
 | Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="niue"></a>ニウエ
@@ -4019,12 +4689,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
-| Skype for Business | グローバル地域 2 – アジア太平洋 |
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -4032,7 +4700,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 2 – アジア太平洋 |
+| Viva トピック | グローバル地域 2 – アジア太平洋 |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="norfolk-island"></a>ノーフォーク島
@@ -4043,12 +4717,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
-| Skype for Business | グローバル地域 2 – アジア太平洋 |
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -4056,7 +4728,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 2 – アジア太平洋 |
+| Viva トピック | グローバル地域 2 – アジア太平洋 |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="northern-mariana-islands"></a>北マリアナ諸島
@@ -4067,12 +4745,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
-| Skype for Business | グローバル地域 2 – アジア太平洋 |
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -4080,7 +4756,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 2 – アジア太平洋 |
+| Viva トピック | グローバル地域 2 – アジア太平洋 |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="norway"></a>ノルウェー
@@ -4091,12 +4773,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | ノルウェー |
 | OneDrive for Business | ノルウェー |
 | SharePoint Online | ノルウェー |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | ノルウェー |
 | Office Online &amp; Mobile | ノルウェー |
 | EOP | ノルウェー |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | ノルウェー |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -4104,7 +4784,14 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | ホワイトボード | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | フォーム | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Workplace Analytics | 米国 |
+| Viva コネクション | ノルウェー |
+| Viva トピック | ノルウェー |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | ノルウェー |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
+
 </p></details>
 
 ## <a name="oman"></a>オマーン
@@ -4115,12 +4802,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -4128,7 +4813,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
 | Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="pakistan"></a>パキスタン
@@ -4139,12 +4830,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Microsoft Teams | グローバル地域 2 – アジア太平洋 |
+| Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -4152,7 +4841,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
 | Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="palau"></a>パラオ
@@ -4163,12 +4858,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
-| Skype for Business | グローバル地域 2 – アジア太平洋 |
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -4176,7 +4869,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 2 – アジア太平洋 |
+| Viva トピック | グローバル地域 2 – アジア太平洋 |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="palestinian-authority"></a>パレスチナ自治政府
@@ -4187,12 +4886,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
-| Skype for Business | グローバル地域 2 – アジア太平洋 |
-| Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -4200,7 +4897,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 2 – アジア太平洋 |
+| Viva トピック | グローバル地域 2 – アジア太平洋 |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="panama"></a>パナマ
@@ -4211,12 +4914,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | Intune | 米国 |
-| MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -4224,7 +4925,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 米国 |
+| Viva トピック | 米国 |
+| Viva ラーニング | 米国 |
+| Viva インサイト - 個人用 | 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="papua-new-guinea"></a>パプアニューギニア
@@ -4235,12 +4942,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
-| Skype for Business | グローバル地域 2 – アジア太平洋 |
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -4248,7 +4953,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 2 – アジア太平洋 |
+| Viva トピック | グローバル地域 2 – アジア太平洋 |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="paraguay"></a>パラグアイ
@@ -4259,12 +4970,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 3 - 米国 |
 | OneDrive for Business | グローバル地域 3 - 米国 |
 | SharePoint Online | グローバル地域 3 - 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | グローバル地域 3 - 米国 |
 | EOP | グローバル地域 3 - 米国 |
 | Intune | 米国 |
-| MyAnalytics | グローバル地域 3 - 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -4272,7 +4981,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 3 - 米国 |
+| Viva トピック | グローバル地域 3 - 米国 |
+| Viva ラーニング | グローバル地域 3 - 米国 |
+| Viva インサイト - 個人用 | グローバル地域 3 - 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 3 - 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="peru"></a>ペルー
@@ -4283,12 +4998,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 3 - 米国 |
 | OneDrive for Business | グローバル地域 3 - 米国 |
 | SharePoint Online | グローバル地域 3 - 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | グローバル地域 3 - 米国 |
 | EOP | グローバル地域 3 - 米国 |
 | Intune | 米国 |
-| MyAnalytics | グローバル地域 3 - 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -4296,7 +5009,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 3 - 米国 |
+| Viva トピック | グローバル地域 3 - 米国 |
+| Viva ラーニング | グローバル地域 3 - 米国 |
+| Viva インサイト - 個人用 | グローバル地域 3 - 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 3 - 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="philippines"></a>フィリピン
@@ -4307,12 +5026,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
-| Skype for Business | グローバル地域 2 – アジア太平洋 |
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -4320,7 +5037,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 2 – アジア太平洋 |
+| Viva トピック | グローバル地域 2 – アジア太平洋 |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="pitcairn"></a>ピトケアン
@@ -4331,12 +5054,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
-| Skype for Business | グローバル地域 2 – アジア太平洋 |
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -4344,7 +5065,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 2 – アジア太平洋 |
+| Viva トピック | グローバル地域 2 – アジア太平洋 |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="poland"></a>ポーランド
@@ -4355,12 +5082,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 欧州連合 |
 | OneDrive for Business | 欧州連合 |
 | SharePoint Online | 欧州連合 |
-| Skype for Business | 欧州連合 |
 | Microsoft Teams | 欧州連合 |
 | Office Online &amp; Mobile | 欧州連合 |
 | EOP | 欧州連合 |
 | Intune | 欧州連合 |
-| MyAnalytics | 欧州連合 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
 | Yammer | 欧州連合  |
@@ -4368,7 +5093,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 欧州連合 |
 | Whiteboard | 欧州連合 |
 | Forms | 欧州連合 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 欧州連合 |
+| Viva トピック | 欧州連合 |
+| Viva ラーニング | 欧州連合 |
+| Viva インサイト - 個人用 | 欧州連合 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 欧州連合 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="portugal"></a>ポルトガル
@@ -4379,12 +5110,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 欧州連合 |
 | OneDrive for Business | 欧州連合 |
 | SharePoint Online | 欧州連合 |
-| Skype for Business | 欧州連合 |
 | Microsoft Teams | 欧州連合 |
 | Office Online &amp; Mobile | 欧州連合 |
 | EOP | 欧州連合 |
 | Intune | 欧州連合 |
-| MyAnalytics | 欧州連合 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
 | Yammer | 欧州連合  |
@@ -4392,7 +5121,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 欧州連合 |
 | Whiteboard | 欧州連合 |
 | Forms | 欧州連合 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 欧州連合 |
+| Viva トピック | 欧州連合 |
+| Viva ラーニング | 欧州連合 |
+| Viva インサイト - 個人用 | 欧州連合 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 欧州連合 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="puerto-rico"></a>プエルトリコ
@@ -4403,12 +5138,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | Intune | 米国 |
-| MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -4416,7 +5149,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 米国 |
+| Viva トピック | 米国 |
+| Viva ラーニング | 米国 |
+| Viva インサイト - 個人用 | 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="qatar"></a>カタール
@@ -4427,12 +5166,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -4440,7 +5177,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
 | Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="republic-of-macedonia"></a>マケドニア共和国
@@ -4451,12 +5194,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -4464,7 +5205,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
 | Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="runion"></a>レユニオン
@@ -4475,20 +5222,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="romania"></a>ルーマニア
@@ -4499,12 +5250,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 欧州連合 |
 | OneDrive for Business | 欧州連合 |
 | SharePoint Online | 欧州連合 |
-| Skype for Business | 欧州連合 |
 | Microsoft Teams | 欧州連合 |
 | Office Online &amp; Mobile | 欧州連合 |
 | EOP | 欧州連合 |
 | Intune | 欧州連合 |
-| MyAnalytics | 欧州連合 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
 | Yammer | 欧州連合  |
@@ -4512,23 +5261,28 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 欧州連合 |
 | Whiteboard | 欧州連合 |
 | Forms | 欧州連合 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 欧州連合 |
+| Viva トピック | 欧州連合 |
+| Viva ラーニング | 欧州連合 |
+| Viva インサイト - 個人用 | 欧州連合 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 欧州連合 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="russian-federation"></a>ロシア連邦
 <details><summary>クリックして展開</summary><p>
+
 
 | サービス | 場所 |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -4536,55 +5290,71 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
 | Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="rwanda"></a>ルワンダ
 <details><summary>クリックして展開</summary><p>
 
+
 | サービス | 場所 |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="saint-helena"></a>セントヘレナ島
 <details><summary>クリックして展開</summary><p>
 
+
 | サービス | 場所 |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="saint-kitts-and-nevis"></a>セントクリストファー ネイビス
@@ -4595,12 +5365,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | Intune | 米国 |
-| MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -4608,7 +5376,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 米国 |
+| Viva トピック | 米国 |
+| Viva ラーニング | 米国 |
+| Viva インサイト - 個人用 | 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="saint-lucia"></a>セントルシア
@@ -4619,12 +5393,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | Intune | 米国 |
-| MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -4632,7 +5404,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 米国 |
+| Viva トピック | 米国 |
+| Viva ラーニング | 米国 |
+| Viva インサイト - 個人用 | 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="saint-martin"></a>サンマルタン島
@@ -4643,12 +5421,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | Intune | 米国 |
-| MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -4656,7 +5432,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 米国 |
+| Viva トピック | 米国 |
+| Viva ラーニング | 米国 |
+| Viva インサイト - 個人用 | 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="saint-pierre-and-miquelon"></a>サンピエール島/ミクロン島
@@ -4667,12 +5449,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | Intune | 米国 |
-| MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -4680,7 +5460,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 米国 |
+| Viva トピック | 米国 |
+| Viva ラーニング | 米国 |
+| Viva インサイト - 個人用 | 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="saint-vincent-and-the-grenadines"></a>セントビンセント グレナディーン
@@ -4691,12 +5477,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | Intune | 米国 |
-| MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -4704,7 +5488,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 米国 |
+| Viva トピック | 米国 |
+| Viva ラーニング | 米国 |
+| Viva インサイト - 個人用 | 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="saint-barthlemy"></a>サンバルテルミー
@@ -4715,12 +5505,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | Intune | 米国 |
-| MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -4728,7 +5516,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 米国 |
+| Viva トピック | 米国 |
+| Viva ラーニング | 米国 |
+| Viva インサイト - 個人用 | 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="samoa"></a>サモア
@@ -4739,12 +5533,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
-| Skype for Business | グローバル地域 2 – アジア太平洋 |
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -4752,7 +5544,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 2 – アジア太平洋 |
+| Viva トピック | グローバル地域 2 – アジア太平洋 |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="san-marino"></a>サンマリノ
@@ -4763,12 +5561,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -4776,7 +5572,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
 | Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="sao-tome-and-principe"></a>サントメ・プリンシペ
@@ -4787,20 +5589,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="saudi-arabia"></a>サウジアラビア
@@ -4811,20 +5617,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| ホワイトボード | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| フォーム | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Workplace Analytics | 米国 |
+| Whiteboard | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="senegal"></a>セネガル
@@ -4835,20 +5645,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
 | Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="serbia"></a>セルビア
@@ -4859,12 +5673,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -4872,7 +5684,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
 | Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="seychelles"></a>セーシェル
@@ -4883,20 +5701,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="sierra-leone"></a>シエラレオネ
@@ -4907,20 +5729,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="singapore"></a>シンガポール
@@ -4931,12 +5757,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
-| Skype for Business | グローバル地域 2 – アジア太平洋 |
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -4944,7 +5768,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 2 – アジア太平洋 |
+| Viva トピック | グローバル地域 2 – アジア太平洋 |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="sint-maarten"></a>シント・マールテン島
@@ -4955,12 +5785,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | Intune | 米国 |
-| MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -4968,7 +5796,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 米国 |
+| Viva トピック | 米国 |
+| Viva ラーニング | 米国 |
+| Viva インサイト - 個人用 | 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="slovakia"></a>スロバキア
@@ -4979,12 +5813,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 欧州連合 |
 | OneDrive for Business | 欧州連合 |
 | SharePoint Online | 欧州連合 |
-| Skype for Business | 欧州連合 |
 | Microsoft Teams | 欧州連合 |
 | Office Online &amp; Mobile | 欧州連合 |
 | EOP | 欧州連合 |
 | Intune | 欧州連合 |
-| MyAnalytics | 欧州連合 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
 | Yammer | 欧州連合  |
@@ -4992,7 +5824,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 欧州連合 |
 | Whiteboard | 欧州連合 |
 | Forms | 欧州連合 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 欧州連合 |
+| Viva トピック | 欧州連合 |
+| Viva ラーニング | 欧州連合 |
+| Viva インサイト - 個人用 | 欧州連合 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 欧州連合 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="slovenia"></a>スロベニア
@@ -5003,12 +5841,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 欧州連合 |
 | OneDrive for Business | 欧州連合 |
 | SharePoint Online | 欧州連合 |
-| Skype for Business | 欧州連合 |
 | Microsoft Teams | 欧州連合 |
 | Office Online &amp; Mobile | 欧州連合 |
 | EOP | 欧州連合 |
 | Intune | 欧州連合 |
-| MyAnalytics | 欧州連合 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
 | Yammer | 欧州連合  |
@@ -5016,7 +5852,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 欧州連合 |
 | Whiteboard | 欧州連合 |
 | Forms | 欧州連合 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 欧州連合 |
+| Viva トピック | 欧州連合 |
+| Viva ラーニング | 欧州連合 |
+| Viva インサイト - 個人用 | 欧州連合 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 欧州連合 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="solomon-islands"></a>ソロモン諸島
@@ -5027,12 +5869,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
-| Skype for Business | グローバル地域 2 – アジア太平洋 |
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -5040,31 +5880,42 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 2 – アジア太平洋 |
+| Viva トピック | グローバル地域 2 – アジア太平洋 |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="somalia"></a>ソマリア
 <details><summary>クリックして展開</summary><p>
+
 
 | サービス | 場所 |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="south-africa"></a>南アフリカ
@@ -5075,12 +5926,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 南アフリカ |
 | OneDrive for Business | 南アフリカ |
 | SharePoint Online | 南アフリカ |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | 南アフリカ |
 | Office Online &amp; Mobile | 南アフリカ |
 | EOP | 南アフリカ |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | 南アフリカ |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -5088,8 +5937,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
-</p></details>
+| Viva コネクション | 南アフリカ |
+| Viva トピック | 南アフリカ |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | 南アフリカ |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 
 ## <a name="south-georgia-and-the-south-sandwich-islands"></a>サウスジョージア サウスサンドウィッチ諸島
 <details><summary>クリックして展開</summary><p>
@@ -5099,12 +5953,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
-| Skype for Business | 米国 |
-| Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | Intune | 米国 |
-| MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -5112,7 +5964,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 米国 |
+| Viva トピック | 米国 |
+| Viva ラーニング | 米国 |
+| Viva インサイト - 個人用 | 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="spain"></a>スペイン
@@ -5123,12 +5981,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 欧州連合 |
 | OneDrive for Business | 欧州連合 |
 | SharePoint Online | 欧州連合 |
-| Skype for Business | 欧州連合 |
 | Microsoft Teams | 欧州連合 |
 | Office Online &amp; Mobile | 欧州連合 |
 | EOP | 欧州連合 |
 | Intune | 欧州連合 |
-| MyAnalytics | 欧州連合 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
 | Yammer | 欧州連合  |
@@ -5136,7 +5992,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 欧州連合 |
 | Whiteboard | 欧州連合 |
 | Forms | 欧州連合 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 欧州連合 |
+| Viva トピック | 欧州連合 |
+| Viva ラーニング | 欧州連合 |
+| Viva インサイト - 個人用 | 欧州連合 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 欧州連合 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="sri-lanka"></a>スリランカ
@@ -5147,12 +6009,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
-| Skype for Business | グローバル地域 2 – アジア太平洋 |
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -5160,7 +6020,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 2 – アジア太平洋 |
+| Viva トピック | グローバル地域 2 – アジア太平洋 |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="suriname"></a>スリナム
@@ -5171,12 +6037,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | Intune | 米国 |
-| MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -5184,7 +6048,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 米国 |
+| Viva トピック | 米国 |
+| Viva ラーニング | 米国 |
+| Viva インサイト - 個人用 | 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="svalbard-and-jan-mayen-islands"></a>スバールバル諸島、ヤンマイエン島
@@ -5195,12 +6065,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -5208,7 +6076,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
 | Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="swaziland"></a>スワジランド
@@ -5219,20 +6093,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="sweden"></a>スウェーデン
@@ -5243,20 +6121,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | スウェーデン |
 | OneDrive for Business | スウェーデン |
 | SharePoint Online | スウェーデン |
-| Skype for Business | 欧州連合 |
 | Microsoft Teams | スウェーデン |
 | Office Online &amp; Mobile | スウェーデン |
 | EOP | スウェーデン |
 | Intune | 欧州連合 |
-| MyAnalytics | スウェーデン |
 | Planner | 欧州連合 |
 | Sway | 米国 |
-| Yammer | 欧州連合  |
+| Yammer | 欧州連合 |
 | OneNote サービス | スウェーデン |
 | Stream | 欧州連合 |
 | Whiteboard | 欧州連合 |
 | Forms | 欧州連合 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | スウェーデン |
+| Viva トピック | スウェーデン |
+| Viva ラーニング | 欧州連合 |
+| Viva インサイト - 個人用 | スウェーデン |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 欧州連合 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="switzerland"></a>スイス
@@ -5267,20 +6149,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | スイス |
 | OneDrive for Business | スイス |
 | SharePoint Online | スイス |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | スイス |
 | Office Online &amp; Mobile | スイス |
 | EOP | スイス |
-| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | スイス |
-| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | 欧州連合 |
+| Planner | 欧州連合 |
 | Sway | 米国 |
-| Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Yammer | 欧州連合 |
 | OneNote サービス | スイス |
-| Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| ホワイトボード | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| フォーム | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Workplace Analytics | 米国 |
+| Stream | 欧州連合 |
+| Whiteboard | 欧州連合 |
+| Forms | 欧州連合 |
+| Viva コネクション | スイス |
+| Viva トピック | スイス |
+| Viva ラーニング | 欧州連合 |
+| Viva インサイト - 個人用 | スイス |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 欧州連合 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="taiwan"></a>台湾
@@ -5291,12 +6177,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
-| Skype for Business | グローバル地域 2 – アジア太平洋 |
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -5304,7 +6188,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 2 – アジア太平洋 |
+| Viva トピック | グローバル地域 2 – アジア太平洋 |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="tajikistan"></a>タジキスタン
@@ -5315,12 +6205,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -5328,7 +6216,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
 | Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="united-republic-of-tanzania"></a>タンザニア連合共和国
@@ -5339,20 +6233,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="thailand"></a>タイ
@@ -5363,12 +6261,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
-| Skype for Business | グローバル地域 2 – アジア太平洋 |
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -5376,7 +6272,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 2 – アジア太平洋 |
+| Viva トピック | グローバル地域 2 – アジア太平洋 |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="timor-leste"></a>ティモール・レステ
@@ -5387,12 +6289,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
-| Skype for Business | グローバル地域 2 – アジア太平洋 |
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -5400,7 +6300,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 2 – アジア太平洋 |
+| Viva トピック | グローバル地域 2 – アジア太平洋 |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="togo"></a>トーゴ
@@ -5411,20 +6317,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="tokelau"></a>トケラウ諸島
@@ -5435,12 +6345,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
-| Skype for Business | グローバル地域 2 – アジア太平洋 |
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -5448,7 +6356,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 2 – アジア太平洋 |
+| Viva トピック | グローバル地域 2 – アジア太平洋 |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="tonga"></a>トンガ
@@ -5459,12 +6373,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
-| Skype for Business | グローバル地域 2 – アジア太平洋 |
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -5472,7 +6384,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 2 – アジア太平洋 |
+| Viva トピック | グローバル地域 2 – アジア太平洋 |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="trinidad-and-tobago"></a>トリニダード・トバゴ
@@ -5483,12 +6401,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | Intune | 米国 |
-| MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -5496,7 +6412,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 米国 |
+| Viva トピック | 米国 |
+| Viva ラーニング | 米国 |
+| Viva インサイト - 個人用 | 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="tunisia"></a>チュニジア
@@ -5507,20 +6429,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="turkey"></a>トルコ
@@ -5531,12 +6457,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -5544,7 +6468,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
 | Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="turkmenistan"></a>トルクメニスタン
@@ -5555,12 +6485,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -5568,7 +6496,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
 | Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="turks-and-caicos-islands"></a>タークス カイコス諸島
@@ -5579,12 +6513,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | Intune | 米国 |
-| MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -5592,7 +6524,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 米国 |
+| Viva トピック | 米国 |
+| Viva ラーニング | 米国 |
+| Viva インサイト - 個人用 | 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="tuvalu"></a>ツバル
@@ -5603,12 +6541,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
-| Skype for Business | グローバル地域 2 – アジア太平洋 |
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -5616,7 +6552,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 2 – アジア太平洋 |
+| Viva トピック | グローバル地域 2 – アジア太平洋 |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="us-virgin-islands"></a>ヴァージン諸島 (米国)
@@ -5627,12 +6569,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | Intune | 米国 |
-| MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -5640,7 +6580,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 米国 |
+| Viva トピック | 米国 |
+| Viva ラーニング | 米国 |
+| Viva インサイト - 個人用 | 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="uganda"></a>ウガンダ
@@ -5651,20 +6597,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="ukraine"></a>ウクライナ
@@ -5675,12 +6625,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -5688,7 +6636,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
 | Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="united-arab-emirates"></a>アラブ首長国連邦
@@ -5699,12 +6653,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | アラブ首長国連邦 |
 | OneDrive for Business | アラブ首長国連邦 |
 | SharePoint Online | アラブ首長国連邦 |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | アラブ首長国連邦 |
 | Office Online &amp; Mobile | アラブ首長国連邦 |
 | EOP | アラブ首長国連邦 |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | アラブ首長国連邦 |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -5712,8 +6664,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
 | Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Workplace Analytics | 米国 |
-</p></details>
+| Viva コネクション | アラブ首長国連邦 |
+| Viva トピック | アラブ首長国連邦 |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | アラブ首長国連邦 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 
 ## <a name="united-kingdom"></a>英国
 <details><summary>クリックして展開</summary><p>
@@ -5723,12 +6680,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 英国 |
 | OneDrive for Business | 英国 |
 | SharePoint Online | 英国 |
-| Skype for Business | 英国 |
 | Microsoft Teams | 英国 |
 | Office Online &amp; Mobile | 英国 |
 | EOP | 英国 |
 | Intune | 欧州連合 |
-| MyAnalytics | 英国 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
 | Yammer | 欧州連合 |
@@ -5736,7 +6691,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 英国 |
 | Whiteboard | 欧州連合 |
 | Forms | 欧州連合 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 英国 |
+| Viva トピック | 英国 |
+| Viva ラーニング | 欧州連合 |
+| Viva インサイト - 個人用 | 英国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 欧州連合 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="united-states"></a>米国
@@ -5747,12 +6708,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | Intune | 米国 |
-| MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -5760,7 +6719,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 米国 |
+| Viva トピック | 米国 |
+| Viva ラーニング | 米国 |
+| Viva インサイト - 個人用 | 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="uruguay"></a>ウルグアイ
@@ -5771,12 +6736,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 3 - 米国 |
 | OneDrive for Business | グローバル地域 3 - 米国 |
 | SharePoint Online | グローバル地域 3 - 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | グローバル地域 3 - 米国 |
 | EOP | グローバル地域 3 - 米国 |
 | Intune | 米国 |
-| MyAnalytics | グローバル地域 3 - 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -5784,7 +6747,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 3 - 米国 |
+| Viva トピック | グローバル地域 3 - 米国 |
+| Viva ラーニング | グローバル地域 3 - 米国 |
+| Viva インサイト - 個人用 | グローバル地域 3 - 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 3 - 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="us-minor-outlying-islands"></a>合衆国領有小離島
@@ -5795,12 +6764,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
-| Skype for Business | グローバル地域 2 – アジア太平洋 |
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -5808,7 +6775,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 2 – アジア太平洋 |
+| Viva トピック | グローバル地域 2 – アジア太平洋 |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="uzbekistan"></a>ウズベキスタン
@@ -5819,12 +6792,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -5832,7 +6803,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
 | Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="vanuatu"></a>バヌアツ
@@ -5843,12 +6820,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
-| Skype for Business | グローバル地域 2 – アジア太平洋 |
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -5856,23 +6831,26 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 2 – アジア太平洋 |
+| Viva トピック | グローバル地域 2 – アジア太平洋 |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="venezuela"></a>ベネズエラ
 <details><summary>クリックして展開</summary><p>
-
 | サービス | 場所 |
 | --- | --- |
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
-| Skype for Business | 米国 |
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | Intune | 米国 |
-| MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -5880,8 +6858,15 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | 米国 |
+| Viva トピック | 米国 |
+| Viva ラーニング | 米国 |
+| Viva インサイト - 個人用 | 米国 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | 米国 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
+
 
 ## <a name="vietnam"></a>ベトナム
 <details><summary>クリックして展開</summary><p>
@@ -5891,12 +6876,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
-| Skype for Business | グローバル地域 2 – アジア太平洋 |
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -5904,7 +6887,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 2 – アジア太平洋 |
+| Viva トピック | グローバル地域 2 – アジア太平洋 |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="wallis-and-futuna-islands"></a>ウォリス フツナ
@@ -5915,12 +6904,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 2 – アジア太平洋 |
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
-| Skype for Business | グローバル地域 2 – アジア太平洋 |
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | Intune | グローバル地域 2 – アジア太平洋 |
-| MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
 | Yammer | 米国 |
@@ -5928,7 +6915,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 2 – アジア太平洋 |
+| Viva トピック | グローバル地域 2 – アジア太平洋 |
+| Viva ラーニング | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 個人用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 2 – アジア太平洋 |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="western-sahara"></a>西サハラ
@@ -5939,20 +6932,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="yemen"></a>イエメン
@@ -5963,12 +6960,10 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -5976,7 +6971,13 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
 | Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Workplace Analytics | 米国 |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="zambia"></a>ザンビア
@@ -5987,20 +6988,24 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
 
 ## <a name="zimbabwe"></a>ジンバブエ
@@ -6011,18 +7016,22 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | 米国 |
+| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
-| Workplace Analytics | 米国 |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
+| Viva インサイト - 上級 | 米国 |
 </p></details>
