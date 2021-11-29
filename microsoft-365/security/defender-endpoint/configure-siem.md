@@ -15,19 +15,21 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a08aca1749e9d5dc613b97347cbb040fe9f6e40c
-ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
+ms.openlocfilehash: e241ae3b5250839d98d1692f38fb36333e9a69ca
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2021
-ms.locfileid: "60804771"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61218672"
 ---
 # <a name="integrate-your-siem-tools-with-microsoft-defender-for-endpoint"></a>SIEM ツールを Microsoft Defender for Endpoint に統合する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
 ## <a name="ingest-alerts-using-security-information-and-events-management-siem-tools"></a>セキュリティ情報とイベント管理 (SIEM) ツールを使用してアラートを取り込む
@@ -84,7 +86,7 @@ SmartConnector は、以前の FlexConnector のデータをMicrosoft 365 Defend
 
 >[!NOTE]
 >
->IBM QRadar と Microsoft Defender for Endpoint との統合は、Microsoft Defender を含む Microsoft 365 Defender 製品からストリーミング イベント データを取り込む Microsoft 365 Defender ストリーミング API を呼び出す新しい[Microsoft 365 Defender](../defender/streaming-api.md)デバイス サポート モジュール (DSM) でサポートされています。for Endpoint. サポートされているイベントの種類の詳細については、「サポートされている [イベントの種類」を参照してください](../defender/supported-event-types.md)。
+>IBM QRadar と Microsoft Defender for Endpoint との統合は、Microsoft 365 Defender ストリーミング API を呼び出す新しい[Microsoft 365 Defender](../defender/streaming-api.md)デバイス サポート モジュール (DSM) でサポートされ、Microsoft 365 Defender からストリーミング イベント データを取り込Microsoft 365 Defender Microsoft Defender for Endpoint を含む製品。 サポートされているイベントの種類の詳細については、「サポートされている [イベントの種類」を参照してください](../defender/supported-event-types.md)。
 新しい顧客は、以前の QRadar Microsoft Defender ATP デバイス サポート モジュール (DSM) を使用してオンボードされなくなりました。既存のお客様は、新しい Microsoft 365 Defender DSM をすべての Microsoft 365 Defender 製品との統合の単一ポイントとして採用してください。
 
 ## <a name="ingesting-microsoft-defender-for-endpoint-events-from-the-microsoft-365-defender-event-streaming-api"></a>Microsoft Defender for Endpoint イベントをイベント ストリーミング API Microsoft 365 Defender取り込む

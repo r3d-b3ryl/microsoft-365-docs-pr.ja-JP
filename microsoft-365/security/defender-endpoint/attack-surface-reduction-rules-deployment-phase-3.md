@@ -1,5 +1,5 @@
 ---
-title: 攻撃表面の縮小ルールの展開フェーズ 3 - 実装
+title: ASR ルールの展開フェーズ 3 - 実装
 description: 攻撃表面の縮小ルールの展開を実装するためのガイダンスを提供します。
 keywords: 攻撃表面の縮小ルールの展開、ASR の展開、asr ルールの有効化、ASR の構成、ホスト侵入防止システム、保護ルール、悪用防止ルール、感染防止ルール、Microsoft Defender for Endpoint、CONFIGURE ASR ルール
 search.product: eADQiWindows 10XVcnh
@@ -17,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 8489e31f0178fb4c0ab8e5159a71bc0691276689
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 6556389ecef571626c1927aca9341945f113d150
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171754"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61217409"
 ---
 # <a name="attack-surface-reduction-rules-deployment-phase-3-implement"></a>攻撃表面の縮小ルールの展開フェーズ 3: 実装
 
@@ -65,10 +65,10 @@ ms.locfileid: "61171754"
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>この展開コレクションのその他のトピック
 
-[攻撃表面の縮小ルールの展開ガイド - 概要](attack-surface-reduction-rules-deployment.md)
+[ASR ルールの展開ガイド - 概要](attack-surface-reduction-rules-deployment.md)
 
-[攻撃表面の縮小ルールの展開フェーズ 1 - 計画](attack-surface-reduction-rules-deployment-phase-1.md)
+[ASR ルールの展開フェーズ 1 - 計画](attack-surface-reduction-rules-deployment-phase-1.md)
 
-[攻撃表面の縮小ルールの展開フェーズ 2 - test](attack-surface-reduction-rules-deployment-phase-2.md)
+[ASR ルールの展開フェーズ 2 - test](attack-surface-reduction-rules-deployment-phase-2.md)
 
-[攻撃表面の縮小ルールの展開フェーズ 4 - 運用](attack-surface-reduction-rules-deployment-phase-4.md)
+[ASR ルールの展開フェーズ 4 - 運用化](attack-surface-reduction-rules-deployment-phase-4.md)

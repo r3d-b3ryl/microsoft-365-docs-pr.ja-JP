@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: c97947ae081d6b01db2717cfc35a4c328e7c61ec
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: e0a8293709da44dc3a46cf565ad099666e8dae24
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555766"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61217455"
 ---
 # <a name="use-limited-periodic-scanning-in-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策で限定された定期的なスキャンを使用する
 
@@ -29,7 +29,8 @@ ms.locfileid: "60555766"
 
 **適用対象:**
 
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 限定的な定期的なスキャンは、Windows 10 Windows または 11 デバイスに別のウイルス対策製品をインストールした場合に有効にできる特別な種類の脅威の検出と修復です。
 

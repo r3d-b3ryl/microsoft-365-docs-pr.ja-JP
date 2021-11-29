@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Microsoft 365 の顧客データの保存場所を世界全体で確認する
-ms.openlocfilehash: 374e8c92a4694b81b6b6eb4cff52e6f2024afe93
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 8647bb2ff9fdb273e1c33293446a04e57da741f0
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167036"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61218708"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Microsoft 365 顧客データの保存場所
 
@@ -5944,6 +5944,7 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
 | Viva インサイト - 上級 | 米国 |
+ </p></details>
 
 ## <a name="south-georgia-and-the-south-sandwich-islands"></a>サウスジョージア サウスサンドウィッチ諸島
 <details><summary>クリックして展開</summary><p>
@@ -6671,6 +6672,7 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
 | Viva インサイト - 上級 | 米国 |
+ </p></details>
 
 ## <a name="united-kingdom"></a>英国
 <details><summary>クリックして展開</summary><p>

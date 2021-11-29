@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: bf58173d2c17ef66b0cb74f0781038040d25898b
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 465a510ef25b0be0ba406c1265096476959d8c19
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168728"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61218024"
 ---
 # <a name="turn-on-network-protection"></a>ネットワーク保護を有効にする
 
@@ -46,6 +46,8 @@ ms.locfileid: "61168728"
 2. サイド **メニュー HKEY_LOCAL_MACHINE** を選択します。
 
 3. 入れ子になったメニューを [**ソフトウェア** ポリシー] に移動し \> 、Microsoft **Windows Defender Windows Defender** \>  \>  \> **保護に** \> **移動します**。
+
+キーが見つからない場合は、[**ソフトウェア** Microsoft] に移動し、[Exploit Guard \>  \>  \> **ネットワークWindows Defender Windows Defenderに** \> **移動します**。
 
 4. デバイス上のネットワーク保護の現在の状態を表示するには **、[EnableNetworkProtection]** を選択します。
 

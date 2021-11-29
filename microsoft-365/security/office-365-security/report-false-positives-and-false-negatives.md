@@ -13,12 +13,12 @@ ms.collection:
 description: レポート メッセージ機能を使用して、誤検知と誤Outlookを報告する方法について学習します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ef5a4be293c41135dcba00bcd02ab7c337192626
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e5539525b6d752223c4895fc62ff49a90768a5b5
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190271"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61218720"
 ---
 # <a name="report-false-positives-and-false-negatives-in-outlook"></a>Outlook の誤検出と検出漏れを報告する
 
@@ -34,12 +34,9 @@ ms.locfileid: "60190271"
 
 ハイブリッドモダン認証を使用して Exchange Online Microsoft 365 またはオンプレミスのメールボックスにメールボックスを持つ Microsoft 365 組織では、誤検知 (ブロックまたは迷惑メール フォルダーに送信された良いメール) と誤検知 (受信トレイに配信された不要な電子メールまたはフィッシング) を Exchange Online Protection (EOP) に送信できます。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
 - 最適なユーザー申請エクスペリエンスを得る場合は、レポート メッセージ アドインまたはレポート フィッシング アドインを使用します。
-
-  > [!IMPORTANT]
-  > ユーザー申請ポリシーを使用Outlook迷惑メールやフィッシングを報告する組み込[みのエクスペリエンス](./user-submission.md)です。 代わりに、レポート メッセージ アドインまたはレポート フィッシング アドインを使用することをお勧めします。
 
 - レポート メッセージ アドインとレポート フィッシング アドインは、すべてのOutlook (Outlook on the web、iOS、Android、デスクトップ) で機能します。
 
@@ -50,6 +47,19 @@ ms.locfileid: "60190271"
 - レポート メッセージまたはレポート フィッシング アドインを取得して有効にする方法の詳細については、「レポート メッセージを有効にする」または「レポート フィッシング アドイン」を [参照してください](enable-the-report-message-add-in.md)。
 
 - Microsoft へのメッセージの報告の詳細については、「メッセージとファイルを Microsoft に報告 [する」を参照してください](report-junk-email-messages-to-microsoft.md)。
+
+### <a name="turn-off-the-built-in-reporting-experience"></a>組み込みのレポート エクスペリエンスをオフにする
+
+ユーザー申請ポリシーを使用できないので、Outlookの組み込みレポート エクスペリエンス[はお勧めしません](./user-submission.md)。 代わりに、レポート メッセージ アドインまたはレポート フィッシング アドインを使用することをお勧めします。
+
+このコマンドレットを実行する際には、あらかじめアクセス許可を割り当てる必要があります。 コマンドレットを組織内で実行するために必要になるアクセス許可とパラメーターを調べるには、「 [Find the permissions required to run any Exchange cmdlet](/powershell/exchange/find-exchange-cmdlet-permissions)」を参照してください。
+
+次の PowerShell コマンドを実行して、次のコマンドで組み込みのレポート エクスペリエンスを無効Outlook on the web。
+
+```powershell
+Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -ReportJunkEmailEnabled $false
+```
+
 
 ## <a name="use-the-report-message-feature"></a>レポート メッセージ機能を使用する
 

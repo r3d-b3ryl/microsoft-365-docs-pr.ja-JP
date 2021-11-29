@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 86a0f1fda29fff47e81b77827daca82597cef3bd
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: c0608464384f963e60143309f80587d103a5793d
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555142"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61218660"
 ---
 # <a name="contact-microsoft-defender-for-endpoint-support"></a>Microsoft Defender for Endpoint サポートに連絡する
 
@@ -27,7 +27,8 @@ ms.locfileid: "60555142"
 
 
 **適用対象:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
@@ -81,7 +82,7 @@ Defender for Endpoint サポートに問い合わせ、サポート チケット
 > [!NOTE]
 > Microsoft とプレミア サポート契約を結んだ場合は、ウィジェットにプレミア タグが表示されます。 設定されていない場合は、Microsoft アカウント マネージャーに問い合わせください。
 
-### <a name="contact-support"></a>サポートに連絡
+### <a name="contact-support"></a>サポートにお問い合せください
 
 :::image type="content" source="../../media/contactsupport2.png" alt-text="連絡先のサポート 2."::: </br>
 
@@ -91,7 +92,7 @@ Defender for Endpoint サポートに問い合わせ、サポート チケット
 2. (省略可能)サポート ケースに追加のコンテキストを提供するために、問題に関連する添付ファイルを最大 5 つ含める。
 3. 該当する場合は、タイム ゾーンと別の言語を選択します。 要求は Microsoft サポート チームに送信されます。 チームは、サービス要求にまもなく応答します。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [サービスに関する問題のトラブルシューティング](troubleshoot-mdatp.md)
 - [サービス正常性の確認](service-status.md)

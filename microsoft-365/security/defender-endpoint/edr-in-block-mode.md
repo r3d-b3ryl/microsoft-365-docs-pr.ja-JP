@@ -15,17 +15,17 @@ ms.custom:
 - next-gen
 - edr
 - admindeeplinkDEFENDER
-ms.date: 10/07/2021
+ms.date: 11/29/2021
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 7fd400d2e640e234f593dbfda93be315ed00aeed
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 19b482bd15ffc9c702d004f52b9aa9e60b2a5109
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164012"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61218204"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>ブロック モードのエンドポイントでの検出と対応 (EDR)
 
@@ -72,8 +72,8 @@ EDRモードのデータは、脅威の検出[と統合& 脆弱性の管理。](
 2. [エンドポイント **設定** \> **高度な** \> **機能** \> **] を選択します**。
 3. 下にスクロールし、[ブロック モードでEDR **を有効にする] をオンにします**。
 
-> [!NOTE]
-> EDRモードで有効にできるのは、ポータルまたは以前のMicrosoft 365 Defender Microsoft Defender セキュリティ センター <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"></a> ( ) のみです [https://securitycenter.windows.com](https://securitycenter.windows.com) 。 ブロック モードでレジストリ キー、Microsoft Intune、またはグループ ポリシーを使用して、EDRを有効または無効にすることはできません。
+> [!IMPORTANT]
+> EDRモードの場合は、Microsoft 365 Defender ポータルまたは以前の Microsoft Defender セキュリティ センター <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"></a> ( ) でのみ有効にできます。テナント全体 [https://securitycenter.windows.com](https://securitycenter.windows.com) に適用されます。 特定のデバイス グループEDRをターゲットに設定することはできません。 ブロック モードでレジストリ キー、Microsoft Intune、またはグループ ポリシーを使用して、EDRを有効または無効にすることはできません。
 
 ## <a name="requirements-for-edr-in-block-mode"></a>ブロック モードでのEDRの要件
 
@@ -126,7 +126,7 @@ Windows 10、Windows 11、Windows Server、バージョン 1803 以降、Windows
 
 <br/><br/>
 
-|メソッド|Procedure|
+|Method|Procedure|
 |---|---|
 |PowerShell|1. 選択したスタート メニュー入力を開始し、結果 `PowerShell` でWindows PowerShellを開きます。<br/><br/>2. と入力します `Get-MpComputerStatus` 。<br/><br/>3. 結果の一覧の **[AMRunningMode]** 行で、次のいずれかの値を探します。<br/>- `Normal`<br/>- `Passive Mode`<br/><br/>詳細については [、「Get-MpComputerStatus」を参照してください](/powershell/module/defender/get-mpcomputerstatus)。|
 |コマンド プロンプト|1. コマンド を選択スタート メニュー入力を開始し、結果 `Command Prompt` Windowsコマンド プロンプトを開きます。<br/><br/>2. と入力します `sc query windefend` 。<br/><br/>3. 結果の一覧の **STATE** 行で、サービスが実行されているのを確認します。 |

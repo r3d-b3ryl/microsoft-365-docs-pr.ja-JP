@@ -1,5 +1,5 @@
 ---
-title: 攻撃表面の縮小ルールの展開フェーズ 4 - 運用
+title: ASR ルールの展開フェーズ 4 - 運用化
 description: 攻撃表面の縮小ルールの展開を運用化するガイダンスを提供します。
 keywords: 攻撃表面の縮小ルールの展開、ASR の展開、asr ルールの有効化、ASR の構成、ホスト侵入防止システム、保護ルール、悪用防止ルール、感染防止ルール、Microsoft Defender for Endpoint、CONFIGURE ASR ルール
 search.product: eADQiWindows 10XVcnh
@@ -17,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 176c1a28c38d20ee9d56079362cc6514f59d0a7e
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 7c06be427df2425a2160201324a6ed267d88d0fd
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171811"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61218336"
 ---
 # <a name="attack-surface-reduction-rules-deployment-phase-4-operationalize"></a>攻撃表面の縮小ルールの展開フェーズ 4: 運用
 
@@ -76,10 +76,10 @@ AsrOfficeChildProcess ルールに焦点を当て、関連する実際のファ�
 
 ## <a name="topics-in-this-deployment-collection"></a>この展開コレクションのトピック
 
-[攻撃表面の縮小ルールの展開ガイド - 概要](attack-surface-reduction-rules-deployment.md)
+[ASR ルールの展開ガイド - 概要](attack-surface-reduction-rules-deployment.md)
 
-[攻撃表面の縮小ルールの展開フェーズ 1 - 計画](attack-surface-reduction-rules-deployment-phase-1.md)
+[ASR ルールの展開フェーズ 1 - 計画](attack-surface-reduction-rules-deployment-phase-1.md)
 
-[攻撃表面の縮小ルールの展開フェーズ 2 - test](attack-surface-reduction-rules-deployment-phase-2.md)
+[ASR ルールの展開フェーズ 2 - test](attack-surface-reduction-rules-deployment-phase-2.md)
 
-[攻撃表面の縮小ルールの展開フェーズ 3 - 実装](attack-surface-reduction-rules-deployment-phase-3.md)
+[ASR ルールの展開フェーズ 3 - 実装](attack-surface-reduction-rules-deployment-phase-3.md)

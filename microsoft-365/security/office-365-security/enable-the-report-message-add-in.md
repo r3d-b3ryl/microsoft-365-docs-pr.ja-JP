@@ -17,12 +17,12 @@ ms.collection:
 description: レポート メッセージまたはレポート フィッシング アドインを Outlook および Outlook on the web、個々のユーザー、または組織全体で有効にする方法について学習します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1b87367ed46f51d3569c900ba2661aaf34209de4
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 7f2316cc787ede02644a48636a01b30458d7e349
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60705201"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61217796"
 ---
 # <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>メッセージのレポートまたはフィッシング アドインのレポートを有効にする
 
@@ -71,9 +71,17 @@ Microsoft では、これらの申請を使用して、電子メール保護テ�
 
 - URL フィルターまたはセキュリティ ソリューション (プロキシやファイアウォールなど) が実装されている組織では、HTTPS プロトコルで ipagave.azurewebsites.net エンドポイントと outlook.office.com エンドポイントにアクセスできる必要があります。
 
+### <a name="turn-off-the-built-in-reporting-experience"></a>組み込みのレポート エクスペリエンスをオフにする
 
-> [!IMPORTANT]
-> ユーザー申請ポリシーを使用できないので、Outlookの組み込みレポート エクスペリエンス[はお勧めしません](./user-submission.md)。 代わりに、レポート メッセージ アドインまたはレポート フィッシング アドインを使用することをお勧めします。
+ユーザー申請ポリシーを使用できないので、Outlookの組み込みレポート エクスペリエンス[はお勧めしません](./user-submission.md)。 代わりに、レポート メッセージ アドインまたはレポート フィッシング アドインを使用することをお勧めします。
+
+このコマンドレットを実行する際には、あらかじめアクセス許可を割り当てる必要があります。 コマンドレットを組織内で実行するために必要になるアクセス許可とパラメーターを調べるには、「 [Find the permissions required to run any Exchange cmdlet](/powershell/exchange/find-exchange-cmdlet-permissions)」を参照してください。
+
+次の PowerShell コマンドを実行して、組み込みのレポート エクスペリエンスを無効にします。
+
+```powershell
+Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -ReportJunkEmailEnabled $false
+```
 
 ## <a name="get-the-report-message-add-in"></a>レポート メッセージ アドインの取得
 
@@ -99,7 +107,7 @@ Microsoft では、これらの申請を使用して、電子メール保護テ�
 - このOutlook on the webアイコンは次のように表示されます。
 
     > [!div class="mx-imgBorder"]
-    > ![Outlook on the web[レポート メッセージ] アドイン アイコン。](../../media/owa-report-message-icon.png)
+    > ![Outlook on the web[レポート メッセージ] アドイン アイコンをクリックします。](../../media/owa-report-message-icon.png)
 
 ### <a name="get-the-report-message-add-in-for-your-organization"></a>組織のレポート メッセージ アドインを取得する
 
@@ -174,7 +182,7 @@ Microsoft では、これらの申請を使用して、電子メール保護テ�
 - このOutlook on the webアイコンは次のように表示されます。
 
     > [!div class="mx-imgBorder"]
-    > ![Outlook on the web[フィッシング アドインのレポート] アイコン。](../../media/OWA-ReportPhishing.png)
+    > ![Outlook on the webフィッシング アドインのレポート アイコンをクリックします。](../../media/OWA-ReportPhishing.png)
 
 ### <a name="get-the-report-phishing-add-in-for-your-organization"></a>組織のレポート フィッシング アドインを取得する
 

@@ -16,18 +16,19 @@ ms.date: 10/18/2021
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b2b23a52312b3f384122f34b054b65bd6aa486a2
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 287e49a92032e725153065ef3d996e2b5c14baf9
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60881915"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61218048"
 ---
 # <a name="configure-microsoft-defender-antivirus-notifications-that-appear-on-endpoints"></a>エンドポイントMicrosoft Defender ウイルス対策通知を構成する
 
 **適用対象:**
 
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 11 Windows 10およびWindows、マルウェアの検出と修復に関するアプリケーション通知は、より堅牢で一貫性があり、簡潔です。 Microsoft Defender ウイルス対策が完了し、脅威が検出されると、エンドポイントに通知が表示されます。 通知は、スケジュールされたスキャンと手動でトリガーされたスキャンの両方に従います。 これらの通知は通知センター **にも表示** され、スキャンと脅威検出の概要は一定の間隔で表示されます。
 
@@ -50,7 +51,7 @@ ms.locfileid: "60881915"
 
 4. [管理 **用テンプレート] を選択します**。
 
-5. ツリーを展開して **、reporting**Windowsコンポーネント** \> **Microsoft Defender ウイルス対策>** 展開します。
+5. ツリーを展開して、**レポートWindowsコンポーネント** \> **Microsoft Defender ウイルス対策**  >  **します**。
 
 6. [拡張通知を **オフにする] をダブルクリック** し、オプションを [有効] に **設定します**。 次に [**OK**] を選びます。 これにより、追加の通知が表示されません。
 

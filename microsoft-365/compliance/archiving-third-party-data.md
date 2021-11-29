@@ -21,12 +21,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: ソーシャル メディア プラットフォーム、インスタント メッセージング プラットフォーム、ドキュメント コラボレーション プラットフォームからサードパーティ のデータをインポートおよびアーカイブして、メールボックスにMicrosoft 365します。
-ms.openlocfilehash: 92efcffeaf9d85fe0c53cabf477e03cdfa5f5cd6
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 3b9868d112e6f4add560da31346df786dff1e96e
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60647650"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61217736"
 ---
 # <a name="archive-third-party-data-in-microsoft-365"></a>サードパーティのデータをアーカイブMicrosoft 365
 
@@ -96,7 +96,7 @@ Microsoft 365 でサード パーティ製のデータをアーカイブする�
 |[区切られたテキスト](archive-text-delimited-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|||
 |[Webex チーム](archive-webexteams-data.md)|![チェック マーク。](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[Web ページ](archive-webpagecapture-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|||
-|[Workplace from Facebook](archive-workplacefromfacebook-data.md)|![チェック マーク。](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
+|[Facebookからの職場](archive-workplacefromfacebook-data.md)|![チェック マーク。](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[XIP](archive-xip-data.md)|![チェック マーク。](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[XSLT/XML](archive-xslt-xml-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|||
 |[Yieldbroker](archive-yieldbroker-data.md)|![チェック マーク。](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
@@ -207,6 +207,39 @@ CellTrust SL2 データ コネクタは、米国政府機関クラウドGCC環�
 
 選択的な人事データなど、サード パーティのデータからのシグナルを Insider リスク[](insider-risk-management.md)管理ソリューションで使用すると、組織内のリスクの高いアクティビティを検出、調査、および操作することで内部リスクを最小限に抑える可能性があります。 たとえば、人事データ コネクタによってインポートされたデータは、従業員のデータ盗難を検出するリスクインジケーターとして使用されます。
 
+## <a name="role-group-membership-required-to-create-data-connectors"></a>データ コネクタの作成に必要な役割グループメンバーシップ
+
+サード パーティ製のデータ コネクタを作成するには、組織内のユーザーが、次のいずれかの役割グループのメンバーである必要Microsoft 365 コンプライアンス センター。
+
+- 通信コンプライアンス
+
+- コミュニケーション コンプライアンス管理者
+
+- コンプライアンス管理者
+
+- コンプライアンス データ管理者
+
+- コンプライアンス マネージャー管理者
+
+- コンプライアンス マネージャー評価者
+
+- コンプライアンス マネージャー投稿者
+
+- インサイダー リスクの管理
+
+- Insider リスク管理管理者
+
+- 組織管理
+
+> [!NOTE]
+> 2021 年 11 月 30 日から、データ コネクタを作成するために、Exchange Online でメールボックスインポートエクスポートの役割を割り当てる必要がなされません。 この日付以降は、データ コネクタを作成する前の役割グループMicrosoft 365 コンプライアンス センターメンバーである必要があります。
+
+ユーザーの役割グループMicrosoft 365 コンプライアンス センターコンプライアンス 役割グループにユーザーを追加する方法の詳細については、以下を参照してください。
+
+- [セキュリティ/コンプライアンス センターのアクセス許可](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)
+
+- [アクセス許可] の [コンプライアンス 役割グループにユーザーを追加する][セクションMicrosoft 365 コンプライアンス センター](microsoft-365-compliance-center-permissions.md#add-users-to-a-compliance-role-group)
+
 ## <a name="using-ediscovery-tools-to-search-for-third-party-data"></a>電子情報開示ツールを使用してサードパーティのデータを検索する
 
 データ コネクタを使用してユーザー メールボックス内のサード パーティ 製データをインポートおよびアーカイブした後、Microsoft 365 電子情報開示ツールを使用してサード パーティのデータを検索できます。 また、電子情報開示ツールを使用して、Core eDiscovery に関連付けられたクエリ ベースの保持を作成し、Advanced eDiscoveryのケースに関連付け、サード パーティのデータを保持することもできます。 電子情報開示ツールの詳細については、「電子情報開示ソリューション」を参照[Microsoft 365。](ediscovery.md)
@@ -221,7 +254,7 @@ kind:externaldata
 
 ![サードパーティのデータを検索するクエリ。](..\media\SearchThirdPartyData1.png)
 
-また、property:value ペアを使用して、検索範囲をサードパーティのデータ `kind:externaldata` に絞り込む場合にも使用できます。 たとえば、インポートしたアイテムの **Subject** プロパティに *contoso* という単語を含むサードパーティのデータ ソースからインポートされたアイテムを検索するには、[キーワード] ボックスで次のクエリ **を使用** します。
+property:value ペアを使用して、検索範囲をサードパーティのデータ `kind:externaldata` に絞り込む方法も使用できます。 たとえば、インポートしたアイテムの **Subject** プロパティに *contoso* という単語を含むサードパーティのデータ ソースからインポートされたアイテムを検索するには、[キーワード] ボックスで次のクエリ **を使用** します。
 
 ```powershell
 subject:contoso AND kind:externaldata
@@ -265,49 +298,49 @@ subject:contoso AND itemclass:ipm.externaldata.facebook*
 
 |データ コネクタ  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
-|Android Archiver | はい | いいえ | いいえ |
-|AT&T SMS/MMS Network Archiver | はい | いいえ | いいえ |
-|Bell SMS/MMS Network Archiver | はい | いいえ | いいえ |
-|Enterprise Number Archiver | はい | いいえ | いいえ |
-|O2 SMS と Voice Network Archiver | はい         | いいえ | いいえ |
-|Rogers Network Archiver | はい         | いいえ | いいえ |
-|Signal Archiver | はい | いいえ | いいえ |
-|Telegram Archiver | はい | いいえ | いいえ |
-|TELUS SMS ネットワーク アーカイブ | はい | いいえ | いいえ |
-|Verizon SMS/MMS Network Archiver | はい | いいえ | いいえ |
-|WeChat Archiver | はい | いいえ | いいえ |
-|WhatsApp Archiver | はい | いいえ | いいえ |
+|Android Archiver | はい | 不要 | 不要 |
+|AT&T SMS/MMS Network Archiver | はい | 不要 | 不要 |
+|Bell SMS/MMS Network Archiver | はい | 不要 | 不要 |
+|Enterprise Number Archiver | はい | 不要 | 不要 |
+|O2 SMS と Voice Network Archiver | はい         | 不要 | 不要 |
+|Rogers Network Archiver | はい         | 不要 | 不要 |
+|Signal Archiver | はい | 不要 | 不要 |
+|Telegram Archiver | はい | 不要 | 不要 |
+|TELUS SMS ネットワーク アーカイブ | はい | 不要 | 不要 |
+|Verizon SMS/MMS Network Archiver | はい | 不要 | 不要 |
+|WeChat Archiver | はい | 不要 | 不要 |
+|WhatsApp Archiver | はい | 不要 | 不要 |
 |||||
 
 ### <a name="celltrust-data-connectors"></a>CellTrust データ コネクタ
 
 |データ コネクタ  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
-|CellTrust SL2 | はい | いいえ | いいえ |
+|CellTrust SL2 | はい | 不要 | 不要 |
 |||||
 
 ### <a name="17a-4-data-connectors"></a>17a-4 データ コネクタ
 
 |データ コネクタ  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
-|BlackBerry DataParser | はい | いいえ | いいえ |
-|Bloomberg DataParser  | はい | いいえ | いいえ |
-|Cisco Jabber DataParser  | はい | いいえ | いいえ |
-|Cisco Webex DataParser  | はい | いいえ | いいえ |
-|FactSet DataParser  | はい | いいえ | いいえ |
-|Fuze DataParser  | はい | いいえ | いいえ |
-|FX Connect DataParser  | はい | いいえ | いいえ |
-|ICE DataParser  | はい | いいえ | いいえ |
-|InvestEdge DataParser  | はい | いいえ | いいえ |
-|LivePerson Conversational Cloud DataParser  | はい | いいえ | いいえ |
-|Quip DataParser  | はい | いいえ | いいえ |
-|Refinitiv Eikon Messenger DataParser  | はい | いいえ | いいえ |
-|ServiceNow DataParser  | はい | いいえ | いいえ |
-|Skype for Business Server DataParser | はい | いいえ | いいえ |
-|Slack DataParser | はい | いいえ | いいえ |
-|SQL DataParser  | はい | いいえ | いいえ |
-|Symphony DataParser | はい | いいえ | いいえ |
-|Zoom DataParser | はい | いいえ | いいえ |
+|BlackBerry DataParser | はい | 不要 | 不要 |
+|Bloomberg DataParser  | はい | 不要 | 不要 |
+|Cisco Jabber DataParser  | はい | 不要 | 不要 |
+|Cisco Webex DataParser  | はい | 不要 | 不要 |
+|FactSet DataParser  | はい | 不要 | 不要 |
+|Fuze DataParser  | はい | 不要 | 不要 |
+|FX Connect DataParser  | はい | 不要 | 不要 |
+|ICE DataParser  | はい | 不要 | 不要 |
+|InvestEdge DataParser  | はい | 不要 | 不要 |
+|LivePerson Conversational Cloud DataParser  | はい | 不要 | 不要 |
+|Quip DataParser  | はい | 不要 | 不要 |
+|Refinitiv Eikon Messenger DataParser  | はい | 不要 | 不要 |
+|ServiceNow DataParser  | はい | 不要 | 不要 |
+|Skype for Business Server DataParser | はい | 不要 | 不要 |
+|Slack DataParser | はい | 不要 | 不要 |
+|SQL DataParser  | はい | 不要 | 不要 |
+|Symphony DataParser | はい | 不要 | 不要 |
+|Zoom DataParser | はい | 不要 | 不要 |
 |||||
 
 ## <a name="working-with-a-microsoft-partner-to-archive-third-party-data"></a>Microsoft パートナーと作業してサード パーティのデータをアーカイブする
@@ -315,3 +348,4 @@ subject:contoso AND itemclass:ipm.externaldata.facebook*
 サードパーティのデータをインポートおよびアーカイブするもう 1 つのオプションは、組織が Microsoft パートナーと作業することです。 Microsoft コンプライアンス センターで使用できるデータ コネクタでサード パーティのデータ型がサポートされていない場合は、サードパーティのデータ ソースからアイテムを定期的に抽出し、サード パーティ製 API によって Microsoft クラウドに接続し、それらのアイテムを Microsoft 365 にインポートするように構成されるカスタム コネクタを提供できるパートナーと作業できます。 パートナー コネクタは、アイテムのコンテンツをサード パーティのデータ ソースから電子メール メッセージに変換し、そのアイテムをメール メッセージにMicrosoft 365。
 
 使用できるパートナーの一覧と、このメソッドのステップ バイ ステップ プロセスについては、「パートナーと協力して、Microsoft 365 でサード パーティのデータをアーカイブする」[を参照してください](work-with-partner-to-archive-third-party-data.md)。
+

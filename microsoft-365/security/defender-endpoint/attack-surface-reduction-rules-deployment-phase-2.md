@@ -1,5 +1,5 @@
 ---
-title: 攻撃表面の縮小ルールの展開フェーズ 2 - test
+title: ASR ルールの展開フェーズ 2 - test
 description: 攻撃表面の縮小ルールの展開をテストするガイダンスを提供します。
 keywords: 攻撃表面の縮小ルールの展開、ASR の展開、asr ルールの有効化、ASR の構成、ホスト侵入防止システム、保護ルール、悪用防止ルール、感染防止ルール、Microsoft Defender for Endpoint、CONFIGURE ASR ルール
 search.product: eADQiWindows 10XVcnh
@@ -17,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: ee6e8f1ce7f6e75b2e45e058f41403433cc707d4
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 33e62ce97b5fa1374369a0d212b0c615b47f4c5f
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171762"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61218120"
 ---
 # <a name="attack-surface-reduction-rules-deployment-phase-2-test"></a>攻撃表面の縮小ルールの展開フェーズ 2: test
 
@@ -108,7 +108,7 @@ ASR ルールの新しい攻撃表面縮小ポリシーは、[エンドポイン
 - ソース アプリ
 - Device
 - User
-- 発行者
+- Publisher
 
 > [!div class="mx-imgBorder"]
 > ![攻撃表面の縮小ルールの検出 GroupBy フィルター](images/asr-defender365-reports-detections.png)
@@ -166,10 +166,10 @@ Endpoint Security |攻撃表面の縮小ウィンドウが開きます。
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>この展開コレクションのその他のトピック
 
-[攻撃表面の縮小ルールの展開ガイド - 概要](attack-surface-reduction-rules-deployment.md)
+[ASR ルールの展開ガイド - 概要](attack-surface-reduction-rules-deployment.md)
 
-[攻撃表面の縮小ルールの展開フェーズ 1 - 計画](attack-surface-reduction-rules-deployment-phase-1.md)
+[ASR ルールの展開フェーズ 1 - 計画](attack-surface-reduction-rules-deployment-phase-1.md)
 
-[攻撃表面の縮小ルールの展開フェーズ 3 - 実装](attack-surface-reduction-rules-deployment-phase-3.md)
+[ASR ルールの展開フェーズ 3 - 実装](attack-surface-reduction-rules-deployment-phase-3.md)
 
-[攻撃表面の縮小ルールの展開フェーズ 4 - 運用](attack-surface-reduction-rules-deployment-phase-4.md)
+[ASR ルールの展開フェーズ 4 - 運用化](attack-surface-reduction-rules-deployment-phase-4.md)
