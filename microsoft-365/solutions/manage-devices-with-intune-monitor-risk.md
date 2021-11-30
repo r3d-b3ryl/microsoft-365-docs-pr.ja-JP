@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: ''
 description: ''
-ms.openlocfilehash: 8a4b2e8170d98261f0f3c6d1f77dd50e05de5d87
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: be6e24d1a9d02146ce196058115388c4b00290ea
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61129266"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61221056"
 ---
 # <a name="step-6-monitor-device-risk-and-compliance-to-security-baselines"></a>手順 6. デバイスのリスクとセキュリティ ベースラインへのコンプライアンスを監視する
 
@@ -27,7 +27,10 @@ ms.locfileid: "61129266"
 
 ![エンドポイントとMicrosoft Intuneの統合図のディフェンダー](../media/devices/devices-defender-for-endpoint-steps.png#lightbox)
 
-この図では、Microsoft Defender for Endpoint により、デバイスの脅威保護の高度化が大幅に向上しています。 Microsoft Intune ではアプリ保護ポリシーの設定とデバイスの管理 (構成の変更を含む) が可能ですが、Defender for Endpoint はデバイスの脅威を継続的に監視し、自動化されたアクションを実行して攻撃を修正できます。 
+この図について:
+- Microsoft Defender for Endpoint は、デバイスの脅威保護の洗練度を大幅に向上させます。 
+- Microsoft Intune ではアプリ保護ポリシーの設定とデバイスの管理 (構成の変更を含む) が可能ですが、Defender for Endpoint はデバイスの脅威を継続的に監視し、自動化されたアクションを実行して攻撃を修正できます。 
+- Intune を使用して、デバイスを Defender for Endpoint にオンボードできます。 これを行う場合は、これらのデバイスもエンドポイントのデータ損失防止 (Microsoft 365 Endpoint data loss prevention (Endpoint DLP)) 機能とともに動作する様に有効化します。
 
 この記事には、次の手順が含まれています。
 - Microsoft Intune を Defender for Endpoint に接続します
