@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 6a573b68d03e7446fc63f4fbc34bee3d46da9c49
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: e14f2d5e35585cf5b0edfe433084fa7c8a1d5280
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786649"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61221066"
 ---
 # <a name="quickly-hunt-for-entity-or-event-information-with-go-hunt"></a>go hunt を使用してエンティティまたはイベント情報をすばやく検索する
 
@@ -38,20 +38,20 @@ ms.locfileid: "60786649"
 
 Go *Hunt アクションを使用* すると、強力なクエリ ベースの高度なハンティング機能を使用して、イベントやさまざまなエンティティの種類 [をすばやく調査](advanced-hunting-overview.md) できます。 このアクションでは、選択したイベントまたはエンティティに関する関連情報を検索する高度な検索クエリが自動的に実行されます。
 
-go *hunt アクション* は、イベントまたはエンティティの詳細が表示されるたびに、セキュリティ センターのさまざまなセクションで使用できます。 たとえば、次のセクション *から go hunt* を使用できます。
+Go *ハント アクションは* 、イベントまたはエンティティの詳細が表示されるたびに、Defender for Cloud のさまざまなセクションで使用できます。 たとえば、次のセクション *から go hunt* を使用できます。
 
 - インシデント ページ [では、](investigate-incidents.md#summary)インシデントに関連付けられているユーザー、デバイス、その他多くのエンティティに関する詳細を確認できます。 エンティティを選択すると、追加の情報と、そのエンティティに対して実行できるさまざまなアクションが表示されます。 次の例では、メールボックスが選択され、メールボックスに関する詳細と、メールボックスの詳細を検索するオプションが表示されます。
 
-    ![移動ハント オプションを使用してメールボックスの詳細を示す画像。](../../media/go-hunt-1-incident.png)
+    :::image type="content" source="../../media/go-hunt-1-incident.png" alt-text="**Mailboxes** ページと **Go hunt** オプションが含Microsoft 365 Defenderポータル" lightbox="../../media/go-hunt-1-incident.png":::
 
-- インシデント ページでは、[証拠] タブの下のエンティティの一覧にアクセスすることもできます。これらのエンティティのいずれかを選択すると、そのエンティティに関する情報をすばやく検索できます。
+- インシデント ページでは、[証拠] タブでエンティティの一覧に **アクセス** することもできます。これらのエンティティのいずれかを選択すると、そのエンティティに関する情報をすばやく検索できます。
 
-    ![[証拠] タブの [移動ハント] オプションを使用して選択したファイルを示す画像。](../../media/go-hunt-2-entity.png)
+    :::image type="content" source="../../media/go-hunt-2-entity.png" alt-text="ポータル内の **Incident** ページの証拠の一部に対する go ハント Microsoft 365 Defender。" lightbox="../../media/go-hunt-2-entity.png":::
 
 
 - デバイスのタイムラインを表示する場合は、タイムラインでイベントを選択して、そのイベントに関する追加情報を表示できます。 イベントを選択すると、高度な検索で他の関連イベントを探すオプションが表示されます。
 
-    ![Go ハント オプションを使用してイベントの詳細を示す画像。](../../media/go-hunt-3-event.png)
+    :::image type="content" source="../../media/go-hunt-3-event.png" alt-text="[関連イベントの検索] ** オプションは、イベント ポータルの **Timelines** タブにあるイベントのページMicrosoft 365 Defenderします。" lightbox="../../media/go-hunt-3-event.png":::
 
 関連イベント **に対して** [Go hunt] または **[ハント** ] を選択すると、エンティティまたはイベントを選択したかどうかに応じて、さまざまなクエリが渡されます。
 
@@ -111,7 +111,7 @@ Timestamp between ((selectedTimestamp - 1h) .. (selectedTimestamp + 1h))
 >[!NOTE]
 >この記事の一部のテーブルは、Microsoft Defender for Endpoint では使用できない場合があります。 [複数のデータ Microsoft 365 Defender](m365d-enable.md)を使用して脅威を検出するには、このオプションをオンにしてください。 高度なハンティング ワークフローを Microsoft Defender for Endpoint から Microsoft 365 Defenderに移動するには、「Advanced Hunting [queries](advanced-hunting-migrate-from-mde.md)を Microsoft Defender for Endpoint から移行する」の手順に従います。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [クエリ結果を操作する](advanced-hunting-query-results.md)

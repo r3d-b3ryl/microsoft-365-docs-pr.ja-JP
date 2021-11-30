@@ -23,12 +23,12 @@ ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom:
 - FPFN
 - admindeeplinkDEFENDER
-ms.openlocfilehash: 1ecfa3a214294959b3aca29a0431ca70b0699191
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 2464b8443db2f12e524a33ee56ce90909fea1fc2
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166479"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61221150"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint での誤検出/検出漏れに対処する
 
@@ -210,7 +210,7 @@ Microsoft Defender for Endpoint 全体で除外を定義するには、次のタ
 
 ### <a name="exclusions-for-microsoft-defender-antivirus"></a>ユーザーの除外Microsoft Defender ウイルス対策
 
-一般に、ユーザーの除外を定義する必要Microsoft Defender ウイルス対策。 除外を定義し、誤検知の結果として生じるファイル、フォルダー、プロセス、およびプロセスで開いたファイルのみを含める必要があります。 また、定義済みの除外を定期的に確認してください。 ウイルス[対策の除外](/mem/endpoint-manager-overview)Microsoft エンドポイント マネージャー定義または編集する場合は、グループ ポリシーを使用することをお勧めします[](/azure/active-directory-domain-services/manage-group-policy) [(「Manage Microsoft Defender for Endpoint」](manage-atp-post-migration.md)を参照)。
+一般に、ユーザーの除外を定義する必要Microsoft Defender ウイルス対策。 除外を定義し、誤検知の結果として生じるファイル、フォルダー、プロセス、およびプロセスで開いたファイルのみを含める必要があります。 また、定義済みの除外を定期的に確認してください。 ウイルス[対策の除外](/mem/endpoint-manager-overview)Microsoft エンドポイント マネージャー定義または編集する場合は、グループ ポリシーを使用することをお勧めします[](/azure/active-directory-domain-services/manage-group-policy) [(「Manage Microsoft Defender for Endpoint」](manage-mde-post-migration.md)を参照)。
 
 > [!TIP]
 > ウイルス対策の除外に関するヘルプが必要ですか? 詳細については[、「除外の構成と検証」を参照Microsoft Defender ウイルス対策してください](configure-exclusions-microsoft-defender-antivirus.md)。
@@ -354,7 +354,7 @@ Microsoft Defender for Endpoint には、さまざまな機能や機能の設定
 > [!TIP]
 > クラウド配信保護の構成の詳細については、「クラウド配信の保護レベルを指定する [」を参照してください](/windows/security/threat-protection/microsoft-defender-antivirus/specify-cloud-protection-level-microsoft-defender-antivirus)。
 
-クラウド配信の[保護設定Microsoft エンドポイント マネージャー](/mem/endpoint-manager-overview)を使用して編集または設定することをお勧めしますが、グループ[ポリシーなどの他](/azure/active-directory-domain-services/manage-group-policy)の方法を使用できます (「Manage [Microsoft Defender for Endpoint」](manage-atp-post-migration.md)を参照)。
+クラウド配信の[保護設定Microsoft エンドポイント マネージャー](/mem/endpoint-manager-overview)を使用して編集または設定することをお勧めしますが、グループ[ポリシーなどの他](/azure/active-directory-domain-services/manage-group-policy)の方法を使用できます (「Manage [Microsoft Defender for Endpoint」](manage-mde-post-migration.md)を参照)。
 
 #### <a name="use-microsoft-endpoint-manager-to-review-and-edit-cloud-delivered-protection-settings-for-existing-policies"></a>クラウドMicrosoft エンドポイント マネージャーの保護設定を確認および編集するには、既存のポリシーを使用します。
 
@@ -398,7 +398,7 @@ Microsoft Defender for Endpoint には、さまざまな機能や機能の設定
 
 組織が使用しているアプリによっては、PUA 保護設定の結果として誤検知が発生する可能性があります。 必要に応じて、監査モードで PUA 保護をしばらく実行するか、組織内のデバイスのサブセットに PUA 保護を適用します。 PUA 保護は、ブラウザーとMicrosoft Edge構成Microsoft Defender ウイルス対策。
 
-PUA 保護設定[Microsoft エンドポイント マネージャー](/mem/endpoint-manager-overview)使用することをお勧めしますが、グループ ポリシーなどの他の方法を使用できます[](/azure/active-directory-domain-services/manage-group-policy) (「Manage Microsoft Defender [for Endpoint」](manage-atp-post-migration.md)を参照)。
+PUA 保護設定[Microsoft エンドポイント マネージャー](/mem/endpoint-manager-overview)使用することをお勧めしますが、グループ ポリシーなどの他の方法を使用できます[](/azure/active-directory-domain-services/manage-group-policy) (「Manage Microsoft Defender [for Endpoint」](manage-mde-post-migration.md)を参照)。
 
 #### <a name="use-microsoft-endpoint-manager-to-edit-pua-protection-for-existing-configuration-profiles"></a>PUA Microsoft エンドポイント マネージャー (既存の構成プロファイルの場合) を編集するには、次のコマンドを使用します。
 
@@ -458,6 +458,6 @@ PUA 保護設定[Microsoft エンドポイント マネージャー](/mem/endpoi
 
 ## <a name="see-also"></a>関連項目
 
-[エンドポイント用 Microsoft Defender の管理](manage-atp-post-migration.md)
+[エンドポイント用 Microsoft Defender の管理](manage-mde-post-migration.md)
 
 [ポータルのMicrosoft 365 Defender概要](/microsoft-365/security/defender-endpoint/use)

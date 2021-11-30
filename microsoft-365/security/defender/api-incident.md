@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c316bd7c429165869b235871b2366861a22c6056
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fc2e7f92a48cf94c0092dbcf7da051642949180c
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198099"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61221390"
 ---
 # <a name="microsoft-365-defender-incidents-api-and-the-incidents-resource-type"></a>Microsoft 365 Defender API とインシデント リソースの種類
 
@@ -64,7 +64,7 @@ HTTP 応答コードは、送信された要求の数または割り当てられ
 
 ## <a name="common-properties"></a>共通プロパティ
 
-プロパティ | 型 | 説明
+プロパティ | 種類 | 説明
 -|-|-
 incidentId | long | インシデントの一意の ID。
 redirectIncidentId | null 許容長 | 現在のインシデントが結合されたインシデント ID。
@@ -73,7 +73,7 @@ createdTime | DateTimeOffset | インシデントが作成された日付と時�
 lastUpdateTime | DateTimeOffset | インシデントが最後に更新された日時 (UTC)。
 assignedTo | string | インシデントの所有者。
 severity | 列挙 | インシデントの重大度。 使用できる値は ```UnSpecified``` ```Informational``` ```Low``` 、、、、、 ```Medium``` および ```High``` です。
-status | 列挙 | インシデントの現在の状態を指定します。 使用できる値は ```Active``` ```Resolved``` 、、、および ```Redirected``` です。
+status | 列挙 | インシデントの現在の状態を指定します。 可能な値は、```Active```、```InProgress```、```Resolved```、および ```Redirected``` です。
 classification | 列挙 | インシデントの仕様。 可能な値は ```Unknown```、```FalsePositive```、```TruePositive``` です。
 決定 | 列挙 | インシデントの決定を指定します。 可能な値は、```NotAvailable```、```Apt```、```Malware```、```SecurityPersonnel```、```SecurityTesting```、```UnwantedSoftware```、```Other``` です。
 tags | string List | インシデント タグの一覧。
@@ -82,7 +82,7 @@ comments | インシデント コメントの一覧 | インシデント コメ�
 
 ## <a name="related-articles"></a>関連記事
 
-- [Microsoft 365 DefenderAPI の概要](api-overview.md)
+- [Microsoft 365 Defender API の概要](api-overview.md)
 - [インシデントの概要](incidents-overview.md)
 - [インシデント API の一覧表示](api-list-incidents.md)
 - [インシデント API の更新](api-update-incidents.md)

@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: a5d64106d801dfe554fe01290011e2d3e2b7767e
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: d797fb8843bdf5d29e9af43cac152461eb379e5f
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786084"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61221402"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>高度な検索クエリのベスト プラクティス
 
@@ -40,7 +40,7 @@ ms.locfileid: "60786084"
 
 クエリを実行した後、実行時間とそのリソース使用量 (低、中、高) を確認できます。 High は、クエリの実行に必要なリソースが多く、結果を効率的に返すために改善される可能性を示します。
 
-![低リソース インジケーターを示す画像](../../media/resource-usage.png)
+:::image type="content" source="../../media/resource-usage.png" alt-text="[**Results**] タブの下のクエリの詳細は、Microsoft 365 Defenderポータル" lightbox="../../media/resource-usage.png":::
 
 複数のクエリを定期的に実行しているお客様は、使用量を追跡し、この記事の最適化ガイダンスを適用して、クォータまたは使用パラメーターの超過による中断を最小限に抑える必要があります。
 
@@ -270,7 +270,7 @@ SHA256,ThreatTypes,DetectionMethods
 >[!NOTE]
 >この記事の一部のテーブルは、Microsoft Defender for Endpoint では使用できない場合があります。 [複数のデータ Microsoft 365 Defender](m365d-enable.md)を使用して脅威を検出するには、このオプションをオンにしてください。 高度なハンティング ワークフローを Microsoft Defender for Endpoint から Microsoft 365 Defenderに移動するには、「Advanced Hunting [queries](advanced-hunting-migrate-from-mde.md)を Microsoft Defender for Endpoint から移行する」の手順に従います。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [Kusto クエリ言語のドキュメント](/azure/data-explorer/kusto/query/)
 - [クォータと使用パラメータ](advanced-hunting-limits.md)
 - [高度なハンティング エラーの処理](advanced-hunting-errors.md)

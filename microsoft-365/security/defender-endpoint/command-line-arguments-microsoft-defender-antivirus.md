@@ -15,12 +15,12 @@ ms.date: 05/24/2021
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 0d9a2d84febb15dd626fb603faecc2bb0ba74af1
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: f7ae9c9d0986463b6d6368edd0dac050600e3373
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171038"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61220886"
 ---
 # <a name="configure-and-manage-microsoft-defender-antivirus-with-the-mpcmdrunexe-command-line-tool"></a>コマンド ライン Microsoft Defender ウイルス対策を使用してmpcmdrun.exeを構成および管理する
 
@@ -73,7 +73,7 @@ MpCmdRun.exe -Scan -ScanType 2
 
 |エラー メッセージ|考えられる理由|
 |---|---|
-|**ValidateMapsConnection が失敗しました (800106BA)** **または** 0x800106BA|サービスMicrosoft Defender ウイルス対策無効になっています。 サービスを有効にし、もう一度やり直してください。 アプリケーションの再有効化に関するヘルプがMicrosoft Defender ウイルス対策、エンドポイント[の再インストール/有効化Microsoft Defender ウイルス対策を参照してください](switch-to-microsoft-defender-setup.md#reinstallenable-microsoft-defender-antivirus-on-your-endpoints)。<p> **ヒント**: 1909 Windows 10以前、および Windows Server 2019 以前の場合、このサービスは以前は Windows Defender ウイルス対策 と *呼ばWindows Defender ウイルス対策。*|
+|**ValidateMapsConnection が失敗しました (800106BA)** **または** 0x800106BA|サービスMicrosoft Defender ウイルス対策無効になっています。 サービスを有効にし、もう一度やり直してください。 アプリケーションの再有効化に関するヘルプがMicrosoft Defender ウイルス対策、エンドポイント[の再インストール/有効化Microsoft Defender ウイルス対策を参照してください](switch-to-mde-phase-2.md#reinstallenable-microsoft-defender-antivirus-on-your-endpoints)。<p> **ヒント**: 1909 Windows 10以前、および Windows Server 2019 以前の場合、このサービスは以前は Windows Defender ウイルス対策 と *呼ばWindows Defender ウイルス対策。*|
 |**0x80070667**|このコマンドは、バージョン 1607 以前Windows 10または以前のコンピューター `-ValidateMapsConnection` Windows Server 2016実行しています。 バージョン 1703 以降Windows 10サーバー 2019 以降Windowsコマンドを実行します。|
 |**MpCmdRun は、内部または外部のコマンド、操作可能なプログラム、またはバッチ ファイルとして認識されません。**|ツールを実行する必要があります (プラットフォームの更新プログラムは 3 月を除いて毎月行うので、異なる `%ProgramFiles%\Windows Defender` `C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.2012.4-0` `2012.4-0` 場合があります)|
 |**ValidateMapsConnection が MAPS への接続を確立できなかった (hr=80070005 httpcode=450)**|コマンドは、不十分な特権を使用して試行されました。 管理者としてコマンド プロンプト (cmd.exe) を使用します。|

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: cb72c7affc98ed1ac5e74ecddabf7edd13c6a01c
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 0912e496fdca1f716fa7476a4a74e46bbb26023f
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786114"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61221342"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>高度な捜索のクエリ言語について学習する
 
@@ -165,13 +165,13 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 - 各クエリを空の行で分離します。
 - クエリを実行する前に、クエリの任意の部分にカーソルを置き、そのクエリを選択します。 これにより、選択したクエリだけが実行されます。 別のクエリを実行するには、カーソルを適切に移動し、[クエリの実行] **を選択します**。
 
-![複数のクエリを含むクエリ エディターのイメージ。](../../media/learn-work-with-multiple.png)
+:::image type="content" source="../../media/learn-work-with-multiple.png" alt-text="ポータルの **New query** ページでの複数のクエリの実行Microsoft 365 Defender例" lightbox="../../media/learn-work-with-multiple.png":::
 
 ## <a name="use-sample-queries"></a>サンプル クエリを使用する
 
 [**はじめに**] セクションでは、一般的に使用されている演算子を使用した簡単なクエリーをいくつか提供します。 これらのクエリを実行して、少し変更してみてください。
 
-![高度な狩猟ウィンドウのイメージ。](../../media/get-started-section.png)
+:::image type="content" source="../../media/get-started-section.png" alt-text="ポータルの **Advanced hunting** ページの **Getting** セクションMicrosoft 365 Defenderします。" lightbox="../../media/get-started-section.png":::
 
 >[!NOTE]
 >基本的なクエリ サンプルとは別に、特定の脅威の捜索シナリオの[共有クエリ](advanced-hunting-shared-queries.md)にアクセスすることもできます。 ページの左側またはクエリ リポジトリの共有クエリ[をGitHubします](https://aka.ms/hunting-queries)。
@@ -183,7 +183,7 @@ Kusto クエリ言語およびサポートされる演算子の詳細につい�
 >[!NOTE]
 >この記事の一部のテーブルは、Microsoft Defender for Endpoint では使用できない場合があります。 [複数のデータ Microsoft 365 Defender](m365d-enable.md)を使用して脅威を検出するには、このオプションをオンにしてください。 高度なハンティング ワークフローを Microsoft Defender for Endpoint から Microsoft 365 Defenderに移動するには、「Advanced Hunting [queries](advanced-hunting-migrate-from-mde.md)を Microsoft Defender for Endpoint から移行する」の手順に従います。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ結果を操作する](advanced-hunting-query-results.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)

@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d6f3e9b21c046b5f7e05c4b34c3dec50087b2272
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: a411de512d5e07eb58f5a93163882836af823906
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164036"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61221258"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Microsoft Defender for Endpoint 評価ラボ
 
@@ -49,7 +49,7 @@ Windows 10、Windows 11、Windows Server 2019、Windows Server 2016、および 
 
 お好みのシミュレーターをインストールし、評価ラボ内でシナリオを実行し、プラットフォームのパフォーマンスを即座に確認できます。 また、さまざまなシミュレーションにアクセスして、シミュレーション カタログから実行できます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 評価ラボにアクセスするには、ライセンス[](minimum-requirements.md#licensing-requirements)要件を満たすか、Microsoft Defender for Endpoint への試用版アクセス権が必要です。
 
@@ -105,7 +105,7 @@ Microsoft Defender ATP を試してみたいですか? [無料試用版にサイ
 
 ## <a name="add-devices"></a>デバイスを追加する
 
-環境にデバイスを追加すると、Defender for Endpoint は接続の詳細を示す構成済みのデバイスをセットアップします。 サーバー 2019 Windows 10、Windowsサーバー 2019、Windowsサーバー 2022 デバイスWindows追加できます。
+環境にデバイスを追加すると、Defender for Endpoint は接続の詳細を示す構成済みのデバイスをセットアップします。 サーバー 2019、Windows 10 11、Windows 2019、Windows Linux (Ubuntu) Windows Server 2016追加できます。
 
 デバイスは、OS および Office 2019 Standard の最新バージョンと、Java、Python、SysIntenals などの他のアプリで構成されます。
 
@@ -134,7 +134,7 @@ Microsoft Defender ATP を試してみたいですか? [無料試用版にサイ
 
 1. ダッシュボードで、[デバイスの追加 **] を選択します**。
 
-2. 追加するデバイスの種類を選択します。 サーバー 2019、Windows 10 11、Windowsサーバー 2019、Windowsサーバー 2022 のWindows選択できます。
+2. 追加するデバイスの種類を選択します。 サーバー 2019、Windows 10 1 Windows 1、Windows サーバー 2019、Windows Server 2016 Linux (Ubuntu) をWindows Server 2016選択できます。
 
     :::image type="content" source="../../media/add-machine-optionsnew.png" alt-text="デバイス オプションを使用したラボセットアップ。":::
 

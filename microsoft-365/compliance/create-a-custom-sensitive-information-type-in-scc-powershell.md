@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コンプライアンス センターでポリシーのカスタムの機密情報の種類を作成してインポートする方法について説明します。
-ms.openlocfilehash: d626e805c0e680dc64236066c962ce40229fd3bd
-ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
+ms.openlocfilehash: 7ac39c068060fec945d04137688e6d9bb4b81655
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2021
-ms.locfileid: "60804979"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61220994"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>PowerShell を使用してカスタムの機密情報の種類を作成する
 
@@ -485,6 +485,10 @@ Microsoft 365 2 つの汎用バリデーターを提供する
 ## <a name="potential-validation-issues-to-be-aware-of"></a>注意する必要がある潜在的な検証の問題
 
 ルール パッケージの XML ファイルをアップロードすると、システムで XML が検証され、既知の不適切なパターンや明らかなパフォーマンスの問題が確認されます。検証で確認される既知の正規表現に関する問題について一部を紹介します。
+  
+- 正規表現内の Lookbehind または lookahead アサーションは、固定長のみである必要があります。 可変長アサーションでは、エラーが発生します。
+    
+  たとえば、"(?<=^|\s|"は、この中の最初のオプションが長さ 0 の '^' で、次の tow オプション _('\s'_ と ' ') は長さ 1 なので、検証は渡しません。 この正規表現を使用する別の方法は"(?:^|(?<=\s|_)"
   
 - 先頭または末尾に縦棒 "|" を指定することはできません。これは、空の一致とみなされるため、あらゆるものと一致します。
     

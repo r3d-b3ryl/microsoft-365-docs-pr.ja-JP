@@ -4,12 +4,12 @@ description: ファイルを含める
 author: mjcaparas
 ms.service: microsoft-365-enterprise
 ms.author: macapara
-ms.openlocfilehash: 3a71ae9b77e49ff88c12383b00faf17d5a52b10d
-ms.sourcegitcommit: b51bfed24a9e3b7adf82d4918b76462cd40dffaf
+ms.openlocfilehash: 2ae8fa9e8cb3c28cf20ab9c57183b43d067b16b6
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61155426"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61222274"
 ---
 ## <a name="prerequisites"></a>前提条件
 
@@ -19,7 +19,6 @@ Microsoft Defender for Endpoint シナリオのセキュリティ管理の要件
 
 デバイスが Microsoft Defender for Endpoint にオンボードする場合:
 
-- デバイスは、Configuration Manager または Intune のいずれかエンドポイント マネージャー既存のプレゼンスについて調査されます。
 - プレゼンスが存在しないエンドポイント マネージャーセキュリティ管理機能を有効にする
 - 信頼は、まだ存在しないAzure Active Directoryを使用して作成されます。
 - Azure Active Directory信頼は、Intune (Intune) と通信しエンドポイント マネージャーポリシーを取得するために使用されます。
@@ -113,7 +112,10 @@ Microsoft Defender for Endpoint では、オンボード デバイスに対し�
 > [!IMPORTANT]
 > デバイスが Microsoft Defender for Endpoint にオンボードされた後、Microsoft Defender for Endpoint のセキュリティ管理に登録する前に **、MDE-Management** にタグ付けする必要があります。 MDE でのデバイス タグ付けの詳細については、「デバイス タグの作成と [*管理」を参照してください*](/microsoft-365/security/defender-endpoint/machine-tag)。
 
-Intune または Configuration Manager で管理するデバイスは、このシナリオではサポートされていません。
+
+## <a name="co-existence-with-microsoft-endpoint-configuration-manager"></a>ユーザーとのMicrosoft Endpoint Configuration Manager
+Configuration Manager を使用する場合、セキュリティ ポリシーの管理に最適なパスは、Configuration Manager テナント接続 [を使用する方法です](/mem/configmgr/tenant-attach/endpoint-security-get-started)。 環境によっては、Microsoft Defender のセキュリティ管理を使用することが望ましい場合があります。 Configuration Manager で Microsoft Defender のセキュリティ管理を使用する場合は、エンドポイント セキュリティ ポリシーを 1 つのコントロール プレーンに分離する必要があります。 両方のチャネルを通じてポリシーを制御すると、競合や望ましくない結果が生じることができます。
+
 
 ## <a name="create-azure-ad-groups"></a>グループAzure AD作成
 
@@ -167,7 +169,7 @@ Microsoft Defender for Endpoint によって管理されるデバイスを含む
 
 4. **[作成]** を選択します。
 
-5. [基本 **] ページで** 、プロファイルの名前と説明を入力し、[次へ] を選択 **します**。
+5. **[基本]** ページでプロファイルに名前と説明を入力し、**[次へ]** を選択します。
 
 6. [構成 **設定] ページ** で、このプロファイルで管理する設定を選択します。 設定の詳細については、その情報ダイアログを展開し、[詳細]リンクを選択して、オンライン ドキュメントの設定の CSP 情報を表示します。
 

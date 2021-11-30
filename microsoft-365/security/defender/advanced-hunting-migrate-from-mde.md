@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: 93696fb5ca883a849a8f7bcb534cb57469f20815
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3cb59c3c4a98a492dcda11e34e01a18afc8c5555
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174449"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61221198"
 ---
 # <a name="migrate-advanced-hunting-queries-from-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint から高度なハンティング クエリを移行する
 
@@ -39,7 +39,7 @@ ms.locfileid: "60174449"
 
 - Microsoft Defender for Endpoint
 - Microsoft Defender for Office 365
-- Microsoft Cloud App Security
+- Microsoft Defender for Cloud Apps
 - Microsoft Defender for Identity
 
 >[!NOTE]
@@ -53,7 +53,7 @@ ms.locfileid: "60174449"
 | テーブル名 | 説明 |
 |------------|-------------|
 | [AlertEvidence](advanced-hunting-alertevidence-table.md) | アラートに関連付けられたファイル、IP アドレス、URL、ユーザー、またはデバイス |
-| [AlertInfo](advanced-hunting-alertinfo-table.md) | Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Cloud App Security、Microsoft Defender for Identity からのアラート (重大度情報と脅威カテゴリを含む)  |
+| [AlertInfo](advanced-hunting-alertinfo-table.md) | Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Defender for Cloud Apps、Microsoft Defender for Identity からのアラート (重大度情報と脅威カテゴリを含む)  |
 | [EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) | メールに添付されたファイルに関する情報 |
 | [EmailEvents](advanced-hunting-emailevents-table.md) | メールの配信やブロック イベントなど、Microsoft 365 のメール イベント |
 | [EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md) | Microsoft 365 が受信者メールボックスにメールを配信した後に配信後に発生するセキュリティ イベント |
@@ -132,7 +132,7 @@ Defender for Endpoint ルールを編集して、Microsoft 365 Defender での�
 
 この方法でルールを編集すると、そのような変更が適用される前に確認を求めるメッセージが表示されます。
 
-ポータル内のカスタム検出ルールによって生成Microsoft 365 Defender、次の情報を提供するアラート ページに表示されます。
+カスタム検出ルールによって生成された新Microsoft 365 Defender、次の情報を提供するアラート ページに表示されます。
 
 - アラートのタイトルと説明 
 - 影響を受け取ったアセット
@@ -141,7 +141,7 @@ Defender for Endpoint ルールを編集して、Microsoft 365 Defender での�
 - カスタム検出ルールに関する情報 
  
 > [!div class="mx-imgBorder"]
-> ![新しいアラート ページのイメージ。](../../media/new-alert-page.png)
+> :::image type="content" source="../../media/new-alert-page.png" alt-text="カスタム検出ルールによって生成された新しいアラートをポータルで表示するアラート ページMicrosoft 365 Defender例" lightbox="../../media/new-alert-page.png":::
 
 ## <a name="write-queries-without-devicealertevents"></a>DeviceAlertEvents を使用せずにクエリを書き込む
 

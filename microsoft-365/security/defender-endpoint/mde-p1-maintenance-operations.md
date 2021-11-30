@@ -14,12 +14,12 @@ ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: e6ad08a26d50f99fd0d11423596a70752348dfba
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 1ae0636f103c830866c0b7bcd1af488f2fc4e070
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164420"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61220874"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-plan-1"></a>エンドポイント プラン 1 の Microsoft Defender の管理
 
@@ -48,7 +48,7 @@ ms.locfileid: "61164420"
 
 Defender for Endpoint は、柔軟性と構成のオプションを提供します。 組織のニーズに合わせて設定を調整および調整できます。 たとえば、エンドポイントセキュリティ設定を管理Microsoft エンドポイント マネージャーグループ ポリシー、その他の方法を使用できます。 
 
-詳細については、「Manage [Defender for Endpoint」を参照してください](manage-atp-post-migration.md)。
+詳細については、「Manage [Defender for Endpoint」を参照してください](manage-mde-post-migration.md)。
 
 ## <a name="address-false-positivesnegatives"></a>誤検知/負のアドレス
 
