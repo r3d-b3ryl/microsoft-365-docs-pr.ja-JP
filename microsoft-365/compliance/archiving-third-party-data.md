@@ -21,12 +21,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: ソーシャル メディア プラットフォーム、インスタント メッセージング プラットフォーム、ドキュメント コラボレーション プラットフォームからサードパーティ のデータをインポートおよびアーカイブして、メールボックスにMicrosoft 365します。
-ms.openlocfilehash: 3b9868d112e6f4add560da31346df786dff1e96e
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: af337894e2eefed2b723d5086e6dcf5442826da5
+ms.sourcegitcommit: cd3f5e3b7fea37fdcd8c811d01afd60ea68301ca
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217736"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61254462"
 ---
 # <a name="archive-third-party-data-in-microsoft-365"></a>サードパーティのデータをアーカイブMicrosoft 365
 
@@ -207,39 +207,6 @@ CellTrust SL2 データ コネクタは、米国政府機関クラウドGCC環�
 
 選択的な人事データなど、サード パーティのデータからのシグナルを Insider リスク[](insider-risk-management.md)管理ソリューションで使用すると、組織内のリスクの高いアクティビティを検出、調査、および操作することで内部リスクを最小限に抑える可能性があります。 たとえば、人事データ コネクタによってインポートされたデータは、従業員のデータ盗難を検出するリスクインジケーターとして使用されます。
 
-## <a name="role-group-membership-required-to-create-data-connectors"></a>データ コネクタの作成に必要な役割グループメンバーシップ
-
-サード パーティ製のデータ コネクタを作成するには、組織内のユーザーが、次のいずれかの役割グループのメンバーである必要Microsoft 365 コンプライアンス センター。
-
-- 通信コンプライアンス
-
-- コミュニケーション コンプライアンス管理者
-
-- コンプライアンス管理者
-
-- コンプライアンス データ管理者
-
-- コンプライアンス マネージャー管理者
-
-- コンプライアンス マネージャー評価者
-
-- コンプライアンス マネージャー投稿者
-
-- インサイダー リスクの管理
-
-- Insider リスク管理管理者
-
-- 組織管理
-
-> [!NOTE]
-> 2021 年 11 月 30 日から、データ コネクタを作成するために、Exchange Online でメールボックスインポートエクスポートの役割を割り当てる必要がなされません。 この日付以降は、データ コネクタを作成する前の役割グループMicrosoft 365 コンプライアンス センターメンバーである必要があります。
-
-ユーザーの役割グループMicrosoft 365 コンプライアンス センターコンプライアンス 役割グループにユーザーを追加する方法の詳細については、以下を参照してください。
-
-- [セキュリティ/コンプライアンス センターのアクセス許可](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)
-
-- [アクセス許可] の [コンプライアンス 役割グループにユーザーを追加する][セクションMicrosoft 365 コンプライアンス センター](microsoft-365-compliance-center-permissions.md#add-users-to-a-compliance-role-group)
-
 ## <a name="using-ediscovery-tools-to-search-for-third-party-data"></a>電子情報開示ツールを使用してサードパーティのデータを検索する
 
 データ コネクタを使用してユーザー メールボックス内のサード パーティ 製データをインポートおよびアーカイブした後、Microsoft 365 電子情報開示ツールを使用してサード パーティのデータを検索できます。 また、電子情報開示ツールを使用して、Core eDiscovery に関連付けられたクエリ ベースの保持を作成し、Advanced eDiscoveryのケースに関連付け、サード パーティのデータを保持することもできます。 電子情報開示ツールの詳細については、「電子情報開示ソリューション」を参照[Microsoft 365。](ediscovery.md)
@@ -298,12 +265,12 @@ subject:contoso AND itemclass:ipm.externaldata.facebook*
 
 |データ コネクタ  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
-|Android Archiver | はい | 不要 | 不要 |
-|AT&T SMS/MMS Network Archiver | はい | 不要 | 不要 |
+|Android Archiver | はい | いいえ | いいえ |
+|AT&T SMS/MMS Network Archiver | はい | 不要 | いいえ |
 |Bell SMS/MMS Network Archiver | はい | 不要 | 不要 |
-|Enterprise Number Archiver | はい | 不要 | 不要 |
-|O2 SMS と Voice Network Archiver | はい         | 不要 | 不要 |
-|Rogers Network Archiver | はい         | 不要 | 不要 |
+|Enterprise Number Archiver | はい | 不要 | いいえ |
+|O2 SMS と Voice Network Archiver | はい         | 不要 | いいえ |
+|Rogers Network Archiver | はい         | 不要 | いいえ |
 |Signal Archiver | はい | 不要 | 不要 |
 |Telegram Archiver | はい | 不要 | 不要 |
 |TELUS SMS ネットワーク アーカイブ | はい | 不要 | 不要 |
@@ -324,19 +291,19 @@ subject:contoso AND itemclass:ipm.externaldata.facebook*
 |データ コネクタ  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
 |BlackBerry DataParser | はい | 不要 | 不要 |
-|Bloomberg DataParser  | はい | 不要 | 不要 |
-|Cisco Jabber DataParser  | はい | 不要 | 不要 |
-|Cisco Webex DataParser  | はい | 不要 | 不要 |
-|FactSet DataParser  | はい | 不要 | 不要 |
-|Fuze DataParser  | はい | 不要 | 不要 |
-|FX Connect DataParser  | はい | 不要 | 不要 |
-|ICE DataParser  | はい | 不要 | 不要 |
-|InvestEdge DataParser  | はい | 不要 | 不要 |
-|LivePerson Conversational Cloud DataParser  | はい | 不要 | 不要 |
-|Quip DataParser  | はい | 不要 | 不要 |
-|Refinitiv Eikon Messenger DataParser  | はい | 不要 | 不要 |
-|ServiceNow DataParser  | はい | 不要 | 不要 |
-|Skype for Business Server DataParser | はい | 不要 | 不要 |
+|Bloomberg DataParser  | はい | 不要 | いいえ |
+|Cisco Jabber DataParser  | はい | 不要 | いいえ |
+|Cisco Webex DataParser  | はい | 不要 | いいえ |
+|FactSet DataParser  | はい | 不要 | いいえ |
+|Fuze DataParser  | はい | 不要 | いいえ |
+|FX Connect DataParser  | はい | 不要 | いいえ |
+|ICE DataParser  | はい | 不要 | いいえ |
+|InvestEdge DataParser  | はい | 不要 | いいえ |
+|LivePerson Conversational Cloud DataParser  | はい | 不要 | いいえ |
+|Quip DataParser  | はい | 不要 | いいえ |
+|Refinitiv Eikon Messenger DataParser  | はい | 不要 | いいえ |
+|ServiceNow DataParser  | はい | 不要 | いいえ |
+|Skype for Business Server DataParser | はい | 不要 | いいえ |
 |Slack DataParser | はい | 不要 | 不要 |
 |SQL DataParser  | はい | 不要 | 不要 |
 |Symphony DataParser | はい | 不要 | 不要 |

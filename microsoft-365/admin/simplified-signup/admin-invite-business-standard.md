@@ -14,14 +14,17 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: ユーザーに組織への参加をMicrosoft 365 Business Standardする
-ms.openlocfilehash: f4170cee2e389665d59bd516b100143e62674281
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 263eb41ec12b527c4f70e6694206a480e28bebae
+ms.sourcegitcommit: cd3f5e3b7fea37fdcd8c811d01afd60ea68301ca
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60151796"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61254419"
 ---
 # <a name="invite-users-to-microsoft-365-business-standard-admin"></a>ユーザーをユーザーにMicrosoft 365 Business Standardする (管理者)
+
+> [!IMPORTANT]
+> これらの手順は、ユーザーとMicrosoft 365 Business StandardにMicrosoft 365 Apps for business。
 
 組織のサブスクリプションの管理者Microsoft 365 Business Standard、同僚や同僚を招待して、ビジネス サブスクリプションにMicrosoft 365を使用できます。 同僚や同僚をサブスクリプションに招待すると、次のすべての機能とサービスが共有されます。
 
@@ -31,12 +34,12 @@ ms.locfileid: "60151796"
 - 1 つのライセンスを使用して、5 つのモバイル Office、5 つのタブレット、1 ユーザーあたり 5 つの PC または Mac に完全にインストールされたアプリをカバーします。
 - Microsoft の 24 時間電話と Web サポートでいつでもヘルプを受け取ることができます。
 
-> [!IMPORTANT]
+> [!Note]
 > Microsoft 365 for business にサインアップするユーザー (通常はビジネス所有者) は、自動的に組織の技術管理者になります。 Microsoft 365 のサービスを管理するサポートが必要な場合は、他のユーザーを管理者として追加することができます。 詳細については、「[管理者を追加する](../../business-video/add-admin.md)」をチェックアウトしてください。
 
 ## <a name="before-you-begin"></a>はじめに
 
-ビジネス 標準[組織に既](signup-business-standard.md)にMicrosoft 365 Business Standardし、ビジネス 標準の組織を[セットアップ済みである必要があります](../setup/setup-business-standard.md)。 これらの手順を完了したら、ユーザーに招待を共有できます。
+ユーザーまたはユーザーのアカウントに既[にMicrosoft 365 Business Standard](signup-business-standard.md)確認Microsoft 365 Apps for business。 また、Business Standard 組織または [セットアップ[]](../setup/setup-business-standard.md)組織が既にセットアップ済[みMicrosoft 365 Apps for business。](../setup/setup-apps-for-business.md) これらの手順を完了したら、ユーザーに招待を共有できます。
 
 ## <a name="share-an-invitation-to-a-microsoft-365-business-standard-subscription"></a>サブスクリプションへの招待をMicrosoft 365 Business Standardする
 

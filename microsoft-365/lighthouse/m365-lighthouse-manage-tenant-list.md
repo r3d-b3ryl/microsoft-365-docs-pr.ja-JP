@@ -16,14 +16,17 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 管理サービス プロバイダー (MSP) の場合は、Microsoft 365 Lighthouseリストを管理する方法について説明します。
-ms.openlocfilehash: 458a0fadfa883cd9f57a12c330af731c91c5aa01
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: c2a1bfe65f2002f6b8c6548eabea5dc450366c32
+ms.sourcegitcommit: cd3f5e3b7fea37fdcd8c811d01afd60ea68301ca
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61123288"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61254396"
 ---
 # <a name="manage-your-tenant-list"></a>テナントリストの管理
+
+> [!NOTE]
+> この記事で説明する機能はプレビューで、変更される可能性があります。要件を満たすパートナーだけが [利用できます](m365-lighthouse-requirements.md)。 組織にアカウントが設定されていない場合Microsoft 365 Lighthouse[を参照してください](m365-lighthouse-sign-up.md)Microsoft 365 Lighthouse。
 
 テナント リストを管理するために、Microsoft 365 Lighthouseにカスタム タグを適用できます。 これらのタグは、テナントを整理するために使用できます。また、関連するテナント セットで使用可能な既存のビューと分析情報をフィルター処理するのにも役立ちます。 [テナント] ページからタグを管理できます。 作成および割り当て後、タグに基づいてテナント、ユーザー、デバイス、脅威管理、および 365 ページWindowsデータをフィルター処理できます。
 
@@ -49,7 +52,7 @@ ms.locfileid: "61123288"
 
 4. 名前と説明を入力します。
 
-5. [**保存**] を選択します。
+5. **[保存]** を選択します。
 
 ## <a name="edit-a-tag"></a>タグの編集
 
@@ -61,7 +64,7 @@ ms.locfileid: "61123288"
 
 4. 必要に応じて、名前や説明を編集します。
 
-5. [**保存**] を選択します。
+5. **[保存]** を選択します。
 
 ## <a name="assign-a-tag"></a>タグの割り当て
 
