@@ -28,11 +28,17 @@
   items:
     - name: '[ユーザー] ページの概要'
       href: m365-lighthouse-users-page-overview.md
+    - name: ユーザーのサインインをブロックする
+      href: m365-lighthouse-block-user-signin.md
     - name: 多要素認証の管理
       href: m365-lighthouse-manage-mfa.md
     - name: セルフサービスパスワードのリセットを管理する
       href: m365-lighthouse-manage-sspr.md
-- name: デバイスの管理
+    - name: Reset user password
+      href: m365-lighthouse-reset-user-password.md
+    - name: ユーザーの検索
+      href: m365-lighthouse-search-for-users.md
+- name: デバイスを管理する
   items:
     - name: デバイス コンプライアンス ページの概要
       href: m365-lighthouse-device-compliance-page-overview.md

@@ -21,12 +21,12 @@ ms.topic: article
 ms.custom: migrationguides
 ms.date: 11/30/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: b370fe304dad0a32055a7bb2a29cdcd49373c000
-ms.sourcegitcommit: aacf895ba20ecec4312a447ff4432e257e41edee
+ms.openlocfilehash: 13fda51ea3bd5434c44f9313dc511c0379e0f56e
+ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61234569"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241214"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-2-setup"></a>エンドポイントの Microsoft Defender に切り替える - フェーズ 2: セットアップ
 
@@ -57,7 +57,7 @@ Defender for Endpoint に切り替える場合は、一定の手順を実行し�
 |エンドポイントの種類|操作|
 |---|---|
 |Windows クライアント (エンドポイントが実行されているエンドポイントWindows 10 11 Windowsなど)|一般に、クライアントに対して何もWindowsする必要はありません (Microsoft Defender ウイルス対策場合を含む)。 その理由は次の理由です。 <br/><br/> Microsoft Defender ウイルス対策インストールする必要がありますが、移行プロセスのこの時点で無効になっている可能性が最も高い。 <br/><br/> Microsoft 以外のウイルス対策/マルウェア対策ソリューションがインストールされ、クライアントがまだ Defender for Endpoint にオンボードされていない場合、Microsoft Defender ウイルス対策は自動的に無効になります。 <br/><br/> その後、クライアント エンドポイントが Defender for Endpoint にオンボードされている場合、それらのエンドポイントが Microsoft 以外のウイルス対策ソリューションを実行している場合、Microsoft Defender ウイルス対策パッシブ モードになります。 <br/><br/> Microsoft 以外のウイルス対策ソリューションをアンインストールすると、Microsoft Defender ウイルス対策アクティブ モードになります。|
-|Windows サーバー|サーバー Windows、サーバーを再インストールし、Microsoft Defender ウイルス対策パッシブ モードに手動で設定する必要があります。 サーバー Windows、Microsoft 以外のウイルス対策/マルウェア対策がインストールされている場合、Microsoft Defender ウイルス対策 Microsoft 以外のウイルス対策ソリューションと一緒に実行することはできません。 このような場合、手動でMicrosoft Defender ウイルス対策またはアンインストールされます。 <br/><br/> サーバーでサーバーを再Microsoft Defender ウイルス対策またはWindowsするには、次のタスクを実行します。 <br/>- [サーバーで DisableAntiSpyware を false にWindowsする](#set-disableantispyware-to-false-on-windows-server)(必要な場合のみ)<br/>- [インストール時Microsoft Defender ウイルス対策再インストールWindows Server 2016](#reinstall-microsoft-defender-antivirus-on-windows-server-2016)<br/>- [サーバー Microsoft Defender ウイルス対策バージョン 1803 以降Windowsに再インストールする](#reinstall-microsoft-defender-antivirus-on-windows-server-version-1803-or-later)<br/>- [サーバー Microsoft Defender ウイルス対策パッシブ モードに設定Windowsする](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server) <br/><br/>Windows Server での Microsoft Defender ウイルス対策 の再インストールまたは再有効化に関する問題が発生した場合は、「トラブルシューティング: Microsoft Defender ウイルス対策 が Windows Server でアンインストールされる[」を参照](switch-to-mde-troubleshooting.md#microsoft-defender-antivirus-is-getting-uninstalled-on-windows-server)してください。|
+|Windows サーバー|サーバー Windows、サーバーを再インストールし、Microsoft Defender ウイルス対策パッシブ モードに手動で設定する必要があります。 サーバー Windows、Microsoft 以外のウイルス対策/マルウェア対策がインストールされている場合、Microsoft Defender ウイルス対策 Microsoft 以外のウイルス対策ソリューションと一緒に実行することはできません。 このような場合、手動でMicrosoft Defender ウイルス対策またはアンインストールされます。 <br/><br/> サーバーでサーバーを再Microsoft Defender ウイルス対策またはWindowsするには、次のタスクを実行します。 <br/>- [サーバーで DisableAntiSpyware を false にWindowsする](#set-disableantispyware-to-false-on-windows-server)(必要な場合のみ)<br/>- [インストール時Microsoft Defender ウイルス対策再インストールWindows Server 2016](#re-enable-microsoft-defender-antivirus-on-windows-server-2016)<br/>- [サーバー Microsoft Defender ウイルス対策バージョン 1803 以降Windowsに再インストールする](#re-enable-microsoft-defender-antivirus-on-windows-server-version-1803-or-later)<br/>- [サーバー Microsoft Defender ウイルス対策パッシブ モードに設定Windowsする](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server) <br/><br/>Windows Server での Microsoft Defender ウイルス対策 の再インストールまたは再有効化に関する問題が発生した場合は、「トラブルシューティング: Microsoft Defender ウイルス対策 が Windows Server でアンインストールされる[」を参照](switch-to-mde-troubleshooting.md#microsoft-defender-antivirus-is-getting-uninstalled-on-windows-server)してください。|
 
 > [!TIP]
 > Microsoft 以外のウイルス対策保護Microsoft Defender ウイルス対策の状態の詳細については、「互換性」[をMicrosoft Defender ウイルス対策してください](microsoft-defender-antivirus-compatibility.md)。
@@ -81,7 +81,7 @@ Defender for Endpoint に切り替える場合は、一定の手順を実行し�
 > [!TIP]
 > このレジストリ キーの詳細については [、「DisableAntiSpyware」を参照してください](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware)。
 
-### <a name="reinstall-microsoft-defender-antivirus-on-windows-server-2016"></a>インストール時Microsoft Defender ウイルス対策再インストールWindows Server 2016
+### <a name="re-enable-microsoft-defender-antivirus-on-windows-server-2016"></a>サーバー上でMicrosoft Defender ウイルス対策をWindows Server 2016
 
 マルウェア保護ユーティリティを[使用してCommand-Lineを](command-line-arguments-microsoft-defender-antivirus.md)有効にしMicrosoft Defender ウイルス対策をWindows Server 2016。
 
@@ -92,7 +92,7 @@ Defender for Endpoint に切り替える場合は、一定の手順を実行し�
 3. デバイスを再起動します。
 
 
-### <a name="reinstall-microsoft-defender-antivirus-on-windows-server-version-1803-or-later"></a>サーバー Microsoft Defender ウイルス対策バージョン 1803 以降Windowsに再インストールする
+### <a name="re-enable-microsoft-defender-antivirus-on-windows-server-version-1803-or-later"></a>バージョン 1803 以降Microsoft Defender ウイルス対策サーバー Windows再び有効にする
 
 > [!IMPORTANT]
 > 次の手順は、次のバージョンのデバイスを実行しているエンドポイントまたはデバイスにのみ適用Windows。

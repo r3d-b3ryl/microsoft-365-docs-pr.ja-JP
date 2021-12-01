@@ -22,12 +22,12 @@ ms.custom: migrationguides
 ms.date: 11/30/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: bbde6e79f35bf69b29d589186054bc072124d1ea
-ms.sourcegitcommit: aacf895ba20ecec4312a447ff4432e257e41edee
+ms.openlocfilehash: b16cd5c9642c017c7354b98c5445c2614bde10bf
+ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61234533"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61240806"
 ---
 # <a name="troubleshooting-issues-when-switching-to-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint に切り替える際の問題のトラブルシューティング
 
@@ -38,21 +38,21 @@ ms.locfileid: "61234533"
 
 この記事では、Microsoft 以外のエンドポイント保護ソリューションから Microsoft Defender for Endpoint に切り替える際に問題が発生しているセキュリティ管理者のトラブルシューティング情報を提供します。
 
-## <a name="microsoft-defender-antivirus-is-getting-uninstalled-on-windows-server"></a>Microsoft Defender ウイルス対策が Windows Server でアンインストールされる
+## <a name="microsoft-defender-antivirus-is-getting-uninstalled-on-windows-server"></a>Microsoft Defender ウイルス対策サーバーでアンインストールされるWindows
 
-Defender for Endpoint に切り替える場合は、アクティブ モードで Microsoft 以外のウイルス対策/マルウェア対策保護から始まります。 セットアップ プロセスの一環として、パッシブ モードで Microsoft Defender ウイルス対策を構成します。 場合によっては、Microsoft 以外のウイルス対策/マルウェア対策ソリューションによって、Microsoft Defender ウイルス対策が Windows Server で実行されていないことがあります。 実際には、Microsoft Defender ウイルス対策が Windows Server から削除されたと見なされる可能性があります。
+Defender for Endpoint に切り替える場合は、アクティブ モードで Microsoft 以外のウイルス対策/マルウェア対策保護から始まります。 セットアップ プロセスの一環として、パッシブ モードMicrosoft Defender ウイルス対策構成します。 Microsoft 以外のウイルス対策/マルウェア対策ソリューションによって、Microsoft Defender ウイルス対策サーバーで実行Windows場合があります。 実際には、サーバーから削除Microsoft Defender ウイルス対策されているWindowsがあります。
 
 この問題を解決するには、次の手順を実行します。
 
 1. [DisableAntiSpyware レジストリ キーを false に設定します](#set-the-disableantispyware-registry-key-to-false)。
 2. [除外リストに Microsoft Defender for Endpoint を追加します](#add-microsoft-defender-for-endpoint-to-the-exclusion-list)。
-3. [Microsoft Defender ウイルス対策をパッシブ モードに手動で設定します](#set-microsoft-defender-antivirus-to-passive-mode-manually)。
+3. [手動でMicrosoft Defender ウイルス対策パッシブ モードに設定します](#set-microsoft-defender-antivirus-to-passive-mode-manually)。
 
 ### <a name="set-the-disableantispyware-registry-key-to-false"></a>DisableAntiSpyware レジストリ キーを false に設定する
 
-[DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware)レジストリ キーは、Microsoft Defender Antivirus を無効にし、McAfee、Symantec などの別のウイルス対策製品を展開するために、過去に使用されています。 **一般に、Windows デバイスと** エンドポイントにこのレジストリ キーを持つ必要があります。ただし、構成 *済みの* 場合は、その値を false `DisableAntiSpyware` に設定する方法を次に示します。
+[DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware)レジストリ キーは、Microsoft Defender ウイルス対策 を無効にし、McAfee、Symantec などの別のウイルス対策製品を展開するために、過去に使用されています。 **一般に、Windows** デバイスとエンドポイントにこのレジストリ キーを持つ必要はありません。ただし、構成している場合は、その値を false に設定する方法を `DisableAntiSpyware` 次に示します。
 
-1. Windows Server デバイスで、[レジストリ エディター] を開きます。
+1. サーバー デバイスWindowsレジストリ エディターを開きます。
 
 2. `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender` に移動します。
 
@@ -81,11 +81,11 @@ Defender for Endpoint の特定の除外は、既存の Microsoft 以外のエ�
 
 `C:\Program Files\Windows Defender Advanced Threat Protection\SenseCM.exe`
 
-### <a name="set-microsoft-defender-antivirus-to-passive-mode-manually"></a>Microsoft Defender ウイルス対策をパッシブ モードに手動で設定する
+### <a name="set-microsoft-defender-antivirus-to-passive-mode-manually"></a>パッシブ モードMicrosoft Defender ウイルス対策手動で設定する
 
-Windows Server 2019、Windows Server バージョン 1803 以降、Windows Server 2016、または Windows Server 2012 R2 では、Microsoft Defender ウイルス対策をパッシブ モードに手動で設定する必要があります。 このアクションは、サーバーに複数のウイルス対策製品がインストールされている場合に発生する問題を防ぐのに役立ちます。 PowerShell、グループ ポリシー、またはレジストリ キーを使用して Microsoft Defender ウイルス対策をパッシブ モードに設定することができます。
+Windows Server 2019、Windows Server バージョン 1803 以降、Windows Server 2016、または Windows Server 2012 R2 では、Microsoft Defender ウイルス対策 をパッシブ モードに手動で設定する必要があります。 このアクションは、サーバーに複数のウイルス対策製品がインストールされている場合に発生する問題を防ぐのに役立ちます。 PowerShell、グループ ポリシー、またはレジストリ キーを使用して Microsoft Defender ウイルス対策をパッシブ モードに設定することができます。
 
-Microsoft Defender ウイルス対策をパッシブ モードに設定するには、次のレジストリ キーを設定します。
+次のレジストリ Microsoft Defender ウイルス対策をパッシブ モードに設定できます。
 
 パス: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
 
@@ -96,13 +96,13 @@ Microsoft Defender ウイルス対策をパッシブ モードに設定するに
 値: `1`
 
 > [!NOTE]
-> Windows Server 2016 および Windows Server 2012 R2 を実行しているエンドポイントでパッシブ モードが動作するには、オンボード Windows サーバーの指示に従って、これらのエンドポイントをオンボードする [必要があります](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)。
+> Windows Server 2016 および Windows Server 2012 R2 を実行しているエンドポイントでパッシブ モードが動作するには、オンボード Windows サーバーの指示に従って、これらのエンドポイント[をオンボードする必要があります](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)。
 
-詳細については [、「Microsoft Defender Antivirus on Windows Server」を参照してください](microsoft-defender-antivirus-on-windows-server.md)。
+詳細については、「Microsoft Defender ウイルス対策[サーバー Windows」 を参照してください](microsoft-defender-antivirus-on-windows-server.md)。
 
-## <a name="i-am-having-trouble-reinstalling-microsoft-defender-antivirus-on-windows-server-2016"></a>Windows Server 2016 での Microsoft Defender ウイルス対策の再インストールで問題が発生しました
+## <a name="i-am-having-trouble-re-enabling-microsoft-defender-antivirus-on-windows-server-2016"></a>デバイスで再び有効にするMicrosoft Defender ウイルス対策問題Windows Server 2016
 
-Windows Server 2016 で Microsoft 以外のウイルス対策/マルウェア対策ソリューションを使用している場合、既存のソリューションで Microsoft Defender Antivirus を無効またはアンインストールする必要がある可能性があります。 マルウェア保護ユーティリティを[ 使用](command-line-arguments-microsoft-defender-antivirus.md) Command-Line Windows Server 2016 で Microsoft Defender ウイルス対策を再び有効にできます。
+Windows Server 2016 で Microsoft 以外のウイルス対策/マルウェア対策ソリューションを使用している場合、既存のソリューションでは、Microsoft Defender ウイルス対策またはアンインストールする必要がある可能性があります。 マルウェア保護ユーティリティを[使用してCommand-Lineを](command-line-arguments-microsoft-defender-antivirus.md)有効にしMicrosoft Defender ウイルス対策をWindows Server 2016。
 
 1. サーバーのローカル管理者として、コマンド プロンプトを開きます。
 
@@ -114,4 +114,4 @@ Windows Server 2016 で Microsoft 以外のウイルス対策/マルウェア対
 
 - [Microsoft Defender ウイルス対策の他のセキュリティ製品との互換性](microsoft-defender-antivirus-compatibility.md)
 
-- [Defender for Endpoint の Windows デバイスのオンボーディング ツールとメソッド](configure-endpoints.md) 
+- [Defender for Endpoint のデバイスWindowsオンボーディング ツールとメソッド](configure-endpoints.md) 

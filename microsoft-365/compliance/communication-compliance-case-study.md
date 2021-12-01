@@ -22,12 +22,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 3d0a905137ae1f2a55bddb0ae3d9691e68d69bac
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 5d2fee0e8714e2cff51a2c763caa659bf226adff
+ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60756255"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61240986"
 ---
 # <a name="case-study---contoso-quickly-configures-an-inappropriate-content-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>ケース スタディ - Contoso は、コミュニケーションの管理、管理、およびMicrosoft Teams、Exchangeに不適切Yammer構成します。
 
@@ -119,7 +119,7 @@ Contoso 社は、コミュニケーション *コンプライアンス役割グ�
 
 ### <a name="starting-from-the-microsoft-365-compliance-center"></a>最初のMicrosoft 365 コンプライアンス センター
 
-Contoso IT 管理者とコンプライアンス スペシャリストが通信コンプライアンス ソリューションにアクセスするためのもう 1 つの簡単な方法は、管理者に直接サインイン<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター。</a> サインイン後にすべてのコンプライアンス ソリューションを表示し、開始するには、**すべてを表示** を選択して、**通信コンプライアンス** ソリューションを選択すれば開始します。
+Contoso IT 管理者とコンプライアンス スペシャリストが通信コンプライアンス ソリューションにアクセスするためのもう 1 つの簡単な方法は、管理者に直接サインイン[Microsoft 365 コンプライアンス センター。](https://compliance.microsoft.com) サインイン後にすべてのコンプライアンス ソリューションを表示し、開始するには、**すべてを表示** を選択して、**通信コンプライアンス** ソリューションを選択すれば開始します。
 
 ![コンプライアンス センター。](../media/communication-compliance-case-center.png)
 
@@ -131,7 +131,7 @@ Contoso の IT 管理者とコンプライアンス スペシャリストは、�
 
 ### <a name="starting-from-the-microsoft-365-admin-center"></a>最初のMicrosoft 365 管理センター
 
-Microsoft 365 管理センター から開始するときに通信コンプライアンスにアクセスするには、Contoso IT 管理者とコンプライアンス スペシャリストが Microsoft 365 管理センター にサインインします[( https://admin.microsoft.com) ](https://admin.microsoft.com)および[Microsoft 365 コンプライアンス センター]<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">に移動します</a>。
+Microsoft 365 管理センター から開始するときに通信コンプライアンスにアクセスするには、Contoso IT 管理者とコンプライアンス スペシャリストが Microsoft 365 管理センター にサインインします[( https://admin.microsoft.com) ](https://admin.microsoft.com)および[Microsoft 365 コンプライアンス センター [](https://compliance.microsoft.com)
 
 ![通信コンプライアンス リンク。](../media/communication-compliance-case-compliance-link.png)
 
@@ -191,7 +191,7 @@ Contoso コンプライアンス スペシャリストは、不適切なコン�
 
     ![通信コンプライアンスの不適切なコンテンツ ウィザード。](../media/communication-compliance-case-wizard.png)
 
-## <a name="step-4-investigate-and-remediate-alerts"></a>手順 4: アラートの調査と修復
+## <a name="step-4-investigate-and-remediate-alerts"></a>手順 4 : 警告の調査および修復
 
 不適切なコンテンツを監視する通信コンプライアンス ポリシーが構成されたので、Contoso コンプライアンス スペシャリストの次の手順は、ポリシーによって生成されたアラートを調査して修復します。 ポリシーによって、すべての通信ソース チャネルの通信を完全に処理し、警告が **通知ダッシュボード** に表示されるようになるには、最大で24時間かかります。
 

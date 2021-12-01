@@ -16,15 +16,16 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkDEFENDER
 description: 管理者は、ユーザー (EOP) 内のすべてのユーザーの検疫済みメッセージを表示および管理Exchange Online Protectionできます。 Microsoft Defender for Office 365組織の管理者は、SharePoint Online、OneDrive for Business、およびMicrosoft Teams。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5b3192c7531006b16d238899fe6ccbaa5390d815
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: b2600599dfd6d638736e29fef198913d32fcd60e
+ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60663669"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61240998"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>EOP の管理者として検疫済みメッセージとファイルを管理する
 
@@ -43,16 +44,16 @@ Exchange Online のメールボックスを使用している Microsoft 365 組�
 
 microsoft Defender for Office 365 の組織の管理者は、SharePoint、OneDrive、および Microsoft Teams の セーフ 添付ファイルによって検疫されたファイルを[管理することもできます](mdo-for-spo-odb-and-teams.md)。
 
-検疫済みメッセージは、Microsoft 365 Defender ポータルまたは PowerShell (Exchange Online PowerShell for Microsoft 365 のメールボックスを持つ Exchange Online 組織、Exchange Online メールボックスのない組織のスタンドアロン EOP PowerShell) で表示および管理します。
+検疫済みメッセージは、Microsoft 365 Defender ポータルまたは PowerShell (Exchange Online のメールボックスを持つ Microsoft 365 組織の Exchange Online PowerShell、組織のスタンドアロン EOP PowerShell を表示および管理します。Exchange Onlineメールボックス)。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- Microsoft 365 Defender ポータルを開くには、<https://security.microsoft.com> にアクセスします。 **検疫ページ** を直接開くには、<https://security.microsoft.com/quarantine>を使用します。
+- ポータルを開Microsoft 365 Defenderに移動します <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a> 。 **検疫ページ** を直接開くには、<https://security.microsoft.com/quarantine>を使用します。
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
 - この記事の手順を実行する際には、あらかじめ **Exchange Online** でアクセス許可を割り当てる必要があります。
-  - すべてのユーザーの検疫済みメッセージに対してアクションを実行するには、組織の管理、セキュリティ管理者、または検疫管理者の役割グループのメンバー **である** <sup>\*</sup> 必要があります。
+  - すべてのユーザーの検疫済みメッセージに対してアクションを実行するには、組織の管理、セキュリティ管理者、または検疫管理者の役割グループのメンバー **である** <sup>\*</sup> 必要があります。 Microsoft にメッセージを送信するには、セキュリティ管理者役割グループの **メンバーである** 必要があります。
   - すべてのユーザーの検疫済みメッセージへの読み取り専用アクセスには、グローバル リーダーまたはセキュリティリーダーの役割グループの **メンバーである** 必要があります。
 
   詳細については、「[Exchange Online のアクセス許可](/exchange/permissions-exo/permissions-exo)」を参照してください。
@@ -69,7 +70,7 @@ microsoft Defender for Office 365 の組織の管理者は、SharePoint、OneDri
 
 ### <a name="view-quarantined-email"></a>検疫済みメールの表示
 
-1. Microsoft 365 Defender ポータルで、**[メールと共同作業]** \> **[レビュー]** \> **[検疫]** に移動します。
+1. [メール]<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">ポータルMicrosoft 365 Defender[</a>メール]**に移動し、[&検疫** \> **] に** \> **移動します**。
 2. [検疫 **] ページ** で、[電子メール] **タブが** 選択されているのを確認します。
 
 3. 使用できる列見出しをクリックすると、結果を並べ替えることができます。 表示列を変更するには、[**列のカスタマイズ**] をクリックします。 既定値にはアスタリスク (<sup>\*</sup>) が付いています。
@@ -191,6 +192,7 @@ microsoft Defender for Office 365 の組織の管理者は、SharePoint、OneDri
 
   - 同じ受信者に対してメッセージを 2 回以上リリースできない。
   - メッセージを受信していない受信者だけが、潜在的な受信者の一覧に表示されます。
+  - セキュリティ管理者 **役割グループの** メンバーだけが、メッセージを Microsoft に送信して検出 (誤検知 **)** を改善し、このオプションのようなメッセージを許可するを表示および **使用** できます。 
 
 - ![メールアイコンを共有します。](../../media/m365-cc-sc-share-email-icon.png) **メールの** 共有 : 表示されるフライアウトで、メッセージのコピーを受信する 1 つ以上の受信者を追加します。 完了したら、[共有] を **クリックします**。
 
@@ -279,7 +281,7 @@ Defender for Office 365 の組織では、管理者は セーフ、OneDrive、�
 
 ### <a name="view-quarantined-files"></a>検疫済みファイルの表示
 
-1. Microsoft 365 Defender ポータルで、**[メールと共同作業]** \> **[レビュー]** \> **[検疫]** に移動します。
+1. [メール]<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">ポータルMicrosoft 365 Defender[</a>メール]**に移動し、[&検疫** \> **] に** \> **移動します**。
 2. [検疫 **] ページで**、[ファイル]**タブ****([メール]** が既定のタブ) を選択します。
 
 3. 使用できる列見出しをクリックすると、結果を並べ替えることができます。 [列 **のカスタマイズ]** をクリックして、表示される列を変更します。 既定の列には、アスタリスク ( ) が付いています <sup>\*</sup> 。

@@ -21,12 +21,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: ee9ddb26736ba52b5ddade576d7587f5883931ab
-ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
+ms.openlocfilehash: 423fe7b0c608aae668706cc72e578271f19d2386
+ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61072703"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61240842"
 ---
 # <a name="get-started-with-communication-compliance"></a>コミュニケーション コンプライアンスの使用を開始する
 
@@ -99,7 +99,7 @@ ms.locfileid: "61072703"
 
 このオプションを使用して、ユーザーを特定のロール グループに割り当てて、組織内のさまざまなユーザー間のコミュニケーション コンプライアンス アクセスと責任をセグメント化します。
 
-1. 組織のMicrosoft 365 コンプライアンス センターアカウントの資格情報を使用して、Microsoft 365にサインインし、[アクセス許可]<a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**に移動します**</a>。
+1. 組織の管理者 [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com)資格情報を使用して、Microsoft 365にサインインし、[アクセス許可]**に移動します** </a> 。
 
 2. Office 365 でロールの表示と管理へのリンクを選択します。
 
@@ -123,7 +123,7 @@ ms.locfileid: "61072703"
 
 コミュニケーション コンプライアンスでは、監査ログを使用してアラートを表示し、レビュー担当者が実行した修復アクションを追跡する必要があります。 監査ログは、定義済みの組織ポリシーに関連付けられているすべてのアクティビティの概要です。また、コミュニケーション コンプライアンス ポリシーに変更があった場合はいつでもその概要を示します。
 
-監査は、既定で組織Microsoft 365有効になっています。 組織によっては、特定の理由で監査を無効にしている場合があります。 組織の監査が無効になっている場合は、別の管理者が無効にしている可能性があります。 この手順を完了するときに、監査を有効に戻すのが問題ない場合は、確認することをお勧めします。
+Microsoft 365 の組織では、監査が既定で有効になっています。 組織によっては、特定の理由で監査を無効にしている場合があります。 組織の監査が無効になっている場合は、別の管理者が無効にしている可能性があります。 この手順を完了する場合は、監査を再びオンにしても問題ないか確認することをお勧めします。
 
 監査を有効にする詳しい手順については、「[監査ログ検索を有効または無効する](turn-audit-log-search-on-or-off.md)」を参照してください。 監査を有効にすると、監査ログの準備中で、準備が完了してから数時間で検索を実行できるというメッセージが表示されます。 このアクションを行う必要があるのは 1 回だけです。 監査ログの使用の詳細については、「[監査ログを検索する](search-the-audit-log-in-security-and-compliance.md)」を参照してください。
 
@@ -193,7 +193,7 @@ Exchange オンプレミス展開または外部メール プロバイダーを�
 >[!TIP]  
 >新しい通信コンプライアンス ポリシーの設定とアラートの修復に関する詳細なチュートリアルを参照してください。 この [15](communication-compliance-plan.md#creating-a-communication-compliance-policy-walkthrough) 分間のビデオを参照して、不適切なメッセージの検出、潜在的な違反の調査、コンプライアンスの問題の修復に関するコミュニケーション コンプライアンス ポリシーがどのように役立つのかのデモンストレーションをご覧ください。
 
-1. 組織の管理者<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>資格情報を使用して、アカウントにサインインMicrosoft 365します。
+1. 組織の管理者[Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com)資格情報を使用して、アカウントにサインインMicrosoft 365します。
 
 2. Microsoft 365 コンプライアンス センターで、**[コミュニケーション コンプライアンス]** を選択します。
 
@@ -248,7 +248,7 @@ Exchange オンプレミス展開または外部メール プロバイダーを�
 
 ポリシーの一致を調査し、メッセージに対してアクションを実行するときに、表示されるユーザー名の匿名化を有効にすることもできます。
 
-1. 組織の管理者<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>資格情報を使用して、アカウントにサインインMicrosoft 365します。
+1. 組織の管理者[Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com)資格情報を使用して、アカウントにサインインMicrosoft 365します。
 
 2. Microsoft 365 コンプライアンス センターで、**[コミュニケーション コンプライアンス]** に移動します。
 

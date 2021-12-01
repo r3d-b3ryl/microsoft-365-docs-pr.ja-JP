@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 7f3e87e7c804793603ac4b5af464c052abcc857e
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 447628d7ff9014606c59a11b81f3846540d54665
+ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786940"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241238"
 ---
 # <a name="investigate-insider-risk-management-activities"></a>インサイダーリスク管理活動の調査
 
@@ -104,7 +104,7 @@ ms.locfileid: "60786940"
 
 インサイダー リスク アラートを却下するには、次の手順を実行します。
 
-1. [警告] <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>[Insider リスク管理] に **移動し、[** アラート] タブ **を選択** します。
+1. [警告] [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com)[Insider リスク管理] に **移動し、[** アラート] タブ **を選択** します。
 2. [アラート **] ダッシュボードで**、却下する [レビューの必要] 状態のアラート (またはアラート) を選択します。
 3. [アラート] コマンド バーで、[アラートの却下] **を選択します**。
 4. [アラートの **詳細を閉** じます] ウィンドウで、選択したアラートに関連付けられているユーザーとポリシーの詳細を確認できます。
@@ -114,7 +114,7 @@ ms.locfileid: "60786940"
 
 インサイダー リスク アラートをトリアージするには、次の手順を実行します。
 
-1. [警告] <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>[Insider リスク管理] に **移動し、[** アラート] タブ **を選択** します。
+1. [警告] [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com)[Insider リスク管理] に **移動し、[** アラート] タブ **を選択** します。
 2. [アラート **] ダッシュボードで**、トリアージするアラートを選択します。
 3. [ **アラートの詳細** ] ページで、アラートに関する情報を確認し、アラートを確認して新しいケースを作成したり、アラートを確認して既存のケースに追加したり、アラートを閉じすることができます。 また、このページには、アラートの現在の状態とアラート リスクの重大度レベル (高、中、低) も含まれています。 アラートがトリアージされていない場合、重大度レベルは時間の間に増加または減少する可能性があります。
 
@@ -154,7 +154,7 @@ ms.locfileid: "60786940"
 
 アクティビティ エクスプローラーを **使用するには、** 次の手順を実行します。
 
-1. [警告] <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>[Insider リスク管理] に **移動し、[** アラート] タブ **を選択** します。
+1. [警告] [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com)[Insider リスク管理] に **移動し、[** アラート] タブ **を選択** します。
 2. [アラート **] ダッシュボードで**、トリアージするアラートを選択します。
 3. [アラートの **詳細] ウィンドウで、[** 展開ビュー **を開く] を選択します**。
 4. 選択したアラートのページで、[アクティビティ エクスプローラー] **タブを選択** します。
@@ -172,7 +172,7 @@ ms.locfileid: "60786940"
 
 アラートがレビューされ、トリアージされる際に、新しいケースを作成してリスク アクティビティをさらに調査できます。 アラートのケースを作成するには、次の手順を実行します。
 
-1. [警告] <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>[Insider リスク管理] に **移動し、[** アラート] タブ **を選択** します。
+1. [警告] [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com)[Insider リスク管理] に **移動し、[** アラート] タブ **を選択** します。
 2. [アラート **] ダッシュボードで**、確認するアラートを選択し、新しいケースを作成します。
 3. [アラートの **詳細] ウィンドウで、[** アクション] を  >  **選択して&を作成します**。
 4. [アラートの **確認とインサイ** ダー リスク ケースの作成] ダイアログで、ケースの名前を入力し、投稿者として追加するユーザーを選択し、該当するコメントを追加します。 コメントはケースノートとしてケースに自動的に追加されます。
