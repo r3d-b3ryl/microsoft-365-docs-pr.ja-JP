@@ -33,7 +33,7 @@
       items:
         - name: 概要
           href: manage-devices-with-intune-overview.md
-        - name: 手順 1. レベル 2 のアプリ保護ポリシーを実装する
+        - name: 手順 1. アプリ保護ポリシーを実装する
           href: manage-devices-with-intune-app-protection.md
         - name: 手順 2。 デバイスを管理に登録する
           href: manage-devices-with-intune-enroll.md
@@ -317,7 +317,7 @@
         - name: Microsoft Defender for Endpoint を展開する
           href: /microsoft-365/security/defender-endpoint/deployment-phases.md
         - name: Microsoft 以外のエンドポイント保護から Microsoft Defender for Endpoint に切り替える
-          href: ../security/defender-endpoint/switch-to-microsoft-defender-migration.md
+          href: ../security/defender-endpoint/switch-to-mde-overview.md
         - name: Microsoft 以外の保護ツールから Microsoft Defender for Office 365 に切り替える
           href: ../security/office-365-security/migrate-to-defender-for-office-365.md
         - name: Microsoft 365 の優先アカウントのセキュリティに関する推奨事項

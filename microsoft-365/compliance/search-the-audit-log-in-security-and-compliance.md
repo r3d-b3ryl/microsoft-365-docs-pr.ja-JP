@@ -21,12 +21,12 @@ description: Microsoft 365 コンプライアンス センターを使用して�
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 2cd42f5443506a51539638d4ddaa7ab2bd19ebcd
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: e49cae704e9ee62801af7423ba10b45e0b13574d
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60646957"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61220970"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>コンプライアンス センターで監査ログを検索する
 
@@ -970,6 +970,13 @@ Forms アクティビティが共同作成者または匿名のレスポンダ�
 |所属組織内のユーザーの共同作業を有効にしました<sup>*</sup>|EnableSameOrgCollaboration|フォーム所有者が、現在の組織のユーザーにフォームの表示および編集を許可する設定をオンにしている。|
 |特定のユーザーの共同作業を有効にしました<sup>*</sup>|EnableSpecificCollaboaration|フォーム所有者が、現在の組織の特定のユーザーまたは特定のグループのみフォームへの表示および編集を許可する設定をオンにしている。|
 |Excel ブックに接続しました<sup>*</sup>|ConnectToExcelWorkbook|フォームを Excel ブックに接続しました。 <br><br>プロパティ ExcelWorkbookLink:string は、関連する現在のフォームの Excel ブック ID を示します。|
+|コレクションの作成|CollectionCreated|フォーム所有者がコレクションを作成しました。|
+|コレクションの更新|CollectionUpdated|フォーム所有者がコレクション プロパティを更新しました。|
+|ごみ箱からのコレクションの削除|CollectionHardDeleted|フォーム所有者がごみ箱からコレクションを物理的に削除しました。|
+|ごみ箱へのコレクションの移動|CollectionSoftDeleted|フォーム所有者がコレクションをごみ箱に移動しました。|
+|コレクションの名前の変更|CollectionRenamed|フォーム所有者がコレクションの名前を変更しました。|
+|フォームへのコレクションの移動|MovedFormIntoCollection|フォームの所有者がフォームをコレクションに移動しました。|
+|フォームをコレクションから移動しました|MovedFormOutofCollection|フォームの所有者がフォームをコレクションから移動しました。|
 ||||
 
 #### <a name="forms-activities-performed-by-coauthors-and-anonymous-responders"></a>共同作成者および匿名のレスポンダーによって実行される Forms アクティビティ
