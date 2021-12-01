@@ -33,7 +33,7 @@
 #### [Microsoft エンドポイント マネージャーを使用したオンボーディング](onboarding-endpoint-manager.md)
 
 ## [移行ガイド](migration-guides.md)
-### [移行の概要](switch-to-mde-overview.md)
+### [Defender for Endpoint に移動する](switch-to-mde-overview.md)
 #### [フェーズ 1: 準備](switch-to-mde-phase-1.md)
 #### [フェーズ 2: セットアップ](switch-to-mde-phase-2.md)
 #### [フェーズ 3: オンボード](switch-to-mde-phase-3.md)
