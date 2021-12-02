@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 152cce7e3e46771cd0869f898c6235ea11b9ebda
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: bfea41b11a441b10fda3c9c6a4ac7ce66bf718b6
+ms.sourcegitcommit: c2e8a4febb019b398d549a72c489f012cfbc0b32
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61170550"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61265194"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender for Endpoint on Mac の新機能
 
@@ -32,6 +32,11 @@ ms.locfileid: "61170550"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+## <a name="1014925-20121092149250"></a>101.49.25 (20.121092.14925.0)
+
+- コマンド ライン ツールに新しいスイッチを追加し、オンデマンド スキャン中にアーカイブをスキャンするかどうかを制御しました。 これは、 を使用して構成できます `mdatp config scan-archives --value [enabled/disabled]` 。 既定では、 に設定されています `enabled` 。
+- バグ修正
 
 ## <a name="1014727-20121082147270"></a>101.47.27 (20.121082.14727.0)
 
