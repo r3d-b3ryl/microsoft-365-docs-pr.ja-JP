@@ -22,12 +22,12 @@ description: Microsoft 情報保護 (MIP) の秘密度ラベルを使用して�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 2614512499c9ded8952ab5a071e7d1cf56d1d9ec
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: e3c92ad9f9fc0dd1f69e11ebcede83c4d8224055
+ms.sourcegitcommit: cd3f5e3b7fea37fdcd8c811d01afd60ea68301ca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61109949"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61254479"
 ---
 # <a name="learn-about-sensitivity-labels"></a>秘密度ラベルの詳細
 
@@ -118,7 +118,7 @@ Microsoft Information Protection ソリューションの秘密度ラベルを�
     
     ![必要なラベルを割り当てるかを確認するダイアログ。](../media/Sensitivity-label-Prompt-for-required-label.png)
     
-    機密ラベルを作成または編集するときの **ファイルとメールの自動ラベル** の設定の詳細については、「Office アプリの[コンテンツに機密ラベルを自動的に適用する](apply-sensitivity-label-automatically.md)」および「[Azure Purview でラベルを付ける](/azure/purview/create-sensitivity-label)」を参照してください。
+    機密ラベルを作成または編集するときの **ファイルとメールの自動ラベル** の設定の詳細については、「Office アプリの [コンテンツに機密ラベルを自動的に適用する](apply-sensitivity-label-automatically.md)」および「[Azure Purview でラベルを付ける](/azure/purview/create-sensitivity-label)」を参照してください。
 
 ### <a name="label-scopes"></a>ラベル スコープ
 
@@ -183,7 +183,7 @@ Microsoft Information Protection ソリューションの秘密度ラベルを�
 - ラベル付けされていないドキュメントとメール、新しいコンテナー ([Microsoft Teams、Microsoft 365 グループおよび SharePoint サイトの秘密度ラベルを有効](sensitivity-labels-teams-groups-sites.md)にした場合)、の **既定のラベルを指定します**。また、[Power BI コンテンツ](/power-bi/admin/service-security-sensitivity-label-default-label-policy)に既定のラベルをしてします。 4 種類のアイテムすべてに同じラベルを指定することも、異なるラベルを指定することもできます。 ユーザーは、適用された既定の秘密度ラベルを、コンテンツまたはコンテナーの秘密度に合わせて変更できます。
     
     > [!NOTE]
-    > 組み込みのラベルを使用する Office アプリのロールアウト: この設定では、ユーザーが開いた既存のドキュメントと新しいドキュメントがサポートされるようになりました。 この動作の変更は、Azure Information Protection の統合ラベル付けクライアントとのパリティを提供します。 アプリごとのロールアウトと最小バージョンの詳細については、Word、Excel、PowerPoint の [機能表](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) を参照してください。
+    > 組み込みのラベルを使用する Office アプリのプレビュー: この設定では、ユーザーが開いた既存のドキュメントと新しいドキュメントがサポートされるようになりました。 この動作の変更は、Azure Information Protection の統合ラベル付けクライアントとのパリティを提供します。 アプリごとのロールアウトと最小バージョンの詳細については、Word、Excel、PowerPoint の [機能表](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) を参照してください。
     
     既定ラベル使用して、すべてのコンテンツに適用する保護設定の基本レベルを設定することを検討してください。 ただし、ユーザーのとレーニングや他の制御を実施しない場合、この設定は不正確なラベル付けにつながる可能性もあります。 通常、ドキュメントの既定のラベルとして暗号化を適用するラベルを選択することはお勧めできません。 たとえば、多くの組織は、暗号化をサポートするアプリを所有していないか、認証可能なアカウントを使用していない可能性がある外部ユーザーとドキュメントを送信して共有する必要があります。 このシナリオの詳細については、「[Sharing encrypted documents with external users (外部ユーザーと暗号化されたドキュメントを共有する)](sensitivity-labels-office-apps.md#sharing-encrypted-documents-with-external-users)」を参照してください。
     

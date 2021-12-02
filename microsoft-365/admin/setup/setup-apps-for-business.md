@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Microsoft 365 Apps for business サブスクリプションのセットアップ方法について説明します。
-ms.openlocfilehash: e33bc36170200e5650b09bfcb51015ad301f4140
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2a21ba525fa743b8a9105e571717d80d4eb42258
+ms.sourcegitcommit: cd3f5e3b7fea37fdcd8c811d01afd60ea68301ca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60188735"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61254383"
 ---
 # <a name="set-up-microsoft-365-apps-for-business"></a>Microsoft 365 Apps for business をセットアップする
 
@@ -115,4 +115,55 @@ Microsoft 365 のツアーを見たり、すべての Office モバイル アプ
 
 ## <a name="add-a-custom-domain"></a>カスタム ドメインを追加する
 
-サインアップ中に .onmicrosoft ドメインを選択しました。 また、*contoso.com* のようなカスタム ドメインをアカウントに追加して、メールをカスタマイズすることもできます。 詳細については、「[ドメインを追加する](add-domain.md)」を参照してください。
+まだ行っていない場合は、*contoso.com* のようなカスタム ドメインをアカウントに追加して、メールをカスタマイズすることもできます。 詳細については、「[ドメインを追加する](add-domain.md)」を参照してください。
+
+## <a name="finish-setting-up"></a>セットアップを完了する
+
+以下の手順に従って、Outlook と OneDrive を設定します。
+
+### <a name="step-set-up-outlook-for-email"></a>手順: Outlook をメール用にセットアップする
+
+1. Windows の [スタート] メニューで、[Outlook] を検索し、選択します。
+
+    (Mac を使用している場合は、ツールバーから Outlook を開くか、または Finder を使用して Outlook を検索します)。
+
+    Outlook をインストールしたばかりの場合は、[ようこそ] ページで、[**次へ**] を選択します。
+
+2. [**ファイル**] \> [**情報**] \> [**アカウントの追加**] の順に選択します。
+
+3. Microsoft のメール アドレスを入力して、**[接続]** を選択します。
+
+## <a name="watch-set-up-outlook-for-email"></a>注目 : Outlook を電子メール用にセットアップして下さい。
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/9fe86884-8a83-42cc-bca9-61a12e6dad31?autoplay=false]
+  
+詳細については、「[メール用に Outlook をセットアップする](https://support.microsoft.com/office/f5bf0cd1-e1f3-4b0d-a022-ecab17efe86f)」を参照してください。
+  
+### <a name="import-email"></a>メールをインポートする
+
+別のメール アカウントで Outlook を使用していた場合は、以前のメール、予定表、連絡先を新しい Microsoft アカウントにインポートできます。
+  
+1. **古いメールをエクスポートする**
+
+    Outlook で、[**ファイル**] \> [**開く&amp;エクスポート**] \> [**インポート/エクスポート**] の順に選択します。
+
+    [**ファイルにエクスポート**] を選択し、手順に従って Outlook データ ファイル (.pst) およびすべてのサブフォルダーをエクスポートします。
+
+2. **古いメールをインポートする**
+
+    Outlook で、[**ファイル**] \> [**開く&amp;エクスポート**] \> [**インポート/エクスポート**] を再度選択します。
+
+    今度は、[**他のプログラムまたはファイルからのインポート**] を選択し、古いメールをエクスポートしたときに作成したバックアップ ファイルを手順に従ってインポートします。
+
+## <a name="watch-import-and-redirect-email"></a>注目 : 電子メールをインポートして再配置しましょう。
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/40f7df36-9e24-44e5-8791-e9ed0dd8fd21?autoplay=false]
+  
+詳細については、「[Outlook でメールをインポートする](https://support.microsoft.com/office/6a3771d4-4c1d-4a25-92a6-0b8e476335de)」を参照してください。
+
+また、Exchange 管理センターを使用して、すべてのユーザーのメールをインポートすることもできます。 詳細については、「[複数のメール アカウントを移行する](/Exchange/mailbox-migration/mailbox-migration)」を参照してください。
+
+## <a name="set-up-onedrive-for-business"></a>OneDrive for Business のセットアップ
+
+タスク バーで OneDrive クラウド アイコンを選択し、手順に従って新しい OneDrive for Business フォルダーにファイルを移動します。**[次へ]** を選択して、Microsoft Teams を設定します。
+

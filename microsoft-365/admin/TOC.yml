@@ -1,7 +1,7 @@
 - name: Microsoft 365 管理センターのヘルプ
   href: index.yml
   items:
-    - name: 概要
+    - name: 作業の開始
       items:
         - name: サインアップ
           href: admin-overview/sign-up-for-office-365.md
@@ -29,16 +29,16 @@
               href: ../admin/simplified-signup/user-invite-msa-nodomain-join.md
             - name: データを Microsoft 365 Business Standard サブスクリプションに移行する
               href: ../admin/simplified-signup/migrate-data-business-standard.md
-        - name: Microsoft 365 for business organization のセットアップ
+        - name: Microsoft Apps for business のセットアップ
+          items:
+            - name: Microsoft 365 Apps for business のサインアップ
+              href: setup/signup--apps-business.md
+            - name: Microsoft 365 Apps for business のセットアップ
+              href: setup/setup-apps-for-business.md
+        - name: Microsoft 365 Business Basic のセットアップ
           items:
             - name: Microsoft 365 Business Basic
               href: setup/setup-business-basic.md
-            - name: Microsoft 365 Business Standard
-              href: setup/setup-business-standard.md
-            - name: Microsoft 365 Business Premium
-              href: setup/business-set-up.md
-            - name: Microsoft 365 Apps for business
-              href: setup/setup-apps-for-business.md
         - name: セットアップのページとウィザードについて
           href: setup/o365-setup-wizard-and-setup-page.md
         - name: Windows 10 コンピューターをセキュリティで保護する

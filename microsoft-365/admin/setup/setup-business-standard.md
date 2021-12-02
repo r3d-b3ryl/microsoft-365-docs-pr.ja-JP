@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Microsoft 365 Business Standard を購入するときに、所有するドメインを使用するか、サインアップ時に購入するかを選択することができます。
-ms.openlocfilehash: 3144c61b0aa6f329fa4f0159cedbad21c2038169
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9893084ad351bd6d1195df9f066f3a540af5ded2
+ms.sourcegitcommit: cd3f5e3b7fea37fdcd8c811d01afd60ea68301ca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60169349"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61254443"
 ---
 # <a name="set-up-microsoft-365-business-standard-with-a-new-or-existing-domain"></a>新規ドメインまたは既存のドメインを使用して Microsoft 365 Business Standard を設定する
 
@@ -166,10 +166,18 @@ Microsoft 365 には、ビジネスに使用するための一般向け Web サ�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/4839abc6-9323-4cbf-a79d-2907235f9ebb]
 
-## <a name="related-content"></a>関連コンテンツ
+## <a name="invite-users-to-join-your-subscription-and-organization"></a>サブスクリプションと組織に参加するようにユーザーを招待する
+
+組織を設定したら、他のユーザーを Microsoft 365 ビジネス サブスクリプションに招待できます。 サブスクリプションのすべての機能にアクセスできます。
+
+[ユーザーをサブスクリプションに招待する](../simplified-signup/admin-invite-business-standard.md)
+
+以下の記事の手順に従って組織とサブスクリプションに参加できることをユーザーに知らせてください。
+
+- [メールの招待を受け入れる](../simplified-signup/user-invite-business-standard.md)
+
+- [Outlook、Yahoo、Gmail、またはその他のアカウントを使用して招待メールを受け入れる (ユーザー)](../simplified-signup/user-invite-msa-nodomain-join.md)
+
+## <a name="related-topics"></a>関連トピック
 
 [データを Microsoft 365 Business Standard サブスクリプションに移行する](../simplified-signup/migrate-data-business-standard.md)
-
-[Microsoft 365 Business Standard サブスクリプションにサインアップする](../simplified-signup/signup-business-standard.md)
-
-[Microsoft 365 Business Standard サブスクリプションへの招待を承諾する (ユーザー)](../simplified-signup/user-invite-business-standard.md)
