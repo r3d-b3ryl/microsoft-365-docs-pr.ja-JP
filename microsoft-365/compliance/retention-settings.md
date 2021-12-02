@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ポリシーまたは保持ラベル ポリシーで構成できる設定を理解して、必要なものを保持し、不要なものを取り除きます。
-ms.openlocfilehash: 475ed6226c5482a1b9256d38798b9cbbdd8be31e
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: ade850732a637356e4bb0d3b4de3ea8a8ac6c683
+ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110549"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61240818"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>保持ポリシーと保持ラベルの制限
 
@@ -218,7 +218,7 @@ Skype for Business を除き、既定では、選択した場所のすべての�
 
 **Exchange メール** の場所は、メールボックスのレベルで保持設定を適用することにより、ユーザーのメール、予定表、およびその他のメールボックス アイテムの保持をサポートします。共有メールボックスもサポートされています。
 
-リソース メールボックス、連絡先、および Microsoft 365 グループ メールボックスは、Exchange メールではサポートされていません。 Microsoft 365 グループ メールボックスの場合は、代わりに **Microsoft 365 グループ** の場所を選択します。
+リソース メールボックス、連絡先、および Microsoft 365 グループ メールボックスは、Exchange メールではサポートされていません。 Microsoft 365 グループ メールボックスの場合は、代わりに **Microsoft 365 グループ** の場所を選択します。 Exchange の場所では、最初は静的スコープに対してグループ メールボックスを選択できますが、アイテム保持ポリシーを保存しようとすると、"RemoteGroupMailbox" はこの場所の有効な選択ではないというエラーが表示されます。
 
 ポリシーの構成によっては、[非アクティブなメールボックス](create-and-manage-inactive-mailboxes.md)が含まれる場合と含まれない場合があります。
 
@@ -269,10 +269,10 @@ SharePoint サイトまたは OneDrive アカウントの場所を指定する�
 
 ### <a name="configuration-information-for-microsoft-365-groups"></a>Microsoft 365 グループの構成情報
 
-Microsoft 365 グループ (以前の Office 365 グループ) のコンテンツを保持または削除するには、**Microsoft 365 グループ** の場所を使用する必要があります。 この場所には、グループ メールボックスと SharePoint チーム サイトが含まれます。
+Microsoft 365 グループ (以前の Office 365 グループ) のコンテンツを保持または削除するには、**Microsoft 365 グループ** の場所を使用する必要があります。 アイテム保持ポリシーの場合、この場所にはグループ メールボックスと SharePoint チーム サイトが含まれます。 保持ラベルの場合、この場所には SharePoint チーム サイトのみが含まれます。
 
 > [!NOTE]
-> Microsoft 365 グループには Exchange メールボックスがありますが、**Exchange メール** の場所が含まれるアイテム保持ポリシーには、Microsoft 365 グループのメールボックスのコンテンツは含まれません。 
+> Microsoft 365 グループには Exchange メールボックスがありますが、**Exchange メール** の場所が含まれるアイテム保持ポリシーには、Microsoft 365 グループのメールボックスのコンテンツは含まれません。
 
 静的スコープを使う場合: 最初は **Exchange メール** の場所でグループ メールボックスを含めるか除外するかを指定できますが、保持ポリシーを保存しようとすると、Exchange の場所では "RemoteGroupMailbox" を選択できないというエラーが表示されます。
 
@@ -293,7 +293,7 @@ Microsoft 365 グループ (以前の Office 365 グループ) のコンテン�
 
 #### <a name="what-happens-if-a-microsoft-365-group-is-deleted-after-a-policy-is-applied"></a>ポリシーの適用後に Microsoft 365 グループが削除された場合の動作
 
-保持ポリシーを Microsoft 365 グループに適用した後、そのグループは Azure ActiveDirectory から削除されます。
+保持のポリシー (静的ポリシー スコープまたはアダプティブ) がMicrosoft 365 グループに適用され、そのグループがAzure Active Directoryから削除された場合:
 
 - グループに接続された SharePoint サイトは保持され、**Microsoft 365 グループ** の場所のアイテム保持ポリシーによって引き続き管理されます。 グループが削除される前にサイトにアクセスしていたユーザーは引き続きサイトにアクセスでき、新しいアクセス許可は SharePoint を介して管理する必要があります。
     

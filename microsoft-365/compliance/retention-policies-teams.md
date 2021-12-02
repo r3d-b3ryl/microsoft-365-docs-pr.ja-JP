@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Teams に適用されるアイテム保持ポリシーについて説明します。
-ms.openlocfilehash: f14e729858f3285f9cefc4d3db7da99d6c6f9e7d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0fadd66b3d1519dee0d96a24eaa74b05fef89133
+ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189323"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241082"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Microsoft Teams の保持の詳細
 
@@ -185,7 +185,7 @@ Skype for Business のチャットが Teams に届くと、Teams のチャット
 
 組織が主催する会議に外部ユーザーが含まれる場合:
 
-- 外部ユーザーがテナントのゲスト アカウントを使用して参加する場合、このユーザーには、組織の Teams のアイテム保持ポリシーの対象となるシャドウ メールボックスがあります。 会議からのメッセージはすべて、ユーザーのメールボックスとシャドウ メールボックスの両方に保存されます。 
+- 外部ユーザーがテナントのゲスト アカウントを使用して参加した場合、会議からのメッセージは、ユーザーのメールボックスとゲスト アカウントに付与されたシャドウ メールボックスの両方に格納されます。 ただし、アイテム保持ポリシーは、場所全体のアイテム保持ポリシー ("組織全体ポリシー" とも呼ばれます) に含まれていると報告できますが、シャドウ メールボックスではサポートされません。
 
 - 外部ユーザーが別の Microsoft 365 組織のアカウントを使用して参加した場合、そのユーザーのメッセージは別のテナントのメールボックスに保存されるため、削除できません。ただし、同じ会議の場合、アイテム保持ポリシーによってユーザーへのメッセージが削除される可能性があります。
 

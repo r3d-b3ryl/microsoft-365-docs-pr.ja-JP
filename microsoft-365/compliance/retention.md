@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なコンテンツを保持し不要なコンテンツを削除するのに役立つ、アイテム保持ポリシーと保持ラベルについて説明します。
-ms.openlocfilehash: 605858e433287e7d967d7d1908bc62c9255573c7
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 22b129d148a6e42a9b0f72b48f1e1188f4864d64
+ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110525"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241118"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの詳細
 
@@ -244,7 +244,7 @@ Microsoft 365 コンプライアンス センターから、[**データの分�
 |機能|アイテム保持ポリシー |保持ラベル|
 |:-----|:-----|:-----|:-----|
 |保持してから削除、保持のみ、削除のみを指定できる保持設定 |はい |はい |
-|サポートされるワークロード: <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 グループ <br />- Skype for Business <br />- Teams<br />- Yammer|<br /> はい <br /> はい <br /> はい <br /> はい <br /> はい <br /> はい <br /> はい | <br /> はい (パブリック フォルダーを除く) <br /> はい <br /> はい <br /> はい <br /> いいえ <br /> いいえ <br /> いいえ |
+|サポートされるワークロード: <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 グループ <br />- Skype for Business <br />- Teams<br />- Yammer|<br /> はい <br /> はい <br /> はい <br /> はい <br /> はい <br /> はい <br /> はい | <br /> はい (パブリック フォルダーを除く) <br /> はい <br /> はい <br /> はい <br /> 不要 <br /> 不要 <br /> いいえ |
 |保持の自動適用 | はい | はい |
 |条件に基づいて適用される保持 <br /> - 機密情報の種類、KQL クエリとキーワード、トレーニング可能な分類子、クラウド添付ファイル| いいえ | はい |
 |保持の手動適用 | いいえ | はい |
@@ -256,7 +256,7 @@ Microsoft 365 コンプライアンス センターから、[**データの分�
 |廃棄の証明 (最大 7 年間) | いいえ |はい、処分レビューを使用するか、アイテムがレコードとしてマークされている場合|
 |管理者アクティビティを監査する| はい | はい|
 |保持アクションの監査| いいえ | はい <sup>\*</sup> |
-|保持対象のアイテムの特定 <br /> - コンテンツ検索 <br /> - データ分類ページ、コンテンツ エクスプローラー、アクティビティ エクスプローラー | <br /> 不要 <br /> いいえ | <br /> はい <br /> はい|
+|保持対象のアイテムの特定 <br /> - コンテンツ検索 <br /> - データ分類ページ、コンテンツ エクスプローラー、アクティビティ エクスプローラー | <br /> 不要 <br /> 不要 | <br /> はい <br /> はい|
 
 **脚注:**
 
@@ -356,7 +356,7 @@ Microsoft 365 の場所に対して複数の保持ポリシーと、発行また
 
 4 つの原則について説明します。
   
-1. **削除よりも保持が優先されます。** コンテンツを保持するための保持設定がされている場合、コンテンツは完全には削除されません。 この原則により、コンプライアンス上の理由でコンテンツが確実に保持されますが、削除プロセスは引き続き開始され、ユーザー ビューと検索からコンテンツを削除できます。 たとえば、SharePoint の場合、ドキュメントは、元のフォルダーから Preservation Holds フォルダーに移動します。 ただし、完全な削除は一時停止されます。 コンテンツを保存する方法と場所の詳細については、ワークロードごとに次のリンクを使用してください。
+1. **削除よりも保持が優先されます。** コンテンツを保持するための保持設定がされている場合、コンテンツは完全には削除されません。 この原則により、コンプライアンス上の理由でコンテンツが確実に保持されますが、削除プロセスは引き続き開始でき (ユーザーが開始またはシステムによって開始される) ため、ユーザーのメイン ビューからコンテンツが削除される可能性があります。 ただし、完全な削除は一時停止されます。 コンテンツを保存する方法と場所の詳細については、ワークロードごとに次のリンクを使用してください。
     
     - [SharePoint と OneDrive の保持のしくみ](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive)
     - [Microsoft Teams での保持のしくみ](retention-policies-teams.md#how-retention-works-with-microsoft-teams)

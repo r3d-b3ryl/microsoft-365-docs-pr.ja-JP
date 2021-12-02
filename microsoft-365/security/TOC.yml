@@ -42,3 +42,5 @@
       href: ./index.yml
     - name: Microsoft 365 コンプライアンス
       href: ../compliance/index.yml
+    - name: Office ドキュメントでアクティブなコンテンツを管理する
+      href: active-content-in-trusted-docs.md
