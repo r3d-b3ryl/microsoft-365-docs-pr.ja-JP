@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: 他のユーザーのメールボックスにアクセスする権利をユーザーに与えます。このアクセス権を持つユーザーは、他のユーザーのメールボックスからメールを読んだり送信したりできます。
-ms.openlocfilehash: fe40e8d79f2ff677989f0dc3f8aacbebea1a41fa
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: cd6f54ac578f1d1a65b20d3093b0efdeb1110567
+ms.sourcegitcommit: 0251d5c6cb141055c93c83a402c3dc52c7a70dcc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165524"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61262766"
 ---
 # <a name="give-mailbox-permissions-to-another-user---admin-help"></a>別のユーザーにメールボックス アクセス許可を付与する - 管理者ヘルプ
 
@@ -125,7 +125,7 @@ ms.locfileid: "61165524"
 
 
 > [!NOTE]
-> [**読み取り**] および [**管理**] の権限は、Exchange 管理センターで付与された場合、[**フル アクセス**] 権限と呼ばれます。 [フル アクセス] 権限では、**[メールボックス所有者として送信する]** または **[代理人として送信する]** の権限は付与されません。
+> [**読み取り**] および [**管理**] の権限は、Exchange 管理センターで付与された場合、[**フル アクセス**] 権限と呼ばれます。 このアクセス許可により、割り当てられたユーザー メールボックスは、アクセス許可が割り当てられているユーザー メールボックス内のメールの読み取りと管理を行うことができます。 [フル アクセス] 許可では、**[メールボックス所有者として送信する]** または **[代理人として送信する]** のアクセス許可は付与されません。
 
 ::: moniker-end
 
