@@ -14,13 +14,13 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 11/02/2021
-ms.openlocfilehash: c65c9584626c85a7c91a6d410af3a7ab5fc01aa6
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.date: 12/01/2021
+ms.openlocfilehash: 13f8345df5c8ad056569c1e929b00c28d943cc76
+ms.sourcegitcommit: 0251d5c6cb141055c93c83a402c3dc52c7a70dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61169076"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61262813"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender for Endpoint Device Control リムーバブル Storage アクセス制御
 
@@ -28,7 +28,7 @@ ms.locfileid: "61169076"
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > [!NOTE]
-> この製品のグループ ポリシー管理は、一般的に有効です (4.18.2106): [「Tech Community ブログ: Microsoft Defender for Endpoint](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protect-your-removable-storage-and-printers-with-microsoft/ba-p/2324806)でリムーバブル ストレージとプリンターを保護する」を参照してください。 
+> この製品のグループ ポリシー管理が一般提供されました (4.18.2106): [「Tech Community ブログ: Microsoft Defender for Endpoint](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protect-your-removable-storage-and-printers-with-microsoft/ba-p/2324806)でリムーバブル ストレージとプリンターを保護する」を参照してください。 
 
 
 Microsoft Defender for Endpoint Device Control リムーバブル Storageアクセス制御を使用すると、次のタスクを実行できます。

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: テナントとユーザーが要件を満たしていることを確認し、集中展開を使用してアドインを展開Officeします。
-ms.openlocfilehash: 332a2b14bb74363091df8fc18423c347d1d8c6fb
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 992c54d84a5cc69579c74b2b7e1a5aa60e9633ab
+ms.sourcegitcommit: 0251d5c6cb141055c93c83a402c3dc52c7a70dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60663030"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61262793"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>組織でアドインの集中展開が機能するかどうかを判断する
 
@@ -35,7 +35,10 @@ ms.locfileid: "60663030"
 
 一元展開には、次のような利点があります。
 
-- グローバル管理者は、アドインをユーザーに直接割り当て、グループ経由で複数のユーザーに割り当て、組織内のすべてのユーザーに割り当てできます。
+- グローバル管理者または Exchange 管理者は、ユーザー、グループ経由で複数のユーザー、または組織内のすべてのユーザーにアドインを直接割り当てできます。
+- Exchangeは、次の図に示すように、アプリ登録プロパティが管理センターで true に設定Azure Active Directoryアドインを展開できます。
+
+  ![image](../../media/AAD.png)
 
 - 関連するアプリケーションOfficeすると、アドインは自動的にダウンロードされます。 アドインがアドイン コマンドをサポートしている場合、アドインは自動的にアドイン アプリケーション内のリボンにOfficeされます。
 
@@ -47,7 +50,7 @@ ms.locfileid: "60663030"
 
 ## <a name="before-you-begin"></a>はじめに
 
-アドインの一元展開では、ユーザーが Microsoft 365 Business ライセンス (Business Basic、Business Standard、Business プレミアム)、Office 365 Enterprise ライセンス (E1/E3/E5/F3)、または Microsoft 365 Enterprise ライセンス (E3/E5/F3) (組織 ID を使用して Office にサインイン)を使用し、Exchange Online およびアクティブな Exchange Online メールボックスを持っている必要があります。 サブスクリプション ディレクトリは、サブスクリプション ディレクトリ内に存在するか、またはサブスクリプション ディレクトリにAzure Active Directory。
+アドインの一元展開では、ユーザーが Microsoft 365 Business ライセンス (Business Basic、Business Standard、Business プレミアム)、Office 365 Enterprise ライセンス (E1/E3/E5/F3)、または Microsoft 365 Enterprise ライセンス (E3/E5/F3) を使用している必要があります (Office 組織 ID を使用して)、メールボックスExchange OnlineアクティブExchange Onlineがあります。 サブスクリプション ディレクトリは、サブスクリプション ディレクトリ内に存在するか、またはサブスクリプション ディレクトリにAzure Active Directory。
 次の手順に従って、OfficeとExchange要件を確認したり、集中展開の互換性チェックを[使用できます](#centralized-deployment-compatibility-checker)。
 
 一元展開は、次の機能をサポートしていません。
@@ -157,7 +160,7 @@ web 用の Office アプリ (Word、Excel など) の使用中にアドインの
 
 | プラットフォーム | デバッグ情報 |
 |:-----|:-----|
-|事業所 | Charles/Fiddler ログ  <br/>  テナント ID ([方法の詳細](/onedrive/find-your-office-365-tenant-id))  <br/>  CorrelationID。 1 つの Office ページのソースを表示し、相関 ID の値を探してサポートに送信します。  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>` |
+|Office | Charles/Fiddler ログ  <br/>  テナント ID ([方法の詳細](/onedrive/find-your-office-365-tenant-id))  <br/>  CorrelationID。 1 つの Office ページのソースを表示し、相関 ID の値を探してサポートに送信します。  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>` |
 |リッチ クライアント (Windows、Mac) | Charles/Fiddler ログ  <br/>  クライアント アプリのビルド番号 (できれば **File/Account** のスクリーンショットとして) |
 
 ## <a name="related-content"></a>関連コンテンツ

@@ -13,29 +13,29 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: 詳細については、「セーフドキュメント」または「Microsoft 365 E5」をMicrosoft 365 E5 Security。
+description: 詳細については、「セーフ/A5 または Microsoft 365 E5/A5 セキュリティMicrosoft 365 E5ドキュメント」を参照してください。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 66093240f6ea9137bb9af361bfabc2598676e390
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 64995aca1542087682c2871f434698cc20d3ac91
+ms.sourcegitcommit: 0251d5c6cb141055c93c83a402c3dc52c7a70dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60703083"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61262825"
 ---
-# <a name="safe-documents-in-microsoft-365-e5"></a>Microsoft 365 E5 の安全なドキュメント
+# <a name="safe-documents-in-microsoft-365-e5a5"></a>セーフ/A5 Microsoft 365 E5ドキュメント
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用対象**
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-セーフドキュメントは[、Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)のクラウド バックエンドを使用して、保護されたビューまたは Application [](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653) Guard で開いている Office ドキュメントをスキャンするプレミアム[機能](https://support.microsoft.com/topic/9e0fb9c2-ffad-43bf-8ba3-78f785fdba46)Office。
+セーフドキュメントは[、Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)のクラウド バックエンドを使用して、保護されたビューまたは Application [Guard](https://support.microsoft.com/topic/9e0fb9c2-ffad-43bf-8ba3-78f785fdba46)で開[](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653)いている Office ドキュメントをスキャンするプレミアム機能Office。
 
 ユーザーは、ローカル デバイスに Defender for Endpoint をインストールして、ドキュメント保護セーフ必要とされません。 次の要件セーフ満たされている場合、ユーザーはドキュメント保護を受け取る必要があります。
 
-- セーフドキュメントは、この記事の説明に従って組織内で有効になっています。
-- 必要なライセンスプランのライセンスがユーザーに割り当てられます。 セーフ **ドキュメントは、Office 365 SafeDocs** (または **SAFEDOCS** または **bf6f5520-59e3-4f82-974b-7dbbc4fd27c7)** サービス プラン (サービスとも呼ばれる) によって制御されます。 このサービス プランは、次のライセンス プラン (ライセンス プラン、Microsoft 365製品とも呼ばれる) で利用できます。
+- セーフの説明に従って、組織でドキュメントが有効になっている場合。
+- 必要なライセンスプランのライセンスがユーザーに割り当てられます。 セーフ ドキュメントは **、Office 365 SafeDocs** (または **SAFEDOCS** または **bf6f5520-59e3-4f82-974b-7dbbc4fd27c7)** サービス プラン (サービスとも呼ばれる) によって制御されます。 このサービス プランは、次のライセンス プラン (ライセンス プラン、Microsoft 365製品とも呼ばれる) で利用できます。
   - Microsoft 365 A5教員向け
   - Microsoft 365 A5学生向け
   - Microsoft 365 E5
@@ -49,7 +49,7 @@ ms.locfileid: "60703083"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- <https://security.microsoft.com> で Microsoft 365 Defender ポータルを開きます。 [添付ファイル] ページに **直接移動セーフを** 使用します <https://security.microsoft.com/safeattachmentv2> 。
+- [ ] で Microsoft 365 Defenderポータルを開きます <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a> 。 **[安全な添付ファイル]** ページに直接移動するには、<https://security.microsoft.com/safeattachmentv2> を使用します。
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
@@ -75,7 +75,7 @@ ms.locfileid: "60703083"
 
 1. [ポリシー] Microsoft 365 Defenderを開き、[ポリシー] セクション&の [&脅威ポリシーと添付ファイルセーフメール] に \>  \>  \> **移動** します。
 
-2. [添付ファイル **セーフ] ページで**、[グローバル設定]**をクリックします**。
+2. **[安全な添付ファイル]** ページで **[グローバル設定]** をクリックします。
 
 3. [グローバル **設定] が** 表示されたら、次の設定を構成します。
    - **[クライアントセーフドキュメントOffice有効** にする: トグルを右に移動して、機能を有効にします。[オンに切り替 ![ え] をオンにします ](../../media/scc-toggle-on.png) 。
@@ -83,7 +83,7 @@ ms.locfileid: "60703083"
 
    完了したら、**[保存]** をクリックします。
 
-   ![セーフ[添付ファイル] ページで [グローバル設定] を選択した後セーフ設定します。](../../media/safe-docs-global-settings.png)
+   ![セーフの [添付ファイル] ページで [グローバル設定] を選択した後セーフ設定を変更します。](../../media/safe-docs-global-settings.png)
 
 ### <a name="use-exchange-online-powershell-to-configure-safe-documents"></a>PowerShell Exchange Onlineを使用してドキュメントセーフ構成する
 
@@ -129,7 +129,7 @@ Set-AtpPolicyForO365 -EnableSafeDocs $true -AllowSafeDocsOpen $false
 
 ドキュメントを有効にし、構成セーフするには、次の手順を実行します。
 
-- Microsoft 365 Defender ポータルで、[ポリシー] セクションの[& Collaboration \> **Policies & Rules** Threat \> **Policies** セーフ \> **Attachments]** に移動し \> **、[Office****クライアントの セーフ ドキュメントを有効にする] と [保護されたユーザーにクリックを許可する] を確認します。[ドキュメント] でセーフが悪意のある設定として識別された場合でも表示** されます。
+- Microsoft 365 Defender ポータルで、[ポリシー] セクションの [& コラボレーション ポリシー& ルール脅威ポリシー セーフ 添付ファイルの電子メール] に移動し、[Office クライアントの セーフ ドキュメントを有効にする] \>  \>  \>  \> **を確認** し、 **[ドキュメント] でファイルが** 悪意のある設定としてセーフ場合でも、保護されたビューをクリックできます。
 
 - PowerShell で次のコマンドをExchange Onlineし、プロパティの値を確認します。
 

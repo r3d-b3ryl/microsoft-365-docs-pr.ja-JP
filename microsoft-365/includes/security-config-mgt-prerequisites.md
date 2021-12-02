@@ -4,12 +4,12 @@ description: ファイルを含める
 author: mjcaparas
 ms.service: microsoft-365-enterprise
 ms.author: macapara
-ms.openlocfilehash: 2ae8fa9e8cb3c28cf20ab9c57183b43d067b16b6
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: 55b0bc3800ba31c325d9c27906e72d6dd7e9bbea
+ms.sourcegitcommit: 0251d5c6cb141055c93c83a402c3dc52c7a70dcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61222274"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61262846"
 ---
 ## <a name="prerequisites"></a>前提条件
 
@@ -19,7 +19,9 @@ Microsoft Defender for Endpoint シナリオのセキュリティ管理の要件
 
 デバイスが Microsoft Defender for Endpoint にオンボードする場合:
 
-- プレゼンスが存在しないエンドポイント マネージャーセキュリティ管理機能を有効にする
+
+- デバイスは、Intune へのモバイル デバイスエンドポイント マネージャー(MDM) 登録である既存のデバイス プレゼンスについて調査されます。
+- プレゼンスがエンドポイント マネージャーデバイスは、セキュリティ管理機能を有効にします
 - 信頼は、まだ存在しないAzure Active Directoryを使用して作成されます。
 - Azure Active Directory信頼は、Intune (Intune) と通信しエンドポイント マネージャーポリシーを取得するために使用されます。
 - ポリシーの取得エンドポイント マネージャー Microsoft Defender for Endpoint によってデバイスに適用されます。
@@ -50,14 +52,13 @@ Microsoft Defender for Endpoint セキュリティ管理のポリシーは、次
 - Windows Server 2012デバイス向け Microsoft [Defender を使用した R2 Down-Level R2](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)
 - Windows Server 2016[デバイス用 Microsoft Defender Down-Levelする](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)
 - Windows Server 2019 [(KB5006744 付](https://support.microsoft.com/topic/october-19-2021-kb5006744-os-build-17763-2268-preview-e043a8a3-901b-4190-bb6b-f5a4137411c0)き)
-- Windows Server 2022
-
+- Windows Server 2022 [(KB5006745 付](https://support.microsoft.com/topic/october-26-2021-kb5006745-os-build-20348-320-preview-8ff9319a-19e7-40c7-bbd1-cd70fcca066c)き)
 
 ### <a name="licensing-and-subscriptions"></a>ライセンスとサブスクリプション
 
 Microsoft Defender for Endpoint のセキュリティ管理を使用するには、次の情報が必要です。
 
-- Microsoft Defender for Endpoint のライセンスを付与するサブスクリプション (Microsoft 365 など)、または Microsoft Defender for Endpoint 専用のスタンドアロン ライセンス。 オプションの現在の情報については、「エンドポイント用 Microsoft Defender の最小 [要件」を参照してください](/microsoft-365/security/defender-endpoint/minimum-requirements)。
+- Microsoft Defender for Endpoint のライセンスを付与するサブスクリプション (Microsoft 365 など)、または Microsoft Defender for Endpoint 専用のスタンドアロン ライセンス。 オプションの現在の情報については、「エンドポイント用 Microsoft Defender の最小 [要件」を参照してください](/microsoft-365/security/defender-endpoint/minimum-requirements?view=o365-worldwide&preserve-view=true)。
 
   *Microsoft* Defender for Endpoint ライセンスを付与するサブスクリプションは、管理者センターのエンドポイント セキュリティ ノードへのテナント アクセスMicrosoft エンドポイント マネージャー付与します。 エンドポイント セキュリティ ノードでは、デバイスの Microsoft Defender for Endpoint を管理し、デバイスの状態を監視するためのポリシーを構成および展開します。
 
@@ -65,18 +66,44 @@ Microsoft Defender for Endpoint のセキュリティ管理を使用するには
 
 次の図は、Microsoft Defender for Endpoint セキュリティ構成管理ソリューションの概念的な表現です。
 
-
 :::image type="content" alt-text="Microsoft Defender for Endpoint セキュリティ構成管理ソリューションの概念的表現" source="../security/defender-endpoint/images/mde-architecture.png":::
-
 
 1. Microsoft Defender for Endpoint にオンボードされているデバイス。
 
 2. 各デバイスとデバイス間で信頼が確立Azure AD。 デバイスに既存の信頼がある場合、その信頼が使用されます。 デバイスが登録されていない場合は、新しい信頼が作成されます。
 
-
 3. デバイスは、デバイスAzure AD ID を使用して、ユーザーと通信エンドポイント マネージャー。 この ID を使用Microsoft エンドポイント マネージャーデバイスを対象とするポリシーを、チェックイン時に配布できます。
 
 4. Defender for Endpoint はポリシーの状態をレポートし、ポリシーの状態を エンドポイント マネージャー。
+
+## <a name="which-solution-should-i-use"></a>どのソリューションを使用する必要がありますか?
+
+Microsoft エンドポイント マネージャーには、デバイス上の Defender for Endpoint の構成を管理するためのいくつかの方法とポリシーの種類が含まれています。
+
+デバイス保護が Defender for Endpoint の管理以外にも[](/mem/intune/protect/device-protect)必要な場合は、「デバイス保護の概要」を参照して、デバイスコンプライアンス、管理アプリ、アプリ保護ポリシー、サードパーティのコンプライアンスおよびモバイル脅威防御パートナーとの統合など、デバイスの保護に役立つ Microsoft エンドポイント マネージャー によって提供されるその他の機能について説明します。  
+
+次の表は、さまざまなシナリオで管理されるデバイスでサポートされる MDE 設定を構成できるポリシーを理解するのに役立ちます。 MDE セキュリティ構成と *Microsoft エンドポイント マネージャー* の両方でサポートされているポリシーを展開する場合、そのポリシーの 1 つのインスタンスは *、MDE* のみを実行するデバイスと Intune または Configuration Manager によって管理されるデバイスによって処理できます。
+
+| Microsoft エンドポイント マネージャー  | Workload | MDE セキュリティ構成  |  Microsoft エンドポイント マネージャー |
+|----------------|----------------|-------------------|------------|
+| エンドポイントのセキュリティ    | ウイルス対策                   | ![サポート](../media/green-check.png)  | ![サポート](../media/green-check.png)  |
+|                      | ディスク暗号化   |           | ![サポート](../media/green-check.png)  |
+|                      | ファイアウォール (プロファイルとルール)                | ![サポート](../media/green-check.png) | ![サポート](../media/green-check.png)  |
+|                      | エンドポイントの検出および応答        | ![サポート](../media/green-check.png) | ![サポート](../media/green-check.png)  |
+|                      | 攻撃面の縮小    |           | ![サポート](../media/green-check.png)  |
+|                      | アカウント保護       |       | ![サポート](../media/green-check.png)  |
+|                      | デバイスコンプライアンス     |   | ![サポート](../media/green-check.png)  |
+|                      | 条件付きアクセス    |   | ![サポート](../media/green-check.png)  |
+|                      | セキュリティ基本計画      |   | ![サポート](../media/green-check.png)  |
+
+**エンドポイント セキュリティ ポリシーは、** 組織内のデバイスの保護に重点を置くセキュリティ管理者が使用することを目的とした個別の設定グループです。
+
+- **ウイルス** 対策ポリシーは、Microsoft Defender for Endpoint にあるセキュリティ構成を管理します。 「エンドポイント  [セキュリティの](/mem/intune/protect/endpoint-security-antivirus-policy) ウイルス対策ポリシー」を参照してください。
+- **攻撃表面の縮小** ポリシーは、組織がサイバー脅威や攻撃に対して脆弱な場所を最小限に抑えることに重点を置きます。 詳細については、「脅威の[保護に関](/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction)するドキュメント」の「攻撃表面の縮小の概要Windowsエンドポイント セキュリティの攻撃[表面](/mem/intune/protect/endpoint-security-asr-policy)縮小ポリシー」を参照してください。
+- **エンドポイントの検出と応答**(EDR) ポリシーは、近いリアルタイムでアクション可能な高度な攻撃検出を提供する Defender for Endpoint 機能を管理します。 セキュリティ アナリストは、EDR構成に基づいて、アラートを効果的に優先順位付けし、侵害の全範囲を可視化し、脅威を修復するための対応アクションを実行できます。 エンドポイント セキュリティ [については、「エンドポイントの検出と応答](/mem/intune/protect/endpoint-security-edr-policy) ポリシー」を参照してください。
+- **ファイアウォール** ポリシーは、デバイス上の Defender ファイアウォールに重点を置く。 エンドポイント セキュリティ [については、「](/mem/intune/protect/endpoint-security-firewall-policy) ファイアウォール ポリシー」を参照してください。
+- **ファイアウォール ルールは** 、特定のポート、プロトコル、アプリケーション、およびネットワークを含むファイアウォールの詳細なルールを構成します。 エンドポイント セキュリティ [については、「](/mem/intune/protect/endpoint-security-firewall-policy) ファイアウォール ポリシー」を参照してください。
+- **セキュリティ基準には**、Defender、Edge、またはセキュリティ ポリシーなど、さまざまな製品に対して Microsoft が推奨するセキュリティの状態を定義する事前構成済みのセキュリティ設定Windows。 既定の推奨事項は、関連する製品チームからの推奨事項であり、推奨される安全な構成をデバイスに迅速に展開できます。 各ベースラインで設定が事前構成されている間、カスタマイズされたインスタンスを作成して組織のセキュリティの期待を確立できます。 「Intune [のセキュリティ ベースライン](/mem/intune/protect/security-baselines) 」を参照してください。
 
 ## <a name="configure-your-tenant-to-support-microsoft-defender-for-endpoint-security-configuration-management"></a>Microsoft Defender for Endpoint Security Configuration Management をサポートするためにテナントを構成する
 
@@ -84,11 +111,11 @@ Microsoft Defender for Endpoint のセキュリティ構成管理を Microsoft �
 
 1. ポータルにサインイン[しMicrosoft 365 Defenderエンドポイント](https://security.microsoft.com/)構成管理設定スコープに移動し、セキュリティ設定管理のプラットフォーム  >    >    >  を有効にします。
 
-   :::image type="content" source="../media/enable-mde-settings-management-defender.png" alt-text="Microsoft Defender for Endpoint の設定管理をポータルで有効Microsoft 365 Defenderします。":::
+   :::image type="content" source="../media/enable-mde-settings-management-defender.png" alt-text="Defender コンソールで Microsoft Defender for Endpoint の設定管理を有効にします。":::
 
-2. 関連するユーザーが、Microsoft エンドポイント マネージャー ポータルで役割を構成して、エンドポイント のセキュリティ設定を管理するアクセス許可を持Microsoft 365 Defenderしてください。 [ロールの追加  >  **設定]**  >  **項目に移動します**。
+2. 関連するユーザーが、Defender ポータルで役割を構成することで、Microsoft エンドポイント マネージャーまたはそれらのアクセス許可を付与するエンドポイント セキュリティ設定を管理するアクセス許可を持っている必要があります。 [ロールの追加  >  **設定]**  >  **項目に移動します**。
 
-   :::image type="content" source="../media/add-role-in-mde.png" alt-text="ポータルで新しい役割をMicrosoft 365 Defenderします。":::
+   :::image type="content" source="../media/add-role-in-mde.png" alt-text="Defender ポータルで新しい役割を作成します。":::
 
    > [!TIP]
    > 既存の役割を変更し、必要なアクセス許可を追加したり、Microsoft Defender for Endpoint で追加の役割を作成したりすることはできません。
@@ -109,8 +136,9 @@ Microsoft Defender for Endpoint のセキュリティ構成管理を Microsoft �
 
 Microsoft Defender for Endpoint では、オンボード デバイスに対して複数のオプションがサポートされています。 現在のガイダンスについては[、「Defender](/microsoft-365/security/defender-endpoint/security-config-management) for Endpoint」のドキュメントの「Windowsデバイスのオンボード ツールとメソッド」を参照してください。
 
+
 > [!IMPORTANT]
-> デバイスが Microsoft Defender for Endpoint にオンボードされた後、Microsoft Defender for Endpoint のセキュリティ管理に登録する前に **、MDE-Management** にタグ付けする必要があります。 MDE でのデバイス タグ付けの詳細については、「デバイス タグの作成と [*管理」を参照してください*](/microsoft-365/security/defender-endpoint/machine-tag)。
+> デバイスが Microsoft Defender for Endpoint にオンボードされた後、Microsoft Defender for Endpoint のセキュリティ管理に登録する前に **、MDE-Management** にタグ付けする必要があります。 MDE でのデバイス タグ付けの詳細については、「デバイス タグの作成と [*管理」を参照してください*](/microsoft-365/security/defender-endpoint/machine-tags)。
 
 
 ## <a name="co-existence-with-microsoft-endpoint-configuration-manager"></a>ユーザーとのMicrosoft Endpoint Configuration Manager
@@ -127,7 +155,12 @@ Microsoft Defender for Endpoint に登録されているが、Intune または C
 
 2. [デバイス]  >  **[すべてのデバイス] に** 移動し、[管理] 列を **選択** してデバイスのビューを並べ替えます。
 
-   Microsoft Defender for Endpoint にオンボードされ、登録されているが Intune または Configuration Manager によって管理されていないデバイスでは、[管理] 列に **Microsoft Defender for Endpoint** *が表示* されます。 これらは、Microsoft Defender for Endpoint のセキュリティ管理のポリシーを受け取るデバイスです。
+   Microsoft Defender for Endpoint にオンボードされ、登録されているが Intune によって管理されていないデバイスでは、[管理] 列に **Microsoft Defender for Endpoint** *が表示* されます。 これらは、Microsoft Defender for Endpoint のセキュリティ管理のポリシーを受け取るデバイスです。
+
+   Microsoft Defender for Endpoint のセキュリティ管理を使用しているデバイスの 2 つのラベルも表示されます。
+
+   - **MDEJoined** - このシナリオの一部としてディレクトリに参加しているデバイスに追加されました。
+   - **MDEManaged** - セキュリティ管理シナリオをアクティブに使用しているデバイスに追加されました。 Defender for Endpoint がセキュリティ構成の管理を停止した場合、このタグはデバイスから削除されます。
 
 これらのデバイスのグループは、Azure AD[管理](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)[センター内Microsoft エンドポイント マネージャー作成できます](/mem/intune/fundamentals/groups-add)。
 
@@ -167,6 +200,11 @@ Microsoft Defender for Endpoint によって管理されるデバイスを含む
      - プラットフォーム: **Windows 10、Windows 11、Windows サーバー (プレビュー)**
      - プロファイル: **エンドポイントの検出と応答 (プレビュー)**
 
+   >[!Note]
+   > これらのプロファイルは、モバイル デバイス管理 (MDM) と Microsoft Intune を介して通信するデバイスと、Microsoft Defender for Endpoint クライアントを使用して通信しているデバイスの両方に適用されます。
+   >
+   > 必要に応じて、ターゲット設定とグループを確認してください。
+
 4. **[作成]** を選択します。
 
 5. **[基本]** ページでプロファイルに名前と説明を入力し、**[次へ]** を選択します。
@@ -189,4 +227,4 @@ Microsoft Defender for Endpoint によって管理されるデバイスを含む
 
 9. ポリシーが割り当てられるのを待ち、ポリシーが適用されたという成功の兆候を表示します。
 
-10. [Get-MpPreference](/powershell/module/defender/get-mppreference#examples)コマンド ユーティリティを使用して、設定がクライアント上でローカルに適用されるのを検証できます。
+10. [Get-MpPreference](/powershell/module/defender/get-mppreference#examples)コマンド ユーティリティを使用して、設定がクライアントにローカルに適用されたと検証できます。
