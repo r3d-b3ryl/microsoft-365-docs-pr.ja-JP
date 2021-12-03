@@ -1,6 +1,6 @@
 ---
 title: EOP と Defender のセキュリティ設定に関する Microsoft Office 365推奨
-keywords: Office 365 セキュリティの推奨事項、Sender Policy Framework、ドメイン ベースのメッセージレポートと準拠、DomainKeys Identified Mail、手順、動作方法、セキュリティ ベースライン、EOP のベースライン、Office 365 用 Defender のベースライン、Office 365 の Defender のセットアップ、EOP のセットアップ、Office 365 の Defender の構成、EOP、セキュリティ構成uration
+keywords: Office 365 のセキュリティ推奨事項、Sender Policy Framework、ドメイン ベースのメッセージ報告と準拠、DomainKeys Identified Mail、手順、動作方法、セキュリティ ベースライン、EOP のベースライン、Office 365 用 Defender のベースライン、Office 365 の Defender のセットアップ、EOP のセットアップ、Office 365 の Defender の構成、EOP の構成、セキュリティ構成
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -19,12 +19,12 @@ ms.collection:
 description: セキュリティ設定に関する Exchange Online Protection (EOP) と Defender のベスト Office 365は何ですか? 標準保護に関する現在の推奨事項は何ですか? より厳密にしたい場合は、何を使用する必要がありますか? また、Defender をユーザーに使用する場合、どのような追加Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f9b0e393bacdf1a57683a90da5d40af42842a4df
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: d0ac90726b3cf3023243d62fd32c3ae70aa5ee8d
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914418"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284135"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>EOP および Microsoft Defender for Office 365 セキュリティの推奨設定
 
@@ -35,7 +35,7 @@ ms.locfileid: "60914418"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-**Exchange Online Protection (EOP)** は、Microsoft 365 サブスクリプションのセキュリティの中核であり、悪意のあるメールが従業員の受信トレイに届かされるのを防ごうのに役立ちます。 しかし、より高度な新しい攻撃が毎日出現する中で、多くの場合、保護の強化が必要になります。 **Microsoft Defender for Office 365** プラン 1 またはプラン 2 には、管理者にセキュリティ、制御、調査の層を追加する追加機能が含まれている。
+**Exchange Online Protection (EOP)** は、Microsoft 365 サブスクリプションのセキュリティの中核であり、悪意のあるメールが従業員の受信トレイに届かされるのを防ごうのに役立ちます。 しかし、より高度な新しい攻撃が毎日出現する中で、多くの場合、保護の強化が必要になります。 **Microsoft Defender for Office 365** プラン 1 またはプラン 2 には、管理者にセキュリティ、制御、および調査の層を追加する追加機能が含まれている。
 
 セキュリティ管理者はセキュリティ設定のカスタマイズを強化しますが、EOP と Microsoft Defender の 2 つのセキュリティ レベルは、推奨Office 365標準と **厳密** です。 各顧客の環境とニーズは異なりますが、これらのレベルのフィルター処理は、ほとんどの状況で望ましくないメールが従業員の受信トレイに届かされるのを防ぐのに役立つと考えています。
 
@@ -70,11 +70,11 @@ ms.locfileid: "60914418"
 |**テスト モード** (_TestModeAction_)|**なし**|**なし**|**なし**|この設定は ASF の一部です。 詳細については、この記事の「 [スパム対策ポリシーの ASF](#asf-settings-in-anti-spam-policies) 設定」セクションを参照してください。|
 |**アクション**||||[検疫メッセージ] **を選択した場合** は、[ **検疫ポリシーの選択] ボックス** を使用できます。 検疫ポリシーは、検疫されたメッセージに対してユーザーが実行できる操作を定義します。 <p> 新しいスパム対策ポリシーを作成する場合、空白の値は、既定の検疫ポリシーを使用して、その特定の評決によって検疫されたメッセージの履歴機能を定義します (AdminOnlyAccessPolicy **for** High confidence フィッシング;それ以外の場合は DefaultFullAccessPolicy)。 <p> 管理者は、ユーザーに対して制限の厳しい機能または制限の少ない機能を定義するカスタム検疫ポリシーを作成して選択できます。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。|
 |**スパム** 検出アクション <p> _SpamAction_|**メッセージを迷惑メール フォルダーに移動する** <p> `MoveToJmf`|**メッセージを迷惑メール フォルダーに移動する** <p> `MoveToJmf`|**検疫メッセージ** <p> `Quarantine`||
-|**信頼度の高いスパム** 検出アクション <p> _HighConfidenceSpamAction_|**メッセージを迷惑メール フォルダーに移動する** <p> `MoveToJmf`|**検疫メッセージ** <p> `Quarantine`|**検疫メッセージ** <p> `Quarantine`||
+|**信頼度の高いスパム** 検出アクション <p> _HighConfidenceSpamAction_|**検疫メッセージ** <p> `MoveToJmf`|**検疫メッセージ** <p> `Quarantine`|**検疫メッセージ** <p> `Quarantine`||
 |**フィッシング検出** アクション <p> _PhishSpamAction_|**検疫メッセージ** <p> `MoveToJmf`|**検疫メッセージ** <p> `Quarantine`|**検疫メッセージ** <p> `Quarantine`||
 |**高信頼フィッシング検出** アクション <p> _HighConfidencePhishAction_|**検疫メッセージ** <p> `Quarantine`|**検疫メッセージ** <p> `Quarantine`|**検疫メッセージ** <p> `Quarantine`||
 |**一括** 検出アクション <p> _BulkSpamAction_|**メッセージを迷惑メール フォルダーに移動する** <p> `MoveToJmf`|**メッセージを迷惑メール フォルダーに移動する** <p> `MoveToJmf`|**検疫メッセージ** <p> `Quarantine`||
-|**この数日間、検疫にスパムを保持する** <p> _QuarantineRetentionPeriod_|30 日間|30 日間|30 日間|この値は、フィッシング対策ポリシーによって検疫されるメッセージにも影響します。 詳細については [、「EOP の検疫済み電子メール メッセージ」を参照してください](quarantine-email-messages.md)。|
+|**この数日間、検疫にスパムを保持する** <p> _QuarantineRetentionPeriod_|15 日間<sup>\*</sup>|30 日間|30 日間|<sup>\*</sup> 既定値は、既定のスパム対策ポリシーでは 15 日間、PowerShell で作成する新しいスパム対策ポリシーでは 15 日間です。 既定の値は、新しいスパム対策ポリシーで 30 日間です。このポリシーは、Microsoft 365 Defenderです。 <p> この値は、フィッシング対策ポリシーによって検疫されるメッセージにも影響します。 詳細については [、「EOP の検疫済み電子メール メッセージ」を参照してください](quarantine-email-messages.md)。|
 |**スパムの安全に関するヒントを有効にする** <p> _InlineSafetyTipsEnabled_|選択済み <p> `$true`|選択済み <p> `$true`|選択済み <p> `$true`||
 |フィッシング メッセージに対してゼロ時間自動削除 (ZAP) を有効にする <p> _PhishZapEnabled_|選択済み <p> `$true`|選択済み <p> `$true`|選択済み <p> `$true`||
 |スパム メッセージの ZAP を有効にする <p> _SpamZapEnabled_|選択済み <p> `$true`|選択済み <p> `$true`|選択済み <p> `$true`||
@@ -162,10 +162,10 @@ ms.locfileid: "60914418"
 |**差出人アドレス** <p> _CustomFromAddress_|空白 <p> `$null`|空白 <p> `$null`|空白 <p> `$null`||
 |**内部送信者からのメッセージの通知をカスタマイズする**||||これらの設定は、メッセージがマルウェアとして検疫された場合に内部送信者に通知するか、内部送信者からの未配信メッセージについて管理者に通知するが選択されている場合にのみ使用されます。|
 |**件名** <p> _CustomInternalSubject_|空白 <p> `$null`|空白 <p> `$null`|空白 <p> `$null`||
-|**Message** <p> _CustomInternalBody_|空白 <p> `$null`|空白 <p> `$null`|空白 <p> `$null`||
+|**メッセージ** <p> _CustomInternalBody_|空白 <p> `$null`|空白 <p> `$null`|空白 <p> `$null`||
 |**外部送信者からのメッセージの通知をカスタマイズする**||||これらの設定は、メッセージがマルウェアとして検疫された場合に外部送信者に通知するか、外部送信者からの配信不能メッセージについて管理者に通知するが選択されている場合にのみ使用されます。|
 |**件名** <p> _CustomExternalSubject_|空白 <p> `$null`|空白 <p> `$null`|空白 <p> `$null`||
-|**Message** <p> _CustomExternalBody_|空白 <p> `$null`|空白 <p> `$null`|空白 <p> `$null`||
+|**メッセージ** <p> _CustomExternalBody_|空白 <p> `$null`|空白 <p> `$null`|空白 <p> `$null`||
 |
 
 ### <a name="eop-anti-phishing-policy-settings"></a>EOP フィッシング対策ポリシー設定
@@ -268,7 +268,7 @@ EOP のお客様は、前述のように基本的なフィッシング対策を�
 
 ### <a name="safe-attachments-settings"></a>セーフ添付ファイルの設定
 
-セーフMicrosoft Defender for Office 365の添付ファイルには、セーフ 添付ファイル ポリシーとの関係を持つグローバル設定、および各 セーフ リンク ポリシーに固有の設定が含まれます。 詳細については、「Defender[セーフ添付ファイル」を参照Office 365。](safe-attachments.md)
+セーフ Microsoft Defender for Office 365 の添付ファイルには、セーフ 添付ファイル ポリシーと関係がないグローバル設定、および各 セーフ リンク ポリシーに固有の設定が含まれます。 詳細については、「Defender[セーフ添付ファイル」を参照Office 365。](safe-attachments.md)
 
 既定の セーフ 添付ファイル ポリシーは使用できませんが、組み込みの保護プリセット セキュリティ ポリシーは、すべての受信者 (カスタム セーフ 添付ファイル ポリシーで定義されていないユーザー) に セーフ 添付ファイル保護を提供します。 詳細については、「EOP でのセキュリティ ポリシーの事前設定」および[「Microsoft Defender for microsoft Defender for Office 365」 を参照してください](preset-security-policies.md)。
 
@@ -289,7 +289,7 @@ PowerShell では、これらの設定に [Set-AtpPolicyForO365](/powershell/mod
 
 |セキュリティ機能名|既定値|組み込みの保護|Comment|
 |---|:---:|:---:|---|
-|**SharePoint、OneDrive、Microsoft Teams 用の Microsoft Defender for Office 365 を有効にする** <p> _EnableATPForSPOTeamsODB_|オフ <p> `$false`|オン <p> `$true`||
+|**SharePoint、OneDrive、Microsoft Teams 用の Microsoft Defender for Office 365 を有効にする** <p> _EnableATPForSPOTeamsODB_|オフ <p> `$false`|オン <p> `$true`|ユーザーが悪意のあるファイルをダウンロードするのを防ぐには、「ユーザーが悪意のあるファイルをダウンロードSharePointオンライン PowerShell を使用する[」を参照してください](turn-on-mdo-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files)。|
 |**クライアントのセーフドキュメントを有効Officeする** <p> _EnableSafeDocs_|オフ <p> `$false`|オン <p> `$true`|この機能は、Defender for Office 365に含まれていないライセンス (たとえば、Microsoft 365 E5またはMicrosoft 365 E5 Security)。 詳細については、「ドキュメントの[セーフ」を参照Microsoft 365 E5。](safe-docs.md)|
 |**ドキュメントでファイルが悪意のあると特定セーフ場合でも、保護されたビューをクリックできます** <p> _AllowSafeDocsOpen_|Off <p> `$false`|Off <p> `$false`|この設定は、ドキュメントのセーフです。|
 |
@@ -311,7 +311,7 @@ PowerShell では、これらの設定に [New-SafeAttachmentPolicy](/powershell
 
 |セキュリティ機能名|既定のカスタム|組み込みの保護|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|:---:|---|
-|**セーフ添付ファイル不明のマルウェア応答** <p> _有効にして__操作する_|**オフ** <p> `-Enable $false` と `-Action Block`|**Block** <p> `-Enable $true` と `-Action Block`|**Block** <p> `-Enable $true` と `-Action Block`|**Block** <p> `-Enable $true` と `-Action Block`|Enable パラメーター _が_ 有効 _$false、Action_ パラメーターの値は関係ありません。|
+|**セーフ 添付ファイル不明のマルウェア応答** <p> _有効にして__操作する_|**オフ** <p> `-Enable $false` と `-Action Block`|**Block** <p> `-Enable $true` と `-Action Block`|**Block** <p> `-Enable $true` と `-Action Block`|**Block** <p> `-Enable $true` と `-Action Block`|Enable パラメーター _が_ 有効 _$false、Action_ パラメーターの値は関係ありません。|
 |**検疫ポリシー** (_QuarantineTag_)|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|新しい セーフ 添付ファイル ポリシーを作成すると、空白の値は、既定の検疫ポリシーを使用して、セーフ 添付ファイル (AdminOnlyAccessPolicy) によって検疫されたメッセージの履歴機能を定義します。 <p> 管理者は、ユーザーに対してより多くの機能を定義するカスタム検疫ポリシーを作成および選択できます。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。|
 |**検出された添付ファイルを含む添付ファイルのリダイレクト** : **リダイレクトを有効にする** <p> _リダイレクトする_ <p> _RedirectAddress_|選択されていないと、電子メール アドレスが指定されていません。 <p> `-Redirect $false` <p> _RedirectAddress が_ 空白 ( `$null` )|選択されていないと、電子メール アドレスが指定されていません。 <p> `-Redirect $false` <p> _RedirectAddress が_ 空白 ( `$null` )|電子メール アドレスを選択して指定します。 <p> `$true` <p> 電子メール アドレス|電子メール アドレスを選択して指定します。 <p> `$true` <p> 電子メール アドレス|メッセージをセキュリティ管理者にリダイレクトして確認します。 <p> **注**: この設定は、Standard、Strict、**または** 組み込みの保護事前設定 **セキュリティ ポリシーでは** 構成されていません。  Standard **と** **Strict の値は**、**新しい添付** ファイル ポリシーでセーフ値を示します。|
 |**スキャンが完了できないセーフ添付ファイル検出応答を適用する (タイムアウトまたはエラー)** <p> _ActionOnError_|選択済み <p> `$true`|選択済み <p> `$true`|選択済み <p> `$true`|選択済み <p> `$true`||
@@ -319,7 +319,7 @@ PowerShell では、これらの設定に [New-SafeAttachmentPolicy](/powershell
 
 ### <a name="safe-links-settings"></a>セーフリンクの設定
 
-セーフDefender for Office 365 のリンクには、アクティブな セーフ リンク ポリシーに含まれるすべてのユーザーに適用されるグローバル設定と、各 セーフ リンク ポリシーに固有の設定が含まれます。 詳細については、「Defender[セーフリンク」を参照Office 365。](safe-links.md)
+セーフ Defender for Office 365 のリンクには、アクティブな セーフ リンク ポリシーに含まれるすべてのユーザーに適用されるグローバル設定と、各 セーフ リンク ポリシーに固有の設定が含まれます。 詳細については、「Defender[セーフリンク」を参照Office 365。](safe-links.md)
 
 既定の セーフ リンク ポリシーは使用されませんが、組み込みの保護プリセット セキュリティ ポリシーは、すべての受信者 (カスタム セーフ リンク ポリシーで定義されていないユーザー) に セーフ リンク保護を提供します。 詳細については、「EOP でのセキュリティ ポリシーの事前設定」および[「Microsoft Defender for microsoft Defender for Office 365」 を参照してください](preset-security-policies.md)。
 
@@ -346,7 +346,7 @@ PowerShell では、これらの設定に [Set-AtpPolicyForO365](/powershell/mod
 |**ユーザーがアプリの元の URL をクリックOffice 365しない** <p> _AllowClickThrough_|オン <p> `$false`|オン <p> `$false`|この設定 _(AllowClickThrough_ をに設定) をオンにすると、サポートされているアプリの元の URL をクリックOffice 365 `$false` されません。|
 |
 
-#### <a name="safe-links-policy-settings"></a>セーフリンク ポリシーの設定
+#### <a name="safe-links-policy-settings"></a>セーフリンク ポリシー設定
 
 これらの設定を構成するには、「Microsoft Defender で セーフ リンク ポリシーを設定[する」を参照Office 365。](set-up-safe-links-policies.md)
 

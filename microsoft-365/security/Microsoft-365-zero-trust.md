@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365ゼロ信頼展開計画
+title: Microsoft 365 ゼロ トラスト展開プラン
 f1.keywords:
 - CSH
 ms.author: bcarter
@@ -16,14 +16,14 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: ゼロ信頼の原則、アーキテクチャ、および機能を実装Microsoft 365。
-ms.openlocfilehash: ef4f3795f5acb9e9c6011d800e930d16207a43b8
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: 0328c6db55a6cd277df0fdbdb5741d55ee79663e
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61129379"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284615"
 ---
-# <a name="microsoft-365-zero-trust-deployment-plan"></a>Microsoft 365ゼロトラスト展開計画
+# <a name="microsoft-365-zero-trust-deployment-plan"></a>Microsoft 365 ゼロ トラスト展開プラン
 
 この記事では、ゼロ トラストセキュリティを構築する展開計画について説明します。Microsoft 365。 ゼロ信頼は、侵害を前提とする新しいセキュリティ モデルであり、制御されていないネットワークから発生した場合と同様に各要求を検証します。 要求の発信元やアクセスするリソースに関係なく、ゼロ信頼モデルは「信頼しない、常に確認する」ことを教えています。
 
@@ -60,9 +60,9 @@ Microsoft 365は、ゼロトラストを環境に組み込むのに役立つ多�
 この図は、ゼロ信頼機能を展開する作業を表しています。 この作業は、一緒に構成できる作業単位に分割され、一番下から上に作業し、前提条件の作業が完了するようにします。
 
 
-:::image type="content" source="../media/zero-trust/m365-zero-trust-deployment-stack.png" alt-text="Microsoft 365信頼の展開スタック" lightbox="../media/zero-trust/m365-zero-trust-deployment-stack.png":::
+:::image type="content" source="../media/zero-trust/m365-zero-trust-deployment-stack.png" alt-text="Microsoft 365 ゼロトラスト展開スタック" lightbox="../media/zero-trust/m365-zero-trust-deployment-stack.png":::
 
-この図では、次の例を示します。
+この図について:
 - ゼロ信頼は、ID とデバイス保護の基礎から始まります。 
 - 脅威保護機能は、この基盤の上に構築され、セキュリティ脅威のリアルタイム監視と修復を提供します。 
 - 情報保護とガバナンスは、特定の種類のデータを対象とした高度な制御を提供し、最も価値のある情報を保護し、個人情報の保護を含むコンプライアンス基準を遵守するのに役立ちます。
@@ -91,7 +91,7 @@ Microsoft 365は、ゼロトラストを環境に組み込むのに役立つ多�
 :::image type="content" source="../media/zero-trust/identity-access-starting-point-tier.png" alt-text="ゼロトラスト ID とデバイス アクセス ポリシー - 開始点層" lightbox="../media/zero-trust/identity-access-starting-point-tier.png":::
 
 
-## <a name="step-2-manage-endpoints-with-intune"></a>手順 2。 Intune を使用してエンドポイントを管理する
+## <a name="step-2-manage-endpoints-with-intune"></a>手順 2. Intune を使用してエンドポイントを管理する
 
 次に、デバイスを管理に登録し、より高度なコントロールで保護を開始します。 
 

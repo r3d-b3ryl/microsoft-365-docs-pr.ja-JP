@@ -2,7 +2,6 @@
 title: ID API によるアラート情報の取得
 description: ID API によるアラート情報の取得を使用して、Microsoft Defender for Endpoint の ID で特定のアラートを取得する方法について説明します。
 keywords: apis, graph api, supported apis, get, alert, information, id
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 76d7032b278a848fa74d149293c9a3d5d70dcc6f
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 09866afa2b965f8587114d49f92d8068c535a0c7
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168236"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283931"
 ---
 # <a name="get-alert-information-by-id-api"></a>ID API によるアラート情報の取得
 

@@ -17,14 +17,14 @@ ms.custom:
 - nextgen
 - admindeeplinkDEFENDER
 ms.technology: mde
-ms.date: 10/18/2021
+ms.date: 12/02/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b812ffc9e3e476f05cd272a622f1a78a7ef9b93c
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 21a7d111d27042d8085ca196ef679b06c2c9f1a3
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61163340"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61282767"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>改ざん防止機能を使用してセキュリティ設定を保護する
 
@@ -42,7 +42,7 @@ ms.locfileid: "61163340"
 - Windows Server 2012 R2
 
 > [!NOTE]
-> 最新の統合ソリューション Windows Server 2012を使用してオンボードされたデバイスでは、R2 のタンパープロテクションを使用できます。 詳細については[、「R2 および 2016 Preview](/microsoft-365/security/defender-endpoint/configure-server-endpoints?view=o365-worldwide#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)の最新の統合ソリューションの新機能Windows Server 2012を参照してください。
+> 最新の統合ソリューション Windows Server 2012を使用してオンボードされたデバイスでは、R2 のタンパープロテクションを使用できます。 詳細については[、「R2 および 2016 Preview](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)の最新の統合ソリューションの新機能Windows Server 2012を参照してください。
 
 ## <a name="overview"></a>概要
 
@@ -57,7 +57,7 @@ ms.locfileid: "61163340"
 - クラウド配信の保護の無効化
 - セキュリティ インテリジェンスの更新プログラムの削除
 
-### <a name="how-it-works"></a>しくみ
+### <a name="how-it-works"></a>メカニズム
 
 タンパープロテクションMicrosoft Defender ウイルス対策セキュリティで保護された既定値にロックされ、次のようなアプリやメソッドを介してセキュリティ設定が変更されるのを防ぐ。
 
@@ -94,7 +94,7 @@ ms.locfileid: "61163340"
 
 |タンパープロテクションを有効にする方法|クラウドによる保護への依存 (MAPS)|
 |---|---|
-|Microsoft Intune|いいえ|
+|Microsoft Intune|不要|
 |Microsoft Endpoint Configuration Manager + テナント接続|いいえ|
 |Microsoft 365 Defender ポータル ( [https://security.microsoft.com](https://security.microsoft.com) )|はい|
 |
@@ -137,7 +137,7 @@ ms.locfileid: "61163340"
 
 :::image type="content" source="../../media/mde-turn-tamperprotectionon.png" alt-text="ポータルで改ざん防止を有効Microsoft 365 Defenderします。":::
 
-1. ポータルに移動<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderサインイン</a>します。
+1. ポータル ( ) にMicrosoft 365 Defenderサインイン [https://security.microsoft.com](https://security.microsoft.com) します。
 
 2. [**エンドポイント設定** \> **を選択します**。
 

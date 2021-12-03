@@ -2,7 +2,6 @@
 title: ファイル関連のコンピューター API を取得する
 description: ファイル関連コンピューターの取得 API を使用して、Microsoft Defender for Endpoint のファイル ハッシュに関連するコンピューターのコレクションを取得する方法について説明します。
 keywords: apis, graph api, supported apis, get, devices, hash
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f50864609ff5143181fa6dd12093d3c82f82955a
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: cce211ca79a6e00484174c989ebc6224a1fdc03c
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168644"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284219"
 ---
 # <a name="get-file-related-machines-api"></a>ファイル関連のコンピューター API を取得する
 

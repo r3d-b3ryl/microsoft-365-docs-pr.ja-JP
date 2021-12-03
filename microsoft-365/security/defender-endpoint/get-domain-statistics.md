@@ -2,7 +2,6 @@
 title: ドメイン統計 API の取得
 description: Get domain statistics API を使用して、Microsoft Defender for Endpoint の特定のドメインの統計情報を取得する方法について説明します。
 keywords: apis、graph api、サポートされている API、get、ドメイン、ドメイン関連デバイス
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5cb8e5f47a84cad5a22df0cf13756e43e1baf370
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 2e07b9545ef6bab0c7b93188edf65d43ae0378b2
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166376"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61282839"
 ---
 # <a name="get-domain-statistics-api"></a>ドメイン統計 API の取得
 

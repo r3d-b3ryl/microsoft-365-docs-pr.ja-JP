@@ -2,7 +2,6 @@
 title: アラート API の取得
 description: Microsoft Defender for Endpoint の Alert リソースタイプのメソッドとプロパティについて説明します。
 keywords: apis, graph api, supported apis, get, alerts, recent
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9171fe01cfe03769cac29110352cf4d0d9fe0061
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 3344bb13d785739f7957c3b0d000b04ae7fea95b
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168824"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284387"
 ---
 # <a name="alert-resource-type"></a>アラート リソースの種類
 
@@ -66,7 +65,7 @@ ms.locfileid: "61168824"
 |---|---|---|
 |id|String|アラート ID。|
 |title|String|警告タイトル。|
-|説明|String|警告の説明。|
+|description|String|警告の説明。|
 |alertCreationTime|Null 許容の DateTimeOffset|アラートが作成された日付と時刻 (UTC)。|
 |lastEventTime|Null 許容の DateTimeOffset|同じデバイスでアラートをトリガーしたイベントの最後の発生。|
 |firstEventTime|Null 許容の DateTimeOffset|そのデバイスでアラートをトリガーしたイベントの最初の発生。|

@@ -2,7 +2,6 @@
 title: 調査リソースの種類
 description: Microsoft Defender for Endpoint Investigation エンティティ。
 keywords: apis、graph api、サポートされている API、get、アラート、調査
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +17,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4ecea6cdac4c254126c6f4bad1400a090505c9eb
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 54cf42f18c6e31a11649dccc2181e88ffb21dd51
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218648"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283691"
 ---
 # <a name="investigation-resource-type"></a>調査リソースの種類
 
@@ -60,7 +59,7 @@ ID|String|調査エンティティの ID。
 startTime|DateTime Nullable|調査が作成された日時。
 endTime|DateTime Nullable|調査が完了した日時。
 cancelledBy|String|その調査を取り消したユーザー/アプリケーションの ID。
-状態コード|列挙|調査の現在の状態。 指定できる値は、'Unknown'、'Terminated'、 'SuccessfullyRemediated', '良性', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallyInvestigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'unsupportedAlertType', 'unsupportedAlertType''
+State|列挙|調査の現在の状態。 指定できる値は、'Unknown'、'Terminated'、 'SuccessfullyRemediated', '良性', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallyInvestigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'unsupportedAlertType', 'unsupportedAlertType''
 statusDetails|String|調査の状態に関する追加情報。
 machineId|String|調査が実行されるデバイスの ID。
 computerDnsName|String|調査が実行されるデバイスの名前。

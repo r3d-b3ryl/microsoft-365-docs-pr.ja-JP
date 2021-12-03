@@ -3,8 +3,6 @@ title: 管理と API の概要
 ms.reviewer: ''
 description: Microsoft Defender for Endpoint の管理ツールと API カテゴリについて説明します。
 keywords: オンボーディング、api、siem、rbac、access、portal、統合、調査、応答、エンティティ、エンティティ、ユーザー コンテキスト、アプリケーション コンテキスト、ストリーミング
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6cb2045161133fb35e95fab3e7dfd469ea649545
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 93c6a162d164a473d480df4595a05e36206f8526
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164960"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283043"
 ---
 # <a name="overview-of-management-and-apis"></a>管理と API の概要
 

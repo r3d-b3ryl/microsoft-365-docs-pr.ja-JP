@@ -2,7 +2,6 @@
 title: デバイスごとの評価方法とプロパティのエクスポート
 description: "\"データの取得\" を行う API に脅威と脆弱性の管理します。 さまざまな種類のデータを取得するために、さまざまな API 呼び出しがあります。 一般に、各 API 呼び出しには、組織内のデバイスの必要なデータが含まれる。"
 keywords: api、apis、エクスポート評価、デバイス評価あたり、マシン評価、脆弱性評価レポート、デバイスの脆弱性評価、デバイスの脆弱性レポート、セキュリティで保護された構成評価、セキュリティで保護された構成レポート、ソフトウェアの脆弱性評価、ソフトウェアの脆弱性レポート、マシン別の脆弱性レポート、
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: e394513cdb3170eaa3f347d018bcc13382797271
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 1d3f136f3715b81b245f6b157927ae98a9444c06
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167127"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284447"
 ---
 # <a name="export-assessment-methods-and-properties-per-device"></a>デバイスごとの評価方法とプロパティのエクスポート
 
@@ -84,7 +83,7 @@ deviceName|String|デバイスの完全修飾ドメイン名 (FQDN)。
 isApplicable|ブール|構成またはポリシーが適用可能かどうかを示します。
 isCompliant|ブール|構成またはポリシーが適切に構成されているかどうかを示します。
 isExpectedUserImpact|ブール|構成が適用される場合、ユーザーが影響を受けるかどうかを示します。
-osPlatform|String|デバイスで実行されているオペレーティング システムのプラットフォーム。 同じファミリ内にバリエーションがある特定のオペレーティング システム (Windows 10および Windows 7)。 詳細については、「TVM でサポートされるオペレーティング システムとプラットフォーム」を参照してください。
+osPlatform|String|デバイスで実行されているオペレーティング システムのプラットフォーム。 同じファミリ内にバリエーションがある特定のオペレーティング システム (Windows 10および Windows 11 など)。 詳細については、「TVM でサポートされるオペレーティング システムとプラットフォーム」を参照してください。
 osVersion|String|デバイスで実行されているオペレーティング システムの特定のバージョン。
 rbacGroupName|String|役割ベースのアクセス制御 (RBAC) グループ。 デバイスが RBAC グループに割り当てられていない場合、値は "割り当てられていない" になります。 組織に RBAC グループが含まれている場合、値は "None" になります。
 rbacGroupId|String|役割ベースのアクセス制御 (RBAC) グループ ID。
@@ -119,7 +118,7 @@ DiskPaths|Array[string]|製品がデバイスにインストールされてい�
 EndOfSupportDate|String|このソフトウェアのサポートが終了または終了する日付。
 EndOfSupportStatus|String|サポートの状態の終了。 これらの可能な値を含めることができます。 なし、EOS バージョン、今後の EOS バージョン、EOS ソフトウェア、今後の EOS ソフトウェア。
 NumberOfWeaknesses|Int|このデバイス上のこのソフトウェアの弱点の数。
-OSPlatform|String|デバイスで実行されているオペレーティング システムのプラットフォーム。7 など、同じファミリ内のバリエーションを持つWindows 10オペレーティング Windows。 詳細については、「tvm でサポートされるオペレーティング システムとプラットフォーム」を参照してください。
+OSPlatform|String|デバイスで実行されているオペレーティング システムのプラットフォーム。同じファミリ内のバリエーションを持つ特定のオペレーティング システム (Windows 10 11 Windows。 詳細については、「tvm でサポートされるオペレーティング システムとプラットフォーム」を参照してください。
 RbacGroupName|String|役割ベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "割り当てられていない" になります。 組織に RBAC グループが含まれている場合、値は "None" になります。
 rbacGroupId|String|役割ベースのアクセス制御 (RBAC) グループ ID。
 RegistryPaths|Array[string]|製品がデバイスにインストールされていることを示すレジストリ証拠。
@@ -160,7 +159,7 @@ ExploitabilityLevel|String|この脆弱性の悪用レベル (NoExploit、Exploi
 FirstSeenTimestamp|String|この製品の CVE がデバイスで初めて表示された場合。
 Id|String|レコードの一意の識別子。
 LastSeenTimestamp|String|デバイスで CVE が最後に表示された時刻。
-OSPlatform|String|デバイスで実行されているオペレーティング システムのプラットフォーム。7 など、同じファミリ内のバリエーションを持つWindows 10オペレーティング Windows。 詳細については、「tvm でサポートされるオペレーティング システムとプラットフォーム」を参照してください。
+OSPlatform|String|デバイスで実行されているオペレーティング システムのプラットフォーム。同じファミリ内のバリエーションを持つ特定のオペレーティング システム (Windows 10 11 Windows。 詳細については、「tvm でサポートされるオペレーティング システムとプラットフォーム」を参照してください。
 RbacGroupName|String|役割ベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "割り当てられていない" になります。 組織に RBAC グループが含まれている場合、値は "None" になります。
 rbacGroupId|String|役割ベースのアクセス制御 (RBAC) グループ ID。
 RecommendationReference|String|このソフトウェアに関連する推奨事項 ID への参照。
@@ -193,7 +192,7 @@ ExploitabilityLevel|String|脆弱性の悪用レベル (NoExploit、ExploitIsPub
 FirstSeenTimestamp|String|デバイスで製品の CVE が初めて表示された場合。
 Id|String|レコードの一意の識別子。  
 LastSeenTimestamp|String|デバイスで CVE が最後に表示された時刻。
-OSPlatform|String|デバイスで実行されているオペレーティング システムのプラットフォーム。7 など、同じファミリ内のバリエーションを持つWindows 10オペレーティング Windows。 詳細については、「tvm でサポートされるオペレーティング システムとプラットフォーム」を参照してください。
+OSPlatform|String|デバイスで実行されているオペレーティング システムのプラットフォーム。同じファミリ内のバリエーションを持つ特定のオペレーティング システム (Windows 10 11 Windows。 詳細については、「tvm でサポートされるオペレーティング システムとプラットフォーム」を参照してください。
 RbacGroupName|String|役割ベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "割り当てられていない" になります。 組織に RBAC グループが含まれている場合、値は "None" になります。
 RecommendationReference|String|このソフトウェアに関連する推奨事項 ID への参照。
 RecommendedSecurityUpdate |String|ソフトウェア ベンダーが脆弱性に対処するために提供するセキュリティ更新プログラムの名前または説明。

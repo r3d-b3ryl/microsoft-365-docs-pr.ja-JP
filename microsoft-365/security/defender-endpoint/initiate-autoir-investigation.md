@@ -2,7 +2,6 @@
 title: 調査 API の開始
 description: この API を使用して、デバイスの調査を開始します。
 keywords: apis, graph api, サポートされている API, 調査
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d930fdf8546a4fbb7106e6e0449d1446858bd624
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 4a336824a3f7119de8b02f4ccff10dd7956a4f46
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217685"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283955"
 ---
 # <a name="start-investigation-api"></a>調査 API の開始
 
@@ -58,6 +57,7 @@ ms.locfileid: "61217685"
 - Windows 10バージョン 1709 (OS ビルド 16299.1085[および KB4493441)](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)以降
 - Windows 10バージョン 1803 (OS ビルド 17134.704[および KB4493464)](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)以降
 - Windows 10バージョン[1803](/windows/release-information/status-windows-10-1809-and-windows-server-2019)以降
+- Windows 11
 
 ## <a name="permissions"></a>アクセス許可
 

@@ -2,7 +2,6 @@
 title: インジケーター API を削除します。
 description: Delete Indicator API を使用して、Microsoft Defender for Endpoint の ID でインジケーター エンティティを削除する方法について説明します。
 keywords: apis, public api, supported apis, delete, ti indicator, entity, id
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: ab0c256331b6f4220a7e6f0b890dd5735530873f
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 6122c50018bb44f0e5812263339a7644868fd0d2
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165488"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283943"
 ---
 # <a name="delete-indicator-api"></a>インジケーター API の削除
 

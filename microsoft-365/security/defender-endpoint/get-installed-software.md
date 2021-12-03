@@ -2,7 +2,6 @@
 title: インストールされたソフトウェアを取得する
 description: 特定のデバイス ID に関連するインストール済みソフトウェアのコレクションを取得します。
 keywords: apis、 graph api, supported apis, get, list, file, information, software inventory, installed software per device, threat & 脆弱性の管理 api, Microsoft Defender for Endpoint tvm api
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f42fdb4c961c1f8d12c46d27a7e05cd956e606f7
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: a853a346b26d66708f81a1b8479cb7066c29745a
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167128"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61282852"
 ---
 # <a name="get-installed-software"></a>インストールされたソフトウェアを取得する
 

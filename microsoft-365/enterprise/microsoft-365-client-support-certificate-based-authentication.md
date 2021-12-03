@@ -1,5 +1,5 @@
 ---
-title: 'Microsoft 365クライアント アプリのサポート: 証明書ベースの認証'
+title: 'Microsoft 365 クライアント アプリのサポート: 証明書ベースの認証'
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -16,14 +16,14 @@ f1.keywords:
 - NOCSH
 description: この記事では、証明書ベース認証Microsoft 365クライアント アプリのサポートに関する詳細を確認します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 81643c6f3b693fe447b29ecc6dc5d11e65da0533
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 57f86d7cba4e6723b2f7ef6261a708f16b6e74be
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195367"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284423"
 ---
-# <a name="microsoft-365-client-app-support-certificate-based-authentication"></a>Microsoft 365クライアント アプリのサポート: 証明書ベースの認証
+# <a name="microsoft-365-client-app-support-certificate-based-authentication"></a>Microsoft 365 クライアント アプリのサポート: 証明書ベースの認証
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
@@ -32,7 +32,7 @@ ms.locfileid: "60195367"
 - **認証方法**: 多要素認証。クライアント証明書ベースの認証。
 - **承認方法**: Microsoft による Open Authorization (OAuth) の実装。
 
-Active Directory 認証ライブラリ (ADAL) や Microsoft 認証ライブラリ (MSAL) など、認証ライブラリを使用して、最新の認証を有効にします。 最新の認証とは、クライアントがリソースへのアクセスを認証および承認するために使用Microsoft 365です。 最新の認証では、OAuth を使用し、クライアントがユーザー資格情報にアクセスすることなく、Microsoft 365サービスにアクセスするための安全なメカニズムを提供します。 サインイン時に、ユーザーはユーザーに対して直接認証Azure Active Directoryアクセス/更新トークンのペアを受け取ります。 アクセス トークンは、クライアント がテナント内の適切なリソースにアクセスMicrosoft 365します。 更新トークンは、現在のアクセス トークンの有効期限が切れたときに、新しいアクセス トークンまたは更新トークンのペアを取得するために使用されます。
+最新の認証は、Microsoft 認証ライブラリ [(MSAL) のような認証ライブラリを使用して有効になります](/azure/active-directory/develop/msal-overview)。 最新の認証とは、クライアントがリソースへのアクセスを認証および承認するために使用Microsoft 365です。 最新の認証では、OAuth を使用し、クライアントがユーザー資格情報にアクセスすることなく、Microsoft 365サービスにアクセスするための安全なメカニズムを提供します。 サインイン時に、ユーザーはユーザーに対して直接認証Azure Active Directoryアクセス/更新トークンのペアを受け取ります。 アクセス トークンは、クライアント がテナント内の適切なリソースにアクセスMicrosoft 365します。 更新トークンは、現在のアクセス トークンの有効期限が切れたときに、新しいアクセス トークンまたは更新トークンのペアを取得するために使用されます。
 
 最新の認証では、証明書ベースの認証など、さまざまな認証メカニズムがサポートされています。 デバイス、Windows、または iOS デバイス上のクライアントは、証明書ベース認証 (CBA) を使用して、Azure Active Directoryを使用して認証できます。 一般的なユーザー名/パスワードの代わりに、証明書を使用してアクセス/更新トークンのペアをAzure Active Directory。
 
@@ -51,6 +51,6 @@ Active Directory 認証ライブラリ (ADAL) や Microsoft 認証ライブラ�
 
 ## <a name="supported-powershell-modules"></a>サポートされている PowerShell モジュール
 
-- [Azure Active DirectoryPowerShell](/powershell/azure/active-directory/overview)
+- [Azure Active Directory PowerShell](/powershell/azure/active-directory/overview)
 - [Exchange Online の PowerShell](/powershell/exchange/exchange-online-powershell)
-- [SharePointオンライン PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
+- [SharePoint PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)

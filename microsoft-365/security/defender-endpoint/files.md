@@ -2,7 +2,6 @@
 title: ファイル リソースの種類
 description: ファイルに関連する最近の Microsoft Defender for Endpoint アラートを取得します。
 keywords: apis, graph api, supported apis, get, alerts, recent
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: aa1eaf1cf26af415d134c6a8f0faed5643e787b5
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 7fef64136e27b8b9a85163fe9e25fdf59ab6d2aa
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167804"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283487"
 ---
 # <a name="file-resource-type"></a>ファイル リソースの種類
 
@@ -67,7 +66,7 @@ Defender for Endpoint のファイル エンティティを表します。
 |署名者 | String | ファイル署名者 |
 |issuer | String | ファイル発行者 |
 |signerHash | String | 署名証明書のハッシュ |
-|isValidCertificate | Boolean | Microsoft Defender for Endpoint エージェントによって証明書の署名が正常に確認されました |
+|isValidCertificate | ブール値 | Microsoft Defender for Endpoint エージェントによって証明書の署名が正常に確認されました |
 |determinationType | String | ファイルの決定の種類 |
 |determinationValue | String | 判定値 |
 

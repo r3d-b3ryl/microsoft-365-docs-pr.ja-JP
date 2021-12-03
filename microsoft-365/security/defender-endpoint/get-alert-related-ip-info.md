@@ -2,7 +2,6 @@
 title: アラート関連の AP の情報を取得する
 description: Microsoft Defender for Endpoint を使用して、特定のアラートに関連するすべての AP を取得します。
 keywords: apis、graph api、サポートされている API、アラート情報の取得、アラート情報、関連 IP
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 00761e07dd0018236e58aaa5a36efec0cc16ebd5
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 58b7ef4b180824d09fd0539530107771b74ea709
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168212"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283895"
 ---
 # <a name="get-alert-related-ips-information-api"></a>アラート関連の AP の情報 API を取得する
 

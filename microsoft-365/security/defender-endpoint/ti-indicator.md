@@ -2,7 +2,6 @@
 title: インジケーター リソースの種類
 description: エンティティの詳細を指定し、Microsoft Defender for Endpoint を使用してインジケーターの有効期限を定義します。
 keywords: apis, サポートされている api, get, TiIndicator, Indicator, recent
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1d66221b1cdea7bd5a0399bb43663f024baa6374
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 8e8660574f65d614bacfe705d7fad19e39d501a6
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165635"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61282802"
 ---
 # <a name="indicator-resource-type"></a>インジケーター リソースの種類
 
@@ -67,7 +66,7 @@ expirationTime|DateTimeOffset|インジケーターの有効期限。
 lastUpdateTime|DateTimeOffset|インジケーターが最後に更新された時刻。
 severity|列挙|インジケーターの重大度。 指定できる値は、"Informational"、"Low"、"Medium"、"High" です。
 title|String|インジケーター のタイトル。
-説明|String|インジケーターの説明。
+description|String|インジケーターの説明。
 recommendedActions|String|インジケーターの推奨アクション。
 rbacGroupNames|文字列の一覧|インジケーターが公開され、アクティブな RBAC デバイス グループ名。 すべてのデバイスに公開されている場合の空のリスト。
 rbacGroupIds|文字列の一覧|RBAC デバイス グループ ID は、インジケーターが公開され、アクティブな場所です。 すべてのデバイスに公開されている場合の空のリスト。

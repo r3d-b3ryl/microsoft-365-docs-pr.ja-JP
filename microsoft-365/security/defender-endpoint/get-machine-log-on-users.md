@@ -2,8 +2,7 @@
 title: コンピューター ログオン ユーザー API の取得
 description: コンピューター ログオン ユーザーの取得 API を使用して、Microsoft Defender for Endpoint のデバイスでログオンしているユーザーのコレクションを取得する方法について説明します。
 keywords: apis, graph api, サポートされている api, get, device, log on, users
-search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 11091deb15e311797fbfd124600d4dff0e6499a5
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: b45ce1de5b2149251b691d81c29aea717d5dffc9
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61163736"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61282779"
 ---
 # <a name="get-machine-logon-users-api"></a>コンピューター ログオン ユーザー API の取得
 

@@ -22,12 +22,12 @@ ms.custom:
 description: 管理者は、潜在的に危険なメッセージまたは望ましくないメッセージExchange Online Protection (EOP) の検疫について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 58097b5dba60c1ea085ea6e78c878982abe24021
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 509e093d1618cf17d8f5f880aa82a2c54e8204bf
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60703623"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284147"
 ---
 # <a name="quarantined-email-messages-in-eop-and-defender-for-office-365"></a>EOP および Defender で検疫された電子メール Office 365
 
@@ -63,12 +63,12 @@ Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Pro
   ****
 
   |検疫の理由|既定の保持期間|カスタマイズ可能ですか?|コメント|
-  |---|:---:|:---:|---|
-  |スパム対策ポリシーによって検疫されたメッセージ: スパム、高信頼スパム、フィッシング、高信頼フィッシング、またはバルク。|30 日間|はい|スパム対策ポリシーでこの値を構成 (低く) できます。 詳細については、「スパム **対策ポリシーの** 構成」の「この日数の検疫にスパムを保持する (_QuarantineRetentionPeriod_) 」 [の設定を参照してください](configure-your-spam-filter-policies.md)。|
+  |---|---|:---:|---|
+  |スパム対策ポリシーによって検疫されたメッセージ: スパム、高信頼スパム、フィッシング、高信頼フィッシング、またはバルク。|15 日間: <ul><li>既定のスパム対策ポリシーで。</li><li>PowerShell で作成するスパム対策ポリシー。</li></ul> <p> ポータルで作成したスパム対策ポリシーで 30 Microsoft 365 Defender。|はい|スパム対策ポリシーでこの値を構成 (低く) できます。 詳細については、「スパム **対策ポリシーの** 構成」の「この日数の検疫にスパムを保持する (_QuarantineRetentionPeriod_) 」 [の設定を参照してください](configure-your-spam-filter-policies.md)。|
   |フィッシング対策ポリシーによって検疫されたメッセージ: EOP のスプーフィング インテリジェンス。Defender のユーザー偽装、ドメイン偽装、またはメールボックス インテリジェンスOffice 365。|30 日間|はい|この保持期間は、スパム対策ポリシーの [この日数の検疫にスパムを保持する **(** _QuarantineRetentionPeriod)_ 設定によって **も** 制御されます。 使用される保持期間は、受信者が定義されている最初に一致するスパム対策ポリシーの値です。|
   |マルウェア対策ポリシー (マルウェア メッセージ) によって検疫されたメッセージ。|15 日|いいえ||
-  |Defender の添付ファイル セーフによって検疫されたメッセージ (マルウェア Office 365メッセージ)。|15 日|いいえ||
-  |メール フロー ルールによって検疫されたメッセージ: アクションは、メッセージをホストされた検疫 (検疫)**に配信**_します_。|30 日間|いいえ||
+  |Defender の添付ファイル セーフによって検疫されたメッセージ (マルウェア Office 365メッセージ)。|15 日|不要||
+  |メール フロー ルールによって検疫されたメッセージ: アクションは、メッセージをホストされた検疫 (検疫)**に配信**_します_。|30 日間|不要||
   |[添付ファイル] セーフ、SharePoint、OneDrive(マルウェア ファイルMicrosoft Teams) によって検疫されたファイル。|15 日|いいえ||
   |
 

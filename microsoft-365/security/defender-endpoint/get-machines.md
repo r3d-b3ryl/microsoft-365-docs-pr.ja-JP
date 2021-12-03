@@ -2,8 +2,7 @@
 title: マシン API の一覧
 description: リスト コンピューター API を使用して、Microsoft Defender for Endpoint クラウドと通信したコンピューターのコレクションを取得する方法について説明します。
 keywords: apis, graph api, supported apis, get, devices
-search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,12 +15,12 @@ ms.topic: article
 ms.collection: M365-security-compliance
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1f52bae335a50a901b4a9e8fca2f758434aa37b1
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 6e522f2baac234097ed75d26eb1427719211a7de
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61163652"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284651"
 ---
 # <a name="list-machines-api"></a>マシン API の一覧
 
@@ -113,7 +112,7 @@ Content-type: application/json
             "computerDnsName": "mymachine1.contoso.com",
             "firstSeen": "2018-08-02T14:55:03.7791856Z",
             "lastSeen": "2018-08-02T14:55:03.7791856Z",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "version": "1709",
             "osProcessor": "x64",
             "lastIpAddress": "172.17.230.209",

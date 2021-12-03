@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ポリシーまたは保持ラベル ポリシーで構成できる設定を理解して、必要なものを保持し、不要なものを取り除きます。
-ms.openlocfilehash: ade850732a637356e4bb0d3b4de3ea8a8ac6c683
-ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
+ms.openlocfilehash: 049181657dd74639fb4c4a22e371015830baf19a
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61240818"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61282983"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>保持ポリシーと保持ラベルの制限
 
@@ -220,7 +220,7 @@ Skype for Business を除き、既定では、選択した場所のすべての�
 
 リソース メールボックス、連絡先、および Microsoft 365 グループ メールボックスは、Exchange メールではサポートされていません。 Microsoft 365 グループ メールボックスの場合は、代わりに **Microsoft 365 グループ** の場所を選択します。 Exchange の場所では、最初は静的スコープに対してグループ メールボックスを選択できますが、アイテム保持ポリシーを保存しようとすると、"RemoteGroupMailbox" はこの場所の有効な選択ではないというエラーが表示されます。
 
-ポリシーの構成によっては、[非アクティブなメールボックス](create-and-manage-inactive-mailboxes.md)が含まれる場合と含まれない場合があります。
+ポリシーの構成によっては、[非アクティブなメールボックス](inactive-mailboxes-in-office-365.md)が含まれる場合と含まれない場合があります。
 
 - 既定の **すべての受信者** 構成を使用する場合、静的ポリシー スコープには非アクティブなメールボックスが含まれますが、[特定の包含または除外](#a-policy-with-specific-inclusions-or-exclusions)ではサポートされていません。 ただし、ポリシーの適用時にアクティブなメールボックスを持つ受信者を含めたり除外したりして、後でメールボックスが非アクティブになった場合、保持設定は引き続き適用または除外されます。
 

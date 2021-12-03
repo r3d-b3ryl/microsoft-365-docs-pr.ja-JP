@@ -3,7 +3,6 @@ title: ユーザーなしで Microsoft Defender for Endpoint にアクセスす�
 ms.reviewer: ''
 description: ユーザーなしで Microsoft Defender for Endpoint へのプログラムによるアクセスを取得する Web アプリを設計する方法について説明します。
 keywords: apis, graph api, サポートされている API, アクター, アラート, デバイス, ユーザー, ドメイン, IP, ファイル, 高度なハンティング, クエリ
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 343a1c8d8ca782f9562cad5aa42915e8ac65440d
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: e32f05792b4658c7d7b42f78e88d989dfb134a78
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167816"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283186"
 ---
 # <a name="create-an-app-to-access-microsoft-defender-for-endpoint-without-a-user"></a>ユーザーなしで Microsoft Defender for Endpoint にアクセスするアプリを作成する
 
@@ -55,7 +54,7 @@ Microsoft Defender for Endpoint は、一連のプログラム API を通じて�
 
 2. [アプリの **登録Azure Active Directory** \> **新しい登録]** \> **に移動します**。 
 
-   ![アプリケーションの登録Microsoft Azureナビゲーションのイメージ。](images/atp-azure-new-app2.png)
+    :::image type="content" alt-text="アプリケーションの登録Microsoft Azureナビゲーションのイメージ。" source="images/atp-azure-new-app2.png" lightbox="images/atp-azure-new-app2.png":::
 
 3. 登録フォームで、アプリケーションの名前を選択し、[登録] を **選択します**。
 
@@ -64,11 +63,11 @@ Microsoft Defender for Endpoint は、一連のプログラム API を通じて�
    > [!NOTE]
    > *WindowsDefenderATP* は元のリストには表示されません。 テキスト ボックスに名前を書き始め、表示を確認します。
 
-   ![アクセス許可を追加します。](images/add-permission.png)
+   :::image type="content" alt-text="アクセス許可を追加します。" source="images/add-permission.png" lightbox="images/add-permission.png":::
 
-   - [ **アプリケーションのアクセス許可** \> **Alert.Read.All] を選択** し、[アクセス許可の **追加] を選択します**。
+   [ **アプリケーションのアクセス許可** \> **Alert.Read.All] を選択** し、[アクセス許可の **追加] を選択します**。
 
-   ![アプリのアクセス許可。](images/application-permissions.png)
+   :::image type="content" alt-text="アプリのアクセス許可。" source="images/application-permissions.png" lightbox="images/application-permissions.png":::
 
      関連するアクセス許可を選択する必要があります。 'すべてのアラートの読み取り' は、一例にすすみです。 例:
 
@@ -92,7 +91,7 @@ Microsoft Defender for Endpoint は、一連のプログラム API を通じて�
 
 7. アプリケーション ID とテナント ID を書き出します。 アプリケーション ページで、[概要] に移動 **し** 、次をコピーします。
 
-   ![作成されたアプリ ID のイメージ。](images/app-and-tenant-ids.png)
+   :::image type="content" alt-text="作成されたアプリ ID のイメージ。" source="images/app-and-tenant-ids.png" lightbox="images/app-and-tenant-ids.png":::
 
 8. **エンドポイント パートナー向け Microsoft Defender の場合のみ**。 アプリをマルチテナントに設定します (同意後、すべてのテナントで利用できます)。 これは、 **サード パーティ** 製アプリ (たとえば、複数の顧客のテナントで実行することを意図したアプリを作成する場合) に必要です。 これは、 **テナント** でのみ実行するサービスを作成する場合は必須ではありません (たとえば、独自のデータのみを操作する独自の用途用のアプリケーションを作成する場合など)。 アプリをマルチテナントに設定するには、次の方法を実行します。
 
@@ -106,7 +105,7 @@ Microsoft Defender for Endpoint は、一連のプログラム API を通じて�
 
     同意リンクは次のように形成されます。 
 
-    ```
+    ```https
     https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=00000000-0000-0000-0000-000000000000&response_type=code&sso_reload=true
     ```
 
@@ -149,13 +148,13 @@ $token = $authResponse.access_token
 1. [Microsoft.IdentityModel.clients.ActiveDirectory をインストールNuGet Microsoft.IdentityModel.Clients.ActiveDirectory をインストールします](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)。
 1. 次の項目を追加します。
 
-    ```
+    ```csharp
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
     ```
 
 1. 次のコードをアプリにコピーして貼り付けます (3 つの変数を更新することを忘れないでください ```tenantId, appId, appSecret``` )。
 
-    ```
+    ```csharp
     string tenantId = "00000000-0000-0000-0000-000000000000"; // Paste your own tenant ID here
     string appId = "11111111-1111-1111-1111-111111111111"; // Paste your own app ID here
     string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place! 
@@ -182,27 +181,29 @@ $token = $authResponse.access_token
 1. コマンド プロンプトを開き、Azure CLIENT_ID ID に設定します。
 1. Azure CLIENT_SECRETシークレットに設定します。
 1. アプリTENANT_ID Defender for Endpoint にアクセスする顧客の Azure テナント ID に設定します。
-1. 以下のコマンドを実行します。
+1. 次のコマンドを実行します。
 
-```
-curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=https://securitycenter.onmicrosoft.com/windowsatpservice/.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID%/oauth2/v2.0/token" -k
-```
-
-次の形式で回答が表示されます。
-
-```
-{"token_type":"Bearer","expires_in":3599,"ext_expires_in":0,"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIn <truncated> aWReH7P0s0tjTBX8wGWqJUdDA"}
-```
-
+    ```console
+    curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=https://securitycenter.onmicrosoft.com/windowsatpservice/.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID%/oauth2/v2.0/token" -k
+    ```
+    
+    次の形式で回答が表示されます。
+    
+    ```console
+    {"token_type":"Bearer","expires_in":3599,"ext_expires_in":0,"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIn <truncated> aWReH7P0s0tjTBX8wGWqJUdDA"}
+    ```
+    
 ## <a name="validate-the-token"></a>トークンを検証する
 
 正しいトークンを取得していることを確認します。
 
 1. 前の手順で取得したトークンを [JWT](https://jwt.ms) にコピーして貼り付け、デコードします。
-1. 目的のアクセス許可を持つ 'roles' クレームを取得する方法を検証する
-1. 次の図では、エンドポイントのすべての Microsoft Defender の役割に対するアクセス許可を持つ、アプリから取得されたデコードされたトークンを確認できます。
 
-![トークン検証のイメージ。](images/webapp-decoded-token.png)
+1. 目的のアクセス許可を持つ 'roles' クレームを取得する方法を確認します。
+
+   次の図では、エンドポイントのすべての Microsoft Defender の役割に対するアクセス許可を持つ、アプリから取得されたデコードされたトークンを確認できます。
+
+   :::image type="content" alt-text="トークン検証のイメージ。" source="images/webapp-decoded-token.png" lightbox="images/webapp-decoded-token.png":::
 
 ## <a name="use-the-token-to-access-microsoft-defender-for-endpoint-api"></a>トークンを使用して Microsoft Defender for Endpoint API にアクセスする
 
@@ -210,17 +211,18 @@ curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_ty
 1. 送信する http 要求の承認ヘッダーを "Bearer {token}" に設定します (ベアラーは承認スキームです)。
 1. トークンの有効期限は 1 時間です。 同じトークンで複数の要求を送信できます。
 
-次に、要求を送信してアラートの一覧を取得する例を次に **示** C#。 
-```
-    var httpClient = new HttpClient();
+次に、要求を送信してアラートの一覧を取得する例を次に **示** C#。
 
-    var request = new HttpRequestMessage(HttpMethod.Get, "https://api.securitycenter.microsoft.com/api/alerts");
+```csharp
+var httpClient = new HttpClient();
 
-    request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
+var request = new HttpRequestMessage(HttpMethod.Get, "https://api.securitycenter.microsoft.com/api/alerts");
 
-    var response = httpClient.SendAsync(request).GetAwaiter().GetResult();
+request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
-    // Do something useful with the response
+var response = httpClient.SendAsync(request).GetAwaiter().GetResult();
+
+// Do something useful with the response
 ```
 
 ## <a name="see-also"></a>関連項目

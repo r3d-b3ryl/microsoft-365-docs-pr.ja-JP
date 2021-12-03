@@ -2,7 +2,6 @@
 title: ファイル関連のアラート API を取得する
 description: ファイル関連のアラートの取得 API を使用して、Microsoft Defender for Endpoint の特定のファイル ハッシュに関連するアラートのコレクションを取得する方法について説明します。
 keywords: apis, graph api, supported apis, get, file, hash
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 04a10bc02800cbd9d0b3bfb8ddc1920b368052a2
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: b88fc9add77a790c21b3851e3e80f02681308195
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168980"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283252"
 ---
 # <a name="get-file-related-alerts-api"></a>ファイル関連のアラート API を取得する
 

@@ -2,7 +2,6 @@
 title: IP 関連のアラート API を取得する
 description: エンドポイント用 Microsoft Defender を使用して、特定の IP アドレスに関連するアラートのコレクションを取得する
 keywords: apis, graph api, supported apis, get, ip, related, alerts
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a14dab02a24856a925dff4fa80f12c67167626a3
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: b46e67a6fe2d30a4b6480b88ea3a40f842227669
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166916"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283787"
 ---
 # <a name="get-ip-related-alerts-api"></a>IP 関連のアラート API を取得する
 

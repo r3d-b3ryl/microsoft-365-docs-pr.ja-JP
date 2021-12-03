@@ -2,7 +2,6 @@
 title: 調査オブジェクト API の取得
 description: この API を使用して、Investigation オブジェクトの取得に関連する呼び出しを作成する
 keywords: apis, graph api, supported apis, Investigation オブジェクト
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: c5d6dc6c8b54422f83f5692bfcea333f4d61dd1e
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 8fc4fea909fcaa2ebfd755d47a7282419c2860b9
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166928"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61282816"
 ---
 # <a name="get-investigation-api"></a>調査 API の取得
 

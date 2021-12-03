@@ -2,8 +2,7 @@
 title: ID API でコンピューターを取得する
 description: Id によるコンピューターの取得 API を使用して、Microsoft Defender for Endpoint のデバイス ID またはコンピューター名でコンピューターを取得する方法について説明します。
 keywords: apis、graph api、サポートされている API、get、デバイス、エンティティ、ID
-search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: e77074c94578c36373cb1aee208b48b097437451
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 14b00e936111c54cd100e847a9ec18f921e34880
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61163820"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283235"
 ---
 # <a name="get-machine-by-id-api"></a>ID API でコンピューターを取得する
 
@@ -107,7 +106,7 @@ Content-type: application/json
     "computerDnsName": "mymachine1.contoso.com",
     "firstSeen": "2018-08-02T14:55:03.7791856Z",
     "lastSeen": "2018-08-02T14:55:03.7791856Z",
-    "osPlatform": "Windows10",
+    "osPlatform": "Windows10" "Windows11",
     "version": "1709",
     "osProcessor": "x64",
     "lastIpAddress": "172.17.230.209",

@@ -3,7 +3,6 @@ title: 高度な追求 API
 ms.reviewer: ''
 description: 高度なハンティング API を使用して、Microsoft Defender for Endpoint で高度なクエリを実行する方法について説明します。 制限について説明し、例を参照してください。
 keywords: apis、サポートされている API、高度な検索、クエリ
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0e77e0658ae4eda969a16043170a026cd1784825
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 2e5898c0227128c099c7f0fe1ca99a6d9c8001ef
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168032"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283079"
 ---
 # <a name="advanced-hunting-api"></a>高度なハンティング API
 

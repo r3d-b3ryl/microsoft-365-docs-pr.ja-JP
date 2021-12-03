@@ -2,7 +2,6 @@
 title: ファイル統計 API の取得
 description: Get file statistics API を使用して、Microsoft Defender for Endpoint で指定されたファイルの統計情報を取得する方法について説明します。
 keywords: apis, graph api, supported apis, get, file, statistics
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: c30422d7fe24fc50f378c65212357f954d05c601
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 83901799d6dc5e8f6aa81ad57580e64167bfa134
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168632"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284207"
 ---
 # <a name="get-file-statistics-api"></a>ファイル統計 API の取得
 

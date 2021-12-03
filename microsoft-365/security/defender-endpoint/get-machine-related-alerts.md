@@ -2,8 +2,7 @@
 title: コンピューター関連のアラート API を取得する
 description: コンピューター関連のアラート API を使用する方法について説明します。 この API を使用すると、Microsoft Defender for Endpoint の特定のデバイスに関連するアラートを取得できます。
 keywords: apis, graph api, サポートされている API, get, デバイス, 関連, アラート
-search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 699fc33a719daeed125812f74c4bd315e94aa0db
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 49cc0fca3ae7617b86ab079daace92eb3790db94
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61163724"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283511"
 ---
 # <a name="get-machine-related-alerts--api"></a>コンピューター関連のアラート API を取得する
 

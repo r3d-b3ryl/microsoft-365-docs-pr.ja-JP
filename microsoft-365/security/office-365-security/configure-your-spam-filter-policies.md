@@ -14,15 +14,16 @@ search.appverid:
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 description: 管理者が、Exchange Online Protection (EOP) で迷惑メール対策ポリシーを表示、作成、変更、削除する方法を説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: caf6d596f6be8e405a75eab10be9daee1aa0ccf6
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 03ed0e111e86a4283e5f54fd4cb61566e88979fb
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60701409"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284471"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>EOP でのスパム対策ポリシーの構成
 
@@ -62,7 +63,7 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- <https://security.microsoft.com> で Microsoft 365 Defender ポータルを開きます。 **[スパム対策ポリシー]** ページに直接移動するには、<https://security.microsoft.com/antispam> を使用します。
+- <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a> で Microsoft 365 Defender ポータルを開きます。 **[スパム対策ポリシー]** ページに直接移動するには、<https://security.microsoft.com/antispam> を使用します。
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
@@ -83,7 +84,7 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
 
 Microsoft 365 Defender ポータルでカスタムのスパム対策ポリシーを作成すると、スパム フィルター ルールと関連するスパム フィルター ポリシーが同時に作成され、両方に同じ名前が使われます。
 
-1. Microsoft 365 Defender ポータルで、**[ポリシー]** セクションの **[メールと共同作業]** \>**[ポリシーとルール]** \> **[脅威ポリシー]** \> **[スパム対策]** に移動します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a> で、**[ポリシー]** セクションの **[メールと共同作業]** \> **[ポリシーとルール]** \> **[脅威ポリシー]** \> **[スパム対策]** に移動します。
 
 2. **[スパム対策ポリシー]** ページで、![[アイコンの作成]](../../media/m365-cc-sc-create-icon.png) **[ポリシーの作成]** の順にクリックして、ドロップ ダウンリストから **[Iインバウンド]** を選択します。
 
@@ -166,10 +167,12 @@ Microsoft 365 Defender ポータルでカスタムのスパム対策ポリシー
      >
      > <sup>3</sup> 空白の **[ポリシーを選択]** 値は、特定の判定に対する既定の検疫ポリシーが使用されることを意味します。 後でスパム対策ポリシーを編集するか、設定を表示すると、既定の検疫ポリシー名が表示されます。 スパム フィルター判定に使用される既定の検疫ポリシーの詳細については[この表](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)を参照してください。
 
-   - **スパムを指定した日数隔離しておく**: スパム対策フィルター判定のアクションとして **[メッセージを検疫]** を選択した場合に、メッセージを検疫に保持する期間を指定します。 期間が終了すると、メッセージは削除され、回復できません。 既定値は 30 日です。 有効な値は 1 日から 30 日です。
+   - **スパムを指定した日数隔離しておく**: スパム対策フィルター判定のアクションとして **[メッセージを検疫]** を選択した場合に、メッセージを検疫に保持する期間を指定します。 期間が終了すると、メッセージは削除され、回復できません。 有効な値は 1 日から 30 日です。
 
      > [!NOTE]
-     > この設定では、フィッシング対策ポリシーによって検疫されたメッセージが保持される期間も制御します。 詳細については、[EOP と Defender for Office 365 内の検疫済みメッセージ](quarantine-email-messages.md)に関する記事をご覧ください。
+     > 既定値は、デフォルトのスパム対策ポリシーおよび PowerShell で作成した新しいスパム対策ポリシーでは15日です。 Microsoft 365Defender ポータルで作成する新しいスパム対策ポリシーの規定値は30日です。
+     >
+     > この設定では、**フィッシング対策** ポリシーによって検疫されたメッセージが保持される期間も制御します。 詳細については、[EOP と Defender for Office 365 内の検疫済みメッセージ](quarantine-email-messages.md)に関する記事をご覧ください。
 
    - **この X-ヘッダー テキストを追加する**: このボックスは、**[X-ヘッダーの追加]** を、スパム対策フィルター判定のアクションとして選択した場合にのみ必要で、選択可能になります。 指定する値は、メッセージ ヘッダーに追加されるヘッダー フィールドの *名前* です。 ヘッダー フィールドの *値* は常に `This message appears to be spam` です。
 
@@ -244,7 +247,7 @@ Microsoft 365 Defender ポータルでカスタムのスパム対策ポリシー
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-anti-spam-policies"></a>Microsoft 365 Defender ポータルを使用して、スパム対策ポリシーを表示する
 
-1. Microsoft 365 Defender ポータルで、**[ポリシー]** セクションの **[メールと共同作業]** \>**[ポリシーとルール]** \> **[脅威ポリシー]** \> **[スパム対策]** に移動します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a> で、**[ポリシー]** セクションの **[メールと共同作業]** \> **[ポリシーとルール]** \> **[脅威ポリシー]** \> **[スパム対策]** に移動します。
 
 2. **[スパム対策ポリシー]** ページで、以下のいずれかの値を探します。
    - **[種類]** 値は **カスタムの迷惑メール対策ポリシー** です。
@@ -261,7 +264,7 @@ Microsoft 365 Defender ポータルでカスタムのスパム対策ポリシー
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-anti-spam-policies"></a>Microsoft 365 Defender ポータルを使用して、スパム対策ポリシーを変更する
 
-1. Microsoft 365 Defender ポータルで、**[ポリシー]** セクションの **[メールと共同作業]** \>**[ポリシーとルール]** \> **[脅威ポリシー]** \> **[スパム対策]** に移動します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a> で、**[ポリシー]** セクションの **[メールと共同作業]** \> **[ポリシーとルール]** \> **[脅威ポリシー]** \> **[スパム対策]** に移動します。
 
 2. **[迷惑メール対策ポリシー]** ページで、リストから迷惑メール対策ポリシーの名前をクリックして選択します。
    - ユーザーが作成したカスタム ポリシーの場合、**[種類]** 列の値が **[カスタム 迷惑メール対策ポリシー]** になっています。
@@ -277,7 +280,7 @@ Microsoft 365 Defender ポータルでカスタムのスパム対策ポリシー
 
 既定の迷惑メール対策ポリシーを無効にすることはできません。
 
-1. Microsoft 365 Defender ポータルで、**[ポリシー]** セクションの **[メールと共同作業]** \>**[ポリシーとルール]** \> **[脅威ポリシー]** \> **[スパム対策]** に移動します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a> で、**[ポリシー]** セクションの **[メールと共同作業]** \> **[ポリシーとルール]** \> **[脅威ポリシー]** \> **[スパム対策]** に移動します。
 
 2. **[迷惑メール対策ポリシー]** ページで、リストから **[カスタム 迷惑メール対策ポリシー]** の **[種類] 値** の名前をクリックして選択します。
 
@@ -302,7 +305,7 @@ Microsoft 365 Defender ポータルでカスタムのスパム対策ポリシー
 - Microsoft 365 Defender ポータルでは、迷惑メール対策ポリシーの優先度は、そのポリシーの作成後にのみ変更できます。PowerShell では、迷惑メール フィルター ルールの作成時に既定の優先度を上書きできます (既存のルールの優先度に影響を与える可能性があります)。
 - 迷惑メール対策ポリシーは、表示される順に処理されます (最初のポリシーの値は **優先度** が 0)。 既定の迷惑メール対策ポリシーには値 **[Lowest]** が付いており、変更することはできません。
 
-1. Microsoft 365 Defender ポータルで、**[ポリシー]** セクションの **[メールと共同作業]** \>**[ポリシーとルール]** \> **[脅威ポリシー]** \> **[スパム対策]** に移動します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a> で、**[ポリシー]** セクションの **[メールと共同作業]** \> **[ポリシーとルール]** \> **[脅威ポリシー]** \> **[スパム対策]** に移動します。
 
 2. **[迷惑メール対策ポリシー]** ページで、リストから **[カスタム 迷惑メール対策ポリシー]** の **[種類] 値** の名前をクリックして選択します。
 
@@ -319,7 +322,7 @@ Microsoft 365 Defender ポータルでカスタムのスパム対策ポリシー
 
 Microsoft 365 Defender ポータルを使用して、カスタム迷惑メール対策ポリシーを削除すると、スパム フィルター ルールと、それに対応するスパム フィルター ポリシーが両方とも削除されます。既定の迷惑メール対策ポリシーを削除することはできません。
 
-1. Microsoft 365 Defender ポータルで、**[ポリシー]** セクションの **[メールと共同作業]** \>**[ポリシーとルール]** \> **[脅威ポリシー]** \> **[スパム対策]** に移動します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a> で、**[ポリシー]** セクションの **[メールと共同作業]** \> **[ポリシーとルール]** \> **[脅威ポリシー]** \> **[スパム対策]** に移動します。
 
 2. **[迷惑メール対策ポリシー]** ページで、リストから **[カスタム 迷惑メール対策ポリシー]** の **[種類] 値** の名前をクリックして選択します。 表示されるポリシーの詳細ポップアウトの上部で、![[その他の操作]](../../media/m365-cc-sc-more-actions-icon.png) アイコンをクリックします。 **[その他の操作]** \> ![[ポリシーの削除]](../../media/m365-cc-sc-delete-icon.png) アイコン **[ポリシーの削除]** の順にクリックします。
 

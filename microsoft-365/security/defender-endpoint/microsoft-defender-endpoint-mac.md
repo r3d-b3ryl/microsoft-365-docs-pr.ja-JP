@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2649cf86dbfab3d74b5b28ec78ae161a962a3cab
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 47613efb1f94b3e6fa4490fb981473574b0e5c4c
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60662288"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284183"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender for Endpoint on Mac
 
@@ -94,7 +94,7 @@ Microsoft Defender for Endpoint on Mac では、次のいずれかの Microsoft 
 - Microsoft 365 E5 Security
 - Microsoft 365 A5 (M365 A5)
 - Windows 10 Enterprise E5
-- Windows 11
+- Windows 11 Enterprise E5
 - Microsoft Defender for Endpoint
 
 > [!NOTE]

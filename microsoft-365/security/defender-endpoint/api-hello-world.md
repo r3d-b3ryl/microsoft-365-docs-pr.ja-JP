@@ -3,7 +3,6 @@ title: Hello World for Microsoft Defender for Endpoint API
 ms.reviewer: ''
 description: Microsoft Defender for Endpoint API へのプラクティス 'Hello world' スタイルの API 呼び出しを作成します。
 keywords: apis、サポートされている API、高度な検索、クエリ、microsoft Defender atp、エンドポイントの microsoft Defender
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 81e96d8846d507a7b763d79f419695b835ea6cbc
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 55d01dfe6d0b6fd69bf32016b1b5dd585827e168
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167600"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61282995"
 ---
 # <a name="microsoft-defender-for-endpoint-api---hello-world"></a>エンドポイント API 用 Microsoft Defender - Hello World
 
@@ -60,7 +59,7 @@ ms.locfileid: "61167600"
 
 2. [アプリの **登録Azure Active Directory** \> **新しい登録]** \> **に移動します**。
 
-   ![アプリケーションの登録Microsoft Azureナビゲーションのイメージ。](images/atp-azure-new-app2.png)
+   :::image type="content" alt-text="アプリケーションの登録Microsoft Azureナビゲーションのイメージ。" source="images/atp-azure-new-app2.png" lightbox="images/atp-azure-new-app2.png":::
 
 3. 登録フォームで、アプリケーションの名前を選択し、[登録] を **クリックします**。
 
@@ -68,39 +67,43 @@ ms.locfileid: "61167600"
 
    - アプリケーション ページで **、[API アクセス** 許可の追加] アクセス許可 API をクリックします。組織で \>  \> WindowsDefenderATP >を使用し **、[WindowsDefenderATP] をクリックします**。 
 
-   - **注**: WindowsDefenderATP は元のリストには表示されません。 テキスト ボックスに名前を書き込み始め、表示を確認する必要があります。
+     > [!NOTE]
+     > WindowsDefenderATP は元のリストには表示されません。 テキスト ボックスに名前を書き込み始め、表示を確認する必要があります。
 
-   ![API アクセスと API 選択のイメージ 1。](images/add-permission.png)
+     :::image type="content" alt-text="API アクセスと API 選択のイメージ 1。" source="images/add-permission.png" lightbox="images/add-permission.png":::
 
-   - [ **アプリケーションのアクセス許可** \> **] Alert.Read.All >** [アクセス許可の追加 **] をクリックします。**
+   - [ **アプリケーションのアクセス許可** \> **Alert.Read.All >** アクセス許可の追加 **] をクリックします**。
 
-   ![API アクセスと API 選択 2 のイメージ。](images/application-permissions.png)
+     :::image type="content" alt-text="API アクセスと API 選択 2 のイメージ。" source="images/application-permissions.png" lightbox="images/application-permissions.png":::
 
-   **重要な注意**: 関連するアクセス許可を選択する必要があります。 'すべてのアラートの読み取り' は、一例にすら限定されます。
+     > [!IMPORTANT]
+     > 関連するアクセス許可を選択する必要があります。 'すべてのアラートの読み取り' は、一例にすら限定されます。
 
-     例えば
+     例:
 
      - 高度 [なクエリを実行するには、[](run-advanced-query-api.md)高度なクエリの実行] アクセス許可を選択します。
      - コンピューター [を分離するには、[](isolate-machine.md)コンピューターの分離] アクセス許可を選択します。
      - 必要なアクセス許可を決定するには、呼び出す API の **[** アクセス許可] セクションを参照してください。
 
-5. [同意 **の付与] をクリックします。**
+5. [同意 **の付与] をクリックします**。
 
-   - **注**: アクセス許可を追加する度に、[新しい **アクセス許可を** 有効にするための同意の付与] をクリックする必要があります。
+   > [!NOTE]
+   > アクセス許可を追加する度に、[新しい **アクセス許可を** 有効にするための同意の付与] をクリックする必要があります。
 
    ![アクセス許可の付与のイメージ。](images/grant-consent.png)
 
 6. アプリケーションにシークレットを追加します。
 
-   - [ **証明書とシークレット&クリックし、** シークレットに説明を追加し、[追加] を **クリックします**。
+    [ **証明書とシークレット&クリックし、** シークレットに説明を追加し、[追加] を **クリックします**。
 
-    **重要**: [追加] をクリックした後 **、生成されたシークレット値をコピーします**。 退出後に取得できない!
+    > [!IMPORTANT]
+    > [追加] をクリックした後 **、生成されたシークレット値をコピーします**。 退出後に取得できない!
 
     ![アプリ キーの作成のイメージ。](images/webapp-create-key2.png)
 
 7. アプリケーション ID とテナント ID を書き出します。
 
-   - アプリケーション ページで、[概要] に移動 **し** 、次をコピーします。
+   アプリケーション ページで、[概要] に移動 **し** 、次をコピーします。
 
    ![作成されたアプリ ID のイメージ。](images/app-and-tenant-ids.png)
 
@@ -108,8 +111,8 @@ ms.locfileid: "61167600"
 
 ### <a name="step-2---get-a-token-using-the-app-and-use-this-token-to-access-the-api"></a>手順 2 - アプリを使用してトークンを取得し、このトークンを使用して API にアクセスします。
 
-- 以下のスクリプトを PowerShell ISE またはテキスト エディターにコピーし、"Get-Token.ps1"**として保存** します。
-- このスクリプトを実行すると、トークンが生成され、作業フォルダーに ""Latest-token.txt"**という名前で保存** されます。
+- 以下のスクリプトを PowerShell ISE またはテキスト エディターにコピーし、次 **のように保存** Get-Token.ps1。
+- このスクリプトを実行すると、トークンが生成され、トークンが作業フォルダーに保存されます。このスクリプトの名前 **Latest-token.txt。**
 
    ```powershell
    # That code gets the App Context Token and save it to a file named "Latest-token.txt" under the current directory
@@ -135,12 +138,12 @@ ms.locfileid: "61167600"
 
 - サニティ チェック:
   - スクリプトを実行します。
-  - ブラウザーで次の場所に移動します。 <https://jwt.ms/>
+  - ブラウザーで次のページに移動します <https://jwt.ms/> 。
   - トークン (ファイルのコンテンツ) をLatest-token.txtします。
   - 上部ボックスに貼り付けます。
-  - [役割] セクションを探します。 Alert.Read.All ロールを検索します。
+  - [役割] セクションを探します。 _Alert.Read.All ロールを検索_ します。
 
-  ![イメージ jwt.ms。](images/api-jwt-ms.png)
+  :::image type="content" alt-text="イメージ jwt.ms。" source="images/api-jwt-ms.png" lightbox="images/api-jwt-ms.png":::
 
 ### <a name="lets-get-the-alerts"></a>アラートを取得できます。
 

@@ -2,7 +2,6 @@
 title: イベント API からアラートを作成する
 description: Create alert API を使用して、Microsoft Defender for Endpoint のイベントの上に新しいアラートを作成する方法について説明します。
 keywords: apis, graph api, supported apis, get, alert, information, id
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4d513c29dc57dd169eb9a7760cb433d764ad78f6
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: d1d6f141f1453ce92d08045d20ff49753c99dfd7
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218468"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284507"
 ---
 # <a name="create-alert-api"></a>アラート API の作成
 
@@ -92,7 +91,7 @@ reportId | String | 高度な狩猟から取得したイベントの reportId。
 machineId | String | イベントが識別されたデバイスの ID。 **必須**。
 severity | String | アラートの重大度。 プロパティの値は、'Low'、'Medium'、および 'High' です。 **必須**。
 title | String | アラートのタイトル。 **必須**。
-説明 | String | アラートの説明。 **必須**。
+description | String | アラートの説明。 **必須**。
 recommendedAction| String | セキュリティ担当者は、アラートを分析するときにこのアクションを実行する必要があります。 **必須**。
 category| String | アラートのカテゴリ。 プロパティの値は、"General"、"CommandAndControl"、"Collection"、"CredentialAccess"、"DefenseEvasion"、"Discovery"、"エクスプロイト"、"Exploit"、"Execution"、"InitialAccess"、"LateralMovement"、"Malware"、"Persistence"、"PrivilegeEscalation"、"Ransomware"、"SuspiciousActivity" が必要です。
 

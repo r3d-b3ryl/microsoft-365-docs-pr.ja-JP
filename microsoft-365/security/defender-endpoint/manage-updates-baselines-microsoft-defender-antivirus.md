@@ -15,14 +15,14 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 11/08/2021
+ms.date: 12/02/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a180977b559d65d67ccf15703017fdb5f0528ad7
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: ac436d54db999bf5dd1c05305e430f6a957f8ed8
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164972"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284159"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>更新Microsoft Defender ウイルス対策を管理し、基準計画を適用する
 
@@ -139,7 +139,6 @@ Microsoft Defender ウイルス対策プラットフォーム更新 [プログ�
 - 新しい[パフォーマンス アナライザーをリリースMicrosoft Defender ウイルス対策](tune-performance-defender-antivirus.md)
 - Microsoft Defender ウイルス対策 DLL の読み込みに対する強化
 - Microsoft Defender ウイルス対策 TrustedInstaller バイパスに対して強化される
-- ルールごとの攻撃表面縮小ルールの除外を構成 [するためのサポートが追加されました](customize-attack-surface-reduction.md)
 - ファイル変更通知を拡張して、ランサムウェア (HumOR) Human-Operatedデータを含める
 
 ### <a name="known-issues"></a>既知の問題

@@ -2,7 +2,6 @@
 title: アラート関連のコンピューター情報を取得する
 description: Microsoft Defender for Endpoint を使用して、特定のアラートに関連するすべてのデバイスを取得します。
 keywords: apis、graph api、サポートされている API、アラート情報の取得、アラート情報、関連デバイス
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 43f20918fbef00b97bcd5177330fbafc57be912c
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: cd6ec0ded2ee76f6d348bc054ee1aeaacbd2d022
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168200"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283883"
 ---
 # <a name="get-alert-related-machine-information-api"></a>アラート関連のコンピューター情報 API を取得する
 
@@ -106,7 +105,7 @@ GET https://api.securitycenter.microsoft.com/api/alerts/636688558380765161_21362
     "computerDnsName": "mymachine1.contoso.com",
     "firstSeen": "2018-08-02T14:55:03.7791856Z",
     "lastSeen": "2021-01-25T07:27:36.052313Z",
-    "osPlatform": "Windows10",
+    "osPlatform": "Windows10" "Windows11", 
     "osProcessor": "x64",
     "version": "1901",
     "lastIpAddress": "10.166.113.46",

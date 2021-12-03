@@ -2,7 +2,6 @@
 title: デバイスごとのソフトウェアの脆弱性評価のエクスポート
 description: API 応答はデバイスごとに実行され、公開されているデバイスにインストールされている脆弱なソフトウェアと、これらのソフトウェア製品の既知の脆弱性が含まれる。 このテーブルには、オペレーティング システム情報、CVE ID、および脆弱性の重要度の情報も含まれます。
 keywords: api、apis、エクスポート評価、デバイスごとの評価、脆弱性評価レポート、デバイスの脆弱性評価、デバイスの脆弱性レポート、セキュリティで保護された構成評価、セキュリティで保護された構成レポート、ソフトウェアの脆弱性評価、ソフトウェアの脆弱性レポート、コンピューターによる脆弱性レポート、
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 738d8a90dc6cbfdfa73c7c62eb076c934bbcb336
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 062765ce75317b604b4017610360c8d181bf9e88
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167336"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61282827"
 ---
 # <a name="export-software-vulnerabilities-assessment-per-device"></a>デバイスごとのソフトウェアの脆弱性評価のエクスポート
 
@@ -110,7 +109,7 @@ ExploitabilityLevel|String|この脆弱性の悪用レベル (NoExploit、Exploi
 FirstSeenTimestamp|String|この製品の CVE がデバイスで初めて表示された場合。|2020-11-03 10:13:34.8476880
 Id|String|レコードの一意の識別子。|123ABG55_573AG&mnp!
 LastSeenTimestamp|String|デバイスで CVE が最後に表示された時刻。|2020-11-03 10:13:34.8476880
-OSPlatform|String|デバイスで実行されているオペレーティング システムのプラットフォーム。 このプロパティは、同じファミリ内のバリエーションを持つ特定のオペレーティング システム (Windows 10 7 などWindowsします。 詳細については、「tvm でサポートされるオペレーティング システムとプラットフォーム」を参照してください。|Windows10
+OSPlatform|String|デバイスで実行されているオペレーティング システムのプラットフォーム。 このプロパティは、同じファミリ内のバリエーションを持つ特定のオペレーティング システム (Windows 10 11 Windowsします。 詳細については、「tvm でサポートされるオペレーティング システムとプラットフォーム」を参照してください。|Windows10 と Windows 11
 RbacGroupName|String|役割ベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "割り当てられていない" になります。 組織に RBAC グループが含まれている場合、値は "None" になります。|サーバー
 RecommendationReference|String|このソフトウェアに関連する推奨事項 ID への参照。|va-_-microsoft-_-silverlight
 RecommendedSecurityUpdate (オプション)|String|ソフトウェア ベンダーが脆弱性に対処するために提供するセキュリティ更新プログラムの名前または説明。|2020 年 4 月のセキュリティ更新プログラム
@@ -141,7 +140,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitie
             "deviceId": "00044f612345daf756462bde6bd733b9a9c59ab4",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_18663b45912eed224b2de2f5ea3142726e63f16a.DomainPII_21eeb80d089e79bdfa178eabfa25e8de9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0.17763.1637",
             "osArchitecture": "x64",
             "softwareVendor": "microsoft",
@@ -164,7 +163,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitie
             "deviceId": "00044f912345daf756462bde6db733b6a9c59ad4",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_18663b45912eed224b2be2f5ea3142726e63f16a.DomainPII_21eeb80b086e79bdfa178eabfa25e8de6acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0.17763.1637",
             "osArchitecture": "x64",
             "softwareVendor": "microsoft",
@@ -189,7 +188,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitie
             "deviceId": "00044f912345daf756462bde6db733b6a9c59ab4",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_18663b45912eed224b2be2f5ea3142726e63f16a.DomainPII_21eed80b089e79bdfa178eadfa25e8be6acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0.17763.1637",
             "osArchitecture": "x64",
             "softwareVendor": "microsoft",
@@ -214,7 +213,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitie
             "deviceId": "00044f91234daf759492dbe6bd733b6a9c59ab4",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_189663d45612eed224b2be2f5ea3142729e63f16a.DomainPII_21eed80b086e79bdfa178eadfa25e8de6acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0.17763.1637",
             "osArchitecture": "x64",
             "softwareVendor": "microsoft",
@@ -239,11 +238,11 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitie
             "deviceId": "00044f912345daf756462dbe6db733d6a9c59ab4",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_18663b45912eeb224d2be2f5ea3142729e63f16a.DomainPII_21eeb80d086e79bdfa178eadfa25e8de6acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0.17763.1637",
             "osArchitecture": "x64",
             "softwareVendor": "microsoft",
-            "softwareName": "windows_10",
+            "softwareName": "windows_10" "Windows_11",
             "softwareVersion": "10.0.17763.1637",
             "cveId": null,
             "vulnerabilitySeverityLevel": null,
@@ -255,7 +254,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitie
             "lastSeenTimestamp": "2020-12-30 14:17:26",
             "firstSeenTimestamp": "2020-12-30 11:07:15",
             "exploitabilityLevel": "NoExploit",
-            "recommendationReference": "va-_-microsoft-_-windows_10"
+            "recommendationReference": "va-_-microsoft-_-windows_10" "va-_-microsoft-_-windows_11"
         }
     ],
     "@odata.nextLink": "https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitiesByMachine?pagesize=5&$skiptoken=eyJFeHBvcnREZWZpbml0aW9uIjp7IlRpbWVQYXRoIjoiMjAyMS0wMS0xMS8xMTAxLyJ9LCJFeHBvcnRGaWxlSW5kZXgiOjAsIkxpbmVTdG9wcGVkQXQiOjV9"
@@ -395,7 +394,7 @@ ExploitabilityLevel|String|この脆弱性の悪用レベル (NoExploit、Exploi
 FirstSeenTimestamp|String|この製品の CVE がデバイスで初めて表示された場合。|2020-11-03 10:13:34.8476880  
 Id|String|レコードの一意の識別子。|123ABG55_573AG&mnp!  
 LastSeenTimestamp|String|デバイスで CVE が最後に表示された時刻。|2020-11-03 10:13:34.8476880  
-OSPlatform|String|デバイスで実行されているオペレーティング システムのプラットフォーム。7 など、同じファミリ内のバリエーションを持つWindows 10オペレーティング Windows。 詳細については、「tvm でサポートされるオペレーティング システムとプラットフォーム」を参照してください。|Windows10  
+OSPlatform|String|デバイスで実行されているオペレーティング システムのプラットフォーム。同じファミリ内のバリエーションを持つ特定のオペレーティング システム (Windows 10 11 Windows。 詳細については、「tvm でサポートされるオペレーティング システムとプラットフォーム」を参照してください。|Windows10 と Windows 11 
 RbacGroupName|String|役割ベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "割り当てられていない" になります。 組織に RBAC グループが含まれている場合、値は "None" になります。|サーバー  
 RecommendationReference|string|このソフトウェアに関連する推奨事項 ID への参照。|va-microsoft--silverlight  
 RecommendedSecurityUpdate |String|ソフトウェア ベンダーが脆弱性に対処するために提供するセキュリティ更新プログラムの名前または説明。|2020 年 4 月のセキュリティ更新プログラム  
@@ -437,7 +436,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilityC
             "deviceId": "008198251234544f7dfa715e278b4cec0c19c171",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_1c8fee370690ca24b6a0d3f34d193b0424943a8b8.DomainPII_0dc1aee0fa366d175e514bd91a9e7a5b2b07ee8e.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0.19042.685",
             "osArchitecture": "x64",
             "softwareVendor": "google",
@@ -466,7 +465,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilityC
             "deviceId": "00e56c91234533860738ecf488eec8abf296e41e",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_82c13a8ad8cf3dbaf7bf34fada9fa3aebc124116.DomainPII_21eeb80d086e79dbfa178eadfa25e8de9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0.18363.1256",
             "osArchitecture": "x64",
             "softwareVendor": "microsoft",
@@ -493,7 +492,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilityC
             "deviceId": "01aa8c73065bb12345918693f3f94ce322107d24",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_42684eb981bea2d670027e7ad2caafd3f2b381a3.DomainPII_21eed80b086e76dbfa178eabfa25e8de9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0.19042.685",
             "osArchitecture": "x64",
             "softwareVendor": "mozilla",
@@ -522,7 +521,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilityC
             "deviceId": "029f0fcb13245fbd2decd1a336702131422d392e",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_a5706750acba75f15d69cd17f4a7fcd268d6422c.DomainPII_f290e982685f7e8eee168b4332e0ae5d2a069cd6.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0.19042.685",
             "osArchitecture": "x64",
             "softwareVendor": "microsoft",
@@ -549,7 +548,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilityC
             "deviceId": "038df381234510d357ac19b0113ef922e4e212b3",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_365f5c0bb7202c163937dad3d017969b2d760eb4.DomainPII_29596a43a2ef2bbfa00f6a16c0cb1d108bc63e32.DomainPII_3c5fefd2e6fda2f36257359404f6c1092aa6d4b8.net",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0.18363.1256",
             "osArchitecture": "x64",
             "softwareVendor": "google",

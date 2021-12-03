@@ -2,7 +2,6 @@
 title: リスト インジケーター API
 description: リスト インジケーター API を使用して、Microsoft Defender for Endpoint のすべてのアクティブなインジケーターのコレクションを取得する方法について説明します。
 keywords: apis, public api, supported apis, Indicators コレクション
-search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: cfd1164aa5a91acae45852f8572c1fc110750be1
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: adc3cfecba10431a909b72f875442d80b6638f03
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165248"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283739"
 ---
 # <a name="list-indicators-api"></a>リスト インジケーター API
 

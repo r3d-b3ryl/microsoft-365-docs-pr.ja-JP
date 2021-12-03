@@ -2,7 +2,6 @@
 title: デバイスごとのセキュリティで保護された構成評価をエクスポートする
 description: DeviceId、 ConfigurationId のすべての一意の組み合わせのエントリを返します。
 keywords: api、apis、エクスポート評価、デバイスごとの評価、脆弱性評価レポート、デバイスの脆弱性評価、デバイスの脆弱性レポート、セキュリティで保護された構成評価、セキュリティで保護された構成レポート、ソフトウェアの脆弱性評価、ソフトウェアの脆弱性レポート、コンピューターによる脆弱性レポート、
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: dd7e05b404fe859377300eb80b0efddcd355e5a3
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 04e2ac7a29dddb9fe02e558e6ba545c51048bd51
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165056"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284243"
 ---
 # <a name="export-secure-configuration-assessment-per-device"></a>デバイスごとのセキュリティで保護された構成評価をエクスポートする
 
@@ -97,7 +96,7 @@ GET /api/machines/SecureConfigurationsAssessmentByMachine
 プロパティ (ID)|データ型|説明|返される値の例
 ---|---|---|---
 ConfigurationCategory|string|構成が属するカテゴリまたはグループ: アプリケーション、OS、ネットワーク、アカウント、セキュリティ制御|セキュリティ コントロール
-ConfigurationId|string|特定の構成の一意の識別子|scid-10000
+ConfigurationId|文字列|特定の構成の一意の識別子|scid-10000
 ConfigurationImpact|string|構成が全体の構成スコアに与える影響の評価 (1-10)|9 
 ConfigurationName|string|構成の表示名|デバイスを Microsoft Defender for Endpoint にオンボードする
 ConfigurationSubcategory|string|構成が属するサブカテゴリまたはサブグループ。 多くの場合、これは特定の機能または機能を説明します。|オンボード デバイス
@@ -106,7 +105,7 @@ DeviceName|string|デバイスの完全修飾ドメイン名 (FQDN)。|johnlapto
 IsApplicable|bool|構成またはポリシーが適用可能かどうかを示します。|true
 IsCompliant|bool|構成やポリシーが正しく構成されているかどうかを示します|false
 IsExpectedUserImpact|bool|構成が適用される場合にユーザーに影響を与えるかどうかを示します。|true
-OSPlatform|string|デバイスで実行されているオペレーティング システムのプラットフォーム。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。 詳細については、「tvm でサポートされるオペレーティング システムとプラットフォーム」を参照してください。|Windows10
+OSPlatform|string|デバイスで実行されているオペレーティング システムのプラットフォーム。 これは、特定のオペレーティング システム (同じファミリ内のバリエーション (Windows 10 11 など) をWindowsします。 詳細については、「tvm でサポートされるオペレーティング システムとプラットフォーム」を参照してください。|Windows10 と Windows 11
 RbacGroupName|string|役割ベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "割り当てられていない" になります。 組織に RBAC グループが含まれている場合、値は "None" になります。|サーバー
 RecommendationReference|string|このソフトウェアに関連する推奨事項 ID への参照。|sca-_-scid-20000
 Timestamp|string|デバイスで構成が最後に表示された時刻|2020-11-03 10:13:34.8476880
@@ -130,7 +129,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
             "deviceId": "00013ee62c6b12345b10214e1801b217b50ab455c293d",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_5d96860d69c73fdd06fc8d1679e1eb73eceb8330",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "NT kernel 6.x",
             "timestamp": "2021-01-11 09:47:58.854",
             "configurationId": "scid-10000",
@@ -147,7 +146,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
             "deviceId": "0002a1be533813b9a8c6de739785365bce7910",
             "rbacGroupName": "hhh",
             "deviceName": null,
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0",
             "timestamp": "2021-01-11 09:47:58.854",
             "configurationId": "scid-20000",
@@ -164,7 +163,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
             "deviceId": "0002a1de123456a8c06de736785395d4ce7610",
             "rbacGroupName": "hhh",
             "deviceName": null,
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0",
             "timestamp": "2021-01-11 09:47:58.854",
             "configurationId": "scid-10000",
@@ -181,7 +180,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
             "deviceId": "00044f912345bdaf756492dbe6db733b6a9c59ab4",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_18663d45912eed224b2be2f5ea3142726e63f16a.DomainPII_21eeb80b086e76bdfa178eadfa25e8de9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0.17763.1637",
             "timestamp": "2021-01-11 09:47:58.854",
             "configurationId": "scid-39",
@@ -198,7 +197,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
             "deviceId": "00044f912345daf759462bde6bd733d6a9c56ab4",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_18663b45612eeb224d2de2f5ea3142726e63f16a.DomainPII_21eed80d086e76dbfa178eadfa25e8be9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0.17763.1637",
             "timestamp": "2021-01-11 09:47:58.854",
             "configurationId": "scid-6093",

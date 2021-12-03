@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 97b6941d848cfc493097ef7f1e70c81bdff53b17
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: e22ee784609ab04973d88de7539b567027cc98d6
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61109111"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283127"
 ---
 # <a name="supported-managed-security-service-providers"></a>サポート対象マネージド セキュリティ サービス プロバイダー
 
@@ -32,7 +32,7 @@ ms.locfileid: "61109111"
 
 次の管理セキュリティ サービス プロバイダーは、ポータルからアクセスできます。 
 
-ロゴ |パートナー名   | [説明] 
+ロゴ |パートナー名   | 説明 
 :---|:---|:---
 ![Accenture ロゴのイメージ。](images/accenture-logo.png)|[Accenture マネージ検出&応答 (MDR)](https://go.microsoft.com/fwlink/?linkid=2164353) | クラウドとオンプレミスの IT 環境と OT 環境の両方で高度なサイバー攻撃を検出、予防的に検出、検出、および対応する拡張機能を使用して、グローバル なサイバーセキュリティ運用を管理、維持、強化します。
 ![Aujas ロゴのイメージ。](images/aujas-logo.png) | [Aujas マネージ MDE サービス](https://go.microsoft.com/fwlink/?linkid=2162429) | Aujas のサイバーセキュリティは、Microsoft Defender for Endpoint を使用してサイバー 防御センターを通じて、企業全体にわたって 24*7 の管理セキュリティ サービスを提供します。

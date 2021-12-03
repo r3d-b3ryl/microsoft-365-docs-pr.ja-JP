@@ -2,7 +2,6 @@
 title: コンピューター リソースの種類
 description: Microsoft Defender for Endpoint の Machine リソースタイプのメソッドとプロパティについて説明します。
 keywords: apis、サポートされている api、get、コンピューター
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5f500c43aad99d36e2e40e0968f6093943c7f199
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 80ac3e9ed43de98d32fd14063261452cfd5b1372
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171187"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284051"
 ---
 # <a name="machine-resource-type"></a>コンピューター リソースの種類
 
@@ -46,7 +45,7 @@ ms.locfileid: "61171187"
 
 ****
 
-|メソッド|戻り値の型|Description|
+|メソッド|戻り値の型|説明|
 |---|---|---|
 |[マシンの一覧表示](get-machines.md)|[machine](machine.md) コレクション|組織のコンピューター [エンティティ](machine.md) のセットを一覧表示します。|
 |[コンピューターの取得](get-machine-by-id.md)|[コンピューター](machine.md)|コンピューターの [ID を](machine.md) 使用してコンピューターを取得します。|

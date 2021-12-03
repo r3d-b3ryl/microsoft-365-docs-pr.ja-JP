@@ -17,12 +17,12 @@ ms.custom: admindeeplinkDEFENDER
 description: 管理者は、検疫ポリシーを使用して、検疫されたメッセージに対してユーザーが実行できる操作を制御する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9e31d0a75e8b891e4ab0e0293d7c0be98e625134
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: 81bb257d809eeb16988118faaced2035b527c491
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064309"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283725"
 ---
 # <a name="quarantine-policies"></a>検疫ポリシー
 
@@ -62,7 +62,7 @@ Exchange Online Protection (EOP) およびOffice 365 用 Microsoft Defender の�
 |既定の検疫ポリシー|使用されるアクセス許可グループ|検疫通知が有効になっていますか?|
 |---|---|---|
 |AdminOnlyAccessPolicy|アクセスなし|いいえ|
-|DefaultFullAccessPolicy|フル アクセス|いいえ|
+|DefaultFullAccessPolicy|フル アクセス|不要|
 |NotificationEnabledPolicy<sup>\*</sup>|フル アクセス|はい|
 
 事前設定されたアクセス許可グループの既定のアクセス許可が気に入らない場合、または検疫通知を有効にする場合は、カスタム検疫ポリシーを作成して使用します。 各アクセス許可の動作の詳細については、この記事の後半の「 [検疫ポリシーのアクセス許可の詳細](#quarantine-policy-permission-details) 」セクションを参照してください。
@@ -149,33 +149,54 @@ New-QuarantinePolicy -Name "<UniqueName>" -EndUserQuarantinePermissionsValue <0 
 
 _EndUserQuarantinePermissionsValue_ パラメーターは、バイナリ値から変換される 10 進値を使用します。 バイナリ値は、特定の順序で使用可能なエンド ユーザー検疫のアクセス許可に対応します。 アクセス許可ごとに、値 1 は True、値 0 は False に等しくなります。
 
-事前設定されたアクセス許可グループの各アクセス許可に必要な順序と値を次の表に示します。
+個々のアクセス許可ごとに必要な順序と値を次の表に示します。
+
+<br>
+
+****
+
+|アクセス許可|10 進値|バイナリ値|
+|---|:---:|:---:|
+|PermissionToViewHeader<sup>\*</sup>|128|10000000|
+|PermissionToDownload<sup>\*\*</sup>|64|01000000|
+|PermissionToAllowSender<sup>\*\*</sup>|32|00100000|
+|PermissionToBlockSender|16|00010000|
+|PermissionToRequestRelease<sup>\*\*\*</sup>|8 |00001000|
+|PermissionToRelease<sup>\*\*\*</sup>|4|00000100|
+|PermissionToPreview|2|00000010|
+|PermissionToDelete|1|00000001|
+|
+
+<sup>\*</sup>値 0 では、検疫済みメッセージの詳細で [メッセージ ヘッダーの表示] ボタンは非表示にされません (ボタンは常に使用できます)。
+
+<sup>\*\*</sup> この設定は使用されません (値 0 または 1 は何もしません)。
+
+<sup>\*\*\*</sup> 両方の値を 1 に設定しない。 1 を 1 に、もう一方を 0 に設定するか、両方を 0 に設定します。
+
+制限付きアクセス許可の場合、必要な値は次のとおりです。
 
 <br>
 
 ****
 
 |アクセス許可|制限付きアクセス|
-|---|:---:|
+|---|:--:|
+|PermissionToViewHeader|0|
+|PermissionToDownload|0|
+|PermissionToAllowSender|0|
 |PermissionToBlockSender|1|
-|PermissionToDelete|1|
-|PermissionToDownload<sup>\*</sup>|0|
+|PermissionToRequestRelease|1|
+|PermissionToRelease|0|
 |PermissionToPreview|1|
-|PermissionToRelease<sup>\*\*</sup>|0|
-|PermissionToRequestRelease<sup>\*\*</sup>|1|
-|PermissionToViewHeader<sup>\*</sup>|0|
-|バイナリ値|01101010|
-|使用する 10 進値|106|
+|PermissionToDelete|1|
+|バイナリ値|00011011|
+|使用する 10 進値|27|
 |
-
-<sup>\*</sup> 現在、この値は常に 0 です。 PermissionToViewHeader の場合、値 0 は検疫済みメッセージの詳細で [メッセージ ヘッダーの表示] ボタンを非表示にできません (ボタンは常に使用できます)。
-
-<sup>\*\*</sup> 両方の値を 1 に設定しない。 1 を 1 に、もう一方を 0 に設定するか、両方を 0 に設定します。
 
 この例では、前の表で説明したように、制限付きアクセス許可を割り当てる検疫通知を有効にした LimitedAccess という名前の新しい検疫ポリシーを作成します。
 
 ```powershell
-New-QuarantinePolicy -Name LimitedAccess -EndUserQuarantinePermissionsValue 106 -EsnEnabled $true
+New-QuarantinePolicy -Name LimitedAccess -EndUserQuarantinePermissionsValue 27 -EsnEnabled $true
 ```
 
 カスタムアクセス許可の場合は、前の表を使用して、必要なアクセス許可に対応するバイナリ値を取得します。 バイナリ値を 10 進値に変換し _、EndUserQuarantinePermissionsValue_ パラメーターに 10 進値を使用します。
@@ -190,7 +211,7 @@ New-QuarantinePolicy -Name LimitedAccess -EndUserQuarantinePermissionsValue 106 
 
 ****
 
-|特徴|検疫ポリシーがサポートされていますか?|使用される既定の検疫ポリシー|
+|機能|検疫ポリシーがサポートされていますか?|使用される既定の検疫ポリシー|
 |---|:---:|---|
 |[スパム対策ポリシー](configure-your-spam-filter-policies.md): <ul><li>**スパム** (_SpamAction_)</li><li>**高信頼スパム** (_HighConfidenceSpamAction_)</li><li>**フィッシング** (_PhishSpamAction_)</li><li>**高信頼フィッシング** (_HighConfidencePhishAction_)</li><li>**Bulk** (_BulkSpamAction_)</li></ul>|はい|<ul><li>DefaultFullAccessPolicy <sup>\*</sup> (フル アクセス)</li><li>DefaultFullAccessPolicy <sup>\*</sup> (フル アクセス)</li><li>DefaultFullAccessPolicy <sup>\*</sup> (フル アクセス)</li><li>AdminOnlyAccessPolicy (アクセスなし)</li><li>DefaultFullAccessPolicy <sup>\*</sup> (フル アクセス)</li></ul>|
 |フィッシング詐欺対策ポリシー: <ul><li>[スプーフィング インテリジェンス保護](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[Defender の偽装保護 for Office 365:](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)<ul><li>**偽装ユーザーとしてメッセージが検出された場合** (_TargetedUserProtectionAction_)</li><li>**偽装ドメインとしてメッセージが検出された場合** (_TargetedDomainProtectionAction_)</li><li>**メールボックス インテリジェンスがユーザーを検出して偽装した場合** (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul>|はい|<ul><li>DefaultFullAccessPolicy <sup>\*</sup> (フル アクセス)</li><li>偽装保護:<ul><li>DefaultFullAccessPolicy <sup>\*</sup> (フル アクセス)</li><li>DefaultFullAccessPolicy <sup>\*</sup> (フル アクセス)</li><li>DefaultFullAccessPolicy <sup>\*</sup> (フル アクセス)</li></ul></li></ul>|

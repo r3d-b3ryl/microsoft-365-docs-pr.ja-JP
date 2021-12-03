@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: '管理者向け: ネットワーク アップロードを使用して、複数の PST ファイルを Microsoft 365 のユーザー メールボックスに一括インポートする方法について説明します。'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3d6465d1428ec66f1d80cc1b821fa816b794040a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b72b408ef08c125f016a356a2ceda21e86cf8cfd
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200271"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283571"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>ネットワーク アップロードを使用して、組織の PST ファイルを Microsoft 365 にインポートする
 
@@ -326,7 +326,7 @@ PST ファイルを組織の Azure Storage の場所にアップロードした�
 
   - インポートしたデータに影響を与えるメールボックス関連イベントを、[監査ログ](search-the-audit-log-in-security-and-compliance.md)で検索する。
 
-  - データを[非アクティブなメールボックス](create-and-manage-inactive-mailboxes.md)にインポートして、コンプライアンスのためにデータをアーカイブする。 
+  - データを[非アクティブなメールボックス](inactive-mailboxes-in-office-365.md)にインポートして、コンプライアンスのためにデータをアーカイブする。 
 
   - [データ損失防止ポリシー](dlp-learn-about-dlp.md)を使用して、機密データが組織外に漏洩するのを防ぐ。
   

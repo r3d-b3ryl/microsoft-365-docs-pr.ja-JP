@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Microsoft 365 の顧客データの保存場所を世界全体で確認する
-ms.openlocfilehash: 8647bb2ff9fdb273e1c33293446a04e57da741f0
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: c12e492b3a36f8da98fd0021bd3354c0e340d538
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218708"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283403"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Microsoft 365 顧客データの保存場所
 
@@ -120,7 +120,7 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 
   - 個人用アプリのデータ所在地は、ユーザーのメールボックスの場所に基づくものです。
   
-  - マネージャー/リーダー データ領域は、個々のユーザーではなく、テナントのプライマリ リージョンによって決定されます。
+  - マネージャー/リーダーまた アドバンスト のデータ領域は、個々のユーザーではなく、テナントのプライマリ リージョンによって決定されます。
 
 ## <a name="data-center-locations"></a>データ センターの場所
 

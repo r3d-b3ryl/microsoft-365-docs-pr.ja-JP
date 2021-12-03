@@ -2,7 +2,6 @@
 title: IP 統計 API の取得
 description: Microsoft Defender for Endpoint を使用して、IP の最新の統計情報を取得します。
 keywords: apis, graph api, supported apis, get, ip, statistics, prevalence
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9f0503f85d27e7d3872b03e865b6ce9b5248fb0b
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: a98b78e85956d49c3b7d7e389882e017dcede3a4
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165296"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283257"
 ---
 # <a name="get-ip-statistics-api"></a>IP 統計 API の取得
 

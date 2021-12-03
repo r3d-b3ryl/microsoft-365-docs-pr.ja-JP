@@ -2,7 +2,6 @@
 title: リスト調査 API
 description: この API を使用して、Investigations コレクションの取得に関連する呼び出しを作成する
 keywords: apis、graph api、サポートされている API、Investigations コレクション
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 47b3f25b5cab238b0158b9f72bf8f6dc9c5e26cc
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: f5a37d8cbbaeca3dd14c51e1d5c6adcefabf2db8
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167504"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284195"
 ---
 # <a name="list-investigations-api"></a>リスト調査 API
 

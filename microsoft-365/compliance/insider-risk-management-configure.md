@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 9e07c12ec434935b2e91e7248f1f1d16ea4074c8
-ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
+ms.openlocfilehash: 0b26cd34cf38f8f2fbd7a0de96f8e34502054ecf
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61241178"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283211"
 ---
 # <a name="get-started-with-insider-risk-management"></a>インサイダー リスクの管理の概要
 
@@ -77,12 +77,28 @@ ms.locfileid: "61241178"
 > [!IMPORTANT]
 > ロール グループを構成した後、ロール グループのアクセス許可が組織全体の割り当てられたユーザーに適用されるまでに最大 30 分かかる場合があります。
 
-インサイダー リスク管理機能を管理するためのアクセス許可を構成するために使用される 4 つの役割グループがあります。 これらの構成手順を続行するには、テナント管理者がまず Insider Risk Management または Insider Risk **Management** **Admin** 役割グループに割り当てる必要があります。 初期構成後にインサイダー リスク管理機能にアクセスして管理するには、ユーザーが少なくとも 1 つのインサイダー リスク管理役割グループのメンバーである必要があります。
+インサイダー リスク管理機能を管理するための初期アクセス許可を構成するために使用される役割グループは 6 つがあります。 Microsoft 365 コンプライアンス センター で **Insider リスク** 管理をメニュー オプションとして使用し、これらの構成手順を続行するには、次のいずれかの役割または役割グループに割り当てる必要があります。
 
->[!IMPORTANT]
->特定のユーザーが組織を離れた場合、インサイダー リスク管理の構成が 「管理者ゼロ」 シナリオに入らなからなく、常に Insider Risk Management または **Insider** Risk **Management Admin** 役割グループに少なくとも 1 人のユーザーが存在します (選択するオプションに応じて)。
+- Azure Active Directory [*管理者の*](/azure/active-directory/roles/permissions-reference#global-administrator)役割
+- Azure Active Directory [*コンプライアンス管理者の*](/azure/active-directory/roles/permissions-reference#compliance-administrator)役割
+- Microsoft 365 コンプライアンス センター [*管理役割*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)グループ
+- Microsoft 365 コンプライアンス センター [*管理者役割*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)グループ
+- *Insider Risk Management* 役割グループ
+- *Insider Risk Management Admin* 役割グループ
 
-コンプライアンス管理チームの構造に応じて、ユーザーを特定の役割グループに割り当て、さまざまな一連のインサイダー リスク機能を管理するオプションがあります。 役割グループの **[アクセス** 許可] タブMicrosoft 365 コンプライアンス センターを表示するには、組織の管理役割グループに割り当てられているか、役割の管理役割を割り当てる *必要* があります。 インサイダー リスク管理を構成する場合は、次の役割グループ オプションから選択します。
+次の役割のメンバーは、Insider Risk Management Admin 役割グループに含まれるのと同じ *ソリューションアクセス許可を* 持っています。
+
+- Azure Active Directory *管理者*
+- Azure Active Directory *コンプライアンス管理者*
+- Microsoft 365 コンプライアンス センター *管理*
+- Microsoft 365 コンプライアンス センター *コンプライアンス管理者*
+
+> [!IMPORTANT]
+> 特定のユーザーが組織を離れた場合、インサイダー リスク管理の構成が 「管理者ゼロ」 シナリオに入らなからなく、常に Insider Risk Management または *Insider* Risk *Management Admin* 役割グループに少なくとも 1 人のユーザーが存在します (選択するオプションに応じて)。
+
+インサイダー リスク管理ポリシーとアラートの管理方法に応じて、ユーザーを特定の役割グループに割り当て、さまざまなインサイダー リスク管理機能のセットを管理する必要があります。 コンプライアンス責任が異なるユーザーを特定の役割グループに割り当て、インサイダー リスク管理機能の異なる領域を管理するオプションがあります。 または、指定された管理者、アナリスト、調査者、および閲覧者のすべてのユーザー アカウントを *Insider リスク* 管理役割グループに割り当てる場合があります。 コンプライアンス管理の要件に最適な 1 つのロール グループまたは複数のロール グループを使用します。
+
+インサイダー リスク管理を構成および管理する場合は、次のソリューション役割グループ オプションから選択します。
 
 | **役割グループ** | **ロール権限** |
 | :------------- | :------------------- |

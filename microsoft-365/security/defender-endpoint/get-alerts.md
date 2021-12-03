@@ -2,7 +2,6 @@
 title: アラート API の一覧表示
 description: リスト 通知 API を使用して、Microsoft Defender for Endpoint のアラートのコレクションを取得する方法について説明します。
 keywords: apis, graph api, supported apis, get, alerts, recent
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f4840e2c43a45304c12d360a5d9eda4800b97bd9
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 7c720e7743fda39f7950a7df44bea0007988b94b
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168680"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283499"
 ---
 # <a name="list-alerts-api"></a>アラート API の一覧表示
 

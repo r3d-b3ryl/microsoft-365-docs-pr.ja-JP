@@ -3,7 +3,6 @@ title: エンドポイント API で Microsoft Defender を使用する
 ms.reviewer: ''
 description: ユーザーなしで Microsoft Defender for Endpoint にプログラムWindowsアクセスを取得するネイティブ アプリを設計する方法について説明します。
 keywords: apis, graph api, サポートされている API, アクター, アラート, デバイス, ユーザー, ドメイン, IP, ファイル, 高度なハンティング, クエリ
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 747397d8baee103a311a6aec842af189403ef0fc
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: f6cc0ea9cac46fa2e6ad2b5fe56422683d4a3e28
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168740"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284663"
 ---
 # <a name="use-microsoft-defender-for-endpoint-apis"></a>エンドポイント API で Microsoft Defender を使用する
 
@@ -67,25 +66,24 @@ Microsoft Defender for Endpoint は、一連のプログラム API を通じて�
 
 2. [アプリの **登録Azure Active Directory** \> **新しい登録]** \> **に移動します**。
 
-   ![アプリケーションの登録Microsoft Azureナビゲーションのイメージ。](images/atp-azure-new-app2.png)
+   :::image type="content" alt-text="アプリケーションの登録Microsoft Azureナビゲーションのイメージ。" source="images/atp-azure-new-app2.png" lightbox="images/atp-azure-new-app2.png":::
 
 3. [**アプリケーションの登録**] ページが表示されたら、以下のアプリケーションの登録情報を入力します。
    - **名前** - アプリのユーザーに表示されるわかりやすいアプリケーション名を入力します。
    - **サポートされているアカウントの種類** - アプリケーションでサポートするアカウントを選択します。
 
-   <br>
+     <br>
 
-   ****
-
-   |サポートされているアカウントの種類|説明|
-   |---|---|
-   |**この組織のディレクトリ内のアカウントのみ**|基幹業務 (LOB) アプリケーションを作成している場合は、このオプションを選択します。 アプリケーションをディレクトリに登録していない場合、このオプションは選択できません。 <p> このオプションは、Azure AD のシングルテナントにのみマッピングします。 <p> これは、ディレクトリの外部にアプリを登録している場合を除き、既定のオプションです。 アプリがディレクトリの外部に登録されている場合、既定のオプションは Azure AD マルチテナントと個人の Microsoft アカウントです。|
-   |**組織のディレクトリ内のアカウント**|企業および教育機関のすべてのユーザーを対象とする場合は、このオプションを選択します。 <p> このオプションは、Azure AD のマルチテナントにのみマッピングします。 <p> アプリを Azure AD のシングルテナントとしてのみ登録した場合は、[**認証**] ブレードを使用して、Azure AD マルチテナントに更新し、シングルテナントに戻すことができます。|
-   |**組織のディレクトリ内のアカウントと個人用 Microsoft アカウント**|最も広い範囲の顧客を対象とする場合は、このオプションを選択します。 <p> このオプションは、Azure AD マルチテナントと個人用 Microsoft アカウントにマッピングします。 <p> アプリを Azure AD マルチテナントと個人用 Microsoft アカウントとして登録した場合は、UI でこれを変更できません。 代わりに、アプリケーション マニフェスト エディターを使用して、サポートされているアカウントの種類を変更する必要があります。|
-   |
+     |サポートされているアカウントの種類|説明|
+     |---|---|
+     |**この組織のディレクトリ内のアカウントのみ**|基幹業務 (LOB) アプリケーションを作成している場合は、このオプションを選択します。 アプリケーションをディレクトリに登録していない場合、このオプションは選択できません。 <p> このオプションは、Azure AD のシングルテナントにのみマッピングします。 <p> これは、ディレクトリの外部にアプリを登録している場合を除き、既定のオプションです。 アプリがディレクトリの外部に登録されている場合、既定のオプションは Azure AD マルチテナントと個人の Microsoft アカウントです。|
+     |**組織のディレクトリ内のアカウント**|企業および教育機関のすべてのユーザーを対象とする場合は、このオプションを選択します。 <p> このオプションは、Azure AD のマルチテナントにのみマッピングします。 <p> アプリを Azure AD のシングルテナントとしてのみ登録した場合は、[**認証**] ブレードを使用して、Azure AD マルチテナントに更新し、シングルテナントに戻すことができます。|
+     |**組織のディレクトリ内のアカウントと個人用 Microsoft アカウント**|最も広い範囲の顧客を対象とする場合は、このオプションを選択します。 <p> このオプションは、Azure AD マルチテナントと個人用 Microsoft アカウントにマッピングします。 <p> アプリを Azure AD マルチテナントと個人用 Microsoft アカウントとして登録した場合は、UI でこれを変更できません。 代わりに、アプリケーション マニフェスト エディターを使用して、サポートされているアカウントの種類を変更する必要があります。|
 
    - **リダイレクト URI (オプション)** - 構築しているアプリの種類として **Web** または **パブリック クライアント (モバイルとデスクトップ)** を選択し、アプリケーションのリダイレクト URI (または応答 URL) を入力します。
+
      - Web アプリケーションの場合は、アプリのベース URL を指定します。 たとえば、`http://localhost:31544` はローカル マシンで実行されている Web アプリの URL になる場合があります。 ユーザーはこの URL を使用して、Web クライアント アプリケーションにサインインします。
+
      - パブリック クライアント アプリケーションの場合は、トークンの応答を返す際に Azure AD が使用する URI を指定します。 `myapp://auth` などのアプリケーションに固有の値を入力します。
 
      Web アプリケーションまたはネイティブ アプリケーションの具体的な例を見るには、「[クイック スタート](/azure/active-directory/develop/#quickstarts)」を参照してください。
@@ -95,37 +93,41 @@ Microsoft Defender for Endpoint は、一連のプログラム API を通じて�
 4. アプリケーションが Microsoft Defender for Endpoint にアクセスし、"アラートの読み取り" アクセス許可を割り当てるのを許可します。
 
    - アプリケーション ページで **、[API アクセス** 許可の追加] アクセス許可 API を選択します。組織で \>  \> WindowsDefenderATP >を使用し **、WindowsDefenderATP** で選択します。 
-   - **注**: *WindowsDefenderATP* は元のリストには表示されません。 テキスト ボックスに名前を書き始め、表示を確認します。
 
-     ![アクセス許可を追加します。](images/add-permission.png)
+     > [!NOTE]
+     > *WindowsDefenderATP* は元のリストには表示されません。 テキスト ボックスに名前を書き始め、表示を確認します。
 
-   - [ **委任されたアクセス許可の** \> **アラート] を選択し、[アクセス** >を **追加する] を選択します。**
+     :::image type="content" alt-text="アクセス許可を追加します。" source="images/add-permission.png" lightbox="images/add-permission.png":::
 
-      ![アプリケーションのアクセス許可。](images/application-permissions-public-client.png)
+   - [ **委任されたアクセス許可]** \> **[Alert.Read] を選択>** アクセス許可 **の追加] を選択します**。
 
-   - **重要な注意**: 関連するアクセス許可を選択します。 アラートの読み取りは、一例にすのみです。
+      :::image type="content" alt-text="アプリケーションのアクセス許可。" source="images/application-permissions-public-client.png" lightbox="images/application-permissions-public-client.png":::
 
-     例えば
+   > [!IMPORTANT]
+   > 関連するアクセス許可を選択します。 アラートの読み取りは、一例にすのみです。
 
-     - 高度 [なクエリを実行するには、[](run-advanced-query-api.md)高度なクエリの実行] アクセス許可を選択します。
-     - デバイス [を分離するには、[](isolate-machine.md)コンピューターの分離] アクセス許可を選択します。
+     例:
+
+     - 高度 [なクエリを実行するには、[](run-advanced-query-api.md)高度な **クエリの実行] アクセス許可を選択** します。
+     - デバイス [を分離するには、[コンピューターのアクセス](isolate-machine.md)許可 **を分離する] を** 選択します。
      - 必要なアクセス許可を確認するには、呼 **び** 出す API の [アクセス許可] セクションを表示します。
 
-   - [同意 **の付与] を選択します。**
+   - [同意 **の付与] を選択します**。
 
-      **注**: アクセス許可を追加する度に、新しいアクセス許可を有効にするための同意の付与で選択する必要があります。
+      > [!NOTE]
+      > アクセス許可を追加する度に、新しい **アクセス許可を** 有効にするための同意の付与を選択する必要があります。
 
       ![アクセス許可の付与のイメージ。](images/grant-consent.png)
 
 5. アプリケーション ID とテナント ID を書き出します。
 
-   - アプリケーション ページで、[概要] に移動 **し** 、次の情報をコピーします。
+    アプリケーション ページで、[概要] に移動 **し** 、次の情報をコピーします。
 
-   ![作成されたアプリ ID のイメージ。](images/app-and-tenant-ids.png)
+    :::image type="content" alt-text="作成されたアプリ ID のイメージ。" source="images/app-and-tenant-ids.png" lightbox="images/app-and-tenant-ids.png":::
 
 ## <a name="get-an-access-token"></a>アクセス トークンを取得する
 
-トークンの詳細については、「AADチュートリアル[」をAzure ADしてください。](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
+トークンの詳細については、「AADチュートリアル[」をAzure ADしてください](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)。
 
 ### <a name="using-c"></a>C の使用\#
 
@@ -174,19 +176,19 @@ Microsoft Defender for Endpoint は、一連のプログラム API を通じて�
 
 正しいトークンを取得していることを確認します。
 
-- 前の手順で取得したトークンを [JWT](https://jwt.ms) にコピー/貼り付けしてデコードする
-- 目的のアプリのアクセス許可を持つ 'scp' クレームを取得する検証
+- 前の手順で取得したトークンを [JWT](https://jwt.ms) にコピー/貼り付けしてデコードします。
+- 目的のアプリのアクセス許可を持つ 'scp' クレームを取得する方法を確認します。
 - 以下のスクリーンショットでは、チュートリアルでアプリから取得したデコードされたトークンを確認できます。
 
-![トークン検証のイメージ。](images/nativeapp-decoded-token.png)
+  :::image type="content" alt-text="トークン検証のイメージ。" source="images/nativeapp-decoded-token.png" lightbox="images/nativeapp-decoded-token.png":::
 
 ## <a name="use-the-token-to-access-microsoft-defender-for-endpoint-api"></a>トークンを使用して Microsoft Defender for Endpoint API にアクセスする
 
-- 使用する API を選択する - [サポートされている Microsoft Defender for Endpoint API](exposed-apis-list.md)
-- 送信する HTTP 要求の承認ヘッダーを "Bearer {token}" に設定します (ベアラーは承認スキームです)
-- トークンの有効期限は 1 時間です (同じトークンで複数の要求を送信できます)
+- 使用する API を選択します 。 サポートされている [Microsoft Defender for Endpoint API](exposed-apis-list.md)。
+- 送信する HTTP 要求の承認ヘッダーを "Bearer {token}" に設定します (ベアラーは承認スキームです)。
+- トークンの有効期限は 1 時間です (同じトークンで複数の要求を送信できます)。
 
-- メッセージを使用してアラートの一覧を取得する要求を送信 **するC#**
+- 次のコマンドを使用してアラートの一覧を取得する要求を送信 **するC#。**
 
     ```csharp
     var httpClient = new HttpClient();

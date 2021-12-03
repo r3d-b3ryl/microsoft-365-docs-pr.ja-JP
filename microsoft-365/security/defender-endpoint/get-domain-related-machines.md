@@ -2,7 +2,6 @@
 title: ドメイン関連のコンピューター API を取得する
 description: Get domain-related machines API を使用して、Microsoft Defender for Endpoint のドメインと通信したコンピューターを取得する方法について説明します。
 keywords: apis, graph api, supported apis, get, domain, related, devices
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: c36094dcbd8367f54d07b9d672fc46b1d617592b
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: a9f1a00173228cf973ed0149d88c81b3d3f2c6fa
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168128"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283067"
 ---
 # <a name="get-domain-related-machines-api"></a>ドメイン関連のコンピューター API を取得する
 

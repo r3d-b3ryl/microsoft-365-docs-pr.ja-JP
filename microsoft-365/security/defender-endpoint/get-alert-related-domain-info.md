@@ -2,7 +2,6 @@
 title: アラート関連のドメイン情報を取得する
 description: Microsoft Defender for Endpoint を使用して、特定のアラートに関連するすべてのドメインを取得します。
 keywords: apis、graph api、サポートされている API、アラート情報の取得、アラート情報、関連ドメイン
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9780379ee78989c718b4a017b16e26646a58d429
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 7c1b11e1e1ed25fb7eb9537322db231198db3b9b
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166388"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283919"
 ---
 # <a name="get-alert-related-domain-information-api"></a>アラート関連のドメイン情報 API を取得する
 

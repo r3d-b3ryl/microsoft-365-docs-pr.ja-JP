@@ -2,7 +2,6 @@
 title: アラート関連のユーザー情報を取得する
 description: Get alert 関連のユーザー情報 API を使用して、Microsoft Defender for Endpoint の特定のアラートに関連するユーザーを取得する方法について説明します。
 keywords: apis, graph api, supported apis, get, alert, information, related, user
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6276cac409133a119424181d4e358a51fbd3af90
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: bbf417139a1bfb64f528df97d4d8d0ce9cbb2045
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61169004"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284483"
 ---
 # <a name="get-alert-related-user-information-api"></a>アラート関連のユーザー情報 API を取得する
 

@@ -2,7 +2,6 @@
 title: バッチ更新アラート エンティティ API
 description: この API を使用して、Microsoft Defender for Endpoint アラートをバッチで更新する方法について説明します。 状態、決定、分類、および assignedTo プロパティを更新できます。
 keywords: apis, graph api, supported apis, get, alert, information, id
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 007dd161ac221a51ce2d2a424974db51177db615
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: a2d695a2b406d4850f0e9896af3ec3b2aede8870
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171007"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283643"
 ---
 # <a name="batch-update-alerts"></a>アラートのバッチ更新
 

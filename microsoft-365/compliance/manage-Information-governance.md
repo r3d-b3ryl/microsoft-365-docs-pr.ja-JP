@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: コンプライアンスや規制の要件を満たすようにデータを管理するには、Microsoft 情報ガバナンス機能を実装します。
-ms.openlocfilehash: 66b8bde34cefbb783e4de7c4c12f99b373bbe9b7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e0637913acf42a89fc82c7c8a6caacc029b5a0d6
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200475"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283428"
 ---
 # <a name="microsoft-information-governance-in-microsoft-365"></a>Microsoft 365 の Microsoft 情報ガバナンス
 
@@ -43,7 +43,7 @@ Microsoft 情報ガバナンス (MIG と略されることもあります) 機�
 |[アイテム保持ポリシーと保持ラベル](retention.md)| メール、ドキュメント、インスタント メッセージなどのポリシー管理および削除ワークフローを使用して、コンテンツを保持または削除する <br /><br />シナリオ例: [保持ラベルをコンテンツに自動的に適用する](apply-retention-labels-automatically.md) | [アイテム保持ポリシーおよび保持ラベルの使用を開始する](get-started-with-retention.md)|
 |[サービスをインポートする](importing-pst-files-to-office-365.md)| Exchange Online メールボックスに PST ファイルを一括インポートして、コンプライアンスや規制要件に対応してメールメッセージを保持し検索する | [ネットワーク アップロードを使用して、組織の PST ファイルを Microsoft 365 にインポートする](use-network-upload-to-import-pst-files.md)|
 |[サードパーティのデータをアーカイブする](archiving-third-party-data.md)| ソーシャル メディア プラットフォーム、インスタント メッセージング プラットフォーム、ドキュメント コラボレーション プラットフォームからサードパーティのデータをインポートし、アーカイブして、コンプライアンス ソリューションを適用する| [サードパーティのコネクタ](archiving-third-party-data.md#third-party-data-connectors)|
-|[非アクティブなメールボックス](inactive-mailboxes-in-office-365.md)| 従業員が組織を離れた後にメールボックスのコンテンツを保持する | [非アクティブなメールボックスを作成および管理する](create-and-manage-inactive-mailboxes.md)|
+|[非アクティブなメールボックス](inactive-mailboxes-in-office-365.md)| 従業員が組織を離れた後もメールボックスのコンテンツを保持して、このコンテンツに管理者、コンプライアンス責任者、レコード マネージャーが引き続きアクセスできるようにします | [非アクティブなメールボックスを作成および管理する](create-and-manage-inactive-mailboxes.md)|
 
 ## <a name="records-management"></a>レコード管理
 

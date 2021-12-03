@@ -21,14 +21,14 @@ ms.custom:
 - migrationguides
 - admindeeplinkDEFENDER
 ms.topic: article
-ms.date: 11/30/2021
+ms.date: 12/02/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 198a6d5070a9766c4acd1a900e2eaa92b7f46a4e
-ms.sourcegitcommit: aacf895ba20ecec4312a447ff4432e257e41edee
+ms.openlocfilehash: 8179d3fb8b5e24023dffab0d83695c33647e1c46
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61234593"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284687"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>エンドポイント向け Microsoft Defender への切り替え - フェーズ 3: オンボード
 
@@ -52,7 +52,7 @@ ms.locfileid: "61234593"
 
 ## <a name="onboard-devices-to-microsoft-defender-for-endpoint"></a>デバイスを Microsoft Defender for Endpoint にオンボードする
 
-1. ポータルに移動<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderサインイン</a>します。
+1. ポータル ( ) にMicrosoft 365 Defenderサインイン [https://security.microsoft.com](https://security.microsoft.com) します。
 
 2. **[設定** \> **オンボーディング]** \> **を選択します**([デバイス **管理] の下)。**
 
@@ -65,12 +65,15 @@ ms.locfileid: "61234593"
 
 ### <a name="onboarding-methods"></a>オンボーディングメソッド
 
+> [!IMPORTANT]
+> Microsoft Defender for Cloud を使用している場合は、「Microsoft Defender for Cloud との統合 [」を参照してください](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)。
+
 展開方法は、オペレーティング システムと優先する方法によって異なります。 次の表に、Defender for Endpoint へのオンボードに役立つリソースの一覧を示します。
 
-|オペレーティング システム  |Methods  |
+|オペレーティング システム  |メソッド  |
 |---------|---------|
-|Windows 10以降<br/><br/>Windows Server 2019 以降<br/><br/>Windows Server バージョン 1803 以降<br/><br/>Windows Server 2012 R2 および 2016 <sup> [[1](#fn1)]<sup>  |   [ローカル スクリプト (最大 10 台のデバイス)](configure-endpoints-script.md)<br><br/>   [グループ ポリシー](configure-endpoints-gp.md)<br/><br/>[Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)<br/><br/>[Microsoft エンドポイント マネージャー/ モバイル デバイス管理 (Intune)](configure-endpoints-mdm.md)<br>    [VDI スクリプト](configure-endpoints-vdi.md) <br><br> **注**: ローカル スクリプトは概念実証に適していますが、実稼働環境での展開には使用できません。 実稼働展開の場合は、グループ ポリシー、グループ ポリシー、Microsoft Endpoint Configuration Manager Intune を使用することをお勧めします。
-|Windows Server 2008 R2 SP1 | [Microsoft Monitoring Agent (MMA) または](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) [Microsoft Defender for Cloud](/azure/security-center/security-center-wdatp) <br><br> **注**: Microsoft Monitoring Agent Azure Log Analytics エージェントです。 詳細については [、「Log Analytics エージェントの概要」を参照してください](/azure/azure-monitor/platform/log-analytics-agent)。  
+|Windows 10以降<br/><br/>Windows Server 2019 以降<br/><br/>Windows Server バージョン 1803 以降<br/><br/>Windows Server 2012 R2 および 2016 <sup> [[1](#fn1)]<sup>  |   [ローカル スクリプト (最大 10 台のデバイス)](configure-endpoints-script.md)<br><br/>   [グループ ポリシー](configure-endpoints-gp.md)<br/><br/>[Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)<br/><br/>[Microsoft エンドポイント マネージャー/ モバイル デバイス管理 (Intune)](configure-endpoints-mdm.md)<br>    [VDI スクリプト](configure-endpoints-vdi.md) <br><br> **注**: ローカル スクリプトは概念実証に適していますが、実稼働環境での展開には使用できません。 実稼働展開の場合は、グループ ポリシー、グループ ポリシー、Microsoft Endpoint Configuration Manager Intune を使用することをお勧めします。 |
+|Windows Server 2008 R2 SP1 | [Microsoft Monitoring Agent (MMA) または](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) [Microsoft Defender for Cloud](/azure/security-center/security-center-wdatp) <br><br> **注**: Microsoft Monitoring Agent Azure Log Analytics エージェントです。 詳細については [、「Log Analytics エージェントの概要」を参照してください](/azure/azure-monitor/platform/log-analytics-agent)。  |
 |Windows 8.1 Enterprise<br/><br/>Windows 8.1 Pro<br/><br/>Windows 7 SP1 Pro<br/><br/>Windows 7 SP1| [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md) <br><br> **注**: Microsoft Monitoring Agent Azure Log Analytics エージェントです。 詳細については [、「Log Analytics エージェントの概要」を参照してください](/azure/azure-monitor/platform/log-analytics-agent)。  
 | macOS (「 [システム要件」を参照](microsoft-defender-endpoint-mac.md)) | [ローカル スクリプト](mac-install-manually.md)<br/><br/>[Microsoft エンドポイント マネージャー](mac-install-with-intune.md)<br/><br/>[JAMF Pro](mac-install-with-jamf.md)<br/><br/>[モバイル デバイス管理](mac-install-with-other-mdm.md)   |
 | Linux (「[システム要件」を参照)](microsoft-defender-endpoint-linux.md#system-requirements) |  [ローカル スクリプト](linux-install-manually.md) <br><br/> [Puppet](linux-install-with-puppet.md) <br><br/> [Ansible](linux-install-with-ansible.md)|  

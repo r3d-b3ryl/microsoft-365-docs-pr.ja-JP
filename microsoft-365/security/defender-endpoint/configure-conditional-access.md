@@ -2,8 +2,6 @@
 title: Microsoft Defender for Endpoint で条件付きアクセスを構成する
 description: 条件付きアクセスを実装するために Intune、Microsoft 365 Defender、Azure で実行する必要がある手順について説明します。
 keywords: 条件付きアクセス、条件付きアクセス、デバイス リスク、リスク レベル、統合、Intune 統合
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0c0ae3d155024a6c0cb9efb541218689f8970a12
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 8706f756b4e8d0ba87a747396e8f7ef71d66460c
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164588"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284375"
 ---
 # <a name="configure-conditional-access-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint で条件付きアクセスを構成する
 
@@ -36,7 +34,7 @@ ms.locfileid: "61164588"
 
 このセクションでは、条件付きアクセスを適切に実装するために必要なすべての手順について説明します。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 > [!WARNING]
 > このシナリオでは、登録Azure ADデバイスがサポートされていない点に注意してください。</br>
@@ -45,7 +43,7 @@ ms.locfileid: "61164588"
 すべてのデバイスが Intune に登録されている必要があります。 Intune にデバイスを登録するには、次のオプションを使用できます。
 
 - IT 管理者: 自動登録を有効にする方法の詳細については、「登録」[を参照Windowsしてください。](/intune/windows-enroll#enable-windows-10-automatic-enrollment)
-- エンド ユーザー: Intune にデバイスを登録する方法の詳細Windows 10 Intune にデバイスを登録するWindows 10[を参照してください。](/intune/quickstart-enroll-windows-device)
+- エンド ユーザー: Intune に Windows 10 デバイスと Windows 11 デバイスを登録する方法の詳細については、「Intune に Windows 10 デバイスを登録する」を参照[してください](/intune/quickstart-enroll-windows-device)。
 - エンド ユーザーの代替: Azure AD ドメインへの参加の詳細については、「how to: plan your Azure AD参加実装」[を参照してください](/azure/active-directory/devices/azureadjoin-plan)。
 
 Intune ポータル、Intune ポータル、およびポータルMicrosoft 365 Defender実行する必要があるAzure ADがあります。
@@ -57,7 +55,7 @@ Intune ポータル、Intune ポータル、およびポータルMicrosoft 365 D
 - **Azure ADポータル**- グローバル管理者、セキュリティ管理者、または条件付きアクセス管理者としてサインインする必要があります。
 
 > [!NOTE]
-> Intune が管理され、Microsoft Intuneデバイスに参加しているAzure AD環境Windows 10があります。
+> Intune が管理され、Microsoft Intune 11 台のデバイスに参加Azure AD、Windows 10環境Windows必要があります。
 
 条件付きアクセスを有効にするには、次の手順を実行します。
 

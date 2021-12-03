@@ -2,7 +2,6 @@
 title: エンドポイント API エラーの一般的な Microsoft Defender
 description: 説明付きエンドポイント API エラーの一般的な Microsoft Defender の一覧。
 keywords: API、Microsoft Defender for Endpoint API、エラー、トラブルシューティング
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 406706f5ceba4268cfad99dec07d76e15f447b2b
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: d960091409a71fd23e52a098ae3d8164c7df5aef
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171259"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284603"
 ---
 # <a name="common-rest-api-error-codes"></a>一般的な REST API エラー コード
 

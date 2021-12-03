@@ -2,7 +2,6 @@
 title: インジケーター API の送信または更新
 description: Submit または Update Indicator API を使用して、Microsoft Defender for Endpoint の新しい Indicator エンティティを送信または更新する方法について説明します。
 keywords: apis, graph api, supported apis, submit, ti, indicator, update
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b7be84565c45263ef27f1e36da154a70c73956d0
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 0adf9b74398cafb7bd326dbc9183588feb30ee13
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166100"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283667"
 ---
 # <a name="submit-or-update-indicator-api"></a>インジケーター API の送信または更新
 
@@ -84,7 +83,7 @@ indicatorType|列挙|インジケーターの種類。 指定できる値は、"
 action|列挙|インジケーターが組織内で検出される場合に実行されるアクション。 指定できる値は、"Alert"、"Warn"、"Block"、"Audit"、"BlockAndRemediate"、"AlertAndBlock"、"Allowed" です。 **必須**。 "Audit" でアクションを作成する場合は、"GenerateAlert" パラメーターを "TRUE" に設定する必要があります。
 アプリケーション|String|インジケーターに関連付けられているアプリケーション。 このフィールドは、新しいインジケーターでのみ機能します。 既存のインジケーターの値は更新されない。 **Optional**
 title|String|インジケーターアラートのタイトル。 **必須**
-説明|String|インジケーターの説明。 **必須**
+description|String|インジケーターの説明。 **必須**
 expirationTime|DateTimeOffset|インジケーターの有効期限。 **Optional**
 severity|列挙|インジケーターの重大度。 指定できる値は、"Informational"、"Low"、"Medium"、"High" です。 **Optional**
 recommendedActions|String|TI インジケーターアラート推奨アクション。 **Optional**

@@ -2,7 +2,6 @@
 title: インポート インジケーター API
 description: Microsoft Defender for Endpoint でインジケーター API のインポート バッチを使用する方法について説明します。
 keywords: apis, サポートされている api, submit, ti, indicator, update
-search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: api
-ms.openlocfilehash: 60d587637f282b36c9d13280fc3f488ad86a80b5
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 7306489e537e583055e037ce9d8ce04add248844
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167108"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283703"
 ---
 # <a name="import-indicators-api"></a>インポート インジケーター API
 

@@ -18,17 +18,17 @@ ms.collection:
 - m365solution-scenario
 - m365scenario-fpfn
 ms.topic: how-to
-ms.date: 10/19/2021
+ms.date: 12/02/2021
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom:
 - FPFN
 - admindeeplinkDEFENDER
-ms.openlocfilehash: 2464b8443db2f12e524a33ee56ce90909fea1fc2
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: 6aa6dbe986f7893049892f45934350ea250c7b3a
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61221150"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284279"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint での誤検出/検出漏れに対処する
 
@@ -67,7 +67,7 @@ ms.locfileid: "61221150"
 
 アラートを分類または抑制する前に、アラートが正確か、誤検知か良性かを判断します。
 
-1. ポータルに移動<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderサインイン</a>します。
+1. ポータル ( ) にMicrosoft 365 Defenderサインイン [https://security.microsoft.com](https://security.microsoft.com) します。
 
 2. ナビゲーション ウィンドウで、[通知キュー] **を選択します**。
 
@@ -87,7 +87,7 @@ ms.locfileid: "61221150"
 
 アラートは、誤検知または正陽性に分類Microsoft 365 Defender。 アラートを分類すると、Microsoft Defender for Endpoint のトレーニングに役立ちます。これにより、時間がたつ間に、より多くの真のアラートと少ない誤ったアラートが表示されます。
 
-1. ポータルに移動<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderサインイン</a>します。
+1. ポータル ( ) にMicrosoft 365 Defenderサインイン [https://security.microsoft.com](https://security.microsoft.com) します。
 
 2. [ **アラート キュー] を** 選択し、アラートを選択します。
 
@@ -102,7 +102,7 @@ ms.locfileid: "61221150"
 
 誤検知または正陽性のアラートがあるが、重要ではないイベントの場合は、これらのアラートを非表示にMicrosoft 365 Defender。 アラートを抑制すると、セキュリティ操作ダッシュボードのノイズを軽減できます。
 
-1. ポータルに移動<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderサインイン</a>します。
+1. ポータル ( ) にMicrosoft 365 Defenderサインイン [https://security.microsoft.com](https://security.microsoft.com) します。
 
 2. ナビゲーション ウィンドウで、[アラート キュー] **を選択します**。
 
@@ -446,7 +446,7 @@ PUA 保護設定[Microsoft エンドポイント マネージャー](/mem/endpoi
 > [!IMPORTANT]
 > 自動調査と *修復には、* 完全自動化を使用することをお勧めします。 誤検知のため、これらの機能をオフにしない。 代わりに [、"許可"](#indicators-for-microsoft-defender-for-endpoint)インジケーターを使用して例外を定義し、自動的に適切なアクションを実行するために自動調査と修復を設定します。 この [ガイダンスに従って](automation-levels.md#levels-of-automation) 、セキュリティ運用チームが処理する必要があるアラートの数を減らすのに役立ちます。
 
-## <a name="still-need-help"></a>さらにサポートが必要な場合
+## <a name="still-need-help"></a>さらにヘルプが必要ですか?
 
 この記事のすべての手順を実行し、引き続きヘルプが必要な場合は、テクニカル サポートにお問い合わせください。
 

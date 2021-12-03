@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 ms.custom: seo-marvel-apr2020
 description: 管理者は、PST ファイルをハード ドライブにコピー Microsoft 365 Microsoft に配布することで、PST ファイルをメールボックスに一括インポートする方法について説明します。
-ms.openlocfilehash: 0cd53d6d82a1052f91c7179f2c6f1dab33a8b125
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 6d1130dcfbc6f405a09db6263a5c075fc1c7db0a
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110513"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283775"
 ---
 # <a name="use-drive-shipping-to-import-your-organizations-pst-files"></a>ドライブ配布を使用して組織の PST ファイルをインポートする
 
@@ -73,7 +73,7 @@ ms.locfileid: "61110513"
 - Office 365 Import サービスで使用できるのは、2.5 インチのソリッド ステート ドライブ (SSD) または 2.5 インチまたは 3.5 インチの SATA II/III の内部ハード ドライブのみです。 最大で 10 TB のハード ドライブを使用できます。 インポート ジョブでは、ハード ドライブの最初のデータ ボリュームのみが処理されます。 このデータ ボリュームは、NTFS でフォーマットする必要があります。 データをハード ドライブにコピーする場合は、2.5 インチ SSD または 2.5 インチまたは 3.5 インチ SATA II/III コネクタを使用して直接接続するか、外部の 2.5 インチ SSD または 2.5 インチまたは 3.5 インチの SATA II/III USB アダプターを使用して外部に接続できます。
     
     > [!IMPORTANT]
-    > 組み込みの USB アダプターに付属する外部ハード ドライブは、インポート サービスOffice 365サポートされていません。 また、外部ハード ドライブのケース内にあるディスクは使用できません 外部ハード ドライブは発送しないでください。 
+    > Office 365 インポート サービスでは、USB アダプターが内蔵されている外付けハード ドライブはサポートされていません。 また、外部ハード ドライブのケース内にあるディスクは使用できません Please don't ship external hard drives. 
   
 - PST ファイルをコピーするハード ドライブは、BitLocker で暗号化する必要があります。 手順 2 で実行する WAImportExport.exe ツールを使用すると、BitLocker をセットアップできます。 また、Microsoft データ センター担当者がドライブにアクセスして PST ファイルを Microsoft クラウドの Azure Storage 領域にアップロードするために使用する BitLocker 暗号化キーも生成します。
     
@@ -455,7 +455,7 @@ Azure Storage Explorer をインストールし、Azure Storage 領域に接続�
 
   - 監査ログ [で、この](search-the-audit-log-in-security-and-compliance.md) データに関連するイベントを検索します。 
 
-  - 非アクティブなメールボックス [にデータをインポートして](create-and-manage-inactive-mailboxes.md) 、コンプライアンスの目的でデータをアーカイブします。 
+  - 非アクティブなメールボックス [にデータをインポートして](inactive-mailboxes-in-office-365.md) 、コンプライアンスの目的でデータをアーカイブします。 
 
   - 機密情報のデータ損失から [組織](dlp-learn-about-dlp.md) を保護します。 
 
