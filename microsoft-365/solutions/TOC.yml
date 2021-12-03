@@ -304,10 +304,10 @@
               href: /compliance/regulatory/gdpr?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
     - name: セキュリティ
       items:
+        - name: Microsoft 365 ゼロ トラスト展開プラン
+          href: ../security/microsoft-365-zero-trust.md
         - name: 自宅での作業をサポートするセキュリティ チームの主なタスク
           href: ../security/top-security-tasks-for-remote-work.md
-        - name: Microsoft 365 security for Business 意思決定者 (BDMs)
-          href: ../security/microsoft-365-security-for-bdm.md
         - name: ID とデバイスのアクセス構成
           href: ../security/office-365-security/microsoft-365-policies-configurations.md
         - name: Microsoft 365 Defender の評価とパイロット
@@ -315,7 +315,7 @@
         - name: 最初のインシデントに対応する
           href: ../security/defender/first-incident-overview.md
         - name: Microsoft Defender for Endpoint を展開する
-          href: /microsoft-365/security/defender-endpoint/deployment-phases.md
+          href: ../security/defender-endpoint/deployment-phases.md
         - name: Microsoft 以外のエンドポイント保護から Microsoft Defender for Endpoint に切り替える
           href: ../security/defender-endpoint/switch-to-mde-overview.md
         - name: Microsoft 以外の保護ツールから Microsoft Defender for Office 365 に切り替える
@@ -354,6 +354,8 @@
           href: energy-secure-collaboration.md
     - name: 医療
       items:
+        - name: 概要
+          href: healthcare-overview.md
         - name: 医療関係向けの Teams
           href: /MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc
     - name: 教育
