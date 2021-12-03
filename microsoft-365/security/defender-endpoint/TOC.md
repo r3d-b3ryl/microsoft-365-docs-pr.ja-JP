@@ -57,7 +57,7 @@
 
 
 ##### [Windows デバイスと Windows サーバーのオンボード]()
-###### [Windows Server 2012 R2、2016、半期チャネル、2019、および 2022](configure-server-endpoints.md)をオンボードする
+###### [Windows Server 2012 R2、2016、半期チャネル、2019、および 2022 をオンボードする](configure-server-endpoints.md)
 ###### [ローカル スクリプトを使用した Windows デバイスのオンボード](configure-endpoints-script.md)
 ###### [グループ ポリシーを使用してデバイスをオンボードする](configure-endpoints-gp.md)
 ###### [Microsoft Endpoint Configuration Manager を使用した Windows デバイスのオンボード](configure-endpoints-sccm.md)
