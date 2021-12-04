@@ -3,7 +3,7 @@ title: Microsoft 365 サービスの IPv6 サポート
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 12/01/2021
+ms.date: 12/03/2021
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
 description: '概要: IPv6 のサポートについて、Microsoft 365および政府機関のMicrosoft 365説明します。'
-ms.openlocfilehash: 5d798f741caa1a9a2df69e1c4df1d45067d15ce3
-ms.sourcegitcommit: 0251d5c6cb141055c93c83a402c3dc52c7a70dcc
+ms.openlocfilehash: a6a2e11ff2e312c02f10d152fe580bdead5fa7c9
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61262774"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301956"
 ---
 # <a name="ipv6-support-in-microsoft-365-services"></a>Microsoft 365 サービスの IPv6 サポート
 
@@ -58,7 +58,7 @@ IPv6 はサポートされていないのでSkype for Business有効にするこ
 
 ### <a name="microsoft-teams-sip-gateway-and-ipv6"></a>Microsoft Teams SIP ゲートウェイ、IPV6
 
-Microsoft Teamsおよび SIP ゲートウェイは IPv4 のみをサポートします。 サービスMicrosoft Teamsクライアントは、IPv4 と IPv6 の両方をサポートします。 ネットワークへの通信を制御する場合Microsoft Teams URL と IP アドレス範囲の IP [Microsoft 365を使用します](urls-and-ip-address-ranges.md)。
+Microsoft Teamsルーティングと SIP ゲートウェイは IPv4 のみをサポートします。 サービスMicrosoft Teamsクライアントは、IPv4 と IPv6 の両方をサポートします。 ネットワークへの通信を制御する場合Microsoft Teams URL と IP アドレス範囲の IP [Microsoft 365を使用します](urls-and-ip-address-ranges.md)。
   
 ### <a name="exchange-online-protection-and-ipv6"></a>Exchange Online Protection IPv6
 

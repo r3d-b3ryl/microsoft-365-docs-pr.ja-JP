@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 47613efb1f94b3e6fa4490fb981473574b0e5c4c
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: bfd0b5e44eef9713d8a5cdda67948da9ef8a3709
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/03/2021
-ms.locfileid: "61284183"
+ms.locfileid: "61300756"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender for Endpoint on Mac
 
@@ -41,7 +41,7 @@ ms.locfileid: "61284183"
 
 ## <a name="whats-new-in-the-latest-release"></a>最新リリースの新機能
 
-[Microsoft Defender for Endpoint の新機能](whats-new-in-microsoft-defender-atp.md)
+[Microsoft Defender for Endpoint の新機能](whats-new-in-microsoft-defender-endpoint.md)
 
 [Microsoft Defender for Endpoint on Mac の新機能](mac-whatsnew.md)
 

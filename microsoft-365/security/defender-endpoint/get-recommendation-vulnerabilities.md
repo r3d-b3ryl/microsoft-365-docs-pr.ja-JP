@@ -2,8 +2,7 @@
 title: 推奨事項による脆弱性の一覧表示
 description: セキュリティ推奨事項に関連付けられている脆弱性の一覧を取得します。
 keywords: apis、graph api、サポートされている api、get、脆弱性のリスト、セキュリティの推奨事項、脆弱性に関するセキュリティ推奨事項、脅威と脆弱性の管理、脅威と脆弱性の管理 api
-search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: ee1b99ceae87cdb6542e06ea7ee22c52db23ee96
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 05e4719e69601024af25b2b797477506f195d328
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168620"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300230"
 ---
 # <a name="list-vulnerabilities-by-recommendation"></a>推奨事項による脆弱性の一覧表示
 
@@ -57,7 +56,7 @@ GET /api/recommendations/{id}/vulnerabilities
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**。
 

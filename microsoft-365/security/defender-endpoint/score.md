@@ -2,7 +2,6 @@
 title: スコア メソッドとプロパティ
 description: 組織の露出スコア、デバイスのセキュリティで保護されたスコア、およびデバイス グループ別の露出スコアを取得します。
 keywords: apis, graph api, supported apis, score, exposure score, device secure score, exposure score by device group
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 96a565456f0e95ffc33cbff9a36abcf24db94c24
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: fe69b42c2d8bf80089b749cd41e59664cc2921e3
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61160547"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300984"
 ---
 # <a name="score-resource-type"></a>スコア リソースの種類
 
@@ -51,7 +50,7 @@ ms.locfileid: "61160547"
 
 ## <a name="properties"></a>プロパティ
 
-プロパティ|種類|説明
+プロパティ|型|説明
 :---|:---|:---
 スコア|倍精度浮動小数点数|現在のスコア。
 Time|DateTime|この API の呼び出しが行われた日時。

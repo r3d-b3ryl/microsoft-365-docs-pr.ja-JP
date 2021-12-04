@@ -2,7 +2,6 @@
 title: デバイスでライブ応答コマンドを実行する
 description: デバイスで一連のライブ応答コマンドを実行する方法について説明します。
 keywords: apis、graph api、サポートされている API、ライブラリへのアップロード
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -21,12 +20,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1a986bf129361954953e3b29e5906c71a0f482ed
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 6e8146a5e73cb056f6e22ec975f909c281d0890a
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61163124"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300960"
 ---
 # <a name="run-live-response-commands-on-a-device"></a>デバイスでライブ応答コマンドを実行する
 
@@ -72,6 +71,8 @@ ms.locfileid: "61163124"
 
   デバイスは、次のいずれかのバージョンの Windows を実行している必要があります
 
+  - **Windows 11**
+  
   - **Windows 10**
     - [バージョン 1909](/windows/whats-new/whats-new-windows-10-version-1909) 以降
     - [バージョン 1903](/windows/whats-new/whats-new-windows-10-version-1903)と[KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)
@@ -102,14 +103,14 @@ POST https://api.securitycenter.microsoft.com/API/machines/{machine_id}/runliver
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-|名前|種類|説明|
+|名前|型|説明|
 |---|---|---|
 |Authorization|String|ベアラー\<token>\. 必須です。|
 |Content-Type|string|application/json. Required.|
 
 ## <a name="request-body"></a>要求本文
 
-|パラメーター|種類|説明|
+|パラメーター|型|説明|
 |---|---|---|
 |コメント|文字列|アクションに関連付けるコメント。|
 |コマンド|配列|実行するコマンド。 使用できる値は PutFile、RunScript、GetFile です。|

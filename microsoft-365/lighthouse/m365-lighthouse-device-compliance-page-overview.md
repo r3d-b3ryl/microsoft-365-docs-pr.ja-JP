@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Lighthouseデバイス コンプライアンス ページの概要
+title: Microsoft 365 Lighthouse コンプライアンス ページの概要
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -16,14 +16,14 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 管理サービス プロバイダー (MSP) が Microsoft 365 Lighthouseデバイスコンプライアンス ページについて説明します。
-ms.openlocfilehash: b3672c155f55d314f3e11a945e3a81d9a100142c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d1c4cb8fde2d3f653e77020e4ad29f70da266a06
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152516"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61302352"
 ---
-# <a name="microsoft-365-lighthouse-device-compliance-page-overview"></a>Microsoft 365 Lighthouseデバイス コンプライアンス ページの概要
+# <a name="microsoft-365-lighthouse-device-compliance-page-overview"></a>Microsoft 365 Lighthouse コンプライアンス ページの概要
 
 > [!NOTE]
 > この記事で説明する機能はプレビューで、変更される可能性があります。要件を満たすパートナーだけが [利用できます](m365-lighthouse-requirements.md)。 組織にアカウントが設定されていない場合Microsoft 365 Lighthouse[を参照してください](m365-lighthouse-sign-up.md)Microsoft 365 Lighthouse。
@@ -32,13 +32,13 @@ Microsoft 365 Lighthouse左側のナビゲーション ウィンドウで [デ�
 
 ## <a name="overview-tab"></a>[概要] タブ  
   
-[概要] タブで、テナント全体のデバイス コンプライアンスの状態を表示し、毎月のデバイス コンプライアンスの傾向を確認し、デバイスにコンプライアンス ポリシーが割り当てられているかどうかを追跡できます。 条件付きアクセス ポリシーに基づいて、テナントデバイスのコンプライアンスアクションと要件に関する情報を表示することもできます。 
+[概要] タブで、テナント全体のデバイス コンプライアンスの状態を表示し、毎月のデバイス コンプライアンスの傾向を確認し、デバイスにコンプライアンス ポリシーが割り当てられているかどうかを追跡できます。 条件付きアクセス ポリシーを使用して、デバイスコンプライアンス要件が適用されていないテナントの数も確認できます。 [詳細を表示 **] を選択すると** 、詳細を表示できます。
 
 特定の顧客テナントのデバイスコンプライアンスに関する詳細な情報を取得するには、そのテナントの状態列の下の値を選択します。 [デバイス] タブが開き、選択したテナントのデバイスコンプライアンスの詳細を表示できます。
 
 デバイス コンプライアンス データをコンマ区切りExcel (.csv) ファイルにエクスポートするには、[エクスポート] を **選択します**。
 
-:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/device-overview-tab.png" alt-text="[概要] タブのスクリーンショット。":::
+:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/device-overview-tab.png" alt-text="[概要] タブのスクリーンショット。" lightbox="../media/m365-lighthouse-device-compliance-page-overview/device-overview-tab.png":::
 
 ## <a name="devices-tab"></a>[デバイス] タブ
 
@@ -59,7 +59,7 @@ Microsoft 365 Lighthouse左側のナビゲーション ウィンドウで [デ�
 - **再起動:** 状態が [非準拠]、猶予期間、または評価されない状態の一覧から 1 つ以上のデバイスを選択し、これらのデバイスを再起動するには、このオプションを選択します。
 - **検索:** キーワードを入力して、リスト内の特定のデバイスをすばやく検索します。
  
-:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/devices-device-tab.png" alt-text="[デバイス] タブのスクリーンショット。":::
+:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/devices-device-tab.png" alt-text="[デバイス] タブのスクリーンショット。" lightbox="../media/m365-lighthouse-device-compliance-page-overview/devices-device-tab.png":::
 
 ## <a name="policies-tab"></a>[ポリシー] タブ
 
@@ -75,7 +75,7 @@ Microsoft 365 Lighthouse左側のナビゲーション ウィンドウで [デ�
 - **更新:** 最新のデバイス コンプライアンス ポリシー データを取得する場合に選択します。
 - **検索:** キーワードを入力して、リスト内の特定のデバイス コンプライアンス ポリシーをすばやく見つける。
 
-:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/devices-policies-tab.png" alt-text="[ポリシー] タブのスクリーンショット。":::
+:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/devices-policies-tab.png" alt-text="[ポリシー] タブのスクリーンショット。" lightbox="../media/m365-lighthouse-device-compliance-page-overview/devices-policies-tab.png":::
 
 ## <a name="settings-tab"></a>設定タブ
 
@@ -91,7 +91,7 @@ Microsoft 365 Lighthouse左側のナビゲーション ウィンドウで [デ�
 - **更新:** 最新の非準拠設定データを取得する場合に選択します。
 - **検索:** キーワードを入力して、リスト内の特定の非準拠設定をすばやく見つける。
 
-:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/device-settings-tab.png" alt-text="[ページ] タブ設定スクリーンショット。":::
+:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/device-settings-tab.png" alt-text="[ページ] タブ設定スクリーンショット。" lightbox="../media/m365-lighthouse-device-compliance-page-overview/device-settings-tab.png":::
 
 ## <a name="related-content"></a>関連コンテンツ
 

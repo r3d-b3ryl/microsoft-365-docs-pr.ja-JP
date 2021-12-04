@@ -2,8 +2,6 @@
 title: エンドポイント イベントの Microsoft Defender を Azure イベント ハブにストリーミングする
 description: Microsoft Defender for Endpoint を構成して、高度なハンティング イベントをイベント ハブにストリーミングする方法について説明します。
 keywords: raw data export, Streaming API, API, Azure Event Hubs, Azure storage, storage account, Advanced Hunting, raw data sharing
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: ba953f0a5d5b8f138c2651a7be6afda106b361c7
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 0dddebc27f776e317090ac3424c27f01f26126ed
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168056"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300191"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-azure-event-hubs"></a>Azure イベント ハブに高度なハンティング イベントをストリーミングするように Microsoft Defender for Endpoint を構成する
 
@@ -34,7 +32,7 @@ ms.locfileid: "61168056"
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configuresiem-abovefoldlink)
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 1. テナントに [イベント ハブ](/azure/event-hubs/) を作成します。
 
@@ -56,13 +54,13 @@ ms.locfileid: "61168056"
 
    Event Hubs リソース ID を取得するには、Azure の [プロパティ] タブの [[Azure](https://ms.portal.azure.com/) Event **Hubs** 名前空間] ページ>[リソース ID] の下のテキストを \> **コピーします**。
 
-   ![イベント ハブ リソース Id1 のイメージ。](images/event-hub-resource-id.png)
+   :::image type="content" alt-text="イベント ハブ リソース Id1 のイメージ。" source="images/event-hub-resource-id.png" lightbox="images/event-hub-resource-id.png":::
 
 7. ストリーミングするイベントを選択し、[保存] を **クリックします**。
 
 ## <a name="the-schema-of-the-events-in-azure-event-hubs"></a>Azure Event Hubs のイベントのスキーマ
 
-```text
+```json
 {
     "records": [
                     {
@@ -92,7 +90,7 @@ ms.locfileid: "61168056"
 
 2. 次のクエリを実行して、各イベントのデータ型マッピングを取得します。
 
-   ```text
+   ```kusto
    {EventType}
    | getschema
    | project ColumnName, ColumnType 

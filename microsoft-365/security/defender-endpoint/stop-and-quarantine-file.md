@@ -2,7 +2,6 @@
 title: ファイル API の停止と検疫
 description: デバイスでのファイルの実行を停止し、Microsoft Defender for Endpoint でファイルを削除する方法について説明します。 例を参照してください。
 keywords: apis、graph api、サポートされている API、停止および検疫ファイル
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: bcaf08f73316c5c0482bb611427f5a8f19127c02
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 1f61e238030c5c8c31e514ef76cf90ffc4b5bd92
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165836"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300948"
 ---
 # <a name="stop-and-quarantine-file-api"></a>ファイル API の停止と検疫
 
@@ -50,7 +49,7 @@ ms.locfileid: "61165836"
 > [!IMPORTANT]
 > このアクションは、次の場合にのみ実行できます。
 >
-> - アクションを実行しているデバイスがバージョン 1703 以降Windows 10を実行している
+> - アクションを実行しているデバイスは、Windows 10バージョン 1703 以降、または 11 Windowsです。
 > - ファイルが信頼できるサード パーティの発行元に属していないか、Microsoft によって署名されていない
 > - Microsoft Defender ウイルス対策パッシブ モードで実行している必要があります。 詳細については、「互換性」[をMicrosoft Defender ウイルス対策してください](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)。
 
@@ -80,7 +79,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/StopAndQuarantin
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**。
 Content-Type|string|application/json. **必須**。
@@ -88,7 +87,7 @@ Content-Type|string|application/json. **必須**。
 ## <a name="request-body"></a>要求本文
 要求本文で、JSON オブジェクトに次のパラメーターを指定します。
 
-パラメーター|種類|説明
+パラメーター|型|説明
 :---|:---|:---
 コメント|文字列|アクションに関連付けるコメント。 **必須**。
 Sha1|String|デバイスで停止して検疫するファイルの Sha1。 **必須**。

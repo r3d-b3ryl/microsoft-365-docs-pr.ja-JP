@@ -2,8 +2,7 @@
 title: ソフトウェア別にデバイスを一覧表示する
 description: このソフトウェアがインストールされているデバイスの一覧を取得します。
 keywords: apis, graph api, supported api, get, list devices, devices list, list devices by software, Microsoft Defender for Endpoint tvm api
-search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 96f9ee111bc638339c4f4a001062cbeca1b20783
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 32dd0531d0919613621d656f7f3b9aef3e4bec0d
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167492"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301584"
 ---
 # <a name="list-devices-by-software"></a>ソフトウェア別にデバイスを一覧表示する
 
@@ -57,7 +56,7 @@ GET /api/Software/{Id}/machineReferences
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-|名前|種類|説明
+|名前|型|説明
 |---|---|---|
 |Authorization|String|ベアラー {token}。**必須**。
 
@@ -91,13 +90,13 @@ GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge/machi
         {
             "id": "7c7e1896fa39efb0a32a2cf421d837af1b9bf762",
             "computerDnsName": "dave_desktop",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "rbacGroupName": "GroupTwo"
         },
         {
             "id": "7d5cc2e7c305e4a0a290392abf6707f9888fda0d",
             "computerDnsName": "jane_PC",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "rbacGroupName": "GroupTwo"
         }
         ...

@@ -3,8 +3,6 @@ title: エンドポイント向け Microsoft Defender の API エクスプロー
 ms.reviewer: ''
 description: API エクスプローラーを使用して、API クエリの作成と実行、テスト、および使用可能な API の要求の送信を行う
 keywords: api, explorer, send, request, get, post,
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: aa2fabf744c1eeb272415fcd87bf5ef7b72d0ce3
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 6e7d0e5927a85f2f3952221c294fe2387c268546
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168800"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300168"
 ---
 # <a name="api-explorer"></a>API エクスプローラー
 

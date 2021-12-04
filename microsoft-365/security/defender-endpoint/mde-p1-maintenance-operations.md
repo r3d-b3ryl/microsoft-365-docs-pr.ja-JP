@@ -14,12 +14,12 @@ ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 1ae0636f103c830866c0b7bcd1af488f2fc4e070
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: c950730586363312999488ea15c82293388058fa
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61220874"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61302472"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-plan-1"></a>エンドポイント プラン 1 の Microsoft Defender の管理
 
@@ -60,4 +60,4 @@ Defender for Endpoint で誤検知/陰性が表示される場合は [、「Addr
 
 ## <a name="next-steps"></a>次の手順
 
-- [Microsoft Defender for Endpoint の新機能を確認する](whats-new-in-microsoft-defender-atp.md)
+- [Microsoft Defender for Endpoint の新機能を確認する](whats-new-in-microsoft-defender-endpoint.md)

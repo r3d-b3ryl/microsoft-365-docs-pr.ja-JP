@@ -2,8 +2,6 @@
 title: エンドポイント向け Microsoft Defender で SIEM 統合を有効にする
 description: SIEM 統合を有効にして、セキュリティ情報とイベント管理 (SIEM) ソリューションで検出を受け取る。
 keywords: SIEM コネクタ、SIEM、コネクタ、セキュリティ情報、イベントを有効にする
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f94bbd6da16d7c0cdffe2b5f49085ab4b774e03c
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 881f6d3691add12af8c8f4e808417bf4cef6e5ea
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166976"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300180"
 ---
 # <a name="enable-siem-integration-in-microsoft-defender-for-endpoint"></a>エンドポイント向け Microsoft Defender で SIEM 統合を有効にする
 
@@ -56,7 +54,7 @@ ms.locfileid: "61166976"
 
 1. ナビゲーション ウィンドウで、[エンドポイント **API** SIEM \>  \> **設定] を** \> **選択します**。
 
-   :::image type="content" source="../../media/enable-siemnew.png" alt-text="[SIEM 統合] メニュー 1 からの設定イメージ。":::
+   :::image type="content" source="../../media/enable-siemnew.png" lightbox="../../media/enable-siemnew.png" alt-text="[SIEM 統合] メニュー 1 からの設定イメージ。":::
 
    > [!TIP]
    > SIEM コネクタ アプリケーションを有効にしようとするときにエラーが発生した場合は、ブラウザーのポップアップ ブロッカー設定を確認してください。 機能を有効にするときに開いている新しいウィンドウがブロックされている可能性があります。
@@ -66,7 +64,7 @@ ms.locfileid: "61166976"
     > [!WARNING]
     > クライアント シークレットは 1 回だけ表示されます。 コピーを安全な場所に保管してください。
 
-    ![メニュー 2 からの SIEM 統合のイメージ設定します。](images/siem_details.png)
+    :::image type="content" alt-text="メニュー 2 からの SIEM 統合のイメージ設定します。" source="images/siem_details.png" lightbox="images/siem_details.png":::
 
 3. 組織で使用する SIEM の種類を選択します。
 

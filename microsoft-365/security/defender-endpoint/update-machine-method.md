@@ -2,7 +2,6 @@
 title: コンピューター エンティティ API の更新
 description: この API を使用してコンピューター タグを更新する方法について説明します。 タグと devicevalue プロパティを更新できます。
 keywords: apis, graph api, supported apis, get, alert, information, id
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 787fcc3851d765a03d452d98106b522f239ea8c6
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 77876024faa7452ff284e30a587e72855068cc98
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164168"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301116"
 ---
 # <a name="update-machine"></a>コンピューターの更新 
 
@@ -72,7 +71,7 @@ PATCH /api/machines/{machineId}
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**。
 Content-Type|文字列|application/json. **必須**。
@@ -85,7 +84,7 @@ Content-Type|文字列|application/json. **必須**。
 
 最適なパフォーマンスを得る場合は、変更していない既存の値を含めてはならない。
 
-プロパティ|種類|説明
+プロパティ|型|説明
 :---|:---|:---
 machineTags|String collection|コンピューター タグ [の](machine.md) セット。
 deviceValue|Null 許容列挙|デバイス [の値](tvm-assign-device-value.md)です。 指定できる値は、'Normal'、'Low'、および 'High' です。
@@ -114,7 +113,7 @@ PATCH https://api.securitycenter.microsoft.com/api/machines/{machineId}
     "machineTags": [
                      "Demo Device",
                      "Generic User Machine - Attack Source",
-                     "Windows 10",
+                     "Windows 10" "Windows11",
                      "Windows Insider - Fast"
     ]
 }

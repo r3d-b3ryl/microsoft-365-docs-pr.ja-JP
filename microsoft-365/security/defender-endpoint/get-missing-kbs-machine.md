@@ -2,8 +2,7 @@
 title: デバイス ID で不足している KB を取得する
 description: デバイス ID によって不足しているセキュリティ更新プログラムを取得します。
 keywords: apis、 graph api, supported apis, get, list, file, information, device id, threat & 脆弱性の管理 api, Microsoft Defender for Endpoint tvm api
-search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b3fb1c443d8776d342e5e7937e7ca761bba9f842
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 639e8ea84bd2d7e919ceedaa7eae785da75734ed
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168954"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300216"
 ---
 # <a name="get-missing-kbs-by-device-id"></a>デバイス ID で不足している KB を取得する
 
@@ -53,7 +52,7 @@ GET /api/machines/{machineId}/getmissingkbs
 
 ## <a name="request-header"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization | String | ベアラー {token}。 **必須**。
 

@@ -2,7 +2,6 @@
 title: machineAction リソースの種類
 description: Microsoft Defender for Endpoint の MachineAction リソースタイプのメソッドとプロパティについて説明します。
 keywords: apis, サポートされている api, get, machineaction, recent
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 79503f4089f1ff19bc9f47c6032b6ebc33b244d8
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 625170f0e589ece6f6277dc8445f3af7bef11837
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171163"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301860"
 ---
 # <a name="machineaction-resource-type"></a>MachineAction リソースの種類
 
@@ -41,7 +40,7 @@ ms.locfileid: "61171163"
 
 - 詳細については、「応答アクション [」を参照してください](respond-machine-alerts.md)。
 
-|メソッド|戻り値の型|Description|
+|メソッド|戻り値の型|説明|
 |---|---|---|
 |[MachineActions の一覧表示](get-machineactions-collection.md)|[マシン アクション](machineaction.md)|[ [マシン アクション] エンティティを](machineaction.md) 一覧表示します。|
 |[MachineAction の取得](get-machineaction-object.md)|[マシン アクション](machineaction.md)|単一の [Machine Action エンティティを取得](machineaction.md) します。|
@@ -62,7 +61,7 @@ ms.locfileid: "61171163"
 
 ## <a name="properties"></a>プロパティ
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |---|---|---|
 |ID|Guid|Machine [Action エンティティの](machineaction.md) ID。|
 |type|列挙|アクションの種類。 指定できる値は、「RunAntiVirusScan」、"Offboard"、"Live Response"、"CollectInvestigationPackage"、"Isolate"、"Unisolate"、"StopAndQuarantineFile"、"RestrictCodeExecution"、"UnrestrictCodeExecution"です。|

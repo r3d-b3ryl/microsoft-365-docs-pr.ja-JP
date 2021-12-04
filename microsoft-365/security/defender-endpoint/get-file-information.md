@@ -2,7 +2,6 @@
 title: ファイル情報 API の取得
 description: Get file information API を使用して、Microsoft Defender for Endpoint の Sha1、Sha256、または MD5 識別子でファイルを取得する方法について説明します。
 keywords: apis, graph api, supported apis, get, file, information, sha1, sha256, md5
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: c500c2f08d756aa34c16ec94a84c5716a19e62f3
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 43dbd1ebb576e5b22dac1ddca278232b8539168c
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61163892"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300444"
 ---
 # <a name="get-file-information-api"></a>ファイル情報 API の取得
 
@@ -68,7 +67,7 @@ GET /api/files/{id}
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**。
 

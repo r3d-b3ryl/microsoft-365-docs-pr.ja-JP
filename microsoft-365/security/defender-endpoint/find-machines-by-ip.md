@@ -2,7 +2,6 @@
 title: 内部 IP API でデバイスを検索する
 description: 指定されたタイムスタンプの 15 分前および後の時間範囲で、要求された内部 IP で見られるデバイスを検索する
 keywords: apis, graph api, supported apis, get, device, IP, find, find device, by ip, ip
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6f8040ce207faef8ec802ddb637b97917c822801
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 702626d3e147bdd02c4988ffabbd158a44f911c7
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168692"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61302268"
 ---
 # <a name="find-devices-by-internal-ip-api"></a>内部 IP API でデバイスを検索する
 
@@ -73,7 +72,7 @@ GET /api/machines/findbyip(ip='{IP}',timestamp={TimeStamp})
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**。
 

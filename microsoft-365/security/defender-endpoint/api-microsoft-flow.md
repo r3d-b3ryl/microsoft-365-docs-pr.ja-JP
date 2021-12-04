@@ -3,7 +3,6 @@ title: Microsoft Defender for Endpoint Flow コネクタ
 ms.reviewer: ''
 description: Microsoft Defender for Endpoint Flow コネクタを使用して、セキュリティを自動化し、テナントで新しいアラートが発生するといつでもトリガーされるフローを作成します。
 keywords: flow, サポートされている api, api, Microsoft flow, query, automation
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a4d7e585c76a503041fb6c1474e86934e68647a6
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 8c3ed9023df1cb7256265a116303fd6988677de4
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167900"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300480"
 ---
 # <a name="microsoft-power-automate-formerly-microsoft-flow-and-azure-functions"></a>Microsoft Power Automate (以前はMicrosoft Flow)、Azure Functions
 
@@ -40,7 +39,7 @@ ms.locfileid: "61167900"
 
 Microsoft Defender API には、多くの機能Power Automate公式のコネクタがあります。
 
-![編集資格情報 1 のイメージ。](images/api-flow-0.png)
+:::image type="content" alt-text="編集資格情報 1 のイメージ。" source="images/api-flow-0.png":::
 
 > [!NOTE]
 > プレミアム コネクタライセンスの前提条件の詳細については、「Premium [Connectors のライセンス」を参照してください](/power-automate/triggers-introduction#licensing-for-premium-connectors)。
@@ -54,15 +53,15 @@ Microsoft Defender API には、多くの機能Power Automate公式のコネク�
 
 2. [マイ フロー **] [** \> **新しい** \> **自動入力から] 空白に移動します**。
 
-    ![編集資格情報 2 のイメージ。](images/api-flow-1.png)
+    :::image type="content" alt-text="編集資格情報 2 のイメージ。" source="images/api-flow-1.png":::
 
 3. ユーザーの名前を選択しFlow"Microsoft Defender ATP Triggers" をトリガーとして検索し、新しいアラート トリガーを選択します。
 
-    ![編集資格情報 3 のイメージ。](images/api-flow-2.png)
+    :::image type="content" alt-text="編集資格情報 3 のイメージ。" source="images/api-flow-2.png":::
 
 これで、新Flow発生するごとにトリガーされるメッセージが表示されます。
 
-![編集資格情報 4 のイメージ。](images/api-flow-3.png)
+:::image type="content" alt-text="編集資格情報 4 のイメージ。" source="images/api-flow-3.png":::
 
 ここで行う必要があるのは、次の手順を選択する必要があります。
 たとえば、アラートの重大度が高い場合にデバイスを分離し、そのデバイスに関する電子メールを送信できます。
@@ -76,7 +75,7 @@ Microsoft Defender API には、多くの機能Power Automate公式のコネク�
 
 3. 最後の **手順の [アラート ID]** を [入力] に **設定します**。
 
-    ![資格情報の編集のイメージ 5.](images/api-flow-4.png)
+    :::image type="content" alt-text="資格情報の編集のイメージ 5." source="images/api-flow-4.png" lightbox="images/api-flow-4.png":::
 
 ### <a name="isolate-the-device-if-the-alerts-severity-is-high"></a>アラートの重大度が [高] の場合はデバイスを分離する
 
@@ -86,7 +85,7 @@ Microsoft Defender API には、多くの機能Power Automate公式のコネク�
 
    [はい] の場合は **、[コンピューター ID]** とコメントを含む Microsoft Defender ATP - [コンピューターの分離] アクションを追加します。
 
-    ![編集資格情報 6 のイメージ。](images/api-flow-5.png)
+    :::image type="content" alt-text="編集資格情報 6 のイメージ。" source="images/api-flow-5.png" lightbox="images/api-flow-5.png":::
 
 3. アラートと分離に関する電子メールを送信する新しい手順を追加します。 メール コネクタや Gmail など、非常に使いやすいOutlookがあります。
 

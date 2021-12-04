@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a1937fd24c8025aa3e3d7afb16fbf050b1155fb3
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: e22a237a5e8369093a83063f784fdba3ed75401c
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786616"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300816"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender の新機能
 
@@ -34,7 +34,7 @@ ms.locfileid: "60786616"
 
 次の機能は、プレビュー版または一般公開 (GA) の最新リリースMicrosoft 365 Defender。
 
-RSS フィード: 次の URL をコピーしてフィード リーダーに貼り付け、このページが更新された場合に通知を受け取ります。
+RSS フィード: ご自身のフィード リーダーに次の URL をコピーして貼り付けると、このページの更新時に通知を受け取ることができます。
 ```http
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
@@ -42,7 +42,7 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 他の Microsoft Defender セキュリティ製品の新機能の詳細については、以下を参照してください。
 
 - [Microsoft Defender for Office 365 の新機能](../office-365-security/whats-new-in-defender-for-office-365.md)
-- [Microsoft Defender for Endpoint の新機能](../defender-endpoint/whats-new-in-microsoft-defender-atp.md)
+- [Microsoft Defender for Endpoint の新機能](../defender-endpoint/whats-new-in-microsoft-defender-endpoint.md)
 - [Microsoft Defender for Identity の新機能](/defender-for-identity/whats-new)
 - [新しい機能Microsoft Cloud App Security](/cloud-app-security/release-notes)
 

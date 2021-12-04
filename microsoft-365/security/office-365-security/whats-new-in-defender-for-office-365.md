@@ -16,17 +16,17 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.topic: conceptual
-ms.date: 07/27/2021
+ms.date: 12/03/2021
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1618d77a81888fe9076d00124cef770e81810836
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 30ee5d69db08dc4471bf6aa59558a934734e2f54
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60756973"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61302436"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の新機能
 
@@ -47,9 +47,14 @@ ms.locfileid: "60756973"
 他の Microsoft Defender セキュリティ製品の新機能の詳細については、以下を参照してください。
 
 - [Microsoft 365 Defender の新機能](../defender/whats-new.md)
-- [Microsoft Defender for Endpoint の新機能](../defender-endpoint/whats-new-in-microsoft-defender-atp.md)
+- [Microsoft Defender for Endpoint の新機能](../defender-endpoint/whats-new-in-microsoft-defender-endpoint.md)
 - [Microsoft Defender for Identity の新機能](/defender-for-identity/whats-new)
 - [新しい機能Microsoft Cloud App Security](/cloud-app-security/release-notes)
+
+
+## <a name="decemberjanuary-2021"></a>2021 年 12 月/1 月
+
+- [Office 365 用 Microsoft Defender](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/updated-hunting-and-investigation-experiences-for-microsoft/ba-p/3002015)のハンティングと調査エクスペリエンスの更新 : Office 365 の Defender でのエクスペリエンスの電子メールの概要パネルと、脅威エクスプローラーとリアルタイム検出のエクスペリエンス更新プログラムを紹介します。
 
 
 ## <a name="october-2021"></a>2021 年 10 月
@@ -75,12 +80,12 @@ ms.locfileid: "60756973"
 
 - [自動調査における電子メール分析の改善](email-analysis-investigations.md)
 - [高度な](configure-advanced-delivery.md)配信: ユーザーへのサード パーティのフィッシング シミュレーションの配信とセキュリティ操作メールボックスへのフィルター処理されていないメッセージの配信を構成するための新しい機能を導入します。
-- [セーフサイトのリンクMicrosoft Teams](safe-links.md#safe-links-settings-for-microsoft-teams)
+- [セーフのリンクMicrosoft Teams](safe-links.md#safe-links-settings-for-microsoft-teams)
 - 次のシナリオの新しいアラート ポリシー: 侵害されたメールボックス、フォームフィッシング、上書きおよび ZAP の切り上がりにより配信される悪意のあるメール
   - 疑わしいメール転送アクティビティ
-  - フォームの共有と応答の収集を制限されたユーザー
-  - フィッシング詐欺の可能性が原因でフォームがブロックされる
-  - フォームにフラグが設定され、フィッシングとして確認される
+  - フォームの共有と応答の収集について制限されたユーザー
+  - フィッシング詐欺の可能性が原因でブロックされたフォーム
+  - フラグが設定され、フィッシングが確認されたフォーム
   - [ZAP の新しいアラート ポリシー](../../compliance/new-defender-alert-policies.md)
 - Microsoft Defender for Office 365アラートは、統合アラート キューと統合Microsoft 365 Defenderおよび統合Microsoft 365 Defenderキュー[に統合されました](../defender/investigate-alerts.md)
 - [](user-tags.md)ユーザー タグは、Office 365 セキュリティ & コンプライアンスのアラート キューと詳細、ユーザー タグへのカスタム アラート ポリシーのスコープ設定など、Office 365 アラート エクスペリエンスのために Microsoft Defender に統合され、対象となるアラート ポリシーを作成できます。

@@ -2,8 +2,6 @@
 title: Microsoft Defender for Endpoint での SIEM ツール統合の問題のトラブルシューティング
 description: Microsoft Defender for Endpoint で SIEM ツールを使用する場合に発生する可能性のある問題のトラブルシューティングを行います。
 keywords: トラブルシューティング, siem, クライアント シークレット, secret
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 59db066644a549cf52252602f494dd1267e216f9
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 5c0f02834fe70c086ca5db7def6d9f2fed2c7543
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165572"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301740"
 ---
 # <a name="troubleshoot-siem-tool-integration-issues"></a>SIEM ツール統合に関する問題のトラブルシューティング
 

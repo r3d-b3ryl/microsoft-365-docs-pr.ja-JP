@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: ハイブリッドモダン認証 (HMA) Skype for Businessを使用して、より安全なユーザー認証と承認を提供するために、オンプレミスのユーザー認証を構成する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 21fc7bc3d79d4714f8892fe214e338bba3bffa55
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: dd42aa6befdbb646217a9829dd59c0821fbd29d3
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197439"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301188"
 ---
 # <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>Skype for Business をオンプレミスで構成して、ハイブリッド先進認証を使用するには
 
@@ -30,9 +30,10 @@ ms.locfileid: "60197439"
 
 モダン認証は、より安全なユーザー認証と承認を提供する ID 管理の方法であり、Skype for Business サーバーオンプレミスおよび Exchange サーバーオンプレミス、およびスプリットドメイン Skype for Business ハイブリッドで利用できます。
 
- **重要** モダン認証 (MA) の詳細と、会社や組織で使用する理由について知りたがっていますか? 概要 [については、](hybrid-modern-auth-overview.md) このドキュメントを確認してください。 この機能でサポートSkype for BusinessトポロジをMAする必要がある場合は、ここで説明します。
+> [!IMPORTANT]
+> モダン認証 (MA) の詳細と、会社や組織で使用する理由について知りたがっていますか? 概要 [については、](hybrid-modern-auth-overview.md) このドキュメントを確認してください。 この機能でサポートSkype for BusinessトポロジをMAする必要がある場合は、ここで説明します。
 
- **開始する前に**、次の用語を使用します。
+**開始する前に**、次の用語を使用します。
 
 - モダン認証 (MA)
 
@@ -44,7 +45,7 @@ ms.locfileid: "60197439"
 
 - Skype for Businessオンプレミス (SFB)
 
-- Skype for Businessオンライン (SFBO)
+- Skype for Business オンライン (SFBO)
 
 また、この記事のグラフィックにグレー表示または淡色表示のオブジェクトがある場合は、灰色で表示される要素が MA固有の構成に含まれません。
 
@@ -74,7 +75,8 @@ ms.locfileid: "60197439"
 
 サポートされている[トポロジについては、「サポートSkype for Business MA」](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)を参照してください。
 
- **重要** 開始する前に、すべての前提条件を満たしていることを確認してください。 この情報については、「ハイブリッドモダン認証の概要 [と前提条件」を参照してください](hybrid-modern-auth-overview.md)。
+> [!IMPORTANT]
+> 開始する前に、すべての前提条件を満たしていることを確認してください。 この情報については、「ハイブリッドモダン認証の概要 [と前提条件」を参照してください](hybrid-modern-auth-overview.md)。
 
 ## <a name="collect-all-hma-specific-info-youll-need"></a>必要なすべての HMA 固有の情報を収集する
 
@@ -120,9 +122,10 @@ Get-CsService -WebServer | Select-Object PoolFqdn, InternalFqdn, ExternalFqdn | 
 
 これで、SFBO のサービス プリンシパルとして URL (前に収集) を追加するコマンドを実行する必要があります。
 
- **メモ** サービス プリンシパル名 (SPN) は、Web サービスを識別し、それらをセキュリティ プリンシパル (アカウント名やグループなど) に関連付けて、サービスが承認されたユーザーの代理として機能します。 サーバーに対して認証されるクライアントは、SPN に含まれる情報を利用します。
+> [!NOTE]
+> サービス プリンシパル名 (SPN) は、Web サービスを識別し、それらをセキュリティ プリンシパル (アカウント名やグループなど) に関連付けて、サービスが承認されたユーザーの代理として機能します。 サーバーに対して認証されるクライアントは、SPN に含まれる情報を利用します。
 
-1. 最初に、次のAzure Active Directory (Azure AD)[に接続します](/powershell/azure/active-directory/overview)。
+1. まず、次の手順Azure Active Directory (Azure AD)[に接続します](/powershell/azure/active-directory/overview)。
 
 2. このコマンドをオンプレミスで実行して、SFB Web サービス URL の一覧を取得します。
 
@@ -130,20 +133,20 @@ Get-CsService -WebServer | Select-Object PoolFqdn, InternalFqdn, ExternalFqdn | 
 
    このコマンドの出力には Standard Edition URL と WS URL が含まれますが、主にで始まる SPN で構成されます。 `00000004-0000-0ff1-ce00-000000000000/`
 
-```powershell
-Get-MsolServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 | Select -ExpandProperty ServicePrincipalNames
-```
+   ```powershell
+   Get-MsolServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 | Select -ExpandProperty ServicePrincipalNames
+   ```
 
 3. 社内 **の内部または** 外部の SFB URL が見つからない場合 (たとえば、これらの特定のレコードをこのリスト https://lyncwebint01.contoso.com https://lyncwebext01.contoso.com) に追加する必要があります)。
 
     [追加] コマンド  *で、以下の URL の* 例を実際の URL に置き換える必要があります。
 
-```powershell
-$x= Get-MsolServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000
-$x.ServicePrincipalnames.Add("https://lyncwebint01.contoso.com/")
-$x.ServicePrincipalnames.Add("https://lyncwebext01.contoso.com/")
-Set-MSOLServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
-```
+    ```powershell
+    $x= Get-MsolServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000
+    $x.ServicePrincipalnames.Add("https://lyncwebint01.contoso.com/")
+    $x.ServicePrincipalnames.Add("https://lyncwebext01.contoso.com/")
+    Set-MSOLServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
+    ```
 
 4. 手順 2 から **Get-MsolServicePrincipal** コマンドを再度実行し、出力を確認して、新しいレコードが追加されたのを確認します。 前のリストまたはスクリーンショットを SPN の新しいリストと比較します。 レコードの新しいリストのスクリーンショットを撮る場合があります。 成功した場合は、リストに 2 つの新しい URL が表示されます。 この例では、SPN の一覧に特定の URL と https://lyncwebint01.contoso.com https://lyncwebext01.contoso.com/ .
 
@@ -171,7 +174,7 @@ HMA が有効にした後で動作しているテストを行う場合は、テ�
 
 また、「OAuth Authority」のクライアントのSkype for Business構成情報を確認する必要があります。 クライアント コンピューターでこれを行うには、Ctrl キーを押しながら、[通知] トレイの [Skype for Business アイコンWindowsクリックします。 表示 **されるメニューの** [構成情報] をクリックします。 デスクトップに表示Skype for Business [構成情報] ウィンドウで、次の情報を探します。
 
-![モダン認証を使用する Skype for Businessクライアントの構成情報には、 の Lync および EWS OAUTH Authority URL が表示されます https://login.windows.net/common/oauth2/authorize 。](../media/4e54edf5-c8f8-4e7f-b032-5d413b0232de.png)
+:::image type="content" alt-text="モダン認証を使用する Skype for Businessクライアントの構成情報には、 の Lync および EWS OAUTH Authority URL が表示されます https://login.windows.net/common/oauth2/authorize 。" source="../media/4e54edf5-c8f8-4e7f-b032-5d413b0232de.png":::
 
 また、ctrl キーを押しながら Outlook クライアントのアイコン (Windows 通知トレイ) を右クリックし、[接続状態] をクリックします。 OAuth で使用されるベアラー トークンを表す'Bearer'の AuthN 型に対してクライアントの SMTP アドレス \* を探します。
 
@@ -179,4 +182,4 @@ HMA が有効にした後で動作しているテストを行う場合は、テ�
 
 [モダン認証の概要にリンクします](hybrid-modern-auth-overview.md)。
 
-最新の認証 (ADAL) をクライアントに使用する方法を知るSkype for Businessですか? ここに手順[があります。](./hybrid-modern-auth-overview.md)
+最新の認証をクライアントに使用する方法を知るSkype for Businessですか? ここでは、ハイブリッドモダン認証の概要と、オンプレミスのサーバーおよびサーバーで使用するためのSkype for Business[前提条件Exchangeがあります](./hybrid-modern-auth-overview.md)。

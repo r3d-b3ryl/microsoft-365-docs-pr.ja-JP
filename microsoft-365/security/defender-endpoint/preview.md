@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cc7af267b7512f3eeefcacaf0ca3a228e9749591
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: d29da74833bfd9b99f811bcc14de602b8e01d2c6
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164348"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300432"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Microsoft Defender for Endpoint プレビュー機能
 
@@ -43,7 +43,7 @@ Defender for Endpoint プレビュー リリースの新機能について説明
 > [!TIP]
 > 次の URL をフィード リーダーにコピーして貼り付け、このページが更新された場合に通知を受け取ります。 `/api/search/rss?search=%22In+the+navigation+pane%2C+select+Settings+%3E+Advanced+features+%3E+Preview+features.%22&locale=en-us&facet=`
 
-一般に利用可能な新機能の詳細については、「Defender for Endpoint の新機能 [」を参照してください](whats-new-in-microsoft-defender-atp.md)。
+一般に利用可能な新機能の詳細については、「Defender for Endpoint の新機能 [」を参照してください](whats-new-in-microsoft-defender-endpoint.md)。
 
 ## <a name="what-you-need-to-know"></a>知っておく必要があること
 

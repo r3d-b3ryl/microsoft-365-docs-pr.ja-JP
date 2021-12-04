@@ -2,7 +2,6 @@
 title: 調査パッケージ API の収集
 description: この API を使用して、デバイスからの調査パッケージの収集に関連する呼び出しを作成します。
 keywords: apis、graph api、サポートされている API、調査パッケージの収集
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4359d2f135b965a06003d060def12b4ed053ca27
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: e6a310c167a0f77f0022b9ba35ed9aa94e437eb9
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171499"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61302220"
 ---
 # <a name="collect-investigation-package-api"></a>調査パッケージ API の収集
 
@@ -49,7 +48,7 @@ ms.locfileid: "61171499"
 
 > [!IMPORTANT]
 >
-> - これらの応答アクションは、バージョン 1703 以降Windows 10デバイスでのみ使用できます。
+> - これらの応答アクションは、Windows 10 バージョン 1703 以降、および Windows 11 のデバイスでのみ使用できます。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -74,7 +73,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/collectInvestiga
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**。
 Content-Type|string|application/json. **必須**。
@@ -83,7 +82,7 @@ Content-Type|string|application/json. **必須**。
 
 要求本文で、JSON オブジェクトに次のパラメーターを指定します。
 
-パラメーター|種類|説明
+パラメーター|型|説明
 :---|:---|:---
 コメント|文字列|アクションに関連付けるコメント。 **必須**。
 

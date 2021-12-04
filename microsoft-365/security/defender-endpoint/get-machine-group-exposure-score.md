@@ -2,8 +2,7 @@
 title: デバイス グループ別の露出スコアの一覧表示
 description: デバイス グループ別の露出スコアの一覧を取得します。
 keywords: apis、graph api、サポートされている API、get、露出スコア、デバイス グループ、デバイス グループの露出スコア
-search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b3a92d1f9e0a1564862b409eae1c38b32cdff017
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: ba046d35b6cf93754fc1daf3d2b211d69e6c27d8
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61163784"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301632"
 ---
 # <a name="list-exposure-score-by-device-group"></a>デバイス グループ別の露出スコアの一覧表示
 
@@ -58,7 +57,7 @@ GET /api/exposureScore/ByMachineGroups
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 ---|---|---
 |Authorization|String|ベアラー {token}。**必須**。
 

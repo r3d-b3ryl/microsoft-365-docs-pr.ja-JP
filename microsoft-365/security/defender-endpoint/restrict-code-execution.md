@@ -2,7 +2,6 @@
 title: アプリの実行 API の制限
 description: この API を使用して、アプリケーションの実行制限に関連する呼び出しを作成します。
 keywords: apis、graph api、サポートされている API、調査パッケージの収集
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: ebf6680afdac98b0d001e46304fb626393c166aa
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: dee5ad9466793892d09af2f85faa9f3fd2348ca6
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164360"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61302340"
 ---
 # <a name="restrict-app-execution-api"></a>アプリの実行 API の制限
 
@@ -52,7 +51,7 @@ ms.locfileid: "61164360"
 
 > [!IMPORTANT]
 >
-> - このアクションは、バージョン 1709 以降Windows 10デバイスで使用できます。
+> - このアクションは、Windows 10バージョン 1709 以降、および 11 のデバイスWindowsできます。
 > - この機能は、組織で使用している機能がMicrosoft Defender ウイルス対策。
 > - このアクションは、アプリケーションコントロールのコード整合性Windows Defenderの形式と署名要件を満たす必要があります。 詳細については、「コード整合性 [ポリシーの形式と署名」を参照してください](/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing)。
 
@@ -79,7 +78,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/restrictCodeExec
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**。
 Content-Type|string|application/json. **必須**。
@@ -88,7 +87,7 @@ Content-Type|string|application/json. **必須**。
 
 要求本文で、JSON オブジェクトに次のパラメーターを指定します。
 
-パラメーター|種類|説明
+パラメーター|型|説明
 :---|:---|:---
 コメント|文字列|アクションに関連付けるコメント。 **必須**。
 

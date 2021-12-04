@@ -2,7 +2,6 @@
 title: すべての脆弱性を取得する
 description: 組織に影響を与えるすべての脆弱性の一覧を取得します。
 keywords: apis, graph api, supported api, get, vulnerability information, Microsoft Defender for Endpoint tvm api
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 05101885405e8646a37857afde4a18c57cfdcd78
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 0eac4b6add7ef8a666d05b550ae16965f78d1a0d
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167792"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300467"
 ---
 # <a name="list-vulnerabilities"></a>脆弱性の一覧表示
 
@@ -66,7 +65,7 @@ GET /api/vulnerabilities
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**。
 

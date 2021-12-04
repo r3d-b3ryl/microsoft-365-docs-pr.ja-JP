@@ -2,8 +2,6 @@
 title: REST API を使用したエンドポイント検出用の Microsoft Defender のプル
 description: SIEM REST API を使用して MICROSOFT Defender for Endpoint API エンドポイントを呼び出して JSON 形式で検出をプルする方法について説明します。
 keywords: 検出、プル検出、rest api、要求、応答
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 616327185025e79b5e09dad05a5526312d40251c
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: f4f5dbcde4a80b01c3df7ee7c32b41afc89dbba6
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164816"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301008"
 ---
 # <a name="pull-microsoft-defender-for-endpoint-detections-using-siem-rest-api"></a>SIEM REST API を使用したエンドポイント検出用の Microsoft Defender のプル
 
@@ -67,7 +65,7 @@ Microsoft Defender for Endpoint API の次のメソッドを使用して、JSON 
 > [!NOTE]
 > Microsoft Defender セキュリティ センター同様のアラート検出を 1 つのアラートにマージします。 この API は、設定したクエリ パラメーターに基づいて生の形式でアラート検出をプルし、独自のグループ化とフィルター処理を適用できます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 - 検出をプルするために Microsoft Defender for Endpoint エンドポイントを呼び出す前に、SIEM 統合アプリケーションを Azure Active Directory (AAD) で有効にする必要があります。 詳細については [、「Enable SIEM integration in Microsoft Defender for Endpoint」を参照してください](enable-siem-integration.md)。
 
@@ -117,11 +115,11 @@ Defender for Endpoint API への要求 *access_tokenフィールドの* 値を�
 
 メソッド|要求 URI
 ---|---
-GET|地域に適用可能な URI を使用します。 <p> **EU の場合**: `https://wdatp-alertexporter-eu.windows.com/api/alerts` <p> **米国の場合**: `https://wdatp-alertexporter-us.windows.com/api/alerts` <p> **英国の場合**: `https://wdatp-alertexporter-uk.windows.com/api/alerts`
+取得|地域に適用可能な URI を使用します。 <p> **EU の場合**: `https://wdatp-alertexporter-eu.windows.com/api/alerts` <p> **米国の場合**: `https://wdatp-alertexporter-us.windows.com/api/alerts` <p> **英国の場合**: `https://wdatp-alertexporter-uk.windows.com/api/alerts`
 
 ### <a name="request-header"></a>要求ヘッダー
 
-ヘッダー|種類|説明|
+ヘッダー|型|説明|
 ---|---|---
 Authorization|string|必須です。 ベアラー Azure ADフォームのアクセス トークン **を使用** &lt; *します* &gt; 。|
 

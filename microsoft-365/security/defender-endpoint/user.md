@@ -2,7 +2,6 @@
 title: ユーザー リソースの種類
 description: ユーザーに関連する最近の Microsoft Defender for Endpoint アラートを取得します。
 keywords: apis, graph api, supported apis, get, alerts, recent
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9f5eba9204217a649fbf8bfb5429a080887fde81
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 01b7eb32415e431dce37935abb4a1a69776db0f9
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167588"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301980"
 ---
 # <a name="user-resource-type"></a>ユーザー リソースの種類
 

@@ -2,7 +2,6 @@
 title: ソフトウェア メソッドとプロパティ
 description: 最近使用した上位のアラートを取得します。
 keywords: apis, graph api, supported apis, get, alerts, recent
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: fde01de2981b0f2ae588f8a2bdd6f9c5f288908f
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 6b08b7c4ebb0a818dec5bdf799c3114d91764259
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165920"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301788"
 ---
 # <a name="software-resource-type"></a>ソフトウェア リソースの種類
 
@@ -62,13 +61,13 @@ ms.locfileid: "61165920"
 
 ****
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |---|---|---|
 |id|String|ソフトウェア ID|
 |名前|String|ソフトウェア名|
 |ベンダー|String|ソフトウェア発行元名|
 |弱点|Long|検出された脆弱性の数|
-|publicExploit|ブール値|一部の脆弱性に対してパブリックエクスプロイトが存在する|
+|publicExploit|Boolean|一部の脆弱性に対してパブリックエクスプロイトが存在する|
 |activeAlert|ブール値|アクティブアラートは、このソフトウェアに関連付けられている|
 |exposedMachines|Long|公開されているデバイスの数|
 |impactScore|倍精度浮動小数点数|このソフトウェアの露出スコアの影響|

@@ -2,8 +2,7 @@
 title: 推奨されるソフトウェアを一覧表示する
 description: 特定のソフトウェアに関連するセキュリティ推奨事項を取得します。
 keywords: apis、graph api、サポートされている api、get、セキュリティ推奨事項、ソフトウェアのセキュリティ推奨事項、脅威と脆弱性の管理、脅威と脆弱性の管理 API
-search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 67ac6f1bb77df74c3c44cac57624c14e20625e7e
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 1d5ca404554d667ae9c36533fc1ad9cb866caff7
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166256"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61302400"
 ---
 # <a name="list-software-by-recommendation"></a>推奨されるソフトウェアを一覧表示する
 
@@ -58,7 +57,7 @@ GET /api/recommendations/{id}/software
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**。
 

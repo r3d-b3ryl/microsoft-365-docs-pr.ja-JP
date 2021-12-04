@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
 description: カスタム タイルをアプリ 起動ツールに追加して、メール、ドキュメント、アプリ、SharePointサイト、外部サイト、その他のリソースへのクイック リンクを作成します。
-ms.openlocfilehash: 1f0123eefb421c22108f61bd45a27b1bc50d7309
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: a43f9c712bf661b4bcabba6da9df01ef0071d639
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335336"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300732"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>カスタム タイルをアプリ起動ツールに追加する
 
@@ -72,7 +72,7 @@ SharePoint サイト、外部サイト、レガシー アプリなどをポイ�
 
 1. 管理センターで、[組織プロファイル]タブ  >  **設定[組織**  >  **設定] タブに移動** します。
     
-2. [組織プロファイル **] ページの** [組織の   **カスタム** タイルの追加] の横にある [編集] を **選択します**。
+2. [組織の **プロファイル] ページ** で、[カスタム アプリ起動ツール]**タイルに移動** します。[カスタム タイル] と [カスタム タイルの編集] の横にある 3 つのドットを **選択した場合**。
 
 3. カスタム タイルの **タイル名**、 **URL**、 **説明**、 **画像 URL** を更新します。( [カスタム タイルをアプリ起動ツールに追加する](#add-a-custom-tile-to-the-app-launcher)参照)。
     

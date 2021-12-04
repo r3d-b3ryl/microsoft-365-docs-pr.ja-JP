@@ -2,7 +2,6 @@
 title: マシン タグ API の追加と削除
 description: Add or Remove machine tags API を使用して、Microsoft Defender for Endpoint のマシンのタグを追加または削除する方法について説明します。
 keywords: apis、graph api、サポートされている API、タグ、マシン タグ
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 355b3360fd4a36e762cd834c3460b7884fe37f87
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 2ec34011d00e77c5e32f58567a0b705cf7c0dc1c
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166556"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301127"
 ---
 # <a name="add-or-remove-machine-tags-api"></a>マシン タグ API の追加と削除
 
@@ -71,7 +70,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/tags
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**。
 Content-Type|string|application/json. **必須**。
@@ -80,10 +79,10 @@ Content-Type|string|application/json. **必須**。
 
 要求本文で、JSON オブジェクトに次のパラメーターを指定します。
 
-パラメーター|種類|説明
+パラメーター|型|説明
 :---|:---|:---
 値|String|タグ名。 **必須**。
-アクション|列挙|追加または削除。 使用できる値は、'Add' または 'Remove' です。 **必須**。
+Action|列挙|追加または削除。 使用できる値は、'Add' または 'Remove' です。 **必須**。
 
 ## <a name="response"></a>応答
 

@@ -2,7 +2,6 @@
 title: ライブ応答の結果を取得する
 description: インデックスによって特定のライブ応答コマンドの結果を取得する方法について説明します。
 keywords: apis、graph api、サポートされている API、ライブラリへのアップロード
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -21,12 +20,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0301b43aa950969867f408c2cfcfa961a2a1d039
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: ce0fd83e95be6fd1f26b40a5992303162a265c3e
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61163904"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300457"
 ---
 # <a name="get-live-response-results"></a>ライブ応答の結果を取得する
 
@@ -59,6 +58,8 @@ ms.locfileid: "61163904"
 
   デバイスは、次のいずれかのバージョンの Windows を実行している必要があります
 
+  - **Windows 11**
+  
   - **Windows 10**
     - [バージョン 1909](/windows/whats-new/whats-new-windows-10-version-1909) 以降
     - [バージョン 1903](/windows/whats-new/whats-new-windows-10-version-1903)と[KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)
@@ -91,7 +92,7 @@ id}/GetLiveResponseResultDownloadLink(index={command-index})
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-|名前|種類|説明|
+|名前|型|説明|
 |---|---|---|
 |Authorization|String|ベアラー {token}。必須。|
 

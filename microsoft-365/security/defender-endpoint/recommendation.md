@@ -2,7 +2,6 @@
 title: 推奨メソッドとプロパティ
 description: 最近使用した上位のアラートを取得します。
 keywords: apis, graph api, supported apis, get, alerts, recent
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: cc935bd3d05c3a4f0e42b1382a94a5d744e27959
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: f6e8295d83d5ab6fb86726903800d2779f394836
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168440"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301488"
 ---
 # <a name="recommendation-resource-type"></a>おすすめリソースの種類
 
@@ -61,7 +60,7 @@ Defender for Endpoint を試す場合は、 [無料試用版にサインアッ�
 
 ****
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |---|---|---|
 |id|String|推奨事項 ID|
 |productName|文字列型 (String)|関連するソフトウェア名|
@@ -74,8 +73,8 @@ Defender for Endpoint を試す場合は、 [無料試用版にサインアッ�
 |recommendationCategory|String|おすすめカテゴリ。 使用できる値は、"Accounts"、"Application"、"Network"、"OS"、"SecurityControls" です。|
 |subCategory|String|おすすめサブカテゴリ|
 |severityScore|倍精度浮動小数点数|組織の Microsoft Secure Score for Devices に対する構成の潜在的な影響 (1-10)|
-|publicExploit|Boolean|パブリックエクスプロイトが利用可能|
-|activeAlert|Boolean|アクティブなアラートは、この推奨事項に関連付けられている|
+|publicExploit|ブール値|パブリックエクスプロイトが利用可能|
+|activeAlert|ブール値|アクティブなアラートは、この推奨事項に関連付けられている|
 |associatedThreats|String collection|脅威分析レポートは、この推奨事項に関連付けられている|
 |remediationType|String|修復の種類。 指定できる値は、"ConfigurationChange"、"Update"、"Upgrade"、"Uninstall" です。|
 |状態|列挙|推奨事項の例外の状態。 指定できる値は、"Active" と "Exception" です。|

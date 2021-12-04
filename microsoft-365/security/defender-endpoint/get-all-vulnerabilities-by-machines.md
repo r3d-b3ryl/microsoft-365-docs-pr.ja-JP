@@ -2,7 +2,6 @@
 title: コンピューターとソフトウェアによってすべての脆弱性を取得する
 description: コンピューターとソフトウェアによって組織に影響を与えるすべての脆弱性の一覧を取得します。
 keywords: apis, graph api, supported api, get, vulnerability information, Microsoft Defender for Endpoint tvm api
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 44605ad5787f0d0513ccc9ca0e38a6e5f77904ba
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 45c29a70f97c681e6236f4327fed8e344d9dc8ac
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168188"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301644"
 ---
 # <a name="list-vulnerabilities-by-machine-and-software"></a>マシンとソフトウェアによる脆弱性の一覧表示
 
@@ -65,7 +64,7 @@ GET /api/vulnerabilities/machinesVulnerabilities
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**。
 

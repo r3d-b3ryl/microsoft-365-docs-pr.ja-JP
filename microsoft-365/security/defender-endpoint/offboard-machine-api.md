@@ -2,7 +2,6 @@
 title: オフボード マシン API
 description: API を使用して Microsoft Defender for Endpoint からデバイスをオフボードする方法について説明します。
 keywords: apis、graph api、サポートされている API、調査パッケージの収集
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1b07ad9252b414dd84d2c73afa38c124851faef4
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 4d1170b03d510bb0c79376d55c771311e10251c8
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167048"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61302388"
 ---
 # <a name="offboard-machine-api"></a>オフボード マシン API
 
@@ -49,7 +48,7 @@ Defender for Endpoint からのオフボード デバイス。
   [!include[Machine actions note](../../includes/machineactionsnote.md)]
 
 > [!NOTE]
-> この API は、Windows 10バージョン 1703 以降、またはサーバー 2019 以降Windowsサポートされています。
+> この API は、Windows 11、Windows 10 バージョン 1703 以降、または Windows Server 2019 以降でサポートされます。
 >
 > この API は、MacOS デバイスまたは Linux デバイスではサポートされていません。
 
@@ -76,7 +75,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/offboard
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 ---|---|---
 Authorization|String|ベアラー {token}。 **必須**。
 Content-Type|string|application/json. **必須**。
@@ -85,7 +84,7 @@ Content-Type|string|application/json. **必須**。
 
 要求本文で、JSON オブジェクトに次のパラメーターを指定します。
 
-パラメーター|種類|説明
+パラメーター|型|説明
 ---|---|---
 コメント|文字列|アクションに関連付けるコメント。 **必須**。
 

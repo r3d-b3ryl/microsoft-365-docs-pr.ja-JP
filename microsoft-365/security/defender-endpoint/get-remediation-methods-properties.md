@@ -2,7 +2,6 @@
 title: 修復アクティビティのメソッドとプロパティ
 description: API 応答には、テナントで作成& 脆弱性の管理修復アクティビティの脅威が含まれる。 選択した修復タスクに対して、すべての修復アクティビティ、1 つの修復アクティビティ、または公開されているデバイスに関する情報を要求できます。
 keywords: apis、修復、修復 API、get、修復タスク、修復方法、修復プロパティ、
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: cbd37d48477cdd9b0a0dc7c6c5703b96ffb4b89e
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 8a6656f6a75c24a475e5b8788caf1e9b9ef5d743
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168584"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300972"
 ---
 # <a name="remediation-activity-methods-and-properties"></a>修復アクティビティのメソッドとプロパティ
 

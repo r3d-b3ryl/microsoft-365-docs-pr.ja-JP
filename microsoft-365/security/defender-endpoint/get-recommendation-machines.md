@@ -2,8 +2,7 @@
 title: 推奨事項別にデバイスを一覧表示する
 description: セキュリティ推奨事項に関連付けられているデバイスの一覧を取得します。
 keywords: apis、graph api、サポートされている api、get、脆弱なデバイスのセキュリティ推奨事項、脅威と脆弱性の管理、脅威と脆弱性の管理 API
-search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a228df3c18ae29eeac20d1a5fd42f2c1ed1ba094
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: b30c558c2e202000145c89e9ab5a122d0dbe6283
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167288"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301572"
 ---
 # <a name="list-devices-by-recommendation"></a>推奨事項別にデバイスを一覧表示する
 
@@ -57,7 +56,7 @@ GET /api/recommendations/{id}/machineReferences
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**。
 
@@ -90,7 +89,7 @@ GET https://api.securitycenter.microsoft.com/api/recommendations/va-_-google-_-c
         {
             "id": "e058770379bc199a9c179ce52a23e16fd44fd2ee",
             "computerDnsName": "niw_pc",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "rbacGroupName": "GroupTwo"
         }
         ...

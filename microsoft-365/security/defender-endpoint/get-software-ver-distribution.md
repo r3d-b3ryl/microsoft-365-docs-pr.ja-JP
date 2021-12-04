@@ -2,8 +2,7 @@
 title: ソフトウェア バージョンの配布を一覧表示する
 description: 組織のソフトウェア バージョン配布の一覧を取得します。
 keywords: apis, graph api, supported api, get, software version distribution, Microsoft Defender for Endpoint tvm api
-search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d9ed4730b54f92a8baafcce6e3f8e46bf9f5fc39
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 5c2c743981f27cb59250815cefa2ed4a34fda93f
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165044"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300492"
 ---
 # <a name="list-software-version-distribution"></a>ソフトウェア バージョンの配布を一覧表示する
 
@@ -57,7 +56,7 @@ GET /api/Software/{Id}/distributions
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-|名前|種類|説明
+|名前|型|説明
 |---|---|---|
 |Authorization|String|ベアラー {token}。**必須**。
 

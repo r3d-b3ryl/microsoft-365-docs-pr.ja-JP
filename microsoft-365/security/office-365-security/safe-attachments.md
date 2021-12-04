@@ -20,14 +20,14 @@ ms.collection:
 description: 管理者は、Microsoft Defender の セーフ添付ファイル機能について説明Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: efe1b985a7df7e8066533bf3789e38120dd97787
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: b65813dedcf421e8335dc2433b5befee69cc60e6
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60702877"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300396"
 ---
-# <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>セーフMicrosoft Defender の添付ファイル (Office 365
+# <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>セーフ用の Microsoft Defender の添付ファイルOffice 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "60702877"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-セーフMicrosoft [Defender for Office 365](defender-for-office-365.md)の添付ファイルは、Exchange Online Protection [(EOP)](anti-malware-protection.md)でマルウェア対策保護によって既にスキャンされている電子メールの添付ファイルに対する保護の追加層を提供します。 具体的には、セーフ添付ファイルは、仮想環境を使用して、受信者に配信される前に電子メール メッセージの添付ファイルをチェックします (プロセスは、デトレーションと _呼ばれる_)。
+セーフ Microsoft Defender [for Office 365](defender-for-office-365.md)の添付ファイルは、Exchange Online Protection [(EOP)](anti-malware-protection.md)でマルウェア対策保護によって既にスキャンされている電子メール添付ファイルに対する追加の保護層を提供します。 具体的には、セーフ添付ファイルは、仮想環境を使用して、受信者に配信される前に電子メール メッセージの添付ファイルをチェックします (プロセスは、デトレーションと _呼ばれる_)。
 
 メール メッセージの安全な添付ファイル保護は、安全な添付ファイル ポリシーで制御されます。 既定の セーフ 添付ファイル ポリシーは使用できませんが、組み込みの保護プリセット セキュリティ ポリシーは、すべての受信者 (カスタム セーフ 添付ファイル ポリシーで定義されていないユーザー) に セーフ 添付ファイル保護を提供します。 詳細については、「EOP でのセキュリティ ポリシーの事前設定」および[「Microsoft Defender for microsoft Defender for Office 365」 を参照してください](preset-security-policies.md)。 特定のユーザー、グループセーフに適用される添付ファイル ポリシーを作成することもできます。 手順については[、「Microsoft Defender で添付ファイルポリシーセーフ設定する」を参照Office 365。](set-up-safe-attachments-policies.md)
 
@@ -73,7 +73,7 @@ ms.locfileid: "60702877"
 
   |オプション|効果|次の場合に使用します。|
   |---|---|---|
-  |**オフ**|添付ファイルは、添付ファイルによってマルウェアセーフされません。 EOP のマルウェア対策保護によって、メッセージが[マルウェアのスキャンを受け続け.](anti-malware-protection.md)|選択した受信者のスキャンをオフにします。 <p> 内部メールのルーティングに不必要な遅延を防ぐ。 <p> **このオプションは、ほとんどのユーザーには推奨されません。信頼できる送信者からのメッセージのみを受信する受信者セーフ添付ファイルのスキャンを無効にする場合にのみ、このオプションを使用する必要があります。**|
+  |**オフ**|添付ファイルは、添付ファイルによってマルウェアセーフされません。 EOP のマルウェア対策保護によって、メッセージが[マルウェアのスキャンを受け続け.](anti-malware-protection.md)|選択した受信者のスキャンをオフにします。 <p> 内部メールのルーティングに不必要な遅延を防ぐ。 <p> **このオプションは、ほとんどのユーザーには推奨されません。信頼できる送信者からのメッセージのみを受信する受信者セーフ添付ファイルのスキャンを無効にする場合にのみ、このオプションを使用する必要があります。添付ファイルがオフになっていてセーフ信号が受信されない場合、ZAP はメッセージを検疫しません。詳細については、「[ゼロ時間自動削除」を参照してください。](zero-hour-auto-purge.md)**|
   |**モニター**|添付ファイルを含むメッセージを配信し、検出されたマルウェアの処理を追跡します。 <p> 添付ファイルのスキャンにより、安全なメッセージの配信セーフ可能性があります。|検出されたマルウェアが組織内でどこに行くのか確認します。|
   |**Block**|検出されたマルウェアの添付ファイルを含むメッセージが配信されるのを防ぐ。 <p> メッセージは検疫されます。 既定では、メッセージを確認、解放、または削除できるのは管理者 (ユーザーではない) のみです。<sup>\*</sup> <p> メッセージと添付ファイルの今後のインスタンスを自動的にブロックします。 <p> 添付ファイルのスキャンにより、安全なメッセージの配信セーフ可能性があります。|同じマルウェア添付ファイルを使用して繰り返し攻撃から組織を保護します。 <p> これは既定値で、Standard と Strict の事前設定されたセキュリティ ポリシーの推奨 [値です](preset-security-policies.md)。|
   |**Replace**|検出されたマルウェアの添付ファイルを削除します。 <p> 添付ファイルが削除されたと受信者に通知します。 <p>  悪意のある添付ファイルを含むメッセージは検疫されます。 既定では、メッセージを確認、解放、または削除できるのは管理者 (ユーザーではない) のみです。<sup>\*</sup> <p> 添付ファイルのスキャンにより、安全なメッセージの配信セーフ可能性があります。|マルウェアが検出されたため、添付ファイルが削除された受信者の可視性を高める。|

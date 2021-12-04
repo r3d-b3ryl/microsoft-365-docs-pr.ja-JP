@@ -2,8 +2,7 @@
 title: ソフトウェアの一覧表示
 description: ソフトウェア インベントリの一覧を取得します。
 keywords: apis、 graph api, supported apis, get, list, file, information, software inventory, threat & 脆弱性の管理 api, Microsoft Defender for Endpoint tvm api
-search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: ef30f7b21b760d8e3695fcd670cf5cebbd43bd79
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 0f2db10e24212808253e197c562468c03f3ae293
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167452"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300900"
 ---
 # <a name="list-software-inventory-api"></a>ソフトウェア インベントリ API の一覧表示
 
@@ -63,7 +62,7 @@ GET /api/Software
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**。
 

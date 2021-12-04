@@ -2,8 +2,7 @@
 title: パッケージ SAS URI API の取得
 description: この API を使用して、調査パッケージをダウンロードできる URI を取得します。
 keywords: apis, graph api, supported apis, get package, sas, uri
-search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9201e4fff677d166f126baf14e2f75d98c9e6eea
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: d64219ad2a48a64926bf177fb506d6611ece0ca3
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167300"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61302412"
 ---
 # <a name="get-package-sas-uri-api"></a>パッケージ SAS URI API の取得
 
@@ -42,7 +41,7 @@ ms.locfileid: "61167300"
 
 > [!IMPORTANT]
 >
-> - これらのアクションは、バージョン 1703 以降Windows 10デバイスでのみ使用できます。
+> - これらのアクションは、Windows 10 バージョン 1703 以降、および 11 のデバイスWindowsできます。
 
 ## <a name="limitations"></a>制限事項
 
@@ -72,7 +71,7 @@ GET https://api.securitycenter.microsoft.com/api/machineactions/{machine action 
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**。
 

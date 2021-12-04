@@ -2,7 +2,6 @@
 title: マシン アクション API のキャンセル
 description: 既に起動されているコンピューターアクションをキャンセルする方法について
 keywords: apis, graph api,
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -21,12 +20,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 8ae30dbf371afa6668de4846cebe85ae45fe09be
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 86adc16c5e275daf371c98c7a9709df4977025e8
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171631"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61302160"
 ---
 # <a name="cancel-machine-action-api"></a>マシン アクション API のキャンセル
 
@@ -69,14 +68,14 @@ POST https://api.securitycenter.microsoft.com/api/machineactions/<machineactioni
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-|名前|種類|説明|
+|名前|型|説明|
 |---|---|---|
 |Authorization|String|ベアラー {token}。必須。|
 |Content-Type|string|application/json. Required.|
 
 ## <a name="request-body"></a>要求本文
 
-|パラメーター|種類|説明|
+|パラメーター|型|説明|
 |---|---|---|
 |コメント|文字列|キャンセル アクションに関連付けるコメント。|
 

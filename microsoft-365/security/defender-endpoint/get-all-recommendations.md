@@ -2,7 +2,6 @@
 title: すべての推奨事項を一覧表示する
 description: 組織に影響を与えるすべてのセキュリティ推奨事項の一覧を取得します。
 keywords: apis、 graph api, supported api, get, security recommendations, Microsoft Defender for Endpoint tvm api, 脅威と脆弱性の管理, 脅威と脆弱性の管理 api
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 66f7356b14b03b75804e849e6f7bb99faf37ca48
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 727b20e6784016aac423a74c6b564fa96d6f5733
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168668"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301932"
 ---
 # <a name="list-all-recommendations"></a>すべての推奨事項を一覧表示する
 
@@ -72,7 +71,7 @@ GET /api/recommendations
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**。
 
@@ -103,9 +102,9 @@ GET https://api.securitycenter.microsoft.com/api/recommendations
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Recommendations",
     "value": [
         {
-            "id": "va-_-microsoft-_-windows_10",
-            "productName": "windows_10",
-            "recommendationName": "Update Windows 10",
+            "id": "va-_-microsoft-_-windows_10" "va-_-microsoft-_-windows_11",
+            "productName": "windows_10" "Windows_11",
+            "recommendationName": "Update Windows 10" "Update Windows 11",
             "weaknesses": 397,
             "vendor": "microsoft",
             "recommendedVersion": "",
@@ -128,7 +127,7 @@ GET https://api.securitycenter.microsoft.com/api/recommendations
             "totalMachineCount": 37,
             "exposedMachinesCount": 7,
             "nonProductivityImpactedAssets": 0,
-            "relatedComponent": "Windows 10"
+            "relatedComponent": "Windows 10" "Windows 11"
         }
         ...
      ]

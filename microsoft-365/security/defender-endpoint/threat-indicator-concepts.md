@@ -2,8 +2,6 @@
 title: Microsoft Defender for Endpoint の脅威インテリジェンスの概念を理解する
 description: 組織のカスタム脅威アラートを作成し、Microsoft Defender for Endpoint の脅威インテリジェンスに関する概念を学ぶ
 keywords: 脅威インテリジェンス、アラート定義、侵害の指標、ioc
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 07de6f1306da5c6eb267f6c8a7bf288403c080ff
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 440f788c4adb757013611bb05621b4eb4f4e9715
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165728"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61302448"
 ---
 # <a name="understand-threat-intelligence-concepts"></a>脅威インテリジェンスの概念を理解する
 

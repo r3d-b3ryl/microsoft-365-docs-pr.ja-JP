@@ -4,7 +4,7 @@ f1.keywords:
 - CSH
 ms.author: bcarter
 author: brendacarter
-manager: johmar
+manager: dansimp
 audience: Admin
 ms.topic: tutorial
 ms.prod: m365-security
@@ -14,14 +14,15 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-- remotework
+- m365solution-zerotrust
+- m365solution-overview
 description: ゼロ信頼の原則、アーキテクチャ、および機能を実装Microsoft 365。
-ms.openlocfilehash: 0328c6db55a6cd277df0fdbdb5741d55ee79663e
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: ef916e576c6e7b837c46dda47cdc975fa02883f0
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/03/2021
-ms.locfileid: "61284615"
+ms.locfileid: "61301682"
 ---
 # <a name="microsoft-365-zero-trust-deployment-plan"></a>Microsoft 365 ゼロ トラスト展開プラン
 
@@ -82,7 +83,7 @@ Microsoft 365は、ゼロトラストを環境に組み込むのに役立つ多�
 
 |Includes  |前提条件  |含めない  |
 |---------|---------|---------|
-|3 層の保護に推奨される ID およびデバイス アクセス ポリシー。<br>- 開始点<br>- Enterprise (推奨)<br>- 特殊<br><br>その他の推奨事項:<br>- 外部ユーザー (ゲスト)<br>- Microsoft Teams<br>- SharePoint Online<br>- Microsoft Cloud App Security | Microsoft E3 または E5<br><br>Azure Active Directoryモードのいずれかを使用します。<br>- クラウド専用<br>- パスワード ハッシュ同期 (PHS) 認証を使用したハイブリッド<br>- パススルー認証付きハイブリッド (PTA)<br>- フェデレーション     |管理対象デバイスを必要とするポリシーのデバイス登録。 デバイスを登録するには、「Intune でエンドポイントを管理する」を参照してください。 |
+|3 層の保護に推奨される ID およびデバイス アクセス ポリシー。<br>- 開始点<br>- Enterprise (推奨)<br>- 特殊<br><br>その他の推奨事項:<br>- 外部ユーザー (ゲスト)<br>- Microsoft Teams<br>- SharePoint Online<br>- Microsoft Defender for Cloud Apps| Microsoft E3 または E5<br><br>Azure Active Directoryモードのいずれかを使用します。<br>- クラウド専用<br>- パスワード ハッシュ同期 (PHS) 認証を使用したハイブリッド<br>- パススルー認証付きハイブリッド (PTA)<br>- フェデレーション     |管理対象デバイスを必要とするポリシーのデバイス登録。 デバイスを登録するには、「Intune でエンドポイントを管理する」を参照してください。 |
 | | | |
 
 まず、開始点層を実装します。 これらのポリシーでは、デバイスを管理に登録する必要がなされません。 
@@ -126,7 +127,7 @@ Microsoft 365 Defender は、エンドポイント、電子メール、アプリ
 
 |Includes  |前提条件  |含めない  |
 |---------|---------|---------|
-| すべてのコンポーネントの評価環境とパイロット環境を設定します。<br>- Id の Defender<br>- Defender for Office 365<br>- Defender for Endpoint<br>- Microsoft Cloud App Security<br><br>脅威から保護する<br><br> 脅威の調査と対応   | 各コンポーネントのアーキテクチャ要件については、ガイドを参照Microsoft 365 Defender。        | Azure AD Id Protection は、このソリューション ガイドには含まれていません。 これは、「手順 1: ゼロトラスト ID とデバイス アクセス保護を構成する」に含まれています。        |
+| すべてのコンポーネントの評価環境とパイロット環境を設定します。<br>- Id の Defender<br>- Defender for Office 365<br>- Defender for Endpoint<br>- Microsoft Defender for Cloud Apps<br><br>脅威から保護する<br><br> 脅威の調査と対応   | 各コンポーネントのアーキテクチャ要件については、ガイドを参照Microsoft 365 Defender。        | Azure AD Id Protection は、このソリューション ガイドには含まれていません。 これは、「手順 1: ゼロトラスト ID とデバイス アクセス保護を構成する」に含まれています。        |
 |    |         |         |
 
 ## <a name="step-5-protect-and-govern-sensitive-data"></a>手順 5.  機密データの保護と管理

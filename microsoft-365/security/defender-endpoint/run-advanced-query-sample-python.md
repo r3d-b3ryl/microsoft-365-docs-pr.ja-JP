@@ -3,7 +3,6 @@ title: Python API ガイドを使用した高度なハンティング
 ms.reviewer: ''
 description: 例を使用して、Python を使用して Microsoft Defender for Endpoint API を使用してクエリを実行する方法について説明します。
 keywords: apis、サポートされている API、高度な検索、クエリ
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: fbd8c802ac528407a40249b553c76374d057369d
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 73be2b3c2aa40bb88ac6ccff60eec5cb7f55338c
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165956"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300779"
 ---
 # <a name="advanced-hunting-using-python"></a>Python を使用した高度な追求
 

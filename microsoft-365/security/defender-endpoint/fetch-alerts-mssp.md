@@ -2,8 +2,6 @@
 title: MSSP カスタマー テナントからのアラートの取得
 description: 顧客テナントからアラートを取得する方法について学習する
 keywords: マネージド セキュリティ サービス プロバイダー、mssp、構成、統合
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 02b4d16e6ef99f6f3827d2879cd6d26aeb887112
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: dce95b2053d95ebb03502d38cf35619c596253e1
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61169028"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300420"
 ---
 # <a name="fetch-alerts-from-mssp-customer-tenant"></a>MSSP カスタマー テナントからのアラートの取得
 

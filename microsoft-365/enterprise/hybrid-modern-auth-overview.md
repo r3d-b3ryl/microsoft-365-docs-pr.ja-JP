@@ -4,7 +4,7 @@ ms.author: kvice
 ms.reviewer: smithre4
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 10/15/2020
+ms.date: 12/03/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -16,18 +16,18 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: この記事では、ハイブリッドモダン認証と、オンプレミスのサーバーおよびサーバーで使用するためのSkype for BusinessについてExchangeします。
-ms.openlocfilehash: c6e12638ca0568bcf2ca692b53008971d897290e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9cb8db650a52b8789c66243d5d47bab1c9857230
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209755"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301704"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>ハイブリッド先進認証の概要とオンプレミスの Skype for Business および Exchange サーバーで使用する前提条件
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-_先進認証_ は、より安全なユーザー認証と承認を提供する ID 管理の方法です。 これは、オンプレミスの Skype for Business サーバーとオンプレミスの Exchange サーバーの Office 365 ハイブリッド展開、および分割ドメインの Skype for Business ハイブリッドにも利用できます。 この記事は、前提条件についての関連ドキュメント、先進認証の設定/無効化にリンクし、関連するクライアント (例: Outlook および Skype クライアント) 情報にリンクします。
+_先進認証_ は、より安全なユーザー認証と承認を提供する ID 管理の方法です。 オンプレミス Office 365の Skype for Business サーバーと Exchange サーバーのハイブリッド展開、およびスプリット ドメイン Skype for Business ハイブリッドで使用できます。 この記事は、前提条件についての関連ドキュメント、先進認証の設定/無効化にリンクし、関連するクライアント (例: Outlook および Skype クライアント) 情報にリンクします。
 
 - [先進認証とは何ですか?](hybrid-modern-auth-overview.md#BKMK_WhatisModAuth)
 - [先進認証を使用すると、どのような変更がありますか?](hybrid-modern-auth-overview.md#BKMK_WhatChanges)
@@ -40,13 +40,13 @@ _先進認証_ は、より安全なユーザー認証と承認を提供する I
 
 先進認証は、クライアント （ラップトップや携帯電話など） とサーバーの間の認証と承認の方法の組み合わせた包括的な用語であり、使用している可能性のあるアクセスポリシーに依存するいくつかのセキュリティ対策です。 内容は以下のとおりです:
 
-- **認証方法**: 多要素認証 (MFA)、スマート カード認証、クライアント証明書ベースの認証
+- **認証方法**: 多要素認証 (MFA)スマート カード認証。クライアント証明書ベースの認証
 - **承認方法**: Microsoft が提供する Open Authorization (OAuth) の実装
 - **条件付きアクセスポリシー**: モバイル アプリケーション管理 (MAM) と Azure Active Directory (Azure AD) の条件付きアクセス
 
 先進認証を使用してユーザー ID を管理すると、管理者はさまざまなツールを使用して、リソースを保護することができます。また、オンプレミス (Exchange と Skype for Business)、Exchange ハイブリッド、Skype for Business のハイブリッド/分割ドメインのシナリオにもより安全な ID 管理方法を提供します。
 
-Skype for Business は Exchange と緊密に連携しているため、Skype for Business クライアント ユーザーのログイン動作は、Exchange の先進認証状態によって影響を受けます。 これは、Skype for Business の _分割ドメイン_ ハイブリッド アーキテクチャがあり、Skype for Business Online と Skype for Business オンプレミスの両方が含まれていて、ユーザーが両方の場所に所属している場合にも適用されます。
+Skype for Businessは Exchange と密接に動作しますので、Skype for Business クライアント ユーザーに表示されるログイン動作は、Exchange の最新の認証状態の影響を受Exchange。 これは、Skype for Business の _分割ドメイン_ ハイブリッド アーキテクチャがあり、Skype for Business Online と Skype for Business オンプレミスの両方が含まれていて、ユーザーが両方の場所に所属している場合にも適用されます。
 
 最新の認証の詳細については、「Office 365 クライアント アプリのOffice 365 - 多要素認証」[を参照してください](microsoft-365-client-support-multi-factor-authentication.md)。
 
@@ -60,7 +60,7 @@ Skype for Business は Exchange と緊密に連携しているため、Skype for
 
 evoSTS への変更により、オンプレミス サーバーはクライアントを承認するために OAuth (トークン発行) を利用でき、オンプレミスはクラウドで一般的なセキュリティ方法 (多要素認証など) を使用できます。 さらに、evoSTSは、ユーザーが要求の一部としてパスワードを提供しなくても、リソースへのアクセスを要求できるトークンを発行します。 ユーザーのホーム (オンラインまたはオンプレミス)、必要なリソースをホストしている場所に関係なく、EvoSTS は、先進認証が構成されたら、ユーザーとクライアントを承認する中核になります。
 
-たとえば、Skype for Business クライアントがユーザーの代わりにExchange サーバーにアクセスして予定表情報を取得する必要がある場合、Active Directory 認証ライブラリ （ADAL） を使用してそれを行います。 ADAL は、OAuth セキュリティ トークンを使用してクライアント アプリケーションがディレクトリ内の保護されたリソースを利用できるように設計されたコード ライブラリです。 ADAL は OAuth と連携して、クレームを検証し、（パスワードではなく） トークンを交換して、リソースへのユーザー アクセスを許可します。 以前は、このようなトランザクションの権限 （ユーザーの要求を検証し、必要なトークンを発行する方法を理解しているサーバー） は、オンプレミスのセキュリティ トークン サービス、または Active Directory フェデレーション サービスでさえあった可能性があります。 ただし、先進認証では、Azure AD を使用してその権限を集中化します。
+たとえば、Skype for Business クライアントがユーザーに代わって予定表情報を取得するために Exchange サーバーにアクセスする必要がある場合は、Microsoft 認証ライブラリ (MSAL) を使用してアクセスします。 MSAL は、OAuth セキュリティ トークンを使用して、ディレクトリ内のセキュリティで保護されたリソースをクライアント アプリケーションで使用するように設計されたコード ライブラリです。 MSAL は OAuth を使用してクレームを確認し、トークン (パスワードではなく) を交換して、ユーザーにリソースへのアクセス権を付与します。 過去には、このようなトランザクション内の機関 (ユーザークレームを検証し、必要なトークンを発行する方法を知っているサーバー) は、オンプレミスのセキュリティ トークン サービス、または Active Directory フェデレーション サービスだった可能性があります。 ただし、先進認証では、Azure AD を使用してその権限を集中化します。
 
 これは、Exchange サーバーおよび Skype for Business 環境が完全にオンプレミスであっても、承認サーバーがオンラインになることを意味します。オンプレミス環境には、クラウド内の Office 365 サブスクリプション （およびサブスクリプションがディレクトリとして使用する Azure AD インスタンス） への接続を作成および維持する機能が必要です。
 

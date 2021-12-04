@@ -2,7 +2,6 @@
 title: デバイス値 API の設定
 description: Microsoft Defender for Endpoint API を使用してデバイスの値を指定する方法について説明します。
 keywords: apis、graph api、サポートされている API、タグ、マシン タグ
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4d95dac6dfc147c1849ebf33ab386ce201faf9e6
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: b85e7e9fc96b447c6e2528249e516c45ea3e66d1
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165908"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301848"
 ---
 # <a name="set-device-value-api"></a>デバイス値 API の設定
 
@@ -72,7 +71,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{machineId}/setDevice
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**。
 Content-Type|string|application/json. **必須**。
@@ -81,7 +80,7 @@ Content-Type|string|application/json. **必須**。
 
 要求本文で、JSON オブジェクトに次のパラメーターを指定します。
 
-パラメーター|種類|説明
+パラメーター|型|説明
 :---|:---|:---
 DeviceValue|列挙|デバイスの値。 使用できる値は、'Normal'、'Low'、および 'High' です。 **必須**。
 

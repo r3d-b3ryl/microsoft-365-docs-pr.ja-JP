@@ -2,8 +2,7 @@
 title: MachineAction オブジェクト API の取得
 description: Get MachineAction API を使用して、Microsoft Defender for Endpoint の ID で特定の Machine Action を取得する方法について説明します。
 keywords: apis、graph api、サポートされている api、machineaction オブジェクト
-search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a842c768ac3a5dd7edde3471378f00fc872fcc49
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: ea532b791b15320379655546ca86c798dbfc8674
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168603"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301608"
 ---
 # <a name="get-machineaction-api"></a>Get machineAction API
 
@@ -69,7 +68,7 @@ GET https://api.securitycenter.microsoft.com/api/machineactions/{id}
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**。
 

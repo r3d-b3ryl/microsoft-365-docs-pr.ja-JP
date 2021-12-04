@@ -3,8 +3,6 @@ title: Microsoft Defender for Endpoint のパートナー アプリケーショ�
 ms.reviewer: ''
 description: サポートされているパートナー アプリケーションを表示して、プラットフォームの検出、調査、および脅威インテリジェンス機能を強化する
 keywords: パートナー、アプリケーション、サードパーティ、接続、sentinelone、ルックアウト、bitdefender、corrata、morphisec、paloalto、ziften、より良いモバイル
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: db82b3e76b5a51a6efeef400019f6f47a329c53e
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 0b98ffd747861d6aab757e3941d1a2ef4d6aeac2
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164432"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301236"
 ---
 # <a name="partner-applications-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint のパートナー アプリケーション
 

@@ -4,7 +4,7 @@
 ### [Microsoft Defender for Endpoint とは](microsoft-defender-endpoint.md)
 ### [Defender for Endpoint プラン 1 とプラン 2を比較する](defender-endpoint-plan-1-2.md)
 ### [最小要件](minimum-requirements.md)
-### [Microsoft Defender for Endpoint の新機能](whats-new-in-microsoft-defender-atp.md)
+### [Microsoft Defender for Endpoint の新機能](whats-new-in-microsoft-defender-endpoint.md)
 ### [プレビュー機能](preview.md)
 ### [データの保存とプライバシー](data-storage-privacy.md)
 ### [Microsoft Defender セキュリティ センターの概要](use.md)
@@ -57,7 +57,7 @@
 
 
 ##### [Windows デバイスと Windows サーバーのオンボード]()
-###### [Windows Server 2012 R2、2016、半期チャネル、2019、および 2022 をオンボードする](configure-server-endpoints.md)
+###### [Windows Server 2012 R2、2016、半期チャネル、2019、および 2022](configure-server-endpoints.md)をオンボードする
 ###### [ローカル スクリプトを使用した Windows デバイスのオンボード](configure-endpoints-script.md)
 ###### [グループ ポリシーを使用してデバイスをオンボードする](configure-endpoints-gp.md)
 ###### [Microsoft Endpoint Configuration Manager を使用した Windows デバイスのオンボード](configure-endpoints-sccm.md)
@@ -136,7 +136,7 @@
 ###### [静的プロキシの構成](linux-static-proxy-configuration.md)
 ###### [環境設定](linux-preferences.md)
 ###### [望ましくない可能性のあるアプリケーションを検出してブロックする](linux-pua.md)
-###### [Linux 用 Microsoft Defender for Endpoint でスキャンをスケジュールする](linux-schedule-scan-atp.md)
+###### [Linux 用 Microsoft Defender for Endpoint でスキャンをスケジュールする](linux-schedule-scan-mde.md)
 ###### [Microsoft Defender for Endpoint (Linux) の更新をスケジュールする](linux-update-MDE-Linux.md)
 
 

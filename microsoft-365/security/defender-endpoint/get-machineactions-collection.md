@@ -2,8 +2,7 @@
 title: machineActions API の一覧表示
 description: リスト MachineActions API を使用して、Microsoft Defender for Endpoint の Machine Actions のコレクションを取得する方法について説明します。
 keywords: apis、graph api、サポートされている API、machineaction コレクション
-search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 885186ee528233a0f4fecc71dcfab6c1a639da01
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 0c7f5b1097e7fe59f9ccaa28800da27d943f1176
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167324"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301596"
 ---
 # <a name="list-machineactions-api"></a>MachineActions API の一覧表示
 
@@ -81,7 +80,7 @@ GET https://api.securitycenter.microsoft.com/api/machineactions
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**。
 

@@ -2,7 +2,6 @@
 title: すべての修復作業を一覧表示する
 description: すべての修復アクティビティに関する情報を返します。
 keywords: apis、修復、修復 API、get、修復タスク、すべての修復、
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: e2788bbb4809149a415a1333991a6d3a1cfaccdb
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 9e06cc5e17aff990da853ce798f24da288bd64ae
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168608"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61302064"
 ---
 # <a name="list-all-remediation-activities"></a>すべての修復作業を一覧表示する
 
@@ -77,10 +76,10 @@ dueOn|DateTime|この修復アクティビティの作成者セットの期限|2
 fixedDevices|.|固定されているデバイスの数|2
 ID|String|この修復アクティビティの ID|097d9735-5479-4899-b1b7-77398899df92
 nameId|String|関連する製品名|Microsoft Silverlight
-優先度|String|この修復アクティビティの作成者セットの優先度 (High\Medium\Low)|高い
+優先度|String|この修復アクティビティの作成者セットの優先度 (High\Medium\Low)|高
 productId|String|関連する製品 ID|microsoft-_-silverlight
 productivityImpactRemediationType|String|ユーザーに影響を与えないデバイスに対してだけ、いくつかの構成変更を要求できます。 この値は、「すべての公開デバイス」または「ユーザーに影響を与えないデバイスのみ」の選択を示します。|AllExposedAssets
-rbacGroupNames|String|関連するデバイス グループ名|[ "Windows サーバー", "Windows 10" ]
+rbacGroupNames|String|関連するデバイス グループ名|[ "Windows サーバー", "Windows 11", "Windows 10" ]
 recommendedProgram|String|にアップグレードする推奨プログラム|Null
 recommendedVendor|String|アップグレードの推奨ベンダー|Null
 recommendedVersion|String|更新/アップグレードの推奨バージョン|Null

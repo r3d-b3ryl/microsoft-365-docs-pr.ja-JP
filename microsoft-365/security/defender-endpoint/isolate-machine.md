@@ -2,7 +2,6 @@
 title: コンピューター API の分離
 description: 分離マシン API を使用して、Microsoft Defender for Endpoint の外部ネットワークへのアクセスからデバイスを分離する方法について説明します。
 keywords: apis、graph api、サポートされている API、デバイスの分離
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f01a63dd5a2fa5d5aa56f171617041044a267fbb
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 52063135280d9e91ca531546b4ae03cf5b42ccbf
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218132"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300792"
 ---
 # <a name="isolate-machine-api"></a>コンピューター API の分離
 
@@ -52,8 +51,8 @@ ms.locfileid: "61218132"
 
 > [!IMPORTANT]
 >
-> - 完全な分離は、バージョン 1703 Windows 10デバイスで使用できます。
-> - 選択的分離は、バージョン 1709 以降Windows 10デバイスで使用できます。
+> - 完全な分離は、Windows 10 バージョン 1703、および 11 のデバイスWindowsできます。
+> - 選択的な分離は、Windows 10バージョン 1709 以降、および 11 のデバイスWindowsできます。
 > - デバイスを分離する場合は、特定のプロセスと宛先だけが許可されます。 したがって、完全な VPN トンネルの背後にあるデバイスは、デバイスが分離された後、Microsoft Defender for Endpoint クラウド サービスに到達できません。 Microsoft Defender for Endpoint にスプリット トンネリング VPN を使用し、クラウド ベースMicrosoft Defender ウイルス対策トラフィックを使用することをお勧めします。
 
 ## <a name="permissions"></a>アクセス許可
@@ -79,7 +78,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/isolate
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**。
 Content-Type|string|application/json. **必須**。
@@ -88,7 +87,7 @@ Content-Type|string|application/json. **必須**。
 
 要求本文で、JSON オブジェクトに次のパラメーターを指定します。
 
-パラメーター|種類|説明
+パラメーター|型|説明
 :---|:---|:---
 コメント|文字列|アクションに関連付けるコメント。 **必須**。
 IsolationType|String|分離の種類。 使用できる値は、'Full' または '選択的' です。

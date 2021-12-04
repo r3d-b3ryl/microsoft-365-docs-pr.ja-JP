@@ -2,8 +2,7 @@
 title: タグ API でデバイスを検索する
 description: specifc タグを含むすべてのデバイスを検索する
 keywords: apis, サポートされている api, get, device, find, find device, by tag, tag
-search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 231cbafc595713a66590cbddbbdee1bb7136b028
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 93363ba9cb6252a32406c0c29dfb7d757d2f411d
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166952"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61302196"
 ---
 # <a name="find-devices-by-tag-api"></a>タグ API でデバイスを検索する
 
@@ -74,16 +73,16 @@ GET /api/machines/findbytag?tag={tag}&useStartsWithFilter={true/false}
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**。
 
 ## <a name="request-uri-parameters"></a>要求 URI パラメーター
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 tag|String|タグ名。 **必須**。
-useStartsWithFilter|ブール値|true に設定すると、クエリ内の指定されたタグで始まるタグ名を持つすべてのデバイスが検索されます。 既定は false です。 **オプション**。
+useStartsWithFilter|Boolean|true に設定すると、クエリ内の指定されたタグで始まるタグ名を持つすべてのデバイスが検索されます。 既定は false です。 **オプション**。
 
 ## <a name="request-body"></a>要求本文
 

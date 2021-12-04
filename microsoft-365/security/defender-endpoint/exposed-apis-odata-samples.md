@@ -3,7 +3,6 @@ title: エンドポイント用 Microsoft Defender を使用した OData クエ�
 ms.reviewer: ''
 description: 次の Open Data Protocol (OData) クエリの例を使用して、Microsoft Defender for Endpoint のデータ アクセス プロトコルを支援します。
 keywords: apis、サポートされている api、odata、クエリ
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 7d134cfb7d8c0aff1e7a50b1e0ce9cc2daa9a8b1
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 6ee47a1c624020ffa40848910866738072044d27
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167144"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301476"
 ---
 # <a name="odata-queries-with-microsoft-defender-for-endpoint"></a>エンドポイント用 Microsoft Defender を使用した OData クエリ
 
@@ -275,7 +274,7 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=riskScor
             "computerDnsName": "mymachine1.contoso.com",
             "firstSeen": "2018-08-02T14:55:03.7791856Z",
             "lastSeen": "2021-01-25T07:27:36.052313Z",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osProcessor": "x64",
             "version": "1901",
             "lastIpAddress": "10.166.113.46",

@@ -76,6 +76,8 @@
       href: /microsoft-store/manage-mpsa-software-microsoft-store-for-business
 - name: パートナーとの関係を管理する
   href: manage-partners.md
+- name: パートナーの特権を確認する
+  href: review-partner-admin-privileges.md
 - name: アカウントの使用を停止する
   href: close-your-account.md
 - name: サポートに連絡する

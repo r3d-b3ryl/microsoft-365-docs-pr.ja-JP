@@ -2,7 +2,6 @@
 title: ウイルス対策スキャン API の実行
 description: この API を使用して、デバイスでのウイルス対策スキャンの実行に関連する呼び出しを作成します。
 keywords: apis、graph api、サポートされている api、分離からデバイスを削除する
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f72c9c21318e7a571a7f6f47e825675e772ce7af
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 48788a50fc9794265103d838b4c8bbfb50d264ab
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61163220"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61302460"
 ---
 # <a name="run-antivirus-scan-api"></a>ウイルス対策スキャン API の実行
 
@@ -49,7 +48,7 @@ ms.locfileid: "61163220"
 
 > [!IMPORTANT]
 >
-> - このアクションは、バージョン 1709 以降Windows 10デバイスで使用できます。
+> - このアクションは、Windows 10バージョン 1709 以降、および 11 のデバイスWindowsできます。
 > - ユーザー Microsoft Defender ウイルス対策 (Microsoft Defender AV) スキャンは、アクティブなウイルス対策ソリューションかどうかに関Microsoft Defender ウイルス対策他のウイルス対策ソリューションと一緒に実行できます。 Microsoft Defender ウイルス対策パッシブ モードにできます。 詳細については、「互換性」[をMicrosoft Defender ウイルス対策してください](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md)。
 
 ## <a name="permissions"></a>アクセス許可
@@ -75,7 +74,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/runAntiVirusScan
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**。
 Content-Type|string|application/json
@@ -84,7 +83,7 @@ Content-Type|string|application/json
 
 要求本文で、JSON オブジェクトに次のパラメーターを指定します。
 
-パラメーター|種類|説明
+パラメーター|型|説明
 :---|:---|:---
 コメント|文字列|アクションに関連付けるコメント。 **必須**。
 ScanType|String|スキャンの種類を定義します。 **必須**。

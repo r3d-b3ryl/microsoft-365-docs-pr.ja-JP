@@ -2,8 +2,6 @@
 title: Microsoft Defender for Endpoint イベントを自分のアカウントStorageする
 description: Microsoft Defender for Endpoint を構成して、高度なハンティング イベントを自分のアカウントStorageします。
 keywords: raw data export, Streaming API, API, Event Hubs, Azure storage, storage account, Advanced Hunting, raw data sharing
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 246fe191fb593ec7ebf80018ab4e4adcab26b59b
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: f853917497a34ff4cd82f10cc83d23f530572e45
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168044"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301404"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-storage-account"></a>Microsoft Defender for Endpoint を構成して、高度なハンティング イベントを自分のアカウントStorageする
 
@@ -34,7 +32,7 @@ ms.locfileid: "61168044"
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configuresiem-abovefoldlink)
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 1. テナントに[Storageアカウント](/azure/storage/common/storage-account-overview)を作成します。
 
@@ -54,7 +52,7 @@ ms.locfileid: "61168044"
 
 6. アカウント リソース **ID Storage入力します**。 アカウント リソース **ID** を取得 [Storage、Azure portal](https://ms.portal.azure.com/)の [プロパティ] タブの [Storage アカウント] ページに移動し、[アカウント リソース ID] の下Storage \> \> **コピーします**。
 
-   ![イベント ハブ リソース ID1 のイメージ。](images/storage-account-resource-id.png)
+   :::image type="content" alt-text="イベント ハブ リソース ID1 のイメージ。" source="images/storage-account-resource-id.png" lightbox="images/storage-account-resource-id.png":::
 
 7. ストリーミングするイベントを選択し、[保存] を **クリックします**。
 
@@ -62,16 +60,16 @@ ms.locfileid: "61168044"
 
 - BLOB コンテナーは、イベントの種類ごとに作成されます。
 
-  ![イベント ハブ リソース ID2 のイメージ。](images/storage-account-event-schema.png)
+  :::image type="content" alt-text="イベント ハブ リソース ID2 のイメージ。" source="images/storage-account-event-schema.png" lightbox="images/storage-account-event-schema.png":::
 
 - BLOB 内の各行のスキーマは、次の JSON です。
 
   ```json
   {
-          "time": "<The time WDATP received the event>"
-          "tenantId": "<Your tenant ID>"
-          "category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
-          "properties": { <WDATP Advanced Hunting event as Json> }
+      "time": "<The time WDATP received the event>"
+      "tenantId": "<Your tenant ID>"
+      "category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
+      "properties": { <WDATP Advanced Hunting event as Json> }
   }
   ```
 

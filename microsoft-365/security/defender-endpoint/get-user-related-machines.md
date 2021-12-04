@@ -2,7 +2,6 @@
 title: ユーザー関連のコンピューター API を取得する
 description: ユーザー関連コンピューターの取得 API を使用して、Microsoft Defender for Endpoint のユーザー ID に関連するデバイスのコレクションを取得する方法について説明します。
 keywords: apis, graph api, サポートされている API, get, user, user related alerts
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4a1a8972d17aaf2d03961f36619006c9b3ddf72e
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 0ed5410005bb07c2e0fe97a6a7d26fddcdacbe50
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167432"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61302088"
 ---
 # <a name="get-user-related-machines-api"></a>ユーザー関連のコンピューター API を取得する
 
@@ -73,7 +72,7 @@ GET /api/users/{id}/machines
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization | String | ベアラー {token}。 **必須**。
 
