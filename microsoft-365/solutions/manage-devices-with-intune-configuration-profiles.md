@@ -11,15 +11,17 @@ ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
-ms.custom: seo-marvel-jun2020
+- m365solution-managedevices
+- m365solution-scenario
+ms.custom: ''
 keywords: ''
 description: ''
-ms.openlocfilehash: cf97cda1d5d439877c7628611d35e6843e40fb7d
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: 4f0847c70f5293a50cdaf80e657be5b5ac8753b4
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61129329"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301344"
 ---
 # <a name="step-5-deploy-device-profiles-in-microsoft-intune"></a>手順 5.  Microsoft Intune にデバイス プロファイルを展開する
 
@@ -30,7 +32,7 @@ Microsoft Intune には、組織内のさまざまなデバイスで有効また
 
 ![デバイスを管理するための手順](../media/devices/intune-mdm-step-4.png#lightbox)
 
-構成プロファイルを使用すると、重要な保護を構成し、デバイスをコンプライアンスに準拠させて、リソースにアクセスできるようにすることができます。 以前は、これらの種類の構成変更は、Active Directory ドメイン サービスのグループ ポリシー設定を使用して構成されていました。 最新のセキュリティ戦略には、セキュリティ制御をクラウドに移行することが含まれます。クラウドでは、これらの実施はオンプレミスのリソースとアクセスに依存しません。 Intune 構成プロファイルは、これらのセキュリティ コントロールをクラウドに移行する方法です。 
+構成プロファイルを使用すると、重要な保護を構成し、デバイスをコンプライアンスに準拠させて、リソースにアクセスできるようにすることができます。 以前は、これらの種類の構成変更は、Active Directory ドメイン サービスのグループ ポリシー設定を使用して構成されていました。 最新のセキュリティ戦略には、セキュリティ制御をクラウドに移行することが含まれますが、これらの実施はオンプレミスのリソースとアクセスに依存しません。 Intune 構成プロファイルは、これらのセキュリティ コントロールをクラウドに移行する方法です。 
 
 作成できる構成プロファイルの種類については、「[Microsoft Intune のデバイス プロファイルを使用してデバイスに機能と設定を適用する](/mem/intune/configuration/device-profiles)」を参照してください。
 

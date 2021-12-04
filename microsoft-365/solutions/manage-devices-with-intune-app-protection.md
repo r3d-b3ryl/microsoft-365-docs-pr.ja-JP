@@ -11,15 +11,17 @@ ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
+- m365solution-managedevices
+- m365solution-scenario
 ms.custom: ''
 keywords: ''
 description: ''
-ms.openlocfilehash: c6cee338f4f2f02d3d74da184be15c13d3230c00
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: d508d90fcab58ae6106b1640d993a9c738fbf046
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61221090"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301368"
 ---
 # <a name="step-1-implement-app-protection-policies"></a>手順 1. アプリ保護ポリシーの実装
 
@@ -38,7 +40,7 @@ Intune アプリ保護ポリシー (APP) は、モバイル アプリケーシ�
 
 ## <a name="configuring-mobile-app-protection"></a>モバイル アプリの保護を構成する
 
-このガイダンスは、推奨される[ゼロ トラスト ID およびデバイス アクセス ポリシー](../security/office-365-security/microsoft-365-policies-configurations.md)と緊密に連携しています。 Intune でモバイル アプリ保護ポリシーを作成した後、ID チームと連携して、モバイル アプリ保護を適用する Azure AD で条件付きアクセス ポリシーを構成します。 
+このガイダンスは、推奨される[ゼロ トラスト ID およびデバイス アクセス ポリシー](../security/office-365-security/microsoft-365-policies-configurations.md)と緊密に連携しています。 Intune でモバイル アプリ保護ポリシーを作成した後、ID チームと連携して、モバイル アプリ保護を適用する Azure AD で条件付きアクセス ポリシーを構成してください。 
 
 この図では、2 つのポリシーを強調表示します (図の下の表にも記載されています)。
 

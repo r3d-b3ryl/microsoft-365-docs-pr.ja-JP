@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Microsoft 365 の顧客データの保存場所を世界全体で確認する
-ms.openlocfilehash: c12e492b3a36f8da98fd0021bd3354c0e340d538
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: c346cd561306781e25c883c5c71a312b30ae3f23
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283403"
+ms.locfileid: "61300696"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Microsoft 365 顧客データの保存場所
 
@@ -34,7 +34,7 @@ ms.locfileid: "61283403"
 
 新しい Microsoft 365 テナントは、そのテナントの最初のサブスクリプションに関連付けられたトランザクションの国に基づいて既定で Geo に設定されます。
 
-保管中の顧客データの保管場所に関する契約上のコミットメントに関する情報は、[Microsoft Online Services Terms (OST)](https://go.microsoft.com/fwlink/p/?LinkId=2098215) に記載されています。
+保管中の顧客データの保管場所に関する契約上のコミットメントに関する情報は、「[オンラインサービスのプライバシーとセキュリティ条件](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all)」 に記載されています。
 
 Azure Active Directory データの場所については、[AAD データ マップ](https://go.microsoft.com/fwlink/p/?linkid=2092972) にアクセスしてください。 
 
