@@ -14,12 +14,12 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: 組織Microsoft 365 Business Standardを購入してセットアップします。
-ms.openlocfilehash: c7a217fa21b619de89e2f5f6a5605f3f301dfe12
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 37543ff91f9c3d46c73a07b9bb9110294b250ae2
+ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283031"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "61311726"
 ---
 # <a name="sign-up-for-a-microsoft-365-business-standard-subscription"></a>Microsoft 365 Business Standard サブスクリプションにサインアップする
 
@@ -147,7 +147,7 @@ ms.locfileid: "61283031"
 
 ### <a name="what-do-i-do-if-i-want-to-change-my-business-name"></a>ビジネス名を変更する場合は、どうしますか?
 
-ビジネス名の変更に役立つ小規模ビジネス サポートの専門家にお問い合わせください。 詳細については、「サポートを [受け取る」を参照してください](../../business-video/get-help-support.md)。
+ビジネス名の変更に役立つ小規模ビジネス サポートの専門家にお問い合わせください。 詳細については、「サポートを [受け取る」を参照してください](../get-help-support.md)。
 
 ## <a name="related-articles"></a>関連記事
 

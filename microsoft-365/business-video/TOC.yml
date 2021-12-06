@@ -3,8 +3,6 @@
   items:
     - name: 開始する
       items:
-        - name: Microsoft 365 とは
-          href: what-is-microsoft-365.md
         - name: セットアップの概要
           href: setup-overview.md
         - name: サブスクリプションを選択する

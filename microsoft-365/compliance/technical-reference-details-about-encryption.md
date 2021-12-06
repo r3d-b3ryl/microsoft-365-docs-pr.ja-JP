@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: 暗号化に使用されるさまざまな証明書、テクノロジ、およびトランスポート層セキュリティ (TLS) 暗号スイートについてOffice 365およびMicrosoft 365。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2e5fb8bc724e25fb6dfd948d20fd5ea77cdbbcf4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6b5df1f9e983ab2e8add09b50c2dfbd30dc1243e
+ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60167200"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "61311801"
 ---
 # <a name="technical-reference-details-about-encryption"></a>暗号化についてのテクニカル リファレンスの詳細
 
@@ -51,7 +51,7 @@ FIPS 140-2 でOffice 365可能なアルゴリズムを使用する場合は、�
 
 TLS、および TLS より前の SSL は、セキュリティ証明書を使用してコンピューター間の接続を暗号化することでネットワーク上の通信をセキュリティで保護する暗号化プロトコルです。 Office 365 TLS バージョン 1.2 (TLS 1.2) をサポートしています。
 
-TLS バージョン 1.3 (TLS 1.3) は現在サポートされていません。
+TLS バージョン 1.3 (TLS 1.3) は、一部のサービスでサポートされています。
 
 > [!IMPORTANT]
 > TLS バージョンは非推奨であり、新しいバージョンが利用可能な場合は非推奨のバージョンを使用しなくな点に注意してください。 従来のサービスで TLS 1.0 または 1.1 が必要ない場合は、それらを無効にする必要があります。
@@ -84,7 +84,7 @@ Office 365最も安全な暗号スイートを使用して接続を試み、接�
 | TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256  <br/> | ECDH/128  <br/> | はい  <br/> | AES/128  <br/> | RSA/112  <br/> |
 | TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA     <br/> | ECDH/192  <br/> | はい  <br/> | AES/256  <br/> | RSA/112  <br/> |
 | TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA     <br/> | ECDH/128  <br/> | はい  <br/> | AES/128  <br/> | RSA/112  <br/> |
-| TLS_RSA_WITH_AES_256_GCM_SHA384        <br/> | RSA/112   <br/> | いいえ   <br/> | AES/256  <br/> | RSA/112  <br/> |
+| TLS_RSA_WITH_AES_256_GCM_SHA384        <br/> | RSA/112   <br/> | 不要   <br/> | AES/256  <br/> | RSA/112  <br/> |
 | TLS_RSA_WITH_AES_128_GCM_SHA256        <br/> | RSA/112   <br/> | いいえ   <br/> | AES/256  <br/> | RSA/112  <br/> |
 
 次の暗号スイートは、廃止日まで TLS 1.0 および 1.1 プロトコルをサポートしました。 非GCCが 2020 年 1 月 15 日だった高環境と DoD 環境の場合。 ワールドワイド環境とGCC 2020 年 10 月 15 日でした。
@@ -94,9 +94,9 @@ Office 365最も安全な暗号スイートを使用して接続を試み、接�
 | TLS 1.0、1.1、1.2  <br/> | TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA  <br/> | ECDH/192  <br/> | はい  <br/> | AES/256  <br/> | RSA/112  <br/> |
 | TLS 1.0、1.1、1.2  <br/> | TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA  <br/> | ECDH/128  <br/> | はい  <br/> | AES/128  <br/> | RSA/112  <br/> |
 | TLS 1.0、1.1、1.2  <br/> | TLS_RSA_WITH_AES_256_CBC_SHA        <br/> | RSA/112   <br/> | いいえ   <br/> | AES/256  <br/> | RSA/112  <br/> |
-| TLS 1.0、1.1、1.2  <br/> | TLS_RSA_WITH_AES_128_CBC_SHA        <br/> | RSA/112   <br/> | いいえ   <br/> | AES/128  <br/> | RSA/112  <br/> |
-| TLS 1.0、1.1、1.2  <br/> | TLS_RSA_WITH_AES_256_CBC_SHA256     <br/> | RSA/112   <br/> | いいえ   <br/> | AES/256  <br/> | RSA/112  <br/> |
-| TLS 1.0、1.1、1.2  <br/> | TLS_RSA_WITH_AES_128_CBC_SHA256     <br/> | RSA/112   <br/> | いいえ   <br/> | AES/256  <br/> | RSA/112  <br/> |
+| TLS 1.0、1.1、1.2  <br/> | TLS_RSA_WITH_AES_128_CBC_SHA        <br/> | RSA/112   <br/> | 不要   <br/> | AES/128  <br/> | RSA/112  <br/> |
+| TLS 1.0、1.1、1.2  <br/> | TLS_RSA_WITH_AES_256_CBC_SHA256     <br/> | RSA/112   <br/> | 不要   <br/> | AES/256  <br/> | RSA/112  <br/> |
+| TLS 1.0、1.1、1.2  <br/> | TLS_RSA_WITH_AES_128_CBC_SHA256     <br/> | RSA/112   <br/> | 不要   <br/> | AES/256  <br/> | RSA/112  <br/> |
 
 特定Office 365製品 (Microsoft Teamsを含む) は[、Azure Front Door](/azure/frontdoor/front-door-overview)を使用して TLS 接続を終了し、ネットワーク トラフィックを効率的にルーティングします。 これらの製品に正常に接続するには [、Azure Front Door over TLS 1.2](/azure/frontdoor/front-door-faq#what-are-the-current-cipher-suites-supported-by-azure-front-door-) でサポートされている暗号スイートの少なくとも 1 つを有効にする必要があります。 上記Windows 10、セキュリティを強化するには、ECDHE 暗号スイートの一方または両方を有効にすることをお勧めします。 Windows 7、8、8.1 は Azure Front Door の ECDHE 暗号スイートと互換性がありません。これらのオペレーティング システムとの互換性のために DHE 暗号スイートが提供されています。
 

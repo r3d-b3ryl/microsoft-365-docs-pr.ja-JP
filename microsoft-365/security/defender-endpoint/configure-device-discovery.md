@@ -19,42 +19,44 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c52ad0eb756da7aa1deee173285802f1be86ab54
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: dc8d03140d19c773e01f6571d69f7593e6e406e8
+ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168308"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "61311844"
 ---
 # <a name="configure-device-discovery"></a>デバイス検出の構成
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
+
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
 
 検出は、標準モードまたは基本モードで構成できます。 標準オプションを使用して、ネットワーク内のデバイスをアクティブに検索し、エンドポイントの検出を保証し、より豊富なデバイス分類を提供します。
 
+標準検出の実行に使用するデバイスの一覧をカスタマイズできます。 この機能をサポートしているすべてのオンボード デバイス (現在は Windows 10 デバイスと Windows 2019 デバイスのみ) で標準検出を有効にするか、デバイス タグを指定してデバイスのサブセットまたはサブセットを選択できます。
 
-標準検出の実行に使用するデバイスの一覧をカスタマイズできます。 この機能をサポートしているすべてのオンボード デバイス (現在は Windows 10 デバイスのみ) で標準検出を有効にするか、デバイス タグを指定してデバイスのサブセットまたはサブセットを選択できます。
+## <a name="set-up-device-discovery"></a>デバイス検出のセットアップ
 
-> [!IMPORTANT]
-> プレビューの場合は、最初にプレビュー機能をオンにする必要Microsoft 365 Defender。
-> 次に、ポータルでデバイス検出<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">構成Microsoft 365 Defenderできます</a>。 管理されていないデバイスとセキュリティに関する推奨事項の一覧は、Microsoft 365 Defender ポータルと Microsoft 365 Defender ポータルの両方で使用できます。ダッシュボード タイルは Microsoft 365 Defender ポータルでのみ使用できます。
+デバイスの検出を設定するには、ポータルで次の<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">構成Microsoft 365 Defenderします</a>。
 
-ポータルで次の構成<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">手順を実行Microsoft 365 Defenderします</a>。
+[デバイスの検出 **設定**  >  **に移動する**
 
-1. [デバイスの検出 **設定**  >  **に移動します**。
-2. オンボード デバイスで使用する検出モードを選択します。
-3. 標準検出を使用する場合は、アクティブなプロブに使用するデバイス (すべてのデバイスまたはデバイス タグを指定してサブセット上) を選択します。
-4. **[保存]** をクリックします。
+1. オンボード デバイスで使用する検出モードとして Basic を構成する場合は、[基本] を選択し、[保存] を **選択します。**
+2. 標準検出を使用する場合は、アクティブなプロブに使用するデバイスを選択します。デバイス タグを指定して、すべてのデバイスまたはサブセットで使用し、[保存] を選択 **します**。
+
+> [!NOTE]
+>標準検出では、さまざまな PowerShell スクリプトを使用して、ネットワーク内のデバイスをアクティブにプローブします。 これらの PowerShell スクリプトは Microsoft 署名済みで、次の場所から実行されます `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps` 。 たとえば、`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\UnicastScannerV1.1.0.ps1` などです。
 
 ## <a name="exclude-devices-from-being-actively-probed-in-standard-discovery"></a>デバイスが標準検出でアクティブにプローブされるのを除外する
 
-ネットワーク上にアクティブにスキャンすべきではないデバイス (たとえば、別のセキュリティ ツールでハニーポットとして使用されるデバイス) がある場合は、除外リストを定義してスキャンを防止することもできます。 デバイスは、基本検出モードを使用して検出できます。また、マルチキャスト検出の試みによっても検出できます。 これらのデバイスは受動的に検出されますが、アクティブにプローブされません。   
+ネットワーク上にアクティブにスキャンすべきではないデバイス (たとえば、別のセキュリティ ツールでハニーポットとして使用されるデバイス) がある場合は、除外リストを定義してスキャンを防止することもできます。 デバイスは、基本検出モードを使用して検出できます。また、マルチキャスト検出の試みによっても検出できます。 これらのデバイスは受動的に検出されますが、アクティブにプローブされません。
+
+除外するデバイスは、[除外] ページ **で構成** できます。
 
 ## <a name="select-networks-to-monitor"></a>監視するネットワークの選択
 
@@ -65,7 +67,7 @@ ms.locfileid: "61168308"
 デバイス検出を実行できるネットワークの一覧が、[監視対象のネットワーク] **ページに表示** されます。
 
 > [!NOTE]
-> 一覧には、企業ネットワークとして識別されたネットワークが表示されます。 50 未満のネットワークが企業ネットワークとして識別された場合、リストには、オンボードデバイスが最も多い最大 50 のネットワークが表示されます。 
+> 一覧には、企業ネットワークとして識別されたネットワークが表示されます。 50 未満のネットワークが企業ネットワークとして識別された場合、リストには、オンボードデバイスが最も多い最大 50 のネットワークが表示されます。
 
 監視対象のネットワークの一覧は、過去 7 日間にネットワークに表示されたデバイスの総数に基づいて並べ替えます。
 

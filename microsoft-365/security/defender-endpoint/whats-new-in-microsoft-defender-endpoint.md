@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 38742e9dbb66d2aaf0d63a5c62d02af04c3db137
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 5ff5eeb85409bdcf79fa448804c86d961a2ac446
+ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61302521"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "61311832"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の新機能
 
@@ -60,7 +60,14 @@ ms.locfileid: "61302521"
 - [iOS の Defender for Endpoint の新機能](ios-whatsnew.md)
 - [Defender for Endpoint on Linux の新機能](linux-whatsnew.md)
 
+## <a name="december-2021"></a>2021 年 12 月
+
+- IoT デバイスの検出 (プレビュー): [デバイス](device-discovery.md) 検出で、企業ネットワークに接続されている管理されていない IoT デバイスを見つけるのに役立つ機能が追加されています。 これにより、他の IT デバイス (ワークステーション、サーバー、モバイル) と共に、IoT インベントリの単一の統合ビューが提供されます。
+
+- [Microsoft Defender for IoT 統合 (プレビュー)](enable-microsoft-defender-for-iot-integration.md): この統合により、Microsoft Defender for IoT が提供するエージェントレス監視機能を使用して、デバイスの検出機能が強化されます。 これにより、ネットワーク内の IoT デバイスの検索、識別、セキュリティ保護に役立つ可視性が向上します。
+
 ## <a name="november-2021"></a>2021 年 11 月
+
 - [セキュリティ構成管理](security-config-management.md) <br/> Microsoft エンドポイント マネージャー または Microsoft Intune または Microsoft Endpoint Configuration Manager によって管理されていないデバイスが、Microsoft Defender のセキュリティ構成を直接受信する機能エンドポイント マネージャー。
 
 - クロスプラットフォーム サポートの機能強化。

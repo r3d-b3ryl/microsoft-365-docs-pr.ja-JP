@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: ビジネス向けサービスへの移行に関する要件と考慮事項Microsoft 365説明します。
-ms.openlocfilehash: 070d3d57d998edabb0711ca11c082f8e41a3406f
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: fd91da48fe7b6ef1bde9340c5fbb4a926055514b
+ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128666"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "61311702"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>Microsoft 365 for business のセットアップを計画
 
@@ -60,7 +60,7 @@ ms.locfileid: "61128666"
   
 セットアップ ウィザードを完了しない場合は、管理センターのセットアップからいつでもセットアップ [タスクを完了](https://go.microsoft.com/fwlink/p/?linkid=2024339)  >  **できます**。 ここから、別のメール サービスからメールと連絡先を移行したり、管理者アカウントのドメインを変更したり、請求情報を管理したり、ユーザーを追加または削除したり、パスワードをリセットしたり、その他のビジネス機能を実行できます。 セットアップ ウィザードと [セットアップ] ページの違いの詳細については、「セットアップ ウィザードとセットアップ ページMicrosoft 365違い」を[参照してください](o365-setup-wizard-and-setup-page.md)。
 
-お困りの場合は、Microsoft にご連絡ください。[お役に立つことができれば幸いです。](../../business-video/get-help-support.md)
+任意の時点で立ち往生した場合は、お電話ください。 [ここにお手伝いします。](../../business-video/get-help-support.md)
   
 ## <a name="when-not-to-use-the-setup-wizard-active-directory-synchronization-and-hybrid-environments"></a>セットアップ ウィザードを使用しない場合 Active Directory 同期とハイブリッド環境
 

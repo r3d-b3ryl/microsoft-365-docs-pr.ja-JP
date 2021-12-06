@@ -9,19 +9,19 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 10/18/2021
+ms.date: 12/03/2021
 ms.reviewer: ksarens, jtoole, pahuijbr
 manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 0f9fa31ebe6b0eb5aced0aad2187adbd5a93db0d
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: c0bb0753c3566cf4a954c2393dd9d7533f2051ed
+ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167936"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "61311826"
 ---
 # <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>グループ ポリシー設定を使用して、グループ ポリシーの構成とMicrosoft Defender ウイルス対策
 
@@ -53,14 +53,14 @@ ms.locfileid: "61167936"
 
 ## <a name="group-policy-settings-and-resources"></a>グループ ポリシーの設定とリソース
 
-このトピックの次の表に、Windows 10 バージョン 1703 で使用できるグループ ポリシー設定の一覧を示し、このドキュメント ライブラリの該当するトピック (該当する場合) へのリンクを示します。
+次の表は、一般的に使用されるグループ ポリシーの設定を示Windows 10。
 
 > [!TIP]
-> [2020 年 5 設定更新プログラム (2004)](https://www.microsoft.com/download/101451)Windows 10グループ ポリシー のリファレンス スプレッドシートをダウンロードします。 このスプレッドシートには、Windows 10 2020 年 5 月更新プログラム (2004) 用に提供される管理用テンプレート ファイルに含まれるコンピューターとユーザー構成のポリシー設定が一覧表示されます。 グループ ポリシー オブジェクトを編集するときに、スプレッドシートを参照して構成できます。<br/><br/>
+> グループ ポリシーリファレンス スプレッドシートをダウンロードします。このスプレッドシートには、コンピューター用に提供される管理用テンプレート ファイルに含まれるコンピューターとユーザー構成のポリシー設定がWindows。 グループ ポリシー オブジェクトを編集するときに、スプレッドシートを参照して構成できます。 <br/><br/> 最新のバージョンを次に示します。
+> - [グループ ポリシー 設定 2020 年 5 Windows 10更新プログラム (2004) の参照スプレッドシート](https://www.microsoft.com/download/details.aspx?id=101451)
+> - [グループ ポリシー 設定 2021 年 10 Windows 10 月 11 日更新プログラム (21H2) の参照スプレッドシート](https://www.microsoft.com/download/details.aspx?id=103506)
 
-<br>
-
-****
+<br/><br/>
 
 |場所|Setting|記事|
 |---|---|---|
@@ -99,7 +99,7 @@ ms.locfileid: "61167936"
 |修復|スケジュールされたフル スキャンを実行して修復を完了するために、時刻のローカル設定の上書きを構成する|[ユーザーによるポリシー設定のローカル変更を防止または許可する](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
 |修復|スケジュールされたフル スキャンを実行して修復を完了する日を指定する|[スケジュールされたスキャンMicrosoft Defender ウイルス対策構成する](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
 |修復|スケジュールされたフル スキャンを実行して修復を完了する時刻を指定する|[スケジュールされたスキャンMicrosoft Defender ウイルス対策構成する](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
-|Reporting|拡張通知を無効にする|[エンドポイントに表示される通知を構成する](configure-notifications-microsoft-defender-antivirus.md)
+|レポート|拡張通知を無効にする|[エンドポイントに表示される通知を構成する](configure-notifications-microsoft-defender-antivirus.md)
 |ルート|[オフにする] Microsoft Defender ウイルス対策|使用しない (インストールされているサード パーティ製ウイルス対策アプリが正しく動作するように、この設定を [構成されていない] に設定する必要があります)
 |ルート|プロキシ サーバーをバイパスするアドレスを定義する|[デバイス プロキシとインターネット接続の設定を構成する](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus)|
 |ルート|ネットワークに接続するためのプロキシの自動構成 (.pac) を定義する|[デバイス プロキシとインターネット接続の設定を構成する](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus)|
@@ -128,6 +128,7 @@ ms.locfileid: "61167936"
 |スキャン|アーカイブ ファイルのスキャン|[[スキャン オプションの構成] Microsoft Defender ウイルス対策](configure-advanced-scan-types-microsoft-defender-antivirus.md)|
 |スキャン|ネットワーク ファイルのスキャン|[[スキャン オプションの構成] Microsoft Defender ウイルス対策](configure-advanced-scan-types-microsoft-defender-antivirus.md)|
 |スキャン|パックされた実行可能ファイルをスキャンする|[[スキャン オプションの構成] Microsoft Defender ウイルス対策](configure-advanced-scan-types-microsoft-defender-antivirus.md)|
+| スキャン | スキャン スクリプト | [[スキャン オプションの構成] Microsoft Defender ウイルス対策](configure-advanced-scan-types-microsoft-defender-antivirus.md) <p>[「Defender/AllowScriptScanning」も参照してください](/windows/client-management/mdm/policy-csp-defender)。|
 |スキャン|リムーバブル ドライブのスキャン|[[スキャン オプションの構成] Microsoft Defender ウイルス対策](configure-advanced-scan-types-microsoft-defender-antivirus.md)|
 |スキャン|アーカイブ ファイルをスキャンする最大深度を指定する|[[スキャン オプションの構成] Microsoft Defender ウイルス対策](configure-advanced-scan-types-microsoft-defender-antivirus.md)|
 |スキャン|スキャン中の CPU 使用率の最大割合を指定する|[[スキャン オプションの構成] Microsoft Defender ウイルス対策](configure-advanced-scan-types-microsoft-defender-antivirus.md)|
@@ -155,7 +156,7 @@ ms.locfileid: "61167936"
 |セキュリティ インテリジェンスの更新プログラム|セキュリティ インテリジェンスの更新後にスキャンを有効にする|[スケジュールされたスキャンを構成Microsoft Defender ウイルス対策](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
 |Threats|検出時に既定のアクションを実行しない脅威アラート レベルを指定する|[スキャンの修復をMicrosoft Defender ウイルス対策する](configure-remediation-microsoft-defender-antivirus.md)|
 |Threats|検出時に既定のアクションを実行しない脅威を指定する|[スキャンの修復をMicrosoft Defender ウイルス対策する](configure-remediation-microsoft-defender-antivirus.md)|
-|
+
 
 ## <a name="see-also"></a>関連項目
 

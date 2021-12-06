@@ -258,6 +258,8 @@
 ### [デバイス検出]()
 #### [デバイス検出の概要](device-discovery.md)
 #### [デバイス検出の構成](configure-device-discovery.md)
+#### [Microsoft Defender for IoT 統合](enable-microsoft-defender-for-iot-integration.md)
+#### [Corelight データ統合](corelight-integration.md)
 #### [デバイス検出に関する FAQ](device-discovery-faq.md)
 
 ### [ネットワークデバイス](network-devices.md)

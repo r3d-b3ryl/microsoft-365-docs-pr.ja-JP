@@ -17,7 +17,7 @@ productDirectory:
     - title: 作業の開始
       imageSrc: 'https://docs.microsoft.com/office/media/icons/get-started-blue.svg'
       summary: ビジネス向けサービスへの移行Microsoft 365計画します。
-      url: what-is-microsoft-365.md
+      url: ../admin/admin-overview/what-is-microsoft-365.md
     - title: 一般法人向け Microsoft 365 をセットアップする
       imageSrc: 'https://docs.microsoft.com/office/media/icons/add-to-cloud-blue.svg'
       summary: ドメインの追加、ユーザーの追加、セキュリティ ポリシーのセットアップを行います。

@@ -13,15 +13,15 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.date: 10/19/2021
+ms.date: 12/03/2021
 ms.collection: M365-security-compliance
 ms.topic: how-to
-ms.openlocfilehash: 59a578ab8b9ccae1949d59230d16b275997006c8
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 2527a558d474fecaab813963dc38a9e76aa89d5c
+ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167876"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "61311748"
 ---
 # <a name="configure-microsoft-defender-antivirus-scanning-options"></a>Microsoft Defender ウイルス対策スキャン オプションを構成する
 
@@ -38,6 +38,11 @@ ms.locfileid: "61167876"
 マルウェア対策ポリシー (現在のブランチMicrosoft エンドポイント マネージャー構成する方法の詳細については、「マルウェア対策ポリシーを作成して展開する方法: スキャン設定」[を参照してください](/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings)。
 
 ## <a name="use-group-policy-to-configure-scanning-options"></a>グループ ポリシーを使用してスキャン オプションを構成する
+
+> [!TIP]
+> グループ ポリシーリファレンス スプレッドシートをダウンロードします。このスプレッドシートには、コンピューター用に提供される管理用テンプレート ファイルに含まれるコンピューターとユーザー構成のポリシー設定がWindows。 グループ ポリシー オブジェクトを編集するときに、スプレッドシートを参照して構成できます。 <br/><br/> 最新のバージョンを次に示します。
+> - [グループ ポリシー 設定 2020 年 5 Windows 10更新プログラム (2004) の参照スプレッドシート](https://www.microsoft.com/download/details.aspx?id=101451)
+> - [グループ ポリシー 設定 2021 年 10 Windows 10 月 11 日更新プログラム (21H2) の参照スプレッドシート](https://www.microsoft.com/download/details.aspx?id=103506)
 
 1. グループ ポリシー管理コンピューターで、[グループ ポリシー管理コンソール](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))を開きます。
 
@@ -56,6 +61,7 @@ ms.locfileid: "61167876"
 |ポリシー アイテムと場所|既定の設定 (構成されていない場合)|クラスの PowerShell `Set-MpPreference` パラメーターまたは WMI `MSFT_MpPreference` プロパティ|
 |---|---|---|
 |電子メールのスキャン <p> **スキャン** \>**電子メール スキャンを有効にする**<p>「 [電子メールのスキャンの制限」を](#email-scanning-limitations) 参照してください (この記事で)|無効|`-DisableEmailScanning`|
+| スクリプトのスキャン | Enabled  | このポリシー設定では、スクリプトのスキャンを構成できます。 この設定を有効または構成しない場合は、スクリプトのスキャンが有効になります。 <p>[「Defender/AllowScriptScanning」を参照してください。](/windows/client-management/mdm/policy-csp-defender)  | 
 |再 [解析ポイントのスキャン](/windows/win32/fileio/reparse-points) <p> **スキャン** \>**再解析ポイントスキャンを有効にする**|無効|使用不可 <p>[「Reparse ポイント」を参照してください。](/windows/win32/fileio/reparse-points)|
 |マップされたネットワーク ドライブをスキャンする <p> **スキャン** \>**マップされたネットワーク ドライブでフル スキャンを実行する**|無効|`-DisableScanningMappedNetworkDrivesForFullScan`|
 |アーカイブ ファイルをスキャンする (.zipファイル.rarします。 <p> **スキャン** \>**アーカイブ ファイルのスキャン**|Enabled|`-DisableArchiveScanning` <p>拡張機能 [の除外リストは、](configure-extension-file-exclusions-microsoft-defender-antivirus.md) この設定よりも優先されます。|

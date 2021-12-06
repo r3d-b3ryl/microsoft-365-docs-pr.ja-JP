@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: コンプライアンス センターに新しいソリューションを追加する場合、フィードバックに基づいて既存の機能を更新する場合、新しく更新されたドキュメントを展開する場合でも、Microsoft 365 を使用すると、変化し続けるコンプライアンス環境の上に立ち続けるのに役立ちます。 今月までの予定を確認します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 047cc8e50e502d30cdeb13bbde5ebc2ff6621922
-ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
+ms.openlocfilehash: 738f1ca79f0cbfa304b77198217d31e7bf1a44bb
+ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/22/2021
-ms.locfileid: "61137029"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "61311618"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 コンプライアンス センターの新機能
 
@@ -40,6 +40,46 @@ Microsoft 365 コンプライアンス センター に新しいソリューシ�
 > - [Microsoft 365 Defender の新機能](../security/defender/whats-new.md)
 >
 > また、「Microsoft 365[](https://www.microsoft.com/microsoft-365/roadmap)ロードマップ」を参照して、Microsoft 365、展開中、開発中、キャンセル済み、または以前にリリースされた機能について説明します。
+
+## <a name="november-2021"></a>2021 年 11 月
+
+### <a name="compliance-manager"></a>コンプライアンス マネージャー
+
+新しいコンテンツ更新プログラムは [、「Microsoft コンプライアンス マネージャーの新機能」で確認できます](compliance-manager-whats-new.md)。
+
+### <a name="device-onboarding"></a>デバイスオンボーディング
+
+デバイスオンボーディング用に次の記事が追加されました。
+
+- [Microsoft 365 への macOS デバイスのオンボードに関する概要 (プレビュー)](device-onboarding-macos-overview.md)
+- [Intune を使用した Microsoft 365 コンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)](device-onboarding-offboarding-macos-intune.md)
+- [Microsoft Defender for Endpoint のお客様向け Intune を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)](device-onboarding-offboarding-macos-intune-mde.md)
+- [JAMF Pro を使用した Microsoft 365 コンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)](device-onboarding-offboarding-macos-jamfpro.md)
+- [Microsoft Defender for Endpoint のお客様向け JAMF Pro を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)](device-onboarding-offboarding-macos-jamfpro-mde.md)
+
+### <a name="ediscovery"></a>電子情報開示
+
+- [新しいケース形式が](advanced-ediscovery-new-case-format.md)一般Advanced eDiscoveryリリースされ、"大きな大文字と小文字の形式" から名前が変更された場合は、新しいケース形式を使用します。
+
+### <a name="retention-and-records-management"></a>保持とレコードの管理
+- ユーザーがラベル付きアイテムを削除できるかどうかをSharePointレコードOneDrive新しいレコード管理設定
+
+### <a name="sensitive-information-types"></a>機密情報の種類
+
+次の新しい記事を追加しました。
+
+- [完全なデータ一致に基づく機密情報の種類の詳細](sit-learn-about-exact-data-match-based-sits.md)
+- [完全なデータ一致に基づく機密情報の種類の使用を開始する](sit-get-started-exact-data-match-based-sits-overview.md)
+- [完全なデータ一致に基づく機密情報の種類のソース データをエクスポートする](sit-get-started-exact-data-match-export-data.md)
+- [完全なデータ一致に基づく機密情報の種類のスキーマを作成する](sit-get-started-exact-data-match-create-schema.md)
+- [機密情報の種類と完全に一致する機密情報のソース テーブルをハッシュしてアップロードする](sit-get-started-exact-data-match-hash-upload.md)
+- [機密情報の種類/ルール パッケージと完全に一致するデータを作成する](sit-get-started-exact-data-match-create-rule-package.md)
+- [機密情報の種類と完全に一致するデータをテストする](sit-get-started-exact-data-match-test.md)
+- [正確なデータ一致スキーマを管理する](sit-use-exact-data-manage-schema.md)
+- [機密情報のソース テーブル ファイルを更新する](sit-use-exact-data-refresh-data.md)
+
+### <a name="sensitivity-labels"></a>秘密度ラベル
+- [Azure Purview ラベルのスコープ名は、"](/azure/purview/create-sensitivity-label)スキーマ化されたデータ資産" になります。
 
 ## <a name="october-2021"></a>2021 年 10 月
 
@@ -297,24 +337,3 @@ Microsoft 365 コンプライアンス センター に新しいソリューシ�
 - 認証 [コンテキスト設定が](sensitivity-labels-teams-groups-sites.md#more-information-about-the-dependencies-for-the-authentication-context-option) 、感度ラベルのプレビューで完全に展開されました。 さらに、この構成は現在、ユーザーがサポートMicrosoft Teams。
 - サービス原則名 (Microsoft Cloud App Security など) でラベル付けおよび暗号化され、SharePoint および OneDrive にアップロードされたファイルは、Office ファイルの感度ラベルを有効にした場合に Office for the web[で開けるSharePointとOneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 - バージョン 2105: Windows の場合は 6 月 18 日、macOS ではバージョン 16.50 以上を使用する場合、共同編集と[AutoSave](sensitivity-labels-coauthoring.md)はテスト テナントに制限されなくなりました。 この機能は引き続き iOS と Android ではサポートされていません。プレビューのままです。
-
-## <a name="may-2021"></a>2021 年 5 月
-
-### <a name="data-loss-prevention"></a>データ損失防止
-
-- データ損失防止 [戦略を計画する新しいガイダンス](dlp-overview-plan-for-dlp.md) 。
-
-### <a name="retention-and-records-management"></a>保持とレコードの管理
-
-- SharePoint サイトまたは OneDrive アカウントからアイテム保持ポリシーをリリースする場合は、サイトまたはアカウントを削除する前に 30 日間の猶予期間を待つ必要がなくなりました。 お客様からの一般的な要求であるこの変更は、すべてのテナントに対して完了しました。
-- プレビューでは、**複数** 段階の廃棄レビュー : 管理者は保持ラベルに対して最大 5 つの連続した廃棄レビュー段階を追加し、レビュー担当者は他のユーザーを廃棄レビュー ステージに追加できます。 [](disposition.md) メールの通知とアラームをカスタマイズすることもできます。
-
-### <a name="sensitive-information-types"></a>機密情報の種類
-
-- キーワード ディクショナリの変更に役立つ [新しい情報が追加されました](sit-modify-keyword-dictionary.md)。
-
-### <a name="sensitivity-labels"></a>秘密度ラベル
-
-- プレビューでは、グループとサイトの感度ラベルを構成するときに、認証コンテキストの新しい設定[を使用できます](sensitivity-labels-teams-groups-sites.md)。 このオプションは、ユーザーがラベルが適用Azure AD SharePointサイトにアクセスするときに、より厳しい条件を適用するために、Azure AD条件付きアクセス ポリシーと組み合わせて機能します。 この設定を構成する前 [に、依存関係と制限](sensitivity-labels-teams-groups-sites.md#more-information-about-the-dependencies-for-the-authentication-context-option) を必ず確認してください。
-- [](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) Exchange 用に構成された自動ラベル付けポリシーは、暗号化を適用する感度ラベルをサポートし、[転送しない] オプションまたは [転送しない] オプションに対するアクセス許可をユーザーに割り当てEncrypt-Onlyしました。
-- [必須のラベル付](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents)けは、すべてのプラットフォームで、Officeアプリで一般に使用できます。

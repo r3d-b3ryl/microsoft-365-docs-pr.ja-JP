@@ -21,16 +21,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 従業員がアプリで取得したアプリをOfficeする方法をMicrosoft 365 Business Premium。
-ms.openlocfilehash: 2a1c3c082cfb676b33e7b033c6516f2f4c37980e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 396af5d94b7bf68aef6998e86388306303ea1f26
+ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60156956"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "61311784"
 ---
 # <a name="employee-quick-setup"></a>従業員のクイック セットアップ
 
-ビジネス向けサービスをMicrosoft 365ですか? :::image type="icon" source="../media/video-call-icon.png" border="false":::[詳細については、この](what-is-microsoft-365.md)ビデオをご覧ください。 次に、次の手順に従います。
+ビジネス向けサービスをMicrosoft 365ですか? :::image type="icon" source="../media/video-call-icon.png" border="false":::[詳細については、この](../admin/admin-overview/what-is-microsoft-365.md)ビデオをご覧ください。 次に、次の手順に従います。
 
 :::image type="content" source="../media/m365-employee-quick-setup.png" alt-text="従業員の迅速なセットアップ手順を示す画像。":::
 
