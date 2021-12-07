@@ -1,9 +1,9 @@
 ---
-title: Microsoft 365ネットワーク接続位置情報サービス
+title: Microsoft 365接続ロケーション サービス
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
-ms.date: 09/21/2020
+manager: scotv
+ms.date: 12/06/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,15 +14,15 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: admindeeplinkMAC
-description: Microsoft 365ネットワーク接続位置情報サービス
-ms.openlocfilehash: 71908e5c0f697aac3068af205adc998f88a00c85
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Microsoft 365接続ロケーション サービス
+ms.openlocfilehash: 6150102471b03fbc83be09b503a6969ca6615a87
+ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199923"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61327671"
 ---
-# <a name="microsoft-365-network-connectivity-location-services"></a>Microsoft 365ネットワーク接続位置情報サービス
+# <a name="microsoft-365-network-connectivity-location-services"></a>Microsoft 365接続ロケーション サービス
 
 この <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター、</a>ネットワーク **インサイトと** パフォーマンスに関する推奨事項が表示されます。これは、テナントから収集されるライブ パフォーマンスMicrosoft 365です。 これらの指標は、テナントの管理ユーザーだけが表示できます。 組織のネットワーク接続は、インターネットへのネットワーク出力場所を介して、オフィスの場所ごとに設計されています。 Microsoft 365接続では、そのルートを使用し、インターネットを通して Microsoft サービスのフロント ドア サーバーに接続します。 これらのネットワークインサイトを表示するには、オフィスの場所を特定する必要があります。
 
@@ -40,12 +40,12 @@ ms.locfileid: "60199923"
 
 この機能は **、tomTom** Bing地図によって提供されます。 TomTom の製品とサービスの詳細については、以下を参照してください [https://www.tomtom.com/legal](https://www.tomtom.com/legal) 。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
-[Microsoft 365 管理 センターのネットワーク接続 (プレビュー)](office-365-network-mac-perf-overview.md)
+[Microsoft 365 管理 センターのネットワーク接続](office-365-network-mac-perf-overview.md)
 
-[Microsoft 365パフォーマンス分析情報 (プレビュー)](office-365-network-mac-perf-insights.md)
+[Microsoft 365パフォーマンスに関する分析情報](office-365-network-mac-perf-insights.md)
 
-[Microsoft 365評価 (プレビュー)](office-365-network-mac-perf-score.md)
+[Microsoft 365ネットワーク評価](office-365-network-mac-perf-score.md)
 
-[Microsoft 365の接続テスト (Microsoft 365 管理センター)](office-365-network-mac-perf-onboarding-tool.md)
+[Microsoft 365の接続テストMicrosoft 365 管理センター](office-365-network-mac-perf-onboarding-tool.md)

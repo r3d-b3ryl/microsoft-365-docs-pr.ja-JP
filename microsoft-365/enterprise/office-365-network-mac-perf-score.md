@@ -2,8 +2,8 @@
 title: Microsoft 365ネットワーク評価
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
-ms.date: 09/21/2020
+manager: scotv
+ms.date: 12/06/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365ネットワーク評価
-ms.openlocfilehash: 18a175f0eef62793cb2aba8e0ed46ce08eea8e9f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d7fea3d4f2dfbe846a873b6ce0ea34d8373bcc12
+ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202873"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61327558"
 ---
 # <a name="microsoft-365-network-assessment"></a>Microsoft 365ネットワーク評価
 
@@ -97,12 +97,12 @@ Microsoft 365 管理センターのネットワーク接続では、ネットワ
 
 これらの UDP 測定値から 1 ~ 5 のスケールの平均オピニオン スコアを計算します。 次に、ネットワーク評価の 0 ~ 100 ポイントスケールMicrosoft Teamsマップします。  全体的な良い点は 87.5 ポイントを超え、全体的に悪い点は 50 ポイントを下回っています。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
-[Microsoft 365 管理 センターのネットワーク接続 (プレビュー)](office-365-network-mac-perf-overview.md)
+[Microsoft 365 管理 センターのネットワーク接続](office-365-network-mac-perf-overview.md)
 
-[Microsoft 365パフォーマンス分析情報 (プレビュー)](office-365-network-mac-perf-insights.md)
+[Microsoft 365パフォーマンスに関する分析情報](office-365-network-mac-perf-insights.md)
 
-[Microsoft 365接続テスト ツール (プレビュー)](office-365-network-mac-perf-onboarding-tool.md)
+[Microsoft 365接続テスト ツール](office-365-network-mac-perf-onboarding-tool.md)
 
-[Microsoft 365ネットワーク接続位置情報サービス (プレビュー)](office-365-network-mac-location-services.md)
+[Microsoft 365接続ロケーション サービス](office-365-network-mac-location-services.md)

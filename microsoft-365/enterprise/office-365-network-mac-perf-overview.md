@@ -2,8 +2,8 @@
 title: Microsoft 365 管理 センターのネットワーク接続
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
-ms.date: 09/21/2020
+manager: scotv
+ms.date: 12/06/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: ネットワーク接続の概要 (Microsoft 365 管理 センター)
-ms.openlocfilehash: 579166cef377810dfe38993bf3736e65d46f8c0c
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 63a0975b1391c2734d7933fe64094be868a34526
+ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60552850"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61327654"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理 センターのネットワーク接続
 
@@ -51,7 +51,7 @@ ms.locfileid: "60552850"
 
 このオプションでは、前提条件をサポートする各オフィスの場所で少なくとも 2 台のコンピューターが実行されている必要があります。 OneDriveバージョンWindows最新のバージョンで、各コンピューターにインストールする必要があります。 バージョンの詳細についてはOneDriveリリース ノートを参照OneDrive[してください](https://support.office.com/article/onedrive-release-notes-845dcf18-f921-435e-bf28-4e24b95e5fc0)。 ネットワーク測定値は、近い将来、他のOffice 365クライアント アプリケーションに追加される予定です。
 
-WindowsLocation Service は、コンピューター上で同意する必要があります。 このテストは、アプリを実行し **、マップ** することでテストできます。 この機能は、1 台のコンピューターで有効に **できます設定 |プライバシー|[アプリ** による位置情報 _へのアクセスを許可する] 設定を有効にする_ 必要がある場所。 WindowsLocation Services の同意は、設定 _LetAppsAccessLocation_ を使用して MDM またはグループ ポリシーを使用して PC に展開できます。
+Windowsの位置情報サービスに同意する必要があります。 このテストは、アプリを実行し **、マップ** することでテストできます。 この機能は、1 台のコンピューターで有効に **できます設定 |プライバシー|[アプリ** による位置情報 _へのアクセスを許可する] 設定を有効にする_ 必要がある場所。 Windows位置情報サービスの同意は、設定 _LetAppsAccessLocation_ を使用して MDM またはグループ ポリシーを使用して PC に展開できます。
 
 このメソッドを使用して管理センターに場所を追加する必要は、都市の解決時に自動的に識別されます。 同じ都市内の複数のオフィスの場所は、位置情報サービスを使用Windows表示されません。 位置情報は、最も近い 300 メートルから 300 メートルに四捨五入され、より正確な位置情報にアクセスされません。
 
@@ -82,7 +82,7 @@ WindowsLocation Service は、コンピューター上で同意する必要が�
 測定サンプルとオフィスの場所は、テスト レポートが完了した 2 ~ 3 分後に表示されます。 詳細については、「ネットワーク接続[Microsoft 365テスト」を参照してください](office-365-network-mac-perf-onboarding-tool.md)。
 
 > [!NOTE]
-> 現時点では、Microsoft 365 管理センター で Microsoft 365 ネットワーク接続にオフィスの場所を追加する場合、LAN サブネットに IPv4 アドレスのみを指定できます。 EgressIP アドレスは IPv4 を使用する必要があります。
+> 現時点では、Microsoft 365 管理センター で Microsoft 365 ネットワーク接続にオフィスの場所を追加する場合、LAN サブネットに IPv4 アドレスのみを指定できます。 Egress IP アドレスは IPv4 を使用する必要があります。
 
 ## <a name="how-do-i-use-this-information"></a>この情報を使用する方法
 
@@ -192,7 +192,7 @@ CSV ファイルでは、検出された都市の場所が userEntered 列に空
    1. **アドレス** (必須): オフィスの物理アドレス
    1. **Latitude** (省略可能): 空白の場合、Bingの参照をマップする場所から設定されます。
    1. **経** 度 (省略可能): 空白の場合、Bingの参照をマップするデータから入力されます。
-   1. **Egress IP アドレス範囲 1 ~ 5** (オプション): 各範囲に対して、回線名と有効な IPv4 CIDR アドレスのスペース区切りリストを入力します。 これらの値は、同じ LAN サブネット IP アドレスを使用する複数のオフィスの場所を区別するために使用されます。 EgressIP アドレス範囲はすべて /24 ネットワーク サイズで、/24 は入力に含まれません。
+   1. **Egress IP アドレス範囲 1 ~ 5** (オプション): 各範囲に対して、回線名と有効な IPv4 CIDR アドレスのスペース区切りリストを入力します。 これらの値は、同じ LAN サブネット IP アドレスを使用する複数のオフィスの場所を区別するために使用されます。 Egress IP アドレス範囲はすべて /24 ネットワーク サイズで、/24 は入力に含まれません。
    1. **LanIps** (必須): このオフィスの場所で使用されている LAN サブネット範囲を一覧表示します。 LAN サブネットの IP には、ネットワーク サイズが /8 ~ /29 の間である CIDR ネットワーク サイズが含まれている必要があります。 複数の LAN サブネット範囲をコンマまたはセミコロンで区切ります。
 
 1. オフィスの場所を追加してファイルを保存したら、完了したフィールドの横にある [参照] アップロードをクリックし、**保存** した CSV ファイルを選択します。
@@ -230,10 +230,10 @@ Microsoft 365サービス フロント ドアは、Microsoft のグローバル 
 
 ## <a name="related-topics"></a>関連項目
 
-[Microsoft 365分析情報 (プレビュー)](office-365-network-mac-perf-insights.md)
+[Microsoft 365の分析情報](office-365-network-mac-perf-insights.md)
 
-[Microsoft 365評価 (プレビュー)](office-365-network-mac-perf-score.md)
+[Microsoft 365ネットワーク評価](office-365-network-mac-perf-score.md)
 
-[Microsoft 365接続テスト ツール (プレビュー)](office-365-network-mac-perf-onboarding-tool.md)
+[Microsoft 365接続テスト ツール](office-365-network-mac-perf-onboarding-tool.md)
 
-[Microsoft 365ネットワーク接続位置情報サービス (プレビュー)](office-365-network-mac-location-services.md)
+[Microsoft 365接続ロケーション サービス](office-365-network-mac-location-services.md)

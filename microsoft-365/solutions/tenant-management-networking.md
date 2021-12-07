@@ -16,14 +16,14 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: テナントへのネットワーク アクセスを最適化Microsoft 365します。
-ms.openlocfilehash: dc31a1e400de0d428076406b100eb0a52c705546
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 963ffb40bbcdcaa4607f594389f84e2cee00cbcc
+ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203701"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61327618"
 ---
-# <a name="step-2-optimal-networking-for-your-microsoft-365-for-enterprise-tenants"></a>手順 2. エンタープライズ テナント向けMicrosoft 365最適なネットワーク
+# <a name="step-2-optimal-networking-for-your-microsoft-365-for-enterprise-tenants"></a>手順 2.  エンタープライズ テナント向けMicrosoft 365最適なネットワーク
 
 Microsoft 365には、Teams や Exchange Online、Microsoft Intune などのクラウド生産性アプリと、Microsoft Azure の多くの ID およびセキュリティ サービスが含まれます。 これらのクラウドベースのサービスはすべて、オンプレミス ネットワークまたはインターネット上の任意の場所にあるクライアント デバイスからの接続のセキュリティ、パフォーマンス、および信頼性に依存します。 
 
@@ -100,8 +100,8 @@ Microsoft 365 クラウドリソースへのアクセスを最適化するには
 
 テナントには、次の 2 つのテナント レベルのネットワーク分析情報が表示されます。
 
-- [Exchangeの問題の影響を受け、サンプリングされた接続を確認する](../enterprise/office-365-network-mac-perf-insights.md#exchange-sampled-connections-impacted-by-connectivity-issues)
-- [SharePointの問題の影響を受け、サンプルされた接続を確認する](../enterprise/office-365-network-mac-perf-insights.md#sharepoint-sampled-connections-impacted-by-connectivity-issues)
+- [Exchangeの問題の影響を受け、サンプリングされた接続を確認する](../enterprise/office-365-network-mac-perf-insights.md#exchange-sampled-connections-affected-by-connectivity-issues)
+- [SharePointの問題の影響を受け、サンプルされた接続を確認する](../enterprise/office-365-network-mac-perf-insights.md#sharepoint-sampled-connections-affected-by-connectivity-issues)
 
 次に、各オフィスの場所に関する特定のネットワーク インサイトを示します。
 

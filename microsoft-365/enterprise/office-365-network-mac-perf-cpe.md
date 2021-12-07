@@ -2,8 +2,8 @@
 title: Microsoft 365ネットワーク ルーティング
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
-ms.date: 11/12/2021
+manager: scotv
+ms.date: 12/06/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365ネットワーク ルーティング
-ms.openlocfilehash: 84b16d696c5c99a7f917e8d1dacc6f1f27626f37
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: f35257520385f8d4287c9a0839cd1e4e0e6b0aa3
+ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064405"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61327678"
 ---
 # <a name="microsoft-365-informed-network-routing"></a>Microsoft 365ネットワーク ルーティング
 
@@ -163,7 +163,7 @@ Microsoft と SD-WAN ソリューション プロバイダー間で交換され�
 
 この場所のデータは、選択した SD-WAN ソリューションと交換され、構成済みの SD-WAN ソリューションの場所が同じ領域内に含めない場合があります。 お客様は、SD-WAN ソリューション プロバイダーと一緒に、実稼働環境の展開前にデータ格納場所の要件を評価する必要があります。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [ネットワーク接続Microsoft 365 管理センター](office-365-network-mac-perf-overview.md)
 
