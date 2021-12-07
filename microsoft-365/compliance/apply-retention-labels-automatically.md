@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なものを保持し、必要でないものを削除するためにラベルを自動的に適用できるように、保持ラベルと自動ラベル付けポリシーを作成します。
-ms.openlocfilehash: 670dc6c4b095ca8d124b80bb0bade0ee3db22a7f
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: 2bfeb19404972d56765871d46b3ae533f9e2759f
+ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064261"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61320616"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>保持ラベルを自動的に適用してコンテンツを保持または削除する
 
@@ -364,7 +364,7 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 
 ## <a name="how-long-it-takes-for-retention-labels-to-take-effect"></a>保持ラベルが有効になるまでの所要時間
 
-機密情報、キーワード、検索可能なプロパティ、またはトレーニング可能な分類子に基づいて保持ラベルを自動適用する場合、保持ラベルを適用するには最大 8 日かかる場合があります。
+機密情報、キーワード、検索可能なプロパティ、またはトレーニング可能な分類子に基づいて保持ラベルを自動適用する場合、保持ラベルが適用されるまでに最大 7 日かかる場合があります。
   
 ![自動適用ラベルが有効になるタイミングの図。](../media/retention-labels-autoapply-timings.png)
 

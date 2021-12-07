@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: コンプライアンス センターに新しいソリューションを追加する場合、フィードバックに基づいて既存の機能を更新する場合、新しく更新されたドキュメントを展開する場合でも、Microsoft 365 を使用すると、変化し続けるコンプライアンス環境の上に立ち続けるのに役立ちます。 今月までの予定を確認します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 738f1ca79f0cbfa304b77198217d31e7bf1a44bb
-ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
+ms.openlocfilehash: d0b8b819f01c0fa41b15d037743dc6ed2395ef71
+ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "61311618"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61320685"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 コンプライアンス センターの新機能
 
@@ -62,7 +62,7 @@ Microsoft 365 コンプライアンス センター に新しいソリューシ�
 - [新しいケース形式が](advanced-ediscovery-new-case-format.md)一般Advanced eDiscoveryリリースされ、"大きな大文字と小文字の形式" から名前が変更された場合は、新しいケース形式を使用します。
 
 ### <a name="retention-and-records-management"></a>保持とレコードの管理
-- ユーザーがラベル付きアイテムを削除できるかどうかをSharePointレコードOneDrive新しいレコード管理設定
+- ユーザーがラベル付きアイテムをSharePoint、OneDriveを制御する新しいレコード管理設定。 以前は、コンテンツを保持するように構成され、アイテムをレコードとしてマークしなかった保持ラベルを使用すると、OneDrive でこのアクションが許可された場合、ユーザーは SharePoint でラベル付きコンテンツを削除する必要がありました。 詳細については、「アイテム保持[がユーザーとユーザーに対してどのように機能SharePoint」をOneDrive。](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive)
 
 ### <a name="sensitive-information-types"></a>機密情報の種類
 

@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3de7b4fafd70c3c11a18f59fb7b4c68e4dfb4eca
-ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
+ms.openlocfilehash: 62bddf15a041ef47df13bbbd036d10727c15d3d6
+ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "61312002"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61320841"
 ---
-# <a name="enable-corelight-data-integration"></a>Corelight データ統合を有効にする
+# <a name="enable-corelight-data-integration"></a>Corelight データ統合
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -61,7 +61,7 @@ Corelight 統合を有効にするには、次の手順を実行する必要が�
 > [!NOTE]
 > 組織内のリソースにアクセスするための Corelight アクセス許可を付与するには、グローバル管理者である必要があります。
 
-1. テナント グローバル管理者として、[:] に移動 <https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=d8be544e-9d1a-4825-a5cb-fb447457f692&response_type=code&sso_reload=true> してアクセス許可を付与します。
+1. テナント グローバル管理者として、このリンクに移動 [してアクセス許可](<https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=d8be544e-9d1a-4825-a5cb-fb447457f692&response_type=code&sso_reload=true>) を付与します。
 2. ポータルに [https://security.microsoft.com](https://security.microsoft.com/) 移動し **、[設定Microsoft 365 Defender]** \> **を** 選択し、テナント ID を **メモします**。 Corelight アプライアンスを構成する場合は、この情報が必要です。
 
 ### <a name="step-3-configure-your-corelight-appliance-to-send-data-to-microsoft-365-defender"></a>手順 3: Corelight アプライアンスを構成して、データをサーバーに送信Microsoft 365 Defender
@@ -72,7 +72,7 @@ Corelight 統合を有効にするには、次の手順を実行する必要が�
 > データの送信をサポートする以前のリリースで有効にするには、最初に次のコマンドを実行する必要があります `corelight-client configuration update --enable.adfiot 1` 。
 
 > [!NOTE]
->ソリューションを動作するには、センサーが Defender クラウド サービスと Corelight クラウド サービスの両方に到達するためにインターネット接続が必要です。
+> ソリューションを動作するには、センサーが Defender クラウド サービスと Corelight クラウド サービスの両方に到達するためにインターネット接続が必要です。
 
 #### <a name="enabling-in-the-corelight-sensor-gui"></a>Corelight センサー GUI での有効化
 

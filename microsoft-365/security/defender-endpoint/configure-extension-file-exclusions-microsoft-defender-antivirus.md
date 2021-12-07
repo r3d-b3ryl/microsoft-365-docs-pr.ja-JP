@@ -13,14 +13,14 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.date: 11/15/2021
+ms.date: 12/06/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 803434179a616ddea718c543da4308f6af77b39e
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: ab6f9d617e2d1ac91aa084286673af49eaeb7e2f
+ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167384"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61320733"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>ファイル拡張子とフォルダーの場所に基づいて除外を構成および検証する
 
@@ -167,7 +167,7 @@ Add-MpPreference -ExclusionExtension ".test"
 > [!TIP]
 > 詳細については、「[PowerShell コマンドレットを使用して Microsoft Defender ウイルス対策を構成および実行する](use-powershell-cmdlets-microsoft-defender-antivirus.md)」および「[Defender ウイルス対策 コマンドレット ](/powershell/module/defender/)」を参照してください。
 
-### <a name="use-windows-management-instruction-wmi-to-configure-file-name-folder-or-file-extension-exclusions"></a>[Windows管理命令 (WMI) を使用して、ファイル名、フォルダー、またはファイル拡張子の除外を構成する
+### <a name="use-windows-management-instrumentation-wmi-to-configure-file-name-folder-or-file-extension-exclusions"></a>ファイルWindows、フォルダー、またはファイル拡張子の除外を構成するには、ファイル管理インストルメンテーション (WMI) を使用します。
 
 次の [プロパティのクラスの Set メソッド、Add メソッド、Remove](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) メソッドMSFT_MpPreference使用します。
 

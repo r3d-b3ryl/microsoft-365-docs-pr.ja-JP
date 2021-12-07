@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 857f723012e88b03728de2b7d99f7c3bf852757b
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 2db9df56a858bd069141c2c9389cf232b7feee7c
+ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61163952"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61320745"
 ---
 # <a name="evaluate-network-protection"></a>ネットワーク保護を評価する
 
@@ -63,7 +63,7 @@ ms.locfileid: "61163952"
 
 ## <a name="review-network-protection-events-in-windows-event-viewer"></a>イベント ビューアーでネットワーク保護イベントWindows確認する
 
-ブロックされているアプリを確認するには、Microsoft-Windows-Windows-Defender/Operational ログでイベント ビューアーを開き、イベント ID 1125 をフィルター処理します。 次の表に、すべてのネットワーク保護イベントを示します。
+ブロックされたアプリを確認するには、Microsoft-Windows-Windows Defender/運用ログでイベント ビューアーを開き、イベント ID 1125 をフィルター処理します。 次の表に、すべてのネットワーク保護イベントを示します。
 
 | イベント ID | 提供/ソース | 説明 |
 |---|---|---|

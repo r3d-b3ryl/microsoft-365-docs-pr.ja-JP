@@ -17,12 +17,12 @@ ms.custom: admindeeplinkDEFENDER
 description: 管理者は、検疫ポリシーを使用して、検疫されたメッセージに対してユーザーが実行できる操作を制御する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 81bb257d809eeb16988118faaced2035b527c491
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 2463e22de4e0d39c7c09b7234d24b33de3a4cae9
+ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283725"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61320721"
 ---
 # <a name="quarantine-policies"></a>検疫ポリシー
 
@@ -30,7 +30,7 @@ Exchange Online Protection (EOP) およびOffice 365 用 Microsoft Defender の�
 
 従来、ユーザーは、メッセージが検疫された理由に基づいて、検疫メッセージに対する対話のレベルを許可または拒否されています。 たとえば、ユーザーはスパム対策フィルターによって検疫されたメッセージをスパムまたはバルクとして表示および解放できますが、高信頼のフィッシングやマルウェアとして検疫されたメッセージを表示または解放できます。
 
-サポート [されている保護機能](#step-2-assign-a-quarantine-policy-to-supported-features)の場合、検疫ポリシーは、検疫および検疫通知で、ユーザーが自分のメッセージ (受信者であるメッセージ) に対して実行できる操作を _指定します_。 検疫通知は、エンド ユーザーのスパム通知に代わるものです。 これらの通知は検疫ポリシーによって制御され、サポートされている保護機能 (スパム対策ポリシーとフィッシング対策ポリシーの評決) に関する検疫済みメッセージに関する情報が含まれます。
+サポート [されている保護機能](#step-2-assign-a-quarantine-policy-to-supported-features)の場合、検疫ポリシーは、検疫および検疫通知で、ユーザーが自分のメッセージ (受信者であるメッセージ) に対して実行できる操作を _指定します_。 [検疫通知](use-spam-notifications-to-release-and-report-quarantined-messages.md) は、エンド ユーザーのスパム通知に代わるものです。 これらの通知は検疫ポリシーによって制御され、サポートされている保護機能 (スパム対策ポリシーとフィッシング対策ポリシーの評決) に関する検疫済みメッセージに関する情報が含まれます。
 
 履歴ユーザー機能を適用する既定の検疫ポリシーは、メッセージを検疫するサポートされている保護機能のアクションに自動的に割り当てられます。 または、カスタム検疫ポリシーを作成し、それらをサポートされている保護機能に割り当て、ユーザーが検疫されたメッセージの種類に対して特定のアクションを実行する許可または防止を行うことができます。
 
@@ -89,7 +89,7 @@ DefaultFullAccessPolicy のアクセス許可を提供しますが、検疫通�
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- [ ] で Microsoft 365 Defenderポータルを開きます <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a> 。 または、[検疫ポリシー] ページに直接 **移動するには、** を開きます <https://security.microsoft.com/quarantinePolicies> 。
+- <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a> で Microsoft 365 Defender ポータルを開きます。 または、[検疫ポリシー] ページに直接 **移動するには、** を開きます <https://security.microsoft.com/quarantinePolicies> 。
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
@@ -407,7 +407,7 @@ Set-AntiPhishPolicy -Identity "Human Resources" -EnableTargetedDomainsProtection
 <New-AntiMalwarePolicy -Name "<Unique name>" | Set-AntiMalwarePolicy -Identity "<Policy name>"> [-QuarantineTag <QuarantineTagName>]
 ```
 
-**注**:
+**注意**:
 
 - 新しいマルウェア対策ポリシーを作成するときに、QuarantineTag パラメーターを使用せずに新しいマルウェア対策ポリシーを作成すると、マルウェア検出の既定の検疫ポリシーが使用されます (AdminOnlyAccessPolicy)。
 
@@ -603,7 +603,7 @@ Set-QuarantinePolicy -Identity "<QuarantinePolicyName>" [Settings]
 
 ## <a name="remove-quarantine-policies-in-the-microsoft-365-defender-portal"></a>セキュリティ ポータルで検疫ポリシーをMicrosoft 365 Defenderする
 
-**注**:
+**注意**:
 
 - AdminOnlyAccessPolicy または DefaultFullAccessPolicy という名前の組み込みの検疫ポリシーを削除できない。 NotificationEnabledPolicy[という名前](#full-access-permissions-and-quarantine-notifications)の組み込みポリシー (持っている場合) とカスタム検疫ポリシーを削除できます。
 - 検疫ポリシーを削除する前に、検疫ポリシーが使用されていないか確認してください。 たとえば、PowerShell で次のコマンドを実行します。

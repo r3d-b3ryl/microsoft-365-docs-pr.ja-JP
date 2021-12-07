@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 934710a77b2d41623be4546c2cac2eb01ed1d400
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 8c1ff743aa6c9c215c3894185a4096c9a35a16e0
+ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168452"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61320829"
 ---
 # <a name="manage-portal-access-using-role-based-access-control"></a>役割ベースのアクセス制御を使用してポータル アクセスを管理する
 
@@ -57,7 +57,7 @@ Defender for Endpoint RBAC は、階層ベースまたは役割ベースの選�
 
 役割ベースのアクセスを実装するには、管理者の役割を定義し、対応するアクセス許可を割り当て、役割に割り当てられたユーザー グループAzure AD割り当てる必要があります。
 
-### <a name="before-you-begin"></a>はじめに
+### <a name="before-you-begin"></a>始める前に
 
 RBAC を使用する前に、アクセス許可を付与できる役割と RBAC をオンにした結果を理解することが重要です。
 

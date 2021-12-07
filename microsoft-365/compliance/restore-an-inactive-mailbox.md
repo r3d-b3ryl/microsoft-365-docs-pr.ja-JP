@@ -15,14 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 97e06a7a-ef9a-4ce8-baea-18b9e20449a3
-description: 非アクティブなメールボックスの内容を既存のメールボックスに復元 (またはマージ) する方法についてOffice 365。
+description: 非アクティブなメールボックスの内容を既存のメールボックスに復元 (またはマージ) する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b57a309ed686f2fe2aaee34fb3b89264a2de9812
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7aeea08b692dc1bfb77a225a27f3dfc1f1df899e
+ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159780"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61320817"
 ---
 # <a name="restore-an-inactive-mailbox"></a>非アクティブなメールボックスを復元する
 
@@ -50,7 +50,7 @@ ms.locfileid: "60159780"
   Get-Mailbox -InactiveMailboxOnly | Format-List Name,DistinguishedName,ExchangeGuid,PrimarySmtpAddress
   ```
 
-  このコマンドによって返される情報を使用して、特定の非アクティブなメールボックスを復元します。
+  このコマンドによって返される情報を使用して、特定の非アクティブなメールボックスを識別して復元します。
 
 - 非アクティブなメールボックスの詳細については、「非アクティブなメールボックス」[を参照Office 365。](inactive-mailboxes-in-office-365.md)
 
@@ -58,19 +58,35 @@ ms.locfileid: "60159780"
 
 **New-MailboxRestoreRequest** コマンドレットを  _SourceMailbox_ と  _TargetMailbox_ パラメーターと共に使用して、非アクティブなメールボックスのコンテンツを既存のメールボックスに復元します。このコマンドレットの使用方法について詳しくは、「 [New-MailboxRestoreRequest](/powershell/module/exchange/new-mailboxrestorerequest)」を参照してください。
 
+非アクティブなメールボックスを復元する前に、非アクティブなメールボックスの LegacyExchangeDN をターゲット メールボックスの X500 プロキシ アドレスとして追加する必要があります。 **New-MailboxRestoreRequest** コマンドレットは、ソース メールボックスとターゲット メールボックスの **LegacyExchangeDN** プロパティの値が同じことを確認するために実行する必要があります。 非アクティブなメールボックスを復元した後、必要に応じて、非アクティブなメールボックスの LegacyExchangeDN をソース メールボックスから削除できます。 LegacyExchangeDN を削除する前に、メールボックスの復元要求が完了するまで待ちます。
+
+非アクティブなメールボックスを既存のメールボックスに復元するには、次の手順を実行します。
+
 1. 非アクティブなメールボックスのプロパティを含む変数を作成します。
 
    ```powershell
-   $InactiveMailbox = Get-Mailbox -InactiveMailboxOnly -Identity <identity of inactive mailbox>
+   $inactiveMailbox = Get-Mailbox -InactiveMailboxOnly -Identity <identity of inactive mailbox>
    ```
 
    > [!IMPORTANT]
    > 上記のコマンドでは、 **DistinguishedName** または **ExchangeGUID** プロパティの値を使用して非アクティブなメールボックスを識別します。これらのプロパティは組織内の各メールボックスに対して一意ですが、アクティブなメールボックスと非アクティブなメールボックスとでプライマリ SMTP アドレスが等しい可能性があります。
 
-2. 非アクティブなメールボックスのコンテンツを既存のメールボックスに復元します。非アクティブなメールボックス (ソース メールボックス) のコンテンツは、既存のメールボックス (ターゲット メールボックス) の対応するフォルダーにマージされます。
+2. 非アクティブなメールボックスの LegacyExchangeDN を表示して、次の手順でターゲット メールボックスにプロキシ アドレスとして追加できます。
 
    ```powershell
-   New-MailboxRestoreRequest -SourceMailbox $InactiveMailbox.DistinguishedName -TargetMailbox newemployee@contoso.com -AllowLegacyDNMismatch
+   $inactiveMailbox.LegacyExchangeDN
+   ```
+
+3. 非アクティブなメールボックスの LegacyExchangeDN を X500 プロキシ アドレスとしてターゲット メールボックスに追加します。
+
+   ```powershell
+   Set-Mailbox <identity of target mailbox> -EmailAddresses @{Add="X500:<LegacyExchangeDN of inactive mailbox>"}
+   ```
+
+4. 非アクティブなメールボックスのコンテンツを既存のメールボックスに復元します。非アクティブなメールボックス (ソース メールボックス) のコンテンツは、既存のメールボックス (ターゲット メールボックス) の対応するフォルダーにマージされます。
+
+   ```powershell
+   New-MailboxRestoreRequest -SourceMailbox $inactiveMailbox.DistinguishedName -TargetMailbox <identity of target mailbox> 
    ```
 
    または、非アクティブなメールボックスのコンテンツの復元先として、ターゲット メールボックス内の最上位フォルダーを指定することもできます。指定したターゲット フォルダーまたはターゲット フォルダー構造がターゲット メールボックス内に存在しない場合は、復元処理中に作成されます。
@@ -78,7 +94,13 @@ ms.locfileid: "60159780"
    次の使用例は、非アクティブなメールボックス内のメールボックス アイテムとサブフォルダーを、ターゲット メールボックスの最上位フォルダー構造内にある「Inactive Mailbox」という名前のフォルダーにコピーします。
 
    ```powershell
-   New-MailboxRestoreRequest -SourceMailbox $InactiveMailbox.DistinguishedName -TargetMailbox newemployee@contoso.com -TargetRootFolder "Inactive Mailbox" -AllowLegacyDNMismatch
+   New-MailboxRestoreRequest -SourceMailbox $InactiveMailbox.DistinguishedName -TargetMailbox <identity of target mailbox> -TargetRootFolder "Inactive Mailbox"
+   ```
+
+5. 復元要求が完了したら、必要に応じて、非アクティブなメールボックスの LegacyExchangeDN をターゲット メールボックスから削除できます。 LegacyExchangeDN を非アクティブなメールボックスから離しても、ターゲット メールボックスには影響しません。
+
+   ```powershell
+   Set-Mailbox <identity of target mailbox> -EmailAddresses @{Remove="X500:<LegacyExchangeDN of inactive mailbox>"}
    ```
 
 ## <a name="restore-the-archive-from-an-inactive-mailbox"></a>非アクティブなメールボックスからアーカイブを復元する
@@ -88,21 +110,39 @@ ms.locfileid: "60159780"
 1. 非アクティブなメールボックスのプロパティを含む変数を作成します。
 
    ```powershell
-   $InactiveMailbox = Get-Mailbox -InactiveMailboxOnly -Identity <identity of inactive mailbox>
+   $inactiveMailbox = Get-Mailbox -InactiveMailboxOnly -Identity <identity of inactive mailbox>
    ```
 
    > [!NOTE]
    > 上記のコマンドでは、 **DistinguishedName** または **ExchangeGUID** プロパティの値を使用して非アクティブなメールボックスを識別します。これらのプロパティは組織内の各メールボックスに対して一意ですが、アクティブなメールボックスと非アクティブなメールボックスとでプライマリ SMTP アドレスが等しい可能性があります。
 
-2. アーカイブのコンテンツを、非アクティブなメールボックス (ソース アーカイブ) から既存のメールボックスのアーカイブ (ターゲット アーカイブ) に復元します。この例では、ソース アーカイブのコンテンツが、ターゲット メールボックスのアーカイブ内の「Inactive Mailbox Archive」という名前のフォルダーにコピーされます。
+2. 非アクティブなメールボックスの LegacyExchangeDN を表示して、次の手順でターゲット メールボックスにプロキシ アドレスとして追加できます。
 
    ```powershell
-   New-MailboxRestoreRequest -SourceMailbox $InactiveMailbox.DistinguishedName -SourceIsArchive -TargetMailbox newemployee@contoso.com -TargetIsArchive -TargetRootFolder "Inactive Mailbox Archive" -AllowLegacyDNMismatch
+   $inactiveMailbox.LegacyExchangeDN
+   ```
+
+3. 非アクティブなメールボックスの LegacyExchangeDN を X500 プロキシ アドレスとしてターゲット メールボックスに追加します。
+
+   ```powershell
+   Set-Mailbox <identity of target mailbox> -EmailAddresses @{Add="X500:<LegacyExchangeDN of inactive mailbox>"}
+   ```
+
+4. アーカイブのコンテンツを、非アクティブなメールボックス (ソース アーカイブ) から既存のメールボックスのアーカイブ (ターゲット アーカイブ) に復元します。この例では、ソース アーカイブのコンテンツが、ターゲット メールボックスのアーカイブ内の「Inactive Mailbox Archive」という名前のフォルダーにコピーされます。
+
+   ```powershell
+   New-MailboxRestoreRequest -SourceMailbox $InactiveMailbox.DistinguishedName -SourceIsArchive -TargetMailbox <identity of target mailbox> -TargetIsArchive -TargetRootFolder "Inactive Mailbox Archive"
+   ```
+
+5. 復元要求が完了したら、必要に応じて、非アクティブなメールボックスの LegacyExchangeDN をターゲット メールボックスから削除できます。 LegacyExchangeDN を非アクティブなメールボックスから離しても、ターゲット メールボックスには影響しません。
+
+   ```powershell
+   Set-Mailbox <identity of target mailbox> -EmailAddresses @{Remove="X500:<LegacyExchangeDN of inactive mailbox>"}
    ```
 
 ## <a name="more-information"></a>詳細情報
 
-- **非アクティブなメールボックスを回復することと復元することとの主な違い。** When you recover an inactive mailbox, the mailbox is basically converted to a new mailbox, the contents and folder structure of the inactive mailbox are retained, and the mailbox is linked to a new user account. After it's recovered, the inactive mailbox no longer exists, and any changes made to the content in the new mailbox will affect the content that was originally on hold in the inactive mailbox. Conversely, when you restore an inactive mailbox, the contents are merely copied to another mailbox. The inactive mailbox is preserved and remains an inactive mailbox. Any changes made to the content in the target mailbox won't affect the original content held in the inactive mailbox. 非アクティブなメールボックスは、コンテンツ検索ツールを使用[](content-search.md)して検索したり、その内容を別のメールボックスに復元したり、後で回復または削除することができます。
+- **非アクティブなメールボックスを回復することと復元することとの主な違い。** 非アクティブなメールボックスを回復すると、メールボックスは新しいメールボックスに変換されます。 非アクティブなメールボックスの内容とフォルダー構造は保持され、メールボックスは新しいユーザー アカウントにリンクされます。 After it's recovered, the inactive mailbox no longer exists, and any changes made to the content in the new mailbox will affect the content that was originally on hold in the inactive mailbox. Conversely, when you restore an inactive mailbox, the contents are merely copied to another mailbox. The inactive mailbox is preserved and remains an inactive mailbox. Any changes made to the content in the target mailbox won't affect the original content held in the inactive mailbox. 非アクティブなメールボックスは、コンテンツ検索ツールを使用[](content-search.md)して検索したり、その内容を別のメールボックスに復元したり、後で回復または削除することができます。
 
 - **非アクティブなメールボックスを見つける方法。** 組織内の非アクティブなメールボックスの一覧を取得して、非アクティブなメールボックスを復元するために役立つ情報を表示するには、次のコマンドを実行できます。
 
@@ -110,22 +150,20 @@ ms.locfileid: "60159780"
   Get-Mailbox -InactiveMailboxOnly | Format-List Name,PrimarySMTPAddress,DistinguishedName,ExchangeGUID,LegacyExchangeDN,ArchiveStatus
   ```
 
-- **非アクティブなメールボックス コンテンツを保持するにはMicrosoft 365保持ポリシーを使用します。** 非アクティブなメールボックスの復元後に状態を保持する場合は、非アクティブなメールボックスを復元する前に、[](create-a-litigation-hold.md)ターゲット メールボックスを訴訟ホールドに配置するか[、Microsoft 365](retention.md)アイテム保持ポリシーを適用できます。 これにより、非アクティブなメールボックスのアイテムがターゲット メールボックスに復元された後に、完全に削除されることがなくなります。
+- **非アクティブなMicrosoft 365保持ポリシーまたは訴訟ホールドを使用するか、非アクティブなメールボックス コンテンツを保持します。** 非アクティブなメールボックスの復元後に状態を保持する場合は、Microsoft 365 アイテム保持ポリシーをターゲット[](retention.md)メールボックスに適用するか、非アクティブなメールボックスを復元する前に[訴訟ホールド](create-a-litigation-hold.md)にターゲット メールボックスを配置できます。 これにより、非アクティブなメールボックスのアイテムがターゲット メールボックスに復元された後に、完全に削除されることがなくなります。
 
 - **非アクティブなメールボックスを復元する前に、ターゲット メールボックスでの保存機能を有効にする。** 非アクティブなメールボックスのメールボックス アイテムは古くなっている可能性があるため、非アクティブなメールボックスを復元する前に、ターゲット メールボックスでの保存機能を有効にすることを検討できます。 メールボックスでの保存機能を有効にすると、保存機能が削除されるかまたは保存期間が期限切れになるまで、それに割り当てられた保持ポリシーは処理されなくなります。 これにより、ターゲット メールボックスの所有者が非アクティブなメールボックスからの古いメッセージを処理するための時間ができます。 そうしないと、ターゲット メールボックスに構成された保存期間の設定に基づいて、期限切れになっている古いアイテムが保持ポリシーによって削除される (またはアーカイブ メールボックスが使用可能な場合にはアイテムがそこに移動される) 可能性があります。 詳細については、「メールボックスを保持[の保持に保持する」を参照](/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold)Exchange Online。
-
-- **AllowLegacyDNMismatch スイッチの機能。** 非アクティブなメールボックスを復元する前述の例では、 **AllowLegacyDNMismatch** スイッチの使用によって、非アクティブなメールボックスを別のターゲット メールボックスに復元できるようになります。一般的な復元シナリオでは、ソース メールボックスとターゲット メールボックスが同じメールボックスのときに、コンテンツを復元することが目標となります。そのため既定では、 **New-MailboxRestoreRequest** コマンドレットにより、ソース メールボックスとターゲット メールボックスの **LegacyExchangeDN** プロパティの値が同じであることが確認されます。これにより、ソース メールボックスが誤って正しくないターゲット メールボックスに復元されることを防止します。 **AllowLegacyDNMismatch** スイッチを使用しないで非アクティブなメールボックスの復元を試行すると、ソース メールボックスとターゲット メールボックスで **LegacyExchangeDN** プロパティの値が異なる場合に、コマンドは失敗する可能性があります。
 
 - **New-MailboxRestoreRequest コマンドレットと共に他のパラメーターを使用して、非アクティブなメールボックスのさまざまな復元シナリオを実装できます。** たとえば、次のコマンドを実行して、非アクティブなメールボックスからターゲット メールボックスのプライマリ メールボックスにアーカイブを復元できます。
 
   ```powershell
-  New-MailboxRestoreRequest -SourceMailbox <inactive mailbox> -SourceIsArchive -TargetMailbox <target mailbox> -TargetRootFolder "Inactive Mailbox Archive" -AllowLegacyDNMismatch
+  New-MailboxRestoreRequest -SourceMailbox <inactive mailbox> -SourceIsArchive -TargetMailbox <target mailbox> -TargetRootFolder "Inactive Mailbox Archive"
   ```
 
   また次のコマンドを実行して、非アクティブなプライマリ メールボックスをターゲット メールボックスのアーカイブに復元することもできます。
 
   ```powershell
-  New-MailboxRestoreRequest -SourceMailbox <inactive mailbox> -TargetMailbox <target mailbox> -TargetIsArchive -TargetRootFolder "Inactive Mailbox" -AllowLegacyDNMismatch
+  New-MailboxRestoreRequest -SourceMailbox <inactive mailbox> -TargetMailbox <target mailbox> -TargetIsArchive -TargetRootFolder "Inactive Mailbox"
   ```
 
 - **TargetRootFolder パラメーターの機能。** 前述のように、 **TargetRootFolder** パラメーターを使用して、非アクティブなメールボックスのコンテンツを復元するためにターゲット メールボックス内のフォルダー構造の最上位フォルダー ( ルートとも呼ばれる) を指定できます。このパラメーターを使用しない場合、非アクティブなメールボックスのメールボックス アイテムはターゲット メールボックスの対応する既定のフォルダーにマージされ、カスタム フォルダーがターゲット メールボックスのルートに再作成されます。次の図は、 **TargetRootFolder** パラメーターを使用しない場合と使用する場合の、これらの相違点を強調しています。

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a5e62e982603ef62d4b2d0c8d0edf21223e3b98c
-ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
+ms.openlocfilehash: 540273109d0168e14b2f87b328b57f65d53b4c22
+ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "61312011"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61320757"
 ---
 # <a name="enable-microsoft-defender-for-iot-integration"></a>Microsoft Defender for IoT 統合を有効にする
 
@@ -36,7 +36,7 @@ ms.locfileid: "61312011"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
-Microsoft Defender for Endpoint は、Microsoft Defender for IoT と統合できます。 この統合により、Microsoft Defender for IoT が提供するエージェントレス監視機能を使用して、デバイスの検出機能が拡張されます。 これにより、音声インターネット プロトコル (VoIP) デバイス、プリンター、カメラなどの IT ネットワークに接続されているエンタープライズ IoT デバイスをセキュリティで保護できます。 これにより、組織は、すべての IoT および運用テクノロジ (OT) インフラストラクチャをセキュリティで保護する単一の統合ソリューションを利用できます。 詳細については [、「Microsoft Defender for IoT」を参照してください](/azure/defender-for-iot/organizations/overview)。
+Microsoft Defender for Endpoint は、Microsoft Defender for IoT と統合できます。 この統合により、Microsoft Defender for IoT が提供するエージェントレス監視機能を使用して、デバイスの検出機能が拡張されます。 これにより、音声インターネット プロトコル (VoIP) デバイス、プリンター、カメラなどの IT ネットワークに接続されているエンタープライズ IoT デバイスをセキュリティで保護できます。 これにより、組織は、すべての IoT および運用テクノロジ (OT) インフラストラクチャをセキュリティで保護する単一の統合ソリューションを利用できます。 詳細については[、「IoT ネットワークEnterpriseを参照してください](/azure/defender-for-iot/organizations/overview-eiot.md)。
 
 この統合が有効になると、Microsoft Defender for Endpoint は可視性を高め、ネットワーク内の IoT デバイスを見つけ、特定し、セキュリティ保護できます。 Microsoft Defender for IoT または Microsoft Defender for Endpoint によって検出された IoT デバイスは、両方のポータル間で自動的に同期されます。 これにより、他の IT デバイス (ワークステーション、サーバー、モバイル) と共に、完全な OT/IoT インベントリの単一の統合ビューが提供されます。
 

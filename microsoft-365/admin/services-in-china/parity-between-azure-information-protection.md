@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 description: 21Vianet が運用する 21Vianet Office 365 Azure Information Protection (AIP) の詳細と、中国の顧客向け構成方法について説明します。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 3235bf77ec8cd7be96910614bdde41fb60f9f556
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5bf93be6c802dffac9a9f6c2f039364de99539ad
+ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199239"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61320805"
 ---
 # <a name="azure-information-protection-support-for-office-365-operated-by-21vianet"></a>21Vianet がOffice 365 Azure Information Protection のサポート
 
@@ -84,9 +84,17 @@ ms.locfileid: "60199239"
 
 ### <a name="step-2-add-the-microsoft-information-protection-sync-service-service-principal"></a>手順 2: 同期サービス Microsoft Information Protectionを追加する
 
-同期 **Microsoft Information Protectionサービス** プリンシパルは、Azure China テナントでは既定では使用できません。Azure Information Protection には必須です。
+同期 **Microsoft Information Protectionサービス** プリンシパルは、Azure China テナントでは既定では使用できません。Azure Information Protection には必須です。 Azure Az PowerShell モジュールを使用して、このサービス プリンシパルを手動で作成します。
 
-1. [New-AzADServicePrincipal](/powershell/module/az.resources/new-azadserviceprincipal)コマンドレットと同期サービスのアプリケーション ID を使用して、このサービス `870c4f2e-85b6-4d43-bdda-6ed9a579b725` プリンシパルMicrosoft Information Protection作成します。 
+1. Azure Az モジュールがインストールされていない場合は、それをインストールするか、Azure Az モジュールがプレインストールされているリソース (Azure Cloud Shell など) [を使用します](/azure/cloud-shell/overview)。 詳細については [、「Azure Az PowerShell モジュールのインストール」を参照してください](/powershell/azure/install-az-ps)。
+
+1.  Connect-AzAccount コマンドレットと[環境Connectを](/powershell/module/az.accounts/Connect-AzAccount)使用してサービスに `azurechinacloud` アクセスします。
+
+    ```powershell
+    Connect-azacount -environmentname azurechinacloud
+    ```
+
+1. [New-AzADServicePrincipal](/powershell/module/az.resources/new-azadserviceprincipal)コマンドレットと同期サービスのアプリケーション Microsoft Information Protection ID を使用して、Microsoft Information Protection Sync Service サービス プリンシパルを手動で `870c4f2e-85b6-4d43-bdda-6ed9a579b725` 作成します。
 
     ```powershell 
     New-AzADServicePrincipal -ApplicationId 870c4f2e-85b6-4d43-bdda-6ed9a579b725
@@ -189,25 +197,25 @@ AIP オンプレミス スキャナーをインストールして、ネットワ
 
     インストールされているサービスの名前は **Azure Information Protection Scanner** で、作成したスキャナー サービス アカウントを使用して実行するように構成されています。
 
-1. スキャナーで使用する Azure トークンを取得します。 Azure ADトークンを使用すると、スキャナーは Azure Information Protection サービスに対して認証を行い、スキャナーを非対話的に実行できます。 
+1. スキャナーで使用する Azure トークンを取得します。 このAzure ADを使用すると、スキャナーは Azure Information Protection サービスに対して認証を行い、スキャナーを非対話的に実行できます。 
 
-    1. Azure portal を開き、Azure ADアプリケーションを作成して、認証用のアクセス トークンを指定します。 詳細については [、「Azure Information Protection 用に対話](/azure/information-protection/rms-client/clientv2-admin-guide-powershell#how-to-label-files-non-interactively-for-azure-information-protection)的にファイルにラベルを付ける方法」を参照してください。
+    1. Azure portal を開き、認証Azure ADアクセス トークンを指定するアプリケーションを作成します。 詳細については [、「Azure Information Protection 用に対話](/azure/information-protection/rms-client/clientv2-admin-guide-powershell#how-to-label-files-non-interactively-for-azure-information-protection)的にファイルにラベルを付ける方法」を参照してください。
     
         > [!TIP]
-        > [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication)コマンド用に Azure AD アプリケーションを作成および構成する場合、[API のアクセス許可の要求] ウィンドウには **、[Microsoft** **API]** タブではなく [組織で使用する API] タブが表示されます。組織が **使用する API を選択し、[Azure** **Rights Management Services] を選択します**。 
+        > [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication)コマンド用に Azure AD アプリケーションを作成および構成する場合、[API のアクセス許可の要求] ウィンドウには **、[Microsoft** API] タブではなく [組織で使用する **API]** タブが表示されます。組織が使用する API を選択し **、[Azure Rights Management Services]** を選択します。 
         >
 
     1. Windows サーバー コンピューターから、スキャナー サービス アカウントにインストールに対するローカルログオン権限が付与されている場合は、このアカウントでサインインし、PowerShell セッションを開始します。 
     
         スキャナー サービス アカウントにインストールに対してローカルにログオンする権限を付与できない場合は [、「Azure Information Protection](/azure/information-protection/rms-client/clientv2-admin-guide-powershell#how-to-label-files-non-interactively-for-azure-information-protection)用に対話的にファイルにラベルを付ける方法」の説明に従って [、Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication)を使用して *OnBehalfOf* パラメーターを使用します。
 
-    1. [Set-AIPAuthentication を実行](/powershell/module/azureinformationprotection/set-aipauthentication)し、Azure アプリケーションからコピーされた値ADします。
+    1. [Set-AIPAuthentication を実行](/powershell/module/azureinformationprotection/set-aipauthentication)し、アプリケーションからコピーされた値Azure ADします。
 
       ```PowerShell
       Set-AIPAuthentication -AppId <ID of the registered app> -AppSecret <client secret sting> -TenantId <your tenant ID> -DelegatedUser <Azure AD account>
       ```
 
-      次に例を示します。
+      例:
 
       ```PowerShell
       $pscreds = Get-Credential CONTOSO\scanner
@@ -215,9 +223,9 @@ AIP オンプレミス スキャナーをインストールして、ネットワ
       Acquired application access token on behalf of CONTOSO\scanner.
       ```
 
-    これで、スキャナーに Azure サーバーに対する認証トークンがAD。 このトークンは、Azure アプリの Web アプリ **/API** クライアント シークレットの構成に従って、1 年、2 年、または 2 年間有効AD。 トークンの有効期限が切れたら、この手順を繰り返す必要があります。
+    これで、スキャナーに認証用のトークンがAzure AD。 このトークンは、Web アプリ **/API** クライアント シークレットの構成に従って、1 年、2 年、または 2 年間有効Azure AD。 トークンの有効期限が切れたら、この手順を繰り返す必要があります。
 
-1. [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/set-aipscannerconfiguration)コマンドレットを実行して、スキャナーをオフライン モードで機能に設定します。 次を実行します: 
+1. [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/set-aipscannerconfiguration)コマンドレットを実行して、スキャナーをオフライン モードで機能に設定します。 次のコマンドを実行します。
 
     ```powershell
     Set-AIPScannerConfiguration -OnlineConfiguration Off
@@ -225,7 +233,7 @@ AIP オンプレミス スキャナーをインストールして、ネットワ
 
 1. [Set-AIPScannerContentScanJob](/powershell/module/azureinformationprotection/set-aipscannercontentscanjob)コマンドレットを実行して、既定のコンテンツ スキャン ジョブを作成します。
 
-    **Set-AIPScannerContentScanJob** コマンドレットで必要なパラメーターは、強制 **のみです**。 ただし、この時点でコンテンツ スキャン ジョブの他の設定を定義することもできます。 次に例を示します。
+    **Set-AIPScannerContentScanJob** コマンドレットで必要なパラメーターは、強制 **のみです**。 ただし、この時点でコンテンツ スキャン ジョブの他の設定を定義することもできます。 例:
 
     ```powershell
     Set-AIPScannerContentScanJob -Schedule Manual -DiscoverInformationTypes PolicyOnly -Enforce Off -DefaultLabelType PolicyDefault -RelabelFiles Off -PreserveFileDetails On -IncludeFileTypes '' -ExcludeFileTypes '.msg,.tmp' -DefaultOwner <account running the scanner>

@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a827330541dba24dff54b59cf8c14b1f58162daa
-ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
+ms.openlocfilehash: e32880b46b04ce9ee755c09b6cbff2e3e484f4ff
+ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "61311892"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61320853"
 ---
 # <a name="device-discovery-overview"></a>デバイス検出の概要
 
@@ -99,7 +99,7 @@ Defender for Endpoint にはネットワーク デバイス自体にセンサー
 
 完全な OT/IOT アセット インベントリ Microsoft Defender for Endpoint を見つけ、特定し、セキュリティ保護するのに十分な可視性を得るという課題に対処するために、次の統合がサポートされています。
 
-- **Corelight**: Microsoft は Corelight と提携して、Corelight ネットワーク アプライアンスからデータを受信しました。 これにより、Microsoft 365 Defenderデバイスや外部ネットワークとの通信など、管理されていないデバイスのネットワーク アクティビティの可視性が向上します。 詳細については、「Enable [Corelight integration 」を参照してください](corelight-integration.md)。
+- **Corelight**: Microsoft は Corelight と提携して、Corelight ネットワーク アプライアンスからデータを受信しました。 これにより、Microsoft 365 Defenderデバイスや外部ネットワークとの通信など、管理されていないデバイスのネットワーク アクティビティの可視性が向上します。 詳細については、「Enable [Corelight data integration 」を参照してください](corelight-integration.md)。
 
 - **Microsoft Defender for IoT:** この統合は、Microsoft Defender for Endpoint のデバイス検出機能と、Microsoft Defender for IoT のエージェントレス監視機能を組み合わせ、IT ネットワークに接続されているエンタープライズ IoT デバイス (VoIP、プリンター、スマートテレビなど) をセキュリティで保護します。 詳細については [、「Enable Microsoft Defender for IoT integration」を参照してください](enable-microsoft-defender-for-iot-integration.md)。
 
