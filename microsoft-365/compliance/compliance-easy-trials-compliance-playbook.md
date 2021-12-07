@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 コンプライアンス ソリューション試用版プレイブック。
-ms.openlocfilehash: ca791a4be3c199527bae3b75c0b529198cef9f4a
-ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
+ms.openlocfilehash: 83e78759bb98ddf623d5a39866e2c812964225d5
+ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/22/2021
-ms.locfileid: "61137149"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61320793"
 ---
 # <a name="trial-playbook-microsoft-365-compliance-solutions"></a>試用版プレイブック: Microsoft 365 コンプライアンス ソリューション
 
@@ -425,6 +425,8 @@ Insider リスク管理分析では、インサイダー リスク ポリシー�
 データの囲い込み、データ転送、データの過剰共有などのプライバシー リスクに対してプロアクティブに特定して保護し、組織が大規模な件名要求を自動化し管理するサポートを行います。
 
 [Microsoft 365 のプライバシー管理に関する詳細情報](/privacy/solutions/privacymanagement/privacy-management)。
+
+[試用版プレイブック: Microsoft 365のプライバシーマネージメント](/privacy/solutions/privacymanagement/privacy-management-trial-playbook)
 
 ## <a name="additional-resources"></a>その他のリソース
 

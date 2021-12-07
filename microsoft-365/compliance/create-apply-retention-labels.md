@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ラベルを作成して発行し、それをアプリに適用することで、必要なものを保持し、必要でないものを削除する手順。
-ms.openlocfilehash: 3fe6e976d5b71bc7534eaadf2e45ac076dc5d978
-ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
+ms.openlocfilehash: 8b923085f0832db193588cdb60ef91a2b66ce229
+ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61240866"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61320703"
 ---
 # <a name="create-retention-labels-and-apply-them-in-apps"></a>保持ラベルを作成してアプリに適用する
 
@@ -120,13 +120,13 @@ SharePoint や Outlook などのアプリでユーザーが適用できるよう
 
 ## <a name="when-retention-labels-become-available-to-apply"></a>保持ラベルが適用できるようになったとき
 
-OneDrive と SharePoint の場所の場合、通常、発行されたラベルは、ユーザーが 1 日または 2 日以内に選択できるように表示されます。 ただし、最大 8 日間かかります。
+OneDrive と SharePoint の場所の場合、通常、発行されたラベルは、ユーザーが 1 日または 2 日以内に選択できるように表示されます。 ただし、最大 7 日かかります。
 
-Exchange とMicrosoft 365 グループの場所では、Outlook のユーザーに発行済みの保持ラベルが表示されるまでに最大 8 日かかる場合があり、メールボックスには少なくとも 10 MB のデータが含まれている必要があります。
+Exchange とMicrosoft 365 グループの場所では、公開された保持ラベルが Outlook のユーザーに表示されるまでに最大 7 日かかる場合があり、メールボックスには少なくとも 10 MB のデータが含まれている必要があります。
 
 ![発行されたラベルが有効になるタイミングの図。](../media/retention-labels-published-timings.png)
 
-ラベルが 8 日後に表示されない場合は、コンプライアンス センターの **[ラベル ポリシー]** ページからラベル ポリシーを選択して、ラベル ポリシーの **状態** を確認します。 **オフ (エラー)** の状態が表示され、場所の詳細に、ポリシーの展開 (SharePoint の場合) またはポリシーの再展開 (OneDrive の場合) に予想よりも時間がかかっているというメッセージが表示される場合は、[Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell コマンドを実行して、ポリシーの配布を再試行してください:
+ラベルが 7 日経っても表示されない場合は、コンプライアンス センターの **[ラベル ポリシー]** ページから選択して、ラベル ポリシーの **状態** を確認します。 **オフ (エラー)** の状態が表示され、場所の詳細に、ポリシーの展開 (SharePoint の場合) またはポリシーの再展開 (OneDrive の場合) に予想よりも時間がかかっているというメッセージが表示される場合は、[Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell コマンドを実行して、ポリシーの配布を再試行してください:
 
 1. [セキュリティ/コンプライアンス センター PowerShell に接続する](/powershell/exchange/connect-to-scc-powershell)
 
