@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーを使用して、ユーザーがメール、ドキュメント、および会話で生成するコンテンツを効率的に制御します。 必要なものを保持し、不要なものを取り除きます。
-ms.openlocfilehash: 961390fab02344d38ddeb6889f8aec2c8a779d46
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: d3b8ab3fac4156b638a0508bbac0bebfc2dfdee6
+ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60757015"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61327550"
 ---
 # <a name="create-and-configure-retention-policies"></a>アイテム保持ポリシーを作成して構成する
 
@@ -210,3 +210,25 @@ SharePoint サイトや OneDrive アカウントに適用されているアイ�
     削除せずにコンテンツを保持するだけのアイテム保持ポリシーを作成し、指定した期間が経過した後に保持してから削除するか、指定した期間が経過した後にコンテンツを削除するだけです。 詳細については、このページの「[コンテンツを保持および削除するための設定](retention-settings.md#settings-for-retaining-and-deleting-content)」を参照してください。
 
 6. 構成を完了して、設定を保存します。
+
+## <a name="how-long-it-takes-for-retention-policies-to-take-effect"></a>アイテム保持ポリシーが有効になるまでの所要時間
+
+アイテム保持ポリシーを作成して送信すると、アイテム保持ポリシーが適用されるまでに最大 7 日かかる場合があります。
+  
+![アイテム保持ポリシーが有効になるタイミングの図。](../media/retention-policy-timings.png)
+
+まず、アイテム保持ポリシーを選択した場所に配布し、コンテンツに適用する必要があります。 保持ポリシーの配布状態は、コンプライアンス センターの **Retention ポリシー** ページから選択することでいつでも確認できます。 ポップアウト ウィンドウに、**オフ (エラー)** の状態が表示され、場所の詳細に、ポリシーの展開 (SharePoint の場合) またはポリシーの再展開 (OneDrive の場合) に予想よりも時間がかかっているというメッセージが表示される場合は、[Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell コマンドを実行して、ポリシーの配布を再試行してください:
+
+1. [セキュリティ/コンプライアンス センターの PowerShell に接続する](/powershell/exchange/connect-to-scc-powershell)。
+
+2. 次のコマンドを実行します。
+    
+    ```PowerShell
+    Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
+    ```
+
+## <a name="updating-retention-policies"></a>アイテム保持ポリシーの更新
+
+アイテム保持ポリシーの設定がコンテンツに既に適用されている場合、ポリシーに対する構成の変更は、新しく識別されたコンテンツに加えて、このコンテンツに自動的に適用されます。
+
+ポリシーを作成して保存した後は、一部の設定を変更できません。これには、アイテム保持ポリシーの名前、スコープの種類 (アダプティブまたは静的)、保持期間を除く保持設定が含まれます。
