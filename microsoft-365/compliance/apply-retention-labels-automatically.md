@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なものを保持し、必要でないものを削除するためにラベルを自動的に適用できるように、保持ラベルと自動ラベル付けポリシーを作成します。
-ms.openlocfilehash: 2bfeb19404972d56765871d46b3ae533f9e2759f
-ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
+ms.openlocfilehash: 755050de00bdffdd9169325c3a0e56b3eec7cede
+ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/07/2021
-ms.locfileid: "61320616"
+ms.locfileid: "61327582"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>保持ラベルを自動的に適用してコンテンツを保持または削除する
 
@@ -385,7 +385,7 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 クラウド添付ファイル用に構成された保持ラベル ポリシーを自動適用する場合: このポリシーは既存のファイルではなく新しく共有されたファイルに適用されるため、選択したラベルとポリシーに対する構成の変更は、新しく共有されたコンテンツにのみ自動的に適用されます。
 
 ラベルやポリシーを作成して保存した後には変更できない設定があり、それらは以下のものを含みます。
-- 保持ラベル名とアイテム保持ポリシー名および保持期間を除く保持設定。 ただし、アイテムにラベルが付けられた時期に基づいて保持期間が設定されている場合、保持期間を変更することはできません。
+- 保持ラベルとそのポリシーの名前、範囲の種類 (アダプティブまたは静的)、保持期間を除く保持設定。 ただし、アイテムにラベルが付けられた時期に基づいて保持期間が設定されている場合、保持期間を変更することはできません。
 - アイテムをレコードとしてマークするオプション。
 
 ### <a name="deleting-retention-labels"></a>保持ラベルの削除
