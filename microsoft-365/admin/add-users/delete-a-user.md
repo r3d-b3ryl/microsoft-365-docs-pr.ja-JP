@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: ユーザー アカウントを削除する方法と、ユーザーの電子メールとコンテンツをOneDriveする方法、および製品ライセンスを保持するかどうかを説明します。
-ms.openlocfilehash: 852ebe9a99718be9bf025fbc8347bc2ca7854cc2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 462e9bcec4dac7e9d708618777ea58fb5d182473
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60161824"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370610"
 ---
 # <a name="delete-a-user-from-your-organization"></a>組織からユーザーを削除する
   
@@ -35,7 +35,7 @@ ms.locfileid: "60161824"
 
 - ユーザー アカウントを削除できるのは、職場や学校の [Microsoft 365 グローバル管理者](about-admin-roles.md)またはユーザー管理のアクセス許可を持っている管理者のみです。
 - 30 日後にユーザーのデータが永久に削除されるまではアカウントを[復元](restore-user.md)できます。
-- ユーザーのデータを保持する場合OneDrive別の場所に移動します。 アカウントを削除した後、最大 30 日間データを移動することもできます。 「 [元ユーザーのデータにアクセスしてバックアップを作成する](get-access-to-and-back-up-a-former-user-s-data.md)」を参照してください。 ファイルを移動するSharePoint必要があります。引き続きアクセスできます。
+- ユーザーのデータを保持する場合OneDrive別の場所に移動します。 アカウントを削除した後、最大 30 日間データを移動することもできます。 「 [元ユーザーのデータにアクセスしてバックアップを作成する](get-access-to-and-back-up-a-former-user-s-data.md)」を参照してください。 ファイルを移動する必要はありませんSharePointファイルにアクセスできます。
 - ユーザーのメールを保持する場合は、アカウントを削除する **前に**、メールを別の場所に移動します。アカウントを既に削除した場合は、30 日以内であれば、復元してメール データを移動し、アカウントを削除できます。「[元ユーザーのデータにアクセスしてバックアップを作成する](get-access-to-and-back-up-a-former-user-s-data.md)」を参照してください。
 - Office 365 Enterprise E3 などのエンタープライズ サブスクリプションがある場合、削除したユーザー アカウントのメールボックスを *非アクティブなメールボックス* に変更することで、そのメールボックスのデータを保持できます。 詳細については、「[Exchange Online の非アクティブなメールボックスを管理する](../../compliance/inactive-mailboxes-in-office-365.md)」を参照してください。
 
@@ -64,12 +64,6 @@ ms.locfileid: "60161824"
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
- 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
  1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。
@@ -86,12 +80,6 @@ ms.locfileid: "60161824"
 ::: moniker range="o365-worldwide"
 
 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。  
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
 ::: moniker-end
 
@@ -112,12 +100,6 @@ ms.locfileid: "60161824"
 ::: moniker range="o365-worldwide"
 
 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[お使いの製品]</a> ページの順に移動します。
-
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"

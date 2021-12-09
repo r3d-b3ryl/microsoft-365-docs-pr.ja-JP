@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: d7941332-8aec-4e5e-87e8-92073ce73dc5
 ROBOTS: NOINDEX
 description: 組織のユーザー Power BIこのビジネス分析サービスを使用する方法について詳しくは、こちらをご覧ください。
-ms.openlocfilehash: 4b9a8df06cbb486afa878054c24d820bcb2af2e1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f89f03470561cd9c8dcddf4e0bbde60d4d9d4fa2
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190115"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370526"
 ---
 # <a name="power-bi-in-your-organization"></a>組織内の Power BI
 
@@ -84,12 +84,6 @@ Microsoft によってテナントが作成されたら、次の手順に従っ�
 ::: moniker range="o365-worldwide"
 
 3. <a href="https://admin.microsoft.com" target="_blank">https://admin.microsoft.com</a> にアクセスします。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-3. <a href="https://portal.office.de" target="_blank">https://portal.office.de</a> に移動します。
 
 ::: moniker-end
 
@@ -170,13 +164,7 @@ To allow your existing users to sign up for Power BI, run the opposite command a
   
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> の順に選択します。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
- 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
 ::: moniker-end
 
@@ -190,7 +178,7 @@ To allow your existing users to sign up for Power BI, run the opposite command a
 
 3. [ライセンスと **アプリ] タブで****、[Microsoft** のライセンスとアプリ] チェック Power BIをオフにします。
 
-4. [**変更の保存**] を選択します。
+4. **[変更の保存]** を選択します。
 
 ## <a name="how-do-i-know-when-new-users-have-joined-my-tenant"></a>新しいユーザーがテナントに参加したことは、どのようにしてわかりますか?
 

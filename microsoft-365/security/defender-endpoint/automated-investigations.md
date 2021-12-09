@@ -19,19 +19,19 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: 738cdd4d312de4bb7c7f74404a6905cd02c1d3f4
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 125c90a6c9839e2899e97b197c951c0e26d6fc37
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167396"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371486"
 ---
 # <a name="overview-of-automated-investigations"></a>自動調査の概要
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 どのように動作するのかを確認したいですか? 次のビデオをご覧ください。
@@ -84,7 +84,7 @@ ms.locfileid: "61167396"
 
 ## <a name="requirements-for-air"></a>AIR の要件
 
-組織には Defender for Endpoint が必要です (「エンドポイント用 Microsoft Defender の最小[要件」を参照)。](minimum-requirements.md)
+組織には Defender for Endpoint が必要です (「エンドポイント用 Microsoft Defender の [最小要件」を参照してください](minimum-requirements.md))。
 
 現在、AIR は次の OS バージョンのみをサポートしています。
 

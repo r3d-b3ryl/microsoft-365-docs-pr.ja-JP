@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: デスクトップ アプリで共同編集と自動保存を有効にする設定をオンにして、SharePoint、OneDrive でドキュメントのラベル付けと暗号化が行えます。
-ms.openlocfilehash: 5af87a3a2d8ca6d37816cbaf0fd35426c8e828a4
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 8670bdf0c1cefbddadb88a08c6aecf82fc52aa80
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61109961"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373070"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>機密度ラベルを使用して暗号化されたファイルの共同編集を有効にする
 
@@ -149,7 +149,7 @@ Office デスクトップ アプリの共同編集をサポートする設定を
 
 ![共同編集で機密度ラベルが有効になっていることを表示させるオプション。](../media/co-authoring-tenant-option-set-for-sensitivity-labels.png)
 
-スクリーンショットからでもわかるように、この設定がオンになっている場合は [Microsoft サポート](../business-video/get-help-support.md) に問い合わせてこの設定を無効にするようにリクエストできます。 このリクエストには数日かかる場合があり、テナントのグローバル管理者であることを証明する必要があります。 通常のサポート料金が適用されることをご了承ください。 
+スクリーンショットからでもわかるように、この設定がオンになっている場合は [Microsoft サポート](../admin/get-help-support.md) に問い合わせてこの設定を無効にするようにリクエストできます。 このリクエストには数日かかる場合があり、テナントのグローバル管理者であることを証明する必要があります。 通常のサポート料金が適用されることをご了承ください。 
 
 サポート エンジニアがテナントに対してこの設定を無効にした場合:
 

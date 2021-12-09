@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: テナントとユーザーが要件を満たしていることを確認し、集中展開を使用してアドインを展開Officeします。
-ms.openlocfilehash: 992c54d84a5cc69579c74b2b7e1a5aa60e9633ab
-ms.sourcegitcommit: 0251d5c6cb141055c93c83a402c3dc52c7a70dcc
+ms.openlocfilehash: c560ceab5fa33af19eb40196dc643f356d1cbe87
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61262793"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371114"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>組織でアドインの集中展開が機能するかどうかを判断する
 
@@ -35,10 +35,7 @@ ms.locfileid: "61262793"
 
 一元展開には、次のような利点があります。
 
-- グローバル管理者または Exchange 管理者は、ユーザー、グループ経由で複数のユーザー、または組織内のすべてのユーザーにアドインを直接割り当てできます。
-- Exchangeは、次の図に示すように、アプリ登録プロパティが管理センターで true に設定Azure Active Directoryアドインを展開できます。
-
-  ![image](../../media/AAD.png)
+- 管理者は、ユーザー、グループ経由で複数のユーザー、または組織内のすべてのユーザーにアドインを直接展開して割り当てできます (詳細については、「管理者要件」セクションを参照してください)。
 
 - 関連するアプリケーションOfficeすると、アドインは自動的にダウンロードされます。 アドインがアドイン コマンドをサポートしている場合、アドインは自動的にアドイン アプリケーション内のリボンにOfficeされます。
 
@@ -55,7 +52,7 @@ ms.locfileid: "61262793"
 
 一元展開は、次の機能をサポートしていません。
 
-- Office 2013 の Word、Excel、または PowerPoint を対象とするアドイン
+- MSI バージョンを対象とするOffice (ただし、Outlook 2016)
 - オンプレミスのディレクトリ サービス
 - On-Prem メールボックスへのアドインExchange展開
 - SharePoint に展開するアドイン
@@ -85,6 +82,15 @@ ms.locfileid: "61262793"
 Microsoft Exchangeは、組織のテナント内にアドイン マニフェストを格納します。 アドインを展開する管理者と、それらのアドインを受け取るユーザーは、OAuth 認証をサポートする Exchange Online上にある必要があります。
 
 組織の Exchange 管理者に、どの構成を使用できるのかを確認してください。ユーザーごとの OAuth 認証接続は、[Test-OAuthConnectivity](/powershell/module/exchange/test-oauthconnectivity) PowerShell コマンドレットを使用して、検証できます。
+
+### <a name="admin-requirements"></a>管理者の要件
+
+集中展開を介してアドインを展開するには、組織のグローバル管理者または管理者Exchange必要があります。
+
+> [!NOTE]
+> 次Exchangeに示すように、管理者がアドインを展開できるのは、Azure Active Directory 管理センターで App **Registrations** プロパティが true に設定されている場合のみです。
+>
+> ![image](https://user-images.githubusercontent.com/89943918/144516704-8874a10d-b540-41f3-ae9d-c07a8d7e143f.png)
 
 
 ### <a name="centralized-deployment-compatibility-checker"></a>集中展開の互換性チェック
@@ -139,7 +145,7 @@ Microsoft Exchangeは、組織のテナント内にアドイン マニフェス�
 
 次の例では、Sandra、Sheila、「営業部門」のグループがアドインに割り当てられています。「西海岸営業部門」は入れ子のグループのため、Bert と Fred はアドインに割り当てられていません。
 
-![営業部門の図。](../../media/683094bb-1160-4cce-810d-26ef7264c592.png)
+![MicrosoftTeams-image](../../media/683094bb-1160-4cce-810d-26ef7264c592.png)
 
 
 ### <a name="find-out-if-a-group-contains-nested-groups"></a>グループにネストされたグループが含まれているかどうかを調べる
@@ -156,7 +162,7 @@ Microsoft Exchangeは、組織のテナント内にアドイン マニフェス�
 
 ### <a name="contacting-microsoft-for-support"></a>Microsoft に連絡してサポートを受ける
 
-web 用の Office アプリ (Word、Excel など) の使用中にアドインの読み込み中に問題が発生した場合は、Microsoft サポートに連絡する必要があります (方法を[](../../business-video/get-help-support.md)確認してください)。 サポート チケットに、ユーザーのMicrosoft 365情報を入力します。
+web 用 Office アプリ (Word、Excel など) の使用中にアドインの読み込み中に問題が発生した場合は、Microsoft サポートに問い合わせが必要な場合があります[(方法](../../business-video/get-help-support.md)について説明します)。 サポート チケットに、ユーザーのMicrosoft 365情報を入力します。
 
 | プラットフォーム | デバッグ情報 |
 |:-----|:-----|

@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 ms.localizationpriority: medium
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8225a3d2dce5eea822e16513e5d86daa5a5eade2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7a9025fa2486e90a36ab2ce529dc5ebf3f65fd84
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196003"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373514"
 ---
 # <a name="contact-support-for-monaco"></a>モナコのサポートに問い合わせ
 
-[別の国または地域を検索します](../../business-video/get-help-support.md)。
+[別の国または地域を検索します](../get-help-support.md)。
 
 ## <a name="phone-number"></a>電話番号
 +33 1 57 32 42 97

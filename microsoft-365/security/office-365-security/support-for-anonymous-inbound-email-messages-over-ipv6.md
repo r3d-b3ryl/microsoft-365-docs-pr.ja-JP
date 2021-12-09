@@ -18,12 +18,12 @@ ms.custom:
 description: 管理者は、IPv6 ソースから匿名受信メールのサポートを構成する方法について、Exchange OnlineおよびExchange Online Protection。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6ba52efb6ad18bc0515084b3aee4a8bbdd6c7312
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 78b2e653aa284e34af2315ac696d7390dce71884
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203869"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373658"
 ---
 # <a name="add-support-for-anonymous-inbound-email-over-ipv6-in-microsoft-365"></a>IPv6 を使用して匿名受信メールのサポートを追加Microsoft 365
 
@@ -40,7 +40,7 @@ Microsoft 365メールボックスExchange Onlineスタンドアロン Exchange 
 
 - また、送信者は、SPF 検証 ([RFC 7208](https://tools.ietf.org/html/rfc7208) で既定されている) と [DKIM 検証](http://dkim.org/) ( [RFC 6376](https://www.rfc-editor.org/rfc/rfc6376.txt) で既定されている) のどちらかに合格する必要があります。
 
-組織が IPv6 を使用して匿名の受信メールを受け取る前に、管理者は Microsoft サポートに問い合わせ、そのメールを求める必要があります。 サポート要求を開く方法については、「ビジネス製品のサポートに問い合わせ- 管理者ヘルプ」 [を参照してください](../../business-video/get-help-support.md)。
+組織が IPv6 を使用して匿名の受信メールを受け取る前に、管理者は Microsoft サポートに問い合わせ、そのメールを求める必要があります。 サポート要求を開く方法については、「ビジネス製品のサポートに問い合わせ- 管理者ヘルプ」 [を参照してください](../../admin/get-help-support.md)。
 
 組織内で匿名の受信 IPv6 メッセージのサポートが有効になると、サービスによって提供される通常のメッセージ フィルター処理を通過します。
 
@@ -58,6 +58,6 @@ Microsoft 365メールボックスExchange Onlineスタンドアロン Exchange 
 
   > 550 5.2.1 サービスは利用できません。[contoso.com] は IPv6 を超える電子メールを受け入れできません。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [DKIM 署名付きメッセージの検証をサポートする](support-for-validation-of-dkim-signed-messages.md)

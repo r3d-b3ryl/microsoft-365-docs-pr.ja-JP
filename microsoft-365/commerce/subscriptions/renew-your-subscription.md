@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Microsoft 365 for Business のほとんどのサブスクリプションを更新し、継続請求をオンまたはオフにする方法について説明します。
 ms.date: 05/04/2021
-ms.openlocfilehash: a2f43433c883a5380f4f4f92921bc99e5bf9effb
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2fe78acab6423bbedefe2cad9dc7ae7ae3efe449
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60188435"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370082"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Microsoft 365 for business の更新
 
@@ -49,12 +49,6 @@ ms.locfileid: "60188435"
 ::: moniker range="o365-worldwide"
 
 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[お使いの製品]</a> ページの順に移動します。
 
 ::: moniker-end
 

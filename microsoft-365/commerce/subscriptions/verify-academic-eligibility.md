@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: 教育機関向け価格に対する学校の適格性をMicrosoft 365 Educationする方法について学習します。
 ms.date: 07/21/2020
-ms.openlocfilehash: 8fc3be02de01e2d37159162581276e7c9d3451f1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0f25842aa6dd8cce30031b876ec0614960cfec57
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60168904"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371906"
 ---
 # <a name="verify-academic-eligibility-for-microsoft-365-education-subscriptions"></a>サブスクリプションの学業Microsoft 365 Education確認する
 
@@ -94,7 +94,7 @@ ms.locfileid: "60168904"
 
 学校が Microsoft 認定教育機関として認定されていない場合でも、[課金の購入サービス] ページの管理センターで商用オファー \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">を購入</a>できます。 組織が非営利団体である場合、グループは非営利団体のサブスクリプションの対象となる可能性があります。 詳細については、「非営利団体 [の割引と寄付」を参照してください](https://www.microsoft.com/nonprofits/eligibility)。
 
-学校の学業適格性の決定に関する質問がある場合は、サポート [にお問い合わせください](../../business-video/get-help-support.md)。
+学校の学業適格性の決定に関する質問がある場合は、[サポートに問い合わせ](../../admin/get-help-support.md)。
 
 ## <a name="next-steps"></a>次の手順
 

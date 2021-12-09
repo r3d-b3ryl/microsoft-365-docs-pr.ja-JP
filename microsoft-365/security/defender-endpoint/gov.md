@@ -16,17 +16,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fc3865ff4170fcce245f0971ab2cf1c6772bb346
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 846a1007a63164807b3667cb7c06fe5ea260a10a
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166892"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370718"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>米国政府のお客様向けの Microsoft Defender for Endpoint
 
 **適用対象:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Microsoft Defender for Endpoint for US Government のお客様は、Azure US Government 環境で構築され、Azure Commercial の Defender for Endpoint と同じ基礎テクノロジを使用します。
 
@@ -102,8 +103,8 @@ Windows 10バージョン 1909 [(KB4586819](https://support.microsoft.com/help/4
 Windows 10バージョン 1903 [(KB4586819](https://support.microsoft.com/help/4586819) <sup>1)</sup>|![はい。](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)
 Windows 10 Version 1809 [(KB4586839](https://support.microsoft.com/help/4586839) <sup>1 )</sup>|![はい。](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)
 Windows 10バージョン 1803 [(KB4598245](https://support.microsoft.com/help/4598245) <sup>1)</sup>|![はい。](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)
-Windows 10バージョン 1709|![いいえ。](images/svg/check-no.svg) <br /> 注: サポートされません|![は ](images/svg/check-yes.svg) い [KB4499147](https://support.microsoft.com/help/4499147) <sup>1</sup> <br /> 注: [非推奨 、](/lifecycle/announcements/revised-end-of-service-windows-10-1709)アップグレードしてください|![いいえ](images/svg/check-no.svg) <br /> 注: サポートされません
-Windows 10バージョン 1703 以前|![いいえ。](images/svg/check-no.svg) <br /> 注: サポートされません|![いいえ](images/svg/check-no.svg) <br /> 注: サポートされません|![いいえ](images/svg/check-no.svg) <br /> 注: サポートされません
+Windows 10バージョン 1709|![いいえ。](images/svg/check-no.svg) <br /> 注: サポートされません|![は ](images/svg/check-yes.svg) い [KB4499147](https://support.microsoft.com/help/4499147) <sup>1</sup> <br /> 注: [非推奨 、](/lifecycle/announcements/revised-end-of-service-windows-10-1709)アップグレードしてください|![不要](images/svg/check-no.svg) <br /> 注: サポートされません
+Windows 10バージョン 1703 以前|![いいえ。](images/svg/check-no.svg) <br /> 注: サポートされません|![不要](images/svg/check-no.svg) <br /> 注: サポートされません|![不要](images/svg/check-no.svg) <br /> 注: サポートされません
 Windows Server 2022|![はい。](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)
 Windows Server 2019 [(KB4586839](https://support.microsoft.com/help/4586839) <sup>1 )</sup>|![はい。](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)
 Windows Server 2016 (モダン) <sup>2</sup>|![はい。](images/svg/check-yes.svg) <br /> パブリック プレビュー|![はい](images/svg/check-yes.svg) <br /> パブリック プレビュー|![はい](images/svg/check-yes.svg) <br /> パブリック プレビュー
@@ -117,8 +118,8 @@ Windows 7 SP1 Enterprise (Legacy) <sup>3</sup>|![はい。](images/svg/check-yes
 Windows 7 SP1 Pro (Legacy) <sup>3</sup>|![はい。](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)
 Linux|![はい。](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)
 macOS|![はい。](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)
-Android|![いいえ。](images/svg/check-no.svg) 開発中|![いいえ](images/svg/check-no.svg) 開発中|![いいえ](images/svg/check-no.svg) 開発中
-iOS|![いいえ。](images/svg/check-no.svg) 開発中|![いいえ](images/svg/check-no.svg) 開発中|![いいえ](images/svg/check-no.svg) 開発中
+Android|![いいえ。](images/svg/check-no.svg) 開発中|![不要](images/svg/check-no.svg) 開発中|![不要](images/svg/check-no.svg) 開発中
+iOS|![いいえ。](images/svg/check-no.svg) 開発中|![不要](images/svg/check-no.svg) 開発中|![不要](images/svg/check-no.svg) 開発中
 |
 
 > [!NOTE]
@@ -149,7 +150,7 @@ Windows Server 2008 R2 SP1|![はい。](images/svg/check-yes.svg)|![はい](imag
 
 プロキシまたはファイアウォールが既定ですべてのトラフィックをブロックし、特定のドメインの通過だけを許可している場合は、ダウンロード可能シートに記載されているドメインを許可ドメインのリストに追加します。
 
-次のダウンロード可能なスプレッドシートには、ネットワークが接続できる必要があるサービスと関連付けられている URL が一覧表示されます。 これらの URL へのアクセスを拒否するファイアウォールまたはネットワーク フィルター ルールが存在しないか、またはそれらの URL 専用の許可ルールを作成します。
+次のダウンロード可能なスプレッドシートには、ネットワークが接続できる必要があるサービスと関連付けられている URL が一覧表示されます。 これらの URL へのアクセスを拒否するファイアウォールまたはネットワーク フィルタールールが存在しないか、許可ルールを作成します。
 
 ドメインリストのスプレッドシート|説明
 :-----|:-----
@@ -189,9 +190,8 @@ API ドキュメントに記載されているパブリック URI の代わり�
 
 |フィーチャー名|GCC|GCC High|DoD|
 |---|:---:|:---:|:---:|
-|ネットワーク評価|![いいえ](images/svg/check-no.svg) 開発中|![いいえ](images/svg/check-no.svg) 開発中|![いいえ](images/svg/check-no.svg) 開発中|
-|ネットワーク検出|![はい](images/svg/check-yes.svg)|![いいえ](images/svg/check-no.svg) 開発中|![いいえ](images/svg/check-no.svg) 開発中|
-|Web コンテンツ フィルタリング|![いいえ](images/svg/check-no.svg) 開発中|![いいえ](images/svg/check-no.svg) 開発中|![いいえ](images/svg/check-no.svg) 開発中|
-|統合: Microsoft Sentinel|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg) アラート <br /> ![はい](images/svg/check-yes.svg) インシデント&生データ: プライベート プレビューで|![はい](images/svg/check-yes.svg) アラート <br /> ![はい](images/svg/check-yes.svg) インシデント&生データ: プライベート プレビューで|
+|ネットワーク評価|![不要](images/svg/check-no.svg) 開発中|![不要](images/svg/check-no.svg) 開発中|![不要](images/svg/check-no.svg) 開発中|
+|ネットワーク検出|![はい](images/svg/check-yes.svg)|![不要](images/svg/check-no.svg) 開発中|![不要](images/svg/check-no.svg) 開発中|
+|レポート: 攻撃表面の縮小、デバイス制御、デバイスの正常性、ファイアウォール|![不要](images/svg/check-no.svg) 開発中|![不要](images/svg/check-no.svg) 開発中|![不要](images/svg/check-no.svg) 開発中|
+|Web コンテンツ フィルタリング|![不要](images/svg/check-no.svg) 開発中|![不要](images/svg/check-no.svg) 開発中|![不要](images/svg/check-no.svg) 開発中|
 |統合: Microsoft Power Automate & Azure Logic Apps|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|
-|Microsoft 脅威エキスパート|![いいえ](images/svg/check-no.svg) エンジニアリング バックログについて|![いいえ](images/svg/check-no.svg) エンジニアリング バックログについて|![いいえ](images/svg/check-no.svg) エンジニアリング バックログについて|

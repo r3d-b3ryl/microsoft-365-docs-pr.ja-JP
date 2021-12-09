@@ -15,12 +15,12 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 description: ビジネス向けリモートワークに関する最新情報、ヒント、リソース、ガイダンスをMicrosoft 365。
-ms.openlocfilehash: bff6e8b54262ab4bc71f219ccfe401877269d0ee
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2fb23bc74034bc3f8f27bc6aa06bf42311ee8bb8
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60158732"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370850"
 ---
 # <a name="empower-your-small-business-with-remote-work"></a>リモート ワークで小規模ビジネスを強化する
 
@@ -37,7 +37,7 @@ ms.locfileid: "60158732"
 
 COVID-19 (Novel Coronavirus) の流行に照らして、多くのビジネスオーナーは完全にリモートワークスタッフを持っています。 リモート作業を安全、安全、生産性に移行するために実行できる操作を次に示します。
 
-詳細については、「小規模ビジネスでのビジネス[Microsoft Teamsを参照してください](../../business-video/get-started-teams-small-business.md)。
+詳細については、「小規模ビジネスでのビジネス[Microsoft Teamsを参照してください](https://support.microsoft.com/office/6723dc43-dbc0-46e6-af49-8a2d1c5cb937)。
 
 サブスクリプションは既に持っていますが、セットアップが必要ですか? 「小規模[Microsoft 365トレーニング」を参照してください](../../business-video/index.yml)。
 
@@ -49,7 +49,7 @@ COVID-19 (Novel Coronavirus) の流行に照らして、多くのビジネスオ
 
 従業員、顧客、またはパートナーと音声、ビデオ、Web 会議をホストするには、Microsoft Teams。
 
-詳細については、「Host [online Meetings and](../../business-video/start-and-pin-chats.md) Chat with [employees and Customers」を参照してください](https://support.microsoft.com/office/chat-with-employees-and-customers-65748808-a403-462c-a6e1-b169e5bc6c92)。
+詳細については、「Host [online Meetings and](https://support.microsoft.com/office/65748808-a403-462c-a6e1-b169e5bc6c92) Chat with [employees and Customers」を参照してください](https://support.microsoft.com/office/65748808-a403-462c-a6e1-b169e5bc6c92)。
 
 ### <a name="store-and-share-files"></a>ファイルの保存と共有
 
@@ -61,7 +61,7 @@ COVID-19 (Novel Coronavirus) の流行に照らして、多くのビジネスオ
 
 従業員と顧客をチームに招待して、チームと直接協力して、すべての調整と共同作業を 1 か所で行えます。
 
-詳細については、「チームを作成 [する」および「ゲスト アクセス](../../business-video/team-with-guests.md) を [有効にする」を参照してください](/MicrosoftTeams/guest-access)。
+詳細については、「チームを作成 [する」および「ゲスト アクセス](https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f) を [有効にする」を参照してください](/MicrosoftTeams/guest-access)。
 
 ## <a name="manage-and-secure-your-business-to-run-remotely"></a>リモートで実行するためのビジネスの管理とセキュリティ保護
 

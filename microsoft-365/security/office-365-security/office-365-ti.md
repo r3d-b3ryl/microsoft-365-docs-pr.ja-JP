@@ -18,15 +18,16 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkDEFENDER
 description: Microsoft Defender for Office 365プランの脅威調査と対応機能について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4d6f6f2e849355db3dd8dfd44fe53b3ddbf2971d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9056f1e63910ace9dfe525c45e3e549d225b2d85
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207537"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371162"
 ---
 # <a name="threat-investigation-and-response"></a>脅威の調査および対応
 
@@ -47,7 +48,7 @@ ms.locfileid: "60207537"
 
 ## <a name="get-acquainted-with-threat-investigation-and-response-tools"></a>脅威の調査と対応ツールについて知る
 
-脅威の調査と対応機能は、Microsoft 365 Defenderを含むツールと応答ワークフローのセットとして、Microsoft 365 Defender ポータルに表示されます。
+脅威の調査と対応機能は、Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"></a>を含むツールと応答ワークフローのセットとして、Microsoft 365 Defender ポータルに表示されます。
 
 - [Explorer](#explorer)
 - [インシデント](#incidents)
@@ -100,7 +101,7 @@ Microsoft Defender for Office 365ロール ベースのアクセス制御を使�
 > セキュリティ管理者などの一部の役割は、Microsoft 365 Defender ポータルで割り当てることができますが、代わりに、Microsoft 365 管理センターまたはAzure Active Directory使用してください。 役割、役割グループ、およびアクセス許可の詳細については、次のリソースを参照してください。
 >
 > - [Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)
-> - [Azure AD組み込みロール](/azure/active-directory/roles/permissions-reference)
+> - [Azure AD組み込みの役割](/azure/active-directory/roles/permissions-reference)
 
 <br>
 
@@ -108,7 +109,7 @@ Microsoft Defender for Office 365ロール ベースのアクセス制御を使�
 
 |アクティビティ|ロールと権限|
 |---|---|
-|[脅威の管理&管理] ダッシュボード (または新しい[セキュリティ ダッシュボード) を使用する](security-dashboard.md) <p> 最近または現在の脅威に関する情報を表示する|以下のいずれか: <ul><li>**グローバル管理者**</li><li>**セキュリティ管理者**</li><li>**セキュリティ閲覧者**</li></ul> <p> これらの役割は、Azure Active Directory ( ) または <https://portal.azure.com> Microsoft 365 管理センター ( ) で割り当てることができます <https://admin.microsoft.com> 。|
+|[脅威の管理&管理] ダッシュボード (または新しいセキュリティ ダッシュボード [) を使用する](security-dashboard.md) <p> 最近または現在の脅威に関する情報を表示する|以下のいずれか: <ul><li>**グローバル管理者**</li><li>**セキュリティ管理者**</li><li>**セキュリティ閲覧者**</li></ul> <p> これらの役割は、Azure Active Directory ( ) または <https://portal.azure.com> Microsoft 365 管理センター ( ) で割り当てることができます <https://admin.microsoft.com> 。|
 |エクスプローラー [(およびリアルタイムの検出) を使用して](threat-explorer.md) 脅威を分析する|以下のいずれか: <ul><li>**グローバル管理者**</li><li>**セキュリティ管理者**</li><li>**セキュリティ閲覧者**</li></ul> <p> これらの役割は、Azure Active Directory ( ) または <https://portal.azure.com> Microsoft 365 管理センター ( ) で割り当てることができます <https://admin.microsoft.com> 。|
 |インシデントの表示 (調査とも呼ばれます) <p> インシデントへの電子メール メッセージの追加|以下のいずれか: <ul><li>**グローバル管理者**</li><li>**セキュリティ管理者**</li><li>**セキュリティ閲覧者**</li></ul> <p> これらの役割は、Azure Active Directory ( ) または <https://portal.azure.com> Microsoft 365 管理センター ( ) で割り当てることができます <https://admin.microsoft.com> 。|
 |インシデントで電子メール アクションをトリガーする <p> 疑わしいメール メッセージの検索と削除|以下のいずれか: <ul><li>**グローバル管理者**</li><li>**セキュリティ管理者** と検索 **と削除の役割**</li></ul> <p> グローバル **管理者とセキュリティ****管理者の** 役割は、管理者 ( ) または Azure Active Directory ( <https://portal.azure.com> ) で割りMicrosoft 365 管理センターできます <https://admin.microsoft.com> 。 <p> 検索 **と削除の役割** は、Microsoft 36 Defender ポータル () のメール & **グループ** の役割に割り当てる必要があります <https://security.microsoft.com> 。|

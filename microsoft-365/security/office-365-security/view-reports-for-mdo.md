@@ -2,8 +2,8 @@
 title: Defender for Office 365 レポートを表示する
 f1.keywords:
 - CSH
-ms.author: tracyp
-author: msfttracyp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -17,15 +17,17 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: 管理者は、管理者ポータルで使用できるレポートのOffice 365 Defender を検索して使用するMicrosoft 365 Defenderできます。
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 522abcdc22a17555eab6f0c2e46a424529a15b99
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 26d883984dedae52285a343d573e0aa2cad0c005
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203852"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372350"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>ポータルでレポートOffice 365 Defender をMicrosoft 365 Defenderする
 
@@ -47,7 +49,7 @@ Office 365 組織向け Microsoft Defender (Microsoft 365 E5 サブスクリプ�
 
 ### <a name="download-reports"></a>レポートのダウンロード
 
-1. ポータルで、[Microsoft 365 Defender]**に移動します。[** レポート  >  **の電子メール] &に移動します**。
+1. [ポータル] <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender、[</a>レポートの **電子メール**  >  **と共同作業] &移動します**。
 
 2. [ダウンロード **するレポート] を選択します**。
 
@@ -64,7 +66,7 @@ Office 365 組織向け Microsoft Defender (Microsoft 365 E5 サブスクリプ�
 > [!NOTE]
 > このレポートは廃止されました。 脅威保護の状態レポートでも同 [じ情報を使用できます](#threat-protection-status-report)。
 
-## <a name="safe-attachments-message-disposition-report"></a>セーフ添付ファイル メッセージの廃棄レポート
+## <a name="safe-attachments-message-disposition-report"></a>セーフ添付ファイル メッセージ廃棄レポート
 
 > [!NOTE]
 > このレポートは廃止されました。 脅威保護の状態レポートでも同 [じ情報を使用できます](#threat-protection-status-report)。
@@ -75,7 +77,7 @@ Office 365 組織向け Microsoft Defender (Microsoft 365 E5 サブスクリプ�
 
 クライアント側とネットワークの待機時間は含まれません。
 
-レポートを表示するには、Microsoft 365 Defender ポータル [を開き、[](https://security.microsoft.com)レポートの電子メール] & \> **グループ**& \> **に移動します**。 [電子メール **&コラボレーション レポート] ページ** で、[ **メール遅延レポート** ] を探し、[詳細の表示] **をクリックします**。 レポートに直接移動するには、を開きます <https://security.microsoft.com/mailLatencyReport> 。
+レポートを表示するには、Microsoft 365 Defender ポータル <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">を開き、[</a>レポートの電子メール] & \> **グループ**& \> **に移動します**。 [電子メール **&コラボレーション レポート] ページ** で、[ **メール遅延レポート** ] を探し、[詳細の表示] **をクリックします**。 レポートに直接移動するには、を開きます <https://security.microsoft.com/mailLatencyReport> 。
 
 ![[メール の遅延レポート] ウィジェットが [メール &] ページに表示されます。](../../media/mail-latency-report-widget.png)
 
@@ -229,6 +231,7 @@ PowerShell レポートコマンドレット:
 |安全なリンク|[Get-SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <p> [Get-SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|
 |侵害されたユーザー|[Get-CompromisedUserAggregateReport](/powershell/module/exchange/get-compromiseduseraggregatereport) <p> [Get-CompromisedUserDetailReport](/powershell/module/exchange/get-compromiseduserdetailreport)|
 |メール フローの状態|[Get-MailflowStatusReport](/powershell/module/exchange/get-mailflowstatusreport)|
+|スプーフィングされたユーザー|[Get-スプーフィングMailReport](/powershell/module/exchange/get-spoofmailreport)|
 |
 
 ## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>レポートの Defender を表示するために必要なアクセス許可Office 365ですか?
@@ -242,14 +245,14 @@ PowerShell レポートコマンドレット:
 
 詳細については、「[Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)」を参照してください。
 
-**注**: Microsoft 365 管理センター の対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 Defender ポータルで必要なアクセス許可と、Microsoft 365 の他の機能に対するアクセス許可がユーザーに付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
+**注**: Microsoft 365 管理センター の対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 Defender ポータルで必要なアクセス許可と、Microsoft 365 の他の機能に対するアクセス許可がユーザーに付与されます。 詳細については、[「管理者の役割について」](../../admin/add-users/about-admin-roles.md) を参照してください。
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>レポートにデータが表示されない場合は、
 
 レポートのデータが Defender に表示されない場合Office 365ポリシーが正しく設定されていることを確認してください。 Defender for セーフ[保護](set-up-safe-links-policies.md)を有効セーフするために、[](set-up-safe-attachments-policies.md)組織にリンク ポリシーと添付ファイル Office 365が定義されている必要があります。 「スパム [対策とマルウェア対策の保護」も参照してください](anti-spam-and-anti-malware-protection.md)。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [スマート レポートと分析情報 (Microsoft 365 Defenderポータル)](reports-and-insights-in-security-and-compliance.md)
 
-[Azure AD組み込みロール](/azure/active-directory/roles/permissions-reference)
+[Azure AD組み込みの役割](/azure/active-directory/roles/permissions-reference)

@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: プランをアップグレードする最も簡単な方法は、管理センターの [アップグレード] タブを使用する方法です。 ただし、[アップグレード] タブが常にサポートされているわけではありません。
 ms.date: 04/21/2021
-ms.openlocfilehash: 7e4190fed287033f723be2cd89e800cb2e31e11a
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 82bd20b70a5f199f7daead8084f70d985efe52ad
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60747322"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370346"
 ---
 # <a name="upgrade-to-a-different-plan"></a>別のプランにアップグレードする
 
@@ -56,7 +56,7 @@ ms.locfileid: "60747322"
 
 [アップグレード] タブ **を使用** すると、現在のプランのサービスに基づいてアップグレードできるプランが表示されます。 [アップグレード] タブを **使用して** 、同じデータ関連サービスを持つプラン、または上位バージョンにのみ移動できます。 これにより、変更中にユーザーがそれらのサービスに関連するデータを失わない。
 
-サービスの数が少ないプランに移行する場合は、手動で[](change-plans-manually.md)プランを変更するか、サポート[を呼](../../business-video/get-help-support.md)び出します。
+サービスの数が少ないプランに移行する場合は、手動で[](change-plans-manually.md)プランを変更するか、サポート[を呼](../../admin/get-help-support.md)び出します。
 
 ## <a name="i-only-want-to-upgrade-some-of-my-users-how-do-i-do-that"></a>一部のユーザーのみをアップグレードします。 これを行う方法
 
@@ -76,13 +76,13 @@ ms.locfileid: "60747322"
 
 #### <a name="you-cant-upgrade-subscriptions-now-because-you-have-more-users-than-licenses"></a>ライセンスより多くのユーザーを持つため、サブスクリプションを今すぐアップグレードできない
 
-プランを自動的にアップグレードするには、すべてのユーザーに有効なライセンスを割り当てる必要があります。 購入したライセンスよりも多くのライセンスが割り当てられている場合は、[ライセンス] ページに<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank"></a>、解決する必要があるライセンスの競合があるという警告が表示されます。 [ライセンスの競合を解決する方法について説明します](../../commerce/licenses/buy-licenses.md)。 ライセンスの競合を解決した後、[アップグレード] タブにプランが **表示されます。** ない場合は、手動 [でプランを変更するか](change-plans-manually.md)、サポート [を呼び出します](../../business-video/get-help-support.md)。
+プランを自動的にアップグレードするには、すべてのユーザーに有効なライセンスを割り当てる必要があります。 購入したライセンスよりも多くのライセンスが割り当てられている場合は、[ライセンス] ページに<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank"></a>、解決する必要があるライセンスの競合があるという警告が表示されます。 [ライセンスの競合を解決する方法について説明します](../../commerce/licenses/buy-licenses.md)。 ライセンスの競合を解決した後、[アップグレード] タブにプランが **表示されます。** ない場合は、手動 [でプランを変更するか](change-plans-manually.md)、サポート [を呼び出します](../../admin/get-help-support.md)。
 
 #### <a name="you-cant-upgrade-subscriptions-right-now-because-this-subscription-isnt-fully-set-up-or-the-service-isnt-available"></a>このサブスクリプションが完全にセットアップされていないか、サービスが利用できないので、今すぐサブスクリプションをアップグレードできません
 
 たとえば、サービスの 1 つにインシデントが発生した場合、すべてのサービスが正常になるまでアップグレードを行う必要があります。 プロビジョニングまたはサービスの正常性の問題が発生した場合は、管理センターで [正常性サービスの正常性] **ページ** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">に移動</a> します。
 
-サービスが完全にはプロビジョニングされていないか、サービス正常性に問題があることがわかった場合は、サービスが利用可能になるまで数時間待ってから、もう一度試してください。 それでも問題が解決しない場合は、サポートにお [問い合わせください](../../business-video/get-help-support.md)。
+サービスが完全にはプロビジョニングされていないか、サービス正常性に問題があることがわかった場合は、サービスが利用可能になるまで数時間待ってから、もう一度試してください。 それでも問題が解決しない場合は、サポートにお [問い合わせください](../../admin/get-help-support.md)。
 
 #### <a name="you-cant-upgrade-plans-because-another-plan-is-in-the-process-of-being-upgraded-or-is-pending-a-credit-check"></a>別のプランがアップグレード中か、クレジット チェックを保留中のため、プランをアップグレードできない
 
@@ -90,11 +90,11 @@ ms.locfileid: "60747322"
 
 #### <a name="currently-this-subscription-is-not-eligible-to-upgrade"></a>現在、このサブスクリプションはアップグレードの対象ではありません
 
-手動で[プランを変更するか、サポート](change-plans-manually.md)[に電話することができます](../../business-video/get-help-support.md)。
+手動で[プランを変更するか、サポート](change-plans-manually.md)[に電話することができます](../../admin/get-help-support.md)。
 
 #### <a name="i-see-a-different-message-than-whats-listed-here"></a>ここに記載されているメッセージとは異なるメッセージが表示される
 
-手動で[プランを変更するか、サポート](change-plans-manually.md)[に電話することができます](../../business-video/get-help-support.md)。
+手動で[プランを変更するか、サポート](change-plans-manually.md)[に電話することができます](../../admin/get-help-support.md)。
 
 ### <a name="additional-reasons-you-cant-upgrade"></a>アップグレードできないその他の理由
 
@@ -106,11 +106,11 @@ ms.locfileid: "60747322"
 
 サブスクリプションの支払いを事前に済ませた場合は、手動でプラン [を変更できる場合があります](change-plans-manually.md)。 ただし、現在のプランの有効期限が切れる前にプランをアップグレードした場合、現在のサブスクリプションに残っている未使用時間のクレジットは受け取れなくなっています。
 
-サポートを呼 [び出してヘルプ](../../business-video/get-help-support.md) を呼び出す方法も可能です。
+サポートを呼 [び出してヘルプ](../../admin/get-help-support.md) を呼び出す方法も可能です。
 
 #### <a name="you-have-a-government-or-non-profit-plan"></a>政府機関向けプランまたは非営利団体向けプランに加入している
 
-政府または非営利のプランをお持ちのお客様は、手動[](change-plans-manually.md)でプランを変更するか、サポート[にお電話ください](../../business-video/get-help-support.md)。
+政府または非営利のプランをお持ちのお客様は、手動[](change-plans-manually.md)でプランを変更するか、サポート[にお電話ください](../../admin/get-help-support.md)。
 
 #### <a name="the-subscription-that-you-want-to-upgrade-from-has-a-temporary-issue"></a>アップグレードするサブスクリプションに一時的な問題がある
 
@@ -120,7 +120,7 @@ ms.locfileid: "60747322"
 
 プランをアップグレードすると、アップグレードできるプランが、現在のプランのサービスに基づいて表示されます。 同じデータ関連サービス (Exchange Online や SharePoint Online など) を持つプラン、または上位バージョンのプランにのみアップグレードできます。 これにより、アップグレード中にユーザー \' がそれらのサービスに関連するデータを失うのを確認できます。
 
-プランを自動的にアップグレードできない場合は、代わりに手動でプラン [を変更できる](change-plans-manually.md) 場合があります。 サポートを呼 [び出してヘルプ](../../business-video/get-help-support.md) を呼び出す方法も可能です。
+プランを自動的にアップグレードできない場合は、代わりに手動でプラン [を変更できる](change-plans-manually.md) 場合があります。 サポートを呼 [び出してヘルプ](../../admin/get-help-support.md) を呼び出す方法も可能です。
 
 #### <a name="your-subscription-has-an-add-on"></a>サブスクリプションにアドオンがある
 
@@ -160,7 +160,7 @@ ms.locfileid: "60747322"
 
 ## <a name="call-support-to-help-you-upgrade-plans"></a>プランのアップグレードに役立つ通話サポート
 
-[Microsoft サポートへのお問い合わせください](../../business-video/get-help-support.md)
+[Microsoft サポートに問い合わせください](../../admin/get-help-support.md)。
 
 ## <a name="related-content"></a>関連コンテンツ
 

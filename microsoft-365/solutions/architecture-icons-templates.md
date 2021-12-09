@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365アイコンとテンプレート
-description: アーキテクチャ図の構築に使用するアイコンは、Microsoft 365。
+title: Microsoft 365ダイアグラム テンプレートとアイコン
+description: これらのMicrosoft 365テンプレートを使用して、Visioアーキテクチャ 図を作成します。
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -10,14 +10,14 @@ ms.prod: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: b4fedde7404f8ef274cab90fa87fdd21c093d8eb
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 8fd6815b94e44094ec01d405c22f33232f101503
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556270"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372458"
 ---
-# <a name="microsoft-365-architecture-icons-and-templates"></a>Microsoft 365アイコンとテンプレート
+# <a name="microsoft-365-architecture-templates-and-icons"></a>Microsoft 365テンプレートとアイコン
 
 パートナーと顧客が新しいソリューションを設計および設計するのを支援することが重要です。 このガイダンスに含まれるアーキテクチャ図は、設計上の決定と環境内のコンポーネント間の関係を伝えるのに役立ちます。 Visio テンプレートと共に一連の記号とアイコンを使用して、製品のアーキテクチャ 図を作成し、次のソリューションのカスタム アーキテクチャ 図を構築するのに役立つこれらのツールをここに提供しています。
 

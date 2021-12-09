@@ -23,12 +23,12 @@ ms.custom:
 search.appverid: MET150
 description: 以下の手順を使用して、ライセンスを購入したり、ビジネス サブスクリプションのライセンス数Microsoft 365減らしたりします。
 ms.date: 09/16/2021
-ms.openlocfilehash: 10ec13b1b20d386c24390b2bd3172a49c5f7165d
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: 2341fdb66d680a0e8b61b7cffe0670f668b57267
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128714"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61369734"
 ---
 # <a name="buy-or-remove-licenses"></a>ライセンスの購入または削除
 
@@ -60,12 +60,6 @@ ms.locfileid: "61128714"
 ::: moniker range="o365-worldwide"
 
 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">お使いの製品</a>] ページの順に移動します。
-
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"

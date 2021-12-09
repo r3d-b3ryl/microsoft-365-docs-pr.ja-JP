@@ -23,12 +23,12 @@ ms.custom:
 ms.topic: article
 ms.date: 12/02/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 8179d3fb8b5e24023dffab0d83695c33647e1c46
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 4910dd8361d33a11d81ac8f633a2e57c76a86f7a
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61284687"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371186"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>エンドポイント向け Microsoft Defender への切り替え - フェーズ 3: オンボード
 
@@ -75,7 +75,7 @@ ms.locfileid: "61284687"
 |Windows 10以降<br/><br/>Windows Server 2019 以降<br/><br/>Windows Server バージョン 1803 以降<br/><br/>Windows Server 2012 R2 および 2016 <sup> [[1](#fn1)]<sup>  |   [ローカル スクリプト (最大 10 台のデバイス)](configure-endpoints-script.md)<br><br/>   [グループ ポリシー](configure-endpoints-gp.md)<br/><br/>[Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)<br/><br/>[Microsoft エンドポイント マネージャー/ モバイル デバイス管理 (Intune)](configure-endpoints-mdm.md)<br>    [VDI スクリプト](configure-endpoints-vdi.md) <br><br> **注**: ローカル スクリプトは概念実証に適していますが、実稼働環境での展開には使用できません。 実稼働展開の場合は、グループ ポリシー、グループ ポリシー、Microsoft Endpoint Configuration Manager Intune を使用することをお勧めします。 |
 |Windows Server 2008 R2 SP1 | [Microsoft Monitoring Agent (MMA) または](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) [Microsoft Defender for Cloud](/azure/security-center/security-center-wdatp) <br><br> **注**: Microsoft Monitoring Agent Azure Log Analytics エージェントです。 詳細については [、「Log Analytics エージェントの概要」を参照してください](/azure/azure-monitor/platform/log-analytics-agent)。  |
 |Windows 8.1 Enterprise<br/><br/>Windows 8.1 Pro<br/><br/>Windows 7 SP1 Pro<br/><br/>Windows 7 SP1| [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md) <br><br> **注**: Microsoft Monitoring Agent Azure Log Analytics エージェントです。 詳細については [、「Log Analytics エージェントの概要」を参照してください](/azure/azure-monitor/platform/log-analytics-agent)。  
-| macOS (「 [システム要件」を参照](microsoft-defender-endpoint-mac.md)) | [ローカル スクリプト](mac-install-manually.md)<br/><br/>[Microsoft エンドポイント マネージャー](mac-install-with-intune.md)<br/><br/>[JAMF Pro](mac-install-with-jamf.md)<br/><br/>[モバイル デバイス管理](mac-install-with-other-mdm.md)   |
+| macOS (「 [システム要件」を参照)](microsoft-defender-endpoint-mac.md) | [ローカル スクリプト](mac-install-manually.md)<br/><br/>[Microsoft エンドポイント マネージャー](mac-install-with-intune.md)<br/><br/>[JAMF Pro](mac-install-with-jamf.md)<br/><br/>[モバイル デバイス管理](mac-install-with-other-mdm.md)   |
 | Linux (「[システム要件」を参照)](microsoft-defender-endpoint-linux.md#system-requirements) |  [ローカル スクリプト](linux-install-manually.md) <br><br/> [Puppet](linux-install-with-puppet.md) <br><br/> [Ansible](linux-install-with-ansible.md)|  
 | iOS | [Microsoft エンドポイント マネージャー](ios-install.md)     |
 |Android  | [Microsoft エンドポイント マネージャー](android-intune.md)  | 
@@ -93,7 +93,7 @@ ms.locfileid: "61284687"
 |オペレーティング システム|ガイダンス|
 |---|---|
 |Windows 10以降<br/><br/>Windows Server 2022<br/><br/>Windows Server 2019<br/><br/>Windows Server バージョン 1803 以降<br/><br/>Windows Server 2016<br/><br/>Windows Server 2012 R2|「 [検出テストを実行する」を参照してください](run-detection-test.md)。<br/><br/>Defender for Endpoint デモ シナリオ サイト ( ) にアクセス <https://demo.wd.microsoft.com> し、1 つ以上のシナリオを試してください。 たとえば、クラウド配信の **保護デモ シナリオを** 試してみてください。|
-|macOS (「 [システム要件」を参照](microsoft-defender-endpoint-mac.md))|で DIY アプリをダウンロードして使用します <https://aka.ms/mdatpmacosdiy> 。 <br/><br/> 詳細については [、「Defender for Endpoint on macOS」を参照してください](microsoft-defender-endpoint-mac.md)。|
+|macOS (「 [システム要件」を参照)](microsoft-defender-endpoint-mac.md)|で DIY アプリをダウンロードして使用します <https://aka.ms/mdatpmacosdiy> 。 <br/><br/> 詳細については [、「Defender for Endpoint on macOS」を参照してください](microsoft-defender-endpoint-mac.md)。|
 |Linux (「[システム要件」を参照)](microsoft-defender-endpoint-linux.md#system-requirements)|1. 次のコマンドを実行し、1 の結果 **を探します** `mdatp health --field real_time_protection_enabled` 。<br/><br/>2. ターミナル ウィンドウを開き、次のコマンドを実行します `curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt` 。<br/><br/>3. 次のコマンドを実行して、検出された脅威を一覧表示します `mdatp threat list` 。<br/><br/>詳細については [、「Defender for Endpoint on Linux」を参照してください](microsoft-defender-endpoint-linux.md)。|
 
 

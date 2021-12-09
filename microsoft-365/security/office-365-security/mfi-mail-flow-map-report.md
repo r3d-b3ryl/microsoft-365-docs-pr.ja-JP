@@ -14,12 +14,12 @@ ms.custom:
 description: 管理者は、セキュリティ & コンプライアンス センターのメール フロー ダッシュボードでメール フロー マップを使用して、コネクタを使用してコネクタを使用せずに組織と組織間のメール フローを視覚化および追跡する方法について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 03a8b6199adec6df5471f7537bc28809142c6550
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 725489dc92fc43edab13c291129ed78c3ca7915e
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197895"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373106"
 ---
 # <a name="mail-flow-map-in-the-security--compliance-center"></a>セキュリティ コンプライアンス センターのメール フロー &マップ
 
@@ -54,14 +54,14 @@ ms.locfileid: "60197895"
 
 特定の日付範囲のレポートを 1 人または複数の受信者に電子メールで送信するには、[ダウンロードの要求] **をクリックします**。
 
-関連する分析情報は、利用可能な場合はメール フロー マップの下に表示されます (たとえば、可能なメール ループの分析情報 [を修正する](mfi-mail-loop-insight.md))。
+関連する分析情報は、使用可能な場合はメール フロー マップの下に表示されます (たとえば、可能なメール ループ分析情報 [の修正](mfi-mail-loop-insight.md)など)。
 
 ## <a name="details-table-view-for-the-mail-flow-map"></a>メール フロー マップの詳細テーブル ビュー
 
 レポート ビューで **[詳細テーブルの表示** ] をクリックすると、次の情報が表示されます。
 
 - **日付**
-- **分類**
+- **カテゴリ**
 - **コネクタ/サードパーティ のサービス プロバイダー**
 - **送信者/受信者ドメイン**
 - **メッセージ数**

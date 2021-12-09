@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: オンライン データ損失防止ポリシーを計画し、Exchange DLP に移行するMicrosoft 365します。
-ms.openlocfilehash: c1929af423259de770d561421945d471c9022ab4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 744ba3edbee1c6b84df9b8b5316c7df7e734cd6d
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201879"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374066"
 ---
 # <a name="migrate-exchange-online-data-loss-prevention-policies-to-compliance-center"></a>Exchange Online データ損失防止ポリシーをコンプライアンス センターへ移行する
 
@@ -84,7 +84,7 @@ DLP ライセンス要件の詳細な一覧については、「セキュリテ�
 1. 次の質問Exchangeして、DLP とコンプライアンス センター のポリシーを評価します。
 
 
-|質問  |アクション  | 移行手順|
+|質問  |Action  | 移行手順|
 |---------|---------|---------|
 |ポリシーは引き続き必要ですか?    |削除しない場合は、削除または非アクティブ化する |移行しない|
 |他のポリシーまたはコンプライアンス センター DLP Exchange重複していますか?     |はいの場合、重複するポリシーを統合できますか?         |- 別のポリシーと重複するExchange、Exchange 管理センターで統合 DLP ポリシーを手動で作成し、移行ウィザードを使用します。 </br> - 既存のコンプライアンス センター ポリシーと重複している場合は、既存のコンプライアンス センター ポリシーを一致する変更できます。コンプライアンス センター のExchangeしません。|
@@ -116,6 +116,17 @@ DLP ライセンス要件の詳細な一覧については、「セキュリテ�
 9. 移行レポートを確認します。 メールフロー ルールに関連するエラー Exchange注意してください。 それらを修正し、関連付けられたポリシーを再移行できます。
 
 移行されたポリシーは、コンプライアンス センター DLP コンソールの DLP ポリシーの一覧に表示されます。 
+
+## <a name="common-errors-and-mitigation"></a>一般的なエラーと軽減策
+|エラー メッセージ  |理由  | 軽減策/推奨手順|
+|---------|---------|---------|
+|名前を持つコンプライアンス ポリシー `<Name of the policy>` は、シナリオに既に存在します `Dlp` 。    |このポリシーの移行は以前に行われ、同じセッションで再び軽視された可能性があります。 |セッションを更新して、移行に使用できるポリシーの一覧を更新します。 以前に移行されたポリシーはすべて状態である必要 `Already migrated` があります。|
+|名前を持つコンプライアンス ポリシー `<Name of the policy>` は、シナリオに既に存在します `Hold` 。     |同じ名前のアイテム保持ポリシーが同じテナントに存在します。       |- EAC の DLP ポリシーの名前を別の名前に変更します。 </br> - 影響を受け取ったポリシーの移行を再試行します。 |
+|`DLP-group@contoso.com` 配布グループまたはメールが有効なセキュリティ グループなので、Shared By 条件の値として使用することはできません。 特定のグループのメンバーによるアクティビティを検出するには、述語のメンバーによる共有を使用してください。     |トランスポート ルールを使用すると、グループを条件で使用 `sender is` できますが、統合 DLP では使用できません。         | トランスポート ルールを更新して、条件からすべてのグループメール アドレスを削除し、必要に応じてグループ `sender is` を `sender is a member of` 条件に追加します。 影響を受け取ったポリシーの移行を再試行する|
+|受信者が `DLP-group@contoso.com` 見つからな 新しく作成した場合は、しばらくしてから操作を再試行してください。 削除または有効期限が切れた場合は、有効な値でリセットし、もう一度やり直してください。     |条件で使用されているグループ アドレスの有効期限が切れているか無効 `sender is a member of` `recipient is a member of` である可能性があります。         | - 管理センターのトランスポート ルール内のすべての無効なグループ電子メール アドレスを削除Exchangeします。 </br> - 影響を受け取ったポリシーの移行を再試行します。|
+|述語で指定する `FromMemberOf` 値は、メールが有効なセキュリティ グループである必要があります。     |トランスポート ルールを使用すると、個々のユーザーを条件で使用できますが、 `sender is a member of` 統合 DLP では使用できません。         | - トランスポート ルールを更新して、個々のユーザーの電子メール アドレスを条件から削除し、必要に応じてユーザー `sender is a member of` を `sender is` 条件に追加します。 </br> - 影響を受け取ったポリシーの移行を再試行します。|
+|述語で指定する `SentToMemberOf` 値は、メールが有効なセキュリティ グループである必要があります。    |トランスポート ルールを使用すると、個々のユーザーを条件の下で使用できますが、 `recipient is a member of` 統合 DLP では使用できません。         | - トランスポート ルールを更新して、個々のユーザーの電子メール アドレスを条件から削除し、必要に応じてユーザー `recipient is a member of` を `recipient is` 条件に追加します。 </br> - 影響を受け取ったポリシーの移行を再試行します。|
+|パラメーターの `<Name of condition>` 使用は、パラメーターの使用Exchange。 このパラメーターを削除するか、この場所Exchangeします。         | 同じ名前の別のポリシーがコンプライアンス センターに存在し、前述の条件がサポートされていない SPO/ODB/Teams などの他の場所に存在する可能性があります。 | 管理センターで DLP ポリシー Exchange変更し、移行を再試行します。|
 
 ## <a name="testing-and-validation---prateek-and-aakash-to-provide-a-list-of-supported-predicates-and-known-issues-before-publishing--"></a>テストと検証 <!--PRATEEK AND AAKASH TO PROVIDE A LIST OF SUPPORTED PREDICATES AND KNOWN ISSUES BEFORE PUBLISHING-->
 

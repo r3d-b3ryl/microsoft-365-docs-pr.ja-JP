@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 ms.localizationpriority: medium
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 61f4eaa6a32b48f5517b8fb00716aa9cfc328742
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7a81fac1729360bbf892993f5c3bb02142a9689c
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164142"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61369554"
 ---
 # <a name="contact-support-for-iraq"></a>イラクのサポートに問い合わせ
 
-[別の国または地域を検索します](../../business-video/get-help-support.md)。
+[別の国または地域を検索します](../get-help-support.md)。
 
 ## <a name="phone-number"></a>電話番号
 +965 2221 9876

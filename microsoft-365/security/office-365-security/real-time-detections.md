@@ -18,12 +18,12 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c0a2d76904c7f04974315c92425ca30700b10497
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: cf2bd90fb4719e1e742ae8f57ae7cfd6462e5c4a
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962953"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373670"
 ---
 # <a name="explorer-and-real-time-detections-basics"></a>エクスプローラーとリアルタイム検出の基本
 
@@ -57,7 +57,7 @@ ms.locfileid: "60962953"
 ## <a name="differences-between-explorer-and-real-time-detections"></a>エクスプローラーとリアルタイムの検出の違い
 
 - *リアルタイム検出は、Defender* でプラン 1 で使用できるレポート Office 365ツールです。 *Threat Explorer* は、Defender で利用可能な脅威の検出と修復ツールで、Office 365 2 です。
-- リアルタイム検出レポートを使用すると、リアルタイムで検出を表示できます。 脅威エクスプローラーも同様にこれを実行しますが、攻撃キャンペーンの強調表示など、特定の攻撃に関する追加の詳細を提供し、セキュリティ運用チームに脅威を修復する機能 (自動調査[](automated-investigation-response-office.md)と応答調査のトリガーを含む) を提供します。
+- リアルタイム検出レポートを使用すると、リアルタイムで検出を表示できます。 脅威エクスプローラーも同様にこれを行いますが、攻撃キャンペーンの強調表示など、特定の攻撃に関する追加の詳細を提供し、セキュリティ運用チームに脅威を修復する機能 (自動調査と[](automated-investigation-response-office.md)応答調査のトリガーを含む) を提供します。
 - すべての *電子メール ビュー* は脅威エクスプローラーで使用できますが、リアルタイム検出レポートには含まれません。
 - 豊富なフィルター機能と修復アクションは、Threat Explorer に含まれています。 詳細については[、「Microsoft Defender for Office 365 サービスの説明:](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)Defender 全体の機能の可用性」を参照してください。Office 365してください。
 

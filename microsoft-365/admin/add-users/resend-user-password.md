@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9b838071-94aa-4b8e-8d84-d17ece1ee951
 description: パスワードをリセットし、新しいユーザーに電子メールを送信するMicrosoft 365します。
-ms.openlocfilehash: cbd89d2a3f39df90425f6a5b701f3af19bd681a2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bc7504970da6e3844c359fe0652b051c0f9d0225
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60161572"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370598"
 ---
 # <a name="resend-a-users-password---admin-help"></a>ユーザーのパスワードを再送信する - 管理者向けヘルプ
 
@@ -33,7 +33,7 @@ ms.locfileid: "60161572"
 
 ## <a name="before-you-begin"></a>開始する前に
 
-この記事は、職場、学校、または非営利団体のパスワードの有効期限ポリシーを設定する管理者を対象としています。 これらの手順を完了するには、Microsoft 365 の管理者アカウントでサインインする必要があります。 [管理者アカウントとは](/microsoft-365/business-video/admin-center-overview)。
+この記事は、職場、学校、または非営利団体のパスワードの有効期限ポリシーを設定する管理者を対象としています。 これらの手順を完了するには、Microsoft 365 の管理者アカウントでサインインする必要があります。 [管理者アカウントとは?([の概要 Microsoft 365 管理センター](../admin-overview/admin-center-overview.md)。
 
 これらの手順を実行するには [、グローバル管理者またはパスワード](about-admin-roles.md) 管理者である必要があります。
 

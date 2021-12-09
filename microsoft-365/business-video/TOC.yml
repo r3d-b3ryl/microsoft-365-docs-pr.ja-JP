@@ -25,22 +25,16 @@
           href: connect.md
         - name: Microsoft Office アプリをインストールする
           href: install-office.md
-        - name: Outlook をメール用にセットアップする
-          href: setup-outlook.md
         - name: メールをインポートおよびリダイレクトする
           href: import-email.md
-        - name: ファイルを OneDrive に移動する
-          href: files-to-onedrive.md
-        - name: 会社のファイルを SharePoint に移動する
-          href: files-to-sharepoint.md
     - name: モバイル
       items:
         - name: どこからでも作業できる
           href: work-from-anywhere.md
         - name: Android に Office アプリをインストールする
-          href: install-apps-android.md
+          href: 'https://support.microsoft.com/office/6ef2ebf2-fc2d-474a-be4a-5a801365c87f'
         - name: iOS に Office アプリをインストールする
-          href: install-apps-ios.md
+          href: 'https://support.microsoft.com/office/0402b37e-49c4-4419-a030-f34c2013041f'
         - name: Admin モバイル アプリを入手する
           href: admin-mobile.md
     - name: 共同作業
@@ -48,35 +42,35 @@
         - name: Outlook と Teams を使用する
           href: collab-outlook-teams.md
         - name: Teams の使用を開始する
-          href: get-started-teams-small-business.md
+          href: 'https://support.microsoft.com/office/6723dc43-dbc0-46e6-af49-8a2d1c5cb937'
         - name: グループのメール アドレスを作成する
-          href: group-email.md
+          href: 'https://support.microsoft.com/office/3f73d218-52d6-4f88-a733-9ff37073ee4c'
         - name: 共有予定表を作成する
-          href: shared-calendar.md
+          href: 'https://support.microsoft.com/office/353ed2c1-3ec5-449d-8c73-6931a0adab88'
         - name: 組織全体にわたるチームを作成する
-          href: org-wide-team.md
+          href: /microsoftteams/create-an-org-wide-team
         - name: チームを作成してゲストを追加する
-          href: team-with-guests.md
+          href: 'https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f'
         - name: ゲストとしてチームに参加
-          href: join-team-guest.md
+          href: /microsoftteams/guest-experience
         - name: 従業員や顧客とチャットする
-          href: start-and-pin-chats.md
+          href: 'https://support.microsoft.com/office/65748808-a403-462c-a6e1-b169e5bc6c92'
         - name: オンライン会議の概要
           href: overview-online-meetings.md
         - name: ゲストとの会議をスケジュールする
-          href: schedule-guest-meeting.md
+          href: 'https://support.microsoft.com/office/943507a9-8583-4c58-b5d2-8ec8265e04e5'
         - name: ゲストとの会議に参加する
-          href: join-guest-meeting.md
+          href: 'https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508'
     - name: クラウド ストレージ
       items:
         - name: 共有の概要
           href: overview-file-sharing.md
         - name: ファイルを保存する場所
-          href: store-files.md
+          href: 'https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e'
         - name: ファイルを外部と安全に共有する
-          href: securely-share-files-externally.md
+          href: 'https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07'
         - name: ファイルを外部と簡単に共有する
-          href: share-files-externally.md
+          href: 'https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07'
     - name: Business Voice
       items:
         - name: Business Voice の概要
@@ -86,7 +80,7 @@
     - name: 生産性向上アプリ
       items:
         - name: Bookings の概要
-          href: overview-bookings.md
+          href: 'https://support.microsoft.com/office/42d4e852-8e99-4d8f-9b70-d7fc93973cb5'
         - name: Microsoft Lists でビジネス情報を追跡する
           href: track-info-lists.md
         - name: イベントを計画する
@@ -95,8 +89,6 @@
       items:
         - name: 管理者とは
           href: what-is-admin.md
-        - name: 管理センターの概要
-          href: admin-center-overview.md
         - name: 請求書を表示、ダウンロード、または印刷する
           href: view-bill.md
         - name: 新しいライセンスを購入する
@@ -111,8 +103,6 @@
           href: set-up-self-serve-password-reset.md
         - name: ユーザーを追加する
           href: add-user.md
-        - name: ユーザーを削除する
-          href: delete-user.md
         - name: 別の管理者を追加する
           href: add-admin.md
         - name: ユーザー名またはメール アドレスを変更する
@@ -123,8 +113,6 @@
           href: company-wide-signature.md
         - name: サービス利用状況レポートを基に対策を講じる
           href: act-on-report.md
-        - name: 別のドメインを追加する
-          href: add-domain.md
         - name: 新しいビジネス メール アドレスを設定する
           href: set-up-a-new-business-email-address.md
     - name: デバイスの管理
@@ -140,7 +128,7 @@
         - name: 従業員のアカウントを MFA で保護する
           href: turn-on-mfa.md
         - name: スマートフォンで 2 要素サインインを設定する
-          href: set-up-mfa.md
+          href: 'https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14'
         - name: マルウェア検出を有効にする
           href: anti-malware.md
         - name: ランサムウェア用のメール ルールを作成する
@@ -157,8 +145,6 @@
           href: create-sensitivity-labels.md
     - name: サポート
       items:
-        - name: ヘルプまたはサポートを利用する
-          href: get-help-support.md
         - name: ドキュメントやトレーニングを探す
           href: find-help-answers.md
         - name: 従業員のクイック セットアップ

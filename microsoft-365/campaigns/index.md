@@ -24,17 +24,17 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: 小さな企業、独立開業、政治キャンペーンなどを含む中小企業向けの Microsoft 365 Business Premium セキュリティと共同作業に関する推奨事項。
-ms.openlocfilehash: efa38b27680365caeaa207dbbeea9834f46490be
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 小規模ビジネスやキャンペーンで、ユーザーと安全に共同作業を行うMicrosoft 365 Business Premium。
+ms.openlocfilehash: 25cc7e34d3ec0beb3432fb983748c35cda00f962
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200739"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372698"
 ---
-# <a name="microsoft-365-for-smaller-businesses-and-campaigns"></a>中小企業およびキャンペーン向けの Microsoft 365
+# <a name="microsoft-365-for-smaller-businesses-and-campaigns"></a>Microsoft 365 for smaller businesses and campaigns
 
-Microsoft 365 Business Premium を使用している場合、このライブラリのガイダンスは、セキュリティを設定して安全に共同作業を開始するための最も簡単な方法です。 現代の社会において、データと通信を安全に保つことは、とりわけ医療および法務実務、政治キャンペーン、および他の多くの小規模ビジネスの分野において重要な事項です。 このソリューションでは、お客様とお客様のデータを保護するための一連の推奨事項を提供しています。 このライブラリには、ビジネスの種類にかかわらず、推奨される環境をセットアップして使用するためのヘルプが用意されています。
+現代の社会において、データと通信を安全に保つことは、とりわけ医療および法務実務、政治キャンペーン、および他の多くの小規模ビジネスの分野において重要な事項です。 小規模ビジネス内で安全に共同作業Microsoft 365 Business Premiumセキュリティ機能を活用します。 このソリューションでは、お客様とお客様のデータを保護するための一連の推奨事項を提供しています。 このライブラリには、ビジネスの種類にかかわらず、推奨される環境をセットアップして使用するためのヘルプが用意されています。
 
 
 ![Microsoft 365 Business Premiumツール、コラボレーション ツール、ファイル ストレージ、メール、デバイス、ID を保護します。](../media/M365-WhatIsIt-SecurityFocus.png#lightbox)

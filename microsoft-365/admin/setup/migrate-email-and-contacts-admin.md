@@ -30,12 +30,12 @@ search.appverid:
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
 description: Gmail や他のメール プロバイダーから連絡先、予定表、メールをインポートし、Microsoft 365 に移行する方法について説明します。
-ms.openlocfilehash: ffc7bd021ae1a92ec75ab89f439fad886fbf691d
-ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
+ms.openlocfilehash: 16573cd9658762c1b04417ef03bd3e96373fd349
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "61311772"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371858"
 ---
 # <a name="migrate-email-and-contacts-to-microsoft-365"></a>Microsoft 365 へのメールと連絡先の移行
 
@@ -105,4 +105,4 @@ Outlook にアカウント (個人用 Gmail アカウントなど) を追加し�
 
 [ビジネス向けMicrosoft 365のセットアップを](plan-your-setup.md)計画する (記事)\
 [アプリケーションOfficeインストール](install-applications.md)(リンク ページ)\
-[Microsoft 365 管理センターの概要](../../business-video/admin-center-overview.md) (ビデオ)
+[概要] Microsoft 365 管理センター][[Microsoft 365 管理センター](../admin-overview/admin-center-overview.md)の概要 (ビデオ)

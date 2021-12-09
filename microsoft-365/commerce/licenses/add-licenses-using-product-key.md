@@ -21,12 +21,12 @@ search.appverid: MET150
 description: プロダクト キーを使用してサブスクリプションにライセンスを追加または拡張する方法について学習します。
 ROBOTS: NOINDEX
 ms.date: 04/07/2021
-ms.openlocfilehash: a3d6f2d87952a9601a422854c1df2f96f497efdf
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e9fed54eb7006906e7d54888709c14cdbff8a903
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60194719"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370958"
 ---
 # <a name="add-licenses-to-or-extend-a-subscription-paid-for-using-a-product-key"></a>プロダクト キーを使用して支払われたサブスクリプションにライセンスを追加または拡張する
 
@@ -39,13 +39,7 @@ ms.locfileid: "60194719"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">お使いの製品</a>] ページの順に移動します。
-
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
@@ -65,18 +59,12 @@ ms.locfileid: "60194719"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">お使いの製品</a>] ページの順に移動します。
-
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[お使いの製品]</a> ページの順に移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">お使いの製品</a>] ページの順に移動します。
 ::: moniker-end
 
 2. **[製品]** タブで、延長するサブスクリプションを選択します。

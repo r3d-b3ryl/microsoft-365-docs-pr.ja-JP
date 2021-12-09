@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: この記事では、特定のケースを作成および管理するAdvanced eDiscovery説明します。 最初の手順は、ケースを作成し、新しい機能Advanced eDiscovery使用を開始します。
-ms.openlocfilehash: 9969f0afa63094f2a7bf49df921f61dd0d3da2a3
-ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
+ms.openlocfilehash: f647421dcaba3d50f1cb8b7a6b1e58a792f23403
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/22/2021
-ms.locfileid: "61137137"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372722"
 ---
 # <a name="create-and-manage-an-advanced-ediscovery-case"></a>ケースの作成と管理Advanced eDiscoveryする
 
@@ -97,7 +97,7 @@ ms.locfileid: "61137137"
 
    - [ドキュメントを表示します](view-documents-in-review-set.md)。 これには、レビュー セット内の各ドキュメントのメタデータの表示、ネイティブ バージョンまたはテキスト バージョンでのドキュメントの表示が含まれます。
 
-   - [クエリとフィルターを作成します](review-set-search.md)。 検索クエリは、さまざまな検索条件 (すべてのファイル メタデータ プロパティを検索する [機能を含](document-metadata-fields-in-advanced-ediscovery.md)む) を使用して作成し、ケース データをさらに絞り込み、ケースに最も関連性の高いデータを作成します。 また、レビュー セット フィルターを使用して、検索クエリの結果に他の条件をすばやく適用して、それらの結果をさらに絞り込む場合にも使用できます。 
+   - [クエリとフィルターを作成します](review-set-search.md)。 さまざまな検索条件を使用して検索クエリを作成します (すべてのファイル メタデータ[](document-metadata-fields-in-advanced-ediscovery.md)プロパティを検索してケース データをさらに絞り込み、ケースに最も関連のあるデータに絞り込む機能を含む)。 また、レビュー セット フィルターを使用して、検索クエリの結果に他の条件をすばやく適用して、それらの結果をさらに絞り込む場合にも使用できます。 
 
    - [タグを作成して使用します](tagging-documents.md)。 レビュー セット内のドキュメントにタグを適用して、応答する (またはケースに対して応答しない) タグを識別し、タグ付きドキュメントを含めるか除外する検索クエリを作成するときにそれらのタグを使用できます。 タグを付け、エクスポートするドキュメントを決定できます。
 

@@ -20,19 +20,19 @@ ms.custom:
 search.appverid: MET150
 description: ユーザー ライセンスが 25 未満の場合は、いつでも管理センターから一般法人向け Microsoft 365 の試用版または有料版サブスクリプションをキャンセルできます。
 ms.date: 09/16/2021
-ms.openlocfilehash: 942953f586a65659609660363593c0f6e86c8ca6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e24c2bc4067f046c86af2f72e3105bc20a69b732
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60204577"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373310"
 ---
 # <a name="cancel-your-subscription"></a>サブスクリプションをキャンセルする
 
 > [!IMPORTANT]
 > この記事は、一般法人向け Microsoft 365 サブスクリプションにのみ適用されます。 Microsoft 365 Family または Personal をお持ちの場合は、「[Microsoft 365 サブスクリプションのキャンセル](https://support.microsoft.com/en-us/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b?OCID=M365_DocsCancel_Link)」を参照してください。
 
-*対象*: ユーザーに割り当てたライセンスが 25 より少ない場合は、いつでも Microsoft 365 管理センターから一般法人向け Microsoft 365 の試用版または有料版サブスクリプションをオンラインでキャンセルできます。 ユーザーに割り当てられたライセンスが 25 よりも多い場合は、ライセンスを 25 未満に減らすか、[サポートに連絡してサブスクリプションをキャンセルします](../../business-video/get-help-support.md)。
+*対象*: ユーザーに割り当てたライセンスが 25 より少ない場合は、いつでも Microsoft 365 管理センターから一般法人向け Microsoft 365 の試用版または有料版サブスクリプションをオンラインでキャンセルできます。 ユーザーに割り当てられたライセンスが 25 よりも多い場合は、ライセンスを 25 未満に減らすか、[サポートに連絡してサブスクリプションをキャンセルします](../../admin/get-help-support.md)。
 
 *返金*: 日割り計算された残高は、次の請求サイクルの間に返金されます。
 
@@ -52,12 +52,6 @@ ms.locfileid: "60204577"
 ::: moniker range="o365-worldwide"
 
 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[お使いの製品]</a> ページの順に移動します。
 
 ::: moniker-end
 

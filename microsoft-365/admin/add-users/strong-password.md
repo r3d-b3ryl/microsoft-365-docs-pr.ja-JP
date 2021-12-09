@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ユーザーに強力なパスワード要件を設定する方法については、Windows PowerShell。
-ms.openlocfilehash: 90ce3949b88a186c573d2a7718ede10b1a955c2c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 25e0db3da797fbcaa78dbf91bd81abce0104d725
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154123"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370586"
 ---
 # <a name="turn-off-strong-password-requirements-for-users"></a>ユーザーの強力なパスワード要件をオフにする
 
@@ -34,7 +34,7 @@ ms.locfileid: "60154123"
 
 ## <a name="before-you-begin"></a>はじめに
 
-この記事は、ビジネス、学校、または非営利団体のパスワード ポリシーを管理するユーザー向けです。 これらの手順を完了するには、Microsoft 365 の管理者アカウントでサインインする必要があります。 [管理者アカウントとは](/microsoft-365/business-video/admin-center-overview) これらの手順を実行するには [、グローバル管理者またはパスワード](about-admin-roles.md) 管理者である必要があります。
+この記事は、ビジネス、学校、または非営利団体のパスワード ポリシーを管理するユーザー向けです。 これらの手順を完了するには、Microsoft 365 の管理者アカウントでサインインする必要があります。 [管理者アカウントとは?([[管理者の概要Microsoft 365 管理センター](../admin-overview/admin-center-overview.md)これらの手順を実行するには、グローバル[管理者またはパスワード](about-admin-roles.md)管理者である必要があります。
 
 PowerShell を使用して、Microsoft 365接続する必要があります。
 

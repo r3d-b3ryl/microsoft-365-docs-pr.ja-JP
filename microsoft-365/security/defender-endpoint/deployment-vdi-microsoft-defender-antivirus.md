@@ -10,17 +10,17 @@ ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 10/18/2021
+ms.date: 12/08/2021
 ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 6e40f310f7ebf78ba85d894fd79cfcdbac6bf8af
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 46eab67f459e763a212178d768f9a411aaf7adb7
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166448"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372626"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>仮想デスクトップ インフラストラクチャ (VDI) 環境での Microsoft Defender ウイルス対策の展開ガイド
 
@@ -30,7 +30,7 @@ ms.locfileid: "61166448"
 
 標準のオンプレミスまたはハードウェア構成に加えて、リモート デスクトップ (RDS) または仮想デスクトップ インフラストラクチャ (VDI) 環境でも Microsoft Defender ウイルス対策 を使用できます。
 
-サービス[と VDI のサポート](/azure/virtual-desktop)の詳細については、「Azure Virtual Desktop のドキュメントMicrosoft リモート デスクトップ参照してください。
+サービスと VDI のMicrosoft リモート デスクトップ詳細については[、「Azure Virtual Desktop のドキュメント」を参照してください](/azure/virtual-desktop)。
 
 Azure ベースの仮想マシンについては[、「Install Endpoint Protection Microsoft Defender for Cloud」を参照してください](/azure/security-center/security-center-install-endpoint-protection)。
 
@@ -106,6 +106,29 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 1 日 1 回から始めるのをお勧めしますが、影響を理解するために頻度を増やしたり減らしたりして試す必要があります。
 
 通常、セキュリティ インテリジェンス パッケージは 3 ~ 4 時間に 1 回発行されます。 頻度を 4 時間より短く設定すると、管理マシンのネットワーク オーバーヘッドが増加し、利益が得らないのでお勧めしません。
+
+また、単一のサーバーまたはコンピューターをセットアップして、VM に代わって更新プログラムを一定の間隔でフェッチし、使用するためにファイル共有に配置することもできます。
+これは、デバイスが共有への読み取りアクセス許可と NTFS アクセス許可を持ち、更新プログラムを利用できる場合に可能です。
+
+これを行うには、次の手順を実行します。
+ 1. SMB/CIFS ファイル共有を作成します。 
+ 
+ 2. 次の例を使用して、次の共有アクセス許可を持つファイル共有を作成します。
+
+    ```PowerShell
+    PS c:\> Get-SmbShareAccess -Name mdatp$
+
+    Name   ScopeName AccountName AccessControlType AccessRight
+    ----   --------- ----------- ----------------- -----------
+    mdatp$ *         Everyone    Allow             Change
+    ```
+   
+    > [!NOTE]
+    > 認証されたユーザーの NTFS アクセス許可 **が追加されます。読み取り:** です。 
+
+    この例では、ファイル共有は次のようになります。
+
+    \\fileserver.fqdn\mdatp$\wdav-update
 
 ### <a name="set-a-scheduled-task-to-run-the-powershell-script"></a>PowerShell スクリプトを実行するスケジュールされたタスクを設定する
 
@@ -205,7 +228,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 ## <a name="scan-vms-that-have-been-offline"></a>オフラインの VM をスキャンする
 
-1. グループ ポリシー エディターで、[スキャン] の [Windows **コンポーネント** \> **Microsoft Defender ウイルス対策** \> **移動します**。
+1. グループ ポリシー エディターで、[スキャン] Windows **コンポーネントMicrosoft Defender ウイルス対策** \>  \> **移動します**。
 
 2. [ **キャッチアップ クイック スキャンを有効にする] を選択** し、ポリシー設定を編集します。
 

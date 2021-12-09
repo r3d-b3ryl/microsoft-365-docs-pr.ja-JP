@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Microsoft 365 Apps for business サブスクリプションのセットアップ方法について説明します。
-ms.openlocfilehash: 2a21ba525fa743b8a9105e571717d80d4eb42258
-ms.sourcegitcommit: cd3f5e3b7fea37fdcd8c811d01afd60ea68301ca
+ms.openlocfilehash: 48b26e3c19ba8c02798e9eb365ab763b03a1029a
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61254383"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373430"
 ---
 # <a name="set-up-microsoft-365-apps-for-business"></a>Microsoft 365 Apps for business をセットアップする
 
@@ -40,12 +40,6 @@ ms.locfileid: "61254383"
  ::: moniker range="o365-worldwide"
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> から管理センターにアクセスします。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a> から管理センターにアクセスします。
 
 ::: moniker-end
 
@@ -73,12 +67,6 @@ ms.locfileid: "61254383"
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-Office 365 Germany を使用している場合は、[https://portal.office.de/OLS/MySoftware.aspx](https://portal.office.de/OLS/MySoftware.aspx) にアクセスします。
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 21Vianet が運営する Office 365 を使用している場合は、[https://portal.partner.microsoftonline.cn/OLS/MySoftware.aspx](https://portal.partner.microsoftonline.cn/OLS/MySoftware.aspx) にアクセスします。
@@ -99,7 +87,7 @@ Office 365 Germany を使用している場合は、[https://portal.office.de/OL
   
 ## <a name="store-files-online"></a>オンラインでファイルを保存する
 
-Microsoft では、ファイルを簡単にオンラインで保存できます。ビジネスに最適な保存場所については、「[Office 365 でファイルを保存する場所](../../business-video/store-files.md)」を参照してください。
+Microsoft では、ファイルを簡単にオンラインで保存できます。ビジネスに最適な保存場所については、「[Office 365 でファイルを保存する場所](https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e)」を参照してください。
   
 管理者がユーザーの Microsoft アカウントを作成すると、ユーザーには自動的に **OneDrive** クラウド ストレージの場所が付与されます。OneDrive を使用すると、コンピューター、スマートフォン、タブレットのどのデバイスでもファイルにアクセスすることができます。
   

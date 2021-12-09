@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: e18874eabbd2f1ddf31a9a303718eb9430f8d34e
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 4efe1460374350d054bbe6d19543c75454d7b5ce
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61282791"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370322"
 ---
 # <a name="update-alert"></a>アラートを更新する
 
@@ -62,7 +62,7 @@ ms.locfileid: "61282791"
 > ユーザー資格情報を使用してトークンを取得する場合:
 >
 > - ユーザーは、少なくとも次の役割のアクセス許可を持っている必要があります。 'アラートの調査' (詳細については、「役割の作成と [管理」を参照してください](user-roles.md) )
-> - ユーザーは、デバイス グループ設定に基づいて、アラートに関連付けられたデバイスにアクセスする必要があります (詳細については、「デバイス グループの作成と管理」 [を参照してください](machine-groups.md))
+> - ユーザーは、デバイス グループ設定に基づいて、アラートに関連付けられたデバイスにアクセスする必要があります (詳細については、「デバイス グループの作成と [管理」を参照してください)](machine-groups.md)
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -72,7 +72,7 @@ PATCH /api/alerts/{id}
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**。
 Content-Type|文字列|application/json. **必須**。
@@ -85,7 +85,7 @@ Content-Type|文字列|application/json. **必須**。
 
 最適なパフォーマンスを得る場合は、変更していない既存の値を含めてはならない。
 
-プロパティ|種類|説明
+プロパティ|型|説明
 :---|:---|:---
 状態|String|アラートの現在の状態を指定します。 プロパティの値は、'New'、'InProgress'、および 'Resolved' です。
 assignedTo|String|アラートの所有者

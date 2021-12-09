@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: ケースの分析時にドキュメント セットを整理するために使用できるツールAdvanced eDiscoveryします。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 0beee7a458d7cf1e6094ccf856399882c55addf1
-ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
+ms.openlocfilehash: 829e6e6441403cf5a934e81a1a437f65d2de3db3
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/22/2021
-ms.locfileid: "61137077"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61369698"
 ---
 # <a name="analyze-data-in-a-review-set-in-advanced-ediscovery"></a>レビュー セット内のデータを分析Advanced eDiscovery
 
@@ -48,7 +48,7 @@ ms.locfileid: "61137077"
 
 分析の進行状況は、ケースの [ **ジョブ]** タブで確認できます。
 
- 分析が完了したら、分析レポートを表示し、分析の出力でレビュー セット内でクエリを実行し (「レビュー[](review-set-search.md)セット内のクエリ」を参照)、特定のドキュメントの関連ドキュメントを[](reviewing-data-in-review-set.md)参照できます (「レビュー セットのデータのレビュー」を参照)。
+ 分析が完了したら、分析レポートを表示し、分析の出力でレビュー セット内でクエリを実行できます (「レビュー[](review-set-search.md)セット内のクエリ」を参照し、特定のドキュメントの関連ドキュメントを[](reviewing-data-in-review-set.md)参照してください (「レビュー セットのデータのレビュー」を参照)。
 
 ## <a name="using-the-for-review-filter-query"></a>For Review フィルター クエリの使用
 

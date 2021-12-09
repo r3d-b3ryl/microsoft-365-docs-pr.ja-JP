@@ -22,12 +22,12 @@ ms.custom:
 - AdminTemplateSet
 description: 販売店から Microsoft 365 Business Standard 購入した場合は、プロダクト キーを引き換え、サブスクリプションをアクティブ化する方法を説明します。
 ms.date: 11/13/2020
-ms.openlocfilehash: d872a61de9f2d704f6cee92234d3358ca0d1c26f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 149fd15529937d3d8301b90ccfeefcd3e76664e0
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195871"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370106"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Microsoft 365 Business Standard のプロダクト キーを入力する
 
@@ -63,7 +63,7 @@ Microsoft 365 for Business を初めて使用する場合は、[Microsoft 365 �
 
 一般的なエラーと解決策の一覧については、「[一般法人向け Microsoft 365 プロダクト キーの問題](product-key-errors-and-solutions.md)」を参照してください。
   
-または、[Microsoft サポートにお電話ください](../business-video/get-help-support.md)。
+または、[Microsoft サポートにお電話ください](../admin/get-help-support.md)。
 
 ## <a name="related-content"></a>関連コンテンツ
 

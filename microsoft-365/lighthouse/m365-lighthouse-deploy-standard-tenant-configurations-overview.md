@@ -1,6 +1,6 @@
 ---
 title: 基準計画を使用した標準テナント構成の展開の概要
-f1.keywords: NOCSH
+f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 管理サービス プロバイダー (MSP) の場合は、Microsoft 365 Lighthouseを使用して標準的なテナント構成を展開する方法について説明します。
-ms.openlocfilehash: 2818b0e611bad7ae8895a1f44dcf557cb293aba8
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 2af4c374fcbfdd7ee0e1c76e18fd749043851dde
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554950"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372638"
 ---
 # <a name="overview-of-using-baselines-to-deploy-standard-tenant-configurations"></a>基準計画を使用した標準テナント構成の展開の概要 
 

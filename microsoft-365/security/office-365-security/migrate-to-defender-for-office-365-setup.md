@@ -19,12 +19,12 @@ ms.custom: migrationguides
 description: サード パーティ製の保護サービスまたはデバイスから Microsoft Defender への移行を開始する手順を実行して、Office 365します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 70ccdf6fe80a802bafec6617c19488af88040478
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: a89924fbd30631c42c9a39be7384e642c2755746
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60779189"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370658"
 ---
 # <a name="migrate-to-microsoft-defender-for-office-365---phase-2-setup"></a>Microsoft Defender に移行して、Office 365 - フェーズ 2: セットアップ
 
@@ -63,7 +63,7 @@ ms.locfileid: "60779189"
 
 テストを開始する準備ができたら、これらのグループを例外として [SCL=-1](#step-3-maintain-or-create-the-scl-1-mail-flow-rule)メール フロー ルールに追加します。 Defender for Office 365 のさまざまな保護機能のポリシーを作成する場合、ポリシーの適用対象を定義する条件としてこれらのグループを使用します。
 
-**注意**:
+**注**:
 
 - Standard と Strict という用語[](recommended-settings-for-eop-and-office365.md)は、事前設定されたセキュリティ ポリシーでも使用される、推奨されるセキュリティ設定[に基きます](preset-security-policies.md)。 理想的には、標準および厳密な事前設定のセキュリティ ポリシーでパイロット ユーザーを定義する必要がありますが、これを行う必要があります。 どうしてでしょうか? 事前設定されたセキュリティ ポリシー (特に、メッセージに対して実行されるアクション、または偽装保護設定の調整) で設定をカスタマイズできないためです。 移行テスト中に、メッセージに対して Defender for Office 365 が何を行うのかを確認し、それが何を行うのかを確認し、それらの結果を許可または防止するためにポリシー構成を調整する場合があります。
 
@@ -121,7 +121,7 @@ SCL=-1 メール フロー ルールは、次の理由で移行中に重要で�
 
 最初に行う必要があるのは、既存の保護サービスから Microsoft 365 へのメール フローに使用されるコネクタの拡張フィルター処理 [(スキップ](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)*リストとも呼* ばれる) を構成します。 受信メッセージ レポート [を使用すると、コネクタ](/exchange/monitoring/mail-flow-reports/mfr-inbound-messages-and-outbound-messages-reports) の識別に役立ちます。
 
-インターネット メッセージが実際にどこから来たのOffice 365を確認するには、Defender がコネクタの拡張フィルター処理を行う必要があります。 拡張コネクタのフィルター処理は、Microsoft フィルター スタック (特にスプーフィング[](anti-spoofing-protection.md)インテリジェンス) の精度と、脅威エクスプローラーおよび自動[](threat-explorer.md)調査 &[応答 (AIR)](automated-investigation-response-office.md)の侵害後の機能を大幅に向上します。
+インターネット メッセージが実際にどこから来たのOffice 365を確認するには、Defender がコネクタの拡張フィルター処理を行う必要があります。 拡張コネクタのフィルター処理により、Microsoft フィルター スタック (特にスプーフィング[](anti-spoofing-protection.md)インテリジェンス) の精度が大幅に向上し、[](threat-explorer.md)脅威エクスプローラーと自動調査[& 応答 (AIR)](automated-investigation-response-office.md)の侵害後の機能も向上します。
 
 コネクタの拡張フィルターを正しく有効にするには、受信メールを Microsoft 365 にルーティングするすべてのサード パーティ サービスまたはオンプレミスの電子メール システム ホストのパブリック **IP** \* \* **\* \*** アドレスを追加する必要があります。
 
@@ -157,7 +157,7 @@ SCL=-1 メール フロー ルールは、次の理由で移行中に重要で�
 > [!NOTE]
 > 既にラップまたは書き換え済みのリンクの折り返しや書き換えはサポートされていません。 現在の保護サービスで電子メール メッセージ内のリンクが既にラップまたは書き換えされている場合は、パイロット ユーザーに対してこの機能をオフにする必要があります。 この問題が発生しない方法の 1 つは、[リンク] ポリシーで他のサービスの URL ドメインセーフです。
 >
-> セーフサポートされているアプリのOffice保護は、すべてのライセンスユーザーに適用されるグローバル設定です。 特定のユーザーではなく、グローバルに有効またはオフにできます。 詳細については、「Configure[セーフ Links protection for Office 365」を参照してください](configure-global-settings-for-safe-links.md#configure-safe-links-protection-for-office-365-apps-in-the-microsoft-365-defender-portal)。
+> セーフサポートされているアプリOfficeリンク保護は、すべてのライセンスユーザーに適用されるグローバル設定です。 特定のユーザーではなく、グローバルに有効またはオフにできます。 詳細については、「Configure[セーフ Links protection for Office 365」を参照してください](configure-global-settings-for-safe-links.md#configure-safe-links-protection-for-office-365-apps-in-the-microsoft-365-defender-portal)。
 
 パイロット ユーザーセーフリンク ポリシーを作成します。 セーフ リンクの誤検知の可能性もかなり低いですが、添付ファイルよりも少ない数のパイロット ユーザーでこの機能をテストセーフ必要があります。 この機能はユーザー エクスペリエンスに影響を与えるので、ユーザーを教育する計画を検討する必要があります。
 

@@ -20,14 +20,15 @@ description: Microsoft Defender の自動調査と対応機能を使用して、
 ms.custom:
 - air
 - seo-marvel-mar2020
+- admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e3329186d7ec0ece2b3d2261b97f784b3eba50d5
-ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
+ms.openlocfilehash: 130fb0fc09567e66c17018c45b7dcbd8785fd9e4
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60724741"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370682"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Microsoft Defender の自動調査と応答 (AIR) Office 365
 
@@ -81,7 +82,7 @@ Microsoft Defender for Office 365修復アクションは自動的に実行さ�
 - [マルウェア対策保護](protect-against-threats.md#part-1---anti-malware-protection-in-eop)
 - [フィッシング対策保護](../office-365-security/protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365)
 - [スパム対策保護](protect-against-threats.md#part-3---anti-spam-protection-in-eop)
-- [セーフリンクとセーフ添付ファイル](protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
+- [セーフリンクと添付ファイルセーフリンク](protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
 
 さらに、組織のアラート [ポリシー](../../compliance/alert-policies.md)(特に脅威管理カテゴリの既定のポリシー) を確認 [してください](../../compliance/alert-policies.md#default-alert-policies)。
 
@@ -95,7 +96,7 @@ Microsoft 365には、管理者のアクセス許可の悪用、マルウェア�
 
 |通知|重要度|アラートの生成方法|
 |---|---|---|
-|悪意のある可能性がある URL のクリックが検出されました|**High**|このアラートは、次の場合に生成されます。 <ul><li>組織のリンクで保護[セーフユーザー](safe-links.md)が悪意のあるリンクをクリックする</li><li>URL の評決の変更は、Microsoft Defender によって特定Office 365</li><li>ユーザーはセーフリンクの警告ページを上書きします (組織の [リンク][セーフに基づく](set-up-safe-links-policies.md))。</li></ul> <p> このアラートをトリガーするイベントの詳細については[、「Set up セーフリンク ポリシー」を参照してください](set-up-safe-links-policies.md)。|
+|悪意のある可能性がある URL のクリックが検出されました|**High**|このアラートは、次の場合に生成されます。 <ul><li>組織のリンクで保護[セーフユーザー](safe-links.md)が悪意のあるリンクをクリックする</li><li>URL の評決の変更は、Microsoft Defender によって特定Office 365</li><li>ユーザーはセーフリンクの警告ページを上書きします (組織の [リンク][セーフポリシーに基づいて)。](set-up-safe-links-policies.md)</li></ul> <p> このアラートをトリガーするイベントの詳細については[、「Set up セーフリンク ポリシー」を参照してください](set-up-safe-links-policies.md)。|
 |電子メール メッセージがマルウェアまたはフィッシングとしてユーザーによって報告される|**情報**|このアラートは、組織のユーザーがレポート メッセージ アドインまたはレポートフィッシング[](enable-the-report-message-add-in.md)アドインを使用してフィッシングメールとしてメッセージを[報告するときに生成されます](enable-the-report-phish-add-in.md)。|
 |配信後にマルウェアを含む電子メール メッセージが削除される|**情報**|このアラートは、マルウェアを含む電子メール メッセージが組織内のメールボックスに配信されると生成されます。 このイベントが発生した場合、Microsoft はゼロ時間自動削除[(ZAP)](zero-hour-auto-purge.md)を使用して、Exchange Onlineメールボックスから感染したメッセージを削除します。|
 |配信後にフィッシング URL を含む電子メール メッセージが削除される|**情報**|このアラートは、フィッシングを含むメッセージが組織内のメールボックスに配信されると生成されます。 このイベントが発生した場合、Microsoft は ZAP を使用して、Exchange Onlineから感染したメッセージ[を削除します](zero-hour-auto-purge.md)。|
@@ -133,10 +134,10 @@ Microsoft Defender で既に AIR 機能を使用している場合は、Office 3
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="統合アクション センター。":::
 
-新しく改善されたMicrosoft 365 Defenderポータルには[、Microsoft Defender](defender-for-office-365.md) for microsoft Defender と Microsoft Defender for Endpoint Office 365 AIR 機能が[統合されています](../defender-endpoint/automated-investigations.md)。 これらの更新プログラムと改善により、セキュリティ運用チームは、メール、共同作業のコンテンツ、ユーザー アカウント、デバイスに対する自動調査と修復処理に関する詳細を 1 か所で確認できます。
+新しく改良されたポータル<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender、Microsoft</a> Defender for [microsoft Defender for](defender-for-office-365.md) Office 365エンドポイントの AIR 機能が[統合されています](../defender-endpoint/automated-investigations.md)。 これらの更新プログラムと改善により、セキュリティ運用チームは、メール、共同作業のコンテンツ、ユーザー アカウント、デバイスに対する自動調査と修復処理に関する詳細を 1 か所で確認できます。
 
 > [!TIP]
-> 新しいMicrosoft 365 Microsoft 365 Defenderポータル ( <https://security.microsoft.com> ) は、次のセンターを置き換える。
+> 新しいポータル<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender、次</a>のセンターが置き換まれます。
 >
 > - セキュリティ & コンプライアンス センター ( <https://protection.office.com> )
 > - Microsoft Defender セキュリティ センター ( <https://securitycenter.windows.com> )

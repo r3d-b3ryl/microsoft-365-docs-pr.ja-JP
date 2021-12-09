@@ -14,16 +14,16 @@ search.appverid:
 ms.collection: Strat_O365_Enterprise
 description: Microsoft が暗号化テクノロジを使用して Microsoft Dynamics 365 の顧客データを保護する方法について説明します。Microsoft データベース内および転送中に保存中。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6fc07bba7ceccdfd2b215e29ef48dbd1f23c0cdf
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ba3dbef73b7674364f19e83befdbb8cdfe417ad6
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206075"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372386"
 ---
 # <a name="encryption-in-microsoft-dynamics-365"></a>Microsoft Dynamics 365 での暗号化
 
-Microsoft では、暗号化テクノロジを使用して、ユーザー デバイスとデータセンター間の転送中に、Dynamics 365 の顧客データを保護します。 顧客と Microsoft データセンター間で確立された接続は暗号化され、すべてのパブリック エンドポイントは業界標準の TLS を使用してセキュリティで保護されます。 TLS は、セキュリティが強化されたブラウザー間接続を効果的に確立し、デスクトップとデータセンター間のデータの機密性と整合性を確保します。 データ暗号化をアクティブ化した後は、オフにすることはできません。 詳細については、「フィールド レベル [のデータ暗号化」を参照してください](/previous-versions/dynamicscrm-2016/developers-guide/dn481562(v=crm.8))。
+Microsoft は暗号化テクノロジを使用して、ユーザー デバイスとデータセンター間の転送中に、Dynamics 365 の顧客データを保護します。 顧客と Microsoft データセンター間で確立された接続は暗号化され、すべてのパブリック エンドポイントは業界標準の TLS を使用してセキュリティで保護されます。 TLS は、セキュリティが強化されたブラウザー間接続を効果的に確立し、デスクトップとデータセンター間のデータの機密性と整合性を確保します。 データ暗号化をアクティブ化した後は、オフにすることはできません。 詳細については、「フィールド レベル [のデータ暗号化」を参照してください](/previous-versions/dynamicscrm-2016/developers-guide/dn481562(v=crm.8))。
 
 Dynamics 365 はMicrosoft SQL Server、ユーザー名や電子メール パスワードなどの機密情報を含む一連の既定のエンティティ属性に対して、標準のセル レベルの暗号化を使用します。 この機能は、組織が FIPS 140-2 に関連するコンプライアンス要件を満たすのに役立ちます。 フィールド レベルのデータ暗号化は[、Dynamics](/previous-versions/dynamicscrm-2016/administering-dynamics-365/hh699800(v=crm.8))365 インスタンスと電子メール サービスの統合を可能にするには、ユーザー名とパスワードを保存する必要がある Microsoft Dynamics CRM メール ルーターを活用するシナリオで特に重要です。
 

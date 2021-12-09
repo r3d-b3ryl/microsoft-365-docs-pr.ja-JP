@@ -23,12 +23,12 @@ ms.custom:
 - okr_smb
 - AdminTemplateSet
 description: 各受信者の名前を入力Microsoft 365 管理センターグループに電子メールを送信できるよう、配布グループまたはリストを作成します。
-ms.openlocfilehash: 4eb98e0be0dcfef8d1648aabe4c9a35106814e52
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 128f7bb028a115f521f65412e3e8a36c48119a6c
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197823"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373958"
 ---
 # <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>グループ内に配布グループを作成Microsoft 365 管理センター
   
@@ -41,12 +41,6 @@ ms.locfileid: "60197823"
 ::: moniker range="o365-worldwide"
 
 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> から管理センターにアクセスします。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a> から管理センターにアクセスします。
 
 ::: moniker-end
 

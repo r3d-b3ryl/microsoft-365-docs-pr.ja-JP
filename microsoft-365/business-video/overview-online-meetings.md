@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ビジネス向けのオンライン会議をホストする方法について説明します。
-ms.openlocfilehash: 9988caf32fe36d74b90da217ffb6114f2986f7f8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: HT
+ms.openlocfilehash: cb5e777860c2c8a87f2353f7759a8039e582494f
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60194755"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371510"
 ---
 # <a name="host-online-meetings-for-your-business"></a>ビジネスのためのオンライン会議を主催する
 
@@ -33,7 +33,7 @@ ms.locfileid: "60194755"
 
 [無料版](https://support.microsoft.com/office/6d79a648-6913-4696-9237-ed13de64ae3c)をダウンロードするか、[jブラウザーで参加](https://support.microsoft.com/office/1613bb53-f3fa-431e-85a9-d6a91e3468c9) して、ビデオと画面の共有を取得できます。
 
-クライアント、顧客、またはパートナーと頻繁にプロジェクトで緊密に共同作業する場合は、[クライアントのチームを作成する](team-with-guests.md)ことをお考えください。会議に簡単に招待し、会話、ファイルの共有、プロジェクトの追跡をすべて Microsoft Teams で行うことができます。
+クライアント、顧客、またはパートナーと頻繁にプロジェクトで緊密に共同作業する場合は、[クライアントのチームを作成する](https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f)ことをお考えください。会議に簡単に招待し、会話、ファイルの共有、プロジェクトの追跡をすべて Microsoft Teams で行うことができます。
 
 インフォグラフィックをダウンロードして、Microsoft Teams でオンライン会議に参加またはホストする方法の概要を簡単に確認できます。
 

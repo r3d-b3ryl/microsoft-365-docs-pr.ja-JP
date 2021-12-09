@@ -21,12 +21,12 @@ search.appverid: MET150
 description: E4 サブスクリプションからアップグレードするOffice 365します。
 ms.date: 08/14/2020
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1b909a6a40359e5d3f73b79bfd28ddff1037ea53
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c028106e13c12c3d9c702262911a251080cefb6a
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60151280"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372398"
 ---
 # <a name="upgrade-from-an-office-365-e4-subscription"></a>E4 サブスクリプションOffice 365アップグレードする
 
@@ -63,7 +63,7 @@ ms.locfileid: "60151280"
 3. [アップグレード] **タブを選択** します。他のプランが一覧表示されている場合は、プランを自動的にアップグレードできます。
 4. 自動的にアップグレードできない場合は、アップグレードできない理由を示すメッセージが表示されます。
 
-プランを自動的にアップグレードできない理由は複数あります。 問題のほとんどは、サービス正常性の問題などの一時的な問題であり、解決することができます。 詳細については、「なぜプランをアップグレード [できないのか」を参照してください。](upgrade-to-different-plan.md#why-cant-i-upgrade-plans) アップグレードに関するサポートが必要な場合は、サポート [にお問い合わせください](../../business-video/get-help-support.md)。
+プランを自動的にアップグレードできない理由は複数あります。 問題のほとんどは、サービス正常性の問題などの一時的な問題であり、解決することができます。 詳細については、「なぜプランをアップグレード [できないのか」を参照してください。](upgrade-to-different-plan.md#why-cant-i-upgrade-plans) アップグレードに関するサポートが必要な場合は、サポート [にお問い合わせください](../../admin/get-help-support.md)。
 
 ## <a name="will-a-credit-check-be-required"></a>クレジット チェックが必要ですか?
 

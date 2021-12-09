@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 の生産性図
-description: これらの図 (アーキテクチャ図Teams使用して、生産性ソリューションを実装するためのアーキテクチャMicrosoft 365理解します。
+description: これらのアーキテクチャ図を使用して、Microsoft 365およびMicrosoft Teamsソリューションを実装する方法について説明します。
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: a3d576b5b507ea7a3468a472c3690495114d2410
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: b49e6c98970012989bfa22f2e3c419796a47a700
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61122563"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372470"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Microsoft 365 の生産性図
 

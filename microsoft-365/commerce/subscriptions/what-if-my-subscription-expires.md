@@ -20,18 +20,18 @@ ms.custom:
 search.appverid: MET150
 description: 一般法人向け Microsoft 365 のサブスクリプションが期限切れになった場合、無効になった場合、または解約された場合に、データがどうなるかについて説明します。
 ms.date: 09/16/2021
-ms.openlocfilehash: 491a279aac94b4242252df801bd9f65fcb9f8a5b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1b53b62d62a385ca8cad7367da342aa0b4184281
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60151244"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372662"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>一般法人向け Microsoft 365 のサブスクリプションが終了したとき、データとアクセスはどうなりますか?
 
 期限切れ、または解約を決定したためにサブスクリプションが終了した場合、Microsoft 365 サービス、アプリケーション、および顧客データへのアクセスは、サブスクリプションが完全にオフまたは *削除* される前に複数の状態を経ます。この進行を認識している場合、手遅れになる前にサブスクリプションをアクティブな状態に戻すか、Microsoft 365 を終了する場合には、最終的に削除される前にデータをバックアップする必要があります。
 
-[Microsoft 365 サポート](../../business-video/get-help-support.md)に問い合わせる前に、この重要な情報をお読みください。
+[Microsoft 365 サポート](../../admin/get-help-support.md)に問い合わせる前に、この重要な情報をお読みください。
 
 > [!NOTE]
 > 一部のサブスクリプションでは、サブスクリプションを購入または更新した後、限られた時間内にのみキャンセルできます。 キャンセル期間が過ぎた場合は、定期的な請求をオフにして、期間の終了時にサブスクリプションをキャンセルします。
@@ -63,7 +63,7 @@ ms.locfileid: "60151244"
   
 サブスクリプションをキャンセルした場合に想定される動作を説明します。
   
-- **管理者アクセス** 管理者は、サインインして管理センターにアクセスでき、必要に応じて、他のサブスクリプションを購入できます。 全体管理者または課金管理者の場合は、すべてのデータを維持したまま[サブスクリプションを再アクティブ化する](reactivate-your-subscription.md)ことができる期間が 90 日間あります。
+- **管理者アクセス:** 管理者は、サインインして管理センターにアクセスでき、必要に応じて、他のサブスクリプションを購入できます。全体管理者または課金管理者の場合は、すべてのデータを維持したまま [サブスクリプションを再アクティブ化](reactivate-your-subscription.md)できる期間が 90 日間あります。
 
 - **ユーザー アクセス** ユーザーは、OneDrive for Business などのサービスの使用や、顧客データ (チーム サイトのメール、ドキュメントなど) へのアクセスができなくなります。 Word、Excel などの Office アプリケーションは、最終的に読み取り専用の機能制限モードになり、 [ライセンスのない製品通知](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)が表示されます。
 

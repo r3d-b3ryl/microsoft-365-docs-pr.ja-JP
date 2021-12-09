@@ -1,5 +1,5 @@
 ---
-title: 共同作業のためのチームを作成する
+title: 小規模ビジネスやキャンペーンMicrosoft Teams共同作業を行うチームを作成する
 f1.keywords:
 - NOCSH
 ms.author: samanro
@@ -22,15 +22,15 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: チームの共同作業スペースを作成し、Microsoft Teams。
-ms.openlocfilehash: ad0c9c938d7c5766bffc6fc960197b0568eb9cb5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 小規模ビジネスやキャンペーンで共同作業を行うMicrosoft Teamsチームを作成する理由と方法について学習します。
+ms.openlocfilehash: a8aae7eb1492a45cf80cd5e56b9df7393f08eb7d
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189707"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371294"
 ---
-# <a name="create-teams-for-collaboration-in-microsoft-teams"></a>グループで共同作業を行うチームをMicrosoft Teams
+# <a name="create-a-team-in-microsoft-teams-so-your-small-business-or-campaign-can-collaborate"></a>小規模ビジネスやキャンペーンMicrosoft Teams共同作業を行うチームを作成する
 
 Microsoft Teamsは、どのデバイスからでも、スタッフが組織化され、会話を行う際に役立つコラボレーション アプリです。 組織外のMicrosoft Teamsのメンバーとインスタント 会話を行う場合は、このツールを使用します。 電話、会議の開催、ファイルの共有も可能です。
 
@@ -67,7 +67,7 @@ Microsoft Teamsは、どのデバイスからでも、スタッフが組織化�
 
 このMicrosoft Teamsには、次の情報があります。
 
-1. **Teams:** 所属するチャネルを検索するか、独自のチャネルを作成します。 チャネル内では、その場で会議を開催し、会話を行い、ファイルを共有できます。
+1. **Teams: 所属** するチャネルを検索するか、独自のチャネルを作成します。 チャネル内では、その場で会議を開催し、会話を行い、ファイルを共有できます。
 2. **会議:** 日または週の並べられたものすべてを確認します。 または、会議をスケジュールします。 この予定表は、ユーザーの予定表Outlook同期します。
 3. **呼び出し:** 場合によっては、組織で設定されている場合、ユーザーが組織を使用していない場合でも、Microsoft Teams から誰でも呼び出Microsoft Teams。
 4. **アクティビティ:** 未読のメッセージ、メッセージ、返信@mentionsをキャッチアップします。

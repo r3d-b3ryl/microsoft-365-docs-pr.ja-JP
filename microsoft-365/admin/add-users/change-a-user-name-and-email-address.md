@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: 'Microsoft 365 のグローバル管理者が、ユーザー名が変更されるときにユーザーのメール アドレスと表示名を変更する方法について説明します。 '
-ms.openlocfilehash: 52ec631859411eef1d64fe44c85c27e2466d86c2
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: d5c5190dd5141ff4ee5d43ebdf537cff9617d0a2
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128397"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370634"
 ---
 # <a name="change-a-user-name-and-email-address"></a>ユーザー名とメール アドレスを変更する
 
@@ -59,15 +59,9 @@ ms.locfileid: "61128397"
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> の順に選択します。
+1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
 ::: moniker-end
 
@@ -85,12 +79,6 @@ ms.locfileid: "61128397"
 ::: moniker range="o365-worldwide"
 
 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> の順に選択します。
 
 ::: moniker-end
 
@@ -128,12 +116,6 @@ ms.locfileid: "61128397"
 ::: moniker range="o365-worldwide"
 
 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。 
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
 ::: moniker-end
 

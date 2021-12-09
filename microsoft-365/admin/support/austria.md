@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 ms.localizationpriority: medium
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1a336040b00b3a0dfd3ac86f7904a2afaf1a7e29
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0879de9216f32a739353f0f08d266b363202cfd4
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199143"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374234"
 ---
 # <a name="contact-support-for-austria"></a>オーストリアのサポートに問い合わせ
 
-[別の国または地域を検索します](../../business-video/get-help-support.md)。
+[別の国または地域を検索します](../get-help-support.md)。
 
 ## <a name="phone-number"></a>電話番号
 0800 080 650

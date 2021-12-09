@@ -20,18 +20,18 @@ search.appverid: MET150
 ROBOTS: NOINDEX
 description: ビジネス サブスクリプションのライセンスをアクティブ化、更新、または追加する方法Microsoft 365確認します。
 ms.date: 10/21/2020
-ms.openlocfilehash: 7e93638bfc8a5f88ff3575a2f0bccc2ab75171fe
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f5192454ad202fb5ca79c018fb7e90271d06e32c
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60177629"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370394"
 ---
 # <a name="enter-your-product-key-purchased-from-microsoft-open"></a>Microsoft Open から購入したプロダクト キーを入力する
 
 [Microsoft](https://go.microsoft.com/fwlink/p/?LinkID=613298)Open License Program からMicrosoft 365を購入した場合、この記事はユーザー向けです。 プロダクト キーを購入したボリューム ライセンスのお客様は、このトピックに従ってサブスクリプションのアクティブ化、更新、またはライセンスの追加を行うことができます。
   
- **すぐにヘルプが必要な場合** [Microsoft サポートにお問い合わせください](..//business-video/get-help-support.md) 。 
+ **すぐにヘルプが必要ですか?**[Microsoft サポートを呼び出します](../admin/get-help-support.md)。 
   
  **他のヘルプが必要な場合**
  
@@ -65,4 +65,4 @@ Microsoft Open ライセンス Microsoft 365からライセンスを購入した
   
 ボリューム ライセンスのお客様は、「[Microsoft ボリューム ライセンス サービス センターのトレーニングおよびリソース](https://go.microsoft.com/fwlink/p/?LinkId=618103)」を参照してください。
   
-または、ユーザーと話をする場合は [、Microsoft サポートに電話してください](../business-video/get-help-support.md)。
+または、ユーザーと話をする場合は [、Microsoft サポートに電話してください](../admin/get-help-support.md)。

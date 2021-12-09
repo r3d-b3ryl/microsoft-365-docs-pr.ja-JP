@@ -23,12 +23,12 @@ search.appverid: MET150
 description: Microsoft ビジネス製品の課金内容または請求書の内容を読んで理解する方法について説明します。
 keywords: 課金アカウント、組織情報、請求書
 ms.date: 05/04/2021
-ms.openlocfilehash: f7f61baea5e965da2a6edf3d66075f2eaa12a95f
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 3f6eaef9e26578f759a64fdf55dfeb6882be2458
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60756207"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371270"
 ---
 # <a name="understand-your-bill-or-invoice"></a>課金内容または請求書の内容を理解する
 
@@ -145,11 +145,11 @@ Microsoft 365 サブスクリプションしかない場合は、「[Microsoft 3
 
 Azure 前払は、対象となる Azure 製品およびサービスの支払い方法としてのみ利用できます。
 
-## <a name="need-help-contact-support"></a>お困りの際は、 サポートにお問い合せください
+## <a name="need-help-contact-support"></a>サポートが必要な場合 サポートにお問い合せください
 
 Azure クレジットについて質問がある場合、またはサポートが必要な場合は、<a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">Azure サポートを使用してサポート要求を作成してください</a>。
 
-Microsoft 365 管理センターの請求書について質問がある場合、またはサポートが必要な場合は、[ビジネス製品のサポートにお問い合わせください](../../business-video/get-help-support.md)。
+Microsoft 365 管理センターの請求書について質問がある場合、またはサポートが必要な場合は、[ビジネス製品のサポートにお問い合わせください](../../admin/get-help-support.md)。
 
 ## <a name="related-content"></a>関連コンテンツ
 

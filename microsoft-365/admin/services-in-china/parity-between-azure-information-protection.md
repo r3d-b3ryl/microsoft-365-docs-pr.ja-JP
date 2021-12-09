@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 description: 21Vianet が運用する 21Vianet Office 365 Azure Information Protection (AIP) の詳細と、中国の顧客向け構成方法について説明します。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 5bf93be6c802dffac9a9f6c2f039364de99539ad
-ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
+ms.openlocfilehash: 92c9460d9a2be4e09021073c455dd5287cba222b
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61320805"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372686"
 ---
 # <a name="azure-information-protection-support-for-office-365-operated-by-21vianet"></a>21Vianet がOffice 365 Azure Information Protection のサポート
 
@@ -37,9 +37,9 @@ ms.locfileid: "61320805"
 
 次の一覧には、21Vianet が運用する 2021 Office 365の AIP と 2021 年 1 月の商用製品との間の既存のギャップが含まれます。
 
-- Information Rights Management (IRM) は、Microsoft 365 Apps for enterprise (ビルド 11731.10000 以上) でのみサポートされます。 Office 2010、Office 2013、その他Office 2016 バージョンはサポートされていません。
+- Active Directory Rights Management サービス (AD RMS) 暗号化は、Microsoft 365 Apps for enterprise (ビルド 11731.10000 以降) でのみサポートされます。 Office Professional Plus RMS はサポートADされていません。
 
-- 現在、Active Directory Rights Management サービス (AD RMS) から AIP への移行は使用できません。
+- 現在、AD RMS から AIP への移行は使用できません。
   
 - 商用クラウド内のユーザーとの保護されたメールの共有がサポートされています。
   
@@ -88,10 +88,10 @@ ms.locfileid: "61320805"
 
 1. Azure Az モジュールがインストールされていない場合は、それをインストールするか、Azure Az モジュールがプレインストールされているリソース (Azure Cloud Shell など) [を使用します](/azure/cloud-shell/overview)。 詳細については [、「Azure Az PowerShell モジュールのインストール」を参照してください](/powershell/azure/install-az-ps)。
 
-1.  Connect-AzAccount コマンドレットと[環境Connectを](/powershell/module/az.accounts/Connect-AzAccount)使用してサービスに `azurechinacloud` アクセスします。
+1.    Connect-AzAccount コマンドレットと[環境Connectを](/powershell/module/az.accounts/Connect-AzAccount)使用してサービスに `azurechinacloud` アクセスします。
 
     ```powershell
-    Connect-azacount -environmentname azurechinacloud
+    Connect-azaccount -environmentname azurechinacloud
     ```
 
 1. [New-AzADServicePrincipal](/powershell/module/az.resources/new-azadserviceprincipal)コマンドレットと同期サービスのアプリケーション Microsoft Information Protection ID を使用して、Microsoft Information Protection Sync Service サービス プリンシパルを手動で `870c4f2e-85b6-4d43-bdda-6ed9a579b725` 作成します。

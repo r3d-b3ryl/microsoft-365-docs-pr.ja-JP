@@ -13,19 +13,20 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 0ee4269c61c4c9e2a9341c3b700db9f65e003114
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 813658fa7b67a45643531febb5a7591f688a8e3a
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786460"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372926"
 ---
 # <a name="double-key-encryption-for-microsoft-365"></a>ユーザーのダブル キー暗号化Microsoft 365
 
 > *適用対象: アプリケーションのダブル キー暗号化Microsoft 365、Microsoft 365 [コンプライアンス](https://www.microsoft.com/microsoft-365/business/compliance-management)[、Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 >
 > *手順: [Azure Information Protection 統合](/azure/information-protection/faqs#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)ラベル付けクライアント for Windows*
->
+
+
 > *サービスの説明: [Microsoft 365 コンプライアンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
 ダブル キー暗号化 (DKE) では、2 つのキーを一緒に使用して保護されたコンテンツにアクセスします。 Microsoft では、1 つのキー Microsoft Azure保存し、もう一方のキーを保持します。 ダブル キー暗号化サービスを使用して、キーの 1 つを完全に制御します。 機密性の高いコンテンツには、Azure Information Protection 統合ラベル付けクライアントを使用して保護を適用します。
@@ -36,17 +37,17 @@ ms.locfileid: "60786460"
 
 ## <a name="when-your-organization-should-adopt-dke"></a>組織で DKE を採用する必要が生じ
 
-ダブル キー暗号化は、最も厳密な保護要件の対象となる最も機密性の高いデータを対象とします。 DKE は、すべてのデータを対象としているのではありません。 一般に、Double Key Encryption を使用して、全体的なデータの一部のみを保護します。 展開する前に、このソリューションでカバーする適切なデータを特定するためのデューデリジェンスを行う必要があります。 場合によっては、スコープを絞り込み、Microsoft が管理するキーや BYOK を使用する Microsoft Information Protectionなどのほとんどのデータに対して他のソリューションを使用する必要があります。 これらのソリューションは、強化された保護と規制要件の対象とされないドキュメントでは十分です。 また、これらのソリューションを使用すると、最も強力なサービスOffice 365できます。DKE で暗号化されたコンテンツでは使用できないサービス。 例:
+ダブル キー暗号化は、最も厳密な保護要件の対象となる最も機密性の高いデータを対象とします。 DKE は、すべてのデータを対象としているのではありません。 一般に、Double Key Encryption を使用して、全体的なデータの一部のみを保護します。 展開する前に、このソリューションでカバーする適切なデータを特定するためのデューデリジェンスを行う必要があります。 場合によっては、スコープを絞り込み、Microsoft が管理するキーや BYOK を使用する Microsoft Information Protectionなどのほとんどのデータに対して他のソリューションを使用する必要があります。 これらのソリューションは、強化された保護と規制要件の対象とされないドキュメントでは十分です。 また、これらのソリューションを使用すると、DKE で暗号化されたコンテンツでは使用できない最も強力Office 365サービスを使用できます。 例:
 
 - 添付ファイルを表示する必要があるマルウェア対策やスパムなどのトランスポート ルール
 - Microsoft Delve
 - 電子情報開示
 - コンテンツ検索とインデックス作成
-- Office共同編集機能を含む Web アプリ
+- Office機能を含む Web アプリ
 
 MIP SDK を介して DKE と統合されていない外部アプリケーションまたはサービスは、暗号化されたデータに対してアクションを実行できません。
 
-SDK 1.7 Microsoft Information Protectionは、ダブル キー暗号化をサポートしています。SDK と統合するアプリケーションは、十分なアクセス許可と統合を行って、このデータを理由付けできます。
+Microsoft Information Protection SDK 1.7+ では、ダブル キー暗号化がサポートされています。SDK と統合するアプリケーションは、十分なアクセス許可と統合を行って、このデータを理由にできます。
 
 組織では、機密データの大部分を保護するために Microsoft Information Protection 機能 (分類とラベル付け) を使用し、ミッション クリティカルなデータにのみ DKE を使用することをお勧めします。 ダブル キー暗号化は、金融サービスやヘルスケアなどの規制の厳しい業界の機密データに関連します。
 
@@ -62,7 +63,7 @@ SDK 1.7 Microsoft Information Protectionは、ダブル キー暗号化をサポ
 
 **Azure Information Protection**. DKE は、感度ラベルで動作し、Azure Information Protection が必要です。
 
-DKE の感度ラベルは、デスクトップ アプリの感度リボンを使用してエンド Office使用できます。 保護されたドキュメントを保護および使用する各クライアント コンピューターに、これらの前提条件をインストールします。
+DKE の感度ラベルは、デスクトップ アプリの AIP Unified Labeling クライアントの [Office] ボタンを使用してエンド ユーザーが使用できます。 保護されたドキュメントを保護および使用する各クライアント コンピューターに、これらの前提条件をインストールします。
 
 **Microsoft Office** 2009 以降のアプリ (デスクトップ バージョンの Word、PowerPoint、Excel) Windows。
 
@@ -124,7 +125,7 @@ DKE サービスをインストールするコンピューターに、これら�
 
 - [Git](https://git-scm.com/downloads)
 
-- [GitHubデスクトップ](https://desktop.github.com/)
+- [GitHub デスクトップ](https://desktop.github.com/)
 
 - [GitHub Enterprise](https://github.com/enterprise)
 
@@ -148,7 +149,7 @@ Microsoft は、DKE ソース ファイルを新しいリポジトリGitHubし�
 3. [コマンド Visual Studio Code] で、[**コマンド パレットの表示]** \> **を選択** し **、[Git: Clone] を選択します**。 リスト内のオプションに移動するには、入力を開始してエントリをフィルター処理し、ドロップダウン `git: clone` から選択します。 例:
 
    > [!div class="mx-imgBorder"]
-   > ![Visual Studio CodeGIT:Clone オプション。](../media/dke-vscode-clone.png)
+   > ![Visual Studio Code GIT:Clone オプションを使用します。](../media/dke-vscode-clone.png)
 
 4. テキスト ボックスに、Git からコピーした URL を貼り付け、Git から [複製]**をGitHub。**
 
@@ -277,9 +278,16 @@ DKE テナントとキー設定は **appsettings.json ファイルに格納** �
 
 4. プライベート キーを生成します。
 
-   ```console
-   openssl rsa -in key.pem -out privkeynopass.pem
-   ```
+   OpenSSL バージョン 3 以降をインストールした場合は、次のコマンドを実行します。
+  
+  ```console
+  openssl rsa -in key.pem -out privkeynopass.pem -outform PEM -traditional
+  ```
+  
+>  それ以外の場合は、次のコマンドを実行します。
+>  ```console
+>  openssl rsa -in key.pem -out privkeynopass.pem -outform PEM
+>  ```
 
 5. 公開キーを生成します。
 
@@ -449,7 +457,7 @@ DKE が展開され、作成したテスト キーを参照できます。 次�
 
 上記のいずれかの方法を使用して DKE を展開した後、展開とキー ストアの設定を検証します。
 
-次を実行します: 
+次のコマンドを実行します。
 
 ```powershell
 src\customer-key-store\scripts\key_store_tester.ps1 dkeserviceurl/mykey
@@ -538,9 +546,10 @@ DKE サービスを登録するには、次の方法を実行します。
 
 ## <a name="create-sensitivity-labels-using-dke"></a>DKE を使用して感度ラベルを作成する
 
-このページMicrosoft 365 コンプライアンス センター新しい感度ラベルを作成し、それ以外の場合と同じように暗号化を適用します。 [ **ダブル キー暗号化を使用する]** を選択し、キーのエンドポイント URL を入力します。
+このページMicrosoft 365 コンプライアンス センター新しい感度ラベルを作成し、それ以外の場合と同じように暗号化を適用します。 [ **ダブル キー暗号化を使用する]** を選択し、キーのエンドポイント URL を入力します。 指定したキー名は、URL の appsettings.json ファイルの "TestKeys" セクションに含める必要があります。 
 
-例:
+例: https://testingdke1.azurewebsites.net/ **KEYNAME**
+
 
 > [!div class="mx-imgBorder"]
 > ![[キーの二重暗号化を使用する] を選択Microsoft 365 コンプライアンス センター。](../media/dke-use-dke.png)
@@ -567,3 +576,15 @@ Insider のユーザー Office DKE が有効になります。 それ以外の�
 必要な場合は、DKE の設定が完了したら、HYOK ラベルを使用して保護したコンテンツを DKE ラベルに移行できます。 移行するには、AIP スキャナーを使用します。 スキャナーの使用を開始するには、「Azure Information Protection 統合ラベル スキャナーとは」 [を参照してください](/azure/information-protection/deploy-aip-scanner)。
 
 コンテンツを移行しない場合、HYOK で保護されたコンテンツは影響を受けません。
+
+## <a name="other-deployment-options"></a>その他の展開オプション
+
+規制の厳しい業界のお客様の中には、ソフトウェア ベースのキーを使用したこの標準リファレンス実装では、コンプライアンスの強化された義務とニーズを満たすには十分ではない可能性があります。
+さまざまなサード パーティハードウェア セキュリティ モジュール (HSM) ベンダーと提携し、DKE サービスに次の拡張キー管理オプションのサポートを提供しています。
+
+ - [Entrust](https://www.entrust.com/digital-security/hsm/services/packaged-services/double-key-encryption-integration#:~:text=Entrust%20Double%20Key%20Encryption%20for%20Microsoft%20AIP%2C%20offered,trust%20for%20the%20protection%20of%20sensitive%20cryptographic%20keys.) 
+
+- [Thales](https://cpl.thalesgroup.com/cloud-security/encryption/double-key-encryption) 
+
+これらのベンダーに直接問い合って、市場内の DKE HSM ソリューションに関する詳細とガイダンスを入手してください。 
+

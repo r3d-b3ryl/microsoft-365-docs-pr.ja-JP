@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
 description: プランまたは会社名を変更した場合Microsoft 365複数のサブスクリプションを 1 に結合した場合に、2 つのアカウント間で手動でデータを転送する方法について説明します。
-ms.openlocfilehash: 36156a83f1d6a3d52561689cc4a82ac5098ceae9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: aea01982d9cb6a42f382a23a50baf2e1bfa041cc
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164586"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61369998"
 ---
 # <a name="transfer-data-manually-between-two-accounts"></a>2 つのアカウント間でデータを手動で転送する
 
@@ -61,7 +61,7 @@ Midsize Business Microsoft 365 EnterpriseおよびMicrosoft 365の場合:
   
 |**場所**|**目的**|
 |:-----|:-----|
-|**管理者** \>**Microsoft 365** \>**サービス設定** <br/> |メール、サイト、Lync、ユーザー ソフトウェア、パスワード、コミュニティ、権限管理、モバイルの設定の各タブを選択します。  <br/> |
+|**管理者** \>**Microsoft 365** \> **サービスの設定** <br/> |メール、サイト、Lync、ユーザー ソフトウェア、パスワード、コミュニティ、権限管理、モバイルの設定の各タブを選択します。  <br/> |
 |[ **管理者**] \> [ **Exchange**] <br/> | Exchange Online の設定  <br/> |
 |[ **管理者**] \> [ **SharePoint**] <br/> | SharePoint Online の設定  <br/> |
 |**管理者** \>**Skype for Business** <br/> |その他Skype for Business設定  <br/> |
@@ -90,7 +90,7 @@ Midsize Business Microsoft 365 EnterpriseおよびMicrosoft 365の場合:
   
 - 古いサイトをテンプレートとして保存し、新しいサイトにテンプレートをインポートできます。
 
-- ドキュメントを転送するには、まず新しいサイトで階層を手動で再作成します。 その後は、両方の SharePoint チーム サイトを同時に開き、両方のドキュメント ライブラリをエクスプローラーで開いて、ドキュメントをコピーして貼り付けることができます。 「[ビデオ: [エクスプローラーで開く] を使用してライブラリ ファイルをコピーまたは移動する](../../business-video/store-files.md)」を参照してください。
+- ドキュメントを転送するには、まず新しいサイトで階層を手動で再作成します。 その後は、両方の SharePoint チーム サイトを同時に開き、両方のドキュメント ライブラリをエクスプローラーで開いて、ドキュメントをコピーして貼り付けることができます。 「[ビデオ: [エクスプローラーで開く] を使用してライブラリ ファイルをコピーまたは移動する](https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e)」を参照してください。
 
 - リスト データを転送するには、[リスト テンプレート](https://support.microsoft.com/office/c3884ad1-bc49-44b8-b3d6-3bc6a01eb393)を保存し、保存したテンプレートを使用して新しいサイトにリストを再作成します。
 

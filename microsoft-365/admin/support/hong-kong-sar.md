@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 ms.localizationpriority: medium
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d16055c7cf1c4a1fc6eb999c3ca045c268b353a7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 94af526c21413d4ff7cb61835e1cfbfea079c724
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60151736"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61369614"
 ---
 # <a name="contact-support-for-hong-kong-sar"></a>香港 SAR のサポートに問い合わせ
 
-[別の国または地域を検索します](../../business-video/get-help-support.md)。
+[別の国または地域を検索します](../get-help-support.md)。
 
 ## <a name="phone-number"></a>電話番号
 3 071 3055

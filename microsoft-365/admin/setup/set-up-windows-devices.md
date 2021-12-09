@@ -30,12 +30,12 @@ search.appverid:
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: ユーザーにWindowsデバイスWindows 10 ProをMicrosoft 365 Business Premium、一元的な管理とセキュリティ制御を有効にします。
-ms.openlocfilehash: 250c701a41e9243c81641df2bcc0fd6d6158ec47
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: 40577f2130c185f8a98a3c8f873da80233e56cf0
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128654"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373058"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>ユーザーのWindowsデバイスをMicrosoft 365 Business Premiumする
 
@@ -77,7 +77,7 @@ Windows 10 Pro Creators Update が実行されている新しいデバイス、�
 
  **ユーザーを Azure AD に接続する**
   
-1. Windows 10 Pro バージョン 1703 (Creators Update) を実行しているユーザーの Windows PC で ([前提条件](../security-and-compliance/pre-requisites-for-data-protection.md)を参照)、Windows ロゴ、[設定] アイコンの順にクリックします。
+1. Windows 10 Pro バージョン 1703 (Creators Update) を実行しているユーザーの Windows PC (前提条件を参照)、Windows ロゴをクリックしてから、設定 アイコンをクリックします。 [](../security-and-compliance/pre-requisites-for-data-protection.md)
   
    ![[次のスタート メニュー] アイコンWindows 設定クリックします。](../../media/74e1ce9a-1554-4761-beb9-330b176e9b9d.png)
   

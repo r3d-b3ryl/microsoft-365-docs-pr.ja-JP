@@ -12,17 +12,17 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 顧客キーで使用される Azure Key Vault に格納されている顧客ルート キーをロールする方法について説明します。 サービスには、Exchange Online、Skype for Business、SharePoint、オンライン、OneDrive for Business、Teamsがあります。
-ms.openlocfilehash: 22cf7d1ee9635a92684d377d05a4c53a909eb4bb
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 5f2de108d493e4b6d4233f4a932a24f524e468bb
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553966"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373274"
 ---
 # <a name="roll-or-rotate-a-customer-key-or-an-availability-key"></a>カスタマー キーまたは可用性キーをローリングまたはローテーションする
 
 > [!CAUTION]
-> セキュリティ要件またはコンプライアンス要件によってキーをロールする必要がある場合にのみ、顧客キーで使用する暗号化キーをロールします。 また、ポリシーに関連付けられているキーや関連付けられたキーは削除しない。 キーをロールすると、前のキーで暗号化されたコンテンツが表示されます。 たとえば、アクティブなメールボックスは頻繁に再暗号化されますが、非アクティブなメールボックス、切断されたメールボックス、および無効になっているメールボックスは、以前のキーで暗号化されます。 SharePointオンラインでは、復元および回復の目的でコンテンツのバックアップを実行します。そのため、古いキーを使用してアーカイブされたコンテンツが残っている可能性があります。
+> セキュリティ要件またはコンプライアンス要件によってキーをロールする必要がある場合にのみ、顧客キーで使用する暗号化キーをロールします。 また、ポリシーに関連付けられているキーや関連付けられたキーは削除しない。 キーをロールすると、前のキーで暗号化されたコンテンツが表示されます。 たとえば、アクティブなメールボックスは頻繁に再暗号化されますが、非アクティブなメールボックス、切断されたメールボックス、および無効になっているメールボックスは、以前のキーで暗号化されます。 SharePointオンラインは復元および回復のためにコンテンツのバックアップを実行します。そのため、古いキーを使用してコンテンツがアーカイブされている可能性があります。
 
 ## <a name="about-rolling-the-availability-key"></a>可用性キーのローリングについて
 
@@ -98,7 +98,7 @@ SharePointオンラインでは、一度に 1 つのキーのみをロールで�
 2. キー ロール操作の進行状況を確認するには、次のように Get-SPODataEncryptionPolicyコマンドレットを実行します。
 
    ```powershell
-   Get-SPODataEncryptionPolicy  <SPOAdminSiteUrl>
+   Get-SPODataEncryptionPolicy <SPOAdminSiteUrl>
    ```
 
 ## <a name="related-articles"></a>関連記事

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 365 エンドポイント データ損失防止 (EPDLP) の場所を使用するようにデータ損失防止 (DLP) ポリシーを構成する方法を説明します。
-ms.openlocfilehash: fef221ce23ac04d156084ebad7b837840004f066
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 892f151234aee8daee0cac12622d08cd39f27769
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111857"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372914"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>エンドポイント データ損失防止の使用
 
@@ -43,9 +43,20 @@ ms.locfileid: "61111857"
   > [!div class="mx-imgBorder"]
   > ![DLP の設定。](../media/endpoint-dlp-1-using-dlp-settings.png)
 
+### <a name="endpoint-dlp-windows-10-and-macos-settings"></a>エンドポイント DLP Windows 10 と macOS の設定
+
+|Setting |Windows 10, 1809 以降  |macOS Catalina 10.15 以降 (プレビュー)  |メモ  |
+|---------|---------|---------|---------|
+|ファイルパスの除外     |サポート         |サポート         |macOS には、既定でオンになっている除外の推奨リストが含まれています          |
+|許可されていないアプリ     |サポート         |サポート         |         |
+|許可されていない Bluetooth アプリ    |サポート         |サポート対象外         |         |
+|機密アイテムに対するブラウザーとドメインの制限      |サポート         |サポート         |         |
+|エンドポイント DLP の追加設定     |サポート         |サポート         |macOS デバイスでは、既定の業務上の正当な理由のみがサポートされます         |
+|デバイスのファイル アクティビティを常に監査する     |サポート         |サポート         |         |
+
 ### <a name="advanced-classification-scanning-and-protection"></a>高度な分類のスキャンと保護
 
-## <a name="get-registered"></a>登録する
+#### <a name="get-registered"></a>登録する
 
 この機能にアクセスするには、テナントを Microsoft に登録する必要があります。 [Microsoft 365 macOS サポート](https://aka.ms/EndpointDLPIgnite21-Previews)に登録します。
 
@@ -66,19 +77,6 @@ ms.locfileid: "61111857"
 
 > [!NOTE]
 > DLP ポリシーの評価は、ユーザー コンテンツが送信されていない場合でも、常にクラウドで行われます。
-
-### <a name="endpoint-dlp-windows-10-and-macos-settings"></a>エンドポイント DLP Windows 10 と macOS の設定
-
-|Setting |Windows 10, 1809 以降  |macOS Catalina 10.15 以降 (プレビュー)  |メモ  |
-|---------|---------|---------|---------|
-|ファイルパスの除外     |サポート         |サポート         |macOS には、既定でオンになっている除外の推奨リストが含まれています          |
-|許可されていないアプリ     |サポート         |サポート         |         |
-|許可されていない Bluetooth アプリ    |サポート         |サポートなし         |         |
-|機密アイテムに対するブラウザーとドメインの制限      |サポート         |サポート         |         |
-|エンドポイント DLP の追加設定     |サポート         |サポート         |macOS デバイスでは、既定の業務上の正当な理由のみがサポートされます         |
-|デバイスのファイル アクティビティを常に監査する     |サポート         |サポート         |         |
-
-
 
 ### <a name="file-path-exclusions"></a>ファイルパスの除外
 

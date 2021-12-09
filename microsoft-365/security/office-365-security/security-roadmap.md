@@ -19,12 +19,12 @@ ms.assetid: 28c86a1c-e4dd-4aad-a2a6-c768a21cb352
 description: セキュリティ機能を実装してセキュリティ環境を保護するための Microsoft のサイバーセキュリティ チームからのMicrosoft 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7c3128482e9c8974ebb8938639ff3e27d400a418
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9edfda495e1359ac5af74f86f65d33661a2f7059
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176405"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373250"
 ---
 # <a name="security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>セキュリティロードマップ - 最初の 30 日間、90 日間、それ以降の最優先事項
 
@@ -63,8 +63,8 @@ ms.locfileid: "60176405"
 
 |分野|タスク|
 |---|---|
-|セキュリティ管理|<ul><li>[セキュリティで保護されたスコア] をオンにし、現在のスコア () をメモします <https://security.microsoft.com/securescore> 。</li><li>ユーザーの監査ログを有効Office 365。 「 [監査ログの検索」を参照してください](../../compliance/search-the-audit-log-in-security-and-compliance.md)。</li><li>[セキュリティMicrosoft 365を構成します](tenant-wide-setup-for-increased-security.md)。</li><li>ダッシュボードとレポートを定期的に確認するには、Microsoft 365 DefenderとCloud App Security。</li></ul>|
-|脅威に対する保護|[Connect Microsoft 365異常なMicrosoft Cloud App Security](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)既定の脅威検出ポリシーを使用して監視を開始する必要があります。 異常検出のベースラインを構築するには 7 日かかる。 <p>  管理者アカウントの保護を実装する:<ul><li>管理アクティビティには専用の管理者アカウントを使用します。</li><li>管理者アカウントに多要素認証 (MFA) を適用します。</li><li>管理者の[アクティビティには、Windowsセキュリティ保護されたデバイス](/windows-hardware/design/device-experiences/oem-highly-secure)を使用します。</li></ul>|
+|セキュリティ管理|<ul><li>[セキュリティで保護されたスコア] をオンにし、現在のスコア () をメモします <https://security.microsoft.com/securescore> 。</li><li>ユーザーの監査ログを有効Office 365。 「 [監査ログの検索」を参照してください](../../compliance/search-the-audit-log-in-security-and-compliance.md)。</li><li>[セキュリティMicrosoft 365を構成します](tenant-wide-setup-for-increased-security.md)。</li><li>クラウド ポータルと Defender for Cloud Apps でダッシュボードMicrosoft 365 Defenderレポートを定期的に確認します。</li></ul>|
+|脅威に対する保護|[Connect Microsoft 365、Microsoft Defender for Cloud Apps](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)にアクセスして、異常な動作に対する既定の脅威検出ポリシーを使用して監視を開始します。 異常検出のベースラインを構築するには 7 日かかる。 <p>  管理者アカウントの保護を実装する:<ul><li>管理アクティビティには専用の管理者アカウントを使用します。</li><li>管理者アカウントに多要素認証 (MFA) を適用します。</li><li>管理者の[アクティビティには、Windowsセキュリティ保護されたデバイス](/windows-hardware/design/device-experiences/oem-highly-secure)を使用します。</li></ul>|
 |ID およびアクセス管理|<ul><li>[[ID Azure Active Directoryを有効にする] をクリックします](/azure/active-directory/active-directory-identityprotection-enable)。</li><li>フェデレーション ID 環境では、アカウント のセキュリティ (パスワードの長さ、年齢、複雑さなど) を適用します。</li></ul>|
 |情報保護|情報保護の推奨事項の例を確認します。 情報保護には、組織全体の調整が必要です。 次のリソースの使用を開始する:<ul><li>[GDPR のための Office 365 の情報保護](/compliance/regulatory/gdpr)</li><li>[3 Teams保護を](../../solutions/configure-teams-three-tiers-protection.md)構成する (共有、分類、データ損失防止、Azure 情報保護など)</li></ul>|
 |
@@ -78,10 +78,10 @@ ms.locfileid: "60176405"
 
 |分野|タスク|
 |---|---|
-|セキュリティ管理|<ul><li>環境 () の推奨アクションについては、「Secure Score」を確認 <https://security.microsoft.com/securescore> してください。</li><li>引き続き、ポータル、Microsoft 365 Defender、SIEM ツールCloud App Securityレポートを確認します。</li><li>ソフトウェア更新プログラムを探して実装します。</li><li>攻撃シミュレーション トレーニング[(Office 365](attack-simulation-training.md) Threat Intelligence に含まれる) を使用して、スピア フィッシング、パスワード スプレー、ブルートフォース[パスワード攻撃の攻撃シミュレーションを実行します](office-365-ti.md)。</li><li>[調査] タブにある組み込みのレポートを確認Cloud App Security共有リスクを探します。</li><li>コンプライアンス [マネージャーを確認](../../compliance/compliance-manager.md) して、組織に適用される規制 (GDPR、NIST 800-171 など) の状態を確認します。</li></ul>|
-|脅威に対する保護|管理者アカウントの拡張保護を実装します。 <ul><li>管理者 [アクティビティ用に特権アクセス ワークステーション](/security/compass/privileged-access-devices) (PAW) を構成します。</li><li>Azure AD Privileged Identity Management を[構成します](/azure/active-directory/active-directory-privileged-identity-management-configure)。</li><li>セキュリティ情報とイベント管理 (SIEM) ツールを構成して、Office 365、Cloud App Security、FS などの他のサービスからログ データを収集ADします。 監査ログには、90 日間だけデータが保存されます。 SIEM ツールでこのデータをキャプチャすると、データを長い期間保存できます。</li></ul>|
+|セキュリティ管理|<ul><li>環境 () の推奨アクションについては、「Secure Score」を確認 <https://security.microsoft.com/securescore> してください。</li><li>引き続き、ポータル、Defender for Cloud Apps、SIEM ツールMicrosoft 365 Defenderダッシュボードとレポートを定期的に確認します。</li><li>ソフトウェア更新プログラムを探して実装します。</li><li>攻撃シミュレーション トレーニング[(Office 365](attack-simulation-training.md) Threat Intelligence に含まれる) を使用して、スピア フィッシング、パスワード スプレー、ブルート フォース パスワード攻撃[の攻撃シミュレーションを実行します](office-365-ti.md)。</li><li>Defender for Cloud Apps の組み込みレポート ([調査] タブ) を確認して、共有リスクを探します。</li><li>コンプライアンス [マネージャーを確認](../../compliance/compliance-manager.md) して、組織に適用される規制 (GDPR、NIST 800-171 など) の状態を確認します。</li></ul>|
+|脅威に対する保護|管理者アカウントの拡張保護を実装します。 <ul><li>管理者 [アクティビティ用に特権アクセス ワークステーション](/security/compass/privileged-access-devices) (PAW) を構成します。</li><li>構成[Azure AD Privileged Identity Management](/azure/active-directory/active-directory-privileged-identity-management-configure)します。</li><li>セキュリティ情報とイベント管理 (SIEM) ツールを構成して、Office 365、Defender for Cloud Apps、その他のサービス (AD FS を含む) からログ データを収集します。 監査ログには、90 日間だけデータが保存されます。 SIEM ツールでこのデータをキャプチャすると、データを長い期間保存できます。</li></ul>|
 |ID およびアクセス管理|<ul><li>すべてのユーザーに対して MFA を有効にして適用します。</li><li>条件付きアクセスと [関連するポリシーのセットを実装します](microsoft-365-policies-configurations.md)。</li></ul>|
-|情報保護| 情報保護ポリシーの適応と実装。 これらのリソースには、次の例が含まれます。 <ul><li>[GDPR のための Office 365 の情報保護](/compliance/regulatory/gdpr)</li><li>[3 層の保護を使って Teams を構成する](../../solutions/configure-teams-three-tiers-protection.md)</li></ul> <p> データ損失防止ポリシーと監視ツールは、Microsoft 365 (Microsoft 365 ではなく) に保存Cloud App Security。 <p> 高度なCloud App Security (データMicrosoft 365防止以外) には、ユーザーと一緒に通知を使用します。|
+|情報保護| 情報保護ポリシーの適応と実装。 これらのリソースには、次の例が含まれます。 <ul><li>[GDPR のための Office 365 の情報保護](/compliance/regulatory/gdpr)</li><li>[3 層の保護を使って Teams を構成する](../../solutions/configure-teams-three-tiers-protection.md)</li></ul> <p> データ損失防止ポリシーと監視ツールは、Microsoft 365 (Defender for Cloud Apps ではなく) Microsoft 365データに対して使用します。 <p> 高度なアラート機能 (データ損失防止Microsoft 365) には、Defender for Cloud Apps を使用します。|
 |
 
 ## <a name="beyond"></a>Beyond
@@ -93,10 +93,10 @@ ms.locfileid: "60176405"
 
 |分野|タスク|
 |---|---|
-|セキュリティ管理|<ul><li>Secure Score ( ) を使用して、次のアクションの計画を続行 <https://security.microsoft.com/securescore> します。</li><li>引き続き、ポータル、Microsoft 365 Defender、SIEM ツールCloud App Securityレポートを確認します。</li><li>ソフトウェア更新プログラムを引き続き探して実装します。</li><li>電子情報開示を法的および脅威の対応プロセスに統合します。</li></ul>|
-|脅威に対する保護|<ul><li>オンプレミス [の ID コンポーネント用のセキュリティ](/windows-server/identity/securing-privileged-access/securing-privileged-access) で保護された特権アクセス (SPA) を実装する (AD、AD FS)。</li><li>内部Cloud App Securityを監視するには、次の情報を使用します。</li><li>シャドウ IT SaaS の使用状況を検出する方法は、Cloud App Security。</li></ul>|
-|ID およびアクセス管理|<ul><li>ポリシーと運用プロセスを絞り込む。</li><li>Azure AD ID 保護を使用して、内部の脅威を特定します。</li></ul>|
-|情報保護|情報保護ポリシーを絞り込む: <ul><li>Microsoft 365およびOffice 365ラベルとデータ損失防止 (DLP)、または Azure Information Protection を使用します。</li><li>Cloud App Securityとアラート。</li></ul>|
+|セキュリティ管理|<ul><li>Secure Score ( ) を使用して、次のアクションの計画を続行 <https://security.microsoft.com/securescore> します。</li><li>引き続き、ポータル、Defender for Cloud Apps、SIEM ツールMicrosoft 365 Defenderダッシュボードとレポートを定期的に確認します。</li><li>ソフトウェア更新プログラムを引き続き探して実装します。</li><li>電子情報開示を法的および脅威の対応プロセスに統合します。</li></ul>|
+|脅威に対する保護|<ul><li>オンプレミス [の ID コンポーネント用のセキュリティ](/windows-server/identity/securing-privileged-access/securing-privileged-access) で保護された特権アクセス (SPA) を実装する (AD、AD FS)。</li><li>Defender for Cloud Apps を使用して、内部からの脅威を監視します。</li><li>Defender for Cloud Apps を使用してシャドウ IT SaaS の使用状況を確認します。</li></ul>|
+|ID およびアクセス管理|<ul><li>ポリシーと運用プロセスを絞り込む。</li><li>Id Protection Azure ADを使用して、内部の脅威を特定します。</li></ul>|
+|情報保護|情報保護ポリシーを絞り込む: <ul><li>Microsoft 365およびOffice 365ラベルとデータ損失防止 (DLP)、または Azure Information Protection を使用します。</li><li>Defender for Cloud Apps のポリシーとアラート。</li></ul>|
 |
 
 「Petya や WannaCrypt などの迅速なサイバー攻撃を軽減する方法 [」も参照してください](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/21/how-to-mitigate-rapid-cyberattacks-such-as-petya-and-wannacrypt/)。

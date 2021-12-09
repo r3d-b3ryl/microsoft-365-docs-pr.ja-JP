@@ -7,27 +7,24 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 11/19/2021
+ms.date: 12/07/2021
 ms.prod: m365-security
 ms.technology: mde
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 85314b05c8de4a90353e920288df36d8445a889e
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 8955c3d28b8d29a23af1def673fc3bdcfbcc8c71
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168488"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370382"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1"></a>Microsoft Defender for Endpoint Plan 1 のセットアップと構成
 
 **適用対象:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-
-> [!TIP]
-> ユーザーまたは A3 Microsoft 365 E3が、Microsoft 365 E5 A5 を使用していない場合は、プレビュー プログラムに [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) サインアップしてください。
 
 この記事では、Defender for Endpoint Plan 1 をセットアップして構成する方法について説明します。 サポートを受け取っている場合でも、自分で行っている場合でも、この記事を展開全体のガイドとして使用できます。  
 
@@ -54,7 +51,7 @@ Defender for Endpoint Plan 1 の一般的なセットアップと構成プロセ
 
 | 要件 | 説明 |
 |:---|:---|
-| ライセンスの要件 | Defender for Endpoint プラン 1 <br/><br/>*ユーザーまたは A3 Microsoft 365 E3、プレビュー プログラムに参加できます。* |
+| ライセンスの要件 | Defender for Endpoint プラン 1 |
 | ブラウザー要件 | Microsoft Edge <br/> Internet Explorerバージョン 11 <br/> Google Chrome |
 | オペレーティング システム | Windows 10バージョン 1709 以降 <br/>macOS: 11.5 (Big Sur), 10.15.7 (Catalina), or 10.14.6 (Mojave) <br/>iOS <br/>Android OS  |
 | Datacenter | 次のいずれかのデータセンターの場所。 <br/>- 欧州連合 <br/>- イギリス <br/>- 米国 |
@@ -298,7 +295,7 @@ Defender for Endpoint を構成して、リムーバブル デバイス上のリ
 
 ### <a name="web-protection"></a>Web 保護
 
-Web 保護を使用すると、Web の脅威や望ましくないコンテンツから組織のデバイスを保護できます。 Web 保護には [、Web 脅威保護と](#configure-web-threat-protection) Web コンテンツ フィルター ( [プレビュー) が](#configure-web-content-filtering) 含まれます。 両方の機能セットを構成します。 Web 保護設定を構成Microsoft エンドポイント マネージャーを使用することをお勧めします。
+Web 保護を使用すると、Web の脅威や望ましくないコンテンツから組織のデバイスを保護できます。 Web 保護には [、Web 脅威保護と](#configure-web-threat-protection) [Web コンテンツ フィルターが含まれます](#configure-web-content-filtering)。 両方の機能セットを構成します。 Web 保護設定を構成Microsoft エンドポイント マネージャーを使用することをお勧めします。
 
 #### <a name="configure-web-threat-protection"></a>Web 脅威保護の構成
 
@@ -331,9 +328,6 @@ Web 保護を使用すると、Web の脅威や望ましくないコンテンツ
 > Web 脅威保護の詳細については、「Web 脅威から [組織を保護する」を参照してください](web-threat-protection.md)。
 
 #### <a name="configure-web-content-filtering"></a>Web コンテンツ フィルターの構成
-
-> [!NOTE]
-> Web コンテンツ フィルターは現在プレビュー中です。
 
 1. ポータル ( ) にMicrosoft 365 Defenderサインイン [https://security.microsoft.com/](https://security.microsoft.com/) します。
 

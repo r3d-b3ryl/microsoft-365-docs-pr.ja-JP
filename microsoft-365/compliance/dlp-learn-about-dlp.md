@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: データ損失防止ポリシーとツールを使用Microsoft 365機密情報を保護し、DLP ライフサイクルを通じてツアーを行う方法について説明します。
-ms.openlocfilehash: 56107d1e7e2b303e6517a2b7f762e2fcf49beac0
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: d8a2af9ff38a4dec7a4708106bc0289c03bb449e
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61106529"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371234"
 ---
 # <a name="learn-about-data-loss-prevention"></a>データ損失防止について
 
@@ -30,7 +30,7 @@ ms.locfileid: "61106529"
 
 - Microsoft 365、Teams、Exchange、SharePointなどのOneDrive
 - Office、Word、Excel、PowerPoint
-- Windows 10エンドポイント
+- Windows 10、Windows 11 および macOS (Catalina 10.15 以上) エンドポイント
 - Microsoft 以外のクラウド アプリ
 - オンプレミスのファイル共有とオンプレミス のSharePoint。
 
@@ -69,7 +69,7 @@ Microsoft 365 DLP の監視と保護は、ユーザーが毎日使用するア�
 
 **DLP のテクノロジ計画**
 
-テクノロジとしての DLP は、Microsoft 365 サービス、Windows 10 デバイス、オンプレミスのファイル共有、およびオンプレミス SharePoint 全体で、保存中のデータ、使用中のデータ、および動作中のデータを監視および保護できます。 さまざまな場所、監視および保護するデータの種類、およびポリシーの一致が発生した場合に実行するアクションに対する計画上の影響があります。
+テクノロジとしての DLP は、Microsoft 365 サービス、Windows 10、Windows 11、macOS (Catalina 10.15 以上) デバイス、オンプレミスファイル共有、およびオンプレミス SharePoint 全体で、保存中のデータ、使用中のデータ、およびデータを監視および保護できます。 さまざまな場所、監視および保護するデータの種類、およびポリシーの一致が発生した場合に実行するアクションに対する計画上の影響があります。
 
 **DLP のビジネス プロセス計画**
 
@@ -89,8 +89,8 @@ DLP ポリシーは、保存中のデータ、使用されているデータ、�
 - SharePoint Online サイト
 - OneDrive アカウント
 - Teams チャットおよびチャネル メッセージ
-- Microsoft Defender for Cloud Apps
-- Windows 10 デバイス
+- Microsoft Cloud App Security
+- Windows 10、Windows 11、macOS (Catalina 10.15 以上) デバイス
 - オンプレミス リポジトリ
 
 それぞれの前提条件は異なります。 一部の場所 (Exchange オンラインなど) の機密性の高いアイテムは、該当するポリシーを構成するだけで DLP の傘下に持ち込む可能性があります。 オンプレミスのファイル リポジトリなど、他のユーザーには Azure Information Protection (AIP) スキャナーの展開が必要です。 ブロックアクションをアクティブ化する前に、環境を準備し、下書きポリシーをコード化し、それらを徹底的にテストする必要があります。
@@ -143,8 +143,8 @@ DLP ポリシーを作成および構成する方法に柔軟性があります�
 |SharePoint サイト |sites |
 |OneDrive アカウント |アカウントまたは配布グループ |
 |Teams チャットおよびチャネル メッセージ |アカウント |
-|Windows 10 デバイス |ユーザーまたはグループ |
-|Microsoft Defender for Cloud Apps |インスタンス |
+|Windows 10、Windows 11、macOS (Catalina 10.15 以上) デバイス |ユーザーまたはグループ |
+|Microsoft Cloud App Security |インスタンス |
 |オンプレミス リポジトリ| リポジトリ ファイルのパス|
 
 3. **アイテムに適用する** ポリシーに一致する必要がある条件を選択します。事前に構成された条件を受け入れるか、カスタム条件を定義できます。 次に例を示します。
@@ -157,7 +157,7 @@ DLP ポリシーを作成および構成する方法に柔軟性があります�
 
 - SharePoint/Exchange/OneDrive: コンテンツにアクセスする組織フォーム外のユーザーをブロックします。 ヒントをユーザーに表示し、DLP ポリシーで禁止されているアクションを実行しているという電子メール通知を送信します。
 - Teamsチャットとチャネル: 機密情報がチャットまたはチャネルで共有されるのをブロックする
-- Windows 10デバイス: 機密性の高いアイテムを削除可能な USB デバイスにコピーする監査または制限する
+- Windows 10、Windows 11、macOS (Catalina 10.15 以上) デバイス: 機密性の高いアイテムを削除可能な USB デバイスにコピーする監査または制限する
 - Officeアプリ: 危険な動作を行っているユーザーに通知するポップアップを表示し、オーバーライドをブロックまたはブロックします。
 - オンプレミスのファイル共有: ファイルを保存場所から検疫フォルダーに移動する
 

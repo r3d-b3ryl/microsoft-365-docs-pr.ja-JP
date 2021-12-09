@@ -1,6 +1,6 @@
 ---
 title: ユーザーの要件Microsoft 365 Lighthouse
-f1.keywords: NOCSH
+f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Managed Service Providers (MSP) の場合は、サービス プロバイダーで使用する要件の一覧Microsoft 365 Lighthouse。
-ms.openlocfilehash: 70aaefc7e19268a5ad4c33c50b2e165361f2c362
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8a502e056d570ef81e1bdb02321f0492c2b50395
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60188927"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371894"
 ---
 # <a name="requirements-for-microsoft-365-lighthouse"></a>ユーザーの要件Microsoft 365 Lighthouse
 
@@ -66,5 +66,5 @@ Microsoft Defender ウイルス対策オペレーティング システムの一
 [Microsoft 365 Lighthouse コンプライアンス ページの概要](m365-lighthouse-device-compliance-page-overview.md)(記事)\
 [Microsoft 365 Lighthouse ユーザー ページの概要](m365-lighthouse-users-page-overview.md)(記事)\
 [Microsoft 365 Lighthouseの管理ページの概要](m365-lighthouse-threat-management-page-overview.md)(記事)\
-[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml)  (記事)
+[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml)   (記事)
 

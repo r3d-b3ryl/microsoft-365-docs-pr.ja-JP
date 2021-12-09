@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: 管理者は、組織内のユーザーが行ったセルフサービス購入を管理する方法について学習できます。
 ms.date: 03/26/2021
-ms.openlocfilehash: edfacf8ebd1cd6815ec715e975b8bebc273dafc6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 854a013779f9d1b3d141b1770860740f633e8130
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60158463"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371918"
 ---
 # <a name="manage-self-service-purchases-admin"></a>セルフサービスによる購入を管理する (管理者)
 
@@ -42,18 +42,12 @@ ms.locfileid: "60158463"
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[お使いの製品]</a> ページの順に移動します。
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">お使いの製品</a>] ページの順に移動します。
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[お使いの製品]</a> ページの順に移動します。
 ::: moniker-end
 
-2. [製品 **] タブ** で、フィルター アイコンを選択し、[セルフサービス] **を選択します**。
+2. **[製品]** タブで、フィルター アイコンを選択し、**[セルフサービス]** を選択します。
 3. サブスクリプションの詳細を表示するには、一覧から 1 つを選択します。
 
 ## <a name="view-who-has-licenses-for-a-self-service-purchase-subscription"></a>セルフサービス購入サブスクリプションのライセンスを持っているユーザーを表示する
@@ -64,12 +58,6 @@ ms.locfileid: "60158463"
 ::: moniker range="o365-worldwide"
 
 1. 管理センターで、[**課金**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">ライセンス</a>] ページに移動します。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
- 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">ライセンス</a>] ページに移動します。
 
 ::: moniker-end
 
@@ -108,12 +96,6 @@ ms.locfileid: "60158463"
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">で、[</a>課金の購入サービス **]** > **ページに移動** します。
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">で、[</a>課金の購入サービス **]** > **ページに移動** します。
@@ -142,13 +124,7 @@ ms.locfileid: "60158463"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[**課金**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">で、[</a>製品の請求]  > **ページに移動** します。
+1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
 
 ::: moniker-end
 
@@ -158,7 +134,7 @@ ms.locfileid: "60158463"
 
 ::: moniker-end
 
-2. [製品 **] タブ** で、フィルター アイコンを選択し、[セルフサービス] **を選択します**。
+2. **[製品]** タブで、フィルター アイコンを選択し、**[セルフサービス]** を選択します。
 3. 引き継ぐサブスクリプションを選択します。
 4. [サブスクリプションの詳細] ページの [ **サブスクリプションと設定** ] セクションで、[このサブスクリプションを制御 **する] を選択します**。
 5. 右側のウィンドウで、[ユーザーの移動] **を選択します**。
@@ -177,19 +153,13 @@ ms.locfileid: "60158463"
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">で、[</a>製品の請求]  > **ページに移動** します。
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">で、[</a>製品の請求]  > **ページに移動** します。
 
 ::: moniker-end
 
-2. [製品 **] タブ** で、フィルター アイコンを選択し、[セルフサービス] **を選択します**。
+2. **[製品]** タブで、フィルター アイコンを選択し、**[セルフサービス]** を選択します。
 3. キャンセルするサブスクリプションを選択します。
 4. [サブスクリプションの詳細] ページの [ **サブスクリプションと設定** ] セクションで、[このサブスクリプションを制御 **する] を選択します**。
 5. 右側のウィンドウで、[サブスクリプションのキャンセル] **を選択します**。
@@ -200,6 +170,6 @@ ms.locfileid: "60158463"
 
 ## <a name="need-help-contact-us"></a>お困りの際は、 お問い合わせください。
 
-セルフサービス購入に関する一般的な質問については、「セルフサービス購入に関する [よく寄せられる質問」を参照してください](self-service-purchase-faq.yml)。
+セルフサービスでの購入に関するよく寄せられる質問については、「[セルフサービスでの購入に関する FAQ](self-service-purchase-faq.yml)」を参照してください。
 
-セルフサービス購入に関するご質問やサポートが必要な場合は、サポート [にお問い合わせください](../../business-video/get-help-support.md)。
+ご質問がある場合や、セルフサービスでのご購入については、[サポートにお問い合わせ](../../admin/get-help-support.md)ください。

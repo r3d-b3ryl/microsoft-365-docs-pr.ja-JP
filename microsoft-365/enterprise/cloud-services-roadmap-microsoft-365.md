@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: クラウド サービスをセットアップするためのロードマップは、Microsoft 365。
-ms.openlocfilehash: 943235898cc3d1bf1ad9232d6d8196fd9202ff11
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fa3939bcbd97262afd63cf5f385cdb8fe7c79ba7
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192036"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61369890"
 ---
 # <a name="cloud-services-roadmap-for-microsoft-365"></a>クラウド サービスのクラウド Microsoft 365
 
@@ -45,7 +45,7 @@ Exchange、SharePoint、または Skype for Business の既存のサーバー �
 クラウド サービスを管理するには、次の方法を使用します。 
 
 - [サービスの正常性を確認する](view-service-health.md)
-- [サポート オプションについて](../business-video/get-help-support.md)
+- [サポート オプションについて](../admin/get-help-support.md)
 - クラウド サービスの管理
   - [Exchange Online](/Exchange/exchange-online)
   - [SharePoint Online](https://support.office.com/article/79eb0420-8cbd-4bcb-a90b-ddc7d3ab4b3a)

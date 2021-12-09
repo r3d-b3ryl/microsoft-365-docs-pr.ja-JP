@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3954ef585ee3a4f51677f3e5e26b6309d3b75889
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: bbb669d485336d1840e414f1f9d85507c175dd14
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60661461"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370874"
 ---
 # <a name="cloudappevents"></a>CloudAppEvents
 
@@ -35,7 +35,7 @@ ms.locfileid: "60661461"
 
 
 
-高度 `CloudAppEvents` な検索スキーマの[表](advanced-hunting-overview.md)には、さまざまなクラウド アプリとサービスのアクティビティに関する情報が含Microsoft Cloud App Security。 完全なリストについては、「対象のアプリ [とサービス」に移動します](#apps-and-services-covered)。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。 
+高度 `CloudAppEvents` な検索スキーマの [表](advanced-hunting-overview.md) には、Microsoft Defender for Cloud Apps の対象となるさまざまなクラウド アプリおよびサービスのアクティビティに関する情報が含まれています。 完全なリストについては、「対象のアプリ [とサービス」に移動します](#apps-and-services-covered)。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。 
 
 >[!IMPORTANT]
 >この表には、表で使用できる情報が含 `AppFileEvents` まれています。 2021 年 3 月 7 日から、この日付以降のクラウド サービスでファイル関連のアクティビティを検索するユーザーは、代わりにテーブルを `CloudAppEvents` 使用する必要があります。 <br><br>テーブルを引き続き使用するクエリとカスタム検出ルールを検索し、テーブル `AppFileEvents` を使用するために編集 `CloudAppEvents` してください。 影響を受けるクエリの変換に関する詳細なガイダンスについては、「高度な検索を使用したクラウド アプリアクティビティ全体のハントMicrosoft 365 Defender[参照してください](https://techcommunity.microsoft.com/t5/microsoft-365-defender/hunt-across-cloud-app-activities-with-microsoft-365-defender/ba-p/1893857)。
@@ -50,6 +50,7 @@ ms.locfileid: "60661461"
 | `Application` | string | 記録されたアクションを実行したアプリケーション |
 | `ApplicationId` | string | アプリケーションの一意の識別子 |
 | `AccountObjectId` | string | アカウントの一意の識別子は、Azure Active Directory |
+| `AccountId` | string | ユーザーが見つけたアカウントのMicrosoft Cloud App Security。 ID、Azure Active Directoryプリンシパル名、または他の識別子を使用できます。 |
 | `AccountDisplayName` | string | アドレス帳に表示されるアカウント ユーザーの名前。 通常、指定または名、ミドル イニシエーション、姓または姓の組み合わせ。 |
 | `IsAdminOperation` | string | アクティビティが管理者によって実行されたかどうかを示します。 |
 | `DeviceType` | string | 目的と機能に基づくデバイスの種類 ("ネットワーク デバイス"、"ワークステーション"、"Server"、"Mobile"、"Gaming console"、"Printer" など) | 
@@ -69,11 +70,11 @@ ms.locfileid: "60661461"
 | `RawEventData` | string | JSON 形式のソース アプリケーションまたはサービスからの生のイベント情報 |
 | `AdditionalFields` | 動的 | エンティティまたはイベントに関する追加情報 |
 | `AccountType` | string | ユーザー アカウントの種類(標準、System、Admin、DcAdmin、System、Application など)の一般的な役割とアクセス レベルを示します。 | 
-| `IsExternalUser` | ブール値 | ネットワーク内のユーザーが組織のドメインに属していないかどうかを示します。 | 
-| `IsImpersonated` | ブール値 | アクティビティが別の (偽装された) ユーザーに代わって 1 人のユーザーによって実行されたかどうかを示します。 | 
+| `IsExternalUser` | boolean | ネットワーク内のユーザーが組織のドメインに属していないかどうかを示します。 | 
+| `IsImpersonated` | ブール値 | あるユーザーが別の (偽装された) ユーザーに対してアクティビティを実行したかどうかを示します。 | 
 | `IPTags` | 動的 | 特定の IP アドレスおよび IP アドレス範囲に適用される顧客定義の情報 | 
 | `IPCategory` | string | IP アドレスに関する追加情報 | 
-| `UserAgentTags` | 動的 | ユーザー エージェント フィールドのMicrosoft Cloud App Securityで提供される詳細。 ネイティブ クライアント、古いブラウザー、古いオペレーティング システム、Robot など、任意の値を指定できます。 | 
+| `UserAgentTags` | 動的 | Microsoft Defender for Cloud Apps がユーザー エージェント フィールドのタグで提供する詳細。 ネイティブ クライアント、古いブラウザー、古いオペレーティング システム、Robot など、任意の値を指定できます。 | 
 
 ## <a name="apps-and-services-covered"></a>対象となるアプリとサービス
 
@@ -89,7 +90,7 @@ ms.locfileid: "60661461"
 - Office 365
 - Yammer 
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8eb290dbf04e05194dc32ded6cde770d311ae582
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 551f1f73626fe3820e347917b1d06ab0df3a6117
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165932"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373262"
 ---
 # <a name="server-migration-scenarios-from-the-previous-mma-based-microsoft-defender-for-endpoint-solution"></a>以前の MMA ベースの Microsoft Defender for Endpoint ソリューションからのサーバー移行シナリオ
 
@@ -55,7 +55,7 @@ Microsoft Endpoint Configuration Managerまたは Microsoft Defender for Cloud �
 4. Microsoft Defender for Endpoint をインストールします。
 5. [グループ ポリシー] からダウンロードしたグループ **ポリシーで使用** するオンボーディング [スクリプト](https://securitycenter.microsoft.com)をMicrosoft Defender セキュリティ センター。
 
-スクリプトを使用するには、インストール パッケージとオンボーディング パッケージも配置したインストール ディレクトリにダウンロードします (「サーバー エンドポイントの構成」 [を参照](configure-server-endpoints.md))。
+スクリプトを使用するには、インストール パッケージとオンボーディング パッケージを配置したインストール ディレクトリにスクリプトをダウンロードします (「サーバー エンドポイントの構成 [」を参照してください](configure-server-endpoints.md))。
 
 例: .\install.ps1 -RemoveMMA <YOUR_WORKSPACE_ID> -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd"
 
@@ -75,7 +75,7 @@ Microsoft Endpoint Configuration Managerまたは Microsoft Defender for Cloud �
    1. Microsoft Defender for Endpoint の MMA ワークスペース構成を削除します。 [「PowerShell を使用してワークスペースを削除する」を参照してください](/azure/azure-monitor/agents/agent-manage)。 この手順は省略可能です。以前のEDRセンサーは、新しいセンサーがアクティブになった後に実行を停止します (これには数時間かかる場合があります)。
    2. SCEP をアンインストールします。
    3. 該当する [場合は、前提条件](configure-server-endpoints.md#prerequisites) をインストールします。
-   4. Microsoft Defender for Endpoint をインストールする (「 [サーバー エンドポイントの構成」を参照](configure-server-endpoints.md))。
+   4. Microsoft Defender for Endpoint のインストール (「[サーバー エンドポイントの構成」を参照)。](configure-server-endpoints.md)
    5. [グループ ポリシー] からダウンロードしたグループ **ポリシーで使用** するオンボーディング [スクリプト](https://securitycenter.microsoft.com)をMicrosoft Defender セキュリティ センター。 
 
    > [!TIP]

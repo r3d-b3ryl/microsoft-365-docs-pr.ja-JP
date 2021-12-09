@@ -26,12 +26,12 @@ search.appverid:
 - MET150
 - MOE150
 description: このソリューションの手順に従って、組織のデータを保護Microsoft 365元の従業員を削除します。
-ms.openlocfilehash: 63a53ba8ae982fd49b033da62c27d4da3d72737d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 15ef426892bcabe0af71c52f1664255cb82b6637
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60161608"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370250"
 ---
 # <a name="overview-remove-a-former-employee-and-secure-data"></a>概要: 元従業員とセキュリティで保護されたデータを削除する
 
@@ -50,6 +50,23 @@ ms.locfileid: "60161608"
 |OneDrive と SharePoint |他のユーザーにアクセス権を与える |
 |Outlook|pst ファイルのインポート、メールボックスの追加 |
 |Active Directory|ハイブリッド環境でユーザーを削除する |
+
+## <a name="watch-delete-a-user"></a>ウォッチ: ユーザーの削除
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR?autoplay=false]
+
+従業員が会社を離れる場合は、ビジネス向けサービスから従業員を削除Microsoft 365必要があります。 その前に、会社のファイルへのアクセスをブロックし、作成したドキュメントを保持し、ユーザーの削除に関連する他のいくつかの管理タスクを実行する必要があります。
+
+1. 管理センターで 、[ユーザー] を **選択し**、[アクティブなユーザー] **を選択します**。
+1. 削除するユーザーを選択し、[ユーザーの削除] **を選択します**。
+1. チェック ボックスをオンにしてライセンスを削除し、メール エイリアスを削除するボックスをオンにします。
+1. このチェック ボックスをオンにすると、別のユーザーに元従業員のメールへのアクセス権が与え、[ユーザーを選択して電子メール オプションを設定する] **を選択します**。
+1. 関連付けられたメール エイリアスを削除するには、エイリアス **の横にある [X]** を選択します。
+1. 共有メールボックス情報を確認し、[完了] を **選択します**。
+1. オプションが正しく設定されていることを確認し、[割り当てと変換 **] を選択します**。
+1. 結果を確認し、[閉じる] を **選択します**。
+
+ユーザーを削除した後、アカウントを復元するには最大 30 日間必要です。
 
 ## <a name="solution-remove-a-former-employee"></a>解決策: 元従業員を削除する
 

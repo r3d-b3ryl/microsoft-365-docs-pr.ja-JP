@@ -1,6 +1,6 @@
 ---
 title: ベースラインMicrosoft 365 Lighthouse展開する
-f1.keywords: NOCSH
+f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 管理サービス プロバイダー (MSP) の場合は、Microsoft 365 Lighthouseベースラインを展開する方法Microsoft 365 Lighthouseします。
-ms.openlocfilehash: c241dae7839c6c0724a397912decc5da74ec556f
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: e60e364579abdc414ec9f7f3d16863f0139c9e6d
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111449"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372650"
 ---
 # <a name="deploy-microsoft-365-lighthouse-baselines"></a>ベースラインMicrosoft 365 Lighthouse展開する 
 

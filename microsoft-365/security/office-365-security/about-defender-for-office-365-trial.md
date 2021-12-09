@@ -17,19 +17,19 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-ROBOTS: NOINDEX
+ROBOTS: NOINDEX, NOFOLLOW
 description: 管理者は、管理者向け Microsoft Defender の試用版モードについてOffice 365
-ms.openlocfilehash: 5dc374a8fbb305c7e5d9bf63660953cc20b644e3
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 444e2acc789cec0c569cbd4904a40794886f40dc
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882191"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61369674"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>Microsoft Defender for Office 365試用版
 
 > [!IMPORTANT]
-> 簡単に使用できる Microsoft Defender を使用して、プレイブック[Office 365開始します](https://download.microsoft.com/download/8/8/8/888e96ce-eb6a-487a-babc-a7e4ae1cd151/MDO%20Trial%20Playbook.pdf)。 このプレイブックは、Microsoft Defender を使用して組織を保護する方法を示して、無料試用版をOffice 365。
+> Microsoft Defender for microsoft [Defender](trial-playbook-defender-for-office-365.md)の試用版プレイブックを使って、簡単にOffice 365。 このプレイブックは、Microsoft Defender を使用して組織を保護する方法を示して、無料試用版をOffice 365。
 
 Microsoft Defender for Office 365、電子メール メッセージ、リンク (URL)、およびコラボレーション ツールによって組織が悪意のある脅威から保護します。 Defender for Office 365 には次のものが含まれます。
 
@@ -71,7 +71,7 @@ Microsoft Defender for Office 365 試用版は、数回クリックした後、O
 
 他のワークロードも保護に使用できます セーフ (たとえば、SharePoint、OneDrive、Microsoft Teams、Microsoft Teams および[セーフ](mdo-for-spo-odb-and-teams.md)Office 365 アプリの添付[ファイル](safe-links.md#safe-links-settings-for-office-365-apps)など)。
 
-試用版のセットアップ中に、Office 365 プラン 2 の Defender 専用の応答機能[(AIR](office-365-air.md)や脅威[エクスプローラーなど)](threat-explorer.md)も組織全体に対して設定されます。 ポリシースコープは必要ありません。
+試用版のセットアップ中に、Office 365 プラン 2 の Defender 専用の応答機能 ([たとえば、AIR](office-365-air.md)と脅威エクスプローラー[](threat-explorer.md)も組織全体に対して設定されます)。 ポリシースコープは必要ありません。
 
 ## <a name="licensing"></a>ライセンス
 
@@ -95,7 +95,7 @@ Microsoft Defender for Office 365 試用版は、数回クリックした後、O
     - 特定のユーザーを対象にしたカスタム の警察があります。
   - **完全な** 保護: プラン 2 の機能 (AIR、Threat Explorer、攻撃シミュレーション トレーニングなど) Office 365 Defender によって保護されているユーザーの総数。
 
-## <a name="permissions"></a>許可
+## <a name="permissions"></a>アクセス許可
 
 試用版を開始または終了するには、グローバル管理者またはセキュリティ管理者の役割のメンバーである必要Azure Active Directory。 詳細については、「[管理者ロールについて](../../admin/add-users/about-admin-roles.md)」を参照してください。
 

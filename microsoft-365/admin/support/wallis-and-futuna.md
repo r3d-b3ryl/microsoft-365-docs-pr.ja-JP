@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 ms.localizationpriority: medium
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b34003aecfbf34f8648073afeb22f1d06f099db8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9932c63d40e17755c85ba9d49a1fb6a5deee0b3d
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60171317"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371930"
 ---
 # <a name="contact-support-for-wallis-and-futuna"></a>Wallis と Futuna のサポートに問い合わせ
 
-[別の国または地域を検索します](../../business-video/get-help-support.md)。
+[別の国または地域を検索します](../get-help-support.md)。
 
 ## <a name="phone-number"></a>電話番号
 +1 312 843 5147

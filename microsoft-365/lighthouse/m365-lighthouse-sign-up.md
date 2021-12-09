@@ -1,6 +1,6 @@
 ---
 title: アカウントにサインアップMicrosoft 365 Lighthouse
-f1.keywords: NOCSH
+f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Managed Service Providers (MSP) の場合は、サービス プロバイダーにサインアップするMicrosoft 365 Lighthouse。
-ms.openlocfilehash: 9a69b8a261d3a5faebd7ad7aa72336d0c9f5977c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 58721d83529fb70552d151cd0a0b19ce5ba85c28
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213999"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374054"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>アカウントにサインアップMicrosoft 365 Lighthouse
 
@@ -66,5 +66,6 @@ ms.locfileid: "60213999"
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[サービスのMicrosoft 365 Lighthouse](m365-lighthouse-overview.md) (記事)\
-[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (記事)
+[概要 (Microsoft 365 Lighthouse)](m365-lighthouse-overview.md)   
+[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (記事)   
+[Microsoft 365 Lighthouse Microsoft Defender for Business](../security/defender-business/mdb-lighthouse-integration.md) (記事)

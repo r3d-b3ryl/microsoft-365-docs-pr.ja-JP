@@ -20,16 +20,16 @@ search.appverid:
 - MET150
 - MOE150
 description: どこからでも作業Microsoft 365方法の概要。
-ms.openlocfilehash: 7312f74bb27ba166650356ed6fa835c079ce0b76
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 56fff54805db76f7022747bdd911317aac0dd97c
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60188567"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61369794"
 ---
 # <a name="work-from-anywhere---overview"></a>どこからでも作業する - 概要
 
-デスクから離れていますか? これ以上のラップトップバッテリーはありませんか? 大丈夫！ スマートフォンやタブレット上の任意の場所Office作業を処理します。
+デスクから離れていますか? これ以上のラップトップバッテリーはありませんか? 問題ありません。 スマートフォンやタブレット上の任意の場所Office作業を処理します。
 
 **Proヒント:** 個人用デバイス上の仕事用アプリの通知をオフにして、ワーク ライフ バランスを維持します。
 
@@ -37,7 +37,7 @@ ms.locfileid: "60188567"
 
 インフォグラフィックをダウンロードして、どこからでも作業するためのヒントを取得します。 
 
-[PDF](https://go.microsoft.com/fwlink/?linkid=2079451)  | [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079455)
+[PDF](https://go.microsoft.com/fwlink/?linkid=2079451) | [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079455)
 
 **自宅で定期的に働く方法を考えていますか?**
 
@@ -47,7 +47,7 @@ ms.locfileid: "60188567"
 
 電話でメールや予定をOutlookすることができます。 アプリをダウンロードし、起動、サインイン、アカウントのセットアップを行います。
 
-電話にインストールする方法の詳細[についてはOutlookを参照してください](install-apps-android.md)。
+電話にインストールする方法の詳細[についてはOutlookを参照してください](https://support.microsoft.com/office/6ef2ebf2-fc2d-474a-be4a-5a801365c87f)。
 
 ## <a name="save-your-files-to-the-cloud"></a>ファイルをクラウドに保存する
 
@@ -65,7 +65,7 @@ ms.locfileid: "60188567"
 1. [OneDrive開き、サインインします。
 1. 手順に従ってセットアップを完了し、同期を開始します。
 
-少しの助けを必要としますか? ファイルを保存[する場所](store-files.md)、モバイル アプリのOneDriveファイルとフォルダー[の](https://support.microsoft.com/office/448d4051-3a43-4d2e-b1d8-de0aa03c069e)同期方法に関[するアドバイスを取得します](https://support.microsoft.com/office/d9262485-9bf8-4ceb-bac2-e83f68cb6a97)。
+簡単なサポートが必要な場合は? ファイルを保存[する場所](https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e)、モバイル アプリのOneDriveファイルとフォルダー[の](https://support.microsoft.com/office/448d4051-3a43-4d2e-b1d8-de0aa03c069e)同期方法に関[するアドバイスを取得します](https://support.microsoft.com/office/d9262485-9bf8-4ceb-bac2-e83f68cb6a97)。
 
 ## <a name="open-and-edit-your-files-from-any-device"></a>任意のデバイスからファイルを開いて編集する
 
@@ -73,7 +73,7 @@ ms.locfileid: "60188567"
 
 スマートフォンやタブレットOfficeアプリをインストールし、どこにいても動作します。 アプリをダウンロードし、起動、サインイン、アカウントのセットアップを行います。
 
-Android iOS にインストールする方法Office アプリ[詳細](install-apps-android.md)  |  [については、「Android iOS」を参照してください](install-apps-ios.md)。
+Android iOS にインストールする方法Office アプリ[詳細](https://support.microsoft.com/office/6ef2ebf2-fc2d-474a-be4a-5a801365c87f)  |  [については、「Android iOS」を参照してください](https://support.microsoft.com/office/0402b37e-49c4-4419-a030-f34c2013041f)。
 
 携帯電話やタブレットで何ができるか分からないでしょうか? アプリの使用の詳細についてはOfficeしてください。
 
@@ -81,8 +81,8 @@ Android iOS にインストールする方法Office アプリ[詳細](install-ap
 | :------------------- | :------------------- |
 | [Office アプリ iOS の詳細](https://support.microsoft.com/office/microsoft-office-app-for-ios-c8880c05-883a-46b6-ad32-9bffa31228d0)  | [Office アプリ Android 用のアプリ](https://support.microsoft.com/en-us/office/microsoft-office-app-for-android-0383d031-a1c6-46c9-b734-53cd1d22765b)| 
 | [モバイル デバイスで Word を使用する](https://support.microsoft.com/office/93446a8c-3809-4227-902c-11f11ebe8c2a)|[モバイル デバイスで Word を使用する](https://support.microsoft.com/office/93446a8c-3809-4227-902c-11f11ebe8c2a)| 
-| [PowerPointヘルプiPhone参照](https://support.microsoft.com/office/powerpoint-for-iphone-help-754fcb37-783b-4e8a-afca-edb900221b8b)|[PowerPoint for Androidタブレット ヘルプ](https://support.microsoft.com/office/2ada1d22-3784-4943-bc47-9d1ede42875c)| 
-| [PowerPoint for iPadヘルプ](https://support.microsoft.com/office/powerpoint-for-ipad-help-b75ce3bb-03e3-46df-a792-647573fef84a)|[PowerPoint for Android電話のヘルプ](https://support.microsoft.com/office/f6714e00-0ee2-48d1-bd3d-e1997565861f)| 
+| [PowerPointヘルプiPhone参照](https://support.microsoft.com/office/powerpoint-for-iphone-help-754fcb37-783b-4e8a-afca-edb900221b8b)|[PowerPoint for Android タブレット ヘルプ](https://support.microsoft.com/office/2ada1d22-3784-4943-bc47-9d1ede42875c)| 
+| [PowerPoint for iPadヘルプ](https://support.microsoft.com/office/powerpoint-for-ipad-help-b75ce3bb-03e3-46df-a792-647573fef84a)|[PowerPoint for Android電話ヘルプ](https://support.microsoft.com/office/f6714e00-0ee2-48d1-bd3d-e1997565861f)| 
 
 ### <a name="work-in-a-browser"></a>ブラウザーで作業する
 

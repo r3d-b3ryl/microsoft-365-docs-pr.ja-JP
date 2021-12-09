@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Office アプリのインストール方法について説明します。
-ms.openlocfilehash: 55f384350db4763d7e93aa887191691583c7b421
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: HT
+ms.openlocfilehash: 5bef05c11735b6ff95e7add6f9e542885c1e8599
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60173897"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61369902"
 ---
 # <a name="install-office-apps"></a>Office アプリのインストール 
 
@@ -49,7 +49,6 @@ Microsoft Office アプリは、**[スタート]** メニューから見つけ�
 
 [スマートフォンに Microsoft 365 管理モバイル アプリをインストールする](admin-mobile.md) (ビデオ)
 
-[小規模ビジネスで Microsoft Teams を開始する](get-started-teams-small-business.md) (ビデオ)
+[小規模ビジネスで Microsoft Teams を開始する](https://support.microsoft.com/office/6723dc43-dbc0-46e6-af49-8a2d1c5cb937) (ビデオ)
 
-[ファイルを外部と簡単に共有する](share-files-externally.md) (ビデオ)
-
+[ファイルを外部と簡単に共有する](https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07) (ビデオ)

@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 組織内のユーザーがどのように Microsoft 365 サービスを使用しているかの定期的レポートを取得して、各チャートをドリルダウンして詳しい分析情報を得ます。
-ms.openlocfilehash: 6ea5027daad00e6c141bfb53137307113321aa7a
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: a881f6829d99ef8e7a47340140609cbc75d7e5c3
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60655446"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370310"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>管理センターの Microsoft 365 レポート
 
@@ -44,12 +44,6 @@ ms.locfileid: "60655446"
 ::: moniker range="o365-worldwide"
 
 1. 管理センターで、[**レポート**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用状況</a>] ページの順に移動します。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理センター</a>で、[**レポート**] \> [**使用状況**] ページの順に移動します。
 
 ::: moniker-end
 
@@ -116,7 +110,7 @@ ms.locfileid: "60655446"
 |[Skype for Business Online の電話会議開催者のアクティビティ](/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)|はい|はい|いいえ [^1]|いいえ [^1]|はい|
 |[Skype for Business Online の電話会議参加者のアクティビティ](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)|はい|はい|いいえ [^1]|いいえ [^1]|はい|
 |[Skype for Business Online のピアツーピア アクティビティ](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)|はい|はい|いいえ [^1]|いいえ [^1]|はい|
-|[Viva ラーニング アクティビティ](viva-learning-activity.md)|はい|該当なし|該当なし|該当なし|該当なし|
+|[Viva ラーニング アクティビティ](viva-learning-activity.md)|はい|該当なし|N/A|N/A|該当なし|
 
 [^1]: The report is in plan to be released in the future. The <a href="https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=" target="_blank">Microsoft 365 Roadmap</a> will be updated before the release.
 [^2]: The service is not available in the environment so no plan to release the report.

@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 58b7ef4b180824d09fd0539530107771b74ea709
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: c2268658223ff0bce0e879e23ea4a5c1ce843aaf
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283895"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371198"
 ---
 # <a name="get-alert-related-ips-information-api"></a>アラート関連の AP の情報 API を取得する
 
@@ -59,8 +59,8 @@ ms.locfileid: "61283895"
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
 >
-> - ユーザーには、少なくとも次の役割のアクセス許可が必要です。'データの表示' (詳細については、「役割の作成と [管理」を参照してください](user-roles.md))
-> - ユーザーは、デバイス グループ設定に基づいて、アラートに関連付けられたデバイスにアクセスする必要があります (詳細については、「デバイス グループの作成と管理」 [を参照してください](machine-groups.md))
+> - ユーザーには、少なくとも次の役割のアクセス許可が必要です。'データの表示' (詳細については、「役割の作成と [管理」を参照してください。](user-roles.md)
+> - ユーザーは、デバイス グループ設定に基づいて、アラートに関連付けられたデバイスにアクセスする必要があります (詳細については、「デバイス グループの作成と [管理」を参照してください)](machine-groups.md)
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -70,7 +70,7 @@ GET /api/alerts/{id}/ips
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**。
 

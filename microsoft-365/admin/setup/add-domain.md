@@ -27,31 +27,41 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: セットアップ ウィザードを使用して、DNS ホストに DNS レコードMicrosoft 365追加Microsoft 365 管理センターにドメインを追加します。
-ms.openlocfilehash: 29d8471726649a96c2015d3d1ae492ae9f93c392
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7bb853e777ee0377ac0fb6ec6f7de453d4c4d4c7
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195115"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373238"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Microsoft 365 にドメインを追加する
 
  探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](domains-faq.yml)** を参照してください。 
   
- *追加、変更またはドメインを削除するには、[ビジネスまたはエンタープライズ プラン](https://products.office.com/business/office)の **グローバル管理者** である **必要** があります。これらの変更は、テナント全体、*カスタマイズ管理者* または *正規ユーザー* に影響を与え、変更を加えることはできません。*  
+## <a name="before-you-begin"></a>はじめに
 
- ## <a name="add-a-domain"></a>ドメインの追加
+ドメインを追加、変更、または **削除するには、** ビジネスプランまたはエンタープライズ プランの [グローバル管理者である必要があります](https://products.office.com/business/office)。 これらの変更はテナント全体に影響します。 *カスタマイズされた管理者* または *通常のユーザー* は、これらの変更を行う事ができません。
+
+## <a name="watch-add-a-domain"></a>ウォッチ: ドメインの追加
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4dN8c?autoplay=false]
+
+会社によって、さまざまな目的で複数のドメイン名が必要になる場合があります。 たとえば、顧客が既にその会社名を使用していて、顧客とのコミュニケーションに失敗した場合、会社名に別のスペルを追加したい場合があります。
+
+1. [設定] Microsoft 365 管理センター[セットアップ] を <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**選択します**</a>。
+1. [カスタム **ドメインのセットアップを取得する] で、[** ドメインの **管理**  >  **] を**  >  **選択します**。
+1. 追加する新しいドメイン名を入力し、[**次へ**] を選択します。
+1. ドメイン レジストラーにサインインし、[次へ] を **選択します**。
+1. 新しいドメインのサービスを選択します。
+1. [次 **の承認**  >  **]**  >  **を選択し**、[完了]**を選択します**。 新しいドメインが追加されました。
+
+## <a name="add-a-domain"></a>ドメインの追加
 
 以下の手順に従って、ドメインの追加、セットアップ、またはセットアップの続行を行います。 
 
 ::: moniker range="o365-worldwide"
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> の管理センターにアクセスします。
-
-::: moniker-end
-::: moniker range="o365-germany"
-
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a> から管理センターにアクセスします。
 
 ::: moniker-end
 
@@ -135,6 +145,5 @@ ms.locfileid: "60195115"
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[ドメインの FAQ](domains-faq.yml) (記事)\
-[ドメインとは](../get-help-with-domains/what-is-a-domain.md) (記事)\
-[ドメイン名を購入する](../get-help-with-domains/buy-a-domain-name.md)(Microsoft 365)\
+[ドメインに関する FAQ](domains-faq.yml) (記事) [ドメインとは](../get-help-with-domains/what-is-a-domain.md) (記事)[ドメイン名を購入する](../get-help-with-domains/buy-a-domain-name.md)(Microsoft 365)\
+[DNS レコードを追加して](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)ドメインに接続する ([記事)](../get-help-with-domains/change-nameservers-at-any-domain-registrar.md)ネームサーバーを変更して、Microsoft 365レジストラーと一緒に設定する (記事)

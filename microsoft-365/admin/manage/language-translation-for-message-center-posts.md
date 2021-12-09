@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9f7c2ff2-af65-4557-8840-0b84ce96d9bc
 description: メッセージ センターの投稿は英語のみですが、ユーザーが指定した言語で自動的に表示Microsoft 365。
-ms.openlocfilehash: 0afdd98b56b6cb13a5f4bef014d8612c30dfbf11
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 54c9d0c20045805029774fa37f2eeb5f992cbd49
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164334"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61369962"
 ---
 # <a name="language-translation-for-message-center-posts"></a>メッセージ センターの投稿の言語の翻訳
 
@@ -52,7 +52,7 @@ ms.locfileid: "60164334"
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[アプリケーションの概要 (Microsoft 365 管理センター)\](../../business-video/admin-center-overview.md)
+[概要] Microsoft 365 管理センター][[Microsoft 365 管理センターの概要](../admin-overview/admin-center-overview.md)(ビデオ)\
 [取得しているサブスクリプションが不明な場合](../admin-overview/what-subscription-do-i-have.md) (記事)\
 [変更の上に残る](../manage/stay-on-top-of-updates.md) (記事)
 

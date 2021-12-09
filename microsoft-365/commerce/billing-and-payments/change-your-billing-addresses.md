@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: ビジネス向け請求通知の受信に使用する請求先住所または電子メール アドレスを更新Microsoft 365します。
 ms.date: 04/07/2021
-ms.openlocfilehash: abc86bdaad0f28bf0590e19d8a7d37fbc21239b8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 839dab1c63394f76c41abb7dd784253bb636ba38
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202059"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371282"
 ---
 # <a name="change-your-billing-addresses"></a>請求先住所を変更する
 
@@ -50,12 +50,6 @@ ms.locfileid: "60202059"
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">で、[</a>課金アカウント] **ページ** > **に移動** します。
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">で、[</a>課金アカウント] **ページ** > **に移動** します。
@@ -71,12 +65,6 @@ ms.locfileid: "60202059"
 ::: moniker range="o365-worldwide"
 
 1. 管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">支払い方法</a>] ページの順に移動します。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">で、[</a>課金の支払い方法 **]** > **ページに移動** します。
 
 ::: moniker-end
 
@@ -96,19 +84,13 @@ ms.locfileid: "60202059"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">お使いの製品</a>] ページの順に移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[お使いの製品]</a> ページの順に移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">お使いの製品</a>] ページの順に移動します。
 
     中国の 21Vianet が運営する Office 365 を使用している場合は、「[21Vianet で運用されている Office 365 での請求書の表示または Fapiaos の取得](../../admin/services-in-china/view-your-bill-or-get-a-fapiao.md)」を参照してください。
 
@@ -124,7 +106,7 @@ ms.locfileid: "60202059"
 
 既定では、組織の請求通知は Microsoft の電子メール アドレスと、組織内のすべてのグローバル管理者および請求管理者の代替メール アドレスに送信されます。 各管理者は、自身のプロファイル情報を更新することによって、連絡用メール アドレスを変更できます。
   
-1. グローバル管理者としてMicrosoft 365または学校のアカウントを使用してサインインします。[サインインする方法について説明します](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 職場や学校のアカウントを使って、グローバル管理者として Office 365 にサインインします。[サインインの手順を参照](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
 
 2. [**ユーザー アイコン**] を選択し、[**マイ アカウント**] を選択します。
   
@@ -141,12 +123,6 @@ ms.locfileid: "60202059"
 ::: moniker range="o365-worldwide"
 
 1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">[課金に関する通知]</a> ページに移動します。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">[課金に関する通知]</a> ページに移動します。
 
 ::: moniker-end
 

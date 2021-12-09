@@ -19,12 +19,12 @@ ms.collection:
 description: セキュリティ設定に関する Exchange Online Protection (EOP) と Defender のベスト Office 365は何ですか? 標準保護に関する現在の推奨事項は何ですか? より厳密にしたい場合は、何を使用する必要がありますか? また、Defender をユーザーに使用する場合、どのような追加Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d0ac90726b3cf3023243d62fd32c3ae70aa5ee8d
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 194d255099b3847a648d083f925489abf0e22a49
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61284135"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373682"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>EOP および Microsoft Defender for Office 365 セキュリティの推奨設定
 
@@ -44,6 +44,8 @@ ms.locfileid: "61284135"
 この記事では、既定の設定と、ユーザーを保護するために推奨される Standard と Strict の設定について説明します。 この表には、Microsoft 365 Defender ポータルと PowerShell (Exchange Online PowerShell またはスタンドアロン Exchange Online Protection PowerShell の設定が含まれています(Exchange Online)。
 
 > [!TIP]
+> このポータルでは、推奨される標準設定と厳密な設定をMicrosoft 365 Defenderできません。 [ユーザーの保護を有効 **にする]** のような推奨値を変更するには、PowerShell を使用Exchange Online [必要があります](/powershell/exchange/connect-to-exchange-online-powershell)。
+>
 > PowerShell Office 365高度な脅威保護推奨構成アナライザー (ORCA) モジュールを使用すると、(管理者) これらの設定の現在の値を見つけるのに役立ちます。 具体的には **、Get-ORCAReport** コマンドレットは、スパム対策、フィッシング対策、その他のメッセージの衛生設定の評価を生成します。 ORCA モジュールは、 からダウンロードできます <https://www.powershellgallery.com/packages/ORCA/> 。
 
 ## <a name="anti-spam-anti-malware-and-anti-phishing-protection-in-eop"></a>EOP でのスパム対策、マルウェア対策、フィッシング対策の保護
@@ -74,7 +76,7 @@ ms.locfileid: "61284135"
 |**フィッシング検出** アクション <p> _PhishSpamAction_|**検疫メッセージ** <p> `MoveToJmf`|**検疫メッセージ** <p> `Quarantine`|**検疫メッセージ** <p> `Quarantine`||
 |**高信頼フィッシング検出** アクション <p> _HighConfidencePhishAction_|**検疫メッセージ** <p> `Quarantine`|**検疫メッセージ** <p> `Quarantine`|**検疫メッセージ** <p> `Quarantine`||
 |**一括** 検出アクション <p> _BulkSpamAction_|**メッセージを迷惑メール フォルダーに移動する** <p> `MoveToJmf`|**メッセージを迷惑メール フォルダーに移動する** <p> `MoveToJmf`|**検疫メッセージ** <p> `Quarantine`||
-|**この数日間、検疫にスパムを保持する** <p> _QuarantineRetentionPeriod_|15 日間<sup>\*</sup>|30 日間|30 日間|<sup>\*</sup> 既定値は、既定のスパム対策ポリシーでは 15 日間、PowerShell で作成する新しいスパム対策ポリシーでは 15 日間です。 既定の値は、新しいスパム対策ポリシーで 30 日間です。このポリシーは、Microsoft 365 Defenderです。 <p> この値は、フィッシング対策ポリシーによって検疫されるメッセージにも影響します。 詳細については [、「EOP の検疫済み電子メール メッセージ」を参照してください](quarantine-email-messages.md)。|
+|**この数日間、検疫にスパムを保持する** <p> _QuarantineRetentionPeriod_|15 日間<sup>\*</sup>|30 日間|30 日間|<sup>\*</sup> 既定値は、既定のスパム対策ポリシーでは 15 日間、PowerShell で作成する新しいスパム対策ポリシーでは 15 日間です。 Microsoft 365Defender ポータルで作成する新しいスパム対策ポリシーの規定値は30日です。 <p> この値は、フィッシング対策ポリシーによって検疫されるメッセージにも影響します。 詳細については [、「EOP の検疫済み電子メール メッセージ」を参照してください](quarantine-email-messages.md)。|
 |**スパムの安全に関するヒントを有効にする** <p> _InlineSafetyTipsEnabled_|選択済み <p> `$true`|選択済み <p> `$true`|選択済み <p> `$true`||
 |フィッシング メッセージに対してゼロ時間自動削除 (ZAP) を有効にする <p> _PhishZapEnabled_|選択済み <p> `$true`|選択済み <p> `$true`|選択済み <p> `$true`||
 |スパム メッセージの ZAP を有効にする <p> _SpamZapEnabled_|選択済み <p> `$true`|選択済み <p> `$true`|選択済み <p> `$true`||

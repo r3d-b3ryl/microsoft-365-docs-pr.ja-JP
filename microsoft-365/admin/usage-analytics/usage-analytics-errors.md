@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: a73632a1-62c8-4a13-8115-913773b30f93
 description: 使用状況分析テンプレート アプリに関する問題のトラブルシューティングMicrosoft 365説明します。
-ms.openlocfilehash: 5d1c6234f07f7d524ba2698720db8596474ce94d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e9bb73eea33e882fb5c9b138610cdc0f8fe9a7c5
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200823"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373754"
 ---
 # <a name="troubleshooting-microsoft-365-usage-analytics"></a>使用状況分析Microsoft 365トラブルシューティング
 
@@ -48,7 +48,7 @@ ms.locfileid: "60200823"
   
  **原因:** テンプレート アプリ [内の](enable-usage-analytics.md)データを Microsoft 365 管理センター から表示することを選択すると、Microsoft 365 システムは組織の使用状況履歴データの生成を開始します。 テナントのサイズによっては、この手順に 2 時間から 48 時間かかることがあります。 
   
- **これを修正するには、次の手順を実行します。** お待ちください。ただし、メッセージが 3日後にデータに変更されない場合は、Microsoft 365 [に問い合わせください](../../business-video/get-help-support.md)。
+ **これを修正するには、次の手順を実行します。** ただ、忍耐強く、メッセージが 3日後にデータが準備完了に変わらない場合は、[ビジネス サポートMicrosoft 365問い合わせ] をクリックします。サポートを [受け取ります](../get-help-support.md)。
   
 ## <a name="we-are-unable-to-process-your-request-at-this-time-we-are-still-preparing-the-data-for-your-organization"></a>現在、リクエストを処理できません。引き続き組織のデータを準備しています。
 

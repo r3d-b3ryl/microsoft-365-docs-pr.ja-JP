@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: ユーザーから古いドメインを削除し、Microsoft 365別のドメインに移動するか、サブスクリプションをキャンセルする方法について学習します。
-ms.openlocfilehash: 1077f7c2cec8b99581c28b177e73f9c7b32f50c6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3b6bd67c8678d4be2b483865ee76574fd727cda5
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164634"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370010"
 ---
 # <a name="remove-a-domain"></a>ドメインを削除する
 
@@ -44,12 +44,6 @@ ms.locfileid: "60164634"
 ::: moniker range="o365-worldwide"
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理センター</a>にアクセスします。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理センター</a>にアクセスします。
 
 ::: moniker-end
 
@@ -77,12 +71,6 @@ ms.locfileid: "60164634"
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理センター</a>にアクセスします。
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理センター</a>にアクセスします。
@@ -106,11 +94,6 @@ ms.locfileid: "60164634"
 1. 管理センターで、[**グループ**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">グループ</a>] ページの順に移動します。
 
 ::: moniker-end
-::: moniker range="o365-germany"
-
-1. 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">で、[</a>グループ グループ] **ページ** > **に移動** します。
-
-::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
@@ -129,12 +112,6 @@ ms.locfileid: "60164634"
 ::: moniker range="o365-worldwide"
 
 1. 管理センターで、**[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[ドメイン]</a> ページの順に移動します。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 管理センターで、[セットアップ ドメイン] **ページ** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">に移動</a> します。
 
 ::: moniker-end
 
@@ -164,15 +141,6 @@ Microsoft 365 がセキュリティ グループ、配布リスト、ユーザ�
 > アカウントから [".onmicrosoft.com"](../setup/domains-faq.yml) ドメインを削除することはできません。 ドメインを削除すると、ユーザー アカウントはプライマリ SMTP/UserprincipalName として ".onmicrosoft.com" アドレスに戻されます。
 
 それでもうまくいかない場合、ドメインを手動で削除する必要があります。[ご連絡いただければ](../../business-video/get-help-support.md)、お手伝いいたします。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-> [!NOTE]
-> アカウントから [".onmicrosoft.de"](../setup/domains-faq.yml) ドメインを削除することはできません。 ドメインを削除すると、ユーザー アカウントはプライマリ SMTP/UserprincipalName として ".onmicrosoft.de" アドレスに戻されます。
-
-それでもうまくいかない場合、ドメインを手動で削除する必要があります。[ご連絡いただければ](../../business-video/get-help-support.md?view=o365-germany&preserve-view=true)、お手伝いいたします。
 
 ::: moniker-end
 

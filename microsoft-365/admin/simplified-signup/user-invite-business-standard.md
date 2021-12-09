@@ -14,12 +14,12 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: 組織に参加する招待をMicrosoft 365 Business Standardする
-ms.openlocfilehash: c9855a02cbc494ad5e0b3b9defbfc9d91c1ca4e4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e73d46686e59bb34c1e33565f8c8784788f54431
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176045"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372446"
 ---
 # <a name="accept-an-email-invitation-to-a-microsoft-365-business-standard-subscription-user"></a>サブスクリプションへの電子メールの招待をMicrosoft 365 Business Standardする (ユーザー)
 
@@ -68,7 +68,7 @@ Gmail、Outlook、Yahoo (または類似の) 電子メール アドレスで Mic
 
 ### <a name="i-have-a-question-about-upgrading-my-account-who-can-i-talk-to"></a>アカウントのアップグレードについて質問がある場合、誰に相談できますか?
 
-サブスクリプションのアップグレードに役立つ小規模ビジネス サポートMicrosoft 365問い合わせください。 詳細については、「サポートを [受け取る」を参照してください](../../business-video/get-help-support.md)。
+サブスクリプションのアップグレードに役立つ小規模ビジネス サポートMicrosoft 365問い合わせください。 詳細については、「サポートを [受け取る」を参照してください](../get-help-support.md)。
 
 ### <a name="what-happens-to-my-data-and-account-when-i-upgrade"></a>アップグレード時にデータとアカウントは何が起こりますか?
 
@@ -95,7 +95,7 @@ Gmail、Outlook、Yahoo (または類似の) 電子メール アドレスで Mic
 
 新しいビジネス アカウントをOutlook Microsoft Outlookを起動すると、新しいメールボックスが自動的にセットアップされます。
 
-1. 最初のフォロー:[ビジネスメールOutlookを設定します](../../business-video/setup-outlook.md)。
+1. 最初のフォロー: [ビジネス 用Outlookを設定する] [ビジネス用メールのOutlook for Microsoft 365[設定] をクリックします](../setup/setup-outlook.md)。
 2. 次に、「[メールを作成して送信する」をOutlook。](https://support.microsoft.com/office/create-and-send-email-in-outlook-19c32deb-08b6-4f90-a211-02bc5f77f360)
 
 ### <a name="how-can-i-leave-this-business-and-stop-using-this-license"></a>このビジネスを離れる (このライセンスの使用を停止する) 方法

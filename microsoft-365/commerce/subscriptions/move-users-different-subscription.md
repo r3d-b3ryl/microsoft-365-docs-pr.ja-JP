@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: サブスクリプション間でユーザーを移動する方法について学習します。
 ms.date: 07/01/2020
-ms.openlocfilehash: 5cbbdb79d291b89c2f62e44e44239ea5e2791f57
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3ae6aa20c684c2745ef280c51a1203ae87f8da40
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206159"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370358"
 ---
 # <a name="move-users-to-a-different-subscription"></a>ユーザーを別のサブスクリプションに移動する
 
@@ -33,7 +33,7 @@ ms.locfileid: "60206159"
 
 ## <a name="before-you-begin"></a>はじめに
 
-ライセンスを割り当てるには、グローバル、ライセンス、またはユーザー管理者である必要があります。 詳細については、「[Microsoft 365 の管理者の役割](../../admin/add-users/about-admin-roles.md)」を参照してください。
+ライセンスを割り当てるには、グローバル管理者、ライセンス管理者、またはユーザー管理者である必要があります。詳細については「[Microsoft 365 の管理者ロールについて](../../admin/add-users/about-admin-roles.md)」を参照してください。
 
 ## <a name="move-users-to-a-different-subscription"></a>ユーザーを別のサブスクリプションに移動する
 
@@ -43,15 +43,9 @@ ms.locfileid: "60206159"
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
- 1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> の順に選択します。
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
- 1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> の順に選択します。
+ 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
 ::: moniker-end
 

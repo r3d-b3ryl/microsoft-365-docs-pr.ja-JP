@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Microsoft 365 Business Basic サブスクリプションのセットアップ方法について説明します。
-ms.openlocfilehash: 8ae401a0480141d11c3a9b62ed3b0da2abb158cc
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e7c616936f045bc4266c24b65342451ffeff43ef
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176081"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371090"
 ---
 # <a name="set-up-microsoft-365-business-basic"></a>Microsoft 365 Business Basic のセットアップ
 
@@ -49,12 +49,6 @@ Microsoft 365 Business Basic を購入するときに、所有するドメイン
  ::: moniker range="o365-worldwide"
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> から管理センターにアクセスします。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a> から管理センターにアクセスします。
 
 ::: moniker-end
 

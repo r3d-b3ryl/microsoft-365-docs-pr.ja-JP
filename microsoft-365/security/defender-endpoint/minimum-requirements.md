@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 82e9a72752b61856d74c5c82b1557e82b6f0e416
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: a2a22d579adb10f82f24a1246d89d6ef0e3e6a74
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166784"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370334"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>エンドポイント用 Microsoft Defender の最小要件
 
@@ -106,7 +106,7 @@ Defender for Endpoint へのアクセスはブラウザーを介して行われ�
 - Windows 10 Pro
 - Windows 10 Pro Education
 - Windows サーバー
-  - Windows Server 2008 R2 SP1
+  - Windows Server 2008 R2 SP1 ([サポートには ESU が必要)](/windows-server/get-started/extended-security-updates-deploy)
   - Windows Server 2012 R2
   - Windows Server 2016
   - Windows Server バージョン 1803 以降
@@ -221,7 +221,7 @@ Defender for Endpoint デバイスでセキュリティ インテリジェンス
 
 サードパーティのマルウェア対策クライアントを実行し、モバイル デバイス管理ソリューションまたは Microsoft エンドポイント マネージャー (現在のブランチ) を使用する場合は、Microsoft Defender ウイルス対策 ELAM ドライバーが有効になっている必要があります。 詳細については、「ポリシーによって[無効Microsoft Defender ウイルス対策を確認する」を参照してください](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [Microsoft Defender for Endpoint の展開をセットアップする](production-deployment.md)
 - [デバイスのオンボード](onboard-configure.md)

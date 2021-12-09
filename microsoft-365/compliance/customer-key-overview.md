@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
 description: この記事では、サービスの暗号化が顧客キーとどのように機能するのかについてMicrosoft 365。
-ms.openlocfilehash: 0fd94e5d293f05f0ad80c0d6aadaa60284e394c0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 009907ea9ef7be532618846484a40c6fd10ffc5d
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60172373"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370370"
 ---
 # <a name="service-encryption-with-customer-key"></a>カスタマー キーによるサービスの暗号化
 
@@ -42,7 +42,7 @@ BitLocker と DKM を使用して、Microsoft 365サービスでデータは常�
 
 データ暗号化ポリシー (DEP) は、暗号化階層を定義します。 この階層は、管理する各キーと Microsoft によって保護されている可用性キーを使用してデータを暗号化するためにサービスによって使用されます。 PowerShell コマンドレットを使用して DEP を作成し、それらの DEP を割り当て、アプリケーション データを暗号化します。 Microsoft 365 Customer Key でサポートされる DEP には 3 種類があります。各ポリシーの種類は異なるコマンドレットを使用し、さまざまな種類のデータに対応します。 定義できる DEP は次のとおりです。
 
-**複数のワークロードに対応Microsoft 365 DEP** これらの DEP は、テナント内のすべてのユーザーに対して複数の M365 ワークロードにわたってデータを暗号化します。 これらのワークロードには、次のものが含まれます。
+**複数のユーザーのワークロードMicrosoft 365 DEP** これらの DEP は、テナント内のすべてのユーザーに対して複数の M365 ワークロードにわたってデータを暗号化します。 これらのワークロードには、次のものが含まれます。
 
 - Teamsチャット メッセージ (1:1 チャット、グループ チャット、会議チャット、チャネル会話)
 - Teamsメディア メッセージ (画像、コード スニペット、ビデオ メッセージ、オーディオ メッセージ、Wiki イメージ)
@@ -52,6 +52,7 @@ BitLocker と DKM を使用して、Microsoft 365サービスでデータは常�
 - Teams状態メッセージ
 - ユーザーとシグナルの情報をExchange Online
 - Exchange Online DEP によってまだ暗号化されていないメールボックス
+- 統合監査ログ ストレージ
 - Microsoft Information Protection:
 
   - データ ファイル スキーマ、ルール パッケージ、機密データのハッシュに使用される塩を含む、完全なデータ一致 (EDM) データ。 EDM および Microsoft Teams、マルチワークロード DEP は、DEP をテナントに割り当てる時から新しいデータを暗号化します。 たとえばExchange Online、顧客キーは既存のデータと新しいデータを暗号化します。
@@ -63,11 +64,11 @@ BitLocker と DKM を使用して、Microsoft 365サービスでデータは常�
 - SharePointおよびOneDrive for Businessデータ。
 - Microsoft Teams および Teams および OneDrive for Business SharePoint Online に保存されている一部の通話および会議の録音は、SharePoint オンライン DEP を使用して暗号化されます。
 - 顧客Microsoft 365サポートされていないYammerプランナーなどの他のワークロード。
-- Teamsライブ イベント データ。
+- Teamsライブ イベント データを取得します。
 
 テナントごとに複数の DEP を作成できますが、一度に割り当てる DEP は 1 つのみです。 DEP を割り当てると、暗号化は自動的に開始されますが、テナントのサイズに応じて完了に時間がかかっています。
 
-**メールボックスの DEP Exchange Onlineします。** メールボックス DEP は、メールボックス内の個々のメールボックスをExchange Online。 メールボックス DEP を使用して、UserMailbox、MailUser、Group、PublicFolder、共有メールボックスなど、さまざまな種類の EXO メールボックスに格納されているデータを暗号化します。 テナントごとに最大 50 個のアクティブ DEP を持ち、それらの DEP を個々のメールボックスに割り当てできます。 1 つの DEP を複数のメールボックスに割り当てできます。
+**メールボックスの DEP Exchange Online** メールボックス DEP は、メールボックス内の個々のメールボックスをExchange Online。 メールボックス DEP を使用して、UserMailbox、MailUser、Group、PublicFolder、共有メールボックスなど、さまざまな種類の EXO メールボックスに格納されているデータを暗号化します。 テナントごとに最大 50 個のアクティブ DEP を持ち、それらの DEP を個々のメールボックスに割り当てできます。 1 つの DEP を複数のメールボックスに割り当てできます。
 
 既定では、メールボックスは Microsoft 管理キーを使用して暗号化されます。 顧客キー DEP をメールボックスに割り当てる場合:
 
@@ -85,7 +86,7 @@ BitLocker と DKM を使用して、Microsoft 365サービスでデータは常�
 
 サービスを離れる際にキーへのアクセスを取り消すと、可用性キーが削除され、データの暗号化が削除されます。 暗号化の削除は、データの再管理のリスクを軽減します。これは、セキュリティとコンプライアンスの両方の義務を満たす上で重要です。
 
-**オンラインおよびSharePointの DEP OneDrive for Business** この DEP は、SPO に保存されているファイルを含む、SPO および OneDrive for BusinessファイルMicrosoft Teams暗号化するために使用されます。 複数地域機能を使用している場合は、組織の地域ごとに 1 つの DEP を作成できます。 複数地域機能を使用していない場合は、テナントごとに 1 つの DEP のみを作成できます。 「顧客キーの設定 [」の詳細を参照してください](customer-key-set-up.md)。
+**DEP for SharePoint Online** および OneDrive for Business この DEP は、SPO および OneDrive for Business に保存されているコンテンツ (SPO に保存されている Microsoft Teams ファイルを含む) を暗号化するために使用されます。 複数地域機能を使用している場合は、組織の地域ごとに 1 つの DEP を作成できます。 複数地域機能を使用していない場合は、テナントごとに 1 つの DEP のみを作成できます。 「顧客キーの設定 [」の詳細を参照してください](customer-key-set-up.md)。
 
 ### <a name="encryption-ciphers-used-by-customer-key"></a>顧客キーで使用される暗号化暗号
 

@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 111e8d20f6d01f124b87cf29fac39ac55ffd4e35
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 8e24242639362bddca7540cd8dfb390b0edb5e8c
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111737"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370903"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>ID とそれ以降の 1 つのアーキテクトの視点
 
@@ -231,7 +231,7 @@ PIM について[Azure AD何度](/azure/active-directory/privileged-identity-man
 
 ある意味では、これらは役割グループ モデルExchange進化しています。 ただし、Exchange Online独自の役割[グループ管理インターフェイスがあります](/exchange/permissions-exo)。 Exchange Online の一部の役割グループは、Azure AD またはセキュリティ & コンプライアンス センターからロックおよび管理されますが、同じ名前または類似の名前を持ち、Exchange Online で管理される役割グループもあります (混乱を招く)。 管理にスコープが必要Exchange Online場合を限り、ユーザー インターフェイスを使用Exchange勧めします。
 
-カスタム ロールを作成できない。 役割は、Microsoft によって作成されたサービスによって定義され、新しいサービスが導入されるにつれて増加します。 これは、概念的には、アプリケーション[で定義されたロール](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps)と似Azure AD。 新しいサービスを有効にすると、多くの場合、新しい役割グループを作成して、アクセス権を付与または委任する必要があります (インサイダー リスク [管理など](../compliance/insider-risk-management-configure.md))。
+カスタム ロールを作成できない。 役割は、Microsoft によって作成されたサービスによって定義され、新しいサービスが導入されるにつれて増加します。 これは、概念的には、アプリケーション[で定義されたロール](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps)と似Azure AD。 新しいサービスが有効になっている場合、多くの場合、新しい役割グループを作成して、アクセス権を付与または委任する必要があります (インサイダー リスク [管理](../compliance/insider-risk-management-configure.md)など)。
 
 また、これらの役割グループには直接メンバーシップが必要であり、グループにAzure ADできません。 残念ながら、現在、これらの役割グループは PIM のAzure ADされていません。 役割Azure AD同様に、API や Saviynt のようなパートナー ガバナンス製品を使用して管理することをお勧めします。
 
@@ -320,6 +320,6 @@ Azure Role-Based アクセス制御 (RBAC) を使用すると、Azure の詳細�
 
 上の図から分かっている通り、他の多くのサービスはデザインの一部として考慮する必要があります [(Azure Policies、Azure](/azure/governance/policy/overview) [Blueprints、Management](/azure/governance/blueprints/overview) [Groups](/azure/governance/management-groups/)など)。
 
-## <a name="conclusion"></a>結論
+## <a name="conclusion"></a>まとめ
 
 短い要約として開始され、予想よりも長く終わりました。  組織の委任モデルの作成に関する詳細な説明に取り組む準備が整いました。  この会話は、お客様と非常に一般的です。 すべてのユーザーに対応するモデルは 1 つはありません。 Microsoft エンジニアリングからいくつかの計画的な改善を待ち、お客様に共通のパターンを文書化します。 その間、Microsoft アカウント チームと一緒に、最寄りの Microsoft テクノロジ センターへの訪問 [を手配できます](https://www.microsoft.com/mtc)。  そこでお会いしましょう!

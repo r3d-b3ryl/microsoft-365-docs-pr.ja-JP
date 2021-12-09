@@ -1,5 +1,5 @@
 ---
-title: コミュニケーション サイトを作成する
+title: コミュニケーション サイトSharePoint作成する
 f1.keywords:
 - NOCSH
 ms.author: samanro
@@ -22,15 +22,15 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: キャンペーンまたはビジネスのコミュニケーション サイトを作成します。
-ms.openlocfilehash: 82a9603ee64143f906015675cd1a3552f41622fe
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: キャンペーンやビジネス向けコミュニケーション サイトSharePoint作成する理由と方法についてMicrosoft 365。
+ms.openlocfilehash: 8a4dd0db316717eddaef51800e1295ecefe23358
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60167800"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371318"
 ---
-# <a name="create-a-communications-site"></a>コミュニケーション サイトを作成する
+# <a name="create-a-communications-site-in-sharepoint"></a>ネットワーク内に通信サイトをSharePoint
 
 優先順位の伝達、戦略ドキュメントの共有、および今後のイベントの強調表示に最適な方法は、SharePoint でコミュニケーション サイトを使用することです。 コミュニケーション サイトは、ビジネス全体またはキャンペーン全体で物事を広く共有するためです。内部戦略サイトです。
 
@@ -52,7 +52,7 @@ ms.locfileid: "60167800"
 
 [![コミュニケーション サイトのインフォグラフィックの画像。](../media/M365-Campaigns-CreateCommunicationSite-358-201.png)](downloads/M365CampaignsCreateCommunicationSite.pdf)
 
-[PDF](downloads/M365CampaignsCreateCommunicationSite.pdf)  | [PowerPoint](downloads/M365CampaignsCreateCommunicationSite.pptx)
+[PDF](downloads/M365CampaignsCreateCommunicationSite.pdf) | [PowerPoint](downloads/M365CampaignsCreateCommunicationSite.pptx)
 
 ## <a name="set-it-up"></a>設定する
 

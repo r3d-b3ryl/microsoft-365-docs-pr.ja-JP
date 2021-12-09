@@ -8,19 +8,19 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 11/19/2021
+ms.date: 12/07/2021
 ms.prod: m365-security
 ms.technology: mde
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f20739d13d4b8ef9e9b570d7c12b8e2cd1108cb6
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: c0c776d7e00ee890a8cafbc15db02b45a1474b24
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61169040"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371870"
 ---
 # <a name="microsoft-defender-for-endpoint-plan-1-and-plan-2"></a>Microsoft Defender for Endpoint Plan 1 and Plan 2
 
@@ -31,14 +31,14 @@ ms.locfileid: "61169040"
 
 EndPoint 向け Microsoft Defender は、エンタープライズネットワークによる高度な脅威の防止、検出、調査、および応答を支援するために設計されたエンタープライズエンドポイントセキュリティプラットフォームです。 Defender for Endpoint は、ウイルス対策、マルウェア対策、ランサムウェアの軽減などの高度な脅威保護と、一元的な管理とレポート機能を提供します。 近日、2 つのプランが利用可能になります。   
  
-- [Microsoft Defender for Endpoint Plan 1](defender-endpoint-plan-1.md)(現在プレビュー中)。そして 
-- [Microsoft Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)、現在利用可能で [、Microsoft Defender for Endpoint として知られています](microsoft-defender-endpoint.md)。
+- [Microsoft Defender for Endpoint Plan 1](defender-endpoint-plan-1.md);そして 
+- [Microsoft Defender for Endpoint Plan 2](microsoft-defender-endpoint.md),以前は Microsoft Defender for Endpoint として [知られています](microsoft-defender-endpoint.md)。
 
 ## <a name="compare-defender-for-endpoint-plans"></a>Defender for Endpoint プランの比較
 
 次の表では、各プランに高レベルで含まれるものについて説明します。 <br/><br/>
 
-| [Defender for Endpoint プラン 1](defender-endpoint-plan-1.md) <br/>(プレビュー) | [Defender for Endpoint Plan 2](microsoft-defender-endpoint.md) <br/>(現在利用可能) |
+| [Defender for Endpoint プラン 1](defender-endpoint-plan-1.md) | [Defender for Endpoint Plan 2](microsoft-defender-endpoint.md) |
 |:---|:---|
 | [次世代の保護](defender-endpoint-plan-1.md#next-generation-protection) <br/>(マルウェア対策とウイルス対策を含む) <p> [攻撃面の減少](defender-endpoint-plan-1.md#attack-surface-reduction) <p> [手動応答アクション](defender-endpoint-plan-1.md#manual-response-actions) <p> [集中管理](defender-endpoint-plan-1.md#centralized-management) <p>[セキュリティ レポート](defender-endpoint-plan-1.md#reporting) <p>[API](defender-endpoint-plan-1.md#apis)  | [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md), plus: <p> [デバイス検出](device-discovery.md) <p> [脅威と脆弱性の管理](next-gen-threat-and-vuln-mgt.md) <p> [自動調査および対応](automated-investigations.md) <p> [高度な追求](advanced-hunting-overview.md) <p> [エンドポイントでの検出と対応](overview-endpoint-detection-response.md) <p> [Microsoft 脅威エキスパート](microsoft-threat-experts.md)  |
 | [デバイス、Windows 10 iOS、Android OS、および macOS デバイスのサポート](defender-endpoint-plan-1.md#cross-platform-support) | ユーザー (Windowsサーバー) および非プラットフォーム プラットフォームWindowsサポート<br/> (macOS、iOS、Android、Linux) |

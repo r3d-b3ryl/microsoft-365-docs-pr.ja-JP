@@ -28,12 +28,12 @@ search.appverid:
 ROBOTS: NOINDEX
 description: ユーザーのサインアップ プロセスを実行する前に知る必要があるOffice 365。
 ms.date: 03/17/2021
-ms.openlocfilehash: 6fc322c895797b7e5419d5c10bb5ddf76efd43d8
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: c7748eb6a7c7bae68b72416cfb599c0ab5e85794
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128366"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370202"
 ---
 # <a name="how-to-sign-up---admin-help"></a>サインアップする方法 - 管理者ヘルプ
 
@@ -41,7 +41,7 @@ ms.locfileid: "61128366"
 
 ::: moniker range="o365-21vianet"
 
-中国に滞在している場合、21Vianet Office 365は、中国のセキュリティで保護され、信頼性が高く、拡張性の高いクラウド サービスのニーズを満たします。 このサービスには、Microsoft が 21Vianet に対してライセンスを与えたテクノロジが搭載されています。 Microsoft はサービス自体を運用しません。 21Vianet は、サービスの配信を運用、提供、および管理します。 21Vianet は、ホスティング、管理されたネットワーク サービス、クラウド コンピューティング インフラストラクチャ サービスを提供する、中国最大のキャリアニュートラルなインターネット データセンター サービス プロバイダーです。 Microsoft テクノロジをライセンスすることで、21Vianet はローカルの Microsoft データセンターを運用し、中国内のデータを保持しながら、Microsoft サービスを使用できます。 21Vianet は、サブスクリプションサービスと課金サービス、およびサポートも提供します。
+中国に滞在している場合、21Vianet Office 365は、中国のセキュリティで保護され、信頼性が高く、拡張性の高いクラウド サービスのニーズを満たします。 このサービスには、Microsoft が 21Vianet に対してライセンスを与えたテクノロジが搭載されています。 Microsoft はサービス自体を運用しません。 21Vianet により、サービスの運用、提供、および配信の管理が行われます。 21Vianet は、ホスティング、管理されたネットワーク サービス、クラウド コンピューティング インフラストラクチャ サービスを提供する、中国最大のキャリアニュートラルなインターネット データセンター サービス プロバイダーです。 Microsoft テクノロジをライセンスすることで、21Vianet はローカルの Microsoft データセンターを運用し、中国内のデータを保持しながら、Microsoft サービスを使用できます。 21Vianet は、サブスクリプションサービスと課金サービス、およびサポートも提供します。
   
 > [!NOTE]
 > これらのサービスは中国の法律に従います。
@@ -67,15 +67,6 @@ ms.locfileid: "61128366"
   
 ::: moniker-end
 
-::: moniker range="o365-germany"
-## <a name="choose-a-plan"></a>プランを選択する
-
-購入する前に、サインアップする計画にいくつかの考えをお入れください。 これにより、後で発生する問題を防ぐことができます。
-  
-プランの選択に関するヘルプが必要ですか? 営業コンサルタントが質問に答えます。 [すべての製品の [比較]](https://products.office.com/compare-all-microsoft-office-products?tab=2) に移動し、ページの左側に表示されている連絡先サポート オプションのいずれかを選択します。 
-  
-::: moniker-end
-
 ::: moniker range="o365-worldwide"
 ## <a name="ready-to-sign-up-for-a-free-trial-or-buy-a-subscription"></a>無料試用版にサインアップするか、サブスクリプションを購入する準備ができましたか?
 
@@ -89,17 +80,6 @@ ms.locfileid: "61128366"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
-::: moniker-end
-
-::: moniker range="o365-germany"
-## <a name="ready-to-sign-up-for-a-free-trial-or-buy-a-subscription"></a>無料試用版にサインアップするか、サブスクリプションを購入する準備ができましたか?
-
-[すべての [製品を比較する](https://products.office.com/compare-all-microsoft-office-products?tab=2) ] に移動して、購入するプランを選択し、サインアップ ウィザードを開始します。 
-  
-無料試用版から始める場合は、後で [購入できます](../../commerce/try-or-buy-microsoft-365.md)。 すべてのユーザーと試用版のデータは削除されません。
-  
-試用版をキャンセルする必要はない。 試用版サブスクリプションを購入しない場合は、試用期間の最後に自動的に有効期限が切れ、すべての情報が完全に削除されます。
-  
 ::: moniker-end
 
 ## <a name="youll-be-asked-for-the-following-information-when-you-sign-up"></a>サインアップ時に次の情報を求めるメッセージが表示されます。

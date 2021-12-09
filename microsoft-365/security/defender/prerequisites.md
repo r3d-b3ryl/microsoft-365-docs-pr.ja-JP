@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: d136ae298abdf876a9be6f58634940ec71c07e47
-ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
+ms.openlocfilehash: 3b56d407381633853ea683b50ac969f88f15ff45
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "60792342"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373442"
 ---
 # <a name="microsoft-365-defender-prerequisites"></a>Microsoft 365 Defender前提条件
 
@@ -38,7 +38,7 @@ ms.locfileid: "60792342"
 ライセンスと、ライセンスのプロビジョニングと使用に関するその他の要件について[Microsoft 365 Defender。](microsoft-365-defender.md)
 
 ## <a name="licensing-requirements"></a>ライセンスの要件
-これらのライセンスは、追加コストなしで、Microsoft 365 DefenderポータルMicrosoft 365 Defender機能にアクセスできます。
+これらのライセンスを使用すると、Microsoft 365 Defenderポータルを介してMicrosoft 365 Defender機能にアクセスできます。
 
 - Microsoft 365 E5 または A5
 - Microsoft 365 E3アドオンMicrosoft 365 E5 Securityを使用する
@@ -49,7 +49,7 @@ ms.locfileid: "60792342"
 - Office 365 E5 または A5
 - Microsoft Defender for Endpoint
 - Microsoft Defender for Identity 
-- Microsoft Cloud App Security
+- Microsoft Defender for Cloud Apps
 - Defender for Office 365 (プラン 2)
 
 詳細については、サービス[プランのMicrosoft 365 Enterpriseしてください](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise)。
@@ -69,11 +69,8 @@ ms.locfileid: "60792342"
 11 Microsoft 365 Defender HTML 5 準拠の web ブラウザー Microsoft 365 Defender、Microsoft Edge 11 Internet Explorerを使用して、Microsoft 365 Defender ポータルでアクセスします。
 
 ## <a name="availability-to-us-gcc-gcc-high-and-other-us-government-institutions"></a>米国の政府機関GCC、GCC、その他の米国政府機関への可用性
-現在、Microsoft 365 Defender *を使用* できません。
-- 米国 Government Community Cloud高 (GCC高)
-- 米国国防総省
-- 商用ライセンスを持つすべての米国政府機関
 
+米国政府機関のお客様に関連する情報については、「[米国政府機関のお客様Microsoft 365 Defenderを参照してください](usgov.md)。
 
 現在、Microsoft Defender for Office 365統合Microsoft 365 Defenderは、次のデータセンターの場所Office 365使用できません。
 

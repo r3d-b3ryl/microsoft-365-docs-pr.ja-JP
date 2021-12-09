@@ -7,24 +7,21 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 11/19/2021
+ms.date: 12/07/2021
 ms.prod: m365-security
 ms.technology: mde
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f22f2c17e87b676d6522173e8540bf4833d0215d
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: 81b11caa5663677499d7a6fb78d8b48e5ffdebf6
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128270"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373838"
 ---
 # <a name="get-started-with-microsoft-defender-for-endpoint-plan-1"></a>Microsoft Defender for Endpoint Plan 1 の概要
-
-> [!TIP]
-> ユーザーまたは A3 Microsoft 365 E3が、Microsoft 365 E5 A5 を使用していない場合は、プレビュー プログラムに [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) サインアップしてください。
 
 Microsoft 365 Defender ポータル ( ) を使用すると、検出された脅威に関する情報を表示し、アラートとインシデントを管理し、検出された脅威に対して必要なアクションを実行し、デバイス [https://security.microsoft.com](https://security.microsoft.com) を管理できます。 このMicrosoft 365 Defenderポータルでは、Defender for Endpoint Plan 1 で取得する脅威保護機能の操作を開始できます。 次のセクションでは、開始する方法について説明します。
 
@@ -98,7 +95,7 @@ Microsoft 365 Defender ポータル ( ) を使用すると、検出された脅�
 > [!TIP]
 > インシデント ビューの使用の詳細については **、「インシデント** の管理 [」を参照してください](manage-incidents.md)。
 
-## <a name="manage-devices"></a>デバイスの管理
+## <a name="manage-devices"></a>デバイスを管理する
 
 組織のデバイスを表示および管理するには、ナビゲーション バーの [ **エンドポイント**] で、[デバイス インベントリ] **を選択します**。 次の図に示すように、デバイスの一覧が表示されます。
 

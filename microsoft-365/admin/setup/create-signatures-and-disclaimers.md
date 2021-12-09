@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: 組織を入力または退出するすべての電子メール メッセージに関する法的免責事項や開示ステートメントを含む電子メール署名を管理します。
-ms.openlocfilehash: 5e2dc52c881bd2dbe87552ab71a369662ade60e5
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: fe23d3c316750d1db02b2d4aff5872479889509b
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128234"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373454"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>組織全体の署名と免責事項を作成する
 
@@ -57,12 +57,6 @@ ms.locfileid: "61128234"
 ::: moniker range="o365-worldwide"
 
 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> から管理センターにアクセスします。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a> から管理センターにアクセスします。
 
 ::: moniker-end
 
@@ -128,5 +122,5 @@ PowerShell の使用の詳細については、「組織全体のメッセージ
 
 [メールと連絡先をメール (ビデオ) Microsoft 365](migrate-email-and-contacts-admin.md)に移行する
 [ユーザーのメール設定](../email/office-365-user-email-settings.md) (記事)\
-[Microsoft 365 管理センターの概要](../../business-video/admin-center-overview.md) (ビデオ)
+[概要] Microsoft 365 管理センター][[Microsoft 365 管理センター](../admin-overview/admin-center-overview.md)の概要 (ビデオ)
 

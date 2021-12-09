@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: 管理者は、サブスクリプションの有効期限が切れた場合、無効になっている場合、キャンセルされた場合、またはサブスクリプション期間の途中でキャンセルした場合に、サブスクリプションを再アクティブ化できます。
 ms.date: 04/07/2021
-ms.openlocfilehash: 85365d9d78bde8297ae483c645d6df0453a34e39
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 913069e83654e77948650fc85efbdc1daed4985c
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60167620"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370094"
 ---
 # <a name="reactivate-your-subscription"></a>サブスクリプションを再度有効にする
 
@@ -35,7 +35,7 @@ ms.locfileid: "60167620"
   
 ## <a name="before-you-begin"></a>はじめに
 
-サブスクリプションを再アクティブ化するには、グローバル管理者または課金管理者である必要があります。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
+サブスクリプションを再アクティブ化するには、グローバル管理者または課金管理者である必要があります。 詳細については、[「管理者の役割について」](../../admin/add-users/about-admin-roles.md) を参照してください。
 
 **管理者ではない場合**: サブスクリプションを再アクティブ化するには、管理に問い合わせください。
 
@@ -43,13 +43,7 @@ ms.locfileid: "60167620"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[お使いの製品]</a> ページの順に移動します。
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
 
 ::: moniker-end
 
@@ -60,7 +54,7 @@ ms.locfileid: "60167620"
 ::: moniker-end
 
 2. **[製品]** タブで、もう一度有効にするサブスクリプションを見つけます。 3 つのドット (その他のアクション) を選択し、[ **このサブスクリプションを再アクティブ化する]を** 選択します。\
-    [このサブスクリプションの再アクティブ化] **が表示しない場合は**、サポート [にお問い合わせください](../../business-video/get-help-support.md)。
+    [このサブスクリプションの再アクティブ化] **が表示しない場合は**、サポート [にお問い合わせください](../../admin/get-help-support.md)。
 3. **[このサブスクリプションを再アクティブ化する]** ウィンドウで、ドロップダウン リストから支払い方法を選択するか、**[支払い方法を追加する]** を選択します。
 4. **[保存]** を選択します。
 

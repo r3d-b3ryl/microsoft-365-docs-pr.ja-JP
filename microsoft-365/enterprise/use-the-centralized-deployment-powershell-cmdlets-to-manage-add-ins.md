@@ -20,16 +20,16 @@ ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 ms.custom:
 - seo-marvel-apr2020
 description: 一元展開 PowerShell コマンドレットを使用して、組織のOfficeアドインを展開およびMicrosoft 365します。
-ms.openlocfilehash: 6d99b3867560f7eba0f143933d996e4e30b8c7c4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: acdda1c30dbd0a19762040140b1bb3bf1a7715d4
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60173225"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371210"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>集中展開 PowerShell コマンドレットを使用してアドインを管理する
 
-グローバル管理者Microsoft 365、集中展開機能を使用して Office アドインをユーザーに展開できます (「管理センターに Office アドインを展開する」を[参照](../admin/manage/manage-deployment-of-add-ins.md)してください)。 Microsoft PowerShell を使用Officeアドインを展開するMicrosoft 365 管理センター、Microsoft PowerShell を使用できます。 [O365 一元化Add-In展開モジュールをインストールWindows PowerShell。](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment) 
+グローバル管理者Microsoft 365、集中展開機能を使用して Office アドインをユーザーに展開できます (「管理センターでの Office アドインの展開」を[参照](../admin/manage/manage-deployment-of-add-ins.md)してください。 Microsoft PowerShell を使用Officeアドインを展開するMicrosoft 365 管理センター、Microsoft PowerShell を使用できます。 [O365 一元化Add-In展開モジュールをインストールWindows PowerShell。](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment) 
 
 モジュールをダウンロードした後、通常のウィンドウを開Windows PowerShell次のコマンドレットを実行します。
 

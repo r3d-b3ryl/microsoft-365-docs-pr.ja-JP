@@ -21,12 +21,12 @@ ms.custom:
 - commerce_billing
 - AdminTemplateSet
 ms.date: 03/17/2021
-ms.openlocfilehash: 1d0c8c007a9e1e06980f06c7db0add1830c28ae0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 391a3f3d59b5583a89db4e0b2a3d54b3e488f729
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198939"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372410"
 ---
 # <a name="tax-information"></a>税金情報
 
@@ -134,7 +134,7 @@ Microsoft 地域販売オフィスから請求される場合は、「Microsoft 
 
 米国、カナダ、メキシコ、チリ、コロンビアでは、製品の性質と場所に応じてさまざまな税率が適用されます。
   
-請求が Microsoft Corporation[(請求書](view-your-bill-or-invoice.md)を参照) によって行われ、米国、カナダ、プエルトリコ、チリ、コロンビア以外の Microsoft 365 にサインアップした場合、通常、税金は請求されません。
+請求が Microsoft Corporation によって行われた場合[(請求書](view-your-bill-or-invoice.md)を参照し、米国、カナダ、プエルトリコ、チリ、コロンビア以外の Microsoft 365 にサインアップした場合、通常は税金は請求されません。
 
 ## <a name="add-your-vat-id"></a>VAT ID を追加する
 
@@ -148,7 +148,7 @@ Microsoft 地域販売オフィスから請求される場合は、「Microsoft 
 
 売上税は単価に対して計算され、集計されます。
 
-次に例を示します。
+例:
 
 >*(単価 X 税率)X 数量 = 売上税の合計*
 
@@ -158,7 +158,7 @@ Microsoft 地域販売オフィスから請求される場合は、「Microsoft 
 
 ## <a name="apply-for-tax-exempt-status"></a>免税ステータスを申請する
 
-市場で免税ステータスの対象となる場合は、サービス要求[](../../business-video/get-help-support.md)を開始して、組織の免税ステータスを確立します。
+市場で免税ステータスの対象となる場合は、サービス要求[](../../admin/get-help-support.md)を開始して、組織の免税ステータスを確立します。
 
 |国またはロケール | ドキュメント |
 |------------------|----------------|

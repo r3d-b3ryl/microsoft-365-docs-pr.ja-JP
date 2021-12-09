@@ -25,28 +25,18 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: ドメイン ネーム システムは、コンピューターのホスト名を IP アドレスにマップします。DNS とドメイン レジストラーの基礎を理解することはドメインを管理するうえで役立ちます。
-ms.openlocfilehash: 3195e6ba1e8483a5444eb0f8046add1e3e7725f3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9bbd099a7c44aecdd37772cd97333a905585e33f
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164778"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370022"
 ---
 # <a name="dns-basics"></a>DNS の基本
 
  探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.yml)** を参照してください。 
   
 ::: moniker range="o365-worldwide"
-
-contoso.com のようなドメイン名は、ドメイン レジストラーの世界中のシステムとデータベースを使って管理されています。ドメイン ネーム システム (DNS) は、人間が判読できるコンピューター ホスト名とネットワーク機器によって使用される IP アドレス間のマッピングを提供します。DNS とドメイン レジストラーの基礎を理解することは、管理者がドメインを管理するうえで役立ちます。
-
-## <a name="watch-domains--dns-an-overview"></a>視聴する: ドメインと DNS の概要
-  
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/c005f2a4-90ad-46fe-b1ab-90f41f2a9d53?autoplay=false]
-  
-::: moniker-end
-
-::: moniker range="o365-germany"
 
 contoso.com のようなドメイン名は、ドメイン レジストラーの世界中のシステムとデータベースを使って管理されています。ドメイン ネーム システム (DNS) は、人間が判読できるコンピューター ホスト名とネットワーク機器によって使用される IP アドレス間のマッピングを提供します。DNS とドメイン レジストラーの基礎を理解することは、管理者がドメインを管理するうえで役立ちます。
 
@@ -119,12 +109,6 @@ Web サイトのアドレス (例: www.contoso.com) を入力すると、DNS サ
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-たとえば、contoso.com に対する NS レコードに "godaddy.com" という値があるとします。それにより、インターネット上で、contoso.com に対する他のすべての DNS レコードのリストを含むゾーン ファイルが GoDaddy.com にあることがわかります。それらの DNS レコードには、contoso.com 宛てのメールの送信先を指定する MX レコードと他のレコードが含まれます。たとえば、MX レコードに "メールを Microsoft 365 に送信する" という意味の値が含まれている場合は、contoso.com のメール アドレス (joe@contoso.com など) に送信されるすべてのメール メッセージが Office 365 に送信されます。そして、その場所に "joe" というメールボックスがある場合は、メールが配信されます。
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 たとえば、contoso.com に対する NS レコードに "hichina.com" という値があるとします。それにより、インターネット上で、contoso.com に対する他のすべての DNS レコードのリストを含むゾーン ファイルが hichina.com にあることがわかります。それらの DNS レコードには、contoso.com 宛てのメールの送信先を指定する MX レコードと他のレコードが含まれます。たとえば、MX レコードに "メールを Microsoft 365 に送信する" という意味の値が含まれている場合は、contoso.com のメール アドレス (joe@contoso.com など) に送信されるすべてのメール メッセージが送信されます。そして、その場所に "joe" というメールボックスがある場合は、メールが配信されます。
@@ -134,12 +118,6 @@ Web サイトのアドレス (例: www.contoso.com) を入力すると、DNS サ
 ドメインのセットアップ時に、Microsoft 365 を操作するために入力が必要な実際の値は、ドメインのセットアップ手順に記載されています。手動でセットアップを実行する場合は、それらの値をコピーして、自分の DNS ホスト (ドメイン レジストラーなど) で正しい DNS レコード (MX レコード、CNAME レコードなど) に貼り付けます。
   
 ::: moniker range="o365-worldwide"
-
-自分のドメイン レジストラー以外の場所に自分のドメインのゾーン ファイルがある理由はなんでしょうか。 ドメイン名を GoDaddy のようなドメイン レジストラーに登録しても、自分の DNS レコードは別の場所 (別の DNS をホストする会社や Web をホストする会社) で管理できます。 ドメインに対する NS レコードにはその情報が格納されているため、どこを探すべきかすべての DNS サーバーにわかるのです。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
 
 自分のドメイン レジストラー以外の場所に自分のドメインのゾーン ファイルがある理由はなんでしょうか。 ドメイン名を GoDaddy のようなドメイン レジストラーに登録しても、自分の DNS レコードは別の場所 (別の DNS をホストする会社や Web をホストする会社) で管理できます。 ドメインに対する NS レコードにはその情報が格納されているため、どこを探すべきかすべての DNS サーバーにわかるのです。
 
@@ -165,25 +143,6 @@ Microsoft 365 では、ドメイン名をメール、一般向け Web サイト�
 - **メール:** 自分のドメイン名を使ってメールをカスタマイズできるため、アカウントに割り当てられた [初期設定の onmicrosoft.com メール アドレス](../setup/domains-faq.yml)よりも短くて覚えやすいアドレスを使うことができます。したがって、(Microsoft 365 にサインインするための 職場のアカウント でもある) メール アドレスを、joe@contoso.onmicrosoft.com から、たとえば joe@contoso.com に変更できます。 
     
 - **Web サイト:** Microsoft 365 サブスクリプションに SharePoint Online Public Web サイト (現在では非売品) が含まれる場合は、一般向け Web サイトには contoso-public.sharepoint.com のような初期アドレスが割り当てられます。 会社の Web サイトを設定する場合は、 カスタム ドメイン名を使用して Web サイトのアドレスを変更して、www.contoso.com などにできます。 
-    
-- **インスタント メッセージング**: Skype for Business Online アドレスもドメイン名を使うようにカスタマイズできるため、組織内のユーザーは、短くて覚えやすいアドレス (joe@contoso.com など) を使って Skype for Business Online で相互接続できるようになります。 
-    
-::: moniker-end
-
-::: moniker range="o365-germany"
-## <a name="why-add-a-domain-in-microsoft-365"></a>Microsoft 365 でドメインを追加するのはなぜですか?
-
-
-Microsoft 365 に fourthcoffee.com などのカスタム ドメインを追加すると、短くて親しみやすいメール アドレスやユーザー ID をサービスで使えるようになります。 Microsoft 365 アカウントにサインアップすると、[使用するドメインが割り当てられます](../setup/domains-faq.yml)が、ドメイン名には "onmicrosoft.com" が含まれています。ユーザーの多くは、Microsoft 365 のメールを使う予定がある場合、組織やビジネスのドメインを追加することを選びます。 
-  
-> [!NOTE]
-> Outlook や Word などの Microsoft 365 アプリをダウンロードして使うだけであれば、ドメインを追加する必要はありません。その場合は、[PC または Mac に Office をインストールしてください](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)。 
-  
-Microsoft 365 では、ドメイン名をメール、一般向け Web サイト、インスタント メッセージング アドレスに使うことができます。
-  
-- **メール:** 自分のドメイン名を使ってメールをカスタマイズできるため、アカウントに割り当てられた [初期設定の onmicrosoft.com メール アドレス](../setup/domains-faq.yml)よりも短くて覚えやすいアドレスを使うことができます。したがって、(Microsoft 365 にサインインするための 職場のアカウント でもある) メール アドレスを、joe@contoso.onmicrosoft.com から、たとえば joe@contoso.com に変更できます。 
-    
-- **Web サイト:** サブスクリプションに SharePoint Online Public Web サイト (現在では非売品) が含まれる場合は、一般向け Web サイトには contoso-public.sharepoint.com のような初期アドレスが割り当てられます。 会社の Web サイトを設定する場合は、 カスタム ドメイン名を使用して Web サイトのアドレスを変更して、www.contoso.com などにできます。 
     
 - **インスタント メッセージング**: Skype for Business Online アドレスもドメイン名を使うようにカスタマイズできるため、組織内のユーザーは、短くて覚えやすいアドレス (joe@contoso.com など) を使って Skype for Business Online で相互接続できるようになります。 
     

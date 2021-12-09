@@ -1,6 +1,6 @@
 ---
 title: Microsoft クラウド アーキテクチャ モデル - エンタープライズ リソース計画
-description: これらの Microsoft クラウド アーキテクチャのポスターでは、Azure やクラウド サービスなど、Microsoft クラウド サービスに関する情報をOffice 365。
+description: これらのアーキテクチャ図と図を使用して、Azure や Office 365 Microsoft クラウド サービスについて説明します。
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -13,12 +13,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 9bd77ed5667a704ee7fd7fa883d7823e7da1892f
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: b036c6ca93310e6f88dee78171749c09056de84b
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283543"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373694"
 ---
 # <a name="microsoft-cloud-for-it-architects-illustrations"></a>IT アーキテクト向け Microsoft クラウドのイラスト
 
@@ -79,4 +79,8 @@ Microsoft のサービスとプラットフォーム用のハイブリッド ク
 |[![Microsoft クラウドテナント間の移行のサム イメージ。](../media/solutions-architecture-center/msft-tenant-to-tenant-migration-thumb.png)](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) <br/> [PDF](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) <br/> 2021 年 2 月更新    |このモデルには次のものが含まれています。 <ul><li>アーキテクチャ手法のためのビジネス シナリオのマッピング。</li><li>設計上の考慮事項</li><li>単一イベント移行フローの例</li><li>段階的移行フローの例</li><li>テナントの移動または分割フローの例</li></ul>|
 
 
+## <a name="related-resources"></a>関連リソース
 
+独自のアーキテクチャ 設計図を作成するリソースを取得します。Microsoft 365[アイコンとテンプレートを使用します](architecture-icons-templates.md)。
+
+Azure アーキテクチャ センター [に移動します](/azure/architecture/)。

@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: 他のユーザーのメールボックスにアクセスする権利をユーザーに与えます。このアクセス権を持つユーザーは、他のユーザーのメールボックスからメールを読んだり送信したりできます。
-ms.openlocfilehash: cd6f54ac578f1d1a65b20d3093b0efdeb1110567
-ms.sourcegitcommit: 0251d5c6cb141055c93c83a402c3dc52c7a70dcc
+ms.openlocfilehash: ec014a744f47b97dd0a65b432510c2e90dea17e4
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61262766"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370274"
 ---
 # <a name="give-mailbox-permissions-to-another-user---admin-help"></a>別のユーザーにメールボックス アクセス許可を付与する - 管理者ヘルプ
 
@@ -79,20 +79,6 @@ ms.locfileid: "61262766"
  
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。  
-
-2. 目的のユーザーを選択し、[**メール設定**] を展開して、[**メールボックスのアクセス許可**] の横にある [**編集**] を選択します。
-
-3. [**差出人を指定して送信する**] の横にある [**編集**] を選択します。 
-
-4. [**アクセス許可を追加する**] を選択してから、このユーザーが送信できるようにするユーザーの名前を選択します。 
-    
-5. **[追加]** を選択します。
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。 
@@ -129,20 +115,6 @@ ms.locfileid: "61262766"
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。  
-  
-2. 目的のユーザーを選択し、[**メール設定**] を展開して、[**メールボックスのアクセス許可**] の横にある [**編集**] を選択します。
-    
-3. [**読み取りと管理**] の横にある [**編集**] を選択します。 
-    
-4. [**アクセス許可を追加する**] を選択し、このメールボックスからのメールの読み取りを許可するユーザーの名前を選択します。
-
-5. **[追加]** を選択します。
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。 
@@ -173,20 +145,6 @@ ms.locfileid: "61262766"
 5. [**アクセス許可を追加する**] を選択し、このメールボックスからのメールの代理送信を許可するユーザーの名前を選択します。
 
 6. **[追加]** を選択します。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。  
-
-2. 目的のユーザーを選択し、[**メール設定**] を展開して、[**メールボックスのアクセス許可**] の横にある [**編集**] を選択します。
-
-3. [**代理送信**] の横にある [**編集**] を選択します。
-    
-4. [**アクセス許可を追加する**] を選択し、このメールボックスからのメールの代理送信を許可するユーザーの名前を選択します。
-
-5. **[追加]** を選択します。
 
 ::: moniker-end
 

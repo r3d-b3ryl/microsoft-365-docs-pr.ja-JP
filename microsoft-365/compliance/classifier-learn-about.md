@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: トレーニングMicrosoft 365分類子は、ラベル付けやポリシー アプリケーション用にさまざまな種類のコンテンツを認識するようにトレーニングできるツールです。
-ms.openlocfilehash: 69074baf8ce39352341a484c1d0aa6ce99bf94cd
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 13e16394e9be1a2dd6b3d9cdcf4e18a736de158b
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61302184"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373778"
 ---
 # <a name="learn-about-trainable-classifiers"></a>トレーニング可能な分類子の詳細
 
@@ -43,7 +43,7 @@ ms.locfileid: "61302184"
 - アイテムがテンプレートのバリエーション (ドキュメントフィンガー印刷) なので、アイテム [を認識します](document-fingerprinting.md)。
 - 正確な文字列の存在を使用して、 [完全に一致するデータを使用します](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)。
 
-その後、感度ラベルと保持ラベルを自動的に適用して、「データ損失防止について[](dlp-learn-about-dlp.md)学習する」でコンテンツを使用し、保持ラベルのポリシーを[自動的に適用できます](apply-retention-labels-automatically.md)。
+その後、感度ラベルと保持ラベルを自動的に適用して、「データ損失防止の[](dlp-learn-about-dlp.md)詳細」および「保持ラベルのポリシーを自動適用する」でコンテンツを[使用できます](apply-retention-labels-automatically.md)。
 
 ## <a name="classifiers"></a>分類子
 

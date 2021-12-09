@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: 組織のプロファイル (組織名、住所、電話、技術的な連絡先、電子メールなど) を変更します。
 ms.date: 03/30/2021
-ms.openlocfilehash: 3488991d6db386f7dcbd6f57271347da41a6489a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2cd590478ada0777a37e551d247bfa1aeed99a0d
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164466"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61369986"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>組織の住所およびその他のプロファイル情報を変更する
   
@@ -55,7 +55,7 @@ ms.locfileid: "60164466"
 |**Field**  |**説明**  |
 |---------|---------|
 |名前  <br/>   | ここで入力する名前は、次に示すページでユーザーに表示されます。  <br/>  サインイン ページ: ユーザーが勤務先または学校のメール アドレスでその他の Microsoft アカウントを設定した場合、サインイン ページに組織名が表示される可能性があります。これによって、ユーザーは 職場や学校のアカウント とその他のアカウントを区別できるようになるため、サインインするときにどちらのアカウントを使用するか識別できます。  <br/>  組織プロファイルのリンクとページ: 組織のプロファイルへのリンクには組織名が表示されます。  <br/>  Yammerナビゲーション: Yammer左側のナビゲーションでは、組織名をホーム ネットワークの名前Yammerします。  <br/> OneDrive 同期 クライアント: 組織名は、Windows のエクスプローラーと Mac の Finder、ファイル パス、OneDrive アクティビティ センター、OneDrive クラウド アイコンのツールヒント、および OneDrive 設定ウィンドウに表示されます。 現在、組織名を更新しても、構成済みのクライアントでは更新されません。 <br/> MS Teams: 組織の切り替えTeams組織名が表示される <br/>  |
-|住所、市区町村、都道府県、郵便番号  <br/>     | ここに入力した住所は、請求書の [販売先: 請求書の販売先住所] の下に表示される住所で、プロファイル ページの組織の住所と同じです (「Microsoft 365 for [business](../../commerce/billing-and-payments/understand-your-invoice2.md)の請求書を理解する」を参照してください)。  <br/>        |
+|住所、市区町村、都道府県、郵便番号  <br/>     | ここに入力した住所は、請求書の [販売先: 請求書の販売先住所] の下に表示される住所で、プロファイル ページの組織の住所と同じです (「ビジネス向け[Microsoft 365](../../commerce/billing-and-payments/understand-your-invoice2.md)の請求書を理解する」を参照してください。  <br/>        |
 |国または地域  <br/>    | これは、会社の本社が置かれている国または地域です。国または地域を選択すると、利用できるサービス、国または地域での税と請求通貨、および最寄りのデータ センターの場所が特定されます (「[ライセンスによる使用制限について](https://office.microsoft.com/redir/FX103037529)」を参照してください)。  <br/>注: 一度選択すると、国または地域を変更できません。 選択を変更する場合は、サブスクリプションをキャンセルして、もう一度サインアップする必要があります。 このプロセスのヘルプについては、サポート [にお問い合わせください](../../business-video/get-help-support.md)。        |
 |電話  <br/>     | 会社の代表番号です。通常は、会社の本社の番号です。  <br/>        |
 |技術担当者の連絡先  <br/> |これは、サブスクリプションを管理する主要な技術担当者のMicrosoft 365です。 これは、サービスの状態に関する通信を受け取Microsoft 365です。  <br/> |

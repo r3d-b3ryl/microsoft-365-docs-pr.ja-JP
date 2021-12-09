@@ -25,12 +25,12 @@ ms.custom:
 search.appverid: MET150
 description: 製品ライセンスを特定のユーザーに割り当てるのか、またはユーザー ライセンスを特定の製品に割り当てるのかによって、ライセンスを割り当てます。
 ms.date: 09/16/2021
-ms.openlocfilehash: eb122a7bce8aba070bf50e4654a54db6c40a1157
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 68124f26037e6d21e9b3f1cb0b7888edc005fe77
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164550"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371102"
 ---
 # <a name="assign-licenses-to-users"></a>ユーザーにライセンスを割り当てる
 
@@ -61,12 +61,6 @@ ms.locfileid: "60164550"
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">ライセンス</a>] ページに移動します。
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">ライセンス</a>] ページに移動します。
@@ -93,12 +87,6 @@ ms.locfileid: "60164550"
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">ライセンス</a>] ページに移動します。
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">ライセンス</a>] ページに移動します。
@@ -120,12 +108,6 @@ ms.locfileid: "60164550"
 ::: moniker range="o365-worldwide"
 
 1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> の順に選択します。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
 ::: moniker-end
 
@@ -155,12 +137,6 @@ ms.locfileid: "60164550"
 ::: moniker range="o365-worldwide"
 
 1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> の順に選択します。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
 ::: moniker-end
 

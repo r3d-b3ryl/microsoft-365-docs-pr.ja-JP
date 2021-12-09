@@ -17,12 +17,12 @@ ms.custom: admindeeplinkDEFENDER
 description: 管理者は、検疫ポリシーを使用して、検疫されたメッセージに対してユーザーが実行できる操作を制御する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2463e22de4e0d39c7c09b7234d24b33de3a4cae9
-ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
+ms.openlocfilehash: f5265c224f55c280dad0d1807338620b4b944a7b
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61320721"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373742"
 ---
 # <a name="quarantine-policies"></a>検疫ポリシー
 
@@ -407,7 +407,7 @@ Set-AntiPhishPolicy -Identity "Human Resources" -EnableTargetedDomainsProtection
 <New-AntiMalwarePolicy -Name "<Unique name>" | Set-AntiMalwarePolicy -Identity "<Policy name>"> [-QuarantineTag <QuarantineTagName>]
 ```
 
-**注意**:
+**注**:
 
 - 新しいマルウェア対策ポリシーを作成するときに、QuarantineTag パラメーターを使用せずに新しいマルウェア対策ポリシーを作成すると、マルウェア検出の既定の検疫ポリシーが使用されます (AdminOnlyAccessPolicy)。
 
@@ -467,7 +467,7 @@ New-MalwareFilterPolicy -Identity "Human Resources" -QuarantineTag NoAccess
 <New-SafeAttachmentPolicy -Name "<Unique name>" | Set-SafeAttachmentPolicy -Identity "<Policy name>"> -Enable $true -Action <Block | Replace | DynamicDelivery> [-QuarantineTag <QuarantineTagName>]
 ```
 
-**注**:
+**注意**:
 
 - _Action パラメーターの_ 値 Block、Replace、または DynamicDelivery を指定すると、検疫されたメッセージが発生する可能性があります (値 Allow はメッセージを検疫しません)。 Action パラメーターの _値は、Enable_ パラメーターの値が. `$true`
 
@@ -603,7 +603,7 @@ Set-QuarantinePolicy -Identity "<QuarantinePolicyName>" [Settings]
 
 ## <a name="remove-quarantine-policies-in-the-microsoft-365-defender-portal"></a>セキュリティ ポータルで検疫ポリシーをMicrosoft 365 Defenderする
 
-**注意**:
+**注**:
 
 - AdminOnlyAccessPolicy または DefaultFullAccessPolicy という名前の組み込みの検疫ポリシーを削除できない。 NotificationEnabledPolicy[という名前](#full-access-permissions-and-quarantine-notifications)の組み込みポリシー (持っている場合) とカスタム検疫ポリシーを削除できます。
 - 検疫ポリシーを削除する前に、検疫ポリシーが使用されていないか確認してください。 たとえば、PowerShell で次のコマンドを実行します。
@@ -634,7 +634,7 @@ Remove-QuarantinePolicy -Identity "<QuarantinePolicyName>"
 
 ## <a name="system-alerts-for-quarantine-release-requests"></a>検疫リリース要求のシステム通知
 
-既定では、検疫済みメッセージの解放をユーザーが要求した既定のアラート ポリシーは、中程度の重大度アラートを自動的に生成し、ユーザーが検疫済みメッセージのリリースを要求するたびに、次の役割グループのメンバーに通知メッセージを送信します。
+既定では、検疫済みメッセージの解放を要求した **ユーザー** という既定のアラート ポリシーは、自動的に通知通知を生成し、ユーザーが検疫済みメッセージのリリースを要求するたびに、次の役割グループのメンバーに通知メッセージを送信します。
 
 - 検疫管理者
 - セキュリティ管理者

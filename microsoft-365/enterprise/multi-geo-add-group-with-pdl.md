@@ -13,12 +13,12 @@ ms.collection: Strat_SP_gtc
 ms.localizationpriority: medium
 description: 複数地域環境で指定された優先Microsoft 365場所を持つグループを作成する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 05e910d82c44e37497b365a9d0757a80805c895a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6ce4ed337b07206e6508a5955edc2c264586df4b
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201603"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370946"
 ---
 # <a name="create-a-microsoft-365-group-with-a-specific-preferred-data-location"></a>特定の優先Microsoft 365グループを作成する
 
@@ -55,6 +55,8 @@ SharePoint グループのサイト プロビジョニングがオンデマン�
 
 [!INCLUDE [Microsoft 365 Multi-Geo locations](../includes/microsoft-365-multi-geo-locations.md)]
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [Exchange Online PowerShell への接続](/powershell/exchange/connect-to-exchange-online-powershell)
+
+[API を使用して特定の優先データの場所を持つグループGraphする](/graph/api/group-post-groups)

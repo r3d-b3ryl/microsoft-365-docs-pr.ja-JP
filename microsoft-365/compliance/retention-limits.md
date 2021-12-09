@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: アイテム保持ポリシーおよび保持ラベル ポリシーのポリシーおよびポリシーごとの項目の最大数を把握する
-ms.openlocfilehash: 52318fb2f8ae81022734bb1f620b220830214ad7
-ms.sourcegitcommit: f6fff04431d632db02e7bdbf12f691091a30efad
+ms.openlocfilehash: d8746f99961d209fb76f1fbe146162d9b6e2ed59
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60432651"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370070"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>アイテム保持ポリシーとアイテム保持ラベルの制限
 
@@ -112,4 +112,4 @@ SharePoint の例は、以下のとおりです。
 
 - アイテムが処理されてから最大 7 年間の処理の証明。その期間の保持ラベルごとに 1,000,000 アイテムの制限があります。 
     
-レコードとしてマークされているアイテムについて、この制限である 1,000,000 を超える処理の証明が必要な場合は、[Microsoft サポート](../business-video/get-help-support.md)に連絡してください。
+レコードとしてマークされているアイテムについて、この制限である 1,000,000 を超える処理の証明が必要な場合は、[Microsoft サポート](../admin/get-help-support.md)に連絡してください。

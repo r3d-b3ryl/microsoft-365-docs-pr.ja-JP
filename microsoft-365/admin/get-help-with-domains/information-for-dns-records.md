@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
 description: ドメインをサブスクリプションに接続するために DNS レコードを作成するために必要な値Microsoft 365します。
-ms.openlocfilehash: 52d3dfdf0e964c750a0aecd67d2fb6064eb0625e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 81a1bd650e507e7f2c15a16cd5a048181ca6c816
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164682"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371126"
 ---
 # <a name="gather-the-information-you-need-to-create-dns-records"></a>DNS レコードを作成するために必要な情報を収集する
 
@@ -40,12 +40,6 @@ ms.locfileid: "60164682"
 ::: moniker range="o365-worldwide"
 
 1. [ドメイン] Microsoft 365 管理センター[ドメイン]**ページ設定** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">移動</a>します。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 管理センターで、**[設定]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">[ドメイン]</a> ページの順に移動します。
 
 ::: moniker-end
 
@@ -72,12 +66,6 @@ ms.locfileid: "60164682"
 ::: moniker range="o365-worldwide"
 
 1. [ドメイン] Microsoft 365 管理センター[ドメイン]**ページ設定** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">移動</a>します。
-
-::: moniker-end
-    
-::: moniker range="o365-germany"
-
-1. 管理センターで、**[設定]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">[ドメイン]</a> ページの順に移動します。
 
 ::: moniker-end
 

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: ビジネス向けサービスへの移行に関する要件と考慮事項Microsoft 365説明します。
-ms.openlocfilehash: fd91da48fe7b6ef1bde9340c5fbb4a926055514b
-ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
+ms.openlocfilehash: f02cd28c403cbe5b27b427fae94975ec4b608591
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "61311702"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373034"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>Microsoft 365 for business のセットアップを計画
 
@@ -119,7 +119,7 @@ ms.locfileid: "61311702"
 
 ## <a name="plan-for-file-storage-and-migration"></a>ファイル ストレージと移行の計画
 
-Microsoft 365、小規模組織、および企業向けクラウド ストレージを提供します。 保存場所のガイダンスについては、「ドキュメントを保存できる場所[」](../../business-video/store-files.md)を参照Microsoft 365。
+Microsoft 365、小規模組織、および企業向けクラウド ストレージを提供します。 保存場所のガイダンスについては、「ドキュメントを保存できる場所[」](https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e)を参照Microsoft 365。
   
 - **何百ものファイルを、OneDrive**[チーム](https://support.microsoft.com/office/45114744-6D42-45CD-8975-F9617819BDEB)サイト [SharePoint移動できます](https://support.microsoft.com/office/da549fb1-1fcb-4167-87d0-4693e93cb7a0#__toc384119242)。 一度に 100 個のファイルをアップロードできます。 ただし、ファイルの既定の最大サイズである 2 GB を超えるファイルはアップロードしないでください。
   

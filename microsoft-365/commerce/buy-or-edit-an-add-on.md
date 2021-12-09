@@ -21,12 +21,12 @@ ms.custom:
 - AdminTemplateSet
 description: ビジネス サブスクリプション用のアドオンを購入および管理するMicrosoft 365を確認します。
 ms.date: 04/02/2021
-ms.openlocfilehash: 316692bb514285dc177397d7b8f61c4dcd0dcf7c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5b7bedc12cd8e8a0813689e42723f981561eb2c1
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190957"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370970"
 ---
 # <a name="buy-or-manage-add-ons"></a>アドオンを購入するか、管理します
 
@@ -39,7 +39,7 @@ ms.locfileid: "60190957"
 
 ## <a name="before-you-begin"></a>はじめに
 
-この記事で説明されている手順を実行するには、全体管理者または課金管理者である必要があります。 詳細については、「[管理者ロールについて](../admin/add-users/about-admin-roles.md)」を参照してください。
+この記事で説明する手順を実行するには、グローバル管理者または課金管理者である必要があります。詳細については、「[管理者ロールについて](../admin/add-users/about-admin-roles.md)」を参照してください。
 
 ## <a name="buy-an-add-on"></a>アドオンを購入する
 
@@ -70,7 +70,7 @@ Skype for Business アドオンの詳細については、「[Skype for Business
 
 スタンドアロン アドオン サブスクリプションを削除するには [、他の](subscriptions/cancel-your-subscription.md)サブスクリプションと同様に、サブスクリプションをキャンセルします。 または、定期的 [な請求をオフにできます](subscriptions/renew-your-subscription.md)。
 
-従来のアドオンは削除できない。 従来のアドオンを削除する場合は、サポート [にお問い合わせください](../business-video/get-help-support.md)。
+従来のアドオンは削除できない。 従来のアドオンを削除する場合は、サポートに問い合わせ(サポート[を受ける](../admin/get-help-support.md))
   
 ## <a name="related-content"></a>関連コンテンツ
 

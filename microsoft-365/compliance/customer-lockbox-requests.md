@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ms.custom: admindeeplinkMAC
 description: 問題が発生した場合に Microsoft サポート エンジニアがデータにアクセスする方法を制御できるカスタマー ロックボックス要求について説明します。
-ms.openlocfilehash: 127d9acf602bd6449abd6b324d7b844814d53419
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 304e3266319da9c8102deff2465dc146caf4fcaa
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60179273"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373292"
 ---
 # <a name="customer-lockbox-in-office-365"></a>顧客ロックボックス (Office 365
 
@@ -79,9 +79,9 @@ Microsoft 365 管理センターで、カスタマー ロックボックス コ�
 
 2. [**組織設定**  >  **セキュリティ設定**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**プライバシー&選択します**</a>。
 
-3. [**顧客ロックボックスの** 編集] を選択し、トグルを [オン] または [オフ] に移動して、機能のオンと  >  オフを切り替えます。  
+3. [ **セキュリティ &プライバシー] を** 選択し、左側の **列で [顧客ロックボックス** ] を選択します。 [すべてのデータ **アクセス要求の承認を必要** とする] チェック ボックスをオンにして、変更を保存して機能を有効にします。
 
-    ![顧客ロックボックスの承認が必要です。](../media/CustomerLockbox4.png)
+    ![Require approval for Customer Lockbox](../media/CustomerLockbox4-new.png)
 
 ## <a name="approve-or-deny-a-customer-lockbox-request"></a>カスタマー ロックボックス要求を承認または拒否する
 
@@ -158,7 +158,7 @@ Microsoft 365 管理センターで、カスタマー ロックボックス コ�
 | IP アドレス | 要求を承認または拒否するために使用された承認者のコンピューターの IP アドレス。 |
 | ユーザー       | \[customerforest .BOXServiceAccount@ のサービス アカウント \] prod.outlook.com。            |
 | アクティビティ   | Set-AccessToCustomerDataRequest: これは、カスタマー ロックボックス要求を承認または拒否したときにログに記録される監査アクティビティです。                                |
-| Item       | 顧客ロックボックス要求の Guid                             |
+| アイテム       | 顧客ロックボックス要求の Guid                             |
 
 次のスクリーンショットは、承認済みの顧客ロックボックス要求に対応する監査ログ レコードの例を示しています。 Customer Lockbox 要求が拒否された場合 **、ApprovalDecision** パラメーターの値は Deny **になります**。
 
@@ -261,9 +261,13 @@ Customer Lockbox 要求を承認すると、Microsoft エンジニアは事前�
 
 顧客が Customer Lockbox 要求を拒否した場合、顧客コンテンツへのアクセスは行われません。 組織内のユーザーが引き続きサービスの問題が発生し、Microsoft が問題を解決するために顧客コンテンツにアクセスする必要がある場合、サービスの問題が解決しない可能性があります。Microsoft は、この問題についてユーザーに通知します。
 
+#### <a name="how-do-i-set-up-alerts-whenever-a-request-has-been-approved"></a>要求が承認されるたびに通知を設定する方法
+
+管理者に警告する組み込みのオプションはありません。 ただし、管理者は Microsoft クラウド アプリのセキュリティを使用して [アラートを設定できます](/cloud-app-security/getting-started-with-cloud-app-security#to-create-policies)。
+
 #### <a name="does-customer-lockbox-protect-against-data-requests-from-law-enforcement-agencies-or-other-third-parties"></a>顧客ロックボックスは、法執行機関や他の第三者からのデータ要求から保護しますか?
 
-その必要はありません。 Microsoft は、顧客データに対するサードパーティの要求を真剣に受け止める。 クラウド サービス プロバイダーとして、Microsoft は常に顧客データのプライバシーを主張しています。 Subpoena が取得された場合、Microsoft は常に第三者を顧客にリダイレクトして情報を取得します。 (Brad Smith のブログを読む: 政府のスヌーピングから顧客データ [を保護する](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/))。 Microsoft が受け [取る法執行](https://www.microsoft.com/corporate-responsibility/lerr) 機関の要求に関する詳細情報を定期的に公開します。
+いいえ。 Microsoft では、第三者による顧客データの要求に慎重に対応しています。 クラウド サービス プロバイダーとして、Microsoft は常に顧客データのプライバシーを主張しています。 Subpoena が取得された場合、Microsoft は常に第三者を顧客にリダイレクトして情報を取得します。 (Brad Smith のブログ「[政府機関による監視から顧客データを保護する](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)」を参照してください)。 Microsoft が受け [取る法執行](https://www.microsoft.com/corporate-responsibility/lerr) 機関の要求に関する詳細情報を定期的に公開します。
 
 詳細については [、サードパーティ](https://www.microsoft.com/trustcenter/default.aspx) のデータ要求に関する Microsoft Trust Center と [、Online Services](https://www.microsoft.com/Licensing/product-licensing/products.aspx) の利用規約の「顧客データの開示」セクションを参照してください。
 

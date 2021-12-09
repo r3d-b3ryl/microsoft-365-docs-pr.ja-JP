@@ -12,12 +12,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 顧客キーを設定した後、AKV キーを復元し、アクセス許可を管理し、データ暗号化ポリシーを作成および割り当て、管理する方法について説明します。
-ms.openlocfilehash: 2329df5a7bb7fac7a6013e1236024ba0a4a31567
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9dd333064c9fa121f8f1c99ffcd048f6b977dbf2
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60172457"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372482"
 ---
 # <a name="manage-customer-key"></a>顧客キーの管理
 
@@ -140,13 +140,13 @@ DEP を作成するには、サーバーを使用してオンラインSharePoint
 2. [管理シェルMicrosoft Office SharePoint Onlineで、次のようにRegister-SPODataEncryptionPolicyコマンドレットを実行します。
 
    ```powershell
-   Register-SPODataEncryptionPolicy <adminSiteCollectionURL> -PrimaryKeyVaultName <PrimaryKeyVaultName> -PrimaryKeyName <PrimaryKeyName> -PrimaryKeyVersion <PrimaryKeyVersion> -SecondaryKeyVaultName <SecondaryKeyVaultName> -SecondaryKeyName <SecondaryKeyName> -SecondaryKeyVersion <SecondaryKeyVersion>
+   Register-SPODataEncryptionPolicy -PrimaryKeyVaultName <PrimaryKeyVaultName> -PrimaryKeyName <PrimaryKeyName> -PrimaryKeyVersion <PrimaryKeyVersion> -SecondaryKeyVaultName <SecondaryKeyVaultName> -SecondaryKeyName <SecondaryKeyName> -SecondaryKeyVersion <SecondaryKeyVersion>
    ```
 
    例:
   
    ```powershell
-   Register-SPODataEncryptionPolicy  https://contoso.sharepoint.com -PrimaryKeyVaultName 'stageRG3vault' -PrimaryKeyName 'SPKey3' -PrimaryKeyVersion 'f635a23bd4a44b9996ff6aadd88d42ba' -SecondaryKeyVaultName 'stageRG5vault' -SecondaryKeyName 'SPKey5' -SecondaryKeyVersion '2b3e8f1d754f438dacdec1f0945f251a’
+   Register-SPODataEncryptionPolicy -PrimaryKeyVaultName 'stageRG3vault' -PrimaryKeyName 'SPKey3' -PrimaryKeyVersion 'f635a23bd4a44b9996ff6aadd88d42ba' -SecondaryKeyVaultName 'stageRG5vault' -SecondaryKeyName 'SPKey5' -SecondaryKeyVersion '2b3e8f1d754f438dacdec1f0945f251a’
    ```
 
    DEP を登録すると、geo のデータで暗号化が開始されます。 暗号化には時間がかかる場合があります。 このパラメーターの使用の詳細については [、「Register-SPODataEncryptionPolicy」を参照してください](/powershell/module/sharepoint-online/register-spodataencryptionpolicy?preserve-view=true&view=sharepoint-ps)。
@@ -233,7 +233,7 @@ IsEncrypted プロパティは、メールボックスが暗号化されてい�
 
 - セカンダリ キーの URI。
 
-- geo の暗号化状態。 可能な状態は次のとおりです。
+- geo の暗号化状態。 可能性のある状態は次のとおりです
 
   - **未登録:** 顧客キーの暗号化がまだ適用されていません。
 
@@ -303,7 +303,7 @@ Set-M365DataAtRestEncryptionPolicy -Identity "Contoso_Global" -Enabled $false
 Restore-AzKeyVaultKey -VaultName <vault name> -InputFile <filename>
 ```
 
-次に例を示します。
+例:
   
 ```powershell
 Restore-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -InputFile Contoso-O365EX-NA-VaultA1-Key001-Backup-20170802.backup
@@ -321,7 +321,7 @@ Restore-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -InputFile Contoso-O3
 Get-AzKeyVault -VaultName <vault name>
 ```
 
-次に例を示します。
+例:
 
 ```powershell
 Get-AzKeyVault -VaultName Contoso-O365EX-NA-VaultA1
@@ -333,7 +333,7 @@ Get-AzKeyVault -VaultName Contoso-O365EX-NA-VaultA1
 Remove-AzKeyVaultAccessPolicy -VaultName <vault name> -UserPrincipalName <UPN of user>
 ```
 
-次に例を示します。
+例:
 
 ```powershell
 Remove-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipalName alice@contoso.com

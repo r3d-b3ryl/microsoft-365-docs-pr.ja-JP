@@ -1,7 +1,7 @@
 - name: Microsoft 365 管理センターのヘルプ
   href: index.yml
   items:
-    - name: 作業の開始
+    - name: 概要
       items:
         - name: サインアップ
           href: admin-overview/sign-up-for-office-365.md
@@ -53,6 +53,12 @@
           href: setup/set-up-windows-devices.md
         - name: モバイル デバイスをセットアップする
           href: setup/set-up-mobile-devices.md
+        - name: 一般法人向け Outlook for Microsoft 365 のメールを設定する (ビデオ)
+          href: setup/setup-outlook.md
+        - name: OneDrive にファイルを移動する (ビデオ)
+          href: setup/files-to-onedrive.md
+        - name: SharePoint にファイルを移動する (ビデオ)
+          href: setup/files-to-sharepoint.md
         - name: Microsoft 365 へのデータの移行
           href: setup/migrate-email-and-contacts-admin.md
         - name: Teams をロールアウトする
@@ -78,7 +84,7 @@
     - name: Microsoft 365 管理センターの概要
       items:
         - name: 管理センターの概要
-          href: ../business-video/admin-center-overview.md
+          href: admin-overview/admin-center-overview.md
         - name: 管理者ロールについて
           href: add-users/about-admin-roles.md
         - name: Admin モバイル アプリ
@@ -435,11 +441,11 @@
         - name: 予定表をゲスト ユーザーと共有する
           href: manage/share-calendars-with-external-users.md
         - name: ゲスト ユーザーとのチームを作成する
-          href: ../business-video/team-with-guests.md
+          href: 'https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f'
         - name: ゲスト ユーザーとの Teams 会議のスケジュールを設定する
-          href: ../business-video/schedule-guest-meeting.md
+          href: 'https://support.microsoft.com/office/943507a9-8583-4c58-b5d2-8ec8265e04e5'
         - name: ゲスト ユーザーとの Teams 会議に参加する
-          href: ../business-video/join-guest-meeting.md
+          href: 'https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508'
     - name: トラブルシューティング
       href: /office/troubleshoot/
     - name: サポートに連絡

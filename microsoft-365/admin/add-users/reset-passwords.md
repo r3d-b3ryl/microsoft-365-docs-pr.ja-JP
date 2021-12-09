@@ -29,12 +29,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: 管理者アカウントでサインインMicrosoft 365、ビジネス サブスクリプションのユーザーのパスワードMicrosoft 365リセットします。
-ms.openlocfilehash: 9a74eaf1524058d5a5c92e057290a37f2d812fee
-ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
+ms.openlocfilehash: 891c579bd1fe2f7b9d4596ef1ef0415734f46ce5
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/22/2021
-ms.locfileid: "61136957"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370226"
 ---
 # <a name="reset-passwords"></a>パスワードをリセットする
 
@@ -45,7 +45,7 @@ ms.locfileid: "61136957"
 
 ## <a name="before-you-begin"></a>開始する前に
 
-この記事は、職場、学校、または非営利団体のパスワードの有効期限ポリシーを設定する管理者を対象としています。 これらの手順を完了するには、Microsoft 365 の管理者アカウントでサインインする必要があります。 [管理者アカウントとは](../../business-video/admin-center-overview.md)。
+この記事は、職場、学校、または非営利団体のパスワードの有効期限ポリシーを設定する管理者を対象としています。 これらの手順を完了するには、Microsoft 365 の管理者アカウントでサインインする必要があります。 [管理者アカウントとは?([の概要 Microsoft 365 管理センター](../admin-overview/admin-center-overview.md)。
 
 これらの手順を実行するには [、グローバル管理者またはパスワード](about-admin-roles.md) 管理者である必要があります。
 

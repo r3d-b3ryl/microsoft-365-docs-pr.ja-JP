@@ -16,15 +16,17 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: 管理者は、ポータルで使用できる電子メール セキュリティ レポートを検索して使用するMicrosoft 365 Defenderできます。
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 33bc93dba189a571779f2cd36fe3b295ed3acc2a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f9be6475143f887fb0a4ec3a5f441962bb7eac31
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60211947"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372362"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>電子メール セキュリティ レポートを Microsoft 365 Defenderする
 
@@ -54,7 +56,7 @@ Microsoft 365 Defender ポータルでは、Microsoft 365 のスパム対策、�
 
 集計ビューには過去 90 日間のデータが表示され、詳細ビューには過去 30 日間のデータが表示されます。
 
-ポータルでレポートを表示するにはMicrosoft 365 Defender[レポートの電子メール]  & \>  \> **グループ&に移動します**。 [コラボレーション **レポートのメール&] ページで**、[侵害されたユーザー] を探し、[詳細の表示]**をクリックします**。 レポートに直接移動するには、を開きます <https://security.microsoft.com/reports/CompromisedUsers> 。
+[レポート] ポータルの [Microsoft 365 Defender] でレポートを表示するには、[レポートの電子メール] & <https://security.microsoft.com>  \> **グループ**& \> **に移動します**。 [コラボレーション **レポートのメール&] ページで**、[侵害されたユーザー] を探し、[詳細の表示]**をクリックします**。 レポートに直接移動するには、を開きます <https://security.microsoft.com/reports/CompromisedUsers> 。
 
 [侵害された **ユーザー] ページ** で、指定した日付範囲の次の情報がグラフに表示されます。
 
@@ -102,11 +104,11 @@ Microsoft 365 Defender ポータルでは、Microsoft 365 のスパム対策、�
 - **日付**
 - **DLP ポリシー** (**DLP によるデータの表示Exchangeトランスポート ルールのみ**)
 - **トランスポート ルール**
-- **[件名]**
+- **件名**
 - **[送信者のアドレス]**
 - **受信者の住所**
 - **重大度**
-- **Direction**
+- **方向**
 
 [フィルター] をクリックし、表示されるフライアウトで次の値の 1 つ以上を選択すると、グラフと詳細テーブルの両方をフィルター処理できます。
 
@@ -137,7 +139,7 @@ Microsoft 365 Defender ポータルでは、Microsoft 365 のスパム対策、�
 - **[送信者のアドレス]**
 - **受信者の住所**
 - **重大度**
-- **Direction**
+- **方向**
 
 [フィルター] をクリックし、表示されるフライアウトで次の値の 1 つ以上を選択すると、グラフと詳細テーブルの両方をフィルター処理できます。
 
@@ -158,7 +160,7 @@ Microsoft 365 Defender ポータルでは、Microsoft 365 のスパム対策、�
 
 **Mailflow 状態** レポートは、受信および送信メール、スパム検出、マルウェア、"良い" と識別される電子メール、およびエッジで許可またはブロックされた電子メールに関する情報を示すスマート レポートです。 これは、エッジ保護情報を含む唯一のレポートであり、EOP (EOP) による評価のためにサービスに許可される前にブロックされる電子メールの量を示Exchange Online Protectionです。 メッセージが 5 人の受信者に送信された場合、メッセージは 1 つのメッセージではなく 5 つの異なるメッセージとしてカウントされます。
 
-ポータルでレポートを表示するにはMicrosoft 365 Defender[レポートの電子メール]  & \>  \> **グループ&に移動します**。 [メール **の送信&] ページ** で、[ **メールフロー** の状態の概要] を探し、[詳細の表示] **をクリックします**。 レポートに直接移動するには、を開きます <https://security.microsoft.com/reports/mailflowStatusReport> 。
+[レポート] ポータルの [Microsoft 365 Defender] でレポートを表示するには、[レポートの電子メール] & <https://security.microsoft.com>  \> **グループ**& \> **に移動します**。 [メール **の送信&] ページ** で、[ **メールフロー** の状態の概要] を探し、[詳細の表示] **をクリックします**。 レポートに直接移動するには、を開きます <https://security.microsoft.com/reports/mailflowStatusReport> 。
 
 ![[メール フロー] グループ作業レポート ページの [メールフロー&概要] ウィジェット。](../../media/mail-flow-status-report-widget.png)
 
@@ -178,8 +180,8 @@ Microsoft 365 Defender ポータルでは、Microsoft 365 のスパム対策、�
 
 グラフの下の詳細テーブルは、次の情報を示しています。
 
-- **Direction**
-- **Type**
+- **方向**
+- **種類**
 - **24 時間**
 - **3 日間**
 - **7 日間**
@@ -371,13 +373,13 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
 
 申請 **レポートには** 、管理者が分析のために Microsoft に報告したアイテムに関する情報が表示されます。 詳細については、「管理申請を [使用して疑わしいスパム、フィッシング、URL、](admin-submission.md)ファイルを Microsoft に提出する」を参照してください。
 
-ポータルでレポートを表示するにはMicrosoft 365 Defender[レポートの電子メール]  & \>  \> **グループ&に移動します**。 [コラボレーション **レポートのメール&] ページで**、[申請] を探し、[詳細の表示]**をクリックします**。 レポートに直接移動するには、を開きます <https://security.microsoft.com/adminSubmissionReport> 。 ポータルで [管理者の申請に移動するには、[Microsoft 365 Defender提出](admin-submission.md)に移動 **] をクリックします**。 管理者は過去 30 日間レポートを表示できます。
+[レポート] ポータルの [Microsoft 365 Defender] でレポートを表示するには、[レポートの電子メール] & <https://security.microsoft.com>  \> **グループ**& \> **に移動します**。 [コラボレーション **レポートのメール&] ページで**、[申請] を探し、[詳細の表示]**をクリックします**。 レポートに直接移動するには、を開きます <https://security.microsoft.com/adminSubmissionReport> 。 ポータルで [管理者の申請に移動するには、[Microsoft 365 Defender提出](admin-submission.md)に移動 **] をクリックします**。 管理者は過去 30 日間レポートを表示できます。
 
 ![[メール と共同作業レポート] ページ&提出ウィジェット。](../../media/submissions-report-widget.png)
 
 グラフには、次の情報が表示されます。
 
-- **保留中**
+- **Pending**
 - **Completed**
 
 [フィルター] をクリックし、表示されるフライアウトで次の値の 1 つ以上を選択すると、グラフと詳細テーブルの両方をフィルター処理できます。
@@ -398,7 +400,7 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
   - **マルウェア**
   - **スパム**
 - **再スキャンの状態**:
-  - **保留中**
+  - **Pending**
   - **Completed**
 
 グラフの下の詳細テーブルは、同じ情報を示し、[グループ] または [グループのカスタマイズ] 列のオプションは、[電子メール と共同作業の申請] の [分析用に送信済み] タブと同 **&です** \> 。 詳細については [、「View admin submissions to Microsoft」を参照してください](admin-submission.md#view-admin-submissions-to-microsoft)。
@@ -409,7 +411,7 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
 
 ## <a name="threat-protection-status-report"></a>脅威保護の状態レポート
 
-脅威 **保護の状態レポート** は、EOP と Defender の両方Office 365。ただし、レポートには異なるデータが含まれる。 たとえば、EOP のお客様は、電子メールで検出されたマルウェアに関する情報を表示できますが[、SharePoint、OneDrive、](mdo-for-spo-odb-and-teams.md)および Microsoft Teams の セーフ 添付ファイルによって検出された悪意のあるファイルに関する情報は表示できません。
+脅威 **保護の状態レポート** は、EOP と Defender の両方Office 365使用できます。ただし、レポートには異なるデータが含まれる場合があります。 たとえば、EOP のお客様は、電子メールで検出されたマルウェアに関する情報を表示できますが[、SharePoint、OneDrive、](mdo-for-spo-odb-and-teams.md)および Microsoft Teams の セーフ 添付ファイルによって検出された悪意のあるファイルに関する情報は表示できません。
 
 このレポートには、マルウェア対策エンジンによってブロックされたファイルや Web サイト アドレス (URL)、ゼロ時間自動削除[(ZAP)、セーフ](zero-hour-auto-purge.md)[リンク、セーフ](safe-links.md)[添付](safe-attachments.md)ファイル、フィッシング対策ポリシーの偽装保護機能などの Office 365 機能の Defender などの悪意のあるコンテンツを含[](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)む電子メール メッセージの数が提供されます。 この情報を使用して、傾向を特定したり、組織のポリシーで調整が必要かどうかを判断できます。
 
@@ -599,7 +601,7 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
 グラフの下の詳細テーブルでは、次の情報を使用できます。
 
 - **日付**
-- **[件名]**
+- **件名**
 - **送信者**
 - **受信者**
 - **検出テクノロジ**
@@ -859,7 +861,7 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
 グラフの下の詳細テーブルでは、次の情報を使用できます。
 
 - **日付**
-- **[件名]**
+- **件名**
 - **送信者**
 - **受信者**
 - **システムオーバーライド**
@@ -998,7 +1000,7 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
 
 詳細については、「[Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)」を参照してください。
 
-**注**: Microsoft 365 管理センター の対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 Defender ポータルで必要なアクセス許可と、Microsoft 365 の他の機能に対するアクセス許可がユーザーに付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
+**注**: Microsoft 365 管理センター の対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 Defender ポータルで必要なアクセス許可と、Microsoft 365 の他の機能に対するアクセス許可がユーザーに付与されます。 詳細については、[「管理者の役割について」](../../admin/add-users/about-admin-roles.md) を参照してください。
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>レポートにデータが表示されない場合は、
 
@@ -1029,7 +1031,7 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
 
 既に作成したスケジュールされたレポートを管理するには、次の手順を実行します。
 
-1. [レポート] ポータルMicrosoft 365 Defender[メール]を展開し、[& \> **の管理** \> **] を選択します**。
+1. [レポート] Microsoft 365 Defenderで、[レポート] [メール] を展開し、[& <https://security.microsoft.com>  \> **の管理** \> **] を選択します**。
 
    [スケジュールの管理] ページ **に直接移動するには** 、 を使用します <https://security.microsoft.com/ManageSubscription> 。
 
@@ -1080,7 +1082,7 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
 
 ### <a name="download-reports"></a>レポートのダウンロード
 
-1. ポータルで、[Microsoft 365 Defender] に移動し、[電子メール] \> を展開 **し&[ダウンロードする** \> **レポート] を選択します**。
+1. [レポート] Microsoft 365 Defenderで、[レポート] [電子メール] <https://security.microsoft.com>  \> を展開 **し、[&]** を選択 \> **します**。
 
    [ダウンロード用のレポート] **ページに直接移動するには** 、 を使用します <https://security.microsoft.com/ReportsForDownload> 。
 
@@ -1089,7 +1091,7 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
    - **名前**
    - **レポートの種類**
    - **最終送信**
-   - **Direction**
+   - **方向**
 
    ダウンロードするレポートを検索して選択します。
 
@@ -1108,7 +1110,7 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
 
 エクスポートされたファイル.csv、150,000 行に制限されます。 データに 150,000 行を超える行が含まれている場合、複数.csvが作成されます。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [EOP でのスパム対策およびマルウェア対策保護](anti-spam-and-anti-malware-protection.md)
 

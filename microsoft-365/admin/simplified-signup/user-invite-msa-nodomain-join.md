@@ -14,12 +14,12 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: メールの招待を受け入れて、Microsoft 365 Business Standard、Yahoo、Gmail、その他のOutlookを使用して組織に参加します。
-ms.openlocfilehash: 2faea6a0d9089eb1a9f42d3d52bc877636ead50a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 810fa60a5f59d1e4ebede25b23a841769779cdaf
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196123"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370826"
 ---
 # <a name="accept-an-email-invitation-to-a-microsoft-365-business-standard-subscription-organization-using-an-outlook-yahoo-gmail-or-other-account-user"></a>ユーザー、Yahoo、Gmail、その他Microsoft 365 Business Standardアカウント (User) を使用して、Outlookサブスクリプション組織への電子メールの招待を受け入れる
 
@@ -83,7 +83,7 @@ ms.locfileid: "60196123"
 
 ### <a name="i-have-a-question-about-using-this-account-who-can-i-talk-to"></a>このアカウントの使用について質問があります。 Who話せるか?
 
-サブスクリプションのアップグレードに役立つ小規模ビジネス サポートMicrosoft 365問い合わせください。 詳細については、「サポートを [受け取る」を参照してください](../../business-video/get-help-support.md)。
+サブスクリプションのアップグレードに役立つ小規模ビジネス サポートMicrosoft 365問い合わせください。 詳細については、「サポートを [受け取る」を参照してください](../get-help-support.md)。
 
 ### <a name="the-gmail-outlook-yahoo-or-other-email-account-that-im-using-as-a-microsoft-account-already-has-some-personal-files-in-it-can-the-technical-administrator-or-business-owner-see-these"></a>Microsoft アカウントOutlook使用している Gmail、Gmail、メール アカウント、Yahoo、その他のメール アカウントには、既にいくつかの個人用ファイルがあります。 テクニカル管理者またはビジネス所有者は、これらの情報を確認できますか?
 

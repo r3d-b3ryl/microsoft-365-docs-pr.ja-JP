@@ -17,12 +17,12 @@ metadata:
   - M365-Lighthouse
   search.appverid: MET150
   description: 管理サービス プロバイダー (MSP) で Microsoft 365 Lighthouse に関するよく寄せられる質問 (FAQ) に対する回答をMicrosoft 365 Lighthouse。
-  ms.openlocfilehash: 834bab4a146b72fc4e4b6598ee54758ad5a55095
-  ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+  ms.openlocfilehash: 948b4584f2f10cdfd3f709cfe007d1367ba110a9
+  ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/20/2021
-  ms.locfileid: "61127934"
+  ms.lasthandoff: 12/09/2021
+  ms.locfileid: "61373730"
 title: Microsoft 365 Lighthouseよく寄せられる質問 (FAQ)
 summary: >
   > [!NOTE]
@@ -63,7 +63,7 @@ sections:
       お客様のテナント データがライトハウス内に読み込むには、最大 48 時間かかる場合があります。 オンボーディングが完了して 48 時間を超える時間が経った場合は、サポート チームにお問い合わせください。 オンボーディングが完了したら、ユーザーに知らせ、関連するスクリーンショットとログを提供する必要があります。 詳細については、「Get [help and support for Microsoft 365 Lighthouse」 を参照してください](m365-lighthouse-get-help-and-support.md)。
   - question: 一部の顧客テナントのデータが表示されますが、他のテナントのデータは表示されない理由
     answer: >
-      お客様のテナント データがライトハウスに表示される場合、パートナーはパートナー センターを通じて顧客と代理管理者特権 (DAP) を確立する必要があります。 詳細については、「パートナー センター [で顧客とのリセラー関係を要求する」を参照してください](/partner-center/request-a-relationship-with-a-customer)。 テナントには、少なくとも 1 つのサブスクリプションMicrosoft 365 Business PremiumまたはMicrosoft 365 E3、テナントのライセンスユーザー数が 500 人未満である必要があります。 詳細については[、「Requirements for Microsoft 365 Lighthouse」 を参照してください](m365-lighthouse-requirements.md)。
+      お客様のテナント データがライトハウスに表示される場合、パートナーはパートナー センターを通じて顧客と代理管理者特権 (DAP) を確立する必要があります。 詳細については、「パートナー センター [で顧客とのリセラー関係を要求する」を参照してください](/partner-center/request-a-relationship-with-a-customer)。 テナントには、少なくとも 1 つのサブスクリプションMicrosoft 365 Business PremiumまたはMicrosoft 365 E3、テナントのライセンスユーザー数が 500 人未満である必要があります。 詳細については[、「Requirements for Microsoft 365 Lighthouseテナント](m365-lighthouse-requirements.md)Microsoft 365 Lighthouse[概要」を参照してください](m365-lighthouse-tenants-page-overview.md)。
   - question: 特定のテナントを表示しない場合は、Microsoft 365 Lighthouse。
     answer: >
       特定のテナントとそのデータをライトハウスで表示しない場合は、それらのテナントを無効にできます。 テナントを非アクティブ化するには、次の手順を実行します。
@@ -91,4 +91,12 @@ sections:
     answer: >
       [ライトハウス] で [ **?** アイコンをクリックして、ヘルプ ウィンドウ **を開** きます。 ここから、セルフヘルプ記事にアクセスしたり、サポートに問い合わせすることができます。 ヘルプとサポート オプションの詳細については、「[ヘルプ](m365-lighthouse-get-help-and-support.md)とサポートを受ける」を参照Microsoft 365 Lighthouse。
   - question: フィードバックやアイデアの提出先
-    answer: "フィードバックは重要であり、当社にとって重要です。 フィードバックを送信するには、いくつかの異なる方法があります。\n\n- ライトハウスの右上隅にある [フィードバック] アイコンを選択します。 \n- フィードバックの提供を求める、月に 1 回以下のポップアップ ウィンドウに応答します。"
+    answer: >-
+      フィードバックは重要であり、当社にとって重要です。 フィードバックを送信するには、いくつかの異なる方法があります。
+
+
+      - [フィードバック] ページ[Microsoft 365 Lighthouse移動します](https://aka.ms/m365lighthouseuservoice)。 ライトハウスと 365 のWindowsに関する会話を開始したり、他のパートナーや Microsoft の従業員に質問を投稿したり、フィードバックや機能のアイデアを提供したりできます。
+
+      - ライトハウスの右上隅にある [フィードバック] アイコンを選択します。
+
+      - フィードバックの提供を求める、月に 1 回以下のポップアップ ウィンドウに応答します。

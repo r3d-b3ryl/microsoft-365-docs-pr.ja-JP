@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Microsoft でアカウントを閉じると、アカウントに関連する情報 (ライセンス、ユーザー、ユーザー データなど) が削除されます。
 ms.date: 04/02/2021
-ms.openlocfilehash: b19328ffaf785479b81d6253c602c8f80fca99ae
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bfa5243eab6826626410ee54659a351f8ca7711a
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202023"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371246"
 ---
 # <a name="close-your-account"></a>アカウントの使用を停止する
 
@@ -36,7 +36,7 @@ Microsoft でのアカウントの使用を停止すると、アカウントに�
 
 このプロセスを開始する前に、保持する必要があるすべてのデータをバックアップしてください。
 
-この記事で説明されている手順を実行するには、全体管理者または課金管理者である必要があります。 詳細については、「[管理者の役割について](../admin/add-users/about-admin-roles.md)」を参照してください。
+この記事で説明されている手順を実行するには、全体管理者または課金管理者である必要があります。詳細については、「[管理者の役割について](../admin/add-users/about-admin-roles.md)」をご覧ください。
 
 ## <a name="step-1-delete-users"></a>手順 1: ユーザーを削除する
 
@@ -48,12 +48,12 @@ Microsoft でのアカウントの使用を停止すると、アカウントに�
 
 [Remove-MsolUser PowerShell コマンドレット](/powershell/module/msonline/remove-msoluser)を使用して、ユーザーを一括で削除することもできます。
 
-組織で Active Directory を使用して、Microsoft Azure Active Directory (Azure AD) と同期する場合は、代わりに Active Directory からユーザー アカウントを削除します。 手順については、「ユーザーを一括[削除する」を参照Azure Active Directory。](/azure/active-directory/users-groups-roles/users-bulk-delete)
+組織が Active Directory を使用して、Microsoft Azure Active Directory (Azure AD) と同期する場合は、代わりに Active Directory からユーザー アカウントを削除します。 手順については、「ユーザーを一括[削除する」を参照Azure Active Directory。](/azure/active-directory/users-groups-roles/users-bulk-delete)
 
 ## <a name="step-2-cancel-all-active-subscriptions"></a>手順 2: すべてのアクティブなサブスクリプションをキャンセルする
 
 1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品]</a> ページの順に移動します。
-2. [製品 **] タブ** で、アクティブなサブスクリプションを探します。 3 つのドット(その他の操作) を選択してから、**[サブスクリプションのキャンセル]** を選択します。
+2. [製品 **] タブ** で、アクティブなサブスクリプションを探します。 3 つのドット (その他の操作) を選択してから、**[サブスクリプションのキャンセル]** を選択します。
 3. **[サブスクリプションのキャンセル]** ウィンドウで、キャンセルする理由を選択します。必要に応じて、フィードバックを提供します。
 4. **[保存]** を選択します。
 5. 手順 1 ~ 4 を繰り返して、アクティブなすべてのサブスクリプションを取り消します。
@@ -68,7 +68,7 @@ Microsoft でのアカウントの使用を停止すると、アカウントに�
 6. 無効にしたサブスクリプションごとに、すべてのサブスクリプションが削除されるまで手順 3 ~ 5 を繰り返します。
 
 > [!NOTE]
-> 無効にしたサブスクリプションを直ちに削除できない場合は、サポート [にお問い合わせください](../business-video/get-help-support.md)。
+> 無効にしたサブスクリプションを直ちに削除できない場合は、サポート [にお問い合わせください](../admin/get-help-support.md)。
 
 ## <a name="step-4-disable-multi-factor-authentication"></a>手順 4: 多要素認証を無効にする
 
@@ -82,8 +82,8 @@ PowerShell を [使用して、複数のユーザーの多要素認証を無効�
 
 ## <a name="step-5-delete-the-directory-in-azure-active-directory"></a>手順 5: ディレクトリを削除Azure Active Directory
 
-1. グローバル管理者アカウントで <a href="https://aad.portal.azure.com/" target="_blank">Azure AD管理センター</a> にサインインします。
-2. [**Azure Active Directory**] を選択します。
+1. グローバル管理者アカウントを<a href="https://aad.portal.azure.com/" target="_blank">使用Azure AD管理センター</a>にサインインします。
+2. **Azure Active Directory** を選択します。
 3. 削除する組織に切り替えます。
 4. [テナント **の削除] を選択します**。
 5. 組織で 1 つ以上のチェックに失敗した場合は、チェックに合格する方法の詳細へのリンクが表示されます。 すべてのチェックに合格したら、[削除] **を選択して** プロセスを完了します。

@@ -20,12 +20,12 @@ search.appverid: MET150
 description: Microsoft 製品とサービスの購入に役立つ提案について説明します。
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: 0a067049f278daee3c6e55aba00a81dcb2746c3c
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: c358022648bb81c5ca90d348a9d3c3b812c36ff2
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60754779"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372890"
 ---
 # <a name="understand-the-proposal-workflow"></a>提案ワークフローの理解
 
@@ -97,7 +97,7 @@ Microsoft カスタマー 契約 (MCA) を使用すると、組織は Microsoft 
 
 [ **組織] セクション** には、関連付けられた請求アカウントが表示されます。 課金アカウント情報は、既存の請求アカウントから取得するか、Microsoft 担当者が作成します。 組織が別の組織の関連会社である場合は、その組織の名前と住所を含む [リード組織] セクションも表示されます。
 
-組織が Microsoft との商用関係を初めて確立し、まだ MCA に署名していない場合は、組織またはリード組織の下の情報が正しくない場合は、担当者に連絡して変更を加えます。 MCA を受け入れてから、組織の住所と連絡先情報を確認して変更するには、ページの [[](https://go.microsoft.com/fwlink/p/?linkid=2084771)請求アカウント] ページMicrosoft 365 管理センター。 組織名が変更された場合は、サービス要求を開き、更新します。 [サービス要求を開く方法について学習します。](../business-video/get-help-support.md)
+組織が Microsoft との商用関係を初めて確立し、まだ MCA に署名していない場合は、組織またはリード組織の下の情報が正しくない場合は、担当者に連絡して変更を加えます。 MCA を受け入れてから、組織の住所と連絡先情報を確認して変更するには、ページの [[](https://go.microsoft.com/fwlink/p/?linkid=2084771)請求アカウント] ページMicrosoft 365 管理センター。 組織名が変更された場合は、サービス要求を開き、更新します。 [サービス要求を開く方法について学習します](../admin/get-help-support.md)。
 
 ### <a name="your-information"></a>お客様の情報
 

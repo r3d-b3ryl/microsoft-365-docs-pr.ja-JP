@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
 description: フィルターを使用してカスタム ユーザー ビューを作成、編集、または削除する方法については、Microsoft 365。
-ms.openlocfilehash: e0d809e4f21f8fac798029a403242504b394fb68
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 74c5e15e8d7735edcba145ea9b10a6bec7e7def7
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60161836"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370286"
 ---
 # <a name="create-edit-or-delete-a-custom-user-view"></a>カスタム ユーザー ビューを作成、編集、削除する
 
@@ -65,7 +65,7 @@ ms.locfileid: "60161836"
     
 - **ライセンス未付与のユーザー** ライセンスが付与されていないすべてのユーザーを表示するには、このボックスをオンにします。このビューの結果には、Exchange メールボックスは持っていてもライセンスを持たないユーザーも含まれる場合があります。特にこのようなユーザーを追跡するには、[ **Exchange のメールボックスまたはアーカイブはあるがライセンスがないユーザー**] フィルターを使用します。このビューの結果には、Exchange アーカイブは持っていてもライセンスを持たないユーザーも含まれる場合があります。
     
-- **ユーザーのメールボックスまたはアーカイブExchangeライセンスのないユーザー** このボックスを選択すると、Exchange Online で作成され、Exchange メールボックスが割り当てられていないユーザー アカウントMicrosoft 365します。 このフィルターの結果には、Exchange アーカイブが割り当てられたユーザーが含まれます。 
+- **Exchange** メールボックスまたはアーカイブを持つライセンスのないユーザー Exchange Online で作成され、Exchange メールボックスを持っているが、Microsoft 365 ライセンスが割り当てられていないユーザー アカウントを表示するには、このボックスを選択します。 このフィルターの結果には、Exchange アーカイブが割り当てられたユーザーが含まれます。 
 
 > [!NOTE]
 > 次 **の場合に、メールボックス** フィルター Exchangeライセンスのないユーザーが機能します。
@@ -83,12 +83,6 @@ ms.locfileid: "60161836"
 
 1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> の順に移動します。
   
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> の順に移動します。 
-
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
@@ -109,12 +103,6 @@ ms.locfileid: "60161836"
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> の順に移動します。 
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> の順に移動します。 
@@ -130,9 +118,9 @@ ms.locfileid: "60161836"
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[アプリケーションの概要 (Microsoft 365 管理センター)\](../../business-video/admin-center-overview.md)
+[概要] Microsoft 365 管理センター][[Microsoft 365 管理センターの概要](../admin-overview/admin-center-overview.md)(ビデオ)\
 [管理者の役割](../add-users/about-admin-roles.md) (ビデオ)\
-[組織のMicrosoft 365テーマをカスタマイズする](../setup/customize-your-organization-theme.md)(記事)
+[組織で使用する Microsoft 365 のテーマをカスタマイズする](../setup/customize-your-organization-theme.md) (記事)
 
 
      

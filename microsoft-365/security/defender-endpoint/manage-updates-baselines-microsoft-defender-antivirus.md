@@ -17,12 +17,12 @@ manager: dansimp
 ms.technology: mde
 ms.date: 12/02/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: ac436d54db999bf5dd1c05305e430f6a957f8ed8
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 0e6cb244bf4beeab1d282e46196262ea681a13c2
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61284159"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372614"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>更新Microsoft Defender ウイルス対策を管理し、基準計画を適用する
 
@@ -597,7 +597,7 @@ Windows 10 (Enterprise、Pro、およびホーム エディション)、Windows 
 - ローカライズ ファイルに関する問題を修正しました
 
 ### <a name="additional-information"></a>追加情報
-- なし
+- None
 <br/>
 </details><details>
 <summary>1.1.2110.01</summary>
@@ -608,10 +608,10 @@ Windows 10 (Enterprise、Pro、およびホーム エディション)、Windows 
 &ensp;署名バージョン: **1.349.2103.0**<br/>
 
 ### <a name="fixes"></a>修正プログラム
-- なし
+- None
 
 ### <a name="additional-information"></a>追加情報
-- なし
+- None
 <br/>
 </details><details>
 <summary>1.1.2109.01</summary>
@@ -622,10 +622,10 @@ Windows 10 (Enterprise、Pro、およびホーム エディション)、Windows 
 &ensp;署名バージョン: **1.347.891.0**<br/>
 
 ### <a name="fixes"></a>修正プログラム
-- なし
+- None
 
 ### <a name="additional-information"></a>追加情報
-- なし
+- None
 <br/>
 </details><details>
 <summary>1.1.2108.01</summary>
@@ -636,10 +636,10 @@ Windows 10 (Enterprise、Pro、およびホーム エディション)、Windows 
 &ensp;署名バージョン: **1.343.2244.0**<br/>
 
 ### <a name="fixes"></a>修正プログラム
-- なし
+- None
 
 ### <a name="additional-information"></a>追加情報
-- なし
+- None
 <br/>
 </details><details>
 <summary>1.1.2107.02</summary>
@@ -650,10 +650,10 @@ Windows 10 (Enterprise、Pro、およびホーム エディション)、Windows 
 &ensp;署名バージョン: **1.343.658.0**<br/>
 
 ### <a name="fixes"></a>修正プログラム
-- なし
+- None
 
 ### <a name="additional-information"></a>追加情報
-- なし
+- None
 <br/>
 </details><details>
 <summary>1.1.2106.01</summary>
@@ -664,10 +664,10 @@ Windows 10 (Enterprise、Pro、およびホーム エディション)、Windows 
 &ensp;署名バージョン: **1.339.1923.0**<br/>
 
 ### <a name="fixes"></a>修正プログラム
-- なし
+- None
 
 ### <a name="additional-information"></a>追加情報
-- なし
+- None
 <br/>
 </details><details>
 <summary>1.1.2105.01</summary>
@@ -678,10 +678,10 @@ Windows 10 (Enterprise、Pro、およびホーム エディション)、Windows 
 &ensp;署名バージョン: **1.339.42.0**<br/>
 
 ### <a name="fixes"></a>修正プログラム
-- なし
+- None
 
 ### <a name="additional-information"></a>追加情報
-- なし
+- None
 <br/>
 </details><details>
 <summary>1.1.2104.01</summary>
@@ -692,10 +692,10 @@ Windows 10 (Enterprise、Pro、およびホーム エディション)、Windows 
 &ensp;署名バージョン: **1.335.232.0**<br/>
 
 ### <a name="fixes"></a>修正プログラム
-- なし
+- None
 
 ### <a name="additional-information"></a>追加情報
-- なし
+- None
 <br/>
 </details><details>
 <summary>1.1.2103.01</summary>
@@ -706,10 +706,10 @@ Windows 10 (Enterprise、Pro、およびホーム エディション)、Windows 
 &ensp;署名バージョン: **1.331.2302.0**<br/>
 
 ### <a name="fixes"></a>修正プログラム
-- なし
+- None
 
 ### <a name="additional-information"></a>追加情報
-- なし
+- None
 <br/>
 </details><details>
 <summary>1.1.2102.03</summary>
@@ -720,10 +720,10 @@ Windows 10 (Enterprise、Pro、およびホーム エディション)、Windows 
 &ensp;署名バージョン: **1.331.174.0**<br/>
 
 ### <a name="fixes"></a>修正プログラム
-- なし
+- None
 
 ### <a name="additional-information"></a>追加情報
-- なし
+- None
 <br/>
 </details><details>
 <summary>1.1.2101.02</summary>
@@ -734,10 +734,10 @@ Windows 10 (Enterprise、Pro、およびホーム エディション)、Windows 
 &ensp;署名バージョン: **1.329.1796.0**<br/>
 
 ### <a name="fixes"></a>修正プログラム
-- なし
+- None
 
 ### <a name="additional-information"></a>追加情報
-- なし
+- None
 <br/>
 </details><details>
 <summary>1.1.2012.01</summary>
@@ -748,10 +748,10 @@ Windows 10 (Enterprise、Pro、およびホーム エディション)、Windows 
 &ensp;署名バージョン: **1.327.1991.0**<br/>
 
 ### <a name="fixes"></a>修正プログラム
-- なし
+- None
 
 ### <a name="additional-information"></a>追加情報
-- なし
+- None
 <br/>
 </details><details>
 <summary>1.1.2011.02</summary>
@@ -762,7 +762,7 @@ Windows 10 (Enterprise、Pro、およびホーム エディション)、Windows 
 &ensp;署名バージョン: **1.327.658.0**<br/>
 
 ### <a name="fixes"></a>修正プログラム
-- なし
+- None
 
 ### <a name="additional-information"></a>追加情報
 - 更新されたMicrosoft Defender ウイルス対策署名
@@ -776,10 +776,10 @@ Windows 10 (Enterprise、Pro、およびホーム エディション)、Windows 
 &ensp;署名バージョン: **1.327.344.0**<br/>
 
 ### <a name="fixes"></a>修正プログラム
-- なし
+- None
 
 ### <a name="additional-information"></a>追加情報
-- なし
+- None
 <br/>
 </details><details>
 <summary>1.1.2009.10</summary>
@@ -790,7 +790,7 @@ Windows 10 (Enterprise、Pro、およびホーム エディション)、Windows 
 &ensp;署名バージョン: **1.327.2216.0**<br/>
 
 ### <a name="fixes"></a>修正プログラム
-- なし
+- None
 
 ### <a name="additional-information"></a>追加情報
 - RS1 以降の OS Windows 10インストール イメージのサポートが追加されました。
@@ -808,4 +808,3 @@ Windows 10 (Enterprise、Pro、およびホーム エディション)、Windows 
 |[イベントベースの強制更新プログラムを管理する](manage-event-based-updates-microsoft-defender-antivirus.md) | 保護更新プログラムは、起動時または特定のクラウド配信の保護イベントの後にダウンロードする設定できます。 |
 |[モバイル デバイスと仮想マシン (VM) の更新プログラムを管理する](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)| モバイル デバイスや仮想マシンに特に役立つ、バッテリーの電源で更新を行う必要があるかどうかなどの設定を指定できます。 |
 | [Microsoft Defender for Endpoint update for EDR センサー](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac) | 2021 EDR新しい Microsoft Defender for Endpoint 統合ソリューション パッケージに含まれる MsSense.exe センサー (MsSense.exe) を更新できます。   |
-

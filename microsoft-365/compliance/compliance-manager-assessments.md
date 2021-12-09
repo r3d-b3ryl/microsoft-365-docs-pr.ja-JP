@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager で評価を構築し、組織にとって重要な規制と認定の要件を満たすのに役立ちます。
-ms.openlocfilehash: 27c977076774839b708edb835cc3a279c39f105f
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 7f08ec6c7e5dc34733aa3ea148c96f09916b0627
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60667742"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370742"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>コンプライアンス マネージャーでの評価の作成と管理
 
@@ -172,7 +172,7 @@ Microsoft 製品をサポートするテンプレートに基づく評価の [Mi
 
 ### <a name="what-causes-an-update"></a>更新の原因
 
-評価の更新は、スコアリングに影響する基になるテンプレートの変更がある場合に発生します。 変更には、規制の変更や製品の変更に基づいてコントロール マッピングなどのガイダンスを調整する必要があります。 評価の更新は、組織 (カスタム テンプレートが変更された [場合など)](compliance-manager-templates-modify.md)と Microsoft から発生する可能性があります。
+評価の更新は、スコアリングに影響する基になるテンプレートの変更がある場合に発生します。 変更には、規制の変更や製品の変更に基づいてコントロール マッピングなどのガイダンスを調整する必要があります。 評価の更新は、組織 (カスタム テンプレートが変更[](compliance-manager-templates-modify.md)された場合や Microsoft など) から発生する可能性があります。
 
 Microsoft が拡張したコンプライアンス マネージャー テンプレートを更新した場合、それらの更新プログラムを承諾すると、評価はそれらの更新プログラムを継承します。 評価は、拡張時に評価に適用した追加の属性を保持します。
 

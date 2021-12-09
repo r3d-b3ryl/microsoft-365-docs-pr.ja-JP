@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: 管理者アカウントにサインインMicrosoft 365を使用して、個々のユーザー パスワードを有効期限が切れWindows PowerShell。
-ms.openlocfilehash: 480ab751b9ccc97f0a4fcd51d3f7a698790cf675
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ff2fa9b6dd4e63a1dcdee8280dfdaddc70388ae8
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157208"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370238"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>個別のユーザーのパスワードを無期限に設定する
 
@@ -36,13 +36,13 @@ ms.locfileid: "60157208"
 
 ## <a name="before-you-begin"></a>開始する前に
 
-この記事は、職場、学校、または非営利団体のパスワードの有効期限ポリシーを設定する管理者を対象としています。 これらの手順を完了するには、Microsoft 365 の管理者アカウントでサインインする必要があります。 [管理者アカウントとは](../../business-video/admin-center-overview.md)。
+この記事は、職場、学校、または非営利団体のパスワードの有効期限ポリシーを設定する管理者を対象としています。 これらの手順を完了するには、Microsoft 365 の管理者アカウントでサインインする必要があります。 [管理者アカウントとは?([の概要 Microsoft 365 管理センター](../admin-overview/admin-center-overview.md)。
 
 これらの手順を実行するには [、グローバル管理者またはパスワード](about-admin-roles.md) 管理者である必要があります。
 
 Microsoft クラウド サービスのグローバル管理者は、Azure Active Directory [PowerShell](/powershell/azure/active-directory/install-adv2)を使用して、Graphユーザーに対して有効期限が切れないパスワードを設定できます。 AzureAD コマンドレット [を使用して](/powershell/module/Azuread) 、有効期限が切れない構成を削除したり、有効期限が切れないユーザー パスワードを確認することもできます。
 
-このガイドは、Intune や Microsoft 365 などの他のプロバイダーにも適用されます。これは、Azure AD ID およびディレクトリ サービスにも依存します。 パスワードの有効期限は、変更できるポリシーの唯一の部分です。
+このガイドは、Intune や Microsoft 365 などの他のプロバイダーにも適用され、id サービスAzure ADサービスに依存します。 パスワードの有効期限は、変更できるポリシーの唯一の部分です。
 
 
 ## <a name="how-to-check-the-expiration-policy-for-a-password"></a>パスワードの有効期限ポリシーを確認する方法

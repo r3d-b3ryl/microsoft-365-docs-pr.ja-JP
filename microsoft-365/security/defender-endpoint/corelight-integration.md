@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 62bddf15a041ef47df13bbbd036d10727c15d3d6
-ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
+ms.openlocfilehash: 51762f9a2273817f926a55f8fef630cbfd7d2df1
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61320841"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372518"
 ---
 # <a name="enable-corelight-data-integration"></a>Corelight データ統合
 
@@ -66,7 +66,7 @@ Corelight 統合を有効にするには、次の手順を実行する必要が�
 
 ### <a name="step-3-configure-your-corelight-appliance-to-send-data-to-microsoft-365-defender"></a>手順 3: Corelight アプライアンスを構成して、データをサーバーに送信Microsoft 365 Defender
 
-**適用対象**: Corelight Sensor ソフトウェア v24.2 以降
+**適用対象**: Corelight Sensor ソフトウェア v23.2 以降
 
 > [!NOTE]
 > データの送信をサポートする以前のリリースで有効にするには、最初に次のコマンドを実行する必要があります `corelight-client configuration update --enable.adfiot 1` 。

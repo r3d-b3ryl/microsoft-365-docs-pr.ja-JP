@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0ed5410005bb07c2e0fe97a6a7d26fddcdacbe50
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 5dd8cbd36fdac4aa3d0661a9b418a30ec2bae44f
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61302088"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61369866"
 ---
 # <a name="get-user-related-machines-api"></a>ユーザー関連のコンピューター API を取得する
 
@@ -59,7 +59,7 @@ ms.locfileid: "61302088"
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
 >
-> - ユーザーには、少なくとも次の役割のアクセス許可が必要です。'データの表示' 。 詳細については、「役割の作成 [と管理」を参照してください](user-roles.md)。
+> - ユーザーには、少なくとも次の役割のアクセス許可が必要です。'データの表示' 。 詳細については、「役割の作成 [と管理」を参照してください。](user-roles.md)
 > - 応答には、デバイス グループの設定に基づいて、ユーザーがアクセスできるデバイスだけが含まれます。 詳細については、「デバイス グループの作成 [と管理」を参照してください](machine-groups.md)。
 
 ## <a name="http-request"></a>HTTP 要求

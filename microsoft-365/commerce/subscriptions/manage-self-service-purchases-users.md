@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: ユーザーは、セルフサービスによる購入を管理する方法を学ぶことができます。
 ms.date: 03/17/2021
-ms.openlocfilehash: e4d8fe771340efa1e5084e77a1870e4db20bfe67
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: HT
+ms.openlocfilehash: 86b147ebd81842dee4aa15795650dee9c0f3fe5c
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203353"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372902"
 ---
 # <a name="manage-self-service-purchases-users"></a>セルフサービスによる購入を管理する (ユーザー)
 
@@ -41,12 +41,6 @@ ms.locfileid: "60203353"
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[お使いの製品]</a> ページの順に移動します。
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[お使いの製品]</a> ページの順に移動します。
@@ -58,12 +52,6 @@ ms.locfileid: "60203353"
 ::: moniker range="o365-worldwide"
 
 1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">お使いの製品</a>] ページの順に移動します。
 
 ::: moniker-end
 
@@ -82,12 +70,6 @@ ms.locfileid: "60203353"
 :: moniker range="o365-worldwide"
 
 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">ライセンス</a>] ページに移動します。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
- 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">ライセンス</a>] ページに移動します。
 
 ::: moniker-end
 
@@ -111,12 +93,6 @@ ms.locfileid: "60203353"
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
- 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">ライセンス</a>] ページに移動します。
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
  1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">ライセンス</a>] ページに移動します。
@@ -132,12 +108,6 @@ ms.locfileid: "60203353"
 ::: moniker range="o365-worldwide"
 
 1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[お使いの製品]</a> ページの順に移動します。
 
 ::: moniker-end
 
@@ -180,4 +150,4 @@ ms.locfileid: "60203353"
 
 セルフサービスでの購入に関するよく寄せられる質問については、「[セルフサービスでの購入に関する FAQ](self-service-purchase-faq.yml)」を参照してください。
 
-ご質問がある場合や、セルフサービスでのご購入については、[サポートにお問い合わせ](../../business-video/get-help-support.md)ください。
+ご質問がある場合や、セルフサービスでのご購入については、[サポートにお問い合わせ](../../admin/get-help-support.md)ください。

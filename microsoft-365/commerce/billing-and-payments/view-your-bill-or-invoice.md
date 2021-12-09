@@ -25,12 +25,12 @@ ms.custom:
 - adminvideo
 description: 請求書または請求明細書は、Microsoft 365 管理センターで確認できます。 また、課金内容を保存したり印刷したりすることもできます。
 ms.date: 07/31/2020
-ms.openlocfilehash: 0124f9c2f1375da162975f808138f24a8dead4fd
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: bbede67dd093ad726933f25b7774b63e587dd24a
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128198"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371258"
 ---
 # <a name="view-your-bill-or-invoice"></a>課金内容または請求書を表示する
 
@@ -38,7 +38,7 @@ ms.locfileid: "61128198"
   
 課金内容を表示した場合に料金について説明が必要な場合は、「[課金または請求書の内容を理解する](understand-your-invoice2.md)」 のページで詳細な解説を参照してください。
   
-**請求書に関して問題がある場合**: [一般法人向け製品のサポートにお問い合わせください](../../business-video/get-help-support.md)。
+**請求書に関して問題がある場合**: [一般法人向け製品のサポートにお問い合わせください](../../admin/get-help-support.md)。
 
 ## <a name="before-you-begin"></a>はじめに
 
@@ -57,12 +57,6 @@ ms.locfileid: "61128198"
 ::: moniker range="o365-worldwide"
 
 1. 管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">請求と支払い</a>] ページの順に移動します。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">請求と支払い</a>] ページの順に移動します。
 
 ::: moniker-end
 

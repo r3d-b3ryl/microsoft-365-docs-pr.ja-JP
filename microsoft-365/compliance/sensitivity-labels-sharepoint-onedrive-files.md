@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理者は、Word、Excel、および PowerPoint ファイルのSharePointラベルのOneDrive。
-ms.openlocfilehash: 1d611820986b5d621aed3bea26f6b8ae4455d0f8
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: a77721175962acbddbaae393aef49d16b96a9215
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61109925"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372878"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>SharePoint および OneDrive で Office ファイルの秘密度ラベルを有効にする
 
@@ -32,7 +32,7 @@ SharePoint および OneDrive で[](sensitivity-labels-office-apps.md#office-fil
 
 また、この機能を有効にすると、SharePoint および OneDrive は、暗号化された Office ファイルの内容を、感度ラベルを使用して処理できます。 ラベルは、Office for the webまたはデスクトップ アプリOfficeに適用し、SharePointおよびOneDrive。 この機能を有効にするまで、これらのサービスは暗号化されたファイルを処理できないので、共同編集、電子情報開示、データ損失防止、検索、その他の共同作業機能は、これらのファイルでは機能しません。
 
-SharePoint および OneDrive の Office ファイルの感度ラベルを有効にした後、クラウドベースのキーで暗号化を適用する (およびダブル キー暗号化を使用しない) 感度ラベルを持つ新しいファイルと変更[](double-key-encryption.md)されたファイルに対して次の手順を実行します。
+SharePoint および OneDrive の Office ファイルの感度ラベルを有効にした後、クラウドベースのキーを使用して暗号化を適用する感度ラベルを持つ新しいファイルと変更されたファイル (および Double [Key Encryption](double-key-encryption.md)を使用しない) に対して有効にします。
 
 - Word、Excel、PowerPoint、SharePointおよび OneDriveはラベルを認識し、暗号化されたファイルの内容を処理できます。
 
@@ -65,7 +65,7 @@ SharePoint および OneDrive の Office ファイルの感度ラベルを有効
 
 SharePoint Information Rights Management (IRM) を使用して SharePoint でドキュメントを現在保護している場合は、このページの SharePoint Information [Rights Management (IRM)](#sharepoint-information-rights-management-irm-and-sensitivity-labels)と感度ラベルセクションを確認してください。
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要件
 
 これらの新機能は、感度ラベル [でのみ機能](sensitivity-labels.md) します。 現在 Azure Information Protection ラベルがある場合は、アップロードする新しいファイルに対してこれらの機能を有効にできるよう、最初にラベルを感度ラベルに移行します。 手順については、、「[Azure Information Protection ラベルを統合秘密度ラベルに移行する方法](/azure/information-protection/configure-policy-migrate-labels)」を参照してください。
 
@@ -249,7 +249,7 @@ InformationProtectionLabelId:8faca7b8-8d20-48a3-8ea2-0f96310a848e
 
 代わりに、グローバル管理者または[SharePoint](/sharepoint/sharepoint-admin-role)管理者は[Unlock-SPOSensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile)コマンドレットを実行して、感度ラベルと暗号化の両方を削除できます。 このコマンドレットは、管理者がサイトまたはファイルへのアクセス許可を持っていなくても、Azure Rights Management サービスが利用できない場合でも実行されます。
 
-例として以下のようなものがあります。
+例:
 
 ```powershell
 Unlock-SPOSensitivityLabelEncryptedFile -FileUrl "https://contoso.com/sites/Marketing/Shared Documents/Doc1.docx" -JustificationText "Need to decrypt this file"

@@ -14,7 +14,7 @@ metadata:
   ms.localizationpriority: high
 productDirectory:
   items:
-    - title: 作業の開始
+    - title: 開始する
       imageSrc: 'https://docs.microsoft.com/office/media/icons/get-started-blue.svg'
       summary: ビジネス向けサービスへの移行Microsoft 365計画します。
       url: ../admin/admin-overview/what-is-microsoft-365.md
@@ -45,7 +45,7 @@ productDirectory:
     - title: ビジネス アプリのセットアップ
       imageSrc: 'https://docs.microsoft.com/office/media/icons/task-list-planning-blue.svg'
       summary: Bookings、Lists、Tasks..について設定して説明します。
-      url: overview-bookings.md
+      url: 'https://support.microsoft.com/office/42d4e852-8e99-4d8f-9b70-d7fc93973cb5'
     - title: サブスクリプションの管理
       imageSrc: 'https://docs.microsoft.com/office/media/icons/settings.svg'
       summary: ユーザーを管理し、パスワードをリセットし、請求書を表示します。
@@ -61,7 +61,7 @@ productDirectory:
     - title: サポートを受ける
       imageSrc: 'https://docs.microsoft.com/office/media/icons/headset-blue.svg'
       summary: ビジネス向けMicrosoft 365ヘルプを表示します。
-      url: get-help-support.md
+      url: ../admin/get-help-support.md
 additionalContent:
   sections:
     - title: 詳細情報

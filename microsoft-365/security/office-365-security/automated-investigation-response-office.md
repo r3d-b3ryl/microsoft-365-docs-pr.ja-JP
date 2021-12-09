@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 36662f61c27019046780ce1f7b5290d280eba7fe
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: f515567eca50f99e654df15ddc0b69eb186ba89a
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60704077"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373718"
 ---
 # <a name="how-automated-investigation-and-response-works-in-microsoft-defender-for-office-365"></a>Microsoft Defender での自動調査と対応の仕組みOffice 365
 
@@ -68,8 +68,8 @@ AIR を使用すると、セキュリティ運用チームは、より効率的�
 - 同様の電子メール メッセージは、電子メール クラスター検索を介して識別されます。
 - 信号は、Microsoft Defender for Endpoint などの [他のプラットフォームと共有されます](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)。
 - 不審なメール メッセージ内の悪意のあるリンクをユーザーがクリックしたかどうかが判断されます。
-- ユーザーによって報告される他の同様のメッセージExchange Online Protection ([EOP](exchange-online-protection-overview.md)) と ([Microsoft Defender for Office 365](defender-for-office-365.md)) の間でチェックが行われます。
-- ユーザーに対する侵害があったかどうかがチェックされます。 このチェックでは、関連するユーザー アクティビティの異常をOffice 365、Microsoft Cloud App Security、Azure Active Directory[](/azure/active-directory)の信号を活用します。 [](/cloud-app-security)
+- ユーザーが報告する他Exchange Online Protectionメッセージが表示される場合は、Office 365 ([EOP](exchange-online-protection-overview.md)と ([Microsoft Defender](defender-for-office-365.md) for microsoft Defender for Office 365) の間でチェックが行われます。
+- ユーザーに対する侵害があったかどうかがチェックされます。 このチェックでは、Office 365、Microsoft Defender for [Cloud Apps、](/cloud-app-security)および Azure Active Directory[](/azure/active-directory)関連するユーザー アクティビティの異常を関連付ける信号を活用します。
 
 捜索フェーズでは、リスクと脅威がさまざまな捜索手順に割り当てられます。
 

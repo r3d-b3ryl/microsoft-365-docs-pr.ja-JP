@@ -14,12 +14,12 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: この記事の手順に従って、ビジネス サブスクリプションMicrosoft Teamsにサインアップします。
-ms.openlocfilehash: 61243f2b165a0c6172014eb8205c6eca3c1004b3
-ms.sourcegitcommit: cd3f5e3b7fea37fdcd8c811d01afd60ea68301ca
+ms.openlocfilehash: c011419f499d832ea383bc9b5f8f61a7cea5c430
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61254578"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372602"
 ---
 # <a name="sign-up-for-microsoft-teams-as-part-of-a-business-subscription"></a>ビジネス サブスクリプションのMicrosoft Teams登録する
 
@@ -67,4 +67,6 @@ Microsoft Teams Essentials および Microsoft 365 Business Basic 365 は商用�
 
 ### <a name="what-do-i-do-if-i-want-to-change-my-business-name"></a>ビジネス名を変更する場合は、どうしますか?
 
-ビジネス名の変更に役立つ小規模ビジネス サポートの専門家にお問い合わせください。 詳細については、「サポートを [受け取る」を参照してください](../../business-video/get-help-support.md)。
+
+ビジネス名の変更に役立つ小規模ビジネス サポートの専門家にお問い合わせください。 詳細については、「サポートを [受け取る」を参照してください](../get-help-support.md)。
+

@@ -29,12 +29,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: 管理センターで特定のタスクを実行できるよう、管理者の役割をビジネス内のユーザーまたは複数のユーザーに割り当てる方法について説明します。
-ms.openlocfilehash: 4a112f17f253289383353720db8bb3365095d645
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: fd38bb9ed378e6b3ffc20a79ca71eb2943599dcc
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128414"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370622"
 ---
 # <a name="assign-admin-roles"></a>管理者ロールを割り当てる
 
@@ -75,12 +75,6 @@ Microsoft Business サブスクリプションを購入したユーザーは、�
 ::: moniker range="o365-worldwide"
 
 1. 管理センターで、[ユーザーのアクティブな **ユーザー]** > [ページに移動](https://go.microsoft.com/fwlink/p/?linkid=834822) します。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 管理センターで、[**ユーザー**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
 ::: moniker-end
 

@@ -12,16 +12,18 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.custom: autoir
+ms.custom:
+- autoir
+- admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
 ms.technology: m365d
-ms.openlocfilehash: 03cf5cbf209f0884304d541601de58ad748d9e4c
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: 3b724fcd11fb9acb32bd6c4cec551156f8a86cda
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914195"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61369710"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>Microsoft 365 Defender で自動調査と応答機能を構成する
 
@@ -29,7 +31,7 @@ ms.locfileid: "60914195"
 
 Microsoft 365 Defenderには、セキュリティ[運用](m365d-autoir.md)チームの時間と労力を節約できる強力な自動調査と対応機能が含まれています。 自己 [修復機能を使用](m365d-autoir.md#how-automated-investigation-and-self-healing-works)すると、これらの機能は、セキュリティ アナリストが脅威の調査と対応に必要な手順を模倣し、より速く、拡張する能力が高くなります。
 
-この記事では、次の手順に従って、自動調査と応答を構成する方法Microsoft 365 Defender説明します。
+この記事では、次の手順に従って、自動調査と<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">応答を構成</a>する方法Microsoft 365 Defender説明します。
 
 1. [前提条件を確認します](#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender)。
 2. [デバイス グループのオートメーション レベルを確認または変更します](#review-or-change-the-automation-level-for-device-groups)。
@@ -47,7 +49,7 @@ Microsoft 365 Defenderには、セキュリティ[運用](m365d-autoir.md)チー
 |要件|詳細|
 |---|---|
 |サブスクリプションの要件|これらのサブスクリプションの 1 つ。 <ul><li>Microsoft 365 E5</li><li>Microsoft 365 A5</li><li>Microsoft 365 E3アドオンMicrosoft 365 E5 Securityを使用する</li><li>Microsoft 365 A3セキュリティ Microsoft 365 A5を使用する</li><li>Office 365 E5 E5 プラス Enterprise Mobility + Security E5 Windows E5</li></ul> <p> 「[ライセンスMicrosoft 365 Defender」を参照してください](./prerequisites.md#licensing-requirements)。|
-|ネットワーク要件|<ul><li>[Id の Microsoft Defender が有効](/azure-advanced-threat-protection/what-is-atp)</li><li>[Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)構成済み</li><li>[Id 統合用 Microsoft Defender](/cloud-app-security/mdi-integration)</li></ul>|
+|ネットワーク要件|<ul><li>[Id の Microsoft Defender が有効](/azure-advanced-threat-protection/what-is-atp)</li><li>[Microsoft Defender for Cloud Apps の](/cloud-app-security/what-is-cloud-app-security) 構成</li><li>[Id 統合用 Microsoft Defender](/cloud-app-security/mdi-integration)</li></ul>|
 |Windowsの要件|<ul><li>Windows 11</li><li>Windows 10バージョン 1709 以降がインストールされている (リリース[情報Windows参照)](/windows/release-information/)</li><li>構成されている脅威保護サービスは次のとおりです。<ul><li>[Microsoft Defender for Endpoint](../defender-endpoint/configure-endpoints.md)</li><li>[Microsoft Defender ウイルス対策](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)</li></ul></li></ul>|
 |電子メール コンテンツと電子メール ファイルOffice保護|[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365#configure-atp-policies)構成済み|
 |アクセス許可|自動調査および応答機能を構成するには、グローバル管理者またはセキュリティ管理者の役割が Azure Active Directory ( ) または Microsoft 365 管理センター ( ) のどちらかに割 <https://portal.azure.com> り当てられている必要があります <https://admin.microsoft.com> 。 <p> 保留中のアクションの確認、承認、拒否など、自動調査および応答機能を操作するために必要なアクセス許可を取得するには、「アクション センター タスクに必要なアクセス許可」 [を参照](m365d-action-center.md#required-permissions-for-action-center-tasks)してください。|
@@ -73,7 +75,7 @@ Microsoft は、特定のリスク [を特定するのに](../../compliance/aler
 
 メールとコンテンツOffice 365保護するために役立つセキュリティ設定。 これらの設定を表示または変更するには、「脅威から保護する [」のガイダンスに従います](../office-365-security/protect-against-threats.md)。
 
-1. [ポータル] Microsoft 365 Defenderで、[ポリシー <https://security.microsoft.com> とルール **の脅威&に** \> **移動します**。
+1. このポータル <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender、[</a>ポリシーとルール **の脅威ポリシー** & \> **に移動します**。
 
 2. 次のすべてのポリシーが構成されていることを確認します。 ヘルプと推奨事項を取得するには、「脅威から保護 [する」を参照してください](/microsoft-365/security/office-365-security/protect-against-threats)。
    - [マルウェア対策](../office-365-security/protect-against-threats.md#part-1---anti-malware-protection-in-eop)
@@ -92,7 +94,7 @@ Microsoft は、特定のリスク [を特定するのに](../../compliance/aler
 
 :::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="ユーザー設定が有効Microsoft 365 Defenderする方法。" lightbox="../../media/mtp-enable/mtp-on.png":::
 
-1. ポータル () にサインインMicrosoft 365 Defenderします [https://security.microsoft.com](https://security.microsoft.com) 。
+1. ポータルにサインイン<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defenderする</a>
 
 2. ナビゲーション ウィンドウで、前の図に示 **&、** アラート、ハンティング、およびアクション センターの [インシデント] を探します。
    - [インシデントと **警告] 、&、****および** アクション センターが表示される場合は、Microsoft 365 Defenderがオンです。 この記事 [の「デバイス グループのオートメーション レベルを確認または変更する](#review-or-change-the-automation-level-for-device-groups) 」セクションを参照してください。
@@ -101,7 +103,7 @@ Microsoft は、特定のリスク [を特定するのに](../../compliance/aler
 3. ナビゲーション ウィンドウで、[次の操作]**を**  >  **設定Microsoft 365 Defender。** 有効になっているMicrosoft 365 Defender確認します。
 
 > [!TIP]
-> お困りの際は、 「[電源を入Microsoft 365 Defender」 を参照してください](m365d-enable.md)。
+> サポートが必要な場合 「[電源を入Microsoft 365 Defender」 を参照してください](m365d-enable.md)。
 
 ## <a name="next-steps"></a>次の手順
 

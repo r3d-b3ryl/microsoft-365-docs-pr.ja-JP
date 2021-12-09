@@ -13,12 +13,12 @@ ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft は、サポート サービスやアシスト サービスを含め、さまざまな場所と方法で EOP のヘルプを提供しています。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4ee0affc301500d3ebebd8d17ff13f569356c123
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f4db5851edcbb4daa2a0be1fa36770b7bb2d4b94
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60149600"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371174"
 ---
 # <a name="help-and-support-for-eop"></a>EOP のヘルプとサポート
 
@@ -29,7 +29,7 @@ ms.locfileid: "60149600"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Protection (EOP) 組織に Exchange Online メールボックスがない組織では、この記事に記載されているテクニカル サポート リソースは、EOP に問題がある場合の回答を見つけるのに役立ちます。 Microsoft は、サポート サービスやアシスト サービスを含め、さまざまな場所と方法で EOP のヘルプを提供しています。
+Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Protection (EOP) 組織に Exchange Online メールボックスがない組織では、この記事に記載されているテクニカル サポート リソースを使用すると、問題がある場合に回答を見つけるのに役立ちます。EOP。 Microsoft は、サポート サービスやアシスト サービスを含め、さまざまな場所と方法で EOP のヘルプを提供しています。
 
 ## <a name="self-support-options"></a>サポート サービス オプション
 
@@ -37,7 +37,7 @@ Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Pro
 
 [Exchange Online Protection の製品概要](https://products.office.com/exchange/exchange-email-security-spam-protection)
 
-[ビジネス製品についてサポートに問い合わせる - 管理者ヘルプ](../../business-video/get-help-support.md)
+[ビジネス製品についてサポートに問い合わせる - 管理者ヘルプ](../../admin/get-help-support.md)
 
 [Microsoft 365コミュニティ](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
 
