@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ビジネス ファイルを共有する方法の概要。
-ms.openlocfilehash: 7c4dde8f3ce19a2f7c443efffbbc780a746ba174
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: HT
+ms.openlocfilehash: 3548177ad97453949b622ba50149fad81e5459cb
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60155684"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374774"
 ---
 # <a name="overview-of-sharing-business-files"></a>ビジネス ファイルの共有の概要
 
@@ -43,7 +43,7 @@ ms.locfileid: "60155684"
 - 社外のユーザー (クライアントや顧客など) とメールを介してファイルを共有するのは、一方通行の通信で済む必要がある場合です。
 - 返信が必要な場合や、情報を記入して返信してもらう必要がある場合は、SharePoint や Microsoft Teams を使用し、編集リンクを付けて共有することができます。
 
-安全なリンクを使用して[組織外のユーザーとファイルを共有する](securely-share-files-externally.md)方法や、[リンクを知っている全員とファイルを共有する](share-files-externally.md)方法について詳しく説明します。
+安全なリンクを使用して[組織外のユーザーとファイルを共有する](https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07)方法や、[リンクを知っている全員とファイルを共有する](https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07)方法について詳しく説明します。
 
 ## <a name="share-and-collaborate-with-a-client-or-business-partner"></a>クライアントやビジネス パートナーとの共有と共同作業
 
@@ -53,7 +53,7 @@ ms.locfileid: "60155684"
 1. ファイルをアップロードします。
 1. パートナーやサプライヤーを "ゲスト" ユーザーとしてチームに招待し、アクセス許可を付与します。
 
-[セキュリティ保護されたリンクでファイルを組織外で共有する](securely-share-files-externally.md)方法について詳しく説明します。
+[セキュリティ保護されたリンクでファイルを組織外で共有する](https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07)方法について詳しく説明します。
 
 ## <a name="share-inside-your-business"></a>ビジネス内での共有
 
@@ -62,7 +62,7 @@ ms.locfileid: "60155684"
 1. チームを作成し、そこに自分のチームを招待します。
 1. ファイルをアップロードします。
 
-[社内ファイル ストレージ](files-to-sharepoint.md)と[従業員ファイル ストレージ](files-to-onedrive.md)の詳細についてはこちらをご覧ください。
+詳細については、「ファイルを[ファイルに移動SharePoint](../admin/setup/files-to-sharepoint.md)ファイルを[移動する」OneDrive。](../admin/setup/files-to-onedrive.md)
 
 ## <a name="how-to-get-it-done"></a>実現方法
 
@@ -70,5 +70,5 @@ ms.locfileid: "60155684"
 
 - [添付ファイルを送受信する](https://support.microsoft.com/office/sending-and-receiving-attachments-d32cd5ad-c7c5-49df-814d-4c17a5d3beb0)
 - [Onedrive でファイルとフォルダーを共有する](https://support.microsoft.com/office/share-files-and-folders-with-microsoft-365-business-72f26d6c-bf9e-432c-8b96-e3c2437f5b65)
-- [会社全体のチームを作成する](org-wide-team.md)
+- [会社全体のチームを作成する](/microsoftteams/create-an-org-wide-team)
 - [チームにゲストを追加する](https://support.microsoft.com/office/add-guests-to-a-team-in-teams-fccb4fa6-f864-4508-bdde-256e7384a14f)

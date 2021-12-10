@@ -25,18 +25,18 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: Microsoft 365 管理センターで、管理者がビジネス、学校、または非営利団体のパスワード有効期限ポリシーを設定する方法について説明します。
-ms.openlocfilehash: 59d5469eb798b6bf93de34c6659c999e84b27ea5
-ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
+ms.openlocfilehash: 335a14a30dc96868219f20a7467d7275ef35e26f
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/22/2021
-ms.locfileid: "61137065"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370550"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>組織のパスワード有効期限ポリシーを設定します。
 
 ## <a name="before-you-begin"></a>開始する前に
 
-この記事は、職場、学校、または非営利団体のパスワードの有効期限ポリシーを設定する管理者を対象としています。 これらの手順を完了するには、Microsoft 365 の管理者アカウントでサインインする必要があります。 [管理者アカウントとは](../../business-video/admin-center-overview.md)。
+この記事は、職場、学校、または非営利団体のパスワードの有効期限ポリシーを設定する管理者を対象としています。 これらの手順を完了するには、Microsoft 365 の管理者アカウントでサインインする必要があります。 [管理者アカウントとは?([Microsoft 365 管理センターの概要 ](../admin-overview/admin-center-overview.md)。
 
 管理者として、ユーザー パスワードを特定の日数が経過したら期限切れにするか、パスワードの有効期限が切れないように設定することができます。既定では、組織でパスワードは有効期限が切れないように設定されています。
 
@@ -87,12 +87,12 @@ Azure Active Directory には、その他のパスワード ポリシーと制�
 
 ## <a name="update-password-policy"></a>パスワードポリシーの更新
 
-Set-MsolPasswordPolicy コマンドレットは特定のドメインまたはテナントのパスワード ポリシーを更新します。2つの設定が必要です。まず、パスワードを変更するまでの有効期間を指定します。2番目に、パスワードの有効期限が近づいているという最初の通知をユーザーが受け取るときにトリガーされる、パスワードの有効期限までの日数を示します。
+Set-MsolPasswordPolicy コマンドレットは、指定されたドメインまたはテナントのパスワード ポリシーを更新し、パスワードが変更されるまでの有効期間を示します。
 
 特定のドメインまたはテナントのパスワードポリシーを更新する方法については、[「Set-MsolPasswordPolicy」](/powershell/module/msonline/set-msolpasswordpolicy)を参照してください。
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[ユーザーが自分でパスワードをリセットできるようにする](../add-users/let-users-reset-passwords.md) (記事)\
+[ユーザーが自分のパスワードをリセットできるようにする](../add-users/let-users-reset-passwords.md) (記事)/
 
 [パスワードをリセットする](../add-users/reset-passwords.md) (記事)

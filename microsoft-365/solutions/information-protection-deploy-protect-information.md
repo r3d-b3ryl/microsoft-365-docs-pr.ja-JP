@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: セキュリティMicrosoft 365コンプライアンス機能を展開し、個人情報を保護します。
-ms.openlocfilehash: c1223dac804e1a9e514f3a5d0effad9f138e403a
-ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
+ms.openlocfilehash: 2739da0b5e9c4896b65751c63d9b2e5f3b026a2e
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/22/2021
-ms.locfileid: "61137125"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374558"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>データプライバシー規制の対象となる情報を保護する
 
@@ -66,7 +66,7 @@ Microsoft 365 の情報保護スキームの使用を開始するために、以
 
 Microsoft[の情報保護ソリューション](../compliance/information-protection.md)には、Microsoft 365、Microsoft Azure、および Microsoft Windows。 情報Microsoft 365ソリューションには、次のものが含まれます。
 
-- [機密情報の種類](../compliance/sensitive-information-type-entity-definitions.md)(データプライバシーリスクの評価と機密アイテムの識別に関する記事[で説明)](information-protection-deploy-assess.md)
+- [機密情報の種類](../compliance/sensitive-information-type-entity-definitions.md) (データプライバシーリスクの評価と機密 [アイテムの識別に関する記事で説明されています)](information-protection-deploy-assess.md)
 - [秘密度ラベル](../compliance/sensitivity-labels.md)
   - サービス/コンテナー レベル
   - クライアント側/コンテンツ レベル

@@ -1,6 +1,6 @@
 ---
 title: ポータル Microsoft 365 Lighthouseの構成
-f1.keywords: NOCSH
+f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 管理サービス プロバイダー (MSP) の場合は、Microsoft 365 Lighthouseセキュリティを構成する方法について説明します。
-ms.openlocfilehash: c68f2441db5bdac2f2da693ee6c99baa7a9ff213
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: c40805267320488e79c774954fd8f6bd696449fa
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61122515"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374258"
 ---
 # <a name="configure-microsoft-365-lighthouse-portal-security"></a>ポータル Microsoft 365 Lighthouseの構成
 
@@ -48,7 +48,7 @@ Managed Service Provider (MSP) がテナントにアクセス許可を委任し�
 
 | [ライトハウス] ページ | 管理者エージェントのアクセス許可 | ヘルプデスク エージェントのアクセス許可 |
 |--|--|--|
-| Home | <ul><li>すべて表示する</li></ul> | <ul><li>すべて表示する</li></ul> |
+| ホーム | <ul><li>すべて表示する</li></ul> | <ul><li>すべて表示する</li></ul> |
 | テナント | <ul><li>すべて表示する</li><li>顧客の連絡先と Web サイトを更新する</li><li>展開計画の表示と適用</li></ul> | <ul><li>すべて表示する</li><li>顧客の連絡先と Web サイトを更新する</li><li>展開計画の表示</li></ul> |
 | ユーザー | <ul><li>すべて表示する</li><li>パスワードのリセット</li><li>サインインをブロックする</li><li>MFA を有効にする</li></ul> | <ul><li>すべて表示する</li><li>パスワードのリセット</li><li>サインインをブロックする</li></ul> |
 | デバイス | <ul><li>すべて表示する</li></ul> | <ul><li>すべて表示する</li></ul> |

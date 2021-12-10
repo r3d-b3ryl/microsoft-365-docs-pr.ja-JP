@@ -16,12 +16,12 @@ metadata:
   ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
   description: 新しいメッセージ保護機能について質問がある場合は、 ここで回答をご覧ください。
   ms.custom: seo-marvel-apr2020
-  ms.openlocfilehash: 8b9e9b17aa09c535529488bbd3b73abc9d9c1170
-  ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
-  ms.translationtype: HT
+  ms.openlocfilehash: 4693b4afb288fd6cf5a47a42e7578cd72aecd654
+  ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+  ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 10/07/2021
-  ms.locfileid: "60217115"
+  ms.lasthandoff: 12/09/2021
+  ms.locfileid: "61374426"
 title: メッセージの暗号化についてよく寄せられる質問
 summary: >
   新しいメッセージ保護機能について質問がある場合は、 ここで回答をご覧ください。 また、Azure Information Protection のデータ保護サービスである Azure Rights Management についての質問の回答については、「[Azure Information Protection でのデータ保護についてよく寄せられる質問](/information-protection/get-started/faqs-rms)」を参照してください。
@@ -35,7 +35,20 @@ sections:
     answer: "OME の新機能は以下の条件で使用できます。\n  \n- Office 365 の Exchange Online 用に OME または IRM をセットアップしたことがない場合。\n\n- OME と IRM がセットアップ済みで、Azure Information Protection から Azure Rights Management サービスを使用している場合は、次の手順を使用することができます。\n\n- Exchange Online Active Directory Rights Management サービス (AD RMS) を使用している場合は、これらの新機能をすぐに有効にすることはできません。 代わりに、[AD RMS から Azure Information Protection に移行する](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)必要があります。 移行が完了したら、OME を正常にセットアップできます。\n\n  Azure Information Protection に移行するのではなく、引き続き AD RMS と Exchange Online を使用する場合、これらの新機能は使用できません。\n"
   - question: >
       新しい OME 機能を使用するには、どのサブスクリプションが必要ですか?
-    answer: "新しい OME 機能を使用するには、次のプランのいずれかが必要です。\n  \n- Office 365 Message Encryption は、Office 365 Enterprise E3 および E5、Microsoft Enterprise E3 および E5、Microsoft 365 Business Premium、Office 365 A1、A3、A5、Office 365 Government G3 および G5 の一部として提供されます。 Azure Information Protection を利用した新しい保護機能を受信するために、追加のライセンスは必要ありません。\n\n- Office 365 Message Encryption の新機能を利用するために、次のプランに Azure Information Protection プラン 1 を追加することもできます: Exchange Online プラン 1、Exchange Online プラン 2、Office 365 F1、Microsoft 365 Business Basic、Microsoft 365 Business Standard、Office 365 Enterprise E1。\n\n- Office 365 Message Encryption を利用するすべてのユーザーは、この機能の対象になるためにはライセンスが付与される必要があります。\n\n- 完全なリストについては、Office 365 Message Encryption の「[Exchange Online サービスの説明](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)」を参照してください。\n"
+    answer: >
+      新しい OME 機能を使用するには、次のプランのいずれかが必要です。
+
+
+      - Office 365 Message Encryption E3 および E5、E3、E5、E3、E5、E3、Office 365 Enterprise、および E Microsoft 365 Enterprise 5 の一部Microsoft 365 Business Premium提供Office 365 A1、A3、および A5、および Office 365 Government G3 G5。 Azure Information Protection を利用した新しい保護機能を受信するために、追加のライセンスは必要ありません。
+
+
+      - Office 365 Message Encryption の新機能を利用するために、次のプランに Azure Information Protection プラン 1 を追加することもできます: Exchange Online プラン 1、Exchange Online プラン 2、Office 365 F1、Microsoft 365 Business Basic、Microsoft 365 Business Standard、Office 365 Enterprise E1。
+
+
+      - Office 365 Message Encryption を利用するすべてのユーザーは、この機能の対象になるためにはライセンスが付与される必要があります。
+
+
+      - 完全なリストについては、Office 365 Message Encryption の「[Exchange Online サービスの説明](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)」を参照してください。
   - question: >
       Azure Information Protection では、Exchange Online で Bring Your Own Key (BYOK) を使用できますか?
     answer: "はい。 Microsoft では、OME をセットアップする前に BYOK をセットアップするための手順を完了することをお勧めします。\n  \nBYOK の詳細については、「[Azure Information Protection テナント キーを計画して実装する](/information-protection/plan-design/plan-implement-tenant-key)」を参照してください。\n  \n"
@@ -139,7 +152,7 @@ sections:
   - question: >
       メールから暗号化を削除することはできますか?
     answer: >
-      管理者は、メール フロー ルールを設定して暗号化を削除できます。 メールが暗号化のみの保護を使用して暗号化されている場合を除き、他の組織によってメールに適用されている暗号化をメール フロー ルールによって削除することはできません。
+      管理者は、メール フロー ルールを設定して暗号化を削除できます。 別の組織によって適用されたメールからメール フロー ルールを使用して暗号化を削除できない。
   - question: >
       共有メールボックスとして送信し、メールを暗号化することはできますか?
     answer: >

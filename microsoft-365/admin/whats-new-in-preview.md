@@ -22,12 +22,12 @@ ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 description: '[Microsoft 365 管理センター- 今月追加された機能について学習します。'
-ms.openlocfilehash: 397efac0067aa46ffc29e9ac3e5dc61bff4d10e4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 31ae9f1b1c4bf8255ef1105089ffe2637dc36e0b
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199119"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374390"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>新しい機能Microsoft 365 管理センター
 
@@ -38,7 +38,7 @@ ms.locfileid: "60199119"
 
 ::: moniker-end
 
-新しい機能を継続的に追加し[](../business-video/admin-center-overview.md)、Microsoft 365 管理センター問題を解決し、フィードバックに基づいて変更を加えます。 以下を見て、今日利用可能な機能を確認してください。 一部の機能は、お客様に異なる速度で展開されます。 まだ機能が表示されない場合は、ターゲットリリース [に自分自身を追加してみてください](manage/release-options-in-office-365.md)。
+[[Microsoft 365 管理センター]](admin-overview/admin-center-overview.md)に新しい機能を継続的に追加しています。Microsoft 365 管理センター の概要、学習した問題の修正、フィードバックに基づいて変更を加えます。 以下を見て、今日利用可能な機能を確認してください。 一部の機能は、お客様に異なる速度で展開されます。 まだ機能が表示されない場合は、ターゲットリリース [に自分自身を追加してみてください](manage/release-options-in-office-365.md)。
 
 他の Microsoft クラウド サービスの新機能を知りたい場合は、次の手順を実行します。
 
@@ -195,7 +195,7 @@ Microsoft Ignite へようこそ - 最初のオンライン専用 Ignite。 Micr
   - **[** ユーザー] : ユーザーの名前を選択すると、そのユーザーを編集できます。 名前の横にある 3 つのドット (その他のアクション) メニューを選択すると、パスワードをリセットできます。 表示名、名、名、ユーザー名またはプライマリ メール アドレス、および電子メール エイリアスで検索できます。 ただし、完全一致を取得するには、プライマリ メール アドレスまたはユーザー名で検索します。
   - **グループ**: 任意のページからグループを編集し、メンバーを追加し、所有者を割り当てる。
   - **アクション**: ユーザーを検索してパスワードをリセットする方法と同様に、任意のページから "パスワードをリセット" を検索し、ユーザーのパスワードを 1 つ以上リセットすることもできます。
-  - **ナビゲーション**: [ナビゲーション] の下の結果は、管理センターのページにすばやくアクセスするのに役立ちます。 たとえば、"roles" を検索すると、Azure の [ロール] ページが表示ADされます。
+  - **ナビゲーション**: [ナビゲーション] の下の結果は、管理センターのページにすばやくアクセスするのに役立ちます。 たとえば、"roles" を検索すると、[役割] ページに移動して、ユーザーの役割Azure ADされます。
   - **設定**: 組織、サブスクライブしているサービス、セキュリティとプライバシーの設定に関連する設定を検索します。 
   - **ドメイン**: ドメインへのクイック リンクを見つけて、そのドメインの [概要と正常性] ページに移動します。
   - **ドキュメント**: 検索結果が見つからなかった場合は、役立つドキュメントを探します。 一致する記事の一覧を見つけるには少し時間がかかるので、検索で結果を見つけるのにもう少し時間がかかります。 
@@ -247,12 +247,12 @@ Microsoft Ignite へようこそ - 最初のオンライン専用 Ignite。 Micr
 ### <a name="documentation-training-and-videos"></a>ドキュメント、トレーニング、およびビデオ
 
 - Microsoft Ignite-- The Virtual Hub に新しく、[ちょうど間に合います](https://adoption.microsoft.com/virtual-hub/)。 IT のプロと開発者向けのテクニカル トレーニングについて詳しい説明をします。 今年の Ignite 管理者トラックの名前である、#SIDETRACKED 20 件の新しいビデオをすばやく見つける。
-- [Microsoft 365](https://www.youtube.com/watch?v=OVjb2lGJ4GU&t=2s)ビデオ シリーズの新機能: 今月は、ホワイトボード for Teams および web で利用できる新機能、Azure AD へのユーザー プロビジョニングを自動化する方法、Teams での新しい Power Automate トリガーとアクションなどについて説明します。 そして、来月に向け、Ignite で起こっているすべての素晴らしいことを要約します。
+- [Microsoft 365](https://www.youtube.com/watch?v=OVjb2lGJ4GU&t=2s)ビデオ シリーズの新機能: 今月は、Teams および web のホワイトボードで利用できる新機能、Azure AD へのユーザー プロビジョニングを自動化する方法、Teams の新しい Power Automate トリガーとアクションなどについて説明します。 そして、来月に向け、Ignite で起こっているすべての素晴らしいことを要約します。
 - 最初にソリューションに焦点を当てたMicrosoft 365[ドキュメント](/microsoft-365)ページの再設計を行いました。 このページで利用可能になった新しいソリューションを強調表示しますので、目を離す必要があります。
 
 ![「リモート ワーカーに権限を与Microsoft 365ソリューションドキュメント」の新しいランディング ページ。](../media/MAC-WN-M365Docspage.png)
 
-## <a name="july-2020"></a>2020 年7 月
+## <a name="july-2020"></a>2020 年 7 月
 
 ### <a name="getting-ready-for-ignite-2020"></a>Ignite 2020 の準備
 
@@ -288,7 +288,7 @@ Microsoft で Ignite シーズンに移行する中で、セッション中に�
 
 ### <a name="docs-training-and-videos-june"></a>ドキュメント、トレーニング、ビデオ (6 月)
 
-- [ユーザー設定のTeams](../business-video/get-started-teams-small-business.md)
+- [ユーザー設定のTeams](https://support.microsoft.com/office/6723dc43-dbc0-46e6-af49-8a2d1c5cb937)
 
 ## <a name="may-2020"></a>2020 年 5 月
 
@@ -337,7 +337,7 @@ Monthly Enterprise チャネルのリリースに合わせて、既存の更新�
 
 [2020 年 4 月](#april-2020)
 
-さて、私たちはそれをやった! 統合された役割エクスペリエンスに向けて 2 番目のステップを踏み、Intune の役割を管理<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター。</a> ロールを検索し、役割のアクセス許可を表示する機能などの機能を活用することもできます。 つまり、ユーザーと Intune の役割を管理するための 2 つの個別Microsoft 365必要ない。 [ロール] ページに<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>サインインすると、[ロール] ページに 2 つのピボットが表示され、1 つは Azure AD、もう 1 つは Intune 用です。
+さて、私たちはそれをやった! 統合された役割エクスペリエンスに向けて 2 番目のステップを踏み、Intune の役割を管理<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター。</a> ロールを検索し、役割のアクセス許可を表示する機能などの機能を活用することもできます。 つまり、ユーザーと Intune の役割を管理するための 2 つの個別Microsoft 365必要ない。 [役割] ページ<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank"></a>に Microsoft 365 管理センターサインインすると、[役割] ページに 2 つのピボットが表示され、1 つは [役割] ページAzure AD Intune 用のピボットが表示されます。
 
 ![Intune ピボットが選択されている [役割] ページ。](../media/MAC-WN-IntuneRoles.png)
 
@@ -390,12 +390,12 @@ Monthly Enterprise チャネルのリリースに合わせて、既存の更新�
 
 #### <a name="for-your-users"></a>ユーザーの場合
 
-- [会議をスケジュールする](../business-video/schedule-guest-meeting.md)
+- [会議をスケジュールする](https://support.microsoft.com/office/943507a9-8583-4c58-b5d2-8ec8265e04e5)
 - [会議に参加Teamsする](https://support.microsoft.com/office/078e9868-f1aa-4414-8bb9-ee88e9236ee4)
-- [組織全体にわたるチームを作成する](../business-video/org-wide-team.md)
-- [ゲストとチームを作成する](../business-video/team-with-guests.md)
-- [チームにゲストとして参加する](../business-video/join-team-guest.md)
-- [グループのメール アドレスを作成する](../business-video/group-email.md)
+- [組織全体にわたるチームを作成する](/microsoftteams/create-an-org-wide-team)
+- [ゲストとチームを作成する](https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f)
+- [チームにゲストとして参加する](/microsoftteams/guest-experience)
+- [グループのメール アドレスを作成する](https://support.microsoft.com/office/3f73d218-52d6-4f88-a733-9ff37073ee4c)
 
 #### <a name="for-admins-and-business-owners"></a>管理者およびビジネス所有者向け
 
@@ -448,7 +448,7 @@ Monthly Enterprise チャネルのリリースに合わせて、既存の更新�
 
 [Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)Web シリーズの新機能 : 今月のエピソードでは、Microsoft Teams の 3 年の記念日を強調し、オンライン会議でのオーディオ品質の向上、Shifts アプリを使用したファーストライン マネージャー向けターゲットコミュニケーション、Teams と Skype コンシューマーの相互運用性などの新機能について説明します。
 
-## <a name="february-2020"></a>2020 年 2 月
+## <a name="february-2020"></a>2020年2月
 
 ### <a name="featured-feedback-fix-multi-organization-switcher"></a>おすすめフィードバックの修正: 複数組織の切り替え機能
 

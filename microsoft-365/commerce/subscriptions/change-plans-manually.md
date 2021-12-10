@@ -20,12 +20,12 @@ search.appverid: MET150
 description: サブスクリプションを手動で変更するには、新しいサブスクリプションを購入し、両方のサブスクリプションがリストされアクティブに設定されます。
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: 7239cda6c00785626471b35be19c1d550acf91e3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 12ff6bdec77e6407d1b854dc7a5fd78f0401c253
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60173681"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374594"
 ---
 # <a name="change-plans-manually"></a>手動でプランを変更する
 
@@ -57,7 +57,7 @@ ms.locfileid: "60173681"
 
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>手順 3: 新しいサブスクリプションとライセンスを確認する
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
 
 2. **両方のサブスクリプションが一覧表示され、アクティブな状態を確認する** ユーザーを移動するサブスクリプションと、ユーザーを移動するサブスクリプションを一緒に一覧表示する必要があります。 最初に確認したときに新しいサブスクリプションが表示されない場合は、後でもう一度確認してみてください。 両方のサブスクリプションがアクティブな状態を確認します。 新しいサブスクリプションが一覧に表示されない、またはアクティブではない場合は[新しいサブスクリプションが一覧に表示されない、またはアクティブではない](#the-new-subscription-isnt-listed-or-isnt-active)を参照してください。
 
@@ -72,7 +72,7 @@ ms.locfileid: "60173681"
 
 - **2 つのサブスクリプションを購入し、両方とも一覧に表示されない場合** 、異なる組織 (異なるドメイン) 用に購入した可能性があります。 サブスクリプションは組織の境界を超えることはできません。
 
-- **サブスクリプションが追加で、** ここに記載されていない場合、またはアクティブではない場合は [、Microsoft サポートにお問い合わせください](../../business-video/get-help-support.md)。
+- **サブスクリプションが追加で、** ここに記載されていない場合、またはアクティブではない場合は [、Microsoft サポートにお問い合わせください](../../admin/get-help-support.md)。
 
 ### <a name="what-about-the-old-licenses"></a>古いライセンスの処理
 
@@ -84,7 +84,7 @@ ms.locfileid: "60173681"
 
 ### <a name="reassign-a-license-for-one-user"></a>1 人のユーザーのライセンスを再割り当てする
 
-1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> の順に選択します。
+1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
 2. [アクティブ **ユーザー] ページ** で、ライセンスを割り当てるユーザーを選択します。
 
@@ -92,7 +92,7 @@ ms.locfileid: "60173681"
 
 ### <a name="reassign-licenses-for-multiple-users-at-once"></a>複数のユーザーのライセンスを一度に再割り当てする
 
-1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> の順に選択します。
+1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
 2. 既存のライセンスを置き換えるユーザーの名前の横にある円を選択します。
 
@@ -115,4 +115,5 @@ ms.locfileid: "60173681"
 一部のユーザーのみを別のサブスクリプションに移動した場合は、不要になった[ライセンスを削除](../licenses/buy-licenses.md)します。
 
 ## <a name="call-support-to-help-you-change-plans"></a>プランの変更に役立つサポートを呼び出す
-[Microsoft サポートへのお問い合わせください](../../business-video/get-help-support.md)
+
+[Microsoft サポートに問い合わせください](../../admin/get-help-support.md)。

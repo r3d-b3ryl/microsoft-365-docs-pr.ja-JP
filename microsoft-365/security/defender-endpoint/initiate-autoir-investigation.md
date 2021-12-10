@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4a336824a3f7119de8b02f4ccff10dd7956a4f46
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: efffd6bdb0ab6db5b17a8d6beab09a0d84f5ff6c
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283955"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374786"
 ---
 # <a name="start-investigation-api"></a>調査 API の開始
 
@@ -48,7 +48,7 @@ ms.locfileid: "61283955"
 
 ## <a name="requirements-for-air"></a>AIR の要件
 
-組織には Defender for Endpoint が必要です (「エンドポイント用 Microsoft Defender の最小[要件」を参照)。](minimum-requirements.md)
+組織には Defender for Endpoint が必要です (「エンドポイント用 Microsoft Defender の [最小要件」を参照してください](minimum-requirements.md))。
 
 現在、AIR は次の OS バージョンのみをサポートしています。
 
@@ -82,7 +82,7 @@ POST https://api.security.microsoft.com/api/machines/{id}/startInvestigation
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**。
 Content-Type|string|application/json. **必須**。
@@ -91,7 +91,7 @@ Content-Type|string|application/json. **必須**。
 
 要求本文で、JSON オブジェクトに次のパラメーターを指定します。
 
-パラメーター|種類|説明
+パラメーター|型|説明
 :---|:---|:---
 コメント|文字列|アクションに関連付けるコメント。 **必須**。
 

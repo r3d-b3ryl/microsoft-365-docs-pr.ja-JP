@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 3a25466b26145691d579403a4ccb00410298d4e4
-ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
+ms.openlocfilehash: 0bb25be1633ddb3f653d640a0812bf0a14344309
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61241022"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374618"
 ---
 # <a name="insider-risk-management-policies"></a>インサイダー リスクの管理。
 
@@ -104,7 +104,7 @@ Insider リスク分析では、インサイダー リスク ポリシーを構�
 
 医療記録データを保護し、患者の個人データの誤用を防ぐことは、医療業界の組織にとって重要な懸念事項です。 この誤用には、権限のない人物への機密データ漏洩、患者レコードの不正な変更、または患者の医療記録の盗難が含まれる場合があります。 ユーザーによる認識、過失、または詐欺によって、この患者データの誤用を防ぐことは、医療保険の移植性と説明責任法 (HIPAA) および健康情報技術 (HITECH) 法の規制要件を満たす重要な要素です。これらの両方の行為は、患者保護された健康情報 (PHI) を保護するための要件を確立します。
 
-このポリシー テンプレートを使用すると、既存の電子医療記録 (EMR) システムでホストされているレコードに関連する疑わしいアクティビティを検出する内部ユーザーに対してリスク スコアリングを有効にできます。 検出は、患者データの不正アクセス、表示、変更、およびエクスポートに重点を当てたもの。 EMR システムでのアクセス、外部ろ過、または難読化アクティビティの検出をサポートするために、コネクタ [(Microsoft Healthcare](import-healthcare-data.md) コネクタまたは [Epic](import-epic-data.md)コネクタ) を構成する必要があります。
+このポリシー テンプレートを使用すると、既存の電子医療記録 (EMR) システムでホストされているレコードに関連する疑わしいアクティビティを検出する内部ユーザーに対してリスク スコアリングを有効にできます。 検出は、患者データの不正アクセス、表示、変更、およびエクスポートに重点を当てたもの。 EMR システムでのアクセス、外部ろ過、または難読化アクティビティの検出をサポートするには、コネクタ [(Microsoft Healthcare](import-healthcare-data.md) コネクタまたは [Epic](import-epic-data.md) コネクタ) を構成する必要があります。
 
 このテンプレートを使用する場合は、組織内のユーザー Microsoft 365組織プロファイル データを定期的にインポートする人事コネクタを構成する必要があります。 組織用の HR コネクタの段階的な構成手順については「Microsoft 365 HR コネクタでデータをインポートする」を参照してください。
 

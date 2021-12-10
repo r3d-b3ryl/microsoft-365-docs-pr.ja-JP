@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: 組織がコミュニケーションと共同作業を行うMicrosoft 365サービスを採用する方法の概要を確認します。
-ms.openlocfilehash: acdd6899a8f555e4deb9f6f2c262c45ca299abff
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: dce31c0787ab85898dc48cc94cefb54ac19b1304
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60552670"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374330"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Microsoft 365 利用状況分析
 
@@ -62,13 +62,13 @@ Microsoft 365分析には、次のセクションで詳細なレポートが多�
 
 - **コラボレーション** &ndash;組織内のユーザーがドキュメントを保存し、OneDrive SharePointする方法と、これらの傾向が月ごとにどのように進化していくのかをご覧ください。 また、内部または外部でドキュメントを共有したユーザーの数、および所有者や他の共同作業者によって分解された SharePoint サイトまたは OneDrive アカウントを使用したユーザーの数も確認できます。
 
-- **Storage** &ndash;このレポートを使用して、メールボックス、ユーザー、およびサイトOneDriveクラウド ストレージSharePointします。
+- **Storage この** レポートを使用して、メールボックス、サーバー、およびサイトのクラウド ストレージOneDrive &ndash; 追跡SharePointします。
 
 - **モビリティ** &ndash;ユーザーが電子メール、メール、メール、Teams、Skype、またはYammer。
 
 ## <a name="activation-and-licensing"></a>ライセンス認証とライセンス
 
-[ライセンス認証とライセンス] ページには、ライセンス認証に関するMicrosoft 365表示されます。つまり、アプリをダウンロードしてアクティブ化したユーザー Office、組織によって割り当てられているライセンスの数です。 上の方の月の値は現在の月を表し、指標は月の初めから現在の日付に集計された値を反映します。
+ライセンス認証とライセンス のページには、Microsoft 365 ライセンス認証に関するレポート、つまり、Office アプリをダウンロードしてアクティブ化したユーザーの数と、組織によって割り当てられたライセンスの数が表示されます。 上の方の月の値は現在の月を表し、指標は月の初めから現在の日付に集計された値を反映します。
 
 - **ライセンス認証** &ndash;組織のサービス プラン (Microsoft 365 Apps for enterprise、Project、Visio) のライセンス認証を追跡します。 Office のライセンスを持つ各ユーザーは、最大 5 つのデバイスに製品をインストールできます。 また、このセクションのレポートを使用して、ユーザーがアプリにインストールしたデバイスOfficeすることもできます。 プランをアクティブ化するには、ユーザーがアプリをインストールし、自分のアカウントでサインインする必要があります。
 
@@ -203,7 +203,7 @@ pbit ファイルには、Microsoft ダウンロード センター [からア�
 
 ### <a name="i-have-a-specific-question-about-the-data-im-seeing-for-my-organization-who-can-i-reach-out-to"></a>自分の組織に関して表示されるデータについてわからない点があります。誰に質問すればよいですか。
 
-管理センターのアクティビティ概要ページのフィードバック ボタンを使用するか、サポート ケースを開[](../../business-video/get-help-support.md)き、テンプレート アプリのヘルプを表示できます。 
+管理センターのアクティビティの概要ページのフィードバック ボタンを使用するか、サポート ケースを開きます[(サポート](../get-help-support.md) を受け取って、テンプレート アプリのヘルプを受け取ります)。 
 
 ### <a name="how-can-partners-access-the-data"></a>パートナーはどのような方法でデータにアクセスできますか。
 

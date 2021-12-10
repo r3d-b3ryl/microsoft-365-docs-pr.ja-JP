@@ -15,17 +15,18 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: fce766313b7757712faaa2a2b122730601f137aa
-ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
+ms.openlocfilehash: e5ed41f400c24a2522ea49f2524d0fe629bdbb9f
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "60792522"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374756"
 ---
 # <a name="frequently-asked-questions-when-turning-on-microsoft-365-defender"></a>ユーザー設定をオンにするときによく寄せられる質問Microsoft 365 Defender
 
@@ -45,7 +46,7 @@ ms.locfileid: "60792522"
 
 - Microsoft Defender for Endpoint
 - Microsoft Defender for Identity
-- Microsoft Cloud App Security
+- Microsoft Defender for Cloud Apps
 - Defender for Office 365 (プラン 2)
 
 サポートされているライセンスの完全な一覧については、ライセンス [要件を参照してください](prerequisites.md#licensing-requirements)。
@@ -61,13 +62,13 @@ ms.locfileid: "60792522"
 Microsoft 365 Defenderデータが処理および保存されるデータ センターに最適な場所が自動的に選択されます。 Microsoft Defender for Endpoint を使用している場合は、Defender for Endpoint で使用される場所と同じ場所が選択されます。
 
 >[!NOTE]
->Microsoft Defender for Endpoint は、Azure Defender を使用してオンにした場合、EU (EU) データ センターで自動的にプロビジョニングします。 Microsoft 365 Defender、この方法で Microsoft Defender for Endpoint をプロビジョニングしたお客様に対して、同じ EU データ センターで自動的にプロビジョニングされます。
+>Microsoft Defender for Cloud を使用してオンにすると、Microsoft Defender for Endpoint が欧州連合 (EU) データ センターで自動的にプロビジョニングされます。 Microsoft 365 Defender、この方法で Microsoft Defender for Endpoint をプロビジョニングしたお客様に対して、同じ EU データ センターで自動的にプロビジョニングされます。
 
 データ センターの場所は、サービスがプロビジョニングされる前と後に、[データ センターの設定] ページに表示Microsoft 365 Defender **(** 設定 > Microsoft 365 Defender)。 別のデータ センターの場所を使用する場合は、Microsoft サポートに問い合わせMicrosoft 365 Defenderポータルで [ヘルプが必要か] を選択します。
 
 ## <a name="where-can-i-access-microsoft-365-defender"></a>アクセスできる場所Microsoft 365 Defender?
 
-Microsoft 365 Defenderは次の場所で利用できます <https://security.microsoft.com> 。
+Microsoft 365 Defenderは次の場所で利用できます <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"><https://security.microsoft.com></a> 。
 
 ## <a name="what-permissions-do-i-need-to-access-microsoft-365-defender"></a>ユーザーにアクセスするために必要なアクセス許可Microsoft 365 Defender。
 
@@ -99,10 +100,6 @@ Microsoft は、以下を含むさまざまなチャネルを通じて定期的�
 - コンプライアンス 技術コミュニティMicrosoft 365[セキュリティ&ブログ投稿](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/bg-p/securityprivacycompliance)
 
 プレビュー機能をオンにして、一般に公開されている最新のエクスペリエンス [を取得します](preview.md)。
-
-## <a name="is-microsoft-365-defender-available-for-us-government-community-cloud-gcc-or-gcc-high"></a>米国Microsoft 365 Defender (Government Community Cloud) または GCC High でGCCできますか?
-
-現時点では、使用できません。
 
 ## <a name="related-topics"></a>関連項目
 

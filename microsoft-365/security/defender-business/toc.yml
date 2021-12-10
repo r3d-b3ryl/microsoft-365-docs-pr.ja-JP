@@ -1,0 +1,73 @@
+- name: Microsoft Defender for Business
+  href: index.yml
+  items:
+    - name: 概要
+      items:
+        - name: Microsoft Defender for Business とは
+          href: mdb-overview.md
+        - name: 簡略化された構成プロセス
+          href: mdb-simplified-configuration.md
+        - name: ビジネス向け Defender を取得する方法
+          href: get-defender-business.md
+        - name: 中小企業のプランを比較する
+          href: compare-mdb-m365-plans.md
+        - name: ユーザーとのMicrosoft 365 Lighthouse
+          href: mdb-lighthouse-integration.md
+    - name: セットアップと構成
+      items:
+        - name: セットアップの概要
+          href: mdb-setup-configuration.md
+        - name: 手順 1 - 要件を確認する
+          href: mdb-requirements.md
+        - name: 手順 2 - 役割とアクセス許可を割り当てる
+          href: mdb-roles-permissions.md
+        - name: 手順 3 - 電子メール通知を設定する
+          href: mdb-email-notifications.md
+        - name: 手順 4 - オンボード デバイス
+          href: mdb-onboard-devices.md
+        - name: 手順 5 - セキュリティ設定を構成する
+          href: mdb-configure-security-settings.md
+    - name: 開始する
+      items:
+        - name: ポータルの使用を開始する
+          href: mdb-get-started.md
+        - name: チュートリアルとシミュレーションを試す
+          href: mdb-tutorials.md
+    - name: ビジネス向け Microsoft Defender の使用
+      items:
+        - name: デバイスの表示と管理
+          href: mdb-manage-devices.md
+        - name: インシデントの表示と管理
+          href: mdb-view-manage-incidents.md
+        - name: 脅威への対応と軽減
+          href: mdb-respond-mitigate-threats.md
+        - name: 修復アクションを確認する
+          href: mdb-review-remediation-actions.md
+        - name: レポートの表示と使用
+          href: mdb-reports.md
+    - name: 設定とポリシーの管理
+      items:
+        - name: ポリシーの表示と編集
+          href: mdb-view-edit-policies.md
+        - name: 新しいポリシーの作成
+          href: mdb-create-new-policy.md
+        - name: ポリシーの順序
+          href: mdb-policy-order.md
+        - name: デバイス グループを作成する
+          href: mdb-create-edit-device-groups.md
+        - name: 次世代の保護設定
+          href: mdb-next-gen-configuration-settings.md
+        - name: ファイアウォールの設定
+          href: mdb-firewall.md
+        - name: ファイアウォール ポリシーのルールを管理する
+          href: mdb-custom-rules-firewall.md
+    - name: 参照情報
+      items:
+        - name: ヘルプを受ける方法やサポートに問い合わせする方法
+          href: mdb-get-help.md
+        - name: よく寄せられる質問
+          href: mdb-faq.yml
+        - name: トラブルシューティング
+          href: mdb-troubleshooting.yml
+        - name: Microsoft 365 Lighthouse
+          href: /microsoft-365/lighthouse/m365-lighthouse-overview

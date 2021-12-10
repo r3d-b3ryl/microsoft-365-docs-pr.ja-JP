@@ -23,12 +23,12 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.date: 11/30/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 8dc7dd0992626c60fcdc5fb4942f29a14d901b41
-ms.sourcegitcommit: aacf895ba20ecec4312a447ff4432e257e41edee
+ms.openlocfilehash: d9d122c9d114aa135eb2a82e1168eabec2aeec7b
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61234581"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374402"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>エンドポイント用 Microsoft Defender に切り替える - フェーズ 1: 準備
 
@@ -107,7 +107,7 @@ ms.locfileid: "61234581"
     - [高度なグループ ポリシーの管理](/microsoft-desktop-optimization-pack/agpm)
     - [Windows Admin Center](/windows-server/manage/windows-admin-center/overview)
 
-3. ポータルへのアクセス権をMicrosoft 365 Defenderします。 (ヘルプが必要ですか? 「RBAC [を使用したポータル アクセスの管理」を参照](rbac.md)してください。
+3. ポータルへのアクセス権をMicrosoft 365 Defenderします。 (ヘルプが必要ですか? 「RBAC [を使用したポータル アクセスの管理」を参照してください](rbac.md)。
 
 ## <a name="configure-device-proxy-and-internet-connectivity-settings"></a>デバイス プロキシとインターネット接続の設定を構成する
 
@@ -119,9 +119,9 @@ ms.locfileid: "61234581"
 |---|---|---|
 |[エンドポイントの検出と応答](overview-endpoint-detection-response.md)(EDR)|[Windows 10](/windows/release-health/release-information)以降<br/><br/>Windows Server 2022 <br/><br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/>[Windows Server 1803 以降](/windows-server/get-started/whats-new-in-windows-server-1803)|[コンピューター プロキシとインターネット接続の設定を構成する](configure-proxy-internet.md)|
 |EDR|[Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016)<br/><br/>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/><br/>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)|[プロキシとインターネット接続の設定を構成する](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings)|
-|EDR|macOS (「 [システム要件」を参照](microsoft-defender-endpoint-mac.md))|[macOS 上のエンドポイントの Defender: ネットワーク接続](microsoft-defender-endpoint-mac.md#network-connections)|
+|EDR|macOS (「 [システム要件」を参照)](microsoft-defender-endpoint-mac.md)|[macOS 上のエンドポイントの Defender: ネットワーク接続](microsoft-defender-endpoint-mac.md#network-connections)|
 |[Microsoft Defender ウイルス対策](microsoft-defender-antivirus-in-windows-10.md)|[Windows 10](/windows/release-health/release-information) <br/><br/> [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/> Windows Server 2022 <br/><br/> [Windows Server 1803 以降](/windows-server/get-started/whats-new-in-windows-server-1803) <br/><br/> [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)|[Microsoft Defender ウイルス対策 ネットワーク接続を構成および検証する](configure-network-connections-microsoft-defender-antivirus.md)|
-|ウイルス対策|macOS (「 [システム要件」を参照](microsoft-defender-endpoint-mac.md))|[macOS 上のエンドポイントの Defender: ネットワーク接続](microsoft-defender-endpoint-mac.md#network-connections)|
+|ウイルス対策|macOS (「 [システム要件」を参照)](microsoft-defender-endpoint-mac.md)|[macOS 上のエンドポイントの Defender: ネットワーク接続](microsoft-defender-endpoint-mac.md#network-connections)|
 |ウイルス対策|Linux (「[システム要件」を参照)](microsoft-defender-endpoint-linux.md#system-requirements)|[Defender for Endpoint on Linux: Network connections](microsoft-defender-endpoint-linux.md#network-connections)|
 
 

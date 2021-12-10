@@ -1,0 +1,106 @@
+### YamlMime:Landing
+title: Microsoft Defender for Business
+summary: Microsoft Defender for Business のドキュメント
+metadata:
+  title: Microsoft Defender for Business のドキュメント
+  description: Microsoft Defender for Business の概要とセットアップ情報を取得する
+  ms.prod: 365-security
+  ms.technology: mdb
+  ms.topic: landing-page
+  ms.collection:
+  - SMB
+  - M365-security-compliance
+  author: denisebmsft
+  ms.author: deniseb
+  ms.date: 12/08/2021
+  ms.openlocfilehash: 882536032df80721881c27f87d99c606063c35f0
+  ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 12/09/2021
+  ms.locfileid: "61375607"
+landingContent:
+- title: 概要
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Defender for Business とは
+      url: mdb-overview.md
+    - text: 簡略化された構成プロセス
+      url: mdb-simplified-configuration.md
+    - text: ビジネス向け Defender を取得する方法
+      url: get-defender-business.md
+    - text: 中小企業のプランを比較する
+      url: compare-mdb-m365-plans.md
+    - text: ユーザーとのMicrosoft 365 Lighthouse
+      url: mdb-lighthouse-integration.md
+- title: 設定
+  linkLists:
+  - linkListType: deploy
+    links:
+    - text: セットアップの概要
+      url: mdb-setup-configuration.md
+    - text: 手順 1 - 要件を確認する
+      url: mdb-requirements.md
+    - text: 手順 2 - 役割とアクセス許可を割り当てる
+      url: mdb-roles-permissions.md
+    - text: 手順 3 - 電子メール通知を設定する
+      url: mdb-email-notifications.md
+    - text: 手順 4 - オンボード デバイス
+      url: mdb-onboard-devices.md
+    - text: 手順 5 - セキュリティ設定を構成する
+      url: mdb-view-edit-policies.md
+- title: 概要
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: ポータルの移動
+      url: mdb-get-started.md
+    - text: チュートリアルとシミュレーションを試す
+      url: mdb-tutorials.md
+- title: 使用
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: デバイスの表示と管理
+      url: mdb-manage-devices.md
+    - text: インシデントの表示と管理
+      url: mdb-view-manage-incidents.md
+    - text: 脅威への対応と軽減
+      url: mdb-respond-mitigate-threats.md
+    - text: 修復アクションを確認する
+      url: mdb-review-remediation-actions.md
+    - text: レポートの表示と使用
+      url: mdb-reports.md
+- title: 管理
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: ポリシーの表示と編集
+      url: mdb-view-edit-policies.md
+    - text: 新しいポリシーの作成
+      url: mdb-create-new-policy.md
+    - text: デバイス グループを作成する
+      url: mdb-create-edit-device-groups.md
+    - text: ファイアウォール ポリシーのルールを管理する
+      url: mdb-custom-rules-firewall.md
+  - linkListType: reference
+    links:
+    - text: ポリシーの順序
+      url: mdb-policy-order.md
+    - text: 次世代の保護設定
+      url: mdb-next-gen-configuration-settings.md
+    - text: ファイアウォールの設定
+      url: mdb-firewall.md
+- title: ヘルプとサポート
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: ヘルプを受ける方法やサポートに問い合わせする方法
+      url: mdb-get-help.md
+    - text: よく寄せられる質問
+      url: mdb-faq.yml
+    - text: トラブルシューティング
+      url: mdb-troubleshooting.yml
+    - text: Microsoft 365 Lighthouse
+      url: /microsoft-365/lighthouse/m365-lighthouse-overview
