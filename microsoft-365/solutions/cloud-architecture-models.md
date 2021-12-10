@@ -13,12 +13,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: b036c6ca93310e6f88dee78171749c09056de84b
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: f7c2d35cbc8343779f9ccfb2cc369da9b4d7db4a
+ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61373694"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61401500"
 ---
 # <a name="microsoft-cloud-for-it-architects-illustrations"></a>IT アーキテクト向け Microsoft クラウドのイラスト
 
@@ -51,7 +51,7 @@ Microsoft クラウド サービスおよびプラットフォームにおける
   
 | 項目 | 説明 |
 |:-----|:-----|
-|[![エンタープライズ アーキテクト モデルのサムネイルの Microsoft クラウド セキュリティ。](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security.pdf) <br/> [PDF](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security.pdf) <br/> 2021 年 11 月更新 | このモデルには次のものが含まれています。 <ul><li>Microsoft および顧客のセキュリティ責任</li><li>ID と デバイス アクセス</li><li>脅威保護</li><li>情報保護 </ul><br/>|
+|[![エンタープライズ アーキテクト モデルのサムネイルの Microsoft クラウド セキュリティ。](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security.pdf) <br/> [PDF](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security.pdf) <br/> 2021 年 12 月更新 | このモデルには次のものが含まれています。 <ul><li>Microsoft および顧客のセキュリティ責任</li><li>ID と デバイス アクセス</li><li>脅威保護</li><li>情報保護 </li><li>クラウド アプリ保護 </li></ul><br/>|
    
 <a name="networking"></a>
 ### <a name="microsoft-cloud-networking-for-it-architects"></a>IT アーキテクト向け Microsoft クラウド ネットワーク

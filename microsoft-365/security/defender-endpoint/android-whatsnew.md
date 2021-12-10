@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 94f679599ada05ea7c012a34d5b189fd7b3b3fb9
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: cb4bbc8d8fff5d73ac8b56aa73528f6704804da5
+ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111389"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61401452"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-android"></a>Android のエンドポイント向け Microsoft Defender の新機能
 
@@ -32,6 +32,10 @@ ms.locfileid: "61111389"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+## <a name="threat-and-vulnerability-management"></a>脅威と脆弱性の管理
+
+2021 年 11 月 2 日、Android と iOS の脅威と脆弱性の管理のパブリック プレビューを発表しました。 詳細については [、techcommunity の投稿を参照してください](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/reduce-risk-across-your-environments-with-the-latest-threat-and/ba-p/2902691)。
 
 ## <a name="upcoming-permission-changes-for-microsoft-defender-for-endpoint-running-android-11-or-later-nov-2021"></a>Android 11 以降を実行しているエンドポイント用 Microsoft Defender の今後のアクセス許可の変更 (2021 年 11 月)
 

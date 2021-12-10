@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 description: 21Vianet が運用する 21Vianet Office 365 Azure Information Protection (AIP) の詳細と、中国の顧客向け構成方法について説明します。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 92c9460d9a2be4e09021073c455dd5287cba222b
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 7d5faeef81c59e068a1a61272f267379b9ce23f3
+ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372686"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61401440"
 ---
 # <a name="azure-information-protection-support-for-office-365-operated-by-21vianet"></a>21Vianet がOffice 365 Azure Information Protection のサポート
 
@@ -88,7 +88,7 @@ ms.locfileid: "61372686"
 
 1. Azure Az モジュールがインストールされていない場合は、それをインストールするか、Azure Az モジュールがプレインストールされているリソース (Azure Cloud Shell など) [を使用します](/azure/cloud-shell/overview)。 詳細については [、「Azure Az PowerShell モジュールのインストール」を参照してください](/powershell/azure/install-az-ps)。
 
-1.    Connect-AzAccount コマンドレットと[環境Connectを](/powershell/module/az.accounts/Connect-AzAccount)使用してサービスに `azurechinacloud` アクセスします。
+1. Connect-AzAccount コマンドレットと[環境Connectを](/powershell/module/az.accounts/Connect-AzAccount)使用してサービスに `azurechinacloud` アクセスします。
 
     ```powershell
     Connect-azaccount -environmentname azurechinacloud

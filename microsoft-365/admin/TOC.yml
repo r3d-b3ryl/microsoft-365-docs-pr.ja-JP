@@ -1,7 +1,7 @@
 - name: Microsoft 365 管理センターのヘルプ
   href: index.yml
   items:
-    - name: 概要
+    - name: 作業の開始
       items:
         - name: サインアップ
           href: admin-overview/sign-up-for-office-365.md
@@ -71,8 +71,6 @@
           href: setup/customize-sign-in-page.md
         - name: 組織のテーマをカスタマイズする
           href: setup/customize-your-organization-theme.md
-        - name: Office 365 Germany の詳細
-          href: admin-overview/learn-about-office-365-germany.md
         - name: オンプレミスのユーザーとリソースへのアクセス
           items:
             - name: ドメイン ユーザーを Microsoft 365 に同期する

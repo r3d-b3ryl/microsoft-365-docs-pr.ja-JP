@@ -19,12 +19,12 @@ description: 管理者は、セキュリティ コンプライアンス セン�
 ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1b73410170b0a869010f0c0c40b9363eed7475e6
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: f742fc9f19d7b360e9402c9bc6331a84d2622979
+ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370922"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61401314"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>セキュリティ コンプライアンス センターの [レポート] ダッシュボードでメール フロー レポート&表示する
 
@@ -87,62 +87,17 @@ Mailflow **状態レポートは**、送信済 [](#sent-and-received-email-repor
 
 ## <a name="top-senders-and-recipients-report"></a>上位の送信者と受信者レポート
 
-[ **上位の送信者と受信者]** レポートは、上位のメール送信者と受信者を示す円グラフです。
+[**上位の送信者** と受信者] には、組織内の上位メッセージ送信者と、EOP および Defender によって検出されたメッセージの上位受信者が Office 365 保護機能で表示されます。
 
-レポートを表示するには、セキュリティ & コンプライアンス センターを [開き、[](https://protection.office.com)レポートダッシュボード] に移動し、[上位の送信者と受信者] \> **を選択します**。 レポートに直接移動するには、を開きます <https://protection.office.com/reportv2?id=TopSenderRecipientsATP> 。
+レポートを表示するには、コンプライアンス センターでセキュリティ &を開き、[レポート ダッシュボード] に移動し、[上位の送信者と受信者] を <https://protection.office.com>  \> **選択します**。 レポートに直接移動するには、次のいずれかの URL を開きます。
 
-![レポート ダッシュボードの上位の送信者と受信者ウィジェット。](../../media/top-senders-and-recipients-widget.png)
+- Defender for Office 365:<https://protection.office.com/TopSenderRecipientsATP>
+- EOP: <https://protection.office.com/TopSenderRecipients>
 
-### <a name="report-view-for-the-top-senders-and-recipient-report"></a>上位の送信者と受信者レポートのレポート ビュー
+![レポート ダッシュボードの上位の送信者と受信者ウィジェット。](../../media/scc-top-senders-and-recipients-widget.png)
 
-レポート ビューでは、次のグラフを使用できます。
-
-- **上位メール送信者 \> のデータを表示する**
-- **上位メール受信者 \> のデータを表示する**
-- **上位のスパム受信者 \> のデータを表示する**
-- **データの表示 \> 上位マルウェア受信者** (EOP)
-- **上位マルウェア受信者 \> のデータを表示する (Defender for Office 365)**
-
-円グラフの構成は、これらの選択内容に基づいて変更されます。
-
-円グラフのくさびの上にマウス ポインターを置くと、送信または受信されたメッセージの数を確認できます。
-
-レポート ビューで **[フィルター]** をクリックすると、[開始日] と [終了日] で日付 **範囲****を指定できます**。
-
-![[上位の送信者と受信者] レポートの [レポート] ビューの円グラフ。](../../media/top-senders-and-recipients-report-view.png)
-
-### <a name="details-table-view-for-the-top-senders-and-recipient-report"></a>上位の送信者と受信者レポートの詳細テーブル ビュー
-
-[詳細テーブル **の表示]** をクリックすると、表示される情報は、表示されているグラフによって異なります。
-
-- **上位メール送信者 \> のデータを表示する**
-
-  - **上位のメール送信者**
-  - **Count**
-
-- **上位メール受信者 \> のデータを表示する**
-
-  - **上位のメール受信者**
-  - **Count**
-
-- **上位のスパム受信者 \> のデータを表示する**
-
-  - **上位のスパム受信者**
-  - **Count**
-
-- **データの表示 \> 上位マルウェア受信者** (EOP)
-
-  - **上位のマルウェア受信者**
-  - **Count**
-
-- **上位マルウェア受信者 \> のデータを表示する (Defender for Office 365)**
-
-  - **上位のマルウェア受信者 (Defender for Office 365)**
-  - **Count**
-
-詳細テーブル ビューで **[フィルター** ] をクリックすると、[開始日] と [終了日] で日付 **範囲****を指定できます**。
-
-レポート ビューに戻る場合は、[レポートの表示] **をクリックします**。
+> [!NOTE]
+> セキュリティ & コンプライアンス センターでこのレポートのウィジェットをクリックすると、protection.office.com ページに移動しますが、ページのコンテンツは Microsoft 365 Defender ポータルにあります。 レポートの詳細については、「上位の送信者 [と受信者のレポート」を参照してください](view-email-security-reports.md#top-senders-and-recipients-report)。
 
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>これらのレポートを表示するために必要なアクセス許可
 

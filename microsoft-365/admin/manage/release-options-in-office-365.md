@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: 新しい製品と機能の更新プログラムのリリース オプションを設定する方法については、Microsoft 365 管理センター。
-ms.openlocfilehash: d053530b5b3ec0500783679ceb1823ce93992fae
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6e3cf1987d6b3c22ed1414bd8e352da7acf49e60
+ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60173057"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61401200"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>標準リリースオプションまたはターゲット リリース オプションを設定する
 
@@ -47,7 +47,7 @@ ms.locfileid: "60173057"
 重要な更新プログラムの場合、お客様は最初はロードマップによって[Microsoft 365されます](https://products.office.com/business/office-365-roadmap)。 更新プログラムが展開に近づくにつれて、メッセージ センターからMicrosoft 365[されます](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)。
 
 > [!NOTE]
-> 管理センターからMicrosoft 365メッセージ センター ADアクセスするには、管理者アカウントまたは Azure アカウントが[必要です](/office365/admin/admin-overview/about-the-admin-center)。 Microsoft 365ユーザーに管理センターが設定されていない場合。
+> 管理センターからMicrosoft 365メッセージ センター Azure ADアクセスするには、管理者アカウントまたは管理者アカウントが[必要です](/office365/admin/admin-overview/about-the-admin-center)。 Microsoft 365ユーザーに管理センターが設定されていない場合。
 
 
 ## <a name="standard-release"></a>標準リリース
@@ -64,7 +64,8 @@ ms.locfileid: "60173057"
 このオプションでは、お客様とお客様のユーザーは最新の更新プログラムを先に確認できて、早い時点でフィードバックをすることで製品像の決定に協力できます。更新プログラムを個人で早く受信するか、組織全体で早く受信するかを選ぶことができます。
   
 > [!IMPORTANT]
-> 大規模な更新プログラムまたは複雑な更新プログラムは、悪影響を受けるユーザーがいないようにするために他の更新プログラムに比べて時間がかかる場合があります。 リリースは、予定どおりになる保証はありません。 
+> - 大規模な更新プログラムまたは複雑な更新プログラムは、悪影響を受けるユーザーがいないようにするために他の更新プログラムに比べて時間がかかる場合があります。 リリースは、予定どおりになる保証はありません。
+> - ターゲットリリースは、現在、新しいプランまたは Office 365 GCC High プランと DoD プランOffice 365 GCC使用できません。
   
 ### <a name="targeted-release-for-entire-organization"></a>組織全体の対象指定リリース
 

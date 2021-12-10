@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d6ead5c1c23facbab1e80c29cac664ef50a6e8a0
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 7df7915351a4982c3f91f4835002a87493f4f79c
+ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168908"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61401488"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 上のエンドポイント用 Microsoft Defender の基本設定を設定する
 
@@ -595,7 +595,34 @@ ms.locfileid: "61168908"
 }
 ```
 
-## <a name="configuration-profile-validation"></a>構成プロファイルの検証
+  ## <a name="add-tag-or-group-id-to-the-configuration-profile"></a>構成プロファイルにタグまたはグループ ID を追加する
+
+コマンドを初 `mdatp health` めて実行すると、タグとグループ ID の値は空白になります。 ファイルにタグまたはグループ ID を追加 `mdatp_managed.json` するには、次の手順に従います。
+  
+  1. パスから構成プロファイルを開きます `/etc/opt/microsoft/mdatp/managed/mdatp_managed.json` 。
+  2. ブロックがあるファイルの下部に移動 `cloudService` します。
+  3. 次の例として、必要なタグまたはグループ ID を追加します `cloudService` 。
+
+  ```JSON
+    },
+     "cloudService":{
+        "enabled":true,
+        "diagnosticLevel":"optional",
+        "automaticSampleSubmissionConsent":"safe",
+        "automaticDefinitionUpdateEnabled":true,
+        "proxy": "http://proxy.server:port/"
+     },
+     "edr":{
+          "groupIds":"GroupIdExample",
+          "tags":"MDETagExample"
+          }
+  }
+  ```
+
+  > [!NOTE]
+  > ブロックの最後の中かっこの後にコンマを追加することを忘 `cloudService` れないでください。 また、Tag または Group ID ブロックを追加した後で、2 つの中かっこが閉じ込め (上記の例を参照してください) を確認してください。
+  
+  ## <a name="configuration-profile-validation"></a>構成プロファイルの検証
 
 構成プロファイルは、有効な JSON 形式のファイルである必要があります。 これを確認するために使用できるツールは多数ある。 たとえば、デバイスにインストール `python` されている場合は、次の情報を使用します。
 
@@ -616,7 +643,7 @@ JSON が整形式の場合、上記のコマンドはターミナルに出力し
 - automatic_definition_update_enabled
 
 > [!NOTE]
-> mdatp_managed.json を有効にするために、wdavdaemon の再起動は必要ありません。
+> mdatp_managed.json を有効にするために `mdatp` 、deamon の再起動は必要ありません。
 
 ## <a name="configuration-profile-deployment"></a>構成プロファイルの展開
 

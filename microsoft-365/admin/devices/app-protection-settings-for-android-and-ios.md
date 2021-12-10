@@ -26,16 +26,36 @@ search.appverid:
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: アプリ管理ポリシーを作成、編集、または削除し、Android デバイスまたは iOS デバイス上の作業ファイルを保護する方法について説明します。
-ms.openlocfilehash: 716995861963480b2d9fbf019db1bd80cfa5cff4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3c6a3401fdef42dec19b6d66f4b9fa8cd78106e5
+ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165630"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61401212"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>Android または iOS デバイスのアプリ保護設定を設定する
 
 この記事は、このMicrosoft 365 Business Premium。
+
+## <a name="watch-secure-office-apps-on-ios"></a>ウォッチ: iOS Officeアプリをセキュリティで保護する
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FLvZ?autoplay=false]
+
+モバイル ユーザーがサインインする PIN または指紋を入力する必要があるユーザー アクセス ポリシーを設定し、デバイスに保存されている作業ファイルも暗号化できます。
+
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>にサインインします。
+1. [ポリシー **] で、[** ポリシーの **追加] を選択します**。
+1. [ポリシーの **追加] ウィンドウ** で、[ポリシー名] に名前を入力し、[ポリシーの種類] で必要なポリシーの種類 **を選択します**。
+1. [ユーザーが **モバイル デバイス上のOfficeファイル** にアクセスする方法を管理する] をオンにし、次の 3 つの設定がオンになっていることを確認します。
+    - **Office アプリにアクセスするのに暗証番号 (PIN) または指紋認証を使用する必要がある**
+    - **デバイスが紛失または盗まれたときに作業ファイルを保護する**
+    - **仕事用ファイルを暗号化する**
+
+1. [**これらのアプリのファイルが保護されます]** で、モバイル Office保護するアプリを選択します。
+1. [Whoこれらの設定が表示されます **。** 既定ではすべてのユーザーが選択されますが、[変更] を選択して、作成したセキュリティ グループを選択できます。
+1. ポリシーの作成を完了するには、[追加] を **選択します**。
+1. [ポリシーの **追加] ページで** 、[閉じる] を **選択します**。
+1. 管理センターのホーム ページで、[ポリシー] を選択し、[ポリシー]ページでポリシーを確認して、新しいポリシーが **追加されたと確認** します。
 
 ## <a name="create-an-app-management-policy"></a>アプリの管理ポリシーを作成する
 

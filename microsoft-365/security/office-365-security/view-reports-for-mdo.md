@@ -22,12 +22,12 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 26d883984dedae52285a343d573e0aa2cad0c005
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 8270c6050f640b1c49b4f82c361812a019ae44d1
+ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372350"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61401350"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>ポータルでレポートOffice 365 Defender をMicrosoft 365 Defenderする
 
@@ -118,6 +118,10 @@ Office 365 組織向け Microsoft Defender (Microsoft 365 E5 サブスクリプ�
 ## <a name="threat-protection-status-report"></a>脅威保護の状態レポート
 
 脅威 **保護の状態** レポートは [、Exchange Online Protection](exchange-online-protection-overview.md) (EOP) と Microsoft Defender for Office 365 によって検出およびブロックされた悪意のあるコンテンツと悪意のある電子メールに関する情報をまとめる単一のビューです。 詳細については、「脅威保護の [状態レポート」を参照してください](view-email-security-reports.md#threat-protection-status-report)。
+
+## <a name="top-senders-and-recipients-report"></a>上位の送信者と受信者レポート
+
+[**上位の送信者と受信者] レポートには**、EOP と Defender の保護機能の上位受信者Office 365表示されます。 詳細については、「上位の送信者 [と受信者レポート」を参照してください](view-email-security-reports.md#top-senders-and-recipients-report)。
 
 ## <a name="url-protection-report"></a>URL 保護レポート
 

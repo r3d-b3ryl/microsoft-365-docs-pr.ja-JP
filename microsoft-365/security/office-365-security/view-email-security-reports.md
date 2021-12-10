@@ -21,12 +21,12 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f9be6475143f887fb0a4ec3a5f441962bb7eac31
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 079228cb10c00246f37cb4f34f156ca36595e9ae
+ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372362"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61401368"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>電子メール セキュリティ レポートを Microsoft 365 Defenderする
 
@@ -916,7 +916,7 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
 
 円グラフのくさびの上にマウス ポインターを置くと、マルウェアの種類の名前と、そのマルウェアが検出されたメッセージの数を確認できます。
 
-[上位 **マルウェア レポート] ページ** で、より大きなバージョンの円グラフがレポート ページに表示されます。グラフの下の詳細テーブルは、次の情報を示しています。
+[上位 **マルウェア レポート] ページ** に、円グラフのより大きなバージョンが表示されます。 グラフの下の詳細テーブルは、次の情報を示しています。
 
 - **トップ マルウェア**
 - **Count**
@@ -926,6 +926,45 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
 メイン レポート ページの [スケジュールの作成 ![ ] アイコン。](../../media/m365-cc-sc-create-icon.png) **[スケジュールとエクスポート](#schedule-report)** アイコン ![ を作成します。](../../media/m365-cc-sc-download-icon.png) **[エクスポート](#export-report)** ボタンを使用できます。
 
 ![トップ マルウェア レポート ビュー。](../../media/top-malware-report-view.png)
+
+## <a name="top-senders-and-recipients-report"></a>上位の送信者と受信者レポート
+
+上位 **の送信者と受信者の** レポートは、EOP と Defender の両方Office 365使用できます。ただし、レポートには異なるデータが含まれる場合があります。 [たとえば、EOP](safe-attachments.md)のお客様は、トップ マルウェア、スパム、フィッシング (スプーフィング) 受信者に関する情報を表示できますが、偽装保護によって検出された セーフ 添付ファイル[](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)やフィッシングによって検出されたマルウェアに関する情報は表示できません。
+
+[**上位の送信者** と受信者] には、組織内の上位メッセージ送信者と、EOP および Defender によって検出されたメッセージの上位受信者が Office 365 保護機能で表示されます。 既定では、レポートには最後の 1 週間のデータが表示されますが、過去 90 日間はデータを使用できます。
+
+[レポート] ポータルの [Microsoft 365 Defender] でレポートを表示するには、[レポートの電子メール] & <https://security.microsoft.com>  \> **グループ**& \> **に移動します**。 [電子メール **グループ &] ページ** で、[上位の送信者と受信者] レポートを検索し、[詳細の表示]**をクリックします**。 レポートに直接移動するには、次のいずれかの URL を開きます。
+
+- Defender for Office 365:<https://security.microsoft.com/reports/TopSenderRecipientsATP>
+- EOP: <https://security.microsoft.com/reports/TopSenderRecipient>
+
+![レポート ダッシュボードの上位の送信者と受信者ウィジェット。](../../media/top-senders-and-recipients-widget.png)
+
+円グラフのくさびの上にマウス ポインターを置くと、送信者または受信者のメッセージの数を確認できます。
+
+[上位 **の送信者と受信者** ] ページに、より大きなバージョンの円グラフが表示されます。 次のグラフを使用できます。
+
+- **上位メール送信者のデータを表示** する (これは既定のビューです)
+- **上位メール受信者のデータを表示する**
+- **上位のスパム受信者のデータを表示する**
+- **上位マルウェア受信者** (EOP) のデータを表示する
+- **トップフィッシング受信者のデータを表示する**
+- **上位マルウェア受信者のデータを表示する (MDO)**
+- **上位のフィッシング受信者のデータを表示する (MDO)**
+
+選択内容に基づいてデータが変更されます。
+
+円グラフのくさびの上にマウス ポインターを置くと、その特定の送信者または受信者のメッセージ数を確認できます。
+
+グラフの下の詳細テーブルには、選択したビューに基づいて送信者または受信者とメッセージ数が表示されます。
+
+[フィルター] をクリックし、[開始日] と[終了日] を選択して、グラフと詳細テーブル **の両方を****フィルター処理できます**。
+
+フィルターの構成が完了したら、[適用]、[**キャンセル**]、または [フィルターのクリア]**をクリックします**。
+
+メイン レポート ページの [エクスポート] ![ アイコン。](../../media/m365-cc-sc-download-icon.png) **[エクスポート** ] ボタンを使用できます。
+
+![[上位の送信者と受信者] レポートに [上位メール送信者] ビューのデータを表示します。](../../media/top-senders-and-recipients-report-view.png)
 
 ## <a name="url-protection-report"></a>URL 保護レポート
 

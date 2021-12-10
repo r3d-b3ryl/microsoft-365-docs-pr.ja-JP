@@ -15,14 +15,14 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 12/02/2021
+ms.date: 12/09/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 0e6cb244bf4beeab1d282e46196262ea681a13c2
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 284ed70877564b3f402eb910f27cb7c62bbcd0b6
+ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372614"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61401188"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>更新Microsoft Defender ウイルス対策を管理し、基準計画を適用する
 
@@ -586,6 +586,20 @@ Windows 10 (Enterprise、Pro、およびホーム エディション)、Windows 
 詳細については、「Microsoft Defender update for Windows オペレーティング システムのインストール[イメージ」を参照してください](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)。
 
 <details>
+<summary>1.1.2112.01</summary>
+
+&ensp;パッケージのバージョン: **1.1.2112.01**<br/>
+&ensp;プラットフォーム のバージョン: **4.18.2110.6**<br/>
+&ensp;エンジンのバージョン: **1.1.18700.4**<br/>
+&ensp;署名バージョン: **1.353.2283.0**<br/>
+
+### <a name="fixes"></a>修正プログラム
+- None
+
+### <a name="additional-information"></a>追加情報
+- None
+<br/>
+</details><details>
 <summary>1.1.2111.02</summary>
 
 &ensp;パッケージ のバージョン: **1.1.2111.02**<br/>
