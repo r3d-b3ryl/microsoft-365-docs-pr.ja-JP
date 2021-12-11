@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: コンプライアンス センターを使用して、組織でのメッセージの保持、電子情報開示、保留に関する要件をサポートするためにアーカイブ メールボックスを有効にする方法を説明します。
-ms.openlocfilehash: 938410a8f12e62549bf3ec8e8778036440df5aea
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 1e92c3c8a4c19aa33124b930574f9646ac5bfabe
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61284010"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374306"
 ---
 # <a name="enable-archive-mailboxes-in-the-compliance-center"></a>セキュリティ/コンプライアンス センターでアーカイブ メールボックスを有効にする
 
@@ -137,11 +137,17 @@ Get-Mailbox -Filter {ArchiveGuid -Ne "00000000-0000-0000-0000-000000000000" -AND
 
 ユーザーのアーカイブ メールボックスに対して自動診断チェックを実行し、問題と推奨される解決策を特定できます。
 
-診断チェックを実行するには、[［テストの実行: アーカイブ メールボックス］](https://aka.ms/PillarArchiveMailbox) に移動します。
+診断チェックを実行するには、下のボタンをクリックします。 
+
+> [!div class="nextstepaction"]
+> [テストを実行する: アーカイブ メールボックス](https://aka.ms/PillarArchiveMailbox)
 
 ![アーカイブ メールボックスで診断を実行します。](../media/ArchiveMailboxDiagnostics.png)
 
 Microsoft 365 管理センターでポップアップ ページが開きます。 チェックするメールボックスのメール アドレスを入力し、**［テストの実行］** をクリックします。
+
+> [!NOTE]
+> アーカイブ メールボックスの診断チェックを使用するには、Microsoft 365 グローバル管理者である必要があります。 なお、この機能は、Microsoft 365 Government クラウド、21 Vianet が運用する Microsoft 365、または Microsoft 365 Germany では使用できません。
 
 ## <a name="more-information"></a>詳細情報
 

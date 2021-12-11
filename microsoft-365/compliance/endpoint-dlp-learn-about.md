@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 のエンドポイントのデータ損失防止は、ファイル アクティビティの監視と、それらのファイルに対する保護アクションをエンドポイントに拡張します。 コンプライアンス ソリューションでファイルが表示されます '
-ms.openlocfilehash: c8f9ee3405d6c79577603cde008796244b3a49ad
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: e1c46f89a9a1a8d354facbc6c3f1d095e42b3f5e
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61109769"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373766"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Microsoft 365 のエンドポイントのデータ損失防止について説明する
 
@@ -34,6 +34,9 @@ Microsoft 365 のデータ損失防止 (DLP) を使用すると、機密があ�
 
 > [!TIP]
 > リムーバブル記憶域のデバイス コントロールを探している場合は、「[Microsoft Defender for Endpoint Device Control のリムーバブル記憶域アクセス制御](../security/defender-endpoint/device-control-removable-storage-access-control.md#microsoft-defender-for-endpoint-device-control-removable-storage-access-control)」 を参照してください。
+
+> [!NOTE]
+> Microsoft 365 コンプライアンスでは、機密項目の DLP ポリシー評価が一元的に行われるため、ポリシーとポリシー更新が個々のデバイスに配布されるまでのタイム ラグはありません。 コンプライアンス センターでポリシーが更新されると、それらの更新がサービス全体で同期されるまでに通常約 1 時間かかります。 ポリシーの更新が同期されると、対象のデバイス上のアイテムは、次回アクセスまたは変更されたときに自動的に再評価されます。
 
 ## <a name="endpoint-activities-you-can-monitor-and-take-action-on"></a>監視と対処が必要なエンドポイントのアクティビティ
 

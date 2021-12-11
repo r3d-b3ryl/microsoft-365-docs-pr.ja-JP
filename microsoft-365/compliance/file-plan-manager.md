@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: ファイルプランでは、アイテム保持ラベルに高度な管理機能が提供されます。
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 47f9c3646968dc54aaa9b2d78182585560a8ba1f
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 5154a5347fa22e5315abd148327d8eab5508f0d3
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555094"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372764"
 ---
 # <a name="use-file-plan-to-manage-retention-labels"></a>ファイルプランを使用して保持ラベルを管理する
 
@@ -135,7 +135,11 @@ A *.csv ファイルは既存の全ての保持ラベルを開く、を含みま
 
    ![空白のファイル計画テンプレートをダウンロードするオプション](../media/file-plan-blank-template-option.png)
 
-3. テンプレートのダウンロード後、ラベルごとに 1 行を追加し、ファイルを保存します。 プロパティと各プロパティへの有効な値を説明する情報については、[次のセクション](#information-about-the-label-properties-for-import)を参照してください。 
+3. テンプレートのダウンロード後、ラベルごとに 1 行を追加し、ファイルを保存します。 プロパティと各プロパティへの有効な値を説明する情報については、[次のセクション](#information-about-the-label-properties-for-import)を参照してください。
+    
+    テンプレートに入力した例:
+    
+    ![情報が入力されたファイル計画テンプレート。](../media/file-plan-filled-out-template.png)
 
 4. [**ファイルをアップロード**] を選択して、入力したテンプレートをアップロードします。
     

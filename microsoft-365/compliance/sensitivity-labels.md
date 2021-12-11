@@ -22,12 +22,12 @@ description: Microsoft 情報保護 (MIP) の秘密度ラベルを使用して�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: e3c92ad9f9fc0dd1f69e11ebcede83c4d8224055
-ms.sourcegitcommit: cd3f5e3b7fea37fdcd8c811d01afd60ea68301ca
+ms.openlocfilehash: 459a72d7d6e8686dfa5ec1241808c21d9b8a4cfd
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61254479"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372710"
 ---
 # <a name="learn-about-sensitivity-labels"></a>秘密度ラベルの詳細
 

@@ -16,12 +16,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 6610fbc770e8a4d9e6119c417f4419919362515f
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 5b0be9c044b48788e5abb04f469b9f6ab0038cd5
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166436"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374534"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>望ましくない可能性のあるアプリケーションを検出してブロックする
 
@@ -75,7 +75,7 @@ Microsoft Defender ウイルス対策の望ましくない可能性のあるア�
 > [!NOTE]
 > この機能は、Windows 10、Windows 11、Windows Server 2019、Windows Server 2022 および Windows Server 2016 で使用できます。
 
-Windows Defender ウイルス対策は、検出された PUA ファイルと、それらのダウンロード、移動、実行、またはインストールの試行をブロックします。 ブロックされた PUA ファイルは、検疫に移動されます。 エンドポイントで PUA ファイルが検出されると、Microsoft Defender ウイルス対策は、他の脅威の検出と同じ形式でユーザーに通知を送信します ([通知が無効になっていない場合](configure-notifications-microsoft-defender-antivirus.md))。 通知の前には、その内容を示す `PUA:` が付いています。
+Windows Defender ウイルス対策は、検出された PUA ファイルと、それらのダウンロード、移動、実行、またはインストールの試行をブロックします。 ブロックされた PUA ファイルは、検疫に移動されます。 エンドポイントで PUA ファイルが検出されると、Microsoft Defender ウイルス対策は、([通知が無効になっていない場合](configure-notifications-microsoft-defender-antivirus.md)) 他の脅威の検出と同じ形式でユーザーに通知を送信します。 通知の前には、その内容を示す `PUA:` が付いています。
 
 通知は、[Windows セキュリティ アプリ内の通常の検疫リスト](microsoft-defender-security-center-antivirus.md)に表示されます。
 
