@@ -22,12 +22,12 @@ ms.localizationpriority: high
 description: 管理者は、Exchange Online Protection (EOP) で利用できるスプーフィング対策機能について学ぶことができます。この機能を使用すると、なりすましの送信者とドメインからのフィッシング攻撃を軽減できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1f685e1aaa7b88cd2a86b2c4d7af4c9015edc225
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: b93f2e1543a70ca7b5dde8ab5e83d48fba5f5a5e
+ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372170"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61401332"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>EOP のスプーフィング対策保護
 
@@ -168,11 +168,9 @@ DMARC の詳細については、「[DMARC を使用して Microsoft 365 でメ�
 
   - メール クライアントで、メッセージを受信トレイに移動する受信トレイ ルールを作成してください。 また、「[EOP でのスプーフィング インテリジェンス分析](learn-about-spoof-intelligence.md)」や「[テナントの許可/ブロック リストを管理する](tenant-allow-block-list.md)」で説明しているように、管理者に上書きの構成を依頼することもできます。
 
-  - Microsoft 365 でサポート チケットを作成して、メーリング リストを正当なものとして扱うためのオーバーライドを作成します。 詳細については、「[一般法人向けサポートへのお問い合わせ - 管理者向けヘルプ](../../admin/get-help-support.md)」を参照してください。
+  - ナントの許可/禁止リストを使用して、メーリング リストを正当なものとして扱うためのオーバーライドを作成します。 詳細については、「[テナントの許可/禁止リストの許可リストを追加する](manage-tenant-allows.md)」を参照してください。
 
 他のすべてが失敗した場合は、Microsoft に対してメッセージを誤検知として報告できます。 詳細については、「[メッセージとファイルを Microsoft に報告する](report-junk-email-messages-to-microsoft.md)」を参照してください。
-
-また、サポート チケットとして Microsoft にこの件を提出できる管理者に問い合わせることもできます。 Microsoft のエンジニアリング チームは、メッセージにスプーフィングのマークが付けられた理由を調査します。
 
 ## <a name="considerations-for-anti-spoofing-protection"></a>スプーフィング対策保護に関する考慮事項
 
